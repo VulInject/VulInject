@@ -1,0 +1,36 @@
+{
+    "graph_db":{
+        "cfg_db":"/home/VulInject/src/get_code_slice/cfg_db",
+        "pdg_db":"/home/VulInject/src/get_code_slice/pdg_db",
+        "dict_call2cfgNodeId_funcID":"/home/VulInject/src/get_code_slice/dict_call2cfgNodeID_funcID",
+        "testCode":"/home/VulInject/src/get_code_slice/testCode"
+    },
+    "joern":{
+        "joern_exe":"/home/VulInject/src/joern-0.3.1/",
+        "testCode":"/home/VulInject/src/joern-0.3.1/testCode",
+        "before_joern":"/home/VulInject/src/joern-0.3.1/.joernIndex/"
+    },
+    "start_folder":"/home/VulInject/src/get_code_slice/",
+    "exec_folder":"/home/VulInject/src/get_code_slice/",
+    "neo4j":"/home/VulInject/src/neo4j/bin", 
+    "error_rec":{
+        "err_filepath":"/home/VulInject/src/get_code_slice/log/err_in_py.txt",
+        "step2_err_filepath":"/home/VulInject/src/get_code_slice/log/getstartnode_error_log.txt"
+    },  
+    "cv_output":{
+        "cv_output_tmp_txt":"/home/VulInject/src/get_code_slice/log/cv_result.txt",
+        "cv_output_tmp_pkl":"/home/VulInject/src/get_code_slice/log/cv_result.pkl",
+        "cv_all_output":"/home/VulInject/src/get_code_slice/log/cv_result.txt"
+    },
+    "step2_output":{
+        "record_tmp_slice":"/home/VulInject/src/get_code_slice/log/step2_result_tmp.txt",
+        "record_all_slice":"/home/VulInject/src/get_code_slice/log/step2_result.txt",
+        "startnode_debug_path":"/home/VulInject/src/get_code_slice/log/startnode_debug_path.txt",
+        "sliceres_anatmp":"/home/VulInject/src/get_code_slice/log/sliceres_anatmp.txt",
+        "sliceres_anall":"/home/VulInject/src/get_code_slice/log/sliceres_anall.txt"
+    },
+    "all_test_code":{
+        "all_slice_path":"/home/SySeVR/Implementation/vulinject/results/",
+        "match_path":"/home/VulInject/result/generated_vulnerable_programs/"
+    }
+}

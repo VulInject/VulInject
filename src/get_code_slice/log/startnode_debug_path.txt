@@ -1,0 +1,95 @@
+CVE-2011-1759_CWE-189_0f22072ab50cac7983f9660d33974b45184da4f9_sys_oabi-compat.c_1.1.c|addrtoname|isonsap_string:
+	addrtoname.c [{'606': ['nsap_length']}]
+		ERR_1.1:	addrtoname.c Joern has not parsed this file.
+CVE-2017-13049_CWE-125_aa0858100096a3490edf93034a80e66a4d61aad5_print-rx.c_print-rx.c.c|getservent|setservent:
+	getservent.c [{'39': ['servf']}]
+		ERR_1.1:	getservent.c Joern has not parsed this file.
+CVE-2017-8086_CWE-772_4ffcdef4277a91af15a3c09f7d16af072c29f3f2_9p-xattr.c_1.1.c|getservent|setservent:
+	getservent.c [{'39': ['servf']}]
+		ERR_1.1:	getservent.c Joern has not parsed this file.
+CVE-2017-9060_CWE-401_dd248ed7e204ee8a1873914e02b8b526e8f1b80d_virtio-gpu.c_1.1.c|getservent|setservent:
+	getservent.c [{'39': ['servf']}]
+		ERR_1.1:	getservent.c Joern has not parsed this file.
+CVE-2018-7757_CWE-772_4a491b1ab11ca0556d2fda1ff1301e862a2d44c4_sas_expander.c_1.1.c|getservent|setservent:
+	getservent.c [{'39': ['servf']}]
+		ERR_1.1:	getservent.c Joern has not parsed this file.
+CVE-2017-13049_CWE-125_aa0858100096a3490edf93034a80e66a4d61aad5_print-rx.c_print-rx.c.c|netdissect|nd_pop_all_packet_info:
+	netdissect.c [{'199': ['ndo']}]
+		ERR_1.1:	netdissect.c Joern has not parsed this file.
+CVE-2017-8086_CWE-772_4ffcdef4277a91af15a3c09f7d16af072c29f3f2_9p-xattr.c_1.1.c|netdissect|nd_pop_all_packet_info:
+	netdissect.c [{'199': ['ndo']}]
+		ERR_1.1:	netdissect.c Joern has not parsed this file.
+CVE-2017-9060_CWE-401_dd248ed7e204ee8a1873914e02b8b526e8f1b80d_virtio-gpu.c_1.1.c|netdissect|nd_pop_all_packet_info:
+	netdissect.c [{'199': ['ndo']}]
+		ERR_1.1:	netdissect.c Joern has not parsed this file.
+CVE-2018-7757_CWE-772_4a491b1ab11ca0556d2fda1ff1301e862a2d44c4_sas_expander.c_1.1.c|netdissect|nd_pop_all_packet_info:
+	netdissect.c [{'199': ['ndo']}]
+		ERR_1.1:	netdissect.c Joern has not parsed this file.
+CVE-2011-1759_CWE-189_0f22072ab50cac7983f9660d33974b45184da4f9_sys_oabi-compat.c_1.1.c|addrtoname|isonsap_string:
+	addrtoname.c [{'606': ['nsap_length']}]
+		ERR_1.1:	addrtoname.c Joern has not parsed this file.
+CVE-2017-13049_CWE-125_aa0858100096a3490edf93034a80e66a4d61aad5_print-rx.c_print-rx.c.c|getservent|setservent:
+	getservent.c [{'39': ['servf']}]
+		ERR_1.1:	getservent.c Joern has not parsed this file.
+CVE-2017-8086_CWE-772_4ffcdef4277a91af15a3c09f7d16af072c29f3f2_9p-xattr.c_1.1.c|getservent|setservent:
+	getservent.c [{'39': ['servf']}]
+		ERR_1.1:	getservent.c Joern has not parsed this file.
+CVE-2017-9060_CWE-401_dd248ed7e204ee8a1873914e02b8b526e8f1b80d_virtio-gpu.c_1.1.c|getservent|setservent:
+	getservent.c [{'39': ['servf']}]
+		ERR_1.1:	getservent.c Joern has not parsed this file.
+CVE-2018-7757_CWE-772_4a491b1ab11ca0556d2fda1ff1301e862a2d44c4_sas_expander.c_1.1.c|getservent|setservent:
+	getservent.c [{'39': ['servf']}]
+		ERR_1.1:	getservent.c Joern has not parsed this file.
+CVE-2017-13049_CWE-125_aa0858100096a3490edf93034a80e66a4d61aad5_print-rx.c_print-rx.c.c|netdissect|nd_pop_all_packet_info:
+	netdissect.c [{'199': ['ndo']}]
+		ERR_1.1:	netdissect.c Joern has not parsed this file.
+CVE-2017-8086_CWE-772_4ffcdef4277a91af15a3c09f7d16af072c29f3f2_9p-xattr.c_1.1.c|netdissect|nd_pop_all_packet_info:
+	netdissect.c [{'199': ['ndo']}]
+		ERR_1.1:	netdissect.c Joern has not parsed this file.
+CVE-2017-9060_CWE-401_dd248ed7e204ee8a1873914e02b8b526e8f1b80d_virtio-gpu.c_1.1.c|netdissect|nd_pop_all_packet_info:
+	netdissect.c [{'199': ['ndo']}]
+		ERR_1.1:	netdissect.c Joern has not parsed this file.
+CVE-2018-7757_CWE-772_4a491b1ab11ca0556d2fda1ff1301e862a2d44c4_sas_expander.c_1.1.c|netdissect|nd_pop_all_packet_info:
+	netdissect.c [{'199': ['ndo']}]
+		ERR_1.1:	netdissect.c Joern has not parsed this file.
+CVE-2017-13049_CWE-125_aa0858100096a3490edf93034a80e66a4d61aad5_print-rx.c_print-rx.c.c|print|pretty_print_packet:
+	print.c [{'352': ['ndo']}]
+		ERR_1.1:	print.c Joern has not parsed this file.
+CVE-2017-8086_CWE-772_4ffcdef4277a91af15a3c09f7d16af072c29f3f2_9p-xattr.c_1.1.c|print|pretty_print_packet:
+	print.c [{'352': ['ndo']}]
+		ERR_1.1:	print.c Joern has not parsed this file.
+CVE-2017-9060_CWE-401_dd248ed7e204ee8a1873914e02b8b526e8f1b80d_virtio-gpu.c_1.1.c|print|pretty_print_packet:
+	print.c [{'352': ['ndo']}]
+		ERR_1.1:	print.c Joern has not parsed this file.
+CVE-2018-7757_CWE-772_4a491b1ab11ca0556d2fda1ff1301e862a2d44c4_sas_expander.c_1.1.c|print|pretty_print_packet:
+	print.c [{'352': ['ndo']}]
+		ERR_1.1:	print.c Joern has not parsed this file.
+CVE-2011-1759_CWE-189_0f22072ab50cac7983f9660d33974b45184da4f9_sys_oabi-compat.c_1.1.c|addrtoname|isonsap_string:
+	addrtoname.c [{'606': ['nsap_length']}]
+		ERR_3:	addrtoname.c  Joern has not parsed this StatementNode: nsap_length  ( isonsap_string )
+CVE-2017-13049_CWE-125_aa0858100096a3490edf93034a80e66a4d61aad5_print-rx.c_print-rx.c.c|getservent|setservent:
+	getservent.c [{'39': ['servf']}]
+CVE-2017-8086_CWE-772_4ffcdef4277a91af15a3c09f7d16af072c29f3f2_9p-xattr.c_1.1.c|getservent|setservent:
+	getservent.c [{'39': ['servf']}]
+CVE-2017-9060_CWE-401_dd248ed7e204ee8a1873914e02b8b526e8f1b80d_virtio-gpu.c_1.1.c|getservent|setservent:
+	getservent.c [{'39': ['servf']}]
+CVE-2018-7757_CWE-772_4a491b1ab11ca0556d2fda1ff1301e862a2d44c4_sas_expander.c_1.1.c|getservent|setservent:
+	getservent.c [{'39': ['servf']}]
+CVE-2017-13049_CWE-125_aa0858100096a3490edf93034a80e66a4d61aad5_print-rx.c_print-rx.c.c|netdissect|nd_pop_all_packet_info:
+	netdissect.c [{'199': ['ndo']}]
+CVE-2017-8086_CWE-772_4ffcdef4277a91af15a3c09f7d16af072c29f3f2_9p-xattr.c_1.1.c|netdissect|nd_pop_all_packet_info:
+	netdissect.c [{'199': ['ndo']}]
+CVE-2017-9060_CWE-401_dd248ed7e204ee8a1873914e02b8b526e8f1b80d_virtio-gpu.c_1.1.c|netdissect|nd_pop_all_packet_info:
+	netdissect.c [{'199': ['ndo']}]
+CVE-2018-7757_CWE-772_4a491b1ab11ca0556d2fda1ff1301e862a2d44c4_sas_expander.c_1.1.c|netdissect|nd_pop_all_packet_info:
+	netdissect.c [{'199': ['ndo']}]
+CVE-2017-13049_CWE-125_aa0858100096a3490edf93034a80e66a4d61aad5_print-rx.c_print-rx.c.c|print|pretty_print_packet:
+	print.c [{'352': ['ndo']}]
+CVE-2017-8086_CWE-772_4ffcdef4277a91af15a3c09f7d16af072c29f3f2_9p-xattr.c_1.1.c|print|pretty_print_packet:
+	print.c [{'352': ['ndo']}]
+CVE-2017-9060_CWE-401_dd248ed7e204ee8a1873914e02b8b526e8f1b80d_virtio-gpu.c_1.1.c|print|pretty_print_packet:
+	print.c [{'352': ['ndo']}]
+CVE-2018-7757_CWE-772_4a491b1ab11ca0556d2fda1ff1301e862a2d44c4_sas_expander.c_1.1.c|print|pretty_print_packet:
+	print.c [{'352': ['ndo']}]
+CVE-2016-9105_CWE-772_4c1586787ff43c9acd18a56c12d720e3e6be9f7c_9p.c_1.1.c|print-802_15_4|ieee802_15_4_print_header_ie:
+	print-802_15_4.c [{'670': ['ss', 'p']}]
