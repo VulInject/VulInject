@@ -37,5 +37,5 @@ This section gives the steps, explainations and examples for getting the project
 $ git clone https://github.com/VulInject/VulInject.git
 ```
 ##### 2) Install Prerequisites
-##### 3) Configure the project
+##### 3) Configure the project1
 
