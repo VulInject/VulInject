@@ -96,10 +96,8 @@ def main(software):
             command_slice = 'python extract_df2.py ' + software + " '" + file + "'"
             os.system(command_slice)
  
-parser = OptionParser()
-(options, args) = parser.parse_args()
-if(len(args) != 1):
-    print('Missing parameters! Please add software name.')
-main(args[0])
+if __name__ == '__main__':
+    for program in os.listdir("/home/VulInject/result/generated_vulnerable_programs/"):
+        main(program)
             
 

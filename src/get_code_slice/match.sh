@@ -5,7 +5,8 @@
 PROJECT_DIR="vim"
 C_CPP_FILES_DIR="${PROJECT_DIR}_c"
 CTAGS_DIR="${PROJECT_DIR}_tags"
-PATCH_DIR="/home/VulInject/data/pattern_for_syn_matching_shard2"
+PATCH_DIR_1="/home/VulInject/data/pattern_for_syn_matching_shard1"
+PATCH_DIR_2="/home/VulInject/data/pattern_for_syn_matching_shard2"
 NORMALIZED_PATCH_DIR="/home/VulInject/data/pattern_for_sem_matching"
 MATCH_CONTENT_DIR="${PROJECT_DIR}_match_content"
 MATCH_LINES_DIR="${PROJECT_DIR}_match_content_line_information"
@@ -22,7 +23,8 @@ python3 /home/VulInject/src/get_code_slice/collect_c_cpp_files.py -i $PROJECT_DI
 python3 /home/VulInject/src/get_code_slice/ctags_gen.py -i $C_CPP_FILES_DIR -o $CTAGS_DIR
 
 # # # 4. Store match content and line numbers
-python3 /home/VulInject/src/get_code_slice/extract_match1.py --program $C_CPP_FILES_DIR --pattern $PATCH_DIR --tags $CTAGS_DIR --o1 $MATCH_CONTENT_DIR --o2 $MATCH_LINES_DIR
+python3 /home/VulInject/src/get_code_slice/extract_match.py --program $C_CPP_FILES_DIR --pattern $PATCH_DIR_1 --tags $CTAGS_DIR --o1 $MATCH_CONTENT_DIR --o2 $MATCH_LINES_DIR
+python3 /home/VulInject/src/get_code_slice/extract_match1.py --program $C_CPP_FILES_DIR --pattern $PATCH_DIR_2 --tags $CTAGS_DIR --o1 $MATCH_CONTENT_DIR --o2 $MATCH_LINES_DIR
 
 # 5. Normalize match content
 python3 /home/VulInject/src/get_code_slice/normalization.py -i $MATCH_CONTENT_DIR -o $NORMALIZED_CONTENT_DIR -l $SYMBOL_MAP_DIR
