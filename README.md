@@ -81,14 +81,18 @@ conda env create -f vulinject_env.yml
 You should modify paths in the configuration file (```src/get_code_slice/config.json```) to ensure successful code slicing.
 
 ## How To Run
+### Vulnerability Generation
 1. Put your target programs' repository in ```data/programs```
 2. We provide a shell script for you to inject vulnerabilities into the target programs automatically.
 ``` console
 bash run.sh
 ```
-3. Generated vulnerabilities are stored in ```result/generated_vulnerable_programs/\<Your Target program's name\>```
+3. Generated vulnerabilities are stored in ```result/generated_vulnerable_programs/<Your Target program's name>```
+
+### Downstream Tasks Evaluation
 
 ## Dataset
-83 vulnerability patterns we extract are present in data/pattern.
+- 83 vulnerability patterns we extract are present in data/pattern.
+- Datasets for binary and multi-class vulnerability detection models' training, validating and testing are present in each model's folder.
 
 
