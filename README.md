@@ -1,7 +1,7 @@
 # VulInject
 This is the codebase for the paper "VulInject: Automated Generation of Vulnerable Programs with Vulnerability Type for Learning-based Vulnerability Detection".
 
-# Structure
+## Structure
 ```
 VulInject
 ├── data                                    
@@ -42,10 +42,9 @@ VulInject
 
 ```
 
-# Get Started
-## Prerequisites
+## Get Started
+### Prerequisites
 Install necessary dependencies before running the project:
-### software:
 - JAVA (jdk1.8.0_161)
 - ant (1.9.14)
 - Joern (0.3.1)
@@ -53,13 +52,13 @@ Install necessary dependencies before running the project:
 - Copydetect
 - Neo4j (2.1.5)
 
-## Setup
+### Setup
 This section gives the steps, explainations for getting the project running.
-### 1) Clone this repo
+#### 1) Clone this repo
 ``` console
 $ git clone https://github.com/VulInject/VulInject.git
 ```
-### 2) Install Prerequisites
+#### 2) Install Prerequisites
 You should install prerequisites and add them to the system path.
 ``` console
 export JAVA_HOME=/usr/java/jdk1.8.0_161
@@ -70,24 +69,30 @@ export ANT_HOME=/usr/ant/apache-ant-1.9.14
 export PATH=$PATH:$ANT_HOME/bin
 ```
 
-We provide source code of Joern, Ctags, Copydetect and Neo4j in the src folder. You can directly use them.
-### 3) Configure Conda
+We provide source code of Joern, Ctags, Copydetect, and Neo4j in the src folder. You can directly use them.
+#### 3) Configure Conda
 Create three new conda environments.
 ``` console
-conda env new -f base_env.yml OPENAI_env.yml vulinject_env.yml
+conda env create -f base_env.yml
+conda env create -f OPENAI_env.yml 
+conda env create -f vulinject_env.yml 
 ```
-### 4) Configure the project
+#### 4) Configure the project
 You should modify paths in the configuration file (```src/get_code_slice/config.json```) to ensure successful code slicing.
 
-# How To Run
+## How To Run
+### Vulnerability Generation
 1. Put your target programs' repository in ```data/programs```
 2. We provide a shell script for you to inject vulnerabilities into the target programs automatically.
 ``` console
 bash run.sh
 ```
-3. Generated vulnerabilities are stored in ```result/generated_vulnerable_programs/\<Your Target program's name\>```
+3. Generated vulnerabilities are stored in ```result/generated_vulnerable_programs/<Your Target program's name>```
 
-# Dataset
-83 vulnerability patterns we extract are present in data/pattern.
+### Downstream Tasks Evaluation
+
+## Dataset
+- 83 vulnerability patterns we extract are present in data/pattern.
+- Datasets for binary and multi-class vulnerability detection models' training, validating and testing are present in each model's folder.
 
 
