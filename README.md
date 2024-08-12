@@ -33,7 +33,9 @@ VulInject
 |       └── ...
 ├── experiments
 |   ├── binary_models
+|   |   └── data                            <- data for binary model training and test
 │   └── multiclass_models
+|       └── data                            <- data for multiclass model training and test
 ├── base_env.yml                            <- Conda base environment configuration file
 ├── OPENAI_env.yml                          <- Conda OPENAI environment configuration file
 ├── vulinject_env.yml                       <- Conda vulinject environment configuration file
@@ -91,8 +93,15 @@ bash run.sh
 
 ### Downstream Tasks Evaluation
 
+## Models
+For binary models, we use VulCNN, VulBERTa, LineVul and Devign. For multiclass models, we use PDBERT, VulBERTa and Vulexplainer.
+You can directly use the open-source versions of these models for experiments. 
+We will release Docker images later for you to reproduce the experimental results in our paper.
+
 ## Dataset
-- 83 vulnerability patterns we extract are present in data/pattern.
-- Datasets for binary and multi-class vulnerability detection models' training, validating and testing are present in each model's folder.
+- 83 vulnerability patterns we extract are present in ```data/pattern```.
+- Datasets for binary and multiclass vulnerability detection models' training, validating and testing are present in ```experiments/binary_models/data``` and ```experiments/multiclass_models/data```, respectively.
+- Data in ```experiments/binary_models/data/vgx``` contains vulnerable and non-vulnerable files. ```sard``` and ```vulinject``` only contain vulnerable files. To compare the generated vulnerabilities, you need to extract the non-vulnerable files from ```vgx``` and combine them with data from ```sard``` and ```vulinejct```.
+- ```experiments/multiclass_models/data/vulinject_2882_train.json``` already contains data in ```experiments/multiclass_models/data/baseline_train.json```. Thus, you can directly use this training set to train models and use ```experiments/multiclass_models/data/test.json``` to test. The same applies to ```experiments/multiclass_models/data/vulinject_8140_train.json``` and ```experiments/multiclass_models/data/sard_2882_train.json```.
 
 
