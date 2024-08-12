@@ -95,7 +95,9 @@ bash run.sh
 
 ### Models
 For binary models, we use VulCNN, VulBERTa, LineVul and Devign. For multiclass models, we use PDBERT, VulBERTa and Vulexplainer.
+
 You can directly use the open-source versions of these models for experiments. 
+
 We will release Docker images later for you to reproduce the experimental results in our paper.
 
 ### Dataset
