@@ -1,0 +1,25 @@
+static void FUN1(struct VAR1 *VAR2, u32 VAR3,
+const struct VAR4 *VAR5)
+{
+struct VAR6 *VAR7;
+int VAR8;
+
+if (!FUN2(VAR5->VAR9.VAR10,
+VAR2->VAR11.VAR12)) {
+FUN3(VAR2->VAR13, "",
+VAR5->VAR9.VAR10);
+return;
+}
+
+VAR7 = VAR2->VAR14 + VAR5->VAR9.VAR10;
+VAR8 = FUN4(VAR7, VAR5, VAR3);
+if (VAR8)
+goto VAR15;
+
+VAR7->VAR16 = VAR5->VAR17;
+
+memcpy(VAR7->VAR18, VAR5, VAR3);
+VAR15:
+VAR7->VAR19 = VAR8;
+FUN5(&VAR7->VAR20);
+}

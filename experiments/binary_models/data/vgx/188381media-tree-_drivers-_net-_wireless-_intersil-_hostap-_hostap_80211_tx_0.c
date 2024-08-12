@@ -1,0 +1,43 @@
+VAR1 FUN1(struct VAR2 *VAR3,
+struct VAR4 *VAR5)
+{
+struct VAR6 *VAR7;
+VAR8 *VAR9;
+struct VAR10 *VAR11;
+struct VAR12 *VAR13;
+u16 VAR14;
+
+VAR7 = FUN2(VAR5);
+VAR9 = VAR7->VAR9;
+
+if (VAR3->VAR15 < 10) {
+FUN3(VAR16 ""
+"", VAR5->VAR17, VAR3->VAR15);
+FUN4(VAR3);
+return VAR18;
+}
+
+VAR7->VAR19.VAR20++;
+VAR7->VAR19.VAR21 += VAR3->VAR15;
+
+VAR11 = (struct VAR10 *) VAR3->VAR22;
+memset(VAR11, 0, sizeof(*VAR11));
+VAR11->VAR23 = VAR24;
+VAR11->VAR7 = VAR7;
+
+if (VAR3->VAR15 >= VAR25 + sizeof(VAR26) + 2) {
+VAR13 = (struct VAR12 *) VAR3->VAR27;
+VAR14 = FUN5(VAR13->VAR28);
+if (FUN6(VAR13->VAR28) &&
+(VAR14 & VAR29) == VAR30) {
+VAR31 *VAR32 = &VAR3->VAR27[VAR25 +
+sizeof(VAR26)];
+VAR11->VAR33 = (VAR32[0] << 8) | VAR32[1];
+}
+}
+
+
+VAR3->VAR5 = VAR9->VAR5;
+FUN7(VAR3);
+return VAR18;
+}

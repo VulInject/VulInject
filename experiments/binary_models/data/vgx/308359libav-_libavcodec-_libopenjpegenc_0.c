@@ -1,0 +1,20 @@
+static void FUN1(VAR1 *VAR2,
+const VAR3 *VAR4, VAR5 *VAR6)
+{
+int VAR7;
+int VAR8, VAR9;
+int VAR10, VAR11;
+const int VAR12  = VAR6->VAR12;
+VAR13 *VAR14 = (VAR13 *)VAR4->VAR15[0];
+
+for (VAR7 = 0; VAR7 < VAR12; ++VAR7)
+for (VAR9 = 0; VAR9 < VAR2->VAR16; ++VAR9) {
+VAR10 = VAR9 * VAR2->VAR17;
+VAR11 = VAR9 * (VAR4->VAR18[0] / 2) + VAR7;
+for (VAR8 = 0; VAR8 < VAR2->VAR17; ++VAR8) {
+VAR6->VAR19[VAR7].VAR15[VAR10++] =
+VAR14[VAR11];
+VAR11 += VAR12;
+}
+}
+}

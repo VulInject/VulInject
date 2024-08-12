@@ -1,0 +1,1 @@
+static inline bool FUN1 ( void * VAR1 , unsigned long VAR2 , void * VAR3 , void * VAR4 ) { unsigned long VAR5 = ( unsigned long ) VAR1 ; unsigned long VAR6 = VAR5 + VAR2 ; cfs_time_t VAR7 = ( unsigned long ) VAR3 ; unsigned long VAR8 = ( unsigned long ) VAR4 ; return ! ( VAR6 <= VAR7 || VAR5 >= VAR8 ) ; }

@@ -1,0 +1,1 @@
+extern uint64_t FUN1 ( void ) extern hrtime_t FUN2 ( void ) void FUN3 ( void ) { int VAR1 ; if ( VAR2 == 0 ) { { int VAR3 [ 16 ] ; hrtime_t VAR4 [ 8 ] ; uintptr_t VAR5 ; } , s for ( VAR1 = 0 ; VAR1 < 8 ; ++ VAR1 ) { VAR6 . VAR4 [ VAR1 ] = FUN4 ( ) ; } FUN5 ( VAR6 . VAR3 ) ; VAR2 = VAR6 . VAR5 ; } }

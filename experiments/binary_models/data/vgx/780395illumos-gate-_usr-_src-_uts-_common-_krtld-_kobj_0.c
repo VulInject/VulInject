@@ -1,0 +1,16 @@
+static void
+FUN1(struct VAR1 *VAR2)
+{
+kmutex_t	VAR3;
+callb_cpr_t	VAR4;
+
+FUN2(&VAR3, NULL, VAR5, NULL);
+FUN3(&VAR4, &VAR3, VAR6, "");
+VAR2->VAR7 = FUN4(VAR2->VAR8, VAR9, VAR10, 0, &(VAR2->VAR11),
+0, 0);
+FUN5(&VAR2->VAR12);
+FUN6(&VAR3);
+FUN7(&VAR4);
+FUN8(&VAR3);
+FUN9();
+}

@@ -1,0 +1,71 @@
+static void FUN1(void)
+{
+struct VAR1 *VAR1;
+struct VAR2 *VAR3;
+struct VAR4 *VAR5, *VAR6;
+struct VAR7 *VAR8;
+static bool VAR9;
+
+if (VAR9)
+return;
+
+VAR9 = true;
+
+FUN2("");
+
+FUN3(&VAR10.VAR11, true,
+VAR12);
+
+
+FUN4();
+
+FUN5();
+
+
+FUN6();
+
+FUN7();
+
+
+FUN8(VAR10.VAR13);
+FUN9(VAR10.VAR13);
+
+
+for (FUN10(VAR10.VAR14, VAR5, VAR6, VAR8))
+FUN11(VAR8);
+
+FUN12();
+FUN9(VAR10.VAR14);
+
+
+FUN13();
+
+FUN14();
+
+if (VAR15) {
+FUN15();
+FUN16 (VAR1, VAR16, &VAR17) {
+VAR3 = VAR1->VAR18;
+if (VAR3)
+FUN17(VAR3->VAR19, VAR20);
+}
+}
+
+if (VAR10.VAR21)
+FUN18(&VAR10.VAR21);
+
+FUN19();
+
+FUN20(VAR22, NULL, NULL);
+FUN21();
+
+FUN22();
+FUN23();
+
+FUN24();
+
+FUN25(&VAR10.VAR14);
+
+
+FUN26();
+}

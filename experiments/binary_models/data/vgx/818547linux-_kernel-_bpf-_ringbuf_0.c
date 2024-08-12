@@ -1,0 +1,44 @@
+static struct VAR1 *FUN1(size_t VAR2, int VAR3)
+{
+const gfp_t VAR4 = VAR5 | VAR6 |
+VAR7 | VAR8;
+int VAR9 = VAR10 + VAR11;
+int VAR12 = VAR2 >> VAR13;
+int VAR14 = VAR9 + VAR12;
+struct VAR15 **VAR16, *VAR15;
+struct VAR1 *VAR17;
+size_t VAR18;
+int VAR19;
+
+
+VAR18 = (VAR9 + 2 * VAR12) * sizeof(*VAR16);
+VAR16 = FUN2(VAR18, VAR3);
+if (!VAR16)
+return NULL;
+
+for (VAR19 = 0; VAR19 < VAR14; VAR19++) {
+VAR15 = FUN3(VAR3, VAR4, 0);
+if (!VAR15) {
+VAR14 = VAR19;
+goto VAR20;
+}
+VAR16[VAR19] = VAR15;
+if (VAR19 >= VAR9)
+VAR16[VAR12 + VAR19] = VAR15;
+}
+
+VAR17 = FUN4(VAR16, VAR9 + 2 * VAR12,
+VAR21 | VAR22, VAR23);
+if (VAR17) {
+FUN5(VAR16);
+VAR17->VAR16 = VAR16;
+VAR17->VAR14 = VAR14;
+return VAR17;
+}
+
+VAR20:
+for (VAR19 = 0; VAR19 < VAR14; VAR19++)
+FUN6(VAR16[VAR19]);
+FUN7(VAR16);
+return NULL;
+}

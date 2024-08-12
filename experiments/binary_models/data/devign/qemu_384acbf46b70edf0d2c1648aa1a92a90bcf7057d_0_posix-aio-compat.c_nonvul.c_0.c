@@ -1,0 +1,22 @@
+VAR1 *FUN1(VAR2 *VAR3, int VAR4, int64_t VAR5, VAR6 *VAR7, int VAR8, VAR9 *VAR10, void *VAR11, int VAR12)
+{
+    struct VAR13 *VAR14;
+    VAR14 = FUN2(&VAR15, VAR3, VAR10, VAR11);
+    if (!VAR14)
+        return NULL;
+    VAR14->VAR16 = VAR12;
+    VAR14->VAR17 = VAR4;
+    VAR14->VAR18 = VAR19;
+    if (VAR7)
+    {
+        VAR14->VAR20 = VAR7->VAR21;
+        VAR14->VAR22 = VAR7->VAR23;
+    }
+    VAR14->VAR24 = VAR8 * 512;
+    VAR14->VAR25 = VAR5 * 512;
+    VAR14->VAR26 = VAR27->VAR28;
+    VAR27->VAR28 = VAR14;
+    FUN3(VAR14, VAR11, VAR5, VAR8, VAR12);
+    FUN4(VAR14);
+    return &VAR14->VAR29;
+}

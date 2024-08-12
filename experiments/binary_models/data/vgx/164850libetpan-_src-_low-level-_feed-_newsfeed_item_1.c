@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , const char * VAR3 ) { if ( VAR3 != VAR2 -> VAR4 ) { char * VAR5 ; if ( VAR3 == NULL ) { VAR5 = NULL ; } else { VAR5 = strdup ( VAR3 ) ; } free ( VAR2 -> VAR4 ) ; VAR2 -> VAR4 = VAR5 ; } return 0 ; }

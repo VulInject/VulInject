@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , int * VAR3 ) { unsigned int VAR4 ; int VAR5 ; VAR5 = FUN2 ( VAR2 -> VAR6 , VAR7 , & VAR4 ) ; * VAR3 = FUN3 ( VAR4 ) ; return VAR5 ; } static const int VAR8 [ ] [ 2 ] { { 0 500000 } { 1 0 } { 2 0 } { 4 0 } { 8 0 } { 16 0 } { 32 0 } { 64 0 } } ; ;

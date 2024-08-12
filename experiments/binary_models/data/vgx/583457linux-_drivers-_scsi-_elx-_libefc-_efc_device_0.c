@@ -1,0 +1,160 @@
+void
+FUN1(struct VAR1 *VAR2, enum efc_sm_event VAR3, void *VAR4)
+{
+struct VAR5 *VAR6 = VAR4;
+struct VAR7 *VAR8 = VAR2->VAR9;
+
+FUN2(VAR2, VAR3, VAR10);
+
+FUN3();
+
+
+switch (VAR3) {
+case VAR11:
+if (!VAR8->VAR12)
+break;
+
+if (VAR8->VAR13->VAR14 &&
+VAR8->VAR13->VAR15->VAR16) {
+FUN4(VAR8);
+
+FUN5(VAR8, VAR17, NULL);
+} else {
+FUN6(VAR8, "",
+VAR8->VAR13->VAR14);
+FUN6(VAR8, "",
+VAR8->VAR13->VAR15->VAR16);
+}
+break;
+case VAR18: {
+
+struct VAR19 *VAR20 = VAR6->VAR21->VAR22.VAR23;
+int VAR24;
+
+FUN7(VAR8, VAR6->VAR25->VAR22.VAR23);
+FUN8(VAR8,
+VAR6->VAR21->VAR22.VAR23,
+VAR26);
+
+
+if (!VAR8->VAR13->VAR15->VAR16) {
+FUN9(VAR8, FUN10(VAR20->VAR27));
+break;
+}
+
+
+VAR24 = FUN11(VAR8);
+FUN5(VAR8, VAR28, NULL);
+if (VAR24 < 0)
+FUN12(VAR8, VAR29, NULL);
+
+break;
+}
+
+case VAR30: {
+FUN13(VAR10, VAR2, VAR3, VAR4);
+break;
+}
+
+case VAR31: {
+struct VAR19 *VAR20 = VAR6->VAR21->VAR22.VAR23;
+u32 VAR32 = FUN10(VAR20->VAR27);
+
+
+memcpy(VAR8->VAR13->VAR15->VAR33,
+VAR6->VAR25->VAR22.VAR23,
+sizeof(struct VAR34));
+
+
+FUN14(VAR8, VAR35);
+
+FUN15(VAR8, FUN16(VAR20->VAR36), VAR32);
+
+if (FUN17(VAR8->VAR13)) {
+FUN6(VAR8, "");
+FUN12(VAR8, VAR37, NULL);
+break;
+}
+
+FUN5(VAR8,  VAR38, NULL);
+break;
+}
+
+case VAR39: {
+struct VAR19 *VAR20 = VAR6->VAR21->VAR22.VAR23;
+
+if (!VAR8->VAR13->VAR15->VAR16) {
+
+FUN6(VAR8, "",
+FUN18(VAR3));
+FUN12(VAR8,
+VAR40, NULL);
+break;
+}
+
+FUN19(VAR8, FUN16(VAR20->VAR36));
+FUN5(VAR8, VAR41, NULL);
+break;
+}
+
+case VAR42:
+case VAR43:
+case VAR44:
+case VAR45:
+case VAR46: {
+struct VAR19 *VAR20 = VAR6->VAR21->VAR22.VAR23;
+
+if (!VAR8->VAR13->VAR15->VAR16) {
+
+FUN6(VAR8, "",
+FUN18(VAR3));
+
+FUN12(VAR8,
+VAR40,
+NULL);
+break;
+}
+FUN6(VAR8, "",
+FUN18(VAR3));
+
+FUN20(VAR8, FUN16(VAR20->VAR36),
+VAR47, VAR48, 0);
+
+break;
+}
+
+case VAR49: {
+
+if (!VAR8->VAR13->VAR15->VAR16) {
+
+FUN6(VAR8, "",
+FUN18(VAR3));
+FUN12(VAR8,
+VAR40,
+NULL);
+break;
+}
+
+
+FUN6(VAR8, "");
+if (FUN21(VAR8)) {
+
+FUN6(VAR8, "");
+FUN12(VAR8,
+VAR40,
+NULL);
+} else {
+
+FUN5(VAR8,
+VAR50, NULL);
+}
+break;
+}
+case VAR51:
+
+break;
+
+default:
+FUN13(VAR10, VAR2, VAR3, VAR4);
+}
+}

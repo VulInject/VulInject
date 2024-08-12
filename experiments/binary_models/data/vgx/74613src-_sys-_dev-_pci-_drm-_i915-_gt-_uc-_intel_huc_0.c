@@ -1,0 +1,45 @@
+int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+struct VAR5 *VAR6 = &VAR4->VAR7.VAR6;
+int VAR8;
+
+if (!FUN3(&VAR2->VAR9))
+return -VAR10;
+
+
+if (FUN4(VAR2))
+return -VAR11;
+
+VAR8 = FUN5(VAR4->VAR12, -VAR13);
+if (VAR8)
+goto VAR14;
+
+FUN6(FUN7(&VAR2->VAR9));
+
+VAR8 = FUN8(VAR6, FUN9(VAR6, VAR2->VAR9.VAR15));
+if (VAR8) {
+FUN10("", VAR8);
+goto VAR14;
+}
+
+
+VAR8 = FUN11(VAR4->VAR16,
+VAR2->VAR17.VAR18,
+VAR2->VAR17.VAR19,
+VAR2->VAR17.VAR20,
+2, 50, NULL);
+if (VAR8) {
+FUN10("", VAR8);
+goto VAR14;
+}
+
+FUN12(&VAR2->VAR9, VAR21);
+FUN13(&VAR4->VAR12->VAR22, "");
+return 0;
+
+VAR14:
+FUN14(VAR4->VAR12, "", VAR8);
+FUN12(&VAR2->VAR9, VAR23);
+return VAR8;
+}

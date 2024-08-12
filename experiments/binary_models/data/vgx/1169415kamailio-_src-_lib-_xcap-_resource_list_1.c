@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( VAR1 * VAR2 ) { VAR1 * VAR3 ; if ( ! VAR2 ) { return NULL ; } VAR3 = ( VAR1 * ) FUN2 ( sizeof ( * VAR3 ) ) ; if ( ! VAR3 ) { return NULL ; } if ( VAR2 -> VAR4 ) { VAR3 -> VAR4 = FUN3 ( VAR2 -> VAR4 ) ; } if ( VAR2 -> VAR5 ) { VAR3 -> VAR5 = FUN3 ( VAR2 -> VAR5 ) ; } return VAR3 ; }

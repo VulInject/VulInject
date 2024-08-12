@@ -1,0 +1,47 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4, int VAR5)
+{
+    VAR6 *VAR7 = FUN2(VAR2, VAR6, VAR8);
+    VAR9 *VAR10 = VAR4->VAR11;
+    uint32_t VAR12 = VAR7->VAR8.VAR13->VAR12;
+    target_ulong VAR14 = VAR7->VAR8.VAR13->VAR14;
+    VAR7->VAR15 = (VAR12 >> VAR16) & 1;
+    VAR7->VAR17 = (VAR12 >> VAR18) & 1;
+    VAR7->VAR19 = (VAR12 >> VAR20) & 1;
+    VAR7->VAR21 = (VAR12 >> VAR22) & 1;
+    VAR7->VAR23 = 0;
+    VAR7->VAR24 = (VAR12 >> VAR25) & 1;
+    VAR7->VAR26 = (VAR12 >> VAR27) & 3;
+    VAR7->VAR28 = (VAR12 >> VAR29) & 3;
+    VAR7->VAR30 = (VAR12 >> VAR31) & 1;
+    VAR7->VAR32 = VAR33;
+    VAR7->VAR34 = false;
+    VAR7->VAR14 = VAR14;
+    VAR7->VAR35 = 0;
+    VAR7->VAR36 = 0;
+    VAR7->VAR36 = FUN3(VAR10, false);
+    VAR7->VAR37 = VAR10->VAR38[VAR39];
+    VAR7->VAR40 = VAR10->VAR38[VAR41];
+    VAR7->VAR42 = VAR10->VAR38[VAR43];
+    VAR7->VAR44 = VAR10->VAR38[VAR45];
+    VAR7->VAR46 = VAR10->VAR38[VAR47];
+    VAR7->VAR48 = VAR10->VAR38[VAR49];
+    VAR7->VAR50 = (VAR12 >> VAR51) & 1;
+    VAR7->VAR52 = (VAR12 >> VAR53) & 1;
+    VAR7->VAR12 = VAR12;
+    VAR7->VAR54 = !(VAR7->VAR30 || VAR7->VAR8.VAR55 || (VAR12 & VAR56));
+    VAR7->VAR57 = !VAR7->VAR54 && !(VAR7->VAR8.VAR13->VAR58 & VAR59);
+    if (!VAR7->VAR21 && (VAR7->VAR24 || !VAR7->VAR15 || !VAR7->VAR17))
+        FUN4("");
+    VAR60 = FUN5();
+    VAR61 = FUN5();
+    VAR62 = FUN5();
+    VAR63 = FUN5();
+    VAR64 = FUN6();
+    VAR65 = FUN7();
+    VAR66 = FUN7();
+    VAR67 = FUN5();
+    VAR68 = FUN8();
+    VAR69 = FUN8();
+    VAR70 = FUN9();
+    return VAR5;
+}

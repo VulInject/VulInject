@@ -1,0 +1,1 @@
+void FUN1 ( void ) { if ( VAR1 ) { fclose ( VAR1 , NULL ) ; VAR1 = NULL ; } VAR2 = 0 ; }

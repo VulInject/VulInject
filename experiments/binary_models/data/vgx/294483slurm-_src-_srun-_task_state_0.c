@@ -1,0 +1,47 @@
+extern void FUN1(VAR1 *VAR2, int VAR3,
+task_state_type_t VAR4)
+{
+FUN2(VAR2 != NULL);
+FUN2(VAR3 >= 0);
+FUN2(VAR3 < VAR2->VAR5);
+
+FUN3("", VAR6,
+&VAR2->VAR7, VAR3,
+FUN4(VAR4));
+
+switch (VAR4) {
+case VAR8:
+FUN5 (VAR2->VAR9, VAR3);
+VAR2->VAR10++;
+break;
+case VAR11:
+FUN5 (VAR2->VAR12, VAR3);
+break;
+case VAR13:
+FUN6(VAR2->VAR9, VAR3);
+if (FUN7(VAR2->VAR14, VAR3) ||
+FUN7(VAR2->VAR15, VAR3)) {
+FUN8("",
+VAR3);
+} else {
+FUN5 (VAR2->VAR14, VAR3);
+VAR2->VAR16++;
+}
+break;
+case VAR17:
+FUN6(VAR2->VAR9, VAR3);
+if (FUN7(VAR2->VAR14, VAR3) ||
+FUN7(VAR2->VAR15, VAR3)) {
+FUN8("",
+VAR3);
+} else {
+FUN5 (VAR2->VAR15, VAR3);
+VAR2->VAR16++;
+VAR2->VAR18++;
+}
+break;
+}
+
+FUN2((FUN9(VAR2->VAR15) +
+FUN9(VAR2->VAR14)) == VAR2->VAR16);
+}

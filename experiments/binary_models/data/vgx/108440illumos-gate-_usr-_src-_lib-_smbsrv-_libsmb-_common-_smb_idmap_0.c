@@ -1,0 +1,45 @@
+VAR1
+FUN1(VAR2 *VAR3, VAR4 *VAR5,
+VAR6 *VAR7, int VAR8)
+{
+char VAR9[VAR10];
+idmap_stat VAR11;
+int VAR12 = 0;
+
+if (VAR3 == NULL || VAR5 == NULL || VAR7 == NULL)
+return (VAR13);
+
+FUN2(VAR7, VAR9);
+if (FUN3(VAR9, &VAR5->VAR14) != 0)
+return (VAR15);
+
+VAR5->VAR16 = strdup(VAR9);
+VAR5->VAR17 = VAR8;
+
+switch (VAR8) {
+case VAR18:
+VAR11 = FUN4(VAR3, VAR5->VAR16,
+VAR5->VAR14, VAR12, VAR5->VAR19, &VAR5->VAR20);
+FUN5("", VAR11);
+break;
+
+case VAR21:
+VAR11 = FUN6(VAR3, VAR5->VAR16,
+VAR5->VAR14, VAR12, VAR5->VAR19, &VAR5->VAR20);
+FUN5("", VAR11);
+break;
+
+case VAR22:
+VAR11 = FUN7(VAR3, VAR5->VAR16,
+VAR5->VAR14, VAR12, VAR5->VAR19, &VAR5->VAR17,
+&VAR5->VAR20);
+FUN5("", VAR11);
+break;
+
+default:
+VAR11 = VAR13;
+break;
+}
+
+return (VAR11);
+}

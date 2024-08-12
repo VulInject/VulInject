@@ -1,0 +1,17 @@
+inline int FUN1(VAR1 *VAR2, VAR3 *VAR4, const char *VAR5) {
+if(FUN2(!VAR5 || !*VAR5 || !strcmp(FUN3(VAR4), VAR5)))
+return 0;
+
+FUN4(VAR6, "", FUN5(VAR2), FUN3(VAR4), FUN5(VAR2), VAR5);
+
+VAR7 *VAR8 = VAR4->VAR5;
+VAR4->VAR5 = FUN6(VAR5);
+FUN7(VAR8);
+
+FUN8(VAR4);
+
+VAR4->VAR9 = 0;
+FUN9(VAR2, VAR10);
+
+return 1;
+}

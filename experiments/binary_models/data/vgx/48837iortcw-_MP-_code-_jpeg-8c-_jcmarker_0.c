@@ -1,0 +1,44 @@
+FUN1 (j_compress_ptr VAR1)
+
+
+
+{
+char VAR2[VAR3];
+char VAR4[VAR3];
+int VAR5, VAR6;
+VAR7 *VAR8;
+
+for (VAR6 = 0; VAR6 < VAR3; VAR6++)
+VAR2[VAR6] = VAR4[VAR6] = 0;
+
+for (VAR6 = 0; VAR6 < VAR1->VAR9; VAR6++) {
+VAR8 = VAR1->VAR10[VAR6];
+
+if (VAR1->VAR11 == 0 && VAR1->VAR12 == 0)
+VAR2[VAR8->VAR13] = 1;
+
+if (VAR1->VAR14)
+VAR4[VAR8->VAR15] = 1;
+}
+
+VAR5 = 0;
+for (VAR6 = 0; VAR6 < VAR3; VAR6++)
+VAR5 += VAR2[VAR6] + VAR4[VAR6];
+
+if (VAR5) {
+FUN2(VAR1, VAR16);
+
+FUN3(VAR1, VAR5*2 + 2);
+
+for (VAR6 = 0; VAR6 < VAR3; VAR6++) {
+if (VAR2[VAR6]) {
+FUN4(VAR1, VAR6);
+FUN4(VAR1, VAR1->VAR17[VAR6] + (VAR1->VAR18[VAR6]<<4));
+}
+if (VAR4[VAR6]) {
+FUN4(VAR1, VAR6 + 0x10);
+FUN4(VAR1, VAR1->VAR19[VAR6]);
+}
+}
+}
+}

@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , VAR3 * VAR4 ) { int VAR5 , VAR6 ; for ( VAR5 = 0 ; VAR5 < VAR2 -> VAR7 ; VAR5 ++ ) { cfs_time_t VAR8 ; VAR8 = VAR5 << VAR9 ; for ( VAR6 = 0 ; VAR6 < VAR2 -> VAR10 ; VAR6 ++ ) { VAR8 |= VAR6 << VAR11 ; FUN2 ( VAR12 | VAR8 , VAR4 ) ; FUN3 ( 0x10000 ) ; } } }

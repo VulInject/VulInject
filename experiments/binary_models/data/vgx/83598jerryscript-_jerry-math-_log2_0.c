@@ -1,0 +1,67 @@
+FUN1 (double VAR1)
+{
+double VAR2, VAR3, VAR4, VAR5, VAR6, VAR7, VAR8, VAR9, VAR10;
+int VAR11, VAR12, VAR13;
+unsigned int VAR14;
+double_accessor VAR15;
+
+VAR13 = FUN2 (VAR1); 
+VAR14 = FUN3 (VAR1); 
+
+VAR12 = 0;
+if (VAR13 < 0x00100000)
+{ 
+if (((VAR13 & 0x7fffffff) | VAR14) == 0)
+{
+return -VAR16; 
+}
+if (VAR13 < 0)
+{
+return VAR17; 
+}
+VAR12 -= 54;
+VAR1 *= VAR18;    
+VAR13 = FUN2 (VAR1); 
+}
+if (VAR13 >= 0x7ff00000)
+{
+return VAR1 + VAR1;
+}
+if (VAR13 == 0x3ff00000 && VAR14 == 0)
+{
+return VAR19; 
+}
+VAR12 += (VAR13 >> 20) - 1023;
+VAR13 &= 0x000fffff;
+VAR11 = (VAR13 + 0x95f64) & 0x100000;
+VAR15.VAR20 = VAR1;
+VAR15.VAR21.VAR4 = VAR13 | (VAR11 ^ 0x3ff00000); 
+VAR12 += (VAR11 >> 20);
+VAR10 = (double) VAR12;
+VAR2 = VAR15.VAR20 - 1.0;
+VAR3 = 0.5 * VAR2 * VAR2;
+double VAR22, VAR23, VAR24, VAR25, VAR26;
+
+VAR22 = VAR2 / (2.0 + VAR2);
+VAR23 = VAR22 * VAR22;
+VAR9 = VAR23 * VAR23;
+VAR25 = VAR9 * (VAR27 + VAR9 * (VAR28 + VAR9 * VAR29));
+VAR26 = VAR23 * (VAR30 + VAR9 * (VAR31 + VAR9 * (VAR32 + VAR9 * VAR33)));
+VAR24 = VAR26 + VAR25;
+VAR6 = VAR22 * (VAR3 + VAR24);
+
+VAR4 = VAR2 - VAR3;
+VAR15.VAR20 = VAR4;
+VAR15.VAR21.VAR5 = 0;
+
+VAR5 = (VAR2 - VAR4) - VAR3 + VAR6;
+VAR7 = VAR4 * VAR34;
+VAR8 = (VAR5 + VAR4) * VAR35 + VAR5 * VAR34;
+
+
+VAR9 = VAR10 + VAR7;
+VAR8 += (VAR10 - VAR9) + VAR7;
+VAR7 = VAR9;
+
+return VAR8 + VAR7;
+}

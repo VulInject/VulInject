@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 ) { FUN2 ( VAR3 , NULL , NULL , VAR4 ) ; FUN3 ( VAR5 , NULL , NULL , VAR4 ) ; FUN4 ( VAR6 , NULL , VAR4 ) ; FUN5 ( VAR7 , NULL , NULL , VAR4 ) ; }

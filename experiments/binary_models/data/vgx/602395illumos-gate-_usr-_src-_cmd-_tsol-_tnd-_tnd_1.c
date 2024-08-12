@@ -1,0 +1,1 @@
+static void FUN1 ( void * FUN2 ( ) ) { int VAR1 , VAR2 ; VAR3 * VAR4 ; for ( VAR1 = 0 ; VAR1 <= VAR5 ; VAR1 ++ ) { for ( VAR2 = 0 ; VAR2 < VAR6 ; VAR2 ++ ) { VAR4 = VAR7 [ VAR1 ] [ VAR2 ] ; while ( VAR4 != NULL ) { FUN2 ( & VAR4 -> VAR8 , VAR9 ) ; VAR4 = VAR4 -> VAR10 ; } } } }

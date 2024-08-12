@@ -1,0 +1,1 @@
+void FUN1 ( unsigned VAR1 ) { if ( VAR1 >= VAR2 ) { FUN2 ( "" , VAR1 ) ; } if ( VAR3 [ VAR1 ] != NULL ) { FUN3 ( "" "" , VAR1 ) ; } VAR3 [ VAR1 ] = ( VAR4 * ) xcalloc ( VAR5 , sizeof ( VAR4 ) ) ; if ( VAR1 >= VAR6 ) { VAR6 = VAR1 + 1 ; } VAR7 = VAR1 ; VAR8 = VAR3 [ VAR1 ] ; VAR9 [ VAR1 ] = 0 ; }

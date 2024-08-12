@@ -1,0 +1,80 @@
+int FUN1(struct VAR1 *VAR2)
+{
+int VAR3, VAR4;
+char *VAR5, *VAR6;
+int VAR7, VAR8, VAR9;
+struct VAR10 *VAR11 = VAR12[VAR13].VAR14;
+
+VAR15 = FUN2(VAR15, VAR11->VAR16 - 1);
+VAR17 = FUN2(VAR17, VAR11->VAR18 - 1);
+VAR19 = FUN2(VAR19, VAR11->VAR16 - 1);
+VAR20 = FUN2(VAR20, VAR11->VAR18 - 1);
+VAR8 = VAR17 * VAR11->VAR21 + (VAR15 << 1);
+VAR9 = VAR20 * VAR11->VAR21 + (VAR19 << 1);
+
+if (VAR8 > VAR9) {
+
+int VAR22 = VAR8;
+
+VAR8 = VAR9;
+VAR9 = VAR22;
+}
+
+if (VAR23 != VAR12[VAR13].VAR14) {
+FUN3();
+VAR23 = VAR12[VAR13].VAR14;
+FUN4(VAR2->VAR24,
+"");
+return -VAR25;
+}
+
+VAR3 = VAR8;
+VAR4 = VAR9;
+
+
+if (VAR4 > VAR3 &&
+!FUN5(VAR4, VAR11->VAR21) &&
+FUN6(FUN7(VAR4))) {
+for (VAR9 = VAR4 + 2; ; VAR9 += 2)
+if (!FUN6(FUN7(VAR9)) ||
+FUN5(VAR9, VAR11->VAR21))
+break;
+if (FUN6(FUN7(VAR9)))
+VAR4 = VAR9;
+}
+if ((VAR3 == VAR26) && (VAR4 == VAR27))
+return 0; 
+
+VAR26 = VAR3;
+VAR27 = VAR4;
+
+VAR5 = FUN8((VAR27 - VAR26) / 2 + 1, VAR28);
+if (!VAR5) {
+FUN3();
+return -VAR29;
+}
+FUN9(VAR30);
+VAR30 = VAR5;
+
+VAR6 = VAR5;
+for (VAR7 = VAR26; VAR7 <= VAR27; VAR7 += 2) {
+*VAR5 = FUN7(VAR7);
+if (!FUN6(*VAR5++))
+VAR6 = VAR5;
+if (!((VAR7 + 2) % VAR11->VAR21)) {
+
+if (VAR6 != VAR5) {
+VAR5 = VAR6;
+*VAR5++ = '';
+}
+VAR6 = VAR5;
+}
+}
+VAR31 = VAR5 - VAR30;
+return 0;
+}
+
+struct VAR32 {
+struct work_struct VAR33;
+struct VAR1 *VAR2;
+};

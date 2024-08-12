@@ -1,0 +1,12 @@
+FUN1(VAR1 *VAR2, VAR1 *VAR3, VAR1 *VAR4)
+{
+    VAR5 *VAR6 = FUN2(VAR2, sizeof *VAR6);
+    uint64_t VAR7 = FUN3(VAR4);
+    VAR6->VAR8 = FUN4(VAR9);
+    VAR6->VAR10 = FUN5(VAR11);
+    VAR6->VAR7 = FUN6(VAR7);
+    FUN7(VAR3, VAR12, 1, false);
+    FUN8(VAR3, VAR13, VAR12, VAR2, &VAR6->VAR7, sizeof(VAR6->VAR7));
+    FUN9(VAR3, VAR2, (void *)VAR6, "", sizeof(*VAR6), 2, NULL, NULL);
+    FUN2(VAR4, VAR11);
+}

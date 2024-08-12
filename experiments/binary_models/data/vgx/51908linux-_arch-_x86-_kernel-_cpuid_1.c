@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR1 , struct VAR2 * VAR2 ) { unsigned int VAR3 ; struct VAR4 * VAR5 ; VAR3 = FUN2 ( FUN3 ( VAR2 ) ) ; VAR5 = & FUN4 ( VAR3 ) ; if ( VAR5 -> VAR6 < 0 ) { return - VAR7 ; } return 0 ; } static const struct file_operations VAR8 = { . VAR9 = VAR10 . VAR11 = VAR12 . read = VAR13 . open = VAR14 } ;

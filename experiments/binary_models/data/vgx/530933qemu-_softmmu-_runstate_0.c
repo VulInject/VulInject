@@ -1,0 +1,32 @@
+void FUN1(void)
+{
+VAR1 *VAR2 = NULL;
+
+FUN2();
+
+FUN3(VAR3);
+
+FUN4();
+FUN5();
+FUN6();
+
+FUN7(VAR4);
+
+FUN3(VAR5);
+FUN3(VAR6);
+
+FUN8();
+FUN9();
+FUN10();
+FUN11();
+
+if (FUN12(&VAR2) < 0) {
+FUN13(VAR2, "");
+FUN14(1);
+}
+
+FUN15();
+
+FUN16();
+FUN17();
+}

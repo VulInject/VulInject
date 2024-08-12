@@ -1,0 +1,19 @@
+void FUN1(VAR1 *VAR2, VAR3 *VAR4[3], VAR5 *VAR6, int VAR7, int VAR8, int VAR9, int VAR10, int VAR11, int VAR12, int VAR13, int VAR14, VAR15 *VAR16)
+{
+    VP56mv VAR17 = *VAR16;
+    FUN2(VAR2, VAR4[0] + VAR10 * VAR2->VAR18 + VAR9, VAR6->VAR19[0], VAR16, VAR7 + VAR9, VAR8 + VAR10, VAR11, VAR12, VAR13, VAR14, VAR2->VAR18, VAR2->VAR20[VAR11 == 8]);
+    if (VAR2->VAR21 == 3)
+    {
+        VAR17.VAR22 &= ~7;
+        VAR17.VAR23 &= ~7;
+    }
+    VAR7 >>= 1;
+    VAR8 >>= 1;
+    VAR9 >>= 1;
+    VAR10 >>= 1;
+    VAR13 >>= 1;
+    VAR14 >>= 1;
+    VAR11 >>= 1;
+    VAR12 >>= 1;
+    FUN3(VAR2, VAR4[1] + VAR10 * VAR2->VAR24 + VAR9, VAR4[2] + VAR10 * VAR2->VAR24 + VAR9, VAR6->VAR19[1], VAR6->VAR19[2], &VAR17, VAR7 + VAR9, VAR8 + VAR10, VAR11, VAR12, VAR13, VAR14, VAR2->VAR24, VAR2->VAR20[1 + (VAR11 == 4)]);
+}

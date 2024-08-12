@@ -1,0 +1,1 @@
+static int FUN1 ( int VAR1 , int VAR2 , int VAR3 , evutil_socket_t VAR4 [ 2 ] ) { if ( VAR3 || ( VAR1 != VAR5 && VAR1 != VAR6 ) ) { FUN2 ( VAR7 ) ; return - 1 ; } if ( FUN3 ( ) ) { VAR1 = VAR5 ; if ( VAR2 != VAR8 ) { FUN2 ( VAR7 ) ; return - 1 ; } } else { VAR1 = VAR6 ; } return FUN4 ( VAR1 , VAR2 , VAR3 , VAR4 ) ; }

@@ -1,0 +1,26 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+struct VAR5 *VAR6 = VAR4->VAR6;
+
+
+FUN3(0, VAR6->VAR7 + 10);
+
+FUN4(VAR4);
+FUN5(FUN6(VAR4));
+FUN7(VAR2->VAR8, VAR4);
+FUN8(VAR4);
+FUN9(VAR2, VAR4->VAR9.VAR10);
+FUN9(VAR2, VAR6->VAR11);
+FUN9(VAR2, VAR6->VAR7);
+FUN10(VAR2);
+FUN11(VAR2);
+}
+
+static const struct pci_device_id VAR12[] = {
+
+{0x126c, 0x8030, VAR13, VAR13,},
+
+{0x1562, 0x0001, VAR13, VAR13,},
+{0,},
+};

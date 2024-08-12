@@ -1,0 +1,24 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4, uint64_t VAR5, uint16_t VAR6, uint16_t VAR7, uint16_t VAR8)
+{
+    int VAR9;
+    VAR10 *VAR11;
+    VAR2->VAR12 = VAR4;
+    VAR2->VAR5 = VAR5;
+    VAR2->VAR6 = VAR6;
+    VAR2->VAR8 = VAR8;
+    VAR2->VAR7 = VAR7;
+    VAR2->VAR13 = VAR2->VAR14 = 0;
+    VAR2->VAR15 = FUN2(VAR2->VAR8 * sizeof(*VAR2->VAR15));
+    FUN3(&VAR2->VAR16);
+    FUN3(&VAR2->VAR17);
+    for (VAR9 = 0; VAR9 < VAR2->VAR8; VAR9++)
+    {
+        VAR2->VAR15[VAR9].VAR2 = VAR2;
+        FUN4(&(VAR2->VAR16), &VAR2->VAR15[VAR9], VAR18);
+    }
+    VAR2->VAR19 = FUN5(VAR20, VAR21, VAR2);
+    assert(VAR4->VAR11[VAR7]);
+    VAR11 = VAR4->VAR11[VAR7];
+    FUN4(&(VAR11->VAR22), VAR2, VAR18);
+    VAR4->VAR2[VAR6] = VAR2;
+}

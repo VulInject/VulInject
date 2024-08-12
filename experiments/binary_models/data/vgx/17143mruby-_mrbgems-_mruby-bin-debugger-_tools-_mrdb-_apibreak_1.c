@@ -1,0 +1,1 @@
+static int32_t FUN1 ( VAR1 * VAR2 , uint32_t VAR3 ) { int VAR4 ; int32_t VAR5 ; char VAR6 = VAR7 ; for ( VAR4 = 0 ; VAR4 < VAR2 -> VAR8 ; VAR4 ++ ) { if ( VAR2 -> VAR9 [ VAR4 ] . VAR3 == VAR3 ) { VAR6 = VAR10 ; VAR5 = VAR4 ; break ; } } if ( VAR6 == VAR7 ) { return VAR11 ; } return VAR5 ; }

@@ -1,0 +1,1 @@
+static inline int FUN1(VAR1 *VAR2, uint32_t VAR3, struct VAR4 *VAR5) { return FUN2(VAR2, VAR3, (VAR6 *)VAR5, sizeof(*VAR5) >> 2); }

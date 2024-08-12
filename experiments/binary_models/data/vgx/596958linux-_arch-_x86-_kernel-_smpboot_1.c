@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR2 , struct VAR1 * VAR3 ) { return false ; } static const struct x86_cpu_id VAR4 [ ] { FUN2 ( VAR5 , 0 ) FUN2 ( VAR6 , 0 ) FUN2 ( VAR7 , 1 ) { } } ; ;

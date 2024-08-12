@@ -1,0 +1,27 @@
+void FUN1(const S390FeatBitmap VAR1, void *VAR2,
+void (*VAR3)(const char *VAR4, void *VAR2))
+{
+S390FeatBitmap VAR5, VAR6;
+S390FeatGroup VAR7;
+S390Feat VAR8;
+
+FUN2(VAR5, VAR1, VAR9);
+
+
+for (VAR7 = 0; VAR7 < VAR10; VAR7++) {
+const VAR11 *VAR12 = FUN3(VAR7);
+
+FUN4(VAR6, VAR5, VAR12->VAR8, VAR9);
+if (FUN5(VAR6, VAR12->VAR8, VAR9)) {
+FUN6(VAR5, VAR5, VAR12->VAR8, VAR9);
+FUN7(VAR12->VAR4, VAR2);
+}
+}
+
+
+VAR8 = FUN8(VAR5, VAR9);
+while (VAR8 < VAR9) {
+FUN7(FUN9(VAR8)->VAR4, VAR2);
+VAR8 = FUN10(VAR5, VAR9, VAR8 + 1);
+};
+}

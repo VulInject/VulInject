@@ -1,0 +1,28 @@
+static void FUN1(VAR1 *VAR2, int VAR3)
+{
+    VAR4 *VAR5;
+    VAR6 *VAR7;
+    if (!FUN2(VAR2, VAR8, VAR9) || !VAR2->VAR10 || VAR3 != 4)
+    {
+        return;
+    }
+    VAR5 = FUN3(sizeof(*VAR5));
+    VAR5->VAR11 = FUN3(sizeof(VAR12) * 2);
+    VAR5->VAR13 = 2;
+    VAR7 = VAR5->VAR14 = FUN3(sizeof(*VAR7) + sizeof(VAR15));
+    VAR7->VAR2 = VAR2;
+    VAR7->VAR16 = 0;
+    VAR7->VAR17 = 4;
+    VAR7->VAR18 = 1;
+    VAR7->VAR19[0].VAR20 = 0x4000;
+    VAR7->VAR19[0].VAR21 = VAR22 - 1;
+    VAR7->VAR23 = VAR3;
+    VAR7->VAR24 = &VAR5->VAR11[0];
+    VAR7->VAR25 = &VAR5->VAR11[1];
+    FUN4(VAR7->VAR24, FUN5(VAR2), &VAR26, VAR7, "", 4);
+    FUN6(&VAR2->VAR27[VAR3].VAR28.VAR11, VAR7->VAR16, VAR7->VAR24, 1);
+    FUN4(VAR7->VAR25, FUN5(VAR2), &VAR29, VAR7, "", 4);
+    FUN6(&VAR2->VAR27[VAR3].VAR28.VAR11, VAR7->VAR17, VAR7->VAR25, 1);
+    FUN7(&VAR2->VAR27[VAR3].VAR30, VAR5, VAR31);
+    FUN8(VAR2->VAR32.VAR33);
+}

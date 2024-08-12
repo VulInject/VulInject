@@ -1,0 +1,1 @@
+int FUN1 ( ds_hdl_t VAR1 , VAR2 * VAR3 ) { vlds_dmn_lookup_arg_t VAR4 ; uint64_t VAR5 ; VAR4 . VAR6 = VAR1 ; VAR4 . VAR7 = FUN2 ( & VAR5 ) ; if ( FUN3 ( VAR8 , VAR9 , & VAR4 ) < 0 ) { return ( VAR10 ) ; } if ( VAR3 ) { * VAR3 = VAR5 ; } return ( 0 ) ; }

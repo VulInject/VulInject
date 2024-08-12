@@ -1,0 +1,1 @@
+static jobject FUN1 ( ) { static jmethodID VAR1 = 0 ; if ( ! VAR1 ) { VAR1 = FUN2 ( VAR2 . VAR3 , "" , "" ) ; if ( ! VAR1 ) { return VAR4 ; } } jobject VAR5 = ( * VAR6 ) -> FUN3 ( VAR6 , VAR2 . VAR3 , VAR1 ) ; if ( FUN4 ( ) ) { return NULL ; } return VAR5 ; }

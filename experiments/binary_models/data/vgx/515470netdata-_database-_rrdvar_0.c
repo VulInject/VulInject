@@ -1,0 +1,20 @@
+int FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 *VAR6) {
+if (!VAR2 || !VAR4 || !VAR6) return 0;
+
+VAR7 *VAR8;
+char VAR9[VAR10 + 1];
+FUN2(VAR9, VAR10, "", FUN3(VAR4->VAR11), FUN3(VAR6->VAR11));
+VAR8 = FUN4(VAR9);
+
+const VAR12 *VAR13;
+VAR13 = FUN5(VAR2, VAR8);
+if(VAR13) {
+FUN6(VAR2, (const VAR14 *)VAR13);
+FUN7(VAR8);
+return 1;
+}
+
+FUN7(VAR8);
+
+return 0;
+}

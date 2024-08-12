@@ -1,0 +1,28 @@
+int FUN1(const struct VAR1 *VAR2, pci_dev_t VAR3,
+uint VAR4, VAR5 *VAR6,
+enum pci_size_t VAR7)
+{
+struct VAR8 *VAR9 = FUN2(VAR2);
+uintptr_t VAR10;
+ulong VAR11;
+
+FUN3(VAR9->VAR12, "",
+FUN4(VAR3), FUN5(VAR3), FUN6(VAR3));
+
+if (!FUN7(VAR3, VAR9->VAR13)) {
+FUN8("");
+*VAR6 = FUN9(VAR7);
+return 0;
+}
+
+VAR10 = FUN10(VAR9, VAR3, VAR4);
+
+VAR11 = FUN11((void VAR14 *)VAR10);
+
+FUN8("", VAR4, VAR11);
+*VAR6 = FUN12(VAR11, VAR4, VAR7);
+
+return FUN13(VAR9, VAR15,
+VAR16, VAR9->VAR17.VAR18,
+VAR9->VAR17.VAR19, VAR9->VAR17.VAR7);
+}

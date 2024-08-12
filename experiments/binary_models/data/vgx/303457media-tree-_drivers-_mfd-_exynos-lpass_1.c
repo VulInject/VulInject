@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { FUN2 ( VAR2 -> VAR3 , VAR4 , 0 ) ; FUN2 ( VAR2 -> VAR3 , VAR5 , 0 ) ; FUN3 ( VAR2 -> VAR6 , NULL ) ; } static const struct regmap_config VAR7 = { . VAR8 = 32 . VAR9 = 4 . VAR10 = 32 . VAR11 = 0xfc . VAR12 = true } ;

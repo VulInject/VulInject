@@ -1,0 +1,89 @@
+void
+FUN1(VAR1 *VAR2)
+{
+VAR3	*VAR4;
+
+VAR2->VAR5 = FUN2(VAR2->VAR6);
+
+FUN3(&VAR2->VAR7);
+
+
+FUN4(VAR2);
+
+if (VAR2->VAR8) {
+VAR2->VAR9 = VAR10;
+VAR2->VAR11 = VAR12;
+VAR4 = VAR2->VAR13;
+
+while (VAR4 != NULL) {
+switch (VAR4->VAR14) {
+case VAR15:
+if (VAR4->VAR16 &
+(VAR17 |
+VAR18 |
+VAR19))
+VAR4->VAR20 = VAR21;
+else
+VAR4->VAR20 =
+VAR22;
+break;
+case VAR23:
+VAR4->VAR20 = VAR24;
+break;
+case VAR25:
+VAR4->VAR20 = VAR26;
+break;
+default:
+FUN5(VAR27, VAR4->VAR14);
+break;
+}
+VAR4 = VAR4->VAR28;
+}
+} else {
+VAR2->VAR9 = VAR29;
+VAR2->VAR11 = VAR30;
+
+VAR4 = VAR2->VAR13;
+while (VAR4 != NULL) {
+switch (VAR4->VAR14) {
+case VAR15:
+VAR4->VAR20 = VAR31;
+break;
+case VAR23:
+VAR4->VAR20 =
+VAR32;
+break;
+case VAR25:
+VAR4->VAR20 = VAR33;
+break;
+default:
+FUN5(VAR27, VAR4->VAR14);
+break;
+}
+VAR4 = VAR4->VAR28;
+}
+}
+
+
+FUN6(VAR2->VAR34);
+FUN7(FUN8(FUN9(VAR2->VAR34)));
+
+
+FUN10(VAR2);
+
+
+if (VAR2->VAR35) {
+VAR36 *VAR37;
+
+if (VAR2->VAR8) {
+VAR37 = FUN11(VAR38 | VAR39);
+VAR37->VAR40 = sizeof (char);
+} else {
+VAR37 = FUN11(VAR41 | VAR39);
+VAR37->VAR40 = sizeof (wchar_t);
+}
+VAR37->VAR42 = (char *)VAR43;
+FUN12(&VAR2->VAR34, VAR37);
+FUN7(FUN13());
+}
+}

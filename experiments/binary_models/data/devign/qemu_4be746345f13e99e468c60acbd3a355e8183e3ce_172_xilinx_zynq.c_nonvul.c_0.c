@@ -1,0 +1,112 @@
+static void FUN1(VAR1 *VAR2)
+{
+    ram_addr_t VAR3 = VAR2->VAR3;
+    const char *VAR4 = VAR2->VAR4;
+    const char *VAR5 = VAR2->VAR5;
+    const char *VAR6 = VAR2->VAR6;
+    const char *VAR7 = VAR2->VAR7;
+    VAR8 *VAR9;
+    VAR10 *VAR11;
+    VAR12 *VAR13 = FUN2();
+    VAR12 *VAR14 = FUN3(VAR12, 1);
+    VAR12 *VAR15 = FUN3(VAR12, 1);
+    VAR16 *VAR17;
+    VAR18 *VAR19;
+    qemu_irq VAR20[64];
+    VAR21 *VAR22 = NULL;
+    int VAR23;
+    if (!VAR4)
+    {
+        VAR4 = "";
+    }
+    VAR9 = FUN4(VAR24, VAR4);
+    VAR11 = FUN5(FUN6(FUN7(VAR9)));
+    FUN8(FUN9(VAR11), VAR25, "", &VAR22);
+    if (VAR22)
+    {
+        FUN10("", FUN11(VAR22));
+        FUN12(1);
+    }
+    FUN8(FUN9(VAR11), VAR26, "", &VAR22);
+    if (VAR22)
+    {
+        FUN10("", FUN11(VAR22));
+        FUN12(1);
+    }
+    FUN13(FUN9(VAR11), true, "", &VAR22);
+    if (VAR22)
+    {
+        FUN10("", FUN11(VAR22));
+        FUN12(1);
+    }
+    if (VAR3 > 0x80000000)
+    {
+        VAR3 = 0x80000000;
+    }
+    FUN14(VAR14, NULL, "", VAR3, &VAR27);
+    FUN15(VAR14);
+    FUN16(VAR13, 0, VAR14);
+    FUN14(VAR15, NULL, "", 256 << 10, &VAR27);
+    FUN15(VAR15);
+    FUN16(VAR13, 0xFFFC0000, VAR15);
+    VAR28 *VAR29 = FUN17(VAR30, 0, 0);
+    FUN18(0xe2000000, NULL, "", VAR31, VAR29 ? FUN19(VAR29) : NULL, VAR32, VAR31 / VAR32, 1, 1, 0x0066, 0x0022, 0x0000, 0x0000, 0x0555, 0x2aa, 0);
+    VAR17 = FUN20(NULL, "");
+    FUN21(VAR17);
+    FUN22(FUN23(VAR17), 0, 0xF8000000);
+    VAR17 = FUN20(NULL, "");
+    FUN24(VAR17, "", 1);
+    FUN21(VAR17);
+    VAR19 = FUN23(VAR17);
+    FUN22(VAR19, 0, VAR26);
+    FUN25(VAR19, 0, FUN26(FUN27(VAR11), VAR33));
+    for (VAR23 = 0; VAR23 < 64; VAR23++)
+    {
+        VAR20[VAR23] = FUN26(VAR17, VAR23);
+    }
+    FUN28(0xE0006000, VAR20[58 - VAR34], false);
+    FUN28(0xE0007000, VAR20[81 - VAR34], false);
+    FUN28(0xE000D000, VAR20[51 - VAR34], true);
+    FUN29("", 0xE0002000, VAR20[53 - VAR34]);
+    FUN29("", 0xE0003000, VAR20[76 - VAR34]);
+    FUN29("", 0xE0000000, VAR20[59 - VAR34]);
+    FUN29("", 0xE0001000, VAR20[82 - VAR34]);
+    FUN30("", 0xF8001000, VAR20[42 - VAR34], VAR20[43 - VAR34], VAR20[44 - VAR34], NULL);
+    FUN30("", 0xF8002000, VAR20[69 - VAR34], VAR20[70 - VAR34], VAR20[71 - VAR34], NULL);
+    FUN31(&VAR35[0], 0xE000B000, VAR20[54 - VAR34]);
+    FUN31(&VAR35[1], 0xE000C000, VAR20[77 - VAR34]);
+    VAR17 = FUN20(NULL, "");
+    FUN21(VAR17);
+    FUN22(FUN23(VAR17), 0, 0xE0100000);
+    FUN25(FUN23(VAR17), 0, VAR20[56 - VAR34]);
+    VAR17 = FUN20(NULL, "");
+    FUN21(VAR17);
+    FUN22(FUN23(VAR17), 0, 0xE0101000);
+    FUN25(FUN23(VAR17), 0, VAR20[79 - VAR34]);
+    VAR17 = FUN20(NULL, "");
+    FUN32(VAR17, "", 8);
+    FUN32(VAR17, "", 4);
+    FUN32(VAR17, "", 16);
+    FUN32(VAR17, "", 64);
+    FUN32(VAR17, "", 8);
+    FUN32(VAR17, "", 16);
+    FUN32(VAR17, "", 8);
+    FUN32(VAR17, "", 16);
+    FUN33(VAR17, "", 256);
+    FUN21(VAR17);
+    VAR19 = FUN23(VAR17);
+    FUN22(VAR19, 0, 0xF8003000);
+    FUN25(VAR19, 0, VAR20[45 - VAR34]);
+    for (VAR23 = 0; VAR23 < 8; ++VAR23)
+    {
+        FUN25(VAR19, VAR23 + 1, VAR20[VAR36[VAR23] - VAR34]);
+    }
+    VAR37.VAR3 = VAR3;
+    VAR37.VAR5 = VAR5;
+    VAR37.VAR6 = VAR6;
+    VAR37.VAR7 = VAR7;
+    VAR37.VAR38 = 1;
+    VAR37.VAR39 = 0xd32;
+    VAR37.VAR40 = 0;
+    FUN34(FUN5(VAR41), &VAR37);
+}

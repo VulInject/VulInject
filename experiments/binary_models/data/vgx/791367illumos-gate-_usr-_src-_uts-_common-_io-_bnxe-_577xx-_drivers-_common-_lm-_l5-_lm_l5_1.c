@@ -1,0 +1,1 @@
+lm_status_t FUN1 ( VAR1 * VAR2 , struct VAR3 * VAR4 ) { u32_t VAR5 = 0 ; VAR6 * VAR7 ; u32_t VAR8 ; VAR8 = FUN2 ( VAR4 -> VAR9 ) ; VAR7 = FUN3 ( VAR2 , VAR10 , VAR8 ) ; FUN4 ( ! VAR7 ) ; if ( VAR4 -> VAR11 & VAR12 ) { VAR5 = 1 ; } FUN5 ( VAR2 , VAR7 , VAR5 ) ; return VAR13 ; }

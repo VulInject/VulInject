@@ -1,0 +1,1 @@
+static int FUN1 ( const char * VAR1 ) { int VAR2 = 0 ; if ( chmod ( VAR1 , VAR3 ) == - 1 ) { ( void ) fprintf ( VAR4 , "" "" , VAR1 , VAR5 ) ; return ( 1 ) ; } return ( VAR2 ) ; }

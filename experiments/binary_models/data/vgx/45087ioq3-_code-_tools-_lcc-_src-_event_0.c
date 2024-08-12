@@ -1,0 +1,8 @@
+void FUN1(Apply VAR1, void *VAR2, VAR3 *VAR4) {
+struct VAR5 *VAR6;
+
+FUN2(VAR6, VAR7);
+VAR6->VAR1 = VAR1;
+VAR6->VAR2 = VAR2;
+*VAR4 = FUN3(VAR6, *VAR4);
+}

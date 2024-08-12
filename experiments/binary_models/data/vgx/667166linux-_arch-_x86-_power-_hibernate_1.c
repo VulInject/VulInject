@@ -1,0 +1,1 @@
+int FUN1 ( void * VAR1 , unsigned int VAR2 ) { struct VAR3 * VAR4 = VAR1 ; if ( VAR2 < sizeof ( VAR3 ) ) { return - VAR5 ; } VAR4 -> VAR6 = VAR7 ; VAR4 -> VAR8 = ( unsigned long ) VAR9 ; VAR4 -> VAR10 = FUN2 ( VAR9 ) ; VAR4 -> VAR11 = VAR12 & ~ VAR13 ; VAR4 -> VAR14 = FUN3 ( VAR15 , NULL ) ; return 0 ; }

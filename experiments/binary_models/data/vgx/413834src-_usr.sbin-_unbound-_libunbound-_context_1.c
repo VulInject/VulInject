@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( struct VAR2 * VAR3 , VAR4 * VAR5 , uint32_t VAR6 ) { struct VAR1 * VAR7 ; int VAR8 ; if ( VAR6 != 2 * sizeof ( VAR9 ) ) { return VAR10 ; } FUN2 ( FUN3 ( VAR5 ) == VAR11 ) ; VAR8 = ( int ) FUN3 ( VAR5 + sizeof ( VAR9 ) ) ; VAR7 = ( VAR1 * ) FUN4 ( & VAR3 -> VAR12 , & VAR8 ) ; return VAR7 ; }

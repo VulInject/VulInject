@@ -1,0 +1,40 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 *VAR6)
+{
+VAR7 *VAR8 = NULL;
+unsigned int VAR9, VAR10;
+char *VAR11 = NULL;
+
+while ((VAR8 = FUN2(VAR2, VAR8)) != NULL) {
+VAR9 = 0;
+
+for (int VAR12 = VAR4->VAR13; --VAR12 >= 0; ) {
+GElf_Verdef VAR14, *VAR15;
+VAR15 = FUN3 (VAR8, VAR9, &VAR14);
+if (VAR15 == NULL)
+break;
+VAR10 = VAR9 + VAR15->VAR16;
+VAR9 += VAR15->VAR17;
+
+for (int VAR18 = VAR15->VAR19; --VAR18 >= 0; ) {
+GElf_Verdaux VAR20, * VAR21;
+const char *VAR22;
+VAR21 = FUN4 (VAR8, VAR10, &VAR20);
+if (VAR21 == NULL)
+break;
+VAR22 = FUN5(VAR6->VAR23, VAR4->VAR24, VAR21->VAR25);
+if (VAR22 == NULL)
+break;
+if (VAR15->VAR26 & VAR27) {
+FUN6(VAR11);
+VAR11 = FUN7(VAR22);
+VAR10 += VAR21->VAR28;
+continue;
+} else if (VAR11 && !VAR29) {
+FUN8(&VAR6->VAR30, VAR11, VAR22, VAR6->VAR31);
+}
+}
+
+}
+}
+FUN6(VAR11);
+}

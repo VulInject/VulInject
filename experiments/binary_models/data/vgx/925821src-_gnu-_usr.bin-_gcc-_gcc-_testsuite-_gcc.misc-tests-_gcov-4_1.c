@@ -1,0 +1,1 @@
+FUN1 ( ) { int VAR1 = 0 ; if ( ! VAR2 ) { VAR1 = FUN2 ( 1 ) ; } if ( VAR2 == 1 ) { VAR1 = FUN2 ( 1024 ) ; } if ( VAR2 == 2 ) { VAR1 = FUN2 ( 2 ) ; } if ( VAR2 == 4 ) { return FUN2 ( 2048 ) ; } return VAR1 ; }

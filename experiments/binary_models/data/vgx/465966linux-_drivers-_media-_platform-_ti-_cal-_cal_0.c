@@ -1,0 +1,50 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2->VAR5);
+struct VAR6 *VAR7 = VAR2->VAR5->VAR8;
+struct regmap_config VAR9 = { };
+struct VAR10 *VAR11;
+struct VAR12 *VAR13;
+unsigned int VAR14;
+void VAR15 *VAR16;
+
+VAR11 = FUN3(VAR7, "",
+1, &VAR14);
+if (!FUN4(VAR11)) {
+VAR2->VAR17 = VAR11;
+VAR2->VAR18 = VAR14;
+return 0;
+}
+
+FUN5(VAR2->VAR5, "",
+FUN6(VAR11));
+
+
+VAR13 = FUN7(VAR4, VAR19,
+"");
+VAR16 = FUN8(VAR2->VAR5, VAR13);
+if (FUN4(VAR16)) {
+FUN9(VAR2, "");
+return FUN6(VAR16);
+}
+
+FUN10(1, VAR2, "",
+VAR13->VAR20, &VAR13->VAR21, &VAR13->VAR22);
+
+VAR9.VAR23 = 32;
+VAR9.VAR24 = 4;
+VAR9.VAR25 = 32;
+VAR9.VAR26 = FUN11(VAR13) - 4;
+
+VAR11 = FUN12(NULL, VAR16, &VAR9);
+if (FUN4(VAR11)) {
+FUN13("");
+return FUN6(VAR11);
+}
+
+
+VAR2->VAR17 = VAR11;
+VAR2->VAR18 = 0;
+
+return 0;
+}

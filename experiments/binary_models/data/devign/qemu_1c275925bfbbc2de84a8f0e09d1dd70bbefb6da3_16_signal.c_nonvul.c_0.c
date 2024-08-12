@@ -1,0 +1,36 @@
+static int FUN1(VAR1 *VAR2, struct VAR3 *VAR4)
+{
+    sigset_t VAR5;
+    int VAR6;
+    struct VAR7 *VAR8 = (struct VAR7 *)VAR4->VAR9.VAR10.VAR11;
+    uint32_t VAR12, VAR13, VAR14, VAR15;
+    uint64_t VAR16;
+    FUN2(&VAR5, &VAR4->VAR9.VAR17);
+    FUN3(VAR18, &VAR5, NULL);
+    for (VAR6 = 0; VAR6 < 31; VAR6++)
+    {
+        FUN4(VAR2->VAR19[VAR6], &VAR4->VAR9.VAR10.VAR20[VAR6]);
+    }
+    FUN4(VAR2->VAR19[31], &VAR4->VAR9.VAR10.VAR21);
+    FUN4(VAR2->VAR22, &VAR4->VAR9.VAR10.VAR22);
+    FUN4(VAR16, &VAR4->VAR9.VAR10.VAR16);
+    FUN5(VAR2, VAR16);
+    FUN4(VAR12, &VAR8->VAR23.VAR24.VAR12);
+    FUN4(VAR13, &VAR8->VAR23.VAR24.VAR13);
+    if (VAR12 != VAR25 || VAR13 != sizeof(struct VAR26))
+    {
+        return 1;
+    }
+    for (VAR6 = 0; VAR6 < 32; VAR6++)
+    {
+        FUN4(VAR2->VAR27.VAR20[VAR6 * 2], &VAR8->VAR23.VAR28[VAR6 * 2 + 1]);
+        FUN4(VAR2->VAR27.VAR20[VAR6 * 2 + 1], &VAR8->VAR23.VAR28[VAR6 * 2]);
+        FUN4(VAR2->VAR27.VAR20[VAR6 * 2], &VAR8->VAR23.VAR28[VAR6 * 2]);
+        FUN4(VAR2->VAR27.VAR20[VAR6 * 2 + 1], &VAR8->VAR23.VAR28[VAR6 * 2 + 1]);
+    }
+    FUN4(VAR14, &VAR8->VAR23.VAR14);
+    FUN6(VAR2, VAR14);
+    FUN4(VAR15, &VAR8->VAR23.VAR15);
+    FUN7(VAR2, VAR15);
+    return 0;
+}

@@ -1,0 +1,47 @@
+FUN1 (const VAR1 *VAR2,
+void                          *VAR3)
+{
+VAR4 *VAR5 = (VAR4 *) VAR3;
+HRESULT             VAR6;
+DIPROPRANGE         VAR7;
+
+if (VAR2->VAR8 & VAR9)
+{
+
+
+VAR7.VAR10.VAR11 = sizeof (VAR12);
+VAR7.VAR10.VAR13 = sizeof (VAR14);
+VAR7.VAR10.VAR15 = VAR2->VAR8;
+VAR7.VAR10.VAR16 = VAR17;
+
+if (FUN2 ((VAR6 = FUN3 (VAR5->VAR18,
+VAR19,
+&VAR7.VAR10))))
+FUN4 ("",
+FUN5 (VAR6));
+else
+{
+if (FUN2 ((VAR6 = FUN6 (VAR5->VAR18,
+VAR20,
+&VAR7.VAR10))))
+FUN4 ("",
+FUN5 (VAR6));
+}
+}
+
+if (FUN7 (&VAR2->VAR21, &VAR22))
+VAR5->VAR23++;
+else if (FUN7 (&VAR2->VAR21, &VAR24) ||
+FUN7 (&VAR2->VAR21, &VAR25) ||
+FUN7 (&VAR2->VAR21, &VAR26) ||
+FUN7 (&VAR2->VAR21, &VAR27) ||
+FUN7 (&VAR2->VAR21, &VAR28) ||
+FUN7 (&VAR2->VAR21, &VAR29))
+VAR5->VAR30++;
+else if (FUN7 (&VAR2->VAR21, &VAR31))
+VAR5->VAR32++;
+else if (FUN7 (&VAR2->VAR21, &VAR33))
+VAR5->VAR34++;
+
+return VAR35;
+}

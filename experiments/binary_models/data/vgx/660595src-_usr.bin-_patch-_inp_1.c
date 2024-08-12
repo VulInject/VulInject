@@ -1,0 +1,1 @@
+void FUN1 ( void ) { if ( VAR1 ) { free ( VAR2 ) ; VAR2 = NULL ; if ( VAR3 != NULL ) { FUN2 ( VAR3 , VAR4 ) ; VAR3 = NULL ; } VAR4 = 0 ; } else { VAR1 = true ; close ( VAR5 ) ; VAR5 = - 1 ; free ( VAR6 [ 1 ] ) ; VAR6 [ 0 ] = VAR6 [ 1 ] = NULL ; VAR7 [ 0 ] = VAR7 [ 1 ] = - 1 ; VAR8 = 0 ; } }

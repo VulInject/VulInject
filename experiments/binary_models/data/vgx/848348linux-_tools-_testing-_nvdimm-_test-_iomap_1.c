@@ -1,0 +1,1 @@
+( VAR1 ) ; acpi_status FUN1 ( acpi_handle VAR2 , acpi_string VAR3 , struct VAR4 * VAR5 , struct VAR6 * VAR7 ) { struct VAR8 * VAR9 = FUN2 ( ( long ) VAR2 ) ; union VAR10 * * VAR11 ; VAR11 = VAR9 -> VAR7 ; VAR7 -> VAR12 = sizeof ( VAR10 ) ; VAR7 -> VAR13 = * VAR11 ; return VAR14 ; }

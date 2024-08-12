@@ -1,0 +1,124 @@
+static int
+FUN1(VAR1 *VAR2, ddi_attach_cmd_t VAR3)
+{
+VAR4 *VAR5;
+struct VAR6 *VAR7;
+struct VAR8 *VAR9;
+VAR10 *VAR11;
+ddi_device_acc_attr_t VAR12;
+caddr_t VAR13 = NULL;
+
+switch (VAR3) {
+case VAR14:
+break;
+default:
+return (VAR15);
+}
+
+VAR7 = (struct VAR6 *)
+FUN2(sizeof (struct VAR6), VAR16);
+VAR17 = VAR7;
+
+
+VAR7->VAR18 = FUN3(VAR2);
+FUN4(VAR2, (VAR19)VAR7);
+
+VAR9 = (struct VAR8 *)FUN2(sizeof (struct VAR8), VAR16);
+VAR7->VAR9 = VAR9;
+
+VAR9->VAR2 = VAR2;
+
+
+if (FUN5(VAR2, 0, &VAR7->VAR9->VAR20)
+!= VAR21) {
+FUN6(VAR7, VAR22,
+"");
+goto VAR23;
+}
+
+FUN7(&VAR9->VAR24, NULL, VAR25, (void *)VAR9->VAR20);
+FUN8(&VAR9->VAR26, "",
+VAR27, (void *)VAR9->VAR20);
+FUN8(&VAR9->VAR28, "",
+VAR27, (void *)VAR9->VAR20);
+
+
+if (FUN9(VAR2, &VAR9->VAR11) != VAR21) {
+return (VAR15);
+}
+VAR7->VAR29 = VAR30;
+VAR11 = &VAR9->VAR11;
+
+VAR9->VAR31 = FUN10(*VAR11, VAR32);
+VAR9->VAR33 = FUN10(*VAR11, VAR34);
+
+
+if (FUN11(VAR7) != 0) {
+goto VAR23;
+}
+VAR7->VAR29 |= VAR35;
+
+VAR12.VAR36 = VAR37;
+VAR12.VAR38 = VAR39;
+VAR12.VAR40 = VAR41;
+
+if (FUN12(VAR2, 1, &VAR13, 0,  4096, &VAR12,
+&(VAR7->VAR9->VAR42)) != 0) {
+FUN6(VAR7, VAR22,
+"");
+goto VAR23;
+}
+VAR7->VAR43->VAR44 = (unsigned long)VAR13;
+
+
+FUN13(VAR7);
+FUN14(VAR7);
+VAR7->VAR29 |= VAR45;
+
+
+if (FUN15(VAR2, 0, &VAR9->VAR20, 0, VAR46,
+(VAR19)VAR7) != VAR21) {
+goto VAR23;
+}
+VAR7->VAR29 |= VAR47;
+
+
+if (FUN16(VAR2, VAR48, &VAR9->VAR49,
+NULL, NULL, VAR50,
+(VAR19)VAR7) != VAR21) {
+goto VAR23;
+}
+VAR7->VAR29 |= VAR51;
+
+
+if ((VAR5 = FUN17(VAR52)) == NULL)
+goto VAR23;
+
+VAR5->VAR53 = VAR54;
+VAR5->VAR55 = VAR7;
+VAR5->VAR56 = VAR2;
+
+FUN18(VAR7, (unsigned char *)VAR9->VAR57);
+VAR5->VAR58 = VAR9->VAR57;
+VAR5->VAR59 = &VAR60;
+VAR5->VAR61 = 0;
+
+VAR5->VAR62 = VAR63;
+VAR5->VAR64 = VAR65;
+
+
+if (FUN19(VAR5, &VAR9->VAR66) != VAR21) {
+FUN20(VAR5);
+goto VAR23;
+}
+FUN20(VAR5);
+
+VAR7->VAR29 |= VAR67;
+
+return (VAR21);
+
+VAR23:
+(void) FUN21(VAR2, VAR7);
+return (VAR15);
+
+}

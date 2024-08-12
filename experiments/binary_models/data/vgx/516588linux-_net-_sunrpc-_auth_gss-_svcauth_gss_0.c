@@ -1,0 +1,42 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR5;
+struct VAR6 *VAR7 = &VAR2->VAR8;
+struct VAR9 *VAR10 = &VAR4->VAR11;
+struct VAR12 *VAR13 = VAR7->VAR13;
+struct xdr_buf VAR14;
+struct xdr_netobj VAR15;
+u32 VAR16, VAR17;
+
+VAR16 = FUN2(VAR2, VAR4);
+if (!VAR16)
+goto VAR18;
+
+if (FUN3(VAR13, &VAR14, VAR16 + VAR19,
+VAR13->VAR20 - VAR16 - VAR19))
+goto VAR21;
+
+if (FUN4(VAR13, VAR16, VAR14.VAR20))
+goto VAR21;
+if (FUN4(VAR13, VAR16 + VAR19, VAR10->VAR22))
+goto VAR21;
+
+VAR15.VAR23 = VAR4->VAR24;
+VAR17 = FUN5(VAR4->VAR25->VAR26, &VAR14, &VAR15);
+if (VAR17 != VAR27)
+goto VAR28;
+
+if (FUN6(VAR7, VAR15.VAR23, VAR15.VAR20) < 0)
+goto VAR21;
+FUN7(VAR7);
+
+VAR18:
+return 0;
+
+VAR28:
+FUN8(VAR2, VAR17);
+return -VAR29;
+VAR21:
+FUN9(VAR2);
+return -VAR29;
+}

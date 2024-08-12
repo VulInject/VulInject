@@ -1,0 +1,1 @@
+static int FUN1 ( dev_t VAR1 , int VAR2 , int VAR3 , VAR4 * VAR5 ) { VAR6 * VAR7 ; VAR7 = ( VAR6 * ) FUN2 ( VAR8 , FUN3 ( VAR1 ) ) ; if ( VAR7 == NULL ) { return ( VAR9 ) ; } FUN4 ( & VAR7 -> VAR10 ) ; VAR7 -> VAR11 = VAR12 ; FUN5 ( & VAR7 -> VAR10 ) ; return ( 0 ) ; }

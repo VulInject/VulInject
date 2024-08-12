@@ -1,0 +1,1 @@
+static inline void FUN1 ( struct VAR1 * VAR2 , const struct VAR3 * VAR4 ) { struct VAR5 * VAR6 = & VAR2 -> VAR7 . VAR8 ; bool VAR9 = false ; VAR9 = VAR4 -> VAR10 -> VAR11 . VAR12 ; VAR4 -> VAR10 -> VAR11 . VAR12 = false ; FUN2 ( VAR4 -> VAR10 , & VAR2 -> VAR7 ) ; VAR2 -> VAR13 = 0 ; VAR4 -> VAR10 -> VAR11 . VAR12 = VAR9 ; } VAR14 { uint32_t VAR15 ; uint32_t VAR16 ; }

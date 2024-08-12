@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , const char * VAR3 ) { int VAR4 ; mode_t VAR5 ; VAR5 = FUN2 ( 077 ) ; VAR4 = FUN3 ( VAR3 , VAR2 ) ; FUN2 ( VAR5 , NULL ) ; return VAR4 ; }

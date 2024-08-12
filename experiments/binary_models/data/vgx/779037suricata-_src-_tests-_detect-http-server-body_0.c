@@ -1,0 +1,165 @@
+static int FUN1(void)
+{
+char VAR1[] = "\
+%YAML 1.1\VAR2\
+---\VAR2\
+VAR3:\VAR2\
+\VAR2\
+default-VAR4:\VAR2\
+VAR5: VAR6\VAR2\
+VAR7-VAR8-VAR9: 0\VAR2\
+VAR10-VAR8-VAR9: 0\VAR2\
+\VAR2\
+VAR7-VAR8-VAR11-VAR12: 0\VAR2\
+VAR10-VAR8-VAR11-VAR12: 0\VAR2\
+VAR7-VAR8-VAR13-VAR11-VAR14: 0\VAR2\
+VAR10-VAR8-VAR13-VAR11-VAR14: 0\VAR2\
+";
+
+FUN2();
+FUN3();
+FUN4();
+
+FUN5(VAR1, strlen(VAR1));
+FUN6();
+
+TcpSession VAR15;
+VAR16 *VAR17 = NULL;
+VAR16 *VAR18 = NULL;
+ThreadVars VAR19;
+VAR20 *VAR21 = NULL;
+VAR22 *VAR23 = NULL;
+VAR24 *VAR25 = NULL;
+Flow VAR26;
+int VAR27 = 0;
+uint8_t VAR28[] =
+""
+""
+""
+"";
+uint32_t VAR29 = sizeof(VAR28) - 1;
+uint8_t VAR30[] =
+""
+""
+""
+""
+"";
+uint32_t VAR31 = sizeof(VAR30) - 1;
+uint8_t VAR32[] =
+"";
+uint32_t VAR33 = sizeof(VAR32) - 1;
+VAR34 *VAR35 = FUN7();
+
+memset(&VAR19, 0, sizeof(VAR19));
+memset(&VAR26, 0, sizeof(VAR26));
+memset(&VAR15, 0, sizeof(VAR15));
+
+VAR17 = FUN8(NULL, 0, VAR36);
+VAR18 = FUN8(NULL, 0, VAR36);
+
+FUN9(&VAR26);
+VAR26.VAR37 = (void *)&VAR15;
+VAR26.VAR38 = VAR36;
+VAR26.VAR39 |= VAR40;
+
+VAR17->VAR41 = &VAR26;
+VAR17->VAR42 |= VAR43;
+VAR17->VAR42 |= VAR44;
+VAR17->VAR39 |= VAR45|VAR46;
+VAR18->VAR41 = &VAR26;
+VAR18->VAR42 |= VAR47;
+VAR18->VAR42 |= VAR44;
+VAR18->VAR39 |= VAR45|VAR46;
+VAR26.VAR48 = VAR49;
+
+FUN10(true);
+
+VAR21 = FUN11();
+if (VAR21 == NULL)
+goto VAR50;
+
+VAR21->VAR39 |= VAR51;
+
+VAR21->VAR52 = FUN12(VAR21,""
+""http server body VAR53\""
+""890\""
+"");
+if (VAR21->VAR52 == NULL)
+goto VAR50;
+
+FUN13(VAR21);
+FUN14(&VAR19, (void *)VAR21, (void *)&VAR23);
+
+int VAR54 = FUN15(
+NULL, VAR35, &VAR26, VAR49, VAR55, VAR28, VAR29);
+if (VAR54 != 0) {
+FUN16("" VAR56 "", VAR54);
+VAR27 = 0;
+goto VAR50;
+}
+
+VAR25 = VAR26.VAR57;
+if (VAR25 == NULL) {
+FUN16("");
+VAR27 = 0;
+goto VAR50;
+}
+
+
+FUN17(&VAR19, VAR21, VAR23, VAR17);
+
+if (FUN18(VAR17, 1)) {
+FUN16("");
+goto VAR50;
+}
+
+VAR54 = FUN15(
+NULL, VAR35, &VAR26, VAR49, VAR58, VAR30, VAR31);
+if (VAR54 != 0) {
+FUN16("" VAR56 "", VAR54);
+VAR27 = 0;
+goto VAR50;
+}
+
+
+FUN17(&VAR19, VAR21, VAR23, VAR18);
+
+if (FUN18(VAR18, 1)) {
+FUN16("");
+goto VAR50;
+}
+
+VAR54 = FUN15(
+NULL, VAR35, &VAR26, VAR49, VAR58, VAR32, VAR33);
+if (VAR54 != 0) {
+FUN16("" VAR56 "", VAR54);
+VAR27 = 0;
+goto VAR50;
+}
+
+
+FUN17(&VAR19, VAR21, VAR23, VAR18);
+
+if (FUN18(VAR18, 1)) {
+FUN16("");
+goto VAR50;
+}
+
+VAR27 = 1;
+
+VAR50:
+if (VAR35 != NULL)
+FUN19(VAR35);
+FUN20();
+FUN21();
+FUN22();
+
+if (VAR21 != NULL)
+FUN23(VAR21);
+
+FUN24(true);
+FUN25(&VAR26);
+FUN26(&VAR17, 1);
+FUN26(&VAR18, 1);
+return VAR27;
+}

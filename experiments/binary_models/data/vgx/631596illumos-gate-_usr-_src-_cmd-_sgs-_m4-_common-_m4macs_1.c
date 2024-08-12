@@ -1,0 +1,1 @@
+static void FUN1 ( wchar_t * * VAR1 , int VAR2 ) { char * VAR3 ; if ( VAR2 > 0 ) { VAR3 = FUN2 ( VAR1 [ 1 ] , 1 ) ; FUN3 ( VAR3 ) ; FUN4 ( FUN5 ( VAR3 , 0 ) ) ; } }

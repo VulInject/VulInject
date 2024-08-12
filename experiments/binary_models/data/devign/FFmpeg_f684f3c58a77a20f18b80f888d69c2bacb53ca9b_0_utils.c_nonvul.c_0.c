@@ -1,0 +1,54 @@
+int FUN1(VAR1 *VAR2, const int VAR3[4], int VAR4, const int VAR5[4], int VAR6, int VAR7, int VAR8, int VAR9)
+{
+    int64_t VAR10 = VAR3[0];
+    int64_t VAR11 = VAR3[1];
+    int64_t VAR12 = -VAR3[2];
+    int64_t VAR13 = -VAR3[3];
+    int64_t VAR14 = 1 << 16;
+    int64_t VAR15 = 0;
+    memcpy(VAR2->VAR16, VAR3, sizeof(int) * 4);
+    memcpy(VAR2->VAR17, VAR5, sizeof(int) * 4);
+    VAR2->VAR7 = VAR7;
+    VAR2->VAR8 = VAR8;
+    VAR2->VAR9 = VAR9;
+    VAR2->VAR4 = VAR4;
+    VAR2->VAR6 = VAR6;
+    if (FUN2(VAR2->VAR18) || FUN3(VAR2->VAR18))
+        return -1;
+    VAR2->VAR19 = 0x0400040004000400LL;
+    VAR2->VAR20 = 0x0400040004000400LL;
+    if (!VAR4)
+    {
+        VAR14 = (VAR14 * 255) / 219;
+        VAR15 = 16 << 16;
+    }
+    else
+    {
+        VAR10 = (VAR10 * 224) / 255;
+        VAR11 = (VAR11 * 224) / 255;
+        VAR12 = (VAR12 * 224) / 255;
+        VAR13 = (VAR13 * 224) / 255;
+    }
+    VAR14 = (VAR14 * VAR8) >> 16;
+    VAR10 = (VAR10 * VAR8 * VAR9) >> 32;
+    VAR11 = (VAR11 * VAR8 * VAR9) >> 32;
+    VAR12 = (VAR12 * VAR8 * VAR9) >> 32;
+    VAR13 = (VAR13 * VAR8 * VAR9) >> 32;
+    VAR15 -= 256 * VAR7;
+    VAR2->VAR21 = FUN4(VAR14 * 8192) * 0x0001000100010001ULL;
+    VAR2->VAR22 = FUN4(VAR10 * 8192) * 0x0001000100010001ULL;
+    VAR2->VAR23 = FUN4(VAR11 * 8192) * 0x0001000100010001ULL;
+    VAR2->VAR24 = FUN4(VAR13 * 8192) * 0x0001000100010001ULL;
+    VAR2->VAR25 = FUN4(VAR12 * 8192) * 0x0001000100010001ULL;
+    VAR2->VAR26 = FUN4(VAR15 * 8) * 0x0001000100010001ULL;
+    VAR2->VAR27 = (VAR28)FUN4(VAR14 << 13);
+    VAR2->VAR29 = (VAR28)FUN4(VAR15 << 9);
+    VAR2->VAR30 = (VAR28)FUN4(VAR10 << 13);
+    VAR2->VAR31 = (VAR28)FUN4(VAR13 << 13);
+    VAR2->VAR32 = (VAR28)FUN4(VAR12 << 13);
+    VAR2->VAR33 = (VAR28)FUN4(VAR11 << 13);
+    FUN5(VAR2, VAR3, VAR4, VAR7, VAR8, VAR9);
+    if (VAR2->VAR34 & VAR35)
+        FUN6(VAR2, VAR3, VAR7, VAR8, VAR9);
+    return 0;
+}

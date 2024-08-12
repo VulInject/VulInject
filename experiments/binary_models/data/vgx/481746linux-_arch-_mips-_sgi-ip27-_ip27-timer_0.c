@@ -1,0 +1,22 @@
+void FUN1(void)
+{
+unsigned int VAR1 = FUN2();
+struct VAR2 *VAR3 = &FUN3(VAR4, VAR1);
+unsigned char *VAR5 = FUN3(VAR6, VAR1);
+
+sprintf(VAR5, "", VAR1);
+VAR3->VAR5		= VAR5;
+VAR3->VAR7		= VAR8;
+FUN4(VAR3, VAR9);
+VAR3->VAR10	= FUN5(0xfffffffffffff, VAR3);
+VAR3->VAR11	= 0xfffffffffffff;
+VAR3->VAR12	= FUN5(0x300, VAR3);
+VAR3->VAR13	= 0x300;
+VAR3->VAR14		= 200;
+VAR3->VAR15			= VAR16;
+VAR3->VAR17		= FUN6(VAR1);
+VAR3->VAR18	= VAR19;
+FUN7(VAR3);
+
+FUN8(VAR16, VAR20);
+}

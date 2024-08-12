@@ -1,0 +1,89 @@
+static void
+FUN1(
+struct VAR1	*VAR2,
+struct VAR3	*VAR4,
+struct VAR5	**VAR6,
+uint			VAR7,
+struct VAR8 *VAR9)
+{
+struct VAR10		*VAR11 = VAR2->VAR12;
+uint			VAR13;
+int			VAR14;
+int			VAR15;
+int			VAR16;
+uint			VAR17;
+
+
+VAR9->VAR18 = VAR2->VAR19.VAR18;
+
+
+VAR13 = FUN2(VAR9);
+
+VAR14 = FUN3(VAR9->VAR20, VAR9->VAR21, 0);
+if (!(VAR2->VAR22 & VAR23) && VAR14 == -1) {
+
+return;
+}
+
+VAR9 = FUN4(VAR4, VAR6, VAR24, VAR9, VAR13);
+VAR9->VAR25 = 1;
+
+if (VAR2->VAR22 & VAR23) {
+
+FUN5(VAR2);
+FUN6(VAR9->VAR18 & VAR26);
+return;
+}
+
+
+
+do {
+FUN6(VAR14 >= 0);
+VAR17 = FUN7(VAR9->VAR20,
+VAR9->VAR21, VAR14);
+FUN6(VAR17 > 0);
+
+
+if (VAR17 > 1 &&
+FUN8(VAR11, VAR7, VAR14, VAR17))
+goto VAR27;
+
+FUN9(VAR4, VAR6, VAR11, VAR7,
+VAR14, VAR17);
+VAR9->VAR25++;
+
+
+VAR14 = FUN3(VAR9->VAR20, VAR9->VAR21,
+(VAR28)VAR14 + VAR17 + 1);
+} while (VAR14 != -1);
+
+return;
+
+VAR27:
+FUN6(VAR11->VAR29 == NULL);
+VAR15 = VAR14;
+VAR17 = 1;
+for (;;) {
+
+VAR16 = FUN3(VAR9->VAR20, VAR9->VAR21,
+(VAR28)VAR15 + 1);
+
+if (VAR16 == -1) {
+FUN9(VAR4, VAR6, VAR11, VAR7,
+VAR14, VAR17);
+VAR9->VAR25++;
+break;
+} else if (VAR16 != VAR15 + 1 ||
+FUN8(VAR11, VAR7, VAR14, VAR17)) {
+FUN9(VAR4, VAR6, VAR11, VAR7,
+VAR14, VAR17);
+VAR9->VAR25++;
+VAR14 = VAR16;
+VAR15 = VAR16;
+VAR17 = 1;
+} else {
+VAR15++;
+VAR17++;
+}
+}
+}

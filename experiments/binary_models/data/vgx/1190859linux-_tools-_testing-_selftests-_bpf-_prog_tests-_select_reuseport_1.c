@@ -1,0 +1,1 @@
+void FUN1 ( void ) { VAR1 = FUN2 ( VAR2 ) ; VAR3 = FUN2 ( VAR4 ) ; if ( VAR3 < 0 ) { VAR5 } if ( FUN3 ( ) ) { VAR5 } if ( FUN4 ( ) ) { VAR5 } FUN5 ( VAR6 ) ; FUN5 ( VAR7 ) ; FUN5 ( VAR8 ) ; out FUN6 ( ) ; }

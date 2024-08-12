@@ -1,0 +1,1 @@
+static void * FUN1 ( void * VAR1 , const char * VAR2 ) { VAR3 * VAR4 = VAR1 ; fprintf ( VAR5 , "" , VAR2 ) ; FUN2 ( ) ; }

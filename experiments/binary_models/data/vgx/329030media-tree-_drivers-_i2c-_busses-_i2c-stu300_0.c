@@ -1,0 +1,27 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+u32 VAR3;
+unsigned long VAR4;
+int VAR5;
+
+
+FUN2(0x00, VAR2->VAR6 + VAR7);
+
+FUN2(0x00, VAR2->VAR6 + VAR8);
+
+VAR4 = FUN3(VAR2->VAR9);
+VAR5 = FUN4(VAR2, VAR4);
+
+if (VAR5)
+return VAR5;
+
+FUN2(VAR10,
+VAR2->VAR6 + VAR7);
+FUN2(VAR10,
+VAR2->VAR6 + VAR7);
+
+VAR3 = FUN5(VAR2->VAR6 + VAR11);
+VAR3 = FUN5(VAR2->VAR6 + VAR12);
+
+return 0;
+}

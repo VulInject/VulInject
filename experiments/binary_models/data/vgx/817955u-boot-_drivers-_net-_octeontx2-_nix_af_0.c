@@ -1,0 +1,106 @@
+int FUN1(struct VAR1 *VAR1, int VAR2, u32 VAR3)
+{
+int VAR4;
+u32 VAR5;
+union VAR6 *VAR7;
+union VAR8 *VAR9;
+struct VAR10 {
+union npa_aq_res_s	resp VAR11;
+union npa_pool_s p0 VAR11;
+union npa_pool_s p1 VAR11;
+} pool_req VAR11;
+struct VAR12 {
+union npa_aq_res_s	resp VAR11;
+union npa_aura_s a0 VAR11;
+union npa_aura_s a1 VAR11;
+} aura_req VAR11;
+union npa_af_aq_status VAR13;
+union npa_af_lf_rst VAR14;
+struct VAR15 *VAR16 = VAR1->VAR15;
+ulong VAR17;
+
+for (VAR4 = 0; VAR4 < VAR3; VAR4++) {
+VAR13.VAR18 = FUN2(VAR16, FUN3());
+VAR5 = VAR13.VAR19.VAR20;
+VAR7 = (union VAR6 *)(VAR16->VAR21.VAR7.VAR22) + VAR5;
+VAR9 = &VAR23.VAR24;
+
+memset(VAR7, 0, sizeof(*VAR7));
+VAR7->VAR19.VAR25 = VAR4;
+VAR7->VAR19.VAR2 = VAR2;
+VAR7->VAR19.VAR26 = 0;
+VAR7->VAR19.VAR27 = VAR28;
+VAR7->VAR19.VAR29 = VAR30;
+VAR7->VAR19.VAR31 = (VAR32)&VAR23.VAR24;
+
+memset((void *)&VAR23, 0, sizeof(VAR23));
+VAR23.VAR33.VAR19.VAR34 = 0;
+VAR23.VAR35.VAR19.VAR34 = 1;	
+FUN4();
+
+FUN5(VAR16, FUN6(), 1);
+
+VAR17 = FUN7(0);
+while ((VAR9->VAR19.VAR36 == VAR37) &&
+(FUN7(VAR17) < 1000))
+FUN8();
+
+if (VAR9->VAR19.VAR36 != VAR38) {
+FUN9(""
+"", VAR39, VAR9->VAR19.VAR36, VAR2,
+VAR4);
+return -1;
+}
+FUN10("", VAR39, VAR2,
+VAR4);
+}
+
+for (VAR4 = 0; VAR4 < VAR3; VAR4++) {
+VAR13.VAR18 = FUN2(VAR16, FUN3());
+VAR5 = VAR13.VAR19.VAR20;
+VAR7 = (union VAR6 *)(VAR16->VAR21.VAR7.VAR22) + VAR5;
+VAR9 = &VAR40.VAR24;
+
+memset(VAR7, 0, sizeof(*VAR7));
+VAR7->VAR19.VAR25 = VAR4;
+VAR7->VAR19.VAR2 = VAR2;
+VAR7->VAR19.VAR26 = 0;
+VAR7->VAR19.VAR27 = VAR41;
+VAR7->VAR19.VAR29 = VAR30;
+VAR7->VAR19.VAR31 = (VAR32)&VAR40.VAR24;
+
+memset((void *)&VAR40, 0, sizeof(VAR40));
+VAR40.VAR42.VAR19.VAR34 = 0;
+VAR40.VAR43.VAR19.VAR34 = 1;	
+FUN4();
+
+FUN5(VAR16, FUN6(), 1);
+
+VAR17 = FUN7(0);
+while ((VAR9->VAR19.VAR36 == VAR37) &&
+(FUN7(VAR17) < 1000))
+FUN8();
+
+if (VAR9->VAR19.VAR36 != VAR38) {
+FUN9(""
+"", VAR39, VAR9->VAR19.VAR36, VAR2,
+VAR4);
+return -1;
+}
+FUN10("", VAR39, VAR2,
+VAR4);
+}
+
+
+VAR14.VAR18 = 0;
+VAR14.VAR19.VAR44 = 1;
+VAR14.VAR19.VAR2 = VAR2;
+FUN5(VAR16, FUN11(), VAR14.VAR18);
+
+do {
+VAR14.VAR18 = FUN2(VAR16, FUN11());
+FUN8();
+} while (VAR14.VAR19.VAR44);
+
+return 0;
+}

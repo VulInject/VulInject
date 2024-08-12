@@ -1,0 +1,37 @@
+void
+FUN1(struct VAR1 *VAR2, VAR3 *VAR4, char *VAR5, enum uio_seg VAR6,
+VAR7 *VAR8)
+{
+struct svc_req	VAR9;
+int		VAR10 = 0;
+struct netbuf	VAR11 = {0, 0, NULL};
+int		VAR12 = 0;
+char		*VAR13;
+size_t		VAR14;
+nfslog_getfhargs VAR15;
+
+FUN2(VAR2 != NULL);
+FUN2(VAR2->VAR16.VAR17 & VAR18);
+
+FUN3(&VAR9, sizeof (VAR9));
+VAR9.VAR19 = VAR20;
+VAR9.VAR21 = VAR22;
+VAR9.VAR23 = VAR24;
+VAR9.VAR25.VAR26 = VAR27;
+
+VAR13 = FUN4(VAR28 + 4, VAR29);
+if (VAR6 == VAR30) {
+VAR12 = FUN5(VAR5, VAR13, VAR28, &VAR14);
+} else {
+VAR12 = FUN6(VAR5, VAR13, VAR28, &VAR14);
+}
+
+if (!VAR12) {
+VAR15.VAR31 = *VAR4;
+VAR15.VAR32 = VAR13;
+
+FUN7(VAR2, &VAR9, (VAR33)&VAR15, (VAR33)&VAR10,
+VAR8, &VAR11, 0, VAR34);
+}
+FUN8(VAR13, VAR28 + 4);
+}

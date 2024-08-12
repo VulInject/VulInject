@@ -1,0 +1,1 @@
+static int FUN1 ( void * VAR1 , ltc_mp_digit VAR2 , VAR3 * VAR4 ) { mp_digit VAR5 ; int VAR6 ; FUN2 ( VAR4 != NULL ) ; if ( ( VAR6 = FUN3 ( FUN4 ( VAR1 , VAR2 , & VAR5 ) ) ) != VAR7 ) { return VAR6 ; } * VAR4 = VAR5 ; return VAR7 ; }

@@ -1,0 +1,41 @@
+static void FUN1(void)
+{
+    VAR1 *VAR2 = FUN2();
+    VAR1 *VAR3 = FUN2();
+    VAR1 *VAR4 = FUN2();
+    VAR1 *VAR5 = FUN2();
+    VAR1 *VAR6 = FUN2();
+    VAR1 *VAR7, *VAR8, *VAR9, *VAR10;
+    VAR1 *VAR11, *VAR12;
+    VAR13 *VAR14;
+    FUN3(VAR5, "", FUN4(FUN5(42)));
+    FUN3(VAR5, "", FUN4(FUN6("")));
+    FUN3(VAR6, "", FUN4(FUN5(422)));
+    FUN3(VAR6, "", FUN4(FUN6("")));
+    FUN3(VAR3, "", FUN4(VAR5));
+    FUN3(VAR3, "", FUN4(VAR6));
+    FUN3(VAR2, "", FUN4(VAR3));
+    FUN3(VAR2, "", FUN4(FUN6("")));
+    VAR7 = FUN7(FUN8(VAR2));
+    assert(!strcmp(FUN9(VAR7, ""), ""));
+    VAR8 = FUN10(VAR7, "");
+    assert(!strcmp(FUN9(VAR8, ""), ""));
+    VAR9 = FUN10(VAR8, "");
+    VAR10 = FUN10(VAR9, "");
+    assert(FUN11(VAR10, "") == 42);
+    assert(!strcmp(FUN9(VAR10, ""), ""));
+    assert(!strcmp(FUN9(VAR9, ""), ""));
+    VAR11 = FUN10(VAR8, "");
+    VAR12 = FUN10(VAR11, "");
+    assert(FUN11(VAR12, "") == 422);
+    assert(!strcmp(FUN9(VAR12, ""), ""));
+    assert(!strcmp(FUN9(VAR11, ""), ""));
+    FUN12(VAR7);
+    FUN13(VAR4, "", FUN5(66));
+    FUN13(VAR2, "", VAR4);
+    FUN13(VAR2, "", FUN6(""));
+    VAR14 = FUN14(FUN8(VAR2));
+    assert(FUN15(VAR14) == 66);
+    FUN12(VAR14);
+    FUN12(VAR2);
+}

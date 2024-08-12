@@ -1,0 +1,30 @@
+void FUN1(iomux_cfg_t VAR1)
+{
+u32 VAR2 = (VAR1 & VAR3) >> VAR4;
+u32 VAR5 = (VAR1 & VAR6) >> VAR7;
+u32 VAR8 =
+(VAR1 & VAR9) >> VAR10;
+u32 VAR11 =
+(VAR1 & VAR12) >> VAR13;
+u32 VAR14 = VAR2;
+u32 VAR15 = (VAR1 & VAR16) >> VAR17;
+
+if (VAR5 & VAR18) {
+VAR5 &= ~VAR18;
+VAR19 = VAR20;
+} else {
+VAR19 = (void *)VAR21;
+}
+
+FUN2(((VAR5 << VAR22) &
+VAR23), VAR19 + VAR2);
+
+if (VAR8)
+FUN2((VAR11 << VAR24), VAR19 + VAR8);
+
+if (!(VAR15 & VAR25))
+FUN2(((VAR5 << VAR22) &
+VAR23) |
+(VAR15 & (~VAR23)),
+VAR19 + VAR14);
+}

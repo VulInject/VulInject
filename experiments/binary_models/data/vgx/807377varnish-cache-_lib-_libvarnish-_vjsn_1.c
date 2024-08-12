@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( const struct VAR1 * VAR2 , const char * VAR3 ) { struct VAR1 * VAR4 ; FUN2 ( VAR2 , VAR5 ) ; FUN3 ( VAR3 , NULL ) ; FUN4 ( , , ) { if ( VAR4 -> VAR6 != NULL && ! strcmp ( VAR4 -> VAR6 , VAR3 ) ) { return ( VAR4 ) ; } } return ( NULL ) ; }

@@ -1,0 +1,1 @@
+void FUN1 ( void ) { int VAR1 = FUN2 ( "" ) ; VAR2 = FUN3 ( "" , 1 , VAR3 , 0 ) ; for ( VAR1 = FUN4 ( VAR1 ) ; VAR1 != 0 ; VAR1 = FUN5 ( VAR1 ) ) { FUN6 ( VAR1 ) ; } }

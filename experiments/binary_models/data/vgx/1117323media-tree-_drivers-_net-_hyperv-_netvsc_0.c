@@ -1,0 +1,29 @@
+static inline struct VAR1 *FUN1(
+struct VAR2 *VAR3, struct VAR4 *VAR5, u16 VAR6)
+{
+struct VAR7 *VAR8 = &VAR3->VAR9[VAR6].VAR8;
+u32 VAR10, VAR11, VAR12;
+struct VAR1 *VAR13;
+
+if (FUN2(!VAR3->VAR14))
+return NULL;
+
+if (FUN2(!VAR8->VAR15))
+return NULL;
+
+if (FUN3(&VAR3->VAR16) >
+VAR3->VAR14->VAR17 * VAR18 / 100)
+FUN4(VAR3, VAR5, VAR6);
+
+FUN5(VAR3, VAR6, &VAR10, &VAR11);
+if (!VAR11)
+return NULL;
+
+VAR12 = VAR8->VAR12;
+VAR13 = VAR8->VAR15 + VAR12 * sizeof(struct VAR1);
+VAR8->VAR12 = (VAR12 + 1) % VAR19;
+
+FUN6(&VAR3->VAR16);
+
+return VAR13;
+}

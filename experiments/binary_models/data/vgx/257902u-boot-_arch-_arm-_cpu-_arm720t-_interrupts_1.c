@@ -1,0 +1,1 @@
+int FUN1 ( void ) { VAR1 = 0 ; return 0 ; }

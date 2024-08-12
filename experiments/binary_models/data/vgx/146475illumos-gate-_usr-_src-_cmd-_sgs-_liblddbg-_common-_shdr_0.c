@@ -1,0 +1,26 @@
+void
+FUN1(VAR1 *VAR2, const char *VAR3, uchar_t VAR4, Half VAR5,
+Word VAR6, VAR7 *VAR8, VAR7 *VAR9, const char *VAR10)
+{
+dbg_isec_name_buf_t	VAR11;
+char			*VAR12;
+
+if (FUN2(VAR13 | VAR14))
+return;
+if (FUN3())
+return;
+
+FUN4(VAR2, VAR15);
+FUN5(VAR2, FUN6(VAR16),
+FUN7(VAR10, VAR6, VAR11, &VAR12), VAR3);
+if (VAR12 != NULL)
+free(VAR12);
+
+FUN5(VAR2, FUN6(VAR17));
+FUN8(VAR2, VAR4, VAR5, VAR8);
+
+FUN5(VAR2, FUN6(VAR18));
+FUN8(VAR2, VAR4, VAR5, VAR9);
+
+FUN4(VAR2, VAR15);
+}

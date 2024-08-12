@@ -1,0 +1,18 @@
+VAR1 FUN1(VAR2 *VAR3, u32 VAR4, u32 VAR5,
+const char **VAR6, const char **VAR7, const char **VAR8)
+{
+VAR9 *VAR10;
+VAR11 *VAR12;
+if (VAR6) *VAR6 = NULL;
+if (VAR8) *VAR8 = NULL;
+if (VAR7) *VAR7 = NULL;
+VAR10 = FUN2(VAR3, VAR4);
+if (!VAR10 || !VAR5) return VAR13;
+VAR12 = (VAR11*)FUN3(VAR10->VAR14->VAR15->VAR16->VAR17->VAR18, VAR5-1);
+if (!VAR12) return VAR13;
+
+if (VAR7) *VAR7 = VAR12->VAR19;
+if (VAR6) *VAR6 = VAR12->VAR20;
+if (VAR8) *VAR8 = VAR12->VAR8;
+return VAR21;
+}

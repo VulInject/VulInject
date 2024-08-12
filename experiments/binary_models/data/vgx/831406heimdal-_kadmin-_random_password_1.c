@@ -1,0 +1,1 @@
+static void FUN1 ( char * * VAR1 , int VAR2 , ... ) void FUN2 ( char * VAR1 , size_t VAR3 ) { { OtpKey VAR4 ; FUN3 ( & VAR4 , sizeof ( VAR4 ) ) ; FUN4 ( VAR4 , VAR1 , VAR3 ) ; FUN5 ( VAR1 , NULL ) ; } char * VAR5 ; FUN1 ( & VAR5 , 3 , "" , 7 , "" , 2 , "" , 1 ) ; FUN6 ( VAR1 , VAR5 , VAR3 ) ; VAR3 = strlen ( VAR5 ) ; FUN7 ( VAR5 , VAR3 , 0 , VAR3 ) ; free ( VAR5 ) ; }

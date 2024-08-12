@@ -1,0 +1,36 @@
+static bool FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+struct VAR5 *VAR6)
+{
+struct VAR7 *VAR8;
+u8 VAR9;
+
+if (!VAR2)
+return false;
+
+VAR8 = FUN2(VAR2->VAR10);
+if (!VAR8)
+return false;
+
+if (VAR6->VAR11.VAR10[0].VAR12 < 0 ||
+VAR6->VAR11.VAR10[0].VAR13 == 0)
+{
+VAR9 = 0;
+} else {
+VAR4->VAR10[0] = VAR6->VAR11.VAR10[0];
+VAR9 = 1;
+}
+
+for ( ; VAR9 < VAR14; VAR9++) {
+VAR4->VAR10[VAR9].VAR12 = VAR8->VAR15[VAR9].VAR12;
+VAR4->VAR10[VAR9].VAR16 = VAR8->VAR15[VAR9].VAR16;
+if (VAR6->VAR11.VAR17)
+VAR4->VAR10[VAR9].VAR13 = VAR8->VAR15[VAR9].VAR18;
+else if (VAR6->VAR11.VAR19)
+VAR4->VAR10[VAR9].VAR13 = VAR8->VAR15[VAR9].VAR20;
+else
+VAR4->VAR10[VAR9].VAR13 = VAR8->VAR15[VAR9].VAR13;
+}
+
+return true;
+}

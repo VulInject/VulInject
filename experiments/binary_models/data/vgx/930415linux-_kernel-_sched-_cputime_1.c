@@ -1,0 +1,1 @@
+void FUN1 ( unsigned long VAR1 ) { u64 VAR2 , VAR3 ; if ( VAR4 ) { FUN2 ( VAR1 , NULL ) ; return ; } VAR2 = VAR1 * VAR5 ; VAR3 = FUN3 ( VAR6 ) ; if ( VAR3 >= VAR2 ) { return ; } VAR2 -= VAR3 ; FUN4 ( VAR2 ) ; }

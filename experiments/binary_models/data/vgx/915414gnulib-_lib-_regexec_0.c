@@ -1,0 +1,171 @@
+FUN1 (const VAR1 *VAR2, const VAR3 *VAR4,
+VAR5 *VAR6, VAR7 *VAR8)
+{
+reg_errcode_t VAR9;
+bool VAR10;
+Idx VAR11, VAR12, VAR13;
+Idx VAR14; 
+bitset_t VAR15; 
+const VAR5 *VAR16 = &VAR4->VAR17;
+FUN2 (VAR15);
+VAR14 = 0;
+
+
+for (VAR11 = 0; VAR11 < VAR16->VAR18; ++VAR11)
+{
+VAR19 *VAR20 = &VAR2->VAR17[VAR16->VAR21[VAR11]];
+re_token_type_t VAR22 = VAR20->VAR22;
+unsigned int VAR23 = VAR20->VAR23;
+
+
+if (VAR22 == VAR24)
+FUN3 (VAR15, VAR20->VAR25.VAR26);
+else if (VAR22 == VAR27)
+{
+FUN4 (VAR15, VAR20->VAR25.VAR28);
+}
+else if (VAR22 == VAR29)
+{
+if (VAR2->VAR30 > 1)
+FUN4 (VAR15, VAR2->VAR31);
+else
+FUN5 (VAR15);
+if (!(VAR2->VAR32 & VAR33))
+FUN6 (VAR15, '');
+if (VAR2->VAR32 & VAR34)
+FUN6 (VAR15, '');
+}
+else if (VAR22 == VAR35)
+{
+if (VAR36 % VAR37 == 0)
+memset (VAR15, -1, VAR36 / VAR38);
+else
+FUN4 (VAR15, VAR39);
+if (!(VAR2->VAR32 & VAR33))
+FUN6 (VAR15, '');
+if (VAR2->VAR32 & VAR34)
+FUN6 (VAR15, '');
+}
+else
+continue;
+
+
+if (VAR23)
+{
+if (VAR23 & VAR40)
+{
+bool VAR41 = FUN7 (VAR15, VAR42);
+FUN2 (VAR15);
+if (VAR41)
+FUN3 (VAR15, VAR42);
+else
+continue;
+}
+if (VAR23 & VAR43)
+{
+FUN2 (VAR15);
+continue;
+}
+
+if (VAR23 & VAR44)
+{
+bitset_word_t VAR45 = 0;
+if (VAR22 == VAR24 && !VAR20->VAR46)
+{
+FUN2 (VAR15);
+continue;
+}
+if (VAR2->VAR30 > 1)
+for (VAR12 = 0; VAR12 < VAR47; ++VAR12)
+VAR45 |= (VAR15[VAR12] &= (VAR2->VAR46[VAR12] | ~VAR2->VAR31[VAR12]));
+else
+for (VAR12 = 0; VAR12 < VAR47; ++VAR12)
+VAR45 |= (VAR15[VAR12] &= VAR2->VAR46[VAR12]);
+if (!VAR45)
+continue;
+}
+if (VAR23 & VAR48)
+{
+bitset_word_t VAR45 = 0;
+if (VAR22 == VAR24 && VAR20->VAR46)
+{
+FUN2 (VAR15);
+continue;
+}
+if (VAR2->VAR30 > 1)
+for (VAR12 = 0; VAR12 < VAR47; ++VAR12)
+VAR45 |= (VAR15[VAR12] &= ~(VAR2->VAR46[VAR12] & VAR2->VAR31[VAR12]));
+else
+for (VAR12 = 0; VAR12 < VAR47; ++VAR12)
+VAR45 |= (VAR15[VAR12] &= ~VAR2->VAR46[VAR12]);
+if (!VAR45)
+continue;
+}
+}
+
+
+for (VAR12 = 0; VAR12 < VAR14; ++VAR12)
+{
+bitset_t VAR49; 
+bitset_t VAR50;
+
+bitset_word_t VAR51, VAR52, VAR53;
+
+
+if (VAR22 == VAR24 && !FUN7 (VAR8[VAR12], VAR20->VAR25.VAR26))
+continue;
+
+
+VAR51 = 0;
+for (VAR13 = 0; VAR13 < VAR47; ++VAR13)
+VAR51 |= VAR49[VAR13] = VAR15[VAR13] & VAR8[VAR12][VAR13];
+
+if (!VAR51)
+continue;
+
+
+VAR52 = VAR53 = 0;
+for (VAR13 = 0; VAR13 < VAR47; ++VAR13)
+{
+VAR52 |= VAR50[VAR13] = ~VAR15[VAR13] & VAR8[VAR12][VAR13];
+VAR53 |= VAR15[VAR13] = VAR15[VAR13] & ~VAR8[VAR12][VAR13];
+}
+
+
+if (VAR52)
+{
+FUN8 (VAR8[VAR14], VAR50);
+FUN8 (VAR8[VAR12], VAR49);
+VAR9 = FUN9 (VAR6 + VAR14, &VAR6[VAR12]);
+if (FUN10 (VAR9 != VAR54))
+goto VAR55;
+++VAR14;
+}
+
+
+VAR10 = FUN11 (&VAR6[VAR12], VAR16->VAR21[VAR11]);
+if (FUN10 (! VAR10))
+goto VAR55;
+
+
+if (!VAR53)
+break;
+}
+
+if (VAR12 == VAR14)
+{
+FUN8 (VAR8[VAR14], VAR15);
+VAR9 = FUN12 (VAR6 + VAR14, VAR16->VAR21[VAR11]);
+if (FUN10 (VAR9 != VAR54))
+goto VAR55;
+++VAR14;
+FUN2 (VAR15);
+}
+}
+FUN13 (VAR14 <= VAR56);
+return VAR14;
+VAR55:
+for (VAR12 = 0; VAR12 < VAR14; ++VAR12)
+FUN14 (VAR6 + VAR12);
+return -1;
+}

@@ -1,0 +1,1 @@
+void FUN1 ( SHPHandle VAR1 ) { if ( VAR1 -> VAR2 ) { FUN2 ( VAR1 ) ; } free ( VAR1 -> VAR3 ) ; free ( VAR1 -> VAR4 ) ; free ( VAR1 -> VAR5 ) ; free ( VAR1 -> VAR6 ) ; FUN3 ( VAR1 -> VAR7 ) ; FUN3 ( VAR1 -> VAR8 ) ; free ( VAR1 ) ; }

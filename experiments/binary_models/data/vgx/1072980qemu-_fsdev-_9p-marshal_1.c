@@ -1,0 +1,1 @@
+FUN1 ( VAR1 , VAR2 ) ; void FUN2 ( VAR1 * VAR3 ) { FUN3 ( VAR3 -> VAR4 ) ; VAR3 -> VAR4 = NULL ; }

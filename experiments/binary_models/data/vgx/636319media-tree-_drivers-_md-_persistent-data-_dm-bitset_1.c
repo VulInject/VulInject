@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , dm_block_t VAR3 , VAR4 * VAR5 ) { int VAR6 ; __le64 VAR7 ; VAR7 = FUN2 ( VAR2 -> VAR8 ) ; FUN3 ( & VAR7 ) ; VAR6 = FUN4 ( & VAR2 -> VAR9 , VAR3 , VAR2 -> VAR10 , & VAR7 , VAR5 ) ; if ( VAR6 ) { return VAR6 ; } VAR2 -> VAR11 = false ; VAR2 -> VAR12 = false ; return 0 ; }

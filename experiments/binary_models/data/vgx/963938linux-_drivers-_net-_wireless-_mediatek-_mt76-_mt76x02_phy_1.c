@@ -1,0 +1,1 @@
+( VAR1 ) ; void FUN1 ( struct VAR2 * VAR3 , int VAR4 ) { int VAR5 ; for ( VAR5 = 0 ; VAR5 < sizeof ( VAR3 -> VAR6 ) ; VAR5 ++ ) { VAR3 -> VAR6 [ VAR5 ] += VAR4 ; } }

@@ -1,0 +1,1 @@
+FUN1 ( ) { size_t VAR1 ; char * VAR2 ; VAR1 = FUN2 ( VAR3 ) ; if ( VAR1 <= 0x7f ) { } if ( VAR1 == 0xde ) { VAR1 = FUN2 ( VAR3 ) ; } if ( VAR1 == 0xdf ) { VAR1 = FUN2 ( VAR3 ) ; VAR1 = ( VAR1 * 256 ) + FUN2 ( VAR3 ) ; } VAR2 = FUN3 ( VAR3 -> VAR4 , ( VAR5 ) VAR1 + 1 ) ; if ( ! VAR2 ) { return NULL ; } FUN4 ( VAR3 , VAR2 , VAR1 ) ; return VAR2 ; }

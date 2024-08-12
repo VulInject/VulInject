@@ -1,0 +1,1 @@
+bool FUN1 ( struct VAR1 * VAR2 , u32 VAR3 ) { VAR4 * new = ( void * ) & VAR2 -> VAR5 . VAR3 ; struct VAR4 * VAR6 = ( void * ) & VAR3 ; if ( new -> VAR7 > VAR6 -> VAR7 ) { return true ; } if ( new -> VAR8 > VAR6 -> VAR8 ) { return true ; } return false ; }

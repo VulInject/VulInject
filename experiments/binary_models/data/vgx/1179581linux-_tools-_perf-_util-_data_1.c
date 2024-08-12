@@ -1,0 +1,1 @@
+bool FUN1 ( const char * VAR1 ) { bool VAR2 = false ; VAR3 * VAR4 ; u64 VAR5 ; VAR4 = fopen ( VAR1 , "" ) ; if ( ! VAR4 ) { return false ; } if ( fread ( & VAR5 , 1 , 8 , VAR4 ) < 8 ) { VAR6 } VAR2 = FUN2 ( VAR5 ) ; out fclose ( VAR4 , NULL ) ; return VAR2 ; }

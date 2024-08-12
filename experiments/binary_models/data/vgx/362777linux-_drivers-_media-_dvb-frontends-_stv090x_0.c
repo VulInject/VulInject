@@ -1,0 +1,107 @@
+static VAR1 FUN1(struct VAR2 *VAR3, enum stv090x_modcod VAR4, s32 VAR5)
+{
+u8 VAR6 = 0x29;
+s32 VAR7;
+struct VAR8 *VAR9, *VAR10, *VAR11;
+
+if (VAR3->VAR12->VAR13 == 0x20) {
+VAR9		= VAR14;
+VAR10	= VAR15;
+VAR11	= VAR16;
+} else {
+
+VAR9		= VAR17;
+VAR10	= VAR18;
+VAR11	= VAR19;
+}
+
+if (VAR4 < VAR20) {
+VAR7 = 0;
+while ((VAR7 < 3) && (VAR4 != VAR10[VAR7].VAR4))
+VAR7++;
+
+if (VAR7 >= 3)
+VAR7 = 2;
+
+} else {
+VAR7 = 0;
+while ((VAR7 < 14) && (VAR4 != VAR9[VAR7].VAR4))
+VAR7++;
+
+if (VAR7 >= 14) {
+VAR7 = 0;
+while ((VAR7 < 11) && (VAR4 != VAR11[VAR7].VAR4))
+VAR7++;
+
+if (VAR7 >= 11)
+VAR7 = 10;
+}
+}
+
+if (VAR4 <= VAR21) {
+if (VAR5) {
+if (VAR3->VAR22 <= 3000000)
+VAR6 = VAR10[VAR7].VAR23;
+else if (VAR3->VAR22 <= 7000000)
+VAR6 = VAR10[VAR7].VAR24;
+else if (VAR3->VAR22 <= 15000000)
+VAR6 = VAR10[VAR7].VAR25;
+else if (VAR3->VAR22 <= 25000000)
+VAR6 = VAR10[VAR7].VAR26;
+else
+VAR6 = VAR10[VAR7].VAR27;
+} else {
+if (VAR3->VAR22 <= 3000000)
+VAR6 = VAR10[VAR7].VAR28;
+else if (VAR3->VAR22 <= 7000000)
+VAR6 = VAR10[VAR7].VAR29;
+else if (VAR3->VAR22 <= 15000000)
+VAR6 = VAR10[VAR7].VAR30;
+else if (VAR3->VAR22 <= 25000000)
+VAR6 = VAR10[VAR7].VAR31;
+else
+VAR6 = VAR10[VAR7].VAR32;
+}
+
+} else if (VAR4 <= VAR33) {
+if (VAR5) {
+if (VAR3->VAR22 <= 3000000)
+VAR6 = VAR9[VAR7].VAR23;
+else if (VAR3->VAR22 <= 7000000)
+VAR6 = VAR9[VAR7].VAR24;
+else if (VAR3->VAR22 <= 15000000)
+VAR6 = VAR9[VAR7].VAR25;
+else if (VAR3->VAR22 <= 25000000)
+VAR6 = VAR9[VAR7].VAR26;
+else
+VAR6 = VAR9[VAR7].VAR27;
+} else {
+if (VAR3->VAR22 <= 3000000)
+VAR6 = VAR9[VAR7].VAR28;
+else if (VAR3->VAR22 <= 7000000)
+VAR6 = VAR9[VAR7].VAR29;
+else if (VAR3->VAR22 <= 15000000)
+VAR6 = VAR9[VAR7].VAR30;
+else if (VAR3->VAR22 <= 25000000)
+VAR6 = VAR9[VAR7].VAR31;
+else
+VAR6 = VAR9[VAR7].VAR32;
+}
+} else { 
+
+if (VAR7 >= 11)
+VAR7 = 10;
+if (VAR3->VAR22 <= 3000000)
+VAR6 = VAR11[VAR7].VAR23;
+else if (VAR3->VAR22 <= 7000000)
+VAR6 = VAR11[VAR7].VAR24;
+else if (VAR3->VAR22 <= 15000000)
+VAR6 = VAR11[VAR7].VAR25;
+else if (VAR3->VAR22 <= 25000000)
+VAR6 = VAR11[VAR7].VAR26;
+else
+VAR6 = VAR11[VAR7].VAR27;
+}
+
+return VAR6;
+}

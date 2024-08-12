@@ -1,0 +1,35 @@
+static void FUN1(struct VAR1 *VAR2, sector_t VAR3)
+{
+struct VAR4 *VAR4 = VAR2->VAR5->VAR4;
+struct VAR6 *VAR7 = VAR4->private;
+struct VAR8 *VAR9;
+struct VAR10 *VAR11;
+int VAR12;
+
+
+if (VAR7->VAR13)
+return;
+
+FUN2(&VAR2->VAR14);
+VAR12 = sizeof(struct VAR10) + sizeof(VAR15);
+
+if (FUN3(VAR2, VAR12)) {
+FUN4(&VAR2->VAR14);
+return;
+}
+
+
+VAR9 = VAR2->VAR16;
+VAR11 = FUN5(VAR9->VAR17) + VAR9->VAR18;
+VAR11->VAR19.VAR20 = FUN6(VAR21);
+VAR11->VAR19.VAR22 = FUN6(0);
+VAR11->VAR23 = FUN7(sizeof(VAR15));
+VAR11->VAR24[0] = FUN8(VAR3);
+VAR9->VAR18 += VAR12;
+
+if (!VAR9->VAR25) {
+VAR9->VAR25 = 1;
+FUN9(&VAR9->VAR26);
+}
+FUN4(&VAR2->VAR14);
+}

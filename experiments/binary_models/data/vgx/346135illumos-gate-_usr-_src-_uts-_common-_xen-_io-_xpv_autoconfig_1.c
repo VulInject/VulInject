@@ -1,0 +1,1 @@
+int FUN1 ( void ) { int VAR1 ; if ( VAR2 ) { return ( VAR3 ) ; } FUN2 ( VAR4 ) ; return ( 0 ) ; }

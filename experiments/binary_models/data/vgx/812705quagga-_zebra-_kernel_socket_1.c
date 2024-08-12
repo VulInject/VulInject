@@ -1,0 +1,1 @@
+FUN1 ( ) { if ( VAR1 == VAR2 ) { return 1 ; } return 0 ; }

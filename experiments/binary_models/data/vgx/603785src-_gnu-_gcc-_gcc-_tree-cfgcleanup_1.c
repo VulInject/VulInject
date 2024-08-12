@@ -1,0 +1,1 @@
+FUN1 ( ) { basic_block VAR1 ; bool VAR2 = false ; VAR3 * VAR4 = FUN2 ( VAR3 , VAR5 ) ; VAR3 * VAR6 = VAR4 ; FUN3 ( ) { if ( FUN4 ( VAR1 , false ) ) { * VAR6 ++ = VAR1 ; } } while ( VAR6 != VAR4 ) { VAR1 = * -- VAR6 ; VAR2 |= FUN5 ( VAR1 , & VAR6 ) ; } return VAR2 ; }

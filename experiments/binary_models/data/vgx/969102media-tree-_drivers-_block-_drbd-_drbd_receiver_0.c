@@ -1,0 +1,29 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6;
+struct VAR7 *VAR8;
+struct VAR9 *VAR10 = VAR4->VAR11;
+sector_t VAR12 = FUN2(VAR10->VAR12);
+int VAR13 = FUN3(VAR10->VAR13);
+
+VAR6 = FUN4(VAR2, VAR4->VAR14);
+if (!VAR6)
+return -VAR15;
+VAR8 = VAR6->VAR8;
+
+FUN5(VAR8, VAR6->VAR2->VAR16 >= 89);
+
+FUN6(VAR6, FUN3(VAR10->VAR17));
+
+if (FUN7(VAR8)) {
+FUN8(VAR8, VAR12);
+FUN9(VAR8, VAR12, VAR13);
+
+VAR8->VAR18 += (VAR13 >> VAR19);
+FUN10(VAR8);
+}
+FUN11(VAR8);
+FUN12(VAR13 >> 9, &VAR8->VAR20);
+
+return 0;
+}

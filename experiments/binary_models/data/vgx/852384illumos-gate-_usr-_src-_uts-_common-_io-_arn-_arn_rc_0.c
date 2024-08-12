@@ -1,0 +1,59 @@
+void
+FUN1(void *VAR1, struct VAR2 *VAR3)
+{
+struct VAR4 *VAR5 = VAR1;
+struct VAR6 *VAR7 = FUN2(VAR3);
+struct VAR8 *VAR9 = &VAR3->VAR10;
+int32_t VAR11 = 0, VAR12, VAR13;
+
+
+VAR5->VAR14.VAR15++;
+
+VAR13 = (VAR7->VAR16 + VAR7->VAR17 >= 10);
+
+
+if (VAR7->VAR17 > 0 && VAR7->VAR16 == 0)
+VAR11 = -1;
+
+
+if (VAR13 && VAR7->VAR16 < VAR7->VAR18)
+VAR11 = -1;
+
+
+if (VAR13 && VAR7->VAR17 == 0 && VAR7->VAR16 > VAR7->VAR18 * 10)
+VAR11 = 1;
+
+VAR12 = VAR3->VAR19;
+switch (VAR11) {
+case 0:
+if (VAR13 && VAR7->VAR20 > 0)
+VAR7->VAR20--;
+break;
+case -1:
+if (VAR12 > 0) {
+VAR12--;
+VAR5->VAR14.VAR21++;
+}
+VAR7->VAR20 = 0;
+break;
+case 1:
+if (++VAR7->VAR20 < 10)
+break;
+VAR7->VAR20 = 0;
+if (VAR12 + 1 < VAR9->VAR22) {
+VAR12++;
+VAR5->VAR14.VAR23++;
+}
+break;
+}
+
+if (VAR12 != VAR3->VAR19) {
+FUN3((VAR24, ""
+"",
+(VAR9->VAR25[VAR3->VAR19] & VAR26) / 2,
+(VAR9->VAR25[VAR12] & VAR26) / 2,
+VAR7->VAR16, VAR7->VAR17, VAR7->VAR18));
+FUN4(VAR5, VAR3, VAR12);
+} else if (VAR13)
+VAR7->VAR16 = VAR7->VAR17 = VAR7->VAR18 = 0;
+}

@@ -1,0 +1,57 @@
+static VAR1 FUN1(VAR2 *VAR3, VAR4 *VAR5, int VAR6)
+{
+VAR7 *VAR8;
+VARIANT VAR9;
+VARTYPE VAR10 = VAR11;
+HRESULT VAR12 = VAR13;
+
+VAR8 = (VAR7*) VAR3;
+FUN2(VAR5);
+FUN3(&VAR9);
+
+if (FUN4(&VAR8->VAR9) == VAR14) {
+if (VAR15 != FUN5(VAR8, VAR16,
+VAR17|VAR18, &VAR9, 0, NULL, 1, 0)) {
+FUN6(&VAR9, &VAR8->VAR9);
+}
+} else {
+FUN6(&VAR9, &VAR8->VAR9);
+}
+
+switch(VAR6) {
+case VAR19:
+case VAR20:
+VAR10 = VAR21;
+VAR10 = VAR22;
+break;
+case VAR23:
+VAR10 = VAR24;
+break;
+case VAR25:
+case VAR26:
+case VAR27:
+VAR10 = VAR28;
+break;
+case VAR29:
+VAR10 = VAR30;
+break;
+default:
+;
+}
+
+if (VAR10 != VAR11 && VAR10 != FUN4(&VAR9)) {
+VAR12 = FUN7(&VAR9, &VAR9, 0, VAR10);
+}
+
+if (FUN8(VAR12)) {
+FUN9(VAR5, &VAR9, VAR8->VAR31);
+}
+
+FUN10(&VAR9);
+
+if (FUN8(VAR12)) {
+return VAR15;
+}
+
+return FUN11(VAR3, VAR5, VAR6);
+}

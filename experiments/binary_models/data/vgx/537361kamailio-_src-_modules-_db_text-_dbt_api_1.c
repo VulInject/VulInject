@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * * VAR2 , dbt_table_p VAR3 ) { int VAR4 = FUN2 ( VAR2 , VAR3 ) ; if ( FUN3 ( * VAR2 , VAR3 ) < 0 ) { FUN4 ( "" ) ; FUN5 ( * VAR2 ) ; return - 3 ; } return 0 ; }

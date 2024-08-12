@@ -1,0 +1,1 @@
+int FUN1(const VAR1 *VAR2, enum AVPixelFormat VAR3, int VAR4, int VAR5, unsigned char *VAR6, int VAR7) { return FUN2(VAR6, VAR7, VAR2->VAR8, VAR2->VAR9, VAR3, VAR4, VAR5, 1); }

@@ -1,0 +1,101 @@
+int FUN1()
+{
+
+char *VAR1;
+char *VAR2;
+char *VAR3;
+
+struct VAR4 *VAR5;
+
+
+struct VAR6 *VAR7;
+struct VAR6 *VAR8 = &VAR9->VAR10->VAR8;
+struct VAR6 *VAR11;
+struct VAR12 *VAR13;
+struct VAR14 *VAR15;
+
+
+struct VAR1 *VAR16;
+
+
+struct VAR17 *VAR18;
+
+FUN2("");
+
+FUN3(VAR7, VAR8) {
+VAR13 = FUN4(VAR7, struct VAR12, VAR19);
+if (!VAR13->VAR10) {
+continue;
+}
+
+VAR5 = VAR9->FUN5(sizeof(struct VAR4));
+VAR5->VAR20 = VAR13;        
+FUN6(&VAR5->VAR21); 
+
+
+FUN3(VAR11, &VAR13->VAR10->VAR22) {
+VAR15 = FUN4(VAR11, struct VAR14, VAR19);
+
+if (FUN7(VAR15->VAR23, "") == 0) {
+VAR1 = NULL;
+VAR2 = NULL;
+VAR3 = NULL;
+
+
+VAR1 = VAR9->FUN8(VAR15,
+"",
+VAR24);
+VAR2 = VAR9->FUN8(VAR15,
+"",
+VAR24);
+
+VAR3 = VAR9->FUN8(VAR15,
+"",
+VAR24);
+
+
+VAR18 = FUN9(VAR3);
+if (!VAR18) {
+continue;
+}
+
+
+VAR16 = VAR9->FUN5(sizeof(struct VAR1));
+VAR9->FUN10(&VAR16->VAR25, VAR1);
+VAR9->FUN10(&VAR16->VAR2, VAR2);
+
+VAR16->VAR26.VAR27 = NULL;
+VAR9->FUN11(&VAR16->VAR26.VAR27,
+&VAR16->VAR26.VAR28,
+VAR29, VAR2);
+
+VAR16->VAR30 = VAR18;
+
+
+FUN12(&VAR16->VAR19, &VAR5->VAR21);
+}
+}
+
+
+FUN12(&VAR5->VAR19, &VAR31);
+}
+
+struct VAR6 *VAR32, *VAR33;
+struct VAR4 *VAR34;
+struct VAR1 *VAR35;
+
+FUN3(VAR32, &VAR31) {
+VAR34 = FUN4(VAR32, struct VAR4, VAR19);
+FUN2("", VAR34->VAR20);
+
+FUN3(VAR33, &VAR34->VAR21) {
+VAR35 = FUN4(VAR33, struct VAR1, VAR19);
+FUN2("");
+FUN2("", VAR35->VAR25);
+FUN2("", VAR35->VAR2);
+FUN2("", VAR35->VAR30->VAR25);
+}
+}
+
+return 0;
+}

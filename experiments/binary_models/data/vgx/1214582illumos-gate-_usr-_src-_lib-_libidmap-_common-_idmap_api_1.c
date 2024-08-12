@@ -1,0 +1,1 @@
+boolean_t FUN1 ( VAR1 * VAR2 , char * VAR3 , char * VAR4 , VAR5 * VAR6 ) { int VAR7 [ VAR8 + 1 ] ; int VAR9 ; ( void ) FUN2 ( VAR7 , VAR3 , sizeof ( VAR7 ) ) ; if ( VAR4 != NULL ) { ( void ) FUN3 ( VAR7 , VAR4 , sizeof ( VAR7 ) ) ; } VAR9 = FUN4 ( VAR2 , VAR7 , VAR6 ) ; return ( VAR9 == 0 ) ; }

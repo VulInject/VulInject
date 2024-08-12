@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( VAR2 * VAR3 , VAR1 * VAR4 ) { VAR1 * VAR5 = NULL ; int VAR6 ; for ( VAR6 = 0 ; VAR6 < VAR3 -> VAR7 ; VAR6 ++ ) { if ( FUN2 ( VAR3 -> VAR8 [ VAR6 ] -> VAR9 , VAR4 -> VAR9 ) ) { VAR5 = VAR3 -> VAR8 [ VAR6 ] ; FUN3 ( VAR3 -> VAR8 , VAR6 , VAR3 -> VAR7 ) ; break ; } } return VAR5 ; }

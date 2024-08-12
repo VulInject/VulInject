@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( void ) { static const char * VAR2 [ ] { "" } ; ; VAR1 * VAR3 = FUN2 ( sizeof ( * VAR3 ) ) ; if ( VAR3 == NULL ) { return NULL ; } VAR3 -> argc = 1 ; VAR3 -> argv = ( char * * ) VAR2 ; VAR3 -> VAR4 = VAR5 ; return VAR3 ; }

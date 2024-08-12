@@ -1,0 +1,1 @@
+FSTATUS FUN1 ( IN OUT VAR1 * VAR2 ) { FSTATUS VAR3 = VAR4 ; VAR1 * VAR5 ; FUN2 ( VAR6 , VAR7 ) ; VAR5 = VAR2 ; if ( VAR5 -> VAR8 ) { FUN3 ( VAR5 -> VAR8 ) ; VAR5 -> VAR9 = 0 ; } VAR3 = FUN4 ( VAR5 ) ; FUN5 ( VAR6 ) ; return VAR3 ; }

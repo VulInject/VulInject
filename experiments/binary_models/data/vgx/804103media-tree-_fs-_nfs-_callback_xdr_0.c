@@ -1,0 +1,24 @@
+static VAR1 FUN1(struct VAR2 *VAR3, struct VAR4 *VAR5, const struct VAR6 *VAR7)
+{
+VAR1 *VAR8 = NULL;
+__be32 VAR9 = VAR7->VAR9;
+
+if (FUN2(VAR9 != 0))
+goto VAR10;
+VAR9 = FUN3(VAR5, VAR7->VAR11, &VAR8);
+if (FUN2(VAR9 != 0))
+goto VAR10;
+VAR9 = FUN4(VAR5, VAR7->VAR11, VAR7->VAR12);
+if (FUN2(VAR9 != 0))
+goto VAR10;
+VAR9 = FUN5(VAR5, VAR7->VAR11, VAR7->VAR13);
+if (FUN2(VAR9 != 0))
+goto VAR10;
+VAR9 = FUN6(VAR5, VAR7->VAR11, &VAR7->VAR14);
+if (FUN2(VAR9 != 0))
+goto VAR10;
+VAR9 = FUN7(VAR5, VAR7->VAR11, &VAR7->VAR15);
+*VAR8 = FUN8((unsigned int)((char *)VAR5->VAR16 - (char *)(VAR8+1)));
+VAR10:
+return VAR9;
+}

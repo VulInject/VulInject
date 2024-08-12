@@ -1,0 +1,1 @@
+static void * FUN1 ( struct VAR1 * VAR2 , void * VAR3 , VAR4 * VAR5 ) { struct VAR6 * VAR7 = VAR2 -> private ; loff_t VAR8 ; FUN2 ( "" , VAR7 , VAR7 -> VAR9 , * VAR5 ) ; VAR8 = * VAR5 ; ( * VAR5 ) ++ ; if ( VAR8 >= VAR7 -> VAR9 ) { return VAR10 ; } return & VAR7 -> VAR11 [ VAR8 ] ; }

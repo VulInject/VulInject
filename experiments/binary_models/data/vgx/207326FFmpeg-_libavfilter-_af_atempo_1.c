@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 ) { const double VAR3 = VAR2 -> VAR4 * ( double ) ( VAR2 -> VAR5 / 2 ) ; const VAR6 * VAR7 ; VAR6 * VAR8 ; VAR2 -> VAR9 ++ ; VAR7 = FUN2 ( VAR2 ) ; VAR8 = FUN3 ( VAR2 , NULL ) ; VAR8 -> VAR10 [ 0 ] = VAR7 -> VAR10 [ 0 ] + ( VAR11 ) VAR3 ; VAR8 -> VAR10 [ 1 ] = VAR7 -> VAR10 [ 1 ] + VAR2 -> VAR5 / 2 ; VAR8 -> VAR12 = 0 ; }

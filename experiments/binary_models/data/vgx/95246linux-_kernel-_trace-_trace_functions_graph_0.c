@@ -1,0 +1,36 @@
+static enum VAR1
+FUN1(struct VAR2 *VAR3, struct VAR4 *VAR5,
+struct VAR6 *VAR7, u32 VAR8)
+{
+struct VAR9 *VAR10 = VAR7->VAR10;
+unsigned long VAR11 = (VAR10->VAR12 & VAR13);
+struct VAR14 *VAR15 = VAR7->private;
+struct VAR16 *VAR17;
+int VAR18 = 0;
+int VAR19;
+int VAR20;
+
+if (VAR15)
+VAR18 = FUN2(VAR15->VAR21, VAR7->VAR22)->VAR18;
+
+FUN3(VAR7, VAR3, 0, 0, VAR8);
+
+
+FUN4(VAR10, 0, VAR3, VAR8 | VAR23);
+
+
+if (VAR18 > 0)
+for (VAR20 = 0; VAR20 < (VAR18 + 1) * VAR24; VAR20++)
+FUN5(VAR3, '');
+
+
+FUN6(VAR3, "
+if (VAR3->VAR25[VAR3->VAR26.VAR27 - 1] == '') {
+VAR3->VAR25[VAR3->VAR26.VAR27 - 1] = '';
+VAR3->VAR26.VAR27--;
+}
+
+FUN6(VAR3, "");
+VAR28:
+return FUN7(VAR3);
+}

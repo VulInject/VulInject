@@ -1,0 +1,27 @@
+void
+FUN1(VAR1 *VAR2)
+{
+VAR1	*VAR3;
+
+while (VAR2 != NULL) {
+VAR3 = VAR2->VAR4;
+if (VAR2->VAR5 != NULL)
+free(VAR2->VAR5);
+if (VAR2->VAR6 != NULL)
+free(VAR2->VAR6);
+if (VAR2->VAR7 != NULL)
+FUN2(VAR2->VAR7);
+if (VAR2->VAR8 != NULL)
+free(VAR2->VAR8);
+if (VAR2->VAR9 != NULL)
+FUN3(VAR2->VAR9);
+if (VAR2->VAR10 != NULL)
+FUN4(VAR2->VAR10);
+if (VAR2->VAR11 != NULL)
+FUN5(VAR2->VAR11);
+if (VAR2->VAR12 != NULL)
+FUN6(VAR2->VAR12);
+free(VAR2);
+VAR2 = VAR3;
+}
+}

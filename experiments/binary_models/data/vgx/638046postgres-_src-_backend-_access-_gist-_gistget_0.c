@@ -1,0 +1,48 @@
+static bool
+FUN1(IndexScanDesc VAR1)
+{
+GISTScanOpaque VAR2 = (VAR3) VAR1->VAR4;
+bool		VAR5 = false;
+
+if (VAR1->VAR6)
+{
+
+FUN2(VAR1->VAR6);
+VAR1->VAR6 = NULL;
+}
+
+do
+{
+VAR7 *VAR8 = FUN3(VAR2);
+
+if (!VAR8)
+break;
+
+if (FUN4(*VAR8))
+{
+
+VAR1->VAR9 = VAR8->VAR10.VAR11.VAR12;
+VAR1->VAR13 = VAR8->VAR10.VAR11.VAR14;
+
+FUN5(VAR1, VAR2->VAR15,
+VAR8->VAR16,
+VAR8->VAR10.VAR11.VAR17);
+
+
+if (VAR1->VAR18)
+VAR1->VAR6 = VAR8->VAR10.VAR11.VAR19;
+VAR5 = true;
+}
+else
+{
+
+FUN6();
+
+FUN7(VAR1, VAR8, VAR8->VAR16, NULL, NULL);
+}
+
+FUN2(VAR8);
+} while (!VAR5);
+
+return VAR5;
+}

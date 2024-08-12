@@ -1,0 +1,111 @@
+void FUN1(VAR1 *VAR2, int VAR3);
+void FUN2(VAR1 *VAR2, int VAR3);
+void FUN3(VAR1 *VAR2, int VAR3);
+void FUN4(VAR1 *VAR2, int VAR3);
+
+void FUN5(VAR1 *VAR4, ptrdiff_t VAR5, VAR6 *VAR7,
+ptrdiff_t VAR8, int VAR9, int VAR10, int VAR11,
+VAR1 *VAR12);
+void FUN6(VAR1 *VAR4, ptrdiff_t VAR5, VAR6 *VAR7,
+ptrdiff_t VAR8, int VAR9, int VAR10, int VAR11,
+VAR1 *VAR12);
+void FUN7(VAR1 *VAR4, ptrdiff_t VAR5, VAR6 *VAR7,
+ptrdiff_t VAR8, int VAR9, int VAR10, int VAR11,
+VAR1 *VAR12);
+void FUN8(VAR1 *VAR4, ptrdiff_t VAR5, VAR6 *VAR7,
+ptrdiff_t VAR8, int VAR9, int VAR10, int VAR11,
+VAR1 *VAR12);
+void FUN9(VAR1 *VAR4, ptrdiff_t VAR5, VAR6 *VAR7,
+ptrdiff_t VAR8, int VAR9, int VAR10, int VAR11,
+VAR1 *VAR12);
+void FUN10(VAR1 *VAR4, ptrdiff_t VAR5, VAR6 *VAR7,
+ptrdiff_t VAR8, int VAR9, int VAR10, int VAR11,
+VAR1 *VAR12);
+void FUN11(VAR1 *VAR4, ptrdiff_t VAR5, VAR6 *VAR7,
+ptrdiff_t VAR8, int VAR9, int VAR10, int VAR11,
+VAR1 *VAR12);
+void FUN12(VAR1 *VAR4, ptrdiff_t VAR5, VAR6 *VAR7,
+ptrdiff_t VAR8, int VAR9, int VAR10, int VAR11,
+VAR1 *VAR12);
+void FUN13(VAR1 *VAR4, ptrdiff_t VAR5, VAR6 *VAR7,
+ptrdiff_t VAR8, int VAR9, int VAR10, int VAR11,
+VAR1 *VAR12);
+void FUN14(VAR1 *VAR4, ptrdiff_t VAR5, VAR6 *VAR7,
+ptrdiff_t VAR8, int VAR9, int VAR10, int VAR11,
+VAR1 *VAR12);
+void FUN15(VAR1 *VAR4, ptrdiff_t VAR5, VAR6 *VAR7,
+ptrdiff_t VAR8, int VAR9, int VAR10, int VAR11,
+VAR1 *VAR12);
+void FUN16(VAR1 *VAR4, ptrdiff_t VAR5, VAR6 *VAR7,
+ptrdiff_t VAR8, int VAR9, int VAR10, int VAR11,
+VAR1 *VAR12);
+void FUN17(VAR1 *VAR4, ptrdiff_t VAR5, VAR6 *VAR7,
+ptrdiff_t VAR8, int VAR9, int VAR10, int VAR11,
+VAR1 *VAR12);
+void FUN18(VAR1 *VAR4, ptrdiff_t VAR5, VAR6 *VAR7,
+ptrdiff_t VAR8, int VAR9, int VAR10, int VAR11,
+VAR1 *VAR12);
+void FUN19(VAR1 *VAR4, ptrdiff_t VAR5, VAR6 *VAR7,
+ptrdiff_t VAR8, int VAR9, int VAR10, int VAR11,
+VAR1 *VAR12);
+void FUN20(VAR1 *VAR4, ptrdiff_t VAR5, VAR6 *VAR7,
+ptrdiff_t VAR8, int VAR9, int VAR10, int VAR11,
+VAR1 *VAR12);
+
+av_cold void FUN21(VAR13 *VAR14, int VAR15)
+{
+int VAR16 = FUN22();
+
+if (FUN23(VAR16)) {
+if (VAR15 == 8) {
+VAR14->VAR17[0] = VAR18;
+VAR14->VAR17[1] = VAR19;
+VAR14->VAR17[2] = VAR20;
+VAR14->VAR17[3] = VAR21;
+
+VAR14->VAR22[0] = VAR23;
+VAR14->VAR22[1] = VAR24;
+VAR14->VAR22[2] = VAR25;
+VAR14->VAR22[3] = VAR26;
+
+VAR14->VAR27[0] = VAR28;
+VAR14->VAR27[1] = VAR29;
+VAR14->VAR27[2] = VAR30;
+VAR14->VAR27[3] = VAR31;
+
+VAR14->VAR32[0][0][0] = VAR33;
+VAR14->VAR32[0][0][1] = VAR34;
+VAR14->VAR32[0][0][2] = VAR35;
+VAR14->VAR32[0][0][3] = VAR36;
+VAR14->VAR32[0][0][4] = VAR37;
+VAR14->VAR32[0][0][5] = VAR38;
+VAR14->VAR32[0][0][6] = VAR39;
+VAR14->VAR32[0][0][7] = VAR40;
+}
+if (VAR15 == 10) {
+VAR14->VAR17[0] = VAR41;
+VAR14->VAR17[1] = VAR42;
+VAR14->VAR17[2] = VAR43;
+VAR14->VAR17[3] = VAR44;
+
+VAR14->VAR22[0] = VAR45;
+VAR14->VAR22[1] = VAR46;
+VAR14->VAR22[2] = VAR47;
+VAR14->VAR22[3] = VAR48;
+
+VAR14->VAR27[0] = VAR49;
+VAR14->VAR27[1] = VAR50;
+VAR14->VAR27[2] = VAR51;
+VAR14->VAR27[3] = VAR52;
+
+VAR14->VAR32[0][0][0] = VAR53;
+VAR14->VAR32[0][0][1] = VAR54;
+VAR14->VAR32[0][0][2] = VAR55;
+VAR14->VAR32[0][0][3] = VAR56;
+VAR14->VAR32[0][0][4] = VAR57;
+VAR14->VAR32[0][0][5] = VAR58;
+VAR14->VAR32[0][0][6] = VAR59;
+VAR14->VAR32[0][0][7] = VAR60;
+}
+}
+}

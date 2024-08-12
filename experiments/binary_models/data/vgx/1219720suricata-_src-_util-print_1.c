@@ -1,0 +1,1 @@
+void FUN1 ( char * VAR1 , uint32_t VAR2 , const VAR3 * VAR4 , uint32_t VAR5 ) { int VAR6 = 0 ; uint32_t VAR7 = 0 ; for ( VAR7 = 0 ; VAR7 < VAR5 ; VAR7 ++ ) { FUN2 ( VAR1 , & VAR6 , VAR2 , "" , VAR4 [ VAR7 ] ) ; } }

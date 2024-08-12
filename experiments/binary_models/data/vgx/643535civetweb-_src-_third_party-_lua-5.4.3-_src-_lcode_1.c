@@ -1,0 +1,1 @@
+static int FUN1 ( const VAR1 * VAR2 , VAR3 * VAR4 ) { switch ( VAR2 -> VAR5 ) { case VAR6 : if ( VAR4 ) { FUN2 ( VAR4 , VAR2 -> VAR7 . VAR8 ) ; } return 1 ; case VAR9 : if ( VAR4 ) { FUN3 ( VAR4 , VAR2 -> VAR7 . VAR10 ) ; } return 1 ; default : return 0 ; } }

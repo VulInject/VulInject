@@ -1,0 +1,130 @@
+FUN1 (void)
+{
+basic_block VAR1;
+tree VAR2, VAR3, VAR4, VAR5, VAR6;
+struct VAR7 *VAR7, *VAR8;
+bitmap VAR9 = NULL;
+unsigned VAR10;
+
+if (!VAR11)
+return 0;
+
+FUN2 (VAR1)
+{
+VAR7 = VAR1->VAR12;
+
+for (VAR3 = FUN3 (VAR1); VAR3; VAR3 = FUN4 (VAR3))
+{
+VAR2 = FUN5 (VAR3);
+
+if (!FUN6 (VAR2))
+continue;
+
+VAR5 = FUN7 (VAR2);
+
+if (!FUN8 (VAR5)
+&& !FUN9 (VAR5))
+continue;
+
+VAR6 = FUN10 (VAR7, FUN11 (VAR7, VAR2));
+if (!FUN12 (VAR6)
+|| !FUN13 (VAR2, VAR6))
+continue;
+
+
+if (VAR2 != VAR6)
+FUN14 (VAR2, VAR6);
+
+if (!VAR9)
+VAR9 = FUN15 (NULL);
+FUN16 (VAR9, FUN17 (VAR2));
+}
+}
+
+
+if (VAR9)
+{
+bitmap_iterator VAR13;
+unsigned VAR10;
+
+FUN18 (VAR9, 0, VAR10, VAR13)
+{
+VAR2 = FUN19 (VAR10);
+VAR3 = FUN20 (VAR2);
+
+FUN21 (FUN22 (VAR3) == VAR14);
+FUN23 (VAR3, NULL);
+}
+
+FUN24 (VAR9);
+FUN25 ();
+}
+
+
+for (VAR10 = VAR11->VAR15 - 1; VAR10 > 0; VAR10--)
+{
+edge VAR16;
+tree VAR17, VAR18, VAR19, VAR20;
+block_stmt_iterator VAR21;
+
+VAR7 = VAR11->VAR22[VAR10];
+if (!VAR7)
+continue;
+
+
+VAR16 = VAR7->VAR23;
+if (!VAR16)
+continue;
+
+VAR20 = FUN26 (VAR7);
+if (VAR20 == VAR24
+
+|| FUN27 (VAR20))
+continue;
+
+
+if (!FUN28 (VAR16->VAR25))
+FUN29 (VAR16);
+FUN30 (VAR16->VAR25);
+VAR21 = FUN31 (VAR16->VAR25);
+
+VAR8 = FUN32 (VAR7, VAR16->VAR25->VAR12->VAR26 + 1);
+
+for (VAR3 = FUN3 (VAR16->VAR25); VAR3; VAR3 = VAR4)
+{
+VAR4 = FUN4 (VAR3);
+VAR18 = FUN5 (VAR3);
+VAR17 = FUN33 (VAR3, VAR16);
+if (!FUN6 (VAR17))
+continue;
+
+if (!FUN8 (FUN7 (VAR17))
+&& !FUN9 (FUN7 (VAR17)))
+continue;
+
+VAR17 = FUN34 (VAR8, VAR7, VAR17, NULL);
+VAR17 = FUN35 (VAR8, VAR17);
+if (!FUN36 (VAR17)
+|| FUN37 (VAR17, VAR8->VAR15)
+
+|| FUN38 (VAR17))
+continue;
+
+
+VAR17 = FUN39 (VAR17);
+FUN40 (VAR3, VAR27);
+FUN23 (VAR3, VAR27);
+
+VAR19 = FUN41 (VAR28, VAR29, VAR18, VAR27);
+FUN20 (VAR18) = VAR19;
+{
+block_stmt_iterator VAR25 = VAR21;
+FUN42 (&VAR25, VAR19, VAR30);
+VAR17 = FUN43 (&VAR25, VAR17, false, VAR27);
+}
+FUN44 (VAR19, 1) = VAR17;
+FUN45 (VAR19);
+}
+}
+return 0;
+}

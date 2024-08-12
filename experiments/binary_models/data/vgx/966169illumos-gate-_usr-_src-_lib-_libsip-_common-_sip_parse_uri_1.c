@@ -1,0 +1,1 @@
+static int FUN1 ( char * , char * ) static int FUN2 ( int ) static int FUN2 ( int VAR1 ) { if ( VAR1 >= 0x41 && VAR1 <= 0x46 ) { return ( VAR1 - '' + 10 ) ; } if ( VAR1 >= 0x61 && VAR1 <= 0x66 ) { return ( VAR1 - '' + 10 ) ; } return ( VAR1 ) ; }

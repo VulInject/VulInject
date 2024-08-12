@@ -1,0 +1,1 @@
+unsigned int __stdcall FUN1 ( void * VAR1 ) { VAR2 * VAR3 = ( VAR2 * ) VAR1 ; HANDLE VAR4 = NULL ; VAR3 -> FUN2 ( VAR3 -> VAR5 , NULL ) ; while ( VAR6 ) { if ( FUN3 ( & VAR7 , 1 , 0 ) == 0 ) { if ( VAR8 ) { VAR4 = ( VAR9 ) FUN4 ( VAR10 ) ; } FUN3 ( & VAR7 , 0 , 1 ) ; break ; } } if ( VAR4 ) { FUN5 ( VAR4 ) ; } return 0 ; }

@@ -1,0 +1,1 @@
+static void FUN1(VAR1 *VAR2, const void *VAR3) { return FUN2(VAR2, false); }

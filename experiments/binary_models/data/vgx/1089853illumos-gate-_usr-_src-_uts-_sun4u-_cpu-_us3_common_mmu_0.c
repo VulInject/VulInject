@@ -1,0 +1,88 @@
+int
+FUN1(int VAR1)
+{
+int VAR2 = VAR1;
+
+if (!VAR3) {
+if (VAR2 == VAR4) {
+VAR5 = VAR6;
+VAR7 = VAR8;
+VAR9 = VAR10;
+VAR11 = (1 << VAR12) |
+(1 << VAR13) | (1 << VAR14) | (1 << VAR15) |
+(1 << VAR16) | (1 << VAR17);
+VAR18 = 1;
+VAR19 = 1;
+} else if (VAR2 > 0) {
+VAR18 = 1;
+}
+VAR3 = 1;
+return (0);
+}
+return (1);
+}
+
+
+
+static uint64_t VAR20[VAR6] = {
+VAR21, VAR21,
+VAR21, VAR21,
+VAR22, VAR23 };
+
+
+static void
+FUN2(struct VAR24 *VAR24, VAR25 *VAR26, VAR27 *VAR28)
+{
+uint_t VAR29 = VAR28[0];
+uint_t VAR30 = VAR28[1];
+uint_t VAR31;
+
+
+FUN3(VAR24->VAR32 == 0);
+FUN3(VAR24 != VAR33);
+FUN3(VAR34 == 1);
+
+FUN3(!FUN4(VAR24, VAR35) ||
+!FUN4(VAR24, VAR36));
+FUN3(!FUN4(VAR24, VAR36) ||
+!FUN4(VAR24, VAR35));
+FUN3(!FUN5(VAR24, VAR37) ||
+!FUN5(VAR24, VAR38));
+FUN3(!FUN5(VAR24, VAR38) ||
+!FUN5(VAR24, VAR37));
+
+if (FUN4(VAR24, VAR35) ||
+(VAR26[VAR16] != 0) ||
+FUN5(VAR24, VAR37)) {
+
+VAR31 = VAR30;
+VAR30 = VAR16;
+if (VAR29 == VAR16)
+VAR29 = VAR31;
+
+} else if (FUN4(VAR24, VAR36) ||
+(VAR26[VAR17] != 0) ||
+FUN5(VAR24, VAR38)) {
+
+VAR31 = VAR30;
+VAR30 = VAR17;
+if (VAR29 == VAR17)
+VAR29 = VAR31;
+
+} else if ((VAR30 == VAR14) || (VAR30 == VAR15)) {
+if ((VAR29 != VAR14) && (VAR29 != VAR15)) {
+VAR31 = VAR29;
+VAR29 = VAR30;
+VAR30 = VAR31;
+} else {
+VAR30 = FUN6(VAR39);
+}
+}
+
+if (VAR26[VAR29] < VAR20[VAR29])
+VAR29 = FUN6(VAR39);
+if (VAR26[VAR30] < VAR20[VAR30])
+VAR30 = FUN6(VAR39);
+VAR28[0] = VAR29;
+VAR28[1] = VAR30;
+}

@@ -1,0 +1,30 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4, const VAR5 *VAR6, int VAR7)
+{
+    struct VAR8 *VAR9 = VAR2->VAR10;
+    VAR11 *VAR12 = &VAR9->VAR12;
+    VAR13 *VAR14 = &VAR12->VAR15;
+    GetBitContext VAR16, *VAR17 = &VAR16;
+    int VAR18;
+    VAR14->VAR4 = VAR4;
+    VAR14->VAR19 = &VAR14->VAR20;
+    if (VAR4->VAR21 && VAR9->VAR22)
+    {
+        FUN2(VAR17, VAR4->VAR23, VAR4->VAR21 * 8);
+        VAR18 = FUN3(VAR12, VAR17);
+    }
+    FUN2(VAR17, VAR6, 8 * VAR7);
+    VAR18 = FUN3(VAR12, VAR17);
+    if (VAR14->VAR24 && (!VAR4->VAR24 || !VAR4->VAR25 || !VAR4->VAR26 || !VAR4->VAR27))
+    {
+        VAR18 = FUN4(VAR4, VAR14->VAR24, VAR14->VAR25);
+        return VAR18;
+    }
+    if ((VAR2->VAR28 & VAR29) && VAR14->VAR4->VAR30.VAR31 > 0 && VAR18 >= 0)
+    {
+        FUN5(VAR2->VAR32 == VAR33);
+        FUN5(VAR2->VAR34 == VAR33);
+        VAR2->VAR32 = FUN6(VAR14->VAR35, (VAR36){1, VAR14->VAR4->VAR30.VAR31}, (VAR36){1, 1200000});
+    }
+    VAR2->VAR37 = VAR14->VAR37;
+    VAR9->VAR22 = 0;
+    return VAR18;

@@ -1,0 +1,1 @@
+FUN1 ( ) { free ( VAR1 -> VAR2 ) ; VAR1 -> VAR2 = NULL ; }

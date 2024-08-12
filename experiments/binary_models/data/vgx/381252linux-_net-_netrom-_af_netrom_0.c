@@ -1,0 +1,150 @@
+int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6;
+struct VAR5 *VAR7;
+struct VAR8 *VAR9;
+VAR10 *VAR11, *VAR12, *VAR13;
+unsigned short VAR14, VAR15;
+unsigned short VAR16, VAR17;
+unsigned short VAR18, VAR19, VAR20, VAR21;
+int VAR22;
+
+FUN2(VAR2);
+
+
+
+VAR11  = (VAR10 *)(VAR2->VAR23 + 0);
+VAR12 = (VAR10 *)(VAR2->VAR23 + 7);
+
+VAR14      = VAR2->VAR23[15];
+VAR15         = VAR2->VAR23[16];
+VAR16 = VAR2->VAR23[17];
+VAR17    = VAR2->VAR23[18];
+VAR18          = VAR2->VAR23[19] & 0x0F;
+VAR19              = VAR2->VAR23[19] & 0xF0;
+
+
+if (VAR18 == VAR24 &&
+VAR14 == VAR25 && VAR15 == VAR25) {
+FUN3(VAR2, VAR26 + VAR27);
+FUN4(VAR2);
+
+return FUN5(VAR2, VAR4);
+}
+
+
+
+VAR6 = NULL;
+
+if (VAR14 == 0 && VAR15 == 0) {
+if (VAR18 == VAR28 && VAR19 == VAR29)
+VAR6 = FUN6(VAR16, VAR17, VAR11);
+} else {
+if (VAR18 == VAR30)
+VAR6 = FUN6(VAR14, VAR15, VAR11);
+else
+VAR6 = FUN7(VAR14, VAR15);
+}
+
+if (VAR6 != NULL) {
+FUN8(VAR6);
+FUN4(VAR2);
+
+if (VAR18 == VAR28 && VAR2->VAR31 == 22)
+FUN9(VAR6)->VAR32 = 1;
+else
+FUN9(VAR6)->VAR32 = 0;
+
+VAR22 = FUN10(VAR6, VAR2);
+FUN11(VAR6);
+FUN12(VAR6);
+return VAR22;
+}
+
+
+if (VAR18 != VAR30) {
+
+if (VAR33 &&
+(VAR18 != VAR34 || VAR19 != 0))
+FUN13(VAR2, 1);
+
+return 0;
+}
+
+VAR6 = FUN14(VAR12);
+
+VAR13 = (VAR10 *)(VAR2->VAR23 + 21);
+
+if (VAR6 == NULL || FUN15(VAR6) ||
+(VAR7 = FUN16(VAR6)) == NULL) {
+FUN17(VAR2, 0);
+if (VAR6)
+FUN12(VAR6);
+return 0;
+}
+
+FUN8(VAR6);
+
+VAR20 = VAR2->VAR23[20];
+
+FUN18(VAR7);
+VAR2->VAR6             = VAR7;
+VAR2->VAR35     = VAR36;
+VAR7->VAR37	    = VAR38;
+
+
+VAR9 = FUN9(VAR7);
+VAR9->VAR39 = *VAR12;
+VAR9->VAR40   = *VAR11;
+VAR9->VAR41   = *VAR13;
+
+VAR9->VAR42  = VAR14;
+VAR9->VAR43     = VAR15;
+
+FUN11(VAR6);
+VAR44 = FUN19();
+FUN8(VAR6);
+
+VAR9->VAR45    = VAR44 / 256;
+VAR9->VAR46       = VAR44 % 256;
+
+VAR44++;
+
+
+if (VAR20 < VAR9->VAR20)
+VAR9->VAR20 = VAR20;
+
+
+if (VAR2->VAR31 == 37) {
+VAR21 = VAR2->VAR23[36] * 256 + VAR2->VAR23[35];
+if (VAR21 * VAR47 < VAR9->VAR48)
+VAR9->VAR48 = VAR21 * VAR47;
+VAR9->VAR32 = 1;
+} else {
+VAR9->VAR32 = 0;
+}
+
+FUN20(VAR7, VAR28);
+
+VAR9->VAR49 = 0x00;
+VAR9->VAR50        = 0;
+VAR9->VAR51        = 0;
+VAR9->VAR52        = 0;
+VAR9->VAR53        = 0;
+VAR9->VAR54     = VAR55;
+FUN21(VAR6);
+FUN22(&VAR6->VAR56, VAR2);
+
+if (!FUN23(VAR6, VAR57))
+VAR6->FUN24(VAR6);
+
+FUN11(VAR6);
+FUN12(VAR6);
+
+FUN25(VAR7);
+
+FUN26(VAR7);
+FUN27(VAR7);
+
+return 1;
+}

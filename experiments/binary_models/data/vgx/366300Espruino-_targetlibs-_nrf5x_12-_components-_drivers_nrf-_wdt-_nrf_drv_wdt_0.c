@@ -1,0 +1,22 @@
+VAR1 FUN1(VAR2 * VAR3)
+{
+ret_code_t VAR4;
+FUN2(VAR3);
+FUN2(VAR5 == VAR6);
+
+FUN3();
+if (VAR7 < VAR8)
+{
+*VAR3 = (VAR2)(VAR9 + VAR7);
+VAR7++;
+FUN4(*VAR3);
+VAR4 = VAR10;
+}
+else
+{
+VAR4 = VAR11;
+}
+FUN5();
+FUN6("", (VAR12)VAR13, (VAR12)FUN7(VAR4));
+return VAR4;
+}

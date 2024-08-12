@@ -1,0 +1,69 @@
+int FUN1(struct VAR1 *VAR1, udf_pblk_t VAR2,
+struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = VAR1->VAR7;
+struct VAR8 *VAR9;
+struct VAR10 *VAR11;
+struct extent_position VAR12;
+struct kernel_lb_addr VAR13;
+int VAR14, VAR15;
+
+if (FUN2(VAR1)->VAR16 == VAR17)
+VAR15 = sizeof(struct VAR18);
+else if (FUN2(VAR1)->VAR16 == VAR19)
+VAR15 = sizeof(struct VAR20);
+else
+return -VAR21;
+
+VAR13.VAR22 = VAR2;
+VAR13.VAR23 = VAR4->VAR2.VAR23;
+
+VAR9 = FUN3(VAR6, FUN4(VAR6, &VAR13, 0));
+if (!VAR9)
+return -VAR21;
+FUN5(VAR9);
+memset(VAR9->VAR24, 0x00, VAR6->VAR25);
+FUN6(VAR9);
+FUN7(VAR9);
+FUN8(VAR9, VAR1);
+
+VAR11 = (struct VAR10 *)(VAR9->VAR24);
+if (!FUN9(VAR6, VAR26)) {
+VAR11->VAR27 =
+FUN10(VAR4->VAR2.VAR22);
+}
+VAR11->VAR28 = FUN10(0);
+if (FUN11(VAR6)->VAR29 >= 0x0200)
+VAR14 = 3;
+else
+VAR14 = 2;
+FUN12(VAR9->VAR24, VAR30, VAR14, 1, VAR2,
+sizeof(struct VAR31));
+
+VAR12.VAR2 = VAR13;
+VAR12.VAR32 = sizeof(struct VAR10);
+VAR12.VAR9 = VAR9;
+
+
+if (VAR4->VAR32 + VAR15 > VAR6->VAR25) {
+struct kernel_lb_addr VAR33;
+uint32_t VAR34;
+int VAR35;
+
+VAR4->VAR32 -= VAR15;
+VAR35 = FUN13(VAR1, VAR4, &VAR33, &VAR34, 0);
+VAR34 |= ((VAR36)VAR35) << 30;
+
+FUN14(VAR1, &VAR12, &VAR33, VAR34, 1);
+FUN15(VAR1, VAR4, &VAR12.VAR2,
+VAR6->VAR25 | VAR37, 0);
+} else {
+FUN14(VAR1, VAR4, &VAR12.VAR2,
+VAR6->VAR25 | VAR37, 0);
+}
+
+FUN16(VAR4->VAR9);
+*VAR4 = VAR12;
+
+return 0;
+}

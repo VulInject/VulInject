@@ -1,0 +1,24 @@
+static int FUN1(void *VAR1, struct VAR2 *VAR3, u32 VAR4,
+struct VAR5 *VAR6)
+{
+struct VAR7 *VAR8 = VAR1;
+struct VAR9 *VAR10;
+int VAR11;
+
+if (VAR4 >= FUN2(VAR8->VAR12))
+return -VAR13;
+
+VAR10 = FUN3(VAR3);
+VAR10->VAR14 = VAR4;
+VAR10->VAR8 = VAR8;
+VAR10->VAR3 = VAR3;
+FUN4(&VAR10->VAR15, 0);
+VAR8->VAR12[VAR4] = VAR10;
+
+VAR11 = FUN5(VAR3);
+if (VAR11)
+return VAR11;
+
+FUN6(VAR3);
+return 0;
+}

@@ -1,0 +1,1 @@
+char * FUN1 ( intmax_t VAR1 , int VAR2 , int VAR3 ) { char * VAR4 ; int VAR5 ; if ( ! VAR3 ) { if ( ! VAR1 ) { return "" ; } if ( VAR2 == 10 ) { return FUN2 ( VAR1 , 1 ) ; } } VAR4 = FUN3 ( VAR5 = 72 ) ; FUN4 ( VAR4 , VAR5 , VAR3 ?"" : "" , VAR2 , sizeof ( VAR1 ) , VAR1 ) ; return VAR4 ; }

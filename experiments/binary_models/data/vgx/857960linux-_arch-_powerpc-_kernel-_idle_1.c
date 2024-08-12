@@ -1,0 +1,1 @@
+unsigned long VAR1 = VAR2 ; FUN1 ( VAR1 ) ; static int __init FUN2 ( char * VAR3 ) { VAR1 = VAR4 ; return 1 ; }

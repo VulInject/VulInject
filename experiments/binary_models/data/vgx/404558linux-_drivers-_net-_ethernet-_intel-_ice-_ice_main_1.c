@@ -1,0 +1,1 @@
+static u16 FUN1 ( struct VAR1 * VAR2 ) { u16 VAR3 , VAR4 ; VAR3 = VAR2 -> VAR5 ; VAR4 = VAR2 -> VAR6 ; return 0 ; }

@@ -1,0 +1,21 @@
+void
+FUN1(void)
+{
+VAR1 = FUN2("", VAR2);
+VAR3 = FUN2("", VAR2);
+VAR4 = FUN2("", VAR2);
+VAR5 = FUN2("", VAR2);
+VAR6 = FUN2("", VAR2);
+
+FUN3(VAR7,
+VAR8,
+&VAR9);
+FUN3(VAR10,
+VAR8,
+&VAR9);
+FUN3(VAR11,
+VAR8,
+&VAR9);
+
+FUN4("", "", VAR12);
+}

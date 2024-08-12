@@ -1,0 +1,1 @@
+static inline long FUN1 ( void ) { char VAR1 [ 256 ] ; long VAR2 ; VAR2 = FUN2 ( VAR3 , VAR1 , 255 ) ; return FUN3 ( VAR1 , VAR2 & 255 ) ; }

@@ -1,0 +1,1 @@
+int FUN1 ( int VAR1 , int VAR2 , int VAR3 , struct VAR4 * VAR4 , void * VAR5 ) { const struct VAR6 * VAR7 = VAR4 -> VAR7 ; int VAR8 = 0 ; if ( VAR2 ) { VAR8 = FUN2 ( VAR7 -> VAR9 , VAR1 , VAR10 , VAR11 , VAR12 , VAR7 -> VAR13 , VAR5 ) ; } if ( VAR3 ) { VAR8 = FUN2 ( VAR7 -> VAR14 , VAR1 , VAR15 , VAR16 , VAR12 , VAR7 -> VAR17 , VAR5 ) ; } return VAR8 ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR1 ) { u32 VAR2 = FUN2 ( VAR3 ) ; return 0 ; } static const struct esp_driver_ops VAR4 = { . VAR5 = VAR6 . VAR7 = VAR8 . VAR9 = VAR10 . VAR11 = VAR12 . VAR13 = VAR14 . VAR15 = VAR16 . VAR17 = VAR18 . VAR19 = VAR20 } ;

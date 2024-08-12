@@ -1,0 +1,35 @@
+void 
+FUN1( 
+IN VAR1 *VAR2 )
+{
+VAR3		*VAR4;
+
+FUN2("");
+
+VAR2->VAR5 = VAR6;
+
+
+
+
+
+while( FUN3(&VAR2->VAR7) )
+{
+FUN4( &VAR2->VAR8 );
+
+
+FUN5( &VAR2->VAR9, VAR10 );
+}
+
+
+
+while( NULL != (VAR4 = (VAR3*)FUN6( &VAR2->VAR11 )) )
+{
+FUN7( VAR4 );
+FUN8( VAR4 );
+}
+
+FUN9( &VAR2->VAR9 );
+FUN9( &VAR2->VAR8 );
+FUN10( &VAR2->VAR11 );
+VAR2->VAR12 = VAR13;
+}

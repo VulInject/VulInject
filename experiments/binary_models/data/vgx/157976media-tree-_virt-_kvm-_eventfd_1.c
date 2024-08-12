@@ -1,0 +1,1 @@
+void FUN1 ( void ) { FUN2 ( VAR1 ) ; } VAR2 { struct list_head VAR3 ; u64 VAR4 ; int VAR5 ; struct VAR6 * VAR7 ; u64 VAR8 ; struct kvm_io_device VAR9 ; int VAR10 ; bool VAR11 ; }

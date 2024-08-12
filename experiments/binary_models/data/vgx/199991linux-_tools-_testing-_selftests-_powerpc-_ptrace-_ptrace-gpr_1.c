@@ -1,0 +1,1 @@
+static uint64_t FUN1 ( void ) { uint64_t VAR1 ; long VAR2 ; VAR2 = random ( ) ; VAR1 = VAR2 & 0xffff ; VAR1 |= random ( ) << ( VAR3 - 31 ) ; if ( VAR2 & 0x100000 ) { return VAR1 ; } VAR1 ^= random ( ) << 16 ; return VAR1 ; }

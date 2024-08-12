@@ -1,0 +1,1 @@
+static inline struct VAR1 * FUN1 ( struct VAR2 * * VAR3 , unsigned long VAR4 , unsigned long VAR5 , unsigned int * VAR6 ) { struct VAR1 * VAR1 = FUN2 ( VAR3 [ VAR5 ] ) ; int VAR7 ; for ( VAR7 = VAR5 + 1 ; VAR7 < VAR4 ; VAR7 ++ ) { if ( FUN2 ( VAR3 [ VAR7 ] ) != VAR1 ) { break ; } } * VAR6 = VAR7 - VAR5 ; return VAR1 ; }

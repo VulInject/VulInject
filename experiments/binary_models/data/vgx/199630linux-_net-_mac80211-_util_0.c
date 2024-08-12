@@ -1,0 +1,222 @@
+static int FUN1(struct VAR1 *VAR2,
+VAR3 *VAR4, size_t VAR5,
+const VAR3 *VAR6, size_t VAR7,
+enum nl80211_band VAR8,
+u32 VAR9,
+struct VAR10 *VAR11,
+VAR12 *VAR13, u32 VAR14)
+{
+struct VAR15 *VAR16 = VAR2->VAR16;
+struct VAR17 *VAR18;
+const struct VAR19 *VAR20;
+const struct VAR21 *VAR22;
+VAR3 *VAR23 = VAR4, *VAR24 = VAR4 + VAR5;
+size_t VAR25;
+int VAR26, VAR27;
+u8 VAR28[32];
+int VAR29;
+int VAR30;
+int VAR31;
+u32 VAR32;
+bool VAR33 = false;
+
+*VAR13 = 0;
+
+VAR18 = VAR16->VAR34.VAR35->VAR36[VAR8];
+if (FUN2(!VAR18))
+return 0;
+
+VAR32 = FUN3(VAR11);
+VAR31 = FUN4(VAR11);
+
+VAR29 = 0;
+for (VAR27 = 0; VAR27 < VAR18->VAR37; VAR27++) {
+if ((FUN5(VAR27) & VAR9) == 0)
+continue; 
+if ((VAR32 & VAR18->VAR38[VAR27].VAR14) != VAR32)
+continue;
+
+VAR28[VAR29++] =
+(VAR3) FUN6(VAR18->VAR38[VAR27].VAR39,
+(1 << VAR31) * 5);
+}
+
+VAR26 = FUN7(int, VAR29, 8);
+
+if (VAR24 - VAR23 < 2 + VAR26)
+goto VAR40;
+*VAR23++ = VAR41;
+*VAR23++ = VAR26;
+memcpy(VAR23, VAR28, VAR26);
+VAR23 += VAR26;
+
+
+if (VAR6 && VAR7) {
+static const u8 VAR42[] = {
+VAR43,
+VAR41,
+VAR44,
+};
+VAR25 = FUN8(VAR6, VAR7,
+VAR42,
+FUN9(VAR42),
+*VAR13);
+if (VAR24 - VAR23 < VAR25 - *VAR13)
+goto VAR40;
+memcpy(VAR23, VAR6 + *VAR13, VAR25 - *VAR13);
+VAR23 += VAR25 - *VAR13;
+*VAR13 = VAR25;
+}
+
+VAR30 = VAR29 - VAR26;
+if (VAR30 > 0) {
+if (VAR24 - VAR23 < 2 + VAR30)
+goto VAR40;
+*VAR23++ = VAR45;
+*VAR23++ = VAR30;
+memcpy(VAR23, VAR28 + VAR26, VAR30);
+VAR23 += VAR30;
+}
+
+if (VAR11->VAR46 && VAR18->VAR8 == VAR47) {
+if (VAR24 - VAR23 < 3)
+goto VAR40;
+*VAR23++ = VAR48;
+*VAR23++ = 1;
+*VAR23++ = FUN10(
+VAR11->VAR46->VAR49);
+}
+
+if (VAR14 & VAR50)
+goto VAR51;
+
+
+if (VAR6 && VAR7) {
+static const u8 VAR52[] = {
+
+VAR48,
+VAR53,
+};
+VAR25 = FUN8(VAR6, VAR7,
+VAR52, FUN9(VAR52),
+*VAR13);
+if (VAR24 - VAR23 < VAR25 - *VAR13)
+goto VAR40;
+memcpy(VAR23, VAR6 + *VAR13, VAR25 - *VAR13);
+VAR23 += VAR25 - *VAR13;
+*VAR13 = VAR25;
+}
+
+if (VAR18->VAR54.VAR55) {
+if (VAR24 - VAR23 < 2 + sizeof(struct VAR56))
+goto VAR40;
+VAR23 = FUN11(VAR23, &VAR18->VAR54,
+VAR18->VAR54.VAR57);
+}
+
+
+if (VAR6 && VAR7) {
+static const u8 VAR58[] = {
+
+VAR59,
+VAR60,
+VAR61,
+VAR62,
+VAR63,
+VAR64,
+
+};
+VAR25 = FUN8(VAR6, VAR7,
+VAR58, FUN9(VAR58),
+*VAR13);
+if (VAR24 - VAR23 < VAR25 - *VAR13)
+goto VAR40;
+memcpy(VAR23, VAR6 + *VAR13, VAR25 - *VAR13);
+VAR23 += VAR25 - *VAR13;
+*VAR13 = VAR25;
+}
+
+
+for (VAR27 = 0; VAR27 < VAR18->VAR65; VAR27++) {
+if (VAR18->VAR66[VAR27].VAR14 & (VAR67 |
+VAR68))
+continue;
+
+VAR33 = true;
+break;
+}
+
+if (VAR18->VAR69.VAR70 && VAR33) {
+if (VAR24 - VAR23 < 2 + sizeof(struct VAR71))
+goto VAR40;
+VAR23 = FUN12(VAR23, &VAR18->VAR69,
+VAR18->VAR69.VAR57);
+}
+
+
+if (VAR6 && VAR7) {
+static const u8 VAR72[] = {
+
+VAR73, VAR74,
+VAR75,
+
+};
+VAR25 = FUN8(VAR6, VAR7,
+VAR72, FUN9(VAR72),
+*VAR13);
+if (VAR24 - VAR23 < VAR25 - *VAR13)
+goto VAR40;
+memcpy(VAR23, VAR6 + *VAR13, VAR25 - *VAR13);
+VAR23 += VAR25 - *VAR13;
+*VAR13 = VAR25;
+}
+
+VAR20 = FUN13(VAR18,
+FUN14(&VAR2->VAR76));
+if (VAR20 &&
+FUN15(VAR16->VAR34.VAR35, FUN5(VAR18->VAR8),
+VAR77)) {
+VAR23 = FUN16(0, VAR23, VAR20, VAR24);
+if (!VAR23)
+goto VAR40;
+}
+
+VAR22 = FUN17(VAR18,
+FUN14(&VAR2->VAR76));
+
+if (VAR22 &&
+FUN15(VAR16->VAR34.VAR35, FUN5(VAR18->VAR8),
+VAR77 |
+VAR78)) {
+VAR23 = FUN18(VAR23, VAR20, VAR22, VAR24,
+VAR2->VAR76.VAR79 == VAR80);
+if (!VAR23)
+goto VAR40;
+}
+
+if (FUN15(VAR16->VAR34.VAR35,
+FUN5(VAR81),
+VAR77)) {
+struct VAR17 *VAR82;
+
+VAR82 = VAR16->VAR34.VAR35->VAR36[VAR81];
+VAR20 = FUN13(VAR82,
+FUN14(&VAR2->VAR76));
+
+if (VAR20) {
+enum nl80211_iftype VAR83 =
+FUN14(&VAR2->VAR76);
+__le16 VAR57 = FUN19(VAR82, VAR83);
+
+VAR23 = FUN20(VAR23, VAR57, VAR24);
+}
+}
+
+
+
+return VAR23 - VAR4;
+VAR40:
+FUN21(1, "");
+VAR51:
+return VAR23 - VAR4;
+}

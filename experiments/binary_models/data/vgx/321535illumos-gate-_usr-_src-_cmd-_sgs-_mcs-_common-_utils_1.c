@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 ) { VAR3 * VAR4 ; VAR2 -> VAR5 = VAR4 = malloc ( sizeof ( VAR3 ) ) ; if ( VAR4 == NULL ) { FUN2 ( VAR6 , VAR7 , NULL , VAR8 ) ; FUN3 ( VAR9 ) ; } * VAR4 = * VAR2 -> VAR4 ; if ( VAR4 -> VAR10 == NULL ) { FUN2 ( VAR6 , VAR7 , NULL , VAR8 ) ; FUN3 ( VAR9 ) ; } }

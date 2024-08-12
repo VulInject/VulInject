@@ -1,0 +1,1 @@
+extern int FUN1 ( void ) { int VAR1 = VAR2 ; FUN2 ( FUN3 ( ) ) ; if ( ! VAR3 || VAR3 -> VAR4 == VAR5 ) { return VAR1 ; } FUN4 ( VAR3 , NULL ) ; return VAR1 ; }

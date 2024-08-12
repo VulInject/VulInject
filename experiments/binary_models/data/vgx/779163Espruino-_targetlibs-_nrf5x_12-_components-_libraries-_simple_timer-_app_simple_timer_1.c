@@ -1,0 +1,1 @@
+static void FUN1 ( nrf_timer_event_t VAR1 , void * VAR2 ) { switch ( VAR1 ) { case VAR3 : if ( VAR4 == VAR5 ) { VAR6 = VAR7 ; } FUN2 ( VAR8 , NULL ) ; break ; default : break ; } }

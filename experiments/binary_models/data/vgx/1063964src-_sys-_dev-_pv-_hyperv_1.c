@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , void * VAR3 , uint32_t VAR4 ) { uint32_t VAR5 ; FUN2 ( VAR4 <= VAR2 -> VAR6 ) ; FUN3 ( VAR2 , & VAR5 ) ; if ( VAR5 < VAR4 ) { return ( VAR7 ) ; } FUN4 ( VAR2 , ( VAR8 * ) VAR3 , VAR4 , 1 ) ; return ( 0 ) ; }

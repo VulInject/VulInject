@@ -1,0 +1,1 @@
+char * FUN1 ( char * VAR1 ) { size_t VAR2 ; char * VAR3 ; VAR1 = FUN2 ( VAR1 , NULL ) ; VAR2 = strlen ( VAR1 ) ; if ( ! VAR2 ) { return VAR1 ; } VAR3 = VAR1 + VAR2 - 1 ; while ( VAR3 >= VAR1 && FUN3 ( * VAR3 ) ) { VAR3 -- ; } * ( VAR3 + 1 ) = '' ; return VAR1 ; }

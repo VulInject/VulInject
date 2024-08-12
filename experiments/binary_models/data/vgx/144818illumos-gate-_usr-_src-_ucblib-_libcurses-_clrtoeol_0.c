@@ -1,0 +1,28 @@
+int
+FUN1(VAR1 *VAR2)
+{
+char	*VAR3, *VAR4;
+int	VAR5, VAR6;
+char	*VAR7;
+ptrdiff_t	VAR8;
+
+VAR5 = VAR2->VAR9;
+VAR6 = VAR2->VAR10;
+VAR4 = &VAR2->VAR11[VAR5][VAR2->VAR12];
+VAR8 = VAR13;
+VAR7 = &VAR2->VAR11[VAR5][VAR6];
+for (VAR3 = VAR7; VAR3 < VAR4; VAR3++)
+if (*VAR3 != '') {
+VAR7 = VAR3;
+if (VAR8 == VAR13)
+VAR8 = VAR3 - VAR2->VAR11[VAR5];
+*VAR3 = '';
+}
+
+(void) FUN2(VAR2, VAR5, VAR2->VAR10, VAR2->VAR12 - 1);
+
+fprintf(VAR14, ""
+"", VAR8, VAR7 - VAR2->VAR11[VAR5], VAR2->VAR15[VAR5],
+VAR2->VAR16[VAR5]);
+return (VAR17);
+}

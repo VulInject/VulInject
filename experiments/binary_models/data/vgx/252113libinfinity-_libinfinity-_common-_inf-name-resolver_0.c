@@ -1,0 +1,76 @@
+static VAR1*
+FUN1(const VAR2* VAR3,
+const VAR2* VAR4,
+VAR5* VAR6,
+VAR7** VAR8)
+{
+struct addrinfo VAR9;
+struct VAR10* VAR11;
+int VAR12;
+
+VAR13* VAR14;
+InfNameResolverEntry VAR15;
+struct VAR10* VAR16;
+
+VAR9.VAR17 = VAR18;
+VAR9.VAR17 = 0;
+VAR9.VAR19 = VAR20;
+VAR9.VAR21 = VAR22;
+VAR9.VAR23 = 0;
+VAR9.VAR24 = 0;
+VAR9.VAR25 = NULL;
+VAR9.VAR26 = NULL;
+VAR9.VAR27 = NULL;
+
+VAR11 = NULL;
+VAR12 = getaddrinfo(VAR3, VAR4, &VAR9, &VAR11);
+
+if(VAR12 != 0)
+{
+FUN2(
+VAR8,
+FUN3(""),
+VAR12,
+FUN4(VAR12)
+);
+
+*VAR6 = 0;
+return NULL;
+}
+else
+{
+FUN5(VAR11 != NULL);
+VAR14 = FUN6(VAR28, VAR28, sizeof(VAR1));
+
+for(VAR16 = VAR11; VAR16 != NULL; VAR16 = VAR16->VAR27)
+{
+switch(VAR16->VAR19)
+{
+case VAR29:
+VAR15.VAR30 = FUN7(
+((struct VAR31*)VAR16->VAR26)->VAR32.VAR33
+);
+
+VAR15.VAR34 = FUN8( ((struct VAR31*)VAR16->VAR26)->VAR35);
+break;
+case VAR36:
+VAR15.VAR30 = FUN9(
+((struct VAR37*)VAR16->VAR26)->VAR38.VAR39
+);
+
+VAR15.VAR34 = FUN8( ((struct VAR37*)VAR16->VAR26)->VAR40);
+break;
+default:
+FUN10();
+break;
+}
+
+FUN11(VAR14, VAR15);
+}
+
+FUN12(VAR11);
+
+*VAR6 = VAR14->VAR41;
+return (VAR1*)FUN13(VAR14, VAR28);
+}
+}

@@ -1,0 +1,98 @@
+static void
+FUN1(int VAR1)
+{
+struct VAR2 *VAR3;
+struct VAR4 *VAR5;
+unsigned long VAR6;
+unsigned long VAR7;
+int VAR8;
+int VAR9 = 0;
+unsigned long VAR10 = 0;
+short VAR11;
+struct VAR12 *VAR13;
+struct VAR14 *VAR15;
+enum xp_retval VAR16;
+
+
+
+VAR3 = (struct VAR2 *)VAR17;
+
+VAR16 = FUN2(VAR1, NULL, VAR3, &VAR6);
+if (VAR16 != VAR18) {
+FUN3(VAR19, ""
+"", VAR1, VAR16);
+return;
+}
+
+VAR7 = VAR3->VAR20.VAR21.VAR22;
+VAR8 = VAR3->VAR23;
+VAR10 = VAR3->VAR24;
+
+VAR11 = VAR3->VAR25;
+VAR13 = &VAR26[VAR11];
+VAR15 = &VAR13->VAR20.VAR21;
+
+
+
+VAR5 = (struct VAR4 *)VAR17;
+
+VAR16 = FUN4(VAR7, VAR5);
+if (VAR16 != VAR18) {
+FUN3(VAR19, ""
+"", VAR1, VAR16);
+
+FUN5(VAR13, VAR16);
+return;
+}
+
+VAR13->VAR27++;
+
+FUN6(VAR19, ""
+"", (int)VAR1, (int)VAR11,
+VAR13->VAR27,
+VAR5->VAR28, VAR5->VAR29[0]);
+
+if (FUN7(VAR13) &&
+VAR13->VAR30 == VAR31) {
+
+FUN8(VAR13, VAR8,
+&VAR10,
+VAR6, VAR7,
+VAR5);
+
+if (FUN9(VAR11)) {
+
+return;
+}
+
+FUN10(VAR13);
+return;
+}
+
+FUN11(VAR13->VAR8 == 0);
+FUN11(VAR15->VAR32 == 0);
+
+if (VAR10 != VAR13->VAR10) {
+
+
+
+FUN11(FUN12(VAR11));
+FUN11(FUN9(VAR11));
+
+FUN8(VAR13, VAR8,
+&VAR10,
+VAR6, VAR7,
+VAR5);
+VAR9 = 1;
+}
+
+if (VAR13->VAR33 > 0 && !FUN7(VAR13)) {
+
+return;
+}
+
+if (VAR9)
+FUN5(VAR13, VAR34);
+else if (FUN9(VAR11))
+FUN5(VAR13, VAR35);
+}

@@ -1,0 +1,1 @@
+static int32_t FUN1 ( uint16_t VAR1 , uint16_t VAR2 ) { uint32_t VAR3 = 0 ; while ( VAR1 > 1 || VAR2 > 1 ) { VAR3 += VAR1 * VAR2 ; VAR1 = ( VAR1 + 1 ) >> 1 ; VAR2 = ( VAR2 + 1 ) >> 1 ; } return ( VAR4 ) ( VAR3 + 1 ) ; }

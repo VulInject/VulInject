@@ -1,0 +1,70 @@
+static void
+FUN1(VAR1 *VAR2)
+{
+char *VAR3[VAR4] = { VAR5 };
+int VAR6;
+
+switch (VAR2->VAR7) {
+case VAR8:
+VAR3[VAR9] = VAR10 ?
+"" : "";
+break;
+case VAR11:
+VAR3[VAR9] = VAR10 ?
+""
+""
+"" :
+""
+""
+"";
+break;
+case VAR12:
+VAR3[VAR9] = VAR10 ?
+"" : "";
+break;
+case VAR13:
+VAR3[VAR9] = VAR10 ?
+"" : "";
+break;
+case VAR14:
+VAR3[VAR9] = VAR10 ?
+""
+""
+"" :
+""
+""
+"";
+break;
+case VAR15:
+VAR3[VAR9] = VAR10 ?
+"" :
+"";
+break;
+case VAR16:
+VAR3[VAR9] = VAR10 ?
+"" :
+"";
+break;
+default:
+FUN2("", VAR2->VAR7);
+break;
+}
+if ((VAR6 = FUN3(VAR2->VAR17, VAR3)) != 0) {
+free(VAR2->VAR17);
+fprintf(VAR18, "", FUN4(VAR6));
+FUN5(1);
+}
+VAR2->VAR17->VAR19->VAR19[VAR20] = VAR21;
+VAR2->VAR17->VAR19->VAR19[VAR22] = VAR21;
+VAR2->VAR17->VAR19->VAR19[VAR23] = VAR21;
+VAR2->VAR17->VAR19->VAR19[VAR24] = VAR21;
+VAR2->VAR17->VAR19->VAR19[VAR25] = VAR21;
+VAR2->VAR17->VAR19->VAR19[VAR26] = VAR27;
+VAR2->VAR17->VAR19->VAR19[VAR28] = VAR27;
+VAR2->VAR17->VAR19->VAR19[VAR29] = VAR21;
+VAR2->VAR17->VAR19->VAR19[VAR30] = VAR21;
+VAR2->VAR17->VAR19->VAR19[VAR31] = VAR21;
+FUN6(VAR2->VAR17, VAR32);
+
+FUN7(VAR2->VAR17, VAR33, &VAR2->VAR34);
+}

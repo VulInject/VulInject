@@ -1,0 +1,14 @@
+void FUN1(struct VAR1 *VAR2, u8 VAR3)
+{
+
+struct VAR4 *VAR5 = FUN2(VAR2);
+int VAR6;
+int VAR7;
+
+VAR6 = VAR3 / 2 - 110;
+if (VAR6 <= VAR5->VAR8.VAR9)
+VAR7 = VAR10;
+else
+VAR7 = VAR11;
+FUN3(VAR5, VAR7, VAR6, VAR12);
+}

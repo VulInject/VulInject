@@ -1,0 +1,50 @@
+static void
+FUN1(VAR1 *VAR2)
+{
+VAR3 *VAR4;
+int VAR5, VAR6;
+VAR7	*VAR8 = (VAR7 *)VAR2->VAR9->VAR10;
+VAR11 *VAR12;
+
+if (VAR13.VAR14.VAR15) {
+for (VAR5 = 0; VAR5 < VAR8->VAR16; ++VAR5) {
+if (!VAR8->VAR17[VAR5])
+FUN2(VAR18,
+"", VAR5, VAR8->VAR19[VAR5], VAR8->VAR20[VAR5]);
+}
+}
+
+FUN3(VAR2, VAR4) {
+VAR12 = (VAR11*)VAR4->VAR21;
+VAR6 = 0;
+for (VAR5 = 0; VAR5 < VAR8->VAR16; ++VAR5) {
+
+if (!VAR12->VAR22[VAR5] && !VAR12->VAR23[VAR5]) {
+
+VAR12->VAR24 = 1;
+FUN2(VAR18,
+""VAR25"",
+VAR4->VAR26.VAR27, FUN4(VAR4), VAR5);
+break;
+}
+
+
+if (VAR8->VAR17[VAR5]) {
+if (VAR12->VAR22[VAR5] && VAR12->VAR23[VAR5]) continue;
+} else {
+if ((VAR12->VAR28[VAR5] == VAR8->VAR19[VAR5]) && VAR12->VAR22[VAR5]) continue;
+if ((VAR12->VAR28[VAR5] == VAR8->VAR20[VAR5]) && VAR12->VAR23[VAR5]) continue;
+if (VAR12->VAR22[VAR5] && VAR12->VAR23[VAR5]) continue;
+}
+
+VAR6++;
+if (VAR6 > 1) {
+VAR12->VAR24 = 1;
+FUN2(VAR18,
+""VAR25"",
+VAR4->VAR26.VAR27, FUN4(VAR4));
+break;
+}
+}
+}
+}

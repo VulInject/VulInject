@@ -1,0 +1,115 @@
+HAL_StatusTypeDef FUN1 (VAR1* VAR2, VAR3* VAR4, uint32_t VAR5)
+{ 
+HAL_StatusTypeDef VAR6 = VAR7;
+
+__IO uint32_t VAR8 = 0;
+uint32_t VAR9 = 0;
+uint32_t VAR10;
+
+
+uint32_t VAR11 = 0;
+
+
+FUN2(FUN3(VAR5));
+
+
+
+if((VAR2 == NULL) || (VAR2->VAR12 == VAR13))
+{
+VAR6 = VAR14;
+}
+else
+{
+
+FUN4(VAR2);
+
+
+VAR11 = (VAR2->VAR15->VAR16 & (VAR17 << VAR5));
+
+
+FUN5 ((VAR2->VAR15->VAR18), (VAR19 << VAR5));
+
+
+FUN6(VAR2->VAR15->VAR16, (VAR17 << VAR5), 0);
+
+
+VAR8 = (VAR20)VAR2->VAR15; 
+
+FUN7 (VAR21) || FUN7 (VAR22) || FUN7 (VAR23) || FUN7 (VAR24) || FUN7 (VAR25) || FUN7 (VAR26) || FUN7 (VAR27) || \
+FUN7 (VAR28) || FUN7 (VAR29) || FUN7 (VAR30) || FUN7 (VAR31) || FUN7 (VAR32) || FUN7(VAR33)
+if(VAR5 == VAR34)
+{
+VAR8 += FUN8(VAR35);
+}
+else
+{
+VAR8 += FUN9(VAR35);
+}
+
+
+VAR8 += FUN8(VAR35);
+*(__IO VAR20 *) VAR8 = 0x0800;
+
+
+
+FUN10 ((VAR2->VAR15->VAR18), (VAR36 << VAR5));
+
+
+
+VAR9 = 16; 
+VAR10 = 8;
+while (VAR10 != 0) 
+{
+
+FUN6(VAR2->VAR15->VAR37, (VAR38<<VAR5), (VAR9<<VAR5));
+
+
+
+FUN11(1);
+
+if ((VAR2->VAR15->VAR39 & (VAR40<<VAR5)) == (VAR40<<VAR5))
+{ 
+
+VAR9 -= VAR10;
+}
+else
+{
+
+VAR9 += VAR10;
+}                   
+VAR10 >>= 1;
+}
+
+
+
+
+FUN6(VAR2->VAR15->VAR37, (VAR38<<VAR5), (VAR9<<VAR5));
+
+
+
+FUN11(1);
+
+if ((VAR2->VAR15->VAR39 & (VAR40<<VAR5)) == VAR41)
+{ 
+
+VAR9++;
+
+FUN6(VAR2->VAR15->VAR37, (VAR38<<VAR5), (VAR9<<VAR5));
+}
+
+
+
+FUN5 ((VAR2->VAR15->VAR18), (VAR36 << VAR5));
+
+VAR4->VAR42 = VAR9;
+VAR4->VAR43 = VAR44;
+
+
+FUN6(VAR2->VAR15->VAR16, (VAR17 << VAR5), VAR11);
+
+
+FUN12(VAR2);
+}
+
+return VAR6;
+}

@@ -1,0 +1,15 @@
+void FUN1(void)
+{
+struct VAR1 *VAR2 = (struct VAR1 *)VAR3;
+struct VAR4 *VAR5 = (struct VAR4 *)VAR6;
+
+
+
+FUN2(&VAR5->VAR7, 0x20);
+FUN2(&VAR5->VAR8, 0x20);
+FUN3(VAR9, 0x20, &VAR5->VAR10, 5);
+
+FUN4(VAR11, &VAR2->VAR12);
+FUN5(VAR2);
+FUN4(VAR13, &VAR2->VAR12);
+}

@@ -1,0 +1,1 @@
+static void * FUN1 ( VAR1 * VAR2 , char * VAR3 ) { VAR4 * VAR5 = FUN2 ( VAR2 , sizeof ( * VAR5 ) ) ; return VAR5 ; } static const command_rec VAR6 [ ] { FUN3 ( "" , VAR7 , ( void * ) FUN4 ( VAR4 , VAR8 ) , VAR9 , "" ) { NULL } } ; ;

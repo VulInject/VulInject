@@ -1,0 +1,71 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = &VAR2->VAR4;
+struct VAR5 *VAR6 = VAR4->VAR7;
+struct VAR3 *VAR8;
+struct VAR9 *VAR10;
+struct VAR11 *VAR12;
+const char *VAR13;
+int VAR14;
+
+VAR8 = VAR4->VAR8;
+if (!VAR8) {
+FUN2(VAR4, "");
+return -VAR15;
+}
+VAR10 = FUN3(VAR8->VAR7);
+if (FUN4(VAR10)) {
+FUN2(VAR4, "");
+return FUN5(VAR10);
+}
+
+VAR12 = FUN6(VAR4, sizeof(*VAR12), VAR16);
+if (!VAR12)
+return -VAR17;
+
+VAR12->VAR10 = VAR10;
+
+if (FUN7(VAR6, "", &VAR12->VAR18))
+return -VAR19;
+if (FUN7(VAR6, "", &VAR12->VAR20))
+return -VAR19;
+VAR12->VAR21.VAR22 =
+FUN8(VAR6, "", NULL) ? : VAR6->VAR22;
+VAR12->VAR21.VAR23 =
+FUN8(VAR6, "", NULL);
+
+VAR13 = FUN8(VAR6, "", NULL);
+if (VAR13) {
+if (!strcmp(VAR13, "")) {
+u32 VAR24;
+
+VAR14 = FUN9(VAR10, VAR12->VAR18, &VAR24);
+if (VAR14 < 0)
+return VAR14;
+VAR12->VAR13 = !!(VAR24 & VAR12->VAR20);
+} else if (!strcmp(VAR13, "")) {
+VAR12->VAR13 = true;
+VAR14 = FUN10(VAR10, VAR12->VAR18,
+VAR12->VAR20,
+VAR12->VAR20);
+if (VAR14 < 0)
+return VAR14;
+} else {
+VAR12->VAR13 = false;
+VAR14 = FUN10(VAR10, VAR12->VAR18,
+VAR12->VAR20, 0);
+if (VAR14 < 0)
+return VAR14;
+}
+}
+VAR12->VAR21.VAR25 = VAR26;
+
+VAR14 = FUN11(VAR4, &VAR12->VAR21);
+if (VAR14 < 0)
+return VAR14;
+
+FUN12(VAR2, VAR12);
+FUN13(VAR4, "", VAR12->VAR21.VAR22);
+
+return 0;
+}

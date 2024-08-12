@@ -1,0 +1,54 @@
+static struct VAR1 *FUN1(struct VAR2 *VAR2, int VAR3,
+int VAR4)
+{
+struct VAR5 *VAR6 = VAR2->VAR7->VAR8;
+struct VAR1 *VAR9 = NULL;
+int VAR10;
+
+FUN2(&VAR6->VAR11);
+
+FUN3("", VAR3, VAR4);
+
+if (VAR6->VAR1 == NULL) {
+
+VAR6->VAR1 = FUN4(VAR12,
+sizeof(*(VAR6->VAR1)), VAR13);
+if (VAR6->VAR1 == NULL) {
+FUN5("");
+goto VAR14;
+}
+for (VAR10 = 0; VAR10 < VAR12; VAR10++) {
+VAR6->VAR1[VAR10].VAR15 = 0;
+VAR6->VAR1[VAR10].VAR16 = 0;
+}
+VAR6->VAR17 = 0;
+}
+
+for (VAR10 = VAR12; VAR10 &&
+VAR6->VAR1[VAR6->VAR17].VAR16; VAR10--)
+VAR6->VAR17 = (VAR6->VAR17 + 1) %
+VAR12;
+
+if (VAR10 == 0) {
+FUN3("");
+goto VAR14;
+}
+
+FUN3("",
+VAR6->VAR17,
+&VAR6->VAR1[VAR6->VAR17]);
+
+VAR9 = &VAR6->VAR1[VAR6->VAR17];
+VAR6->VAR17 = (VAR6->VAR17 + 1) %
+VAR12;
+
+VAR9->VAR15 = VAR2->VAR18;
+VAR9->VAR3 = VAR3;
+VAR9->VAR4 = VAR4;
+VAR9->VAR19 = 0;
+VAR9->VAR16 = 1;
+
+VAR14:
+FUN6(&VAR6->VAR11);
+return VAR9;
+}

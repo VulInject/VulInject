@@ -1,0 +1,1 @@
+void * FUN1 ( unsigned long VAR1 , unsigned long VAR2 ) { unsigned long VAR3 ; void * VAR4 ; if ( VAR1 > ( VAR5 / VAR2 ) ) { return VAR6 ; } VAR3 = VAR1 * VAR2 ; VAR4 = FUN2 ( VAR3 ) ; return VAR4 ; }

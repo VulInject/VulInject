@@ -1,0 +1,1 @@
+enum pci_barno FUN1 ( const struct VAR1 * VAR2 , enum pci_barno VAR3 ) { cfs_time_t VAR4 ; if ( ! VAR2 ) { return VAR5 ; } if ( ( VAR2 -> VAR6 << 1 ) & 1 << VAR3 ) { VAR3 ++ ; } VAR4 = VAR2 -> VAR7 & VAR2 -> VAR6 ; VAR4 <<= 1 ; VAR4 |= VAR2 -> VAR7 ; VAR4 = FUN2 ( & VAR4 , 6 , VAR3 ) ; if ( VAR4 > 5 ) { return VAR8 ; } return VAR4 ; }

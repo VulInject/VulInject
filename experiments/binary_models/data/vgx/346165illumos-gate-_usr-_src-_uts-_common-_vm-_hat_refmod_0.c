@@ -1,0 +1,49 @@
+void
+FUN1(struct VAR1 *VAR1, caddr_t VAR2, size_t VAR3, uint_t VAR4)
+{
+struct VAR5	*VAR6;
+uint_t		VAR7, VAR8, VAR9;
+int		VAR10;
+
+FUN2(VAR3 == VAR11);
+FUN2((VAR4 & ~(VAR12|VAR13)) == 0);
+
+if (VAR4 == 0)
+return;
+
+FUN3(&VAR14);
+
+
+VAR7 = 0;
+VAR10 = FUN4(VAR1, VAR2);
+for (VAR6 = VAR15[VAR10]; VAR6; VAR6 = VAR6->VAR16) {
+if (FUN5(VAR6, VAR1, VAR2)) {
+FUN6(VAR6, VAR2, VAR4);
+VAR7 |= VAR6->VAR17;
+}
+}
+
+
+if (VAR7 != VAR1->VAR18) {
+VAR8 = (VAR7 ^ VAR1->VAR18) & VAR1->VAR18;
+VAR9 = 0;
+while (VAR8) {
+if (FUN7(VAR8))
+VAR9 = 1 << (FUN7(VAR8)-1);
+VAR6 = (struct VAR5 *)FUN8();
+if (VAR6 == NULL) {
+VAR19 = 1;
+VAR20++;
+FUN9(&VAR14);
+return;
+}
+VAR6->VAR21 = VAR1;
+VAR6->VAR22 = (VAR23)VAR2 & VAR24;
+VAR6->VAR17 = VAR9;
+FUN10(VAR6);
+FUN6(VAR6, VAR2, VAR4);
+VAR8 &= ~VAR9;
+}
+}
+FUN9(&VAR14);
+}

@@ -1,0 +1,79 @@
+int
+FUN1(VAR1 *VAR2, const char *VAR3)
+{
+krb5_error_code VAR4;
+krb5_ccache VAR5 = NULL;
+const char *VAR6;
+
+FUN2(VAR2->VAR7);
+
+VAR4 = FUN3(VAR2);
+if (VAR4)
+goto VAR8;
+
+VAR4 = FUN4(VAR2->VAR9, VAR2->VAR7->VAR10,
+&VAR2->VAR11);
+if (VAR4)
+goto VAR8;
+
+VAR4 = FUN5(VAR2->VAR9,
+VAR12.VAR13, NULL, &VAR5);
+if (VAR4)
+goto VAR8;
+
+VAR4 = FUN6(VAR2->VAR9, VAR5,
+VAR2->VAR11);
+if (VAR4)
+goto VAR8;
+
+FUN7();
+
+VAR4 = FUN8(VAR2->VAR9, VAR2->VAR11,
+VAR5, VAR3, 1, NULL);
+
+FUN2(VAR2->VAR7);
+
+if (VAR4)
+goto VAR8;
+
+VAR4 = FUN5(VAR2->VAR9,
+VAR14.VAR13, NULL, &VAR2->VAR15);
+if (VAR4)
+goto VAR8;
+
+VAR4 = FUN9(VAR2->VAR9, VAR5,
+VAR2->VAR15);
+FUN10(VAR2->VAR9, VAR5);
+VAR5 = NULL;
+if (VAR4)
+goto VAR8;
+
+VAR2->VAR16 = (char *)FUN11(VAR2->VAR9,
+VAR2->VAR15);
+
+VAR8:
+FUN7();
+
+if (VAR4) {
+if (VAR5)
+FUN10(VAR2->VAR9, VAR5);
+
+if (VAR2->VAR9 != NULL) {
+VAR6 = FUN12(VAR2->VAR9,
+VAR4);
+FUN13("",
+VAR6);
+FUN14(VAR2->VAR9, VAR6);
+} else
+FUN13("",
+VAR4);
+
+FUN15(VAR2);
+
+if (VAR17.VAR18)
+return (-1);
+else
+return (0);
+}
+return (VAR2->VAR19 ? 1 : 0);
+}

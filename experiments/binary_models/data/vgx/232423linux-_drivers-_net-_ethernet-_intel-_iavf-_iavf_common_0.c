@@ -1,0 +1,42 @@
+static enum VAR1 FUN1(struct VAR2 *VAR3,
+u16 VAR4, bool VAR5,
+VAR6 *VAR7, u16 VAR8,
+bool VAR9)
+{
+enum iavf_status VAR10;
+struct iavf_aq_desc VAR11;
+struct VAR12 *VAR13 =
+(struct VAR12 *)&VAR11.VAR14.VAR15;
+
+if (VAR9)
+FUN2(&VAR11,
+VAR16);
+else
+FUN2(&VAR11,
+VAR17);
+
+
+VAR11.VAR18 |= FUN3((VAR19)VAR20);
+VAR11.VAR18 |= FUN3((VAR19)VAR21);
+
+VAR13->VAR4 =
+FUN3((VAR19)((VAR4 <<
+VAR22) &
+VAR23));
+VAR13->VAR4 |= FUN3((VAR19)VAR24);
+
+if (VAR5)
+VAR13->VAR18 |= FUN3((VAR19)
+((VAR25 <<
+VAR26) &
+VAR27));
+else
+VAR13->VAR18 |= FUN3((VAR19)
+((VAR28 <<
+VAR26) &
+VAR27));
+
+VAR10 = FUN4(VAR3, &VAR11, VAR7, VAR8, NULL);
+
+return VAR10;
+}

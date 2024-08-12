@@ -1,0 +1,16 @@
+static int FUN1(struct VAR1 *VAR2, const VAR3 *VAR4,
+unsigned int VAR5)
+{
+struct VAR6 *VAR7 = FUN2(FUN3(VAR2));
+
+
+switch (VAR5) {
+case VAR8 * 2:
+memcpy(VAR7->VAR9.VAR10.VAR4, VAR4, VAR5);
+break;
+}
+VAR7->VAR9.VAR10.VAR5 = VAR5 / 2;
+FUN4(&VAR7->VAR9.VAR10.VAR11, VAR7->VAR9.VAR10.VAR4, VAR5);
+
+return FUN5(VAR7->VAR9.VAR10.VAR12, VAR4, VAR5);
+}

@@ -1,0 +1,1 @@
+__be32 FUN1 ( struct VAR1 * VAR2 , int VAR3 ) { VAR4 * VAR5 ; int VAR6 ; for ( VAR6 = 0 ; VAR6 < FUN2 ( VAR7 ) ; VAR6 ++ ) { if ( VAR7 [ VAR6 ] . VAR8 != VAR3 ) { continue ; } VAR5 = FUN3 ( VAR2 , VAR7 [ VAR6 ] . VAR9 + 4 ) ; VAR5 = FUN4 ( VAR5 , VAR7 [ VAR6 ] . VAR10 , VAR7 [ VAR6 ] . VAR9 ) ; return 0 ; } FUN5 ( 1 ) ; return VAR11 ; }

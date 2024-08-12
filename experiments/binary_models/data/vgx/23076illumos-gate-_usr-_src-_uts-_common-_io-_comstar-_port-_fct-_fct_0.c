@@ -1,0 +1,60 @@
+int
+FUN1(VAR1 *VAR2, VAR3 *VAR4,
+VAR5 *VAR6, VAR7 *VAR8)
+{
+VAR9 *VAR10 = FUN2(VAR2);
+VAR11 *VAR12 = NULL;
+uint32_t VAR13 = sizeof (VAR5);
+stmf_status_t VAR14 = 0;
+int VAR15;
+VAR16 *VAR17 = NULL;
+
+if (!VAR10) {
+*VAR8 = VAR18;
+return (VAR19);
+}
+
+
+if (VAR4 == NULL || *VAR4 == VAR10->VAR20.VAR21) {
+if (VAR10->VAR22->VAR23 == NULL) {
+*VAR8 = VAR24;
+return (VAR25);
+}
+VAR14 = VAR10->VAR22->FUN3(VAR26,
+VAR10->VAR22, NULL,
+(VAR1 *)VAR6, &VAR13);
+if (VAR14 == VAR27) {
+return (0);
+} else {
+*VAR8 = VAR24;
+return (VAR25);
+}
+}
+
+
+for (VAR15 = 0; VAR15 < VAR28; VAR15++) {
+VAR12 = VAR10->VAR29[VAR15];
+while (VAR12) {
+if (VAR12->VAR30->VAR31 == *VAR4 &&
+VAR12->VAR32 & VAR33) {
+goto VAR34;
+}
+VAR12 = VAR12->VAR35;
+}
+}
+return (VAR19);
+
+VAR34:
+VAR17 = FUN4(VAR10->VAR22,
+VAR12->VAR30, 0, VAR36,
+0, VAR37);
+if (!VAR17)
+return (VAR38);
+VAR10->VAR39.VAR40 = VAR6;
+FUN5(VAR17)->VAR41 = &VAR10->VAR39;
+FUN6(VAR10->VAR22, VAR17);
+FUN7(&VAR10->VAR42);
+if (VAR10->VAR39.VAR43 != VAR44)
+VAR14 = VAR25;
+return (VAR14);
+}

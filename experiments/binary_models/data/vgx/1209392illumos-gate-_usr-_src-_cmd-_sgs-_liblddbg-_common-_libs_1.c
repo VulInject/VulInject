@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 , const char * VAR3 , const char * VAR4 , const char * VAR5 ) { if ( FUN2 ( ) ) { return ; } FUN3 ( VAR2 , FUN4 ( VAR6 ) , VAR3 , VAR5 , VAR4 ) ; }

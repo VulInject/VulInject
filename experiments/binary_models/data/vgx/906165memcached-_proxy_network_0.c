@@ -1,0 +1,30 @@
+static void FUN1(void *VAR1, struct VAR2 *VAR3) {
+VAR4 *VAR5 = VAR1;
+FUN2("", VAR6, VAR3->VAR7);
+assert(VAR3->VAR7 != -VAR8);
+int VAR9 = VAR3->VAR7;
+if (VAR9 < 0) {
+
+if (VAR9 == -VAR10 || VAR9 == -VAR11) {
+
+FUN3(VAR5, &VAR5->VAR12->VAR13.VAR14);
+} else {
+FUN4(VAR5, VAR15);
+FUN5(VAR5);
+}
+}
+
+if (FUN6(VAR5, VAR9)) {
+
+FUN7(VAR5, VAR5->VAR16+VAR5->VAR17, VAR18-VAR5->VAR17, &VAR5->VAR12->VAR13.VAR14);
+}
+
+if (VAR5->VAR19) {
+
+
+
+FUN3(VAR5, &VAR5->VAR12->VAR13.VAR14);
+}
+
+
+}

@@ -1,0 +1,1 @@
+static VAR1 FUN1(void *VAR2, target_phys_addr_t VAR3) { return FUN1(VAR2, VAR3) >> ((VAR3 & 3) << 3); }

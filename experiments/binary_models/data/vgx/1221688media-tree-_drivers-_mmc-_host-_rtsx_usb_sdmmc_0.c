@@ -1,0 +1,40 @@
+static void FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR2);
+struct VAR7 *VAR8 = VAR6->VAR8;
+
+FUN3(FUN4(VAR6), "", VAR9);
+FUN5(&VAR8->VAR10);
+
+FUN6(VAR6, VAR4->VAR11);
+FUN7(VAR6, VAR4->VAR12);
+FUN8(VAR6, VAR4->VAR13, &VAR6->VAR14);
+
+VAR6->VAR15 = false;
+VAR6->VAR16 = true;
+
+switch (VAR4->VAR13) {
+case VAR17:
+case VAR18:
+VAR6->VAR19 = VAR20;
+VAR6->VAR15 = true;
+VAR6->VAR16 = false;
+break;
+case VAR21:
+case VAR22:
+VAR6->VAR19 = VAR23;
+break;
+default:
+VAR6->VAR19 = VAR24;
+break;
+}
+
+VAR6->VAR25 = (VAR4->VAR26 <= 1000000) ? true : false;
+VAR6->VAR26 = VAR4->VAR26;
+
+FUN9(VAR6->VAR8, VAR6->VAR26, VAR6->VAR19,
+VAR6->VAR25, VAR6->VAR16, VAR6->VAR15);
+
+FUN10(&VAR8->VAR10);
+FUN3(FUN4(VAR6), "", VAR9);
+}

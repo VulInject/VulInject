@@ -1,0 +1,1 @@
+GF_Err FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 , u32 VAR5 ) { struct VAR6 * VAR7 = ( VAR6 * ) VAR2 -> VAR8 ; while ( VAR5 ) { FUN2 ( VAR7 , VAR4 ) ; VAR4 += VAR9 ; VAR5 -= VAR9 ; } return VAR10 ; }

@@ -1,0 +1,1 @@
+int FUN1 ( unsigned long VAR1 , unsigned long VAR2 , unsigned long VAR3 ) { FUN2 ( VAR4 , NULL ) ; return VAR5 . FUN1 ( VAR1 , VAR2 , VAR3 ) ; }

@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR1 ) { struct VAR2 * VAR3 ; if ( VAR1 -> VAR4 ) { FUN2 ( ( void * ) VAR1 -> VAR4 , VAR1 -> VAR5 ) ; } if ( VAR1 -> VAR6 ) { FUN2 ( VAR1 -> VAR6 , VAR1 -> VAR7 ) ; } if ( VAR1 -> VAR8 ) { close ( VAR1 -> VAR8 ) ; } if ( VAR1 -> VAR9 ) { VAR3 = & VAR1 -> VAR9 [ VAR1 -> VAR10 - 1 ] ; FUN2 ( VAR3 -> VAR11 , VAR3 -> VAR12 ) ; free ( VAR1 -> VAR9 ) ; } }

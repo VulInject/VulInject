@@ -1,0 +1,1 @@
+void *FUN1(size_t VAR1) { return malloc(VAR1); }

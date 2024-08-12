@@ -1,0 +1,112 @@
+int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4, struct VAR5 *VAR6, struct VAR3 *VAR7)
+{
+const struct VAR8 *VAR9;
+u32 VAR10;
+struct VAR11 *VAR12;
+struct VAR13 *VAR13 = FUN2(VAR2->VAR4);
+
+if (VAR2->VAR14 == VAR15) {
+FUN3(VAR2);
+return VAR16;
+}
+
+FUN4();
+
+VAR12 = FUN5(VAR2->VAR4);
+
+FUN6(VAR13, VAR12, VAR17, VAR2->VAR18);
+
+if ((VAR2 = FUN7(VAR2, VAR19)) == NULL ||
+!VAR12 || FUN8(VAR12->VAR20.VAR21)) {
+FUN9(VAR13, VAR12, VAR22);
+goto VAR23;
+}
+
+memset(FUN10(VAR2), 0, sizeof(struct VAR24));
+
+
+FUN10(VAR2)->VAR25 = FUN11(VAR2) ? FUN12(FUN13(VAR2))->VAR4->VAR26 : VAR4->VAR26;
+
+if (FUN8(!FUN14(VAR2, sizeof(*VAR9))))
+goto VAR27;
+
+VAR9 = FUN15(VAR2);
+
+if (VAR9->VAR28 != 6)
+goto VAR27;
+
+FUN16(VAR13, VAR12,
+VAR29 +
+(FUN17(VAR9) & VAR30),
+FUN18(unsigned short, 1, FUN19(VAR2)->VAR31));
+
+if ((FUN20(&VAR9->VAR32) ||
+FUN20(&VAR9->VAR33)) &&
+!(VAR4->VAR34 & VAR35))
+goto VAR27;
+
+
+if (!(VAR2->VAR14 == VAR36 ||
+VAR4->VAR34 & VAR35) &&
+FUN21(&VAR9->VAR33) &&
+FUN22(&VAR9->VAR33) == 1)
+goto VAR27;
+
+
+if (!FUN21(&VAR9->VAR33) &&
+(VAR2->VAR14 == VAR37 ||
+VAR2->VAR14 == VAR38) &&
+VAR12->VAR20.VAR39)
+goto VAR27;
+
+
+if (FUN21(&VAR9->VAR33) &&
+FUN22(&VAR9->VAR33) == 0)
+goto VAR27;
+
+
+if (FUN21(&VAR9->VAR32))
+goto VAR27;
+
+VAR2->VAR40 = VAR2->VAR41 + sizeof(*VAR9);
+FUN10(VAR2)->VAR42 = FUN23(struct VAR8, VAR43);
+
+VAR10 = FUN24(VAR9->VAR44);
+
+
+if (VAR10 || VAR9->VAR43 != VAR45) {
+if (VAR10 + sizeof(struct VAR8) > VAR2->VAR18) {
+FUN9(VAR13,
+VAR12, VAR46);
+goto VAR23;
+}
+if (FUN25(VAR2, VAR10 + sizeof(struct VAR8))) {
+FUN9(VAR13, VAR12, VAR47);
+goto VAR23;
+}
+VAR9 = FUN15(VAR2);
+}
+
+if (VAR9->VAR43 == VAR45) {
+if (FUN26(VAR2) < 0) {
+FUN9(VAR13, VAR12, VAR47);
+FUN27();
+return VAR16;
+}
+}
+
+FUN27();
+
+
+FUN28(VAR2);
+
+return FUN29(VAR48, VAR49,
+VAR13, NULL, VAR2, VAR4, NULL,
+VAR50);
+VAR27:
+FUN9(VAR13, VAR12, VAR47);
+VAR23:
+FUN27();
+FUN3(VAR2);
+return VAR16;
+}

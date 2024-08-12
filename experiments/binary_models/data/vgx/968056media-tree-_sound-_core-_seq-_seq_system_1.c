@@ -1,0 +1,1 @@
+void FUN1 ( int VAR1 , int VAR2 , int VAR3 ) { struct snd_seq_event VAR4 ; VAR4 . VAR3 = VAR3 ; FUN2 ( VAR5 , & VAR4 , 0 , 0 ) ; }

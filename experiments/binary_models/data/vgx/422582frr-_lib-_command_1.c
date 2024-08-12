@@ -1,0 +1,1 @@
+int FUN1 ( const char * VAR1 ) { int VAR2 = VAR3 ; char VAR4 [ VAR5 ] ; char * VAR6 ; char * VAR7 ; VAR6 = FUN2 ( VAR1 , VAR4 ) ; VAR7 = strstr ( VAR6 , VAR8 ) ; if ( VAR7 == VAR6 ) { FUN3 ( VAR9 , VAR10 . VAR11 ) ; VAR10 . VAR11 = FUN4 ( VAR9 , VAR1 ) ; } else { VAR2 = VAR12 ; } return VAR2 ; }

@@ -1,0 +1,275 @@
+void
+FUN1(void)
+{
+VAR1* VAR2;
+VAR3* VAR4;
+
+static hf_register_info VAR5[] = {
+
+{ &VAR6,
+{ "", "", VAR7, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR10,
+{ "", "", VAR11, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR12,
+{ "", "", VAR13, VAR14, FUN2(VAR15), 0x0, NULL, VAR9 }
+},
+{ &VAR16,
+{ "", "", VAR13, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR17,
+{ "", "", VAR7, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR18,
+{ "", "", VAR13, VAR14, FUN2(VAR19), 0x0, NULL, VAR9 }
+},
+{ &VAR20,
+{ "", "", VAR13, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR21,
+{ "", "", VAR7, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR22,
+{ "", "", VAR13, VAR14, FUN2(VAR23), 0x0, NULL, VAR9 }
+},
+{ &VAR24,
+{ "", "", VAR13, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR25,
+{ "", "", VAR26, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR27,
+{ "", "", VAR7, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR28,
+{ "", "", VAR29, VAR14, FUN2(VAR30), 0x0, NULL, VAR9 }
+},
+{ &VAR31,
+{ "", "", VAR11, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR32,
+{ "", "", VAR7, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR33,
+{ "", "", VAR29, VAR34, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR35,
+{ "", "", VAR36, VAR37, FUN3(&VAR38), VAR39, NULL, VAR9 }
+},
+{ &VAR40,
+{ "", "", VAR41, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR42,
+{ "", "", VAR13, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR43,
+{ "", "", VAR7, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR44,
+{ "", "", VAR29, VAR34, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR45,
+{ "", "", VAR36, VAR46, FUN3(&VAR38), VAR47, NULL, VAR9 }
+},
+{ &VAR48,
+{ "", "", VAR49, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR50,
+{ "", "", VAR13, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR51,
+{ "", "", VAR7, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR52,
+{ "", "", VAR29, VAR34, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR53,
+{ "", "", VAR36, VAR54, FUN3(&VAR38), VAR55, NULL, VAR9 }
+},
+{ &VAR56,
+{ "", "", VAR11, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR57,
+{ "", "", VAR58, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR59,
+{ "", "", VAR7, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR60,
+{ "", "", VAR58, VAR14|VAR61, FUN4(VAR62), 0x0, NULL, VAR9 }
+},
+{ &VAR63,
+{ "", "", VAR64, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR65,
+{ "", "", VAR66, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR67,
+{ "", "", VAR7, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR68,
+{ "", "", VAR29, VAR34, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR69,
+{ "", "", VAR36, VAR70, FUN3(&VAR71), VAR72, NULL, VAR9 }
+},
+{ &VAR73,
+{ "", "", VAR41, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR74,
+{ "", "", VAR7, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR75,
+{ "", "", VAR29, VAR34, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR76,
+{ "", "", VAR36, VAR77, FUN3(&VAR71), VAR78, NULL, VAR9 }
+},
+{ &VAR79,
+{ "", "", VAR49, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR80,
+{ "", "", VAR7, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR81,
+{ "", "", VAR29, VAR34, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR82,
+{ "", "", VAR36, VAR83, FUN3(&VAR71), VAR84, NULL, VAR9 }
+},
+{ &VAR85,
+{ "", "", VAR41, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR86,
+{ "", "", VAR29, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR87,
+{ "", "", VAR7, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR88,
+{ "", "", VAR29, VAR34, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR89,
+{ "", "", VAR36, VAR90, FUN3(&VAR71), VAR91, NULL, VAR9 }
+},
+{ &VAR92,
+{ "", "", VAR49, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR93,
+{ "", "", VAR29, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR94,
+{ "", "", VAR95, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR96,
+{ "", "", VAR95, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR97,
+{ "", "", VAR95, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR98,
+{ "", "", VAR95, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR99,
+{ "", "", VAR95, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR100,
+{ "", "", VAR29, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR101,
+{ "", "", VAR29, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR102,
+{ "", "", VAR29, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR103,
+{ "", "", VAR13, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR104,
+{ "", "", VAR29, VAR34, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR105,
+{ "", "", VAR36, 8, FUN3(&VAR38), VAR106, "", VAR9 }
+},
+{ &VAR107,
+{ "", "", VAR29, VAR34, NULL, VAR108, NULL, VAR9 }
+},
+{ &VAR109,
+{ "", "", VAR29, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR110,
+{ "", "", VAR13, VAR14|VAR61, FUN4(VAR111), 0x0, NULL, VAR9 }
+},
+{ &VAR112,
+{ "", "", VAR13, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR113,
+{ "", "", VAR26, VAR8, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR114,
+{ "", "", VAR95, VAR14, NULL, 0x0, NULL, VAR9 }
+},
+{ &VAR115,
+{ "", "", VAR95, VAR14, NULL, 0x0, NULL, VAR9 }
+}
+};
+
+static VAR116 *VAR117[] = {
+&VAR118,
+&VAR119,
+&VAR120
+};
+
+static ei_register_info VAR121[] = {
+{ &VAR122, { "", VAR123, VAR124, "", VAR125 }},
+{ &VAR126, { "", VAR123, VAR124, "", VAR125 }},
+{ &VAR127, { "", VAR123, VAR124, "", VAR125 }},
+{ &VAR128, { "", VAR123, VAR124, "", VAR125 }},
+};
+
+VAR129 = FUN5("", "", "");
+VAR130 = FUN6 ("", VAR131, VAR129);
+VAR132 = FUN6 ("", VAR133, VAR129);
+
+VAR134 = FUN7("", "", VAR129, VAR13, VAR14);
+VAR135 = FUN8("", "", "", VAR129, VAR26);
+FUN9("", VAR136, FUN10(VAR137, VAR135));
+FUN9("", VAR138, FUN10(VAR139, VAR135));
+FUN9("", VAR140, FUN10(VAR141, VAR135));
+FUN9("", VAR142, FUN10(VAR143, VAR135));
+FUN9("", VAR144, FUN10(VAR145, VAR135));
+FUN9("", VAR146, FUN10(VAR147, VAR135));
+FUN9("", VAR148, FUN10(VAR149, VAR135));
+FUN9("", VAR150, FUN10(VAR151, VAR135));
+FUN9("", VAR152, FUN10(VAR153, VAR135));
+FUN9("", VAR154, FUN10(VAR155, VAR135));
+FUN9("", VAR156, FUN10(VAR157, VAR135));
+FUN9("", VAR158, FUN10(VAR159, VAR135));
+FUN9("", VAR160, FUN10(VAR161, VAR135));
+FUN9("", VAR162, FUN10(VAR163, VAR135));
+FUN9("", VAR164, FUN10(VAR165, VAR135));
+FUN9("", VAR166, FUN10(VAR167, VAR135));
+FUN9("", VAR168, FUN10(VAR169, VAR135));
+FUN9("", VAR170, FUN10(VAR171, VAR135));
+FUN9("", VAR172, FUN10(VAR173, VAR135));
+FUN9("", VAR174, FUN10(VAR175, VAR135));
+FUN9("", VAR176, FUN10(VAR177, VAR135));
+FUN9("", VAR178, FUN10(VAR179, VAR135));
+FUN9("", VAR180, FUN10(VAR181, VAR135));
+FUN9("", VAR182, FUN10(VAR183, VAR135));
+FUN9("", VAR184, FUN10(VAR185, VAR135));
+
+FUN11(VAR129, VAR5, FUN12(VAR5));
+FUN13(VAR117, FUN12(VAR117));
+
+VAR2 = FUN14(VAR129, NULL);
+FUN15(VAR2, "",
+"",
+""
+""Allow subdissectors to reassemble TCP VAR186\"",
+&VAR187);
+
+VAR4 = FUN16(VAR129);
+FUN17(VAR4, VAR121, FUN12(VAR121));
+}

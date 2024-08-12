@@ -1,0 +1,141 @@
+static int FUN1(struct VAR1 *VAR2, unsigned *VAR3, unsigned VAR4)
+{
+unsigned long VAR5;
+struct VAR6 *VAR7 = VAR2->VAR8;
+bool VAR9 = false;
+int VAR10, VAR11, VAR12, VAR13 = 0;
+int VAR14, VAR15;
+int VAR16 = VAR4;
+u8 VAR17[VAR18];
+u8 VAR19;
+
+FUN2("", VAR20);
+
+
+memset(VAR17, 0, FUN3(VAR17));
+
+FUN4(&VAR7->VAR21, VAR5);
+
+
+VAR7->VAR22 = true;
+
+
+FUN5(VAR7);
+
+
+VAR14 =
+(VAR23 * VAR7->VAR24.VAR25 *
+VAR26) / 1000;
+
+
+VAR7->VAR24.FUN6(VAR7);
+
+
+VAR11 =
+VAR18 - VAR7->VAR24.FUN7(VAR7);
+
+while (VAR4 > 0 && VAR7->VAR27) {
+
+VAR9 = !VAR9;
+VAR10 = *(VAR3++);
+VAR4--;
+
+FUN2("",
+((VAR9) ? "" : ""),
+(long int)
+VAR10);
+
+
+while (VAR10 > 0 && VAR7->VAR27) {
+if (VAR10 > VAR14)
+VAR15 = VAR14;
+
+else
+VAR15 = VAR10;
+
+VAR10 -= VAR15;
+
+
+VAR19 = (VAR26 * VAR15) / VAR14;
+
+
+VAR17[VAR13++] = VAR19;
+VAR13 &= (VAR18);
+
+
+VAR19 = (VAR19 - 1) & VAR28;
+
+
+if (VAR9)
+VAR19 |= VAR29;
+
+else
+VAR19 |= VAR30;
+
+
+if (VAR11 <= 0)
+VAR11 = VAR18 - VAR7->VAR24.FUN7(VAR7);
+
+
+if (VAR11 <= 0) {
+
+VAR7->VAR24.
+FUN8(VAR7);
+
+
+FUN9(&VAR7->VAR21, VAR5);
+
+
+FUN10(VAR7->VAR31, (VAR11 = VAR18 - VAR7->VAR24.FUN7(VAR7)) >= 8);
+
+
+FUN4(&VAR7->VAR21, VAR5);
+
+
+VAR7->VAR24.
+FUN11(VAR7);
+}
+
+
+VAR7->VAR24.FUN12(VAR7, VAR19);
+VAR11--;
+}
+}
+
+
+VAR12 = VAR7->VAR24.FUN7(VAR7);
+VAR10 = 0;
+while (VAR12 > 0) {
+VAR12--;
+VAR13--;
+VAR13 &= (VAR18 - 1);
+VAR10 += VAR17[VAR13];
+}
+VAR10 = (VAR10 * VAR14) / (VAR26);
+
+
+FUN9(&VAR7->VAR21, VAR5);
+
+
+FUN13(FUN14(VAR10, 1000));
+
+
+FUN4(&VAR7->VAR21, VAR5);
+
+
+VAR7->VAR22 = false;
+
+
+FUN5(VAR7);
+
+
+if (VAR7->VAR27)
+VAR7->VAR24.FUN15(VAR7);
+
+
+FUN16(&VAR7->VAR32);
+
+FUN9(&VAR7->VAR21, VAR5);
+
+return VAR16;
+}

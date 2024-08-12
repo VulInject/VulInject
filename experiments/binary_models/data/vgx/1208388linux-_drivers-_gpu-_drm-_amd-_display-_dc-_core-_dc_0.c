@@ -1,0 +1,24 @@
+bool FUN1(struct VAR1 *VAR1,
+struct VAR2 *VAR3,
+struct VAR4 *VAR5)
+{
+int VAR6;
+
+VAR3->VAR5.VAR7 = VAR5->VAR7;
+VAR3->VAR5.VAR8 = VAR5->VAR8;
+VAR3->VAR5.VAR9 = VAR5->VAR9;
+VAR3->VAR5.VAR10 = VAR5->VAR10;
+
+for (VAR6 = 0; VAR6 < VAR11; VAR6++) {
+struct VAR12 *VAR13 = &VAR1->VAR14->VAR15.VAR12[VAR6];
+
+if (VAR13->VAR3 == VAR3 && VAR13->VAR16.VAR17) {
+VAR1->VAR18.FUN2(&VAR13,
+1,
+*VAR5);
+
+return true;
+}
+}
+return false;
+}

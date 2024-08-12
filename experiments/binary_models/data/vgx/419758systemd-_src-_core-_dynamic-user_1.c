@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( VAR1 * VAR2 ) { if ( ! VAR2 ) { return VAR3 ; } if ( VAR2 -> VAR4 ) { ( void ) FUN2 ( VAR2 -> VAR4 -> VAR5 , VAR2 -> VAR6 ) ; } FUN3 ( VAR2 -> VAR7 ) ; return FUN4 ( VAR2 ) ; }

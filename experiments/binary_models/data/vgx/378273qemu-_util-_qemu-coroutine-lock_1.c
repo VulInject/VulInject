@@ -1,0 +1,1 @@
+static bool FUN1 ( VAR1 * VAR2 , bool VAR3 ) { VAR4 * VAR5 ; if ( FUN2 ( & VAR2 -> VAR6 ) ) { return false ; } while ( ( VAR5 = FUN3 ( & VAR2 -> VAR6 ) ) != NULL ) { FUN4 ( & VAR2 -> VAR6 , VAR7 ) ; FUN5 ( VAR5 , NULL ) ; if ( VAR3 ) { break ; } } return true ; }

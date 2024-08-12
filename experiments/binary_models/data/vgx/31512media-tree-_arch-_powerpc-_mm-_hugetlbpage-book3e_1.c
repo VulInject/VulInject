@@ -1,0 +1,1 @@
+static inline void FUN1 ( void ) { struct VAR1 * VAR2 = FUN2 ( ) ; cfs_time_t VAR3 ; int VAR4 = FUN3 ( ) + 1 ; if ( ! FUN4 ( VAR5 ) ) { return ; } volatile }

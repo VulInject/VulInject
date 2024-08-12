@@ -1,0 +1,110 @@
+unsigned int FUN1(struct VAR1 *VAR2, union VAR3 *VAR4)
+{
+int VAR5;
+struct VAR6 *VAR7;
+struct VAR8 *VAR9 = &VAR2->VAR10;
+struct VAR11 *VAR12 = &(VAR9->VAR13);
+struct VAR14 *VAR15 = &VAR2->VAR16;
+struct VAR17 *VAR18 = &VAR2->VAR19;
+VAR20 *VAR21 = VAR4->VAR22.VAR23.VAR24;
+uint VAR25 = VAR4->VAR22.VAR23.VAR25;
+struct VAR26 *VAR27;
+int VAR28 = VAR29;
+VAR20 *VAR30 = NULL;
+u32 VAR31 = 0;
+
+VAR30 = FUN2(VAR21 + sizeof(struct VAR32) + VAR33, VAR34, &VAR31, VAR4->VAR22.VAR23.VAR25 - sizeof(struct VAR32) - VAR33);
+if (VAR30 && VAR31 > 0) {
+if ((*(VAR30 + 1 + VAR31) == 0x2D) && (*(VAR30 + 2 + VAR31) != 0x2D))
+
+*(VAR30 + 1) = VAR31 - 1;
+}
+
+if (VAR9->VAR35.VAR36 == VAR37) {
+FUN3(VAR2, VAR4);
+return VAR29;
+}
+
+if (!memcmp(FUN4(VAR21), FUN5(&VAR12->VAR38), VAR39)) {
+if (VAR12->VAR36 & VAR40) {
+
+VAR27 = FUN6(sizeof(struct VAR26));
+if (VAR27) {
+if (FUN7(VAR2, VAR4, VAR27) == VAR29) {
+FUN8(&(VAR15->VAR41.VAR38), VAR27, VAR2, true);
+FUN9(&(VAR15->VAR41));
+}
+FUN10(VAR27);
+}
+
+
+VAR12->VAR42 = FUN11(VAR21+sizeof(struct VAR32), VAR25-sizeof(struct VAR32));
+
+
+FUN12(VAR9, VAR21, VAR25);
+
+
+VAR9->VAR43 = false;
+VAR9->VAR44 = 0xff;
+VAR9->VAR45 = 0xff;
+VAR9->VAR46 = 0;
+memset(VAR9->VAR47, 0, sizeof(VAR9->VAR47));
+memset(VAR9->VAR48, 0, sizeof(VAR9->VAR48));
+
+
+FUN13(VAR2);
+
+return VAR29;
+}
+
+if (((VAR12->VAR36&0x03) == VAR49) && (VAR12->VAR36 & VAR50)) {
+VAR7 = FUN14(VAR18, FUN15(VAR21));
+if (VAR7) {
+VAR28 = FUN16(VAR2, VAR21, VAR25);
+if (!VAR28) {
+FUN17(VAR2->VAR51,
+"");
+FUN18(VAR2,
+VAR12->VAR38.VAR52, 0);
+return VAR29;
+}
+
+
+if ((FUN19(VAR7) & 0xf) == 0)
+FUN20(VAR2, VAR21, VAR25, VAR7);
+
+FUN21(VAR9, VAR21, VAR25);
+}
+} else if ((VAR12->VAR36&0x03) == VAR53) {
+VAR7 = FUN14(VAR18, FUN15(VAR21));
+if (VAR7) {
+
+
+if ((FUN19(VAR7) & 0xf) == 0)
+FUN20(VAR2, VAR21, VAR25, VAR7);
+} else {
+
+VAR5 = FUN22(VAR2);
+if (VAR5 == VAR54)
+goto VAR55;
+
+
+if (FUN23(VAR2, (VAR21 + VAR56 + VAR33), (VAR25 - VAR56 - VAR33), VAR5) == VAR57) {
+VAR12->VAR58[VAR5].VAR59 = 0;
+goto VAR55;
+}
+
+
+FUN12(VAR9, VAR21, VAR25);
+
+
+FUN24(VAR2, FUN15(VAR21), VAR5);
+}
+}
+}
+
+VAR55:
+
+return VAR29;
+
+}

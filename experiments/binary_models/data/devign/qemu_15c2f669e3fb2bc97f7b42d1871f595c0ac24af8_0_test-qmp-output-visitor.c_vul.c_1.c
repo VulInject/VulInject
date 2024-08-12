@@ -1,0 +1,17 @@
+static void FUN1(VAR1 *VAR2, const void *VAR3)
+{
+    VAR4 *VAR5;
+    VAR6 *VAR7;
+    VAR4 *VAR8;
+    FUN2(VAR2->VAR9, NULL, NULL, 0, &VAR10);
+    FUN3(VAR2->VAR9, "", &VAR10);
+    FUN4(VAR2->VAR9, &VAR10);
+    VAR5 = FUN5(VAR2->VAR11);
+    FUN6(FUN7(VAR5) == VAR12);
+    VAR7 = FUN8(VAR5);
+    FUN9(FUN10(VAR7), ==, 1);
+    VAR8 = FUN11(VAR7, "");
+    FUN6(VAR8);
+    FUN6(FUN7(VAR8) == VAR13);
+    FUN12(VAR5);
+}

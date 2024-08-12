@@ -1,0 +1,40 @@
+static int FUN1(VAR1 *VAR2, VAR1 *VAR3, int VAR4)
+{
+    int VAR5 = 0;
+    if (VAR2 != VAR3)
+    {
+        VAR2->VAR6 = VAR3->VAR6;
+        VAR2->VAR7 = VAR3->VAR7;
+        VAR2->VAR8 = VAR3->VAR8;
+        VAR2->VAR9 = VAR3->VAR9;
+        VAR2->VAR10 = VAR3->VAR10;
+        VAR2->VAR11 = VAR3->VAR11;
+        VAR2->VAR12 = VAR3->VAR12;
+        VAR2->VAR13 = VAR3->VAR13;
+        VAR2->VAR14 = VAR3->VAR14;
+        VAR2->VAR15 = VAR3->VAR15;
+        VAR2->VAR16 = VAR3->VAR16;
+        VAR2->VAR17 = VAR3->VAR17;
+        VAR2->VAR18 = VAR3->VAR18;
+        VAR2->VAR19 = VAR3->VAR19;
+        VAR2->VAR20 = VAR3->VAR20;
+        VAR2->VAR21 = VAR3->VAR21;
+        VAR2->VAR22 = VAR3->VAR22;
+        VAR2->VAR23 = VAR3->VAR23;
+        VAR2->VAR24 = VAR3->VAR24;
+        VAR2->VAR25 = VAR3->VAR25;
+        VAR2->VAR26 = VAR3->VAR26;
+        VAR2->VAR27 = VAR3->VAR27;
+    }
+    if (VAR4)
+    {
+        VAR2->VAR28 = VAR3->VAR28;
+        VAR2->VAR13 += VAR3->VAR29 - 1;
+    }
+    else
+    {
+        if (VAR2->VAR30->VAR31)
+            VAR5 = VAR2->VAR30->FUN2(VAR2, VAR3);
+    }
+    return VAR5;
+}

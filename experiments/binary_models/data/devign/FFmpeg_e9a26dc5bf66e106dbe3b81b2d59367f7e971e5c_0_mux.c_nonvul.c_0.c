@@ -1,0 +1,28 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    const VAR5 *VAR6;
+    int VAR7;
+    enum AVCodecID VAR8 = VAR9;
+    int64_t VAR10 = -1;
+    for (VAR7 = 0; VAR2->VAR11->VAR12[VAR7]; VAR7++)
+    {
+        VAR6 = VAR2->VAR11->VAR12[VAR7];
+        while (VAR6->VAR8 != VAR9)
+        {
+            if (FUN2(VAR6->VAR10) == FUN2(VAR4->VAR13->VAR12))
+            {
+                VAR8 = VAR6->VAR8;
+                if (VAR8 == VAR4->VAR13->VAR14)
+                    return 1;
+            }
+            if (VAR6->VAR8 == VAR4->VAR13->VAR14)
+                VAR10 = VAR6->VAR10;
+            VAR6++;
+        }
+    }
+    if (VAR8 != VAR9)
+        return 0;
+    if (VAR10 >= 0 && (VAR4->VAR13->VAR15 >= VAR16))
+        return 0;
+    return 1;
+}

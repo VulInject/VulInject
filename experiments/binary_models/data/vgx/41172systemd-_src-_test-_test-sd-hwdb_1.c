@@ -1,0 +1,1 @@
+static int FUN1 ( void ) { FUN2 ( ) VAR1 * VAR2 ; int VAR3 ; VAR3 = FUN3 ( & VAR2 ) ; if ( VAR3 == - VAR4 || FUN4 ( VAR3 ) ) { return FUN5 ( VAR3 , "" ) ; } return VAR5 ; }

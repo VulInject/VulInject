@@ -1,0 +1,1 @@
+static enum bp_result FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { struct VAR5 * VAR6 ; static enum bp_result VAR7 = VAR8 ; VAR6 = FUN2 ( VAR5 , FUN3 ( VAR9 ) ) ; VAR4 -> VAR10 = VAR6 -> VAR11 [ 0 ] . VAR12 ; VAR4 -> VAR13 = ( 1 << VAR6 -> VAR11 [ 0 ] . VAR14 ) / 8 ; return VAR7 ; }

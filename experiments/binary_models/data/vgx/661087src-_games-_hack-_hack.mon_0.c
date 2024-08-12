@@ -1,0 +1,98 @@
+void
+FUN1(struct VAR1 *VAR2)
+{
+int VAR3, VAR4, VAR5, VAR6;
+struct VAR7 *VAR8;
+
+if(VAR2->VAR9) VAR2->VAR10 = VAR11;
+VAR8 = VAR2->VAR10;
+if(VAR12) FUN2("");
+else {
+FUN2("",
+VAR2->VAR13 ? FUN3(VAR2, "") : FUN4(VAR2));
+}
+if(VAR14.VAR15) {
+if(!VAR12) FUN2("");
+VAR14.VAR15 = 0;
+}
+
+
+VAR4 = 1;		      
+VAR3 = VAR8 - VAR16;    
+if(VAR3 >= 0 && VAR3 < VAR17+2) {
+extern char VAR18[];
+VAR14.VAR19[VAR3]++;
+if((VAR4 = VAR14.VAR19[VAR3]) > VAR20 &&
+!strchr(VAR18, VAR8->VAR21))
+FUN5(VAR18,  VAR8->VAR21);
+}
+
+
+if(VAR8->VAR21 == '') VAR22 = 0, VAR14.VAR23 -= 2;
+if(VAR2->VAR24 || VAR2->VAR13) VAR14.VAR23--;
+if(VAR8->VAR21 == '') VAR14.VAR23 -= 5;
+if((int)VAR14.VAR23 < VAR25) VAR14.VAR23 = VAR25;
+
+
+VAR3 = 1 + VAR8->VAR26 * VAR8->VAR26;
+if(VAR8->VAR27 < 3) VAR3 += 2*(7 - VAR8->VAR27);
+if(strchr("", VAR8->VAR21))
+VAR3 += 2*VAR8->VAR26;
+if(strchr("",VAR8->VAR21)) VAR3 += (7*VAR8->VAR26);
+if(VAR8->VAR26 > 6) VAR3 += 50;
+if(VAR8->VAR21 == '') VAR3 += 1000;
+
+
+{ int VAR28 = VAR14.VAR29;
+int VAR30 = VAR8->VAR26;
+int VAR31;
+
+if(VAR28 < 14)    
+for(VAR31 = 0; !VAR31 || VAR28 + VAR31 <= VAR30; VAR31++)
+if(VAR14.VAR32 + 1 + (VAR3 + ((VAR31 <= 0) ? 0 : 4<<(VAR31-1)))/VAR4
+>= 10*FUN6((unsigned)(VAR28-1)))
+if(++VAR28 == 14) break;
+
+VAR31 = VAR30 - VAR28 -1;
+VAR3 = (VAR3 + ((VAR31 < 0) ? 0 : 4<<VAR31))/VAR4;
+if(!VAR3) VAR3 = 1;
+}
+
+
+
+FUN7(VAR3,0);
+VAR33.VAR34 = 1;
+while(VAR14.VAR29 < 14 && VAR14.VAR32 >= FUN8()){
+FUN2("", ++VAR14.VAR29);
+VAR3 = FUN9(10);
+if(VAR3 < 3) VAR3 = FUN9(10);
+VAR14.VAR35 += VAR3;
+VAR14.VAR36 += VAR3;
+VAR33.VAR34 = 1;
+}
+
+
+VAR5 = VAR2->VAR37;	VAR6 = VAR2->VAR38;
+FUN10(VAR2);
+VAR3 = VAR8->VAR21;
+if(VAR3 == '') { 
+
+FUN11(VAR39, VAR5, VAR6);
+
+FUN12(VAR40);
+} else
+if(VAR3 == '') {
+FUN11(VAR41, VAR5, VAR6);
+FUN12(VAR40);
+} else
+if(!FUN13(VAR3) || (!strchr("", VAR3) && !FUN14(3))) VAR3 = 0;
+
+if(FUN15(VAR42[VAR5][VAR6].VAR43))	
+if(VAR5 != VAR14.VAR44 || VAR6 != VAR14.VAR45)	
+if(strchr("",VAR8->VAR21) || FUN14(5)) {
+struct VAR46 *VAR47 = FUN16(VAR3,VAR5,VAR6);
+if(FUN17(VAR5,VAR6))
+FUN18(VAR5,VAR6,VAR47->VAR48);
+FUN12(VAR47);
+}
+}

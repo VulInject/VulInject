@@ -1,0 +1,40 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+struct VAR5 *VAR6;
+unsigned char *VAR7;
+struct VAR8 *VAR9;
+unsigned int VAR10;
+
+VAR6 = FUN3(VAR4, VAR4->VAR11);
+while (VAR6->VAR12 & FUN4(VAR13)) {
+VAR7 = VAR4->VAR14 + VAR4->VAR11 * VAR15;
+VAR10 = FUN5(VAR16, VAR6->VAR17);
+VAR9 = FUN6(VAR2, VAR10 + 2);
+if (VAR9) {
+FUN7(VAR9, 2);
+memcpy(FUN8(VAR9, VAR10), VAR7, VAR10);
+
+VAR9->VAR18 = FUN9(VAR9, VAR2);
+VAR2->VAR19.VAR20++;
+VAR2->VAR19.VAR21 += VAR10;
+FUN10(VAR9);
+} else {
+VAR2->VAR19.VAR22++;
+}
+
+if (VAR6->VAR17 & FUN4(VAR23))
+VAR2->VAR19.VAR24++;
+
+
+VAR6->VAR12 &= ~FUN4(VAR13);
+
+
+if (VAR4->VAR11 == VAR25 - 1)
+VAR4->VAR11 = 0;
+else
+VAR4->VAR11++;
+
+VAR6 = FUN3(VAR4, VAR4->VAR11);
+}
+}

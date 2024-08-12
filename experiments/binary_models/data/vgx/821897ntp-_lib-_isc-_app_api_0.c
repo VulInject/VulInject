@@ -1,0 +1,8 @@
+void
+FUN1(VAR1 **VAR2) {
+FUN2(VAR2 != NULL && FUN3(*VAR2));
+
+(*VAR2)->VAR3->FUN4(VAR2);
+
+FUN5(*VAR2 == NULL);
+}

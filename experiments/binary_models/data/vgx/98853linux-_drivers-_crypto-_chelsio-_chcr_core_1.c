@@ -1,0 +1,1 @@
+static int FUN1 ( void * VAR1 , enum cxgb4_state VAR2 ) { struct VAR3 * VAR4 = VAR1 ; int VAR5 = 0 ; switch ( VAR2 ) { case VAR6 : FUN2 ( VAR4 ) ; VAR5 = FUN3 ( ) ; break ; case VAR7 : FUN4 ( VAR4 ) ; if ( ! FUN5 ( & VAR8 . VAR9 ) ) { FUN6 ( ) ; } break ; case VAR10 : case VAR11 : default : break ; } return VAR5 ; }

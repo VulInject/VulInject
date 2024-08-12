@@ -1,0 +1,73 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR5->VAR6;
+unsigned int VAR7, VAR8, VAR9, VAR10;
+int VAR11, VAR12;
+VAR13 *VAR14;
+struct virtio_blk_outhdr VAR15;
+struct iovec VAR16[VAR2->VAR17.VAR18];
+off64_t VAR19;
+
+
+VAR7 = FUN2(VAR2, VAR16, &VAR8, &VAR9);
+
+
+FUN3(VAR2->VAR5, VAR16, VAR8, &VAR15, sizeof(VAR15));
+
+
+VAR14 = NULL;
+for (VAR12 = VAR8 + VAR9 - 1; VAR12 >= VAR8; VAR12--) {
+if (VAR16[VAR12].VAR20 > 0) {
+VAR14 = VAR16[VAR12].VAR21 + VAR16[VAR12].VAR20 - 1;
+VAR16[VAR12].VAR20--;
+break;
+}
+}
+if (!VAR14)
+FUN4(VAR2, "");
+
+
+VAR19 = VAR15.VAR22 * 512;
+
+if (VAR15.VAR23 & VAR24) {
+
+if (FUN5(VAR4->VAR25, VAR19, VAR26) != VAR19)
+FUN6(1, "", VAR15.VAR22);
+
+VAR11 = FUN7(VAR4->VAR25, VAR16, VAR8);
+FUN8("", VAR15.VAR22, VAR11);
+
+
+if (VAR11 > 0 && VAR19 + VAR11 > VAR4->VAR27) {
+
+FUN9(VAR4->VAR25, VAR4->VAR27);
+
+FUN4(VAR2, "", VAR19, VAR11);
+}
+
+VAR10 = sizeof(*VAR14);
+*VAR14 = (VAR11 >= 0 ? VAR28 : VAR29);
+} else if (VAR15.VAR23 & VAR30) {
+
+VAR11 = FUN10(VAR4->VAR25);
+FUN8("", VAR11);
+VAR10 = sizeof(*VAR14);
+*VAR14 = (VAR11 >= 0 ? VAR28 : VAR29);
+} else {
+
+if (FUN5(VAR4->VAR25, VAR19, VAR26) != VAR19)
+FUN6(1, "", VAR15.VAR22);
+
+VAR11 = FUN11(VAR4->VAR25, VAR16 + VAR8, VAR9);
+if (VAR11 >= 0) {
+VAR10 = sizeof(*VAR14) + VAR11;
+*VAR14 = VAR28;
+} else {
+VAR10 = sizeof(*VAR14);
+*VAR14 = VAR29;
+}
+}
+
+
+FUN12(VAR2, VAR7, VAR10);
+}

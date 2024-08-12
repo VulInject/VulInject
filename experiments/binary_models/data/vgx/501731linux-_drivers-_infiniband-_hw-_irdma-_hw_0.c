@@ -1,0 +1,23 @@
+void FUN1(struct VAR1 *VAR2, u8 VAR3, u8 VAR4, u8 VAR5,
+u8 VAR6)
+{
+struct irdma_modify_qp_info VAR7 = {};
+
+VAR7.VAR8 = VAR3;
+VAR7.VAR9 = VAR4;
+VAR7.VAR10 = true;
+VAR7.VAR11 = true;
+VAR7.VAR12 = true;
+VAR7.VAR13 = true;
+VAR7.VAR6 = VAR6;
+
+if (VAR5 & VAR14)
+VAR7.VAR12 = false;
+if (VAR5 & VAR15)
+VAR7.VAR13 = false;
+if (VAR2->VAR16.VAR17 && VAR3 == VAR18)
+VAR7.VAR19 = true;
+VAR2->VAR20 = VAR3;
+FUN2(VAR2->VAR21, VAR2, &VAR7, 0);
+VAR2->VAR22 = VAR7.VAR8;
+}

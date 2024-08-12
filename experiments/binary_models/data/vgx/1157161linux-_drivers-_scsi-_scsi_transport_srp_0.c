@@ -1,0 +1,33 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+int VAR5, VAR6, VAR7;
+
+FUN3(&VAR2->mutex);
+
+VAR5 = VAR2->VAR8;
+VAR6 = VAR2->VAR6;
+VAR7 = VAR2->VAR7;
+FUN4("", FUN5(&VAR4->VAR9),
+VAR2->VAR10);
+
+if (VAR2->VAR10 == VAR11)
+return;
+if (VAR5 > 0)
+FUN6(VAR12, &VAR2->VAR13,
+1UL * VAR5 * VAR14);
+if ((VAR6 >= 0 || VAR7 >= 0) &&
+FUN7(VAR2, VAR15) == 0) {
+FUN4("", FUN5(&VAR4->VAR9),
+VAR2->VAR10);
+FUN8(&VAR4->VAR9);
+if (VAR6 >= 0)
+FUN6(VAR12,
+&VAR2->VAR16,
+1UL * VAR6 * VAR14);
+if (VAR7 >= 0)
+FUN6(VAR12,
+&VAR2->VAR17,
+1UL * VAR7 * VAR14);
+}
+}

@@ -1,0 +1,1 @@
+static unsigned int FUN1 ( unsigned int VAR1 ) { union msr_fidvidstatus VAR2 ; int VAR3 ; if ( VAR1 ) { return 0 ; } FUN2 ( VAR4 , VAR2 . VAR5 ) ; VAR3 = VAR2 . VAR6 . VAR7 ; return VAR8 * VAR9 [ VAR3 ] / 10 ; }

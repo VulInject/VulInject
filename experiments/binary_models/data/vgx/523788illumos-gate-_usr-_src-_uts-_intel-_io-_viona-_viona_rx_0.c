@@ -1,0 +1,90 @@
+static int
+FUN1(VAR1 *VAR2, const VAR3 *VAR4, size_t VAR5)
+{
+struct iovec VAR6[VAR7];
+uint16_t VAR8;
+int VAR9;
+const size_t VAR10 = sizeof (struct VAR11);
+struct VAR11 *VAR12;
+size_t VAR13, VAR14 = 0;
+caddr_t VAR15 = NULL;
+boolean_t VAR16 = VAR17;
+const uint32_t VAR18 = VAR2->VAR19->VAR20;
+VAR21 *VAR22 = NULL;
+
+FUN2(VAR5 >= VAR23);
+
+VAR9 = FUN3(VAR2, VAR6, VAR7, &VAR8, &VAR22);
+if (VAR9 <= 0) {
+
+return (VAR24);
+}
+if (VAR6[0].VAR25 < VAR10) {
+
+FUN4(VAR6[0].VAR26, VAR6[0].VAR25);
+goto VAR27;
+}
+
+
+VAR12 = (struct VAR11 *)VAR6[0].VAR26;
+
+
+if (VAR6[0].VAR25 > VAR10) {
+VAR15 = (VAR28)VAR6[0].VAR26 + VAR10;
+VAR13 = VAR6[0].VAR25 - VAR10;
+
+VAR14 += FUN5(VAR4, VAR14, VAR15, VAR13, &VAR16);
+}
+
+
+for (int VAR29 = 1; VAR29 < VAR9 && !VAR16; VAR29++) {
+VAR15 = (VAR28)VAR6[VAR29].VAR26;
+VAR13 = VAR6[VAR29].VAR25;
+
+VAR14 += FUN5(VAR4, VAR14, VAR15, VAR13, &VAR16);
+}
+
+
+if (VAR14 != VAR5) {
+FUN6(VAR30, VAR1 *, VAR2,
+VAR31, VAR8, VAR3 *, VAR4, VAR32, VAR14,
+VAR32, VAR5);
+FUN7(VAR2, VAR30);
+goto VAR27;
+}
+
+
+FUN4(VAR12, VAR10);
+VAR14 += VAR10;
+
+
+if ((VAR18 & VAR33) != 0) {
+uint32_t VAR34;
+
+if (((VAR18 & VAR35) != 0) &&
+((FUN8(VAR4) & VAR36) != 0)) {
+VAR12->VAR37 |= VAR38;
+VAR12->VAR39 = FUN9(VAR4);
+}
+
+FUN10((VAR3 *)VAR4, NULL, NULL, NULL, NULL,
+&VAR34);
+if ((VAR34 & VAR40) != 0) {
+VAR12->VAR41 |= VAR42;
+}
+}
+
+
+FUN11(VAR22);
+FUN12(VAR2, VAR14, VAR8);
+return (0);
+
+VAR27:
+FUN13(VAR43, VAR1 *, VAR2, VAR31, VAR8,
+VAR3 *, VAR4);
+FUN7(VAR2, VAR43);
+
+FUN11(VAR22);
+FUN12(VAR2, FUN14(VAR14, VAR23 + VAR10), VAR8);
+return (VAR44);
+}

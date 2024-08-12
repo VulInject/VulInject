@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { int VAR1 , VAR2 ; FUN2 ( & VAR3 ) ; VAR1 = FUN3 ( VAR4 , FUN4 ( ) ) ; FUN5 ( ) ; FUN6 ( VAR5 , 1 ) ; FUN7 ( ) { struct VAR6 * VAR7 = FUN3 ( VAR8 , VAR2 ) [ VAR1 ] ; memset ( VAR7 , 0 , VAR9 * sizeof ( VAR6 ) ) ; } FUN8 ( & VAR3 ) ; }

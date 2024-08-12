@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , u8 VAR3 , enum channel_width VAR4 , u8 VAR5 , VAR6 * VAR7 , u8 VAR8 ) { int VAR9 = 0 ; int VAR10 = 0 ; for ( VAR10 = 0 ; VAR10 < VAR8 ; ++ VAR10 ) { VAR9 = FUN2 ( VAR2 , VAR3 , VAR7 [ VAR10 ] , VAR4 , VAR5 ) ; FUN3 ( VAR2 , VAR9 , VAR3 , VAR7 [ VAR10 ] ) ; } }

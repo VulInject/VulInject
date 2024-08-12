@@ -1,0 +1,76 @@
+static void
+FUN1(  VAR1 *VAR2, unsigned VAR3, VAR4 **VAR5 )
+{
+MPI VAR6;    
+MPI VAR7;
+MPI VAR8;
+MPI VAR9;    
+MPI VAR10;
+MPI VAR11;
+unsigned VAR12;
+VAR13 *VAR14;
+
+VAR7 = FUN2( (VAR3+VAR15-1)/VAR15 );
+VAR11   = FUN2( (VAR3+VAR15-1)/VAR15 );
+if( VAR3 < 512 )
+VAR12 = 120;
+else if( VAR3 <= 1024 )
+VAR12 = 160;
+else if( VAR3 <= 2048 )
+VAR12 = 200;
+else
+VAR12 = 240;
+VAR8 = FUN2(1);
+VAR6 = FUN3( 0, VAR3, VAR12, VAR8, VAR5 );
+FUN4(VAR7, VAR6, 1);
+
+
+
+VAR9 = FUN5( VAR3/VAR15 );
+if( VAR16 )
+FUN6("");
+VAR14 = NULL;
+do {
+if( VAR16 )
+FUN7('');
+if( VAR14 ) { 
+if( VAR3 < 16 ) {
+FUN8(VAR14);
+VAR14 = FUN9( VAR3, 2, 1 );
+}
+else {
+char *VAR17 = FUN9( 16, 2, 1 );
+memcpy(VAR14, VAR17, 16/8 );
+FUN8(VAR17);
+}
+}
+else
+VAR14 = FUN9( VAR3, 2, 1 );
+FUN10( VAR9, VAR14, (VAR3+7)/8, 0 );
+FUN11( VAR9, VAR3+1 );
+} while( !( FUN12( VAR9, 0 )>0 && FUN13( VAR9, VAR7 )<0 ) );
+FUN8(VAR14);
+
+VAR10 = FUN2(VAR3/VAR15);
+FUN14( VAR10, VAR8, VAR9, VAR6 );
+
+if( VAR16 ) {
+FUN7('');
+FUN15("", VAR6 );
+FUN15("", VAR8 );
+FUN15("", VAR10 );
+FUN15("", VAR9 );
+}
+
+
+VAR2->VAR6 = VAR6;
+VAR2->VAR8 = VAR8;
+VAR2->VAR10 = VAR10;
+VAR2->VAR9 = VAR9;
+
+
+FUN16( VAR2, VAR3 - 64 );
+
+FUN17( VAR7 );
+FUN17( VAR11   );
+}

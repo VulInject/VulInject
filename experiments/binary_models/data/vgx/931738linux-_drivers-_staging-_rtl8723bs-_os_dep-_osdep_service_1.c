@@ -1,0 +1,1 @@
+void * FUN1 ( struct VAR1 * VAR2 ) { void * VAR3 ; if ( FUN2 ( VAR2 ) ) { return VAR4 ; } VAR3 = VAR2 -> VAR5 [ VAR2 -> read ] ; VAR2 -> read = ( VAR2 -> read + 1 ) % VAR2 -> VAR6 ; return VAR3 ; }

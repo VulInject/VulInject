@@ -1,0 +1,29 @@
+static void FUN1(VAR1 *VAR2, DWORD VAR3)
+{
+VAR4 *VAR5 = FUN2(VAR2);
+int VAR6 = FUN3(VAR2);
+int VAR7, VAR8;
+uint8_t VAR9[VAR10];
+DWORD VAR11;
+
+if (VAR3 > VAR6) {
+VAR3 = VAR6;
+}
+if (VAR3 == 0) {
+return;
+}
+
+FUN4(&VAR5->VAR12, sizeof(VAR5->VAR12));
+VAR5->VAR12.VAR13 = VAR5->VAR14;
+VAR7 = FUN5(VAR5->VAR15, VAR9, VAR3, &VAR11, &VAR5->VAR12);
+if (!VAR7) {
+VAR8 = FUN6();
+if (VAR8 == VAR16) {
+VAR7 = FUN7(VAR5->VAR15, &VAR5->VAR12, &VAR11, VAR17);
+}
+}
+
+if (VAR11 > 0) {
+FUN8(VAR2, VAR9, VAR11);
+}
+}

@@ -1,0 +1,30 @@
+int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4, VAR5 *VAR6, int VAR7)
+{
+unsigned long VAR8;
+int VAR9, VAR10, VAR11;
+struct ir_raw_event VAR12 = {};
+
+
+FUN2(&VAR2->VAR13, VAR8);
+if (!VAR2->VAR14 || (VAR2->VAR15 & VAR16)) {
+FUN3(&VAR2->VAR13, VAR8);
+return 1;
+}
+FUN3(&VAR2->VAR13, VAR8);
+
+
+VAR11 = VAR7 > 0 ? FUN4((int)VAR6[0], VAR7-1) : 0;
+for (VAR9 = 0; VAR9+1 < VAR11; VAR9 += 2) {
+VAR10 = (VAR6[VAR9] << 8) | (VAR6[VAR9+1]);
+VAR12.VAR17 = !!(VAR10 & 0x8000);
+VAR12.VAR18 = VAR12.VAR17 ? (65536 - VAR10) : VAR10;
+
+if (VAR9 == 0 && VAR12.VAR18 > 15000)
+VAR12.VAR18 -= 15000;
+FUN5(VAR2->VAR14, &VAR12);
+}
+FUN6(VAR2->VAR14);
+
+return 1;
+}

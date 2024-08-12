@@ -1,0 +1,9 @@
+void *
+FUN1(WindowObject VAR1, Size VAR2)
+{
+FUN2(FUN3(VAR1));
+if (VAR1->VAR3 == NULL)
+VAR1->VAR3 =
+FUN4(VAR1->VAR4->VAR5, VAR2);
+return VAR1->VAR3;
+}

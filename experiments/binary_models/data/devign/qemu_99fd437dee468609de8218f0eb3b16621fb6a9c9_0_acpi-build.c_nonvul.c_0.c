@@ -1,0 +1,56 @@
+void FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    VAR5 *VAR6;
+    unsigned VAR7, VAR8, VAR9;
+    AcpiCpuInfo VAR10;
+    AcpiPmInfo VAR11;
+    AcpiMiscInfo VAR12;
+    AcpiMcfgInfo VAR13;
+    PcPciInfo VAR14;
+    VAR15 *VAR16;
+    FUN2(&VAR10);
+    FUN3(&VAR11);
+    FUN4(&VAR12);
+    FUN5(&VAR12);
+    FUN6(&VAR14);
+    VAR6 = FUN7(false, true, sizeof(VAR17));
+    FUN8(3, "");
+    FUN9(VAR4->VAR18, VAR19, 64, false);
+    VAR7 = VAR4->VAR20->VAR21;
+    FUN10(VAR4->VAR20, VAR4->VAR18, VAR2);
+    VAR8 = VAR4->VAR20->VAR21;
+    FUN11(VAR4->VAR20, VAR4->VAR18, &VAR12);
+    FUN12(VAR6, VAR4->VAR20);
+    FUN13(VAR4->VAR20, VAR4->VAR18, &VAR11, VAR7, VAR8);
+    FUN12(VAR6, VAR4->VAR20);
+    FUN14(VAR4->VAR20, VAR4->VAR18, &VAR10, &VAR11, &VAR12, &VAR14, VAR2);
+    FUN12(VAR6, VAR4->VAR20);
+    FUN15(VAR4->VAR20, VAR4->VAR18, &VAR10, VAR2);
+    FUN12(VAR6, VAR4->VAR20);
+    if (VAR12.VAR22)
+    {
+        FUN16(VAR4->VAR20, VAR4->VAR18);
+    }
+    if (VAR2->VAR23)
+    {
+        FUN12(VAR6, VAR4->VAR20);
+        FUN17(VAR4->VAR20, VAR4->VAR18, &VAR10, VAR2);
+    }
+    if (FUN18(&VAR13))
+    {
+        FUN12(VAR6, VAR4->VAR20);
+        FUN19(VAR4->VAR20, VAR4->VAR18, &VAR13);
+    }
+    for (VAR16 = FUN20(); VAR16; VAR16 = FUN21(VAR16))
+    {
+        unsigned VAR21 = FUN22(VAR16);
+        FUN12(VAR6, VAR4->VAR20);
+        FUN23(VAR4->VAR20, VAR16, VAR21);
+    }
+    VAR9 = VAR4->VAR20->VAR21;
+    FUN24(VAR4->VAR20, VAR4->VAR18, VAR6);
+    FUN25(VAR4->VAR24, VAR4->VAR18, VAR9);
+    FUN26(VAR4->VAR20, 0x1000);
+    FUN26(VAR4->VAR18, 0x1000);
+    FUN27(VAR6, true);
+}

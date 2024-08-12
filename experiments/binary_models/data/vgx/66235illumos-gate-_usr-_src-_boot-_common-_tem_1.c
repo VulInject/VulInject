@@ -1,0 +1,1 @@
+void FUN1 ( tem_vt_state_t VAR1 , VAR2 * VAR3 , ssize_t VAR4 ) { struct VAR5 * VAR6 = ( VAR5 * ) VAR1 ; FUN2 ( VAR6 ) ; FUN3 ( VAR6 , VAR3 , VAR4 ) ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( const void * VAR1 , int VAR2 ) { if ( VAR2 == VAR3 ) { u32 VAR4 ; VAR4 = FUN2 ( VAR1 + VAR5 ) ; } return 0 ; }

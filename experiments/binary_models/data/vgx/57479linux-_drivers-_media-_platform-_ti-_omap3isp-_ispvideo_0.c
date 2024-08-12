@@ -1,0 +1,39 @@
+static unsigned int FUN1(const struct VAR1 *VAR2,
+const struct VAR3 *VAR4,
+struct VAR5 *VAR6)
+{
+unsigned int VAR7 = VAR6->VAR8;
+unsigned int VAR9;
+unsigned int VAR10;
+
+memset(VAR6, 0, sizeof(*VAR6));
+VAR6->VAR11 = VAR4->VAR11;
+VAR6->VAR12 = VAR4->VAR12;
+
+for (VAR10 = 0; VAR10 < FUN2(VAR13); ++VAR10) {
+if (VAR13[VAR10].VAR14 == VAR4->VAR14)
+break;
+}
+
+if (FUN3(VAR10 == FUN2(VAR13)))
+return 0;
+
+VAR9 = VAR6->VAR11 * VAR13[VAR10].VAR15;
+
+
+if (VAR2->VAR16)
+VAR7 = FUN4(VAR7, VAR9, VAR2->VAR16);
+else
+VAR7 = VAR9;
+
+if (!VAR2->VAR17 || VAR7 != VAR9)
+VAR7 = FUN5(VAR7, VAR2->VAR18);
+
+VAR6->VAR19 = VAR13[VAR10].VAR19;
+VAR6->VAR8 = VAR7;
+VAR6->VAR20 = VAR6->VAR8 * VAR6->VAR12;
+VAR6->VAR21 = VAR4->VAR21;
+VAR6->VAR22 = VAR4->VAR22;
+
+return VAR7 - VAR9;
+}

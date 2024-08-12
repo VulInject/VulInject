@@ -1,0 +1,29 @@
+static void FUN1(VAR1 *VAR2)
+{
+    int VAR3, VAR4;
+    VAR3 = -VAR5;
+    VAR3 += VAR6;
+    VAR3 += FUN2(VAR7) * 4;
+    VAR3 = ((VAR3 + VAR8 - 1) & -VAR8);
+    FUN3(VAR2, VAR9, VAR10, VAR11, -20);
+    FUN4(VAR2, VAR7[0], VAR11, VAR3, VAR12);
+    for (VAR4 = 1; VAR4 < FUN2(VAR7); VAR4++)
+    {
+        FUN3(VAR2, VAR9, VAR7[VAR4], VAR11, -VAR3 + VAR4 * 4);
+    }
+    if (VAR13 != 0)
+    {
+        FUN5(VAR2, VAR9, VAR14, VAR13);
+        FUN6(VAR2->VAR15, VAR14);
+    }
+    FUN7(VAR2, VAR9, VAR16, VAR17[0]);
+    FUN8(VAR2, VAR18 | FUN9(VAR17[1]));
+    FUN7(VAR2, VAR19, VAR20, VAR21);
+    FUN10(VAR2, VAR9, VAR10, VAR11, -VAR3 - 20);
+    for (VAR4 = 1; VAR4 < FUN2(VAR7); VAR4++)
+    {
+        FUN10(VAR2, VAR9, VAR7[VAR4], VAR11, -VAR3 + VAR4 * 4);
+    }
+    FUN8(VAR2, VAR22 | FUN9(VAR10));
+    FUN4(VAR2, VAR7[0], VAR11, -VAR3, VAR23);
+}

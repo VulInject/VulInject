@@ -1,0 +1,27 @@
+static int FUN1(VAR1 *VAR2, UINT VAR3)
+{
+    VAR4 *VAR5 = VAR2->VAR6;
+    D3DPRESENT_PARAMETERS VAR7 = VAR8;
+    D3DDISPLAYMODEEX VAR9 = {0};
+    VAR10 *VAR11 = NULL;
+    VAR12 *VAR13 = NULL;
+    HRESULT VAR14;
+    VAR15 *VAR16 = (VAR15 *)FUN2(VAR5->VAR17, "");
+    if (!VAR16)
+        return FUN3(VAR18);
+    VAR14 = FUN4(VAR19, &VAR11);
+    if (FUN5(VAR14))
+        return VAR20;
+    FUN6(VAR11, VAR3, &VAR9, NULL);
+    VAR7.VAR21 = VAR9.VAR22;
+    VAR14 = FUN7(VAR11, VAR3, VAR23, FUN8(), VAR24, &VAR7, NULL, &VAR13);
+    if (FUN5(VAR14))
+    {
+        FUN9(VAR11);
+        return VAR20;
+    }
+    FUN10(VAR2, VAR25, "");
+    VAR5->VAR26 = (VAR27 *)VAR11;
+    VAR5->VAR28 = (VAR29 *)VAR13;
+    return 0;
+}

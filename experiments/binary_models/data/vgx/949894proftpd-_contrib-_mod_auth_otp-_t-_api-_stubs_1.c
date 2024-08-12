@@ -1,0 +1,1 @@
+VAR1 * VAR2 = NULL ; VAR3 * VAR4 ; int VAR5 = - 1 ; VAR6 * FUN1 ( VAR7 * VAR8 , int VAR9 , const char * VAR10 , int VAR11 ) { return NULL ; }

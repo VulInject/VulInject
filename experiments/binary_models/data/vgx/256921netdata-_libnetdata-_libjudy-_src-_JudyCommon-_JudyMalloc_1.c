@@ -1,0 +1,1 @@
+void FUN1 ( void * VAR1 , Word_t VAR2 ) { ( void ) VAR2 ; }

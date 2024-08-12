@@ -1,0 +1,1 @@
+static int FUN1 ( unsigned int VAR1 ) { unsigned long VAR2 ; FUN2 ( VAR2 ) ; FUN3 ( ) ; FUN4 ( VAR2 , NULL ) ; return 0 ; }

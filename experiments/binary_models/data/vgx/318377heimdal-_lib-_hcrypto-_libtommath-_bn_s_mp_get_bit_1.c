@@ -1,0 +1,1 @@
+mp_bool FUN1 ( const VAR1 * VAR2 , unsigned int VAR3 ) { mp_digit VAR4 ; int VAR5 = ( int ) ( VAR3 / VAR6 ) ; VAR4 = ( VAR7 ) 1 << ( VAR3 % VAR6 ) ; return ( ( VAR2 -> VAR8 [ VAR5 ] & VAR4 ) != 0u ) ?VAR9 : VAR10 ; }

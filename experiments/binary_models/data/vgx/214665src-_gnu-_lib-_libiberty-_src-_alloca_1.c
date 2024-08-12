@@ -1,0 +1,1 @@
+static long FUN1 ( ) static int VAR1 ; static void FUN2 ( void ) { static char * VAR2 = NULL ; auto char VAR3 ; if ( VAR2 == NULL ) { VAR2 = FUN3 ( VAR3 , NULL ) ; FUN2 ( ) ; } else { if ( FUN3 ( VAR3 ) > VAR2 ) { VAR1 = 1 ; } else { VAR1 = - 1 ; } } }

@@ -1,0 +1,59 @@
+void FUN1(struct VAR1 *VAR2, int VAR3,
+struct VAR1 *VAR4, int VAR5, int VAR6)
+{
+struct VAR7 *VAR8;
+struct VAR9 **VAR10, **VAR11;
+int VAR12;
+
+FUN2(VAR13, "", VAR3, VAR5, VAR6);
+if (!VAR6)
+return;
+VAR8 = VAR4->VAR8;
+VAR5 += VAR4->VAR14;
+VAR3 += VAR2->VAR14;
+VAR10 = VAR4->VAR9 + (VAR5 >> VAR15);
+VAR5 &= ~VAR16;
+VAR11 = VAR2->VAR9 + (VAR3 >> VAR15);
+VAR3 &= ~VAR16;
+
+if (VAR5 == VAR3) {
+VAR12 = FUN3(int, VAR6, VAR17 - VAR5);
+memcpy(FUN4(*VAR11) + VAR5, FUN4(*VAR10) + VAR5, VAR12);
+FUN5(*VAR10);
+FUN6(*VAR11);
+FUN5(*VAR11);
+
+while ((VAR6 -= VAR12) != 0) {
+VAR12 = FUN3(int, VAR6, VAR17);
+memcpy(FUN4(*++VAR11), FUN4(*++VAR10), VAR12);
+FUN5(*VAR10);
+FUN6(*VAR11);
+FUN5(*VAR11);
+}
+} else {
+void *VAR18, *VAR19;
+
+do {
+VAR18 = FUN4(*VAR10) + VAR5;
+VAR19 = FUN4(*VAR11) + VAR3;
+if (VAR17 - VAR5 < VAR17 - VAR3) {
+VAR12 = VAR17 - VAR5;
+VAR5 = 0;
+VAR3 += VAR12;
+} else {
+VAR12 = VAR17 - VAR3;
+VAR5 += VAR12;
+VAR3 = 0;
+}
+VAR12 = FUN7(VAR6, VAR12);
+memcpy(VAR19, VAR18, VAR12);
+FUN5(*VAR10);
+FUN6(*VAR11);
+FUN5(*VAR11);
+if (!VAR3)
+VAR11++;
+else
+VAR10++;
+} while ((VAR6 -= VAR12));
+}
+}

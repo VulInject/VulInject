@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , uint64_t VAR3 , void * VAR4 ) { VAR5 * VAR6 = FUN2 ( VAR4 ) ; HomeState VAR7 ; VAR6 -> VAR8 = FUN3 ( VAR6 -> VAR8 ) ; VAR7 = FUN4 ( VAR6 ) ; if ( ! FUN5 ( VAR7 ) ) { return 0 ; } if ( FUN6 ( VAR7 , VAR9 , VAR10 ) ) { FUN7 ( "" ) ; ( void ) FUN8 ( VAR6 , false , NULL ) ; } else { FUN9 ( VAR6 ) ; } return 0 ; }

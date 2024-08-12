@@ -1,0 +1,72 @@
+static int FUN1(struct socket *VAR1, struct VAR2 *VAR3,
+size_t VAR4)
+{
+struct VAR1 *VAR5 = VAR1->VAR5;
+struct VAR6 *VAR7;
+int VAR8;
+struct VAR9 *VAR10;
+struct VAR11 *VAR12;
+struct VAR13 *VAR14;
+int VAR15;
+
+VAR8 = -VAR16;
+if (FUN2(VAR5, VAR17) || !(VAR5->VAR18 & VAR19))
+goto VAR8;
+
+
+VAR8 = -VAR20;
+VAR10 = FUN3(VAR5);
+if (VAR10 == NULL)
+goto VAR8;
+
+VAR14 = FUN4(VAR10);
+VAR12 = FUN5(VAR14->VAR21);
+if (VAR12 == NULL)
+goto VAR22;
+
+VAR15 = (VAR12->VAR23 == VAR24) ? sizeof(struct VAR25) : 0;
+
+
+VAR8 = -VAR26;
+VAR7 = FUN6(VAR5, VAR27 + sizeof(struct VAR28) +
+VAR15 + VAR10->VAR29 +
+2 + VAR4, 
+0, VAR30);
+if (!VAR7)
+goto VAR31;
+
+
+FUN7(VAR7, VAR27);
+FUN8(VAR7);
+FUN7(VAR7, sizeof(struct VAR28));
+FUN9(VAR7);
+FUN7(VAR7, VAR15);
+
+
+VAR7->VAR32[0] = VAR33;
+VAR7->VAR32[1] = VAR34;
+FUN10(VAR7, 2);
+
+
+VAR8 = FUN11(FUN10(VAR7, VAR4), VAR3, VAR4);
+if (VAR8 < 0) {
+FUN12(VAR7);
+goto VAR31;
+}
+
+FUN13();
+FUN14(VAR10, VAR7, VAR10->VAR29);
+FUN15();
+
+FUN16(VAR14->VAR21);
+FUN16(VAR5);
+
+return VAR4;
+
+VAR31:
+FUN16(VAR14->VAR21);
+VAR22:
+FUN16(VAR5);
+VAR8:
+return VAR8;
+}

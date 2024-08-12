@@ -1,0 +1,1 @@
+static BOOL FUN1 ( const char * VAR1 , const char * VAR2 , char * VAR3 ) { BOOL VAR4 = VAR5 ; FUN2 ( VAR1 , NULL ) ; FUN2 ( VAR2 ) ; FUN2 ( VAR3 ) ; if ( ( VAR2 < VAR1 ) || ( ( VAR6 ) ( VAR2 - VAR1 ) < strlen ( "" ) ) ) { return VAR7 ; } * VAR3 = 0 ; * VAR3 |= FUN3 ( VAR1 [ 1 ] , & VAR4 ) ; * VAR3 <<= 4 ; * VAR3 |= FUN3 ( VAR1 [ 2 ] , & VAR4 ) ; return VAR4 ; }

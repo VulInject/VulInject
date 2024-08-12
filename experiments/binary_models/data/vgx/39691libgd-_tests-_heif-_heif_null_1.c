@@ -1,0 +1,1 @@
+int main ( ) { gdImagePtr VAR1 ; VAR1 = FUN1 ( NULL ) ; if ( ! FUN2 ( VAR1 == NULL ) ) { FUN3 ( VAR1 ) ; } FUN4 ( VAR1 ) ; return FUN5 ( ) ; }

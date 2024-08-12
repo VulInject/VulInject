@@ -1,0 +1,1 @@
+static void FUN1 ( const VAR1 * VAR2 ) { int VAR3 ; for ( VAR3 = 0 ; VAR3 < VAR2 -> VAR4 ; ++ VAR3 ) { fputs ( "" , VAR2 -> VAR5 ) ; } }

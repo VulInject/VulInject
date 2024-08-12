@@ -1,0 +1,73 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+unsigned int VAR5, VAR6, VAR7, VAR8, VAR9, VAR10;
+unsigned int VAR11;
+struct clk VAR12;
+int VAR13;
+u32 VAR14 = FUN3(VAR4->VAR15 + VAR16);
+
+if (VAR14 & VAR17)
+return  0;
+
+VAR13 = FUN4(VAR2, 1, &VAR12);
+if (VAR13)
+return VAR13;
+
+VAR13 = FUN5(&VAR12);
+if (VAR13) {
+FUN6(&VAR12);
+return VAR13;
+}
+
+VAR11 = FUN7(&VAR12);
+
+
+VAR8 = VAR18 >> VAR19;
+VAR9 = VAR20 >> VAR21;
+
+for (VAR6 = VAR8; VAR6 + 1 > 0; VAR6--) {
+VAR7 = (VAR11 / (VAR6 + 1)) - 1;
+
+if (((VAR7 + 1) * (VAR6 + 1)) == VAR11)
+break;
+}
+
+
+if (VAR7 > VAR9 || VAR6 > VAR8) {
+VAR6 = VAR8;
+VAR7 = (VAR11 / (VAR6 + 1)) - 1;
+}
+
+FUN8(VAR2);
+
+VAR13 = FUN9(VAR2);
+if (VAR13) {
+FUN10(VAR2,
+"");
+goto VAR22;
+}
+
+VAR5 = (VAR7 << VAR21) & VAR20;
+VAR5 |= (VAR6 << VAR19) & VAR18;
+FUN11(VAR5, VAR4->VAR15 + VAR23);
+
+
+VAR10 = FUN3(VAR4->VAR15 + VAR24);
+VAR10 &= ~VAR25;
+FUN11(VAR10, VAR4->VAR15 + VAR24);
+
+FUN12(VAR2);
+
+VAR13 = FUN13(VAR2);
+
+VAR22:
+FUN14(VAR2);
+
+if (VAR13) {
+FUN15(&VAR12);
+FUN6(&VAR12);
+}
+
+return VAR13;
+}

@@ -1,0 +1,1 @@
+void FUN1 ( fe VAR1 ) { VAR1 [ 1 ] = 0 ; VAR1 [ 2 ] = 0 ; VAR1 [ 3 ] = 0 ; VAR1 [ 4 ] = 0 ; VAR1 [ 5 ] = 0 ; VAR1 [ 6 ] = 0 ; VAR1 [ 7 ] = 0 ; VAR1 [ 8 ] = 0 ; VAR1 [ 9 ] = 0 ; }

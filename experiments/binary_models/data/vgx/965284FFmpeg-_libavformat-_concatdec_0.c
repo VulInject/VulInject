@@ -1,0 +1,49 @@
+static int FUN1(VAR1 *VAR2, int VAR3,
+int64_t VAR4, int64_t VAR5, int64_t VAR6, int VAR7, VAR1 *VAR8)
+{
+VAR9 *VAR10 = VAR2->VAR11;
+int VAR12, VAR13, VAR14;
+
+if (VAR3 >= 0) {
+if (VAR3 >= VAR2->VAR15)
+return FUN2(VAR16);
+FUN3(VAR2->VAR17[VAR3]->VAR18, VAR19,
+&VAR4, &VAR5, &VAR6);
+}
+
+VAR13  = 0;
+VAR14 = VAR10->VAR20;
+
+
+if (VAR5 <= 0)
+VAR14 = 1;
+else if (!VAR10->VAR21)
+return FUN2(VAR22); 
+
+while (VAR14 - VAR13 > 1) {
+int VAR23 = (VAR13 + VAR14) / 2;
+if (VAR5 < VAR10->VAR24[VAR23].VAR25)
+VAR14 = VAR23;
+else
+VAR13  = VAR23;
+}
+
+if (VAR10->VAR26 != &VAR10->VAR24[VAR13]) {
+if ((VAR12 = FUN4(VAR2, VAR13)) < 0)
+return VAR12;
+} else {
+VAR10->VAR2 = VAR8;
+}
+
+VAR12 = FUN5(VAR2, VAR3, VAR4, VAR5, VAR6, VAR7);
+if (VAR12 < 0 &&
+VAR13 < VAR10->VAR20 - 1 &&
+VAR10->VAR24[VAR13 + 1].VAR25 < VAR6) {
+if (VAR10->VAR26 == &VAR10->VAR24[VAR13])
+VAR10->VAR2 = NULL;
+if ((VAR12 = FUN4(VAR2, VAR13 + 1)) < 0)
+return VAR12;
+VAR12 = FUN5(VAR2, VAR3, VAR4, VAR5, VAR6, VAR7);
+}
+return VAR12;
+}

@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , size_t VAR5 ) { VAR6 * new ; new = FUN2 ( VAR5 , sizeof ( * new ) , VAR7 ) ; if ( ! new ) { return - VAR8 ; } if ( VAR4 -> VAR9 ) { memcpy ( new , VAR4 -> VAR9 , sizeof ( * new ) * FUN3 ( VAR4 -> VAR5 , VAR5 ) ) ; FUN4 ( VAR4 -> VAR9 ) ; } VAR4 -> VAR9 = new ; VAR4 -> VAR10 = VAR5 ; return 0 ; }

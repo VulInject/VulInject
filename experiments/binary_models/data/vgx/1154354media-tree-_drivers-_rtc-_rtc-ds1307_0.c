@@ -1,0 +1,73 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct VAR5	*VAR5 = FUN2(VAR2);
+int		VAR6;
+int		VAR7;
+VAR8		*VAR9 = VAR5->VAR10;
+
+FUN3(VAR2, ""
+"",
+"", VAR4->VAR11, VAR4->VAR12,
+VAR4->VAR13, VAR4->VAR14,
+VAR4->VAR15, VAR4->VAR16, VAR4->VAR17);
+
+if (VAR4->VAR16 < 100)
+return -VAR18;
+
+switch (VAR5->VAR19) {
+case VAR20:
+case VAR21:
+case VAR22:
+case VAR23:
+if (VAR4->VAR16 > 299)
+return -VAR18;
+default:
+if (VAR4->VAR16 > 199)
+return -VAR18;
+break;
+}
+if (VAR4->VAR16 < 100 || VAR4->VAR16 > 199)
+return -VAR18;
+
+VAR9[VAR24] = FUN4(VAR4->VAR11);
+VAR9[VAR25] = FUN4(VAR4->VAR12);
+VAR9[VAR26] = FUN4(VAR4->VAR13);
+VAR9[VAR27] = FUN4(VAR4->VAR17 + 1);
+VAR9[VAR28] = FUN4(VAR4->VAR14);
+VAR9[VAR29] = FUN4(VAR4->VAR15 + 1);
+
+
+VAR7 = VAR4->VAR16 - 100;
+VAR9[VAR30] = FUN4(VAR7);
+
+switch (VAR5->VAR19) {
+case VAR20:
+case VAR21:
+case VAR22:
+if (VAR4->VAR16 > 199)
+VAR9[VAR29] |= VAR31;
+break;
+case VAR23:
+VAR9[VAR26] |= VAR32;
+if (VAR4->VAR16 > 199)
+VAR9[VAR26] |= VAR33;
+break;
+case VAR34:
+
+VAR9[VAR24] |= VAR35;
+VAR9[VAR27] |= VAR36;
+break;
+default:
+break;
+}
+
+FUN3(VAR2, "", "", VAR9);
+
+VAR6 = VAR5->FUN5(VAR5->VAR37,
+VAR5->VAR38, 7, VAR9);
+if (VAR6 < 0) {
+FUN6(VAR2, "", "", VAR6);
+return VAR6;
+}
+return 0;
+}

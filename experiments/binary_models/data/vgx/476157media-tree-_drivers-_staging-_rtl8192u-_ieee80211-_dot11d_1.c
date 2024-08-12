@@ -1,0 +1,1 @@
+( VAR1 ) ; void FUN1 ( struct VAR2 * VAR3 ) { u32 VAR4 ; PRT_DOT11D_INFO VAR5 = FUN2 ( VAR3 ) ; memset ( VAR5 -> VAR6 , 0xFF , VAR7 + 1 ) ; for ( VAR4 = 1 ; VAR4 <= 11 ; VAR4 ++ ) { ( VAR5 -> VAR8 ) [ VAR4 ] = 1 ; } for ( VAR4 = 12 ; VAR4 <= 14 ; VAR4 ++ ) { ( VAR5 -> VAR8 ) [ VAR4 ] = 2 ; } VAR5 -> VAR9 = VAR10 ; VAR5 -> VAR11 = 0 ; FUN3 ( VAR3 ) ; }

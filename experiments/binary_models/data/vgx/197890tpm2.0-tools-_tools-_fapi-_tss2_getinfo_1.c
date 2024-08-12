@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 ) { if ( ! VAR3 . VAR4 ) { fprintf ( VAR5 , "" ) ; return - 1 ; } char * VAR4 ; TSS2_RC VAR6 = FUN2 ( VAR2 , & VAR4 ) ; if ( VAR6 != VAR7 ) { FUN3 ( "" , VAR6 ) ; return 1 ; } VAR6 = FUN4 ( VAR3 . VAR4 , VAR3 . VAR8 , VAR4 , strlen ( VAR4 ) ) ; if ( VAR6 ) { return 1 ; } FUN5 ( VAR4 ) ; return 0 ; }

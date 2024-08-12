@@ -1,0 +1,17 @@
+static int FUN1(struct VAR1* VAR2, u8 VAR3[6])
+{
+u32 VAR4, VAR5;
+int VAR6 = VAR2->VAR7->VAR8;
+
+VAR4 = VAR3[3];
+VAR4 = (VAR4 << 8) | VAR3[4];
+VAR4 = (VAR4 << 8) | VAR3[5];
+
+VAR5 = VAR3[0];
+VAR5 = (VAR5 << 8) | VAR3[1];
+VAR5 = (VAR5 << 8) | VAR3[2];
+
+FUN2(VAR2->VAR9, FUN3(VAR6), VAR4);
+FUN2(VAR2->VAR9, FUN4(VAR6), VAR5);
+return 0;
+}

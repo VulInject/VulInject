@@ -1,0 +1,18 @@
+static void FUN1(struct VAR1 *VAR2,
+const struct VAR3 *VAR4,
+const struct VAR3 *VAR5)
+{
+const struct VAR6 *VAR7 = &VAR4->VAR8;
+u32 VAR9, VAR10, VAR11, VAR12;
+
+
+VAR9 = (VAR7->VAR13 << 7) / VAR4->VAR14.VAR13;
+FUN2(VAR2, VAR9);
+
+VAR10 = (VAR5->VAR14.VAR13 << 7)  / VAR4->VAR14.VAR13;
+
+VAR11 = ((VAR7->VAR15 << 7) * VAR10) >> 14;
+VAR12 = ((VAR7->VAR16 << 7) * VAR10) >> 14;
+
+FUN3(VAR2, VAR11, VAR12);
+}

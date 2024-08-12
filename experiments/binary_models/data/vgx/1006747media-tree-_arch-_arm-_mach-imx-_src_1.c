@@ -1,0 +1,1 @@
+u32 FUN1 ( int VAR1 ) { VAR1 = FUN2 ( VAR1 , NULL ) ; return FUN3 ( VAR2 + VAR3 + VAR1 * 8 + 4 ) ; }

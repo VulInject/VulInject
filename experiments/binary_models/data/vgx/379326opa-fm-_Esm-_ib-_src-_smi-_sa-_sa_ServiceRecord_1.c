@@ -1,0 +1,1 @@
+void FUN1 ( void ) { if ( ! VAR1 . VAR2 || FUN2 ( & VAR1 . VAR3 ) != VAR4 ) { return ; } ( void ) FUN3 ( VAR1 . VAR2 , VAR5 ) ; ( void ) FUN4 ( & VAR1 . VAR3 ) ; ( void ) FUN5 ( & VAR1 . VAR3 ) ; }

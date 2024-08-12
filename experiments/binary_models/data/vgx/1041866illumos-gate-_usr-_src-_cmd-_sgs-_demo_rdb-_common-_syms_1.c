@@ -1,0 +1,1 @@
+retc_t FUN1 ( struct VAR1 * VAR2 , const char * VAR3 , VAR4 * VAR5 ) { VAR6 * VAR7 ; if ( VAR2 -> VAR8 . VAR9 == NULL ) { return ( FUN2 ( VAR3 , & ( VAR2 -> VAR10 ) , VAR5 , NULL ) ) ; } for ( VAR7 = VAR2 -> VAR8 . VAR9 ; VAR7 ; VAR7 = VAR7 -> VAR11 ) { if ( FUN2 ( VAR3 , VAR7 , VAR5 , NULL ) == VAR12 ) { return ( VAR12 ) ; } } return ( VAR13 ) ; }

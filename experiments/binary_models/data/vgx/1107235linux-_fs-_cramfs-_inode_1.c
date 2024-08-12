@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { struct VAR5 * VAR6 ; struct cramfs_super VAR7 ; int VAR8 , VAR9 ; VAR6 = FUN2 ( sizeof ( VAR5 ) , VAR10 ) ; VAR2 -> VAR11 = VAR6 ; for ( VAR8 = 0 ; VAR8 < VAR12 ; VAR8 ++ ) { VAR13 [ VAR8 ] = - 1 ; } VAR9 = FUN3 ( VAR2 , VAR4 , & VAR7 ) ; if ( VAR9 ) { return VAR9 ; } return FUN4 ( VAR2 , & VAR7 . VAR14 ) ; }

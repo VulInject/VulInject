@@ -1,0 +1,62 @@
+static int FUN1(struct VAR1 *VAR2, int VAR3)
+{
+struct VAR4 *VAR5;
+struct VAR6 *VAR7 = FUN2(VAR2);
+struct VAR8 *VAR9;
+u32 VAR10 = (VAR3 << 28) | (VAR11 << 20) |
+(VAR12 << 8) | VAR13;
+u32 VAR14 = -1;
+int VAR15, VAR16 = 0;
+
+do {
+FUN3(&VAR7->VAR17.VAR18);
+FUN4(&VAR7->VAR17, VAR10);
+FUN5(&VAR7->VAR17, VAR3, &VAR14);
+FUN6(&VAR7->VAR17.VAR18);
+} while (VAR14 == -1 && VAR16++ < VAR19);
+
+if (VAR14 == -1)
+return -VAR20;
+FUN7(VAR2->VAR21, "",
+VAR3, VAR14);
+
+VAR5 = FUN8(VAR2->VAR21, sizeof(*VAR5), VAR22);
+if (!VAR5)
+return -VAR23;
+
+VAR9 = FUN9(&VAR7->VAR17, VAR3, VAR24);
+VAR15 = FUN10(VAR9);
+if (VAR15 < 0)
+return VAR15;
+
+VAR5->VAR9 = VAR9;
+FUN11(&VAR9->VAR17.VAR21, VAR5);
+
+if ((VAR14 & 0xFFFF0000) == VAR25) {
+if (!VAR7->VAR17.VAR26) {
+FUN7(VAR2->VAR21,
+"");
+VAR15 = -VAR27;
+goto VAR28;
+}
+VAR5->VAR29 = true;
+}
+
+if (FUN12(VAR7))
+VAR9->VAR30 = VAR31;
+else
+VAR9->VAR30 = 0;
+
+VAR15 = FUN13(VAR9);
+
+if (VAR15 == 0)
+VAR15 = -VAR27;
+
+VAR28:
+if (VAR15 < 0) {
+FUN14(&VAR9->VAR17);
+FUN15(&VAR9->VAR17.VAR21);
+}
+
+return VAR15;
+}

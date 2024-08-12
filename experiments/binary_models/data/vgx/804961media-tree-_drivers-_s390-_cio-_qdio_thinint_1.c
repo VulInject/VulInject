@@ -1,0 +1,1 @@
+static inline u32 FUN1 ( void ) { return FUN2 ( & VAR1 [ VAR2 ] . VAR3 , 0 ) ; }

@@ -1,0 +1,55 @@
+struct VAR1 *
+FUN1(struct VAR1 * VAR2)
+{
+VAR3 * VAR4;
+struct VAR5 * VAR6;
+int VAR7;
+struct VAR1 * VAR8;
+char * VAR9;
+
+VAR6 = FUN2(VAR2->VAR10);
+if (VAR6 == NULL)
+goto VAR11;
+
+VAR9 = strdup(VAR2->VAR12);
+if (VAR9 == NULL)
+goto VAR13;
+
+VAR4 = FUN3();
+if (VAR4 == NULL)
+goto VAR14;
+
+if (VAR2->VAR15 != NULL) {
+VAR16 * VAR17;
+
+for(VAR17 = FUN4(VAR2->VAR15) ;
+VAR17 != NULL ; VAR17 = FUN5(VAR17)) {
+struct VAR18 * VAR19;
+
+VAR19 = FUN6(FUN7(VAR17));
+if (VAR19 == NULL)
+goto VAR20;
+
+VAR7 = FUN8(VAR4, VAR19);
+if (VAR7 < 0) {
+FUN9(VAR19);
+goto VAR20;
+}
+}
+}
+
+VAR8 = FUN10(VAR6, VAR9, VAR4);
+if (VAR8 == NULL)
+goto VAR20;
+
+return VAR8;
+
+VAR20:
+FUN11(VAR4, (VAR21) VAR22, NULL);
+VAR14:
+free(VAR9);
+VAR13:
+FUN12(VAR6);
+VAR11:
+return NULL;
+}

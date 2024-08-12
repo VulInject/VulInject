@@ -1,0 +1,30 @@
+void FUN1(
+VAR1 *VAR2, 
+JsVarInt VAR3 
+) {
+
+if (FUN2(VAR2)) {
+JsVarRef VAR4 = FUN3(VAR2); 
+while (VAR4) {
+VAR1 *VAR5 = FUN4(VAR4);
+VAR1 *VAR6 = FUN5(VAR5);
+FUN6(FUN7(VAR6), VAR3&1);
+FUN8(VAR6);
+VAR4 = FUN9(VAR5);
+FUN8(VAR5);
+VAR3 = VAR3>>1; 
+}
+} else if (FUN10(VAR2)) {
+VAR1 *VAR7 = FUN11(VAR2, "", false);
+if (FUN12(VAR7)) {
+VAR1 *VAR8 = FUN13(VAR3);
+FUN8(FUN14(VAR7,0,VAR2,false,1,&VAR8));
+FUN8(VAR8);
+} else FUN15(VAR9, "");
+FUN8(VAR7);
+} else {
+
+Pin VAR10 = FUN7(VAR2);
+FUN6(VAR10, VAR3 != 0);
+}
+}

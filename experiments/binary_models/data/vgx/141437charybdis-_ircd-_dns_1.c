@@ -1,0 +1,1 @@
+static void FUN1 ( uint32_t VAR1 , char VAR2 , const char * VAR3 ) { if ( VAR4 == NULL ) { return ; } FUN2 ( VAR4 , "" , VAR1 , VAR2 , VAR3 ) ; }

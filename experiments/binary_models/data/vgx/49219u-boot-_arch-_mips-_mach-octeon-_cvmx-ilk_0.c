@@ -1,0 +1,206 @@
+int FUN1(int VAR1, unsigned short VAR2)
+{
+int VAR3 = -1;
+int VAR4, VAR5, VAR6;
+unsigned short VAR7;
+cvmx_ilk_txx_cfg0_t VAR8;
+cvmx_ilk_rxx_cfg0_t VAR9;
+cvmx_ilk_ser_cfg_t VAR10;
+int VAR11 = (VAR1 >> 4) & 0xf;
+
+VAR1 &= 0xf;
+
+if (!FUN2(VAR12))
+return VAR3;
+
+if (VAR1 >= VAR13)
+return VAR3;
+
+if (VAR2 == 0)
+return VAR3;
+
+
+VAR4 = !VAR1;
+if (VAR14[VAR11][VAR4] & VAR2) {
+FUN3("", VAR11,
+VAR1, VAR15);
+return VAR3;
+}
+
+
+VAR7 = VAR2 >> (VAR1 * 4);
+if (FUN4(VAR16)) {
+cvmx_mio_qlmx_cfg_t VAR17, VAR18;
+
+if ((VAR7 != 0x1 && VAR7 != 0x3 && VAR7 != 0xf &&
+VAR7 != 0xff) ||
+(VAR1 == 1 && VAR2 > 0xf0)) {
+FUN3("",
+VAR1, VAR15, VAR7);
+return VAR3;
+}
+
+VAR5 = VAR1 + FUN5();
+VAR6 = VAR4 + FUN5();
+VAR17.VAR19 = FUN6(FUN7(VAR5));
+VAR18.VAR19 = FUN6(FUN7(VAR6));
+if (VAR17.VAR20.VAR21 != 1 ||
+(VAR7 == 0xff && VAR18.VAR20.VAR21 != 1)) {
+FUN3("", VAR1,
+VAR15);
+return VAR3;
+}
+
+VAR2 &= 0xff;
+}
+
+if (FUN4(VAR22)) {
+int VAR23;
+unsigned short VAR24 = 0;
+
+
+for (VAR23 = 4; VAR23 < 8; VAR23++) {
+cvmx_gserx_cfg_t VAR25;
+cvmx_gserx_phy_ctl_t VAR26;
+
+
+VAR26.VAR19 =
+FUN8(VAR11, FUN9(VAR23));
+if (VAR26.VAR20.VAR27 || VAR26.VAR20.VAR28)
+continue;
+
+
+VAR25.VAR19 = FUN8(VAR11, FUN10(VAR23));
+if (VAR25.VAR20.VAR29)
+VAR24 |= ((1 << 4) - 1)
+<< (4 * (VAR23 - 4));
+}
+
+if ((VAR24 & VAR2) != VAR2) {
+FUN3("",
+VAR1, VAR15, VAR2);
+return VAR3;
+}
+}
+
+
+VAR10.VAR19 = FUN8(VAR11, VAR30);
+if (FUN4(VAR16)) {
+if (VAR10.VAR31.VAR32 == 0) {
+VAR10.VAR31.VAR33 = 1;
+VAR10.VAR31.VAR34 = 0;
+VAR10.VAR31.VAR35 = 0;
+VAR10.VAR31.VAR36 = 0xff;
+VAR10.VAR31.VAR37 = 0;
+}
+VAR10.VAR31.VAR32 |=
+((VAR1 == 0) && (VAR2 > 0xf)) ?
+0x3 :
+(1 << VAR1);
+}
+if (FUN4(VAR22)) {
+VAR10.VAR38.VAR33 = 1;
+VAR10.VAR38.VAR34 = 0;
+VAR10.VAR38.VAR35 = 0;
+VAR10.VAR38.VAR36 = 0xffff;
+}
+FUN11(VAR11, VAR30, VAR10.VAR19);
+
+if (FUN4(VAR39)) {
+
+int VAR23 = (VAR1) ? 2 : 1;
+int VAR40, VAR41;
+
+
+if (FUN12(VAR2) > 4) {
+VAR40 = 1;
+VAR41 = 2;
+} else {
+VAR40 = VAR23;
+VAR41 = VAR23;
+}
+
+for (VAR23 = VAR40; VAR23 <= VAR41; VAR23++) {
+FUN3("",
+VAR15, VAR42, VAR23);
+FUN13(VAR23);
+FUN3("");
+
+if ((FUN14(VAR23) == 6250) &&
+(FUN15(VAR23, 0, "") != 20)) {
+FUN16(100); 
+FUN17(VAR23, -1, "", 20);
+
+FUN17(VAR23, -1, "", 0);
+FUN16(100); 
+
+FUN17(VAR23, -1, "",
+0);
+}
+FUN3("",
+VAR15, VAR42, VAR23);
+FUN13(VAR23);
+FUN3("");
+}
+}
+
+
+FUN18((VAR11 << 4) | VAR1);
+
+
+if (FUN4(VAR16)) {
+if (FUN19(VAR1, 0)) {
+cvmx_ilk_txx_cfg1_t VAR43;
+cvmx_ilk_rxx_cfg1_t VAR44;
+
+VAR43.VAR19 = FUN6(FUN20(VAR1));
+VAR44.VAR19 = FUN6(FUN21(VAR1));
+VAR43.VAR20.VAR45 = 1;
+VAR43.VAR20.VAR46 = 1;
+VAR43.VAR20.VAR47 = 1;
+VAR44.VAR20.VAR45 = 1;
+FUN22(FUN20(VAR1), VAR43.VAR19);
+FUN22(FUN21(VAR1), VAR44.VAR19);
+VAR48[VAR11][VAR1].VAR45 =
+1; 
+} else {
+VAR48[VAR11][VAR1].VAR45 =
+0; 
+}
+}
+if (FUN4(VAR22))
+VAR48[VAR11][VAR1].VAR45 = 0;
+
+
+VAR8.VAR19 = FUN8(VAR11, FUN23(VAR1));
+VAR9.VAR19 = FUN8(VAR11, FUN24(VAR1));
+VAR9.VAR20.VAR49 = VAR2;
+VAR8.VAR20.VAR49 = VAR2;
+FUN11(VAR11, FUN23(VAR1), VAR8.VAR19);
+FUN11(VAR11, FUN24(VAR1), VAR9.VAR19);
+
+
+if (FUN4(VAR22)) {
+cvmx_gserx_lane_mode_t VAR50, VAR51;
+
+VAR50.VAR19 = FUN8(VAR11, FUN25(5));
+VAR51.VAR19 = FUN8(VAR11, FUN25(7));
+if ((VAR50.VAR20.VAR52 == 5 || VAR51.VAR20.VAR52 == 5) &&
+(VAR2 == 0xfff || VAR2 == 0xfff0 ||
+VAR2 == 0xff || VAR2 == 0xff00)) {
+cvmx_ilk_txx_cfg1_t VAR43;
+
+VAR43.VAR19 =
+FUN8(VAR11, FUN20(VAR1));
+VAR43.VAR20.VAR53 = 0x3ff;
+FUN11(VAR11, FUN20(VAR1),
+VAR43.VAR19);
+}
+}
+
+
+VAR48[VAR11][VAR1].VAR54 = 1;
+VAR3 = 0;
+
+return VAR3;
+}

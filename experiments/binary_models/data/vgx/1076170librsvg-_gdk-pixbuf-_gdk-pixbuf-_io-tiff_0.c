@@ -1,0 +1,44 @@
+FUN1 (gpointer VAR1,
+VAR2 **VAR3)
+{
+VAR4 *VAR5 = VAR1;
+VAR6 *VAR7;
+gboolean VAR8 = VAR9;
+
+FUN2 (VAR1 != NULL, VAR9);
+
+FUN3 ();
+
+VAR7 = FUN4 ("", "", VAR1, 
+VAR10, VAR11, 
+VAR12, VAR13, 
+VAR14, 
+VAR15, VAR16);
+if (!VAR7) {
+FUN5 (VAR3,
+VAR17,
+VAR18,
+FUN6(""));
+} else {
+VAR19 *VAR20;
+
+VAR20 = FUN7 (VAR7, VAR5, VAR3);
+VAR8 = (VAR20 != NULL);
+FUN8 (&VAR20);
+
+if (!VAR8 && VAR3 && !*VAR3) {
+FUN5 (VAR3,
+VAR17,
+VAR18,
+FUN6(""));
+}
+}
+
+if (VAR7)
+FUN9 (VAR7);
+
+FUN10 (VAR5->VAR21);
+FUN10 (VAR5);
+
+return VAR8;
+}

@@ -1,0 +1,306 @@
+int main(int argc, char **argv) {
+struct stat VAR1;
+int VAR2, VAR3, VAR4;
+int VAR5, VAR6, VAR7, VAR8, VAR9, VAR10, VAR11, VAR12;
+char *VAR13;
+uint64_t VAR14, VAR15, VAR16;
+uint32_t VAR17;
+VAR18 *VAR19, *VAR20;
+
+VAR13 = NULL;
+VAR14 = VAR15 = 0;
+VAR5 = 0;
+VAR6 = 0;
+VAR7 = 0;
+VAR9 = 0;
+VAR11 = 0;
+VAR8 = 0;
+VAR10 = 0;
+VAR3 = 0;
+VAR4 = 0;
+VAR16 = 0;
+VAR12 = 0;
+VAR17 = 0;
+
+while ((VAR2 = getopt(argc, argv, "")) != VAR21) {
+switch (VAR2) {
+case '':
+FUN1(argv[0]);
+FUN2(0);
+break;
+case '':
+FUN3(VAR13);
+VAR13 = VAR22;
+VAR7 = 1;
+VAR8 = 1;
+break;
+case '':
+FUN3(VAR13);
+VAR13 = VAR22;
+VAR8 = 1;
+VAR10 = 1;
+break;
+case '':
+VAR11 = 1;
+break;
+case '':
+FUN3(VAR13);
+VAR5 = 1;
+VAR8 = 1;
+VAR13 = VAR22;
+break;
+case '':
+FUN3(VAR13);
+VAR13 = VAR22;
+VAR6 = 1;
+VAR8 = 1;
+break;
+case '':
+if (FUN4(VAR22, &VAR14) == 0) FUN2(250);
+VAR3 = 1;
+break;
+case '':
+if (FUN5(VAR22, &VAR15) == 0) FUN2(250);
+VAR4 = 1;
+break;
+case '':
+FUN3(VAR13);
+VAR13 = VAR22;
+VAR9 = 1;
+break;
+case '':
+VAR16 = FUN6(VAR22, NULL, 10);
+if (VAR16 > 100) {
+FUN7("");
+FUN2(250);
+}
+if (VAR16 == 0) VAR16 = 100;
+break;
+case '':
+VAR17 = FUN6(VAR22, NULL, 10);
+if (VAR17 > 3600) {
+FUN7("");
+FUN2(250);
+}
+break;
+case '':
+VAR12 = 1;
+break;
+default:
+FUN1(argv[0]);
+FUN2(250);
+}
+}
+
+VAR13 = FUN8(VAR13, NULL);
+
+if (!VAR13) {
+FUN7("", VAR13);
+FUN7("", VAR23, VAR24, strerror(VAR25));
+FUN1(argv[0]);
+FUN2(250);
+}
+
+FUN9(VAR13, &VAR1);
+if (!(VAR1.VAR26 & VAR27)) {
+FUN7("", VAR13);
+FUN2(250);
+}
+
+VAR19 = FUN10(VAR13, VAR11, VAR5);
+
+if (!VAR19) {
+FUN2(250);
+}
+
+
+
+
+if (!VAR11 && !VAR7 && VAR16) VAR19->VAR28->VAR16 = VAR16;
+
+
+if (VAR7 || VAR6) {
+VAR20 = VAR19;
+while (VAR20) {
+if (VAR20->VAR29 == VAR30) {
+bookkeeper_t VAR31;
+FUN11("", VAR20->VAR13);
+FUN12(VAR20->VAR32, &VAR31);
+FUN13(VAR20->VAR28, &VAR31);
+if (VAR20->VAR28->VAR33 == VAR34) VAR20->VAR5 = 1;
+}
+VAR20 = VAR20->VAR35;
+}
+}
+
+
+VAR20 = VAR19;
+while (VAR20) {
+if (VAR20->VAR5) {
+int VAR36;
+uint64_t VAR37;
+
+
+for (VAR36 = 0; VAR36 < 3; VAR36++) {
+VAR37 = FUN14(VAR20->VAR32);
+FUN11("", VAR20->VAR13);
+FUN15(VAR20->VAR13, VAR20->VAR28);
+if (VAR20->VAR28->VAR38 == 0) {  
+VAR20->VAR33 = VAR39;
+}
+if (FUN14(VAR20->VAR32) == VAR37) break;
+FUN11("");
+}
+if (FUN14(VAR20->VAR32) != VAR37) {
+FUN7("");
+FUN16(VAR20->VAR32, VAR40);
+if (VAR20->VAR33 == VAR41) FUN17(VAR20->VAR28);
+FUN2(250);
+}
+FUN11("");
+if (VAR20->VAR29 == VAR30) {
+FUN11("");
+FUN12(VAR19->VAR32, NULL);
+}
+}
+VAR20 = VAR20->VAR35;
+}
+
+
+if (VAR6) {
+dirstat_t VAR42, VAR43;
+
+if (VAR11) {
+VAR43.VAR33 = 0;
+VAR43.VAR44 = VAR15;
+VAR43.VAR45 = VAR14;
+VAR43.VAR16 = VAR16 ? VAR16 : 98;
+
+
+VAR20 = VAR19;
+VAR43.VAR38 = VAR20->VAR28->VAR38;
+VAR43.VAR46 = VAR20->VAR28->VAR46;
+VAR43.VAR47 = VAR20->VAR28->VAR47;
+VAR43.VAR48 = VAR20->VAR28->VAR48;
+VAR20 = VAR20->VAR35;
+while (VAR20) {
+VAR43.VAR38 += VAR20->VAR28->VAR38;
+VAR43.VAR46 += VAR20->VAR28->VAR46;
+if (VAR20->VAR28->VAR47 && (VAR20->VAR28->VAR47 < VAR43.VAR47))
+VAR43.VAR47 = VAR20->VAR28->VAR47;
+if (VAR20->VAR28->VAR48 > VAR43.VAR48) VAR43.VAR48 = VAR20->VAR28->VAR48;
+
+VAR20 = VAR20->VAR35;
+}
+VAR42 = VAR43;
+FUN18(VAR19, &VAR43, VAR14, VAR15, VAR17);
+
+} else {
+
+if (VAR3)
+VAR19->VAR28->VAR45 = VAR14;
+else
+VAR14 = VAR19->VAR28->VAR45;
+if (VAR4)
+VAR19->VAR28->VAR44 = VAR15;
+else
+VAR15 = VAR19->VAR28->VAR44;
+
+VAR42 = *(VAR19->VAR28);
+FUN19(VAR19->VAR13, VAR19->VAR28, VAR14, VAR15, VAR17);
+VAR43 = *(VAR19->VAR28);
+}
+
+FUN11("", (unsigned long long)(VAR42.VAR38 - VAR43.VAR38));
+FUN11("", FUN20(VAR42.VAR46 - VAR43.VAR46));
+FUN11("", FUN21(VAR43.VAR47 - VAR42.VAR47));
+}
+
+if (!VAR11 && VAR9) {
+switch (VAR19->VAR29) {
+case VAR30:
+if (VAR3)
+VAR19->VAR28->VAR45 = VAR14;
+else
+VAR14 = VAR19->VAR28->VAR45;
+if (VAR4)
+VAR19->VAR28->VAR44 = VAR15;
+else
+VAR15 = VAR19->VAR28->VAR44;
+FUN11("", VAR13);
+FUN22(VAR19->VAR32, (VAR49)VAR15, VAR14);
+VAR8 = 1;
+break;
+case VAR50:
+if (VAR3) VAR19->VAR28->VAR45 = VAR14;
+if (VAR4) VAR19->VAR28->VAR44 = VAR15;
+VAR8 = 1;
+break;
+default:
+
+FUN11("", VAR19->VAR29);
+}
+if (VAR19->VAR33 == VAR41 || VAR19->VAR33 == VAR39) FUN17(VAR19->VAR28);
+}
+
+if (!VAR11 && VAR10) {
+switch (VAR19->VAR29) {
+case VAR30:
+FUN23(VAR19->VAR32);
+break;
+case VAR50:
+FUN11("", VAR19->VAR13);
+break;
+default:
+
+FUN11("", VAR19->VAR29);
+}
+}
+
+if (VAR8) {
+if (VAR11) {
+dirstat_t VAR43;
+
+VAR43.VAR33 = 0;
+VAR43.VAR44 = VAR15;
+VAR43.VAR45 = VAR14;
+VAR43.VAR16 = VAR16 ? VAR16 : 98;
+
+
+VAR20 = VAR19;
+VAR43.VAR38 = VAR20->VAR28->VAR38;
+VAR43.VAR46 = VAR20->VAR28->VAR46;
+VAR43.VAR47 = VAR20->VAR28->VAR47;
+VAR43.VAR48 = VAR20->VAR28->VAR48;
+VAR20 = VAR20->VAR35;
+while (VAR20) {
+VAR43.VAR38 += VAR20->VAR28->VAR38;
+VAR43.VAR46 += VAR20->VAR28->VAR46;
+if (VAR20->VAR28->VAR47 && (VAR20->VAR28->VAR47 < VAR43.VAR47))
+VAR43.VAR47 = VAR20->VAR28->VAR47;
+if (VAR20->VAR28->VAR48 > VAR43.VAR48) VAR43.VAR48 = VAR20->VAR28->VAR48;
+
+VAR20 = VAR20->VAR35;
+}
+if (VAR12) {
+FUN11("", (unsigned long long)VAR43.VAR46, (unsigned long long)VAR43.VAR47,
+(unsigned long long)VAR43.VAR48);
+} else
+FUN24(&VAR43);
+} else if (VAR12)
+FUN11("", (unsigned long long)VAR19->VAR28->VAR46, (unsigned long long)VAR19->VAR28->VAR47,
+(unsigned long long)VAR19->VAR28->VAR48);
+else
+FUN24(VAR19->VAR28);
+}
+
+VAR20 = VAR19;
+while (VAR20) {
+FUN16(VAR20->VAR32, VAR40);
+if (VAR20->VAR33 == VAR41) FUN17(VAR20->VAR28);
+
+VAR20 = VAR20->VAR35;
+}
+
+return 0;
+}

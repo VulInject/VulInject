@@ -1,0 +1,84 @@
+FUN1 (VAR1 *VAR2)
+{
+VAR3    *VAR4      = FUN2 (VAR2);
+VAR5 *VAR6 = FUN3 (VAR2);
+
+VAR7[VAR8] =
+FUN4 ("",
+FUN5 (VAR2),
+VAR9,
+FUN6 (VAR1, VAR10),
+NULL, NULL, NULL,
+VAR11, 0);
+
+VAR7[VAR12] =
+FUN4 ("",
+FUN5 (VAR2),
+VAR9,
+FUN6 (VAR1, VAR13),
+NULL, NULL, NULL,
+VAR11, 0);
+
+VAR7[VAR14] =
+FUN4 ("",
+FUN5 (VAR2),
+VAR9,
+FUN6 (VAR1, VAR15),
+NULL, NULL, NULL,
+VAR11, 0);
+
+VAR7[VAR16] =
+FUN4 ("",
+FUN5 (VAR2),
+VAR9,
+FUN6 (VAR1, VAR17),
+NULL, NULL, NULL,
+VAR11, 0);
+
+VAR4->VAR18         = VAR19;
+VAR4->VAR20     = VAR21;
+VAR4->VAR22     = VAR23;
+
+VAR6->VAR24 = VAR25;
+
+VAR2->VAR26       = "";
+VAR2->VAR27     = "";
+VAR2->VAR28           = VAR29;
+
+VAR2->VAR10      = VAR30;
+VAR2->VAR13            = NULL;
+VAR2->VAR15        = NULL;
+VAR2->VAR17        = VAR31;
+
+VAR2->VAR32                = NULL;
+VAR2->VAR33        = VAR34;
+VAR2->VAR35          = VAR36;
+VAR2->VAR37             = NULL;
+VAR2->VAR38         = NULL;
+VAR2->VAR39              = NULL;
+VAR2->VAR40          = VAR41;
+VAR2->VAR42         = VAR43;
+VAR2->VAR44        = VAR45;
+VAR2->VAR46          = NULL;
+VAR2->VAR47            = NULL;
+VAR2->VAR48            = VAR49;
+VAR2->VAR50            = NULL;
+VAR2->VAR51            = NULL;
+
+VAR52[VAR53] =
+FUN7 ("", NULL, NULL,
+NULL,
+VAR54);
+
+VAR52[VAR55] =
+FUN8 ("", NULL, NULL,
+VAR56,
+VAR54);
+
+VAR52[VAR57] =
+FUN9 ("", NULL, NULL,
+VAR29,
+VAR58);
+
+FUN10 (VAR4, VAR59, VAR52);
+}

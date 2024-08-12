@@ -1,0 +1,1 @@
+rpmsw FUN1 ( rpmsw VAR1 ) { if ( ! VAR2 ) { ( void ) FUN2 ( ) ; } if ( FUN3 ( & VAR1 -> VAR3 . VAR4 , NULL ) ) { return NULL ; } return VAR1 ; }

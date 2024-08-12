@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , void * VAR3 , struct VAR4 * VAR5 ) { struct VAR6 * VAR7 = VAR3 ; if ( FUN2 ( ! FUN3 ( VAR2 -> VAR2 ) ) ) { return - VAR8 ; } if ( ! FUN4 ( VAR2 , VAR9 ) ) { return - VAR10 ; } return FUN5 ( VAR2 , VAR7 ) ; }

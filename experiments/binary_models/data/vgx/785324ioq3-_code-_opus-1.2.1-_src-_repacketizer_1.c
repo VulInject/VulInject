@@ -1,0 +1,1 @@
+opus_int32 FUN1 ( unsigned char * VAR1 , opus_int32 VAR2 ) { OpusRepacketizer VAR3 ; opus_int32 VAR4 ; FUN2 ( & VAR3 ) ; VAR4 = FUN3 ( & VAR3 , VAR1 , VAR2 ) ; if ( VAR4 < 0 ) { return VAR4 ; } VAR4 = FUN4 ( & VAR3 , 0 , VAR3 . VAR5 , VAR1 , VAR2 , 0 , 0 ) ; FUN5 ( VAR4 > 0 && VAR4 <= VAR2 ) ; return VAR4 ; }

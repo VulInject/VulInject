@@ -1,0 +1,34 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    VAR5 *VAR6 = VAR2->VAR7->VAR8;
+    const int VAR9 = VAR4->VAR10->VAR11;
+    int VAR12 = FUN2(VAR9 * VAR6->VAR13 * 2, 1);
+    VAR1 *const VAR14 = VAR2->VAR7->VAR15[0];
+    VAR3 *VAR16 = FUN3(VAR14, VAR17, VAR12);
+    int VAR18;
+    FUN4(VAR16, VAR4);
+    VAR16->VAR19 = VAR14->VAR19;
+    VAR16->VAR10->VAR20 = VAR14->VAR20;
+    VAR16->VAR10->VAR21 = VAR14->VAR21;
+    if (VAR4->VAR22 != VAR23)
+    {
+        int64_t VAR24 = FUN5(VAR4->VAR22, VAR2->VAR25.VAR26 * (VAR27)VAR14->VAR21 * VAR2->VAR21, VAR2->VAR25.VAR28);
+        int64_t VAR29 = FUN6(VAR6->VAR30, VAR24);
+        VAR6->VAR31 = VAR16->VAR22 = (VAR29 + VAR2->VAR21 / 2) / VAR2->VAR21;
+    }
+    else
+    {
+        VAR16->VAR22 = VAR23;
+    }
+    VAR12 = FUN7(VAR6->VAR30, VAR16->VAR32, VAR12, (void *)VAR4->VAR32, VAR9);
+    if (VAR12 <= 0)
+    {
+        FUN8(VAR16);
+        FUN8(VAR4);
+        return 0;
+    }
+    VAR16->VAR10->VAR11 = VAR12;
+    VAR18 = FUN9(VAR14, VAR16);
+    VAR6->VAR33 = 1;
+    FUN8(VAR4);
+    return VAR18;

@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { u64 VAR1 ; VAR1 = FUN2 ( VAR2 , NULL ) ; VAR1 |= VAR3 ; FUN3 ( VAR2 , VAR1 ) ; FUN4 ( ) ; }

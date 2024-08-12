@@ -1,0 +1,1 @@
+static int FUN1 ( void ) { const VAR1 * VAR2 = ( const VAR1 * ) "" ; uint32_t VAR3 = strlen ( ( char * ) VAR2 ) ; InspectionBuffer VAR4 ; FUN2 ( & VAR4 , 8 ) ; FUN3 ( NULL , - 1 , & VAR4 , VAR2 , VAR3 ) ; FUN4 ( VAR5 , VAR4 . VAR6 , VAR4 . VAR7 ) ; FUN5 ( & VAR4 ) ; FUN4 ( VAR5 , VAR4 . VAR6 , VAR4 . VAR7 ) ; FUN6 ( & VAR4 ) ; VAR8 ; }

@@ -1,0 +1,52 @@
+int
+FUN1(VAR1 *VAR2)
+{
+VAR3 **VAR4;
+VAR3 *VAR5;
+VAR6 *VAR7;
+
+int VAR8;
+
+FUN2("",
+FUN3(VAR2->VAR9));
+
+
+if (FUN4(&VAR2->VAR10) != VAR11)
+goto VAR12;
+
+
+for (VAR8 = 0, VAR4 = VAR13; *VAR4 != NULL; VAR8++, VAR4++) {
+
+VAR5 = *VAR4;
+
+
+VAR7 = (VAR6 *)FUN5(
+sizeof (VAR6), VAR14);
+
+VAR7->VAR2 = VAR2;
+VAR7->VAR5  = VAR5;
+
+
+VAR2->VAR15[VAR8] = VAR7;
+
+
+VAR7->VAR16 = FUN6(VAR5->VAR17,
+FUN3(VAR2->VAR9),
+VAR18, VAR7, VAR5->VAR19);
+if (VAR7->VAR16 == NULL)
+goto VAR12;
+}
+
+
+if (FUN7(VAR2, VAR13[VAR20]->VAR21->VAR22,
+VAR23) != VAR24) {
+goto VAR12;
+}
+
+FUN2("");
+return (VAR11);
+VAR12:
+FUN8(VAR2);
+FUN2("");
+return (VAR25);
+}

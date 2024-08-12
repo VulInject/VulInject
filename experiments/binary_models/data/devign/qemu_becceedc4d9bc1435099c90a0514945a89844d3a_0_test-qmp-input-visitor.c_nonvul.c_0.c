@@ -1,0 +1,51 @@
+static void FUN1(VAR1 *VAR2, const void *VAR3)
+{
+    VAR4 *VAR5;
+    VAR6 *VAR7 = NULL;
+    VAR8 *VAR9;
+    VAR10 *VAR11;
+    VAR5 = FUN2(VAR2, "");
+    FUN3(VAR5, NULL, &VAR9, &VAR12);
+    FUN4(VAR9->VAR13, ==, VAR14);
+    FUN4(VAR9->VAR15.VAR16, ==, 42);
+    FUN5(VAR9);
+    VAR5 = FUN2(VAR2, "");
+    FUN3(VAR5, NULL, &VAR9, &VAR12);
+    FUN4(VAR9->VAR13, ==, VAR17);
+    FUN6(VAR9->VAR15.VAR18, ==, "");
+    FUN5(VAR9);
+    VAR5 = FUN2(VAR2, ""
+                                      "");
+    FUN3(VAR5, NULL, &VAR9, &VAR12);
+    FUN4(VAR9->VAR13, ==, VAR19);
+    FUN4(VAR9->VAR15.VAR20.VAR21, ==, 1);
+    FUN6(VAR9->VAR15.VAR20.VAR22, ==, "");
+    FUN4(VAR9->VAR15.VAR20.VAR23, ==, VAR24);
+    FUN4(VAR9->VAR15.VAR20.VAR15.VAR25->VAR26, ==, true);
+    FUN4(VAR9->VAR15.VAR20.VAR15.VAR25->VAR27, ==, false);
+    FUN5(VAR9);
+    VAR5 = FUN2(VAR2, "");
+    FUN3(VAR5, NULL, &VAR9, &VAR7);
+    FUN7(&VAR7);
+    FUN5(VAR9);
+    VAR5 = FUN2(VAR2, "");
+    FUN8(VAR5, NULL, &VAR11, &VAR12);
+    FUN4(VAR11->VAR28->VAR13, ==, VAR14);
+    FUN4(VAR11->VAR28->VAR15.VAR16, ==, 42);
+    FUN9(VAR11);
+    VAR5 = FUN2(VAR2, "");
+    FUN8(VAR5, NULL, &VAR11, &VAR12);
+    FUN4(VAR11->VAR28->VAR13, ==, VAR17);
+    FUN6(VAR11->VAR28->VAR15.VAR18, ==, "");
+    FUN9(VAR11);
+    VAR5 = FUN2(VAR2, ""
+                                      "");
+    FUN8(VAR5, NULL, &VAR11, &VAR12);
+    FUN4(VAR11->VAR28->VAR13, ==, VAR19);
+    FUN4(VAR11->VAR28->VAR15.VAR20.VAR21, ==, 1);
+    FUN6(VAR11->VAR28->VAR15.VAR20.VAR22, ==, "");
+    FUN4(VAR11->VAR28->VAR15.VAR20.VAR23, ==, VAR24);
+    FUN4(VAR11->VAR28->VAR15.VAR20.VAR15.VAR25->VAR26, ==, true);
+    FUN4(VAR11->VAR28->VAR15.VAR20.VAR15.VAR25->VAR27, ==, false);
+    FUN9(VAR11);
+}

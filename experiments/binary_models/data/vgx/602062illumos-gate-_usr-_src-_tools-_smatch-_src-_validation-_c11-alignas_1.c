@@ -1,0 +1,1 @@
+static FUN1 ( 2 ) int VAR1 ; static FUN1 ( ) int VAR2 ; static FUN1 ( ) int VAR3 ; static int FUN2 ( void ) { if ( FUN3 ( VAR4 ) != 8 ) { return - 1 ; } if ( FUN3 ( VAR5 ) != FUN3 ( long ) ) { return - 1 ; } if ( FUN3 ( VAR6 ) != FUN3 ( int ) ) { return - 1 ; } return 0 ; }

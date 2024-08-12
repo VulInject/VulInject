@@ -1,0 +1,76 @@
+static int FUN1(VAR1 *VAR2,
+const VAR3 *VAR4,
+VAR5 *VAR6)
+{
+const char *VAR7 = FUN2(VAR4, "");
+const char *VAR8;
+uint32_t VAR9;
+bool VAR10;
+VAR11 *VAR12;
+PCIEAERErr VAR13;
+int VAR14;
+
+VAR14 = FUN3(VAR7, &VAR12);
+if (VAR14 < 0) {
+FUN4(VAR2,
+""
+"", VAR7);
+return VAR14;
+}
+if (!FUN5(VAR12)) {
+FUN4(VAR2, "",
+VAR7);
+return -VAR15;
+}
+
+VAR8 = FUN2(VAR4, "");
+if (FUN6(VAR8, &VAR9, &VAR10)) {
+char *VAR16 = NULL;
+VAR9 = FUN7(VAR8, &VAR16, 0);
+VAR10 = FUN8(VAR4, "", false);
+if (!VAR16 || *VAR16 != '') {
+FUN4(VAR2, ""%VAR17\"",
+VAR8);
+return -VAR18;
+}
+}
+VAR13.VAR19 = VAR9;
+VAR13.VAR20 = FUN9(VAR12);
+
+VAR13.VAR21 = 0;
+if (VAR10) {
+VAR13.VAR21 |= VAR22;
+}
+if (FUN8(VAR4, "", false)) {
+VAR13.VAR21 |= VAR23;
+}
+if (FUN10(VAR4, "")) {
+VAR13.VAR21 |= VAR24;
+}
+if (FUN10(VAR4, "")) {
+VAR13.VAR21 |= VAR25;
+}
+
+VAR13.VAR26[0] = FUN11(VAR4, "", 0);
+VAR13.VAR26[1] = FUN11(VAR4, "", 0);
+VAR13.VAR26[2] = FUN11(VAR4, "", 0);
+VAR13.VAR26[3] = FUN11(VAR4, "", 0);
+
+VAR13.VAR27[0] = FUN11(VAR4, "", 0);
+VAR13.VAR27[1] = FUN11(VAR4, "", 0);
+VAR13.VAR27[2] = FUN11(VAR4, "", 0);
+VAR13.VAR27[3] = FUN11(VAR4, "", 0);
+
+VAR14 = FUN12(VAR12, &VAR13);
+if (VAR14 < 0) {
+FUN4(VAR2, "",
+strerror(-VAR14));
+return VAR14;
+}
+VAR6->VAR7 = VAR7;
+VAR6->VAR28 = FUN13(VAR12);
+VAR6->VAR29 = FUN14(VAR12);
+VAR6->VAR30 = VAR12->VAR30;
+
+return 0;
+}

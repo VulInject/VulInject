@@ -1,0 +1,1 @@
+static void FUN1 ( zoneid_t VAR1 ) { int VAR2 [ VAR3 ] ; if ( FUN2 ( VAR1 , VAR2 , sizeof ( VAR2 ) ) < 0 ) { ( void ) FUN3 ( "" , ( int ) VAR1 ) ; } else { ( void ) FUN3 ( "" , VAR2 ) ; } }

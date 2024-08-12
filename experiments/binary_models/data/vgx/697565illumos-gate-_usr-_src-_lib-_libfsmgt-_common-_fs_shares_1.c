@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 ) { VAR1 * VAR3 ; while ( VAR2 != NULL ) { VAR3 = VAR2 -> VAR4 ; free ( VAR2 -> VAR5 ) ; free ( VAR2 -> VAR6 ) ; free ( VAR2 -> VAR7 ) ; free ( VAR2 -> VAR8 ) ; VAR2 -> VAR4 = NULL ; free ( VAR2 ) ; VAR2 = VAR3 ; } }

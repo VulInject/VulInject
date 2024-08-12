@@ -1,0 +1,87 @@
+static long FUN1(struct VAR1 *VAR1, void VAR2 *VAR3)
+{
+struct VAR4 *VAR5 = FUN2(FUN3(VAR1))->VAR5;
+struct VAR6 *VAR7 = VAR5->VAR7;
+struct VAR8 *VAR9;
+struct VAR10 *VAR11;
+bool VAR12 = true;
+int VAR13;
+
+if (!FUN4(VAR14))
+return -VAR15;
+
+VAR13 = FUN5(VAR1);
+if (VAR13)
+return VAR13;
+
+VAR9 = FUN6(VAR3, sizeof(*VAR9));
+if (FUN7(VAR9)) {
+VAR13 = FUN8(VAR9);
+VAR9 = NULL;
+goto VAR16;
+}
+
+VAR13 = FUN9(VAR7, &VAR12);
+if (VAR13)
+goto VAR16;
+
+FUN10(&VAR7->VAR17);
+
+if (VAR9->VAR18 & VAR19) {
+if (!VAR7->VAR20) {
+VAR13 = -VAR21;
+goto VAR22;
+}
+
+VAR11 = VAR7->VAR20;
+FUN11(&VAR7->VAR23);
+VAR11->VAR18 |= VAR19;
+FUN12(&VAR7->VAR23);
+FUN13(VAR7, VAR24);
+
+goto VAR25;
+}
+
+if (VAR9->VAR18 & ~(VAR26 | VAR27)) {
+VAR13 = -VAR28;
+goto VAR22;
+}
+
+if (VAR7->VAR20) {
+VAR13 = -VAR29;
+goto VAR22;
+}
+
+VAR11 = FUN14(sizeof(*VAR11), VAR30);
+if (!VAR11) {
+VAR13 = -VAR31;
+goto VAR22;
+}
+
+memcpy(&VAR11->VAR32, &VAR9->VAR32, sizeof(VAR11->VAR32));
+memcpy(&VAR11->VAR33, &VAR9->VAR33, sizeof(VAR11->VAR33));
+memcpy(&VAR11->VAR34, &VAR9->VAR34, sizeof(VAR11->VAR34));
+
+VAR11->VAR18 = VAR9->VAR18;
+VAR25:
+
+VAR12 = false;
+
+VAR13 = FUN15(VAR7, VAR11, VAR9);
+VAR11 = NULL;
+
+if (VAR13 == 0 || VAR13 == -VAR35) {
+if (FUN16(VAR3, VAR9, sizeof(*VAR9)))
+VAR13 = -VAR36;
+}
+
+FUN17(VAR11);
+VAR22:
+FUN18(&VAR7->VAR17);
+if (VAR12)
+FUN19(VAR7);
+VAR16:
+FUN20(VAR1);
+FUN17(VAR9);
+return VAR13;
+}

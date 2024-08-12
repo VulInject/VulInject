@@ -1,0 +1,21 @@
+void
+FUN1(struct VAR1 *VAR2, int VAR3)
+{
+struct VAR4 *VAR5 = &VAR2->VAR6[VAR3];
+int VAR7, VAR8;
+
+VAR7 = FUN2(VAR2, VAR9);
+if (VAR2->VAR10[VAR3].VAR11 == VAR12)
+VAR8 = VAR7 & 0x07;
+else
+VAR8 = (VAR7 >> 4) & 0x07;
+
+VAR7 = FUN2(VAR2, VAR2->VAR10[VAR3].VAR11);
+if (VAR7 == 0xff || VAR7 == 0x00) {
+VAR5->VAR13 |= VAR14;
+VAR5->VAR15 = 0;
+} else {
+VAR5->VAR13 &= ~VAR14;
+VAR5->VAR15 = 1350000 / (VAR7 << VAR8);
+}
+}

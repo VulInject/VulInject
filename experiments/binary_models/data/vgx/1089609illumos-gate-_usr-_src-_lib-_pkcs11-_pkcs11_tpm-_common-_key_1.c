@@ -1,0 +1,1 @@
+CK_RV FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 , CK_ULONG VAR5 ) { switch ( VAR4 -> VAR6 ) { case VAR7 : return ( VAR8 ) ; case VAR9 : case VAR10 : case VAR11 : case VAR12 : if ( VAR5 == VAR13 ) { return ( VAR14 ) ; } return ( VAR8 ) ; default : return ( FUN2 ( VAR2 , VAR4 , VAR5 ) ) ; } }

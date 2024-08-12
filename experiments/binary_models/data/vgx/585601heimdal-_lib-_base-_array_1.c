@@ -1,0 +1,1 @@
+heim_array_t FUN1 ( void ) { heim_array_t VAR1 ; VAR1 = FUN2 ( & VAR2 , sizeof ( * VAR1 ) ) ; VAR1 -> VAR3 = NULL ; VAR1 -> VAR4 = 0 ; VAR1 -> VAR5 = NULL ; VAR1 -> VAR6 = 0 ; return VAR1 ; }

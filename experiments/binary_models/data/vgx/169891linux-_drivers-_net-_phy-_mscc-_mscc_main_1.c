@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , VAR3 * VAR4 ) { struct VAR5 * VAR6 = VAR2 -> VAR6 ; char VAR7 [ 28 ] ; int VAR8 , VAR9 ; for ( VAR8 = 0 ; VAR8 < VAR6 -> VAR10 ; VAR8 ++ ) { VAR9 = sprintf ( VAR7 , "" , VAR8 ) ; VAR9 = FUN2 ( VAR2 , VAR7 , VAR4 [ VAR8 ] ) ; if ( VAR9 < 0 ) { return VAR9 ; } VAR6 -> VAR11 [ VAR8 ] = VAR9 ; } return 0 ; }

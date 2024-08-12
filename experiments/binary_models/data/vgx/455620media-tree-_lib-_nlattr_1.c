@@ -1,0 +1,1 @@
+size_t FUN1 ( char * VAR1 , const struct VAR2 * VAR3 , size_t VAR4 ) { size_t VAR5 = FUN2 ( VAR3 ) ; char * VAR6 = FUN3 ( VAR3 ) ; if ( VAR5 > 0 && VAR6 [ VAR5 - 1 ] == '' ) { VAR5 -- ; } if ( VAR4 > 0 ) { size_t VAR7 = ( VAR5 >= VAR4 ) ?VAR4 - 1 : VAR5 ; memcpy ( VAR1 , VAR6 , VAR7 ) ; } return VAR5 ; }

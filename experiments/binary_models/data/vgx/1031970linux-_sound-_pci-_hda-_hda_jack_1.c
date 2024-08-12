@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( struct VAR2 * VAR3 , hda_nid_t VAR4 , int VAR5 ) { struct VAR1 * VAR6 = VAR3 -> VAR7 . VAR8 ; int VAR9 ; if ( ! VAR4 || ! VAR6 ) { return VAR10 ; } for ( VAR9 = 0 ; VAR9 < VAR3 -> VAR7 . VAR11 ; VAR9 ++ , VAR6 ++ ) { if ( VAR6 -> VAR4 == VAR4 && VAR6 -> VAR5 == VAR5 ) { return VAR6 ; } } return NULL ; }

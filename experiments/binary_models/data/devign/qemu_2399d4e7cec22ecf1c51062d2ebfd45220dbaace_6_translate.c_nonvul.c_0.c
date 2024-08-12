@@ -1,0 +1,50 @@
+static void FUN1(VAR1 *VAR2, int VAR3, int VAR4, int VAR5, TCGv_i32 VAR6, int VAR7)
+{
+    TCGv_i32 VAR8, VAR9, VAR10;
+    TCGv_i64 VAR11;
+    TCGv VAR12;
+    VAR13 *VAR14;
+    VAR13 *VAR15;
+    TCGMemOp VAR16 = VAR7 | VAR17 | VAR2->VAR18;
+    VAR15 = FUN2();
+    VAR14 = FUN2();
+    VAR11 = FUN3();
+    FUN4(VAR11, VAR6);
+    FUN5(VAR19, VAR11, VAR20, VAR15);
+    FUN6(VAR11);
+    VAR12 = FUN7(VAR2, VAR6, VAR16);
+    VAR8 = FUN8();
+    VAR9 = FUN9(VAR2, VAR4);
+    if (VAR7 == 3)
+    {
+        TCGv_i64 VAR21 = FUN3();
+        TCGv_i64 VAR22 = FUN3();
+        VAR10 = FUN9(VAR2, VAR5);
+        FUN10(VAR22, VAR9, VAR10);
+        FUN11(VAR10);
+        FUN12(VAR2, VAR22);
+        FUN13(VAR21, VAR12, VAR23, VAR22, FUN14(VAR2), VAR16);
+        FUN6(VAR22);
+        FUN12(VAR2, VAR21);
+        FUN15(VAR19, VAR21, VAR21, VAR23);
+        FUN16(VAR8, VAR21);
+        FUN6(VAR21);
+    }
+    else
+    {
+        VAR10 = FUN8();
+        FUN16(VAR10, VAR23);
+        FUN17(VAR8, VAR12, VAR10, VAR9, FUN14(VAR2), VAR16);
+        FUN18(VAR19, VAR8, VAR8, VAR10);
+        FUN11(VAR10);
+    }
+    FUN11(VAR9);
+    FUN19(VAR12);
+    FUN20(VAR24[VAR3], VAR8);
+    FUN11(VAR8);
+    FUN21(VAR14);
+    FUN22(VAR15);
+    FUN23(VAR24[VAR3], 1);
+    FUN22(VAR14);
+    FUN24(VAR20, -1);
+}

@@ -1,0 +1,188 @@
+static VAR1
+FUN1(krb5_context VAR2, VAR3 *VAR4, VAR5 **VAR6, VAR7 *VAR8)
+{
+krb5_error_code	VAR9;
+krb5_auth_context	VAR10;
+krb5_int32		VAR11;
+VAR5		*VAR12;
+size_t		VAR13;
+krb5_int32		VAR14;
+krb5_int32		VAR15;
+
+VAR12 = *VAR6;
+VAR13 = *VAR8;
+VAR9 = VAR16;
+
+if (FUN2(&VAR11, &VAR12, &VAR13))
+VAR11 = 0;
+if (VAR11 == VAR17) {
+VAR9 = VAR18;
+
+
+if ((VAR13 >= (5*sizeof(VAR19))) &&
+(VAR10 = (VAR20)
+FUN3(sizeof(struct VAR21)))) {
+(void) memset(VAR10, 0, sizeof(struct VAR21));
+
+
+(void) FUN2(&VAR11, &VAR12, &VAR13);
+VAR10->VAR22 = VAR11;
+
+
+(void) FUN2(&VAR11, &VAR12, &VAR13);
+VAR10->VAR23 = VAR11;
+
+
+(void) FUN2(&VAR11, &VAR12, &VAR13);
+VAR10->VAR24 = VAR11;
+
+
+(void) FUN2(&VAR11, &VAR12, &VAR13);
+VAR10->VAR25 = (VAR26) VAR11;
+
+
+(void) FUN2(&VAR11, &VAR12, &VAR13);
+VAR10->VAR27 = (VAR26) VAR11;
+
+
+(void) FUN2(&VAR14, &VAR12, &VAR13);
+
+if (VAR14) {
+if ((VAR10->VAR28 =
+(VAR3) FUN3((VAR7)VAR14)))
+VAR9 = FUN4(VAR10->VAR28,
+(VAR7) VAR14,
+&VAR12,
+&VAR13);
+else
+VAR9 = VAR18;
+}
+else
+VAR9 = 0;
+
+
+VAR15 = 0;
+if (!VAR9)
+VAR9 = FUN2(&VAR15, &VAR12, &VAR13);
+
+
+if (!VAR9 && (VAR15 == VAR29)) {
+if (!(VAR9 = FUN5(VAR2,
+VAR30,
+(VAR3 *)
+&VAR10->
+VAR31,
+&VAR12,
+&VAR13)))
+VAR9 = FUN2(&VAR15, &VAR12, &VAR13);
+}
+
+
+if (!VAR9 && (VAR15 == VAR32)) {
+if (!(VAR9 = FUN5(VAR2,
+VAR30,
+(VAR3 *)
+&VAR10->
+VAR33,
+&VAR12,
+&VAR13)))
+VAR9 = FUN2(&VAR15, &VAR12, &VAR13);
+}
+
+
+if (!VAR9 && (VAR15 == VAR34)) {
+if (!(VAR9 = FUN5(VAR2,
+VAR30,
+(VAR3 *)
+&VAR10->
+VAR35,
+&VAR12,
+&VAR13)))
+VAR9 = FUN2(&VAR15, &VAR12, &VAR13);
+}
+
+
+if (!VAR9 && (VAR15 == VAR36)) {
+if (!(VAR9 = FUN5(VAR2,
+VAR30,
+(VAR3 *)
+&VAR10->
+VAR37,
+&VAR12,
+&VAR13)))
+VAR9 = FUN2(&VAR15, &VAR12, &VAR13);
+}
+
+
+if (!VAR9 && (VAR15 == VAR38)) {
+if (!(VAR9 = FUN5(VAR2,
+VAR39,
+(VAR3 *)
+&VAR10->VAR40,
+&VAR12,
+&VAR13)))
+VAR9 = FUN2(&VAR15, &VAR12, &VAR13);
+}
+
+
+if (!VAR9 && (VAR15 == VAR41)) {
+if (!(VAR9 = FUN5(VAR2,
+VAR39,
+(VAR3 *)
+&VAR10->
+VAR42,
+&VAR12,
+&VAR13)))
+VAR9 = FUN2(&VAR15, &VAR12, &VAR13);
+}
+
+
+if (!VAR9) {
+if (VAR15 == VAR43) {
+VAR9 = FUN5(VAR2,
+VAR39,
+(VAR3 *)
+&VAR10->
+VAR44,
+&VAR12,
+&VAR13);
+}
+else {
+
+VAR12 -= sizeof(VAR19);
+VAR13 += sizeof(VAR19);
+}
+}
+
+
+if (!VAR9) {
+if ((VAR9 = FUN5(VAR2,
+VAR45,
+(VAR3 *)
+&VAR10->VAR46,
+&VAR12,
+&VAR13))) {
+if (VAR9 == VAR16)
+VAR9 = 0;
+}
+}
+
+
+if (!VAR9) {
+VAR9 = FUN2(&VAR11, &VAR12, &VAR13);
+if (!VAR9 && (VAR11 != VAR17))
+VAR9 = VAR16;
+}
+if (!VAR9) {
+*VAR6 = VAR12;
+*VAR8 = VAR13;
+VAR10->VAR47 = VAR17;
+*VAR4 = (VAR3) VAR10;
+}
+
+else
+FUN6(VAR2, VAR10);
+}
+}
+return(VAR9);
+}

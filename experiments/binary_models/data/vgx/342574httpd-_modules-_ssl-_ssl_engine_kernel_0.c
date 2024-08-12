@@ -1,0 +1,87 @@
+int FUN1(VAR1 *VAR2)
+{
+VAR3 *VAR4;
+VAR5 *VAR6 = FUN2(VAR2);
+const char *VAR7, *VAR8, *VAR9, *VAR10;
+
+
+if ((VAR6->VAR11 & VAR12) &&
+(FUN3(VAR2->VAR13, "")))
+{
+return VAR14;
+}
+
+
+if (!FUN4(VAR2)) {
+return VAR15;
+}
+
+
+if ((VAR8 = FUN3(VAR2->VAR16, ""))) {
+if (FUN5(FUN6(VAR2->VAR17, &VAR8, ''), "")) {
+while ((*VAR8 == '') || (*VAR8 == '')) {
+VAR8++;
+}
+
+VAR8 = FUN7(VAR2->VAR17, VAR8);
+VAR9 = FUN8(VAR2->VAR17, &VAR8, '');
+VAR10 = VAR8;
+
+if ((VAR9[0] == '') && FUN9(VAR10, "")) {
+FUN10(VAR18, VAR19, 0, VAR2, FUN11(02035)
+"", VAR9);
+return VAR14;
+}
+}
+}
+
+
+if (!FUN12(VAR2, &VAR4)
+|| !VAR4->VAR20
+|| !(VAR6->VAR11 & VAR21)
+|| VAR2->VAR7) {
+return VAR15;
+}
+
+if (!VAR4->VAR22) {
+VAR23 *VAR24 = FUN13(VAR4->VAR20);
+char *VAR25 = FUN14(VAR24, NULL, 0);
+VAR4->VAR22 = FUN15(VAR2->VAR26->VAR17, VAR25);
+FUN16(VAR25);
+}
+
+
+if (VAR6->VAR27) {
+VAR7 = FUN17(VAR2->VAR17, VAR2->VAR28, VAR2->VAR26,
+VAR2, (char *)VAR6->VAR27);
+if (!VAR7 || !VAR7[0]) {
+FUN10(
+VAR18, VAR29, 0, VAR2, FUN11(02434) "", VAR6->VAR27);
+return VAR15;
+}
+}
+else {
+VAR7 = VAR4->VAR22;
+}
+
+if (FUN18(VAR7, '') != NULL) {
+FUN10(VAR18, VAR19, 0, VAR2, FUN11(10096)
+""
+"", VAR7);
+return VAR14;
+}
+
+
+VAR8 = FUN19(VAR2->VAR17, "",
+FUN20(VAR2->VAR17,
+FUN19(VAR2->VAR17, VAR7,
+"", NULL)),
+NULL);
+FUN21(VAR2->VAR16, "", VAR8);
+
+FUN10(VAR18, VAR30, 0, VAR2, FUN11(02036)
+""VAR31: %VAR32\"",
+VAR8);
+
+return VAR15;
+}

@@ -1,0 +1,30 @@
+int FUN1(VAR1 *VAR2, const char *VAR3, const char *VAR4, VAR1 *VAR5, VAR1 *VAR6)
+{
+VAR7 *VAR8, *VAR9;
+int VAR10 = -1; 
+
+for (VAR8 = VAR2->VAR11->VAR4; VAR8; VAR8 = VAR9)
+{
+VAR9 = VAR8->VAR12;
+
+
+if ( ((!strcmp(VAR8->VAR13, VAR4) || !strcmp(VAR4, "")) &&
+!strcmp(VAR8->VAR14, VAR3)))
+{
+FUN2(VAR8, VAR2->VAR11->VAR4);
+FUN3(VAR8->VAR13);
+FUN3(VAR8->VAR14);
+FUN3(VAR8);
+
+FUN4(VAR6, 0, VAR15, NULL, "",
+VAR5->VAR16, VAR2->VAR16);
+
+FUN4(VAR6, VAR15, 0, NULL, "",
+VAR5->VAR16, VAR2->VAR16, VAR3, 0, VAR4);
+
+VAR10 = 0;
+}
+}
+
+return VAR10;
+}

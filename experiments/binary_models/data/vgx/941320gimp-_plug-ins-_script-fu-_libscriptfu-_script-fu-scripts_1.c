@@ -1,0 +1,1 @@
+FUN1 ( ) { if ( FUN2 ( VAR1 , "" ) ) { VAR2 * VAR3 = FUN3 ( VAR1 ) ; VAR2 * VAR4 = FUN4 ( VAR3 ) ; VAR2 * VAR5 ; VAR6 * VAR7 = NULL ; VAR5 = FUN5 ( ""%VAR8\"" , VAR4 ) ; FUN6 ( VAR4 ) ; if ( ! FUN7 ( VAR5 , & VAR7 ) ) { VAR2 * VAR9 = FUN5 ( FUN8 ( "" ) , FUN9 ( VAR1 ) ) ; FUN10 ( "" , VAR9 , VAR7 -> VAR9 ) ; FUN11 ( & VAR7 ) ; } FUN12 ( 0 ) ; FUN6 ( VAR5 ) ; FUN6 ( VAR3 ) ; } }

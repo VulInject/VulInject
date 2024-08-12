@@ -1,0 +1,115 @@
+int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+struct VAR5 *VAR6 = VAR4->VAR7;
+int VAR8;
+
+VAR4->VAR9 = FUN3(VAR2, "");
+if (VAR4->VAR9 < 0)
+return -VAR10;
+
+
+VAR8 = FUN4(VAR4->VAR11,
+FUN5(VAR6, VAR12), 0);
+if (VAR8) {
+FUN6(&VAR2->VAR13, "", VAR8);
+return VAR8;
+}
+
+VAR8 = FUN7(&VAR2->VAR13, VAR4->VAR9,
+VAR14, VAR15,
+"", VAR4);
+if (VAR8) {
+FUN6(&VAR2->VAR13, "", VAR8);
+return VAR8;
+}
+
+VAR8 = FUN8(&VAR2->VAR13,
+VAR4->VAR11);
+if (VAR8) {
+FUN6(&VAR2->VAR13,
+"", VAR8);
+return VAR8;
+}
+
+if (VAR4->VAR16) {
+VAR8 = FUN4(VAR4->VAR17,
+FUN9(VAR6, VAR12), 0x0);
+if (VAR8) {
+FUN6(&VAR2->VAR13, "", VAR8);
+return VAR8;
+}
+VAR8 = FUN4(VAR4->VAR18,
+FUN10(VAR6, VAR12), 0x0);
+if (VAR8) {
+FUN6(&VAR2->VAR13, "", VAR8);
+return VAR8;
+}
+VAR4->VAR19 = FUN3(VAR2, "");
+if (VAR4->VAR19 < 0)
+return -VAR10;
+
+VAR8 = FUN7(&VAR2->VAR13, VAR4->VAR19,
+VAR20, 0, "", VAR4);
+if (VAR8) {
+FUN6(&VAR2->VAR13, "", VAR8);
+return VAR8;
+}
+
+VAR8 = FUN11(&VAR2->VAR13,
+VAR4->VAR17);
+if (VAR8) {
+FUN6(&VAR2->VAR13,
+"", VAR8);
+return VAR8;
+}
+
+VAR4->VAR21 = FUN3(VAR2, "");
+if (VAR4->VAR21 < 0)
+return -VAR10;
+
+VAR8 = FUN7(&VAR2->VAR13, VAR4->VAR21,
+VAR22, 0, "", VAR4);
+if (VAR8) {
+FUN6(&VAR2->VAR13, "", VAR8);
+return VAR8;
+}
+
+VAR8 = FUN12(&VAR2->VAR13,
+VAR4->VAR18);
+if (VAR8) {
+FUN6(&VAR2->VAR13,
+"", VAR8);
+return VAR8;
+}
+}
+
+if (VAR4->VAR23) {
+VAR4->VAR24 = FUN3(VAR2, "");
+if (VAR4->VAR24 < 0)
+return -VAR10;
+
+VAR8 = FUN7(&VAR2->VAR13, VAR4->VAR24,
+VAR25, 0, "", VAR4);
+if (VAR8) {
+FUN6(&VAR2->VAR13, "", VAR8);
+return VAR8;
+}
+VAR8 = FUN4(VAR4->VAR26,
+FUN13(VAR6), 0);
+if (VAR8) {
+FUN6(&VAR2->VAR13, "", VAR8);
+return VAR8;
+}
+
+VAR8 = FUN14(&VAR2->VAR13,
+VAR4->VAR26);
+if (VAR8) {
+FUN6(&VAR2->VAR13,
+"", VAR8);
+return VAR8;
+}
+}
+return FUN15(&VAR2->VAR13,
+&VAR27, NULL, 0);
+}

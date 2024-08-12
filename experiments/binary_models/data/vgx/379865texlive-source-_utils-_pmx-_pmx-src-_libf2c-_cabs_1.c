@@ -1,0 +1,1 @@
+extern double FUN1 ( ) double FUN2 ( VAR1 , VAR2 ) double VAR1 , VAR2 ; "" { double FUN2 ( double VAR1 , double VAR2 ) { int VAR3 ; if ( VAR1 < 0 ) { VAR1 = - VAR1 ; } if ( VAR2 < 0 ) { VAR2 = - VAR2 ; } if ( VAR2 > VAR1 ) { VAR3 = VAR1 ; VAR1 = VAR2 ; VAR2 = VAR3 ; } } }

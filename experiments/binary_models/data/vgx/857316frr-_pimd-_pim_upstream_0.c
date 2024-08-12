@@ -1,0 +1,28 @@
+struct VAR1 *FUN1(struct VAR2 *VAR3, VAR4 *VAR5,
+struct VAR6 *VAR7, int VAR8,
+const char *VAR9,
+struct VAR10 *VAR11)
+{
+struct VAR1 *VAR12 = NULL;
+int VAR13 = 0;
+
+VAR12 = FUN2(VAR3, VAR5);
+if (VAR12) {
+FUN3(VAR12, VAR8, VAR9);
+VAR13 = 1;
+} else {
+VAR12 = FUN4(VAR3, VAR5, VAR7, VAR8, VAR11);
+}
+
+if (VAR14) {
+FUN5(
+"",
+VAR15, VAR9, VAR12->VAR16, &VAR12->VAR17.VAR18,
+VAR12->VAR17.VAR19.VAR6 ? VAR12->VAR17.VAR19
+.VAR6->VAR9
+: "",
+VAR13, VAR12->VAR20);
+}
+
+return VAR12;
+}

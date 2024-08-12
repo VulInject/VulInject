@@ -1,0 +1,131 @@
+int
+FUN1(usb_ugen_hdl_t VAR1, VAR2 *VAR3, int VAR4, int VAR5,
+VAR6 *VAR7)
+{
+VAR8	*VAR9 =
+(VAR8 *)VAR1;
+VAR10		*VAR11;
+int			VAR12;
+int			VAR13;
+
+if (VAR1 == NULL) {
+
+return (VAR14);
+}
+
+VAR11 = VAR9->VAR15;
+
+if (FUN2(VAR11, *VAR3) != VAR16) {
+
+return (VAR14);
+}
+
+VAR13 = FUN3(VAR11, *VAR3);
+
+FUN4(VAR17, VAR11->VAR18,
+"", FUN5(*VAR3));
+FUN6(VAR17, VAR11->VAR18,
+"" VAR19 "" VAR19 "" VAR19
+"" VAR19 "" VAR19 "" VAR20,
+FUN7(VAR11, *VAR3), FUN8(VAR11, *VAR3),
+FUN9(VAR11, *VAR3), FUN10(VAR11, *VAR3),
+FUN11(VAR11, *VAR3), FUN3(VAR11, *VAR3));
+
+
+if ((VAR12 = FUN12(VAR11, *VAR3, VAR4)) != 0) {
+FUN13(VAR17, VAR11->VAR18,
+"", VAR12);
+
+return (VAR12);
+}
+
+
+if (FUN14(VAR11->VAR21,
+VAR22, 0) <= 0) {
+FUN13(VAR17, VAR11->VAR18,
+"");
+
+return (VAR23);
+}
+
+FUN15(&VAR11->VAR24);
+
+
+if (VAR13 != VAR25) {
+
+
+switch (VAR11->VAR26) {
+case VAR27:
+
+break;
+case VAR28:
+VAR12 = VAR29;
+FUN16(&VAR11->VAR24);
+
+goto VAR30;
+case VAR31:
+case VAR32:
+case VAR33:
+default:
+VAR12 = VAR34;
+FUN16(&VAR11->VAR24);
+
+goto VAR30;
+}
+}
+FUN16(&VAR11->VAR24);
+
+
+switch (VAR13) {
+case VAR35:
+if (VAR11->VAR36->VAR37 & VAR38) {
+FUN17(VAR11);
+(void) FUN18(VAR11->VAR39, 0,
+VAR40);
+}
+
+VAR12 = FUN19(VAR11, *VAR3, VAR4);
+if (VAR12 == 0) {
+FUN15(&VAR11->VAR24);
+VAR11->VAR41++;
+FUN16(&VAR11->VAR24);
+} else {
+if (VAR11->VAR36->VAR37 &
+VAR38) {
+FUN20(VAR11);
+}
+}
+
+break;
+case VAR42:
+VAR12 = FUN21(VAR11, *VAR3, VAR4);
+if (VAR12 == 0) {
+FUN15(&VAR11->VAR24);
+VAR11->VAR41++;
+FUN16(&VAR11->VAR24);
+}
+
+break;
+case VAR25:
+VAR12 = FUN22(VAR11, *VAR3, VAR4);
+
+break;
+default:
+VAR12 = VAR14;
+
+break;
+}
+VAR30:
+FUN15(&VAR11->VAR24);
+
+FUN4(VAR17, VAR11->VAR18,
+"",
+FUN5(*VAR3), VAR12, VAR11->VAR26,
+VAR11->VAR41);
+
+FUN16(&VAR11->VAR24);
+
+FUN23(VAR11->VAR21);
+
+return (VAR12);
+}

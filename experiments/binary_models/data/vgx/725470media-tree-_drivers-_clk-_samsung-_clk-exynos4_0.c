@@ -1,0 +1,22 @@
+static int FUN1(void)
+{
+FUN2(VAR1, VAR2,
+FUN3(VAR3));
+FUN2(VAR1, VAR4,
+FUN3(VAR5));
+
+if (VAR6 == VAR7) {
+FUN2(VAR1, VAR8,
+FUN3(VAR9));
+FUN4(VAR1, VAR10,
+FUN3(VAR10));
+} else {
+FUN2(VAR1, VAR8,
+FUN3(VAR11));
+}
+
+FUN4(VAR1, VAR12,
+FUN3(VAR12));
+
+return 0;
+}

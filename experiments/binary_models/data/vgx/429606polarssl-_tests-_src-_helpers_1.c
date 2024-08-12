@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , VAR1 * VAR3 , uint32_t VAR4 , uint32_t VAR5 ) { int VAR6 = 0 ; uint32_t VAR7 = 0 ; for ( VAR7 = 0 ; VAR7 < VAR4 ; VAR7 ++ ) { if ( VAR2 [ VAR7 ] != VAR3 [ VAR7 ] ) { VAR6 = - 1 ; break ; } } return VAR6 ; }

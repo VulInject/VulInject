@@ -1,0 +1,42 @@
+FUN1 (char *VAR1,			
+int VAR2,		
+VAR3 *VAR4)	
+{
+FLONUM_TYPE VAR5;
+LITTLENUM_TYPE VAR6[VAR7 + VAR7 + VAR8];
+
+char *VAR9;
+int VAR10;		
+long VAR11;
+
+VAR9 = VAR1;
+VAR5.VAR12 = VAR6 + VAR7;
+VAR5.VAR13 = NULL;
+VAR5.VAR14 = NULL;
+VAR5.VAR15 = 0;
+VAR5.VAR16 = '';
+
+if (FUN2 (VAR2, &VAR10, &VAR11))
+{
+VAR9 = NULL;
+FUN3 (VAR4);
+}
+
+if (VAR9)
+{
+memset (VAR6, '', sizeof (VAR3) * VAR7);
+
+
+VAR5.VAR13 = VAR5.VAR12 + VAR10 - 1 + VAR8;
+
+if (FUN4 (&VAR9, "", "", &VAR5))
+{
+FUN3 (VAR4);
+VAR9 = NULL;
+}
+else if (FUN5 (VAR2, &VAR5, VAR4))
+VAR9 = NULL;
+}
+
+return VAR9;
+}

@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , const char * VAR3 , ... ) { va_list VAR4 ; int VAR5 ; FUN2 ( VAR4 , VAR3 ) ; VAR5 = vsnprintf ( VAR2 -> VAR6 , sizeof ( VAR2 -> VAR6 ) , VAR3 , VAR4 ) ; FUN3 ( VAR4 ) ; VAR2 -> FUN4 ( VAR2 -> VAR7 , VAR2 -> VAR6 , VAR5 , false ) ; }

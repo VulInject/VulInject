@@ -1,0 +1,1 @@
+void * FUN1 ( void * VAR1 , size_t VAR2 , const char * VAR3 , int VAR4 ) { void * VAR5 ; VAR5 = ( void * ) realloc ( VAR1 , VAR2 ) ; FUN2 ( & VAR6 ) ; FUN3 ( "" , VAR1 , VAR3 , VAR4 ) ; FUN4 ( "" , VAR5 , VAR2 , VAR3 , VAR4 ) ; FUN5 ( & VAR6 ) ; return ( VAR5 ) ; }

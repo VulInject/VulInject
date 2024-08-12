@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , zd_addr_t VAR3 , VAR4 * VAR5 ) { int VAR6 ; VAR6 = FUN2 ( VAR2 , VAR5 , VAR3 ) ; FUN3 ( & VAR2 -> mutex ) ; return VAR6 ; }

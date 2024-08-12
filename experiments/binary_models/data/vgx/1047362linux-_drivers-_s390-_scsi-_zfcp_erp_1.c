@@ -1,0 +1,1 @@
+static enum zfcp_erp_act_result FUN1 ( struct VAR1 * VAR2 ) { int VAR3 ; VAR3 = FUN2 ( VAR2 , NULL ) ; if ( VAR3 == - VAR4 ) { return VAR5 ; } VAR2 -> VAR6 = VAR7 ; if ( VAR3 ) { return VAR8 ; } return VAR9 ; }

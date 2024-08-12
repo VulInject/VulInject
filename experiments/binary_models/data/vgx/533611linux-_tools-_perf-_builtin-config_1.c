@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , const char * VAR3 ) { struct VAR4 * VAR5 ; struct VAR6 * VAR7 ; if ( VAR2 == NULL ) { return - 1 ; } FUN2 ( , ) { FUN2 ( , ) { const char * VAR8 = VAR3 + strlen ( VAR5 -> VAR8 ) + 1 ; if ( strcmp ( VAR8 , VAR7 -> VAR8 ) == 0 ) { char * VAR9 = VAR7 -> VAR9 ; if ( VAR9 ) { FUN3 ( "" , VAR3 , VAR9 ) ; return 0 ; } } } } return 0 ; }

@@ -1,0 +1,16 @@
+static void FUN1(struct VAR1 *VAR1)
+{
+__be32 VAR2;
+
+if (!VAR1->VAR3)
+return;
+
+FUN2(VAR1->VAR3);
+FUN3(VAR1->VAR3);
+VAR1->VAR3 = NULL;
+FUN4(&VAR1->VAR4);
+VAR2 = 0;
+FUN5(VAR1->VAR5, VAR6,
+VAR1->VAR7 + VAR8,
+&VAR2, 4, VAR9);
+}

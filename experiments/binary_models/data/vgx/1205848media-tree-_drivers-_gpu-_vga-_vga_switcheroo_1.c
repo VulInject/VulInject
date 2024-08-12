@@ -1,0 +1,1 @@
+( VAR1 ) ; int FUN1 ( struct VAR2 * VAR3 ) { enum vga_switcheroo_client_id VAR4 ; int VAR5 = VAR6 . VAR7 ; if ( VAR6 . VAR7 >= 0 ) { VAR4 = VAR6 . VAR8 -> FUN2 ( VAR3 ) ; if ( VAR6 . VAR7 != VAR4 ) { VAR5 = VAR6 . VAR8 -> FUN3 ( VAR6 . VAR7 ) ; } } FUN4 ( & VAR6 . VAR9 ) ; return VAR5 ; }

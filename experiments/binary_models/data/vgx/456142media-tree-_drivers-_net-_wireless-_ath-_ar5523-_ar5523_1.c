@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { struct ar5523_cmd_host_available VAR3 ; VAR3 . VAR4 = FUN2 ( VAR5 ) ; VAR3 . VAR6 = FUN2 ( VAR7 ) ; VAR3 . VAR8 = FUN2 ( VAR9 , NULL ) ; VAR3 . VAR10 = FUN2 ( VAR11 ) ; return FUN3 ( VAR2 , VAR12 , & VAR3 , sizeof ( VAR3 ) , NULL , 0 , 0 ) ; }

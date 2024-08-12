@@ -1,0 +1,1 @@
+int FUN1 ( mac_ring_driver_t VAR1 , uint_t VAR2 , VAR3 * VAR4 ) { VAR5 * VAR6 = ( VAR5 * ) VAR1 ; VAR7 * VAR8 = VAR6 -> VAR8 ; switch ( VAR2 ) { case VAR9 : * VAR4 = VAR6 -> VAR10 ; break ; case VAR11 : * VAR4 = VAR6 -> VAR12 ; break ; default : * VAR4 = 0 ; return ( VAR13 ) ; } return ( 0 ) ; }

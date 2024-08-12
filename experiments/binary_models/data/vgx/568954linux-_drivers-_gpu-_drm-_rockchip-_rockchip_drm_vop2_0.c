@@ -1,0 +1,116 @@
+static int FUN1(struct VAR1 *VAR1)
+{
+const struct VAR2 *VAR2 = VAR1->VAR3;
+struct VAR4 *VAR5 = VAR1->VAR5;
+struct VAR6 *VAR7 = VAR1->VAR7;
+struct VAR8 *VAR9;
+struct VAR10 *VAR11;
+struct VAR12 *VAR13;
+int VAR14, VAR15, VAR16 = 0;
+int VAR17;
+
+for (VAR14 = 0; VAR14 < VAR2->VAR18; VAR14++) {
+const struct VAR19 *VAR20;
+struct VAR10 *VAR21;
+char VAR22[9];
+
+VAR20 = &VAR2->VAR13[VAR14];
+VAR13 = &VAR1->VAR23[VAR14];
+VAR13->VAR1 = VAR1;
+VAR13->VAR24 = VAR20->VAR24;
+VAR13->VAR25 = VAR20->VAR25;
+VAR13->VAR3 = VAR20;
+
+snprintf(VAR22, sizeof(VAR22), "", VAR13->VAR24);
+VAR13->VAR26 = FUN2(VAR1->VAR7, VAR22);
+if (FUN3(VAR13->VAR26)) {
+FUN4(VAR1->VAR5, "", VAR22);
+return FUN5(VAR13->VAR26);
+}
+
+VAR21 = FUN6(VAR7->VAR27, VAR14, -1);
+if (!VAR21) {
+FUN7(VAR1->VAR5, "", VAR28, VAR14);
+continue;
+}
+FUN8(VAR21);
+
+VAR11 = FUN9(VAR7->VAR27, VAR14);
+if (!VAR11) {
+FUN4(VAR1->VAR5, "", VAR14);
+return -VAR29;
+}
+
+VAR13->VAR30.VAR11 = VAR11;
+VAR16++;
+}
+
+VAR15 = 0;
+for (VAR14 = 0; VAR14 < VAR1->VAR31; VAR14++) {
+struct VAR32 *VAR33 = &VAR1->VAR33[VAR14];
+u32 VAR34;
+
+if (VAR1->VAR3->VAR35 == 3566) {
+
+switch (VAR33->VAR3->VAR36) {
+case VAR37:
+case VAR38:
+case VAR39:
+continue;
+}
+}
+
+if (VAR33->VAR40 == VAR41) {
+VAR13 = FUN10(VAR1);
+if (VAR13) {
+VAR34 = FUN11(VAR15);
+VAR13->VAR42 = VAR33;
+VAR15++;
+} else {
+
+VAR33->VAR40 = VAR43;
+}
+}
+
+if (VAR33->VAR40 == VAR43)
+VAR34 = (1 << VAR16) - 1;
+
+VAR17 = FUN12(VAR1, VAR33, VAR34);
+if (VAR17) {
+FUN4(VAR1->VAR5, "",
+VAR33->VAR3->VAR44, VAR17);
+return VAR17;
+}
+}
+
+for (VAR14 = 0; VAR14 < VAR2->VAR18; VAR14++) {
+VAR13 = &VAR1->VAR23[VAR14];
+
+if (!VAR13->VAR30.VAR11)
+continue;
+
+VAR9 = &VAR13->VAR42->VAR45;
+
+VAR17 = FUN13(VAR5, &VAR13->VAR30, VAR9, NULL,
+&VAR46,
+"", VAR13->VAR24);
+if (VAR17) {
+FUN4(VAR1->VAR5, "", VAR14);
+return VAR17;
+}
+
+FUN14(&VAR13->VAR30, &VAR47);
+
+FUN15(&VAR13->VAR48);
+}
+
+
+for (VAR14 = 0; VAR14 < VAR1->VAR3->VAR18; VAR14++) {
+struct VAR12 *VAR13 = &VAR1->VAR23[VAR14];
+
+if (VAR13->VAR30.VAR11)
+VAR13->VAR49 = VAR50 / VAR16;
+}
+
+return 0;
+}

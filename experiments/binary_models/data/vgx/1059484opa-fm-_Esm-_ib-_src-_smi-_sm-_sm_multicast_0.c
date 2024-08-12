@@ -1,0 +1,124 @@
+VAR1
+FUN1(int32_t VAR2, int32_t VAR3, int *VAR4) {
+int			VAR5, VAR6;
+int			VAR7 = 0;
+void			*VAR8;
+uint32_t		VAR9;
+VAR10			*VAR11;
+VAR10			*VAR12;
+VAR13			*VAR14;
+VAR15		*VAR16;
+VAR17		*VAR18;
+VAR19	*VAR20;
+
+FUN2(VAR21, 0, 0, 0, 0);
+
+VAR18 = (VAR17 *)&VAR22;
+
+
+VAR9 = 32 + sizeof(VAR19) + (VAR18->VAR23 * sizeof(VAR15));
+if (FUN3(&VAR24, VAR9, (void **)&VAR8) != VAR25) {
+FUN4(VAR21, VAR26);
+return(VAR26);
+}
+
+
+if (!VAR27[VAR2][VAR3].copy && (VAR27[VAR2][VAR3].VAR28 != NULL)) {
+FUN5(&VAR24, (void *)VAR27[VAR2][VAR3].VAR28);
+}
+
+memset((void *)VAR8, 0, VAR9);
+VAR27[VAR2][VAR3].VAR28 = (VAR19 *)VAR8;
+VAR27[VAR2][VAR3].copy = 0;
+
+VAR29[VAR30] = VAR27[VAR2][VAR3].VAR28;
+VAR30++;
+
+VAR20 = VAR27[VAR2][VAR3].VAR28;
+VAR20->VAR31 = VAR18->VAR23;
+VAR20->VAR32 = (VAR15 *)(VAR20+1);
+
+
+
+VAR33 = NULL;
+VAR5 = 0;
+VAR16 = VAR20->VAR32;
+FUN6(VAR34, VAR12) {
+if (VAR35 &&
+(VAR36 == VAR12->VAR37.VAR38)) {
+VAR33 = VAR12;
+}
+VAR16[VAR5].VAR39 = VAR12->VAR39;
+VAR16[VAR5].VAR40 = -1;
+VAR16[VAR5].VAR41 = -1;
+VAR16[VAR5].VAR42 = NULL;
+VAR16[VAR5].VAR43 = 0;
+VAR12->VAR44 = 0;
+VAR5++;
+}
+
+
+if (VAR35) {
+if (VAR33) {
+Status_t VAR45;
+
+VAR45 = FUN7(VAR20, 1, VAR2, VAR3, VAR18->VAR23, VAR4);
+if (VAR45 == VAR25)
+return VAR45;
+} else {
+if (VAR18->VAR23 != 0)
+FUN8(VAR21, ""
+"",
+FUN9(VAR2), FUN10(VAR3));
+}
+
+}
+
+for (VAR5 = 0; (VAR18->VAR23 > 0) && (VAR5 < VAR18->VAR23-1); VAR5++) {
+if ((VAR12 = FUN11(VAR34, VAR16[VAR5].VAR39)) == NULL) continue;
+FUN12(VAR12, VAR14) {
+if (!FUN13(VAR14) || VAR14->VAR46 < VAR47) {
+continue;
+}
+
+if (VAR14->VAR40 == (VAR48)-1 || VAR14->VAR41 == (VAR48)-1) {	
+continue;
+}
+
+if (VAR14->VAR49->VAR50 < VAR2) {	
+continue;
+}
+
+if (FUN14(FUN15(VAR14->VAR49), VAR3)) {	
+continue;
+}
+
+VAR11 = FUN11(VAR34, VAR14->VAR40);
+if (!VAR11 || VAR11->VAR37.VAR51 != VAR52) {
+continue;
+}
+
+for (VAR6 = VAR5+1; VAR6 < VAR18->VAR23; VAR6++) {
+if (VAR16[VAR6].VAR39 == VAR14->VAR40) {
+if (VAR16[VAR6].VAR40 < 0) {
+VAR16[VAR6].VAR40 = VAR12->VAR39;
+VAR16[VAR6].VAR41 = VAR14->VAR39;
+VAR16[VAR6].VAR42 = &VAR16[VAR5];
+++VAR7;
+}
+break;
+}
+}
+}
+}
+
+if (VAR7 == (VAR18->VAR23 - 1))
+*VAR4 = 1;
+else
+*VAR4 = 0;
+
+
+
+FUN4(VAR21, VAR25);
+return(VAR25);
+}

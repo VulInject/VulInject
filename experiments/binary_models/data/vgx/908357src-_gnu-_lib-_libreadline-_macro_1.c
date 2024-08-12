@@ -1,0 +1,1 @@
+FUN1 ( ) { if ( VAR1 ) { VAR1 = ( char * ) NULL ; } VAR2 = VAR3 = 0 ; FUN2 ( VAR4 ) ; VAR4 = ( char * ) NULL ; VAR5 = 0 ; FUN3 ( VAR6 ) ; }

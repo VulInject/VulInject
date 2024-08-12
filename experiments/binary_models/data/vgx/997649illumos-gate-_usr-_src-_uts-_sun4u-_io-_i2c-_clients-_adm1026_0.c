@@ -1,0 +1,82 @@
+static int
+FUN1(dev_t VAR1, int VAR2, intptr_t VAR3, int VAR4, VAR5 *VAR6,
+int *VAR7)
+{
+FUN2(FUN3(VAR6, VAR7))
+
+VAR8		*VAR9;
+int			VAR10;
+int			VAR11 = VAR12;
+i2c_gpio_t		VAR13;
+
+VAR10 = FUN4(VAR1);
+
+FUN5((VAR14, "",
+VAR10, VAR2));
+
+VAR9 = (struct VAR15 *)
+FUN6(VAR16, VAR10);
+
+if (VAR9 == NULL) {
+FUN7(VAR14, "");
+VAR11 = VAR17;
+return (VAR11);
+}
+
+FUN8(&VAR9->VAR18);
+
+if (FUN9((VAR19)VAR3, &VAR13,
+sizeof (VAR20), VAR4) != VAR12) {
+
+FUN10(&VAR9->VAR18);
+return (VAR21);
+}
+if (VAR13.VAR22 & 0xffff0000) {
+FUN7(VAR14,
+""
+"");
+FUN10(&VAR9->VAR18);
+return (VAR23);
+}
+switch (VAR2) {
+case VAR24:
+VAR11 = FUN11(VAR9, VAR13.VAR25, VAR13.VAR22);
+break;
+
+case VAR26:
+VAR11 = FUN12(VAR9, VAR13.VAR22, &VAR13.VAR25);
+if (VAR11 == VAR12)
+VAR11 = FUN13(&VAR13, (VAR19)VAR3,
+sizeof (VAR20), VAR4);
+break;
+
+case VAR27:
+case VAR28:
+VAR11 = FUN14(VAR9, VAR2, VAR13.VAR25,
+VAR13.VAR22);
+break;
+
+case VAR29:
+case VAR30:
+VAR11 = FUN15(VAR9, VAR2, VAR13.VAR22,
+&VAR13.VAR25);
+if (VAR11 == VAR12)
+VAR11 = FUN13(&VAR13, (VAR19)VAR3,
+sizeof (VAR20), VAR4);
+break;
+default:
+FUN5((VAR14,
+"", VAR2));
+VAR11 = VAR23;
+}
+FUN10(&VAR9->VAR18);
+
+if (VAR11) {
+FUN5((VAR14,
+"", VAR11));
+if (VAR11 == VAR31)
+VAR11 = VAR32;
+}
+
+return (VAR11);
+}

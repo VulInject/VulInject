@@ -1,0 +1,20 @@
+static VAR1
+FUN1(VAR2 *VAR3)
+{
+VAR4 *VAR5;
+
+VAR3->VAR6 = strdup("");
+VAR3->VAR7 = strdup("");
+VAR5 = FUN2("");
+VAR3->VAR8.VAR9 = FUN3(VAR5);
+VAR3->VAR10.VAR9 = FUN3(VAR5);
+VAR3->VAR11 = VAR12;
+
+if (VAR3->VAR6 == NULL ||
+VAR3->VAR7 == NULL ||
+VAR3->VAR8.VAR9 == NULL ||
+VAR3->VAR10.VAR9 == NULL)
+return (VAR13);
+
+return (FUN4(VAR3));
+}

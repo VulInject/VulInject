@@ -1,0 +1,41 @@
+static void
+FUN1(void)
+{
+struct VAR1 *VAR2;
+struct VAR3 *VAR4;
+
+if (!assert((VAR4 = FUN2()) != NULL))
+return;
+if (!assert((VAR2 = FUN3()) != NULL)) {
+FUN4(VAR4);
+return;
+}
+
+FUN5(VAR4, 0, FUN6(VAR4, ""));
+FUN5(VAR4, 0, FUN6(VAR4, ""));
+
+FUN7(VAR2, "");
+FUN8("");
+FUN9(1, FUN10(VAR4, VAR2));
+FUN9(1, FUN11(VAR4, VAR2));
+FUN7(VAR2, "");
+FUN8("");
+FUN9(0, FUN10(VAR4, VAR2));
+FUN9(0, FUN11(VAR4, VAR2));
+FUN7(VAR2, "");
+FUN8("");
+FUN9(1, FUN10(VAR4, VAR2));
+FUN9(1, FUN11(VAR4, VAR2));
+FUN7(VAR2, "");
+FUN8("");
+FUN9(0, FUN10(VAR4, VAR2));
+FUN9(0, FUN11(VAR4, VAR2));
+FUN7(VAR2, "");
+FUN8("");
+FUN9(1, FUN10(VAR4, VAR2));
+FUN9(1, FUN11(VAR4, VAR2));
+
+
+FUN12(VAR2);
+FUN4(VAR4);
+}

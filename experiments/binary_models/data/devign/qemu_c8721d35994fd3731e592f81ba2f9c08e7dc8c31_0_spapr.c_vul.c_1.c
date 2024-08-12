@@ -1,0 +1,29 @@
+static void FUN1(VAR1 *VAR2, void *VAR3)
+{
+    VAR4 *VAR5 = FUN2(VAR2);
+    VAR6 *VAR7 = FUN3(VAR2);
+    VAR8 *VAR9 = FUN4(VAR2);
+    VAR10 *VAR11 = FUN5(VAR2);
+    VAR12 *VAR13 = FUN6(VAR2);
+    VAR5->VAR14 = "";
+    VAR5->VAR15 = VAR16;
+    VAR5->VAR17 = VAR18;
+    VAR5->VAR19 = VAR20;
+    VAR5->VAR21 = VAR22;
+    VAR5->VAR23 = 1;
+    VAR5->VAR24 = "";
+    VAR5->VAR25 = 512 * VAR26;
+    VAR5->VAR27 = VAR28;
+    VAR5->VAR29 = true;
+    VAR5->VAR30 = true;
+    VAR5->VAR31 = VAR32;
+    VAR13->VAR33 = VAR34;
+    VAR13->VAR35 = VAR36;
+    VAR13->VAR37 = VAR38;
+    VAR5->VAR39 = VAR40;
+    VAR5->VAR41 = VAR42;
+    VAR7->VAR43 = true;
+    VAR7->VAR44 = true;
+    VAR9->VAR45 = VAR46;
+    VAR11->VAR47 = VAR48;
+}

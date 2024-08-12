@@ -1,0 +1,1 @@
+static inline void FUN1(int VAR1, TCGv VAR2, TCGv VAR3) { FUN2(VAR4, VAR5, VAR2, VAR3); }

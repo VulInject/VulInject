@@ -1,0 +1,13 @@
+static VAR1 *FUN1(VAR2 *VAR3)
+{
+    VAR4 *VAR5 = FUN2();
+    uint32_t VAR6 = VAR7 - (VAR3->VAR6 << VAR8);
+    FUN3(VAR5, "", VAR6);
+    FUN3(VAR5, "", VAR3->VAR9[VAR10]);
+    FUN3(VAR5, "", VAR3->VAR9[VAR11]);
+    FUN3(VAR5, "", VAR3->VAR9[VAR12]);
+    FUN3(VAR5, "", VAR3->VAR9[VAR13]);
+    FUN3(VAR5, "", VAR3->VAR9[VAR14]);
+    FUN3(VAR5, "", VAR3->VAR9[VAR15]);
+    return FUN4(VAR5);
+}

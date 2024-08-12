@@ -1,0 +1,1 @@
+static inline struct VAR1 * FUN1 ( struct VAR2 * VAR3 , struct VAR4 * VAR5 , const union VAR6 * VAR7 , __be16 VAR8 ) { int VAR9 = FUN2 ( VAR3 -> VAR10 , VAR7 , VAR8 , 0 ) ; struct VAR1 * VAR11 = FUN3 ( VAR5 -> VAR12 [ VAR9 ] . VAR11 ) ; return ( ! VAR11 || FUN4 ( VAR11 ) ) ?NULL : VAR11 ; }

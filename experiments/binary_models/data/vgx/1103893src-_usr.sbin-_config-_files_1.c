@@ -1,0 +1,1 @@
+int FUN1 ( void ) { struct VAR1 * VAR2 ; struct VAR3 * VAR4 , * * VAR5 ; int VAR6 , VAR7 ; VAR6 = 0 ; for ( VAR2 = VAR8 ; VAR2 != NULL ; VAR2 = VAR2 -> VAR9 ) { if ( VAR2 -> VAR10 != NULL ) { VAR4 = NULL ; VAR5 = & VAR4 ; VAR7 = FUN2 ( VAR2 -> VAR10 , VAR2 -> VAR11 & VAR12 ?VAR13 : VAR14 , & VAR5 ) ; VAR2 -> VAR15 = VAR4 ; } VAR2 -> VAR11 |= VAR16 ; } return ( VAR6 ) ; }

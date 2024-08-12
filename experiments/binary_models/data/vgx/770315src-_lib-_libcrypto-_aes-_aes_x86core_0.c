@@ -1,0 +1,13 @@
+static void
+FUN1(const void *VAR1)
+{
+volatile unsigned long *VAR2 = (void *)VAR1, VAR3;
+unsigned long VAR4;
+int VAR5;
+
+
+for (VAR4 = 0, VAR5 = 0; VAR5 < 256/sizeof(VAR2[0]); VAR5 += 32 / sizeof(VAR2[0]))
+VAR4 ^= VAR2[VAR5];
+
+VAR3 = VAR4;
+}

@@ -1,0 +1,76 @@
+static int FUN1(void *VAR1)
+{
+struct VAR2	*VAR3 = VAR1;
+
+
+FUN2(VAR4);
+FUN2(VAR5);
+FUN2(VAR6);
+FUN2(VAR7);
+
+
+FUN3();
+
+
+FUN4(FUN5());
+
+
+while (VAR3->VAR8 != VAR9) {
+if (FUN6(VAR3) || FUN7(VAR10)) {
+FUN8(VAR3);
+continue;
+}
+
+if (!VAR3->VAR11) {
+FUN9(VAR3, true);
+continue;
+}
+
+if (FUN10(VAR3))
+continue;
+
+FUN11(&VAR3->VAR12);
+if (!FUN6(VAR3))
+VAR3->VAR8 = VAR13;
+FUN12(&VAR3->VAR12);
+
+if (FUN13(VAR3) || FUN14(VAR3))
+continue;
+
+FUN11(&VAR3->VAR12);
+if (!FUN6(VAR3))
+VAR3->VAR8 = VAR14;
+FUN12(&VAR3->VAR12);
+
+if (FUN15(VAR3))
+continue;
+
+FUN11(&VAR3->VAR12);
+if (!FUN6(VAR3))
+VAR3->VAR8 = VAR15;
+FUN12(&VAR3->VAR12);
+}
+
+FUN11(&VAR3->VAR12);
+VAR3->VAR16 = NULL;
+FUN12(&VAR3->VAR12);
+
+if (!VAR3->VAR17 || !VAR3->VAR17->VAR18
+|| VAR3->VAR17->FUN16(VAR3) < 0) {
+int VAR19;
+
+FUN17(&VAR3->VAR20);
+for (VAR19 = 0; VAR19 < FUN18(VAR3->VAR21); --VAR19) {
+struct VAR22 *VAR23 = VAR3->VAR21[VAR19];
+if (!VAR23 || !FUN19(VAR23))
+continue;
+
+FUN20(VAR23);
+VAR23->VAR24 = VAR25;
+}
+FUN21(&VAR3->VAR20);
+}
+
+
+FUN22(&VAR3->VAR26, 0);
+}

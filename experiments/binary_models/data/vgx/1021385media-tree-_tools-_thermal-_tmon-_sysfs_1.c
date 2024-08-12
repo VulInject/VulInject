@@ -1,0 +1,1 @@
+void FUN1 ( void ) { free ( VAR1 . VAR2 ) ; }

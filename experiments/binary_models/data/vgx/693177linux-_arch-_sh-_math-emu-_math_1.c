@@ -1,0 +1,1 @@
+int FUN1 ( unsigned short VAR1 , struct VAR2 * VAR3 ) { struct VAR4 * VAR5 = VAR6 ; struct VAR7 * VAR8 = & ( VAR5 -> VAR9 . VAR10 -> VAR11 ) ; FUN2 ( VAR12 , 1 , 0 , VAR3 , 0 ) ; if ( ! ( FUN3 ( VAR5 ) -> VAR13 & VAR14 ) ) { FUN4 ( VAR8 ) ; FUN3 ( VAR5 ) -> VAR13 |= VAR14 ; } return FUN5 ( VAR1 , VAR8 , VAR3 ) ; }

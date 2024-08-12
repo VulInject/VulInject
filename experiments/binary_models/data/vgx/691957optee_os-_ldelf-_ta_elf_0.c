@@ -1,0 +1,116 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+TEE_Result VAR3 = VAR4;
+struct VAR5 *VAR6 = NULL;
+vaddr_t VAR7 = 0;
+size_t VAR8 = 0;
+
+assert(!VAR2->VAR9);
+FUN2(VAR6, &VAR2->VAR10, VAR11) {
+struct VAR5 *VAR12 = FUN3(&VAR2->VAR10, VAR13);
+size_t VAR14 = FUN4(VAR12->VAR15 + VAR12->VAR16 -
+VAR6->VAR15 - VAR6->VAR16);
+
+if (VAR6->VAR17) {
+size_t VAR18 = FUN4(VAR6->VAR15 + VAR6->VAR16) -
+FUN5(VAR6->VAR15);
+
+assert(VAR2->VAR19);
+VAR7 = FUN5(VAR2->VAR19 + VAR6->VAR15);
+assert(VAR7 >= VAR2->VAR20);
+VAR3 = FUN6(VAR18, 0, &VAR7, 0, VAR14);
+if (VAR3)
+FUN7(VAR3, "");
+
+FUN8(VAR2, VAR6);
+VAR2->VAR20 = VAR7 + VAR18;
+} else {
+uint32_t VAR21 =  0;
+size_t VAR22 = VAR6->VAR22;
+size_t VAR16 = VAR6->VAR16;
+size_t VAR23 = VAR6->VAR23;
+size_t VAR15 = VAR6->VAR15;
+
+if (VAR23 < VAR2->VAR24) {
+
+if (VAR15 + VAR22 < VAR25) {
+size_t VAR18 = 0;
+
+
+if (VAR15 + VAR16 <= VAR25)
+continue;
+
+
+VAR7 = VAR2->VAR20;
+VAR18 = FUN4(VAR15 + VAR16) -
+FUN4(VAR15) -
+VAR25;
+assert(VAR18);
+VAR3 = FUN6(VAR18, 0, &VAR7, 0,
+0);
+if (VAR3)
+FUN7(VAR3, "");
+VAR2->VAR20 = FUN4(VAR7 + VAR18);
+continue;
+}
+
+
+VAR15 += VAR25;
+VAR22 -= VAR25;
+VAR16 -= VAR25;
+VAR23 += VAR25;
+}
+
+if (!VAR2->VAR19) {
+VAR7 = 0;
+VAR8 = FUN9();
+
+} else {
+VAR7 = VAR15 + VAR2->VAR19;
+VAR8 = 0;
+}
+
+if (VAR6->VAR21 & VAR26)
+VAR21 |= VAR27;
+else
+VAR21 |= VAR28;
+if (VAR6->VAR21 & VAR29)
+VAR21 |= VAR30;
+if (!(VAR6->VAR21 & VAR31))
+FUN7(VAR32,
+"");
+if (VAR21 & VAR27) {
+VAR3 = FUN6(VAR16, 0, &VAR7, VAR8,
+VAR14);
+if (VAR8 && VAR3 == VAR33)
+VAR3 = FUN6(VAR16, 0, &VAR7, 0,
+VAR14);
+if (VAR3)
+FUN7(VAR3, "");
+VAR3 = FUN10((void *)VAR7, VAR22,
+VAR2->VAR34, VAR23);
+if (VAR3)
+FUN7(VAR3, "");
+} else {
+if (VAR22 != VAR16)
+FUN7(VAR35,
+"");
+VAR3 = FUN11(&VAR7, VAR22, VAR21,
+VAR2->VAR34, VAR23,
+VAR8, VAR14);
+if (VAR8 && VAR3 == VAR33)
+VAR3 = FUN11(&VAR7, VAR22, VAR21,
+VAR2->VAR34,
+VAR23, 0,
+VAR14);
+if (VAR3)
+FUN7(VAR3, "");
+}
+
+if (!VAR2->VAR19)
+VAR2->VAR19 = VAR7;
+VAR2->VAR20 = FUN4(VAR7 + VAR16);
+VAR2->VAR24 += VAR22;
+}
+}
+}

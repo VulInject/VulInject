@@ -1,0 +1,49 @@
+void
+FUN1(VAR1 *VAR2)
+{
+int		VAR3;
+int64_t		VAR4;
+VAR5		**VAR6, *VAR7;
+int32_t		VAR8;
+
+
+if (!VAR9 || VAR10 == (VAR11)NULL)
+return;
+
+VAR4 = FUN2(VAR2->VAR12);
+VAR3 = VAR2->VAR13;
+
+
+
+VAR6 = &VAR14[FUN3(VAR4)];
+
+if (*VAR6 == (VAR5 *)NULL)
+return;
+
+VAR7 = *VAR6;
+
+do {
+VAR7 = VAR7->VAR15;
+if (FUN4(VAR7->VAR16, VAR7->VAR17, VAR4, VAR3)) {
+
+if (VAR7->VAR18 != VAR19) {
+
+if (!(VAR8 = FUN5(VAR7->VAR20, NULL,
+FUN6(VAR4 - VAR7->VAR16, 0))))
+FUN7("");
+if (!(VAR8 = FUN5(VAR8,
+VAR2->VAR21 + FUN6(VAR7->VAR16 - VAR4, 0),
+FUN8(VAR7->VAR16 + VAR7->VAR17, VAR4 + VAR3) -
+FUN6(VAR7->VAR16, VAR4))))
+FUN7("");
+} else {
+
+FUN9(VAR2->VAR21 + FUN6(VAR7->VAR16 - VAR4, 0),
+FUN8(VAR7->VAR16 + VAR7->VAR17, VAR4 + VAR3) -
+FUN6(VAR7->VAR16, VAR4));
+}
+}
+} while (VAR7->VAR15 != (*VAR6)->VAR15);
+
+FUN10("");
+}

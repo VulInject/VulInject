@@ -1,0 +1,1 @@
+opus_int32 FUN1 ( VAR1 * VAR2 ) { ogg_int64_t VAR3 ; opus_int32 VAR4 ; VAR3 = VAR2 -> VAR3 ; if ( FUN2 ( VAR3 == 0 ) ) { return VAR5 ; } VAR4 = FUN3 ( VAR2 -> VAR6 , VAR3 ) ; VAR2 -> VAR6 = 0 ; VAR2 -> VAR3 = 0 ; return VAR4 ; }

@@ -1,0 +1,23 @@
+void FUN1(VAR1 *VAR2)
+{
+    FUN2(VAR2, 1);
+    VAR2->VAR3 = 0;
+    VAR2->VAR4 = 1;
+    VAR2->VAR5 = VAR2->VAR6 + (VAR2->VAR3 * 16);
+    VAR2->VAR7 = 1;
+    VAR2->VAR8 = VAR2->VAR9 - 2;
+    VAR2->VAR10 = VAR2->VAR9 - 2;
+    VAR2->VAR11 = VAR12 | VAR13 | VAR14;
+    VAR2->VAR15 = 0x82;
+    VAR2->VAR16 = 0;
+    VAR2->VAR17 = 1;
+    VAR2->VAR18 = 1;
+    VAR2->VAR11 = VAR19;
+    VAR2->VAR20 = VAR21;
+    VAR2->VAR22 = 0x1fff0000020ULL;
+    VAR2->VAR23 = &VAR2->VAR24[VAR2->VAR25 & VAR26];
+    VAR2->VAR22 = 0;
+    VAR2->VAR27[0] &= ~(VAR28 | VAR29);
+    VAR2->VAR27[0] |= VAR2->VAR30;
+    VAR2->VAR31 = VAR2->VAR22 + 4;
+}

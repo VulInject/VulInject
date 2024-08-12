@@ -1,0 +1,1 @@
+VAR1 FUN1(VAR2)(float64 VAR3) { return FUN2(VAR3); }

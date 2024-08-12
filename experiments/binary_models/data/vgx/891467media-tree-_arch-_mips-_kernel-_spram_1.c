@@ -1,0 +1,1 @@
+void FUN1 ( void ) { int VAR1 ; switch ( FUN2 ( ) ) { case VAR2 : case VAR3 : case VAR4 : case VAR5 : case VAR6 : case VAR7 : case VAR8 : case VAR9 : case VAR10 : case VAR11 : case VAR12 : VAR1 = FUN3 ( ) ; if ( VAR1 & ( 1 << 24 ) ) { FUN4 ( "" , 0x1c000000 , & VAR13 , & VAR14 ) ; } if ( VAR1 & ( 1 << 23 ) ) { FUN4 ( "" , 0x1c100000 , & VAR15 , & VAR16 ) ; } } }

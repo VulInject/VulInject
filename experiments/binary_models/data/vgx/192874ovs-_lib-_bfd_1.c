@@ -1,0 +1,1 @@
+static void FUN1 ( const char * VAR1 , ovs_be32 VAR2 , VAR3 * VAR4 ) { if ( VAR1 [ 0 ] ) { FUN2 ( & VAR5 , ""%VAR6\"" , VAR1 ) ; } * VAR4 = VAR2 ; }

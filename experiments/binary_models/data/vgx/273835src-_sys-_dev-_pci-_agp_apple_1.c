@@ -1,0 +1,1 @@
+void FUN1 ( void * VAR1 , bus_addr_t VAR2 , paddr_t VAR3 , int VAR4 ) { struct VAR5 * VAR6 = VAR1 ; uint32_t VAR7 ; if ( VAR6 -> VAR8 & VAR9 ) { VAR7 = ( VAR3 >> VAR10 | 0x80000000 ) ; } else { VAR7 = FUN2 ( VAR3 | 0x01 ) ; } FUN3 ( ( void * ) VAR3 , VAR11 ) ; VAR6 -> VAR12 -> VAR13 [ VAR2 >> VAR14 ] = VAR7 ; FUN4 ( & VAR6 -> VAR12 -> VAR13 [ VAR2 >> VAR14 ] ) ; }

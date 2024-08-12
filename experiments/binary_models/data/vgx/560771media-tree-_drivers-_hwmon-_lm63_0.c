@@ -1,0 +1,72 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR4;
+struct VAR5 *VAR6 = &VAR4->VAR6;
+u8 VAR7;
+
+VAR2->VAR8 = FUN2(VAR4, VAR9);
+VAR2->VAR10 = FUN2(VAR4,
+VAR11);
+
+
+if (VAR2->VAR8 & 0x40) { 
+FUN3(VAR6, "");
+VAR2->VAR8 &= 0xA7;
+FUN4(VAR4, VAR9,
+VAR2->VAR8);
+}
+
+if (VAR2->VAR12 == VAR13)
+VAR2->VAR8 |= 0x04;
+
+
+VAR2->VAR14 = FUN2(VAR4, VAR15);
+if (VAR2->VAR14 == 0)
+VAR2->VAR14 = 1;
+
+switch (VAR2->VAR12) {
+case VAR16:
+case VAR13:
+VAR2->VAR17 = VAR18;
+VAR2->VAR19 = 8;
+break;
+case VAR20:
+VAR2->VAR17 = VAR21;
+VAR2->VAR19 = 12;
+VAR2->VAR22
+= FUN2(VAR4,
+VAR23) & 0x02;
+break;
+}
+VAR7 = FUN2(VAR4, VAR24);
+if (FUN5(VAR7 > VAR25))
+VAR7 = VAR25;
+VAR2->VAR26 = FUN6(VAR2->VAR17,
+VAR7);
+
+
+if (VAR2->VAR12 == VAR20) {
+u8 VAR27
+= FUN2(VAR4,
+VAR28);
+if (VAR27 & 0x20)
+VAR2->VAR29 = true;
+if ((VAR27 & 0x10)
+&& !(VAR2->VAR10 & 0x08) && VAR2->VAR14 == 8)
+VAR2->VAR30 = true;
+if (VAR27 & 0x08)
+VAR2->VAR31 = true;
+}
+
+
+if (VAR2->VAR12 == VAR16)
+FUN3(VAR6, "",
+(VAR2->VAR8 & 0x04) ? "" :
+"");
+FUN3(VAR6, "",
+(VAR2->VAR10 & 0x08) ? "" : "",
+((VAR2->VAR10 & 0x08) ? 700 : 180000) / VAR2->VAR14);
+FUN3(VAR6, "",
+(VAR2->VAR10 & 0x10) ? "" : "",
+(VAR2->VAR10 & 0x20) ? "" : "");
+}

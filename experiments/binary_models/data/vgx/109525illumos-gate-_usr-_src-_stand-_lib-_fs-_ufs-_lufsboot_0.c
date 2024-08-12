@@ -1,0 +1,85 @@
+static VAR1
+FUN1(int32_t VAR2, caddr_t VAR3, int VAR4)
+{
+int		VAR5, VAR6 = 0;
+daddr_t		VAR7, VAR8;
+VAR9	*VAR10;
+uint32_t	VAR11;
+
+
+if (VAR12 && (VAR3 == (VAR13)NULL))
+VAR6 = 1;
+
+while (VAR4) {
+
+if (VAR2 == VAR14.VAR15)
+VAR2 = VAR14.VAR16;
+if (VAR6)
+goto VAR17;
+
+
+VAR7 = 0;
+VAR8 = FUN2(VAR2);
+for (VAR5 = 0; VAR5 < VAR18->VAR19; VAR5++) {
+if (VAR8 >= VAR18->VAR20[VAR5].VAR21 &&
+VAR8 < VAR18->VAR20[VAR5].VAR21 +
+VAR18->VAR20[VAR5].VAR22) {
+VAR7 = VAR8 - VAR18->VAR20[VAR5].VAR21 +
+VAR18->VAR20[VAR5].VAR23;
+break;
+}
+}
+
+if (VAR7 == 0) {
+
+FUN3("",
+VAR2);
+return (0);
+}
+
+
+if (VAR24->VAR25 != VAR7) {
+VAR24->VAR25 = VAR7;
+VAR24->VAR26 = VAR24->VAR27;
+VAR24->VAR28 = VAR29;
+VAR24->VAR30 = 0;
+if (FUN4(VAR24)) {
+FUN3("" \
+"",
+VAR24->VAR25);
+return (0);
+}
+
+VAR10 = (VAR9 *)(VAR24->VAR26 +
+VAR31);
+
+VAR11 = VAR14.VAR32;
+if (VAR8 >= FUN5(VAR14.VAR33)) {
+
+VAR11 += (VAR8 - FUN5(VAR14.VAR33));
+} else {
+
+VAR11 += (FUN5(VAR14.VAR15) -
+FUN5(VAR14.VAR33));
+VAR11 += (VAR8 - FUN5(VAR14.VAR16));
+}
+
+if (VAR11 != VAR10->VAR34)
+return (0);
+}
+VAR17:
+
+VAR5 = FUN6(FUN7(VAR2), VAR4);
+if (VAR3 != NULL) {
+bcopy(VAR24->VAR27 + (VAR2 - FUN8(FUN5(VAR2))),
+VAR3, VAR5);
+VAR3 += VAR5;
+}
+VAR4 -= VAR5;
+VAR2 += VAR5;
+
+if (FUN7(VAR2) == 0)
+VAR2 += sizeof (VAR9);
+}
+return (VAR2);
+}

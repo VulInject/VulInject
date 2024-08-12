@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { memset ( VAR2 -> VAR3 , 0 , sizeof ( VAR2 -> VAR3 ) ) ; FUN2 ( & VAR2 -> VAR4 ) ; }

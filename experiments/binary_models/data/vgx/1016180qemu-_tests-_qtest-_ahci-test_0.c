@@ -1,0 +1,29 @@
+static void FUN1(enum IOMode VAR1, enum AddrMode VAR2,
+enum BuffLen VAR3, enum OffsetType VAR4)
+{
+char *VAR5;
+VAR6 *VAR7;
+
+VAR7 = FUN2(VAR6, 1);
+VAR7->VAR8 = VAR3;
+VAR7->VAR9 = VAR2;
+VAR7->VAR10 = VAR1;
+VAR7->VAR4 = VAR4;
+
+VAR5 = FUN3("",
+VAR11[VAR1],
+VAR12[VAR2],
+VAR13[VAR3],
+VAR14[VAR4]);
+
+if ((VAR2 == VAR15) && (VAR4 == VAR16) &&
+(FUN4(VAR17) <= 0xFFFFFFF)) {
+FUN5("", VAR5);
+FUN6(VAR7);
+FUN6(VAR5);
+return;
+}
+
+FUN7(VAR5, VAR7, VAR18);
+FUN6(VAR5);
+}

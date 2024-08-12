@@ -1,0 +1,1 @@
+void FUN1 ( int VAR1 ) { VAR2 = VAR1 ; if ( VAR3 != VAR4 ) { return ; } FUN2 ( "" , & VAR5 ) ; FUN2 ( "" , & VAR5 , NULL ) ; FUN2 ( "" , & VAR5 , NULL ) ; FUN2 ( "" , & VAR5 , NULL ) ; FUN2 ( "" , & VAR5 , NULL ) ; FUN2 ( "" , & VAR5 , NULL ) ; }

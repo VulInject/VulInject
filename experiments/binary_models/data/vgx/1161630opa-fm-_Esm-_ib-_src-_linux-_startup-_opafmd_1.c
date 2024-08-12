@@ -1,0 +1,1 @@
+void FUN1 ( int VAR1 , VAR2 * VAR3 , void * VAR4 ) { char * VAR5 ; int VAR6 ; if ( VAR7 || VAR8 < 0 ) { return ; } if ( VAR1 == VAR9 ) { VAR5 = "" ; } if ( VAR1 == VAR10 ) { VAR5 = "" ; } if ( VAR1 == VAR11 ) { VAR5 = "" ; } if ( VAR5 ) { VAR6 = write ( VAR8 , VAR5 , strlen ( VAR5 ) ) ; if ( VAR6 != strlen ( VAR5 ) ) { VAR7 = 1 ; } } return ; }

@@ -1,0 +1,19 @@
+static struct VAR1 *FUN1(struct VAR2 *VAR3,
+struct VAR4 *VAR5, gfp_t VAR6)
+{
+struct VAR1 *VAR7 = FUN2(sizeof(struct VAR1), VAR6);
+if (!VAR7)
+return NULL;
+
+FUN3(&VAR7->VAR8);
+FUN4(&VAR7->VAR8);
+FUN5(&VAR7->VAR9);
+FUN4(&VAR7->VAR9);
+FUN6(&VAR7->VAR10);
+FUN7(&VAR7->VAR11, VAR12);
+VAR7->VAR3 = VAR3;
+FUN8(&VAR7->VAR13, 1);
+
+FUN9(VAR7, VAR5, VAR6);
+return VAR7;
+}

@@ -1,0 +1,59 @@
+struct VAR1 *FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct VAR1 *VAR1;
+int VAR5 = FUN2(VAR2);
+struct VAR6 *VAR7, VAR8;
+struct bvec_iter VAR9;
+unsigned VAR10 = 0, VAR11 = 0;
+bool VAR12 = false;
+int VAR13;
+
+FUN3(VAR8, VAR2, VAR9) {
+if (VAR10++ < VAR14)
+VAR11 += VAR8.VAR15;
+if (FUN4(VAR8.VAR16))
+VAR12 = true;
+}
+if (!VAR12)
+return VAR2;
+
+
+VAR13 = FUN5(VAR11, FUN6(VAR4)) >>
+VAR17;
+if (VAR13 < FUN7(VAR2)) {
+VAR1 = FUN8(VAR2, VAR13, VAR18, &VAR19);
+FUN9(VAR1, VAR2);
+FUN10(VAR2);
+VAR2 = VAR1;
+}
+VAR1 = FUN11(VAR2);
+
+
+for (VAR10 = 0, VAR7 = VAR1->VAR20; VAR10 < VAR1->VAR21; VAR7++, VAR10++) {
+struct VAR22 *VAR23;
+
+if (!FUN4(VAR7->VAR16))
+continue;
+
+VAR23 = FUN12(&VAR24, VAR18);
+FUN13(VAR23, VAR25);
+
+if (VAR5 == VAR26) {
+FUN14(VAR7->VAR16);
+FUN15(FUN16(VAR23), VAR7);
+}
+VAR7->VAR16 = VAR23;
+}
+
+FUN17(VAR2);
+
+VAR1->VAR27 |= (1 << VAR28);
+
+if (VAR5 == VAR29)
+VAR1->VAR30 = VAR31;
+else
+VAR1->VAR30 = VAR32;
+
+VAR1->VAR33 = VAR2;
+return VAR1;
+}

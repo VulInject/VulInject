@@ -1,0 +1,1 @@
+isc_result_t FUN1 ( VAR1 * VAR2 , const char * VAR3 , int VAR4 ) { cfs_time_t VAR5 ; char * VAR6 ; if ( ! FUN2 ( ( unsigned char ) ( VAR3 [ 0 ] ) ) ) { return ( VAR7 ) ; } VAR8 = 0 ; VAR5 = FUN3 ( VAR3 , & VAR6 , VAR4 ) ; if ( * VAR6 != '' ) { return ( VAR7 ) ; } if ( VAR5 == VAR9 && VAR8 == VAR10 ) { return ( VAR11 ) ; } * VAR2 = VAR5 ; return ( VAR12 ) ; }

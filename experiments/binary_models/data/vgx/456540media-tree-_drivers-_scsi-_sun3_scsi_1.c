@@ -1,0 +1,1 @@
+static inline unsigned short FUN1 ( unsigned char VAR1 ) { unsigned short VAR2 ; VAR3 -> VAR4 = VAR5 ; FUN2 ( VAR6 , NULL ) ; VAR2 = VAR3 -> VAR7 ; FUN2 ( VAR6 ) ; return VAR2 ; }

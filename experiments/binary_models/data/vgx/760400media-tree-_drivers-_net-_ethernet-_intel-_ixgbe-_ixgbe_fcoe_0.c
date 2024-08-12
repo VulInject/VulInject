@@ -1,0 +1,38 @@
+int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+struct VAR5 *VAR6 = &VAR4->VAR6;
+
+FUN3(&VAR6->VAR7);
+
+if (!(VAR4->VAR8 & VAR9))
+return -VAR10;
+
+if (VAR4->VAR8 & VAR11)
+return -VAR10;
+
+FUN4(VAR12, "");
+
+if (VAR4->VAR8 & VAR13)
+FUN5(VAR14, "");
+
+if (FUN6(VAR2))
+VAR2->VAR15->FUN7(VAR2);
+
+
+FUN8(VAR4);
+
+
+VAR4->VAR8 |= VAR11;
+VAR2->VAR16 |= VAR17;
+FUN9(VAR2);
+
+
+FUN10(VAR4);
+FUN11(VAR4);
+
+if (FUN6(VAR2))
+VAR2->VAR15->FUN12(VAR2);
+
+return 0;
+}

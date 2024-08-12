@@ -1,0 +1,1 @@
+static Str FUN1 ( void ) void FUN2 ( ) { VAR1 * VAR2 ; if ( ( VAR2 = fopen ( FUN3 ( "" ) , "" ) ) == NULL ) { return ; } fprintf ( VAR2 , "" , FUN1 ( ) -> VAR3 ) ; fclose ( VAR2 ) ; }

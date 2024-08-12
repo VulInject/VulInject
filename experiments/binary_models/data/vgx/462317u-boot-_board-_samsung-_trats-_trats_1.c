@@ -1,0 +1,1 @@
+int FUN1 ( void ) { int VAR1 = 0 ; struct VAR2 * VAR3 = FUN2 ( "" ) ; if ( FUN3 ( VAR3 ) ) { return 0 ; } VAR1 |= FUN4 ( VAR3 , VAR4 , 0x1c | VAR5 ) ; VAR1 |= FUN4 ( VAR3 , VAR6 , 0x2c | VAR5 ) ; if ( VAR1 ) { FUN5 ( "" ) ; return - 1 ; } return 0 ; }

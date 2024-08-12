@@ -1,0 +1,1 @@
+static void FUN1 ( struct ext_code VAR1 , unsigned int VAR2 , unsigned long VAR3 ) { FUN2 ( VAR4 ) ; VAR5 = VAR1 . VAR6 & 0xffU ; FUN3 ( & VAR7 ) ; }

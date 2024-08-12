@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( void ) { VAR2 = VAR3 ; return NULL ; }

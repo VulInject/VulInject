@@ -1,0 +1,66 @@
+int FUN1( VAR1 *VAR2,
+const VAR3 *VAR4 )
+{
+int VAR5 = VAR6;
+size_t VAR7 = VAR8;
+size_t VAR9 = VAR10;
+
+VAR2->VAR4 = VAR4;
+
+
+
+
+VAR2->VAR11 = NULL;
+
+VAR2->VAR7 = VAR7;
+VAR2->VAR12 = FUN2( 1, VAR7 );
+if( VAR2->VAR12 == NULL )
+{
+FUN3( 1, ( "", VAR7 ) );
+VAR5 = VAR13;
+goto VAR14;
+}
+
+VAR2->VAR9 = VAR9;
+VAR2->VAR11 = FUN2( 1, VAR9 );
+if( VAR2->VAR11 == NULL )
+{
+FUN3( 1, ( "", VAR9 ) );
+VAR5 = VAR13;
+goto VAR14;
+}
+
+FUN4( VAR2 );
+
+memset( &VAR2->VAR15, 0, sizeof(VAR2->VAR15) );
+
+if( ( VAR5 = FUN5( VAR2 ) ) != 0 )
+goto VAR14;
+
+return( 0 );
+
+VAR14:
+FUN6( VAR2->VAR12 );
+FUN6( VAR2->VAR11 );
+
+VAR2->VAR4 = NULL;
+
+VAR2->VAR7 = 0;
+VAR2->VAR9 = 0;
+VAR2->VAR12 = NULL;
+VAR2->VAR11 = NULL;
+
+VAR2->VAR16 = NULL;
+VAR2->VAR17 = NULL;
+VAR2->VAR18 = NULL;
+VAR2->VAR19 = NULL;
+VAR2->VAR20 = NULL;
+
+VAR2->VAR21 = NULL;
+VAR2->VAR22 = NULL;
+VAR2->VAR23 = NULL;
+VAR2->VAR24 = NULL;
+VAR2->VAR25 = NULL;
+
+return( VAR5 );
+}

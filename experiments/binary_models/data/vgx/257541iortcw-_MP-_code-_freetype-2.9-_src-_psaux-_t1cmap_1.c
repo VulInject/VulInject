@@ -1,0 +1,1 @@
+static void FUN1 ( T1_CMapStd VAR1 , FT_Int VAR2 ) { T1_Face VAR3 = ( VAR4 ) FUN2 ( VAR1 ) ; FT_Service_PsCMaps VAR5 = ( VAR6 ) VAR3 -> VAR5 ; VAR1 -> VAR7 = ( VAR8 ) VAR3 -> VAR9 . VAR7 ; VAR1 -> VAR10 = ( const char * const * ) VAR3 -> VAR9 . VAR10 ; VAR1 -> VAR11 = VAR5 -> VAR12 ; VAR1 -> VAR13 = VAR2 ?VAR5 -> VAR14 : VAR5 -> VAR15 ; FUN3 ( VAR1 -> VAR13 , NULL ) ; }

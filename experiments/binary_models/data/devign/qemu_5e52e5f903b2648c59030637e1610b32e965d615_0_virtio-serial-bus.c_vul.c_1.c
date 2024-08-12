@@ -1,0 +1,40 @@
+VAR1 *FUN1(VAR2 *VAR3, VAR4 *VAR5)
+{
+    VAR6 *VAR7;
+    VAR1 *VAR8;
+    uint32_t VAR9, VAR10;
+    if (!VAR5->VAR11)
+        return NULL;
+    VAR10 = VAR12 / 2 - 1;
+    if (VAR5->VAR11 > VAR10)
+    {
+        FUN2("", VAR10);
+        return NULL;
+    }
+    VAR8 = FUN3("", VAR13, sizeof(struct VAR14), sizeof(VAR6));
+    VAR7 = FUN4(VAR6, VAR8, VAR8);
+    VAR7->VAR15 = FUN5(VAR3);
+    VAR7->VAR15->VAR7 = VAR7;
+    FUN6(&VAR7->VAR16);
+    VAR7->VAR15->VAR17 = VAR5->VAR11;
+    VAR7->VAR18 = FUN7(VAR5->VAR11 * sizeof(VAR19 *));
+    VAR7->VAR20 = FUN7(VAR5->VAR11 * sizeof(VAR19 *));
+    VAR7->VAR18[0] = FUN8(VAR8, 128, VAR21);
+    VAR7->VAR20[0] = FUN8(VAR8, 128, VAR22);
+    VAR7->VAR23 = FUN8(VAR8, 32, VAR24);
+    VAR7->VAR25 = FUN8(VAR8, 32, VAR26);
+    for (VAR9 = 1; VAR9 < VAR7->VAR15->VAR17; VAR9++)
+    {
+        VAR7->VAR18[VAR9] = FUN8(VAR8, 128, VAR21);
+        VAR7->VAR20[VAR9] = FUN8(VAR8, 128, VAR22);
+    }
+    VAR7->VAR27.VAR17 = FUN9(VAR5->VAR11);
+    VAR7->VAR28 = FUN10(((VAR5->VAR11 + 31) / 32) * sizeof(VAR7->VAR28[0]));
+    FUN11(VAR7, 0);
+    VAR7->VAR8.VAR29 = VAR29;
+    VAR7->VAR8.VAR30 = VAR30;
+    VAR7->VAR8.VAR31 = VAR31;
+    VAR7->VAR32 = VAR3;
+    FUN12(VAR3, "", -1, 3, VAR33, VAR34, VAR7);
+    return VAR8;
+}

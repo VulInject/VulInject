@@ -1,0 +1,1 @@
+FUN1 ( VAR1 , char * , ( int ) ) ; static int FUN2 ( const char * VAR2 , const char * VAR3 ) { int VAR4 ; struct stat VAR5 ; return ( strcmp ( VAR2 , VAR3 ) == 0 || ( FUN3 ( VAR2 , & VAR4 ) >= 0 && FUN3 ( VAR3 , & VAR5 ) >= 0 && FUN4 ( VAR4 , VAR5 ) ) ) ; }

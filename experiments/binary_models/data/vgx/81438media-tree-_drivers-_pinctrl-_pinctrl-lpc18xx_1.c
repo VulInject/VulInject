@@ -1,0 +1,1 @@
+static int FUN1 ( enum pin_config_param VAR1 , int * VAR2 , u32 VAR3 ) { switch ( VAR1 ) { case VAR4 : if ( VAR3 & VAR5 ) { * VAR2 = 0 ; } else { * VAR2 = 1 ; } break ; case VAR6 : break ; case VAR7 : if ( VAR3 & VAR8 ) { * VAR2 = 1 ; } else { return - VAR9 ; } break ; default : return - VAR10 ; } return 0 ; }

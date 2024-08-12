@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( VAR1 * VAR2 ) { if ( ! VAR2 ) { return NULL ; } FUN2 ( VAR2 -> VAR3 ) ; if ( VAR2 -> VAR4 > 1 ) { FUN3 ( VAR2 -> VAR4 ) ; } FUN4 ( VAR2 -> VAR5 ) ; FUN5 ( & VAR2 -> VAR6 ) ; FUN6 ( VAR2 -> VAR7 ) ; FUN7 ( VAR2 -> VAR8 ) ; free ( VAR2 -> VAR9 ) ; free ( VAR2 -> VAR10 ) ; return FUN8 ( VAR2 ) ; }

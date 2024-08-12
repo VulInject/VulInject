@@ -1,0 +1,1 @@
+static void FUN1 ( char VAR1 ) { unsigned int VAR2 = VAR3 ; int VAR4 = - 1 ; if ( VAR1 == '' ) { FUN1 ( '' ) ; } { switch ( VAR5 . VAR6 ) { case VAR7 : VAR4 = FUN2 ( VAR2 , & VAR1 , 1 ) ; break ; case VAR8 : VAR4 = FUN3 ( VAR2 , & VAR1 , 1 ) ; break ; } FUN4 ( VAR2 , NULL ) ; } VAR4 == 0 || VAR4 == - VAR9 ; }

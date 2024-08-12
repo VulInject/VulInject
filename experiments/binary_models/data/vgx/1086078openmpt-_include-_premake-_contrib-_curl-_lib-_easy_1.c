@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { FUN2 ( VAR2 -> VAR3 . VAR4 ) ; VAR2 -> VAR3 . VAR5 = NULL ; FUN3 ( VAR2 ) ; FUN4 ( VAR2 ) ; memset ( & VAR2 -> VAR6 , 0 , sizeof ( VAR7 ) ) ; ( void ) FUN5 ( & VAR2 -> VAR6 ) ; FUN6 ( VAR2 ) ; VAR2 -> VAR8 . VAR9 |= VAR10 ; VAR2 -> VAR3 . VAR11 = - 1 ; }

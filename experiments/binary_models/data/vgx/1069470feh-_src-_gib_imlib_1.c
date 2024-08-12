@@ -1,0 +1,1 @@
+void FUN1 ( Imlib_Image VAR1 , char * VAR2 ) { char * VAR3 ; FUN2 ( VAR1 ) ; VAR3 = strrchr ( VAR2 , '' ) ; if ( VAR3 ) { char * VAR4 , * VAR5 ; VAR4 = strdup ( VAR3 + 1 ) ; VAR5 = VAR4 ; while ( * VAR5 ) { * VAR5 = FUN3 ( * VAR5 ) ; VAR5 ++ ; } FUN4 ( VAR4 ) ; free ( VAR4 ) ; } FUN5 ( VAR2 , NULL ) ; }

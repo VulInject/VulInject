@@ -1,0 +1,43 @@
+static void             FUN1         (VAR1 *VAR2,
+VAR3        *VAR4);
+static VAR5 * FUN2  (VAR1 *VAR2);
+
+
+FUN3 (VAR6, VAR7,
+VAR8)
+
+
+
+static void
+FUN4 (VAR9 *VAR10)
+{
+VAR11        *VAR12 = FUN5 (VAR10);
+VAR13 *VAR14   = FUN6 (VAR10);
+
+VAR12->VAR15     = VAR16;
+VAR12->VAR17 = VAR18;
+VAR12->VAR19 = VAR20;
+
+VAR14->VAR21           = VAR22;
+VAR14->VAR23    = VAR24;
+
+FUN7 (VAR12, VAR25,
+FUN8 ("", NULL, NULL,
+VAR26));
+
+FUN7 (VAR12, VAR27,
+FUN9 ("", NULL, NULL,
+VAR26));
+
+FUN7 (VAR12, VAR28,
+FUN10 ("", NULL, NULL,
+-VAR29,
+VAR29, 0,
+VAR26));
+
+FUN7 (VAR12, VAR30,
+FUN10 ("", NULL, NULL,
+-VAR29,
+VAR29, 0,
+VAR26));
+}

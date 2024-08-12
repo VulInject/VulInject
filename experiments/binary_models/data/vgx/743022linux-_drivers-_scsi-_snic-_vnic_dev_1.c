@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( struct VAR1 * VAR2 , void * VAR3 , struct VAR4 * VAR5 , struct VAR6 * VAR7 , unsigned int VAR8 ) { if ( ! VAR2 ) { VAR2 = FUN2 ( sizeof ( VAR1 ) , VAR9 ) ; if ( ! VAR2 ) { return NULL ; } } VAR2 -> VAR3 = VAR3 ; VAR2 -> VAR5 = VAR5 ; if ( FUN3 ( VAR2 , VAR7 , VAR8 ) ) { VAR10 } return VAR2 ; err_out FUN4 ( VAR2 ) ; return NULL ; }

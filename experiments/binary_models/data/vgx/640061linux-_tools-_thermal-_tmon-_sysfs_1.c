@@ -1,0 +1,1 @@
+int FUN1 ( char * VAR1 , char * VAR2 , unsigned long VAR3 ) { VAR4 * VAR5 ; int VAR6 = - 1 ; char VAR7 [ VAR8 + 2 ] ; sprintf ( VAR7 , "" , VAR1 , VAR2 ) ; VAR5 = fopen ( VAR7 , "" ) ; if ( ! VAR5 ) { syslog ( VAR9 , "" , VAR10 , VAR7 ) ; return VAR6 ; } VAR6 = fprintf ( VAR5 , "" , VAR3 ) ; fclose ( VAR5 ) ; return 0 ; }

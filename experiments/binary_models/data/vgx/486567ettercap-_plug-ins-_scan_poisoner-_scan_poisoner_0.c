@@ -1,0 +1,22 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4, *VAR5;
+char VAR6[VAR7];
+char VAR8[VAR7];
+
+
+sprintf(VAR6, "");
+
+
+FUN2(VAR4, &VAR9, VAR10) {
+if (!FUN3(&(VAR2->VAR11.VAR12), &VAR4->VAR13) && memcmp(VAR2->VAR14.VAR12, VAR4->VAR15, VAR16)) {
+VAR17 = 1;
+
+FUN2(VAR5, &VAR9, VAR10) 
+if (!memcmp(VAR2->VAR14.VAR12, VAR5->VAR15, VAR16))
+FUN4(&VAR5->VAR13, VAR6);
+
+FUN5("", VAR6, FUN4(&VAR4->VAR13, VAR8)); 
+}
+}	  
+}

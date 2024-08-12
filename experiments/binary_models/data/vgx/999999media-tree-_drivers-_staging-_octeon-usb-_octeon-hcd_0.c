@@ -1,0 +1,48 @@
+static struct VAR1 *FUN1(
+struct VAR2 *VAR3,
+struct VAR4 *VAR5,
+enum cvmx_usb_transfer VAR6,
+u64 VAR7,
+int VAR8,
+u64 VAR9,
+int VAR10,
+int VAR11,
+struct VAR12 *VAR13,
+struct VAR14 *VAR14)
+{
+struct VAR1 *VAR15;
+
+if (FUN2(VAR5->VAR16 != VAR6))
+return NULL;
+
+VAR15 = FUN3(sizeof(*VAR15), VAR17);
+if (FUN2(!VAR15))
+return NULL;
+
+VAR15->VAR6 = VAR6;
+VAR15->VAR7 = VAR7;
+VAR15->VAR8 = VAR8;
+VAR15->VAR9 = VAR9;
+
+VAR15->VAR10 = VAR10;
+VAR15->VAR11 = VAR11;
+VAR15->VAR13 = VAR13;
+VAR15->VAR14 = VAR14;
+if (VAR15->VAR6 == VAR18)
+VAR15->VAR19 = VAR20;
+else
+VAR15->VAR19 = VAR21;
+
+if (!FUN4(&VAR5->VAR22)) {
+FUN5(&VAR15->VAR23, &VAR5->VAR22);
+} else {
+FUN5(&VAR15->VAR23, &VAR5->VAR22);
+FUN6(&VAR5->VAR23,
+&VAR3->VAR24[VAR5->VAR16]);
+
+
+FUN7(VAR3, 0);
+}
+
+return VAR15;
+}

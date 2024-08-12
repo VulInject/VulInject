@@ -1,0 +1,1 @@
+static size_t FUN1 ( VAR1 * VAR2 , size_t VAR3 , char * VAR4 , const char * VAR5 ) { strcpy ( VAR4 , VAR5 ) ; return strlen ( VAR5 ) + 1 ; }

@@ -1,0 +1,61 @@
+int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4, VAR5 *VAR6, u8 VAR7,
+u64 VAR8)
+{
+struct VAR9 *VAR10 = VAR4->VAR10;
+int VAR11;
+struct VAR12 *VAR13 = NULL;
+struct btrfs_key VAR14;
+struct VAR15 *VAR16;
+int VAR17;
+unsigned long VAR18;
+__le64 VAR19;
+
+VAR11 = FUN2(VAR10, VAR6, VAR7, VAR8);
+if (VAR11 != -VAR20)
+return VAR11;
+
+if (FUN3(!VAR10)) {
+VAR11 = -VAR21;
+goto VAR22;
+}
+
+FUN4(VAR6, VAR7, &VAR14);
+
+VAR13 = FUN5();
+if (!VAR13) {
+VAR11 = -VAR23;
+goto VAR22;
+}
+
+VAR11 = FUN6(VAR2, VAR10, VAR13, &VAR14,
+sizeof(VAR19));
+if (VAR11 >= 0) {
+
+VAR16 = VAR13->VAR24[0];
+VAR17 = VAR13->VAR25[0];
+VAR18 = FUN7(VAR16, VAR17);
+} else if (VAR11 == -VAR26) {
+
+FUN8(VAR4, VAR13, sizeof(VAR19));
+VAR16 = VAR13->VAR24[0];
+VAR17 = VAR13->VAR25[0];
+VAR18 = FUN7(VAR16, VAR17);
+VAR18 += FUN9(VAR16, VAR17) - sizeof(VAR19);
+} else if (VAR11 < 0) {
+FUN10(VAR4,
+"",
+VAR11, (unsigned long long)VAR14.VAR27,
+(unsigned long long)VAR14.VAR18, VAR7);
+goto VAR22;
+}
+
+VAR11 = 0;
+VAR19 = FUN11(VAR8);
+FUN12(VAR16, &VAR19, VAR18, sizeof(VAR19));
+FUN13(VAR16);
+
+VAR22:
+FUN14(VAR13);
+return VAR11;
+}

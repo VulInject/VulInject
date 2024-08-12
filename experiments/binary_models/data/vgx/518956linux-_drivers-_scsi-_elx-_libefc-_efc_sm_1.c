@@ -1,0 +1,1 @@
+const char * FUN1 ( enum efc_sm_event VAR1 ) { return VAR2 [ VAR1 ] ; }

@@ -1,0 +1,1 @@
+static void FUN1(struct VAR1 *VAR2, VAR3 *VAR4, const float *VAR5, float *VAR6, int VAR7, int VAR8, int VAR9, const float VAR10, int VAR11) { FUN2(VAR2, VAR4, VAR5, VAR6, NULL, VAR7, VAR8, VAR9, VAR10, VAR12, NULL, (VAR11) ? VAR13 : VAR14); }

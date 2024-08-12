@@ -1,0 +1,14 @@
+static void FUN1(void);
+void FUN2(Tree VAR1, int VAR2, int VAR3) {
+FUN3(VAR1, VAR2, VAR3);
+if (VAR4) {
+Node VAR5 = VAR4->VAR6;
+VAR4->VAR6 = NULL;
+if (!VAR7->VAR8)
+VAR5 = FUN4(VAR5);
+FUN5(VAR9)->VAR10.VAR4 = VAR5;
+VAR4 = NULL;
+}
+FUN6();
+FUN7(VAR11);
+}

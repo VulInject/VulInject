@@ -1,0 +1,59 @@
+VAR1 FUN1(struct VAR2 *VAR3)
+{
+ext4_fsblk_t VAR4;
+struct VAR5 *VAR6;
+ext4_group_t VAR7;
+ext4_group_t VAR8 = FUN2(VAR3);
+struct VAR9 *VAR10;
+struct VAR11 *VAR12;
+ext4_fsblk_t VAR13;
+unsigned int VAR14;
+struct VAR15 *VAR16 = NULL;
+
+VAR12 = FUN3(VAR3)->VAR17;
+VAR4 = 0;
+VAR13 = 0;
+VAR6 = NULL;
+
+for (VAR7 = 0; VAR7 < VAR8; VAR7++) {
+VAR6 = FUN4(VAR3, VAR7, NULL);
+if (!VAR6)
+continue;
+VAR10 = NULL;
+if (FUN3(VAR3)->VAR18)
+VAR10 = FUN5(VAR3, VAR7);
+if (!VAR10 || !FUN6(VAR10))
+VAR4 += FUN7(VAR3, VAR6);
+FUN8(VAR16);
+VAR16 = FUN9(VAR3, VAR7);
+if (FUN10(VAR16)) {
+VAR16 = NULL;
+continue;
+}
+
+VAR14 = FUN11(VAR16->VAR19,
+FUN12(VAR3) / 8);
+FUN13(VAR20 "",
+VAR7, FUN7(VAR3, VAR6), VAR14);
+VAR13 += VAR14;
+}
+FUN8(VAR16);
+FUN13(VAR20 ""
+"",
+FUN14(FUN3(VAR3), FUN15(VAR12)),
+VAR4, VAR13);
+return VAR13;
+VAR4 = 0;
+for (VAR7 = 0; VAR7 < VAR8; VAR7++) {
+VAR6 = FUN4(VAR3, VAR7, NULL);
+if (!VAR6)
+continue;
+VAR10 = NULL;
+if (FUN3(VAR3)->VAR18)
+VAR10 = FUN5(VAR3, VAR7);
+if (!VAR10 || !FUN6(VAR10))
+VAR4 += FUN7(VAR3, VAR6);
+}
+
+return VAR4;
+}

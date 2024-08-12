@@ -1,0 +1,1 @@
+void FUN1 ( void ) { char * VAR1 , * VAR2 ; VAR3 = NULL ; FUN2 ( ) ; FUN3 ( ) ; VAR4 = FUN4 ( ) ; FUN5 ( VAR4 ) ; FUN6 ( VAR4 , VAR5 , FUN7 ( VAR6 ) - 1 , VAR6 , NULL ) ; FUN8 ( ) ; VAR2 = FUN9 ( ) ; VAR1 = FUN10 ( VAR7 , VAR2 ) ; FUN11 ( VAR1 , VAR8 ) ; FUN12 ( VAR1 ) ; }

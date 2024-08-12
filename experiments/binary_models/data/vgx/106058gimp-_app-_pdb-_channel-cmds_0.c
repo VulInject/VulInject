@@ -1,0 +1,43 @@
+FUN1 (VAR1         *VAR2,
+VAR3                  *VAR4,
+VAR5           *VAR6,
+VAR7          *VAR8,
+const VAR9  *VAR10,
+VAR11               **VAR12)
+{
+gboolean VAR13 = VAR14;
+VAR9 *VAR15;
+VAR16 *VAR17;
+gint VAR18;
+gint VAR19;
+const VAR20 *VAR21;
+gdouble VAR22;
+GimpRGB VAR23;
+VAR24 *VAR25 = NULL;
+
+VAR17 = FUN2 (FUN3 (VAR10, 0));
+VAR18 = FUN4 (FUN3 (VAR10, 1));
+VAR19 = FUN4 (FUN3 (VAR10, 2));
+VAR21 = FUN5 (FUN3 (VAR10, 3));
+VAR22 = FUN6 (FUN3 (VAR10, 4));
+FUN7 (FUN3 (VAR10, 5), &VAR23);
+
+if (VAR13)
+{
+GimpRGB VAR26 = VAR23;
+
+VAR26.VAR27 = VAR22 / 100.0;
+VAR25 = FUN8 (VAR17, VAR18, VAR19, VAR21, &VAR26);
+
+if (! VAR25)
+VAR13 = VAR28;
+}
+
+VAR15 = FUN9 (VAR2, VAR13,
+VAR12 ? *VAR12 : NULL);
+
+if (VAR13)
+FUN10 (FUN3 (VAR15, 1), VAR25);
+
+return VAR15;
+}

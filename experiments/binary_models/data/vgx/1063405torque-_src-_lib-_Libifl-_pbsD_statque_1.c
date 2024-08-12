@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( int VAR2 , char * VAR3 , struct VAR4 * VAR5 , char * VAR6 ) { return ( FUN2 ( VAR2 , VAR7 , & VAR8 , VAR3 , VAR5 , VAR6 ) ) ; }

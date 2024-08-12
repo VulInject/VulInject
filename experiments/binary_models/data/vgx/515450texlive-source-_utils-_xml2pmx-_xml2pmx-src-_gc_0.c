@@ -1,0 +1,57 @@
+void FUN1(void) {
+unsigned VAR1;
+unsigned VAR2, VAR3 = 0, VAR4 = 0, VAR5 = 0;
+hdrptr VAR6;
+
+FUN2("");
+for (VAR1 = 0; VAR1 < VAR7; VAR1++) {
+if (!FUN3(VAR8[VAR1])) {
+VAR2 = 0;
+FUN2("", FUN4(VAR1));
+for (FUN5(VAR6, VAR8[VAR1])) {
+FUN6(FUN7(VAR6)->VAR9 != 0
+&& FUN7(VAR6)->VAR10 == FUN4(VAR1));
+FUN2("", FUN7(VAR6)->VAR9);
+VAR2 += FUN7(VAR6)->VAR11;
+}
+FUN2("", VAR2);
+VAR3 += VAR2;
+}
+}
+if (!FUN3(VAR8[VAR7])) {
+FUN2("");
+for (FUN5(VAR6, VAR8[VAR7])) {
+FUN6(FUN7(VAR6)->VAR9 != 0
+&& FUN7(VAR6)->VAR10 == FUN7(VAR6)->VAR11);
+FUN2("", FUN7(VAR6)->VAR9, FUN7(VAR6)->VAR11);
+VAR4 += FUN7(VAR6)->VAR11;
+}
+}
+FUN2("");
+
+FUN2("");
+for (VAR1 = 1; VAR1 <= VAR12; VAR1++) {
+if (!FUN3(VAR13[VAR1])) {
+if (VAR1 == VAR12)
+FUN2("");
+else
+FUN2("", VAR1);
+
+for (FUN5(VAR6, VAR13[VAR1])) {
+FUN6(FUN7(VAR6)->VAR10 == 0);
+FUN2("", FUN7(VAR6)->VAR9, FUN7(VAR6)->VAR11);
+VAR5 += FUN7(VAR6)->VAR11;
+}
+
+FUN2("");
+}
+}
+FUN2("");
+
+FUN2("", VAR3);
+FUN2("", VAR4);
+FUN2("", VAR14);
+if (VAR3 + VAR4 != VAR14) FUN2("");
+FUN2("");
+FUN2("", VAR5);
+}

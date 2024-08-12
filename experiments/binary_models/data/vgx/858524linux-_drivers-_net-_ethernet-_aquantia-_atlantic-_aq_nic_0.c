@@ -1,0 +1,41 @@
+int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+const struct VAR5 *VAR6 = VAR2->VAR5;
+struct VAR7 *VAR8 = &VAR2->VAR9;
+unsigned int VAR10 = VAR4->VAR11;
+struct VAR12 *VAR13 = NULL;
+unsigned int VAR14 = 0U;
+int VAR15 = 0;
+
+VAR2->VAR16.VAR17 = 0;
+if (FUN2(VAR4) > VAR18) {
+VAR10 |= VAR19;
+} else {
+FUN3(VAR13, VAR4) {
+FUN4(VAR2->VAR16.VAR20[VAR14++], VAR13->VAR21);
+}
+}
+
+VAR8->VAR22 = !!(VAR10 & VAR23);
+if (VAR8->VAR22) {
+if (VAR14 + FUN5(VAR4) > VAR18) {
+VAR10 |= VAR24;
+} else {
+FUN6(VAR13, VAR4) {
+FUN4(VAR2->VAR16.VAR20[VAR14++],
+VAR13->VAR21);
+}
+}
+}
+
+if (VAR14 > 0 && VAR14 <= VAR18) {
+VAR2->VAR16.VAR17 = VAR14;
+VAR15 = VAR6->FUN7(VAR2->VAR25,
+VAR2->VAR16.VAR20,
+VAR2->VAR16.VAR17);
+if (VAR15 < 0)
+return VAR15;
+}
+
+return FUN8(VAR2, VAR10);
+}

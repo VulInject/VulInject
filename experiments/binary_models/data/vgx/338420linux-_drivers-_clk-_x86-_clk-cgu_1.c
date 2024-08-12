@@ -1,0 +1,1 @@
+static int FUN1 ( u32 VAR1 , VAR2 * VAR3 , VAR2 * VAR4 ) { u32 VAR5 , VAR6 ; * VAR3 = 1 ; * VAR4 = 1 ; if ( VAR1 > VAR7 ) { VAR1 = VAR7 ; } if ( VAR1 > 1 ) { for ( VAR5 = 2 ; VAR5 <= VAR8 ; VAR5 ++ ) { VAR6 = FUN2 ( ( VAR9 ) VAR1 , VAR5 ) ; if ( VAR1 % VAR5 == 0 && VAR6 <= VAR8 ) { break ; } } * VAR3 = VAR6 ; * VAR4 = VAR5 ; } return 0 ; }

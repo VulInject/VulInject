@@ -1,0 +1,48 @@
+int FUN1(const char *VAR1,
+const struct VAR2 *VAR3,
+const struct VAR2 *VAR4,
+struct VAR5 *VAR6)
+{
+struct VAR7 *VAR8;
+struct VAR9 *VAR10;
+struct VAR11 *VAR12;
+struct VAR9 *VAR13;
+struct VAR14 *VAR15;
+
+FUN2();
+
+if (VAR1)
+VAR8 = FUN3(VAR1, VAR16);
+else
+VAR8 = FUN4(VAR1, VAR16);
+if (VAR8 == NULL ||
+VAR8->VAR17.VAR18 != VAR19)
+goto VAR20;
+
+FUN5(&VAR21);
+VAR10 = FUN6(VAR3, VAR4,
+&VAR8->VAR17.VAR22->VAR23);
+FUN7(&VAR21);
+
+if (VAR10 == NULL)
+goto VAR20;
+FUN8(VAR12, &VAR8->VAR17.VAR22->VAR24)
+goto VAR25;
+FUN9(VAR13, &VAR8->VAR17.VAR22->VAR23)
+goto VAR25;
+
+FUN10(VAR8, VAR6);
+
+VAR25:
+FUN11();
+
+FUN12();
+VAR15 = FUN13(VAR10);
+FUN14(VAR15->VAR17.VAR26);
+FUN15(VAR15);
+return 0;
+
+VAR20:
+FUN11();
+return -VAR27;
+}

@@ -1,0 +1,1 @@
+static void FUN1(void) { FUN2(0, VAR1, &VAR2); }

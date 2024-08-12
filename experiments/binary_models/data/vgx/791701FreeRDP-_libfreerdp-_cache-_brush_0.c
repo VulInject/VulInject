@@ -1,0 +1,22 @@
+static VAR1 FUN1(VAR2* VAR3, const VAR4* VAR5)
+{
+UINT32 VAR6;
+void* VAR7 = NULL;
+VAR8* VAR9;
+
+FUN2(VAR3);
+FUN2(VAR5);
+
+VAR9 = VAR3->VAR9;
+FUN2(VAR9);
+
+VAR6 = VAR5->VAR10 * 64 / 8;
+VAR7 = malloc(VAR6);
+
+if (!VAR7)
+return VAR11;
+
+CopyMemory(VAR7, VAR5->VAR7, VAR6);
+FUN3(VAR9->VAR12, VAR5->VAR13, VAR7, VAR5->VAR10);
+return VAR14;
+}

@@ -1,0 +1,32 @@
+void
+FUN1(struct VAR1 *VAR2, const char *VAR3)
+{
+VAR4 *VAR5;
+
+VAR5 = FUN2(VAR3, "");
+if (VAR5 == NULL)
+FUN3(2, "", VAR3);
+
+if (VAR2->VAR6) {
+size_t VAR7;
+
+if (!VAR8.VAR9) {
+for (VAR7 = 0; VAR7 < VAR2->VAR10; ++VAR7)
+FUN4(VAR2->VAR6[VAR7]->VAR11, VAR5,
+VAR8.VAR12);
+} else {
+struct VAR13 *VAR14 = NULL;
+struct VAR13 *VAR15;
+for (VAR7 = 0; VAR7 < VAR2->VAR10; ++VAR7) {
+VAR15 = VAR2->VAR6[VAR7];
+if ((VAR14 == NULL) ||
+FUN5(&VAR14, &VAR15)) {
+FUN4(VAR15->VAR11, VAR5, VAR8.VAR12);
+VAR14 = VAR15;
+}
+}
+}
+}
+
+FUN6(VAR5, VAR3);
+}

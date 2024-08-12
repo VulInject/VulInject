@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR2 , const struct VAR3 * VAR4 ) { int VAR5 = VAR4 -> VAR6 ; if ( FUN2 ( FUN3 ( VAR4 ) -> VAR7 & VAR8 ) ) { if ( VAR2 -> VAR9 == VAR10 && FUN4 ( VAR4 ) ) { VAR5 += FUN5 ( VAR2 , VAR4 , true ) ; } else { VAR5 += sizeof ( VAR11 ) ; } return VAR5 <= VAR12 ; } return true ; }

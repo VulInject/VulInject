@@ -1,0 +1,1 @@
+void FUN1 ( const void * VAR1 , size_t VAR2 , u8 VAR3 , bool VAR4 ) { void * VAR5 , * VAR6 ; if ( ! FUN2 ( ) ) { return ; } VAR1 = FUN3 ( VAR1 ) ; if ( FUN4 ( VAR1 ) ) { return ; } if ( FUN5 ( ( unsigned long ) VAR1 & VAR7 ) ) { return ; } VAR5 = FUN6 ( VAR1 ) ; VAR6 = FUN6 ( VAR1 + VAR2 ) ; FUN7 ( VAR5 , VAR3 , VAR6 - VAR5 ) ; }

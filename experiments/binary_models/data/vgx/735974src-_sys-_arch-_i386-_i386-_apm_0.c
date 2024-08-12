@@ -1,0 +1,52 @@
+void
+FUN1(int VAR1)
+{
+extern int VAR2;
+int VAR3;
+
+FUN2();
+FUN3();
+FUN4(VAR4);
+FUN5();
+
+VAR3 = FUN6();
+FUN7();
+VAR5 = 2;
+FUN4(VAR6);
+FUN8();
+
+
+VAR7 |= VAR8;
+FUN4(VAR9);
+VAR7 &= ~VAR8;
+
+
+FUN9(VAR10, VAR1);
+
+
+
+FUN10();
+if (VAR11 == VAR12)
+FUN11();		
+FUN12(FUN13());
+
+FUN14(NULL);
+FUN15();
+
+FUN4(VAR13);
+VAR5 = 0;
+FUN16();
+FUN17(VAR3);
+
+FUN18(NULL, 0);	
+FUN19();
+
+FUN4(VAR14);
+FUN20();
+
+FUN21();
+
+
+if (VAR15 != NULL)
+FUN22(VAR2);
+}

@@ -1,0 +1,109 @@
+static int
+FUN1(VAR1 *VAR2, int VAR3, VAR4 *VAR5,
+int VAR6, uint64_t VAR7, uint64_t VAR8)
+{
+VAR9 *VAR10 = NULL;
+void *VAR11 = NULL;
+uint64_t VAR12 = VAR2->VAR13->VAR14 - VAR15;
+uint64_t VAR16 = 1ULL << VAR12;
+uint64_t VAR17, VAR18;
+boolean_t VAR19;
+int VAR20, VAR21, VAR22, VAR23;
+
+FUN2("",
+VAR2->VAR24, *VAR5, VAR6, VAR2->VAR13->VAR25);
+
+FUN3(FUN4(&VAR2->VAR26));
+
+VAR19 = ((VAR3 & VAR27) != 0);
+VAR21 = (VAR3 & VAR28) ? -1 : 1;
+FUN3(VAR8 == 0 || !VAR19);
+
+if (VAR6 == VAR2->VAR13->VAR25) {
+VAR22 = 0;
+VAR16 = VAR2->VAR13->VAR29;
+VAR11 = VAR2->VAR13->VAR30;
+} else {
+uint64_t VAR31 = FUN5(VAR2, VAR6, *VAR5);
+VAR22 = FUN6(VAR2, VAR6, VAR31, VAR32, VAR33, VAR34, &VAR10);
+if (VAR22) {
+if (VAR22 != VAR35)
+return (VAR22);
+if (VAR19)
+return (0);
+
+return (FUN7(VAR36));
+}
+VAR22 = FUN8(VAR10, NULL,
+VAR37 | VAR38 | VAR39);
+if (VAR22) {
+FUN9(VAR10, VAR34);
+return (VAR22);
+}
+VAR11 = VAR10->VAR10.VAR40;
+FUN10(&VAR10->VAR41, VAR42);
+}
+
+if (VAR10 != NULL && VAR8 != 0 && (VAR10->VAR43 == NULL ||
+VAR10->VAR43->VAR44 <= VAR8 ||
+FUN11(VAR10->VAR43))) {
+
+VAR22 = FUN7(VAR36);
+} else if (VAR6 == 0) {
+VAR45 *VAR46 = VAR11;
+
+FUN3(VAR2->VAR47 == VAR48);
+FUN3(!(VAR3 & VAR28));
+
+for (VAR20 = (*VAR5 >> VAR49) & (VAR7 - 1);
+VAR20 < VAR7; VAR20 += VAR46[VAR20].VAR50 + 1) {
+if ((VAR46[VAR20].VAR47 == VAR51) == VAR19)
+break;
+}
+
+if (VAR20 == VAR7)
+VAR22 = FUN7(VAR36);
+
+*VAR5 = (*VAR5 & ~(VAR52 - 1)) +
+(VAR20 << VAR49);
+} else {
+VAR53 *VAR54 = VAR11;
+uint64_t VAR55 = *VAR5;
+VAR23 = (VAR6 - 1) * VAR12 + VAR2->VAR56;
+VAR17 = 0;
+VAR18 = VAR7 << ((VAR6 - 1) * VAR12);
+
+if (VAR19)
+VAR18--;
+else
+VAR17++;
+
+*VAR5 = *VAR5 >> VAR23;
+for (VAR20 = FUN12(*VAR5, 0, VAR12);
+VAR20 >= 0 && VAR20 < VAR16; VAR20 += VAR21) {
+if (FUN13(&VAR54[VAR20]) >= VAR17 &&
+FUN13(&VAR54[VAR20]) <= VAR18 &&
+(VAR19 || VAR54[VAR20].VAR44 > VAR8))
+break;
+if (VAR21 > 0 || *VAR5 > 0)
+*VAR5 += VAR21;
+}
+*VAR5 = *VAR5 << VAR23;
+if (VAR21 < 0) {
+
+FUN14(*VAR5, <=, VAR55);
+*VAR5 = FUN15(*VAR5 + (1ULL << VAR23) - 1, VAR55);
+} else if (*VAR5 < VAR55) {
+*VAR5 = VAR55;
+}
+if (VAR20 < 0 || VAR20 >= VAR16)
+VAR22 = FUN7(VAR36);
+}
+
+if (VAR10 != NULL) {
+FUN16(&VAR10->VAR41);
+FUN9(VAR10, VAR34);
+}
+
+return (VAR22);
+}

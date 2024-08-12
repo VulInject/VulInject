@@ -1,0 +1,1 @@
+static void FUN1(void) { VAR1 = 0; }

@@ -1,0 +1,1 @@
+static void * FUN1 ( void * VAR1 , unsigned long VAR2 ) { struct VAR3 * VAR4 ; void * new ; if ( VAR2 == 0 ) { return NULL ; } if ( VAR1 == NULL ) { return FUN2 ( VAR2 ) ; } VAR4 = FUN3 ( VAR1 ) ; if ( VAR4 == NULL ) { return NULL ; } if ( VAR2 <= VAR4 -> VAR2 ) { return VAR1 ; } new = FUN2 ( VAR2 ) ; memcpy ( new , VAR1 , VAR4 -> VAR2 ) ; FUN4 ( VAR1 ) ; return new ; }

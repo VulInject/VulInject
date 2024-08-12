@@ -1,0 +1,6 @@
+void FUN1(VAR1 *VAR2, const VAR3 *VAR4) {
+int VAR5;
+VAR5 = FUN2 (6, 18, VAR4[0]);
+VAR2->VAR6 = VAR7[VAR5];
+VAR2->VAR8 = VAR9;
+}

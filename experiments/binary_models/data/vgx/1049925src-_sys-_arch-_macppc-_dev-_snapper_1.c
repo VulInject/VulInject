@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , int VAR3 ) { uint8_t VAR4 ; if ( ( VAR3 >= 0 ) && ( VAR3 <= 255 ) && ( VAR3 != VAR2 -> VAR5 ) ) { VAR4 = VAR6 [ ( VAR3 >> 3 ) + 2 ] ; VAR2 -> VAR5 = VAR3 ; } }

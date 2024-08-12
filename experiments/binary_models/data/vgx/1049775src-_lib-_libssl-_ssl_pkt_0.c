@@ -1,0 +1,22 @@
+int
+FUN1(VAR1 *VAR2)
+{
+int VAR3;
+
+VAR2->VAR4->VAR5 = 0;
+if ((VAR3 = FUN2(VAR2)) <= 0) {
+VAR2->VAR4->VAR5 = 1;
+return VAR3;
+}
+
+
+if (VAR2->VAR4->VAR6[0] == VAR7)
+(void)FUN3(VAR2->VAR8);
+
+FUN4(VAR2, 1, VAR9, VAR2->VAR4->VAR6, 2);
+
+FUN5(VAR2, VAR10,
+(VAR2->VAR4->VAR6[0] << 8) | VAR2->VAR4->VAR6[1]);
+
+return VAR3;
+}

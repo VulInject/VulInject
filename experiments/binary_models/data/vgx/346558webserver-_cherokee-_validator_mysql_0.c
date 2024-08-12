@@ -1,0 +1,23 @@
+FUN1 (VAR1 **VAR2, VAR3 *VAR4)
+{
+ret_t VAR5;
+FUN2 (VAR6, VAR7);
+
+FUN3 (FUN4(VAR6), FUN5(VAR4), FUN6(VAR2));
+FUN4(VAR6)->VAR8 = VAR9 | VAR10;
+
+FUN7(VAR6)->free           = (VAR11)           VAR12;
+FUN4(VAR6)->VAR13       = (VAR14)       VAR15;
+FUN4(VAR6)->VAR16 = (VAR17) VAR18;
+
+
+VAR5 = FUN8 (VAR6, FUN9(VAR4));
+if (VAR5 != VAR19) {
+FUN10 (FUN4(VAR6));
+return VAR5;
+}
+
+
+*VAR2 = VAR6;
+return VAR19;
+}

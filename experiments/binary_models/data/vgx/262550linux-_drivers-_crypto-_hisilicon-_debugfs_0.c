@@ -1,0 +1,25 @@
+void FUN1(struct VAR1 *VAR2)
+{
+const struct VAR3 *VAR4;
+int VAR5;
+
+
+FUN2(0x0, VAR2->VAR6 + VAR7);
+FUN2(0x0, VAR2->VAR6 + VAR8);
+
+
+FUN2(0x0, VAR2->VAR6 + VAR9);
+FUN2(0x0, VAR2->VAR6 + VAR10);
+
+
+FUN2(0x1, VAR2->VAR6 + VAR11);
+
+VAR4 = VAR12;
+for (VAR5 = 0; VAR5 < VAR13; VAR5++) {
+FUN3(VAR2->VAR6 + VAR4->VAR14);
+VAR4++;
+}
+
+
+FUN2(0x0, VAR2->VAR6 + VAR11);
+}

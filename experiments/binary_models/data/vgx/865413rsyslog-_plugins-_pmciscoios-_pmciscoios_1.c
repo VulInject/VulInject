@@ -1,0 +1,1 @@
+static rsRetVal FUN1 ( VAR1 * * VAR2 ) { VAR1 * VAR3 ; VAR4 ; FUN2 ( VAR3 = malloc ( sizeof ( VAR1 ) ) ) ; VAR3 -> VAR5 = 0 ; * VAR2 = VAR3 ; finalize_it VAR6 ; }

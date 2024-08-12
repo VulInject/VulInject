@@ -1,0 +1,1 @@
+static void FUN1 ( unsigned long VAR1 ) { VAR2 * VAR3 = ( VAR2 * ) VAR1 ; struct VAR4 * VAR5 ; VAR5 = VAR3 -> VAR5 ; FUN2 ( VAR5 , NULL ) ; FUN3 ( VAR5 ) ; FUN4 ( VAR3 ) ; FUN5 ( VAR5 ) ; FUN6 ( VAR5 ) ; }

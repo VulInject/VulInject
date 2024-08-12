@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR1 , size_t VAR2 ) { char * new ; VAR1 -> VAR3 += VAR4 ; if ( VAR2 >= VAR4 ) { VAR1 -> VAR3 += VAR2 ; } new = realloc ( VAR1 -> VAR1 , VAR1 -> VAR3 ) ; VAR1 -> VAR1 = new ; return true ; }

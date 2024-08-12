@@ -1,0 +1,72 @@
+int FUN1(struct VAR1 *VAR2, u16 VAR3,
+int VAR4, struct VAR5 *VAR6)
+
+{
+struct VAR7 *VAR8 = VAR2->VAR8;
+int VAR9 = 0;
+u32 VAR10 = 0;
+
+if (!VAR6)
+return -VAR11;
+
+switch (VAR3) {
+case VAR12:
+if (VAR8->VAR13) {
+FUN2(VAR8, VAR14,
+""
+"");
+VAR9 = -1;
+break;
+}
+if (VAR6->VAR15) {
+if (VAR6->VAR16 == VAR17) {
+if (!VAR8->VAR18)
+
+break;
+
+VAR10 = FUN3(VAR8->VAR6
+.VAR16);
+VAR8->VAR6.VAR16 =
+FUN4(VAR6->VAR16);
+} else if (VAR6->VAR16) {
+VAR8->VAR6.VAR16 =
+FUN4(VAR6->VAR16);
+VAR8->VAR6.VAR19 = (VAR20)VAR6->VAR19;
+if (VAR6->VAR21)
+VAR8->VAR6.VAR21 = (VAR20)VAR6->VAR21;
+} else if (VAR8->VAR6.VAR16 ==
+FUN4(VAR17)) {
+
+VAR9 = -1;
+break;
+}
+
+VAR9 = FUN5(VAR2,
+VAR22,
+VAR12, 0,
+&VAR8->VAR6,
+VAR4 == VAR23);
+
+if (VAR6->VAR16 == VAR17)
+
+VAR8->VAR6.VAR16 =
+FUN4(VAR10);
+} else {
+VAR8->VAR6.VAR16 =
+FUN4(VAR6->VAR16);
+VAR8->VAR6.VAR19 = (VAR20)VAR6->VAR19;
+VAR8->VAR6.VAR21 = (VAR20)VAR6->VAR21;
+}
+break;
+case VAR24:
+VAR6->VAR16 = FUN3(VAR8->VAR6.VAR16);
+VAR6->VAR19 = VAR8->VAR6.VAR19;
+VAR6->VAR21 = VAR8->VAR6.VAR21;
+break;
+default:
+VAR9 = -1;
+break;
+}
+
+return VAR9;
+}

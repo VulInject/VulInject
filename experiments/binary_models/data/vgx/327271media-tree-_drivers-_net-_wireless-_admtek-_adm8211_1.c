@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = VAR2 -> VAR5 ; u32 VAR6 = 0x4000 | VAR7 ; if ( VAR2 -> VAR8 ) { VAR6 |= VAR9 ; } if ( VAR2 -> VAR10 ) { VAR6 |= VAR11 ; } if ( VAR2 -> VAR12 ) { VAR6 |= VAR13 ; } if ( VAR2 -> VAR14 ) { VAR6 |= VAR15 ; } FUN2 ( VAR16 , VAR6 ) ; FUN3 ( VAR16 , NULL ) ; }

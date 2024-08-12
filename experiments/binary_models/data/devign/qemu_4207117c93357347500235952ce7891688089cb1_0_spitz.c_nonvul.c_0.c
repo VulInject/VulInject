@@ -1,0 +1,1 @@
+static void FUN1(int VAR1, int VAR2, int VAR3, VAR4 *VAR5, const char **VAR6, int VAR7, const char *VAR8, const char *VAR9, const char *VAR10, const char *VAR11) { FUN2(VAR1, VAR2, VAR5, VAR8, VAR9, VAR10, VAR11, VAR12, 0x2e8); }

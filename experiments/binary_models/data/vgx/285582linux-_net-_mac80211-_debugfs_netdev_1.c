@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , enum ieee80211_smps_mode VAR3 ) { struct VAR4 * VAR5 = VAR2 -> VAR5 ; int VAR6 ; if ( ! ( VAR5 -> VAR7 . VAR8 -> VAR9 & VAR10 ) && ( VAR3 == VAR11 || VAR3 == VAR12 ) ) { return - VAR13 ; } if ( VAR2 -> VAR14 . VAR15 != VAR16 ) { return - VAR17 ; } FUN2 ( VAR2 ) ; VAR6 = FUN3 ( VAR2 , & VAR2 -> VAR18 , VAR3 ) ; FUN4 ( VAR2 ) ; return VAR6 ; }

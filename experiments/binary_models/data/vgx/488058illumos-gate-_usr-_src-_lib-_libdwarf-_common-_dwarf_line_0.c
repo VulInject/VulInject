@@ -1,0 +1,257 @@
+int
+FUN1(Dwarf_Die VAR1,
+char ***VAR2,
+VAR3 * VAR4, VAR5 * VAR6)
+{
+
+VAR7 *VAR8 = 0;
+
+
+Dwarf_Attribute VAR9 = 0;
+
+const char * VAR10 = 0;
+
+const char * VAR11 = 0;
+VAR7 *VAR12 = 0;
+
+
+Dwarf_Unsigned VAR13 = 0;
+
+
+char **VAR14 = 0;
+
+
+Dwarf_Debug VAR15 = 0;
+Dwarf_CU_Context VAR16 = 0;
+Dwarf_Line_Context  VAR17 = 0;
+
+
+Dwarf_Chain VAR18 = NULL;
+Dwarf_Chain VAR19 = NULL;
+Dwarf_Chain VAR20 = NULL;
+
+Dwarf_Half VAR21 = 0;
+int VAR22 = VAR23;
+int VAR24 = VAR23;
+unsigned VAR25 = 0;
+int VAR26 = VAR23;
+VAR7 *VAR27 = 0;
+
+
+
+
+if (VAR6 != NULL) {
+*VAR6 = NULL;
+}
+
+FUN2(VAR1, VAR23);
+VAR16 = VAR1->VAR28;
+VAR15 = VAR16->VAR29;
+
+VAR22 = FUN3(VAR1, VAR30, &VAR9, VAR6);
+if (VAR22 != VAR31) {
+return VAR22;
+}
+
+if (VAR15->VAR32.VAR33 == 0) {
+FUN4(VAR15, VAR9, VAR34);
+FUN5(VAR15, VAR6, VAR35);
+return (VAR23);
+}
+
+VAR26 = FUN6(VAR15, &VAR15->VAR32,VAR6);
+if (VAR26 != VAR31) {
+FUN4(VAR15, VAR9, VAR34);
+return VAR26;
+}
+if (!VAR15->VAR32.VAR36) {
+FUN4(VAR15, VAR9, VAR34);
+return (VAR37);
+}
+VAR27 = VAR15->VAR32.VAR38;
+
+VAR24 = FUN7(VAR9,&VAR21,VAR6);
+if (VAR24 != VAR31) {
+FUN4(VAR15, VAR9, VAR34);
+return VAR24;
+}
+if (VAR21 != VAR39 && VAR21 != VAR40 &&
+VAR21 != VAR41  &&
+VAR21 != VAR42) {
+dwarfstring VAR43;
+dwarfstring VAR44;
+const char *VAR45 = 0;
+
+FUN8(&VAR44);
+FUN9(VAR21,&VAR45);
+if (!VAR45) {
+FUN10(&VAR44,""
+"" VAR46,VAR21);
+} else {
+FUN11(&VAR44,(char *)VAR45);
+}
+FUN4(VAR15, VAR9, VAR34);
+FUN8(&VAR43);
+FUN12(&VAR43,
+""
+"",
+FUN13(&VAR44));
+FUN14(VAR15, VAR6, VAR47,
+FUN13(&VAR43));
+FUN15(&VAR43);
+FUN15(&VAR44);
+return (VAR23);
+}
+VAR24 = FUN16(VAR9, &VAR13, VAR6);
+if (VAR24 != VAR31) {
+FUN4(VAR15, VAR9, VAR34);
+return VAR24;
+}
+if (VAR13 >= VAR15->VAR32.VAR36) {
+FUN4(VAR15, VAR9, VAR34);
+FUN5(VAR15, VAR6, VAR48);
+return (VAR23);
+}
+VAR8 = VAR15->VAR32.VAR38 + VAR13;
+{
+Dwarf_Unsigned VAR49 = 0;
+Dwarf_Unsigned VAR50 = 0;
+int VAR51 = FUN17(VAR1, VAR52,
+&VAR49,&VAR50,VAR6);
+if(VAR51 != VAR31) {
+FUN4(VAR15, VAR9, VAR34);
+return VAR51;
+}
+VAR8 += VAR49;
+if (VAR8 > VAR15->VAR32.VAR38 +
+VAR15->VAR32.VAR36) {
+FUN4(VAR15, VAR9, VAR34);
+FUN5(VAR15, VAR6, VAR53);
+return VAR23;
+}
+}
+FUN4(VAR15, VAR9, VAR34);
+VAR9 = 0;
+
+VAR22 = FUN18(VAR1, &VAR11,
+&VAR10,VAR6);
+if (VAR22 == VAR23) {
+return VAR22;
+}
+
+
+VAR12 = (VAR7 *)VAR11;
+VAR17 = (VAR54)
+FUN19(VAR15, VAR55, 1);
+if (VAR17 == NULL) {
+FUN5(VAR15, VAR6, VAR56);
+return (VAR23);
+}
+VAR17->VAR57 = false;
+
+{
+VAR7 *VAR58 = 0;
+int VAR59 = 0;
+
+VAR59 = FUN20(VAR15,
+VAR16,
+VAR27,
+VAR8,
+VAR15->VAR32.VAR36,
+&VAR58,
+VAR17,
+NULL, NULL,VAR6,
+0);
+
+if (VAR59 == VAR23) {
+FUN4(VAR15, VAR17, VAR55);
+VAR17 = 0;
+return VAR59;
+}
+if (VAR59 == VAR37) {
+FUN4(VAR15, VAR17, VAR55);
+VAR17 = 0;
+return VAR59;
+}
+}
+
+VAR17->VAR60 = VAR12;
+
+{
+Dwarf_File_Entry VAR61 = 0;
+Dwarf_File_Entry VAR62 =VAR17->VAR63;
+Dwarf_Signed VAR64 = 0;
+Dwarf_Signed VAR65 = 0;
+Dwarf_Signed VAR66 = 0;
+
+VAR26 =  FUN21(VAR17, &VAR64,
+&VAR65, &VAR66, VAR6);
+if (VAR26 != VAR31) {
+return VAR26;
+}
+for (VAR25 = VAR64; VAR25 < VAR66; ++VAR25,VAR62 = VAR61->VAR67 ) {
+int VAR68 = 0;
+char *VAR69 = 0;
+
+VAR61 = VAR62;
+VAR68 = FUN22(VAR15,VAR61,VAR17,
+&VAR69,VAR6);
+if (VAR68 != VAR31) {
+FUN4(VAR15, VAR17, VAR55);
+
+return VAR68;
+}
+VAR18 =
+(VAR70) FUN19(VAR15, VAR71, 1);
+if (VAR18 == NULL) {
+FUN4(VAR15, VAR17, VAR55);
+FUN5(VAR15, VAR6, VAR56);
+return (VAR23);
+}
+VAR18->VAR72 = VAR69;
+if (VAR20 == NULL) {
+VAR20 = VAR19 = VAR18;
+} else {
+VAR19->VAR73 = VAR18;
+VAR19 = VAR18;
+}
+}
+}
+if (!VAR20) {
+FUN4(VAR15, VAR17, VAR55);
+*VAR2 = NULL;
+*VAR4 = 0;
+return VAR37;
+}
+
+
+if (VAR17->VAR74 == 0) {
+FUN4(VAR15, VAR17, VAR55);
+*VAR2 = NULL;
+*VAR4 = 0;
+return VAR37;
+}
+
+VAR14 = (char **)
+FUN19(VAR15, VAR75,
+VAR17->VAR74);
+if (VAR14 == NULL) {
+FUN4(VAR15, VAR17, VAR55);
+FUN5(VAR15, VAR6, VAR56);
+return (VAR23);
+}
+
+VAR18 = VAR20;
+for (VAR25 = 0; VAR25 < VAR17->VAR74; VAR25++) {
+*(VAR14 + VAR25) = VAR18->VAR72;
+VAR18->VAR72 = 0;
+VAR19 = VAR18;
+VAR18 = VAR18->VAR73;
+FUN4(VAR15, VAR19, VAR71);
+}
+
+*VAR2 = VAR14;
+*VAR4 = VAR17->VAR74;
+FUN4(VAR15, VAR17, VAR55);
+return (VAR31);
+}

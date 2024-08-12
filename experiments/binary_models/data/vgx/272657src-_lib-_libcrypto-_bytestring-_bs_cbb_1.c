@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 , size_t VAR5 ) { struct VAR6 * VAR7 ; if ( ( VAR7 = calloc ( 1 , sizeof ( VAR6 ) ) ) == NULL ) { return 0 ; } VAR7 -> VAR4 = VAR4 ; VAR7 -> VAR8 = 0 ; VAR7 -> VAR5 = VAR5 ; VAR7 -> VAR9 = 1 ; VAR2 -> VAR7 = VAR7 ; return 1 ; }

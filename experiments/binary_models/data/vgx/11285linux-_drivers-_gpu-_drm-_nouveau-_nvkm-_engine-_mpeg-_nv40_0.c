@@ -1,0 +1,47 @@
+bool
+FUN1(struct VAR1 *VAR2, u32 VAR3, u32 VAR4)
+{
+struct VAR5 *VAR6 = VAR2->VAR6;
+struct VAR7 *VAR8 = FUN2(VAR2->VAR8);
+struct VAR9 *VAR10 = &VAR8->VAR11.VAR10;
+u32 VAR12 = VAR4 << 4;
+u32 VAR13 = FUN3(VAR6, VAR12 + 0);
+u32 VAR14 = FUN3(VAR6, VAR12 + 4);
+u32 VAR15 = FUN3(VAR6, VAR12 + 8);
+u32 VAR16 = (VAR15 & 0xfffff000) | (VAR13 >> 20);
+u32 VAR17 = VAR14 + 1;
+
+
+if (!(VAR13 & 0x00002000)) {
+FUN4(VAR10, "",
+VAR12, VAR13, VAR14, VAR15);
+return false;
+}
+
+if (VAR3 == 0x0190) {
+
+FUN5(VAR2, 0x00b300, 0x00030000, (VAR13 & 0x00030000));
+FUN6(VAR2, 0x00b334, VAR16);
+FUN6(VAR2, 0x00b324, VAR17);
+} else
+if (VAR3 == 0x01a0) {
+
+FUN5(VAR2, 0x00b300, 0x000c0000, (VAR13 & 0x00030000) << 2);
+FUN6(VAR2, 0x00b360, VAR16);
+FUN6(VAR2, 0x00b364, VAR17);
+} else {
+
+if (VAR13 & 0x00030000)
+return false;
+
+FUN6(VAR2, 0x00b370, VAR16);
+FUN6(VAR2, 0x00b374, VAR17);
+}
+
+return true;
+}
+
+static const struct VAR18
+VAR19 = {
+.VAR20 = VAR21,
+};

@@ -1,0 +1,1 @@
+int FUN1 ( lgrp_cookie_t VAR1 ) { VAR2 * VAR3 ; VAR3 = ( VAR2 * ) VAR1 ; if ( VAR3 == NULL || VAR3 -> VAR4 != VAR1 ) { VAR5 = VAR6 ; return ( - 1 ) ; } FUN2 ( VAR3 , VAR3 -> VAR7 ) ; VAR3 = NULL ; return ( 0 ) ; }

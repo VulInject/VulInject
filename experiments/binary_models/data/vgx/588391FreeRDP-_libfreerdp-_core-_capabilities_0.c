@@ -1,0 +1,17 @@
+static VAR1 FUN1(VAR2* VAR3,
+const VAR4* VAR5)
+{
+size_t VAR6;
+
+FUN2(VAR5);
+if (!FUN3(VAR3, 32))
+return VAR7;
+
+VAR6 = FUN4(VAR3);
+if (VAR6 > VAR8)
+return VAR7;
+if (VAR5->VAR9 > VAR10)
+return VAR7;
+FUN5(VAR3, (VAR11)VAR5->VAR9);
+return FUN6(VAR3, (VAR12)VAR6, VAR13);
+}

@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , struct VAR5 * VAR6 ) { int VAR7 ; struct VAR8 * VAR9 ; VAR9 = VAR6 -> VAR9 ; if ( VAR6 -> VAR10 == VAR11 || ! VAR4 ) { free } FUN2 ( & VAR6 -> VAR12 ) ; VAR7 = FUN3 ( VAR6 , VAR9 -> VAR13 , VAR9 -> VAR14 ) ; if ( VAR7 ) { FUN4 ( & ( VAR2 -> VAR15 ) , "" "" , VAR6 -> VAR16 ) ; } free FUN5 ( & VAR6 -> VAR17 , VAR18 ) ; }

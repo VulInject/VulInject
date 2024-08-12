@@ -1,0 +1,1 @@
+int FUN1(uint32_t VAR1, uint64_t VAR2) { return 0; }

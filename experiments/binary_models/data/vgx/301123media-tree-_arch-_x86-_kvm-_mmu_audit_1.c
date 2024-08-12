@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR1 , struct VAR2 * VAR3 ) { int VAR4 ; if ( VAR3 -> VAR5 . VAR6 != VAR7 ) { return ; } for ( VAR4 = 0 ; VAR4 < VAR8 ; ++ VAR4 ) { FUN2 ( VAR1 , VAR3 -> VAR9 + VAR4 ) ; } }

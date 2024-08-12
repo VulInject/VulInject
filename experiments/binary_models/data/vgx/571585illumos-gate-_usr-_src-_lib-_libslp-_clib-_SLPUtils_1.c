@@ -1,0 +1,1 @@
+SLPError FUN1 ( const char * VAR1 , char * * VAR2 ) { SLPError VAR3 ; char * VAR4 , VAR5 [ VAR6 ] ; ( void ) FUN2 ( VAR5 , VAR6 ) ; VAR3 = FUN3 ( VAR7 , VAR5 , VAR1 , & VAR4 , "" ) ; if ( VAR3 == VAR8 ) { VAR3 = FUN4 ( VAR4 , VAR2 ) ; free ( VAR4 ) ; } if ( VAR3 == VAR8 ) { FUN5 ( VAR1 , * VAR2 , FUN6 ( * VAR2 ) ) ; } return ( VAR3 ) ; }

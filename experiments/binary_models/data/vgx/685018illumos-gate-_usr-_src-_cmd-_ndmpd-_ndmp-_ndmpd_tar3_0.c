@@ -1,0 +1,68 @@
+static int
+FUN1(void *VAR1, VAR2 *VAR3, VAR2 *VAR4)
+{
+char *VAR5;
+int VAR6;
+time_t VAR7;
+VAR8 *VAR9;
+struct VAR10 *VAR11;
+VAR12 *VAR13;
+
+VAR9 = (VAR8 *)VAR1;
+
+VAR6 = FUN2(VAR9);
+if (VAR6 != 0)
+return (VAR6);
+
+VAR11 = VAR4->VAR14 ? VAR4->VAR15 : VAR3->VAR15;
+if (FUN3(VAR9, VAR3, VAR4, &VAR6))
+return (VAR6);
+
+if (VAR4->VAR14) {
+VAR5 = VAR4->VAR14;
+VAR11 = VAR4->VAR15;
+VAR13 = VAR4->VAR16;
+} else {
+VAR5 = "";
+VAR11 = VAR3->VAR15;
+VAR13 = VAR3->VAR16;
+}
+
+
+if (!FUN4(VAR9->VAR17, VAR3->VAR14, VAR5)) {
+FUN5(VAR18, "", VAR3->VAR14, VAR5);
+return (VAR19);
+}
+if (FUN6(VAR9->VAR20, VAR21))
+VAR7 = VAR9->VAR20->VAR22;
+else if (FUN6(VAR9->VAR20, VAR23)) {
+VAR7 = VAR9->VAR20->VAR24;
+} else {
+FUN5(VAR25, ""%VAR26/%VAR26\"",
+VAR3->VAR14, VAR5);
+return (-1);
+}
+
+if (FUN7(VAR11->VAR27)) {
+VAR9->VAR28->VAR29 = *VAR13;
+(void) FUN8(VAR9->VAR20->VAR30,
+VAR9->VAR17, VAR11);
+
+if (FUN9(VAR11, VAR7, VAR9->VAR20)) {
+(void) memcpy(&VAR9->VAR28->VAR31, VAR11,
+sizeof (struct VAR10));
+VAR6 = FUN10(VAR9, VAR3, VAR4);
+}
+} else {
+if (FUN9(VAR11, VAR7, VAR9->VAR20) ||
+FUN11(VAR9->VAR20, VAR9->VAR17, VAR9->VAR28, VAR7)) {
+VAR6 = 0;
+(void) memcpy(&VAR9->VAR28->VAR31, VAR11,
+sizeof (struct VAR10));
+VAR9->VAR28->VAR32 = *VAR13;
+(void) FUN12(VAR9, VAR3, VAR4);
+}
+}
+
+return (VAR6);
+}

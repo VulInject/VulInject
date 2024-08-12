@@ -1,0 +1,1 @@
+static bool FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 ) { const char * VAR5 = FUN2 ( VAR4 , VAR6 ) ; return FUN3 ( VAR5 , VAR7 , NULL ) ; }

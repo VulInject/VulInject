@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 ) { if ( ! ( VAR2 -> VAR3 & VAR4 ) ) { FUN2 ( & VAR2 -> mutex ) ; return - VAR5 ; } VAR2 -> VAR6 = 1 ; if ( ! FUN3 ( VAR2 , & VAR2 -> VAR7 , VAR8 , NULL , 0 , NULL ) ) { VAR9 } FUN4 ( VAR2 ) ; FUN5 ( VAR2 -> VAR10 , ! VAR2 -> VAR6 ) ; FUN6 ( VAR2 ) ; exit FUN2 ( & VAR2 -> mutex ) ; return 0 ; }

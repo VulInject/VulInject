@@ -1,0 +1,17 @@
+static int FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = FUN2(VAR3, VAR2, VAR2);
+    VAR5 *VAR6 = FUN3(VAR7, NULL, NULL);
+    FUN4(VAR6);
+    FUN5(&VAR4->VAR8);
+    VAR4->VAR9 = 1;
+    FUN6(&VAR4->VAR10);
+    FUN7(&VAR4->VAR11, &VAR4->VAR8);
+    FUN8(&VAR4->VAR10);
+    FUN8(&VAR4->VAR11);
+    FUN9(&VAR4->VAR8);
+    FUN9(&VAR4->VAR12);
+    FUN9(&VAR4->VAR13);
+    FUN9(&VAR4->VAR14);
+    return 0;
+}

@@ -1,0 +1,1 @@
+( VAR1 ) ; void FUN1 ( struct VAR2 * VAR3 , uint32_t VAR4 ) { FUN2 ( & VAR3 -> VAR5 , & VAR6 ) ; FUN3 ( & VAR3 -> VAR7 ) ; }

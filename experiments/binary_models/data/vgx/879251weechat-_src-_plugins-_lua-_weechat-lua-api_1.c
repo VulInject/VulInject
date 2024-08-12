@@ -1,0 +1,1 @@
+FUN1 ( ) { const char * VAR1 , * VAR2 , * VAR3 ; FUN2 ( 1 , "" , VAR4 ) ; if ( FUN3 ( VAR5 ) < 2 ) { FUN4 ( VAR4 ) ; } VAR1 = FUN5 ( VAR5 , - 2 ) ; VAR2 = FUN5 ( VAR5 , - 1 ) ; VAR3 = FUN6 ( FUN7 ( VAR1 ) , VAR2 ) ; FUN8 ( VAR3 , NULL ) ; }

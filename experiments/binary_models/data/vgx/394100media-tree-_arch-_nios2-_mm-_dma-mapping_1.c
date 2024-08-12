@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , int VAR5 , enum dma_data_direction VAR6 , unsigned long VAR7 ) { int VAR8 ; FUN2 ( , , , ) { void * VAR9 = FUN3 ( VAR4 ) ; VAR4 -> VAR10 = FUN4 ( VAR4 ) ; if ( VAR7 & VAR11 ) { continue ; } FUN5 ( VAR9 , VAR4 -> VAR12 , VAR6 ) ; } return VAR5 ; }

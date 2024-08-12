@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { char * * VAR1 , * * VAR2 ; VAR1 = FUN2 ( FUN3 ( "" ) , "" , - 1 ) ; for ( VAR2 = VAR1 ; * VAR2 != NULL ; VAR2 ++ ) { char * VAR3 ; if ( ( VAR3 = strchr ( * VAR2 , '' ) ) != NULL ) { * VAR3 = '' ; VAR3 ++ ; FUN4 ( * VAR2 , VAR3 , NULL ) ; } else { FUN5 ( * VAR2 , NULL ) ; } } }

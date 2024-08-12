@@ -1,0 +1,1 @@
+static uint32_t FUN1 ( uint32_t VAR1 ) { if ( VAR1 == 0 ) { return 0 ; } if ( VAR1 == 38 ) { return VAR2 ; } if ( VAR1 == 39 ) { return VAR3 ; } return 0 ; }

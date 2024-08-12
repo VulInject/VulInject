@@ -1,0 +1,1 @@
+static int FUN1 ( di_minor_t VAR1 , di_node_t VAR2 , di_prom_handle_t VAR3 , char * VAR4 , int VAR5 ) { minor_t VAR6 ; int * VAR7 ; if ( FUN2 ( VAR3 , 0 , VAR8 , VAR2 , VAR9 , & VAR7 ) < 1 ) { return ( 0 ) ; } VAR6 = FUN3 ( FUN4 ( VAR1 ) ) ; ( void ) FUN5 ( VAR4 , FUN6 ( VAR1 ) , VAR5 ) ; return ( 1 ) ; }

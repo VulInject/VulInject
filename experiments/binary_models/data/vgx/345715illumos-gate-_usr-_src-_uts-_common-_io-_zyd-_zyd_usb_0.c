@@ -1,0 +1,50 @@
+static VAR1
+FUN1(struct VAR2 *VAR3,
+usb_pipe_handle_t VAR4, const void *VAR5, size_t VAR6)
+{
+VAR7 *VAR8;
+VAR9 *VAR10;
+int VAR11;
+struct zyd_cb_lock VAR12;
+
+VAR8 = FUN2(VAR3->VAR13, VAR6, VAR14);
+if (VAR8 == NULL) {
+FUN3("");
+return (VAR15);
+}
+VAR8->VAR16 = (VAR17)VAR6;
+VAR8->VAR18 = (VAR19)&VAR12;
+VAR8->VAR20 = VAR21;
+VAR8->VAR22 = 5;
+VAR8->VAR23 = VAR24;
+VAR8->VAR25 = VAR24;
+
+VAR10 = VAR8->VAR26;
+bcopy(VAR5, VAR10->VAR27, VAR6);
+VAR10->VAR27 += VAR6;
+
+FUN4(&VAR12);
+
+VAR11 = FUN5(VAR4, VAR8, VAR28);
+if (VAR11 != VAR29) {
+FUN6((VAR30,
+"", VAR11));
+FUN7(VAR8);
+FUN8(&VAR12);
+return (VAR15);
+}
+
+if (FUN9(&VAR12, 1000000) != VAR31) {
+FUN3("");
+FUN10(VAR3->VAR13, VAR4, VAR14, NULL, 0);
+(void) FUN9(&VAR12, -1);
+VAR11 = VAR15;
+} else {
+VAR11 = (VAR8->VAR32 == VAR33) ?
+VAR31 : VAR15;
+}
+
+FUN7(VAR8);
+FUN8(&VAR12);
+return (VAR11);
+}

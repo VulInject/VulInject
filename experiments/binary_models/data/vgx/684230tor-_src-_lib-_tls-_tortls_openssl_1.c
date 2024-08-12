@@ -1,0 +1,1 @@
+const char * FUN1 ( const VAR1 * VAR2 ) { FUN2 ( ) { return NULL ; } if ( VAR2 -> VAR3 == 0 ) { return VAR4 ; } return ( const char * ) FUN3 ( VAR2 -> VAR3 ) ; }

@@ -1,0 +1,92 @@
+int FUN1(struct VAR1 *VAR2)
+{
+int VAR3;
+u32 VAR4[VAR5];
+int VAR6, VAR7;
+struct VAR8 *VAR9;
+struct VAR10 *VAR11;
+unsigned int VAR12;
+
+if (!VAR2)
+return -VAR13;
+
+VAR3 = VAR2->VAR3;
+
+if (VAR14) {
+FUN2("");
+return -VAR13;
+}
+
+if (VAR3 > VAR5) {
+FUN2("");
+return -VAR13;
+}
+
+VAR14 = VAR2;
+
+VAR15 = FUN3(sizeof(void *) * VAR3, VAR16);
+VAR14->VAR17 = FUN3(sizeof(VAR18) * VAR3, VAR16);
+VAR14->VAR19 = FUN3(sizeof(VAR18) * VAR3,
+VAR16);
+
+if (!VAR15 || !VAR14->VAR17 ||
+!VAR14->VAR19)
+goto VAR20;
+
+memset(VAR4, 0, sizeof(VAR4));
+
+for (VAR7 = 0; VAR7 < VAR2->VAR21; VAR7++) {
+VAR6 = VAR2->VAR22[VAR7].VAR6;
+VAR4[VAR6 >> 5] |= 1 << (VAR6 & 0x1f);
+if (VAR2->VAR22[VAR7].VAR23)
+VAR2->VAR19[VAR6 >> 5] |=
+1 << (VAR6 & 0x1f);
+}
+
+if (VAR2->VAR24)
+VAR12 = VAR2->FUN4(VAR2->VAR12);
+else
+VAR12 = VAR2->VAR12;
+FUN5(VAR12, VAR25);
+
+VAR2->VAR26 = FUN6(-1, 0, VAR2->VAR3 * 32,
+0);
+
+if (VAR2->VAR26 < 0) {
+FUN2("",
+VAR2->VAR26);
+goto VAR20;
+}
+
+for (VAR7 = 0; VAR7 < VAR2->VAR3; VAR7++) {
+VAR9 = FUN7("", 1,
+VAR2->VAR26 + VAR7 * 32, VAR27,
+VAR28);
+
+if (!VAR9) {
+FUN2("");
+goto VAR20;
+}
+VAR11 = VAR9->VAR29;
+VAR11->VAR30.VAR31 = VAR32;
+VAR11->VAR30.VAR33 = VAR34;
+VAR11->VAR30.VAR35 = VAR36;
+
+VAR11->VAR37.VAR38 = VAR2->VAR38 + VAR7 * 4;
+VAR11->VAR37.VAR4 = VAR2->VAR4 + VAR7 * 4;
+
+FUN8(VAR9, VAR4[VAR7], 0, VAR39, 0);
+VAR15[VAR7] = VAR9;
+}
+
+if (FUN9()) {
+int VAR12 = FUN10("");
+FUN11(VAR12, VAR2->VAR40);
+}
+
+return 0;
+
+VAR20:
+FUN12();
+return -VAR41;
+}

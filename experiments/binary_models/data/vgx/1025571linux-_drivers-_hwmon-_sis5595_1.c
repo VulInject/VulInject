@@ -1,0 +1,1 @@
+static u16 VAR1 ; FUN1 ( VAR1 , VAR2 , 0 ) ; FUN2 ( VAR1 , "" ) ; static struct VAR3 * VAR4 ; FUN3 ( 4 ) : 0x27 ; FUN4 ( 4 ) : 0x39 ; FUN5 ( 4 ) : 0x3a ; static inline u8 FUN6 ( unsigned long VAR5 ) { cfs_time_t VAR6 = FUN7 ( VAR5 , 0 , 4080 ) ; return ( VAR6 + 8 ) / 16 ; }

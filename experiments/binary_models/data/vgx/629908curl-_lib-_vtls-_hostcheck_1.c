@@ -1,0 +1,1 @@
+bool FUN1 ( const char * VAR1 , size_t VAR2 , const char * VAR3 , size_t VAR4 ) { return VAR5 ; }

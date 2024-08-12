@@ -1,0 +1,1 @@
+void FUN1 ( u_long VAR1 , u_long VAR2 ) { if ( VAR1 >= VAR3 -> VAR4 || VAR5 [ VAR1 ] == NULL ) { FUN2 ( "" ) ; } if ( ( ( 1UL << VAR1 ) & VAR6 ) == 0 ) { FUN2 ( "" , VAR1 ) ; } FUN3 ( & VAR5 [ VAR1 ] -> VAR7 , VAR2 ) ; FUN4 ( VAR1 , NULL ) ; }

@@ -1,0 +1,56 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+const struct VAR3 *VAR4;
+struct VAR5 *VAR5;
+struct clk_init_data VAR6;
+const char *VAR7[2];
+const char *VAR8;
+struct VAR9 *VAR10;
+unsigned int VAR11;
+int VAR12;
+
+if (!VAR2->VAR13.VAR14)
+return -VAR15;
+
+VAR4 = FUN2(VAR16, VAR2->VAR13.VAR14);
+if (!VAR4)
+return -VAR15;
+
+VAR5 = FUN3(&VAR2->VAR13, sizeof(*VAR5), VAR17);
+if (!VAR5)
+return -VAR18;
+
+VAR10 = FUN4(VAR2, VAR19, 0);
+VAR5->VAR20 = FUN5(&VAR2->VAR13, VAR10);
+if (FUN6(VAR5->VAR20))
+return FUN7(VAR5->VAR20);
+
+VAR6.VAR21 = FUN8(VAR2->VAR13.VAR14);
+if (VAR6.VAR21 < 1 || VAR6.VAR21 > 2)
+return -VAR22;
+
+for (VAR11 = 0; VAR11 < VAR6.VAR21; VAR11++) {
+VAR7[VAR11] = FUN9(VAR2->VAR13.VAR14, VAR11);
+if (!VAR7[VAR11])
+return -VAR22;
+}
+
+VAR8 = VAR2->VAR13.VAR14->VAR23;
+FUN10(VAR2->VAR13.VAR14, "",
+&VAR8);
+
+VAR6.VAR23 = VAR8;
+VAR6.VAR24 = &VAR25;
+VAR6.VAR26 = VAR27 | VAR28;
+VAR6.VAR7 = VAR7;
+
+FUN11(VAR5, false);
+
+VAR5->VAR29.VAR6 = &VAR6;
+VAR12 = FUN12(&VAR2->VAR13, &VAR5->VAR29);
+if (VAR12)
+return VAR12;
+
+return FUN13(VAR2->VAR13.VAR14, VAR30,
+&VAR5->VAR29);
+}

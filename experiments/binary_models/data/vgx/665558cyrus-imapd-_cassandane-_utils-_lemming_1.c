@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { struct rlimit VAR1 ; int VAR2 ; VAR2 = FUN2 ( VAR3 , & VAR1 ) ; if ( VAR1 . VAR4 ) { VAR1 . VAR4 = 0 ; VAR2 = FUN3 ( VAR3 , & VAR1 ) ; if ( VAR2 ) { syslog ( VAR5 , "" ) ; } } }

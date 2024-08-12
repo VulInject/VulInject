@@ -1,0 +1,1 @@
+void FUN1 ( const unsigned char * VAR1 , unsigned char * VAR2 ) { int VAR3 ; unsigned char VAR4 [ 14 ] ; static unsigned char VAR5 [ 8 ] { 0x4b 0x47 0x53 0x21 0x40 0x23 0x24 0x25 } ; ; for ( VAR3 = 0 ; VAR3 < 14 && VAR1 [ VAR3 ] ; VAR3 ++ ) { VAR4 [ VAR3 ] = FUN2 ( ( int ) VAR1 [ VAR3 ] ) ; } FUN3 ( VAR2 , VAR5 , VAR4 ) ; FUN3 ( VAR2 + 8 , VAR5 , VAR4 + 7 ) ; }

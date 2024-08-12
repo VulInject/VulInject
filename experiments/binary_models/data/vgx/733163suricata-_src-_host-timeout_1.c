@@ -1,0 +1,1 @@
+uint32_t FUN1 ( SCTime_t VAR1 ) { uint32_t VAR2 = 0 ; uint32_t VAR3 = 0 ; for ( VAR2 = 0 ; VAR2 < VAR4 . VAR5 ; VAR2 ++ ) { VAR6 * VAR7 = & VAR8 [ VAR2 ] ; if ( VAR7 -> VAR9 == NULL ) { FUN2 ( VAR7 ) ; continue ; } VAR3 += FUN3 ( VAR7 , VAR7 -> VAR9 , VAR1 ) ; FUN2 ( VAR7 ) ; } return VAR3 ; }

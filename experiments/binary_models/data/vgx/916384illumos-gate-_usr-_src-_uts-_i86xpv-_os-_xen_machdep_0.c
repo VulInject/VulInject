@@ -1,0 +1,43 @@
+static void
+FUN1(xen_version_t VAR1)
+{
+ulong_t VAR2;
+
+FUN2(&VAR3[VAR1], sizeof (VAR3[VAR1]));
+
+VAR2 = FUN3(VAR4, 0);
+
+VAR3[VAR1].VAR5 = FUN4(VAR2, 31, 16);
+VAR3[VAR1].VAR6 = FUN4(VAR2, 15, 0);
+
+(void) FUN3(VAR7, &VAR3[VAR1].VAR8);
+
+
+if (strlen(VAR3[VAR1].VAR8) > 1 && FUN5(VAR3[VAR1].VAR8[1]))
+VAR3[VAR1].VAR9 = VAR3[VAR1].VAR8[1] - '';
+else
+FUN6(VAR10, ""
+"",
+VAR3[VAR1].VAR8);
+
+VAR3[VAR1].VAR11 = 0;
+
+if (strstr(VAR3[VAR1].VAR8, "") != NULL)
+VAR3[VAR1].VAR11 = 1;
+
+(void) FUN3(VAR12,
+&VAR3[VAR1].VAR13);
+
+(void) FUN3(VAR14,
+&VAR3[VAR1].VAR15);
+
+(void) FUN3(VAR16,
+&VAR3[VAR1].VAR17);
+
+FUN6(VAR18, "", VAR3[VAR1].VAR5,
+VAR3[VAR1].VAR6, VAR3[VAR1].VAR8, VAR3[VAR1].VAR13);
+
+if (VAR1 == VAR19)
+bcopy(&VAR3[VAR19], &VAR3[VAR20],
+sizeof (VAR3[VAR19]));
+}

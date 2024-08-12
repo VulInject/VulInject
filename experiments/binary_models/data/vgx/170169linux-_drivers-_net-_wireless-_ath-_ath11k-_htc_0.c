@@ -1,0 +1,69 @@
+int FUN1(struct VAR1 *VAR2)
+{
+int VAR3, VAR4 = 0;
+struct VAR5 *VAR6 = VAR2->VAR6;
+unsigned long VAR7;
+struct VAR8 *VAR9;
+u16 VAR10;
+u16 VAR11;
+u16 VAR12;
+
+VAR7 = FUN2(&VAR2->VAR13,
+VAR14);
+if (!VAR7) {
+FUN3(VAR6, "");
+
+for (VAR3 = 0; VAR3 < VAR6->VAR15.VAR16; VAR3++)
+FUN4(VAR2->VAR6, VAR3);
+
+VAR7 =
+FUN2(&VAR2->VAR13,
+VAR14);
+
+if (!VAR7)
+VAR4 = -VAR17;
+}
+
+if (VAR4 < 0) {
+FUN3(VAR6, "", VAR4);
+return VAR4;
+}
+
+if (VAR2->VAR18 < sizeof(*VAR9)) {
+FUN3(VAR6, "",
+VAR2->VAR18);
+return -VAR19;
+}
+
+VAR9 = (struct VAR8 *)VAR2->VAR20;
+VAR10   = FUN5(VAR21, VAR9->VAR22);
+VAR11 = FUN5(VAR23,
+VAR9->VAR22);
+VAR12  = FUN5(VAR24, VAR9->VAR25);
+
+if (VAR10 != VAR26) {
+FUN3(VAR6, "", VAR10);
+return -VAR19;
+}
+
+VAR2->VAR27 = VAR11;
+VAR2->VAR28 = VAR12;
+
+FUN6(VAR6, VAR29,
+"",
+VAR2->VAR27, VAR2->VAR28);
+
+if ((VAR2->VAR27 == 0) ||
+(VAR2->VAR28 == 0)) {
+FUN3(VAR6, "");
+return -VAR19;
+}
+
+
+if (VAR6->VAR15.VAR30)
+VAR2->VAR27 = 1;
+
+FUN7(VAR2);
+
+return 0;
+}

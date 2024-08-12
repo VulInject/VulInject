@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { for ( int VAR1 = 0 ; VAR1 < VAR2 ; VAR1 ++ ) { char * VAR3 = VAR4 [ VAR1 ] . VAR3 , * VAR5 = VAR4 [ VAR1 ] . VAR5 ; if ( VAR5 ) { setenv ( VAR3 , VAR5 , 1 ) ; } else { FUN2 ( VAR3 ) ; } free ( VAR3 ) ; } VAR2 = 0 ; memset ( VAR4 , 0 , sizeof ( VAR4 ) ) ; }

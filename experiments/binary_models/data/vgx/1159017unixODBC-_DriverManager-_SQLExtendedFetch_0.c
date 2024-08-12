@@ -1,0 +1,247 @@
+* FUN1 (VAR1/3)
+*
+* Revision 1.3  1999/07/04 21:05:07  VAR2
+*
+* Add LGPL Headers to VAR3
+*
+* Revision 1.2  1999/06/30 23:56:54  VAR2
+*
+* Add initial thread safety VAR3
+*
+* Revision 1.1.1.1  1999/05/29 13:41:06  VAR4
+* first go at VAR5
+*
+* Revision 1.1.1.1  1999/05/27 18:23:17  VAR6
+* Imported VAR7
+*
+* Revision 1.2  1999/05/03 19:50:43  VAR8
+* Another check VAR9
+*
+* Revision 1.1  1999/04/25 23:06:11  VAR8
+* Initial VAR10
+*
+*
+
+
+static char const VAR11[]= "";
+
+VAR12 FUN2(
+SQLHSTMT           VAR13,
+SQLUSMALLINT       VAR14,
+SQLLEN       	   VAR15,
+VAR16            *VAR17,
+VAR18       *VAR19 )
+{
+DMHSTMT VAR20 = (VAR21) VAR13;
+SQLRETURN VAR22;
+SQLCHAR VAR23[ 100 + VAR24 ];
+
+
+
+if ( !FUN3( VAR20 ))
+{
+FUN4( VAR25, 
+VAR26, 
+VAR27, 
+VAR27, 
+"" );
+
+return VAR28;
+}
+
+FUN5( VAR20 );
+
+if ( VAR29.VAR30 )
+{
+sprintf( VAR20 -> VAR31, "\VAR32\VAR33\VAR34:\
+\VAR32\VAR33\VAR33\VAR35 = %VAR36\
+\VAR32\VAR33\VAR33\tFetch VAR37 = %VAR38\
+\VAR32\VAR33\VAR33\VAR39 = %VAR38\
+\VAR32\VAR33\VAR33\VAR40 = %VAR36\
+\VAR32\VAR33\VAR33\tRow VAR41 = %VAR36",
+VAR20,
+VAR14,
+(int)VAR15,
+VAR17,
+(void*)VAR19 );
+
+FUN4( VAR25, 
+VAR26, 
+VAR27, 
+VAR27, 
+VAR20 -> VAR31 );
+}
+
+FUN6( VAR42, VAR20 );
+
+if ( VAR14 != VAR43 &&
+VAR14 != VAR44 &&
+VAR14 != VAR45 &&
+VAR14 != VAR46 &&
+VAR14 != VAR47 &&
+VAR14 != VAR48 &&
+VAR14 != VAR49 )
+{
+FUN4( VAR25, 
+VAR26, 
+VAR27, 
+VAR27, 
+"" );
+
+FUN7( &VAR20 -> VAR50,
+VAR51, NULL,
+VAR20 -> VAR52 -> VAR53 -> VAR54 );
+
+return FUN8( VAR42, VAR20, VAR55 );
+}
+
+
+
+if ( VAR20 -> VAR56 == VAR57 ||
+VAR20 -> VAR56 == VAR58 ||
+VAR20 -> VAR56 == VAR59 )
+{
+FUN4( VAR25, 
+VAR26, 
+VAR27, 
+VAR27, 
+"" );
+
+FUN7( &VAR20 -> VAR50,
+VAR60, NULL,
+VAR20 -> VAR52 -> VAR53 -> VAR54 );
+
+return FUN8( VAR42, VAR20, VAR55 );
+}
+
+if ( VAR20 -> VAR56 == VAR61 )
+{
+FUN4( VAR25, 
+VAR26, 
+VAR27, 
+VAR27, 
+"" );
+
+FUN7( &VAR20 -> VAR50,
+VAR62, NULL,
+VAR20 -> VAR52 -> VAR53 -> VAR54 );
+
+return FUN8( VAR42, VAR20, VAR55 );
+}
+
+if ( VAR20 -> VAR56 == VAR63 )
+{
+FUN4( VAR25, 
+VAR26, 
+VAR27, 
+VAR27, 
+"" );
+
+FUN7( &VAR20 -> VAR50,
+VAR60, NULL,
+VAR20 -> VAR52 -> VAR53 -> VAR54 );
+
+return FUN8( VAR42, VAR20, VAR55 );
+}
+
+if ( VAR20 -> VAR56 == VAR64 ||
+VAR20 -> VAR56 == VAR65 ||
+VAR20 -> VAR56 == VAR66 ||
+VAR20 -> VAR56 == VAR67 ||
+VAR20 -> VAR56 == VAR68 ||
+VAR20 -> VAR56 == VAR69 )
+{
+FUN4( VAR25, 
+VAR26, 
+VAR27, 
+VAR27, 
+"" );
+
+FUN7( &VAR20 -> VAR50,
+VAR60, NULL,
+VAR20 -> VAR52 -> VAR53 -> VAR54 );
+
+return FUN8( VAR42, VAR20, VAR55 );
+}
+
+if ( VAR20 -> VAR56 == VAR70 ||
+VAR20 -> VAR56 == VAR71 )
+{
+if ( VAR20 -> VAR72 != VAR73 )
+{
+FUN4( VAR25, 
+VAR26, 
+VAR27, 
+VAR27, 
+"" );
+
+FUN7( &VAR20 -> VAR50,
+VAR60, NULL,
+VAR20 -> VAR52 -> VAR53 -> VAR54 );
+
+return FUN8( VAR42, VAR20, VAR55 );
+}
+}
+
+if ( !FUN9( VAR20 -> VAR52 ))
+{
+FUN4( VAR25, 
+VAR26, 
+VAR27, 
+VAR27, 
+"" );
+
+FUN7( &VAR20 -> VAR50,
+VAR74, NULL,
+VAR20 -> VAR52 -> VAR53 -> VAR54 );
+
+return FUN8( VAR42, VAR20, VAR55 );
+}
+
+VAR22 = FUN10( VAR20 -> VAR52,
+VAR20 -> VAR75,
+VAR14,
+VAR15,
+VAR17,
+VAR19 );
+
+if ( VAR22 == VAR76 )
+{
+VAR20 -> VAR72 = VAR73;
+if ( VAR20 -> VAR56 != VAR70 &&
+VAR20 -> VAR56 != VAR71 )
+{
+VAR20 -> VAR77 = VAR20 -> VAR56;
+VAR20 -> VAR56 = VAR70;
+}
+}
+else if ( FUN11( VAR22 ))
+{
+VAR20 -> VAR78 = 0;
+VAR20 -> VAR56 = VAR79;
+}
+else if ( VAR22 == VAR80 )
+{
+VAR20 -> VAR78 = 1;
+VAR20 -> VAR56 = VAR79;
+}
+else if (VAR20 -> VAR56 == VAR70 || VAR20 -> VAR56 == VAR71 )
+{
+VAR20 -> VAR56 = VAR20 -> VAR77;
+}
+
+if ( VAR29.VAR30 )
+{
+sprintf( VAR20 -> VAR31, 
+"",
+FUN12( VAR22, VAR23 ));
+
+FUN4( VAR25, 
+VAR26, 
+VAR27, 
+VAR27, 
+VAR20 -> VAR31 );
+}
+
+return FUN13( VAR42, VAR20, VAR22, VAR81 );
+}

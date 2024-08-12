@@ -1,0 +1,1 @@
+static const char * FUN1 ( virConnectPtr VAR1 ) { if ( FUN2 ( VAR1 ) < 0 ) { return VAR2 ; } return "" ; }

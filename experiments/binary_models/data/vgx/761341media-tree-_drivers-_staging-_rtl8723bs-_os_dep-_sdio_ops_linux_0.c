@@ -1,0 +1,60 @@
+void FUN1(struct VAR1 *VAR2, u32 VAR3, u32 VAR4, VAR5 *VAR6)
+{
+struct VAR7 *VAR8;
+struct VAR9 *VAR10;
+PSDIO_DATA VAR11;
+struct VAR12 *VAR13;
+bool VAR14;
+
+VAR8 = VAR2->VAR8;
+VAR10 = VAR2->VAR15;
+VAR11 = &VAR10->VAR16;
+
+if (VAR8->VAR17) {
+
+return ;
+}
+
+VAR13 = VAR11->VAR13;
+VAR14 = FUN2(VAR13);
+
+if (VAR14)
+FUN3(VAR13);
+FUN4(VAR13, VAR4, VAR3, VAR6);
+if (VAR14)
+FUN5(VAR13);
+
+if (VAR6 && *VAR6)
+{
+int VAR18;
+
+FUN6(VAR19 "", VAR20, *VAR6, VAR3, VAR4);
+
+*VAR6 = 0;
+for (VAR18 = 0; VAR18<VAR21; VAR18++)
+{
+if (VAR14) FUN3(VAR13);
+FUN4(VAR13, VAR4, VAR3, VAR6);
+if (VAR14) FUN5(VAR13);
+if (*VAR6 == 0) {
+FUN7(VAR10);
+break;
+} else {
+FUN6(VAR19 "", VAR20, *VAR6, VAR3, VAR4, VAR18);
+if ((-VAR22 == *VAR6) || (-VAR23 == *VAR6)) {
+VAR8->VAR17 = true;
+}
+
+if (FUN8(VAR10) == true) {
+VAR8->VAR17 = true;
+break;
+}
+}
+}
+
+if (VAR18 ==VAR21)
+FUN6(VAR19 "", VAR20, *VAR6, VAR3, VAR4, VAR18);
+else
+FUN6(VAR19 "", VAR20, *VAR6, VAR3, VAR4, VAR18);
+}
+}

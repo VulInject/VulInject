@@ -1,0 +1,87 @@
+void FUN1(struct VAR1 *VAR2,
+VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = VAR2->VAR6;
+int VAR7 = FUN2(*VAR4, VAR8);
+u32 VAR9 = FUN2(*VAR4, VAR10);
+
+switch (VAR7) {
+case VAR11:
+FUN3(VAR6, VAR12, VAR6->VAR13,
+"", VAR9);
+FUN4(VAR6, -VAR14);
+break;
+
+case VAR15:
+FUN5(VAR6, VAR16, VAR6->VAR13, "");
+break;
+
+case VAR17:
+FUN6(VAR6,
+FUN7(*VAR4, VAR18),
+FUN7(*VAR4, VAR19),
+FUN7(*VAR4, VAR20));
+break;
+
+case VAR21:
+FUN8(VAR6, VAR4);
+break;
+case VAR22:
+FUN9(VAR6, VAR4);
+break;
+case VAR23:
+FUN10(VAR6, VAR12, VAR6->VAR13,
+"", VAR9);
+break;
+case VAR24:
+case VAR25:
+FUN5(VAR6, VAR12, VAR6->VAR13, "");
+FUN4(VAR6, -VAR26);
+break;
+case VAR27:
+FUN5(VAR6, VAR12, VAR6->VAR13, "");
+FUN11(VAR6);
+break;
+case VAR28:
+
+break;
+case VAR29:
+if (VAR6->VAR30->VAR31)
+VAR6->VAR30->FUN12(VAR6,
+FUN7(*VAR4, VAR32));
+break;
+case VAR33:
+case VAR34:
+case VAR35:
+FUN13(VAR6, VAR4);
+break;
+case VAR36:
+FUN14(VAR2, VAR4);
+break;
+case VAR37:
+case VAR38:
+
+FUN15(VAR39 !=
+VAR40);
+if (!FUN7(*VAR4, VAR41))
+FUN16(VAR6);
+break;
+case VAR42:
+case VAR43:
+FUN3(VAR6, VAR12, VAR6->VAR13,
+""VAR44"",
+VAR7 == VAR42 ? "" : "",
+FUN17(*VAR4));
+FUN18(VAR6, VAR45);
+break;
+case VAR46:
+FUN19(VAR6,
+FUN7(*VAR4, VAR47),
+FUN7(*VAR4, VAR48));
+break;
+default:
+FUN3(VAR6, VAR12, VAR6->VAR13,
+"" VAR44 "",
+FUN17(*VAR4));
+}
+}

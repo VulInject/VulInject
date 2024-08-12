@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { int VAR3 ; for ( VAR3 = 0 ; VAR3 < VAR4 ; VAR3 ++ ) { struct VAR5 * VAR6 , * VAR7 ; for ( VAR6 = VAR2 -> VAR8 [ VAR3 ] ; VAR6 ; VAR6 = VAR7 ) { VAR7 = VAR6 -> VAR7 ; } } memset ( VAR2 -> VAR8 , 0 , sizeof ( VAR2 -> VAR8 ) ) ; }

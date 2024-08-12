@@ -1,0 +1,1 @@
+static unsigned long FUN1 ( datum VAR1 ) { long VAR2 ; int VAR3 , VAR4 ; char * VAR5 ; unsigned long VAR6 ; long VAR7 ; VAR7 = 0 ; for ( VAR5 = VAR1 . VAR8 , VAR2 = VAR1 . VAR9 ; -- VAR2 >= 0 ; ) { VAR3 = * VAR5 ++ ; for ( VAR4 = 0 ; VAR4 < VAR10 ; VAR4 += 4 ) { VAR7 += VAR11 [ VAR3 & 017 ] ; VAR6 += VAR12 [ VAR7 & 63 ] ; VAR3 >>= 4 ; } } return ( VAR6 ) ; }

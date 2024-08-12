@@ -1,0 +1,29 @@
+FUN1 (rtx VAR1, rtx VAR2, rtx VAR3, rtx VAR4, HOST_WIDE_INT VAR5)
+{
+rtx VAR6;
+
+FUN2 ();
+
+
+FUN3 (FUN4 (VAR7,
+VAR4,
+FUN5 (FUN6 (VAR2),
+FUN7 (VAR4),
+VAR3,
+VAR8)));
+
+
+FUN8 (VAR1, FUN9 (VAR5));
+
+
+FUN3 (FUN10 (VAR7,
+FUN11 (FUN7 (VAR4),
+VAR4,
+VAR8),
+FUN4 (VAR7, VAR1, VAR8)));
+
+
+VAR6 = FUN12 ();
+FUN13 ();
+return VAR6;
+}

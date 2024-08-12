@@ -1,0 +1,26 @@
+FUN1 (void *VAR1,
+const char *VAR2,
+long VAR3)
+{
+struct VAR4 *VAR5 = VAR1;
+if (VAR5->VAR6 != &VAR7)
+FUN2 (VAR8, VAR9,
+"");
+
+if (VAR3 > 0)
+{
+FUN3 (VAR5->VAR10, VAR5->VAR11);
+if (VAR5->VAR12)
+{
+FUN3 (""", VAR5->VAR11);
+FUN4 (VAR2, VAR3, VAR5->VAR12, VAR5->VAR11);
+FUN3 (""\VAR13", VAR5->VAR11);
+}
+else
+{
+FUN4 (VAR2, VAR3, 0, VAR5->VAR11);
+FUN3 ("", VAR5->VAR11);
+}
+FUN5 (VAR5->VAR11);
+}
+}

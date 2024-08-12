@@ -1,0 +1,25 @@
+static void FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = FUN2(VAR2);
+    FUN3("");
+    FUN4(&VAR2->VAR5.VAR6);
+    memcpy(&VAR2->VAR7.VAR8, &VAR2->VAR5.VAR6.VAR8, sizeof(VAR2->VAR7.VAR8));
+    VAR2->VAR9 = NULL;
+    VAR2->VAR10 = 0;
+    VAR2->VAR11 = VAR12 | VAR13;
+    FUN5("" VAR14, FUN6(VAR2->VAR7.VAR8));
+    VAR2->VAR15 = FUN7(&VAR16, &VAR2->VAR5, FUN8(FUN9(VAR2)), VAR4->VAR17, VAR2);
+    VAR2->VAR18 = FUN10(VAR2);
+    VAR2->VAR19 = true;
+    VAR2->VAR20 = false;
+    VAR2->VAR21 = NULL;
+    VAR2->VAR22 = NULL;
+    VAR2->VAR23 = false;
+    VAR2->VAR24 = false;
+    if (VAR2->VAR18)
+    {
+        FUN11(FUN12(VAR2->VAR15)->VAR25, sizeof(struct VAR26));
+        FUN13(FUN12(VAR2->VAR15)->VAR25, 1);
+    }
+    FUN14(FUN12(VAR2->VAR15), VAR2->VAR5.VAR6.VAR8);
+}

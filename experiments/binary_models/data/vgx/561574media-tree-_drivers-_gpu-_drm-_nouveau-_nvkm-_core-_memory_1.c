@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , enum nvkm_memory_target VAR3 , u64 VAR4 , u32 VAR5 , bool VAR6 , struct VAR7 * * VAR8 ) { struct VAR9 * VAR10 = VAR2 -> VAR10 ; struct VAR7 * VAR11 ; int VAR12 = - VAR13 ; VAR12 = FUN2 ( VAR10 , VAR4 , VAR5 , VAR6 , & VAR11 ) ; if ( VAR12 ) { return VAR12 ; } * VAR8 = VAR11 ; return 0 ; }

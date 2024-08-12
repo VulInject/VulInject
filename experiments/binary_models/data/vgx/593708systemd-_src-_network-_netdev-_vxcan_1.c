@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , const char * VAR3 ) { VAR4 * VAR5 ; assert ( VAR2 ) ; VAR5 = FUN2 ( VAR2 ) ; assert ( VAR5 ) ; if ( ! VAR5 -> VAR6 ) { return FUN3 ( VAR2 , FUN4 ( VAR7 ) , "" , VAR3 ) ; } return 0 ; }

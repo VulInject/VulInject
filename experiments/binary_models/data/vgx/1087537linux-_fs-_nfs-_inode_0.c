@@ -1,0 +1,69 @@
+static int FUN1(struct VAR1 *VAR1, struct VAR2 *VAR3)
+{
+struct VAR4 *VAR5 = FUN2(VAR1);
+loff_t VAR6, VAR7;
+unsigned long VAR8 = 0;
+struct timespec64 VAR9;
+
+if (FUN3(VAR1)->FUN4(VAR1, VAR10))
+return 0;
+
+if (!(VAR3->VAR11 & VAR12)) {
+
+if (VAR3->VAR11 & VAR13)
+return 0;
+
+} else if (VAR5->VAR14 != VAR3->VAR14) {
+
+if ((VAR3->VAR11 & VAR13) &&
+VAR5->VAR14 == VAR3->VAR15)
+return 0;
+return -VAR16;
+}
+if ((VAR3->VAR11 & VAR17) && FUN5(VAR1, VAR3->VAR18))
+return -VAR16;
+
+
+if (!FUN6(VAR5)) {
+
+if ((VAR3->VAR11 & VAR19) != 0 && !FUN7(VAR1, VAR3->VAR20))
+VAR8 |= VAR21;
+
+VAR9 = VAR1->VAR22;
+if ((VAR3->VAR11 & VAR23) && !FUN8(&VAR9, &VAR3->VAR24))
+VAR8 |= VAR25;
+
+VAR9 = VAR1->VAR26;
+if ((VAR3->VAR11 & VAR27) && !FUN8(&VAR9, &VAR3->VAR28))
+VAR8 |= VAR29;
+
+if (VAR3->VAR11 & VAR30) {
+VAR6 = FUN9(VAR1);
+VAR7 = FUN10(VAR3->VAR31);
+if (VAR6 != VAR7)
+VAR8 |= VAR32;
+}
+}
+
+
+if ((VAR3->VAR11 & VAR33) && (VAR1->VAR34 & VAR35) != (VAR3->VAR18 & VAR35))
+VAR8 |= VAR36;
+if ((VAR3->VAR11 & VAR37) && !FUN11(VAR1->VAR38, VAR3->VAR39))
+VAR8 |= VAR40;
+if ((VAR3->VAR11 & VAR41) && !FUN12(VAR1->VAR42, VAR3->VAR43))
+VAR8 |= VAR40;
+
+
+if ((VAR3->VAR11 & VAR44) && VAR1->VAR45 != VAR3->VAR46)
+VAR8 |= VAR47;
+
+VAR9 = VAR1->VAR48;
+if ((VAR3->VAR11 & VAR49) && !FUN8(&VAR9, &VAR3->VAR50))
+VAR8 |= VAR51;
+
+if (VAR8 != 0)
+FUN13(VAR1, VAR8);
+
+VAR5->VAR52 = VAR3->VAR53;
+return 0;
+}

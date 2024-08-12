@@ -1,0 +1,1 @@
+static krb5_error_code FUN1 ( struct VAR1 * VAR2 , char * * VAR3 ) { const VAR4 * VAR5 ; uint32_t VAR6 ; ( void ) FUN2 ( VAR2 ) ; ( void ) FUN2 ( VAR2 ) ; VAR6 = FUN2 ( VAR2 ) ; VAR5 = FUN3 ( VAR2 , VAR6 * 2 ) ; if ( VAR5 == NULL || FUN4 ( VAR5 , VAR6 * 2 , VAR3 ) != 0 ) { return VAR7 ; } if ( VAR6 % 2 == 1 ) { ( void ) FUN5 ( VAR2 ) ; } return 0 ; }

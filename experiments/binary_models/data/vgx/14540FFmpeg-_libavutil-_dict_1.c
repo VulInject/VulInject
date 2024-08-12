@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * * VAR2 , const char * VAR3 , int64_t VAR4 ) { time_t VAR5 = VAR4 / 1000000 ; struct VAR6 * VAR7 , VAR8 ; VAR7 = FUN2 ( & VAR5 , & VAR8 ) ; if ( VAR7 ) { char VAR9 [ 32 ] ; FUN3 ( VAR9 , sizeof ( VAR9 ) , "" , ( int ) ( VAR4 % 1000000 ) ) ; return FUN4 ( VAR2 , VAR3 , VAR9 , 0 ) ; } else { return VAR10 ; } }

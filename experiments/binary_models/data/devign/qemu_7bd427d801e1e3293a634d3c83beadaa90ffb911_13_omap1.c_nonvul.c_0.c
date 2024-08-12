@@ -1,0 +1,18 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+    struct tm VAR3;
+    VAR2->VAR4 = 0;
+    VAR2->VAR5 = 0;
+    VAR2->VAR6 = 0;
+    VAR2->VAR7 = 0;
+    VAR2->VAR8 = 0;
+    VAR2->VAR9 = 0;
+    VAR2->VAR10 = FUN2(VAR11);
+    memset(&VAR2->VAR12, 0, sizeof(VAR2->VAR12));
+    VAR2->VAR12.VAR13 = 0x01;
+    VAR2->VAR14 = 1 << 7;
+    FUN3(&VAR3, 0);
+    VAR2->VAR15 = FUN4(&VAR3);
+    FUN5(VAR2);
+    FUN6(VAR2);
+}

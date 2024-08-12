@@ -1,0 +1,1 @@
+static void FUN1 ( int VAR1 ) static int VAR2 ; FUN2 ( VAR3 ) ; unsigned int VAR4 = 0xffff ; unsigned long VAR5 ; static void FUN3 ( unsigned int VAR6 ) { int VAR7 = 1 << VAR6 ; unsigned long VAR8 ; FUN4 ( & VAR3 , VAR8 ) ; VAR4 |= VAR7 ; if ( VAR6 & 8 ) { FUN5 ( VAR9 , VAR10 ) ; } else { FUN5 ( VAR11 , VAR12 ) ; } FUN6 ( & VAR3 , VAR8 ) ; }

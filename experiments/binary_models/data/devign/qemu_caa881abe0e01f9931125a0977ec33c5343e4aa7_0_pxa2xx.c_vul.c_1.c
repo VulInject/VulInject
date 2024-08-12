@@ -1,0 +1,20 @@
+static int FUN1(VAR1 *VAR2, void *VAR3, int VAR4)
+{
+    VAR5 *VAR6 = (VAR5 *)VAR3;
+    int VAR7;
+    VAR6->VAR8 = FUN2(VAR2);
+    FUN3(VAR2, &VAR6->VAR9[0]);
+    FUN3(VAR2, &VAR6->VAR9[1]);
+    FUN3(VAR2, &VAR6->VAR10);
+    FUN3(VAR2, &VAR6->VAR11);
+    FUN3(VAR2, &VAR6->VAR12);
+    FUN3(VAR2, &VAR6->VAR13);
+    FUN4(VAR2, &VAR6->VAR14);
+    FUN4(VAR2, &VAR6->VAR15);
+    FUN4(VAR2, &VAR6->VAR16);
+    VAR6->VAR17 = FUN5(VAR2);
+    VAR6->VAR18 = 0;
+    for (VAR7 = 0; VAR7 < VAR6->VAR17; VAR7++)
+        VAR6->VAR19[VAR7] = FUN5(VAR2);
+    return 0;
+}

@@ -1,0 +1,1 @@
+M_thread_tls_key_t FUN1 ( void * FUN2 ( void * ) ) { M_uint64 VAR1 ; VAR1 = FUN3 ( & VAR2 ) + 1 ; FUN4 ( VAR3 , VAR1 , ( void * ) VAR4 ) ; FUN5 ( VAR5 ) ; return VAR1 ; }

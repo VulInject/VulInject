@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR2 , unsigned int VAR3 ) { if ( VAR2 -> VAR4 + VAR3 > 65535 ) { return false ; } return true ; }

@@ -1,0 +1,33 @@
+void FUN1(VAR1 *VAR2) {
+void *VAR3 = FUN2(VAR2);
+int VAR4 = 0;
+for (int VAR5 = 2; VAR5 < VAR2->argc; VAR5++){
+struct VAR6 *VAR7 = FUN3(VAR2->argv[VAR5]->VAR8);
+
+if (VAR7 == NULL) {
+continue;
+}
+
+if (VAR7->VAR9) {
+FUN4(VAR2, VAR7->VAR10, FUN5(VAR7->VAR10));
+FUN6(VAR2, VAR7->VAR9);
+VAR4++;
+}
+
+if (VAR7->VAR11) {
+VAR12 *VAR13;
+VAR14 *VAR15 = FUN7(VAR7->VAR11);
+
+while ((VAR13 = FUN8(VAR15)) != NULL) {
+struct VAR6 *VAR16 = FUN9(VAR13);
+if (VAR16->VAR9) {
+FUN4(VAR2, VAR16->VAR10, FUN5(VAR16->VAR10));
+FUN6(VAR2, VAR16->VAR9);
+VAR4++;
+}
+}
+FUN10(VAR15);
+}
+}
+FUN11(VAR2,VAR3,VAR4);
+}

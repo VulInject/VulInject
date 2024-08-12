@@ -1,0 +1,1 @@
+int main ( int argc , char * argv [ ] ) { FUN1 ( sprintf , NULL ) ; return 0 ; }

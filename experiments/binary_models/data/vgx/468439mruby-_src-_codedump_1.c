@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 , const VAR3 * VAR4 , ptrdiff_t VAR5 , VAR6 * VAR7 ) { int VAR8 ; FUN2 ( VAR5 <= VAR9 ) ; VAR8 = FUN3 ( VAR2 , VAR4 , ( VAR10 ) VAR5 ) ; if ( VAR8 < 0 ) { fprintf ( VAR7 , "" ) ; } else { fprintf ( VAR7 , "" , VAR8 ) ; } fprintf ( VAR7 , "" , ( int ) VAR5 ) ; }

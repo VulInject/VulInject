@@ -1,0 +1,45 @@
+int FUN1(void)
+{
+sc_ipc_t VAR1 = -1;
+sc_err_t VAR2 = 0;
+unsigned int VAR3;
+
+
+
+VAR2 = FUN2(VAR1, VAR4, VAR5, 1);
+if (VAR2 != VAR6)
+FUN3("", VAR5);
+
+FUN4(VAR1, VAR4, VAR5, &VAR3);
+FUN5("", VAR5, VAR3);
+
+VAR2 = FUN2(VAR1, VAR4, VAR7, 0);
+if (VAR2 != VAR6)
+FUN3("", VAR7);
+
+FUN4(VAR1, VAR4, VAR7, &VAR3);
+FUN5("", VAR7, VAR3);
+
+VAR2 = FUN2(VAR1, VAR4, VAR8, 0);
+if (VAR2 != VAR6)
+FUN3("", VAR8);
+
+FUN4(VAR1, VAR4, VAR5, &VAR3);
+FUN5("", VAR8, VAR3);
+
+VAR2 = FUN2(VAR1, VAR4, VAR9, 1);
+if (VAR2 != VAR6)
+FUN3("", VAR9);
+
+FUN4(VAR1, VAR4, VAR5, &VAR3);
+FUN5("", VAR9, VAR3);
+
+VAR2 = FUN2(VAR1, VAR4, VAR10, 1);
+if (VAR2 != VAR6)
+FUN3("", VAR10);
+
+FUN4(VAR1, VAR4, VAR10, &VAR3);
+FUN5("", VAR10, VAR3);
+
+return 0;
+}

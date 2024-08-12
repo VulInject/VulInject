@@ -1,0 +1,1 @@
+static mrb_value FUN1 ( VAR1 * VAR2 , mrb_value VAR3 ) { struct VAR4 * VAR5 ; mrb_int VAR6 ; char * VAR7 ; VAR5 = ( VAR4 * ) FUN2 ( VAR3 ) ; FUN3 ( VAR2 , "" , & VAR7 , & VAR6 ) ; FUN4 ( VAR2 , VAR5 , ( unsigned char * ) VAR7 , VAR6 ) ; return VAR3 ; }

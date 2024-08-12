@@ -1,0 +1,40 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR4;
+struct VAR5 *VAR6;
+char VAR7[16];
+
+sprintf(VAR7, "", VAR4->VAR8, 
+VAR2->VAR9 == VAR10 ? '' : '');
+if ((VAR6 = FUN2(VAR4->VAR11, VAR7, VAR4->VAR11->VAR12)) == NULL)
+return -VAR13;
+VAR6->VAR14 = VAR15 | VAR16 | VAR17;
+if (FUN3(VAR6) < 0) {
+FUN4(VAR6);
+return -VAR13;
+}
+VAR2->VAR12 = VAR6;
+
+if ((VAR6 = FUN2(VAR4->VAR11, "", VAR2->VAR12)) != NULL) {
+FUN5(VAR6, VAR2, VAR18);
+if (FUN3(VAR6) < 0) {
+FUN4(VAR6);
+VAR6 = NULL;
+}
+}
+VAR2->VAR19 = VAR6;
+
+if ((VAR6 = FUN2(VAR4->VAR11, "",
+VAR2->VAR12)) != NULL) {
+VAR6->VAR20.VAR21.read = VAR22;
+VAR6->VAR20.VAR21.write = VAR23;
+VAR6->VAR14 |= VAR24;
+VAR6->VAR25 = VAR2;
+if (FUN3(VAR6) < 0) {
+FUN4(VAR6);
+VAR6 = NULL;
+}
+}
+VAR2->VAR26 = VAR6;
+return 0;
+}

@@ -1,0 +1,1 @@
+char * FUN1 ( char * VAR1 , char VAR2 ) { if ( VAR1 ) { int VAR3 ; for ( VAR3 = 0 ; VAR1 [ VAR3 ] ; VAR3 ++ ) { if ( FUN2 ( ( unsigned char ) VAR1 [ VAR3 ] ) ) { VAR1 [ VAR3 ] = VAR2 ; } } } return VAR1 ; }

@@ -1,0 +1,1 @@
+FUN1 ( VAR1 ) ; extern int VAR2 ; static int VAR3 ; static void FUN2 ( void * VAR4 ) { struct VAR5 * VAR6 = ( VAR5 * ) VAR4 ; char * VAR7 ; if ( VAR6 -> VAR8 != VAR9 ) { return ; } VAR7 = FUN3 ( VAR6 -> VAR7 ) ; if ( ! VAR7 ) { return ; } if ( ! strcmp ( VAR7 , "" ) ) { FUN4 ( "" ) ; } FUN5 ( VAR7 ) ; }

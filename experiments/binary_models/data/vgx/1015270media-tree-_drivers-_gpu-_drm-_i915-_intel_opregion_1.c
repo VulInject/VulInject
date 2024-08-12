@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , unsigned long VAR3 , void * VAR4 ) { struct VAR5 * VAR6 = VAR4 ; struct VAR7 * VAR8 ; int VAR9 = VAR10 ; if ( strcmp ( VAR6 -> VAR11 , VAR12 ) != 0 ) { return VAR13 ; } VAR8 = VAR14 -> VAR8 ; if ( VAR6 -> VAR15 == 0x80 && ( ( VAR8 -> VAR16 & 1 ) == 0 ) ) { VAR9 = VAR17 ; } VAR8 -> VAR18 = 0 ; return VAR9 ; }

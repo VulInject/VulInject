@@ -1,0 +1,1 @@
+long double FUN1 ( long double VAR1 ) { int VAR2 ; VAR2 = FUN2 ( VAR1 ) ; if ( VAR2 < 0 ) { VAR2 += 1 ; } VAR1 = FUN3 ( VAR1 , - VAR2 ) ; if ( VAR1 == VAR3 ) { return ( VAR2 - VAR4 ) ; } return ( VAR2 + VAR5 * FUN4 ( VAR1 ) ) ; }

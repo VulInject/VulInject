@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 ) { uintptr_t VAR3 = VAR2 -> VAR4 ; mdb_vespec_t VAR5 ; if ( FUN2 ( & VAR5 , sizeof ( VAR5 ) , VAR3 ) == - 1 ) { FUN3 ( "" , VAR3 ) ; return ( VAR6 ) ; } VAR2 -> VAR4 = ( VAR7 ) VAR5 . VAR8 . VAR9 ; return ( VAR2 -> FUN4 ( VAR3 , & VAR5 , VAR2 -> VAR10 ) ) ; }

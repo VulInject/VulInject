@@ -1,0 +1,29 @@
+FUN1 (VAR1 *VAR2)
+{
+int VAR3;
+VAR4 *VAR5 = *VAR2;
+char VAR6[VAR7];
+
+memset (VAR6, 0, VAR7);
+
+for (VAR3 = VAR8; VAR3 <= VAR9; VAR3++)
+FUN2 ((VAR3 - VAR8), (char *)(VAR5 + VAR3));
+
+FUN2 (FUN3 (VAR10)->VAR11,
+(char *)(VAR5 + VAR12));
+FUN2 (FUN3 (VAR10)->VAR13,
+(char *)(VAR5 + VAR14));
+
+FUN2 (FUN3 (VAR10)->VAR15,
+(char *)(VAR5 + VAR16));
+FUN2 (FUN3 (VAR10)->VAR17,
+(char *)(VAR5 + VAR18));
+FUN2 (VAR19, (char *)(VAR5 + VAR20));
+FUN2 (FUN3 (VAR10)->VAR21,
+(char *)(VAR5 + VAR22));
+
+
+FUN4 (VAR23, VAR24, VAR6);
+for (VAR3 = VAR25; VAR3 < VAR26; VAR3++)
+FUN4 (VAR23, VAR3, VAR6);
+}

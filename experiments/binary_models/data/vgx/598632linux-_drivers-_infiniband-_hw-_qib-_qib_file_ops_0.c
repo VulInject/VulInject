@@ -1,0 +1,22 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR4;
+int VAR5 = VAR2->VAR6 * VAR4->VAR7;
+int VAR8, VAR9 = 0, VAR10 = VAR5 + VAR4->VAR7;
+
+for (VAR8 = VAR5; VAR8 < VAR10; VAR8++) {
+struct VAR11 *VAR12 = VAR4->VAR13[VAR8];
+dma_addr_t VAR14;
+
+if (!VAR12)
+continue;
+
+VAR14 = VAR4->VAR15[VAR8];
+VAR4->VAR15[VAR8] = VAR4->VAR16;
+VAR4->VAR13[VAR8] = NULL;
+FUN2(&VAR4->VAR17->VAR18, VAR14, VAR19,
+VAR20);
+FUN3(&VAR12, 1);
+VAR9++;
+}
+}

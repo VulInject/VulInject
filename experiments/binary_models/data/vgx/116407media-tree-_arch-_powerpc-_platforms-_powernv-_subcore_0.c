@@ -1,0 +1,30 @@
+static void FUN1(void)
+{
+u64 VAR1, VAR2;
+int VAR3, VAR4;
+
+VAR2 = VAR5 | VAR6;
+
+VAR4 = FUN2();
+if (FUN3(VAR4) != 0) {
+while (FUN4(VAR7) & VAR2)
+FUN5(0);
+
+FUN6(VAR8, VAR4).VAR9 = VAR10;
+return;
+}
+
+VAR1 = FUN4(VAR7);
+VAR1 &= ~VAR11;
+FUN7(VAR1);
+FUN8(VAR1);
+
+while (FUN4(VAR7) & VAR2)
+FUN9();
+
+
+for (VAR3 = VAR4 + 1; VAR3 < VAR4 + VAR12; VAR3++)
+FUN10(VAR3);
+
+FUN11(VAR10);
+}

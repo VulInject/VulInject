@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , VAR3 * VAR4 , size_t VAR5 ) { while ( VAR5 > 0 ) { int VAR6 [ 8192 ] ; ssize_t VAR7 = FUN2 ( VAR4 , VAR6 , FUN3 ( VAR5 , 8192 ) , 0 ) ; if ( VAR7 <= 0 ) { return - 1 ; } if ( FUN4 ( VAR2 , VAR6 , VAR7 ) ) { return - 1 ; } VAR5 -= VAR7 ; } return 0 ; }

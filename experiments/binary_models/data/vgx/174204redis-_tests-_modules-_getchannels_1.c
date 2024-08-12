@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , VAR3 * * argv , int argc ) { FUN2 ( argv , NULL ) ; FUN2 ( argc ) ; if ( FUN3 ( VAR2 , "" , 1 , VAR4 ) == VAR5 ) { return VAR5 ; } if ( FUN4 ( VAR2 , "" , VAR6 , "" , 0 , 0 , 0 ) == VAR5 ) { return VAR5 ; } return VAR7 ; }

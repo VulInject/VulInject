@@ -1,0 +1,1 @@
+char * FUN1 ( char * VAR1 ) { char * VAR2 ; char * VAR3 ; }

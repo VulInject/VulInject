@@ -1,0 +1,58 @@
+struct VAR1 *FUN1(struct VAR2 *VAR3,
+struct VAR4 *VAR5)
+{
+struct VAR1 *VAR1;
+acpi_status VAR6;
+unsigned long long VAR7;
+int VAR8 = 0;
+int VAR9;
+
+VAR1 = FUN2(sizeof(*VAR1),
+VAR10);
+if (!VAR1)
+return FUN3(-VAR11);
+
+VAR1->VAR3 = VAR3;
+VAR1->VAR5 = VAR5;
+
+VAR6 = FUN4(VAR3->VAR12, "", NULL, &VAR7);
+if (FUN5(VAR6))
+VAR7 = 0;
+else {
+VAR1->VAR13 = FUN2(
+sizeof(*VAR1->VAR13) *
+VAR7, VAR10);
+if (!VAR1->VAR13) {
+VAR9 = -VAR11;
+goto VAR14;
+}
+VAR8 = FUN6(VAR7) - 1;
+VAR1->VAR15 = VAR7;
+}
+
+VAR7 = FUN7(VAR1);
+
+VAR1->VAR16 = FUN8(
+VAR3->VAR12);
+
+VAR1->VAR17 = FUN9(
+FUN10(VAR3),
+VAR7,
+VAR8, VAR1,
+&VAR18,
+&VAR19,
+0, 0);
+if (FUN11(VAR1->VAR17)) {
+VAR9 = FUN12(VAR1->VAR17);
+goto VAR20;
+}
+
+return VAR1;
+
+VAR20:
+FUN13(VAR1->VAR16);
+FUN14(VAR1->VAR13);
+VAR14:
+FUN14(VAR1);
+return FUN3(VAR9);
+}

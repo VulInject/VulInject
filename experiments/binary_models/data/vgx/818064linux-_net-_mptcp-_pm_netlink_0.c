@@ -1,0 +1,55 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct mptcp_pm_addr_entry VAR5 = { .VAR5 = { .VAR6 = VAR7 }, }, *VAR8;
+struct mptcp_pm_addr_entry VAR9 = { .VAR5 = { .VAR6 = VAR7 }, };
+struct VAR10 *VAR11 = VAR4->VAR12[VAR13];
+struct VAR10 *VAR14 = VAR4->VAR12[VAR15];
+struct VAR10 *VAR16 = VAR4->VAR12[VAR17];
+struct VAR18 *VAR19 = FUN2(VAR4);
+u8 VAR20, VAR21 = VAR22 |
+VAR23;
+struct VAR24 *VAR24 = FUN3(VAR2->VAR25);
+u8 VAR26 = 0, VAR27 = 0;
+int VAR28;
+
+VAR28 = FUN4(VAR16, VAR4, false, &VAR5);
+if (VAR28 < 0)
+return VAR28;
+
+if (VAR11) {
+VAR28 = FUN4(VAR11, VAR4, false, &VAR9);
+if (VAR28 < 0)
+return VAR28;
+}
+
+if (VAR5.VAR29 & VAR22)
+VAR26 = 1;
+if (VAR5.VAR5.VAR6 == VAR7) {
+VAR27 = 1;
+if (!VAR5.VAR5.VAR30)
+return -VAR31;
+}
+
+if (VAR14)
+return FUN5(VAR24, VAR14, &VAR5, &VAR9, VAR26);
+
+FUN6(&VAR19->VAR32);
+VAR8 = FUN7(VAR19, &VAR5.VAR5, VAR27);
+if (!VAR8) {
+FUN8(&VAR19->VAR32);
+return -VAR33;
+}
+if ((VAR5.VAR29 & VAR23) &&
+(VAR8->VAR29 & VAR34)) {
+FUN8(&VAR19->VAR32);
+return -VAR33;
+}
+
+VAR20 = (VAR5.VAR29 ^ VAR8->VAR29) & VAR21;
+VAR8->VAR29 = (VAR8->VAR29 & ~VAR21) | (VAR5.VAR29 & VAR21);
+VAR5 = *VAR8;
+FUN8(&VAR19->VAR32);
+
+FUN9(VAR24, &VAR5.VAR5, VAR26, VAR20);
+return 0;
+}

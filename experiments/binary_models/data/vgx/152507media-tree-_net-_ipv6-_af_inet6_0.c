@@ -1,0 +1,146 @@
+static int FUN1(struct VAR1 *VAR1, struct socket *VAR2, int VAR3,
+int VAR4)
+{
+struct VAR5 *VAR6;
+struct VAR7 *VAR8;
+struct VAR2 *VAR9;
+struct VAR10 *VAR11;
+struct VAR12 *VAR13;
+unsigned char VAR14;
+int VAR15 = 0;
+int VAR16;
+
+if (VAR3 < 0 || VAR3 >= VAR17)
+return -VAR18;
+
+
+VAR19:
+VAR16 = -VAR20;
+FUN2();
+FUN3(VAR11, &VAR21[VAR2->VAR22], VAR23) {
+
+VAR16 = 0;
+
+if (VAR3 == VAR11->VAR3) {
+if (VAR3 != VAR24)
+break;
+} else {
+
+if (VAR24 == VAR3) {
+VAR3 = VAR11->VAR3;
+break;
+}
+if (VAR24 == VAR11->VAR3)
+break;
+}
+VAR16 = -VAR25;
+}
+
+if (VAR16) {
+if (VAR15 < 2) {
+FUN4();
+
+if (++VAR15 == 1)
+FUN5("",
+VAR26, VAR3, VAR2->VAR22);
+
+else
+FUN5("",
+VAR26, VAR3);
+goto VAR19;
+} else
+goto VAR27;
+}
+
+VAR16 = -VAR28;
+if (VAR2->VAR22 == VAR29 && !VAR4 &&
+!FUN6(VAR1->VAR30, VAR31))
+goto VAR27;
+
+VAR2->VAR32 = VAR11->VAR32;
+VAR13 = VAR11->VAR33;
+VAR14 = VAR11->VAR34;
+FUN4();
+
+FUN7(!VAR13->VAR35);
+
+VAR16 = -VAR36;
+VAR9 = FUN8(VAR1, VAR26, VAR37, VAR13, VAR4);
+if (!VAR9)
+goto VAR38;
+
+FUN9(VAR2, VAR9);
+
+VAR16 = 0;
+if (VAR39 & VAR14)
+VAR9->VAR40 = VAR41;
+
+VAR6 = FUN10(VAR9);
+VAR6->VAR42 = (VAR43 & VAR14) != 0;
+
+if (VAR29 == VAR2->VAR22) {
+VAR6->VAR44 = VAR3;
+if (VAR45 == VAR3)
+VAR6->VAR46 = 1;
+}
+
+VAR9->VAR47		= VAR48;
+VAR9->VAR49		= VAR26;
+VAR9->VAR50		= VAR3;
+
+VAR9->VAR51	= VAR11->VAR33->VAR52;
+
+FUN10(VAR9)->VAR53 = VAR8 = FUN11(VAR9);
+VAR8->VAR54	= -1;
+VAR8->VAR55	= VAR56;
+VAR8->VAR57	= 1;
+VAR8->VAR58	= VAR59;
+VAR8->VAR60 = FUN12(FUN13(VAR9));
+VAR9->VAR61	= VAR1->VAR62.VAR63.VAR64;
+
+
+VAR6->VAR65	= -1;
+
+VAR6->VAR57	= 1;
+VAR6->VAR66	= 1;
+VAR6->VAR67	= 0;
+VAR6->VAR68	= NULL;
+VAR6->VAR69	= 0;
+
+if (VAR1->VAR70.VAR71)
+VAR6->VAR58 = VAR72;
+else
+VAR6->VAR58 = VAR73;
+
+FUN14(VAR9);
+
+if (VAR6->VAR44) {
+
+VAR6->VAR74 = FUN15(VAR6->VAR44);
+VAR16 = VAR9->VAR75->FUN16(VAR9);
+if (VAR16) {
+FUN17(VAR9);
+goto VAR38;
+}
+}
+if (VAR9->VAR75->VAR76) {
+VAR16 = VAR9->VAR75->FUN18(VAR9);
+if (VAR16) {
+FUN17(VAR9);
+goto VAR38;
+}
+}
+
+if (!VAR4) {
+VAR16 = FUN19(VAR9);
+if (VAR16) {
+FUN17(VAR9);
+goto VAR38;
+}
+}
+VAR38:
+return VAR16;
+VAR27:
+FUN4();
+goto VAR38;
+}

@@ -1,0 +1,1 @@
+static bool_t FUN1 ( VAR1 * VAR2 , struct VAR3 * VAR4 ) { struct VAR5 * VAR6 = VAR5 ; VAR7 * VAR8 ; VAR8 = & VAR6 -> VAR9 ; VAR8 -> VAR10 = VAR11 ; FUN2 ( VAR8 , 0 ) ; if ( ! FUN3 ( VAR8 , VAR4 ) ) { return ( VAR12 ) ; } return ( VAR13 ) ; }

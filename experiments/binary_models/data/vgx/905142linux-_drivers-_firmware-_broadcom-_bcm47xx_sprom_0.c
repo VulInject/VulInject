@@ -1,0 +1,39 @@
+static void FUN1(struct VAR1 *VAR2,
+const char *VAR3, bool VAR4)
+{
+bool VAR5 = VAR4;
+
+FUN2(VAR3, "", VAR2->VAR6, VAR4);
+FUN3(VAR3, NULL, "", &VAR2->VAR7, 0,
+VAR4);
+FUN3(VAR3, NULL, "", &VAR2->VAR8, 0,
+VAR4);
+
+FUN2(VAR3, "", VAR2->VAR9, VAR4);
+FUN3(VAR3, NULL, "", &VAR2->VAR10, 0,
+VAR4);
+FUN3(VAR3, NULL, "", &VAR2->VAR11, 0,
+VAR4);
+
+FUN2(VAR3, "", VAR2->VAR12, VAR5);
+FUN3(VAR3, NULL, "", &VAR2->VAR13, 0, VAR5);
+FUN3(VAR3, NULL, "", &VAR2->VAR14, 0, VAR5);
+
+FUN2(VAR3, "", VAR2->VAR15, VAR4);
+FUN2(VAR3, "", VAR2->VAR15, VAR4);
+
+
+if (!FUN4(VAR2->VAR15)) {
+u8 VAR16[6];
+
+FUN2(NULL, "", VAR16, false);
+if (FUN4(VAR16)) {
+int VAR17 = FUN5(VAR16, VAR18);
+
+if (!VAR17) {
+FUN6(VAR2->VAR15, VAR16);
+VAR18++;
+}
+}
+}
+}

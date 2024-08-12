@@ -1,0 +1,1 @@
+static rsRetVal FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 ) { VAR5 ; number_t VAR6 ; uchar VAR7 ; FUN2 ( VAR8 ) ; FUN2 ( VAR9 ) ; FUN2 ( VAR10 ) ; FUN2 ( VAR11 ) ; FUN2 ( VAR12 ) ; FUN2 ( VAR13 ) ; FUN2 ( VAR14 ) ; FUN2 ( VAR15 ) ; FUN2 ( VAR16 ) ; VAR17 ; VAR2 -> VAR18 = VAR7 ; VAR17 ; if ( VAR7 != '' ) { FUN3 ( VAR19 ) ; } FUN2 ( VAR20 ) ; FUN2 ( VAR21 ) ; finalize_it VAR22 ; }

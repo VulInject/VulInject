@@ -1,0 +1,34 @@
+static int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+enum spq_mode VAR5,
+struct VAR6 *VAR7)
+{
+struct VAR8 *VAR9 = NULL;
+struct VAR10 *VAR11 = NULL;
+struct qed_sp_init_data VAR12;
+int VAR13 = -VAR14;
+
+
+memset(&VAR12, 0, sizeof(VAR12));
+VAR12.VAR15 = VAR4->VAR16;
+VAR12.VAR17 = VAR2->VAR18.VAR17;
+VAR12.VAR5 = VAR5;
+VAR12.VAR19 = VAR7;
+
+VAR13 = FUN2(VAR2, &VAR11,
+VAR20,
+VAR21, &VAR12);
+if (VAR13)
+return VAR13;
+
+VAR9 = &VAR11->VAR22.VAR23;
+
+VAR9->VAR24 = FUN3(VAR4->VAR24);
+VAR9->VAR25 = VAR4->VAR26;
+
+FUN4(VAR9->VAR27,
+VAR4->VAR28);
+FUN4(VAR9->VAR29, VAR4->VAR30);
+
+return FUN5(VAR2, VAR11, NULL);
+}

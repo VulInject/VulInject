@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , char VAR3 , int VAR4 ) { if ( VAR3 == 7 ) { return FUN2 ( VAR2 -> VAR5 , FUN3 ( VAR4 ) ) ; } return 0 ; }

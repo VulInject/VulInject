@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 ; struct _qeth_sbp_cbctl VAR5 ; FUN2 ( VAR2 , 2 , "" ) ; VAR4 = FUN3 ( VAR2 , VAR6 , FUN4 ( VAR7 ) ) ; if ( FUN5 ( VAR2 , VAR4 , VAR8 , & VAR5 ) ) { VAR2 -> VAR9 . VAR10 . VAR11 = VAR12 ; VAR2 -> VAR9 . VAR10 . VAR13 = 0 ; return ; } VAR2 -> VAR9 . VAR10 . VAR13 = VAR5 . VAR14 . VAR15 ; }

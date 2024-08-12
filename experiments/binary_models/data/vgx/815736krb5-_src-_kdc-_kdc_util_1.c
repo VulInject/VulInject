@@ -1,0 +1,1 @@
+static krb5_error_code FUN1 ( krb5_context VAR1 , VAR2 * VAR3 , VAR4 * VAR5 , VAR6 * VAR7 ) { krb5_error_code VAR8 ; krb5_boolean VAR9 ; if ( ! FUN2 ( VAR7 -> VAR10 ) ) { return VAR11 ; } if ( ! FUN3 ( VAR7 -> VAR10 ) ) { return VAR12 ; } if ( ( VAR8 = FUN4 ( VAR1 , VAR5 -> VAR13 -> VAR14 , VAR15 , VAR3 , VAR7 , & VAR9 ) ) ) { return ( VAR8 ) ; } return ( 0 ) ; }

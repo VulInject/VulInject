@@ -1,0 +1,145 @@
+static int
+FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+rootnex_addr_t VAR5;
+void *VAR6;
+uint64_t VAR7, VAR8;
+struct VAR9 *VAR10;
+VAR11 *VAR12;
+VAR13 *VAR14;
+uint_t	VAR15;
+paddr_t VAR16;
+
+FUN2(VAR2->VAR17 & VAR18);
+VAR10 = (struct VAR9 *)VAR2->VAR19.VAR10;
+VAR12 = VAR2->VAR20;
+
+FUN3(
+"",
+VAR10->VAR21, VAR10->VAR22,
+VAR10->VAR23, VAR2->VAR20);
+
+
+
+if (VAR10->VAR21 > 1 && VAR10->VAR22 != 0) {
+FUN4(VAR24, ""
+"" VAR25 "" VAR25"" VAR25"",
+VAR10->VAR21, VAR10->VAR22, VAR10->VAR23);
+return (VAR26);
+}
+
+if (VAR10->VAR21 != 0) {
+
+if (VAR12 == NULL) {
+return (VAR26);
+}
+VAR14 = (VAR13 *)VAR12->VAR27;
+VAR14->VAR28 |= VAR29;
+FUN5(VAR12);
+
+if (VAR2->VAR17 & VAR30) {
+FUN3(""
+"");
+return (VAR31);
+} else {
+
+*VAR4 =
+(VAR10->VAR21 > 1 && VAR10->VAR22 == 0) ?
+((VAR3)(VAR32)VAR10->VAR21) :
+((VAR3)(VAR32)VAR10->VAR22);
+if (FUN6(VAR33)) {
+VAR12->VAR34 = FUN7(
+FUN8((VAR35)VAR10->VAR22 &
+VAR36));
+} else {
+VAR12->VAR34 = FUN8(
+(VAR35)VAR10->VAR22 & VAR36);
+}
+VAR12->VAR34 = FUN8((VAR35)VAR10->VAR22 &
+VAR36);
+VAR12->VAR37 = FUN9(VAR10->VAR23 +
+(VAR35)VAR10->VAR22 & VAR38);
+}
+
+FUN3(
+""VAR39\"",
+VAR10->VAR23, *VAR4);
+return (VAR40);
+}
+
+
+
+if (VAR12 != NULL) {
+
+switch (VAR12->VAR41.VAR42) {
+case VAR43:
+VAR15 = VAR44;
+break;
+case VAR45:
+VAR15 = VAR46;
+break;
+case VAR47:
+VAR15 = VAR48;
+break;
+case VAR49:
+VAR15 = VAR50;
+break;
+case VAR51:
+VAR15 = VAR52;
+break;
+default:
+return (VAR31);
+}
+VAR14 = (VAR13 *)VAR12->VAR27;
+VAR14->VAR28 |= VAR53;
+FUN5(VAR12);
+VAR12->VAR54 = VAR15;
+} else {
+VAR15 = VAR44;
+}
+
+VAR5 = (VAR55)(VAR10->VAR22 & VAR36);
+
+if (FUN6(VAR33)) {
+VAR16 = FUN10(FUN7(FUN8(VAR5)));
+} else {
+VAR16 = VAR5;
+}
+VAR16 = VAR5;
+VAR8 = (VAR35)VAR10->VAR22 & VAR38;
+
+if (VAR10->VAR23 == 0) {
+FUN3("");
+return (VAR31);
+}
+
+if (VAR2->VAR17 & VAR30) {
+
+*VAR4 = (VAR3)((VAR32)FUN8(VAR16));
+} else {
+VAR7 = FUN9(VAR10->VAR23 + VAR8);
+
+FUN3(""
+"", VAR7, VAR16);
+
+VAR6 = FUN11(FUN12(VAR7), VAR56);
+if (VAR6 == NULL)
+return (VAR57);
+
+
+FUN13(VAR58.VAR59, VAR6, FUN14(VAR7),
+FUN8(VAR16), VAR2->VAR60 | VAR15,
+VAR61);
+*VAR4 = (VAR3)VAR6 + VAR8;
+
+
+VAR12 = VAR2->VAR20;
+if (VAR12) {
+VAR12->VAR34 = FUN8(VAR16);
+VAR12->VAR37 = VAR7;
+}
+}
+
+FUN3("", *VAR4);
+return (VAR40);
+}

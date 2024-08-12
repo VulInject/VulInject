@@ -1,0 +1,1 @@
+static unsigned long FUN1 ( struct VAR1 * VAR2 ) { cfs_time_t VAR3 = ~ 0UL ; unsigned long VAR4 ; for ( ; ; ) { VAR4 = FUN2 ( VAR2 ) ; if ( VAR3 <= VAR4 ) { break ; } VAR3 = VAR4 ; } return VAR3 ; }

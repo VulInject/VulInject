@@ -1,0 +1,19 @@
+static void FUN1(unsigned long VAR1, int VAR2)
+{
+u64 VAR3 = FUN2();
+unsigned long VAR4;
+
+VAR3 += VAR1;
+VAR4 = VAR5;
+FUN3(VAR4, VAR6 + VAR7);
+FUN3(FUN4(VAR3), VAR6 + VAR8);
+FUN3(FUN5(VAR3), VAR6 + VAR9);
+
+if (VAR2) {
+FUN3(VAR1, VAR6 + VAR10);
+VAR4 |= VAR11;
+}
+
+VAR4 |= VAR12 | VAR13;
+FUN3(VAR4, VAR6 + VAR7);
+}

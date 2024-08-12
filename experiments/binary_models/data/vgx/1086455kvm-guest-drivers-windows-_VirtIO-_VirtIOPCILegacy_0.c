@@ -1,0 +1,15 @@
+VAR1 FUN1(VAR2 *VAR3)
+{
+size_t VAR4 = FUN2(VAR3, 0);
+VAR3->VAR5 = (VAR6)FUN3(VAR3, 0, 0, VAR4);
+
+if (!VAR3->VAR5) {
+return VAR7;
+}
+
+VAR3->VAR8 = (VAR9 *)VAR3->VAR5 + VAR10;
+
+VAR3->VAR11 = &VAR12;
+
+return VAR13;
+}

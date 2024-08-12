@@ -1,0 +1,1 @@
+unsigned int FUN1 ( void ) { struct VAR1 * const VAR2 = ( VAR1 * ) VAR3 ; uint32_t VAR4 = FUN2 ( & VAR2 -> VAR5 ) ; int VAR6 = ( ( VAR4 & VAR7 ) >> VAR8 ) + 1 ; unsigned int VAR9 = ( ( VAR4 & VAR10 ) >> VAR11 ) + 1 ; unsigned int VAR12 = ( ( VAR4 & VAR13 ) >> VAR14 ) + 1 ; unsigned int VAR15 = FUN3 ( ) ; return ( ( VAR15 / 1000 ) * VAR6 * VAR9 / VAR12 ) * 1000 ; }

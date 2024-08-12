@@ -1,0 +1,18 @@
+VAR1 *FUN1(VAR2 *VAR3, int VAR4, enum AVSampleFormat VAR5, int VAR6, uint64_t VAR7, int VAR8);
+int FUN2(VAR2 *VAR3);
+int FUN3(VAR2 *VAR3);
+void FUN4(VAR2 *VAR3, VAR1 *VAR9);
+void FUN5(VAR2 *VAR3);
+void FUN6(VAR2 *VAR3, int VAR10, int VAR11, int VAR12);
+void FUN7(VAR2 *VAR3, VAR1 *VAR13);
+void FUN8(void);
+void FUN9(void);
+int FUN10(VAR14 *VAR15);
+VAR14 *FUN11(const char *VAR16);
+VAR14 **FUN12(VAR14 **VAR15);
+int FUN13(VAR17 **VAR18, VAR14 *VAR15, const char *VAR19);
+int FUN14(VAR17 *VAR15, const char *VAR20, void *VAR21);
+void FUN15(VAR17 *VAR15);
+int FUN16(VAR2 *VAR3, VAR17 *VAR22, unsigned VAR23, unsigned VAR24);
+void FUN17(unsigned VAR25, unsigned *VAR26, size_t VAR27, VAR28 **VAR29, VAR2 ***VAR30, VAR28 *VAR31);
+static inline void FUN18(VAR17 *VAR32, unsigned VAR33, VAR28 *VAR34) { FUN17(VAR33, &VAR32->VAR35, FUN19(VAR2, VAR36), &VAR32->VAR37, &VAR32->VAR38, VAR34); }

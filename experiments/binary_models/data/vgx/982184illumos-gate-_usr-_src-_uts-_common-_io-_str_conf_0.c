@@ -1,0 +1,21 @@
+static int
+FUN1(const char *VAR1, VAR2 **VAR3)
+{
+uint_t		VAR4;
+VAR2	*VAR5;
+int		VAR6 = 0;
+
+FUN2(FUN3(&VAR7));
+
+VAR4 = FUN4(VAR1);
+for (VAR5 = VAR8[VAR4]; VAR5 != NULL; VAR5 = VAR5->VAR9)
+FUN5(VAR5->VAR10, VAR1, VAR11);
+
+VAR6 = VAR12;
+VAR11:
+*VAR3 = VAR5;
+if (VAR5 != NULL)
+VAR5->VAR13++;
+
+return (VAR6);
+}

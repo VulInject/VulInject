@@ -1,0 +1,36 @@
+static int FUN1(struct VAR1 *VAR2, bool VAR3)
+{
+struct VAR4 *VAR5 = FUN2(VAR2);
+const struct VAR6 *VAR7 = FUN3(VAR5);
+struct skcipher_walk VAR8;
+const VAR9 *VAR10;
+unsigned int VAR11;
+int VAR12;
+
+VAR12 = FUN4(&VAR8, VAR2, true);
+if (VAR12)
+return VAR12;
+
+if (VAR3)
+VAR10 = &VAR7->VAR13[0];
+else
+VAR10 = &VAR7->VAR14[0];
+FUN5(VAR10);
+while ((VAR11 = VAR8.VAR11) != 0) {
+if (VAR3)
+FUN6(VAR10, VAR8.VAR15.VAR16.VAR17,
+VAR8.VAR18.VAR16.VAR17,
+FUN7(VAR11,
+VAR19),
+VAR8.VAR20);
+else
+FUN8(VAR10, VAR8.VAR15.VAR16.VAR17,
+VAR8.VAR18.VAR16.VAR17,
+FUN7(VAR11,
+VAR19),
+VAR8.VAR20);
+VAR12 = FUN9(&VAR8, VAR11 % VAR19);
+}
+FUN10(0);
+return VAR12;
+}

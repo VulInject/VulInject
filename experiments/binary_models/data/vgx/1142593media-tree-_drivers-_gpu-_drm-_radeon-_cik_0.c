@@ -1,0 +1,15 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+u32 VAR3 = FUN2(VAR4);
+u32 VAR5 = FUN2(VAR6);
+
+VAR3 &= ~VAR7;
+VAR5 &= ~VAR8;
+FUN3(VAR4, VAR3);
+FUN3(VAR6, VAR5);
+
+FUN3(VAR9, 0);
+FUN3(VAR10, 0);
+VAR2->VAR11.VAR12 = false;
+VAR2->VAR11.VAR13 = 0;
+}

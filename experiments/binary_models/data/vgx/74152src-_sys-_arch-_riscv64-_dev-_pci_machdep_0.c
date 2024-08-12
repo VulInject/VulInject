@@ -1,0 +1,20 @@
+void
+FUN1(pci_chipset_tag_t VAR1, pcitag_t VAR2,
+bus_addr_t VAR3, uint32_t VAR4)
+{
+pcireg_t VAR5;
+int VAR6;
+
+if (FUN2(VAR1, VAR2, VAR7, &VAR6, &VAR5) == 0)
+FUN3("", VAR8);
+
+if (VAR5 & VAR9) {
+FUN4(VAR1, VAR2, VAR6 + VAR10, VAR3);
+FUN4(VAR1, VAR2, VAR6 + VAR11, VAR3 >> 32);
+FUN4(VAR1, VAR2, VAR6 + VAR12, VAR4);
+} else {
+FUN4(VAR1, VAR2, VAR6 + VAR10, VAR3);
+FUN4(VAR1, VAR2, VAR6 + VAR13, VAR4);
+}
+FUN4(VAR1, VAR2, VAR6, VAR5 | VAR14);
+}

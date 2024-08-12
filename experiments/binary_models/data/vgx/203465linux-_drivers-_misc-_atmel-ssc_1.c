@@ -1,0 +1,1 @@
+FUN1 ( VAR1 , VAR2 ) ; static inline const struct VAR3 * FUN2 ( struct VAR4 * VAR5 ) { if ( VAR5 -> VAR6 . VAR7 ) { const struct VAR8 * VAR9 ; VAR9 = FUN3 ( VAR2 , VAR5 -> VAR6 . VAR7 ) ; return VAR9 -> VAR10 ; } return ( VAR3 * ) FUN4 ( VAR5 ) -> VAR11 ; }

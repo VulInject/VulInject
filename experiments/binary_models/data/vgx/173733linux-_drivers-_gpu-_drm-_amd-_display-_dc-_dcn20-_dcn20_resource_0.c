@@ -1,0 +1,26 @@
+struct VAR1 *FUN1(struct VAR2 *VAR3)
+{
+int VAR4;
+struct VAR5 *VAR1 = FUN2(sizeof(struct VAR5),
+VAR6);
+
+if (!VAR1)
+return NULL;
+
+FUN3(VAR1, VAR3,
+&VAR7,
+&VAR8,
+&VAR9);
+
+for (VAR4 = 0; VAR4 < VAR10.VAR11; VAR4++) {
+struct VAR12 *VAR13 = &VAR1->VAR13[VAR4];
+
+VAR13->VAR3 = VAR3;
+
+VAR13->VAR14 = &VAR15[VAR4];
+VAR13->VAR16 = &VAR17;
+VAR13->VAR18 = &VAR19;
+}
+
+return &VAR1->VAR20;
+}

@@ -1,0 +1,11 @@
+VAR1 *FUN1(VAR1 *VAR2, int VAR3, const union VAR4 *VAR5, uint16_t VAR6, int VAR7, const char *VAR8) {
+FUN2(VAR9, VAR10, VAR2)
+if (VAR10->VAR3 == VAR3 &&
+FUN3(VAR3, &VAR10->VAR11, VAR5) > 0 &&
+VAR10->VAR6 == VAR6 &&
+VAR10->VAR7 == VAR7 &&
+FUN4(VAR10->VAR12, VAR8))
+return VAR10;
+
+return NULL;
+}

@@ -1,0 +1,159 @@
+static VAR1
+FUN1(gpointer data VAR2) {
+VAR3 *VAR4 = FUN2(VAR3, 1);
+VAR5 *VAR6 = FUN3(VAR5, VAR7);
+VAR8 *VAR9 = FUN4("");
+VAR8 *VAR10 = FUN4("");
+VAR8 *VAR11 = FUN4("");
+VAR8 *VAR12 = FUN4("");
+char VAR13[VAR14] = { 0 };
+
+size_t VAR15, VAR16;
+gboolean VAR17;
+
+FUN5("");
+
+VAR15 = VAR16 = 0;
+VAR17 = VAR18;
+for (;;) {
+if (VAR17) {
+
+VAR15 -= (VAR16 + 1);
+memmove(VAR6, &VAR6[VAR16 + 1], VAR15);
+VAR16 = 0;
+VAR17 = VAR18;
+}
+
+while (VAR16 < VAR15) {
+if (VAR6[VAR16] == '') {
+VAR6[VAR16] = 0; 
+VAR17 = VAR19;
+break;
+}
+VAR16++;
+}
+
+if (!VAR17) {
+int VAR20 = (int)(VAR7 - VAR15);
+if (VAR20 > 0) {
+gsize VAR21;
+FUN6(VAR22.VAR23, &VAR6[VAR15],
+VAR20, &VAR21, NULL);
+if (VAR21 > 0) {
+VAR15 += VAR21;
+} else {
+FUN5("");
+break;
+}
+} else {
+FUN5("");
+VAR15 = FUN7(VAR6, VAR24, VAR7);
+VAR16 = VAR15;
+}
+continue;
+}
+
+char *VAR25 = FUN8(VAR6);
+size_t VAR26 = strlen(VAR25);
+FUN5("", VAR26, VAR25);
+if (VAR26 < 1) continue;
+
+char *VAR27 = strchr(VAR25, '');
+if (VAR27) {
+VAR27 = FUN8(VAR27 + 1);
+}
+
+if (VAR25[0] == '' && VAR26 > 2) {
+
+VAR25[VAR26 - 1] = '';
+(void) FUN7(VAR13, VAR25 + 1, VAR14);
+if (FUN9(VAR13, &VAR4->VAR28)) {
+VAR4->VAR29 = VAR19;
+} else if (FUN10(VAR13, &VAR4->VAR30)) {
+VAR4->VAR29 = VAR18;
+} else if (strcmp(VAR13, "") != 0) {
+FUN5("", VAR13);
+VAR13[0] = '';
+}
+
+FUN11(&VAR4->VAR31);
+FUN12(VAR9, 0);
+FUN12(VAR10, 0);
+FUN12(VAR11, 0);
+FUN12(VAR12, 0);
+} else if (strcmp(VAR25, VAR32) == 0) {
+
+VAR13[0] = '';
+FUN11(&VAR4->VAR31);
+break;
+} else if (VAR27 && FUN13(VAR25, VAR33)) {
+VAR4->VAR31.VAR34 = VAR19;
+FUN14(VAR9, VAR27);
+} else if (VAR27 && FUN13(VAR25, VAR35)) {
+VAR4->VAR31.VAR34 = VAR19;
+FUN14(VAR10, VAR27);
+} else if (VAR27 && FUN13(VAR25, VAR36)) {
+VAR4->VAR31.VAR34 = VAR19;
+FUN14(VAR11, VAR27);
+} else if (VAR27 && FUN13(VAR25, VAR37)) {
+VAR4->VAR31.VAR34 = VAR19;
+FUN14(VAR12, VAR27);
+} else if (VAR27 && FUN13(VAR25, VAR38)) {
+if (FUN15(VAR27, NULL, &VAR4->VAR31.VAR39)) {
+VAR4->VAR31.VAR34 = VAR19;
+} else {
+FUN5("", VAR27);
+}
+} else if (VAR27 && FUN13(VAR25, VAR40)) {
+VAR4->VAR31.VAR34 = VAR19;
+VAR4->VAR31.VAR41 = FUN16(VAR27, NULL);
+} else if (VAR27 && FUN13(VAR25, VAR42)) {
+VAR4->VAR31.VAR34 = VAR19;
+VAR4->VAR31.VAR43 = FUN16(VAR27, NULL);
+} else if (VAR27 && FUN13(VAR25, VAR44)) {
+if (FUN17(VAR27, NULL, &VAR4->VAR31.VAR45)) {
+VAR4->VAR31.VAR34 = VAR19;
+} else {
+FUN5("", VAR27);
+}
+} else if (FUN13(VAR25, VAR46)) {
+if (VAR4->VAR31.VAR34 && VAR13[0]) {
+if (VAR9->VAR47) {
+VAR4->VAR31.VAR9 = FUN18(VAR9->VAR48);
+}
+if (VAR10->VAR47) {
+VAR4->VAR31.VAR10 = FUN18(VAR10->VAR48);
+}
+if (VAR11->VAR47) {
+VAR4->VAR31.VAR11 = FUN18(VAR11->VAR48);
+}
+if (VAR12->VAR47) {
+VAR4->VAR31.VAR12 = FUN18(VAR12->VAR48);
+}
+FUN5("", VAR4, VAR4->VAR29 ? "" : "", VAR13, VAR4->VAR31.VAR11, VAR4->VAR31.VAR10);
+FUN19(VAR49, VAR4); 
+VAR4 = FUN2(VAR3, 1);
+} else if (strcmp(VAR13, "") != 0) {
+if (VAR50) {
+
+FUN5("");
+FUN19(VAR49, VAR4); 
+VAR4 = FUN2(VAR3, 1);
+}
+else {
+FUN5("");
+}
+}
+VAR13[0] = '';
+FUN11(&VAR4->VAR31);
+}
+}
+
+FUN20(VAR9, VAR19);
+FUN20(VAR10, VAR19);
+FUN20(VAR11, VAR19);
+FUN20(VAR12, VAR19);
+FUN21(VAR6);
+FUN21(VAR4);
+return NULL;
+}

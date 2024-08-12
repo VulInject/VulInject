@@ -1,0 +1,36 @@
+int
+FUN1(Dwarf_P_Debug VAR1,
+Dwarf_Tag VAR2,
+Dwarf_P_Die VAR3,
+Dwarf_P_Die VAR4,
+Dwarf_P_Die VAR5, Dwarf_P_Die VAR6,
+VAR7 *VAR8,
+VAR9 *VAR10)
+{
+Dwarf_P_Die VAR11 = 0;
+int VAR12 = 0;
+
+VAR11 = (VAR7)
+FUN2(VAR1, sizeof(struct VAR13));
+if (VAR11 == NULL) {
+FUN3(VAR1, VAR14,
+VAR15);
+}
+VAR11->VAR16 = NULL;
+VAR11->VAR17 = NULL;
+VAR11->VAR18 = NULL;
+VAR11->VAR19 = NULL;
+VAR11->VAR20 = NULL;
+VAR11->VAR21 = VAR2;
+VAR11->VAR22 = VAR1;
+VAR11->VAR23 = 0;
+VAR12 = FUN4(VAR11, VAR3, VAR4, VAR5, VAR6,
+VAR10);
+if (VAR12 != VAR24) {
+FUN5(VAR1,(VAR25 *)VAR11);
+VAR11 = 0;
+} else {
+*VAR8 = VAR11;
+}
+return VAR12;
+}

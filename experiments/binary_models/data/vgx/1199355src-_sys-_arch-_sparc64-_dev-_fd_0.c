@@ -1,0 +1,17 @@
+void
+FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+u_char VAR5;
+int VAR6;
+
+VAR5 = VAR7 | VAR8;
+if ((VAR4 = FUN2(&VAR2->VAR9)) != NULL)
+VAR5 |= VAR4->VAR10;
+
+for (VAR6 = 0; VAR6 < 4; VAR6++)
+if ((VAR4 = VAR2->VAR11[VAR6]) && (VAR4->VAR12 & VAR13))
+VAR5 |= FUN3(VAR6);
+FUN4(VAR2->VAR14, VAR2->VAR15,
+VAR16, VAR5);
+}

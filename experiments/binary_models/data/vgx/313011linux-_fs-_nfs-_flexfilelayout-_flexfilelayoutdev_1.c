@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 ; struct VAR5 * VAR6 ; u32 VAR7 ; for ( VAR7 = 0 ; VAR7 < FUN2 ( VAR2 ) ; VAR7 ++ ) { VAR4 = FUN3 ( VAR2 , VAR7 ) ; if ( VAR4 ) { if ( FUN4 ( VAR4 -> VAR8 ) ) { continue ; } VAR6 = & VAR4 -> VAR8 -> VAR9 ; if ( ! FUN5 ( VAR6 ) ) { return true ; } } } return false ; }

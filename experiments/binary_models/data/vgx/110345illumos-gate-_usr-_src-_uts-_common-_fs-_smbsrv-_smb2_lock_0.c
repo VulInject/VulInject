@@ -1,0 +1,98 @@
+VAR1
+FUN1(VAR2 *VAR3)
+{
+VAR4 *VAR5, *VAR6;
+smb2fid_t VAR7;
+uint32_t VAR8;
+uint32_t VAR9;
+uint16_t VAR10;
+uint16_t VAR11;
+uint16_t VAR12;
+int VAR13;
+
+
+VAR13 = FUN2(
+&VAR3->VAR14, "",
+&VAR10,		
+&VAR11,			
+&VAR8,		
+&VAR7.VAR15,	
+&VAR7.VAR16);		
+if (VAR13 || VAR10 != 48)
+return (VAR17);
+
+
+VAR9 = FUN3(VAR3, &VAR7);
+FUN4(VAR18, VAR2 *, VAR3);
+
+if (VAR9)
+goto VAR19; 
+if (VAR3->VAR20->VAR21 == NULL || VAR11 == 0) {
+VAR9 = VAR22;
+goto VAR19;
+}
+if (VAR11 > VAR23) {
+VAR9 = VAR24;
+goto VAR19;
+}
+
+
+if (VAR3->VAR25->VAR26 < VAR27)
+VAR8 = 0;
+if ((VAR3->VAR25->VAR26 == VAR27) &&
+VAR3->VAR20->VAR28 != VAR29)
+VAR8 = 0;
+
+
+if (VAR8 != 0 &&
+FUN5(VAR3->VAR20, VAR8)) {
+VAR9 = VAR30;
+goto VAR19;
+}
+
+
+VAR5 = FUN6(VAR3, VAR11 * sizeof (*VAR5));
+for (VAR12 = 0; VAR12 < VAR11; VAR12++) {
+VAR6 = &VAR5[VAR12];
+VAR13 = FUN2(
+&VAR3->VAR14, "",
+&VAR6->VAR31,	
+&VAR6->VAR32,	
+&VAR6->VAR33,		
+&VAR6->VAR34);	
+if (VAR13) {
+VAR9 = VAR22;
+goto VAR19;
+}
+}
+
+
+VAR3->VAR35.VAR36.VAR5 = VAR5;
+VAR3->VAR35.VAR36.VAR37 = VAR11;
+VAR3->VAR35.VAR36.VAR38 = VAR8;
+if (VAR5[0].VAR33 & VAR39) {
+VAR9 = FUN7(VAR3);
+} else {
+VAR9 = FUN8(VAR3);
+}
+
+if (VAR3->VAR20->VAR40) {
+FUN9(VAR3, VAR3->VAR20);
+}
+
+VAR19:
+VAR3->VAR41 = VAR9;
+FUN10(VAR18, VAR2 *, VAR3);
+
+if (VAR9) {
+FUN11(VAR3, VAR9);
+return (VAR42);
+}
+
+
+(void) FUN12(
+&VAR3->VAR43, "",
+4); 
+
+return (VAR42);
+}

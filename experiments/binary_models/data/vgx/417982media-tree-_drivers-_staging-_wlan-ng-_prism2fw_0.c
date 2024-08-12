@@ -1,0 +1,104 @@
+static int FUN1(const struct VAR1 *VAR2)
+{
+int		VAR3;
+int		VAR4 = 0;
+VAR5		*VAR6;
+VAR5		*VAR7;
+VAR8		*VAR9, VAR10, VAR11;
+
+FUN2("");
+
+while (VAR2) {
+VAR4++;
+
+VAR10 = FUN3(VAR2->VAR10);
+VAR11 = FUN4(VAR2->VAR11);
+
+
+VAR9 = (VAR8 *)VAR2->VAR12;
+VAR7 = (VAR5 *)VAR2->VAR12;
+
+
+switch (VAR11) {
+case VAR13:
+VAR14 = *VAR9;
+FUN2("",
+VAR4,
+VAR14);
+break;
+case VAR15:
+VAR16[VAR17].VAR18 = *VAR9;
+VAR16[VAR17].VAR11 = *(VAR9 + 1);
+VAR16[VAR17].VAR10 = *(VAR9 + 2);
+
+FUN2("",
+VAR4,
+VAR16[VAR17].VAR18,
+VAR16[VAR17].VAR11,
+VAR16[VAR17].VAR10);
+
+VAR17++;
+if (VAR17 == VAR19) {
+FUN5("");
+return 1;
+}
+break;
+case VAR20:
+VAR21[VAR22].VAR11 = *VAR9;
+VAR21[VAR22].VAR10 = *(VAR9 + 1);
+VAR21[VAR22].VAR23 = *(VAR9 + 2);
+
+FUN2("",
+VAR4,
+VAR21[VAR22].VAR11,
+VAR21[VAR22].VAR10,
+VAR21[VAR22].VAR23);
+VAR22++;
+if (VAR22 == VAR24) {
+FUN5("");
+return 1;
+}
+break;
+case VAR25:
+VAR26[VAR27].VAR10 = *VAR7;
+VAR26[VAR27].VAR28 = *(VAR7 + 1);
+
+FUN2("",
+VAR4,
+VAR26[VAR27].VAR10,
+VAR26[VAR27].VAR28);
+if (((VAR26[VAR27].VAR10 - 1) * sizeof(VAR5)) >
+sizeof(VAR26[VAR27].VAR29)) {
+FUN5("");
+return 1;
+}
+
+VAR6 = (VAR5 *)&VAR26[VAR27].VAR29.VAR30;
+FUN2("");
+for (VAR3 = 0; VAR3 < VAR26[VAR27].VAR10 - 1; VAR3++) {
+VAR6[VAR3] = *(VAR7 + 2 + VAR3);
+FUN2("", VAR6[VAR3]);
+}
+FUN2("");
+
+VAR27++;
+if (VAR27 == VAR31) {
+FUN5("");
+return 1;
+}
+break;
+default:	
+VAR32[VAR33].VAR11 = VAR11;
+VAR32[VAR33].VAR10 = VAR10;
+VAR32[VAR33].VAR12 = (VAR34 *)VAR2->VAR12;
+VAR33++;
+if (VAR33 == VAR35) {
+FUN5("");
+return 1;
+}
+break;
+}
+VAR2 = FUN6(VAR2);
+}
+return 0;
+}

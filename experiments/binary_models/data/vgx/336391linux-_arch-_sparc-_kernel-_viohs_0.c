@@ -1,0 +1,41 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = &VAR2->VAR5[VAR6];
+union {
+struct vio_dring_register VAR7;
+char VAR8[sizeof(struct VAR9) +
+(sizeof(struct VAR10) *
+VAR11)];
+} VAR12;
+size_t VAR13 = sizeof(struct VAR9) +
+(sizeof(struct VAR10) *
+VAR4->VAR14);
+int VAR15;
+
+if (FUN2(VAR13 > sizeof(VAR12)))
+return -VAR16;
+
+memset(&VAR12, 0, VAR13);
+FUN3(&VAR12.VAR7.VAR17, VAR18, VAR19, VAR20);
+VAR12.VAR7.VAR21 = 0;
+VAR12.VAR7.VAR22 = VAR4->VAR23;
+VAR12.VAR7.VAR24 = VAR4->VAR25;
+VAR12.VAR7.VAR26 = VAR27;
+VAR12.VAR7.VAR28 = VAR4->VAR14;
+
+FUN4(VAR29, ""
+"",
+VAR12.VAR7.VAR22, VAR12.VAR7.VAR24, VAR12.VAR7.VAR26,
+VAR12.VAR7.VAR28);
+
+for (VAR15 = 0; VAR15 < VAR4->VAR14; VAR15++) {
+VAR12.VAR7.VAR30[VAR15] = VAR4->VAR30[VAR15];
+
+FUN4(VAR29, "",
+VAR15,
+(unsigned long long) VAR12.VAR7.VAR30[VAR15].VAR31,
+(unsigned long long) VAR12.VAR7.VAR30[VAR15].VAR32);
+}
+
+return FUN5(VAR2, &VAR12.VAR7.VAR17, VAR13);
+}

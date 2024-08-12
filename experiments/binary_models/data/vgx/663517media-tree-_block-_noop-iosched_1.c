@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = VAR2 -> VAR5 ; FUN2 ( ! FUN3 ( & VAR4 -> VAR6 ) ) ; } static struct elevator_type VAR7 = { . VAR8 . VAR9 = { . VAR10 = VAR11 . VAR12 = VAR13 . VAR14 = VAR15 . VAR16 = VAR17 . VAR18 = VAR19 . VAR20 = VAR21 . VAR22 = VAR23 } . VAR24 = "" . VAR25 = VAR26 } ;

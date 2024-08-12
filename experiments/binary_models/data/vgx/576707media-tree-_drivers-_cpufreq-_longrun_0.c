@@ -1,0 +1,27 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+u32 VAR3, VAR4;
+
+FUN2(VAR5, VAR3, VAR4);
+FUN3("", VAR3, VAR4);
+if (VAR3 & 0x01)
+VAR2->VAR2 = VAR6;
+else
+VAR2->VAR2 = VAR7;
+
+FUN2(VAR8, VAR3, VAR4);
+FUN3("", VAR3, VAR4);
+VAR3 &= 0x0000007F;
+VAR4 &= 0x0000007F;
+
+if (VAR9 <= VAR10) {
+
+VAR2->VAR11 = VAR2->VAR12 = VAR9;
+} else {
+VAR2->VAR11 = VAR10 + VAR3 *
+((VAR9 - VAR10) / 100);
+VAR2->VAR12 = VAR10 + VAR4 *
+((VAR9 - VAR10) / 100);
+}
+VAR2->VAR13 = 0;
+}

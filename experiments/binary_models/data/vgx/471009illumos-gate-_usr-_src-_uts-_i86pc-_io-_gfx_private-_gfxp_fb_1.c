@@ -1,0 +1,1 @@
+int FUN1 ( dev_t VAR1 , devmap_cookie_t VAR2 , offset_t VAR3 , size_t VAR4 , VAR5 * VAR6 , uint_t VAR7 , void * VAR8 ) { struct VAR9 * VAR10 = ( VAR9 * ) VAR8 ; return ( VAR10 -> VAR11 -> FUN2 ( VAR1 , VAR2 , VAR3 , VAR4 , VAR6 , VAR7 , VAR8 ) ) ; }

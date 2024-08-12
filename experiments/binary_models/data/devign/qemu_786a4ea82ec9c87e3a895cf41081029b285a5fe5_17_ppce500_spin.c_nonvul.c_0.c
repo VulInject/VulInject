@@ -1,0 +1,1 @@
+static inline VAR1 FUN1(uint64_t VAR2) { return FUN2(VAR2 >> 10) >> 1; }

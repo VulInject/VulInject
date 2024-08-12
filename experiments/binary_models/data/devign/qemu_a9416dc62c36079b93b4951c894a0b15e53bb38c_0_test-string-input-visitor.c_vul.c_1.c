@@ -1,0 +1,36 @@
+static void FUN1(VAR1 *VAR2, const void *VAR3)
+{
+    int64_t VAR4[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 20};
+    int64_t VAR5[] = {32767, -32768, -32767};
+    int64_t VAR6[] = {VAR7, VAR8};
+    uint64_t VAR9[] = {VAR10};
+    VAR11 *VAR12 = NULL;
+    VAR13 *VAR14 = NULL;
+    VAR13 *VAR15;
+    VAR16 *VAR17;
+    int64_t VAR18;
+    VAR17 = FUN2(VAR2, "");
+    FUN3(VAR17, VAR4, FUN4(VAR4));
+    VAR17 = FUN2(VAR2, "");
+    FUN3(VAR17, VAR5, FUN4(VAR5));
+    VAR17 = FUN2(VAR2, "");
+    FUN3(VAR17, VAR6, FUN4(VAR6));
+    VAR17 = FUN2(VAR2, "");
+    FUN5(VAR17, VAR9, FUN4(VAR9));
+    VAR17 = FUN2(VAR2, "");
+    FUN6(VAR17, NULL, &VAR14, &VAR12);
+    FUN7(&VAR12);
+    VAR17 = FUN2(VAR2, "");
+    FUN6(VAR17, NULL, &VAR14, &VAR12);
+    FUN7(&VAR12);
+    FUN8(!VAR14);
+    VAR17 = FUN2(VAR2, "");
+    FUN9(VAR17, NULL, &VAR15->VAR19, &VAR20);
+    VAR15 = (VAR13 *)FUN10(VAR17, (VAR21 *)VAR15, sizeof(*VAR14));
+    FUN8(VAR15);
+    FUN9(VAR17, NULL, &VAR15->VAR19, &VAR20);
+    FUN11(VAR15->VAR19, ==, 2);
+    VAR15 = (VAR13 *)FUN10(VAR17, (VAR21 *)VAR15, sizeof(*VAR14));
+    FUN8(VAR15);
+    FUN12(VAR17, &VAR12);
+    FUN7(&VAR12);

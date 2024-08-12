@@ -1,0 +1,1 @@
+static int FUN1 ( const struct VAR1 * VAR2 ) { switch ( VAR2 -> VAR3 ) { case VAR4 : return VAR5 ; case VAR6 : case VAR7 : return VAR8 ; default : FUN2 ( VAR2 -> VAR3 , NULL ) ; return VAR9 ; } }

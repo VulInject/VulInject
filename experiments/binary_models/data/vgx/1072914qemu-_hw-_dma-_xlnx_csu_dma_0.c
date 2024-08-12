@@ -1,0 +1,13 @@
+static VAR1 FUN1(VAR2 *VAR3, hwaddr VAR4,
+uint32_t VAR5)
+{
+VAR6 *VAR7 = &VAR3->VAR8[VAR9];
+uint64_t VAR10 = FUN2(0, 4 * 8);
+
+VAR3->VAR11[VAR12] = VAR4;
+VAR3->VAR11[VAR13] = (VAR14)VAR4 >> 32;
+
+FUN3(VAR7, VAR5, VAR10, FUN4(FUN5(VAR3)), false);
+
+return (VAR3->VAR11[VAR9] == 0) ? VAR15 : VAR16;
+}

@@ -1,0 +1,56 @@
+VAR1
+FUN1(VAR2 * VAR3, VAR4 * VAR5)
+{
+VAR2 *VAR6 = NULL;
+
+
+for (VAR6 = FUN2(VAR3); VAR6 != NULL;
+VAR6 = FUN3(VAR6)) {
+
+const char *VAR7 = NULL;
+
+
+if (FUN4(VAR6)) {
+VAR7 = FUN5(VAR6);
+
+if (VAR7 && FUN6(VAR5->VAR8, VAR7) == NULL) {
+FUN7("",
+VAR7, FUN5(VAR6));
+FUN8(VAR7, VAR7, "", NULL,
+VAR5);
+}
+continue;
+}
+
+
+if (FUN9((const char *)VAR6->VAR9, VAR10, VAR11)) {
+
+VAR7 = FUN10(VAR6, VAR3, VAR5);
+if (VAR7 && FUN6(VAR5->VAR8, VAR7) == NULL) {
+FUN7("",
+VAR7, FUN5(VAR6));
+FUN8(VAR7, VAR7, "", NULL,
+VAR5);
+}
+continue;
+}
+
+
+if (FUN9((const char *)VAR6->VAR9, VAR12, VAR11)) {
+VAR2 *VAR13 = NULL;
+for (VAR13 = FUN2(VAR6); VAR13 != NULL;
+VAR13 = FUN3(VAR13)) {
+
+VAR7 = FUN10(VAR13, VAR3, VAR5);
+
+if (VAR7 && FUN6(VAR5->VAR8, VAR7) == NULL) {
+FUN7("",
+VAR7, FUN5(VAR13), FUN5(VAR6));
+FUN8(VAR7, VAR7, "", NULL,
+VAR5);
+}
+}
+}
+}
+return VAR14;
+}

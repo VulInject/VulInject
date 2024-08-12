@@ -1,0 +1,75 @@
+static int FUN1(struct VAR1 *VAR2, u8 VAR3,
+u8 VAR4)
+{
+struct VAR5 *VAR6;
+struct VAR7 *VAR8;
+enum can_state VAR9 = VAR10;
+
+
+if (VAR3 == VAR11)
+if (!VAR2->VAR12->VAR13.VAR14)
+return 0;
+
+
+VAR6 = FUN2(VAR2->VAR15, &VAR8);
+
+if (VAR3 & VAR16) {
+
+FUN3(VAR2->VAR15, "");
+VAR2->VAR15->VAR17.VAR18++;
+VAR2->VAR15->VAR17.VAR19++;
+if (VAR8) {
+VAR8->VAR20 |= VAR21;
+VAR8->VAR22[1] |= VAR23;
+}
+}
+
+if (VAR3 & VAR24)
+FUN3(VAR2->VAR15, "");
+
+if (VAR3 & VAR25) {
+VAR9 = VAR26;
+} else if (VAR3 & VAR27) {
+VAR9 = ((VAR2->VAR12->VAR28.VAR29 >= 128) ||
+(VAR2->VAR12->VAR28.VAR30 >= 128)) ?
+VAR31 :
+VAR32;
+} else {
+VAR9 = VAR10;
+}
+
+
+if (VAR9 != VAR2->VAR12->VAR33.VAR34.VAR35) {
+enum can_state VAR36 =
+(VAR2->VAR12->VAR28.VAR29 >= VAR2->VAR12->VAR28.VAR30) ?
+VAR9 : 0;
+enum can_state VAR37 =
+(VAR2->VAR12->VAR28.VAR29 <= VAR2->VAR12->VAR28.VAR30) ?
+VAR9 : 0;
+
+FUN4(VAR2->VAR15, VAR8, VAR36, VAR37);
+
+if (VAR9 == VAR26) {
+FUN5(VAR2->VAR15);
+} else if (VAR8 && (VAR8->VAR20 & VAR21)) {
+
+VAR8->VAR20 = VAR38;
+VAR8->VAR22[6] = VAR2->VAR12->VAR28.VAR29;
+VAR8->VAR22[7] = VAR2->VAR12->VAR28.VAR30;
+}
+}
+
+if (!VAR6)
+return -VAR39;
+
+if (VAR4 & VAR40) {
+struct VAR41 *VAR42 = FUN6(VAR6);
+
+FUN7(&VAR2->VAR12->VAR13, VAR2->VAR43,
+&VAR42->VAR44);
+}
+
+FUN8(VAR6);
+
+return 0;
+}

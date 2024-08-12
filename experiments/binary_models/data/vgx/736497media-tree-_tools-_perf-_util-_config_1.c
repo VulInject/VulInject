@@ -1,0 +1,1 @@
+static int FUN1 ( char * VAR1 , int VAR2 , int VAR3 ) { { if ( VAR3 == '' ) { return - 1 ; } VAR3 = FUN2 ( ) ; } FUN3 ( VAR3 ) ; if ( VAR3 != '' ) { break ; } if ( VAR4 == '' ) { VAR4 = FUN2 ( ) ; if ( VAR4 == '' ) { return - 1 ; } } VAR1 [ VAR2 ++ ] = VAR4 ; } if ( FUN2 ( ) != '' ) { return - 1 ; } return VAR2 ; }

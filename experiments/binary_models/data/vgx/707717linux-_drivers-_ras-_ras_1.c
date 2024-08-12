@@ -1,0 +1,1 @@
+FUN1 ( VAR1 ) ; FUN1 ( VAR2 ) ; static int __init FUN2 ( char * VAR3 ) { FUN3 ( VAR3 , NULL ) ; return 1 ; }

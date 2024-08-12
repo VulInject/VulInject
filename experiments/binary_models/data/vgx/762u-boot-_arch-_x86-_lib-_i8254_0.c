@@ -1,0 +1,14 @@
+int FUN1(void)
+{
+
+FUN2(VAR1 | VAR2 | VAR3,
+VAR4 + VAR5);
+FUN2(VAR6, VAR4 + VAR7);
+
+
+FUN2(VAR8 | VAR9 | VAR10,
+VAR4 + VAR5);
+FUN3(VAR11);
+
+return 0;
+}

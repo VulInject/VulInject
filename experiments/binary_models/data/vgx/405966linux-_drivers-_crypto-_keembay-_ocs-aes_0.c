@@ -1,0 +1,73 @@
+int FUN1(const struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+int VAR5,
+struct VAR6 *VAR7,
+size_t VAR8, size_t VAR9)
+{
+struct VAR10 *VAR11 = NULL;
+struct VAR3 *VAR12;
+unsigned int VAR13;
+int VAR14;
+int VAR15;
+
+if (!VAR7 || !VAR4 || !VAR2)
+return -VAR16;
+
+
+VAR7->VAR17 = NULL;
+VAR7->VAR18 = VAR19;
+VAR7->VAR20 = 0;
+
+if (VAR8 == 0)
+return 0;
+
+
+while (VAR9 >= FUN2(VAR4)) {
+VAR9 -= FUN2(VAR4);
+VAR5--;
+VAR4 = FUN3(VAR4);
+
+if (!VAR4 || VAR5 == 0)
+return -VAR16;
+}
+
+
+VAR14 = 0;
+VAR13 = 0;
+VAR12 = VAR4;
+while (VAR13 < VAR9 + VAR8) {
+
+if (!VAR12)
+return -VAR16;
+VAR13 += FUN2(VAR12);
+VAR14++;
+VAR12 = FUN3(VAR12);
+}
+if (VAR14 > VAR5)
+return -VAR16;
+
+
+VAR7->VAR20 = sizeof(struct VAR10) * VAR14;
+VAR7->VAR17 = FUN4(VAR2->VAR21, VAR7->VAR20,
+&VAR7->VAR18, VAR22);
+if (!VAR7->VAR17)
+return -VAR23;
+
+
+VAR11 = VAR7->VAR17;
+for (VAR15 = 0; VAR15 < VAR14; VAR15++, VAR4 = FUN3(VAR4)) {
+VAR11[VAR15].VAR24 = FUN5(VAR4) + VAR9;
+VAR11[VAR15].VAR25 = (FUN2(VAR4) - VAR9) < VAR8 ?
+(FUN2(VAR4) - VAR9) : VAR8;
+VAR9 = 0;
+VAR8 -= VAR11[VAR15].VAR25;
+
+VAR11[VAR15].VAR26 = VAR7->VAR18 + (sizeof(*VAR11) * (VAR15 + 1));
+VAR11[VAR15].VAR27 = 0;
+}
+
+VAR11[VAR15 - 1].VAR26 = 0;
+VAR11[VAR15 - 1].VAR27 = VAR28;
+
+return 0;
+}

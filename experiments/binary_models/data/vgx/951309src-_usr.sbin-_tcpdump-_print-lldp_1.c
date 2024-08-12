@@ -1,0 +1,1 @@
+const char * FUN1 ( int VAR1 , const void * VAR2 ) { static char VAR3 [ 48 ] ; return ( VAR3 ) ; }

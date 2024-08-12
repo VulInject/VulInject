@@ -1,0 +1,61 @@
+static void FUN1( VAR1 *VAR2, const VAR3 *VAR4 ) {
+int		VAR5;
+vec3_t	VAR6, VAR7;
+int		VAR8;
+int		VAR9, VAR10;
+int		VAR11;
+VAR12	*VAR13;
+vec3_t	VAR14;
+VAR15	*VAR16;
+
+if ( VAR17.VAR18 ) {
+return;
+}
+
+VAR14[0] = 0;
+VAR14[1] = 0;
+VAR14[2] = 0;
+
+VAR5 = 50;
+
+VAR13 = &VAR2->VAR19;
+VAR9 = VAR2->VAR20;
+VAR8 = VAR5 * ( (VAR9 + VAR5) / VAR5 );
+
+FUN2( &VAR13->VAR21, VAR22.VAR23, VAR6 );
+VAR10 = FUN3( VAR6, -1 );
+
+
+if ( VAR13->VAR21.VAR24 == VAR25 ) {
+VAR2->VAR20 = VAR22.VAR23;
+return;
+}
+
+FUN2( &VAR13->VAR21, VAR2->VAR20, VAR7 );
+VAR11 = FUN3( VAR7, -1 );
+
+VAR2->VAR20 = VAR22.VAR23;
+
+if ( VAR10 & ( VAR26 | VAR27 | VAR28 ) ) {
+if ( VAR10 & VAR11 & VAR26 ) {
+FUN4( VAR7, VAR6, 8 );
+}
+return;
+}
+
+for ( ; VAR8 <= VAR2->VAR20 ; VAR8 += VAR5 ) {
+FUN2( &VAR13->VAR21, VAR8, VAR7 );
+
+VAR16 = FUN5( VAR7, VAR14, 
+VAR4->VAR29, 
+1, 1, 1, 0.33f,
+VAR4->VAR30, 
+VAR8,
+0,
+0, 
+VAR31.VAR32.VAR33 );
+
+VAR16->VAR34 = VAR35;
+}
+
+}

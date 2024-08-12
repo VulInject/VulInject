@@ -1,0 +1,1 @@
+unsigned int FUN1 ( struct VAR1 * VAR2 ) { const int VAR3 = 32 ; struct VAR4 * VAR5 = FUN2 ( VAR2 ) ; char * VAR6 = FUN3 ( VAR3 , VAR7 ) ; int VAR8 = 0 ; if ( ! VAR6 ) { VAR9 } if ( FUN4 ( VAR2 , 0x90 , VAR6 , VAR3 ) ) { VAR9 } VAR8 = VAR6 [ 12 ] & 0x01 ; out VAR5 -> VAR10 = VAR8 ; return VAR8 ; }

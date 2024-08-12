@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { size_t VAR3 ; size_t VAR4 ; int VAR5 ; VAR5 = VAR2 -> VAR6 -> VAR7 + VAR8 ; VAR4 = VAR2 -> VAR9 + sizeof ( VAR10 ) ; VAR3 = VAR4 * VAR5 + VAR11 - 1 ; FUN2 ( & VAR2 -> VAR12 -> VAR2 , VAR3 , VAR2 -> VAR13 , VAR2 -> VAR14 ) ; VAR2 -> VAR13 = NULL ; VAR2 -> VAR14 = 0 ; }

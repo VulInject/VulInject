@@ -1,0 +1,36 @@
+int
+FUN1(int VAR1, int VAR2)
+{
+struct VAR3 *VAR4 = &VAR3[VAR1];
+int VAR5;
+int VAR6 = VAR4->VAR7;
+short VAR8, VAR9;
+bool VAR10 = 0;
+
+if (VAR1 < VAR11 - 1) {
+VAR5 = VAR6 + VAR4->VAR12 - (VAR4+1)->VAR7;
+if (VAR5 > 0) {
+if (VAR13 == VAR14 && VAR15 - VAR16 >= VAR5 && VAR17 && VAR18) {
+VAR10++;
+VAR15 -= VAR5;
+VAR19 = VAR20 - VAR15 + 1;
+VAR6 -= VAR5;
+if (VAR6 + VAR2 == VAR15) {
+VAR4->VAR7 = VAR15;
+return (VAR15 + VAR2);
+}
+FUN2(VAR15, VAR5, -1);
+VAR9 = VAR21;
+VAR8 = VAR22;
+VAR22 |= VAR23;
+}
+FUN3((VAR4+1)->VAR7, VAR5, VAR1);
+if (VAR10) {
+VAR22 = VAR8;
+VAR21 = VAR9;
+}
+}
+} else
+VAR4[1].VAR7 = VAR4[0].VAR7 + VAR4->VAR12;
+return (VAR6 + VAR2);
+}

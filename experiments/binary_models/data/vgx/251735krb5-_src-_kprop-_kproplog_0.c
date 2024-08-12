@@ -1,0 +1,83 @@
+static void
+FUN1(VAR1 *VAR2, uint32_t VAR3, uint32_t VAR4,
+unsigned int VAR5)
+{
+XDR VAR6;
+uint32_t VAR7, VAR8, VAR9, VAR10;
+char *VAR11;
+VAR12 *VAR13;
+kdb_incr_update_t VAR14;
+
+if (VAR3 && (VAR3 < VAR2->VAR15))
+VAR7 = VAR2->VAR16 - VAR3;
+else
+VAR7 = VAR2->VAR17 - 1;
+
+for (VAR8 = VAR7; VAR8 < VAR2->VAR16; VAR8++) {
+VAR10 = VAR8 % VAR4;
+
+VAR13 = FUN2(VAR2, VAR10);
+
+
+if (VAR13->VAR18 != VAR19) {
+fprintf(VAR20, FUN3(""));
+FUN4(1);
+}
+
+FUN5("");
+FUN5(FUN3(""));
+
+FUN5(FUN3(""), VAR13->VAR21);
+
+
+if (VAR13->VAR22 == 0) {
+FUN5(FUN3(""));
+continue;
+}
+
+memset(&VAR14, 0, sizeof(VAR23));
+FUN6(&VAR6, (char *)VAR13->VAR24,
+VAR13->VAR22, VAR25);
+if (!FUN7(&VAR6, &VAR14)) {
+FUN5(FUN3(""));
+FUN4(1);
+}
+
+FUN5(FUN3(""));
+if (VAR14.VAR26)
+FUN5(FUN3(""));
+else
+FUN5(FUN3(""));
+
+VAR11 = malloc(VAR14.VAR27.VAR28 + 1);
+if (VAR11 == NULL) {
+FUN5(FUN3(""));
+FUN4(1);
+}
+strncpy(VAR11, VAR14.VAR27.VAR29,
+VAR14.VAR27.VAR28);
+VAR11[VAR14.VAR27.VAR28] = 0;
+FUN5(FUN3(""), VAR11);
+
+FUN5(FUN3(""), VAR13->VAR22);
+FUN5(FUN3(""),
+VAR13->VAR30 ? "" : "");
+
+if (VAR13->VAR31.VAR32 == 0L) {
+FUN5(FUN3(""));
+} else{
+FUN5(FUN3(""),
+FUN8(&VAR13->VAR31.VAR32));
+}
+
+FUN5(FUN3(""), VAR14.VAR33.VAR34);
+
+if (VAR5) {
+for (VAR9 = 0; VAR9 < VAR14.VAR33.VAR34; VAR9++)
+FUN9(&VAR14.VAR33.VAR35[VAR9], VAR5 > 1 ? 1 : 0);
+}
+
+FUN10(VAR36, (char *)&VAR14);
+free(VAR11);
+}
+}

@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 , int VAR3 , const char * VAR4 , const char * VAR5 ) { if ( VAR4 != NULL ) { FUN2 ( "" , VAR4 ) ; } if ( VAR5 != NULL ) { FUN2 ( "" , VAR5 ) ; } FUN3 ( ) ; FUN4 ( ) ; }

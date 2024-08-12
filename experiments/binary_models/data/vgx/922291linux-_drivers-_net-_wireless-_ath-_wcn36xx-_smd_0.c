@@ -1,0 +1,42 @@
+int FUN1(struct VAR1 *VAR2,
+VAR3 *VAR4, size_t VAR5)
+{
+struct wcn36xx_hal_update_scan_params_req_ex VAR6;
+int VAR7;
+
+FUN2(&VAR2->VAR8);
+FUN3(VAR6, VAR9);
+
+VAR6.VAR10	= false;
+VAR6.VAR11 = true;
+
+VAR6.VAR5 = VAR5;
+memcpy(VAR6.VAR4, VAR4, VAR5);
+VAR6.VAR12 = 60;
+VAR6.VAR13 = 120;
+VAR6.VAR14 = 60;
+VAR6.VAR15 = 110;
+VAR6.VAR16 = VAR17;
+
+FUN4(VAR2->VAR18, VAR6);
+
+FUN5(VAR19,
+"",
+VAR6.VAR5);
+
+VAR7 = FUN6(VAR2, VAR6.VAR20.VAR21);
+if (VAR7) {
+FUN7("");
+goto VAR22;
+}
+VAR7 = FUN8(VAR2->VAR18,
+VAR2->VAR23);
+if (VAR7) {
+FUN7("",
+VAR7);
+goto VAR22;
+}
+VAR22:
+FUN9(&VAR2->VAR8);
+return VAR7;
+}

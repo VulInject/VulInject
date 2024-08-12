@@ -1,0 +1,33 @@
+static int FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = VAR2->VAR5[0];
+    VAR6 *VAR7 = VAR2->VAR8;
+    int VAR9;
+    memcpy(VAR7->VAR10, VAR7->VAR11, VAR7->VAR12 * sizeof(*VAR7->VAR11));
+    FUN2(VAR7->VAR13, VAR7->VAR10);
+    FUN3(VAR7->VAR13, VAR7->VAR10);
+    VAR7->VAR10[VAR7->VAR12] = VAR7->VAR10[0];
+    VAR7->FUN4(VAR7->VAR14, VAR7->VAR10, VAR7->VAR15, VAR7->VAR16, VAR7->VAR12);
+    FUN5(VAR7);
+    if (VAR7->VAR17)
+        VAR7->FUN6(VAR7->VAR18, VAR7->VAR19, VAR7->VAR20);
+    if (!VAR7->VAR21)
+    {
+        VAR22 *VAR23 = FUN7(VAR4, VAR4->VAR24, VAR4->VAR25);
+        if (!VAR23)
+            return FUN8(VAR26);
+        if (VAR7->VAR27)
+            VAR7->FUN9(VAR23, VAR7->VAR28, VAR7->VAR29, VAR7->VAR19, VAR7->VAR27);
+        if (VAR7->VAR30)
+            VAR7->FUN10(VAR23, VAR7->VAR31, VAR7->VAR19, VAR7->VAR27);
+        if (VAR7->VAR17)
+            VAR7->FUN11(VAR23, VAR7->VAR18, VAR7->VAR27 + VAR7->VAR30, VAR7->VAR20);
+        VAR23->VAR32 = VAR7->VAR33;
+        VAR9 = FUN12(VAR4, VAR23);
+        VAR7->VAR33++;
+    }
+    VAR7->VAR21 = (VAR7->VAR21 + 1) % VAR7->VAR34;
+    if (VAR7->VAR17)
+        VAR7->VAR20 = (VAR7->VAR20 + VAR7->VAR17 - 1) % VAR7->VAR17;
+    return VAR9;
+}

@@ -1,0 +1,13 @@
+static VAR1
+FUN1(VALUE VAR2)
+{
+VAR3 *VAR4;
+VALUE VAR5;
+
+VAR5 = FUN2(VAR2);
+VAR4 = FUN3();
+if (!VAR4) FUN4(VAR6, NULL);
+FUN5(VAR5, VAR4);
+
+return VAR5;
+}

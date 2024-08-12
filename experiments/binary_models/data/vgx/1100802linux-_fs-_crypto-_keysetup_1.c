@@ -1,0 +1,1 @@
+static FUN1 ( VAR1 ) ; static struct VAR2 * FUN2 ( const union VAR3 * VAR4 , const struct VAR5 * VAR5 ) { FUN3 ( FUN4 ( VAR6 ) != VAR7 + 1 ) ; if ( FUN5 ( VAR5 -> VAR8 ) ) { return & VAR6 [ FUN6 ( VAR4 ) ] ; } FUN7 ( 1 , "" , VAR5 -> VAR9 , ( VAR5 -> VAR8 & VAR10 ) ) ; return FUN8 ( - VAR11 ) ; }

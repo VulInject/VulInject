@@ -1,0 +1,50 @@
+void
+FUN1(VAR1 *VAR2)
+{
+VAR3 *VAR4 = FUN2(VAR2);
+
+
+if (VAR2->VAR5) {
+FUN3(FUN4(VAR2->VAR5));
+
+VAR2->VAR5->VAR4 = NULL;
+VAR2->VAR5 = NULL;
+}
+
+
+if (VAR4->VAR6 != VAR7) {
+
+if (FUN5(VAR2)) {
+const VAR8 *VAR9 = FUN6();
+FUN7(VAR2);
+
+FUN8(FUN4(VAR2->VAR5));
+if (VAR4->VAR6 >= VAR10) {
+int VAR11 = FUN9(VAR2->VAR12);
+FUN10(VAR2, VAR13,
+VAR11);
+if (!FUN11(VAR9)) {
+const char *VAR14 = NULL;
+if (VAR11 == VAR15 && VAR2->VAR16) {
+VAR14 = FUN12(VAR2->VAR16);
+}
+if (VAR14 == NULL) {
+VAR14 = FUN13(VAR11);
+}
+FUN14(VAR14, VAR11, VAR2);
+}
+}
+}
+} else if (VAR4->VAR17) {
+
+FUN10(VAR2, VAR18,
+FUN9(VAR2->VAR12));
+} else if (!FUN15(VAR2->VAR19)) {
+FUN10(VAR2, VAR18,
+FUN9(VAR2->VAR12));
+} else {
+
+FUN10(VAR2, VAR18,
+VAR20);
+}
+}

@@ -1,0 +1,70 @@
+static int FUN1(void)
+{
+struct VAR1 *VAR2, VAR3[4];
+char *VAR4;
+int VAR5;
+
+VAR4 = (char *)FUN2(VAR6);
+FUN3(!VAR4);
+FUN4(strcmp(VAR4, "") != 0);
+
+
+VAR2 = &VAR3[0];
+FUN5(VAR2, VAR7,
+VAR8, "");
+VAR2->VAR9.VAR10 = 1;
+
+VAR2 = &VAR3[1];
+FUN5(VAR2, VAR7,
+VAR8, "");
+VAR2->VAR9.VAR10 = 1;
+VAR2->VAR9.VAR11 = 1;
+VAR2->VAR9.VAR12 = 1;
+
+VAR2 = &VAR3[2];
+FUN5(VAR2, VAR7,
+VAR8, "");
+VAR2->VAR9.VAR10 = 1;
+VAR2->VAR9.VAR11 = 1;
+VAR2->VAR9.VAR13 = 1;
+
+VAR2 = &VAR3[3];
+FUN5(VAR2, VAR7,
+VAR8, "");
+VAR2->VAR9.VAR10 = 1;
+VAR2->VAR9.VAR12 = 1;
+VAR2->VAR9.VAR13 = 1;
+
+FUN3(FUN6(&VAR3[0]));
+
+
+for (VAR5 = 1; VAR5 < 4; VAR5++)
+FUN3(FUN7(&VAR3[VAR5], VAR3[0].VAR14));
+
+
+FUN8(VAR15);
+
+
+for (VAR5 = 0; VAR5 < VAR16; VAR5++)
+asm volatile("" : : : "");
+
+FUN8(VAR17);
+
+for (VAR5 = 0; VAR5 < 4; VAR5++) {
+FUN3(FUN9(&VAR3[VAR5]));
+FUN10(&VAR3[VAR5]);
+}
+
+
+for (VAR5 = 0; VAR5 < 4; VAR5++)
+FUN3(VAR3[VAR5].VAR18.VAR19 != VAR3[VAR5].VAR18.VAR20);
+
+
+for (VAR5 = 1; VAR5 < 4; VAR5++)
+FUN3(VAR3[0].VAR18.VAR21 < VAR3[VAR5].VAR18.VAR21);
+
+for (VAR5 = 0; VAR5 < 4; VAR5++)
+FUN11(&VAR3[VAR5]);
+
+return 0;
+}

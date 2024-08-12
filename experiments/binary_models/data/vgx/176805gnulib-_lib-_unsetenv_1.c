@@ -1,0 +1,1 @@
+FUN1 ( ) { size_t VAR1 ; char * * VAR2 ; if ( VAR3 == NULL || * VAR3 == '' || strchr ( VAR3 , '' ) != NULL ) { return - 1 ; } VAR1 = strlen ( VAR3 ) ; VAR4 ; VAR2 = VAR5 ; while ( * VAR2 != NULL ) { if ( ! FUN2 ( * VAR2 , VAR3 , VAR1 ) && ( * VAR2 ) [ VAR1 ] == '' ) { char * * VAR6 = VAR2 ; { VAR6 [ 0 ] = VAR6 [ 1 ] ; } * VAR6 ++ ; } else { ++ VAR2 ; } } VAR7 ; return 0 ; }

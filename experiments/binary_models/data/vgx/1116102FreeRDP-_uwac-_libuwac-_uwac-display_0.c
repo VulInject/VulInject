@@ -1,0 +1,30 @@
+VAR1* FUN1(VAR2* VAR3, int VAR4)
+{
+VAR5* VAR6;
+
+if (!VAR3)
+{
+return 0;
+}
+
+VAR6 = FUN2(sizeof(VAR5));
+
+if (!VAR6)
+{
+assert(FUN3(VAR3, VAR7, "",
+VAR8[VAR4]));
+VAR3->VAR9 = VAR7;
+return 0;
+}
+
+VAR6->VAR10.VAR4 = VAR4;
+VAR6->VAR11 = VAR3->VAR12;
+
+if (VAR6->VAR11)
+VAR6->VAR11->VAR13 = VAR6;
+else
+VAR3->VAR14 = VAR6;
+
+VAR3->VAR12 = VAR6;
+return &VAR6->VAR10;
+}

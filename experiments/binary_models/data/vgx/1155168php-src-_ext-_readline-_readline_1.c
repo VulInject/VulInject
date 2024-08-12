@@ -1,0 +1,1 @@
+FUN1 ( ) { FUN2 ( ) ; FUN3 ( & VAR1 ) ; FUN3 ( & VAR2 ) ; FUN4 ( VAR3 , NULL ) ; return FUN5 ( VAR4 ) ( VAR5 ) ; }

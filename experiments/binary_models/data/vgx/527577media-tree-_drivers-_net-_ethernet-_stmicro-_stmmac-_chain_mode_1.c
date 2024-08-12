@@ -1,0 +1,1 @@
+static unsigned int FUN1 ( int VAR1 , int VAR2 ) { int VAR3 = 0 ; if ( ( VAR2 && ( VAR1 > VAR4 ) ) || ( ! VAR2 && ( VAR1 > VAR5 ) ) ) { VAR3 = 1 ; } return VAR3 ; }

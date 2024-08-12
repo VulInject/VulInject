@@ -1,0 +1,1 @@
+static void FUN1(struct VAR1 *VAR2, target_phys_addr_t VAR3, ram_addr_t VAR4, ram_addr_t VAR5) { FUN2(VAR3, VAR4, VAR5); }

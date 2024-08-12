@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( enum SyncQueueType VAR2 , int64_t VAR3 ) { VAR1 * VAR4 = FUN2 ( sizeof ( * VAR4 ) ) ; if ( ! VAR4 ) { return VAR5 ; } VAR4 -> VAR2 = VAR2 ; VAR4 -> VAR3 = VAR3 ; VAR4 -> VAR6 = - 1 ; VAR4 -> VAR7 = - 1 ; VAR4 -> VAR8 = ( VAR2 == VAR9 ) ?FUN3 ( ) : FUN4 ( ) ; if ( ! VAR4 -> VAR8 ) { FUN5 ( & VAR4 ) ; return NULL ; } return VAR4 ; }

@@ -1,0 +1,54 @@
+FUN1 (VAR1 *VAR2)
+{
+unsigned char VAR3[9];
+
+if (!FUN2 (VAR2, VAR3, 9)) {
+return -1;
+}
+
+
+VAR2->VAR4 = FUN3 (VAR3[4], VAR3[5]);
+VAR2->VAR5 = FUN3 (VAR3[6], VAR3[7]);
+VAR2->VAR6 = FUN3 (VAR3[0], VAR3[1]);
+VAR2->VAR7 = FUN3 (VAR3[2], VAR3[3]);
+
+if (VAR2->VAR8->VAR9 == NULL &&
+VAR2->VAR10.VAR11 == 3) {
+
+VAR2->VAR10.VAR11 = 0;
+}
+
+VAR2->VAR12 = FUN4 (VAR3[8], VAR13);
+
+FUN5 ("",
+VAR2->VAR4, VAR2->VAR5, VAR2->VAR6, VAR2->VAR7,
+VAR2->VAR10.VAR11, VAR2->VAR10.VAR14, VAR2->VAR10.VAR15, VAR2->VAR12);
+
+if (FUN4 (VAR3[8], VAR16)) {
+
+FUN5 ("");
+
+
+
+
+VAR2->VAR17 = VAR18;
+VAR2->VAR19 = 1 << ((VAR3[8] & 0x07) + 1);
+FUN6 (VAR2);
+return 0;
+}
+
+if (!VAR2->VAR20) {
+VAR2->VAR21 = VAR22;
+
+FUN7 (VAR2->VAR23,
+VAR24,
+VAR25,
+FUN8(""));
+
+return -2;
+}
+
+FUN9 (VAR2);
+return 0;
+
+}

@@ -1,0 +1,1 @@
+char * FUN1 ( const char * VAR1 , size_t VAR2 ) { size_t VAR3 = FUN2 ( VAR1 , VAR2 ) ; char * VAR4 = ( char * ) FUN3 ( VAR3 + 1 ) ; memcpy ( VAR4 , VAR1 , VAR3 ) ; VAR4 [ VAR3 ] = '' ; return ( char * ) VAR4 ; }

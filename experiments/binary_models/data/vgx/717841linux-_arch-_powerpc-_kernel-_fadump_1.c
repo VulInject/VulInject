@@ -1,0 +1,1 @@
+bool FUN1 ( void ) { unsigned long VAR1 , VAR2 ; bool VAR3 = false ; int VAR4 ; for ( VAR4 = 0 ; VAR4 < VAR5 . VAR6 ; VAR4 ++ ) { VAR1 = VAR5 . VAR7 [ VAR4 ] ; VAR2 = VAR1 + VAR5 . VAR8 [ VAR4 ] ; VAR3 = FUN2 ( VAR1 , VAR2 ) ; } return VAR3 ; }

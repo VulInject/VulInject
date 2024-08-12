@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR1 ) { unsigned VAR2 ; VAR3 * VAR4 = VAR1 -> VAR5 ; unsigned VAR6 = VAR1 -> VAR7 ; int VAR8 ; switch ( VAR9 ) { default : case 0 : memset ( VAR4 , 0 , VAR6 ) ; break ; case 1 : VAR8 = FUN2 ( VAR1 -> VAR10 , VAR1 -> VAR11 ) ; for ( VAR2 = 0 ; VAR2 < VAR6 ; VAR2 ++ ) { * VAR4 ++ = ( VAR3 ) ( ( VAR2 % VAR8 ) % 63 ) ; } break ; } }

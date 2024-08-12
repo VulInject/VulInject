@@ -1,0 +1,58 @@
+static int FUN1(struct VAR1 *VAR2, s64 VAR3)
+{
+struct VAR4 *VAR5 = FUN2(VAR2);
+struct VAR6 *VAR7 = FUN3(VAR5);
+struct timespec64 VAR8 = FUN4(VAR3);
+s32 VAR9, VAR10;
+u16 VAR11;
+int VAR12;
+
+FUN5(&VAR5->VAR13);
+
+
+VAR9 = FUN6(VAR3, VAR14, &VAR10);
+
+VAR12 = FUN7(VAR7, VAR15, FUN8(VAR10));
+if (VAR12)
+goto VAR16;
+
+VAR12 = FUN7(VAR7, VAR17, FUN8(VAR9));
+if (VAR12)
+goto VAR16;
+
+VAR12 = FUN9(VAR7, VAR18, &VAR11);
+if (VAR12)
+goto VAR16;
+
+VAR11 |= VAR19;
+
+
+if (VAR3 < 0)
+VAR11 &= ~VAR20;
+else
+VAR11 |= VAR20;
+
+VAR12 = FUN10(VAR7, VAR18, VAR11);
+if (VAR12)
+goto VAR16;
+
+switch (VAR5->VAR21) {
+case VAR22:
+break;
+
+case VAR23:
+VAR12 = FUN11(VAR7);
+if (VAR12)
+goto VAR16;
+
+break;
+}
+
+FUN12(&VAR5->VAR24);
+VAR5->VAR25 = FUN13(VAR5->VAR25, VAR8);
+FUN14(&VAR5->VAR24);
+
+VAR16:
+FUN15(&VAR5->VAR13);
+return VAR12;
+}

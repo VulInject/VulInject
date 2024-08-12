@@ -1,0 +1,37 @@
+int FUN1(void *VAR1)
+{
+struct VAR2 *VAR3 = VAR4;
+
+
+FUN2(VAR3, "");
+FUN3(VAR3);
+FUN4(VAR3, VAR5);
+FUN5(VAR6[VAR7]);
+
+VAR4->VAR8 |= VAR9;
+FUN6();
+
+for (;;) {
+FUN7(VAR10);
+if (FUN8(&VAR11))
+FUN9();
+FUN10(VAR12);
+
+FUN11(&VAR13);
+while (!FUN8(&VAR11)) {
+struct VAR14 *VAR15;
+
+VAR15 = FUN12(VAR11.VAR16,
+struct VAR14, VAR17);
+FUN13(&VAR15->VAR17);
+FUN14(&VAR13);
+
+FUN15(VAR15);
+
+FUN11(&VAR13);
+}
+FUN14(&VAR13);
+}
+
+return 0;
+}

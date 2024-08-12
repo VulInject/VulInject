@@ -1,0 +1,1 @@
+FUN1 ( ) { const char * VAR1 ; VAR1 = FUN2 ( "" ) ; if ( * VAR1 != '' ) { return VAR2 ; } return VAR3 ; }

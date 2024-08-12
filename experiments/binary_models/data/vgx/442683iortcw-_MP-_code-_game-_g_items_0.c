@@ -1,0 +1,19 @@
+VAR1 *FUN1( VAR1 *VAR2, VAR3 *VAR4, float VAR5, qboolean VAR6 ) {
+vec3_t VAR7;
+vec3_t VAR8;
+
+FUN2( VAR2->VAR9.VAR10.VAR11, VAR8 );
+VAR8[VAR12] += VAR5;
+VAR8[VAR13] = 0;  
+
+if ( VAR6 ) {
+FUN3( VAR7 );
+} else
+{
+FUN4( VAR8, VAR7, NULL, NULL );
+FUN5( VAR7, 150, VAR7 );
+VAR7[2] += 200 + FUN6() * 50;
+}
+
+return FUN7( VAR4, VAR2->VAR9.VAR14.VAR11, VAR7, VAR2->VAR9.VAR15 );
+}

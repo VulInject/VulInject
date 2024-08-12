@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( enum HistoryClass VAR2 ) { const short VAR3 = FUN2 ( VAR4 -> VAR5 , "" ) ; if ( ( VAR2 >= VAR6 ) || ( VAR3 == 0 ) ) { return VAR7 ; } struct VAR1 * VAR8 = & VAR9 [ VAR2 ] ; return VAR8 -> VAR8 ?VAR8 : NULL ; }

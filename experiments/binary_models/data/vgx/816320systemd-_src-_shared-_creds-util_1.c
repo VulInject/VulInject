@@ -1,0 +1,1 @@
+static void FUN1 ( int VAR1 , CredentialSecretFlags VAR2 , const char * VAR3 , const char * VAR4 ) { int VAR5 ; assert ( VAR1 >= 0 ) ; assert ( VAR3 ) ; assert ( VAR4 ) ; VAR5 = FUN2 ( VAR1 ) ; if ( VAR5 < 0 ) { FUN3 ( VAR5 , "" , VAR3 , VAR4 ) ; } if ( VAR5 == 0 ) { FUN4 ( "" , VAR3 , VAR4 ) ; } }

@@ -1,0 +1,47 @@
+static void
+FUN1(VAR1 *VAR2)
+{
+XLogRecPtr	VAR3 = VAR2->VAR4;
+VAR5 *VAR6 = (VAR5 *) FUN2(VAR2);
+Buffer		VAR7;
+BlockNumber VAR8 = VAR9;
+BlockNumber VAR10 = VAR9;
+bool		VAR11 = (VAR6->VAR12 & VAR13) != 0;
+
+
+if (!VAR11)
+{
+char	   *VAR14 = FUN2(VAR2) + sizeof(VAR5);
+
+VAR8 = FUN3((VAR15) VAR14);
+VAR14 += sizeof(VAR16);
+VAR10 = FUN3((VAR15) VAR14);
+VAR14 += sizeof(VAR16);
+
+FUN4(VAR2, 1);
+}
+
+if (FUN5(VAR2, 0, &VAR7) == VAR17)
+{
+Page		VAR18 = FUN6(VAR7);
+Size		VAR19;
+char	   *VAR14 = FUN7(VAR2, 0, &VAR19);
+
+
+if (VAR6->VAR12 & VAR20)
+{
+FUN8(FUN9(VAR18));
+FUN10(VAR7, VAR11, VAR10, VAR14);
+}
+else
+{
+FUN8(!FUN9(VAR18));
+FUN11(VAR7, VAR11, VAR10, VAR14);
+}
+
+FUN12(VAR18, VAR3);
+FUN13(VAR7);
+}
+if (FUN14(VAR7))
+FUN15(VAR7);
+}

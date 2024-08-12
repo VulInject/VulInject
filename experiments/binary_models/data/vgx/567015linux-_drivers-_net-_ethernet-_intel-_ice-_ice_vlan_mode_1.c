@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { cfs_time_t VAR3 ; for ( VAR3 = 0 ; VAR3 < FUN2 ( VAR4 ) ; VAR3 ++ ) { struct VAR5 * VAR6 ; int VAR7 ; VAR6 = & VAR4 [ VAR3 ] ; VAR7 = FUN3 ( VAR2 , VAR6 ) ; if ( VAR7 ) { FUN4 ( VAR2 , VAR8 , "" , VAR6 -> VAR9 , VAR6 -> VAR10 , VAR6 -> VAR11 , VAR6 -> VAR12 ?"" : "" , VAR6 -> VAR13 ) ; return VAR7 ; } } return 0 ; }

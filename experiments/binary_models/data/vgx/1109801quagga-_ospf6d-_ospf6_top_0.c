@@ -1,0 +1,52 @@
+FUN1 (struct VAR1 *VAR1)
+{
+char VAR2[16];
+struct VAR3 *VAR4, *VAR5;
+struct VAR6 *VAR7;
+struct VAR8 *VAR9;
+
+
+if (VAR10 == NULL)
+return VAR11;
+
+FUN2 (VAR12, &VAR10->VAR13, VAR2, sizeof (VAR2));
+FUN3 (VAR1, "", VAR14);
+if (VAR10->VAR13 != 0)
+FUN3 (VAR1, "", VAR2, VAR14);
+
+
+if (FUN4(VAR10->VAR15, VAR16))
+{
+FUN3(VAR1, "");
+if (FUN4(VAR10->VAR15, VAR17))
+FUN3(VAR1, "");
+FUN3(VAR1, "", VAR18);
+}
+
+if (VAR10->VAR19 != VAR20)
+FUN3 (VAR1, "", VAR10->VAR19 / 1000,
+VAR14);
+
+FUN5 (VAR1);
+FUN6 (VAR1);
+FUN7 (VAR1);
+FUN8 (VAR1);
+FUN9 (VAR1);
+
+for (FUN10 (VAR10->VAR21, VAR4, VAR7))
+{
+for (FUN10 (VAR7->VAR22, VAR5, VAR9))
+FUN3 (VAR1, "",
+VAR9->VAR23->VAR24, VAR7->VAR24, VAR14);
+}
+FUN3 (VAR1, "", VAR14);
+return 0;
+}
+
+
+static struct cmd_node VAR25 =
+{
+VAR26,
+"",
+1 
+};

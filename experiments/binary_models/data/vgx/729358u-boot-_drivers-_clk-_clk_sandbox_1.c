@@ -1,0 +1,1 @@
+static ulong FUN1 ( struct VAR1 * VAR1 , ulong VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR1 -> VAR5 ) ; ulong VAR6 ; if ( VAR1 -> VAR7 >= VAR8 ) { return - VAR9 ; } if ( ! VAR2 ) { return - VAR9 ; } VAR6 = VAR4 -> VAR2 [ VAR1 -> VAR7 ] ; VAR4 -> VAR2 [ VAR1 -> VAR7 ] = VAR2 ; return VAR6 ; }

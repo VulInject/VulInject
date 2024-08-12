@@ -1,0 +1,1 @@
+int FUN1 ( void * VAR1 , const char * VAR2 ) { return ( VAR3 ) ; }

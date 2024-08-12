@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( struct VAR2 * VAR3 ) { struct VAR1 * VAR4 ; FUN2 ( , "" ) { const void * VAR5 ; unsigned int VAR6 ; VAR5 = FUN3 ( VAR4 , "" , NULL ) ; VAR6 = FUN4 ( VAR5 ) ; if ( VAR3 -> VAR7 == VAR6 ) { return VAR4 ; } } return NULL ; }

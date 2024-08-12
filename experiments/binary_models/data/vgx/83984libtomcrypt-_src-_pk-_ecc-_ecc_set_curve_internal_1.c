@@ -1,0 +1,1 @@
+static int FUN1 ( const char * VAR1 , void * VAR2 , void * VAR3 ) { if ( FUN2 ( VAR3 , VAR2 ) != VAR4 ) { return 0 ; } return 1 ; }

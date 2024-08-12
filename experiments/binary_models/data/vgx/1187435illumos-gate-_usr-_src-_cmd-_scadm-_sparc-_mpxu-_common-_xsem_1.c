@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 ) { pthread_mutex_destroy ( & VAR2 -> VAR3 ) ; pthread_cond_destroy ( & VAR2 -> VAR4 ) ; }

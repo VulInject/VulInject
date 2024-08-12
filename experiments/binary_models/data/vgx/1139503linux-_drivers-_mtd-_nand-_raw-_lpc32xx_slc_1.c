@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , int VAR3 , struct VAR4 * VAR5 ) { if ( ! VAR3 ) { VAR5 -> VAR6 = 0 ; VAR5 -> VAR7 = 4 ; } else { VAR5 -> VAR6 = 6 ; VAR5 -> VAR7 = 4 ; } return 0 ; } static const struct mtd_ooblayout_ops VAR8 = { . VAR9 = VAR10 . free = VAR11 } ;

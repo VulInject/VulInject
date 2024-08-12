@@ -1,0 +1,1 @@
+int FUN1 ( section_hdl_t VAR1 , VAR2 * VAR3 , VAR4 * VAR5 , VAR6 * VAR7 ) { segments_t VAR8 ; int VAR9 ; if ( VAR7 -> VAR10 != 0 ) { VAR11 = VAR12 ; return ( - 1 ) ; } if ( ( VAR9 = FUN2 ( ) ) == - 1 ) { return ( - 1 ) ; } VAR8 . VAR13 = VAR1 ; VAR8 . VAR14 = VAR3 ; if ( FUN3 ( VAR9 , VAR15 , & VAR8 ) != 0 ) { return ( - 1 ) ; } * VAR5 = VAR8 . VAR13 ; return ( 0 ) ; }

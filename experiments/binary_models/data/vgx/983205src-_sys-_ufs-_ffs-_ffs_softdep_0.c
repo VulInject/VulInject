@@ -1,0 +1,36 @@
+void
+FUN1(struct VAR1 *VAR2, int VAR3)
+{
+struct VAR4 *VAR5, *VAR6;
+struct VAR7 *VAR8;
+
+if (!FUN2(VAR2, NULL))
+FUN3("");
+FUN4(&VAR9);
+FUN5(VAR5, &VAR2->VAR10, VAR11, VAR6) {
+
+FUN6(VAR12);
+if (VAR5->VAR13 & VAR14)
+continue;
+
+if ((VAR5->VAR13 & VAR15) == 0) {
+FUN7(&VAR9);
+FUN3("");
+}
+
+if ((VAR8 = FUN8(&VAR5->VAR16)) == NULL ||
+VAR8->VAR17 != VAR18) {
+continue;
+}
+FUN9(VAR5);
+FUN10(VAR5);
+FUN7(&VAR9);
+(void) FUN11(VAR5);
+FUN4(&VAR9);
+
+VAR6 = FUN8(&VAR2->VAR10);
+}
+if (VAR3 == VAR19)
+FUN12(VAR2, 1);
+FUN7(&VAR9);
+}

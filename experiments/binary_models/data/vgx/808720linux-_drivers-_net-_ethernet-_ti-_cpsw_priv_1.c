@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( struct VAR2 * VAR3 , int VAR4 ) { struct page_pool_params VAR5 = { } ; struct VAR1 * VAR6 ; VAR5 . VAR7 = VAR8 ; VAR5 . VAR9 = VAR4 ; VAR5 . VAR10 = VAR11 ; VAR5 . VAR12 = VAR13 ; VAR5 . VAR14 = VAR3 -> VAR14 ; VAR6 = FUN2 ( & VAR5 ) ; if ( FUN3 ( VAR6 ) ) { FUN4 ( VAR3 -> VAR14 , "" ) ; } return VAR6 ; }

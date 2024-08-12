@@ -1,0 +1,55 @@
+static bool FUN1(VAR1 *VAR2, HANDLE VAR3)
+{
+VAR4 *VAR5;
+bool VAR6 = false;
+VAR4 *VAR7;
+
+
+FUN2(VAR5, &VAR2->VAR8, VAR5, VAR7) {
+int VAR9 = VAR5->VAR10.VAR9;
+
+if (!VAR5->VAR11 &&
+(VAR9 || FUN3(VAR5->VAR12) == VAR3) &&
+VAR5->VAR13) {
+VAR5->VAR10.VAR9 = 0;
+VAR5->FUN4(VAR5->VAR12);
+
+
+if (VAR5->VAR12 != &VAR2->VAR14) {
+VAR6 = true;
+}
+}
+
+if (!VAR5->VAR11 &&
+(VAR5->VAR15 || VAR5->VAR16)) {
+VAR5->VAR10.VAR9 = 0;
+if ((VAR9 & VAR17) && VAR5->VAR15) {
+VAR5->FUN5(VAR5->VAR18);
+VAR6 = true;
+}
+if ((VAR9 & VAR19) && VAR5->VAR16) {
+VAR5->FUN6(VAR5->VAR18);
+VAR6 = true;
+}
+
+
+if (VAR3 == FUN3(&VAR2->VAR14)) {
+WSANETWORKEVENTS VAR20;
+FUN7(VAR5->VAR10.VAR21, VAR3, &VAR20);
+if (VAR20.VAR22) {
+VAR6 = true;
+}
+}
+}
+
+if (VAR5->VAR11) {
+if (FUN8(&VAR2->VAR23)) {
+FUN9(VAR5, VAR5);
+FUN10(VAR5);
+FUN11(&VAR2->VAR23);
+}
+}
+}
+
+return VAR6;
+}

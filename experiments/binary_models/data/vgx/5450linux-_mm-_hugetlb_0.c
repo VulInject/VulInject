@@ -1,0 +1,48 @@
+static long FUN1(struct VAR1 *VAR2, long VAR3, long VAR4,
+struct VAR5 *VAR6,
+struct VAR7 *VAR8, long *VAR9)
+{
+long VAR10 = 0;
+struct VAR11 *VAR12 = &VAR2->VAR13;
+long VAR14 = VAR3;
+struct VAR15 *VAR16, *VAR17 = NULL;
+struct VAR11 *VAR18 = NULL;
+
+if (VAR9)
+*VAR9 = 0;
+
+
+FUN2(VAR16, VAR17, VAR12, VAR19) {
+
+if (VAR16->VAR20 < VAR3) {
+
+if (VAR16->VAR21 > VAR14)
+VAR14 = VAR16->VAR21;
+continue;
+}
+
+
+if (VAR16->VAR20 >= VAR4) {
+VAR18 = VAR16->VAR19.VAR22;
+break;
+}
+
+
+if (VAR16->VAR20 > VAR14)
+VAR10 += FUN3(VAR2, VAR16->VAR19.VAR22,
+VAR14,
+VAR16->VAR20, VAR8, VAR6,
+VAR9);
+
+VAR14 = VAR16->VAR21;
+}
+
+
+if (!VAR18)
+VAR18 = VAR12->VAR22;
+if (VAR14 < VAR4)
+VAR10 += FUN3(VAR2, VAR18, VAR14,
+VAR4, VAR8, VAR6, VAR9);
+
+return VAR10;
+}

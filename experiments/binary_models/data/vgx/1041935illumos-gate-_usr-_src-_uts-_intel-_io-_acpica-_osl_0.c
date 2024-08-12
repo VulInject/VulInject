@@ -1,0 +1,14 @@
+VAR1
+FUN1()
+{
+ACPI_PHYSICAL_ADDRESS VAR2;
+
+
+VAR2 = FUN2(VAR3, FUN3(),
+VAR4, "", 0);
+
+if ((VAR2 == 0) && FUN4(FUN5(&VAR2)))
+VAR2 = 0;
+
+return (VAR2);
+}

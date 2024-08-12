@@ -1,0 +1,1 @@
+void FUN1 ( hrt_data VAR1 ) { int VAR2 ; FUN2 ( "" , VAR1 ) ; for ( VAR2 = 0 ; VAR2 < VAR3 ; VAR2 ++ ) { mmu_ID_t VAR4 = VAR2 ; FUN3 ( VAR4 , VAR1 ) ; FUN4 ( VAR4 , NULL ) ; } FUN5 ( "" ) ; }

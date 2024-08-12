@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 ) { memset ( VAR2 , 0 , sizeof ( VAR1 ) ) ; ( void ) FUN2 ( FUN3 ( ) , VAR2 ) ; }

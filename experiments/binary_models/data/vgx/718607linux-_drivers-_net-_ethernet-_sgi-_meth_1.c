@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { VAR2 -> VAR3 = FUN2 ( & VAR2 -> VAR4 -> VAR5 , VAR6 , & VAR2 -> VAR7 , VAR8 ) ; VAR2 -> VAR9 = VAR2 -> VAR10 = VAR2 -> VAR11 = 0 ; VAR12 -> VAR13 . VAR14 = VAR2 -> VAR7 ; memset ( VAR2 -> VAR15 , 0 , sizeof ( VAR2 -> VAR15 ) ) ; memset ( VAR2 -> VAR16 , 0 , sizeof ( VAR2 -> VAR16 ) ) ; return 0 ; }

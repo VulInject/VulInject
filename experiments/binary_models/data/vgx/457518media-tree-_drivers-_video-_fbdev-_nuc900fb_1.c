@@ -1,0 +1,1 @@
+static inline void FUN1 ( void VAR1 * VAR2 , unsigned long VAR3 , unsigned long VAR4 ) { cfs_time_t VAR5 ; VAR5 = FUN2 ( VAR2 ) & ~ VAR4 ; FUN3 ( VAR5 | VAR3 , VAR2 ) ; }

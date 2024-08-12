@@ -1,0 +1,68 @@
+int FUN1(VAR1 *VAR2, const VAR3 *VAR4)
+{
+VAR5 *VAR6 = VAR2->VAR7 + VAR2->VAR8;
+int VAR9;
+
+VAR6->VAR10 = VAR4->VAR10;
+
+VAR9 = FUN2(VAR6, VAR4, &VAR2->VAR11, VAR2->VAR12);
+if (VAR9 < 0)
+return VAR9;
+
+
+if (VAR6->VAR13 > 0)
+return 0;
+
+if (!VAR2->VAR14) {
+if (VAR6->VAR15 == 0) { 
+
+
+if (VAR2->VAR8) {
+H264SliceContext VAR16;
+
+VAR9 = FUN3(VAR2);
+if (VAR9 < 0 && (VAR2->VAR12->VAR17 & VAR18))
+return VAR9;
+
+memcpy(&VAR16, VAR2->VAR7, sizeof(VAR16));
+memcpy(VAR2->VAR7, VAR6, sizeof(VAR16));
+memcpy(VAR6, &VAR16, sizeof(VAR16));
+VAR6 = VAR2->VAR7;
+}
+
+if (VAR2->VAR19)
+FUN4(VAR2, VAR6, 1);
+
+VAR2->VAR20 = 0;
+if (!VAR2->VAR21) {
+if (VAR2->VAR22 && !VAR2->VAR23) {
+FUN5(&VAR2->VAR22->VAR24, VAR25,
+VAR2->VAR26 == VAR27);
+}
+VAR2->VAR22 = NULL;
+}
+}
+
+if (VAR2->VAR20 == 0) {
+VAR9 = FUN6(VAR2, VAR6, VAR4);
+if (VAR9 < 0)
+return VAR9;
+VAR2->VAR19 = 1;
+}
+}
+
+VAR9 = FUN7(VAR2, VAR6, VAR4);
+if (VAR9 < 0)
+return VAR9;
+
+if ((VAR2->VAR12->VAR28 < VAR29 || VAR4->VAR30) &&
+(VAR2->VAR12->VAR28 < VAR31  ||
+VAR6->VAR32 != VAR33) &&
+(VAR2->VAR12->VAR28 < VAR34 ||
+VAR2->VAR22->VAR35->VAR36) &&
+VAR2->VAR12->VAR28 < VAR37) {
+VAR2->VAR8++;
+}
+
+return 0;
+}

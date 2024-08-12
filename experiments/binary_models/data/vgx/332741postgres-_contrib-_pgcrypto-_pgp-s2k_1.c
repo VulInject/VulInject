@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 ) { int VAR5 = 0 ; FUN2 ( VAR2 , VAR4 -> VAR6 ) ; FUN2 ( VAR2 , VAR4 -> VAR7 ) ; switch ( VAR4 -> VAR6 ) { case 0 : break ; case 1 : VAR5 = FUN3 ( VAR2 , 8 , VAR4 -> VAR8 ) ; break ; case 3 : VAR5 = FUN3 ( VAR2 , 8 , VAR4 -> VAR8 ) ; FUN2 ( VAR2 , VAR4 -> VAR9 ) ; break ; default : VAR5 = VAR10 ; } return VAR5 ; }

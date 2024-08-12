@@ -1,0 +1,1 @@
+static Bool FUN1 ( VAR1 * VAR2 ) { if ( ! VAR2 -> VAR3 . VAR4 ) { return 0 ; } if ( VAR2 -> VAR3 . VAR5 [ 0 ] . VAR3 && strlen ( VAR2 -> VAR3 . VAR5 [ 0 ] . VAR3 ) ) { return 1 ; } return 0 ; }

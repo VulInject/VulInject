@@ -1,0 +1,20 @@
+void FUN1(int VAR1, qemu_irq VAR2, VAR3 *VAR4)
+{
+    VAR5 *VAR6;
+    FUN2(VAR4, "");
+    VAR6 = FUN3(sizeof(VAR5));
+    FUN4(VAR1, 16, 1, VAR7, VAR6);
+    FUN5(VAR1, 16, 1, VAR8, VAR6);
+    FUN4(VAR1 + 0x10, 1, 1, VAR9, VAR6);
+    FUN5(VAR1 + 0x10, 1, 1, VAR10, VAR6);
+    FUN4(VAR1 + 0x10, 2, 2, VAR9, VAR6);
+    FUN5(VAR1 + 0x10, 2, 2, VAR10, VAR6);
+    FUN4(VAR1 + 0x1f, 1, 1, VAR11, VAR6);
+    FUN5(VAR1 + 0x1f, 1, 1, VAR12, VAR6);
+    VAR6->VAR2 = VAR2;
+    memcpy(VAR6->VAR13, VAR4->VAR13, 6);
+    FUN6(VAR6);
+    VAR6->VAR14 = FUN7(VAR4->VAR15, VAR4->VAR16, VAR4->VAR17, VAR18, VAR19, VAR6);
+    FUN8(VAR6->VAR14, VAR6->VAR13);
+    FUN9("", -1, 2, VAR20, VAR21, VAR6);
+}

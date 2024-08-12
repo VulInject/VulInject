@@ -1,0 +1,106 @@
+int FUN1(VAR1* VAR2, const VAR3* VAR4, UINT32 VAR5, VAR3* VAR6,
+const VAR3** VAR7, VAR8* VAR9, VAR8* VAR10)
+{
+int VAR11 = 0;
+UINT32 VAR12 = 0;
+VAR3* VAR13 = NULL;
+const VAR3* VAR14 = NULL;
+UINT32 VAR15 = 0;
+VAR3* VAR16 = NULL;
+UINT32 VAR17 = 0;
+UINT32 VAR18 = 0;
+UINT32 VAR19 = 0;
+UINT32 VAR20 = 3;
+
+FUN2(VAR2);
+FUN2(VAR4);
+FUN2(VAR5 > 0);
+FUN2(VAR7);
+FUN2(VAR9);
+FUN2(VAR10);
+
+if (VAR5 > 16384)
+return -1001;
+
+if ((VAR5 + 2) > *VAR9)
+return -1002;
+
+VAR16 = VAR6;
+*VAR7 = VAR6;
+VAR17 = VAR5;
+VAR13 = VAR2->VAR21;
+VAR15 = VAR5;
+VAR11 = FUN3(VAR2, VAR4, VAR5, VAR13, &VAR15,
+&VAR18);
+
+if (VAR11 < 0)
+return VAR11;
+
+if (VAR18 & VAR22)
+{
+VAR14 = VAR13;
+
+if (VAR15 > VAR5)
+return -1003;
+}
+else
+{
+VAR14 = VAR4;
+
+if (VAR15 != VAR5)
+return -1004;
+}
+
+VAR11 = 0;
+VAR13 = &VAR16[2];
+VAR12 = VAR17 - 2;
+
+if (VAR15 > 50)
+{
+const VAR3* VAR23 = NULL;
+VAR11 = FUN4(VAR2->VAR24, VAR14, VAR15, VAR13,
+&VAR23, &VAR12, &VAR19);
+}
+
+if (VAR11 < 0)
+return VAR11;
+
+if (!VAR11 || (VAR19 & VAR25))
+{
+if (VAR15 > VAR12)
+{
+FUN5(VAR2, VAR26);
+*VAR7 = VAR4;
+*VAR9 = VAR5;
+*VAR10 = 0;
+return 1;
+}
+
+VAR12 = VAR15;
+CopyMemory(&VAR16[2], VAR14, VAR15);
+}
+
+if (VAR19 & VAR27)
+{
+VAR19 |= VAR2->VAR28;
+VAR2->VAR28 = 0;
+}
+else if (VAR19 & VAR25)
+{
+VAR2->VAR28 = VAR25;
+}
+
+VAR18 |= VAR29;
+VAR16[0] = (VAR3)VAR18;
+VAR16[1] = (VAR3)VAR19;
+FUN6(VAR30, "",
+FUN7(VAR18),
+FUN8(VAR19));
+
+if (*VAR9 < (VAR12 + 2))
+return -1006;
+
+*VAR9 = VAR12 + 2;
+*VAR10 = VAR27 | VAR20;
+return 1;
+}

@@ -1,0 +1,1 @@
+const char * FUN1 ( void ) { if ( VAR1 [ 0 ] == '' ) { return VAR2 ; } return VAR1 ; }

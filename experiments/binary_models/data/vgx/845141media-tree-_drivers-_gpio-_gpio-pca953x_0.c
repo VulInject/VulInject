@@ -1,0 +1,63 @@
+static bool FUN1(struct VAR1 *VAR2, VAR3 *VAR4)
+{
+u8 VAR5[VAR6];
+u8 VAR7[VAR6];
+bool VAR8 = false;
+bool VAR9 = false;
+u8 VAR10[VAR6];
+int VAR11, VAR12;
+
+if (VAR2->VAR13 & VAR14) {
+
+VAR11 = FUN2(VAR2, VAR15, VAR10);
+if (VAR11)
+return false;
+
+
+VAR11 = FUN2(VAR2, VAR16, VAR5);
+if (VAR11)
+return false;
+
+for (VAR12 = 0; VAR12 < FUN3(VAR2); VAR12++) {
+
+VAR4[VAR12] = (~VAR5[VAR12] & VAR2->VAR17[VAR12]) |
+(VAR5[VAR12] & VAR2->VAR18[VAR12]);
+VAR4[VAR12] &= VAR10[VAR12];
+if (VAR4[VAR12])
+VAR8 = true;
+}
+
+return VAR8;
+}
+
+VAR11 = FUN2(VAR2, VAR2->VAR19->VAR20, VAR5);
+if (VAR11)
+return false;
+
+
+for (VAR12 = 0; VAR12 < FUN3(VAR2); VAR12++)
+VAR5[VAR12] &= VAR2->VAR21[VAR12];
+
+memcpy(VAR7, VAR2->VAR22, FUN3(VAR2));
+
+for (VAR12 = 0; VAR12 < FUN3(VAR2); VAR12++) {
+VAR10[VAR12] = (VAR5[VAR12] ^ VAR7[VAR12]) & VAR2->VAR23[VAR12];
+if (VAR10[VAR12])
+VAR9 = true;
+}
+
+if (!VAR9)
+return false;
+
+memcpy(VAR2->VAR22, VAR5, FUN3(VAR2));
+
+for (VAR12 = 0; VAR12 < FUN3(VAR2); VAR12++) {
+VAR4[VAR12] = (VAR7[VAR12] & VAR2->VAR17[VAR12]) |
+(VAR5[VAR12] & VAR2->VAR18[VAR12]);
+VAR4[VAR12] &= VAR10[VAR12];
+if (VAR4[VAR12])
+VAR8 = true;
+}
+
+return VAR8;
+}

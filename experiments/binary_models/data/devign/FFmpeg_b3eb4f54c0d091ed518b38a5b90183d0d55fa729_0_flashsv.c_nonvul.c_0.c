@@ -1,0 +1,32 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4, int VAR5, int VAR6)
+{
+    z_stream VAR7;
+    int VAR8;
+    VAR7.VAR9 = NULL;
+    VAR7.VAR10 = NULL;
+    VAR7.VAR11 = NULL;
+    VAR2->VAR12.VAR13 = VAR4;
+    VAR2->VAR12.VAR14 = VAR5;
+    VAR2->VAR12.VAR15 = VAR2->VAR16;
+    VAR2->VAR12.VAR17 = VAR2->VAR18 * 3;
+    FUN2(&VAR2->VAR12, VAR19);
+    if (FUN3(&VAR7, 0) != VAR20)
+        return -1;
+    VAR7.VAR13 = VAR2->VAR16;
+    VAR7.VAR14 = VAR2->VAR18 * 3 - VAR2->VAR12.VAR17;
+    VAR7.VAR15 = VAR2->VAR21;
+    VAR7.VAR17 = VAR2->VAR22;
+    FUN4(&VAR7, VAR19);
+    FUN5(&VAR7);
+    if ((VAR8 = FUN6(&VAR2->VAR12)) != VAR20)
+    {
+        FUN7(VAR2->VAR23, VAR24, "", VAR8);
+        return VAR25;
+    }
+    VAR2->VAR12.VAR13 = VAR2->VAR21;
+    VAR2->VAR12.VAR14 = VAR2->VAR22 - VAR7.VAR17;
+    VAR2->VAR12.VAR15 = VAR2->VAR16;
+    VAR2->VAR12.VAR17 = VAR2->VAR18 * 3;
+    FUN2(&VAR2->VAR12, VAR19);
+    return 0;
+}

@@ -1,0 +1,58 @@
+static void FUN1(const VAR1 *VAR2, int32_t VAR3, VAR1 *VAR4, int32_t VAR5, int32_t VAR6, uint8_t VAR7)
+{
+    int32_t VAR8;
+    int32_t VAR9, VAR10;
+    v16i8 VAR11, VAR12, VAR13, VAR14, VAR15;
+    v16u8 VAR16, VAR17;
+    v16i8 VAR18, VAR19, VAR20;
+    v8i16 VAR21, VAR22, VAR23, VAR24;
+    v8i16 VAR25, VAR26, VAR27;
+    v8i16 VAR28, VAR29, VAR30, VAR31;
+    v16u8 VAR32, VAR33;
+    FUN2(&VAR34[48], 16, VAR18, VAR19, VAR20);
+    FUN3(VAR2, VAR3, VAR11, VAR12, VAR13, VAR14, VAR15);
+    VAR2 += (5 * VAR3);
+    FUN4(VAR11, VAR12, VAR13, VAR14, VAR15);
+    VAR21 = FUN5(VAR11, VAR12, VAR18, VAR19, VAR20);
+    VAR23 = FUN5(VAR13, VAR14, VAR18, VAR19, VAR20);
+    FUN6(VAR21, VAR21, VAR23, VAR23, VAR22, VAR24);
+    VAR25 = FUN7(VAR15, VAR15, VAR18, VAR19, VAR20);
+    for (VAR8 = (VAR6 >> 1); VAR8--;)
+    {
+        FUN8(VAR2, VAR3, VAR11, VAR12);
+        VAR2 += (2 * VAR3);
+        FUN9(VAR11, VAR12);
+        FUN10(VAR4, VAR5, VAR16, VAR17);
+        VAR26 = FUN5(VAR11, VAR12, VAR18, VAR19, VAR20);
+        VAR27 = (VAR35)FUN11((VAR36)VAR26, (VAR36)VAR26);
+        VAR28 = FUN12(VAR21, VAR22, VAR23, VAR24, VAR25, VAR26);
+        VAR30 = FUN12(VAR22, VAR23, VAR24, VAR25, VAR26, VAR27);
+        if (VAR7)
+        {
+            VAR29 = FUN13(VAR24, 5);
+            VAR31 = FUN13(VAR25, 5);
+        }
+        else
+        {
+            VAR29 = FUN13(VAR23, 5);
+            VAR31 = FUN13(VAR24, 5);
+        }
+        FUN14(VAR29, VAR31, 7);
+        VAR28 = FUN15(VAR28, VAR29);
+        VAR29 = FUN15(VAR30, VAR31);
+        VAR32 = FUN16(VAR28, VAR28);
+        VAR33 = FUN16(VAR29, VAR29);
+        FUN17(VAR32, VAR16, VAR33, VAR17, VAR16, VAR17);
+        VAR9 = FUN18((VAR37)VAR16, 0);
+        VAR10 = FUN18((VAR37)VAR17, 0);
+        FUN19(VAR9, VAR4);
+        VAR4 += VAR5;
+        FUN19(VAR10, VAR4);
+        VAR4 += VAR5;
+        VAR21 = VAR23;
+        VAR22 = VAR24;
+        VAR23 = VAR25;
+        VAR24 = VAR26;
+        VAR25 = VAR27;
+    }
+}

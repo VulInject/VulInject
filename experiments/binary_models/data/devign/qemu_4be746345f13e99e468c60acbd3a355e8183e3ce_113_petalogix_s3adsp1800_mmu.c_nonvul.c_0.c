@@ -1,0 +1,52 @@
+FUN1(VAR1 *VAR2)
+{
+    ram_addr_t VAR3 = VAR2->VAR3;
+    const char *VAR4 = VAR2->VAR4;
+    VAR5 *VAR6;
+    VAR7 *VAR8;
+    VAR9 *VAR10;
+    int VAR11;
+    hwaddr VAR12 = VAR13;
+    VAR14 *VAR15 = FUN2(VAR14, 1);
+    VAR14 *VAR16 = FUN2(VAR14, 1);
+    qemu_irq VAR17[32];
+    VAR14 *VAR18 = FUN3();
+    if (VAR4 == NULL)
+    {
+        VAR4 = "";
+    }
+    VAR8 = FUN4(VAR4);
+    FUN5(VAR15, NULL, "", VAR19, &VAR20);
+    FUN6(VAR15);
+    FUN7(VAR18, 0x00000000, VAR15);
+    FUN5(VAR16, NULL, "", VAR3, &VAR20);
+    FUN6(VAR16);
+    FUN7(VAR18, VAR12, VAR16);
+    VAR10 = FUN8(VAR21, 0, 0);
+    FUN9(VAR22, NULL, "", VAR23, VAR10 ? FUN10(VAR10) : NULL, (64 * 1024), VAR23 >> 16, 1, 0x89, 0x18, 0x0000, 0x0, 1);
+    VAR6 = FUN11(NULL, "");
+    FUN12(VAR6, "", 1 << VAR24 | 1 << VAR25);
+    FUN13(VAR6);
+    FUN14(FUN15(VAR6), 0, VAR26);
+    FUN16(FUN15(VAR6), 0, FUN17(FUN18(VAR8), VAR27));
+    for (VAR11 = 0; VAR11 < 32; VAR11++)
+    {
+        VAR17[VAR11] = FUN17(VAR6, VAR11);
+    }
+    FUN19("", VAR28, VAR17[VAR25]);
+    VAR6 = FUN11(NULL, "");
+    FUN12(VAR6, "", 0);
+    FUN12(VAR6, "", 62 * 1000000);
+    FUN13(VAR6);
+    FUN14(FUN15(VAR6), 0, VAR29);
+    FUN16(FUN15(VAR6), 0, VAR17[VAR30]);
+    FUN20(&VAR31[0], "");
+    VAR6 = FUN11(NULL, "");
+    FUN21(VAR6, &VAR31[0]);
+    FUN12(VAR6, "", 0);
+    FUN12(VAR6, "", 0);
+    FUN13(VAR6);
+    FUN14(FUN15(VAR6), 0, VAR32);
+    FUN16(FUN15(VAR6), 0, VAR17[VAR24]);
+    FUN22(VAR8, VAR12, VAR3, VAR2->VAR33, VAR34, VAR35);
+}

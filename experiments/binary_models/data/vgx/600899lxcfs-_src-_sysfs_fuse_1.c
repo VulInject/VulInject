@@ -1,0 +1,1 @@
+static int FUN1 ( const char * VAR1 , char * VAR2 , size_t VAR3 , off_t VAR4 , struct VAR5 * VAR6 ) { struct VAR7 * VAR8 = FUN2 ( VAR6 -> VAR9 ) ; switch ( VAR8 -> VAR10 ) { case VAR11 : return FUN3 ( VAR12 , VAR2 , VAR3 , VAR4 , VAR8 ) ; case VAR13 : break ; case VAR14 : break ; case VAR15 : break ; } return - VAR16 ; }

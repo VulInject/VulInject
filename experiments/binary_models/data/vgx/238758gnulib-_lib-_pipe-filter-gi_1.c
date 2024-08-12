@@ -1,0 +1,1 @@
+FUN1 ( ) { int VAR1 ; FUN2 ( VAR2 , NULL ) ; VAR1 = FUN3 ( VAR2 ) ; free ( VAR2 ) ; return VAR1 ; }

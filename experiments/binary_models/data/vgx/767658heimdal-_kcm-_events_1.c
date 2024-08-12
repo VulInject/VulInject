@@ -1,0 +1,1 @@
+krb5_error_code FUN1 ( krb5_context VAR1 , kcm_ccache VAR2 , VAR3 * VAR4 ) { kcm_event VAR5 ; krb5_error_code VAR6 ; VAR5 . VAR2 = VAR2 ; VAR6 = FUN2 ( VAR1 , & VAR5 , VAR4 ) ; if ( VAR6 ) { return VAR6 ; } VAR6 = FUN3 ( VAR1 , & VAR5 ) ; if ( VAR6 ) { return VAR6 ; } return 0 ; }

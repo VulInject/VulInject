@@ -1,0 +1,1 @@
+static const struct VAR1 * FUN1 ( int VAR2 ) { const struct VAR1 * VAR1 ; for ( VAR1 = VAR3 ; VAR1 -> VAR4 ; VAR1 ++ ) { if ( VAR1 -> VAR4 == VAR2 ) { return ( VAR1 ) ; } } return ( NULL ) ; }

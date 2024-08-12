@@ -1,0 +1,56 @@
+static int
+FUN1(void)
+{
+char VAR1[] = "\
+%YAML 1.1\VAR2\
+---\VAR2\
+VAR3:\VAR2\
+VAR4-VAR5:\VAR2\
+- VAR6-VAR7:\VAR2\
+VAR8: [\""]\VAR2\
+VAR9: [\"", \""]\VAR2\
+VAR10-VAR11: [\"", \""]\VAR2\
+- VAR12-VAR7:\VAR2\
+VAR8:\VAR2\
+- 192.168.0.0/24\VAR2\
+\VAR2\
+VAR9:\VAR2\
+- VAR13\VAR2\
+- VAR14\VAR2\
+\VAR2\
+VAR10-VAR11:\VAR2\
+- VAR15\VAR2\
+";
+
+FUN2();
+FUN3();
+
+FUN4(FUN5(VAR1, strlen(VAR1)) != 0);
+
+VAR16 *VAR17;
+VAR17 = FUN6("");
+FUN7(VAR17);
+
+VAR16 *VAR18;
+
+VAR18 = FUN8(&VAR17->VAR19);
+FUN7(VAR18);
+FUN4(strcmp(VAR18->VAR20, "") != 0);
+
+VAR18 = FUN8(&VAR18->VAR19);
+FUN7(VAR18);
+FUN4(strcmp(VAR18->VAR20, "") != 0);
+
+VAR18 = FUN9(VAR18, "");
+FUN7(VAR18);
+
+VAR18 = FUN8(&VAR18->VAR19);
+FUN7(VAR18);
+FUN4(strcmp(VAR18->VAR20, "") != 0);
+FUN4(strcmp(VAR18->VAR21, "") != 0);
+
+FUN10();
+FUN11();
+
+VAR22;
+}

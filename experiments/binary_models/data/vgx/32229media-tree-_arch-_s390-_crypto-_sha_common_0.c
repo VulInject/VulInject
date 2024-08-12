@@ -1,0 +1,35 @@
+int FUN1(struct VAR1 *VAR2, const VAR3 *VAR4, unsigned int VAR5)
+{
+struct VAR6 *VAR7 = FUN2(VAR2);
+unsigned int VAR8 = FUN3(VAR2->VAR9);
+unsigned int VAR10, VAR11;
+
+
+VAR10 = VAR7->VAR12 & (VAR8 - 1);
+VAR7->VAR12 += VAR5;
+
+if ((VAR10 + VAR5) < VAR8)
+goto VAR13;
+
+
+if (VAR10) {
+memcpy(VAR7->VAR14 + VAR10, VAR4, VAR8 - VAR10);
+FUN4(VAR7->VAR15, VAR7->VAR16, VAR7->VAR14, VAR8);
+VAR4 += VAR8 - VAR10;
+VAR5 -= VAR8 - VAR10;
+VAR10 = 0;
+}
+
+
+if (VAR5 >= VAR8) {
+VAR11 = VAR5 & ~(VAR8 - 1);
+FUN4(VAR7->VAR15, VAR7->VAR16, VAR4, VAR11);
+VAR4 += VAR11;
+VAR5 -= VAR11;
+}
+VAR13:
+if (VAR5)
+memcpy(VAR7->VAR14 + VAR10 , VAR4, VAR5);
+
+return 0;
+}

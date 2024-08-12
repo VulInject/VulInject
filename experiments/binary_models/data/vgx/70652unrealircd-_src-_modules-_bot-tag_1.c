@@ -1,0 +1,1 @@
+FUN1 ( ) { MessageTagHandlerInfo VAR1 ; FUN2 ( VAR2 ) ; VAR1 . VAR3 = "" ; VAR1 . VAR4 = VAR5 ; VAR1 . VAR6 = VAR7 ; FUN3 ( VAR2 -> VAR8 , & VAR1 ) ; memset ( & VAR1 , 0 , sizeof ( VAR1 ) ) ; VAR1 . VAR3 = "" ; VAR1 . VAR4 = VAR5 ; VAR1 . VAR6 = VAR7 ; FUN3 ( VAR2 -> VAR8 , & VAR1 ) ; FUN4 ( VAR2 -> VAR8 , VAR9 , 0 , VAR10 ) ; return VAR11 ; }

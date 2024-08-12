@@ -1,0 +1,1 @@
+void FUN1 ( const struct VAR1 * VAR2 , int VAR3 , uint64_t VAR4 , const unsigned char * VAR5 ) { char VAR6 [ VAR7 ] ; FUN2 ( VAR5 , VAR3 , VAR4 , 0 ) ; FUN3 ( VAR2 , VAR6 , VAR7 ) ; fprintf ( VAR8 , "" , VAR6 ) ; }

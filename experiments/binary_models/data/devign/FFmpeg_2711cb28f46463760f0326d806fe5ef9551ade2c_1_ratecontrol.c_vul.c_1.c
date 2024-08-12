@@ -1,0 +1,38 @@
+static double FUN1(VAR1 *VAR2, VAR3 *VAR4, double VAR5, int VAR6)
+{
+    VAR7 *VAR8 = &VAR2->VAR9;
+    VAR10 *VAR11 = VAR2->VAR12;
+    double VAR13, VAR14;
+    const int VAR15 = VAR4->VAR16;
+    const double VAR17 = VAR2->VAR17;
+    int VAR18;
+    double VAR19[] = {VAR20, VAR21, VAR4->VAR22 * VAR4->VAR23, VAR4->VAR24 * VAR4->VAR23, (VAR4->VAR22 + VAR4->VAR24) * (double)VAR4->VAR23, VAR4->VAR25 / VAR17, VAR4->VAR15 == VAR26 ? (VAR4->VAR27 + VAR4->VAR28) * 0.5 : VAR4->VAR27, VAR4->VAR29 / VAR17, VAR4->VAR30 / VAR17, VAR4->VAR31 / VAR17, VAR4->VAR15 == VAR32, VAR4->VAR15 == VAR33, VAR4->VAR15 == VAR26, VAR8->VAR34[VAR15] / (double)VAR8->VAR35[VAR15], VAR11->VAR36, VAR8->VAR37[VAR32] / (double)VAR8->VAR35[VAR32], VAR8->VAR37[VAR33] / (double)VAR8->VAR35[VAR33], VAR8->VAR38[VAR33] / (double)VAR8->VAR35[VAR33], VAR8->VAR38[VAR26] / (double)VAR8->VAR35[VAR26], (VAR8->VAR37[VAR15] + VAR8->VAR38[VAR15]) / (double)VAR8->VAR35[VAR15], 0};
+    VAR14 = FUN2(VAR8->VAR39, VAR19, VAR4);
+    if (FUN3(VAR14))
+    {
+        FUN4(VAR2->VAR12, VAR40, ""%VAR2\"", VAR2->VAR12->VAR41);
+        return -1;
+    }
+    VAR8->VAR42 += VAR14;
+    VAR14 *= VAR5;
+    if (VAR14 < 0.0)
+        VAR14 = 0.0;
+    VAR14 += 1.0;
+    for (VAR18 = 0; VAR18 < VAR2->VAR12->VAR43; VAR18++)
+    {
+        VAR44 *VAR45 = VAR2->VAR12->VAR46;
+        if (VAR45[VAR18].VAR47 > VAR6)
+            continue;
+        if (VAR45[VAR18].VAR48 < VAR6)
+            continue;
+        if (VAR45[VAR18].VAR23)
+            VAR14 = FUN5(VAR4, VAR45[VAR18].VAR23);
+        else
+            VAR14 *= VAR45[VAR18].VAR49;
+    }
+    VAR13 = FUN6(VAR4, VAR14);
+    if (VAR15 == VAR32 && VAR2->VAR12->VAR50 < 0.0)
+        VAR13 = -VAR13 * VAR2->VAR12->VAR50 + VAR2->VAR12->VAR51;
+    else if (VAR15 == VAR26 && VAR2->VAR12->VAR52 < 0.0)
+        VAR13 = -VAR13 * VAR2->VAR12->VAR52 + VAR2->VAR12->VAR53;
+    return VAR13;

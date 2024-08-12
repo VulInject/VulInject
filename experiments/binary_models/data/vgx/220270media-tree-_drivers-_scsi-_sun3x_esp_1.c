@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR1 ) { u32 VAR2 ; int VAR3 ; VAR2 = FUN2 ( VAR4 ) ; FUN3 ( VAR2 | VAR5 , VAR4 ) ; VAR3 = 1000 ; while ( FUN2 ( VAR4 ) & VAR6 ) { if ( -- VAR3 == 0 ) { FUN4 ( "" , ) break ; } FUN5 ( 1 ) ; } }

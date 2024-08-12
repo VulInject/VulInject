@@ -1,0 +1,1 @@
+int FUN1 ( const char * VAR1 ) { char VAR2 [ 64 ] ; if ( FUN2 ( VAR1 ) ) { return 0 ; } if ( FUN3 ( VAR3 , VAR1 , VAR2 ) == 1 ) { return 6 ; } return 0 ; }

@@ -1,0 +1,1 @@
+int FUN1 ( int VAR1 ) { int VAR2 = FUN2 ( VAR1 , VAR3 ) ; if ( VAR2 < 0 ) { return 0 ; } return 1 ; }

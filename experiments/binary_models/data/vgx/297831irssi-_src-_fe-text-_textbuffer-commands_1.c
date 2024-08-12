@@ -1,0 +1,1 @@
+static void FUN1 ( const char * VAR1 ) { VAR2 * VAR3 ; char * VAR4 ; FUN2 ( VAR1 != NULL ) ; VAR3 = FUN3 ( VAR5 ) ; FUN4 ( VAR3 -> VAR6 , FUN5 ( VAR3 -> VAR6 -> VAR7 , VAR1 ) ) ; FUN6 ( VAR3 -> VAR6 , NULL ) ; VAR4 = VAR3 -> VAR6 -> VAR7 == 0 ?FUN7 ( "" ) : FUN8 ( VAR3 -> VAR6 -> VAR7 ) ; FUN9 ( VAR5 , VAR8 , VAR9 , VAR4 ) ; FUN10 ( VAR4 ) ; }

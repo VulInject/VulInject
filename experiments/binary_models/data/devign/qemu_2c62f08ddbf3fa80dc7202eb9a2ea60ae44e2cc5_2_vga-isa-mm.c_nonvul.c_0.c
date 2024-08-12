@@ -1,0 +1,11 @@
+int FUN1(hwaddr VAR1, hwaddr VAR2, int VAR3, VAR4 *VAR5)
+{
+    VAR6 *VAR7;
+    VAR7 = FUN2(sizeof(*VAR7));
+    VAR7->VAR8.VAR9 = VAR10 >> 20;
+    FUN3(&VAR7->VAR8);
+    FUN4(VAR7, VAR1, VAR2, VAR3, VAR5);
+    VAR7->VAR8.VAR11 = FUN5(VAR7->VAR8.update, VAR7->VAR8.VAR12, VAR7->VAR8.VAR13, VAR7);
+    FUN6(&VAR7->VAR8, VAR5);
+    return 0;
+}

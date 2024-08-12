@@ -1,0 +1,1 @@
+FUN1 ( "" ) ; FUN2 ( VAR1 , int , 0 ) ; static int __init FUN3 ( void ) { VAR2 = FUN4 ( ) ; return 0 ; }

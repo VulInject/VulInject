@@ -1,0 +1,9 @@
+void FUN1(const struct VAR1 *VAR2)
+{
+FUN2(&VAR3.VAR4);
+if (VAR2 == VAR3.VAR2) {
+VAR3.VAR2 = NULL;
+VAR3.VAR5 = NULL;
+}
+FUN3(&VAR3.VAR4);
+}

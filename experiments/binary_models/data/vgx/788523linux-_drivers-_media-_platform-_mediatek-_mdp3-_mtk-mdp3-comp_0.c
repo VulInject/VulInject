@@ -1,0 +1,24 @@
+int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+const struct VAR5 *VAR6,
+const struct VAR7 *VAR8)
+{
+struct VAR9 *VAR10 = &VAR2->VAR11->VAR10;
+int VAR12;
+
+if (VAR6->VAR13 < 0 || VAR6->VAR13 >= VAR14) {
+FUN2(VAR10, "", VAR6->VAR13);
+return -VAR15;
+}
+
+VAR4->VAR16 = VAR2->VAR16[VAR6->VAR13];
+if (!VAR4->VAR16) {
+FUN2(VAR10, "", VAR6->VAR13);
+return -VAR15;
+}
+
+VAR4->VAR6 = VAR6;
+VAR4->VAR17 = &VAR8->VAR18[VAR6->VAR17];
+for (VAR12 = 0; VAR12 < VAR6->VAR19; VAR12++)
+VAR4->VAR20[VAR12] = &VAR8->VAR20[VAR6->VAR20[VAR12]];
+return 0;
+}

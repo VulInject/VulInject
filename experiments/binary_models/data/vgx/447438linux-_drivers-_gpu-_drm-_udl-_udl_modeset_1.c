@@ -1,0 +1,1 @@
+static long FUN1 ( unsigned int VAR1 ) { return FUN2 ( VAR1 ) ; }

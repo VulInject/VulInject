@@ -1,0 +1,1 @@
+size_t FUN1 ( void ) { size_t VAR1 = FUN2 ( ) ; int VAR2 ; if ( VAR1 ) { VAR2 = 0.90 * VAR1 ; } else { VAR2 = VAR3 ; } return VAR2 ; }

@@ -1,0 +1,39 @@
+int
+FUN1(struct VAR1 *VAR2, int VAR3,
+int VAR4, char *VAR5, VAR6 *VAR7)
+{
+struct VAR8 *VAR9;
+size_t VAR10 = sizeof(VAR9->VAR11) + *VAR7;
+int VAR12 = 1, VAR13;
+
+VAR13 = VAR2->VAR14++;
+
+if (*VAR7 > sizeof(VAR9->VAR5))
+return VAR12;
+
+VAR9 = malloc(VAR10, VAR15, VAR16 | VAR17);
+VAR9->VAR11.VAR4 = FUN2(VAR4);
+VAR9->VAR11.VAR7 = FUN2(*VAR7);
+VAR9->VAR11.VAR18 |= VAR19;
+VAR9->VAR11.VAR18 |= FUN3(VAR13);
+VAR9->VAR11.VAR18 |= FUN4(VAR3);
+VAR9->VAR11.VAR18 = FUN2(VAR9->VAR11.VAR18);
+memcpy(&VAR9->VAR5, VAR5, *VAR7);
+
+if (FUN5(VAR2, VAR13, (char *)VAR9, &VAR10)) {
+FUN6(("", FUN7(VAR2)));
+return VAR12;
+}
+
+if (VAR5) {
+*VAR7 = FUN8(*VAR7, VAR10);
+memcpy(VAR5, VAR9->VAR5, *VAR7);
+}
+
+if (VAR9->VAR11.VAR18 & VAR20)
+VAR12 = VAR9->VAR11.VAR21;
+else
+VAR12 = 0;
+free(VAR9, VAR15, VAR10);
+return VAR12;
+}

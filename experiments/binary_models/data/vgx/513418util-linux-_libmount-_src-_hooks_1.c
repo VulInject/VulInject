@@ -1,0 +1,1 @@
+const struct VAR1 * FUN1 ( struct VAR2 * VAR3 , const char * VAR4 ) { size_t VAR5 ; assert ( VAR4 ) ; for ( VAR5 = 0 ; VAR5 < FUN2 ( VAR6 ) ; VAR5 ++ ) { const struct VAR1 * VAR7 = VAR6 [ VAR5 ] ; if ( strcmp ( VAR4 , VAR7 -> VAR4 ) == 0 ) { return VAR7 ; } } return NULL ; }

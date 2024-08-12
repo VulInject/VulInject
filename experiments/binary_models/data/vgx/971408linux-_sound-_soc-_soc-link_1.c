@@ -1,0 +1,1 @@
+static inline int FUN1 ( struct VAR1 * VAR2 , const char * VAR3 , int VAR4 ) { switch ( VAR4 ) { case - VAR5 : case - VAR6 : break ; default : FUN2 ( VAR2 -> VAR7 , "" , VAR3 , VAR2 -> VAR8 -> VAR9 , VAR4 ) ; } return VAR4 ; }

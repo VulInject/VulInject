@@ -1,0 +1,53 @@
+static void FUN1(VAR1 *VAR2)
+{
+uint32_t VAR3, VAR4;
+uint32_t VAR5, VAR6;
+uint32_t VAR7, VAR8;
+uint32_t VAR9;
+uint32_t VAR10;
+uint32_t VAR11;
+uint32_t VAR12;
+int VAR13;
+
+VAR2->VAR14 = 0;
+
+VAR10 = VAR2->VAR15 + (VAR16) VAR2->VAR17;
+VAR5 = VAR10;
+VAR7 = VAR10 + VAR2->VAR18;
+
+VAR6 = ((VAR19 << 24) | (VAR5 & 0xFFFFFF));
+VAR8 = ((VAR20 << 24) | (VAR7 & 0xFFFFFF));
+VAR9 = ((VAR21 << 24) | (VAR5 >> 24) |
+((VAR7 & 0xff000000) >> 16));
+
+VAR2->VAR22 =
+FUN2(VAR2, VAR23, 0,
+&VAR4, &VAR3, 1) - 1;
+
+FUN3();
+(void) *(volatile VAR16 *)VAR2->VAR22;
+
+FUN4(VAR24, (VAR25 << 16));
+FUN4(VAR26, VAR9);
+FUN4(VAR26, VAR6);
+FUN4(VAR26, VAR8);
+
+FUN4(VAR26, VAR4);
+FUN4(VAR26, VAR3);
+FUN5();
+FUN4(VAR26, VAR9 | VAR27);
+FUN6(VAR26);
+
+VAR2->VAR28 = 0;
+
+VAR13 = 10000000;
+while (!(FUN6(0x41c) & 0x80000000) && VAR13--);
+
+VAR12 = *(VAR2->VAR29);
+VAR11 = ((volatile char *)VAR2->VAR22 - VAR2->VAR30) +
+VAR2->VAR15 + (VAR16) VAR2->VAR17 + 4;
+
+
+
+VAR2->VAR28 = VAR11 - VAR12;
+}

@@ -1,0 +1,1 @@
+static void FUN1 ( Header VAR1 , const char * VAR2 , const char * VAR3 ) { rpmsenseFlags VAR4 = ( VAR5 | VAR6 ) ; char * VAR7 = FUN2 ( NULL , "" , VAR2 , "" , NULL ) ; FUN3 ( VAR1 , VAR8 , VAR7 ) ; FUN3 ( VAR1 , VAR9 , VAR3 ) ; FUN4 ( VAR1 , VAR10 , & VAR4 , 1 ) ; }

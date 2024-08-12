@@ -1,0 +1,1 @@
+int FUN1 ( void * VAR1 , int VAR2 ) { struct VAR3 * VAR4 = VAR1 ; uint8_t VAR5 , VAR6 ; VAR5 = FUN2 ( VAR4 , VAR7 ) ; VAR6 = FUN2 ( VAR4 , VAR8 ) ; VAR5 &= ~ VAR9 ; VAR5 |= VAR10 ; VAR6 &= ~ VAR11 ; VAR6 |= VAR2 << VAR12 ; FUN3 ( VAR4 , VAR7 , VAR5 ) ; FUN3 ( VAR4 , VAR8 , VAR6 ) ; return 0 ; } { VAR13 , VAR14 }

@@ -1,0 +1,58 @@
+FUN1 (VAR1       *VAR2,
+VAR3   *VAR4,
+VAR5              *VAR6,
+VAR7 *VAR8)
+{
+VAR9 *VAR10, *VAR11;
+const VAR12 *VAR13;
+gboolean VAR14, VAR15;
+const char *VAR16;
+GstClockTime VAR17;
+g_autofree char *VAR18 = NULL;
+VAR19 *VAR20;
+
+if (VAR6) {
+FUN2 ("",
+FUN3 (VAR4),
+VAR6->VAR21);
+FUN4 (VAR8, FUN5(""), VAR6->VAR21);
+return;
+}
+
+VAR10 = FUN6 (VAR4);
+VAR15 = (VAR10 != NULL);
+VAR11 = FUN7 (VAR4);
+VAR14 = (VAR11 != NULL);
+
+if (VAR14 == VAR15)
+VAR16 = FUN5("");
+else if (VAR14)
+VAR16 = FUN5("");
+else
+VAR16 = FUN5("");
+
+FUN8 (VAR8->VAR22->VAR23, VAR16);
+
+
+VAR17 = FUN9 (VAR4);
+VAR18 = FUN10 (VAR17 / VAR24 * 1000);
+FUN4 (VAR8, FUN5(""), VAR18);
+
+VAR20 = FUN11 (VAR4);
+if (VAR20) {
+FUN12 (VAR8, VAR20, FUN5(""));
+FUN13 (VAR20);
+}
+
+VAR13 = FUN14 (VAR4);
+FUN15 (VAR8, VAR13);
+
+
+if (VAR10)
+FUN16 (VAR8, VAR10->VAR25);
+if (VAR11)
+FUN17 (VAR8, VAR11->VAR25);
+
+FUN18 (VAR10);
+FUN18 (VAR11);
+}

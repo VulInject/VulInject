@@ -1,0 +1,1 @@
+void * FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 , uint16_t VAR5 ) { int VAR6 = 0 ; uint32_t VAR7 = ( VAR5 + 3 ) / 4 ; __IO VAR8 * VAR9 = VAR2 -> VAR10 . VAR11 [ 0 ] ; for ( VAR6 = 0 ; VAR6 < VAR7 ; VAR6 ++ , VAR4 += 4 ) { * ( __packed VAR8 * ) VAR4 = FUN2 ( VAR9 ) ; } return ( ( void * ) VAR4 ) ; }

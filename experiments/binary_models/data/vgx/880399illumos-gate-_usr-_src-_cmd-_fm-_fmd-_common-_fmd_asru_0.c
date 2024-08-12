@@ -1,0 +1,29 @@
+void
+FUN1(VAR1 *VAR2,
+void (*VAR3)(VAR4 *, void *), void *VAR5)
+{
+VAR4 *VAR6, **VAR7, **VAR8;
+uint_t VAR9, VAR10;
+
+(void) FUN2(&VAR2->VAR11);
+
+VAR7 = VAR8 = FUN3(VAR2->VAR12 * sizeof (VAR4 *),
+VAR13);
+VAR9 = VAR2->VAR12;
+
+for (VAR10 = 0; VAR10 < VAR2->VAR14; VAR10++) {
+for (VAR6 = VAR2->VAR15[VAR10]; VAR6 != NULL;
+VAR6 = VAR6->VAR16)
+*VAR8++ = FUN4(VAR6);
+}
+
+FUN5(VAR8 == VAR7 + VAR9);
+(void) FUN6(&VAR2->VAR11);
+
+for (VAR10 = 0; VAR10 < VAR9; VAR10++) {
+FUN7(VAR7[VAR10], VAR5);
+FUN8(VAR2, VAR7[VAR10]);
+}
+
+FUN9(VAR7, VAR9 * sizeof (VAR4 *));
+}

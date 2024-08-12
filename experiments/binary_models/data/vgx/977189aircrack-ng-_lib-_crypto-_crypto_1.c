@@ -1,0 +1,1 @@
+static inline unsigned long FUN1 ( const unsigned char * VAR1 , int VAR2 ) { unsigned long VAR3 = 0xFFFFFFFF ; for ( ; VAR2 > 0 ; VAR2 -- , VAR1 ++ ) { VAR3 = VAR4 [ ( VAR3 ^ * VAR1 ) & 0xFF ] ^ ( VAR3 >> 8 ) ; } return ( ~ VAR3 ) ; }

@@ -1,0 +1,1 @@
+static void FUN1 ( TimerClientData VAR1 , struct VAR2 * VAR3 ) { struct VAR4 * VAR5 = VAR1 . VAR6 ; VAR5 -> VAR7 = 0 ; FUN2 ( VAR5 ) ; if ( VAR5 -> VAR8 && ! VAR5 -> VAR9 && VAR5 -> VAR10 == 0 ) { FUN3 ( VAR5 , "" , VAR11 ) ; } if ( VAR5 -> VAR12 != NULL ) { FUN4 ( VAR3 , VAR5 -> VAR12 ) ; } if ( VAR5 -> VAR13 != NULL ) { FUN4 ( VAR3 , VAR5 -> VAR13 ) ; } }

@@ -1,0 +1,52 @@
+int
+FUN1(struct VAR1 *VAR2, uint16_be_t VAR3)
+{
+struct VAR4 *VAR5;
+int VAR6 = 0;
+
+FUN2("", "", VAR2);
+
+VAR5 = FUN3(0, VAR7);
+if (!VAR5) {
+VAR6 = -VAR8;
+goto VAR9;
+}
+
+VAR5->VAR10 = VAR2->VAR11;
+
+
+if (FUN4(VAR2) == VAR12 &&
+!FUN5(VAR13, &VAR2->VAR14))
+FUN6(VAR15, &VAR2->VAR16, 0);
+
+VAR6 = FUN7(VAR2->VAR17, VAR3, 1, NULL);
+if (VAR6)
+goto VAR9;
+
+FUN8(&VAR2->VAR18);
+FUN9(&VAR2->VAR19, VAR5);
+FUN10(VAR20, &VAR5->VAR21);
+FUN11(VAR5);
+VAR5->VAR22.VAR23 = VAR2;
+
+FUN12(&VAR5->VAR22.VAR24, 0, VAR3,
+VAR2->VAR25);
+VAR2->VAR25++;
+FUN13(&VAR2->VAR18);
+
+FUN14(VAR26);
+FUN14(VAR27);
+
+if (!FUN15(VAR28, &VAR2->VAR14))
+(void) FUN16(VAR2);
+
+FUN17(VAR5);
+
+FUN2("", "", VAR2);
+return (0);
+
+VAR9:
+if (VAR5)
+FUN17(VAR5);
+return (VAR6);
+}

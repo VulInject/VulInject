@@ -1,0 +1,234 @@
+FUN1(VAR1)
+{
+pbs_attribute  VAR2;
+VAR3  *VAR4 = new FUN2();
+
+memset(&VAR2, 0, sizeof(VAR2));
+
+VAR2.VAR5 = VAR6;
+VAR2.VAR7.VAR8 = VAR4;
+
+FUN3(&VAR2);
+FUN4(VAR2.VAR7.VAR8 == NULL);
+FUN4(VAR2.VAR5 == 0);
+
+}
+VAR9
+
+
+
+FUN1(VAR10)
+{
+pbs_attribute  VAR11;
+pbs_attribute  VAR12;
+pbs_attribute  VAR13;
+tlist_head     VAR14;
+
+const char    *VAR15[] = {"", "", ""};
+const char    *VAR16[] = { "", "", ""};
+
+memset(&VAR11, 0, sizeof(VAR11));
+memset(&VAR12, 0, sizeof(VAR12));
+memset(&VAR13, 0, sizeof(VAR13));
+
+
+
+FUN4(FUN5(NULL, NULL, NULL, NULL, 1) == VAR17);
+FUN4(FUN5(&VAR11, NULL, NULL, NULL, 1) == VAR17);
+
+FUN4(FUN5(&VAR11, NULL, NULL, "", 1) == VAR17);
+
+FUN4(FUN5(&VAR11, NULL, "", "", 1) == VAR17);
+FUN4(FUN5(&VAR11, "", NULL, "", 1) == VAR17);
+FUN4(FUN5(&VAR11, "", "", "", 1) == VAR17);
+
+
+FUN4(VAR11.VAR7.VAR8 == NULL);
+
+
+FUN4(FUN5(&VAR11, "", VAR15[0], VAR16[0], 1) == VAR18);
+FUN4((VAR11.VAR5 & VAR6) != 0);
+FUN4(VAR11.VAR7.VAR8 != 0);
+
+VAR3 *VAR4 = (VAR3 *)VAR11.VAR7.VAR8;
+FUN4(VAR4 != NULL);
+
+FUN4(FUN5(&VAR11, "", VAR15[1], VAR16[1], 1) == VAR18);
+FUN4((VAR11.VAR5 & VAR6) != 0);
+FUN4(VAR11.VAR7.VAR8 != 0);
+
+FUN4(FUN5(&VAR11, "", VAR15[2], VAR16[2], 1) == VAR18);
+FUN4((VAR11.VAR5 & VAR6) != 0);
+FUN4(VAR11.VAR7.VAR8 != 0);
+
+
+FUN4(FUN5(&VAR12, "", "", "", 1) == VAR18);
+FUN4((VAR12.VAR5 & VAR6) != 0);
+FUN4(VAR12.VAR7.VAR8 != 0);
+
+FUN4(FUN5(&VAR13, "", "", "", 1) == VAR18);
+FUN4((VAR13.VAR5 & VAR6) != 0);
+FUN4(VAR13.VAR7.VAR8 != 0);
+
+
+
+
+FUN4(FUN6(NULL, NULL, NULL, NULL, 0, 0) == VAR18);
+
+FUN4(FUN6(&VAR11, NULL, NULL, NULL, 0, 0) == VAR17);
+FUN4(FUN6(&VAR11, &VAR14, "", "", VAR19, VAR20) == VAR17);
+
+FUN4(FUN6(&VAR11, &VAR14, "", "", VAR19, VAR20) == VAR18);
+FUN4(FUN6(&VAR12, &VAR14, "", "", VAR19, VAR20) == VAR18);
+FUN4(FUN6(&VAR13, &VAR14, "", "", VAR19, VAR20) == VAR18);
+}
+VAR9
+
+
+FUN1(VAR21)
+{
+pbs_attribute  VAR11;
+pbs_attribute  VAR12;
+pbs_attribute  VAR13;
+pbs_attribute  VAR22;
+
+const char    *VAR15[] = {"", "", ""};
+const char    *VAR16[] = { "", "", ""};
+
+memset(&VAR11, 0, sizeof(VAR11));
+memset(&VAR12, 0, sizeof(VAR12));
+memset(&VAR13, 0, sizeof(VAR13));
+memset(&VAR22, 0, sizeof(VAR22));
+if (VAR22.VAR7.VAR8 == 0)
+{;}
+
+
+FUN4(FUN5(&VAR11, "", VAR15[0], VAR16[0], 1) == VAR18);
+FUN4((VAR11.VAR5 & VAR6) != 0);
+FUN4(VAR11.VAR7.VAR8 != 0);
+
+VAR3 *VAR4 = (VAR3 *)VAR11.VAR7.VAR8;
+FUN4(VAR4 != NULL);
+
+FUN4(FUN5(&VAR11, "", VAR15[1], VAR16[1], 1) == VAR18);
+FUN4((VAR11.VAR5 & VAR6) != 0);
+FUN4(VAR11.VAR7.VAR8 != 0);
+
+FUN4(FUN5(&VAR11, "", VAR15[2], VAR16[2], 1) == VAR18);
+FUN4((VAR11.VAR5 & VAR6) != 0);
+FUN4(VAR11.VAR7.VAR8 != 0);
+
+
+FUN4(FUN5(&VAR12, "", "", "", 1) == VAR18);
+FUN4((VAR12.VAR5 & VAR6) != 0);
+FUN4(VAR12.VAR7.VAR8 != 0);
+
+FUN4(FUN5(&VAR13, "", "", "", 1) == VAR18);
+FUN4((VAR13.VAR5 & VAR6) != 0);
+FUN4(VAR13.VAR7.VAR8 != 0);
+
+
+FUN4(FUN7(NULL, &VAR22, VAR23) == VAR17);
+FUN4(FUN7(&VAR11, NULL, VAR23) == VAR17);
+
+FUN4(FUN7(&VAR11, &VAR22, VAR24) == VAR25);
+
+
+FUN4(FUN7(&VAR22, &VAR11, VAR23) == VAR18);
+FUN4(VAR22.VAR7.VAR8 != NULL);
+
+int VAR26, VAR27;
+VAR3 *VAR28 = (VAR3 *)VAR22.VAR7.VAR8;
+FUN4(VAR28->FUN8(VAR15[0], VAR26) == VAR18);
+VAR27 = FUN9(VAR16[0]);
+FUN4(VAR27 == VAR26);
+
+FUN4(FUN7(&VAR22, NULL, VAR29) == VAR18);
+FUN4(VAR22.VAR7.VAR8 == NULL);
+
+FUN4(FUN7(&VAR22, &VAR12, VAR23) == VAR18);
+FUN4(VAR22.VAR7.VAR8 != NULL);
+
+FUN4(FUN7(&VAR22, NULL, VAR29) == VAR18);
+FUN4(VAR22.VAR7.VAR8 == NULL);
+
+FUN4(FUN7(&VAR22, &VAR13, VAR23) == VAR18);
+FUN4(VAR22.VAR7.VAR8 != NULL);
+
+FUN4(FUN7(&VAR22, NULL, VAR29) == VAR18);
+FUN4(VAR22.VAR7.VAR8 == NULL);
+
+
+memset(&VAR11, 0, sizeof(VAR11));
+VAR11.VAR5 = VAR6;
+FUN4(FUN7(&VAR11, &VAR22, VAR23) == VAR18);
+FUN4(VAR11.VAR5 == 0);
+
+memset(&VAR11, 0, sizeof(VAR11));
+memset(&VAR22, 0, sizeof(VAR11));
+VAR22.VAR5 = VAR6;
+FUN4(FUN7(&VAR11, &VAR22, VAR23) == VAR18);
+FUN4(VAR22.VAR5 == 0);
+
+}
+VAR9
+
+FUN1(VAR30)
+{
+pbs_attribute  VAR31;
+pbs_attribute  VAR32;
+
+memset(&VAR31, 0, sizeof(VAR31));
+memset(&VAR32, 0, sizeof(VAR32));
+
+FUN4(FUN5(&VAR32, "", "", "",  1) == VAR18);
+FUN10(&VAR31, &VAR32);
+FUN4(VAR31.VAR5 != 0);
+FUN4(VAR31.VAR7.VAR8 != NULL);
+
+FUN10(&VAR31, &VAR32);
+FUN4(VAR31.VAR5 != 0);
+FUN4(VAR31.VAR7.VAR8 != NULL);
+
+}
+VAR9
+
+
+
+VAR33 *FUN11(void)
+{
+VAR33 *VAR34 = FUN12("");
+VAR35 *VAR36 = FUN13("");
+FUN14(VAR36, VAR1);
+FUN15(VAR34, VAR36);
+
+VAR36 = FUN13("");
+FUN14(VAR36, VAR10);
+FUN15(VAR34, VAR36);
+
+VAR36 = FUN13("");
+FUN14(VAR36, VAR30);
+FUN15(VAR34, VAR36);
+
+VAR36 = FUN13("");
+FUN14(VAR36, VAR21);
+FUN15(VAR34, VAR36);
+return(VAR34);
+}
+
+void FUN16()
+{
+}
+
+int main(void)
+{
+int VAR37 = 0;
+VAR38 *VAR39 = NULL;
+FUN16();
+VAR39 = FUN17(FUN11());
+FUN18(VAR39, "");
+FUN19(VAR39, VAR40);
+VAR37 = FUN20(VAR39);
+FUN21(VAR39);
+return(VAR37);
+}

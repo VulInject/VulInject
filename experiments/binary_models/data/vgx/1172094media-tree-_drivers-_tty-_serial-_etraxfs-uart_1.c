@@ -1,0 +1,1 @@
+static unsigned int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = ( VAR3 * ) VAR2 ; cfs_time_t VAR5 ; unsigned int VAR6 ; reg_ser_r_stat_din VAR7 = { 0 } ; FUN2 ( & VAR4 -> VAR2 . VAR8 , VAR5 ) ; VAR7 = FUN3 ( VAR9 , VAR4 -> VAR10 , VAR11 ) ; VAR6 = VAR7 . VAR12 ?VAR13 : 0 ; FUN4 ( & VAR4 -> VAR2 . VAR8 , VAR5 ) ; return VAR6 ; }

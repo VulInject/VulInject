@@ -1,0 +1,49 @@
+static void FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = FUN2(VAR2);
+    VAR5 *VAR6 = FUN3(VAR4);
+    VAR7 *VAR8 = &VAR4->VAR8;
+    int VAR9;
+    VAR6->FUN4(VAR2);
+    memset(VAR8, 0, FUN5(VAR7, VAR10));
+    FUN6(VAR8, 1);
+    VAR8->VAR11 = -1;
+    VAR8->VAR12 |= VAR13;
+    VAR8->VAR14 |= VAR15;
+    FUN7(VAR8, 0x60000010);
+    VAR8->VAR16 = ~0x0;
+    VAR8->VAR17 = 0x30000;
+    VAR8->VAR18.VAR19 = 0xffff;
+    VAR8->VAR20.VAR19 = 0xffff;
+    VAR8->VAR21.VAR19 = 0xffff;
+    VAR8->VAR21.VAR22 = VAR23 | (2 << VAR24);
+    VAR8->VAR25.VAR19 = 0xffff;
+    VAR8->VAR25.VAR22 = VAR23 | (11 << VAR24);
+    FUN8(VAR8, VAR26, 0xf000, 0xffff0000, 0xffff, VAR23 | VAR27 | VAR28 | VAR29 | VAR30);
+    FUN8(VAR8, VAR31, 0, 0, 0xffff, VAR23 | VAR27 | VAR32 | VAR30);
+    FUN8(VAR8, VAR33, 0, 0, 0xffff, VAR23 | VAR27 | VAR32 | VAR30);
+    FUN8(VAR8, VAR34, 0, 0, 0xffff, VAR23 | VAR27 | VAR32 | VAR30);
+    FUN8(VAR8, VAR35, 0, 0, 0xffff, VAR23 | VAR27 | VAR32 | VAR30);
+    FUN8(VAR8, VAR36, 0, 0, 0xffff, VAR23 | VAR27 | VAR32 | VAR30);
+    VAR8->VAR37 = 0xfff0;
+    VAR8->VAR38[VAR39] = VAR8->VAR40;
+    VAR8->VAR41 = 0x2;
+    for (VAR9 = 0; VAR9 < 8; VAR9++)
+    {
+        VAR8->VAR42[VAR9] = 1;
+    }
+    VAR8->VAR43 = 0x37f;
+    VAR8->VAR44 = 0x1f80;
+    VAR8->VAR45 = VAR46 | VAR47;
+    VAR8->VAR48 = 0x0007040600070406ULL;
+    VAR8->VAR49 = VAR50;
+    memset(VAR8->VAR51, 0, sizeof(VAR8->VAR51));
+    VAR8->VAR51[6] = VAR52;
+    VAR8->VAR51[7] = VAR53;
+    FUN9(VAR8, VAR54);
+    FUN10(VAR8, VAR54);
+    if (VAR2->VAR55 == 0)
+    {
+        FUN11(VAR8->VAR56);
+    }
+    VAR2->VAR57 = !FUN12(VAR4);

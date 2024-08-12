@@ -1,0 +1,100 @@
+VAR1 *
+FUN1(VAR1     *VAR2,
+l_int32  VAR3,
+l_int32  VAR4,
+l_int32  VAR5,
+l_int32  VAR6)
+{
+l_int32    VAR7, VAR8, VAR9, VAR10, VAR11, VAR12, VAR13, VAR14, VAR15, VAR16, VAR17, VAR18, VAR19, VAR20, VAR21;
+l_uint32   VAR22, VAR23;
+VAR24  *VAR25, *VAR26, *VAR27, *VAR28;
+VAR1       *VAR29;
+
+if (!VAR2)
+return (VAR1 *)FUN2("", VAR30, NULL);
+FUN3(VAR2, &VAR12, &VAR14, &VAR15);
+if (VAR15 != 8 && VAR15 != 32)
+return (VAR1 *)FUN2("", VAR30, NULL);
+if (VAR3 != VAR31 && VAR3 != VAR32)
+return (VAR1 *)FUN2("", VAR30, NULL);
+if (VAR4 != VAR33 && VAR4 != VAR34)
+return (VAR1 *)FUN2("", VAR30, NULL);
+if (VAR6 != VAR35 && VAR6 != VAR36)
+return (VAR1 *)FUN2("", VAR30, NULL);
+
+
+VAR29 = FUN4(VAR2);
+FUN5(VAR29, VAR35);
+VAR25 = FUN6(VAR2);
+VAR26 = FUN6(VAR29);
+VAR16 = FUN7(VAR2);
+VAR17 = FUN7(VAR29);
+VAR13 = VAR12 - 1;
+for (VAR9 = 0; VAR9 < VAR12; VAR9++) {
+if (VAR3 == VAR31) {
+if (VAR4 == VAR33)
+VAR8 = 64 * VAR9 - 64 * (VAR5 * (VAR13 - VAR9)) / VAR13;
+else  
+VAR8 = 64 * VAR9 - 64 * (VAR5 * (VAR13 - VAR9) * (VAR13 - VAR9)) / (VAR13 * VAR13);
+} else if (VAR3 == VAR32) {
+if (VAR4 == VAR33)
+VAR8 = 64 * VAR9 - 64 * (VAR5 * VAR9) / VAR13;
+else  
+VAR8 = 64 * VAR9 - 64 * (VAR5 * VAR9 * VAR9) / (VAR13 * VAR13);
+}
+VAR10 = VAR8 / 64;
+VAR11 = VAR8 & 0x3f;
+if (VAR10 < 0 || VAR10 > VAR13) continue;
+
+switch (VAR15)
+{
+case 8:
+if (VAR10 < VAR13) {
+for (VAR7 = 0; VAR7 < VAR14; VAR7++) {
+VAR27 = VAR25 + VAR7 * VAR16;
+VAR28 = VAR26 + VAR7 * VAR17;
+VAR18 = ((63 - VAR11) * FUN8(VAR27, VAR10) +
+VAR11 * FUN8(VAR27, VAR10 + 1) + 31) / 63;
+FUN9(VAR28, VAR9, VAR18);
+}
+} else {  
+for (VAR7 = 0; VAR7 < VAR14; VAR7++) {
+VAR27 = VAR25 + VAR7 * VAR16;
+VAR28 = VAR26 + VAR7 * VAR17;
+VAR18 = FUN8(VAR27, VAR10);
+FUN9(VAR28, VAR9, VAR18);
+}
+}
+break;
+case 32:
+if (VAR10 < VAR13) {
+for (VAR7 = 0; VAR7 < VAR14; VAR7++) {
+VAR27 = VAR25 + VAR7 * VAR16;
+VAR28 = VAR26 + VAR7 * VAR17;
+VAR22 = *(VAR27 + VAR10);
+VAR23 = *(VAR27 + VAR10 + 1);
+VAR19 = ((63 - VAR11) * ((VAR22 >> VAR37) & 0xff) +
+VAR11 * ((VAR23 >> VAR37) & 0xff) + 31) / 63;
+VAR20 = ((63 - VAR11) * ((VAR22 >> VAR38) & 0xff) +
+VAR11 * ((VAR23 >> VAR38) & 0xff) + 31) / 63;
+VAR21 = ((63 - VAR11) * ((VAR22 >> VAR39) & 0xff) +
+VAR11 * ((VAR23 >> VAR39) & 0xff) + 31) / 63;
+FUN10(VAR19, VAR20, VAR21, VAR28 + VAR9);
+}
+} else {  
+for (VAR7 = 0; VAR7 < VAR14; VAR7++) {
+VAR27 = VAR25 + VAR7 * VAR16;
+VAR28 = VAR26 + VAR7 * VAR17;
+VAR28[VAR9] = VAR27[VAR10];
+}
+}
+break;
+default:
+FUN11("", VAR30, VAR15);
+FUN12(&VAR29);
+return NULL;
+}
+}
+
+return VAR29;
+}

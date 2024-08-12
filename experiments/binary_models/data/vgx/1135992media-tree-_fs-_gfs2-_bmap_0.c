@@ -1,0 +1,29 @@
+int FUN1(struct VAR1 *VAR1, u64 VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR1);
+int VAR5;
+u64 VAR6;
+
+FUN3(!FUN4(VAR1->VAR7));
+
+VAR5 = FUN5(VAR1, VAR2);
+if (VAR5)
+return VAR5;
+
+FUN6(VAR1);
+
+VAR5 = FUN7(VAR4);
+if (VAR5)
+goto VAR8;
+
+VAR6 = VAR1->VAR9;
+if (VAR2 >= VAR6) {
+VAR5 = FUN8(VAR1, VAR2);
+goto VAR8;
+}
+
+VAR5 = FUN9(VAR1, VAR6, VAR2);
+VAR8:
+FUN10(VAR4, NULL);
+return VAR5;
+}

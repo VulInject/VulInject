@@ -1,0 +1,47 @@
+static int FUN1(VAR1 *VAR2, void *VAR3, int VAR4)
+{
+    VAR5 *VAR6 = VAR3;
+    int VAR7;
+    if (VAR4 > 2)
+        return -VAR8;
+    if (VAR6->VAR9 && VAR4 >= 2)
+    {
+        VAR7 = FUN2(VAR6->VAR9, VAR2);
+        if (VAR7 < 0)
+            return VAR7;
+    }
+    FUN3(VAR2, &VAR6->VAR10);
+    FUN4(VAR2, &VAR6->VAR11);
+    FUN5(VAR2, VAR6->VAR12, 256);
+    FUN4(VAR2, &VAR6->VAR13);
+    FUN4(VAR2, &VAR6->VAR14);
+    FUN4(VAR2, &VAR6->VAR15);
+    VAR6->VAR16[0x00] = VAR6->VAR14 & 0x0f;
+    VAR6->VAR16[0x01] = VAR6->VAR15 & 0x0f;
+    FUN5(VAR2, VAR6->VAR16 + 2, 254);
+    FUN4(VAR2, &VAR6->VAR17);
+    FUN5(VAR2, VAR6->VAR18, 21);
+    VAR6->VAR19 = FUN6(VAR2);
+    FUN4(VAR2, &VAR6->VAR20);
+    FUN5(VAR2, VAR6->VAR21, 256);
+    FUN4(VAR2, &VAR6->VAR22);
+    FUN4(VAR2, &VAR6->VAR23);
+    FUN4(VAR2, &VAR6->VAR24);
+    FUN4(VAR2, &VAR6->VAR25);
+    FUN4(VAR2, &VAR6->VAR26);
+    FUN4(VAR2, &VAR6->VAR27);
+    FUN4(VAR2, &VAR6->VAR28);
+    FUN4(VAR2, &VAR6->VAR29);
+    FUN5(VAR2, VAR6->VAR30, 3);
+    FUN5(VAR2, VAR6->VAR31, 768);
+    VAR6->VAR32 = FUN6(VAR2);
+    FUN4(VAR2, &VAR6->VAR33);
+    FUN4(VAR2, &VAR6->VAR34);
+    FUN3(VAR2, &VAR6->VAR35);
+    FUN3(VAR2, &VAR6->VAR36);
+    FUN7(VAR6);
+    VAR6->VAR37 = -1;
+    FUN8(VAR6, 0);
+    FUN8(VAR6, 1);
+    return 0;
+}

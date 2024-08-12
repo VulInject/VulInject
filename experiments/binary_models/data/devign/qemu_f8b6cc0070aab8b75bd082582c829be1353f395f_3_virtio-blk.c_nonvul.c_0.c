@@ -1,0 +1,19 @@
+VAR1 *FUN1(VAR2 *VAR3, VAR4 *VAR5)
+{
+    VAR6 *VAR7;
+    int VAR8, VAR9, VAR10;
+    static int VAR11;
+    VAR7 = (VAR6 *)FUN2("", VAR12, sizeof(struct VAR13), sizeof(VAR6));
+    VAR7->VAR14.VAR15 = VAR16;
+    VAR7->VAR14.VAR17 = VAR18;
+    VAR7->VAR14.VAR19 = VAR20;
+    VAR7->VAR21 = VAR5->VAR21;
+    VAR7->VAR5 = VAR5;
+    VAR7->VAR22 = NULL;
+    VAR7->VAR23 = (VAR7->VAR5->VAR24 / VAR25) - 1;
+    FUN3(VAR7->VAR21, &VAR8, &VAR9, &VAR10);
+    VAR7->VAR26 = FUN4(&VAR7->VAR14, 128, VAR27);
+    FUN5(VAR28, VAR7);
+    FUN6("", VAR11++, 2, VAR29, VAR30, VAR7);
+    return &VAR7->VAR14;
+}

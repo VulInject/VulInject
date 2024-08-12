@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 , VAR1 * VAR3 ) { assert ( VAR2 ) ; assert ( VAR3 ) ; * VAR2 = * VAR3 ; * VAR3 = ( VAR1 ) { } ; }

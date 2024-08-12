@@ -1,0 +1,22 @@
+static void FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR4,
+struct VAR5,
+VAR4);
+
+FUN3(&VAR7);
+
+FUN4(VAR6);
+
+FUN5(&VAR6->VAR8);
+if (VAR6->VAR9 ||
+FUN6(&VAR6->VAR10) > VAR11)
+FUN7(VAR6);
+
+FUN8(&VAR6->VAR12);
+
+FUN9(&VAR7);
+
+FUN10(VAR6);
+}

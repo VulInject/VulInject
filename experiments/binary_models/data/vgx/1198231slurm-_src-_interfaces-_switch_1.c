@@ -1,0 +1,1 @@
+extern int FUN1 ( VAR1 * * VAR2 , uint32_t VAR3 , uint32_t VAR4 ) { VAR1 * VAR5 = NULL ; VAR5 = FUN2 ( VAR6 ) ; * VAR2 = VAR5 ; return ( * ( VAR7 [ VAR5 -> VAR8 ] . VAR9 ) ) ( ( VAR10 * * ) & VAR5 -> VAR11 , VAR3 , VAR4 ) ; }

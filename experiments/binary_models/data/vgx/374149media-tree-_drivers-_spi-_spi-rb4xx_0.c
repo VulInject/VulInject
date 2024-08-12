@@ -1,0 +1,14 @@
+static inline void FUN1(struct VAR1 *VAR2, u32 VAR3,
+u8 VAR4)
+{
+u32 VAR5;
+
+VAR5 = VAR3;
+if (VAR4 & FUN2(1))
+VAR5 |= VAR6;
+if (VAR4 & FUN2(0))
+VAR5 |= VAR7;
+
+FUN3(VAR2, VAR8, VAR5);
+FUN3(VAR2, VAR8, VAR5 | VAR9);
+}

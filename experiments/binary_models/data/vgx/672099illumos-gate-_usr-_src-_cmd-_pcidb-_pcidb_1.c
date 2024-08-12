@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 ) { for ( VAR3 * class = FUN2 ( VAR2 -> VAR4 ) ; class != NULL ; class = FUN3 ( class ) ) { VAR2 -> VAR5 = class ; FUN4 ( VAR2 -> VAR6 , VAR2 ) ; } }

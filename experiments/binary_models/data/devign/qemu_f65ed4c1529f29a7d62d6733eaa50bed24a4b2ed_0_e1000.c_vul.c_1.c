@@ -1,0 +1,5 @@
+FUN1(VAR1 *VAR2, int VAR3, uint32_t VAR4, uint32_t VAR5, int VAR6)
+{
+    VAR7 *VAR8 = (VAR7 *)VAR2;
+    FUN2(VAR9, "", VAR4, VAR5);
+    FUN3(VAR4, VAR10, VAR8->VAR11);

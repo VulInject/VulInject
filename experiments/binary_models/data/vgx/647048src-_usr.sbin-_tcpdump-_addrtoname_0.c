@@ -1,0 +1,16 @@
+static void
+FUN1(void)
+{
+int VAR1;
+struct VAR2 *VAR3;
+
+for (VAR1 = 0; VAR4[VAR1].VAR5; VAR1++) {
+int VAR6 = FUN2(VAR4[VAR1].VAR7) & (VAR8-1);
+VAR3 = &VAR9[VAR6];
+while (VAR3->VAR10)
+VAR3 = VAR3->VAR11;
+VAR3->VAR10 = VAR4[VAR1].VAR5;
+VAR3->VAR12 = FUN2(VAR4[VAR1].VAR7);
+VAR3->VAR11 = FUN3();
+}
+}

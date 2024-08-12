@@ -1,0 +1,1 @@
+static int FUN1 ( rpmcpio_t VAR1 , ssize_t VAR2 ) { char VAR3 [ VAR2 ] ; ssize_t VAR4 , VAR5 ; VAR4 = ( VAR2 - ( ( VAR1 -> VAR6 ) % VAR2 ) ) % VAR2 ; if ( VAR4 <= 0 ) { return 0 ; } VAR5 = FUN2 ( & VAR3 , VAR4 , 1 , VAR1 -> VAR7 ) ; if ( VAR5 != VAR4 ) { return VAR8 ; } VAR1 -> VAR6 += VAR5 ; return 0 ; }

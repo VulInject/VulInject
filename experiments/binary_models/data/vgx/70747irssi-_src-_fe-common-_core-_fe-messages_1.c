@@ -1,0 +1,1 @@
+static char * FUN1 ( VAR1 * VAR2 ) { char * VAR3 ; char * VAR4 ; VAR3 = FUN2 ( "" ) ?"" : "" ; if ( VAR2 == NULL || VAR2 -> VAR5 [ 0 ] == '' ) { VAR4 = FUN3 ( VAR3 ) ; } else { VAR4 = FUN4 ( 2 ) ; VAR4 [ 0 ] = VAR2 -> VAR5 [ 0 ] ; VAR4 [ 1 ] = '' ; } return VAR4 ; }

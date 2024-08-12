@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( VAR2 * VAR3 , tcpeditdlt_mac_type_t VAR4 , const VAR1 * VAR5 , const int VAR6 ) { assert ( VAR5 ) ; if ( VAR6 < 14 ) { return NULL ; } switch ( VAR4 ) { case VAR7 : return ( NULL ) ; break ; case VAR8 : memcpy ( VAR3 -> VAR9 , VAR5 , 2 ) ; return ( VAR3 -> VAR9 ) ; break ; default : FUN2 ( - 1 , "" , VAR4 ) ; } return ( NULL ) ; }

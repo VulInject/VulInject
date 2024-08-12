@@ -1,0 +1,50 @@
+int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4, u32 VAR5)
+{
+struct snd_pcm_substream VAR6;
+struct snd_dma_buffer VAR7;
+struct VAR8 *VAR9;
+struct VAR10 *VAR11;
+struct VAR12 *VAR13 = &VAR2->VAR14.VAR15;
+unsigned int VAR16;
+int VAR17;
+
+
+memset(&VAR6, 0, sizeof(VAR6));
+VAR6.VAR11 = VAR18;
+VAR9 = FUN2(VAR13, &VAR6,
+VAR19);
+if (!VAR9)
+return -VAR20;
+VAR11 = FUN3(VAR9);
+
+
+VAR16 = FUN4(48000, 1, VAR21, 32, 0);
+VAR17 = FUN5(VAR11, VAR16, VAR4->VAR22, &VAR7);
+if (VAR17 < 0)
+goto VAR23;
+
+
+FUN6(VAR13, true, VAR11->VAR24);
+FUN7(VAR13, VAR11, VAR4->VAR22);
+
+memcpy(VAR7.VAR25, VAR4->VAR26, VAR4->VAR22);
+
+
+FUN8(VAR11, true);
+VAR17 = FUN9(VAR2, VAR11->VAR27 - 1, VAR5);
+FUN8(VAR11, false);
+if (VAR17) {
+FUN10(VAR2->VAR28, "", VAR5, VAR17);
+VAR17 = FUN11(VAR17);
+}
+
+
+FUN6(VAR13, false, VAR11->VAR24);
+FUN7(VAR13, VAR11, 0);
+
+FUN12(VAR11, &VAR7);
+VAR23:
+FUN13(VAR9, VAR19);
+
+return VAR17;
+}

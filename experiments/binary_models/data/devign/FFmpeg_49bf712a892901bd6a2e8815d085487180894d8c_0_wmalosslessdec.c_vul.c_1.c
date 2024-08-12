@@ -1,0 +1,16 @@
+static void FUN1(VAR1 *VAR2, int VAR3, int VAR4, int VAR5)
+{
+    int VAR6, VAR7, VAR8, VAR9, VAR10, VAR11;
+    VAR9 = VAR2->VAR12[VAR3];
+    for (VAR8 = VAR9 - 1; VAR8 >= 0; VAR8--)
+    {
+        for (VAR6 = VAR4; VAR6 < VAR5; VAR6++)
+        {
+            VAR7 = 1 << (VAR2->VAR13[VAR3][VAR8].VAR14 - 1);
+            VAR10 = VAR2->VAR15[VAR3][VAR6];
+            VAR7 += VAR2->VAR16.FUN2(VAR2->VAR13[VAR3][VAR8].VAR17, VAR2->VAR13[VAR3][VAR8].VAR18 + VAR2->VAR13[VAR3][VAR8].VAR19, VAR2->VAR13[VAR3][VAR8].VAR20 + VAR2->VAR13[VAR3][VAR8].VAR19, VAR2->VAR13[VAR3][VAR8].VAR21, FUN3(VAR10));
+            VAR11 = VAR10 + (VAR7 >> VAR2->VAR13[VAR3][VAR8].VAR14);
+            FUN4(VAR2, VAR3, VAR8, VAR11);
+            VAR2->VAR15[VAR3][VAR6] = VAR11;
+        }
+    }

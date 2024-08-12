@@ -1,0 +1,32 @@
+static void FUN1(void *VAR1)
+{
+    struct VAR2 *VAR3 = (struct VAR2 *)VAR1;
+    FUN2(VAR3->VAR4);
+    FUN3(VAR3->VAR5);
+    FUN4(VAR3->VAR6);
+    FUN5(VAR3->VAR7[0]);
+    FUN5(VAR3->VAR7[1]);
+    FUN5(VAR3->VAR7[2]);
+    FUN5(VAR3->VAR7[3]);
+    FUN5(VAR3->VAR7[4]);
+    FUN5(VAR3->VAR7[5]);
+    FUN5(VAR3->VAR7[6]);
+    FUN5(VAR3->VAR7[7]);
+    FUN5(VAR3->VAR7[8]);
+    FUN5(VAR3->VAR7[9]);
+    FUN5(VAR3->VAR7[10]);
+    FUN5(VAR3->VAR7[11]);
+    FUN6(VAR3->VAR8);
+    FUN7(VAR3->VAR9);
+    FUN8(VAR3->VAR10);
+    FUN9(VAR3->VAR11);
+    FUN10(VAR3->VAR12[0]);
+    FUN10(VAR3->VAR12[1]);
+    FUN10(VAR3->VAR12[2]);
+    FUN11(VAR3->VAR13);
+    FUN12(VAR3->VAR14[0]);
+    FUN12(VAR3->VAR14[1]);
+    FUN13(VAR3->VAR15[0]);
+    FUN13(VAR3->VAR15[1]);
+    FUN14(VAR3->VAR16);
+}

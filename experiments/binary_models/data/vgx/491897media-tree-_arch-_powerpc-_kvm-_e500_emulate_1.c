@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , int VAR3 ) { ulong VAR4 = VAR2 -> VAR5 . VAR6 [ VAR3 ] ; int VAR7 = FUN2 ( VAR3 ) ; int VAR8 = VAR4 & VAR9 ; int VAR10 ; struct VAR1 * VAR11 ; FUN3 ( , , ) { int VAR12 = VAR11 -> VAR5 . VAR13 -> VAR8 ; if ( ( VAR4 & VAR14 ) || ( VAR12 == VAR8 ) ) { FUN4 ( VAR7 , & VAR11 -> VAR5 . VAR15 ) ; FUN5 ( VAR11 ) ; } } return VAR16 ; }

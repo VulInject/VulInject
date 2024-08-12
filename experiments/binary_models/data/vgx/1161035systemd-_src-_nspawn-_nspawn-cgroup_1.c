@@ -1,0 +1,1 @@
+int FUN1 ( const char * VAR1 , CGroupUnified VAR2 , bool VAR3 , uid_t VAR4 , uid_t VAR5 , const char * VAR6 , bool VAR7 ) { if ( VAR7 ) { return FUN2 ( VAR1 , VAR2 , VAR3 , VAR4 , VAR5 , VAR6 ) ; } return FUN3 ( VAR1 , VAR2 , VAR3 , VAR4 , VAR5 , VAR6 ) ; }

@@ -1,0 +1,570 @@
+char* FUN1(VAR1* VAR2, VAR3 *VAR4)
+{
+char *VAR5;
+char *VAR6;
+char *VAR7;
+str VAR8;
+str VAR9;
+VAR10 *VAR11 = NULL;
+int VAR12;
+int VAR13;
+VAR14 *VAR15 = NULL;
+
+if(VAR2==NULL || VAR4==NULL)
+return NULL;
+
+VAR5 = VAR2->VAR9;
+VAR8.VAR9 = VAR2->VAR9;
+VAR4->VAR16 = VAR17;
+VAR4->VAR18 = VAR19;
+
+
+while(FUN2(VAR5, VAR2) && *VAR5!=VAR20 && *VAR5!=VAR21) VAR5++;
+if(*VAR5=='')
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR8.VAR22 = VAR5 - VAR8.VAR9;
+FUN4(&VAR8);
+
+if(VAR8.VAR22==3 && FUN5(VAR8.VAR9, "", 3)==0)
+{
+VAR4->VAR24 = VAR25;
+goto VAR26;
+} else if(VAR8.VAR22==3 && FUN5(VAR8.VAR9, "", 3)==0) {
+VAR4->VAR24 = VAR27;
+goto VAR26;
+} else if(VAR8.VAR22==3 && FUN5(VAR8.VAR9, "", 3)==0) {
+VAR4->VAR24 = VAR28;
+goto VAR26;
+} else if(VAR8.VAR22==4 && FUN5(VAR8.VAR9, "", 4)==0) {
+VAR4->VAR24 = VAR29;
+goto VAR26;
+} else if(VAR8.VAR22==6 && FUN5(VAR8.VAR9, "", 6)==0) {
+VAR4->VAR24 = VAR30;
+goto VAR26;
+} else if(VAR8.VAR22==6 && FUN5(VAR8.VAR9, "", 6)==0) {
+VAR4->VAR24 = VAR31;
+goto VAR26;
+} else if(VAR8.VAR22==6 && FUN5(VAR8.VAR9, "", 6)==0) {
+VAR4->VAR24 = VAR32;
+goto VAR26;
+} else if(VAR8.VAR22==7 && FUN5(VAR8.VAR9, "", 7)==0) {
+VAR4->VAR24 = VAR33;
+goto VAR26;
+} else if(VAR8.VAR22==7 && FUN5(VAR8.VAR9, "", 7)==0) {
+VAR4->VAR24 = VAR34;
+goto VAR26;
+} else if(VAR8.VAR22==7 && FUN5(VAR8.VAR9, "", 7)==0) {
+VAR4->VAR24 = VAR35;
+goto VAR26;
+} else if(VAR8.VAR22==11 && FUN5(VAR8.VAR9, "", 11)==0) {
+VAR4->VAR24 = VAR36;
+goto VAR26;
+} else if(VAR8.VAR22==11 && FUN5(VAR8.VAR9, "", 11)==0) {
+VAR4->VAR24 = VAR37;
+goto VAR26;
+} else if(VAR8.VAR22==11 && FUN5(VAR8.VAR9, "", 11)==0) {
+VAR4->VAR24 = VAR38;
+goto VAR26;
+} else if(VAR8.VAR22==11 && FUN5(VAR8.VAR9, "", 11)==0) {
+VAR4->VAR24 = VAR39;
+goto VAR26;
+} else if(VAR8.VAR22==13 && FUN5(VAR8.VAR9, "", 13)==0) {
+VAR4->VAR24 = VAR40;
+goto VAR26;
+} else if(VAR8.VAR22==13 && FUN5(VAR8.VAR9, "", 13)==0) {
+VAR4->VAR24 = VAR41;
+goto VAR26;
+} else if(VAR8.VAR22==13 && FUN5(VAR8.VAR9, "", 13)==0) {
+VAR4->VAR24 = VAR42;
+goto VAR26;
+} else if(VAR8.VAR22==13 && FUN5(VAR8.VAR9, "", 13)==0) {
+VAR4->VAR24 = VAR43;
+goto VAR26;
+} else if(VAR8.VAR22==14 && FUN5(VAR8.VAR9, "", 14)==0) {
+VAR4->VAR24 = VAR44;
+goto VAR26;
+} else if(VAR8.VAR22==14 && FUN5(VAR8.VAR9, "", 14)==0) {
+VAR4->VAR24 = VAR45;
+goto VAR26;
+} else if(VAR8.VAR22==16 && FUN5(VAR8.VAR9, "", 16)==0) {
+VAR4->VAR24 = VAR46;
+goto VAR26;
+} else if(VAR8.VAR22==16 && FUN5(VAR8.VAR9, "", 16)==0) {
+VAR4->VAR24 = VAR47;
+goto VAR26;
+} else if(VAR8.VAR22==17 && FUN5(VAR8.VAR9, "", 17)==0) {
+VAR4->VAR24 = VAR48;
+goto VAR26;
+} else if(VAR8.VAR22==17 && FUN5(VAR8.VAR9, "", 17)==0) {
+VAR4->VAR24 = VAR49;
+goto VAR26;
+} else if(VAR8.VAR22==13 && FUN5(VAR8.VAR9, "", 13)==0) {
+VAR4->VAR24 = VAR50;
+goto VAR26;
+} else if(VAR8.VAR22==15 && FUN5(VAR8.VAR9, "", 15)==0) {
+VAR4->VAR24 = VAR51;
+goto VAR26;
+} else if(VAR8.VAR22==11 && FUN5(VAR8.VAR9, "", 11)==0) {
+VAR4->VAR24 = VAR52;
+goto VAR26;
+} else if(VAR8.VAR22==13 && FUN5(VAR8.VAR9, "", 13)==0) {
+VAR4->VAR24 = VAR53;
+goto VAR26;
+} else if(VAR8.VAR22==12 && FUN5(VAR8.VAR9, "", 12)==0) {
+VAR4->VAR24 = VAR54;
+goto VAR26;
+} else if(VAR8.VAR22==14 && FUN5(VAR8.VAR9, "", 14)==0) {
+VAR4->VAR24 = VAR55;
+goto VAR26;
+} else if(VAR8.VAR22==10 && FUN5(VAR8.VAR9, "", 10)==0) {
+VAR4->VAR24 = VAR56;
+goto VAR26;
+} else if(VAR8.VAR22==8 && FUN5(VAR8.VAR9, "", 8)==0) {
+VAR4->VAR24 = VAR57;
+if(*VAR5!=VAR20)
+goto VAR26;
+VAR5++;
+FUN6(VAR5, VAR6, VAR15, VAR11, VAR12, VAR13, VAR2, VAR9);
+VAR4->VAR58 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+goto VAR26;
+} else if(VAR8.VAR22==15 && FUN5(VAR8.VAR9, "", 15)==0) {
+VAR4->VAR24 = VAR59;
+if(*VAR5!=VAR20)
+goto VAR26;
+VAR5++;
+FUN6(VAR5, VAR6, VAR15, VAR11, VAR12, VAR13, VAR2, VAR9);
+VAR4->VAR58 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+goto VAR26;
+} else if(VAR8.VAR22==6 && FUN5(VAR8.VAR9, "", 6)==0) {
+VAR4->VAR24 = VAR60;
+if(*VAR5!=VAR20)
+{
+FUN3("", VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN6(VAR5, VAR6, VAR15, VAR11, VAR12, VAR13, VAR2, VAR9);
+VAR4->VAR58 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR20)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN6(VAR5, VAR6, VAR15, VAR11, VAR12, VAR13, VAR2, VAR9);
+if(VAR15->VAR16==VAR61 && VAR15->VAR62.VAR12<0)
+{
+FUN3("");
+goto VAR23;
+}
+VAR4->VAR58->VAR63 = VAR15;
+VAR15 = 0;
+while(FUN2(VAR5, VAR2) && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+goto VAR26;
+} else if(VAR8.VAR22==6 && FUN5(VAR8.VAR9, "", 6)==0) {
+VAR4->VAR24 = VAR64;
+if(*VAR5!=VAR20)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN6(VAR5, VAR6, VAR15, VAR11, VAR12, VAR13, VAR2, VAR9);
+VAR4->VAR58 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR20 || *(VAR5+1)=='')
+{
+FUN3("", VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+VAR15 = (VAR14*)FUN7(sizeof(VAR14));
+if(VAR15==NULL)
+{
+FUN3("");
+goto VAR23;
+}
+memset(VAR15, 0, sizeof(VAR14));
+VAR15->VAR16 = VAR65;
+VAR15->VAR62.VAR9.VAR9 = VAR5;
+VAR15->VAR62.VAR9.VAR22 = 1;
+if(*VAR5=='') {
+VAR5++;
+if(*VAR5=='' || *VAR5=='' || *VAR5=='' || *VAR5=='') {
+VAR15->VAR62.VAR9.VAR22 = 2;
+} else {
+FUN3("", *VAR5);
+goto VAR23;
+}
+}
+VAR4->VAR58->VAR63 = VAR15;
+VAR15 = 0;
+VAR5++;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9, *VAR5, *VAR5, (int)(VAR5 - VAR2->VAR9));
+goto VAR23;
+}
+goto VAR26;
+} else if(VAR8.VAR22==5 && FUN5(VAR8.VAR9, "", 5)==0) {
+VAR4->VAR24 = VAR66;
+if(*VAR5!=VAR20)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN6(VAR5, VAR6, VAR15, VAR11, VAR12, VAR13, VAR2, VAR9);
+VAR4->VAR58 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+goto VAR26;
+} else if(VAR8.VAR22==9 && FUN5(VAR8.VAR9, "", 9)==0) {
+VAR4->VAR24 = VAR67;
+if(*VAR5!=VAR20)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN6(VAR5, VAR6, VAR15, VAR11, VAR12, VAR13, VAR2, VAR9);
+VAR4->VAR58 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+goto VAR26;
+} else if(VAR8.VAR22==7 && FUN5(VAR8.VAR9, "", 7)==0) {
+VAR4->VAR24 = VAR68;
+if(*VAR5!=VAR20)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN8(VAR5, VAR6, VAR15, VAR11, VAR7, VAR2, VAR9);
+VAR4->VAR58 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+goto VAR26;
+} else if(VAR8.VAR22==5 && FUN5(VAR8.VAR9, "", 5)==0) {
+VAR4->VAR24 = VAR69;
+if(*VAR5!=VAR20)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN8(VAR5, VAR6, VAR15, VAR11, VAR7, VAR2, VAR9);
+VAR4->VAR58 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+goto VAR26;
+} else if(VAR8.VAR22==7 && FUN5(VAR8.VAR9, "", 7)==0) {
+VAR4->VAR24 = VAR70;
+if(*VAR5!=VAR20)
+{
+FUN3("", VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN8(VAR5, VAR6, VAR15, VAR11, VAR7, VAR2, VAR9);
+VAR4->VAR58 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR20)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN8(VAR5, VAR6, VAR15, VAR11, VAR7, VAR2, VAR9);
+VAR4->VAR58->VAR63 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+goto VAR26;
+} else if(VAR8.VAR22==8 && FUN5(VAR8.VAR9, "", 8)==0) {
+VAR4->VAR24 = VAR71;
+if(*VAR5==VAR20)
+{
+VAR5++;
+FUN6(VAR5, VAR6, VAR15, VAR11, VAR12, VAR13, VAR2, VAR9);
+VAR4->VAR58 = VAR15;
+}
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+goto VAR26;
+} else if(VAR8.VAR22==4 && FUN5(VAR8.VAR9, "", 4)==0) {
+VAR4->VAR24 = VAR72;
+goto VAR26;
+} else if(VAR8.VAR22==5 && FUN5(VAR8.VAR9, "", 5)==0) {
+VAR4->VAR24 = VAR73;
+goto VAR26;
+} else if(VAR8.VAR22==5 && FUN5(VAR8.VAR9, "", 5)==0) {
+VAR4->VAR24 = VAR74;
+goto VAR26;
+} else if(VAR8.VAR22==2 && FUN5(VAR8.VAR9, "", 2)==0) {
+VAR4->VAR24 = VAR75;
+if(*VAR5!=VAR20)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN8(VAR5, VAR6, VAR15, VAR11, VAR7, VAR2, VAR9);
+VAR4->VAR58 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+goto VAR26;
+} else if(VAR8.VAR22==15 && FUN5(VAR8.VAR9, "", 15)==0) {
+VAR4->VAR24 = VAR76;
+goto VAR26;
+} else if(VAR8.VAR22==15 && FUN5(VAR8.VAR9, "", 15)==0) {
+VAR4->VAR24 = VAR77;
+goto VAR26;
+} else if(VAR8.VAR22==7 && FUN5(VAR8.VAR9, "", 7)==0) {
+VAR4->VAR24 = VAR78;
+goto VAR26;
+} else if(VAR8.VAR22==9 && FUN5(VAR8.VAR9, "", 9)==0) {
+VAR4->VAR24 = VAR79;
+goto VAR26;
+} else if(VAR8.VAR22==5 && FUN5(VAR8.VAR9, "", 5)==0) {
+VAR4->VAR24 = VAR80;
+if(*VAR5!=VAR20)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN9(VAR5, VAR6, VAR15, VAR11, VAR7, VAR2, VAR9, 1);
+VAR4->VAR58 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+goto VAR26;
+} else if(VAR8.VAR22==6 && FUN5(VAR8.VAR9, "", 6)==0) {
+VAR4->VAR24 = VAR81;
+if(*VAR5!=VAR20)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN9(VAR5, VAR6, VAR15, VAR11, VAR7, VAR2, VAR9, 1);
+VAR4->VAR58 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+goto VAR26;
+} else if(VAR8.VAR22==5 && FUN5(VAR8.VAR9, "", 5)==0) {
+VAR4->VAR24 = VAR82;
+if(*VAR5!=VAR20)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN9(VAR5, VAR6, VAR15, VAR11, VAR7, VAR2, VAR9, 1);
+VAR4->VAR58 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+goto VAR26;
+} else if(VAR8.VAR22==7 && FUN5(VAR8.VAR9, "", 7)==0) {
+VAR4->VAR24 = VAR83;
+if(*VAR5!=VAR20)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN9(VAR5, VAR6, VAR15, VAR11, VAR7, VAR2, VAR9, 1);
+VAR4->VAR58 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+goto VAR26;
+} else if(VAR8.VAR22==6 && FUN5(VAR8.VAR9, "", 6)==0) {
+VAR4->VAR24 = VAR84;
+if(*VAR5!=VAR20)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN9(VAR5, VAR6, VAR15, VAR11, VAR7, VAR2, VAR9, 1);
+VAR4->VAR58 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+goto VAR26;
+} else if(VAR8.VAR22==8 && (FUN5(VAR8.VAR9, "", 8)==0
+|| FUN5(VAR8.VAR9, "", 8)==0)) {
+if(VAR8.VAR9[7]=='' || VAR8.VAR9[7]=='') {
+VAR4->VAR24 = VAR85;
+} else {
+VAR4->VAR24 = VAR86;
+}
+if(*VAR5!=VAR20)
+{
+FUN3("", VAR8.VAR9[7],
+VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN6(VAR5, VAR6, VAR15, VAR11, VAR12, VAR13, VAR2, VAR9);
+if(VAR15->VAR16==VAR61 && VAR15->VAR62.VAR12<0)
+{
+FUN3("", VAR8.VAR9[7]);
+goto VAR23;
+}
+
+VAR4->VAR58 = VAR15;
+VAR15 = 0;
+while(*VAR5 && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR20)
+{
+FUN3("",
+VAR8.VAR9[7], VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+VAR5++;
+FUN6(VAR5, VAR6, VAR15, VAR11, VAR12, VAR13, VAR2, VAR9);
+if(VAR15->VAR16==VAR61 && VAR15->VAR62.VAR12<0)
+{
+FUN3("", VAR8.VAR9[7]);
+goto VAR23;
+}
+VAR4->VAR58->VAR63 = VAR15;
+VAR15 = 0;
+while(FUN2(VAR5, VAR2) && (*VAR5=='' || *VAR5=='' || *VAR5=='')) VAR5++;
+if(*VAR5!=VAR21)
+{
+FUN3("",
+VAR8.VAR9[7], VAR2->VAR22, VAR2->VAR9);
+goto VAR23;
+}
+goto VAR26;
+}
+
+FUN3("", VAR2->VAR22, VAR2->VAR9,
+VAR8.VAR22, VAR8.VAR9, VAR8.VAR22);
+VAR23:
+if(VAR15)
+FUN10(VAR15);
+if(VAR11)
+FUN11(VAR11);
+return NULL;
+VAR26:
+VAR4->VAR8 = VAR8;
+return VAR5;
+}

@@ -1,0 +1,25 @@
+VAR1 *FUN1(graphic_hw_update_ptr update, graphic_hw_invalidate_ptr VAR2, graphic_hw_text_update_ptr VAR3, void *VAR4);
+void FUN2(VAR1 *VAR5);
+void FUN3(VAR1 *VAR5);
+void FUN4(VAR1 *VAR5, VAR6 *VAR7);
+int FUN5(void);
+int FUN6(void);
+void FUN7(VAR8 *VAR9);
+void FUN8(unsigned int VAR10);
+void FUN9(VAR8 *VAR9);
+void FUN10(VAR1 *VAR5, int VAR11, int VAR12);
+void FUN11(VAR1 *VAR5, int VAR13, int VAR14, int VAR15, int VAR16, int VAR17, int VAR18);
+VAR19 *FUN12(VAR1 *VAR5);
+VAR8 *FUN13(VAR1 *VAR20);
+typedef VAR21 *(VAR22)(VAR23 *VAR24);
+VAR21 *FUN14(VAR23 *VAR24);
+void FUN15(VAR22 *VAR25);
+void FUN16(VAR8 *VAR9, int VAR26, int VAR27);
+void FUN17(VAR8 *VAR9, int VAR26);
+void FUN18(VAR8 *VAR9);
+void FUN19(VAR8 *VAR9, const char *VAR28, VAR29 **VAR30);
+void FUN20(VAR8 *VAR9, int VAR31, int VAR32);
+char *FUN21(VAR8 *VAR9);
+int FUN22(VAR8 *VAR9, const char *VAR33);
+int FUN23(VAR8 *VAR9, time_t VAR34);
+static inline int FUN22(VAR8 *VAR9, const char *VAR33) { return -VAR35; }

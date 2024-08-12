@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( struct VAR2 * VAR3 , unsigned long int VAR4 ) { struct VAR1 * VAR5 ; if ( ! VAR3 ) { return VAR6 ; } for ( VAR5 = VAR3 -> VAR5 ; VAR5 ; VAR5 = VAR5 -> VAR7 ) { if ( VAR5 -> VAR4 == VAR4 ) { return VAR5 ; } } return NULL ; }

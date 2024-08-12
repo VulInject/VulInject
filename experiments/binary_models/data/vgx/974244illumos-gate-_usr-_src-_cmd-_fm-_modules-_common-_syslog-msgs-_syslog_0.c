@@ -1,0 +1,54 @@
+static int
+FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR3 ***VAR5,
+VAR6 *VAR7)
+{
+VAR3 *VAR8, **VAR9, *VAR10;
+VAR3 **VAR11;
+int VAR12, VAR13;
+uint_t VAR14, VAR15;
+
+if ((VAR12 = FUN2(&VAR8, VAR4)) != VAR16) {
+VAR12 = FUN3();
+if (VAR12 != VAR17) {
+FUN4(VAR2, ""
+"", FUN5(VAR12));
+return (VAR12);
+}
+return (VAR12);
+}
+
+if (FUN6(VAR8, VAR18, &VAR9,
+&VAR14) != 0) {
+FUN4(VAR2, "");
+VAR12 = VAR19;
+goto VAR20;
+}
+
+VAR11 = FUN7(VAR2, VAR14 * sizeof (VAR3 *), VAR21);
+VAR15 = 0;
+
+for (VAR13 = 0; VAR13 < VAR14; VAR13++) {
+if (FUN8(VAR9[VAR13], "", &VAR10)
+== 0)
+VAR11[VAR15++] = FUN9(VAR2, VAR10,
+VAR21);
+}
+
+if (VAR15 != 0) {
+size_t VAR22 = VAR15 * sizeof (VAR3 *);
+
+*VAR5 = FUN10(VAR2, VAR22, VAR21);
+*VAR7 = VAR15;
+bcopy(VAR11, *VAR5, VAR22);
+VAR12 = 0;
+} else {
+*VAR5 = NULL;
+*VAR7 = 0;
+VAR12 = VAR17;
+}
+
+FUN11(VAR2, VAR11, VAR14 * sizeof (VAR3 *));
+VAR20:
+FUN12(VAR8);
+return (VAR12);
+}

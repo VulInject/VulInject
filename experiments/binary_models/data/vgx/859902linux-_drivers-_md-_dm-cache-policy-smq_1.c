@@ -1,0 +1,1 @@
+static unsigned int FUN1 ( unsigned int VAR1 , unsigned int VAR2 ) { return VAR2 ?VAR1 % VAR2 : 0u ; } VAR3 { unsigned int hash_next 28 ; unsigned int prev 28 ; unsigned int next 28 ; int level 6 ; bool dirty 1 ; bool allocated 1 ; bool sentinel 1 ; bool pending_work 1 ; dm_oblock_t VAR4 ; }

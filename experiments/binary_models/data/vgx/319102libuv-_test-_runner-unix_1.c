@@ -1,0 +1,1 @@
+long int FUN1 ( VAR1 * VAR2 ) { struct stat VAR3 ; int VAR4 = FUN2 ( FUN3 ( VAR2 -> VAR5 ) , & VAR3 ) ; if ( VAR4 < 0 ) { return - 1 ; } return ( long ) VAR3 . VAR6 ; }

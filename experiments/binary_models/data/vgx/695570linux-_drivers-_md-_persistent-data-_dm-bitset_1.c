@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , dm_block_t VAR3 , uint32_t VAR4 , VAR5 * VAR6 ) { int VAR7 ; unsigned int VAR8 = VAR4 / VAR9 ; if ( VAR2 -> VAR10 ) { VAR7 = FUN2 ( VAR2 , VAR3 , VAR6 ) ; if ( VAR7 ) { return VAR7 ; } } return FUN3 ( VAR2 , VAR3 , VAR8 ) ; }

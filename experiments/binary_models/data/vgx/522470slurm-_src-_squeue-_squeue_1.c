@@ -1,0 +1,1 @@
+static int FUN1 ( void ) { int VAR1 = 80 ; struct ttysize VAR2 ; if ( FUN2 ( VAR3 , VAR4 , & VAR2 ) == 0 ) { VAR1 = VAR2 . VAR5 ; } int VAR2 ; if ( FUN2 ( VAR3 , VAR6 , & VAR2 ) == 0 ) { VAR1 = VAR2 . VAR7 ; } const char * VAR8 ; VAR8 = getenv ( "" ) ; if ( VAR8 ) { VAR1 = FUN3 ( VAR8 , NULL , 10 ) ; } return VAR1 ; }

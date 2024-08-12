@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( ) { VAR1 * VAR2 ; if ( ( VAR2 = ( VAR1 * ) FUN2 ( sizeof ( VAR1 ) ) ) == NULL ) { return NULL ; } VAR2 -> VAR3 = 64 ; VAR2 -> VAR4 = 0 ; if ( ( VAR2 -> VAR5 = ( VAR6 * ) FUN2 ( VAR2 -> VAR3 * sizeof ( VAR6 ) ) ) == NULL ) { return NULL ; } return VAR2 ; }

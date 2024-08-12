@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( struct VAR2 * VAR3 ) { struct VAR1 * VAR4 = NULL ; VAR1 * new ; struct fdt_reserve_entry VAR5 ; while ( 1 ) { uint64_t VAR6 , VAR7 ; FUN2 ( VAR3 , & VAR5 , sizeof ( VAR5 ) ) ; VAR6 = FUN3 ( VAR5 . VAR6 ) ; VAR7 = FUN3 ( VAR5 . VAR7 , NULL ) ; if ( VAR7 == 0 ) { break ; } new = FUN4 ( VAR6 , VAR7 ) ; VAR4 = FUN5 ( VAR4 , new ) ; } return VAR4 ; }

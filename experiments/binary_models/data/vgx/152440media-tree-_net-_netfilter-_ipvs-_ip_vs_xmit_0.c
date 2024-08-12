@@ -1,0 +1,30 @@
+int
+FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+struct VAR5 *VAR6, struct VAR7 *VAR8)
+{
+struct VAR9  *VAR10 = FUN2(VAR2);
+
+FUN3(10);
+
+FUN4();
+if (FUN5(VAR4->VAR11, VAR4->VAR12, VAR2, NULL, VAR10->VAR13,
+VAR14, NULL, VAR8) < 0)
+goto VAR15;
+
+FUN6(VAR10);
+
+
+VAR2->VAR16 = 1;
+
+FUN7(VAR17, VAR2, VAR4, 0);
+FUN8();
+
+FUN9(10);
+return VAR18;
+
+VAR15:
+FUN10(VAR2);
+FUN8();
+FUN9(10);
+return VAR18;
+}

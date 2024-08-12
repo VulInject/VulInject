@@ -1,0 +1,20 @@
+void FUN1(Package VAR1)
+{
+const char *VAR2, *VAR3;
+char *VAR4, *VAR5;
+rpmsenseFlags VAR6 = VAR7;
+
+
+VAR3 = FUN2(VAR1->VAR8, VAR9);
+VAR2 = FUN2(VAR1->VAR8, VAR10);
+VAR4 = FUN3(VAR1->VAR8, VAR11);
+FUN4(VAR1, VAR12, VAR3, VAR4, VAR6, 0);
+
+
+VAR5 = FUN5(VAR3, "", NULL);
+if (!FUN6(VAR2, "") && !FUN6(VAR3, VAR5)) {
+FUN4(VAR1, VAR12, VAR5, VAR4, VAR6, 0);
+}
+free(VAR5);
+free(VAR4);
+}

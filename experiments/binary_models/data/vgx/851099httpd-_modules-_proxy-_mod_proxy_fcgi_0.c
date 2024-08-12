@@ -1,0 +1,45 @@
+static VAR1 FUN1(VAR2 *VAR3, VAR4 *VAR5)
+{
+VAR6 *VAR7;
+const char *VAR8, *VAR9;
+int VAR10 = 0, VAR11 = 0;
+ap_regmatch_t VAR12[VAR13];
+
+VAR7 = (VAR6 *) VAR5->VAR14->VAR15;
+for (VAR10 = 0; VAR10 < VAR5->VAR14->VAR16; VAR10++) {
+VAR6 *VAR17 = &VAR7[VAR10];
+
+VAR11 = FUN2(VAR3, VAR17->VAR18, VAR13, VAR12, &VAR9, &VAR8);
+if (VAR11 < 0) { 
+FUN3(VAR19, VAR20, 0, VAR3, FUN4(10241) 
+"", 
+VAR11, VAR8);
+return VAR21;
+}
+else if (VAR11 == 0) { 
+continue; 
+}
+
+if (VAR17->VAR22[0] == '') {
+FUN5(VAR3->VAR23, VAR17->VAR22+1);
+}
+else {
+const char *VAR24 = FUN6(VAR3, VAR17->VAR25, VAR13, VAR12, &VAR9, &VAR8);
+if (VAR8) {
+FUN3(VAR19, VAR26, 0, VAR3, FUN4(03514)
+"",
+VAR17->VAR22, VAR8);
+continue;
+}
+if (FUN7(VAR3)) {
+const char *VAR27 = FUN8(VAR3->VAR23, VAR17->VAR22);
+FUN3(VAR19, VAR28, 0, VAR3,
+"",
+VAR17->VAR22, VAR27, VAR24);
+
+}
+FUN9(VAR3->VAR23, VAR17->VAR22, VAR24);
+}
+}
+return VAR29;
+}

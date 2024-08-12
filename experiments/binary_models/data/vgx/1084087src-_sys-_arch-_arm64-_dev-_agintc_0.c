@@ -1,0 +1,14 @@
+void
+FUN1(struct VAR1 *VAR2, int VAR3)
+{
+struct VAR4	*VAR5 = FUN2();
+int VAR6 = VAR2->VAR7[VAR5->VAR8];
+
+if (VAR3 >= 32) {
+FUN3(VAR2->VAR9, VAR2->VAR10,
+FUN4(VAR3), 1 << FUN5(VAR3));
+} else {
+FUN3(VAR2->VAR9, VAR2->VAR11[VAR6],
+VAR12, 1 << FUN5(VAR3));
+}
+}

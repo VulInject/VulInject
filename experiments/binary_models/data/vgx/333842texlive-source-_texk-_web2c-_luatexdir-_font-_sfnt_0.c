@@ -1,0 +1,14 @@
+VAR1 FUN1(VAR2 * VAR3, const char *VAR4)
+{
+ULONG VAR5;
+struct VAR6 *VAR7;
+int VAR8;
+VAR7 = VAR3->VAR9;
+VAR8 = FUN2(VAR7, VAR4);
+if (VAR8 < 0)
+VAR5 = 0;
+else {
+VAR5 = VAR7->VAR10[VAR8].VAR5;
+}
+return VAR5;
+}

@@ -1,0 +1,1 @@
+( VAR1 ) ; void FUN1 ( void ) { if ( VAR2 ) { ( void ) fclose ( VAR2 ) ; } }

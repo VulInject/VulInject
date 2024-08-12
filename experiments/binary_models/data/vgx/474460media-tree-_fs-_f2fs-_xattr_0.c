@@ -1,0 +1,23 @@
+int FUN1(struct VAR1 *VAR1, int VAR2, const char *VAR3,
+const void *VAR4, size_t VAR5,
+struct VAR6 *VAR7, int VAR8)
+{
+struct VAR9 *VAR10 = FUN2(VAR1);
+int VAR11;
+
+
+if (VAR7)
+return FUN3(VAR1, VAR2, VAR3, VAR4,
+VAR5, VAR7, VAR8);
+FUN4(VAR10, true);
+
+FUN5(VAR10);
+
+FUN6(&FUN7(VAR1)->VAR12);
+VAR11 = FUN3(VAR1, VAR2, VAR3, VAR4, VAR5, VAR7, VAR8);
+FUN8(&FUN7(VAR1)->VAR12);
+FUN9(VAR10);
+
+FUN10(VAR10, VAR13);
+return VAR11;
+}

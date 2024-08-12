@@ -1,0 +1,25 @@
+static void
+FUN1(VAR1 *VAR2)
+{
+uint32_t	VAR3, VAR4;
+clock_t		VAR5;
+
+(void) FUN2(VAR2, VAR6);
+
+FUN3(VAR2, VAR7, &VAR3);
+VAR3 |= (1 << (VAR2->VAR8 * 4));
+FUN4(VAR2, VAR7, VAR3);
+
+FUN3(VAR2, VAR9, &VAR4);
+
+FUN5(VAR2);
+
+for (VAR5 = 30; VAR5 && VAR3 != VAR4; VAR5--) {
+FUN6(100);
+
+(void) FUN2(VAR2, VAR6);
+FUN3(VAR2, VAR7, &VAR3);
+FUN3(VAR2, VAR9, &VAR4);
+FUN5(VAR2);
+}
+}

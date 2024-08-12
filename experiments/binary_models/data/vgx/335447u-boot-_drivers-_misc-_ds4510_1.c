@@ -1,0 +1,1 @@
+static int FUN1 ( uint8_t VAR1 , int VAR2 , VAR3 * VAR4 , int VAR5 ) { int VAR6 ; int VAR7 = 0 ; { VAR6 = VAR8 - FUN2 ( VAR2 ) ; if ( VAR5 < VAR6 ) { VAR6 = VAR5 ; } FUN3 ( VAR9 * 1000 ) ; VAR5 -= VAR6 ; VAR2 += VAR6 ; VAR7 += VAR6 ; } VAR5 > 0 ; return 0 ; }

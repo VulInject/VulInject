@@ -1,0 +1,24 @@
+void FUN1(int VAR1, int VAR2, int VAR3)
+{
+int VAR4;
+int VAR5;
+struct VAR6 *VAR7 = NULL;
+
+switch (VAR3) {
+case VAR8:
+VAR4 = FUN2(VAR1, VAR2);
+VAR5 = VAR9.
+VAR10.VAR11;
+VAR7 = VAR9.VAR10.VAR7;
+FUN3(VAR4, VAR5, VAR7, VAR12);
+break;
+case VAR13:
+VAR4 = FUN4(VAR1, VAR2);
+VAR5 = VAR9.
+VAR14.VAR11;
+VAR7 = VAR9.VAR14.VAR7;
+FUN3(VAR4, VAR5, VAR7, VAR15);
+break;
+}
+
+}

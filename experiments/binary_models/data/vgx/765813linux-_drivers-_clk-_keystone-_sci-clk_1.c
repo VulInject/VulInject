@@ -1,0 +1,1 @@
+static int FUN1 ( const void * VAR1 , const void * VAR2 ) { const struct VAR3 * VAR4 = VAR1 ; const struct VAR3 * VAR5 = * ( VAR3 * * ) VAR2 ; if ( VAR4 -> VAR6 == VAR5 -> VAR6 && VAR4 -> VAR7 == VAR5 -> VAR7 ) { return 0 ; } return - 1 ; }

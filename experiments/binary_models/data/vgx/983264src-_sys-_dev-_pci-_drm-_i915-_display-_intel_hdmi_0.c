@@ -1,0 +1,41 @@
+static VAR1 FUN1(struct VAR2 *VAR3)
+{
+struct VAR4 *VAR5 = FUN2(VAR3->VAR6.VAR7);
+enum port VAR8 = VAR3->VAR8;
+u8 VAR9;
+
+VAR9 = FUN3(VAR3);
+if (VAR9) {
+FUN4(&VAR5->VAR10,
+"",
+VAR9, FUN5(VAR8));
+return VAR9;
+}
+
+if (FUN6(VAR5))
+VAR9 = FUN7(VAR5, VAR8);
+else if (FUN8(VAR5) >= VAR11)
+VAR9 = FUN9(VAR5, VAR8);
+else if (FUN10(VAR5))
+VAR9 = FUN11(VAR5, VAR8);
+else if (FUN12(VAR5) == 9 && FUN13(VAR5))
+VAR9 = FUN14(VAR5, VAR8);
+else if (FUN15(VAR5) && FUN13(VAR5))
+VAR9 = FUN16(VAR5, VAR8);
+else if (FUN8(VAR5) >= VAR12)
+VAR9 = FUN17(VAR5, VAR8);
+else if (FUN18(VAR5))
+VAR9 = FUN19(VAR5, VAR8);
+else if (FUN20(VAR5) || FUN21(VAR5))
+VAR9 = FUN22(VAR5, VAR8);
+else if (FUN23(VAR5))
+VAR9 = FUN24(VAR5, VAR8);
+else
+VAR9 = FUN25(VAR5, VAR8);
+
+FUN4(&VAR5->VAR10,
+"",
+VAR9, FUN5(VAR8));
+
+return VAR9;
+}

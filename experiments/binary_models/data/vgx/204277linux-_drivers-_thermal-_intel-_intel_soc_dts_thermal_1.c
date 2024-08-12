@@ -1,0 +1,1 @@
+FUN1 ( VAR1 , int , 0644 ) ; FUN2 ( VAR1 , "" ) ; static int VAR2 ; static int VAR3 ; static struct VAR4 * VAR5 ; static irqreturn_t FUN3 ( int VAR6 , void * VAR7 ) { FUN4 ( "" ) ; FUN5 ( VAR5 , NULL ) ; return VAR8 ; }

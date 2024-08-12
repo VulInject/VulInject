@@ -1,0 +1,161 @@
+FUN1 (VAR1 *VAR2,
+VAR3   *VAR4,
+gint        VAR5,
+gpointer    VAR6)
+{
+VAR7 *VAR8 = FUN2 (VAR2);
+VAR9           *VAR10;
+GTokenType            VAR11;
+guint                 VAR12;
+guint                 VAR13;
+VAR14                *VAR15 = NULL;
+GdkModifierType       VAR16   = 0;
+
+VAR12 = FUN3 (FUN4 (VAR2));
+VAR13 = FUN5 (VAR4, VAR12);
+VAR10 = FUN6 (VAR17);
+
+FUN7 (VAR4, VAR12, "",
+FUN8 (VAR18));
+FUN7 (VAR4, VAR12, "",
+FUN8 (VAR19));
+FUN7 (VAR4, VAR12, "",
+FUN8 (VAR20));
+
+VAR11 = VAR21;
+
+while (FUN9 (VAR4) == VAR11)
+{
+VAR11 = FUN10 (VAR4);
+
+switch (VAR11)
+{
+case VAR21:
+VAR11 = VAR22;
+break;
+
+case VAR22:
+switch (FUN11 (VAR4->VAR23.VAR24))
+{
+case VAR18:
+VAR11 = VAR21;
+if (! FUN12 (VAR4, &VAR15))
+goto VAR25;
+break;
+
+case VAR20:
+{
+VAR26 *VAR27;
+VAR28          *VAR29;
+
+VAR11 = VAR30;
+if (FUN9 (VAR4) != VAR11)
+goto VAR25;
+
+FUN10 (VAR4);
+
+VAR29 = FUN13 (VAR10,
+VAR4->VAR23.VAR31);
+
+if (! VAR29)
+VAR29 = FUN14 (VAR10,
+VAR4->VAR23.VAR31);
+
+if (! VAR29)
+{
+FUN15 (VAR4,
+FUN16(""),
+VAR4->VAR23.VAR31);
+return VAR32;
+}
+
+if (FUN17 (VAR8->VAR33->VAR34, VAR15))
+{
+
+FUN18 ("",
+VAR35, VAR4->VAR23.VAR31, VAR15);
+FUN19 (&VAR15, VAR36);
+}
+else
+{
+VAR14 *VAR37;
+VAR14 *VAR38 = NULL;
+
+if (VAR29->VAR23 == VAR39)
+{
+if (! FUN12 (VAR4, &VAR38))
+{
+FUN18 ("",
+VAR35, VAR15);
+goto VAR25;
+}
+}
+
+VAR37 = FUN20 ("", VAR16);
+
+if (FUN21 (VAR15, VAR37))
+{
+VAR14 *VAR40 = FUN22 (VAR15,
+strlen (VAR15) - strlen (VAR37));
+
+VAR27 = FUN23 (VAR26);
+VAR27->VAR16   = VAR16;
+VAR27->VAR41  = VAR29->VAR23;
+VAR27->VAR38 = VAR38;
+FUN24 (VAR8->VAR33->VAR34, VAR15, VAR27);
+
+if (FUN25 (VAR8->VAR33->VAR42, VAR40, (VAR43) VAR44))
+FUN26 (VAR40);
+else
+VAR8->VAR33->VAR42 = FUN27 (VAR8->VAR33->VAR42, VAR40);
+}
+else
+{
+FUN18 ("",
+VAR35, VAR15, VAR16);
+FUN19 (&VAR15, VAR36);
+}
+
+FUN26 (VAR37);
+}
+
+
+VAR11 = VAR45;
+if (FUN9 (VAR4) != VAR11)
+goto VAR25;
+
+FUN10 (VAR4);
+}
+break;
+
+case VAR19:
+VAR11 = VAR45;
+if (! FUN28 (VAR4, (int *) &VAR16))
+goto VAR25;
+break;
+
+default:
+break;
+}
+break;
+
+case VAR45:
+VAR11 = VAR21;
+break;
+
+default:
+break;
+}
+}
+
+VAR25:
+
+FUN29 (VAR4, VAR12, "");
+FUN29 (VAR4, VAR12, "");
+FUN29 (VAR4, VAR12, "");
+
+FUN5 (VAR4, VAR13);
+FUN30 (VAR10);
+
+return VAR21;
+}

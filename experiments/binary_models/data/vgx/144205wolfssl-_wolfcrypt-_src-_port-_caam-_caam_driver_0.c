@@ -1,0 +1,67 @@
+static VAR1 FUN1(struct VAR2* VAR3)
+{
+int VAR4;
+int VAR5;
+unsigned int VAR6 = 0x20000000;
+
+
+VAR5 = VAR3->VAR3[0] & 0x0000007F;
+FUN2(VAR7, 1); 
+FUN3("", FUN4(VAR7));
+FUN3("", FUN4(VAR8));
+FUN3("", FUN4(0x0FD4));
+FUN3("", FUN4(0x8E04));
+
+FUN3("");
+
+for (VAR4 = 0; VAR4 < VAR5; VAR4 = VAR4 + 1) {
+FUN2(VAR9 + (VAR4*4), VAR3->VAR3[VAR4]);
+FUN3("", VAR3->VAR3[VAR4]);
+}
+FUN3("");
+
+FUN3("", VAR5);
+if (VAR5 > 4) {
+VAR6 |= 0x10000000;
+}
+
+FUN2(VAR10+4, VAR3->VAR11->VAR12.VAR13);
+
+FUN2(VAR14, VAR6);
+
+FUN3("", FUN4(0x0FD4));
+FUN3("", FUN4(0x8E04));
+
+
+FUN3("", FUN4(VAR10+4));
+FUN3("", FUN4(VAR8));
+FUN3("", FUN4(0x1044));
+for (VAR4 = 0; VAR4 < VAR5; VAR4 = VAR4 + 1) {
+FUN3("", FUN4(VAR9 + (VAR4*4)));
+}
+
+
+
+FUN3("", FUN4(0x8804));
+FUN3("", VAR3->VAR11->VAR12.VAR13);
+
+
+
+FUN3("", FUN4(VAR10+4));
+FUN3("", FUN4(VAR8));
+FUN3("", FUN4(0x1044));
+for (VAR4 = 0; VAR4 < VAR5; VAR4 = VAR4 + 1) {
+FUN3("", FUN4(VAR9 + (VAR4*4)));
+}
+
+FUN3("", FUN4(0x8804));
+FUN3("", FUN4(0x0FD4));
+while ((FUN4(0x8E04) & 0x80000000U) != 0U) {
+FUN3("",
+FUN4(0x8E04));
+sleep(1);
+}
+FUN2(VAR7, 0); 
+FUN3("");
+return VAR15;
+}

@@ -1,0 +1,1 @@
+int FUN1 ( const VAR1 * VAR2 , const VAR1 * VAR3 , size_t VAR4 ) { { if ( * VAR2 != * VAR3 ++ ) { return ( * VAR2 - * ( VAR3 - 1 ) ) ; } if ( * VAR2 ++ == 0 ) { break ; } } -- VAR4 != 0 ; return 0 ; }

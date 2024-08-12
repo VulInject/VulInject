@@ -1,0 +1,9 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 *VAR6)
+{
+    VAR7 *VAR8 = VAR2->VAR9->VAR10[VAR6->VAR11]->VAR12;
+    VAR6->VAR13 = VAR8->VAR14;
+    if (VAR4->VAR15 <= 0 || FUN2(VAR4->VAR16) <= 0)
+        return FUN3(VAR17);
+    VAR8->VAR14 += VAR6->VAR18 / (VAR4->VAR15 * FUN2(VAR4->VAR16) / 8);
+    return 0;
+}

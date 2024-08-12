@@ -1,0 +1,1 @@
+static void FUN1 ( char * VAR1 ) { VAR2 = VAR3 -> VAR4 ; VAR5 = VAR6 - ( VAR2 - VAR7 ) ; VAR3 -> VAR8 . VAR9 = 0 ; VAR3 -> VAR8 . VAR10 . VAR11 = NULL ; VAR3 -> VAR12 = NULL ; VAR3 -> VAR13 = NULL ; VAR3 -> VAR14 = NULL ; strcpy ( VAR15 , VAR1 ) ; VAR3 -> VAR16 . VAR9 = strlen ( VAR15 ) ; VAR3 -> VAR16 . VAR10 . VAR17 = VAR15 ; }

@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR2 , void * VAR3 ) { struct VAR4 * VAR5 = VAR3 ; VAR2 -> private = VAR5 ; return true ; }

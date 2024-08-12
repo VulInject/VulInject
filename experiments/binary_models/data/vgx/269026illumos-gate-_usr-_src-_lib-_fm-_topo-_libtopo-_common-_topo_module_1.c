@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( VAR2 * VAR3 ) { VAR1 * VAR4 ; VAR4 -> VAR5 = VAR6 ; if ( ( VAR4 -> VAR7 = FUN2 ( VAR3 , sizeof ( void * ) * VAR4 -> VAR5 ) ) == NULL ) { FUN3 ( VAR3 , VAR4 , sizeof ( VAR1 ) ) ; return ( NULL ) ; } VAR4 -> VAR8 = 0 ; ( void ) pthread_mutex_init ( & VAR4 -> VAR9 , NULL ) ; VAR3 -> VAR10 = VAR4 ; return ( VAR4 ) ; }

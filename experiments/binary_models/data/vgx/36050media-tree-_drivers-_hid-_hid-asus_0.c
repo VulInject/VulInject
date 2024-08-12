@@ -1,0 +1,20 @@
+static void FUN1(struct VAR1 *VAR2,
+int VAR3, VAR4 *VAR5)
+{
+int VAR6, VAR7;
+int VAR8 = (VAR5[0] & VAR9) << 4 | VAR5[1];
+int VAR10 = VAR11 - ((VAR5[0] & VAR12) << 8 | VAR5[2]);
+
+if (VAR3 == VAR13) {
+VAR6 = VAR14;
+VAR7 = VAR15;
+} else {
+VAR6 = (VAR5[3] >> 4) & VAR16;
+VAR7 = VAR5[4] & VAR17;
+}
+
+FUN2(VAR2, VAR18, VAR8);
+FUN2(VAR2, VAR19, VAR10);
+FUN2(VAR2, VAR20, VAR6);
+FUN2(VAR2, VAR21, VAR7);
+}

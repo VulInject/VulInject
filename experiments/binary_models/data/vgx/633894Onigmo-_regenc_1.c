@@ -1,0 +1,1 @@
+extern int FUN1 ( OnigEncoding VAR1 , OnigCodePoint VAR2 , VAR3 * VAR4 ) { VAR3 * VAR5 = VAR4 ; if ( ( VAR2 & 0xff00 ) != 0 ) { * VAR5 ++ = ( VAR3 ) ( ( VAR2 >> 8 ) & 0xff ) ; } * VAR5 ++ = ( VAR3 ) ( VAR2 & 0xff ) ; return ( int ) ( VAR5 - VAR4 ) ; }

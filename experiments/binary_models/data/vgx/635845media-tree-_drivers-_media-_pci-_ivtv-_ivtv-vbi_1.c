@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , int VAR3 , int VAR4 ) { struct v4l2_sliced_vbi_data VAR5 ; if ( ( VAR2 -> VAR6 & VAR7 ) && ! VAR3 ) { VAR3 = 1 ; VAR4 = 0x08 ; } VAR5 . VAR8 = VAR9 ; VAR5 . VAR10 = 0 ; VAR5 . VAR11 = VAR3 ?23 : 0 ; VAR5 . VAR5 [ 0 ] = VAR4 & 0xff ; VAR5 . VAR5 [ 1 ] = ( VAR4 >> 8 ) & 0xff ; FUN2 ( VAR2 , VAR12 , VAR13 , VAR14 , & VAR5 ) ; }

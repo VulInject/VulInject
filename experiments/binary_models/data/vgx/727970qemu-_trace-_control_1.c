@@ -1,0 +1,1 @@
+void FUN1 ( const char * VAR1 ) { VAR2 * VAR3 = FUN2 ( FUN3 ( "" ) , VAR1 , true ) ; if ( ! VAR3 ) { FUN4 ( 1 ) ; } if ( FUN5 ( VAR3 , "" ) ) { FUN6 ( FUN5 ( VAR3 , "" ) ) ; } FUN7 ( FUN5 ( VAR3 , "" ) ) ; VAR4 = true ; VAR5 = FUN8 ( FUN5 ( VAR3 , "" ) ) ; FUN9 ( VAR3 ) ; }

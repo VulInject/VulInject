@@ -1,0 +1,41 @@
+static int FUN1(VAR1 *VAR2, VAR1 *VAR3, VAR4 *VAR5);
+
+int
+FUN2(VAR1 *VAR3, const VAR1 *VAR6, const VAR1 *VAR7,
+VAR4 *VAR5, VAR8 *VAR9)
+{
+VAR1 *VAR10;
+int VAR2 = 0;
+
+int VAR11 = VAR5->VAR12.VAR13;
+
+if (VAR11 > 1 && VAR6->VAR13 == VAR11 && VAR7->VAR13 == VAR11) {
+if (!FUN3(VAR3, VAR11))
+return (0);
+if (FUN4(VAR3->VAR14, VAR6->VAR14, VAR7->VAR14, VAR5->VAR12.VAR14, VAR5->VAR15, VAR11)) {
+VAR3->VAR13 = VAR11;
+FUN5(VAR3);
+FUN6(VAR3, VAR6->VAR16 ^ VAR7->VAR16);
+return (1);
+}
+}
+
+FUN7(VAR9);
+if ((VAR10 = FUN8(VAR9)) == NULL)
+goto VAR17;
+
+if (VAR6 == VAR7) {
+if (!FUN9(VAR10, VAR6, VAR9))
+goto VAR17;
+} else {
+if (!FUN10(VAR10, VAR6,VAR7, VAR9))
+goto VAR17;
+}
+
+if (!FUN1(VAR3, VAR10, VAR5))
+goto VAR17;
+VAR2 = 1;
+VAR17:
+FUN11(VAR9);
+return (VAR2);
+}

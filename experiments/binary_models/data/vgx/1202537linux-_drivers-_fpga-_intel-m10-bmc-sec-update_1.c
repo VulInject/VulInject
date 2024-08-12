@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , VAR3 * VAR4 ) { u32 VAR5 , VAR6 ; if ( FUN2 ( VAR2 , VAR4 , & VAR5 , & VAR6 ) ) { return - VAR7 ; } if ( ! FUN3 ( VAR6 ) ) { return - VAR8 ; } if ( FUN4 ( VAR5 ) ) { return - VAR9 ; } return - VAR8 ; }

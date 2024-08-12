@@ -1,0 +1,29 @@
+static int FUN1(char *VAR1)
+{
+struct VAR2 *VAR3;
+
+VAR3 = (struct VAR2 *) VAR1;
+VAR1 += sizeof(struct VAR2);
+memcpy(VAR3->VAR4, VAR5, VAR6);
+VAR3->VAR4[VAR7] = VAR8;
+VAR3->VAR4[VAR9] = VAR10;
+VAR3->VAR4[VAR11] = VAR12;
+VAR3->VAR4[VAR13] = VAR14;
+memset(VAR3->VAR4+VAR15, 0, VAR16-VAR15);
+VAR3->VAR17 = VAR18;
+VAR3->VAR19 = VAR20;
+VAR3->VAR21 = VAR12;
+VAR3->VAR22 = 0;
+VAR3->VAR23 = sizeof(struct VAR2);
+VAR3->VAR24 = 0;
+VAR3->VAR25 = VAR26;
+VAR3->VAR25 = 0;
+VAR3->VAR27 = sizeof(struct VAR2);
+VAR3->VAR28 = sizeof(struct VAR29);
+VAR3->VAR30 = 0;
+VAR3->VAR31 = 0;
+VAR3->VAR32 = 0;
+VAR3->VAR33 = 0;
+
+return 0;
+}

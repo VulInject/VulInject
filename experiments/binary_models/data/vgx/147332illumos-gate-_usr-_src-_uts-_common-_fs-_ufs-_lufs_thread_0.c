@@ -1,0 +1,98 @@
+int
+FUN1(VAR1 *VAR2, VAR3 *VAR4, int VAR5, caddr_t VAR6,
+int *VAR7)
+{
+offset_t	VAR8;
+VAR9		*VAR10;
+VAR3	*VAR11;
+VAR12	*VAR13 = VAR2->VAR14;
+daddr_t		VAR15;
+int		VAR16;
+int		VAR17;
+int		VAR18;
+
+
+VAR8 = 0;
+if (!FUN2(VAR13, &VAR8)) {
+return (1);
+}
+
+
+FUN3(&VAR13->VAR19, VAR20);
+VAR18 = 0;
+do {
+VAR8 = VAR8 & (VAR21)VAR22;
+VAR15 = FUN4(VAR8);
+
+
+for (VAR16 = 0, VAR11 = VAR4; VAR16 < VAR18; ++VAR16, ++VAR11) {
+if (FUN5(VAR11->VAR23.VAR24,
+VAR25 / VAR26) == VAR15) {
+VAR27++;
+
+goto VAR28;
+}
+}
+
+
+VAR10 = &VAR11->VAR23;
+VAR10->VAR24 = VAR15;
+VAR10->VAR29 = VAR30;
+VAR10->VAR31.VAR32 = VAR6 + (VAR18 << VAR33);
+VAR10->VAR34 = VAR25;
+if (FUN6(VAR11, VAR2)) {
+
+if (VAR18 == 0) {
+
+FUN7(&VAR13->VAR19);
+VAR35++;
+FUN3(&VAR13->VAR19, VAR36);
+FUN7(&VAR13->VAR19);
+return (1);
+}
+
+goto VAR28;
+}
+if ((VAR10->VAR29 & VAR37) == 0) {
+VAR18++;
+}
+VAR8 += VAR25;
+} while ((VAR18 < VAR5) && FUN2(VAR13, &VAR8));
+
+
+if (VAR18 == 0) {
+FUN7(&VAR13->VAR19);
+return (1);
+}
+
+VAR28:
+
+for (VAR17 = 0, VAR16 = 0, VAR11 = VAR4; VAR16 < VAR18; ++VAR16, ++VAR11) {
+if (!VAR11->VAR38) {
+VAR10 = &VAR11->VAR23;
+if (FUN8(VAR10)) {
+FUN9(VAR2,
+"");
+VAR17 = 1;
+}
+
+if (FUN10(VAR2, VAR10->VAR31.VAR32,
+FUN11(VAR10->VAR24) & (VAR21)VAR22,
+VAR25, VAR11->VAR39)) {
+VAR17 = 1;
+}
+}
+
+
+FUN12(VAR13, VAR11->VAR39);
+
+if (VAR2->VAR40 & VAR41) {
+VAR17 = 1;
+}
+}
+FUN7(&VAR13->VAR19);
+if (VAR17)
+return (2);
+*VAR7 = VAR18;
+return (0);
+}

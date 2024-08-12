@@ -1,0 +1,1 @@
+paddr_t FUN1 ( void * VAR1 , off_t VAR2 , int VAR3 ) { struct VAR4 * VAR5 = VAR1 ; struct VAR6 * VAR7 = VAR5 -> VAR8 ; return FUN2 ( VAR7 -> VAR9 , & VAR7 -> VAR10 [ 0 ] , VAR7 -> VAR11 , VAR2 , VAR3 , VAR12 ) ; }

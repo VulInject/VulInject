@@ -1,0 +1,1 @@
+void FUN1 ( ) { VAR1 -> VAR2 = false ; FUN2 ( VAR1 , NULL ) ; }

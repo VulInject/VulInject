@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { FUN2 ( & VAR1 ) ; switch ( VAR2 ) { case 0 : FUN3 ( 1 ) ; break ; case 1 : VAR3 = NULL ; VAR4 ; default : VAR2 -- ; break ; } FUN4 ( & VAR1 ) ; }

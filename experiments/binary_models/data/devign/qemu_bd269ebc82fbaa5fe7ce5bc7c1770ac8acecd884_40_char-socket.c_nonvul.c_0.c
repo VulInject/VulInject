@@ -1,0 +1,17 @@
+static void FUN1(VAR1 *VAR2, void *VAR3)
+{
+    VAR4 *VAR5 = FUN2(VAR2);
+    VAR5->VAR6 = VAR7;
+    VAR5->open = VAR8;
+    VAR5->VAR9 = VAR10;
+    VAR5->VAR11 = VAR12;
+    VAR5->VAR13 = VAR14;
+    VAR5->VAR15 = VAR16;
+    VAR5->VAR17 = VAR18;
+    VAR5->VAR19 = VAR20;
+    VAR5->VAR21 = VAR22;
+    VAR5->VAR23 = VAR24;
+    VAR5->VAR25 = VAR26;
+    FUN3(VAR2, "", "", VAR27, NULL, NULL, NULL, &VAR28);
+    FUN4(VAR2, "", VAR29, NULL, &VAR28);
+}

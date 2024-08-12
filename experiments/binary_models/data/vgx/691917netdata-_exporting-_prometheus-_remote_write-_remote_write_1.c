@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , struct VAR3 * VAR3 ) { const char * VAR4 = FUN2 ( VAR2 ) ; int VAR5 = FUN3 ( VAR2 ) ; while ( ! FUN4 ( * VAR4 ) && VAR5 ) { VAR4 ++ ; VAR5 -- ; } VAR4 ++ ; VAR5 -- ; if ( FUN5 ( VAR5 > 4 && ( ! FUN6 ( VAR4 , "" , 4 ) || ! FUN6 ( VAR4 , "" , 4 ) ) ) ) { return 0 ; } else { return FUN7 ( VAR2 , VAR3 ) ; } }

@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( u32 VAR2 ) { struct VAR1 * VAR3 ; u32 VAR4 ; FUN2 ( & VAR5 ) ; FUN3 ( , , ) { VAR4 = FUN4 ( VAR3 -> VAR6 + VAR7 ) ; VAR4 &= VAR8 ; FUN5 ( VAR3 -> VAR9 ) ; VAR10 } VAR3 = NULL ; out FUN6 ( & VAR5 ) ; return VAR3 ; }

@@ -1,0 +1,59 @@
+int FUN1(uint32_t VAR1, struct VAR2 *VAR3)
+{
+struct VAR4 *VAR5 = NULL, *VAR6;
+uint32_t VAR7 = VAR1 % FUN2(VAR8);
+int VAR9 = 0;
+
+FUN3 (VAR10, &VAR8[VAR7], VAR6) {
+if (VAR6->VAR11 == VAR1) {
+VAR5 = VAR6;
+break;
+}
+}
+
+if (!VAR5) {
+if (!VAR3)
+return 0;
+
+VAR5 = FUN4(VAR12, sizeof(struct VAR4));
+
+*VAR5 = (struct VAR4){
+.VAR11 = VAR1,
+.VAR3 = NULL,
+};
+FUN5(&VAR8[VAR7], VAR5);
+}
+
+if (VAR5->VAR3 == VAR3)
+return 0;
+
+if (VAR3) {
+
+VAR3->VAR13++;
+FUN6(VAR3, VAR14);
+}
+if (VAR5->VAR3 && VAR3) {
+
+VAR5->VAR3->VAR9 = 0;
+FUN7(VAR15, "",
+&VAR5->VAR3->VAR16.VAR17, &VAR3->VAR16.VAR17);
+FUN6(VAR5->VAR3, VAR18);
+VAR9 = VAR5->VAR3->VAR9;
+}
+if (VAR5->VAR3) {
+
+VAR5->VAR3->VAR13--;
+if (!VAR5->VAR3->VAR13)
+FUN8(VAR5->VAR3);
+FUN6(VAR5->VAR3, VAR14);
+}
+
+
+VAR5->VAR3 = VAR3;
+if (!VAR3) {
+FUN9(&VAR8[VAR7], VAR5);
+FUN10(VAR12, VAR5);
+}
+
+return VAR9;
+}

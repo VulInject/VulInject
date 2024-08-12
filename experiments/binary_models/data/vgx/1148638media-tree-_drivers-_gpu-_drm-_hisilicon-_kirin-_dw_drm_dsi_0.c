@@ -1,0 +1,21 @@
+static void FUN1(void VAR1 *VAR2, unsigned long VAR3)
+{
+u32 VAR4;
+u32 VAR5 = VAR6 | VAR7 |
+VAR8;
+u32 VAR9 = VAR6 |
+VAR8;
+u32 VAR10 = VAR6;
+
+
+if ((VAR3 & VAR5) == VAR9)
+VAR4 = VAR11;
+else if ((VAR3 & VAR5) == VAR10)
+VAR4 = VAR12;
+else
+VAR4 = VAR13;
+FUN2(VAR4, VAR2 + VAR14);
+
+FUN2(VAR15, VAR2 + VAR16);
+FUN2(VAR17, VAR2 + VAR18);
+}

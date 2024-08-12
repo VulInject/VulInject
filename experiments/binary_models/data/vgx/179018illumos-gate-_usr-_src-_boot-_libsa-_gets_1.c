@@ -1,0 +1,1 @@
+int FUN1 ( char * VAR1 , int VAR2 , int VAR3 ) { char VAR4 ; int VAR5 , VAR6 ; VAR2 -- ; VAR6 = 0 ; while ( VAR2 != 0 ) { VAR5 = read ( VAR3 , & VAR4 , sizeof ( VAR4 ) ) ; if ( VAR5 < 0 ) { return ( - 1 ) ; } if ( VAR5 == 0 ) { break ; } if ( ( VAR4 == '' ) || ( VAR4 == '' ) ) { break ; } * VAR1 ++ = VAR4 ; VAR2 -- ; VAR6 ++ ; } * VAR1 = 0 ; return ( VAR6 ) ; }

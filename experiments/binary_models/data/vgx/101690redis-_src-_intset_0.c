@@ -1,0 +1,153 @@
+int FUN1(int argc, char **argv, int VAR1) {
+uint8_t VAR2;
+int VAR3;
+VAR4 *VAR5;
+srand(FUN2(NULL));
+
+FUN3(argc);
+FUN3(argv);
+FUN3(VAR1);
+
+FUN4(""); {
+assert(FUN5(-32768) == VAR6);
+assert(FUN5(+32767) == VAR6);
+assert(FUN5(-32769) == VAR7);
+assert(FUN5(+32768) == VAR7);
+assert(FUN5(-2147483648) == VAR7);
+assert(FUN5(+2147483647) == VAR7);
+assert(FUN5(-2147483649) == VAR8);
+assert(FUN5(+2147483648) == VAR8);
+assert(FUN5(-9223372036854775808ull) ==
+VAR8);
+assert(FUN5(+9223372036854775807ull) ==
+VAR8);
+FUN6();
+}
+
+FUN4(""); {
+VAR5 = FUN7();
+VAR5 = FUN8(VAR5,5,&VAR2); assert(VAR2);
+VAR5 = FUN8(VAR5,6,&VAR2); assert(VAR2);
+VAR5 = FUN8(VAR5,4,&VAR2); assert(VAR2);
+VAR5 = FUN8(VAR5,4,&VAR2); assert(!VAR2);
+assert(6 == FUN9(VAR5));
+assert(4 == FUN10(VAR5));
+FUN6();
+FUN11(VAR5);
+}
+
+FUN4(""); {
+uint32_t VAR9 = 0;
+VAR5 = FUN7();
+for (VAR3 = 0; VAR3 < 1024; VAR3++) {
+VAR5 = FUN8(VAR5,rand()%0x800,&VAR2);
+if (VAR2) VAR9++;
+}
+assert(FUN12(VAR5->VAR10) == VAR9);
+FUN13(VAR5);
+FUN6();
+FUN11(VAR5);
+}
+
+FUN4(""); {
+VAR5 = FUN7();
+VAR5 = FUN8(VAR5,32,NULL);
+assert(FUN12(VAR5->VAR11) == VAR6);
+VAR5 = FUN8(VAR5,65535,NULL);
+assert(FUN12(VAR5->VAR11) == VAR7);
+assert(FUN14(VAR5,32));
+assert(FUN14(VAR5,65535));
+FUN13(VAR5);
+FUN11(VAR5);
+
+VAR5 = FUN7();
+VAR5 = FUN8(VAR5,32,NULL);
+assert(FUN12(VAR5->VAR11) == VAR6);
+VAR5 = FUN8(VAR5,-65535,NULL);
+assert(FUN12(VAR5->VAR11) == VAR7);
+assert(FUN14(VAR5,32));
+assert(FUN14(VAR5,-65535));
+FUN13(VAR5);
+FUN6();
+FUN11(VAR5);
+}
+
+FUN4(""); {
+VAR5 = FUN7();
+VAR5 = FUN8(VAR5,32,NULL);
+assert(FUN12(VAR5->VAR11) == VAR6);
+VAR5 = FUN8(VAR5,4294967295,NULL);
+assert(FUN12(VAR5->VAR11) == VAR8);
+assert(FUN14(VAR5,32));
+assert(FUN14(VAR5,4294967295));
+FUN13(VAR5);
+FUN11(VAR5);
+
+VAR5 = FUN7();
+VAR5 = FUN8(VAR5,32,NULL);
+assert(FUN12(VAR5->VAR11) == VAR6);
+VAR5 = FUN8(VAR5,-4294967295,NULL);
+assert(FUN12(VAR5->VAR11) == VAR8);
+assert(FUN14(VAR5,32));
+assert(FUN14(VAR5,-4294967295));
+FUN13(VAR5);
+FUN6();
+FUN11(VAR5);
+}
+
+FUN4(""); {
+VAR5 = FUN7();
+VAR5 = FUN8(VAR5,65535,NULL);
+assert(FUN12(VAR5->VAR11) == VAR7);
+VAR5 = FUN8(VAR5,4294967295,NULL);
+assert(FUN12(VAR5->VAR11) == VAR8);
+assert(FUN14(VAR5,65535));
+assert(FUN14(VAR5,4294967295));
+FUN13(VAR5);
+FUN11(VAR5);
+
+VAR5 = FUN7();
+VAR5 = FUN8(VAR5,65535,NULL);
+assert(FUN12(VAR5->VAR11) == VAR7);
+VAR5 = FUN8(VAR5,-4294967295,NULL);
+assert(FUN12(VAR5->VAR11) == VAR8);
+assert(FUN14(VAR5,65535));
+assert(FUN14(VAR5,-4294967295));
+FUN13(VAR5);
+FUN6();
+FUN11(VAR5);
+}
+
+FUN4(""); {
+long VAR12 = 100000, VAR13 = 10000;
+int VAR3, VAR14 = 20;
+long long VAR15;
+VAR5 = FUN15(VAR14,VAR13);
+FUN13(VAR5);
+
+VAR15 = FUN16();
+for (VAR3 = 0; VAR3 < VAR12; VAR3++) FUN17(VAR5,rand() % ((1<<VAR14)-1),NULL);
+FUN4("",
+VAR12,VAR13,FUN16()-VAR15);
+FUN11(VAR5);
+}
+
+FUN4(""); {
+int VAR3, VAR16, VAR17;
+VAR5 = FUN7();
+for (VAR3 = 0; VAR3 < 0xffff; VAR3++) {
+VAR16 = rand() % 0xfff;
+VAR5 = FUN8(VAR5,VAR16,NULL);
+assert(FUN14(VAR5,VAR16));
+
+VAR17 = rand() % 0xfff;
+VAR5 = FUN18(VAR5,VAR17,NULL);
+assert(!FUN14(VAR5,VAR17));
+}
+FUN13(VAR5);
+FUN6();
+FUN11(VAR5);
+}
+
+return 0;
+}

@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR2 ) { int VAR3 = 0 ; FUN2 ( VAR2 -> VAR4 , VAR2 -> VAR5 , & VAR3 ) ; return ( FUN3 ( VAR6 , VAR3 ) == VAR7 || ( FUN3 ( VAR8 , VAR3 ) == VAR7 && VAR3 & VAR9 ) ) ; }

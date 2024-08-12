@@ -1,0 +1,1 @@
+static inline void FUN1 ( struct VAR1 * VAR2 , const char * VAR3 , unsigned int VAR4 ) { struct VAR5 * VAR5 = FUN2 ( sizeof ( VAR5 ) , VAR6 ) ; VAR5 -> VAR7 . VAR8 = FUN3 ( VAR2 , NULL ) ; VAR5 -> VAR7 . VAR9 = VAR3 ; VAR5 -> VAR7 . VAR5 = VAR5 ; VAR5 -> VAR10 = VAR11 ; VAR5 -> VAR12 = VAR13 ; VAR5 -> VAR14 = VAR4 ; FUN4 ( & VAR5 -> VAR7 ) ; }

@@ -1,0 +1,38 @@
+static int FUN1(VAR1 *VAR2, int VAR3)
+{
+    int VAR4;
+    int VAR5 = VAR3 % VAR2->VAR6;
+    int VAR7 = VAR3 / VAR2->VAR6;
+    VAR8 *VAR9 = VAR2->VAR9 + VAR3;
+    if (!VAR9->VAR10)
+        return FUN2(VAR11);
+    VAR9->VAR12[0][0] = FUN3(VAR5 * VAR2->VAR13 + VAR2->VAR14, VAR2->VAR15, VAR2->VAR16);
+    VAR9->VAR12[0][1] = FUN3((VAR5 + 1) * VAR2->VAR13 + VAR2->VAR14, VAR2->VAR15, VAR2->VAR16);
+    VAR9->VAR12[1][0] = FUN3(VAR7 * VAR2->VAR17 + VAR2->VAR18, VAR2->VAR19, VAR2->VAR20);
+    VAR9->VAR12[1][1] = FUN3((VAR7 + 1) * VAR2->VAR17 + VAR2->VAR18, VAR2->VAR19, VAR2->VAR20);
+    for (VAR4 = 0; VAR4 < VAR2->VAR21; VAR4++)
+    {
+        VAR22 *VAR10 = VAR9->VAR10 + VAR4;
+        VAR23 *VAR24 = VAR9->VAR24 + VAR4;
+        VAR25 *VAR26 = VAR9->VAR26 + VAR4;
+        int VAR27;
+        VAR10->VAR28[0][0] = VAR9->VAR12[0][0];
+        VAR10->VAR28[0][1] = VAR9->VAR12[0][1];
+        VAR10->VAR28[1][0] = VAR9->VAR12[1][0];
+        VAR10->VAR28[1][1] = VAR9->VAR12[1][1];
+        if (VAR4)
+        {
+            VAR10->VAR28[0][0] /= VAR2->VAR29[VAR4];
+            VAR10->VAR28[0][1] /= VAR2->VAR29[VAR4];
+            VAR10->VAR28[1][0] /= VAR2->VAR30[VAR4];
+            VAR10->VAR28[1][1] /= VAR2->VAR30[VAR4];
+        }
+        VAR10->VAR12[0][0] = FUN4(VAR10->VAR28[0][0], VAR2->VAR31);
+        VAR10->VAR12[0][1] = FUN4(VAR10->VAR28[0][1], VAR2->VAR31);
+        VAR10->VAR12[1][0] = FUN4(VAR10->VAR28[1][0], VAR2->VAR31);
+        VAR10->VAR12[1][1] = FUN4(VAR10->VAR28[1][1], VAR2->VAR31);
+        if (VAR27 = FUN5(VAR10, VAR24, VAR26, VAR2->VAR32[VAR4], VAR2->VAR29[VAR4], VAR2->VAR30[VAR4], VAR2->VAR33))
+            return VAR27;
+    }
+    return 0;
+}

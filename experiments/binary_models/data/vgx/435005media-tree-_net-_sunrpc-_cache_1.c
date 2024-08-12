@@ -1,0 +1,1 @@
+static ssize_t FUN1 ( char * VAR1 , const char VAR2 * VAR3 , size_t VAR4 , struct VAR5 * VAR6 ) { int VAR7 ; if ( VAR4 == 0 ) { return - VAR8 ; } if ( FUN2 ( VAR1 , VAR3 , VAR4 ) ) { return - VAR9 ; } VAR1 [ VAR4 ] = '' ; VAR7 = VAR6 -> FUN3 ( VAR6 , VAR1 , VAR4 ) ; if ( ! VAR7 ) { VAR7 = VAR4 ; } return VAR7 ; }

@@ -1,0 +1,1 @@
+int main ( int argc , char * argv [ ] ) { FUN1 ( "" ) ; VAR1 * VAR2 = FUN2 ( NULL , NULL ) ; FUN1 ( "" ) ; VAR1 * VAR3 = FUN2 ( VAR2 , NULL ) ; FUN1 ( "" ) ; VAR1 * VAR4 = FUN2 ( VAR2 , NULL ) ; FUN1 ( "" ) ; VAR1 * VAR5 = FUN2 ( VAR3 , NULL ) ; FUN1 ( "" ) ; FUN3 ( VAR2 ) ; FUN1 ( "" ) ; return 0 ; }

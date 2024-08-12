@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { const struct VAR3 * VAR4 = FUN2 ( VAR5 , VAR2 ) ; const enum pcm186x_type VAR6 = ( VAR7 ) VAR4 -> VAR8 ; int VAR9 = VAR2 -> VAR9 ; struct VAR10 * VAR10 ; VAR10 = FUN3 ( VAR2 , & VAR11 ) ; return FUN4 ( & VAR2 -> VAR12 , VAR6 , VAR9 , VAR10 ) ; }

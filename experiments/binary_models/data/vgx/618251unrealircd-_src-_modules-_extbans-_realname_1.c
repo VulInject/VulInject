@@ -1,0 +1,1 @@
+FUN1 ( ) { if ( ! FUN2 ( VAR1 ) ) { FUN3 ( "" ) ; return VAR2 ; } FUN4 ( VAR1 , NULL ) ; return VAR3 ; }

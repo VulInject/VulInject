@@ -1,0 +1,1 @@
+enum env_location FUN1 ( enum env_operation VAR1 , int VAR2 ) { switch ( VAR2 ) { case 0 : return VAR3 ; case 1 : return VAR4 ; default : return VAR5 ; } return VAR5 ; }

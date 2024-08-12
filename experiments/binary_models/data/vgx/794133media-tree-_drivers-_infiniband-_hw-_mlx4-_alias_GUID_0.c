@@ -1,0 +1,97 @@
+void FUN1(struct VAR1 *VAR2,
+int VAR3, u8 VAR4,
+VAR5 *VAR6)
+{
+int VAR7;
+u64 VAR8;
+int VAR9, VAR10;
+enum slave_port_state VAR11;
+enum slave_port_state VAR12;
+__be64 VAR13, VAR14;
+enum slave_port_gen_event VAR15;
+struct VAR16 *VAR17;
+unsigned long VAR18;
+__be64 VAR19;
+
+if (!FUN2(VAR2->VAR2))
+return;
+
+VAR17 = &VAR2->VAR20.VAR21.VAR22[VAR4 - 1].
+VAR23[VAR3];
+VAR8 = FUN3((__force VAR24) VAR2->VAR20.VAR21.
+VAR22[VAR4 - 1].
+VAR23[VAR3].VAR8);
+FUN4("", VAR4, VAR8);
+
+
+for (VAR7 = 0; VAR7 < VAR25; VAR7++) {
+
+if (!(FUN5(VAR7 + 4, (unsigned long *)&VAR8)))
+continue;
+
+VAR9 = (VAR3 * VAR25) + VAR7 ;
+if (VAR9 >= VAR2->VAR2->VAR26->VAR27 + 1)
+return;
+
+VAR10 = FUN6(VAR2->VAR2, VAR9, VAR4);
+if (VAR10 < 0) 
+continue;
+
+VAR13 = *(VAR24 *)&VAR6[VAR7 * VAR28];
+VAR14 = FUN7(VAR2, VAR4,
+(VAR25 * VAR3) + VAR7);
+
+if (VAR13 != VAR14)
+continue;
+
+FUN8(&VAR2->VAR20.VAR21.VAR29, VAR18);
+VAR19 = *(VAR24 *)&VAR17->VAR30[VAR7 * VAR28];
+
+if (VAR19 == FUN9(VAR31))
+VAR19 = 0;
+
+if (VAR13 == VAR19) {
+VAR17->VAR8 = VAR17->VAR8 &
+~FUN10(VAR7);
+} else {
+
+if (VAR13 != VAR32) {
+FUN11(&VAR2->VAR20.
+VAR21.VAR29, VAR18);
+continue;
+}
+}
+FUN11(&VAR2->VAR20.VAR21.VAR29,
+VAR18);
+FUN12(VAR2->VAR2, VAR9, VAR4);
+
+
+if (VAR13 != VAR32) { 
+VAR12 = FUN13(VAR2->VAR2, VAR9, VAR4);
+VAR11 = FUN14(VAR2->VAR2, VAR9, VAR4,
+VAR33,
+&VAR15);
+FUN4(""
+"",
+VAR9, VAR4, VAR12, VAR11, VAR15);
+if (VAR15 == VAR34) {
+FUN4("",
+VAR9, VAR4);
+FUN15(VAR2->VAR2, VAR9,
+VAR4, VAR35);
+}
+} else { 
+FUN14(VAR2->VAR2, VAR9, VAR4,
+VAR36,
+&VAR15);
+if (VAR15 == VAR37) {
+FUN4("",
+VAR9, VAR4);
+FUN15(VAR2->VAR2,
+VAR9,
+VAR4,
+VAR38);
+}
+}
+}
+}

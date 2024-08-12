@@ -1,0 +1,39 @@
+int
+FUN1(void)
+{
+struct VAR1 *VAR2 = FUN2();
+unsigned long long VAR3, VAR4, VAR5;
+
+if ((VAR2->VAR6 & VAR7) == 0 ||
+(VAR8 & VAR9) <= 1 ||
+FUN3(VAR10) <= 1)
+return (-1);
+
+VAR5 = FUN4(VAR11);
+if (VAR5 & FUN5(1, VAR12)) {
+
+return (-1);
+}
+
+VAR5 |= FUN5(1, VAR13);
+FUN6(VAR11, VAR5);
+
+VAR5 = FUN4(VAR14) | VAR15;
+FUN6(VAR14, VAR5);
+
+VAR4 = FUN4(VAR16);
+FUN7(1000000);
+VAR3 = FUN4(VAR16);
+
+VAR5 = FUN4(VAR11);
+VAR5 &= FUN5(1, VAR12);
+FUN6(VAR11, VAR5);
+
+VAR5 = FUN4(VAR14);
+VAR5 &= ~VAR15;
+FUN6(VAR14, VAR5);
+
+VAR17 = ((VAR3 - VAR4) + 999999) / 1000000;
+
+return (VAR17 == 0 ? -1 : 0);
+}

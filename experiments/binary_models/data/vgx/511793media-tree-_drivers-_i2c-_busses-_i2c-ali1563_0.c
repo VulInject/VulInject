@@ -1,0 +1,64 @@
+static int FUN1(struct VAR1 *VAR2, int VAR3)
+{
+u32 VAR4;
+int VAR5;
+int VAR6 = -VAR7;
+
+FUN2(&VAR2->VAR8, ""
+"",
+FUN3(VAR9), FUN3(VAR10), FUN3(VAR11),
+FUN3(VAR12), FUN3(VAR13), FUN3(VAR14),
+FUN3(VAR15));
+
+VAR4 = FUN3(VAR9);
+if (VAR4 & VAR16) {
+FUN4(&VAR2->VAR8, "");
+FUN5(VAR4 | VAR16, VAR9);
+VAR4 = FUN3(VAR9);
+if (VAR4 & VAR16)
+return -VAR17;
+}
+FUN5(FUN3(VAR11) | VAR18, VAR11);
+
+VAR5 = VAR19;
+do {
+FUN6(1);
+} while (((VAR4 = FUN3(VAR9)) & VAR20) && --VAR5);
+
+FUN2(&VAR2->VAR8, ""
+"",
+FUN3(VAR9), FUN3(VAR10), FUN3(VAR11),
+FUN3(VAR12), FUN3(VAR13), FUN3(VAR14),
+FUN3(VAR15));
+
+if (VAR5 && !(VAR4 & VAR16))
+return 0;
+
+if (!VAR5) {
+FUN4(&VAR2->VAR8, "");
+
+FUN5(VAR21, VAR11);
+VAR4 = FUN3(VAR9);
+VAR6 = -VAR22;
+}
+
+
+if (VAR4 & VAR23) {
+if (VAR3 != VAR24)
+FUN4(&VAR2->VAR8, "");
+VAR6 = -VAR25;
+}
+
+if (VAR4 & VAR26) {
+FUN4(&VAR2->VAR8, "");
+
+FUN5(VAR27, VAR10);
+}
+
+if (VAR4 & VAR28) {
+FUN4(&VAR2->VAR8, "");
+FUN5(0x0, VAR11);
+}
+
+return VAR6;
+}

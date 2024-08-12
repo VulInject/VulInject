@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 , int VAR3 , int VAR4 ) { assert ( VAR3 >= 0 && VAR3 <= 2048 ) ; if ( VAR3 < VAR4 ) { int VAR5 = VAR3 % 128 ; if ( VAR5 < 64 ) { VAR2 [ VAR3 / 128 ] . VAR6 . VAR7 = FUN2 ( 1 ) << ( VAR5 % 64 ) ; } else { VAR2 [ VAR3 / 128 ] . VAR6 . VAR8 = FUN2 ( 1 ) << ( VAR5 % 64 ) ; } } }

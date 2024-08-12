@@ -1,0 +1,1 @@
+static ssize_t FUN1 ( void * VAR1 , ssize_t VAR2 , void volatile * VAR3 ) { VAR4 * VAR5 = ( VAR4 * ) VAR1 ; struct sembuf VAR6 ; if ( ! VAR5 ) { return - 1 ; } if ( VAR2 > 0 ) { VAR6 . VAR7 = 1 ; } else { VAR6 . VAR7 = - 1 ; VAR2 = FUN2 ( VAR3 , VAR5 -> VAR8 ) + 1 ; } VAR6 . VAR9 = VAR2 ; return FUN3 ( VAR5 -> VAR10 , & VAR6 , 1 ) < 0 ?- 1 : VAR2 ; }

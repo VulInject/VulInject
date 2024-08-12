@@ -1,0 +1,12 @@
+void FUN1(VAR1 *VAR2, h2o_iovec_t VAR3, const VAR4 *VAR5, h2o_iovec_t VAR6,
+h2o_iovec_t VAR7, VAR8 *VAR9, int VAR10)
+{
+struct VAR11 *VAR12 =
+(struct VAR11 *)FUN2(VAR2, sizeof(*VAR12), VAR13);
+VAR12->VAR3 = VAR3;
+VAR12->VAR5 = VAR5;
+VAR12->VAR6 = VAR6;
+VAR12->VAR7 = VAR7;
+VAR12->VAR9 = VAR9;
+VAR12->VAR10 = VAR10;
+}

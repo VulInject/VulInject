@@ -1,0 +1,1 @@
+static inline void FUN1 ( struct VAR1 * VAR2 , int VAR3 , int * VAR4 ) { VAR4 [ VAR3 ] = 1 ; }

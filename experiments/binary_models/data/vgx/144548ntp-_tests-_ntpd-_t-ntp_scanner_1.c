@@ -1,0 +1,1 @@
+void FUN1 ( void ) { int VAR1 ; VAR1 = FUN2 ( "" ) ; FUN3 ( VAR1 , NULL ) ; VAR1 = FUN2 ( "" ) ; FUN3 ( VAR1 ) ; VAR1 = FUN2 ( "" ) ; FUN3 ( VAR1 ) ; VAR1 = FUN2 ( "" ) ; FUN3 ( VAR1 ) ; }

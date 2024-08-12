@@ -1,0 +1,74 @@
+static int FUN1(VAR1 *VAR2) {
+VAR3 * const VAR4 = FUN2(VAR2, FUN3(1));
+if (FUN4(VAR2, -1)) {
+const_buffer VAR5 = FUN5(VAR2, -1);
+FUN6(VAR4, VAR5.VAR6, VAR5.VAR7);
+return 1; 
+}
+else if (!FUN7(VAR2, -1))
+return 0; 
+
+
+for (int VAR8=1, VAR9=0, VAR10=(int)FUN8(VAR2,-1); !VAR9 && VAR8 <= VAR10; ++VAR8) {
+FUN9(VAR2, -1, VAR8);
+
+if (FUN4(VAR2, -1)) {
+const_buffer VAR5 = FUN5(VAR2, -1);
+FUN6(VAR4, VAR5.VAR6, VAR5.VAR7);
+}
+else if (FUN7(VAR2, -1)) {
+FUN10(VAR2, -1, "");
+FUN10(VAR2, -2, "");
+FUN10(VAR2, -3, "");
+
+if (FUN4(VAR2, -3)) { 
+off_t VAR11 = (VAR12) FUN11(VAR2, -1, 0);
+off_t VAR7 = (VAR12) FUN11(VAR2, -2, -1);
+
+buffer VAR13; 
+const VAR14 * const VAR15 = FUN12(VAR2, -3, &VAR13);
+VAR16 * const VAR17 = (!FUN13(VAR15))
+? FUN14(VAR15, VAR4->VAR18.VAR19)
+: NULL;
+if (VAR17 && (VAR17->VAR20 >= 0 || VAR17->VAR21.VAR22 == 0)) {
+
+
+if (VAR11 > VAR17->VAR21.VAR22)
+VAR11 = VAR17->VAR21.VAR22;
+else if (VAR11 < 0) {
+VAR11 = VAR17->VAR21.VAR22 - VAR11;
+if (VAR11 < 0) VAR11 = 0;
+}
+if (VAR7 < 0 || VAR17->VAR21.VAR22 - VAR11 < VAR7)
+VAR7 = VAR17->VAR21.VAR22 - VAR11;
+if (VAR7)
+FUN15(VAR4, VAR17, VAR11, VAR7);
+}
+else {
+FUN16(VAR4->VAR18.VAR23, VAR24, VAR25,
+"", VAR15->VAR6);
+VAR9 = 1;
+}
+}
+else {
+FUN16(VAR4->VAR18.VAR23, VAR24, VAR25,
+""VAR26\"", VAR8);
+VAR9 = 1;
+}
+
+FUN17(VAR2, 3);
+}
+else if (FUN18(VAR2, -1)) { 
+VAR9 = 1;
+}
+else {
+FUN16(VAR4->VAR18.VAR23, VAR24, VAR25,
+"", VAR8);
+VAR9 = 1;
+}
+
+FUN17(VAR2, 1); 
+}
+
+return 1; 
+}

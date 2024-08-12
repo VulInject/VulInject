@@ -1,0 +1,9 @@
+void FUN1(struct VAR1 *VAR2)
+{
+unsigned int VAR3 = VAR2->VAR4;
+
+VAR2->VAR5 =
+VAR2->VAR6 - FUN2(VAR3);
+VAR2->VAR7 =
+VAR2->VAR8 - FUN3(VAR3);
+}

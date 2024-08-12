@@ -1,0 +1,192 @@
+int FUN1(u32 VAR1)
+{
+struct VAR2 *VAR3, *VAR4;
+struct VAR5 *VAR6;
+union VAR7 *VAR8;
+union VAR9 *VAR10;
+int VAR11, VAR12 = 0, VAR13 = 0;
+u32 VAR14, VAR15;
+u8 VAR16;
+
+VAR3 = FUN2();
+VAR6 = VAR3->VAR17->VAR6;
+
+VAR8 = FUN3(&VAR3->VAR3);
+FUN4(&VAR8->VAR18, VAR1);
+FUN5(&VAR3->VAR3, VAR19);
+if (!FUN6(&VAR3->VAR3, &VAR10)) {
+FUN7(VAR6, "");
+VAR13 = -VAR20;
+goto VAR21;
+}
+
+FUN8((VAR10->VAR22 & VAR23) == VAR24);
+VAR16 = VAR10->VAR25.VAR16 & VAR26;
+if (VAR16 == VAR27)
+goto VAR21; 
+
+
+VAR8 = FUN3(&VAR3->VAR3);
+FUN4(&VAR8->VAR18, VAR1);
+FUN5(&VAR3->VAR3, VAR28);
+if (!FUN6(&VAR3->VAR3, &VAR10)) {
+FUN7(VAR6, "");
+VAR13 = -VAR20;
+goto VAR21;
+}
+
+FUN8((VAR10->VAR22 & VAR23) == VAR29);
+
+VAR14 = FUN9(&VAR10->VAR30.VAR31);
+FUN10(&VAR10->VAR30.VAR31);
+
+if (VAR14 < VAR32) {
+VAR4 = FUN11(VAR14);
+if (VAR4 == NULL) {
+FUN7(VAR6, "",
+VAR14);
+VAR13 = -VAR33;
+goto VAR21;
+}
+} else
+VAR4 = VAR3;
+
+switch (VAR16) {
+case VAR34:
+case VAR35:
+case VAR36:
+case VAR37:
+VAR11 = 0;
+VAR8 = FUN3(&VAR4->VAR3);
+FUN4(&VAR8->VAR18, VAR1);
+FUN5(&VAR4->VAR3, VAR38);
+if (!FUN6(&VAR4->VAR3, &VAR10)) {
+FUN7(VAR6, "");
+VAR13 = -VAR20;
+goto VAR21;
+}
+FUN8((VAR10->VAR22 & VAR23) ==
+VAR39);
+VAR15 = VAR10->VAR40; 
+
+if (VAR15 == VAR41)
+FUN12(&VAR4->VAR3);
+
+if (VAR15 == VAR42) {
+
+int VAR43 = 0;
+
+
+VAR12 = 1;
+
+if (VAR14 >= VAR32 &&
+VAR14 < VAR32 + 15) {
+
+} else if (VAR14 < VAR32) {
+
+} else {
+FUN7(VAR6, "",
+VAR1, VAR14);
+VAR13 = -VAR44;
+goto VAR21;
+}
+
+if (VAR14 < VAR32)
+FUN13(&VAR4->VAR3,
+VAR45 |
+VAR46);
+else
+FUN13(&VAR4->VAR3,
+VAR45 |
+VAR47
+(VAR14));
+do {
+
+FUN14(&VAR4->VAR3);
+
+VAR43 = FUN15(&VAR4->VAR3,
+VAR48);
+FUN16();
+} while (!VAR43);
+
+FUN13(&VAR4->VAR3,
+VAR4->VAR49);
+
+}
+if (VAR15 != VAR41 &&
+VAR15 != VAR42) {
+FUN7(VAR6, "",
+VAR1, VAR15);
+VAR13 = -VAR33;
+goto VAR21;
+}
+if (!(VAR10->VAR50.VAR51 & VAR52)) {
+
+VAR11 = 1;
+}
+
+if (VAR12 || VAR10->VAR50.VAR51 & VAR53) {
+
+do {
+u32 VAR54 = VAR1 | FUN17(3);
+
+FUN18(&VAR3->VAR3, VAR54);
+
+} while (!FUN19(&VAR3->VAR3, VAR1, VAR55));
+}
+
+while (!VAR11) {
+
+VAR11 = FUN15(&VAR3->VAR3, VAR56);
+FUN16();
+}
+VAR8 = FUN3(&VAR3->VAR3);
+FUN4(&VAR8->VAR18, VAR1);
+FUN5(&VAR3->VAR3, VAR57);
+if (!FUN6(&VAR3->VAR3, &VAR10)) {
+VAR13 = -VAR20;
+goto VAR21;
+}
+
+FUN8((VAR10->VAR22 & VAR23) ==
+VAR58);
+if (VAR10->VAR40 != VAR41) {
+FUN7(VAR6, "",
+VAR1, VAR10->VAR40);
+VAR13 = -VAR33;
+goto VAR21;
+}
+break;
+
+case VAR59:
+
+VAR8 = FUN3(&VAR3->VAR3);
+FUN4(&VAR8->VAR18, VAR1);
+FUN5(&VAR3->VAR3, VAR57);
+if (!FUN6(&VAR3->VAR3, &VAR10)) {
+VAR13 = -VAR20;
+goto VAR21;
+}
+
+FUN8((VAR10->VAR22 & VAR23) ==
+VAR58);
+if (VAR10->VAR40 != VAR41) {
+FUN7(VAR6, "",
+VAR1, VAR10->VAR40);
+VAR13 = -VAR33;
+goto VAR21;
+}
+break;
+
+case VAR27:
+
+break;
+
+default:
+VAR13 = -VAR33;
+}
+
+VAR21:
+FUN20();
+return VAR13;
+}

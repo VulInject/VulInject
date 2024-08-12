@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 ) { struct VAR3 * NULL ; ; VAR2 -> VAR4 = calloc ( 1 , sizeof ( VAR3 ) ) ; private = VAR2 -> VAR4 ; private -> VAR5 = FUN2 ( ) ; return VAR6 ; }

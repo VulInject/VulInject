@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { int VAR3 ; struct VAR4 * VAR5 = FUN2 ( VAR2 ) ; VAR3 = ( VAR5 -> VAR6 >= 3000000 ) ?5000000 : 0 ; return VAR3 ; }

@@ -1,0 +1,80 @@
+static void
+FUN1(void *VAR1)
+{
+VAR2	*VAR3 = (VAR2 *)VAR1;
+VAR4		*VAR5 = FUN2(
+VAR3->VAR6->VAR7);
+VAR8	*VAR9 = (VAR8 *)VAR3->VAR10;
+VAR11	*VAR12, *VAR13;
+VAR11	*VAR14 = NULL;
+VAR15		*VAR16;
+
+FUN3(VAR17,  VAR5->VAR18,
+"",
+(void *)VAR5, (void *)VAR3);
+
+FUN4(&VAR5->VAR19);
+
+
+if (VAR9->VAR20 != 0) {
+
+
+VAR9->VAR20 = 0;
+} else {
+FUN5(&VAR5->VAR19);
+
+return;
+}
+
+
+VAR12 = VAR9->VAR21;
+
+while (VAR12) {
+
+
+VAR13 = VAR12->VAR22;
+
+VAR12->VAR23--;
+
+if (VAR12->VAR23 <= 0) {
+
+
+FUN6(VAR5, VAR12);
+
+
+VAR16 = VAR12->VAR24;
+while (VAR16) {
+FUN7(
+VAR5, VAR16);
+
+
+VAR16 = FUN8(VAR5,
+FUN9(VAR16->VAR25));
+}
+
+
+VAR12->VAR22 = VAR14;
+VAR14 = VAR12;
+}
+
+VAR12 = VAR13;
+}
+
+
+FUN10(VAR5, VAR9);
+
+
+VAR12 = VAR14;
+
+while (VAR12) {
+
+
+VAR13 = VAR12->VAR22;
+
+
+FUN11(VAR5, VAR12->VAR24, VAR26);
+
+VAR12 = VAR13;
+}
+FUN5(&VAR5->VAR19);
+}

@@ -1,0 +1,14 @@
+int FUN1(const char *VAR1, int VAR2, int VAR3)
+{
+int VAR4, VAR5;
+if (FUN2(VAR1))
+return 0;
+for (VAR4=0; VAR1[VAR4]; VAR4++){
+if (!FUN3(VAR1[VAR4]))
+return 0;
+}
+VAR5 = FUN4(VAR1);
+if (VAR5 < VAR2 || VAR5 > VAR3)
+return 0;
+return 1;
+}

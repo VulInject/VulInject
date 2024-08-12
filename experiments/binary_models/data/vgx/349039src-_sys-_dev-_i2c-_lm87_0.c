@@ -1,0 +1,81 @@
+void
+FUN1(void *VAR1)
+{
+struct VAR2 *VAR3 = VAR1;
+u_int8_t VAR4, VAR5;
+u_int VAR6;
+int VAR7;
+
+FUN2(VAR3->VAR8, 0);
+
+for (VAR7 = 0; VAR7 < VAR9; VAR7++) {
+VAR4 = VAR10 + VAR7;
+if (FUN3(VAR3->VAR8, VAR11,
+VAR3->VAR12, &VAR4, sizeof VAR4, &VAR5, sizeof VAR5, 0)) {
+VAR3->VAR13[VAR7].VAR14 |= VAR15;
+continue;
+}
+
+VAR3->VAR13[VAR7].VAR14 &= ~VAR15;
+switch (VAR7) {
+case VAR16:
+VAR3->VAR13[VAR7].VAR17 = 2500000 * VAR5 / 192;
+break;
+case VAR18:
+VAR3->VAR13[VAR7].VAR17 = 5000000 * VAR5 / 192;
+break;
+case VAR19:
+VAR3->VAR13[VAR7].VAR17 = 12000000 * VAR5 / 192;
+break;
+case VAR20:
+case VAR21:
+VAR3->VAR13[VAR7].VAR17 = 2700000 * VAR5 / 192;
+break;
+case VAR22:
+VAR3->VAR13[VAR7].VAR17 = 3300000 * VAR5 / 192;
+break;
+case VAR23:
+if (VAR3->VAR24 == 81) {
+VAR3->VAR13[VAR7].VAR14 |= VAR15;
+break;		
+}
+
+case VAR25:
+if (VAR5 == 0x80)
+VAR3->VAR13[VAR7].VAR14 |= VAR15;
+else
+VAR3->VAR13[VAR7].VAR17 =
+(VAR26)VAR5 * 1000000 + 273150000;
+break;
+case VAR27:
+if (VAR3->VAR13[VAR7].VAR28 == VAR29) {
+VAR3->VAR13[VAR7].VAR17 =
+1870000 * VAR5 / 192;
+break;
+}
+VAR6 = VAR5 * VAR3->VAR30;
+if (VAR6 == 0)
+VAR3->VAR13[VAR7].VAR14 |= VAR15;
+else
+VAR3->VAR13[VAR7].VAR17 = 1350000 / VAR6;
+break;
+case VAR31:
+if (VAR3->VAR13[VAR7].VAR28 == VAR29) {
+VAR3->VAR13[VAR7].VAR17 =
+1870000 * VAR5 / 192;
+break;
+}
+VAR6 = VAR5 * VAR3->VAR32;
+if (VAR6 == 0)
+VAR3->VAR13[VAR7].VAR14 |= VAR15;
+else
+VAR3->VAR13[VAR7].VAR17 = 1350000 / VAR6;
+break;
+default:
+VAR3->VAR13[VAR7].VAR14 |= VAR15;
+break;
+}
+}
+
+FUN4(VAR3->VAR8, 0);
+}

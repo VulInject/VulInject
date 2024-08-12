@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( VAR2 * VAR3 , int VAR4 ) { VAR1 * VAR5 = FUN2 ( ) ; if ( ! VAR5 ) { return VAR6 ; } VAR5 -> free = ( VAR7 ) & VAR8 ; if ( VAR4 ) { FUN3 ( VAR5 , FUN4 ( "" , VAR4 , '' , 0 ) ) ; } else { FUN5 ( VAR9 , VAR5 , & VAR10 ) ; } return VAR5 ; }

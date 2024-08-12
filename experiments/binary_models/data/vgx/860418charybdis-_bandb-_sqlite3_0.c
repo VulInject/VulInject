@@ -1,0 +1,24 @@
+static void FUN1(VAR1 *VAR2){
+VAR3 *VAR4 = VAR2->VAR5->VAR6;
+assert( FUN2() );
+if( VAR4 && FUN3(VAR4->VAR7==0) ){
+int VAR8 = FUN4();
+int VAR9;
+assert( VAR4->VAR5==VAR2->VAR5 );
+FUN5(VAR4->mutex);
+for(VAR9=0; VAR9<VAR4->VAR10; VAR9+=VAR8){
+if( VAR4->VAR11>=0 ){
+FUN6(VAR4->VAR12[VAR9], VAR4->VAR13);
+}else{
+FUN7(VAR4->VAR12[VAR9]);
+}
+}
+FUN7(VAR4->VAR12);
+if( VAR4->VAR11>=0 ){
+FUN8(VAR2, VAR4->VAR11, VAR14);
+VAR4->VAR11 = -1;
+}
+VAR4->VAR5->VAR6 = 0;
+FUN7(VAR4);
+}
+}

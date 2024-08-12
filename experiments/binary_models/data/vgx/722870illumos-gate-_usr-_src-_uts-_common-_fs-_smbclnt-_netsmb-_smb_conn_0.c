@@ -1,0 +1,10 @@
+void
+FUN1(struct VAR1 *VAR2, int VAR3, char *VAR4)
+{
+
+FUN2(&VAR2->VAR5, VAR4,  VAR6, NULL);
+
+VAR2->VAR7 = VAR3;
+VAR2->VAR8 = 1;
+FUN3(&VAR2->VAR9);
+}

@@ -1,0 +1,1 @@
+static inline VAR1 FUN1(uint32_t VAR2) { return VAR3 + (VAR2 - 1) * VAR4; }

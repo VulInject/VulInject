@@ -1,0 +1,31 @@
+void FUN1(struct VAR1 *VAR2, const VAR3 *VAR4,
+unsigned int VAR5)
+{
+if (FUN2(VAR2->VAR6)) {
+u32 VAR7 = FUN3(VAR5, VAR8 - VAR2->VAR6);
+
+memcpy(VAR2->VAR9 + VAR2->VAR6, VAR4, VAR7);
+VAR4 += VAR7;
+VAR5 -= VAR7;
+VAR2->VAR6 += VAR7;
+
+if (VAR2->VAR6 == VAR8) {
+FUN4(&VAR2->VAR10, VAR2->VAR9,
+VAR8, 1);
+VAR2->VAR6 = 0;
+}
+}
+
+if (FUN5(VAR5 >= VAR8)) {
+unsigned int VAR11 = FUN6(VAR5, VAR8);
+
+FUN4(&VAR2->VAR10, VAR4, VAR11, 1);
+VAR4 += VAR11;
+VAR5 %= VAR8;
+}
+
+if (FUN2(VAR5)) {
+VAR2->VAR6 = VAR5;
+memcpy(VAR2->VAR9, VAR4, VAR5);
+}
+}

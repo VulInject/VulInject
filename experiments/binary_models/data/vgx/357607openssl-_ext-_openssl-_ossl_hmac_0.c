@@ -1,0 +1,28 @@
+static VAR1
+FUN1(VALUE VAR2, VALUE VAR3, VALUE VAR4)
+{
+VAR5 *VAR6;
+VAR7 *VAR8;
+
+FUN2(VAR2, VAR6);
+FUN3(VAR3);
+VAR8 = FUN4(VAR9, NULL,
+(unsigned char *)FUN5(VAR3),
+FUN6(VAR3));
+if (!VAR8)
+FUN7(VAR10, "");
+VAR8 = FUN8(VAR9, NULL,
+(unsigned char *)FUN5(VAR3),
+FUN6(VAR3));
+if (!VAR8)
+FUN7(VAR10, "");
+if (FUN9(VAR6, NULL, FUN10(VAR4),
+NULL, VAR8) != 1) {
+FUN11(VAR8);
+FUN7(VAR10, "");
+}
+
+FUN11(VAR8);
+
+return VAR2;
+}

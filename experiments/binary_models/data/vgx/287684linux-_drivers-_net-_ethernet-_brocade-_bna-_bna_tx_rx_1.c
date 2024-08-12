@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , enum bna_rxf_event VAR3 ) { switch ( VAR3 ) { case VAR4 : FUN2 ( VAR2 , VAR5 ) ; break ; case VAR6 : FUN3 ( VAR2 ) ; break ; case VAR7 : break ; case VAR8 : FUN4 ( VAR2 ) ; break ; default : FUN5 ( VAR3 , NULL ) ; } }

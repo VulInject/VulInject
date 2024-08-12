@@ -1,0 +1,19 @@
+static VAR1 *FUN1(VAR2 *VAR3, int64_t VAR4, VAR5 *VAR6, int VAR7, VAR8 *VAR9, void *VAR10, int VAR11)
+{
+    VAR12 *VAR13 = FUN2(sizeof(*VAR13));
+    VAR1 *VAR14 = FUN3(&VAR15, VAR3, VAR9, VAR10);
+    VAR13->VAR16 = VAR14;
+    VAR13->VAR6 = VAR6;
+    VAR13->VAR17 = FUN4(512, VAR7 * 512);
+    VAR13->VAR11 = VAR11;
+    if (VAR11)
+    {
+        FUN5(VAR13->VAR6, VAR13->VAR17);
+        VAR13->VAR14 = FUN6(VAR3, VAR4, VAR13->VAR17, VAR7, VAR18, VAR13);
+    }
+    else
+    {
+        VAR13->VAR14 = FUN7(VAR3, VAR4, VAR13->VAR17, VAR7, VAR18, VAR13);
+    }
+    return VAR14;
+}

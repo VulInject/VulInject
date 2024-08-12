@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , int VAR3 , int VAR4 ) { acpi_status VAR5 ; if ( FUN2 ( 0 || VAR3 ) 3 || FUN3 ( 0 || VAR4 ) 1 ) { return - VAR6 ; } VAR2 -> VAR7 = ( VAR4 << 2 ) | VAR3 ; VAR5 = FUN4 ( VAR2 -> VAR8 -> VAR9 , "" , ( VAR4 << 2 ) | VAR3 ) ; if ( FUN5 ( VAR5 ) ) { return - VAR10 ; } return 0 ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( const char * VAR1 , size_t VAR2 , struct VAR3 * VAR4 , u_int8_t VAR5 ) { const char * VAR6 ; int VAR7 = FUN2 ( VAR1 , FUN3 ( VAR8 , VAR2 , 0xffff ) , ( VAR9 * ) VAR4 , VAR5 , & VAR6 ) ; return 0 ; }

@@ -1,0 +1,1 @@
+static unsigned long FUN1 ( int VAR1 , unsigned long VAR2 ) { struct VAR3 * VAR4 = FUN2 ( ) ; const struct VAR5 * VAR6 = & VAR4 -> VAR7 [ VAR1 ] ; uint32_t VAR8 = FUN3 ( VAR1 ) ; int VAR7 = 0U ; VAR7 = FUN4 ( VAR6 -> VAR9 , VAR8 , VAR6 -> VAR10 , VAR6 -> VAR11 ) ; if ( ! VAR7 ) { return VAR2 ; } return FUN5 ( ( VAR12 ) VAR2 , VAR7 ) ; }

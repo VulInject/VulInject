@@ -1,0 +1,1 @@
+int FUN1 ( const struct VAR1 * VAR2 , u8 VAR3 , u8 VAR4 ) { return VAR5 - 1 + VAR4 ; }

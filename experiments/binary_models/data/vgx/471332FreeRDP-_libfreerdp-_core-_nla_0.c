@@ -1,0 +1,139 @@
+static VAR1 FUN1(VAR2* VAR3)
+{
+BOOL VAR4 = VAR5;
+
+FUN2(VAR3);
+FUN2(VAR3->VAR6);
+
+VAR7* VAR8 = VAR3->VAR6->VAR8;
+FUN2(VAR8);
+
+VAR9* VAR10 = VAR3->VAR6->VAR10;
+FUN2(VAR10);
+
+
+if ((FUN3(VAR8->VAR11) ||
+(FUN3(VAR8->VAR12) &&
+FUN3((const char*)VAR8->VAR13))))
+{
+VAR4 = VAR14;
+}
+
+if (VAR4 && !FUN3(VAR8->VAR11))
+{
+VAR15* VAR16 = FUN4(NULL, VAR14);
+if (VAR16)
+{
+const size_t VAR17 = strlen(VAR8->VAR11);
+VAR18* VAR19 = FUN5(
+VAR16, VAR8->VAR11, VAR17 + 1 , NULL, 0);
+if (VAR19)
+{
+
+VAR4 = VAR5;
+FUN6(VAR16, VAR19);
+}
+
+FUN7(VAR16);
+}
+}
+
+if (VAR4)
+{
+if (VAR8->VAR20)
+{
+if ((VAR8->VAR21) && (strlen(VAR8->VAR21) > 0))
+VAR4 = VAR5;
+}
+}
+
+BOOL VAR22 = !VAR8->VAR23;
+if (VAR4)
+{
+switch (FUN8(VAR10, VAR24, VAR14))
+{
+case VAR25:
+case VAR26:
+break;
+case VAR27:
+FUN9(VAR10->VAR28, VAR29);
+return VAR5;
+case VAR30:
+FUN9(VAR10->VAR28,
+VAR31);
+return VAR5;
+default:
+return VAR5;
+}
+}
+
+if (!VAR8->VAR11)
+{
+FUN10(VAR3->VAR32);
+VAR3->VAR32 = NULL;
+}
+else if (VAR8->VAR23)
+{
+if (VAR22)
+{
+if (!FUN11(VAR3))
+return VAR5;
+}
+
+CERT_CREDENTIAL_INFO VAR33 = { sizeof(VAR34), { 0 } };
+LPSTR VAR35;
+
+memcpy(VAR33.VAR36, VAR3->VAR37, sizeof(VAR33.VAR36));
+
+if (!FUN12(VAR38, &VAR33, &VAR35))
+{
+FUN13(VAR39, "");
+return VAR5;
+}
+
+if (FUN14(VAR3->VAR32, VAR35, NULL, VAR8->VAR12) <
+0)
+return VAR5;
+
+FUN15(VAR35);
+if (FUN14(VAR3->VAR32, VAR8->VAR11, VAR8->VAR40,
+VAR8->VAR12) < 0)
+return VAR5;
+}
+else
+{
+BOOL VAR41 = VAR14;
+
+if (VAR8->VAR13 && (VAR8->VAR42 > 0))
+{
+if (FUN16(
+VAR3->VAR32, VAR8->VAR11, VAR8->VAR40,
+(const VAR43*)VAR8->VAR13,
+VAR8->VAR42 / sizeof(VAR43) - 1) < 0)
+return VAR5;
+}
+
+if (VAR8->VAR20)
+{
+if (VAR8->VAR21 && strlen(VAR8->VAR21) == 32)
+{
+if (FUN14(VAR3->VAR32, VAR8->VAR11, VAR8->VAR40,
+VAR8->VAR21) < 0)
+return VAR5;
+
+
+VAR3->VAR32->VAR44 += VAR45;
+VAR41 = VAR5;
+}
+}
+
+if (VAR41)
+{
+if (FUN14(VAR3->VAR32, VAR8->VAR11, VAR8->VAR40,
+VAR8->VAR12) < 0)
+return VAR5;
+}
+}
+
+return VAR14;
+}

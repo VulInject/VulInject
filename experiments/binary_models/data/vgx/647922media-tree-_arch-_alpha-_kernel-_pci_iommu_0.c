@@ -1,0 +1,71 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+int VAR5, enum dma_data_direction VAR6,
+unsigned long VAR7)
+{
+struct VAR8 *VAR9 = FUN2(VAR2);
+struct VAR3 *VAR10, *VAR11, *VAR12;
+struct VAR13 *VAR14;
+struct VAR15 *VAR16;
+dma_addr_t VAR17;
+int VAR18;
+
+FUN3(VAR6 == VAR19);
+
+VAR18 = VAR2 ? FUN4(VAR9, VAR9->VAR20) : 0;
+
+
+if (VAR5 == 1) {
+VAR4->VAR21 = VAR4->VAR22;
+VAR4->VAR23
+= FUN5(VAR9, FUN6(VAR4),
+VAR4->VAR22, VAR18);
+return VAR4->VAR23 != 0;
+}
+
+VAR10 = VAR4;
+VAR11 = VAR4 + VAR5;
+
+
+FUN7(VAR2, VAR4, VAR11, VAR24.VAR25 != 0);
+
+
+if (VAR24.VAR25) {
+VAR14 = VAR9 ? VAR9->VAR26 : VAR27;
+VAR17 = VAR9 ? VAR9->VAR20 : VAR28;
+VAR16 = VAR14->VAR29;
+if (!VAR16 || VAR16->VAR30 + VAR16->VAR31 - 1 > VAR17)
+VAR16 = VAR14->VAR32;
+} else {
+VAR17 = -1;
+VAR16 = NULL;
+VAR14 = NULL;
+}
+
+
+for (VAR12 = VAR4; VAR4 < VAR11; ++VAR4) {
+if ((int) VAR4->VAR23 < 0)
+continue;
+if (FUN8(VAR2, VAR4, VAR11, VAR12, VAR16, VAR17, VAR18) < 0)
+goto VAR33;
+VAR12++;
+}
+
+
+if (VAR12 < VAR11)
+VAR12->VAR21 = 0;
+
+if (VAR12 - VAR10 == 0)
+FUN9(VAR34 "");
+FUN10("", VAR12 - VAR10);
+
+return VAR12 - VAR10;
+
+VAR33:
+FUN9(VAR34 ""
+"");
+
+
+if (VAR12 > VAR10)
+FUN11(VAR9, VAR10, VAR12 - VAR10, VAR6);
+return 0;
+}

@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( VAR1 * VAR2 ) { VAR1 * VAR3 ; VAR3 = ( VAR1 * ) malloc ( sizeof ( VAR1 ) ) ; if ( VAR3 == NULL ) { return NULL ; } VAR3 -> VAR4 = malloc ( VAR2 -> VAR5 ) ; if ( VAR3 -> VAR4 == NULL ) { return NULL ; } memcpy ( VAR3 -> VAR4 , VAR2 -> VAR4 , VAR2 -> VAR5 ) ; VAR3 -> VAR6 = VAR2 -> VAR6 ; VAR3 -> VAR5 = VAR2 -> VAR5 ; VAR3 -> VAR7 = NULL ; return VAR3 ; }

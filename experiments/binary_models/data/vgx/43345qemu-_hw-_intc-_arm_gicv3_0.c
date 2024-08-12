@@ -1,0 +1,47 @@
+static void FUN1(VAR1 *VAR2)
+{
+
+bool VAR3 = false;
+uint8_t VAR4;
+int VAR5;
+uint32_t VAR6;
+
+
+VAR6 = FUN2(VAR2);
+
+if (VAR6) {
+for (VAR5 = 0; VAR5 < VAR7; VAR5++) {
+if (!(VAR6 & (1 << VAR5))) {
+continue;
+}
+VAR4 = VAR2->VAR8[VAR5];
+if (FUN3(VAR2, VAR5, VAR4)) {
+VAR2->VAR9.VAR10 = VAR5;
+VAR2->VAR9.VAR4 = VAR4;
+VAR3 = true;
+}
+}
+}
+
+if (VAR3) {
+VAR2->VAR9.VAR11 = FUN4(VAR2->VAR12, VAR2, VAR2->VAR9.VAR10);
+}
+
+if ((VAR2->VAR13 & VAR14) && VAR2->VAR12->VAR15 &&
+(VAR2->VAR12->VAR16 & VAR17) &&
+(VAR2->VAR18.VAR4 != 0xff)) {
+if (FUN3(VAR2, VAR2->VAR18.VAR10, VAR2->VAR18.VAR4)) {
+VAR2->VAR9.VAR10 = VAR2->VAR18.VAR10;
+VAR2->VAR9.VAR4 = VAR2->VAR18.VAR4;
+VAR2->VAR9.VAR11 = VAR2->VAR18.VAR11;
+VAR3 = true;
+}
+}
+
+
+if (!VAR3 && VAR2->VAR9.VAR4 != 0xff &&
+(VAR2->VAR9.VAR10 < VAR7 ||
+VAR2->VAR9.VAR10 >= VAR19)) {
+FUN5(VAR2->VAR12);
+}
+}

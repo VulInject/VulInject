@@ -1,0 +1,37 @@
+static int FUN1(struct VAR1 *VAR2, void *VAR3)
+{
+int VAR4;
+
+FUN2(VAR2, "",
+FUN3(&VAR5.VAR6[VAR7]),
+FUN3(&VAR5.VAR6[VAR8]),
+FUN3(&VAR5.VAR6[VAR9]),
+FUN3(&VAR5.VAR6[VAR10]),
+FUN3(&VAR5.VAR6[VAR11]),
+FUN3(&VAR5.VAR6[VAR12]));
+
+
+FUN2(VAR2, "", FUN4(&VAR5.VAR13));
+
+
+for (VAR4 = 0; VAR4 < 10; VAR4++)
+FUN5(VAR2, "");
+
+
+FUN5(VAR2, "");
+
+
+FUN6(VAR2, &VAR14);
+
+
+
+FUN2(VAR2,"", VAR15 + 1);
+for (VAR4 = 0; VAR4 <= VAR15; VAR4++) {
+FUN2(VAR2, "",
+FUN3(&VAR5.VAR6[FUN7(VAR4)]));
+}
+
+FUN8(VAR2, '');
+
+return 0;
+}

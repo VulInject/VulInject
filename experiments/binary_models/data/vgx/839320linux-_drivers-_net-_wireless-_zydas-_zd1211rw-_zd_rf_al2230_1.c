@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , u8 VAR3 ) { int VAR4 ; const VAR5 * VAR6 = VAR7 [ VAR3 - 1 ] ; struct VAR8 * VAR9 = FUN2 ( VAR2 ) ; static const struct zd_ioreq16 VAR10 [ ] { { ZD_CR138 0x28 } { ZD_CR203 0x06 } } ; ; VAR4 = FUN3 ( VAR9 , VAR6 , 3 , VAR11 ) ; return FUN4 ( VAR9 , VAR10 , FUN5 ( VAR10 ) ) ; }

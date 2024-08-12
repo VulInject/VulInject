@@ -1,0 +1,54 @@
+static VAR1 *
+FUN1(const VAR2 *VAR3,
+VAR4 *VAR5,
+VAR6 *VAR7,
+VAR8 *VAR9,
+virCPUType VAR10)
+{
+FUN2(VAR1) VAR11 = NULL;
+FUN3(VAR2) copy = VAR12;
+FUN3(VAR2) VAR13 = VAR12;
+VAR14 *VAR15;
+
+VAR11 = FUN4();
+
+VAR11->VAR5 = FUN5(VAR5->VAR16);
+
+FUN6(&copy, VAR3);
+FUN6(&VAR13, &VAR5->VAR3);
+
+if ((VAR15 = FUN7(&copy, VAR7)))
+VAR11->VAR15 = FUN5(VAR15->VAR16);
+
+FUN8(&copy, &VAR13);
+FUN8(&VAR13, VAR3);
+
+
+if (VAR9 && VAR9->VAR17) {
+char **VAR18;
+VAR19 *VAR20;
+
+for (VAR18 = VAR9->VAR17; *VAR18; VAR18++) {
+if ((VAR20 = FUN9(VAR7, *VAR18)) &&
+!FUN10(&copy, &VAR20->VAR3))
+if (FUN11(&VAR13, &VAR20->VAR3) < 0)
+return NULL;
+}
+}
+
+
+VAR11->VAR21 = VAR22;
+
+if (FUN12(VAR11, VAR23, &copy, VAR7) ||
+FUN12(VAR11, VAR24, &VAR13, VAR7))
+return NULL;
+
+if (VAR10 == VAR22) {
+if (FUN13(VAR11, VAR5) < 0)
+return NULL;
+}
+
+VAR11->VAR21 = VAR10;
+
+return FUN14(&VAR11);
+}

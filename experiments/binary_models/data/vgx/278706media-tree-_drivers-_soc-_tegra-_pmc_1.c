@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , const char * VAR3 ) { unsigned int VAR4 ; for ( VAR4 = 0 ; VAR4 < VAR2 -> VAR5 -> VAR6 ; VAR4 ++ ) { if ( ! FUN2 ( VAR4 ) ) { continue ; } if ( ! strcmp ( VAR3 , VAR2 -> VAR5 -> VAR7 [ VAR4 ] ) ) { return VAR4 ; } } return - VAR8 ; }

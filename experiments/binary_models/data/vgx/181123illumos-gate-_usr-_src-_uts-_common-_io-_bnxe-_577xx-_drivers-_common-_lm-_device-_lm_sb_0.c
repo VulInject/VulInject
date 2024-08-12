@@ -1,0 +1,73 @@
+VAR1 FUN1(VAR2 *VAR3, u8_t VAR4, VAR1 *VAR5, VAR1 *VAR6)
+{
+u16_t VAR7 = 0;
+u8_t  VAR8 = 0;
+u8_t  VAR9 = 0;
+u8_t  VAR10 = 0;
+
+VAR8 = VAR4;
+
+if ((FUN2(VAR3) == VAR11) || (FUN3(VAR3) == 0)) {
+
+FUN4(VAR9, VAR12);
+FUN4(VAR9, VAR13);
+} else {
+if (VAR8 >= FUN3(VAR3)) {
+VAR8 -= FUN3(VAR3);
+FUN4(VAR9, VAR12);
+
+} else {
+FUN4(VAR9, VAR13);
+
+}
+}
+
+if (FUN5(VAR9, VAR12)) {
+VAR7 = FUN6(VAR3, VAR8, VAR14);
+
+if (VAR7 != VAR3->VAR15.VAR16[VAR8]) {
+VAR3->VAR15.VAR16[VAR8] = VAR7;
+}
+
+VAR10 = VAR8; 
+
+if (FUN7(VAR3, VAR10))
+{
+
+FUN4(VAR9, VAR17);
+}
+
+
+if (FUN8(VAR3, VAR10))
+{
+FUN9(VAR3, VAR10);
+}
+}
+if (FUN5(VAR9, VAR13)) {
+if (FUN3(VAR3)) {
+VAR7 = FUN6(VAR3, VAR8, VAR18);
+
+if (VAR7 != VAR3->VAR15.VAR19[VAR8]) {
+VAR3->VAR15.VAR19[VAR8] = VAR7;
+}
+}
+VAR10 = VAR8; 
+
+if (FUN10(VAR3, VAR10))
+{
+
+FUN4(VAR9, VAR20);
+}
+
+
+
+if (FUN11(VAR3, VAR10))
+{
+FUN12(VAR3, VAR10);
+}
+}
+*VAR5 = VAR10;
+*VAR6 = VAR10;
+
+return VAR9;
+}

@@ -1,0 +1,18 @@
+static int FUN1(VAR1 *VAR2, VAR3 **argv) {
+VAR4 *VAR5 = FUN2();
+int VAR6;
+
+FUN3(VAR5, VAR2->VAR7);
+FUN3(VAR5, "");
+FUN3(VAR5, VAR2->VAR8);
+FUN3(VAR5, "");
+FUN3(VAR5, VAR2->VAR9);
+while (*argv) {
+FUN3(VAR5, *argv++);
+}
+FUN3(VAR5, NULL);
+
+VAR6 = FUN4(VAR2, (VAR3**)VAR5->VAR10);
+FUN5(VAR5, VAR11);
+return VAR6;
+}

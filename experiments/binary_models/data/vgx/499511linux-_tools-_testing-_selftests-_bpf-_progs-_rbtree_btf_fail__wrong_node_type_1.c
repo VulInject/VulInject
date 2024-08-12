@@ -1,0 +1,1 @@
+private ( VAR1 ) bpf_spin_lock VAR2 ; private ( VAR1 ) bpf_rb_root groot FUN1 ( VAR3 , VAR4 ) ; FUN2 ( "" ) long FUN3 ( void * VAR5 ) { struct VAR3 * VAR6 ; VAR6 = FUN4 ( FUN5 ( * VAR6 ) ) ; FUN6 ( & VAR2 ) ; FUN7 ( & VAR7 ) ; FUN8 ( & VAR2 ) ; return 0 ; }

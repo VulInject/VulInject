@@ -1,0 +1,99 @@
+static VAR1 FUN1(struct VAR2 *VAR3,
+struct VAR4 *VAR5)
+{
+CURLUcode VAR6;
+char **VAR7 = &VAR5->VAR8;
+char **VAR9 = &VAR5->VAR10;
+char **VAR11 = &VAR5->VAR12;
+
+if(VAR3->VAR13.VAR14[VAR15]) {
+free(*VAR11);
+*VAR11 = strdup(VAR3->VAR13.VAR14[VAR15]);
+if(!*VAR11)
+return VAR16;
+}
+
+if(VAR3->VAR13.VAR17 == VAR18) {
+FUN2(*VAR7);
+FUN2(*VAR9);
+}
+VAR5->VAR19.VAR20 = VAR21;
+if(VAR3->VAR13.VAR17 && !VAR3->VAR13.VAR14[VAR22]) {
+int VAR23;
+bool VAR24 = VAR21;
+
+if(VAR3->VAR25.VAR26.VAR8) {
+
+VAR7 = &VAR3->VAR25.VAR26.VAR8;
+VAR24 = VAR27;
+}
+
+VAR23 = FUN3(VAR5->VAR28.VAR29,
+VAR7, VAR9,
+VAR3->VAR13.VAR14[VAR30]);
+if(VAR23 > 0) {
+FUN4(VAR3, "",
+VAR5->VAR28.VAR29, VAR3->VAR13.VAR14[VAR30]);
+}
+else if(VAR23 < 0) {
+FUN5(VAR3, "");
+return VAR31;
+}
+else {
+
+VAR5->VAR19.VAR20 = VAR27;
+}
+if(VAR24) {
+FUN2(VAR5->VAR8);
+VAR5->VAR8 = strdup(*VAR7);
+if(!VAR5->VAR8)
+return VAR16;
+}
+
+if(!*VAR7 && *VAR9) {
+*VAR7 = strdup("");
+if(!*VAR7)
+return VAR16;
+}
+}
+
+
+if(*VAR7) {
+CURLcode VAR32;
+if(VAR3->VAR25.VAR26.VAR8 != *VAR7) {
+
+VAR32 = FUN6(&VAR3->VAR25.VAR26.VAR8, *VAR7);
+if(VAR32)
+return VAR32;
+}
+}
+if(VAR3->VAR25.VAR26.VAR8) {
+VAR6 = FUN7(VAR3->VAR25.VAR33, VAR34, VAR3->VAR25.VAR26.VAR8,
+VAR35);
+if(VAR6)
+return FUN8(VAR6);
+if(!*VAR7) {
+*VAR7 = strdup(VAR3->VAR25.VAR26.VAR8);
+if(!*VAR7)
+return VAR16;
+}
+}
+if(*VAR9) {
+CURLcode VAR32 = FUN6(&VAR3->VAR25.VAR26.VAR10, *VAR9);
+if(VAR32)
+return VAR32;
+}
+if(VAR3->VAR25.VAR26.VAR10) {
+VAR6 = FUN7(VAR3->VAR25.VAR33, VAR36,
+VAR3->VAR25.VAR26.VAR10, VAR35);
+if(VAR6)
+return FUN8(VAR6);
+if(!*VAR9) {
+*VAR9 = strdup(VAR3->VAR25.VAR26.VAR10);
+if(!*VAR9)
+return VAR16;
+}
+}
+
+return VAR37;
+}

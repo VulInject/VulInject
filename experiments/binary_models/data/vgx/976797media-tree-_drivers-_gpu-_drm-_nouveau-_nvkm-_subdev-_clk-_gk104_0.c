@@ -1,0 +1,6 @@
+static void
+FUN1(struct VAR1 *VAR2, int VAR3)
+{
+struct VAR4 *VAR5 = VAR2->VAR6.VAR7.VAR5;
+FUN2(VAR5, 0x137160 + (VAR3 * 0x04), 0x00000100, 0x00000000);
+}

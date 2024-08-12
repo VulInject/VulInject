@@ -1,0 +1,1 @@
+OM_uint32 FUN1 ( VAR1 * VAR2 , const gss_ctx_id_t VAR3 , const gss_OID VAR4 , VAR5 * VAR6 ) { VAR7 * VAR8 ; int VAR9 ; VAR8 = ( VAR7 * ) VAR3 ; VAR9 . VAR10 = & VAR8 -> VAR11 ; VAR9 . VAR12 = sizeof ( VAR8 -> VAR11 ) ; return FUN2 ( VAR2 , & VAR9 , VAR6 ) ; }

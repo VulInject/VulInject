@@ -1,0 +1,124 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+struct VAR5 *VAR6;
+unsigned int VAR7;
+int VAR8;
+
+FUN3(VAR4->VAR9);
+
+
+FUN4(VAR4);
+
+
+FUN5(VAR4);
+
+
+FUN6(VAR4, VAR10 | VAR11, 0);
+
+
+FUN7(VAR4);
+
+
+if (!VAR4->VAR12)
+FUN8(VAR4, VAR13, VAR14);
+else
+FUN9(VAR4);
+
+
+FUN10(VAR2, VAR2->VAR15);
+
+
+FUN11(VAR4, VAR2->VAR16);
+
+VAR6 = FUN12(VAR2, VAR4->VAR17, VAR18,
+0, VAR4->VAR19);
+if (!VAR6) {
+FUN13(VAR2, "");
+VAR8 = -VAR20;
+goto VAR21;
+}
+
+
+VAR6->VAR22 = true;
+
+
+VAR4->VAR23 = -1;
+VAR4->VAR24 = -1;
+VAR4->VAR25 = -1;
+
+
+FUN14(VAR4);
+
+VAR8 = FUN15(VAR4->VAR26, VAR27, 0, VAR2->VAR28, VAR2);
+if (VAR8) {
+FUN13(VAR2, "");
+goto VAR29;
+}
+
+if (!VAR4->VAR12) {
+VAR8 = FUN15(VAR4->VAR30, VAR31, 0,
+VAR2->VAR28, VAR2);
+if (VAR8) {
+FUN13(VAR2, "");
+goto VAR32;
+}
+}
+
+
+FUN16(&VAR4->VAR33);
+for (VAR7 = 0; VAR7 < VAR2->VAR34; VAR7++) {
+VAR8 = FUN17(VAR4, VAR7);
+if (VAR8) {
+FUN13(VAR2, "",
+VAR7);
+goto VAR35;
+}
+}
+
+
+FUN18(VAR4, VAR36, VAR37);
+
+
+VAR8 = FUN19(VAR4);
+if (VAR8) {
+FUN13(VAR2, "");
+goto VAR38;
+}
+
+
+VAR8 = FUN20(VAR4, 1);
+if (VAR8)
+goto VAR38;
+
+
+VAR8 = FUN21(VAR4, 1);
+if (VAR8)
+goto VAR39;
+
+
+FUN6(VAR4, VAR10 | VAR11, 1);
+
+FUN22(VAR2);
+
+FUN23(VAR2);
+
+return 0;
+
+VAR39:
+FUN24(VAR4, VAR40 | VAR41);
+VAR38:
+FUN25(VAR4);
+VAR35:
+for (VAR7 = 0; VAR7 < VAR2->VAR34; VAR7++)
+FUN26(VAR4, VAR7);
+if (!VAR4->VAR12)
+FUN27(VAR4->VAR30, VAR2);
+VAR32:
+FUN27(VAR4->VAR26, VAR2);
+VAR29:
+FUN28(VAR6);
+VAR21:
+FUN29(VAR4->VAR9);
+return VAR8;
+}

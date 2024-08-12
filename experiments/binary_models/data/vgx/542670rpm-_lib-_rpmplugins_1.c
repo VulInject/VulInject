@@ -1,0 +1,1 @@
+static rpmPlugin FUN1 ( rpmPlugins VAR1 , const char * VAR2 ) { int VAR3 ; for ( VAR3 = 0 ; VAR3 < VAR1 -> VAR4 ; VAR3 ++ ) { rpmPlugin VAR5 = VAR1 -> VAR1 [ VAR3 ] ; } return NULL ; }

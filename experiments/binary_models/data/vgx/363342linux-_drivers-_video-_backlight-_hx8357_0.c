@@ -1,0 +1,106 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+int VAR5;
+
+
+if (VAR4->VAR6) {
+FUN3(VAR4->VAR7[0], 1);
+FUN3(VAR4->VAR7[1], 0);
+FUN3(VAR4->VAR7[2], 1);
+}
+
+VAR5 = FUN4(VAR2, VAR8,
+FUN5(VAR8));
+if (VAR5 < 0)
+return VAR5;
+
+VAR5 = FUN4(VAR2, VAR9,
+FUN5(VAR9));
+if (VAR5 < 0)
+return VAR5;
+
+VAR5 = FUN4(VAR2, VAR10,
+FUN5(VAR10));
+if (VAR5 < 0)
+return VAR5;
+
+VAR5 = FUN4(VAR2, VAR11,
+FUN5(VAR11));
+if (VAR5 < 0)
+return VAR5;
+
+VAR5 = FUN4(VAR2, VAR12,
+FUN5(VAR12));
+if (VAR5 < 0)
+return VAR5;
+
+VAR5 = FUN4(VAR2, VAR13,
+FUN5(VAR13));
+if (VAR5 < 0)
+return VAR5;
+
+VAR5 = FUN4(VAR2, VAR14,
+FUN5(VAR14));
+if (VAR5 < 0)
+return VAR5;
+
+VAR5 = FUN4(VAR2, VAR15,
+FUN5(VAR15));
+if (VAR5 < 0)
+return VAR5;
+
+VAR5 = FUN4(VAR2, VAR16,
+FUN5(VAR16));
+if (VAR5 < 0)
+return VAR5;
+
+VAR5 = FUN4(VAR2, VAR17,
+FUN5(VAR17));
+if (VAR5 < 0)
+return VAR5;
+
+VAR5 = FUN4(VAR2, VAR18,
+FUN5(VAR18));
+if (VAR5 < 0)
+return VAR5;
+
+VAR5 = FUN4(VAR2, VAR19,
+FUN5(VAR19));
+if (VAR5 < 0)
+return VAR5;
+
+VAR5 = FUN4(VAR2, VAR20,
+FUN5(VAR20));
+if (VAR5 < 0)
+return VAR5;
+
+VAR5 = FUN4(VAR2, VAR21,
+FUN5(VAR21));
+if (VAR5 < 0)
+return VAR5;
+
+VAR5 = FUN4(VAR2, VAR22,
+FUN5(VAR22));
+if (VAR5 < 0)
+return VAR5;
+
+VAR5 = FUN6(VAR2, VAR23);
+if (VAR5 < 0)
+return VAR5;
+
+
+FUN7(120);
+
+VAR5 = FUN6(VAR2, VAR24);
+if (VAR5 < 0)
+return VAR5;
+
+FUN8(5000, 7000);
+
+VAR5 = FUN6(VAR2, VAR25);
+if (VAR5 < 0)
+return VAR5;
+
+return 0;
+}

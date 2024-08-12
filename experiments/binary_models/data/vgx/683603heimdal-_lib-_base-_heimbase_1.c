@@ -1,0 +1,1 @@
+void * FUN1 ( size_t VAR1 , const char * VAR2 , heim_type_dealloc VAR3 ) { struct VAR4 * VAR5 = calloc ( 1 , VAR1 + sizeof ( * VAR5 ) ) ; VAR5 -> VAR6 = & VAR7 ; VAR5 -> VAR8 = 1 ; VAR5 -> VAR2 = VAR2 ; VAR5 -> VAR3 = VAR3 ; return FUN2 ( VAR5 ) ; }

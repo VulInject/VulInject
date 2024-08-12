@@ -1,0 +1,1 @@
+int FUN1 ( char * * * VAR1 , char * VAR2 ) { char * * VAR3 ; unsigned VAR4 , VAR5 ; if ( ! VAR2 ) { return 0 ; } VAR4 = FUN2 ( * VAR1 ) ; VAR5 = VAR4 + 2 ; VAR3 = realloc ( * VAR1 , sizeof ( char * ) * VAR5 ) ; if ( ! VAR3 ) { return - VAR6 ; } VAR3 [ VAR4 ] = VAR2 ; VAR3 [ VAR4 + 1 ] = NULL ; * VAR1 = VAR3 ; return 0 ; }

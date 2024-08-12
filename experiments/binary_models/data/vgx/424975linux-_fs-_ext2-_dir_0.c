@@ -1,0 +1,67 @@
+static int
+FUN1(struct VAR1 *VAR1, struct VAR2 *VAR3)
+{
+loff_t VAR4 = VAR3->VAR4;
+struct VAR5 *VAR5 = FUN2(VAR1);
+struct VAR6 *VAR7 = VAR5->VAR8;
+unsigned int VAR9 = VAR4 & ~VAR10;
+unsigned long VAR11 = VAR4 >> VAR12;
+unsigned long VAR13 = FUN3(VAR5);
+unsigned VAR14 = ~(FUN4(VAR5)-1);
+bool VAR15 = !FUN5(VAR5, VAR1->VAR16);
+bool VAR17;
+
+if (VAR4 > VAR5->VAR18 - FUN6(1))
+return 0;
+
+VAR17 =
+FUN7(VAR7, VAR19);
+
+for ( ; VAR11 < VAR13; VAR11++, VAR9 = 0) {
+char *VAR20, *VAR21;
+VAR22 *VAR23;
+struct VAR24 *VAR24 = FUN8(VAR5, VAR11, 0, (void **)&VAR20);
+
+if (FUN9(VAR24)) {
+FUN10(VAR7, VAR25,
+"",
+VAR5->VAR26);
+VAR3->VAR4 += VAR27 - VAR9;
+return FUN11(VAR24);
+}
+if (FUN12(VAR15)) {
+if (VAR9) {
+VAR9 = FUN13(VAR20, VAR9, VAR14);
+VAR3->VAR4 = (VAR11<<VAR12) + VAR9;
+}
+VAR1->VAR16 = FUN14(VAR5);
+VAR15 = false;
+}
+VAR23 = (VAR22 *)(VAR20+VAR9);
+VAR21 = VAR20 + FUN15(VAR5, VAR11) - FUN6(1);
+for ( ;(char*)VAR23 <= VAR21; VAR23 = FUN16(VAR23)) {
+if (VAR23->VAR28 == 0) {
+FUN10(VAR7, VAR25,
+"");
+FUN17(VAR24, VAR20);
+return -VAR29;
+}
+if (VAR23->VAR5) {
+unsigned char VAR30 = VAR31;
+
+if (VAR17)
+VAR30 = FUN18(VAR23->VAR32);
+
+if (!FUN19(VAR3, VAR23->VAR33, VAR23->VAR34,
+FUN20(VAR23->VAR5),
+VAR30)) {
+FUN17(VAR24, VAR20);
+return 0;
+}
+}
+VAR3->VAR4 += FUN21(VAR23->VAR28);
+}
+FUN17(VAR24, VAR20);
+}
+return 0;
+}

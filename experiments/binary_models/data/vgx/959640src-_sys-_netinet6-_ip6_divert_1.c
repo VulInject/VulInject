@@ -1,0 +1,1 @@
+int FUN1 ( struct socket * VAR1 , int VAR2 , int VAR3 ) { int VAR4 ; if ( VAR1 -> VAR5 != NULL ) { return VAR6 ; } VAR4 = FUN2 ( VAR1 , & VAR7 , VAR3 ) ; if ( VAR4 ) { return ( VAR4 ) ; } VAR4 = FUN3 ( VAR1 , VAR8 , VAR9 ) ; if ( VAR4 ) { return ( VAR4 ) ; } FUN4 ( VAR1 ) -> VAR10 |= VAR11 ; return ( 0 ) ; }

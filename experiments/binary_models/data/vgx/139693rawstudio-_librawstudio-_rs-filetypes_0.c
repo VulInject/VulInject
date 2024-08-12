@@ -1,0 +1,27 @@
+static VAR1
+FUN1(VAR2 *VAR3, const VAR4 *VAR5, VAR6 *VAR7, const RSLoaderFlags VAR8)
+{
+gpointer VAR9 = NULL;
+const VAR4 *VAR10;
+
+VAR10 = FUN2(VAR5, "");
+
+if (VAR10)
+{
+struct search_needle VAR11;
+
+VAR11.VAR10 = FUN3(VAR10, -1);
+VAR11.VAR7 = VAR7;
+VAR11.VAR9 = NULL;
+VAR11.VAR8 = VAR8;
+
+FUN4(&VAR12);
+FUN5(VAR3, VAR13, &VAR11);
+FUN6(&VAR12);
+
+FUN7(VAR11.VAR10);
+VAR9 = VAR11.VAR9;
+}
+
+return VAR9;
+}

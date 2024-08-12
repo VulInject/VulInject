@@ -1,0 +1,64 @@
+int
+FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR5.VAR6.VAR7.VAR4;
+int VAR8;
+
+
+FUN2(VAR4, 0x40802c, 0x1);
+
+FUN3(VAR2, VAR2->VAR9);
+
+VAR8 = FUN4(VAR2);
+if (VAR8)
+return VAR8;
+
+VAR8 = FUN5(VAR2);
+if (VAR8)
+return VAR8;
+
+
+if (VAR2->VAR10->VAR11)
+VAR2->VAR10->FUN6(VAR2);
+
+
+FUN7(VAR4, 0x503018, 0x1, 0x1);
+
+
+VAR2->VAR10->FUN8(VAR2);
+
+VAR2->VAR10->FUN9(VAR2);
+
+
+FUN2(VAR4, 0x400500, 0x00010001);
+
+
+FUN2(VAR4, 0x400100, 0xffffffff);
+FUN2(VAR4, 0x40013c, 0xffffffff);
+
+
+FUN2(VAR4, 0x409c24, 0x000f0000);
+
+
+FUN2(VAR4, 0x404000, 0xc0000000);
+FUN2(VAR4, 0x404600, 0xc0000000);
+
+if (VAR2->VAR10->VAR12)
+VAR2->VAR10->FUN10(VAR2);
+
+
+FUN2(VAR4, 0x419d0c, 0x2);
+FUN2(VAR4, 0x41ac94, (((1 << VAR2->VAR13) - 1) & 0xff) << 16);
+
+
+FUN2(VAR4, 0x400108, 0xffffffff);
+FUN2(VAR4, 0x400138, 0xffffffff);
+FUN2(VAR4, 0x400118, 0xffffffff);
+FUN2(VAR4, 0x400130, 0xffffffff);
+FUN2(VAR4, 0x40011c, 0xffffffff);
+FUN2(VAR4, 0x400134, 0xffffffff);
+
+FUN11(VAR2);
+
+return FUN12(VAR2);
+}

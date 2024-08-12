@@ -1,0 +1,61 @@
+static void FUN1(VAR1 *VAR2, const VAR1 *VAR3,
+const VAR1 *VAR4, VAR5 *VAR6,
+S390MinMaxType VAR7, bool VAR8, bool VAR9, bool VAR10,
+uintptr_t VAR11)
+{
+VAR12 *VAR13 = &VAR6->VAR14;
+uint8_t VAR15, VAR16 = 0;
+S390Vector VAR17 = {};
+int VAR18;
+
+for (VAR18 = 0; VAR18 < 4; VAR18++) {
+float32 VAR19 = FUN2(VAR3, VAR18);
+float32 VAR20 = FUN2(VAR4, VAR18);
+float32 VAR21;
+
+if (VAR7 != VAR22) {
+S390MinMaxRes VAR23;
+
+if (VAR9) {
+VAR19 = FUN3(VAR19);
+VAR20 = FUN3(VAR20);
+}
+
+VAR23 = FUN4(FUN5(VAR6, VAR19), FUN5(VAR6, VAR20),
+VAR7, VAR8, VAR13);
+switch (VAR23) {
+case VAR24:
+VAR21 = VAR8 ? FUN6(VAR19, VAR20, VAR13) : FUN7(VAR19, VAR20, VAR13);
+break;
+case VAR25:
+VAR21 = VAR19;
+break;
+case VAR26:
+VAR21 = VAR20;
+break;
+case VAR27:
+VAR21 = FUN8(VAR19, VAR13);
+break;
+case VAR28:
+VAR21 = FUN8(VAR20, VAR13);
+break;
+default:
+FUN9();
+}
+} else if (!VAR9) {
+VAR21 = VAR8 ? FUN10(VAR19, VAR20, &VAR6->VAR14) :
+FUN11(VAR19, VAR20, &VAR6->VAR14);
+} else {
+VAR21 = VAR8 ? FUN12(VAR19, VAR20, &VAR6->VAR14) :
+FUN13(VAR19, VAR20, &VAR6->VAR14);
+}
+
+FUN14(&VAR17, VAR18, VAR21);
+VAR15 = FUN15(VAR6, VAR18, false, &VAR16);
+if (VAR10 || VAR15) {
+break;
+}
+}
+FUN16(VAR6, VAR15, VAR16, VAR11);
+*VAR2 = VAR17;
+}

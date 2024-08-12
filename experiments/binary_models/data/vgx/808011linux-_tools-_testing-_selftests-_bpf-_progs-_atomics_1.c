@@ -1,0 +1,1 @@
+int and ( const void * VAR1 ) { VAR2 = FUN1 ( & VAR3 , 0x011ull << 32 ) } ; VAR4 = FUN1 ( & VAR5 , 0x011 ) ; FUN1 ( & VAR6 , 0x011ull << 32 ) ; return 0 ;

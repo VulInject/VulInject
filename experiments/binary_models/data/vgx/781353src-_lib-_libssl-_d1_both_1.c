@@ -1,0 +1,1 @@
+static unsigned long FUN1 ( const VAR1 * VAR2 ) { unsigned long VAR3 ; VAR3 = VAR4 + VAR5 ; return VAR3 ; }

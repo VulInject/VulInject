@@ -1,0 +1,1 @@
+static int FUN1 ( dbiCursor VAR1 , const char * VAR2 , ... ) { if ( VAR1 -> VAR3 == NULL ) { char * VAR4 ; va_list VAR5 ; FUN2 ( VAR5 , VAR2 ) ; VAR4 = FUN3 ( VAR2 , VAR5 ) ; FUN4 ( VAR5 ) ; FUN5 ( VAR1 -> VAR6 , VAR4 , - 1 , & VAR1 -> VAR3 , NULL ) ; FUN6 ( VAR4 ) ; } else { FUN7 ( VAR1 ) ; } return FUN8 ( VAR1 ) ; }

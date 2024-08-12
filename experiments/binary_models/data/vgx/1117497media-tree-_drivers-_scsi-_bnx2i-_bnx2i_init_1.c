@@ -1,0 +1,1 @@
+void FUN1 ( void * VAR1 ) { struct VAR2 * VAR3 = VAR1 ; int VAR4 = VAR5 ; FUN2 ( VAR3 , NULL ) ; while ( ! FUN3 ( VAR6 , & VAR3 -> VAR7 ) && ! FUN3 ( VAR8 , & VAR3 -> VAR7 ) && VAR4 -- ) { FUN4 ( VAR9 ) ; } }

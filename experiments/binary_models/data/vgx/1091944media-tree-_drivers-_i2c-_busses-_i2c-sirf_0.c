@@ -1,0 +1,36 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+u32 VAR3;
+int VAR4 = 0;
+
+if (VAR2->VAR5) {
+while (((VAR2->VAR6 + VAR4) < VAR2->VAR7)
+&& (VAR2->VAR8 < VAR9)) {
+VAR3 = VAR10 | FUN2(0);
+if (((VAR2->VAR6 + VAR4) ==
+(VAR2->VAR7 - 1)) && VAR2->VAR11)
+VAR3 |= VAR12 | VAR13;
+FUN3(VAR3,
+VAR2->VAR14 + FUN4(VAR2->VAR8++));
+VAR4++;
+}
+
+VAR2->VAR15 = VAR4;
+} else {
+while ((VAR2->VAR8 < VAR9 - 1)
+&& (VAR2->VAR6 < VAR2->VAR7)) {
+VAR3 = VAR16 | FUN2(0);
+if ((VAR2->VAR6 == (VAR2->VAR7 - 1))
+&& VAR2->VAR11)
+VAR3 |= VAR12;
+FUN3(VAR3,
+VAR2->VAR14 + FUN4(VAR2->VAR8++));
+FUN3(VAR2->VAR17[VAR2->VAR6++],
+VAR2->VAR14 + FUN4(VAR2->VAR8++));
+}
+}
+VAR2->VAR8 = 0;
+
+
+FUN3(VAR18, VAR2->VAR14 + VAR19);
+}

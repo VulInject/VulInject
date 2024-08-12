@@ -1,0 +1,1 @@
+static bool FUN1 ( init_ufn VAR1 ) { bool VAR2 = true ; int VAR3 ; for ( VAR3 = 0 ; VAR3 < 8 && VAR2 ; VAR3 ++ ) { FUN2 ( VAR3 ) ; VAR2 = FUN3 ( VAR3 , NULL ) ; } return VAR2 ; FUN2 ( 0 ) ; return FUN3 ( 0 ) ; }

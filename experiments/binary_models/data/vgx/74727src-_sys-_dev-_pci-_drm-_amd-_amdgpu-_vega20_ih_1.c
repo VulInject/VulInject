@@ -1,0 +1,1 @@
+static uint32_t FUN1 ( struct VAR1 * VAR2 ) { int VAR3 = 0 ; if ( VAR2 -> VAR4 ) { VAR3 = FUN2 ( VAR3 , VAR5 , VAR6 , VAR2 -> VAR7 ) ; VAR3 = FUN2 ( VAR3 , VAR5 , VAR8 , 1 ) ; } else { VAR3 = FUN2 ( VAR3 , VAR5 , VAR8 , 0 ) ; } return VAR3 ; }

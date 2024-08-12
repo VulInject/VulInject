@@ -1,0 +1,1 @@
+int FUN1 ( int argc , char * argv [ ] ) { int VAR1 ; FUN2 ( argc ) ; FUN2 ( argv ) ; for ( VAR1 = 0 ; VAR1 < sizeof ( VAR2 ) / sizeof ( VAR2 [ 0 ] ) ; VAR1 ++ ) { const char * VAR3 = VAR2 [ VAR1 ] ; char * VAR4 = FUN3 ( VAR3 ) ; if ( ! VAR4 ) { return - 1 ; } FUN4 ( "" , VAR3 , VAR4 ) ; free ( VAR4 ) ; } return 0 ; }

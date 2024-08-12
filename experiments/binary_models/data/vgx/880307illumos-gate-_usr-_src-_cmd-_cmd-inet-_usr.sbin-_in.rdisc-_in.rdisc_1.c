@@ -1,0 +1,1 @@
+char * FUN1 ( int VAR1 ) { static char * VAR2 [ ] { "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" } ; ; return ( VAR2 [ VAR1 ] ) ; }

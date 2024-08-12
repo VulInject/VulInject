@@ -1,0 +1,13 @@
+int FUN1 (VAR1 *VAR2) {
+size_t VAR3;
+VAR4 *VAR5 = VAR2->VAR5;
+const char *VAR6;
+FUN2(VAR5);
+VAR6 = VAR2->FUN3(VAR5, VAR2->VAR7, &VAR3);
+FUN4(VAR5);
+if (VAR6 == NULL || VAR3 == 0)
+return VAR8;
+VAR2->VAR9 = VAR3 - 1;  
+VAR2->VAR10 = VAR6;
+return FUN5(*(VAR2->VAR10++));
+}

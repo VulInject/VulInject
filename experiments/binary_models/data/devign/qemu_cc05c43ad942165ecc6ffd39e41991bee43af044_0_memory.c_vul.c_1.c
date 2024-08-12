@@ -1,0 +1,1 @@
+bool FUN1(VAR1 *VAR2, hwaddr VAR3, VAR4 *VAR5, unsigned VAR6) { return FUN2(VAR2, VAR3, VAR5, VAR6); }

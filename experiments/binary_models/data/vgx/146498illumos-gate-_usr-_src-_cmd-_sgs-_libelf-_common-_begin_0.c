@@ -1,0 +1,55 @@
+VAR1 *
+FUN1(int VAR2, VAR1 * VAR3, unsigned VAR4)
+{
+register VAR1	*VAR5;
+VAR6		*VAR7;
+size_t		VAR8;
+
+if (VAR3->VAR9 >= VAR3->VAR10)
+return (0);
+if (VAR3->VAR11 == -1)		
+VAR2 = -1;
+if (VAR4 & VAR12) {
+FUN2(VAR13, 0);
+return (0);
+}
+if (VAR3->VAR11 != VAR2) {
+FUN2(VAR14, 0);
+return (0);
+}
+if ((FUN3(VAR3, VAR3->VAR9, sizeof (struct VAR15)) !=
+VAR16) || ((VAR7 = FUN4(VAR3,
+VAR3->VAR17 + VAR3->VAR9, VAR3->VAR10)) == 0))
+return (0);
+
+VAR8 = VAR3->VAR9 + sizeof (struct VAR15);
+if (VAR3->VAR10 - VAR8 < VAR7->VAR18.VAR19) {
+FUN2(VAR20, 0);
+return (0);
+}
+if ((VAR5 = (VAR1 *)calloc(1, sizeof (VAR1))) == 0) {
+FUN2(VAR21, VAR22);
+return (0);
+}
+++VAR3->VAR23;
+VAR5->VAR24 = VAR3;
+VAR5->VAR11 = VAR2;
+VAR5->VAR25 |= VAR4;
+VAR5->VAR26 = VAR7;
+VAR5->VAR10 = VAR7->VAR18.VAR19;
+VAR5->VAR27 = VAR3->VAR27 + VAR8;
+VAR5->VAR28 = VAR8 - VAR7->VAR29;
+VAR5->VAR30 = VAR8 + VAR5->VAR10 + (VAR5->VAR10 & 1);
+VAR3->VAR9 = VAR5->VAR30;
+VAR5->VAR31 = VAR3->VAR31;
+VAR5->VAR32 = VAR3->VAR32;
+VAR5->VAR33 = VAR3->VAR33;
+VAR5->VAR34 = VAR3->VAR34;
+VAR5->VAR17 = VAR3->VAR17 + VAR8 - VAR7->VAR29;
+
+
+
+if (VAR3->VAR35 == VAR3->VAR9)
+VAR5->VAR36 = VAR37;
+return (VAR5);
+}

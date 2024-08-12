@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR1 ) { bool VAR2 ; if ( VAR1 -> VAR3 == VAR4 ) { FUN2 ( "" , VAR1 -> VAR5 ) ; VAR2 = false ; } else { char * VAR6 = FUN3 ( VAR1 , VAR7 | ( VAR8 ?VAR9 : 0 ) ) ; FUN4 ( VAR6 ) ; VAR2 = true ; } FUN5 ( VAR1 ) ; FUN6 ( VAR1 ) ; return VAR2 ; }

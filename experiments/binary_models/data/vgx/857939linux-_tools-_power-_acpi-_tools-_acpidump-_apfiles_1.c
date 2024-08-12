@@ -1,0 +1,1 @@
+static int FUN1 ( char * VAR1 ) { struct stat VAR2 ; int VAR3 ; if ( ! FUN2 ( VAR1 , & VAR2 ) ) { fprintf ( VAR4 , "" ) ; VAR3 = fgetc ( stdin , NULL ) ; if ( VAR3 == '' ) { VAR3 = fgetc ( stdin ) ; } if ( VAR3 != '' && VAR3 != '' ) { return ( - 1 ) ; } } return ( 0 ) ; }

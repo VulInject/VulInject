@@ -1,0 +1,35 @@
+int FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = &VAR2->VAR4;
+    struct kvm_sregs VAR5;
+    int VAR6;
+    VAR5.VAR7 = VAR4->VAR8[VAR9];
+    if (VAR2->VAR10)
+    {
+        VAR11 *VAR12 = FUN2(VAR2->VAR10);
+        VAR5.VAR13.VAR14.VAR15 = VAR12->FUN3(VAR2->VAR10);
+    }
+    else
+    {
+        VAR5.VAR13.VAR14.VAR15 = VAR4->VAR8[VAR16];
+    }
+    for (VAR6 = 0; VAR6 < FUN4(VAR4->VAR17); VAR6++)
+    {
+        VAR5.VAR13.VAR14.VAR18.VAR17[VAR6].VAR19 = VAR4->VAR17[VAR6].VAR20;
+        if (VAR4->VAR17[VAR6].VAR20 & VAR21)
+        {
+            VAR5.VAR13.VAR14.VAR18.VAR17[VAR6].VAR19 |= VAR6;
+        }
+        VAR5.VAR13.VAR14.VAR18.VAR17[VAR6].VAR22 = VAR4->VAR17[VAR6].VAR23;
+    }
+    for (VAR6 = 0; VAR6 < 16; VAR6++)
+    {
+        VAR5.VAR13.VAR14.VAR24.VAR25[VAR6] = VAR4->VAR25[VAR6];
+    }
+    for (VAR6 = 0; VAR6 < 8; VAR6++)
+    {
+        VAR5.VAR13.VAR14.VAR24.VAR26[VAR6] = ((VAR27)VAR4->VAR28[0][VAR6] << 32) | VAR4->VAR28[1][VAR6];
+        VAR5.VAR13.VAR14.VAR24.VAR29[VAR6] = ((VAR27)VAR4->VAR30[0][VAR6] << 32) | VAR4->VAR30[1][VAR6];
+    }
+    return FUN5(FUN6(VAR2), VAR31, &VAR5);
+}

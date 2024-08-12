@@ -1,0 +1,1 @@
+int FUN1 ( void ) { int VAR1 ; int VAR2 = 0 ; for ( VAR1 = 0 ; ! VAR2 && VAR1 < FUN2 ( VAR3 ) ; VAR1 ++ ) { VAR2 = VAR3 [ VAR1 ] . FUN3 ( & VAR3 [ VAR1 ] . VAR4 ) ; } if ( VAR2 ) { return VAR2 ; } return FUN4 ( VAR5 ) ; }

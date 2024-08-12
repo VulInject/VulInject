@@ -1,0 +1,1 @@
+static inline void * FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , void * VAR5 ) { if ( VAR4 -> VAR6 ) { free ( VAR4 -> VAR6 ) ; } return NULL ; }

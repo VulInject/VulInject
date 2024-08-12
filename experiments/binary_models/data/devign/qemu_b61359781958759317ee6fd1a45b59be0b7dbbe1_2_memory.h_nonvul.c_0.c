@@ -1,0 +1,58 @@
+void FUN1(VAR1 *VAR2, hwaddr VAR3, VAR1 *VAR4, int VAR5);
+VAR6 FUN2(VAR1 *VAR2);
+VAR7 FUN3(const VAR1 *VAR2);
+void FUN4(VAR1 *VAR2, VAR1 *VAR4);
+void FUN5(VAR1 *VAR2, bool VAR8);
+void FUN6(VAR1 *VAR2, hwaddr VAR9);
+void FUN7(VAR1 *VAR2, uint64_t VAR10);
+void FUN8(VAR1 *VAR2, hwaddr VAR3);
+bool FUN9(VAR1 *VAR11, hwaddr VAR9);
+bool FUN10(VAR1 *VAR2);
+VAR12 FUN11(VAR1 *VAR2, hwaddr VAR9, uint64_t VAR10);
+void FUN12(VAR13 *VAR14);
+void FUN13(void);
+void FUN14(void);
+void FUN15(VAR15 *VAR16, VAR13 *VAR17);
+void FUN16(VAR15 *VAR16);
+void FUN17(void);
+void FUN18(void);
+void FUN19(fprintf_function VAR18, void *VAR19);
+VAR20 FUN20(VAR1 *VAR2, hwaddr VAR9, VAR7 *VAR21, unsigned VAR10, MemTxAttrs VAR22);
+VAR20 FUN21(VAR1 *VAR2, hwaddr VAR9, uint64_t VAR23, unsigned VAR10, MemTxAttrs VAR22);
+void FUN22(VAR13 *VAR14, VAR1 *VAR24, const char *VAR25);
+VAR13 *FUN23(VAR1 *VAR24, const char *VAR25);
+void FUN24(VAR13 *VAR14);
+VAR20 FUN25(VAR13 *VAR14, hwaddr VAR9, MemTxAttrs VAR22, VAR26 *VAR27, int VAR28, bool VAR29);
+VAR20 FUN26(VAR13 *VAR14, hwaddr VAR9, MemTxAttrs VAR22, const VAR26 *VAR27, int VAR28);
+VAR30 FUN27(VAR13 *VAR14, hwaddr VAR9, MemTxAttrs VAR22, VAR20 *VAR31);
+VAR30 FUN28(VAR13 *VAR14, hwaddr VAR9, MemTxAttrs VAR22, VAR20 *VAR31);
+VAR30 FUN29(VAR13 *VAR14, hwaddr VAR9, MemTxAttrs VAR22, VAR20 *VAR31);
+VAR30 FUN30(VAR13 *VAR14, hwaddr VAR9, MemTxAttrs VAR22, VAR20 *VAR31);
+VAR30 FUN31(VAR13 *VAR14, hwaddr VAR9, MemTxAttrs VAR22, VAR20 *VAR31);
+VAR7 FUN32(VAR13 *VAR14, hwaddr VAR9, MemTxAttrs VAR22, VAR20 *VAR31);
+VAR7 FUN33(VAR13 *VAR14, hwaddr VAR9, MemTxAttrs VAR22, VAR20 *VAR31);
+void FUN34(VAR13 *VAR14, hwaddr VAR9, uint32_t VAR32, MemTxAttrs VAR22, VAR20 *VAR31);
+void FUN35(VAR13 *VAR14, hwaddr VAR9, uint32_t VAR32, MemTxAttrs VAR22, VAR20 *VAR31);
+void FUN36(VAR13 *VAR14, hwaddr VAR9, uint32_t VAR32, MemTxAttrs VAR22, VAR20 *VAR31);
+void FUN37(VAR13 *VAR14, hwaddr VAR9, uint32_t VAR32, MemTxAttrs VAR22, VAR20 *VAR31);
+void FUN38(VAR13 *VAR14, hwaddr VAR9, uint32_t VAR32, MemTxAttrs VAR22, VAR20 *VAR31);
+void FUN39(VAR13 *VAR14, hwaddr VAR9, uint64_t VAR32, MemTxAttrs VAR22, VAR20 *VAR31);
+void FUN40(VAR13 *VAR14, hwaddr VAR9, uint64_t VAR32, MemTxAttrs VAR22, VAR20 *VAR31);
+VAR1 *FUN41(VAR13 *VAR14, hwaddr VAR9, VAR33 *VAR34, VAR33 *VAR28, bool VAR29);
+bool FUN42(VAR13 *VAR14, hwaddr VAR9, int VAR28, bool VAR29);
+void *FUN43(VAR13 *VAR14, hwaddr VAR9, VAR33 *VAR35, bool VAR29);
+void FUN44(VAR13 *VAR14, void *VAR36, hwaddr VAR28, int VAR29, hwaddr VAR37);
+VAR20 FUN45(VAR13 *VAR14, hwaddr VAR9, MemTxAttrs VAR22, VAR26 *VAR27, int VAR28, hwaddr VAR38, hwaddr VAR39, VAR1 *VAR2);
+VAR20 FUN46(VAR13 *VAR14, hwaddr VAR9, MemTxAttrs VAR22, VAR26 *VAR27, int VAR28);
+void *FUN47(VAR40 *VAR41, ram_addr_t VAR9);
+static inline bool FUN48(VAR1 *VAR2, bool VAR29)
+{
+    if (VAR29)
+    {
+        return FUN49(VAR2) && !VAR2->VAR42;
+    }
+    else
+    {
+        return FUN49(VAR2) || FUN50(VAR2);
+    }
+}

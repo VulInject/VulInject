@@ -1,0 +1,69 @@
+static void
+FUN1(const VAR1* VAR2, const VAR3* VAR4,VAR5* VAR6){
+const VAR3* VAR7;
+const VAR3* VAR8;
+const char* VAR9;
+const char* VAR10;
+VAR3 *VAR11 =NULL;
+VAR3 *VAR12;
+char *VAR13;
+const char *VAR14;
+char *VAR15;
+VAR3 *VAR16; 
+int32_t VAR17 = 120;
+int VAR18=0;
+int VAR19=2;
+UErrorCode VAR20=VAR21;
+VAR16 =  (VAR3*)malloc(VAR17 * sizeof(VAR3)*5);
+VAR15 =(char*)malloc(VAR17 * sizeof(char) * 10);
+FUN2(VAR6);
+for(;--VAR19>0; ){
+VAR7 = (VAR3*) VAR2;
+VAR8=(const VAR3*)VAR4;
+VAR13 = VAR15;
+VAR12 = VAR16;
+VAR9 = VAR15;
+VAR14 = VAR15;
+VAR11 = VAR16;
+
+do{
+
+VAR14 = VAR14+ VAR19;
+FUN3( VAR6 , &VAR13, VAR14,&VAR7,VAR8,NULL,false, &VAR20);
+if(VAR20==VAR22){
+VAR20=VAR21;
+continue;
+}
+
+if(FUN4(VAR20)){
+FUN5("", FUN6(VAR20));
+return;
+}
+
+}while (VAR7<VAR8);
+
+VAR10 =VAR13;
+do{
+VAR11=VAR11+VAR19;
+FUN7(VAR6,&VAR12,VAR11,&VAR9,VAR10,NULL,false,&VAR20);
+if(VAR20==VAR22){
+VAR20=VAR21;
+continue;
+}
+if(FUN4(VAR20)){
+FUN5("", FUN6(VAR20));
+return;
+}
+}while(VAR9<VAR10);
+
+VAR7 = VAR2;
+
+for(VAR18=0;VAR18<(int)(VAR2 - VAR4);VAR18++){
+if(VAR16[VAR18]!=VAR7[VAR18]){
+FUN5("",VAR7[VAR18],(int)VAR16[VAR18]) ;
+}
+}
+}
+free(VAR16);
+free(VAR15);
+}

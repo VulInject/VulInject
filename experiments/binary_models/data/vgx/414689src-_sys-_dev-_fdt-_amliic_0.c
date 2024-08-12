@@ -1,0 +1,96 @@
+int
+FUN1(void *VAR1, i2c_op_t VAR2, i2c_addr_t VAR3, const void *VAR4,
+size_t VAR5, void *VAR6, size_t VAR7, int VAR8)
+{
+struct VAR9 *VAR10 = VAR1;
+uint64_t VAR11 = 0;
+uint64_t VAR12 = 0;
+uint32_t VAR13;
+uint32_t VAR14;
+size_t VAR15, VAR16;
+int VAR17 = 0, VAR18 = 0;
+int VAR19, VAR20;
+
+VAR11 |= (((VAR21)(VAR22)) << ((VAR17) * 4))
+VAR12 |= (((VAR21)(VAR23)) << ((VAR17) * 8))
+
+if (VAR5 > 8)
+return VAR24;
+
+if (VAR5 > 0) {
+FUN2(VAR17++, VAR25);
+FUN2(VAR17++, VAR26);
+for (VAR20 = 0; VAR20 < VAR5; VAR20++) {
+FUN2(VAR17++, VAR27);
+FUN3(VAR18++, ((VAR28 *)VAR4)[VAR20]);
+}
+}
+
+if (FUN4(VAR2)) {
+FUN2(VAR17++, VAR25);
+FUN2(VAR17++, VAR29);
+} else if (VAR5 == 0) {
+FUN2(VAR17++, VAR25);
+FUN2(VAR17++, VAR26);
+}
+
+FUN5(VAR10, VAR30, VAR3 << 1);
+
+VAR15 = 0;
+while (VAR15 < VAR7) {
+VAR16 = FUN6(VAR7 - VAR15, 8 - VAR18);
+
+if (FUN4(VAR2)) {
+for (VAR20 = 0; VAR20 < VAR16; VAR20++)
+FUN2(VAR17++, (VAR15 == (VAR7 - 1)) ?
+VAR31 : VAR27);
+} else {
+for (VAR20 = 0; VAR20 < VAR16; VAR20++) {
+FUN2(VAR17++, VAR27);
+FUN3(VAR18++, ((VAR28 *)VAR6)[VAR15++]);
+}
+}
+
+if (VAR15 == VAR7 && FUN7(VAR2))
+FUN2(VAR17++, VAR32);
+
+FUN2(VAR17++, VAR33);
+
+
+FUN5(VAR10, VAR34, VAR11);
+FUN5(VAR10, VAR35, VAR11 >> 32);
+FUN5(VAR10, VAR36, VAR12);
+FUN5(VAR10, VAR37, VAR12 >> 32);
+
+
+FUN8(VAR10, VAR38, VAR39);
+for (VAR19 = 50000; VAR19 > 0; VAR19--) {
+VAR14 = FUN9(VAR10, VAR38);
+if ((VAR14 & VAR40) == 0)
+break;
+FUN10(10);
+}
+FUN11(VAR10, VAR38, VAR39);
+if (VAR14 & VAR41)
+return VAR42;
+if (VAR19 == 0)
+return VAR43;
+
+if (FUN4(VAR2)) {
+VAR13 = FUN9(VAR10, VAR44);
+for (VAR17 = 0; VAR17 < VAR16; VAR17++) {
+if (VAR17 == 4)
+VAR13 = FUN9(VAR10, VAR45);
+((VAR28 *)VAR6)[VAR15++] = VAR13;
+VAR13 >>= 8;
+}
+}
+
+
+VAR11 = 0;
+VAR12 = 0;
+VAR17 = VAR18 = 0;
+}
+
+return 0;
+}

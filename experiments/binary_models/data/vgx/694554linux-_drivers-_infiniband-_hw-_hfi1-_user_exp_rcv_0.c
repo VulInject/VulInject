@@ -1,0 +1,38 @@
+int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = VAR2->VAR6;
+unsigned long *VAR7 = VAR6->VAR8->VAR9 +
+(FUN2(VAR6) + VAR2->VAR10);
+VAR11 *VAR12;
+int VAR13 = 0;
+
+
+VAR12 = FUN3(VAR6->VAR14, sizeof(*VAR12), VAR15);
+if (!VAR12)
+return -VAR16;
+
+FUN4(&VAR2->VAR17);
+if (VAR2->VAR18) {
+memcpy(VAR12, VAR2->VAR19, sizeof(*VAR12) *
+VAR2->VAR18);
+memset(VAR2->VAR19, 0, sizeof(*VAR2->VAR19) *
+VAR2->VAR18);
+VAR4->VAR20 = VAR2->VAR18;
+VAR2->VAR18 = 0;
+
+FUN5(VAR21, VAR7);
+} else {
+VAR4->VAR20 = 0;
+}
+FUN6(&VAR2->VAR17);
+
+if (VAR4->VAR20) {
+if (FUN7((void VAR22 *)VAR4->VAR23,
+VAR12, sizeof(*VAR12) * VAR4->VAR20))
+VAR13 = -VAR16;
+}
+FUN8(VAR12);
+
+return VAR13;
+}

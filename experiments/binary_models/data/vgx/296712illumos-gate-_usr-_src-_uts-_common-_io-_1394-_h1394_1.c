@@ -1,0 +1,1 @@
+int FUN1 ( void * VAR1 , uint_t VAR2 , VAR3 * * VAR4 , VAR5 * * VAR6 ) { VAR7 * VAR8 ; VAR9 * VAR10 ; VAR8 = ( VAR7 * ) VAR1 ; VAR10 = FUN2 ( * VAR4 ) ; * VAR6 = & VAR10 -> VAR11 ; return ( VAR12 ) ; }

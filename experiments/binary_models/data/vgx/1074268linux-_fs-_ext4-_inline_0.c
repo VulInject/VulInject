@@ -1,0 +1,47 @@
+struct VAR1 *FUN1(struct VAR2 *VAR3,
+struct VAR4 *VAR5,
+struct VAR6 **VAR7,
+int *VAR8)
+{
+int VAR9;
+struct ext4_iloc VAR10;
+void *VAR11;
+int VAR12;
+
+if (FUN2(VAR3, &VAR10))
+return NULL;
+
+FUN3(&FUN4(VAR3)->VAR13);
+if (!FUN5(VAR3)) {
+*VAR8 = 0;
+goto VAR14;
+}
+
+VAR11 = (void *)FUN6(&VAR10)->VAR15 +
+VAR16;
+VAR12 = VAR17 - VAR16;
+VAR9 = FUN7(VAR10.VAR18, VAR11, VAR12,
+VAR3, VAR5, 0, VAR7);
+if (VAR9 == 1)
+goto VAR19;
+if (VAR9 < 0)
+goto VAR14;
+
+if (FUN8(VAR3) == VAR17)
+goto VAR14;
+
+VAR11 = FUN9(VAR3, &VAR10);
+VAR12 = FUN8(VAR3) - VAR17;
+
+VAR9 = FUN7(VAR10.VAR18, VAR11, VAR12,
+VAR3, VAR5, 0, VAR7);
+if (VAR9 == 1)
+goto VAR19;
+
+VAR14:
+FUN10(VAR10.VAR18);
+VAR10.VAR18 = NULL;
+VAR19:
+FUN11(&FUN4(VAR3)->VAR13);
+return VAR10.VAR18;
+}

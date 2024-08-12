@@ -1,0 +1,1 @@
+void FUN1 ( void ) { VAR1 . VAR2 [ 10 ] = 0 ; VAR3 . VAR2 [ 10 ] = 0 ; }

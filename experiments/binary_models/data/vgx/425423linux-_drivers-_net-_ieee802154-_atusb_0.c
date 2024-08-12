@@ -1,0 +1,16 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR3 = VAR2->VAR4;
+struct VAR5 *VAR6 = VAR3->VAR6;
+
+FUN2(&VAR6->VAR7, "", VAR8);
+FUN3(&VAR3->VAR9);
+FUN4(VAR3->VAR6, 0, VAR10, VAR11, 0, 0,
+NULL, 0, 1000, VAR12);
+FUN5(VAR3);
+}
+
+static const s32 VAR13[VAR14 + 1] = {
+300, 280, 230, 180, 130, 70, 0, -100, -200, -300, -400, -500, -700,
+-900, -1200, -1700,
+};

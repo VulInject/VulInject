@@ -1,0 +1,103 @@
+static void
+FUN1(VAR1 *VAR2)
+{
+ql_tgt_t	VAR3;
+VAR4	*VAR5;
+VAR6		*VAR7;
+VAR8	*VAR9;
+int		VAR10, VAR11;
+
+VAR5 = &VAR3;
+
+
+for (VAR10 = 0; VAR10 < VAR12; VAR10++) {
+VAR9 = VAR2->VAR13[VAR10].VAR14;
+while (VAR9 != NULL) {
+VAR5 = VAR9->VAR15;
+VAR9 = VAR9->VAR16;
+FUN2(&VAR2->VAR13[VAR10], &VAR5->VAR17);
+FUN3(VAR2, VAR5);
+}
+}
+
+
+
+
+VAR5->VAR18.VAR19.VAR20 = 0;
+VAR5->VAR18.VAR19.VAR21 = 0;
+VAR5->VAR18.VAR19.VAR22 = 0;
+VAR5->VAR23 = 0x7fe;
+
+VAR11 = FUN4(VAR2, VAR5, VAR24);
+if (VAR11 == VAR25 || VAR11 == VAR26) {
+VAR27	*VAR28;
+uint32_t		VAR29;
+ql_mbx_data_t		VAR30;
+port_id_t		VAR18 = {0, 0, 0, 0};
+uint16_t		VAR23 = 0;
+
+VAR7 = (VAR6 *)(FUN5(VAR2, VAR31) ?
+&VAR2->VAR32.VAR33.VAR34[0] :
+&VAR2->VAR32.VAR35.VAR34[0]);
+
+if ((FUN6(VAR2, (VAR36 *)&VAR5->VAR34[0],
+(VAR36 *)VAR7) == 1)) {
+FUN7(VAR2, "");
+} else {
+FUN7(VAR2, "");
+}
+
+
+
+bcopy((void *)&VAR5->VAR34[0],
+(void *)&VAR2->VAR37->VAR34[0], 8);
+bcopy((void *)&VAR5->VAR38[0],
+(void *)&VAR2->VAR37->VAR38[0], 8);
+
+
+VAR2->VAR37->VAR39 = 0x7fe;
+
+VAR29 = sizeof (VAR27) * VAR40;
+VAR28 = (VAR27 *)FUN8(VAR29, VAR41);
+
+if (VAR28 != NULL &&
+FUN9(VAR2, (VAR42)VAR28, VAR29, &VAR30) ==
+VAR25) {
+if (VAR30.VAR43[1]) {
+FUN7(VAR2, "", VAR30.VAR43[1]);
+for (VAR10 = 0; VAR10 < VAR30.VAR43[1]; VAR10++) {
+FUN10(VAR2, VAR28, VAR10,
+&VAR18, &VAR23);
+VAR2->VAR37->VAR39 = VAR23;
+}
+} else {
+for (VAR10 = 0; VAR10 <= VAR44;
+VAR10++) {
+
+VAR5->VAR23 = (VAR45)VAR10;
+VAR11 = FUN4(VAR2, VAR5,
+VAR24);
+if (VAR11 == VAR26) {
+if (VAR5->VAR46 ==
+VAR47) {
+VAR2->VAR37->
+VAR39 =
+VAR5->VAR23;
+break;
+}
+} else {
+VAR2->VAR37->VAR39 =
+VAR5->VAR23;
+break;
+}
+}
+}
+} else {
+FUN11(VAR48, "",
+VAR49, VAR2->VAR50, VAR18.VAR51);
+}
+if (VAR28 != NULL) {
+FUN12(VAR28, VAR29);
+}
+}
+}

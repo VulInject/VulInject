@@ -1,0 +1,1 @@
+int FUN1 ( char * VAR1 , int * FUN2 ( char * , void * ) , void * VAR2 , char * VAR3 ) { char * VAR4 ; int VAR5 ; enum ia_state_mach VAR6 = VAR7 ; while ( ( VAR4 = FUN3 ( & VAR6 , 1 ) ) != NULL ) { FUN4 ( VAR3 , VAR4 , VAR1 ) ; } return ( - 1 ) ; }

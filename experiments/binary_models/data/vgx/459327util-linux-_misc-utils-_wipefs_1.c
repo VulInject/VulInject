@@ -1,0 +1,1 @@
+static void FUN1 ( int VAR1 , const char * VAR2 ) { struct stat VAR3 ; int try = 0 ; if ( FUN2 ( VAR1 , & VAR3 ) || ! FUN3 ( VAR3 . VAR4 ) ) { return ; } { FUN4 ( 250000 ) ; FUN5 ( VAR1 , VAR5 ) ; if ( VAR6 != VAR7 ) { break ; } } try ++ < 4 ; FUN6 ( FUN7 ( "" ) , VAR2 ) ; }

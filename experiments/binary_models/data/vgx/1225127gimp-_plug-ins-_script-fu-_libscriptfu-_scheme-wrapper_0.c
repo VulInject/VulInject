@@ -1,0 +1,4 @@
+FUN1 (gint VAR1)
+{
+VAR2.VAR3 = VAR1;
+}

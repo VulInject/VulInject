@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , unsigned int VAR3 , struct VAR4 * VAR5 , bool VAR6 ) { int VAR7 ; FUN2 ( & VAR2 -> VAR8 ) ; VAR7 = FUN3 ( VAR2 , VAR3 , VAR5 , VAR6 ) ; FUN4 ( & VAR2 -> VAR8 ) ; return VAR7 ; } VAR9 { struct list_head VAR10 ; int VAR11 ; unsigned int VAR12 ; FUN5 ( ) }

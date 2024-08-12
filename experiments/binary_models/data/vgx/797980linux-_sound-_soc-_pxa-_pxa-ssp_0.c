@@ -1,0 +1,124 @@
+static int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+struct VAR5 *VAR6)
+{
+struct VAR7 *VAR8 = FUN2(VAR6);
+struct VAR9 *VAR10 = VAR8->VAR10;
+int VAR11 = FUN3(VAR4);
+u32 VAR12, VAR13;
+int VAR14 = FUN4(FUN5(VAR4));
+int VAR15 = FUN6(VAR10, VAR16) & 0xf;
+struct VAR17 *VAR18;
+int VAR19 = FUN7(VAR4);
+int VAR20 = VAR19 * VAR11 * (VAR14 / 8);
+int VAR21;
+
+VAR18 = FUN8(VAR6, VAR2);
+
+
+FUN9(VAR10,
+((VAR11 == 2) && (VAR15 != 1)) || (VAR14 == 32),
+VAR2->VAR22 == VAR23, VAR18);
+
+
+if (FUN6(VAR10, VAR24) & VAR25)
+return 0;
+
+VAR21 = FUN10(VAR8);
+if (VAR21 < 0)
+return VAR21;
+
+
+VAR12 = FUN6(VAR10, VAR24) & ~(VAR26 | VAR27);
+
+
+switch (FUN5(VAR4)) {
+case VAR28:
+if (VAR10->VAR29 == VAR30)
+VAR12 |= VAR31;
+VAR12 |= FUN11(16);
+break;
+case VAR32:
+VAR12 |= (VAR27 | FUN11(8));
+break;
+case VAR33:
+VAR12 |= (VAR27 | FUN11(16));
+break;
+}
+FUN12(VAR10, VAR24, VAR12);
+
+if (VAR12 & VAR34) {
+VAR21 = FUN13(VAR8, VAR20);
+
+
+
+if (VAR21 < 0) {
+const struct VAR35 *VAR36;
+int VAR37, VAR38;
+
+for (VAR36 = VAR39; VAR36->VAR19; VAR36++) {
+if (VAR36->VAR19 == VAR19)
+break;
+}
+
+if (!VAR36->VAR19)
+return -VAR40;
+
+VAR38 = VAR36->VAR38;
+
+
+if (VAR14 == 32)
+VAR38--;
+
+VAR21 = FUN13(VAR8, VAR20);
+if (VAR21 < 0)
+return VAR21;
+
+VAR37 = FUN6(VAR10, VAR41);
+VAR37 &= ~(FUN14(7) | VAR42);
+VAR37 |= FUN14(VAR36->VAR38);
+VAR37 |= VAR36->VAR43;
+FUN12(VAR10, VAR41, VAR37);
+}
+} else if (VAR12 & VAR44) {
+
+FUN15(VAR10, VAR20 / VAR19);
+}
+
+switch (VAR8->VAR45 & VAR46) {
+case VAR47:
+VAR13 = FUN6(VAR10, VAR48);
+
+if (((VAR8->VAR49 / VAR20) == 64) && (VAR14 == 16)) {
+
+if (VAR10->VAR29 != VAR30)
+return -VAR40;
+
+VAR13 |= FUN16(VAR14 * 2);
+VAR13 |= FUN17(VAR14 * 4);
+VAR13 |= FUN18(3);
+VAR13 |= FUN19(3);
+VAR13 |= FUN20(1);
+} else {
+
+VAR13 |= FUN16(VAR14 + 1);
+VAR13 |= FUN17((VAR14 + 1) * 2);
+VAR13 |= FUN20(1);
+}
+
+FUN12(VAR10, VAR48, VAR13);
+break;
+default:
+break;
+}
+
+
+if ((VAR12 & VAR50) && !VAR15) {
+FUN21(VAR10->VAR51, "");
+return -VAR40;
+}
+
+FUN22(VAR10);
+
+return 0;
+}

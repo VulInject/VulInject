@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 ) { int VAR3 ; FUN2 ( VAR2 , NULL ) ; FUN3 ( VAR2 , VAR4 , 0 ) ; for ( VAR3 = 0 ; VAR3 < 2000 ; VAR3 ++ ) { if ( FUN4 ( VAR2 , VAR5 ) & ( 1 << 24 ) ) { break ; } FUN5 ( 1000 ) ; } if ( 2000 == VAR3 ) { FUN6 ( ( VAR6 , "" "" ) ) ; } FUN7 ( VAR2 ) ; VAR2 -> VAR7 . VAR8 = 0 ; }

@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { u32 VAR3 [ 2 ] ; uint VAR4 ; memset ( VAR2 , 0 , sizeof ( * VAR2 ) ) ; VAR4 = ( VAR5 != VAR6 ) ?VAR7 : VAR8 ; if ( FUN2 ( VAR4 , ( VAR9 * ) VAR3 , 8 ) ) { return ; } if ( VAR3 [ 0 ] != 0xffffffff && VAR3 [ 1 ] != 0xffffffff ) { VAR2 -> VAR10 = VAR3 [ 0 ] ; VAR2 -> VAR11 = VAR3 [ 1 ] ; } }

@@ -1,0 +1,1 @@
+bool FUN1 ( void ) { VAR1 * VAR2 = malloc ( 50 ) ; int VAR3 = FUN2 ( VAR2 , "" , - 1 ) ; FUN3 ( VAR3 , ( int ) strlen ( "" ) , "" ) ; FUN4 ( ( char * ) VAR2 , "" , "" ) ; VAR4 ; }

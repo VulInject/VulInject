@@ -1,0 +1,1 @@
+static int FUN1 ( void * VAR1 , void * VAR2 ) { struct VAR3 * VAR4 = VAR1 ; struct VAR3 * VAR5 = VAR2 ; if ( memcmp ( & VAR4 -> VAR6 , & VAR5 -> VAR6 , 3 ) ) { return 0 ; } if ( FUN2 ( & VAR4 -> VAR7 , & VAR5 -> VAR7 ) ) { return 0 ; } return 1 ; }

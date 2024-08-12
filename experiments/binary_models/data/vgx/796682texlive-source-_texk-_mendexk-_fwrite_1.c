@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , const char * VAR3 , ... ) { char VAR4 [ 8000 ] ; va_list VAR5 ; int VAR6 ; FUN2 ( VAR5 , VAR3 ) ; VAR6 = vsnprintf ( VAR4 , sizeof VAR4 , VAR3 , VAR5 ) ; FUN3 ( VAR5 ) ; fputs ( VAR4 , VAR2 ) ; return VAR6 ; }

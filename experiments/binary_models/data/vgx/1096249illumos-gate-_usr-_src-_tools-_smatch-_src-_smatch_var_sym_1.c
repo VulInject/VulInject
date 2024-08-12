@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * * VAR2 , const char * VAR3 , struct VAR4 * VAR5 ) { struct VAR6 * VAR7 ; FUN2 ( , ) { if ( VAR7 -> VAR5 == VAR5 && strcmp ( VAR7 -> VAR3 , VAR3 ) == 0 ) { FUN3 ( VAR7 ) ; return ; } } FUN4 ( VAR7 ) ; }

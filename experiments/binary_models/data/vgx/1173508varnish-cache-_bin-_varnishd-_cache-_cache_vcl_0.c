@@ -1,0 +1,35 @@
+void
+FUN1(struct VAR1 **VAR2, struct VAR1 *VAR1)
+{
+struct VAR1 *VAR3;
+
+FUN2(VAR2);
+
+VAR3 = *VAR2;
+*VAR2 = NULL;
+
+FUN3(VAR3, VAR4);
+FUN4();
+
+FUN5(&VAR5);
+if (VAR3 != NULL) {
+assert(VAR3->VAR6 > 0);
+VAR3->VAR6--;
+}
+
+if (VAR1 == NULL)
+VAR1 = VAR7; 
+FUN6(VAR1, VAR4);
+if (VAR1->VAR8 == NULL) {
+FUN2(strcmp(VAR1->VAR9, VAR10->VAR11));
+*VAR2 = VAR1;
+} else {
+FUN7(strcmp(VAR1->VAR9, VAR10->VAR11));
+*VAR2 = VAR1->VAR8;
+}
+FUN6(*VAR2, VAR4);
+FUN7((*VAR2)->VAR12);
+(*VAR2)->VAR6++;
+FUN8(&VAR5);
+assert((*VAR2)->VAR13->VAR14);
+}

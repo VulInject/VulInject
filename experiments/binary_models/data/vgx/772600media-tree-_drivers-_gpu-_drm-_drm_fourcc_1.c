@@ -1,0 +1,1 @@
+int FUN1 ( uint32_t VAR1 , int VAR2 ) { const struct VAR3 * VAR4 ; VAR4 = FUN2 ( VAR1 ) ; return VAR4 -> VAR5 [ VAR2 ] ; }

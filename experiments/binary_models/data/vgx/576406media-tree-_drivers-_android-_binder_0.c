@@ -1,0 +1,50 @@
+static int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+struct VAR5 *VAR6,
+struct VAR7 *VAR8,
+struct VAR5 *VAR9)
+{
+binder_size_t VAR10, VAR11, VAR12;
+int VAR13;
+uintptr_t VAR14;
+VAR15 *VAR16;
+struct VAR17 *VAR18 = VAR8->VAR18;
+struct VAR17 *VAR19 = VAR6->VAR20;
+
+VAR11 = sizeof(VAR15) * VAR2->VAR21;
+if (VAR2->VAR21 >= VAR22 / sizeof(VAR15)) {
+FUN2("",
+VAR18->VAR23, VAR8->VAR23, (VAR24)VAR2->VAR21);
+return -VAR25;
+}
+if (VAR11 > VAR4->VAR26 ||
+VAR2->VAR27 > VAR4->VAR26 - VAR11) {
+
+FUN2("",
+VAR18->VAR23, VAR8->VAR23, (VAR24)VAR2->VAR21);
+return -VAR25;
+}
+
+VAR14 = VAR4->VAR28 - VAR19->VAR29;
+VAR16 = (VAR15 *)(VAR14 + VAR2->VAR27);
+if (!FUN3((unsigned long)VAR16, sizeof(VAR15))) {
+FUN2("",
+VAR18->VAR23, VAR8->VAR23);
+return -VAR25;
+}
+for (VAR10 = 0; VAR10 < VAR2->VAR21; VAR10++) {
+VAR13 = FUN4(VAR16[VAR10], VAR6, VAR8,
+VAR9);
+if (VAR13 < 0)
+goto VAR30;
+VAR16[VAR10] = VAR13;
+}
+return 0;
+
+VAR30:
+
+VAR12 = VAR10;
+for (VAR10 = 0; VAR10 < VAR12; VAR10++)
+FUN5(VAR19, VAR16[VAR10]);
+return VAR13;
+}

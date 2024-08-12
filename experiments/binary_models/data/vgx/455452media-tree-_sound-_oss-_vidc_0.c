@@ -1,0 +1,66 @@
+static int FUN1(int VAR1, int VAR2)
+{
+if (VAR2) {
+unsigned int VAR3, VAR4, VAR5, VAR6, VAR7;
+unsigned int VAR8, VAR9;
+unsigned int VAR10, VAR11;
+
+VAR3 = 0x00000003;
+
+
+VAR4 = (((VAR12 * 2) / VAR2) + 1) >> 1;
+if (VAR4 < 3)
+VAR4 = 3;
+if (VAR4 > 255)
+VAR4 = 255;
+
+
+VAR5 = (((VAR13 * 2) / VAR2) + 1) >> 1;
+if (VAR5 < 3)
+VAR5 = 3;
+if (VAR5 > 255)
+VAR5 = 255;
+
+VAR6 = VAR12 / VAR4;
+VAR7 = VAR13 / VAR5;
+
+
+VAR8 = FUN2(VAR7-VAR2);
+VAR9 = FUN2(VAR6-VAR2);
+if (VAR9 < VAR8) {
+
+VAR4=VAR5;
+VAR3=0x00000002;
+
+if (VAR9 > (VAR2/256))
+VAR2=VAR7;
+} else {
+
+VAR3=0x00000003;
+
+if (VAR8 > (VAR2/256))
+VAR2=VAR6;
+}
+
+FUN3(0xb0000000 | (VAR4 - 2));
+FUN3(0xb1000000 | VAR3);
+
+VAR10 = (10000 / VAR4) & ~3;
+if (VAR10 < 208)
+VAR10 = 208;
+if (VAR10 > 4096)
+VAR10 = 4096;
+for (VAR11 = 128; VAR11 < VAR10; VAR11 <<= 1);
+if (VAR11 - VAR10 > VAR10 - (VAR11 >> 1))
+VAR11 >>= 1;
+if (VAR11 > 4096) {
+FUN4(VAR14 "",
+VAR10, VAR11);
+VAR11 = 4096;
+}
+
+VAR15 = VAR11;
+VAR16 = VAR2;
+}
+return VAR16;
+}

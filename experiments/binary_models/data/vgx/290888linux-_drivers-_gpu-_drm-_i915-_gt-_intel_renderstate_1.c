@@ -1,0 +1,1 @@
+static const struct VAR1 * FUN1 ( const struct VAR2 * VAR3 ) { if ( VAR3 -> class != VAR4 ) { return VAR5 ; } switch ( FUN2 ( VAR3 -> VAR6 ) ) { case 6 : return & VAR7 ; case 7 : return & VAR8 ; case 8 : return & VAR9 ; case 9 : return & VAR10 ; } return NULL ; }

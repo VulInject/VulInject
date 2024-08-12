@@ -1,0 +1,77 @@
+static int FUN1(struct VAR1 *VAR1, struct VAR2 *VAR3,
+enum nl80211_iftype VAR4, struct VAR5 *VAR6)
+{
+struct VAR7 *VAR8;
+struct VAR9 *VAR10;
+struct VAR11 *VAR12;
+
+VAR10 = FUN2(VAR3);
+VAR8 = FUN3(VAR1);
+VAR12 = VAR10->VAR11;
+VAR13 = 0x01;
+VAR14 = 0x00;
+VAR15 = false;
+VAR16 = false;
+FUN4(&VAR17);
+
+switch (VAR4) {
+case VAR18:
+VAR19 = 0;
+VAR3->VAR20->VAR21 = VAR4;
+VAR8->VAR22->VAR21 = VAR4;
+VAR10->VAR23 = 0;
+VAR10->VAR21 = VAR24;
+FUN5(VAR10, VAR24);
+
+memset(VAR8->VAR25.VAR26, 0, VAR27 * VAR28);
+
+VAR29 = true;
+FUN6(VAR10, 1, 0);
+break;
+
+case VAR30:
+VAR19 = 0;
+VAR3->VAR20->VAR21 = VAR4;
+VAR8->VAR22->VAR21 = VAR4;
+VAR10->VAR23 = 0;
+VAR10->VAR21 = VAR31;
+FUN5(VAR10, VAR24);
+
+VAR29 = false;
+FUN6(VAR10, 0, 0);
+break;
+
+case VAR32:
+VAR29 = false;
+VAR3->VAR20->VAR21 = VAR4;
+VAR8->VAR22->VAR21 = VAR4;
+VAR10->VAR21 = VAR33;
+
+if (VAR12->VAR34) {
+FUN7(VAR10, FUN8(VAR10),
+0);
+FUN5(VAR10, VAR33);
+FUN6(VAR10, 0, 0);
+}
+break;
+
+case VAR35:
+VAR16 = true;
+FUN9(&VAR17,
+VAR36 + FUN10(VAR37));
+FUN5(VAR10, VAR33);
+VAR3->VAR20->VAR21 = VAR4;
+VAR8->VAR22->VAR21 = VAR4;
+VAR10->VAR21 = VAR38;
+
+VAR29 = false;
+FUN6(VAR10, 0, 0);
+break;
+
+default:
+FUN11(VAR3, "", VAR4);
+return -VAR39;
+}
+
+return 0;
+}

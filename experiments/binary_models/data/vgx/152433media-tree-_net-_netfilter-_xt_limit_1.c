@@ -1,0 +1,1 @@
+static void FUN1 ( const struct VAR1 * VAR2 ) { const struct VAR3 * VAR4 = VAR2 -> VAR5 ; } VAR6 { u_int32_t VAR7 ; u_int32_t VAR8 ; compat_ulong_t VAR9 ; u_int32_t VAR10 ; u_int32_t VAR11 , VAR12 ; u_int32_t VAR13 ; }

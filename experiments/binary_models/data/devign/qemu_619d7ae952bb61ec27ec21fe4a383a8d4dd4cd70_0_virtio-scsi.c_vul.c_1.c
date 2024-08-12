@@ -1,0 +1,28 @@
+VAR1 *FUN1(VAR2 *VAR3, VAR4 *VAR5)
+{
+    VAR6 *VAR7;
+    static int VAR8;
+    size_t VAR9;
+    int VAR10;
+    VAR9 = sizeof(VAR6) + VAR5->VAR11 * sizeof(VAR12 *);
+    VAR7 = (VAR6 *)FUN2("", VAR13, sizeof(VAR14), VAR9);
+    VAR7->VAR15 = VAR3;
+    VAR7->VAR16 = VAR5;
+    VAR7->VAR17.VAR18 = VAR19;
+    VAR7->VAR17.VAR20 = VAR21;
+    VAR7->VAR17.VAR22 = VAR23;
+    VAR7->VAR17.VAR24 = VAR25;
+    VAR7->VAR26 = FUN3(&VAR7->VAR17, VAR27, VAR28);
+    VAR7->VAR29 = FUN3(&VAR7->VAR17, VAR27, NULL);
+    for (VAR10 = 0; VAR10 < VAR7->VAR16->VAR11; VAR10++)
+    {
+        VAR7->VAR30[VAR10] = FUN3(&VAR7->VAR17, VAR27, VAR31);
+    }
+    FUN4(&VAR7->VAR32, VAR3, &VAR33);
+    if (!VAR3->VAR34)
+    {
+        FUN5(&VAR7->VAR32);
+    }
+    FUN6(VAR3, "", VAR8++, 1, VAR35, VAR36, VAR7);
+    return &VAR7->VAR17;
+}

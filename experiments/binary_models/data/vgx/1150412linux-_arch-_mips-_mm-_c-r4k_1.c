@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { cfs_time_t VAR1 = FUN2 ( ) ; if ( FUN3 ( ) != VAR2 ) { VAR3 = ( void * ) VAR4 ; } if ( VAR1 == 16 ) { VAR3 = VAR5 ; } if ( VAR1 == 32 ) { VAR3 = VAR6 ; } if ( VAR1 == 64 ) { VAR3 = VAR7 ; } if ( VAR1 == 128 ) { VAR3 = VAR8 ; } }

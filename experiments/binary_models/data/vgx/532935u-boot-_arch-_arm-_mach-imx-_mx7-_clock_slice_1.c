@@ -1,0 +1,1 @@
+int FUN1 ( enum clk_root_index VAR1 , enum VAR2 * VAR3 ) { u32 VAR4 ; int VAR5 ; struct VAR6 * VAR7 ; VAR4 = FUN2 ( & VAR8 -> VAR9 [ VAR1 ] . VAR10 ) ; VAR4 &= VAR11 ; VAR4 >>= VAR12 ; VAR5 = FUN3 ( VAR1 ) ; if ( VAR5 < 0 ) { return - VAR13 ; } VAR7 = & VAR14 [ VAR5 ] ; * VAR3 = VAR7 -> VAR15 [ VAR4 ] ; return 0 ; }

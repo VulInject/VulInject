@@ -1,0 +1,1 @@
+static uint64_t FUN1 ( void ) { if ( sizeof ( VAR1 ) == sizeof ( VAR2 ) ) { return VAR3 ; } return 0 ; }

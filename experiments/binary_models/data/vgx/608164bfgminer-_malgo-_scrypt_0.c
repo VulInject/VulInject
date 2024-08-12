@@ -1,0 +1,45 @@
+static void FUN1(const VAR1* VAR2, char* VAR3, VAR1 *VAR4)
+{
+VAR1 * VAR5;
+uint32_t VAR6[32];
+uint32_t VAR7;
+uint32_t VAR8;
+uint32_t VAR9;
+VAR10 *VAR11, *VAR12;
+
+VAR11 = (VAR10 *)VAR6;
+VAR5 = (VAR1 *)(((VAR13)(VAR3) + 63) & ~ (VAR13)(63));
+
+FUN2(VAR2, VAR6);
+
+for (VAR7 = 0; VAR7 < 1024; VAR7 += 2) {
+memcpy(&VAR5[VAR7 * 32], VAR6, 128);
+
+FUN3(&VAR6[0], &VAR6[16]);
+FUN3(&VAR6[16], &VAR6[0]);
+
+memcpy(&VAR5[(VAR7 + 1) * 32], VAR6, 128);
+
+FUN3(&VAR6[0], &VAR6[16]);
+FUN3(&VAR6[16], &VAR6[0]);
+}
+for (VAR7 = 0; VAR7 < 1024; VAR7 += 2) {
+VAR8 = VAR6[16] & 1023;
+VAR12 = (VAR10 *)(&VAR5[VAR8 * 32]);
+for(VAR9 = 0; VAR9 < 16; VAR9++)
+VAR11[VAR9] ^= VAR12[VAR9];
+
+FUN3(&VAR6[0], &VAR6[16]);
+FUN3(&VAR6[16], &VAR6[0]);
+
+VAR8 = VAR6[16] & 1023;
+VAR12 = (VAR10 *)(&VAR5[VAR8 * 32]);
+for(VAR9 = 0; VAR9 < 16; VAR9++)
+VAR11[VAR9] ^= VAR12[VAR9];
+
+FUN3(&VAR6[0], &VAR6[16]);
+FUN3(&VAR6[16], &VAR6[0]);
+}
+
+FUN4(VAR2, VAR6, VAR4);
+}

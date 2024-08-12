@@ -1,0 +1,46 @@
+static int
+FUN1(void)
+{
+blkaddr_t	VAR1;
+blkaddr_t	VAR2 = VAR3->VAR4.VAR5;
+blkaddr_t	VAR6 = VAR3->VAR4.VAR5 + VAR3->VAR4.VAR7 - 1;
+int	VAR8;
+
+VAR3->VAR9 = NULL;
+VAR3->VAR10 = 0;
+VAR3->VAR11->VAR12 = VAR13;
+VAR3->VAR11->VAR14 = VAR15;
+VAR3->VAR11->VAR16 = (VAR3->VAR4.VAR7 + 8 - 1) / 8;
+VAR3->VAR11->VAR17 = 0;
+VAR3->VAR11->VAR18 = 0;
+VAR3->VAR11->VAR19  = 0;
+VAR3->VAR11->VAR20 = VAR3->VAR4.VAR7 - 1;
+for (VAR8 = 0; VAR8 < 5; VAR8++)
+VAR3->VAR11->VAR21[VAR8] = 0;
+
+for (VAR8 = 0; VAR8 < VAR3->VAR22; VAR8++) {
+VAR1 = (VAR3->VAR23)[VAR8].VAR24;
+if ((VAR1 >= VAR2) && (VAR1 <= VAR6)) {
+if (VAR1 == VAR2) {
+(void) fprintf(VAR25, ""
+"");
+return (56);
+}
+(VAR3->VAR26)[VAR1 - VAR2] = VAR27;
+(VAR3->VAR23)[VAR8].VAR24 =
+(VAR28)VAR29;
+}
+}
+
+
+VAR3->VAR11->VAR30 =
+FUN2(VAR3->VAR31 / VAR32,
+VAR3->VAR4.VAR7, VAR3->VAR33, VAR34);
+if (VAR3->VAR11->VAR30 == 0) {
+FUN3("");
+return (57);
+}
+(void) FUN4();
+
+return (VAR35);
+}

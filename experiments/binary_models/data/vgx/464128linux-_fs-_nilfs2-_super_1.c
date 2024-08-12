@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( struct VAR2 * VAR3 , u64 VAR4 , int VAR5 , struct VAR6 * * VAR7 ) { unsigned long long VAR8 = VAR4 ; unsigned long VAR9 ; VAR9 = FUN2 ( VAR8 , VAR5 ) ; * VAR7 = FUN3 ( VAR3 , VAR8 ) ; if ( ! * VAR7 ) { return VAR10 ; } return ( VAR1 * ) ( ( char * ) ( * VAR7 ) -> VAR11 + VAR9 ) ; }

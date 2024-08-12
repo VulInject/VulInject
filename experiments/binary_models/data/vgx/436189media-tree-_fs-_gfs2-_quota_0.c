@@ -1,0 +1,89 @@
+static int FUN1(unsigned int VAR1, struct VAR2 **VAR3)
+{
+struct VAR4 *VAR5 = (*VAR3)->VAR6->VAR7.VAR8;
+struct VAR9 *VAR10 = FUN2(VAR5->VAR11);
+struct gfs2_alloc_parms VAR12 = { .VAR13 = 0, };
+unsigned int VAR14, VAR15;
+struct VAR16 *VAR17, VAR18;
+unsigned int VAR19, VAR20;
+struct VAR2 *VAR21;
+unsigned VAR22;
+loff_t VAR23;
+unsigned int VAR24 = 0, VAR25;
+int VAR26;
+
+VAR26 = FUN3(VAR10);
+if (VAR26)
+return VAR26;
+
+FUN4(VAR10, sizeof(struct VAR27),
+&VAR14, &VAR15);
+
+VAR17 = FUN5(VAR1 * sizeof(struct VAR16), VAR28);
+if (!VAR17)
+return -VAR29;
+
+FUN6(VAR3, VAR1, sizeof(struct VAR2 *), VAR30, NULL);
+FUN7(&VAR10->VAR31);
+for (VAR19 = 0; VAR19 < VAR1; VAR19++) {
+VAR26 = FUN8(VAR3[VAR19]->VAR6, VAR32,
+VAR33, &VAR17[VAR19]);
+if (VAR26)
+goto VAR34;
+}
+
+VAR26 = FUN8(VAR10->VAR35, VAR32, 0, &VAR18);
+if (VAR26)
+goto VAR34;
+
+for (VAR20 = 0; VAR20 < VAR1; VAR20++) {
+VAR23 = FUN9(VAR3[VAR20]);
+if (FUN10(VAR10, VAR23,
+sizeof(struct VAR27)))
+VAR24++;
+}
+
+
+
+VAR25 = VAR1 * VAR14 + VAR36 + VAR1 + 3;
+
+VAR22 = 1 + (VAR24 * (VAR14 + VAR15));
+VAR12.VAR37 = VAR22;
+VAR26 = FUN11(VAR10, &VAR12);
+if (VAR26)
+goto VAR38;
+
+if (VAR24)
+VAR25 += FUN12(VAR10, VAR22) + VAR24 * VAR15 + VAR39;
+
+VAR26 = FUN13(VAR5, VAR25, 0);
+if (VAR26)
+goto VAR40;
+
+for (VAR20 = 0; VAR20 < VAR1; VAR20++) {
+VAR21 = VAR3[VAR20];
+VAR23 = FUN9(VAR21);
+VAR26 = FUN14(VAR10, VAR23, VAR21->VAR41, VAR21, NULL);
+if (VAR26)
+goto VAR42;
+
+FUN15(VAR21, -VAR21->VAR41);
+FUN16(VAR43, &VAR21->VAR44);
+}
+
+VAR26 = 0;
+
+VAR42:
+FUN17(VAR5);
+VAR40:
+FUN18(VAR10);
+VAR38:
+FUN19(&VAR18);
+VAR34:
+while (VAR19--)
+FUN19(&VAR17[VAR19]);
+FUN20(&VAR10->VAR31);
+FUN21(VAR17);
+FUN22(VAR10->VAR35->VAR7.VAR8, VAR10->VAR35, VAR45);
+return VAR26;
+}

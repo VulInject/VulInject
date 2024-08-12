@@ -1,0 +1,15 @@
+static VAR1 *FUN1(VAR2 *VAR3, char *VAR4)
+{
+int VAR5 = -1, VAR6 = -1, VAR7 = -1;
+
+if (FUN2(VAR3->VAR8, VAR9)) {
+VAR5 = VAR3->VAR8->VAR5;
+VAR6 = VAR3->VAR8->VAR6;
+}
+
+if (FUN2(VAR3->VAR8, VAR10)) {
+VAR7 = VAR3->VAR8->VAR7;
+}
+
+return FUN3(VAR4, VAR5, VAR6, VAR7);
+}

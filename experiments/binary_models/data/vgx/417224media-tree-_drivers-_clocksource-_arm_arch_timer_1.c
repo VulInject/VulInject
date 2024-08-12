@@ -1,0 +1,1 @@
+static const struct VAR1 * FUN1 ( enum arch_timer_erratum_match_type VAR2 , ate_match_fn_t VAR3 , void * VAR4 ) { int VAR5 ; for ( VAR5 = 0 ; VAR5 < FUN2 ( VAR6 ) ; VAR5 ++ ) { if ( FUN3 ( & VAR6 [ VAR5 ] , VAR4 ) ) { return & VAR6 [ VAR5 ] ; } } return NULL ; }

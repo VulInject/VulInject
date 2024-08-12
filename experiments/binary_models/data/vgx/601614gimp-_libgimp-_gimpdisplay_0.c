@@ -1,0 +1,24 @@
+FUN1 (VAR1, VAR2, VAR3)
+
+
+static VAR4 *VAR5[VAR6] = { NULL, };
+
+
+static void
+FUN2 (VAR7 *VAR8)
+{
+VAR9 *VAR10 = FUN3 (VAR8);
+
+VAR10->VAR11 = VAR12;
+VAR10->VAR13 = VAR14;
+
+VAR5[VAR15] =
+FUN4 ("",
+"",
+"",
+0, VAR16, 0,
+VAR17 |
+VAR18);
+
+FUN5 (VAR10, VAR6, VAR5);
+}

@@ -1,0 +1,1 @@
+int FUN1 ( void * VAR1 ) { int VAR2 = FUN2 ( ) >> 32 ; void * VAR3 = VAR4 ; u32 VAR5 ; VAR5 = FUN3 ( VAR3 , VAR6 , & VAR7 [ 0 ] ) ; if ( VAR5 <= VAR6 ) { VAR3 += VAR5 ; VAR8 = VAR5 ; } VAR5 = FUN3 ( VAR3 , VAR6 , & VAR9 [ 0 ] ) ; if ( VAR5 <= VAR6 ) { VAR3 += VAR5 ; VAR10 = VAR5 ; } VAR11 = VAR3 - ( void * ) VAR4 ; return 0 ; }

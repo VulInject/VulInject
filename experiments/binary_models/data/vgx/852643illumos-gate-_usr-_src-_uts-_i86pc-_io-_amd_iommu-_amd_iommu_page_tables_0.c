@@ -1,0 +1,69 @@
+int
+FUN1(VAR1 *VAR2, VAR3 *VAR4,
+domain_id_t VAR5, uint16_t VAR6, VAR7 *VAR8,
+int *VAR9, char *VAR10)
+{
+VAR11 *VAR12;
+int VAR13 = VAR14;
+amd_iommu_cmdargs_t VAR15 = {0};
+const char *VAR16 = FUN2(VAR2->VAR17);
+int VAR18 = FUN3(VAR2->VAR17);
+const char *VAR19 = "";
+
+if (VAR20 & VAR21) {
+FUN4(VAR22, ""
+"",
+VAR19, VAR5, VAR6, VAR10);
+}
+
+if ((VAR6 + 1) * VAR23 >
+VAR2->VAR24) {
+FUN4(VAR25, ""
+"",
+VAR19, VAR16, VAR18,
+VAR2->VAR26, VAR6, (void *)VAR4,
+VAR2->VAR24, VAR10);
+return (VAR27);
+}
+
+
+VAR12 = (VAR11 *)&VAR2->VAR28
+[VAR6 * VAR23];
+
+if (VAR20 & VAR21) {
+FUN4(VAR22, "",
+VAR19, VAR6, (void *)(VAR29)(*VAR12), VAR10);
+}
+
+if (FUN5(&(VAR12[0]), VAR30) == 0) {
+
+return (VAR14);
+}
+
+FUN6(VAR8->VAR31 == FUN5(&(VAR12[0]),
+VAR32));
+
+FUN6(VAR5 == FUN5(&(VAR12[1]),
+VAR33));
+
+FUN7(&(VAR12[0]), VAR30, 0);
+FUN7(&(VAR12[0]), VAR32, 0);
+FUN7(&(VAR12[0]), VAR34, 1);
+
+FUN8(VAR2->VAR35);
+
+VAR8->VAR36--;
+FUN6(VAR8->VAR36 >= 0);
+
+if (VAR8->VAR36 == 0) {
+*VAR9 = 1;
+}
+
+VAR15.VAR37 = VAR6;
+VAR13 = FUN9(VAR2, VAR38,
+&VAR15, 0, 0);
+if (VAR13 != VAR14)
+VAR13 = VAR27;
+
+return (VAR13);
+}

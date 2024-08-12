@@ -1,0 +1,206 @@
+FUN1 (struct VAR1 *VAR2, void * VAR3)
+{
+struct VAR4 *VAR5;
+struct VAR6 *VAR7;
+struct VAR8 *VAR9;
+struct VAR10 *VAR11;
+
+if (VAR2->VAR12.VAR13 == VAR14)
+return VAR15;
+
+if (VAR2->VAR12.VAR13 == VAR16)
+VAR2 = (struct VAR1 *) VAR2->VAR12.VAR17.VAR18.VAR19;
+
+VAR5 = (struct VAR4 *) VAR3;
+VAR7 = FUN2 (VAR5);
+
+if (VAR7->VAR20.VAR21
+&& VAR2->VAR22.VAR23 > 0)
+{
+
+if (VAR2->VAR24 == -1
+&& !VAR2->VAR25)
+{
+if (! FUN3 (VAR5, VAR2))
+return VAR26;
+}
+
+if (VAR5->VAR27
+|| FUN4 (1, 0, VAR2))
+{
+VAR28 *VAR29 = VAR7->VAR30;
+
+
+if (VAR29->VAR31 == 0)
+VAR29->VAR31 += VAR32;
+
+VAR2->VAR22.VAR33 = VAR29->VAR31;
+
+
+if (! VAR5->VAR27
+&& !VAR2->VAR34)
+{
+VAR2->VAR12.VAR17.VAR35.VAR36 = VAR29;
+VAR2->VAR12.VAR17.VAR35.VAR37 = VAR2->VAR22.VAR33;
+}
+
+
+VAR29->VAR31 += VAR32;
+
+
+VAR7->VAR38->VAR31 += VAR39;
+
+
+VAR7->VAR40->VAR31 += sizeof (VAR41);
+VAR7->VAR40->VAR42++;
+}
+else
+{
+VAR2->VAR22.VAR33 = (VAR43) -1;
+VAR2->VAR44 = 0;
+}
+}
+else
+{
+VAR2->VAR22.VAR33 = (VAR43) -1;
+VAR2->VAR44 = 0;
+}
+
+VAR9 = (struct VAR8 *) VAR2;
+VAR9->VAR45 = (VAR43) -1;
+
+
+if (VAR2->VAR46.VAR23 > 0
+&& (!VAR5->VAR27 || VAR5->VAR47)
+&& VAR2->VAR24 == -1
+&& FUN5 (VAR2)->VAR48 == VAR49)
+VAR2->VAR46.VAR33 = (VAR43) -1;
+else if (VAR2->VAR46.VAR23 > 0)
+{
+VAR28 *VAR29;
+bfd_boolean VAR50;
+int VAR48 = FUN5 (VAR2)->VAR48;
+
+
+if (VAR2->VAR24 == -1
+&& !VAR2->VAR25)
+{
+if (! FUN3 (VAR5, VAR2))
+return VAR26;
+}
+
+if (FUN6 (VAR48))
+{
+VAR9->VAR45 = VAR7->VAR38->VAR31
+- FUN7 (VAR7);
+VAR7->VAR38->VAR31 += 2 * VAR39;
+VAR2->VAR46.VAR33 = (VAR43) -2;
+}
+if (! FUN6 (VAR48)
+|| FUN8 (VAR48))
+{
+VAR29 = VAR7->VAR51;
+VAR2->VAR46.VAR33 = VAR29->VAR31;
+VAR29->VAR31 += VAR39;
+if (FUN8 (VAR48))
+VAR29->VAR31 += VAR39;
+}
+VAR50 = VAR7->VAR20.VAR21;
+
+if ((FUN8 (VAR48) && VAR2->VAR24 == -1)
+|| VAR48 == VAR49)
+VAR7->VAR52->VAR31 += sizeof (VAR41);
+else if (FUN8 (VAR48))
+VAR7->VAR52->VAR31 += 2 * sizeof (VAR41);
+else if (! FUN6 (VAR48)
+&& (FUN9 (VAR2->VAR53) == VAR54
+|| VAR2->VAR12.VAR13 != VAR55)
+&& (VAR5->VAR27
+|| FUN4 (VAR50, 0, VAR2)))
+VAR7->VAR52->VAR31 += sizeof (VAR41);
+if (FUN6 (VAR48))
+{
+VAR7->VAR40->VAR31 += sizeof (VAR41);
+VAR7->VAR56 = (VAR43) -1;
+}
+}
+else
+VAR2->VAR46.VAR33 = (VAR43) -1;
+
+if (VAR9->VAR57 == NULL)
+return VAR15;
+
+
+
+if (VAR5->VAR27)
+{
+
+if (FUN10 (VAR5, VAR2))
+{
+struct VAR10 **VAR58;
+
+for (VAR58 = &VAR9->VAR57; (VAR11 = *VAR58) != NULL; )
+{
+VAR11->VAR59 -= VAR11->VAR60;
+VAR11->VAR60 = 0;
+if (VAR11->VAR59 == 0)
+*VAR58 = VAR11->VAR61;
+else
+VAR58 = &VAR11->VAR61;
+}
+}
+
+
+if (VAR9->VAR57 != NULL
+&& VAR2->VAR12.VAR13 == VAR55)
+{
+if (FUN9 (VAR2->VAR53) != VAR54)
+VAR9->VAR57 = NULL;
+
+
+else if (VAR2->VAR24 == -1
+&& !VAR2->VAR25)
+{
+if (! FUN3 (VAR5, VAR2))
+return VAR26;
+}
+}
+}
+else if (VAR62)
+{
+
+
+if (!VAR2->VAR63
+&& ((VAR2->VAR64
+&& !VAR2->VAR34)
+|| (VAR7->VAR20.VAR21
+&& (VAR2->VAR12.VAR13 == VAR55
+|| VAR2->VAR12.VAR13 == VAR65))))
+{
+
+if (VAR2->VAR24 == -1
+&& !VAR2->VAR25)
+{
+if (! FUN3 (VAR5, VAR2))
+return VAR26;
+}
+
+
+if (VAR2->VAR24 != -1)
+goto VAR66;
+}
+
+VAR9->VAR57 = NULL;
+
+VAR66: ;
+}
+
+
+for (VAR11 = VAR9->VAR57; VAR11 != NULL; VAR11 = VAR11->VAR61)
+{
+VAR28 *VAR67 = FUN11 (VAR11->VAR68)->VAR67;
+VAR67->VAR31 += VAR11->VAR59 * sizeof (VAR41);
+}
+
+return VAR15;
+}

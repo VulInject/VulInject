@@ -1,0 +1,1 @@
+static GF_Err FUN1 ( VAR1 * VAR2 ) { if ( FUN2 ( ) ) { FUN3 ( NULL , NULL ) ; FUN4 ( NULL , NULL ) ; FUN5 ( NULL ) ; FUN6 ( 0 , NULL ) ; } return VAR3 ; }

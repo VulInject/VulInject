@@ -1,0 +1,38 @@
+VAR1
+FUN1(struct VAR2 *VAR3, u16 VAR4, u8 VAR5,
+u32 VAR6)
+{
+VAR7 *VAR8;
+u16 VAR9;
+
+if (VAR3->VAR10.VAR11 == VAR12)
+return 1;
+
+VAR8 = FUN2(VAR3, VAR6);
+if (!VAR8)
+return 1;
+
+if (VAR8->VAR13 != VAR14)
+return 1;
+
+VAR3->VAR10.VAR11 &= ~VAR15;
+VAR3->VAR10.VAR11 |= VAR16;
+VAR3->VAR10.VAR11 |= VAR17;
+memcpy(VAR3->VAR10.VAR6, VAR8, VAR8->VAR18*4);
+VAR9 = FUN3(VAR8->VAR19) & VAR20;
+if (VAR9 != VAR21)
+VAR3->VAR22 = 1;
+
+if (VAR3->VAR23) {
+if (VAR9 == VAR21) {
+FUN4(VAR3);
+return 1;
+} else {
+VAR3->VAR24 = VAR9;
+VAR3->VAR25 = 0;
+return 1;
+}
+}
+FUN5(&VAR3->VAR10.VAR26);
+return 1;
+}

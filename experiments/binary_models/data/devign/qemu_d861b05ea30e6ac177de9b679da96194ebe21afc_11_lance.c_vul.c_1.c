@@ -1,0 +1,19 @@
+void FUN1(VAR1 *VAR2, int VAR3, uint32_t VAR4, uint32_t VAR5)
+{
+    VAR6 *VAR7;
+    int VAR8, VAR9;
+    VAR7 = FUN2(sizeof(VAR6));
+    if (!VAR7)
+        return;
+    VAR7->VAR3 = VAR3;
+    VAR8 = FUN3(0, VAR10, VAR11, VAR7);
+    FUN4(VAR4, 4, VAR8);
+    VAR9 = FUN3(0, VAR12, VAR13, VAR7);
+    FUN4(VAR5, 16, VAR9);
+    memcpy(VAR7->VAR14, VAR2->VAR14, 6);
+    FUN5(VAR7);
+    VAR7->VAR15 = FUN6(VAR2->VAR16, VAR17, VAR7);
+    snprintf(VAR7->VAR15->VAR18, sizeof(VAR7->VAR15->VAR18), "", VAR7->VAR14[0], VAR7->VAR14[1], VAR7->VAR14[2], VAR7->VAR14[3], VAR7->VAR14[4], VAR7->VAR14[5]);
+    FUN7("", VAR4, 1, VAR19, VAR20, VAR7);
+    FUN8(VAR21, VAR7);
+}

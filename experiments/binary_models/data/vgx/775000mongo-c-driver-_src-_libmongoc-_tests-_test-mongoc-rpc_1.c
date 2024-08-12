@@ -1,0 +1,1 @@
+FUN1 ( ) { mongoc_rpc_t VAR1 ; int64_t VAR2 [ ] { 1 2 3 4 5 } ; ; VAR1 . VAR3 . VAR4 = 0 ; VAR1 . VAR3 . VAR5 = 1234 ; VAR1 . VAR3 . VAR6 = - 1 ; VAR1 . VAR3 . VAR7 = VAR8 ; VAR1 . VAR9 . VAR10 = 0 ; VAR1 . VAR9 . VAR11 = 5 ; VAR1 . VAR9 . VAR2 = VAR2 ; FUN2 ( "" , & VAR1 ) ; }

@@ -1,0 +1,1 @@
+int FUN1 ( struct socket * VAR1 , struct VAR2 * VAR3 , struct VAR4 * VAR5 ) { if ( VAR1 ) { if ( FUN2 ( VAR1 , & VAR1 -> VAR6 , FUN3 ( VAR5 ) , VAR3 , NULL ) != 0 ) { FUN4 ( VAR1 , NULL ) ; return 0 ; } } FUN5 ( VAR3 ) ; return - 1 ; }

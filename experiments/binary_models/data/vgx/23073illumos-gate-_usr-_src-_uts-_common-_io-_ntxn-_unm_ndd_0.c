@@ -1,0 +1,148 @@
+int
+FUN1(VAR1 *VAR2)
+{
+VAR3 *VAR4;
+int VAR5;
+int VAR6;
+
+
+if (FUN2(VAR2) != VAR7)
+return (-1);
+
+
+VAR4 = VAR2->VAR4;
+if (FUN3(VAR4, VAR8)) {
+
+VAR6 = FUN4(VAR4, VAR8);
+
+switch (VAR6) {
+case 10000:
+VAR2->VAR9 = 1;
+VAR2->VAR10 = 1;
+VAR2->VAR11 = 0;
+VAR2->VAR12 = 0;
+VAR2->VAR13 = 0;
+VAR2->VAR14 = 0;
+VAR2->VAR15 = 0;
+VAR2->VAR16 = 0;
+break;
+
+case 1000:
+VAR2->VAR9 = 1;
+VAR2->VAR11 = 1;
+VAR2->VAR12 = 1;
+VAR2->VAR13 = 0;
+VAR2->VAR14 = 0;
+VAR2->VAR15 = 0;
+VAR2->VAR16 = 0;
+break;
+
+case 100:
+VAR2->VAR9 = 1;
+VAR2->VAR11 = 0;
+VAR2->VAR12 = 0;
+VAR2->VAR13 = 1;
+VAR2->VAR14 = 1;
+VAR2->VAR15 = 0;
+VAR2->VAR16 = 0;
+break;
+
+case 10:
+VAR2->VAR9 = 1;
+VAR2->VAR11 = 0;
+VAR2->VAR12 = 0;
+VAR2->VAR13 = 0;
+VAR2->VAR14 = 0;
+VAR2->VAR15 = 1;
+VAR2->VAR16 = 1;
+break;
+
+default:
+break;
+}
+}
+
+
+if (FUN3(VAR4, VAR17) ||
+FUN3(VAR4, VAR18)) {
+
+VAR2->VAR9 = 0;
+VAR2->VAR10 = 1;
+VAR2->VAR11 = 1;
+VAR2->VAR12 = 1;
+VAR2->VAR13 = 1;
+VAR2->VAR14 = 1;
+VAR2->VAR15 = 1;
+VAR2->VAR16 = 1;
+
+VAR6 = FUN4(VAR4, VAR17);
+VAR5 = FUN4(VAR4, VAR18);
+
+switch (VAR6) {
+case 10000:
+default:
+VAR2->VAR11 = 0;
+VAR2->VAR12 = 0;
+VAR2->VAR13 = 0;
+VAR2->VAR14 = 0;
+VAR2->VAR15 = 0;
+VAR2->VAR16 = 0;
+break;
+
+case 1000:
+VAR2->VAR10 = 0;
+VAR2->VAR13 = 0;
+VAR2->VAR14 = 0;
+VAR2->VAR15 = 0;
+VAR2->VAR16 = 0;
+break;
+
+case 100:
+VAR2->VAR10 = 0;
+VAR2->VAR11 = 0;
+VAR2->VAR12 = 0;
+VAR2->VAR15 = 0;
+VAR2->VAR16 = 0;
+break;
+
+case 10:
+VAR2->VAR10 = 0;
+VAR2->VAR11 = 0;
+VAR2->VAR12 = 0;
+VAR2->VAR13 = 0;
+VAR2->VAR14 = 0;
+break;
+}
+
+switch (VAR5) {
+default:
+case 1:
+VAR2->VAR12 = 0;
+VAR2->VAR14 = 0;
+VAR2->VAR16 = 0;
+break;
+
+case 0:
+VAR2->VAR10 = 0;
+VAR2->VAR11 = 0;
+VAR2->VAR13 = 0;
+VAR2->VAR15 = 0;
+break;
+}
+}
+
+FUN5(1, (VAR19, ""
+""
+""
+""
+""
+"",
+VAR2->VAR9,
+VAR2->VAR20, VAR2->VAR21,
+VAR2->VAR10,
+VAR2->VAR11, VAR2->VAR12,
+VAR2->VAR13, VAR2->VAR14,
+VAR2->VAR15, VAR2->VAR16));
+
+return (0);
+}

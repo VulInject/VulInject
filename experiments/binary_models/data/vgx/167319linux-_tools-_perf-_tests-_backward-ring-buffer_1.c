@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { int VAR1 ; for ( VAR1 = 0 ; VAR1 < VAR2 ; VAR1 ++ ) { char VAR3 [ 15 ] ; sprintf ( VAR3 , "" , VAR1 ) ; FUN2 ( VAR4 , VAR3 ) ; } }

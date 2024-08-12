@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 , struct VAR3 * VAR4 , size_t VAR5 ) { VAR6 * VAR7 ; VAR8 * VAR9 ; struct iterator_compare_data VAR10 = { index_entries VAR5 } ; FUN2 ( FUN3 ( & VAR7 , VAR2 ) ) ; FUN2 ( FUN4 ( & VAR9 , VAR2 , VAR7 , NULL ) ) ; FUN2 ( FUN5 ( VAR9 , VAR11 , & VAR10 ) ) ; FUN6 ( VAR10 . VAR12 , VAR10 . VAR13 ) ; FUN7 ( VAR7 ) ; }

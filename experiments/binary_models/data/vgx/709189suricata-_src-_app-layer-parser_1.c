@@ -1,0 +1,1 @@
+static void * FUN1 ( void * VAR1 , AppProto VAR2 ) { FUN2 ( ) ; void * VAR3 = FUN3 ( sizeof ( VAR4 ) ) ; if ( FUN4 ( VAR3 == NULL ) ) { VAR5 } end FUN5 ( VAR3 , "" ) ; }

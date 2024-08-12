@@ -1,0 +1,27 @@
+static VAR1 *
+FUN1(struct VAR2 *VAR3, Lmid_t VAR4, const char *VAR5)
+{
+VAR1 *VAR6;
+
+if (!VAR3->VAR7)
+FUN2(VAR3);
+
+if (VAR3->VAR8 == NULL && ((VAR6 = FUN3(VAR3,
+FUN4(VAR3, VAR9))) != NULL || (VAR6 = FUN5(VAR3)) != NULL))
+VAR3->VAR8 = VAR6;
+
+if (VAR3->VAR10 == NULL && (VAR6 = FUN3(VAR3,
+FUN4(VAR3, VAR11))) != NULL)
+VAR3->VAR10 = VAR6;
+
+if (VAR5 == VAR12)
+VAR6 = VAR3->VAR8;
+else if (VAR5 == VAR13)
+VAR6 = VAR3->VAR10;
+else if (FUN6(VAR3) != NULL || VAR3->VAR14 == VAR15)
+VAR6 = FUN7(VAR3, VAR4, VAR5);
+else
+VAR6 = NULL;
+
+return (VAR6);
+}

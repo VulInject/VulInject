@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 ) { if ( FUN2 ( VAR2 , - 1 , 1 ) ) { return 0 ; } FUN3 ( VAR4 ) ; FUN4 ( VAR4 ) ; return 0 ; }

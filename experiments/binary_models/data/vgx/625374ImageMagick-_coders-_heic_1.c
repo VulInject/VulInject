@@ -1,0 +1,1 @@
+static inline MagickBooleanType FUN1 ( const VAR1 * VAR2 , VAR3 * VAR4 ) { if ( VAR2 -> VAR5 == 0 ) { return ( VAR6 ) ; } if ( VAR4 -> VAR7 < VAR2 -> VAR7 ) { return ( VAR8 ) ; } if ( VAR4 -> VAR7 > VAR2 -> VAR7 + VAR2 -> VAR5 - 1 ) { return ( VAR8 ) ; } return ( VAR6 ) ; }

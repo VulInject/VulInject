@@ -1,0 +1,84 @@
+static int FUN1(struct VAR1 *VAR2,
+hda_nid_t VAR3,
+bool VAR4)
+{
+struct VAR5 *VAR6 = VAR2->VAR6;
+struct VAR7 *VAR8 = &VAR6->VAR9;
+int VAR10, VAR11, VAR12, VAR13, VAR14;
+unsigned int VAR15 = FUN2(VAR2, VAR3);
+unsigned int VAR16 = FUN3(VAR15);
+int VAR17 = 0;
+struct VAR18 *VAR19;
+
+VAR14 = VAR6->VAR20;
+if (VAR14 >= 2)
+goto VAR21;
+
+VAR13 = FUN4(VAR2, VAR3);
+if (VAR13 < 2)
+goto VAR21;
+
+for (VAR10 = VAR22; VAR10 >= VAR23; VAR10--) {
+for (VAR11 = 0; VAR11 < VAR8->VAR24; VAR11++) {
+hda_nid_t VAR25 = VAR8->VAR26[VAR11].VAR27;
+hda_nid_t VAR28 = 0;
+
+if (VAR8->VAR26[VAR11].VAR10 != VAR10)
+continue;
+if (!FUN5(VAR2, VAR16, VAR25))
+continue;
+for (VAR12 = 0; VAR12 < VAR6->VAR20; VAR12++) {
+if (VAR25 == VAR6->VAR29[VAR12].VAR27)
+break;
+}
+if (VAR12 < VAR6->VAR20)
+continue;
+
+if (VAR4)
+VAR28 = FUN6(VAR2, VAR25);
+else if (!VAR28)
+VAR28 = FUN7(VAR2, VAR25, false);
+if (!VAR28) {
+VAR17++;
+continue;
+}
+VAR19 = FUN8(VAR2, VAR28, VAR25,
+-VAR6->VAR30);
+if (!VAR19) {
+VAR17++;
+continue;
+}
+
+VAR6->VAR29[VAR6->VAR20].VAR27 = VAR25;
+VAR6->VAR29[VAR6->VAR20].VAR28 = VAR28;
+VAR6->VAR31[VAR8->VAR32 + VAR6->VAR20] =
+FUN9(VAR2, VAR19);
+VAR6->VAR20++;
+if (VAR6->VAR20 >= 2)
+break;
+}
+}
+VAR21:
+if (VAR17)
+VAR17 = VAR33;
+if (VAR14 == VAR6->VAR20) {
+if (VAR4)
+return 1; 
+else
+return VAR17; 
+}
+if (!VAR4 && VAR6->VAR20 < 2) {
+
+VAR6->VAR34.VAR35 -= VAR6->VAR20 - VAR14;
+VAR6->VAR20 = VAR14;
+return VAR17;
+}
+
+
+for (VAR11 = VAR14; VAR11 < VAR6->VAR20; VAR11++) {
+VAR19 = FUN10(VAR2, VAR6->VAR31[VAR8->VAR32 + VAR11]);
+VAR17 += FUN11(VAR2, VAR19);
+}
+
+return VAR17;
+}

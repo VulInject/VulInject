@@ -1,0 +1,1 @@
+FUN1 ( ) { struct VAR1 * VAR2 ; int VAR3 ; if ( ! VAR4 ) { return VAR5 ; } for ( VAR2 = VAR6 ; VAR2 ; VAR2 = VAR2 -> VAR7 ) { VAR3 = strcmp ( VAR2 -> VAR4 , VAR4 ) ; if ( VAR3 == 0 ) { return VAR2 ; } if ( VAR3 < 0 ) { break ; } } return NULL ; }

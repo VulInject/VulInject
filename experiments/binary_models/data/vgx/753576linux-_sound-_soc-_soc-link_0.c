@@ -1,0 +1,14 @@
+int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR5;
+int VAR6 = 0;
+
+if (VAR4->VAR7->VAR8 &&
+VAR4->VAR7->VAR8->VAR9)
+VAR6 = VAR4->VAR7->VAR8->FUN2(VAR2);
+
+if (VAR6 == 0)
+FUN3(VAR4, VAR2, VAR10);
+
+return FUN4(VAR4, VAR6);
+}

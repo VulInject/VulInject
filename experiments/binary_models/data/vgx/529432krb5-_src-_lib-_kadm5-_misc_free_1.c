@@ -1,0 +1,1 @@
+kadm5_ret_t FUN1 ( void * VAR1 , VAR2 * VAR3 , int VAR4 ) { int VAR5 ; FUN2 ( VAR1 ) ; if ( ! VAR3 ) { return VAR6 ; } for ( VAR5 = 0 ; VAR5 < VAR4 ; VAR5 ++ ) { free ( VAR3 [ VAR5 ] . VAR7 ) ; free ( VAR3 [ VAR5 ] . VAR8 ) ; } return VAR6 ; }

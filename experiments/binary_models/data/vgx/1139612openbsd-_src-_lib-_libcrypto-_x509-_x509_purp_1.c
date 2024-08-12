@@ -1,0 +1,1 @@
+uint32_t FUN1 ( VAR1 * VAR2 ) { if ( FUN2 ( VAR2 , - 1 , - 1 ) != 1 ) { return 0 ; } return VAR3 ; }

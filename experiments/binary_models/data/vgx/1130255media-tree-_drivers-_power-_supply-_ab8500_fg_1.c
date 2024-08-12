@@ -1,0 +1,1 @@
+static u8 FUN1 ( int VAR1 ) { int VAR2 ; for ( VAR2 = 0 ; VAR2 < FUN2 ( VAR3 ) ; VAR2 ++ ) { if ( VAR1 < VAR3 [ VAR2 ] ) { return ( VAR4 ) VAR2 - 1 ; } } return ( VAR4 ) FUN2 ( VAR3 ) - 1 ; }

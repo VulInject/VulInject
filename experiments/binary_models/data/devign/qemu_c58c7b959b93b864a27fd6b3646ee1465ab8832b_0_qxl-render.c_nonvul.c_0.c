@@ -1,0 +1,31 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    VAR5 *VAR6 = FUN2(VAR2->VAR7.VAR8);
+    VAR9 *VAR10 = FUN3(VAR6);
+    VAR9 *VAR11;
+    int VAR12, VAR13;
+    if (FUN4(VAR6))
+    {
+        return;
+    }
+    FUN5(VAR2->VAR14.VAR15, VAR4->VAR16, VAR4->VAR17, VAR4->VAR18, VAR4->VAR19);
+    VAR11 = VAR2->VAR14.VAR20;
+    if (VAR2->VAR14.VAR15 < 0)
+    {
+        VAR11 += (VAR2->VAR14.VAR6.VAR21 - VAR4->VAR18 - 1) * VAR2->VAR14.VAR22;
+    }
+    else
+    {
+        VAR11 += VAR4->VAR18 * VAR2->VAR14.VAR22;
+    }
+    VAR10 += VAR4->VAR18 * VAR2->VAR14.VAR22;
+    VAR11 += VAR4->VAR16 * VAR2->VAR14.VAR23;
+    VAR10 += VAR4->VAR16 * VAR2->VAR14.VAR23;
+    VAR12 = (VAR4->VAR17 - VAR4->VAR16) * VAR2->VAR14.VAR23;
+    for (VAR13 = VAR4->VAR18; VAR13 < VAR4->VAR19; VAR13++)
+    {
+        memcpy(VAR10, VAR11, VAR12);
+        VAR10 += VAR2->VAR14.VAR22;
+        VAR11 += VAR2->VAR14.VAR15;
+    }
+}

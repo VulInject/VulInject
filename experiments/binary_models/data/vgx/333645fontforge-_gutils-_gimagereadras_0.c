@@ -1,0 +1,18 @@
+static VAR1 *FUN1(VAR1 *VAR2,int VAR3, int VAR4, VAR5 *VAR6 ) {
+struct VAR7 *VAR8 = VAR2->VAR9.VAR10;
+int VAR11,VAR12,VAR13=0;
+int VAR14;
+long *VAR15, *VAR16;
+
+for ( VAR14=0; VAR14<VAR4; ++VAR14 )
+for ( VAR15 = (long *) (VAR8->VAR17 + VAR14*VAR8->VAR18), VAR16 = VAR15+VAR3; VAR15<VAR16; ) {
+fgetc(VAR6);	
+VAR11 = fgetc(VAR6); VAR12 = fgetc(VAR6); VAR13 = fgetc(VAR6);
+*VAR15++ = FUN2(VAR13,VAR12,VAR11);
+}
+if ( VAR13==VAR19 ) {
+FUN3(VAR2);
+VAR2 = NULL;
+}
+return VAR2;
+}

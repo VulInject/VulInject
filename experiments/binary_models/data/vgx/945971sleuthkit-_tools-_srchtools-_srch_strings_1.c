@@ -1,0 +1,1 @@
+off_t FUN1 ( const char * VAR1 ) { int VAR2 ; if ( FUN2 ( VAR1 , & VAR2 ) < 0 ) { if ( VAR3 == VAR4 ) { fprintf ( VAR5 , "" , VAR1 ) ; } else { fprintf ( VAR5 , "" , VAR1 , strerror ( VAR3 ) ) ; } } if ( ! FUN3 ( VAR2 . VAR6 ) ) { fprintf ( VAR5 , "" , VAR1 ) ; } else { return VAR2 . VAR7 ; } return 0 ; }

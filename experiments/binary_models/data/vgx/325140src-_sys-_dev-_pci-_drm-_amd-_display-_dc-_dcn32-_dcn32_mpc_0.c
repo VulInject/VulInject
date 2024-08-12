@@ -1,0 +1,32 @@
+static void FUN1(
+struct VAR1 *VAR1,
+const struct VAR2 *VAR3,
+uint32_t VAR4,
+uint32_t VAR5)
+{
+uint32_t VAR6, VAR7, VAR8, VAR9;
+uint32_t  VAR10, VAR11, VAR12;
+uint32_t  VAR13, VAR14, VAR15;
+
+struct VAR16 *VAR17 = FUN2(VAR1);
+
+for (VAR6 = 0 ; VAR6 < VAR4; VAR6++) {
+
+VAR7   = VAR3[VAR6].VAR18;
+VAR8 = VAR3[VAR6].VAR19;
+VAR9  = VAR3[VAR6].VAR20;
+
+VAR10   = VAR3[VAR6].VAR21;
+VAR11 = VAR3[VAR6].VAR22;
+VAR12  = VAR3[VAR6].VAR23;
+
+VAR13   = ((VAR10   & 0x3ff) << 14) | (VAR7   & 0x3fff);
+VAR14 = ((VAR11 & 0x3ff) << 14) | (VAR8 & 0x3fff);
+VAR15  = ((VAR12  & 0x3ff) << 14) | (VAR9  & 0x3fff);
+
+FUN3(VAR24[VAR5], 0, VAR24, VAR13);
+FUN3(VAR24[VAR5], 0, VAR24, VAR14);
+FUN3(VAR24[VAR5], 0, VAR24, VAR15);
+}
+
+}

@@ -1,0 +1,1 @@
+static void FUN1 ( void * VAR1 , int VAR2 , int VAR3 ) { VAR4 * VAR5 = ( VAR4 * ) VAR1 ; uint32_t VAR6 ; assert ( VAR2 < VAR5 -> VAR7 ) ; VAR5 -> VAR3 [ VAR2 ] = VAR3 ; for ( VAR6 = 0 ; VAR6 < VAR5 -> VAR7 ; VAR6 ++ ) { if ( VAR5 -> VAR3 [ VAR6 ] >= 1 ) { FUN2 ( VAR5 -> VAR8 , NULL ) ; return ; } } FUN3 ( VAR5 -> VAR8 ) ; }

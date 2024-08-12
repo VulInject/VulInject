@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR1 , unsigned int VAR2 ) { int VAR3 ; if ( ! VAR1 ) { return false ; } if ( VAR1 -> VAR4 & VAR5 || VAR1 -> VAR4 & VAR6 ) { return true ; } for ( VAR3 = 0 ; VAR3 < VAR7 ; VAR3 ++ ) { struct VAR1 * VAR8 ; VAR8 = VAR1 -> VAR9 [ VAR3 ] ; if ( FUN1 ( VAR8 , VAR2 + 1 ) ) { return true ; } } return false ; }

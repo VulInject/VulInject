@@ -1,0 +1,1 @@
+FUN1(struct socket *VAR1, const char *VAR2, int VAR3) { return 0; }

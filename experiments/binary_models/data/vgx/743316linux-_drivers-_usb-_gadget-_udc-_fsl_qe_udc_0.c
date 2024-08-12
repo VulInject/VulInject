@@ -1,0 +1,87 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR4, VAR2, VAR5);
+struct VAR6 *VAR7;
+struct VAR8 *VAR9;
+struct qe_bd VAR10 *VAR11;
+unsigned long VAR12;
+u32 VAR13, VAR14;
+u32 VAR15, VAR16;
+
+FUN3(&VAR4->VAR17, VAR12);
+
+for (VAR16 = 1; VAR16 < VAR18; VAR16++) {
+VAR7 = &VAR4->VAR19[VAR16];
+
+if (VAR7->VAR20 == VAR21 || VAR7->VAR22 == 0) {
+FUN4(VAR4->VAR23,
+"");
+continue;
+}
+
+VAR9 = VAR7->VAR24;
+VAR11 = VAR7->VAR25;
+VAR13 = FUN5((u32 VAR10 *)VAR11);
+VAR14 = VAR13 & VAR26;
+
+while (!(VAR13 & VAR27) && VAR14) {
+if (FUN6(&VAR7->VAR28)) {
+FUN7(VAR7);
+FUN4(VAR4->VAR23,
+"",
+VAR7->VAR29);
+break;
+}
+
+if ((VAR13 & VAR30) && (VAR13 & VAR31)
+&& !(VAR13 & VAR32)) {
+FUN8(VAR9);
+VAR15 = (VAR33)FUN9(FUN5(&VAR11->VAR34));
+FUN10(VAR9, (VAR35 *)VAR15);
+FUN11(VAR9,
+(VAR14 - VAR36));
+FUN12(VAR9, VAR37);
+switch (VAR13 & VAR38) {
+case VAR39:
+FUN13(VAR9, VAR40);
+break;
+case VAR41:
+FUN13(VAR9, VAR42);
+break;
+default:
+FUN13(VAR9, VAR43);
+break;
+}
+
+FUN14(VAR7);
+} else {
+FUN15(VAR4->VAR23,
+"");
+}
+
+
+FUN16((u32 VAR10 *)VAR11, VAR13 & VAR44);
+VAR7->VAR29--;
+if (!(VAR7->VAR45))
+FUN17(VAR7);
+
+
+if (VAR13 & VAR46)
+VAR11 = VAR7->VAR47;
+else
+VAR11++;
+
+VAR13 = FUN5((u32 VAR10 *)VAR11);
+VAR14 = VAR13 & VAR26;
+}
+
+VAR7->VAR25 = VAR11;
+
+if (VAR7->VAR45)
+FUN18(VAR7);
+
+VAR7->VAR22 = 0;
+} 
+
+FUN19(&VAR4->VAR17, VAR12);
+}

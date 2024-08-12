@@ -1,0 +1,203 @@
+int
+FUN1(struct VAR1 *VAR2, u_int32_t VAR3)
+{
+u_int VAR4, VAR5, VAR6, VAR7, VAR8, VAR9, VAR10, VAR11, VAR12;
+u_int32_t VAR13, VAR14;
+int VAR15;
+
+fparg VAR16, VAR17, VAR18;
+
+
+VAR5 = (VAR3 >> 21) & 0x1f;
+VAR6 = (VAR3 >> 16) & 0x1f;
+VAR7 = VAR3 & 0x1f;
+VAR4 = (VAR3 >> 15) & 0x01;
+VAR12 = (VAR3 >> 11) & 0x0f;
+VAR8 = (VAR3 >> 9) & 0x03;
+VAR9 = (VAR3 >> 7) & 0x03;
+VAR10 = (VAR3 >> 5) & 0x03;
+
+
+if (VAR4 != 0)
+return (VAR19);
+
+switch (VAR12) {
+case 0x00:	
+case 0x05:	
+case 0x06:	
+case 0x0e:	
+if ((VAR8 != VAR20 && VAR8 != VAR21) ||
+(VAR9 != VAR20 && VAR9 != VAR21) ||
+(VAR10 != VAR20 && VAR10 != VAR21))
+return (VAR19);
+break;
+case 0x04:	
+if (VAR8 != 0x00)	
+return (VAR19);
+if ((VAR10 != VAR20 && VAR10 != VAR21) ||
+VAR9 != 0x00 || VAR6 != 0)
+return (VAR19);
+break;
+case 0x07:	
+if ((VAR8 != VAR20 && VAR8 != VAR21) ||
+(VAR9 != VAR20 && VAR9 != VAR21))
+return (VAR19);
+if (VAR10 != 0x00  && VAR10 != 0x01 )
+return (VAR19);
+break;
+case 0x09:	
+case 0x0a:	
+case 0x0b:	
+if ((VAR9 != VAR20 && VAR9 != VAR21) ||
+VAR8 != 0x00 || VAR10 != 0x00 || VAR6 != 0)
+return (VAR19);
+break;
+case 0x01:	
+if (VAR9 == VAR10)
+return (VAR19);
+
+case 0x0f:	
+if ((VAR9 != VAR20 && VAR9 != VAR21) ||
+(VAR10 != VAR20 && VAR10 != VAR21) ||
+VAR8 != 0x00 || VAR6 != 0)
+return (VAR19);
+break;
+default:
+case 0x08:	
+return (VAR19);
+}
+
+
+VAR13 = VAR2->VAR22;
+VAR2->VAR22 = 0;
+
+
+VAR14 = VAR2->VAR23;
+
+
+
+switch (VAR12) {
+case 0x00:	
+VAR11 = FUN2(VAR8, VAR9, VAR10);
+FUN3(VAR2, VAR6, VAR8, VAR11, &VAR16);
+FUN3(VAR2, VAR7, VAR9, VAR11, &VAR17);
+switch (VAR11) {
+case VAR20:
+VAR18.VAR24 = FUN4(VAR16.VAR24, VAR17.VAR24);
+break;
+case VAR21:
+VAR18.VAR25 = FUN5(VAR16.VAR25, VAR17.VAR25);
+break;
+}
+FUN6(VAR2, VAR5, VAR11, VAR10, &VAR18);
+break;
+
+case 0x01:	
+VAR11 = FUN2(VAR26, VAR9, VAR10);
+FUN3(VAR2, VAR7, VAR9, VAR11, &VAR18);
+FUN6(VAR2, VAR5, VAR11, VAR10, &VAR18);
+break;
+
+case 0x04:	
+FUN3(VAR2, VAR7, VAR27, VAR10, &VAR18);
+FUN6(VAR2, VAR5, VAR10, VAR10, &VAR18);
+break;
+
+case 0x05:	
+VAR11 = FUN2(VAR8, VAR9, VAR10);
+FUN3(VAR2, VAR6, VAR8, VAR11, &VAR16);
+FUN3(VAR2, VAR7, VAR9, VAR11, &VAR17);
+switch (VAR11) {
+case VAR20:
+VAR18.VAR24 = FUN7(VAR16.VAR24, VAR17.VAR24);
+break;
+case VAR21:
+VAR18.VAR25 = FUN8(VAR16.VAR25, VAR17.VAR25);
+break;
+}
+FUN6(VAR2, VAR5, VAR11, VAR10, &VAR18);
+break;
+
+case 0x06:	
+VAR11 = FUN2(VAR8, VAR9, VAR10);
+FUN3(VAR2, VAR6, VAR8, VAR11, &VAR16);
+FUN3(VAR2, VAR7, VAR9, VAR11, &VAR17);
+switch (VAR11) {
+case VAR20:
+VAR18.VAR24 = FUN9(VAR16.VAR24, VAR17.VAR24);
+break;
+case VAR21:
+VAR18.VAR25 = FUN10(VAR16.VAR25, VAR17.VAR25);
+break;
+}
+FUN6(VAR2, VAR5, VAR11, VAR10, &VAR18);
+break;
+
+case 0x07:	
+VAR11 = FUN2(VAR8, VAR9, VAR26);
+FUN3(VAR2, VAR6, VAR8, VAR11, &VAR16);
+FUN3(VAR2, VAR7, VAR9, VAR11, &VAR17);
+FUN11(VAR2, &VAR16, &VAR17, VAR11, VAR5, VAR10 );
+break;
+
+case 0x09:	
+VAR28:
+FUN3(VAR2, VAR7, VAR9, VAR9, &VAR18);
+FUN6(VAR2, VAR5, VAR9, VAR27, &VAR18);
+break;
+
+case 0x0a:	
+
+VAR2->VAR23 = (VAR14 & ~(VAR29 << VAR30)) |
+(VAR31 << VAR30);
+goto VAR28;
+
+case 0x0b:	
+
+VAR2->VAR23 = (VAR14 & ~(VAR29 << VAR30)) |
+(VAR32 << VAR30);
+goto VAR28;
+
+case 0x0e:	
+VAR11 = FUN2(VAR8, VAR9, VAR10);
+FUN3(VAR2, VAR6, VAR8, VAR11, &VAR16);
+FUN3(VAR2, VAR7, VAR9, VAR11, &VAR17);
+switch (VAR11) {
+case VAR20:
+VAR18.VAR24 = FUN12(VAR16.VAR24, VAR17.VAR24);
+break;
+case VAR21:
+VAR18.VAR25 = FUN13(VAR16.VAR25, VAR17.VAR25);
+break;
+}
+FUN6(VAR2, VAR5, VAR11, VAR10, &VAR18);
+break;
+
+case 0x0f:	
+VAR11 = FUN2(VAR26, VAR9, VAR10);
+FUN3(VAR2, VAR7, VAR9, VAR11, &VAR16);
+switch (VAR11) {
+case VAR20:
+VAR18.VAR24 = FUN14(VAR16.VAR24);
+break;
+case VAR21:
+VAR18.VAR25 = FUN15(VAR16.VAR25);
+break;
+}
+FUN6(VAR2, VAR5, VAR11, VAR10, &VAR18);
+break;
+}
+
+
+
+if (VAR2->VAR22 & VAR14)
+VAR15 = VAR33;
+else
+VAR15 = 0;
+VAR2->VAR22 |= VAR13;
+
+
+VAR2->VAR23 = VAR14;
+
+return (VAR15);
+}

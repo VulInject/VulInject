@@ -1,0 +1,1 @@
+FUN1 ( ) { bfd_size_type VAR1 = sizeof ( VAR2 ) ; VAR3 -> VAR4 . VAR5 = FUN2 ( VAR3 , VAR1 ) ; return VAR6 ; }

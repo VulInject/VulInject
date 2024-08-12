@@ -1,0 +1,1 @@
+static int FUN1 ( const void * VAR1 , const void * VAR2 ) { const VAR3 * VAR4 = ( const VAR3 * ) VAR1 ; const VAR5 * VAR6 = ( const VAR5 * ) VAR2 ; int VAR7 , VAR8 ; VAR7 = VAR4 -> VAR9 ; VAR8 = FUN2 ( VAR6 -> VAR10 , NULL ) ; if ( VAR7 > VAR8 ) { return 1 ; } if ( VAR7 < VAR8 ) { return - 1 ; } return FUN3 ( VAR4 -> VAR11 , FUN4 ( VAR6 -> VAR10 ) , VAR7 ) ; }

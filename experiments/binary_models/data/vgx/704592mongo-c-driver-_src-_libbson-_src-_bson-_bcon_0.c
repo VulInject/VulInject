@@ -1,0 +1,123 @@
+FUN1 (const VAR1 *VAR2,
+bcon_type_t VAR3,
+VAR4 *VAR5)
+{
+switch ((int) VAR3) {
+case VAR6:
+FUN2 (VAR7);
+*VAR5->VAR8 = FUN3 (VAR2, NULL);
+break;
+case VAR9:
+FUN2 (VAR10);
+*VAR5->VAR11 = FUN4 (VAR2);
+break;
+case VAR12:
+FUN2 (VAR13);
+FUN5 (
+VAR2, VAR5->VAR14.VAR15, VAR5->VAR14.VAR16, VAR5->VAR14.VAR17);
+break;
+case VAR18:
+FUN2 (VAR19);
+break;
+case VAR20:
+FUN2 (VAR21);
+*VAR5->VAR22 = FUN6 (VAR2);
+break;
+case VAR23:
+FUN2 (VAR24);
+*VAR5->VAR25 = FUN7 (VAR2);
+break;
+case VAR26:
+FUN2 (VAR27);
+*VAR5->VAR28 = FUN8 (VAR2);
+break;
+case VAR29:
+FUN2 (VAR30);
+break;
+case VAR31:
+FUN2 (VAR32);
+*VAR5->VAR33.VAR34 = FUN9 (VAR2, VAR5->VAR33.VAR35);
+
+break;
+case VAR36:
+FUN2 (VAR37);
+FUN10 (
+VAR2, NULL, VAR5->VAR38.VAR39, VAR5->VAR38.VAR40);
+break;
+case VAR41:
+FUN2 (VAR42);
+*VAR5->VAR43 = FUN11 (VAR2, NULL);
+break;
+case VAR44:
+FUN2 (VAR45);
+*VAR5->VAR46 = FUN12 (VAR2, NULL);
+break;
+case VAR47: {
+const VAR48 *VAR49;
+uint32_t VAR50;
+
+FUN2 (VAR51);
+
+*VAR5->VAR52.VAR53 = FUN13 (VAR2, NULL, &VAR50, &VAR49);
+
+FUN14 (FUN15 (VAR5->VAR52.VAR54, VAR49, VAR50));
+break;
+}
+case VAR55:
+FUN2 (VAR56);
+*VAR5->VAR57 = FUN16 (VAR2);
+break;
+case VAR58:
+FUN2 (VAR59);
+FUN17 (
+VAR2, VAR5->VAR60.VAR61, VAR5->VAR60.VAR62);
+break;
+case VAR63:
+FUN2 (VAR64);
+*VAR5->VAR65 = FUN18 (VAR2);
+break;
+case VAR66:
+FUN2 (VAR67);
+FUN14 (FUN19 (VAR2, VAR5->VAR68));
+break;
+case VAR69:
+FUN2 (VAR70);
+break;
+case VAR71:
+FUN2 (VAR72);
+break;
+case VAR73: {
+const VAR48 *VAR49;
+uint32_t VAR50;
+
+FUN2 (VAR74);
+
+FUN20 (VAR2, &VAR50, &VAR49);
+
+FUN14 (FUN15 (VAR5->VAR75, VAR49, VAR50));
+break;
+}
+case VAR76: {
+const VAR48 *VAR49;
+uint32_t VAR50;
+
+FUN2 (VAR77);
+
+FUN21 (VAR2, &VAR50, &VAR49);
+
+FUN14 (FUN15 (VAR5->VAR78, VAR49, VAR50));
+break;
+}
+case VAR79:
+FUN2 (VAR5->VAR80);
+break;
+case VAR81:
+memcpy (VAR5->VAR82, VAR2, sizeof *VAR2);
+break;
+default:
+FUN14 (0);
+break;
+}
+
+return true;
+}

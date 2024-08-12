@@ -1,0 +1,33 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+int VAR5;
+int VAR6, VAR7;
+
+FUN3(FUN4(VAR2), VAR2);
+
+VAR6 = FUN5(VAR2);
+VAR5 = FUN6(VAR4, VAR6);
+if (VAR5 < 0) {
+FUN7("",
+VAR8, VAR6);
+return;
+}
+
+for (VAR7 = 0; VAR7 < 2; VAR7++, VAR5 += 32) {
+int VAR9 = FUN8(VAR4, VAR5);
+unsigned long VAR10;
+int VAR11;
+
+if (VAR5 >= VAR4->VAR12 * 32)
+break;
+
+VAR10 = FUN9(VAR4->VAR13 +
+FUN10(VAR9, VAR4->VAR12));
+
+FUN11(VAR11, &VAR10, 32)
+FUN12(VAR4->VAR14, VAR11 + VAR5);
+}
+
+FUN13(FUN4(VAR2), VAR2);
+}

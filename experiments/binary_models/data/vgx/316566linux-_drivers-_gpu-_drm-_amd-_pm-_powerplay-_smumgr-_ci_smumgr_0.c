@@ -1,0 +1,67 @@
+static int FUN1(struct VAR1 *VAR2, uint32_t VAR3,
+const VAR4 *VAR5, uint32_t VAR6, uint32_t VAR7)
+{
+int VAR8;
+uint32_t VAR9 = 0;
+uint32_t VAR10;
+uint32_t VAR11 = 0;
+uint32_t VAR12;
+
+if ((3 & VAR3)
+|| ((VAR3 + VAR6) >= VAR7)) {
+FUN2("");
+return -VAR13;
+}
+
+VAR11 = VAR3;
+
+while (VAR6 >= 4) {
+
+VAR9 = VAR5[0] * 0x1000000 + VAR5[1] * 0x10000 + VAR5[2] * 0x100 + VAR5[3];
+
+VAR8 = FUN3(VAR2, VAR11, VAR7);
+
+if (0 != VAR8)
+return VAR8;
+
+FUN4(VAR2->VAR14, VAR15, VAR9);
+
+VAR5 += 4;
+VAR6 -= 4;
+VAR11 += 4;
+}
+
+if (0 != VAR6) {
+
+VAR9 = 0;
+
+VAR8 = FUN3(VAR2, VAR11, VAR7);
+
+if (0 != VAR8)
+return VAR8;
+
+
+VAR10 = FUN5(VAR2->VAR14, VAR15);
+
+VAR12 = 8 * (4 - VAR6);
+
+while (VAR6 > 0) {
+
+VAR9 = (0x100 * VAR9) + *VAR5++;
+VAR6--;
+}
+
+VAR9 <<= VAR12;
+
+VAR9 |= (VAR10 & ~((~0UL) << VAR12));
+
+VAR8 = FUN3(VAR2, VAR11, VAR7);
+
+if (0 != VAR8)
+return VAR8;
+
+FUN4(VAR2->VAR14, VAR15, VAR9);
+}
+
+return 0;
+}

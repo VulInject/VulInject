@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 , char * VAR3 ) { VAR2 -> VAR4 = malloc ( sizeof ( char ) * ( ( strlen ( VAR3 ) + 1 ) ) ) ; strcpy ( VAR2 -> VAR4 , VAR3 ) ; }

@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 , const char * VAR3 ) { u32 VAR4 ; VAR5 * VAR6 ; VAR4 = 0 ; while ( ( VAR6 = ( VAR5 * ) FUN2 ( VAR2 -> VAR7 , & VAR4 ) ) ) { if ( ! strcmp ( VAR3 , VAR6 -> VAR8 ) ) { FUN3 ( VAR6 ) ; FUN4 ( VAR2 -> VAR7 , VAR4 - 1 ) ; VAR2 -> VAR9 = VAR10 ; return ; } } }

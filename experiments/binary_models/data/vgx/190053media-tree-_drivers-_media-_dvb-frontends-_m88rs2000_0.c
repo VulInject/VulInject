@@ -1,0 +1,101 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR5;
+struct VAR6 *VAR7 = &VAR2->VAR8;
+enum fe_status VAR9 = 0;
+int VAR10, VAR11 = 0;
+u32 VAR12;
+s16 VAR13 = 0;
+u8 VAR14;
+
+VAR4->VAR15 = 0;
+
+if (VAR7->VAR16 != VAR17) {
+FUN2("",
+VAR18, VAR7->VAR16);
+return -VAR19;
+}
+
+
+if (VAR2->VAR20.VAR21.VAR22)
+VAR11 = VAR2->VAR20.VAR21.FUN3(VAR2);
+
+if (VAR11 < 0)
+return -VAR23;
+
+if (VAR2->VAR20.VAR21.VAR24)
+VAR11 = VAR2->VAR20.VAR21.FUN4(VAR2, &VAR12);
+
+if (VAR11 < 0)
+return -VAR23;
+
+VAR13 = (VAR25)((VAR26)VAR12 - VAR7->VAR27);
+
+
+if (((VAR7->VAR27 % 192857) >= (192857 - 3000)) ||
+(VAR7->VAR27 % 192857) <= 3000)
+VAR11 = FUN5(VAR4, 0x86, 0xc2);
+else
+VAR11 = FUN5(VAR4, 0x86, 0xc6);
+
+VAR11 |= FUN6(VAR2, VAR13);
+if (VAR11 < 0)
+return -VAR23;
+
+
+if (VAR7->VAR28 > 27500000)
+VAR11 = FUN5(VAR4, 0xf1, 0xa4);
+else
+VAR11 = FUN5(VAR4, 0xf1, 0xbf);
+
+VAR11 |= FUN7(VAR4, VAR29);
+if (VAR11 < 0)
+return -VAR23;
+
+
+VAR11 = FUN8(VAR4, VAR7->VAR30);
+VAR11 |= FUN5(VAR4, 0x85, 0x1);
+VAR11 |= FUN5(VAR4, 0x8a, 0xbf);
+VAR11 |= FUN5(VAR4, 0x8d, 0x1e);
+VAR11 |= FUN5(VAR4, 0x90, 0xf1);
+VAR11 |= FUN5(VAR4, 0x91, 0x08);
+
+if (VAR11 < 0)
+return -VAR23;
+
+
+VAR11 = FUN9(VAR2, VAR7->VAR28);
+if (VAR11 < 0)
+return -VAR23;
+
+
+VAR11 = FUN7(VAR4, VAR31);
+if (VAR11 < 0)
+return -VAR23;
+
+for (VAR10 = 0; VAR10 < 25; VAR10++) {
+VAR14 = FUN10(VAR4, 0x8c);
+if ((VAR14 & 0xee) == 0xee) {
+VAR9 = VAR32;
+break;
+}
+VAR4->VAR15++;
+if (VAR4->VAR15 == 15) {
+VAR14 = FUN10(VAR4, 0x70);
+VAR14 ^= 0x4;
+FUN5(VAR4, 0x70, VAR14);
+VAR4->VAR15 = 0;
+}
+FUN11(20);
+}
+
+if (VAR9 & VAR32) {
+VAR4->VAR30 = FUN12(VAR4);
+
+VAR14 = FUN10(VAR4, 0x65);
+}
+
+VAR4->VAR33 = VAR7->VAR27;
+VAR4->VAR28 = VAR7->VAR28;
+return 0;
+}

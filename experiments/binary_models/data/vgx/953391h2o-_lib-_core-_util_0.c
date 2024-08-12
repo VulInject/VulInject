@@ -1,0 +1,33 @@
+static VAR1 FUN1(VAR2 *VAR3, h2o_iovec_t VAR4, h2o_iovec_t VAR5, const VAR6 *VAR7,
+h2o_iovec_t VAR8, const VAR6 *VAR9, VAR1 *VAR10,
+int VAR11)
+{
+h2o_url_t VAR12, VAR13;
+
+
+if (FUN2(VAR4.VAR14, VAR4.VAR15, &VAR12) != 0)
+goto VAR16;
+
+
+if (VAR9 == NULL && VAR12.VAR17 == NULL && VAR12.VAR18.VAR14 == NULL && VAR4.VAR15 != 0 && VAR4.VAR14[0] == '') {
+return FUN3(VAR3, VAR4.VAR14, VAR4.VAR15);
+}
+
+
+h2o_url_t VAR14 = {VAR7, VAR8, {NULL}, VAR5, 65535};
+if (VAR9 != NULL) {
+VAR14.VAR17 = VAR9;
+VAR14.VAR18 = *VAR10;
+}
+FUN4(VAR3, &VAR14, &VAR12, &VAR13);
+if (VAR7 != VAR13.VAR17)
+goto VAR16;
+if (!VAR11 &&
+!FUN5(VAR8.VAR14, VAR8.VAR15, VAR13.VAR18.VAR14, VAR13.VAR18.VAR15))
+goto VAR16;
+
+return VAR13.VAR19;
+
+VAR16:
+return FUN6(NULL, 0);
+}

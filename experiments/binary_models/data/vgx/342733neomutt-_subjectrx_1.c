@@ -1,0 +1,1 @@
+static enum CommandResult FUN1 ( struct VAR1 * VAR2 , struct VAR1 * VAR3 , struct VAR4 * VAR5 , struct VAR1 * VAR6 ) { if ( ! FUN2 ( VAR3 ) ) { FUN3 ( VAR6 , FUN4 ( "" ) , "" ) ; return VAR7 ; } FUN5 ( VAR2 , VAR3 , VAR8 ) ; if ( FUN6 ( VAR2 -> VAR9 , "" ) ) { return VAR10 ; } FUN7 ( VAR5 , VAR2 -> VAR9 ) ; return VAR10 ; }

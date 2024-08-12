@@ -1,0 +1,133 @@
+static void FUN1(VAR1 *VAR2, const VAR3 *VAR4,
+uint64_t VAR5, const char *VAR6, bool VAR7)
+{
+void *VAR8;
+uint64_t VAR9, VAR10;
+unsigned long VAR11;
+int VAR12, socket;
+VAR13 *VAR14 = FUN2(VAR2);
+VAR15 *VAR16;
+uint32_t VAR17, VAR18, VAR19 = 1;
+char *VAR20, *VAR21, *VAR22, *VAR23;
+char *VAR24, *VAR25, *VAR26;
+static const char * const VAR27[2] = {
+"", ""
+};
+
+VAR8 = VAR2->VAR8 = FUN3(&VAR2->VAR28);
+if (!VAR8) {
+FUN4("");
+FUN5(1);
+}
+
+FUN6(VAR8, "", "", "");
+FUN6(VAR8, "", "", "");
+FUN7(VAR8, "", "", 0x2);
+FUN7(VAR8, "", "", 0x2);
+
+FUN8(VAR8, "");
+FUN6(VAR8, "", "", "");
+if (!FUN9()) {
+FUN10(VAR8, "", "",
+0x0, VAR4[VAR29].VAR30, 0x0, VAR4[VAR29].VAR10);
+}
+
+FUN8(VAR8, "");
+FUN11(VAR8, "", "", NULL, 0);
+FUN6(VAR8, "", "", "");
+FUN7(VAR8, "", "", 0x2);
+FUN7(VAR8, "", "", 0x2);
+
+FUN8(VAR8, "");
+FUN7(VAR8, "", "",
+VAR31);
+FUN7(VAR8, "", "", 0x0);
+FUN7(VAR8, "", "", 0x1);
+FUN8(VAR8, "");
+
+for (socket = (FUN12(VAR14) - 1); socket >= 0; socket--) {
+VAR23 = FUN13("", socket);
+FUN8(VAR8, VAR23);
+
+VAR16 =  FUN14(VAR15, VAR2->VAR32[socket].VAR33 * 4);
+
+for (VAR12 = VAR2->VAR32[socket].VAR33 - 1; VAR12 >= 0; VAR12--) {
+VAR17 = VAR19++;
+
+VAR25 = FUN13("",
+VAR2->VAR32[socket].VAR34 + VAR12);
+FUN8(VAR8, VAR25);
+if (VAR7) {
+FUN6(VAR8, VAR25, "", "");
+} else {
+FUN6(VAR8, VAR25, "", "");
+}
+VAR20 = FUN15(&VAR2->VAR32[socket].VAR35[VAR12]);
+FUN6(VAR8, VAR25, "", VAR20);
+FUN16(VAR20);
+FUN6(VAR8, VAR25, "", "");
+FUN6(VAR8, VAR25, "", "");
+FUN7(VAR8, VAR25, "",
+VAR2->VAR32[socket].VAR34 + VAR12);
+FUN6(VAR8, VAR25, "", "");
+FUN17(VAR14, VAR8, VAR25, socket);
+FUN7(VAR8, VAR25, "", VAR17);
+
+VAR26 = FUN13("", VAR25);
+FUN8(VAR8, VAR26);
+VAR18 = VAR19++;
+FUN7(VAR8, VAR26, "", VAR18);
+FUN6(VAR8, VAR26, "",
+"");
+FUN11(VAR8, VAR26, "", NULL, 0);
+FUN7(VAR8, VAR26, "", 1);
+
+VAR16[VAR12 * 4 + 0] = FUN18(VAR18);
+VAR16[VAR12 * 4 + 1] = FUN18(VAR36);
+VAR16[VAR12 * 4 + 2] = FUN18(VAR18);
+VAR16[VAR12 * 4 + 3] = FUN18(VAR37);
+
+VAR24 = FUN13("", VAR23, VAR12);
+FUN8(VAR8, VAR24);
+FUN7(VAR8, VAR24, "", VAR17);
+
+FUN16(VAR24);
+FUN16(VAR26);
+FUN16(VAR25);
+}
+
+VAR9 = VAR4[VAR38].VAR30 + FUN19(VAR14, socket);
+VAR10 = FUN20(VAR14, socket);
+VAR21 = FUN13("", (long)VAR9);
+FUN8(VAR8, VAR21);
+FUN10(VAR8, VAR21, "",
+VAR9 >> 32, VAR9, VAR10 >> 32, VAR10);
+FUN6(VAR8, VAR21, "", "");
+FUN17(VAR14, VAR8, VAR21, socket);
+FUN16(VAR21);
+
+VAR11 = VAR4[VAR39].VAR30 +
+(VAR4[VAR39].VAR10 * socket);
+VAR22 = FUN13("", VAR11);
+FUN8(VAR8, VAR22);
+FUN21(VAR8, VAR22, "",
+(char **)&VAR27, FUN22(VAR27));
+FUN10(VAR8, VAR22, "",
+0x0, VAR11, 0x0, VAR4[VAR39].VAR10);
+FUN11(VAR8, VAR22, "",
+VAR16, VAR2->VAR32[socket].VAR33 * sizeof(VAR15) * 4);
+FUN17(VAR14, VAR8, VAR22, socket);
+
+FUN16(VAR22);
+FUN16(VAR16);
+FUN16(VAR23);
+}
+
+FUN23(VAR14, VAR8);
+
+if (VAR6) {
+FUN8(VAR8, "");
+FUN6(VAR8, "", "", VAR6);
+FUN6(VAR8, "", "", "");
+}
+}

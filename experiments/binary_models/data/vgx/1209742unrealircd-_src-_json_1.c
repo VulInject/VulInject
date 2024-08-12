@@ -1,0 +1,1 @@
+const char * FUN1 ( time_t VAR1 ) { struct VAR2 * VAR2 ; static char VAR3 [ 64 ] ; if ( VAR1 == 0 ) { return NULL ; } VAR2 = FUN2 ( & VAR1 ) ; snprintf ( VAR3 , sizeof ( VAR3 ) , "" , VAR2 -> VAR4 + 1900 , VAR2 -> VAR5 + 1 , VAR2 -> VAR6 , VAR2 -> VAR7 , VAR2 -> VAR8 , VAR2 -> VAR9 , 0 ) ; return VAR3 ; }

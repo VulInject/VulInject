@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { struct VAR5 * VAR6 ; VAR6 = FUN2 ( sizeof ( * VAR6 ) , VAR7 ) ; return FUN3 ( VAR4 , VAR6 ) ; }

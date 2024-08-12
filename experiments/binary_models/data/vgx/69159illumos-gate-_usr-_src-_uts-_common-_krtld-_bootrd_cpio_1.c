@@ -1,0 +1,1 @@
+extern void FUN1 ( void * , VAR1 ) static void FUN2 ( int VAR2 ) static bool VAR3 ; static FUN3 ( , ) VAR4 = FUN4 ( VAR4 ) ; static int FUN5 ( const char * VAR5 , const char * VAR6 ) { while ( ( * VAR5 != '' ) && ( * VAR6 != '' ) && ( * VAR5 == * VAR6 ) ) { VAR5 ++ ; VAR6 ++ ; } if ( * VAR5 < * VAR6 ) { return ( - 1 ) ; } return ( 1 ) ; }

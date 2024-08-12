@@ -1,0 +1,67 @@
+int
+FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+void *VAR5)
+{
+struct VAR6 *VAR7;
+struct VAR8 *VAR9;
+int VAR10 = 0;
+
+FUN2(&VAR11);
+
+if (VAR12 == NULL) {
+if (!FUN3((void **)&VAR12,
+FUN4(struct VAR13, VAR14)))
+FUN5("");
+}
+if (VAR15 == NULL) {
+if (!FUN3((void **)&VAR15,
+FUN4(struct VAR16, VAR17)))
+FUN5("");
+}
+if (FUN6(VAR2->VAR18,
+VAR2->VAR19)) {
+VAR10 = VAR20;
+goto VAR21;
+}
+
+VAR2->VAR5 = VAR5;
+VAR2->VAR22 = VAR4->VAR23;
+if (VAR4->VAR24 & VAR25)
+VAR2->VAR26 |= VAR27;
+
+if ((VAR2->VAR26 & VAR27) == 0 &&
+!FUN7(VAR2->VAR28.VAR14)) {
+if (FUN8(
+VAR2->VAR28.VAR14) != NULL) {
+VAR10 = VAR29;
+goto VAR21;
+}
+VAR9 = FUN9(&VAR2->VAR28, &VAR2->VAR30,
+VAR12, VAR2->VAR31, VAR32);
+if (VAR9 == NULL) {
+VAR10 = VAR33;
+goto VAR21;
+}
+}
+
+FUN10(&VAR34, VAR2, VAR35);
+VAR7 = FUN11(VAR2->VAR19);
+FUN10(VAR7, VAR2, VAR36);
+switch (VAR2->VAR18) {
+case VAR37:
+case VAR38:
+VAR7 = FUN12(
+FUN13(&VAR2->VAR39.VAR40));
+FUN10(VAR7, VAR2, VAR41);
+}
+
+
+if (FUN14(VAR2, VAR35) == NULL)
+FUN15();
+VAR2->VAR42 = VAR43;
+
+VAR21:
+FUN16(&VAR11);
+
+return VAR10;
+}

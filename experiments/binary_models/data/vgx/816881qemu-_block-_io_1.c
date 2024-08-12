@@ -1,0 +1,1 @@
+int FUN1 ( void ) { BdrvNextIterator VAR1 ; VAR2 * VAR3 = NULL ; int VAR4 = 0 ; if ( FUN2 ( ) ) { return VAR4 ; } for ( VAR3 = FUN3 ( & VAR1 ) ; VAR3 ; VAR3 = FUN4 ( & VAR1 ) ) { VAR5 * VAR6 = FUN5 ( VAR3 ) ; int VAR7 ; FUN6 ( VAR6 ) ; VAR7 = FUN7 ( VAR3 ) ; if ( VAR7 < 0 && ! VAR4 ) { VAR4 = VAR7 ; } } return VAR4 ; }

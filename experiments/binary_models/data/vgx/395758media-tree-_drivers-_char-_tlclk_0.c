@@ -1,0 +1,59 @@
+static VAR1 FUN1(int VAR2, void *VAR3)
+{
+unsigned long VAR4;
+
+FUN2(&VAR5, VAR4);
+
+VAR6 = FUN3(VAR7);
+
+
+if (VAR6 & VAR8) {
+if (FUN3(VAR9) & VAR10)
+VAR11->VAR12++;
+else
+VAR11->VAR13++;
+}
+
+
+if (VAR6 & VAR14) {
+VAR11->VAR15++;
+FUN4(VAR16, 0xFE, 1);
+}
+
+if (VAR6 & VAR17) {
+if (FUN3(VAR9) & VAR18)
+VAR11->VAR12++;
+else
+VAR11->VAR19++;
+}
+
+if (VAR6 & VAR20) {
+VAR11->VAR21++;
+FUN4(VAR16, 0xFE, 0);
+}
+if (VAR6 & VAR22)
+VAR11->VAR23++;
+
+if (VAR6 & VAR24)
+VAR11->VAR25++;
+
+if (VAR6 & VAR26)
+VAR11->VAR27++;
+
+
+if (VAR6 & VAR28) {
+VAR11->VAR29++;
+
+
+VAR30.VAR31 = VAR32 + FUN5(10);
+VAR33 = FUN3(VAR16);
+VAR30.VAR34 = (unsigned long) &VAR33;
+FUN6(&VAR30, VAR30.VAR31);
+} else {
+VAR35 = 1;
+FUN7(&VAR36);
+}
+FUN8(&VAR5, VAR4);
+
+return VAR37;
+}

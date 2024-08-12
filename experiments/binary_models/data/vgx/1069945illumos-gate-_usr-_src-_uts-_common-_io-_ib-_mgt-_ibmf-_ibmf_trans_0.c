@@ -1,0 +1,63 @@
+void
+FUN1(VAR1 *VAR2, VAR3 *VAR4,
+int VAR5)
+{
+int VAR6;
+
+FUN2(VAR7, VAR8,
+VAR9, VAR10, "",
+"",
+VAR11, VAR2, VAR2, VAR11, VAR4, VAR4);
+
+if (VAR5 & VAR12) {
+FUN2(VAR7, VAR13, VAR14,
+VAR10, "", ""
+"", VAR15, VAR16,
+"",
+VAR11, VAR4, VAR4);
+
+return;
+}
+
+if (VAR5 & VAR17) {
+
+
+VAR6 = FUN3(VAR2, VAR4);
+if (VAR6 != VAR18) {
+
+FUN2(VAR7, VAR13,
+VAR14, VAR10,
+"", ""
+"", VAR15, VAR16,
+""
+"",
+VAR11, VAR4, VAR4);
+
+FUN4(&VAR4->VAR19);
+
+FUN5(VAR20, VAR4,
+VAR21);
+
+
+VAR4->VAR22 &=
+~VAR23;
+VAR4->VAR22 &=
+~VAR24;
+
+FUN6(&VAR4->VAR19);
+
+
+FUN7(VAR2, VAR4);
+} else {
+
+FUN8(VAR4);
+}
+} else {
+FUN8(VAR4);
+}
+
+FUN9(VAR7, VAR8,
+VAR25, VAR10, "",
+"",
+VAR11, VAR4, VAR4);
+}

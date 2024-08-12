@@ -1,0 +1,1 @@
+static const struct VAR1 * FUN1 ( register const char * VAR2 , register GPERF_LEN_TYPE VAR3 ) const char * FUN2 ( int VAR4 ) { if ( VAR4 < 0 ) { return VAR5 ; } if ( VAR4 >= FUN3 ( ) ) { return NULL ; } return VAR6 [ VAR4 ] ; }

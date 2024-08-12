@@ -1,0 +1,61 @@
+FUN1 (VAR1 *VAR2,
+VAR3       *VAR4,
+const VAR5  *VAR6)
+{
+VAR7             *VAR8;
+VAR9 *VAR10;
+VAR11               *VAR12 = NULL;
+
+FUN2 (FUN3 (VAR2), VAR13);
+FUN2 (FUN4 (VAR4), VAR13);
+FUN2 (VAR6 != NULL, VAR13);
+
+VAR8    = FUN5 (VAR2);
+VAR10 = FUN6 (VAR2);
+
+FUN2 (FUN7 (VAR8->VAR14) == VAR13,
+VAR13);
+
+if (! FUN8 (VAR2, VAR4, &VAR12))
+{
+FUN9 (VAR8, VAR4, VAR12->VAR15);
+
+FUN10 (VAR4->VAR16);
+FUN11 (VAR10->VAR17);
+
+FUN12 (&VAR12);
+
+return VAR18;
+}
+
+switch (VAR2->VAR19)
+{
+case VAR20:
+FUN13 (VAR8, VAR4, VAR6,
+VAR21, VAR13);
+return VAR18;
+
+case VAR22:
+case VAR23:
+{
+GimpTranslateMode VAR24;
+
+FUN14 (VAR8, VAR25, VAR4);
+
+if (VAR2->VAR19 == VAR22)
+VAR24 = VAR26;
+else
+VAR24 = VAR27;
+
+FUN13 (VAR8, VAR4, VAR6,
+VAR24, VAR13);
+
+return VAR18;
+}
+
+default:
+break;
+}
+
+return VAR13;
+}

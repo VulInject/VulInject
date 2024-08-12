@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR2 , enum VAR3 * VAR3 ) { struct VAR4 * VAR5 = FUN2 ( VAR2 -> VAR6 . VAR7 ) ; struct VAR8 * VAR9 = FUN3 ( VAR2 ) ; intel_wakeref_t VAR10 ; bool VAR11 ; VAR10 = FUN4 ( VAR5 , VAR2 -> VAR12 ) ; VAR11 = FUN5 ( VAR5 , VAR9 -> VAR13 , VAR3 ) ; FUN6 ( VAR5 , VAR2 -> VAR12 , VAR10 ) ; return VAR11 ; }

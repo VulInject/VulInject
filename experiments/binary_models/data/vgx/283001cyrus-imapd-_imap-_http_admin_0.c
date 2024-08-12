@@ -1,0 +1,220 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+int VAR3;
+struct message_guid VAR4;
+const char *VAR5;
+static time_t VAR6 = 0;
+static struct buf VAR7 = VAR8;
+struct stat VAR9;
+time_t VAR10;
+
+
+assert(!FUN2(&VAR2->VAR11));
+FUN3(VAR12, &VAR9);
+FUN4(&VAR2->VAR11, VAR13 "" VAR13 "" VAR14, VAR15,
+VAR9.VAR16, VAR9.VAR17);
+
+FUN5(&VAR4, FUN6(&VAR2->VAR11), FUN2(&VAR2->VAR11));
+VAR5 = FUN7(&VAR4);
+VAR10 = FUN8(VAR15, VAR9.VAR16);
+
+
+VAR2->VAR18.VAR19 = 1;
+VAR3 = FUN9(VAR2, VAR5, VAR10);
+
+switch (VAR3) {
+case VAR20:
+case VAR21:
+case VAR22:
+
+VAR2->VAR23.VAR5 = VAR5;
+VAR2->VAR23.VAR6 = VAR10;
+VAR2->VAR23.VAR24 = 86400;  
+VAR2->VAR18.VAR25 |= VAR26;
+
+if (VAR3 != VAR22) break;
+
+VAR27
+
+default:
+
+return VAR3;
+}
+
+if (VAR2->VAR23.VAR6 > VAR6) {
+
+ptrarray_t VAR28 = VAR29;
+ptrarray_t VAR30 = VAR29;
+unsigned VAR31 = 0;
+struct conf_rock VAR32;
+struct VAR33 *VAR34;
+int VAR35, VAR36;
+
+FUN10(&VAR7);
+FUN11(&VAR7, VAR31, VAR37);
+FUN11(&VAR7, VAR31++, "");
+FUN11(&VAR7, VAR31++, "");
+FUN11(&VAR7, VAR31, "", VAR38[3].VAR39);
+FUN11(&VAR7, --VAR31, "");
+FUN11(&VAR7, VAR31++, "");
+FUN11(&VAR7, VAR31, "",
+VAR38[3].VAR39, VAR40);
+FUN11(&VAR7, VAR31++, "");
+FUN11(&VAR7, VAR31, ""
+""
+"");
+FUN11(&VAR7, VAR31++, "");
+FUN11(&VAR7, VAR31,
+""VAR41\"");
+FUN11(&VAR7, VAR31, ""VAR41\"");
+FUN11(&VAR7, --VAR31, "");
+
+
+for (VAR35 = 1; VAR35 < VAR42; VAR35++) {
+if (VAR43[VAR35].VAR44) {
+if (VAR43[VAR35].VAR45) {
+FUN12(&VAR28, &VAR43[VAR35]);
+}
+}
+else if (VAR43[VAR35].VAR45) {
+FUN13(&VAR43[VAR35], &VAR7, VAR31);
+}
+else {
+FUN12(&VAR30, &VAR43[VAR35]);
+}
+}
+
+
+memset(&VAR32, 0, sizeof(struct VAR46));
+FUN14("", &VAR47, &VAR32.VAR48);
+
+
+FUN15(VAR49, &VAR32);
+
+
+VAR34 = VAR32.VAR48;
+while (VAR34) {
+struct VAR33 *VAR50 = VAR34->VAR50;
+free(VAR34->VAR51);
+free(VAR34);
+VAR34 = VAR50;
+}
+
+
+for (VAR36 = VAR52; VAR36 >= VAR53; VAR36--) {
+if (VAR32.VAR54[VAR36].VAR55) {
+const char *VAR56 = "";
+
+switch (VAR36) {
+case VAR53:
+VAR56 = ""; break;
+
+case VAR57:
+VAR56 = ""; break;
+
+case VAR58:
+VAR56 = ""; break;
+
+case VAR52:
+VAR56 = ""; break;
+}
+
+FUN11(&VAR7, VAR31,
+"");
+FUN11(&VAR7, VAR31++, "");
+FUN11(&VAR7, VAR31,
+""VAR41\"", VAR56);
+FUN11(&VAR7, VAR31,
+""VAR41\"");
+FUN11(&VAR7, --VAR31, "");
+
+FUN16(&VAR32.VAR54[VAR36],
+(int (*)(const void **, const void **)) &VAR59);
+for (VAR35 = 0; VAR35 < VAR32.VAR54[VAR36].VAR55; VAR35++) {
+struct VAR60 *VAR61 = FUN17(&VAR32.VAR54[VAR36], VAR35);
+tok_t VAR62;
+const char *VAR63;
+
+FUN11(&VAR7, VAR31++, "");
+FUN11(&VAR7, VAR31, "", VAR61->VAR64);
+
+FUN11(&VAR7, VAR31++, "");
+FUN18(&VAR62, VAR61->VAR63, "", VAR65|VAR66);
+while ((VAR63 = FUN19(&VAR62))) {
+FUN11(&VAR7, VAR31, "", VAR63);
+}
+FUN20(&VAR62);
+FUN11(&VAR7, --VAR31, "");
+
+FUN11(&VAR7, --VAR31, "");
+free(VAR61);
+}
+FUN21(&VAR32.VAR54[VAR36]);
+}
+}
+
+if (VAR28.VAR55) {
+
+FUN11(&VAR7, VAR31,
+"");
+FUN11(&VAR7, VAR31++, "");
+FUN11(&VAR7, VAR31,
+""VAR41\"");
+FUN11(&VAR7, VAR31,
+""VAR41\"");
+FUN11(&VAR7, --VAR31, "");
+
+for (VAR35 = 0; VAR35 < VAR28.VAR55; VAR35++) {
+struct VAR67 *VAR68 = FUN17(&VAR28, VAR35);
+
+FUN11(&VAR7, VAR31++, "");
+FUN11(&VAR7, VAR31, "",
+VAR68->VAR69);
+FUN11(&VAR7, VAR31++, "");
+FUN11(&VAR7, VAR31, "",
+VAR68->VAR44);
+if (VAR68->VAR70 != VAR71) {
+FUN11(&VAR7, VAR31, "",
+VAR43[VAR68->VAR70].VAR69);
+}
+
+FUN11(&VAR7, --VAR31, "");
+FUN11(&VAR7, --VAR31, "");
+}
+FUN21(&VAR28);
+}
+
+if (VAR30.VAR55) {
+
+FUN11(&VAR7, VAR31,
+"");
+FUN11(&VAR7, VAR31++, "");
+FUN11(&VAR7, VAR31,
+""VAR41\"");
+FUN11(&VAR7, VAR31,
+""VAR41\"");
+FUN11(&VAR7, --VAR31, "");
+
+for (VAR35 = 0; VAR35 < VAR30.VAR55; VAR35++) {
+FUN13(FUN17(&VAR30, VAR35), &VAR7, VAR31);
+}
+FUN21(&VAR30);
+}
+
+
+FUN11(&VAR7, --VAR31, "");
+
+
+FUN11(&VAR7, --VAR31, "");
+FUN11(&VAR7, --VAR31, "");
+
+
+VAR6 = VAR2->VAR23.VAR6;
+}
+
+
+VAR2->VAR23.VAR72 = "";
+FUN22(VAR3, VAR2, FUN6(&VAR7), FUN2(&VAR7));
+
+return 0;
+}

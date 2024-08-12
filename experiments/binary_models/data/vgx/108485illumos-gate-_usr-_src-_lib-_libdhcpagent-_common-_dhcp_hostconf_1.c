@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 , time_t VAR3 , time_t VAR4 ) { uint32_t VAR5 ; time_t VAR6 = VAR4 - VAR3 ; ( void ) memcpy ( & VAR5 , VAR2 -> VAR7 , VAR2 -> VAR8 ) ; if ( FUN2 ( VAR5 ) != VAR9 ) { VAR5 = FUN3 ( FUN2 ( VAR5 ) - VAR6 ) ; } ( void ) memcpy ( VAR2 -> VAR7 , & VAR5 , VAR2 -> VAR8 ) ; }

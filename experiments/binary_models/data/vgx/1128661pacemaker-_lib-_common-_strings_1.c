@@ -1,0 +1,1 @@
+char * FUN1 ( char const * VAR1 , ... ) { va_list VAR2 ; int VAR3 = 0 ; char * VAR4 ; FUN2 ( VAR2 , VAR1 ) ; VAR3 = vasprintf ( & VAR4 , VAR1 , VAR2 ) ; FUN3 ( VAR3 > 0 ) ; FUN4 ( VAR2 ) ; return VAR4 ; }

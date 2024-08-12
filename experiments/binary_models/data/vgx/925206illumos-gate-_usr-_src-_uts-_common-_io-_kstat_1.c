@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , ddi_attach_cmd_t VAR3 ) { if ( FUN2 ( VAR2 , "" , VAR4 , 0 , VAR5 , 0 ) == VAR6 ) { FUN3 ( VAR2 , NULL ) ; return ( VAR6 ) ; } VAR7 = VAR2 ; return ( VAR8 ) ; }

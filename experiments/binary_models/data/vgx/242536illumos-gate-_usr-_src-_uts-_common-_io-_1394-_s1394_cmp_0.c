@@ -1,0 +1,48 @@
+static void
+FUN1(VAR1 *VAR2, t1394_cmp_reg_t VAR3,
+VAR4 *VAR5)
+{
+VAR4	*VAR6;
+VAR7 *VAR8;
+uint_t		VAR9;
+int		VAR10 = 0;
+void		(*VAR11)(VAR12, VAR13);
+opaque_t	VAR14;
+
+FUN2(&VAR2->VAR15, VAR16);
+
+VAR17:
+VAR6 = VAR2->VAR18[VAR19].VAR20;
+
+for (; VAR6; VAR6 = VAR8->VAR21) {
+VAR8 = &VAR6->VAR22[VAR19];
+
+
+if (VAR6 == VAR5) {
+continue;
+}
+
+VAR11 = VAR8->VAR23.VAR24.VAR25.VAR26;
+if (VAR11 == NULL) {
+continue;
+}
+VAR14 = VAR8->VAR23.VAR24.VAR25.VAR27;
+
+VAR9 = FUN3(VAR2, VAR19);
+
+FUN4(&VAR2->VAR15);
+FUN5(VAR14, VAR3);
+FUN2(&VAR2->VAR15, VAR16);
+
+
+if (VAR9 != FUN3(VAR2, VAR19)) {
+if (++VAR10 <= VAR28) {
+goto VAR17;
+} else {
+break;
+}
+}
+}
+
+FUN4(&VAR2->VAR15);
+}

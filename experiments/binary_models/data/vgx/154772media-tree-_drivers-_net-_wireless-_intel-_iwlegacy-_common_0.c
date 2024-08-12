@@ -1,0 +1,26 @@
+}
+FUN1(VAR1);
+
+void
+FUN2(struct VAR2 *VAR3, u32 VAR4)
+{
+int VAR5, VAR6;
+struct VAR7 *VAR8 = &VAR3->VAR8[VAR4];
+
+if (VAR4 == VAR3->VAR9) {
+VAR5 = VAR10;
+VAR6 = VAR10 + 1;
+} else {
+VAR5 = VAR11;
+VAR6 = VAR11;
+}
+
+memset(VAR8->VAR12, 0, sizeof(struct VAR13) * VAR6);
+VAR8->VAR14 = 0;
+
+
+FUN3(VAR3, &VAR8->VAR15, VAR5, VAR4);
+
+
+VAR3->VAR16->FUN4(VAR3, VAR8);
+}

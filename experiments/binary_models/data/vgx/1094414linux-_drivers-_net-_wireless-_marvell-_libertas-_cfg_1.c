@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( struct VAR2 * VAR3 ) { int VAR4 = 0 ; struct VAR1 * VAR5 ; VAR5 = FUN2 ( sizeof ( VAR1 ) , VAR6 ) ; VAR5 -> VAR7 = FUN3 ( & VAR8 , sizeof ( VAR9 ) ) ; if ( ! VAR5 -> VAR7 ) { FUN4 ( VAR3 , "" ) ; VAR4 = - VAR10 ; VAR11 } return VAR5 ; err_wiphy_new FUN5 ( VAR5 ) ; return FUN6 ( VAR4 ) ; }

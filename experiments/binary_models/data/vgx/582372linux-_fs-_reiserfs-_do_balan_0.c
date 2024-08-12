@@ -1,0 +1,71 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+const char *VAR5, int VAR6,
+struct VAR3 *VAR7,
+struct VAR8 **VAR9)
+{
+struct VAR8 *VAR10 = FUN2(VAR2->VAR11);
+
+FUN3(VAR2->VAR12, VAR13[0]);
+
+
+if (VAR2->VAR14[0] < 0)
+return FUN4(VAR2, VAR6);
+
+VAR2->VAR15 = FUN5(VAR2->VAR11),
+VAR2->VAR16 = VAR2->VAR11->VAR16,
+VAR2->VAR17 = 0;
+if (VAR6 == VAR18 && !VAR5)
+VAR2->VAR17 = FUN6(VAR4);
+
+
+if (VAR6 != VAR18
+&& FUN7(FUN8(VAR10, VAR2->VAR15)))
+VAR2->VAR16 *= VAR19;
+
+VAR5 += FUN9(VAR2, VAR4, VAR5, VAR6);
+
+
+
+VAR2->VAR15 -= (VAR2->VAR20[0] - ((VAR2->VAR21 != -1) ? 1 : 0));
+
+FUN10(VAR2, VAR4, VAR5, VAR6);
+
+
+FUN11(VAR2->VAR22[0] > 3,
+"", VAR2->VAR22[0]);
+FUN11(VAR2->VAR22[0] < 0,
+"", VAR2->VAR22[0]);
+
+
+if (VAR2->VAR22[0] == 0) {	
+
+FUN11(!VAR2->VAR20[0] || !VAR2->VAR23[0],
+"");
+
+if (VAR2->VAR24[0]) {
+if (!VAR2->VAR25[0])
+FUN12(VAR2->VAR12, "",
+"");
+FUN13(FUN14(VAR2->VAR24[0], VAR2->VAR26[0]),
+FUN14(VAR2->VAR25[0], VAR2->VAR27[0]));
+FUN15(VAR2, VAR2->VAR24[0], 0);
+}
+
+FUN16(VAR2, VAR10);
+return 0;
+}
+
+FUN17(VAR2, VAR4, VAR5, VAR7, VAR9, VAR6);
+
+FUN18(VAR2, VAR4, VAR5, VAR6);
+
+if (VAR6 == VAR28 && VAR2->VAR14[0]) {
+FUN19("");
+FUN12(VAR2->VAR12,
+"", "",
+VAR2->VAR14[0]);
+}
+
+
+return 0;
+}

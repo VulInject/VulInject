@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { struct event VAR1 ; struct timeval VAR2 ; FUN2 ( "" ) ; write ( VAR3 [ 0 ] , VAR4 , strlen ( VAR4 ) + 1 ) ; FUN3 ( & VAR2 ) ; FUN4 ( & VAR2 ) ; FUN5 ( & VAR1 , VAR3 [ 1 ] , VAR5 , VAR6 , & VAR1 ) ; if ( FUN6 ( & VAR1 , NULL ) == - 1 ) { FUN7 ( 1 ) ; } FUN8 ( ) ; FUN9 ( ) ; }

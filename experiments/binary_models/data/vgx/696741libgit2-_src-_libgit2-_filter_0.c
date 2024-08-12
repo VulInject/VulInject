@@ -1,0 +1,28 @@
+int FUN1(
+VAR1 **VAR2,
+VAR3 *VAR4,
+int (*VAR5)(VAR3 *, void **, VAR6 *, const VAR6 *, const VAR7 *),
+VAR6 *VAR8,
+void **VAR9,
+const VAR7 *VAR10,
+VAR1 *VAR11)
+{
+struct VAR12 *VAR12 = FUN2(1, sizeof(struct VAR12));
+FUN3(VAR12);
+
+VAR12->VAR13.write = VAR14;
+VAR12->VAR13.close = VAR15;
+VAR12->VAR13.free = VAR16;
+VAR12->VAR4 = VAR4;
+VAR12->VAR5 = VAR5;
+VAR12->VAR17 = VAR8 ? VAR8 : &VAR12->VAR8;
+VAR12->VAR9 = VAR9;
+VAR12->VAR10 = VAR10;
+VAR12->VAR11 = VAR11;
+
+if (VAR8)
+FUN4(VAR8);
+
+*VAR2 = (VAR1 *)VAR12;
+return 0;
+}

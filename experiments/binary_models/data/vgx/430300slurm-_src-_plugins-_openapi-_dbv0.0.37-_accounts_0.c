@@ -1,0 +1,29 @@
+static VAR1 FUN1(VAR2 *VAR3, void *VAR4)
+{
+VAR5 *VAR6 = VAR4;
+VAR2 *VAR7 = VAR6->VAR7;
+VAR8 *VAR9;
+parser_env_t VAR10 = {
+.VAR11 = VAR6->VAR11,
+};
+
+FUN2(VAR6->VAR12 == VAR13);
+
+if (FUN3(VAR3) != VAR14) {
+FUN4(VAR7, VAR15,
+"", NULL);
+return VAR16;
+}
+
+VAR9 = xmalloc(sizeof(VAR8));
+VAR9->VAR17 = FUN5(VAR18);
+VAR9->VAR19 = FUN5(VAR20);
+
+if (FUN6(VAR21, VAR9, VAR3, VAR6->VAR7, &VAR10)) {
+FUN7(VAR9);
+return VAR16;
+} else {
+(void)FUN8(VAR6->VAR22, VAR9);
+return VAR23;
+}
+}

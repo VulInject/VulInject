@@ -1,0 +1,35 @@
+static int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+u32 VAR5 = FUN2(1U, VAR2->VAR6->VAR5);
+VAR7 *VAR8 =	VAR4->VAR8;
+u16 VAR9[1 + (VAR10 *
+VAR11 / 16U)];
+int VAR12 = 0;
+u32 VAR13 = 0U;
+u32 VAR14;
+
+memset(VAR9, 0, sizeof(VAR9));
+
+for (VAR13 = VAR10; VAR13--; ) {
+(*(VAR15 *)(VAR9 + ((VAR13 * 3U) / 16U))) |=
+((VAR8[VAR13] % VAR5) <<
+((VAR13 * 3U) & 0xFU));
+}
+
+for (VAR13 = FUN3(VAR9); VAR13--;) {
+FUN4(VAR2, VAR9[VAR13]);
+FUN5(VAR2, VAR13);
+FUN6(VAR2, 1U);
+VAR12 = FUN7(VAR16,
+VAR2, VAR14, VAR14 == 0,
+1000U, 10000U);
+if (VAR12 < 0)
+goto VAR17;
+}
+
+VAR12 = FUN8(VAR2);
+
+VAR17:
+return VAR12;
+}

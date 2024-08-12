@@ -1,0 +1,48 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = &VAR2->VAR4;
+int VAR5;
+
+if (VAR2->VAR6)
+VAR4->VAR7 = 29;
+else
+VAR4->VAR7 = VAR8;
+
+VAR4->VAR9 = 0;
+VAR4->VAR10 = 0;
+VAR4->VAR11 = 0;
+VAR4->VAR12 = 0;
+
+VAR4->VAR13 = 0;
+VAR4->VAR14 = 0;
+
+VAR2->VAR12[VAR2->VAR15[VAR16]] = 0;
+VAR2->VAR17 = 0;
+
+VAR5 = FUN2(VAR2);
+if (VAR5 != VAR18) {
+FUN3(VAR2);
+return VAR5;
+}
+
+VAR5 = FUN4(VAR2, VAR19, 0xFF, 0x40);
+if (VAR5) {
+FUN3(VAR2);
+return VAR5;
+}
+
+VAR5 = FUN4(VAR2, VAR20, VAR21 | VAR22,
+VAR21 | VAR22);
+if (VAR5) {
+FUN3(VAR2);
+return VAR5;
+}
+
+VAR5 = FUN5(VAR2, VAR16);
+if (VAR5 != VAR18) {
+FUN3(VAR2);
+return VAR23;
+}
+
+return VAR18;
+}

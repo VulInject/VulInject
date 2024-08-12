@@ -1,0 +1,93 @@
+FUN1 (struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+CORE_ADDR VAR5, VAR6;
+char *VAR7;
+int VAR8 = FUN2 (VAR4, &VAR7);
+char *VAR9 = VAR7;
+int VAR10 = 0;
+
+if (VAR8 <= 0)
+return VAR8;
+
+while (FUN3 (VAR4, &VAR9, VAR7 + VAR8, &VAR5, &VAR6) > 0)
+{
+extern int VAR11;
+const char *VAR12 = "";
+const char *VAR13 = "";
+enum { VAR14, VAR15, VAR16 } VAR17 = VAR15;
+
+switch (VAR5)
+{
+case VAR18: VAR12 = #VAR18; VAR13 = VAR19; VAR17 = VAR20; break
+FUN4 (VAR21, "", VAR15);
+FUN4 (VAR22, "", VAR15);
+FUN4 (VAR23, "", VAR14);
+FUN4 (VAR24, "", VAR15);
+FUN4 (VAR25, "", VAR14);
+FUN4 (VAR26, "", VAR14);
+FUN4 (VAR27, "", VAR14);
+FUN4 (VAR28, "", VAR15);
+FUN4 (VAR29, "", VAR15);
+FUN4 (VAR30, "", VAR15);
+FUN4 (VAR31, "", VAR14);
+FUN4 (VAR32, "", VAR14);
+FUN4 (VAR33, "", VAR14);
+FUN4 (VAR34, "", VAR14);
+FUN4 (VAR35, "", VAR14);
+FUN4 (VAR36, "", VAR14);
+FUN4 (VAR37, "", VAR16);
+FUN4 (VAR38, "", VAR15);
+FUN4 (VAR39, "", VAR14);
+FUN4 (VAR40, "", VAR14);
+FUN4 (VAR41, "", VAR14);
+FUN4 (VAR42, "", VAR14);
+FUN4 (VAR43, "", VAR14);
+FUN4 (VAR44, "", VAR15);
+FUN4 (VAR45, "", VAR15);
+FUN4 (VAR46, "", VAR14);
+FUN4 (VAR47, "", VAR14);
+FUN4 (VAR48, "", VAR14);
+FUN4 (VAR49, "", VAR14);
+FUN4 (VAR50, "", VAR14);
+FUN4 (VAR51, "", VAR15);
+FUN4 (VAR52, "", VAR15);
+FUN4 (VAR53, "", VAR16);
+FUN4 (VAR54, "", VAR14);
+FUN4 (VAR55, "", VAR16);
+FUN4 (VAR56, "", VAR15);
+FUN4 (VAR57, "", VAR14);
+FUN4 (VAR58, "", VAR16);
+FUN4 (VAR59, "", VAR15);
+FUN4 (VAR60, "", VAR14);
+FUN4 (VAR61,
+"", VAR16);
+FUN4 (VAR62, "", VAR16);
+FUN4 (VAR63, "", VAR15);
+}
+
+FUN5 (VAR2, "",
+FUN6 (VAR5), VAR12, VAR13);
+switch (VAR17)
+{
+case VAR14:
+FUN5 (VAR2, "", FUN6 (VAR6));
+break;
+case VAR15:
+FUN5 (VAR2, "", FUN7 (VAR6));
+break;
+case VAR16:
+if (VAR11)
+FUN5 (VAR2, "", FUN7 (VAR6));
+FUN8 (VAR6, -1, 1, VAR2);
+FUN5 (VAR2, "");
+break;
+}
+++VAR10;
+if (VAR5 == VAR21)
+break;
+}
+
+FUN9 (VAR7);
+
+return VAR10;
+}

@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR3 ) { struct VAR4 * VAR4 ; if ( ( VAR4 = FUN2 ( VAR2 , 0 , sizeof ( * VAR4 ) ) ) == NULL ) { FUN3 ( "" ) ; } if ( VAR2 -> VAR5 > VAR6 ) { FUN3 ( "" ) ; } VAR4 -> VAR7 = FUN4 ( ( VAR8 ) VAR2 -> VAR5 ) ; return ( 0 ) ; }

@@ -1,0 +1,1 @@
+static ssize_t FUN1 ( struct VAR1 * VAR2 , const char * VAR3 , size_t VAR4 , enum stats_track_type VAR5 ) { struct VAR6 * VAR7 = FUN2 ( VAR2 , VAR6 , VAR8 ) ; int VAR9 ; unsigned long VAR10 ; VAR9 = FUN3 ( VAR3 , 10 , & VAR10 ) ; if ( VAR9 ) { return VAR9 ; } VAR7 -> VAR11 = VAR10 ; if ( VAR10 == 0 ) { VAR7 -> VAR12 = VAR13 ; } else { VAR7 -> VAR12 = VAR5 ; } return VAR4 ; }

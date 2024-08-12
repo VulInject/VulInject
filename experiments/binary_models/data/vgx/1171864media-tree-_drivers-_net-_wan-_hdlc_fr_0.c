@@ -1,0 +1,98 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+fr_proto VAR5 *VAR6 = VAR4->VAR7.VAR8.VAR9;
+const size_t VAR10 = sizeof(VAR11);
+fr_proto VAR12;
+VAR13 *VAR14 = FUN2(VAR2);
+fr_proto_pvc VAR15;
+int VAR16;
+
+switch (VAR4->VAR7.VAR17) {
+case VAR18:
+if (FUN2(VAR2)->VAR19 != &VAR19) 
+return -VAR20;
+VAR4->VAR7.VAR17 = VAR21;
+if (VAR4->VAR7.VAR10 < VAR10) {
+VAR4->VAR7.VAR10 = VAR10; 
+return -VAR22;
+}
+if (FUN3(VAR6, &FUN4(VAR14)->VAR23, VAR10))
+return -VAR24;
+return 0;
+
+case VAR21:
+if (!FUN5(VAR25))
+return -VAR26;
+
+if (VAR2->VAR27 & VAR28)
+return -VAR29;
+
+if (FUN6(&VAR12, VAR6, VAR10))
+return -VAR24;
+
+if (VAR12.VAR30 == VAR31)
+VAR12.VAR30 = VAR32;
+
+if ((VAR12.VAR30 != VAR33 &&
+VAR12.VAR30 != VAR32 &&
+VAR12.VAR30 != VAR34 &&
+VAR12.VAR30 != VAR35) ||
+VAR12.VAR36 < 1 ||
+VAR12.VAR37 < 2 ||
+VAR12.VAR38 < 1 ||
+VAR12.VAR39 < 1 ||
+VAR12.VAR40 < VAR12.VAR39 ||
+VAR12.VAR40 > 32 ||
+(VAR12.VAR41 != 0 &&
+VAR12.VAR41 != 1))
+return -VAR20;
+
+VAR16=VAR14->FUN7(VAR2, VAR42,VAR43);
+if (VAR16)
+return VAR16;
+
+if (FUN2(VAR2)->VAR19 != &VAR19) { 
+VAR16 = FUN8(VAR2, &VAR19,
+sizeof(struct VAR44));
+if (VAR16)
+return VAR16;
+FUN4(VAR14)->VAR45 = NULL;
+FUN4(VAR14)->VAR46 = 0;
+}
+memcpy(&FUN4(VAR14)->VAR23, &VAR12, VAR10);
+VAR2->VAR17 = VAR47;
+FUN9(VAR48, VAR2);
+return 0;
+
+case VAR49:
+case VAR50:
+case VAR51:
+case VAR52:
+if (FUN2(VAR2)->VAR19 != &VAR19) 
+return -VAR20;
+
+if (!FUN5(VAR25))
+return -VAR26;
+
+if (FUN6(&VAR15, VAR4->VAR7.VAR8.VAR53,
+sizeof(VAR54)))
+return -VAR24;
+
+if (VAR15.VAR55 <= 0 || VAR15.VAR55 >= 1024)
+return -VAR20;	
+
+if (VAR4->VAR7.VAR17 == VAR51 ||
+VAR4->VAR7.VAR17 == VAR52)
+VAR16 = VAR56; 
+else
+VAR16 = VAR57;
+
+if (VAR4->VAR7.VAR17 == VAR49 ||
+VAR4->VAR7.VAR17 == VAR51)
+return FUN10(VAR2, VAR15.VAR55, VAR16);
+else
+return FUN11(VAR14, VAR15.VAR55, VAR16);
+}
+
+return -VAR20;
+}

@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , unsigned long VAR3 ) { u32 VAR4 ; VAR4 = FUN2 ( VAR5 ) ; VAR4 |= FUN3 ( VAR3 ) ; FUN4 ( VAR4 , VAR5 ) ; return 0 ; }

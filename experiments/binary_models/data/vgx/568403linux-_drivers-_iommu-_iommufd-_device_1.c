@@ -1,0 +1,1 @@
+( VAR1 , VAR2 ) ; static int FUN1 ( struct VAR3 * VAR4 , struct VAR5 * VAR6 , phys_addr_t VAR7 ) { int VAR8 ; if ( VAR7 != VAR9 && ! VAR6 -> VAR10 ) { VAR8 = FUN2 ( VAR6 -> VAR11 , VAR7 ) ; if ( VAR8 ) { return VAR8 ; } VAR6 -> VAR10 = true ; } if ( ! FUN3 ( VAR4 -> VAR12 ) ) { FUN4 ( VAR4 -> VAR13 , "" "" ""VAR14\"" ) ; } return 0 ; }

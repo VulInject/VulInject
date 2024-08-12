@@ -1,0 +1,65 @@
+static struct VAR1 *FUN1(struct VAR2 *VAR3)
+{
+struct range VAR4;
+int VAR5, VAR6, VAR7;
+resource_size_t VAR8;
+struct VAR9 *VAR10;
+struct VAR1 *VAR1;
+struct dev_dax_data VAR11;
+struct VAR12 *VAR13;
+struct VAR14 *VAR14;
+struct dev_pagemap VAR15 = { };
+struct VAR16 *VAR17;
+struct VAR18 *VAR18 = FUN2(VAR3);
+struct VAR19 *VAR19 = &VAR18->VAR19;
+struct VAR20 *VAR20 = FUN3(VAR3->VAR21);
+
+VAR17 = FUN4(VAR3);
+if (FUN5(VAR17))
+return FUN6(VAR17);
+
+
+VAR5 = FUN7(VAR3, VAR17, FUN8());
+if (VAR5)
+return FUN9(VAR5);
+VAR5 = FUN10(VAR19, &VAR15);
+if (VAR5)
+return FUN9(VAR5);
+FUN11(VAR3, VAR17);
+
+
+VAR10 = VAR19->VAR10;
+VAR8 = FUN12(VAR10->VAR22);
+VAR13 = FUN13(&VAR17->VAR3);
+if (!FUN14(VAR3, VAR13->VAR23.VAR24, VAR8,
+FUN15(&VAR17->VAR3))) {
+FUN16(VAR3, "");
+return FUN9(-VAR25);
+}
+
+VAR5 = sscanf(FUN15(&VAR17->VAR3), "", &VAR7, &VAR6);
+if (VAR5 != 2)
+return FUN9(-VAR26);
+
+
+VAR4 = VAR15.VAR4;
+VAR4.VAR24 += VAR8;
+VAR14 = FUN17(VAR3, VAR7, &VAR4,
+VAR20->VAR27, FUN18(VAR10->VAR28),
+VAR29);
+if (!VAR14)
+return FUN9(-VAR30);
+
+VAR11 = (struct VAR31) {
+.VAR14 = VAR14,
+.VAR6 = VAR6,
+.VAR15 = &VAR15,
+.VAR32 = FUN19(&VAR4),
+};
+VAR1 = FUN20(&VAR11);
+
+
+FUN21(VAR14);
+
+return VAR1;
+}

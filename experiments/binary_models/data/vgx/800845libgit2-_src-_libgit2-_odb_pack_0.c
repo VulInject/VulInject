@@ -1,0 +1,37 @@
+static int FUN1(
+VAR1 *VAR2,
+void **VAR3,
+VAR4 *VAR5,
+VAR6 *VAR7,
+VAR8 *VAR9,
+const VAR1 *VAR10,
+size_t VAR11)
+{
+struct VAR12 *VAR13 = (struct VAR12 *)VAR9;
+int VAR14 = 0;
+
+if (VAR11 < VAR15)
+VAR14 = FUN2("");
+
+else if (VAR11 >= FUN3(VAR13->VAR16.VAR17)) {
+
+VAR14 = FUN4(VAR3, VAR5, VAR7, VAR9, VAR10);
+if (!VAR14)
+FUN5(VAR2, VAR10);
+} else {
+struct git_pack_entry VAR18;
+git_rawobj VAR19 = {NULL};
+
+if ((VAR14 = FUN6(&VAR18,
+VAR13, VAR10, VAR11)) == 0 &&
+(VAR14 = FUN7(&VAR19, VAR18.VAR20, &VAR18.VAR21)) == 0)
+{
+*VAR3 = VAR19.VAR22;
+*VAR5 = VAR19.VAR11;
+*VAR7 = VAR19.VAR23;
+FUN5(VAR2, &VAR18.VAR24);
+}
+}
+
+return VAR14;
+}

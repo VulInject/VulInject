@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( VAR1 * VAR2 , int VAR3 ) { if ( VAR3 < 0 ) { VAR3 = 0 ; } if ( VAR3 > 20 ) { VAR3 = 20 ; } int VAR4 [ VAR5 ] ; FUN2 ( FUN3 ( VAR2 ) , VAR4 , sizeof ( VAR4 ) , 10 , VAR3 ) ; return FUN4 ( VAR4 ) ; }

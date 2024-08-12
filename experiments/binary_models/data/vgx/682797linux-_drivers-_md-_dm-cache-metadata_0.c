@@ -1,0 +1,46 @@
+int FUN1(struct VAR1 *VAR2, dm_cblock_t VAR3)
+{
+int VAR4;
+bool VAR5;
+__le64 VAR6 = FUN2(0, 0);
+
+FUN3(VAR2);
+FUN4(&VAR6);
+
+if (FUN5(VAR3) < FUN5(VAR2->VAR7)) {
+VAR4 = FUN6(VAR2, VAR3, VAR2->VAR7, &VAR5);
+if (VAR4) {
+FUN7(&VAR6);
+goto VAR8;
+}
+
+if (!VAR5) {
+FUN8("");
+VAR4 = -VAR9;
+FUN7(&VAR6);
+goto VAR8;
+}
+}
+
+VAR4 = FUN9(&VAR2->VAR10, VAR2->VAR11, FUN5(VAR2->VAR7),
+FUN5(VAR3),
+&VAR6, &VAR2->VAR11);
+if (VAR4)
+goto VAR8;
+
+if (FUN10(VAR2)) {
+VAR4 = FUN11(&VAR2->VAR12, VAR2->VAR13,
+FUN5(VAR2->VAR7), FUN5(VAR3),
+false, &VAR2->VAR13);
+if (VAR4)
+goto VAR8;
+}
+
+VAR2->VAR7 = VAR3;
+VAR2->VAR14 = true;
+
+VAR8:
+FUN12(VAR2);
+
+return VAR4;
+}

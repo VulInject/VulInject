@@ -1,0 +1,29 @@
+static int
+FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4, const char *VAR5)
+{
+struct VAR6 *VAR7 = VAR4->VAR8;
+int VAR9;
+
+FUN2("", VAR5);
+
+VAR7->VAR10.VAR11 = false;
+VAR7->VAR10.VAR12 = 0;
+VAR7->VAR10.VAR13 = VAR14;
+
+memset(&VAR7->VAR15, '', sizeof (VAR7->VAR15));
+VAR7->VAR15.VAR16 = VAR17;
+VAR7->VAR15.class = VAR18;
+strncpy (VAR7->VAR15.VAR5, VAR5, sizeof(VAR7->VAR15.VAR5) - 1);
+VAR7->VAR15.VAR5[sizeof(VAR7->VAR15.VAR5) - 1] = '';
+VAR7->VAR15.VAR19 = &VAR7->VAR10;
+VAR7->VAR15.VAR20.VAR21 = VAR2->VAR22.VAR23;
+
+if (FUN3(VAR4))
+FUN4(VAR4);
+VAR9 = FUN5(&VAR7->VAR15);
+if (FUN3(VAR4))
+FUN6(VAR4);
+
+return VAR9;
+}

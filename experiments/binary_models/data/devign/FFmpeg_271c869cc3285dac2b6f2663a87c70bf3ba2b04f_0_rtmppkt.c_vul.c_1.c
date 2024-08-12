@@ -1,0 +1,12 @@
+int FUN1(VAR1 *VAR2, int VAR3, RTMPPacketType VAR4, int VAR5, int VAR6)
+{
+    VAR2->VAR7 = FUN2(VAR6);
+    if (!VAR2->VAR7)
+        return FUN3(VAR8);
+    VAR2->VAR9 = VAR6;
+    VAR2->VAR3 = VAR3;
+    VAR2->VAR4 = VAR4;
+    VAR2->VAR5 = VAR5;
+    VAR2->VAR10 = 0;
+    VAR2->VAR11 = 0;
+    return 0;

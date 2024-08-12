@@ -1,0 +1,73 @@
+static int FUN1(struct VAR1 *VAR2, const char *VAR3, uint8_t VAR4, uint32_t VAR5, int VAR6, struct VAR7 *VAR8, const char *VAR9)
+{
+struct VAR10 *VAR11;
+struct VAR12 *VAR13 = NULL;
+struct VAR14 **VAR15;
+struct VAR14 *VAR16;
+int VAR17;
+size_t VAR18;
+int VAR19;
+
+VAR18 = strlen(VAR9);
+
+FUN2(VAR20, VAR8->VAR13, VAR9, VAR18, VAR13);
+if(VAR13 == NULL){
+VAR13 = FUN3(1, sizeof(struct VAR12));
+if(!VAR13){
+return VAR21;
+}
+VAR13->VAR22 = FUN4(VAR9);
+if(VAR13->VAR22 == NULL){
+FUN5(VAR13);
+return VAR21;
+}
+
+FUN6(VAR20, VAR8->VAR13, VAR13->VAR22, VAR18, VAR13);
+}
+
+VAR19 = FUN7(VAR2, VAR4, VAR5, VAR6, &VAR13->VAR15, &VAR11);
+if(VAR19 > 0){
+if(VAR13->VAR15 == NULL){
+FUN8(VAR20, VAR8->VAR13, VAR13);
+FUN5(VAR13->VAR22);
+FUN5(VAR13);
+}
+return VAR19;
+}
+
+if(VAR19 != VAR23){
+VAR18 = strlen(VAR3);
+VAR16 = FUN3(1, sizeof(struct VAR14) + VAR18 + 1);
+if(VAR16 == NULL) return VAR21;
+memcpy(VAR16->VAR24, VAR3, VAR18);
+VAR16->VAR25 = VAR8;
+VAR16->VAR13 = VAR13;
+
+for(VAR17=0; VAR17<VAR2->VAR26; VAR17++){
+if(!VAR2->VAR15[VAR17]){
+VAR2->VAR15[VAR17] = VAR16;
+break;
+}
+}
+if(VAR17 == VAR2->VAR26){
+VAR15 = FUN9(VAR2->VAR15, sizeof(struct VAR14 *)*(VAR27)(VAR2->VAR26 + 1));
+if(!VAR15){
+FUN10(VAR8, VAR13, VAR11);
+FUN5(VAR11);
+FUN5(VAR16);
+return VAR21;
+}
+VAR2->VAR15 = VAR15;
+VAR2->VAR26++;
+VAR2->VAR15[VAR2->VAR26-1] = VAR16;
+}
+VAR28.VAR29++;
+}
+
+if(VAR2->VAR30 == VAR31 || VAR2->VAR30 == VAR32){
+return VAR19;
+}else{
+
+return VAR33;
+}
+}

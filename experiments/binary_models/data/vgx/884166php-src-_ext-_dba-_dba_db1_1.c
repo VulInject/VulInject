@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * VAR2 = VAR3 -> VAR4 ; DBT VAR5 ; DBT VAR6 ; memset ( & VAR5 , 0 , sizeof ( VAR5 ) ) ; memset ( & VAR6 , 0 , sizeof ( VAR6 ) ) ; return NULL ; }

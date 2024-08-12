@@ -1,0 +1,1 @@
+void FUN1 ( ) { struct VAR1 * VAR2 , * VAR3 ; __s32 VAR4 ; if ( ! VAR5 . VAR6 ) { FUN2 ( ) ; return ; } VAR2 = FUN3 ( ) ; if ( ! FUN4 ( VAR2 , "" ) ) { return ; } VAR3 = FUN5 ( VAR7 , VAR2 ) ; if ( ! FUN4 ( VAR3 , "" ) ) { VAR8 } VAR4 = FUN6 ( VAR3 , VAR9 ) ; FUN7 ( VAR4 , 0 , "" ) ; cleanup FUN8 ( VAR2 ) ; }

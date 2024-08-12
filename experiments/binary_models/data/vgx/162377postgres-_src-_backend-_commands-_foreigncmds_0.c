@@ -1,0 +1,29 @@
+static VAR1
+FUN1(VAR2 *VAR3)
+{
+VAR4 *VAR5 = NULL;
+VAR6   *VAR7;
+
+FUN2(VAR7, VAR3)
+{
+VAR8    *VAR9 = FUN3(VAR7);
+const char *VAR10;
+Size		VAR11;
+VAR12	   *VAR13;
+
+VAR10 = FUN4(VAR9);
+VAR11 = VAR14 + strlen(VAR9->VAR15) + 1 + strlen(VAR10);
+VAR13 = FUN5(VAR11 + 1);
+FUN6(VAR13, VAR11);
+sprintf(FUN7(VAR13), "", VAR9->VAR15, VAR10);
+
+VAR5 = FUN8(VAR5, FUN9(VAR13),
+false, VAR16,
+VAR17);
+}
+
+if (VAR5)
+return FUN10(VAR5, VAR17);
+
+return FUN9(NULL);
+}

@@ -1,0 +1,13 @@
+static VAR1 FUN1(VAR2 *VAR3, VAR4 *VAR5, int64_t VAR6, int VAR7)
+{
+    const VAR8 *VAR9 = FUN2(VAR5->VAR10->VAR11->VAR12, VAR5->VAR10->VAR11->VAR13, VAR5->VAR10->VAR11->VAR14, VAR5->VAR10->VAR11->VAR15);
+    int64_t VAR16;
+    int64_t VAR17 = FUN3(VAR3->VAR18) - VAR3->VAR19->VAR20;
+    int64_t VAR21 = ((VAR17 - 1) / VAR9->VAR22) * VAR9->VAR22;
+    VAR16 = VAR9->VAR22 * VAR6;
+    if (VAR17 >= 0 && VAR16 > VAR21)
+        VAR16 = VAR21;
+    else if (VAR16 < 0)
+        VAR16 = 0;
+    return VAR16 + VAR3->VAR19->VAR20;
+}

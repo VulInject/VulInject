@@ -1,0 +1,137 @@
+static VAR1
+FUN1(xmlRelaxNGParserCtxtPtr VAR2, const VAR3 * VAR4,
+xmlNodePtr VAR5, const VAR3 * VAR6)
+{
+xmlRelaxNGIncludePtr VAR7 = NULL;
+xmlDocPtr VAR8;
+int VAR9;
+xmlNodePtr VAR10, VAR11;
+
+FUN2(VAR12,
+"", VAR4);
+
+
+for (VAR9 = 0; VAR9 < VAR2->VAR13; VAR9++) {
+if (FUN3(VAR2->VAR14[VAR9]->VAR15, VAR4)) {
+FUN4(VAR2, NULL, VAR16,
+"", VAR4,
+NULL);
+return (NULL);
+}
+}
+
+
+VAR8 = FUN5((const char *) VAR4,NULL,0);
+if (VAR8 == NULL) {
+FUN4(VAR2, VAR5, VAR17,
+"", VAR4, NULL);
+return (NULL);
+}
+FUN2(VAR12, "", VAR4);
+
+
+VAR7 = (VAR1) FUN6(sizeof(VAR18));
+if (VAR7 == NULL) {
+FUN7(VAR2, "");
+FUN8(VAR8);
+return (NULL);
+}
+memset(VAR7, 0, sizeof(VAR18));
+VAR7->VAR8 = VAR8;
+VAR7->VAR15 = FUN9(VAR4);
+VAR7->VAR19 = VAR2->VAR20;
+VAR2->VAR20 = VAR7;
+
+
+if (VAR6 != NULL) {
+VAR10 = FUN10(VAR8);
+if (VAR10 != NULL) {
+if (FUN11(VAR10, VAR21 "") == NULL) {
+FUN12(VAR10, VAR21 "", VAR6);
+}
+}
+}
+
+
+FUN13(VAR2, VAR7);
+
+
+FUN2(VAR12, "", VAR4);
+
+VAR8 = FUN14(VAR2, VAR8);
+if (VAR8 == NULL) {
+VAR2->VAR22 = NULL;
+return (NULL);
+}
+
+
+FUN15(VAR2);
+
+FUN2(VAR12, "", VAR4);
+
+VAR10 = FUN10(VAR8);
+if (VAR10 == NULL) {
+FUN4(VAR2, VAR5, VAR23,
+"", VAR4,
+NULL);
+return (NULL);
+}
+if (!FUN16(VAR10, "")) {
+FUN4(VAR2, VAR5, VAR24,
+"",
+VAR4, NULL);
+return (NULL);
+}
+
+
+VAR11 = VAR5->VAR25;
+while (VAR11 != NULL) {
+if (FUN16(VAR11, "")) {
+int VAR26 = 0;
+
+VAR26 =
+FUN17(VAR2, VAR4, VAR10->VAR25, NULL);
+if (!VAR26) {
+FUN4(VAR2, VAR5, VAR27,
+"",
+VAR4, NULL);
+}
+} else if (FUN16(VAR11, "")) {
+VAR3 *VAR28;
+
+VAR28 = FUN18(VAR11, VAR21 "");
+if (VAR28 == NULL) {
+FUN4(VAR2, VAR5, VAR29,
+"",
+VAR4, NULL);
+} else {
+int VAR26;
+
+FUN19(VAR28);
+VAR26 = FUN17(VAR2, VAR4,
+VAR10->VAR25, VAR28);
+if (!VAR26) {
+FUN4(VAR2, VAR5, VAR30,
+"",
+VAR4, VAR28);
+}
+FUN20(VAR28);
+}
+}
+if (FUN16(VAR11, "") && VAR11->VAR25 != NULL) {
+VAR11 = VAR11->VAR25;
+} else {
+if (VAR11->VAR19 != NULL) {
+VAR11 = VAR11->VAR19;
+} else {
+while (VAR11->VAR31 != VAR5 && VAR11->VAR31->VAR19 == NULL) {
+VAR11 = VAR11->VAR31;
+}
+VAR11 = VAR11->VAR31 != VAR5 ? VAR11->VAR31->VAR19 : NULL;
+}
+}
+}
+
+
+return (VAR7);
+}

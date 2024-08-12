@@ -1,0 +1,22 @@
+VAR1 *FUN1(VAR2 *VAR3, bool VAR4)
+{
+    VAR1 *VAR5;
+    if (VAR3 && FUN2(VAR3))
+    {
+        fprintf(VAR6, "");
+        return NULL;
+    }
+    VAR5 = (VAR1 *)FUN3(sizeof(VAR1));
+    VAR5->VAR7 = FUN4(VAR3, 512);
+    VAR5->VAR8 = VAR4;
+    VAR5->VAR9 = true;
+    VAR5->VAR3 = VAR3;
+    FUN5(VAR5);
+    if (VAR5->VAR3)
+    {
+        FUN6(VAR5->VAR3, VAR5);
+        FUN7(VAR5->VAR3, &VAR10, VAR5);
+    }
+    FUN8(NULL, -1, &VAR11, VAR5);
+    return VAR5;
+}

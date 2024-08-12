@@ -1,0 +1,53 @@
+static void FUN1(void **VAR1) {
+FUN2(VAR1);
+
+TPM2B_PUBLIC VAR2 = { 0 };
+
+bool VAR3 = FUN3("", &VAR2);
+FUN4(VAR3);
+
+VAR3 = FUN3("", &VAR2);
+FUN4(VAR3);
+
+VAR3 = FUN3("", &VAR2);
+FUN4(VAR3);
+
+VAR3 = FUN3("", &VAR2);
+FUN4(VAR3);
+
+VAR3 = FUN3("", &VAR2);
+FUN4(VAR3);
+
+VAR3 = FUN3("", &VAR2);
+FUN4(VAR3);
+
+VAR3 = FUN3("", &VAR2);
+FUN4(VAR3);
+
+VAR3 = FUN3("", &VAR2);
+FUN4(VAR3);
+
+VAR3 = FUN3("", &VAR2);
+FUN4(VAR3);
+
+VAR3 = FUN3("", &VAR2);
+FUN4(VAR3);
+
+VAR3 = FUN3("", &VAR2);
+FUN4(VAR3);
+
+VAR3 = FUN3("", &VAR2);
+FUN4(VAR3);
+
+VAR3 = FUN3("", &VAR2);
+FUN4(VAR3);
+
+VAR3 = FUN3("", &VAR2);
+FUN4(VAR3);
+
+VAR3 = FUN3("", &VAR2);
+FUN4(VAR3);
+
+VAR3 = FUN3("", &VAR2);
+FUN4(VAR3);
+}

@@ -1,0 +1,77 @@
+int
+FUN1(void *VAR1)
+{
+struct VAR2	*VAR3;
+struct VAR4		*VAR5;
+u_int32_t		VAR6;
+int			VAR7 = 0;
+
+VAR3 = VAR1;
+VAR5 = &VAR3->VAR8.VAR9;
+
+
+if (!(VAR5->VAR10 & VAR11)) {
+FUN2(VAR3);
+return (0);
+}
+
+
+FUN3(VAR3, VAR12, 0);
+
+
+if(VAR3->VAR13)
+FUN3(VAR3, VAR14, FUN4(VAR3, VAR14)
+| VAR15);
+
+for (;;) {
+
+VAR6 = FUN4(VAR3, VAR16);
+
+if ((VAR6 & VAR17) == 0)
+break;
+
+VAR7 = 1;
+
+if ((VAR6 & VAR18) ||
+(VAR6 & VAR19) ||
+(VAR6 & VAR20) ||
+(VAR6 & VAR21))
+FUN5(VAR3);
+
+if ((VAR6 & VAR22) ||
+(VAR6 & VAR23) ||
+(VAR6 & VAR24) ||
+(VAR6 & VAR25) ||
+(VAR6 & VAR26) ||
+(VAR6 & VAR27))
+FUN6(VAR3);
+
+if ((VAR6 & VAR26))
+FUN7(VAR3, VAR28, VAR29);
+
+if (VAR6 & VAR30) {
+FUN8(VAR3);
+VAR5->VAR10 &= ~VAR31;
+FUN9(VAR3);
+}
+
+
+if (VAR6 & VAR32) {
+VAR3->VAR33 = 0;
+FUN10(VAR3);
+}
+}
+
+
+FUN3(VAR3, VAR12, 1);
+
+if (!FUN11(&VAR5->VAR34))
+FUN12(VAR5);
+
+
+if(VAR3->VAR13)
+FUN3(VAR3, VAR14, FUN4(VAR3, VAR14)
+& ~VAR15);
+
+return VAR7;
+}

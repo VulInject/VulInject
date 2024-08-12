@@ -1,0 +1,1 @@
+static char * FUN1 ( register char * VAR1 ) { register int VAR2 ; if ( * VAR1 == '' ) { VAR1 ++ ; } VAR2 = 0 ; for ( ; ; ) { switch ( * VAR1 ++ ) { case 0 : break ; case '' : VAR2 ++ ; continue ; case '' : continue ; case '' : if ( ! VAR2 ) { break ; } continue ; default : continue ; } break ; } return VAR1 - 1 ; }

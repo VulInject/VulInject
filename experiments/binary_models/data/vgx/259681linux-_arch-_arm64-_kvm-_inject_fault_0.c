@@ -1,0 +1,29 @@
+static void FUN1(struct VAR1 *VAR2, bool VAR3, u32 VAR4)
+{
+u64 VAR5;
+u32 VAR6;
+
+
+if (FUN2(VAR2, VAR7) & VAR8) {
+VAR6 = VAR9 | VAR10;
+} else {
+
+VAR6 = VAR11;
+}
+
+VAR5 = FUN2(VAR2, VAR12);
+
+if (VAR3) {
+FUN3(VAR2, VAR13);
+VAR5 &= FUN4(31, 0);
+VAR5 |= (VAR14)VAR4 << 32;
+FUN5(VAR2, VAR6, VAR15);
+} else { 
+FUN3(VAR2, VAR16);
+VAR5 &= FUN4(63, 32);
+VAR5 |= VAR4;
+FUN5(VAR2, VAR6, VAR17);
+}
+
+FUN5(VAR2, VAR5, VAR12);
+}

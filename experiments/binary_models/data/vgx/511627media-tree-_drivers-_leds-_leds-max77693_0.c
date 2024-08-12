@@ -1,0 +1,37 @@
+static int FUN1(struct VAR1 *VAR2,
+enum led_brightness VAR3)
+{
+struct VAR4 *VAR5 = FUN2(VAR2);
+struct VAR6 *VAR7 = FUN3(VAR5);
+struct VAR8 *VAR9 = FUN4(VAR7);
+int VAR10 = VAR7->VAR10, VAR11;
+
+FUN5(&VAR9->VAR12);
+
+if (VAR3 == 0) {
+VAR11 = FUN6(VAR9, FUN7(VAR10));
+if (VAR11 < 0)
+FUN8(&VAR9->VAR13->VAR14,
+"",
+VAR11);
+goto VAR15;
+}
+
+VAR11 = FUN9(VAR9, VAR10, VAR3 * VAR16);
+if (VAR11 < 0) {
+FUN8(&VAR9->VAR13->VAR14,
+"",
+VAR11);
+goto VAR15;
+}
+
+VAR11 = FUN10(VAR9, FUN7(VAR10));
+if (VAR11 < 0)
+FUN8(&VAR9->VAR13->VAR14,
+"",
+VAR11);
+VAR15:
+FUN11(&VAR9->VAR12);
+
+return VAR11;
+}

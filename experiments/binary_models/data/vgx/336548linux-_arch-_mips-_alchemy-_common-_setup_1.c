@@ -1,0 +1,1 @@
+phys_addr_t FUN1 ( phys_addr_t VAR1 , phys_addr_t VAR2 ) { cfs_time_t VAR3 = VAR4 ; unsigned long VAR5 = VAR6 ; if ( ( VAR1 >> 32 ) != 0 ) { return VAR1 ; } if ( VAR1 >= VAR3 && ( VAR1 + VAR2 - 1 ) <= VAR5 ) { return ( VAR7 ) ( VAR8 + VAR1 ) ; } return VAR1 ; }

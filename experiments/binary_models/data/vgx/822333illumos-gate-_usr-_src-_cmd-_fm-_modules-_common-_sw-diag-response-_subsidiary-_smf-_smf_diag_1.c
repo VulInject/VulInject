@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 ) { VAR5 * VAR6 ; VAR7 * VAR8 ; uint32_t VAR9 ; int VAR10 ; VAR6 = FUN2 ( VAR2 , VAR4 , & VAR9 ) ; if ( VAR6 == NULL || VAR9 != 1 ) { return ( 0 ) ; } switch ( FUN3 ( VAR2 , VAR8 ) ) { case VAR11 : VAR10 = 1 ; break ; default : VAR10 = 0 ; break ; } FUN4 ( VAR8 ) ; return ( VAR10 ) ; }

@@ -1,0 +1,10 @@
+static VAR1 FUN1(struct VAR2 *VAR3, int VAR4)
+{
+mrb_value VAR5 = VAR3->VAR6;
+assert(!FUN2(VAR5));
+VAR3->VAR6 = FUN3();
+FUN4(VAR3->VAR7->VAR3->VAR8->VAR9, VAR5);
+if (VAR4)
+FUN5(VAR3->VAR7->VAR3->VAR8->VAR9, VAR5);
+return VAR5;
+}

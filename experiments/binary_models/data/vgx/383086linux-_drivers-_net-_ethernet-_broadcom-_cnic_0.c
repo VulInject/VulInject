@@ -1,0 +1,66 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4[],
+u32 VAR5, int *VAR6)
+{
+struct VAR7 *VAR8;
+struct VAR9 *VAR10;
+struct VAR11 *VAR12 = VAR2->VAR13;
+struct VAR14 *VAR15 = FUN2(VAR2->VAR16);
+struct VAR17 *VAR18;
+struct iscsi_kcqe VAR19;
+struct VAR19 *VAR20[1];
+u32 VAR21;
+int VAR22 = 0;
+
+if (VAR5 < 2) {
+*VAR6 = VAR5;
+return -VAR23;
+}
+
+VAR8 = (struct VAR7 *) VAR4[0];
+VAR10 = (struct VAR9 *) VAR4[1];
+if ((VAR5 - 2) < VAR10->VAR24) {
+*VAR6 = VAR5;
+return -VAR23;
+}
+*VAR6 = 2 + VAR10->VAR24;
+
+VAR21 = VAR8->VAR25;
+if (VAR21 >= VAR26)
+return -VAR23;
+
+memset(&VAR19, 0, sizeof(VAR19));
+VAR19.VAR27 = VAR28;
+VAR19.VAR25 = VAR21;
+VAR19.VAR29 = VAR30;
+
+VAR18 = &VAR12->VAR31[VAR21];
+if (FUN3(VAR32, &VAR18->VAR33)) {
+VAR19.VAR29 =
+VAR34;
+goto VAR35;
+}
+
+if (FUN4(&VAR12->VAR36) > VAR2->VAR37) {
+FUN5(&VAR12->VAR36);
+goto VAR35;
+}
+VAR22 = FUN6(VAR2, VAR21);
+if (VAR22) {
+FUN5(&VAR12->VAR36);
+goto VAR35;
+}
+VAR22 = FUN7(VAR2, VAR4, VAR5);
+if (VAR22 < 0) {
+FUN8(VAR2, VAR21);
+FUN5(&VAR12->VAR36);
+goto VAR35;
+}
+
+VAR19.VAR29 = VAR38;
+VAR19.VAR39 = FUN9(VAR15, VAR12->VAR31[VAR21].VAR40);
+
+VAR35:
+VAR20[0] = (struct VAR19 *) &VAR19;
+FUN10(VAR2, VAR41, VAR20, 1);
+return 0;
+}

@@ -1,0 +1,1 @@
+static size_t FUN1 ( const char * VAR1 , const size_t VAR2 , struct VAR3 * VAR4 , const size_t VAR5 ) { struct VAR6 * VAR7 = ( VAR6 * ) VAR4 ; VAR8 * VAR9 = ( VAR8 * ) & VAR7 -> VAR10 . VAR11 ; if ( VAR2 > VAR12 || VAR5 < sizeof ( VAR6 ) ) { return 0 ; } if ( FUN2 ( VAR1 , VAR2 , VAR9 , '' , NULL ) == 0 ) { return 0 ; } VAR7 -> VAR13 = VAR14 ; return sizeof ( VAR6 ) ; }

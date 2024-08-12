@@ -1,0 +1,114 @@
+int
+FUN1(struct VAR1 *VAR2
+, enum isakmp_xchg_types VAR3
+, notification_t VAR4
+, VAR5 *VAR6)
+
+{
+struct VAR7 *VAR8;
+struct ikev2_generic VAR9;
+unsigned char *VAR10;
+pb_stream      VAR11, VAR12;
+unsigned char *VAR13;
+int            VAR14;
+stf_status     VAR15;
+unsigned char *VAR16;
+
+VAR8 = VAR2->VAR8;
+if (!VAR8) {
+FUN2(""
+, FUN3(&VAR17, VAR3)
+, FUN3(&VAR18, VAR4));
+return VAR19;
+}
+
+FUN4(&VAR9);
+FUN4(&VAR11);
+FUN4(&VAR12);
+
+
+VAR16 = VAR20.VAR21;
+
+
+FUN4(VAR22);
+FUN5(&VAR20, VAR22, sizeof(VAR22), "");
+
+FUN2(""
+, FUN3(&VAR17, VAR3)
+, FUN3(&VAR18, VAR4)
+, FUN6(&VAR8->VAR23)
+, VAR8->VAR24);
+
+
+{
+struct isakmp_hdr VAR25 = VAR2->VAR26;
+
+VAR25.VAR27 = VAR28 << VAR29 | VAR30;
+VAR25.VAR31    = VAR32;
+VAR25.VAR33  = VAR3;
+
+
+VAR25.VAR34 = VAR35|VAR36|FUN7(VAR8);
+VAR25.VAR37 = FUN8(VAR8->VAR38);
+memcpy(VAR25.VAR39, VAR8->VAR40, VAR41);
+memcpy(VAR25.VAR42, VAR8->VAR43, VAR41);
+if (!FUN9(&VAR25, &VAR44, &VAR20, &VAR2->VAR45))
+return VAR19;
+}
+
+VAR9.VAR46 = VAR47;
+FUN10(&VAR2->VAR45, VAR32);
+if(!FUN9(&VAR9, &VAR48, &VAR2->VAR45, &VAR11)) {
+return VAR19;
+}
+
+
+VAR13     = VAR11.VAR21;
+VAR14 = VAR8->VAR49.VAR50->VAR51;
+if(!FUN11(VAR14, &VAR11, "")) {
+return VAR19;
+}
+FUN12(VAR13, VAR14);
+
+
+FUN13(&VAR11, &VAR12, "");
+VAR10 = VAR12.VAR21;
+
+
+VAR15 = FUN14 (VAR52, VAR47, VAR53,
+NULL, VAR4, VAR6, &VAR12);
+if (!VAR15)
+return VAR19;
+
+
+FUN15(VAR2, &VAR12);
+FUN16(&VAR12);
+
+{
+enum phase1_role VAR54;
+unsigned char *VAR55 = FUN17(VAR2, &VAR11);
+
+if(VAR55 == NULL || VAR55 < VAR10) return VAR19;
+
+FUN16(&VAR11);
+FUN16(&VAR2->VAR45);
+FUN16(&VAR20);
+
+VAR54 = FUN18(VAR8) ? VAR56 : VAR57;
+VAR15 = FUN19(VAR2, VAR54,
+VAR16,
+VAR13, VAR10, VAR55,
+&VAR11, &VAR12);
+
+if(VAR15 != VAR58) return VAR15;
+}
+
+
+FUN20(VAR8->VAR59);
+FUN21(VAR8->VAR59, VAR20.VAR60, FUN22(&VAR20)
+, "");
+
+FUN23(VAR8, VAR61, VAR62);
+
+return VAR58;
+}

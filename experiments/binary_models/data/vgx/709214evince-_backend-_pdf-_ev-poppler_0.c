@@ -1,0 +1,12 @@
+FUN1 (VAR1 *VAR2,
+VAR3     *VAR4)
+{
+char *VAR5 = NULL;
+
+FUN2 (FUN3 (VAR4->VAR6), NULL);
+
+FUN4 (FUN5 (VAR4->VAR6),
+"", &VAR5,
+NULL);
+return VAR5;
+}

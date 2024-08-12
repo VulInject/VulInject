@@ -1,0 +1,1 @@
+static int FUN1 ( int VAR1 ) { int VAR2 ; if ( VAR1 != VAR3 ) { return 0 ; } for ( VAR2 = 0 ; VAR2 < VAR4 ; VAR2 ++ ) { if ( FUN2 ( VAR5 , "" , 1 , VAR6 , NULL , 1 ) < 0 ) { FUN3 ( "" , VAR2 ) ; return - 1 ; } } if ( ( VAR7 > 0 ) && FUN4 ( VAR5 , "" , 1 , VAR8 , NULL , 1000 * VAR7 ) < 0 ) { FUN3 ( "" , VAR2 ) ; return - 1 ; } return 0 ; }

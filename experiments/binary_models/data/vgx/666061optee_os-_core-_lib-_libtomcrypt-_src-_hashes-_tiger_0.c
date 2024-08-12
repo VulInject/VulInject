@@ -1,0 +1,41 @@
+int FUN1(VAR1 * VAR2, unsigned char *VAR3)
+{
+FUN2(VAR2  != NULL);
+FUN2(VAR3 != NULL);
+
+if (VAR2->VAR4.VAR5 >= sizeof(VAR2->VAR4.VAR6)) {
+return VAR7;
+}
+
+
+VAR2->VAR4.VAR8 += VAR2->VAR4.VAR5 * 8;
+
+
+VAR2->VAR4.VAR6[VAR2->VAR4.VAR5++] = (unsigned char)0x01;
+
+
+if (VAR2->VAR4.VAR5 > 56) {
+while (VAR2->VAR4.VAR5 < 64) {
+VAR2->VAR4.VAR6[VAR2->VAR4.VAR5++] = (unsigned char)0;
+}
+FUN3(VAR2, VAR2->VAR4.VAR6);
+VAR2->VAR4.VAR5 = 0;
+}
+
+
+while (VAR2->VAR4.VAR5 < 56) {
+VAR2->VAR4.VAR6[VAR2->VAR4.VAR5++] = (unsigned char)0;
+}
+
+
+FUN4(VAR2->VAR4.VAR8, VAR2->VAR4.VAR6+56);
+FUN3(VAR2, VAR2->VAR4.VAR6);
+
+
+FUN4(VAR2->VAR4.VAR9[0], &VAR3[0]);
+FUN4(VAR2->VAR4.VAR9[1], &VAR3[8]);
+FUN4(VAR2->VAR4.VAR9[2], &VAR3[16]);
+FUN5(VAR2, sizeof(VAR1));
+
+return VAR10;
+}

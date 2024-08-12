@@ -1,0 +1,51 @@
+FUN1 (const void *VAR1, void *VAR2,
+struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6;
+struct VAR7 *VAR8;
+struct VAR9 *VAR10, *VAR11, *VAR12;
+
+
+(void) VAR1;
+(void) VAR2;
+
+VAR6 = FUN2 (VAR4->VAR13);
+if (VAR6)
+{
+
+if (VAR6 == VAR14)
+{
+VAR14 = VAR6->VAR15;
+VAR14->VAR16 = NULL;
+}
+if (VAR6 == VAR17)
+{
+VAR17 = VAR6->VAR16;
+VAR17->VAR15 = NULL;
+}
+if (VAR6->VAR16)
+(VAR6->VAR16)->VAR15 = VAR6->VAR15;
+if (VAR6->VAR15)
+(VAR6->VAR15)->VAR16 = VAR6->VAR16;
+
+FUN3 (VAR6);
+
+for (VAR8 = VAR18; VAR8; VAR8 = VAR8->VAR19)
+{
+VAR10 = VAR8->VAR10;
+VAR8->VAR10 = NULL;
+VAR8->VAR20 = NULL;
+VAR11 = VAR10;
+while (VAR11)
+{
+VAR12 = VAR11->VAR21;
+
+FUN4 (VAR11, VAR8);
+
+VAR11 = VAR12;
+}
+}
+
+FUN5 (1);
+}
+}

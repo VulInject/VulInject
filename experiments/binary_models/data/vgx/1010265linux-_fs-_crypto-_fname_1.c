@@ -1,0 +1,1 @@
+int FUN1 ( u32 VAR1 , struct VAR2 * VAR3 ) { u32 VAR4 = FUN2 ( VAR5 , VAR6 , VAR1 ) ; VAR3 -> VAR7 = FUN3 ( VAR4 + 1 , VAR8 ) ; VAR3 -> VAR9 = VAR4 ; return 0 ; }

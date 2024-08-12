@@ -1,0 +1,14 @@
+static void FUN1(VAR1 *VAR2)
+{
+    uint32_t VAR3;
+    int VAR4;
+    VAR3 = FUN2(VAR2->VAR5, VAR6.VAR7.VAR8);
+    VAR4 = FUN3(VAR3, VAR9);
+    VAR2->VAR10 = FUN3(VAR3, VAR11);
+    VAR2->VAR12 = FUN3(VAR3, VAR13);
+    FUN4("", VAR2->VAR12, VAR4, VAR2->VAR10);
+    if (VAR2->VAR14)
+    {
+        FUN5(FUN6(VAR2->VAR15)->VAR16, VAR4, VAR2->VAR12, VAR2->VAR12, 0, 0);
+    }
+}

@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( VAR1 * VAR2 ) { if ( ! VAR2 ) { return NULL ; } return FUN1 ( VAR2 -> VAR3 ) ; }

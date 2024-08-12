@@ -1,0 +1,1 @@
+int FUN1 ( void ) { static const struct i915_subtest VAR1 [ ] { FUN2 ( VAR2 ) } ; ; struct VAR3 * VAR4 ; int VAR5 ; VAR4 = FUN3 ( ) ; if ( ! VAR4 ) { return - VAR6 ; } VAR5 = FUN4 ( VAR1 , VAR4 ) ; return VAR5 ; }

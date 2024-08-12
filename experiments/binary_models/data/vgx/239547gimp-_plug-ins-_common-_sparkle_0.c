@@ -1,0 +1,254 @@
+FUN1 (VAR1 *VAR2,
+VAR3  *VAR4)
+{
+VAR5         *VAR6;
+VAR5         *VAR7;
+VAR8 *VAR9;
+const VAR10         *VAR11;
+gint                VAR12, VAR13;
+gdouble             VAR14, VAR15, VAR16, VAR17;
+gint                VAR18, VAR19;
+gint                VAR20, VAR21, VAR22, VAR23;
+gint                VAR24, VAR25;
+gint                VAR26;
+gint                VAR27, VAR28, VAR29, VAR30;
+gboolean            VAR31, VAR32;
+gint                VAR33;
+gint                VAR34;
+VAR35              *VAR36;
+VAR37             *VAR38 = NULL;
+
+VAR31 = FUN2 (VAR2);
+VAR32 = FUN3 (VAR2);
+
+if (VAR31)
+{
+if (VAR32)
+VAR11 = FUN4 ("");
+else
+VAR11 = FUN4 ("");
+}
+else
+{
+if (VAR32)
+VAR11 = FUN4 ("");
+else
+VAR11 = FUN4 ("");
+}
+
+VAR34 = FUN5 (VAR11);
+
+VAR33 = (VAR32) ? VAR34 - 1 : VAR34;
+
+if (VAR4)
+{
+FUN6 (VAR4, &VAR20, &VAR21);
+FUN7 (VAR4, &VAR24, &VAR25);
+
+VAR22 = VAR20 + VAR24;
+VAR23 = VAR21 + VAR25;
+VAR38 = FUN8 (VAR37, VAR24 * VAR25 * VAR34);
+}
+else
+{
+if (! FUN9 (VAR2,
+&VAR20, &VAR21, &VAR24, &VAR25))
+return;
+
+VAR22 = VAR20 + VAR24;
+VAR23 = VAR21 + VAR25;
+}
+
+if (VAR24 < 1 || VAR25 < 1)
+return;
+
+VAR12  = FUN10  (VAR2);
+VAR13 = FUN11 (VAR2);
+
+VAR36 = FUN12 ();
+
+if (VAR39.VAR40)
+{
+VAR41 = 2 * (VAR24 + VAR25);
+VAR26 = 255;
+}
+else
+{
+
+VAR26 = FUN13 (VAR2, VAR39.VAR42);
+}
+
+
+VAR18 = 0;
+VAR19 = VAR41;
+
+
+VAR6  = FUN14 (VAR2);
+VAR7 = FUN15 (VAR2);
+
+VAR9 = FUN16 (VAR6,
+FUN17 (VAR20, VAR21, VAR24, VAR25), 0,
+VAR11,
+VAR43, VAR44, 2);
+
+FUN18 (VAR9, VAR7,
+FUN17 (VAR20, VAR21, VAR24, VAR25), 0,
+VAR11,
+VAR45, VAR44);
+
+while (FUN19 (VAR9))
+{
+GeglRectangle  VAR46 = VAR9->VAR47[0].VAR46;
+const VAR37  *VAR48,  *VAR49;
+VAR37        *VAR50, *VAR51;
+
+VAR48 = VAR9->VAR47[0].VAR52;
+if (VAR4)
+VAR50 = VAR38 + (((VAR46.VAR29 - VAR21) * VAR24) + (VAR46.VAR28 - VAR20)) * VAR34;
+else
+VAR50 = VAR9->VAR47[1].VAR52;
+
+for (VAR29 = 0; VAR29 < VAR46.VAR25; VAR29++)
+{
+VAR49 = VAR48;
+VAR51 = VAR50;
+
+for (VAR28 = 0; VAR28 < VAR46.VAR24; VAR28++)
+{
+if (VAR32 && VAR49[VAR33] == 0)
+{
+memset (VAR51, 0, VAR33);
+}
+else
+{
+for (VAR30 = 0; VAR30 < VAR33; VAR30++)
+VAR51[VAR30] = VAR49[VAR30];
+}
+
+if (VAR32)
+VAR51[VAR33] = VAR49[VAR33];
+
+VAR49 += VAR34;
+VAR51 += VAR34;
+}
+
+VAR48 += VAR46.VAR24 * VAR34;
+if (VAR4)
+VAR50 += VAR24 * VAR34;
+else
+VAR50 += VAR46.VAR24 * VAR34;
+}
+}
+
+
+
+VAR9 = FUN16 (VAR6,
+FUN17 (VAR20, VAR21, VAR24, VAR25), 0,
+VAR11,
+VAR43, VAR44, 2);
+
+FUN18 (VAR9, VAR7,
+FUN17 (VAR20, VAR21, VAR24, VAR25), 0,
+VAR11,
+VAR45, VAR44);
+
+while (FUN19 (VAR9))
+{
+GeglRectangle  VAR46 = VAR9->VAR47[0].VAR46;
+const VAR37  *VAR48, *VAR49;
+
+VAR48 = VAR9->VAR47[0].VAR52;
+
+for (VAR29 = 0; VAR29 < VAR46.VAR25; VAR29++)
+{
+VAR49 = VAR48;
+
+for (VAR28 = 0; VAR28 < VAR46.VAR24; VAR28++)
+{
+if (VAR39.VAR40)
+{
+if (VAR28 + VAR46.VAR28 == 0 ||
+VAR29 + VAR46.VAR29 == 0 ||
+VAR28 + VAR46.VAR28 == VAR12  - 1 ||
+VAR29 + VAR46.VAR29 == VAR13 - 1)
+{
+VAR27 = 255;
+}
+else
+{
+VAR27 = 0;
+}
+}
+else
+{
+VAR27 = FUN20 (VAR49, VAR31, VAR32);
+}
+
+if (VAR27 >= VAR26)
+{
+VAR14 = FUN21 ((VAR53) (VAR27 + 1 - VAR26) /
+(VAR53) (256 - VAR26));
+VAR15 = ((VAR53) VAR39.VAR54 *
+(VAR53) FUN22 (VAR14, 0.8));
+VAR16 = VAR39.VAR55 * VAR14;
+
+
+if (VAR39.VAR56 > 0)
+{
+
+if (VAR39.VAR17 == -1)
+VAR17 = FUN23 (VAR36, 0, 360.0);
+else
+VAR17 = VAR39.VAR17;
+
+if (FUN24 (VAR36) <= VAR39.VAR57)
+{
+FUN25 (VAR6, VAR7, VAR11, VAR34,
+VAR20, VAR21, VAR22, VAR23,
+VAR28 + VAR46.VAR28, VAR29 + VAR46.VAR29,
+VAR16, VAR15, VAR17, VAR36, VAR38);
+
+
+FUN25 (VAR6, VAR7, VAR11, VAR34,
+VAR20, VAR21, VAR22, VAR23,
+VAR28 + VAR46.VAR28, VAR29 + VAR46.VAR29,
+VAR16 * 0.7, VAR15 * 0.7,
+((VAR53)VAR17+180.0/VAR39.VAR56),
+VAR36, VAR38);
+}
+}
+if (!VAR4)
+{
+VAR18 ++;
+
+if ((VAR18 % 5) == 0)
+FUN26 ((double) VAR18 /
+(double) VAR19);
+}
+}
+
+VAR49 += VAR34;
+}
+
+VAR48 += VAR46.VAR24 * VAR34;
+}
+}
+
+FUN27 (VAR6);
+FUN27 (VAR7);
+
+if (VAR4)
+{
+FUN28 (VAR4, VAR38, VAR24 * VAR34);
+FUN29 (VAR38);
+}
+else
+{
+FUN26 (1.0);
+
+FUN30 (VAR2, VAR58);
+FUN31 (VAR2, VAR20, VAR21, VAR24, VAR25);
+}
+
+FUN32 (VAR36);
+}

@@ -1,0 +1,1 @@
+static krb5_error_code FUN1 ( struct VAR1 * VAR2 ) { krb5_error_code VAR3 ; const char * VAR4 ; VAR4 = FUN2 ( VAR2 -> VAR5 , VAR6 , "" ) ; if ( VAR4 == NULL ) { return FUN3 ( VAR2 , VAR7 , "" ) ; } if ( VAR2 -> VAR8 == NULL ) { return FUN4 ( VAR2 , VAR7 , "" ) ; } FUN5 ( VAR2 -> VAR9 , VAR10 , 1 , NULL , "" , VAR2 -> VAR8 ) ; return FUN6 ( VAR2 ) ; }

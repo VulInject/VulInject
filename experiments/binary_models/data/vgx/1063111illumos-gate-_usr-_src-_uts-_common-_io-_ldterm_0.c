@@ -1,0 +1,126 @@
+static VAR1 *
+FUN1(VAR1 *VAR2, VAR1 *VAR3, size_t VAR4, VAR5 *VAR6,
+VAR7 *VAR8)
+{
+VAR5 *VAR9 = FUN2(VAR6);
+unsigned char *VAR10;
+size_t VAR11;
+size_t VAR12;
+size_t VAR13;
+int VAR14 = 0;
+
+if (VAR8->VAR15.VAR16 & (VAR17|VAR18|VAR19)) {
+unsigned char *VAR20;
+unsigned char VAR21;
+
+
+VAR10 = VAR2->VAR22;
+VAR20 = VAR2->VAR22;
+while (VAR10 < VAR2->VAR23) {
+VAR21 = *VAR10++;
+
+if ((VAR8->VAR15.VAR16 & VAR19) &&
+!(VAR8->VAR24 & VAR25) &&
+VAR21 != VAR26 &&
+VAR21 == VAR8->VAR15.VAR27[VAR28]) {
+if (VAR8->VAR15.VAR16 & VAR17)
+FUN3(
+(unsigned char *)"",
+2, VAR9, VAR4, VAR8);
+VAR8->VAR24 |= VAR25;
+continue;	
+}
+
+VAR8->VAR24 &= ~VAR25;
+*VAR20++ = VAR21;
+if (VAR8->VAR15.VAR16 & VAR17) {
+
+(void) FUN4(VAR21, VAR9, VAR4, VAR8);
+} else if (VAR8->VAR15.VAR16 & VAR18) {
+
+if (VAR21 == '')
+FUN5('', VAR9, 1, VAR8);
+}
+}
+VAR2->VAR23 = VAR20;
+} else {
+
+if (VAR2->VAR22 != VAR2->VAR23)
+VAR8->VAR24 &= ~VAR25;
+}
+
+FUN6(VAR2->VAR23 >= VAR2->VAR22);
+VAR11 = VAR2->VAR23 - VAR2->VAR22;
+VAR10 = VAR2->VAR22;
+while (VAR11 != 0) {
+VAR12 = VAR3->VAR29->VAR30 - VAR3->VAR23;
+if (VAR12 == 0) {
+
+if ((VAR3 = FUN7(VAR31, VAR32)) == NULL) {
+FUN8(VAR2);
+FUN9((""));
+return (VAR3);
+}
+
+VAR8->VAR33->VAR34 = VAR3;
+VAR8->VAR33 = VAR3;
+VAR12 = VAR31;
+}
+FUN10(("",
+VAR12, VAR11, VAR8->VAR35));
+
+if (VAR8->VAR35 == 0)
+VAR13 = FUN11(VAR12, VAR11);
+else
+VAR13 =
+FUN11(FUN11(VAR12, VAR11), VAR8->VAR35);
+FUN10(("", VAR13));
+if (VAR13 == 0)
+break;
+bcopy(VAR10, VAR3->VAR23, VAR13);
+VAR3->VAR23 += VAR13;
+VAR10 += VAR13;
+VAR8->VAR36 += VAR13;
+VAR11 -= VAR13;
+}
+if (VAR11 == 0) {
+FUN9((""));
+FUN8(VAR2);
+} else
+VAR14 = 1;	
+
+FUN9(("VAR37: VAR38 = %VAR39, VAR40 = %VAR39, VAR41 = %VAR39, \
+VAR42 = %VAR39\VAR43", VAR44, VAR45, VAR8->VAR36, VAR8->VAR46));
+
+
+FUN9((""));
+
+if (VAR44 == 0 && VAR45 > 0) {
+if (VAR8->VAR36)
+FUN12(VAR6, VAR8, 1);
+else {
+
+FUN9((""));
+}
+
+} else if (VAR44 > 0 && VAR45 == 0) {
+if (VAR8->VAR36 >= (int)VAR44)
+FUN12(VAR6, VAR8, 1);
+
+
+} else if (VAR44 > 0 && VAR45 > 0) {
+if (VAR8->VAR36 >= (int)VAR44)
+FUN12(VAR6, VAR8, 1);
+else
+FUN13(VAR6);
+
+} else {	
+FUN12(VAR6, VAR8, 1);
+}
+
+if (VAR14) {
+
+FUN9((""));
+}
+return (FUN14(VAR8));
+}

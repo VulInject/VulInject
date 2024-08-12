@@ -1,0 +1,1 @@
+int FUN1(void) { return FUN2(); }

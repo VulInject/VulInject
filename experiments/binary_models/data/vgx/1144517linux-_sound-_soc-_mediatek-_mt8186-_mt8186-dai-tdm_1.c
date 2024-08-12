@@ -1,0 +1,1 @@
+static unsigned int FUN1 ( snd_pcm_format_t VAR1 , unsigned int VAR2 ) { return FUN2 ( VAR1 ) - 1 ; }

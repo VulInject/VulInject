@@ -1,0 +1,24 @@
+void
+FUN1(struct VAR1 *VAR2, int VAR3)
+{
+volatile struct VAR4 *VAR5 = VAR2->VAR6;
+int32_t VAR7;
+int VAR8;
+
+FUN2(VAR5, VAR9, VAR10);
+VAR5->VAR11 = sizeof(VAR12);
+VAR7 = FUN3(VAR2);
+if (VAR7 != VAR13)
+return;
+
+VAR8 = VAR5->VAR14[1] & 0xffff;
+if (VAR8 == 0)
+return;
+
+VAR2->VAR15.VAR16 = VAR3;
+VAR2->VAR15.VAR17 = VAR2;
+VAR2->VAR15.VAR18 = VAR19;
+VAR2->VAR15.VAR20 = VAR21;
+VAR2->VAR15.VAR22 = VAR23;
+FUN4(&VAR2->VAR15);
+}

@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( char * VAR2 ) { struct VAR1 * VAR3 ; if ( ( VAR3 = FUN2 ( & VAR4 , VAR2 ) ) == NULL ) { return NULL ; } return NULL ; }

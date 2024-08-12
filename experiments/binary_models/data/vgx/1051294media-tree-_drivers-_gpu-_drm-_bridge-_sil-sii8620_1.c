@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , sii8620_cb VAR3 ) { struct VAR4 * VAR5 ; if ( FUN2 ( & VAR2 -> VAR6 ) ) { VAR2 -> VAR7 = - VAR8 ; return ; } VAR5 = FUN3 ( & VAR2 -> VAR6 , VAR4 , VAR9 ) ; VAR5 -> VAR10 = VAR3 ; }

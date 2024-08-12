@@ -1,0 +1,1 @@
+int FUN1 ( int VAR1 ) { return VAR1 ; } int VAR2 ; int VAR3 ; int VAR4 ; int FUN2 ( int VAR5 ) { int VAR1 ; VAR4 = 1 ; for ( VAR1 = 0 ; VAR1 < VAR5 ; VAR1 ++ ) { VAR4 ++ ; } return VAR4 ; }

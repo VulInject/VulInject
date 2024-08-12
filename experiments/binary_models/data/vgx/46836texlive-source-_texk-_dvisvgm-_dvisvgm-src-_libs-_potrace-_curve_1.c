@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( void ) { VAR1 * VAR2 = NULL ; VAR3 * VAR4 = NULL ; FUN2 ( VAR2 , 1 , VAR1 ) ; FUN2 ( VAR4 , 1 , VAR3 ) ; memset ( VAR4 , 0 , sizeof ( VAR3 ) ) ; VAR2 -> VAR4 = VAR4 ; return VAR2 ; calloc_error free ( VAR2 ) ; free ( VAR4 ) ; return NULL ; }

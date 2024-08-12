@@ -1,0 +1,56 @@
+static VAR1
+FUN1(int VAR2, int VAR3)
+{
+int VAR4, VAR5;
+fd_set VAR6, VAR7;
+struct timeval VAR8;
+RD_BOOL VAR9 = VAR10;
+
+VAR4 = (VAR2 > VAR11) ? VAR2 : VAR11;
+
+FUN2(&VAR6);
+FUN2(&VAR7);
+FUN3(VAR2, &VAR6);
+FUN3(VAR11, &VAR6);
+
+
+VAR8.VAR12 = VAR3 / 1000;
+VAR8.VAR13 = (VAR3 - (VAR8.VAR12 * 1000)) * 1000;
+
+FUN4(&VAR4, &VAR6, &VAR7, &VAR8);
+
+
+FUN5(&VAR4, &VAR6, &VAR7, &VAR8, &VAR9);
+FUN6(&VAR8);
+
+
+FUN7(&VAR4, &VAR6);
+
+VAR4++;
+
+VAR5 = FUN8(VAR4, &VAR6, &VAR7, NULL, &VAR8);
+if (VAR5 <= 0)
+{
+if (VAR5 == -1)
+{
+FUN9(VAR14, VAR15, "", strerror(VAR16));
+}
+FUN10(&VAR6, &VAR7);
+
+
+if (VAR9)
+FUN11(&VAR6, &VAR7, (VAR1) VAR17);
+return VAR10;
+}
+
+FUN10(&VAR6, &VAR7);
+
+FUN11(&VAR6, &VAR7, (VAR1) VAR10);
+
+FUN12(&VAR6, &VAR7);
+
+if (FUN13(VAR2, &VAR6))
+return VAR17;
+
+return VAR10;
+}

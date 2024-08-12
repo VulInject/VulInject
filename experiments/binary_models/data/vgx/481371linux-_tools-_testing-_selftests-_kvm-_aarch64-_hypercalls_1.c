@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { while ( VAR1 != VAR2 ) { switch ( VAR1 ) { case VAR3 : break ; case VAR4 : case VAR5 : FUN2 ( VAR6 ) ; break ; case VAR7 : FUN2 ( VAR8 ) ; break ; default : FUN3 ( 0 , VAR1 ) ; } FUN4 ( VAR1 , NULL ) ; } FUN5 ( ) ; }

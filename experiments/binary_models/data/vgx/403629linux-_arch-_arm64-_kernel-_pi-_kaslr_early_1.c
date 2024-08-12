@@ -1,0 +1,1 @@
+static char * FUN1 ( const char * VAR1 , const char * VAR2 ) { size_t VAR3 , VAR4 ; VAR4 = strlen ( VAR2 ) ; VAR3 = strlen ( VAR1 ) ; while ( VAR3 >= VAR4 ) { VAR3 -- ; if ( ! memcmp ( VAR1 , VAR2 , VAR4 ) ) { return ( char * ) VAR1 ; } VAR1 ++ ; } return NULL ; }

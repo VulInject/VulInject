@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , const VAR3 * VAR4 , const char * VAR5 ) { ssize_t VAR6 = FUN2 ( & VAR2 -> VAR7 , VAR4 , - 1 ) ; return FUN3 ( VAR2 -> VAR7 . VAR8 [ VAR6 ] . VAR9 . VAR10 , VAR2 -> VAR7 . VAR8 [ VAR6 ] . VAR9 . VAR11 , VAR5 , strlen ( VAR5 ) ) ; }

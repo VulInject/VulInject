@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 ) { if ( VAR2 -> VAR3 ) { if ( VAR2 -> VAR4 ) { close ( VAR2 -> VAR5 ) ; } VAR2 -> VAR4 = 0 ; VAR2 -> VAR6 = 0 ; } return ( 1 ) ; }

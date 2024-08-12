@@ -1,0 +1,1 @@
+enum parse_opt_result FUN1 ( struct VAR1 * VAR2 , const struct VAR3 * VAR4 , const char * VAR5 , int VAR6 ) { FUN2 ( VAR5 , NULL ) ; return VAR7 ; }

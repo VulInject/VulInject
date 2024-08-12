@@ -1,0 +1,64 @@
+static unsigned int
+FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+unsigned int VAR5, int VAR6)
+{
+
+struct VAR1 *VAR7;
+unsigned int VAR8, VAR9 = 0;
+unsigned int VAR10, VAR11;
+unsigned char *VAR12, *VAR13;
+FUN2(VAR14);
+struct sg_mapping_iter VAR15;
+unsigned long VAR16;
+unsigned int VAR17 = VAR18;
+bool VAR19;
+
+FUN3(&VAR2->VAR20, &VAR14);
+FUN4(&VAR2->VAR20, &VAR14);
+VAR10 = 0;
+if (VAR6)
+VAR17 |= VAR21;
+else
+VAR17 |= VAR22;
+FUN5(&VAR15, VAR4->VAR23, VAR4->VAR24,
+VAR17);
+FUN6(VAR16);
+VAR19 = FUN7(&VAR15);
+FUN8(VAR7, &VAR14, VAR20) {
+VAR11 = 0;
+while (VAR5 && VAR19 &&
+(VAR11 < VAR25)) {
+VAR12 = VAR7->VAR26 + VAR11;
+if (VAR10) {
+
+VAR13 = VAR15.VAR27 + VAR10;
+VAR8 = VAR15.VAR28 - VAR10;
+} else {
+VAR13 = VAR15.VAR27;
+VAR8 = VAR15.VAR28;
+}
+if (VAR5 < VAR8)
+VAR8 = VAR5;
+if (VAR8 > (VAR25 - VAR11))
+VAR8 = VAR25 - VAR11;
+if (VAR6)
+memcpy(VAR12, VAR13, VAR8);
+else
+memcpy(VAR13, VAR12, VAR8);
+VAR11 += VAR8;
+VAR10 += VAR8;
+VAR5 -= VAR8;
+VAR9 += VAR8;
+if (VAR10 >= VAR15.VAR28) {
+VAR10 = 0;
+VAR19 = FUN7(&VAR15);
+}
+}
+}
+FUN9(&VAR15);
+FUN10(VAR16);
+FUN11(&VAR2->VAR20);
+FUN12(&VAR14, &VAR2->VAR20);
+return VAR9;
+}

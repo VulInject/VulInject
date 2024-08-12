@@ -1,0 +1,18 @@
+FUN1 (VAR1     *VAR2,
+GimpUndoMode  VAR3)
+{
+VAR4 *VAR5 = FUN2 (VAR2);
+
+FUN3 (&VAR5->VAR6);
+
+if (VAR5->VAR7)
+{
+FUN4 (VAR5->VAR8);
+FUN5 (VAR9, VAR5->VAR8);
+
+VAR5->VAR8 = NULL;
+VAR5->VAR7 = NULL;
+}
+
+FUN6 (VAR10)->free (VAR2, VAR3);
+}

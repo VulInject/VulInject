@@ -1,0 +1,46 @@
+static void
+FUN1(ib_guid_t VAR1)
+{
+VAR2	*VAR3;
+ibt_mr_attr_t	VAR4;
+ibt_mr_desc_t	VAR5;
+int		VAR6;
+
+FUN2("", "", VAR1);
+
+VAR3 = FUN3(VAR1);
+if (VAR3 == NULL)
+return;
+
+
+FUN4(&VAR7.VAR8);
+if (VAR7.VAR9 == NULL) {
+
+FUN2("", "");
+FUN5(&VAR7.VAR8);
+return;
+}
+
+VAR4.VAR10 = (VAR11)(VAR12)VAR7.VAR9;
+VAR4.VAR13 = VAR7.VAR14;
+VAR4.VAR15 = NULL;
+VAR4.VAR16 = VAR17;
+
+VAR6 = FUN6(VAR3->VAR18, VAR3->VAR19, &VAR4,
+&VAR3->VAR20, &VAR5);
+
+FUN5(&VAR7.VAR8);
+
+if (VAR6 != VAR21) {
+FUN2("", "",
+VAR6);
+} else {
+FUN7(&VAR22->VAR23, VAR24);
+VAR3->VAR25 = VAR26;
+VAR3->VAR27 = VAR5.VAR28;
+VAR3->VAR29 = VAR5.VAR30;
+FUN8(&VAR22->VAR23);
+}
+
+FUN2("", "", VAR1);
+}

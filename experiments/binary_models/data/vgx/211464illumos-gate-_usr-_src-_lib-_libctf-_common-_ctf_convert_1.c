@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , const char * VAR3 ) { VAR4 * VAR5 ; if ( strchr ( VAR3 , '' ) != NULL ) { return ( VAR6 ) ; } VAR5 = FUN2 ( sizeof ( VAR4 ) ) ; VAR5 -> VAR7 = FUN3 ( VAR3 ) ; if ( VAR5 -> VAR7 == NULL ) { FUN4 ( VAR5 , sizeof ( VAR4 ) ) ; return ( VAR8 ) ; } FUN5 ( & VAR2 -> VAR9 , VAR5 ) ; return ( 0 ) ; }

@@ -1,0 +1,75 @@
+static void
+FUN1(struct VAR1 *VAR1, caddr_t VAR2,
+size_t VAR3, enum seg_rw VAR4)
+{
+struct VAR5 *VAR6 = (struct VAR5 *)VAR1->VAR7;
+struct VAR1	*VAR8;
+struct VAR9 *VAR10;
+VAR11 *VAR12;
+caddr_t VAR13;
+struct VAR14 *VAR15;
+u_offset_t VAR16;
+ulong_t VAR17;
+struct VAR18 *VAR19;		
+struct VAR20 *VAR21 = NULL;
+pgcnt_t VAR22;
+
+FUN2(VAR1->VAR23 && FUN3(VAR1->VAR23));
+
+VAR8 = VAR6->VAR24;
+VAR10 = VAR8->VAR7;
+
+
+if ((!FUN4(VAR25, (void *)0)) &&
+((VAR10->VAR26 & VAR27) == 0)) {
+goto VAR28;
+}
+
+
+FUN5(VAR8->VAR23, VAR29);
+FUN6(VAR8->VAR23->VAR30, VAR2, VAR3);
+FUN7(VAR8->VAR23);
+
+VAR19 = VAR10->VAR31;
+FUN2(VAR19 != NULL);
+VAR17 = FUN8(VAR8, VAR2);
+
+for (VAR13 = VAR2; VAR13 < VAR2 + VAR3; VAR13 += VAR32) {
+VAR21 = FUN9(VAR19->VAR33, VAR17++);
+FUN2(VAR21 != NULL);
+FUN10(VAR21, &VAR15, &VAR16);
+
+
+VAR12 = FUN11(VAR15, VAR16);
+FUN2(VAR21 == FUN9(VAR19->VAR33, VAR17 - 1));
+if (VAR12 == NULL) {
+FUN12(""
+"",
+(void *)VAR13, (void *)VAR21, (void *)VAR15, VAR16);
+
+}
+
+if (VAR4 == VAR34) {
+FUN13(VAR12);
+} else if (VAR4 != VAR35) {
+FUN14(VAR12);
+}
+FUN15(VAR12);
+}
+
+VAR28:
+VAR22 = FUN16(VAR3);
+FUN2(VAR6->VAR36 >= VAR22);
+FUN17((VAR37 *)(&(VAR6->VAR36)), -VAR22);
+if (VAR6->VAR36 == 0) {
+
+if (FUN18(VAR1->VAR23)) {
+FUN19(&VAR1->VAR23->VAR38);
+if (FUN18(VAR1->VAR23)) {
+FUN20(VAR1->VAR23);
+FUN21(&VAR1->VAR23->VAR39);
+}
+FUN22(&VAR1->VAR23->VAR38);
+}
+}
+}

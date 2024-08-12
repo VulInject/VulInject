@@ -1,0 +1,1 @@
+int FUN1(VAR1 *VAR2, int64_t VAR3, int VAR4, BdrvRequestFlags VAR5) { return FUN2(VAR2, VAR3, NULL, VAR4, true, VAR6 | VAR5); }

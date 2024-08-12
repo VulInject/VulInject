@@ -1,0 +1,14 @@
+static VAR1 FUN1(struct VAR2 *VAR3, u32 VAR4)
+{
+unsigned long VAR5, VAR6, VAR7;
+u32 VAR8;
+
+VAR6 = FUN2(VAR9, 0, VAR10);
+VAR7 = FUN2(VAR9, 0, VAR11);
+
+FUN3(&VAR3->VAR12, VAR5);
+FUN4(VAR6, (VAR4));
+VAR8 = FUN5(VAR7);
+FUN6(&VAR3->VAR12, VAR5);
+return VAR8;
+}

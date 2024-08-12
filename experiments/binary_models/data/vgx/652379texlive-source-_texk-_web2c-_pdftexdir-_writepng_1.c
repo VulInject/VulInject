@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 ) { int VAR3 [ 4 ] ; if ( fread ( VAR3 , 1 , 4 , VAR2 ) != 4 ) { FUN2 ( "" ) ; } return ( ( ( ( ( ( int ) VAR3 [ 0 ] << 8 ) + VAR3 [ 1 ] ) << 8 ) + VAR3 [ 2 ] ) << 8 ) + VAR3 [ 3 ] ; }

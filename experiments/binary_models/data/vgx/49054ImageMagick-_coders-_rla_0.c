@@ -1,0 +1,320 @@
+static VAR1 *FUN1(const VAR2 *VAR3,VAR4 *VAR5)
+{
+typedef struct VAR6
+{
+short
+VAR7,
+VAR8,
+VAR9,
+VAR10;
+} VAR11;
+
+typedef struct VAR12
+{
+VAR11
+VAR13,
+VAR14;
+
+short
+VAR15,
+VAR16,
+VAR17,
+VAR18,
+VAR19,
+VAR20;
+
+char
+VAR21[16+1],
+VAR22[24+1],
+VAR23[24+1],
+VAR24[24+1],
+VAR25[24+1];
+
+int
+VAR26;
+
+char
+VAR27[128+1],
+VAR28[128+1],
+VAR29[64+1],
+VAR30[32+1],
+VAR31[32+1],
+VAR32[20+1],
+VAR33[24+1],
+VAR34[8+1],
+VAR35[32+1];
+
+short
+VAR36;
+
+char
+VAR37[12],
+VAR38[32];
+
+short
+VAR39,
+VAR40,
+VAR41,
+VAR42,
+VAR43;
+
+char
+VAR44[32+1],
+VAR45[36+1];
+
+int
+VAR46;
+} VAR47;
+
+VAR1
+*VAR48;
+
+int
+VAR49,
+VAR50,
+VAR51;
+
+VAR52
+VAR53;
+
+VAR54
+VAR55,
+*VAR56;
+
+VAR57
+VAR58,
+VAR59;
+
+VAR60
+*VAR61;
+
+VAR57
+VAR62,
+VAR63;
+
+VAR47
+VAR64;
+
+unsigned char
+VAR65;
+
+
+assert(VAR3 != (const VAR2 *) NULL);
+assert(VAR3->VAR66 == VAR67);
+assert(VAR5 != (VAR4 *) NULL);
+assert(VAR5->VAR66 == VAR67);
+if (FUN2() != VAR68)
+(void) FUN3(VAR69,FUN4(),"",
+VAR3->VAR70);
+VAR48=FUN5(VAR3,VAR5);
+VAR53=FUN6(VAR3,VAR48,VAR71,VAR5);
+if (VAR53 == VAR68)
+{
+VAR48=FUN7(VAR48);
+return((VAR1 *) NULL);
+}
+(void) memset(&VAR64,0,sizeof(VAR64));
+VAR64.VAR13.VAR7=(short) FUN8(VAR48);
+VAR64.VAR13.VAR8=(short) FUN8(VAR48);
+VAR64.VAR13.VAR9=(short) FUN8(VAR48);
+VAR64.VAR13.VAR10=(short) FUN8(VAR48);
+VAR64.VAR14.VAR7=(short) FUN8(VAR48);
+VAR64.VAR14.VAR8=(short) FUN8(VAR48);
+VAR64.VAR14.VAR9=(short) FUN8(VAR48);
+VAR64.VAR14.VAR10=(short) FUN8(VAR48);
+VAR64.VAR15=(short) FUN8(VAR48);
+VAR64.VAR16=(short) FUN8(VAR48);
+VAR64.VAR17=(short) FUN8(VAR48);
+if (VAR64.VAR17 < 0)
+FUN9(VAR72,"");
+VAR64.VAR18=(short) FUN8(VAR48);
+if (VAR64.VAR18 < 0)
+FUN9(VAR72,"");
+if ((VAR64.VAR17 > 3) || (VAR64.VAR18 > 3))
+FUN9(VAR73,"");
+if (VAR64.VAR17 == 0)
+VAR64.VAR17=3;
+VAR64.VAR17+=VAR64.VAR18;
+VAR64.VAR19=(short) FUN8(VAR48);
+VAR64.VAR20=(short) FUN8(VAR48);
+(void) FUN10(VAR48,16,(unsigned char *) VAR64.VAR21);
+(void) FUN10(VAR48,24,(unsigned char *) VAR64.VAR22);
+(void) FUN10(VAR48,24,(unsigned char *) VAR64.VAR23);
+(void) FUN10(VAR48,24,(unsigned char *) VAR64.VAR24);
+(void) FUN10(VAR48,24,(unsigned char *) VAR64.VAR25);
+VAR64.VAR26=FUN11(VAR48);
+(void) FUN10(VAR48,128,(unsigned char *) VAR64.VAR27);
+(void) FUN10(VAR48,128,(unsigned char *) VAR64.VAR28);
+VAR64.VAR28[127]='';
+(void) FUN10(VAR48,64,(unsigned char *) VAR64.VAR29);
+(void) FUN10(VAR48,32,(unsigned char *) VAR64.VAR30);
+(void) FUN10(VAR48,32,(unsigned char *) VAR64.VAR31);
+(void) FUN10(VAR48,20,(unsigned char *) VAR64.VAR32);
+(void) FUN10(VAR48,24,(unsigned char *) VAR64.VAR33);
+(void) FUN10(VAR48,8,(unsigned char *) VAR64.VAR34);
+(void) FUN10(VAR48,32,(unsigned char *) VAR64.VAR35);
+VAR64.VAR36=(short) FUN8(VAR48);
+(void) FUN10(VAR48,12,(unsigned char *) VAR64.VAR37);
+(void) FUN10(VAR48,32,(unsigned char *) VAR64.VAR38);
+VAR64.VAR39=(short) FUN8(VAR48);
+VAR64.VAR40=(short) FUN8(VAR48);
+VAR64.VAR41=(short) FUN8(VAR48);
+VAR64.VAR42=(short) FUN8(VAR48);
+VAR64.VAR43=(short) FUN8(VAR48);
+(void) FUN10(VAR48,32,(unsigned char *) VAR64.VAR44);
+VAR62=FUN10(VAR48,36,(unsigned char *) VAR64.VAR45);
+if ((VAR74) VAR62 != 36)
+FUN9(VAR72,"");
+VAR64.VAR46=FUN11(VAR48);
+
+VAR48->VAR75=VAR64.VAR18 != 0 ? VAR76 : 
+VAR77;
+VAR48->VAR78=(VAR74) (VAR64.VAR14.VAR8-
+VAR64.VAR14.VAR7+1);
+VAR48->VAR79=(VAR74) (VAR64.VAR14.VAR10-
+VAR64.VAR14.VAR9+1);
+if (VAR3->VAR80 != VAR68)
+{
+(void) FUN12(VAR48);
+return(FUN13(VAR48));
+}
+VAR53=FUN14(VAR48,VAR48->VAR78,VAR48->VAR79,VAR5);
+if (VAR53 == VAR68)
+return(FUN7(VAR48));
+VAR56=(VAR54 *) FUN15(VAR48->VAR79,
+sizeof(*VAR56));
+if (VAR56 == (VAR54 *) NULL)
+FUN9(VAR81,"");
+if (*VAR64.VAR28 != '')
+(void) FUN16(VAR48,"",VAR64.VAR28,VAR5);
+
+for (VAR58=0; VAR58 < (VAR57) VAR48->VAR79; VAR58++)
+VAR56[VAR58]=(VAR54) FUN11(VAR48);
+if (FUN17(VAR48) != VAR68)
+{
+VAR56=(VAR54 *) FUN18(VAR56);
+FUN9(VAR72,"");
+}
+
+for (VAR63=0; VAR63 < (VAR57) VAR48->VAR79; VAR63++)
+{
+VAR55=FUN19(VAR48,VAR56[VAR48->VAR79-VAR63-1],VAR82);
+if (VAR55 < 0)
+{
+VAR56=(VAR54 *) FUN18(VAR56);
+FUN9(VAR72,"");
+}
+VAR59=0;
+for (VAR49=0; VAR49 < (int) VAR64.VAR17; VAR49++)
+{
+VAR50=FUN20(VAR48);
+while (VAR50 > 0)
+{
+VAR65=(unsigned char) FUN21(VAR48);
+VAR51=VAR65;
+if (VAR65 > 127)
+VAR51=VAR65-256;
+VAR50--;
+if (VAR50 == 0)
+break;
+if (VAR51 < 0)
+{
+while (VAR51 < 0)
+{
+VAR61=FUN22(VAR48,(VAR57) (VAR59 % VAR48->VAR78),VAR63,1,1,
+VAR5);
+if (VAR61 == (VAR60 *) NULL)
+break;
+VAR65=(unsigned char) FUN21(VAR48);
+VAR50--;
+switch (VAR49)
+{
+case 0:
+{
+FUN23(VAR48,FUN24(VAR65),VAR61);
+break;
+}
+case 1:
+{
+FUN25(VAR48,FUN24(VAR65),VAR61);
+break;
+}
+case 2:
+{
+FUN26(VAR48,FUN24(VAR65),VAR61);
+break;
+}
+case 3:
+default:
+{
+FUN27(VAR48,FUN24(VAR65),VAR61);
+break;
+}
+}
+if (FUN28(VAR48,VAR5) == VAR68)
+break;
+VAR59++;
+VAR51++;
+}
+continue;
+}
+VAR65=(unsigned char) FUN21(VAR48);
+VAR50--;
+VAR51++;
+do
+{
+VAR61=FUN22(VAR48,(VAR57) (VAR59 % VAR48->VAR78),VAR63,1,1,
+VAR5);
+if (VAR61 == (VAR60 *) NULL)
+break;
+switch (VAR49)
+{
+case 0:
+{
+FUN23(VAR48,FUN24(VAR65),VAR61);
+break;
+}
+case 1:
+{
+FUN25(VAR48,FUN24(VAR65),VAR61);
+break;
+}
+case 2:
+{
+FUN26(VAR48,FUN24(VAR65),VAR61);
+break;
+}
+case 3:
+default:
+{
+FUN27(VAR48,FUN24(VAR65),VAR61);
+break;
+}
+}
+if (FUN28(VAR48,VAR5) == VAR68)
+break;
+VAR59++;
+VAR51--;
+}
+while (VAR51 > 0);
+}
+}
+if ((VAR59/(VAR57) VAR64.VAR17) > (VAR57) VAR48->VAR78)
+{
+VAR56=(VAR54 *) FUN18(VAR56);
+FUN9(VAR72,"");
+}
+if (FUN17(VAR48) != VAR68)
+break;
+VAR53=FUN29(VAR48,VAR83,(VAR54) VAR63,
+VAR48->VAR79);
+if (VAR53 == VAR68)
+break;
+}
+VAR56=(VAR54 *) FUN18(VAR56);
+if (FUN17(VAR48) != VAR68)
+FUN30(VAR5,VAR72,"",
+VAR48->VAR70);
+(void) FUN12(VAR48);
+return(FUN13(VAR48));
+}

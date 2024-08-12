@@ -1,0 +1,13 @@
+static VAR1 *FUN1(VAR2 *VAR3)
+{
+VAR1 *VAR4 = FUN2(VAR3);
+int VAR5;
+FUN3();
+VAR6:
+FUN4();
+VAR5 = VAR3->VAR7;
+if (FUN5(VAR3, '')) { VAR4 = FUN6(VAR8, VAR4, FUN7(VAR3)); goto VAR6; }
+if (FUN5(VAR3, '')) { VAR4 = FUN6(VAR9, VAR4, FUN8(VAR3, 0)); FUN9(VAR3, ''); goto VAR6; }
+FUN10();
+return VAR4;
+}

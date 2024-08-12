@@ -1,0 +1,76 @@
+int
+FUN1(pmap_t VAR1, vaddr_t VAR2, paddr_t VAR3, vm_prot_t VAR4, int VAR5)
+{
+struct VAR6 *VAR7;
+struct VAR8 *VAR9;
+int VAR10;
+int VAR11 = VAR12;
+
+if (VAR3 & VAR13)
+VAR11 = VAR14;
+if (VAR3 & VAR15)
+VAR11 = VAR16;
+VAR9 = FUN2(VAR3);
+
+FUN3(VAR1);
+VAR7 = FUN4(VAR1, VAR2, NULL);
+if (VAR7 && FUN5(VAR7)) {
+FUN6(VAR1, VAR7);
+
+if (VAR1 != FUN7())
+VAR7 = FUN4(VAR1, VAR2, NULL);
+}
+
+VAR1->VAR17.VAR18++;
+
+
+if (VAR7 == NULL) {
+VAR7 = FUN8(&VAR19, VAR20 | VAR21);
+if (VAR7 == NULL) {
+if ((VAR5 & VAR22) == 0)
+FUN9("", VAR23);
+VAR10 = VAR24;
+goto VAR25;
+}
+if (FUN10(VAR1, VAR2, VAR7, VAR5)) {
+if ((VAR5 & VAR22) == 0)
+FUN9("", VAR23);
+VAR10 = VAR24;
+FUN11(&VAR19, VAR7);
+goto VAR25;
+}
+}
+
+
+if (VAR9 != NULL &&
+((VAR5 & VAR26) || (VAR9->VAR27 & VAR28))) {
+FUN12(&VAR9->VAR27, VAR28);
+if ((VAR4 & VAR29) && (VAR5 & VAR29)) {
+FUN12(&VAR9->VAR27, VAR30);
+FUN13(&VAR9->VAR27, VAR31);
+}
+}
+
+FUN14(VAR1, VAR2, VAR3, VAR7, VAR4, VAR5, VAR11);
+
+if (VAR9 != NULL) {
+FUN15(VAR7, VAR9); 
+}
+
+if (VAR9 != NULL && (VAR5 & VAR32)) {
+if ((VAR9->VAR27 & VAR31) == 0)
+FUN16(VAR1, VAR3);
+FUN12(&VAR9->VAR27, VAR31);
+}
+
+
+if (VAR5 & (VAR33|VAR29|VAR32|VAR34)) {
+FUN17(VAR7);
+FUN18(VAR1, VAR2 & ~VAR35);
+}
+
+VAR10 = 0;
+VAR25:
+FUN19(VAR1);
+return VAR10;
+}

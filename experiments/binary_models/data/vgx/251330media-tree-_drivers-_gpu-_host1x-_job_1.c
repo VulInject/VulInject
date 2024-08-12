@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , unsigned int VAR5 ) { VAR5 *= sizeof ( VAR6 ) ; return true ; } VAR7 { struct VAR8 * VAR9 ; struct VAR10 * VAR11 ; unsigned int VAR12 ; struct VAR1 * VAR2 ; struct VAR3 * VAR4 ; unsigned int VAR5 ; u32 VAR13 ; u32 class u32 VAR14 ; u32 VAR15 ; u32 VAR16 ; }

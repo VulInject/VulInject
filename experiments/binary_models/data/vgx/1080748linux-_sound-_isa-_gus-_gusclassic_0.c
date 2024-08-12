@@ -1,0 +1,23 @@
+FUN1(VAR1, VAR2, NULL, 0444);
+FUN2(VAR1, "" VAR3 "");
+FUN1(VAR4, bool, NULL, 0444);
+FUN2(VAR4, "" VAR3 "");
+FUN3(VAR5, long, VAR6, NULL, 0444);
+FUN2(VAR5, "" VAR3 "");
+FUN3(VAR7, int, VAR7, NULL, 0444);
+FUN2(VAR7, "" VAR3 "");
+FUN3(VAR8, int, VAR9, NULL, 0444);
+FUN2(VAR8, "" VAR3 "");
+FUN3(VAR10, int, VAR9, NULL, 0444);
+FUN2(VAR10, "" VAR3 "");
+FUN1(VAR11, int, NULL, 0444);
+FUN2(VAR11, "" VAR3 "");
+FUN1(VAR12, int, NULL, 0444);
+FUN2(VAR12, "" VAR3 "");
+FUN1(VAR13, int, NULL, 0444);
+FUN2(VAR13, "" VAR3 "");
+
+static int FUN4(struct VAR14 *VAR15, unsigned int VAR16)
+{
+return VAR4[VAR16];
+}

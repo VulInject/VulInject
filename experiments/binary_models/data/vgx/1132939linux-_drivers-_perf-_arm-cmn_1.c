@@ -1,0 +1,1 @@
+static unsigned int FUN1 ( u64 VAR1 [ ] , unsigned int VAR2 ) { return ( VAR1 [ VAR2 / 32 ] >> ( ( VAR2 % 32 ) * 2 ) ) & 3 ; } VAR3 { struct device_attribute VAR4 ; enum cmn_model VAR5 ; enum cmn_node_type VAR6 ; enum cmn_filter_select VAR7 ; int VAR8 ; u8 VAR9 ; }

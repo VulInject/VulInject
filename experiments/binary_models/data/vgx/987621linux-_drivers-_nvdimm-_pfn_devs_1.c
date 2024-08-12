@@ -1,0 +1,1 @@
+static bool FUN1 ( unsigned long VAR1 ) { int VAR2 ; unsigned long VAR3 [ VAR4 ] { [ 0 ] = 0 } ; ; FUN2 ( VAR3 ) ; for ( VAR2 = 0 ; VAR3 [ VAR2 ] ; VAR2 ++ ) { if ( VAR1 == VAR3 [ VAR2 ] ) { return true ; } } return false ; }

@@ -1,0 +1,1 @@
+static inline void FUN1 ( struct VAR1 * VAR2 ) { VAR2 -> VAR3 = VAR4 ; VAR2 -> VAR5 = 12 ; VAR2 -> VAR6 = FUN2 ( VAR7 | VAR8 ) ; VAR2 -> VAR9 = 1 ; VAR2 -> VAR10 . VAR11 . VAR12 = 0x04 ; VAR2 -> VAR10 . VAR11 . VAR13 = 0xffff ; }

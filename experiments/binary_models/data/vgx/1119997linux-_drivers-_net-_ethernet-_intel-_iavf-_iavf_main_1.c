@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , __always_unused __be16 VAR3 , u16 VAR4 ) { struct VAR5 * VAR6 = FUN2 ( VAR2 ) ; if ( FUN3 ( VAR6 ) ) { FUN4 ( VAR2 , "" , FUN5 ( VAR6 ) ) ; return - VAR7 ; } if ( ! FUN6 ( VAR6 , FUN7 ( VAR4 , FUN8 ( VAR3 ) ) ) ) { return - VAR8 ; } return 0 ; }

@@ -1,0 +1,20 @@
+void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+int VAR5;
+
+FUN2(&VAR2->VAR6);
+FUN2(&VAR2->VAR7);
+
+for (VAR5 = 0; VAR5 < FUN3(VAR2->VAR8.VAR9); VAR5++) {
+VAR4 = &VAR2->VAR8.VAR9[VAR5];
+
+if (!VAR4->VAR10)
+continue;
+
+FUN4(VAR2, VAR11, "",
+VAR4->VAR12, FUN5(&VAR4->VAR13));
+
+FUN6(&VAR4->VAR13);
+}
+}

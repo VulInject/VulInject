@@ -1,0 +1,1 @@
+static inline enum cache_type FUN1 ( struct VAR1 * VAR2 , int VAR3 ) { VAR2 += VAR3 ; if ( VAR2 -> VAR4 != VAR5 && VAR2 -> VAR4 != VAR6 ) { return VAR7 ; } return VAR8 [ VAR2 -> VAR9 ] ; }

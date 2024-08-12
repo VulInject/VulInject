@@ -1,0 +1,1 @@
+FUN1 ( ) { static bool VAR1 = false ; if ( ! VAR1 ) { int VAR2 ; for ( VAR2 = 0 ; VAR2 < VAR3 ; VAR2 ++ ) { struct sigaction VAR4 ; if ( FUN2 ( VAR5 [ VAR2 ] , NULL , & VAR4 ) >= 0 && FUN3 ( & VAR4 ) == VAR6 ) { VAR5 [ VAR2 ] = - 1 ; } } VAR1 = true ; } }

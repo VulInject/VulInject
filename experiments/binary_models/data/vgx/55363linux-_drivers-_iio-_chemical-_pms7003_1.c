@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , enum pms7003_cmd VAR3 ) { int VAR4 ; VAR4 = FUN2 ( VAR2 -> VAR5 , VAR6 [ VAR3 ] , VAR7 , VAR8 ) ; VAR4 = FUN3 ( & VAR2 -> VAR9 , VAR8 ) ; if ( ! VAR4 ) { VAR4 = - VAR10 ; } return VAR4 < 0 ?VAR4 : 0 ; }

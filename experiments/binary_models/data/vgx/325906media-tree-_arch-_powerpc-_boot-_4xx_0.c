@@ -1,0 +1,58 @@
+void FUN1(unsigned int VAR1, unsigned int VAR2)
+{
+u32 VAR3 = FUN2(VAR4);
+u32 VAR5 = FUN2(VAR6);
+u32 VAR7, VAR8, VAR9, VAR10, VAR11, VAR12, VAR13, VAR14;
+u32 VAR15 = FUN3(VAR3);
+u32 VAR16 = FUN4(VAR3);
+
+if (VAR3 & VAR17) {
+
+VAR7 = VAR8 = VAR1;
+} else {
+if (VAR3 & VAR18)
+
+VAR14 = FUN5(VAR3) * VAR15 * VAR16;
+else
+
+VAR14 = FUN6(VAR3) * FUN7(VAR3);
+VAR7 = VAR1 * VAR14 / FUN7(VAR3);
+VAR8 = VAR1 * VAR14 / FUN5(VAR3);
+}
+
+VAR9 = VAR8 / VAR15;
+VAR10 = VAR9 / VAR16;
+
+
+if ((FUN8() & 0xf0000fff) == 0x40000440)
+
+VAR11 = VAR1;
+else
+
+VAR11 = VAR7;
+
+if (VAR5 & VAR19)
+
+VAR12 = VAR2;
+else
+
+VAR12 = VAR8 / FUN9(VAR5);
+
+if (VAR5 & VAR20)
+
+VAR13 = VAR2;
+else
+
+VAR13 = VAR8 / FUN9(VAR5);
+
+FUN10("",
+(VAR1 + 500000) / 1000000, VAR1);
+
+FUN11(VAR7, VAR11, 0);
+
+FUN12("", VAR8);
+FUN12("", VAR9);
+FUN12("", VAR10);
+FUN12("", VAR12);
+FUN12("", VAR13);
+}

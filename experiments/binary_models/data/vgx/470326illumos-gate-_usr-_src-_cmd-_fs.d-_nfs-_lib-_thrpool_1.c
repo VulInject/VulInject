@@ -1,0 +1,1 @@
+static void * FUN1 ( void * VAR1 ) { int VAR2 = ( int ) VAR1 ; FUN2 ( VAR3 , & VAR2 ) ; FUN3 ( NULL , NULL ) ; return ( NULL ) ; }

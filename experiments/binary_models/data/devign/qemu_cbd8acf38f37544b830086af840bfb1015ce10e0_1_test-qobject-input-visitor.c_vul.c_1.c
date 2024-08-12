@@ -1,0 +1,9 @@
+static VAR1 *FUN1(VAR2 *VAR3, const char *VAR4, VAR5 *VAR6)
+{
+    FUN2(VAR3, NULL);
+    VAR3->VAR7 = FUN3(VAR4, VAR6);
+    FUN4(VAR3->VAR7);
+    VAR3->VAR8 = FUN5(VAR3->VAR7);
+    FUN4(VAR3->VAR8);
+    return VAR3->VAR8;
+}

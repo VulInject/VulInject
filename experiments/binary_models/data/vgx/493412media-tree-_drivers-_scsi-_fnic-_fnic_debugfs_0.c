@@ -1,0 +1,12 @@
+static VAR1 FUN1(struct VAR2 *VAR2,
+char VAR3 *VAR4,
+size_t VAR5,
+VAR6 *VAR7)
+{
+struct VAR8 *VAR9 = VAR2->VAR10;
+int VAR11 = 0;
+VAR11 = FUN2(VAR4, VAR5, VAR7,
+VAR9->VAR12,
+VAR9->VAR13);
+return VAR11;
+}

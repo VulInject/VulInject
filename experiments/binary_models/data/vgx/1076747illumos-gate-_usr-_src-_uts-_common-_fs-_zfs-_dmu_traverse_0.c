@@ -1,0 +1,14 @@
+static void
+FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+uint64_t VAR5 = VAR4->VAR6;
+
+
+if (VAR5 == 0 && FUN2(VAR2->VAR7))
+return;
+
+VAR8 *VAR9 = FUN3(FUN4(VAR2->VAR7)->VAR10, VAR4);
+(void) FUN5(VAR9, VAR11, VAR12, VAR2,
+VAR5, !(VAR2->VAR13 & VAR14));
+FUN6(VAR9);
+}

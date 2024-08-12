@@ -1,0 +1,83 @@
+static int FUN1(VAR1 * VAR2, VAR3 ** VAR4,
+struct VAR5 ** VAR6)
+{
+VAR3 * VAR7;
+VAR1 * VAR8;
+struct VAR5 * VAR9;
+struct VAR10 * VAR11;
+char * VAR12;
+VAR3 * VAR13;
+struct VAR14 * VAR15;
+int VAR16;
+int VAR17;
+
+VAR7 = * VAR4;
+
+VAR11 = FUN2(VAR7);
+if (VAR11 == NULL || VAR11->VAR18 == NULL) {
+VAR17 = VAR19;
+goto VAR20;
+}
+
+VAR12 = strdup(VAR11->VAR18);
+if (VAR12 == NULL) {
+VAR17 = VAR21;
+goto VAR20;
+}
+
+VAR8 = FUN3();
+if (VAR8 == NULL) {
+VAR17 = VAR21;
+goto VAR22;
+}
+
+for(VAR13 = FUN4(VAR7) ; VAR13 != NULL ;
+VAR13 = FUN4(VAR13)) {
+struct VAR23 * VAR24;
+
+VAR11 = FUN2(VAR13);
+
+if (VAR11->VAR18 == NULL) {
+break;
+}
+
+VAR16 = FUN5(VAR11, &VAR24);
+if (VAR16 != VAR25) {
+VAR17 = VAR16;
+goto VAR26;
+}
+
+VAR16 = FUN6(VAR8, VAR24);
+if (VAR16 != 0) {
+FUN7(VAR24);
+VAR17 = VAR21;
+goto VAR26;
+}
+}
+
+VAR15 = FUN8(VAR8);
+if (VAR15 == NULL) {
+VAR17 = VAR21;
+goto VAR26;
+}
+
+VAR9 = FUN9(VAR12, VAR15);
+if (VAR9 == NULL) {
+FUN10(VAR15);
+VAR17 = VAR21;
+goto VAR22;
+}
+
+* VAR6 = VAR9;
+* VAR4 = VAR13;
+
+return VAR25;
+
+VAR26:
+FUN11(VAR8, (VAR27) VAR28, NULL);
+FUN12(VAR8);
+VAR22:
+free(VAR12);
+VAR20:
+return VAR17;
+}

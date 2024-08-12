@@ -1,0 +1,1 @@
+BOOL FUN1 ( VAR1 * VAR2 , UINT16 VAR3 , size_t VAR4 , UINT32 VAR5 , const VAR6 * VAR7 , size_t VAR8 ) { VAR9 * VAR10 = FUN2 ( VAR2 ) ; if ( ! VAR10 ) { return VAR11 ; } FUN3 ( VAR10 , VAR4 ) ; FUN3 ( VAR10 , VAR5 ) ; if ( ! FUN4 ( VAR10 , VAR8 ) ) { FUN5 ( VAR10 , NULL ) ; return VAR11 ; } FUN6 ( VAR10 , VAR7 , VAR8 ) ; return FUN7 ( VAR2 , VAR10 , VAR3 ) ; }

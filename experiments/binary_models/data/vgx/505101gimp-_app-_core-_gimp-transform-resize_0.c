@@ -1,0 +1,23 @@
+FUN1 (GimpVector2  VAR1,
+GimpVector2  VAR2,
+GimpVector2  VAR3,
+GimpVector2  VAR4,
+VAR5 *VAR6)
+{
+gdouble VAR7  = (VAR2.VAR8 - VAR1.VAR8);
+gdouble VAR9  = (VAR1.VAR10 - VAR2.VAR10);
+gdouble VAR11  = VAR7 * VAR1.VAR10 + VAR9 * VAR1.VAR8;
+
+gdouble VAR12  = (VAR4.VAR8 - VAR3.VAR8);
+gdouble VAR13  = (VAR3.VAR10 - VAR4.VAR10);
+gdouble VAR14  = VAR12 * VAR3.VAR10 + VAR13 * VAR3.VAR8;
+gdouble VAR15 = VAR7 * VAR13 - VAR12 * VAR9;
+
+if (VAR15 == 0)
+return VAR16;
+
+VAR6->VAR10 = (VAR13 * VAR11 - VAR9 * VAR14) / VAR15;
+VAR6->VAR8 = (VAR7 * VAR14 - VAR12 * VAR11) / VAR15;
+
+return VAR17;
+}

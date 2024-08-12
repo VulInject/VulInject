@@ -1,0 +1,1 @@
+static Bool FUN1 ( Fixed VAR1 , VAR2 * VAR3 ) { if ( VAR1 < 0 ) { return 0 ; } if ( VAR3 -> VAR4 > VAR3 -> VAR5 ) { return 0 ; } if ( VAR1 < VAR3 -> VAR4 ) { return 0 ; } if ( VAR1 > VAR3 -> VAR5 ) { return 0 ; } return 1 ; }

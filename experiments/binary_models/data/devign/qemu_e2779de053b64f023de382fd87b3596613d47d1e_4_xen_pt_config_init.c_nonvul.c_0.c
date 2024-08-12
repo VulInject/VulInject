@@ -1,0 +1,22 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 *VAR6, uint16_t VAR7, uint16_t VAR8)
+{
+    VAR9 *VAR10 = VAR4->VAR10;
+    uint16_t VAR11 = 0;
+    uint16_t VAR12 = FUN2(VAR2, VAR10, VAR8);
+    VAR5 *VAR13 = VAR4->VAR14.VAR15;
+    VAR11 = ~VAR10->VAR16 & VAR8;
+    *VAR13 = FUN3(*VAR6, *VAR13, VAR11);
+    if (*VAR6 & VAR17)
+    {
+        VAR12 |= VAR17;
+    }
+    else
+    {
+        if (VAR2->VAR18)
+        {
+            VAR12 |= VAR17;
+        }
+    }
+    *VAR6 = FUN3(*VAR6, VAR7, VAR12);
+    return 0;
+}

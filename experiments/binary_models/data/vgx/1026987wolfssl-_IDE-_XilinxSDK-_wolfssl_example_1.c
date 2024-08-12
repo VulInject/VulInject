@@ -1,0 +1,1 @@
+static void FUN1 ( void * VAR1 ) static TaskHandle_t VAR2 ; int main ( void ) { FUN2 ( "" ) ; FUN3 ( VAR3 , ( const char * ) "" , VAR4 , VAR5 , & VAR2 ) ; FUN4 ( ) ; for ( ; ; ) { } }

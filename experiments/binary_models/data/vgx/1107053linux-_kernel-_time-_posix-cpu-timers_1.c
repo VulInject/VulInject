@@ -1,0 +1,1 @@
+static u64 FUN1 ( const clockid_t VAR1 , struct VAR2 * VAR3 ) { u64 VAR4 , VAR5 ; FUN2 ( VAR3 , & VAR4 , & VAR5 ) ; switch ( VAR1 ) { case VAR6 : return VAR4 + VAR5 ; case VAR7 : return VAR4 ; default : FUN3 ( 1 ) ; } return 0 ; }

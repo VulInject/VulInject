@@ -1,0 +1,43 @@
+int FUN1(struct VAR1 *VAR2, u32 VAR3,
+struct VAR4 *VAR5, int VAR6)
+{
+struct hfs_find_data VAR7;
+hfsplus_extent_rec VAR8;
+u32 VAR9, VAR10, VAR11;
+int VAR12, VAR13;
+
+VAR9 = FUN2(VAR5->VAR9);
+if (!VAR9)
+return 0;
+
+VAR10 = 0;
+for (VAR13 = 0; VAR13 < 8; VAR13++)
+VAR10 += FUN2(VAR5->VAR14[VAR13].VAR15);
+
+VAR12 = FUN3(VAR2, VAR5->VAR14, VAR10, VAR10);
+if (VAR12)
+return VAR12;
+if (VAR9 == VAR10)
+return 0;
+
+VAR12 = FUN4(FUN5(VAR2)->VAR16, &VAR7);
+if (VAR12)
+return VAR12;
+do {
+VAR12 = FUN6(&VAR7, VAR8, VAR3,
+VAR9, VAR6);
+if (VAR12)
+break;
+VAR11 = FUN2(VAR7.VAR17->VAR18.VAR19);
+FUN7(&VAR7);
+
+FUN8(&VAR7.VAR20->VAR21);
+FUN3(VAR2, VAR8, VAR9 - VAR11,
+VAR9);
+VAR9 = VAR11;
+FUN9(&VAR7.VAR20->VAR21);
+} while (VAR9 > VAR10);
+FUN10(&VAR7);
+
+return VAR12;
+}

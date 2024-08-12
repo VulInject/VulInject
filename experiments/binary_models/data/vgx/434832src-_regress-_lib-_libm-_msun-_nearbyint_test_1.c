@@ -1,0 +1,1 @@
+static float FUN1 ( int VAR1 , int VAR2 , int VAR3 ) { int VAR4 ; if ( VAR3 ) { if ( VAR2 == 1 ) { VAR2 = 2 ; } if ( VAR2 == 2 ) { VAR2 = 1 ; } } if ( VAR2 == 3 ) { VAR2 = 1 ; } VAR4 = VAR5 [ VAR1 ] . VAR4 [ VAR2 ] ; return ( VAR3 ?- VAR4 : VAR4 ) ; }

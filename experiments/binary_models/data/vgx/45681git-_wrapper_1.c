@@ -1,0 +1,1 @@
+void * xrealloc ( void * VAR1 , size_t VAR2 ) { void * VAR3 ; if ( ! VAR2 ) { return xmalloc ( 0 ) ; } FUN1 ( VAR2 , 0 ) ; VAR3 = realloc ( VAR1 , VAR2 ) ; if ( ! VAR3 ) { FUN2 ( "" ) ; } return VAR3 ; }

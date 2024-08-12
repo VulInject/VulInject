@@ -1,0 +1,52 @@
+static void FUN1(int VAR1, struct VAR2 *VAR3, VAR4 *VAR5, VAR6 *VAR7, VAR8 *VAR9)
+{
+    abi_ulong VAR10, VAR11;
+    struct VAR12 *VAR13;
+    int VAR14;
+    VAR10 = FUN2(VAR3, VAR9, sizeof(*VAR13));
+    if (!FUN3(VAR15, VAR13, VAR10, 0))
+        goto VAR16;
+    FUN4(FUN5(VAR1), &VAR13->VAR1);
+    VAR11 = VAR10 + FUN6(struct VAR12, VAR5);
+    FUN4(VAR11, &VAR13->VAR17);
+    VAR11 = VAR10 + FUN6(struct VAR12, VAR18);
+    FUN4(VAR11, &VAR13->VAR19);
+    FUN7(&VAR13->VAR5, VAR5);
+    FUN4(0, &VAR13->VAR18.VAR20);
+    FUN4(0, &VAR13->VAR18.VAR21);
+    FUN4(VAR22.VAR23, &VAR13->VAR18.VAR24.VAR23);
+    FUN4(FUN8(FUN9(VAR9)), &VAR13->VAR18.VAR24.VAR25);
+    FUN4(VAR22.VAR26, &VAR13->VAR18.VAR24.VAR26);
+    FUN10(&VAR13->VAR18.VAR27, &VAR13->VAR28, VAR9, VAR7->VAR1[0], VAR10 + FUN6(struct VAR12, VAR28));
+    for (VAR14 = 0; VAR14 < VAR29; VAR14++)
+    {
+        FUN4(VAR7->VAR1[VAR14], &VAR13->VAR18.VAR30.VAR1[VAR14]);
+    }
+    if (VAR3->VAR31 & VAR32)
+    {
+        FUN4(VAR3->VAR33, &VAR13->VAR34);
+    }
+    else
+    {
+        uint16_t VAR35;
+        VAR11 = VAR10 + FUN6(struct VAR12, VAR36);
+        FUN4(VAR11, &VAR13->VAR34);
+        FUN4(0xb8, (char *)(VAR13->VAR36 + 0));
+        FUN4(VAR37, (int *)(VAR13->VAR36 + 1));
+        VAR35 = 0x80cd;
+        FUN4(VAR35, (VAR38 *)(VAR13->VAR36 + 5));
+    }
+    VAR9->VAR39[VAR40] = VAR10;
+    VAR9->VAR41 = VAR3->VAR42;
+    FUN11(VAR9, VAR43, VAR44);
+    FUN11(VAR9, VAR45, VAR44);
+    FUN11(VAR9, VAR46, VAR44);
+    FUN11(VAR9, VAR47, VAR48);
+    VAR9->VAR49 &= ~VAR50;
+    FUN12(VAR13, VAR10, 1);
+    return;
+VAR16:
+    if (VAR1 == VAR51)
+        VAR3->VAR42 = VAR52;
+    FUN13(VAR51);
+}

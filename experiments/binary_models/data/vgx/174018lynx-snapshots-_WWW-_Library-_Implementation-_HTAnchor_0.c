@@ -1,0 +1,68 @@
+VAR1 FUN1(VAR2 *VAR3)
+{
+
+VAR4 *VAR5;
+VAR6 *VAR7;
+
+
+if (!VAR3) {
+return (VAR8);
+}
+
+
+if (VAR3->VAR9 || (VAR3->VAR10 && VAR3->VAR10->VAR11)) {
+return (VAR8);
+}
+
+
+VAR3->VAR9 = VAR12;
+
+{
+
+if (VAR3->VAR13) {
+VAR5 = FUN2(VAR3->VAR13, NULL);
+while (VAR5 != NULL) {
+VAR7 = (VAR6 *) FUN3(VAR5);
+if (VAR7->VAR14)
+FUN4(VAR7);
+VAR5 = FUN2(VAR3->VAR13, VAR5);
+}
+}
+}
+VAR3->VAR9 = VAR15;
+
+
+if (!FUN5(&VAR3->VAR16)) {
+
+return (VAR8);
+}
+
+
+if (VAR3->VAR13) {
+VAR5 = FUN2(VAR3->VAR13, NULL);
+while (VAR5 != NULL) {
+VAR7 = (VAR6 *) FUN3(VAR5);
+FUN6(VAR7->VAR17);
+FUN6(VAR7);
+VAR5 = FUN2(VAR3->VAR13, VAR5);
+}
+FUN7(VAR3->VAR13);
+}
+
+
+if (VAR3->VAR10) {
+FUN8(VAR3->VAR10);
+FUN6(VAR3->VAR10);
+}
+
+
+FUN9(&(VAR18[VAR3->VAR19]), (void *) VAR3);
+
+
+FUN6(VAR3->VAR20);
+
+
+FUN6(VAR3);
+
+return (VAR21);
+}

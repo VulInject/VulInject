@@ -1,0 +1,1 @@
+FUN1 ( ) { CORE_ADDR VAR1 = FUN2 ( VAR2 ) ; if ( VAR1 != 0 ) { int VAR3 = VAR4 ; ULONGEST VAR5 ; FUN3 ( VAR1 ) ; VAR5 = FUN4 ( VAR1 + VAR3 , 4 ) ; } return FUN5 ( VAR6 ) -> FUN6 ( VAR7 ) ; }

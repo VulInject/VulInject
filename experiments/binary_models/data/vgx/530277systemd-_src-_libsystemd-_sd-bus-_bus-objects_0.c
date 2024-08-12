@@ -1,0 +1,46 @@
+static int FUN1(
+VAR1 *VAR2,
+VAR3 **VAR4,
+bool VAR5,
+const char *VAR6,
+sd_bus_message_handler_t VAR7,
+void *VAR8) {
+
+VAR3 *VAR9;
+struct VAR10 *VAR11;
+int VAR12;
+
+FUN2(VAR2, -VAR13);
+FUN2(VAR2 = FUN3(VAR2), -VAR14);
+FUN2(FUN4(VAR6), -VAR13);
+FUN2(VAR7, -VAR13);
+FUN2(!FUN5(VAR2), -VAR15);
+
+VAR11 = FUN6(VAR2, VAR6);
+if (!VAR11)
+return -VAR16;
+
+VAR9 = FUN7(VAR2, !VAR4, VAR17, sizeof(struct VAR18), VAR8);
+if (!VAR9) {
+VAR12 = -VAR16;
+goto VAR19;
+}
+
+VAR9->VAR18.VAR7 = VAR7;
+VAR9->VAR18.VAR20 = VAR5;
+
+VAR9->VAR18.VAR10 = VAR11;
+FUN8(VAR21, VAR11->VAR21, &VAR9->VAR18);
+VAR2->VAR22 = true;
+
+if (VAR4)
+*VAR4 = VAR9;
+
+return 0;
+
+VAR19:
+FUN9(VAR9);
+FUN10(VAR2, VAR11);
+
+return VAR12;
+}

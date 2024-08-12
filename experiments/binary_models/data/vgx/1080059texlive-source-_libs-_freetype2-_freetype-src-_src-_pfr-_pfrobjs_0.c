@@ -1,0 +1,253 @@
+if ( !VAR1 )
+return;
+
+VAR2 = VAR3->VAR4->VAR5.VAR2;
+
+
+VAR3->VAR6 = NULL;
+VAR3->VAR7  = NULL;
+
+
+FUN1( &VAR1->VAR8, FUN2( VAR1 ) );
+
+
+FUN3( VAR3->VAR9 );
+}
+
+
+FUN4( VAR10 )
+FUN5( FT_Stream      VAR11,
+FT_Face        VAR3,
+FT_Int         VAR12,
+FT_Int         VAR13,
+VAR14*  VAR15 )
+{
+PFR_Face  VAR1 = (VAR16)VAR3;
+FT_Error  VAR17;
+
+FUN6( VAR13 );
+FUN6( VAR15 );
+
+
+FUN7(( "" ));
+
+
+VAR17 = FUN8( &VAR1->VAR18, VAR11 );
+if ( VAR17 )
+{
+FUN7(( "" ));
+VAR17 = FUN9( VAR19 );
+goto VAR20;
+}
+
+if ( !FUN10( &VAR1->VAR18 ) )
+{
+FUN7(( "" ));
+VAR17 = FUN9( VAR19 );
+goto VAR20;
+}
+
+
+{
+FT_Long  VAR21;
+
+
+VAR17 = FUN11( VAR11,
+VAR1->VAR18.VAR22,
+&VAR21 );
+if ( VAR17 )
+goto VAR20;
+
+VAR3->VAR21 = VAR21;
+}
+
+if ( VAR12 < 0 )
+goto VAR20;
+
+if ( ( VAR12 & 0xFFFF ) >= VAR3->VAR21 )
+{
+FUN12(( "" ));
+VAR17 = FUN9( VAR23 );
+goto VAR20;
+}
+
+
+VAR17 = FUN13(
+&VAR1->VAR24,
+VAR11,
+(VAR25)( VAR12 & 0xFFFF ),
+VAR1->VAR18.VAR22,
+FUN14( VAR1->VAR18.VAR26 ) );
+if ( VAR17 )
+goto VAR20;
+
+
+VAR17 = FUN15( &VAR1->VAR8, VAR11,
+VAR1->VAR24.VAR27,
+VAR1->VAR24.VAR28 );
+if ( VAR17 )
+goto VAR20;
+
+
+{
+PFR_PhyFont  VAR8 = &VAR1->VAR8;
+
+
+VAR3->VAR12 = VAR12 & 0xFFFF;
+VAR3->VAR29 = (VAR30)VAR8->VAR31 + 1;
+
+VAR3->VAR32 |= VAR33;
+
+
+
+{
+FT_UInt  VAR34;
+
+
+for ( VAR34 = 0; VAR34 < VAR8->VAR31; VAR34++ )
+if ( VAR8->VAR35[VAR34].VAR36 != 0 )
+break;
+
+if ( VAR34 == VAR8->VAR31 )
+{
+if ( VAR8->VAR37 > 0 )
+VAR3->VAR32 &= ~VAR33;
+else
+{
+FUN12(( "" ));
+VAR17 = FUN9( VAR38 );
+goto VAR20;
+}
+}
+}
+
+if ( !( VAR8->VAR39 & VAR40 ) )
+VAR3->VAR32 |= VAR41;
+
+if ( VAR8->VAR39 & VAR42 )
+VAR3->VAR32 |= VAR43;
+else
+VAR3->VAR32 |= VAR44;
+
+if ( VAR8->VAR37 > 0 )
+VAR3->VAR32 |= VAR45;
+
+if ( VAR8->VAR46 > 0 )
+VAR3->VAR32 |= VAR47;
+
+
+VAR3->VAR6 = VAR8->VAR6;
+if ( !VAR3->VAR6 )
+VAR3->VAR6 = VAR8->VAR48;
+
+
+VAR3->VAR7 = VAR8->VAR7;
+
+VAR3->VAR49 = 0;
+VAR3->VAR9 = NULL;
+
+VAR3->VAR50         = VAR8->VAR50;
+VAR3->VAR51 = (VAR52)VAR8->VAR53;
+VAR3->VAR54     = (VAR55) VAR8->VAR50.VAR56;
+VAR3->VAR57    = (VAR55) VAR8->VAR50.VAR58;
+
+VAR3->VAR59 = (VAR55)( ( VAR3->VAR51 * 12 ) / 10 );
+if ( VAR3->VAR59 < VAR3->VAR54 - VAR3->VAR57 )
+VAR3->VAR59 = (VAR55)( VAR3->VAR54 - VAR3->VAR57 );
+
+if ( VAR8->VAR37 > 0 )
+{
+FT_UInt          VAR60, VAR61 = VAR8->VAR37;
+VAR62*  VAR63;
+PFR_Strike       VAR64;
+FT_Memory        VAR2 = VAR3->VAR11->VAR2;
+
+
+if ( FUN16( VAR3->VAR9, VAR61 ) )
+goto VAR20;
+
+VAR63   = VAR3->VAR9;
+VAR64 = VAR8->VAR65;
+for ( VAR60 = 0; VAR60 < VAR61; VAR60++, VAR63++, VAR64++ )
+{
+VAR63->VAR59 = (VAR55)VAR64->VAR66;
+VAR63->VAR67  = (VAR55)VAR64->VAR68;
+VAR63->VAR63   = (VAR69)( VAR64->VAR66 << 6 );
+VAR63->VAR70 = (VAR69)( VAR64->VAR68 << 6 );
+VAR63->VAR71 = (VAR69)( VAR64->VAR66 << 6 );
+}
+VAR3->VAR49 = (VAR72)VAR61;
+}
+
+
+if ( ( VAR8->VAR39 & VAR40 ) == 0 )
+VAR3->VAR73 = (VAR55)VAR8->VAR74;
+else
+{
+FT_Int    VAR75 = 0;
+FT_UInt   VAR61 = VAR8->VAR31;
+PFR_Char  VAR76 = VAR8->VAR35;
+
+
+for ( ; VAR61 > 0; VAR61--, VAR76++ )
+{
+if ( VAR75 < VAR76->VAR77 )
+VAR75 = VAR76->VAR77;
+}
+
+VAR3->VAR73 = (VAR55)VAR75;
+}
+
+VAR3->VAR78 = VAR3->VAR59;
+
+VAR3->VAR79  = (VAR55)( -VAR3->VAR51 / 10 );
+VAR3->VAR80 = (VAR55)(  VAR3->VAR51 / 30 );
+
+
+{
+FT_CharMapRec  VAR81;
+
+
+VAR81.VAR1        = VAR3;
+VAR81.VAR82 = VAR83;
+VAR81.VAR84 = VAR85;
+VAR81.VAR86    = VAR87;
+
+VAR17 = FUN17( &VAR88, NULL, &VAR81, NULL );
+}
+
+
+if ( VAR8->VAR46 )
+VAR3->VAR32 |= VAR47;
+}
+
+VAR20:
+return VAR17;
+}
+
+
+
+
+
+
+
+
+
+
+FUN4( VAR10 )
+FUN18( FT_GlyphSlot  VAR89 )        
+{
+PFR_Slot        VAR90   = (VAR91)VAR89;
+FT_GlyphLoader  VAR92 = VAR89->VAR93->VAR92;
+
+
+FUN19( &VAR90->VAR94, VAR92 );
+
+return 0;
+}
+
+
+FUN4( void )
+FUN20( FT_GlyphSlot  VAR89 )        
+{
+PFR_Slot  VAR90 = (VAR91)VAR89;

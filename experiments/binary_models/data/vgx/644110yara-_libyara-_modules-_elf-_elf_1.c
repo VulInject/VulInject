@@ -1,0 +1,1 @@
+static const char * FUN1 ( const char * VAR1 , const char * VAR2 , int VAR3 ) { size_t VAR4 ; const char * VAR5 ; if ( VAR1 >= VAR2 ) { return VAR6 ; } if ( * VAR1 != '' ) { return NULL ; } if ( VAR3 < 0 ) { return NULL ; } VAR5 = VAR1 + VAR3 ; if ( VAR5 >= VAR2 ) { return NULL ; } VAR4 = FUN2 ( VAR5 , VAR2 - VAR5 ) ; if ( VAR5 + VAR4 == VAR2 ) { return NULL ; } return VAR5 ; }

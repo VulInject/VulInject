@@ -1,0 +1,1 @@
+static DecodeStatus FUN1 ( VAR1 * VAR2 , unsigned VAR3 , uint64_t VAR4 , const void * VAR5 ) { unsigned VAR6 ; VAR6 = FUN2 ( VAR5 , VAR7 , VAR3 ) ; FUN3 ( VAR2 , VAR6 ) ; return VAR8 ; }

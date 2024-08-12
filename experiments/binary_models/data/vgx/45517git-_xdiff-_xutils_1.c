@@ -1,0 +1,1 @@
+static int FUN1 ( const char * VAR1 , long VAR2 , long VAR3 ) { int VAR4 = VAR2 && VAR1 [ VAR2 - 1 ] == '' ; if ( VAR4 ) { VAR2 -- ; } if ( VAR4 && VAR2 == VAR3 + 1 && VAR1 [ VAR3 ] == '' ) { return 1 ; } return 0 ; }

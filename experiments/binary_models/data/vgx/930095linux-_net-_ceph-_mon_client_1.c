@@ -1,0 +1,1 @@
+static int FUN1 ( void * * VAR1 , void * VAR2 , bool VAR3 , struct VAR4 * VAR5 ) { void * VAR6 ; u32 VAR7 ; u8 VAR8 ; int VAR9 ; VAR9 = FUN2 ( VAR1 , VAR2 , 1 , "" , & VAR8 , & VAR7 ) ; VAR6 = * VAR1 + VAR7 ; FUN3 ( VAR1 , VAR2 , VAR10 ) ; VAR9 = FUN4 ( VAR1 , VAR2 , VAR3 , VAR5 ) ; if ( VAR9 ) { return VAR9 ; } * VAR1 = VAR6 ; return 0 ; e_inval return - VAR11 ; }

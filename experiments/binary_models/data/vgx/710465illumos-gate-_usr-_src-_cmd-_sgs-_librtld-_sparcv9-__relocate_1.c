@@ -1,0 +1,1 @@
+void FUN1 ( void * VAR1 ) { VAR2 * VAR3 = VAR1 ; VAR3 -> VAR4 = 0 ; VAR3 -> VAR5 = FUN2 ( 0 , VAR6 ) ; }

@@ -1,0 +1,32 @@
+static void
+FUN1(VAR1 *VAR2)
+{
+union VAR3 *VAR4 =
+(union VAR3 *)(&VAR2->VAR5.VAR6);
+VAR7 *VAR8 = &VAR2->VAR9;
+x86_chiprev_t VAR10 = VAR8->VAR11;
+VAR12 *VAR13;
+int VAR14 = 0, VAR15 = 0;
+
+
+if (VAR2->VAR16 == VAR17)
+VAR14 = VAR18 != 0;
+else if (VAR2->VAR16 == VAR19)
+VAR14 = FUN2(VAR4, VAR20);
+
+
+if (FUN3(VAR10, VAR21))
+VAR15 = FUN2(VAR4, VAR22);
+
+for (VAR13 = VAR2->VAR23; VAR13 != NULL; VAR13 = VAR13->VAR24) {
+mcdcfg_rslt_t VAR25;
+
+
+if (FUN4(VAR10, VAR8->VAR26, VAR8->VAR27,
+VAR13->VAR28.VAR29, VAR2->VAR16,
+VAR14, VAR15, &VAR25) < 0)
+continue;
+
+FUN5(VAR2, VAR13, &VAR25);
+}
+}

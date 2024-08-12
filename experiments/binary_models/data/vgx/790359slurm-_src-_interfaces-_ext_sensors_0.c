@@ -1,0 +1,22 @@
+extern int FUN1(VAR1 **VAR2,
+VAR3 *VAR4, uint16_t VAR5)
+{
+VAR1 *VAR6 = FUN2();
+*VAR2 = VAR6;
+if (VAR6 == NULL)
+return VAR7;
+
+if (VAR5 >= VAR8) {
+FUN3(&VAR6->VAR9, VAR4);
+FUN4(&VAR6->VAR10, VAR4);
+FUN5(&VAR6->VAR11, VAR4);
+FUN4(&VAR6->VAR12, VAR4);
+}
+
+return VAR13;
+
+VAR14:
+FUN6(VAR6);
+*VAR2 = NULL;
+return VAR7;
+}

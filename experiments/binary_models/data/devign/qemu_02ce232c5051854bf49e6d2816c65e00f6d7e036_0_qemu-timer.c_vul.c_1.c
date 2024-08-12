@@ -1,0 +1,9 @@
+static void FUN1(QEMUClockType VAR1)
+{
+    VAR2 *VAR3 = FUN2(VAR1);
+    VAR3->VAR1 = VAR1;
+    VAR3->VAR4 = true;
+    VAR3->VAR5 = VAR6;
+    FUN3(&VAR3->VAR7);
+    FUN4(&VAR3->VAR8);
+    VAR9.VAR10[VAR1] = FUN5(VAR1, NULL, NULL);

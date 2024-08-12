@@ -1,0 +1,26 @@
+static VAR1
+FUN1(struct VAR2 *VAR2,
+char VAR3 *VAR4,
+size_t VAR5, VAR6 *VAR7)
+{
+struct VAR8 *VAR9 = VAR2->VAR10;
+int VAR11 = 0;
+char VAR12[32];
+const size_t VAR13 = sizeof(VAR12);
+int VAR14;
+
+if (!VAR9->VAR15)
+return -VAR16;
+
+VAR14 = FUN2(VAR9, VAR17);
+if (VAR14)
+return VAR14;
+
+VAR11 += FUN3(VAR12 + VAR11, VAR13 - VAR11, "",
+VAR9->VAR15,
+FUN4(VAR9->VAR18, VAR9->VAR15));
+
+FUN5(VAR9, VAR17);
+
+return FUN6(VAR4, VAR5, VAR7, VAR12, VAR11);
+}

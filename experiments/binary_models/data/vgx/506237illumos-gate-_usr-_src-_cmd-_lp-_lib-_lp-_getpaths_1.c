@@ -1,0 +1,1 @@
+void FUN1 ( void ) { return ; } void FUN2 ( char * VAR1 ) { return ; } char * FUN3 ( char * VAR2 , char * VAR3 ) { char * VAR4 ; VAR4 = makepath ( VAR5 , VAR2 , VAR3 , NULL ) ; return ( VAR4 ) ; }

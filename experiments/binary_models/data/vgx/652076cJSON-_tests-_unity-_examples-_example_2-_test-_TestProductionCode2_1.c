@@ -1,0 +1,1 @@
+FUN1 ( VAR1 , NULL ) ; FUN2 ( ) { }

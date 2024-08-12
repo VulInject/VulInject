@@ -1,0 +1,1 @@
+FUN1 ( ) { CmodeInfo VAR1 ; ModDataInfo VAR2 ; FUN2 ( VAR3 ) ; memset ( & VAR1 , 0 , sizeof ( VAR1 ) ) ; VAR1 . VAR4 = VAR5 ; VAR1 . VAR6 = '' ; VAR1 . VAR7 = '' ; VAR1 . VAR8 = '' ; VAR1 . VAR9 = VAR10 ; VAR1 . VAR11 = 1 ; VAR1 . VAR12 = VAR13 ; FUN3 ( VAR3 -> VAR14 , VAR1 , NULL ) ; return VAR15 ; }

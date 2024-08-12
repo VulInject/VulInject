@@ -1,0 +1,18 @@
+void FUN1(struct VAR1 *VAR2, void VAR3 *VAR4,
+struct VAR5 *VAR6)
+{
+dma_addr_t VAR7;
+size_t VAR8;
+u32 VAR9;
+u32 VAR10;
+
+VAR7 = FUN2(VAR6, 0);
+VAR9 = VAR2->VAR11 ? VAR12 : 0;
+VAR10 = VAR7 & VAR13;
+VAR8 = FUN3(VAR6, 0);
+
+FUN4(VAR9 & ~0xf, VAR4 + VAR14);
+FUN4(VAR10 & 0xf, VAR4 + VAR15);
+FUN4(VAR7 & ~0xf, VAR4 + VAR16);
+FUN4((VAR7 + VAR8) & ~0xf, VAR4 + VAR17);
+}

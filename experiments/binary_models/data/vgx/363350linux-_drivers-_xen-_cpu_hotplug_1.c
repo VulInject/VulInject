@@ -1,0 +1,1 @@
+static void FUN1 ( unsigned int VAR1 ) { if ( VAR1 >= VAR2 || ! FUN2 ( VAR1 ) ) { return ; } switch ( FUN3 ( VAR1 ) ) { case 1 : FUN4 ( VAR1 , NULL ) ; break ; case 0 : FUN5 ( VAR1 ) ; break ; default : break ; } }

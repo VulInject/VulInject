@@ -1,0 +1,134 @@
+static int FUN1(void)
+{
+struct perf_counts_values VAR1 = { .VAR2 = 0 };
+struct perf_counts_values VAR3[VAR4] = {{ .VAR2 = 0 },};
+struct VAR5 *VAR6;
+struct VAR7 *VAR8;
+struct VAR9 *VAR10;
+struct perf_event_attr VAR11 = {
+.VAR12	     = VAR13,
+.VAR14	     = VAR15,
+.VAR16 = VAR17 |
+VAR18,
+.VAR19    = 1,
+};
+int VAR20, VAR21, VAR22 = 0;
+unsigned long VAR23;
+long long VAR24 = 0, VAR25 = 0, VAR26 = 0;
+double VAR27 = 0.0;
+s8 VAR28 = 0;
+
+
+VAR6 = FUN2();
+FUN3("", VAR6);
+
+FUN4(VAR6, 0, 0);
+
+VAR10 = FUN5(&VAR11);
+FUN3("", VAR10);
+
+VAR20 = FUN6(VAR10, NULL, VAR6);
+FUN3("", VAR20 == 0);
+
+VAR20 = FUN7(VAR10);
+FUN3("", VAR20 == 0);
+
+
+VAR23 = VAR29;
+while (VAR23--)
+;
+
+FUN8(VAR10, 0, 0, &VAR1);
+FUN3("", VAR1.VAR2 != 0);
+FUN3("",
+VAR1.VAR30 == VAR1.VAR31);
+
+VAR20 = FUN9(VAR10);
+FUN3("", VAR20 == 0);
+
+FUN10(VAR10);
+FUN11(VAR10);
+
+FUN12(VAR6);
+
+
+VAR6 = FUN2();
+FUN3("", VAR6);
+
+FUN4(VAR6, 0, 0);
+
+VAR8 = FUN13();
+FUN3("", VAR8);
+
+for (VAR21 = 0; VAR21 < VAR4; VAR21++) {
+VAR10 = FUN5(&VAR11);
+FUN3("", VAR10);
+
+FUN14(VAR8, VAR10);
+}
+FUN15(VAR8, NULL, VAR6);
+
+VAR20 = FUN16(VAR8);
+FUN3("", VAR20 == 0);
+
+FUN17(VAR8);
+
+
+VAR23 = VAR29;
+while (VAR23--)
+;
+
+VAR21 = 0;
+FUN18(VAR8, VAR10) {
+FUN8(VAR10, 0, 0, &VAR3[VAR21]);
+FUN3("", VAR3[VAR21].VAR2 != 0);
+VAR21++;
+}
+
+FUN19(VAR8);
+
+VAR25 = VAR3[0].VAR2;
+for (VAR21 = 0; VAR21 < VAR4; VAR21++) {
+FUN20("" VAR32 "" VAR32 "" VAR32 "",
+VAR21, VAR3[VAR21].VAR2, VAR3[VAR21].VAR31, VAR3[VAR21].VAR30);
+
+FUN21(&VAR3[VAR21], true, &VAR28);
+if (VAR28 == 1) {
+FUN20("" VAR32 "" VAR32 "" VAR32 "",
+VAR3[VAR21].VAR2,
+(double)VAR3[VAR21].VAR31 / (double)VAR3[VAR21].VAR30 * 100.0,
+VAR3[VAR21].VAR31, VAR3[VAR21].VAR30);
+} else if (VAR28 == -1) {
+FUN20("");
+} else {
+FUN20("");
+}
+
+if (VAR3[VAR21].VAR2 > VAR24)
+VAR24 = VAR3[VAR21].VAR2;
+
+if (VAR3[VAR21].VAR2 < VAR25)
+VAR25 = VAR3[VAR21].VAR2;
+
+VAR26 += VAR3[VAR21].VAR2;
+
+if (VAR3[VAR21].VAR2 != 0)
+VAR22++;
+}
+
+if (VAR22 != 0)
+VAR26 = VAR26 / VAR22;
+else
+VAR26 = 0;
+
+VAR27 = FUN22(VAR26, VAR24, VAR25, VAR1.VAR2);
+
+FUN3("", ((VAR27 <= 1.0) && (VAR27 >= -1.0)));
+
+FUN23(VAR8);
+FUN24(VAR8);
+
+FUN12(VAR6);
+
+return 0;
+}

@@ -1,0 +1,1 @@
+const char * FUN1 ( struct VAR1 * VAR2 , zip_uint64_t VAR3 , zip_flags_t VAR4 , struct VAR5 * VAR6 ) { struct VAR7 * VAR8 ; const VAR9 * VAR10 ; if ( ( VAR8 = FUN2 ( VAR2 , VAR3 , VAR4 , VAR6 ) ) == NULL ) { return NULL ; } if ( ( VAR10 = FUN3 ( VAR8 -> VAR11 , NULL , VAR4 , VAR6 ) ) == NULL ) { return VAR12 ; } return ( const char * ) VAR10 ; }

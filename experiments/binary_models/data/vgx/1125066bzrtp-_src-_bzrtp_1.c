@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , uint32_t VAR3 ) { VAR4 * VAR5 = FUN2 ( VAR2 , VAR3 ) ; if ( VAR5 == NULL && VAR5 -> VAR6 ) { return VAR7 ; } bzrtpEvent_t VAR8 ; VAR8 . VAR9 = VAR10 ; VAR8 . VAR11 = 0 ; VAR8 . VAR12 = NULL ; VAR8 . VAR2 = VAR2 ; VAR8 . VAR5 = VAR5 ; if ( VAR5 -> VAR13 != NULL ) { return VAR5 -> FUN3 ( VAR8 ) ; } return 0 ; return VAR14 ; }

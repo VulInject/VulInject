@@ -1,0 +1,79 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+struct VAR5 *VAR6 = FUN3(VAR2);
+struct VAR7 *VAR8 = FUN4(VAR2);
+int VAR9;
+
+if (VAR4->VAR10) {
+VAR9 = FUN5(VAR2, VAR11,
+VAR12, &VAR6->VAR13);
+if (VAR9)
+return VAR9;
+
+if (VAR6->VAR13.VAR14 > VAR15)
+FUN6(VAR2,
+VAR15,
+&VAR6->VAR13);
+} else if (VAR8->VAR16) {
+VAR9 = FUN7(VAR2,
+&VAR2->VAR17.VAR18.VAR19.VAR20,
+&VAR6->VAR13);
+if (VAR9)
+return VAR9;
+} else {
+return -VAR21;
+}
+
+if (VAR6->VAR22) {
+VAR9 = FUN5(VAR2, VAR23,
+VAR12, &VAR6->VAR24);
+if (VAR9)
+return VAR9;
+
+if (VAR6->VAR24.VAR14 > VAR15)
+FUN6(VAR2,
+VAR15,
+&VAR6->VAR24);
+}
+if (VAR8->VAR25) {
+VAR9 = FUN7(VAR2,
+&VAR2->VAR17.VAR18.VAR19.VAR26,
+&VAR6->VAR24);
+if (VAR9)
+return VAR9;
+}
+
+if (VAR4->VAR27) {
+VAR9 = FUN5(VAR2, VAR28,
+VAR12, &VAR8->VAR29);
+
+if (VAR9) {
+VAR4->VAR27 = false;
+return VAR9;
+}
+
+if (VAR8->VAR29.VAR14 == 0) {
+VAR4->VAR27 = false;
+return -VAR21;
+}
+
+if (VAR8->VAR29.VAR14 > VAR15)
+FUN6(VAR2,
+VAR15,
+&VAR8->VAR29);
+}
+
+if (VAR8->VAR30) {
+VAR9 = FUN5(VAR2, VAR11,
+VAR31, &VAR8->VAR32);
+if (VAR9)
+VAR8->VAR30 = false;
+
+if ((VAR8->VAR32.VAR14 == 0) ||
+(VAR8->VAR32.VAR14 > VAR15))
+VAR8->VAR30 = false;
+}
+
+return 0;
+}

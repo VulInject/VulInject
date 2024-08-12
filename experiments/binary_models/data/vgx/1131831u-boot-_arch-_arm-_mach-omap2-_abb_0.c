@@ -1,0 +1,14 @@
+static void FUN1(u32 VAR1)
+{
+u32 VAR2, VAR3, VAR4;
+
+
+
+
+VAR2 = FUN2(VAR5, 1000000);
+VAR4 = FUN2(VAR6 * 10, VAR2);
+VAR3 = FUN2(VAR7 * 10, VAR4);
+
+FUN3(VAR1,
+VAR3 << (FUN4(VAR8) - 1));
+}

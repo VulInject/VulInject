@@ -1,0 +1,1 @@
+char * FUN1 ( const char * VAR1 , expandPathTypeT VAR2 , Boolean VAR3 ) { char VAR4 [ VAR5 + 1 ] ; char * VAR6 = FUN2 ( VAR1 ) ; char * VAR7 = FUN3 ( VAR6 , VAR2 ) ; if ( VAR3 ) { char * VAR8 = FUN4 ( VAR7 , VAR4 ) ; free ( VAR6 ) ; return xstrdup ( VAR8 ) ; } else { free ( VAR6 ) ; return VAR7 ; } }

@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 ) { Oid VAR3 ; Oid VAR4 ; bool VAR5 ; int16 VAR6 ; FmgrInfo VAR7 ; } VAR8 { DestReceiver VAR9 ; Portal VAR10 ; bool VAR11 ; TupleDesc VAR12 ; int VAR13 ; VAR8 * VAR14 ; int VAR15 ; MemoryContext VAR16 ; } VAR17

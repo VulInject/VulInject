@@ -1,0 +1,24 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+int VAR3 = 0;
+struct VAR4 *VAR5 = VAR2->VAR6;
+struct VAR7 *VAR7 = &VAR5->VAR7;
+
+memset(VAR7, 0, sizeof(*VAR7));
+FUN2(&VAR7->mutex);
+
+
+VAR7->VAR8.VAR9 = VAR2->VAR10;
+VAR7->VAR8.VAR11 = VAR5->VAR12 + 1;
+VAR7->VAR8.VAR13 = VAR5->VAR14;
+
+VAR7->VAR8.VAR15 = VAR16;
+VAR7->VAR17 = VAR7->VAR8.VAR11 / VAR16;
+
+VAR3 = FUN3(&VAR7->VAR8);
+if (FUN4(VAR3))
+FUN5("", VAR18, VAR3);
+
+FUN5("", VAR18, VAR3, VAR2);
+return VAR3;
+}

@@ -1,0 +1,431 @@
+void FUN1() {
+
+if (VAR1.VAR2 || VAR1.VAR3 || VAR1.VAR4) {
+if (FUN2(VAR5, 1, 0, 0, 0)) {
+FUN3("");
+FUN4(1);
+}
+}
+if (VAR1.VAR2 || VAR1.VAR3 || VAR1.VAR4) {
+FUN5("");
+FUN5("");
+}
+
+
+
+struct uwsgi_instance VAR6;
+struct VAR7 *VAR8;
+
+pid_t VAR9;
+int VAR10;
+int VAR11 = 0;
+int VAR12 = 0;
+int VAR13;
+
+void *VAR14;
+int VAR15;
+int VAR16;
+char VAR17[64];
+struct rlimit VAR18;
+
+VAR1.VAR19 = 1;
+
+VAR1.VAR20 = -1;
+
+if (VAR1.VAR21) {
+FUN6(VAR1.VAR21);
+}
+
+signal(VAR22, VAR23);
+signal(VAR24, VAR25);
+FUN7(VAR26, VAR27);
+FUN7(VAR28, VAR27);
+FUN7(VAR29, VAR27);
+FUN7(VAR30, VAR31);
+FUN7(VAR32, VAR33);
+FUN7(VAR34, VAR35);
+
+memset(&VAR6, 0, sizeof(struct VAR7));
+
+if (FUN8(VAR36, &VAR18)) {
+FUN3("");
+FUN4(1);
+}
+
+VAR1.VAR37 = VAR18.VAR38;
+
+VAR39 = VAR1.VAR40;
+VAR40 = 0;
+
+
+VAR1.VAR41 = FUN9();
+
+FUN10();
+
+VAR14 = FUN11(64);
+
+if (VAR1.VAR42) {
+FUN5("");
+}
+else {
+FUN5("");
+}
+
+if (VAR1.VAR31) {
+char *VAR43 = strchr(VAR1.VAR31, '');
+if (VAR43) {
+
+int VAR44 = VAR1.VAR45;
+VAR1.VAR45 = 1;
+VAR1.VAR20 = FUN12(VAR1.VAR31, VAR1.VAR46, VAR43);
+VAR1.VAR45 = VAR44;
+}
+else {
+VAR1.VAR20 = FUN13(VAR1.VAR31, VAR1.VAR46, VAR1.VAR47, VAR1.VAR48);
+}
+
+FUN14(VAR1.VAR41, VAR1.VAR20);
+FUN5("", VAR1.VAR31, VAR1.VAR20);
+}
+
+
+if (VAR1.VAR49) {
+char *VAR43 = strchr(VAR1.VAR49, '');
+if (VAR43) {
+VAR1.VAR50 = FUN12(VAR1.VAR49, VAR1.VAR46, VAR43);
+}
+else {
+VAR1.VAR50 = FUN13(VAR1.VAR49, VAR1.VAR46, VAR1.VAR47, VAR1.VAR48);
+}
+
+FUN14(VAR1.VAR41, VAR1.VAR50);
+FUN5("", VAR1.VAR49, VAR1.VAR50);
+}
+
+if (VAR1.VAR51) {
+char *VAR52 = strchr(VAR1.VAR51, '');
+if (VAR52) {
+VAR1.VAR53 = FUN15(VAR1.VAR51, 0, 0);
+}
+else {
+VAR1.VAR53 = FUN16(VAR1.VAR51);
+}
+
+FUN14(VAR1.VAR41, VAR1.VAR53);
+FUN5("", VAR1.VAR51, VAR1.VAR53);
+}
+
+VAR54 = &VAR6;
+
+int VAR55 = 0;
+
+FUN17(VAR1.VAR56, "", 1);
+
+
+if (VAR1.VAR42 && !VAR1.VAR57) {
+FUN5("");
+char VAR58 = 17;
+if (write(VAR1.VAR59, &VAR58, 1) != 1) {
+FUN3("");
+}
+VAR1.VAR57 = 1;
+}
+
+for (;;) {
+
+if (VAR60) {
+if (!VAR54->VAR61)
+break;
+if (FUN18() - VAR60 >= VAR1.VAR62) {
+VAR8 = VAR54->VAR61;
+while (VAR8) {
+FUN19("", VAR8->VAR63);
+if (FUN20(VAR8->VAR64, VAR65) < 0) {
+FUN3("");
+FUN21(VAR8);
+break;
+}
+VAR8 = VAR8->VAR61;
+}
+break;
+}
+VAR8 = VAR54->VAR61;
+while (VAR8) {
+struct VAR7 *VAR66 = VAR8;
+VAR8 = VAR8->VAR61;
+pid_t VAR67 = FUN22(VAR66->VAR64, &VAR10, VAR68);
+if (VAR67 > 0 || VAR67 < 0) {
+FUN21(VAR66);
+}
+}
+sleep(1);
+continue;
+}
+
+if (!VAR12) {
+VAR9 = FUN22(VAR1.VAR69, &VAR10, VAR68);
+if (VAR9 < 0 || VAR9 > 0) {
+VAR12 = 1;
+}
+}
+
+VAR15 = FUN23(VAR1.VAR41, VAR55, VAR14, 64);
+VAR55 = VAR1.VAR70;
+
+for (VAR13 = 0; VAR13 < VAR15; VAR13++) {
+VAR16 = FUN24(VAR14, VAR13);
+
+if (VAR1.VAR31 && VAR1.VAR20 > -1 && VAR16 == VAR1.VAR20) {
+FUN25(VAR1.VAR20);
+continue;
+}
+
+if (VAR1.VAR51 && VAR1.VAR53 > -1 && VAR16 == VAR1.VAR53) {
+FUN26(VAR1.VAR53);
+continue;
+}
+
+
+if (FUN27(VAR16)) {
+continue;
+}
+
+VAR8 = FUN28(VAR16);
+if (VAR8) {
+char VAR58;
+ssize_t VAR71 = read(VAR16, &VAR58, 1);
+
+if (VAR71 < 0 && FUN29()) continue;
+if (VAR71 <= 0) {
+
+FUN30(VAR1.VAR41, VAR16, FUN31());
+if (VAR8->VAR72 > 0) {
+
+VAR55 = VAR8->VAR72;
+}
+FUN32(VAR8);
+}
+else {
+if (VAR58 == 17) {
+VAR8->VAR57 = 1;
+VAR8->VAR73 = FUN18();
+FUN19("", VAR8->VAR63);
+
+FUN33(VAR8->VAR63);
+
+}
+
+else if (VAR58 == 26) {
+VAR8->VAR74 = FUN18();
+}
+else if (VAR58 == 22) {
+
+if (VAR8->VAR75 != -1) {
+FUN34(VAR8);
+}
+else {
+FUN35(VAR8);
+}
+}
+else if (VAR58 == 30 && VAR1.VAR76 > 0 && VAR1.VAR77 < VAR1.VAR76) {
+FUN19("", VAR8->VAR63);
+char *VAR78 = FUN36(VAR8->VAR63, "", "");
+
+FUN37(VAR8->VAR79, VAR78, FUN18(), NULL, 0, VAR8->VAR80, VAR8->VAR81, NULL);
+free(VAR78);
+}
+else if (VAR58 == 5) {
+VAR8->VAR82 = 1;
+VAR8->VAR83 = FUN18();
+FUN19("", VAR8->VAR63);
+}
+else if (VAR58 == 1) {
+VAR8->VAR84 = 1;
+VAR8->VAR85 = FUN18();
+FUN19("", VAR8->VAR63);
+}
+else if (VAR58 == 2) {
+FUN38(VAR8);
+}
+}
+}
+else {
+VAR8 = FUN39(VAR16);
+if (VAR8) {
+FUN30(VAR1.VAR41, VAR8->VAR75, FUN31());
+if (FUN40(VAR8)) {
+FUN21(VAR8);
+}
+}
+else {
+FUN5("", VAR16);
+close(VAR16);
+}
+}
+
+}
+
+FUN41();
+
+
+VAR8 = VAR54->VAR61;
+while (VAR8) {
+if (VAR8->VAR74 > 0) {
+FUN5("", VAR8->VAR74, VAR1.VAR86, VAR8->VAR74 + VAR1.VAR86, FUN18());
+if ((VAR8->VAR74 + VAR1.VAR86) < FUN18()) {
+FUN5("", VAR8->VAR63, VAR1.VAR86);
+
+VAR8->VAR74 = 0;
+if (VAR8->VAR64 > 0) {
+if (FUN20(VAR8->VAR64, VAR65) < 0) {
+FUN3("");
+FUN21(VAR8);
+break;
+}
+}
+}
+}
+VAR8 = VAR8->VAR61;
+}
+
+
+VAR87:
+
+VAR8 = VAR54;
+VAR11 = 0;
+while (VAR8->VAR61) {
+VAR8 = VAR8->VAR61;
+if (VAR8->VAR64 > -1) {
+VAR11++;
+}
+}
+
+if (VAR1.VAR88) {
+if (snprintf(VAR17, 64, "", VAR11) >= 34) {
+FUN42(VAR17);
+}
+}
+
+if (VAR11) {
+VAR9 = FUN22(VAR89, &VAR10, VAR68);
+}
+else {
+
+FUN22(VAR89, &VAR10, VAR68);
+VAR9 = 0;
+}
+if (VAR9 < 0) {
+
+
+if (VAR90 == VAR91) {
+FUN5("");
+VAR8 = VAR54->VAR61;
+while (VAR8) {
+struct VAR7 *VAR92 = VAR8;
+VAR8 = VAR8->VAR61;
+FUN21(VAR92);
+}
+}
+else {
+FUN3("");
+}
+}
+
+VAR8 = VAR54;
+while (VAR8->VAR61) {
+VAR8 = VAR8->VAR61;
+time_t VAR93 = FUN18();
+if (VAR9 > 0 && VAR8->VAR64 == VAR9) {
+if (VAR8->VAR72 == 0) {
+
+if (FUN43(VAR10) && FUN44(VAR10) == VAR94) {
+
+FUN21(VAR8);
+}
+else {
+
+char *VAR95 = NULL;
+if (VAR8->VAR95) {
+VAR95 = FUN45(VAR8->VAR95);
+}
+char *VAR96 = NULL;
+if (VAR8->VAR96) {
+VAR96 = FUN45(VAR8->VAR96);
+}
+FUN37(VAR8->VAR79, VAR8->VAR63, VAR8->VAR97, VAR95, VAR8->VAR98, VAR8->VAR80, VAR8->VAR81, VAR96);
+FUN21(VAR8);
+
+VAR55 = 1;
+}
+break;
+}
+else if (VAR8->VAR72 == 1) {
+
+FUN21(VAR8);
+
+VAR55 = 1;
+break;
+}
+
+else if (VAR8->VAR72 == 2) {
+FUN14(VAR1.VAR41, VAR8->VAR75);
+close(VAR8->VAR99[0]);
+VAR8->VAR99[0] = -1;
+if (VAR8->VAR100) {
+close(VAR8->VAR101[0]);
+VAR8->VAR101[0] = -1;
+}
+VAR8->VAR64 = -1;
+VAR8->VAR72 = 0;
+VAR8->VAR102 = 0;
+VAR8->VAR84 = 0;
+VAR8->VAR82 = 0;
+FUN5(""on VAR103\""%VAR104\"", VAR8->VAR63, VAR8->VAR96);
+if (FUN46(VAR1.VAR105, "", VAR8->VAR63, 0)) {
+FUN21(VAR8);
+VAR55 = 1;
+}
+break;
+}
+}
+else if (VAR8->VAR102 > 0) {
+if (VAR8->VAR64 == -1) {
+FUN21(VAR8);
+
+VAR55 = 1;
+break;
+}
+else if (VAR93 - VAR8->VAR102 >= VAR1.VAR106) {
+VAR8->VAR102 = VAR93;
+if (FUN20(VAR8->VAR64, VAR65) < 0) {
+FUN3("");
+
+FUN21(VAR8);
+}
+break;
+}
+}
+}
+
+
+if (VAR9 > 0)
+goto VAR87;
+
+
+}
+
+FUN19("");
+FUN42("");
+FUN4(0);
+
+}
+
+
+struct VAR107 {
+char *VAR108;
+uint16_t VAR109;
+char *VAR110;
+uint16_t VAR111;
+char *VAR112;
+uint16_t VAR113;
+};

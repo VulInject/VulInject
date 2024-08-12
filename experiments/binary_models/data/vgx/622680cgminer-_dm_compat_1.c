@@ -1,0 +1,1 @@
+int FUN1 ( uint8_t VAR1 , VAR2 * VAR3 , uint8_t VAR4 * VAR5 , uint32_t VAR6 , uint32_t VAR7 ) { if ( VAR7 ) { if ( FUN2 ( VAR1 , 100000 ) == VAR8 ) { return VAR8 ; } } if ( VAR7 ) { FUN3 ( VAR1 , 100000 ) ; } return VAR9 ; }

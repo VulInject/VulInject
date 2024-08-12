@@ -1,0 +1,65 @@
+FUN1 (VAR1         *VAR2,
+const VAR3 *VAR4)
+{
+VAR5    *VAR6;
+GeglRectangle  VAR7;
+GeglRectangle  VAR8;
+
+if (VAR2->VAR9 && VAR2->VAR10)
+return;
+
+VAR6 = FUN2 (FUN3 (VAR2));
+
+if (VAR4)
+{
+if (VAR4->VAR11 <= 0 || VAR4->VAR12 <= 0)
+return;
+
+if (VAR2->VAR9)
+{
+if (! FUN4 (&VAR7,
+FUN5 (VAR2->VAR13,
+VAR2->VAR14,
+VAR2->VAR15 - VAR2->VAR13,
+VAR2->VAR16 - VAR2->VAR14),
+VAR4))
+{
+return;
+}
+}
+else
+{
+VAR7 = *VAR4;
+}
+
+VAR8 = VAR7;
+}
+else
+{
+if (VAR2->VAR9)
+{
+VAR7.VAR17      = VAR2->VAR13;
+VAR7.VAR18      = VAR2->VAR14;
+VAR7.VAR11  = VAR2->VAR15 - VAR2->VAR13;
+VAR7.VAR12 = VAR2->VAR16 - VAR2->VAR14;
+}
+else
+{
+VAR7.VAR17      = 0;
+VAR7.VAR18      = 0;
+VAR7.VAR11  = FUN6  (FUN7 (VAR2));
+VAR7.VAR12 = FUN8 (FUN7 (VAR2));
+}
+
+VAR8 = VAR7;
+
+FUN9 (&VAR7, &VAR7, VAR6,
+VAR19);
+}
+
+FUN10 (VAR6, &VAR7);
+
+FUN11 (FUN3 (VAR2),
+VAR8.VAR17, VAR8.VAR18,
+VAR8.VAR11, VAR8.VAR12);
+}

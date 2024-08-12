@@ -1,0 +1,115 @@
+VAR1 FUN1( VAR2 *VAR3, VAR4 *VAR5, vec3_t VAR6, qboolean VAR7, int VAR8 ) {
+float VAR9, VAR10, VAR11, VAR12;
+vec3_t VAR13;
+aicast_predictmove_t VAR14;
+usercmd_t VAR15;
+qboolean VAR16;
+float VAR17;
+int VAR18 = 0, VAR19;
+int VAR20;
+float VAR21;
+qboolean VAR22 = VAR23;
+float VAR24;
+static int VAR25;
+
+FUN2( VAR26, VAR13 );
+
+
+
+if ( VAR3->VAR27->VAR28.VAR29 == VAR30 && VAR31[VAR3->VAR32].VAR33 <= 1 ) {
+return VAR23;
+}
+
+if ( VAR3->VAR34 > VAR35.VAR36 - rand() % 500 ) {
+return VAR23;
+}
+VAR3->VAR34 = VAR35.VAR36 + 50 + rand() % 500;
+
+if ( VAR25 == VAR35.VAR36 ) {
+return VAR23;
+}
+VAR25 = VAR35.VAR36;
+
+
+VAR16 =  ( VAR3->VAR27->VAR37 >= 0 ) &&
+( FUN3( VAR3, VAR3->VAR27->VAR37, VAR23 ) );
+
+
+VAR12 = 0;
+if ( VAR5 ) {
+VAR18 = FUN4( VAR3->VAR27->VAR38, VAR3->VAR27->VAR39, VAR5->VAR38, VAR3->VAR40 );
+}
+memcpy( &VAR15, &VAR3->VAR27->VAR41, sizeof( VAR42 ) );
+VAR15.VAR43 = 127;
+VAR15.VAR44 = 0;
+VAR15.VAR45 = 0;
+if ( VAR3->VAR46 >= 0 && VAR3->VAR47 >= VAR35.VAR36 ) {
+VAR22 = VAR48;
+} else if ( !VAR5 ) {
+VAR22 = VAR48;   
+}
+
+VAR24 = 0;
+
+if ( VAR22 ) {
+
+VAR17 = 300;
+VAR21 = 60;
+VAR20 = 1;
+} else {
+if ( VAR35.VAR36 % 1000 < 500 ) {
+VAR20 = 1;
+} else {
+VAR20 = -1;
+}
+VAR17 = 140;
+VAR21 = 35;
+}
+if ( VAR8 > VAR49 ) {
+VAR24 = VAR17;
+}
+
+for ( VAR9 = -VAR17 * VAR20; VAR9*VAR20 <= VAR24; VAR9 += VAR21 * VAR20 ) {
+if ( !VAR22 && !VAR9 ) {
+continue;
+}
+VAR10 = VAR3->VAR27->VAR28.VAR50[VAR51];
+VAR3->VAR27->VAR28.VAR50[VAR51] += VAR9 + VAR7 * 180;
+
+VAR15.VAR52[VAR51] = FUN5( FUN6( VAR3->VAR27->VAR28.VAR50[VAR51] ) );
+
+FUN7( VAR3, 5, 0.4, &VAR14, &VAR15, -1 );
+
+if ( VAR3->VAR46 >= 0 && VAR3->VAR47 >= VAR35.VAR36 ) {
+VAR11 = FUN8( VAR14.VAR53, VAR3->VAR54 );
+} else if ( VAR5 ) {
+
+VAR11 = 99999 - FUN8( VAR14.VAR53, VAR5->VAR39 );
+} else {
+VAR11 = FUN8( VAR14.VAR53, VAR3->VAR27->VAR28.VAR39 );
+}
+if (    ( VAR11 > VAR12 )
+
+
+&&  ( VAR14.VAR29 != VAR30 ) ) {
+
+if ( !VAR16 || FUN9( VAR3->VAR32, VAR3->VAR27->VAR37, VAR14.VAR53, VAR23, VAR23 ) ) {
+if ( !VAR5 || ( VAR19 = FUN4( FUN10( VAR14.VAR53 ), VAR14.VAR53, VAR5->VAR38, VAR3->VAR40 ) ) < ( VAR18 + 200 ) ) {
+VAR12 = VAR11;
+FUN2( VAR14.VAR53, VAR13 );
+}
+}
+}
+
+VAR3->VAR27->VAR28.VAR50[VAR51] = VAR10;
+}
+
+if ( VAR12 > 0 ) {
+FUN2( VAR13, VAR6 );
+return VAR48;
+} else {
+return VAR23;
+}
+
+
+}

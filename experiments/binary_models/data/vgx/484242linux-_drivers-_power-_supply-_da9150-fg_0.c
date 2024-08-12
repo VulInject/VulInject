@@ -1,0 +1,17 @@
+static VAR1 FUN1(struct VAR2 *VAR3, u8 VAR4, u8 VAR5)
+
+{
+u8 VAR6[VAR7];
+u8 VAR8;
+u32 VAR9 = 0;
+int VAR10;
+
+
+VAR8 = (VAR4 & VAR11) | VAR12;
+
+FUN2(VAR3->VAR13, VAR8, VAR5, VAR6);
+for (VAR10 = 0; VAR10 < VAR5; ++VAR10)
+VAR9 |= (VAR6[VAR10] << (VAR10 * VAR14));
+
+return VAR9;
+}

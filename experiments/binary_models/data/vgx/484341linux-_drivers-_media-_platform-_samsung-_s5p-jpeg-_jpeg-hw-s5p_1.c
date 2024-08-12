@@ -1,0 +1,1 @@
+void FUN1 ( void VAR1 * VAR2 , unsigned int VAR3 ) { cfs_time_t VAR4 ; VAR4 = FUN2 ( VAR2 + VAR5 ) ; VAR4 &= ~ 0xff ; VAR4 |= ( VAR3 >> 8 ) & 0xff ; FUN3 ( VAR4 , VAR2 + VAR5 ) ; VAR4 = FUN2 ( VAR2 + VAR6 ) ; VAR4 &= ~ 0xff ; VAR4 |= VAR3 & 0xff ; FUN3 ( VAR4 , VAR2 + VAR6 ) ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { int VAR3 = 0 ; switch ( VAR2 -> VAR4 . VAR5 ) { case VAR6 : case VAR7 : VAR3 = FUN2 ( VAR2 ) ; } return 0 ; }

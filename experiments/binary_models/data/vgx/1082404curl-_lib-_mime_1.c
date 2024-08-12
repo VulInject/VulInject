@@ -1,0 +1,1 @@
+static int FUN1 ( void * VAR1 , curl_off_t VAR2 , int VAR3 ) { VAR4 * VAR5 = ( VAR4 * ) VAR1 ; switch ( VAR3 ) { case VAR6 : VAR2 += VAR5 -> VAR7 . VAR2 ; break ; case VAR8 : VAR2 += VAR5 -> VAR9 ; break ; } VAR5 -> VAR7 . VAR2 = VAR2 ; return VAR10 ; }

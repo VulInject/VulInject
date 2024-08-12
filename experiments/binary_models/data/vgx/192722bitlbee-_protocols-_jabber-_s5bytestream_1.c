@@ -1,0 +1,1 @@
+gboolean FUN1 ( struct VAR1 * VAR2 , char * VAR3 , ... ) { va_list VAR4 ; FUN2 ( VAR4 , VAR3 ) ; int VAR5 [ 128 ] ; if ( vsnprintf ( VAR5 , 128 , VAR3 , VAR4 ) < 0 ) { sprintf ( VAR5 , "" ) ; } FUN3 ( VAR4 ) ; if ( VAR2 -> VAR6 -> VAR7 -> VAR8 ) { return FUN4 ( VAR2 , VAR5 ) ; } else { return FUN5 ( VAR2 , VAR5 ) ; } }

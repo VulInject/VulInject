@@ -1,0 +1,31 @@
+static char *
+FUN1(const VAR1 *VAR2)
+{
+VAR3 *VAR4 = FUN2();
+char *VAR5 = NULL;
+
+FUN3(VAR2);
+FUN3(VAR2->VAR6.VAR7);
+FUN3(FUN4(VAR2->VAR6.VAR7) != 0);
+FUN3(FUN4(VAR2->VAR6.VAR7)
+% VAR8 == 0);
+
+
+FUN5(VAR2->VAR6.VAR7,
+const VAR9 *, VAR10) {
+char *VAR11 = NULL;
+
+VAR11 = FUN6(VAR10);
+
+FUN7(VAR4, VAR11);
+} FUN8(VAR10);
+
+
+VAR5 = FUN9(VAR4,
+"", 1, NULL);
+
+FUN10(VAR4, char *, VAR12, FUN11(VAR12));
+FUN12(VAR4);
+
+return VAR5;
+}

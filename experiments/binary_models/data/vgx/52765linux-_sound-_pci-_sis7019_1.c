@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( struct VAR2 * VAR3 ) { struct VAR1 * VAR1 ; int VAR4 ; for ( VAR4 = 0 ; VAR4 < 64 ; VAR4 ++ ) { VAR1 = & VAR3 -> VAR5 [ VAR4 ] ; VAR1 -> VAR6 |= VAR7 ; VAR8 } VAR1 = NULL ; found_one return VAR1 ; }

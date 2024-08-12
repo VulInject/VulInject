@@ -1,0 +1,72 @@
+void
+FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+int VAR5, int VAR6, int *VAR7,
+const char **VAR8, int *VAR9, int VAR10, char VAR11, long VAR12)
+{
+const char *VAR13;
+
+
+if(!VAR14.VAR15 && FUN2(VAR2) &&
+(VAR10 == VAR16) && (VAR6 > *VAR7))
+return;
+
+if(VAR10 == VAR17 || (VAR10 == VAR16 && VAR6 <= *VAR7))
+{
+if (!(*VAR9 & VAR18))
+{
+if (*VAR4->VAR19.VAR13 == '')
+FUN3(VAR2, "", VAR4->VAR20);
+else
+FUN3(VAR2, "", VAR4->VAR20, VAR4->VAR19.VAR13);
+*VAR9 |= VAR18;
+}
+return;
+}
+
+if(!FUN4(VAR2, VAR4, VAR5, VAR9, VAR11))
+return;
+if(!FUN5(VAR2) && !FUN6(VAR2))
+{
+if(!(*VAR9 & VAR21))
+FUN7(VAR2, VAR22, FUN8(VAR22));
+*VAR9 |= VAR21;
+return;
+}
+
+if(FUN2(VAR2) && (++VAR23 > VAR24))
+return;
+
+if(VAR10 == VAR16 && VAR6 > *VAR7)
+{
+VAR13 = VAR8[(*VAR7)];
+(*VAR7)++;
+
+if(FUN9(VAR13))
+return;
+
+if(!FUN10(VAR2, VAR4, VAR13))
+return;
+
+FUN11(VAR4->VAR19.VAR13, VAR13, sizeof(VAR4->VAR19.VAR13));
+
+VAR25[VAR26].VAR27 = VAR11;
+VAR25[VAR26].VAR10 = VAR16;
+VAR25[VAR26].VAR28 =
+VAR14.VAR15 ? VAR29 : VAR30;
+VAR25[VAR26].VAR31 = NULL;
+VAR25[VAR26++].VAR32 = VAR13;
+}
+else if(VAR10 == VAR33)
+{
+if(!(*VAR4->VAR19.VAR13))
+return;
+
+*VAR4->VAR19.VAR13 = '';
+
+VAR25[VAR26].VAR27 = VAR11;
+VAR25[VAR26].VAR10 = VAR33;
+VAR25[VAR26].VAR28 = VAR29;
+VAR25[VAR26].VAR31 = NULL;
+VAR25[VAR26++].VAR32 = NULL;
+}
+}

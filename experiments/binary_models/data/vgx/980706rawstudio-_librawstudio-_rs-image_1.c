@@ -1,0 +1,1 @@
+FUN1 ( , , ) { VAR1 , VAR2 } RSImageSignals static guint VAR3 [ VAR2 ] { 0 } ; ; static void FUN2 ( VAR4 * VAR5 ) { VAR6 * VAR7 = FUN3 ( VAR5 ) ; gint VAR8 ; for ( VAR8 = 0 ; VAR8 < VAR7 -> VAR9 ; VAR8 ++ ) { FUN4 ( VAR7 -> VAR10 [ VAR8 ] ) ; } if ( FUN5 ( VAR11 ) -> VAR12 ) { FUN5 ( VAR11 ) -> FUN6 ( VAR5 ) ; } }

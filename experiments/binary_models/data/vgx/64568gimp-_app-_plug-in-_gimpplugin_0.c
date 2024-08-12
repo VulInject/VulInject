@@ -1,0 +1,29 @@
+FUN1 (const VAR1 *VAR2)
+{
+LPWSTR       VAR3;
+const VAR1 *VAR4;
+VAR1       *VAR5;
+LPWSTR       VAR6;
+DWORD        VAR7;
+
+VAR3 = NULL;
+VAR6 = NULL;
+VAR4 = FUN2 ();
+if (VAR2 &&
+(VAR3 = FUN3 (VAR2, -1, NULL, NULL, NULL)) &&
+FUN4 (VAR3, &VAR7) &&
+VAR7 == VAR8)
+VAR5 = FUN5 (VAR4, VAR9, NULL);
+else
+VAR5 = FUN5 (VAR4, "", NULL);
+
+VAR6 = FUN3 (VAR5, -1, NULL, NULL, NULL);
+if (VAR6)
+{
+FUN6 (VAR6);
+FUN7 (VAR6);
+}
+
+FUN7 (VAR5);
+FUN7 (VAR3);
+}

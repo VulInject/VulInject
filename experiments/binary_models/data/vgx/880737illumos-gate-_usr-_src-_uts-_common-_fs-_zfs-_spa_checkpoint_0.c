@@ -1,0 +1,51 @@
+static void
+FUN1(void *VAR1, VAR2 *VAR3)
+{
+VAR4 *VAR5 = VAR1;
+int VAR6;
+
+
+uint64_t VAR7 =
+(VAR8 / (2 * sizeof (VAR9))) >> 1;
+
+
+spa_checkpoint_discard_sync_callback_arg_t VAR10;
+VAR10.VAR11 = VAR5;
+VAR10.VAR12 = VAR3->VAR13;
+VAR10.VAR14 = VAR7;
+
+uint64_t VAR15 =
+FUN2(VAR5->VAR16) / sizeof (VAR9);
+
+VAR6 = FUN3(VAR5->VAR16,
+VAR17, &VAR10, VAR3);
+
+uint64_t VAR18 =
+FUN2(VAR5->VAR16) / sizeof (VAR9);
+
+FUN4(VAR5->VAR19);
+
+FUN5(""
+"",
+VAR3->VAR13, VAR5->VAR20, (VAR15 - VAR18),
+VAR18);
+
+if (VAR6 != VAR21) {
+if (VAR6 != 0) {
+FUN6(""
+""
+"",
+VAR6, VAR5->VAR20);
+}
+FUN7(VAR18);
+FUN7(FUN8(VAR5->VAR16));
+FUN7(FUN2(VAR5->VAR16));
+
+FUN9(VAR5->VAR16, VAR3);
+FUN10(VAR5->VAR16);
+VAR5->VAR16 = NULL;
+
+FUN11(FUN12(FUN13(VAR5->VAR19),
+VAR5->VAR22, VAR23, VAR3));
+}
+}

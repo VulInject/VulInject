@@ -1,0 +1,24 @@
+VAR1
+FUN1(VAR2 *VAR3, VAR4 *VAR5, VAR6 *VAR7)
+{
+xvattr_t VAR8;
+VAR9 *VAR10;
+
+if ((VAR3->VAR11 != VAR12) ||
+!(FUN2(VAR3->VAR13, VAR14)))
+return (VAR15);
+
+FUN3(&VAR8);
+VAR10 = FUN4(&VAR8);
+FUN5(VAR10);
+FUN6(&VAR8, VAR16);
+
+if (FUN7(VAR3, &VAR8.VAR17, 0, VAR5, VAR7))
+return (VAR15);
+
+if ((!(VAR8.VAR17.VAR18 & VAR19)) ||
+(!(FUN8(&VAR8, VAR16))))
+return (VAR15);
+
+return (VAR10->VAR20 ? VAR21 : VAR15);
+}

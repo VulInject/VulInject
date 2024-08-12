@@ -1,0 +1,35 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+VAR5 *VAR6;
+const char *VAR7, *VAR8;
+char *VAR9 = NULL, *VAR10 = NULL;
+int VAR11 = 0;
+
+FUN2(VAR4->VAR12 == VAR13);
+VAR6 = (VAR5 *)VAR4;
+
+if ((VAR7 = strchr(VAR6->VAR8, '')) != NULL) {
+VAR9 = FUN3(VAR6->VAR8, (VAR7 - VAR6->VAR8));
+FUN4(VAR9);
+
+VAR10 = FUN5(VAR7 + 1);
+FUN4(VAR10);
+
+VAR8 = VAR10;
+} else {
+VAR8 = VAR6->VAR8;
+}
+
+if (FUN6(VAR2->VAR14,
+VAR8, VAR9, VAR6->VAR15) < 0) {
+FUN7(VAR16, "",
+FUN8(VAR2->VAR14));
+VAR11 = -1;
+goto VAR17;
+}
+
+VAR17:
+FUN9(VAR9);
+FUN9(VAR10);
+return VAR11;
+}

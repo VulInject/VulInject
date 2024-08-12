@@ -1,0 +1,1 @@
+static const char * FUN1 ( struct VAR1 * VAR2 , int * VAR3 ) { const struct VAR4 * VAR5 ; VAR5 = FUN2 ( VAR2 -> VAR6 -> VAR7 , VAR2 ) ; if ( ! VAR5 ) { return VAR8 ; } * VAR3 = ( int ) VAR5 -> VAR9 ; return FUN3 ( VAR2 ) ; }

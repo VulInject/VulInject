@@ -1,0 +1,42 @@
+int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR5;
+struct VAR6 *VAR6;
+struct VAR7 *VAR8;
+int VAR9;
+
+VAR4->VAR10 = FUN2(VAR2->VAR11, VAR12,
+sizeof(*VAR4->VAR10),
+VAR13);
+
+if (!VAR4->VAR10)
+return -VAR14;
+
+for (VAR9 = 0; VAR9 < FUN3(VAR15); VAR9++) {
+const struct VAR16 *VAR17 = &VAR15[VAR9];
+
+VAR6 = FUN4(VAR2->VAR11, VAR17->VAR18, VAR17->VAR19,
+VAR17->VAR20, VAR2->VAR21 + VAR17->VAR22,
+VAR17->VAR23, VAR17->VAR24, NULL);
+
+if (FUN5(VAR6)) {
+FUN6(VAR2->VAR11, "",
+VAR17->VAR18, FUN7(VAR6));
+continue;
+}
+
+
+VAR8 = FUN8(sizeof(*VAR8), VAR13);
+if (!VAR8)
+return -VAR14;
+
+VAR8->VAR6 = VAR6;
+VAR8->VAR25 = VAR17->VAR18;
+VAR8->VAR26 = FUN9(VAR2->VAR11);
+FUN10(VAR8);
+
+VAR4->VAR10[VAR9] = VAR8;
+}
+
+return 0;
+}

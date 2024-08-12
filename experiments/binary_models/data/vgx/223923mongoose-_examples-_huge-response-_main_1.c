@@ -1,0 +1,1 @@
+int main ( void ) { struct mg_mgr VAR1 ; FUN1 ( & VAR1 ) ; srand ( FUN2 ( NULL ) ) ; FUN3 ( & VAR1 , 5000 , VAR2 | VAR3 , VAR4 , NULL ) ; FUN4 ( & VAR1 , VAR5 , VAR6 ) ; FUN5 ( ( "" , VAR5 ) ) ; for ( ; ; ) { FUN6 ( & VAR1 , 1000 ) ; } FUN7 ( & VAR1 ) ; return 0 ; }

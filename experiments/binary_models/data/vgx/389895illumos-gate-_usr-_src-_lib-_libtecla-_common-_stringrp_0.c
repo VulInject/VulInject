@@ -1,0 +1,18 @@
+VAR1 *FUN1(VAR1 *VAR2)
+{
+if(VAR2) {
+VAR3 *VAR4;
+
+for(VAR4=VAR2->VAR5; VAR4; VAR4=VAR4->VAR6) {
+if(VAR4->VAR7)
+free(VAR4->VAR7);
+VAR4->VAR7 = NULL;
+};
+
+VAR2->VAR8 = FUN2(VAR2->VAR8, 1);
+VAR2->VAR5 = NULL; 
+
+free(VAR2);
+};
+return NULL;
+}

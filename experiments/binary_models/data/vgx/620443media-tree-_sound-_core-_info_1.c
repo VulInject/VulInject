@@ -1,0 +1,1 @@
+int FUN1 ( const char * VAR1 ) { static char * VAR2 [ ] { "" "" "" "" "" "" "" "" "" "" "" NULL } ; ; char * * VAR3 = VAR2 ; while ( * VAR3 ) { VAR3 ++ ; } if ( ! FUN2 ( VAR1 , "" , 4 ) ) { return 0 ; } return 1 ; }

@@ -1,0 +1,1 @@
+__u32 FUN1 ( struct VAR1 * VAR2 ) { switch ( VAR2 -> VAR3 ) { case VAR4 : { struct VAR5 * VAR6 = FUN2 ( VAR2 ) ; FUN3 ( "" , VAR2 ) ; } default : return 0 ; } }

@@ -1,0 +1,58 @@
+static struct VAR1 *
+FUN1(struct VAR2 *VAR3,
+const void *VAR4)
+{
+const struct VAR5 *VAR6 = VAR4;
+struct VAR7 *VAR8;
+struct clk_init_data VAR9;
+const char *VAR10;
+int VAR11;
+
+if (VAR6->VAR12 != 1) {
+VAR10 = FUN2(VAR3->VAR13, VAR14,
+"", VAR6->VAR15);
+if (!VAR10)
+return NULL;
+} else {
+VAR10 = VAR6->VAR15;
+}
+
+memset(&VAR9, 0, sizeof(VAR9));
+
+VAR9.VAR16 = &VAR6->VAR17;
+VAR9.VAR18 = 1;
+VAR9.VAR15 = VAR10;
+VAR9.VAR19 = &VAR20;
+VAR9.VAR21 = VAR6->VAR21 | VAR22;
+
+VAR8 = FUN3(VAR3->VAR13, sizeof(*VAR8), VAR14);
+if (!VAR8)
+return NULL;
+
+VAR8->VAR23.VAR24 = VAR3->VAR25 + VAR6->VAR26;
+VAR8->VAR23.VAR27 = VAR28;
+VAR8->VAR23.VAR29 = VAR30;
+VAR8->VAR23.VAR21 = VAR31;
+VAR8->VAR23.VAR32 = &VAR3->VAR33;
+VAR8->VAR23.VAR34.VAR9 = &VAR9;
+VAR8->VAR23.VAR35 = NULL;
+
+VAR8->VAR3 = VAR3;
+VAR8->VAR4 = VAR6;
+
+VAR11 = FUN4(VAR3->VAR13, &VAR8->VAR23.VAR34);
+if (VAR11)
+return FUN5(VAR11);
+
+
+if (VAR6->VAR12 != 1) {
+return FUN6(VAR3->VAR13,
+VAR6->VAR15,
+VAR10,
+VAR36,
+1,
+VAR6->VAR12);
+}
+
+return &VAR8->VAR23.VAR34;
+}

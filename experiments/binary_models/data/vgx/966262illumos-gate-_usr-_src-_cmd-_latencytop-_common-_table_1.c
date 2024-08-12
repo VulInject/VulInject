@@ -1,0 +1,1 @@
+const char * FUN1 ( int VAR1 ) { VAR2 * VAR3 ; VAR3 = ( VAR2 * ) FUN2 ( VAR4 , VAR1 ) ; if ( VAR3 == NULL ) { return ( NULL ) ; } else { return ( VAR3 -> VAR5 ) ; } }

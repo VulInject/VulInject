@@ -1,0 +1,1 @@
+FUN1 ( ) { dl_info_req_t VAR1 ; ssize_t VAR2 ; VAR1 . VAR3 = VAR4 ; FUN2 ( VAR5 , & VAR1 , sizeof ( VAR1 ) , NULL , 0 , VAR6 ) ; VAR2 = FUN3 ( VAR5 ) ; if ( VAR2 < ( VAR7 ) VAR8 || VAR9 [ 0 ] != VAR10 ) { return - 1 ; } else { return VAR2 ; } }

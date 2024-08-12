@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , int VAR3 ) { struct VAR4 * VAR5 = VAR2 -> VAR5 ; FUN2 ( & VAR5 -> VAR6 ) ; if ( VAR5 -> VAR7 == 0 ) { memset ( & VAR5 -> VAR8 , 0 , sizeof ( VAR9 ) ) ; VAR5 -> VAR8 . VAR10 = VAR11 ; VAR5 -> VAR8 . VAR12 = VAR5 -> VAR13 ; FUN3 ( & VAR5 -> VAR8 ) ; FUN4 ( VAR5 , NULL ) ; } VAR5 -> VAR7 ++ ; FUN5 ( & VAR5 -> VAR6 ) ; return 0 ; }

@@ -1,0 +1,1 @@
+unsigned long FUN1 ( struct VAR1 * VAR2 , resource_size_t VAR3 , resource_size_t VAR4 ) { struct VAR5 * VAR6 ; VAR6 = FUN2 ( VAR2 , NULL ) ; if ( ! VAR6 || VAR6 -> VAR7 == VAR8 ) { FUN3 ( "" ) ; return ~ 0UL ; } if ( VAR6 -> VAR4 < VAR4 ) { FUN3 ( "" , & VAR4 , & VAR6 -> VAR4 ) ; return ~ 0UL ; } return VAR3 - VAR6 -> VAR9 + VAR6 -> VAR10 ; }

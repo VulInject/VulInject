@@ -1,0 +1,1 @@
+FUN1 ( VAR1 , VAR2 ) ; static int __init FUN2 ( void ) { return FUN3 ( & VAR3 ) ; }

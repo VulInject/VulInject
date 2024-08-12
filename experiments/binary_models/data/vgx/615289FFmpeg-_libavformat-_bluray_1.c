@@ -1,0 +1,1 @@
+static int64_t FUN1 ( VAR1 * VAR2 , int64_t VAR3 , int VAR4 ) { VAR5 * VAR6 = VAR2 -> VAR7 ; switch ( VAR4 ) { case VAR8 : case VAR9 : case VAR10 : return FUN2 ( VAR6 -> VAR6 , VAR3 ) ; case VAR11 : return FUN3 ( VAR6 -> VAR6 ) ; } FUN4 ( VAR2 , VAR12 , "" , VAR4 ) ; return FUN5 ( VAR13 ) ; }

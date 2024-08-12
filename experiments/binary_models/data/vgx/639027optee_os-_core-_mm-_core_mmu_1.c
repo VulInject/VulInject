@@ -1,0 +1,1 @@
+bool FUN1 ( uint32_t VAR1 , const void * VAR2 , size_t VAR3 ) { paddr_t VAR4 ; if ( VAR3 == 0 ) { return true ; } VAR4 = FUN2 ( ( void * ) VAR2 ) ; return FUN3 ( VAR1 , VAR4 , VAR3 ) ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( char VAR1 ) { static const char VAR2 [ ] "" ; ; const char * VAR3 ; VAR3 = strchr ( VAR2 , FUN2 ( ( int ) ( unsigned char ) VAR1 ) ) ; if ( VAR3 == NULL ) { return - 1 ; } return VAR3 - VAR2 ; }

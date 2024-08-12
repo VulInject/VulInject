@@ -1,0 +1,1 @@
+static FUN1 ( VAR1 ) ; static FUN2 ( VAR2 ) ; static inline struct VAR3 * FUN3 ( const char * VAR4 ) { struct VAR3 * VAR5 ; FUN4 ( , , ) return NULL ; }

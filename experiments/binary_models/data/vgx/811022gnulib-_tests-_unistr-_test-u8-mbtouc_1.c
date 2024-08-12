@@ -1,0 +1,1 @@
+main ( ) { FUN1 ( VAR1 , NULL ) ; FUN2 ( VAR1 ) ; return 0 ; }

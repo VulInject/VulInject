@@ -1,0 +1,1 @@
+static unsigned int FUN1 ( void * VAR1 , struct VAR2 * VAR3 , const struct VAR4 * VAR5 ) { int VAR6 ; VAR6 = FUN2 ( VAR1 , VAR3 , VAR5 ) ; return FUN3 ( VAR3 , VAR5 , VAR7 ) ; } static struct nf_hook_ops VAR8 [ ] VAR9 = { { . VAR10 = VAR11 . VAR12 = VAR13 . VAR14 = VAR15 . VAR16 = VAR17 } { . VAR10 = VAR18 . VAR12 = VAR13 . VAR14 = VAR19 . VAR16 = VAR20 } } ;

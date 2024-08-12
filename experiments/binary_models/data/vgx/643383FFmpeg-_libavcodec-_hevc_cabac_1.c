@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 ) { int VAR3 ; int VAR4 = ( 1 << ( FUN2 ( VAR2 -> VAR5 -> VAR6 . VAR7 -> VAR8 , 10 ) - 5 ) ) - 1 ; while ( VAR3 < VAR4 && FUN3 ( & VAR2 -> VAR9 ) ) { VAR3 ++ ; } return VAR3 ; }

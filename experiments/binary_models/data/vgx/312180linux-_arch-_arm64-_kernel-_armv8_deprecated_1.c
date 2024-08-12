@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , u32 VAR3 ) { char * VAR4 ; FUN2 ( VAR5 , 1 , 0 , VAR2 , VAR2 -> VAR6 ) ; if ( VAR3 ) { VAR4 = "" ; VAR2 -> VAR7 |= VAR8 ; } else { VAR4 = "" ; VAR2 -> VAR7 &= ~ VAR8 ; } FUN3 ( VAR4 , VAR2 -> VAR6 ) ; FUN4 ( ""%VAR9\"" , VAR10 -> VAR11 , ( unsigned long ) VAR10 -> VAR12 , VAR2 -> VAR6 ) ; return 0 ; }

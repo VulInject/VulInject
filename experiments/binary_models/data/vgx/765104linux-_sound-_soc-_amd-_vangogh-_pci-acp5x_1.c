@@ -1,0 +1,1 @@
+static int FUN1 ( void VAR1 * VAR2 ) { u32 VAR3 ; int VAR4 ; FUN2 ( 1 , VAR2 + VAR5 ) ; while ( ++ VAR4 < 500 ) { VAR3 = FUN3 ( VAR2 + VAR5 ) ; if ( VAR3 & VAR6 ) { break ; } FUN4 ( ) ; } FUN2 ( 0 , VAR2 + VAR5 ) ; VAR4 = 0 ; while ( ++ VAR4 < 500 ) { VAR3 = FUN3 ( VAR2 + VAR5 ) ; if ( ! VAR3 ) { return 0 ; } FUN4 ( ) ; } return - VAR7 ; }

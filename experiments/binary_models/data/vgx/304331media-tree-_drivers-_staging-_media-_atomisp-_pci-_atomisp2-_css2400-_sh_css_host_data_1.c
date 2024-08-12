@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( size_t VAR2 ) { struct VAR1 * VAR3 ; VAR3 = FUN2 ( sizeof ( VAR1 ) , VAR4 ) ; if ( ! VAR3 ) { return NULL ; } VAR3 -> VAR2 = ( VAR5 ) VAR2 ; VAR3 -> VAR6 = FUN3 ( VAR2 ) ; if ( ! VAR3 -> VAR6 ) { return NULL ; } return VAR3 ; }

@@ -1,0 +1,130 @@
+static int FUN1(struct VAR1 *VAR1, struct VAR2 *VAR3, void *VAR4)
+{
+char VAR5[VAR6];
+char VAR7[VAR8];
+enum ndp_msg_type VAR9 = FUN2(VAR3);
+int VAR10;
+
+FUN3(FUN4(VAR3), VAR7);
+FUN5("",
+FUN6(VAR3),
+FUN7(FUN8(VAR3), VAR5), VAR7);
+if (VAR9 == VAR11) {
+FUN5("");
+} else if (VAR9 == VAR12) {
+struct VAR13 *VAR14 = FUN9(VAR3);
+
+FUN5("");
+FUN5("", FUN10(VAR14));
+FUN5("",
+FUN11(VAR14) ? "" : "");
+FUN5("",
+FUN12(VAR14) ? "" : "");
+FUN5("");
+FUN13(FUN14(VAR14));
+FUN5("");
+FUN5("",
+FUN15(VAR14));
+FUN5("");
+if (FUN16(VAR14)) {
+FUN5("",
+FUN16(VAR14));
+} else {
+FUN5("");
+}
+FUN5("");
+if (FUN17(VAR14)) {
+FUN5("",
+FUN17(VAR14));
+} else {
+FUN5("");
+}
+
+FUN18(VAR10, VAR3, VAR15) {
+FUN5("");
+FUN19(FUN20(VAR3, VAR10),
+FUN21(VAR3, VAR10));
+}
+FUN18(VAR10, VAR3, VAR16) {
+FUN5("");
+FUN19(FUN22(VAR3, VAR10),
+FUN23(VAR3, VAR10));
+}
+FUN18(VAR10, VAR3, VAR17) {
+uint32_t VAR18;
+uint32_t VAR19;
+
+VAR18 = FUN24(VAR3, VAR10);
+VAR19 = FUN25(VAR3, VAR10);
+FUN5("",
+FUN7(FUN26(VAR3, VAR10), VAR5),
+FUN27(VAR3, VAR10));
+FUN5("");
+if (VAR18 == (VAR20) -1)
+FUN5("");
+else
+FUN5("", VAR18);
+FUN5("");
+if (VAR19 == (VAR20) -1)
+FUN5("");
+else
+FUN5("", VAR19);
+FUN5("",
+FUN28(VAR3, VAR10) ? "" : "");
+FUN5("",
+FUN29(VAR3, VAR10) ? "" : "");
+FUN5("",
+FUN30(VAR3, VAR10) ? "" : "");
+FUN5("");
+}
+FUN18(VAR10, VAR3, VAR21)
+FUN5("", FUN31(VAR3, VAR10));
+FUN18(VAR10, VAR3, VAR22) {
+FUN5("",
+FUN7(FUN32(VAR3, VAR10), VAR5),
+FUN33(VAR3, VAR10));
+FUN5("");
+FUN34(FUN35(VAR3, VAR10));
+FUN5("");
+FUN13(FUN36(VAR3, VAR10));
+FUN5("");
+}
+FUN18(VAR10, VAR3, VAR23) {
+struct VAR24 *VAR25;
+int VAR26;
+
+FUN5("");
+FUN37(VAR25, VAR26, VAR3, VAR10) {
+if (VAR26 != 0)
+FUN5("");
+FUN5("", FUN7(VAR25, VAR5));
+}
+FUN5("");
+FUN34(FUN38(VAR3, VAR10));
+FUN5("");
+}
+FUN18(VAR10, VAR3, VAR27) {
+char *VAR28;
+int VAR29;
+
+FUN5("");
+FUN39(VAR28, VAR29, VAR3, VAR10) {
+if (VAR29 != 0)
+FUN5("");
+FUN5("", VAR28);
+}
+FUN5("");
+FUN34(FUN40(VAR3, VAR10));
+FUN5("");
+}
+} else if (VAR9 == VAR30) {
+FUN5("");
+} else if (VAR9 == VAR31) {
+FUN5("");
+} else if (VAR9 == VAR32) {
+FUN5("");
+} else {
+return 0;
+}
+return 0;
+}

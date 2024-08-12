@@ -1,0 +1,1 @@
+size_t FUN1 ( struct VAR1 * VAR1 ) { switch ( VAR1 -> VAR2 ) { case VAR3 : case VAR4 : case VAR5 : case VAR6 : case VAR7 : return VAR1 -> VAR8 ; case VAR9 : case VAR10 : assert ( VAR1 -> VAR11 <= VAR1 -> VAR8 ) ; return VAR1 -> VAR8 - VAR1 -> VAR11 ; default : FUN2 ( ) ; } }

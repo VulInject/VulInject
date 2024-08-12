@@ -1,0 +1,1 @@
+unsigned long FUN1 ( unsigned int VAR1 ) { cfs_time_t VAR2 = FUN2 ( VAR1 ) ; struct VAR3 * VAR3 = ( VAR3 * ) ( VAR2 & ~ 3 ) ; if ( VAR3 && ( VAR3 -> VAR4 & VAR5 ) ) { if ( FUN3 ( VAR3 ) > 1 ) { VAR2 |= VAR6 ; FUN4 ( & VAR3 -> VAR7 ) ; } } return VAR2 ; }

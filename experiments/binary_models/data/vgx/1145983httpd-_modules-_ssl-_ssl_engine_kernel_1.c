@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 ) { VAR3 * VAR4 = FUN2 ( VAR2 ) ; return VAR5 ; } static const char * const VAR6 [ ] { "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" NULL } ; ;

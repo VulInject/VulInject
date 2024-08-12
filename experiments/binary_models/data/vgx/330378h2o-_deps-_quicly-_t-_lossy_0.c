@@ -1,0 +1,31 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+static VAR3 *VAR4;
+
+if (VAR2->VAR5.VAR6.VAR7 == 0) {
+if (VAR4 == NULL) {
+
+static uint64_t VAR8[2];
+VAR4 = FUN2(&VAR9, 1, &VAR8);
+++VAR8[0];
+}
+
+VAR2->VAR5.VAR6.VAR10 = 0;
+unsigned VAR11;
+for (VAR11 = 0; VAR11 != VAR2->VAR5.VAR6.VAR12.VAR13; ++VAR11) {
+
+uint64_t VAR14;
+do {
+uint32_t VAR15;
+FUN3(VAR4, &VAR15, "", 4);
+VAR14 = (VAR16)1 << (VAR15 % VAR2->VAR5.VAR6.VAR12.VAR17);
+} while ((VAR2->VAR5.VAR6.VAR10 & VAR14) != 0);
+
+VAR2->VAR5.VAR6.VAR10 |= VAR14;
+}
+VAR2->VAR5.VAR6.VAR7 = VAR2->VAR5.VAR6.VAR12.VAR17;
+}
+
+
+return ((VAR2->VAR5.VAR6.VAR10 >> --VAR2->VAR5.VAR6.VAR7) & 1) == 0;
+}

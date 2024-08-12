@@ -1,0 +1,10 @@
+FUN1 (VAR1 *VAR2, enum machine_mode VAR3,
+tree VAR4, int VAR5)
+{
+struct score_arg_info VAR6;
+FUN2 (VAR2, VAR3, VAR4, VAR5, &VAR6);
+VAR2->VAR7 = VAR6.VAR8 + VAR6.VAR9;
+if (VAR6.VAR10 > 0)
+VAR2->VAR10 = VAR6.VAR11 + VAR6.VAR10;
+VAR2->VAR12++;
+}

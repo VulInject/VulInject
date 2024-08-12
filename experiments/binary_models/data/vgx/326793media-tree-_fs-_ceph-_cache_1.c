@@ -1,0 +1,1 @@
+static uint16_t FUN1 ( const void * VAR1 , void * VAR2 , uint16_t VAR3 ) { struct ceph_aux_inode VAR4 ; const struct VAR5 * VAR6 = VAR1 ; const struct VAR7 * VAR7 = & VAR6 -> VAR8 ; VAR4 . VAR9 = VAR6 -> VAR10 ; VAR4 . VAR11 = VAR7 -> VAR12 ; VAR4 . VAR13 = FUN2 ( VAR7 ) ; memcpy ( VAR2 , & VAR4 , sizeof ( VAR4 ) ) ; return sizeof ( VAR4 ) ; }

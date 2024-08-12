@@ -1,0 +1,17 @@
+static int
+FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR4;
+
+FUN2(VAR4, 0x1200a8, 0x0);
+
+
+FUN2(VAR4, 0x12004c, 0x4);
+FUN2(VAR4, 0x122204, 0x2);
+FUN3(VAR4, 0x122204);
+
+
+FUN2(VAR4, 0x009080, 0x800186a0);
+
+return 0;
+}

@@ -1,0 +1,51 @@
+VAR1 main(int    argc,
+char **argv)
+{
+l_int32   VAR2, VAR3;
+l_int32   VAR4[6] = {17, 20, 21, 22, 23, 24};  
+VAR5      *VAR6, *VAR7, *VAR8;
+VAR9     *VAR10, *VAR11, *VAR12;
+VAR13  *VAR14;
+
+if (argc != 1) {
+FUN1("");
+return 1;
+}
+
+FUN2(1);
+FUN3("");
+
+
+VAR10 = FUN4("");
+VAR14 = FUN5(VAR10, 0, 0, 0, 128, 1);  
+FUN6(VAR14, 1);
+FUN7("", VAR14);
+
+
+FUN8(VAR14, 1);
+FUN9(VAR14, VAR14->VAR15, 0.0, 1.0, 1);
+
+
+VAR11 = FUN4("");
+
+
+for (VAR2 = 0; VAR2 < 6; VAR2++) {
+
+VAR3 = VAR4[VAR2];
+VAR6 = FUN10(VAR11, VAR3, VAR16);
+FUN11(VAR6, 100, 100);
+VAR7 = FUN12(VAR6);
+FUN13(VAR14, VAR7, 0, 0, NULL, &VAR12, NULL, 1);
+VAR8 = FUN14(VAR12, 1, 1.0, 20, 2);
+FUN11(VAR8, 800, 100);
+FUN15(&VAR6);
+FUN15(&VAR7);
+FUN15(&VAR8);
+FUN16(&VAR12);
+}
+
+FUN16(&VAR10);
+FUN16(&VAR11);
+FUN17(&VAR14);
+return 0;
+}

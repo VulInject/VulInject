@@ -1,0 +1,1 @@
+static const char * FUN1 ( VAR1 * VAR2 , const char * VAR3 , const char * VAR4 , int VAR5 ) { char VAR6 [ 32 ] ; mrb_value VAR7 = FUN2 ( VAR2 , VAR3 ) ; FUN3 ( VAR2 , VAR7 , "" ) ; FUN4 ( VAR2 , VAR7 , VAR4 ) ; FUN3 ( VAR2 , VAR7 , "" ) ; sprintf ( VAR6 , "" , VAR5 ) ; FUN4 ( VAR2 , VAR7 , VAR6 ) ; return FUN5 ( VAR7 ) ; }

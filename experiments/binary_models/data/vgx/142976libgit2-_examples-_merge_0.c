@@ -1,0 +1,72 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4, struct VAR5 *VAR6)
+{
+git_oid VAR7, VAR8;
+VAR9 *VAR10;
+VAR11 *VAR12;
+VAR13 *VAR14 = NULL;
+VAR15 *VAR16;
+VAR13 *VAR17;
+VAR18 **VAR19 = calloc(VAR6->VAR20 + 1, sizeof(VAR18 *));
+const char *VAR21 = NULL;
+size_t VAR22 = 0;
+char *VAR23;
+size_t VAR24;
+int VAR25;
+
+
+FUN2(FUN3(&VAR17, VAR2), "", NULL);
+if (FUN4(&VAR16, VAR2, VAR6->VAR26[0])) {
+fprintf(VAR27, "", VAR6->VAR26[0]);
+free(VAR19);
+return -1;
+}
+
+
+VAR25 = FUN5(&VAR14, VAR2, VAR6->VAR26[0]);
+FUN2(VAR25, "", FUN6()->VAR28);
+
+
+FUN2(FUN7(&VAR12, "", ""), "", NULL);
+
+
+if (VAR14 != NULL) {
+FUN2(FUN8(&VAR21, VAR14), "", NULL);
+} else {
+VAR21 = FUN9(FUN10(VAR16));
+}
+
+VAR22 = snprintf(NULL, 0, VAR29, (VAR14 ? "" : ""), VAR21);
+if (VAR22 > 0) VAR22++;
+VAR23 = malloc(VAR22);
+VAR25 = snprintf(VAR23, VAR22, VAR29, (VAR14 ? "" : ""), VAR21);
+
+
+if (VAR25 < 0) goto VAR30;
+
+
+VAR25 = FUN11((VAR31 **)&VAR19[0], VAR17, VAR32);
+FUN2(VAR25, "", NULL);
+for (VAR24 = 0; VAR24 < VAR6->VAR20; VAR24++) {
+FUN12(&VAR19[VAR24 + 1], VAR2, FUN10(VAR6->VAR33[VAR24]));
+}
+
+
+FUN2(FUN13(&VAR7, VAR4), "", NULL);
+FUN2(FUN14(&VAR10, VAR2, &VAR7), "", NULL);
+
+
+VAR25 = FUN15(&VAR8,
+VAR2, FUN16(VAR17),
+VAR12, VAR12,
+NULL, VAR23,
+VAR10,
+VAR6->VAR20 + 1, (const VAR18 **)VAR19);
+FUN2(VAR25, "", NULL);
+
+
+FUN17(VAR2);
+
+VAR30:
+free(VAR19);
+return VAR25;
+}

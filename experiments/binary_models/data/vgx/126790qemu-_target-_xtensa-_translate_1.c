@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 , uint32_t VAR3 ) { TCGv_i32 VAR4 = FUN2 ( VAR2 -> VAR5 ) ; TCGv_i32 VAR6 = FUN2 ( VAR3 ) ; FUN3 ( VAR7 , VAR4 , VAR6 ) ; FUN4 ( VAR4 ) ; if ( VAR3 == VAR8 || VAR3 == VAR9 ) { VAR2 -> VAR10 . VAR11 = VAR12 ; } }

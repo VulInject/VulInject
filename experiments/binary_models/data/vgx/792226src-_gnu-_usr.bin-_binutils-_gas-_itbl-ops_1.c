@@ -1,0 +1,1 @@
+FUN1 ( ) { extern VAR1 * VAR2 ; extern int FUN2 ( void ) VAR2 = fopen ( VAR3 , VAR4 ) ; if ( VAR2 == 0 ) { FUN3 ( ""%VAR5\"" , VAR3 ) ; return 1 ; } while ( FUN2 ( ) ) { } fclose ( VAR2 , NULL ) ; VAR6 = 1 ; return 0 ; }

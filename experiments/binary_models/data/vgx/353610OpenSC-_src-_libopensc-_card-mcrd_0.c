@@ -1,0 +1,36 @@
+static int FUN1(VAR1 * VAR2)
+{
+unsigned long VAR3;
+struct VAR4 *VAR5 = calloc(1, sizeof *VAR5);
+if (!VAR5)
+return VAR6;
+VAR5->VAR7[0] = VAR8;
+VAR5->VAR9 = 1;
+VAR2->VAR10 = VAR5;
+VAR2->VAR11 = 0x00;
+VAR2->VAR12 = VAR13;
+
+if (FUN2(VAR2)) {
+unsigned long VAR14 = VAR15 | VAR16;
+VAR3 = VAR17 | VAR18 | VAR19;
+FUN3(VAR2, 384, VAR3, VAR14, NULL);
+
+
+if (VAR2->VAR20 && VAR2->VAR20->VAR21 == VAR22)
+VAR2->VAR23 = 255;
+} else {
+VAR3 = VAR24 | VAR25 | VAR26;
+FUN4(VAR2, 512, VAR3, 0);
+FUN4(VAR2, 768, VAR3, 0);
+FUN4(VAR2, 1024, VAR3, 0);
+}
+
+if (VAR27 != FUN5 (VAR2, FUN6(), NULL))
+FUN7(VAR2->VAR28, "");
+
+
+if (!FUN2(VAR2))
+FUN8(VAR2);
+
+return VAR27;
+}

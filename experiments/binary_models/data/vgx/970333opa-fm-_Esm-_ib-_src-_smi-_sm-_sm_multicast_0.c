@@ -1,0 +1,127 @@
+VAR1 FUN1()
+{
+VAR2	*VAR3;
+VAR4	*VAR5;
+VAR6 	 *VAR7 = NULL;
+VAR8   *VAR9 = NULL, *VAR10 = NULL;
+int		VAR11, VAR12;
+STL_LID	VAR13;
+STL_LID	VAR14, VAR15;
+VAR16 *VAR17;
+Status_t VAR18;
+uint32 VAR19;
+bitset_t VAR20;
+
+if (!FUN2(&VAR21, &VAR20, (VAR22-VAR23+1))) {
+FUN3(VAR24, "");
+return VAR25;
+}
+
+VAR17 = &VAR26;
+
+for (VAR11=0; VAR11 < VAR27; VAR11++) {
+VAR28[VAR11]->VAR29 = 0;
+}
+
+if ((VAR18 = FUN4(&VAR30)) != VAR31) {
+FUN5("", VAR18);
+return VAR18;
+}
+
+FUN6();
+FUN7(VAR5) {
+if (VAR32 && !FUN8(&VAR5->VAR33)) {
+
+continue;
+}
+VAR19 = VAR5->VAR34 - VAR23;
+FUN9(&VAR20,VAR19);
+}
+
+FUN10();
+
+
+
+VAR14 = FUN11();
+
+FUN12(VAR17, VAR9) {
+for (VAR15 = VAR23; VAR15 <= VAR14; VAR15++) {
+VAR12 = VAR15-VAR23;
+if (!FUN13(&VAR20, VAR12))
+continue;
+VAR3 = NULL;
+if (VAR27 == 1) {
+VAR3 = VAR28[0];
+} else {
+FUN7(VAR5) {
+if (VAR5->VAR35 & VAR36)
+continue;
+if (VAR32 && !FUN8(&VAR5->VAR33)) {
+
+continue;
+}
+if (VAR5->VAR34 == VAR15) {
+VAR3 = VAR37[VAR5->VAR38][VAR5->VAR39].VAR40;
+break;
+}
+}
+}
+if (!VAR3)
+continue;
+if (!VAR3->VAR29)
+continue;
+
+if (VAR15 != VAR3->VAR29) {
+VAR13 = VAR3->VAR29 - VAR23;
+memcpy((void *)VAR9->VAR41[VAR12], (void *)VAR9->VAR41[VAR13],
+sizeof(VAR42) * VAR43);
+}
+}
+
+if (!VAR9->VAR44 && VAR45 && FUN14((VAR7 = FUN15(VAR9, 0)))) {
+if ((VAR10 = VAR46[VAR7->VAR47->VAR15].VAR48)) {
+if (  VAR10->VAR49.VAR50.VAR51.VAR52
+|| VAR9->VAR49.VAR50.VAR51.VAR52
+|| VAR9->VAR53) {
+if (!VAR9->VAR44) {
+VAR9->VAR44 = 1;
+}
+}
+} else {
+
+if (!VAR9->VAR44) {
+VAR9->VAR44 = 1;
+}
+}
+}
+}
+
+
+FUN16();
+
+if (VAR54.VAR55) {
+for (VAR11 = 0; VAR11 < VAR27; VAR11++) {
+FUN17(VAR28[VAR11], &VAR20);
+}
+}
+
+
+FUN12(VAR17, VAR9) {
+for (VAR15 = VAR23; VAR15 <= VAR14; VAR15++) {
+VAR12 = VAR15 - VAR23;
+if (!FUN13(&VAR20, VAR12))
+continue;
+if (!VAR9->VAR56 && VAR45 && FUN14((VAR7 = FUN15(VAR9, 0)))) {
+if ((VAR10 = VAR46[VAR7->VAR47->VAR15].VAR48)) {
+if (memcmp((void *)VAR9->VAR41[VAR12], (void *)VAR10->VAR41[VAR12], sizeof(VAR42) * VAR43))
+VAR9->VAR56 = 1;
+}
+}
+}
+}
+FUN18(&VAR20);
+
+(void)FUN19(&VAR30);
+
+return VAR31;
+}

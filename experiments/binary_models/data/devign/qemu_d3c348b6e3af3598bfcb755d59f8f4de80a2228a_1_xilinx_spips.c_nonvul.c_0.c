@@ -1,0 +1,26 @@
+static void FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = FUN2(VAR2);
+    FUN3(VAR2);
+    memset(VAR4->VAR5, 0, sizeof(VAR4->VAR5));
+    FUN4(&VAR4->VAR6);
+    FUN4(&VAR4->VAR6);
+    FUN5(&VAR4->VAR7);
+    VAR4->VAR5[VAR8] = VAR9;
+    VAR4->VAR5[VAR10] = 1;
+    VAR4->VAR5[VAR11] = VAR12;
+    VAR4->VAR5[VAR13] = 0x10;
+    VAR4->VAR5[VAR14] = 0x01090101;
+    VAR4->VAR5[VAR15] = VAR16;
+    VAR4->VAR5[VAR17] = 1;
+    VAR4->VAR5[VAR18] = 1;
+    VAR4->VAR5[VAR19] = 1;
+    VAR4->VAR5[VAR20] = VAR21;
+    VAR4->VAR5[VAR22] = VAR23;
+    VAR4->VAR5[VAR24] = VAR25;
+    VAR4->VAR5[VAR26] = VAR27;
+    VAR4->VAR5[VAR28] = VAR29;
+    VAR4->VAR30 = false;
+    VAR4->VAR31 = 0;
+    FUN6(VAR4);
+}

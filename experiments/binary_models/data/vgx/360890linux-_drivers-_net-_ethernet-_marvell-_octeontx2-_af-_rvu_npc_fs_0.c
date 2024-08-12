@@ -1,0 +1,55 @@
+static void FUN1(struct VAR1 *VAR1, struct VAR2 *VAR3,
+u64 VAR4, struct VAR5 *VAR6,
+struct VAR5 *VAR7,
+struct VAR8 *VAR9, u8 VAR10,
+int VAR11)
+{
+u64 VAR12 = FUN2(VAR7->VAR13);
+u64 VAR14 = FUN2(VAR7->VAR15);
+u64 VAR16 = FUN2(VAR6->VAR13);
+u64 VAR17 = FUN2(VAR6->VAR15);
+struct VAR5 *VAR18 = &VAR9->VAR19;
+struct VAR5 *VAR20 = &VAR9->VAR7;
+
+if (!VAR4)
+return;
+
+
+if (VAR4 & FUN3(VAR21))
+FUN4(VAR1, VAR22, VAR3, VAR23,
+0, ~0ULL, 0, VAR10);
+if (VAR4 & FUN3(VAR24))
+FUN4(VAR1, VAR22, VAR3, VAR25,
+0, ~0ULL, 0, VAR10);
+if (VAR4 & FUN3(VAR26))
+FUN4(VAR1, VAR22, VAR3, VAR27,
+0, ~0ULL, 0, VAR10);
+if (VAR4 & FUN3(VAR28))
+FUN4(VAR1, VAR22, VAR3, VAR29,
+0, ~0ULL, 0, VAR10);
+if (VAR4 & FUN3(VAR30))
+FUN4(VAR1, VAR22, VAR3, VAR31,
+0, ~0ULL, 0, VAR10);
+
+
+if (VAR4 & FUN3(VAR32))
+FUN4(VAR1, VAR22, VAR3, VAR33,
+0, ~0ULL, 0, VAR10);
+
+if (VAR4 & FUN3(VAR34))
+FUN4(VAR1, VAR35, VAR3, VAR36,
+0, ~0ULL, 0, VAR10);
+
+if (VAR4 & FUN3(VAR37)) {
+VAR9->VAR38 = FUN5(VAR6->VAR13) ? 2 : 1;
+FUN4(VAR1, VAR37, VAR3, VAR9->VAR38, 0,
+VAR9->VAR38, 0, VAR10);
+}
+do {									      \
+if (VAR4 & FUN3((VAR39))) {				      \
+FUN4(VAR1, (VAR39), VAR3, (VAR40), (VAR41),     \
+(VAR42), (VAR43), VAR10);		      \
+memcpy(&VAR18->VAR44, &VAR6->VAR44, sizeof(VAR6->VAR44));     \
+memcpy(&VAR20->VAR44, &VAR7->VAR44, sizeof(VAR7->VAR44));  \
+}								      \
+} while (0)

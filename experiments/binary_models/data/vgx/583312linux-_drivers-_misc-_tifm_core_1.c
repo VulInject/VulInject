@@ -1,0 +1,1 @@
+static const char * FUN1 ( unsigned char VAR1 , unsigned char VAR2 ) { const char * VAR3 [ 3 ] [ 3 ] { { "" "" "" } { "" "" "" } { "" "" "" } } ; ; if ( VAR2 > 2 || FUN2 ( 1 || VAR1 ) 3 ) { return VAR4 ; } return VAR3 [ VAR2 ] [ VAR1 - 1 ] ; }

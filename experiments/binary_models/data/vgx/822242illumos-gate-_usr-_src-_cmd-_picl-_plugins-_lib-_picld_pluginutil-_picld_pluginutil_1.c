@@ -1,0 +1,1 @@
+static int FUN1 ( char * VAR1 , VAR2 * VAR3 ) { char * VAR4 = NULL ; char * VAR5 = NULL ; char * VAR6 = NULL ; VAR4 = FUN2 ( VAR1 , VAR7 , & VAR6 ) ; VAR5 = FUN2 ( VAR6 , VAR7 , & VAR6 ) ; if ( VAR5 == NULL ) { return ( VAR8 ) ; } VAR3 -> VAR9 = strdup ( VAR5 ) ; if ( VAR3 -> VAR9 == NULL ) { return ( VAR10 ) ; } VAR3 -> VAR11 = 0 ; VAR3 -> VAR12 = 0 ; return ( VAR13 ) ; }

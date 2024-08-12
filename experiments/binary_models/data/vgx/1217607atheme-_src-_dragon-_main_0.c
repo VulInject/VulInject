@@ -1,0 +1,16 @@
+void
+FUN1(void)
+{
+if (VAR1.VAR2 == NULL)
+VAR1.VAR2 = FUN2("");
+
+if (VAR1.VAR3 == NULL)
+VAR1.VAR3 = FUN2("");
+
+if (VAR1.VAR4 == NULL)
+VAR1.VAR4 = FUN2("");
+
+FUN3(NULL);
+
+FUN4(VAR5, "", VAR1.VAR1);
+}

@@ -1,0 +1,28 @@
+void FUN1(enum sys_powerdown VAR1)
+{
+unsigned int VAR2;
+const struct VAR3 *VAR4;
+
+if (!VAR5 || !VAR5->VAR4)
+return;
+
+VAR4 = VAR5->VAR4;
+
+if (VAR4->VAR6)
+VAR4->FUN2(VAR1);
+
+if (VAR4->VAR7) {
+for (VAR2 = 0; (VAR4->VAR7[VAR2].VAR8 != VAR9); VAR2++)
+FUN3(VAR4->VAR7[VAR2].VAR10[VAR1],
+VAR4->VAR7[VAR2].VAR8);
+}
+
+if (VAR4->VAR11)
+VAR4->FUN4(VAR1);
+
+if (VAR4->VAR12) {
+for (VAR2 = 0; VAR4->VAR12[VAR2].VAR8 != VAR9; VAR2++)
+FUN3(VAR4->VAR12[VAR2].VAR10[VAR1],
+VAR4->VAR12[VAR2].VAR8);
+}
+}

@@ -1,0 +1,53 @@
+static void
+FUN1(void *VAR1)
+{
+(void) VAR1;
+unsigned int VAR2;
+
+FUN2(VAR3, VAR4);
+FUN2(VAR5, VAR4);
+FUN2(VAR6,
+VAR7);
+
+
+VAR8 *VAR9 = FUN3(sizeof(VAR8));
+FUN4(VAR9);
+VAR9->VAR10 = 1;
+
+
+or_connection_t VAR11;
+time_t VAR12 = 1281533250; 
+FUN5(VAR13,VAR14, FUN6(&FUN7(&VAR11)->VAR15,
+""));
+VAR16 *VAR15 = &FUN7(&VAR11)->VAR15;
+
+
+FUN8();
+uint32_t VAR17 = FUN9(NULL);
+uint32_t VAR18 =
+FUN10(NULL);
+
+
+FUN11(VAR19, VAR15, NULL, VAR12);
+for (VAR2 = 0; VAR2 < VAR18 ; VAR2++) {
+FUN12(&VAR11, NULL);
+}
+
+
+for (VAR2=0; VAR2 < VAR17-1; VAR2++) {
+FUN13(VAR9);
+}
+
+FUN5(VAR20, VAR14, FUN14(VAR9));
+
+
+FUN13(VAR9);
+FUN5(VAR21, VAR14, FUN14(VAR9));
+
+
+
+
+VAR22:
+FUN15(VAR9);
+FUN16();
+}

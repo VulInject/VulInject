@@ -1,0 +1,1 @@
+static inline void FUN1 ( VAR1 * VAR2 ) { sysctl_opts_t VAR3 [ ] { { IPV4_DEVCONF_PROMOTE_SECONDARIES 1 } { 0 0 } } ; ; FUN2 ( VAR2 -> VAR4 , VAR3 ) ; }

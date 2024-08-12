@@ -1,0 +1,1 @@
+extern int FUN1 ( VAR1 * VAR2 , List VAR3 ) { ListIterator VAR4 = NULL ; int VAR5 = VAR6 ; char * VAR7 ; FUN2 ( VAR2 ) ; if ( ! VAR3 ) { return VAR8 ; } VAR4 = FUN3 ( VAR3 ) ; while ( ( VAR7 = FUN4 ( VAR4 ) ) ) { FUN5 ( VAR2 , VAR7 ) ; } FUN6 ( VAR4 ) ; return VAR5 ; }

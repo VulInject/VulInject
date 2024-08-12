@@ -1,0 +1,1 @@
+static bool FUN1 ( const void * VAR1 , const struct VAR2 * VAR3 ) { const struct VAR4 * VAR5 = VAR1 ; return VAR5 -> VAR6 >= sizeof ( * VAR5 ) + VAR5 -> VAR7 + 1 ; }

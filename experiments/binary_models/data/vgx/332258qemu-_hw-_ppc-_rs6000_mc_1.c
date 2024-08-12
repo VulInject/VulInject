@@ -1,0 +1,1 @@
+static uint32_t FUN1 ( void * VAR1 , uint32_t VAR2 ) { VAR3 * VAR4 = VAR1 ; int VAR5 = 0 ; int socket ; for ( socket = 0 ; socket < 6 ; socket ++ ) { if ( VAR4 -> VAR6 [ socket ] == 32 ) { VAR5 |= ( 1 << socket ) ; } } FUN2 ( VAR2 , VAR5 ) ; return VAR5 ; }

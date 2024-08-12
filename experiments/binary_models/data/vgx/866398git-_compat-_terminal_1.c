@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { if ( VAR1 ) { signal ( VAR2 , VAR3 ) ; signal ( VAR4 , VAR3 ) ; signal ( VAR5 , VAR3 ) ; VAR6 = NULL ; } }

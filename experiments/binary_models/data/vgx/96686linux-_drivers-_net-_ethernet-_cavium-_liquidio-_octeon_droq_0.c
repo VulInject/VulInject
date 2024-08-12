@@ -1,0 +1,36 @@
+static int
+FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+union VAR5 *VAR6,
+struct VAR7 *VAR8)
+{
+u32 VAR9;
+octeon_dispatch_fn_t VAR10;
+struct VAR11 *VAR12;
+
+VAR9 = FUN2(VAR4->VAR13, (VAR14)VAR8->VAR15);
+
+VAR10 = FUN3(VAR2, (VAR16)VAR6->VAR17.VAR18,
+(VAR16)VAR6->VAR17.VAR19);
+if (VAR10) {
+VAR12 = FUN4(VAR2, VAR4, VAR9, VAR4->VAR20);
+if (VAR12) {
+struct VAR21 *VAR22 = VAR12->VAR23;
+
+VAR22->VAR12 = VAR12;
+VAR22->VAR10 = VAR10;
+VAR12->VAR24->VAR6 = *VAR6;
+FUN5(&VAR22->VAR25,
+&VAR4->VAR26);
+} else {
+VAR4->VAR27.VAR28++;
+}
+} else {
+FUN6(&VAR2->VAR29->VAR30, "",
+(unsigned int)VAR6->VAR17.VAR18,
+(unsigned int)VAR6->VAR17.VAR19);
+VAR4->VAR27.VAR31++;
+}
+
+return VAR9;
+}

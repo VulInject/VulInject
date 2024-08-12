@@ -1,0 +1,43 @@
+static void FUN1(unsigned long VAR1,
+struct VAR2 *VAR2, struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = VAR2->VAR7;
+unsigned long VAR8 = 0;
+enum zone_type VAR9, VAR10 = VAR11;
+
+
+if (VAR12 == VAR13)
+VAR10 = VAR14;
+
+
+for (VAR9 = 0; VAR9 <= VAR10; VAR9++)
+VAR8 += VAR6->VAR15[VAR9].VAR8;
+if (FUN2(VAR2) <= VAR10 && VAR1 >= VAR8)
+VAR4->VAR16 = FUN3(VAR2);
+else
+VAR4->VAR16 = -1;
+
+
+VAR10 = VAR17;
+if (VAR12 == VAR18)
+VAR10 = VAR14;
+
+for (; VAR9 <= VAR10; VAR9++)
+VAR8 += VAR6->VAR15[VAR9].VAR8;
+if (FUN2(VAR2) <= VAR10 && VAR1 >= VAR8)
+VAR4->VAR19 = FUN3(VAR2);
+else
+VAR4->VAR19 = -1;
+VAR4->VAR19 = VAR4->VAR16;
+
+
+VAR10 = VAR14;
+
+
+for (; VAR9 <= VAR10; VAR9++)
+VAR8 += VAR6->VAR15[VAR9].VAR8;
+if (VAR1 >= VAR8)
+VAR4->VAR20 = FUN3(VAR2);
+else
+VAR4->VAR20 = -1;
+}

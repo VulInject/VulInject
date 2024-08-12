@@ -1,0 +1,15 @@
+static void FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4;
+    if (!FUN2(VAR2, VAR5, VAR6) || !VAR2->VAR7[4].VAR8 || VAR2->VAR7[4].VAR9.VAR10 < 256)
+    {
+        return;
+    }
+    VAR4 = FUN3(sizeof(*VAR4));
+    VAR4->VAR11 = FUN3(sizeof(VAR12));
+    VAR4->VAR13 = 1;
+    FUN4(VAR4->VAR11, FUN5(VAR2), &VAR14, VAR2, "", 1);
+    FUN6(&VAR2->VAR15.VAR9[VAR16].VAR11, 3, VAR4->VAR11);
+    FUN7(&VAR2->VAR15.VAR9[VAR16].VAR17, VAR4, VAR18);
+    FUN8(VAR2->VAR19.VAR20);
+}

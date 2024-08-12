@@ -1,0 +1,1 @@
+static inline struct VAR1 * FUN1 ( VAR2 * VAR3 , u16 VAR4 ) { struct VAR1 * VAR5 = FUN2 ( VAR3 ) -> VAR6 ; while ( VAR5 ) { if ( VAR5 -> VAR4 > VAR4 ) { return NULL ; } VAR5 = VAR5 -> VAR7 ; } return NULL ; }

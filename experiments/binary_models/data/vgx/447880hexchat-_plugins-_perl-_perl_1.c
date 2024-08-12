@@ -1,0 +1,1 @@
+FUN1 ( ) { const char * VAR1 ; char * VAR2 ; int VAR3 = 0 ; char * VAR4 = NULL ; VAR1 = FUN2 ( VAR5 , "" ) ; VAR2 = FUN3 ( VAR1 , "" , NULL ) ; FUN4 ( VAR2 ) ; return 0 ; } { VAR6 * VAR7 ; VAR6 * VAR8 ; VAR9 * VAR10 ; VAR11 * VAR12 ; VAR6 * VAR13 ; unsigned int VAR14 ; } VAR15

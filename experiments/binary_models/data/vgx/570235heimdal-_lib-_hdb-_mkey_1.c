@@ -1,0 +1,1 @@
+krb5_error_code FUN1 ( krb5_context VAR1 , VAR2 * VAR3 , VAR4 * VAR5 ) { return FUN2 ( VAR1 , VAR5 , VAR3 -> VAR6 ) ; }

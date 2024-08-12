@@ -1,0 +1,1 @@
+FUN1 ( "" ) ; static inline int FUN2 ( int VAR1 , int VAR2 ) { return VAR1 ; }

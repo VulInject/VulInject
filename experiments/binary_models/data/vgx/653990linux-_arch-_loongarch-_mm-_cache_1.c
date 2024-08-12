@@ -1,0 +1,1 @@
+asmlinkage __visible void FUN1 ( void ) { int VAR1 ; struct VAR2 * VAR3 = VAR4 . VAR5 ; unsigned int VAR6 = VAR4 . VAR7 ; VAR1 = VAR6 - 1 ; if ( FUN2 ( VAR3 + VAR1 ) ) { return ; } for ( VAR1 = 0 ; VAR1 < VAR6 ; VAR1 ++ ) { FUN3 ( VAR1 ) ; } }

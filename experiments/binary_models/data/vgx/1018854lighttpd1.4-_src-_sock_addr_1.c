@@ -1,0 +1,1 @@
+int FUN1 ( const VAR1 * VAR2 , const VAR1 * VAR3 ) { switch ( VAR2 -> VAR4 . VAR5 ) { case VAR6 : return VAR2 -> VAR7 . VAR8 . VAR9 == VAR3 -> VAR7 . VAR8 . VAR9 ; case VAR10 : return 0 == memcmp ( & VAR2 -> VAR11 . VAR12 , & VAR3 -> VAR11 . VAR12 , sizeof ( VAR13 ) ) ; case VAR14 : return 0 == strcmp ( VAR2 -> VAR15 . VAR16 , VAR3 -> VAR15 . VAR16 ) ; default : return 0 ; } }

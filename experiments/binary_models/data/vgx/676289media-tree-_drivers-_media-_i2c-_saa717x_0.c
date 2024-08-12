@@ -1,0 +1,95 @@
+static int FUN1(struct VAR1 *VAR2,
+const struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6;
+struct VAR7 *VAR8;
+struct VAR9 *VAR10;
+u8 VAR11 = 0;
+char *VAR12 = "";
+
+
+if (!FUN2(VAR2->VAR13, VAR14))
+return -VAR15;
+
+VAR6 = FUN3(&VAR2->VAR16, sizeof(*VAR6), VAR17);
+if (VAR6 == NULL)
+return -VAR18;
+
+VAR10 = &VAR6->VAR10;
+FUN4(VAR10, VAR2, &VAR19);
+
+if (FUN5(VAR10, 0x5a4, 0xfe) &&
+FUN5(VAR10, 0x5a5, 0x0f) &&
+FUN5(VAR10, 0x5a6, 0x00) &&
+FUN5(VAR10, 0x5a7, 0x01))
+VAR11 = FUN6(VAR10, 0x5a0);
+if (VAR11 != 0xc2 && VAR11 != 0x32 && VAR11 != 0xf2 && VAR11 != 0x6c) {
+FUN7(1, VAR20, VAR10, "", VAR11);
+return -VAR21;
+}
+if (VAR11 == 0xc2)
+VAR12 = "";
+else if (VAR11 == 0x32)
+VAR12 = "";
+else if (VAR11 == 0x6c)
+VAR12 = "";
+else
+VAR12 = "";
+FUN8(VAR10, "", VAR12,
+VAR2->VAR22 << 1, VAR2->VAR13->VAR23);
+
+VAR8 = &VAR6->VAR8;
+FUN9(VAR8, 9);
+
+FUN10(VAR8, &VAR24,
+VAR25, 0, 255, 1, 128);
+FUN10(VAR8, &VAR24,
+VAR26, 0, 255, 1, 68);
+FUN10(VAR8, &VAR24,
+VAR27, 0, 255, 1, 64);
+FUN10(VAR8, &VAR24,
+VAR28, -128, 127, 1, 0);
+FUN10(VAR8, &VAR24,
+VAR29, 0, 65535, 65535 / 100, 42000);
+FUN10(VAR8, &VAR24,
+VAR30, 0, 65535, 65535 / 100, 32768);
+FUN10(VAR8, &VAR24,
+VAR31, -16, 15, 1, 0);
+FUN10(VAR8, &VAR24,
+VAR32, -16, 15, 1, 0);
+FUN10(VAR8, &VAR24,
+VAR33, 0, 1, 1, 0);
+VAR10->VAR34 = VAR8;
+if (VAR8->VAR35) {
+int VAR36 = VAR8->VAR35;
+
+FUN11(VAR8);
+return VAR36;
+}
+
+VAR6->VAR37 = VAR38;
+VAR6->VAR39 = -1;
+VAR6->VAR40 = 1;
+
+
+VAR6->VAR41 = 0;	
+VAR6->VAR42 = 1; 
+
+VAR6->VAR43 = 2; 
+
+VAR6->VAR44 = VAR45;
+
+VAR6->VAR46 = 6;
+VAR6->VAR47 = 6;
+
+FUN7(1, VAR20, VAR10, "");
+
+
+FUN12(VAR10, VAR48);
+
+FUN13(VAR8);
+
+FUN14(VAR49);
+FUN15(2*VAR50);
+return 0;
+}

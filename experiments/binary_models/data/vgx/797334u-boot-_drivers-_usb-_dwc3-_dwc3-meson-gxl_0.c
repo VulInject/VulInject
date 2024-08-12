@@ -1,0 +1,24 @@
+static void FUN1(struct VAR1 *VAR2, enum usb_dr_mode VAR3)
+{
+switch (VAR3) {
+case VAR4:
+case VAR5:
+case VAR6:
+FUN2(VAR2->VAR7, VAR8,
+VAR9, 0);
+FUN2(VAR2->VAR7, VAR10,
+VAR11, 0);
+FUN2(VAR2->VAR7, VAR12,
+VAR13, 0);
+break;
+
+case VAR14:
+FUN2(VAR2->VAR7, VAR10,
+VAR11, VAR11);
+FUN2(VAR2->VAR7, VAR10,
+VAR15, 0);
+FUN2(VAR2->VAR7, VAR12,
+VAR13, VAR13);
+break;
+}
+}

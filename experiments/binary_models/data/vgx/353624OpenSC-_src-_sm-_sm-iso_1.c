@@ -1,0 +1,1 @@
+static int FUN1 ( u8 VAR1 , const VAR2 * VAR3 , size_t VAR4 ) { size_t VAR5 ; switch ( VAR1 ) { case VAR6 : VAR5 = VAR4 ; break ; case VAR7 : VAR5 = VAR4 ; while ( VAR5 ) { VAR5 -- ; if ( VAR3 [ VAR5 ] ) { break ; } } if ( VAR3 [ VAR5 ] != 0x80 ) { return VAR8 ; } break ; default : return VAR9 ; } return VAR5 ; }

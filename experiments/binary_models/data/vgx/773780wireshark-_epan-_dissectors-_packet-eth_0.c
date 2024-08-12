@@ -1,0 +1,47 @@
+static int
+FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 *VAR6, void *VAR7)
+{
+struct VAR8   *VAR9 = (struct VAR8 *)VAR7;
+VAR5        *VAR10;
+VAR1          *VAR11;
+gint               VAR12;
+
+if (VAR9 && VAR9->VAR12 != -1) {
+
+VAR12 = VAR9->VAR12;
+} else {
+VAR12 = VAR13;
+}
+
+
+if (VAR14 && FUN2(VAR2) > 20 &&
+memcmp(FUN3(VAR2,0,6),FUN3(VAR2,6,6), 6) == 0) {
+VAR11 = FUN4(VAR2, 6,
+FUN2(VAR2) - 6, FUN5(VAR2) - 6);
+} else {
+VAR11 = VAR2;
+}
+
+
+if ( (VAR15 > 0) && (VAR15 < FUN2(VAR11)) ) {
+VAR1 *VAR16;
+guint VAR17 = VAR15;
+
+
+VAR17 += (VAR12 < 0 ? 0 : (VAR18)VAR12);
+
+
+VAR16 = FUN4(VAR11, 0,
+FUN2(VAR11) - VAR17,
+FUN5(VAR11) - VAR17);
+VAR10 = FUN6(VAR16, VAR4, VAR6, 0);
+
+
+VAR16 = FUN7(VAR11, FUN2(VAR11) - VAR17);
+FUN8(VAR4, VAR6, VAR10, VAR19, VAR11, VAR16,
+VAR12);
+} else {
+FUN6(VAR11, VAR4, VAR6, VAR12);
+}
+return FUN2(VAR2);
+}

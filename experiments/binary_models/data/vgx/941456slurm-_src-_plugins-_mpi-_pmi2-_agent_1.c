@@ -1,0 +1,1 @@
+extern int FUN1 ( void ) { FUN2 ( & VAR1 ) ; if ( VAR2 ) { FUN3 ( VAR3 ) ; FUN4 ( VAR2 ) ; VAR2 = 0 ; } FUN5 ( & VAR1 ) ; return VAR4 ; }

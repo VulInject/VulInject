@@ -1,0 +1,43 @@
+static void FUN1(struct VAR1 *VAR1)
+{
+unsigned int VAR2;
+int VAR3, VAR4;
+
+memset(VAR1->VAR5, 0, sizeof(VAR1->VAR5));
+FUN2(VAR1->VAR6, VAR7);
+
+if (VAR1->VAR8) {
+for (VAR3 = 0; VAR3 < 128; VAR3++) {
+VAR2 = VAR9[VAR3];
+VAR1->VAR5[VAR3] = VAR10[VAR2];
+VAR1->VAR5[VAR3 | 0x80] = VAR10[VAR2 | 0x80];
+if (VAR1->VAR11)
+for (VAR4 = 0; VAR4 < FUN3(VAR12); VAR4++)
+if ((VAR2 | 0x80) == VAR12[VAR4].VAR13)
+VAR1->VAR5[VAR3 | 0x80] = VAR12[VAR4].VAR5;
+}
+} else if (VAR1->VAR14 == 3) {
+memcpy(VAR1->VAR5, VAR15, sizeof(VAR1->VAR5));
+} else {
+memcpy(VAR1->VAR5, VAR10, sizeof(VAR1->VAR5));
+
+if (VAR1->VAR11)
+for (VAR3 = 0; VAR3 < FUN3(VAR12); VAR3++) {
+VAR2 = VAR12[VAR3].VAR13;
+VAR1->VAR5[VAR2] = VAR12[VAR3].VAR5;
+}
+}
+
+
+VAR2 = FUN4(VAR1, VAR16);
+VAR1->VAR5[VAR2] = VAR17;
+FUN5(VAR2, VAR1->VAR6);
+
+VAR2 = FUN4(VAR1, VAR18);
+VAR1->VAR5[VAR2] = VAR19;
+FUN5(VAR2, VAR1->VAR6);
+
+
+if (VAR20)
+FUN6(VAR1, VAR21);
+}

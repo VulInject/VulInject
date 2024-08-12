@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR2 ) ; struct VAR1 * VAR5 ; ulong VAR6 ; FUN3 ( VAR7 , & VAR5 ) ; VAR6 = FUN4 ( VAR2 , 0 ) ; VAR4 -> VAR8 = FUN5 ( VAR6 , 0x2000 ) ; VAR4 -> VAR9 = ( VAR10 * ) ( VAR4 -> VAR8 + VAR11 ) ; return FUN6 ( VAR2 ) ; } static struct acpi_pmc_ops VAR12 = { . VAR13 = VAR14 . VAR15 = VAR16 . VAR17 = VAR18 } ;

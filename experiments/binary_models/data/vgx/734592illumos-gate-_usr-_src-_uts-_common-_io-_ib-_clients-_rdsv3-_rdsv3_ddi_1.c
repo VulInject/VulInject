@@ -1,0 +1,1 @@
+int FUN1 ( ) { FUN2 ( "" , "" ) ; VAR1 = FUN3 ( "" , sizeof ( VAR2 ) + sizeof ( VAR3 ) , 0 , NULL , NULL , NULL , NULL , NULL , 0 ) ; if ( VAR1 == NULL ) { FUN4 ( "" , "" ) ; return ( - 1 ) ; } FUN5 ( ) ; FUN6 ( & VAR4 , VAR5 , NULL ) ; FUN7 ( & VAR6 , sizeof ( VAR3 ) , FUN8 ( VAR3 , VAR7 ) ) ; FUN2 ( "" , "" ) ; return ( 0 ) ; }

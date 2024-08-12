@@ -1,0 +1,1 @@
+static inline void FUN1 ( unsigned long * VAR1 , struct VAR2 * VAR3 , int VAR4 ) { cfs_time_t VAR5 = 0 ; { VAR5 = FUN2 ( VAR1 , VAR6 , VAR5 + 1 ) ; switch ( VAR5 ) { case VAR7 : FUN3 ( ) ; break ; case VAR8 : FUN4 ( ) ; break ; case VAR9 : FUN5 ( ) ; break ; case VAR10 : FUN6 ( ) ; break ; } } VAR5 < VAR6 ; }

@@ -1,0 +1,71 @@
+VAR1
+FUN1(krb5_context VAR2,
+VAR3 *VAR4,
+const VAR5 *VAR6)
+{
+VAR5 *VAR7;
+int VAR8;
+
+VAR7 = NULL;
+
+if (VAR4->VAR9 == NULL) {
+VAR4->VAR9 = calloc(1, sizeof(*VAR4->VAR9));
+if (VAR4->VAR9 == NULL) {
+FUN2(VAR2, VAR10, "");
+return VAR10;
+}
+} else if (VAR6->VAR11.VAR12 != VAR13) {
+VAR7 = FUN3(VAR4, VAR6->VAR11.VAR12);
+} else {
+
+Der_class VAR14, VAR15;
+Der_type VAR16, VAR17;
+unsigned int VAR18, VAR19;
+size_t VAR20;
+size_t VAR21;
+
+VAR8 = FUN4(VAR6->VAR11.VAR22.VAR23.VAR11,
+VAR6->VAR11.VAR22.VAR23.VAR24,
+&VAR14, &VAR16, &VAR18,
+&VAR20);
+if (VAR8) {
+FUN2(VAR2, VAR8, ""
+"");
+return VAR8;
+}
+
+for (VAR21 = 0; VAR21 < VAR4->VAR9->VAR25; VAR21++) {
+VAR5 *VAR26 = &VAR4->VAR9->VAR27[VAR21];
+
+if (VAR26->VAR11.VAR12 != VAR13)
+continue;
+
+VAR8 = FUN4(VAR26->VAR11.VAR22.VAR23.VAR11,
+VAR26->VAR11.VAR22.VAR23.VAR24,
+&VAR15, &VAR17, &VAR19,
+&VAR20);
+if (VAR8) {
+FUN2(VAR2, VAR8, ""
+"");
+return VAR8;
+}
+
+if (FUN5(VAR14,VAR16,VAR16) ==
+FUN5(VAR15,VAR17,VAR17)) {
+VAR7 = VAR26;
+break;
+}
+}
+}
+
+if (VAR7) {
+FUN6(VAR7);
+VAR8 = FUN7(VAR6, VAR7);
+if (VAR8)
+FUN2(VAR2, VAR8, ""
+"");
+return VAR8;
+}
+
+return FUN8(VAR4->VAR9, VAR6);
+}

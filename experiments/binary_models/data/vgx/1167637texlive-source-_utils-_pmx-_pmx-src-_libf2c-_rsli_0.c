@@ -1,0 +1,78 @@
+if(VAR1 >= VAR2->VAR3) {
+if (VAR1++ == VAR2->VAR3)
+return '';
+FUN1();
+}
+VAR1++;
+if(VAR4 >= VAR5)
+return VAR6;
+return(*VAR4++);
+}
+
+static
+int FUN2(VAR7, VAR8) int VAR7; VAR9 *VAR8;
+int FUN2(int VAR7, VAR9 *VAR8)
+{
+if (--VAR1 == VAR2->VAR3)
+return '';
+if (VAR1 < -1)
+FUN3(VAR2->VAR10,110,"");
+
+return *--VAR4 ;
+}
+
+static void
+FUN4(VAR11) VAR12 *VAR11;
+FUN4(VAR12 *VAR11)
+{
+extern int VAR13;
+VAR14 = 1;
+VAR15 = 0;
+VAR16 = 1;
+VAR2 = VAR11;
+VAR17 = VAR11->VAR3;
+VAR1 = -1;
+VAR18 = VAR1 = 0;
+VAR19 = 0;
+VAR20 = VAR21;
+VAR22 = VAR23;
+VAR13 = 0;
+VAR4 = VAR11->VAR24;
+VAR5 = VAR4 + VAR11->VAR3*VAR11->VAR25;
+VAR26 = 0;
+VAR27 = 0;
+VAR28 = (VAR29 *)VAR11;
+}
+
+
+VAR30 FUN5(VAR11) VAR12 *VAR11;
+VAR30 FUN5(VAR12 *VAR11)
+{
+VAR31 = VAR32;
+VAR33 = 0;
+VAR34 = 0;
+FUN4(VAR11);
+VAR35 = 0;
+return(0);
+}
+
+VAR30 FUN6(VAR36)
+{ return 0; }
+
+VAR30 FUN7(VAR11) VAR12 *VAR11;
+extern int FUN8(VAR29*);
+
+VAR30 FUN7(VAR12 *VAR11)
+{
+extern int VAR37;
+integer VAR38;
+cilist VAR39;
+VAR39.VAR40 = VAR11->VAR41;
+VAR39.VAR42 = VAR11->VAR10;
+VAR39.VAR43 = VAR11->VAR44;
+FUN4(VAR11);
+VAR38 = FUN8(&VAR39);
+VAR37 = 0;
+return VAR38;
+}
+}

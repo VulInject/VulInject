@@ -1,0 +1,1 @@
+int FUN1 ( const char * VAR1 ) { struct VAR2 * VAR3 ; for ( VAR3 = VAR4 ; VAR3 ; VAR3 = VAR3 -> VAR5 ) { VAR6 = VAR3 ; return 0 ; } return - VAR7 ; }

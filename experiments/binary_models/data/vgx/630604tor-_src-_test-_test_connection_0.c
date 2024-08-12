@@ -1,0 +1,60 @@
+static int
+FUN1(const struct VAR1 *VAR2, void *VAR3)
+{
+(void)VAR2;
+VAR4 *VAR5 = VAR3;
+
+FUN2(VAR5);
+FUN3(VAR5, FUN4(NULL));
+
+
+if (VAR5->VAR6) {
+FUN3(VAR5->VAR6, FUN4(NULL));
+
+
+FUN5(VAR5->VAR6->VAR7);
+FUN5(VAR5->VAR6->VAR8);
+
+if (!VAR5->VAR6->VAR9) {
+FUN6(VAR5->VAR6);
+if (FUN7(VAR5->VAR6)) {
+
+FUN8(VAR5->VAR6)->VAR10 = 1;
+FUN8(VAR5->VAR6)->VAR11 =
+VAR12;
+if (VAR5->VAR6->VAR13 == VAR14) {
+FUN9(VAR5->VAR6)->VAR15->VAR16 = 1;
+}
+}
+FUN10(VAR5->VAR6);
+}
+
+FUN11();
+}
+
+
+FUN5(VAR5->VAR7);
+FUN5(VAR5->VAR8);
+
+if (!VAR5->VAR9) {
+FUN6(VAR5);
+if (FUN7(VAR5)) {
+
+FUN8(VAR5)->VAR10 = 1;
+FUN8(VAR5)->VAR11 = VAR12;
+if (VAR5->VAR13 == VAR14) {
+FUN9(VAR5)->VAR15->VAR16 = 1;
+}
+}
+FUN10(VAR5);
+}
+
+FUN11();
+
+
+return 1;
+
+
+VAR17:
+return 0;
+}

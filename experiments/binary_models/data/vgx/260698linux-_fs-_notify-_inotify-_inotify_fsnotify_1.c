@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR2 , struct VAR1 * VAR3 ) { struct VAR4 * VAR5 , * ; VAR5 = FUN2 ( VAR2 ) ; new = FUN2 ( VAR3 ) ; if ( ( VAR5 -> VAR6 == new -> VAR6 ) && ( VAR5 -> VAR7 == new -> VAR7 ) && ( VAR5 -> VAR8 == new -> VAR8 ) && ( ! VAR5 -> VAR8 || ! strcmp ( VAR5 -> VAR9 , new -> VAR9 ) ) ) { return true ; } return false ; }

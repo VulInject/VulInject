@@ -1,0 +1,45 @@
+VAR1 FUN1(VAR2 *VAR3, Bool VAR4)
+{
+Double VAR5;
+u32 VAR6, VAR7, VAR8, VAR9;
+
+FUN2(VAR3->VAR10);
+
+if (VAR4) {
+
+VAR6 = VAR3->VAR11;
+VAR8 = 0;
+VAR9 = VAR3->VAR12[VAR6];
+for (VAR7=0; VAR7<VAR13; VAR7++) {
+VAR9 += VAR3->VAR12[VAR6];
+VAR8++;
+if (VAR8==VAR13) break;
+if (!VAR6) {
+VAR6 = VAR13-1;
+} else {
+VAR6--;
+}
+}
+} else {
+
+VAR6 = VAR3->VAR11;
+VAR9 = VAR3->VAR14[VAR6];
+VAR6 = (VAR6+1)% VAR13;
+s64 VAR15 = VAR9;
+VAR15 -= VAR3->VAR14[VAR6];
+if (VAR15<0) {
+VAR15 += 0xFFFFFFFFUL;
+assert(VAR15 >= 0);
+}
+VAR9 = (VAR16) VAR15;
+VAR8 = VAR13-1;
+}
+
+
+FUN3(VAR3->VAR10);
+
+if (!VAR9) return ((VAR1) VAR3->VAR5.VAR7)/VAR3->VAR5.VAR17;
+VAR5 = 1000*VAR8;
+VAR5 /= VAR9;
+return VAR5;
+}

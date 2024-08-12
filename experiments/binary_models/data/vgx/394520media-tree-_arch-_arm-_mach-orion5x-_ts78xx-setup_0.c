@@ -1,0 +1,25 @@
+static int FUN1(void)
+{
+int VAR1, VAR2 = 0;
+
+if (VAR3.VAR4.VAR5.VAR6 == 1) {
+VAR1 = FUN2();
+if (VAR1)
+VAR3.VAR4.VAR5.VAR6 = 0;
+VAR2 |= VAR1;
+}
+if (VAR3.VAR4.VAR7.VAR6 == 1) {
+VAR1 = FUN3();
+if (VAR1)
+VAR3.VAR4.VAR7.VAR6 = 0;
+VAR2 |= VAR1;
+}
+if (VAR3.VAR4.VAR8.VAR6 == 1) {
+VAR1 = FUN4();
+if (VAR1)
+VAR3.VAR4.VAR8.VAR6 = 0;
+VAR2 |= VAR1;
+}
+
+return VAR2;
+}

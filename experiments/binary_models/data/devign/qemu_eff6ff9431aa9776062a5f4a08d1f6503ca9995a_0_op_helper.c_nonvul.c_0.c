@@ -1,0 +1,29 @@
+void FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4;
+    int VAR5;
+    target_ulong VAR6;
+    uint16_t VAR7;
+    bool VAR8, VAR9, VAR10, VAR11, VAR12, VAR13, VAR14, VAR15, VAR16, VAR17;
+    VAR5 = (VAR2->VAR18 & ~0x80000000) % VAR2->VAR4->VAR19;
+    VAR4 = &VAR2->VAR4->VAR20.VAR21.VAR4[VAR5];
+    VAR6 = VAR2->VAR22 & (VAR23 << 1);
+    VAR6 &= VAR2->VAR24;
+    VAR7 = VAR2->VAR22 & VAR2->VAR25;
+    VAR8 = (VAR2->VAR22 & (1 << VAR26)) != 0;
+    VAR9 = VAR2->VAR27 & VAR2->VAR28 & 1;
+    VAR10 = (VAR2->VAR27 & 2) != 0;
+    VAR11 = (VAR2->VAR27 & 4) != 0;
+    VAR14 = (VAR2->VAR27 >> VAR29) & 1;
+    VAR16 = (VAR2->VAR27 >> VAR30) & 1;
+    VAR12 = (VAR2->VAR28 & 2) != 0;
+    VAR13 = (VAR2->VAR28 & 4) != 0;
+    VAR15 = (VAR2->VAR28 >> VAR29) & 1;
+    VAR17 = (VAR2->VAR28 >> VAR30) & 1;
+    if (VAR4->VAR6 != VAR6 || VAR4->VAR7 != VAR7 || VAR4->VAR9 != VAR9 || (!VAR4->VAR8 && VAR8) || (VAR4->VAR10 && !VAR10) || (VAR4->VAR11 && !VAR11) || (!VAR4->VAR14 && VAR14) || (!VAR4->VAR16 && VAR16) || (VAR4->VAR12 && !VAR12) || (VAR4->VAR13 && !VAR13) || (!VAR4->VAR15 && VAR15) || (!VAR4->VAR17 && VAR17))
+    {
+        FUN2(VAR2, VAR2->VAR4->VAR19);
+    }
+    FUN3(VAR2, VAR5, 0);
+    FUN4(VAR2, VAR5);
+}

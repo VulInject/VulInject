@@ -1,0 +1,165 @@
+void FUN1(int VAR1, int VAR2, int VAR3, int VAR4, time_t VAR5, char *VAR6, char *VAR7, struct VAR8 *VAR9) {
+nebstruct_external_command_data VAR10;
+
+if(!(VAR11 & VAR12))
+return;
+
+
+VAR10.VAR1 = VAR1;
+VAR10.VAR2 = VAR2;
+VAR10.VAR3 = VAR3;
+VAR10.VAR9 = FUN2(VAR9);
+
+VAR10.VAR4 = VAR4;
+VAR10.VAR5 = VAR5;
+VAR10.VAR6 = VAR6;
+VAR10.VAR7 = VAR7;
+
+
+FUN3(VAR13, (void *)&VAR10);
+
+return;
+}
+
+
+
+void FUN4(int VAR1, int VAR2, int VAR3, struct VAR8 *VAR9) {
+nebstruct_aggregated_status_data VAR10;
+
+if(!(VAR11 & VAR14))
+return;
+
+
+VAR10.VAR1 = VAR1;
+VAR10.VAR2 = VAR2;
+VAR10.VAR3 = VAR3;
+VAR10.VAR9 = FUN2(VAR9);
+
+
+FUN3(VAR15, (void *)&VAR10);
+
+return;
+}
+
+
+
+void FUN5(int VAR1, int VAR2, int VAR3, struct VAR8 *VAR9) {
+nebstruct_retention_data VAR10;
+
+if(!(VAR11 & VAR16))
+return;
+
+
+VAR10.VAR1 = VAR1;
+VAR10.VAR2 = VAR2;
+VAR10.VAR3 = VAR3;
+VAR10.VAR9 = FUN2(VAR9);
+
+
+FUN3(VAR17, (void *)&VAR10);
+
+return;
+}
+
+
+
+void FUN6(int VAR1, int VAR2, int VAR3, int VAR18, void *VAR19, char *VAR20, char *VAR21, int VAR22, int VAR23, int VAR24, struct VAR8 *VAR9) {
+nebstruct_acknowledgement_data VAR10;
+VAR25 *VAR26 = NULL;
+VAR27 *VAR28 = NULL;
+
+if(!(VAR11 & VAR29))
+return;
+
+
+VAR10.VAR1 = VAR1;
+VAR10.VAR2 = VAR2;
+VAR10.VAR3 = VAR3;
+VAR10.VAR9 = FUN2(VAR9);
+
+VAR10.VAR18 = VAR18;
+if(VAR18 == VAR30) {
+VAR28 = (VAR27 *)VAR19;
+VAR10.VAR31 = VAR28->VAR31;
+VAR10.VAR32 = VAR28->VAR33;
+VAR10.VAR34 = VAR28->VAR35;
+}
+else {
+VAR26 = (VAR25 *)VAR19;
+VAR10.VAR31 = VAR26->VAR36;
+VAR10.VAR32 = NULL;
+VAR10.VAR34 = VAR26->VAR35;
+}
+VAR10.VAR37 = VAR19;
+VAR10.VAR38 = VAR20;
+VAR10.VAR39 = VAR21;
+VAR10.VAR40 = (VAR22 == VAR41) ? VAR42 : VAR43;
+VAR10.VAR23 = VAR23;
+VAR10.VAR24 = VAR24;
+
+
+FUN3(VAR44, (void *)&VAR10);
+
+return;
+}
+
+
+
+void FUN7(int VAR1, int VAR2, int VAR3, int VAR45, void *VAR19, int VAR34, int VAR46, int VAR47, int VAR48, struct VAR8 *VAR9) {
+nebstruct_statechange_data VAR10;
+VAR25 *VAR26 = NULL;
+VAR27 *VAR28 = NULL;
+
+if(!(VAR11 & VAR49))
+return;
+
+
+VAR10.VAR1 = VAR1;
+VAR10.VAR2 = VAR2;
+VAR10.VAR3 = VAR3;
+VAR10.VAR9 = FUN2(VAR9);
+
+VAR10.VAR45 = VAR45;
+if(VAR45 == VAR50) {
+VAR28 = (VAR27 *)VAR19;
+VAR10.VAR31 = VAR28->VAR31;
+VAR10.VAR32 = VAR28->VAR33;
+VAR10.VAR51 = VAR28->VAR52;
+VAR10.VAR53 = VAR28->VAR54;
+}
+else {
+VAR26 = (VAR25 *)VAR19;
+VAR10.VAR31 = VAR26->VAR36;
+VAR10.VAR32 = NULL;
+VAR10.VAR51 = VAR26->VAR52;
+VAR10.VAR53 = VAR26->VAR54;
+}
+VAR10.VAR37 = VAR19;
+VAR10.VAR34 = VAR34;
+VAR10.VAR46 = VAR46;
+VAR10.VAR47 = VAR47;
+VAR10.VAR48 = VAR48;
+
+
+FUN3(VAR55, (void *)&VAR10);
+
+return;
+}
+
+
+
+
+
+
+
+
+struct VAR8 FUN2(struct VAR8 *VAR9) {
+struct timeval VAR56;
+
+if(VAR9 == NULL)
+FUN8(&VAR56, NULL);
+else
+VAR56 = *VAR9;
+
+return VAR56;
+}

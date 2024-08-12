@@ -1,0 +1,62 @@
+static int FUN1(struct VAR1 *VAR2,
+int VAR3, unsigned int VAR4, unsigned int VAR5)
+{
+struct VAR6 *VAR7 = FUN2(VAR2);
+struct _fll_div VAR8;
+
+if (VAR7->VAR9 == VAR4 && VAR7->VAR10 == VAR5)
+return 0;
+
+
+FUN3(VAR2, VAR11,
+VAR12, 0);
+
+
+if (!VAR4 || !VAR5) {
+FUN3(VAR2, VAR13,
+VAR14, 0);
+FUN3(VAR2, VAR15,
+VAR16, 0);
+VAR7->VAR9 = VAR4;
+VAR7->VAR10 = VAR5;
+
+return 0;
+}
+
+if (FUN4(&VAR8, VAR4, VAR5) != 0)
+goto VAR17;
+
+VAR7->VAR9 = VAR4;
+VAR7->VAR10 = VAR5;
+
+
+FUN5(VAR2, VAR15,
+VAR8.VAR18 | VAR16);
+
+FUN5(VAR2, VAR19, VAR8.VAR20 >> 5);
+FUN5(VAR2, VAR21,
+(VAR8.VAR22 << 6) | (VAR8.VAR20 & 0x1f));
+
+if (VAR8.VAR23) {
+FUN5(VAR2, VAR24,
+(VAR8.VAR23 >> 8) | 0x100);
+FUN5(VAR2, VAR25, VAR8.VAR23 & 0xff);
+} else
+FUN5(VAR2, VAR24, 0);
+
+if (VAR8.VAR26)
+FUN5(VAR2, VAR27,
+VAR28);
+else
+FUN5(VAR2, VAR27, 0);
+
+FUN3(VAR2, VAR11,
+VAR12,
+VAR12);
+
+VAR17:
+FUN3(VAR2, VAR13,
+VAR14,
+VAR14);
+return 0;
+}

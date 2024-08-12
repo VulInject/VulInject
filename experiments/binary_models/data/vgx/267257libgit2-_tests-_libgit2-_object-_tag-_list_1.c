@@ -1,0 +1,1 @@
+void FUN1 ( void ) { int VAR1 = 0 ; while ( VAR2 [ VAR1 ] . VAR3 ) { FUN2 ( VAR4 , & VAR2 [ VAR1 ++ ] ) ; } }

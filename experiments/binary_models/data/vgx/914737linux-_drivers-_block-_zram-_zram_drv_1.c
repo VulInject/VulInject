@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR1 , u64 VAR2 ) { size_t VAR3 = VAR2 >> VAR4 ; size_t VAR5 ; for ( VAR5 = 0 ; VAR5 < VAR3 ; VAR5 ++ ) { FUN2 ( VAR1 , VAR5 ) ; } FUN3 ( VAR1 -> VAR6 ) ; }

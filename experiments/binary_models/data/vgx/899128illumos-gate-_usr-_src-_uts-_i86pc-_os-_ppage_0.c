@@ -1,0 +1,10 @@
+void
+FUN1(caddr_t VAR1, struct VAR2 *VAR3, caddr_t VAR4)
+{
+pfn_t VAR5;
+
+VAR5 = FUN2(VAR3->VAR6, VAR1);
+FUN3(VAR7.VAR6, VAR4, VAR8, VAR5,
+VAR9 | VAR10 | VAR11 | VAR12,
+VAR13);
+}

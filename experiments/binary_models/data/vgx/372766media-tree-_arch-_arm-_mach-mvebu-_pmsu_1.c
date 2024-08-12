@@ -1,0 +1,1 @@
+void FUN1 ( void ) { unsigned int VAR1 = FUN2 ( FUN3 ( ) ) ; u32 VAR2 ; VAR2 = FUN4 ( VAR3 + FUN5 ( VAR1 ) ) ; VAR2 &= ~ VAR4 ; FUN6 ( VAR2 , VAR3 + FUN5 ( VAR1 ) ) ; VAR2 = FUN4 ( VAR3 + FUN7 ( VAR1 ) ) ; VAR2 &= ~ ( VAR5 | VAR6 ) ; VAR2 &= ~ VAR7 ; VAR2 &= ~ VAR8 ; VAR2 &= ~ ( VAR9 | VAR10 ) ; FUN6 ( VAR2 , VAR3 + FUN7 ( VAR1 ) ) ; }

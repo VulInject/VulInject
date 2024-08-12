@@ -1,0 +1,12 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4, const char *VAR5, VAR6 *VAR7, VAR6 *VAR8, uint8_t VAR9)
+{
+    assert(FUN2(VAR9) == 0);
+    VAR2->VAR9 = VAR9;
+    VAR2->VAR7 = VAR7;
+    VAR2->VAR8 = VAR8;
+    FUN3(&VAR2->VAR10, FUN4(VAR2), &VAR11, VAR2, "", FUN5(VAR2->VAR7));
+    FUN6(VAR2->VAR7, 0, &VAR2->VAR10, VAR12);
+    FUN7(&VAR2->VAR13);
+    FUN8(VAR2, VAR4);
+    FUN9(NULL, -1, &VAR14, VAR2);
+}

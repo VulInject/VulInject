@@ -1,0 +1,1 @@
+static int FUN1 ( suspend_state_t VAR1 ) { int * FUN2 ( void ) void * VAR2 ; VAR2 = FUN3 ( ( void * ) VAR3 , VAR4 , VAR5 ) ; memcpy ( ( void * ) VAR3 , & VAR6 , VAR4 ) ; FUN4 ( ( unsigned long ) VAR3 , ( unsigned long ) ( VAR3 ) + VAR4 ) ; VAR7 = ( void * ) VAR3 ; FUN5 ( ) ; ( void ) FUN2 ( ) ; memcpy ( ( void * ) VAR3 , VAR2 , VAR4 ) ; FUN6 ( VAR2 ) ; return 0 ; }

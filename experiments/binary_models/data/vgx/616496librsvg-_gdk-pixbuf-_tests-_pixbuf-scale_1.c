@@ -1,0 +1,1 @@
+FUN1 ( ) { const VAR1 * VAR2 = VAR3 ; const VAR1 * VAR4 ; VAR5 * VAR6 = NULL ; VAR7 * VAR8 ; VAR7 * VAR9 ; if ( ! FUN2 ( VAR2 ) ) { FUN3 ( "" ) ; return ; } VAR4 = FUN4 ( VAR10 , VAR2 , NULL ) ; VAR8 = FUN5 ( VAR4 , & VAR6 ) ; if ( FUN6 ( & VAR6 ) ) { return ; } FUN7 ( VAR6 ) ; VAR9 = FUN8 ( VAR8 , VAR11 ) ; if ( VAR9 == NULL ) { FUN3 ( "" ) ; } else { FUN9 ( VAR9 ) ; } }

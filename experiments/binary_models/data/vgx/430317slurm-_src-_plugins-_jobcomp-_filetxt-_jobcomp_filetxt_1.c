@@ -1,0 +1,1 @@
+int FUN1 ( void ) { if ( VAR1 >= 0 ) { close ( VAR1 ) ; } return VAR2 ; }

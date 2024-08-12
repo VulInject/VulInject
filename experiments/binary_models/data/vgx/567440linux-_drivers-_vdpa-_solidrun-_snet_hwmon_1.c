@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , enum hwmon_sensor_types VAR3 , u32 VAR4 , int VAR5 , const char * * VAR6 ) { int VAR7 ; switch ( VAR3 ) { case VAR8 : * VAR6 = "" ; break ; case VAR9 : * VAR6 = "" ; break ; case VAR10 : * VAR6 = "" ; break ; case VAR11 : if ( VAR5 == 0 ) { * VAR6 = "" ; } else { * VAR6 = "" ; } break ; default : VAR7 = - VAR12 ; break ; } return VAR7 ; }

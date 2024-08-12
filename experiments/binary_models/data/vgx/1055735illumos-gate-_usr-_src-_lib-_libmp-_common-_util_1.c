@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( char * VAR2 ) { short VAR3 ; VAR1 * VAR4 = FUN2 ( 0 ) ; VAR1 * VAR5 ; VAR1 * VAR6 ; VAR6 = FUN2 ( 16 ) ; for ( ; * VAR2 ; VAR2 ++ ) { VAR3 = FUN3 ( * VAR2 ) ; if ( VAR3 < 0 ) { return ( NULL ) ; } VAR5 = FUN2 ( VAR3 ) ; FUN4 ( VAR4 , VAR6 , VAR4 ) ; FUN5 ( VAR4 , VAR5 , VAR4 ) ; } FUN6 ( VAR6 ) ; return ( VAR4 ) ; }

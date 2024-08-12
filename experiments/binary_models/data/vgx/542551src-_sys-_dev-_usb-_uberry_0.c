@@ -1,0 +1,37 @@
+void
+FUN1(struct VAR1 *VAR2, struct VAR1 *VAR3, void *VAR4)
+{
+struct VAR5 *VAR6 = (struct VAR5 *)VAR3;
+struct VAR7 *VAR8 = VAR4;
+VAR9 *VAR10;
+
+VAR6->VAR11 = VAR8->VAR1;
+
+VAR10 = FUN2(VAR8->VAR1);
+
+FUN3("", VAR6->VAR12.VAR13,
+VAR6->VAR11->VAR14);
+if (VAR6->VAR11->VAR14 >= 250)
+FUN3("");
+else {
+FUN3("");
+FUN4(VAR6);
+
+}
+
+
+if (FUN5(VAR10->VAR15) == VAR16)
+FUN6(VAR6);
+
+
+if (FUN7(VAR6->VAR11, VAR17, 1) != 0) {
+FUN3("",
+VAR6->VAR12.VAR13);
+return;
+}
+
+if (FUN5(VAR10->VAR15) == VAR16) {
+
+FUN8(VAR6->VAR11);
+}
+}

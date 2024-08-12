@@ -1,0 +1,1 @@
+int FUN1 ( const char * VAR1 , const char * VAR2 , const char * VAR3 , unsigned short VAR4 , unsigned short VAR5 , int VAR6 , const char * VAR7 ) { FUN2 ( VAR1 ) ; FUN2 ( VAR2 ) ; FUN2 ( VAR3 ) ; FUN2 ( VAR4 , NULL ) ; FUN2 ( VAR5 ) ; FUN2 ( VAR6 ) ; FUN2 ( VAR7 ) ; return 0 ; }

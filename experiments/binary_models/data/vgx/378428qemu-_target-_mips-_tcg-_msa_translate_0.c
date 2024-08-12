@@ -1,0 +1,29 @@
+FUN1(VAR1,              VAR2,  VAR3);
+FUN1(VAR4,            VAR2,  VAR5);
+FUN2(VAR6,     VAR7,   VAR8);
+FUN2(VAR9,     VAR7,   VAR10);
+FUN2(VAR11,      VAR7,   VAR12);
+FUN2(VAR13,      VAR7,   VAR14);
+FUN2(VAR15,     VAR7,   VAR16);
+FUN2(VAR17,     VAR7,   VAR18);
+
+FUN1(VAR19,             VAR2,  VAR20);
+FUN2(VAR21,      VAR7,   VAR22);
+FUN2(VAR23,      VAR7,   VAR24);
+FUN3(VAR25,  VAR7,   VAR26);
+FUN3(VAR27,  VAR7,   VAR28);
+FUN3(VAR29,  VAR7,   VAR30);
+FUN3(VAR31,  VAR7,   VAR32);
+
+static bool FUN4(VAR33 *VAR34, VAR35 *VAR36)
+{
+if (!FUN5(VAR34)) {
+return true;
+}
+
+FUN6(VAR37,
+FUN7(VAR36->VAR38),
+FUN7(VAR36->VAR39));
+
+return true;
+}

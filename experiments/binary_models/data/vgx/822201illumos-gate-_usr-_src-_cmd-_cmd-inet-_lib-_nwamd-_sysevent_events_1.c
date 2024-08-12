@@ -1,0 +1,1 @@
+void FUN1 ( void ) { if ( VAR1 != NULL ) { FUN2 ( ) ; FUN3 ( VAR1 , NULL ) ; FUN4 ( ) ; } VAR1 = NULL ; }

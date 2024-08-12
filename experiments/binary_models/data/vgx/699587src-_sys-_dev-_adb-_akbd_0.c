@@ -1,0 +1,39 @@
+void
+FUN1(struct VAR1 *VAR2, int VAR3)
+{
+int VAR4, VAR5;
+int VAR6;
+
+VAR4 = FUN2(VAR3);
+VAR5 = FUN3(VAR3);
+
+if (VAR2->VAR7)
+VAR5 = FUN4(VAR5);
+
+VAR6 = VAR4 ? VAR8 : VAR9;
+
+if (VAR10) {
+VAR11 = VAR3;
+} else if (VAR2->VAR12) {
+char VAR13[2];
+int VAR14, VAR15, VAR16;
+
+VAR15 = 0;
+
+VAR14 = VAR17[VAR5];
+if (VAR14 == 0) {
+return; 
+}
+if (VAR14 & 0x80)
+VAR13[VAR15++] = 0xe0;
+VAR13[VAR15] = VAR14 & 0x7f;
+if (VAR6 == VAR9)
+VAR13[VAR15] |= 0x80;
+VAR15++;
+VAR16 = FUN5();
+FUN6(VAR2->VAR18, VAR13, VAR15);
+FUN7(VAR16);
+} else {
+FUN8(VAR2->VAR18, VAR6, VAR5);
+}
+}

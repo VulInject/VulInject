@@ -1,0 +1,9 @@
+VAR1 FUN1(jv VAR2, const char *VAR3) {
+assert((FUN2(VAR4)->VAR5 & (VAR6 | VAR7 | VAR8)) ==
+(VAR6 | VAR7 | VAR8));
+VAR9* VAR10 = FUN3(VAR4);
+VAR10->VAR11.VAR2 = VAR2;
+VAR10->VAR12 = strdup(VAR3);
+VAR10->VAR13 = 0;
+return FUN4(VAR10);
+}

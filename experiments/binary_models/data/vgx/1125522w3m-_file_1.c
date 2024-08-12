@@ -1,0 +1,1 @@
+int FUN1 ( char * VAR1 , VAR2 * VAR3 ) { int VAR4 ; char * VAR5 ; Str VAR6 = NULL ; VAR4 = FUN2 ( VAR1 ) ; if ( VAR4 < 0 ) { return 0 ; } while ( * VAR1 ) { if ( ! FUN3 ( VAR1 , "" , 4 ) ) { VAR1 += 4 ; if ( * VAR1 == '' || VAR6 -> VAR7 [ VAR6 -> VAR8 - 1 ] == ''''\0'';'';'' ' ) { VAR1 ++ ; } } * VAR3 = VAR6 ; return VAR4 ; }

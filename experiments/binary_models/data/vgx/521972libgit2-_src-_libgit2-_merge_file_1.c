@@ -1,0 +1,1 @@
+static bool FUN1 ( const VAR1 * VAR2 ) { size_t VAR3 = VAR2 ?VAR2 -> VAR4 : 0 ; if ( VAR3 > VAR5 ) { VAR3 = VAR5 ; } return VAR3 ?( memchr ( VAR2 -> VAR6 , 0 , VAR3 ) != NULL ) : false ; }

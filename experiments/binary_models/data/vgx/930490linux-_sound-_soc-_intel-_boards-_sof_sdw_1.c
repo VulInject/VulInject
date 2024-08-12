@@ -1,0 +1,1 @@
+static inline int FUN1 ( const VAR1 * VAR2 ) { int VAR3 ; if ( ! VAR2 [ 0 ] ) { return - VAR4 ; } for ( VAR3 = 0 ; VAR3 < FUN2 ( VAR5 ) ; VAR3 ++ ) { if ( ! memcmp ( VAR5 [ VAR3 ] . VAR2 , VAR2 , VAR6 ) ) { break ; } } return VAR3 ; }

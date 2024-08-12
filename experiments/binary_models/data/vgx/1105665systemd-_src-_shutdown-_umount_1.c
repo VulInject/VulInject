@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * * VAR2 , bool * VAR3 ) { int VAR4 = 0 ; assert ( VAR2 ) ; FUN2 ( , , ) { FUN3 ( "" , VAR5 -> VAR6 ) ; if ( FUN4 ( VAR5 -> VAR6 ) < 0 ) { FUN5 ( VAR7 , "" , VAR5 -> VAR6 ) ; VAR4 ++ ; continue ; } * VAR3 = true ; FUN6 ( VAR2 , VAR5 ) ; } return VAR4 ; }

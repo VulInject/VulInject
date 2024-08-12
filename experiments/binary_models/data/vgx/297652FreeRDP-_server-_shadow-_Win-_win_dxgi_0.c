@@ -1,0 +1,94 @@
+int FUN1(VAR1* VAR2)
+{
+UINT VAR3 = 0;
+int VAR4;
+HRESULT VAR5 = 0;
+UINT VAR6 = 15;
+UINT VAR7 = 0;
+VAR8* VAR9 = NULL;
+
+if (VAR2->VAR10)
+{
+FUN2(VAR2);
+}
+
+if (VAR2->VAR11)
+{
+VAR2->VAR11->VAR12->FUN3(VAR2->VAR11);
+VAR2->VAR11 = NULL;
+}
+
+VAR5 = VAR2->VAR13->VAR12->FUN4(
+VAR2->VAR13, VAR6, &(VAR2->VAR14),
+&(VAR2->VAR15));
+
+if (FUN5(VAR5))
+{
+VAR2->VAR10 = VAR16;
+VAR2->VAR17 = VAR2->VAR14.VAR18;
+}
+
+if (VAR5 == VAR19)
+return 0;
+
+if (FUN6(VAR5))
+{
+FUN7(VAR20, "",
+FUN8(VAR5), VAR5);
+
+if (VAR5 == VAR21)
+{
+FUN2(VAR2);
+
+if (VAR2->VAR11)
+{
+VAR2->VAR11->VAR12->FUN3(VAR2->VAR11);
+VAR2->VAR11 = NULL;
+}
+
+if (VAR2->VAR13)
+{
+VAR2->VAR13->VAR12->FUN3(VAR2->VAR13);
+VAR2->VAR13 = NULL;
+}
+
+VAR4 = FUN9(VAR2);
+
+if (VAR4 < 0)
+return -1;
+
+return 0;
+}
+else if (VAR5 == VAR22)
+{
+FUN10(VAR2);
+
+VAR4 = FUN11(VAR2);
+
+if (VAR4 < 0)
+return -1;
+
+return 0;
+}
+
+return -1;
+}
+
+VAR5 = VAR2->VAR15->VAR12->FUN12(
+VAR2->VAR15, &VAR23, (void**)&(VAR2->VAR11));
+
+if (VAR2->VAR15)
+{
+VAR2->VAR15->VAR12->FUN3(VAR2->VAR15);
+VAR2->VAR15 = NULL;
+}
+
+if (FUN6(VAR5))
+{
+FUN7(VAR20, "",
+FUN8(VAR5), VAR5);
+return -1;
+}
+
+return 1;
+}

@@ -1,0 +1,94 @@
+static int FUN1(void *VAR1,
+struct VAR2 *VAR3,
+const char *VAR4)
+{
+struct VAR5 *VAR6 = (struct VAR5 *)&VAR3->VAR7.VAR8;
+struct VAR9 *VAR10 = (struct VAR9 *)VAR1;
+char *VAR11;
+
+if (VAR10 == NULL)
+goto VAR12;
+
+VAR3->VAR13 = 4;
+
+switch (VAR10->VAR13) {
+case 1:
+if (VAR10->VAR14 > sizeof(VAR3->VAR7.VAR8))
+goto VAR15;
+if (VAR10->VAR14 == 0)
+goto VAR15;
+VAR3->VAR7.VAR16 = VAR10->VAR14;
+if (FUN2(VAR6, VAR10->VAR17, VAR10->VAR14))
+return -VAR18;
+if (!FUN3(VAR6))
+goto VAR15;
+VAR3->VAR7.VAR19 = FUN4(((struct VAR20 *)VAR6)->VAR21);
+
+if (VAR10->VAR22) {
+rpc_authflavor_t VAR23;
+if (VAR10->VAR22 > 1)
+goto VAR24;
+if (FUN2(&VAR23,
+VAR10->VAR25,
+sizeof(VAR23)))
+return -VAR18;
+VAR3->VAR26 = VAR23;
+} else
+VAR3->VAR26 = VAR27;
+
+VAR11 = FUN5(VAR10->VAR28.VAR10, VAR29);
+if (FUN6(VAR11))
+return FUN7(VAR11);
+VAR3->VAR7.VAR28 = VAR11;
+
+VAR11 = FUN5(VAR10->VAR30.VAR10, VAR31);
+if (FUN6(VAR11))
+return FUN7(VAR11);
+VAR3->VAR7.VAR32 = VAR11;
+FUN8(VAR33, "", VAR11);
+
+VAR11 = FUN5(VAR10->VAR34.VAR10, 16);
+if (FUN6(VAR11))
+return FUN7(VAR11);
+VAR3->VAR35 = VAR11;
+
+
+
+VAR3->VAR36	= VAR10->VAR36 & VAR37;
+VAR3->VAR38	= VAR10->VAR38;
+VAR3->VAR39	= VAR10->VAR39;
+VAR3->VAR40	= VAR10->VAR40;
+VAR3->VAR41	= VAR10->VAR41;
+VAR3->VAR42	= VAR10->VAR42;
+VAR3->VAR43	= VAR10->VAR43;
+VAR3->VAR44	= VAR10->VAR44;
+VAR3->VAR45	= VAR10->VAR45;
+VAR3->VAR7.VAR46 = VAR10->VAR47;
+FUN9(VAR3);
+if (VAR3->VAR7.VAR46 == VAR48)
+goto VAR49;
+
+break;
+default:
+return VAR50;
+}
+
+return 0;
+
+VAR12:
+FUN8(VAR33, "");
+return -VAR51;
+
+VAR24:
+FUN8(VAR33, "",
+VAR10->VAR22);
+return -VAR51;
+
+VAR15:
+FUN8(VAR33, "");
+return -VAR51;
+
+VAR49:
+FUN8(VAR33, "");
+return -VAR51;
+}

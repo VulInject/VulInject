@@ -1,0 +1,67 @@
+int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+int VAR5)
+{
+struct yaffs_ext_tags VAR6;
+VAR7 *VAR8;
+VAR7 *VAR9 = (VAR7 *)VAR4;
+int VAR10;
+int VAR11;
+int VAR12;
+int VAR13;
+int VAR14;
+int VAR15;
+struct yaffs_summary_header VAR16;
+struct VAR17 *VAR18 = FUN2(VAR2, VAR5);
+int VAR19 = VAR2->VAR20 - sizeof(VAR16);
+
+VAR8 = FUN3(VAR2);
+VAR10 = sizeof(struct VAR3) * VAR2->VAR21;
+VAR13 = VAR2->VAR21;
+VAR12 = VAR5 * VAR2->VAR22.VAR23 +
+VAR2->VAR21;
+VAR11 = 1;
+do {
+VAR15 = VAR10;
+if (VAR15 > VAR19)
+VAR15 = VAR19;
+VAR14 = FUN4(VAR2, VAR12,
+VAR8, &VAR6);
+
+if (VAR6.VAR11 != VAR11 ||
+VAR6.VAR24 != VAR25 ||
+VAR6.VAR26 == 0 ||
+VAR6.VAR27 > VAR28 ||
+VAR6.VAR10 != (VAR15 + sizeof(VAR16)))
+VAR14 = VAR29;
+if (VAR14 != VAR30)
+break;
+
+if (VAR4 == VAR2->VAR31) {
+
+FUN5(VAR2, VAR5, VAR13);
+VAR18->VAR32++;
+}
+memcpy(&VAR16, VAR8, sizeof(VAR16));
+memcpy(VAR9, VAR8 + sizeof(VAR16), VAR15);
+VAR10 -= VAR15;
+VAR9 += VAR15;
+VAR12++;
+VAR13++;
+VAR11++;
+} while (VAR14 == VAR30 && VAR10 > 0);
+FUN6(VAR2, VAR8);
+
+if (VAR14 == VAR30) {
+
+if (VAR16.VAR33 != VAR34 ||
+VAR16.VAR35 != VAR18->VAR36 ||
+VAR16.VAR37 != FUN7(VAR2))
+VAR14 = VAR29;
+}
+
+if (VAR4 == VAR2->VAR31 && VAR14 == VAR30)
+VAR18->VAR38 = 1;
+
+return VAR14;
+}

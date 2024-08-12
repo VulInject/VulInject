@@ -1,0 +1,1 @@
+cc_int32 FUN1 ( cc_context_t VAR1 ) { cc_int32 VAR2 = VAR3 ; cci_context_t VAR4 = ( VAR5 ) VAR1 ; if ( ! VAR1 ) { VAR2 = VAR6 ; } if ( ! VAR2 ) { free ( VAR4 -> VAR7 ) ; free ( VAR4 ) ; } return VAR2 ; }

@@ -1,0 +1,1 @@
+FUN1 ( ) { struct VAR1 * VAR2 ; bfd_size_type VAR3 = sizeof ( * VAR2 ) ; VAR2 = FUN2 ( VAR3 ) ; if ( VAR2 == NULL ) { return NULL ; } if ( ! FUN3 ( & VAR2 -> VAR2 , VAR4 , sizeof ( VAR5 ) ) ) { return NULL ; } VAR2 -> VAR6 = 0 ; VAR2 -> VAR7 = NULL ; VAR2 -> VAR8 = NULL ; VAR2 -> VAR9 = VAR10 ; return VAR2 ; }

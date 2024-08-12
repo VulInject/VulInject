@@ -1,0 +1,1 @@
+u16 FUN1 ( u32 VAR1 , u16 VAR2 , u8 VAR3 ) { unsigned long VAR4 = FUN2 ( VAR2 , VAR3 ) ; unsigned long VAR5 ; unsigned long VAR6 ; VAR6 = FUN3 ( VAR4 , VAR3 ) ; if ( VAR1 < VAR6 ) { return 0 ; } VAR5 = ( VAR1 - VAR6 ) / ( VAR2 * VAR3 ) ; return FUN4 ( , , 2048 ) ; }

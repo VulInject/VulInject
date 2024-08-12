@@ -1,0 +1,1 @@
+void FUN1 ( void ) { int VAR1 ; for ( VAR1 = 0 ; VAR1 < VAR2 ; ++ VAR1 ) { struct VAR3 * VAR4 = & VAR5 [ VAR1 ] ; VAR4 -> VAR6 = NULL ; VAR4 -> VAR7 = 0 ; } }

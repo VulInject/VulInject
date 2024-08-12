@@ -1,0 +1,33 @@
+FUN1(VAR1 *VAR2, struct VAR3 *VAR4, int *VAR5)
+{
+    unsigned int VAR6 = 0;
+    abi_ulong VAR7;
+    unsigned int VAR8;
+    FUN2(VAR2, VAR9, FUN3(VAR4->VAR10));
+    FUN2(VAR2, VAR11, FUN3(VAR4->VAR12));
+    FUN2(VAR2, VAR13, FUN3(VAR4->VAR14));
+    FUN2(VAR2, VAR15, FUN3(VAR4->VAR16));
+    VAR2->VAR17[VAR18] = FUN4(VAR4->VAR19);
+    VAR2->VAR17[VAR20] = FUN4(VAR4->VAR21);
+    VAR2->VAR17[VAR22] = FUN4(VAR4->VAR23);
+    VAR2->VAR17[VAR24] = FUN4(VAR4->VAR25);
+    VAR2->VAR17[VAR26] = FUN4(VAR4->VAR27);
+    VAR2->VAR17[VAR28] = FUN4(VAR4->VAR29);
+    VAR2->VAR17[VAR30] = FUN4(VAR4->VAR31);
+    VAR2->VAR32 = FUN4(VAR4->VAR32);
+    FUN2(VAR2, VAR33, FUN5(&VAR4->VAR34) | 3);
+    FUN2(VAR2, VAR35, FUN5(&VAR4->VAR36) | 3);
+    VAR8 = FUN4(VAR4->VAR37);
+    VAR2->VAR37 = (VAR2->VAR37 & ~0x40DD5) | (VAR8 & 0x40DD5);
+    VAR7 = FUN4(VAR4->VAR38);
+    if (VAR7 != 0)
+    {
+        if (!FUN6(VAR39, VAR7, sizeof(struct VAR40)))
+            goto VAR41;
+        FUN7(VAR2, VAR7, 1);
+    }
+    *VAR5 = FUN4(VAR4->VAR42);
+    return VAR6;
+VAR41:
+    return 1;
+}

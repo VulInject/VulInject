@@ -1,0 +1,65 @@
+VAR1
+FUN1(struct VAR2 *VAR3,
+acpi_object_type VAR4,
+struct VAR5 *VAR6)
+{
+union VAR7 *VAR8;
+union VAR7 *VAR9;
+
+FUN2(VAR10);
+
+if (!VAR3) {
+
+
+
+FUN3((VAR11, ""));
+FUN4(VAR12);
+}
+
+
+
+if (!FUN5(VAR4)) {
+FUN6((VAR11, "", VAR4));
+}
+
+
+
+VAR8 = FUN7();
+if (!VAR8) {
+FUN4(VAR13);
+}
+
+
+
+VAR8->VAR14.VAR15 = VAR16;
+VAR8->VAR17.VAR3 = VAR3;
+VAR8->VAR14.VAR18 = (VAR19) VAR4;
+
+VAR6->VAR20++;
+
+FUN8((VAR21,
+"",
+(VAR22) VAR6->VAR20));
+
+VAR9 = VAR6->VAR8;
+if (VAR9) {
+FUN9((VAR21,
+"",
+FUN10(VAR9->
+VAR17.VAR3),
+FUN11(VAR9->
+VAR14.VAR18)));
+} else {
+FUN9((VAR21, VAR23));
+}
+
+FUN9((VAR21,
+"",
+FUN10(VAR8->VAR17.VAR3),
+FUN11(VAR8->VAR14.VAR18)));
+
+
+
+FUN12(&VAR6->VAR8, VAR8);
+FUN4(VAR24);
+}

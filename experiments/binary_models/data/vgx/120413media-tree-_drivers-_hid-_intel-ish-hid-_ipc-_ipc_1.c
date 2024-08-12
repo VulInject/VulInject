@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { int VAR3 ; VAR3 = FUN2 ( VAR4 ) ; if ( ! VAR3 ) { FUN3 ( VAR5 , NULL ) ; VAR4 -> VAR6 = 1 ; FUN4 ( & VAR4 -> VAR7 ) ; FUN5 ( VAR4 ) ; } else { FUN6 ( VAR4 -> VAR8 , "" , VAR3 ) ; } }

@@ -1,0 +1,44 @@
+FUN1 (DebugFlags   VAR1,
+VAR2       *VAR3,
+const VAR4 *VAR5,
+va_list      VAR6)
+{
+VAR7 *VAR8;
+VAR2 *VAR9;
+VAR4 *VAR10, *VAR11;
+
+if (FUN2 (!VAR12))
+{
+FUN3 ();
+}
+
+if (!(VAR1 & VAR13))
+{
+return;
+}
+
+VAR11 = FUN4 (VAR5, VAR6);
+
+FUN5 (VAR14, VAR15, "", VAR11);
+
+for (VAR9 = VAR3; VAR9 != NULL; VAR9 = VAR9->VAR16)
+{
+VAR8 = VAR9->VAR17;
+VAR10 = FUN6 (VAR8);
+
+if (FUN7 (VAR8))
+{
+VAR4 *VAR18;
+
+
+VAR18 = FUN8 (VAR10 ? VAR10 : "", "", NULL);
+FUN9 (VAR10);
+VAR10 = VAR18;
+}
+
+FUN5 (VAR14, VAR15, "", VAR10);
+FUN9 (VAR10);
+}
+
+FUN9 (VAR11);
+}

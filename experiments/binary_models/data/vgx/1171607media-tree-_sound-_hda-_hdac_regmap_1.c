@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR2 , unsigned int VAR3 ) { struct VAR4 * VAR5 = FUN2 ( VAR2 ) ; unsigned int VAR6 = FUN3 ( VAR3 ) ; switch ( VAR6 ) { case VAR7 : case VAR8 : case VAR9 : return true ; case VAR10 : case VAR11 : case VAR12 : return true ; } return FUN4 ( VAR2 , VAR3 ) ; }

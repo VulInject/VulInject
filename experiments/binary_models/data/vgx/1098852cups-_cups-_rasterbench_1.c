@@ -1,0 +1,1 @@
+static int FUN1 ( void ) { int VAR1 [ 2 ] ; int VAR2 ; if ( FUN2 ( VAR1 ) ) { return ( - 1 ) ; } if ( ( VAR2 = FUN3 ( ) ) < 0 ) { close ( VAR1 [ 0 ] , NULL ) ; close ( VAR1 [ 1 ] ) ; return ( - 1 ) ; } if ( VAR2 == 0 ) { close ( VAR1 [ 1 ] ) ; FUN4 ( VAR1 [ 0 ] ) ; FUN5 ( 0 ) ; } else { close ( VAR1 [ 0 ] ) ; return ( VAR1 [ 1 ] ) ; } }

@@ -1,0 +1,15 @@
+static void FUN1(void **VAR1)
+{
+struct _sc_pkcs15_emulators VAR2 = { { &VAR3[0] }, 1 };
+int VAR4;
+scconf_list VAR5 = { NULL, "" };
+
+VAR4 = FUN2(NULL, NULL, &VAR5, VAR3, VAR6);
+FUN3(VAR4, VAR7);
+VAR4 = FUN2(NULL, &VAR2, NULL, VAR3, VAR6);
+FUN3(VAR4, VAR7);
+VAR4 = FUN2(NULL, &VAR2, &VAR5, NULL, VAR6);
+FUN3(VAR4, VAR7);
+VAR4 = FUN2(NULL, &VAR2, &VAR5, VAR3, NULL);
+FUN3(VAR4, VAR7);
+}

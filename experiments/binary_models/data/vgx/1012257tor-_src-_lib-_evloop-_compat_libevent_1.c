@@ -1,0 +1,1 @@
+static void FUN1 ( evutil_socket_t VAR1 , short VAR2 , void * VAR3 ) { ( void ) VAR1 ; ( void ) VAR2 ; struct VAR4 * VAR5 = VAR3 ; FUN2 ( VAR5 , NULL ) ; }

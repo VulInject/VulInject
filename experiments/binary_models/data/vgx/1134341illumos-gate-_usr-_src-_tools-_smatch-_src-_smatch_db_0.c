@@ -1,0 +1,91 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct select_caller_info_data VAR3 = { .VAR4 = -1 };
+struct VAR5 *VAR6;
+struct VAR7 *VAR7;
+struct timeval VAR8;
+
+if (!VAR2 || !VAR2->VAR9)
+return;
+
+FUN2(VAR2);
+FUN3(&VAR3.VAR10, NULL);
+
+FUN4();
+FUN5();
+
+if (!VAR11) {
+char *VAR12;
+
+if (VAR2->VAR13.VAR14 & VAR15)
+FUN6(FUN7(), VAR2->VAR9->VAR16);
+else
+FUN6(NULL, VAR2->VAR9->VAR16);
+
+if (FUN8((struct VAR17 *)VAR18) > 20) {
+FUN9((struct VAR17 **)&VAR18);
+FUN9((struct VAR17 **)&VAR19);
+FUN10();
+return;
+}
+
+FUN11(&VAR3,
+"",
+VAR2);
+
+
+VAR7 = FUN12();
+if (!VAR3.VAR20)
+FUN13(&VAR3.VAR21, VAR7);
+FUN14(&VAR7);
+FUN4();
+FUN5();
+VAR3.VAR4 = -1;
+VAR3.VAR20 = 0;
+VAR3.VAR22 = 0;
+
+FUN15(VAR18, VAR12) {
+FUN16(VAR23, &VAR3,
+""
+"",
+VAR12);
+} FUN17(VAR12);
+
+if (VAR3.VAR22) {
+FUN15(VAR18, VAR12) {
+FUN18(VAR12);
+} FUN17(VAR12);
+goto VAR24;
+}
+
+FUN15(VAR18, VAR12) {
+FUN16(VAR23, &VAR3,
+""
+"",
+VAR12);
+FUN18(VAR12);
+} FUN17(VAR12);
+
+VAR24:
+FUN9((struct VAR17 **)&VAR18);
+FUN9((struct VAR17 **)&VAR19);
+} else {
+FUN11(&VAR3,
+"",
+VAR2);
+}
+
+VAR7 = FUN12();
+if (!VAR3.VAR20)
+FUN13(&VAR3.VAR21, VAR7);
+FUN14(&VAR7);
+
+FUN3(&VAR8, NULL);
+if (VAR8.VAR25 - VAR3.VAR10.VAR25 <= 10) {
+FUN19(VAR3.VAR21, VAR6) {
+FUN20(VAR6);
+} FUN21(VAR6);
+}
+
+FUN14(&VAR3.VAR21);
+}

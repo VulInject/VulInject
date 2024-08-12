@@ -1,0 +1,89 @@
+static enum VAR1
+FUN1(struct VAR2 *VAR3, dma_cookie_t VAR4,
+struct VAR5 *VAR6)
+{
+struct VAR7	*VAR8 = FUN2(VAR3);
+struct VAR9		*VAR10 = FUN3(VAR8->VAR3.VAR11);
+struct VAR12	*VAR13, *VAR14;
+struct VAR15	*VAR16;
+enum dma_status		VAR17;
+int			VAR18, VAR19;
+u32			VAR20, VAR21, VAR22, VAR23, VAR24;
+u8			VAR25 = 0;
+unsigned long		VAR26;
+bool			VAR27;
+
+VAR17 = FUN4(VAR3, VAR4, VAR6);
+if (VAR17 == VAR28)
+return VAR17;
+
+if (!VAR6)
+return VAR17;
+
+FUN5(&VAR8->VAR29, VAR26);
+
+VAR13 = FUN6(&VAR8->VAR30, struct VAR12, VAR31);
+
+
+if (!VAR13->VAR32) {
+FUN7(VAR6, VAR13->VAR33);
+goto VAR34;
+}
+
+VAR18 = VAR13->VAR33;
+
+VAR23 = VAR35 | VAR36;
+VAR24 = VAR37 | VAR38;
+if ((VAR13->VAR39.VAR40 & VAR23) == VAR24) {
+FUN8(VAR10, VAR41, VAR8->VAR23);
+while (!(FUN9(VAR8, VAR42) & VAR43))
+FUN10();
+}
+
+
+for (VAR19 = 0; VAR19 < VAR44; VAR19++) {
+VAR21 = FUN9(VAR8, VAR45) & 0xfffffffc;
+FUN11();
+VAR27 = !!(FUN9(VAR8, VAR46) & VAR47);
+FUN11();
+VAR22 = FUN9(VAR8, VAR48);
+FUN11();
+VAR20 = FUN9(VAR8, VAR45) & 0xfffffffc;
+FUN11();
+
+if ((VAR21 == VAR20) && VAR27)
+break;
+}
+
+if (FUN12(VAR19 >= VAR44)) {
+VAR17 = VAR49;
+goto VAR34;
+}
+
+
+if ((VAR13->VAR39.VAR40 & VAR23) == VAR24) {
+FUN8(VAR10, VAR41, VAR8->VAR23);
+while (!(FUN9(VAR8, VAR42) & VAR43))
+FUN10();
+}
+
+
+VAR16 = &VAR13->VAR16;
+FUN13(VAR13, VAR14, VAR16, VAR50) {
+VAR25 = FUN14(VAR13->VAR39.VAR40);
+VAR18 -= (VAR13->VAR39.VAR51 & 0xffffff) << VAR25;
+if ((VAR13->VAR39.VAR52 & 0xfffffffc) == VAR20)
+break;
+}
+VAR18 += VAR22 << VAR25;
+
+FUN7(VAR6, VAR18);
+
+FUN15(FUN16(VAR3),
+"",
+VAR53, VAR13, &VAR13->VAR54.VAR55, VAR17, VAR4, VAR18);
+
+VAR34:
+FUN17(&VAR8->VAR29, VAR26);
+return VAR17;
+}

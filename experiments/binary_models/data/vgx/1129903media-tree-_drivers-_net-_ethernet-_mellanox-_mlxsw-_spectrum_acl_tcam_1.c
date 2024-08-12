@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , u16 VAR3 ) { FUN2 ( VAR3 , VAR2 -> VAR4 ) ; } VAR5 { const enum VAR6 * VAR7 ; unsigned int VAR8 ; } VAR9 { struct VAR1 * VAR2 ; u16 VAR3 ; struct list_head VAR10 ; unsigned int VAR11 ; struct rhashtable VAR12 ; { u16 VAR13 ; bool VAR14 ; } , bound struct VAR15 * VAR16 ; const struct VAR5 * VAR17 ; int VAR18 ; }

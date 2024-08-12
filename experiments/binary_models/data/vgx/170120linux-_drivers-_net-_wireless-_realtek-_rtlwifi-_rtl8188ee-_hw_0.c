@@ -1,0 +1,376 @@
+void FUN1(struct VAR1 *VAR2, u8 VAR3, VAR4 *VAR5)
+{
+struct VAR6 *VAR7 = FUN2(VAR2);
+struct VAR8 *VAR9 = FUN3(FUN4(VAR2));
+struct VAR10 *VAR11 = FUN5(FUN2(VAR2));
+struct VAR12 *VAR13 = FUN6(FUN2(VAR2));
+struct VAR14 *VAR15 = FUN7(FUN2(VAR2));
+u8 VAR16;
+
+switch (VAR3) {
+case VAR17:
+for (VAR16 = 0; VAR16 < VAR18; VAR16++) {
+FUN8(VAR7, (VAR19 + VAR16),
+VAR5[VAR16]);
+}
+break;
+case VAR20:{
+u16 VAR21 = ((VAR22 *)VAR5)[0];
+u8 VAR23 = 0;
+VAR21 = VAR21 & 0x15f;
+VAR21 |= 0x01;
+FUN8(VAR7, VAR24, VAR21 & 0xff);
+FUN8(VAR7, VAR24 + 1,
+(VAR21 >> 8) & 0xff);
+while (VAR21 > 0x1) {
+VAR21 = (VAR21 >> 1);
+VAR23++;
+}
+FUN8(VAR7, VAR25,
+VAR23);
+break;
+}
+case VAR26:
+for (VAR16 = 0; VAR16 < VAR18; VAR16++) {
+FUN8(VAR7, (VAR27 + VAR16),
+VAR5[VAR16]);
+}
+break;
+case VAR28:
+FUN8(VAR7, VAR29 + 1, VAR5[0]);
+FUN8(VAR7, VAR30 + 1, VAR5[1]);
+
+FUN8(VAR7, VAR31 + 1, VAR5[0]);
+FUN8(VAR7, VAR32 + 1, VAR5[0]);
+
+if (!VAR11->VAR33)
+FUN9(VAR7, VAR34,
+0x0e0e);
+else
+FUN9(VAR7, VAR34,
+*((VAR22 *)VAR5));
+break;
+case VAR35:{
+u8 VAR36;
+
+FUN10(VAR7, VAR37, VAR38,
+"", VAR5[0]);
+
+FUN8(VAR7, VAR39, VAR5[0]);
+
+for (VAR36 = 0; VAR36 < VAR40; VAR36++) {
+VAR7->VAR41->VAR42->FUN11(VAR2, VAR43,
+&VAR36);
+}
+break;
+}
+case VAR44:{
+u8 VAR45;
+u8 VAR46 = (bool)*VAR5;
+VAR45 = FUN12(VAR7, VAR47+2);
+if (VAR46) {
+VAR45 |= 0x02;
+FUN8(VAR7, VAR47 +
+2, VAR45);
+} else {
+VAR45 |= 0xFD;
+FUN8(VAR7, VAR47 +
+2, VAR45);
+}
+break; }
+case VAR48:
+FUN8(VAR7, VAR49, *VAR5);
+break;
+case VAR50:{
+u8 VAR51;
+u8 VAR52;
+
+VAR51 = *VAR5;
+if (VAR51 <= 7) {
+VAR52 = 0;
+
+if (VAR51 < VAR52)
+VAR51 = VAR52;
+
+VAR11->VAR53 = ((VAR11->VAR53 &
+0xf8) |
+VAR51);
+
+*VAR5 = VAR51;
+
+FUN10(VAR7, VAR37, VAR38,
+"",
+VAR11->VAR53);
+
+FUN8(VAR7, VAR54,
+VAR11->VAR53);
+}
+break; }
+case VAR55:{
+u8 VAR56;
+
+VAR56 = *VAR5;
+VAR11->VAR53 |= (VAR56 << 3);
+
+FUN10(VAR7, VAR37, VAR38,
+"",
+VAR11->VAR53);
+
+FUN8(VAR7, VAR54,
+VAR11->VAR53);
+break;
+}
+case VAR57:{
+u8 VAR58[4] = { 0x41, 0xa8, 0x72, 0xb9 };
+u8 VAR59;
+VAR4 *VAR60 = NULL;
+u8 VAR61 = 0;
+
+VAR60 = VAR58;
+
+VAR59 = *VAR5;
+if (VAR59 <= 3) {
+VAR59 = (1 << (VAR59 + 2));
+if (VAR59 > 0xf)
+VAR59 = 0xf;
+
+for (VAR61 = 0; VAR61 < 4; VAR61++) {
+if ((VAR60[VAR61] & 0xf0) >
+(VAR59 << 4))
+VAR60[VAR61] =
+(VAR60[VAR61] & 0x0f) |
+(VAR59 << 4);
+
+if ((VAR60[VAR61] & 0x0f) >
+VAR59)
+VAR60[VAR61] =
+(VAR60[VAR61] & 0xf0) |
+(VAR59);
+
+FUN8(VAR7,
+(VAR62 + VAR61),
+VAR60[VAR61]);
+
+}
+
+FUN10(VAR7, VAR37, VAR38,
+"",
+VAR59);
+}
+break; }
+case VAR43:{
+u8 VAR36 = *VAR5;
+FUN13(VAR2);
+
+if (VAR9->VAR63 != VAR64)
+VAR7->VAR41->VAR42->FUN11(VAR2,
+VAR65,
+&VAR36);
+break; }
+case VAR65:{
+u8 VAR36 = *VAR5;
+union VAR66 *VAR67 =
+(union VAR66 *)(&(VAR11->VAR68[0].VAR69));
+u8 VAR70 = VAR67->VAR71.VAR70;
+u8 VAR72 = FUN12(VAR7, VAR73);
+
+VAR72 = VAR72 |
+((VAR9->VAR63 == 2) ? 0x0 : 0x1);
+
+if (VAR70) {
+switch (VAR36) {
+case VAR74:
+VAR72 |= VAR75;
+break;
+case VAR76:
+VAR72 |= VAR77;
+break;
+case VAR78:
+VAR72 |= VAR79;
+break;
+default:
+FUN10(VAR7, VAR80, VAR81,
+"",
+VAR70);
+break;
+}
+} else {
+switch (VAR36) {
+case VAR74:
+VAR72 &= (~VAR75);
+break;
+case VAR76:
+VAR72 &= (~VAR77);
+break;
+case VAR78:
+VAR72 &= (~VAR79);
+break;
+default:
+FUN14("",
+VAR36);
+break;
+}
+}
+
+FUN10(VAR7, VAR82, VAR83,
+"",
+VAR72);
+FUN8(VAR7, VAR73, VAR72);
+break; }
+case VAR84:
+FUN15(VAR7, VAR85, ((VAR86 *)(VAR5))[0]);
+VAR9->VAR87 = ((VAR86 *)(VAR5))[0];
+break;
+case VAR88:{
+u8 VAR89 = *VAR5;
+
+FUN9(VAR7, VAR90,
+VAR89 << VAR91 |
+VAR89 << VAR92);
+break; }
+case VAR93:
+FUN8(VAR7, VAR94, (FUN16(0) | FUN16(1)));
+break;
+case VAR95:
+VAR13->VAR96 = *((VAR22 *)VAR5);
+break;
+case VAR97:
+VAR13->VAR98 = *VAR5;
+break;
+case VAR99:
+FUN17(VAR2, (*(enum VAR100 *)VAR5));
+break;
+case VAR101:{
+u8 VAR102;
+
+VAR102 = FUN12(VAR7, VAR103);
+FUN18(1);
+
+if (VAR102 & FUN16(7)) {
+FUN8(VAR7, VAR103, *VAR5);
+} else {
+FUN8(VAR7, VAR103, *VAR5 | FUN16(7));
+}
+break; }
+case VAR104:
+FUN19(VAR2, *VAR5);
+break;
+case VAR105:
+VAR15->VAR106 = *((bool *)VAR5);
+break;
+case VAR107:
+FUN20(VAR2);
+break;
+case VAR108:{
+bool VAR109 = *((bool *)VAR5);
+
+if (VAR109)
+FUN21(VAR2);
+else
+FUN22(VAR2);
+
+break; }
+case VAR110:{
+u8 VAR111 = *VAR5;
+u8 VAR112, VAR113, VAR114;
+u8 VAR115 = 0, VAR116 = 0;
+bool VAR117 = false;
+
+if (VAR111 == VAR118) {
+VAR7->VAR41->VAR42->FUN11(VAR2, VAR119,
+NULL);
+
+VAR112 = FUN12(VAR7, VAR120 + 1);
+FUN8(VAR7, VAR120 + 1,
+(VAR112 | FUN16(0)));
+
+FUN23(VAR2, 0, FUN16(3));
+FUN23(VAR2, FUN16(4), 0);
+
+VAR113 =
+FUN12(VAR7,
+VAR121 + 2);
+FUN8(VAR7, VAR121 + 2,
+VAR113 & (~FUN16(6)));
+if (VAR113 & FUN16(6))
+VAR117 = true;
+
+do {
+VAR114 = FUN12(VAR7,
+VAR122+2);
+FUN8(VAR7, VAR122+2,
+(VAR114 | FUN16(0)));
+FUN24(VAR2);
+
+FUN25(VAR2, 0);
+VAR114 = FUN12(VAR7,
+VAR122+2);
+VAR115 = 0;
+while (!(VAR114 & FUN16(0)) && VAR115 < 20) {
+VAR115++;
+FUN18(10);
+VAR114 =
+FUN12(VAR7, VAR122+2);
+}
+VAR116++;
+} while (!(VAR114 & FUN16(0)) && VAR116 < 5);
+
+if (VAR114 & FUN16(0))
+FUN8(VAR7, VAR122+2, FUN16(0));
+
+FUN23(VAR2, FUN16(3), 0);
+FUN23(VAR2, 0, FUN16(4));
+
+if (VAR117) {
+FUN8(VAR7,
+VAR121 + 2,
+VAR113);
+}
+
+FUN8(VAR7, VAR120 + 1,
+(VAR112 & ~(FUN16(0))));
+}
+FUN26(VAR2, (*(VAR4 *)VAR5));
+break; }
+case VAR123:
+FUN27(VAR2, *VAR5);
+break;
+case VAR119:{
+u16 VAR124;
+
+VAR124 = FUN28(VAR7, VAR125);
+VAR124 &= 0xC000;
+FUN9(VAR7, VAR125, (VAR124 |
+VAR11->VAR126));
+break; }
+case VAR127:{
+u8 VAR128 = *VAR5;
+
+if (VAR128)
+FUN29(VAR2);
+
+FUN23(VAR2, 0, FUN16(3));
+
+FUN15(VAR7, VAR129,
+(VAR86)(VAR11->VAR130 & 0xffffffff));
+FUN15(VAR7, VAR129 + 4,
+(VAR86)((VAR11->VAR130 >> 32) & 0xffffffff));
+
+FUN23(VAR2, FUN16(3), 0);
+
+if (VAR128)
+FUN30(VAR2);
+break; }
+case VAR131: {
+u8 VAR132[2];
+
+VAR132[0] = 0xff;
+VAR132[1] = *((VAR4 *)VAR5);
+FUN31(VAR2, VAR133,
+2, VAR132);
+break; }
+default:
+FUN14("", VAR3);
+break;
+}
+}

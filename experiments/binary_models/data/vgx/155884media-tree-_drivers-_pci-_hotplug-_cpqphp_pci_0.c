@@ -1,0 +1,49 @@
+int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+int VAR5 = 0;
+struct VAR6 *VAR7;
+struct VAR6 *VAR8;
+FUN2("", VAR9);
+
+if (!VAR2)
+return 1;
+
+VAR7 = VAR2->VAR10;
+VAR2->VAR10 = NULL;
+while (VAR7) {
+VAR8 = VAR7->VAR11;
+FUN3(&(VAR4->VAR10), VAR7);
+VAR7 = VAR8;
+}
+
+VAR7 = VAR2->VAR12;
+VAR2->VAR12 = NULL;
+while (VAR7) {
+VAR8 = VAR7->VAR11;
+FUN3(&(VAR4->VAR12), VAR7);
+VAR7 = VAR8;
+}
+
+VAR7 = VAR2->VAR13;
+VAR2->VAR13 = NULL;
+while (VAR7) {
+VAR8 = VAR7->VAR11;
+FUN3(&(VAR4->VAR13), VAR7);
+VAR7 = VAR8;
+}
+
+VAR7 = VAR2->VAR14;
+VAR2->VAR14 = NULL;
+while (VAR7) {
+VAR8 = VAR7->VAR11;
+FUN3(&(VAR4->VAR14), VAR7);
+VAR7 = VAR8;
+}
+
+VAR5 |= FUN4(&(VAR4->VAR12));
+VAR5 |= FUN4(&(VAR4->VAR13));
+VAR5 |= FUN4(&(VAR4->VAR10));
+VAR5 |= FUN4(&(VAR4->VAR14));
+
+return VAR5;
+}

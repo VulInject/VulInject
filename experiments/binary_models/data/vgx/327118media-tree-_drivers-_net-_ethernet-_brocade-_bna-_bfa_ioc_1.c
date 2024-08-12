@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , enum ioc_event VAR3 ) { switch ( VAR3 ) { case VAR4 : FUN2 ( VAR2 , VAR5 ) ; break ; case VAR6 : FUN3 ( VAR2 ) ; break ; case VAR7 : FUN2 ( VAR2 , VAR8 ) ; break ; default : FUN4 ( VAR3 , NULL ) ; } }

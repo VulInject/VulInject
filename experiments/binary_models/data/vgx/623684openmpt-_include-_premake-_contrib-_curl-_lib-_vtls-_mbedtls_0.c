@@ -1,0 +1,45 @@
+static VAR1
+FUN1(struct VAR2 *VAR3,
+int VAR4)
+{
+CURLcode VAR5 = VAR6;
+struct VAR7 *VAR8 = &VAR3->VAR9[VAR4];
+struct VAR10 *VAR11 = VAR3->VAR11;
+
+FUN2(VAR12 == VAR8->VAR13);
+
+if(VAR11->VAR14.VAR15.VAR16) {
+int VAR17;
+VAR18 *VAR19;
+void *VAR20 = NULL;
+
+VAR19 = malloc(sizeof(VAR18));
+if(!VAR19)
+return VAR21;
+
+FUN3(VAR19);
+
+VAR17 = FUN4(&VAR8->VAR9, VAR19);
+if(VAR17) {
+FUN5(VAR11, "", -VAR17);
+return VAR22;
+}
+
+
+FUN6(VAR3);
+if(!FUN7(VAR3, &VAR20, NULL, VAR4))
+FUN8(VAR3, VAR20);
+
+VAR5 = FUN9(VAR3, VAR19, 0, VAR4);
+FUN10(VAR3);
+if(VAR5) {
+free(VAR19);
+FUN5(VAR11, "");
+return VAR5;
+}
+}
+
+VAR8->VAR13 = VAR23;
+
+return VAR6;
+}

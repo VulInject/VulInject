@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 ) { FUN2 ( & VAR2 -> VAR3 ) ; FUN2 ( & VAR2 -> VAR4 ) ; FUN3 ( & VAR2 -> VAR5 ) ; FUN4 ( VAR2 ) ; switch ( VAR2 -> VAR6 ) { case VAR7 : FUN5 ( & VAR2 -> VAR2 . VAR8 ) ; break ; case VAR9 : FUN4 ( & VAR2 -> VAR2 . VAR10 ) ; break ; default : break ; } VAR2 -> VAR11 = VAR12 ; VAR2 -> VAR6 = VAR13 ; VAR2 -> VAR14 = VAR15 ; }

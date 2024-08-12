@@ -1,0 +1,8 @@
+static void FUN1(struct VAR1 *VAR2, int VAR3)
+{
+    hwaddr VAR4 = FUN2(VAR2, VAR3, VAR5);
+    FUN3(VAR4, (void *)&VAR2->VAR6[VAR3].VAR7, sizeof VAR2->VAR6[VAR3].VAR7);
+    FUN4(FUN5(VAR3, &VAR2->VAR6[VAR3].VAR7));
+    VAR2->VAR6[VAR3].VAR8[VAR9] = (VAR10)(unsigned long)VAR2->VAR6[VAR3].VAR7.VAR11;
+    VAR2->VAR6[VAR3].VAR8[VAR12] = (VAR10)(unsigned long)VAR2->VAR6[VAR3].VAR7.VAR13;
+}

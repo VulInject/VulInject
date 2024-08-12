@@ -1,0 +1,1 @@
+static void * FUN1 ( struct VAR1 * VAR2 , void * VAR3 , VAR4 * VAR5 ) { struct VAR6 * VAR7 = VAR2 -> private ; struct VAR8 * VAR9 = VAR3 ; struct VAR10 * VAR11 = VAR9 -> VAR12 . VAR11 ; ++ * VAR5 ; if ( VAR11 == & VAR7 -> VAR13 ) { return VAR14 ; } return FUN2 ( VAR11 , VAR8 , VAR12 ) ; }

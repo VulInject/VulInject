@@ -1,0 +1,20 @@
+void FUN1(void)
+{
+const VAR1 *VAR2;
+const VAR1 *VAR3;
+const VAR1 *VAR4;
+
+FUN2("", "");
+FUN3(FUN4(VAR5, ""));
+FUN3(FUN5(VAR5));
+FUN6(NULL, VAR6, VAR7, 0, "");
+
+FUN3(FUN7(VAR6, 0, NULL));
+
+FUN8(FUN9(VAR5), 1);
+FUN10(VAR6, "", VAR8);
+FUN10(VAR6, "", VAR9);
+FUN3(FUN11(&VAR2, &VAR3, &VAR4, VAR5, "")); 
+FUN10(VAR6, "", VAR10);
+FUN10(VAR6, "", VAR11);
+}

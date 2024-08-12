@@ -1,0 +1,1 @@
+static char * FUN1 ( VAR1 * VAR2 , int VAR3 ) { int VAR4 = 0 ; switch ( VAR2 -> VAR5 ) { case VAR6 : case VAR7 : case VAR8 : case VAR9 : VAR4 = 0x80 ; break ; case VAR10 : VAR4 = 0x8000 ; break ; case VAR11 : break ; } return FUN2 ( "" VAR12 "" , VAR4 ) ; }

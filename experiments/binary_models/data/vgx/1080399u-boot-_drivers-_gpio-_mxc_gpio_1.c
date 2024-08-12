@@ -1,0 +1,1 @@
+int FUN1 ( unsigned VAR1 , int VAR2 ) { unsigned int VAR3 = FUN2 ( VAR1 ) ; struct VAR4 * VAR5 ; u32 VAR6 ; VAR1 &= 0x1f ; VAR5 = ( VAR4 * ) VAR7 [ VAR3 ] ; VAR6 = FUN3 ( & VAR5 -> VAR8 ) ; if ( VAR2 ) { VAR6 |= 1 << VAR1 ; } else { VAR6 &= ~ ( 1 << VAR1 ) ; } FUN4 ( VAR6 , & VAR5 -> VAR8 ) ; return 0 ; }

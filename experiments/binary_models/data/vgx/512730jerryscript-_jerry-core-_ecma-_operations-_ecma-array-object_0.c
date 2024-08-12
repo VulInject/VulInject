@@ -1,0 +1,57 @@
+FUN1 (VAR1 *VAR2, 
+uint32_t VAR3) 
+{
+FUN2 (FUN3 (VAR2));
+
+VAR4 *VAR5 = (VAR4 *) VAR2;
+
+FUN4 (VAR2);
+VAR6 *VAR7 = FUN5 (VAR6, VAR2->VAR8.VAR9);
+
+uint32_t VAR10 = VAR5->VAR11.VAR12.VAR13;
+const uint32_t VAR14 = FUN6 (VAR10);
+FUN2 (VAR3 < VAR10);
+
+for (uint32_t VAR15 = VAR3; VAR15 < VAR10; VAR15++)
+{
+if (FUN7 (VAR7[VAR15]))
+{
+VAR5->VAR11.VAR12.VAR16 -= VAR17;
+}
+else
+{
+FUN8 (VAR7[VAR15]);
+}
+}
+
+jmem_cpointer_t VAR18;
+
+if (VAR3 == 0)
+{
+FUN9 (VAR7, VAR14 * sizeof (VAR6));
+VAR18 = VAR19;
+}
+else
+{
+const uint32_t VAR20 = FUN6 (VAR3);
+
+VAR6 *VAR21;
+VAR21 = (VAR6 *) FUN10 (VAR7,
+VAR14 * sizeof (VAR6),
+VAR20 * sizeof (VAR6));
+
+for (uint32_t VAR15 = VAR3; VAR15 < VAR20; VAR15++)
+{
+VAR21[VAR15] = VAR22;
+}
+
+FUN11 (VAR18, VAR21);
+}
+
+VAR5->VAR11.VAR12.VAR13 = VAR3;
+VAR2->VAR8.VAR9 = VAR18;
+
+FUN12 (VAR2);
+
+return VAR3;
+}

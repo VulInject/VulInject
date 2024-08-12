@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( const char * VAR2 ) { VAR1 * VAR3 ; if ( ( VAR3 = FUN2 ( VAR2 , "" ) ) == NULL ) { if ( VAR4 == VAR5 ) { char VAR6 [ 1024 ] ; sprintf ( VAR6 , "" , VAR2 ) ; VAR3 = FUN2 ( VAR6 , "" ) ; } else { FUN3 ( VAR7 , ""%VAR8\"" , VAR2 , strerror ( VAR4 ) ) ; } } return ( VAR3 ) ; }

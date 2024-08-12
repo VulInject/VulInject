@@ -1,0 +1,34 @@
+static void FUN1(struct VAR1 *VAR2, u16 VAR3)
+{
+struct VAR4 *VAR5 = FUN2(VAR2);
+struct VAR6 *VAR7;
+struct VAR8 *VAR9;
+unsigned long VAR10;
+VAR11 *VAR12;
+VAR3 = VAR3 * 90 / 65535;
+
+VAR9 = FUN3(VAR5);
+if (!VAR9) {
+FUN4(VAR5, "");
+return;
+}
+
+VAR7 = VAR9->VAR13;
+if (!VAR7) {
+FUN4(VAR5, "");
+return;
+}
+VAR12 = VAR7->VAR14->VAR15[0]->VAR12;
+
+FUN5(&VAR7->VAR16, VAR10);
+VAR12[0] = 0xfe;
+VAR12[1] = 0x03;
+VAR12[2] = VAR3 >> 14;
+VAR12[3] = VAR3 >> 14;
+VAR12[4] = VAR3;
+VAR12[5] = 0x00;
+VAR12[6] = 0x00;
+
+FUN6(VAR5, VAR7->VAR14, VAR17);
+FUN7(&VAR7->VAR16, VAR10);
+}

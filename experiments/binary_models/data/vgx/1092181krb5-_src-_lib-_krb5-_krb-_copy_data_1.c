@@ -1,0 +1,1 @@
+krb5_error_code FUN1 ( krb5_context VAR1 , const VAR2 * VAR3 , VAR2 * VAR4 ) { if ( ! VAR3 ) { return VAR5 ; } VAR4 -> VAR6 = VAR3 -> VAR6 ; if ( ! ( VAR4 -> VAR7 = malloc ( VAR4 -> VAR6 + 1 ) ) ) { return VAR8 ; } if ( VAR4 -> VAR6 ) { memcpy ( VAR4 -> VAR7 , VAR3 -> VAR7 , VAR4 -> VAR6 ) ; } VAR4 -> VAR9 = VAR10 ; return 0 ; }

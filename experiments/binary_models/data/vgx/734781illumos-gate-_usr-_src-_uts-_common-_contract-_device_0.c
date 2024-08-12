@@ -1,0 +1,109 @@
+static int
+FUN1(VAR1 *VAR2, uint_t VAR3, uint64_t VAR4,
+uint_t VAR5)
+{
+VAR6 *VAR7 = VAR2->VAR8;
+VAR9 *VAR10;
+ctid_t	VAR11;
+int VAR12;
+
+VAR11 = VAR2->VAR13;
+
+FUN2((VAR14, "", VAR11));
+
+FUN3(&VAR2->VAR15);
+FUN2((VAR14, "", VAR11));
+
+VAR10 = VAR7->VAR16;
+
+FUN4(VAR7->VAR17);
+FUN4(strlen(VAR7->VAR17) < VAR18);
+
+
+FUN4(!(VAR7->VAR19 & VAR3));
+
+
+FUN4(FUN5(VAR7->VAR20, VAR3));
+
+
+FUN4(!VAR7->VAR21);
+
+if (VAR10)
+FUN6(VAR10);
+
+FUN7(&VAR2->VAR15);
+
+
+if (VAR5 != VAR22 && VAR3 == VAR23 && VAR10) {
+FUN2((VAR14, "", VAR11));
+VAR12 = FUN8(VAR10);
+if (VAR12 != 0) {
+FUN2((VAR14, "",
+VAR11));
+FUN9(VAR10);
+}
+}
+
+FUN3(&VAR2->VAR15);
+
+if (VAR10)
+FUN9(VAR10);
+
+if (VAR10 == NULL) {
+if (VAR7->VAR24 != VAR4) {
+FUN2((VAR25, ""
+"",
+VAR5 == VAR22 ? "" : "",
+FUN10(VAR3), (unsigned long long)VAR4));
+FUN2((VAR14, "",
+VAR11));
+} else {
+FUN4(VAR7->VAR26 == VAR3);
+FUN2((VAR25, ""
+"", VAR11));
+}
+VAR12 = (VAR2->VAR27 == VAR28) ? VAR29 :
+((VAR5 == VAR22) ? VAR30 : 0);
+FUN7(&VAR2->VAR15);
+return (VAR12);
+}
+
+
+FUN7(&VAR2->VAR15);
+
+FUN3(&FUN11(VAR10)->VAR31);
+FUN3(&VAR2->VAR15);
+if (VAR7->VAR24 != VAR4) {
+char *VAR32;
+FUN7(&VAR2->VAR15);
+FUN7(&FUN11(VAR10)->VAR31);
+FUN6(VAR10);
+VAR32 = FUN12(VAR18, VAR33);
+(void) FUN13(VAR10, VAR32);
+FUN9(VAR10);
+FUN2((VAR25, ""
+"",
+VAR5 == VAR22 ? "" : "",
+FUN10(VAR3), (unsigned long long)VAR4, VAR32));
+FUN14(VAR32, VAR18);
+FUN2((VAR14, "",
+VAR5 == VAR22 ? VAR30 : 0, VAR11));
+return (VAR5 == VAR34 ? 0 : VAR30);
+}
+
+FUN4(VAR7->VAR26 == VAR3);
+FUN4(VAR5 == VAR34 || VAR5 == VAR22);
+
+FUN2((VAR14, "",
+VAR5 == VAR22 ? "" : "", VAR11));
+
+VAR7->VAR35 = VAR5;
+FUN7(&VAR2->VAR15);
+
+FUN15(VAR10);
+FUN7(&FUN11(VAR10)->VAR31);
+
+FUN2((VAR14, "", VAR11));
+
+return (0);
+}

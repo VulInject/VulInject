@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR2 ) { int VAR3 = 120 ; FUN2 ( VAR4 , VAR2 -> VAR5 + VAR6 ) ; while ( ( VAR3 > 0 ) && ! ( FUN3 ( VAR2 -> VAR5 + VAR7 ) & 1 ) ) { -- VAR3 ; } if ( ! ( FUN3 ( VAR2 -> VAR5 + VAR7 ) & 1 ) ) { FUN4 ( VAR2 , NULL ) ; return false ; } return true ; }

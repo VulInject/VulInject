@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( struct VAR2 * VAR3 , enum nfp_port_type VAR4 , struct VAR5 * VAR6 ) { struct VAR1 * VAR7 ; VAR7 = FUN2 ( sizeof ( * VAR7 ) , VAR8 ) ; if ( ! VAR7 ) { return FUN3 ( - VAR9 ) ; } VAR7 -> VAR6 = VAR6 ; VAR7 -> VAR4 = VAR4 ; VAR7 -> VAR3 = VAR3 ; FUN4 ( & VAR7 -> VAR10 , & VAR3 -> VAR11 -> VAR12 ) ; return VAR7 ; }

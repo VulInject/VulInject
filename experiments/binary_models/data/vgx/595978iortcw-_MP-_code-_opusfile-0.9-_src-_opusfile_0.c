@@ -1,0 +1,37 @@
+static VAR1 FUN1(VAR2 *VAR3,
+int VAR4[255]){
+opus_int32 VAR5;
+int        VAR6;
+
+VAR6=0;
+VAR5=0;
+for(;;){
+int VAR7;
+
+VAR7=FUN2(&VAR3->VAR8,VAR3->VAR9+VAR6);
+if(!VAR7)break;
+if(FUN3(VAR7<0)){
+
+FUN4(VAR6==0);
+
+VAR5=VAR10;
+break;
+}
+
+FUN4(VAR6<255);
+VAR4[VAR6]=FUN5(VAR3->VAR9[VAR6].VAR11,
+VAR3->VAR9[VAR6].VAR12);
+if(FUN6(VAR4[VAR6]>0)){
+
+VAR5+=VAR4[VAR6++];
+}
+
+else if(VAR6>0){
+
+VAR3->VAR9[VAR6-1].VAR13=VAR3->VAR9[VAR6].VAR13;
+}
+}
+VAR3->VAR14=0;
+VAR3->VAR6=VAR6;
+return VAR5;
+}

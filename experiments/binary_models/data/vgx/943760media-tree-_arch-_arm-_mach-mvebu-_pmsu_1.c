@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , unsigned long VAR3 , void * VAR4 ) { if ( VAR3 == VAR5 ) { int VAR6 = FUN2 ( FUN3 ( ) ) ; FUN4 ( VAR6 , VAR7 ) ; } if ( VAR3 == VAR8 ) { FUN5 ( ) ; } return VAR9 ; }

@@ -1,0 +1,13 @@
+int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = &VAR2->VAR5;
+struct VAR6 *VAR7 = &VAR2->VAR8->VAR9;
+
+VAR4->VAR10 = VAR11;
+VAR4->VAR12 = FUN2(VAR2) ?
+VAR13 : VAR7->VAR14;
+VAR4->VAR15 = FUN2(VAR2) ?
+VAR16 : VAR7->VAR17;
+
+return 0;
+}

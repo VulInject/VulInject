@@ -1,0 +1,1 @@
+static void FUN1 ( void * VAR1 ) static int FUN2 ( void ) { if ( ! FUN3 ( VAR2 , FUN4 ( ) ) ) { return - 1 ; } return 0 ; }

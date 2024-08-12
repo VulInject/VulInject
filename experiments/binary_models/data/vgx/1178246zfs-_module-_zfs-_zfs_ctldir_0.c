@@ -1,0 +1,42 @@
+int
+FUN1(struct VAR1 *VAR2, uint64_t VAR3, int VAR4,
+struct VAR5 **VAR6)
+{
+int VAR7;
+struct path VAR8;
+char *VAR9;
+struct VAR10 *VAR10;
+
+VAR9 = FUN2(VAR11, VAR12);
+
+VAR7 = FUN3(VAR2->VAR13, VAR3,
+VAR11, VAR9);
+if (VAR7)
+goto VAR14;
+
+
+VAR7 = FUN4(VAR9, VAR15|VAR16, &VAR8);
+if (VAR7)
+goto VAR14;
+
+FUN5(&VAR8);
+
+*VAR6 = FUN6(VAR2, VAR17 - VAR3);
+if (*VAR6 == NULL) {
+VAR7 = FUN7(VAR18);
+goto VAR14;
+}
+
+
+VAR10 = FUN8(FUN9(*VAR6));
+if (VAR4 != (!FUN10(VAR10) && FUN11(VAR10))) {
+FUN12(*VAR6);
+*VAR6 = NULL;
+VAR7 = FUN7(VAR18);
+}
+if (!FUN10(VAR10))
+FUN13(VAR10);
+VAR14:
+FUN14(VAR9, VAR11);
+return (VAR7);
+}

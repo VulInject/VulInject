@@ -1,0 +1,1 @@
+static int FUN1(const void *VAR1, const void *VAR2) { return (*(const VAR3 *)VAR1) - ((const VAR4 *)VAR2)->VAR5; }

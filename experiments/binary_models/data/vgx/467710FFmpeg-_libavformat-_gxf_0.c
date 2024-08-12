@@ -1,0 +1,33 @@
+static void FUN1(VAR1 *VAR2, int VAR3) {
+VAR4 *VAR5 = VAR2->VAR5;
+VAR6 *VAR7;
+uint32_t VAR8, VAR9;
+int VAR10;
+if (VAR3 < 8)
+return;
+VAR8 = FUN2(VAR5);
+VAR9 = FUN2(VAR5);
+VAR3 -= 8;
+if ((VAR2->VAR11 & VAR12) || !VAR2->VAR13) {
+FUN3(VAR5, VAR3);
+return;
+}
+VAR7 = VAR2->VAR13[0];
+if (VAR9 > 1000) {
+FUN4(VAR2, VAR14,
+""VAR15""VAR16"",
+VAR9, VAR9);
+VAR9 = 1000;
+}
+if (VAR3 < 4 * VAR9) {
+FUN4(VAR2, VAR14, "");
+FUN3(VAR5, VAR3);
+return;
+}
+VAR3 -= 4 * VAR9;
+FUN5(VAR7, 0, 0, 0, 0, 0);
+for (VAR10 = 0; VAR10 < VAR9; VAR10++)
+FUN5(VAR7, (VAR17)FUN2(VAR5) * 1024,
+VAR10 * (VAR17)VAR8 + 1, 0, 0, 0);
+FUN3(VAR5, VAR3);
+}

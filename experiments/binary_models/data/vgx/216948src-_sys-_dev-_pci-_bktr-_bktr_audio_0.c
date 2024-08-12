@@ -1,0 +1,118 @@
+void FUN1( bktr_ptr_t VAR1 ) {
+int VAR2, VAR3;
+int VAR4;
+
+
+if (FUN2("", VAR1->VAR5, 5) == 0 ||
+FUN2("", VAR1->VAR5, 5) == 0) {
+
+FUN3(VAR1, VAR1->VAR6, 0x10, 0x0030,0x2003);
+FUN3(VAR1, VAR1->VAR6, 0x10, 0x0020,0x0020);
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x000E,0x2403);
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0008,0x0320);
+
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0000,0x7300);
+}
+
+
+
+
+else if (  ( (FUN2("", VAR1->VAR5, 5) == 0)
+&&(VAR1->VAR7 == 1)
+)
+|| (VAR1->VAR8 == 2) ){
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0000, 0x7300); 
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x000d, 0x1900); 
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0008, 0x0220); 
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0013, 0x0100); 
+}
+
+
+
+
+else if (VAR1->VAR8 == 0) {
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0000,0x7300);
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0008,0x0000);
+FUN3(VAR1, VAR1->VAR6, 0x10, 0x0020,0x0001);
+FUN3(VAR1, VAR1->VAR6, 0x10, 0x0021,0x0001);
+}
+
+
+
+
+else if ( VAR1->VAR8 == 1) {
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0000,0x7300);
+FUN3(VAR1, VAR1->VAR6, 0x10, 0x0020,0x0001);
+
+
+VAR3 = 10;
+do {
+FUN4(100000);
+VAR2 = FUN5(VAR1, VAR1->VAR6, 0x10, 0x007e);
+VAR3++;
+} while (VAR2 > 0xff && VAR3 < 50);
+if (VAR9)FUN6 ("",
+FUN7(VAR1), VAR3*10, VAR2);
+
+
+switch (VAR2) {
+case 0:                    
+break;
+case 2:                    
+break;
+case 3:                    
+
+FUN4(20000);
+VAR4 = FUN5(VAR1, VAR1->VAR6, 0x12, 0x0018);
+if (VAR9)FUN6 ("",
+FUN7(VAR1), VAR4);
+FUN4(20000);
+VAR4 = FUN5(VAR1, VAR1->VAR6, 0x12, 0x0018);
+if (VAR9)FUN6 ("",
+FUN7(VAR1), VAR4); 
+FUN4(20000); 
+VAR4 = FUN5(VAR1, VAR1->VAR6, 0x12, 0x0018);
+if (VAR9)FUN6 ("",
+FUN7(VAR1), VAR4);
+if (VAR4 > 0x0100 && VAR4 < 0x8000) { 
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0008,0x0020);
+
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0005,0x3f28);
+} else if (VAR4 > 0x8000) {    
+if (VAR9) FUN6 ("",
+FUN7(VAR1));
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0008,0x0000);
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0005,0x0000);
+} else {                 
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0008,0x0030);
+
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0005,0x3f08);
+}
+
+
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0008,0x0020);
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0009,0x0020);
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x000a,0x0020);
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x0041,0x0020);
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x000b,0x0020);
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x000c,0x0020);
+FUN3(VAR1, VAR1->VAR6, 0x12, 0x000e,0x0001);
+break;
+case 8:                    
+FUN3(VAR1, VAR1->VAR6, 0x10, 0x0021,0x0001);
+break;
+case 9:                    
+case 10:                   
+break;
+default:
+if (VAR9) FUN6 ("",
+FUN7(VAR1), VAR2); 
+}
+
+}
+
+
+
+
+
+}

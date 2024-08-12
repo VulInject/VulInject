@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , const gint VAR3 ) { if ( ! VAR2 ) { return VAR4 ; } return VAR5 ; } static const value_string VAR6 [ ] { { VAR7 "" } { VAR8 "" } { VAR9 "" } { VAR10 "" } { 0 NULL } } ; ;

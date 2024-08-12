@@ -1,0 +1,1 @@
+static const char * FUN1 ( const char * VAR1 ) { int VAR2 ; while ( VAR3 [ VAR2 ] . VAR4 != NULL && FUN2 ( VAR1 , VAR3 [ VAR2 ] . VAR4 ) != 0 ) { VAR2 ++ ; } return VAR3 [ VAR2 ] . VAR5 ; }

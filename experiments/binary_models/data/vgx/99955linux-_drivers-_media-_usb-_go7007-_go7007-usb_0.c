@@ -1,0 +1,275 @@
+static int FUN1(struct VAR1 *VAR2,
+const struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6;
+struct VAR7 *VAR8;
+const struct VAR9 *VAR10;
+struct VAR11 *VAR12 = FUN2(VAR2);
+struct VAR13 *VAR14;
+unsigned VAR15;
+char *VAR16;
+int VAR17, VAR18, VAR19;
+
+FUN3("");
+
+switch (VAR4->VAR20) {
+case VAR21:
+VAR16 = "";
+VAR10 = &VAR22;
+break;
+case VAR23:
+VAR16 = "";
+VAR10 = &VAR24;
+break;
+case VAR25:
+VAR16 = "";
+VAR10 = &VAR26;
+break;
+case VAR27:
+VAR16 = "";
+VAR10 = &VAR28;
+break;
+case VAR29:
+VAR16 = "";
+VAR10 = &VAR30;
+break;
+case VAR31:
+VAR16 = "";
+VAR10 = &VAR30;
+break;
+case VAR32:
+VAR16 = "";
+VAR10 = &VAR30;
+break;
+case VAR33:
+VAR16 = "";
+VAR10 = &VAR22;
+break;
+case VAR34:
+VAR16 = "";
+VAR10 = &VAR35;
+break;
+case VAR36:
+FUN4(&VAR2->VAR37, "");
+return -VAR38;
+VAR16 = "";
+VAR10 = &VAR39;
+break;
+case VAR40:
+FUN5(&VAR2->VAR37, "");
+VAR16 = "";
+VAR10 = &VAR41;
+break;
+case VAR42:
+VAR16 = "";
+VAR10 = &VAR43;
+break;
+default:
+FUN4(&VAR2->VAR37, "",
+(unsigned int)VAR4->VAR20);
+return -VAR38;
+}
+
+VAR6 = FUN6(&VAR10->VAR44, &VAR2->VAR37);
+if (VAR6 == NULL)
+return -VAR45;
+
+VAR8 = FUN7(sizeof(struct VAR7), VAR46);
+if (VAR8 == NULL) {
+FUN8(VAR6);
+return -VAR45;
+}
+
+VAR8->VAR10 = VAR10;
+VAR8->VAR12 = VAR12;
+FUN9(VAR12, VAR6->VAR47, sizeof(VAR6->VAR47));
+VAR6->VAR48 = VAR4->VAR20;
+FUN10(VAR6->VAR16, VAR16, sizeof(VAR6->VAR16));
+if (VAR10->VAR49 & VAR50)
+VAR6->VAR51 = &VAR52;
+else
+VAR6->VAR51 = &VAR53;
+VAR6->VAR54 = VAR8;
+
+VAR14 = VAR8->VAR12->VAR55[4];
+if (!VAR14)
+goto VAR56;
+
+
+VAR8->VAR57 = FUN11(0, VAR46);
+if (VAR8->VAR57 == NULL)
+goto VAR56;
+VAR8->VAR57->VAR58 = FUN12(2, sizeof(VAR59),
+VAR46);
+if (VAR8->VAR57->VAR58 == NULL)
+goto VAR56;
+
+if (FUN13(&VAR14->VAR60) == VAR61)
+FUN14(VAR8->VAR57, VAR8->VAR12,
+FUN15(VAR8->VAR12, 4),
+VAR8->VAR57->VAR58, 2*sizeof(VAR59),
+VAR62, VAR6);
+else
+FUN16(VAR8->VAR57, VAR8->VAR12,
+FUN17(VAR8->VAR12, 4),
+VAR8->VAR57->VAR58, 2*sizeof(VAR59),
+VAR62, VAR6, 8);
+FUN18(VAR2, &VAR6->VAR63);
+
+
+if (FUN19(VAR6, VAR6->VAR64->VAR49 &
+VAR65) < 0)
+goto VAR56;
+
+
+if (VAR10->VAR49 & VAR66) {
+memcpy(&VAR6->VAR67, &VAR68,
+sizeof(VAR68));
+FUN20(&VAR8->VAR69);
+VAR6->VAR67.VAR37.VAR70 = VAR6->VAR37;
+FUN21(&VAR6->VAR67, VAR6);
+if (FUN22(&VAR6->VAR67) < 0) {
+FUN4(VAR6->VAR37, "");
+goto VAR56;
+}
+VAR6->VAR71 = 1;
+}
+
+
+if ((VAR6->VAR48 == VAR29 ||
+VAR6->VAR48 == VAR32) &&
+VAR6->VAR71) {
+union i2c_smbus_data VAR72;
+
+
+FUN23(&VAR6->VAR67, 0x21, VAR73,
+VAR74, 0x0A, VAR75, &VAR72);
+if (VAR72.VAR76 != 0x76) {
+if (VAR77) {
+VAR6->VAR48 = VAR78;
+VAR8->VAR10 = VAR10 = &VAR79;
+VAR6->VAR64 = &VAR10->VAR44;
+FUN10(VAR6->VAR16, "",
+sizeof(VAR6->VAR16));
+} else {
+u16 VAR80;
+
+
+FUN24(VAR6, 0x3c81, &VAR80);
+VAR80 &= 0x3;
+VAR6->VAR48 = VAR81;
+VAR8->VAR10 = VAR10 = &VAR82;
+VAR6->VAR64 = &VAR10->VAR44;
+VAR6->VAR83 = VAR80;
+snprintf(VAR6->VAR16, sizeof(VAR6->VAR16),
+"",
+VAR80);
+}
+FUN25(VAR6);
+}
+}
+
+VAR15 = VAR6->VAR64->VAR15;
+
+
+if (VAR6->VAR48 == VAR34) {
+
+if (FUN26(VAR6, 0x41, 0, 0, VAR6->VAR84, 3,
+1) < 0) {
+FUN4(VAR6->VAR37, "");
+goto VAR56;
+}
+switch (VAR6->VAR84[0] >> 6) {
+case 1:
+VAR6->VAR85 = VAR86;
+VAR6->VAR87 = VAR88;
+FUN10(VAR6->VAR16, "",
+sizeof(VAR6->VAR16));
+break;
+case 2:
+VAR6->VAR85 = VAR89;
+VAR6->VAR87 = VAR90;
+VAR15 -= 2;
+FUN10(VAR6->VAR16, "",
+sizeof(VAR6->VAR16));
+break;
+case 3:
+VAR6->VAR85 = VAR91;
+VAR15 -= 2;
+FUN10(VAR6->VAR16, "",
+sizeof(VAR6->VAR16));
+break;
+default:
+FUN3("");
+break;
+}
+
+if (FUN26(VAR6, 0x40, 0x7f02, 0,
+NULL, 0, 0) < 0) {
+FUN4(VAR6->VAR37, "");
+goto VAR56;
+}
+}
+
+
+if ((VAR10->VAR49 & VAR50) &&
+VAR12->VAR92 != VAR93)
+FUN4(VAR6->VAR37, "");
+
+
+if (VAR10->VAR49 & VAR50) {
+if (!VAR8->VAR12->VAR55[6])
+goto VAR56;
+VAR19 = 1024;
+VAR17 = FUN15(VAR8->VAR12, 6);
+} else {
+if (!VAR8->VAR12->VAR55[1])
+goto VAR56;
+VAR19 = 512;
+VAR17 = FUN15(VAR8->VAR12, 1);
+}
+for (VAR18 = 0; VAR18 < 8; ++VAR18) {
+VAR8->VAR94[VAR18] = FUN11(0, VAR46);
+if (VAR8->VAR94[VAR18] == NULL)
+goto VAR56;
+VAR8->VAR94[VAR18]->VAR58 =
+FUN27(VAR19, VAR46);
+if (VAR8->VAR94[VAR18]->VAR58 == NULL)
+goto VAR56;
+FUN14(VAR8->VAR94[VAR18], VAR8->VAR12, VAR17,
+VAR8->VAR94[VAR18]->VAR58, VAR19,
+VAR95, VAR6);
+}
+
+
+if ((VAR10->VAR49 & VAR50) &&
+(VAR10->VAR44.VAR49 & VAR96)) {
+if (!VAR8->VAR12->VAR55[8])
+goto VAR56;
+for (VAR18 = 0; VAR18 < 8; ++VAR18) {
+VAR8->VAR97[VAR18] = FUN11(0, VAR46);
+if (VAR8->VAR97[VAR18] == NULL)
+goto VAR56;
+VAR8->VAR97[VAR18]->VAR58 = FUN27(4096,
+VAR46);
+if (VAR8->VAR97[VAR18]->VAR58 == NULL)
+goto VAR56;
+FUN14(VAR8->VAR97[VAR18], VAR8->VAR12,
+FUN15(VAR8->VAR12, 8),
+VAR8->VAR97[VAR18]->VAR58, 4096,
+VAR98, VAR6);
+}
+}
+
+
+if (FUN28(VAR6, VAR15) < 0)
+goto VAR56;
+
+VAR6->VAR99 = VAR100;
+return 0;
+
+VAR56:
+FUN29(VAR6);
+FUN8(VAR6);
+return -VAR45;
+}

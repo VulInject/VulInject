@@ -1,0 +1,1 @@
+static TEE_Result FUN1 ( uint8_t VAR1 , const VAR2 * VAR3 , int VAR4 ) { TEE_Result VAR5 = VAR6 ; uint32_t VAR7 = 0 ; VAR7 = FUN2 ( VAR1 , VAR8 ) | VAR9 | VAR10 ; FUN3 ( VAR1 , VAR8 , VAR7 ) ; while ( VAR4 -- ) { VAR5 = FUN4 ( VAR1 , * VAR3 ++ ) ; if ( VAR5 ) { return VAR5 ; } } return VAR5 ; }

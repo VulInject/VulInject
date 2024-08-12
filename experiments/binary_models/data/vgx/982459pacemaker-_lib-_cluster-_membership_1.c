@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 ) { struct refresh_data VAR3 ; FUN2 ( ) ; FUN3 ( VAR4 , VAR5 , NULL ) ; VAR3 . VAR6 = "" ; VAR3 . VAR7 = VAR8 ; FUN4 ( VAR2 , VAR9 , VAR10 , & VAR3 ) ; VAR3 . VAR6 = "" ; VAR3 . VAR7 = VAR11 ; FUN4 ( VAR2 , VAR12 , VAR10 , & VAR3 ) ; VAR3 . VAR6 = "" ; VAR3 . VAR7 = VAR11 ; FUN4 ( VAR2 , VAR13 , VAR10 , & VAR3 ) ; FUN5 ( VAR4 , VAR14 ) ; }

@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , bool VAR3 ) { char VAR4 [ 4096 ] ; int VAR5 ; VAR5 = FUN2 ( VAR2 -> VAR6 , VAR4 , sizeof ( VAR4 ) , VAR7 , ( void * ) VAR2 , VAR3 ) ; if ( VAR5 != 0 ) { FUN3 ( "" ) ; return VAR5 ; } for ( size_t VAR8 = 0 ; VAR8 < VAR2 -> VAR9 ; VAR8 ++ ) { VAR10 * VAR11 = VAR2 -> VAR12 + VAR8 ; * VAR11 -> FUN4 ( VAR11 -> VAR13 , VAR11 -> VAR14 ) ; } return 0 ; }

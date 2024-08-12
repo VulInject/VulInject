@@ -1,0 +1,1 @@
+( VAR1 ) ; struct VAR2 * FUN1 ( const struct VAR3 * VAR4 ) { struct VAR2 * VAR5 ; VAR5 = VAR4 -> VAR2 ; if ( ! VAR5 ) { return VAR6 ; } while ( VAR5 -> VAR7 ) { VAR5 = VAR5 -> VAR7 ; } return VAR5 ; }

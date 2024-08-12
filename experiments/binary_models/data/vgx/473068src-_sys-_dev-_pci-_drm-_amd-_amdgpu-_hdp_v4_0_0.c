@@ -1,0 +1,36 @@
+static void FUN1(struct VAR1 *VAR2,
+bool VAR3)
+{
+uint32_t VAR4, VAR5;
+
+if (VAR2->VAR6[VAR7][0] == FUN2(4, 0, 0) ||
+VAR2->VAR6[VAR7][0] == FUN2(4, 0, 1) ||
+VAR2->VAR6[VAR7][0] == FUN2(4, 1, 1) ||
+VAR2->VAR6[VAR7][0] == FUN2(4, 1, 0)) {
+VAR4 = VAR5 = FUN3(FUN4(VAR8, 0, VAR9));
+
+if (VAR3 && (VAR2->VAR10 & VAR11))
+VAR5 |= VAR12;
+else
+VAR5 &= ~VAR12;
+
+if (VAR4 != VAR5)
+FUN5(FUN4(VAR8, 0, VAR9), VAR5);
+} else {
+VAR4 = VAR5 = FUN3(FUN4(VAR8, 0, VAR13));
+
+if (VAR3 && (VAR2->VAR10 & VAR11))
+VAR5 |= VAR14 |
+VAR15 |
+VAR16 |
+VAR17;
+else
+VAR5 &= ~(VAR14 |
+VAR15 |
+VAR16 |
+VAR17);
+
+if (VAR4 != VAR5)
+FUN5(FUN4(VAR8, 0, VAR13), VAR5);
+}
+}

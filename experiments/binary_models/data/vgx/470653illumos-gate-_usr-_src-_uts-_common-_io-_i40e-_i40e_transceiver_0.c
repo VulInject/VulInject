@@ -1,0 +1,45 @@
+static void
+FUN1(VAR1 *VAR2)
+{
+size_t VAR3;
+
+if (VAR2->VAR4 != NULL) {
+uint32_t VAR5;
+VAR6 *VAR7 = VAR2->VAR4;
+
+for (VAR5 = 0; VAR5 < VAR2->VAR8; VAR5++, VAR7++) {
+FUN2(&VAR7->VAR9);
+if (VAR7->VAR10 != NULL) {
+FUN3(&VAR7->VAR10);
+VAR7->VAR10 = NULL;
+}
+if (VAR7->VAR11 != NULL) {
+FUN3(&VAR7->VAR11);
+VAR7->VAR11 = NULL;
+}
+}
+
+VAR3 = sizeof (VAR6) *
+VAR2->VAR8;
+FUN4(VAR2->VAR4, VAR3);
+VAR2->VAR4 = NULL;
+}
+
+if (VAR2->VAR12 != NULL) {
+VAR3 = sizeof (VAR6 *) *
+VAR2->VAR8;
+FUN4(VAR2->VAR12, VAR3);
+VAR2->VAR12 = NULL;
+}
+
+if (VAR2->VAR13 != NULL) {
+VAR3 = sizeof (VAR6 *) *
+VAR2->VAR14;
+FUN4(VAR2->VAR13, VAR3);
+VAR2->VAR13 = NULL;
+}
+
+FUN2(&VAR2->VAR15);
+VAR2->VAR16 = NULL;
+
+}

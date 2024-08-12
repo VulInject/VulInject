@@ -1,0 +1,671 @@
+FUN1 (VAR1 *VAR2,
+VAR3     *VAR4,
+const char        *VAR5,
+VAR6    *VAR7,
+const char        *VAR8,
+const char        *VAR9,
+const char        *VAR10,
+const char        *VAR11,
+int                VAR12,
+FlatpakRunFlags    VAR13,
+const char        *VAR14,
+const char        *VAR15,
+char              *VAR16[],
+int                VAR17,
+int                VAR18,
+char             **VAR19,
+VAR20      *VAR21,
+VAR22           **VAR23)
+{
+FUN2(VAR3) VAR24 = NULL;
+FUN2(VAR25) VAR26 = NULL;
+FUN2(VAR25) VAR27 = NULL;
+FUN2(VAR28) VAR29 = NULL;
+FUN2(VAR28) VAR30 = NULL;
+FUN2(VAR28) VAR31 = NULL;
+FUN2(VAR28) VAR32 = NULL;
+FUN2(VAR28) VAR33 = NULL;
+FUN2(VAR28) VAR34 = NULL;
+FUN2(VAR28) VAR35 = NULL;
+g_autofree char *VAR36 = NULL;
+FUN2(VAR1) VAR37 = NULL;
+g_autofree char *VAR38 = NULL;
+FUN2(VAR39) VAR40 = NULL;
+FUN2(VAR39) VAR41 = NULL;
+FUN2(VAR42) VAR43 = NULL;
+const char *VAR44 = "";
+FUN2(VAR22) VAR45 = NULL;
+FUN2(VAR1) VAR46 = NULL;
+int VAR47;
+FUN2(VAR48) VAR49 = NULL;
+g_autofree char *VAR50 = NULL;
+g_autofree char *VAR51 = NULL;
+g_autofree char *VAR52 = NULL;
+g_autofree char *VAR53 = NULL;
+g_autofree char *VAR54 = NULL;
+FUN2(VAR6) VAR55 = NULL;
+FUN2(VAR6) VAR56 = NULL;
+FUN2(VAR57) VAR58 = NULL;
+g_autofree char *VAR59 = NULL;
+g_autofree char *VAR60 = NULL;
+g_autofree char *VAR61 = NULL;
+g_autofree char *VAR62 = NULL;
+g_autofree char *VAR63 = NULL;
+g_autofree char *VAR64 = NULL;
+glnx_autofd int VAR65 = -1;
+g_autofree char *VAR66 = NULL;
+g_autofree char *VAR67 = NULL;
+int VAR68 = -1;
+FUN2(VAR28) VAR69 = NULL;
+gboolean VAR70 = VAR71;
+gboolean VAR72 = VAR71;
+gboolean VAR73 = (VAR13 & VAR74) != 0;
+gboolean VAR75 = (VAR13 & VAR76) != 0;
+gboolean VAR77 = (VAR13 & VAR78) != 0;
+const char *VAR79 = "";
+const char *VAR80 = "";
+struct stat VAR81;
+
+FUN3 (VAR2 != NULL, VAR82);
+
+
+if (FUN4 ())
+return FUN5 (VAR23, VAR83,
+FUN6(""flatpak VAR84\""
+""flatpak VAR84\""
+""));
+
+VAR50 = FUN7 (VAR2);
+FUN3 (VAR50 != NULL, VAR82);
+VAR51 = FUN8 (VAR2);
+FUN3 (VAR51 != NULL, VAR82);
+
+
+if (!FUN9 (VAR2, VAR4, VAR21, VAR23))
+return VAR82;
+
+
+VAR43 = FUN10 (NULL);
+FUN11 (VAR43, FUN12 ());
+
+if (VAR4 == NULL)
+{
+FUN13 (FUN14 (VAR2));
+VAR36 = FUN15 (VAR2);
+}
+else
+{
+const VAR85 *VAR86;
+
+VAR27 = FUN16 (VAR4, VAR87, VAR21, VAR23);
+if (VAR27 == NULL)
+return VAR82;
+
+if ((VAR13 & VAR88) != 0)
+VAR86 = VAR89;
+else
+VAR86 = VAR90;
+
+VAR40 = FUN17 (VAR4);
+VAR36 = FUN18 (VAR40,
+VAR91,
+VAR86, &VAR45);
+if (VAR45)
+{
+FUN19 (VAR23, FUN20 (&VAR45));
+return VAR82;
+}
+}
+
+VAR37 = FUN21 (VAR92, VAR36, VAR23);
+if (VAR37 == NULL)
+return VAR82;
+
+if (VAR8 != NULL || VAR9 != NULL)
+{
+FUN22(VAR93) VAR94 = NULL;
+const char *VAR95 = NULL;
+const char *VAR96 = NULL;
+
+if (VAR8)
+{
+VAR94 = FUN23 (VAR8, "", 0);
+for (VAR47 = 0; VAR47 < 3 && VAR94[VAR47] != NULL; VAR47++)
+{
+if (strlen (VAR94[VAR47]) > 0)
+{
+if (VAR47 == 0)
+VAR95 = VAR94[VAR47];
+if (VAR47 == 1)
+VAR96 = VAR94[VAR47];
+
+if (VAR47 == 2 && VAR9 == NULL)
+VAR9 = VAR94[VAR47];
+}
+}
+}
+
+VAR46 = FUN24 (VAR37,
+VAR92,
+VAR95,
+VAR96,
+VAR9,
+VAR23);
+if (VAR46 == NULL)
+return VAR82;
+}
+else
+VAR46 = FUN25 (VAR37);
+
+VAR24 = FUN26 (FUN27 (VAR46), VAR10, NULL, VAR21, VAR23);
+if (VAR24 == NULL)
+return VAR82;
+
+VAR26 = FUN16 (VAR24, VAR87, VAR21, VAR23);
+if (VAR26 == NULL)
+return VAR82;
+
+VAR41 = FUN17 (VAR24);
+
+VAR55 = FUN28 (VAR40, VAR41, VAR23);
+if (VAR55 == NULL)
+return VAR82;
+
+if (VAR4 != NULL)
+{
+VAR56 = FUN29 (VAR4);
+FUN30 (VAR55, VAR56);
+}
+
+if (VAR73)
+FUN31 (VAR55);
+
+if (VAR7)
+FUN30 (VAR55, VAR7);
+
+VAR32 = FUN32 (VAR24);
+
+if (VAR11 != NULL)
+{
+VAR31 = FUN33 (VAR11);
+
+VAR80 = "";
+}
+else
+{
+VAR31 = FUN34 (VAR32);
+}
+
+VAR33 = FUN35 (VAR31, "");
+if (!FUN36 (VAR33, NULL))
+VAR72 = VAR82;
+
+
+if (VAR11 != NULL || VAR5 != NULL)
+VAR72 = VAR82;
+
+if (VAR4 != NULL)
+{
+g_autofree const char **VAR97 = NULL;
+gsize VAR98 = 0;
+gboolean VAR99;
+
+VAR35 = FUN37 (VAR50);
+VAR30 = FUN32 (VAR4);
+
+VAR49 = FUN38 (VAR100);
+VAR97 = FUN39 (VAR27, &VAR98);
+
+VAR99 = !FUN36 (VAR35, VAR21);
+
+
+for (VAR47 = VAR98 - 1; VAR47 >= 0; VAR47--)
+{
+FUN2(VAR28) VAR101 = NULL;
+FUN2(VAR102) VAR103 = NULL;
+FUN2(VAR22) VAR104 = NULL;
+
+VAR101 = FUN37 (VAR97[VAR47]);
+VAR103 = FUN40 (VAR101,
+VAR105 ""
+VAR106,
+VAR107,
+VAR21,
+&VAR104);
+
+if (VAR103 == NULL)
+{
+if  (!FUN41 (VAR104, VAR108, VAR109) && VAR99)
+{
+FUN42 (FUN6(""), FUN43 (VAR101),
+VAR104->VAR110);
+VAR99 = VAR82; 
+}
+
+FUN44 (&VAR104);
+continue;
+}
+
+if (VAR99)
+{
+VAR99 = VAR82; 
+
+if (!FUN45 (VAR101, VAR35, VAR21, &VAR104))
+{
+FUN42 (FUN6(""),
+FUN43 (VAR101), VAR50,
+VAR104->VAR110);
+}
+else
+{
+
+if (!FUN46 (VAR101, VAR50, VAR21, &VAR104))
+{
+FUN42 (FUN6(""),
+FUN43 (VAR101),
+VAR104->VAR110);
+}
+}
+}
+
+
+FUN47 (VAR49, FUN20 (&VAR101));
+}
+
+if (!FUN48 (VAR35, VAR21, VAR23))
+return VAR82;
+
+if (!VAR73)
+VAR34 = FUN34 (VAR35);
+}
+
+if (VAR5 != NULL)
+{
+if (strcmp (VAR5, "") == 0)
+VAR29 = NULL;
+else
+VAR29 = FUN33 (VAR5);
+
+
+VAR79 = "";
+}
+else if (VAR30 != NULL)
+{
+VAR29 = FUN34 (VAR30);
+}
+
+FUN49 (VAR43, VAR72);
+FUN50 (VAR43, VAR55);
+FUN51 (VAR43, VAR50);
+
+if (VAR35)
+{
+FUN2(VAR28) VAR111 = FUN52 (VAR35, "");
+FUN53 (VAR43, "", FUN43 (VAR111), VAR71);
+}
+
+FUN54 (VAR43,
+"", FUN43 (VAR31), "",
+NULL);
+
+if (VAR31 == VAR32)
+{
+
+FUN54 (VAR43,
+"", "",
+NULL);
+}
+else
+{
+FUN2(VAR28) VAR112 = NULL;
+
+VAR112 = FUN52 (VAR31, "");
+
+
+if (FUN36 (VAR112, NULL))
+FUN54 (VAR43,
+"", "",
+NULL);
+
+
+FUN54 (VAR43,
+"",
+FUN43 (VAR32),
+"",
+"", "",
+NULL);
+FUN55 (VAR43, VAR32,
+"");
+
+FUN56 (&VAR112);
+VAR112 = FUN52 (VAR32, "");
+
+if (FUN36 (VAR112, NULL))
+FUN54 (VAR43,
+"", "", "",
+NULL);
+}
+
+if (VAR29 != NULL)
+{
+FUN54 (VAR43,
+"", FUN43 (VAR29), "",
+NULL);
+
+if (VAR29 == VAR30)
+{
+
+FUN54 (VAR43,
+"", "",
+NULL);
+}
+else
+{
+FUN2(VAR28) VAR113 = NULL;
+
+VAR113 = FUN52 (VAR29, "");
+
+
+if (FUN36 (VAR113, NULL))
+FUN54 (VAR43,
+"", "",
+NULL);
+}
+}
+else
+{
+FUN54 (VAR43,
+"", "",
+NULL);
+}
+
+if (VAR30 != NULL && VAR29 != VAR30)
+{
+
+FUN54 (VAR43,
+"",
+FUN43 (VAR30),
+"",
+"", "",
+NULL);
+}
+
+if (VAR40 != NULL &&
+!FUN57 (VAR43, VAR40, VAR2,
+VAR72, VAR79,
+&VAR61, &VAR53,
+VAR21, VAR23))
+return VAR82;
+
+if (!FUN57 (VAR43, VAR41, VAR46,
+VAR72, VAR80,
+&VAR62, &VAR63,
+VAR21, VAR23))
+return VAR82;
+
+if (VAR11 == NULL)
+FUN58 (VAR43, NULL, VAR63);
+
+if (VAR5 == NULL)
+FUN58 (VAR43, VAR53, NULL);
+
+VAR69 = FUN35 (VAR31, "");
+if (FUN59 (FUN43 (VAR69), &VAR81) == 0)
+VAR70 = FUN60 (VAR81.VAR114) && VAR81.VAR115 == 0;
+
+
+if (VAR72)
+{
+VAR64 = FUN61 (VAR27, VAR26,
+VAR61, VAR62);
+VAR68 = FUN62 (VAR43->argv,
+VAR43->VAR116,
+VAR34,
+VAR64,
+VAR31,
+VAR70,
+VAR21, VAR23);
+if (VAR68 == -1)
+return VAR82;
+FUN63 (VAR43, VAR68);
+}
+
+VAR13 |= FUN64 (VAR55);
+
+if (!FUN65 (VAR43, VAR31, VAR34, VAR51, VAR13, VAR23))
+return VAR82;
+
+if (VAR70)
+{
+if (!FUN66 (VAR43, VAR23))
+return VAR82;
+}
+
+if (VAR68 != -1)
+{
+
+FUN11 (VAR43, "");
+FUN67 (VAR43, "", VAR68);
+FUN11 (VAR43, "");
+}
+
+if (!FUN68 (VAR43,
+VAR29, VAR30, VAR27, VAR61,
+VAR31, VAR32, VAR26, VAR62,
+VAR50, FUN69 (VAR2),
+VAR46, VAR34, VAR55, VAR7,
+VAR73, VAR82, VAR13 & VAR88,
+&VAR52, VAR18, &VAR54,
+VAR23))
+return VAR82;
+
+if (!VAR73)
+{
+if (!FUN70 (VAR50,
+&VAR65,
+&VAR66,
+VAR23))
+return VAR82;
+
+if (!FUN71 (VAR50,
+VAR65,
+&VAR67,
+VAR23))
+return VAR82;
+
+FUN11 (VAR43, "");
+FUN11 (VAR43, VAR67);
+FUN67 (VAR43, "", FUN72 ());
+}
+
+if (!FUN73 (VAR43, VAR50, VAR40, VAR23))
+return VAR82;
+
+if (!VAR73 && !(VAR13 & VAR117))
+FUN74 (VAR43, VAR50, &VAR60);
+
+if (!FUN75 (VAR43, VAR52, VAR13,
+VAR50, VAR55, VAR34, VAR49,
+VAR65,
+&VAR58, VAR21, VAR23))
+return VAR82;
+
+if (VAR66 != NULL)
+{
+static const char VAR118[] = "";
+
+FUN54 (VAR43,
+"", VAR66, VAR118,
+"", VAR118,
+NULL);
+}
+
+if ((VAR55->VAR119 & VAR120) != 0)
+{
+FUN76 (VAR43);
+FUN77 (VAR43);
+}
+
+FUN78 (VAR43);
+FUN79 (VAR43);
+FUN80 (VAR43);
+
+FUN54 (VAR43,
+
+"", "", "",
+"", "", "",
+NULL);
+
+if (VAR14)
+FUN54 (VAR43, "", VAR14, NULL);
+
+if (VAR75 || VAR77)
+{
+g_autofree char *VAR121 = NULL;
+g_autofree char *VAR122 = NULL;
+g_autofree char *VAR123 = NULL;
+int VAR124, VAR125, VAR126;
+
+if (VAR12 == 0)
+return FUN81 (VAR23, "");
+
+VAR121 = FUN82 ("", VAR12);
+
+VAR124 = FUN83 (VAR121, "");
+if (VAR124 != -1)
+{
+FUN84 (VAR43, "", VAR124, NULL);
+
+VAR123 = FUN82 ("", VAR12);
+VAR125 = FUN83 (VAR123, VAR121);
+if (VAR125 != -1)
+FUN84 (VAR43, "", VAR125, NULL);
+}
+
+VAR122 = FUN82 ("", VAR12);
+VAR126 = open (VAR122, VAR127|VAR128);
+if (VAR126 != -1)
+FUN84 (VAR43, "", VAR126, NULL);
+}
+
+FUN85 (VAR43, VAR67);
+
+if (VAR15)
+{
+VAR44 = VAR15;
+}
+else if (VAR40)
+{
+VAR38 = FUN18 (VAR40,
+VAR91,
+VAR129,
+&VAR45);
+if (VAR45)
+{
+FUN19 (VAR23, FUN20 (&VAR45));
+return VAR82;
+}
+VAR44 = VAR38;
+}
+
+FUN86 (VAR43);
+FUN87 (VAR43);
+
+if (!FUN88 (VAR43, 1, -1, VAR82, VAR23))
+return VAR82;
+
+FUN11 (VAR43, VAR44);
+
+if (!FUN89 (VAR43, VAR50,
+VAR58, (VAR13 & VAR130) != 0,
+VAR60,
+VAR16, VAR17, VAR23))
+return VAR82;
+
+
+FUN90 (VAR43, FUN91 (&VAR65));
+
+FUN92 (VAR43);
+
+VAR59 = FUN93 ((const char **) VAR43->argv->VAR131, -1);
+FUN94 ("", VAR59);
+
+if ((VAR13 & (VAR132)) != 0 ||
+FUN95 ("") != NULL)
+{
+GPid VAR133;
+char VAR134[64];
+g_autofree char *VAR135 = NULL;
+GSpawnFlags VAR136;
+
+VAR136 = VAR137;
+if (VAR13 & VAR138 ||
+(VAR13 & VAR132) == 0)
+VAR136 |= VAR139;
+
+
+VAR136 |= VAR140;
+
+
+FUN13 (VAR43->VAR141 != NULL);
+FUN13 (VAR43->VAR141[0] == NULL);
+
+if (!FUN96 (NULL,
+(char **) VAR43->argv->VAR131,
+VAR43->VAR141,
+VAR136,
+VAR142, VAR43->VAR116,
+&VAR133,
+VAR23))
+return VAR82;
+
+FUN97 (VAR134, sizeof (VAR134), "", VAR133);
+VAR135 = FUN98 (VAR54, "", NULL);
+FUN99 (VAR135, VAR134, -1, NULL);
+
+if ((VAR13 & (VAR132)) == 0)
+{
+int VAR143;
+
+if (FUN100 (VAR133, &VAR143, 0) != VAR133)
+return FUN101 (VAR23, "");
+
+if (FUN102 (VAR143))
+FUN103 (FUN104 (VAR143));
+
+if (FUN105 (VAR143))
+FUN103 (128 + FUN106 (VAR143));
+
+return FUN107 (VAR23, "", VAR143);
+}
+}
+else
+{
+char VAR134[64];
+g_autofree char *VAR135 = NULL;
+
+FUN97 (VAR134, sizeof (VAR134), "", FUN108 ());
+VAR135 = FUN98 (VAR54, "", NULL);
+FUN99 (VAR135, VAR134, -1, NULL);
+
+
+FUN109 (VAR43->VAR116, VAR82);
+
+
+FUN13 (VAR43->VAR141 != NULL);
+FUN13 (VAR43->VAR141[0] == NULL);
+
+if (FUN110 (FUN12 (), (char **) VAR43->argv->VAR131, VAR43->VAR141) == -1)
+{
+FUN111 (VAR23, VAR108, FUN112 (VAR144),
+FUN6(""));
+return VAR82;
+}
+
+}
+
+if (VAR19)
+*VAR19 = FUN20 (&VAR54);
+
+return VAR71;
+}

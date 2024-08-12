@@ -1,0 +1,14 @@
+static void FUN1(VAR1 *VAR2, int VAR3, VAR4 *VAR5, bool VAR6)
+{
+    VAR4 *VAR7;
+    if (VAR3 > VAR8)
+        VAR3 = VAR8;
+    VAR7 = FUN2(VAR2, VAR5->VAR9, VAR5->VAR10, VAR5->VAR11, VAR3 | VAR12 | (VAR6 ? VAR13 : 0));
+    VAR7->VAR5 = VAR14.VAR15.VAR16 ? NULL : VAR5;
+    VAR2->VAR17 = VAR7;
+    FUN3(VAR7, VAR7->VAR9);
+    FUN4(VAR2, VAR7->VAR18);
+    VAR2->VAR17 = NULL;
+    FUN5(VAR7, -1);
+    FUN6(VAR7);
+}

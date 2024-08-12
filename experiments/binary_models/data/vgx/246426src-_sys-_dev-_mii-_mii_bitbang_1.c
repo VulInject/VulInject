@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , mii_bitbang_ops_t VAR3 ) { int VAR4 ; u_int32_t VAR5 ; VAR5 = VAR6 | VAR7 ; FUN2 ( VAR5 , NULL ) ; for ( VAR4 = 0 ; VAR4 < 32 ; VAR4 ++ ) { FUN2 ( VAR5 | VAR8 ) ; FUN2 ( VAR5 ) ; } }

@@ -1,0 +1,95 @@
+static int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4, struct VAR5 *VAR6)
+{
+struct VAR7 *VAR8;
+uint16_t VAR9 = VAR10;
+uint8_t VAR11;
+unsigned long VAR12;
+int VAR13;
+struct VAR14 *VAR15;
+
+
+if (VAR2->VAR16 == VAR17)
+FUN2(VAR6, 0);
+else
+FUN2(VAR6, VAR2->VAR18->VAR19);
+
+
+VAR11 = FUN3(VAR2);
+if (FUN4(VAR2->VAR20->VAR21, VAR22))
+FUN5(VAR11, VAR23);
+if (FUN6(VAR2->VAR20, VAR2->VAR24))
+FUN5(VAR11, VAR25);
+FUN7(VAR6, VAR11);
+
+
+VAR12 = FUN8(VAR6);
+FUN7(VAR6, VAR4->VAR26);
+
+
+FUN9(VAR6, VAR4->VAR27);
+
+
+if (FUN10(VAR4))
+goto VAR28;
+
+
+VAR15 = &VAR4->VAR29;
+
+for (VAR13 = VAR30; VAR13 < VAR31; VAR13++) {
+struct VAR32 *VAR33 = VAR15->VAR16[VAR13].VAR34;
+struct VAR35 *VAR36;
+
+for (VAR36 = FUN11(VAR33); VAR36; VAR36 = FUN12(VAR36))
+if ((VAR8 = VAR36->VAR37) != NULL) {
+if (FUN13(VAR8->VAR38->VAR16)
+&& (!FUN4(VAR11, VAR23))) {
+
+
+FUN14(VAR15, VAR8);
+continue;
+}
+
+if (!FUN4(VAR8->VAR39, VAR40)) {
+struct VAR41 *VAR42;
+uint16_t VAR43;
+
+
+if (VAR9 + VAR44
+> FUN15(VAR2))
+break;
+
+
+VAR42 = (struct VAR41
+*)(FUN16(VAR6)
++ FUN8(
+VAR6));
+
+
+FUN17(VAR6, VAR8->VAR38,
+VAR44);
+VAR9 += VAR44;
+
+
+VAR43 = FUN18(VAR8);
+VAR42->VAR43 = FUN19(VAR43);
+}
+
+
+FUN14(VAR15, VAR8);
+}
+}
+
+
+if (FUN10(VAR4)) {
+VAR28:
+if (VAR4->VAR45 >= VAR46) {
+FUN20(VAR4->VAR26, VAR47);
+
+FUN21(VAR6, VAR12, VAR4->VAR26);
+} else {
+assert(FUN22(VAR4->VAR26));
+}
+}
+return VAR9;
+}

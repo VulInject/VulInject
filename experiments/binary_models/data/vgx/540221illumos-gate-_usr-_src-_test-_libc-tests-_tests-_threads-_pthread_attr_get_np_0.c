@@ -1,0 +1,16 @@
+static void
+FUN1(VAR1 *VAR2)
+{
+size_t VAR3;
+void *VAR4;
+ucontext_t VAR5;
+uint32_t VAR6;
+
+FUN2(FUN3(&VAR5));
+FUN2(FUN4(VAR2, &VAR4, &VAR3));
+FUN5(VAR4, !=, NULL);
+FUN6(VAR3, !=, 0);
+VAR6 = VAR5.VAR7.VAR8[VAR9];
+FUN7(VAR6, >, (VAR10)VAR4);
+FUN7(VAR6, <, (VAR10)VAR4 + VAR3);
+}

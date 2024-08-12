@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 ) { int VAR3 ; const u8 VAR4 [ 2 ] { 0x3f 0x00 } ; ; FUN2 ( VAR2 , & VAR3 , VAR5 , 0xA4 , 0x00 , 0x0C ) ; VAR3 . VAR6 = 0 ; VAR3 . VAR7 = 2 ; VAR3 . VAR8 = VAR4 ; VAR3 . VAR9 = 2 ; VAR3 . VAR10 = 0 ; return FUN3 ( VAR2 , & VAR3 ) ; }

@@ -1,0 +1,55 @@
+static int FUN1(struct VAR1 *VAR2, int VAR3)
+{
+struct VAR4 *VAR5 = VAR2->VAR6;
+struct gfs2_holder VAR7;
+u64 VAR8;
+int VAR9;
+
+VAR9 = FUN2(VAR2, VAR10, &VAR11,
+VAR12, 0, &VAR7);
+if (VAR9) {
+FUN3(VAR2, "", VAR9);
+return VAR9;
+}
+
+VAR9 = FUN4(VAR2, VAR3);
+if (VAR9) {
+FUN3(VAR2, "", VAR9);
+goto VAR13;
+}
+
+
+if (VAR2->VAR14.VAR15 < FUN5(VAR5->VAR16)) {
+VAR9 = -VAR17;
+FUN3(VAR2, ""
+"",
+VAR2->VAR14.VAR15, FUN5(VAR5->VAR16));
+goto VAR13;
+}
+if (VAR2->VAR14.VAR15 > VAR18) {
+VAR9 = -VAR17;
+FUN3(VAR2, ""
+"",
+VAR2->VAR14.VAR15, (unsigned int)VAR18);
+goto VAR13;
+}
+FUN6(VAR5, VAR2->VAR14.VAR15);
+
+
+VAR8 = VAR2->VAR14.VAR19.VAR8;
+VAR9 = FUN7(VAR5, &VAR2->VAR20, VAR8, "");
+if (VAR9)
+goto VAR13;
+
+
+VAR8 = VAR2->VAR14.VAR21.VAR8;
+VAR9 = FUN7(VAR5, &VAR2->VAR22, VAR8, "");
+if (VAR9) {
+FUN8(VAR2->VAR20);
+goto VAR13;
+}
+VAR5->VAR23 = FUN9(VAR2->VAR24.VAR25 ? VAR2->VAR22 : VAR2->VAR20);
+VAR13:
+FUN10(&VAR7);
+return VAR9;
+}

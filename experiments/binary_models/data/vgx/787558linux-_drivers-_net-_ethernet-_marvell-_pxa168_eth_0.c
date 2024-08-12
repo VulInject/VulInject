@@ -1,0 +1,26 @@
+static int FUN1(struct VAR1 *VAR2, void *VAR3)
+{
+struct VAR4 *VAR5 = VAR3;
+struct VAR6 *VAR7 = FUN2(VAR2);
+unsigned char VAR8[VAR9];
+u32 VAR10, VAR11;
+
+if (!FUN3(VAR5->VAR12))
+return -VAR13;
+memcpy(VAR8, VAR2->VAR14, VAR9);
+FUN4(VAR2, VAR5->VAR12);
+
+VAR10 = VAR2->VAR14[0] << 24;
+VAR10 |= VAR2->VAR14[1] << 16;
+VAR10 |= VAR2->VAR14[2] << 8;
+VAR10 |= VAR2->VAR14[3];
+VAR11 = VAR2->VAR14[4] << 8;
+VAR11 |= VAR2->VAR14[5];
+FUN5(VAR7, VAR15, VAR10);
+FUN5(VAR7, VAR16, VAR11);
+
+FUN6(VAR2);
+FUN7(VAR7, VAR8, VAR2->VAR14);
+FUN8(VAR2);
+return 0;
+}

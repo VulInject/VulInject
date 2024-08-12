@@ -1,0 +1,1 @@
+long FUN1 ( char * VAR1 , const char VAR2 * VAR3 , long VAR4 ) { long VAR5 ; char * VAR6 = VAR1 ; VAR5 = FUN2 ( ( unsigned long ) VAR3 , VAR4 , 0 , VAR7 , & VAR6 ) ; if ( VAR5 != 0 ) { return - VAR8 ; } return FUN3 ( VAR1 , VAR4 ) ; }

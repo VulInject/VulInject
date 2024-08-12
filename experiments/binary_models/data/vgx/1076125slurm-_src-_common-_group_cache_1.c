@@ -1,0 +1,1 @@
+extern char * * FUN1 ( int VAR1 , char * * VAR2 ) { char * * VAR3 ; if ( ! VAR1 || ! VAR2 ) { return VAR4 ; } VAR3 = xcalloc ( VAR1 , sizeof ( char * ) ) ; for ( int VAR5 = 0 ; VAR5 < VAR1 ; VAR5 ++ ) { VAR3 [ VAR5 ] = xstrdup ( VAR2 [ VAR5 ] ) ; } return VAR3 ; }

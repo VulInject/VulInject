@@ -1,0 +1,20 @@
+static VAR1 FUN1(u32 VAR2, u32 VAR3)
+{
+u32 VAR4, VAR5, VAR6;
+
+VAR2 /= 1000;
+VAR5 = 100 - VAR7;
+VAR5 *= VAR5;
+VAR5 += (VAR8 * VAR3 * 2 * 1000)/(5 * VAR2);
+VAR5 *= 10000;
+
+VAR5 = FUN2(VAR5);
+VAR5 -= (100 - VAR7) * 100;
+VAR5 *= 1000;
+VAR5 /= 2 * VAR8;
+
+VAR4 = VAR7 * 1000 - (VAR8 * VAR5)/100;
+VAR6 = (VAR3 * VAR4)/(100000 - VAR4) + 8;
+VAR6 &= ~15;
+return (VAR6);
+}

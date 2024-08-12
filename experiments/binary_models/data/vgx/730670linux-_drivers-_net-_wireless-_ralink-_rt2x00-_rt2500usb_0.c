@@ -1,0 +1,70 @@
+static void FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+u8 VAR5;
+u8 VAR6;
+u16 VAR7;
+u16 VAR8;
+
+
+FUN2(VAR4->VAR9 == VAR10 ||
+VAR4->VAR11 == VAR10);
+
+VAR5 = FUN3(VAR2, 2);
+VAR6 = FUN3(VAR2, 14);
+VAR7 = FUN4(VAR2, VAR12);
+VAR8 = FUN4(VAR2, VAR13);
+
+
+switch (VAR4->VAR11) {
+case VAR14:
+FUN5(&VAR5, VAR15, 1);
+FUN6(&VAR7, VAR16, 1);
+FUN6(&VAR8, VAR17, 1);
+break;
+case VAR18:
+FUN5(&VAR5, VAR15, 0);
+FUN6(&VAR7, VAR16, 0);
+FUN6(&VAR8, VAR17, 0);
+break;
+case VAR19:
+default:
+FUN5(&VAR5, VAR15, 2);
+FUN6(&VAR7, VAR16, 2);
+FUN6(&VAR8, VAR17, 2);
+break;
+}
+
+
+switch (VAR4->VAR9) {
+case VAR14:
+FUN5(&VAR6, VAR20, 1);
+break;
+case VAR18:
+FUN5(&VAR6, VAR20, 0);
+break;
+case VAR19:
+default:
+FUN5(&VAR6, VAR20, 2);
+break;
+}
+
+
+if (FUN7(VAR2, VAR21) || FUN7(VAR2, VAR22)) {
+FUN5(&VAR5, VAR23, 1);
+FUN6(&VAR7, VAR24, 1);
+FUN6(&VAR8, VAR25, 1);
+
+
+if (FUN7(VAR2, VAR21))
+FUN5(&VAR6, VAR26, 0);
+} else {
+FUN6(&VAR7, VAR24, 0);
+FUN6(&VAR8, VAR25, 0);
+}
+
+FUN8(VAR2, 2, VAR5);
+FUN8(VAR2, 14, VAR6);
+FUN9(VAR2, VAR12, VAR7);
+FUN9(VAR2, VAR13, VAR8);
+}

@@ -1,0 +1,31 @@
+FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    int VAR5;
+    uint32_t VAR6, VAR7;
+    uint32_t VAR8, VAR9;
+    VAR2->VAR10 = VAR4->VAR11 << VAR12;
+    VAR8 = VAR4->VAR13 * VAR14;
+    VAR9 = VAR4->VAR15 * VAR16;
+    VAR6 = FUN2(VAR8 - 1);
+    VAR7 = FUN2(VAR9 - 1);
+    VAR2->VAR17 = FUN3(VAR6);
+    VAR2->VAR18 = FUN3(VAR7);
+    VAR2->VAR19 = 0;
+    VAR2->VAR20 = 0;
+    for (VAR5 = 0; VAR5 < VAR4->VAR13; VAR5++)
+    {
+        VAR2->VAR21[VAR5] = VAR4->VAR22[VAR5] << VAR12;
+    }
+    for (VAR5 = 0; VAR5 < VAR4->VAR15; VAR5++)
+    {
+        VAR2->VAR23[VAR5] = VAR4->VAR24[VAR5] << VAR12;
+    }
+    FUN4(VAR2, VAR25, 0);
+    FUN4(VAR2, VAR26, 0);
+    FUN4(VAR2, VAR27, VAR6);
+    FUN4(VAR2, VAR28, 0);
+    FUN4(VAR2, VAR29, 0);
+    FUN4(VAR2, VAR30, VAR7);
+    FUN5(VAR6, VAR7);
+    FUN6();
+}

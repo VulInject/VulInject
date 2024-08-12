@@ -1,0 +1,1 @@
+int FUN1 ( int VAR1 ) { switch ( VAR1 ) { case VAR2 : return 0 ; case VAR3 : case VAR4 : case VAR5 : case VAR6 : return 1 ; } if ( FUN2 ( 0 || VAR1 ) 1 ) { fprintf ( VAR7 , "" ) ; FUN3 ( ) ; } return VAR1 ; }

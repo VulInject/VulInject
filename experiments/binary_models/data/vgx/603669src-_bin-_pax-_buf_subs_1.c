@@ -1,0 +1,1 @@
+int FUN1 ( void ) { int VAR1 ; static int VAR2 = 0 ; for ( ; ; ) { if ( ( VAR1 = FUN2 ( VAR3 , VAR4 ) ) > 0 ) { VAR5 = VAR3 ; VAR6 = VAR3 + VAR1 ; VAR7 += VAR1 ; return ( VAR1 ) ; } if ( VAR1 < 0 ) { break ; } if ( VAR8 == NULL || FUN3 ( ) < 0 ) { VAR2 = 1 ; return ( 0 ) ; } VAR7 = 0 ; } VAR9 = 1 ; return ( - 1 ) ; }

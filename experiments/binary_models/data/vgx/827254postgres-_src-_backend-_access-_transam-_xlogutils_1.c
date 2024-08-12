@@ -1,0 +1,1 @@
+void FUN1 ( void ) { HASH_SEQ_STATUS VAR1 ; VAR2 * VAR3 ; bool VAR4 = false ; if ( VAR5 == NULL ) { return ; } FUN2 ( & VAR1 , VAR5 ) ; while ( ( VAR3 = ( VAR2 * ) FUN3 ( & VAR1 ) ) != NULL ) { FUN4 ( VAR6 , VAR3 -> VAR7 . VAR8 , VAR3 -> VAR7 . VAR9 , VAR3 -> VAR7 . VAR10 , VAR3 -> VAR11 ) ; VAR4 = true ; } if ( VAR4 ) { FUN5 ( VAR12 ?VAR6 : VAR13 , "" ) ; } VAR5 = NULL ; }

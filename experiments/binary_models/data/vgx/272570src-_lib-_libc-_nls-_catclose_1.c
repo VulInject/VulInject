@@ -1,0 +1,1 @@
+int FUN1 ( nl_catd VAR1 ) { if ( VAR1 == ( VAR2 ) - 1 ) { VAR3 = VAR4 ; return - 1 ; } if ( VAR1 ) { FUN2 ( VAR1 -> VAR5 , VAR1 -> VAR6 ) ; } return 0 ; }

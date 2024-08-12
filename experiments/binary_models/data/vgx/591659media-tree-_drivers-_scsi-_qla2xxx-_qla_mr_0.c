@@ -1,0 +1,15 @@
+void
+FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR5;
+struct device_reg_fx00 VAR6 *VAR7 = &VAR4->VAR8->VAR9;
+
+FUN2(&VAR7->VAR10, 0);
+FUN2(&VAR7->VAR11, 0);
+
+FUN2(&VAR7->VAR12, 0);
+FUN2(&VAR7->VAR13, 0);
+
+
+FUN3(&VAR7->VAR13);
+}

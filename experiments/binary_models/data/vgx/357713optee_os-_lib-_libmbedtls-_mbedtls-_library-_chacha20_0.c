@@ -1,0 +1,24 @@
+int FUN1( VAR1 *VAR2,
+const unsigned char VAR3[32] )
+{
+FUN2( VAR2 != NULL );
+FUN2( VAR3 != NULL );
+
+
+VAR2->VAR4[0] = 0x61707865;
+VAR2->VAR4[1] = 0x3320646e;
+VAR2->VAR4[2] = 0x79622d32;
+VAR2->VAR4[3] = 0x6b206574;
+
+
+VAR2->VAR4[4]  = FUN3( VAR3, 0 );
+VAR2->VAR4[5]  = FUN3( VAR3, 4 );
+VAR2->VAR4[6]  = FUN3( VAR3, 8 );
+VAR2->VAR4[7]  = FUN3( VAR3, 12 );
+VAR2->VAR4[8]  = FUN3( VAR3, 16 );
+VAR2->VAR4[9]  = FUN3( VAR3, 20 );
+VAR2->VAR4[10] = FUN3( VAR3, 24 );
+VAR2->VAR4[11] = FUN3( VAR3, 28 );
+
+return( 0 );
+}

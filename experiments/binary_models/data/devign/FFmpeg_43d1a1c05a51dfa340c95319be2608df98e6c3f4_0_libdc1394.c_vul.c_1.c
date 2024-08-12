@@ -1,0 +1,66 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    VAR5 *VAR6 = VAR2->VAR7;
+    VAR8 *VAR9;
+    VAR10 *VAR11;
+    int VAR12;
+    struct VAR13 *VAR14;
+    struct VAR15 *VAR16;
+    for (VAR14 = VAR17; VAR14->VAR18; VAR14++)
+        if (VAR14->VAR19 == VAR4->VAR19 && VAR14->VAR18 == VAR4->VAR18 && VAR14->VAR20 == VAR4->VAR20)
+            break;
+    for (VAR16 = VAR21; VAR16->VAR22; VAR16++)
+        if (VAR16->VAR22 == FUN2(1000, VAR4->VAR23.VAR24, VAR4->VAR23.VAR25))
+            break;
+    VAR9 = FUN3(VAR2, 0);
+    if (!VAR9)
+        return -1;
+    FUN4(VAR9, 64, 1, 1000);
+    VAR9->VAR26->VAR27 = VAR28;
+    VAR9->VAR26->VAR29 = VAR30;
+    VAR9->VAR26->VAR23.VAR24 = VAR16->VAR22;
+    VAR9->VAR26->VAR23.VAR25 = 1000;
+    VAR9->VAR26->VAR18 = VAR14->VAR18;
+    VAR9->VAR26->VAR20 = VAR14->VAR20;
+    VAR9->VAR26->VAR19 = VAR14->VAR19;
+    FUN5(&VAR6->VAR31);
+    VAR6->VAR31.VAR32 = FUN6(VAR14->VAR19, VAR14->VAR18, VAR14->VAR20);
+    VAR6->VAR31.VAR33 = VAR9->VAR34;
+    VAR6->VAR31.VAR35 |= VAR36;
+    VAR6->VAR37 = 0;
+    VAR6->VAR16 = VAR16->VAR22;
+    VAR9->VAR26->VAR38 = FUN2(VAR6->VAR31.VAR32 * 8, VAR16->VAR22, 1000);
+    VAR6->VAR39 = FUN7(0);
+    if (!VAR6->VAR39)
+    {
+        FUN8(VAR2, VAR40, "", 0);
+        goto VAR41;
+    }
+    VAR11 = FUN9(VAR6->VAR39, &VAR12, 1);
+    if (!VAR11 || VAR11[VAR4->VAR42] == VAR43)
+    {
+        FUN8(VAR2, VAR40, "", VAR4->VAR42);
+        goto VAR44;
+    }
+    VAR12 = FUN10(VAR6->VAR39, VAR11[VAR4->VAR42], 0, VAR45, VAR14->VAR46, VAR47, VAR16->VAR48, 8, 1, VAR2->VAR49, &VAR6->VAR50);
+    FUN11(VAR11);
+    if (VAR12 != VAR51)
+    {
+        FUN8(VAR2, VAR40, "");
+        goto VAR44;
+    }
+    VAR12 = FUN12(VAR6->VAR39, VAR6->VAR50.VAR52);
+    if (VAR12 != VAR51)
+    {
+        FUN8(VAR2, VAR40, "");
+        goto VAR53;
+    }
+    return 0;
+VAR53:
+    FUN13(VAR6->VAR39, &VAR6->VAR50);
+    FUN14(VAR6->VAR39, &VAR6->VAR50);
+VAR44:
+    FUN15(VAR6->VAR39);
+VAR41:
+    return -1;
+}

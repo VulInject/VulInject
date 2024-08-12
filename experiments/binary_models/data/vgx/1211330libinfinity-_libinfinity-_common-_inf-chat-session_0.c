@@ -1,0 +1,35 @@
+static void
+FUN1(VAR1* VAR2)
+{
+VAR3* VAR4;
+InfChatSessionLogUserlistForeachData VAR5;
+time_t VAR6;
+struct VAR7* VAR7;
+
+VAR4 = FUN2(VAR2);
+if(VAR4->VAR8 != NULL)
+{
+VAR6 = FUN3(NULL);
+VAR7 = FUN4(&VAR6);
+
+VAR5.VAR9 = FUN5("", VAR7, NULL);
+VAR5.VAR8 = VAR4->VAR8;
+VAR5.VAR10 = 0;
+
+FUN6(
+FUN7(FUN8(VAR2)),
+VAR11,
+&VAR5
+);
+
+fprintf(
+VAR5.VAR8,
+FUN9(""),
+VAR5.VAR9,
+VAR5.VAR10
+);
+
+FUN10(VAR5.VAR9);
+FUN11(VAR5.VAR8);
+}
+}

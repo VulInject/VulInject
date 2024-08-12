@@ -1,0 +1,12 @@
+int FUN1(struct VAR1 *VAR2,
+struct VAR1 *VAR3)
+{
+struct VAR4 *VAR5 = &VAR2->VAR6.VAR7.VAR8;
+uint8_t VAR9 = 0x7;
+int VAR10;
+
+for (VAR10 = 0 ; VAR10 < VAR5->VAR11; ++VAR10)
+if (VAR5->VAR12[VAR10].VAR13 == VAR3->VAR14.VAR15.VAR13)
+return VAR5->VAR12[VAR10].VAR16 & VAR9;
+return	-VAR17;
+}

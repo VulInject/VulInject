@@ -1,0 +1,236 @@
+enum VAR1 FUN1(struct VAR2 *VAR3,
+uint32_t VAR4, VAR5 *VAR6,
+enum processing_func VAR7)
+{
+VAR5 *VAR8 = VAR6;
+VAR5 *VAR9 = VAR6 + 2;
+enum pkcs11_rc VAR10 = VAR11;
+struct serialargs VAR12 = { };
+struct VAR13 *VAR14 = NULL;
+struct VAR15 *VAR16 = NULL;
+struct VAR17 *template = NULL;
+uint32_t VAR18 = 0;
+uint32_t VAR19 = 0;
+struct VAR20 *VAR21 = NULL;
+struct VAR22 *VAR23 = NULL;
+size_t VAR24 = 0;
+void *VAR25 = NULL;
+uint32_t VAR26 = 0;
+void *VAR27 = NULL;
+uint32_t VAR28 = 0;
+enum processing_func VAR29 = VAR30;
+
+if (!VAR3 ||
+FUN2(VAR4, 0) != VAR31 ||
+FUN2(VAR4, 2) != VAR32 ||
+VAR9->VAR33.VAR34 != sizeof(VAR19) ||
+FUN2(VAR4, 3) != VAR35)
+return VAR36;
+
+switch (VAR7) {
+case VAR37:
+if (FUN2(VAR4, 1) !=
+VAR38)
+return VAR36;
+
+VAR25 = VAR6[1].VAR33.VAR39;
+VAR26 = VAR6[1].VAR33.VAR34;
+if (VAR26 && !VAR25)
+return VAR36;
+
+
+VAR29 = VAR40;
+break;
+case VAR41:
+if (FUN2(VAR4, 1) != VAR35)
+return VAR36;
+
+
+VAR29 = VAR42;
+break;
+default:
+return VAR36;
+}
+
+FUN3(&VAR12, VAR8->VAR33.VAR39, VAR8->VAR33.VAR34);
+
+VAR10 = FUN4(&VAR12, VAR3, &VAR14);
+if (VAR10)
+return VAR10;
+
+VAR10 = FUN5(&VAR12, &VAR18, sizeof(VAR43));
+if (VAR10)
+return VAR10;
+
+VAR10 = FUN6(&VAR12, &VAR16);
+if (VAR10)
+return VAR10;
+
+VAR10 = FUN7(&VAR12, &template);
+if (VAR10)
+goto VAR44;
+
+if (FUN8(&VAR12)) {
+VAR10 = VAR36;
+goto VAR44;
+}
+
+
+VAR10 = FUN9(VAR14);
+if (VAR10)
+goto VAR44;
+
+
+VAR21 = FUN10(VAR18, VAR14);
+if (!VAR21) {
+VAR10 = VAR45;
+goto VAR44;
+}
+
+
+VAR10 = FUN11(VAR14, VAR16->VAR46,
+VAR7,
+VAR47);
+if (VAR10)
+goto VAR44;
+
+
+VAR10 = FUN12(VAR14, VAR7, VAR21, NULL);
+if (VAR10)
+goto VAR44;
+
+
+VAR10 = FUN13(VAR16->VAR46, VAR7,
+VAR21->VAR48);
+if (VAR10) {
+
+if (VAR10 == VAR49) {
+if (VAR7 == VAR37)
+VAR10 =
+VAR50;
+else
+VAR10 = VAR51;
+}
+goto VAR9;
+}
+
+
+VAR10 = FUN14(VAR14, VAR21->VAR48);
+if (VAR10)
+goto VAR9;
+
+VAR24 = sizeof(*template) + template->VAR52;
+
+VAR10 = FUN15(&VAR23, template, VAR24,
+VAR21->VAR48,
+VAR7,
+VAR16->VAR46,
+VAR53);
+if (VAR10)
+goto VAR9;
+
+FUN16(template);
+template = NULL;
+
+
+
+VAR10 = FUN17(VAR16->VAR46, VAR23);
+if (VAR10)
+goto VAR9;
+
+VAR10 = FUN18(VAR14, VAR23);
+if (VAR10)
+goto VAR9;
+
+VAR10 = FUN14(VAR14, VAR23);
+if (VAR10)
+goto VAR9;
+
+if (FUN19(VAR16->VAR46)) {
+VAR10 = FUN20(VAR14, VAR29, VAR16,
+VAR21);
+if (VAR10)
+goto VAR9;
+
+switch (VAR7) {
+case VAR41:
+VAR10 = FUN21(VAR14, &VAR27,
+&VAR28);
+break;
+case VAR37:
+VAR10 = FUN22(VAR14, VAR25, VAR26,
+&VAR27, &VAR28);
+break;
+default:
+FUN23(VAR7);
+}
+if (VAR10)
+goto VAR9;
+
+} else if (FUN24(VAR16->VAR46)) {
+switch (VAR7) {
+case VAR41:
+VAR10 = FUN25(VAR14, VAR7,
+VAR16, VAR21);
+if (VAR10)
+goto VAR9;
+
+VAR10 = FUN26(VAR14, VAR16, &VAR23);
+if (!VAR10)
+goto VAR54;
+break;
+case VAR37:
+VAR10 = FUN25(VAR14, VAR29,
+VAR16, VAR21);
+if (VAR10)
+goto VAR9;
+
+VAR10 = FUN27(VAR14, VAR25, VAR26,
+&VAR27, &VAR28);
+break;
+default:
+FUN23(VAR7);
+}
+
+if (VAR10)
+goto VAR9;
+} else {
+VAR10 = VAR55;
+goto VAR9;
+}
+
+VAR10 = FUN28(&VAR23, VAR27, VAR28);
+if (VAR10)
+goto VAR9;
+
+VAR54:
+FUN16(VAR27);
+VAR27 = NULL;
+
+FUN16(VAR16);
+VAR16 = NULL;
+
+
+VAR10 = FUN29(VAR14, VAR23, &VAR19);
+if (VAR10)
+goto VAR9;
+
+
+VAR23 = NULL;
+
+FUN30(VAR9->VAR33.VAR39, &VAR19, sizeof(VAR19));
+VAR9->VAR33.VAR34 = sizeof(VAR19);
+
+FUN31(""VAR56""VAR57,
+VAR14->VAR58, VAR19);
+
+VAR9:
+FUN32(VAR14);
+VAR44:
+FUN16(VAR16);
+FUN16(template);
+FUN16(VAR23);
+FUN16(VAR27);
+
+return VAR10;
+}

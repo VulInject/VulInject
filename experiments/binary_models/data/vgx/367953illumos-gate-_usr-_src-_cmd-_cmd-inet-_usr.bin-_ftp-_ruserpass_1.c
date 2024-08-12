@@ -1,0 +1,1 @@
+int FUN1 ( char * VAR1 , char * * VAR2 , char * * VAR3 , char * * VAR4 ) { FUN2 ( VAR1 , VAR2 , VAR3 , VAR4 ) ; } static char VAR5 [ 100 ] ; static VAR6 { char * VAR7 ; int VAR8 ; } , VAR6 [ ] { } ;

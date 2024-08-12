@@ -1,0 +1,20 @@
+int FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 **VAR6, VAR7 *VAR8)
+{
+    int VAR9;
+    VAR5 *VAR10;
+    if ((VAR9 = FUN2(VAR2->VAR11[0])) < 0)
+        return VAR9;
+    if (!(VAR10 = VAR2->VAR11[0]->VAR12))
+        return FUN3(VAR13);
+    *VAR6 = VAR10;
+    VAR2->VAR11[0]->VAR12 = NULL;
+    *VAR8 = VAR2->VAR11[0]->VAR14;
+    memcpy(VAR4->VAR15, VAR10->VAR15, sizeof(VAR4->VAR15));
+    memcpy(VAR4->VAR16, VAR10->VAR16, sizeof(VAR4->VAR16));
+    VAR4->VAR17 = VAR10->VAR18;
+    VAR4->VAR19 = VAR10->VAR20->VAR21;
+    VAR4->VAR22 = VAR10->VAR20->VAR22;
+    VAR4->VAR23 = VAR10->VAR20->VAR23;
+    VAR4->VAR24 = VAR10->VAR20->VAR24;
+    VAR4->VAR25 = VAR10->VAR20->VAR25;
+    return 1;

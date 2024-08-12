@@ -1,0 +1,1 @@
+static MagickBooleanType FUN1 ( const unsigned char * VAR1 , const size_t VAR2 ) { if ( VAR2 < 4 ) { return ( VAR3 ) ; } return ( VAR3 ) ; }

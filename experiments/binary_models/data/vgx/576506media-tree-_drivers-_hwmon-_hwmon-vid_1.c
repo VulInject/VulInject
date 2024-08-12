@@ -1,0 +1,1 @@
+u8 FUN1 ( void ) { struct VAR1 * VAR2 = & FUN2 ( 0 ) ; u8 VAR3 ; VAR3 = FUN3 ( VAR2 -> VAR4 , VAR2 -> VAR5 , VAR2 -> VAR6 , VAR2 -> VAR7 ) ; if ( VAR3 == 134 ) { VAR3 = FUN4 ( ) ; } if ( VAR3 == 0 ) { FUN5 ( "" ) ; } return VAR3 ; }

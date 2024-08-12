@@ -1,0 +1,1 @@
+void FUN1 ( void ) { struct VAR1 * VAR2 ; u_int VAR3 ; VAR4 = VAR2 = FUN2 ( & VAR5 ) ; if ( VAR2 != NULL ) { VAR6 = FUN3 ( VAR7 , NULL ) ; FUN4 ( VAR2 , VAR6 ) ; } for ( VAR3 = 0 ; VAR3 < VAR8 ; VAR3 ++ ) { if ( VAR9 ) { FUN5 ( VAR10 [ VAR3 ] , VAR2 , NULL , VAR11 , NULL ) ; } else { FUN5 ( VAR10 [ VAR3 ] , VAR2 , NULL , 0 , NULL ) ; } } FUN4 ( FUN3 ( VAR12 , NULL ) ) ; }

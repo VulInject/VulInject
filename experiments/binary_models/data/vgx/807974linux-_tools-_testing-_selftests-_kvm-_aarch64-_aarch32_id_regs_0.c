@@ -1,0 +1,19 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+int VAR3, VAR4;
+
+for (VAR3 = 0; VAR3 < FUN2(VAR5); VAR3++) {
+uint64_t VAR6 = VAR5[VAR3];
+uint64_t VAR7;
+
+FUN3(VAR2, VAR6, &VAR7);
+FUN4(VAR7, 0);
+
+VAR4 = FUN5(VAR2, VAR6, VAR8);
+FUN6(VAR4 < 0 && VAR9 == VAR10,
+"", VAR4, VAR9);
+
+FUN3(VAR2, VAR6, &VAR7);
+FUN4(VAR7, 0);
+}
+}

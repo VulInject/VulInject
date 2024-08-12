@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , const struct VAR3 * VAR4 , int VAR5 , void VAR6 * VAR7 , char * VAR8 ) { int VAR9 ; for ( VAR9 = 0 ; VAR9 < VAR5 ; VAR9 ++ , VAR4 ++ ) { if ( VAR8 ) { FUN2 ( VAR2 , "" , VAR8 ) ; } FUN2 ( VAR2 , "" , VAR4 -> VAR10 , FUN3 ( VAR7 + VAR4 -> VAR11 ) ) ; } }

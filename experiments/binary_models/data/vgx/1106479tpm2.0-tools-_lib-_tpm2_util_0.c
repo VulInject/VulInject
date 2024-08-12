@@ -1,0 +1,3 @@
+VAR1 FUN1(UINT32 VAR2) {
+return FUN2(VAR2);
+}

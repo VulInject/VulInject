@@ -1,0 +1,25 @@
+static VAR1 FUN1(VAR2 *VAR3, uint8_t VAR4, uint32_t VAR5)
+{
+if (VAR3->VAR6 & VAR7 && VAR3->VAR8 == NULL) {
+return 0;
+} else if (VAR3->VAR8 != NULL) {
+VAR9 *VAR10 = (VAR9 *)VAR3->VAR8;
+FUN2(VAR10);
+
+FUN3(VAR10->VAR11 != NULL && FUN4(VAR10->VAR12) < 2);
+uint8_t VAR13 = FUN5(VAR10->VAR11, VAR4, VAR5);
+FUN6(VAR10);
+return VAR13;
+} else {
+VAR9 *VAR10 = FUN7(&(VAR3->VAR14));
+VAR3->VAR6 |= VAR7;
+if (VAR10 == NULL)
+return 0;
+FUN8(&VAR3->VAR8, VAR10);
+
+FUN3(VAR10->VAR11 != NULL && FUN4(VAR10->VAR12) < 3);
+uint8_t VAR13 = FUN5(VAR10->VAR11, VAR4, VAR5);
+FUN9(VAR10); 
+return VAR13;
+}
+}

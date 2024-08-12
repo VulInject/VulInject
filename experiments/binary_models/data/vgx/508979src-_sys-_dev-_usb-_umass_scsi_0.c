@@ -1,0 +1,49 @@
+int
+FUN1(struct VAR1 *VAR2)
+{
+struct scsibus_attach_args VAR3;
+struct VAR4 *VAR5;
+u_int16_t VAR6 = 0;
+
+VAR5 = malloc(sizeof(*VAR5), VAR7, VAR8 | VAR9);
+
+VAR2->VAR10 = VAR5;
+
+switch (VAR2->VAR11) {
+case VAR12:
+case VAR13:
+FUN2(VAR14, (""
+"",
+VAR2->VAR15.VAR16, VAR2, VAR5));
+break;
+case VAR17:
+case VAR18:
+VAR6 |= VAR19;
+FUN2(VAR14, (""
+"",
+VAR2->VAR15.VAR16, VAR2, VAR5));
+break;
+default:
+break;
+}
+
+FUN3(&VAR5->VAR20, VAR5, VAR21, VAR22);
+
+VAR3.VAR23 = 2;
+VAR3.VAR24 = &VAR25;
+VAR3.VAR26 = VAR2;
+VAR3.VAR27 = VAR28;
+VAR3.VAR29 = VAR2->VAR30 + 1;
+VAR3.VAR31 = 1;
+VAR3.VAR32 = VAR2->VAR33;
+VAR3.VAR34 = &VAR5->VAR20;
+VAR3.VAR35 = VAR36 | VAR6;
+VAR3.VAR37 = VAR3.VAR38 = 0;
+
+VAR2->VAR39++;
+VAR5->VAR40 = FUN4((struct VAR41 *)VAR2, &VAR3, VAR42);
+if (--VAR2->VAR39 < 0)
+FUN5(&VAR2->VAR15);
+
+return (0);
+}

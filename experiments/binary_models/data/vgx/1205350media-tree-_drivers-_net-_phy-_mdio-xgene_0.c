@@ -1,0 +1,22 @@
+int FUN1(struct VAR1 *VAR2, int VAR3, int VAR4, u16 VAR5)
+{
+void VAR6 *VAR7 = (void VAR6 *)VAR2->VAR8;
+u32 VAR9, VAR10;
+u8 VAR11 = 10;
+
+VAR9 = FUN2(VAR12, VAR3) | FUN2(VAR13, VAR4);
+FUN3(VAR7, VAR14, VAR9);
+
+FUN3(VAR7, VAR15, VAR5);
+do {
+FUN4(5, 10);
+VAR10 = FUN5(VAR7, VAR16);
+} while ((VAR10 & VAR17) && VAR11--);
+
+if (VAR10 & VAR17) {
+FUN6(&VAR2->VAR18, "");
+return -VAR19;
+}
+
+return 0;
+}

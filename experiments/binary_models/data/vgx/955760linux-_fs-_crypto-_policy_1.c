@@ -1,0 +1,1 @@
+static bool FUN1 ( u32 VAR1 , u32 VAR2 ) { if ( VAR1 == VAR3 && VAR2 == VAR4 ) { return true ; } if ( VAR1 == VAR5 && VAR2 == VAR5 ) { return true ; } return false ; }

@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * VAR2 ; VAR1 * VAR3 ; FUN2 ( FUN3 ( VAR4 ) ) ; VAR2 = FUN4 ( FUN5 ( VAR4 ) ) ; VAR3 = FUN4 ( FUN6 ( VAR4 ) ) ; FUN7 ( VAR2 , NULL ) ; FUN7 ( VAR3 ) ; }

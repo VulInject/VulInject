@@ -1,0 +1,1 @@
+static void FUN1 ( ProcessHandle VAR1 ) { int VAR2 = FUN2 ( VAR1 , VAR3 ) ; if ( VAR2 < 0 ) { fprintf ( VAR4 , "" ) ; FUN3 ( 1 ) ; } VAR5 * VAR6 = FUN4 ( VAR2 , "" ) ; if ( ! VAR6 ) { FUN5 ( "" ) ; } if ( fscanf ( VAR6 , "" , & VAR7 ) != 1 ) { fprintf ( VAR4 , "" ) ; FUN3 ( 1 ) ; } fclose ( VAR6 , NULL ) ; }

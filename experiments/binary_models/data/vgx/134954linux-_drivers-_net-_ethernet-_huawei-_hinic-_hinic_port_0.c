@@ -1,0 +1,34 @@
+int FUN1(struct VAR1 *VAR2, u8 VAR3, u8 VAR4)
+{
+struct VAR5 *VAR6 = &VAR2->VAR7.VAR6;
+struct hinic_set_pfc VAR8 = {0};
+u16 VAR9 = sizeof(VAR8);
+int VAR10;
+
+if (FUN2(VAR2->VAR11))
+return 0;
+
+FUN3(&VAR6->VAR12);
+
+VAR8.VAR13 = FUN4(VAR2->VAR11);
+VAR8.VAR4 = VAR4;
+VAR8.VAR3 = VAR3;
+
+VAR10 = FUN5(VAR2, VAR14,
+&VAR8, sizeof(VAR8), &VAR8, &VAR9);
+if (VAR10 || VAR8.VAR15 || !VAR9) {
+FUN6(&VAR2->VAR11->VAR16->VAR17, "",
+VAR3 ? "" : "", VAR10, VAR8.VAR15,
+VAR9);
+FUN7(&VAR6->VAR12);
+return -VAR18;
+}
+
+
+VAR6->VAR19 = VAR3 ? 0 : 1;
+VAR6->VAR20 = VAR3 ? 0 : 1;
+
+FUN7(&VAR6->VAR12);
+
+return 0;
+}

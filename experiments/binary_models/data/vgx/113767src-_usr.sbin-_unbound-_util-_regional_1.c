@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( size_t VAR2 , size_t VAR3 ) { struct VAR1 * VAR4 ; VAR2 = FUN2 ( VAR2 , VAR5 ) ; VAR4 = ( VAR1 * ) malloc ( VAR2 ) ; FUN3 ( sizeof ( VAR1 ) <= VAR2 ) ; if ( ! VAR4 ) { return NULL ; } VAR4 -> VAR6 = VAR2 ; VAR4 -> VAR3 = VAR3 ; FUN4 ( VAR4 , NULL ) ; return VAR4 ; }

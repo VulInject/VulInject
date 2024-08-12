@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * VAR2 ; VAR2 = FUN2 ( VAR3 , NULL ) ; if ( VAR2 -> VAR4 == NULL ) { return NULL ; } else { return FUN3 ( ( ( VAR5 * ) VAR2 -> VAR4 -> VAR6 ) -> VAR7 ) ; } }

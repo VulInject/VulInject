@@ -1,0 +1,25 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+u32 VAR5, int VAR6)
+{
+VAR7 *VAR8;
+int VAR9;
+
+if (!VAR5) {
+VAR7 *VAR4 = (VAR7 *)&VAR10;
+int VAR11;
+
+FUN2(FUN3(VAR2), NULL, &VAR8);
+VAR8[VAR12] = FUN4();
+for (VAR11 = 1; VAR11 < VAR13; VAR11++)
+VAR8[VAR12 + VAR11] = VAR4[VAR11];
+VAR9 = VAR12 + VAR13;
+} else {
+struct VAR14 *VAR15 = FUN5(VAR2, VAR5);
+
+FUN6(FUN7(VAR15), NULL, &VAR8);
+VAR9 = VAR16;
+}
+
+memcpy(VAR4->VAR17, VAR8, VAR9 * sizeof(VAR7));
+return VAR9;
+}

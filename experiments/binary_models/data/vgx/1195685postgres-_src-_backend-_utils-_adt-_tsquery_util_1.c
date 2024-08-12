@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 , int * VAR3 , int * VAR4 ) { * VAR4 += 1 ; if ( VAR2 -> VAR5 -> VAR6 == VAR7 ) { int VAR8 ; for ( VAR8 = 0 ; VAR8 < VAR2 -> VAR9 ; VAR8 ++ ) { FUN1 ( VAR2 -> VAR10 [ VAR8 ] , VAR3 , VAR4 ) ; } } else { * VAR3 += VAR2 -> VAR5 -> VAR11 . VAR12 + 1 ; } }

@@ -1,0 +1,36 @@
+VAR1 *FUN1(VAR2 *VAR3, VAR4 **VAR5)
+{
+VAR4 *VAR6 = NULL;
+const VAR7 *VAR8;
+VAR1 *VAR9 = NULL;
+const char *VAR10 = FUN2(FUN3(VAR3, ""));
+
+if (VAR10 == NULL) {
+FUN4(VAR5, ""%VAR11\"",
+FUN5(VAR3));
+return NULL;
+}
+
+VAR8 = FUN6(VAR10, VAR5);
+if (VAR8 == NULL) {
+return NULL;
+}
+
+VAR9 = FUN7(VAR1, 1);
+VAR9->VAR12 = VAR13;
+
+if (VAR8->VAR14) {
+VAR8->FUN8(VAR3, VAR9, &VAR6);
+if (VAR6) {
+FUN9(VAR5, VAR6);
+FUN10(VAR9);
+return NULL;
+}
+} else {
+VAR15 *VAR16 = FUN7(VAR15, 1);
+FUN11(VAR3, VAR16);
+VAR9->VAR17.VAR18.VAR19 = VAR16; 
+}
+
+return VAR9;
+}

@@ -1,0 +1,1 @@
+boolean_t FUN1 ( int VAR1 , zfs_type_t VAR2 , boolean_t VAR3 ) { VAR4 * VAR5 ; FUN2 ( VAR1 < FUN3 ( VAR2 ) ) ; VAR5 = FUN4 ( VAR2 ) ; if ( VAR3 && VAR5 [ VAR1 ] . VAR6 == VAR7 ) { return ( VAR8 ) ; } return ( ( VAR5 [ VAR1 ] . VAR6 & VAR2 ) != 0 ) ; }

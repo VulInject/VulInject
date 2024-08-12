@@ -1,0 +1,1 @@
+static int FUN1 ( ) { VAR1 * VAR2 = NULL ; uid_t VAR3 ; struct VAR4 * VAR5 ; if ( ( ( VAR3 = FUN2 ( VAR2 ) ) == ( VAR6 ) - 1 ) || ( ( VAR5 = getpwuid ( VAR3 ) ) == NULL ) || ( FUN3 ( VAR7 , VAR5 -> VAR8 ) != 1 ) ) { FUN4 ( VAR2 ) ; return ( - 1 ) ; } FUN4 ( VAR2 ) ; return ( 0 ) ; }

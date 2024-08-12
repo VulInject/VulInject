@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 ) { uint16_t VAR3 ; uint8_t VAR4 ; CBS VAR5 ; FUN2 ( VAR2 , & VAR5 ) ; if ( ! FUN3 ( & VAR5 , & VAR3 ) || ! FUN4 ( & VAR5 , & VAR4 ) ) { return 0 ; } if ( ( VAR3 & ~ 0x8000 ) < 3 ) { return 0 ; } if ( VAR4 != VAR6 ) { return 0 ; } return 1 ; }

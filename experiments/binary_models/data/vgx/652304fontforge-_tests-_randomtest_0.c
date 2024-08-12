@@ -1,0 +1,23 @@
+static void FUN1(FT_Face VAR1) {
+int VAR2;
+int VAR3 = VAR4;
+
+if ( VAR5 && (VAR1->VAR6&VAR7))
+VAR3 = VAR8;
+if ( VAR9 )
+VAR3 |= VAR10;
+
+FUN2(VAR1,0,(int) (12*64), 72, 72);
+
+for ( VAR2=0; VAR2<VAR1->VAR11; ++VAR2 ) {
+if ( VAR5 && (VAR1->VAR6&VAR7)) {
+if ( !FUN3(VAR1,VAR2,VAR3))
+FUN4(&VAR1->VAR12->VAR13,&VAR14,NULL);
+} else {
+FUN3(VAR1,VAR2,VAR3);
+}
+if ( VAR15 )
+FUN5(VAR1->VAR12,VAR16);
+}
+FUN6(VAR1);
+}

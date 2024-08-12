@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( VAR1 * VAR2 , VAR1 * VAR3 ) static VAR1 * FUN2 ( VAR1 * VAR2 , VAR1 * VAR3 ) static VAR1 * FUN3 ( VAR1 * VAR2 , VAR1 * VAR3 ) static VAR1 * VAR4 ; void FUN4 ( VAR1 * VAR5 ) { knc_ctx VAR6 ; if ( VAR5 == NULL ) { return ; } VAR6 = FUN5 ( VAR5 , NULL ) ; FUN6 ( VAR6 ) ; }

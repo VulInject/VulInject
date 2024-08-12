@@ -1,0 +1,1 @@
+FUN1 ( ) { job VAR1 ; int VAR2 = - 2 ; VAR1 . VAR3 [ VAR4 ] . VAR5 . VAR6 = VAR7 ; FUN2 ( & VAR1 , VAR2 ) ; FUN3 ( VAR2 == - 2 ) ; FUN3 ( VAR1 . VAR3 [ VAR4 ] . VAR8 == 0 ) ; }

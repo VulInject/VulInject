@@ -1,0 +1,47 @@
+static int FUN1(VAR1 *VAR2, const VAR3 *VAR4, uint32_t VAR5)
+{
+    VAR6 *VAR7 = VAR2->VAR8;
+    VAR9 *const VAR10 = &VAR7->VAR11;
+    VAR12 *VAR13 = VAR10->VAR14;
+    struct VAR15 *VAR16 = VAR13->VAR17;
+    VAR18 *VAR19 = &VAR16->VAR19.VAR20;
+    VdpVideoSurface VAR21;
+    int VAR22;
+    VAR19->VAR23 = VAR24;
+    VAR19->VAR25 = VAR24;
+    VAR19->VAR26 = 0;
+    switch (VAR10->VAR27)
+    {
+    case VAR28:
+        VAR21 = FUN2(&VAR10->VAR29.VAR30);
+        assert(VAR21 != VAR24);
+        VAR19->VAR25 = VAR21;
+        VAR19->VAR26 = 2;
+    case VAR31:
+        VAR21 = FUN2(&VAR10->VAR32.VAR30);
+        assert(VAR21 != VAR24);
+        VAR19->VAR23 = VAR21;
+    }
+    VAR19->VAR33[0] = VAR10->VAR34;
+    VAR19->VAR35[0] = VAR10->VAR36;
+    VAR19->VAR33[1] = VAR10->VAR37 >> 1;
+    VAR19->VAR35[1] = VAR10->VAR38 >> 1;
+    VAR19->VAR39 = VAR10->VAR2->VAR40.VAR41;
+    VAR19->VAR42 = VAR10->VAR43;
+    VAR19->VAR44 = VAR10->VAR45;
+    VAR19->VAR46 = !VAR7->VAR47;
+    VAR19->VAR48 = !VAR10->VAR49;
+    VAR19->VAR50 = VAR10->VAR51;
+    VAR19->VAR52 = VAR10->VAR52;
+    VAR19->VAR53 = VAR2->VAR54->VAR55 == VAR56;
+    VAR19->VAR57 = VAR10->VAR58;
+    VAR19->VAR59 = VAR10->VAR60;
+    VAR19->VAR61 = VAR10->VAR61;
+    for (VAR22 = 0; VAR22 < 64; ++VAR22)
+    {
+        VAR19->VAR62[VAR22] = VAR10->VAR63[VAR22];
+        VAR19->VAR64[VAR22] = VAR10->VAR65[VAR22];
+    }
+    FUN3(VAR16, VAR4, VAR5);
+    return FUN4(VAR16, VAR4, VAR5);
+}

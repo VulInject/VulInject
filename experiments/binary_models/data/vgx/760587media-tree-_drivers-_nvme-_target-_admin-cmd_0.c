@@ -1,0 +1,41 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+struct VAR5 *VAR6;
+u16 VAR7 = 0;
+
+VAR4 = FUN2(VAR2->VAR8->VAR9, VAR2->VAR10->VAR11.VAR12);
+if (!VAR4) {
+VAR7 = VAR13 | VAR14;
+goto VAR15;
+}
+
+VAR6 = FUN3(sizeof(*VAR6), VAR16);
+if (!VAR6) {
+VAR7 = VAR17;
+goto VAR18;
+}
+
+
+VAR6->VAR19 = VAR6->VAR20 = VAR6->VAR21 =
+FUN4(VAR4->VAR22 >> VAR4->VAR23);
+
+
+VAR6->VAR24 = 0;
+VAR6->VAR25 = 0;
+
+
+VAR6->VAR26 = (1 << 0);
+
+memcpy(&VAR6->VAR27, &VAR4->VAR27, sizeof(VAR28));
+
+VAR6->VAR29[0].VAR30 = VAR4->VAR23;
+
+VAR7 = FUN5(VAR2, 0, VAR6, sizeof(*VAR6));
+
+FUN6(VAR6);
+VAR18:
+FUN7(VAR4);
+VAR15:
+FUN8(VAR2, VAR7);
+}

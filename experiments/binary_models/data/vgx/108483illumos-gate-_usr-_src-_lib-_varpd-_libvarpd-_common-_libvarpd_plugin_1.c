@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , const char * VAR3 ) { int VAR4 = 0 ; VAR5 * VAR6 = ( VAR5 * ) VAR2 ; FUN2 ( & VAR7 ) ; while ( VAR8 != NULL ) { ( void ) FUN3 ( & VAR9 , & VAR7 ) ; } VAR8 = VAR6 ; FUN4 ( & VAR7 ) ; VAR4 = FUN5 ( VAR6 , VAR3 , "" , VAR10 , NULL ) ; FUN2 ( & VAR7 ) ; VAR8 = NULL ; ( void ) FUN6 ( & VAR9 ) ; FUN4 ( & VAR7 ) ; return ( VAR4 ) ; }

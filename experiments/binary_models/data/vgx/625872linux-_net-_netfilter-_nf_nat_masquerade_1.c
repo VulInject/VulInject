@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * this , unsigned long VAR2 , void * VAR3 ) { struct VAR4 * VAR5 = VAR3 ; const struct VAR6 * VAR7 ; union nf_inet_addr VAR8 ; if ( VAR2 != VAR9 ) { return VAR10 ; } VAR7 = VAR5 -> VAR11 -> VAR7 ; VAR8 . VAR12 = VAR5 -> VAR8 ; FUN2 ( FUN3 ( VAR7 ) , & VAR8 , VAR7 -> VAR13 , VAR14 , VAR15 ) ; return VAR10 ; }

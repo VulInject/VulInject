@@ -1,0 +1,22 @@
+VAR1 *FUN1(const VAR2 **VAR3, int VAR4, int VAR5)
+{
+if (!VAR4) {
+return NULL;
+}
+
+VAR1 *VAR6 = FUN2(sizeof(VAR1));
+VAR6->VAR7 = FUN3(VAR4, sizeof(VAR8*));
+VAR6->VAR9 = FUN3(VAR4, sizeof(VAR10));
+
+int VAR11 = 0;
+for (int VAR12 = 0; VAR12 < VAR4; VAR12++) {
+VAR8 *VAR13 = FUN4(VAR3[VAR12], &VAR14,
+VAR15, NULL, &VAR6->VAR9[VAR11]);
+if (VAR13) {
+VAR6->VAR7[VAR11++] = VAR13;
+}
+}
+VAR6->VAR11 = VAR11;
+VAR6->VAR5 = VAR5;
+return VAR6;
+}

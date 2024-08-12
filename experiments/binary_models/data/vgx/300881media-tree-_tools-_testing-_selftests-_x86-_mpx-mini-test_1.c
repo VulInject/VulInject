@@ -1,0 +1,1 @@
+void FUN1 ( void ) { long VAR1 ; long VAR2 ; int VAR3 ; VAR2 = FUN2 ( VAR4 , NULL ) ; FUN3 ( "" , VAR2 ) ; for ( VAR3 = 0 ; VAR3 < VAR5 ; VAR3 ++ ) { FUN4 ( VAR3 ) ; } VAR1 = FUN2 ( VAR4 ) ; FUN3 ( "" , VAR1 ) ; if ( ( VAR6 >= VAR7 ) && ( VAR8 >= VAR7 ) ) { if ( VAR1 != 0 ) { FUN5 ( ) ; } assert ( VAR1 == 0 ) ; } }

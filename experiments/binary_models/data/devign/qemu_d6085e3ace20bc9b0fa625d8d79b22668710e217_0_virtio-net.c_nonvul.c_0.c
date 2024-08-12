@@ -1,0 +1,1 @@
+static void FUN1(VAR1 *VAR2) { FUN2(FUN3(VAR2->VAR3, 0)->VAR4, !!(VAR2->VAR5 & (1ULL << VAR6)), !!(VAR2->VAR5 & (1ULL << VAR7)), !!(VAR2->VAR5 & (1ULL << VAR8)), !!(VAR2->VAR5 & (1ULL << VAR9)), !!(VAR2->VAR5 & (1ULL << VAR10))); }

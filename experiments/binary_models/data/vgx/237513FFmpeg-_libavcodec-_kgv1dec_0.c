@@ -1,0 +1,118 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4,
+int *VAR5, VAR6 *VAR7)
+{
+const VAR8 *VAR9 = VAR7->VAR10;
+const VAR8 *VAR11 = VAR9 + VAR7->VAR12;
+VAR13 * const VAR14 = VAR2->VAR15;
+int VAR16[8];
+VAR8 *VAR17, *VAR18;
+int VAR19 = 0, VAR20;
+int VAR21, VAR22, VAR23, VAR24;
+
+if (VAR7->VAR12 < 2)
+return VAR25;
+
+VAR21 = (VAR9[0] + 1) * 8;
+VAR22 = (VAR9[1] + 1) * 8;
+VAR9 += 2;
+
+if (VAR7->VAR12 < 2 + VAR21*VAR22 / 513)
+return VAR25;
+
+if (VAR21 != VAR2->VAR26 || VAR22 != VAR2->VAR27) {
+FUN2(&VAR14->VAR28);
+FUN2(&VAR14->VAR29);
+if ((VAR24 = FUN3(VAR2, VAR21, VAR22)) < 0)
+return VAR24;
+}
+
+if (!VAR14->VAR28) {
+VAR14->VAR28      = FUN4(VAR2->VAR26 * VAR2->VAR27 * 2);
+VAR14->VAR29 = FUN4(VAR2->VAR26 * VAR2->VAR27 * 2);
+if (!VAR14->VAR28 || !VAR14->VAR29) {
+FUN5(VAR2);
+return FUN6(VAR30);
+}
+}
+
+VAR20 = VAR21 * VAR22;
+
+if ((VAR24 = FUN7(VAR2, VAR4, 0)) < 0)
+return VAR24;
+VAR17  = (VAR8*)VAR14->VAR28;
+VAR18 = (VAR8*)VAR14->VAR29;
+
+for (VAR23 = 0; VAR23 < 8; VAR23++)
+VAR16[VAR23] = -1;
+
+while (VAR19 < VAR20 && VAR11 - 2 >= VAR9) {
+int VAR31 = FUN8(VAR9);
+VAR9 += 2;
+
+if (!(VAR31 & 0x8000)) {
+FUN9(&VAR17[2 * VAR19], VAR31); 
+VAR19++;
+} else {
+int VAR32;
+
+if ((VAR31 & 0x6000) == 0x6000) {
+
+int VAR33 = (VAR31 >> 10) & 7;
+int VAR34;
+
+VAR32 = (VAR31 & 0x3FF) + 3;
+
+if (VAR16[VAR33] < 0) {
+if (VAR11 - 3 < VAR9)
+break;
+VAR16[VAR33] = FUN10(VAR9);
+VAR9 += 3;
+}
+
+VAR34 = (VAR19 + VAR16[VAR33]) % VAR20;
+
+if (VAR20 - VAR34 < VAR32 || VAR20 - VAR19 < VAR32)
+break;
+
+if (!VAR18) {
+FUN11(VAR2, VAR35,
+"");
+break;
+}
+
+memcpy(VAR17 + 2 * VAR19, VAR18 + 2 * VAR34, 2 * VAR32);
+} else {
+
+int VAR36 = (VAR31 & 0x1FFF) + 1;
+
+if (!(VAR31 & 0x6000)) {
+VAR32 = 2;
+} else if ((VAR31 & 0x6000) == 0x2000) {
+VAR32 = 3;
+} else {
+if (VAR11 - 1 < VAR9)
+break;
+VAR32 = 4 + *VAR9++;
+}
+
+if (VAR19 < VAR36 || VAR20 - VAR19 < VAR32)
+break;
+
+FUN12(VAR17 + 2 * VAR19, 2 * VAR36, 2 * VAR32);
+}
+VAR19 += VAR32;
+}
+}
+
+if (VAR19 - VAR20)
+FUN11(VAR2, VAR37, "", VAR19 - VAR20);
+
+FUN13(VAR4->VAR10[0], VAR4->VAR38[0],
+(const VAR8*)VAR14->VAR28,  VAR2->VAR26 * 2,
+VAR2->VAR26 * 2, VAR2->VAR27);
+FUN14(VAR39 *, VAR14->VAR28, VAR14->VAR29);
+
+*VAR5 = 1;
+
+return VAR7->VAR12;
+}

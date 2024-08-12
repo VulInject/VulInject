@@ -1,0 +1,198 @@
+int FUN1(struct VAR1 *VAR2, u16 VAR3)
+{
+struct VAR4 *VAR5;
+struct VAR6 *VAR7;
+struct mpi3_sas_expander_page0 VAR8;
+struct mpi3_sas_expander_page1 VAR9;
+u16 VAR10, VAR11, VAR12;
+u64 VAR13, VAR14 = 0;
+int VAR15;
+unsigned long VAR16;
+u8 VAR17, VAR18;
+struct VAR19 *VAR20 = NULL;
+struct VAR21 *VAR22;
+u32 VAR23;
+int VAR24 = 0;
+
+if (!VAR3)
+return -1;
+
+if (VAR2->VAR25)
+return -1;
+
+if ((FUN2(VAR2, &VAR10, &VAR8,
+sizeof(VAR8), VAR26, VAR3))) {
+FUN3(VAR2, "",
+VAR27, VAR28, VAR29);
+return -1;
+}
+
+if (VAR10 != VAR30) {
+FUN3(VAR2, "",
+VAR27, VAR28, VAR29);
+return -1;
+}
+
+VAR11 = FUN4(VAR8.VAR31);
+if (FUN5(VAR2, VAR11, &VAR14)
+!= 0) {
+FUN3(VAR2, "",
+VAR27, VAR28, VAR29);
+return -1;
+}
+
+VAR17 = VAR8.VAR32;
+VAR22 = FUN6(VAR2, VAR17);
+if (!VAR22) {
+FUN3(VAR2, "",
+VAR27, VAR28, VAR29);
+return -1;
+}
+
+if (VAR14 != VAR2->VAR33.VAR13) {
+FUN7(&VAR2->VAR34, VAR16);
+VAR5 =
+FUN8(VAR2,
+VAR14, VAR22);
+FUN9(&VAR2->VAR34, VAR16);
+if (!VAR5) {
+VAR24 = FUN1(VAR2, VAR11);
+if (VAR24 != 0)
+return VAR24;
+} else {
+
+for (VAR15 = 0 ; VAR15 < VAR5->VAR35 ; VAR15++) {
+VAR23 =
+(VAR15 << VAR36) |
+VAR11;
+if (FUN10(VAR2,
+&VAR10, &VAR9,
+sizeof(VAR9),
+VAR37,
+VAR23)) {
+FUN3(VAR2, "",
+VAR27, VAR28, VAR29);
+VAR24 = -1;
+return VAR24;
+}
+if (VAR10 != VAR30) {
+FUN3(VAR2, "",
+VAR27, VAR28, VAR29);
+VAR24 = -1;
+return VAR24;
+}
+VAR12 = FUN4(
+VAR9.VAR38);
+if (VAR12 != VAR3)
+continue;
+VAR18 = (VAR9.VAR39 &
+VAR40) >>
+VAR41;
+FUN11(VAR2, VAR14,
+VAR3, VAR15, VAR18, VAR22);
+}
+}
+}
+
+FUN7(&VAR2->VAR34, VAR16);
+VAR13 = FUN12(VAR8.VAR13);
+VAR5 = FUN8(VAR2,
+VAR13, VAR22);
+FUN9(&VAR2->VAR34, VAR16);
+
+if (VAR5)
+return 0;
+
+VAR5 = FUN13(sizeof(struct VAR4),
+VAR42);
+if (!VAR5)
+return -1;
+
+VAR5->VAR3 = VAR3;
+VAR5->VAR35 = VAR8.VAR35;
+VAR5->VAR14 = VAR14;
+VAR5->VAR13 = VAR13;
+VAR5->VAR22 = VAR22;
+
+FUN14(VAR2,
+"",
+VAR3, VAR11, (unsigned long long)
+VAR5->VAR13, VAR5->VAR35);
+
+if (!VAR5->VAR35) {
+VAR24 = -1;
+goto VAR43;
+}
+VAR5->VAR44 = FUN15(VAR5->VAR35,
+sizeof(struct VAR45), VAR42);
+if (!VAR5->VAR44) {
+VAR24 = -1;
+goto VAR43;
+}
+
+FUN16(&VAR5->VAR46);
+VAR20 = FUN17(VAR2, VAR3, VAR14,
+VAR5->VAR22);
+if (!VAR20) {
+FUN3(VAR2, "",
+VAR27, VAR28, VAR29);
+VAR24 = -1;
+goto VAR43;
+}
+VAR5->VAR47 = &VAR20->VAR48->VAR49;
+VAR5->VAR48 = VAR20->VAR48;
+
+for (VAR15 = 0 ; VAR15 < VAR5->VAR35 ; VAR15++) {
+VAR23 = (VAR15 << VAR36) |
+VAR3;
+if (FUN10(VAR2, &VAR10,
+&VAR9, sizeof(VAR9),
+VAR37,
+VAR23)) {
+FUN3(VAR2, "",
+VAR27, VAR28, VAR29);
+VAR24 = -1;
+goto VAR43;
+}
+if (VAR10 != VAR30) {
+FUN3(VAR2, "",
+VAR27, VAR28, VAR29);
+VAR24 = -1;
+goto VAR43;
+}
+
+VAR5->VAR44[VAR15].VAR3 = VAR3;
+VAR5->VAR44[VAR15].VAR50 = VAR15;
+VAR5->VAR44[VAR15].VAR22 = VAR22;
+
+if ((FUN18(VAR2, &VAR5->VAR44[VAR15],
+VAR9, VAR5->VAR47))) {
+FUN3(VAR2, "",
+VAR27, VAR28, VAR29);
+VAR24 = -1;
+goto VAR43;
+}
+}
+
+if (VAR5->VAR51) {
+VAR7 =
+FUN19(VAR2,
+VAR5->VAR51);
+if (VAR7)
+VAR5->VAR52 = FUN12(
+VAR7->VAR53.VAR52);
+}
+
+FUN20(VAR2, VAR5);
+return 0;
+
+VAR43:
+
+if (VAR20)
+FUN21(VAR2,
+VAR5->VAR13,
+VAR14, VAR5->VAR22);
+FUN22(VAR5->VAR44);
+FUN22(VAR5);
+return VAR24;
+}

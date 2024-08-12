@@ -1,0 +1,1 @@
+int FUN1 ( void * * VAR1 , int VAR2 ) { str VAR3 ; unsigned int VAR4 ; VAR3 . VAR3 = * VAR1 ; VAR3 . VAR5 = strlen ( VAR3 . VAR3 , NULL ) ; if ( FUN2 ( FUN3 ( & VAR3 , & VAR4 ) == 0 ) ) { * VAR1 = ( void * ) ( long ) VAR4 ; } else { return VAR6 ; } return 0 ; }

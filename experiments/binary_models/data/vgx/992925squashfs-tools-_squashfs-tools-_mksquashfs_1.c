@@ -1,0 +1,1 @@
+int FUN1 ( char * VAR1 , char * VAR2 [ ] ) { int VAR3 ; if ( * VAR1 != '' ) { return VAR4 ; } for ( VAR3 = 0 ; VAR2 [ VAR3 ] != NULL ; VAR3 ++ ) { if ( strcmp ( VAR1 + 1 , VAR2 [ VAR3 ] ) == 0 ) { break ; } } return FUN2 ( VAR5 , VAR1 ) ; }

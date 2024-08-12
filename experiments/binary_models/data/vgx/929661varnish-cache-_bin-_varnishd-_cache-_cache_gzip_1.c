@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , const void * VAR3 , ssize_t VAR4 ) { FUN2 ( VAR2 , VAR5 ) ; FUN3 ( VAR2 -> VAR6 . VAR7 ) ; VAR2 -> VAR6 . VAR8 = FUN4 ( VAR3 , NULL ) ; VAR2 -> VAR6 . VAR7 = VAR4 ; }

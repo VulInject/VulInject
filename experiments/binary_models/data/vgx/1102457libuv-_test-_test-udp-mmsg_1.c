@@ -1,0 +1,1 @@
+static int VAR1 ; static int VAR2 ; static void FUN1 ( VAR3 * VAR4 , size_t VAR5 , VAR6 * VAR7 ) { size_t VAR8 ; FUN2 ( VAR4 ) ; VAR8 = VAR9 ; if ( FUN3 ( ( VAR10 * ) VAR4 ) ) { VAR8 *= VAR11 ; } VAR7 -> VAR12 = malloc ( VAR8 ) ; FUN4 ( VAR7 -> VAR12 , NULL ) ; VAR7 -> VAR13 = VAR8 ; VAR2 ++ ; }

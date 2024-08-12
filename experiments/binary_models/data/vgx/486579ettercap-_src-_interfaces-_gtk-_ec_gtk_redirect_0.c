@@ -1,0 +1,16 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+GtkTreeIter VAR3;
+
+FUN2("", VAR2->VAR4);
+
+
+FUN3(VAR5, &VAR3);
+FUN4(VAR5, &VAR3, 
+0, FUN5(VAR2->VAR4),
+1, FUN6(VAR2->VAR4),
+2, VAR2->VAR6,
+3, VAR2->VAR7,
+-1);
+
+}

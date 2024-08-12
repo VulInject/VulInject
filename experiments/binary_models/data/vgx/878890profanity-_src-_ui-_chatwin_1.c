@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 , char * VAR3 , char * VAR4 ) { assert ( VAR2 != NULL ) ; PContact VAR5 = FUN2 ( VAR2 -> VAR6 ) ; char * VAR7 = FUN3 ( VAR5 , VAR3 ) ; FUN4 ( ( VAR8 * ) VAR2 , VAR7 , "" , VAR4 , NULL , "" , "" ) ; }

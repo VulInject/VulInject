@@ -1,0 +1,22 @@
+static VAR1 FUN1(int VAR2, void *VAR3)
+{
+struct VAR4 *VAR5 = VAR3;
+int VAR6;
+
+FUN2(&VAR5->mutex);
+
+VAR5->read(VAR5, VAR7, &VAR5->VAR8, 3);
+
+for (VAR6 = 0; VAR6 < VAR5->VAR9->VAR10; VAR6++)
+FUN3(VAR5, VAR6);
+for (VAR6 = 0; VAR6 < VAR5->VAR9->VAR11; VAR6++)
+FUN4(VAR5, VAR6);
+for (VAR6 = 0; VAR6 < VAR5->VAR9->VAR12; VAR6++)
+FUN5(VAR5, VAR6);
+for (VAR6 = 0; VAR6 < VAR5->VAR9->VAR13; VAR6++)
+FUN6(VAR5, VAR6);
+
+FUN7(&VAR5->mutex);
+
+return VAR14;
+}

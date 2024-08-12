@@ -1,0 +1,61 @@
+int
+FUN1(VAR1 *VAR2, u_int VAR3)
+{
+VAR4 *VAR5;
+int VAR6, VAR7;
+char *VAR8, VAR9[1024];
+
+
+VAR5 = VAR2->VAR5;
+if (VAR5 == NULL || !FUN2(VAR5, VAR10))
+return (0);
+
+
+if (FUN2(VAR5, VAR11)) {
+
+FUN3(VAR5, VAR12);
+if (VAR5->VAR13->FUN4(VAR5->VAR13, VAR14)) {
+FUN3(VAR5, VAR10 | VAR15);
+FUN5(VAR2, VAR16,
+VAR5->VAR17, "");
+return (1);
+}
+
+
+if (FUN6(VAR18))
+FUN7(VAR5, VAR15);
+
+
+if (FUN6(VAR19))
+FUN8(VAR2, VAR5->VAR20);
+}
+
+
+VAR7 = 0;
+if (FUN6(VAR21)) {
+if (FUN9(VAR2, VAR22, 0))
+goto VAR23;
+VAR8 = FUN10(VAR2, VAR22);
+(void)snprintf(VAR9, sizeof(VAR9), "", VAR8);
+if ((VAR6 = FUN11(VAR2, VAR9, VAR8, VAR24 | VAR25)) == -1)
+goto VAR23;
+VAR2->VAR26->FUN12(VAR2,
+"", VAR27);
+if (FUN13(VAR2, VAR6, VAR5->VAR17) ||
+close(VAR6) || FUN14(VAR2, 1, VAR9)) {
+(void)unlink(VAR9);
+(void)close(VAR6);
+VAR7 = 1;
+}
+VAR2->VAR26->FUN12(VAR2, NULL, VAR28);
+}
+if (0) {
+VAR23:		VAR7 = 1;
+}
+
+
+if (FUN6(VAR29))
+FUN7(VAR2, VAR30);
+
+return (VAR7);
+}

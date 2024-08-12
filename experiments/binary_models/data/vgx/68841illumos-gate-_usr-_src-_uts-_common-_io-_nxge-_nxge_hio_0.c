@@ -1,0 +1,121 @@
+int
+FUN1(
+VAR1 *VAR2,
+VAR3 *VAR4,	
+vpc_type_t VAR5,	
+int VAR6)		
+{
+VAR7 *VAR8 = (VAR7 *)VAR2->VAR9->VAR10;
+VAR11 *VAR12;
+VAR13 *VAR14 = NULL;
+nxge_status_t VAR15 = VAR16;
+int VAR17 = 0;
+
+FUN2((VAR2, VAR18, ""));
+
+if (VAR4 == 0)
+return (0);
+
+switch (VAR5) {
+case VAR19:
+VAR14 = &VAR2->VAR20;
+if (VAR6 > VAR21) {
+FUN3((VAR2, VAR22,
+"", VAR6));
+return (VAR23);
+}
+break;
+case VAR24:
+VAR14 = &VAR2->VAR25;
+if (VAR6 > VAR26) {
+FUN3((VAR2, VAR22,
+"", VAR6));
+return (VAR23);
+}
+break;
+
+default:
+FUN3((VAR2, VAR22,
+"", VAR6));
+}
+
+FUN2((VAR2, VAR18,
+"",
+VAR5 == VAR19 ? '' : '',
+VAR2->VAR27.VAR28, VAR4->VAR29, VAR4->VAR30, VAR6));
+
+FUN4(&VAR2->VAR31);
+if (VAR4->VAR32 != VAR33) {
+
+FUN5(&VAR2->VAR31);
+return (VAR23);
+}
+FUN5(&VAR2->VAR31);
+
+if (!(VAR12 = FUN6(VAR2, VAR5, VAR6))) {
+FUN3((VAR2, VAR22,
+"", VAR6));
+return (VAR23);
+}
+
+FUN4(&VAR8->VAR34);
+
+if (VAR12->VAR4) {
+FUN5(&VAR8->VAR34);
+
+FUN3((VAR2, VAR22,
+"", VAR6));
+return (VAR23);
+}
+
+VAR12->VAR35 = 0;
+VAR12->VAR36 = VAR6;
+VAR12->VAR6 = (VAR37)VAR6;
+
+VAR12->VAR5 = VAR5;
+if (VAR5 == VAR24) {
+VAR12->VAR38 = VAR39;
+VAR12->VAR40 = VAR41;
+} else {
+VAR12->VAR38 = VAR42;
+VAR12->VAR40 = VAR43;
+}
+
+VAR12->VAR4 = VAR4;
+
+if (FUN7(VAR2)) {
+VAR17 = FUN8(VAR2, VAR12);
+if (VAR17 != 0) {
+FUN5(&VAR8->VAR34);
+return (VAR23);
+}
+}
+
+FUN9(VAR14->VAR44.VAR45, VAR6);
+VAR14->VAR44.VAR30++;
+
+FUN5(&VAR8->VAR34);
+
+if ((VAR15 = (*VAR12->VAR38)(VAR2, VAR6)) != VAR16) {
+FUN3((VAR2, VAR22,
+"", VAR6));
+FUN4(&VAR8->VAR34);
+(void) memset(VAR12, 0, sizeof (*VAR12));
+FUN10(VAR14->VAR44.VAR45, VAR6);
+VAR14->VAR44.VAR30--;
+FUN5(&VAR8->VAR34);
+return (VAR23);
+}
+
+FUN11(VAR2, VAR4, VAR12);
+
+if (VAR5 == VAR19) {
+FUN4(&VAR8->VAR34);
+VAR2->VAR46[VAR6] = VAR47;
+FUN5(&VAR8->VAR34);
+}
+
+FUN2((VAR2, VAR18, ""));
+
+return ((int)VAR15);
+}

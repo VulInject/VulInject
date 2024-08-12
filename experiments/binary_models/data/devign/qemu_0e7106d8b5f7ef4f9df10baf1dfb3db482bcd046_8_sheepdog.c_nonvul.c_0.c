@@ -1,0 +1,1 @@
+static int FUN1(int VAR1, char *VAR2, uint64_t VAR3, int VAR4, unsigned int VAR5, uint64_t VAR6, bool VAR7, uint32_t VAR8) { return FUN2(VAR1, VAR2, VAR3, VAR4, VAR5, VAR6, true, VAR7, VAR8); }

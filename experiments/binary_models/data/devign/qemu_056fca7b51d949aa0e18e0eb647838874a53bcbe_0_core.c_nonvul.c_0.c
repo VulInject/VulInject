@@ -1,0 +1,1 @@
+int FUN1(VAR1 *VAR2, uint8_t VAR3) { return FUN2(VAR2, &VAR3, true); }

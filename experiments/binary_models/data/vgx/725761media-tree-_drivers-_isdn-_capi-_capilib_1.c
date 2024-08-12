@@ -1,0 +1,1 @@
+static inline int FUN1 ( struct VAR1 * VAR2 , u16 VAR3 ) { struct VAR4 * VAR5 ; if ( ( VAR5 = VAR2 -> VAR6 ) == NULL ) { return 0 ; } VAR2 -> VAR6 = VAR5 -> VAR7 ; VAR5 -> VAR3 = VAR3 ; if ( VAR2 -> VAR8 ) { VAR2 -> VAR8 -> VAR7 = VAR5 ; } VAR2 -> VAR8 = VAR5 ; if ( ! VAR2 -> VAR9 ) { VAR2 -> VAR9 = VAR5 ; } VAR2 -> VAR10 ++ ; return 1 ; }

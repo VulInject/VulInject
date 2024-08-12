@@ -1,0 +1,18 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4, MOVAtom VAR5)
+{
+    VAR6 *VAR7 = VAR2->VAR8->VAR9[VAR2->VAR8->VAR10 - 1];
+    uint64_t VAR11 = (VAR12)VAR7->VAR13->VAR14 + VAR5.VAR11 + 8 + VAR15;
+    VAR16 *VAR17;
+    if (VAR11 > VAR18 || (VAR12)VAR5.VAR11 > VAR18)
+        return -1;
+    VAR17 = FUN2(VAR7->VAR13->VAR19, VAR11);
+    if (!VAR17)
+        return -1;
+    VAR7->VAR13->VAR19 = VAR17;
+    VAR17 += VAR7->VAR13->VAR14;
+    VAR7->VAR13->VAR14 = VAR11 - VAR15;
+    FUN3(VAR17, VAR5.VAR11 + 8);
+    FUN4(VAR17 + 4, VAR5.VAR20);
+    FUN5(VAR4, VAR17 + 8, VAR5.VAR11);
+    return 0;
+}

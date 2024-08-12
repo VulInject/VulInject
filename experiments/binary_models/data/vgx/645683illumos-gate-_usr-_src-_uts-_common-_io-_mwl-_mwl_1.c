@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , MWL_HAL_ANTENNA VAR3 , int VAR4 ) { VAR5 * VAR6 ; int VAR7 ; if ( ! ( VAR3 == VAR8 || VAR3 == VAR9 ) ) { return ( VAR10 ) ; } FUN2 ( VAR6 , VAR5 , VAR11 ) ; VAR6 -> VAR12 = FUN3 ( VAR3 ) ; if ( VAR4 == 0 ) { VAR4 = 3 ; } VAR6 -> VAR13 = FUN3 ( VAR4 , NULL ) ; VAR7 = FUN4 ( VAR2 , VAR11 ) ; return ( VAR7 ) ; }

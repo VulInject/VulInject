@@ -1,0 +1,1 @@
+static void * FUN1 ( unsigned VAR1 ) { VAR2 * VAR3 = & VAR4 ; VAR5 * VAR6 = FUN2 ( sizeof ( VAR5 ) ) ; if ( ! VAR6 ) { return VAR7 ; } if ( VAR1 & VAR8 ) { VAR3 = & VAR9 ; } if ( pthread_mutex_init ( VAR6 , VAR3 ) ) { FUN3 ( VAR6 ) ; return NULL ; } return VAR6 ; }

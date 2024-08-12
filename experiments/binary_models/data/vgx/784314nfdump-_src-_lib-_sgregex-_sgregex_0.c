@@ -1,0 +1,22 @@
+static void FUN1(VAR1* VAR2, uint32_t VAR3, uint32_t VAR4, uint32_t VAR5, uint32_t VAR6, uint32_t VAR7) {
+size_t VAR8;
+rxInstr VAR9;
+{
+VAR9.VAR4 = VAR4 & 0xf;
+VAR9.VAR5 = VAR5 & 0x0fffffff;
+VAR9.VAR6 = VAR6;
+VAR9.VAR7 = VAR7;
+}
+
+FUN2(VAR2);
+assert(VAR3 < VAR2->VAR10); 
+
+memmove(VAR2->VAR11 + VAR3 + 1, VAR2->VAR11 + VAR3, sizeof(*VAR2->VAR11) * (VAR2->VAR10 - VAR3));
+VAR2->VAR10++;
+
+for (VAR8 = 0; VAR8 < VAR2->VAR10; ++VAR8) {
+
+if (VAR2->VAR11[VAR8].VAR5 > VAR3 && VAR2->VAR11[VAR8].VAR5 != VAR12 && FUN3(VAR2->VAR11[VAR8].VAR4)) VAR2->VAR11[VAR8].VAR5++;
+}
+VAR2->VAR11[VAR3] = VAR9; 
+}

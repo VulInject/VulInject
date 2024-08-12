@@ -1,0 +1,112 @@
+void
+FUN1(VAR1 *VAR2, int *VAR3)
+{
+VAR4	*VAR5 = VAR2->VAR6;
+int		VAR7;		
+VAR8		*VAR9;		
+int		VAR10 = 0;	
+int		VAR11;
+int		VAR12;
+int		VAR13 = 0;
+
+FUN2(!FUN3(&VAR5->VAR14));
+FUN2(FUN3(&VAR2->VAR15));
+FUN2(VAR2->VAR16 != VAR17);
+
+FUN4(VAR18, VAR2->VAR19, "");
+
+if (VAR3) {
+*VAR3 = 0;
+}
+if ((VAR2->VAR20 & VAR21) ||
+(VAR2->VAR22 == NULL)) {
+
+return;
+}
+
+VAR7 = FUN5(FUN6(VAR2->VAR22), VAR2->VAR23);
+FUN4(VAR18, VAR2->VAR19, ""
+"", VAR7, (int)FUN6(VAR2->VAR22));
+
+FUN7(&VAR2->VAR15);
+
+
+switch (VAR5->VAR24.VAR25) {
+case VAR26:
+
+if ((VAR9 = FUN8(VAR7, VAR27)) == NULL) {
+FUN9(&VAR2->VAR15);
+
+return;
+}
+FUN9(&VAR2->VAR15);
+
+
+VAR10 = FUN10(VAR2, VAR9, VAR7);
+if (VAR10 <= 0) {
+FUN11(VAR18, VAR2->VAR19,
+""
+"");
+}
+
+break;
+
+case VAR28:
+case VAR29:
+VAR13 = VAR7 / 64 + 1;
+if ((VAR9 = FUN8(VAR7 + VAR13, VAR27)) == NULL) {
+FUN9(&VAR2->VAR15);
+
+return;
+}
+FUN9(&VAR2->VAR15);
+
+while (VAR10 < VAR7) {
+
+*(VAR9->VAR30++) = 0;
+
+VAR11 = FUN10(VAR2, VAR9, 63);
+if (VAR11 <= 0) {
+FUN11(VAR18, VAR2->VAR19,
+""
+"");
+
+break;
+}
+VAR10 += VAR11;
+}
+
+break;
+default:
+
+FUN9(&VAR2->VAR15);
+FUN12(VAR18, VAR5->VAR31, ""
+"");
+
+return;
+}
+
+FUN7(&VAR2->VAR15);
+
+
+
+if ((VAR2->VAR32 == 0) &&
+(VAR5->VAR24.VAR25 == VAR29)) {
+VAR12 = FUN13(&VAR2->VAR33, &VAR9, VAR2);
+} else {
+VAR12 = FUN14(&VAR2->VAR33, &VAR9, VAR2);
+}
+FUN9(&VAR2->VAR15);
+
+
+if (VAR12 != VAR34) {
+FUN2(VAR9);
+FUN15(&VAR2->VAR22, VAR9, VAR2);
+} else if (VAR3) {
+*VAR3 = VAR10;
+}
+
+FUN4(VAR18, VAR2->VAR19, ""
+"", VAR2->VAR32, VAR10, VAR12);
+
+}

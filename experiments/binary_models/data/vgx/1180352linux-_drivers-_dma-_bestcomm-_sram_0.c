@@ -1,0 +1,14 @@
+}
+FUN1(VAR1);
+
+void FUN2(void)
+{
+
+if (VAR2) {
+FUN3(VAR2->VAR3);
+FUN4((void VAR4 *)VAR2->VAR5);
+FUN5(VAR2->VAR6, VAR2->VAR7);
+FUN6(VAR2);
+VAR2 = NULL;
+}
+}

@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { u8 VAR3 , VAR4 , VAR5 = 0 ; FUN2 ( "" , VAR6 ) ; switch ( VAR2 -> VAR7 ) { case VAR8 : VAR4 = 0x40 ; break ; case VAR9 : VAR4 = 0x10 ; break ; default : VAR4 = 0 ; break ; } VAR3 = 0x80 ; FUN3 ( VAR2 , 0x22 , & VAR3 , 1 ) ; while ( VAR5 < 20 ) { FUN4 ( VAR2 , 0x31 , & VAR3 , 1 ) ; FUN5 ( 10 ) ; VAR5 ++ ; } FUN6 ( "" ) ; return ; }

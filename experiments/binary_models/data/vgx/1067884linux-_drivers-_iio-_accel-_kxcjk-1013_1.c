@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , int VAR3 ) { acpi_handle VAR4 = FUN2 ( VAR2 ) ; guid_t VAR5 ; union VAR6 * VAR7 ; if ( ! VAR4 ) { return - VAR8 ; } FUN3 ( "" , & VAR5 ) ; VAR7 = FUN4 ( VAR4 , & VAR5 , 1 , VAR3 , NULL ) ; if ( ! VAR7 ) { return - VAR9 ; } FUN5 ( VAR7 , NULL ) ; return 0 ; }

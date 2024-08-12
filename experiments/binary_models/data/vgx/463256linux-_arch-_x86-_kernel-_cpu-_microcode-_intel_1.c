@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( void * VAR2 , unsigned int VAR3 ) { struct VAR1 * VAR4 ; VAR4 = FUN2 ( sizeof ( VAR1 ) , VAR5 ) ; if ( ! VAR4 ) { return VAR6 ; } VAR4 -> VAR2 = FUN3 ( VAR2 , VAR3 , VAR5 ) ; if ( ! VAR4 -> VAR2 ) { FUN4 ( VAR4 ) ; return NULL ; } return VAR4 ; }

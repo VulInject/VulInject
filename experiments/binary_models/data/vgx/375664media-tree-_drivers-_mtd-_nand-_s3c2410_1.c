@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , int VAR3 , struct VAR4 * VAR5 ) { VAR5 -> VAR6 = 8 ; VAR5 -> VAR7 = 8 ; return 0 ; } static const struct mtd_ooblayout_ops VAR8 = { . VAR9 = VAR10 . free = VAR11 } ; s3c2410_nand_info VAR12 { struct nand_chip VAR13 ; struct VAR14 * VAR15 ; struct VAR16 * VAR17 ; int VAR18 ; }

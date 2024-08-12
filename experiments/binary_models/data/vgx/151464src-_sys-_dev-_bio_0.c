@@ -1,0 +1,19 @@
+void
+FUN1(struct VAR1 *VAR2, int VAR3, int VAR4, const char *VAR5,
+VAR6 *VAR7)
+{
+int VAR8;
+
+if (VAR2->VAR9 >= VAR10) {
+FUN2("", VAR2->VAR11);
+return;
+}
+
+VAR8 = VAR2->VAR9++;
+
+VAR2->VAR12[VAR8].VAR13 = VAR4;
+vsnprintf(VAR2->VAR12[VAR8].VAR14, VAR15, VAR5, *VAR7);
+
+if (VAR3)
+FUN2("", VAR2->VAR11, VAR2->VAR12[VAR8].VAR14);
+}

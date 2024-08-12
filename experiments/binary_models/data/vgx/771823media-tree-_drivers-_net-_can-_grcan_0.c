@@ -1,0 +1,42 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+u32 VAR5, u32 VAR6,
+VAR7 *VAR8)
+{
+struct VAR9 *VAR10 = FUN2(VAR2);
+struct grcan_registers VAR11 *VAR12 = VAR10->VAR12;
+struct VAR13 *VAR14 = &VAR10->VAR14;
+int VAR15;
+unsigned long VAR16;
+
+
+for (VAR15 = 0; VAR15 < VAR17; VAR15++) {
+FUN3(1);
+if (!FUN4(&VAR12->VAR18, VAR19) ||
+FUN5(&VAR12->VAR20) == VAR5) {
+return 0;
+}
+}
+
+
+FUN6(&VAR10->VAR21, VAR16);
+if (!VAR10->VAR22 && !VAR10->VAR23) {
+
+if (FUN7(VAR14->VAR24.VAR25, VAR5, VAR10->VAR26))
+FUN8(VAR2);
+
+if (!FUN9(&VAR10->VAR27))
+FUN10(&VAR10->VAR27,
+VAR10->VAR28.VAR29.VAR30);
+}
+FUN11(&VAR10->VAR21, VAR16);
+
+if (VAR6) {
+
+FUN12(VAR4);
+*VAR8 = VAR31;
+} else {
+
+*VAR8 = VAR32;
+}
+return -VAR33;
+}

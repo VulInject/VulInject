@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * * VAR4 ; if ( ! VAR2 -> VAR5 . VAR6 ) { return ; } for ( VAR4 = VAR7 ; * VAR4 ; ++ VAR4 ) { const struct VAR3 * VAR8 = * VAR4 ; if ( FUN2 ( VAR2 , VAR8 ) ) { FUN3 ( VAR2 , VAR8 -> VAR9 ) ; FUN4 ( VAR2 , VAR8 , 0 ) ; return ; } } FUN4 ( VAR2 , 0 ) ; }

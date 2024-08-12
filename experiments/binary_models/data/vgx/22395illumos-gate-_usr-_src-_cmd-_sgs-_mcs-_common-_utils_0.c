@@ -1,0 +1,129 @@
+static void FUN1(VAR1 *);
+static char *FUN2(char *, VAR2 *);
+static void FUN3(char *, VAR1 *);
+static void FUN4(char *, VAR1 *);
+static void FUN5(VAR1 *);
+static int FUN6(char *);
+
+
+
+
+int
+FUN7(VAR1 *VAR3, char *VAR4, VAR5 *VAR6)
+{
+int VAR7;
+int VAR8 = 0;
+GElf_Shdr VAR9;
+
+(void) FUN8(VAR3->VAR10, &VAR9);
+for (VAR7 = 0; VAR7 < VAR11; VAR7++) {
+VAR12[VAR7].VAR13++;
+switch (VAR12[VAR7].VAR14) {
+case VAR15:
+if (FUN9(VAR3->VAR16) == VAR17)
+break;
+FUN5(VAR3);
+FUN10(VAR3->VAR16, VAR15);
+FUN11(VAR3->VAR16);
+break;
+case VAR18:
+if (FUN9(VAR3->VAR16) == VAR17)
+break;
+if (VAR9.VAR19 == VAR20) {
+FUN12(VAR21, VAR22,
+NULL, VAR23, VAR4, VAR24);
+break;
+}
+FUN4(VAR4, VAR3);
+break;
+case VAR17:
+
+if (FUN9(VAR3->VAR16) == VAR17)
+break;
+if (FUN13(VAR3->VAR16) == VAR25) {
+
+if (FUN14(VAR6, VAR26)) {
+VAR8 = 0;
+FUN15(VAR3->VAR16);
+} else {
+char *VAR27 = VAR3->VAR27;
+
+VAR8++;
+if (VAR27 == NULL)
+VAR27 = FUN16("");
+FUN12(VAR28,
+VAR22, NULL,
+VAR23, VAR4, VAR27);
+}
+break;
+} else if (VAR3->VAR29 == VAR25) {
+
+if (FUN14(VAR6, VAR26)) {
+VAR8 = 0;
+FUN15(VAR3->VAR16);
+} else {
+VAR8++;
+FUN12(VAR30,
+VAR22, NULL,
+VAR23, VAR4, VAR24,
+VAR3->VAR31);
+}
+break;
+} else if (FUN13(VAR3->VAR16) == VAR32) {
+
+VAR3->VAR33 = (VAR34)VAR35;
+(VAR6->VAR36)++;
+} else {
+VAR3->VAR33 = (VAR34)VAR37;
+(VAR6->VAR38)++;
+}
+FUN10(VAR3->VAR16, VAR17);
+FUN11(VAR3->VAR16);
+break;
+case VAR39:
+if (VAR9.VAR19 == VAR20) {
+VAR8++;
+FUN12(VAR40, VAR22,
+NULL, VAR23, VAR4, VAR24);
+break;
+} else if (FUN13(VAR3->VAR16) == VAR25) {
+VAR8++;
+FUN12(VAR41, VAR22,
+NULL, VAR23, VAR4, VAR24);
+break;
+}
+FUN3(VAR12[VAR7].VAR42, VAR3);
+(VAR6->VAR43)++;
+VAR3->VAR33 = VAR3->VAR44;
+FUN10(VAR3->VAR16, VAR39);
+FUN11(VAR3->VAR16);
+if (FUN13(VAR3->VAR16) == VAR32)
+VAR3->VAR33 = (VAR34)VAR45;
+break;
+case VAR46:
+
+if (FUN9(VAR3->VAR16) == VAR17)
+break;
+if (VAR9.VAR19 == VAR20) {
+VAR8++;
+FUN12(VAR47, VAR22,
+NULL, VAR23, VAR4, VAR24);
+break;
+} else if (FUN13(VAR3->VAR16) == VAR25) {
+VAR8++;
+FUN12(VAR48, VAR22,
+NULL, VAR23, VAR4, VAR24);
+break;
+}
+
+FUN1(VAR3);
+(VAR6->VAR49)++;
+FUN10(VAR3->VAR16, VAR46);
+FUN11(VAR3->VAR16);
+if (FUN13(VAR3->VAR16) == VAR32)
+VAR3->VAR33 = (VAR34)VAR50;
+break;
+}
+}
+return (VAR8);
+}

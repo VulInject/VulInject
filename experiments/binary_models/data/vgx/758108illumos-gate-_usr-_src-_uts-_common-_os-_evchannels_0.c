@@ -1,0 +1,27 @@
+static int
+FUN1(char *VAR1, size_t VAR2)
+{
+struct VAR3 *VAR4;
+int		VAR5 = 0;
+char		*VAR6 = VAR1;
+int		VAR7 = VAR2;
+VAR8	*VAR9;
+
+VAR4 = FUN2(VAR10, VAR11->VAR12);
+FUN3(VAR4 != NULL);
+
+FUN4(&VAR4->VAR13);
+for (VAR9 = FUN5(&VAR4->VAR14, NULL); VAR9 != NULL;
+VAR9 = FUN5(&VAR4->VAR14, VAR9)) {
+VAR5 += VAR9->VAR15;
+if (VAR5 >= VAR7) {
+FUN6(&VAR4->VAR13);
+return (-1);
+}
+bcopy(VAR9->VAR16, VAR6, VAR9->VAR15);
+VAR6 += VAR9->VAR15;
+}
+FUN6(&VAR4->VAR13);
+VAR6[0] = 0;
+return (VAR5 + 1);
+}

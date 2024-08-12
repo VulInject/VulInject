@@ -1,0 +1,1 @@
+void FUN1 ( const char * VAR1 ) { if ( VAR2 > 0 && ! FUN2 ( "" ) ) { FUN3 ( VAR1 , NULL ) ; VAR2 -- ; } if ( VAR2 == 0 && ! FUN2 ( "" ) ) { FUN3 ( "" ) ; FUN3 ( "" ) ; VAR2 -- ; } }

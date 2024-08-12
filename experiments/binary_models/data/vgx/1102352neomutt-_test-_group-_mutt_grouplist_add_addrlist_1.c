@@ -1,0 +1,1 @@
+void FUN1 ( void ) { { struct AddressList VAR1 = FUN2 ( VAR1 ) ; FUN3 ( NULL , & VAR1 ) ; FUN4 ( 1 , "" ) ; } { struct GroupList VAR2 = { 0 } ; FUN3 ( & VAR2 ) ; FUN4 ( 1 , "" ) ; } }

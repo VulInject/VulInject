@@ -1,0 +1,35 @@
+void FUN1(void)
+{
+efi_status_t VAR1;
+VAR2 *VAR3;
+loff_t VAR4;
+struct VAR5 *VAR6;
+
+VAR3 = FUN2(NULL, 0,
+VAR7, &VAR1);
+if (VAR3)
+VAR1 = FUN3(VAR3, 0);
+else
+VAR1 = VAR8;
+
+if (VAR1 != VAR9)
+FUN4("");
+free(VAR3);
+
+
+VAR1 = FUN5(&VAR6, &VAR4, VAR10);
+if (VAR1 != VAR9)
+FUN4("");
+else
+FUN6(VAR6);
+free(VAR6);
+
+
+VAR11.VAR12 =
+VAR13;
+VAR11.VAR14 = VAR15;
+VAR11.VAR16 =
+VAR17;
+VAR11.VAR18 = VAR19;
+FUN7(&VAR11.VAR20);
+}

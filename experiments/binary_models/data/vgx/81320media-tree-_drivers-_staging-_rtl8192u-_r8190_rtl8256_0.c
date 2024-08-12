@@ -1,0 +1,53 @@
+void FUN1(struct VAR1 *VAR2, HT_CHANNEL_WIDTH VAR3)
+{
+u8	VAR4;
+struct VAR5 *VAR6 = FUN2(VAR2);
+
+
+for (VAR4 = 0; VAR4 < VAR7; VAR4++) {
+if (!FUN3(VAR2, VAR4))
+continue;
+
+switch (VAR3) {
+case VAR8:
+if (VAR6->VAR9 == VAR10
+|| VAR6->VAR9
+== VAR11) { 
+FUN4(VAR2,
+(VAR12)VAR4,
+0x0b, VAR13, 0x100); 
+FUN4(VAR2,
+(VAR12)VAR4,
+0x2c, VAR13, 0x3d7);
+FUN4(VAR2,
+(VAR12)VAR4,
+0x0e, VAR13, 0x021);
+FUN4(VAR2,
+(VAR12)VAR4,
+0x14, VAR13, 0x5ab);
+} else {
+FUN5(VAR14, "");
+}
+break;
+case VAR15:
+if (VAR6->VAR9 == VAR10 || VAR6->VAR9 == VAR11) { 
+FUN4(VAR2, (VAR12)VAR4, 0x0b, VAR13, 0x300); 
+FUN4(VAR2, (VAR12)VAR4, 0x2c, VAR13, 0x3df);
+FUN4(VAR2, (VAR12)VAR4, 0x0e, VAR13, 0x0a1);
+
+if (VAR6->VAR16 == 3 || VAR6->VAR16 == 9)
+
+FUN4(VAR2, (VAR12)VAR4, 0x14, VAR13, 0x59b);
+else
+FUN4(VAR2, (VAR12)VAR4, 0x14, VAR13, 0x5ab);
+} else {
+FUN5(VAR14, "");
+}
+break;
+default:
+FUN5(VAR14, "", VAR3);
+break;
+
+}
+}
+}

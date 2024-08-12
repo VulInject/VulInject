@@ -1,0 +1,120 @@
+VAR1
+FUN1(time_t VAR2, const char *VAR3)
+{
+struct token	VAR4[256];
+struct gdstate	VAR5;
+struct VAR6	*VAR7;
+struct VAR8	*VAR9;
+struct tm	VAR10, *VAR11;
+struct tm	VAR12, *VAR13;
+time_t		VAR14;
+time_t		VAR15;
+long		VAR16;
+
+
+memset(VAR4, 0, sizeof(VAR4));
+
+memset(&VAR5, 0, sizeof(VAR5));
+VAR9 = &VAR5;
+
+
+VAR11 = FUN2(&VAR10, &VAR2) ? NULL : &VAR10;
+VAR11 = FUN3(&VAR2, &VAR10);
+memset(&VAR10, 0, sizeof(VAR10));
+VAR11 = FUN4(&VAR2);
+if (VAR11 == NULL)
+return -1;
+VAR10 = *VAR11;
+
+
+VAR13 = FUN5(&VAR12, &VAR2) ? NULL : &VAR12;
+VAR13 = FUN6(&VAR2, &VAR12);
+memset(&VAR12, 0, sizeof(VAR12));
+VAR13 = FUN7(&VAR2);
+if (VAR13 != NULL) {
+
+VAR12 = *VAR13;
+}
+if (VAR13 != NULL)
+VAR16 = FUN8 (&VAR12, &VAR10);
+else
+
+VAR16 = 0;
+if(VAR10.VAR17)
+VAR16 += VAR18;
+
+
+VAR7 = VAR4;
+while ((VAR7->VAR6 = FUN9(&VAR3, &VAR7->VAR19)) != 0) {
+++VAR7;
+if (VAR7 > VAR4 + 255)
+return -1;
+}
+VAR9->VAR20 = VAR4;
+
+
+while (VAR9->VAR20 < VAR7) {
+if (!FUN10(VAR9))
+return -1;
+}
+
+
+if (!VAR9->VAR21) {
+VAR9->VAR22 = VAR16;
+VAR9->VAR23 = VAR24;
+}
+
+
+if (VAR9->VAR21 && VAR13 != NULL) {
+VAR2 -= VAR9->VAR22;
+VAR13 = FUN5(&VAR12, &VAR2) ? NULL : &VAR12;
+VAR13 = FUN6(&VAR2, &VAR12);
+VAR13 = FUN7(&VAR2);
+if (VAR13 != NULL)
+VAR10 = *VAR13;
+VAR2 += VAR9->VAR22;
+}
+
+if (!VAR9->VAR25)
+VAR9->VAR26 = VAR10.VAR27 + 1900;
+if (!VAR9->VAR28)
+VAR9->VAR29 = VAR10.VAR30 + 1;
+if (!VAR9->VAR31)
+VAR9->VAR32 = VAR10.VAR33;
+
+
+
+if (VAR9->VAR34 > 1 || VAR9->VAR21 > 1 || VAR9->VAR35 > 1
+|| VAR9->VAR25 > 1 || VAR9->VAR28 > 1 || VAR9->VAR31 > 1)
+return -1;
+
+
+if (VAR9->VAR25 || VAR9->VAR28 || VAR9->VAR31
+|| VAR9->VAR34 || VAR9->VAR35) {
+VAR14 = FUN11(VAR9->VAR29, VAR9->VAR32, VAR9->VAR26,
+VAR9->VAR36, VAR9->VAR37, VAR9->VAR38,
+VAR9->VAR22, VAR9->VAR23);
+if (VAR14 < 0)
+return -1;
+} else {
+VAR14 = VAR2;
+if (!VAR9->VAR39)
+VAR14 -= VAR10.VAR40 * VAR18 + VAR10.VAR41 * VAR42
++ VAR10.VAR43;
+}
+
+
+VAR14 += VAR9->VAR44;
+VAR14 += FUN12(VAR14, VAR9->VAR22, VAR9->VAR45);
+
+
+if (VAR9->VAR35
+&& !(VAR9->VAR25 || VAR9->VAR28 || VAR9->VAR31)) {
+VAR15 = FUN13(VAR14, VAR9->VAR22,
+VAR9->VAR23, VAR9->VAR46, VAR9->VAR47);
+VAR14 += VAR15;
+}
+
+
+return VAR14 == -1 ? 0 : VAR14;
+}

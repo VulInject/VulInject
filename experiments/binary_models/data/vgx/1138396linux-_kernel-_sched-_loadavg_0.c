@@ -1,0 +1,26 @@
+void FUN1(void)
+{
+unsigned long VAR1;
+long VAR2, VAR3;
+
+VAR1 = FUN2(VAR4);
+if (FUN3(VAR5, VAR1 + 10))
+return;
+
+
+VAR3 = FUN4();
+if (VAR3)
+FUN5(VAR3, &VAR6);
+
+VAR2 = FUN6(&VAR6);
+VAR2 = VAR2 > 0 ? VAR2 * VAR7 : 0;
+
+VAR8[0] = FUN7(VAR8[0], VAR9, VAR2);
+VAR8[1] = FUN7(VAR8[1], VAR10, VAR2);
+VAR8[2] = FUN7(VAR8[2], VAR11, VAR2);
+
+FUN8(VAR4, VAR1 + VAR12);
+
+
+FUN9();
+}

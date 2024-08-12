@@ -1,0 +1,39 @@
+VAR1 FUN1(struct VAR2 **VAR3,
+VAR4 *VAR5)
+{
+TEE_Result VAR6;
+struct VAR2 *VAR7 = *VAR3;
+void *VAR8;
+
+if (!VAR7)
+return VAR9;
+
+if (!VAR7->VAR10)
+return VAR11;
+
+VAR6 = FUN2(&VAR8, VAR12);
+if (VAR6 != VAR11)
+return VAR6;
+
+VAR6 = FUN3(VAR7, VAR13, VAR8);
+if (VAR6 != VAR11)
+goto VAR14;
+
+
+VAR6 = FUN4(VAR7);
+if (VAR6 != VAR11)
+goto VAR14;
+
+VAR6 = FUN5(VAR7, VAR7->VAR15.VAR16 & 1, &VAR7->VAR15);
+if (VAR6 != VAR11)
+goto VAR14;
+
+VAR7->VAR10 = false;
+if (VAR5)
+memcpy(VAR5, VAR7->VAR17.VAR18.VAR5, sizeof(VAR7->VAR17.VAR18.VAR5));
+VAR14:
+FUN6(VAR8);
+if (VAR6 != VAR11)
+FUN7(VAR3);
+return VAR6;
+}

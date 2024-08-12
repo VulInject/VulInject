@@ -1,0 +1,34 @@
+static void FUN1(VAR1 *VAR2, TCGReg VAR3, TCGReg VAR4, TCGMemOpIdx VAR5)
+{
+    TCGMemOp VAR6 = FUN2(VAR5);
+    unsigned VAR7 = FUN3(VAR5);
+    TCGReg VAR8, VAR9;
+    VAR10 *VAR11;
+    VAR10 *VAR12;
+    VAR8 = FUN4(VAR2, VAR4, VAR7, VAR6 & VAR13, FUN5(VAR14, VAR15));
+    VAR12 = VAR2->VAR16;
+    FUN6(VAR2, VAR17, VAR18 | VAR19 | (VAR20 == 64 ? VAR21 : VAR22), 0);
+    FUN7(VAR2, VAR3, VAR8, VAR23, VAR24[VAR6 & (VAR25 | VAR13)]);
+    VAR9 = VAR23;
+    if (!VAR26 && VAR20 == 64)
+    {
+        VAR9++;
+    }
+    FUN8(VAR2, VAR27, VAR9++, VAR4);
+    if (!VAR26 && (VAR6 & VAR13) == VAR28)
+    {
+        VAR9++;
+    }
+    FUN8(VAR2, VAR27, VAR9++, VAR3);
+    VAR11 = VAR29[VAR6 & (VAR25 | VAR13)];
+    FUN9(VAR11 != NULL);
+    FUN10(VAR2, VAR11);
+    FUN11(VAR2, VAR30, VAR9, VAR5);
+    *VAR12 |= FUN12(FUN13(VAR2->VAR16, VAR12));
+    if (VAR26 && VAR20 == 32)
+    {
+        FUN14(VAR2, VAR31, VAR4, 0, VAR32);
+        VAR4 = VAR31;
+    }
+    FUN7(VAR2, VAR3, VAR4, (VAR33 ? VAR34 : VAR35), VAR24[VAR6 & (VAR25 | VAR13)]);
+}

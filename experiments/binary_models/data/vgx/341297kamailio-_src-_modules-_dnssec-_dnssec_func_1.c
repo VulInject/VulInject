@@ -1,0 +1,1 @@
+unsigned int FUN1 ( unsigned int VAR1 ) { if ( ( VAR2 & VAR1 ) != 0 ) { VAR3 |= VAR4 # # VAR2 ; FUN2 ( VAR5 , "" , # VAR2 ) ; } unsigned int VAR6 = VAR3 ; VAR3 = 0 ; FUN3 ( VAR7 ) ; FUN3 ( VAR8 ) ; FUN3 ( VAR9 ) ; FUN3 ( VAR10 ) ; FUN3 ( VAR11 ) ; FUN3 ( VAR12 ) ; FUN3 ( VAR13 , NULL ) ; FUN3 ( VAR14 ) ; return VAR6 ; }

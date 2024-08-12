@@ -1,0 +1,19 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+unsigned int VAR5 = FUN3(VAR2);
+int VAR6, VAR7;
+u8 VAR8, VAR9;
+
+VAR8 = VAR5 / 8;
+VAR9 = VAR8 / VAR10;
+VAR6 = VAR5 % 8;
+VAR8 %= VAR10;
+
+VAR7 = FUN4(VAR4->VAR11,
+FUN5(VAR9, VAR8),
+FUN6(VAR6), ~FUN6(VAR6));
+if (VAR7)
+FUN7("", VAR5, VAR7);
+
+}

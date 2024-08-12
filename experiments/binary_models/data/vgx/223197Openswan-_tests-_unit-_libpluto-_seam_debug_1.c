@@ -1,0 +1,1 @@
+void FUN1 ( int VAR1 ) { struct VAR2 * VAR3 ; lset_t VAR4 = VAR5 ; VAR3 = FUN2 ( VAR1 ) ; if ( VAR3 != NULL ) { VAR3 -> VAR6 -> VAR7 = VAR4 ; } }

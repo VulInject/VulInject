@@ -1,0 +1,1 @@
+extern char * FUN1 ( char * VAR1 ) { return ( * ( VAR2 . VAR3 ) ) ( VAR1 ) ; }

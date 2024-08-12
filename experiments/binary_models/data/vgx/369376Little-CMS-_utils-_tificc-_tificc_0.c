@@ -1,0 +1,140 @@
+int FUN1(VAR1* VAR2, VAR1* VAR3, const char *VAR4)
+{
+cmsHPROFILE VAR5, VAR6, VAR7, VAR8 = NULL;
+cmsHTRANSFORM VAR9;
+cmsUInt32Number VAR10, VAR11;
+int VAR12;
+int VAR13 = VAR14 / 8;
+cmsUInt32Number VAR15;        
+int VAR16;
+
+
+VAR15 = VAR17;
+
+
+FUN2(VAR18);
+
+if (VAR19 && VAR20) 
+FUN3(VAR3, VAR20);
+
+if (VAR21) 
+VAR15 |= VAR22;           
+
+switch (VAR23) {
+
+case 0: VAR15 |= VAR24; break;
+case 2: VAR15 |= VAR25; break;
+case 3: VAR15 |= VAR26; break;
+case 1: break;
+
+default: FUN4("", VAR23);
+}
+
+if (VAR27)
+VAR15 |= VAR28;
+
+VAR7 = NULL;
+VAR6 = NULL;
+
+if (VAR29) {
+
+VAR5 = FUN5(VAR4, "");                  
+}
+else {
+
+VAR5 =  FUN6(VAR2);
+
+if (VAR5 == NULL)                    
+VAR5 = FUN7(NULL, VAR4);               
+
+VAR6 = FUN7(NULL, VAR20);
+
+if (VAR30 != NULL) {
+
+VAR7 = FUN7(NULL, VAR30);
+VAR15 |= VAR31;
+}
+}
+
+
+VAR10 = FUN8(VAR2);
+
+
+if (FUN9(FUN10(VAR5)) != (int) FUN11(VAR10))
+FUN4("");
+
+
+if (!VAR29) 
+VAR12 = FUN9(FUN10(VAR6));
+else 
+VAR12 = FUN9(FUN12(VAR5));
+
+VAR11  = FUN13(VAR10, VAR12, VAR13);
+
+FUN14(VAR3, VAR12, VAR13, FUN15(VAR11), FUN16(VAR11));
+FUN17(VAR2, VAR3);
+
+
+if (VAR32 != 400.0 && 
+(VAR12 == VAR33 || VAR12 == VAR34)) {
+
+cmsHPROFILE VAR35[10];
+int VAR36 = 0;
+
+VAR8 = FUN18(FUN10(VAR6), VAR32);
+
+VAR35[VAR36++] = VAR5;
+if (VAR7) {
+VAR35[VAR36++] = VAR7;
+VAR35[VAR36++] = VAR7;
+}
+
+VAR35[VAR36++] = VAR6;
+VAR35[VAR36++] = VAR8;
+
+VAR9 = FUN19(VAR35, VAR36, 
+VAR10, VAR11, VAR37, VAR15);
+
+}
+else {
+
+VAR9 = FUN20(VAR5, VAR10, 
+VAR6, VAR11, 
+VAR7, VAR37, 
+VAR38, 
+VAR15);
+}
+
+FUN21(VAR5);
+FUN21(VAR6);
+
+if (VAR8) 
+FUN21(VAR8);
+if (VAR7) 
+FUN21(VAR7);
+
+if (VAR9 == NULL) return 0;
+
+
+if (FUN22(VAR10)) 
+VAR16 = FUN23(VAR10) + FUN15(VAR10);
+else
+VAR16 = 1;
+
+
+
+if (FUN24(VAR2)) {
+
+FUN25(VAR9, VAR2, VAR3, VAR16);
+}
+else {
+FUN26(VAR9, VAR2, VAR3, VAR16);
+}
+
+
+FUN27(VAR9);
+
+FUN28(VAR3);
+
+return 1;
+}

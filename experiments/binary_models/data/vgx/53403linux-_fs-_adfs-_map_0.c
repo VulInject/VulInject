@@ -1,0 +1,20 @@
+void FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR2);
+struct VAR7 *VAR8 = FUN3(VAR6->VAR9);
+struct VAR10 *VAR11;
+unsigned int VAR12 = 0;
+unsigned int VAR13;
+
+VAR11   = VAR6->VAR9;
+VAR13 = VAR6->VAR14;
+
+do {
+VAR12 += FUN4(VAR6, VAR11++);
+} while (--VAR13 > 0);
+
+VAR4->VAR15  = FUN5(VAR8) >> VAR2->VAR16;
+VAR4->VAR17   = VAR6->VAR18 * VAR6->VAR14;
+VAR4->VAR19  =
+VAR4->VAR20   = FUN6(VAR12, VAR6->VAR21);
+}

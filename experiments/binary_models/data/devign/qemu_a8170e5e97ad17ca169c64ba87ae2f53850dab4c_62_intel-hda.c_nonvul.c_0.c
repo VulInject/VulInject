@@ -1,0 +1,22 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    hwaddr VAR5;
+    uint8_t VAR6[16];
+    uint32_t VAR7;
+    VAR5 = FUN2(VAR4->VAR8, VAR4->VAR9);
+    VAR4->VAR10 = VAR4->VAR11 + 1;
+    FUN3(VAR4->VAR12);
+    VAR4->VAR12 = FUN4(sizeof(VAR12) * VAR4->VAR10);
+    for (VAR7 = 0; VAR7 < VAR4->VAR10; VAR7++, VAR5 += 16)
+    {
+        FUN5(&VAR2->VAR13, VAR5, VAR6, 16);
+        VAR4->VAR12[VAR7].VAR5 = FUN6(*(VAR14 *)VAR6);
+        VAR4->VAR12[VAR7].VAR15 = FUN7(*(VAR16 *)(VAR6 + 8));
+        VAR4->VAR12[VAR7].VAR17 = FUN7(*(VAR16 *)(VAR6 + 12));
+        FUN8(VAR2, 1, "" VAR18 "", VAR7, VAR4->VAR12[VAR7].VAR5, VAR4->VAR12[VAR7].VAR15, VAR4->VAR12[VAR7].VAR17);
+    }
+    VAR4->VAR19 = VAR4->VAR20;
+    VAR4->VAR21 = 0;
+    VAR4->VAR22 = 0;
+    VAR4->VAR23 = 0;
+}

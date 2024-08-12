@@ -1,0 +1,1 @@
+int FUN1 ( int VAR1 , void * FUN2 ( void * VAR2 ) , void * VAR2 , int VAR3 ) { unsigned long VAR4 ; if ( VAR1 != 0 ) { return - VAR5 ; } FUN3 ( VAR4 ) ; FUN2 ( VAR2 , NULL ) ; FUN4 ( VAR4 ) ; return 0 ; }

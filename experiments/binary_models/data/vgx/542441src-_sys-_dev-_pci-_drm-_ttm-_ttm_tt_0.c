@@ -1,0 +1,41 @@
+int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+struct VAR5 *VAR6;
+struct VAR5 *VAR7;
+struct pglist VAR8;
+int VAR9, VAR10;
+
+VAR4 = VAR2->VAR4;
+FUN2(VAR4 == NULL);
+
+FUN3(&VAR8);
+if (FUN4(VAR4, 0, VAR2->VAR11 << VAR12,
+&VAR8)) {
+VAR10 = -VAR13;
+goto VAR14;
+}
+
+VAR6 = FUN5(&VAR8);
+for (VAR9 = 0; VAR9 < VAR2->VAR11; ++VAR9) {
+VAR7 = VAR2->VAR15[VAR9];
+if (FUN6(VAR7 == NULL)) {
+VAR10 = -VAR13;
+goto VAR14;
+}
+
+FUN7(VAR6, VAR7);
+VAR6 = FUN8(VAR6, VAR16);
+}
+
+FUN9(VAR4, 0, VAR2->VAR11 << VAR12);
+
+FUN10(VAR4);
+VAR2->VAR4 = NULL;
+VAR2->VAR17 &= ~VAR18;
+
+return 0;
+
+VAR14:
+return VAR10;
+}

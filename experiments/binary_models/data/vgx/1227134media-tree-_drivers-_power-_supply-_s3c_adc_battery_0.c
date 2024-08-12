@@ -1,0 +1,144 @@
+static int FUN1(struct VAR1 *VAR2,
+enum power_supply_property VAR3,
+union VAR4 *VAR5)
+{
+struct VAR6 *VAR7 = FUN2(VAR2);
+
+int VAR8;
+int VAR9;
+const struct VAR10 *VAR11;
+unsigned int VAR12;
+
+if (!VAR7) {
+FUN3(&VAR2->VAR13, "");
+return -VAR14;
+}
+
+VAR11 = VAR7->VAR15->VAR16;
+VAR12 = VAR7->VAR15->VAR17;
+
+if (VAR7->VAR18 < 0 || VAR7->VAR19 < 0 ||
+FUN4(VAR20 - VAR7->VAR21) >
+VAR22) {
+VAR7->VAR18 = FUN5(VAR7->VAR23,
+VAR7->VAR15->VAR24,
+VAR7->VAR15->VAR25) * VAR7->VAR15->VAR26;
+VAR7->VAR19 = FUN5(VAR7->VAR23,
+VAR7->VAR15->VAR27,
+VAR7->VAR15->VAR28) * VAR7->VAR15->VAR29;
+VAR7->VAR21 = VAR20;
+}
+
+if (VAR7->VAR30 &&
+((VAR7->VAR15->VAR31 < 0) ||
+!FUN6(VAR7))) {
+VAR11 = VAR7->VAR15->VAR32;
+VAR12 = VAR7->VAR15->VAR33;
+}
+
+VAR8 = 100000;
+VAR9 = FUN7((VAR7->VAR18 / 1000),
+(VAR7->VAR19 / 1000), VAR7->VAR15->VAR34);
+
+if (VAR9 < FUN7(VAR11->VAR35, VAR11->VAR36,
+VAR7->VAR15->VAR34)) {
+VAR12--;
+while (VAR12--) {
+int VAR37;
+int VAR38;
+
+VAR37 = FUN7(VAR11[0].VAR35, VAR11[0].VAR36,
+VAR7->VAR15->VAR34);
+VAR38 = FUN7(VAR11[1].VAR35, VAR11[1].VAR36,
+VAR7->VAR15->VAR34);
+if (VAR9 < VAR37 && VAR9 >= VAR38) {
+VAR8 = (VAR11[1].VAR39 +
+(VAR11[0].VAR39 - VAR11[1].VAR39) *
+(VAR9 - VAR38) /
+(VAR37 - VAR38)) * 1000;
+break;
+}
+VAR8 = VAR11[1].VAR39 * 1000;
+VAR11++;
+}
+}
+
+VAR7->VAR39 = VAR8;
+
+switch (VAR3) {
+case VAR40:
+if (VAR7->VAR15->VAR31 < 0)
+VAR5->VAR41 = VAR7->VAR39 == 100000 ?
+VAR42 : VAR7->VAR43;
+else
+VAR5->VAR41 = VAR7->VAR43;
+return 0;
+case VAR44:
+VAR5->VAR41 = 100000;
+return 0;
+case VAR45:
+VAR5->VAR41 = 0;
+return 0;
+case VAR46:
+VAR5->VAR41 = VAR7->VAR39;
+return 0;
+case VAR47:
+VAR5->VAR41 = VAR7->VAR18;
+return 0;
+case VAR48:
+VAR5->VAR41 = VAR7->VAR19;
+return 0;
+default:
+return -VAR14;
+}
+}
+
+static const struct power_supply_desc VAR49 = {
+.VAR50			= "",
+.VAR51			= VAR52,
+.VAR53		= VAR54,
+.VAR55		= FUN8(VAR54),
+.VAR56		= VAR57,
+.VAR58 = VAR59,
+.VAR60		= 1,
+};
+
+static struct s3c_adc_bat VAR61;
+
+static void FUN9(struct VAR62 *VAR63)
+{
+struct VAR6 *VAR7 = &VAR61;
+int VAR64;
+int VAR65;
+static int VAR66;
+
+VAR65 = FUN10(VAR7->VAR2);
+VAR7->VAR30 = VAR65;
+if (VAR65 != VAR66) {
+VAR66 = VAR65;
+if (VAR65) {
+if (VAR7->VAR15->VAR67)
+VAR7->VAR15->FUN11();
+VAR7->VAR43 = VAR68;
+} else {
+if (VAR7->VAR15->VAR69)
+VAR7->VAR15->FUN12();
+VAR7->VAR43 = VAR70;
+}
+} else {
+if ((VAR7->VAR15->VAR31 >= 0) && VAR65) {
+VAR64 = FUN6(&VAR61);
+if (VAR64) {
+if (VAR7->VAR15->VAR69)
+VAR7->VAR15->FUN12();
+VAR7->VAR43 = VAR42;
+} else {
+if (VAR7->VAR15->VAR67)
+VAR7->VAR15->FUN11();
+VAR7->VAR43 = VAR68;
+}
+}
+}
+
+FUN13(VAR7->VAR2);
+}

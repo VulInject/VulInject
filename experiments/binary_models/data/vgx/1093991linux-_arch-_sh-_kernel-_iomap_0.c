@@ -1,0 +1,7 @@
+}
+FUN1(VAR1);
+
+void FUN2(u32 VAR2, void VAR3 *VAR4)
+{
+FUN3(FUN4(VAR2), VAR4);
+}

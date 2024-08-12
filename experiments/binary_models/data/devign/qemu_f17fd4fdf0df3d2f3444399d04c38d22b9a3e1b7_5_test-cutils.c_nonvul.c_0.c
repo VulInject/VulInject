@@ -1,0 +1,46 @@
+static void FUN1(void)
+{
+    const char *VAR1 = "";
+    const char *VAR2 = "";
+    const char *VAR3 = "";
+    const char *VAR4 = "";
+    const char *VAR5 = "";
+    const char *VAR6 = "";
+    const char *VAR7 = "";
+    const char *VAR8 = "";
+    int VAR9;
+    char *VAR10 = NULL;
+    int64_t VAR11 = 0xbaadf00d;
+    VAR9 = FUN2(VAR1, &VAR10, &VAR11);
+    FUN3(VAR9, ==, 0);
+    FUN3(VAR11, ==, VAR12);
+    FUN4(VAR10 == VAR1 + 1);
+    VAR9 = FUN5(VAR2, &VAR10, &VAR11);
+    FUN3(VAR9, ==, 0);
+    FUN3(VAR11, ==, 1);
+    FUN4(VAR10 == VAR2 + 2);
+    VAR9 = FUN5(VAR3, &VAR10, &VAR11);
+    FUN3(VAR9, ==, 0);
+    FUN3(VAR11, ==, VAR13);
+    FUN4(VAR10 == VAR3 + 2);
+    VAR9 = FUN5(VAR4, &VAR10, &VAR11);
+    FUN3(VAR9, ==, 0);
+    FUN3(VAR11, ==, VAR12);
+    FUN4(VAR10 == VAR4 + 2);
+    VAR9 = FUN5(VAR5, &VAR10, &VAR11);
+    FUN3(VAR9, ==, 0);
+    FUN3(VAR11, ==, VAR14);
+    FUN4(VAR10 == VAR5 + 2);
+    VAR9 = FUN5(VAR6, &VAR10, &VAR11);
+    FUN3(VAR9, ==, 0);
+    FUN3(VAR11, ==, VAR15);
+    FUN4(VAR10 == VAR6 + 2);
+    VAR9 = FUN5(VAR7, &VAR10, &VAR11);
+    FUN3(VAR9, ==, 0);
+    FUN3(VAR11, ==, VAR16);
+    FUN4(VAR10 == VAR7 + 2);
+    VAR9 = FUN5(VAR8, &VAR10, &VAR11);
+    FUN3(VAR9, ==, 0);
+    FUN3(VAR11, ==, VAR17);
+    FUN4(VAR10 == VAR8 + 2);
+}

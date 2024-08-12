@@ -1,0 +1,89 @@
+VAR1 FUN1(struct VAR2 *VAR3)
+{
+struct VAR4 *VAR5 = &VAR3->VAR5;
+s32 VAR6;
+u16 VAR7;
+bool VAR8;
+
+
+VAR6 = FUN2(VAR3, VAR9, &VAR7);
+if (VAR6)
+return VAR6;
+
+VAR7 &= ~VAR10;
+VAR6 = FUN3(VAR3, VAR9, VAR7);
+if (VAR6)
+return VAR6;
+
+FUN4("", VAR7);
+
+VAR6 = FUN2(VAR3, VAR11, &VAR7);
+if (VAR6)
+return VAR6;
+
+FUN5(VAR3, &VAR7);
+
+VAR6 = FUN3(VAR3, VAR11, VAR7);
+if (VAR6)
+return VAR6;
+
+
+if (VAR3->VAR5.VAR12.VAR13) {
+VAR6 = VAR3->VAR5.VAR12.FUN6(VAR3);
+if (VAR6)
+return VAR6;
+}
+
+if (VAR5->VAR14) {
+FUN4("");
+
+VAR6 = FUN7(VAR3, VAR15,
+100000, &VAR8);
+if (VAR6)
+return VAR6;
+
+if (!VAR8) {
+if (VAR3->VAR5.VAR16 != VAR17) {
+FUN4("");
+} else {
+
+VAR6 = FUN3(VAR3, VAR18,
+0x001d);
+if (VAR6)
+return VAR6;
+VAR6 = FUN8(VAR3);
+if (VAR6)
+return VAR6;
+}
+}
+
+
+VAR6 = FUN7(VAR3, VAR15,
+100000, &VAR8);
+if (VAR6)
+return VAR6;
+}
+
+if (VAR3->VAR5.VAR16 != VAR17)
+return 0;
+
+VAR6 = FUN2(VAR3, VAR19, &VAR7);
+if (VAR6)
+return VAR6;
+
+
+VAR7 |= VAR20;
+VAR6 = FUN3(VAR3, VAR19, VAR7);
+if (VAR6)
+return VAR6;
+
+
+VAR6 = FUN2(VAR3, VAR9, &VAR7);
+if (VAR6)
+return VAR6;
+
+VAR7 |= VAR21;
+VAR6 = FUN3(VAR3, VAR9, VAR7);
+
+return VAR6;
+}

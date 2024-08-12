@@ -1,0 +1,1 @@
+int FUN1 ( void ) { int VAR1 ; if ( ( VAR1 = FUN2 ( ) ) != VAR2 ) { FUN3 ( "" , VAR3 , FUN4 ( VAR1 ) ) ; return 0 ; } FUN5 ( "" , VAR4 , 300 ) ; return 1 ; }

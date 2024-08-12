@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , const char * VAR3 ) { if ( VAR3 ) { if ( VAR3 [ 0 ] == '' ) { if ( ! FUN2 ( VAR3 , VAR3 + strlen ( VAR3 ) ) ) { return - 1 ; } } else { if ( ! FUN3 ( VAR3 , VAR3 + strlen ( VAR3 ) ) ) { return - 1 ; } } } FUN4 ( VAR3 , NULL ) ; return 0 ; }

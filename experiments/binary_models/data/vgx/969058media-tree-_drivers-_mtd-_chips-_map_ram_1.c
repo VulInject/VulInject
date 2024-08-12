@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { struct VAR5 * VAR6 = VAR2 -> VAR7 ; map_word VAR8 ; cfs_time_t VAR9 ; VAR8 = FUN2 ( VAR6 ) ; for ( VAR9 = 0 ; VAR9 < VAR4 -> VAR10 ; VAR9 += FUN3 ( VAR6 ) ) { FUN4 ( VAR6 , VAR8 , VAR4 -> VAR11 + VAR9 ) ; } VAR4 -> VAR12 = VAR13 ; FUN5 ( VAR4 ) ; return 0 ; }

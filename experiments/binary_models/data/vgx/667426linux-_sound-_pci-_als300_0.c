@@ -1,0 +1,28 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+u32 VAR3;
+struct VAR4 *VAR5 = FUN2(VAR2);
+struct VAR6 *VAR7 = VAR2->VAR7;
+unsigned short VAR8 = FUN3(VAR2);
+unsigned short VAR9 = FUN4(VAR2);
+
+FUN5(&VAR5->VAR10);
+VAR3 = FUN6(VAR5->VAR11, VAR12);
+VAR3 &= ~VAR13;
+
+FUN7("", VAR8,
+VAR9);
+
+
+VAR3 &= 0xffff0000;
+VAR3 |= VAR8 - 1;
+
+
+FUN8(VAR5->VAR11, VAR12, VAR3);
+FUN8(VAR5->VAR11, VAR14,
+VAR7->VAR15);
+FUN8(VAR5->VAR11, VAR16,
+VAR7->VAR15 + VAR9 - 1);
+FUN9(&VAR5->VAR10);
+return 0;
+}

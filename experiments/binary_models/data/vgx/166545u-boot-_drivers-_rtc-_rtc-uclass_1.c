@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , unsigned int VAR3 , VAR4 * VAR5 , unsigned int VAR6 ) { struct VAR7 * VAR8 = FUN2 ( VAR2 ) ; assert ( VAR8 ) ; if ( VAR8 -> read ) { return VAR8 -> read ( VAR2 , VAR3 , VAR5 , VAR6 ) ; } while ( VAR6 -- ) { int VAR9 = VAR8 -> FUN3 ( VAR2 , VAR3 ++ ) ; if ( VAR9 < 0 ) { return VAR9 ; } * VAR5 ++ = VAR9 ; } return 0 ; }

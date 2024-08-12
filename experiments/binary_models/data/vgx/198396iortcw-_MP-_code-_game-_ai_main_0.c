@@ -1,0 +1,163 @@
+int FUN1( int VAR1 ) {
+int VAR2;
+VAR3   *VAR4;
+bot_entitystate_t VAR5;
+
+
+int VAR6, VAR7;
+static int VAR8;
+static int VAR9;
+static int VAR10;
+
+if ( VAR11.VAR12 != VAR13 ) {
+FUN2();
+}
+
+FUN3( &VAR14 );
+FUN3( &VAR15 );
+FUN3( &VAR16 );
+FUN3( &VAR17 );
+FUN3( &VAR18 );
+FUN3( &VAR19 );
+
+FUN4( 0 );
+FUN3( &VAR20 );
+
+if ( VAR20.VAR12 ) {
+FUN5( "", "" );
+FUN6( "", "" );
+}
+
+
+if ( VAR19.VAR12 != VAR10 ) {
+VAR10 = VAR19.VAR12;
+FUN7();
+}
+
+VAR6 = VAR1 - VAR8;
+VAR8 = VAR1;
+
+VAR9 += VAR6;
+
+if ( VAR6 > VAR19.VAR12 ) {
+VAR7 = VAR6;
+} else { VAR7 = VAR19.VAR12;}
+
+
+if ( VAR9 >= VAR7 ) {
+VAR9 -= VAR7;
+
+FUN8( (float) VAR1 / 1000 );
+
+
+FUN4( 0 );
+
+if ( !FUN9() ) {
+return VAR21;
+}
+
+
+for ( VAR2 = 0; VAR2 < VAR22; VAR2++ ) {
+
+
+if ( VAR11.VAR12 == VAR13 && VAR2 > VAR23.VAR24 ) {
+break;
+}
+
+VAR4 = &VAR25[VAR2];
+if ( !VAR4->VAR26 ) {
+continue;
+}
+if ( !VAR4->VAR27.VAR28 ) {
+continue;
+}
+if ( VAR4->VAR27.VAR29 & VAR30 ) {
+continue;
+}
+
+memset( &VAR5, 0, sizeof( VAR31 ) );
+
+FUN10( VAR4->VAR27.VAR32, VAR5.VAR33 );
+FUN10( VAR4->VAR27.VAR34, VAR5.VAR35 );
+FUN10( VAR4->VAR36.VAR37, VAR5.VAR38 );
+FUN10( VAR4->VAR27.VAR39, VAR5.VAR39 );
+FUN10( VAR4->VAR27.VAR40, VAR5.VAR40 );
+VAR5.VAR41 = VAR4->VAR36.VAR42;
+VAR5.VAR43 = VAR4->VAR36.VAR44;
+if ( VAR4->VAR27.VAR45 ) {
+VAR5.VAR46 = VAR47;
+} else { VAR5.VAR46 = VAR48;}
+VAR5.VAR49 = VAR4->VAR36.VAR50;
+VAR5.VAR51 = VAR4->VAR36.VAR51;
+VAR5.VAR52 = VAR4->VAR36.VAR52;
+VAR5.VAR53 = VAR4->VAR36.VAR53;
+
+
+VAR5.VAR54 = VAR4->VAR36.VAR54;
+VAR5.VAR55 = VAR4->VAR36.VAR55;
+VAR5.VAR56 = VAR4->VAR36.VAR56;
+
+
+
+VAR5.VAR57 = VAR4->VAR36.VAR57;
+
+
+FUN11( VAR2, &VAR5 );
+}
+
+FUN12();
+
+}
+
+
+if ( VAR11.VAR12 == VAR13 ) {
+return VAR21;
+}
+
+
+for ( VAR2 = 0; VAR2 < VAR58; VAR2++ ) {
+if ( !VAR59[VAR2] || !VAR59[VAR2]->VAR26 ) {
+continue;
+}
+
+if ( VAR25[VAR2].VAR27.VAR29 & VAR60 ) {
+continue;
+}
+
+
+VAR59[VAR2]->VAR61 += VAR6;
+
+if ( VAR59[VAR2]->VAR61 >= VAR7 ) {
+VAR59[VAR2]->VAR61 -= VAR7;
+
+if ( !FUN9() ) {
+return VAR21;
+}
+
+if ( VAR25[VAR2].VAR62->VAR63.VAR64 == VAR65 ) {
+FUN13( VAR2, (float) VAR7 / 1000 );
+}
+}
+}
+
+
+
+for ( VAR2 = 0; VAR2 < VAR58; VAR2++ ) {
+if ( !VAR59[VAR2] || !VAR59[VAR2]->VAR26 ) {
+continue;
+}
+
+if ( VAR25[VAR2].VAR27.VAR29 & VAR60 ) {
+continue;
+}
+
+if ( VAR25[VAR2].VAR62->VAR63.VAR64 != VAR65 ) {
+continue;
+}
+
+FUN14( VAR59[VAR2], VAR1 );
+FUN15( VAR59[VAR2]->VAR62, &VAR59[VAR2]->VAR66 );
+}
+
+return VAR21;
+}

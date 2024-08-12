@@ -1,0 +1,77 @@
+static void FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = FUN2(0x20);
+    VAR3 *VAR5 = FUN2(0x20);
+    RegH2DFIS VAR6;
+    AHCICommandHeader VAR7;
+    PRD VAR8;
+    uint32_t VAR9, VAR10;
+    uint16_t VAR11[256];
+    unsigned VAR12;
+    int VAR13;
+    uint8_t VAR14;
+    uint64_t VAR15;
+    FUN3(VAR2 != NULL);
+    VAR12 = FUN4(VAR2);
+    FUN5("", VAR12);
+    FUN6(VAR2, VAR12);
+    VAR15 = FUN7(VAR2, FUN8(1));
+    FUN3(VAR15);
+    FUN9(VAR15, 0x7F);
+    VAR10 = FUN7(VAR2, 512);
+    FUN3(VAR10);
+    VAR14 = FUN10(VAR2, VAR12);
+    memset(&VAR7, 0x00, sizeof(VAR7));
+    VAR7.VAR16 = 5;
+    VAR7.VAR16 |= 0x400;
+    VAR7.VAR17 = 1;
+    VAR7.VAR18 = 0;
+    VAR7.VAR19 = VAR15;
+    VAR8.VAR20 = FUN11(VAR10);
+    VAR8.VAR21 = 0;
+    VAR8.VAR22 = FUN12(511 | 0x80000000);
+    memset(&VAR6, 0x00, sizeof(VAR6));
+    VAR6.VAR23 = 0x27;
+    VAR6.VAR24 = 0xEC;
+    VAR6.VAR25 = 0;
+    VAR6.VAR16 = 0x80;
+    FUN13(FUN14(VAR2, VAR12, VAR26), ==, 0);
+    FUN15(VAR15, &VAR6, sizeof(VAR6));
+    FUN15(VAR15 + 0x80, &VAR8, sizeof(VAR8));
+    FUN16(VAR2, VAR12, VAR14, &VAR7);
+    FUN13(FUN14(VAR2, VAR12, VAR26), ==, 0);
+    FUN17(VAR2, VAR12, VAR27, (1 << VAR14));
+    while (FUN18(FUN14(VAR2, VAR12, VAR28), VAR29))
+    {
+        FUN19(50);
+    }
+    FUN20(VAR2, VAR12);
+    VAR9 = FUN14(VAR2, VAR12, VAR26);
+    FUN21(VAR9, VAR30);
+    FUN21(VAR9, VAR31);
+    FUN9(VAR9, VAR32);
+    FUN17(VAR2, VAR12, VAR26, VAR30 | VAR31 | VAR32);
+    FUN13(FUN14(VAR2, VAR12, VAR26), ==, 0);
+    FUN22(VAR2, VAR12, VAR14, &VAR7);
+    FUN13(512, ==, VAR7.VAR18);
+    FUN23(VAR2->VAR33[VAR12].VAR34 + 0x20, VAR5, 0x20);
+    FUN23(VAR2->VAR33[VAR12].VAR34 + 0x40, VAR4, 0x20);
+    FUN13(VAR5->VAR23, ==, 0x5f);
+    FUN13(VAR4->VAR23, ==, 0x34);
+    FUN13(VAR5->VAR16, ==, VAR4->VAR16);
+    FUN13(VAR5->VAR35, ==, VAR4->VAR35);
+    FUN13(VAR5->VAR36, ==, VAR4->VAR36);
+    VAR9 = FUN14(VAR2, VAR12, VAR28);
+    FUN13((VAR9 & VAR37), ==, VAR5->VAR36);
+    FUN13((VAR9 & VAR38), ==, VAR5->VAR35);
+    FUN13(FUN24(VAR5->VAR39), ==, VAR7.VAR18);
+    FUN23(VAR10, &VAR11, 512);
+    FUN25(&VAR11[10], 20);
+    VAR13 = memcmp(&VAR11[10], "", 20);
+    FUN13(VAR13, ==, 0);
+    FUN25(&VAR11[23], 8);
+    VAR13 = memcmp(&VAR11[23], "", 8);
+    FUN13(VAR13, ==, 0);
+    FUN26(VAR4);
+    FUN26(VAR5);
+}

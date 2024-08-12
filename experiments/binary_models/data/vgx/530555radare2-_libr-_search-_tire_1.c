@@ -1,0 +1,1 @@
+static inline VAR1 * FUN1 ( VAR2 * VAR3 , VAR4 * VAR5 , ut32 VAR6 ) { FUN2 ( VAR5 ) ; VAR1 * VAR7 = FUN3 ( ) ; if ( VAR7 ) { VAR7 -> VAR5 = VAR5 ; VAR7 -> VAR6 = VAR6 ; VAR7 -> VAR3 = VAR3 ; } return VAR7 ; }

@@ -1,0 +1,1 @@
+static UINT FUN1 ( VAR1 * VAR2 ) { UINT32 VAR3 ; VAR4 * VAR5 = ( VAR4 * ) VAR2 ; if ( ! VAR5 ) { return VAR6 ; } for ( VAR3 = 0 ; VAR3 < VAR5 -> VAR7 ; VAR3 ++ ) { free ( VAR5 -> VAR8 [ VAR3 ] ) ; } free ( VAR5 -> VAR8 ) ; free ( VAR5 ) ; return VAR9 ; }

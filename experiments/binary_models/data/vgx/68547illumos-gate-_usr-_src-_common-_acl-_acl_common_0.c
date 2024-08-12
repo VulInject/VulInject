@@ -1,0 +1,123 @@
+static int
+FUN1(VAR1 *VAR2, VAR3 **VAR4, int *VAR5,
+uid_t VAR6, gid_t VAR7, boolean_t VAR8)
+{
+int VAR9 = 0;
+VAR3 *VAR10, *VAR11 = NULL;
+VAR12 *VAR13;
+int VAR14;
+
+if ((VAR2->VAR15 & (VAR16 | VAR17 | VAR18)) !=
+(VAR16 | VAR17 | VAR18)) {
+return (VAR19);
+}
+
+if ((! VAR2->VAR20) && (VAR2->VAR21 + VAR2->VAR22 > 0)) {
+return (VAR19);
+}
+
+VAR14 = 3 + VAR2->VAR21 + VAR2->VAR22;
+
+if ((VAR2->VAR20) || (! VAR2->VAR23))
+VAR14 += 1;
+
+if (FUN2((void **)&VAR11,
+VAR14 * sizeof (VAR3)) != 0) {
+VAR9 = VAR24;
+goto VAR25;
+}
+VAR10 = VAR11;
+
+
+if (!(VAR2->VAR26.VAR27 & VAR16)) {
+VAR9 = VAR28;
+goto VAR25;
+}
+
+VAR9 = FUN3(&VAR2->VAR26, VAR10, VAR2, VAR6, VAR7,
+VAR8);
+
+if (VAR9 != 0)
+goto VAR25;
+++VAR10;
+
+VAR13 = NULL;
+for (VAR13 = FUN4(&VAR2->VAR29); VAR13 != NULL;
+VAR13 = FUN5(&VAR2->VAR29, VAR13)) {
+if (!(VAR13->VAR27 & VAR30)) {
+VAR9 = VAR28;
+goto VAR25;
+}
+VAR9 = FUN3(VAR13, VAR10, VAR2, VAR6, VAR7,
+VAR8);
+if (VAR9 != 0)
+goto VAR25;
+++VAR10;
+}
+
+if (!(VAR2->VAR31.VAR27 & VAR17)) {
+VAR9 = VAR28;
+goto VAR25;
+}
+VAR9 = FUN3(&VAR2->VAR31, VAR10, VAR2, VAR6, VAR7,
+VAR8);
+if (VAR9 != 0)
+goto VAR25;
+++VAR10;
+
+VAR13 = NULL;
+for (VAR13 = FUN4(&VAR2->VAR7); VAR13 != NULL;
+VAR13 = FUN5(&VAR2->VAR7, VAR13)) {
+if (!(VAR13->VAR27 & VAR32)) {
+VAR9 = VAR28;
+goto VAR25;
+}
+VAR9 = FUN3(VAR13, VAR10, VAR2, VAR6, VAR7,
+VAR8);
+if (VAR9 != 0)
+goto VAR25;
+++VAR10;
+}
+
+if ((VAR2->VAR20) || (! VAR2->VAR23)) {
+if (VAR2->VAR20) {
+uint32_t VAR33 = VAR34;
+if (VAR8)
+VAR33 |= VAR35;
+VAR9 = FUN6(VAR2->VAR36 ^ VAR33,
+&VAR10->VAR37, VAR8);
+if (VAR9 != 0)
+goto VAR25;
+} else {
+
+VAR9 = FUN6(VAR2->VAR31.VAR38,
+&VAR10->VAR37, VAR8);
+if (VAR9 != 0)
+goto VAR25;
+}
+VAR10->VAR39 = 0;
+VAR10->VAR40 = VAR41 | VAR2->VAR23;
+++VAR10;
+}
+
+if (!(VAR2->VAR42.VAR27 & VAR18)) {
+VAR9 = VAR28;
+goto VAR25;
+}
+VAR9 = FUN3(&VAR2->VAR42, VAR10, VAR2, VAR6, VAR7,
+VAR8);
+if (VAR9 != 0)
+goto VAR25;
+++VAR10;
+
+*VAR4 = VAR11;
+*VAR5 = VAR14;
+
+VAR25:
+if (VAR9 != 0) {
+if (VAR11 != NULL)
+FUN7(VAR11, VAR14 * sizeof (VAR3));
+}
+
+return (VAR9);
+}

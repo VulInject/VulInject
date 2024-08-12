@@ -1,0 +1,55 @@
+static void FUN1(VAR1 *VAR2, int VAR3, int VAR4, int VAR5)
+{
+    char VAR6[256];
+    int VAR7 = (VAR5 ? VAR2->VAR8->VAR7 : VAR2->VAR9->VAR7);
+    VAR10 *VAR11 = VAR2->VAR12[VAR3];
+    int VAR13 = FUN2(VAR11->VAR14.VAR15, VAR11->VAR14.VAR16);
+    VAR17 *VAR18 = FUN3(VAR11->VAR19, "", NULL, 0);
+    FUN4(VAR6, sizeof(VAR6), VAR11->VAR20, VAR5);
+    FUN5(NULL, VAR21, "", VAR4, VAR3);
+    if (VAR7 & VAR22)
+        FUN5(NULL, VAR21, "", VAR11->VAR23);
+    if (VAR18)
+        FUN5(NULL, VAR21, "", VAR18->VAR24);
+    FUN5(NULL, VAR25, "", VAR11->VAR26, VAR11->VAR14.VAR15 / VAR13, VAR11->VAR14.VAR16 / VAR13);
+    FUN5(NULL, VAR21, "", VAR6);
+    if (VAR11->VAR27.VAR15 && FUN6(VAR11->VAR27, VAR11->VAR20->VAR27))
+    {
+        AVRational VAR28;
+        FUN7(&VAR28.VAR15, &VAR28.VAR16, VAR11->VAR20->VAR29 * VAR11->VAR27.VAR15, VAR11->VAR20->VAR30 * VAR11->VAR27.VAR16, 1024 * 1024);
+        FUN5(NULL, VAR21, "", VAR11->VAR27.VAR15, VAR11->VAR27.VAR16, VAR28.VAR15, VAR28.VAR16);
+    }
+    if (VAR11->VAR20->VAR31 == VAR32)
+    {
+        if (VAR11->VAR33.VAR16 && VAR11->VAR33.VAR15)
+            FUN8(FUN9(VAR11->VAR33), "");
+        if (VAR11->VAR34.VAR16 && VAR11->VAR34.VAR15)
+            FUN8(FUN9(VAR11->VAR34), "");
+        if (VAR11->VAR14.VAR16 && VAR11->VAR14.VAR15)
+            FUN8(1 / FUN9(VAR11->VAR14), "");
+        if (VAR11->VAR20->VAR14.VAR16 && VAR11->VAR20->VAR14.VAR15)
+            FUN8(1 / FUN9(VAR11->VAR20->VAR14), "");
+    }
+    if (VAR11->VAR35 & VAR36)
+        FUN5(NULL, VAR21, "");
+    if (VAR11->VAR35 & VAR37)
+        FUN5(NULL, VAR21, "");
+    if (VAR11->VAR35 & VAR38)
+        FUN5(NULL, VAR21, "");
+    if (VAR11->VAR35 & VAR39)
+        FUN5(NULL, VAR21, "");
+    if (VAR11->VAR35 & VAR40)
+        FUN5(NULL, VAR21, "");
+    if (VAR11->VAR35 & VAR41)
+        FUN5(NULL, VAR21, "");
+    if (VAR11->VAR35 & VAR42)
+        FUN5(NULL, VAR21, "");
+    if (VAR11->VAR35 & VAR43)
+        FUN5(NULL, VAR21, "");
+    if (VAR11->VAR35 & VAR44)
+        FUN5(NULL, VAR21, "");
+    if (VAR11->VAR35 & VAR45)
+        FUN5(NULL, VAR21, "");
+    FUN5(NULL, VAR21, "");
+    FUN10(NULL, VAR11->VAR19, "");
+    FUN11(NULL, VAR11, "");

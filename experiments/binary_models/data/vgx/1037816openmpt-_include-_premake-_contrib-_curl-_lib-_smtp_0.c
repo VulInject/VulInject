@@ -1,0 +1,41 @@
+static VAR1 FUN1(struct VAR2 *VAR3, bool *VAR4,
+bool *VAR5)
+{
+
+CURLcode VAR6 = VAR7;
+struct VAR8 *VAR9 = VAR3->VAR9;
+struct VAR10 *VAR11 = VAR9->VAR12.VAR13;
+
+FUN2(FUN3(VAR3->VAR9, ""));
+
+if(VAR9->VAR14.VAR15) {
+
+VAR11->VAR16 = VAR17;
+}
+
+*VAR5 = VAR18; 
+
+
+VAR11->VAR19 = VAR9->VAR14.VAR20;
+
+
+if(VAR9->VAR14.VAR21 && VAR9->VAR14.VAR20)
+
+VAR6 = FUN4(VAR3);
+else
+
+VAR6 = FUN5(VAR3);
+
+if(VAR6)
+return VAR6;
+
+
+VAR6 = FUN6(VAR3, VAR5);
+
+*VAR4 = VAR3->VAR22.VAR23[VAR24];
+
+if(*VAR5)
+FUN2(FUN3(VAR3->VAR9, ""));
+
+return VAR6;
+}

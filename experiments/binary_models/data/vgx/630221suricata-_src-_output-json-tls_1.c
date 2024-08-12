@@ -1,0 +1,1 @@
+static TmEcode FUN1 ( VAR1 * VAR2 , void * VAR3 ) { VAR4 * VAR5 = ( VAR4 * ) VAR3 ; if ( VAR5 == NULL ) { return VAR6 ; } FUN2 ( VAR5 -> VAR7 ) ; FUN3 ( VAR5 ) ; return VAR6 ; }

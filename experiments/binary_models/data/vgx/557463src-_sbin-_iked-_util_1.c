@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , in_port_t VAR3 ) { switch ( VAR2 -> VAR4 ) { case VAR5 : ( ( VAR6 * ) VAR2 ) -> VAR7 = VAR3 ; ( ( VAR6 * ) VAR2 ) -> VAR8 = sizeof ( VAR6 ) ; break ; case VAR9 : ( ( VAR10 * ) VAR2 ) -> VAR11 = VAR3 ; ( ( VAR10 * ) VAR2 ) -> VAR12 = sizeof ( VAR10 ) ; break ; default : VAR13 = VAR14 ; return ( - 1 ) ; } return ( 0 ) ; }

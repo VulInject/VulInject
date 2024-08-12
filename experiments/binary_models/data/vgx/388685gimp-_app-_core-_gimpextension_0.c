@@ -1,0 +1,124 @@
+FUN1 (VAR1  *VAR2,
+VAR3        **VAR4)
+{
+VAR5     *VAR6;
+VAR7 *VAR8;
+VAR7 *VAR9;
+VAR10 *VAR11;
+VAR12     *VAR13;
+VAR12     *VAR14;
+gboolean   VAR15     = VAR16;
+gboolean   VAR17 = VAR16;
+
+FUN2 (&VAR2->VAR18->VAR6);
+
+
+VAR13 = FUN3 ("",
+FUN4 (FUN5 (VAR2)));
+VAR14 = FUN6 (VAR2->VAR18->VAR14, VAR13, NULL);
+
+VAR6 = FUN7 ();
+VAR15 = FUN8 (VAR6, VAR14,
+VAR19,
+VAR4);
+FUN9 (VAR14);
+if (VAR15 && FUN10 (VAR6) != VAR20)
+{
+
+if (VAR4 && *VAR4 == NULL)
+*VAR4 = FUN11 (VAR21,
+VAR22,
+FUN12(""VAR23\""%VAR24\""),
+FUN13 (FUN10 (VAR6)));
+VAR15 = VAR16;
+}
+
+VAR8 = FUN14 (VAR6);
+if (VAR15 &&
+! FUN15 (VAR8, "",
+VAR25, NULL))
+{
+
+if (VAR4 && *VAR4 == NULL)
+*VAR4 = FUN11 (VAR21,
+VAR22,
+FUN12(""VAR26.VAR27.VAR28\""));
+VAR15 = VAR16;
+}
+
+if (VAR15 &&
+FUN16 (FUN17 (VAR6),
+FUN4 (VAR2)) != 0)
+{
+
+if (VAR4 && *VAR4 == NULL)
+*VAR4 = FUN11 (VAR21,
+VAR29,
+FUN12(""%VAR24\""%VAR24\""),
+FUN17 (VAR6), FUN4 (VAR2));
+VAR15 = VAR16;
+}
+
+VAR11 = FUN18 (VAR6);
+if (VAR15 && (! VAR11 || ! FUN19 (VAR11)))
+{
+
+if (VAR4 && *VAR4 == NULL)
+*VAR4 = FUN11 (VAR21,
+VAR30,
+FUN12(""));
+VAR15 = VAR16;
+}
+
+VAR9 = FUN20 (VAR6);
+if (VAR15 && VAR9)
+{
+gint VAR31;
+
+
+
+for (VAR31 = 0; VAR31 < VAR9->VAR32; VAR31++)
+{
+VAR33 *VAR34 = FUN21 (VAR9, VAR31);
+
+if (FUN22 (VAR34) == VAR35 &&
+FUN16 (FUN23 (VAR34), "") == 0)
+{
+VAR17 = VAR36;
+if (! FUN24 (VAR34, VAR37, VAR4))
+{
+VAR15 = VAR16;
+break;
+}
+}
+else if (VAR4 && *VAR4 == NULL)
+{
+
+*VAR4 = FUN11 (VAR21,
+VAR29,
+FUN12(""%VAR24\""),
+FUN23 (VAR34),
+FUN25 (FUN22 (VAR34)));
+VAR15 = VAR16;
+break;
+}
+}
+}
+if (! VAR17)
+{
+VAR15 = VAR16;
+if (VAR4 && *VAR4 == NULL)
+{
+*VAR4 = FUN11 (VAR21,
+VAR29,
+FUN12(""));
+}
+}
+
+if (VAR15)
+VAR2->VAR18->VAR6 = VAR6;
+else
+FUN26 (VAR6);
+
+return VAR15;
+}

@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR2 -> VAR2 ) ; const char * VAR5 = FUN3 ( & VAR4 -> VAR2 ) ; bool VAR6 = ( VAR4 -> class >> 8 ) == VAR7 ; int VAR8 ; FUN4 ( "" , VAR6 ?"" : "" , VAR5 ) ; if ( VAR6 ) { VAR8 = FUN5 ( VAR4 , & VAR9 ) ; } return 0 ; }

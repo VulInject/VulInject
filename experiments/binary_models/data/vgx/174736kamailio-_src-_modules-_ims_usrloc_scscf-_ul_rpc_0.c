@@ -1,0 +1,147 @@
+static void FUN1(VAR1* VAR2, void* VAR3) {
+int VAR4, VAR5;
+VAR6 *VAR7;
+str VAR8;
+int VAR9;
+VAR10* VAR11;
+struct VAR12* VAR13;
+VAR14* VAR15;
+void *VAR16, *VAR17, *VAR18, *VAR19, *VAR20, *VAR21, *VAR22;
+char VAR23[21 + 16]; 
+
+if (VAR2->FUN2(VAR3, "", &VAR8) < 1) {
+VAR2->FUN3(VAR3, 400, "");
+return;
+}
+
+FUN4("", VAR8.VAR24, VAR8.VAR25);
+
+VAR9 = FUN5("", &VAR11);
+if (VAR9 != 0) {
+FUN6("");
+return;
+}
+
+FUN7(VAR11, &VAR8);
+VAR9 = FUN8(VAR11, &VAR8, &VAR13);
+if (VAR9 != 0) {
+FUN9(VAR11, &VAR8);
+return;
+}
+
+
+if (VAR2->FUN10(VAR3, "", &VAR16) < 0) {
+VAR2->FUN3(VAR3, 500, "");
+FUN9(VAR11, &VAR8);
+return;
+}
+
+if (VAR2->FUN11(VAR16, "",
+"", &VAR8,
+"", FUN12(VAR13->VAR26),
+"", VAR13->VAR27,
+"", &VAR13->VAR28,
+"", &VAR13->VAR29,
+"", &VAR13->VAR30,
+"", &VAR13->VAR31
+) < 0) {
+VAR2->FUN3(VAR3, 500, "");
+FUN9(VAR11, &VAR8);
+return;
+}
+
+if (VAR2->FUN11(VAR16, "", "", &VAR17) < 0) {
+VAR2->FUN3(VAR3, 500, "");
+FUN9(VAR11, &VAR8);
+return;
+}
+
+VAR32* VAR33 = VAR13->VAR25;
+FUN13(VAR33);
+
+if (VAR2->FUN11(VAR17, "", "", &VAR33->VAR34, "", &VAR21) < 0) {
+VAR2->FUN3(VAR3, 500, "");
+FUN14(VAR33);
+FUN9(VAR11, &VAR8);
+return;
+}
+
+
+for (VAR4 = 0; VAR4 < VAR33->VAR35; VAR4++) {
+sprintf(VAR23, "", VAR4 + 1);
+if (VAR2->FUN11(VAR21, "", VAR23, &VAR20) < 0) {
+VAR2->FUN3(VAR3, 500, "");
+FUN14(VAR33);
+FUN9(VAR11, &VAR8);
+return;
+}
+if (VAR2->FUN11(VAR20, "", "", &VAR22) < 0) {
+VAR2->FUN3(VAR3, 500, "");
+FUN14(VAR33);
+FUN9(VAR11, &VAR8);
+return;
+}
+
+for (VAR5 = 0; VAR5 < VAR33->VAR36[VAR4].VAR37; VAR5++) {
+sprintf(VAR23, "", VAR5 + 1);
+if (VAR2->FUN11(VAR22, "", VAR23, &VAR33->VAR36[VAR4].VAR38[VAR5].VAR39) < 0) {
+VAR2->FUN3(VAR3, 500, "");
+FUN14(VAR33);
+FUN9(VAR11, &VAR8);
+return;
+}
+}
+}
+
+FUN14(VAR33);
+
+
+if (VAR2->FUN11(VAR16, "", "", &VAR18) < 0) {
+VAR2->FUN3(VAR3, 500, "");
+FUN9(VAR11, &VAR8);
+return;
+}
+
+VAR4 = 0;
+
+
+VAR7 = VAR13->VAR40.VAR41;
+while (VAR7) {
+VAR15 = VAR7->VAR15;
+
+if (!VAR42.VAR25 || (VAR42.VAR24 <= VAR15->VAR43.VAR24)) {
+if (VAR42.VAR25 && VAR42.VAR24 <= VAR15->VAR43.VAR24) {
+FUN15(VAR42.VAR25);
+}
+VAR44 = VAR15->VAR43.VAR24 + 1;
+VAR42.VAR25 = (char*) FUN16(VAR44);
+if (!VAR42.VAR25) {
+FUN6("");
+VAR2->FUN3(VAR3, 500, "");
+FUN9(VAR11, &VAR8);
+return;
+}
+}
+memcpy(VAR42.VAR25, VAR15->VAR43.VAR25, VAR15->VAR43.VAR24);
+VAR42.VAR25[VAR15->VAR43.VAR24] = '';
+VAR42.VAR24 = VAR15->VAR43.VAR24;
+
+FUN4("", VAR42.VAR25);
+if (VAR2->FUN11(VAR18, "", VAR42.VAR25, &VAR19) < 0) {
+VAR2->FUN3(VAR3, 500, "");
+FUN9(VAR11, &VAR8);
+return;
+}
+if (VAR2->FUN11(VAR19, "",
+"", VAR15->VAR45 - FUN17(NULL),
+"", &VAR15->VAR46) < 0) {
+VAR2->FUN3(VAR3, 500, "");
+FUN9(VAR11, &VAR8);
+return;
+}
+VAR7 = VAR7->VAR47;
+}
+
+FUN9(VAR11, &VAR8);
+
+}

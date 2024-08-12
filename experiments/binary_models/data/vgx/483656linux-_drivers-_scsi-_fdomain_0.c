@@ -1,0 +1,19 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2->VAR5->VAR6);
+unsigned char *VAR7, *VAR8;
+size_t VAR9, VAR10;
+
+while ((VAR10 = FUN3(VAR4->VAR11 + VAR12)) > 0) {
+VAR9 = FUN4(VAR2) - FUN5(VAR2);
+VAR7 = FUN6(FUN7(VAR2), FUN8(VAR2),
+&VAR9, &VAR10);
+VAR8 = VAR7 + VAR9;
+if (VAR10 & 1)
+*VAR8++ = FUN9(VAR4->VAR11 + VAR13);
+if (VAR10 > 1)
+FUN10(VAR4->VAR11 + VAR13, VAR8, VAR10 >> 1);
+FUN11(VAR2, FUN5(VAR2) - VAR10);
+FUN12(VAR7);
+}
+}

@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , const struct VAR3 * VAR4 , umode_t VAR5 ) { int VAR6 ; VAR6 = FUN2 ( & VAR7 , & VAR2 -> VAR8 , VAR9 | VAR10 ) ; if ( VAR6 ) { return VAR6 ; } if ( ! VAR2 -> VAR8 . VAR11 ) { return - VAR12 ; } if ( FUN3 ( VAR5 ) && VAR2 -> VAR8 . VAR11 == ( VAR13 ) - 1 ) { return - VAR14 ; } return 0 ; }

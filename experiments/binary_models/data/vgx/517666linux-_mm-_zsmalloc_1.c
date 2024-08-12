@@ -1,0 +1,1 @@
+unsigned long FUN1 ( struct VAR1 * VAR2 ) { int VAR3 ; struct VAR4 * class ; cfs_time_t VAR5 = 0 ; for ( VAR3 = VAR6 - 1 ; VAR3 >= 0 ; VAR3 -- ) { class = VAR2 -> VAR4 [ VAR3 ] ; if ( class -> VAR7 != VAR3 ) { continue ; } VAR5 += FUN2 ( VAR2 , class ) ; } FUN3 ( VAR5 , & VAR2 -> VAR8 . VAR9 ) ; return VAR5 ; }

@@ -1,0 +1,1 @@
+const char *FUN1(const VAR1 *VAR2) { return FUN2(FUN3(VAR2)); }

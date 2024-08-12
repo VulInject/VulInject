@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 ) { u32 VAR3 ; VAR3 = FUN2 ( VAR4 , NULL ) ; VAR3 &= ~ 0xFF ; VAR3 |= 0xF7 ; FUN3 ( VAR4 , VAR3 ) ; VAR3 = FUN2 ( VAR5 ) ; VAR3 &= ~ 0xFF ; VAR3 |= 0xF7 ; FUN3 ( VAR5 , VAR3 ) ; VAR3 = FUN2 ( VAR6 ) ; VAR3 &= ~ 0xFF ; VAR3 |= 0xF7 ; FUN3 ( VAR6 , VAR3 ) ; FUN4 ( 16 ) ; return 0 ; }

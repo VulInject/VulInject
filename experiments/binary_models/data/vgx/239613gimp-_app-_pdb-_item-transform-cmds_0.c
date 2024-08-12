@@ -1,0 +1,91 @@
+FUN1 (VAR1         *VAR2,
+VAR3                  *VAR4,
+VAR5           *VAR6,
+VAR7          *VAR8,
+const VAR9  *VAR10,
+VAR11               **VAR12)
+{
+gboolean VAR13 = VAR14;
+VAR9 *VAR15;
+VAR16 *VAR17;
+gdouble VAR18;
+gdouble VAR19;
+gdouble VAR20;
+gdouble VAR21;
+
+VAR17 = FUN2 (FUN3 (VAR10, 0));
+VAR18 = FUN4 (FUN3 (VAR10, 1));
+VAR19 = FUN4 (FUN3 (VAR10, 2));
+VAR20 = FUN4 (FUN3 (VAR10, 3));
+VAR21 = FUN4 (FUN3 (VAR10, 4));
+
+if (VAR13)
+{
+gint VAR22, VAR23, VAR24, VAR25;
+
+VAR13 = FUN5 (VAR17, NULL,
+VAR26 |
+VAR27, VAR12);
+
+if (VAR13 &&
+FUN6 (VAR17, &VAR22, &VAR23, &VAR24, &VAR25))
+{
+VAR28 *VAR29 = FUN7 (VAR6);
+VAR30      *VAR31       = FUN8 (VAR17);
+VAR32    *VAR33        = FUN9 (VAR31);
+GimpMatrix3     VAR34;
+gint            VAR35, VAR36;
+
+FUN10 (VAR17, &VAR35, &VAR36);
+VAR22 += VAR35;
+VAR23 += VAR36;
+
+
+FUN11 (&VAR34);
+FUN12 (&VAR34, VAR18, VAR19, VAR20, VAR21);
+
+if (VAR8)
+FUN13 (VAR8, VAR37, FUN14(""));
+
+if (FUN15 (VAR17)                             &&
+VAR17 != FUN16 (VAR33)                            &&
+! FUN17 (FUN18 (VAR17)) &&
+! FUN19 (VAR33))
+{
+VAR38 *VAR39;
+
+VAR39 = FUN20 (FUN21 (VAR17),
+VAR6, &VAR34,
+VAR29->VAR40,
+VAR29->VAR41,
+VAR29->VAR42,
+VAR8);
+
+if (VAR39)
+VAR17 = FUN16 (VAR39);
+else
+VAR13 = VAR37;
+}
+else
+{
+FUN22 (VAR17, VAR6, &VAR34,
+VAR29->VAR40,
+VAR29->VAR41,
+FUN23 (
+VAR17, VAR29->VAR42),
+VAR8);
+}
+
+if (VAR8)
+FUN24 (VAR8);
+}
+}
+
+VAR15 = FUN25 (VAR2, VAR13,
+VAR12 ? *VAR12 : NULL);
+
+if (VAR13)
+FUN26 (FUN3 (VAR15, 1), VAR17);
+
+return VAR15;
+}

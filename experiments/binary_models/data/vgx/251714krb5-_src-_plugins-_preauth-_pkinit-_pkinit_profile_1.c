@@ -1,0 +1,1 @@
+krb5_error_code FUN1 ( krb5_context VAR1 , const char * VAR2 , const char * VAR3 , int VAR4 , int * VAR5 ) { char * VAR6 = NULL ; krb5_error_code VAR7 ; VAR7 = FUN2 ( VAR1 , VAR2 , VAR3 , & VAR6 ) ; if ( VAR7 == 0 ) { * VAR5 = FUN3 ( VAR6 ) ; } else { * VAR5 = VAR4 ; } return 0 ; }

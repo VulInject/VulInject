@@ -1,0 +1,27 @@
+void FUN1(VAR1 *VAR2)
+{
+    VAR2->VAR3 = true;
+    VAR4 *VAR5 = VAR2->VAR5;
+    bool VAR6 = FUN2(&VAR5->VAR7);
+    VAR2->VAR8 = -1;
+    VAR2->VAR9 = -1;
+    VAR2->VAR10.VAR11 = 44100;
+    VAR2->VAR10.VAR12 = 2;
+    VAR2->VAR10.VAR13 = VAR14;
+    VAR2->VAR10.VAR15 = 0;
+    FUN3(&VAR2->VAR16);
+    VAR2->VAR17 = FUN4(VAR18, VAR2);
+    FUN5(&VAR5->VAR7, VAR2, VAR19);
+    if (VAR6)
+    {
+        FUN6(VAR5);
+    }
+    FUN7(VAR5->VAR20.VAR21);
+    FUN8(VAR2, "", 12);
+    FUN9(VAR2);
+    FUN10(VAR2, VAR22, 12);
+    if (VAR2->VAR5->VAR23)
+        VAR2->VAR24 = FUN11(VAR25, VAR2);
+    VAR2->VAR26.VAR27 = VAR28;
+    FUN12(&VAR2->VAR26);
+}

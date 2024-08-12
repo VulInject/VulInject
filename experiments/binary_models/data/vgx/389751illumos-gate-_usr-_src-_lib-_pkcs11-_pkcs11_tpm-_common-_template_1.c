@@ -1,0 +1,1 @@
+CK_BBOOL FUN1 ( VAR1 * VAR2 , CK_ATTRIBUTE_TYPE VAR3 , VAR4 * * VAR5 ) { VAR6 * VAR7 = NULL ; VAR4 * VAR8 = NULL ; VAR7 = VAR2 -> VAR9 ; while ( VAR7 != NULL ) { VAR8 = ( VAR4 * ) VAR7 -> VAR10 ; if ( VAR3 == VAR8 -> VAR3 ) { * VAR5 = VAR8 ; return ( VAR11 ) ; } VAR7 = VAR7 -> VAR12 ; } * VAR5 = NULL ; return ( VAR13 ) ; }

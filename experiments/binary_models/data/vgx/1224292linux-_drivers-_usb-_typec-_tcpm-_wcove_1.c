@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , bool VAR3 , enum typec_role VAR4 , enum typec_data_role VAR5 ) { struct VAR6 * VAR7 = FUN2 ( VAR2 ) ; unsigned int VAR8 ; int VAR9 ; VAR9 = FUN3 ( VAR7 , VAR10 , VAR5 == VAR11 ?VAR12 : VAR13 ) ; VAR8 = VAR4 ; VAR8 |= VAR5 << VAR14 ; VAR8 |= VAR15 << VAR16 ; return FUN4 ( VAR7 -> VAR17 , VAR18 , VAR8 ) ; }

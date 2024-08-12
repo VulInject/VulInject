@@ -1,0 +1,1 @@
+static unsigned long FUN1 ( const char * VAR1 , unsigned long VAR2 ) { unsigned long VAR3 = 0 ; while ( VAR2 -- ) { VAR3 ++ ; } return VAR3 ; }

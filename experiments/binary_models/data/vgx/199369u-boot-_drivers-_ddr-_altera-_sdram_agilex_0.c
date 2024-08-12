@@ -1,0 +1,132 @@
+int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+struct VAR5 *VAR6 = FUN3(VAR2);
+u32 VAR7;
+int VAR8;
+phys_size_t VAR9;
+struct bd_info VAR10 = {0};
+
+
+if (FUN4()) {
+FUN5("");
+return -VAR11;
+}
+
+
+for (VAR7 = 0; VAR7 < 3; VAR7++) {
+VAR8 = FUN6((const void *)(VAR4->VAR12 +
+VAR13),
+VAR14, true, 1000,
+false);
+if (!VAR8)
+break;
+
+FUN7(VAR4);
+}
+
+if (VAR8) {
+FUN8("");
+return -VAR11;
+}
+FUN5("");
+
+
+
+u32 VAR15;
+
+VAR15 = FUN9(VAR4, VAR16);
+VAR15 = (VAR15 & 0xFF) >> 5;
+
+
+VAR15 |= (FUN9(VAR4, VAR17) & 0x4);
+FUN10(VAR4, VAR15, VAR18);
+
+
+FUN10(VAR4, FUN9(VAR4, VAR19), VAR20);
+
+
+phys_size_t VAR21 = FUN11(VAR4);
+
+if (VAR21 <= 0)
+VAR9 = VAR22;
+else
+VAR9 = VAR21;
+
+
+VAR8 = FUN12(VAR23->VAR24, NULL, 0, NULL,
+(VAR25 *)&VAR23->VAR26, &VAR10);
+if (VAR8) {
+FUN8("");
+return -VAR27;
+}
+
+if (VAR23->VAR26 != VAR9) {
+FUN13("",
+VAR23->VAR26 >> 20);
+FUN13("",
+VAR9 >> 20);
+}
+
+if (VAR23->VAR26 > VAR9) {
+FUN13("");
+FUN13("");
+FUN14();
+}
+
+FUN13("", VAR23->VAR26 >> 20);
+
+
+
+FUN15(VAR23->VAR26 - 1,
+VAR28);
+FUN15(0x1F, VAR29);
+
+
+FUN15(VAR23->VAR26 - 1,
+VAR30);
+
+
+FUN15(VAR31 | VAR32,
+VAR33);
+
+u32 VAR34 = FUN9(VAR4, VAR35);
+
+
+if (FUN16(VAR34)) {
+FUN17(VAR4->VAR12 + VAR36,
+(VAR37 |
+VAR38 |
+VAR39));
+FUN18(VAR4->VAR12 + VAR36,
+(VAR37 |
+VAR38));
+FUN17(VAR4->VAR12 + VAR40,
+(VAR41 |
+VAR42));
+FUN17(VAR4->VAR12 + VAR43,
+VAR44);
+
+if (!FUN19())
+FUN20(&VAR10);
+} else {
+FUN18(VAR4->VAR12 + VAR36,
+(VAR37 |
+VAR38 |
+VAR39));
+FUN18(VAR4->VAR12 + VAR40,
+(VAR41 |
+VAR42));
+}
+
+
+FUN21(VAR45, VAR46);
+
+FUN22(&VAR10);
+
+VAR6->VAR47.VAR48 = VAR10.VAR49[0].VAR50;
+VAR6->VAR47.VAR21 = VAR23->VAR26;
+
+FUN5("");
+return 0;
+}

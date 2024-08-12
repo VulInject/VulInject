@@ -1,0 +1,1 @@
+int FUN1 ( void ) { if ( ! FUN2 ( ) ) { return 0 ; } if ( ! VAR1 ) { return 1 ; } if ( VAR2 || VAR3 || VAR4 ) { FUN3 ( "" ) ; } VAR4 = 0 ; VAR3 = 0 ; return 1 ; }

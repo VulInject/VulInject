@@ -1,0 +1,1 @@
+static krb5_enctype FUN1 ( krb5_cksumtype VAR1 ) { const struct VAR2 * VAR3 ; int VAR4 ; if ( VAR1 == VAR5 ) { return VAR6 ; } VAR3 = FUN2 ( VAR1 ) ; for ( VAR4 = 0 ; VAR4 < VAR7 ; VAR4 ++ ) { if ( VAR8 [ VAR4 ] . VAR9 == VAR3 -> VAR9 ) { return VAR4 ; } } return 0 ; }

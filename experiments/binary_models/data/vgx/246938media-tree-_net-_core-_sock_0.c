@@ -1,0 +1,42 @@
+struct VAR1 *FUN1(struct VAR2 *VAR3, unsigned long VAR4,
+unsigned long VAR5, int VAR6,
+int *VAR7, int VAR8)
+{
+struct VAR1 *VAR9;
+long VAR10;
+int VAR11;
+
+VAR10 = FUN2(VAR3, VAR6);
+for (;;) {
+VAR11 = FUN3(VAR3);
+if (VAR11 != 0)
+goto VAR12;
+
+VAR11 = -VAR13;
+if (VAR3->VAR14 & VAR15)
+goto VAR12;
+
+if (FUN4(VAR3) < VAR3->VAR16)
+break;
+
+FUN5(VAR17, VAR3);
+FUN6(VAR18, &VAR3->VAR19->VAR20);
+VAR11 = -VAR21;
+if (!VAR10)
+goto VAR12;
+if (FUN7(VAR22))
+goto VAR23;
+VAR10 = FUN8(VAR3, VAR10);
+}
+VAR9 = FUN9(VAR4, VAR5, VAR8,
+VAR7, VAR3->VAR24);
+if (VAR9)
+FUN10(VAR9, VAR3);
+return VAR9;
+
+VAR23:
+VAR11 = FUN11(VAR10);
+VAR12:
+*VAR7 = VAR11;
+return NULL;
+}

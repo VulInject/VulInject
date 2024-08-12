@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( const char * VAR2 ) { VAR1 * VAR3 ; if ( ! VAR2 ) { return VAR4 ; } VAR3 = VAR5 ; while ( VAR3 ) { if ( FUN2 ( VAR3 ) && strcmp ( VAR2 , VAR3 -> VAR2 ) == 0 ) { return VAR3 ; } VAR3 = VAR3 -> VAR6 ; } return NULL ; }

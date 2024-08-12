@@ -1,0 +1,1 @@
+int FUN1 ( int VAR1 ) { sigset_t VAR2 ; FUN2 ( & VAR2 ) ; FUN3 ( & VAR2 , VAR3 ) ; FUN3 ( & VAR2 , VAR4 ) ; FUN3 ( & VAR2 , VAR5 ) ; struct timespec VAR6 ; VAR6 . VAR7 = VAR1 ; return VAR8 = FUN4 ( & VAR2 , NULL , & VAR6 ) ; }

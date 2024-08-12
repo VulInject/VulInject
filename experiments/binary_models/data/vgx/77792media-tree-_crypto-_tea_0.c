@@ -1,0 +1,27 @@
+static void FUN1(struct VAR1 *VAR2, VAR3 *VAR4, const VAR3 *VAR5)
+{
+u32 VAR6, VAR7, VAR8, VAR9 = 0;
+u32 VAR10, VAR11, VAR12, VAR13;
+struct VAR14 *VAR15 = FUN2(VAR2);
+const VAR16 *VAR17 = (const VAR16 *)VAR5;
+VAR16 *VAR18 = (VAR16 *)VAR4;
+
+VAR6 = FUN3(VAR17[0]);
+VAR7 = FUN3(VAR17[1]);
+
+VAR10 = VAR15->VAR19[0];
+VAR11 = VAR15->VAR19[1];
+VAR12 = VAR15->VAR19[2];
+VAR13 = VAR15->VAR19[3];
+
+VAR8 = VAR20;
+
+while (VAR8-- > 0) {
+VAR9 += VAR21;
+VAR6 += ((VAR7 << 4) + VAR10) ^ (VAR7 + VAR9) ^ ((VAR7 >> 5) + VAR11);
+VAR7 += ((VAR6 << 4) + VAR12) ^ (VAR6 + VAR9) ^ ((VAR6 >> 5) + VAR13);
+}
+
+VAR18[0] = FUN4(VAR6);
+VAR18[1] = FUN4(VAR7);
+}

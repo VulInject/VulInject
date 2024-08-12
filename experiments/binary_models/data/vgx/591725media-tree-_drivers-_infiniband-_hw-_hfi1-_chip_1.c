@@ -1,0 +1,1 @@
+static u64 FUN1 ( const struct VAR1 * VAR2 , void * VAR3 , int VAR4 , int VAR5 , u64 VAR6 ) { struct VAR7 * VAR8 = ( VAR7 * ) VAR3 ; return 0 ; }

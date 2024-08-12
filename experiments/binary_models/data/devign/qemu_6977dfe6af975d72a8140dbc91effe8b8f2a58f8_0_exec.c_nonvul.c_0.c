@@ -1,0 +1,1 @@
+VAR1 FUN1(VAR2 *VAR3, const char *VAR4, ram_addr_t VAR5) { return FUN2(VAR3, VAR4, VAR5, NULL); }

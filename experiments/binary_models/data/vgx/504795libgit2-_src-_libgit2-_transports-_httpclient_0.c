@@ -1,0 +1,20 @@
+int FUN1(
+VAR1 **VAR2,
+VAR3 *VAR4)
+{
+VAR1 *VAR5;
+
+FUN2(VAR2);
+
+VAR5 = FUN3(1, sizeof(VAR1));
+FUN4(VAR5);
+
+FUN5(&VAR5->VAR6, VAR7);
+FUN4(VAR5->VAR6.VAR8);
+
+if (VAR4)
+memcpy(&VAR5->VAR4, VAR4, sizeof(VAR3));
+
+*VAR2 = VAR5;
+return 0;
+}

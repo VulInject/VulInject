@@ -1,0 +1,35 @@
+static void FUN1(void *VAR1, int VAR2, const char *VAR3, va_list VAR4,
+AVBPrint VAR5[4], int *VAR6, int VAR7[2])
+{
+VAR8* VAR9 = VAR1 ? *(VAR8 **) VAR1 : NULL;
+FUN2(VAR5+0, 0, VAR10);
+FUN2(VAR5+1, 0, VAR10);
+FUN2(VAR5+2, 0, VAR10);
+FUN2(VAR5+3, 0, 65536);
+
+if(VAR7) VAR7[0] = VAR7[1] = VAR11 + 16;
+if (*VAR6 && VAR9) {
+if (VAR9->VAR12) {
+VAR8** VAR13 = *(VAR8 ***) (((VAR14 *) VAR1) +
+VAR9->VAR12);
+if (VAR13 && *VAR13) {
+FUN3(VAR5+0, "",
+(*VAR13)->FUN4(VAR13), VAR13);
+if(VAR7) VAR7[0] = FUN5(VAR13);
+}
+}
+FUN3(VAR5+1, "",
+VAR9->FUN4(VAR1), VAR1);
+if(VAR7) VAR7[1] = FUN5(VAR1);
+}
+
+if (*VAR6 && (VAR2 > VAR15) && (VAR16 & VAR17))
+FUN3(VAR5+2, "", FUN6(VAR2));
+
+FUN7(VAR5+3, VAR3, VAR4);
+
+if(*VAR5[0].VAR18 || *VAR5[1].VAR18 || *VAR5[2].VAR18 || *VAR5[3].VAR18) {
+char VAR19 = VAR5[3].VAR20 && VAR5[3].VAR20 <= VAR5[3].VAR21 ? VAR5[3].VAR18[VAR5[3].VAR20 - 1] : 0;
+*VAR6 = VAR19 == '' || VAR19 == '';
+}
+}

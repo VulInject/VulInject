@@ -1,0 +1,1 @@
+static void VAR1 * VAR2 ; static void VAR1 * VAR3 ; static struct VAR4 * VAR5 ; static u32 VAR6 ; static int VAR7 ; static struct VAR4 * VAR8 ; static struct VAR4 * VAR9 ; static FUN1 ( VAR10 , VAR11 ) ; static FUN2 ( VAR12 ) ; static phys_addr_t VAR13 ; static inline bool FUN3 ( irq_hw_number_t VAR14 ) { return false ; }

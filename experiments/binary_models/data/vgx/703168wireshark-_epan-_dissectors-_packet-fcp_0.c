@@ -1,0 +1,39 @@
+static void
+FUN1(VAR1 *VAR2, VAR3 *VAR4, int VAR5)
+{
+VAR6 *VAR7;
+guint8      VAR8;
+static int * const VAR9[] = {
+&VAR10,
+&VAR11,
+&VAR12,
+&VAR13,
+&VAR14,
+&VAR15,
+&VAR16,
+&VAR17,
+NULL
+};
+
+static int * const VAR18[] = {
+&VAR10,
+&VAR13,
+&VAR14,
+&VAR15,
+&VAR16,
+&VAR17,
+NULL
+};
+
+VAR8 = FUN2(VAR4, VAR5);
+if (VAR8 & 0x80) {
+VAR7 = FUN3(VAR2, VAR4, VAR5, VAR19,
+VAR20, VAR9, VAR21, VAR22|VAR23);
+} else {
+VAR7 = FUN3(VAR2, VAR4, VAR5, VAR19,
+VAR20, VAR18, VAR21, VAR22|VAR23);
+}
+
+if (!VAR8)
+FUN4(VAR7, "");
+}

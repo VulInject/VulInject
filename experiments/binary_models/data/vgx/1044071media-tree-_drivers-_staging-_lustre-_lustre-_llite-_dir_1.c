@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( struct VAR2 * VAR3 , struct VAR4 * VAR5 , __u64 VAR6 ) { struct md_callback VAR7 ; struct VAR1 * VAR1 ; int VAR8 ; VAR7 . VAR9 = VAR10 ; VAR8 = FUN2 ( FUN3 ( VAR3 ) , VAR5 , & VAR7 , VAR6 , & VAR1 ) ; return VAR1 ; }

@@ -1,0 +1,36 @@
+static void FUN1(VAR1 *VAR2, const void *VAR3)
+{
+    VAR4 *VAR5 = NULL;
+    VAR6 *VAR7;
+    VAR8 *VAR9;
+    VAR10 *VAR11;
+    VAR12 *VAR13;
+    VAR14 *VAR15;
+    VAR4 *VAR16;
+    VAR7 = FUN2(VAR2, "");
+    FUN3(VAR7, &VAR5, NULL, &VAR17);
+    VAR9 = FUN4(VAR5);
+    FUN5(VAR9);
+    FUN6(FUN7(VAR9), ==, -42);
+    FUN8(VAR5);
+    VAR7 = FUN2(VAR2, "");
+    FUN3(VAR7, &VAR5, NULL, &VAR17);
+    VAR15 = FUN9(VAR5);
+    FUN5(VAR15 && FUN10(VAR15) == 3);
+    VAR16 = FUN11(VAR15, "");
+    FUN5(VAR16);
+    VAR9 = FUN4(VAR16);
+    FUN5(VAR9);
+    FUN6(FUN7(VAR9), ==, -42);
+    VAR16 = FUN11(VAR15, "");
+    FUN5(VAR16);
+    VAR11 = FUN12(VAR16);
+    FUN5(VAR11);
+    FUN5(FUN13(VAR11) == true);
+    VAR16 = FUN11(VAR15, "");
+    FUN5(VAR16);
+    VAR13 = FUN14(VAR16);
+    FUN5(VAR13);
+    FUN15(FUN16(VAR13), ==, "");
+    FUN8(VAR5);
+}

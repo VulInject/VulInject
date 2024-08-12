@@ -1,0 +1,1 @@
+const char * FUN1 ( char * VAR1 , int VAR2 , int VAR3 ) { if ( VAR3 < 256 ) { snprintf ( VAR1 , VAR2 , "" , VAR3 ) ; } else { snprintf ( VAR1 , VAR2 , "" , VAR3 ) ; } return VAR1 ; }

@@ -1,0 +1,1 @@
+bool FUN1 ( VAR1 * VAR2 ) { unsigned int new , VAR3 = FUN2 ( & VAR2 -> VAR4 ) ; { if ( VAR3 == 1 ) { return false ; } new = VAR3 - 1 ; if ( new > VAR3 ) { FUN3 ( new > VAR3 , "" ) ; return true ; } } ! FUN4 ( & VAR2 -> VAR4 , & VAR3 , new ) ; return true ; }

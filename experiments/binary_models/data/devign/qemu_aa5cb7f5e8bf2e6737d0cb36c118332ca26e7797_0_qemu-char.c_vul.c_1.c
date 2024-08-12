@@ -1,0 +1,20 @@
+static void FUN1(void)
+{
+    FUN2("", VAR1, NULL, VAR2);
+    FUN2("", VAR3, VAR4, VAR5);
+    FUN2("", VAR6, VAR7, VAR8);
+    FUN2("", VAR9, VAR10, VAR11);
+    FUN2("", VAR12, VAR13, VAR14);
+    FUN2("", VAR15, VAR16, VAR17);
+    FUN2("", VAR18, VAR19, VAR20);
+    FUN2("", VAR18, VAR19, VAR20);
+    FUN2("", VAR21, VAR22, VAR23);
+    FUN2("", VAR21, VAR22, VAR23);
+    FUN2("", VAR24, NULL, VAR25);
+    FUN2("", VAR26, NULL, VAR27);
+    FUN2("", VAR28, VAR29, VAR30);
+    FUN2("", VAR31, VAR32, VAR33);
+    FUN2("", VAR34, VAR10, VAR11);
+    FUN3(&VAR35);
+    FUN4(VAR36);
+}

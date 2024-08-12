@@ -1,0 +1,60 @@
+static void FUN1(struct VAR1 *VAR2, struct VAR1 *VAR3,
+const struct VAR4 *VAR5)
+{
+u32 VAR6[] = {
+[VAR7]  = 0xc800,
+[VAR8]  = 0xc900,
+[VAR9]  = 0xca00,
+[VAR10]  = 0xcc00,
+[VAR11] = 0xcb00,
+};
+struct VAR12 *VAR13 = VAR5->VAR13;
+i915_reg_t VAR14, VAR15;
+u32 VAR16, VAR17;
+int VAR18;
+
+if (FUN2(&VAR5->VAR19->VAR20, VAR5->VAR21 >= FUN3(VAR6)))
+return;
+
+if (VAR5->VAR21 == VAR7 && FUN4(VAR5->VAR19) == 9)
+return;
+
+if (!VAR2 && !VAR22.VAR23)
+FUN5(VAR5);
+
+VAR14.VAR24 = VAR6[VAR5->VAR21];
+for (VAR18 = 0; VAR18 < VAR25; VAR18++) {
+if (VAR2)
+VAR16 = FUN6(VAR2, VAR14);
+else
+VAR16 = VAR22.VAR26[VAR5->VAR21][VAR18];
+if (VAR3)
+VAR17 = FUN6(VAR3, VAR14);
+else
+VAR17 = VAR22.VAR26[VAR5->VAR21][VAR18];
+
+if (VAR16 != VAR17)
+FUN7(VAR13, VAR14, VAR17);
+
+VAR14.VAR24 += 4;
+}
+
+if (VAR5->VAR21 == VAR7) {
+VAR15.VAR24 = 0xb020;
+for (VAR18 = 0; VAR18 < VAR25 / 2; VAR18++) {
+if (VAR2)
+VAR16 = FUN6(VAR2, VAR15);
+else
+VAR16 = VAR22.VAR27[VAR18];
+if (VAR3)
+VAR17 = FUN6(VAR3, VAR15);
+else
+VAR17 = VAR22.VAR27[VAR18];
+
+if (VAR16 != VAR17)
+FUN7(VAR13, VAR15, VAR17);
+
+VAR15.VAR24 += 4;
+}
+}
+}

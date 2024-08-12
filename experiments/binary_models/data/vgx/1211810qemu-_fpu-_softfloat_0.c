@@ -1,0 +1,8 @@
+VAR1 FUN1(bfloat16 VAR2, VAR3 *VAR4)
+{
+FloatParts64 VAR5;
+
+FUN2(&VAR5, VAR2, VAR4);
+FUN3(&VAR5, VAR4);
+return FUN4(&VAR5, VAR4);
+}

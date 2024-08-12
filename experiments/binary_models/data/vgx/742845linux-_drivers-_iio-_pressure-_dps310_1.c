@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { int VAR3 ; u8 VAR4 [ 3 ] ; s32 VAR5 ; VAR3 = FUN2 ( VAR2 -> VAR6 , VAR7 , VAR4 , sizeof ( VAR4 ) ) ; VAR5 = ( VAR4 [ 0 ] << 16 ) | ( VAR4 [ 1 ] << 8 ) | VAR4 [ 2 ] ; VAR2 -> VAR8 = FUN3 ( VAR5 , 23 ) ; return 0 ; }

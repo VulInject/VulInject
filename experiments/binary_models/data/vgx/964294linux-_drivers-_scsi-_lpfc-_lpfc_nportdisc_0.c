@@ -1,0 +1,34 @@
+static VAR1
+FUN1(struct VAR2 *VAR3,
+struct VAR4 *VAR5,
+struct VAR6 *VAR7)
+{
+struct ls_rjt VAR8;
+VAR1 *VAR9;
+uint32_t VAR10;
+
+VAR9 = VAR7->VAR11->VAR12;
+VAR10 = *VAR9;
+if (VAR3->VAR13->VAR14) {
+
+if (VAR10 ==  VAR15)
+goto VAR16;
+} else {
+
+if (!VAR3->VAR17 && (VAR10 == VAR18))
+goto VAR16;
+}
+return 1;
+VAR16:
+FUN2(VAR3, VAR19, VAR20,
+""
+"",
+VAR10, VAR5->VAR21, VAR5->VAR22,
+VAR5->VAR23);
+memset(&VAR8, 0, sizeof(struct VAR24));
+VAR8.VAR25.VAR26.VAR27 = VAR28;
+VAR8.VAR25.VAR26.VAR29 = VAR30;
+FUN3(VAR3, VAR8.VAR25.VAR31, VAR7,
+VAR5, NULL);
+return 0;
+}

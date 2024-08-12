@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( struct VAR1 * VAR2 ) { while ( VAR2 != NULL ) { VAR2 = FUN2 ( VAR2 ) ; } return ( VAR2 ) ; }

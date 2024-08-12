@@ -1,0 +1,1 @@
+void FUN1 ( void ) { if ( VAR1 ) { VAR2 . close ( VAR1 , NULL ) ; VAR1 = NULL ; } }

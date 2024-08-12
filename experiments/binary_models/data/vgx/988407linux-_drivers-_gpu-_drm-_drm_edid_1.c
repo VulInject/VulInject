@@ -1,0 +1,1 @@
+static const struct VAR1 * FUN1 ( struct VAR1 * VAR1 , const struct VAR2 * VAR2 ) { if ( ! VAR2 ) { return NULL ; } memset ( VAR1 , 0 , sizeof ( * VAR1 ) ) ; VAR1 -> VAR2 = VAR2 ; VAR1 -> VAR3 = FUN2 ( VAR2 , NULL ) ; return VAR1 ; }

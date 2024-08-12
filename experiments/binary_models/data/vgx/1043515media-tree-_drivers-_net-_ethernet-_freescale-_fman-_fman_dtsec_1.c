@@ -1,0 +1,1 @@
+static u16 FUN1 ( struct VAR1 * VAR2 ) { struct dtsec_regs VAR3 * VAR4 = VAR2 -> VAR4 ; return ( VAR5 ) FUN2 ( & VAR4 -> VAR6 ) ; }

@@ -1,0 +1,63 @@
+static VAR1 FUN1(struct VAR2 *VAR3,
+struct VAR4 *VAR5)
+{
+struct VAR6 *VAR7 = FUN2(VAR5);
+unsigned int VAR8 = VAR5->VAR9;
+u_short VAR10;
+short VAR11, VAR12;
+unsigned long VAR13;
+
+FUN3(VAR5);
+
+FUN4(VAR5, "",
+VAR3->VAR14, FUN5(VAR8 + 2));
+
+if (VAR7->VAR15) {
+
+VAR5->VAR16.VAR17++;
+FUN4(VAR5, "");
+return VAR18;
+}
+VAR7->VAR15 = VAR3;
+
+VAR10 = VAR3->VAR14 >> 8;
+
+if (VAR10 > 7) {
+FUN6(VAR5, "", VAR10);
+FUN7 (VAR3);
+VAR7->VAR15 = NULL;
+VAR5->VAR16.VAR19++;
+return VAR20;		
+}
+
+VAR7->VAR21++;
+
+FUN8(&VAR7->VAR22, VAR13);
+FUN9(2);	
+
+
+if (VAR7->VAR23) {
+FUN10(VAR24, VAR8 + VAR25);
+VAR7->VAR23 = 0;
+}
+
+
+FUN10(VAR26 | VAR10, VAR8 + VAR25);
+for (VAR11 = VAR27; VAR11 >= 0; VAR11--) {
+VAR12 = FUN5(VAR8+VAR28);
+if (VAR12 & VAR29) {
+
+FUN10((VAR12&0xff00) | VAR29, VAR8 + VAR28);
+FUN11(VAR5);	
+FUN12(&VAR7->VAR22, VAR13);
+return VAR20;
+}
+}
+
+
+FUN4(VAR5, "");
+FUN10((VAR29 << 8) | (VAR12 & 0xff00), VAR8 + VAR28);
+FUN12(&VAR7->VAR22, VAR13);
+
+return VAR20;
+}

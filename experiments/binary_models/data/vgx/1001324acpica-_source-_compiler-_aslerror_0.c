@@ -1,0 +1,37 @@
+FUN1 (
+void)
+{
+UINT32                  VAR1;
+VAR2   *VAR3 = VAR4;
+VAR5       *VAR6;
+
+
+for (VAR1 = 0; VAR1 < VAR7; ++VAR1)
+{
+if (!VAR8[VAR1].VAR9)
+{
+FUN2 (VAR10, VAR11, NULL,
+VAR8[VAR1].VAR12);
+}
+}
+
+while (VAR3)
+{
+VAR6 = VAR3->VAR13;
+
+while (VAR6)
+{
+if (!VAR6->VAR9)
+{
+FUN3 (VAR10, VAR11,
+VAR6->VAR14, VAR6->VAR14,
+VAR6->VAR15, VAR6->VAR16,
+VAR6->VAR17, VAR3->VAR12);
+}
+
+VAR6 = VAR6->VAR18;
+}
+
+VAR3 = VAR3->VAR18;
+}
+}

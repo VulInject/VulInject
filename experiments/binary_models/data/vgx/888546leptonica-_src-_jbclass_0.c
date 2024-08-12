@@ -1,0 +1,81 @@
+VAR1
+FUN1(VAR2     *VAR3,
+l_int32  VAR4,
+l_int32  VAR5,
+l_int32  VAR6,
+VAR7   **VAR8,
+VAR9   **VAR10)
+{
+l_int32    VAR11, VAR12, VAR13;
+VAR7      *VAR14;
+VAR2       *VAR15, *VAR16, *VAR17;
+VAR9      *VAR18, *VAR19;
+
+if (!VAR8)
+return FUN2("", VAR20, 1);
+*VAR8 = NULL;
+if (!VAR10)
+return FUN2("", VAR20, 1);
+*VAR10 = NULL;
+if (!VAR3)
+return FUN2("", VAR20, 1);
+if (VAR4 != VAR21 && VAR4 != VAR22 &&
+VAR4 != VAR23)
+return FUN2("", VAR20, 1);
+
+FUN3(VAR3, &VAR11);
+if (VAR11) {
+*VAR8 = FUN4(0);
+*VAR10 = FUN5(0);
+return 0;
+}
+
+
+if (VAR4 == VAR21) {  
+VAR14 = FUN6(VAR3, &VAR18, 8);
+} else if (VAR4 == VAR22) {
+VAR15 = FUN7(VAR3, "", 0);
+VAR14 = FUN6(VAR15, &VAR19, 8);
+VAR18 = FUN8(VAR19, VAR3);
+FUN9(&VAR15);
+FUN10(&VAR19);
+} else {  
+
+
+VAR12 = FUN11(VAR3);
+if (VAR12 <= 200) {
+VAR13 = 1;
+VAR15 = FUN12(VAR3);
+} else if (VAR12 <= 400) {
+VAR13 = 2;
+VAR15 = FUN13(VAR3, 1, 0, 0, 0);
+} else {
+VAR13 = 4;
+VAR15 = FUN13(VAR3, 1, 1, 0, 0);
+}
+
+
+FUN14(VAR15, &VAR16, NULL, NULL);
+
+
+VAR17 = FUN15(VAR16, VAR13);
+
+
+VAR14 = FUN6(VAR17, &VAR19, 4);
+VAR18 = FUN8(VAR19, VAR3);
+FUN10(&VAR19);
+FUN9(&VAR15);
+FUN9(&VAR16);
+FUN9(&VAR17);
+}
+
+
+*VAR10 = FUN16(VAR18, VAR5, VAR6, VAR24,
+VAR25, NULL);
+*VAR8 = FUN17(VAR14, VAR5, VAR6, VAR24,
+VAR25, NULL);
+FUN10(&VAR18);
+FUN18(&VAR14);
+
+return 0;
+}

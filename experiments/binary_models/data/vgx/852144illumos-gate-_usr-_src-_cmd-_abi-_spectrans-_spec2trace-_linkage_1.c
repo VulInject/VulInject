@@ -1,0 +1,1 @@
+static void FUN1 ( char * , char * ) void FUN2 ( VAR1 * VAR2 ) { char * VAR3 = FUN3 ( ) , * VAR4 ; char VAR5 [ VAR6 ] ; FUN4 ( VAR7 , "" ) ; VAR4 = FUN5 ( VAR2 ) ; ( void ) sprintf ( VAR5 , "" , VAR3 , VAR4 ) ; FUN6 ( VAR5 , VAR2 ) ; ( void ) fprintf ( VAR8 , "" , VAR3 , VAR4 ) ; FUN1 ( VAR3 , VAR4 ) ; ( void ) fputs ( "" , VAR8 ) ; FUN4 ( VAR9 , "" ) ; }

@@ -1,0 +1,32 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+
+for (;;) {
+VAR4 = FUN2(sizeof(*VAR4), VAR5);
+if (!VAR4)
+break;
+
+VAR4->VAR6		= "";
+VAR4->VAR7		= FUN3(&VAR8);
+VAR4->VAR9		= VAR10;
+VAR4->VAR11		= VAR12;
+VAR4->VAR13	= VAR14;
+VAR4->VAR15		= sizeof(VAR4->VAR16);
+VAR4->VAR17[0].VAR15	= sizeof(VAR4->VAR16);
+VAR4->VAR17[0].VAR18	= &VAR4->VAR16;
+FUN4(&VAR4->VAR19, VAR20, VAR4->VAR17, 1, VAR4->VAR15);
+FUN5(&VAR4->VAR2, VAR21);
+
+if (FUN6(VAR22,
+VAR23,
+VAR24,
+(unsigned long)VAR4,
+VAR5,
+VAR4->VAR7) < 0)
+break;
+VAR4 = NULL;
+}
+
+FUN7(VAR4);
+}

@@ -1,0 +1,1 @@
+static int FUN1 ( ) { static int VAR1 = 0 ; if ( ! VAR1 ) { static WSADATA VAR2 ; int VAR3 = FUN2 ( FUN3 ( 2 , 2 ) , & VAR2 ) ; if ( VAR3 != 0 ) { VAR4 = FUN4 ( VAR3 , NULL ) ; return 0 ; } VAR1 = 1 ; } return 1 ; }

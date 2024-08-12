@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { char * VAR1 ; int VAR2 ; double VAR3 , VAR4 , VAR5 , VAR6 , VAR7 , VAR8 ; const char * VAR9 = "" VAR10 "" ; VAR11 ; for ( VAR2 = 0 ; VAR2 < VAR12 ; VAR2 ++ ) { VAR1 = FUN2 ( NULL , VAR9 ) ; } VAR13 ; FUN3 ( VAR7 + VAR8 , "" , VAR7 , VAR8 ) ; }

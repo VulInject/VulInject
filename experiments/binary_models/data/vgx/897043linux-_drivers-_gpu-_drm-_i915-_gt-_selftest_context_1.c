@@ -1,0 +1,1 @@
+static int FUN1 ( void * VAR1 ) { struct VAR2 * VAR3 = VAR1 ; struct VAR4 * VAR5 ; enum intel_engine_id VAR6 ; int VAR7 = 0 ; FUN2 ( , , ) { VAR7 = FUN3 ( VAR5 ) ; VAR7 = FUN4 ( VAR3 -> VAR8 ) ; if ( VAR7 ) { break ; } } return VAR7 ; }

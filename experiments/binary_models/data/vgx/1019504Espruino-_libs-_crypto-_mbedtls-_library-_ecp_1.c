@@ -1,0 +1,1 @@
+const VAR1 * FUN1 ( void ) { static int VAR2 = 0 ; if ( ! VAR2 ) { int VAR3 = 0 ; const VAR4 * VAR5 ; for ( VAR5 = FUN2 ( ) ; VAR5 -> VAR6 != VAR7 ; VAR5 ++ ) { VAR8 [ VAR3 ++ ] = VAR5 -> VAR6 ; } VAR8 [ VAR3 ] = VAR7 ; VAR2 = 1 ; } return ( VAR8 ) ; }

@@ -1,0 +1,173 @@
+static int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR2);
+struct VAR5 *VAR7;
+struct VAR8 *VAR9;
+struct VAR1 *VAR10;
+struct VAR5 *VAR11;
+struct VAR12 *VAR13;
+struct VAR14 *VAR15;
+struct VAR16 *VAR17, *VAR18;
+int VAR19;
+int VAR20 = 0;
+int VAR21;
+int VAR22;
+
+
+VAR7 = FUN3(VAR6, "", 0);
+if (!VAR7) {
+FUN4(VAR2, "");
+return -VAR23;
+}
+VAR9 = FUN5(VAR7);
+if (!VAR9) {
+FUN4(VAR2, "");
+return -VAR24;
+}
+VAR10 = &VAR9->VAR2;
+
+VAR13 = FUN6(VAR2, sizeof(*VAR13), VAR25);
+if (!VAR13) {
+FUN7(VAR7);
+VAR21 = -VAR26;
+goto VAR27;
+}
+VAR21 = FUN8(VAR2, VAR10, VAR13);
+FUN7(VAR7);
+if (VAR21)
+goto VAR27;
+VAR4->VAR13 = VAR13;
+
+
+VAR21 = FUN9(VAR6, "");
+if (VAR21 > 0) {
+if (VAR21 % 3) {
+VAR21 = -VAR23;
+goto VAR27;
+}
+
+VAR19 = VAR21 / 3;
+VAR15 = FUN10(VAR2, VAR19, sizeof(*VAR15),
+VAR25);
+if (!VAR15) {
+VAR21 = -VAR26;
+goto VAR27;
+}
+for (VAR22 = 0; VAR22 < VAR19; VAR22++) {
+u32 VAR28;
+
+FUN11(VAR6, "", 3 * VAR22,
+&VAR15[VAR22].VAR29);
+if (VAR15[VAR22].VAR29 >= VAR30) {
+VAR21 = -VAR23;
+goto VAR27;
+}
+FUN11(VAR6, "",
+3 * VAR22 + 1, &VAR28);
+VAR15[VAR22].VAR31 = VAR28;
+FUN11(VAR6, "",
+3 * VAR22 + 2, &VAR28);
+VAR15[VAR22].VAR32 = VAR28;
+}
+VAR4->VAR33 = VAR15;
+VAR4->VAR34 = VAR19;
+}
+
+
+VAR20 = FUN12(VAR6);
+if (!VAR20) {
+FUN4(VAR2, "");
+VAR21 = -VAR24;
+goto VAR27;
+}
+
+VAR17 = FUN10(VAR2, VAR20, sizeof(*VAR17), VAR25);
+if (!VAR17) {
+VAR21 = -VAR26;
+goto VAR27;
+}
+
+VAR18 = VAR17;
+FUN13(VAR6, VAR11) {
+const char *VAR35;
+int *VAR36;
+int VAR37;
+
+VAR21 = FUN14(VAR11, "",
+&VAR18->VAR38);
+if (VAR21)
+goto VAR39;
+
+VAR21 = FUN14(VAR11, "",
+&VAR18->VAR40);
+if (VAR21)
+goto VAR39;
+
+VAR21 = FUN14(VAR11, "",
+&VAR18->VAR41);
+if (VAR21)
+goto VAR39;
+
+VAR36 =
+FUN10(VAR2,
+VAR30, sizeof(*VAR36),
+VAR25);
+if (!VAR36) {
+VAR21 = -VAR26;
+goto VAR39;
+}
+
+for (VAR22 = 0; VAR22 < VAR30; VAR22++)
+VAR36[VAR22] = VAR42;
+
+VAR21 = FUN9(VAR11, "");
+if (VAR21 < 0 || VAR21 % 2) {
+VAR21 = -VAR23;
+goto VAR39;
+}
+VAR37 = VAR21 / 2;
+if (VAR37 > VAR30) {
+VAR21 = -VAR23;
+goto VAR39;
+}
+
+for (VAR22 = 0; VAR22 < VAR37; VAR22++) {
+int VAR29;
+int VAR43;
+
+FUN11(VAR11,
+"", 2 * VAR22, &VAR29);
+FUN11(VAR11,
+"", 2 * VAR22 + 1, &VAR43);
+if (VAR29 >= VAR30) {
+VAR21 = -VAR23;
+goto VAR39;
+}
+VAR36[VAR29] = VAR43;
+}
+VAR18->VAR36 = VAR36;
+
+if (!FUN15(VAR11, "", &VAR35))
+VAR18->VAR44 = VAR35;
+else
+VAR18->VAR44 = VAR11->VAR44;
+
+if (!FUN15(VAR11,
+"", &VAR35))
+VAR18->VAR45 = VAR35;
+
+VAR18++;
+}
+
+VAR4->VAR17 = VAR17;
+VAR4->VAR20 = VAR20;
+
+return 0;
+
+VAR39:
+FUN7(VAR11);
+VAR27:
+FUN16(VAR10);
+return VAR21;
+}

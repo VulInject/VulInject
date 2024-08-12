@@ -1,0 +1,243 @@
+static void FUN1(const char *VAR1, void *VAR2, void *VAR3)
+{
+struct VAR4 *VAR5 = (struct VAR4 *) VAR2;
+size_t VAR6 = FUN2(&VAR5->VAR7);
+struct VAR8 *VAR9 = (struct VAR8 *) VAR3;
+int VAR10 = VAR9->VAR11->VAR10;
+VAR12 *VAR13 = VAR9->VAR13;
+VAR14 *VAR15 = FUN3(VAR1);
+struct VAR16 *VAR17 = NULL, *VAR16 = NULL;
+const char *VAR18 = NULL;
+int VAR19 = 0;
+int VAR20 = -1;
+
+if (!(VAR9->VAR11->VAR21 & VAR22) && FUN4(VAR15)) {
+
+VAR23 *VAR24 = NULL;
+
+FUN5(VAR15, 0);
+VAR18 = FUN6(VAR15);
+
+VAR19 = FUN7(VAR18, &VAR24, NULL);
+FUN8(&VAR24);
+
+if (!VAR19) {
+
+VAR19 = FUN9(VAR18, &VAR17);
+
+if (VAR19) {
+syslog(VAR25, "",
+VAR18, FUN10(VAR19));
+}
+}
+else {
+mbentry_t VAR26 = VAR27;
+VAR23 *VAR28 = NULL;
+
+
+VAR19 = FUN11(FUN6(VAR15), &VAR28);
+if (VAR19 == VAR29) VAR19 = 0;
+
+if (!VAR19 && (VAR28 || !FUN12(VAR15))) {
+const VAR30 *VAR31 = FUN13(VAR15);
+VAR14 *VAR32 =
+FUN3(VAR28 ? VAR28->VAR33 : NULL);
+int VAR34 = FUN14(FUN13(VAR32));
+int VAR35 = FUN14(VAR31) - 1;
+
+
+if (VAR34 > VAR35) {
+
+VAR19 = FUN15(FUN6(VAR15),
+VAR36,
+NULL,
+0,
+VAR13->VAR37,
+VAR13->VAR38,
+0,
+0,
+0);
+
+int VAR39;
+for (VAR39 = VAR34; !VAR19 && VAR39 < VAR35; VAR39++) {
+
+FUN16(VAR32, FUN17(VAR31, VAR39));
+VAR26.VAR33 = (char *) FUN6(VAR32);
+VAR26.VAR40 = VAR36;
+VAR19 = FUN18(&VAR26,
+0,
+0,
+0,
+VAR13->VAR37,
+VAR13->VAR38,
+0,
+NULL);
+if (VAR19) {
+syslog(VAR25,
+"",
+FUN6(VAR32), FUN10(VAR19));
+break;
+}
+}
+}
+
+FUN19(&VAR32);
+}
+FUN8(&VAR28);
+
+if (!VAR19) {
+
+VAR26.VAR33 = (char *) VAR18;
+VAR26.VAR40 = VAR36;
+VAR19 = FUN18(&VAR26,
+0,
+0,
+0,
+VAR13->VAR37,
+VAR13->VAR38,
+0,
+&VAR17);
+}
+
+if (VAR19) {
+syslog(VAR25, "",
+VAR18, FUN10(VAR19));
+}
+else {
+
+struct buf VAR41 = VAR42;
+const char *VAR43 = "";
+
+FUN20(VAR1, VAR43,
+VAR13->VAR37, &VAR41);
+
+if (VAR41.VAR44) {
+VAR19 = FUN21(VAR18, VAR43,
+VAR13->VAR37, &VAR41);
+if (VAR19) {
+syslog(VAR25,
+"",
+VAR43, FUN10(VAR19));
+}
+}
+FUN22(&VAR41);
+}
+}
+}
+
+if (!VAR19) {
+VAR19 = FUN23(VAR13, VAR1, &VAR16,
+VAR17 == NULL || VAR6);
+if (VAR19) {
+syslog(VAR25, "",
+VAR1, FUN10(VAR19));
+}
+}
+if (VAR19) goto VAR45;
+
+
+FUN24(&VAR5->VAR46, NULL);
+
+if (VAR6) {
+FUN25(VAR16, "", &VAR20, 0);
+}
+
+VAR47 *VAR48 = FUN26();
+size_t VAR39 = 0, VAR49 = 0, VAR50 = 0;
+uint32_t VAR51 = FUN27(&VAR5->VAR46, VAR39);
+uint32_t VAR52 = FUN27(&VAR5->VAR7, VAR49);
+while (VAR51 || VAR52) {
+int VAR46 = 0;
+uint32_t VAR53;
+
+if (VAR51 && (!VAR52 || VAR51 <= VAR52)) {
+VAR46 = 1;
+VAR53 = VAR51;
+VAR51 = FUN27(&VAR5->VAR46, ++VAR39);
+if (VAR51 == VAR52)
+VAR52 = FUN27(&VAR5->VAR7, ++VAR49);
+}
+else {
+VAR53 = VAR52;
+VAR52 = FUN27(&VAR5->VAR7, ++VAR49);
+}
+
+if (++VAR50 % VAR54 == 0) {
+
+FUN28(VAR13, &VAR16);
+
+if (VAR17) {
+FUN29(&VAR17);
+VAR19 = FUN9(VAR18, &VAR17);
+
+if (VAR19) {
+syslog(VAR25, "",
+VAR18, FUN10(VAR19));
+break;
+}
+}
+
+VAR19 = FUN23(VAR13, VAR1, &VAR16,
+VAR17 == NULL || VAR6);
+if (VAR19) {
+syslog(VAR25, "",
+VAR1, FUN10(VAR19));
+break;
+}
+}
+
+struct index_record VAR55;
+VAR19 = FUN30(VAR16, VAR53, &VAR55);
+if (VAR19) break;
+
+FUN31(VAR16, &VAR55, VAR48);
+if (!(VAR9->VAR11->VAR21 & VAR22)) {
+if (VAR55.VAR56[VAR20/32] & (1<<VAR20%31)) {
+syslog(VAR10,
+"", VAR55.VAR53, VAR20);
+struct index_record VAR57;
+
+memcpy(&VAR57, &VAR55, sizeof(struct VAR58));
+VAR57.VAR56[VAR20/32] &= ~(1<<VAR20%31);
+VAR19 = FUN32(VAR16, &VAR57);
+if (VAR19) {
+syslog(VAR25,
+"",
+FUN33(VAR16), VAR55.VAR53);
+}
+}
+if (VAR46) {
+VAR19 = FUN34(VAR48, VAR17, VAR13, 0, VAR10);
+}
+}
+if (VAR19) break;
+
+if (VAR46) {
+int VAR59 =
+(VAR55.VAR60 & VAR61) ? VAR62 : VAR63;
+
+VAR9->VAR11->VAR64[VAR59]++;
+}
+}
+FUN35(&VAR48);
+
+
+if (VAR16->VAR39.VAR65 > VAR9->VAR65)
+VAR9->VAR65 = VAR16->VAR39.VAR65;
+
+
+if (VAR20 >=0 &&
+!(VAR19 || (VAR9->VAR11->VAR21 & VAR22) ||
+(VAR9->VAR11->VAR64[VAR62] +
+VAR9->VAR11->VAR64[VAR63]))) {
+FUN36(VAR16, VAR20);
+FUN37(VAR16);
+}
+
+FUN28(VAR13, &VAR16);
+
+VAR45:
+FUN29(&VAR17);
+FUN19(&VAR15);
+VAR9->VAR66 = VAR19;
+}

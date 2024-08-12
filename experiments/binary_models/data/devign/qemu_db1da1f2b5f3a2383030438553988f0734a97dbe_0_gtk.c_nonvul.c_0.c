@@ -1,0 +1,22 @@
+static VAR1 *FUN1(VAR2 *VAR3, VAR4 *VAR5)
+{
+    VAR1 *VAR6;
+    VAR1 *VAR7;
+    VAR6 = FUN2();
+    FUN3(FUN4(VAR6), VAR5);
+    VAR3->VAR8 = FUN5(FUN6(""));
+    FUN7(FUN8(VAR6), VAR3->VAR8);
+    VAR7 = FUN9();
+    FUN7(FUN8(VAR6), VAR7);
+    VAR3->VAR9 = FUN10(FUN6(""));
+    FUN7(FUN8(VAR6), VAR3->VAR9);
+    VAR3->VAR10 = FUN10(FUN6(""));
+    FUN7(FUN8(VAR6), VAR3->VAR10);
+    VAR7 = FUN9();
+    FUN7(FUN8(VAR6), VAR7);
+    VAR3->VAR11 = FUN10(FUN6(""));
+    FUN11(FUN12(VAR3->VAR11), "");
+    FUN13("", VAR12, VAR13);
+    FUN7(FUN8(VAR6), VAR3->VAR11);
+    return VAR6;
+}

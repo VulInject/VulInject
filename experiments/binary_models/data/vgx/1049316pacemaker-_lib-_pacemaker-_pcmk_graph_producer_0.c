@@ -1,0 +1,44 @@
+static void
+FUN1(gpointer VAR1, gpointer VAR2)
+{
+VAR3 *VAR4 = (VAR3 *) VAR1;
+VAR5 *VAR6 = (VAR5 *) VAR2;
+
+VAR7 *VAR8 = NULL;
+VAR7 *VAR9 = NULL;
+VAR7 *VAR10 = NULL;
+
+
+if (!FUN2(VAR4->VAR11, VAR12)) {
+FUN3(VAR4);
+FUN4(VAR4, VAR12);
+}
+
+if (FUN2(VAR4->VAR11, VAR13)    
+|| !FUN5(VAR4)) {       
+return;
+}
+FUN4(VAR4, VAR13);
+
+FUN6("",
+VAR4->VAR14, VAR4->VAR15,
+((VAR4->VAR16 == NULL)? "" : ""),
+((VAR4->VAR16 == NULL)? "" : VAR4->VAR16->VAR17->VAR18));
+
+VAR8 = FUN7(VAR4, VAR6);
+VAR9 = FUN8(VAR8, "");
+VAR10 = FUN8(VAR8, "");
+
+FUN9(VAR9, VAR4, false, VAR6);
+
+for (VAR19 *VAR20 = VAR4->VAR21; VAR20 != NULL; VAR20 = VAR20->VAR22) {
+VAR23 *VAR24 = (VAR23 *) VAR20->VAR1;
+
+if (FUN10(VAR4, VAR24)) {
+VAR7 *VAR25 = FUN8(VAR10, "");
+
+VAR24->VAR26 = VAR27;
+FUN9(VAR25, VAR24->VAR4, true, VAR6);
+}
+}
+}

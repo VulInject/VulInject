@@ -1,0 +1,90 @@
+static int
+FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+size_t		VAR5;
+int		VAR6;
+uint32_t	VAR7 = 0;
+uint32_t	VAR8 = 0;
+uint32_t	VAR9 = 0;
+uint32_t	VAR10 = 0;
+
+
+VAR5 = VAR4->VAR11 + VAR12 + VAR13;
+VAR5 = FUN2(VAR5);
+
+
+if (VAR14 != 0) {
+VAR7 = VAR14;
+VAR8 = VAR15;
+VAR9 = VAR16;
+VAR10 = VAR17;
+
+if (VAR10 == 0) { 
+
+VAR2->VAR18 = VAR9;
+VAR6 = FUN3(&VAR2->VAR19,
+VAR20, VAR7, VAR8, VAR9,
+VAR21, VAR22, VAR23);
+
+} else {
+
+VAR2->VAR18 = VAR10;
+VAR6 = FUN3(&VAR2->VAR19,
+VAR20 + 1, VAR7, VAR8, VAR9, VAR10,
+VAR21, VAR22, VAR23,
+VAR24);
+
+}
+
+return (VAR6);
+}
+
+
+if (VAR25 == VAR26 || VAR5 == VAR27) {
+
+VAR7 = VAR28;
+VAR8 = VAR29;
+VAR9 = VAR30;
+VAR2->VAR18 = VAR9;
+
+VAR6 = FUN3(&VAR2->VAR19, VAR20,
+VAR7, VAR8, VAR9,
+VAR21, VAR22, VAR23);
+
+return (VAR6);
+}
+
+switch (VAR5) {
+
+case VAR31:
+
+VAR7 = VAR28;
+VAR8 = VAR29;
+VAR9 = VAR30;
+VAR10 = VAR9 << 1;			
+VAR2->VAR18 = VAR10;
+
+VAR6 = FUN3(&VAR2->VAR19, VAR20 + 1,
+VAR7, VAR8, VAR9, VAR10,
+VAR21, VAR22, VAR23,
+VAR24);
+break;
+
+default:	
+
+VAR7 = VAR29;
+VAR8 = VAR30;
+VAR9 = VAR5 >> 1;	
+VAR10 = VAR5;	
+VAR2->VAR18 = VAR10;
+
+VAR6 = FUN3(&VAR2->VAR19, VAR20 + 1,
+VAR7, VAR8, VAR9, VAR10,
+VAR21, VAR22, VAR23,
+VAR24);
+break;
+}
+
+return (VAR6);
+
+}

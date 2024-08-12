@@ -1,0 +1,24 @@
+static struct VAR1 *
+FUN1(VAR2 *VAR3, char **VAR4)
+{
+VAR5	*VAR6 = &VAR3->VAR7;
+struct VAR8	*VAR9;	
+struct VAR10	*VAR11;	
+int			VAR12, VAR13;
+
+
+for (VAR12 = 0; (VAR12 < VAR14) &&
+(VAR6->VAR15 != VAR16[VAR12].VAR17);
+VAR12++);
+if (VAR12 >= VAR14) {	
+
+return (NULL);
+}
+VAR9 = &VAR16[VAR12];
+
+VAR13 = VAR6->VAR18 - VAR9->VAR19;
+VAR11 = &VAR9->VAR20[VAR13];
+
+*VAR4 = VAR9->VAR21;
+return (&VAR11->VAR22[VAR6->VAR23]);
+}

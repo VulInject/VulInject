@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , unsigned long VAR3 ) { unsigned long VAR4 = VAR2 -> VAR5 ; int VAR6 = 1000 ; VAR2 -> VAR5 = VAR3 ; while ( VAR6 -- > 0 ) { unsigned long VAR7 ; VAR7 = FUN2 ( VAR2 -> VAR8 , VAR3 ) ; if ( VAR7 != VAR9 ) { VAR2 -> VAR5 = VAR4 ; return - VAR10 ; } FUN3 ( 1 ) ; } VAR2 -> VAR5 = VAR4 ; return - VAR11 ; }

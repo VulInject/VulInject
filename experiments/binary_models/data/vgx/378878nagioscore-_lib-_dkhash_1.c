@@ -1,0 +1,1 @@
+void * FUN1 ( VAR1 * VAR2 , const char * VAR3 , const char * VAR4 ) { VAR5 * VAR6 ; unsigned int VAR7 ; if ( ! VAR2 || ! VAR3 ) { return VAR8 ; } VAR7 = FUN2 ( VAR2 , VAR3 , VAR4 ) ; VAR6 = VAR4 ?FUN3 ( VAR2 , VAR3 , VAR4 , VAR7 ) : FUN4 ( VAR2 , VAR3 , VAR7 ) ; return VAR6 ?VAR6 -> VAR9 : NULL ; }

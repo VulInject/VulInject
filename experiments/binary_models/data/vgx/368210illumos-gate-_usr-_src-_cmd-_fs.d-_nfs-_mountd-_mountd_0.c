@@ -1,0 +1,11 @@
+void
+FUN1(struct VAR1 *VAR1)
+{
+if (VAR1->VAR2 != NULL)
+FUN2(VAR1->VAR2);
+
+if (VAR1->VAR3 != NULL)
+FUN3(VAR1->VAR3, VAR4);
+
+free(VAR1->VAR5);
+}

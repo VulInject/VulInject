@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 ) { VAR2 -> VAR3 [ 0 ] = 0x67452301 ; VAR2 -> VAR3 [ 1 ] = 0xefcdab89 ; VAR2 -> VAR3 [ 2 ] = 0x98badcfe ; VAR2 -> VAR3 [ 3 ] = 0x10325476 ; VAR2 -> VAR3 [ 4 ] = 0xc3d2e1f0 ; }

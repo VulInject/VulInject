@@ -1,0 +1,1 @@
+static int FUN1 ( const char * VAR1 , char * VAR2 , const char * VAR3 ) { char * VAR4 ; if ( FUN2 ( VAR1 , VAR2 , strlen ( VAR1 ) ) != VAR5 ) { return ( VAR6 ) ; } VAR2 += strlen ( VAR1 ) ; while ( ( VAR4 = strchr ( VAR2 , '' ) ) != NULL ) { * VAR4 = '' ; if ( strcmp ( VAR2 , VAR3 ) == VAR5 ) { return ( VAR7 ) ; } VAR2 = VAR4 + 1 ; } return ( strcmp ( VAR2 , VAR3 ) == VAR5 ) ; }

@@ -1,0 +1,78 @@
+void FUN1(VAR1 *VAR2, VAR1 **VAR3, bool VAR4, bool VAR5) {
+if (!*VAR3 || FUN2(*VAR3)) {
+
+return;
+}
+
+VAR1 *VAR6 = 0;
+VAR1 *VAR7 = 0;
+
+
+if (VAR4) {
+size_t VAR8 = (VAR9)FUN3(*VAR3);
+if (FUN4(FUN5(VAR2, VAR10, 0))) {
+
+if (VAR8 < 5) return; 
+
+VAR1 *VAR11 = FUN6("");
+VAR1 *VAR12 = FUN7(0);
+size_t VAR13 = (VAR9)FUN8(*VAR3, VAR11, VAR12, false);
+FUN9(VAR11, VAR12);
+
+VAR1 *VAR14 = FUN7(16);
+int VAR15 = FUN10(FUN11(*VAR3, VAR14));
+FUN12(VAR14);
+FUN13("", VAR15);
+
+
+FUN14(VAR2, VAR16, FUN7(VAR15 ? 1 : 0));
+if (!VAR15) { 
+
+FUN12(*VAR3);
+*VAR3 = 0;
+return;
+}
+
+VAR13 += 2; 
+size_t VAR17 = VAR13 + (VAR9)VAR15 + 2; 
+if (VAR17 < VAR8) { 
+FUN13("", VAR17, VAR8);
+VAR6 = FUN15();
+if (!VAR6) return; 
+FUN16(VAR6, *VAR3, VAR17, VAR8-VAR17);
+} else if (VAR17 > VAR8) { 
+FUN13("", VAR8 - VAR13, VAR17 - VAR8 - 2, VAR8);
+if (VAR17 - VAR8 < 3) return; 
+
+VAR7 = FUN15();
+if (!VAR7) return; 
+FUN17(VAR7, "", VAR17 - VAR8 - 2);
+}
+
+VAR1 *VAR18 = FUN15();
+if (!VAR18) return; 
+FUN16(VAR18, *VAR3, VAR13, (VAR9)VAR15);
+FUN12(*VAR3);
+*VAR3 = VAR18;
+} else {
+FUN14(VAR2, VAR16,
+FUN7(
+FUN10(FUN5(VAR2, VAR16, VAR19)) - (VAR20)VAR8)
+);
+}
+}
+
+
+if (!FUN18(VAR2, *VAR3, VAR5)) {
+FUN9(VAR6, VAR7);
+return;
+}
+
+
+FUN12(*VAR3);
+*VAR3 = VAR6 ? VAR6 : VAR7;
+
+if (VAR6) { 
+FUN1(VAR2, VAR3, VAR4, VAR5);
+}
+}

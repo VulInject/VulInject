@@ -1,0 +1,32 @@
+FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4, VAR5 *VAR6, unsigned long VAR7)
+{
+    int VAR8 = 0;
+    VAR8 |= FUN2(VAR6->VAR9[VAR10], (unsigned int *)&VAR2->VAR11);
+    VAR8 |= FUN2(VAR6->VAR9[VAR12], (unsigned int *)&VAR2->VAR13);
+    VAR8 |= FUN2(VAR6->VAR9[VAR14], (unsigned int *)&VAR2->VAR15);
+    VAR8 |= FUN2(VAR6->VAR9[VAR16], (unsigned int *)&VAR2->VAR17);
+    VAR8 |= FUN2(VAR6->VAR18[VAR19], &VAR2->VAR20);
+    VAR8 |= FUN2(VAR6->VAR18[VAR21], &VAR2->VAR22);
+    VAR8 |= FUN2(VAR6->VAR18[VAR23], &VAR2->VAR24);
+    VAR8 |= FUN2(VAR6->VAR18[VAR25], &VAR2->VAR26);
+    VAR8 |= FUN2(VAR6->VAR18[VAR27], &VAR2->VAR28);
+    VAR8 |= FUN2(VAR6->VAR18[VAR29], &VAR2->VAR30);
+    VAR8 |= FUN2(VAR6->VAR18[VAR31], &VAR2->VAR32);
+    VAR8 |= FUN2(VAR6->VAR18[VAR33], &VAR2->VAR34);
+    VAR8 |= FUN2(VAR6->VAR35, &VAR2->VAR36);
+    VAR8 |= FUN2(VAR6->VAR37, &VAR2->VAR8);
+    VAR8 |= FUN2(VAR6->VAR38, &VAR2->VAR38);
+    VAR8 |= FUN2(VAR6->VAR9[VAR39], (unsigned int *)&VAR2->VAR40);
+    VAR8 |= FUN2(VAR6->VAR41, &VAR2->VAR41);
+    VAR8 |= FUN2(VAR6->VAR18[VAR25], &VAR2->VAR42);
+    VAR8 |= FUN2(VAR6->VAR9[VAR43], (unsigned int *)&VAR2->VAR44);
+    VAR45 = FUN3(VAR4);
+    if (VAR45 < 0)
+        VAR8 = 1;
+    else
+        VAR8 |= FUN2(VAR45 ? VAR4 : NULL, &VAR2->VAR4);
+    VAR8 |= FUN2(0, &VAR2->VAR4);
+    VAR8 |= FUN2(VAR7, &VAR2->VAR46);
+    VAR8 |= FUN2(0, &VAR2->VAR47);
+    return VAR8;
+}

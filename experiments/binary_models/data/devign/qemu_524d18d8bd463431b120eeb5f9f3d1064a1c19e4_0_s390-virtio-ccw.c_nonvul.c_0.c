@@ -1,0 +1,8 @@
+static void FUN1(const int64_t VAR1, VAR2 **VAR3)
+{
+    VAR4 *VAR5 = FUN2(FUN3());
+    VAR6 *VAR7;
+    FUN4(VAR5->VAR8->VAR9[0].VAR10);
+    VAR7 = FUN5(FUN6(VAR5->VAR8->VAR9[0].VAR10));
+    FUN7(FUN8(VAR7), VAR1, VAR3);
+}

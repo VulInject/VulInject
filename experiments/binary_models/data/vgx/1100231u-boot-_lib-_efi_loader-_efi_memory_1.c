@@ -1,0 +1,1 @@
+void * FUN1 ( uint64_t VAR1 , int VAR2 ) { int VAR3 = 0 ; uint64_t VAR4 = FUN2 ( VAR1 ) ; efi_status_t VAR5 ; VAR5 = FUN3 ( VAR6 , VAR2 , VAR4 , & VAR3 ) ; if ( VAR5 == VAR7 ) { return ( void * ) ( VAR8 ) VAR3 ; } return NULL ; }

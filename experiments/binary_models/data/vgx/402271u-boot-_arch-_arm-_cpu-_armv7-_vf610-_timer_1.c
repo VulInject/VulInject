@@ -1,0 +1,1 @@
+void FUN1 ( unsigned long VAR1 ) { unsigned long long VAR2 ; int VAR3 ; VAR2 = FUN2 ( ) ; VAR3 = FUN3 ( VAR1 ) ; while ( ( FUN2 ( ) - VAR2 ) < VAR3 ) { } }

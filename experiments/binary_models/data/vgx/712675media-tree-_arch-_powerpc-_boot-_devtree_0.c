@@ -1,0 +1,18 @@
+void FUN1(u32 VAR1, u32 VAR2, u32 VAR3)
+{
+void *VAR4 = NULL;
+
+FUN2("", VAR1, FUN3(VAR1));
+FUN2("", VAR2, FUN3(VAR2));
+if (VAR3 > 0)
+FUN2("", VAR3, FUN3(VAR3));
+
+while ((VAR4 = FUN4(VAR4, ""))) {
+FUN5(VAR4, "", VAR1);
+FUN5(VAR4, "", VAR2);
+if (VAR3 > 0)
+FUN5(VAR4, "", VAR3);
+}
+
+VAR5 = 1000000000 / VAR2;
+}

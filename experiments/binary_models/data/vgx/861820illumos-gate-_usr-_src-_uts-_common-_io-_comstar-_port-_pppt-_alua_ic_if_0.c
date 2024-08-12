@@ -1,0 +1,90 @@
+static void *
+FUN1(VAR1 *VAR2)
+{
+int VAR3 = 0;
+VAR4 *VAR5 = FUN2(sizeof (*VAR5), VAR6);
+
+if (FUN3(VAR2, 0,
+FUN4(VAR7, VAR5, VAR8),
+FUN4(VAR7, VAR5, VAR9),
+FUN4(VAR10, VAR5, VAR11),
+FUN4(VAR12, VAR5, VAR13),
+FUN4(VAR14, VAR5, VAR15),
+FUN4(VAR14, VAR5, VAR16),
+FUN4(VAR10, VAR5, VAR17),
+NULL) != 0) {
+FUN5(VAR18, "");
+VAR3 = VAR19; 
+goto VAR20;
+}
+
+VAR5->VAR21 = FUN6(
+VAR2, "");
+if (VAR5->VAR21 == NULL) {
+FUN5(VAR18, "");
+VAR3 = VAR19;
+goto VAR20;
+}
+
+VAR5->VAR22 = FUN6(
+VAR2, "");
+if (VAR5->VAR22 == NULL) {
+FUN5(VAR18, "");
+VAR3 = VAR19;
+goto VAR20;
+}
+
+VAR5->VAR23 = FUN7(
+VAR2, "");
+if (VAR5->VAR23 == NULL) {
+FUN5(VAR18, "");
+VAR3 = VAR19;
+goto VAR20;
+}
+
+
+if (!FUN8(VAR2, "",
+sizeof (VAR5->VAR24), VAR5->VAR24)) {
+FUN5(VAR18, "");
+VAR3 = VAR19;
+goto VAR20;
+}
+
+
+if (!FUN8(VAR2, "",
+sizeof (VAR5->VAR25), VAR5->VAR25)) {
+FUN5(VAR18, "");
+VAR3 = VAR19;
+goto VAR20;
+}
+
+
+if (VAR5->VAR13) {
+VAR5->VAR26 = FUN8(VAR2,
+"", VAR5->VAR13, NULL);
+if (!VAR5->VAR26) {
+FUN5(VAR18, "");
+VAR3 = VAR19;
+goto VAR20;
+}
+}
+
+
+if (VAR5->VAR17) {
+VAR5->VAR27 = FUN8(VAR2,
+"", VAR5->VAR17, NULL);
+if (!VAR5->VAR27) {
+FUN5(VAR18, "");
+VAR3 = VAR19;
+goto VAR20;
+}
+}
+
+VAR20:
+if (!VAR3)
+return (VAR5);
+
+FUN9(VAR5, VAR28);
+
+return (NULL);
+}

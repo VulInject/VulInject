@@ -1,0 +1,46 @@
+static VAR1
+FUN1(struct VAR2 *VAR3, struct VAR4 *VAR5,
+struct VAR6 *VAR7, char *VAR8,
+loff_t VAR9, size_t VAR10)
+{
+struct VAR11 *VAR12 = FUN2(VAR5);
+struct VAR13 *VAR14 = FUN3(VAR12);
+struct VAR15 *VAR16 = &VAR14->VAR17;
+struct VAR18 *VAR19;
+VAR20 *VAR21 = NULL; 
+int VAR22 = (int)(VAR23)VAR7->private;
+int VAR24;
+
+if (!FUN4(VAR14))
+return -VAR25;
+
+VAR24 = FUN5(VAR14, VAR9);
+if (VAR24)
+return VAR24;
+
+VAR24 = FUN6(VAR16);
+if (VAR24)
+return VAR24;
+
+if (!VAR14->VAR26.VAR27[VAR22]) {
+VAR21 = FUN7(VAR28, VAR29);
+if (!VAR21) {
+FUN8(&VAR16->VAR30);
+return -VAR31;
+}
+}
+
+
+if (VAR21)
+VAR14->VAR26.VAR27[VAR22] = VAR21;
+
+memcpy(VAR14->VAR26.VAR27[VAR22] + (VAR9/4), VAR8, VAR10);
+
+
+FUN9(VAR19, &VAR14->VAR32, VAR33)
+VAR19->VAR34 |= (1<<VAR22);
+
+FUN8(&VAR16->VAR30);
+
+return VAR10;
+}

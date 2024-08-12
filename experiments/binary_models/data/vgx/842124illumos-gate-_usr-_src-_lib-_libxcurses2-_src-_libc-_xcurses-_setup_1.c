@@ -1,0 +1,1 @@
+static short FUN1 ( int VAR1 ) { unsigned char VAR2 [ 2 ] ; return ( ( short ) ( VAR2 [ 0 ] + VAR2 [ 1 ] * 256 ) ) ; } { short VAR3 ; short VAR4 ; short VAR5 ; short VAR6 ; short VAR7 ; short VAR8 ; } VAR9

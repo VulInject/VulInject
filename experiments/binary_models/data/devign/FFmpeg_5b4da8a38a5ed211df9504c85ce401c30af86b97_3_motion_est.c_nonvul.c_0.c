@@ -1,0 +1,55 @@
+static int FUN1(VAR1 *VAR2, int VAR3, int VAR4, FUN2 (*VAR5)[2], int VAR6, int VAR7)
+{
+    VAR8 *const VAR9 = &VAR2->VAR10;
+    int VAR11 = 0, VAR12 = 0, VAR13 = 0;
+    int VAR14[10][2];
+    const int VAR15 = 1 + VAR2->VAR16;
+    const int VAR17 = VAR2->VAR18;
+    const int VAR19 = VAR4 * VAR17 + VAR3;
+    VAR20 *const VAR21 = VAR9->VAR21[VAR7] + VAR22;
+    int VAR23;
+    VAR9->VAR24 = FUN3(VAR2->VAR25, VAR2->VAR26, VAR9->VAR27->VAR28);
+    VAR9->VAR29 = FUN3(VAR2->VAR25, VAR2->VAR26, VAR9->VAR27->VAR30);
+    VAR9->VAR31 = FUN3(VAR2->VAR25, VAR2->VAR26, VAR9->VAR27->VAR32);
+    VAR9->VAR33 = VAR21;
+    FUN4(VAR2, 16 * VAR3, 16 * VAR4);
+    if (VAR2->VAR34 != VAR35)
+    {
+        VAR36[0] = VAR5[VAR19 - 1][0];
+        VAR36[1] = VAR5[VAR19 - 1][1];
+        if (VAR36[0] > (VAR9->VAR37 << VAR15))
+            VAR36[0] = (VAR9->VAR37 << VAR15);
+        if (!VAR2->VAR38)
+        {
+            VAR39[0] = VAR5[VAR19 - VAR17][0];
+            VAR39[1] = VAR5[VAR19 - VAR17][1];
+            VAR40[0] = VAR5[VAR19 - VAR17 + 1][0];
+            VAR40[1] = VAR5[VAR19 - VAR17 + 1][1];
+            if (VAR39[1] > (VAR9->VAR41 << VAR15))
+                VAR39[1] = (VAR9->VAR41 << VAR15);
+            if (VAR40[0] < (VAR9->VAR42 << VAR15))
+                VAR40[0] = (VAR9->VAR42 << VAR15);
+            if (VAR40[1] > (VAR9->VAR41 << VAR15))
+                VAR40[1] = (VAR9->VAR41 << VAR15);
+            VAR43[0] = FUN5(VAR36[0], VAR39[0], VAR40[0]);
+            VAR43[1] = FUN5(VAR36[1], VAR39[1], VAR40[1]);
+        }
+        VAR9->VAR44 = VAR36[0];
+        VAR9->VAR45 = VAR36[1];
+        if (VAR5 == VAR2->VAR46)
+        {
+            VAR23 = (VAR2->VAR47 << 16) / (VAR2->VAR48 << VAR15);
+        }
+        else
+        {
+            VAR23 = ((VAR2->VAR47 - VAR2->VAR48) << 16) / (VAR2->VAR48 << VAR15);
+        }
+        VAR13 = FUN6(VAR2, &VAR11, &VAR12, VAR14, 0, VAR6, VAR2->VAR49, VAR23, 0, 16);
+    }
+    VAR13 = VAR9->FUN7(VAR2, &VAR11, &VAR12, VAR13, 0, VAR6, 0, 16);
+    if (VAR9->VAR27->VAR30 != VAR9->VAR27->VAR32 && !VAR9->VAR50)
+        VAR13 = FUN8(VAR2, VAR11, VAR12, 0, VAR6, 0, 16, 1);
+    VAR5[VAR19][0] = VAR11;
+    VAR5[VAR19][1] = VAR12;
+    return VAR13;
+}

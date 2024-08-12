@@ -1,0 +1,46 @@
+static void FUN1 (struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+void VAR5 *VAR6 = VAR4->VAR7;
+u32 VAR8[2];	
+int VAR9;
+u32 VAR10;
+
+FUN3(VAR2, "",
+VAR2->VAR11, FUN4(VAR12));
+
+
+if (VAR2->VAR11 & VAR13) {
+VAR9 =
+VAR14 | VAR15 | VAR16 |
+VAR17;
+VAR8[1] = VAR8[0] = 0xffffffff;
+} else if ((FUN5(VAR2) > VAR18) ||
+(VAR2->VAR11 & VAR19)) {
+
+VAR9 = VAR14 | VAR15 | VAR16;
+VAR8[1] = VAR8[0] = 0xffffffff;
+} else {
+struct VAR20 *VAR21;
+VAR9 = VAR14 | VAR16;
+VAR8[1] = VAR8[0] = 0;
+FUN6(VAR21, VAR2) {
+int VAR22 = FUN7(VAR23, VAR21->VAR24) >> 26;
+
+VAR8[VAR22 >> 5] |= 1 << (VAR22 & 31);
+VAR9 |= VAR15;
+}
+}
+
+if (VAR2->VAR25 & VAR26)
+VAR9 |= (VAR27 | VAR28);
+
+
+VAR10 = VAR29 | VAR9;
+if (VAR4->VAR30 != VAR10) {
+FUN8 (VAR12, VAR10);
+VAR4->VAR30 = VAR10;
+}
+FUN8 (VAR31 + 0, VAR8[0]);
+FUN8 (VAR31 + 4, VAR8[1]);
+}

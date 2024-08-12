@@ -1,0 +1,30 @@
+FUN1 (bfd_vma VAR1, bfd_vma VAR2, unsigned long VAR3)
+{
+VAR4 *VAR5;
+VAR4 *VAR6;
+
+VAR5 = FUN2 (&VAR7, VAR1);
+VAR6 = FUN2 (&VAR7, VAR2);
+
+if (VAR6 == NULL || VAR5 == NULL)
+return;
+
+
+while (VAR6 >= VAR7.VAR8 && ! VAR6->VAR9)
+--VAR6;
+
+if (VAR6 < VAR7.VAR8)
+return;
+
+
+if (FUN3 (&VAR10[VAR11], VAR5, VAR6)
+|| (VAR10[VAR11].VAR12 == 0
+&& !FUN3 (&VAR10[VAR13], VAR5, VAR6)))
+{
+VAR6->VAR14 += VAR3;
+FUN4 (VAR15,
+FUN5 (FUN6(""),
+VAR5->VAR16, VAR6->VAR16, VAR3));
+FUN7 (VAR5, VAR6, VAR3);
+}
+}

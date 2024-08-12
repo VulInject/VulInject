@@ -1,0 +1,59 @@
+int FUN1(struct VAR1 *VAR1)
+{
+struct VAR2 *VAR3 = &VAR1->VAR4.VAR3;
+struct fw_rss_glb_config_cmd VAR5, VAR6;
+int VAR7;
+
+
+memset(&VAR5, 0, sizeof(VAR5));
+VAR5.VAR8 = FUN2(FUN3(VAR9) |
+VAR10 |
+VAR11);
+VAR5.VAR12 = FUN2(FUN4(VAR5));
+VAR7 = FUN5(VAR1, &VAR5, sizeof(VAR5), &VAR6);
+if (VAR7)
+return VAR7;
+
+
+VAR3->VAR13 = FUN6(
+FUN7(VAR6.VAR14.VAR15.VAR16));
+switch (VAR3->VAR13) {
+case VAR17: {
+u32 VAR18 = FUN7(
+VAR6.VAR14.VAR19.VAR20);
+
+VAR3->VAR14.VAR19.VAR21 =
+((VAR18 & VAR22) != 0);
+VAR3->VAR14.VAR19.VAR23 =
+((VAR18 & VAR24) != 0);
+VAR3->VAR14.VAR19.VAR25 =
+((VAR18 & VAR26) != 0);
+VAR3->VAR14.VAR19.VAR27 =
+((VAR18 & VAR28) != 0);
+VAR3->VAR14.VAR19.VAR29 =
+((VAR18 & VAR30) != 0);
+
+VAR3->VAR14.VAR19.VAR31 =
+((VAR18 & VAR32) != 0);
+
+VAR3->VAR14.VAR19.VAR33 =
+((VAR18 & VAR34) != 0);
+VAR3->VAR14.VAR19.VAR35 =
+((VAR18  & VAR36) != 0);
+
+VAR3->VAR14.VAR19.VAR37 =
+((VAR18 & VAR38) != 0);
+
+
+if (!VAR3->VAR14.VAR19.VAR33)
+return -VAR39;
+break;
+}
+
+default:
+
+return -VAR39;
+}
+
+return 0;
+}

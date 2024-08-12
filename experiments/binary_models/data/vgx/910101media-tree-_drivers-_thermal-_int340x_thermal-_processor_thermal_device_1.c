@@ -1,0 +1,1 @@
+static int FUN1 ( void ) { u32 VAR1 , VAR2 ; u32 VAR3 ; int VAR4 ; VAR4 = FUN2 ( VAR5 , & VAR1 , & VAR2 ) ; if ( VAR4 ) { return VAR4 ; } VAR3 = ( VAR1 >> 16 ) & 0xff ; return - VAR6 ; }

@@ -1,0 +1,1 @@
+wint_t FUN1 ( VAR1 * VAR2 ) { wint_t VAR3 ; VAR4 * VAR5 ; locale_t VAR6 = FUN2 ( NULL ) ; FUN3 ( VAR5 , VAR2 ) ; VAR3 = FUN4 ( VAR2 , VAR6 ) ; FUN5 ( VAR5 , NULL ) ; return ( VAR3 ) ; }

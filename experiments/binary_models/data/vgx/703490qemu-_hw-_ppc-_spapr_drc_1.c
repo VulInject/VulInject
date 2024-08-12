@@ -1,0 +1,1 @@
+static uint32_t FUN1 ( VAR1 * VAR2 ) { switch ( VAR2 -> VAR3 ) { case VAR4 : return VAR5 ; case VAR6 : break ; case VAR7 : return VAR8 ; default : FUN2 ( ) ; } VAR2 -> VAR3 = VAR4 ; if ( VAR2 -> VAR9 ) { uint32_t VAR10 = FUN3 ( VAR2 ) ; FUN4 ( VAR10 ) ; } return VAR5 ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( dev_t VAR1 , const char * VAR2 ) { static dev_t VAR3 = 0 ; static int VAR4 = 0 ; if ( VAR3 != VAR1 ) { struct statfs VAR5 ; VAR3 = VAR1 ; switch ( VAR5 . VAR6 ) { case VAR7 : case VAR8 : VAR4 = 1 ; break ; default : VAR4 = 0 ; break ; } } return VAR4 ; }

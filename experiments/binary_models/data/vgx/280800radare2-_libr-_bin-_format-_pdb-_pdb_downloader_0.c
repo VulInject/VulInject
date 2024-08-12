@@ -1,0 +1,43 @@
+int FUN1(VAR1 *VAR2, VAR3 *VAR4, int VAR5, VAR6 *VAR7) {
+int VAR8;
+SPDBDownloaderOpt VAR9;
+SPDBDownloader VAR10;
+VAR11 *VAR12 = FUN2 (VAR2->VAR13);
+
+if (!VAR12 || !VAR12->VAR14) {
+FUN3 ("");
+return 1;
+}
+
+if (!FUN4 (VAR12->VAR15)) {
+FUN3 ("");
+return 1;
+}
+
+if (!VAR7 || !VAR7->VAR16 || !VAR7->VAR17) {
+FUN3 ("");
+return 1;
+}
+
+VAR9.VAR18 = (char*) FUN5 (VAR12->VAR14);
+VAR9.VAR15 = VAR12->VAR15;
+VAR9.VAR16 = VAR7->VAR16;
+VAR9.VAR17 = VAR7->VAR17;
+VAR9.VAR19 = VAR7->VAR19;
+VAR9.VAR20 = VAR7->VAR20;
+
+FUN6 (&VAR9, &VAR10);
+VAR8 = VAR10.VAR21? VAR10.FUN7 (&VAR10): 0;
+if (VAR5) {
+FUN8 (VAR4, "");
+FUN9 (VAR4, "", VAR9.VAR18);
+FUN10 (VAR4, "", (bool) VAR8);
+FUN11 (VAR4);
+} else {
+FUN12 (""%VAR22\"",
+VAR9.VAR18, VAR8? "": "");
+}
+FUN13 (&VAR10);
+
+return !VAR8;
+}

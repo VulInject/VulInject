@@ -1,0 +1,6 @@
+static VAR1 FUN1(VAR2 *VAR3, TCGCond VAR4, int VAR5, int32_t VAR6)
+{
+    TCGv VAR7 = FUN2();
+    FUN3(VAR4, VAR7, FUN4(VAR3, VAR5));
+    return FUN5(VAR3, VAR4, VAR7, VAR6);
+}

@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( work_func_t VAR2 ) { struct VAR1 * VAR3 ; VAR3 = FUN2 ( sizeof ( * VAR3 ) , VAR4 ) ; if ( VAR3 != NULL ) { FUN3 ( & VAR3 -> VAR5 ) ; FUN4 ( & VAR3 -> VAR6 ) ; FUN5 ( & VAR3 -> VAR7 ) ; FUN6 ( & VAR3 -> VAR8 , VAR2 ) ; } return VAR3 ; }

@@ -1,0 +1,1 @@
+int * FUN1 ( void ) { static pthread_key_t VAR1 = VAR2 ; int * VAR3 ; VAR3 = FUN2 ( & VAR1 , sizeof ( int ) , free ) ; return ( VAR3 ?VAR3 : & VAR4 ) ; }

@@ -1,0 +1,1 @@
+void FUN1 ( struct socket * VAR1 ) { FUN2 ( VAR1 ) ; VAR1 -> VAR2 &= ~ ( VAR3 | VAR4 | VAR5 ) ; VAR1 -> VAR2 |= VAR6 ; VAR1 -> VAR7 . VAR8 |= VAR9 ; VAR1 -> VAR10 . VAR8 |= VAR11 ; FUN3 ( & VAR1 -> VAR12 ) ; FUN4 ( VAR1 , NULL ) ; FUN5 ( VAR1 ) ; }

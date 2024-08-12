@@ -1,0 +1,110 @@
+static int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+u32 VAR5;
+int VAR6, VAR7, VAR8, VAR9 = 0;
+struct VAR10 **VAR11;
+struct VAR12 *VAR13;
+unsigned long VAR14 = 0;
+unsigned int VAR15 = (unsigned int)VAR2->VAR15;
+unsigned int VAR16 = 0;
+struct VAR17 *VAR18;
+VAR19 *VAR20;
+
+VAR4->VAR21 = 0;
+VAR4->VAR22 = 0;
+VAR4->VAR23 = 0;
+
+VAR15 &= ~VAR24;
+if (!VAR15)
+return 0;
+
+if (VAR15 > VAR25) {
+FUN2("",
+VAR2->VAR15);
+return -VAR26;
+}
+
+if (VAR2->VAR15 & VAR24) {
+VAR7 = FUN3(VAR4, VAR2->VAR13,
+VAR4->VAR27, VAR4->VAR28,
+VAR15, VAR29 | VAR30);
+if (VAR7)
+return VAR7;
+VAR16 = VAR15;
+VAR15 = 0;
+for (VAR6 = 0; VAR6 < VAR16; VAR6++) {
+VAR8 = VAR2->VAR13[VAR6].VAR31 /
+sizeof(struct VAR12);
+if ((unsigned)VAR2->VAR13[VAR6].VAR32 +
+(unsigned)VAR2->VAR13[VAR6].VAR31 > VAR33 ||
+VAR8 * sizeof(struct VAR12) !=
+VAR2->VAR13[VAR6].VAR31)
+return -VAR26;
+VAR15 += VAR8;
+}
+if (VAR15 > VAR34) {
+FUN2("", VAR15);
+return -VAR26;
+}
+}
+
+
+VAR4->VAR35 = FUN4(VAR15,
+sizeof(struct VAR17), VAR36);
+if (!VAR4->VAR35)
+return -VAR37;
+
+FUN5(VAR4->VAR35, VAR15);
+VAR4->VAR21 = VAR15;
+
+VAR5 = VAR29;
+if (VAR4->VAR38 == VAR39)
+VAR5 |= VAR30;
+
+VAR11 = VAR4->VAR27 + VAR16;
+VAR20 = VAR4->VAR28 + VAR16;
+if (!VAR16) {
+VAR13 = VAR2->VAR13;
+VAR7 = FUN3(VAR4, VAR13,
+VAR11, VAR20, VAR15, VAR5);
+if (VAR7)
+return VAR7;
+} else {
+for (VAR6 = 0; VAR6 < VAR16; VAR6++) {
+VAR13 = (struct VAR12 *)(
+FUN6(VAR4, VAR6) + VAR2->VAR13[VAR6].VAR32);
+VAR8 = VAR2->VAR13[VAR6].VAR31 /
+sizeof(struct VAR12);
+VAR7 = FUN3(VAR4, VAR13,
+VAR11, VAR20, VAR8, VAR5);
+if (VAR7)
+return VAR7;
+VAR11 += VAR8;
+VAR20 += VAR8;
+}
+VAR14 = FUN6(VAR4, 0) + VAR2->VAR13[0].VAR32;
+VAR13 = (struct VAR12 *)VAR14;
+VAR14 += VAR2->VAR13[0].VAR31;
+VAR11 = VAR4->VAR27 + VAR16;
+}
+
+FUN7(VAR4->VAR35, VAR18, VAR15, VAR6) {
+FUN8(VAR18, VAR11[VAR6], VAR13->VAR31, VAR13->VAR32);
+VAR4->VAR23 += VAR13->VAR31;
+VAR13++;
+if (VAR16 && (unsigned long)VAR13 >= VAR14) {
+VAR9++;
+VAR14 = FUN6(VAR4, VAR9) +
+VAR2->VAR13[VAR9].VAR32;
+VAR13 = (struct VAR12 *)VAR14;
+VAR14 += VAR2->VAR13[VAR9].VAR31;
+}
+if (VAR18->VAR32 >= VAR33 ||
+VAR18->VAR31 > VAR33 ||
+VAR18->VAR32 + VAR18->VAR31 > VAR33)
+return -VAR26;
+}
+
+return 0;
+}

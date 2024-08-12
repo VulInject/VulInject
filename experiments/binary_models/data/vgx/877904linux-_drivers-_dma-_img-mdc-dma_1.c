@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , enum dma_transfer_direction VAR3 ) { enum dma_slave_buswidth VAR4 ; if ( VAR3 == VAR5 ) { VAR4 = VAR2 -> VAR6 . VAR7 ; } else { VAR4 = VAR2 -> VAR6 . VAR8 ; } switch ( VAR4 ) { case VAR9 : case VAR10 : case VAR11 : case VAR12 : break ; default : return - VAR13 ; } return 0 ; }

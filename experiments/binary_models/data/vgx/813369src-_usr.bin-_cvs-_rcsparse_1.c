@@ -1,0 +1,1 @@
+static int FUN1 ( char * VAR1 ) { unsigned char * VAR2 ; if ( * VAR1 == '' ) { return 0 ; } for ( VAR2 = VAR1 ; * VAR2 ; VAR2 ++ ) { if ( ! FUN2 ( * VAR2 ) && * VAR2 != '' && * VAR2 != '' && * VAR2 != '' && ! ( * VAR2 == '' && * ( VAR2 + 1 ) == '' ) ) { return 0 ; } } return 1 ; }

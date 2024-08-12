@@ -1,0 +1,45 @@
+static VAR1 FUN1(VAR2 *VAR3,
+VAR4 *VAR5,
+const VAR6 *VAR7, size_t VAR8,
+VAR9 *VAR10)
+{
+int VAR11;
+VAR12 *VAR13, *VAR14;
+
+if (FUN2(&VAR3->VAR15)) {
+VAR3->VAR16.VAR17++;
+FUN3(VAR3, VAR5, VAR7, VAR8);
+FUN4(VAR3->VAR18,
+FUN5(VAR19) + VAR3->VAR20->VAR21);
+return VAR8;
+}
+
+FUN6(VAR13, &VAR3->VAR15, VAR22, VAR14) {
+if (VAR3->VAR23 == VAR24) {
+VAR11 = FUN7(VAR3, VAR13, VAR7, VAR8, VAR10);
+} else {
+VAR11 = FUN8(VAR3, VAR13, VAR7, VAR8, VAR10);
+}
+
+if (VAR11 == VAR25) {
+if (FUN9(VAR3, VAR13) == 0) {
+
+VAR3->VAR16.VAR26++;
+return 0;
+}
+
+
+return FUN10(VAR5, VAR7, VAR8);
+} else if (VAR11 == VAR27) {
+continue;
+} else {
+
+VAR13->VAR28 = 1;
+return VAR8;
+}
+}
+
+VAR3->VAR16.VAR29++;
+FUN3(VAR3, VAR5, VAR7, VAR8);
+return VAR8;
+}

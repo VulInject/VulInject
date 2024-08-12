@@ -1,0 +1,1 @@
+static void FUN1 ( np_client_t VAR1 ) { FUN2 ( "" ) ; }

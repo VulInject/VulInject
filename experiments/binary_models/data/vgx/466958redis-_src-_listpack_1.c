@@ -1,0 +1,1 @@
+int FUN1 ( unsigned char * VAR1 , size_t VAR2 ) { size_t VAR3 = VAR1 ?FUN2 ( VAR1 ) : 0 ; return 1 ; }

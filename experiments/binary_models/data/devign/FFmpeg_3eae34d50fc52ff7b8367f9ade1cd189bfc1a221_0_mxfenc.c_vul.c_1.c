@@ -1,0 +1,14 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4, const UID VAR5, unsigned VAR6)
+{
+    VAR7 *VAR8 = VAR2->VAR8;
+    FUN2(VAR2, VAR4, VAR5, VAR6 + 5 + 12 + 8 + 8);
+    FUN3(VAR8, 1, 0x3D02);
+    FUN4(VAR8, 1);
+    FUN3(VAR8, 8, 0x3D03);
+    FUN5(VAR8, VAR4->VAR9->VAR10);
+    FUN5(VAR8, 1);
+    FUN3(VAR8, 4, 0x3D07);
+    FUN5(VAR8, VAR4->VAR9->VAR11);
+    FUN3(VAR8, 4, 0x3D01);
+    FUN5(VAR8, FUN6(VAR4->VAR9->VAR12));
+}

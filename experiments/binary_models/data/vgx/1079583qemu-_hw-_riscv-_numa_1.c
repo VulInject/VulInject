@@ -1,0 +1,1 @@
+int64_t FUN1 ( const VAR1 * VAR2 , int VAR3 ) { int VAR4 = 0 ; if ( VAR2 -> VAR5 -> VAR6 ) { VAR4 = VAR3 / ( VAR2 -> VAR7 . VAR8 / VAR2 -> VAR5 -> VAR6 ) ; if ( VAR2 -> VAR5 -> VAR6 <= VAR4 ) { VAR4 = VAR2 -> VAR5 -> VAR6 - 1 ; } } return VAR4 ; }

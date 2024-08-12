@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 ) { if ( ++ VAR3 < VAR4 ) { return ; } FUN2 ( ( VAR5 * ) & VAR6 ) ; FUN2 ( ( VAR5 * ) & VAR7 , NULL ) ; FUN2 ( ( VAR5 * ) & VAR8 , NULL ) ; FUN2 ( ( VAR5 * ) VAR2 , NULL ) ; }

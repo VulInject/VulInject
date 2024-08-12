@@ -1,0 +1,129 @@
+static int FUN1(struct VAR1 *VAR2, loff_t VAR3, size_t VAR4,
+VAR5 *VAR6, VAR7 *VAR8,
+otp_op_t VAR9, int VAR10)
+{
+struct VAR11 *VAR12 = VAR2->VAR13;
+struct VAR14 *VAR15 = VAR12->VAR16;
+struct VAR17 *VAR18 = VAR15->VAR19;
+struct VAR20 *VAR21;
+struct VAR22 *VAR23;
+u_long VAR24, VAR25, VAR26;
+u_int VAR27, VAR28, VAR29, VAR30, VAR31;
+u_int VAR32, VAR33, VAR34, VAR35, VAR36;
+int VAR37;
+
+*VAR6 = 0;
+
+
+if (!VAR18 || !(VAR18->VAR38 & 64) || !VAR18->VAR39)
+return -VAR40;
+
+
+VAR24 = (1 << VAR15->VAR41->VAR42) * VAR15->VAR43;
+VAR28 = VAR24 >> VAR15->VAR44;
+VAR27 = 0;
+
+
+if (VAR15->VAR45 == VAR46) {
+switch (VAR15->VAR47) {
+case 0x880b:
+case 0x880c:
+case 0x880d:
+VAR27 = VAR28 - 1;
+}
+}
+
+for ( ; VAR27 < VAR15->VAR48; VAR27 += VAR28) {
+VAR21 = &VAR15->VAR49[VAR27];
+VAR23 = (struct VAR22 *)&VAR18->VAR50[0];
+
+
+VAR29 = 0;
+VAR25 = VAR18->VAR51;
+VAR35 = 1;
+VAR30 = 1 << VAR18->VAR52;
+VAR36 = 1;
+VAR31 = 1 << VAR18->VAR53;
+
+while (VAR4 > 0) {
+
+VAR26 = VAR25 + 1;
+VAR26 *= VAR15->VAR43 * VAR15->VAR54;
+VAR25 *= VAR15->VAR43 * VAR15->VAR54;
+VAR30 *= VAR15->VAR43;
+VAR31 *= VAR15->VAR43;
+
+if (VAR10) {
+VAR32 = VAR36;
+VAR34 = VAR31;
+
+VAR33 = VAR35;
+VAR26 += VAR35 * VAR30;
+} else {
+VAR32 = VAR35;
+VAR34 = VAR30;
+VAR33 = 0;
+}
+
+while (VAR4 > 0 && VAR32 > 0) {
+if (!VAR9) {
+
+struct VAR55 *VAR56;
+map_word VAR57;
+VAR4 -= sizeof(struct VAR55);
+if (VAR4 <= 0)
+return -VAR58;
+VAR37 = FUN2(VAR12, VAR21,
+VAR25,
+(VAR7 *)&VAR57,
+FUN3(VAR12),
+0, 0,  0);
+if (VAR37)
+return VAR37;
+VAR56 = (struct VAR55 *)VAR8;
+VAR56->VAR59 = VAR3;
+VAR56->VAR60 = VAR34;
+VAR56->VAR61 =
+!FUN4(VAR12, VAR57,
+FUN5(1 << VAR33));
+VAR3 += VAR34;
+VAR8 += sizeof(*VAR56);
+*VAR6 += sizeof(*VAR56);
+} else if (VAR3 >= VAR34) {
+VAR3 -= VAR34;
+VAR26 += VAR34;
+} else {
+int VAR62 = VAR34;
+VAR26 += VAR3;
+VAR62 -= VAR3;
+VAR3 = 0;
+if (VAR62 > VAR4)
+VAR62 = VAR4;
+VAR37 = FUN6(VAR12, VAR21, VAR26,
+VAR8, VAR62, VAR25,
+VAR33, VAR34);
+if (VAR37 < 0)
+return VAR37;
+VAR8 += VAR62;
+VAR4 -= VAR62;
+*VAR6 += VAR62;
+VAR26 += VAR62;
+}
+VAR33++;
+VAR32--;
+}
+
+
+if (++VAR29 == VAR18->VAR39)
+break;
+VAR25 = VAR23->VAR51;
+VAR35 = VAR23->VAR63;
+VAR30 = 1 << VAR23->VAR52;
+VAR36 = VAR23->VAR64;
+VAR31 = 1 << VAR23->VAR53;
+VAR23++;
+}
+}
+
+return 0;
+}

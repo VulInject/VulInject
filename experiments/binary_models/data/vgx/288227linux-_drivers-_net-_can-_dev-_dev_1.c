@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , enum can_state VAR3 ) { struct VAR4 * VAR5 = FUN2 ( VAR2 ) ; switch ( VAR3 ) { case VAR6 : VAR5 -> VAR7 . VAR8 ++ ; break ; case VAR9 : VAR5 -> VAR7 . VAR10 ++ ; break ; case VAR11 : VAR5 -> VAR7 . VAR12 ++ ; break ; default : break ; } }

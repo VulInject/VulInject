@@ -1,0 +1,1 @@
+VAR1 * VAR2 ; int VAR3 ; volatile int VAR4 ; volatile int VAR5 ; int VAR6 ; int VAR7 ; int VAR8 ; char * VAR9 ; char * VAR10 ; void FUN1 ( void ) { FUN2 ( "" ) ; }

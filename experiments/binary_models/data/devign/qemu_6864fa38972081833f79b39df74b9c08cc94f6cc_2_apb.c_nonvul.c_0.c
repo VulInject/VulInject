@@ -1,0 +1,1 @@
+static int FUN1(VAR1 *VAR2, int VAR3) { return VAR3; }

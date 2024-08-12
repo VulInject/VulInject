@@ -1,0 +1,1 @@
+static void FUN1(VAR1 *VAR2) { VAR2->VAR3[3] = FUN2(VAR2, VAR2->VAR3[3], &VAR2->VAR3[4]); }

@@ -1,0 +1,40 @@
+""
+""
+""
+""
+""
+"";
+
+int
+FUN1(VAR1 *VAR2, VAR3 *VAR4, void *VAR5)
+{
+VAR6 *VAR7 = NULL;
+VAR8 *VAR9;
+VAR10 *VAR11;
+
+
+if (VAR2->VAR12 != NULL)
+return (FUN2(VAR2, VAR13));
+
+
+if (VAR2->VAR14[VAR15] != VAR16)
+goto VAR17;
+
+if ((VAR7 = FUN3(VAR2, VAR18,
+VAR19, VAR20, 0, NULL)) == NULL)
+return (FUN2(VAR2, FUN4(VAR2)));
+
+VAR9 = FUN5(&VAR7->VAR21);
+assert(VAR9 != NULL);
+
+VAR11 = VAR9->VAR22->VAR23;
+assert(VAR11 != NULL);
+VAR11->VAR24 = VAR25;
+
+VAR17:
+VAR2->VAR12 = VAR4;
+VAR2->VAR26 = VAR5;
+VAR2->VAR27 = VAR7;
+
+return (0);
+}

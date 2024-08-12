@@ -1,0 +1,1 @@
+static u64 FUN1 ( u64 VAR1 ) { u32 VAR2 = ( VAR3 ) VAR1 ; u64 VAR4 ; VAR4 = VAR5 ; if ( VAR2 >= 76 && VAR2 <= 81 ) { VAR4 |= VAR6 ; VAR4 |= VAR1 & ( VAR7 | VAR8 ) ; } if ( VAR1 & ( VAR7 | VAR8 ) ) { return 0 ; } return VAR4 ; }

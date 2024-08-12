@@ -1,0 +1,1 @@
+void * FUN1 ( VAR1 * VAR2 , int VAR3 , int VAR4 , void * VAR5 ) { VAR6 * VAR7 ; VAR7 = FUN2 ( VAR2 , VAR3 ) ; if ( ! VAR7 ) { return VAR8 ; } if ( VAR4 != FUN3 ( VAR7 ) ) { FUN4 ( VAR9 ) ; return NULL ; } return VAR7 -> VAR10 . VAR11 ; }

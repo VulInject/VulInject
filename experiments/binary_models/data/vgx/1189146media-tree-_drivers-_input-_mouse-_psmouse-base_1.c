@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR1 , u8 VAR2 ) { switch ( VAR1 -> VAR3 ) { case VAR4 : VAR1 -> VAR3 = VAR2 ; break ; case VAR5 : FUN2 ( VAR1 -> VAR6 , VAR2 ) ; FUN3 ( VAR1 -> VAR6 ) ; VAR1 -> VAR7 = VAR2 ; break ; default : FUN4 ( VAR1 , "" , VAR1 -> VAR3 ) ; VAR1 -> VAR3 = VAR4 ; break ; } }

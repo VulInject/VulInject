@@ -1,0 +1,14 @@
+static VAR1 *FUN1(VAR2 *VAR3, u8 VAR4, u8 VAR5, Bool VAR6)
+{
+VAR1 *VAR7;
+u32 VAR8, VAR9 = FUN2(VAR3->VAR10);
+for (VAR8=0; VAR8<VAR9; VAR8++) {
+VAR7 = (VAR1 *)FUN3(VAR3->VAR10, VAR8);
+if (VAR7->VAR4 == VAR4) goto VAR11;
+if (VAR7->VAR5 == VAR5) goto VAR11;
+}
+return NULL;
+VAR11:
+if (VAR6) FUN4(VAR3->VAR10, VAR8);
+return VAR7;
+}

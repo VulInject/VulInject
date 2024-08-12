@@ -1,0 +1,1 @@
+static BOOL FUN1 ( VAR1 * * VAR2 , VAR3 * VAR4 , const VAR1 * VAR5 , size_t VAR6 ) { FUN2 ( VAR2 , VAR4 ) ; if ( VAR6 > VAR7 ) { return VAR8 ; } * VAR2 = malloc ( VAR6 ) ; if ( ! * VAR2 ) { return VAR8 ; } memcpy ( * VAR2 , VAR5 , VAR6 ) ; * VAR4 = ( VAR3 ) VAR6 ; return * VAR2 != NULL ; }

@@ -1,0 +1,35 @@
+VAR1 *FUN1(hwaddr VAR2,
+const char *VAR3,
+hwaddr VAR4,
+VAR5 *VAR6,
+uint32_t VAR7,
+int VAR8, int VAR9,
+uint16_t VAR10, uint16_t VAR11,
+uint16_t VAR12, uint16_t VAR13,
+uint16_t VAR14,
+uint16_t VAR15,
+int VAR16)
+{
+VAR17 *VAR18 = FUN2(VAR19);
+
+if (VAR6) {
+FUN3(VAR18, "", VAR6);
+}
+assert(FUN4(VAR4, VAR7));
+FUN5(VAR18, "", VAR4 / VAR7);
+FUN5(VAR18, "", VAR7);
+FUN6(VAR18, "", VAR9);
+FUN6(VAR18, "", VAR8);
+FUN6(VAR18, "", !!VAR16);
+FUN7(VAR18, "", VAR10);
+FUN7(VAR18, "", VAR11);
+FUN7(VAR18, "", VAR12);
+FUN7(VAR18, "", VAR13);
+FUN7(VAR18, "", VAR14);
+FUN7(VAR18, "", VAR15);
+FUN8(VAR18, "", VAR3);
+FUN9(FUN10(VAR18), &VAR20);
+
+FUN11(FUN10(VAR18), 0, VAR2);
+return FUN12(VAR18);
+}

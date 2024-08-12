@@ -1,0 +1,1 @@
+static int FUN1 ( char * VAR1 , int VAR2 , int VAR3 ) { int VAR4 , VAR5 ; for ( ; ; ) { VAR4 = ( VAR2 + VAR3 ) / 2 ; if ( ( VAR5 = FUN2 ( VAR1 , VAR6 [ VAR4 ] , 4 ) ) == 0 ) { return ( VAR4 ) ; } if ( VAR3 == VAR2 + 1 ) { if ( FUN2 ( VAR1 , VAR6 [ VAR3 ] , 4 ) == 0 ) { return ( VAR3 ) ; } else { return ( - 1 ) ; } } if ( VAR5 < 0 ) { VAR3 = VAR4 ; } else { VAR2 = VAR4 ; } } }

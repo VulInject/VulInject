@@ -1,0 +1,1 @@
+static inline unsigned int FUN1(uint16_t VAR1) { return 1U << ((VAR1 & VAR2) >> FUN2(VAR2)); }

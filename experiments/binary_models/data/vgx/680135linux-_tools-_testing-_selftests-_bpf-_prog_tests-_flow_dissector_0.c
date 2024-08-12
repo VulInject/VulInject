@@ -1,0 +1,62 @@
+void FUN1(void)
+{
+int VAR1, VAR2, VAR3, VAR4 = -1, VAR5;
+struct VAR6 *VAR7;
+
+VAR7 = FUN2();
+if (FUN3(!VAR7, "", ""))
+return;
+
+VAR3 = FUN4(VAR7->VAR8.VAR9);
+if (FUN3(VAR3 < 0, "", "", VAR3))
+goto VAR10;
+VAR4 = FUN5(VAR7->VAR11.VAR12);
+if (FUN3(VAR4 < 0, "", "", VAR4))
+goto VAR10;
+VAR2 = FUN6(VAR7->VAR13, VAR7->VAR11.VAR14);
+if (FUN3(VAR2, "", "", VAR2))
+goto VAR10;
+
+for (VAR1 = 0; VAR1 < FUN7(VAR15); VAR1++) {
+struct bpf_flow_keys VAR16;
+FUN8(VAR17, VAR18,
+.VAR19 = &VAR15[VAR1].VAR20,
+.VAR21 = sizeof(VAR15[VAR1].VAR20),
+.VAR22 = &VAR16,
+);
+static struct bpf_flow_keys VAR23 = {};
+
+if (VAR15[VAR1].VAR24) {
+VAR18.VAR25 = &VAR23;
+VAR18.VAR26 = sizeof(VAR23);
+VAR23.VAR24 = VAR15[VAR1].VAR24;
+}
+
+VAR2 = FUN9(VAR3, &VAR18);
+FUN10(VAR2, "");
+FUN11(VAR18.VAR27, VAR15[VAR1].VAR27, "");
+
+
+if (VAR18.VAR27 != VAR28)
+continue;
+FUN11(VAR18.VAR29, sizeof(VAR16),
+"");
+FUN12(VAR15[VAR1].VAR30, VAR16, VAR15[VAR1].VAR31);
+}
+
+
+
+VAR5 = FUN13("");
+FUN3(VAR5 < 0, "", "", VAR5, VAR32);
+VAR2 = FUN14("");
+FUN3(VAR2, "", "", VAR2, VAR32);
+
+
+FUN15(VAR7, VAR5);
+
+FUN16(VAR7, VAR5);
+
+close(VAR5);
+VAR10:
+FUN17(VAR7);
+}

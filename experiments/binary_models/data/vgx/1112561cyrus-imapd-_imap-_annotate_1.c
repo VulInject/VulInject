@@ -1,0 +1,1 @@
+static int FUN1 ( const VAR1 * VAR2 , char * * VAR3 ) { const char * VAR4 ; if ( VAR2 ) { VAR4 = FUN2 ( VAR2 , VAR5 , 0 ) ; * VAR3 = xstrdup ( VAR4 ) ; } else { VAR4 = FUN3 ( VAR6 ) ; if ( VAR4 ) { * VAR3 = xstrdup ( VAR4 ) ; } else { * VAR3 = FUN4 ( VAR7 , VAR8 , ( char * ) NULL ) ; } } return 0 ; }

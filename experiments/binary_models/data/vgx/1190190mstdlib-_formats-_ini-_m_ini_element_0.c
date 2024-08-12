@@ -1,0 +1,8 @@
+VAR1 FUN1(VAR2 *VAR3, const char *VAR4)
+{
+if (VAR3 == NULL || VAR3->VAR5 != VAR6)
+return VAR7;
+FUN2(VAR3->VAR8.VAR9.VAR4);
+VAR3->VAR8.VAR9.VAR4 = FUN3(VAR4);
+return VAR10;
+}

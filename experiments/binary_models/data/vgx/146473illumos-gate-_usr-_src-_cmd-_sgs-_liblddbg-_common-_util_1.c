@@ -1,0 +1,1 @@
+const char * FUN1 ( const char * VAR1 ) { static char * VAR2 = NULL ; if ( FUN2 ( VAR3 ) ) { return ( VAR1 ) ; } VAR2 = ( char * ) FUN3 ( VAR1 ) ; if ( VAR2 == VAR1 ) { VAR2 = NULL ; return ( VAR1 ) ; } return ( VAR2 ) ; }

@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 ; FUN2 ( & VAR5 ) ; FUN3 ( & VAR2 -> VAR6 , & VAR7 ) ; FUN4 ( , , ) { if ( VAR2 -> FUN5 ( VAR4 ) ) { FUN6 ( VAR8 "" "" , VAR9 , FUN7 ( VAR2 -> VAR10 ) , FUN8 ( VAR4 -> VAR11 ) ) ; } } out FUN9 ( & VAR5 ) ; return 0 ; }

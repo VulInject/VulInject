@@ -1,0 +1,8 @@
+FUN1(VAR1 *VAR2, int VAR3, hwaddr VAR4, VAR5 *VAR6, VAR5 *VAR7)
+{
+    VAR8 *VAR9;
+    VAR10 *VAR11 = VAR2->VAR12[VAR3].VAR13;
+    VAR9 = FUN2(VAR11, VAR4, VAR6, VAR7, false);
+    assert(!VAR9->VAR14->VAR15);
+    return VAR9;
+}

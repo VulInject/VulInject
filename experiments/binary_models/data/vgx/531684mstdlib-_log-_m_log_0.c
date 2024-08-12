@@ -1,0 +1,73 @@
+VAR1 FUN1(VAR2 *VAR3, M_uint64 VAR4, const char *VAR5)
+{
+const char *VAR6  = NULL;
+M_uint64    VAR7;
+
+if (VAR3 == NULL) {
+return VAR8;
+}
+
+if (!FUN2(VAR4)) {
+return VAR9;
+}
+
+FUN3(VAR3->VAR10, VAR11);
+
+if (VAR3->VAR12 == NULL) {
+VAR3->VAR12 = FUN4(16, 75, VAR13);
+}
+if (VAR3->VAR14 == NULL) {
+VAR3->VAR14 = FUN5(VAR15);
+}
+
+
+if (FUN6(VAR3->VAR14, VAR5, &VAR7) && VAR7 != VAR4) {
+FUN7(VAR3->VAR10);
+return VAR16;
+}
+
+
+if (FUN8(VAR3->VAR12, VAR4, &VAR6)) {
+FUN9(VAR3->VAR14, VAR6, VAR17);
+}
+
+if (FUN10(VAR5)) {
+
+FUN11(VAR3->VAR12, VAR4);
+
+
+if (FUN12(VAR6) >= VAR3->VAR18) {
+size_t                VAR19;
+const char           *VAR20;
+VAR21 *VAR22;
+FUN13(VAR3->VAR12, &VAR22);
+
+VAR19 = 0;
+while (FUN14(VAR3->VAR12, VAR22, NULL, &VAR20)) {
+size_t VAR23 = FUN12(VAR20);
+if (VAR23 > VAR19) {
+VAR19 = VAR23;
+}
+}
+VAR3->VAR18 = VAR19;
+
+FUN15(VAR22);
+}
+} else {
+size_t VAR23;
+
+
+FUN16(VAR3->VAR12, VAR4, VAR5);
+FUN17(VAR3->VAR14, VAR5, VAR4);
+
+
+VAR23 = FUN12(VAR5);
+if (VAR23 > VAR3->VAR18) {
+VAR3->VAR18 = VAR23;
+}
+}
+
+FUN7(VAR3->VAR10);
+
+return VAR24;
+}

@@ -1,0 +1,1 @@
+void * FUN1 ( struct VAR1 * VAR2 , int VAR3 ) { if ( ! VAR2 || VAR3 >= VAR4 ) { return VAR5 ; } return VAR2 -> VAR6 [ VAR3 ] ; }

@@ -1,0 +1,44 @@
+static int FUN1(struct VAR1 *VAR2, unsigned VAR3, VAR4 *VAR5)
+{
+struct VAR6 *VAR7 = FUN2(VAR2);
+
+switch (VAR3) {
+
+FUN3(VAR8);
+FUN3(VAR9);
+FUN3(VAR10);
+FUN3(VAR11);
+
+FUN4(VAR12, VAR12);
+FUN4(VAR13, VAR13);
+FUN4(VAR14, VAR15);
+FUN4(VAR16, VAR17);
+FUN4(VAR18, VAR19);
+FUN4(VAR20, VAR21);
+FUN4(VAR22, VAR23);
+FUN4(VAR24, VAR25);
+FUN4(VAR26, VAR27);
+FUN4(VAR28, VAR29);
+FUN4(VAR30, VAR31);
+FUN4(VAR32, VAR33);
+
+case FUN5(struct VAR34, VAR7.VAR35):
+*VAR5 = FUN6(VAR2);
+break;
+
+case FUN5(struct VAR34, VAR36[0]) ...
+FUN5(struct VAR34, VAR36[7]):
+VAR3 -= FUN5(struct VAR34, VAR36[0]);
+*VAR5 = FUN7(VAR2, VAR3 / 4);
+break;
+
+default:
+if (VAR3 > sizeof(struct VAR34) || (VAR3 & 3))
+return -VAR37;
+
+
+*VAR5 = 0;
+break;
+}
+return 0;
+}

@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , unsigned int VAR3 ) { switch ( VAR4 ) { case VAR5 : FUN2 ( VAR2 , NULL ) ; break ; case VAR6 : FUN3 ( VAR3 ) ; break ; case VAR7 : FUN4 ( VAR2 ) ; break ; } }

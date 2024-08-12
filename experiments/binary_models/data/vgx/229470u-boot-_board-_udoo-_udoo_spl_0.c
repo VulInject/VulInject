@@ -1,0 +1,20 @@
+static void FUN1(void)
+{
+if (FUN2(VAR1)) {
+VAR2.VAR3 = 800;
+VAR4.VAR5 = 1;
+VAR4.VAR6 = 1;
+
+FUN3(64, &VAR7, &VAR8);
+FUN4(&VAR4, &VAR9, &VAR2);
+} else if (FUN2(VAR10)) {
+VAR2.VAR3 = 1066;
+VAR4.VAR5 = 2;
+VAR4.VAR6 = 2;
+
+FUN5(64, &VAR11, &VAR12);
+FUN4(&VAR4, &VAR13, &VAR2);
+}
+
+FUN6(100);
+}

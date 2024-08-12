@@ -1,0 +1,68 @@
+}
+FUN1(VAR1);
+
+
+long FUN2(struct VAR2 *VAR3, unsigned int VAR4)
+{
+struct VAR5 *VAR6 = VAR3->VAR5;
+struct VAR7 **VAR8;
+unsigned long *VAR9;
+unsigned long VAR10;
+int VAR11, VAR12, VAR13;
+
+if (!VAR6)
+return -VAR14;
+if (VAR6->VAR15)
+return -VAR16;
+
+if (VAR4 < 1 ||
+VAR4 > 512) 
+return -VAR17;
+
+VAR13 = (VAR4 + VAR18 - 1);
+VAR13 /= VAR18;
+VAR10 = FUN3(VAR3->VAR19, VAR3->VAR20, VAR13);
+
+if (VAR13 > VAR3->VAR21 &&
+(FUN4(VAR10) ||
+FUN5(VAR10)) &&
+FUN6()) {
+VAR11 = -VAR22;
+goto VAR23;
+}
+
+VAR4 = VAR13 * VAR18;
+VAR11 = FUN7(VAR3, FUN8(VAR4));
+if (VAR11 < 0)
+goto VAR23;
+
+VAR8 = FUN9(sizeof(struct VAR7 *), VAR13, VAR24);
+if (!VAR8)
+goto VAR23;
+
+for (VAR12 = 0; VAR12 < VAR13; VAR12++) {
+VAR8[VAR12] = FUN10(VAR24);
+if (!VAR8[VAR12])
+goto VAR25;
+VAR8[VAR12]->VAR26 = VAR12 * VAR18;
+}
+
+VAR9 = FUN11(VAR4, VAR24);
+if (!VAR9)
+goto VAR25;
+
+FUN12(VAR9, VAR4);
+VAR6->VAR15 = VAR8;
+VAR6->VAR27 = VAR9;
+VAR6->VAR13 = VAR13;
+VAR6->VAR4 = VAR4;
+return 0;
+
+VAR25:
+while (--VAR12 >= 0)
+FUN13(VAR8[VAR12]);
+FUN14(VAR8);
+VAR23:
+(void) FUN3(VAR3->VAR19, VAR13, VAR3->VAR20);
+return VAR11;
+}

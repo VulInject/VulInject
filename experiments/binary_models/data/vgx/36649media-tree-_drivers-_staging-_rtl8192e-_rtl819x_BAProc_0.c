@@ -1,0 +1,10 @@
+void FUN1(unsigned long VAR1)
+{
+struct VAR2 *VAR3 = (struct VAR2 *)VAR1;
+struct VAR4 *VAR5 = FUN2(VAR3, struct VAR4,
+VAR6[VAR3->VAR7]);
+FUN3(VAR5, VAR3);
+FUN4(VAR5, VAR3->VAR8.VAR9,
+&VAR3->VAR10, VAR11,
+VAR12);
+}

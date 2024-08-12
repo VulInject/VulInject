@@ -1,0 +1,55 @@
+int FUN1(VAR1 *VAR2, int VAR3, VAR1 *VAR4,
+int VAR5, int VAR6)
+{
+int VAR7, VAR8, VAR9, VAR10;
+
+
+if (VAR2->VAR11 != VAR4->VAR11 || VAR2->VAR12 != VAR4->VAR12) {
+FUN2(VAR4, VAR13, "");
+return FUN3(VAR14);
+}
+
+
+if (VAR3 < 0 || VAR3 > VAR2->VAR6 ||
+VAR5 < 0 || VAR5 > VAR4->VAR6) {
+FUN2(VAR4, VAR13, "",
+VAR5, VAR3);
+return FUN3(VAR14);
+}
+
+
+if (VAR6 > VAR4->VAR6 - VAR5)
+VAR6 = VAR4->VAR6 - VAR5;
+if (VAR6 <= 0)
+return 0;
+
+
+if (VAR2->VAR15) {
+FUN2(VAR2, VAR13, "");
+return FUN3(VAR14);
+}
+
+
+VAR7 = FUN4(VAR2, VAR2->VAR6 + VAR6);
+if (VAR7 < 0) {
+FUN2(VAR2, VAR13, "");
+return VAR7;
+}
+
+VAR9   = VAR3 + VAR6;
+VAR10 = VAR2->VAR6 - VAR3;
+
+for (VAR8 = 0; VAR8 < VAR4->VAR16; VAR8++) {
+if (VAR10 > 0) {
+memmove(VAR2->VAR17[VAR8] + VAR9 * VAR2->VAR18,
+VAR2->VAR17[VAR8] + VAR3  * VAR2->VAR18,
+VAR10 * VAR2->VAR18);
+}
+memcpy(VAR2->VAR17[VAR8] + VAR3 * VAR2->VAR18,
+VAR4->VAR17[VAR8] + VAR5 * VAR4->VAR18,
+VAR6 * VAR4->VAR18);
+}
+VAR2->VAR6 += VAR6;
+
+return 0;
+}

@@ -1,0 +1,58 @@
+static void FUN1(void *VAR1)
+{
+struct VAR2 *VAR3 = FUN2(VAR1,
+struct VAR2, VAR4);
+u8 VAR5 = VAR3->VAR6.VAR7;
+
+FUN3(VAR3);
+
+if (!VAR3->VAR8)
+return;
+if (FUN4(VAR3, true))
+return;
+
+FUN5(&VAR3->VAR9);
+
+if (VAR3->VAR10 == VAR11) {
+FUN6(VAR3->VAR12,
+"",
+VAR13);
+goto VAR14;
+}
+
+do {
+VAR3->VAR6.VAR7 =
+(VAR3->VAR6.VAR7 + 1) %
+VAR15;
+if (VAR3->VAR16++ > VAR15) {
+if (!VAR3->VAR17[VAR3->VAR6.VAR7])
+VAR3->VAR6.VAR7 = 6;
+goto VAR18; 
+}
+} while (!VAR3->VAR17[VAR3->VAR6.VAR7]);
+
+if (VAR3->VAR19 == 0)
+goto VAR18;
+
+VAR3->FUN7(VAR3->VAR12, VAR3->VAR6.VAR7);
+
+if (VAR3->VAR17[VAR3->VAR6.VAR7] == 1)
+FUN8(VAR3, 0);
+
+FUN9(&VAR3->VAR4,
+FUN10(VAR20));
+
+FUN11(&VAR3->VAR9);
+return;
+
+VAR18:
+if (FUN12(VAR3))
+FUN13(VAR3);
+VAR3->VAR6.VAR7 = VAR5;
+
+VAR14:
+VAR3->VAR21 = false;
+VAR3->VAR16 = 0;
+VAR3->VAR19 = 0;
+FUN11(&VAR3->VAR9);
+}

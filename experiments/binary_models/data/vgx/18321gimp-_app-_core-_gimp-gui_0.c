@@ -1,0 +1,28 @@
+FUN1 (VAR1 *VAR2)
+{
+FUN2 (FUN3 (VAR2));
+
+VAR2->VAR3.VAR4                 = NULL;
+VAR2->VAR3.VAR5               = NULL;
+VAR2->VAR3.VAR6             = NULL;
+VAR2->VAR3.VAR7           = NULL;
+VAR2->VAR3.VAR8                   = NULL;
+VAR2->VAR3.VAR9      = NULL;
+VAR2->VAR3.VAR10       = NULL;
+VAR2->VAR3.VAR11          = NULL;
+VAR2->VAR3.VAR12          = NULL;
+VAR2->VAR3.VAR13     = NULL;
+VAR2->VAR3.VAR14  = NULL;
+VAR2->VAR3.VAR15         = NULL;
+VAR2->VAR3.VAR16         = NULL;
+VAR2->VAR3.VAR17     = NULL;
+VAR2->VAR3.VAR18           = NULL;
+VAR2->VAR3.VAR19          = NULL;
+VAR2->VAR3.VAR20         = NULL;
+VAR2->VAR3.VAR21       = NULL;
+VAR2->VAR3.VAR22   = NULL;
+VAR2->VAR3.VAR23       = NULL;
+VAR2->VAR3.VAR24    = NULL;
+VAR2->VAR3.VAR25   = NULL;
+VAR2->VAR3.VAR26  = NULL;
+}

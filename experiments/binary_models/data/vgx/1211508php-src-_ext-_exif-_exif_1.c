@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 , int VAR3 , char * VAR4 , int VAR5 ) { VAR6 * VAR7 = FUN2 ( & VAR2 -> VAR8 [ VAR3 ] ) ; VAR7 -> VAR9 = VAR10 ; VAR7 -> VAR11 = VAR12 ; VAR7 -> VAR4 = FUN3 ( VAR4 ) ; VAR7 -> VAR5 . VAR13 = VAR5 ; VAR2 -> VAR14 |= 1 << VAR3 ; }

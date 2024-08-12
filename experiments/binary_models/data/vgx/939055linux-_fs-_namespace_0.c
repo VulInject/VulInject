@@ -1,0 +1,64 @@
+struct VAR1 *FUN1(struct VAR1 *VAR2, struct VAR3 *VAR3,
+int VAR4)
+{
+struct VAR1 *VAR5, *VAR6, *VAR7, *VAR8, *VAR9;
+
+if (!(VAR4 & VAR10) && FUN2(VAR2))
+return FUN3(-VAR11);
+
+if (!(VAR4 & VAR12) && FUN4(VAR3))
+return FUN3(-VAR11);
+
+VAR5 = VAR7 = FUN5(VAR2, VAR3, VAR4);
+if (FUN6(VAR7))
+return VAR7;
+
+VAR7->VAR13 = VAR2->VAR13;
+
+VAR6 = VAR2;
+FUN7(VAR8, &VAR2->VAR14, VAR15) {
+struct VAR1 *VAR16;
+if (!FUN8(VAR8->VAR13, VAR3))
+continue;
+
+for (VAR16 = VAR8; VAR16; VAR16 = FUN9(VAR16, VAR8)) {
+if (!(VAR4 & VAR10) &&
+FUN2(VAR16)) {
+if (VAR16->VAR2.VAR17 & VAR18) {
+
+VAR7 = FUN3(-VAR19);
+goto VAR20;
+} else {
+VAR16 = FUN10(VAR16);
+continue;
+}
+}
+if (!(VAR4 & VAR12) &&
+FUN4(VAR16->VAR2.VAR21)) {
+VAR16 = FUN10(VAR16);
+continue;
+}
+while (VAR6 != VAR16->VAR22) {
+VAR6 = VAR6->VAR22;
+VAR7 = VAR7->VAR22;
+}
+VAR6 = VAR16;
+VAR9 = VAR7;
+VAR7 = FUN5(VAR6, VAR6->VAR2.VAR21, VAR4);
+if (FUN6(VAR7))
+goto VAR20;
+FUN11();
+FUN12(&VAR7->VAR23, &VAR5->VAR23);
+FUN13(VAR7, VAR9, VAR6->VAR24);
+FUN14();
+}
+}
+return VAR5;
+VAR20:
+if (VAR5) {
+FUN11();
+FUN15(VAR5, VAR25);
+FUN14();
+}
+return VAR7;
+}

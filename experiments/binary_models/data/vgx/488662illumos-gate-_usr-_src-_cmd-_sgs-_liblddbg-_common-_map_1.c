@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 , Lineno VAR3 , int VAR4 , const char * VAR5 ) { const char * VAR6 ; VAR6 = VAR4 ?FUN2 ( VAR7 ) : FUN2 ( VAR8 ) ; FUN3 ( VAR2 , FUN2 ( VAR9 ) , VAR6 , VAR5 , FUN4 ( VAR3 ) ) ; }

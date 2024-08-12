@@ -1,0 +1,10 @@
+int FUN1(struct VAR1 *VAR1)
+{
+int VAR2;
+
+FUN2(&VAR1->VAR3);
+VAR2 = FUN3(VAR1->VAR4);
+FUN4(&VAR1->VAR3);
+
+return VAR2;
+}

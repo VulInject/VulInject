@@ -1,0 +1,10 @@
+void FUN1(VAR1 *VAR2, IOMMUTLBEntry VAR3);
+void FUN2(VAR4 *VAR5, VAR6 *VAR3);
+void FUN3(VAR1 *VAR2, VAR4 *VAR7);
+void FUN4(VAR1 *VAR2, VAR4 *VAR7, bool VAR8);
+void FUN5(VAR1 *VAR2);
+void FUN6(VAR1 *VAR2, VAR4 *VAR7);
+const char *FUN7(const VAR1 *VAR2);
+bool FUN8(VAR1 *VAR2, uint8_t VAR9);
+VAR10 FUN9(VAR1 *VAR2);
+static inline bool FUN10(VAR1 *VAR2) { return VAR2->VAR11 && VAR2->VAR12; }

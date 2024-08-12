@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , bool VAR3 ) { FUN2 ( VAR3 ) ; if ( FUN3 ( VAR4 ) ) { unsigned long VAR5 ; FUN4 ( & VAR2 -> VAR6 , VAR5 ) ; FUN5 ( & VAR2 -> VAR6 , VAR5 ) ; } FUN6 ( VAR2 , NULL ) ; }

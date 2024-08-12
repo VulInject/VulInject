@@ -1,0 +1,10 @@
+VAR1 * FUN1(VAR2 *VAR3, rpmdbMatchIterator VAR4, VAR1 *VAR5)
+{
+VAR6 * VAR7 = (VAR6 *)VAR3->FUN2(VAR3, 0);
+if (VAR7 == NULL) return NULL;
+
+VAR7->VAR4 = VAR4;
+VAR7->VAR8 = VAR5;
+FUN3(VAR7->VAR8);
+return (VAR1 *) VAR7;
+}

@@ -1,0 +1,1 @@
+uint32_t FUN1 ( const uint32_t VAR1 ) { uint32_t VAR2 ; uint32_t VAR3 ; VAR2 = ( 1U + ~ VAR1 ) % VAR1 ; { VAR3 = FUN2 ( ) ; } VAR3 < VAR2 ; return VAR3 % VAR1 ; }

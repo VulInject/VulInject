@@ -1,0 +1,1 @@
+uint16_t FUN1 ( struct VAR1 * VAR2 ) { static uint16_t VAR3 = 1 ; FUN2 ( VAR2 , NULL ) ; return ++ VAR3 ; }

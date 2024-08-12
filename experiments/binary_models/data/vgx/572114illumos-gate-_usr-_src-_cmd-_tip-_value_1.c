@@ -1,0 +1,1 @@
+int FUN1 ( char * VAR1 , char * VAR2 ) { VAR3 * VAR4 ; char * VAR5 ; VAR4 = FUN2 ( VAR1 , NULL ) ; if ( VAR4 == 0 ) { return ( 1 ) ; } if ( VAR4 -> VAR6 & VAR7 ) { FUN3 ( VAR4 , ( char * ) FUN4 ( VAR2 ) ) ; } else { if ( strcmp ( VAR1 , "" ) == 0 ) { if ( ( VAR5 = FUN5 ( VAR2 ) ) != VAR8 ) { VAR2 = VAR5 ; } } FUN3 ( VAR4 , VAR2 ) ; } return ( 0 ) ; }

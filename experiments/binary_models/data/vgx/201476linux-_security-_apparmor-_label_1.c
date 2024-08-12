@@ -1,0 +1,1 @@
+bool FUN1 ( struct VAR1 * VAR2 , struct VAR1 * VAR3 ) { struct label_it VAR4 = { } ; FUN2 ( ! VAR2 ) ; FUN2 ( ! VAR3 ) ; return FUN3 ( & VAR4 , VAR2 , VAR3 ) == NULL ; }

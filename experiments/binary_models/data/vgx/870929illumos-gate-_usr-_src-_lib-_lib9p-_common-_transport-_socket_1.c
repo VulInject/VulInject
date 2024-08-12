@@ -1,0 +1,1 @@
+static void * FUN1 ( void * VAR1 ) { struct VAR2 * VAR3 = ( VAR2 * ) VAR1 ; struct iovec VAR4 ; void * VAR5 ; size_t VAR6 ; for ( ; ; ) { if ( FUN2 ( VAR3 , & VAR5 , & VAR6 ) != 0 ) { break ; } VAR4 . VAR7 = VAR5 ; VAR4 . VAR8 = VAR6 ; FUN3 ( VAR3 -> VAR9 , & VAR4 , 1 , NULL ) ; } FUN4 ( VAR10 , "" ) ; FUN5 ( VAR3 -> VAR9 ) ; free ( VAR3 ) ; return ( NULL ) ; }

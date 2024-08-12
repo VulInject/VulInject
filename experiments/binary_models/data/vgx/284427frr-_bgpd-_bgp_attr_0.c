@@ -1,0 +1,174 @@
+int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+iana_afi_t VAR5;
+afi_t VAR6;
+iana_safi_t VAR7;
+safi_t VAR8;
+bgp_size_t VAR9;
+size_t VAR10;
+struct VAR11 *VAR12;
+struct VAR13 *const VAR13 = VAR2->VAR13;
+struct VAR14 *const VAR14 = VAR2->VAR14;
+const bgp_size_t VAR15 = VAR2->VAR15;
+
+
+VAR12 = FUN2(VAR13);
+VAR10 = FUN3(VAR12);
+
+
+if ((VAR15 > FUN4(VAR12)) || (VAR15 < VAR16)) {
+FUN5("",
+VAR17, VAR13->VAR18, (unsigned long)VAR15);
+return VAR19;
+}
+
+
+VAR5 = FUN6(VAR12);
+VAR7 = FUN7(VAR12);
+
+
+if (FUN8(VAR5, VAR7, &VAR6, &VAR8)) {
+
+if (FUN9(VAR13, NULL, NULL, 0))
+FUN10(
+"",
+VAR13->VAR18, FUN11(VAR5),
+FUN12(VAR7));
+return VAR20;
+}
+
+
+VAR14->VAR21 = FUN7(VAR12);
+
+if (VAR22 < VAR14->VAR21) {
+FUN5(
+"",
+VAR17, VAR13->VAR18, VAR14->VAR21);
+return VAR19;
+}
+
+
+switch (VAR14->VAR21) {
+case 0:
+if (VAR8 != VAR23) {
+FUN5("",
+VAR17, VAR13->VAR18, VAR14->VAR21);
+return VAR19;
+}
+break;
+case VAR24:
+FUN13(VAR12); 
+FUN13(VAR12); 
+
+
+case VAR25:
+FUN14(&VAR14->VAR26, VAR12, VAR27);
+
+if (VAR14->VAR28.VAR29 == VAR30)
+memcpy(&VAR14->VAR28.VAR29,
+&VAR14->VAR26, VAR27);
+break;
+case VAR31:
+case VAR32:
+if (VAR14->VAR21 == VAR32) {
+FUN13(VAR12); 
+FUN13(VAR12); 
+}
+FUN14(&VAR14->VAR33, VAR12, VAR34);
+if (FUN15(&VAR14->VAR33)) {
+if (!VAR13->VAR28.VAR35) {
+FUN16("",
+VAR13->VAR18);
+return VAR36;
+}
+VAR14->VAR37 = VAR13->VAR28.VAR35->VAR38;
+}
+break;
+case VAR39:
+case VAR40:
+if (VAR14->VAR21
+== VAR40) {
+FUN13(VAR12); 
+FUN13(VAR12); 
+}
+FUN14(&VAR14->VAR33, VAR12, VAR34);
+if (FUN15(&VAR14->VAR33)) {
+if (!VAR13->VAR28.VAR35) {
+FUN16("",
+VAR13->VAR18);
+return VAR36;
+}
+VAR14->VAR37 = VAR13->VAR28.VAR35->VAR38;
+}
+if (VAR14->VAR21
+== VAR40) {
+FUN13(VAR12); 
+FUN13(VAR12); 
+}
+FUN14(&VAR14->VAR41, VAR12, VAR34);
+if (!FUN15(&VAR14->VAR41)) {
+if (FUN9(VAR13, NULL, NULL, 1))
+FUN10(
+"",
+VAR13->VAR18, &VAR14->VAR33,
+&VAR14->VAR41);
+
+VAR14->VAR21 = VAR34;
+}
+if (!VAR13->VAR28.VAR35) {
+FUN16("",
+VAR13->VAR18);
+return VAR36;
+}
+VAR14->VAR42 = VAR13->VAR28.VAR35->VAR38;
+break;
+default:
+FUN5("",
+VAR17, VAR13->VAR18, VAR14->VAR21);
+return VAR19;
+}
+
+if (!VAR22) {
+FUN5("",
+VAR17, VAR13->VAR18);
+return VAR19;
+}
+
+{
+uint8_t VAR43;
+if ((VAR43 = FUN7(VAR12)))
+FUN17(
+VAR44,
+"",
+VAR13->VAR18, VAR43);
+}
+
+
+VAR9 = VAR22;
+if (VAR9 > FUN4(VAR12)) {
+FUN5("",
+VAR17, VAR13->VAR18);
+return VAR19;
+}
+
+if (!VAR9) {
+FUN5("",
+VAR17, VAR13->VAR18);
+
+VAR4->VAR6 = VAR6;
+VAR4->VAR8 = VAR8;
+return VAR45;
+}
+
+VAR4->VAR6 = VAR6;
+VAR4->VAR8 = VAR8;
+VAR4->VAR46 = FUN18(VAR12);
+VAR4->VAR15 = VAR9;
+
+FUN19(VAR12, VAR9);
+
+VAR14->VAR47 |= FUN20(VAR48);
+
+return VAR49;
+}

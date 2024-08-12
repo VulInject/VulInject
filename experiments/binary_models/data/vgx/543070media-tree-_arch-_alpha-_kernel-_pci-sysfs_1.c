@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , loff_t VAR3 , u32 VAR4 , size_t VAR5 ) { struct VAR6 * VAR7 = VAR2 -> VAR8 ; VAR3 += VAR7 -> VAR9 -> VAR10 ; switch ( VAR5 ) { case 1 : FUN2 ( VAR3 , VAR4 ) ; return 1 ; case 2 : FUN3 ( VAR3 , VAR4 ) ; return 2 ; case 4 : if ( VAR3 & 3 ) { return - VAR11 ; } FUN4 ( VAR3 , VAR4 ) ; return 4 ; } return - VAR11 ; }

@@ -1,0 +1,1 @@
+( VAR1 ) ; void FUN1 ( void VAR2 * VAR3 ) { struct VAR4 * VAR5 ; if ( ( unsigned long ) VAR3 > VAR6 ) { return ; } VAR5 = FUN2 ( ( void * ) ( VAR7 & ( unsigned long VAR8 ) VAR3 ) ) ; if ( ! VAR5 ) { FUN3 ( "" , VAR3 ) ; } }

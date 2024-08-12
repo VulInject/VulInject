@@ -1,0 +1,1 @@
+static inline u64 FUN1 ( u64 VAR1 , u64 VAR2 ) { if ( VAR2 == 0 ) { return VAR3 ; } return FUN2 ( VAR1 , VAR2 ) ; }

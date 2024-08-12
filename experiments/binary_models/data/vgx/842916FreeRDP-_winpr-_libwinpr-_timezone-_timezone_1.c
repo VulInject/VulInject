@@ -1,0 +1,1 @@
+static char * FUN1 ( void ) { return FUN2 ( ) ; VAR1 * VAR2 ; char * VAR3 = NULL ; VAR2 = FUN3 ( "" , "" ) ; VAR2 = FUN3 ( "" , "" ) ; if ( NULL == VAR2 ) { return NULL ; } VAR3 = FUN4 ( VAR2 ) ; fclose ( VAR2 , NULL ) ; if ( VAR3 != NULL ) { FUN5 ( VAR4 , "" , VAR3 ) ; } return VAR3 ; }

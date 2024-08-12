@@ -1,0 +1,125 @@
+static int FUN1(struct VAR1 *VAR2, int VAR3, void *VAR4)
+{
+struct VAR5 *VAR6 = VAR4;
+u8 VAR7, *VAR8;
+u32 VAR9;
+u16 VAR10;
+struct VAR11 *VAR12;
+struct VAR13 *VAR14 = (struct VAR13 *)(VAR2->VAR15 +
+VAR16);
+u8 VAR17[16];
+u8 VAR18[4];
+u32 VAR19;
+struct scatterlist VAR20;
+int VAR21;
+int VAR22;
+
+if (VAR2->VAR23 < VAR3 + 8 + 4)
+return -1;
+
+VAR12 = (struct VAR11 *) VAR2->VAR24;
+VAR8 = VAR2->VAR24 + VAR3;
+VAR7 = VAR8[3];
+if (!(VAR7 & (1 << 5))) {
+if (FUN2()) {
+FUN3(VAR2->VAR25,
+"",
+VAR12->VAR26);
+}
+return -2;
+}
+VAR7 >>= 6;
+if (VAR6->VAR27 != VAR7) {
+FUN3(VAR2->VAR25,
+"",
+VAR6->VAR27, VAR7, VAR4);
+return -6;
+}
+if (!VAR6->VAR28) {
+if (FUN2()) {
+FUN3(VAR2->VAR25,
+"",
+VAR12->VAR26, VAR7);
+}
+return -3;
+}
+VAR10 = (VAR8[0] << 8) | VAR8[2];
+VAR9 = VAR8[4] | (VAR8[5] << 8) | (VAR8[6] << 16) | (VAR8[7] << 24);
+VAR8 += 8;
+
+if (!VAR14->VAR29 || (VAR2->VAR15[0] == 1)) {
+FUN4(VAR30, VAR6->VAR31);
+
+if ((VAR9 < VAR6->VAR32 ||
+(VAR9 == VAR6->VAR32 && VAR10 <= VAR6->VAR33)) &&
+VAR6->VAR34) {
+if (FUN2()) {
+FUN3(VAR2->VAR25,
+"",
+VAR12->VAR26, VAR6->VAR32,
+VAR6->VAR33, VAR9, VAR10);
+}
+VAR6->VAR35++;
+return -4;
+}
+VAR6->VAR34 = true;
+
+if (VAR9 != VAR6->VAR32 || !VAR6->VAR36) {
+FUN5(VAR6->VAR37, VAR6->VAR38,
+VAR12->VAR26, VAR9);
+VAR6->VAR36 = 1;
+}
+FUN6(VAR17, VAR6->VAR38, VAR6->VAR37, VAR10);
+
+VAR21 = VAR2->VAR23 - VAR3 - 12;
+
+FUN7(&VAR20, VAR8, VAR21+4);
+
+FUN8(VAR6->VAR31, VAR17, 16);
+FUN9(VAR30, VAR6->VAR31);
+FUN10(VAR30, 0, NULL, NULL);
+FUN11(VAR30, &VAR20, &VAR20, VAR21 + 4, NULL);
+VAR22 = FUN12(VAR30);
+FUN13(VAR30);
+if (VAR22) {
+if (FUN2()) {
+FUN3(VAR2->VAR25,
+"",
+VAR12->VAR26);
+}
+return -7;
+}
+
+VAR19 = ~FUN14(~0, VAR8, VAR21);
+VAR18[0] = VAR19;
+VAR18[1] = VAR19 >> 8;
+VAR18[2] = VAR19 >> 16;
+VAR18[3] = VAR19 >> 24;
+
+if (memcmp(VAR18, VAR8 + VAR21, 4) != 0) {
+if (VAR9 != VAR6->VAR32) {
+
+VAR6->VAR36 = 0;
+}
+if (FUN2()) {
+FUN3(VAR2->VAR25,
+"",
+VAR12->VAR26);
+}
+VAR6->VAR39++;
+return -5;
+}
+
+}
+
+
+VAR6->VAR40 = VAR9;
+VAR6->VAR41 = VAR10;
+
+
+memmove(VAR2->VAR24 + 8, VAR2->VAR24, VAR3);
+FUN15(VAR2, 8);
+FUN16(VAR2, VAR2->VAR23 - 4);
+
+return VAR7;
+}

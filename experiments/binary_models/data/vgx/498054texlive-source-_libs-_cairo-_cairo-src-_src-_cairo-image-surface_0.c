@@ -1,0 +1,33 @@
+FUN1 (VAR1 *VAR2,
+cairo_format_t	      VAR3)
+{
+VAR1 *VAR4;
+cairo_status_t VAR5;
+
+VAR5 = VAR2->VAR6.VAR5;
+if (FUN2 (VAR5))
+return (VAR1 *)FUN3 (VAR5);
+
+if (VAR2->VAR3 == VAR3)
+return (VAR1 *)FUN4(&VAR2->VAR6);
+
+VAR4 = (VAR1 *)
+FUN5 (VAR3, VAR2->VAR7, VAR2->VAR8);
+if (FUN2 (VAR4->VAR6.VAR5))
+return VAR4;
+
+FUN6 (VAR9,
+VAR2->VAR10, NULL, VAR4->VAR10,
+0, 0,
+0, 0,
+0, 0,
+VAR2->VAR7, VAR2->VAR8);
+VAR4->VAR6.VAR11 = VAR12;
+
+VAR4->VAR6.VAR13 =
+VAR2->VAR6.VAR13;
+VAR4->VAR6.VAR14 =
+VAR2->VAR6.VAR14;
+
+return VAR4;
+}

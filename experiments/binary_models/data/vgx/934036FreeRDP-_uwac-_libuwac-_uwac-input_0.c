@@ -1,0 +1,28 @@
+static void FUN1(void* VAR1, struct VAR2* VAR3, uint32_t VAR4,
+wl_fixed_t VAR5, wl_fixed_t VAR6)
+{
+VAR7* VAR8;
+VAR9* VAR10 = VAR1;
+VAR11* VAR12 = VAR10->VAR13;
+
+int VAR14 = FUN2(VAR5);
+int VAR15 = FUN2(VAR6);
+double VAR16 = FUN3(VAR5);
+double VAR17 = FUN3(VAR6);
+
+if (!VAR12 || (VAR14 < 0) || (VAR15 < 0))
+return;
+
+VAR10->VAR18 = VAR16;
+VAR10->VAR19 = VAR17;
+
+VAR8 =
+(VAR7*)FUN4(VAR10->VAR20, VAR21);
+if (!VAR8)
+return;
+
+VAR8->VAR22 = VAR10;
+VAR8->VAR12 = VAR12;
+VAR8->VAR23 = VAR14;
+VAR8->VAR24 = VAR15;
+}

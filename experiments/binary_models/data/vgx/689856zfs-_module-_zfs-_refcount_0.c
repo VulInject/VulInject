@@ -1,0 +1,22 @@
+VAR1
+FUN1(VAR2 *VAR3, void *VAR4)
+{
+VAR5 *VAR6;
+
+FUN2(&VAR3->VAR7);
+
+if (!VAR3->VAR8) {
+FUN3(&VAR3->VAR7);
+return (VAR3->VAR9 > 0);
+}
+
+for (VAR6 = FUN4(&VAR3->VAR10); VAR6;
+VAR6 = FUN5(&VAR3->VAR10, VAR6)) {
+if (VAR6->VAR11 == VAR4) {
+FUN3(&VAR3->VAR7);
+return (VAR12);
+}
+}
+FUN3(&VAR3->VAR7);
+return (VAR13);
+}

@@ -1,0 +1,35 @@
+static VAR1 FUN1(struct VAR2 *VAR3, char VAR4 *VAR5, size_t VAR6,
+VAR7 *VAR8)
+{
+struct VAR9 *VAR10;
+char VAR11[20];
+int *VAR12;
+u64 VAR13;
+int VAR14;
+
+VAR12 = VAR3->VAR15;
+VAR10 = FUN2(VAR12, struct VAR9, VAR16[*VAR12]);
+
+switch (VAR10->VAR17) {
+case VAR18:
+VAR13 = FUN3(VAR10->VAR19, VAR10->VAR20, *VAR12);
+break;
+
+case VAR21:
+VAR13 = FUN4(VAR10->VAR19, VAR10->VAR20, *VAR12);
+break;
+
+case VAR22:
+VAR13 = FUN5(VAR10->VAR19, *VAR12);
+break;
+
+default:
+FUN6(VAR10->VAR19, VAR23, VAR10->VAR19->VAR24, "",
+VAR10->VAR17);
+return -VAR25;
+}
+
+VAR14 = snprintf(VAR11, sizeof(VAR11), "", VAR13);
+
+return FUN7(VAR5, VAR6, VAR8, VAR11, VAR14);
+}

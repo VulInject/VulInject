@@ -1,0 +1,1 @@
+static int FUN1 ( const char * VAR1 , size_t VAR2 ) { int VAR3 ; const char * const * VAR4 = & VAR5 [ 0 ] ; for ( VAR3 = 0 ; VAR3 < 12 ; VAR3 ++ ) { if ( FUN2 ( VAR1 , VAR4 [ 0 ] , 3 ) ) { return VAR3 ; } VAR4 ++ ; } return - 1 ; }

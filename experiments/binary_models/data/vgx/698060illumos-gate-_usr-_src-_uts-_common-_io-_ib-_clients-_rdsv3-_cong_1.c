@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , uint16_be_t VAR3 ) { cfs_time_t VAR4 ; unsigned long VAR5 ; FUN2 ( "" , "" , FUN3 ( VAR2 -> VAR6 ) , FUN4 ( VAR3 ) , VAR2 ) ; VAR4 = FUN4 ( VAR3 ) / VAR7 ; VAR5 = FUN4 ( VAR3 ) % VAR7 ; FUN5 ( VAR5 , ( void * ) VAR2 -> VAR8 [ VAR4 ] ) ; }

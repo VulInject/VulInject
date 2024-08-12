@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 , unsigned long VAR5 ) { size_t VAR6 , VAR7 = VAR5 / sizeof ( VAR1 ) ; char * VAR8 ; VAR8 = FUN2 ( VAR7 , VAR9 ) ; if ( ! VAR8 ) { return ; } for ( VAR6 = 0 ; VAR6 < VAR7 ; VAR6 ++ ) { VAR8 [ VAR6 ] = VAR2 [ VAR6 ] ; } FUN3 ( VAR10 "" , VAR8 , VAR4 ) ; FUN4 ( VAR8 ) ; }

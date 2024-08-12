@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( struct VAR2 * VAR2 , const char * VAR3 ) { struct VAR1 * VAR4 ; struct l2vpn_pw VAR5 ; FUN2 ( VAR5 . VAR3 , VAR3 , sizeof ( VAR5 . VAR3 ) ) ; VAR4 = FUN3 ( VAR6 , & VAR2 -> VAR7 , & VAR5 ) ; return ( FUN3 ( VAR6 , & VAR2 -> VAR8 , & VAR5 ) ) ; }

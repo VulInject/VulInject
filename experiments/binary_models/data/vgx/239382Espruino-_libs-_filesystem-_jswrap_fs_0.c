@@ -1,0 +1,39 @@
+VAR1 *FUN1(VAR1 *VAR2) {
+VAR1 *VAR3 = 0; 
+
+char VAR4[VAR5] = "";
+if (!FUN2(VAR2))
+if (!FUN3(VAR4, VAR2)) return 0;
+if (!VAR4[0]) strcpy(VAR4, ""); 
+
+FRESULT VAR6 = 0;
+if (FUN4()) {
+DIR VAR7;
+if ((VAR6=FUN5(&VAR7, VAR4)) == VAR8) {
+FILINFO VAR9;
+char VAR10[VAR11+1];
+VAR9.VAR12 = VAR10;
+VAR9.VAR13 = sizeof(VAR10);
+VAR14 *VAR15 = FUN6(VAR4);
+if(VAR15) {
+VAR3 = FUN7();
+if (VAR3) { 
+while (((VAR6=FUN8(&VAR7, &VAR9)) == VAR8) && VAR9.VAR16[0]) {
+char *VAR17 = FUN9(VAR9);
+struct VAR18 *VAR19=NULL;
+while((VAR19 = FUN10(VAR15)) != NULL) {
+char *VAR17 = (*VAR19).VAR20;
+VAR1 *VAR21 = FUN11(VAR17);
+if (VAR21) {
+FUN12(VAR3, VAR21);
+FUN13(VAR21);
+}
+}
+}
+FUN14(&VAR7);
+FUN15(VAR15);
+}
+}
+if (VAR6) FUN16("", VAR6);
+return VAR3;
+}

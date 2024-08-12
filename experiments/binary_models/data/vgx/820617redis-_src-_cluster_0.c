@@ -1,0 +1,142 @@
+void FUN1(void) {
+mstime_t VAR1;
+mstime_t VAR2 = FUN2() - VAR3.VAR4->VAR5;
+int VAR6 = (VAR3.VAR4->VAR7 / 2) + 1;
+int VAR8 = VAR3.VAR4->VAR9 != 0 &&
+VAR3.VAR4->VAR10;
+mstime_t VAR11, VAR12;
+
+VAR3.VAR4->VAR13 &= ~VAR14;
+
+
+VAR11 = VAR3.VAR15*2;
+if (VAR11 < 2000) VAR11 = 2000;
+VAR12 = VAR11*2;
+
+
+if (FUN3(VAR16) ||
+VAR16->VAR17 == NULL ||
+(!FUN4(VAR16->VAR17) && !VAR8) ||
+(VAR3.VAR18 && !VAR8) ||
+VAR16->VAR17->VAR19 == 0)
+{
+
+VAR3.VAR4->VAR20 = VAR21;
+return;
+}
+
+
+if (VAR3.VAR22 == VAR23) {
+VAR1 = (VAR24)(VAR3.VAR25 - VAR3.VAR26->VAR27)
+* 1000;
+} else {
+VAR1 = (VAR24)(VAR3.VAR25 - VAR3.VAR28) * 1000;
+}
+
+
+if (VAR1 > VAR3.VAR15)
+VAR1 -= VAR3.VAR15;
+
+
+if (VAR3.VAR29 &&
+VAR1 >
+(((VAR24)VAR3.VAR30 * 1000) +
+(VAR3.VAR15 * VAR3.VAR29)))
+{
+if (!VAR8) {
+FUN5(VAR31);
+return;
+}
+}
+
+
+if (VAR2 > VAR12) {
+VAR3.VAR4->VAR5 = FUN2() +
+500 + 
+random() % 500; 
+VAR3.VAR4->VAR32 = 0;
+VAR3.VAR4->VAR33 = 0;
+VAR3.VAR4->VAR34 = FUN6();
+
+VAR3.VAR4->VAR5 +=
+VAR3.VAR4->VAR34 * 1000;
+
+if (VAR3.VAR4->VAR9) {
+VAR3.VAR4->VAR5 = FUN2();
+VAR3.VAR4->VAR34 = 0;
+FUN7(VAR14);
+}
+FUN8(VAR35,
+""
+"",
+VAR3.VAR4->VAR5 - FUN2(),
+VAR3.VAR4->VAR34,
+FUN9());
+
+FUN10(VAR36);
+return;
+}
+
+
+if (VAR3.VAR4->VAR33 == 0 &&
+VAR3.VAR4->VAR9 == 0)
+{
+int VAR37 = FUN6();
+if (VAR37 > VAR3.VAR4->VAR34) {
+long long VAR38 =
+(VAR37 - VAR3.VAR4->VAR34) * 1000;
+VAR3.VAR4->VAR5 += VAR38;
+VAR3.VAR4->VAR34 = VAR37;
+FUN8(VAR35,
+"",
+VAR37, VAR38);
+}
+}
+
+
+if (FUN2() < VAR3.VAR4->VAR5) {
+FUN5(VAR39);
+return;
+}
+
+
+if (VAR2 > VAR11) {
+FUN5(VAR40);
+return;
+}
+
+
+if (VAR3.VAR4->VAR33 == 0) {
+VAR3.VAR4->VAR41++;
+VAR3.VAR4->VAR42 = VAR3.VAR4->VAR41;
+FUN8(VAR35,"",
+(unsigned long long) VAR3.VAR4->VAR41);
+FUN11();
+VAR3.VAR4->VAR33 = 1;
+FUN7(VAR43|
+VAR44|
+VAR45);
+return; 
+}
+
+
+if (VAR3.VAR4->VAR32 >= VAR6) {
+
+
+FUN8(VAR35,
+"");
+
+
+if (VAR16->VAR46 < VAR3.VAR4->VAR42) {
+VAR16->VAR46 = VAR3.VAR4->VAR42;
+FUN8(VAR35,
+"",
+(unsigned long long) VAR16->VAR46);
+}
+
+
+FUN12();
+} else {
+FUN5(VAR47);
+}
+}

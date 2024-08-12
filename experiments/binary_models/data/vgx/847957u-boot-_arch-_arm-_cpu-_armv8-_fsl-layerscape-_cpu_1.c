@@ -1,0 +1,1 @@
+int FUN1 ( unsigned int VAR1 ) { struct ccsr_gur VAR2 * VAR3 = ( void VAR2 * ) ( VAR4 ) ; int VAR5 = 0 , VAR6 = 0 ; u32 VAR7 ; { int VAR8 ; VAR7 = FUN2 ( & VAR3 -> VAR9 [ VAR5 ] . VAR10 ) ; for ( VAR8 = 0 ; VAR8 < VAR11 ; VAR8 ++ ) { if ( FUN3 ( VAR7 , VAR8 ) ) { VAR6 ++ ; } } VAR5 ++ ; } ( VAR7 & VAR12 ) == 0x0 ; return - 1 ; }

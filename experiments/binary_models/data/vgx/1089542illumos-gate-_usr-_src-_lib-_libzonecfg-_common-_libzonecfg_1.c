@@ -1,0 +1,1 @@
+static int FUN1 ( char * VAR1 ) { if ( unlink ( VAR1 ) == - 1 ) { if ( VAR2 == VAR3 ) { return ( VAR4 ) ; } return ( VAR5 ) ; } return ( VAR6 ) ; }

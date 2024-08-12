@@ -1,0 +1,23 @@
+static struct VAR1 *FUN1(struct VAR2 *VAR3,
+unsigned int VAR4)
+{
+struct VAR5 *VAR6 = NULL;
+struct VAR1 *VAR7 = NULL;
+int VAR8;
+
+if (VAR4 && FUN2(VAR3, VAR9) > VAR10 &&
+FUN3(VAR3, VAR11) && FUN3(VAR3, VAR12))
+return NULL;
+
+VAR8 = FUN4(VAR3, VAR4);
+if (VAR8 < 0)
+return NULL;
+
+VAR6 = &VAR3->VAR13[VAR8].VAR14;
+VAR7 = FUN5(FUN6(VAR6), struct VAR1, VAR15);
+
+FUN7(&VAR7->VAR15, VAR6);
+VAR7->VAR14 = NULL;
+VAR3->VAR13[VAR8].VAR16--;
+return VAR7;
+}

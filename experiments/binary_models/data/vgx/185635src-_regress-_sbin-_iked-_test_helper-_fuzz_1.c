@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR1 ) { FUN2 ( ( "" , VAR1 ) ) ; assert ( VAR1 != NULL ) ; assert ( VAR1 -> VAR2 != NULL ) ; assert ( VAR1 -> VAR3 != NULL ) ; free ( VAR1 -> VAR3 ) ; free ( VAR1 ) ; }

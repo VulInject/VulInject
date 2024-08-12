@@ -1,0 +1,77 @@
+static int FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = FUN2(VAR2);
+    VAR5 *VAR6 = &VAR4->VAR7;
+    int VAR8;
+    int64_t VAR9;
+    VAR10 *VAR11;
+    if (!VAR4->VAR12.VAR13)
+    {
+        return -1;
+    }
+    VAR9 = FUN3(VAR4->VAR12.VAR13);
+    if (VAR9 < 0)
+    {
+        return -1;
+    }
+    FUN4(&VAR4->VAR12, &VAR4->VAR14);
+    if (!VAR4->VAR14)
+    {
+        return -1;
+    }
+    VAR11 = VAR2->VAR15;
+    VAR11[VAR16] = 1;
+    FUN5(VAR2->VAR15, 0x2);
+    FUN6(VAR2->VAR15, VAR17);
+    FUN7(&VAR4->VAR18, 0x80);
+    VAR4->VAR19 = 1;
+    VAR4->VAR20 = 64;
+    VAR4->VAR21 = 1 << FUN8(0x1004 + 2 * (VAR4->VAR20 + 1) * 4);
+    VAR4->VAR22 = VAR9 / (VAR23)VAR4->VAR19;
+    VAR4->VAR24 = FUN9(VAR25, VAR4->VAR19);
+    VAR4->VAR26 = FUN9(VAR27 *, VAR4->VAR20);
+    VAR4->VAR28 = FUN9(VAR29 *, VAR4->VAR20);
+    FUN10(&VAR4->VAR30, FUN11(VAR4), &VAR31, VAR4, "", VAR4->VAR21);
+    FUN12(&VAR4->VAR18, 0, VAR32 | VAR33, &VAR4->VAR30);
+    FUN13(&VAR4->VAR18, VAR4->VAR20, 4);
+    VAR6->VAR34 = FUN14(FUN15(VAR11 + VAR35));
+    VAR6->VAR36 = FUN14(FUN15(VAR11 + VAR37));
+    FUN16((char *)VAR6->VAR38, sizeof(VAR6->VAR38), "", '');
+    FUN16((char *)VAR6->VAR39, sizeof(VAR6->VAR39), "", '');
+    FUN16((char *)VAR6->VAR40, sizeof(VAR6->VAR40), VAR4->VAR14, '');
+    VAR6->VAR41 = 6;
+    VAR6->VAR42[0] = 0x00;
+    VAR6->VAR42[1] = 0x02;
+    VAR6->VAR42[2] = 0xb3;
+    VAR6->VAR43 = FUN14(0);
+    VAR6->VAR44 = 7 << 1;
+    VAR6->VAR45 = 1 << 0;
+    VAR6->VAR46 = (0x6 << 4) | 0x6;
+    VAR6->VAR47 = (0x4 << 4) | 0x4;
+    VAR6->VAR48 = FUN17(VAR4->VAR19);
+    VAR6->VAR49[0].VAR50 = FUN14(0x9c4);
+    VAR6->VAR49[0].VAR51 = FUN17(0x10);
+    VAR6->VAR49[0].VAR52 = FUN17(0x4);
+    VAR4->VAR53.VAR54 = 0;
+    FUN18(VAR4->VAR53.VAR54, 0x7ff);
+    FUN19(VAR4->VAR53.VAR54, 1);
+    FUN20(VAR4->VAR53.VAR54, 1);
+    FUN21(VAR4->VAR53.VAR54, 0xf);
+    FUN22(VAR4->VAR53.VAR54, 1);
+    VAR4->VAR53.VAR55 = 0x00010001;
+    VAR4->VAR53.VAR56 = VAR4->VAR53.VAR57 = 0;
+    for (VAR8 = 0; VAR8 < VAR4->VAR19; VAR8++)
+    {
+        VAR25 *VAR58 = &VAR4->VAR24[VAR8];
+        VAR59 *VAR60 = &VAR58->VAR60;
+        VAR60->VAR61 = 0;
+        VAR60->VAR62 = 0;
+        VAR60->VAR63 = 0;
+        VAR60->VAR64 = 0;
+        VAR60->VAR65 = 0;
+        VAR60->VAR66 = 0;
+        VAR60->VAR67[0].VAR68 = VAR69;
+        VAR60->VAR70 = VAR60->VAR71 = VAR60->VAR72 = FUN23(VAR4->VAR22 >> VAR60->VAR67[FUN24(VAR58->VAR60.VAR63)].VAR68);
+    }
+    return 0;
+}

@@ -1,0 +1,1 @@
+static float FUN1(struct VAR1 *VAR2, const float *VAR3, const float *VAR4, int VAR5, int VAR6, int VAR7, const float VAR8, const float VAR9, int *VAR10, int VAR11) { return FUN2(VAR2, NULL, VAR3, VAR4, VAR5, VAR6, VAR7, VAR8, VAR9, VAR10); }

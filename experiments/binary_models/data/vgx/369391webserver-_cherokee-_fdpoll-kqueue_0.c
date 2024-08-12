@@ -1,0 +1,49 @@
+FUN1 (VAR1 *VAR2, int VAR3)
+{
+struct timespec  VAR4;
+int              VAR5;
+int              VAR6;
+
+VAR4.VAR7  = VAR3/1000L;
+VAR4.VAR8 = ( VAR3 % 1000L ) * 1000000L;
+
+
+VAR9:
+VAR6 = FUN2 (VAR2->VAR10,
+VAR2->VAR11,
+VAR2->VAR12,
+VAR2->VAR11,
+FUN3(VAR2)->VAR13,
+&VAR4);
+
+VAR2->VAR12 = 0;
+
+if (FUN4 (VAR6 < 0)) {
+if (VAR14 == VAR15)
+goto VAR9;
+
+FUN5 (VAR14, VAR16, VAR17);
+return 0;
+
+} else if (VAR6 > 0) {
+memset (VAR2->VAR18, 0, FUN3(VAR2)->VAR19 * sizeof(int));
+
+for (VAR5 = 0; VAR5 < VAR6; ++VAR5) {
+
+if (VAR2->VAR11[VAR5].VAR20 == VAR21) {
+VAR2->VAR18[VAR2->VAR11[VAR5].VAR22] = VAR23;
+} else if (VAR2->VAR11[VAR5].VAR20 == VAR24) {
+VAR2->VAR18[VAR2->VAR11[VAR5].VAR22] = VAR25;
+} else {
+VAR26;
+}
+
+
+if (VAR2->VAR11[VAR5].VAR27 & (VAR28 | VAR29)) {
+VAR2->VAR18[VAR2->VAR11[VAR5].VAR22] = VAR30;
+}
+}
+}
+
+return VAR6;
+}

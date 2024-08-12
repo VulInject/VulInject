@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR3 , int VAR4 , enum ima_hooks VAR5 ) { u32 VAR6 ; FUN2 ( & VAR6 ) ; return FUN3 ( VAR2 , VAR3 , FUN4 ( ) , VAR6 , VAR5 , VAR4 , VAR7 | VAR8 , NULL , NULL , NULL , NULL ) ; }

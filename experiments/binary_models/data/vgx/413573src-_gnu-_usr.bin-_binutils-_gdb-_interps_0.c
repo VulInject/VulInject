@@ -1,0 +1,25 @@
+FUN1 (void)
+{
+VAR1 = 0;
+VAR2 = 0;
+
+VAR3 = 0;
+VAR4 = 0;
+VAR5 = 0;
+VAR6 = 0;
+VAR7 = 0;
+VAR8 = 0;
+VAR9 = 0;
+VAR10 = 0;
+VAR11 = 0;
+VAR12 = 0;
+VAR13 = 0;
+VAR14 = 0;
+VAR15 = 0;
+VAR16 = 0;
+VAR17 = 0;
+VAR18 = 0;
+VAR19 = 0;
+VAR20 = 0;
+FUN2 ();
+}

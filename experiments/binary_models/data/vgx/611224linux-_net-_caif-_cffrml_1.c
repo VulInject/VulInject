@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * this = FUN2 ( VAR2 ) ; FUN3 ( this -> VAR4 ) ; }

@@ -1,0 +1,14 @@
+void FUN1(VAR1 *VAR2)
+{
+    if (VAR2->VAR3.VAR4)
+    {
+        VAR2->VAR3.VAR5 = VAR2->VAR3.VAR6 = VAR2->VAR3.VAR7 = 0;
+        VAR2->VAR3.VAR8 = VAR2->VAR3.VAR9 = 0;
+        VAR2->VAR3.VAR10 = NULL;
+        FUN2(VAR2->VAR3.VAR11);
+        free(VAR2->VAR3.VAR12);
+        VAR2->VAR3.VAR11 = VAR2->VAR3.VAR12 = NULL;
+        FUN3(&VAR2->VAR3.VAR4);
+        VAR2->VAR3.VAR4 = NULL;
+    }
+}

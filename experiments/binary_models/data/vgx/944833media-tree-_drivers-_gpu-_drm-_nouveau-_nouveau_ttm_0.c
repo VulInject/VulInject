@@ -1,0 +1,36 @@
+int
+FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+int VAR5;
+
+VAR4 = &VAR2->VAR6.VAR7;
+VAR4->VAR8 = VAR9;
+VAR4->VAR10 = sizeof(struct VAR11);
+VAR4->VAR12 = &VAR13;
+VAR4->VAR14 = &VAR15;
+
+VAR5 = FUN2(VAR4);
+if (FUN3(VAR5 != 0)) {
+FUN4("");
+VAR2->VAR6.VAR7.VAR14 = NULL;
+return VAR5;
+}
+
+VAR2->VAR6.VAR16.VAR17 = VAR4->VAR18;
+VAR4 = &VAR2->VAR6.VAR16.VAR19;
+VAR4->VAR8 = VAR20;
+VAR4->VAR10 = sizeof(struct VAR21);
+VAR4->VAR12 = &VAR22;
+VAR4->VAR14 = &VAR23;
+
+VAR5 = FUN2(VAR4);
+if (FUN3(VAR5 != 0)) {
+FUN4("");
+FUN5(&VAR2->VAR6.VAR7);
+VAR2->VAR6.VAR7.VAR14 = NULL;
+return VAR5;
+}
+
+return 0;
+}

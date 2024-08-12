@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * VAR2 ; ACPI_CPU_FLAGS VAR3 ; ACPI_STATUS VAR4 ; FUN2 ( VAR5 ) ; VAR4 = FUN3 ( ( VAR6 ) VAR7 . VAR8 , VAR9 ) ; if ( ! VAR10 ) { return ( VAR4 ) ; } VAR3 = FUN4 ( VAR11 ) ; while ( VAR10 ) { VAR2 = VAR10 ; VAR10 = VAR2 -> VAR12 ; FUN5 ( VAR2 , NULL ) ; } FUN6 ( VAR11 , VAR3 ) ; FUN7 ( VAR4 ) ; }

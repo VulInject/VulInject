@@ -1,0 +1,29 @@
+static int FUN1(struct VAR1 *VAR2,
+unsigned int VAR3, bool VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR2);
+unsigned long VAR7;
+void VAR8 *VAR9;
+bool VAR10;
+u32 VAR11;
+
+VAR9 = FUN3(VAR6, FUN4(VAR3), VAR12);
+
+FUN5(&VAR6->VAR13, VAR7);
+VAR10 = FUN6(VAR6, VAR3);
+
+VAR11 = FUN7(VAR9);
+
+if (VAR4)
+VAR11 |= FUN8(VAR3);
+else
+VAR11 &= ~FUN8(VAR3);
+
+FUN9(VAR11, VAR9);
+
+if (VAR10)
+FUN10(VAR6, VAR3);
+FUN11(&VAR6->VAR13, VAR7);
+
+return 0;
+}

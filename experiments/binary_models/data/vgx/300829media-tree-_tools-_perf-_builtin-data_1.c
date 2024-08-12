@@ -1,0 +1,1 @@
+int FUN1 ( int argc , const char * * argv ) { struct VAR1 * VAR2 ; const char * VAR3 ; if ( argc < 2 ) { VAR4 } argc = FUN2 ( argc , argv , VAR5 , VAR6 , VAR7 , VAR8 ) ; if ( argc < 1 ) { VAR4 } VAR3 = argv [ 0 ] ; FUN3 ( ) { return VAR2 -> FUN4 ( argc , argv ) ; } FUN5 ( "" , VAR3 ) ; usage FUN6 ( ) ; return - 1 ; }

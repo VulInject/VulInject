@@ -1,0 +1,93 @@
+int
+FUN1(struct VAR1 *VAR2, void *VAR3, int VAR4,
+uint32_t VAR5, uint8_t VAR6, bool VAR7,
+void (*VAR8) (struct VAR1 *, struct VAR9 *))
+{
+struct VAR9  *VAR10;
+struct csio_iq_params VAR11;
+int VAR12;
+
+memset(&VAR11, 0, sizeof(struct VAR13));
+FUN2(VAR2, VAR4) = VAR6;
+
+VAR10 = FUN3(VAR2->VAR14, VAR15);
+if (!VAR10) {
+FUN4(VAR2, "");
+return -VAR16;
+}
+
+switch (VAR2->VAR17) {
+case VAR18:
+case VAR19:
+
+if (VAR2->VAR20 == VAR4)
+VAR11.VAR21	= VAR22;
+else
+VAR11.VAR21	= VAR23;
+VAR11.VAR24	=
+FUN5(VAR2, VAR2->VAR20);
+break;
+case VAR25:
+VAR11.VAR21		= VAR22;
+VAR11.VAR24	= (VAR26)VAR5;
+break;
+case VAR27:
+FUN6(VAR10, VAR2->VAR14);
+return -VAR28;
+}
+
+
+VAR11.VAR29			= VAR2->VAR29;
+VAR11.VAR30			= 0;
+VAR11.VAR31		= 1;
+VAR11.VAR32		= 0;
+VAR11.VAR33		= VAR34;
+VAR11.VAR35		= VAR7;
+if (VAR36)
+VAR11.VAR37	= VAR38;
+else
+VAR11.VAR37	= VAR39;
+VAR11.VAR40		= VAR41;
+VAR11.VAR42		= VAR6;
+VAR11.VAR43	= (VAR44)VAR45;
+
+switch (FUN7(VAR2, VAR4)) {
+case 16:
+VAR11.VAR46 = 0; break;
+case 32:
+VAR11.VAR46 = 1; break;
+case 64:
+VAR11.VAR46 = 2; break;
+case 128:
+VAR11.VAR46 = 3; break;
+}
+
+VAR11.VAR47		= FUN8(VAR2, VAR4) /
+FUN7(VAR2, VAR4);
+VAR11.VAR48		= FUN9(VAR2, VAR4);
+
+VAR12 = FUN10(VAR2, VAR4);
+if (VAR12 != -1) {
+struct VAR49 *VAR50 = VAR2->VAR51.VAR52[VAR12];
+
+VAR11.VAR53	= 1;
+VAR11.VAR54	= VAR50->VAR55.VAR56.VAR57 ? 1 : 0;
+VAR11.VAR58	= VAR59;
+VAR11.VAR60	= VAR61;
+VAR11.VAR62	= FUN8(VAR2, VAR12) / VAR63;
+VAR11.VAR64	= FUN9(VAR2, VAR12);
+}
+
+FUN11(VAR2, VAR10, VAR3, VAR65, &VAR11, VAR8);
+
+if (FUN12(VAR2, VAR10)) {
+FUN4(VAR2, "");
+FUN6(VAR10, VAR2->VAR14);
+return -VAR28;
+}
+
+if (VAR8 != NULL)
+return 0;
+
+return FUN13(VAR2, VAR10, VAR4);
+}

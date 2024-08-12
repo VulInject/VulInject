@@ -1,0 +1,1 @@
+int FUN1 ( void ) { int VAR1 ; int VAR2 ; VAR2 = FUN2 ( & VAR3 ) ; VAR1 = FUN3 ( "" ) ; if ( VAR1 < 0 ) { if ( VAR1 == - 2 ) { FUN4 ( & VAR3 , - 2 ) ; } return VAR1 ; } if ( ( VAR1 = FUN5 ( "" ) ) == - 1 ) { return VAR1 ; } FUN4 ( & VAR3 , VAR1 ) ; return VAR1 ; }

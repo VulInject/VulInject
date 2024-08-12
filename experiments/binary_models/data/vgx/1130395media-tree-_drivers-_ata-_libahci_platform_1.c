@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR2 ) ; struct VAR5 * VAR6 = VAR4 -> VAR7 ; int VAR8 ; VAR8 = FUN3 ( VAR6 ) ; if ( VAR8 ) { return VAR8 ; } VAR8 = FUN4 ( VAR2 ) ; if ( VAR8 ) { VAR9 } FUN5 ( VAR2 ) ; FUN6 ( VAR2 ) ; FUN7 ( VAR2 ) ; return 0 ; disable_resources FUN8 ( VAR6 , NULL ) ; return VAR8 ; }

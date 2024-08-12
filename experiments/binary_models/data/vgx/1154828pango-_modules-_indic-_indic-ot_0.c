@@ -1,0 +1,8 @@
+static void FUN1(VAR1 *VAR2, guint32 VAR3, gulong VAR4, gboolean VAR5)
+{
+VAR2->VAR6 = VAR2->VAR7 = VAR2->VAR8 = VAR2->VAR9 = VAR2->VAR10 = VAR2->VAR11 = 0;
+VAR2->VAR12 = -1;
+VAR2->VAR13 = VAR3;
+VAR2->VAR14 = VAR4;
+VAR2->VAR15 = VAR5;
+}

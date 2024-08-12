@@ -1,0 +1,49 @@
+VAR1 *FUN1(void)
+{
+    InputEvent VAR2;
+    KeyValue VAR3;
+    InputKeyEvent VAR4;
+    VAR4.VAR4 = &VAR3;
+    InputBtnEvent VAR5;
+    InputMoveEvent VAR6;
+    InputMoveEvent VAR7;
+    VAR2.VAR8 = FUN2();
+    switch (VAR2.VAR8)
+    {
+    case VAR9:
+        VAR2.VAR10.VAR4.VAR11 = &VAR4;
+        VAR2.VAR10.VAR4.VAR11->VAR4->VAR8 = FUN2();
+        switch (VAR2.VAR10.VAR4.VAR11->VAR4->VAR8)
+        {
+        case VAR12:
+            VAR2.VAR10.VAR4.VAR11->VAR4->VAR10.VAR13.VAR11 = FUN3();
+            VAR2.VAR10.VAR4.VAR11->VAR14 = FUN4();
+            break;
+        case VAR15:
+            VAR2.VAR10.VAR4.VAR11->VAR4->VAR10.VAR16.VAR11 = (VAR17)FUN2();
+            VAR2.VAR10.VAR4.VAR11->VAR14 = FUN4();
+            break;
+        case VAR18:
+            break;
+        }
+        break;
+    case VAR19:
+        VAR2.VAR10.VAR5.VAR11 = &VAR5;
+        VAR2.VAR10.VAR5.VAR11->VAR20 = (VAR21)FUN2();
+        VAR2.VAR10.VAR5.VAR11->VAR14 = FUN4();
+        break;
+    case VAR22:
+        VAR2.VAR10.VAR6.VAR11 = &VAR6;
+        VAR2.VAR10.VAR6.VAR11->VAR23 = (VAR24)FUN2();
+        VAR2.VAR10.VAR6.VAR11->VAR25 = FUN3();
+        break;
+    case VAR26:
+        VAR2.VAR10.VAR7.VAR11 = &VAR7;
+        VAR2.VAR10.VAR7.VAR11->VAR23 = (VAR24)FUN2();
+        VAR2.VAR10.VAR7.VAR11->VAR25 = FUN3();
+        break;
+    case VAR27:
+        break;
+    }
+    return FUN5(&VAR2);
+}

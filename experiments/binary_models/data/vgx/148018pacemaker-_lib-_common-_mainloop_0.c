@@ -1,0 +1,22 @@
+static VAR1 *
+FUN1(VAR2 * VAR3, int VAR4, int (*VAR5) (gpointer VAR6),
+gpointer VAR7)
+{
+VAR1 *VAR8 = NULL;
+
+VAR8 = (VAR1 *) VAR3;
+
+VAR8->VAR9 = 0;
+VAR8->VAR8 = VAR10;
+VAR8->VAR6 = VAR7;
+
+if (VAR5) {
+FUN2(VAR3, VAR5, VAR8, NULL);
+}
+
+FUN3(VAR3, VAR4);
+FUN4(VAR3, VAR10);
+
+VAR8->VAR9 = FUN5(VAR3, NULL);
+return VAR8;
+}

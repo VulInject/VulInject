@@ -1,0 +1,62 @@
+static void FUN1(VAR1 *VAR2, uint8_t VAR3, uint8_t VAR4, uint8_t VAR5, uint8_t VAR6, uint8_t VAR7, uint8_t VAR8, uint8_t VAR9, uint8_t VAR10, uint8_t VAR11, uint8_t VAR12, uint32_t VAR13)
+{
+    v16u8 VAR14, VAR15;
+    v8i16 VAR16;
+    v8i16 VAR17 = {0};
+    v8i16 VAR18 = {0};
+    v16u8 VAR19, VAR20, VAR21, VAR22, VAR23;
+    v16u8 VAR24;
+    v16u8 VAR25, VAR26, VAR27;
+    v8i16 VAR28, VAR29;
+    v16u8 VAR30, VAR31, VAR32, VAR33;
+    v8i16 VAR34, VAR35, VAR36, VAR37;
+    v16i8 VAR38, VAR39;
+    v8i16 VAR40, VAR41;
+    v16i8 VAR42 = {0};
+    VAR16 = (VAR43)FUN2(VAR3);
+    VAR17 = FUN3(VAR17, 0, VAR16);
+    VAR16 = (VAR43)FUN2(VAR4);
+    VAR17 = FUN3(VAR17, 1, VAR16);
+    VAR16 = (VAR43)FUN2(VAR5);
+    VAR17 = FUN3(VAR17, 2, VAR16);
+    VAR16 = (VAR43)FUN2(VAR6);
+    VAR17 = FUN3(VAR17, 3, VAR16);
+    if (!FUN4((VAR44)VAR17))
+    {
+        VAR16 = (VAR43)FUN2(VAR7);
+        VAR18 = FUN3(VAR18, 0, VAR16);
+        VAR16 = (VAR43)FUN2(VAR8);
+        VAR18 = FUN3(VAR18, 1, VAR16);
+        VAR16 = (VAR43)FUN2(VAR9);
+        VAR18 = FUN3(VAR18, 2, VAR16);
+        VAR16 = (VAR43)FUN2(VAR10);
+        VAR18 = FUN3(VAR18, 3, VAR16);
+        VAR27 = (VAR44)(VAR42 < (VAR45)VAR17);
+        VAR14 = (VAR44)FUN2(VAR11);
+        VAR15 = (VAR44)FUN2(VAR12);
+        FUN5(VAR2 - (VAR13 << 1), VAR13, VAR30, VAR31, VAR32, VAR33);
+        VAR21 = FUN6(VAR31, VAR32);
+        VAR22 = FUN6(VAR30, VAR31);
+        VAR23 = FUN6(VAR33, VAR32);
+        VAR26 = (VAR21 < VAR14);
+        VAR25 = (VAR22 < VAR15);
+        VAR24 = VAR25 & VAR26;
+        VAR25 = (VAR23 < VAR15);
+        VAR24 = VAR25 & VAR24;
+        VAR24 = VAR24 & VAR27;
+        VAR24 = (VAR44)FUN7((VAR46)VAR42, (VAR46)VAR24);
+        if (!FUN4(VAR24))
+        {
+            VAR38 = VAR42 - (VAR45)VAR18;
+            VAR39 = FUN8(VAR38, 0);
+            FUN9(VAR42, VAR18, VAR39, VAR38, VAR40, VAR41);
+            FUN10(VAR42, VAR30, VAR42, VAR31, VAR42, VAR32, VAR42, VAR33, VAR34, VAR35, VAR36, VAR37);
+            FUN11(VAR36, VAR35, VAR34, VAR37, VAR41, VAR40, VAR28, VAR29);
+            FUN12(VAR42, VAR28, VAR42, VAR29, VAR19, VAR20);
+            VAR31 = FUN13(VAR31, VAR19, VAR24);
+            VAR32 = FUN13(VAR32, VAR20, VAR24);
+            FUN14(VAR32, VAR2);
+            FUN14(VAR31, (VAR2 - VAR13));
+        }
+    }
+}

@@ -1,0 +1,14 @@
+VAR1 *FUN1(qemu_irq VAR2)
+{
+    struct VAR3 *VAR4 = (struct VAR3 *)FUN2(sizeof(struct VAR3));
+    VAR4->VAR5.VAR6 = VAR4;
+    VAR4->VAR5.VAR7 = VAR8;
+    VAR4->VAR5.VAR9 = VAR10;
+    VAR4->VAR11 = FUN3();
+    VAR4->VAR11->VAR6 = VAR4;
+    VAR4->VAR11->VAR12 = VAR13;
+    VAR4->VAR11->VAR14 = VAR15;
+    VAR4->VAR16 = FUN4(VAR17, VAR18, VAR4);
+    VAR4->VAR19 = FUN5(VAR20, VAR4, VAR21);
+    FUN6(VAR4);
+    return &VAR4->VAR5;

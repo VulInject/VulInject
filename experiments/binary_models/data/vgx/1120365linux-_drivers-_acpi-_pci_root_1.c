@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( acpi_handle VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR2 ) ; struct VAR1 * VAR5 ; if ( ! VAR4 || FUN3 ( VAR4 , VAR6 ) ) { return VAR7 ; } VAR5 = FUN4 ( VAR4 ) ; return VAR5 ; }

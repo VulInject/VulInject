@@ -1,0 +1,1 @@
+static XidBoundsViolation FUN1 ( MultiXactId VAR1 , VAR2 * VAR3 ) { if ( ! FUN2 ( VAR1 ) ) { return VAR4 ; } if ( FUN3 ( VAR1 , VAR3 -> VAR5 ) ) { return VAR6 ; } if ( FUN4 ( VAR3 -> VAR7 , VAR1 ) ) { return VAR8 ; } return VAR9 ; }

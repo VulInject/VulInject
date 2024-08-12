@@ -1,0 +1,7 @@
+static void FUN1(VAR1 *VAR2, int VAR3, TCGv_i64 VAR4)
+{
+    TCGv_i64 VAR5 = FUN2(0);
+    FUN3(VAR4, VAR6, FUN4(VAR2, VAR3, VAR7));
+    FUN3(VAR5, VAR6, FUN5(VAR2, VAR3));
+    FUN6(VAR5);
+}

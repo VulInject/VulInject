@@ -1,0 +1,197 @@
+int FUN1(struct VAR1 *VAR2,
+unsigned int VAR3, unsigned long VAR4)
+{
+int VAR5;
+struct VAR6 *VAR7;
+struct VAR1 *VAR8;
+
+if (!VAR2->VAR9 && FUN2(VAR2)) {
+VAR2->VAR10 = FUN3(VAR2->VAR11.VAR12);
+if (FUN4(VAR2->VAR10))
+return FUN5(VAR2->VAR10);
+
+VAR5 = FUN6(VAR2->VAR10);
+if (VAR5)
+return VAR5;
+
+VAR5 = FUN7(VAR2->VAR10,
+VAR13);
+if (VAR5)
+VAR5 = FUN7(VAR2->VAR10,
+VAR14);
+if (VAR5)
+goto VAR15;
+
+VAR5 = FUN8(VAR2->VAR10);
+if (VAR5)
+goto VAR15;
+}
+
+FUN9(VAR2->VAR11.VAR16, "", VAR2->VAR17);
+
+switch (VAR18) {
+case VAR19:
+VAR2->VAR20 = VAR21;
+break;
+
+case VAR22:
+VAR2->VAR20 = VAR23;
+break;
+
+case VAR24:
+VAR2->VAR20 = VAR25;
+break;
+
+case VAR26:
+default:
+VAR2->VAR20 = VAR2->VAR27 ?
+VAR21 : VAR23;
+break;
+}
+
+FUN10(VAR28, &VAR2->VAR29);
+
+
+FUN10(VAR30, &VAR2->VAR29);
+
+
+VAR5 = FUN11(VAR2);
+if (VAR5 != 0) {
+FUN12(VAR2->VAR11.VAR12, "");
+goto VAR31;
+}
+
+VAR5 = FUN13(&VAR2->VAR11);
+if (VAR5 < 0)
+goto VAR32;
+
+VAR7 = FUN14(NULL, &VAR2->VAR11, 0);
+if (VAR7 == NULL) {
+FUN15(VAR2->VAR11.VAR12, "");
+VAR5 = -VAR33;
+goto VAR34;
+}
+FUN16(&VAR35);
+VAR2->VAR11.VAR36 = VAR7;
+FUN17(&VAR35);
+
+VAR7->VAR37 = 1;
+VAR7->VAR38 = 1;
+VAR7->VAR39 = VAR40;
+
+switch (VAR2->VAR41) {
+case VAR42:
+VAR7->VAR41 = VAR43;
+break;
+case VAR44:
+VAR7->VAR41 = VAR45;
+break;
+case VAR46:
+VAR7->VAR41 = VAR47;
+break;
+case VAR48:
+VAR7->VAR41 = VAR49;
+break;
+case VAR50:
+VAR7->VAR37 = 2;
+VAR7->VAR38 = 2;
+VAR7->VAR39 = VAR51;
+VAR7->VAR41 = VAR52;
+break;
+case VAR53:
+VAR7->VAR39 = VAR54;
+VAR7->VAR41 = VAR52;
+break;
+default:
+VAR5 = -VAR55;
+goto VAR56;
+}
+
+
+FUN18(&VAR7->VAR57, 1);
+
+
+FUN10(VAR58, &VAR2->VAR29);
+
+
+if (VAR2->VAR59->VAR60) {
+VAR5 = VAR2->VAR59->FUN19(VAR2);
+if (VAR5 < 0) {
+FUN15(VAR2->VAR11.VAR16, "",
+VAR5);
+goto VAR61;
+}
+}
+VAR2->VAR62 = 1;
+
+VAR5 = FUN20(VAR2->VAR10);
+if (VAR5)
+goto VAR61;
+
+
+if (FUN21(VAR2->VAR11.VAR16)
+&& FUN21(&VAR2->VAR11.VAR36->VAR57))
+FUN12(VAR2->VAR11.VAR16, "");
+
+
+FUN22(&VAR2->VAR63);
+VAR2->VAR63.VAR64 = true;
+FUN22(&VAR2->VAR65);
+
+
+if (FUN2(VAR2) && VAR3) {
+VAR5 = FUN23(VAR2, VAR3, VAR4);
+if (VAR5)
+goto VAR66;
+}
+
+VAR2->VAR67 = VAR68;
+VAR5 = VAR2->VAR59->FUN24(VAR2);
+if (VAR5 < 0) {
+FUN15(VAR2->VAR11.VAR16, "", VAR5);
+goto VAR69;
+}
+
+
+VAR8 = VAR2->VAR8;
+if (!FUN2(VAR2) && VAR8 && FUN25(VAR8)) {
+VAR5 = FUN26(VAR8);
+if (VAR5 != 0)
+goto VAR70;
+
+if (VAR8->VAR71 && FUN27(VAR8))
+FUN28(VAR8);
+}
+
+
+if (!FUN25(VAR2)) {
+VAR5 = FUN26(VAR2);
+if (VAR5 != 0)
+goto VAR70;
+
+if (VAR2->VAR71 && FUN27(VAR2))
+FUN28(VAR2);
+}
+
+return VAR5;
+
+VAR70:
+FUN29(VAR2);
+VAR69:
+if (FUN2(VAR2) && VAR2->VAR72 > 0)
+FUN30(VAR3, VAR2);
+VAR66:
+VAR61:
+VAR56:
+FUN31(VAR2);
+VAR34:
+FUN32(&VAR2->VAR11);
+VAR32:
+FUN33(VAR2);
+VAR31:
+FUN34(VAR2->VAR10);
+VAR15:
+FUN35(VAR2->VAR10);
+
+return VAR5;
+}

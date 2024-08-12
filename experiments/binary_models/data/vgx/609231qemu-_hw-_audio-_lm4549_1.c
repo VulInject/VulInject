@@ -1,0 +1,1 @@
+uint32_t FUN1 ( VAR1 * VAR2 , uint32_t VAR3 , uint32_t VAR4 ) { if ( VAR2 -> VAR5 > VAR6 - 2 ) { return 0 ; } VAR2 -> VAR7 [ VAR2 -> VAR5 ++ ] = ( VAR3 >> 4 ) ; VAR2 -> VAR7 [ VAR2 -> VAR5 ++ ] = ( VAR4 >> 4 ) ; if ( VAR2 -> VAR5 == VAR6 ) { FUN2 ( VAR2 ) ; } return 1 ; }

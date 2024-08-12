@@ -1,0 +1,1 @@
+static uint64_t FUN1 ( void * VAR1 , hwaddr VAR2 , unsigned VAR3 ) { VAR4 * VAR5 = VAR1 ; uint32_t VAR6 ; VAR6 = VAR5 -> VAR7 ; FUN2 ( VAR6 , NULL ) ; return VAR6 ; }

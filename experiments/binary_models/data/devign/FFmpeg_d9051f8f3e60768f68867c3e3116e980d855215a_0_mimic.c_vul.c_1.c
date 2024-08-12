@@ -1,0 +1,30 @@
+static int FUN1(VAR1 *VAR2, int VAR3, int VAR4)
+{
+    VAR5 *VAR6 = VAR2->VAR7;
+    unsigned int VAR8;
+    VAR2->VAR9.FUN2(VAR6);
+    VAR6[0] = FUN3(&VAR2->VAR10, 8) << 3;
+    for (VAR8 = 1; VAR8 < VAR3; VAR8++)
+    {
+        uint32_t VAR11, VAR12;
+        int VAR13;
+        int VAR14;
+        VAR11 = FUN4(&VAR2->VAR10, VAR2->VAR11.VAR15, VAR2->VAR11.VAR16, 3);
+        if (!VAR11)
+            return 0;
+        if (VAR11 == -1)
+            return VAR17;
+        VAR8 += VAR11 & 15;
+        VAR12 = VAR11 >> 4;
+        if (VAR8 >= 64)
+            return VAR17;
+        VAR13 = FUN3(&VAR2->VAR10, VAR12);
+        VAR14 = VAR18[VAR12][VAR13];
+        if (VAR8 < 3)
+            VAR14 *= 16;
+        else
+            VAR14 = (VAR14 * VAR4) / 1001;
+        VAR6[VAR2->VAR19.VAR20[VAR8]] = VAR14;
+    }
+    return 0;
+}

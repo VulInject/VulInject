@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , void * VAR3 , int VAR4 ) { VAR5 * VAR6 = VAR3 ; int VAR7 , VAR8 ; FUN2 ( "" , FUN3 ( VAR2 ) ) ; for ( VAR7 = 0 ; VAR7 < VAR4 ; VAR7 ++ ) { for ( VAR8 = 0 ; VAR8 < sizeof ( VAR9 ) ; VAR8 ++ ) { FUN2 ( "" , VAR6 [ ( VAR7 * ( sizeof ( VAR9 ) ) ) + VAR8 ] ) ; } FUN2 ( "" ) ; } }

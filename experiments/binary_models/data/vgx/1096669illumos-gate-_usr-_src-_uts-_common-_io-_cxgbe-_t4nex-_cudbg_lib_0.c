@@ -1,0 +1,112 @@
+static int
+FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+struct VAR5 *VAR6)
+{
+struct cudbg_buffer VAR7;
+struct VAR8 *VAR9 = VAR2->VAR10;
+struct cudbg_tcam VAR11 = {0};
+struct VAR12 *VAR13 = NULL;
+u32 VAR14, VAR15 = 0, VAR16  = 0;
+u32 VAR17;
+int VAR18, VAR19;
+
+
+VAR14 = FUN2(VAR9, VAR20); 
+VAR11.VAR21 = VAR14;
+
+
+VAR14 = FUN2(VAR9, VAR22);
+VAR11.VAR23 = VAR14;
+
+
+VAR14 = FUN2(VAR9, VAR24);
+VAR11.VAR25 = VAR14;
+
+
+VAR14 = FUN2(VAR9, VAR26);
+VAR11.VAR27 = VAR14;
+
+
+VAR14 = FUN2(VAR9, VAR28);
+VAR11.VAR29 = VAR14;
+
+
+VAR14 = FUN2(VAR9, VAR30);
+if ((VAR14 >> VAR31) & 1) {
+VAR14 = FUN2(VAR9, VAR32);
+if (FUN3(VAR9->VAR33.VAR34) > VAR35)
+VAR11.VAR36 = (VAR14 & 0xFFFFF) +
+VAR11.VAR21;
+else {	    
+VAR14 = FUN4(VAR14);
+VAR14 = 1 << VAR14;
+VAR11.VAR36 = VAR14 +
+VAR11.VAR21;
+}
+} else	 
+VAR11.VAR36 = VAR37;
+
+VAR19 = sizeof(struct VAR12) * VAR11.VAR36;
+VAR19 += sizeof(struct VAR38);
+VAR7.VAR19 = VAR19;
+
+VAR18 = FUN5(&VAR7, VAR4);
+if (VAR18)
+goto VAR39;
+
+VAR18 = FUN6(VAR4, VAR40, &VAR7);
+if (VAR18)
+goto VAR39;
+
+memcpy(VAR7.VAR41, &VAR11, sizeof(struct VAR38));
+
+VAR13 = (struct VAR12 *)(((struct VAR38 *)
+VAR7.VAR41) + 1);
+VAR16 = VAR40 - sizeof(struct VAR38);
+VAR15 = sizeof(struct VAR38);
+
+
+for (VAR17 = 0; VAR17 < VAR11.VAR36; VAR17++) {
+if (VAR16 < sizeof(struct VAR12)) {
+VAR7.VAR19 = VAR15;
+VAR18 = FUN7(&VAR7, VAR4);
+if (VAR18)
+goto VAR42;
+VAR7.VAR19 = VAR40;
+FUN8(&VAR7, VAR4);
+
+
+VAR18 = FUN6(VAR4, VAR40,
+&VAR7);
+if (VAR18)
+goto VAR39;
+
+VAR13 = (struct VAR12 *)(VAR7.VAR41);
+VAR16 = VAR40;
+VAR15 = 0;
+}
+
+VAR18 = FUN9(VAR2, VAR17, VAR13);
+
+if (VAR18) {
+VAR6->VAR43 = VAR18;
+goto VAR42;
+}
+
+VAR13++;
+VAR16 -= sizeof(struct VAR12);
+VAR15 += sizeof(struct VAR12);
+}
+
+if (VAR15) {
+VAR7.VAR19 = VAR15;
+VAR18 = FUN7(&VAR7, VAR4);
+}
+
+VAR42:
+VAR7.VAR19 = VAR40;
+FUN8(&VAR7, VAR4);
+VAR39:
+return VAR18;
+}

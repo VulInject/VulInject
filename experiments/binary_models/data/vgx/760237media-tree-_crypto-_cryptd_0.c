@@ -1,0 +1,26 @@
+struct VAR1 *FUN1(const char *VAR2,
+u32 VAR3, u32 VAR4)
+{
+char VAR5[VAR6];
+struct VAR7 *VAR8;
+struct VAR9 *VAR10;
+
+if (snprintf(VAR5, VAR6,
+"", VAR2) >= VAR6)
+return FUN2(-VAR11);
+VAR3 = FUN3(VAR3);
+VAR4 &= ~VAR12;
+VAR4 |= (VAR13 | VAR14);
+VAR10 = FUN4(VAR5, VAR3, VAR4);
+if (FUN5(VAR10))
+return FUN6(VAR10);
+if (VAR10->VAR15->VAR16 != VAR17) {
+FUN7(VAR10);
+return FUN2(-VAR11);
+}
+
+VAR8 = FUN8(VAR10);
+FUN9(&VAR8->VAR18, 1);
+
+return FUN10(FUN11(VAR10));
+}

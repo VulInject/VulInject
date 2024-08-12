@@ -1,0 +1,63 @@
+static VAR1 *FUN1(VAR2 *VAR3, VAR1 *VAR4, l_int32 VAR5,
+l_float32 VAR6, l_int32 VAR7);
+static VAR8 FUN2(VAR2 *VAR3, VAR1 *VAR4, l_int32 VAR9,
+l_float32 VAR6, VAR8 *VAR10,
+l_int32 VAR7);
+static void FUN3(VAR11 *VAR12, VAR11 *VAR13, VAR11 *VAR14,
+VAR11 *VAR15, VAR11 *VAR16, VAR11 *VAR17);
+
+
+
+VAR18
+FUN4(VAR2  *VAR3,
+VAR1      *VAR4,
+l_int32   VAR5,
+l_int32   VAR19,
+VAR20    **VAR21,
+VAR22    **VAR23,
+VAR1     **VAR24,
+l_int32   VAR25)
+{
+l_int32  VAR26;
+VAR20    *VAR27;
+VAR1     *VAR28;
+VAR22    *VAR29;
+
+if (VAR21) *VAR21 = NULL;
+if (VAR23) *VAR23 = NULL;
+if (VAR24) *VAR24 = NULL;
+if (!VAR3)
+return FUN5("", VAR30, 2);
+if (!VAR3->VAR31)
+return FUN5("", VAR30, 2);
+if (!VAR4)
+return FUN5("", VAR30, 2);
+
+
+if (FUN6(VAR4) > 1)
+VAR28 = FUN7(VAR4, VAR3->VAR32);
+else
+VAR28 = FUN8(VAR4);
+
+
+FUN9(VAR3, VAR28, VAR5, VAR19, &VAR27, &VAR29,
+VAR25);
+FUN10(&VAR28);
+if (!VAR29 || (VAR26 = FUN11(VAR29)) == 0) {
+FUN12(&VAR29);
+FUN13(&VAR27);
+FUN14("", VAR30);
+return 1;
+}
+
+FUN15(VAR3, VAR29, VAR24);
+if (VAR21)
+*VAR21 = VAR27;
+else
+FUN13(&VAR27);
+if (VAR23)
+*VAR23 = VAR29;
+else
+FUN12(&VAR29);
+return 0;
+}

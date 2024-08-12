@@ -1,0 +1,1 @@
+VAR1 FUN1(ram_addr_t VAR2, void *VAR3, VAR4 *VAR5, VAR6 **VAR7) { return FUN2(VAR2, VAR2, NULL, VAR3, false, VAR5, VAR7); }

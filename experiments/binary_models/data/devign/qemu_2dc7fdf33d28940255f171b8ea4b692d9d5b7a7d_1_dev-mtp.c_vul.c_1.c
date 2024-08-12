@@ -1,0 +1,13 @@
+static VAR1 *FUN1(VAR2 *VAR3, VAR4 *VAR5, VAR6 *VAR7)
+{
+    VAR1 *VAR8 = FUN2(VAR5);
+    FUN3(VAR3->VAR9.VAR10, VAR7->VAR11, VAR7->VAR12);
+    VAR8->VAR13 = open(VAR7->VAR12, VAR14);
+    if (VAR8->VAR13 == -1)
+    {
+        return NULL;
+    }
+    VAR8->VAR15 = VAR7->VAR16.VAR17;
+    VAR8->VAR18 = 512;
+    VAR8->VAR19 = FUN4(VAR8->VAR18);
+    return VAR8;

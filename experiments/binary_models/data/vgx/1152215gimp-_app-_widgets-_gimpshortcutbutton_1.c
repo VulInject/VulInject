@@ -1,0 +1,1 @@
+FUN1 ( ) { FUN2 ( VAR1 ) -> FUN3 ( VAR2 ) ; FUN4 ( VAR2 , "" , FUN5 ( VAR3 ) , NULL ) ; FUN4 ( VAR2 , "" , FUN5 ( VAR4 ) , NULL ) ; FUN4 ( VAR2 , "" , FUN5 ( VAR5 ) ) ; FUN6 ( FUN7 ( VAR2 ) , NULL ) ; }

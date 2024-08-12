@@ -1,0 +1,25 @@
+VAR1 FUN1(struct VAR2 *VAR2, VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR2);
+struct VAR7 *VAR8 = VAR6->VAR9;
+struct mutex *VAR10 = VAR8->VAR10 ? VAR8->VAR10 : VAR6->VAR10;
+__poll_t VAR11;
+void *VAR12;
+
+
+FUN3(!VAR10);
+
+if (VAR10 && FUN4(VAR10))
+return VAR13;
+
+VAR12 = VAR8->VAR12;
+
+VAR11 = FUN5(VAR6->VAR9, VAR2, VAR4);
+
+
+if (!VAR12 && VAR8->VAR12)
+VAR8->VAR14 = VAR2->VAR15;
+if (VAR10)
+FUN6(VAR10);
+return VAR11;
+}

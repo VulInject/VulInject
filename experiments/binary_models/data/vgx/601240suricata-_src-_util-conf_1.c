@@ -1,0 +1,1 @@
+TmEcode FUN1 ( const char * VAR1 ) { FUN2 ( ) ; struct _stat VAR2 ; if ( FUN3 ( VAR1 , & VAR2 ) != 0 ) { struct stat VAR2 ; if ( FUN4 ( VAR1 , & VAR2 ) != 0 ) { FUN5 ( VAR3 ) ; } FUN5 ( VAR4 , NULL ) ; } }

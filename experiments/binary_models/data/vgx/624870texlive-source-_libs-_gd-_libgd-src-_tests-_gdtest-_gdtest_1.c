@@ -1,0 +1,1 @@
+int FUN1 ( const char * VAR1 , unsigned int VAR2 , int VAR3 ) { FUN2 ( VAR1 , VAR2 , "" , VAR1 , VAR2 ) ; ++ VAR4 ; return 0 ; }

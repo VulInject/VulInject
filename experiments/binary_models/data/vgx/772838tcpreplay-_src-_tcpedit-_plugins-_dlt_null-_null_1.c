@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , const VAR3 * VAR4 , const int VAR5 ) { assert ( VAR2 ) ; if ( VAR5 < 4 ) { return 0 ; } return 4 ; }

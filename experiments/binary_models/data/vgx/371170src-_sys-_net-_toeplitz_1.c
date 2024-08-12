@@ -1,0 +1,1 @@
+uint16_t FUN1 ( const struct VAR1 * VAR2 , const struct VAR3 * VAR4 , const struct VAR3 * VAR5 ) { uint32_t VAR6 = 0 ; int VAR7 ; for ( VAR7 = 0 ; VAR7 < FUN2 ( VAR4 -> VAR8 ) ; VAR7 ++ ) { VAR6 ^= VAR4 -> VAR8 [ VAR7 ] ^ VAR5 -> VAR8 [ VAR7 ] ; } return ( FUN3 ( VAR2 , VAR6 ) ) ; }

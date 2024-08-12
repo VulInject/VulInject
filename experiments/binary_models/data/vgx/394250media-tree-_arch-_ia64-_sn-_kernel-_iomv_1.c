@@ -1,0 +1,1 @@
+void FUN1 ( void ) { volatile unsigned long * VAR1 = VAR2 -> VAR3 ; cfs_time_t VAR4 = VAR2 -> VAR5 ; while ( ( * VAR1 & VAR6 ) != VAR4 ) { FUN2 ( ) ; } }

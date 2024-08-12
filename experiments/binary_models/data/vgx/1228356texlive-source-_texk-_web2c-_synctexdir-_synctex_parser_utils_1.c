@@ -1,0 +1,1 @@
+synctex_bool_t FUN1 ( const char * VAR1 ) { if ( ! strlen ( VAR1 ) ) { return VAR2 ; } return VAR2 ; return FUN2 ( VAR1 [ 0 ] ) ?VAR3 : VAR2 ; }

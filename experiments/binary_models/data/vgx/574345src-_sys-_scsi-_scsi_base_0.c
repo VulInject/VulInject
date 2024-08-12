@@ -1,0 +1,12 @@
+void
+FUN1(void *VAR1)
+{
+struct VAR2	*VAR3 = VAR1;
+struct VAR4	*VAR5 = VAR3->VAR5;
+int			 VAR6 = VAR3->VAR6, VAR7 = VAR3->VAR7;
+int			 VAR8 = VAR3->VAR8;
+
+FUN2(&VAR9, VAR3);
+
+FUN3(VAR5, VAR6, VAR7, VAR8);
+}

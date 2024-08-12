@@ -1,0 +1,93 @@
+static int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = VAR4->VAR6;
+struct VAR7 *VAR8;
+struct VAR9 *VAR10;
+size_t VAR11;
+int VAR12;
+
+FUN2("", VAR4->VAR13, VAR4->VAR6->VAR14);
+
+
+if (VAR6->VAR15)
+return 0;
+
+if (!VAR4->VAR6->VAR14)
+return -VAR16;
+
+
+VAR8 = FUN3(VAR4->VAR6->VAR14, 0, 0);
+if (FUN4(VAR8))
+return (FUN5(VAR8) == -VAR17) ? -VAR16 : FUN5(VAR8);
+
+VAR11 = FUN6(VAR8) + sizeof(*VAR10);
+VAR6->VAR18 = FUN7(VAR8);
+
+VAR12 = -VAR19;
+VAR6->VAR15 = FUN8(VAR6->VAR18, VAR20);
+if (!VAR6->VAR15)
+goto VAR21;
+
+VAR10 = FUN9(VAR11, VAR20);
+if (!VAR10)
+goto VAR21;
+
+VAR10->VAR8   = VAR8;
+
+
+VAR12 = FUN10(VAR10, VAR2->VAR22, VAR2->VAR23,
+VAR6->VAR15);
+if (VAR12 < 0)
+goto VAR24;
+FUN11("", 8, VAR6->VAR15);
+
+
+if (VAR4->VAR25) {
+u8 VAR26;
+
+if (!VAR4->VAR27) {
+FUN12("", VAR4->VAR13);
+VAR12 = -VAR28;
+goto VAR24;
+}
+
+if (VAR4->VAR29 != VAR6->VAR18) {
+FUN13("",
+VAR4->VAR13, VAR4->VAR29);
+VAR12 = -VAR30;
+goto VAR24;
+}
+
+if (memcmp(VAR6->VAR15, VAR4->VAR27,
+VAR4->VAR29) != 0) {
+FUN13("",
+VAR4->VAR13);
+VAR12 = -VAR28;
+goto VAR24;
+}
+
+
+memset(VAR6->VAR15, 0, VAR6->VAR18);
+
+VAR12 = FUN14(VAR10);
+if (VAR12 < 0)
+goto VAR24;
+VAR26 = VAR31 | VAR32;
+VAR12 = FUN15(VAR10, &VAR26, 1);
+if (VAR12 < 0)
+goto VAR24;
+VAR12 = FUN16(VAR10, VAR4->VAR25,
+VAR4->VAR33, VAR6->VAR15);
+if (VAR12 < 0)
+goto VAR24;
+FUN11("", 8, VAR6->VAR15);
+}
+
+VAR24:
+FUN17(VAR10);
+VAR21:
+FUN18(VAR8);
+FUN19("", VAR12);
+return VAR12;
+}

@@ -1,0 +1,85 @@
+int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+off_t VAR5, struct VAR6 *VAR7)
+{
+struct VAR8 *VAR9 = NULL;
+unsigned long VAR10;
+off_t VAR11 = VAR5;
+enum object_type VAR12;
+
+
+if (VAR7->VAR13) {
+*VAR7->VAR13 = FUN2(VAR2, VAR4, VAR5, VAR7->VAR14,
+&VAR12);
+if (!*VAR7->VAR13)
+VAR12 = VAR15;
+} else {
+VAR12 = FUN3(VAR4, &VAR9, &VAR11, &VAR10);
+}
+
+if (!VAR7->VAR13 && VAR7->VAR14) {
+if (VAR12 == VAR16 || VAR12 == VAR17) {
+off_t VAR18 = VAR11;
+off_t VAR19 = FUN4(VAR4, &VAR9, &VAR18,
+VAR12, VAR5);
+if (!VAR19) {
+VAR12 = VAR15;
+goto VAR20;
+}
+*VAR7->VAR14 = FUN5(VAR4, &VAR9, VAR18);
+if (*VAR7->VAR14 == 0) {
+VAR12 = VAR15;
+goto VAR20;
+}
+} else {
+*VAR7->VAR14 = VAR10;
+}
+}
+
+if (VAR7->VAR21) {
+uint32_t VAR22;
+if (FUN6(VAR4, VAR5, &VAR22) < 0) {
+FUN7(""VAR23""
+"", (VAR24)VAR5, VAR4->VAR25);
+VAR12 = VAR15;
+goto VAR20;
+}
+
+*VAR7->VAR21 = FUN8(VAR4, VAR22 + 1) - VAR5;
+}
+
+if (VAR7->VAR26 || VAR7->VAR27) {
+enum object_type VAR28;
+VAR28 = FUN9(VAR2, VAR4, VAR5,
+VAR12, &VAR9, VAR11);
+if (VAR7->VAR26)
+*VAR7->VAR26 = VAR28;
+if (VAR7->VAR27) {
+const char *VAR29 = FUN10(VAR28);
+if (VAR29)
+FUN11(VAR7->VAR27, VAR29);
+}
+if (VAR28 < 0) {
+VAR12 = VAR15;
+goto VAR20;
+}
+}
+
+if (VAR7->VAR30) {
+if (VAR12 == VAR16 || VAR12 == VAR17) {
+if (FUN12(VAR4, &VAR9, VAR11,
+VAR7->VAR30,
+VAR12, VAR5) < 0) {
+VAR12 = VAR15;
+goto VAR20;
+}
+} else
+FUN13(VAR7->VAR30);
+}
+
+VAR7->VAR31 = FUN14(VAR4, VAR5) ? VAR32 :
+VAR33;
+
+VAR20:
+FUN15(&VAR9);
+return VAR12;
+}

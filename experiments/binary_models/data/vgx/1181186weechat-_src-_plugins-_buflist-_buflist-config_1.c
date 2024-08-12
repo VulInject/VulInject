@@ -1,0 +1,1 @@
+FUN1 ( ) { int VAR1 ; VAR1 = FUN2 ( VAR2 ) ; if ( VAR1 == VAR3 ) { FUN3 ( NULL , NULL , NULL ) ; FUN4 ( NULL , NULL ) ; FUN5 ( NULL , NULL , NULL ) ; } return VAR1 ; }

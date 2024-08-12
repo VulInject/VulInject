@@ -1,0 +1,1 @@
+( VAR1 ) ; static struct syscore_ops VAR2 = { . VAR3 = VAR4 } ; struct VAR5 * VAR6 ; FUN1 ( VAR6 , NULL ) ; static int __init FUN2 ( void ) { if ( FUN3 ( ) ) { return - VAR7 ; } VAR6 = FUN4 ( "" , & VAR8 . VAR9 -> VAR10 ) ; FUN5 ( ! VAR6 ) ; FUN6 ( & VAR2 ) ; return 0 ; }

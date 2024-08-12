@@ -1,0 +1,56 @@
+static void
+FUN1(struct VAR1 *VAR1, VAR2 *VAR3, VAR4 *VAR5)
+{
+uint_t VAR6 = VAR5[0];
+uint_t VAR7 = VAR5[1];
+uint_t VAR8;
+
+
+FUN2(VAR1->VAR9 == 0);
+FUN2(VAR1 != VAR10);
+FUN2(VAR11 == 1);
+
+FUN2(!FUN3(VAR1, VAR12) ||
+!FUN3(VAR1, VAR13));
+FUN2(!FUN3(VAR1, VAR13) ||
+!FUN3(VAR1, VAR12));
+FUN2(!FUN4(VAR1, VAR14) ||
+!FUN4(VAR1, VAR15));
+FUN2(!FUN4(VAR1, VAR15) ||
+!FUN4(VAR1, VAR14));
+
+if (FUN3(VAR1, VAR12) ||
+(VAR3[VAR16] != 0) ||
+FUN4(VAR1, VAR14)) {
+
+VAR8 = VAR7;
+VAR7 = VAR16;
+if (VAR6 == VAR16)
+VAR6 = VAR8;
+
+} else if (FUN3(VAR1, VAR13) ||
+(VAR3[VAR17] != 0) ||
+FUN4(VAR1, VAR15)) {
+
+VAR8 = VAR7;
+VAR7 = VAR17;
+if (VAR6 == VAR17)
+VAR6 = VAR8;
+
+} else if ((VAR7 == VAR18) || (VAR7 == VAR19)) {
+if ((VAR6 != VAR18) && (VAR6 != VAR19)) {
+VAR8 = VAR6;
+VAR6 = VAR7;
+VAR7 = VAR8;
+} else {
+VAR7 = FUN5(VAR20);
+}
+}
+
+if (VAR3[VAR6] < VAR21[VAR6])
+VAR6 = FUN5(VAR20);
+if (VAR3[VAR7] < VAR21[VAR7])
+VAR7 = FUN5(VAR20);
+VAR5[0] = VAR6;
+VAR5[1] = VAR7;
+}

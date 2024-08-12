@@ -1,0 +1,1 @@
+void FUN1 ( void ) { unsigned long * VAR1 ; int VAR2 ; FUN2 ( "" ) ; VAR1 = ( unsigned long * ) ( ( unsigned long ) & VAR3 - VAR4 ) ; * VAR1 = FUN3 ( VAR5 ) ; for ( VAR2 = 0 ; VAR2 < 100000 ; VAR2 ++ ) { FUN4 ( ) ; FUN5 ( ) ; if ( VAR6 == 0 ) { break ; } FUN6 ( 1 ) ; } FUN2 ( "" , VAR6 ) ; FUN2 ( "" ) ; }

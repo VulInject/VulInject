@@ -1,0 +1,39 @@
+static int
+FUN1(VAR1 *VAR2)
+{
+int		VAR3, VAR4 = 0;
+
+FUN2(FUN3(&VAR2->VAR5));
+
+if (VAR6 & VAR7)
+FUN4("");
+
+for (VAR3 = 0; VAR3 < VAR8; VAR3++) {
+if (VAR2->VAR9 == NULL)
+goto VAR10;
+
+if (FUN5(VAR2->VAR9))
+(void) FUN6(VAR2);
+if (!FUN7(VAR2->VAR9))
+goto VAR10;
+FUN8(VAR2);
+
+
+FUN9(&VAR2->VAR5);
+(void) FUN10();
+FUN11(FUN12(VAR11));
+FUN13(&VAR2->VAR5);
+}
+FUN14(VAR12, "", VAR2->VAR13);
+
+VAR10:
+if (VAR2->VAR9 != NULL) {
+if (FUN7(VAR2->VAR9) ||
+FUN5(VAR2->VAR9))
+VAR4 = VAR14;
+}
+if (VAR6 & VAR7)
+FUN4("",
+VAR2->VAR13, VAR4);
+return (VAR4);
+}

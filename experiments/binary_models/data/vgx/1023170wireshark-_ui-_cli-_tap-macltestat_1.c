@@ -1,0 +1,1 @@
+static void FUN1 ( void * VAR1 ) { VAR2 * VAR3 = ( VAR2 * ) VAR1 ; VAR4 * VAR5 = VAR3 -> VAR6 ; memset ( VAR3 -> VAR7 , 0 , 65535 ) ; VAR3 -> VAR8 = 0 ; memset ( VAR3 -> VAR9 , 0 , 65535 ) ; VAR3 -> VAR10 = 0 ; if ( ! VAR5 ) { return ; } VAR3 -> VAR6 = NULL ; }

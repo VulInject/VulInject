@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { FUN2 ( & VAR1 ) ; FUN3 ( "" , , , ) FUN4 ( VAR2 ) ; FUN5 ( VAR2 ) ; FUN6 ( VAR3 ) ; FUN6 ( VAR2 ) ; FUN7 ( VAR4 , NULL ) ; }

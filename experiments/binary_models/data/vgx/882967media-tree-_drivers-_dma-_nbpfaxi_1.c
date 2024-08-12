@@ -1,0 +1,1 @@
+static size_t FUN1 ( struct VAR1 * VAR2 , enum dma_slave_buswidth VAR3 , u32 VAR4 ) { int VAR5 ; if ( ! VAR4 ) { VAR4 = 1 ; } switch ( VAR3 ) { case VAR6 : VAR5 = 8 * VAR4 ; break ; case VAR7 : VAR5 = 4 * VAR4 ; break ; case VAR8 : VAR5 = 2 * VAR4 ; break ; default : FUN2 ( "" , VAR9 , VAR3 ) ; case VAR10 : VAR5 = VAR4 ; } return FUN3 ( VAR2 , VAR5 , VAR11 ) ; }

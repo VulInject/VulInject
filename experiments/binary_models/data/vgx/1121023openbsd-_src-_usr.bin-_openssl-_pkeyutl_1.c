@@ -1,0 +1,1 @@
+static int FUN1 ( char * VAR1 ) { if ( ! VAR2 . VAR3 ) { FUN2 ( VAR4 , "" ) ; return ( 1 ) ; } if ( FUN3 ( VAR2 . VAR3 , VAR1 ) <= 0 ) { FUN2 ( VAR4 , "" ) ; FUN4 ( VAR4 , NULL ) ; return ( 1 ) ; } return ( 0 ) ; }

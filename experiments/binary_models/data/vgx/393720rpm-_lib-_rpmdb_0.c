@@ -1,0 +1,84 @@
+VAR1 FUN1(rpmdbMatchIterator VAR2)
+{
+dbiIndex VAR3 = NULL;
+unsigned char * VAR4;
+unsigned int VAR5;
+int VAR6;
+headerImportFlags VAR7 = VAR8;
+
+if (VAR2 == NULL)
+return NULL;
+
+if (FUN2(VAR2->VAR9, 0, &VAR3))
+return NULL;
+
+VAR7 |= VAR10;
+
+if (VAR2->VAR11 == NULL)
+VAR2->VAR11 = FUN3(VAR3, VAR2->VAR12);
+
+VAR13:
+VAR4 = NULL;
+VAR5 = 0;
+
+do {
+if (VAR2->VAR14) {
+if (!(VAR2->VAR15 < VAR2->VAR14->VAR16))
+return NULL;
+VAR2->VAR17 = FUN4(VAR2->VAR14, VAR2->VAR15);
+VAR2->VAR18 = FUN5(VAR2->VAR14, VAR2->VAR15);
+} else {
+VAR6 = FUN6(VAR3, VAR2->VAR11, 0, &VAR4, &VAR5);
+if (VAR6 == 0)
+VAR2->VAR17 = FUN7(VAR3, VAR2->VAR11);
+
+
+if (VAR6 || (VAR2->VAR15 && VAR2->VAR17 == 0))
+return NULL;
+}
+VAR2->VAR15++;
+} while (VAR2->VAR17 == 0);
+
+
+if (VAR2->VAR19 && VAR2->VAR17 == VAR2->VAR19)
+return VAR2->VAR20;
+
+
+if (VAR4 == NULL) {
+VAR6 = FUN6(VAR3, VAR2->VAR11, VAR2->VAR17, &VAR4, &VAR5);
+if (VAR6)
+return NULL;
+}
+
+
+FUN8(VAR2, VAR3);
+
+
+if (VAR4 == NULL)
+return NULL;
+
+
+if (FUN9(VAR2, VAR4, VAR5) == VAR21) {
+goto VAR13;
+}
+
+
+VAR2->VAR20 = FUN10(VAR4, VAR5, VAR7);
+if (VAR2->VAR20 == NULL || !FUN11(VAR2->VAR20, VAR22)) {
+FUN12(VAR23,
+FUN13(""),
+VAR2->VAR17);
+goto VAR13;
+}
+
+
+if (FUN14(VAR2)) {
+goto VAR13;
+}
+FUN15(VAR2->VAR20, VAR2->VAR17);
+
+VAR2->VAR19 = VAR2->VAR17;
+VAR2->VAR24 = 0;
+
+return VAR2->VAR20;
+}

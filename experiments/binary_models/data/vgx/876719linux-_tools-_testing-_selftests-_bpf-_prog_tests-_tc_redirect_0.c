@@ -1,0 +1,103 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+FUN2(VAR3, VAR4);
+FUN2(VAR3, VAR5);
+struct VAR6 *VAR7 = NULL;
+struct VAR8 *VAR8 = NULL;
+int VAR9;
+int VAR10 = -1;
+int VAR11, VAR12 = -1;
+int VAR13;
+
+
+VAR8 = FUN3(VAR14);
+if (!FUN4(VAR8, "" VAR14))
+return;
+
+VAR11 = FUN5("");
+if (!FUN6(VAR11, 0, ""))
+goto VAR15;
+
+FUN7(VAR8);
+
+VAR8 = FUN3(VAR16);
+if (!FUN4(VAR8, "" VAR16))
+goto VAR15;
+
+VAR12 = FUN5("");
+if (!FUN6(VAR12, 0, ""))
+goto VAR15;
+
+VAR10 = FUN8();
+if (!FUN6(VAR10, 0, ""))
+goto VAR15;
+
+if (VAR10 == 0)
+FUN9(FUN10(VAR11, VAR12));
+
+VAR7 = FUN11();
+if (!FUN4(VAR7, ""))
+goto VAR15;
+
+VAR13 = FUN12("");
+if (!FUN13(VAR13, 0, ""))
+goto VAR15;
+
+VAR7->VAR17->VAR18 = VAR13;
+VAR7->VAR17->VAR19 = VAR2->VAR20;
+
+VAR9 = FUN14(VAR7);
+if (!FUN15(VAR9, ""))
+goto VAR15;
+
+
+
+FUN16(&VAR4, VAR13);
+
+FUN17(&VAR4, VAR21, VAR7->VAR22.VAR23, 0);
+
+
+FUN16(&VAR5, VAR2->VAR20);
+
+FUN17(&VAR5, VAR21, VAR7->VAR22.VAR24, 0);
+
+FUN17(&VAR5, VAR25, VAR7->VAR22.VAR26, 0);
+
+
+FUN18("" VAR14 "" VAR27 "");
+FUN18("" VAR16 "" VAR28 "");
+
+FUN18("" VAR14 "" VAR29 "");
+FUN18("" VAR16 "" VAR30 "");
+
+FUN18("" VAR14 "" VAR31 "");
+FUN18("" VAR14 "" VAR31 "" VAR28
+"");
+FUN18("" VAR32 "" VAR27 "");
+FUN18("" VAR14 "" VAR33 "");
+FUN18("" VAR14 "" VAR33 "" VAR30
+"");
+FUN18("" VAR32 "" VAR29 "");
+
+FUN18("" VAR32 "" VAR27 "" VAR34);
+FUN18("" VAR32 "" VAR29 "" VAR34);
+
+if (!FUN15(FUN19(false), ""))
+goto VAR15;
+
+FUN20();
+
+VAR15:
+if (VAR10 > 0) {
+FUN21(VAR10, VAR35);
+FUN22(VAR10, NULL, 0);
+}
+if (VAR11 >= 0)
+close(VAR11);
+if (VAR12 >= 0)
+close(VAR12);
+if (VAR7)
+FUN23(VAR7);
+if (VAR8)
+FUN7(VAR8);
+}

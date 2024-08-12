@@ -1,0 +1,104 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 **VAR6) {
+_cleanup_free_ char *VAR7 = NULL, *VAR8 = NULL;
+_cleanup_free_ VAR5 *VAR9 = NULL;
+struct VAR10 *VAR11;
+size_t VAR12, VAR13;
+sd_id128_t VAR14;
+int VAR15;
+
+assert(VAR2);
+assert(VAR2->VAR16 > 0);
+assert(VAR4);
+assert(VAR6);
+
+
+VAR15 = FUN2(VAR2, NULL);
+if (VAR15 < 0)
+return VAR15;
+
+VAR15 = FUN3(&VAR14);
+if (VAR15 < 0)
+return VAR15;
+
+if (!VAR2->VAR7)
+(void) FUN4(&VAR7);
+if (!VAR2->VAR8)
+(void) FUN5(&VAR8);
+
+VAR12 = FUN6(VAR2,
+VAR2->VAR7 ?: VAR7,
+VAR2->VAR8 ?: VAR8);
+
+VAR9 = new(VAR5, VAR12);
+if (!VAR9)
+return -VAR17;
+
+VAR11 = (struct VAR10*) VAR9;
+VAR11->VAR18 = FUN7(VAR19);
+memcpy(VAR11->VAR20, VAR21 + VAR2->VAR22, VAR23);
+memcpy(VAR11->VAR24, &VAR2->VAR25, VAR23);
+
+VAR13 = sizeof(struct VAR10);
+
+
+
+VAR15 = FUN8(VAR9, VAR12, &VAR13, VAR26,
+1, (const VAR5[]) { VAR27 },
+FUN9(VAR14));
+if (VAR15 < 0)
+return VAR15;
+
+VAR15 = FUN8(VAR9, VAR12, &VAR13, VAR28,
+1, (const VAR5[]) { VAR29 },
+VAR2->VAR30);
+if (VAR15 < 0)
+return VAR15;
+
+VAR15 = FUN10(VAR9, VAR12, &VAR13, VAR31, 2);
+if (VAR15 < 0)
+return VAR15;
+
+FUN11(VAR9 + VAR13, VAR32);
+VAR13 += 2;
+
+
+
+VAR15 = FUN12(VAR9, VAR12, &VAR13, VAR33,
+VAR2->VAR34);
+if (VAR15 < 0)
+return VAR15;
+
+VAR15 = FUN12(VAR9, VAR12, &VAR13, VAR35,
+VAR2->VAR7 ?: VAR7);
+if (VAR15 < 0)
+return VAR15;
+
+VAR15 = FUN12(VAR9, VAR12, &VAR13, VAR36,
+VAR2->VAR8 ?: VAR8);
+if (VAR15 < 0)
+return VAR15;
+
+
+VAR15 = FUN8(VAR9, VAR12, &VAR13, VAR37,
+sizeof(VAR38), VAR38,
+VAR2->VAR39);
+if (VAR15 < 0)
+return VAR15;
+
+VAR15 = FUN10(VAR9, VAR12, &VAR13, VAR40, 4);
+if (VAR15 < 0)
+return VAR15;
+
+FUN11(VAR9 + VAR13, VAR2->VAR41);
+VAR13 += 2;
+FUN11(VAR9 + VAR13, VAR2->VAR42);
+VAR13 += 2;
+
+VAR15 = FUN10(VAR9, VAR12, &VAR13, VAR43, 0);
+if (VAR15 < 0)
+return VAR15;
+
+*VAR4 = VAR13;
+*VAR6 = FUN13(VAR9);
+return 0;
+}

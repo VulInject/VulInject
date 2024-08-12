@@ -1,0 +1,26 @@
+FUN1 (mpfr_ptr VAR1, mpfr_srcptr VAR2, double VAR3, mpfr_rnd_t VAR4)
+{
+int VAR5;
+mpfr_t VAR6;
+mp_limb_t VAR7[VAR8];
+FUN2 (VAR9);
+
+VAR10
+(("",
+FUN3(VAR2), VAR11, VAR2, VAR3, VAR4),
+("",
+FUN3 (VAR1), VAR11, VAR1, VAR5));
+
+FUN4 (VAR9);
+
+FUN5(VAR7, VAR6, VAR12);
+VAR5 = FUN6 (VAR6, VAR3, VAR4);
+FUN7 (VAR5 == 0);
+
+FUN8 ();
+VAR5 = FUN9 (VAR1, VAR2, VAR6, VAR4);
+FUN10 (VAR9, VAR13);
+
+FUN11 (VAR9);
+return FUN12 (VAR1, VAR5, VAR4);
+}

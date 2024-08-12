@@ -1,0 +1,1 @@
+bool FUN1 ( struct VAR1 * VAR1 ) { u8 VAR2 [ VAR3 ] ; struct VAR4 * VAR5 = VAR1 -> VAR6 ; if ( FUN2 ( VAR2 , VAR5 -> VAR7 ) ) { return false ; } return true ; }

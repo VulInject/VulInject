@@ -1,0 +1,1 @@
+static double FUN1 ( double VAR1 ) { double VAR2 = 1 ; int VAR3 = 0 ; double VAR4 = 1 ; int VAR5 ; VAR1 = VAR1 * VAR1 / 4 ; for ( VAR5 = 1 ; VAR2 != VAR3 ; VAR5 ++ ) { VAR3 = VAR2 ; VAR4 *= VAR1 / ( VAR5 * VAR5 ) ; VAR2 += VAR4 ; } return VAR2 ; }

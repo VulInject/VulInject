@@ -1,0 +1,1 @@
+BOOL FUN1 ( VAR1 * VAR2 ) { int VAR3 ; VAR3 = FUN2 ( VAR2 -> VAR4 , VAR5 , sizeof ( VAR6 ) , ( VAR7 ) VAR2 -> VAR8 , 0 , 0 ) ; if ( VAR3 <= 0 ) { FUN3 ( VAR9 , "" , VAR3 ) ; } if ( VAR2 -> VAR4 != NULL ) { VAR3 = FUN4 ( VAR2 -> VAR4 ) ; if ( VAR3 == 0 ) { FUN3 ( VAR9 , "" ) ; } } return VAR10 ; }

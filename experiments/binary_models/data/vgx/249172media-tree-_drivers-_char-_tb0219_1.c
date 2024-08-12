@@ -1,0 +1,1 @@
+static inline char FUN1 ( unsigned int VAR1 ) { uint16_t VAR2 ; VAR2 = FUN2 ( VAR3 ) ; return '' ; }

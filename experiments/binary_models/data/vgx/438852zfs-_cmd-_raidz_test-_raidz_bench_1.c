@@ -1,0 +1,1 @@
+void FUN1 ( void ) { char * * VAR1 ; FUN2 ( VAR2 , VAR3 "" ) ; FUN2 ( VAR4 , "" ) ; for ( VAR1 = ( char * * ) VAR5 ; * VAR1 != NULL ; VAR1 ++ ) { FUN3 ( * VAR1 ) ; } }

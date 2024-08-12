@@ -1,0 +1,1 @@
+static unsigned int FUN1 ( void ) { int VAR1 ; unsigned int VAR2 ; const char * VAR3 ; VAR3 = getenv ( "" ) ; VAR1 = FUN2 ( VAR3 , & VAR2 ) ; if ( VAR1 < 0 ) { return FUN3 ( 0 , ""VAR4=%VAR5\"" , VAR3 ) ; } return FUN4 ( VAR2 , ""VAR4=%VAR5\"" , VAR3 ) ; }

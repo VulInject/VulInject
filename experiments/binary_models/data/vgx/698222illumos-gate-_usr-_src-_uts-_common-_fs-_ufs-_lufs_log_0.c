@@ -1,0 +1,24 @@
+int
+FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+off_t	VAR5;
+off_t	VAR6;
+
+FUN2(FUN3(&VAR2->VAR7));
+
+
+for (VAR6 = VAR8; VAR4; VAR4 = VAR4->VAR9) {
+VAR6 += sizeof (struct VAR10);
+if (VAR4->VAR11 != VAR12)
+VAR6 += VAR4->VAR13;
+}
+VAR6 = FUN4(VAR6, VAR8);
+
+if (VAR2->VAR14 <= VAR2->VAR15)
+VAR5 = (VAR2->VAR14 - VAR2->VAR16) +
+(VAR2->VAR17 - VAR2->VAR15);
+else
+VAR5 = VAR2->VAR14 - VAR2->VAR15;
+
+return (VAR6 < VAR5);
+}

@@ -1,0 +1,76 @@
+static int FUN1(unsigned int VAR1)
+{
+struct VAR2 *VAR3;
+struct VAR4 *VAR5;
+struct VAR6 *VAR7, *VAR8;
+
+
+VAR3 = &FUN2(VAR9, VAR1);
+FUN3(&VAR3->VAR10);
+VAR5 = VAR3->VAR11;
+VAR3->VAR11 = NULL;
+
+
+FUN4(VAR7, VAR8, &VAR3->VAR12, VAR13) {
+FUN5(&VAR7->VAR13);
+FUN6(VAR7->VAR14,
+VAR7->VAR15, &VAR7->VAR16);
+FUN7(VAR7);
+}
+
+FUN8(&VAR3->VAR10);
+if (VAR5)
+FUN9(VAR5);
+return 0;
+}
+
+static enum cpuhp_state VAR17;
+
+
+static int VAR18 FUN10(void)
+{
+int VAR19;
+unsigned VAR1 = 0;
+struct VAR2 *VAR3;
+
+FUN11(VAR20 "", VAR21);
+
+if (VAR22 && !FUN12(VAR22))
+VAR22 = FUN13(VAR22);
+
+VAR23 =
+FUN14(&VAR24);
+if (!VAR23) {
+FUN11(VAR25 "");
+VAR19 = -VAR26;
+goto VAR27;
+}
+
+VAR19 = FUN15(VAR28, &VAR29);
+if (VAR19) {
+FUN11(VAR25 "");
+goto VAR30;
+}
+
+
+FUN16(VAR1) {
+VAR3 = &FUN2(VAR9, VAR1);
+FUN17(&VAR3->VAR12);
+FUN18(&VAR3->VAR10);
+VAR3->VAR11 = NULL;
+}
+
+VAR19 = FUN19(VAR31, "",
+VAR32, VAR33);
+if (VAR19 < 0)
+goto VAR34;
+VAR17 = VAR19;
+return 0;
+
+VAR34:
+FUN20(VAR28);
+VAR30:
+FUN21(&VAR24);
+VAR27:
+return VAR19;
+}

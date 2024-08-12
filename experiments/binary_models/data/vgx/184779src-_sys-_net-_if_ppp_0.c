@@ -1,0 +1,98 @@
+static void
+FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4, int VAR5)
+{
+VAR6 *VAR7, *VAR8;
+struct VAR3 *VAR9;
+int VAR10, VAR11;
+
+
+if (VAR4->VAR12 <= VAR13) {
+VAR9 = VAR4->VAR14;
+if (VAR9 == NULL)
+return;
+VAR7 = FUN2(VAR9, VAR6 *);
+} else {
+VAR9 = VAR4;
+VAR7 = FUN2(VAR9, VAR6 *) + VAR13;
+}
+
+VAR8 = FUN2(VAR9, VAR6 *) + VAR9->VAR12;
+if (VAR7 + VAR15 > VAR8)
+return;
+VAR10 = FUN3(VAR7);
+if (VAR7 + VAR10 > VAR8) {
+if (VAR2->VAR16 & VAR17) {
+FUN4(""
+"", VAR7, VAR10,
+FUN2(VAR9, VAR6 *), VAR9->VAR12);
+}
+return;
+}
+
+switch (FUN5(VAR7)) {
+case VAR18:
+case VAR19:
+case VAR20:
+
+if (VAR2->VAR16 & VAR21) {
+VAR11 = FUN6();
+VAR2->VAR16 &=
+~(VAR21 | VAR22 | VAR23);
+FUN7(VAR11);
+}
+break;
+
+case VAR24:
+if (VAR2->VAR16 & VAR25 &&
+!(VAR2->VAR16 & VAR21) &&
+VAR10 >= VAR15 + VAR26 &&
+VAR10 >= FUN8(VAR7 + VAR15) + VAR15) {
+if (!VAR5) {
+
+if (VAR2->VAR27 != NULL &&
+(*VAR2->VAR28->VAR29)(VAR2->VAR27,
+VAR7 + VAR15, VAR10 - VAR15,
+VAR2->VAR30, 0, VAR2->VAR16 & VAR17)) {
+VAR11 = FUN6();
+VAR2->VAR16 |= VAR22;
+FUN7(VAR11);
+}
+} else {
+
+if (VAR2->VAR31 != NULL &&
+(*VAR2->VAR32->VAR33)(
+VAR2->VAR31, VAR7 + VAR15,
+VAR10 - VAR15, VAR2->VAR30, 0,
+VAR2->VAR34, VAR2->VAR16 & VAR17)) {
+VAR11 = FUN6();
+VAR2->VAR16 |= VAR23;
+VAR2->VAR16 &=
+~(VAR35 | VAR36);
+FUN7(VAR11);
+}
+}
+}
+break;
+
+case VAR37:
+if (VAR2->VAR16 & VAR21) {
+if (!VAR5) {
+if (VAR2->VAR27 &&
+(VAR2->VAR16 & VAR22)) {
+(*VAR2->VAR28->VAR38)(
+VAR2->VAR27);
+}
+} else {
+if (VAR2->VAR31 &&
+(VAR2->VAR16 & VAR23)) {
+(*VAR2->VAR32->VAR39)(
+VAR2->VAR31);
+VAR11 = FUN6();
+VAR2->VAR16 &= ~VAR35;
+FUN7(VAR11);
+}
+}
+}
+break;
+}
+}

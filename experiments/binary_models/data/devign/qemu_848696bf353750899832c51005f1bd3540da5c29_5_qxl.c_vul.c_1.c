@@ -1,0 +1,26 @@
+static int FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = FUN2(VAR3, VAR5, VAR2);
+    VAR6 *VAR7 = &VAR4->VAR7;
+    VAR8 *VAR9 = FUN3(VAR8, 1);
+    int VAR10;
+    VAR4->VAR11 = 0;
+    FUN4(VAR4);
+    VAR7->VAR12 = VAR4->VAR7.VAR13 >> 20;
+    FUN5(VAR7, FUN6(VAR2), true);
+    FUN7(VAR7, FUN6(VAR2), FUN8(VAR2), FUN9(VAR2), false);
+    FUN10(VAR9, FUN6(VAR2), VAR14, VAR7, "");
+    FUN11(VAR9);
+    FUN12(VAR9, FUN9(VAR2), 0x3b0);
+    VAR7->VAR15 = FUN13(FUN14(VAR2), 0, &VAR16, VAR4);
+    FUN15(&VAR4->VAR17);
+    VAR10 = FUN16(VAR4);
+    if (VAR10 != 0)
+    {
+        return VAR10;
+    }
+    VAR4->VAR17.VAR18.VAR19 = &VAR20;
+    VAR4->VAR17.VAR18.VAR15 = VAR7->VAR15;
+    FUN17(&VAR4->VAR17.VAR18);
+    return VAR10;
+}

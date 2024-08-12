@@ -1,0 +1,39 @@
+void FUN1(VAR1 *VAR2)
+{
+    FUN2(&VAR2->VAR3, VAR4);
+    if (VAR2->VAR5)
+        FUN3(VAR2);
+    FUN2(&VAR2->VAR3, VAR6);
+    FUN4(&VAR2->VAR3, 16, 17);
+    FUN4(&VAR2->VAR3, 8, 8);
+    FUN4(&VAR2->VAR3, 16, VAR2->VAR7);
+    FUN4(&VAR2->VAR3, 16, VAR2->VAR8);
+    FUN4(&VAR2->VAR3, 8, 3);
+    FUN4(&VAR2->VAR3, 8, 1);
+    FUN4(&VAR2->VAR3, 4, VAR2->VAR9[0]);
+    FUN4(&VAR2->VAR3, 4, VAR2->VAR10[0]);
+    FUN4(&VAR2->VAR3, 8, 0);
+    FUN4(&VAR2->VAR3, 8, 2);
+    FUN4(&VAR2->VAR3, 4, VAR2->VAR9[1]);
+    FUN4(&VAR2->VAR3, 4, VAR2->VAR10[1]);
+    FUN4(&VAR2->VAR3, 8, 0);
+    FUN4(&VAR2->VAR3, 8, 3);
+    FUN4(&VAR2->VAR3, 4, VAR2->VAR9[2]);
+    FUN4(&VAR2->VAR3, 4, VAR2->VAR10[2]);
+    FUN4(&VAR2->VAR3, 8, 0);
+    FUN2(&VAR2->VAR3, VAR11);
+    FUN4(&VAR2->VAR3, 16, 12);
+    FUN4(&VAR2->VAR3, 8, 3);
+    FUN4(&VAR2->VAR3, 8, 1);
+    FUN4(&VAR2->VAR3, 4, 0);
+    FUN4(&VAR2->VAR3, 4, 0);
+    FUN4(&VAR2->VAR3, 8, 2);
+    FUN4(&VAR2->VAR3, 4, 1);
+    FUN4(&VAR2->VAR3, 4, 1);
+    FUN4(&VAR2->VAR3, 8, 3);
+    FUN4(&VAR2->VAR3, 4, 1);
+    FUN4(&VAR2->VAR3, 4, 1);
+    FUN4(&VAR2->VAR3, 8, 0);
+    FUN4(&VAR2->VAR3, 8, 63);
+    FUN4(&VAR2->VAR3, 8, 0);
+}

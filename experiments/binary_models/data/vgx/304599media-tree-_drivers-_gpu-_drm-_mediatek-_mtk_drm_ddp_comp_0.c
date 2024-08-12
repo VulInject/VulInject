@@ -1,0 +1,72 @@
+int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+struct VAR5 *VAR6, enum mtk_ddp_comp_id VAR7,
+const struct VAR8 *VAR9)
+{
+enum mtk_ddp_comp_type VAR10;
+struct VAR3 *VAR11;
+struct VAR12 *VAR13;
+const struct VAR14 *VAR15;
+struct VAR16 *VAR17;
+
+if (VAR7 < 0 || VAR7 >= VAR18)
+return -VAR19;
+
+VAR10 = VAR20[VAR7].VAR10;
+if (VAR10 == VAR21) {
+FUN2(VAR2, VAR6);
+VAR17 = FUN3(VAR2, sizeof(*VAR17), VAR22);
+if (!VAR17)
+return -VAR23;
+
+VAR15 = FUN4(VAR24, VAR4);
+VAR17->VAR25 = VAR15->VAR25;
+VAR6 = &VAR17->VAR26;
+}
+
+VAR6->VAR27 = VAR7;
+VAR6->VAR9 = VAR9 ?: VAR20[VAR7].VAR9;
+
+if (VAR7 == VAR28 ||
+VAR7 == VAR29 ||
+VAR7 == VAR30 ||
+VAR7 == VAR31) {
+VAR6->VAR32 = NULL;
+VAR6->VAR33 = NULL;
+VAR6->VAR34 = 0;
+return 0;
+}
+
+VAR6->VAR32 = FUN5(VAR4, 0);
+VAR6->VAR34 = FUN6(VAR4, 0);
+VAR6->VAR33 = FUN7(VAR4, 0);
+if (FUN8(VAR6->VAR33))
+VAR6->VAR33 = NULL;
+
+
+VAR6->VAR35 = NULL;
+if (VAR10 != VAR36 &&
+VAR10 != VAR37 &&
+VAR10 != VAR38)
+return 0;
+
+VAR11 = FUN9(VAR4, "", 0);
+if (!VAR11) {
+FUN10(VAR2,
+"",
+VAR4->VAR39);
+return -VAR19;
+}
+
+VAR13 = FUN11(VAR11);
+if (!VAR13) {
+FUN12(VAR2, "",
+VAR11->VAR39);
+FUN13(VAR11);
+return -VAR40;
+}
+FUN13(VAR11);
+
+VAR6->VAR35 = &VAR13->VAR2;
+
+return 0;
+}

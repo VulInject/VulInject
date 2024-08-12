@@ -1,0 +1,55 @@
+void
+FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+u16 VAR5)
+{
+u32	VAR6 = VAR4->VAR7;
+struct VAR8 *VAR9;
+struct VAR10	      *VAR11;
+struct VAR12 *VAR13 = (struct VAR12 *) (VAR4 + 1);
+struct VAR14 *VAR15 = (struct VAR14 *) VAR13;
+
+FUN2(VAR2->VAR16, VAR5);
+FUN2(VAR2->VAR16, VAR6);
+
+
+if ((VAR6 == FUN3(VAR17)) &&
+(VAR13->VAR18 == VAR19) &&
+(VAR15->VAR20 == FUN4(&VAR2->VAR21))) {
+FUN5(VAR2, VAR22);
+return;
+}
+
+
+if (VAR4->VAR7 == FUN6(VAR17)) {
+FUN2(VAR2->VAR16, VAR6);
+FUN7(VAR2, VAR4, VAR5);
+return;
+}
+
+if (VAR2->VAR21.VAR6 == VAR6) {
+
+FUN2(VAR2->VAR16, VAR13->VAR18);
+if (VAR13->VAR18 == VAR23) {
+FUN2(VAR2->VAR16, VAR13->VAR18);
+return;
+}
+
+FUN2(VAR2->VAR16, *(VAR24 *) ((VAR24 *) VAR4));
+FUN8(&VAR2->VAR21, VAR4, VAR5);
+return;
+}
+
+
+FUN9(VAR11, &VAR2->VAR25) {
+VAR9 = (struct VAR8 *) VAR11;
+if (VAR9->VAR26.VAR6 == VAR6) {
+FUN8(&VAR9->VAR26, VAR4, VAR5);
+return;
+}
+}
+
+if (!FUN10(VAR2))
+FUN8(&VAR2->VAR21, VAR4, VAR5);
+
+FUN2(VAR2->VAR16, VAR4->VAR27);
+}

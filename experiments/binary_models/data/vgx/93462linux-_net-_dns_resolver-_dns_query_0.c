@@ -1,0 +1,96 @@
+int FUN1(struct VAR1 *VAR1,
+const char *VAR2, const char *VAR3, size_t VAR4,
+const char *VAR5, char **VAR6, VAR7 *VAR8,
+bool VAR9)
+{
+struct VAR10 *VAR11;
+struct VAR12 *VAR13;
+const struct VAR14 *VAR15;
+size_t VAR16, VAR17;
+char *VAR18, *VAR19;
+int VAR20, VAR21;
+
+FUN2("",
+VAR2, (int)VAR4, (int)VAR4, VAR3, VAR4, VAR5);
+
+if (!VAR3 || VAR4 == 0)
+return -VAR22;
+
+
+VAR16 = 0;
+VAR17 = 0;
+if (VAR2) {
+VAR16 = strlen(VAR2);
+if (VAR16 < 1)
+return -VAR22;
+VAR17 += VAR16 + 1;
+}
+
+if (VAR4 < 3 || VAR4 > 255)
+return -VAR22;
+VAR17 += VAR4 + 1;
+
+VAR18 = FUN3(VAR17, VAR23);
+if (!VAR18)
+return -VAR24;
+
+VAR19 = VAR18;
+if (VAR2) {
+memcpy(VAR19, VAR2, VAR16);
+VAR19 += VAR16;
+*VAR19++ = '';
+}
+memcpy(VAR19, VAR3, VAR4);
+VAR19 += VAR4;
+*VAR19 = '';
+
+if (!VAR5)
+VAR5 = "";
+FUN4("", VAR18, VAR5);
+
+
+VAR15 = FUN5(VAR25);
+VAR11 = FUN6(&VAR26, VAR18, VAR1, VAR5);
+FUN7(VAR15);
+FUN8(VAR18);
+if (FUN9(VAR11)) {
+VAR20 = FUN10(VAR11);
+goto VAR27;
+}
+
+FUN11(&VAR11->VAR28);
+FUN12(VAR29, &VAR11->VAR30);
+VAR11->VAR31 |= VAR32;
+
+VAR20 = FUN13(VAR11);
+if (VAR20 < 0)
+goto VAR33;
+
+
+VAR20 = FUN10(VAR11->VAR34.VAR35[VAR36]);
+if (VAR20)
+goto VAR33;
+
+VAR13 = FUN14(VAR11);
+VAR21 = VAR13->VAR37;
+
+if (VAR6) {
+VAR20 = -VAR24;
+*VAR6 = FUN15(VAR13->VAR35, VAR21, VAR23);
+if (!*VAR6)
+goto VAR33;
+}
+
+if (VAR8)
+*VAR8 = VAR11->VAR38;
+
+VAR20 = VAR21;
+VAR33:
+FUN16(&VAR11->VAR28);
+if (VAR9)
+FUN17(VAR11);
+FUN18(VAR11);
+VAR27:
+FUN19("", VAR20);
+return VAR20;
+}

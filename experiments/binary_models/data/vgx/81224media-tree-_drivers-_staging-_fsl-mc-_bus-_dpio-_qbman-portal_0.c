@@ -1,0 +1,39 @@
+int FUN1(struct VAR1 *VAR2, u16 VAR3,
+u8 VAR4, u8 VAR5,
+u64 VAR6)
+{
+struct VAR7 *VAR8 = NULL;
+struct VAR9 *VAR10 = NULL;
+
+
+VAR8 = FUN2(VAR2);
+if (!VAR8)
+return -VAR11;
+
+
+VAR8->VAR12 = FUN3(VAR3);
+VAR8->VAR13 = VAR4;
+if (VAR5)
+VAR8->VAR14 = 1;
+else
+VAR8->VAR14 = 0;
+VAR8->VAR15 = FUN4(VAR6);
+
+
+VAR10 = FUN5(VAR2, VAR8, VAR16);
+if (FUN6(!VAR10)) {
+FUN7("");
+return -VAR17;
+}
+
+FUN8((VAR10->VAR18 & 0x7f) != VAR16);
+
+
+if (FUN6(VAR10->VAR19 != VAR20)) {
+FUN7("",
+VAR3, VAR10->VAR19);
+return -VAR17;
+}
+
+return 0;
+}

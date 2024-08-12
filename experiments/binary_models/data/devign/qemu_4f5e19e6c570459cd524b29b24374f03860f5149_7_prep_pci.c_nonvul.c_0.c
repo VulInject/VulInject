@@ -1,0 +1,23 @@
+VAR1 *FUN1(VAR2 *VAR3)
+{
+    VAR4 *VAR5;
+    VAR6 *VAR7;
+    int VAR8;
+    VAR5 = FUN2(sizeof(VAR4));
+    VAR5->VAR9 = FUN3(NULL, "", VAR10, VAR11, VAR3, 0, 4);
+    FUN4(0xcf8, 4, 4, VAR12, VAR5);
+    FUN5(0xcf8, 4, 4, VAR13, VAR5);
+    FUN6(0xcfc, VAR5);
+    VAR8 = FUN7(VAR14, VAR15, VAR5);
+    FUN8(0x80800000, 0x00400000, VAR8);
+    VAR7 = FUN9(VAR5->VAR9, "", sizeof(VAR6), 0, NULL, NULL);
+    FUN10(VAR7->VAR16, VAR17);
+    FUN11(VAR7->VAR16, VAR18);
+    VAR7->VAR16[0x08] = 0x00;
+    FUN12(VAR7->VAR16, VAR19);
+    VAR7->VAR16[0x0C] = 0x08;
+    VAR7->VAR16[0x0D] = 0x10;
+    VAR7->VAR16[VAR20] = VAR21;
+    VAR7->VAR16[0x34] = 0x00;
+    return VAR5->VAR9;
+}

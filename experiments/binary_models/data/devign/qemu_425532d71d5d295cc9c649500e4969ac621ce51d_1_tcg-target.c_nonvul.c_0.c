@@ -1,0 +1,28 @@
+static VAR1 FUN1(VAR2 *VAR3, TCGReg VAR4, int VAR5, TCGMemOp VAR6, int VAR7)
+{
+    const TCGReg VAR8 = VAR9;
+    const TCGReg VAR10 = VAR11;
+    const TCGReg VAR12 = VAR13;
+    int VAR14;
+    FUN2(VAR3, VAR10, VAR4, VAR15, VAR16);
+    FUN3(VAR3, VAR17, VAR18, VAR19 | ((1 << VAR6) - 1));
+    FUN2(VAR3, VAR10, VAR10, VAR20 - 1, VAR21);
+    FUN4(VAR3, VAR8, VAR4, VAR18, VAR21);
+    FUN2(VAR3, VAR10, VAR10, VAR22, VAR23);
+    FUN4(VAR3, VAR10, VAR24, VAR10, VAR25);
+    VAR14 = FUN5(VAR26, VAR27[VAR5][0]);
+    if (!FUN6(VAR14 + sizeof(VAR28), 13))
+    {
+        FUN7(VAR3, VAR10, VAR14 & ~0x3ff);
+        VAR14 &= 0x3ff;
+    }
+    FUN8(VAR3, VAR17, VAR12, VAR10, VAR14 + VAR7);
+    FUN8(VAR3, VAR29, VAR10, VAR10, VAR14 + FUN5(VAR28, VAR30));
+    FUN9(VAR3, VAR8, VAR12, 0);
+    if (VAR31 && VAR32 == 32)
+    {
+        FUN2(VAR3, VAR8, VAR4, 0, VAR16);
+        return VAR8;
+    }
+    return VAR4;
+}

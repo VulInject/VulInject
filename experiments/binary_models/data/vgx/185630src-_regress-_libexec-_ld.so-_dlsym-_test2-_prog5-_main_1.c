@@ -1,0 +1,1 @@
+int main ( ) { int VAR1 = 0 ; void * VAR2 = dlopen ( "" , VAR3 ) ; void * VAR4 = dlopen ( "" , VAR3 | VAR5 ) ; if ( VAR4 == NULL ) { FUN1 ( ""VAR4.VAR6\"" ) ; return ( 1 ) ; } if ( VAR2 == NULL ) { FUN1 ( ""VAR2.VAR6\"" ) ; return ( 1 ) ; } if ( FUN2 ( VAR7 , "" ) == NULL ) { FUN1 ( ""VAR8\"" ) ; VAR1 = 1 ; } FUN3 ( VAR4 , NULL ) ; FUN3 ( VAR2 ) ; return ( VAR1 ) ; }

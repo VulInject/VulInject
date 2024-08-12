@@ -1,0 +1,55 @@
+void
+FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+uint32_t VAR5, VAR6, VAR7, VAR8, VAR9;
+uint32_t VAR10 = 0, VAR11 = 0;
+int VAR12;
+
+if (!VAR2->VAR13.FUN2(VAR2, VAR4))
+VAR2->VAR13.FUN3(VAR2, VAR4, 0, 0, 0);
+
+VAR5 = VAR2->VAR14->FUN4(VAR2,
+VAR4->VAR15 + VAR16);
+VAR6 = (VAR5 & VAR17)
+>> VAR18;
+
+if (VAR4->VAR19 <= 7 || VAR4->VAR19 == 12) {
+VAR8 = VAR5 & VAR20;
+VAR7 = (VAR5 & VAR21)
+>> VAR22;
+if (VAR7 != 0)
+VAR6--;
+VAR10 = VAR6 * (1 << (VAR8 + VAR23));
+if (VAR7 != 0)
+VAR10 += (1 << ((VAR7 - 1) + VAR23));
+} else {
+for (VAR12 = 0; VAR12 < VAR6; VAR12++) {
+VAR2->VAR14->FUN5(VAR2,
+VAR4->VAR15 + VAR24,
+(VAR25 <<
+VAR26) | VAR12);
+VAR9 = VAR2->VAR14->FUN4(VAR2,
+VAR4->VAR15 + VAR27);
+VAR8 = ((VAR9 & VAR28) + 1)
+* VAR29;
+VAR10 += VAR8;
+if (VAR9 & VAR30)
+VAR11 += VAR8;
+}
+}
+
+switch (VAR2->VAR13.VAR31) {
+case VAR32:
+if (VAR2->VAR13.VAR33 < 2)
+VAR11 = 32 * 1024;
+break;
+case VAR34:
+VAR11 = 64 * 1024;
+break;
+default:
+break;
+}
+
+VAR2->VAR13.VAR35 = VAR10;
+VAR2->VAR13.VAR36 = VAR11;
+}

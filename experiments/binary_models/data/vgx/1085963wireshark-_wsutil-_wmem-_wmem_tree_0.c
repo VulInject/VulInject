@@ -1,0 +1,24 @@
+void
+FUN1(VAR1 *VAR2, VAR3 *VAR4, void *VAR5)
+{
+VAR1 *VAR6 = NULL;
+VAR3 *VAR7;
+guint32 VAR8, VAR9 = 0;
+
+for (VAR7 = VAR4; VAR7->VAR10 > 0; VAR7++) {
+for (VAR8 = 0; VAR8 < VAR7->VAR10; VAR8++) {
+
+if (!VAR6) {
+VAR6 = VAR2;
+} else {
+VAR6 = (VAR1 *)FUN2(VAR6,
+VAR9, VAR11, VAR2, VAR12, VAR13);
+}
+VAR9 = VAR7->VAR4[VAR8];
+}
+}
+
+FUN3(VAR6);
+
+FUN4(VAR6, VAR9, VAR5);
+}

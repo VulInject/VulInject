@@ -1,0 +1,1 @@
+BOOL FUN1 ( HINSTANCE VAR1 ) { BOOL VAR2 = VAR3 ; if ( ( VAR1 != VAR4 ) || ! VAR5 ) { FUN2 ( VAR6 , NULL ) ; return VAR7 ; } VAR2 = FUN3 ( VAR8 , VAR1 ) ; if ( VAR2 ) { VAR5 = 0 ; VAR4 = 0 ; } return VAR2 ; }

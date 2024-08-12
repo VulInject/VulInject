@@ -1,0 +1,1 @@
+VAR1 -> VAR2 . FUN1 ( VAR3 -> VAR4 ) ; extern void FUN2 ( VAR5 ) void FUN2 ( gl_oset_t VAR6 ) { int VAR7 = 0 ; if ( VAR6 -> VAR8 != NULL ) { FUN3 ( VAR6 -> VAR8 , NULL , & VAR7 ) ; } if ( ! ( VAR6 -> VAR9 == VAR7 ) ) { FUN4 ( ) ; } }

@@ -1,0 +1,20 @@
+VAR1 *FUN1(const VAR2 *VAR3, VAR4 *VAR5, uint32_t VAR6, uint32_t VAR7, void *VAR8)
+{
+    VAR1 *VAR9;
+    VAR10 *VAR11 = FUN2(VAR5);
+    VAR12 *VAR13 = FUN3(VAR11);
+    VAR9 = FUN4(VAR3->VAR14);
+    VAR9->VAR15 = 1;
+    VAR9->VAR11 = VAR11;
+    VAR9->VAR16 = VAR5;
+    VAR9->VAR6 = VAR6;
+    VAR9->VAR7 = VAR7;
+    VAR9->VAR8 = VAR8;
+    VAR9->VAR17 = -1;
+    VAR9->VAR18 = 0;
+    VAR9->VAR19 = VAR3;
+    FUN5(FUN6(VAR5));
+    FUN5(FUN6(VAR13->VAR20));
+    FUN7(VAR9->VAR16->VAR21, VAR9->VAR7, VAR9->VAR6);
+    return VAR9;
+}

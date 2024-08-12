@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , int VAR3 ) { char * VAR4 = VAR2 -> VAR5 ; int VAR6 ; for ( VAR6 = 0 ; VAR6 < VAR3 ; ) { int VAR7 ; int VAR8 ; VAR7 = FUN2 ( VAR4 , sizeof ( VAR2 -> VAR5 ) ) ; if ( VAR4 [ 8 ] != '' || VAR4 [ 9 ] != '' ) { return 1 ; } VAR8 = VAR7 - 8 - 2 - 3 * 16 - 2 ; VAR6 += VAR8 ; } return VAR6 == VAR3 ?0 : 1 ; }

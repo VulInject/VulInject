@@ -1,0 +1,34 @@
+static void FUN1(float **VAR1,float **VAR2,
+int VAR3, int VAR4,
+int VAR5, int VAR6,
+const float *VAR7, const float *VAR8){
+int VAR9,VAR10;
+const float *VAR11=VAR7;
+int VAR12=VAR3;
+
+if(VAR3>VAR4){
+VAR12=VAR4;
+VAR11=VAR8;
+}
+
+
+for(VAR10=0;VAR10<VAR5 && VAR10<VAR6;VAR10++){
+float *VAR13=VAR2[VAR10];
+float *VAR14=VAR1[VAR10];
+
+for(VAR9=0;VAR9<VAR12;VAR9++){
+float VAR15=VAR11[VAR9]*VAR11[VAR9];
+float VAR16=1.-VAR15;
+VAR14[VAR9]=VAR14[VAR9]*VAR15 + VAR13[VAR9]*VAR16;
+}
+}
+
+for(;VAR10<VAR6;VAR10++){
+float *VAR14=VAR1[VAR10];
+for(VAR9=0;VAR9<VAR12;VAR9++){
+float VAR15=VAR11[VAR9]*VAR11[VAR9];
+VAR14[VAR9]=VAR14[VAR9]*VAR15;
+}
+}
+
+}

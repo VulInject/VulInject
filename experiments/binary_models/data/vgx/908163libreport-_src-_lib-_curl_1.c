@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 ) { char * * VAR3 = VAR2 -> VAR3 ; if ( VAR3 ) { while ( * VAR3 ) { FUN2 ( * VAR3 ++ ) ; } FUN2 ( VAR2 -> VAR3 ) ; } FUN2 ( VAR2 -> VAR4 ) ; free ( VAR2 -> VAR5 ) ; FUN2 ( VAR2 ) ; }

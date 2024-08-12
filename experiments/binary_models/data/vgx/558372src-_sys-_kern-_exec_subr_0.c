@@ -1,0 +1,20 @@
+void
+FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+int VAR5;
+
+for (VAR5 = 0; VAR5 < VAR2->VAR6; VAR5++) {
+VAR4 = &VAR2->VAR7[VAR5];
+if (VAR4->VAR8 != VAR9)
+FUN2(VAR4->VAR8);
+}
+
+
+VAR2->VAR6 = 0;
+if (VAR2->VAR7 != VAR2->VAR10)
+free(VAR2->VAR7, VAR11,
+VAR2->VAR12 * sizeof(struct VAR3));
+VAR2->VAR7 = VAR2->VAR10;
+VAR2->VAR12 = VAR13;
+}

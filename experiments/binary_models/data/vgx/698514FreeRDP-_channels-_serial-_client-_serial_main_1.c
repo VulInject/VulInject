@@ -1,0 +1,1 @@
+static UINT FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 ) { VAR5 * VAR6 = ( VAR5 * ) VAR2 ; FUN2 ( VAR4 != NULL ) ; if ( ! FUN3 ( VAR6 -> VAR7 , NULL , 0 , ( void * ) VAR4 , NULL ) ) { FUN4 ( VAR8 , "" ) ; return VAR9 ; } return VAR10 ; }

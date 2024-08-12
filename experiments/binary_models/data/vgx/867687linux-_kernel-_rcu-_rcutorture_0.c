@@ -1,0 +1,80 @@
+static void FUN1(int *VAR1, int VAR2,
+struct VAR3 *VAR4,
+struct VAR5 *VAR6)
+{
+unsigned long VAR7;
+int VAR8 = -1;
+int VAR9 = -1;
+int VAR10 = *VAR1;
+int VAR11 = VAR10;
+int VAR12 = ~*VAR1 & VAR2;
+int VAR13 = *VAR1 & ~VAR2;
+
+FUN2(VAR11 < 0);
+FUN2((VAR11 >> VAR14) > 1);
+VAR6->VAR15 = VAR2;
+
+
+if (VAR12 & VAR16)
+FUN3();
+if (VAR12 & VAR17)
+FUN4();
+if (VAR12 & VAR18)
+FUN5();
+if (VAR12 & VAR19)
+FUN6();
+if (VAR12 & VAR20)
+FUN7();
+if (VAR12 & VAR21)
+VAR8 = (VAR22->FUN8() & 0x1) << VAR23;
+if (VAR12 & VAR24)
+VAR9 = (VAR22->FUN8() & 0x1) << VAR14;
+
+
+if (VAR13 & VAR18)
+FUN9();
+if (VAR13 & VAR19)
+FUN10();
+if (VAR13 & VAR20)
+FUN11();
+if (VAR13 & VAR16)
+FUN12();
+if (VAR13 & VAR17)
+FUN13();
+if (VAR13 & VAR24) {
+VAR22->FUN14((VAR11 >> VAR14) & 0x1);
+FUN2(VAR9 != -1);
+VAR11 = 0;
+}
+if (VAR13 & VAR21) {
+bool VAR25;
+
+VAR25 = !VAR22->VAR26 && !VAR12 && !(FUN15(VAR4) & 0xffff);
+if (VAR25)
+FUN16(&VAR27->VAR28, VAR7);
+VAR22->FUN14((VAR10 >> VAR23) & 0x1);
+FUN2(VAR8 != -1);
+VAR10 = 0;
+if (VAR25)
+FUN17(&VAR27->VAR28, VAR7);
+}
+
+
+if ((VAR12 || VAR13) && *VAR1 && VAR2)
+VAR22->FUN18(VAR4, VAR6);
+
+
+if (VAR8 == -1)
+VAR8 = VAR10 & VAR29;
+FUN2(VAR8 < 0);
+if (FUN2((VAR8 >> VAR23) > 1))
+FUN19("", VAR8);
+if (VAR9 == -1)
+VAR9 = VAR11 & VAR30;
+FUN2(VAR9 < 0);
+FUN2((VAR9 >> VAR14) > 1);
+*VAR1 = VAR8 | VAR9 | VAR2;
+FUN2(*VAR1 < 0);
+if (FUN2((*VAR1 >> VAR14) > 1))
+FUN19("", VAR9);
+}

@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR2 , u32 VAR3 ) { struct VAR4 * VAR5 ; struct VAR6 * VAR7 ; FUN2 ( , , ) FUN2 ( , , ) return false ; }

@@ -1,0 +1,1 @@
+UwacReturnCode FUN1 ( const VAR1 * VAR2 , enum VAR3 * VAR4 , int VAR5 , int * VAR6 ) { * VAR6 = FUN2 ( ( VAR7 ) VAR2 -> VAR8 , VAR5 ) ; memcpy ( VAR4 , ( const void * ) VAR2 -> VAR9 , * VAR6 * sizeof ( VAR3 ) ) ; return VAR10 ; }

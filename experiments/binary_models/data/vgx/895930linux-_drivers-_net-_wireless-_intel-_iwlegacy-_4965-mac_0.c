@@ -1,0 +1,96 @@
+static int
+FUN1(struct VAR1 *VAR2)
+{
+int VAR3;
+int VAR4;
+
+if (FUN2(VAR5, &VAR2->VAR6)) {
+FUN3("");
+return -VAR7;
+}
+
+if (!VAR2->VAR8.VAR9 || !VAR2->VAR10.VAR9) {
+FUN4("");
+return -VAR7;
+}
+
+VAR4 = FUN5(VAR2);
+if (VAR4) {
+FUN6(VAR2);
+return VAR4;
+}
+
+FUN7(VAR2);
+if (!VAR2->VAR11) {
+FUN6(VAR2);
+FUN4("");
+return -VAR7;
+}
+
+
+if (FUN8(VAR2, VAR12) & VAR13)
+FUN9(VAR14, &VAR2->VAR6);
+else {
+FUN10(VAR14, &VAR2->VAR6);
+FUN11(VAR2->VAR15->VAR16, true);
+
+FUN6(VAR2);
+FUN12(VAR2);
+FUN3("");
+return 0;
+}
+
+FUN13(VAR2, VAR17, 0xFFFFFFFF);
+
+
+VAR2->VAR18 = VAR19;
+
+VAR4 = FUN14(VAR2);
+if (VAR4) {
+FUN4("");
+FUN6(VAR2);
+return VAR4;
+}
+
+
+FUN13(VAR2, VAR20, VAR21);
+FUN13(VAR2, VAR20, VAR22);
+
+
+FUN13(VAR2, VAR17, 0xFFFFFFFF);
+FUN15(VAR2);
+
+
+FUN13(VAR2, VAR20, VAR21);
+FUN13(VAR2, VAR20, VAR21);
+
+
+memcpy(VAR2->VAR8.VAR9, VAR2->VAR10.VAR9,
+VAR2->VAR10.VAR23);
+
+for (VAR3 = 0; VAR3 < VAR24; VAR3++) {
+
+
+VAR4 = VAR2->VAR25->FUN16(VAR2);
+
+if (VAR4) {
+FUN4("", VAR4);
+continue;
+}
+
+
+FUN17(VAR2);
+
+FUN18(VAR26 "");
+
+return 0;
+}
+
+FUN10(VAR5, &VAR2->VAR6);
+FUN19(VAR2);
+FUN9(VAR5, &VAR2->VAR6);
+
+
+FUN4("", VAR3);
+return -VAR7;
+}

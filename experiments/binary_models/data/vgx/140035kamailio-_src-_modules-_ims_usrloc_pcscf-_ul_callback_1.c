@@ -1,0 +1,1 @@
+int FUN1 ( void ) { VAR1 = ( VAR2 * ) FUN2 ( sizeof ( VAR2 ) ) ; if ( VAR1 == 0 ) { FUN3 ( "" ) ; return - 1 ; } VAR1 -> VAR3 = 0 ; return 1 ; }

@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { const void * VAR3 = FUN2 ( 0 ) ; if ( VAR2 ) { int VAR4 = FUN3 ( & VAR2 -> VAR5 ) ; FUN4 ( VAR2 , VAR6 , VAR4 , VAR3 ) ; } }

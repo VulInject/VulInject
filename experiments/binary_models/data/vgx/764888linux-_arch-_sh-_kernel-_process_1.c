@@ -1,0 +1,1 @@
+unsigned long __stack_chk_guard VAR1 ; FUN1 ( VAR2 ) ; int FUN2 ( struct VAR3 * VAR4 , struct VAR3 * VAR5 ) { FUN3 ( VAR5 , FUN4 ( VAR5 ) ) ; * VAR4 = * VAR5 ; if ( VAR5 -> VAR6 . VAR7 ) { VAR4 -> VAR6 . VAR7 = FUN5 ( VAR8 , VAR9 ) ; memcpy ( VAR4 -> VAR6 . VAR7 , VAR5 -> VAR6 . VAR7 , VAR10 ) ; } return 0 ; }

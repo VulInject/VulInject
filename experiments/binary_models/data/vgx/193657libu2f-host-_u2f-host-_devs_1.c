@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * VAR2 ; int VAR3 ; VAR2 = malloc ( sizeof ( * VAR2 ) ) ; if ( VAR2 == NULL ) { return VAR4 ; } VAR3 = FUN2 ( ) ; if ( VAR3 != 0 ) { free ( VAR2 ) ; return VAR5 ; } * VAR6 = VAR2 ; return VAR7 ; }

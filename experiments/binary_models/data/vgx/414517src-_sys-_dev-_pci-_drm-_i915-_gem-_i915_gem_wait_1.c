@@ -1,0 +1,1 @@
+static inline unsigned long FUN1 ( const u64 VAR1 ) { return FUN2 ( VAR2 , VAR3 , FUN3 ( VAR1 ) + 1 ) ; }

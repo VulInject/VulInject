@@ -1,0 +1,1 @@
+void FUN1(uint64_t VAR1) { FUN2(VAR2, VAR1); }

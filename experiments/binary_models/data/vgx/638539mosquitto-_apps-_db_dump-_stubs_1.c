@@ -1,0 +1,1 @@
+int FUN1 ( const struct VAR1 * VAR2 , struct VAR3 * VAR4 , uint32_t VAR5 , dbid_t VAR6 , enum mosquitto_msg_origin VAR7 ) { FUN2 ( VAR2 ) ; FUN2 ( VAR4 ) ; FUN2 ( VAR5 ) ; FUN2 ( VAR6 ) ; FUN2 ( VAR7 , NULL ) ; return 0 ; }

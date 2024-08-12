@@ -1,0 +1,131 @@
+VAR1 *FUN1(VAR2 *VAR3,
+VAR4 *VAR5,
+VAR1 *VAR6)
+{
+char VAR7[VAR8];
+const char *VAR9;
+VAR1 *VAR10;
+
+if (VAR11) {
+VAR12 = VAR13;
+return (NULL);
+}
+if (VAR3->VAR14 >= 999.0) {	
+if (VAR15) {
+VAR12 = VAR13;
+return (NULL);
+}
+if (VAR16) {
+FUN2(VAR17);
+return FUN3(VAR3, VAR5, VAR6);
+}
+if (!VAR18) {
+if (VAR19 &&
+(VAR20 ||
+!FUN4(VAR5->VAR21, "VAR22:
+
+;
+} else {
+char *VAR23 = 0;
+
+FUN5(&VAR23, VAR24,
+FUN6(VAR25));
+FUN2(VAR23);
+FUN7(VAR23);
+return FUN3(VAR3, VAR5, VAR6);
+}
+}
+}
+
+if (VAR15) {
+return (FUN8(VAR3, VAR5, VAR6));
+}
+
+VAR10 = FUN9(VAR1);
+if (VAR10 == NULL)
+FUN10(VAR26, "");
+
+VAR10->VAR27 = &VAR28;
+VAR10->VAR29 = VAR3->VAR30;
+VAR10->VAR31 = VAR3->VAR32;
+VAR10->VAR5 = VAR5;
+VAR10->VAR6 = VAR6;
+
+if (FUN11(VAR7, &(VAR5->VAR33))) {
+
+VAR10->VAR34 = FUN12(VAR7, VAR35, VAR36);
+} else {
+if (!FUN4(VAR5->VAR21, "VAR22:
+
+
+char *VAR37, *VAR38;
+
+VAR10->VAR34 = NULL;
+
+VAR38 = VAR7 + 3;
+FUN13(VAR38, VAR5->VAR21 + 17, sizeof(VAR7) - 5);
+FUN14(VAR38);
+
+if (FUN15(VAR38, '') == NULL) {
+VAR7[0] = VAR39[0];
+VAR7[1] = VAR39[1];
+VAR7[2] = '';
+VAR38 = VAR7;
+}
+
+
+VAR37 = VAR38;
+while (*VAR37) {
+if (FUN16(FUN17(*VAR37)) || FUN18(FUN17(*VAR37))) {
+VAR37 += 2;
+continue;
+} else if (*VAR37 == '') {
+*VAR37 = '';
+}
+VAR37++;
+}
+if (FUN15(VAR38, ''))
+VAR38 = FUN19(VAR38);
+
+FUN20(VAR10->VAR40, VAR3->VAR41);
+
+VAR10->VAR42 = FUN21(VAR5, VAR3, VAR38);
+VAR10->VAR43 = NULL;
+
+return VAR10;
+}
+
+if (!FUN22(VAR3->VAR30->VAR44, VAR45)) {
+VAR9 = VAR46;
+} else if (!FUN23(VAR3->VAR30->VAR44, "", 5)) {
+VAR9 = VAR47;
+} else if ((VAR9 = FUN24(VAR3->VAR30,
+VAR5->VAR48)) == 0
+|| *VAR9 != '') {
+if (!FUN23(VAR3->VAR30->VAR44, "", 12)) {
+VAR9 = VAR35;
+} else {
+VAR9 = VAR46;
+}
+}
+VAR10->VAR34 = FUN25(VAR7, VAR9, VAR36);
+}
+
+if (!VAR10->VAR34) {
+FUN2(VAR49);
+FUN7(VAR10);
+return NULL;
+}
+
+FUN20(VAR10->VAR40, VAR3->VAR41);
+
+VAR10->VAR42 = FUN21(VAR5, VAR3, VAR7);
+
+
+VAR10->VAR43 = NULL;
+FUN26(&(VAR10->VAR43), VAR50, 1, VAR7);
+FUN27(&(VAR10->VAR43), VAR50, 1);
+
+FUN20(VAR5->VAR33, VAR7);
+return VAR10;
+}

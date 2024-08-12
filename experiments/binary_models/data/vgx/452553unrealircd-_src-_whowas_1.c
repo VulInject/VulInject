@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( const char * VAR2 , time_t VAR3 ) { VAR4 * VAR5 ; int VAR6 ; VAR3 = FUN2 ( ) - VAR3 ; VAR6 = FUN3 ( VAR2 ) ; VAR5 = VAR7 [ VAR6 ] ; for ( ; VAR5 ; VAR5 = VAR5 -> VAR8 ) { if ( VAR5 -> VAR9 < VAR3 ) { continue ; } return VAR5 -> VAR10 ; } return NULL ; }

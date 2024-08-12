@@ -1,0 +1,56 @@
+static int
+FUN1(VAR1 *VAR2, struct VAR3 *VAR4, int *VAR5, int VAR6)
+{
+VAR7	*VAR8 = &VAR2->VAR9;
+VAR10 *VAR11 = VAR8->VAR12.VAR13;
+int		VAR14 = VAR8->VAR15;
+int		VAR16 = VAR2->VAR17;
+size_t		VAR18, VAR19, VAR20;
+caddr_t		VAR21, VAR22;
+int		VAR23 = 0;
+
+*VAR5 = 0;
+
+while ((VAR4->VAR24 > 0) && (VAR8->VAR25 > 0)) {
+VAR21 = VAR11[VAR14].VAR26 + VAR8->VAR27;
+VAR19 = VAR16 - VAR8->VAR27;
+VAR18 = FUN2(VAR4->VAR24, VAR19);
+
+FUN3(&VAR2->VAR28);
+VAR23 = FUN4(VAR21, VAR18, VAR29, VAR4);
+FUN5(&VAR2->VAR28);
+if (VAR23 != 0) {
+break;
+}
+
+VAR8->VAR27 += VAR18;
+if ((VAR8->VAR27 == VAR16) && VAR6) {
+
+VAR21 = VAR11[VAR14].VAR26;
+VAR22 = VAR21 + VAR16;
+while (!FUN6(VAR21)) {
+VAR21 += VAR2->VAR30;
+if (VAR21 == VAR22) {
+break;
+}
+}
+VAR20 = VAR22 - VAR21;
+if (VAR20 != VAR16) {
+bcopy(VAR21, VAR11[VAR14].VAR26, VAR20);
+VAR8->VAR27 = VAR20;
+}
+}
+if (VAR8->VAR27 == VAR16) {
+
+if (VAR6) {
+FUN7(VAR2, VAR14);
+}
+VAR8->VAR27 = 0;
+VAR8->VAR25--;
+VAR14 = (VAR14 + 1) % VAR2->VAR31;
+(*VAR5)++;
+}
+}
+
+return (VAR23);
+}

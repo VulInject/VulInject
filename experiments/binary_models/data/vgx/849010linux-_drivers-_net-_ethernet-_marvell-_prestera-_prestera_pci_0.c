@@ -1,0 +1,37 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+int VAR3 = VAR4;
+int VAR5 = VAR6;
+char VAR7[128];
+int VAR8;
+
+VAR9:
+snprintf(VAR7, sizeof(VAR7), FUN2(VAR2),
+VAR3, VAR5);
+
+VAR8 = FUN3(&VAR2->VAR10, VAR7, VAR2->VAR11.VAR11);
+if (VAR8) {
+if (VAR3 == VAR4) {
+VAR3 = VAR12;
+VAR5 = VAR13;
+
+FUN4(VAR2->VAR11.VAR11,
+"",
+VAR7, VAR3, VAR5);
+
+goto VAR9;
+} else {
+FUN5(VAR2->VAR11.VAR11, "",
+VAR7);
+return VAR8;
+}
+}
+
+FUN6(VAR2->VAR11.VAR11, "", VAR7);
+
+VAR2->VAR14.VAR15 = VAR3;
+VAR2->VAR14.VAR16 = VAR5;
+VAR2->VAR14.VAR17 = 0;
+
+return 0;
+}

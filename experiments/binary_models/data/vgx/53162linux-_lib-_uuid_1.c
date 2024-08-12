@@ -1,0 +1,1 @@
+bool FUN1 ( const char * VAR1 ) { int VAR2 ; for ( VAR2 = 0 ; VAR2 < VAR3 ; VAR2 ++ ) { if ( VAR2 == 8 || VAR2 == 13 || VAR2 == 18 || VAR2 == 23 ) { if ( VAR1 [ VAR2 ] != '' ) { return false ; } } if ( ! FUN2 ( VAR1 [ VAR2 ] ) ) { return false ; } } return true ; }

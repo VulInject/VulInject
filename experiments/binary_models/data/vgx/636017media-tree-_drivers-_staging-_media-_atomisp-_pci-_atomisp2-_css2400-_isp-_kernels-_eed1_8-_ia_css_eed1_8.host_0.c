@@ -1,0 +1,111 @@
+1, 1, 1, 0, 0, 0, 0, 0, 0};
+
+
+void
+FUN1(
+struct VAR1 *VAR2,
+const struct VAR3 *VAR4,
+size_t VAR5)
+{
+unsigned VAR6, VAR7, VAR8;
+const unsigned VAR9 = 4;
+const unsigned VAR10 = 16;
+
+(void)VAR5;
+
+
+for (VAR6 = 0; VAR6 < VAR11; VAR6++) {
+VAR2->VAR12[0][VAR6] = 0;
+VAR2->VAR13[0][VAR6] = 0;
+VAR2->VAR14[0][VAR6] = 0;
+VAR2->VAR15[0][VAR6] = 0;
+VAR2->VAR16[0][VAR6] = 0;
+VAR2->VAR17[0][VAR6] = 0;
+VAR2->VAR18[0][VAR6] = 0;
+VAR2->VAR19[0][VAR6] = 0;
+VAR2->VAR20[0][VAR6] = 0;
+VAR2->VAR21[0][VAR6] = 0;
+VAR2->VAR22[0][VAR6] = 0;
+VAR2->VAR23[0][VAR6] = 0;
+VAR2->VAR24[0][VAR6] = 0;
+VAR2->VAR25[0][VAR6] = 0;
+VAR2->VAR26[0][VAR6] = 0;
+VAR2->VAR27[0][VAR6] = 0;
+}
+
+
+
+
+
+for (VAR7 = 0; VAR7 < VAR28; VAR7++) {
+assert(VAR4->VAR29[VAR7] > -1);
+assert(VAR4->VAR30[VAR7] > -1);
+}
+
+for (VAR7 = 1; VAR7 < VAR28; VAR7++) {
+assert(VAR4->VAR29[VAR7] > VAR4->VAR29[VAR7-1]);
+assert(VAR4->VAR30[VAR7] > VAR4->VAR30[VAR7-1]);
+}
+
+assert(VAR4->VAR29[0] == 0);
+assert(VAR4->VAR30[0] == 0);
+
+
+assert(VAR16[0] == 0);
+assert(VAR20[0] == 0);
+assert(VAR24[0] == 0);
+
+for (VAR7 = 1; VAR7 < VAR31; VAR7++) {
+assert(VAR16[VAR7] > VAR16[VAR7-1]);
+}
+
+for (VAR7 = 1; VAR7 < VAR32; VAR7++) {
+assert(VAR20[VAR7] > VAR20[VAR7-1]);
+}
+
+for (VAR7 = 1; VAR7 < VAR33; VAR7++) {
+assert(VAR24[VAR7] > VAR24[VAR7-1]);
+}
+
+
+
+for(VAR6 = 0; VAR6 < VAR9; VAR6++) {
+VAR8 = VAR10 * VAR6;
+
+for (VAR7 = 0; VAR7 < VAR28; VAR7++) {
+VAR2->VAR12[0][VAR8 + VAR7] = FUN2(FUN3(VAR4->VAR29[VAR7], 0), 8191);
+VAR2->VAR13[0][VAR8 + VAR7] = FUN2(FUN3(VAR4->VAR30[VAR7], -8192), 8191);
+}
+
+for (VAR7 = 0; VAR7 < (VAR28 - 1); VAR7++) {
+VAR2->VAR14[0][VAR8 + VAR7] = FUN2(FUN3(VAR4->VAR34[VAR7], -8192), 8191);
+
+VAR2->VAR15[0][VAR8 + VAR7] = (FUN2(FUN3(VAR4->VAR35[VAR7], 0), 13) > 0);
+}
+
+
+VAR2->VAR14[0][VAR8 + (VAR28 - 1)] = 0;
+VAR2->VAR15[0][VAR8 + (VAR28 - 1)] = 0;
+
+for (VAR7 = 0; VAR7 < VAR31; VAR7++) {
+VAR2->VAR16[0][VAR8 + VAR7] = VAR16[VAR7];
+VAR2->VAR17[0][VAR8 + VAR7] = VAR17[VAR7];
+VAR2->VAR18[0][VAR8 + VAR7] = VAR18[VAR7];
+VAR2->VAR19[0][VAR8 + VAR7] = VAR19[VAR7];
+}
+
+for (VAR7 = 0; VAR7 < VAR32; VAR7++) {
+VAR2->VAR20[0][VAR8 + VAR7] = VAR20[VAR7];
+VAR2->VAR21[0][VAR8 + VAR7] = VAR21[VAR7];
+VAR2->VAR22[0][VAR8 + VAR7] = VAR22[VAR7];
+VAR2->VAR23[0][VAR8 + VAR7] = VAR23[VAR7];
+}
+
+for (VAR7 = 0; VAR7 < VAR33; VAR7++) {
+VAR2->VAR24[0][VAR8 + VAR7] = VAR24[VAR7];
+VAR2->VAR25[0][VAR8 + VAR7] = VAR25[VAR7];
+VAR2->VAR26[0][VAR8 + VAR7] = VAR26[VAR7];
+VAR2->VAR27[0][VAR8 + VAR7] = VAR27[VAR7];
+}
+}
+}

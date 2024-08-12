@@ -1,0 +1,119 @@
+static int
+FUN1(
+struct VAR1	*VAR2,		
+struct VAR3	*VAR4)		
+{
+struct VAR5		*VAR6;
+int			VAR7;
+xfs_agnumber_t		VAR8;
+xfs_agnumber_t		VAR9 = 0;
+xfs_rfsblock_t		VAR10, VAR11, VAR12;
+int64_t			VAR13;
+bool			VAR14;
+xfs_agnumber_t		VAR15;
+struct VAR16	*VAR17;
+struct aghdr_init_data	VAR18 = {};
+struct VAR19	*VAR20;
+
+VAR10 = VAR4->VAR21;
+VAR7 = FUN2(&VAR2->VAR22, VAR10);
+if (VAR7)
+return VAR7;
+
+if (VAR10 > VAR2->VAR22.VAR23) {
+VAR7 = FUN3(VAR2->VAR24,
+FUN4(VAR2, VAR10) - FUN5(VAR2, 1),
+FUN5(VAR2, 1), 0, &VAR6, NULL);
+if (VAR7)
+return VAR7;
+FUN6(VAR6);
+}
+
+VAR11 = VAR10;
+VAR12 = FUN7(VAR11, VAR2->VAR22.VAR25);
+VAR8 = VAR11 + (VAR12 != 0);
+if (VAR12 && VAR12 < VAR26) {
+VAR8--;
+VAR10 = (VAR27)VAR8 * VAR2->VAR22.VAR25;
+}
+VAR13 = VAR10 - VAR2->VAR22.VAR23;
+
+if (VAR13 < 0 && VAR8 < 2)
+return -VAR28;
+
+VAR15 = VAR2->VAR22.VAR29;
+
+if (VAR8 > VAR15) {
+VAR7 = FUN8(VAR2, VAR8, VAR10, &VAR9);
+if (VAR7)
+return VAR7;
+} else if (VAR8 < VAR15) {
+
+return -VAR28;
+}
+
+VAR7 = FUN9(VAR2, &FUN10(VAR2)->VAR30,
+(VAR13 > 0 ? FUN11(VAR2) : -VAR13), 0,
+VAR31, &VAR17);
+if (VAR7)
+return VAR7;
+
+VAR20 = FUN12(VAR2, VAR15 - 1);
+if (VAR13 > 0) {
+VAR7 = FUN13(VAR17, &VAR18, VAR15, VAR8,
+VAR13, VAR20, &VAR14);
+} else {
+FUN14(VAR2, VAR32,
+"");
+
+VAR7 = FUN15(VAR20, &VAR17, -VAR13);
+}
+FUN16(VAR20);
+if (VAR7)
+goto VAR33;
+
+
+if (VAR8 > VAR15)
+FUN17(VAR17, VAR34, VAR8 - VAR15);
+if (VAR13)
+FUN17(VAR17, VAR35, VAR13);
+if (VAR18.VAR36)
+FUN17(VAR17, VAR37, VAR18.VAR36);
+
+
+if (FUN18(VAR2))
+FUN19(VAR17);
+
+FUN20(VAR17);
+VAR7 = FUN21(VAR17);
+if (VAR7)
+return VAR7;
+
+
+if (VAR9)
+VAR2->VAR38 = VAR9;
+FUN22(VAR2);
+VAR2->VAR39 = FUN23(VAR2);
+
+if (VAR13 > 0) {
+
+if (VAR14) {
+struct VAR19	*VAR40;
+
+VAR40 = FUN12(VAR2, VAR18.VAR41);
+VAR7 = FUN24(VAR40);
+FUN16(VAR40);
+if (VAR7)
+return VAR7;
+}
+
+VAR7 = FUN25(VAR2);
+if (VAR7 == -VAR42)
+VAR7 = 0;
+}
+return VAR7;
+
+VAR33:
+FUN26(VAR17);
+return VAR7;
+}

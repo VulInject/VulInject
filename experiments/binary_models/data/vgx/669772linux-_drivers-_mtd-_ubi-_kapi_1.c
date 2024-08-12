@@ -1,0 +1,1 @@
+int FUN1 ( int VAR1 , int VAR2 , int VAR3 ) { struct VAR4 * VAR5 ; int VAR6 = 0 ; VAR5 = FUN2 ( VAR1 , NULL ) ; if ( ! VAR5 ) { return - VAR7 ; } VAR6 = FUN3 ( VAR5 , VAR2 , VAR3 ) ; FUN4 ( VAR5 ) ; return VAR6 ; }

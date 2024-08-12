@@ -1,0 +1,1 @@
+static int FUN1 ( char * VAR1 , const char * VAR2 ) { size_t VAR3 ; size_t VAR4 ; if ( ! VAR1 || ! VAR2 ) { return 1 ; } if ( VAR1 [ 0 ] == '' ) { VAR1 += 2 ; VAR4 = strlen ( VAR2 ) ; for ( VAR3 = 0 ; VAR3 < VAR4 - 1 ; VAR3 ++ ) { if ( VAR2 [ VAR3 ] == '' ) { VAR2 += VAR3 + 1 ; break ; } } return FUN2 ( VAR1 , VAR2 ) ; } else { return FUN2 ( VAR1 , VAR2 ) ; } }

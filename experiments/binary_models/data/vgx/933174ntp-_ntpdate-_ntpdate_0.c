@@ -1,0 +1,156 @@
+static void
+FUN1(
+struct VAR1 *VAR2
+)
+{
+register struct VAR3 *VAR4;
+register struct VAR5 *VAR5;
+register s_fp VAR6;
+l_fp VAR7, VAR8, VAR9;
+l_fp VAR10;
+l_fp VAR11;
+l_fp VAR12;
+int VAR13;
+int VAR14;
+
+if (VAR15)
+FUN2("", FUN3(&VAR2->VAR16));
+
+if (VAR2->VAR17 == VAR18)
+VAR13 = 0;
+else if (VAR2->VAR17 >= (int)VAR18)
+VAR13 = 1;
+else {
+if (VAR15)
+FUN2("",
+VAR2->VAR17);
+return; 		
+}
+
+VAR4 = &(VAR2->VAR19);
+if (FUN4(VAR4->VAR20) < VAR21 ||
+FUN4(VAR4->VAR20) > VAR22) {
+return;
+}
+
+if ((FUN5(VAR4->VAR20) != VAR23
+&& FUN5(VAR4->VAR20) != VAR24)
+|| VAR4->VAR25 >= VAR26) {
+if (VAR15)
+FUN2("",
+FUN5(VAR4->VAR20), VAR4->VAR25);
+return;
+}
+
+
+VAR5 = FUN6(&(VAR2->VAR16));
+if (VAR5 == NULL) {
+if (VAR15)
+FUN2("");
+return;
+}
+
+
+FUN7(&VAR4->VAR10, &VAR10);
+if (!FUN8(&VAR10, &VAR5->VAR27)) {
+if (VAR15)
+FUN2("");
+return;
+}
+
+
+if (!VAR28)
+VAR14 = 1;
+else {
+VAR14 = 0;
+
+if (VAR15 > 3)
+FUN2("",
+(long int)FUN9(VAR4->VAR29[0]), (long int)VAR30,
+(long int)FUN10(VAR30, (VAR31 *)VAR4,
+VAR18, (VAR32)(VAR2->VAR17 - VAR18)));
+
+if (VAR13 && FUN9(VAR4->VAR29[0]) == VAR30 &&
+FUN10(VAR30, (VAR31 *)VAR4, VAR18,
+(VAR32)(VAR2->VAR17 - VAR18)))
+VAR14 = 1;
+if (VAR15)
+FUN2("",
+VAR14 ? "" : "");
+}
+VAR5->VAR33 <<= 1;
+if (!VAR14)
+VAR5->VAR33 |= 1;
+
+
+if (VAR34 == FUN11(VAR4->VAR20) &&
+VAR35 == VAR4->VAR25 &&
+!memcmp("", &VAR4->VAR36, 4)) {
+FUN12(VAR37, "",
+FUN3(&VAR2->VAR16));
+VAR5->VAR38 = 0;
+VAR39++;
+return;
+}
+
+
+VAR5->VAR40 = FUN11(VAR4->VAR20);
+VAR5->VAR25 = FUN13(VAR4->VAR25);
+VAR5->VAR41 = VAR4->VAR41;
+VAR5->VAR42 = FUN9(VAR4->VAR42);
+VAR5->VAR43 = FUN9(VAR4->VAR43);
+VAR5->VAR36 = VAR4->VAR36;
+FUN7(&VAR4->VAR44, &VAR5->VAR44);
+FUN7(&VAR4->VAR11, &VAR11);
+FUN7(&VAR4->VAR27, &VAR5->VAR10);
+
+
+if (FUN14(&VAR11) || !FUN15(&VAR5->VAR10, &VAR11)) {
+VAR5->VAR38 = VAR45 + VAR46;
+return;
+}
+
+
+VAR7 = VAR5->VAR10;		
+FUN16(&VAR7, &VAR2->VAR47); 
+
+VAR8 = VAR11;			
+FUN16(&VAR8, &VAR10);		
+
+
+
+VAR12 = VAR7;
+FUN17(&VAR12);
+VAR9 = VAR8;
+FUN17(&VAR9);
+FUN18(&VAR12, &VAR9);
+
+
+FUN16(&VAR8, &VAR7);
+VAR6 = FUN19(&VAR8);
+
+if (VAR15 > 3)
+FUN2("", FUN20(&VAR12, 6), FUN21(VAR6, 5));
+
+VAR6 += (VAR48 >> (-(int)VAR49))
++ (VAR48 >> (-(int)VAR5->VAR41)) + VAR50;
+
+if (VAR6 <= 0) {		
+FUN22(&VAR12);
+VAR6 = 0;
+} else {
+VAR6 = FUN23(VAR6, VAR51);
+}
+
+
+FUN24(VAR5, (VAR52) VAR6, &VAR12, 0);
+
+if ((int)VAR5->VAR53 >= VAR54) {
+
+VAR5->VAR38 = 0;
+VAR39++;
+return;
+}
+
+VAR5->VAR38 = VAR45 + VAR46;
+}

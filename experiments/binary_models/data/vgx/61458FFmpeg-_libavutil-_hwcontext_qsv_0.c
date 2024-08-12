@@ -1,0 +1,80 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4,
+const VAR3 *VAR5)
+{
+VAR6  *VAR7 = VAR2->VAR8->VAR9;
+mfxFrameSurface1 VAR10 = {{ 0 }};
+VAR11 *VAR12 = (VAR11*)VAR5->VAR13[3];
+
+mfxSyncPoint VAR14 = NULL;
+mfxStatus VAR15;
+int VAR16 = 0;
+
+VAR3 *VAR17 = &VAR7->VAR18;
+VAR3 *VAR19;
+int VAR20 = 0;
+
+VAR16 = FUN2(VAR2, 0);
+if (VAR16 < 0)
+return VAR16;
+
+
+if (VAR4->VAR21 & 15 || VAR4->VAR22[0] & 15) {
+VAR20 = 1;
+if (VAR17->VAR23 != VAR4->VAR23 ||
+VAR17->VAR24  != FUN3(VAR4->VAR22[0], 16) ||
+VAR17->VAR21 != FUN3(VAR4->VAR21, 16)) {
+FUN4(VAR17);
+
+VAR17->VAR23 = VAR4->VAR23;
+VAR17->VAR24  = FUN3(VAR4->VAR22[0], 16);
+VAR17->VAR21 = FUN3(VAR4->VAR21, 16);
+VAR16 = FUN5(VAR17, 0);
+if (VAR16 < 0)
+return VAR16;
+}
+}
+
+VAR19 = VAR20 ? VAR17 : VAR4;
+
+if (!VAR7->VAR25) {
+if (VAR7->VAR26)
+return FUN6(VAR2, VAR19, VAR5);
+
+FUN7(VAR2, VAR27, "");
+return FUN8(VAR28);
+}
+
+VAR10.VAR29 = VAR12->VAR29;
+FUN9(VAR19, &VAR10);
+
+do {
+VAR15 = FUN10(VAR7->VAR25, VAR12, &VAR10, NULL, &VAR14);
+if (VAR15 == VAR30)
+FUN11(1);
+} while (VAR15 == VAR30);
+
+if (VAR15 < 0 || !VAR14) {
+FUN7(VAR2, VAR27, "");
+return VAR31;
+}
+
+do {
+VAR15 = FUN12(VAR7->VAR25, VAR14, 1000);
+} while (VAR15 == VAR32);
+if (VAR15 < 0) {
+FUN7(VAR2, VAR27, "", VAR15);
+return VAR31;
+}
+
+if (VAR20) {
+VAR17->VAR24  = VAR4->VAR24;
+VAR17->VAR21 = VAR4->VAR21;
+VAR16 = FUN13(VAR4, VAR17);
+VAR17->VAR24  = FUN3(VAR4->VAR22[0], 16);
+VAR17->VAR21 = FUN3(VAR4->VAR21, 16);
+if (VAR16 < 0)
+return VAR16;
+}
+
+return 0;
+}

@@ -1,0 +1,1 @@
+static int FUN1 ( const unsigned char * VAR1 , size_t VAR2 , const unsigned char * VAR3 ) { if ( VAR1 + VAR2 <= VAR3 ) { return 1 ; } return 0 ; }

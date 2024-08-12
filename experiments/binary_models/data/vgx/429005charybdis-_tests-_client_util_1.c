@@ -1,0 +1,1 @@
+char * FUN1 ( const struct VAR1 * VAR2 ) { static char VAR3 [ VAR4 + sizeof ( VAR5 ) ] ; if ( FUN2 ( & VAR2 -> VAR6 -> VAR7 ) ) { int VAR8 ; VAR8 = FUN3 ( & VAR2 -> VAR6 -> VAR7 , VAR3 , sizeof ( VAR3 ) , 0 , 1 ) ; if ( FUN4 ( VAR8 > 0 , VAR9 ) ) { return VAR3 ; } else { return "" ; } } return "" ; }

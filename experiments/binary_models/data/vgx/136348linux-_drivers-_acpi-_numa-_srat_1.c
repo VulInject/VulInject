@@ -1,0 +1,1 @@
+( VAR1 ) ; int FUN1 ( int VAR2 ) { return VAR3 [ VAR2 ] ; }

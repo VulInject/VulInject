@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( IN void * VAR2 ) { VAR1 * VAR3 ; FUN2 ( "" ) ; FUN3 ( VAR4 . VAR5 == VAR6 ) ; VAR3 = FUN4 ( ) ; if ( ! VAR3 ) { return NULL ; } VAR3 -> VAR2 = VAR2 ; FUN2 ( "" , VAR3 , VAR2 ) ; return VAR3 ; }

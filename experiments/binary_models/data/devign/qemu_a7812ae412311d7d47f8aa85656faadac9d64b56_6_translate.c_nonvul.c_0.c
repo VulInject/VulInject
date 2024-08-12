@@ -1,0 +1,13 @@
+static void FUN1(TCGv VAR1, TCGv VAR2, TCGv VAR3)
+{
+    TCGv VAR4, VAR5;
+    VAR4 = FUN2();
+    VAR5 = FUN2();
+    FUN3(VAR1, VAR2, VAR3);
+    FUN4(VAR5, 31);
+    FUN5(VAR4, VAR5, VAR3);
+    FUN3(VAR4, VAR4, VAR5);
+    FUN6(VAR1, VAR1, VAR4);
+    FUN7(VAR4);
+    FUN7(VAR5);
+}

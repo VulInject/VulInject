@@ -1,0 +1,1 @@
+void FUN1 ( bool * VAR1 ) { * VAR1 = ! ! VAR2 -> VAR1 ; if ( * VAR1 ) { return ; } VAR2 -> VAR3 -> VAR4 = FUN2 ( ) ; }

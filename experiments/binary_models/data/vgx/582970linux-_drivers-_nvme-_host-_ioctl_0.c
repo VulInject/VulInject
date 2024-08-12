@@ -1,0 +1,54 @@
+static int FUN1(struct VAR1 *VAR2, u64 VAR3,
+unsigned VAR4, void VAR5 *VAR6, unsigned VAR7,
+u32 VAR8, void **VAR9, struct VAR10 *VAR11,
+unsigned int VAR12)
+{
+struct VAR13 *VAR14 = VAR2->VAR14;
+struct VAR15 *VAR16 = VAR14->VAR17;
+struct VAR18 *VAR19 = VAR16 ? VAR16->VAR20->VAR21 : NULL;
+struct VAR22 *VAR22 = NULL;
+void *VAR23 = NULL;
+int VAR24;
+
+if (VAR11 && (VAR11->VAR12 & VAR25)) {
+struct iov_iter VAR26;
+
+
+if (FUN2(VAR12 & VAR27))
+return -VAR28;
+VAR24 = FUN3(VAR3, VAR4,
+FUN4(VAR2), &VAR26, VAR11);
+if (VAR24 < 0)
+goto VAR29;
+VAR24 = FUN5(VAR14, VAR2, NULL, &VAR26, VAR30);
+} else {
+VAR24 = FUN6(VAR2, NULL, FUN7(VAR3),
+VAR4, VAR30, VAR12 & VAR27, 0,
+0, FUN4(VAR2));
+}
+
+if (VAR24)
+goto VAR29;
+VAR22 = VAR2->VAR22;
+if (VAR19)
+FUN8(VAR22, VAR19);
+
+if (VAR19 && VAR6 && VAR7) {
+VAR23 = FUN9(VAR2, VAR6, VAR7,
+VAR8);
+if (FUN10(VAR23)) {
+VAR24 = FUN11(VAR23);
+goto VAR31;
+}
+*VAR9 = VAR23;
+}
+
+return VAR24;
+
+VAR31:
+if (VAR22)
+FUN12(VAR22);
+VAR29:
+FUN13(VAR2);
+return VAR24;
+}

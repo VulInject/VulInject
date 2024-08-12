@@ -1,0 +1,60 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+const struct VAR3 *VAR4 = VAR2->VAR5.VAR6;
+struct VAR7 *VAR8;
+struct VAR9 *VAR10;
+int VAR11;
+u32 VAR12;
+
+if (!VAR4 || !VAR4->VAR10)
+return -VAR13;
+
+VAR10 = FUN2(VAR4->VAR10);
+if (!VAR10)
+return -VAR14;
+
+VAR8 = FUN3(&VAR2->VAR5, sizeof(*VAR8), VAR15);
+if (!VAR8)
+return -VAR16;
+
+VAR8->VAR17 = FUN4(&VAR2->VAR5, &VAR2->VAR18[0]);
+if (FUN5(VAR8->VAR17))
+return FUN6(VAR8->VAR17);
+
+VAR8->VAR10 = VAR10;
+VAR8->VAR19.VAR20 = VAR21;
+VAR8->VAR22.VAR20 = VAR23;
+
+VAR11 = FUN7(&VAR2->VAR5, VAR10,
+VAR24, &VAR8->VAR19);
+if (VAR11)
+return VAR11;
+
+VAR11 = FUN7(&VAR2->VAR5, VAR10,
+VAR25, &VAR8->VAR22);
+if (VAR11) {
+return VAR11;
+}
+
+VAR8->VAR26 = FUN8(VAR10, VAR24);
+VAR8->VAR27 = FUN8(VAR10, VAR25);
+FUN9(VAR8);
+
+VAR12 = FUN10(VAR8->VAR17);
+
+FUN11(&VAR2->VAR5,
+"",
+(VAR12 >> 4) & 0xf, VAR12 & 0xf, VAR4->VAR10, VAR8->VAR26,
+VAR8->VAR27);
+
+FUN12(VAR2, VAR8);
+
+return 0;
+}
+
+static struct platform_driver VAR28 = {
+.VAR29		= VAR30,
+.VAR31		= {
+.VAR32	= "",
+},
+};

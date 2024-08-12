@@ -1,0 +1,209 @@
+FUN1 (VAR1 **VAR2, void *VAR3, VAR4 *VAR5)
+{
+ret_t                     VAR6;
+int                       VAR7;
+struct stat               VAR8;
+struct VAR9              *VAR10;
+VAR11 *VAR12    = NULL;
+VAR13       *VAR14     = NULL;
+cherokee_boolean_t        VAR15 = true;
+VAR16    *VAR17        = FUN2(VAR3);
+
+FUN3(VAR17);
+
+
+if (FUN4(VAR5)->VAR18 != NULL) {
+VAR15 = FUN4(VAR5)->VAR18->VAR19;
+}
+
+VAR15 &= (FUN5(VAR3)->VAR14 != NULL);
+
+
+FUN6 (&VAR17->VAR20, &VAR17->VAR21);
+
+if (VAR15)
+VAR14 = FUN5(VAR17)->VAR14;
+
+VAR6 = FUN7 (VAR14, &VAR17->VAR20, VAR15, &VAR8, &VAR12, &VAR10);
+VAR7 = (VAR6 == VAR22);
+
+FUN8 (VAR23, "",
+VAR17->VAR21.VAR24, VAR17->VAR20.VAR24, VAR7);
+
+if (!VAR7) {
+ret_t  VAR6;
+char  *VAR25;
+int    VAR26;
+int    VAR27;
+
+
+if (! FUN4(VAR5)->VAR28) {
+FUN8(VAR23, "", "");
+FUN9 (&VAR12);
+
+VAR17->VAR29 = VAR30;
+return VAR31;
+}
+
+
+VAR27 = VAR17->VAR20.VAR32 - VAR17->VAR21.VAR32;
+
+VAR6 = FUN10 (&VAR17->VAR20, VAR27, true, &VAR25, &VAR26);
+if ((VAR6 == VAR33) || (VAR26 <= 0)) {
+FUN8(VAR23, "", "");
+FUN9 (&VAR12);
+
+VAR17->VAR29 = VAR30;
+return VAR31;
+}
+
+
+if (FUN11 (&VAR17->VAR34)) {
+FUN6 (&VAR17->VAR34, &VAR17->VAR21);
+FUN6 (&VAR17->VAR35, &VAR17->VAR36);
+}
+
+FUN12 (&VAR17->VAR25, VAR25, VAR26);
+FUN13 (&VAR17->VAR21, VAR26);
+
+
+FUN14 (&VAR17->VAR20);
+FUN9 (&VAR12);
+
+FUN3(VAR17);
+return VAR37;
+}
+
+FUN13 (&VAR17->VAR20, VAR17->VAR21.VAR32);
+
+
+if (FUN15(VAR10->VAR38)) {
+FUN8 (VAR23, "", "");
+FUN9 (&VAR12);
+
+return FUN16 (VAR2, VAR3, FUN17(FUN4(VAR5)->VAR18));
+}
+
+
+if (FUN18(VAR10->VAR38)) {
+VAR39 *VAR40 = FUN19(VAR17);
+VAR41   *VAR42;
+
+FUN9 (&VAR12);
+
+
+if (FUN20 (&VAR17->VAR21) != '') {
+FUN8 (VAR23, "", "");
+return FUN21 (VAR2, VAR3, FUN17(FUN4(VAR5)->VAR43));
+}
+
+
+FUN6 (&VAR17->VAR20, &VAR17->VAR21);
+
+
+FUN22 (VAR42, &FUN23(VAR17)->VAR44) {
+int                VAR45;
+VAR46 *VAR47 = FUN24(FUN25(VAR42));
+
+
+if (VAR47->VAR24[0] == '') {
+VAR46 *VAR48 = FUN26(VAR40);
+
+
+
+
+FUN6 (&VAR17->VAR49, &VAR17->VAR20);
+
+
+FUN14 (VAR48);
+FUN6 (VAR48, &FUN23(VAR17)->VAR50);
+FUN6 (VAR48, VAR47);
+
+VAR6 = FUN7 (VAR14, VAR48, VAR15, &VAR8, &VAR12, &VAR10);
+VAR7 = (VAR6 == VAR22);
+FUN9 (&VAR12);
+
+if (!VAR7)
+continue;
+
+
+FUN14 (&VAR17->VAR20);
+if (FUN11 (&VAR17->VAR34)) {
+FUN6 (&VAR17->VAR34, &VAR17->VAR21);
+FUN6 (&VAR17->VAR35, &VAR17->VAR36);
+}
+
+FUN14 (&VAR17->VAR21);
+FUN6 (&VAR17->VAR21, VAR47);
+
+FUN8 (VAR23, "", VAR47->VAR24);
+
+FUN27 (VAR17->VAR51, VAR52);
+
+FUN3(VAR17);
+return VAR37;
+}
+
+
+FUN6 (&VAR17->VAR20, VAR47);
+VAR6 = FUN7 (VAR14, &VAR17->VAR20, VAR15, &VAR8, &VAR12, &VAR10);
+
+VAR7 =  (VAR6 == VAR22);
+VAR45 = ((VAR6 == VAR22) && FUN18(VAR10->VAR38));
+
+FUN9 (&VAR12);
+FUN13 (&VAR17->VAR20, VAR47->VAR32);
+
+FUN8 (VAR23, "", VAR47->VAR24, VAR7);
+
+
+if ((!VAR7) || (VAR45))
+continue;
+
+
+FUN13 (&VAR17->VAR20, VAR17->VAR21.VAR32);
+
+if (FUN11 (&VAR17->VAR34)) {
+FUN6 (&VAR17->VAR34, &VAR17->VAR21);
+FUN6 (&VAR17->VAR35, &VAR17->VAR36);
+}
+
+FUN6 (&VAR17->VAR21, VAR47);
+
+FUN3(VAR17);
+return VAR37;
+}
+
+
+FUN13 (&VAR17->VAR20, VAR17->VAR21.VAR32);
+if (FUN4(VAR5)->VAR53) {
+return FUN21 (VAR2, VAR3,
+FUN17(FUN4(VAR5)->VAR43));
+}
+
+VAR17->VAR29 = VAR54;
+return VAR31;
+}
+
+
+FUN8(VAR23, "", "");
+
+VAR17->VAR29 = VAR55;
+return VAR31;
+}
+
+
+
+
+static cherokee_boolean_t VAR56 = false;
+
+void
+FUN28(VAR57) (VAR58 *VAR59)
+{
+if (VAR56) return;
+VAR56 = true;
+
+
+FUN29 (VAR59, "");
+FUN29 (VAR59, "");
+}

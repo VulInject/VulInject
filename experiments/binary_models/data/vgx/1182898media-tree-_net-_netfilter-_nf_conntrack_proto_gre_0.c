@@ -1,0 +1,21 @@
+void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR3 = FUN2(VAR2);
+struct VAR4 *VAR5 = FUN3(VAR3);
+struct VAR6 *VAR7 = FUN4(VAR2);
+enum ip_conntrack_dir VAR8;
+
+FUN5("", VAR2);
+
+FUN6(&VAR5->VAR9);
+for (VAR8 = VAR10; VAR8 < VAR11; VAR8++) {
+if (VAR7->VAR12[VAR8]) {
+FUN5("",
+VAR7->VAR12[VAR8]);
+FUN7(&VAR7->VAR12[VAR8]->VAR13);
+FUN8(VAR7->VAR12[VAR8]);
+VAR7->VAR12[VAR8] = NULL;
+}
+}
+FUN9(&VAR5->VAR9);
+}

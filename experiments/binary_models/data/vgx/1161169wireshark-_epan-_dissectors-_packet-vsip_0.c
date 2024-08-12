@@ -1,0 +1,120 @@
+static VAR1 FUN1(VAR2 *VAR3, int VAR4, VAR5 *VAR6, VAR7  *VAR8)
+{
+int VAR9 = VAR4;
+guint32 VAR10;
+guint8 VAR11;
+VAR12 *VAR13;
+
+FUN2(VAR8, VAR14, VAR3, VAR4, 2, VAR15, &VAR10);
+VAR4 += 2;
+
+VAR11 = FUN3(VAR3, VAR4);
+FUN4(VAR8, VAR16, VAR3, VAR4, 1, VAR11);
+FUN5(VAR6->VAR17, VAR18, FUN6(VAR11, &VAR19, "") );
+VAR4++;
+
+FUN7(VAR8, VAR20, VAR3, VAR4, 2, VAR15);
+VAR4 += 2;
+
+if (VAR10 == 257)
+{
+FUN7(VAR8, VAR21, VAR3, VAR4, 4, VAR15);
+VAR4 += 4;
+}
+else if (VAR10 == 256)
+{
+FUN7(VAR8, VAR21, VAR3, VAR4, 2, VAR15);
+VAR4 += 2;
+}
+
+switch(VAR11)
+{
+case 1:
+VAR4 += FUN8(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 2:
+VAR4 += FUN9(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 19:
+VAR4 += FUN10(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 20:
+VAR4 += FUN11(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 3:
+VAR4 += FUN12(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 4:
+VAR4 += FUN13(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 5:
+VAR4 += FUN14(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 21:
+VAR4 += FUN15(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 6:
+VAR4 += FUN16(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 22:
+VAR4 += FUN17(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 7:
+VAR4 += FUN18(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 8:
+VAR4 += FUN19(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 9:
+VAR4 += FUN20(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 10:
+VAR4 += FUN21(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 24:
+VAR4 += FUN22(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 11:
+VAR4 += FUN23(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 12:
+VAR4 += FUN24(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 23:
+VAR4 += FUN25(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 13:
+VAR4 += FUN26(VAR8, VAR6, VAR3, VAR4);
+break;
+
+case 48:
+VAR4 += FUN27(VAR8, VAR6, VAR3, VAR4);
+break;
+
+default:
+break;
+}
+
+VAR13 = FUN28(VAR8);
+FUN29(VAR13, VAR4 - VAR9);
+
+return VAR4 - VAR9;
+}

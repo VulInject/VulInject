@@ -1,0 +1,14 @@
+FUN1 (int VAR1)
+{
+DST_MODULE_END VAR2;
+int VAR3 = 0;
+
+VAR2.VAR4.VAR5.VAR6
+= VAR7 - 1;
+VAR2.VAR4.VAR8.VAR9 = VAR10;
+
+VAR3 += FUN2 (&VAR2.VAR4, "",
+VAR1);
+
+return VAR3;
+}

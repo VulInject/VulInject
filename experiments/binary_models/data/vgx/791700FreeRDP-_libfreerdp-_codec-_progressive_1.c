@@ -1,0 +1,1 @@
+static void FUN1 ( void * VAR1 ) { VAR2 * VAR3 = VAR1 ; UINT32 VAR4 ; if ( ! VAR3 ) { return ; } if ( VAR3 -> VAR5 ) { for ( VAR4 = 0 ; VAR4 < VAR3 -> VAR6 ; VAR4 ++ ) { VAR7 * VAR8 = & ( VAR3 -> VAR5 [ VAR4 ] ) ; } } free ( VAR3 -> VAR5 ) ; free ( VAR3 -> VAR9 ) ; free ( VAR3 ) ; }

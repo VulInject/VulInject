@@ -1,0 +1,1 @@
+static void FUN1(VAR1 *VAR2, unsigned VAR3) { FUN2(VAR2, FUN3(FUN4(VAR2), VAR3)); }

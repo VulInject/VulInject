@@ -1,0 +1,20 @@
+static void
+FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+FUN2(&VAR4->VAR5);
+FUN3(&VAR2->VAR6->VAR7, VAR4->VAR8,
+VAR4->VAR9, VAR10);
+
+FUN4(VAR2, VAR4);
+
+VAR2->VAR11->VAR12--;
+if (!VAR2->VAR11->VAR12 &&
+VAR2->VAR11->VAR13 != VAR14) {
+enum qed_filter_config_mode VAR13;
+
+VAR13 = VAR14;
+VAR2->VAR15->FUN5(VAR2->VAR16, VAR13);
+VAR2->VAR11->VAR13 = VAR14;
+}
+}

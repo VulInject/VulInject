@@ -1,0 +1,1 @@
+bool FUN1 ( const char * VAR1 ) { const VAR2 * VAR3 = FUN2 ( VAR1 ) ; return ! ( FUN3 ( VAR1 ) >= 128 / 8 || VAR3 -> VAR4 == VAR5 ) ; }

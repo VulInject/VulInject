@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , unsigned int VAR3 , unsigned int VAR4 , unsigned int VAR5 ) { int VAR6 ; unsigned int VAR7 ; switch ( VAR5 ) { case VAR8 : return FUN2 ( VAR2 -> VAR9 , VAR3 , VAR4 ) ; case VAR10 : VAR7 = VAR3 ^ VAR11 ; VAR6 = FUN2 ( VAR2 -> VAR9 , VAR12 , VAR7 ) ; return FUN2 ( VAR2 -> VAR9 , VAR3 , VAR4 ) ; default : return - VAR13 ; } }

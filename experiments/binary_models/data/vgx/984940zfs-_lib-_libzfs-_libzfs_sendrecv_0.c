@@ -1,0 +1,28 @@
+static int
+FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+int VAR5;
+VAR1 *VAR6 = NULL;
+
+
+VAR5 = FUN2(VAR2->VAR7->VAR8, VAR9, &VAR4);
+if (VAR5 == VAR10) {
+VAR6 = FUN3(VAR2);
+if (VAR6 == NULL) {
+VAR5 = VAR11;
+goto VAR12;
+}
+
+VAR5 = FUN4(VAR6->VAR13, VAR14,
+NULL, NULL, 0);
+if (VAR5 != 0)
+goto VAR12;
+
+VAR5 = FUN2(VAR2->VAR7->VAR8, VAR9, &VAR4);
+}
+
+VAR12:
+if (VAR6 != NULL)
+FUN5(VAR6);
+return (VAR5);
+}

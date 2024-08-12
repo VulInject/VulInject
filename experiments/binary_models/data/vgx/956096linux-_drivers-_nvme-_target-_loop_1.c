@@ -1,0 +1,1 @@
+static inline struct VAR1 * FUN1 ( struct VAR2 * VAR3 ) { return FUN2 ( VAR3 , VAR1 , VAR3 ) ; } VAR4 { VAR5 = 0 } VAR6 { struct nvmet_cq VAR7 ; struct nvmet_sq VAR8 ; struct VAR1 * VAR3 ; cfs_time_t VAR9 ; }

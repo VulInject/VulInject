@@ -1,0 +1,36 @@
+int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR5;
+struct VAR6 *VAR7 = &VAR2->VAR8;
+u64 VAR9;
+int VAR10;
+
+if (!(VAR4->VAR11 & VAR12))
+return 0;
+
+VAR10 = FUN2(VAR2, VAR13,
+VAR14, VAR15,
+VAR16);
+if (VAR10)
+return VAR10;
+
+VAR9 = FUN3(VAR7->VAR17.VAR9);
+if (VAR9) {
+if ((!FUN4(VAR9)) ||
+(VAR9 < VAR18)) {
+FUN5(VAR2->VAR19,
+"",
+VAR9);
+VAR9 = VAR18;
+}
+
+VAR7->VAR9 = VAR9;
+VAR7->VAR20 = VAR7->VAR21 + VAR9;
+}
+
+if (!strlen(VAR7->VAR17.VAR22))
+strncpy(VAR7->VAR17.VAR22, VAR23,
+VAR24);
+
+return 0;
+}

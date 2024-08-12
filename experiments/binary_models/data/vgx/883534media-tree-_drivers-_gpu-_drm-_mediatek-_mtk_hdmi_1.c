@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { struct hdmi_codec_pdata VAR3 = { . VAR4 = & VAR5 . VAR6 = 2 . VAR7 = 1 } ; struct VAR8 * VAR9 ; VAR9 = FUN2 ( VAR2 , VAR10 , VAR11 , & VAR3 , sizeof ( VAR3 ) ) ; FUN3 ( "" , VAR10 ) ; }

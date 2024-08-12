@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 , const char * VAR3 , int VAR4 , int VAR5 , ut64 VAR6 ) { VAR7 * VAR8 = FUN2 ( NULL , VAR3 ) ; if ( ! VAR8 ) { return ; } VAR8 -> VAR4 = VAR4 ; VAR8 -> VAR5 = VAR5 ; VAR8 -> VAR6 = VAR6 ; FUN3 ( VAR2 , VAR8 ) ; }

@@ -1,0 +1,1 @@
+static krb5_error_code FUN1 ( krb5_context VAR1 , VAR2 * VAR3 , kcm_operation VAR4 , VAR5 * VAR6 , VAR5 * VAR7 ) { krb5_error_code VAR8 ; char * VAR9 ; FUN2 ( VAR1 , VAR3 , VAR4 ) ; VAR9 = FUN3 ( VAR3 -> VAR10 , VAR3 -> VAR11 , VAR3 -> VAR12 ) ; if ( VAR9 == NULL ) { return VAR13 ; } VAR8 = FUN4 ( VAR7 , VAR9 ) ; return VAR8 ; }

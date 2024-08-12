@@ -1,0 +1,47 @@
+void
+FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR5;
+VAR6 *VAR7;
+const int VAR8 = VAR9*2;
+
+if (FUN2(FUN3(VAR4)))
+return;
+
+if (FUN2(FUN4(VAR2)))
+return;
+FUN3(VAR4) = 1;
+
+VAR7 = FUN5(VAR8, VAR10);
+
+if (FUN2(!VAR7))
+goto VAR11;
+
+
+if (FUN2(FUN6(VAR2)))
+goto VAR12;
+
+FUN7(VAR4);
+
+FUN8(VAR4) = 1;
+FUN9(&FUN10(VAR4));
+
+FUN11(VAR13, VAR4, "");
+
+FUN12(VAR2, VAR7);
+
+FUN11(VAR13, VAR4, "");
+
+FUN13(&FUN10(VAR4));
+FUN8(VAR4) = 0;
+
+FUN14(VAR4);
+
+FUN15(VAR4) = 1;
+
+VAR12:
+FUN16(VAR7);
+VAR11:
+FUN3(VAR4) = 0;
+FUN17(VAR2);
+}

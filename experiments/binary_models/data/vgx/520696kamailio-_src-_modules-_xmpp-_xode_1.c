@@ -1,0 +1,1 @@
+xode FUN1 ( xode VAR1 ) { return NULL ; }

@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , unsigned int VAR3 ) { FUN2 ( VAR3 , NULL , NULL ) ; FUN3 ( VAR3 ) ; } static const struct irq_domain_ops VAR4 = { . VAR5 = VAR6 . VAR7 = VAR8 } ;

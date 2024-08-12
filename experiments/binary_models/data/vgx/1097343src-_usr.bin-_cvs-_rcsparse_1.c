@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 , char * VAR3 , ... ) { struct VAR4 * VAR5 ; va_list VAR6 ; char * VAR7 ; VAR5 = ( VAR4 * ) VAR2 -> VAR8 ; FUN2 ( VAR6 , VAR3 ) ; if ( vasprintf ( & VAR7 , VAR3 , VAR6 ) == - 1 ) { FUN3 ( VAR9 , "" ) ; FUN4 ( VAR6 ) ; return ; } FUN4 ( VAR6 ) ; FUN3 ( VAR10 , "" , VAR2 -> VAR11 , VAR5 -> VAR12 , VAR7 ) ; }

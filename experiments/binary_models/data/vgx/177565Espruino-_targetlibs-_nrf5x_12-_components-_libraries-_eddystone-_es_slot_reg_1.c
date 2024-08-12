@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 , VAR1 * VAR3 , uint8_t VAR4 ) { uint8_t VAR5 = * VAR3 - 1 ; for ( uint32_t VAR6 = 0 ; VAR6 < VAR7 ; ++ VAR6 ) { if ( VAR2 [ VAR6 ] == VAR4 ) { if ( VAR6 < VAR5 ) { for ( uint32_t VAR8 = VAR6 ; VAR8 < VAR5 ; ++ VAR8 ) { VAR2 [ VAR8 ] = VAR2 [ VAR8 + 1 ] ; } } else { VAR2 [ VAR6 ] = VAR9 ; } * VAR3 -= 1 ; return ; } } }

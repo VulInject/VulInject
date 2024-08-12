@@ -1,0 +1,23 @@
+static void FUN1(VAR1 *VAR2, int VAR3, int VAR4, int VAR5)
+{
+    char VAR6[256];
+    int VAR7 = (VAR5 ? VAR2->VAR8->VAR7 : VAR2->VAR9->VAR7);
+    VAR10 *VAR11 = VAR2->VAR12[VAR3];
+    int VAR13 = FUN2(VAR11->VAR14.VAR15, VAR11->VAR14.VAR16);
+    FUN3(VAR6, sizeof(VAR6), VAR11->VAR17, VAR5);
+    FUN4(NULL, VAR18, "", VAR4, VAR3);
+    if (VAR7 & VAR19)
+        FUN4(NULL, VAR18, "", VAR11->VAR20);
+    if (strlen(VAR11->VAR21) > 0)
+        FUN4(NULL, VAR18, "", VAR11->VAR21);
+    FUN4(NULL, VAR22, "", VAR11->VAR14.VAR15 / VAR13, VAR11->VAR14.VAR16 / VAR13);
+    FUN4(NULL, VAR18, "", VAR6);
+    if (VAR11->VAR17->VAR23 == VAR24)
+    {
+        if (VAR11->VAR25.VAR16 && VAR11->VAR25.VAR15)
+            FUN4(NULL, VAR18, "", FUN5(VAR11->VAR25));
+        else
+            FUN4(NULL, VAR18, "", 1 / FUN5(VAR11->VAR17->VAR14));
+    }
+    FUN4(NULL, VAR18, "");
+}

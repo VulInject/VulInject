@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , bool VAR3 ) { struct iwl_led_cmd VAR4 = { . VAR5 = FUN2 ( VAR3 ) } ; struct iwl_host_cmd VAR6 = { . VAR7 = FUN3 ( VAR8 , VAR9 ) . VAR10 = { sizeof ( VAR4 ) } . VAR11 = { & VAR4 } . VAR12 = VAR13 } ; int VAR14 ; VAR14 = FUN4 ( VAR2 , & VAR6 ) ; if ( VAR14 ) { FUN5 ( VAR2 , "" , VAR14 ) ; } }

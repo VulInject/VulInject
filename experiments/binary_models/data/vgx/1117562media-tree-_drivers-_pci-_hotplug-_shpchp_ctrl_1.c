@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) static int FUN2 ( struct VAR3 * VAR4 ) static int FUN3 ( struct VAR3 * VAR4 ) static int FUN4 ( struct VAR3 * VAR4 , u32 VAR5 ) { struct VAR6 * VAR7 ; VAR7 = FUN5 ( sizeof ( * VAR7 ) , VAR8 ) ; VAR7 -> VAR5 = VAR5 ; VAR7 -> VAR4 = VAR4 ; FUN6 ( & VAR7 -> VAR2 , VAR9 ) ; FUN7 ( VAR4 -> VAR10 , & VAR7 -> VAR2 ) ; return 0 ; }

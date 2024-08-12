@@ -1,0 +1,63 @@
+void
+FUN1(struct VAR1 *VAR1, struct VAR2 *VAR2)
+{
+long VAR3;
+int VAR4;
+double VAR5;
+
+VAR6 = FUN2(NULL, 0);
+
+FUN3();
+FUN4();
+FUN5();
+FUN6();
+FUN7(0);
+
+FUN8();
+FUN9();
+
+FUN10(VAR2, VAR7, VAR8, NULL);
+
+VAR9 = FUN11(VAR2);
+VAR10 |= VAR11;
+(void)FUN12(VAR2, VAR1, NULL, NULL);
+FUN13();
+FUN14();
+
+while (VAR12 && !VAR13 && !VAR14 && !VAR15) {
+(void)FUN12(VAR2, VAR1, NULL, NULL);
+VAR16 = FUN15(VAR1);
+if (VAR16 & (VAR17|VAR18))
+FUN14();
+if (VAR10)
+FUN13();
+
+VAR5 = FUN16();
+if (VAR5 - VAR19 > VAR20)
+VAR21 = 1;
+if (VAR21)
+FUN17();
+if (VAR22)
+FUN18();
+
+VAR3 = (long)((VAR19 + VAR20 - VAR5) * 1000);
+FUN19(VAR23, VAR3);
+
+VAR4 = FUN20(VAR23);
+switch (VAR4) {
+case VAR24:
+break;
+case VAR25:
+FUN8();
+FUN21();
+break;
+default:
+FUN22(VAR2, VAR4);
+break;
+}
+}
+FUN23(&VAR2, VAR1);
+FUN24(FUN25(&VAR26));
+FUN26(&VAR1);
+FUN27(FUN28());
+}

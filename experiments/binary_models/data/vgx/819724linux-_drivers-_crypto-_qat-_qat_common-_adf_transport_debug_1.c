@@ -1,0 +1,1 @@
+FUN1 ( VAR1 ) ; int FUN2 ( struct VAR2 * VAR3 ) { struct VAR4 * VAR5 = VAR3 -> VAR5 ; struct VAR6 * VAR7 = VAR5 -> VAR8 -> VAR9 ; char VAR10 [ 8 ] ; sprintf ( VAR10 , "" , VAR3 -> VAR11 ) ; VAR3 -> VAR12 = FUN3 ( VAR10 , VAR7 ) ; VAR3 -> VAR13 = FUN4 ( "" , VAR14 , VAR3 -> VAR12 , VAR3 , & VAR15 ) ; return 0 ; }

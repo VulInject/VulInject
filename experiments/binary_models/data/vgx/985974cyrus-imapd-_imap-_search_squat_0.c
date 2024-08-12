@@ -1,0 +1,123 @@
+static int FUN1(VAR1 *VAR2,
+struct VAR3 *VAR3,
+int VAR4)
+{
+VAR5 *VAR6 = (VAR5 *)VAR2;
+SquatOptions VAR7;
+const char *VAR8;
+const char *VAR9;
+int VAR10 = -1;
+int VAR11 = -1;
+VAR12 *VAR13 = NULL;
+VAR14 *VAR15 = NULL;
+int VAR16 = 0;      
+int VAR17 = 0;      
+
+FUN2(&VAR6->VAR18);
+
+VAR8 = FUN3(VAR3, VAR19);
+if ((VAR10 = open(VAR8, VAR20 | VAR21 | VAR22, 0666)) < 0) {
+syslog(VAR23, "",
+VAR8);
+VAR16 = VAR24;
+goto VAR25;
+}
+
+VAR7.VAR26 = VAR27 | VAR28;
+VAR7.VAR29 = FUN4(VAR3, 0);
+VAR7.VAR30 = VAR30;
+VAR7.VAR31 = (void *)VAR6;
+VAR13 = FUN5(VAR10, &VAR7);
+if (VAR13 == NULL) {
+syslog(VAR23, "",
+VAR8, FUN6(FUN7()));
+VAR16 = VAR24;
+goto VAR25;
+}
+
+
+VAR9 = FUN8(VAR3, VAR19);
+if (VAR4) {
+VAR11 = open(VAR9, VAR32);
+
+if (VAR11 >= 0)
+VAR15 = FUN9(VAR11);
+if (VAR15 == NULL)
+VAR4 = 0;
+}
+
+if (VAR4) {
+
+VAR6->VAR33 = 1;
+VAR6->VAR34 = 0L;
+FUN10(VAR13, VAR15, VAR35, VAR6);
+
+if (!VAR6->VAR33) {
+syslog(VAR23, ""
+"",
+FUN11(VAR3));
+VAR4 = 0;
+}
+
+if (VAR4 &&
+VAR6->VAR34 != VAR3->VAR36.VAR34) {
+
+syslog(VAR23, ""
+"",
+FUN11(VAR3),
+VAR3->VAR36.VAR34,
+VAR6->VAR34);
+VAR4 = 0;
+}
+}
+
+if (!VAR4) {
+FUN2(&VAR6->VAR18);
+
+
+snprintf(VAR6->VAR37, sizeof(VAR6->VAR37),
+"", VAR3->VAR36.VAR34);
+VAR17 = FUN12(VAR13, VAR6->VAR37);
+if (VAR17 != VAR38) {
+syslog(VAR23, "",
+FUN6(VAR17));
+VAR16 = VAR24;
+goto VAR25;
+}
+VAR17 = FUN13(VAR13);
+if (VAR17 != VAR38) {
+syslog(VAR23, ""
+"",
+FUN6(VAR17));
+VAR16 = VAR24;
+goto VAR25;
+}
+}
+
+VAR25:
+
+if (VAR16) {
+if (VAR13 != NULL) FUN14(VAR13);
+VAR6->VAR13 = NULL;
+if (VAR10 >= 0) close(VAR10);
+VAR6->VAR10 = -1;
+
+if (VAR15 != NULL) FUN15(VAR15);
+VAR6->VAR15 = NULL;
+if (VAR11 >= 0) close(VAR11);
+VAR6->VAR11 = -1;
+
+VAR6->VAR3 = NULL;
+}
+else {
+VAR6->VAR13 = VAR13;
+VAR6->VAR10 = VAR10;
+
+VAR6->VAR15 = VAR15;
+VAR6->VAR11 = VAR11;
+
+VAR6->VAR3 = VAR3;
+FUN16(&VAR6->VAR39);
+}
+return VAR16;
+}

@@ -1,0 +1,130 @@
+static int
+FUN1(
+VAR1		*VAR2,
+VAR3	*VAR4,
+VAR5			*VAR6)
+{
+int			VAR7, VAR8, VAR9;
+uint_t			VAR10, VAR11, VAR12;
+uint_t			VAR13, VAR14, VAR15;
+VAR16		*VAR17 = &VAR4->VAR18;
+
+
+FUN2(FUN3(&VAR2->VAR19));
+
+
+FUN4(&VAR4->VAR20->VAR21);
+VAR8 = FUN5(
+VAR17, VAR4->VAR20->VAR22, &VAR15);
+FUN6(&VAR4->VAR20->VAR21);
+
+
+if (VAR8 != VAR23) {
+FUN7(VAR24, VAR2->VAR25,
+""
+"");
+
+return (VAR26);
+}
+
+
+if ((VAR2->VAR27 + VAR15) >
+(VAR28)) {
+
+FUN7(VAR24, VAR2->VAR25,
+""
+""
+"");
+
+return (VAR29);
+}
+
+
+FUN4(&VAR4->VAR20->VAR21);
+VAR7 = FUN8(VAR2,
+VAR17, VAR4->VAR20->VAR22);
+FUN6(&VAR4->VAR20->VAR21);
+
+
+if (VAR7 == VAR30) {
+
+return (VAR30);
+}
+
+FUN9(VAR24, VAR2->VAR25,
+"", VAR7);
+
+
+VAR11 = 0;
+VAR10 = VAR2->VAR31[0];
+
+for (VAR9 = 1; VAR9 < VAR32; VAR9++) {
+if (VAR2->VAR31[VAR9] < VAR10) {
+VAR11 = VAR9;
+VAR10 = VAR2->VAR31[VAR9];
+}
+}
+
+FUN9(VAR24, VAR2->VAR25,
+"", VAR11, VAR10);
+
+
+VAR11 = VAR11 + VAR32 - 1;
+
+
+VAR12 = FUN10(VAR7);
+
+FUN9(VAR24, VAR2->VAR25,
+"", VAR12);
+
+*VAR6 = VAR11;
+
+for (VAR9 = 0; VAR9 < VAR12; VAR9++) {
+*VAR6 = FUN11(*VAR6);
+}
+
+FUN9(VAR24, VAR2->VAR25,
+"", *VAR6);
+
+
+VAR13 = FUN12(*VAR6, VAR12);
+
+FUN9(VAR24, VAR2->VAR25,
+"", VAR13);
+
+for (VAR9 = 0; VAR9 < (VAR32/VAR7); VAR9++) {
+VAR14 = FUN13(VAR13 + VAR9);
+if ((VAR2->VAR31[VAR14] +
+VAR15) > VAR28) {
+
+FUN7(VAR24, VAR2->VAR25,
+""
+""
+"");
+
+return (VAR29);
+}
+}
+
+
+for (VAR9 = 0; VAR9 < (VAR32/VAR7); VAR9++) {
+VAR14 = FUN13(VAR13 + VAR9);
+VAR2->VAR31[VAR14] += VAR15;
+}
+
+
+VAR11 = 0;
+VAR10 = VAR2->VAR31[0];
+
+for (VAR9 = 1; VAR9 < VAR32; VAR9++) {
+if (VAR2->VAR31[VAR9] < VAR10) {
+VAR11 = VAR9;
+VAR10 = VAR2->VAR31[VAR9];
+}
+}
+
+
+VAR2->VAR27 = VAR10;
+
+return (VAR23);
+}

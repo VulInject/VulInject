@@ -1,0 +1,125 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+VAR3 *VAR4;
+int VAR5;
+int VAR6;
+VAR3 *VAR7;
+dma_addr_t VAR8;
+int VAR9;
+
+
+if (!VAR2->VAR10) {
+FUN2(&VAR2->VAR11, "");
+return -VAR12;
+}
+
+
+if (!VAR2->VAR13) {
+VAR6 = -VAR14;
+goto VAR15;
+}
+
+VAR2->VAR16 = FUN3((sizeof(struct VAR17 *) *
+VAR2->VAR10), VAR18);
+if (!VAR2->VAR16) {
+FUN2(&VAR2->VAR11,
+"");
+return -VAR12;
+}
+FUN4(&VAR2->VAR11, VAR19,
+"", VAR2->VAR16);
+
+
+VAR6 = FUN5(VAR2);
+if (VAR6)
+goto VAR15;
+
+
+VAR6 = FUN6(VAR2);
+if (VAR6)
+goto VAR15;
+
+
+for (VAR5 = 0; VAR5 < VAR2->VAR10; VAR5++) {
+VAR2->VAR16[VAR5] =
+FUN3(sizeof(*VAR2->VAR16[0]),
+VAR18);
+if (!VAR2->VAR16[VAR5]) {
+FUN2(&VAR2->VAR11,
+"", VAR5);
+VAR6 = -VAR12;
+goto VAR15;
+}
+
+VAR2->VAR16[VAR5]->VAR20 =
+(VAR21 + 8) * sizeof(union VAR22);
+VAR2->VAR16[VAR5]->VAR20 =
+(VAR2->VAR16[VAR5]->VAR20 +
+(VAR23 - 1));
+
+VAR2->VAR16[VAR5]->VAR24 =
+(VAR2->VAR16[VAR5]->VAR20 /
+VAR23) * sizeof(void *);
+VAR2->VAR16[VAR5]->VAR24 =
+(VAR2->VAR16[VAR5]->VAR24 +
+(VAR23 - 1));
+
+VAR2->VAR16[VAR5]->VAR25 = FUN7(&VAR2->VAR26->VAR27,
+VAR2->VAR16[VAR5]->VAR20,
+&VAR2->VAR16[VAR5]->VAR28,
+VAR18);
+
+if (!VAR2->VAR16[VAR5]->VAR25) {
+FUN8(&VAR2->VAR11,
+"");
+VAR6 = -VAR12;
+goto VAR15;
+}
+VAR2->VAR16[VAR5]->VAR29 = FUN7(&VAR2->VAR26->VAR27,
+VAR2->VAR16[VAR5]->VAR24,
+&VAR2->VAR16[VAR5]->VAR30,
+VAR18);
+
+if (!VAR2->VAR16[VAR5]->VAR29) {
+FUN8(&VAR2->VAR11,
+"");
+VAR6 = -VAR12;
+goto VAR15;
+}
+
+
+VAR9 = VAR2->VAR16[VAR5]->VAR20 /
+VAR23;
+VAR8 = VAR2->VAR16[VAR5]->VAR28;
+VAR7 = (VAR3 *)VAR2->VAR16[VAR5]->VAR29;
+
+while (VAR9--) {
+*VAR7 = (VAR3)VAR8;
+VAR7++;
+*VAR7 = (VAR3)((VAR31)VAR8 >> 32);
+VAR7++;
+VAR8 += VAR23;
+}
+}
+
+VAR4 = (VAR3 *)VAR2->VAR13;
+
+
+for (VAR5 = 0; VAR5 < VAR2->VAR10; VAR5++) {
+*VAR4 = (VAR3)VAR2->VAR16[VAR5]->VAR30;
+VAR4++;
+*VAR4 = (VAR3)((VAR31)VAR2->VAR16[VAR5]->VAR30 >> 32);
+VAR4++;
+
+*VAR4 = (VAR3)0;
+VAR4++;
+*VAR4 = (VAR3)((VAR31)0 >> 32);
+VAR4++;
+}
+
+return 0;
+
+VAR15:
+FUN9(VAR2);
+return VAR6;
+}

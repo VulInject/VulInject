@@ -1,0 +1,1 @@
+static int FUN1 ( CopyFlags VAR1 ) { int VAR2 ; VAR2 = FUN2 ( VAR1 & VAR3 ?VAR4 : 0 , VAR1 & VAR5 ?VAR6 : 0 ) ; if ( VAR2 < 0 ) { return VAR2 ; } if ( VAR2 != 0 ) { return FUN3 ( FUN4 ( VAR7 ) , "" , FUN5 ( VAR2 ) ) ; } return 0 ; }

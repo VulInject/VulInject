@@ -1,0 +1,75 @@
+static void
+FUN1(struct VAR1 *VAR2, VAR3* VAR4,
+VAR3 *VAR5, u8 VAR6)
+{
+VAR7	*VAR8 = VAR2->VAR9.VAR10;
+VAR7	*VAR11;
+VAR7	*VAR12;
+VAR7	*VAR13;
+u8	VAR14;
+s16	VAR15;
+s16	VAR16;
+s16	VAR17 = 0;
+
+u8	VAR18;
+int	VAR19;
+
+
+if (VAR6 > 1) {
+VAR11 = VAR2->VAR9.VAR20[1];
+VAR12 = VAR2->VAR9.VAR20[0];
+VAR17 = VAR5[1] - VAR4[1] - 1;
+VAR15 = (VAR5[0] - VAR4[0]) / 2;
+
+
+if (VAR5[0] - VAR4[1] > 126)
+VAR16 = VAR5[0] - 126;
+else
+VAR16 = VAR4[1];
+
+
+VAR13 = VAR12;
+
+VAR18 = 0x40;
+} else {
+VAR11 = VAR2->VAR9.VAR20[1]; 
+VAR12 = VAR2->VAR9.VAR20[0];
+VAR16 = VAR4[0];
+VAR15 = (VAR5[0] - VAR4[0]) / 2;
+VAR13 = VAR12;
+VAR18 = 0;
+}
+
+
+VAR2->VAR9.VAR21 = VAR16 / 2;
+
+
+VAR14 = VAR15;
+for (VAR19 = 63; VAR19 >= 0; VAR19--) {
+
+if (VAR18 == 0x40 &&
+(2 * VAR14 <= (VAR5[1] - VAR4[0]) || VAR14 == 0)) {
+VAR18 = 0x00;
+VAR13 = VAR11;
+VAR14 = VAR17 / 2;
+}
+
+
+if (VAR13[VAR14] < 1 && (VAR18 == 0x00)) {
+while (VAR19 >= 0) {
+VAR8[VAR19] = VAR8[VAR19 + 1];
+VAR19--;
+}
+break;
+}
+
+VAR8[VAR19] = VAR13[VAR14] | VAR18;
+
+
+if (VAR8[VAR19] > 126)
+VAR8[VAR19] = 126;
+
+
+VAR14--;
+}
+}

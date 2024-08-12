@@ -1,0 +1,130 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR5;
+struct VAR6 *VAR7 = FUN2(VAR4);
+struct VAR8 *VAR9 = &VAR2->VAR10;
+int VAR11, VAR12, VAR13;
+const struct VAR14 *VAR15;
+struct si2168_cmd VAR16;
+
+FUN3(&VAR4->VAR7, "");
+
+
+FUN4(&VAR16, "",
+13, 0);
+VAR11 = FUN5(VAR4, &VAR16);
+if (VAR11)
+goto VAR17;
+
+if (VAR7->VAR18) {
+
+FUN4(&VAR16, "", 8, 1);
+VAR11 = FUN5(VAR4, &VAR16);
+if (VAR11)
+goto VAR17;
+
+FUN6(100);
+FUN4(&VAR16, "", 1, 1);
+VAR11 = FUN5(VAR4, &VAR16);
+if (VAR11)
+goto VAR17;
+
+goto VAR18;
+}
+
+
+FUN4(&VAR16, "", 8, 1);
+VAR11 = FUN5(VAR4, &VAR16);
+if (VAR11)
+goto VAR17;
+
+
+VAR11 = FUN7(&VAR15, VAR7->VAR19, &VAR4->VAR7);
+if (VAR11) {
+FUN8(&VAR4->VAR7,
+"",
+VAR7->VAR19);
+goto VAR20;
+}
+
+FUN9(&VAR4->VAR7, "",
+VAR7->VAR19);
+
+if ((VAR15->VAR21 % 17 == 0) && (VAR15->VAR22[0] > 5)) {
+
+for (VAR13 = VAR15->VAR21; VAR13 > 0; VAR13 -= 17) {
+VAR12 = VAR15->VAR22[VAR15->VAR21 - VAR13];
+if (VAR12 > VAR23) {
+VAR11 = -VAR24;
+break;
+}
+FUN4(&VAR16, &VAR15->VAR22[(VAR15->VAR21 - VAR13) + 1],
+VAR12, 1);
+VAR11 = FUN5(VAR4, &VAR16);
+if (VAR11)
+break;
+}
+} else if (VAR15->VAR21 % 8 == 0) {
+
+for (VAR13 = VAR15->VAR21; VAR13 > 0; VAR13 -= 8) {
+FUN4(&VAR16, &VAR15->VAR22[VAR15->VAR21 - VAR13], 8, 1);
+VAR11 = FUN5(VAR4, &VAR16);
+if (VAR11)
+break;
+}
+} else {
+
+VAR11 = -VAR24;
+}
+
+if (VAR11) {
+FUN8(&VAR4->VAR7, "", VAR11);
+goto VAR20;
+}
+
+FUN10(VAR15);
+
+FUN4(&VAR16, "", 2, 1);
+VAR11 = FUN5(VAR4, &VAR16);
+if (VAR11)
+goto VAR17;
+
+
+FUN4(&VAR16, "", 1, 10);
+VAR11 = FUN5(VAR4, &VAR16);
+if (VAR11)
+goto VAR17;
+
+VAR7->VAR25 = (VAR16.VAR26[9] + '') << 24 | (VAR16.VAR26[6] - '') << 16 |
+(VAR16.VAR26[7] - '') << 8 | (VAR16.VAR26[8]) << 0;
+FUN9(&VAR4->VAR7, "",
+VAR7->VAR25 >> 24 & 0xff, VAR7->VAR25 >> 16 & 0xff,
+VAR7->VAR25 >> 8 & 0xff, VAR7->VAR25 >> 0 & 0xff);
+
+
+VAR11 = FUN11(VAR2, 1);
+if (VAR11)
+goto VAR17;
+
+VAR7->VAR18 = true;
+VAR7->VAR27 = true;
+VAR18:
+
+VAR9->VAR28.VAR12 = 1;
+VAR9->VAR28.VAR29[0].VAR30 = VAR31;
+VAR9->VAR32.VAR12 = 1;
+VAR9->VAR32.VAR29[0].VAR30 = VAR31;
+VAR9->VAR33.VAR12 = 1;
+VAR9->VAR33.VAR29[0].VAR30 = VAR31;
+VAR9->VAR34.VAR12 = 1;
+VAR9->VAR34.VAR29[0].VAR30 = VAR31;
+
+VAR7->VAR35 = true;
+
+return 0;
+VAR20:
+FUN10(VAR15);
+VAR17:
+FUN3(&VAR4->VAR7, "", VAR11);
+return VAR11;
+}

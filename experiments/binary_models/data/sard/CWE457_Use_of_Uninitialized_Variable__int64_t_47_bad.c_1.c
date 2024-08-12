@@ -1,0 +1,29 @@
+#VAR1 ""
+#VAR1 <VAR2.VAR3>
+void FUN1()
+{
+    int64_t VAR4;
+    if(FUN2())
+    {
+        ; 
+    }
+    else
+    {
+        VAR4 = 5LL;
+    }
+    if(FUN2())
+    {
+        FUN3(VAR4);
+    }
+    else
+    {
+        VAR4 = 5LL;
+        FUN3(VAR4);
+    }
+}
+int main(int argc, char * argv[])
+{
+    srand( (unsigned)FUN4(NULL) );
+    FUN1();
+    return 0;
+}

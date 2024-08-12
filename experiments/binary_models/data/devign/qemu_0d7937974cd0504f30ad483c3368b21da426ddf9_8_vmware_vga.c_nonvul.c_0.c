@@ -1,0 +1,1 @@
+static void FUN1(void *VAR1, uint32_t VAR2, uint32_t VAR3) { FUN2("", VAR4, VAR3); }

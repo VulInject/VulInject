@@ -1,0 +1,1 @@
+int FUN1 ( void * VAR1 , unsigned char * VAR2 , size_t VAR3 , VAR4 * VAR5 ) { unsigned long VAR6 = FUN2 ( ) ; ( ( void ) VAR1 ) ; * VAR5 = 0 ; memcpy ( VAR2 , & VAR6 , ( unsigned long ) ) ; * VAR5 = ( unsigned long ) ; return ( 0 ) ; }

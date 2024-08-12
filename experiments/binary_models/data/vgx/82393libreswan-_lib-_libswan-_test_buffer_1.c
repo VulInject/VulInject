@@ -1,0 +1,1 @@
+static chunk_t FUN1 ( size_t VAR1 , const char * VAR2 ) { chunk_t VAR3 ; VAR3 . VAR4 = VAR1 ; VAR3 . VAR5 = FUN2 ( VAR1 , VAR2 ) ; return VAR3 ; }

@@ -1,0 +1,1 @@
+void FUN1 ( int VAR1 , int VAR2 , int VAR3 , VAR4 * VAR5 , double VAR6 ) { FUN2 ( NULL ) ; FUN3 ( VAR1 , VAR2 , VAR3 , VAR5 , VAR6 ) ; }

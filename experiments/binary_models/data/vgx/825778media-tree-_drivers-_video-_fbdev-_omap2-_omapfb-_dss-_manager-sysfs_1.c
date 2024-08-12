@@ -1,0 +1,1 @@
+static ssize_t FUN1 ( struct VAR1 * VAR2 , char * VAR3 ) { struct omap_overlay_manager_info VAR4 ; VAR2 -> FUN2 ( VAR2 , & VAR4 ) ; return snprintf ( VAR3 , VAR5 , "" , VAR4 . VAR6 ) ; }

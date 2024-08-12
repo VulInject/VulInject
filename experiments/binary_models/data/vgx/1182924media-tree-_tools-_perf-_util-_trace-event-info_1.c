@@ -1,0 +1,1 @@
+static int FUN1 ( void ) { unsigned int VAR1 ; char * VAR2 ; struct stat VAR3 ; int VAR4 , VAR5 = 0 ; VAR2 = FUN2 ( "" ) ; if ( ! VAR2 ) { FUN3 ( "" ) ; return - VAR6 ; } VAR4 = FUN4 ( VAR2 , & VAR3 ) ; if ( VAR4 < 0 ) { VAR1 = 0 ; if ( write ( VAR7 , & VAR1 , 8 ) != 8 ) { VAR5 = - VAR8 ; } VAR9 } VAR5 = FUN5 ( VAR2 , 8 ) ; out FUN6 ( VAR2 , NULL ) ; return VAR5 ; }

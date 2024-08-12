@@ -1,0 +1,19 @@
+void FUN1(struct VAR1 *VAR2, int VAR3)
+{
+struct VAR4	*VAR5;
+struct VAR6	*VAR7 = VAR2->VAR8[VAR3];
+
+VAR5 = FUN2(sizeof(*VAR5), VAR9);
+if (!VAR5)
+return;
+
+snprintf(VAR5->VAR10, sizeof(VAR5->VAR10), "", VAR3);
+VAR5->VAR11 = FUN3(VAR5->VAR10, VAR2->VAR12);
+VAR5->VAR7 = VAR7;
+VAR7->VAR13 = VAR5;
+
+FUN4(VAR2, &VAR7->VAR14[0].VAR15,
+"", VAR5->VAR11);
+
+FUN5(VAR2, VAR5->VAR11, VAR3);
+}

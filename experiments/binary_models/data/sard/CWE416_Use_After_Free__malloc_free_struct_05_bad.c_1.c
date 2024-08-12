@@ -1,0 +1,33 @@
+#VAR1 ""
+#VAR1 <VAR2.VAR3>
+int VAR4 = 1; 
+int VAR5 = 0; 
+void FUN1()
+{
+    VAR6 * VAR7;
+    VAR7 = NULL;
+    if(VAR4)
+    {
+        VAR7 = (VAR6 *)malloc(100*sizeof(VAR6));
+        if (VAR7 == NULL) {FUN2(-1);}
+        {
+            size_t VAR8;
+            for(VAR8 = 0; VAR8 < 100; VAR8++)
+            {
+                VAR7[VAR8].VAR9 = 1;
+                VAR7[VAR8].VAR10 = 2;
+            }
+        }
+        free(VAR7);
+    }
+    if(VAR4)
+    {
+        FUN3(&VAR7[0]);
+    }
+}
+int main(int argc, char * argv[])
+{
+    srand( (unsigned)FUN4(NULL) );
+    FUN1();
+    return 0;
+}

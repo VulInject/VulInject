@@ -1,0 +1,1 @@
+int FUN1(void) { return VAR1.VAR2 << VAR1.VAR3; }

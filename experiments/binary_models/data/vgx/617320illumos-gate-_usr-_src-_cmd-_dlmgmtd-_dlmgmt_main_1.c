@@ -1,0 +1,1 @@
+int FUN1 ( void ) { VAR1 * VAR2 ; int VAR3 = 0 ; if ( ( VAR2 = FUN2 ( "" , "" , NULL ) ) == NULL ) { return ( VAR4 ) ; } if ( FUN3 ( VAR5 , VAR6 , VAR2 ) == - 1 ) { VAR3 = VAR4 ; } return ( VAR3 ) ; }

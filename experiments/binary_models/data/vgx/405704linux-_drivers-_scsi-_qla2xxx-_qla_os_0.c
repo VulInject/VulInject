@@ -1,0 +1,102 @@
+static int
+FUN1(struct VAR1 *VAR2)
+{
+resource_size_t VAR3;
+uint16_t VAR4;
+
+if (FUN2(VAR2->VAR5, VAR2->VAR6,
+VAR7)) {
+FUN3(VAR8, VAR2->VAR5, 0x0011,
+"",
+FUN4(VAR2->VAR5));
+goto VAR9;
+}
+if (!(VAR2->VAR6 & 1))
+goto VAR10;
+
+
+VAR3 = FUN5(VAR2->VAR5, 0);
+if (FUN6(VAR2->VAR5, 0) & VAR11) {
+if (FUN7(VAR2->VAR5, 0) < VAR12) {
+FUN3(VAR13, VAR2->VAR5, 0x0012,
+"",
+FUN4(VAR2->VAR5));
+VAR3 = 0;
+}
+} else {
+FUN3(VAR13, VAR2->VAR5, 0x0013,
+"",
+FUN4(VAR2->VAR5));
+VAR3 = 0;
+}
+VAR2->VAR14 = VAR3;
+FUN8(VAR15, VAR2->VAR5, 0x0014,
+"",
+(unsigned long long)VAR2->VAR14);
+
+VAR10:
+
+if (!(FUN6(VAR2->VAR5, 1) & VAR16)) {
+FUN3(VAR8, VAR2->VAR5, 0x0015,
+"",
+FUN4(VAR2->VAR5));
+goto VAR9;
+}
+if (FUN7(VAR2->VAR5, 1) < VAR12) {
+FUN3(VAR8, VAR2->VAR5, 0x0016,
+"",
+FUN4(VAR2->VAR5));
+goto VAR9;
+}
+
+VAR2->VAR17 = FUN9(FUN5(VAR2->VAR5, 1), VAR12);
+if (!VAR2->VAR17) {
+FUN3(VAR8, VAR2->VAR5, 0x0017,
+"",
+FUN4(VAR2->VAR5));
+goto VAR9;
+}
+
+
+VAR2->VAR18 = VAR2->VAR19 = 1;
+VAR2->VAR20 = VAR21;
+
+
+if (!(VAR2->VAR22 & VAR23))
+goto VAR24;
+
+if (!VAR25 || !VAR26 ||
+(!FUN10(VAR2) && !FUN11(VAR2)))
+goto VAR24;
+
+VAR2->VAR27 = FUN9(FUN5(VAR2->VAR5, 3),
+FUN7(VAR2->VAR5, 3));
+if (VAR2->VAR27) {
+FUN8(VAR15, VAR2->VAR5, 0x0018,
+"", VAR2->VAR27);
+
+FUN12(VAR2->VAR5, VAR28, &VAR4);
+VAR2->VAR20 = VAR4 + 1;
+
+
+VAR2->VAR18 = VAR2->VAR20 - 1;
+VAR2->VAR19 = VAR2->VAR18;
+
+VAR2->VAR29 = VAR2->VAR19 - 1;
+FUN8(VAR15, VAR2->VAR5, 0x0188,
+"", VAR2->VAR29);
+
+FUN3(VAR30, VAR2->VAR5, 0x001a,
+"", VAR2->VAR20);
+} else
+FUN3(VAR30, VAR2->VAR5, 0x001b,
+"");
+
+VAR24:
+FUN8(VAR15, VAR2->VAR5, 0x001c,
+"", VAR2->VAR20);
+return (0);
+
+VAR9:
+return (-VAR31);
+}

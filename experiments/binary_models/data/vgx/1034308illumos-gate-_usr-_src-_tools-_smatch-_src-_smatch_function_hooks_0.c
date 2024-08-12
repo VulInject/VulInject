@@ -1,0 +1,67 @@
+static void FUN1(int VAR1, struct VAR2 *VAR3, sval_t VAR4, int VAR5, struct VAR6 **VAR7, struct VAR6 **VAR8)
+{
+struct VAR9 *VAR10;
+struct VAR11 *VAR12;
+const char *VAR13;
+struct VAR14 *VAR15;
+struct VAR6 *VAR16 = NULL;
+struct VAR6 *VAR17 = NULL;
+struct VAR6 *VAR18;
+
+*VAR7 = NULL;
+*VAR8 = NULL;
+if (VAR3->VAR13->VAR19 != VAR20 || !VAR3->VAR13->VAR21)
+return;
+VAR13 = VAR3->VAR13->VAR21->VAR22->VAR23;
+VAR10 = FUN2(VAR24, (char *)VAR3->VAR13->VAR21->VAR22->VAR23);
+if (!VAR10)
+return;
+VAR15 = FUN3(VAR4, VAR4);
+
+
+FUN4();
+FUN5(VAR10, VAR12) {
+if (VAR12->VAR19 != VAR25)
+continue;
+if (!FUN6(VAR1, VAR12->VAR26, VAR15, VAR5))
+continue;
+(VAR12->VAR27.VAR28)(VAR13, VAR3, NULL, VAR12->VAR29);
+} FUN7(VAR12);
+VAR18 = FUN8();
+FUN9(&VAR16, VAR18);
+FUN10(&VAR18);
+
+
+FUN4();
+FUN5(VAR10, VAR12) {
+if (VAR12->VAR19 != VAR25)
+continue;
+if (!FUN11(VAR1, VAR12->VAR26, VAR15, VAR5))
+continue;
+(VAR12->VAR27.VAR28)(VAR13, VAR3, NULL, VAR12->VAR29);
+} FUN7(VAR12);
+VAR18 = FUN8();
+FUN9(&VAR17, VAR18);
+FUN10(&VAR18);
+
+*VAR7 = VAR16;
+*VAR8 = VAR17;
+}
+
+struct VAR30 {
+int VAR31;
+int VAR1;
+struct VAR2 *VAR3;
+struct VAR32 *VAR33;
+int VAR5;
+struct VAR6 *VAR6;
+struct VAR6 *VAR34;
+struct VAR35 *VAR36;
+int VAR37;
+int VAR38;
+int VAR39;
+char *VAR40;
+struct VAR41 *VAR42;
+struct VAR2 *VAR43;
+int VAR44;
+};

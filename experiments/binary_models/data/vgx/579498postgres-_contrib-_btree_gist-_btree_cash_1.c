@@ -1,0 +1,1 @@
+static int FUN1 ( const void * VAR1 , const void * VAR2 , VAR3 * VAR4 ) { VAR5 * VAR6 = ( VAR5 * ) ( ( ( const VAR7 * ) VAR1 ) -> VAR8 ) ; VAR5 * VAR9 = ( VAR5 * ) ( ( ( const VAR7 * ) VAR2 ) -> VAR8 ) ; if ( VAR6 -> VAR10 == VAR9 -> VAR10 ) { return ( VAR6 -> VAR11 > VAR9 -> VAR11 ) ?1 : - 1 ; } return ( VAR6 -> VAR10 > VAR9 -> VAR10 ) ?1 : - 1 ; }

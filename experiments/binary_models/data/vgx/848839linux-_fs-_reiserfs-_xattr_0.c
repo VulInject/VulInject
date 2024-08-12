@@ -1,0 +1,36 @@
+static struct VAR1 *FUN1(struct VAR2 *VAR2, const char *VAR3,
+int VAR4)
+{
+struct VAR1 *VAR5, *VAR6;
+int VAR7 = 0;
+
+VAR5 = FUN2(VAR2, VAR4);
+if (FUN3(VAR5))
+return FUN4(VAR5);
+
+FUN5(FUN6(VAR5), VAR8);
+VAR6 = FUN7(VAR3, VAR5, strlen(VAR3));
+if (FUN3(VAR6)) {
+VAR7 = FUN8(VAR6);
+goto VAR9;
+}
+
+if (FUN9(VAR6) && (VAR4 & VAR10))
+VAR7 = -VAR11;
+
+if (FUN10(VAR6)) {
+VAR7 = -VAR12;
+if (FUN11(VAR4))
+VAR7 = FUN12(FUN6(VAR5), VAR6,
+0700|VAR13);
+}
+
+if (VAR7)
+FUN13(VAR6);
+VAR9:
+FUN14(FUN6(VAR5));
+FUN13(VAR5);
+if (VAR7)
+return FUN15(VAR7);
+return VAR6;
+}

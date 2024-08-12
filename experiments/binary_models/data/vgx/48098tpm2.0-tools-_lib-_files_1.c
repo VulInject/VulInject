@@ -1,0 +1,1 @@
+tool_rc FUN1 ( VAR1 * VAR2 , ESYS_TR VAR3 , VAR4 * VAR5 ) { VAR6 * VAR7 = NULL ; tool_rc VAR8 = FUN2 ( VAR2 , VAR3 , & VAR7 ) ; if ( VAR8 != VAR9 ) { return VAR8 ; } bool VAR10 = FUN3 ( VAR7 , VAR5 ) ; return VAR10 ?VAR9 : VAR11 ; }

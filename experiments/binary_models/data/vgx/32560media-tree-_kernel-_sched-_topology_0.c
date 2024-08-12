@@ -1,0 +1,63 @@
+void FUN1(int VAR1, cpumask_var_t VAR2[],
+struct VAR3 *VAR4)
+{
+int VAR5, VAR6, VAR7;
+int VAR8;
+
+FUN2(&VAR9);
+
+
+FUN3();
+
+
+VAR8 = FUN4();
+
+VAR7 = VAR2 ? VAR1 : 0;
+
+
+for (VAR5 = 0; VAR5 < VAR10; VAR5++) {
+for (VAR6 = 0; VAR6 < VAR7 && !VAR8; VAR6++) {
+if (FUN5(VAR11[VAR5], VAR2[VAR6])
+&& FUN6(VAR12, VAR5, VAR4, VAR6))
+goto VAR13;
+}
+
+FUN7(VAR11[VAR5]);
+VAR13:
+;
+}
+
+VAR7 = VAR10;
+if (VAR2 == NULL) {
+VAR7 = 0;
+VAR2 = &VAR14;
+FUN8(VAR2[0], VAR15, VAR16);
+FUN9(VAR4);
+}
+
+
+for (VAR5 = 0; VAR5 < VAR1; VAR5++) {
+for (VAR6 = 0; VAR6 < VAR7 && !VAR8; VAR6++) {
+if (FUN5(VAR2[VAR5], VAR11[VAR6])
+&& FUN6(VAR4, VAR5, VAR12, VAR6))
+goto VAR17;
+}
+
+FUN10(VAR2[VAR5], VAR4 ? VAR4 + VAR5 : NULL);
+VAR17:
+;
+}
+
+
+if (VAR11 != &VAR14)
+FUN11(VAR11, VAR10);
+
+FUN12(VAR12);
+VAR11 = VAR2;
+VAR12 = VAR4;
+VAR10 = VAR1;
+
+FUN13();
+
+FUN14(&VAR9);
+}

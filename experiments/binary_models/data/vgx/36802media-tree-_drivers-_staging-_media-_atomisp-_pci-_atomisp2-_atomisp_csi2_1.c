@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , struct VAR5 * VAR6 ) { const struct VAR7 * VAR8 = VAR7 ; unsigned int VAR9 = 0 ; while ( VAR8 -> VAR6 ) { if ( VAR9 == VAR6 -> VAR10 ) { return 0 ; } VAR9 ++ , VAR8 ++ ; } return - VAR11 ; }

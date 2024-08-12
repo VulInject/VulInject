@@ -1,0 +1,31 @@
+static int FUN1(const char **VAR1) {
+VAR2 *VAR3 = FUN2(VAR4);
+VAR2 *VAR5 = FUN2(VAR6);
+
+FUN3(VAR3 != NULL);
+VAR3->VAR7 = VAR8.VAR7;
+VAR3->VAR9 = VAR8.VAR9;
+VAR3->VAR10 = VAR8.VAR10;
+VAR3->VAR11 = FUN4(VAR4);
+if (FUN5(VAR3) == VAR12) {
+*VAR1 = "";
+if (VAR5)
+FUN6(VAR5); 
+return 0;
+}
+
+if (VAR8.VAR13 != 0) {
+FUN3(VAR5 != NULL);
+VAR5->VAR7 = VAR8.VAR7;
+VAR5->VAR9 = VAR8.VAR9;
+VAR5->VAR10 = VAR8.VAR13;
+VAR5->VAR11 = FUN4(VAR6);
+if (FUN5(VAR5) == VAR12) {
+*VAR1 = "";
+FUN6(VAR3); 
+return 0;
+}
+}
+
+return 1;
+}

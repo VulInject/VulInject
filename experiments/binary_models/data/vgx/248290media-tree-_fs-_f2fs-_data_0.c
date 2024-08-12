@@ -1,0 +1,159 @@
+int FUN1(struct VAR1 *VAR1, struct VAR2 *VAR3,
+int VAR4, int VAR5)
+{
+unsigned int VAR6 = VAR3->VAR7;
+struct dnode_of_data VAR8;
+struct VAR9 *VAR10 = FUN2(VAR1);
+int VAR11 = VAR4 ? VAR12 : VAR13;
+pgoff_t VAR14, VAR15, VAR16;
+int VAR17 = 0, VAR18 = 1;
+unsigned int VAR19, VAR20;
+blkcnt_t VAR21;
+struct extent_info VAR22 = {0,0,0};
+block_t VAR23;
+
+if (!VAR6)
+return 0;
+
+VAR3->VAR7 = 0;
+VAR3->VAR24 = 0;
+
+
+VAR14 =	(VAR25)VAR3->VAR26;
+VAR16 = VAR14 + VAR6;
+
+if (!VAR4 && FUN3(VAR1, VAR14, &VAR22)) {
+VAR3->VAR27 = VAR22.VAR28 + VAR14 - VAR22.VAR29;
+VAR3->VAR7 = FUN4((VAR25)VAR6, VAR22.VAR29 + VAR22.VAR30 - VAR14);
+VAR3->VAR24 = VAR31;
+goto VAR32;
+}
+
+VAR33:
+if (VAR4)
+FUN5(VAR10, VAR5, true);
+
+
+FUN6(&VAR8, VAR1, NULL, NULL, 0);
+VAR17 = FUN7(&VAR8, VAR14, VAR11);
+if (VAR17) {
+if (VAR5 == VAR34)
+VAR3->VAR27 = 0;
+if (VAR17 == -VAR35) {
+VAR17 = 0;
+if (VAR3->VAR36)
+*VAR3->VAR36 =
+FUN8(&VAR8, VAR14);
+}
+goto VAR37;
+}
+
+VAR21 = 0;
+VAR20 = VAR19 = VAR8.VAR19;
+VAR15 = FUN9(VAR8.VAR38, VAR1);
+
+VAR39:
+VAR23 = FUN10(VAR8.VAR38, VAR8.VAR19);
+
+if (VAR23 == VAR40 || VAR23 == VAR41) {
+if (VAR4) {
+if (FUN11(FUN12(VAR10))) {
+VAR17 = -VAR42;
+goto VAR43;
+}
+if (VAR5 == VAR44) {
+if (VAR23 == VAR41) {
+VAR21++;
+VAR20 = VAR8.VAR19;
+}
+} else {
+VAR17 = FUN13(&VAR8);
+if (!VAR17)
+FUN14(VAR1, VAR45);
+}
+if (VAR17)
+goto VAR43;
+VAR3->VAR24 |= VAR46;
+VAR23 = VAR8.VAR47;
+} else {
+if (VAR5 == VAR34) {
+VAR3->VAR27 = 0;
+goto VAR43;
+}
+if (VAR5 == VAR48 &&
+VAR23 == VAR41) {
+if (VAR3->VAR36)
+*VAR3->VAR36 = VAR14 + 1;
+}
+if (VAR5 != VAR48 ||
+VAR23 != VAR40)
+goto VAR43;
+}
+}
+
+if (VAR5 == VAR44)
+goto VAR49;
+
+if (VAR3->VAR7 == 0) {
+
+if (VAR23 == VAR40)
+VAR3->VAR24 |= VAR50;
+VAR3->VAR24 |= VAR31;
+
+VAR3->VAR27 = VAR23;
+VAR3->VAR7 = 1;
+} else if ((VAR3->VAR27 != VAR40 &&
+VAR23 == (VAR3->VAR27 + VAR18)) ||
+(VAR3->VAR27 == VAR40 && VAR23 == VAR40) ||
+VAR5 == VAR51) {
+VAR18++;
+VAR3->VAR7++;
+} else {
+goto VAR43;
+}
+
+VAR49:
+VAR8.VAR19++;
+VAR14++;
+
+
+if (VAR5 == VAR44 &&
+(VAR14 == VAR16 || VAR8.VAR19 == VAR15)) {
+
+VAR8.VAR19 = VAR19;
+VAR17 = FUN15(&VAR8, VAR21);
+if (VAR17)
+goto VAR43;
+
+VAR3->VAR7 += VAR8.VAR19 - VAR19;
+if (VAR21 && VAR8.VAR19 != VAR20 + 1) {
+VAR17 = -VAR52;
+goto VAR43;
+}
+VAR8.VAR19 = VAR15;
+}
+
+if (VAR14 >= VAR16)
+goto VAR43;
+else if (VAR8.VAR19 < VAR15)
+goto VAR39;
+
+FUN16(&VAR8);
+
+if (VAR4) {
+FUN5(VAR10, VAR5, false);
+FUN17(VAR10, VAR8.VAR53);
+}
+goto VAR33;
+
+VAR43:
+FUN16(&VAR8);
+VAR37:
+if (VAR4) {
+FUN5(VAR10, VAR5, false);
+FUN17(VAR10, VAR8.VAR53);
+}
+VAR32:
+FUN18(VAR1, VAR3, VAR17);
+return VAR17;
+}

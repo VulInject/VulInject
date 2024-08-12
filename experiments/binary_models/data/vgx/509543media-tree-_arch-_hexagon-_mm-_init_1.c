@@ -1,0 +1,1 @@
+FUN1 ( VAR1 ) ; unsigned long long VAR2 ; void __init FUN2 ( void ) { FUN3 ( ) ; FUN4 ( NULL , NULL ) ; VAR3 . VAR4 . VAR5 = FUN5 ( VAR3 . VAR6 ) ; }

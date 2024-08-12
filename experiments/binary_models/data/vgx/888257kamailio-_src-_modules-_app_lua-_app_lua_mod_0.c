@@ -1,0 +1,65 @@
+int FUN1(VAR1 *VAR2, int VAR3, VAR4 *VAR5,
+VAR4 *VAR6)
+{
+int VAR7;
+
+VAR7 = -1;
+if(VAR3==VAR8) {
+if(VAR5!=NULL && VAR5->VAR9!=NULL) {
+VAR7 = FUN2(VAR2, VAR5->VAR9,
+(VAR6 && VAR6->VAR9)?VAR6->VAR9:NULL, NULL, NULL, 0);
+} else {
+VAR7 = FUN2(VAR2, "", NULL, NULL, NULL, 1);
+}
+} else if(VAR3==VAR10) {
+if(VAR11.VAR12>0) {
+VAR7 = FUN2(VAR2, VAR11.VAR9, NULL,
+NULL, NULL, 0);
+}
+} else if(VAR3==VAR13) {
+if(VAR5!=NULL && VAR5->VAR9!=NULL) {
+VAR7 = FUN2(VAR2, VAR5->VAR9, NULL, NULL, NULL, 0);
+}
+} else if(VAR3==VAR14) {
+if(VAR5!=NULL && VAR5->VAR9!=NULL) {
+VAR7 = FUN2(VAR2, VAR5->VAR9, NULL, NULL, NULL, 0);
+}
+} else if(VAR3==VAR15) {
+if(VAR5!=NULL && VAR5->VAR9!=NULL) {
+VAR7 = FUN2(VAR2, VAR5->VAR9, NULL, NULL, NULL, 0);
+}
+} else if(VAR3==VAR16) {
+if(VAR5!=NULL && VAR5->VAR9!=NULL) {
+VAR7 = FUN2(VAR2, VAR5->VAR9, NULL, NULL, NULL, 0);
+}
+} else if(VAR3==VAR17) {
+if(VAR18.VAR12>0) {
+VAR7 = FUN2(VAR2, VAR18.VAR9, NULL,
+NULL, NULL, 0);
+}
+return 1;
+} else if(VAR3==VAR19) {
+if(VAR5!=NULL && VAR5->VAR9!=NULL) {
+VAR7 = FUN2(VAR2, VAR5->VAR9,
+(VAR6 && VAR6->VAR9)?VAR6->VAR9:NULL, NULL, NULL, 0);
+}
+} else {
+if(VAR5!=NULL) {
+FUN3("",
+VAR3, VAR5->VAR12, VAR5->VAR9);
+} else {
+FUN3("",
+VAR3);
+}
+}
+
+if(VAR5!=NULL) {
+FUN4("",
+VAR3, VAR5->VAR12, VAR5->VAR9, VAR7);
+} else {
+FUN4("",
+VAR3, VAR7);
+}
+
+return 1;
+}

@@ -1,0 +1,53 @@
+static bool FUN1(struct VAR1 *VAR2)
+{
+unsigned int VAR3;
+u32 VAR4;
+
+
+VAR4 = FUN2(VAR2->VAR5[0], VAR6);
+if ((VAR4 & VAR7) != VAR7) {
+
+static const int VAR8[VAR9][3] = {
+{ 3397, 2800, 2221 },
+{ 3393, 2795, 2216 },
+{ 3389, 2805, 2237 },
+{ 3415, 2694, 2195 },
+{ 3356, 2724, 2244 },
+};
+
+VAR2->VAR10[0] = 2631;
+VAR2->VAR10[1] = 1509;
+VAR2->VAR10[2] = 435;
+
+for (VAR3 = 0; VAR3 < VAR2->VAR11; VAR3++) {
+struct VAR12 *VAR13 = VAR2->VAR5[VAR3];
+
+VAR13->VAR14[0] = VAR8[VAR3][0];
+VAR13->VAR14[1] = VAR8[VAR3][1];
+VAR13->VAR14[2] = VAR8[VAR3][2];
+}
+
+return false;
+}
+
+
+VAR2->VAR10[0] = FUN2(VAR2->VAR5[0], VAR15) &
+VAR16;
+VAR2->VAR10[1] = FUN2(VAR2->VAR5[0], VAR17) &
+VAR16;
+VAR2->VAR10[2] = FUN2(VAR2->VAR5[0], VAR18) &
+VAR16;
+
+for (VAR3 = 0; VAR3 < VAR2->VAR11; VAR3++) {
+struct VAR12 *VAR13 = VAR2->VAR5[VAR3];
+
+VAR13->VAR14[0] = FUN2(VAR13, VAR19) &
+VAR16;
+VAR13->VAR14[1] = FUN2(VAR13, VAR20) &
+VAR16;
+VAR13->VAR14[2] = FUN2(VAR13, VAR21) &
+VAR16;
+}
+
+return true;
+}

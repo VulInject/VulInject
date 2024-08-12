@@ -1,0 +1,86 @@
+static int FUN1 (struct VAR1 * VAR2, int * VAR3, char * VAR4)
+{
+struct VAR5 * VAR6 = FUN2(VAR2);
+struct VAR7 * VAR8;
+struct ext2_mount_options VAR9;
+unsigned long VAR10;
+int VAR11;
+
+FUN3(VAR2);
+FUN4(&VAR6->VAR12);
+
+
+VAR10 = VAR2->VAR13;
+VAR9.VAR14 = VAR6->VAR14;
+VAR9.VAR15 = VAR6->VAR15;
+VAR9.VAR16 = VAR6->VAR16;
+
+
+if (!FUN5(VAR4, VAR2)) {
+VAR11 = -VAR17;
+goto VAR18;
+}
+
+VAR2->VAR13 = (VAR2->VAR13 & ~VAR19) |
+((VAR6->VAR14 & VAR20) ? VAR19 : 0);
+
+VAR8 = VAR6->VAR21;
+if ((VAR6->VAR14 ^ VAR9.VAR14) & VAR22) {
+FUN6(VAR2, VAR23, ""
+"");
+VAR6->VAR14 ^= VAR22;
+}
+if ((*VAR3 & VAR24) == (VAR2->VAR13 & VAR24)) {
+FUN7(&VAR6->VAR12);
+return 0;
+}
+if (*VAR3 & VAR24) {
+if (FUN8(VAR8->VAR25) & VAR26 ||
+!(VAR6->VAR27 & VAR26)) {
+FUN7(&VAR6->VAR12);
+return 0;
+}
+
+
+VAR8->VAR25 = FUN9(VAR6->VAR27);
+VAR8->VAR28 = FUN10(FUN11());
+FUN7(&VAR6->VAR12);
+
+VAR11 = FUN12(VAR2, -1);
+if (VAR11 < 0) {
+FUN4(&VAR6->VAR12);
+goto VAR18;
+}
+
+FUN13(VAR2, VAR8, 1);
+} else {
+__le32 VAR29 = FUN14(VAR2,
+~VAR30);
+if (VAR29) {
+FUN6(VAR2, VAR23,
+""
+"",
+FUN15(VAR29));
+VAR11 = -VAR31;
+goto VAR18;
+}
+
+VAR6->VAR27 = FUN8(VAR8->VAR25);
+if (!FUN16 (VAR2, VAR8, 0))
+VAR2->VAR13 &= ~VAR24;
+FUN7(&VAR6->VAR12);
+
+FUN17(VAR2);
+
+FUN18(VAR2, -1);
+}
+
+return 0;
+VAR18:
+VAR6->VAR14 = VAR9.VAR14;
+VAR6->VAR15 = VAR9.VAR15;
+VAR6->VAR16 = VAR9.VAR16;
+VAR2->VAR13 = VAR10;
+FUN7(&VAR6->VAR12);
+return VAR11;
+}

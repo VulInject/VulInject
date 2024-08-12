@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( int VAR2 , const char * VAR3 ) { VAR1 * VAR4 ; if ( ! ( VAR4 = calloc ( 1 , sizeof ( VAR1 ) ) ) ) { return VAR5 ; } VAR4 -> VAR2 = VAR2 ; VAR4 -> VAR3 = VAR3 ; return VAR4 ; }

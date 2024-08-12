@@ -1,0 +1,1 @@
+FUN1 ( ) { FUN2 ( VAR1 , sizeof ( VAR1 ) / sizeof ( VAR1 [ 0 ] ) , "" ) ; FUN3 ( VAR2 ) ; }

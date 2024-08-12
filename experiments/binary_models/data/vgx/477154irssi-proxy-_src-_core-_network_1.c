@@ -1,0 +1,1 @@
+int FUN1 ( const char * VAR1 , VAR2 * VAR3 ) { unsigned long VAR4 ; if ( strchr ( VAR1 , '' ) != NULL ) { VAR3 -> VAR5 = VAR6 ; VAR3 -> VAR3 . VAR7 = 0 ; } else { VAR3 -> VAR5 = VAR8 ; if ( FUN2 ( VAR1 , & VAR3 -> VAR3 . VAR7 ) == 0 ) { return - 1 ; } VAR4 = FUN3 ( VAR1 ) ; if ( VAR4 == VAR9 ) { return - 1 ; } memcpy ( & VAR3 -> VAR3 , & VAR4 , 4 ) ; } return 0 ; }

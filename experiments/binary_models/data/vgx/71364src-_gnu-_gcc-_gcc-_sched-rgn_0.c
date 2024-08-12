@@ -1,0 +1,375 @@
+FUN1 (void)
+{
+int *VAR1, *VAR2, *VAR3;
+char VAR4 = 1;
+int VAR5, VAR6, VAR7, VAR8, VAR9, VAR10;
+int VAR11 = 0, VAR12, VAR13 = 0;
+edge_iterator VAR14;
+VAR15 *VAR16;
+int VAR17, VAR18, VAR19;
+int VAR20;
+basic_block VAR21;
+
+
+sbitmap VAR22;
+
+
+sbitmap VAR23;
+
+
+sbitmap VAR24;
+
+
+sbitmap VAR25;
+
+
+
+
+VAR1 = FUN2 (int, VAR26);
+VAR2 = FUN3 (int, VAR26);
+VAR16 = FUN2 (VAR15, VAR27);
+
+VAR23 = FUN4 (VAR26);
+FUN5 (VAR23);
+
+VAR22 = FUN4 (VAR26);
+FUN6 (VAR22);
+
+VAR24 = FUN4 (VAR26);
+FUN6 (VAR24);
+
+VAR25 = FUN4 (VAR26);
+FUN6 (VAR25);
+
+for (VAR8 = 0; VAR8 < VAR26; VAR8++)
+VAR1[VAR8] = -1;
+
+
+
+
+VAR14 = FUN7 (FUN8 (VAR28)->VAR29);
+VAR12 = -1;
+
+while (1)
+{
+if (FUN9 (VAR14))
+{
+
+while (VAR12 >= 0 && FUN9 (VAR14))
+{
+
+VAR14 = VAR16[VAR12--];
+VAR5 = FUN10 (VAR14)->VAR30->VAR31;
+FUN11 (VAR5 != VAR32);
+VAR6 = FUN10 (VAR14)->VAR33->VAR31;
+FUN11 (VAR6 != VAR34);
+FUN12 (VAR25, VAR6);
+if (VAR1[VAR6] >= 0 && FUN13 (VAR25, VAR1[VAR6]))
+FUN14 (VAR5, VAR1[VAR6]);
+FUN15 (&VAR14);
+}
+
+
+if (VAR12 < 0 && FUN9 (VAR14))
+break;
+
+
+continue;
+}
+
+
+VAR5 = FUN10 (VAR14)->VAR30->VAR31;
+FUN11 (VAR5 != VAR32);
+FUN16 (VAR25, VAR5);
+VAR2[VAR5] = ++VAR11;
+
+
+VAR6 = FUN10 (VAR14)->VAR33->VAR31;
+if (VAR6 == VAR34)
+{
+FUN17 (VAR14);
+FUN15 (&VAR14);
+continue;
+}
+
+
+if (FUN13 (VAR25, VAR6))
+{
+VAR4 = 0;
+FUN16 (VAR22, VAR6);
+FUN14 (VAR5, VAR6);
+FUN17 (VAR14);
+FUN15 (&VAR14);
+continue;
+}
+
+
+if (VAR2[VAR6])
+{
+if (VAR1[VAR6] >= 0 && FUN13 (VAR25, VAR1[VAR6]))
+FUN14 (VAR5, VAR1[VAR6]);
+FUN17 (VAR14);
+FUN15 (&VAR14);
+continue;
+}
+
+
+VAR16[++VAR12] = VAR14;
+FUN17 (VAR14);
+VAR14 = FUN7 (FUN10 (VAR14)->VAR33->VAR29);
+}
+
+
+FUN18 (VAR21)
+{
+edge_iterator VAR35;
+edge VAR36;
+FUN19 (VAR36, VAR35, VAR21->VAR29)
+VAR36->VAR37 = NULL;
+}
+
+
+
+VAR19 = 0;
+FUN20 (VAR21)
+if (VAR2[VAR21->VAR31] == 0)
+{
+VAR19 = 1;
+break;
+}
+
+
+VAR3 = VAR2;
+
+FUN20 (VAR21)
+VAR3[VAR21->VAR31] = FUN21 (VAR21->VAR38);
+
+
+if (!VAR19)
+{
+int *VAR39, *VAR40 = NULL;
+
+sbitmap VAR41 = NULL;
+bool VAR42;
+
+if (VAR4)
+FUN16 (VAR22, 0);
+
+
+
+VAR39 = FUN2 (int, VAR43);
+
+VAR42 = FUN22 (VAR44) > 0;
+if (VAR42)
+{
+VAR40 = xmalloc (VAR26 * sizeof (int));
+VAR41 = FUN4 (VAR26);
+FUN6 (VAR41);
+}
+
+
+FUN20 (VAR21)
+{
+if (FUN13 (VAR22, VAR21->VAR31) && FUN13 (VAR23, VAR21->VAR31))
+{
+edge VAR36;
+edge_iterator VAR35;
+basic_block VAR45;
+
+
+FUN20 (VAR45)
+{
+
+if (VAR21->VAR31 == VAR1[VAR45->VAR31] && VAR21 != VAR45)
+{
+
+if (!FUN23 (VAR46, VAR45, VAR21))
+break;
+}
+}
+
+
+if (VAR45 != VAR47)
+continue;
+
+
+VAR9 = VAR10 = -1;
+VAR20 = 0;
+VAR7 = VAR1[VAR21->VAR31];
+
+if (VAR42)
+
+memcpy (VAR40, VAR3, VAR26 * sizeof (int));
+
+
+FUN19 (VAR36, VAR35, VAR21->VAR29)
+if (VAR36->VAR33 != VAR47)
+--VAR3[VAR36->VAR33->VAR31];
+
+
+VAR17 = 1;
+VAR18 = (FUN24 (FUN25 (VAR21))
+- FUN24 (FUN26 (VAR21)));
+
+
+if (VAR4)
+{
+FUN20 (VAR45)
+
+if (FUN27 (VAR45)
+&& FUN8 (VAR45) == VAR47)
+{
+VAR39[++VAR10] = VAR45->VAR31;
+FUN16 (VAR24, VAR45->VAR31);
+
+if (FUN28 (VAR45->VAR31, &VAR17, &VAR18))
+{
+VAR20 = 1;
+break;
+}
+}
+}
+else
+{
+edge VAR36;
+
+FUN19 (VAR36, VAR35, VAR21->VAR38)
+{
+if (VAR36->VAR30 == VAR28)
+continue;
+
+VAR5 = VAR36->VAR30->VAR31;
+
+if (VAR1[VAR5] == VAR7 && VAR5 != VAR21->VAR31)
+{
+
+VAR39[++VAR10] = VAR5;
+FUN16 (VAR24, VAR5);
+
+if (FUN28 (VAR5, &VAR17, &VAR18))
+{
+VAR20 = 1;
+break;
+}
+}
+}
+}
+
+
+
+while (VAR9 < VAR10 && !VAR20)
+{
+edge VAR36;
+VAR6 = VAR39[++VAR9];
+
+FUN19 (VAR36, VAR35, FUN29 (VAR6)->VAR38)
+{
+VAR5 = VAR36->VAR30->VAR31;
+
+
+if (VAR36->VAR30 == VAR28
+|| VAR1[VAR5] != VAR7)
+{
+VAR10 = -1;
+break;
+}
+else if (!FUN13 (VAR24, VAR5) && VAR5 != VAR21->VAR31)
+{
+VAR39[++VAR10] = VAR5;
+FUN16 (VAR24, VAR5);
+
+if (FUN28 (VAR5, &VAR17, &VAR18))
+{
+VAR20 = 1;
+break;
+}
+}
+}
+}
+
+if (VAR10 >= 0 && !VAR20)
+{
+
+VAR3[VAR21->VAR31] = -1;
+VAR48[VAR13] = VAR21->VAR31;
+FUN30 (VAR49) = VAR17;
+FUN31 (VAR49) = VAR13++;
+FUN32 (VAR49) = 0;
+FUN33 (VAR49) = 0;
+FUN34 (VAR21->VAR31) = VAR49;
+FUN35 (VAR21->VAR31) = VAR11 = 0;
+
+
+while (VAR10 >= 0)
+{
+if (VAR9 < 0)
+VAR9 = VAR10;
+VAR6 = VAR39[VAR9];
+if (VAR3[VAR6] == 0)
+{
+edge VAR36;
+
+VAR3[VAR6] = -1;
+VAR48[VAR13++] = VAR6;
+FUN35 (VAR6) = ++VAR11;
+FUN34 (VAR6) = VAR49;
+VAR39[VAR9] = VAR39[VAR10--];
+
+FUN19 (VAR36, VAR35, FUN29 (VAR6)->VAR29)
+if (VAR36->VAR33 != VAR47)
+--VAR3[VAR36->VAR33->VAR31];
+}
+else
+--VAR9;
+}
+++VAR49;
+}
+else if (VAR42)
+{
+
+int *VAR50 = VAR3;
+
+VAR3 = VAR40;
+VAR40 = VAR50;
+
+
+FUN19 (VAR36, VAR35, VAR21->VAR29)
+if (VAR36->VAR33 != VAR47)
+FUN16 (VAR41, VAR36->VAR33->VAR31);
+}
+}
+}
+free (VAR39);
+
+if (VAR42)
+{
+free (VAR40);
+
+FUN36 (VAR22, VAR22, VAR41);
+FUN37 (VAR41);
+
+FUN38 (VAR3, &VAR13, VAR22, VAR1);
+}
+}
+
+
+FUN20 (VAR21)
+if (VAR3[VAR21->VAR31] >= 0)
+{
+VAR48[VAR13] = VAR21->VAR31;
+FUN30 (VAR49) = 1;
+FUN31 (VAR49) = VAR13++;
+FUN32 (VAR49) = 0;
+FUN33 (VAR49) = 0;
+FUN34 (VAR21->VAR31) = VAR49++;
+FUN35 (VAR21->VAR31) = 0;
+}
+
+free (VAR1);
+free (VAR3);
+free (VAR16);
+FUN37 (VAR22);
+FUN37 (VAR23);
+FUN37 (VAR24);
+FUN37 (VAR25);
+}

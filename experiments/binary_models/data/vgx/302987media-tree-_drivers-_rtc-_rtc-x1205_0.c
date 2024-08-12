@@ -1,0 +1,56 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+unsigned char VAR5)
+{
+unsigned char VAR6[2] = { 0, VAR5 };
+unsigned char VAR7[8];
+int VAR8;
+
+struct i2c_msg VAR9[] = {
+{
+.VAR10 = VAR2->VAR10,
+.VAR11 = 2,
+.VAR7 = VAR6
+},
+{
+.VAR10 = VAR2->VAR10,
+.VAR12 = VAR13,
+.VAR11 = 8,
+.VAR7 = VAR7
+},
+};
+
+
+if (FUN2(VAR2->VAR14, &VAR9[0], 2) != 2) {
+FUN3(&VAR2->VAR15, "", VAR16);
+return -VAR17;
+}
+
+FUN4(&VAR2->VAR15,
+""
+"",
+VAR16,
+VAR7[0], VAR7[1], VAR7[2], VAR7[3],
+VAR7[4], VAR7[5], VAR7[6], VAR7[7]);
+
+
+if (VAR5 < VAR18)
+for (VAR8 = 0; VAR8 <= 4; VAR8++)
+VAR7[VAR8] &= 0x7F;
+
+VAR4->VAR19 = FUN5(VAR7[VAR20]);
+VAR4->VAR21 = FUN5(VAR7[VAR22]);
+VAR4->VAR23 = FUN5(VAR7[VAR24] & 0x3F); 
+VAR4->VAR25 = FUN5(VAR7[VAR26]);
+VAR4->VAR27 = FUN5(VAR7[VAR28]) - 1; 
+VAR4->VAR29 = FUN5(VAR7[VAR30])
++ (FUN5(VAR7[VAR31]) * 100) - 1900;
+VAR4->VAR32 = VAR7[VAR33];
+
+FUN4(&VAR2->VAR15, ""
+"",
+VAR16,
+VAR4->VAR19, VAR4->VAR21, VAR4->VAR23,
+VAR4->VAR25, VAR4->VAR27, VAR4->VAR29, VAR4->VAR32);
+
+return 0;
+}

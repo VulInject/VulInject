@@ -1,0 +1,78 @@
+static int FUN1(
+struct VAR1 *VAR2,
+const VAR3 *VAR4
+)
+{
+int VAR5 = 0;
+struct VAR6 *VAR7 =
+(struct VAR6 *)(VAR2->VAR8);
+
+const VAR9 *VAR10 =
+(const VAR9 *)(((unsigned long) VAR4) +
+FUN2(VAR4->VAR11));
+const VAR12 *VAR13 =
+(const VAR12 *)(((unsigned long) VAR4) +
+FUN2(VAR4->VAR14));
+const VAR15 *VAR16 =
+(const VAR15 *)(((unsigned long) VAR4) +
+FUN2(VAR4->VAR17));
+const VAR12 *VAR18 =
+(const VAR12 *)(((unsigned long) VAR4) +
+FUN2(VAR4->VAR19));
+const VAR20 *VAR21 =
+(const VAR20 *)(((unsigned long) VAR4) +
+FUN2(VAR4->VAR22));
+const VAR12 *VAR23 =
+(const VAR12 *)(((unsigned long) VAR4) +
+FUN2(VAR4->VAR24));
+
+VAR7->VAR25 = NULL;
+VAR7->VAR26 = NULL;
+VAR7->VAR27 = NULL;
+VAR7->VAR23 = NULL;
+
+if (VAR4->VAR11 != 0)
+VAR5 = FUN3(VAR2,
+&VAR7->VAR27, VAR10);
+
+if (VAR5 == 0 && VAR4->VAR14 != 0)
+VAR5 = FUN4(VAR2,
+&VAR7->VAR28, VAR13);
+
+if (VAR5 == 0 && VAR4->VAR19 != 0)
+VAR5 = FUN5(VAR2,
+&VAR7->VAR25, VAR18);
+
+if (VAR5 == 0 && VAR4->VAR17 != 0)
+VAR5 = FUN6(VAR2,
+&VAR7->VAR26, VAR16);
+
+if (VAR5 == 0 && VAR4->VAR24 != 0)
+VAR5 = FUN7(VAR2,
+&VAR7->VAR23, VAR23);
+
+if (VAR5 == 0 && VAR4->VAR22 != 0)
+VAR5 = FUN8(VAR2,
+&VAR7->VAR29, VAR21);
+
+VAR2->VAR30.VAR29.VAR31 =
+VAR7->VAR29.VAR31;
+VAR2->VAR30.VAR29.VAR32 =
+VAR7->VAR29.VAR32;
+VAR2->VAR30.VAR29.VAR33 =
+VAR7->VAR29.VAR33;
+VAR2->VAR30.VAR29.VAR34 =
+VAR7->VAR29.VAR34;
+
+if (VAR5 == 0 && (NULL != VAR7->VAR26)
+&& (0 != VAR7->VAR26->VAR35))
+VAR5 = FUN9(VAR2, &VAR7->VAR36,
+VAR7->VAR26);
+
+if (VAR5 == 0 && (NULL != VAR7->VAR25)
+&& (0 != VAR7->VAR25->VAR35))
+VAR5 = FUN9(VAR2, &VAR7->VAR37,
+VAR7->VAR25);
+
+return VAR5;
+}

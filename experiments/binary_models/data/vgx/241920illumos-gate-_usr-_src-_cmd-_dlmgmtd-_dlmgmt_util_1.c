@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * * VAR2 , const char * VAR3 , VAR4 * VAR5 ) { int VAR6 ; void * VAR7 ; size_t VAR8 ; dladm_datatype_t VAR9 ; VAR6 = FUN2 ( VAR2 , VAR3 , & VAR7 , & VAR8 , & VAR9 ) ; assert ( VAR8 > 0 ) ; if ( VAR8 > VAR10 ) { return ( VAR11 ) ; } VAR5 -> VAR12 = VAR9 ; VAR5 -> VAR13 = VAR8 ; bcopy ( VAR7 , VAR5 -> VAR14 , VAR8 ) ; return ( 0 ) ; }

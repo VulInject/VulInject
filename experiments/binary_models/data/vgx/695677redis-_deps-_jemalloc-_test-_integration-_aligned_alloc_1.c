@@ -1,0 +1,1 @@
+FUN1 ( ) { void * VAR1 = FUN2 ( 8 , 0 ) ; assert ( VAR1 ) ; size_t VAR2 = FUN3 ( VAR1 ) ; assert ( VAR2 > 0 ) ; }

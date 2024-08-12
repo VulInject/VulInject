@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 , void * VAR3 ) { int VAR4 ; void * VAR5 ; FUN2 ( & VAR4 ) ; VAR2 -> FUN3 ( VAR3 , "" , & VAR5 ) ; VAR2 -> FUN4 ( VAR5 , "" , "" , VAR4 . VAR6 , "" , VAR4 . VAR7 , "" , VAR4 . VAR8 , "" , VAR4 . VAR9 , "" , VAR4 . VAR10 , "" , VAR4 . VAR11 ) ; }

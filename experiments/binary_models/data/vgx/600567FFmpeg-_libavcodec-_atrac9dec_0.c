@@ -1,0 +1,43 @@
+static inline int FUN1(VAR1 *VAR2, VAR3 *VAR4,
+VAR5 *VAR6)
+{
+int VAR7[2];
+int VAR8[2];
+int VAR9, VAR10, VAR11;
+VAR12 *VAR13;
+float VAR14;
+
+VAR4->VAR15 = FUN2(VAR6, 2);
+if (VAR4->VAR15) {
+VAR7[0] = FUN2(VAR6, 5);
+VAR7[1] = 31;
+VAR8[0] = FUN2(VAR6, 5);
+VAR8[1] = 31;
+} else {
+VAR7[0] = FUN2(VAR6, 6);
+VAR7[1] = FUN2(VAR6, 6) + 1;
+VAR8[0] = FUN2(VAR6, 5);
+VAR8[1] = FUN2(VAR6, 5);
+}
+VAR4->VAR16 = FUN2(VAR6, 4);
+
+if (VAR7[0] >= VAR7[1] || VAR7[1] > 31)
+return VAR17;
+
+if (VAR4->VAR16 > VAR4->VAR18)
+return VAR17;
+
+VAR9    = VAR8[1] - VAR8[0];
+VAR10      = 1 - 2*(VAR9 < 0);
+VAR11      = VAR8[0] + VAR10;
+VAR14     = (FUN3(VAR9) - 1) / 31.0f;
+VAR13     = VAR2->VAR19[VAR7[1] - VAR7[0] - 1];
+
+for (int VAR20 = 0; VAR20 <= VAR4->VAR18; VAR20++)
+VAR4->VAR21[VAR20] = VAR8[VAR20 >= VAR7[0]];
+
+for (int VAR20 = VAR7[0]; VAR20 < VAR7[1]; VAR20++)
+VAR4->VAR21[VAR20] = VAR11 + VAR10*((int)(VAR14*VAR13[VAR20 - VAR7[0]]));
+
+return 0;
+}

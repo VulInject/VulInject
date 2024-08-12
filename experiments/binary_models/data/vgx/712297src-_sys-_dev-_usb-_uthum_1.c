@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , int * VAR3 ) { uint8_t VAR4 [ 8 ] ; if ( FUN2 ( VAR2 , VAR5 , VAR4 , sizeof ( VAR4 ) , 10 ) != 0 ) { FUN3 ( ( "" ) ) ; return VAR6 ; } if ( VAR4 [ 2 ] != VAR7 ) { FUN3 ( ( "" , VAR4 [ 0 ] , VAR4 [ 1 ] , VAR4 [ 2 ] ) ) ; return VAR6 ; } * VAR3 = ( VAR4 [ 0 ] << 8 ) + VAR4 [ 1 ] ; return 0 ; }

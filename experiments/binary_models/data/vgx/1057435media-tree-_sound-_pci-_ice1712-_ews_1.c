@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , int VAR3 ) { struct VAR4 * VAR5 = VAR2 -> VAR6 [ 0 ] ; unsigned char VAR7 ; if ( FUN2 ( VAR5 , ~ ( 1 << VAR3 ) & 0x0f ) < 0 ) { FUN3 ( VAR5 -> VAR8 -> VAR9 , "" ) ; } FUN4 ( VAR5 , NULL ) ; VAR7 = VAR10 | VAR11 | VAR12 ; FUN5 ( VAR5 , VAR13 , VAR5 -> VAR14 . VAR15 | VAR7 ) ; FUN5 ( VAR5 , VAR16 , ~ VAR7 ) ; }

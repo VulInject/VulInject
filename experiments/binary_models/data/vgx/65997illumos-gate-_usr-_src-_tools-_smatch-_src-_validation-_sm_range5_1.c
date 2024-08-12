@@ -1,0 +1,1 @@
+int main ( unsigned int VAR1 , unsigned int VAR2 ) { switch ( VAR1 ) { case 0 ... 9 : FUN1 ( VAR1 , NULL ) ; break ; default : FUN1 ( VAR1 ) ; } }

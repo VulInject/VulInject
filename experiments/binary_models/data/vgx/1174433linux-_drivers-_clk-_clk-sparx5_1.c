@@ -1,0 +1,1 @@
+static long FUN1 ( struct VAR1 * VAR2 , unsigned long VAR3 , unsigned long * VAR4 ) { int VAR5 ; return FUN2 ( VAR3 , * VAR4 , & VAR5 ) ; } static const struct clk_ops VAR6 = { . VAR7 = VAR8 . VAR9 = VAR10 . VAR11 = VAR12 . VAR13 = VAR14 . VAR15 = VAR16 } ;

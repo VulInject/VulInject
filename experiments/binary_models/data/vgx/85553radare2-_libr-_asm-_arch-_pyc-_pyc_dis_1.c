@@ -1,0 +1,1 @@
+static char * FUN1 ( VAR1 * VAR2 ) { VAR3 * VAR4 = NULL ; VAR5 * VAR6 = NULL ; VAR7 * VAR8 = FUN2 ( NULL ) ; FUN3 ( , , ) { FUN4 ( VAR8 , VAR6 -> VAR9 ) ; FUN4 ( VAR8 , "" ) ; } char * VAR10 = FUN5 ( VAR8 ) ; VAR10 [ strlen ( VAR10 ) - 1 ] = '' ; char * VAR11 = FUN6 ( "" , VAR10 ) ; return VAR11 ; }

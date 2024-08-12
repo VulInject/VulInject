@@ -1,0 +1,50 @@
+static int FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = VAR2->VAR5;
+    MMAL_STATUS_T VAR6;
+    int VAR7 = 0;
+    VAR8 *VAR9 = VAR4->VAR9;
+    VAR10 *VAR11 = VAR9->VAR12[0]->VAR13;
+    FUN2(VAR4->VAR14);
+    if (!(VAR4->VAR14 = FUN3(sizeof(*VAR4->VAR14))))
+    {
+        VAR7 = FUN4(VAR15);
+        goto VAR16;
+    }
+    FUN5(&VAR4->VAR14->VAR17, 1);
+    if (!VAR11)
+        goto VAR16;
+    if ((VAR6 = FUN6(VAR9->VAR12[0], VAR18, VAR4->VAR19)))
+        goto VAR16;
+    if ((VAR6 = FUN7(VAR9->VAR12[0], VAR20, 0)))
+        goto VAR16;
+    if (VAR2->VAR21 == VAR22)
+    {
+        VAR11->VAR23 = VAR24;
+    }
+    else
+    {
+        VAR11->VAR25 = VAR11->VAR23 = VAR26;
+    }
+    if ((VAR6 = FUN8(VAR9->VAR12[0])))
+        goto VAR16;
+    if ((VAR7 = FUN9(VAR2, VAR11->VAR27->VAR28.VAR29.VAR30 + VAR11->VAR27->VAR28.VAR29.VAR31, VAR11->VAR27->VAR28.VAR29.VAR32 + VAR11->VAR27->VAR28.VAR29.VAR33)) < 0)
+        goto VAR16;
+    if (VAR11->VAR27->VAR28.VAR34.VAR35 && VAR11->VAR27->VAR28.VAR34.VAR36)
+    {
+        VAR2->VAR37.VAR35 = VAR11->VAR27->VAR28.VAR34.VAR35;
+        VAR2->VAR37.VAR36 = VAR11->VAR27->VAR28.VAR34.VAR36;
+    }
+    VAR2->VAR38 = FUN10(VAR11->VAR27->VAR28.VAR39);
+    VAR9->VAR12[0]->VAR40 = FUN11(VAR9->VAR12[0]->VAR41, VAR9->VAR12[0]->VAR42);
+    VAR9->VAR12[0]->VAR43 = FUN11(VAR9->VAR12[0]->VAR44, VAR9->VAR12[0]->VAR45) + VAR4->VAR19;
+    VAR4->VAR14->VAR46 = FUN12(VAR9->VAR12[0]->VAR43, VAR9->VAR12[0]->VAR40);
+    if (!VAR4->VAR14->VAR46)
+    {
+        VAR7 = FUN4(VAR15);
+        goto VAR16;
+    }
+    return 0;
+VAR16:
+    return VAR7 < 0 ? VAR7 : VAR47;
+}

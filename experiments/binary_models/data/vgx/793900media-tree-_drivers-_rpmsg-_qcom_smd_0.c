@@ -1,0 +1,29 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+struct VAR5 *VAR6;
+struct VAR7 *VAR8 = VAR2->VAR8;
+
+FUN2(&VAR8->VAR9, "", VAR2->VAR10);
+
+VAR4 = FUN3(sizeof(*VAR4), VAR11);
+if (!VAR4)
+return -VAR12;
+
+
+VAR4->VAR8 = VAR8;
+
+
+VAR4->VAR6.VAR13 = &VAR14;
+
+
+VAR6 = &VAR4->VAR6;
+strncpy(VAR6->VAR15.VAR10, VAR2->VAR10, VAR16);
+VAR6->VAR17 = VAR18;
+VAR6->VAR19 = VAR18;
+
+VAR6->VAR9.VAR20 = FUN4(VAR8->VAR20, VAR2->VAR10);
+VAR6->VAR9.VAR21 = &VAR8->VAR9;
+
+return FUN5(VAR6);
+}

@@ -1,0 +1,59 @@
+FUN1 (
+VAR1                   *VAR2,
+UINT32                  VAR3,
+VAR4         *VAR5)
+{
+VAR6     **VAR7 = &VAR5->VAR8[0];
+VAR6     *VAR9;
+ACPI_STATUS             VAR10;
+UINT8                   VAR11;
+
+
+FUN2 (VAR12, VAR5);
+
+
+
+
+VAR9 = FUN3 (VAR13);
+if (!VAR9)
+{
+VAR10 = VAR14;
+goto VAR15;
+}
+
+
+
+VAR9->VAR16.VAR2 = VAR2;
+VAR9->VAR16.VAR3 = VAR3;
+VAR9->VAR16.VAR17 = VAR7[0];
+
+
+VAR11 = (VAR1) VAR7[1]->VAR18.VAR19;
+VAR9->VAR16.VAR20 = (VAR1)
+(VAR11 & VAR21);
+
+
+if (VAR11 & VAR22)
+{
+VAR9->VAR16.VAR23 = VAR24;
+
+
+VAR9->VAR16.VAR25 = (VAR1)
+((VAR11 & VAR26) >> 4);
+}
+
+
+
+VAR10 = FUN4 ((VAR27 *) VAR7[0],
+VAR9, VAR13);
+
+
+
+FUN5 (VAR9);
+
+VAR15:
+
+
+FUN5 (VAR7[1]);
+FUN6 (VAR10);
+}

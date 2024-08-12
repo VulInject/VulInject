@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , struct VAR5 * VAR6 , uint8_t VAR7 ) { VAR4 -> VAR8 = VAR2 ; VAR4 -> VAR9 = VAR6 -> VAR10 ; VAR4 -> VAR10 = - 1 ; VAR4 -> VAR11 = - 1 ; VAR4 -> VAR12 [ 0 ] = - 1 ; VAR4 -> VAR12 [ 1 ] = - 1 ; VAR4 -> VAR7 = VAR7 ; }

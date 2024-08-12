@@ -1,0 +1,109 @@
+FUN1(VAR1, VAR2, VAR3);
+FUN1(VAR1, VAR2, VAR4);
+
+
+void FUN2(enum fw_type VAR5)
+{
+u32 VAR6, VAR7;
+u32 VAR8 = 0;
+unsigned long VAR9, VAR10;
+uint32_t VAR11 = VAR5 ? VAR12 : 0;
+unsigned long VAR13 = (unsigned long)&VAR14 + VAR11;
+unsigned long VAR15;
+unsigned long VAR16 = VAR17, VAR18 = VAR19;
+
+if (VAR20->VAR21 && !FUN3(VAR20->VAR21)) {
+VAR13 = FUN4((unsigned long)&VAR14 +
+FUN5(VAR20->VAR21), 4) +
+VAR11;
+}
+
+VAR15 = VAR13 + VAR16;
+
+if (VAR22) {
+switch (VAR5) {
+case VAR23:
+VAR13 = FUN6(VAR1, VAR24, VAR3);
+VAR16 = FUN6(VAR1, VAR24, VAR4);
+VAR15 = FUN6(VAR1, VAR25, VAR3);
+VAR18 = FUN6(VAR1, VAR25, VAR4);
+break;
+case VAR26:
+VAR13 = FUN6(VAR1, VAR27, VAR3);
+VAR16 = FUN6(VAR1, VAR27, VAR4);
+VAR15 = FUN6(VAR1, VAR2, VAR3);
+VAR18 = FUN6(VAR1, VAR2, VAR4);
+break;
+}
+}
+
+VAR10 = VAR13;
+VAR9 = VAR28;
+for (VAR7 = 0x0; VAR7 < VAR16; ) {
+VAR6 = FUN7(VAR10);
+FUN8(VAR6 & 0x0000ffff, VAR29 + FUN9(VAR9));
+VAR9 += 1;
+FUN8((VAR6 >> 16) & 0x0000ffff,
+VAR29 + FUN9(VAR9));
+VAR9 += 1;
+VAR10 += 4;
+VAR7 += 4;
+}
+
+VAR10 = VAR15;
+VAR9 = VAR30;
+for (VAR7 = 0x0; VAR7 < VAR18; ) {
+VAR6 = FUN7(VAR10);
+FUN8(VAR6 & 0x0000ffff, VAR29 + FUN9(VAR9));
+VAR9 += 1;
+FUN8((VAR6 >> 16) & 0x0000ffff,
+VAR29 + FUN9(VAR9));
+VAR9 += 1;
+VAR10 += 4;
+VAR7 += 4;
+}
+
+FUN10("");
+VAR10 = VAR13;
+VAR9 = VAR28;
+for (VAR7 = 0x0; VAR7 < VAR16; ) {
+VAR6 = (FUN11(VAR29 + FUN9(VAR9)) & 0x0000ffff);
+VAR9 += 1;
+VAR6 += ((FUN11(VAR29 +
+FUN9(VAR9)) & 0x0000ffff) << 16);
+
+if (VAR6 != FUN7(VAR10)) {
+FUN10("", VAR10, VAR9);
+VAR8++;
+}
+VAR10 += 4;
+VAR9 += 1;
+VAR7 += 4;
+}
+if (VAR8)
+FUN12("", VAR8);
+else
+FUN10("");
+
+FUN10("");
+VAR10 = VAR15;
+VAR9 = VAR30;
+for (VAR7 = 0x0; VAR7 < VAR18;) {
+VAR6 = (FUN11(VAR29 + FUN9(VAR9)) & 0x0000ffff);
+VAR9 += 1;
+VAR6 += ((FUN11(VAR29 +
+FUN9(VAR9)) & 0x0000ffff) << 16);
+if (VAR6 != FUN7(VAR10)) {
+FUN10("", VAR10, VAR9);
+VAR8++;
+}
+VAR10 += 4;
+VAR9 += 1;
+VAR7 += 4;
+}
+
+if (VAR8)
+FUN12("", VAR8);
+else
+FUN10("");
+}

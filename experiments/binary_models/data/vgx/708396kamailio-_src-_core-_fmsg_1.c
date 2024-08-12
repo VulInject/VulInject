@@ -1,0 +1,1 @@
+static inline VAR1 * FUN1 ( int VAR2 ) { VAR3 . VAR4 = FUN2 ( ) ; VAR3 . VAR5 = FUN3 ( ) ; if ( VAR2 ) { FUN4 ( ) ; } return & VAR3 ; }

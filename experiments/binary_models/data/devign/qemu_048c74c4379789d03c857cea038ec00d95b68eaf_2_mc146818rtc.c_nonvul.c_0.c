@@ -1,0 +1,23 @@
+VAR1 *FUN1(target_phys_addr_t VAR2, int VAR3, qemu_irq VAR4, int VAR5)
+{
+    VAR1 *VAR6;
+    int VAR7;
+    VAR6 = FUN2(sizeof(VAR1));
+    VAR6->VAR4 = VAR4;
+    VAR6->VAR8[VAR9] = 0x26;
+    VAR6->VAR8[VAR10] = 0x02;
+    VAR6->VAR8[VAR11] = 0x00;
+    VAR6->VAR8[VAR12] = 0x80;
+    VAR6->VAR5 = VAR5;
+    FUN3(VAR6);
+    VAR6->VAR13 = FUN4(VAR14, VAR15, VAR6);
+    VAR6->VAR16 = FUN4(VAR14, VAR17, VAR6);
+    VAR6->VAR18 = FUN4(VAR14, VAR19, VAR6);
+    VAR6->VAR20 = FUN5(VAR14) + (FUN6() * 99) / 100;
+    FUN7(VAR6->VAR18, VAR6->VAR20);
+    VAR7 = FUN8(VAR21, VAR22, VAR6);
+    FUN9(VAR2, 2 << VAR3, VAR7);
+    FUN10("", VAR2, 2, VAR23, VAR24, VAR6);
+    FUN11(VAR25, VAR6);
+    return VAR6;
+}

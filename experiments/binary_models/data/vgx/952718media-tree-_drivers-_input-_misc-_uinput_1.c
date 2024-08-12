@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR1 , struct VAR2 * VAR2 ) { struct VAR3 * VAR4 = VAR2 -> VAR5 ; FUN2 ( VAR4 ) ; return 0 ; } VAR6 { __u32 VAR7 ; __s32 VAR8 ; struct ff_effect_compat VAR9 ; struct ff_effect_compat VAR10 ; }

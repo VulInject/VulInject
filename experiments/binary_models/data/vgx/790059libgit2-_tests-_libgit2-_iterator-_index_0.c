@@ -1,0 +1,39 @@
+void FUN1(void)
+{
+VAR1 *VAR2;
+git_iterator_options VAR3 = VAR4;
+VAR5 *VAR6;
+git_vector VAR7 = VAR8;
+int VAR9, VAR10;
+
+VAR11 = FUN2("");
+
+FUN3(FUN4(&VAR6, VAR11));
+
+FUN3(FUN5(&VAR7, 100, &VAR12));
+FUN3(FUN6(&VAR7, ""));
+FUN3(FUN6(&VAR7, ""));
+FUN3(FUN6(&VAR7, ""));
+FUN3(FUN6(&VAR7, ""));
+FUN3(FUN6(&VAR7, ""));
+FUN3(FUN6(&VAR7, ""));
+
+
+VAR9 = ((FUN7(VAR6) & VAR13) != 0);
+
+VAR3.VAR14.VAR15 = (char **)VAR7.VAR16;
+VAR3.VAR14.VAR17 = VAR7.VAR18;
+
+VAR3.VAR19 = "";
+VAR3.VAR20 = "";
+
+
+VAR10 = VAR9 ? 5 : 3;
+
+FUN3(FUN8(&VAR2, VAR11, VAR6, &VAR3));
+FUN9(VAR2, VAR10, NULL, VAR10, NULL);
+FUN10(VAR2);
+
+FUN11(VAR6);
+FUN12(&VAR7);
+}

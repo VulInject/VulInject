@@ -1,0 +1,40 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR2);
+struct VAR3 *VAR7 = NULL;
+
+switch (FUN3(VAR4)) {
+case VAR8:
+VAR2->VAR9.VAR10++;
+break;
+case VAR11:
+VAR2->VAR9.VAR12++;
+break;
+case VAR13:
+VAR2->VAR9.VAR14++;
+break;
+}
+
+if (FUN4(VAR4) < VAR15) {
+
+VAR7 = FUN5(VAR4, VAR15);
+if (FUN6(!VAR7))
+return -VAR16;
+FUN7(VAR7)->VAR17 = FUN3(VAR4);
+FUN8(VAR4);
+VAR4 = VAR7;
+if (!FUN9((unsigned long)VAR4->VAR18, VAR19)) {
+VAR20 *VAR21 = VAR4->VAR18;
+int VAR22 = VAR4->VAR23;
+
+FUN10(VAR4, VAR19);
+FUN11(VAR4, FUN12(VAR4->VAR18,
+VAR19) - VAR4->VAR18);
+memmove(VAR4->VAR18, VAR21, VAR22);
+FUN13(VAR4, VAR22);
+}
+}
+
+return VAR6->VAR24->FUN14(VAR6->VAR25, VAR4,
+VAR26);
+}

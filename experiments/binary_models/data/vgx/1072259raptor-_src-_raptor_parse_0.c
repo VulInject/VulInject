@@ -1,0 +1,26 @@
+int
+FUN1(VAR1 *VAR2, VAR3 *VAR4) 
+{
+if((VAR2->VAR5->VAR6.VAR7 & VAR8) && !VAR4) {
+FUN2(VAR2, "",
+VAR2->VAR5->VAR6.VAR9[0]);
+return -1;
+}
+
+if(VAR4)
+VAR4 = FUN3(VAR4);
+
+if(VAR2->VAR10)
+FUN4(VAR2->VAR10);
+VAR2->VAR10 = VAR4;
+
+VAR2->VAR11.VAR4    = VAR4;
+VAR2->VAR11.VAR12   = -1;
+VAR2->VAR11.VAR13 = -1;
+VAR2->VAR11.VAR14   = -1;
+
+if(VAR2->VAR5->VAR15)
+return VAR2->VAR5->FUN5(VAR2);
+else
+return 0;
+}

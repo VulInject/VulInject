@@ -1,0 +1,120 @@
+int
+FUN1(VAR1 *VAR2, amd_iommu_cmd_t VAR3,
+VAR4 *VAR5, amd_iommu_cmd_flags_t VAR6, int VAR7)
+{
+int VAR8;
+int VAR9;
+uint32_t VAR10[4] = {0};
+const char *VAR11 = FUN2(VAR2->VAR12);
+int VAR13 = FUN3(VAR2->VAR12);
+uint64_t VAR14;
+uint64_t VAR15;
+const char *VAR16 = "";
+
+FUN4(VAR7 == 0 || VAR7 == 1);
+FUN4(VAR7 == 0 || FUN5(&VAR2->VAR17));
+
+if (!VAR7)
+FUN6(&VAR2->VAR17);
+
+
+switch (VAR3) {
+case VAR18:
+if (VAR6 & VAR19) {
+FUN7(VAR20, ""
+"",
+VAR16, VAR11, VAR13, VAR2->VAR21);
+VAR8 = VAR22;
+goto VAR23;
+}
+VAR8 = FUN8(VAR2, VAR5, VAR6, VAR10);
+break;
+case VAR24:
+VAR8 = FUN9(VAR2, VAR5,
+VAR6 & ~VAR19, VAR10);
+break;
+case VAR25:
+VAR8 = FUN10(VAR2, VAR5,
+VAR6 & ~VAR19, VAR10);
+break;
+case VAR26:
+VAR8 = FUN11(VAR2, VAR5,
+VAR6 & ~VAR19, VAR10);
+break;
+case VAR27:
+VAR8 = FUN12(VAR2, VAR5,
+VAR6 & ~VAR19, VAR10);
+break;
+default:
+FUN7(VAR20, "",
+VAR16, VAR11, VAR13, VAR2->VAR21, VAR3);
+VAR8 = VAR22;
+goto VAR23;
+}
+
+if (VAR8 != VAR28) {
+VAR8 = VAR22;
+goto VAR23;
+}
+
+FUN13(FUN14(VAR2->VAR29),
+VAR30, 1);
+
+FUN4(VAR2->VAR31 != NULL);
+
+for (VAR9 = 0; VAR9 < 4; VAR9++) {
+VAR2->VAR31[VAR9] = VAR10[VAR9];
+}
+
+VAR32:
+VAR14 = FUN15(
+FUN14(VAR2->VAR33),
+VAR34);
+
+VAR14 = FUN16(VAR14);
+
+FUN4(VAR14 < VAR2->VAR35);
+
+
+if ((VAR36)VAR2->VAR31 <
+(VAR14 + VAR2->VAR37)) {
+if ((VAR36)VAR2->VAR31 + 16 >=
+(VAR14 + VAR2->VAR37))
+FUN7(VAR20, ""
+"");
+goto VAR32;
+}
+
+FUN17(VAR2->VAR38);
+
+
+VAR2->VAR31 += 4;
+if ((VAR36)VAR2->VAR31 >= (VAR2->VAR37
++ VAR2->VAR35)) {
+
+
+VAR2->VAR31 = (VAR39 *)VAR2->VAR37;
+VAR15 = 0;
+} else {
+VAR15 = (VAR36)VAR2->VAR31
+
+- VAR2->VAR37;
+}
+
+FUN4(VAR15 < VAR2->VAR35);
+
+FUN13(FUN14(VAR2->VAR40),
+VAR41, FUN18(VAR15));
+
+if (VAR3 == VAR18) {
+FUN19(VAR2);
+} else if (VAR6 & VAR19) {
+VAR8 = FUN1(VAR2, VAR18,
+NULL, 0, 1);
+}
+
+VAR23:
+if (!VAR7)
+FUN20(&VAR2->VAR17);
+return (VAR8);
+}

@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , usec_t VAR3 ) { if ( VAR3 <= 0 ) { VAR3 = FUN2 ( VAR4 ) ; } VAR2 -> VAR5 . VAR6 = VAR3 / VAR7 ; VAR2 -> VAR5 . VAR8 = VAR3 % VAR7 ; }

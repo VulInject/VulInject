@@ -1,0 +1,27 @@
+static VAR1 *
+FUN1(VAR2 *VAR3, VAR1 *VAR4, int VAR5)
+{
+VAR1 **VAR6, *VAR7;
+
+
+if (VAR5 > VAR3->VAR8) {
+struct VAR9 **VAR10;
+
+if ((VAR10 = FUN2(VAR3->VAR11,
+VAR5 + 40, sizeof(VAR1 *))) == NULL) {
+free(VAR3->VAR11);
+VAR3->VAR11 = NULL;
+VAR3->VAR8 = 0;
+return (VAR4);
+}
+VAR3->VAR8 = VAR5 + 40;
+VAR3->VAR11 = VAR10;
+}
+for (VAR6 = VAR3->VAR11, VAR7 = VAR4; VAR7; VAR7 = VAR7->VAR12)
+*VAR6++ = VAR7;
+FUN3(VAR3->VAR11, VAR5, sizeof(VAR1 *), VAR3->VAR13);
+for (VAR4 = *(VAR6 = VAR3->VAR11); --VAR5; ++VAR6)
+VAR6[0]->VAR12 = VAR6[1];
+VAR6[0]->VAR12 = NULL;
+return (VAR4);
+}

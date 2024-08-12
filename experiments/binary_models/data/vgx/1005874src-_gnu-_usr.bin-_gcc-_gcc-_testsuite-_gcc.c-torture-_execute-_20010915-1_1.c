@@ -1,0 +1,1 @@
+extern char * FUN1 ( char * , char * * ) extern char * FUN2 ( char * ) char * VAR1 ; char * VAR2 ; int VAR3 ; int VAR4 = 0 ; int main ( int argc , char * * argv ) { char * VAR5 [ ] { "" "" "" "" "" } ; ; if ( FUN3 ( 5 , VAR5 ) != 0 || VAR3 != 2 || VAR4 != 5 ) { FUN4 ( ) ; } FUN5 ( 0 ) ; }

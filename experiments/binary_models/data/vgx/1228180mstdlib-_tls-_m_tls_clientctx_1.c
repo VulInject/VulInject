@@ -1,0 +1,1 @@
+M_bool FUN1 ( VAR1 * VAR2 , const unsigned char * VAR3 , size_t VAR4 ) { M_bool VAR5 ; if ( VAR2 == NULL ) { return VAR6 ; } VAR5 = FUN2 ( VAR2 -> VAR2 , NULL , VAR3 , VAR4 ) ; FUN3 ( VAR2 -> VAR7 ) ; return VAR5 ; }

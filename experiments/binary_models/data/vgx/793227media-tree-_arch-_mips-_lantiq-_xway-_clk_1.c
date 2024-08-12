@@ -1,0 +1,1 @@
+unsigned long FUN1 ( void ) { unsigned int VAR1 = ( FUN2 ( VAR2 ) >> 16 ) & 0x7 ; cfs_time_t VAR3 ; switch ( VAR1 ) { case 1 : VAR3 = VAR4 ; break ; case 4 : VAR3 = VAR5 ; break ; default : VAR3 = VAR4 ; break ; } return VAR3 ; }

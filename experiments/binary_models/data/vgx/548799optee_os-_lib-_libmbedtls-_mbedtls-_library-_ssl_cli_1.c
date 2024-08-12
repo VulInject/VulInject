@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , unsigned char * VAR3 , const unsigned char * VAR4 , VAR5 * VAR6 ) { unsigned char * VAR7 = VAR3 ; * VAR6 = 0 ; FUN2 ( 3 , ( "" ) ) ; FUN3 ( VAR7 , VAR4 , 4 ) ; FUN4 ( VAR8 , VAR7 , 0 ) ; VAR7 += 2 ; * VAR7 ++ = 0x00 ; * VAR7 ++ = 0x00 ; * VAR6 = 4 ; return ( 0 ) ; }

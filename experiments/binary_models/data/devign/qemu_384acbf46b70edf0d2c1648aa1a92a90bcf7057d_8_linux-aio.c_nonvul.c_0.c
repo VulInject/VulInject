@@ -1,0 +1,1 @@
+static int FUN1(void *VAR1) { return 0; }

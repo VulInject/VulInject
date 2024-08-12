@@ -1,0 +1,85 @@
+static int
+FUN1(VAR1 *VAR2)
+{
+VAR3		*VAR4 = FUN2(VAR2);
+VAR5			*VAR6;
+VAR7		*VAR8;
+VAR9			*VAR10;
+char			*VAR11;
+struct timer_list	VAR12;
+struct VAR13	*VAR14;
+caddr_t			VAR15;
+int			VAR16 = 0;
+
+
+FUN3(&VAR4->VAR17);
+
+VAR6	= VAR4->VAR18;
+VAR8	= VAR4->VAR19;
+VAR15	= VAR4->VAR20;
+
+memset(VAR6, 0, sizeof(VAR5));
+memset(VAR8, 0, sizeof(VAR7));
+memset(VAR15, 0, sizeof(VAR4->VAR21));
+
+VAR10		= &VAR8->VAR22;
+VAR11	= (char *)VAR10;
+VAR6->VAR23    = (VAR24)(unsigned long)VAR8;
+VAR6->VAR25	= (VAR26)VAR2;
+VAR6->VAR27	= -VAR28;
+VAR6->VAR29	= VAR30;
+
+
+VAR10->VAR31 = (VAR32)VAR4->VAR33;
+
+VAR11[0] = VAR34;
+VAR11[2] = VAR35;
+
+
+VAR14	= &VAR12;
+FUN4(VAR14);
+
+VAR14->VAR36	= VAR37;
+VAR14->VAR38		= (unsigned long)VAR6;
+VAR14->VAR39		= VAR40 + 60 * VAR41;
+
+FUN5(VAR14);
+
+
+VAR16 = FUN6(VAR2, VAR6);
+
+if (VAR16 == 0) {	
+FUN7(VAR4->VAR42, (VAR6->VAR27 != -VAR28));
+
+
+if (VAR6->VAR27 == -VAR43) {
+FUN8(VAR44, (VAR45
+""));
+
+VAR16 = -VAR43;
+}
+else {
+VAR16 = VAR10->VAR27;
+}
+
+if (VAR16 == 0) {
+memcpy(VAR4->VAR21, VAR15,
+sizeof(VAR4->VAR21));
+}
+else {
+FUN8(VAR44, (VAR45
+"", VAR16));
+}
+}
+else {
+FUN8(VAR44, (VAR45
+"", VAR16));
+}
+
+
+FUN9(VAR14);
+
+FUN10(&VAR4->VAR17);
+
+return VAR16;
+}

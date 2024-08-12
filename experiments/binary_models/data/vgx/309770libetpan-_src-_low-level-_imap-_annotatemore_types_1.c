@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , char * VAR3 ) { char * VAR4 ; int VAR5 ; VAR4 = strdup ( VAR3 ) ; if ( VAR4 == NULL ) { return VAR6 ; } VAR5 = FUN2 ( VAR2 -> VAR7 , VAR4 ) ; if ( VAR5 < 0 ) { return VAR6 ; } return VAR8 ; }

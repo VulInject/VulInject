@@ -1,0 +1,32 @@
+static void FUN1(struct VAR1 *VAR2,
+snd_pcm_format_t VAR3, snd_pcm_format_t VAR4)
+{
+int VAR5, VAR6, VAR7, VAR8;
+
+VAR7 = FUN2(VAR3) / 8;
+VAR8 = FUN2(VAR4) / 8;
+VAR5 = FUN3(VAR3) > 0;
+VAR6 = FUN3(VAR4) > 0;
+
+VAR2->VAR8 = VAR8;
+VAR2->VAR9 = VAR5 != VAR6;
+VAR2->VAR10 = VAR7 < VAR8 ? VAR7 : VAR8;
+if (VAR5) {
+VAR2->VAR11 = 4 - VAR2->VAR10;
+VAR2->VAR12 = VAR7 - VAR2->VAR10;
+} else
+VAR2->VAR12 = FUN4(VAR3) / 8 -
+VAR7;
+if (VAR6)
+VAR2->VAR13 = 4 - VAR2->VAR8;
+else
+VAR2->VAR13 = FUN4(VAR4) / 8 -
+VAR8;
+if (FUN5(VAR3) !=
+FUN5(VAR4)) {
+if (VAR6)
+VAR2->VAR14 = (__force VAR15)FUN6(0x80000000);
+else
+VAR2->VAR14 = (__force VAR15)FUN7(0x80000000);
+}
+}

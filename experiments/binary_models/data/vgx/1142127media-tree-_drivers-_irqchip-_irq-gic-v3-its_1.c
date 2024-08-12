@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( struct VAR2 * VAR3 , u32 VAR4 ) { struct VAR1 * VAR5 = NULL , * VAR6 ; cfs_time_t VAR7 ; FUN2 ( & VAR3 -> VAR8 , VAR7 ) ; FUN3 ( , , ) { if ( VAR6 -> VAR9 == VAR4 ) { VAR5 = VAR6 ; break ; } } FUN4 ( & VAR3 -> VAR8 , VAR7 ) ; return VAR5 ; }

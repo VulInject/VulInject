@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , u_int16_t VAR3 ) { struct VAR4 * VAR5 , * VAR6 ; if ( VAR3 == 0 ) { return ; } for ( VAR5 = FUN2 ( VAR2 ) ; VAR5 != NULL ; VAR5 = VAR6 ) { VAR6 = FUN3 ( VAR5 , VAR7 ) ; if ( VAR3 == VAR5 -> VAR3 ) { if ( -- VAR5 -> VAR8 == 0 ) { FUN4 ( VAR2 , VAR5 , VAR7 ) ; free ( VAR5 ) ; } break ; } } }

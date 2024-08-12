@@ -1,0 +1,1 @@
+static RD_NTSTATUS FUN1 ( RD_NTHANDLE VAR1 ) { int VAR2 = FUN2 ( VAR1 ) ; if ( VAR2 >= 0 ) { VAR3 [ VAR2 ] . VAR1 = 0 ; } close ( VAR1 , NULL ) ; return VAR4 ; }

@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR2 ) ; enum zonefs_ztype VAR5 ; for ( VAR5 = 0 ; VAR5 < VAR6 ; VAR5 ++ ) { FUN3 ( VAR4 -> VAR7 [ VAR5 ] . VAR8 ) ; VAR4 -> VAR7 [ VAR5 ] . VAR8 = NULL ; } }

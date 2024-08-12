@@ -1,0 +1,1 @@
+static M_uint64 FUN1 ( const VAR1 * VAR2 , size_t VAR3 ) { M_uint64 VAR4 ; size_t VAR5 ; if ( VAR3 == 1 ) { return * VAR2 ; } VAR4 = 0 ; for ( VAR5 = 0 ; VAR5 < VAR3 ; VAR5 ++ ) { size_t VAR6 = VAR2 [ VAR5 ] ; VAR6 <<= ( 8 * VAR5 ) ; VAR4 |= VAR6 ; } return VAR4 ; }

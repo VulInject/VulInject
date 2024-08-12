@@ -1,0 +1,26 @@
+static void FUN1(VAR1 *VAR2, VAR3 **VAR4)
+{
+    struct VAR5 *VAR6;
+    int VAR7;
+    VAR8 *VAR9;
+    VAR6 = FUN2(VAR2);
+    FUN3(&VAR6->VAR10, FUN4(VAR2), FUN5(VAR2), 6);
+    FUN6(VAR2->VAR11, VAR12);
+    VAR2->VAR11[VAR13] = 0x08;
+    VAR2->VAR11[VAR14] = 0x00;
+    FUN7(VAR2->VAR11, 1);
+    VAR2->VAR11[0x90] = 1 << 6;
+    VAR6->VAR10.VAR15 = FUN8(VAR2);
+    FUN9(VAR2, VAR16, VAR17, &VAR6->VAR10.VAR18);
+    FUN9(VAR2, VAR19, VAR20, &VAR6->VAR10.VAR21);
+    VAR7 = FUN10(VAR2, VAR22, VAR23, VAR24, VAR4);
+    if (VAR7 < 0)
+    {
+        return;
+    }
+    VAR9 = VAR2->VAR11 + VAR7;
+    FUN11(VAR9 + VAR25, 0x10);
+    FUN12(VAR9 + VAR26, (VAR16 + 0x4) | (VAR27 << 4));
+    VAR6->VAR10.VAR28 = VAR29;
+    FUN13(VAR2, VAR30, 1, true, false);
+}

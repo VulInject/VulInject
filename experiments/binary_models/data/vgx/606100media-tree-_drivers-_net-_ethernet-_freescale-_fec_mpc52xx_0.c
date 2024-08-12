@@ -1,0 +1,157 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+int VAR3;
+struct VAR4 *VAR5;
+struct VAR6 *VAR7 = NULL;
+struct resource VAR8;
+const VAR9 *VAR10;
+int VAR11;
+struct VAR12 *VAR13 = VAR2->VAR14.VAR15;
+const char *VAR16;
+
+phys_addr_t VAR17;
+phys_addr_t VAR18;
+
+
+VAR5 = FUN2(sizeof(struct VAR6));
+if (!VAR5)
+return -VAR19;
+
+VAR7 = FUN3(VAR5);
+VAR7->VAR5 = VAR5;
+
+
+VAR3 = FUN4(VAR13, 0, &VAR8);
+if (VAR3) {
+FUN5("");
+goto VAR20;
+}
+if (FUN6(&VAR8) < sizeof(struct VAR21)) {
+FUN5("",
+(unsigned long)FUN6(&VAR8),
+sizeof(struct VAR21));
+VAR3 = -VAR22;
+goto VAR20;
+}
+
+if (!FUN7(VAR8.VAR23, sizeof(struct VAR21),
+VAR24)) {
+VAR3 = -VAR25;
+goto VAR20;
+}
+
+
+VAR5->VAR26	= &VAR27;
+VAR5->VAR28	= &VAR29;
+VAR5->VAR30	= VAR31;
+VAR5->VAR32		= VAR8.VAR23;
+FUN8(VAR5, &VAR2->VAR14);
+
+FUN9(&VAR7->VAR33);
+
+
+VAR7->VAR34 = FUN10(VAR8.VAR23, sizeof(struct VAR21));
+
+if (!VAR7->VAR34) {
+VAR3 = -VAR19;
+goto VAR35;
+}
+
+
+VAR17 = VAR5->VAR32 + FUN11(struct VAR21, VAR36);
+VAR18 = VAR5->VAR32 + FUN11(struct VAR21, VAR37);
+
+VAR7->VAR38 = FUN12(VAR39, VAR17, VAR40);
+VAR7->VAR41 = FUN13(VAR42, VAR18);
+
+if (!VAR7->VAR38 || !VAR7->VAR41) {
+FUN5("");
+VAR3 = -VAR19;
+goto VAR43;
+}
+
+
+
+VAR5->VAR44 = FUN14(VAR13, 0);
+
+
+VAR7->VAR45 = FUN15(VAR7->VAR38);
+
+
+VAR7->VAR46 = FUN15(VAR7->VAR41);
+
+
+VAR16 = FUN16(VAR13);
+if (VAR16) {
+memcpy(VAR5->VAR47, VAR16, VAR48);
+} else {
+struct mpc52xx_fec VAR49 *VAR34 = VAR7->VAR34;
+
+
+*(VAR9 *)(&VAR5->VAR47[0]) = FUN17(&VAR34->VAR50);
+*(VAR51 *)(&VAR5->VAR47[4]) = FUN17(&VAR34->VAR52) >> 16;
+}
+
+
+if (!FUN18(VAR5->VAR47)) {
+FUN19(VAR5);
+FUN20(&VAR5->VAR14, "",
+VAR5->VAR47);
+}
+
+VAR7->VAR53 = FUN21(VAR54, VAR55);
+
+
+
+
+VAR7->VAR56 = 100;
+VAR7->VAR57 = VAR58;
+VAR7->VAR59 = ((FUN22(VAR13) >> 20) / 5) << 1;
+
+
+VAR10 = FUN23(VAR13, "", &VAR11);
+if (VAR10 && (VAR11 >= sizeof(VAR9) * 2)) {
+VAR7->VAR56 = VAR10[0];
+VAR7->VAR57 = VAR10[1] ? VAR60 : VAR58;
+}
+
+
+VAR7->VAR61 = FUN24(VAR13, "", 0);
+
+
+if (FUN25(VAR13, "", NULL)) {
+VAR7->VAR62 = 1;
+FUN26(&VAR5->VAR14, "");
+}
+
+
+FUN27(VAR5);
+FUN28(VAR5);
+
+VAR3 = FUN29(VAR5);
+if (VAR3 < 0)
+goto VAR63;
+
+
+FUN30(VAR2, VAR5);
+FUN31(VAR5, "",
+VAR2->VAR14.VAR15->VAR64, VAR5->VAR47);
+
+return 0;
+
+VAR63:
+FUN32(VAR7->VAR61);
+FUN33(VAR5->VAR44);
+VAR43:
+if (VAR7->VAR38)
+FUN34(VAR7->VAR38);
+if (VAR7->VAR41)
+FUN35(VAR7->VAR41);
+FUN36(VAR7->VAR34);
+VAR35:
+FUN37(VAR8.VAR23, sizeof(struct VAR21));
+VAR20:
+FUN38(VAR5);
+
+return VAR3;
+}

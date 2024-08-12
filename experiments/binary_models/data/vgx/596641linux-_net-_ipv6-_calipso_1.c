@@ -1,0 +1,1 @@
+static int FUN1 ( const struct VAR1 * VAR2 , const unsigned char * VAR3 , u32 VAR4 , struct VAR5 * VAR6 ) { int VAR7 ; int VAR8 = - 1 ; u32 VAR9 = VAR4 * 8 ; for ( ; ; ) { VAR8 = FUN2 ( VAR3 , VAR9 , VAR8 + 1 , 1 ) ; if ( VAR8 < 0 ) { return 0 ; } VAR7 = FUN3 ( & VAR6 -> VAR10 . VAR11 . VAR12 , VAR8 , VAR13 ) ; if ( VAR7 != 0 ) { return VAR7 ; } } return - VAR14 ; }

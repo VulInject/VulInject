@@ -1,0 +1,1 @@
+static int FUN1 ( int VAR1 , char * VAR2 ) { if ( VAR1 >= FUN2 ( VAR3 . VAR4 ) ) { return - VAR5 ; } if ( ! VAR2 || VAR2 [ 0 ] == 0x00 ) { return - VAR5 ; } VAR3 . VAR4 [ VAR1 ] = FUN3 ( VAR2 , VAR6 ) ; if ( ! VAR3 . VAR4 [ VAR1 ] ) { return - VAR7 ; } return 0 ; }

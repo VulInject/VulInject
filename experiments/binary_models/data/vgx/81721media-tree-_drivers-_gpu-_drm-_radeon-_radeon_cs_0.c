@@ -1,0 +1,56 @@
+int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+unsigned VAR5)
+{
+struct VAR6 *VAR7 = VAR2->VAR8;
+struct VAR9 *VAR10 = VAR2->VAR10;
+uint32_t VAR11;
+int VAR12 = 0, VAR13;
+
+if (VAR5 >= VAR7->VAR14) {
+FUN2("",
+VAR5, VAR7->VAR14);
+return -VAR15;
+}
+VAR11 = FUN3(VAR2, VAR5);
+VAR4->VAR5 = VAR5;
+VAR4->VAR16 = FUN4(VAR11);
+VAR4->VAR17 = FUN5(VAR11);
+VAR4->VAR18 = 0;
+switch (VAR4->VAR16) {
+case VAR19:
+if (VAR10->VAR20 < VAR21) {
+VAR4->VAR22 = FUN6(VAR11);
+VAR4->VAR18 =
+FUN7(VAR11);
+} else
+VAR4->VAR22 = FUN8(VAR11);
+break;
+case VAR23:
+VAR4->VAR24 = FUN9(VAR11);
+break;
+case VAR25:
+VAR4->VAR17 = -1;
+break;
+default:
+FUN2("", VAR4->VAR16, VAR5);
+VAR12 = -VAR15;
+goto VAR26;
+}
+if ((VAR4->VAR17 + 1 + VAR4->VAR5) >= VAR7->VAR14) {
+FUN2("",
+VAR4->VAR5, VAR4->VAR16, VAR4->VAR17, VAR7->VAR14);
+VAR12 = -VAR15;
+goto VAR26;
+}
+return 0;
+
+VAR26:
+for (VAR13 = 0; VAR13 < VAR7->VAR14; VAR13++) {
+if (VAR13 == VAR5)
+FUN10("", FUN3(VAR2, VAR13));
+else
+FUN10("", FUN3(VAR2, VAR13));
+}
+return VAR12;
+}

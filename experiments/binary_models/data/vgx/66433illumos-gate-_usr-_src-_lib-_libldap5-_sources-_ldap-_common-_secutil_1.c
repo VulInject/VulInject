@@ -1,0 +1,1 @@
+char * FUN1 ( char * VAR1 , int VAR2 ) { char * VAR3 ; int VAR4 = 0 ; for ( ; ; ) { if ( VAR2 < 1 ) { break ; } VAR3 [ VAR4 ] = VAR5 [ ( * VAR1 & 0xf0 ) >> 4 ] ; VAR3 [ VAR4 + 1 ] = VAR5 [ * VAR1 & 0x0f ] ; VAR4 += 2 ; VAR2 -- ; VAR1 ++ ; } return ( VAR3 ) ; }

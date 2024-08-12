@@ -1,0 +1,1 @@
+static char * FUN1 ( const char * VAR1 ) { register char * VAR2 ; register int VAR3 ; if ( * VAR1 == '' ) { VAR1 ++ ; } for ( VAR2 = ( char * ) VAR1 ; VAR3 = * VAR2 ; VAR2 ++ ) { if ( VAR3 == '' ) { VAR2 = FUN2 ( ( VAR4 * ) 0 , ( char * ) VAR2 , 0 ) ; return ( * VAR2 == '' ?VAR2 : 0 ) ; } } return ( 0 ) ; }

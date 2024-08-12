@@ -1,0 +1,77 @@
+static int
+FUN1(const VAR1 *VAR2)
+{
+char *VAR3;
+void *VAR4 = NULL, *VAR5 = NULL;
+
+memset(&VAR6, 0, sizeof(VAR6));
+
+if (VAR2->VAR7 && (VAR2->VAR7 != VAR8))
+VAR6.VAR9.VAR10  = VAR2->VAR7;
+else
+VAR6.VAR9.VAR10  = VAR2->VAR9.VAR10;
+
+VAR6.VAR9.VAR9 = VAR2->VAR9.VAR9;
+VAR6.VAR9.VAR11 = VAR2->VAR9.VAR11;
+VAR6.VAR12 = VAR2->VAR13->VAR14;
+VAR6.VAR15 = VAR2->VAR13->VAR16;
+VAR6.VAR17 = -1;	
+VAR6.VAR18 = 0;	
+VAR6.VAR19 = NULL;	
+
+VAR3 = getenv(VAR20);
+if (VAR3) {
+VAR6.VAR21 = FUN2(VAR3);
+} else {
+VAR6.VAR21 = 0;
+}
+VAR3 = getenv(VAR22);
+if (VAR3) { 		
+VAR6.VAR23 = FUN2(VAR3);
+VAR3 = getenv(VAR24);
+VAR6.VAR25 = xstrdup(VAR3);
+
+} else {
+VAR6.VAR23 = 0;
+VAR6.VAR25 = NULL;
+}
+
+VAR6.VAR26 = xstrdup(VAR2->VAR13->VAR27);
+VAR6.VAR28 = FUN3(VAR2);
+if (VAR6.VAR28 == NULL) {
+return VAR29;
+}
+VAR3 = getenv(VAR30);
+if (VAR3) {		
+VAR6.VAR31 = xstrdup(VAR3);
+} else {
+FUN4(VAR6.VAR31, "", VAR6.VAR9.VAR10,
+VAR6.VAR9.VAR9);
+}
+VAR6.VAR32 = FUN5((const char **)VAR33);
+
+
+VAR4 = dlopen(NULL, VAR34);
+if (VAR4 == NULL) {
+FUN6("");
+return VAR29;
+}
+VAR5 = FUN7(VAR4, "");
+if (VAR5 == NULL) {
+
+FUN8 ("");
+VAR6.VAR35 = NULL;
+} else {
+VAR6.VAR35 = *(VAR36 **)VAR5;
+}
+VAR5 = FUN7(VAR4, "");
+if (VAR5 == NULL) {
+FUN8("");
+VAR6.VAR37 = NULL;
+} else {
+VAR6.VAR37 = (VAR38 *)VAR5;
+}
+FUN9(VAR4);
+
+return VAR39;
+}

@@ -1,0 +1,73 @@
+static VAR1
+FUN1(astgs_request_t VAR2,
+struct VAR3 *VAR4,
+gss_const_buffer_t VAR5,
+VAR6 *VAR7,
+VAR8 *VAR9)
+{
+krb5_error_code VAR10;
+krb5_principal VAR11;
+krb5_const_realm VAR12 = VAR2->VAR13->VAR11->VAR12;
+int VAR14 = 0, VAR15 = 0, VAR16;
+
+
+if (VAR2->VAR17->VAR18) {
+OM_uint32 VAR19;
+
+FUN2(&VAR19, VAR4->VAR20,
+VAR2->VAR17->VAR18,
+&VAR15);
+}
+
+FUN3(VAR2->VAR21, VAR2->VAR17, 10,
+"",
+(int)VAR5->VAR22, (char *)VAR5->VAR23,
+VAR15 ? "" : "");
+
+if (!VAR15)
+VAR14 |= VAR24 | VAR25;
+
+VAR10 = FUN4(VAR2->VAR21, VAR4->VAR26,
+VAR14, &VAR11);
+if (VAR10) {
+const char *VAR27 = FUN5(VAR2->VAR21, VAR10);
+
+FUN3(VAR2->VAR21, VAR2->VAR17, 2,
+"",
+FUN6(VAR4->VAR20),
+(int)VAR5->VAR22, (char *)VAR5->VAR23, VAR27);
+FUN7(VAR2->VAR21, VAR27);
+
+return VAR10;
+}
+
+
+VAR16 = (VAR4->VAR14 & VAR28) &&
+FUN8(VAR2->VAR21, VAR11);
+
+
+if (VAR16 || (VAR14 & VAR24)) {
+VAR10 = FUN9(VAR2->VAR21, VAR11, VAR12);
+if (VAR10) {
+FUN10(VAR2->VAR21, VAR11);
+return VAR10;
+}
+}
+
+if (VAR16) {
+
+krb5_principal VAR29;
+
+VAR10 = FUN11(VAR2->VAR21, VAR11, &VAR29);
+if (VAR10)
+return VAR10;
+
+FUN10(VAR2->VAR21, VAR2->VAR30);
+VAR2->VAR30 = VAR29;
+}
+
+*VAR7 = VAR31;
+*VAR9 = VAR11;
+
+return 0;
+}

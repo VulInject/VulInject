@@ -1,0 +1,35 @@
+static void FUN1(void)
+{
+    VAR1 *VAR2;
+    VAR3 *VAR4;
+    uint8_t VAR5;
+    size_t VAR6 = 4096;
+    unsigned char *VAR7 = FUN2(VAR6);
+    unsigned char *VAR8 = FUN3(VAR6);
+    uint64_t VAR9;
+    VAR2 = FUN4(NULL);
+    VAR5 = FUN5(VAR2);
+    FUN6(VAR2, VAR5);
+    FUN7(VAR7, VAR6, VAR10);
+    VAR9 = FUN8(VAR2->VAR11->VAR12, VAR6);
+    FUN9(VAR9);
+    FUN10(VAR9, VAR7, VAR6);
+    VAR4 = FUN11(VAR13);
+    FUN12(VAR4, 0, VAR9, VAR6, 32);
+    FUN13(VAR2, VAR4, VAR5);
+    FUN14(VAR2, VAR4);
+    FUN15(VAR2, VAR4);
+    FUN16(VAR4);
+    VAR4 = FUN11(VAR14);
+    FUN12(VAR4, 0, VAR9, VAR6, 32);
+    FUN13(VAR2, VAR4, VAR5);
+    FUN14(VAR2, VAR4);
+    FUN15(VAR2, VAR4);
+    FUN16(VAR4);
+    FUN17(VAR9, VAR8, VAR6);
+    FUN18(VAR2->VAR11->VAR12, VAR9);
+    FUN19(memcmp(VAR7, VAR8, VAR6), ==, 0);
+    FUN20(VAR2);
+    FUN16(VAR8);
+    FUN16(VAR7);
+}

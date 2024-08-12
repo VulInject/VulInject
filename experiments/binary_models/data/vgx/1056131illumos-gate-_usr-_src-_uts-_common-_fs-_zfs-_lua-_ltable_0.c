@@ -1,0 +1,24 @@
+static VAR1 *FUN1 (const VAR2 *VAR3, const VAR4 *VAR5) {
+switch (FUN2(VAR5)) {
+case VAR6:
+return FUN3(VAR3, FUN4(VAR5));
+case VAR7: {
+VAR8 *VAR9 = FUN5(VAR5);
+if (VAR9->VAR10.VAR11 == 0) {  
+VAR9->VAR10.VAR12 = FUN6(FUN7(VAR9), VAR9->VAR10.VAR13, VAR9->VAR10.VAR12);
+VAR9->VAR10.VAR11 = 1;  
+}
+return FUN8(VAR3, FUN5(VAR5));
+}
+case VAR14:
+return FUN8(VAR3, FUN5(VAR5));
+case VAR15:
+return FUN9(VAR3, FUN10(VAR5));
+case VAR16:
+return FUN11(VAR3, FUN12(VAR5));
+case VAR17:
+return FUN11(VAR3, FUN13(VAR5));
+default:
+return FUN11(VAR3, FUN14(VAR5));
+}
+}

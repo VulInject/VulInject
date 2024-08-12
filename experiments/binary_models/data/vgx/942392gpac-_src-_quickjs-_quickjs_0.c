@@ -1,0 +1,30 @@
+static VAR1 FUN1(VAR2 *VAR3, JSValue VAR4)
+{
+const char *VAR5, *VAR6;
+size_t VAR7;
+int VAR8;
+
+VAR5 = FUN2(VAR3, &VAR7, VAR4);
+FUN3(VAR3, VAR4);
+if (!VAR5)
+return VAR9;
+VAR6 = VAR5;
+VAR6 += FUN4(VAR6);
+if ((VAR6 - VAR5) == VAR7) {
+VAR4 = FUN5(VAR3, 0);
+} else {
+VAR8 = VAR10 | VAR11 | VAR12;
+if (FUN6(VAR3))
+VAR8 |= VAR13;
+VAR4 = FUN7(VAR3, VAR6, &VAR6, 0, VAR8);
+VAR6 += FUN4(VAR6);
+if (!FUN8(VAR4)) {
+if ((VAR6 - VAR5) != VAR7) {
+FUN3(VAR3, VAR4);
+VAR4 = VAR14;
+}
+}
+}
+FUN9(VAR3, VAR5);
+return VAR4;
+}

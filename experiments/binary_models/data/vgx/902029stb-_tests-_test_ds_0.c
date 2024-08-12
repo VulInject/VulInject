@@ -1,0 +1,29 @@
+void FUN1(int VAR1, int VAR2, int VAR3, int VAR4)
+{
+struct { str256 VAR5; int VAR6; } *VAR7=NULL;
+int VAR8,VAR9,VAR10;
+str256 VAR5 = { 0 };
+for (VAR8=0; VAR8 < VAR1; ++VAR8) {
+VAR5.VAR10[0] = VAR8;
+FUN2(VAR7,VAR5,VAR8+1);
+}
+if (!VAR4)
+FUN3();
+for (VAR10=0; VAR10 < VAR3; ++VAR10) {
+for (VAR9=VAR1; VAR9 < VAR2; ++VAR9,++VAR8) {
+VAR5.VAR10[0] = VAR8;
+FUN2(VAR7,VAR5,VAR8+1);
+}
+assert(FUN4(VAR7) == VAR2);
+for (VAR9=VAR1; VAR9 < VAR2; ++VAR9) {
+VAR5.VAR10[0] = VAR8-VAR9-1;
+FUN5(VAR7,VAR5);
+}
+assert(FUN4(VAR7) == VAR1);
+}
+FUN6();
+FUN7(VAR7);
+VAR11 = VAR8;
+VAR12 = (VAR2-VAR1) * VAR10;
+FUN3();
+}

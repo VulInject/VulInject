@@ -1,0 +1,1 @@
+static inline int FUN1 ( struct VAR1 * * VAR2 , struct VAR3 * VAR4 ) { struct VAR1 * VAR5 = VAR2 [ VAR6 ] ; struct VAR7 * VAR8 ; VAR8 = FUN2 ( VAR5 ) ; if ( VAR8 -> VAR9 > FUN3 ( VAR5 ) || VAR8 -> VAR9 != ( sizeof ( VAR7 ) + VAR8 -> VAR10 ) ) { FUN4 ( VAR4 , "" ) ; return - VAR11 ; } return 0 ; }

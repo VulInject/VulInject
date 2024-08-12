@@ -1,0 +1,75 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+struct VAR5 *VAR6;
+struct VAR7 *VAR8;
+struct xen_mce VAR9;
+unsigned int VAR10, VAR11;
+
+VAR4 = NULL;
+FUN2(&VAR4, VAR2, VAR12);
+if (FUN3(!VAR4)) {
+FUN4("");
+return -VAR13;
+}
+
+memset(&VAR9, 0, sizeof(struct VAR14));
+
+VAR6 = (struct VAR5 *)VAR4;
+VAR9.VAR15 = VAR6->VAR16;
+VAR9.VAR17 = VAR6->VAR18;
+
+for (VAR10 = 0; VAR10 < VAR19; VAR10++)
+if (VAR20[VAR10].VAR18 == VAR9.VAR17)
+break;
+if (FUN3(VAR10 == VAR19)) {
+FUN4("", VAR9.VAR17);
+return -VAR13;
+}
+
+VAR9.VAR21 = VAR20[VAR10].VAR22;
+VAR9.VAR23 = VAR9.VAR24 = VAR20[VAR10].VAR25;
+VAR9.VAR26 = (VAR27)VAR20[VAR10].VAR28;
+for (VAR11 = 0; VAR11 < VAR20[VAR10].VAR29; ++VAR11)
+switch (VAR20[VAR10].VAR30[VAR11].VAR31) {
+case VAR32:
+VAR9.VAR33 = VAR20[VAR10].VAR30[VAR11].VAR34;
+break;
+
+case VAR35:
+case VAR36:
+VAR9.VAR37 = VAR20[VAR10].VAR30[VAR11].VAR34;
+break;
+}
+
+VAR4 = NULL;
+FUN2(&VAR4, VAR2, VAR38);
+if (FUN3(!VAR4)) {
+FUN4("");
+return -VAR13;
+}
+
+do {
+if ((!VAR4) || (VAR4->VAR39 == 0) ||
+(VAR4->VAR40 != VAR12   &&
+VAR4->VAR40 != VAR38     &&
+VAR4->VAR40 != VAR41 &&
+VAR4->VAR40 != VAR42))
+break;
+
+if (VAR4->VAR40 == VAR38) {
+VAR8 = (struct VAR7 *)VAR4;
+VAR9.VAR43 = VAR8->VAR44;
+VAR9.VAR45 = VAR8->VAR46;
+VAR9.VAR47 = VAR8->VAR48;
+VAR9.VAR49 = VAR8->VAR50;
+VAR9.VAR51 = VAR8->VAR8;
+VAR9.VAR52 = 1;
+
+FUN5(&VAR9);
+}
+VAR4 = FUN6(VAR4);
+} while (1);
+
+return 0;
+}

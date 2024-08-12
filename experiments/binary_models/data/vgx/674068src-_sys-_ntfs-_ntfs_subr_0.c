@@ -1,0 +1,16 @@
+void
+FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+
+FUN3("", VAR2, VAR4->VAR5, VAR4);
+
+FUN3("");
+FUN4(VAR2,VAR6);
+if (VAR2->VAR7 & VAR8)
+free(VAR2->VAR9, VAR10, 0);
+if (VAR2->VAR11)
+free(VAR2->VAR11, VAR12, 0);
+free(VAR2, VAR13, 0);
+FUN5(VAR4);
+}

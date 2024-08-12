@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , void * VAR3 ) { VAR4 * VAR5 = VAR3 ; assert ( VAR2 ) ; if ( VAR5 -> VAR6 ) { FUN2 ( FUN3 ( VAR5 ) , "" , VAR5 -> VAR6 ) ; FUN4 ( FUN3 ( VAR5 ) ) ; VAR5 -> VAR6 = FUN5 ( VAR5 -> VAR6 ) ; } return 0 ; }

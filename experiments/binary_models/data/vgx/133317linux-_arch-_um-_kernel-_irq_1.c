@@ -1,0 +1,1 @@
+unsigned int FUN1 ( int VAR1 , struct VAR2 * VAR3 ) { struct VAR4 * VAR5 = FUN2 ( ( VAR4 * ) VAR3 ) ; FUN3 ( ) ; FUN4 ( VAR1 , NULL ) ; FUN5 ( ) ; FUN2 ( VAR5 ) ; return 1 ; }

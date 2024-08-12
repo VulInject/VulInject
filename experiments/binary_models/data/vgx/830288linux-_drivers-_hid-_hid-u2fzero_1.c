@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { int VAR5 ; FUN2 ( & VAR2 -> VAR6 ) ; memcpy ( VAR2 -> VAR7 , VAR4 , sizeof ( VAR3 ) ) ; VAR5 = FUN3 ( VAR2 -> VAR8 , VAR2 -> VAR7 , sizeof ( VAR9 ) ) ; FUN4 ( & VAR2 -> VAR6 ) ; return VAR5 == sizeof ( VAR9 ) ?0 : - VAR10 ; }

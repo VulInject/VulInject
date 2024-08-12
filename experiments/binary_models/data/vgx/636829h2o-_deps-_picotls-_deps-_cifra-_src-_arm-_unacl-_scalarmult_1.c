@@ -1,0 +1,1 @@
+static void FUN1 ( unsigned char VAR1 [ 32 ] , volatile VAR2 * VAR3 ) { uint8 VAR4 ; FUN2 ( VAR3 , NULL ) ; for ( VAR4 = 0 ; VAR4 < 32 ; VAR4 ++ ) { VAR1 [ VAR4 ] = VAR3 -> VAR5 [ VAR4 ] ; } }

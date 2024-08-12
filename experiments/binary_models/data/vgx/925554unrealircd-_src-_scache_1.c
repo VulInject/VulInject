@@ -1,0 +1,1 @@
+static int FUN1 ( char * VAR1 ) { int VAR2 ; while ( * VAR1 ) { VAR2 += ( * VAR1 ++ & 0xDF ) ; } return VAR2 % VAR3 ; }

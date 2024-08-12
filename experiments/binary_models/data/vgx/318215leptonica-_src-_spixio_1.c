@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( VAR2 * VAR3 ) { size_t VAR4 ; VAR5 * VAR6 ; VAR1 * VAR7 ; if ( ! VAR3 ) { return ( VAR1 * ) FUN2 ( "" , VAR8 , NULL ) ; } if ( ( VAR6 = FUN3 ( VAR3 , & VAR4 ) ) == NULL ) { return ( VAR1 * ) FUN2 ( "" , VAR8 , NULL ) ; } VAR7 = FUN4 ( VAR6 , VAR4 ) ; FUN5 ( VAR6 , NULL ) ; if ( ! VAR7 ) { return ( VAR1 * ) FUN2 ( "" , VAR8 , NULL ) ; } return VAR7 ; }

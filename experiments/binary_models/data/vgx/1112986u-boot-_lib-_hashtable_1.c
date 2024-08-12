@@ -1,0 +1,1 @@
+int FUN1 ( size_t VAR1 , struct VAR2 * VAR3 ) { if ( VAR3 == NULL ) { FUN2 ( VAR4 ) ; return 0 ; } if ( VAR3 -> VAR5 != NULL ) { FUN2 ( VAR4 ) ; return 0 ; } VAR1 |= 1 ; while ( ! FUN3 ( VAR1 ) ) { VAR1 += 2 ; } VAR3 -> VAR6 = VAR1 ; VAR3 -> VAR5 = ( VAR7 * ) calloc ( VAR3 -> VAR6 + 1 , sizeof ( VAR7 ) ) ; if ( VAR3 -> VAR5 == NULL ) { FUN2 ( VAR8 ) ; return 0 ; } return 1 ; }

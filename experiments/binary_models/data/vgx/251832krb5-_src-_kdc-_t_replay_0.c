@@ -1,0 +1,15 @@
+static void
+FUN1(void **VAR1)
+{
+struct VAR2 *VAR3;
+krb5_context VAR4 = *VAR1;
+krb5_data VAR5 = FUN2("");
+
+VAR3 = FUN3(VAR4, &VAR5, NULL, 10);
+
+FUN4(FUN5(VAR6, VAR5.VAR7, VAR5.VAR8), VAR3);
+FUN4(FUN6(&VAR9), VAR3);
+FUN7(FUN8(VAR3->VAR10, VAR5));
+FUN9(VAR3->VAR11.VAR8, 0);
+FUN9(VAR3->VAR12, 10);
+}

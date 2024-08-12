@@ -1,0 +1,76 @@
+extern int FUN1(VAR1 *VAR2, char *VAR3,
+VAR4 *VAR5)
+{
+int VAR6 = VAR7;
+bool VAR8 = false;
+char *VAR9 = VAR5->VAR10;
+unsigned int VAR11 = 30;
+bool VAR12 = 0;
+
+FUN2(VAR2);
+
+FUN3(&VAR2->VAR13);
+
+if (!(VAR2->VAR14 = FUN4(VAR2->VAR14))) {
+FUN5(&VAR2->VAR13);
+FUN6("",
+FUN7(VAR2->VAR14));
+}
+
+FUN8(VAR2->VAR14, VAR15, &VAR12);
+
+
+FUN8(VAR2->VAR14, VAR16,
+(char *)&VAR11);
+
+FUN9(VAR2->VAR14, VAR5->VAR17);
+
+while (!VAR8) {
+FUN10("", VAR9,
+VAR5->VAR18);
+if (!FUN11(VAR2->VAR14, VAR9,
+VAR5->VAR19, VAR5->VAR20,
+VAR3, VAR5->VAR18, NULL,
+VAR21)) {
+const char *VAR22 = NULL;
+int VAR23 = FUN12(VAR2->VAR14);
+
+if (VAR23 == VAR24) {
+FUN13("",
+VAR3);
+VAR6 = FUN14(VAR3, VAR5);
+
+
+FUN9(VAR2->VAR14,
+VAR5->VAR17);
+continue;
+}
+
+VAR22 = FUN7(VAR2->VAR14);
+
+if ((VAR9 == VAR5->VAR10) && VAR5->VAR25) {
+FUN10("",
+VAR23, VAR22);
+VAR9 = VAR5->VAR25;
+continue;
+}
+
+FUN15("",
+VAR23, VAR22);
+VAR6 = VAR26;
+FUN16(VAR2->VAR14);
+VAR2->VAR14 = NULL;
+break;
+}
+
+VAR8 = true;
+if (VAR2->VAR27 & VAR28)
+FUN17(VAR2->VAR14, 0);
+VAR6 = FUN18(VAR2->VAR14,
+""
+"");
+}
+FUN5(&VAR2->VAR13);
+VAR29 = VAR6;
+return VAR6;
+}

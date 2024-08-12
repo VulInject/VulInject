@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( struct VAR2 * VAR2 , struct VAR3 * VAR4 ) { struct patch_id VAR5 ; if ( ! FUN2 ( VAR2 ) ) { return VAR6 ; } memset ( & VAR5 , 0 , sizeof ( VAR5 ) ) ; if ( FUN3 ( & VAR5 , VAR2 , VAR4 ) ) { return NULL ; } return FUN4 ( & VAR4 -> VAR7 , & VAR5 , VAR8 , NULL ) ; }

@@ -1,0 +1,40 @@
+static struct VAR1 *FUN1(
+struct VAR2 *VAR3, u64 VAR4, u64 VAR5)
+{
+struct VAR1 *VAR6 = NULL;
+struct inode_defrag VAR7;
+struct VAR8 *VAR9;
+struct VAR8 *VAR10 = NULL;
+int VAR11;
+
+VAR7.VAR5 = VAR5;
+VAR7.VAR4 = VAR4;
+
+FUN2(&VAR3->VAR12);
+VAR9 = VAR3->VAR13.VAR8;
+while (VAR9) {
+VAR10 = VAR9;
+VAR6 = FUN3(VAR10, struct VAR1, VAR8);
+
+VAR11 = FUN4(&VAR7, VAR6);
+if (VAR11 < 0)
+VAR9 = VAR10->VAR14;
+else if (VAR11 > 0)
+VAR9 = VAR10->VAR15;
+else
+goto VAR16;
+}
+
+if (VAR10 && FUN4(&VAR7, VAR6) > 0) {
+VAR10 = FUN5(VAR10);
+if (VAR10)
+VAR6 = FUN3(VAR10, struct VAR1, VAR8);
+else
+VAR6 = NULL;
+}
+VAR16:
+if (VAR6)
+FUN6(VAR10, &VAR3->VAR13);
+FUN7(&VAR3->VAR12);
+return VAR6;
+}

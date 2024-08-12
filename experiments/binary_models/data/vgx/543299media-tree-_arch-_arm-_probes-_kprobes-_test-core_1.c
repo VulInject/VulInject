@@ -1,0 +1,1 @@
+static int FUN1 ( void * FUN2 ( void ) ) { unsigned VAR1 , VAR2 , VAR3 , VAR4 ; for ( VAR1 = 1000 ; ; VAR1 *= 2 ) { VAR4 = FUN3 ( ) ; for ( VAR2 = VAR1 ; VAR2 > 0 ; -- VAR2 ) { FUN2 ( ) ; } VAR3 = FUN3 ( ) - VAR4 ; } return VAR3 / VAR1 ; }

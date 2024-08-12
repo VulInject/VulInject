@@ -1,0 +1,1 @@
+( VAR1 ) ; static inline VAR2 * FUN1 ( void ) { return FUN2 ( VAR3 , VAR4 ) ; }

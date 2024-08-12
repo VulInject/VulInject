@@ -1,0 +1,1 @@
+void FUN1 ( const unsigned char * VAR1 , unsigned char * VAR2 , long VAR3 , VAR4 * VAR5 , VAR6 * VAR7 , int * VAR8 , int VAR9 ) { DES_LONG VAR10 , VAR11 ; long VAR12 = VAR3 ; int VAR13 = * VAR8 ; int VAR14 [ 2 ] ; unsigned char * VAR15 , VAR16 , VAR17 ; VAR15 = & ( * VAR7 ) [ 0 ] ; if ( VAR9 ) { while ( VAR12 -- ) { } } }

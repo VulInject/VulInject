@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 ) { recno_t VAR5 ; FUN2 ( VAR2 , VAR4 ) ; if ( ! FUN3 ( VAR2 -> VAR6 , VAR7 ) ) { FUN4 ( VAR2 , VAR8 , "" ) ; return ( 1 ) ; } if ( FUN5 ( VAR2 , & VAR5 ) ) { return ( 1 ) ; } if ( FUN6 ( VAR2 , VAR9 ) ) { return ( 1 ) ; } FUN4 ( VAR2 , VAR10 , "" ) ; return ( 0 ) ; }

@@ -1,0 +1,1 @@
+static inline int FUN1 ( VAR1 * VAR2 , char * VAR3 , int VAR4 ) { int VAR5 ; VAR5 = FUN2 ( * ( VAR6 * ) VAR3 ) ; VAR2 -> VAR7 . VAR8 = VAR5 ; return 0 ; }

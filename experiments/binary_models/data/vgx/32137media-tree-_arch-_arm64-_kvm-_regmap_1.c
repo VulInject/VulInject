@@ -1,0 +1,1 @@
+unsigned long * FUN1 ( const struct VAR1 * VAR2 ) { cfs_time_t VAR3 = * FUN2 ( VAR2 ) & VAR4 ; switch ( VAR3 ) { case VAR5 : VAR3 = VAR6 ; break ; case VAR7 : VAR3 = VAR8 ; break ; case VAR9 : VAR3 = VAR10 ; break ; case VAR11 : VAR3 = VAR12 ; break ; case VAR13 : VAR3 = VAR14 ; break ; default : FUN3 ( ) ; } return ( unsigned long * ) & FUN4 ( VAR2 ) -> VAR15 [ VAR3 ] ; }

@@ -1,0 +1,4 @@
+VAR1 FUN1(u8 const *VAR2, u8 VAR3)
+{
+return FUN2(VAR4, VAR2, VAR3, VAR5);
+}

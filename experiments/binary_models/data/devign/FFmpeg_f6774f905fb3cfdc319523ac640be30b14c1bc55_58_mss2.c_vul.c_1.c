@@ -1,0 +1,56 @@
+static int FUN1(VAR1 *VAR2, const VAR3 *VAR4, int VAR5, int VAR6, int VAR7, int VAR8, int VAR9, int VAR10)
+{
+    VAR11 *VAR12 = VAR2->VAR13;
+    VAR14 *VAR15 = &VAR12->VAR15;
+    VAR16 *VAR17 = VAR2->VAR13;
+    VAR18 *VAR19 = &VAR17->VAR19;
+    VAR20 *VAR21;
+    int VAR22;
+    FUN2(VAR2);
+    FUN3(&VAR19->VAR23, VAR4, VAR5 * 8);
+    VAR19->VAR24 = VAR2->VAR25 < VAR26;
+    if (FUN4(VAR17, &VAR19->VAR23) < 0)
+    {
+        FUN5(VAR17->VAR19.VAR2, VAR27, "");
+        return VAR28;
+    }
+    if (VAR19->VAR29 != VAR30)
+    {
+        FUN5(VAR17->VAR19.VAR2, VAR27, "");
+        return VAR28;
+    }
+    VAR2->VAR31 = VAR32;
+    if ((VAR22 = FUN6(VAR19, VAR2)) < 0)
+    {
+        FUN5(VAR17->VAR19.VAR2, VAR27, "");
+        VAR2->VAR31 = VAR33;
+        return VAR22;
+    }
+    FUN7(VAR19);
+    VAR17->VAR34 = VAR5 * 8;
+    VAR17->VAR35 = (VAR8 + 15) >> 4;
+    VAR19->VAR36 = (VAR9 + 15) >> 4;
+    if (VAR17->VAR37 & 1)
+        VAR17->VAR35 = VAR17->VAR35 + 1 >> 1;
+    if (VAR17->VAR37 & 2)
+        VAR19->VAR36 = VAR19->VAR36 + 1 >> 1;
+    FUN8(VAR17);
+    FUN9(&VAR19->VAR38);
+    FUN10(VAR19);
+    VAR21 = &VAR19->VAR39.VAR21;
+    if (VAR17->VAR37 == 3)
+    {
+        VAR12->VAR40.FUN11(VAR21->VAR41[0], VAR21->VAR42[0], VAR8, VAR9);
+        VAR12->VAR40.FUN11(VAR21->VAR41[1], VAR21->VAR42[1], VAR8 >> 1, VAR9 >> 1);
+        VAR12->VAR40.FUN11(VAR21->VAR41[2], VAR21->VAR42[2], VAR8 >> 1, VAR9 >> 1);
+    }
+    else if (VAR17->VAR37)
+        FUN12(VAR17->VAR19.VAR2, "");
+    FUN13(VAR21->VAR42[1] == VAR21->VAR42[2]);
+    if (VAR10 != -1)
+        VAR12->VAR40.FUN14(VAR15->VAR43 + VAR7 * VAR15->VAR44 + VAR6 * 3, VAR15->VAR44, VAR10, VAR15->VAR45 + VAR7 * VAR15->VAR46 + VAR6, VAR15->VAR46, VAR21->VAR41[0], VAR21->VAR42[0], VAR21->VAR41[1], VAR21->VAR41[2], VAR21->VAR42[1], VAR8, VAR9);
+    else
+        VAR12->VAR40.FUN15(VAR15->VAR43 + VAR7 * VAR15->VAR44 + VAR6 * 3, VAR15->VAR44, VAR21->VAR41[0], VAR21->VAR42[0], VAR21->VAR41[1], VAR21->VAR41[2], VAR21->VAR42[1], VAR8, VAR9);
+    VAR2->VAR31 = VAR33;
+    return 0;
+}

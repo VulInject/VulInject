@@ -1,0 +1,1 @@
+void FUN1 ( void * * VAR1 ) { PContact VAR2 = FUN2 ( "" , "" , NULL , NULL , "" , VAR3 ) ; gboolean VAR4 = FUN3 ( VAR2 ) ; FUN4 ( VAR4 ) ; }

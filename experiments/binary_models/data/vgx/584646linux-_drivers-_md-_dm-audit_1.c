@@ -1,0 +1,1 @@
+( VAR1 ) ; void FUN1 ( const char * VAR2 , const char * VAR3 , struct VAR4 * VAR4 , sector_t VAR5 , int VAR6 ) { struct VAR7 * VAR8 ; int VAR9 = FUN2 ( VAR4 -> VAR10 -> VAR11 ) ; int VAR12 = FUN3 ( VAR4 -> VAR10 -> VAR11 ) ; VAR8 = FUN4 ( VAR13 , VAR2 , VAR3 ) ; FUN5 ( VAR8 , "" , VAR9 , VAR12 , VAR5 , VAR6 ) ; FUN6 ( VAR8 ) ; }

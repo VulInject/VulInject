@@ -1,0 +1,32 @@
+static size_t VAR1;
+struct e820_table VAR2;
+struct VAR3 *VAR4;
+
+int FUN1(uint64_t VAR5, uint64_t VAR6, uint32_t VAR7)
+{
+int VAR8 = FUN2(VAR2.VAR9);
+struct VAR3 *VAR10;
+
+if (VAR7 != VAR11) {
+
+if (VAR8 >= VAR12) {
+return -VAR13;
+}
+VAR10 = &VAR2.VAR10[VAR8++];
+
+VAR10->VAR5 = FUN3(VAR5);
+VAR10->VAR6 = FUN3(VAR6);
+VAR10->VAR7 = FUN4(VAR7);
+
+VAR2.VAR9 = FUN4(VAR8);
+}
+
+
+VAR4 = FUN5(struct VAR3, VAR4, VAR1 + 1);
+VAR4[VAR1].VAR5 = FUN3(VAR5);
+VAR4[VAR1].VAR6 = FUN3(VAR6);
+VAR4[VAR1].VAR7 = FUN4(VAR7);
+VAR1++;
+
+return VAR1;
+}

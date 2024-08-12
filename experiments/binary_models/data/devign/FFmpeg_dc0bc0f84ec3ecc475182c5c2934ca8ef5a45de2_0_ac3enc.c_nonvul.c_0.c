@@ -1,0 +1,31 @@
+static int FUN1(VAR1 *VAR2, unsigned char *VAR3, int VAR4, void *VAR5)
+{
+    VAR6 *VAR7 = VAR2->VAR8;
+    const VAR9 *VAR10 = VAR5;
+    int16_t VAR11[VAR12][VAR13 + VAR14];
+    int32_t VAR15[VAR16][VAR12][VAR17];
+    uint8_t VAR18[VAR16][VAR12][VAR17];
+    uint8_t VAR19[VAR16][VAR12];
+    uint8_t VAR20[VAR16][VAR12][VAR17];
+    uint8_t VAR21[VAR16][VAR12];
+    uint8_t VAR22[VAR16][VAR12][VAR23];
+    uint8_t VAR24[VAR16][VAR12][VAR17];
+    int8_t VAR25[VAR16][VAR12];
+    uint16_t VAR26[VAR16][VAR12][VAR17];
+    int VAR27;
+    int VAR28;
+    if (VAR7->VAR29.VAR30 == 1)
+        FUN2(VAR7);
+    FUN3(VAR7, VAR10, VAR11);
+    FUN4(VAR7, VAR11, VAR25, VAR15);
+    VAR27 = FUN5(VAR7, VAR15, VAR25, VAR18, VAR19, VAR20, VAR21, VAR22);
+    VAR28 = FUN6(VAR7, VAR24, VAR20, VAR19, VAR27);
+    if (VAR28)
+    {
+        FUN7(VAR2, VAR31, "");
+        return VAR28;
+    }
+    FUN8(VAR7, VAR15, VAR25, VAR20, VAR24, VAR26);
+    FUN9(VAR7, VAR3, VAR19, VAR21, VAR22, VAR24, VAR26);
+    return VAR7->VAR32;
+}

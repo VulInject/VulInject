@@ -1,0 +1,1 @@
+bool FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { if ( ( FUN2 ( VAR4 -> VAR5 ) . VAR6 == VAR7 ) || ( ( FUN2 ( VAR4 -> VAR5 ) . VAR6 == VAR8 ) && ! FUN3 ( ) ) ) { VAR4 -> VAR5 . VAR9 = FUN4 ( VAR4 -> VAR5 , VAR10 ) ; FUN5 ( VAR4 , VAR11 , VAR12 ) ; return true ; } if ( FUN6 ( VAR2 -> VAR13 ) ) { FUN7 ( VAR2 , VAR4 ) ; return true ; } return false ; }

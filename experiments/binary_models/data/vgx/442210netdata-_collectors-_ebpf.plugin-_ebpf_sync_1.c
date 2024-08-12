@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 ) { heartbeat_t VAR3 ; FUN2 ( & VAR3 ) ; int VAR4 = VAR2 -> VAR4 ; int VAR5 = VAR4 - 1 ; while ( ! VAR6 ) { ( void ) FUN3 ( & VAR3 , VAR7 ) ; VAR5 = 0 ; FUN4 ( ) ; pthread_mutex_lock ( & VAR8 ) ; FUN5 ( ) ; pthread_mutex_unlock ( & VAR8 ) ; } }

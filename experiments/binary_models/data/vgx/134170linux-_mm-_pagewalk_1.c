@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , unsigned long VAR3 , unsigned long VAR4 , struct VAR5 * VAR6 ) { const struct VAR7 * VAR8 = VAR6 -> VAR8 ; int VAR9 = 0 ; for ( ; ; ) { VAR9 = VAR8 -> FUN2 ( VAR2 , VAR3 , VAR3 + VAR10 , VAR6 ) ; if ( VAR9 ) { break ; } VAR3 += VAR10 ; VAR2 ++ ; } return VAR9 ; }

@@ -1,0 +1,288 @@
+static int FUN1(struct VAR1 *VAR1, int VAR2,
+bool VAR3, struct VAR4 *VAR5,
+struct VAR6 *VAR7)
+{
+const struct VAR8 *VAR9 = &VAR5->VAR10->VAR9;
+struct VAR11 *VAR12 = VAR5->VAR13.VAR12;
+bool VAR14 = false;
+const struct VAR15 *VAR16;
+enum ocelot_tag_tpid_sel VAR17;
+int VAR18, VAR19, VAR20;
+u32 VAR21, VAR22;
+u64 VAR23;
+int VAR24;
+
+if (!FUN2(&VAR5->VAR10->VAR9,
+VAR5->VAR13.VAR12))
+return -VAR25;
+
+VAR19 = VAR5->VAR13.VAR26;
+VAR7->VAR27 = FUN3(VAR19, VAR3);
+if (VAR7->VAR27 < 0) {
+FUN4(VAR12, "");
+return -VAR25;
+}
+if (VAR7->VAR27 == VAR28 || VAR7->VAR27 == VAR29)
+VAR7->VAR30 = FUN5(VAR19);
+if (VAR7->VAR27 == VAR29)
+VAR7->VAR31 = FUN6(VAR19);
+
+VAR7->VAR32 = -1;
+VAR7->VAR33 = VAR34;
+
+FUN7(VAR18, VAR16, VAR9) {
+switch (VAR16->VAR35) {
+case VAR36:
+if (VAR7->VAR27 != VAR29) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+if (VAR7->VAR32 != -1) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+VAR7->VAR9.VAR37 = VAR38;
+VAR7->VAR9.VAR39 = 0;
+VAR7->VAR9.VAR40 = true;
+VAR7->VAR9.VAR21 = VAR41;
+VAR7->VAR33 = VAR42;
+break;
+case VAR43:
+if (VAR7->VAR27 != VAR44 &&
+VAR7->VAR27 != VAR28 &&
+VAR7->VAR27 != VAR29) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+if (VAR7->VAR27 != VAR44 &&
+VAR7->VAR32 != -1) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+VAR7->VAR33 = VAR42;
+break;
+case VAR45:
+if (VAR7->VAR27 != VAR29 ||
+VAR7->VAR30 != 0) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+if (VAR7->VAR32 != -1) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+VAR7->VAR9.VAR37 = VAR38;
+VAR7->VAR9.VAR39 = 0;
+VAR7->VAR9.VAR46 = true;
+VAR7->VAR9.VAR47 = 0;
+VAR7->VAR33 = VAR42;
+VAR7->VAR48 = true;
+break;
+case VAR49:
+if (VAR7->VAR27 == VAR50) {
+VAR7->VAR33 = VAR51;
+break;
+}
+if (VAR7->VAR27 != VAR29 ||
+VAR7->VAR30 != 0) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+if (VAR7->VAR32 != -1) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+
+VAR24 = FUN8(VAR9, VAR16, VAR12);
+if (VAR24)
+return VAR24;
+
+VAR7->VAR9.VAR40 = true;
+
+VAR21 = VAR16->VAR52 + VAR1->VAR53.VAR54;
+VAR22 = VAR1->VAR53.VAR55;
+
+if (VAR1->VAR53.VAR56 && VAR21 > VAR22) {
+VAR21 += VAR1->VAR53.VAR57 - VAR22 - 1;
+VAR22 = VAR1->VAR53.VAR56;
+}
+
+if (VAR21 >= VAR22)
+return -VAR58;
+
+VAR7->VAR9.VAR21 = VAR21;
+
+VAR23 = VAR16->VAR59.VAR60;
+VAR7->VAR9.VAR61.VAR23 = FUN9(VAR23, 1000) * 8;
+VAR7->VAR9.VAR61.VAR62 = VAR16->VAR59.VAR62;
+VAR7->VAR33 = VAR42;
+break;
+case VAR63:
+if (VAR7->VAR27 != VAR29) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+if (VAR7->VAR32 != -1) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+VAR20 = VAR1->VAR64->FUN10(VAR16->VAR65);
+if (VAR20 < 0) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+VAR7->VAR9.VAR37 = VAR66;
+VAR7->VAR9.VAR39 = FUN11(VAR20);
+VAR7->VAR33 = VAR42;
+break;
+case VAR67:
+if (VAR7->VAR27 != VAR29) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+if (VAR7->VAR32 != -1) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+VAR20 = VAR1->VAR64->FUN10(VAR16->VAR65);
+if (VAR20 < 0) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+VAR7->VAR20.VAR68 = VAR20;
+VAR7->VAR9.VAR69 = true;
+VAR7->VAR33 = VAR42;
+break;
+case VAR70:
+if (VAR7->VAR27 != VAR28) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+if (VAR7->VAR32 != -1) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+VAR7->VAR9.VAR71 = true;
+VAR7->VAR9.VAR72++;
+if (VAR7->VAR9.VAR72 > 2) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+VAR7->VAR33 = VAR42;
+break;
+case VAR73:
+if (VAR7->VAR27 == VAR28) {
+VAR24 = FUN12(VAR1, VAR2,
+VAR7, VAR16,
+VAR12);
+} else if (VAR7->VAR27 == VAR44) {
+VAR24 = FUN13(VAR7, VAR16,
+VAR12);
+} else {
+FUN4(VAR12,
+"");
+VAR24 = -VAR25;
+}
+if (VAR24)
+return VAR24;
+break;
+case VAR74:
+if (VAR7->VAR27 != VAR28) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+if (VAR7->VAR32 != -1) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+VAR7->VAR9.VAR75 = true;
+VAR7->VAR9.VAR76 = VAR16->VAR77;
+VAR7->VAR33 = VAR42;
+break;
+case VAR78:
+VAR7->VAR32 = VAR16->VAR26;
+
+if (VAR7->VAR27 == VAR28 && VAR7->VAR30 == 2) {
+int VAR31 = FUN6(VAR7->VAR32);
+
+VAR7->VAR9.VAR79 = 0xff;
+VAR7->VAR9.VAR80 = VAR31;
+VAR7->VAR33 = VAR81;
+}
+break;
+case VAR82:
+if (VAR7->VAR27 != VAR44) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+switch (FUN14(VAR16->VAR83.VAR84)) {
+case VAR85:
+VAR17 = VAR86;
+break;
+case VAR87:
+VAR17 = VAR88;
+break;
+default:
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+VAR7->VAR9.VAR89 = VAR17;
+VAR7->VAR9.VAR90 = VAR91;
+VAR7->VAR9.VAR92 = VAR93;
+VAR7->VAR9.VAR94 = VAR16->VAR83.VAR95;
+VAR7->VAR9.VAR96 = VAR16->VAR83.VAR97;
+VAR7->VAR33 = VAR42;
+break;
+case VAR98:
+if (VAR7->VAR27 != VAR50) {
+FUN4(VAR12,
+"");
+return -VAR25;
+}
+VAR7->VAR33 = VAR51;
+break;
+default:
+FUN4(VAR12, "");
+return -VAR25;
+}
+}
+
+if (VAR7->VAR32 == -1) {
+if ((VAR7->VAR27 == VAR29 && VAR7->VAR30 == 1) ||
+VAR19 == 0 || VAR7->VAR27 == VAR50) {
+VAR14 = true;
+} else {
+FUN4(VAR12, "");
+return -VAR25;
+}
+}
+
+if (!FUN15(VAR7->VAR32, VAR19, VAR3) &&
+!VAR14) {
+FUN4(VAR12, "");
+return -VAR25;
+}
+
+return 0;
+}

@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { u32 VAR3 , VAR4 = 300 ; while ( VAR4 -- ) { VAR3 = FUN2 ( VAR2 -> VAR5 ) ; if ( ( VAR3 >> VAR2 -> VAR6 ) & 1 ) { break ; } FUN3 ( 500 ) ; } return 0 ; }

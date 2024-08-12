@@ -1,0 +1,1 @@
+extern void FUN1 ( void ) { void * VAR1 = NULL ; if ( ! FUN2 ( & VAR1 ) ) { FUN3 ( VAR1 ) ; } }

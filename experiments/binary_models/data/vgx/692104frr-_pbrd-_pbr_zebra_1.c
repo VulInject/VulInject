@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , unsigned char VAR5 ) { struct prefix VAR6 ; if ( ! VAR4 ) { VAR6 . VAR5 = VAR5 ; VAR4 = & VAR6 ; } FUN2 ( VAR2 , VAR4 -> VAR5 ) ; FUN2 ( VAR2 , VAR4 -> VAR7 ) ; FUN3 ( VAR2 , & VAR4 -> VAR8 . VAR3 , FUN4 ( VAR4 ) ) ; }

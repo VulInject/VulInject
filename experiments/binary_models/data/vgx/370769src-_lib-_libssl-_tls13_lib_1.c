@@ -1,0 +1,1 @@
+void FUN1 ( uint8_t VAR1 , void * VAR2 ) { struct VAR3 * VAR4 = VAR2 ; if ( VAR1 == VAR5 ) { VAR4 -> VAR6 -> VAR7 |= VAR8 ; VAR4 -> VAR6 -> VAR9 -> VAR10 = VAR1 ; return ; } if ( VAR1 == VAR11 ) { return ; } VAR4 -> VAR6 -> VAR9 -> VAR12 = VAR1 ; FUN2 ( VAR4 -> VAR6 , VAR13 + VAR1 ) ; FUN3 ( "" , VAR1 ) ; FUN4 ( VAR4 -> VAR6 -> VAR4 , VAR4 -> VAR6 -> VAR14 ) ; }

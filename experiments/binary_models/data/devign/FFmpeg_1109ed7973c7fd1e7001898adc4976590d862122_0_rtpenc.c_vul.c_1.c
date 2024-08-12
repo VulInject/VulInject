@@ -1,0 +1,38 @@
+static void FUN1(VAR1 *VAR2, int64_t VAR3, int VAR4)
+{
+    VAR5 *VAR6 = VAR2->VAR7;
+    uint32_t VAR8;
+    FUN2(VAR2, VAR9, "" VAR10 "", VAR6->VAR11, VAR3, VAR6->VAR12);
+    VAR6->VAR13 = VAR3;
+    VAR8 = FUN3(VAR3 - VAR6->VAR14, (VAR15){1, 1000000}, VAR2->VAR16[0]->VAR17) + VAR6->VAR18;
+    FUN4(VAR2->VAR19, VAR20 << 6);
+    FUN4(VAR2->VAR19, VAR21);
+    FUN5(VAR2->VAR19, 6);
+    FUN6(VAR2->VAR19, VAR6->VAR22);
+    FUN7(VAR2->VAR19, FUN8(VAR3));
+    FUN6(VAR2->VAR19, VAR8);
+    FUN6(VAR2->VAR19, VAR6->VAR23);
+    FUN6(VAR2->VAR19, VAR6->VAR24);
+    if (VAR6->VAR25)
+    {
+        int VAR26 = FUN9(strlen(VAR6->VAR25), 255);
+        FUN4(VAR2->VAR19, (VAR20 << 6) + 1);
+        FUN4(VAR2->VAR19, VAR27);
+        FUN5(VAR2->VAR19, (7 + VAR26 + 3) / 4);
+        FUN6(VAR2->VAR19, VAR6->VAR22);
+        FUN4(VAR2->VAR19, 0x01);
+        FUN4(VAR2->VAR19, VAR26);
+        FUN10(VAR2->VAR19, VAR6->VAR25, VAR26);
+        FUN4(VAR2->VAR19, 0);
+        for (VAR26 = (7 + VAR26) % 4; VAR26 % 4; VAR26++)
+            FUN4(VAR2->VAR19, 0);
+    }
+    if (VAR4)
+    {
+        FUN4(VAR2->VAR19, (VAR20 << 6) | 1);
+        FUN4(VAR2->VAR19, VAR28);
+        FUN5(VAR2->VAR19, 1);
+        FUN6(VAR2->VAR19, VAR6->VAR22);
+    }
+    FUN11(VAR2->VAR19);
+}

@@ -1,0 +1,1 @@
+static int FUN1 ( SOCKET VAR1 ) { int VAR2 ; int VAR3 = sizeof ( VAR2 ) ; return ( VAR2 == VAR4 ) ?1 : 0 ; }

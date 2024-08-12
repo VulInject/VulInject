@@ -1,0 +1,1 @@
+static bool FUN1 ( const char * VAR1 ) { LPTSTR VAR2 = FUN2 ( VAR1 ) ; bool VAR3 = FUN3 ( VAR2 , NULL ) ; return VAR3 ; }

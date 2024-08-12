@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , int write , void * VAR3 , VAR4 * VAR5 , VAR6 * VAR7 ) { struct VAR8 * VAR9 = ( VAR8 * ) VAR2 -> VAR10 ; char VAR11 [ 40 ] ; int VAR12 = 0 ; if ( * VAR7 ) { * VAR5 = 0 ; return 0 ; } { { if ( VAR9 -> VAR13 & VAR14 # # VAR15 ) { VAR12 += sprintf ( VAR11 + VAR12 , "" , VAR16 ++ ?"" : "" , # VAR15 ) ; } } 0 ; } }

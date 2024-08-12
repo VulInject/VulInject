@@ -1,0 +1,126 @@
+int
+FUN1(struct VAR1 *VAR1)
+{
+FUN2(VAR2, VAR3,
+"", VAR1);
+FUN3("");
+
+if ((VAR1->VAR4 & VAR5) == 0) {
+
+switch (VAR1->VAR6 & VAR7) {
+case VAR8:
+case VAR9:
+FUN4(VAR1, VAR10);
+FUN5(VAR2,
+VAR11,
+"");
+return (FUN6(VAR1));
+
+case VAR12:
+FUN4(VAR1, VAR13);
+FUN5(VAR2,
+VAR14,
+"");
+return (FUN7(VAR1));
+
+case VAR15:
+FUN4(VAR1, VAR16);
+FUN5(VAR2,
+VAR17,
+"");
+return (FUN8(VAR1));
+
+case VAR18:
+FUN9(VAR1, VAR19);
+if (VAR20 & (1<<FUN10(VAR1->VAR21))) {
+FUN11(VAR1);
+}
+
+FUN9(VAR1, VAR22);
+FUN4(VAR1, VAR23);
+
+FUN5(VAR2,
+VAR24,
+"");
+return (FUN12(VAR1));
+
+case VAR25:
+FUN4(VAR1, VAR26);
+FUN5(VAR2,
+VAR27,
+"");
+return (FUN13(VAR1));
+}
+
+FUN14(VAR1, "");
+FUN5(VAR2, VAR28,
+"");
+return (VAR29);
+
+} else {
+
+int VAR30 = VAR1->VAR31[0];
+struct VAR32 *VAR33 = VAR1->VAR21;
+int VAR34 = FUN10(VAR33);
+
+if (VAR30 == VAR35 || VAR30 == VAR36) {
+VAR30 = VAR1->VAR31[2];
+}
+FUN15("",
+VAR1->VAR31[0], VAR1->VAR31[1],
+VAR1->VAR31[2], VAR1->VAR37);
+
+if (VAR30 == VAR38 || VAR30 == VAR39 ||
+VAR30 == VAR40) {
+FUN16("",
+FUN17(VAR30), FUN10(VAR33));
+if (VAR33->VAR41 & VAR42) {
+VAR33->VAR43[VAR44] = VAR45;
+}
+if (VAR30 == VAR38 || VAR30 == VAR39) {
+VAR1->VAR46++;
+if ((VAR33->VAR41 & VAR42) == 0) {
+FUN18(VAR1, VAR33,
+VAR47, VAR48);
+}
+} else if (VAR30 == VAR40) {
+VAR1->VAR49++;
+if ((VAR33->VAR41 & VAR42) == 0) {
+FUN18(VAR1, VAR33,
+VAR50, VAR51);
+}
+FUN19(VAR1, VAR34);
+}
+} else {
+if ((VAR1->VAR37 == VAR52) &&
+(VAR1->VAR53 == VAR54)) {
+
+FUN4(VAR1, VAR55);
+FUN9(VAR1, VAR56);
+FUN20(VAR1, VAR33, VAR57);
+FUN21(VAR1, VAR33);
+FUN22(VAR1);
+VAR33->VAR41 &= ~VAR58;
+(void) FUN23(VAR1, VAR33,	VAR59);
+FUN22(VAR1);
+FUN5(VAR2,
+VAR60,
+"");
+return (VAR61);
+
+} else if (VAR1->VAR37 == VAR52)	{
+
+FUN24(VAR1);
+VAR1->VAR62 = VAR1->VAR63 = 0;
+}
+
+FUN18(VAR1, VAR33, VAR64, 0);
+FUN14(VAR1, "");
+}
+FUN5(VAR2, VAR60,
+"");
+return (VAR65);
+}
+FUN25(VAR66)
+
+}

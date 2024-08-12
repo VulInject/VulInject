@@ -1,0 +1,144 @@
+static FUN1(0644,
+VAR1,
+VAR2,
+VAR3);
+static FUN2(0644,
+VAR1,
+VAR2,
+VAR4);
+static FUN3(0644,
+VAR1,
+VAR2,
+VAR5);
+static FUN4(0644,
+VAR1,
+VAR2,
+VAR6);
+static FUN5(0644,
+VAR7,
+VAR8,
+VAR9);
+static FUN6(0644,
+VAR7,
+VAR8,
+VAR10);
+static FUN7(0644,
+VAR7,
+VAR8,
+VAR11);
+static FUN8(VAR12,
+VAR13);
+static FUN9(VAR12,
+VAR14);
+static FUN10(VAR12,
+VAR15);
+static FUN11(VAR12,
+VAR16);
+static FUN12(0444,
+VAR12,
+NULL,
+VAR17);
+static FUN13(0444,
+VAR12,
+NULL,
+VAR18);
+static FUN14(0444,
+VAR12,
+NULL,
+VAR19);
+static FUN15(0444,
+VAR12,
+NULL,
+VAR20);
+static FUN16(0444,
+VAR12,
+NULL,
+VAR21);
+static FUN17(0444,
+VAR12,
+NULL,
+VAR22);
+static FUN18(0444,
+VAR12,
+NULL,
+VAR23);
+static FUN19(0444,
+VAR1,
+VAR2,
+VAR24);
+static FUN20(0444,
+VAR1,
+VAR2,
+VAR25);
+static FUN21(0444,
+VAR1,
+VAR2,
+VAR26);
+static FUN22(0444,
+VAR1,
+VAR2,
+VAR27);
+static FUN23(0444,
+VAR1,
+VAR2,
+VAR28);
+static FUN24(0444,
+VAR1,
+VAR2,
+VAR29);
+static FUN25(VAR12,
+VAR30);
+static FUN26(VAR12,
+VAR31);
+static FUN27(VAR12,
+VAR32);
+static FUN28(VAR12,
+VAR33);
+static FUN29(VAR12,
+VAR34);
+static FUN30(VAR12,
+VAR35);
+static FUN31(VAR36,
+VAR37);
+static FUN32(VAR36,
+VAR38);
+static FUN33(VAR36,
+VAR39);
+static FUN34(VAR36,
+VAR40);
+static FUN35(VAR36,
+VAR41);
+static FUN36(VAR36,
+VAR42);
+static FUN37(VAR36,
+VAR43);
+static FUN38(VAR36,
+VAR44);
+static FUN39(VAR36,
+VAR45);
+static FUN40(VAR36,
+VAR46);
+static FUN41(VAR36,
+VAR47);
+static FUN42(VAR36,
+VAR48);
+
+static int FUN43(struct VAR49 *VAR50, bool VAR51)
+{
+struct VAR52 *VAR53 = FUN44(VAR50);
+struct VAR54 *VAR55 = FUN45(VAR53);
+
+int VAR56;
+u32 VAR57;
+
+VAR56 = VAR55->FUN46(VAR50, VAR58, &VAR57, 32);
+if (VAR56 < 0)
+return VAR56;
+
+if (VAR51)
+VAR57 |= FUN47(17); 
+else
+VAR57 &= ~FUN47(17);
+
+return VAR55->FUN48(VAR50, VAR58, VAR57, 32);
+}

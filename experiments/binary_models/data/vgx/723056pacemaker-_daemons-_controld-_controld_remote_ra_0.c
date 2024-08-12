@@ -1,0 +1,16 @@
+static VAR1
+FUN1(gpointer VAR2)
+{
+VAR3 *VAR4 = NULL;
+VAR5 *VAR6 = VAR2;
+
+FUN2("", VAR6->VAR7);
+VAR6->VAR8 = 0;
+
+VAR4 = FUN3(VAR6->VAR7);
+
+FUN4(VAR4, VAR6);
+FUN5(VAR6);
+
+return VAR9;
+}

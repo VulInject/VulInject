@@ -1,0 +1,16 @@
+static VAR1 FUN1(struct VAR2 *VAR3, struct VAR4 *VAR5)
+{
+struct VAR6 *VAR7 = VAR5->VAR8;
+u_long VAR9;
+if (VAR3 == &VAR7->VAR10)
+return 0;
+VAR9 = FUN1(VAR3->VAR11, VAR5);
+if (VAR9) {
+if (VAR3->VAR12 >= 0x100000)
+FUN2(&VAR7->VAR10, VAR3->VAR12, VAR3->VAR13);
+return VAR9;
+}
+if (VAR3->VAR12 < 0x100000)
+return 0;
+return FUN3(VAR5, VAR3->VAR12, VAR3->VAR13, VAR14, VAR15);
+}

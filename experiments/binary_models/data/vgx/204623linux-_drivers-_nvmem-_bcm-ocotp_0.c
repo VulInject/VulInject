@@ -1,0 +1,37 @@
+static int FUN1(void *VAR1, unsigned int VAR2, void *VAR3,
+size_t VAR4)
+{
+struct VAR5 *VAR6 = VAR1;
+VAR7 *VAR8 = VAR3;
+u32 VAR9;
+u32 VAR10 = VAR2 / VAR6->VAR11->VAR12;
+int VAR13, VAR14;
+
+if (VAR2 % VAR6->VAR11->VAR12)
+return -VAR15;
+
+VAR14 = FUN2(VAR6->VAR16);
+if (VAR14)
+return -VAR17;
+
+for (VAR9 = 0; VAR9 < VAR4;) {
+FUN3(VAR6->VAR16, VAR18);
+FUN4(VAR6->VAR16, VAR10++);
+for (VAR13 = 0; VAR13 < VAR6->VAR19->VAR20; VAR13++) {
+FUN5(*VAR8, VAR6->VAR16 + VAR6->VAR19->VAR21[VAR13]);
+VAR8++;
+VAR9 += sizeof(*VAR8);
+}
+FUN6(VAR6->VAR16);
+VAR14 = FUN7(VAR6->VAR16, VAR22);
+FUN8(VAR6->VAR16);
+if (VAR14) {
+FUN9(VAR6->VAR23, "", VAR14);
+return -VAR17;
+}
+}
+
+FUN10(VAR6->VAR16);
+
+return 0;
+}

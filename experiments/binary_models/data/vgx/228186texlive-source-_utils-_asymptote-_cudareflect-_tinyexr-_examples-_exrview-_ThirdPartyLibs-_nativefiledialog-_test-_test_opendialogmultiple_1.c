@@ -1,0 +1,1 @@
+int main ( void ) { VAR1 * VAR2 = NULL ; nfdpathset_t VAR3 ; nfdresult_t VAR4 = FUN1 ( "" , NULL , & VAR3 ) ; if ( VAR4 == VAR5 ) { int VAR6 ; for ( VAR6 = 0 ; VAR6 < FUN2 ( & VAR3 ) ; ++ VAR6 ) { VAR1 * VAR7 = FUN3 ( & VAR3 , VAR6 ) ; FUN4 ( "" , VAR6 , VAR7 ) ; } FUN5 ( & VAR3 ) ; } if ( VAR4 == VAR8 ) { FUN6 ( "" ) ; } else { FUN4 ( "" , FUN7 ( ) ) ; } return 0 ; }

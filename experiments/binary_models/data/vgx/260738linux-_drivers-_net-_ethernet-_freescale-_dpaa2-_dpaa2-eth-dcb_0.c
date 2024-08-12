@@ -1,0 +1,44 @@
+static int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR2);
+struct dpni_link_cfg VAR7 = {0};
+bool VAR8;
+int VAR9;
+
+if (VAR4->VAR10 || VAR4->VAR11)
+return -VAR12;
+
+
+if (VAR6->VAR4.VAR13 == VAR4->VAR13)
+return 0;
+
+
+VAR8 = FUN3(VAR6->VAR14.VAR15);
+if (!FUN4(VAR6->VAR14.VAR15) || !VAR8)
+FUN5(VAR2, "");
+
+VAR7.VAR16 = VAR6->VAR14.VAR16;
+VAR7.VAR15 = VAR6->VAR14.VAR15;
+if (VAR4->VAR13)
+VAR7.VAR15 |= VAR17;
+else
+VAR7.VAR15 &= ~VAR17;
+VAR9 = FUN6(VAR6->VAR18, 0, VAR6->VAR19, &VAR7);
+if (VAR9) {
+FUN7(VAR2, "");
+return VAR9;
+}
+
+
+VAR9 = FUN8(VAR6, VAR4->VAR13);
+if (VAR9)
+return VAR9;
+
+memcpy(&VAR6->VAR4, VAR4, sizeof(VAR6->VAR4));
+VAR6->VAR20 = !!VAR4->VAR13;
+
+FUN9(VAR6, VAR8, VAR6->VAR20);
+
+return 0;
+}

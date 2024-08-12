@@ -1,0 +1,1 @@
+int FUN1 ( int VAR1 , int VAR2 ) { struct ioc_vol VAR3 ; VAR3 . VAR4 [ 0 ] = VAR1 ; VAR3 . VAR4 [ 1 ] = VAR2 ; VAR3 . VAR4 [ 3 ] = 0 ; return FUN2 ( VAR5 , VAR6 , & VAR3 ) ; }

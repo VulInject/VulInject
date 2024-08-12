@@ -1,0 +1,1 @@
+( VAR1 ) ; int FUN1 ( struct VAR2 * VAR3 , u32 VAR4 , u32 VAR5 , int VAR6 ) { int VAR7 = 0 ; { FUN2 ( VAR8 ) ; VAR7 += VAR8 ; } VAR7 < VAR6 ; return - VAR9 ; }

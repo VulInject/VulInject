@@ -1,0 +1,28 @@
+bool FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+struct VAR5 *VAR5 = FUN2(VAR2->VAR6);
+struct VAR7 *VAR8 = FUN3(VAR2);
+
+
+
+FUN4("",
+VAR2, FUN5(VAR8->VAR9.VAR10.VAR11), FUN5(VAR8->VAR9.VAR10.VAR12));
+
+
+FUN6(VAR2, VAR2->VAR13 - (VAR14 *)VAR8);
+
+VAR4 = FUN7(VAR5, VAR2, FUN5(VAR8->VAR9.VAR10.VAR11));
+if (VAR4) {
+struct VAR1 *VAR15 = FUN8(VAR2, VAR16);
+
+FUN4("", VAR4);
+if (VAR15)
+FUN9(VAR4, VAR15);
+FUN10(VAR4);
+return true;
+}
+FUN4("");
+
+return false;
+}

@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { ( void ) FUN2 ( ) ; if ( VAR1 ) { FUN3 ( VAR1 ) ; VAR1 = NULL ; } }

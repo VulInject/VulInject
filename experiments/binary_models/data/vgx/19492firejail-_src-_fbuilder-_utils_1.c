@@ -1,0 +1,1 @@
+char * FUN1 ( char * VAR1 ) { assert ( VAR1 ) ; if ( FUN2 ( VAR1 ) ) { return NULL ; } char * VAR2 = strdup ( VAR1 ) ; if ( ! VAR2 ) { FUN3 ( "" ) ; } char * VAR3 = strrchr ( VAR2 , '' ) ; if ( ! VAR3 ) { return NULL ; } * VAR3 = '' ; return VAR2 ; }

@@ -1,0 +1,86 @@
+static void
+FUN1(struct VAR1 *VAR1, caddr_t VAR2, size_t VAR3,
+struct VAR4 **VAR5, uint_t VAR6, uint_t VAR7, uint_t VAR8)
+{
+int  VAR9;
+size_t VAR10;
+pgcnt_t	VAR11, VAR12;
+tte_t VAR13;
+VAR14 *VAR15;
+uint_t VAR16;
+
+FUN2(!((VAR17)VAR2 & VAR18));
+FUN3(VAR1, VAR8, VAR2, VAR3);
+
+if (VAR1->VAR19)
+FUN4(VAR3, VAR1->VAR20, VAR2);
+
+if ((VAR1 != VAR21) && FUN5(VAR1->VAR20) &&
+(VAR2 < VAR22) && (VAR6 & VAR23) &&
+!(VAR7 & VAR24)) {
+FUN6(VAR25, ""
+"");
+VAR6 &= ~VAR23;
+}
+
+
+VAR12 = VAR3 >> VAR26;
+
+if (VAR7 & VAR24) {
+VAR16 = VAR27;
+} else {
+VAR16 = VAR28;
+}
+
+if (VAR12 < VAR29 || VAR16 == VAR30) {
+FUN7(VAR1, VAR2, VAR5, VAR6, VAR7, VAR12,
+VAR8);
+return;
+}
+
+while (VAR12 >= VAR29) {
+VAR15 = *VAR5;
+for (VAR9 = VAR15->VAR31; VAR9 != VAR32; VAR9--) {
+
+if (VAR16 & (1 << VAR9))
+continue;
+
+VAR11 = FUN8(VAR9);
+VAR10 = VAR11 << VAR26;
+if ((VAR12 >= VAR11) &&
+FUN9(VAR2, VAR10) &&
+FUN9(VAR15->VAR33, VAR11)) {
+
+FUN10(&VAR13, (*VAR5)->VAR33,
+VAR6, VAR9);
+if (!FUN11(VAR1, &VAR13, VAR2,
+VAR5, VAR7, VAR8)) {
+break;
+}
+}
+}
+if (VAR9 == VAR32) {
+
+VAR11 = ((VAR17)VAR2 >> VAR26)
+& (VAR29-1);
+VAR11 = VAR29 - VAR11;
+FUN2(VAR11 <= VAR12);
+VAR10 = VAR11 * VAR34;
+FUN7(VAR1, VAR2, VAR5, VAR6, VAR7,
+VAR11, VAR8);
+}
+VAR2 += VAR10;
+VAR12 -= VAR11;
+VAR5 += VAR11;
+}
+
+if (VAR12) {
+FUN7(VAR1, VAR2, VAR5, VAR6, VAR7, VAR12,
+VAR8);
+}
+
+
+if ((VAR7 & VAR24) == 0) {
+FUN12(VAR1, 1);
+}
+}

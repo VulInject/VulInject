@@ -1,0 +1,1 @@
+gboolean FUN1 ( VAR1 * VAR2 , VAR1 * VAR3 ) { VAR1 * VAR4 = VAR2 ; while ( VAR4 -> VAR4 != NULL ) { if ( VAR4 -> VAR4 == VAR3 ) { return VAR5 ; } VAR4 = VAR4 -> VAR4 ; } return VAR6 ; }

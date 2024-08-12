@@ -1,0 +1,1 @@
+static int FUN1 ( unsigned int VAR1 ) { int VAR2 = 1 << VAR1 ; unsigned long VAR3 ; int VAR4 ; FUN2 ( & VAR5 , VAR3 ) ; if ( VAR1 < 8 ) { VAR4 = FUN3 ( VAR6 ) & VAR2 ; } else { VAR4 = FUN3 ( VAR7 ) & ( VAR2 >> 8 ) ; } FUN4 ( & VAR5 , VAR3 ) ; return VAR4 ; }

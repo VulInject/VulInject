@@ -1,0 +1,17 @@
+static int FUN1(VAR1 *VAR2, int VAR3)
+{
+    VAR4 *VAR5 = (VAR4 *)VAR2;
+    int VAR6, VAR7;
+    int64_t VAR8;
+    int64_t VAR9;
+    int64_t VAR10;
+    VAR8 = FUN2(VAR11);
+    VAR9 = VAR8 - VAR5->VAR12;
+    VAR10 = FUN3(VAR9, VAR2->VAR13.VAR14, FUN4());
+    VAR10 = FUN5(VAR10, VAR15);
+    VAR7 = VAR10 >> VAR2->VAR13.VAR16;
+    VAR5->VAR12 = VAR8;
+    VAR6 = FUN5(VAR3, VAR7);
+    VAR2->VAR17 = (VAR2->VAR17 + VAR6) % VAR2->VAR7;
+    return VAR6;
+}

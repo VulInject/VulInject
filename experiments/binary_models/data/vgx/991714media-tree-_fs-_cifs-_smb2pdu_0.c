@@ -1,0 +1,75 @@
+static int
+FUN1(const unsigned int VAR1, struct VAR2 *VAR3,
+u64 VAR4, u64 VAR5, u32 VAR6, int VAR7,
+unsigned int VAR8, void **VAR9, unsigned int *VAR10)
+{
+struct VAR11 *VAR12;
+struct VAR13 *VAR14 = NULL;
+struct VAR15 *VAR16;
+struct kvec VAR17;
+int VAR18 = 0;
+int VAR19;
+unsigned int VAR20;
+struct VAR21 *VAR22;
+struct VAR23 *VAR24 = VAR3->VAR24;
+int VAR25 = 0;
+
+if (VAR24 && (VAR24->VAR22))
+VAR22 = VAR24->VAR22;
+else
+return -VAR26;
+
+if (!VAR8)
+return -VAR27;
+
+VAR16 = FUN2(sizeof(struct VAR15) * VAR8, VAR28);
+if (!VAR16)
+return -VAR29;
+
+VAR18 = FUN3(VAR30, VAR3, (void **) &VAR12);
+if (VAR18) {
+FUN4(VAR16);
+return VAR18;
+}
+
+if (FUN5(VAR3))
+VAR25 |= VAR31;
+
+VAR12->VAR32.VAR33.VAR34 = FUN6(VAR6);
+
+VAR12->VAR35 = VAR36;
+VAR12->VAR37 = VAR7;
+VAR12->VAR38 = VAR4;
+VAR12->VAR39 = VAR5;
+
+
+VAR12->VAR40 =
+FUN7(sizeof(struct VAR11) - 1 - 4);
+VAR12->VAR41 = FUN6(*VAR10);
+
+FUN8(VAR12, *VAR10 - 1 );
+
+memcpy(VAR12->VAR42, *VAR9, *VAR10);
+
+VAR16[0].VAR43 = (char *)VAR12;
+
+VAR16[0].VAR44 = FUN9(VAR12) + 4;
+
+for (VAR20 = 1; VAR20 < VAR8; VAR20++) {
+FUN8(VAR12, VAR10[VAR20]);
+FUN10(&VAR12->VAR41, VAR10[VAR20]);
+VAR16[VAR20].VAR43 = (char *)VAR9[VAR20];
+VAR16[VAR20].VAR44 = VAR10[VAR20];
+}
+
+VAR18 = FUN11(VAR1, VAR24, VAR16, VAR8, &VAR19, VAR25, &VAR17);
+FUN12(VAR12);
+VAR14 = (struct VAR13 *)VAR17.VAR43;
+
+if (VAR18 != 0)
+FUN13(VAR3, VAR45);
+
+FUN14(VAR19, VAR14);
+FUN4(VAR16);
+return VAR18;
+}

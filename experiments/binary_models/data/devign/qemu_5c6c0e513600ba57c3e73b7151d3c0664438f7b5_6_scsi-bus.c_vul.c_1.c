@@ -1,0 +1,15 @@
+VAR1 *FUN1(size_t VAR2, VAR3 *VAR4, uint32_t VAR5, uint32_t VAR6)
+{
+    VAR1 *VAR7;
+    VAR7 = FUN2(VAR2);
+    VAR7->VAR8 = 2;
+    VAR7->VAR9 = FUN3(VAR4);
+    VAR7->VAR10 = VAR4;
+    VAR7->VAR5 = VAR5;
+    VAR7->VAR6 = VAR6;
+    VAR7->VAR11 = -1;
+    VAR7->VAR12 = true;
+    FUN4(VAR7->VAR10->VAR13, VAR7->VAR6, VAR7->VAR5);
+    FUN5(&VAR4->VAR14, VAR7, VAR15);
+    return VAR7;
+}

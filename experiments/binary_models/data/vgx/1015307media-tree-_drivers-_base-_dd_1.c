@@ -1,0 +1,1 @@
+bool FUN1 ( struct VAR1 * VAR2 ) { switch ( VAR2 -> VAR3 ) { case VAR4 : return true ; case VAR5 : return false ; default : return false ; } } VAR6 { struct VAR7 * VAR8 ; bool VAR9 ; bool VAR10 ; bool VAR11 ; }

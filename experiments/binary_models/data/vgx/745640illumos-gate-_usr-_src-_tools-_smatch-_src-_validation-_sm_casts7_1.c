@@ -1,0 +1,1 @@
+int VAR1 ; int VAR2 ; int main ( void ) { VAR1 = ( unsigned short ) VAR2 ; FUN1 ( VAR1 , NULL ) ; return 0 ; }

@@ -1,0 +1,28 @@
+void FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 *VAR6, ram_addr_t VAR7, int VAR8)
+{
+    VAR9 *VAR10;
+    VAR5 *VAR11;
+    VAR12 *VAR13;
+    int VAR14;
+    VAR14 = VAR15;
+    VAR10 = (VAR9 *)FUN2(VAR2, "", sizeof(VAR9), -1, NULL, NULL);
+    VAR11 = VAR10->VAR16.VAR17;
+    VAR11[0x00] = (VAR5)(VAR18 & 0xff);
+    VAR11[0x01] = (VAR5)(VAR18 >> 8);
+    VAR11[0x02] = (VAR5)(VAR14 & 0xff);
+    VAR11[0x03] = (VAR5)(VAR14 >> 8);
+    VAR11[0x04] = VAR19 | VAR20;
+    VAR11[0x0a] = VAR21;
+    VAR11[0x0b] = VAR22;
+    VAR11[0x0e] = VAR23;
+    VAR13 = &VAR10->VAR24;
+    FUN3((VAR25 *)VAR13, VAR4, VAR6, VAR7, VAR8);
+    FUN4(VAR13, VAR14, 1);
+    VAR13->VAR26 = FUN5(VAR13->VAR4, VAR13->update, VAR13->VAR27, VAR13->VAR28, VAR13->VAR29, VAR13);
+    VAR13->VAR30 = (VAR31 *)VAR10;
+    FUN6((VAR31 *)VAR10, 0, 0x2000000, VAR32, VAR33);
+    if (VAR14 == VAR15)
+    {
+        FUN6((VAR31 *)VAR10, 1, VAR34, VAR35, VAR36);
+    }
+}

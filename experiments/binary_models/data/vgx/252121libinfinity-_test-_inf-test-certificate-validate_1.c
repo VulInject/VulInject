@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 , gpointer VAR5 ) { VAR6 * VAR7 ; InfXmlConnectionStatus VAR8 ; VAR7 = FUN2 ( VAR5 , NULL ) ; FUN3 ( FUN4 ( VAR2 ) , "" , & VAR8 , NULL ) ; if ( VAR8 == VAR9 || VAR8 == VAR10 || VAR8 == VAR11 ) { if ( FUN5 ( VAR7 ) ) { FUN6 ( VAR7 ) ; } } }

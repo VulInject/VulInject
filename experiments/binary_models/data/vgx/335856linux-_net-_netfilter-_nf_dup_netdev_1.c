@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , enum flow_action_id VAR5 , int VAR6 ) { struct VAR7 * VAR8 ; struct VAR9 * VAR10 ; VAR10 = FUN2 ( VAR2 -> VAR11 , VAR6 ) ; VAR8 = & VAR4 -> VAR12 -> VAR13 . VAR14 [ VAR2 -> VAR15 ++ ] ; VAR8 -> VAR5 = VAR5 ; VAR8 -> VAR10 = VAR10 ; return 0 ; }

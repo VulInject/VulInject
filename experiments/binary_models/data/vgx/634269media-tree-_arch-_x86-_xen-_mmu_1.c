@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , pgtable_t VAR3 , unsigned long VAR4 , void * VAR5 ) { struct VAR6 * VAR7 = VAR5 ; pte_t VAR8 = FUN2 ( FUN3 ( * VAR7 -> VAR9 , VAR7 -> VAR10 ) ) ; if ( VAR7 -> VAR11 ) { ( * VAR7 -> VAR9 ) ++ ; } else { VAR7 -> VAR9 ++ ; } VAR7 -> VAR12 -> VAR13 = FUN4 ( VAR2 ) . VAR14 ; VAR7 -> VAR12 -> VAR15 = FUN5 ( VAR8 , NULL ) ; VAR7 -> VAR12 ++ ; return 0 ; }

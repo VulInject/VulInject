@@ -1,0 +1,24 @@
+static void FUN1(struct VAR1 *VAR1, char VAR2[],
+VAR3 *VAR4, VAR3 *VAR5, VAR6 *VAR7)
+{
+struct acpi_buffer VAR8 = { VAR9 };
+acpi_handle VAR10 = FUN2(VAR1);
+union VAR11 *VAR12;
+
+if (FUN3(VAR13))
+return;
+
+if (FUN4(FUN5(VAR10, VAR2, NULL, &VAR8)))
+return;
+
+VAR12 = (union VAR11 *)VAR8.VAR14;
+if (VAR12->VAR15 == VAR16 && VAR12->VAR17.VAR18 == 3) {
+const union VAR11 *VAR19 = VAR12->VAR17.VAR20;
+
+*VAR4 = (VAR3)VAR19[0].VAR21.VAR22;
+*VAR5 = (VAR3)VAR19[1].VAR21.VAR22;
+*VAR7 = (VAR6)VAR19[2].VAR21.VAR22;
+}
+
+FUN6(VAR8.VAR14);
+}

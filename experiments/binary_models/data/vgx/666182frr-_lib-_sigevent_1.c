@@ -1,0 +1,1 @@
+static void * FUN1 ( void * VAR1 ) { if ( VAR1 ) { return ( void * ) ( ( ( VAR2 * ) VAR1 ) -> VAR3 . VAR4 -> VAR5 ) ; } return NULL ; }

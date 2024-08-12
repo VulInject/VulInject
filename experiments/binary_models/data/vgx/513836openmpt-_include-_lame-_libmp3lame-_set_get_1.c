@@ -1,0 +1,1 @@
+int FUN1 ( const VAR1 * VAR2 ) { if ( FUN2 ( VAR2 ) ) { lame_internal_flags const * const VAR3 = VAR2 -> VAR4 ; } return 0 ; }

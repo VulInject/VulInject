@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( void ) { VAR1 * VAR2 ; if ( ! FUN2 ( 0 , NULL ) ) { return NULL ; } VAR2 = malloc ( sizeof ( VAR1 ) ) ; if ( VAR2 == NULL ) { FUN3 ( VAR3 ) ; return NULL ; } VAR2 -> VAR4 = 1 ; FUN4 ( , 0 , 1 ) FUN5 ( VAR5 , VAR2 , & VAR2 -> VAR6 ) ; return VAR2 ; }

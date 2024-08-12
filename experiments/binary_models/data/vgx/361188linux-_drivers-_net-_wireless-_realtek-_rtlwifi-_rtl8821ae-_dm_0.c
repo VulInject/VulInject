@@ -1,0 +1,269 @@
+void FUN1(struct VAR1 *VAR2,
+enum pwr_track_control_method VAR3,
+u8 VAR4, u8 VAR5)
+{
+struct VAR6 *VAR7 = FUN2(VAR2);
+struct VAR8	*VAR9 = FUN3(FUN2(VAR2));
+struct VAR10 *VAR11 = &VAR7->VAR12;
+u32 VAR13[2];
+u8 VAR14 = 26; 
+u8 VAR15 = 0xFF;
+s8 VAR16 = 0;
+
+if (VAR9->VAR15 != 0xFF)
+VAR15 =
+FUN4(VAR2, VAR9->VAR15);
+
+FUN5(VAR7, VAR17, VAR18,
+"", VAR19);
+
+if (VAR15 != 0xFF) {
+
+if ((VAR15 >= VAR20) && (VAR15 <= VAR21))
+VAR14 = 32; 
+
+else if ((VAR15 >= VAR22) && (VAR15 <= VAR23))
+VAR14 = 30; 
+else if (VAR15 == VAR24)
+VAR14 = 28; 
+
+
+else if ((VAR15 >= VAR25) && (VAR15 <= VAR26))
+VAR14 = 34; 
+
+else if ((VAR15 >= VAR27) && (VAR15 <= VAR28))
+VAR14 = 30; 
+
+else if ((VAR15 >= VAR29) && (VAR15 <= VAR30))
+VAR14 = 28; 
+
+else if ((VAR15 >= VAR31) && (VAR15 <= VAR32))
+VAR14 = 34; 
+
+else if ((VAR15 >= VAR33) && (VAR15 <= VAR34))
+VAR14 = 30; 
+
+else if ((VAR15 >= VAR35) && (VAR15 <= VAR36))
+VAR14 = 28; 
+
+
+
+else if ((VAR15 >= VAR37) &&
+(VAR15 <= VAR38))
+VAR14 = 34; 
+
+else if ((VAR15 >= VAR39) &&
+(VAR15 <= VAR40))
+VAR14 = 30; 
+
+else if ((VAR15 >= VAR41) &&
+(VAR15 <= VAR42))
+VAR14 = 28; 
+else if (VAR15 == VAR43) 
+VAR14 = 26; 
+else if (VAR15 == VAR44) 
+VAR14 = 24; 
+else if (VAR15 == VAR45) 
+VAR14 = 22; 
+
+else if ((VAR15 >= VAR46) &&
+(VAR15 <= VAR47))
+VAR14 = 34; 
+
+else if ((VAR15 >= VAR48) &&
+(VAR15 <= VAR49))
+VAR14 = 30; 
+
+else if ((VAR15 >= VAR50) &&
+(VAR15 <= VAR51))
+VAR14 = 28; 
+else if (VAR15 == VAR52) 
+VAR14 = 26; 
+else if (VAR15 == VAR53) 
+VAR14 = 24; 
+else if (VAR15 == VAR54) 
+VAR14 = 22; 
+else
+VAR14 = 24;
+}
+FUN5(VAR7, VAR17, VAR18,
+"",
+VAR15, VAR14);
+
+if (VAR3 == VAR55) {
+FUN5(VAR7, VAR17, VAR18,
+"", VAR19);
+
+if (VAR4 == VAR56) {
+u32 VAR57;
+
+VAR13[VAR56] =
+(VAR9->VAR58[VAR56] >
+VAR14) ?
+VAR14 :
+VAR9->VAR58[VAR56];
+VAR57 = VAR13[VAR56];
+FUN5(VAR7, VAR17, VAR18,
+"",
+VAR9->VAR58[VAR56],
+VAR13[VAR56]);
+
+FUN6(VAR2, VAR59, 0xFFE00000,
+VAR60[VAR57]);
+} else {
+u32 VAR57;
+
+VAR13[VAR61] =
+VAR9->VAR58[VAR61] >
+VAR14 ?
+VAR14 :
+VAR9->VAR58[VAR61];
+VAR57 = VAR13[VAR61];
+FUN5(VAR7, VAR17, VAR18,
+"",
+VAR9->VAR58[VAR61],
+VAR13[VAR61]);
+
+FUN6(VAR2, VAR62, 0xFFE00000,
+VAR60[VAR57]);
+}
+} else if (VAR3 == VAR63) {
+FUN5(VAR7, VAR17, VAR18,
+"",
+VAR9->VAR64,
+VAR9->VAR65[VAR4],
+VAR4);
+
+VAR16 = VAR9->VAR64 +
+VAR9->VAR65[VAR4];
+
+if (VAR4 == VAR56) {
+
+if (VAR16 > VAR14) {
+VAR9->VAR66 =
+VAR16 -
+VAR14;
+
+VAR9->VAR67[VAR4] =
+VAR16 -
+VAR14;
+
+FUN6(VAR2, VAR59, 0xFFE00000,
+VAR60[VAR14]);
+
+VAR9->VAR68 = true;
+
+
+FUN7(VAR2,
+VAR11->VAR69,
+VAR56);
+
+FUN5(VAR7, VAR17, VAR18,
+"",
+VAR14,
+VAR9->VAR67[VAR4]);
+} else if (VAR16 < 0) {
+VAR9->VAR66 = VAR16;
+
+VAR9->VAR67[VAR4] =
+VAR16;
+
+FUN6(VAR2, VAR59, 0xFFE00000,
+VAR60[0]);
+
+VAR9->VAR68 = true;
+
+
+FUN7(VAR2,
+VAR11->VAR69, VAR56);
+
+FUN5(VAR7, VAR17, VAR18,
+"",
+VAR9->VAR67[VAR4]);
+} else {
+FUN6(VAR2, VAR59, 0xFFE00000,
+VAR60[(VAR70)VAR16]);
+
+FUN5(VAR7, VAR17, VAR18,
+"",
+VAR16);
+
+if (VAR9->VAR68) {
+VAR9->VAR66 = 0;
+VAR9->VAR67[VAR4] = 0;
+
+
+FUN7(VAR2,
+VAR11->VAR69, VAR56);
+VAR9->VAR68 = false;
+
+FUN5(VAR7, VAR17,
+VAR18,
+"");
+}
+}
+}
+
+if (VAR4 == VAR61) {
+if (VAR16 > VAR14) {
+VAR9->VAR67[VAR4] =
+VAR16 -
+VAR14;
+
+FUN6(VAR2, VAR62,
+0xFFE00000,
+VAR60[VAR14]);
+
+VAR9->VAR71 = true;
+
+
+FUN7(VAR2,
+VAR11->VAR69, VAR61);
+
+FUN5(VAR7, VAR17, VAR18,
+"",
+VAR14,
+VAR9->VAR67[VAR4]);
+} else if (VAR16 < 0) {
+VAR9->VAR67[VAR4] =
+VAR16;
+
+FUN6(VAR2, VAR62, 0xFFE00000,
+VAR60[0]);
+
+VAR9->VAR71 = true;
+
+
+FUN7(VAR2,
+VAR11->VAR69, VAR61);
+
+FUN5(VAR7, VAR17, VAR18,
+"",
+VAR9->VAR67[VAR4]);
+} else {
+FUN6(VAR2, VAR62, 0xFFE00000,
+VAR60[(VAR70)VAR16]);
+
+FUN5(VAR7, VAR17, VAR18,
+"",
+VAR16);
+
+if (VAR9->VAR71) {
+VAR9->VAR67[VAR4] = 0;
+
+
+FUN7(VAR2,
+VAR11->VAR69, VAR61);
+
+VAR9->VAR71 =
+false;
+
+FUN5(VAR7, VAR17, VAR18,
+"");
+}
+}
+}
+} else {
+return;
+}
+}

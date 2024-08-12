@@ -1,0 +1,1 @@
+static void FUN1 ( uint8_t VAR1 , VAR2 * VAR3 , VAR4 * VAR5 ) { VAR5 -> VAR6 = 0xFF ; VAR5 -> VAR7 = 0 ; if ( VAR1 > 0 ) { VAR5 -> VAR6 = VAR3 [ 0 ] ; } if ( VAR1 > 1 ) { VAR5 -> VAR7 = VAR1 - 1 ; VAR5 -> VAR8 = & VAR3 [ 1 ] ; } }

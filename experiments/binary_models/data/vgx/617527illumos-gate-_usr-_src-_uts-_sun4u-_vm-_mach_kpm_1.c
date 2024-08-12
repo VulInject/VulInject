@@ -1,0 +1,1 @@
+pfn_t FUN1 ( caddr_t VAR1 ) { uintptr_t VAR2 ; pfn_t VAR3 ; VAR4 * VAR5 ; FUN2 ( VAR6 && FUN3 ( VAR1 ) ) ; FUN4 ( VAR1 , VAR2 ) ; VAR3 = ( VAR7 ) FUN5 ( VAR2 ) ; VAR5 = FUN6 ( VAR3 , NULL ) ; if ( VAR5 && VAR5 -> VAR8 ) { return ( VAR3 ) ; } else { return ( ( VAR7 ) VAR9 ) ; } }

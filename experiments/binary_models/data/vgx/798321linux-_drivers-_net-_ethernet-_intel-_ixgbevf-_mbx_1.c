@@ -1,0 +1,1 @@
+static s32 FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = & VAR2 -> VAR4 ; int VAR5 = VAR4 -> VAR6 ; if ( ! VAR5 || ! VAR4 -> VAR7 . VAR8 ) { return VAR9 ; } while ( VAR5 && VAR4 -> VAR7 . FUN2 ( VAR2 ) ) { VAR5 -- ; FUN3 ( VAR4 -> VAR10 , NULL ) ; } return VAR5 ?0 : VAR11 ; }

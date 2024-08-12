@@ -1,0 +1,1 @@
+paddr_t FUN1 ( dev_t VAR1 , off_t VAR2 , int VAR3 ) { struct VAR4 * VAR5 = VAR6 ; switch ( FUN2 ( VAR1 ) ) { case 0 : return VAR2 ; default : return - 1 ; } }

@@ -1,0 +1,96 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+int VAR3;
+u32 VAR4;
+struct VAR5 *VAR6;
+
+if (FUN2(VAR2, 5717_PLUS)) {
+u32 VAR7;
+
+VAR2->VAR8 = VAR2->VAR9 + 1;
+
+if (FUN3(VAR2) != VAR10)
+VAR7 = FUN4(VAR11) & VAR12;
+else
+VAR7 = FUN4(VAR13) &
+VAR14;
+if (VAR7)
+VAR2->VAR8 += 7;
+} else if (FUN2(VAR2, VAR15) && FUN2(VAR2, VAR16)) {
+int VAR17;
+
+VAR17 = FUN5(VAR2->VAR18);
+if (VAR17 < 0)
+return VAR17;
+VAR2->VAR8 = VAR17;
+} else
+VAR2->VAR8 = VAR19;
+
+FUN6(VAR2);
+
+if (!FUN2(VAR2, VAR20) || FUN2(VAR2, VAR21))
+return 0;
+
+VAR2->VAR22 = FUN7();
+if (VAR2->VAR22 == NULL)
+return -VAR23;
+
+VAR2->VAR22->VAR24     = "";
+snprintf(VAR2->VAR22->VAR25, VAR26, "",
+(VAR2->VAR18->VAR27->VAR28 << 8) | VAR2->VAR18->VAR29);
+VAR2->VAR22->VAR30     = VAR2;
+VAR2->VAR22->VAR31   = &VAR2->VAR18->VAR32;
+VAR2->VAR22->read     = &VAR33;
+VAR2->VAR22->write    = &VAR34;
+VAR2->VAR22->VAR35 = ~(1 << VAR2->VAR8);
+
+
+if (FUN8(VAR2, VAR36, &VAR4) || (VAR4 & VAR37))
+FUN9(VAR2);
+
+VAR3 = FUN10(VAR2->VAR22);
+if (VAR3) {
+FUN11(&VAR2->VAR18->VAR32, "", VAR3);
+FUN12(VAR2->VAR22);
+return VAR3;
+}
+
+VAR6 = FUN13(VAR2->VAR22, VAR2->VAR8);
+
+if (!VAR6 || !VAR6->VAR38) {
+FUN11(&VAR2->VAR18->VAR32, "");
+FUN14(VAR2->VAR22);
+FUN12(VAR2->VAR22);
+return -VAR39;
+}
+
+switch (VAR6->VAR38->VAR40 & VAR6->VAR38->VAR41) {
+case VAR42:
+VAR6->VAR43 = VAR44;
+VAR6->VAR45 |= VAR46;
+break;
+case VAR47:
+case VAR48:
+VAR6->VAR45 |= VAR49 |
+VAR50 |
+VAR51 |
+VAR46;
+VAR52;
+case VAR53:
+VAR6->VAR43 = VAR54;
+break;
+case VAR55:
+case VAR56:
+VAR6->VAR43 = VAR57;
+VAR6->VAR45 |= VAR46;
+VAR2->VAR58 |= VAR59;
+break;
+}
+
+FUN15(VAR2, VAR21);
+
+if (FUN16(VAR2) == VAR60)
+FUN17(VAR2);
+
+return 0;
+}

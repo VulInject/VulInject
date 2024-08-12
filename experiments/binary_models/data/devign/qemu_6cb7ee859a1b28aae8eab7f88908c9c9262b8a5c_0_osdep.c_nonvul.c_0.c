@@ -1,0 +1,1 @@
+void FUN1(void *VAR1) { FUN2(VAR1, 0, VAR2); }

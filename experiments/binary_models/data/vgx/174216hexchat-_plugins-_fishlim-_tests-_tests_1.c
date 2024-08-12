@@ -1,0 +1,1 @@
+FUN1 ( ) { char * VAR1 = NULL ; char VAR2 [ 1000 ] ; int VAR3 = sizeof ( VAR2 ) - 1 ; FUN2 ( VAR2 , VAR3 ) ; for ( ; VAR3 >= 0 ; -- VAR3 ) { VAR2 [ VAR3 ] = '' ; VAR1 = FUN3 ( ( const unsigned char * ) VAR2 , VAR3 ) ; FUN4 ( VAR1 ) ; FUN5 ( strlen ( VAR1 ) , == , FUN6 ( VAR3 ) ) ; } }

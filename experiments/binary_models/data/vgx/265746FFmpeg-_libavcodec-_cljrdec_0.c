@@ -1,0 +1,45 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4,
+int *VAR5, VAR6 *VAR7)
+{
+const VAR8 *VAR9 = VAR7->VAR10;
+int VAR11       = VAR7->VAR12;
+GetBitContext VAR13;
+int VAR14, VAR15, VAR16;
+
+if (VAR2->VAR17 <= 0 || VAR2->VAR18 <= 0) {
+FUN2(VAR2, VAR19, "");
+return VAR20;
+}
+
+if (VAR11 / VAR2->VAR17 < VAR2->VAR18) {
+FUN2(VAR2, VAR19,
+"");
+return VAR20;
+}
+
+if ((VAR16 = FUN3(VAR2, VAR4, 0)) < 0)
+return VAR16;
+VAR4->VAR21 = VAR22;
+VAR4->VAR23 = 1;
+
+FUN4(&VAR13, VAR9, VAR11 * 8);
+
+for (VAR15 = 0; VAR15 < VAR2->VAR17; VAR15++) {
+VAR8 *VAR24 = &VAR4->VAR10[0][VAR15 * VAR4->VAR25[0]];
+VAR8 *VAR26   = &VAR4->VAR10[1][VAR15 * VAR4->VAR25[1]];
+VAR8 *VAR27   = &VAR4->VAR10[2][VAR15 * VAR4->VAR25[2]];
+for (VAR14 = 0; VAR14 < VAR2->VAR18; VAR14 += 4) {
+VAR24[3] = (FUN5(&VAR13, 5)*33) >> 2;
+VAR24[2] = (FUN5(&VAR13, 5)*33) >> 2;
+VAR24[1] = (FUN5(&VAR13, 5)*33) >> 2;
+VAR24[0] = (FUN5(&VAR13, 5)*33) >> 2;
+VAR24 += 4;
+*(VAR26++) = FUN5(&VAR13, 6) << 2;
+*(VAR27++) = FUN5(&VAR13, 6) << 2;
+}
+}
+
+*VAR5 = 1;
+
+return VAR11;
+}

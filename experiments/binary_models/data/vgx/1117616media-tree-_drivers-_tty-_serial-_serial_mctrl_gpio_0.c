@@ -1,0 +1,44 @@
+struct VAR1 *FUN1(struct VAR2 *VAR3, unsigned int VAR4)
+{
+struct VAR1 *VAR5;
+enum mctrl_gpio_idx VAR6;
+
+VAR5 = FUN2(VAR3->VAR7, VAR4);
+if (FUN3(VAR5))
+return VAR5;
+
+VAR5->VAR3 = VAR3;
+
+for (VAR6 = 0; VAR6 < VAR8; ++VAR6) {
+int VAR9;
+
+if (!VAR5->VAR10[VAR6] || VAR11[VAR6].VAR12)
+continue;
+
+VAR9 = FUN4(VAR5->VAR10[VAR6]);
+if (VAR9 <= 0) {
+FUN5(VAR3->VAR7,
+"",
+VAR11[VAR6].VAR13, VAR4, VAR9);
+return FUN6(VAR9);
+}
+VAR5->VAR14[VAR6] = VAR9;
+
+
+FUN7(VAR5->VAR14[VAR6], VAR15);
+
+VAR9 = FUN8(VAR3->VAR7, VAR5->VAR14[VAR6],
+VAR16,
+VAR17, FUN9(VAR3->VAR7),
+VAR5);
+if (VAR9) {
+
+FUN5(VAR3->VAR7,
+"",
+VAR11[VAR6].VAR13, VAR4, VAR9);
+return FUN6(VAR9);
+}
+}
+
+return VAR5;
+}

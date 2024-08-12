@@ -1,0 +1,28 @@
+FUN1 (struct VAR1 *VAR2)
+{
+struct VAR1 *VAR3;
+
+VAR3 = FUN2 (VAR2);
+if (VAR3)
+{
+
+VAR2->VAR4 = VAR3->VAR4;
+VAR2->VAR5 = VAR3;
+if (VAR3->VAR4)
+(VAR3->VAR4)->VAR5 = VAR2;
+else
+VAR6 = VAR2;
+VAR3->VAR4 = VAR2;
+}
+else
+{
+
+VAR2->VAR4 = VAR7;
+VAR2->VAR5 = NULL;
+if (VAR7)
+VAR7->VAR5 = VAR2;
+else
+VAR6 = VAR2;
+VAR7 = VAR2;
+}
+}

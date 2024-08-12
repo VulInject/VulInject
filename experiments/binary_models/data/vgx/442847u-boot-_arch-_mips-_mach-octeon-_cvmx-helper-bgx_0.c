@@ -1,0 +1,46 @@
+static void FUN1(int VAR1, int VAR2)
+{
+int VAR3;
+int VAR4 = 16;
+struct cvmx_xiface VAR5 = FUN2(VAR1);
+int VAR6 = VAR5.VAR6;
+int VAR7;
+cvmx_bgxx_cmrx_rx_bp_on_t VAR8;
+cvmx_bgxx_cmrx_rx_id_map_t VAR9;
+cvmx_bgxx_cmr_chan_msk_and_t VAR10;
+cvmx_bgxx_cmr_chan_msk_or_t VAR11;
+
+if (VAR12)
+FUN3("", VAR13, VAR5.VAR6,
+VAR5.VAR14, VAR2);
+
+VAR3 = FUN4(VAR1);
+
+VAR8.VAR15 = 0;
+VAR8.VAR16.VAR17 = (VAR18 / (VAR3 * 4 * 16));
+
+
+VAR7 = FUN5(VAR1, VAR2);
+VAR9.VAR15 = FUN6(
+VAR6, FUN7(VAR2, VAR5.VAR14));
+VAR9.VAR16.VAR7 = VAR7;
+
+if (FUN8(VAR19))
+VAR9.VAR16.VAR20 = ((4 * VAR5.VAR14) + 2 + VAR2);
+FUN9(VAR6, FUN7(VAR2, VAR5.VAR14),
+VAR9.VAR15);
+
+VAR10.VAR15 =
+FUN6(VAR6, FUN10(VAR5.VAR14));
+VAR11.VAR15 =
+FUN6(VAR6, FUN11(VAR5.VAR14));
+VAR10.VAR16.VAR21 |= ((1 << VAR4) - 1) << (16 * VAR2);
+VAR11.VAR16.VAR22 |= ((1 << VAR4) - 1) << (16 * VAR2);
+FUN9(VAR6, FUN10(VAR5.VAR14),
+VAR10.VAR15);
+FUN9(VAR6, FUN11(VAR5.VAR14),
+VAR11.VAR15);
+
+FUN9(VAR6, FUN12(VAR2, VAR5.VAR14),
+VAR8.VAR15);
+}

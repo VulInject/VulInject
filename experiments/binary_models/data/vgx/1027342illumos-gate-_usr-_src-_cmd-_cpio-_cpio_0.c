@@ -1,0 +1,183 @@
+int
+FUN1(int VAR1)
+{
+int VAR2 = VAR3;
+major_t VAR4, VAR5;
+minor_t VAR6, VAR7;
+char VAR8 = '';
+static int VAR9 = 0;
+
+if (VAR1 != VAR10) {
+if (VAR11.VAR12 != (VAR11.VAR13 + VAR14)) {
+VAR8 = *(VAR11.VAR13 + VAR14);
+*(VAR11.VAR13 + VAR14) = '';
+}
+}
+
+switch (VAR1) {
+case VAR15:
+(void) memcpy(&VAR16, VAR11.VAR13, VAR17);
+if (VAR16.VAR18 == (short)VAR19) {
+FUN2((char *)&VAR16, VAR17);
+}
+VAR20.VAR21 = VAR16.VAR18;
+VAR20.VAR22 = VAR16.VAR23;
+VAR20.VAR24 = VAR16.VAR25;
+VAR20.VAR26 = VAR16.VAR27;
+VAR20.VAR28 = VAR16.VAR29;
+VAR20.VAR30 = FUN3(VAR16.VAR31);
+VAR20.VAR32 = VAR16.VAR33;
+VAR20.VAR34 = VAR16.VAR35;
+VAR20.VAR36 = VAR16.VAR37;
+VAR20.VAR38 = 0L;
+VAR20.VAR39 = (VAR40)FUN3(VAR16.VAR41);
+VAR20.VAR42 = VAR16.VAR43;
+VAR2 = VAR15;
+break;
+case VAR44:
+if (sscanf(VAR11.VAR13,
+"",
+&VAR20.VAR21, &VAR20.VAR34, &VAR20.VAR32, &VAR20.VAR22,
+&VAR20.VAR24, &VAR20.VAR26, &VAR20.VAR28, &VAR20.VAR36,
+(VAR45 *)&VAR20.VAR30, (VAR46 *)&VAR20.VAR42,
+(VAR47 *)&VAR20.VAR39) == VAR48) {
+VAR2 = VAR44;
+VAR4 = FUN4(VAR20.VAR34);
+VAR5 = FUN4(VAR20.VAR36);
+VAR6 = FUN5(VAR20.VAR34);
+VAR7 = FUN5(VAR20.VAR36);
+if (VAR49) {
+
+VAR20.VAR34 = (VAR4 << 8) | VAR6;
+VAR20.VAR36 = (VAR5 << 8) | VAR7;
+} else {
+VAR20.VAR34 = FUN6(VAR4, VAR6);
+VAR20.VAR36 = FUN6(VAR5, VAR7);
+}
+}
+break;
+case VAR50:
+case VAR51:
+if (sscanf(VAR11.VAR13,
+"",
+&VAR20.VAR21, &VAR20.VAR32, &VAR20.VAR22, &VAR20.VAR24,
+&VAR20.VAR26, &VAR20.VAR28, &VAR20.VAR30,
+(VAR47 *)&VAR20.VAR39, (VAR46 *)&VAR4, (VAR46 *)&VAR6,
+(VAR46 *)&VAR5, (VAR46 *)&VAR7, (VAR46 *)&VAR20.VAR42,
+&VAR20.VAR38) == VAR52) {
+VAR20.VAR34 = FUN6(VAR4, VAR6);
+VAR20.VAR36 = FUN6(VAR5, VAR7);
+VAR2 = VAR1;
+}
+break;
+case VAR53: 
+if (*VAR11.VAR13 == '') {
+*VAR20.VAR54 = '';
+VAR55[0] = '';
+} else {
+VAR56 = (union VAR57 *)VAR11.VAR13;
+VAR20.VAR54[0] = '';
+(void) strncpy((char *)&VAR55,
+VAR56->VAR58.VAR59, VAR60);
+(void) sscanf(VAR56->VAR58.VAR61, "",
+&VAR20.VAR22);
+(void) sscanf(VAR56->VAR58.VAR62, "", &VAR20.VAR24);
+(void) sscanf(VAR56->VAR58.VAR63, "", &VAR20.VAR26);
+(void) sscanf(VAR56->VAR58.VAR64, "",
+(VAR47 *)&VAR20.VAR39);
+(void) sscanf(VAR56->VAR58.VAR65, "",
+(VAR45 *)&VAR20.VAR30);
+(void) sscanf(VAR56->VAR58.VAR66, "",
+(VAR45 *)&VAR20.VAR38);
+if (VAR56->VAR58.VAR67[0] != '')
+VAR20.VAR28 = 1;
+else
+VAR20.VAR28 = 0;
+
+switch (VAR56->VAR58.VAR68) {
+case VAR69:
+
+VAR20.VAR28 = 2;
+break;
+case VAR70:
+VAR20.VAR22 |= (VAR71 & VAR72);
+break;
+case VAR73:
+VAR20.VAR22 |= (VAR71 & VAR74);
+break;
+case VAR75:
+VAR20.VAR22 |= (VAR71 & VAR76);
+break;
+case VAR77:
+VAR20.VAR22 |= (VAR71 & VAR78);
+break;
+}
+
+(void) sscanf(VAR56->VAR58.VAR79, "",
+
+(VAR45 *)&VAR20.VAR80);
+(void) sscanf(VAR56->VAR58.VAR81, "",
+
+(VAR45 *)&VAR20.VAR82);
+(void) sscanf(VAR56->VAR58.VAR83, "",
+(char *)&VAR20.VAR84);
+(void) sscanf(VAR56->VAR58.VAR85, "",
+(char *)&VAR20.VAR86);
+(void) sscanf(VAR56->VAR58.VAR87, "",
+&VAR20.VAR34);
+(void) sscanf(VAR56->VAR58.VAR88, "",
+&VAR20.VAR36);
+(void) strncpy((char *)&VAR89,
+VAR56->VAR58.VAR90, VAR91);
+VAR20.VAR42 = strlen(VAR20.VAR54) + 1;
+VAR20.VAR34 = FUN6(VAR4, VAR6);
+}
+VAR2 = VAR53;
+break;
+case VAR92:
+if (*VAR11.VAR13 == '') {
+*VAR20.VAR54 = '';
+VAR55[0] = '';
+} else {
+VAR56 = (union VAR57 *)VAR11.VAR13;
+VAR20.VAR54[0] = '';
+(void) sscanf(VAR56->VAR58.VAR61, "", &VAR20.VAR22);
+(void) sscanf(VAR56->VAR58.VAR62, "", &VAR20.VAR24);
+(void) sscanf(VAR56->VAR58.VAR63, "", &VAR20.VAR26);
+(void) sscanf(VAR56->VAR58.VAR64, "",
+(VAR47 *)&VAR20.VAR39);
+(void) sscanf(VAR56->VAR58.VAR65, "",
+&VAR20.VAR30);
+(void) sscanf(VAR56->VAR58.VAR66, "",
+&VAR20.VAR38);
+if (VAR56->VAR58.VAR68 == '')	
+VAR20.VAR28 = 1;
+else
+VAR20.VAR28 = 0;
+(void) strncpy(VAR20.VAR54,
+VAR56->VAR58.VAR59, VAR60);
+VAR20.VAR42 = strlen(VAR20.VAR54) + 1;
+(void) strcpy(VAR55, VAR20.VAR54);
+}
+VAR2 = VAR92;
+break;
+case VAR10:
+if (VAR93 == 0 && VAR9 == 0) {
+FUN7();
+VAR9++;
+}
+else
+FUN8();
+VAR2 = VAR10;
+break;
+default:
+FUN9(VAR94, "");
+}
+
+if (VAR1 != VAR10) {
+if (VAR11.VAR12 != (VAR11.VAR13 + VAR14))
+*(VAR11.VAR13 + VAR14) = VAR8;
+}
+
+return (VAR2);
+}

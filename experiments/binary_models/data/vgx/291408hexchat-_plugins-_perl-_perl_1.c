@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * VAR2 ; struct VAR3 * VAR4 ; VAR2 = FUN2 ( VAR5 ) ; if ( VAR2 ) { while ( ( VAR4 = FUN3 ( VAR2 ) ) ) { int VAR6 = strlen ( VAR4 -> VAR7 ) ; if ( VAR6 > 3 && FUN4 ( "" , VAR4 -> VAR7 + VAR6 - 3 ) == 0 ) { char * VAR8 = FUN5 ( VAR5 , VAR4 -> VAR7 , NULL ) ; FUN6 ( VAR8 ) ; FUN7 ( VAR8 ) ; } } FUN8 ( VAR2 , NULL ) ; } }

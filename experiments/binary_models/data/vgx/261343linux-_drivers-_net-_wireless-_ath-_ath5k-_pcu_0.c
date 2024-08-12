@@ -1,0 +1,63 @@
+void
+FUN1(struct VAR1 *VAR2, u32 VAR3, u32 VAR4)
+{
+u32 VAR5, VAR6, VAR7;
+
+
+switch (VAR2->VAR8) {
+case VAR9:
+case VAR10:
+
+
+if (VAR2->VAR11 == VAR12) {
+VAR5 = 0xffffffff;
+VAR6 = 0xffffffff;
+} else {
+VAR5 = 0x0000ffff;
+VAR6 = 0x0007ffff;
+}
+
+FUN2(VAR2, VAR13, VAR14);
+break;
+case VAR15:
+FUN3(VAR2, VAR16, VAR17);
+VAR18;
+default:
+
+VAR5 = (VAR3 - VAR19) << 3;
+VAR6 = (VAR3 - VAR20) << 3;
+break;
+}
+
+
+VAR7 = VAR3 + 1;
+
+
+
+if (VAR2->VAR8 == VAR21 ||
+VAR2->VAR8 == VAR22)
+FUN4(VAR2, 0, VAR23);
+
+FUN4(VAR2, VAR3, VAR23);
+FUN4(VAR2, VAR5, VAR24);
+FUN4(VAR2, VAR6, VAR25);
+FUN4(VAR2, VAR7, VAR26);
+
+
+if (VAR4 & VAR27)
+FUN5(VAR2);
+
+FUN4(VAR2, VAR4 & (VAR28 |
+VAR29),
+VAR30);
+
+
+if (VAR2->VAR11 == VAR12)
+FUN4(VAR2, VAR31, VAR32);
+else
+FUN4(VAR2, VAR31, VAR33);
+
+
+FUN2(VAR2, VAR13, VAR34);
+
+}

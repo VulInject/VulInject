@@ -1,0 +1,1 @@
+kadm5_ret_t FUN1 ( void * VAR1 , kadm5_policy_ent_t VAR2 ) { VAR3 * VAR4 ; FUN2 ( VAR1 ) ; if ( VAR2 == NULL ) { return VAR5 ; } free ( VAR2 -> VAR6 ) ; free ( VAR2 -> VAR7 ) ; for ( ; VAR2 -> VAR8 ; VAR2 -> VAR8 = VAR4 ) { VAR4 = VAR2 -> VAR8 -> VAR9 ; free ( VAR2 -> VAR8 -> VAR10 ) ; free ( VAR2 -> VAR8 ) ; } return VAR5 ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { int VAR3 ; uint32_t VAR4 , VAR5 ; volatile VAR5 = 4 << ( ( VAR4 >> 16 ) & 0xf ) ; FUN2 ( "" , VAR5 , VAR6 ) ; volatile FUN2 ( "" "" , ( VAR4 >> 24 ) , ( VAR4 >> 16 ) & 0xF , ( VAR4 >> 4 ) & 0xFFF , ( VAR4 >> 20 ) & 0xF , VAR4 & 0xF ) ; VAR3 = FUN3 ( VAR2 ) ; FUN4 ( VAR7 , "" ) ; return 0 ; }

@@ -1,0 +1,34 @@
+VAR1 *FUN1(VAR2 *VAR3,
+VAR2 *VAR4,
+const char *VAR5, const char *VAR6)
+{
+VAR7 *VAR8, *VAR9;
+char *VAR10;
+
+FUN2(VAR5 != NULL, NULL);
+if (VAR11 == NULL) return NULL;
+
+VAR9 = NULL;
+if (VAR4 != NULL) {
+FUN3(&VAR9, VAR4, VAR5, VAR6);
+return FUN4(VAR9);
+}
+
+FUN3(&VAR9, NULL, VAR5, VAR6);
+for (VAR8 = VAR11; VAR8 != NULL; VAR8 = VAR8->VAR12) {
+VAR2 *VAR13 = VAR8->VAR14;
+
+if (VAR11->VAR12 == NULL && VAR13 == VAR3)
+VAR10 = FUN5(VAR6);
+else {
+VAR10 = VAR6 == NULL ?
+FUN6("", VAR13->VAR15) :
+FUN6("", VAR6, VAR13->VAR15);
+}
+
+FUN3(&VAR9, VAR13, VAR5, VAR10);
+FUN7(VAR10);
+}
+
+return FUN4(VAR9);
+}

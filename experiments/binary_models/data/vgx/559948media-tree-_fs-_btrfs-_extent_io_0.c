@@ -1,0 +1,26 @@
+struct VAR1 *
+FUN1(struct VAR2 *VAR3, u64 VAR4, int VAR5,
+gfp_t VAR6)
+{
+struct VAR7 *VAR8;
+struct VAR1 *VAR1;
+
+VAR1 = FUN2(VAR6, VAR5, VAR9);
+
+if (VAR1 == NULL && (VAR10->VAR11 & VAR12)) {
+while (!VAR1 && (VAR5 /= 2)) {
+VAR1 = FUN2(VAR6,
+VAR5, VAR9);
+}
+}
+
+if (VAR1) {
+VAR1->VAR13 = VAR3;
+VAR1->VAR14.VAR15 = VAR4;
+VAR8 = FUN3(VAR1);
+VAR8->VAR16 = NULL;
+VAR8->VAR17 = NULL;
+VAR8->VAR18 = NULL;
+}
+return VAR1;
+}

@@ -1,0 +1,1 @@
+( VAR1 ) ; int FUN1 ( VAR2 * VAR3 , const unsigned char * VAR4 , int VAR5 ) { VAR6 * VAR7 ; VAR7 = FUN2 ( ) ; if ( ! VAR7 ) { return 0 ; } if ( ! FUN3 ( VAR7 , VAR4 , VAR5 ) || ! FUN4 ( VAR3 , VAR8 , VAR9 , VAR7 ) ) { return 0 ; } return 1 ; }

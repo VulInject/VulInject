@@ -1,0 +1,1 @@
+FUN1 ( ) { char * VAR1 = NULL ; char * VAR2 = strdup ( "" ) ; struct VAR3 * VAR4 = NULL ; VAR4 = FUN2 ( & VAR1 , VAR2 ) ; FUN3 ( VAR4 == NULL , "" ) ; FUN4 ( strcmp ( VAR2 , VAR4 -> VAR5 ) == 0 , "" , VAR2 , VAR4 -> VAR5 ) ; } END_TEST FUN1 ( VAR6 ) { char * VAR1 = NULL ; char * VAR2 = strdup ( "" ) ; struct VAR3 * VAR4 = NULL ; VAR4 = FUN2 ( & VAR1 , VAR2 ) ; }

@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , VAR3 * * VAR4 , int VAR5 ) { VAR3 * VAR6 ; if ( VAR5 != 1 && VAR5 != 2 ) { FUN2 ( VAR2 , VAR7 , "" , VAR5 ) ; return FUN3 ( VAR8 ) ; } VAR6 = FUN4 ( sizeof ( * VAR6 ) ) ; VAR6 -> VAR2 = VAR2 ; VAR6 -> VAR5 = VAR5 ; FUN5 ( VAR6 ) ; * VAR4 = VAR6 ; return 0 ; }

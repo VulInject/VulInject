@@ -1,0 +1,72 @@
+static int
+FUN1(VAR1 *VAR2, int VAR3, VAR4 *VAR5, VAR6 *VAR7, guint VAR8, VAR9 *VAR10)
+{
+VAR6 *VAR11;
+VAR12 *VAR13;
+guint32     VAR14 = 0;
+
+rdp_field_info_t VAR15[] = {
+{&VAR16,             2, NULL, 0, 0, NULL },
+{&VAR17,           2, NULL, 0, 0, NULL },
+FUN2(&VAR18, 4, VAR14),
+VAR19
+};
+rdp_field_info_t VAR20[] = {
+{&VAR21,  4, NULL, 0, VAR22, NULL },
+{&VAR23,   4, NULL, 0, VAR22, NULL },
+{&VAR24,    4, NULL, 0, VAR22, NULL },
+{&VAR25,    4, NULL, 0, VAR22, NULL },
+{&VAR26,      4, NULL, 0, VAR22, NULL },
+{&VAR27,       4, NULL, 0, VAR22, NULL },
+{&VAR28,       4, NULL, 0, VAR22, NULL },
+{&VAR29,  4, NULL, 0, VAR22, NULL },
+{&VAR30,     4, NULL, 0, VAR22, NULL },
+{&VAR31, 4, NULL, 0, VAR22, NULL },
+{&VAR32, 4, NULL, 0, 0, NULL },
+VAR19,
+};
+rdp_field_info_t VAR33[] = {
+FUN3(&VAR34, 8),
+FUN4(&VAR35, 4, VAR36, VAR20),
+VAR19
+};
+rdp_field_info_t VAR37[] = {
+FUN4(&VAR38, 12, VAR39, VAR33),
+VAR19
+};
+
+VAR13        = FUN5(VAR7, VAR40, VAR2, VAR3, VAR8, VAR41);
+VAR11 = FUN6(VAR13, VAR42);
+
+VAR3 = FUN7(VAR2, VAR3, VAR5, VAR11, VAR15, 0);
+
+if (VAR14 > 0) {
+guint VAR43;
+VAR13        = FUN5(VAR11, VAR44, VAR2, VAR3, VAR14 * 12, VAR41);
+VAR11 = FUN6(VAR13, VAR45);
+
+if (VAR10)
+VAR10->VAR46 = FUN8(VAR14, VAR47);
+
+for (VAR43 = 0; VAR43 < FUN8(VAR14, VAR47); VAR43++) {
+if (VAR10) {
+VAR48 *VAR49 = &VAR10->VAR50[VAR43];
+VAR49->VAR51 = -1; 
+VAR49->VAR52 = FUN9(FUN10(), VAR2,
+VAR3, 8, VAR53);
+VAR49->VAR54 = FUN11(
+VAR49->VAR52);
+}
+VAR3 = FUN7(VAR2, VAR3, VAR5, VAR11,
+VAR37, 0);
+}
+
+if (VAR10) {
+
+VAR10->VAR50[VAR43].VAR51  = 0;
+VAR10->VAR50[VAR43].VAR52 = NULL;
+}
+}
+
+return VAR3;
+}

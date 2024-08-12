@@ -1,0 +1,1 @@
+FUN1 ( ) { bool VAR1 ; VAR1 = VAR2 -> VAR1 ; FUN2 ( & VAR2 -> mutex ) ; return VAR1 ; } VAR3 { VAR4 * VAR2 ; VAR5 * VAR6 ; uint16_t VAR7 ; } VAR3

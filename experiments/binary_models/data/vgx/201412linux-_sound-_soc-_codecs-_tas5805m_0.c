@@ -1,0 +1,94 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = &VAR2->VAR4;
+struct VAR5 *VAR5;
+struct VAR6 *VAR7;
+char VAR8[128];
+const char *VAR9;
+const struct VAR10 *VAR11;
+int VAR12;
+
+VAR5 = FUN2(VAR2, &VAR13);
+if (FUN3(VAR5)) {
+VAR12 = FUN4(VAR5);
+FUN5(VAR4, "", VAR12);
+return VAR12;
+}
+
+VAR7 = FUN6(VAR4, sizeof(struct VAR6), VAR14);
+if (!VAR7)
+return -VAR15;
+
+VAR7->VAR2 = VAR2;
+VAR7->VAR16 = FUN7(VAR4, "");
+if (FUN3(VAR7->VAR16)) {
+FUN5(VAR4, "",
+FUN4(VAR7->VAR16));
+return FUN4(VAR7->VAR16);
+}
+
+FUN8(VAR4, VAR7);
+VAR7->VAR5 = VAR5;
+VAR7->VAR17 = FUN9(VAR4, "", VAR18);
+if (FUN3(VAR7->VAR17)) {
+FUN5(VAR4, "",
+FUN4(VAR7->VAR17));
+return FUN4(VAR7->VAR17);
+}
+
+
+if (FUN10(VAR4, "",
+&VAR9))
+VAR9 = "";
+
+snprintf(VAR8, sizeof(VAR8), "",
+VAR9);
+VAR12 = FUN11(&VAR11, VAR8, VAR4);
+if (VAR12)
+return VAR12;
+
+if ((VAR11->VAR19 < 2) || (VAR11->VAR19 & 1)) {
+FUN5(VAR4, "");
+FUN12(VAR11);
+return -VAR20;
+}
+
+VAR7->VAR21 = VAR11->VAR19;
+VAR7->VAR22 = FUN13(VAR4, VAR11->VAR19, VAR14);
+if (!VAR7->VAR22) {
+FUN12(VAR11);
+return -VAR15;
+}
+memcpy(VAR7->VAR22, VAR11->VAR23, VAR11->VAR19);
+
+FUN12(VAR11);
+
+
+VAR7->VAR24[0] = VAR25;
+VAR7->VAR24[1] = VAR25;
+
+VAR12 = FUN14(VAR7->VAR16);
+if (VAR12 < 0) {
+FUN5(VAR4, "", VAR12);
+return VAR12;
+}
+
+FUN15(100000, 150000);
+FUN16(VAR7->VAR17, 1);
+FUN15(10000, 15000);
+
+FUN17(&VAR7->VAR26, VAR27);
+FUN18(&VAR7->VAR28);
+
+
+VAR12 = FUN19(VAR4, &VAR29,
+&VAR30, 1);
+if (VAR12 < 0) {
+FUN5(VAR4, "", VAR12);
+FUN16(VAR7->VAR17, 0);
+FUN20(VAR7->VAR16);
+return VAR12;
+}
+
+return 0;
+}

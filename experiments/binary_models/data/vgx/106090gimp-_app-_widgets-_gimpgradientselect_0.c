@@ -1,0 +1,57 @@
+FUN1 (VAR1  *VAR2,
+VAR3     *VAR4,
+gboolean        VAR5,
+VAR6        **VAR7)
+{
+VAR8        *VAR9 = FUN2 (VAR4);
+VAR10 *VAR11      = NULL;
+VAR12             *VAR13, *VAR14;
+gdouble              VAR15, VAR16;
+GimpRGB              VAR17;
+gint                 VAR18;
+VAR19           *VAR20;
+VAR21      *VAR22;
+
+VAR18      = FUN3 (VAR2)->VAR23;
+VAR15    = 0.0;
+VAR16  = 1.0 / (VAR18 - 1);
+
+VAR13 = FUN4 (VAR12, 4 * VAR18);
+VAR14     = VAR13;
+
+while (VAR18--)
+{
+VAR11 = FUN5 (VAR9, VAR2->VAR24,
+VAR11, VAR15, VAR25,
+VAR26,
+&VAR17);
+
+*VAR14++ = VAR17.VAR27;
+*VAR14++ = VAR17.VAR28;
+*VAR14++ = VAR17.VAR29;
+*VAR14++ = VAR17.VAR30;
+
+VAR15 += VAR16;
+}
+
+VAR20 = FUN6 ((VAR31 *) VAR13,
+FUN3 (VAR2)->VAR23 * 4 *
+sizeof (VAR12),
+VAR32);
+VAR20->VAR33 = VAR25;
+
+VAR22 =
+FUN7 (VAR2->VAR34,
+VAR2->VAR24,
+NULL, VAR7,
+VAR2->VAR35,
+VAR36,         FUN8 (VAR4),
+VAR37,            VAR20->VAR38 / sizeof (VAR12),
+VAR39, VAR20->VAR40,
+VAR41,        VAR5,
+VAR42);
+
+FUN9 (VAR20);
+
+return VAR22;
+}

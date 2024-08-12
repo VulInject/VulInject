@@ -1,0 +1,1 @@
+( VAR1 ) ; int FUN1 ( struct VAR2 * VAR3 , struct VAR4 * VAR5 , size_t VAR6 , struct VAR7 * VAR7 ) { unsigned long VAR8 = FUN2 ( VAR6 ) >> VAR9 ; return FUN3 ( VAR5 , VAR5 -> VAR10 , FUN4 ( VAR7 ) + VAR5 -> VAR11 , FUN5 ( VAR5 ) << VAR9 , VAR5 -> VAR12 ) ; }

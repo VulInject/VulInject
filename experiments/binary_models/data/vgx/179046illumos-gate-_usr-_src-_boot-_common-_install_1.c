@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { u_int VAR1 ; if ( VAR2 != NULL ) { free ( VAR2 ) ; VAR2 = NULL ; } if ( VAR3 != NULL ) { VAR1 = 0 ; while ( VAR3 [ VAR1 ] != NULL ) { free ( VAR3 [ VAR1 ++ ] ) ; } VAR3 = NULL ; } if ( VAR4 != NULL ) { free ( VAR4 ) ; VAR4 = NULL ; } FUN2 ( ) ; }

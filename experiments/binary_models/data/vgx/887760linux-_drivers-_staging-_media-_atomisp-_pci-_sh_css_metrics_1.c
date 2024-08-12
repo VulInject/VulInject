@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * * VAR2 , struct VAR1 * VAR3 ) { assert ( * VAR2 ) ; assert ( VAR3 ) ; for ( ; * VAR2 ; VAR2 = & ( * VAR2 ) -> VAR4 ) { if ( * VAR2 == VAR3 ) { return ; } } * VAR2 = VAR3 ; VAR3 -> VAR4 = NULL ; }

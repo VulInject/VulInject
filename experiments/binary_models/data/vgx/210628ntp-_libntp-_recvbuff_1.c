@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { VAR1 * VAR2 ; for ( ; ; ) { FUN2 ( VAR2 , VAR3 , VAR4 ) ; if ( VAR2 == NULL ) { break ; } } for ( ; ; ) { FUN3 ( VAR2 , VAR5 , VAR4 ) ; if ( VAR2 == NULL ) { break ; } free ( VAR2 ) ; } }

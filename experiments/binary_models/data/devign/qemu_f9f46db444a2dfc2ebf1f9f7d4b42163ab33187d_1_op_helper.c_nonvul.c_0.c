@@ -1,0 +1,1 @@
+void FUN1(VAR1)(VAR2 *VAR3, target_ulong VAR4, target_ulong VAR5) { FUN2(VAR3, VAR4, VAR5, false); }

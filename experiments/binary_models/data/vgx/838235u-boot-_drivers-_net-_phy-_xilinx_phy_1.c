@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { u32 VAR3 ; ofnode VAR4 ; FUN2 ( "" , VAR5 ) ; VAR4 = FUN3 ( VAR2 ) ; VAR3 = FUN4 ( VAR4 , "" , - 1 ) ; if ( VAR3 == VAR6 ) { VAR2 -> VAR7 |= VAR6 ; } return 0 ; }

@@ -1,0 +1,5 @@
+void FUN1(struct VAR1 *VAR2, uint16_t VAR3)
+{
+FUN2(VAR2, FUN3(VAR3));
+FUN2(VAR2, FUN4(VAR3));
+}

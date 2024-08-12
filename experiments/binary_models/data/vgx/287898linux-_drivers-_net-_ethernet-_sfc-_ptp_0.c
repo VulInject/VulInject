@@ -1,0 +1,80 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+FUN2(VAR3, VAR4);
+FUN2(VAR5, VAR6);
+struct VAR7 *VAR8 = VAR2->VAR9;
+int VAR10;
+u32 VAR11;
+size_t VAR12;
+
+
+FUN3(VAR3, VAR13, VAR14);
+FUN3(VAR3, VAR15, 0);
+VAR10 = FUN4(VAR2, VAR16, VAR3, sizeof(VAR3),
+VAR5, sizeof(VAR5), &VAR12);
+if (VAR10 == 0) {
+VAR11 = FUN5(VAR5, VAR17);
+} else if (VAR10 == -VAR18) {
+VAR11 = VAR19;
+} else if (VAR10 == -VAR20) {
+FUN6(VAR2->VAR21, "");
+return VAR10;
+} else {
+FUN7(VAR2, VAR16, sizeof(VAR3),
+VAR5, sizeof(VAR5), VAR10);
+return VAR10;
+}
+
+switch (VAR11) {
+case VAR22:
+VAR8->VAR23 = VAR24;
+VAR8->VAR25 = VAR26;
+VAR8->VAR27.VAR28 = 1 << 27;
+VAR8->VAR27.VAR29 = 19;
+break;
+case VAR19:
+VAR8->VAR23 = VAR30;
+VAR8->VAR25 = VAR31;
+VAR8->VAR27.VAR28 = 1000000000;
+VAR8->VAR27.VAR29 = 22;
+break;
+case VAR32:
+VAR8->VAR23 = VAR33;
+VAR8->VAR25 = VAR34;
+VAR8->VAR27.VAR28 = 4000000000UL;
+VAR8->VAR27.VAR29 = 24;
+break;
+default:
+return -VAR35;
+}
+
+
+VAR8->VAR27.VAR36 = VAR8->VAR27.VAR28
+- (VAR8->VAR27.VAR28 / 10);
+VAR8->VAR27.VAR37 = (VAR8->VAR27.VAR28 / 4)
++ (VAR8->VAR27.VAR28 / 10);
+
+
+if (VAR10 == 0 &&
+VAR12 >= VAR38)
+VAR8->VAR39 =
+FUN5(VAR5,
+VAR40);
+else
+VAR8->VAR39 = VAR41;
+
+if (VAR10 == 0 &&
+VAR12 >= VAR6)
+VAR8->VAR42 = FUN5(VAR5,
+VAR43);
+else
+VAR8->VAR42 = 0;
+
+
+if (VAR8->VAR42 & (1 << VAR44))
+VAR8->VAR45 = VAR46;
+else
+VAR8->VAR45 = VAR47;
+
+return 0;
+}

@@ -1,0 +1,54 @@
+VAR1 *FUN1( vec3_t VAR2, vec3_t VAR3, 
+qhandle_t VAR4, qhandle_t VAR5,
+int VAR6, qboolean VAR7 ) {
+float			VAR8;
+VAR1	*VAR9;
+int				VAR10;
+vec3_t			VAR11, VAR12;
+
+if ( VAR6 <= 0 ) {
+FUN2( "", VAR6 );
+}
+
+
+VAR10 = rand() & 63;
+
+VAR9 = FUN3();
+if ( VAR7 ) {
+VAR9->VAR13 = VAR14;
+
+
+VAR9->VAR15.VAR16 = rand() % 360;
+FUN4( VAR3, 16, VAR11 );
+FUN5( VAR11, VAR2, VAR12 );
+} else {
+VAR9->VAR13 = VAR17;
+FUN6( VAR2, VAR12 );
+
+
+if ( !VAR3 ) {
+FUN7( VAR9->VAR15.VAR18 );
+} else {
+VAR8 = rand() % 360;
+FUN6( VAR3, VAR9->VAR15.VAR18[0] );
+FUN8( VAR9->VAR15.VAR18, VAR8 );
+}
+}
+
+VAR9->VAR19 = VAR20.VAR21 - VAR10;
+VAR9->VAR22 = VAR9->VAR19 + VAR6;
+
+
+VAR9->VAR15.VAR23 = VAR9->VAR19 / 1000.0f;
+
+VAR9->VAR15.VAR4 = VAR4;
+VAR9->VAR15.VAR24 = VAR5;
+
+
+FUN6( VAR12, VAR9->VAR15.VAR2 );
+FUN6( VAR12, VAR9->VAR15.VAR25 );
+
+VAR9->VAR26[0] = VAR9->VAR26[1] = VAR9->VAR26[2] = 1.0;
+
+return VAR9;
+}

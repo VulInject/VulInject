@@ -1,0 +1,281 @@
+char *FUN1( VAR1 *VAR2 ) {
+vec3_t VAR3;
+VAR4   *VAR5, *VAR6, *VAR7;
+VAR8 *VAR9;
+vec3_t VAR10, VAR11;
+qboolean VAR12 = VAR13;
+int VAR14;
+qboolean VAR15 = VAR13;
+float VAR16, VAR17;
+int VAR18;
+
+VAR9 = VAR2->VAR9;
+VAR7 = &VAR19[VAR2->VAR20];
+
+
+
+
+if ( VAR2->VAR21 ) {
+if ( VAR2->VAR22[VAR2->VAR21] < VAR2->VAR23 ) {
+
+if ( VAR2->VAR9->VAR24 != VAR2->VAR21 ) {
+
+VAR14 = -1;
+} else {
+
+VAR6 = FUN2( VAR7, VAR25 );
+VAR14 = FUN3( VAR6, VAR6->VAR26 - VAR27.VAR28, VAR2->VAR9->VAR29, VAR10, VAR2->VAR20, NULL );
+FUN4( VAR6 );
+}
+if ( VAR14 == -1 ) {  
+
+VAR2->VAR30.VAR31 = 0;
+VAR2->VAR32 = 0;
+FUN5( VAR2, VAR13 );
+return FUN6( VAR2 );
+}
+if ( !VAR2->VAR9->VAR33.VAR34 ) {
+
+FUN7( VAR9->VAR35 );
+VAR9->VAR36 |= VAR37;
+}
+VAR2->VAR32 = VAR27.VAR28 + 500;
+return NULL;
+}
+
+VAR2->VAR32 = -1;
+VAR2->VAR38 = VAR27.VAR28 + 2000 + rand() % 2000;    
+return FUN6( VAR2 );
+}
+
+
+if ( VAR2->VAR39 >= VAR27.VAR28 ) {
+if ( !FUN8( VAR2, VAR2->VAR40, VAR2->VAR41, VAR2->VAR42 ) ) {
+
+}
+
+VAR2->VAR43 = VAR2->VAR39 + 1000;
+VAR2->VAR9->VAR44 = 0;
+return FUN9( VAR2 );
+}
+
+
+if ( VAR2->VAR45 > VAR27.VAR28 - 100 ) {
+return FUN10( VAR2, VAR2->VAR46, VAR2->VAR47 );
+}
+
+if ( VAR2->VAR9->VAR24 && ( VAR2->VAR30.VAR48 & VAR49 ) ) {
+return FUN11( VAR2 );
+}
+
+if ( VAR9->VAR29 < 0 ) {
+return FUN11( VAR2 );
+}
+
+
+if ( VAR2->VAR30.VAR50 >= 0 ) {
+return FUN11( VAR2 );
+}
+
+if ( VAR2->VAR38 < VAR27.VAR28 - 4000 ) {
+VAR2->VAR38 = VAR27.VAR28;
+return FUN11( VAR2 );
+}
+
+VAR5 = &VAR19[VAR9->VAR29];
+
+
+if ( !VAR5->VAR51 ) {
+
+if ( !(   ( VAR9->VAR29 < VAR52 )
+&& (   ( VAR5->VAR35 && VAR5->VAR35->VAR53.VAR54 == VAR55 )
+|| ( VAR27.VAR28 < 3000 ) ) ) ) { 
+VAR9->VAR29 = -1;
+}
+return FUN11( VAR2 );
+}
+
+
+if (    FUN12( VAR2, VAR9->VAR29, VAR13 )
+&&  VAR2->VAR56 < VAR27.VAR28 ) { 
+if ( ( VAR2->VAR57 > 0 && VAR2->VAR57 < VAR27.VAR28 ) ) {
+
+return FUN13( VAR2 );
+} else if ( VAR2->VAR57 < 0 ) {
+VAR2->VAR57 = VAR27.VAR28 + 1500;
+}
+
+FUN14( VAR2 );
+VAR15 = VAR58;
+} else {
+
+if ( !VAR2->VAR59[VAR9->VAR29].VAR60 || FUN15( VAR9->VAR61, VAR2->VAR59[VAR9->VAR29].VAR62 ) < 16 ) {
+
+
+
+FUN16( VAR19[VAR9->VAR29].VAR35->VAR63.VAR61, VAR2->VAR59[VAR9->VAR29].VAR64, VAR3 );
+FUN17( VAR3, VAR2->VAR9->VAR65 );
+
+
+return FUN6( VAR2 );
+}
+}
+
+
+VAR66 = FUN18( VAR2, VAR67 );
+if ( VAR66 == -1 ) { 
+return NULL;
+} else if ( VAR66 == -2 )     { 
+char *VAR68;
+
+if ( ( VAR68 = FUN19( VAR2, VAR67[0] ) ) ) {
+return VAR68;
+}
+} else if ( !( VAR2->VAR9->VAR36 & VAR37 ) && VAR66 > 0 )       {
+int VAR69;
+for ( VAR69 = 0; VAR69 < VAR66; VAR69++ ) {
+if ( VAR67[VAR69] != VAR2->VAR9->VAR29 && FUN12( VAR2, VAR67[VAR69], VAR13 ) ) {
+VAR2->VAR9->VAR29 = VAR67[VAR69];
+
+return FUN13( VAR2 );
+}
+}
+}
+
+if ( VAR5->VAR35 ) { 
+FUN20( VAR2->VAR59[VAR9->VAR29].VAR64, VAR10 );
+} else    
+{
+FUN20( VAR5->VAR70.VAR71.VAR72, VAR10 );
+}
+
+VAR16 = FUN21( VAR10, VAR2->VAR9->VAR61 );
+
+if ( VAR2->VAR59[VAR9->VAR29].VAR73 > VAR2->VAR59[VAR9->VAR29].VAR74 ||
+VAR16 > 128 ) {
+
+
+
+if ( VAR5->VAR35 && VAR5->VAR75 <= 0 ) {
+VAR2->VAR9->VAR29 = -1;
+
+return FUN6( VAR2 );
+}
+
+
+
+
+
+if ( ( VAR2->VAR76 < 0 ) &&
+( VAR2->VAR9->VAR33.VAR77 != VAR78 || VAR19[VAR2->VAR20].VAR79 > 1 ) ) {
+aicast_predictmove_t move;
+vec3_t VAR3;
+bot_input_t VAR80;
+usercmd_t VAR81;
+trace_t VAR82;
+
+
+FUN22( &VAR82, VAR2->VAR9->VAR61, VAR19[VAR2->VAR20].VAR83.VAR84, VAR19[VAR2->VAR20].VAR83.VAR85, VAR5->VAR83.VAR86, VAR2->VAR20, VAR19[VAR2->VAR20].VAR87 );
+if ( VAR82.VAR20 == VAR5->VAR70.VAR88 ) {
+
+FUN16( VAR5->VAR83.VAR86, VAR2->VAR9->VAR61, VAR3 );
+FUN23( VAR3 );
+if ( !VAR7->VAR79 ) {
+VAR3[2] = 0;
+}
+FUN24( VAR2->VAR20, VAR3, 400 );
+FUN25( VAR2->VAR20, (float) VAR27.VAR28 / 1000, &VAR80 );
+FUN26( VAR2, &VAR80, &VAR81, VAR9->VAR33.VAR89 );
+FUN27( VAR2, 5, 2.0, &move, &VAR81, VAR9->VAR29 );
+
+if ( move.VAR90 == VAR91 ) { 
+FUN17( VAR3, VAR2->VAR9->VAR65 );
+VAR2->VAR9->VAR65[2] *= 0.5;
+VAR12 = VAR58;
+}
+}
+}
+
+if ( !VAR12 ) {
+VAR92 = FUN28( VAR2, VAR10, VAR9->VAR29 );
+if ( VAR92 && VAR92->VAR93 ) {    
+VAR2->VAR9->VAR29 = -1;
+
+return FUN6( VAR2 );
+}
+}
+}
+
+
+
+
+if ( FUN29( VAR2, VAR25 ) ) {
+VAR18 = VAR25;
+} else if ( FUN29( VAR2, VAR94 ) ) {
+VAR18 = VAR94;
+} else { 
+return FUN6( VAR2 );
+}
+
+FUN30( VAR7, VAR18 );
+
+VAR6 = FUN2( VAR7, VAR25 );
+
+VAR14 = FUN3( VAR6, VAR6->VAR26 - VAR27.VAR28, VAR2->VAR9->VAR29, VAR10, VAR2->VAR20, VAR11 );
+
+FUN4( VAR6 );
+if ( !VAR15 ) {
+VAR2->VAR9->VAR24 = VAR18;    
+}
+
+VAR17 = VAR2->VAR9->VAR65[VAR95];
+FUN31( VAR2 );
+
+if ( !FUN32( VAR2, VAR2->VAR9->VAR29, VAR58 ) ) {
+VAR2->VAR9->VAR65[VAR95] = VAR17;
+}
+
+if ( VAR14 == 1 ) {
+
+
+if ( VAR2->VAR23 < VAR27.VAR28 - 200 ) {
+FUN7( VAR9->VAR35 );
+VAR9->VAR36 |= VAR37;
+VAR2->VAR9->VAR24 = VAR18;    
+VAR2->VAR21 = VAR2->VAR9->VAR24;
+
+VAR2->VAR32 = VAR27.VAR28 + 1200;
+if ( VAR2->VAR30.VAR31 < VAR27.VAR28 + 1200 ) {
+VAR2->VAR30.VAR31 = VAR27.VAR28 + 1200;
+}
+return NULL;
+}
+} else if ( VAR14 == -1 ) {
+
+VAR2->VAR38 = VAR27.VAR28 + 3000;  
+
+return FUN6( VAR2 );
+} else if ( VAR14 == -2 ) {
+
+VAR2->VAR9->VAR65[VAR96] += 15 * random();
+} else {
+if ( VAR2->VAR23 < VAR27.VAR28 - 200 ) {
+
+if ( FUN15( VAR11, VAR2->VAR9->VAR61 ) > 100 + FUN15( VAR11, VAR19[VAR2->VAR9->VAR29].VAR83.VAR86 ) ) {
+FUN7( VAR9->VAR35 );
+VAR9->VAR36 |= VAR37;
+VAR2->VAR9->VAR24 = VAR18;    
+VAR2->VAR21 = VAR2->VAR9->VAR24;
+
+VAR2->VAR32 = VAR27.VAR28 + 1200;
+if ( VAR2->VAR30.VAR31 < VAR27.VAR28 + 1200 ) {
+VAR2->VAR30.VAR31 = VAR27.VAR28 + 1200;
+}
+return NULL;
+}
+}
+VAR2->VAR9->VAR65[VAR96] += -10 * random();
+}
+
+return NULL;
+}

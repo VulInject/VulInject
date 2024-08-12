@@ -1,0 +1,1 @@
+static char * FUN1 ( char * VAR1 ) { char * VAR2 = FUN2 ( VAR1 ) ; if ( VAR2 [ 0 ] == 0 ) { return VAR3 ; } if ( _mkdir ( VAR2 ) < 0 ) { return NULL ; } return VAR2 ; }

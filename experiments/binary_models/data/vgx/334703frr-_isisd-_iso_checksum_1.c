@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , int VAR3 , uint16_t VAR4 , int VAR5 ) { uint16_t VAR6 ; uint32_t VAR7 ; uint32_t VAR8 ; VAR7 = VAR4 & 0xff00 ; VAR8 = VAR4 & 0x00ff ; if ( VAR7 == 0 || VAR8 == 0 ) { return 1 ; } VAR6 = FUN2 ( VAR2 , VAR3 , VAR5 ) ; if ( VAR6 == FUN3 ( VAR4 ) ) { return 0 ; } return 1 ; }

@@ -1,0 +1,13 @@
+static VAR1 FUN1(VAR2 *VAR3) {
+
+
+tool_rc VAR4 = FUN2(VAR3, VAR5.VAR6, &VAR5.VAR7,
+&VAR5.VAR8, &VAR5.VAR9, VAR5.VAR10[0],
+VAR5.VAR10[1], VAR5.VAR10[2],
+VAR5.VAR11);
+if (VAR4 != VAR12) {
+FUN3("");
+}
+
+return VAR4;
+}

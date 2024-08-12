@@ -1,0 +1,55 @@
+static int
+FUN1(const VAR1 *VAR2, void *VAR3)
+{
+VAR4 	*VAR5 = VAR2->VAR6;
+VAR7 	*VAR8, *VAR9;
+VAR10 	*VAR11;
+int32_t 		VAR12;
+uint64_t 		VAR13;
+hrtime_t 		VAR14;
+int 			VAR15;
+
+if (strcmp(VAR5->VAR16, "") == 0) {
+VAR8 = &VAR5->VAR17[1];
+VAR9 = &VAR5->VAR17[2];
+
+
+VAR12 = *(VAR18 *)(VAR2->VAR19 + VAR8->VAR20);
+
+
+VAR14 = *((VAR21 *)(VAR2->VAR22[VAR12]));
+
+
+VAR13 = *(VAR23 *)(VAR2->VAR19 +
+VAR9->VAR20);
+
+if (VAR13 == 0)
+VAR13 = VAR24;
+else
+VAR13 = FUN2(VAR13);
+
+
+VAR11 = &VAR25[VAR12];
+
+for (VAR15 = 0; VAR15 < VAR26; VAR15++) {
+if (VAR27[VAR15].VAR13 == VAR13) {
+
+if (VAR11->VAR28 > 0 &&
+VAR11->VAR29 == VAR13) {
+if (VAR14 > VAR11->VAR28) {
+VAR14 -= VAR11->VAR28;
+VAR11->VAR28 = 0;
+VAR11->VAR29 = 0;
+} else {
+return (VAR30);
+}
+}
+
+VAR27[VAR15].VAR31 += VAR14;
+VAR11->VAR32 += VAR14;
+}
+}
+}
+
+return (VAR30);
+}

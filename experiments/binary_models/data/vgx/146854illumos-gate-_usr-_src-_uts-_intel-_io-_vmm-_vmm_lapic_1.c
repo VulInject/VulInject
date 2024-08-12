@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR1 , int VAR2 , int VAR3 ) { struct VAR4 * VAR4 ; cpuset_t VAR5 ; int VAR6 ; if ( VAR2 == - 1 ) { VAR5 = FUN2 ( VAR1 ) ; } else { FUN3 ( VAR2 , & VAR5 ) ; } VAR6 = 0 ; while ( ( VAR2 = FUN4 ( & VAR5 ) ) != 0 ) { VAR2 -- ; FUN5 ( VAR2 , & VAR5 ) ; VAR4 = FUN6 ( VAR1 , VAR2 ) ; VAR6 = FUN7 ( VAR4 , VAR3 ) ; if ( VAR6 ) { break ; } } return ( VAR6 ) ; }

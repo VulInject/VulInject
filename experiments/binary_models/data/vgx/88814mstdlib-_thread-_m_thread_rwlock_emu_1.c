@@ -1,0 +1,1 @@
+M_bool FUN1 ( VAR1 * VAR2 , M_thread_rwlock_type_t VAR3 ) { if ( VAR3 == VAR4 ) { FUN2 ( VAR2 ) ; } else { FUN3 ( VAR2 ) ; } return VAR5 ; }

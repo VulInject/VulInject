@@ -1,0 +1,28 @@
+FUN1(VAR1 *VAR2, struct VAR3 *VAR4)
+{
+    int VAR5 = 0;
+    int VAR6;
+    FUN2(VAR2->VAR7, &VAR4->VAR8);
+    FUN2(VAR2->VAR9.VAR10[0], &VAR4->VAR11);
+    FUN2(VAR2->VAR9.VAR12[0], &VAR4->VAR13);
+    for (VAR6 = 1; VAR6 < 32; ++VAR6)
+    {
+        FUN2(VAR2->VAR9.VAR14[VAR6], &VAR4->VAR15[VAR6]);
+    }
+    FUN2(VAR2->VAR9.VAR10[1], &VAR4->VAR16);
+    FUN2(VAR2->VAR9.VAR10[2], &VAR4->VAR17);
+    FUN2(VAR2->VAR9.VAR10[3], &VAR4->VAR18);
+    FUN2(VAR2->VAR9.VAR12[1], &VAR4->VAR19);
+    FUN2(VAR2->VAR9.VAR12[2], &VAR4->VAR20);
+    FUN2(VAR2->VAR9.VAR12[3], &VAR4->VAR21);
+    {
+        uint32_t VAR22;
+        FUN2(VAR22, &VAR4->VAR23);
+        FUN3(VAR22, 0x3ff, VAR2);
+    }
+    for (VAR6 = 0; VAR6 < 32; ++VAR6)
+    {
+        FUN2(VAR2->VAR24.VAR25[VAR6].VAR26, &VAR4->VAR27[VAR6]);
+    }
+    return VAR5;
+}

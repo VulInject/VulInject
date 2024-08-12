@@ -1,0 +1,81 @@
+static void FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = (struct VAR5 *) VAR4->VAR7;
+struct VAR8 *VAR9 = (struct VAR8 *) VAR6->VAR7;
+struct VAR10 *VAR11;
+struct VAR5 *VAR12;
+struct VAR13 *VAR14;
+struct VAR3 *VAR15;
+unsigned int VAR16 = 0, VAR17;
+int VAR18, VAR19;
+
+VAR15 = FUN2(VAR2, VAR6->VAR20);
+if (FUN3(!VAR15))
+return ;
+
+VAR17 = VAR15->VAR21;
+VAR11 = FUN4(VAR15);
+VAR12 = (struct VAR5 *) VAR15->VAR7;
+VAR14 = (struct VAR13 *) VAR12->VAR7;
+VAR2->VAR22.VAR23 += VAR9->VAR24 - 1;
+
+
+if (FUN3(VAR14->VAR25 < VAR26)) {
+FUN5(VAR15);
+return ;
+}
+
+
+FUN6(&VAR11->VAR27, 0, VAR28);
+
+if (VAR12->VAR29 & FUN7(VAR30))
+VAR16 = VAR14->VAR31[0];
+
+
+VAR18 = VAR9->VAR24;
+for (VAR19 = 0; VAR19 < 4; VAR19++) {
+if (VAR18 >= VAR11->VAR27.VAR28[VAR19].VAR18) {
+VAR18 -= VAR11->VAR27.VAR28[VAR19].VAR18;
+} else if (VAR18 > 0) {
+VAR11->VAR27.VAR28[VAR19].VAR18 = VAR18;
+VAR18 = 0;
+} else {
+VAR11->VAR27.VAR28[VAR19].VAR19 = -1;
+VAR11->VAR27.VAR28[VAR19].VAR18 = 0;
+}
+}
+
+if (!(VAR11->VAR29 & VAR32) &&
+!(VAR9->VAR27 & VAR33))
+VAR11->VAR29 |= VAR34;
+if (VAR9->VAR27 & VAR35)
+VAR11->VAR29 |= VAR36;
+VAR11->VAR27.VAR37 = FUN8(VAR2,
+(int)VAR9->VAR38);
+
+
+switch (VAR14->VAR39) {
+case VAR40: {
+VAR41 *VAR42 = (VAR41 *)(VAR14->VAR31 + VAR16 +
+VAR14->VAR43);
+
+
+VAR42[2] = VAR42[0];
+VAR42[0] = VAR42[1];
+VAR42[1] = (VAR42[0] | 0x20) & 0x7f;	
+
+VAR17 -= 12; 
+break;
+}
+case VAR44:
+VAR17 -= 8; 
+break;
+case VAR45:
+VAR17 -= 4; 
+break;
+}
+
+FUN9(VAR15, VAR17);
+FUN10(VAR15, sizeof(*VAR6) + VAR16 + sizeof(*VAR14));
+FUN11(VAR2->VAR46, VAR15);
+}

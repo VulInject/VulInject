@@ -1,0 +1,1 @@
+static bool FUN1(AddrRange VAR1, AddrRange VAR2) { return (VAR1.VAR3 >= VAR2.VAR3 && VAR1.VAR3 < VAR2.VAR3 + VAR2.VAR4) || (VAR2.VAR3 >= VAR1.VAR3 && VAR2.VAR3 < VAR1.VAR3 + VAR1.VAR4); }

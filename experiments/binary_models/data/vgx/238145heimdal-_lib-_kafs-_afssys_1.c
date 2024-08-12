@@ -1,0 +1,1 @@
+FUN1 ( ) { struct ViceIoctl VAR1 ; if ( FUN2 ( VAR2 ) == 0 ) { FUN3 ( VAR3 , VAR4 , 0 , VAR5 , & VAR1 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ) ; if ( VAR6 == VAR7 ) { VAR8 = VAR9 ; VAR10 [ 0 ] = VAR3 ; return 0 ; } } return 1 ; }

@@ -1,0 +1,1 @@
+static unsigned long FUN1 ( unsigned long VAR1 ) { cfs_time_t VAR2 ; __volatile__ return VAR2 ; }

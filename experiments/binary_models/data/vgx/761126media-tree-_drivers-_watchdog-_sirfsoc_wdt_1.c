@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , unsigned int VAR3 ) { VAR2 -> VAR4 = VAR3 ; FUN2 ( VAR2 , NULL ) ; return 0 ; } static const struct watchdog_info VAR5 = { . VAR6 = VAR7 . VAR8 = 0 . VAR9 = "" } ;

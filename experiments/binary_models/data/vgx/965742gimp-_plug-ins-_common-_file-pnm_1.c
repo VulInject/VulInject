@@ -1,0 +1,1 @@
+FUN1 ( ) { gint VAR1 = 0 ; while ( ! ( VAR2 -> VAR3 ) && ( VAR1 != - 1 ) ) { switch ( VAR1 ) { case 0 : if ( VAR2 -> VAR4 == '' ) { VAR1 = 1 ; FUN2 ( VAR2 , NULL ) ; } if ( ! FUN3 ( VAR2 -> VAR4 ) ) { VAR1 = - 1 ; } else { FUN2 ( VAR2 ) ; } break ; case 1 : if ( VAR2 -> VAR4 == '' ) { VAR1 = 0 ; } FUN2 ( VAR2 ) ; break ; } } }

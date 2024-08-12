@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { cfs_time_t VAR5 ; VAR5 = ( VAR6 * 8 ) & ~ 0x3f ; VAR4 -> VAR7 = VAR5 >> 6 ; VAR4 -> VAR8 = 4 ; VAR4 -> VAR9 = 16 ; VAR4 -> VAR10 = 4 ; return 0 ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , enum serdev_parity VAR3 ) { struct VAR4 * VAR4 = FUN2 ( VAR2 ) ; struct VAR5 * VAR6 = VAR4 -> VAR6 ; struct ktermios VAR7 = VAR6 -> VAR8 ; VAR7 . VAR9 &= ~ ( VAR10 | VAR11 | VAR12 ) ; if ( VAR3 != VAR13 ) { VAR7 . VAR9 |= VAR10 ; if ( VAR3 == VAR14 ) { VAR7 . VAR9 |= VAR11 ; } } FUN3 ( VAR6 , & VAR7 ) ; return 0 ; }

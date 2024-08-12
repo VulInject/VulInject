@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * this , unsigned long VAR2 , void * VAR3 ) { struct VAR4 * VAR5 = FUN2 ( VAR3 ) ; struct VAR6 * VAR7 ; struct VAR4 * VAR8 ; FUN3 ( VAR9 ) ; switch ( VAR2 ) { case VAR10 : VAR7 = FUN4 ( VAR5 -> VAR11 ) ; if ( ! VAR7 ) { return VAR12 ; } VAR8 = VAR7 -> VAR13 ; VAR8 -> VAR14 -> FUN5 ( VAR8 , & VAR9 ) ; FUN6 ( & VAR9 ) ; break ; } return VAR12 ; }

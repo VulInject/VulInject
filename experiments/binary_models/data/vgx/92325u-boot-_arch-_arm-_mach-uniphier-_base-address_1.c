@@ -1,0 +1,1 @@
+int FUN1 ( void ) { u64 VAR1 ; VAR1 = FUN2 ( "" ) ; VAR2 = FUN3 ( VAR1 , VAR3 ) ; VAR1 = FUN2 ( "" ) ; if ( VAR1 == VAR4 ) { return - VAR5 ; } VAR6 = FUN3 ( VAR1 , VAR7 ) ; return 0 ; }

@@ -1,0 +1,1 @@
+int main ( ) { void * VAR1 ; VAR1 = FUN1 ( 0 , ( VAR2 ) - 1 , 0 , 0 , 0 , 0 ) ; return ( 1 ) ; }

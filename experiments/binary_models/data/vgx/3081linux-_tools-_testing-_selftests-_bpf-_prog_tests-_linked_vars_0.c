@@ -1,0 +1,36 @@
+void FUN1(void)
+{
+int VAR1;
+struct VAR2 *VAR3;
+
+VAR3 = FUN2();
+if (!FUN3(VAR3, ""))
+return;
+
+VAR3->VAR4->VAR5 = 1000;
+VAR3->VAR4->VAR6 = 2000;
+VAR3->VAR4->VAR7 = 3000;
+
+VAR1 = FUN4(VAR3);
+if (!FUN5(VAR1, ""))
+goto VAR8;
+
+VAR1 = FUN6(VAR3);
+if (!FUN5(VAR1, ""))
+goto VAR8;
+
+
+FUN7(VAR9);
+
+FUN8(VAR3->VAR4->VAR10, 1000 + 2000 + 3000, "");
+FUN8(VAR3->VAR4->VAR11, 1000 + 2000 + 3000, "");
+
+FUN8(VAR3->VAR4->VAR12, 1 + 2 + 10, "");
+FUN8(VAR3->VAR4->VAR13, 1 + 2 + 10, "");
+
+FUN8(VAR3->VAR4->VAR14, 11 + 22 + 100, "");
+FUN8(VAR3->VAR4->VAR15, 11 + 22 + 100, "");
+
+VAR8:
+FUN9(VAR3);
+}

@@ -1,0 +1,73 @@
+void
+FUN1(void)
+{
+VAR1 *VAR2;
+
+for (VAR2 = VAR3; VAR2 != NULL; VAR2 = VAR2->VAR4) {
+char *VAR5 = VAR2->VAR6;
+VAR7 *VAR8 = FUN2(0, VAR5);
+const char *VAR9 = FUN3(VAR8);
+
+FUN4("", VAR5);
+FUN5(NULL, VAR5, VAR9);
+free(VAR5);
+}
+FUN6(VAR3);
+VAR3 = NULL;
+}
+
+
+
+
+
+
+static VAR10 *VAR11 = NULL;
+static VAR12 *VAR13 = NULL;
+static char *VAR14 = NULL;
+
+static VAR15
+FUN7(VAR16 *VAR17)
+{
+VAR1 *VAR18 = NULL;
+const char *VAR19 = NULL;
+VAR20 *VAR21 = NULL;
+
+if (VAR17 == NULL) {
+return VAR22;
+}
+
+for (VAR18 = VAR17->VAR23; VAR18 != NULL; VAR18 = VAR18->VAR4) {
+VAR1 *VAR24 = NULL;
+VAR25 *VAR26 = (VAR25 *) VAR18->VAR6;
+
+if (FUN8(VAR26->VAR27, VAR28)) {
+continue;
+}
+
+for (VAR24 = VAR26->VAR29; VAR24 != NULL; VAR24 = VAR24->VAR4) {
+VAR30 *VAR31 = (VAR30 *) VAR24->VAR6;
+
+if ((VAR31->VAR32 != VAR33)
+|| FUN8(VAR31->VAR27, VAR34)) {
+continue;
+}
+
+VAR19 = FUN9(VAR31->VAR35, VAR36);
+if (VAR19 && FUN10(VAR19, VAR37, VAR38)) {
+FUN11(VAR31, VAR39);
+VAR21 = VAR31->VAR35;
+FUN12(VAR17, VAR31);
+FUN4("",
+VAR31->VAR40, FUN13(VAR31->VAR35));
+}
+}
+}
+
+if (VAR21 != NULL) {
+FUN14("");
+FUN15(VAR41, NULL, VAR21);
+return VAR42;
+}
+
+return VAR22;
+}

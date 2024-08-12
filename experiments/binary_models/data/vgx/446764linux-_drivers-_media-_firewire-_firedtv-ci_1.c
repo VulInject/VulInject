@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , void * VAR3 ) { struct firedtv_tuner_status VAR4 ; struct VAR5 * VAR6 = VAR3 ; int VAR7 ; VAR7 = FUN2 ( VAR2 , & VAR4 ) ; if ( VAR7 ) { return VAR7 ; } VAR6 -> VAR8 = VAR9 ; VAR6 -> VAR10 = FUN3 ( & VAR4 ) ; return 0 ; }

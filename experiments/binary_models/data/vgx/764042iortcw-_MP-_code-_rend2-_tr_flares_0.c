@@ -1,0 +1,60 @@
+void FUN1( VAR1 *VAR2 ) {
+float			VAR3;
+qboolean		VAR4;
+float			VAR5;
+float			VAR6;
+VAR7           *VAR8;
+
+VAR9.VAR10.VAR11++;
+
+
+
+VAR12.VAR13 = VAR14;
+
+
+VAR8 = VAR12.VAR15;
+if (VAR16.VAR17)
+{
+FUN2(VAR16.VAR17);
+}
+
+
+FUN3( VAR2->VAR18, VAR2->VAR19, 1, 1, VAR20, VAR21, &VAR3 );
+
+
+if (VAR16.VAR17)
+{
+FUN2(VAR8);
+}
+
+VAR6 = VAR9.VAR22.VAR23[14] / 
+( ( 2*VAR3 - 1 ) * VAR9.VAR22.VAR23[11] - VAR9.VAR22.VAR23[10] );
+
+VAR4 = VAR2->VAR24;
+
+if ( -VAR2->VAR25 - -VAR6  > 24 )
+VAR4 = VAR14;
+
+if ( VAR4 ) {
+if ( !VAR2->VAR4 ) {
+VAR2->VAR4 = VAR26;
+VAR2->VAR27 = VAR9.VAR28.VAR29 - 1;
+}
+VAR5 = ( ( VAR9.VAR28.VAR29 - VAR2->VAR27 ) /1000.0f ) * VAR30->VAR31;
+} else {
+if ( VAR2->VAR4 ) {
+VAR2->VAR4 = VAR14;
+VAR2->VAR27 = VAR9.VAR28.VAR29 - 1;
+}
+VAR5 = 1.0f - ( ( VAR9.VAR28.VAR29 - VAR2->VAR27 ) / 1000.0f ) * VAR30->VAR31;
+}
+
+if ( VAR5 < 0 ) {
+VAR5 = 0;
+}
+if ( VAR5 > 1 ) {
+VAR5 = 1;
+}
+
+VAR2->VAR32 = VAR5;
+}

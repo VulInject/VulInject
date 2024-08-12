@@ -1,0 +1,102 @@
+static void FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+int VAR5);
+static void FUN2(struct VAR1 *VAR2, struct VAR6 *VAR7, int free);
+static void FUN3(struct VAR1 *VAR2, struct VAR6 *VAR7, int update);
+static void FUN4(struct VAR6 *VAR7);
+static int FUN5(struct VAR6 *VAR7);
+static int FUN6(struct VAR6 *VAR7);
+static int FUN7(struct VAR6 *VAR7);
+
+
+
+void
+FUN8(void *VAR8, int VAR9, int VAR10, struct VAR11 *VAR12)
+{
+struct VAR1 *VAR2;
+int VAR13, VAR14, VAR15;
+struct VAR6 *VAR7;
+struct VAR16 *VAR17[VAR18];
+unsigned long VAR19;
+struct VAR3 *VAR4;
+
+VAR4 = VAR8;
+if (FUN9(!VAR4 || !VAR12))
+return;
+
+VAR2 = VAR4->VAR2;
+if (FUN9(!VAR2 || !VAR2->VAR20.VAR21 || !VAR2->VAR20.VAR22))
+return;
+
+VAR14 = VAR9; 
+VAR15 = FUN10(VAR2, VAR4, &VAR9, VAR10, VAR12, VAR17);
+if (! VAR15)
+return;
+
+
+for (VAR13 = 0; VAR13 < VAR15; VAR13++) {
+struct VAR16 *VAR23 = VAR17[VAR13];
+if (VAR23 && VAR23->VAR24.VAR25)
+FUN1(VAR2, VAR4, VAR23->VAR24.VAR25);
+}
+
+
+FUN11(VAR2, VAR14, VAR12, 0);
+
+FUN12(&VAR2->VAR26, VAR19);
+for (VAR13 = 0; VAR13 < VAR15; VAR13++) {
+
+
+
+
+if (VAR17[VAR13] == NULL)
+continue;
+
+VAR7 = VAR2->VAR20.FUN13(VAR2, VAR4);
+if (VAR7 == NULL || VAR7->VAR27 < 0)
+continue;
+if (FUN14(VAR7->VAR28))
+VAR2->VAR20.FUN15(VAR7);
+
+VAR7->VAR29 = VAR2->VAR30++;
+VAR7->VAR12 = VAR12;
+VAR7->VAR4 = VAR4;
+VAR7->VAR14 = VAR14;
+VAR7->VAR9 = VAR9;
+VAR7->VAR31 = VAR10;
+VAR7->VAR32 = VAR17[VAR13];
+if (VAR7->VAR32->VAR33)
+VAR7->VAR34 = VAR7->VAR32->VAR33->VAR34;
+else
+VAR7->VAR34 = NULL;
+
+FUN4(VAR7);
+
+VAR7->VAR28 = VAR35;
+if (VAR2->VAR20.VAR36) {
+VAR7->VAR28 = VAR37;
+if (VAR2->VAR20.FUN16(VAR7) >= 0)
+VAR7->VAR28 = VAR35;
+}
+}
+
+
+for (VAR13 = 0; VAR13 < VAR2->VAR38; VAR13++) {
+VAR7 = &VAR2->VAR39[VAR13];
+if (VAR7->VAR28 == VAR35 &&
+VAR7->VAR12 == VAR12) {
+VAR2->VAR20.FUN17(VAR7);
+VAR7->VAR28 = VAR40;
+VAR7->VAR41 = VAR42; 
+}
+}
+FUN18(&VAR2->VAR26, VAR19);
+
+if (VAR4->VAR43 == VAR44) {
+
+struct VAR45 *VAR46 = VAR12->private;
+if (VAR46) {
+VAR46->VAR47[VAR48] = 0;
+VAR46->VAR47[VAR49] = 0;
+}
+}
+}

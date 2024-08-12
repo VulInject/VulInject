@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 ) { int VAR3 ; if ( FUN2 ( VAR2 ) ) { return ( 0 ) ; } if ( ! FUN3 ( VAR2 ) ) { FUN4 ( "" , VAR2 ) ; return ( 0 ) ; } VAR3 = FUN5 ( VAR2 -> VAR4 . VAR5 ) ; if ( FUN6 ( & VAR2 -> VAR4 . VAR6 ) ) { VAR2 -> VAR4 . VAR7 = ( VAR8 ) VAR3 ; return ( 1 ) ; } FUN7 ( VAR3 , NULL ) ; return ( 0 ) ; }

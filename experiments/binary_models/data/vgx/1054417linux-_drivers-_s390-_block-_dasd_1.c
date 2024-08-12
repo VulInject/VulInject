@@ -1,0 +1,1 @@
+( VAR1 ) ; void FUN1 ( struct VAR2 * VAR3 , struct VAR4 * VAR5 ) { unsigned long VAR6 ; FUN2 ( & VAR5 -> VAR7 , VAR6 ) ; FUN3 ( & VAR5 -> VAR8 , VAR3 -> VAR9 ) ; FUN4 ( & VAR5 -> VAR7 , VAR6 ) ; FUN5 ( VAR5 , NULL ) ; }

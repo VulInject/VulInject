@@ -1,0 +1,1 @@
+static void FUN1 ( const char * VAR1 , unsigned char VAR2 [ ] , size_t VAR3 ) { size_t VAR4 ; int VAR5 ; VAR4 = strlen ( VAR1 ) ; if ( VAR4 > VAR3 ) { VAR4 = VAR3 ; } for ( VAR5 = 0 ; VAR5 < VAR4 ; VAR5 ++ ) { VAR2 [ VAR5 ] = VAR6 [ VAR1 [ VAR5 ] ] ; } for ( ; VAR5 < VAR3 ; VAR5 ++ ) { VAR2 [ VAR5 ] = VAR6 [ '' ] ; } }

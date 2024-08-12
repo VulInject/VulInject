@@ -1,0 +1,19 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    struct VAR5 *VAR6 = FUN2(VAR2, struct VAR5, VAR7);
+    struct VAR8 *VAR9;
+    Int128 VAR10;
+    if (!FUN3(VAR4->VAR11))
+    {
+        return;
+    }
+    VAR9 = FUN4(sizeof(*VAR9));
+    VAR10 = FUN5(FUN6(VAR4->VAR12), VAR4->VAR13);
+    VAR10 = FUN7(VAR10, FUN8());
+    FUN9(&VAR9->VAR14, VAR15, VAR16, VAR4->VAR12, FUN10(VAR10));
+    VAR9->VAR11 = VAR4->VAR11;
+    VAR9->VAR17 = VAR4->VAR18 - VAR4->VAR12;
+    VAR9->VAR19 = VAR6;
+    FUN11(VAR4->VAR11, &VAR9->VAR14);
+    FUN12(&VAR6->VAR20, VAR9, VAR21);
+}

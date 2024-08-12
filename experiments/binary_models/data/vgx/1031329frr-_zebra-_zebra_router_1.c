@@ -1,0 +1,1 @@
+static inline int FUN1 ( const struct VAR1 * VAR2 , const struct VAR1 * VAR3 ) { if ( VAR2 -> VAR4 > VAR3 -> VAR4 ) { return 1 ; } if ( VAR2 -> VAR5 < VAR3 -> VAR5 ) { return - 1 ; } if ( VAR2 -> VAR5 > VAR3 -> VAR5 ) { return 1 ; } if ( VAR2 -> VAR6 < VAR3 -> VAR6 ) { return - 1 ; } if ( VAR2 -> VAR6 > VAR3 -> VAR6 ) { return 1 ; } return ( VAR2 -> VAR7 - VAR3 -> VAR7 ) ; }

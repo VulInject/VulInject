@@ -1,0 +1,1 @@
+char * FUN1 ( headerFmt VAR1 , rpmtd VAR2 ) { char * VAR3 = NULL ; char * VAR4 = NULL ; if ( VAR1 -> class != VAR5 && FUN2 ( VAR2 ) != VAR1 -> class ) { VAR4 = xstrdup ( FUN3 ( VAR1 -> class ) ) ; } else { VAR3 = VAR1 -> FUN4 ( VAR2 , & VAR4 ) ; } if ( VAR4 ) { VAR3 = VAR4 ; } return VAR3 ; }

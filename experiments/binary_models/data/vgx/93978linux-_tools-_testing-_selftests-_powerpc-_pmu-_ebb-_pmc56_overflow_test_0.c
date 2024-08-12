@@ -1,0 +1,41 @@
+int FUN1(void)
+{
+struct event VAR1;
+
+FUN2(!FUN3());
+
+
+FUN4(&VAR1, 0x2001e);
+FUN5(&VAR1);
+
+VAR1.VAR2.VAR3 = 1;
+VAR1.VAR2.VAR4 = 1;
+VAR1.VAR2.VAR5 = 1;
+
+FUN6(FUN7(&VAR1));
+
+FUN8(VAR6);
+FUN9();
+
+FUN6(FUN10(&VAR1));
+
+FUN11(VAR7, FUN12(VAR8));
+FUN11(VAR9, 0);
+FUN11(VAR10, 0);
+
+while (VAR11.VAR12.VAR13 < 10)
+FUN6(FUN13());
+
+FUN14();
+FUN15();
+
+FUN16();
+
+FUN17("", VAR14);
+
+FUN18(&VAR1);
+
+FUN6(VAR11.VAR12.VAR13 == 0 || VAR14 != 0);
+
+return 0;
+}

@@ -1,0 +1,65 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+struct rtc_time VAR5;
+struct VAR6 *VAR7;
+int VAR8 = 0;
+
+VAR7 = FUN2(&VAR2->VAR9, sizeof(struct VAR6),
+VAR10);
+if (!VAR7)
+return -VAR11;
+
+FUN3(&VAR2->VAR9, VAR7);
+
+VAR7->VAR12 = FUN4(VAR2, &VAR13);
+if (FUN5(VAR7->VAR12)) {
+FUN6(&VAR2->VAR9, "");
+return FUN7(VAR7->VAR12);
+}
+
+VAR8 = FUN8(&VAR2->VAR9, &VAR5);
+if (VAR8 < 0) {
+VAR8 = FUN9(&VAR2->VAR9);
+if (VAR8 < 0) {
+FUN6(&VAR2->VAR9, "");
+return VAR8;
+}
+}
+
+FUN10(&VAR2->VAR9, "",
+(VAR2->VAR14 + 500) / 1000);
+
+
+VAR4 = FUN11(&VAR2->VAR9);
+if (FUN5(VAR4))
+return FUN7(VAR4);
+
+VAR7->VAR4 = VAR4;
+
+
+if (VAR2->VAR15 > 0) {
+VAR8 = FUN12(&VAR2->VAR9, VAR2->VAR15, NULL,
+VAR16,
+VAR17 | VAR18,
+VAR19.VAR20.VAR21, &VAR2->VAR9);
+if (!VAR8)
+FUN13(&VAR2->VAR9, true);
+else
+FUN6(&VAR2->VAR9, "");
+}
+
+
+FUN14(VAR22, VAR4->VAR23);
+FUN15(VAR24, VAR4->VAR23);
+VAR4->VAR25 = &VAR26;
+VAR4->VAR27 = VAR28;
+VAR4->VAR29 = VAR30;
+VAR4->VAR31 = true;
+
+VAR8 = FUN16(VAR4);
+if (VAR8)
+return VAR8;
+
+return 0;
+}

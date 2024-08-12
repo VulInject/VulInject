@@ -1,0 +1,1 @@
+UINT16 FUN1 ( VAR1 * VAR2 , UINT16 VAR3 , UINT16 VAR4 ) { UINT32 VAR5 = VAR4 ; VAR6 * VAR7 = ( VAR6 * ) VAR2 ; FUN2 ( ( VAR3 & 0x3 ) == 0 ) ; while ( VAR3 > 1 ) { VAR5 += VAR7 [ 0 ] ; VAR7 ++ ; VAR3 -= 2 ; } FUN3 ( VAR5 , NULL ) ; return ( VAR6 ) ~ VAR5 ; }

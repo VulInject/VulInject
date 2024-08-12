@@ -1,0 +1,35 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+unsigned long VAR5, VAR6;
+struct VAR7 *VAR8 = VAR2->VAR9;
+struct VAR10 *VAR11 = VAR2->VAR12.VAR13;
+struct VAR14 *VAR14;
+struct VAR15 *VAR16;
+int VAR17 = 0;
+
+FUN3(VAR16, &VAR4->VAR18, VAR19) {
+VAR5 = VAR8[VAR17].VAR5;
+VAR6 = VAR5 + VAR8[VAR17].VAR20;
+VAR14 = &VAR11->VAR14[VAR17];
+
+switch (VAR16->VAR21) {
+case VAR22:
+VAR14->VAR23 = VAR5;
+VAR14->VAR24 = VAR6;
+VAR14->VAR25 = VAR26;
+break;
+case VAR27:
+VAR14->VAR23 = VAR5;
+VAR14->VAR25 = VAR28;
+break;
+case VAR29:
+VAR14->VAR24 = VAR6;
+VAR14->VAR25 = VAR30;
+break;
+}
+VAR17++;
+}
+
+VAR11->VAR31 = VAR17;
+}

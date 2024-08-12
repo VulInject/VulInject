@@ -1,0 +1,1 @@
+int FUN1 ( u_long VAR1 , char * VAR2 , int VAR3 , char * VAR4 , int VAR5 , void * VAR6 ) { if ( VAR7 ) { FUN2 ( "" , VAR3 , VAR3 , VAR2 ) ; } FUN2 ( "" , VAR5 , VAR5 , VAR4 ) ; return 0 ; }

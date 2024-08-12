@@ -1,0 +1,86 @@
+static void FUN1(const void *VAR1)
+{
+    struct VAR2 *VAR3 = (struct VAR2 *)VAR1;
+    VAR4 *VAR5;
+    VAR4 *VAR6;
+    VAR7 *VAR8;
+    VAR7 *VAR9;
+    VAR10 *VAR11;
+    VAR10 *VAR12;
+    VAR13 *VAR14;
+    const char *const *VAR15;
+    int VAR16[2];
+    struct QIOChannelTLSHandshakeData VAR17 = {false, false};
+    struct QIOChannelTLSHandshakeData VAR18 = {false, false};
+    VAR19 *VAR20 = NULL;
+    VAR21 *VAR22;
+    VAR23 *VAR24;
+    FUN2(FUN3(VAR25, VAR26, 0, VAR16) == 0);
+    mkdir(VAR27, 0700);
+    mkdir(VAR28, 0700);
+    unlink(SERVER_CERT_DIR VAR29);
+    unlink(SERVER_CERT_DIR VAR30);
+    unlink(SERVER_CERT_DIR VAR31);
+    unlink(CLIENT_CERT_DIR VAR29);
+    unlink(CLIENT_CERT_DIR VAR32);
+    unlink(CLIENT_CERT_DIR VAR33);
+    FUN2(FUN4(VAR3->VAR34, SERVER_CERT_DIR VAR29) == 0);
+    FUN2(FUN4(VAR3->VAR35, SERVER_CERT_DIR VAR30) == 0);
+    FUN2(FUN4(VAR36, SERVER_CERT_DIR VAR31) == 0);
+    FUN2(FUN4(VAR3->VAR37, CLIENT_CERT_DIR VAR29) == 0);
+    FUN2(FUN4(VAR3->VAR38, CLIENT_CERT_DIR VAR32) == 0);
+    FUN2(FUN4(VAR36, CLIENT_CERT_DIR VAR33) == 0);
+    VAR5 = FUN5(VAR39, VAR27, &VAR20);
+    FUN2(VAR5 != NULL);
+    VAR6 = FUN5(VAR40, VAR28, &VAR20);
+    FUN2(VAR6 != NULL);
+    VAR14 = FUN6("");
+    FUN7(VAR14);
+    VAR15 = VAR3->VAR15;
+    while (VAR15 && *VAR15)
+    {
+        FUN8(VAR14, 0, *VAR15);
+        VAR15++;
+    }
+    VAR11 = FUN9(VAR16[0], &VAR20);
+    FUN2(VAR11 != NULL);
+    VAR12 = FUN9(VAR16[1], &VAR20);
+    FUN2(VAR12 != NULL);
+    FUN10(FUN11(VAR11), false, NULL);
+    FUN10(FUN11(VAR12), false, NULL);
+    VAR8 = FUN12(FUN11(VAR11), VAR5, VAR3->VAR41, &VAR20);
+    FUN2(VAR8 != NULL);
+    VAR9 = FUN13(FUN11(VAR12), VAR6, "", &VAR20);
+    FUN2(VAR9 != NULL);
+    FUN14(VAR8, VAR42, &VAR17, NULL);
+    FUN14(VAR9, VAR42, &VAR18, NULL);
+    VAR24 = FUN15();
+    do
+    {
+        FUN16(VAR24, VAR43);
+    } while (!VAR17.VAR44 && !VAR18.VAR44);
+    FUN2(VAR17.VAR45 == VAR3->VAR46);
+    FUN2(VAR18.VAR45 == VAR3->VAR47);
+    VAR22 = FUN17();
+    FUN18(VAR22, false, FUN11(VAR8), FUN11(VAR9));
+    FUN19(VAR22);
+    VAR22 = FUN17();
+    FUN18(VAR22, true, FUN11(VAR8), FUN11(VAR9));
+    FUN19(VAR22);
+    unlink(SERVER_CERT_DIR VAR29);
+    unlink(SERVER_CERT_DIR VAR30);
+    unlink(SERVER_CERT_DIR VAR31);
+    unlink(CLIENT_CERT_DIR VAR29);
+    unlink(CLIENT_CERT_DIR VAR32);
+    unlink(CLIENT_CERT_DIR VAR33);
+    FUN20(VAR27);
+    FUN20(VAR28);
+    FUN21(FUN22(VAR6));
+    FUN21(FUN22(VAR5));
+    FUN23(FUN22(VAR9));
+    FUN23(FUN22(VAR8));
+    FUN23(FUN22(VAR12));
+    FUN23(FUN22(VAR11));
+    close(VAR16[0]);
+    close(VAR16[1]);
+}

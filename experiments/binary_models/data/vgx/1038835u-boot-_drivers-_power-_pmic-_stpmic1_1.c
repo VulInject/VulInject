@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , enum sysreset_t VAR3 ) { struct VAR1 * VAR4 = VAR2 -> VAR5 ; int VAR6 ; VAR6 = FUN2 ( VAR4 , VAR7 ) ; if ( VAR6 < 0 ) { return VAR6 ; } VAR6 |= VAR8 ; VAR6 &= ~ VAR9 ; if ( VAR3 == VAR10 ) { VAR6 |= VAR9 ; } VAR6 = FUN3 ( VAR4 , VAR7 , VAR6 ) ; if ( VAR6 < 0 ) { return VAR6 ; } return - VAR11 ; }

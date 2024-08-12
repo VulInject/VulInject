@@ -1,0 +1,69 @@
+int
+FUN1(char *VAR1, pid_t VAR2, VAR3 **VAR4)
+{
+int VAR5;
+int VAR6;
+char *VAR7;
+char *VAR8;
+VAR3 *VAR9 = NULL;
+VAR10 *VAR11 = NULL;
+VAR12 *VAR13;
+VAR14 *VAR15;
+char *VAR16 = FUN2("");
+
+FUN3(VAR17, "",
+VAR1, VAR2);
+
+
+VAR9 = FUN4();
+if (VAR9) {
+VAR6 = VAR18;
+if ((VAR8 = FUN5(VAR1)) == NULL)
+return (VAR19);
+while (VAR11 = FUN6(VAR9, VAR11)) {
+VAR7 = (char *)FUN7(VAR11);
+if (VAR7 && (strcmp(VAR8, VAR7) == 0)) {
+VAR6 = FUN8(VAR11);
+break;
+}
+}
+free(VAR8);
+FUN9(VAR9);
+if (VAR6 != VAR18) {
+FUN3(VAR17,
+"", VAR1, VAR6);
+FUN10(VAR1, VAR2, VAR6, 0, NULL,
+(char *)VAR16, NULL, NULL, VAR4);
+return (VAR20);
+}
+}
+
+
+VAR5 = FUN11(VAR1, 0, &VAR13);
+VAR6 = VAR21;
+
+if ((VAR5 == VAR20) && (VAR13 != NULL)) {
+for (VAR15 = VAR13->VAR22; VAR15; VAR15 = VAR15->VAR23) {
+if (VAR15->VAR6 == VAR24 ||
+VAR15->VAR6 == VAR25 ||
+VAR15->VAR6 == VAR26 ||
+VAR15->VAR6 == VAR27) {
+VAR6 = VAR15->VAR6;
+break;
+}
+
+if (VAR15->VAR6 != VAR21 &&
+VAR15->VAR6 != VAR28)
+VAR6 = VAR15->VAR6;
+}
+}
+
+if (VAR5 == VAR20) {
+FUN3(VAR17, "",
+VAR1, VAR6);
+FUN10(VAR1, VAR2, VAR6, 0, NULL,
+(char *)VAR16, NULL, NULL, VAR4);
+}
+
+return (VAR5);
+}

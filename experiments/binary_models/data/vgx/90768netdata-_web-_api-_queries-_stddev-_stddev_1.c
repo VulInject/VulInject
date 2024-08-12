@@ -1,0 +1,1 @@
+NETDATA_DOUBLE FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 ) { struct VAR5 * VAR6 = ( VAR5 * ) VAR2 -> VAR7 . VAR8 ; NETDATA_DOUBLE VAR9 ; if ( FUN2 ( VAR6 -> VAR10 > 1 ) ) { VAR9 = FUN3 ( VAR6 , NULL ) ; if ( ! FUN4 ( VAR9 ) ) { VAR9 = 0.0 ; * VAR4 |= VAR11 ; } } if ( VAR6 -> VAR10 == 1 ) { VAR9 = 0.0 ; } else { VAR9 = 0.0 ; * VAR4 |= VAR11 ; } FUN5 ( VAR2 ) ; return VAR9 ; }

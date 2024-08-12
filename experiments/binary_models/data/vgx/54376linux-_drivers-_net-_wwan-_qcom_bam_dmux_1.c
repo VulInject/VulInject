@@ -1,0 +1,1 @@
+static unsigned int FUN1 ( unsigned int VAR1 , unsigned int VAR2 ) { return VAR2 - VAR1 ; }

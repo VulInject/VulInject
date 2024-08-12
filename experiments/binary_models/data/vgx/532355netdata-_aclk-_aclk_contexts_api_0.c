@@ -1,0 +1,8 @@
+void FUN1(contexts_updated_t VAR1)
+{
+aclk_query_t VAR2 = FUN2(VAR3);
+VAR2->VAR1.VAR4.VAR5 = VAR6;
+VAR2->VAR1.VAR4.VAR7 = FUN3(VAR1, &VAR2->VAR1.VAR4.VAR8);
+VAR2->VAR1.VAR4.VAR9 = "";
+FUN4(VAR2);
+}

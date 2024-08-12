@@ -1,0 +1,1 @@
+const struct VAR1 * FUN1 ( u32 VAR2 ) { int VAR3 ; for ( VAR3 = 0 ; VAR3 < FUN2 ( VAR4 ) ; VAR3 ++ ) { const struct VAR1 * VAR5 = & VAR4 [ VAR3 ] ; if ( VAR5 -> VAR2 == VAR2 ) { return VAR5 ; } } return NULL ; }

@@ -1,0 +1,1 @@
+static void * FUN1 ( char * VAR1 , unsigned int * VAR2 , int VAR3 ) { void * VAR4 ; int VAR5 ; { VAR5 = FUN2 ( 0 , VAR1 , NULL ) ; VAR4 = FUN3 ( VAR5 + VAR3 ) ; if ( ! VAR4 ) { return FUN4 ( - VAR6 ) ; } if ( FUN2 ( VAR5 , VAR1 , VAR4 + VAR3 ) == 0 ) { break ; } FUN5 ( VAR4 ) ; } 1 ; * VAR2 = ( VAR5 / sizeof ( VAR7 ) ) ; return VAR4 ; }

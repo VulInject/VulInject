@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( Oid VAR2 ) { CatalogId VAR3 ; VAR4 * VAR5 ; VAR3 . VAR6 = VAR7 ; VAR3 . VAR2 = VAR2 ; VAR5 = FUN2 ( VAR3 , NULL ) ; FUN3 ( VAR5 == NULL || VAR5 -> VAR8 == VAR9 ) ; return ( VAR1 * ) VAR5 ; }

@@ -1,0 +1,1 @@
+char * FUN1 ( char * VAR1 ) { char * VAR2 ; char * VAR3 ; char * VAR4 ; if ( ( VAR1 == NULL ) || ( strlen ( VAR1 ) == 0 ) ) { return ( NULL ) ; } VAR4 = strdup ( VAR1 ) ; if ( VAR4 == NULL ) { return ( NULL ) ; } VAR3 = strchr ( VAR4 , '' ) ; if ( VAR3 != NULL ) { * VAR3 = '' ; } VAR2 = FUN2 ( VAR4 ) ; return ( VAR2 ) ; }

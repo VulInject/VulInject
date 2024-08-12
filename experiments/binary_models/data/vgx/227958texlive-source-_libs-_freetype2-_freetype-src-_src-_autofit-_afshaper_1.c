@@ -1,0 +1,1 @@
+FT_Error FUN1 ( AF_FaceGlobals VAR1 , AF_StyleClass VAR2 , VAR3 * VAR4 , FT_Bool VAR5 ) { VAR6 * VAR7 ; VAR8 * VAR9 ; }

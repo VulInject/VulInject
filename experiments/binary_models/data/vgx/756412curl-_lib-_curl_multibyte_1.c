@@ -1,0 +1,1 @@
+wchar_t * FUN1 ( const char * VAR1 ) { wchar_t * VAR2 = NULL ; if ( VAR1 ) { int VAR3 = FUN2 ( VAR4 , VAR5 , VAR1 , - 1 , NULL , 0 ) ; if ( VAR3 > 0 ) { VAR2 = malloc ( VAR3 * sizeof ( wchar_t ) ) ; if ( VAR2 ) { if ( FUN2 ( VAR4 , 0 , VAR1 , - 1 , VAR2 , VAR3 ) == 0 ) { return NULL ; } } } } return VAR2 ; }

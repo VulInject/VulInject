@@ -1,0 +1,99 @@
+VAR1 *FUN1(const char *VAR2)
+{
+VAR1 *VAR3;
+
+
+VAR4 *VAR5;
+
+
+VAR6 *VAR7;
+ogg_int64_t VAR8;
+
+
+if(!VAR2)
+{
+return NULL;
+}
+
+
+VAR3 = FUN2(VAR2, &VAR9);
+if(!VAR3)
+{
+return NULL;
+}
+
+
+VAR5 = FUN3(sizeof(VAR4));
+if(!VAR5)
+{
+FUN4(&VAR3);
+
+return NULL;
+}
+
+
+if(FUN5(VAR3, VAR5, NULL, 0, VAR10) != 0)
+{
+FUN6(VAR5);
+
+FUN4(&VAR3);
+
+return NULL;
+}
+
+
+if(!FUN7(VAR5))
+{
+FUN8(VAR5);
+
+FUN6(VAR5);
+
+FUN4(&VAR3);
+
+return NULL;
+}
+
+
+if(FUN9(VAR5) != 1)
+{
+FUN8(VAR5);
+
+FUN6(VAR5);
+
+FUN4(&VAR3);
+
+return NULL;  
+}
+
+
+VAR7 = FUN10(VAR5, 0);
+if(!VAR7)
+{
+FUN8(VAR5);
+
+FUN6(VAR5);
+
+FUN4(&VAR3);
+
+return NULL;  
+}
+
+
+VAR8 = FUN11(VAR5, 0);
+
+
+VAR3->VAR11.VAR12 = VAR7->VAR12;
+VAR3->VAR11.VAR13 = VAR14;
+VAR3->VAR11.VAR15 = VAR7->VAR15;
+VAR3->VAR11.VAR16 = VAR8;
+VAR3->VAR11.VAR17 = VAR3->VAR11.VAR16 * VAR3->VAR11.VAR15 * VAR3->VAR11.VAR13;
+VAR3->VAR11.VAR18 = 0;
+
+
+VAR3->VAR19 = 0;
+
+
+VAR3->VAR20 = VAR5;
+
+return VAR3;
+}

@@ -1,0 +1,37 @@
+static void
+FUN1(struct VAR1* VAR2, struct VAR3 *VAR4)
+{
+struct comm_reply VAR5;
+memset(&VAR5, 0, sizeof(VAR5));
+VAR5.VAR6 = (struct VAR7*)calloc(1, sizeof(struct VAR7));
+if(!VAR5.VAR6)
+FUN2("");
+VAR5.VAR8 = (VAR9)sizeof(struct VAR10);
+if(VAR4->VAR11 != 0) {
+VAR5.VAR8 = VAR4->VAR11;
+memcpy(&VAR5.VAR12, &VAR4->VAR13, VAR4->VAR11);
+VAR5.VAR14 = VAR4->VAR11;
+memcpy(&VAR5.VAR15, &VAR4->VAR13, VAR4->VAR11);
+}
+VAR5.VAR6->VAR16 = -1;
+VAR5.VAR6->VAR17 = (struct VAR18*)VAR2;
+VAR5.VAR6->VAR19 = FUN3(VAR2->VAR20);
+if(VAR4->VAR21->VAR22 == VAR23) {
+VAR5.VAR6->VAR24 = VAR25;
+VAR5.VAR6->VAR26 = 30000;
+VAR5.VAR6->VAR27 = VAR2->VAR28;
+} else
+VAR5.VAR6->VAR24 = VAR29;
+FUN4(VAR5.VAR6->VAR19, VAR4->VAR21, NULL, 0, 0);
+FUN5("");
+FUN6("", VAR4->VAR21->VAR30->VAR31,
+VAR4->VAR21->VAR30->VAR32);
+
+if((*VAR2->VAR33)(VAR5.VAR6, VAR2->VAR34, 
+VAR35, &VAR5)) {
+
+FUN7(&VAR5);
+}
+
+memset(&VAR5, 0, sizeof(VAR5));
+}

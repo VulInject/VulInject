@@ -1,0 +1,33 @@
+FUN1 (uint8_t VAR1) 
+{
+
+VAR2 *VAR3 = FUN2 (FUN3 (VAR4),
+sizeof (VAR5),
+VAR6);
+
+VAR5 *VAR7 = (VAR5 *) VAR3;
+
+FUN4 (VAR7->VAR8,
+FUN5 ());
+
+
+if (VAR1 == VAR9)
+{
+VAR7->VAR10 = VAR11;
+}
+
+else
+{
+VAR7->VAR10 = VAR12;
+}
+
+VAR13 *VAR14;
+VAR14 = FUN6 (VAR3,
+FUN7 (VAR15),
+VAR16,
+NULL);
+
+VAR14->VAR17 = FUN8 (0);
+
+return FUN9 (VAR3);
+}

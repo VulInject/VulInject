@@ -1,0 +1,6 @@
+void FUN1(struct VAR1 *VAR2, VAR3 *VAR4)
+{
+    VAR2->VAR5 = VAR4;
+    VAR4->VAR6 = FUN2(VAR7, VAR2, 1)[0];
+    VAR4->VAR8 = FUN2(VAR9, VAR2, 1)[0];
+}

@@ -1,0 +1,13 @@
+FUN1(VAR1, VAR2, VAR3) VAR4 *VAR1, *VAR3; VAR5 *VAR2;
+FUN1(VAR4 *VAR1, VAR5 *VAR2, VAR4 *VAR3)
+{
+VAR6 *VAR7;
+int VAR8 = (int)*VAR3;
+static int VAR9[3] = { VAR10, VAR11, VAR12 };
+if (VAR8 < 0 || VAR8 > 2)
+VAR8 = 0;
+VAR8 = VAR9[VAR8];
+return	!(VAR7 = FUN2(*VAR1, ""))
+|| FUN3(VAR7, (VAR13)*VAR2, VAR8) ? 1 : 0;
+}
+}

@@ -1,0 +1,1 @@
+void FUN1 ( const char * VAR1 , struct VAR2 * * VAR3 ) { struct VAR2 * VAR4 ; int VAR5 ; VAR4 = FUN2 ( sizeof ( VAR2 ) , VAR6 ) ; if ( VAR4 ) { VAR4 -> VAR1 = VAR1 ; VAR5 = FUN3 ( VAR4 ) ; if ( VAR5 < 0 ) { VAR4 = NULL ; FUN4 ( "" , VAR1 , VAR5 ) ; } } else { FUN4 ( "" , VAR1 ) ; } * VAR3 = VAR4 ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR1 , struct socket * VAR2 , int VAR3 , int VAR4 ) { struct VAR2 * VAR5 ; if ( VAR2 -> VAR6 != VAR7 || VAR3 ) { return - VAR8 ; } VAR5 = FUN2 ( VAR1 , VAR9 , VAR10 , & VAR11 , VAR4 ) ; return FUN3 ( VAR2 , VAR5 , VAR3 ) ; }

@@ -1,0 +1,1 @@
+static inline char * FUN1 ( const VAR1 * VAR2 , int VAR3 ) { char * VAR4 = FUN2 ( ( char * ) VAR2 , VAR3 ) ; if ( VAR4 ) { char * VAR5 = strchr ( VAR4 , '' ) ; if ( VAR5 ) { * VAR5 = 0 ; if ( FUN3 ( VAR4 ) ) { return VAR4 ; } } } return NULL ; }

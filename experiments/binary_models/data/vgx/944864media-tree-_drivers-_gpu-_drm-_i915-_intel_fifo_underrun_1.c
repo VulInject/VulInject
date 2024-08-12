@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR2 -> VAR5 . VAR6 ) ; enum pipe VAR7 = VAR2 -> VAR7 ; uint32_t VAR8 = FUN3 ( VAR9 ) ; FUN4 ( & VAR4 -> VAR10 ) ; FUN5 ( VAR9 , FUN6 ( VAR7 ) ) ; FUN7 ( VAR9 ) ; FUN8 ( VAR4 , VAR7 ) ; FUN9 ( "" , FUN10 ( VAR7 ) ) ; }

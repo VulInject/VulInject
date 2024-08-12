@@ -1,0 +1,69 @@
+int
+FUN1(VAR1 *VAR2,
+VAR3 *VAR4)
+{
+VAR5 *VAR6;
+VAR7 *VAR8;
+cpuworker_request_t VAR9;
+int VAR10;
+
+FUN2(VAR11);
+
+if (!VAR2->VAR12) {
+FUN3(VAR13,"");
+FUN4(VAR4);
+return -1;
+}
+
+if (VAR14 >= VAR15) {
+FUN5(VAR13,"");
+if (FUN6(VAR2, VAR4) < 0) {
+FUN4(VAR4);
+return -1;
+}
+return 0;
+}
+
+if (!FUN7(VAR2->VAR12))
+FUN8(VAR4->VAR16);
+
+VAR10 = FUN9(VAR4->VAR16);
+memset(&VAR9, 0, sizeof(VAR9));
+VAR9.VAR17 = VAR18;
+VAR9.VAR19 = VAR10;
+
+memcpy(&VAR9.VAR20, VAR4, sizeof(VAR3));
+
+FUN4(VAR4);
+
+if (VAR10)
+FUN10(&VAR9.VAR21);
+
+
+VAR9.VAR22.VAR23 = FUN11();
+VAR9.VAR22.VAR24 = FUN12();
+
+VAR8 = FUN13(sizeof(VAR7));
+VAR8->VAR2 = VAR2;
+memcpy(&VAR8->VAR25.VAR26, &VAR9, sizeof(VAR9));
+FUN14(&VAR9, 0, sizeof(VAR9));
+
+++VAR14;
+VAR6 = FUN15(VAR11,
+VAR27,
+VAR28,
+VAR29,
+VAR8);
+if (!VAR6) {
+FUN16(VAR30, "");
+FUN4(VAR8);
+return -1;
+}
+
+FUN5(VAR13, "",
+VAR8, VAR6, VAR8->VAR2);
+
+VAR2->VAR31 = VAR6;
+
+return 0;
+}

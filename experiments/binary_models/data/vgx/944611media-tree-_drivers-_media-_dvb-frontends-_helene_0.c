@@ -1,0 +1,37 @@
+}
+FUN1(VAR1);
+
+struct VAR2 *FUN2(struct VAR2 *VAR3,
+const struct VAR4 *VAR5,
+struct VAR6 *VAR7)
+{
+struct VAR8 *VAR9 = NULL;
+
+VAR9 = FUN3(sizeof(struct VAR8), VAR10);
+if (VAR9 == NULL)
+return NULL;
+VAR9->VAR11 = (VAR5->VAR11 >> 1);
+VAR9->VAR7 = VAR7;
+VAR9->VAR12 = VAR5->VAR13;
+VAR9->VAR14 = VAR5->VAR15;
+VAR9->VAR16 = VAR5->VAR16;
+
+if (VAR3->VAR17.VAR18)
+VAR3->VAR17.FUN4(VAR3, 1);
+
+if (FUN5(VAR9) != 0) {
+FUN6(VAR9);
+return NULL;
+}
+
+if (VAR3->VAR17.VAR18)
+VAR3->VAR17.FUN4(VAR3, 0);
+
+memcpy(&VAR3->VAR17.VAR19, &VAR20,
+sizeof(struct VAR21));
+VAR3->VAR22 = VAR9;
+FUN7(&VAR9->VAR7->VAR23,
+"",
+VAR9->VAR11, VAR9->VAR7);
+return VAR3;
+}

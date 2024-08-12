@@ -1,0 +1,1 @@
+FUN1 ( VAR1 , VAR2 ) ; VAR1 * FUN2 ( VAR1 * VAR3 ) { if ( ! VAR3 ) { return NULL ; } if ( VAR3 -> VAR4 && VAR3 -> VAR5 ) { FUN3 ( VAR3 -> VAR4 -> VAR6 , VAR3 -> VAR5 ) ; } FUN4 ( VAR3 -> VAR5 ) ; return FUN5 ( VAR3 ) ; }

@@ -1,0 +1,65 @@
+}
+FUN1(VAR1);
+
+static void FUN2(struct VAR2 *VAR3, u8 VAR4, int VAR5, VAR6 *VAR7)
+{
+int VAR8;
+
+FUN3(VAR3->VAR9, "", VAR4, VAR5);
+
+FUN4(&VAR3->VAR10);
+switch (VAR4) {
+case VAR11:
+case VAR12:
+case VAR13:
+case VAR14:
+case VAR15:
+case VAR16:
+case VAR17:
+
+if (VAR3->VAR18 && VAR3->VAR18->VAR4 == VAR4) {
+struct VAR19 *VAR18 = VAR3->VAR18;
+
+memcpy(VAR18->VAR20, VAR7, VAR5);
+VAR18->VAR21 = VAR5;
+FUN5(&VAR3->VAR18->VAR22);
+if (!FUN6(&VAR3->VAR23)) {
+VAR3->VAR18 = FUN7(VAR3->VAR23.VAR24,
+struct VAR19,
+VAR25);
+FUN8(&VAR3->VAR18->VAR25);
+FUN9(VAR3);
+} else
+VAR3->VAR18 = NULL;
+FUN3(VAR3->VAR9, "", VAR4);
+} else {
+FUN10(VAR3->VAR9,
+"", VAR4);
+if (!VAR3->VAR18)
+FUN11(VAR3->VAR9, "");
+else
+FUN11(VAR3->VAR9, "",
+VAR3->VAR18->VAR4);
+}
+break;
+case VAR26:
+if (VAR3->VAR27)
+VAR3->FUN12(VAR3->VAR28, VAR5, VAR7);
+else
+FUN3(VAR3->VAR9, "");
+break;
+case VAR29:
+if (VAR3->VAR30)
+VAR3->FUN13(VAR3->VAR31, VAR5, VAR7);
+else
+FUN3(VAR3->VAR9, "");
+break;
+default:
+FUN10(VAR3->VAR9,
+"", VAR4, VAR5);
+for (VAR8 = 0; VAR8 < VAR5; ++VAR8)
+FUN14("", VAR7[VAR8]);
+FUN14("");
+}
+FUN15(&VAR3->VAR10);
+}

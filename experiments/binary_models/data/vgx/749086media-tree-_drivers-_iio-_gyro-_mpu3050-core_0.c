@@ -1,0 +1,141 @@
+static VAR1 FUN1(int VAR2, void *VAR3)
+{
+const struct VAR4 *VAR5 = VAR3;
+struct VAR6 *VAR7 = VAR5->VAR7;
+struct VAR8 *VAR8 = FUN2(VAR7);
+int VAR9;
+
+__be16 VAR10[8];
+s64 VAR11;
+unsigned int VAR12 = 0;
+
+
+if (FUN3(VAR7))
+VAR11 = VAR8->VAR13;
+else
+VAR11 = FUN4(VAR7);
+
+FUN5(&VAR8->VAR14);
+
+
+if (VAR8->VAR15) {
+__be16 VAR16;
+u16 VAR17;
+
+unsigned int VAR18 = 8;
+bool VAR19 = false;
+
+VAR9 = FUN6(VAR8->VAR20,
+VAR21,
+&VAR16,
+sizeof(VAR16));
+if (VAR9)
+goto VAR22;
+VAR17 = FUN7(VAR16);
+
+if (VAR17 == 512) {
+FUN8(VAR8->VAR23,
+"");
+VAR19 = true;
+
+VAR9 = FUN9(VAR8->VAR20,
+VAR24,
+VAR25 |
+VAR26,
+VAR25 |
+VAR26);
+if (VAR9) {
+FUN8(VAR8->VAR23, "");
+goto VAR22;
+}
+VAR8->VAR27 = false;
+}
+
+if (VAR17)
+FUN10(VAR8->VAR23,
+"",
+VAR17);
+
+while (!VAR19 && VAR17 > VAR18) {
+unsigned int VAR28;
+unsigned int VAR29;
+__be16 VAR30[5];
+
+
+if (VAR8->VAR27) {
+VAR28 = VAR18 + 2;
+VAR29 = 0;
+} else {
+VAR28 = VAR18;
+VAR29 = 1;
+
+VAR30[0] = 0xAAAA;
+}
+
+VAR9 = FUN6(VAR8->VAR20,
+VAR31,
+&VAR30[VAR29],
+VAR28);
+
+FUN10(VAR8->VAR23,
+"",
+VAR30[0],
+VAR30[1],
+VAR30[2],
+VAR30[3],
+VAR30[4]);
+
+
+FUN11(VAR7,
+&VAR30[1],
+VAR11);
+
+VAR17 -= VAR28;
+VAR12++;
+VAR8->VAR27 = true;
+
+
+if (VAR17 < VAR18) {
+VAR9 = FUN6(VAR8->VAR20,
+VAR21,
+&VAR16,
+sizeof(VAR16));
+if (VAR9)
+goto VAR22;
+VAR17 = FUN7(VAR16);
+}
+
+if (VAR17 < VAR18)
+FUN10(VAR8->VAR23,
+"",
+VAR17);
+
+
+VAR11 = 0;
+}
+}
+
+
+if (VAR12) {
+FUN10(VAR8->VAR23,
+"",
+VAR12);
+goto VAR22;
+}
+
+VAR9 = FUN6(VAR8->VAR20, VAR32, &VAR10,
+sizeof(VAR10));
+if (VAR9) {
+FUN12(VAR8->VAR23,
+"");
+goto VAR22;
+}
+
+FUN11(VAR7, VAR10, VAR11);
+
+VAR22:
+FUN13(&VAR8->VAR14);
+FUN14(VAR7->VAR33);
+
+return VAR34;
+}

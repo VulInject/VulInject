@@ -1,0 +1,1 @@
+void FUN1 ( void ) { struct VAR1 * VAR2 ; while ( VAR3 ) { VAR2 = VAR3 ; VAR3 = VAR3 -> VAR4 ; switch ( VAR2 -> VAR5 ) { case VAR6 : if ( VAR2 -> VAR7 ) { FUN2 ( ( VAR8 * ) VAR2 -> VAR7 ) ; } break ; case VAR9 : if ( VAR2 -> VAR7 ) { FUN3 ( VAR2 -> VAR7 ) ; } break ; default : FUN4 ( "" ) ; } FUN3 ( VAR2 ) ; } }

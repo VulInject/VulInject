@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , int VAR3 ) { struct usb_ctrlrequest VAR4 ; FUN2 ( VAR2 -> VAR5 , "" , VAR3 ) ; VAR2 -> VAR3 = VAR3 ; VAR2 -> VAR6 = 0 ; VAR4 . VAR7 = 0 ; VAR4 . VAR8 = VAR9 ; VAR4 . VAR10 = VAR3 ; VAR4 . VAR11 = 0 ; VAR4 . VAR12 = 0 ; FUN3 ( VAR2 , VAR13 ) ; VAR2 -> VAR14 -> FUN4 ( & VAR2 -> VAR15 , & VAR4 ) ; FUN5 ( & VAR2 -> VAR16 [ 0 ] , VAR17 ) ; }

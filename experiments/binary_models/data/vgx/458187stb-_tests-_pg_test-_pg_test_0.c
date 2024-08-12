@@ -1,0 +1,22 @@
+static float *VAR1;
+static int VAR2 = 10001;
+static int VAR3 = 10001;
+
+static float FUN1(float VAR4, float VAR5)
+{
+float VAR6,VAR7,VAR8,VAR9,VAR10,VAR11;
+int VAR12,VAR13;
+if (VAR4 < 0) VAR4 = 0;
+if (VAR4 > VAR2-1) VAR4 = (float) VAR2-1;
+if (VAR5 < 0) VAR5 = 0;
+if (VAR5 > VAR3-1) VAR5 = (float) VAR3-1;
+VAR12 = (int) VAR4; VAR4 -= VAR12;
+VAR13 = (int) VAR5; VAR5 -= VAR13;
+VAR6 = VAR1[(VAR13+0)*VAR3+(VAR12+0)];
+VAR8 = VAR1[(VAR13+0)*VAR3+(VAR12+1)];
+VAR7 = VAR1[(VAR13+1)*VAR3+(VAR12+0)];
+VAR9 = VAR1[(VAR13+1)*VAR3+(VAR12+1)];
+VAR10 = FUN2(VAR5, VAR6, VAR7);
+VAR11 = FUN2(VAR5, VAR8, VAR9);
+return FUN2(VAR4, VAR10, VAR11);
+}

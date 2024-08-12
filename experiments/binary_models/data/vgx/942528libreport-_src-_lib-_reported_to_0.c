@@ -1,0 +1,6 @@
+VAR1 *FUN1(const char *VAR2)
+{
+VAR1 *VAR3 = NULL;
+FUN2(VAR2, VAR4, &VAR3);
+return FUN3(VAR3);
+}

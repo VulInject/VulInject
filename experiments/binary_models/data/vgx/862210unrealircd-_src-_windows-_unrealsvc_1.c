@@ -1,0 +1,1 @@
+char * FUN1 ( DWORD VAR1 ) { static char VAR2 [ 1024 ] ; FUN2 ( VAR3 , VAR1 , 0 , VAR2 , 1024 , NULL ) ; return VAR2 ; }

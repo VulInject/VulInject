@@ -1,0 +1,1 @@
+static int FUN1 ( uint32_t VAR1 , uint32_t VAR2 , int VAR3 ) { if ( FUN2 ( VAR1 ) && ! ( VAR2 & VAR4 ) ) { return ( 0 ) ; } if ( FUN3 ( VAR1 ) && ! ( VAR2 & VAR5 ) ) { return ( 0 ) ; } if ( ! VAR3 && FUN4 ( VAR1 ) ) { if ( FUN5 ( VAR1 ) && ! ( VAR2 & VAR6 ) ) { return ( 0 ) ; } if ( ! FUN5 ( VAR1 ) && ( VAR2 & VAR6 ) ) { return ( 0 ) ; } } return ( 1 ) ; }

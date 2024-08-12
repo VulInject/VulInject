@@ -1,0 +1,19 @@
+static VAR1
+FUN1(const VAR2 *VAR3, size_t VAR4, VAR5 *VAR6)
+{
+SHA256_CTX VAR7;
+size_t VAR8;
+const VAR2 *VAR9;
+
+if (VAR6->VAR10 != VAR11)
+return VAR12;
+
+FUN2(&VAR7);
+for (VAR8 = 0; VAR8 < VAR4; VAR8++) {
+VAR9 = &VAR3[VAR8];
+if (FUN3(VAR9))
+FUN4(&VAR7, VAR9->VAR3.VAR3, VAR9->VAR3.VAR10);
+}
+FUN5(VAR6->VAR3, &VAR7);
+return 0;
+}

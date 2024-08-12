@@ -1,0 +1,9 @@
+void
+FUN1(void)
+{
+VAR1->VAR2 = FUN2(VAR3);
+VAR1->VAR4 = FUN2(VAR3 "");
+VAR1->VAR5 = FUN2(VAR3 "");
+VAR1->VAR6 = FUN2(VAR3 "");
+VAR1->VAR7 = FUN2(VAR3 "");
+}

@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 , enum widthtype VAR3 , int VAR4 , int VAR5 ) { CreateWidthData VAR6 ; VAR6 . VAR7 = VAR2 ; VAR6 . VAR8 = VAR9 ; VAR6 . VAR10 = VAR6 . VAR11 = VAR6 . VAR12 = VAR4 ; VAR6 . VAR13 = VAR5 == 0 ?VAR14 : VAR5 == 2 ?VAR15 : VAR16 ; VAR6 . VAR3 = VAR3 ; FUN2 ( & VAR6 ) ; }

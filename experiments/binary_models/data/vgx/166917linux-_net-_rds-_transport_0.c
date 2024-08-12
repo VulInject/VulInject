@@ -1,0 +1,16 @@
+void FUN1(struct VAR1 *VAR2)
+{
+FUN2(strlen(VAR2->VAR3) + 1 > VAR4);
+
+FUN3(&VAR5);
+
+if (VAR6[VAR2->VAR7])
+FUN4(VAR8 "",
+VAR2->VAR7);
+else {
+VAR6[VAR2->VAR7] = VAR2;
+FUN4(VAR9 "", VAR2->VAR3);
+}
+
+FUN5(&VAR5);
+}

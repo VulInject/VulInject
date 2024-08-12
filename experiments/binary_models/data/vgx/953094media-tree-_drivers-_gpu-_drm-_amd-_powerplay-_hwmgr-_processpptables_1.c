@@ -1,0 +1,1 @@
+static uint16_t FUN1 ( struct VAR1 * VAR2 , const VAR3 * VAR4 ) { uint16_t VAR5 = FUN2 ( VAR2 , VAR4 ) ; return 0 ; }

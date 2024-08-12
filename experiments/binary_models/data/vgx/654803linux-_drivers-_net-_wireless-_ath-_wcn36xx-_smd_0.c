@@ -1,0 +1,38 @@
+int FUN1(struct VAR1 *VAR2, enum wcn36xx_hal_sys_mode VAR3,
+struct VAR4 *VAR5)
+{
+struct VAR6 *VAR7 = FUN2(VAR5);
+struct wcn36xx_hal_init_scan_req_msg VAR8;
+int VAR9;
+
+FUN3(&VAR2->VAR10);
+FUN4(VAR8, VAR11);
+
+VAR8.VAR3 = VAR3;
+if (VAR7->VAR12 != VAR13) {
+
+VAR8.VAR14 = 2;
+VAR8.VAR15 = 1;
+VAR8.VAR16.VAR12[0] = VAR7->VAR12;
+VAR8.VAR16.VAR17 = 1;
+}
+
+FUN5(VAR2->VAR18, VAR8);
+
+FUN6(VAR19, "", VAR8.VAR3);
+
+VAR9 = FUN7(VAR2, VAR8.VAR20.VAR21);
+if (VAR9) {
+FUN8("");
+goto VAR22;
+}
+VAR9 = FUN9(VAR2->VAR18, VAR2->VAR23);
+if (VAR9) {
+FUN8("", VAR9);
+goto VAR22;
+}
+VAR2->VAR24 = true;
+VAR22:
+FUN10(&VAR2->VAR10);
+return VAR9;
+}

@@ -1,0 +1,21 @@
+static int
+FUN1(struct VAR1 *VAR2, union VAR3 *VAR4)
+{
+off_t VAR5, VAR6;
+
+VAR6 = FUN2(VAR2, VAR4, VAR7);
+
+if (FUN3(VAR2, VAR6) >= VAR8) {
+VAR5 = FUN4(VAR2, VAR6);
+VAR6 = FUN3(VAR2, VAR5);
+VAR6 = FUN5(VAR6 - VAR8, FUN6(VAR2));
+while (VAR6 > 0) {
+VAR5 += VAR6 * VAR2->VAR9;
+
+VAR6 = FUN5(VAR6 - 1, FUN6(VAR2));
+}
+} else
+VAR5 = FUN7(VAR2, VAR6);
+
+return VAR5 / VAR10;
+}

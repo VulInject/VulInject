@@ -1,0 +1,135 @@
+static int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR3, int VAR4)
+{
+struct smsclient_params_t VAR5;
+struct VAR6 *VAR7;
+int VAR8;
+
+
+if (!VAR4)
+return 0;
+VAR7 = FUN2(sizeof(struct VAR6), VAR9);
+if (!VAR7)
+return -VAR10;
+
+
+VAR8 = FUN3(&VAR7->VAR11,
+FUN4(
+FUN5(VAR2))->VAR12,
+VAR13, VAR3, VAR14);
+if (VAR8 < 0) {
+FUN6("", VAR8);
+goto VAR15;
+}
+FUN7(&VAR7->VAR11, VAR2->VAR16);
+
+
+VAR7->VAR17.VAR18.VAR19 = VAR20;
+VAR7->VAR17.VAR21 = 32; 
+VAR7->VAR17.VAR22 = 32;
+VAR7->VAR17.VAR23 = VAR24;
+VAR7->VAR17.VAR25 = VAR26;
+
+VAR8 = FUN8(&VAR7->VAR17);
+if (VAR8 < 0) {
+FUN6("", VAR8);
+goto VAR27;
+}
+
+
+VAR7->VAR28.VAR21 = 32;
+VAR7->VAR28.VAR17 = &VAR7->VAR17.VAR18;
+VAR7->VAR28.VAR19 = 0;
+
+VAR8 = FUN9(&VAR7->VAR28, &VAR7->VAR11);
+if (VAR8 < 0) {
+FUN6("", VAR8);
+goto VAR29;
+}
+
+
+memcpy(&VAR7->VAR30.VAR31, &VAR32,
+sizeof(struct VAR33));
+
+switch (FUN10(VAR2)) {
+case VAR34:
+case VAR35:
+VAR7->VAR30.VAR31.VAR36[0] = VAR37;
+break;
+case VAR38:
+case VAR39:
+VAR7->VAR30.VAR31.VAR36[0] = VAR40;
+break;
+}
+
+VAR8 = FUN11(&VAR7->VAR11, &VAR7->VAR30);
+if (VAR8 < 0) {
+FUN6("", VAR8);
+goto VAR41;
+}
+
+VAR5.VAR42 = 1;
+VAR5.VAR43 = VAR44;
+VAR5.VAR45 = VAR46;
+VAR5.VAR47 = VAR48;
+VAR5.VAR49 = VAR7;
+
+VAR8 = FUN12(VAR2, &VAR5, &VAR7->VAR50);
+if (VAR8 < 0) {
+FUN6("", VAR8);
+goto VAR51;
+}
+
+VAR7->VAR2 = VAR2;
+
+FUN13(&VAR7->VAR52);
+FUN13(&VAR7->VAR53);
+
+FUN14(&VAR54);
+
+FUN15(&VAR7->VAR55, &VAR56);
+
+FUN16(&VAR54);
+
+VAR7->VAR57 = -1;
+VAR7->VAR58 = -1;
+FUN17(VAR7, VAR59);
+
+FUN18(VAR2);
+
+if (FUN19(VAR7) < 0)
+FUN20("");
+
+VAR8 = FUN21(&VAR7->VAR11, true);
+if (VAR8 < 0) {
+FUN6("", VAR8);
+goto VAR60;
+}
+
+FUN20("");
+return 0;
+
+VAR60:
+FUN14(&VAR54);
+FUN22(&VAR7->VAR55);
+FUN16(&VAR54);
+
+FUN23(VAR7);
+
+VAR51:
+FUN24(&VAR7->VAR30);
+
+VAR41:
+FUN25(&VAR7->VAR28);
+
+VAR29:
+FUN26(&VAR7->VAR17);
+
+VAR27:
+FUN27(VAR7);
+FUN28(&VAR7->VAR11);
+
+VAR15:
+FUN29(VAR7);
+return VAR8;
+}

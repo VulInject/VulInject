@@ -1,0 +1,1 @@
+static inline void FUN1 ( void VAR1 * VAR2 , u32 VAR3 ) { u32 VAR4 ; { VAR4 = FUN2 ( VAR2 ) ; } 1 ; }

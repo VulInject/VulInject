@@ -1,0 +1,32 @@
+static int FUN1(int VAR1, u32 VAR2)
+{
+u32 VAR3;
+int VAR4, VAR5, VAR6;
+
+if (FUN2(VAR1)) {
+VAR6 = VAR7;
+VAR3 = VAR8;
+} else {
+VAR6 = VAR9;
+VAR3 = VAR10;
+}
+
+VAR5 = FUN3(VAR1, VAR2);
+
+if (VAR5 < 0)
+return VAR5;
+
+if (FUN4(&VAR11->VAR12, FUN5(VAR13)))
+return -VAR14;
+
+FUN6(&VAR11->VAR15);
+VAR11->VAR16 = FUN7(VAR6);
+
+FUN8(VAR5, VAR11->VAR17 + VAR3);
+VAR4 = FUN9(VAR6);
+
+VAR11->VAR16 = 0;
+FUN10(&VAR11->VAR12);
+
+return VAR4;
+}

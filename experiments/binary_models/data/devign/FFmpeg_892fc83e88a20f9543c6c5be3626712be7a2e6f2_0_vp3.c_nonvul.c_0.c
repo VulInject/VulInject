@@ -1,0 +1,68 @@
+static int FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = VAR2->VAR5;
+    int VAR6;
+    int VAR7;
+    int VAR8;
+    int VAR9;
+    int VAR10;
+    VAR4->VAR2 = VAR2;
+    VAR4->VAR11 = VAR2->VAR11;
+    VAR4->VAR12 = VAR2->VAR12;
+    VAR2->VAR13 = VAR14;
+    VAR2->VAR15 = 0;
+    FUN2(&VAR4->VAR16, VAR2);
+    VAR4->VAR17 = -1;
+    VAR4->VAR18 = (VAR4->VAR11 + 31) / 32;
+    VAR4->VAR19 = (VAR4->VAR12 + 31) / 32;
+    VAR9 = VAR4->VAR18 * VAR4->VAR19;
+    VAR7 = VAR4->VAR11 / 2;
+    VAR8 = VAR4->VAR12 / 2;
+    VAR4->VAR20 = (VAR7 + 31) / 32;
+    VAR4->VAR21 = (VAR8 + 31) / 32;
+    VAR10 = VAR4->VAR20 * VAR4->VAR21;
+    VAR4->VAR22 = VAR9 + (VAR10 * 2);
+    VAR4->VAR23 = VAR9;
+    VAR4->VAR24 = VAR4->VAR23 + VAR10;
+    VAR4->VAR25 = FUN3(VAR4->VAR22);
+    VAR4->VAR26 = (VAR4->VAR11 + 15) / 16;
+    VAR4->VAR27 = (VAR4->VAR12 + 15) / 16;
+    VAR4->VAR28 = VAR4->VAR26 * VAR4->VAR27;
+    VAR4->VAR29 = VAR4->VAR11 / VAR30;
+    VAR4->VAR31 = VAR4->VAR12 / VAR30;
+    VAR4->VAR32 = VAR4->VAR29 * VAR4->VAR31 * 3 / 2;
+    VAR4->VAR33 = VAR4->VAR29 * VAR4->VAR31;
+    VAR4->VAR34 = VAR4->VAR29 * VAR4->VAR31 * 5 / 4;
+    FUN4("", VAR4->VAR11, VAR4->VAR12);
+    FUN4("", VAR7, VAR8);
+    FUN4("", VAR4->VAR18, VAR4->VAR19, VAR9);
+    FUN4("", VAR4->VAR20, VAR4->VAR21, VAR10);
+    FUN4("", VAR4->VAR22, VAR4->VAR23, VAR4->VAR24);
+    FUN4("", VAR4->VAR26, VAR4->VAR27, VAR4->VAR28);
+    FUN4("", VAR4->VAR32, VAR4->VAR29, VAR4->VAR31, VAR4->VAR33, VAR4->VAR34);
+    VAR4->VAR35 = FUN3(VAR4->VAR32 * sizeof(VAR36));
+    VAR4->VAR37 = FUN3(VAR4->VAR32 * sizeof(int));
+    VAR4->VAR38 = 0;
+    for (VAR6 = 0; VAR6 < 16; VAR6++)
+    {
+        FUN5(&VAR4->VAR39[VAR6], 5, 32, &VAR40[VAR6][0][1], 4, 2, &VAR40[VAR6][0][0], 4, 2);
+        FUN5(&VAR4->VAR41[VAR6], 5, 32, &VAR42[VAR6][0][1], 4, 2, &VAR42[VAR6][0][0], 4, 2);
+        FUN5(&VAR4->VAR43[VAR6], 5, 32, &VAR44[VAR6][0][1], 4, 2, &VAR44[VAR6][0][0], 4, 2);
+        FUN5(&VAR4->VAR45[VAR6], 5, 32, &VAR46[VAR6][0][1], 4, 2, &VAR46[VAR6][0][0], 4, 2);
+        FUN5(&VAR4->VAR47[VAR6], 5, 32, &VAR48[VAR6][0][1], 4, 2, &VAR48[VAR6][0][0], 4, 2);
+    }
+    for (VAR6 = 0; VAR6 < 64; VAR6++)
+        VAR49[VAR50[VAR6]] = VAR6;
+    VAR4->VAR51 = FUN3(VAR4->VAR22 * 16 * sizeof(int));
+    VAR4->VAR52 = FUN3(VAR4->VAR22 * 4 * sizeof(int));
+    VAR4->VAR53 = FUN3(VAR4->VAR28 * 6 * sizeof(int));
+    VAR4->VAR54 = FUN3(VAR4->VAR28 + 1);
+    FUN6(VAR4);
+    for (VAR6 = 0; VAR6 < 3; VAR6++)
+    {
+        VAR4->VAR55.VAR56[VAR6] = NULL;
+        VAR4->VAR57.VAR56[VAR6] = NULL;
+        VAR4->VAR58.VAR56[VAR6] = NULL;
+    }
+    return 0;
+}

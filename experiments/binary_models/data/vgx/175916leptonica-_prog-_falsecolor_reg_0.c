@@ -1,0 +1,52 @@
+int main(int    argc,
+char **argv)
+{
+l_int32       VAR1, VAR2, VAR3, VAR4;
+VAR5         *VAR6;
+VAR7          *VAR8, *VAR9, *VAR10, *VAR11, *VAR12;
+VAR13         *VAR14;
+VAR15  *VAR16;
+
+if (FUN1(argc, argv, &VAR16))
+return 1;
+
+VAR9 = FUN2(768, 100, 8);
+VAR10 = FUN2(768, 100, 16);
+for (VAR1 = 0; VAR1 < 100; VAR1++) {
+for (VAR2 = 0; VAR2 < 768; VAR2++) {
+VAR4 = 0xffff * VAR2 / 768;
+FUN3(VAR10, VAR2, VAR1, VAR4);
+VAR3 = 0xff * VAR2 / 768;
+FUN3(VAR9, VAR2, VAR1, VAR3);
+}
+}
+FUN4(VAR16, VAR9, VAR17);   
+FUN4(VAR16, VAR10, VAR17);  
+
+VAR14 = FUN5(8);
+FUN6(VAR14, VAR9, VAR18);
+for (VAR1 = 0; VAR1 < 3; VAR1++) {
+VAR11 = FUN7(VAR9, VAR19[VAR1]);
+FUN4(VAR16, VAR11, VAR17);  
+FUN6(VAR14, VAR11, VAR18);
+}
+FUN6(VAR14, VAR10, VAR18);
+for (VAR1 = 0; VAR1 < 3; VAR1++) {
+VAR12 = FUN7(VAR10, VAR19[VAR1]);
+FUN4(VAR16, VAR12, VAR17);  
+FUN6(VAR14, VAR12, VAR18);
+}
+
+if (VAR16->VAR20) {
+
+VAR6 = FUN8(8);
+for (VAR1 = 0; VAR1 < 8; VAR1++)
+FUN9(VAR6, VAR1 / 4);
+VAR8 = FUN10(VAR14, VAR6, 768, 20, 2, 6, 0xff000000);
+FUN11(VAR8, 100, 100);
+FUN12(&VAR6);
+FUN13(&VAR8);
+}
+FUN14(&VAR14);
+return FUN15(VAR16);
+}

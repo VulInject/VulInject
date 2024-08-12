@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , VAR3 * VAR4 ) { int VAR5 ; void * * VAR6 = FUN2 ( sizeof ( void * ) ) ; * VAR6 = FUN2 ( VAR4 -> VAR7 + 1 ) ; memcpy ( * VAR6 , VAR4 -> VAR8 , VAR4 -> VAR7 ) ; FUN3 ( VAR6 , 1 ) ; VAR5 = FUN4 ( VAR2 , * VAR6 , NULL ) ; FUN5 ( VAR6 , 1 ) ; FUN6 ( VAR6 ) ; return VAR5 ; }

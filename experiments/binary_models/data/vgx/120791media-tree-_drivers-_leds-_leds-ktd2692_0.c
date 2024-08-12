@@ -1,0 +1,43 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+struct VAR5 *VAR6;
+struct VAR7 *VAR8;
+struct ktd2692_led_config_data VAR9;
+int VAR10;
+
+VAR4 = FUN2(&VAR2->VAR11, sizeof(*VAR4), VAR12);
+if (!VAR4)
+return -VAR13;
+
+VAR8 = &VAR4->VAR8;
+VAR6 = &VAR8->VAR6;
+
+VAR10 = FUN3(VAR4, &VAR2->VAR11, &VAR9);
+if (VAR10)
+return VAR10;
+
+FUN4(VAR8, &VAR9);
+FUN5(&VAR9);
+
+VAR8->VAR14 = &VAR15;
+
+VAR6->VAR16 = VAR9.VAR16;
+VAR6->VAR17 = VAR18;
+VAR6->VAR19 |= VAR20 | VAR21;
+
+FUN6(&VAR4->VAR22);
+
+FUN7(VAR2, VAR4);
+
+VAR10 = FUN8(&VAR2->VAR11, VAR8);
+if (VAR10) {
+FUN9(&VAR2->VAR11, "", VAR6->VAR23);
+FUN10(&VAR4->VAR22);
+return VAR10;
+}
+
+FUN11(VAR4);
+
+return 0;
+}

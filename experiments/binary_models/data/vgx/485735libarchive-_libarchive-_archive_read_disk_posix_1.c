@@ -1,0 +1,1 @@
+const char * FUN1 ( struct VAR1 * VAR2 , la_int64_t VAR3 ) { struct VAR4 * VAR5 = ( VAR4 * ) VAR2 ; if ( VAR6 != FUN2 ( VAR2 , VAR7 , VAR8 , "" ) ) { return ( NULL ) ; } return ( * VAR5 -> FUN3 ( VAR5 -> VAR9 , VAR3 ) ) ; }

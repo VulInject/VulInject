@@ -1,0 +1,1 @@
+static size_t FUN1 ( VAR1 * VAR2 , size_t VAR3 , size_t VAR4 , VAR1 * VAR5 , size_t VAR6 ) { int VAR7 ; if ( VAR3 < VAR4 ) { return 0 ; } VAR7 = VAR3 - VAR4 ; if ( VAR7 + 1 > VAR6 ) { return 0 ; } memmove ( VAR5 , VAR2 , VAR7 ) ; VAR5 [ VAR7 ] = 0 ; return VAR7 + 1 ; }

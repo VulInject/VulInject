@@ -1,0 +1,28 @@
+YY_BUFFER_STATE FUN1  (char * VAR1, yy_size_t  VAR2 )
+{
+YY_BUFFER_STATE VAR3;
+
+if ( VAR2 < 2 ||
+VAR1[VAR2-2] != VAR4 ||
+VAR1[VAR2-1] != VAR4 )
+
+return 0;
+
+VAR3 = (VAR5) FUN2(sizeof( struct VAR6 )  );
+if ( ! VAR3 )
+FUN3( "" );
+
+VAR3->VAR7 = VAR2 - 2;	
+VAR3->VAR8 = VAR3->VAR9 = VAR1;
+VAR3->VAR10 = 0;
+VAR3->VAR11 = 0;
+VAR3->VAR12 = VAR3->VAR7;
+VAR3->VAR13 = 0;
+VAR3->VAR14 = 1;
+VAR3->VAR15 = 0;
+VAR3->VAR16 = VAR17;
+
+FUN4(VAR3  );
+
+return VAR3;
+}

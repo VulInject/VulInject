@@ -1,0 +1,14 @@
+int
+FUN1(void *VAR1, int VAR2, int VAR3, u_int VAR4, uint32_t VAR5)
+{
+struct VAR6 *VAR7 = (struct VAR6 *)VAR1;
+struct VAR8 *VAR9 = VAR7->VAR10;
+
+VAR9->VAR11.FUN2(VAR1, VAR2, VAR3, VAR4, VAR5);
+FUN3(VAR9,
+VAR3 * VAR7->VAR12->VAR13,
+(VAR3 + 1) * VAR7->VAR12->VAR13,
+VAR2 * VAR7->VAR12->VAR14,
+(VAR2 + 1) * VAR7->VAR12->VAR14);
+return 0;
+}

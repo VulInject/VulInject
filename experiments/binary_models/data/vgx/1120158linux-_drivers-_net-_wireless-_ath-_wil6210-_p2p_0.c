@@ -1,0 +1,42 @@
+void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2->VAR5);
+struct VAR6 *VAR7 = &VAR4->VAR7;
+struct cfg80211_scan_info VAR8 = {
+.VAR9 = true,
+};
+
+FUN3(&VAR2->mutex);
+FUN3(&VAR2->VAR10);
+
+if (VAR2->VAR11 != VAR2->VAR12)
+goto VAR13;
+
+if (!VAR7->VAR14) {
+
+if (VAR4->VAR15 &&
+VAR4->VAR15->VAR16 == VAR2->VAR12)
+FUN4(VAR4, true);
+goto VAR13;
+}
+
+
+FUN5(&VAR2->VAR10);
+FUN6(VAR4);
+FUN7(&VAR2->VAR10);
+
+if (VAR4->VAR15) {
+
+FUN8(VAR4->VAR15, &VAR8);
+VAR4->VAR15 = NULL;
+} else {
+
+FUN9(VAR2->VAR11,
+VAR7->VAR17,
+&VAR7->VAR18,
+VAR19);
+}
+
+VAR13:
+VAR2->VAR11 = VAR2->VAR5->VAR20;
+}

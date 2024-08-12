@@ -1,0 +1,1 @@
+FUN1 ( ) { struct sock_fprog VAR1 ; struct sock_fprog VAR2 ; int VAR3 ; struct sock_fprog VAR4 ; struct sock_fprog VAR5 ; struct sock_fprog VAR6 ; }

@@ -1,0 +1,59 @@
+static void FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+VAR5 * VAR6, size_t VAR7, VAR5 * VAR8, VAR5 * VAR9, VAR5 * VAR10)
+{
+VAR5 *VAR11, VAR12 = 0;
+size_t VAR13;
+int VAR14, VAR15;
+u8 VAR16[2 * VAR17];
+
+VAR14 = FUN2(VAR4->VAR18);
+VAR15 = FUN3(VAR4->VAR18);
+
+VAR13 = 22;
+if (VAR14)
+VAR13 += 6;
+if (VAR15) {
+VAR11 = (VAR5 *) & VAR4->VAR19;
+if (VAR14)
+VAR11 += 6;
+VAR12 = *VAR11 & 0x0f;
+VAR13 += 2;
+}
+
+
+VAR8[0] = 0x59;
+VAR8[1] = VAR12;
+memcpy(VAR8 + 2, VAR4->VAR20, VAR21);
+memcpy(VAR8 + 8, VAR6, VAR22);
+VAR8[14] = (VAR7 >> 8) & 0xff;
+VAR8[15] = VAR7 & 0xff;
+
+
+VAR11 = (VAR5 *) VAR4;
+VAR16[0] = 0;		
+VAR16[1] = VAR13 & 0xff;
+VAR16[2] = VAR11[0] & 0x8f;
+VAR16[3] = VAR11[1] & 0xc7;
+memcpy(VAR16 + 4, VAR4->VAR23, 3 * VAR21);
+VAR11 = (VAR5 *) & VAR4->VAR24;
+VAR16[22] = VAR11[0] & 0x0f;
+VAR16[23] = 0;		
+memset(VAR16 + 24, 0, 8);
+if (VAR14)
+memcpy(VAR16 + 24, VAR4->VAR19, VAR21);
+if (VAR15) {
+VAR16[VAR14 ? 30 : 24] = VAR12;
+
+}
+
+
+FUN4(VAR2, VAR8, VAR9);
+FUN5(VAR9, VAR16, VAR17);
+FUN4(VAR2, VAR9, VAR9);
+FUN5(VAR9, &VAR16[VAR17], VAR17);
+FUN4(VAR2, VAR9, VAR9);
+VAR8[0] &= 0x07;
+VAR8[14] = VAR8[15] = 0;
+FUN4(VAR2, VAR8, VAR10);
+}

@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { unsigned long VAR3 = VAR4 ; if ( FUN2 ( VAR2 -> VAR5 , VAR3 ) ) { cfs_time_t VAR6 = VAR2 -> VAR5 - VAR3 ; int VAR7 = FUN3 ( VAR6 ) ; if ( VAR7 > 0 ) { return - VAR8 ; } } VAR2 -> VAR5 += VAR9 ; return 0 ; }

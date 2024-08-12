@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { int VAR3 ; VAR3 = VAR2 -> VAR3 ; VAR4 [ VAR3 ] = NULL ; } static u_char VAR5 ; static u_long VAR6 , VAR7 , VAR8 ; static int VAR9 ; static void FUN2 ( struct VAR1 * ) static int VAR10 ; static void FUN3 ( struct VAR1 * VAR2 , int VAR11 ) { VAR12 , VAR13 , VAR14 , VAR15 , VAR16 , VAR17 , VAR18 , VAR19 , VAR20 }

@@ -1,0 +1,83 @@
+int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+struct ena_admin_get_feat_resp VAR5;
+int VAR6;
+
+VAR6 = FUN2(VAR2, &VAR5,
+VAR7, 0);
+if (VAR6)
+return VAR6;
+
+memcpy(&VAR4->VAR8, &VAR5.VAR9.VAR8,
+sizeof(VAR5.VAR9.VAR8));
+
+VAR2->VAR10 = VAR5.VAR9.VAR8.VAR10;
+VAR2->VAR11 = VAR5.VAR9.VAR8.VAR11;
+
+if (VAR2->VAR10 & FUN3(VAR12)) {
+VAR6 = FUN2(VAR2, &VAR5,
+VAR12,
+VAR13);
+if (VAR6)
+return VAR6;
+
+if (VAR5.VAR9.VAR14.VAR15 !=
+VAR13)
+return -VAR16;
+
+memcpy(&VAR4->VAR14, &VAR5.VAR9.VAR14,
+sizeof(VAR5.VAR9.VAR14));
+VAR2->VAR17 =
+VAR5.VAR9.VAR14.VAR14.VAR18;
+} else {
+VAR6 = FUN2(VAR2, &VAR5,
+VAR19, 0);
+memcpy(&VAR4->VAR20, &VAR5.VAR9.VAR21,
+sizeof(VAR5.VAR9.VAR21));
+VAR2->VAR17 =
+VAR5.VAR9.VAR21.VAR22;
+
+if (VAR6)
+return VAR6;
+}
+
+VAR6 = FUN2(VAR2, &VAR5,
+VAR23, 0);
+if (VAR6)
+return VAR6;
+
+memcpy(&VAR4->VAR24, &VAR5.VAR9.VAR24,
+sizeof(VAR5.VAR9.VAR24));
+
+VAR6 = FUN2(VAR2, &VAR5,
+VAR25, 0);
+if (VAR6)
+return VAR6;
+
+memcpy(&VAR4->VAR26, &VAR5.VAR9.VAR26,
+sizeof(VAR5.VAR9.VAR26));
+
+
+VAR6 = FUN2(VAR2, &VAR5, VAR27, 0);
+
+if (!VAR6)
+memcpy(&VAR4->VAR28, &VAR5.VAR9.VAR28,
+sizeof(VAR5.VAR9.VAR28));
+else if (VAR6 == -VAR29)
+memset(&VAR4->VAR28, 0x0,
+sizeof(VAR4->VAR28));
+else
+return VAR6;
+
+VAR6 = FUN2(VAR2, &VAR5, VAR30, 0);
+if (!VAR6)
+memcpy(&VAR4->VAR31, &VAR5.VAR9.VAR31,
+sizeof(VAR5.VAR9.VAR31));
+else if (VAR6 == -VAR29)
+memset(&VAR4->VAR31, 0x0, sizeof(VAR4->VAR31));
+else
+return VAR6;
+
+return 0;
+}

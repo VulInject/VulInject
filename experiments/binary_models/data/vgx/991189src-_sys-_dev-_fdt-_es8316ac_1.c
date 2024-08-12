@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( u_int VAR2 ) { if ( VAR2 >= VAR3 ) { return VAR4 ; } return & VAR5 [ VAR2 ] ; }

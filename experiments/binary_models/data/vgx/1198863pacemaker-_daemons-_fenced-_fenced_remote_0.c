@@ -1,0 +1,70 @@
+static int
+FUN1(const VAR1 *VAR2,
+const VAR3 *VAR4)
+{
+int VAR5 = 0;
+VAR6 *VAR7 = FUN2(VAR2->VAR8);
+
+if (FUN3(VAR2->VAR9, VAR10) && VAR7) {
+int VAR11;
+VAR12 *VAR13 = NULL;
+VAR12 *VAR14 = NULL;
+VAR12 *VAR15 = NULL;
+
+if (FUN4(VAR2->VAR16, "", VAR17)
+&& (VAR2->VAR18 != NULL)) {
+VAR15 = FUN5(VAR2->VAR18);
+}
+
+
+for (VAR11 = 0; VAR11 < VAR19; VAR11++) {
+if (!VAR7->VAR20[VAR11]) {
+continue;
+}
+for (VAR13 = VAR7->VAR20[VAR11]; VAR13; VAR13 = VAR13->VAR21) {
+for (VAR14 = VAR2->VAR22; VAR14 != NULL; VAR14 = VAR14->VAR21) {
+const VAR3 *VAR23 = VAR14->VAR24;
+
+if (VAR15) {
+VAR12 *VAR25 = FUN6(VAR15, VAR13->VAR24,
+VAR26);
+if (VAR25) {
+VAR15 = FUN7(VAR15, VAR25->VAR24);
+}
+}
+
+if (FUN8(VAR2, VAR23, VAR13->VAR24,
+FUN9(VAR2->VAR16))) {
+VAR5 += FUN10(VAR2, VAR23,
+VAR13->VAR24);
+break;
+}
+}               
+}                   
+}                       
+
+
+if (VAR15) {
+for (VAR14 = VAR15; VAR14 != NULL; VAR14 = VAR14->VAR21) {
+VAR12 *VAR27 = NULL;
+
+for (VAR27 = VAR2->VAR22; VAR27 != NULL; VAR14 = VAR27->VAR21) {
+VAR3 *VAR23 = VAR27->VAR24;
+if (FUN8(VAR2, VAR23, VAR14->VAR24, VAR28)) {
+VAR5 += FUN10(VAR2, VAR23, VAR14->VAR24);
+break;
+}
+}
+}
+}
+
+FUN11(VAR15);
+
+} else if (VAR4) {
+VAR5 = FUN12(VAR2, VAR4);
+} else {
+VAR5 = VAR2->VAR29;
+}
+
+return VAR5 ? VAR5 : VAR2->VAR29;
+}

@@ -1,0 +1,5 @@
+VAR1 FUN1(CONST VAR2* VAR3)
+{
+
+return VAR4;
+}

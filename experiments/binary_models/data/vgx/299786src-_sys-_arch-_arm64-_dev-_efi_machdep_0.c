@@ -1,0 +1,19 @@
+void
+FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2()->VAR5;
+uint64_t VAR6;
+
+FUN2()->VAR7->VAR8 = NULL;
+
+FUN3();
+
+FUN4(VAR9, FUN5()->VAR10);
+__asm volatile("");
+VAR6 = FUN6(VAR11);
+VAR6 &= ~FUN7(0x3f);
+VAR6 |= FUN7(64 - VAR12);
+FUN4(VAR11, VAR6);
+FUN8(VAR4->VAR13, VAR4->VAR10);
+FUN9(VAR2->VAR14);
+}

@@ -1,0 +1,31 @@
+static void FUN1(VAR1 *VAR2, VAR3 **VAR4)
+{
+    VAR5 *VAR6 = FUN2(VAR5, VAR2, VAR2);
+    VAR7 *VAR8;
+    VAR9 *VAR10;
+    VAR3 *VAR11 = NULL;
+    assert(VAR2->VAR12->VAR13 == VAR14);
+    VAR10 = VAR2->VAR12->VAR15;
+    VAR8 = FUN3(VAR10->VAR16);
+    if (!VAR8)
+    {
+        FUN4(VAR4, VAR17, "", VAR10->VAR16);
+        return;
+    }
+    if (!FUN5(VAR8))
+    {
+        FUN6(VAR4, VAR18, VAR10->VAR16);
+        return;
+    }
+    VAR6->VAR19 = FUN7(VAR8);
+    FUN8(VAR6->VAR19);
+    FUN9(FUN10(VAR8));
+    VAR6->VAR20 = FUN10(VAR8);
+    FUN11(VAR10->VAR16, VAR10->VAR21, VAR10->VAR22, VAR10->VAR23, VAR10->VAR24, VAR10->VAR25, VAR10->VAR26, VAR10->VAR27, VAR10->VAR28, VAR10->VAR29, VAR10->VAR30, VAR10->VAR31, VAR10->VAR32, VAR10->VAR33, VAR10->VAR34, &VAR11);
+    if (VAR11)
+    {
+        FUN12(VAR4, VAR11);
+        return;
+    }
+    VAR6->VAR35 = VAR6->VAR20->VAR35;
+}

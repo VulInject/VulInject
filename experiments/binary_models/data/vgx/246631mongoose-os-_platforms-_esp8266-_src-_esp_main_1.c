@@ -1,0 +1,1 @@
+void FUN1 ( void ) { FUN2 ( VAR1 ) ; FUN3 ( ) ; FUN4 ( ) ; FUN5 ( ) ; srand ( FUN6 ( ) ^ FUN7 ( ) ) ; FUN8 ( & VAR2 ) ; FUN9 ( & VAR2 , VAR3 ) ; FUN10 ( VAR4 , VAR4 ) ; FUN11 ( ) ; FUN12 ( VAR5 ) ; }

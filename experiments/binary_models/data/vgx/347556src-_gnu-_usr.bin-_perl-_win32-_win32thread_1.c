@@ -1,0 +1,1 @@
+void * FUN1 ( void ) { return VAR1 ; DWORD VAR2 = FUN2 ( ) ; void * VAR3 = FUN3 ( VAR4 ) ; FUN4 ( VAR2 , NULL ) ; return VAR3 ; return NULL ; }

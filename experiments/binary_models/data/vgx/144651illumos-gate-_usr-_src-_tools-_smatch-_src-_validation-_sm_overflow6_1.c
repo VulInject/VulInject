@@ -1,0 +1,1 @@
+void strcpy ( char * VAR1 , char * VAR2 ) int snprintf ( char * VAR1 , int VAR3 , char * VAR4 , char * VAR5 ) int sprintf ( char * VAR1 , char * VAR4 , char * VAR5 ) char * VAR5 ; int main ( void ) { char VAR6 [ 10 ] ; char VAR7 [ 10 ] ; snprintf ( VAR6 , 11 , "" , VAR5 ) ; sprintf ( VAR7 , "" , VAR5 ) ; }

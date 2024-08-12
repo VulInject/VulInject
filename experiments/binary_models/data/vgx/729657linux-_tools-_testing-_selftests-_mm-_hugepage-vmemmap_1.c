@@ -1,0 +1,1 @@
+static unsigned long FUN1 ( void * VAR1 ) { int VAR2 ; cfs_time_t VAR3 ; VAR2 = open ( "" , VAR4 ) ; if ( VAR2 < 0 ) { return - 1UL ; } FUN2 ( VAR2 , ( unsigned long ) VAR1 / VAR5 * sizeof ( VAR3 ) , VAR6 ) ; read ( VAR2 , & VAR3 , sizeof ( VAR3 ) ) ; close ( VAR2 ) ; return VAR3 & ~ VAR7 ; }

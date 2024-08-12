@@ -1,0 +1,10 @@
+static void FUN1(VAR1 *VAR2, TCGType VAR3, TCGReg VAR4, TCGReg VAR5)
+{
+    VAR6 *VAR7 = VAR2->VAR8;
+    FUN2(VAR4 != VAR5);
+    FUN3(VAR2, VAR9);
+    FUN3(VAR2, VAR10);
+    FUN4(VAR2, VAR4);
+    FUN4(VAR2, VAR5);
+    VAR7[1] = VAR2->VAR8 - VAR7;
+}

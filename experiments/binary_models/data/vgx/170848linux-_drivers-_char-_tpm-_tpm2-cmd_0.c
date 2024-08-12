@@ -1,0 +1,67 @@
+int FUN1(struct VAR1 *VAR2)
+{
+struct tpm_buf VAR3;
+u32 VAR4;
+VAR5 *VAR6;
+u32 VAR7;
+int VAR8;
+int VAR9;
+
+VAR9 = FUN2(VAR2, VAR10, &VAR4, NULL);
+if (VAR9)
+goto VAR11;
+
+if (VAR4 > 0xFFFFF) {
+VAR9 = -VAR12;
+goto VAR11;
+}
+
+VAR2->VAR13 = FUN3(&VAR2->VAR14, 4, VAR4,
+VAR15);
+if (!VAR2->VAR13) {
+VAR9 = -VAR16;
+goto VAR11;
+}
+
+VAR9 = FUN4(&VAR3, VAR17, VAR18);
+if (VAR9)
+goto VAR11;
+
+FUN5(&VAR3, VAR19);
+FUN5(&VAR3, VAR20);
+FUN5(&VAR3, VAR4);
+
+VAR9 = FUN6(VAR2, &VAR3, 9 + 4 * VAR4, NULL);
+if (VAR9) {
+FUN7(&VAR3);
+goto VAR11;
+}
+
+if (VAR4 !=
+FUN8((VAR5 *)&VAR3.VAR21[VAR22 + 5])) {
+VAR9 = -VAR12;
+FUN7(&VAR3);
+goto VAR11;
+}
+
+VAR2->VAR4 = VAR4;
+
+VAR6 = (VAR5 *)&VAR3.VAR21[VAR22 + 9];
+for (VAR8 = 0; VAR8 < VAR4; VAR8++, VAR6++) {
+VAR2->VAR13[VAR8] = FUN8(VAR6);
+VAR7 = VAR2->VAR13[VAR8] & 0xFFFF;
+
+if (VAR7 == VAR23 || VAR7 == VAR24) {
+VAR2->VAR13[VAR8] &=
+~(FUN9(2, 0) << VAR25);
+VAR2->VAR13[VAR8] |= 1 << VAR25;
+}
+}
+
+FUN7(&VAR3);
+
+VAR11:
+if (VAR9 > 0)
+VAR9 = -VAR26;
+return VAR9;
+}

@@ -1,0 +1,107 @@
+static int
+FUN1(VAR1* VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR5;
+char		VAR6[VAR7];
+
+
+if (VAR2->VAR8 <= 0 || VAR2->VAR8 > VAR9)
+VAR2->VAR8 = VAR9;
+
+
+VAR2->VAR10 = VAR2->VAR8;
+VAR2->VAR11 = 0;
+VAR2->VAR12 = VAR13;
+
+VAR2->VAR14 = VAR15;
+VAR2->VAR16 = VAR17; 
+VAR2->VAR18 = VAR19;
+VAR2->VAR20 = NULL;	
+VAR2->VAR21 = VAR22;
+VAR2->VAR23 = VAR24;
+
+
+if (sscanf(VAR2->VAR25.VAR26, VAR27"", &VAR4->VAR28) != 1)
+{
+snprintf(VAR2->VAR29, VAR30,
+"", VAR2->VAR25.VAR26);
+return VAR31;
+}
+
+
+snprintf(VAR6, VAR7, ""VAR32"",
+VAR4->VAR28);
+VAR2->VAR33 = open(VAR6, VAR34, 0);
+if (VAR2->VAR33 < 0)
+{
+
+switch (VAR35) {
+
+case VAR36:
+
+VAR2->VAR29[0] = '';
+return VAR37;
+
+case VAR38:
+
+VAR39
+snprintf(VAR2->VAR29, VAR30,
+"",
+VAR6);
+VAR40
+return VAR41;
+
+default:
+
+FUN2(VAR2->VAR29,
+VAR30, VAR35,
+"", VAR6);
+return VAR31;
+}
+}
+
+if (VAR2->VAR25.VAR42)
+{
+
+close(VAR2->VAR33);
+return VAR43;
+}
+
+
+if (FUN3(VAR2))
+{
+
+VAR2->VAR12 = VAR44;
+VAR2->VAR45 = VAR46;
+VAR2->VAR47 = VAR48;
+VAR2->VAR49 = VAR50;
+FUN4(VAR4->VAR28);
+
+
+VAR2->VAR51 = VAR2->VAR33;
+return 0;
+}
+
+
+if (FUN5(VAR2, (int)sizeof(VAR52)) == -1) {
+
+close(VAR2->VAR33);
+return VAR31;
+}
+VAR2->VAR45 = VAR46;
+VAR2->VAR47 = VAR53;
+FUN4(VAR4->VAR28);
+
+
+VAR2->VAR51 = VAR2->VAR33;
+
+
+VAR2->VAR54 = malloc(VAR2->VAR10);
+if (!VAR2->VAR54) {
+FUN2(VAR2->VAR29, VAR30,
+VAR35, "");
+close(VAR2->VAR33);
+return VAR31;
+}
+return 0;
+}

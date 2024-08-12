@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( VAR2 * VAR3 , VAR4 * VAR5 ) { u32 VAR6 , VAR7 ; if ( ! VAR5 ) { return VAR8 ; } VAR7 = FUN2 ( VAR3 -> VAR9 ) ; for ( VAR6 = 0 ; VAR6 < VAR7 ; VAR6 ++ ) { VAR4 * VAR10 = ( VAR4 * ) FUN3 ( VAR3 -> VAR9 , VAR6 ) ; if ( VAR10 == VAR5 ) { return FUN3 ( VAR3 -> VAR11 , VAR6 ) ; } } return NULL ; }

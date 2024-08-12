@@ -1,0 +1,23 @@
+VAR1
+FUN1(NET_LUID VAR2,
+PMIB_IPINTERFACE_ROW VAR3)
+{
+NTSTATUS VAR4;
+
+if (VAR3 == NULL) {
+return VAR5;
+}
+
+VAR3->VAR6 = VAR7;
+VAR3->VAR8.VAR9 = VAR2.VAR9;
+
+VAR4 = FUN2(VAR3);
+
+if (VAR4 != VAR10) {
+FUN3("",
+VAR4);
+return VAR4;
+}
+FUN4(VAR3);
+return VAR4;
+}

@@ -1,0 +1,63 @@
+static int FUN1(void *VAR1)
+{
+struct VAR2 *VAR3 = VAR1;
+struct VAR4 *VAR5 = VAR3->VAR5;
+struct VAR6 *VAR7 = VAR3->VAR6->VAR7;
+struct VAR8 *VAR9;
+wait_queue_t VAR10;
+
+FUN2("");
+
+FUN3(VAR11, -15);
+
+FUN4(&VAR10, VAR11);
+FUN5(FUN6(VAR7), &VAR10);
+while (1) {
+FUN7(VAR12);
+
+if (FUN8(&VAR3->VAR13))
+break;
+
+while ((VAR9 = FUN9(&VAR7->VAR14))) {
+FUN10(VAR9);
+if (!FUN11(VAR9))
+FUN12(VAR3, VAR9);
+else
+FUN13(VAR9);
+}
+
+if (VAR7->VAR15 != VAR16)
+break;
+
+
+while ((VAR9 = FUN9(&VAR7->VAR17)))
+if (FUN14(VAR3, VAR9))
+break;
+FUN15(VAR5);
+
+FUN16();
+}
+FUN17(VAR18);
+FUN18(FUN6(VAR7), &VAR10);
+
+
+FUN19(&VAR19);
+
+
+FUN20(VAR5);
+
+
+VAR3->VAR6->VAR7->VAR20 = VAR21;
+
+FUN21(FUN6(VAR3->VAR6->VAR7));
+
+
+FUN22(VAR3->VAR6->VAR22);
+
+FUN23(VAR3);
+
+FUN24(&VAR19);
+FUN25(VAR5);
+FUN26(0);
+return 0;
+}

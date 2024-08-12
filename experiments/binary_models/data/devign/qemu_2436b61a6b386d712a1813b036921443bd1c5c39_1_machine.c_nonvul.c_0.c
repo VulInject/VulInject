@@ -1,0 +1,80 @@
+void FUN1(VAR1 *VAR2, void *VAR3)
+{
+    VAR4 *VAR5 = VAR3;
+    uint16_t VAR6, VAR7, VAR8, VAR9;
+    uint32_t VAR10;
+    int32_t VAR11;
+    int VAR12;
+    for (VAR12 = 0; VAR12 < VAR13; VAR12++)
+        FUN2(VAR2, &VAR5->VAR14[VAR12]);
+    FUN2(VAR2, &VAR5->VAR15);
+    FUN2(VAR2, &VAR5->VAR16);
+    VAR10 = VAR5->VAR10;
+    FUN3(VAR2, &VAR10);
+    VAR8 = VAR5->VAR8;
+    VAR7 = (VAR5->VAR7 & ~0x3800) | (VAR5->VAR17 & 0x7) << 11;
+    VAR6 = 0;
+    for (VAR12 = 0; VAR12 < 8; VAR12++)
+    {
+        VAR6 |= ((!VAR5->VAR18[VAR12]) << VAR12);
+    }
+    FUN4(VAR2, &VAR8);
+    FUN4(VAR2, &VAR7);
+    FUN4(VAR2, &VAR6);
+    VAR9 = 0;
+    VAR9 = 1;
+    FUN4(VAR2, &VAR9);
+    for (VAR12 = 0; VAR12 < 8; VAR12++)
+    {
+        {
+            uint64_t VAR19;
+            uint16_t VAR20;
+            FUN5(&VAR19, &VAR20, VAR5->VAR21[VAR12].VAR22);
+            FUN6(VAR2, VAR19);
+            FUN7(VAR2, VAR20);
+        }
+        FUN6(VAR2, VAR5->VAR21[VAR12].VAR23.FUN8(0));
+    }
+    for (VAR12 = 0; VAR12 < 6; VAR12++)
+        FUN9(VAR2, &VAR5->VAR24[VAR12]);
+    FUN9(VAR2, &VAR5->VAR25);
+    FUN9(VAR2, &VAR5->VAR26);
+    FUN9(VAR2, &VAR5->VAR27);
+    FUN9(VAR2, &VAR5->VAR28);
+    FUN2(VAR2, &VAR5->VAR29);
+    FUN2(VAR2, &VAR5->VAR30);
+    FUN2(VAR2, &VAR5->VAR31);
+    FUN2(VAR2, &VAR5->VAR32[0]);
+    FUN2(VAR2, &VAR5->VAR32[2]);
+    FUN2(VAR2, &VAR5->VAR32[3]);
+    FUN2(VAR2, &VAR5->VAR32[4]);
+    for (VAR12 = 0; VAR12 < 8; VAR12++)
+        FUN2(VAR2, &VAR5->VAR33[VAR12]);
+    VAR11 = (VAR34)VAR5->VAR11;
+    FUN10(VAR2, &VAR11);
+    FUN3(VAR2, &VAR5->VAR35);
+    for (VAR12 = 0; VAR12 < VAR13; VAR12++)
+    {
+        FUN11(VAR2, &VAR5->VAR36[VAR12].FUN12(0));
+        FUN11(VAR2, &VAR5->VAR36[VAR12].FUN12(1));
+    }
+    FUN11(VAR2, &VAR5->VAR37);
+    FUN11(VAR2, &VAR5->VAR38);
+    FUN11(VAR2, &VAR5->VAR39);
+    FUN11(VAR2, &VAR5->VAR40);
+    FUN11(VAR2, &VAR5->VAR41);
+    FUN11(VAR2, &VAR5->VAR42);
+    FUN3(VAR2, &VAR5->VAR43);
+    FUN11(VAR2, &VAR5->VAR44);
+    FUN3(VAR2, &VAR5->VAR45);
+    FUN11(VAR2, &VAR5->VAR46);
+    FUN11(VAR2, &VAR5->VAR47);
+    FUN11(VAR2, &VAR5->VAR48);
+    FUN11(VAR2, &VAR5->VAR49);
+    FUN4(VAR2, &VAR5->VAR50);
+    FUN4(VAR2, &VAR5->VAR51);
+    FUN4(VAR2, &VAR5->VAR52);
+    FUN4(VAR2, &VAR5->VAR53);
+    FUN3(VAR2, &VAR5->VAR54);
+    FUN13(VAR2, &VAR5->VAR55);
+}

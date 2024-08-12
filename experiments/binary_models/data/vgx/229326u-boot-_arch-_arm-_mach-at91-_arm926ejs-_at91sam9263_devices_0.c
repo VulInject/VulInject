@@ -1,0 +1,22 @@
+void FUN1(void)
+{
+FUN2(VAR1, 21, 0);	
+FUN3(VAR2, 25, 0);	
+FUN2(VAR1, 25, 0);	
+FUN2(VAR1, 26, 0);	
+FUN2(VAR1, 27, 0);	
+FUN2(VAR1, 28, 0);	
+FUN2(VAR1, 23, 0);	
+FUN2(VAR1, 24, 0);	
+FUN2(VAR1, 30, 0);	
+FUN2(VAR1, 29, 0);	
+
+FUN2(VAR1, 22, 0);	
+FUN3(VAR2, 26, 0);	
+FUN3(VAR2, 22, 0);	
+FUN3(VAR2, 23, 0);	
+FUN3(VAR2, 27, 0);	
+FUN3(VAR2, 20, 0);	
+FUN3(VAR2, 21, 0);	
+FUN3(VAR2, 24, 0);	
+}

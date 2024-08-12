@@ -1,0 +1,5 @@
+static void FUN1(const char *VAR1, VAR2 *VAR3, VAR2 *VAR4, VAR2 *VAR5, VAR2 *VAR6, VAR2 *VAR7)
+{
+    if (!FUN2(VAR3, VAR1, NULL, VAR8) && !FUN2(VAR4, VAR1, NULL, VAR9) && !FUN2(VAR5, VAR1, NULL, VAR10) && !FUN2(VAR6, VAR1, NULL, VAR11) && !FUN2(VAR7, VAR1, NULL, VAR12))
+        fprintf(VAR13, "", VAR1);
+}

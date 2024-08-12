@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , enum iscsi_param VAR3 , char * VAR4 ) { struct VAR5 * VAR5 = VAR2 -> VAR6 ; switch ( VAR3 ) { case VAR7 : case VAR8 : return FUN2 ( ( VAR9 * ) & VAR5 -> VAR10 . VAR11 -> VAR12 . VAR13 . VAR14 , VAR3 , VAR4 ) ; default : break ; } return - VAR15 ; }

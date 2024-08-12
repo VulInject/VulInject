@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 ) { free ( VAR2 -> VAR3 ) ; VAR2 -> VAR3 = NULL ; VAR2 -> VAR4 = 0 ; }

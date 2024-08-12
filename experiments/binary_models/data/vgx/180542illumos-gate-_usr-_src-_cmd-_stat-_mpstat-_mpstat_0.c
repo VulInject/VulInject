@@ -1,0 +1,58 @@
+static void
+FUN1(struct VAR1 *VAR2, struct VAR1 *VAR3)
+{
+uint64_t VAR4 = 0;
+double VAR5, VAR6;
+VAR7 *VAR8 = NULL;
+VAR7 *VAR9 = NULL;
+
+if (VAR10 != -1 && VAR10 != VAR3->VAR11)
+return;
+
+
+if (VAR2) {
+VAR8 = &VAR2->VAR12;
+VAR9 = &VAR2->VAR13;
+
+
+if (!FUN2(VAR2))
+return;
+}
+
+
+if (!FUN2(VAR3))
+return;
+
+VAR4 = FUN3(VAR9, &VAR3->VAR13);
+
+VAR5 = (double)VAR4 / VAR14;
+if (VAR5 == 0.0) 
+VAR5 = 1.0;
+VAR6 = 100.0 / VAR5 / VAR14;
+
+(void) FUN4(""
+""
+"",
+VAR3->VAR15,
+(FUN5(VAR8, &VAR3->VAR12, "") +
+FUN5(VAR8, &VAR3->VAR12, "")) / VAR5,
+FUN5(VAR8, &VAR3->VAR12, "") / VAR5,
+FUN5(VAR9, &VAR3->VAR13, "") / VAR5,
+FUN5(VAR9, &VAR3->VAR13, "") / VAR5,
+FUN5(VAR9, &VAR3->VAR13, "") / VAR5,
+FUN5(VAR9, &VAR3->VAR13, "") / VAR5,
+FUN5(VAR9, &VAR3->VAR13, "") / VAR5,
+FUN5(VAR9, &VAR3->VAR13, "") / VAR5,
+FUN5(VAR9, &VAR3->VAR13, "") / VAR5,
+(FUN5(VAR9, &VAR3->VAR13, "") +
+FUN5(VAR9, &VAR3->VAR13, "")) / VAR5,
+FUN5(VAR9, &VAR3->VAR13, "") / VAR5,
+FUN5(VAR9, &VAR3->VAR13, "") * VAR6,
+FUN5(VAR9, &VAR3->VAR13, "") * VAR6,
+FUN5(VAR9, &VAR3->VAR13, "") * VAR6,
+FUN5(VAR9, &VAR3->VAR13, "") * VAR6);
+
+if (VAR16)
+(void) FUN4("", VAR3->VAR11);
+(void) FUN4("");
+}

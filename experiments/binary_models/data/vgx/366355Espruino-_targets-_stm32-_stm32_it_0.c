@@ -1,0 +1,26 @@
+void FUN1(void) {
+if (FUN2(VAR1) == VAR2) {
+FUN3(VAR1);
+FUN4(VAR3+10);
+}
+if (FUN2(VAR4) == VAR2) {
+FUN3(VAR4);
+FUN4(VAR3+11);
+}
+if (FUN2(VAR5) == VAR2) {
+FUN3(VAR5);
+FUN4(VAR3+12);
+}
+if (FUN2(VAR6) == VAR2) {
+FUN3(VAR6);
+FUN4(VAR3+13);
+}
+if (FUN2(VAR7) == VAR2) {
+FUN3(VAR7);
+FUN4(VAR3+14);
+}
+if (FUN2(VAR8) == VAR2) {
+FUN3(VAR8);
+FUN4(VAR3+15);
+}
+}

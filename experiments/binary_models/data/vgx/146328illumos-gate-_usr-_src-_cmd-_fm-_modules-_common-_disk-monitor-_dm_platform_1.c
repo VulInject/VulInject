@@ -1,0 +1,1 @@
+static boolean_t FUN1 ( const char * VAR1 ) { boolean_t VAR2 = VAR3 ; int VAR4 = 0 ; if ( FUN2 ( VAR1 , "" , 2 ) == 0 ) { VAR2 = VAR5 ; VAR1 += 2 ; } if ( * VAR1 == '' || * VAR1 == '' ) { VAR1 ++ ; } while ( * VAR1 != 0 ) { VAR1 ++ ; VAR4 ++ ; } return ( ( VAR4 == 0 ) ?VAR3 : VAR5 ) ; }

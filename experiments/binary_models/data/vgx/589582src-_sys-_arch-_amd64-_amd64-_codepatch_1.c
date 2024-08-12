@@ -1,0 +1,1 @@
+void FUN1 ( void * VAR1 , uint16_t VAR2 ) { unsigned char * VAR3 = VAR1 ; uint16_t VAR4 ; while ( VAR2 > 0 ) { VAR4 = VAR2 < 127 ?VAR2 : 127 ; switch ( VAR4 ) { case 1 : VAR3 [ 0 ] = 0x90 ; break ; case 2 : VAR3 [ 0 ] = 0x66 ; VAR3 [ 1 ] = 0x90 ; break ; default : VAR3 [ 0 ] = 0xEB ; VAR3 [ 1 ] = VAR4 - 2 ; break ; } VAR3 += VAR4 ; VAR2 -= VAR4 ; } }

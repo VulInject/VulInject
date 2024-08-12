@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 -> VAR2 = 0 ; VAR1 -> VAR3 = 0 ; VAR1 -> VAR4 = 0 ; VAR1 -> VAR5 = 0 ; VAR1 -> VAR6 = VAR7 ; }

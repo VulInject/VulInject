@@ -1,0 +1,27 @@
+static int FUN1(void *VAR1, unsigned int VAR2, void *VAR3,
+size_t VAR4)
+{
+struct VAR5 *VAR6 = VAR1;
+VAR7 *VAR8 = VAR3;
+
+FUN2(&VAR6->VAR9);
+
+for (; VAR4; VAR4--) {
+u8 VAR10;
+
+FUN3(VAR6,
+VAR11 | VAR12,
+VAR13);
+VAR10 = FUN4(VAR6, VAR2) << 4;
+FUN3(VAR6,
+VAR11 | VAR14,
+VAR13);
+VAR10 |= FUN4(VAR6, VAR2++);
+FUN3(VAR6, VAR11 | VAR15,
+VAR13);
+*VAR8++ = VAR10;
+}
+
+FUN5(&VAR6->VAR9);
+return 0;
+}

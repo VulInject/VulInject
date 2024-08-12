@@ -1,0 +1,41 @@
+void FUN1(
+struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+struct VAR5 *VAR6)
+{
+bool VAR7 = true;
+struct VAR5 *VAR8;
+struct VAR9 *VAR10;
+
+FUN2(&VAR4->VAR11);
+FUN3(VAR8, &VAR4->VAR12, VAR13) {
+if (VAR6 && VAR8 != VAR6)
+continue;
+
+VAR10 = FUN4(VAR8->VAR14,
+FUN5(&VAR4->VAR11));
+
+if (!VAR4->VAR15->FUN6(VAR4)) {
+VAR7 = false;
+} else {
+
+if (VAR10->VAR16->FUN7(VAR10) == VAR17)
+VAR7 = true;
+else
+VAR7 = false;
+}
+
+FUN8(""
+"",
+VAR4->VAR15->FUN9(),
+VAR4->VAR15->FUN10(VAR4), VAR8->VAR18,
+VAR7 ? "" : "");
+
+FUN11(VAR8, NULL, VAR8->VAR18,
+VAR7, VAR2, VAR4);
+
+FUN12(VAR10, VAR4, VAR8, VAR2,
+VAR8->VAR18);
+}
+FUN13(&VAR4->VAR11);
+}

@@ -1,0 +1,1 @@
+bool FUN1 ( struct VAR1 * VAR2 ) { unsigned long VAR3 ; bool VAR4 = true ; FUN2 ( & VAR2 -> VAR5 . VAR6 , VAR3 ) ; if ( ! VAR2 -> VAR7 ) { VAR4 = false ; } if ( VAR2 -> VAR7 != VAR8 ) { VAR2 -> VAR7 -- ; } FUN3 ( & VAR2 -> VAR5 . VAR6 , VAR3 ) ; return VAR4 ; }

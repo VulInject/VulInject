@@ -1,0 +1,12 @@
+static void FUN1(struct VAR1 *VAR1)
+{
+struct VAR2 *VAR3 = FUN2(VAR1);
+int VAR4;
+
+for (VAR4 = 0; VAR4 < 4; VAR4++)
+if (VAR3->VAR5[VAR4]->VAR6)
+FUN3(VAR3->VAR5[VAR4]->VAR7);
+FUN4(VAR1);
+FUN5(VAR1, NULL);
+FUN6(VAR3);
+}

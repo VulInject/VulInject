@@ -1,0 +1,1 @@
+static inline int FUN1 ( enum telemetry_unit VAR1 , const char * * VAR2 , int VAR3 ) { struct telemetry_unit_config VAR4 ; int VAR5 ; VAR4 = VAR6 . VAR7 -> VAR8 ; if ( VAR3 > VAR4 . VAR9 ) { VAR3 = VAR4 . VAR9 ; } for ( VAR5 = 0 ; VAR5 < VAR3 ; VAR5 ++ ) { VAR2 [ VAR5 ] = VAR4 . VAR10 [ VAR5 ] . VAR2 ; } return 0 ; }

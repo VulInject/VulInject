@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 , const char * VAR5 ) { FUN2 ( VAR2 && VAR4 , - 1 ) ; char * VAR6 = VAR2 -> VAR7 . FUN3 ( VAR2 -> VAR7 . VAR8 , "" ) ; VAR4 -> VAR9 = ( VAR10 * ) VAR6 ; VAR4 -> VAR11 = VAR2 -> VAR11 ; VAR4 -> VAR12 = strlen ( VAR6 ) ; return VAR4 -> VAR12 ; }

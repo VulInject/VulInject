@@ -1,0 +1,28 @@
+static int FUN1(VAR1 *VAR2, int VAR3)
+{
+    VAR4 *VAR5 = &VAR2->VAR5;
+    struct kvm_vcpu_events VAR6 = {};
+    if (!FUN2())
+    {
+        return 0;
+    }
+    VAR6.VAR7.VAR8 = (VAR5->VAR9 >= 0);
+    VAR6.VAR7.VAR10 = VAR5->VAR9;
+    VAR6.VAR7.VAR11 = VAR5->VAR11;
+    VAR6.VAR7.VAR12 = VAR5->VAR12;
+    VAR6.VAR7.VAR13 = 0;
+    VAR6.VAR14.VAR8 = (VAR5->VAR15 >= 0);
+    VAR6.VAR14.VAR10 = VAR5->VAR15;
+    VAR6.VAR14.VAR16 = VAR5->VAR17;
+    VAR6.VAR18.VAR8 = VAR5->VAR19;
+    VAR6.VAR18.VAR20 = VAR5->VAR21;
+    VAR6.VAR18.VAR22 = !!(VAR5->VAR23 & VAR24);
+    VAR6.VAR18.VAR13 = 0;
+    VAR6.VAR25 = VAR5->VAR25;
+    VAR6.VAR26 = 0;
+    if (VAR3 >= VAR27)
+    {
+        VAR6.VAR26 |= VAR28 | VAR29;
+    }
+    return FUN3(FUN4(VAR2), VAR30, &VAR6);
+}

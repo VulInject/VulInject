@@ -1,0 +1,14 @@
+static void FUN1(const VAR1 *VAR2, VAR3 *VAR4)
+{
+    hwaddr VAR5 = VAR2->VAR6[VAR7].VAR5;
+    hwaddr VAR8 = VAR2->VAR6[VAR7].VAR8;
+    VAR9 *VAR10;
+    char *VAR11;
+    VAR10 = FUN2(VAR5 + 8, VAR5, 8, VAR5 + 16, VAR4);
+    FUN3(VAR10, VAR12, (VAR13)VAR14);
+    VAR11 = FUN4("" VAR15, VAR5);
+    FUN5(VAR2->VAR16, VAR11);
+    FUN6(VAR2->VAR16, VAR11, "", "");
+    FUN7(VAR2->VAR16, VAR11, "", 2, VAR5, 2, VAR8);
+    FUN8(VAR11);
+}

@@ -1,0 +1,69 @@
+static VAR1 FUN1(struct VAR2 *VAR3, struct VAR4 *VAR5,
+struct VAR6 *VAR7, char *VAR8,
+loff_t VAR9, size_t VAR10)
+{
+struct VAR11 *VAR12 = FUN2(FUN3(VAR5));
+unsigned int VAR13 = VAR10;
+loff_t VAR14 = VAR9;
+VAR15 *VAR16 = (VAR15 *) VAR8;
+int VAR17;
+
+VAR17 = FUN4(VAR18);
+if (VAR17)
+return VAR17;
+
+if (FUN5(&VAR12->VAR19, VAR9,
+VAR10)) {
+FUN6(VAR12, "",
+VAR20->VAR21, VAR9);
+FUN7(VAR22, VAR23);
+}
+
+if (VAR9 > VAR12->VAR24)
+return 0;
+if (VAR9 + VAR10 > VAR12->VAR24) {
+VAR13 = VAR12->VAR24 - VAR9;
+VAR10 = VAR13;
+}
+
+FUN8(VAR12);
+
+if ((VAR9 & 1) && VAR13) {
+FUN9(VAR12, VAR9, VAR16[VAR9 - VAR14]);
+VAR9++;
+VAR13--;
+}
+
+if ((VAR9 & 3) && VAR13 > 2) {
+u16 VAR25 = VAR16[VAR9 - VAR14];
+VAR25 |= (VAR26) VAR16[VAR9 - VAR14 + 1] << 8;
+FUN10(VAR12, VAR9, VAR25);
+VAR9 += 2;
+VAR13 -= 2;
+}
+
+while (VAR13 > 3) {
+u32 VAR25 = VAR16[VAR9 - VAR14];
+VAR25 |= (VAR27) VAR16[VAR9 - VAR14 + 1] << 8;
+VAR25 |= (VAR27) VAR16[VAR9 - VAR14 + 2] << 16;
+VAR25 |= (VAR27) VAR16[VAR9 - VAR14 + 3] << 24;
+FUN11(VAR12, VAR9, VAR25);
+VAR9 += 4;
+VAR13 -= 4;
+}
+
+if (VAR13 >= 2) {
+u16 VAR25 = VAR16[VAR9 - VAR14];
+VAR25 |= (VAR26) VAR16[VAR9 - VAR14 + 1] << 8;
+FUN10(VAR12, VAR9, VAR25);
+VAR9 += 2;
+VAR13 -= 2;
+}
+
+if (VAR13)
+FUN9(VAR12, VAR9, VAR16[VAR9 - VAR14]);
+
+FUN12(VAR12);
+
+return VAR10;
+}

@@ -1,0 +1,271 @@
+static int
+FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+const struct VAR5 *VAR6, const struct VAR5 *VAR7)
+{
+int VAR8;
+
+VAR4->VAR9 = VAR6->VAR9;
+VAR4->VAR10 = -1;
+
+switch (VAR4->VAR9) {
+case VAR11:
+case VAR12:
+case VAR13:
+case VAR14:
+if (VAR7 != NULL) {
+if (VAR7->VAR9 != VAR15 &&
+VAR7->VAR9 != VAR16) {
+FUN2(&VAR2->VAR17,
+VAR18,
+"",
+VAR7->VAR9, VAR6->VAR9);
+return (VAR19);
+}
+VAR4->VAR10 = VAR7->VAR9;
+VAR4->VAR20 = 0;
+if (VAR7->VAR9 == VAR15)
+FUN3(VAR4);
+}
+break;
+default:
+break;
+}
+
+switch (VAR4->VAR9) {
+case VAR11:
+break;
+
+case VAR21: case VAR22:
+
+
+{
+lzma_options_delta VAR23;
+lzma_filter VAR24[VAR25], *VAR26;
+int VAR27 = 0;
+
+if (VAR4->VAR28) {
+FUN4(&(VAR4->VAR29));
+VAR4->VAR28 = 0;
+}
+
+
+if (VAR7 != NULL) {
+VAR4->VAR10 = VAR7->VAR9;
+
+VAR24[VAR27].VAR30 = NULL;
+switch (VAR4->VAR10) {
+case VAR15:
+if (VAR4->VAR9 == VAR22) {
+VAR24[VAR27].VAR31 = VAR32;
+VAR27++;
+} else
+
+FUN3(VAR4);
+break;
+case VAR16:
+
+VAR4->VAR20 = 0;
+break;
+case VAR33:
+if (VAR7->VAR34 != 1) {
+FUN2(&VAR2->VAR17,
+VAR18,
+"");
+return (VAR19);
+}
+VAR24[VAR27].VAR31 = VAR35;
+memset(&VAR23, 0, sizeof(VAR23));
+VAR23.VAR36 = VAR37;
+VAR23.VAR38 =
+(VAR39)VAR7->VAR40[0] + 1;
+VAR24[VAR27].VAR30 = &VAR23;
+VAR27++;
+break;
+
+case VAR41:
+VAR24[VAR27].VAR31 = VAR42;
+VAR27++;
+break;
+case VAR43:
+VAR24[VAR27].VAR31 = VAR44;
+VAR27++;
+break;
+case VAR45:
+VAR24[VAR27].VAR31 = VAR46;
+VAR27++;
+break;
+case VAR47:
+VAR24[VAR27].VAR31 = VAR48;
+VAR27++;
+break;
+case VAR49:
+VAR24[VAR27].VAR31 = VAR50;
+VAR27++;
+break;
+default:
+FUN2(&VAR2->VAR17,
+VAR18,
+"", VAR4->VAR10);
+return (VAR19);
+}
+}
+
+if (VAR4->VAR9 == VAR22)
+VAR24[VAR27].VAR31 = VAR51;
+else
+VAR24[VAR27].VAR31 = VAR52;
+VAR24[VAR27].VAR30 = NULL;
+VAR26 = &VAR24[VAR27];
+VAR8 = FUN5(&VAR24[VAR27], NULL,
+VAR6->VAR40, (VAR53)VAR6->VAR34);
+if (VAR8 != VAR54) {
+FUN6(VAR2, VAR8);
+return (VAR19);
+}
+VAR27++;
+
+VAR24[VAR27].VAR31 = VAR55;
+VAR24[VAR27].VAR30 = NULL;
+VAR8 = FUN7(&(VAR4->VAR29), VAR24);
+free(VAR26->VAR30);
+if (VAR8 != VAR54) {
+FUN6(VAR2, VAR8);
+return (VAR19);
+}
+VAR4->VAR28 = 1;
+VAR4->VAR29.VAR56 = 0;
+VAR4->VAR29.VAR57 = 0;
+break;
+}
+FUN2(&VAR2->VAR17, VAR18,
+"");
+return (VAR19);
+case VAR12:
+if (VAR4->VAR58) {
+FUN8(&(VAR4->VAR59));
+VAR4->VAR58 = 0;
+}
+VAR8 = FUN9(&(VAR4->VAR59), 0, 0);
+if (VAR8 == VAR60)
+VAR8 = FUN9(&(VAR4->VAR59), 0, 1);
+if (VAR8 != VAR61) {
+int VAR62 = VAR18;
+const char *VAR63 = NULL;
+switch (VAR8) {
+case VAR64:
+VAR63 = "";
+break;
+case VAR60:
+VAR62 = VAR65;
+VAR63 = "";
+break;
+case VAR66:
+VAR63 = "";
+break;
+}
+FUN2(&VAR2->VAR17, VAR62,
+"",
+VAR63 != NULL ? VAR63 : "");
+VAR4->VAR58 = 0;
+return (VAR19);
+}
+VAR4->VAR58 = 1;
+VAR4->VAR59.VAR67 = 0;
+VAR4->VAR59.VAR68 = 0;
+VAR4->VAR59.VAR69 = 0;
+VAR4->VAR59.VAR70 = 0;
+break;
+FUN2(&VAR2->VAR17, VAR18,
+"");
+return (VAR19);
+case VAR13:
+if (VAR4->VAR71)
+VAR8 = FUN10(&(VAR4->VAR72));
+else
+VAR8 = FUN11(&(VAR4->VAR72),
+-15 );
+if (VAR8 != VAR73) {
+FUN2(&VAR2->VAR17, VAR18,
+"");
+return (VAR19);
+}
+VAR4->VAR71 = 1;
+VAR4->VAR72.VAR56 = 0;
+VAR4->VAR72.VAR57 = 0;
+break;
+FUN2(&VAR2->VAR17, VAR18,
+"");
+return (VAR19);
+case VAR14:
+{
+unsigned VAR74;
+uint32_t VAR75;
+
+if (VAR4->VAR76) {
+VAR77.FUN12(
+&VAR4->VAR78);
+VAR4->VAR76 = 0;
+}
+
+if (VAR6->VAR34 < 5) {
+FUN2(&VAR2->VAR17, VAR18,
+"");
+return (VAR19);
+}
+VAR74 = VAR6->VAR40[0];
+VAR75 = FUN13(&(VAR6->VAR40[1]));
+if (VAR74 < VAR79 || VAR74 > VAR80 ||
+VAR75 < VAR81 || VAR75 > VAR82) {
+FUN2(&VAR2->VAR17, VAR18,
+"");
+return (VAR19);
+}
+VAR77.FUN14(&VAR4->VAR78);
+VAR8 = VAR77.FUN15(
+&VAR4->VAR78, VAR75);
+if (VAR8 == 0) {
+FUN2(&VAR2->VAR17, VAR65,
+"");
+return (VAR83);
+}
+VAR77.FUN16(
+&VAR4->VAR78, VAR74);
+VAR77.FUN17(
+&VAR4->VAR84);
+VAR4->VAR76 = 1;
+VAR4->VAR85 = 0;
+VAR4->VAR86.VAR87 = 0;
+VAR4->VAR86.VAR56 = 0;
+VAR4->VAR86.VAR57 = 0;
+break;
+}
+case VAR15:
+case VAR16:
+case VAR41:
+case VAR43:
+case VAR45:
+case VAR47:
+case VAR49:
+case VAR33:
+FUN2(&VAR2->VAR17, VAR18,
+"", VAR4->VAR9);
+return (VAR19);
+case VAR88:
+case VAR89:
+case VAR90:
+if (VAR2->VAR91) {
+FUN18(VAR2->VAR91, 1);
+FUN19(VAR2->VAR91, 1);
+VAR4->VAR92 = 1;
+}
+FUN2(&VAR2->VAR17, VAR18,
+"", VAR4->VAR9);
+return (VAR19);
+default:
+FUN2(&VAR2->VAR17, VAR18,
+"", VAR4->VAR9);
+return (VAR19);
+}
+
+return (VAR93);
+}

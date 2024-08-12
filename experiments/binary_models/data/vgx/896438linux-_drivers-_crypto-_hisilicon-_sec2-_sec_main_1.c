@@ -1,0 +1,1 @@
+static int FUN1 ( const char * VAR1 , const struct VAR2 * VAR3 ) { u32 VAR4 ; int VAR5 ; VAR5 = FUN2 ( VAR1 , 10 , & VAR4 ) ; if ( VAR5 ) { return - VAR6 ; } if ( ! VAR4 || VAR4 > VAR7 || VAR4 & 0x1 ) { FUN3 ( "" , VAR4 ) ; return - VAR6 ; } return FUN4 ( VAR1 , VAR3 ) ; }

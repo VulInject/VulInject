@@ -1,0 +1,1 @@
+Portal FUN1 ( void ) { static unsigned int VAR1 = 0 ; char VAR2 [ VAR3 ] ; for ( ; ; ) { VAR1 ++ ; sprintf ( VAR2 , "" , VAR1 ) ; } return FUN2 ( VAR2 , false , false ) ; }

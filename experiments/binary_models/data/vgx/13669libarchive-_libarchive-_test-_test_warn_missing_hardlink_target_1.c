@@ -1,0 +1,1 @@
+FUN1 ( ) { struct VAR1 * VAR2 ; struct VAR3 * VAR4 ; assert ( NULL != ( VAR2 = FUN2 ( ) ) ) ; assert ( NULL != ( VAR4 = FUN3 ( ) ) ) ; FUN4 ( VAR4 , "" ) ; FUN5 ( VAR4 , "" ) ; FUN6 ( VAR5 , FUN7 ( VAR2 , VAR4 ) ) ; FUN6 ( VAR6 , FUN8 ( VAR2 ) ) ; FUN9 ( "" , FUN10 ( VAR2 ) ) ; FUN11 ( VAR4 ) ; }

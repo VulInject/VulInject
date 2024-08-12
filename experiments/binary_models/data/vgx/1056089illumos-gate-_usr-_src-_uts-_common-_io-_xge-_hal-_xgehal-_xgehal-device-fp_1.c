@@ -1,0 +1,1 @@
+__HAL_STATIC_CHANNEL __HAL_INLINE_CHANNEL int FUN1 ( VAR1 * VAR2 ) { int VAR3 ; for ( VAR3 = 0 ; VAR3 < VAR4 ; VAR3 ++ ) { VAR5 * VAR6 = & VAR2 -> VAR7 [ VAR3 ] ; } return - 1 ; }

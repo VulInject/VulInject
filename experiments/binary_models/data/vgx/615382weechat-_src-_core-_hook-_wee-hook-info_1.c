@@ -1,0 +1,1 @@
+FUN1 ( ) { if ( ! VAR1 || ! VAR1 -> VAR2 ) { return ; } if ( FUN2 ( VAR1 , VAR3 ) ) { free ( FUN2 ( VAR1 , VAR3 ) ) ; FUN2 ( VAR1 , VAR3 ) = NULL ; } if ( FUN2 ( VAR1 , VAR4 ) ) { free ( FUN2 ( VAR1 , VAR4 ) ) ; FUN2 ( VAR1 , VAR4 ) = NULL ; } if ( FUN2 ( VAR1 , VAR5 ) ) { free ( FUN2 ( VAR1 , VAR5 ) ) ; FUN2 ( VAR1 , VAR5 ) = NULL ; } VAR1 -> VAR2 = NULL ; }

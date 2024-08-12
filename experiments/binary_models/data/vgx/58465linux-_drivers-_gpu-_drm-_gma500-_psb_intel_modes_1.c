@@ -1,0 +1,1 @@
+bool FUN1 ( struct VAR1 * VAR2 ) { u8 VAR3 [ ] { 0x0 0x0 } ; ; int VAR4 [ 2 ] ; int VAR5 ; struct i2c_msg VAR6 [ ] { { . VAR7 = 0x50 . VAR8 = 0 . VAR9 = 1 . VAR4 = VAR3 } { . VAR7 = 0x50 . VAR8 = VAR10 . VAR9 = 1 . VAR4 = VAR4 } } ; ; VAR5 = FUN2 ( VAR2 , VAR6 , 2 ) ; if ( VAR5 == 2 ) { return true ; } return false ; }

@@ -1,0 +1,1 @@
+static u32 FUN1 ( void ) { struct VAR1 * VAR2 ; u32 VAR3 = 0 ; u32 VAR4 ; s32 VAR5 = FUN2 ( ) ; VAR4 = FUN3 ( VAR5 , VAR6 ) ; VAR2 = VAR7 ; while ( VAR2 -> VAR8 >= 0 && VAR2 -> VAR9 >= 0 ) { if ( VAR4 & ( 1 << VAR2 -> VAR8 ) ) { VAR3 |= 1 << VAR2 -> VAR9 ; } VAR2 ++ ; } return VAR3 ; }

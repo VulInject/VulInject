@@ -1,0 +1,45 @@
+static int FUN1(void VAR1 *VAR2)
+{
+return FUN2(VAR2, VAR3);
+}
+
+
+static u32 VAR4[VAR5] = {0x66DD131D, 0x77EE1722};
+
+static u32 VAR6[VAR5] = {0x13E87C44, 0x18F88C44};
+static u32 VAR7[VAR5] = {0x19E8DC44, 0x1EF8EC44};
+static u32 VAR8[VAR5][VAR9] = {
+{0x004A071D, 0x0078071D},
+{0x0055081E, 0x0089081E},
+};
+
+static u32 VAR10[] = {0x00FF000A, 0x00FF000B};
+
+static u32 VAR11[] = {0x0800001E, 0x08000022};
+static u32 VAR12[] = {0x0800001E, 0x0800001E};
+
+static void FUN3(void VAR1 *VAR13, int VAR14)
+{
+u32 VAR15;
+int VAR16;
+
+VAR15 = FUN4(VAR13 + VAR17);
+VAR16 = (VAR15 & VAR18) >> VAR19;
+VAR16 += (VAR15 & VAR20) >>
+VAR21;
+
+VAR16 += VAR14 & ~1;
+
+VAR15 &= ~(VAR18 | VAR20);
+if (VAR16 > 0xf) {
+VAR15 |= 0xf << VAR19;
+VAR15 |= (VAR16 - 0xf) << VAR21;
+} else {
+VAR15 |= VAR16 << VAR19;
+}
+
+FUN5(VAR15, VAR13 + VAR17);
+FUN5(VAR15, VAR13 + VAR22);
+
+FUN4(VAR13 + VAR22); 
+}

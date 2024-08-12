@@ -1,0 +1,61 @@
+static void FUN1 (VAR1 *VAR2) {
+struct VAR3 *VAR4 = NULL;
+struct VAR5 *VAR6 = NULL, *VAR7 = NULL;
+struct VAR8 *VAR9;
+VAR10 *  VAR11;
+
+FUN2(VAR2);
+while ( (VAR11 = FUN3(&VAR2->VAR12))) {
+VAR6 = VAR11->VAR13.VAR14;
+if (!VAR6) {
+FUN4("");
+goto VAR15;
+}
+VAR4 = FUN5(VAR6)->VAR4;
+if (!VAR4) {
+FUN4("");
+FUN6(VAR6);
+goto VAR15;
+}
+
+VAR9 = FUN7(VAR4);
+if (!VAR9) {
+FUN4("");
+FUN6(VAR6);
+goto VAR15;
+}
+
+VAR7 = FUN8(&VAR9->VAR16);
+while (VAR7 && (VAR7 != VAR6)) {
+if (!(FUN9(VAR7) & VAR17)) {
+FUN4("", VAR4->VAR18);
+}
+FUN10(FUN4("");)
+if ((VAR4->VAR19) && (VAR7->VAR20 != 0))
+{
+VAR4->FUN11(VAR4, VAR7);
+FUN12(FUN4("",
+(long)VAR7);)
+}
+else 
+FUN6(VAR7);
+VAR7 = FUN8(&VAR9->VAR16);
+}                                                        
+if (!VAR7) {
+FUN12(FUN4("",VAR4->VAR18);)
+FUN13 (&VAR2->VAR12, VAR11);
+break;
+}
+if ((VAR4->VAR19) && (VAR6->VAR20 != 0))
+{
+VAR4->FUN11(VAR4, VAR6);
+FUN12(FUN4("",(long)VAR6);)
+}
+else 
+FUN6(VAR6);
+FUN14(VAR11);
+}
+FUN15(VAR2);
+VAR15:
+return;
+}

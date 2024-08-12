@@ -1,0 +1,1 @@
+static int64_t FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 , uint32_t VAR5 ) { unsigned int VAR6 ; int64_t VAR7 ; for ( ; ; ) { VAR7 = FUN2 ( VAR4 , & VAR6 , VAR2 -> VAR8 ) ; if ( VAR6 == VAR5 ) { break ; } FUN3 ( VAR2 , VAR4 , VAR7 , VAR9 ) ; } return VAR7 ; }

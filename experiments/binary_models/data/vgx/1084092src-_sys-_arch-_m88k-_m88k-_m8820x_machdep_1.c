@@ -1,0 +1,1 @@
+apr_t FUN1 ( ) { u_int VAR1 ; struct VAR2 * VAR3 ; VAR3 = VAR2 ; for ( VAR1 = VAR4 ; VAR1 != 0 ; VAR1 -- , VAR3 ++ ) { if ( FUN2 ( VAR3 -> VAR5 ) == VAR6 && FUN3 ( VAR3 -> VAR5 ) <= 6 ) { return VAR7 ; } } if ( ( ( FUN4 ( ) & VAR8 ) >> VAR9 ) <= 9 ) { return VAR7 ; } return VAR10 ; }

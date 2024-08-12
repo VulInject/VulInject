@@ -1,0 +1,122 @@
+FUN1("");
+
+
+static vboxUniformedAPI VAR1;
+
+static VAR2 *VAR3;
+static virMutex VAR4 = VAR5;
+static struct VAR6 *VAR7;
+static struct VAR6 *FUN2(void);
+static __thread bool VAR8;
+
+FUN3(VAR9, VAR10, VAR11, \
+VAR12, VAR13, VAR14)
+
+static void FUN4(6, 7)
+FUN3(struct VAR6 *VAR9,
+int VAR10,
+const char *VAR15,
+const char *VAR16,
+size_t VAR17,
+const char *VAR18, ...)
+{
+int VAR19 = VAR20;
+FUN5(VAR21) VAR22 = VAR23;
+VAR24 *VAR25 = NULL;
+VAR26 *VAR27 = NULL;
+const VAR28 *VAR29 = NULL;
+bool VAR30 = false;
+nsresult VAR31;
+g_autofree char *VAR32 = NULL;
+
+if (VAR18) {
+va_list VAR33;
+
+FUN6(VAR33, VAR18);
+VAR32 = FUN7(VAR18, VAR33);
+FUN8(VAR33);
+}
+
+VAR31 = VAR1.VAR34.FUN9(VAR9->VAR35, &VAR25);
+if (FUN10(VAR31) || !VAR25) {
+FUN11("");
+goto VAR36;
+}
+
+VAR29 = VAR1.VAR37.FUN12();
+VAR31 = FUN13(VAR25, VAR29, (void **)&VAR27);
+if (FUN10(VAR31) || !VAR27) {
+FUN11("");
+goto VAR36;
+}
+
+while (VAR27) {
+VAR26 *VAR38 = NULL;
+VAR39 *VAR40 = NULL;
+char *VAR41 = NULL;
+VAR39 *VAR42 = NULL;
+char *VAR43 = NULL;
+
+VAR31 = VAR1.VAR37.FUN14(VAR27, &VAR40);
+if (FUN10(VAR31)) {
+FUN11("");
+goto VAR36;
+}
+
+VAR31 = VAR1.VAR37.FUN15(VAR27, &VAR42);
+if (FUN10(VAR31)) {
+FUN16(VAR40);
+FUN11("");
+goto VAR36;
+}
+
+FUN17(VAR40, &VAR41);
+FUN16(VAR40);
+
+FUN17(VAR42, &VAR43);
+FUN16(VAR42);
+
+FUN18(&VAR22, "", VAR41, VAR43);
+FUN19(VAR41);
+FUN19(VAR43);
+
+if (VAR30)
+FUN20(&VAR22, '');
+else
+VAR30 = true;
+
+VAR31 = VAR1.VAR37.FUN21(VAR27, &VAR38);
+if (FUN10(VAR31)) {
+break;
+}
+
+FUN22(VAR27);
+VAR27 = VAR38;
+}
+
+VAR36:
+if (FUN23(&VAR22)) {
+const char *VAR44 = FUN24(&VAR22);
+g_autofree char *VAR45 = NULL;
+
+if (!VAR32 || FUN25(VAR32, "")) {
+VAR45 = FUN26(VAR44);
+} else {
+VAR45 = FUN27("", VAR32, VAR44);
+}
+
+FUN28(VAR32);
+VAR32 = FUN29(&VAR45);
+}
+
+FUN30(VAR46, VAR10, VAR15, VAR16, VAR17, "", VAR32);
+
+VAR31 = VAR1.VAR34.FUN31(VAR9->VAR35);
+if (FUN10(VAR31)) {
+FUN11("");
+}
+
+FUN22(VAR27);
+FUN22(VAR25);
+VAR20 = VAR19;
+}

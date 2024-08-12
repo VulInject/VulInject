@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , uint32_t VAR5 , enum ttm_caching VAR6 , unsigned long VAR7 ) { VAR2 -> VAR8 = ( FUN2 ( VAR4 -> VAR9 . VAR10 ) >> VAR11 ) + VAR7 ; VAR2 -> VAR6 = VAR12 ; VAR2 -> VAR5 = VAR5 ; VAR2 -> VAR13 = NULL ; VAR2 -> VAR14 = VAR4 -> VAR14 ; VAR2 -> VAR6 = VAR6 ; }

@@ -1,0 +1,123 @@
+static int
+FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4, int *VAR5, bool VAR6)
+{
+
+struct VAR7 *VAR7;
+uint8_t VAR8[65536];
+struct iovec VAR9[2];
+struct msghdr VAR10;
+uint8_t VAR11[64];
+struct VAR12 *VAR13;
+ssize_t VAR14;
+int *VAR15;
+int VAR16;
+
+FUN2(VAR4->VAR17 >= sizeof *VAR7);
+FUN3(VAR4);
+
+VAR9[0].VAR18 = VAR4->VAR19;
+VAR9[0].VAR20 = VAR4->VAR17;
+VAR9[1].VAR18 = VAR8;
+VAR9[1].VAR20 = sizeof VAR8;
+
+memset(&VAR10, 0, sizeof VAR10);
+VAR10.VAR21 = VAR9;
+VAR10.VAR22 = 2;
+VAR10.VAR23 = VAR11;
+VAR10.VAR24 = sizeof VAR11;
+
+
+VAR7 = VAR4->VAR19;
+do {
+VAR7->VAR25 = VAR26;
+DWORD VAR27;
+if (!FUN4(VAR2->VAR28, VAR2->VAR29,
+NULL, 0, VAR8, sizeof VAR8, &VAR27, NULL)) {
+FUN5(FUN6());
+FUN7(&VAR30, "",
+FUN8());
+VAR14 = -1;
+
+VAR31 = VAR32;
+} else {
+VAR14 = VAR27;
+if (VAR14 == 0) {
+VAR14 = -1;
+VAR31 = VAR33;
+} else {
+if (VAR14 >= VAR4->VAR17) {
+FUN9(VAR4, VAR14);
+VAR7 = VAR4->VAR19;
+VAR7->VAR25 = VAR26;
+}
+memcpy(VAR4->VAR34, VAR8, VAR14);
+VAR4->VAR35 = VAR14;
+}
+}
+VAR14 = FUN10(VAR2->VAR36, &VAR10, VAR6 ? 0 : VAR37);
+VAR16 = (VAR14 < 0 ? VAR31
+: VAR14 == 0 ? VAR38 
+: VAR7->VAR25 != VAR26 ? 0
+: VAR14);
+} while (VAR16 == VAR39);
+if (VAR16) {
+if (VAR16 == VAR40) {
+
+FUN11(VAR41);
+}
+return VAR16;
+}
+
+if (VAR10.VAR42 & VAR43) {
+FUN12(&VAR30, ""VAR44"",
+sizeof VAR8);
+return VAR45;
+}
+
+if (VAR14 < sizeof *VAR7
+|| VAR7->VAR25 < sizeof *VAR7
+|| VAR7->VAR25 > VAR14) {
+FUN12(&VAR30, ""VAR44""VAR44"",
+VAR14, sizeof *VAR7);
+return VAR46;
+}
+VAR4->VAR35 = FUN13(VAR14, VAR4->VAR17);
+if (VAR14 > VAR4->VAR17) {
+FUN11(VAR47);
+FUN14(VAR4, VAR8, VAR14 - VAR4->VAR17);
+}
+
+if (VAR5) {
+
+FUN15(VAR5);
+VAR13 = FUN16(&VAR10);
+while (VAR13 != NULL) {
+if (VAR13->VAR48 == VAR49
+&& VAR13->VAR50 == VAR51) {
+VAR15 = FUN17(int *, FUN18(VAR13));
+FUN19(VAR5, *VAR15);
+}
+if (VAR13->VAR48 == VAR52
+&& VAR13->VAR50 == VAR53) {
+
+int VAR54;
+int VAR55;
+VAR54 = (VAR13->VAR56 - FUN20(sizeof(struct VAR12)))
+/ sizeof(int);
+VAR15 = FUN17(int *, FUN18(VAR13));
+for (VAR55 = 0; VAR55 < VAR54; VAR55++) {
+FUN12(&VAR30, "",
+VAR15[VAR55]);
+close(VAR15[VAR55]);
+}
+}
+
+VAR13 = FUN21(&VAR10, VAR13);
+}
+}
+
+FUN22(VAR57, 0, VAR4->VAR34, VAR4->VAR35, VAR2->VAR58);
+FUN11(VAR59);
+
+return 0;
+}

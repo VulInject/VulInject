@@ -1,0 +1,57 @@
+static int
+FUN1(VAR1 *VAR2, VAR3 *VAR4, ctf_id_t VAR5, VAR3 *VAR6,
+ctf_id_t VAR7)
+{
+int VAR8, VAR9;
+ctf_funcinfo_t VAR10, VAR11;
+VAR12 *VAR13, *VAR14;
+
+if (FUN2(VAR4, VAR5, &VAR10) == VAR15)
+return (VAR15);
+
+if (FUN2(VAR6, VAR7, &VAR11) == VAR15)
+return (FUN3(VAR4, FUN4(VAR6)));
+
+if (VAR10.VAR16 != VAR11.VAR16)
+return (VAR17);
+
+if (VAR10.VAR18 != VAR11.VAR18)
+return (VAR17);
+
+VAR8 = FUN5(VAR2, VAR4, VAR10.VAR19, VAR6, VAR11.VAR19);
+if (VAR8 != VAR20)
+return (VAR8);
+
+VAR13 = FUN6(sizeof (VAR12) * VAR10.VAR16);
+if (VAR13 == NULL)
+return (FUN3(VAR4, VAR21));
+
+VAR14 = FUN6(sizeof (VAR12) * VAR10.VAR16);
+if (VAR14 == NULL) {
+FUN7(VAR13, sizeof (VAR12) * VAR10.VAR16);
+return (FUN3(VAR4, VAR21));
+}
+
+if (FUN8(VAR4, VAR5, VAR10.VAR16, VAR13) == VAR15) {
+VAR8 = VAR15;
+goto VAR22;
+}
+
+if (FUN8(VAR6, VAR7, VAR11.VAR16, VAR14) == VAR15) {
+VAR8 = FUN3(VAR4, FUN4(VAR6));
+goto VAR22;
+}
+
+VAR8 = VAR17;
+for (VAR9 = 0; VAR9 < VAR10.VAR16; VAR9++) {
+VAR8 = FUN5(VAR2, VAR4, VAR13[VAR9], VAR6, VAR14[VAR9]);
+if (VAR8 != VAR20)
+goto VAR22;
+}
+VAR8 = VAR20;
+
+VAR22:
+FUN7(VAR13, sizeof (VAR12) * VAR10.VAR16);
+FUN7(VAR14, sizeof (VAR12) * VAR11.VAR16);
+return (VAR8);
+}

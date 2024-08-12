@@ -1,0 +1,39 @@
+void FUN1(void)
+{
+size_t VAR1, VAR2, VAR3;
+unsigned long VAR4;
+int VAR5;
+struct qlist_head VAR6 = VAR7;
+
+if (FUN2(FUN3(VAR8) <=
+FUN3(VAR9)))
+return;
+
+
+VAR5 = FUN4(&VAR10);
+FUN5(&VAR11, VAR4);
+
+
+VAR1 = (FUN3(VAR12) << VAR13) /
+VAR14;
+VAR3 = VAR15 * FUN6();
+VAR2 = (VAR1 < VAR3) ?
+0 : VAR1 - VAR3;
+FUN7(VAR9, VAR2);
+
+FUN7(VAR16, FUN8((VAR17)VAR15,
+2 * VAR1 / VAR18));
+
+if (FUN2(VAR8 > VAR9)) {
+FUN9(&VAR19[VAR20], &VAR6);
+FUN7(VAR8, VAR8 - VAR6.VAR21);
+VAR20++;
+if (VAR20 == VAR18)
+VAR20 = 0;
+}
+
+FUN10(&VAR11, VAR4);
+
+FUN11(&VAR6, NULL);
+FUN12(&VAR10, VAR5);
+}

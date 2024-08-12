@@ -1,0 +1,1 @@
+int FUN1 ( const VAR1 * VAR2 , const unsigned char * VAR3 , int VAR4 ) { int VAR5 , VAR6 ; VAR6 = 1 ; for ( VAR5 = 0 ; VAR5 < VAR2 -> VAR7 && VAR6 ; ++ VAR5 ) { unsigned char VAR8 = VAR5 < VAR4 ?~ VAR3 [ VAR5 ] : 0xff ; VAR6 = ( VAR2 -> VAR9 [ VAR5 ] & VAR8 ) == 0 ; } return VAR6 ; }

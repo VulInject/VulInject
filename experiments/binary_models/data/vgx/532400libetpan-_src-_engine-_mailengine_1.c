@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( struct VAR2 * VAR3 ) { struct VAR1 * VAR4 ; VAR4 = malloc ( sizeof ( * VAR4 ) ) ; if ( VAR4 == NULL ) { VAR5 } VAR4 -> VAR3 = VAR3 ; VAR4 -> VAR6 = FUN2 ( VAR7 , VAR8 ) ; if ( VAR4 -> VAR6 == NULL ) { free } return VAR4 ; free err return NULL ; }

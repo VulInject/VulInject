@@ -1,0 +1,18 @@
+void
+FUN1()
+{
+if (VAR1 == VAR2)
+FUN2(VAR3);
+else
+FUN3(VAR4);
+FUN4(VAR5);
+FUN5(0, VAR6);
+FUN5(1, VAR6);
+if (VAR1 == VAR7) {
+FUN5(2, VAR6);
+FUN5(3, VAR6);
+}
+if (VAR1 == VAR8) {
+FUN6(VAR9);
+}
+}

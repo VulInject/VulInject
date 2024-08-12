@@ -1,0 +1,69 @@
+void
+FUN1(struct VAR1 *VAR2, struct VAR1 *VAR3, void *VAR4)
+{
+struct VAR5 *VAR6;
+struct VAR7 *VAR8;
+pcitag_t VAR9;
+pci_chipset_tag_t VAR10;
+pci_intr_handle_t VAR11;
+const char *VAR12;
+
+VAR6 = (struct VAR5 *)VAR3;
+VAR8 = (struct VAR7 *)VAR4;
+VAR9 = VAR8->VAR13;
+VAR10 = VAR8->VAR14;
+
+
+if (FUN2(VAR8, VAR15, VAR16, 0,
+&VAR6->VAR17, &VAR6->VAR18, &VAR6->VAR19, &VAR6->VAR20, 0)) {
+FUN3("");
+return;
+}
+
+
+VAR6->VAR21 = VAR9;
+VAR6->VAR22 = VAR10;
+VAR6->VAR23 = VAR8->VAR24;
+FUN4(&VAR6->VAR25);
+
+
+FUN5(VAR6, &VAR6->VAR26);
+FUN5(VAR6, &VAR6->VAR27);
+
+
+if (!VAR6->VAR26 || !VAR6->VAR27)
+return;
+
+
+FUN6(VAR6, VAR6->VAR26);
+FUN6(VAR6, VAR6->VAR27);
+
+if (FUN7(VAR8, &VAR11)) {
+FUN3("");
+return;
+}
+VAR12 = FUN8(VAR10, VAR11);
+VAR6->VAR28 = FUN9(VAR10, VAR11, VAR29 | VAR30,
+VAR31, VAR6, VAR6->VAR32.VAR33);
+if (VAR6->VAR28 == NULL) {
+FUN3("");
+if (VAR12 != NULL)
+FUN3("", VAR12);
+FUN3("");
+return;
+}
+FUN3("", VAR12);
+
+
+FUN10(VAR10, VAR9, VAR34);
+
+
+if (FUN11(VAR6) == -1) {
+FUN3("",
+VAR6->VAR32.VAR33);
+return;
+}
+
+
+FUN12(VAR3, VAR35);
+}

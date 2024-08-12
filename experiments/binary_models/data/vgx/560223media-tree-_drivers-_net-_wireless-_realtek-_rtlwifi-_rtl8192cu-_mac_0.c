@@ -1,0 +1,130 @@
+void FUN1(struct VAR1 *VAR2, u32 VAR3,
+VAR4 *VAR5, bool VAR6, u8 VAR7,
+bool VAR8, bool VAR9)
+{
+struct VAR10 *VAR11 = FUN2(VAR2);
+struct VAR12 *VAR13 = FUN3(FUN2(VAR2));
+struct VAR14 *VAR15 = FUN4(FUN2(VAR2));
+VAR4 *VAR16 = VAR5;
+u32 VAR17 = 0;
+bool VAR18 = false;
+static u8 VAR19[4][6] = {
+{0x00, 0x00, 0x00, 0x00, 0x00, 0x00},
+{0x00, 0x00, 0x00, 0x00, 0x00, 0x01},
+{0x00, 0x00, 0x00, 0x00, 0x00, 0x02},
+{0x00, 0x00, 0x00, 0x00, 0x00, 0x03}
+};
+static u8 VAR20[] = {
+0xff, 0xff, 0xff, 0xff, 0xff, 0xff
+};
+
+if (VAR9) {
+u8 VAR21 = 0;
+u8 VAR22 = 0;
+u8 VAR23 = 5;
+
+FUN5(VAR11, VAR24, VAR25, "");
+for (VAR21 = 0; VAR21 < VAR23; VAR21++) {
+FUN6(VAR2, VAR22 + VAR21);
+FUN7(VAR2, VAR22 + VAR21);
+if (VAR21 < 5) {
+memset(VAR11->VAR26.VAR27[VAR21], 0,
+VAR28);
+VAR11->VAR26.VAR29[VAR21] = 0;
+}
+}
+} else {
+switch (VAR7) {
+case VAR30:
+VAR7 = VAR31;
+break;
+case VAR32:
+VAR7 = VAR33;
+break;
+case VAR34:
+VAR7 = VAR35;
+break;
+case VAR36:
+VAR7 = VAR37;
+break;
+default:
+FUN8("");
+VAR7 = VAR35;
+break;
+}
+if (VAR8 || VAR11->VAR26.VAR38) {
+VAR16 = VAR19[VAR3];
+VAR17 = VAR3;
+} else {
+if (VAR6) {
+VAR16 = VAR20;
+VAR17 = VAR3;
+} else {
+if (VAR13->VAR39 == VAR40 ||
+VAR13->VAR39 == VAR41) {
+VAR17 = FUN9(VAR2,
+VAR5);
+if (VAR17 >=  VAR42) {
+FUN8("");
+return;
+}
+} else {
+VAR17 = VAR43;
+}
+
+VAR3 = VAR44;
+VAR18 = true;
+}
+}
+if (VAR11->VAR26.VAR29[VAR3] == 0) {
+FUN5(VAR11, VAR24, VAR25,
+"");
+if (VAR13->VAR39 == VAR40 ||
+VAR13->VAR39 == VAR41)
+FUN10(VAR2, VAR5);
+FUN11(VAR2, VAR5, VAR17);
+} else {
+FUN5(VAR11, VAR24, VAR45,
+"",
+VAR11->VAR26.VAR29[VAR44]);
+FUN5(VAR11, VAR24, VAR45,
+"",
+VAR11->VAR26.VAR27[0][0],
+VAR11->VAR26.VAR27[0][1]);
+FUN5(VAR11, VAR24, VAR25,
+"");
+if (VAR18) {
+FUN12(VAR11, VAR24, VAR45,
+"",
+VAR11->VAR26.VAR46,
+VAR11->VAR26.
+VAR29[VAR44]);
+FUN5(VAR11, VAR24, VAR25,
+"");
+
+FUN13(VAR2, VAR16, VAR3,
+VAR17, VAR7,
+VAR47,
+VAR11->VAR26.
+VAR27[VAR3]);
+} else {
+FUN5(VAR11, VAR24, VAR25,
+"");
+if (VAR13->VAR39 == VAR48) {
+FUN13(VAR2,
+VAR15->VAR49,
+VAR44,
+VAR43,
+VAR7,
+VAR47,
+VAR11->VAR26.VAR27
+[VAR17]);
+}
+FUN13(VAR2, VAR16, VAR3,
+VAR17, VAR7,
+VAR47,
+VAR11->VAR26.VAR27[VAR17]);
+}
+}
+}
+}

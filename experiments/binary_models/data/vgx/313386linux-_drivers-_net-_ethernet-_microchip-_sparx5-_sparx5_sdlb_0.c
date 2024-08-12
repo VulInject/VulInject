@@ -1,0 +1,14 @@
+int FUN1(struct VAR1 *VAR1, u32 VAR2, u32 VAR3)
+{
+u32 VAR4, VAR5;
+
+
+VAR4 = VAR3;
+
+if (FUN2(VAR1, VAR2))
+VAR5 = VAR3;
+else
+VAR5 = FUN3(VAR1, VAR2);
+
+return FUN4(VAR1, VAR2, VAR3, VAR4, VAR5, false);
+}

@@ -1,0 +1,36 @@
+int FUN1(struct VAR1 *VAR2,
+const struct VAR3 *VAR4,
+unsigned int VAR5, u32 VAR6)
+{
+unsigned int VAR7, VAR8;
+u32 VAR9;
+
+VAR5   = (VAR5 + 7) & ~7; 
+VAR9   = VAR4->VAR9;
+VAR8 = VAR4->VAR10 / VAR5;
+if (VAR8 > 6)
+VAR8 = 6;
+FUN2(VAR8 < 2);
+
+
+for (VAR7 = 0; VAR7 < VAR8; VAR7++)
+FUN3(VAR9 + 16 * VAR7, VAR4->VAR11 + VAR5 * VAR7);
+
+
+FUN3(VAR4->VAR12 +  0, VAR6);
+FUN3(VAR4->VAR12 +  4, VAR9);
+FUN3(VAR4->VAR12 +  8, (VAR8 * 16) >> 3);
+FUN3(VAR4->VAR12 + 12, VAR4->VAR13);
+FUN3(VAR4->VAR12 + 16, 64 >> 2);
+for (VAR7 = 20; VAR7 < 64; VAR7 += 4)
+FUN3(VAR4->VAR12 + VAR7, 0);
+
+
+FUN3(VAR4->VAR14, VAR4->VAR11);
+FUN3(VAR4->VAR15, VAR9);
+FUN3(VAR4->VAR16, (VAR5 >> 3) - 1);
+FUN3(VAR4->VAR17, (VAR8 * 16) >> 3);
+
+FUN4(2, "", VAR4->VAR18, VAR5, VAR8);
+return 0;
+}

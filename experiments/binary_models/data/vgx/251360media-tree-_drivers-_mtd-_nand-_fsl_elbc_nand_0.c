@@ -1,0 +1,207 @@
+static void FUN1(struct VAR1 *VAR2, unsigned int VAR3,
+int VAR4, int VAR5)
+{
+struct VAR6 *VAR7 = FUN2(VAR2);
+struct VAR8 *VAR9 = FUN3(VAR7);
+struct VAR10 *VAR11 = VAR9->VAR11;
+struct VAR12 *VAR13 = VAR11->VAR14;
+struct fsl_lbc_regs VAR15 *VAR16 = VAR11->VAR17;
+
+VAR13->VAR18 = 0;
+
+
+VAR13->VAR19 = 0;
+if (VAR3 != VAR20)
+VAR13->VAR21 = 0;
+
+switch (VAR3) {
+
+case VAR22:
+VAR4 += 256;
+
+
+case VAR23:
+FUN4(VAR9->VAR24,
+""
+"", VAR5, VAR4);
+
+
+FUN5(&VAR16->VAR25, 0); 
+FUN6(VAR2, 0, VAR5, 0);
+
+VAR13->VAR19 = VAR2->VAR26 + VAR2->VAR27;
+VAR13->VAR21 += VAR4;
+
+FUN7(VAR7, 0);
+FUN8(VAR2);
+return;
+
+
+case VAR28:
+FUN9(VAR9->VAR24,
+""
+"", VAR5, VAR4);
+
+FUN5(&VAR16->VAR25, VAR2->VAR27 - VAR4);
+FUN6(VAR2, VAR4, VAR5, 1);
+
+VAR13->VAR19 = VAR2->VAR26 + VAR2->VAR27;
+
+FUN7(VAR7, 1);
+FUN8(VAR2);
+return;
+
+case VAR29:
+case VAR30:
+FUN9(VAR9->VAR24, "", VAR3);
+
+FUN5(&VAR16->VAR31, (VAR32 << VAR33) |
+(VAR34  << VAR35) |
+(VAR36 << VAR37));
+FUN5(&VAR16->VAR38, VAR3 << VAR39);
+
+FUN5(&VAR16->VAR25, 256);
+VAR13->VAR19 = 256;
+VAR13->VAR18 = 1;
+VAR13->VAR40 = VAR4;
+FUN6(VAR2, 0, 0, 0);
+FUN8(VAR2);
+return;
+
+
+case VAR41:
+FUN9(VAR9->VAR24,
+""
+"", VAR5);
+FUN6(VAR2, 0, VAR5, 0);
+return;
+
+
+case VAR42:
+FUN9(VAR9->VAR24, "");
+
+FUN5(&VAR16->VAR31,
+(VAR32 << VAR33) |
+(VAR43  << VAR35) |
+(VAR44 << VAR37) |
+(VAR45 << VAR46) |
+(VAR47  << VAR48));
+
+FUN5(&VAR16->VAR38,
+(VAR41 << VAR39) |
+(VAR49 << VAR50) |
+(VAR42 << VAR51));
+
+FUN5(&VAR16->VAR25, 0);
+VAR13->VAR19 = 0;
+VAR13->VAR18 = 1;
+
+FUN8(VAR2);
+return;
+
+
+case VAR52: {
+__be32 VAR38;
+FUN9(VAR9->VAR24,
+""
+"",
+VAR5, VAR4);
+
+VAR13->VAR4 = VAR4;
+VAR13->VAR18 = 1;
+
+if (VAR4 >= VAR2->VAR26) {
+
+VAR4 -= VAR2->VAR26;
+VAR13->VAR53 = 1;
+} else {
+FUN10(VAR4 != 0);
+VAR13->VAR53 = 0;
+}
+
+VAR38 = (VAR49   << VAR50) |
+(VAR52    << VAR51) |
+(VAR20 << VAR54);
+
+if (VAR9->VAR55) {
+FUN5(&VAR16->VAR31,
+(VAR44 << VAR33) |
+(VAR56  << VAR35) |
+(VAR43  << VAR37) |
+(VAR57  << VAR46) |
+(VAR58 << VAR48) |
+(VAR45 << VAR59) |
+(VAR47  << VAR60));
+} else {
+FUN5(&VAR16->VAR31,
+(VAR32 << VAR33) |
+(VAR44 << VAR35) |
+(VAR56  << VAR37) |
+(VAR43  << VAR46) |
+(VAR57  << VAR48) |
+(VAR58 << VAR59) |
+(VAR45 << VAR60) |
+(VAR47  << VAR61));
+
+if (VAR13->VAR53)
+
+VAR38 |= VAR28 << VAR39;
+else
+
+VAR38 |= VAR23 << VAR39;
+}
+
+FUN5(&VAR16->VAR38, VAR38);
+FUN6(VAR2, VAR4, VAR5, VAR13->VAR53);
+return;
+}
+
+
+case VAR20: {
+FUN9(VAR9->VAR24,
+""
+"", VAR13->VAR21);
+
+
+if (VAR13->VAR53 || VAR13->VAR4 != 0 ||
+VAR13->VAR21 != VAR2->VAR26 + VAR2->VAR27)
+FUN5(&VAR16->VAR25,
+VAR13->VAR21 - VAR13->VAR4);
+else
+FUN5(&VAR16->VAR25, 0);
+
+FUN8(VAR2);
+return;
+}
+
+
+
+case VAR49:
+FUN5(&VAR16->VAR31,
+(VAR32 << VAR33) |
+(VAR36 << VAR35));
+FUN5(&VAR16->VAR38, VAR49 << VAR39);
+FUN5(&VAR16->VAR25, 1);
+FUN6(VAR2, 0, 0, 0);
+VAR13->VAR19 = 1;
+
+FUN8(VAR2);
+
+
+FUN11(VAR13->VAR62, VAR63);
+return;
+
+
+case VAR64:
+FUN4(VAR9->VAR24, "");
+FUN5(&VAR16->VAR31, VAR32 << VAR33);
+FUN5(&VAR16->VAR38, VAR64 << VAR39);
+FUN8(VAR2);
+return;
+
+default:
+FUN12(VAR9->VAR24,
+"",
+VAR3);
+}
+}

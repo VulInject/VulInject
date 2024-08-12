@@ -1,0 +1,155 @@
+struct VAR1 *
+FUN1(struct VAR2 *VAR3, int VAR4,
+struct VAR5  *VAR6)
+{
+struct VAR7 *VAR8 = FUN2(VAR3->VAR9);
+struct VAR10 *VAR11 = FUN3(VAR3);
+struct VAR1 *VAR12;
+unsigned long VAR13;
+int VAR14 = 0;
+
+
+FUN4(VAR3);
+
+
+FUN5(VAR3->VAR15, VAR13);
+
+FUN6(VAR12, &VAR11->VAR16, VAR17) {
+
+if ((VAR12->VAR18 == VAR19 ||
+VAR12->VAR18 == VAR20) &&
+(VAR12->VAR4 == VAR4)) {
+
+switch (VAR11->VAR21) {
+case VAR22:
+case VAR23:
+if (VAR12->VAR24 == VAR6->VAR24)
+VAR14 = 1;
+break;
+case VAR25:
+if (VAR12->VAR26 == VAR6->VAR26)
+VAR14 = 1;
+break;
+case VAR27:
+if (VAR12->VAR28 == VAR6->VAR28)
+VAR14 = 1;
+break;
+}
+
+if (VAR14) {
+
+memcpy(&VAR12->VAR26, &VAR6->VAR26,
+sizeof(VAR12->VAR26));
+memcpy(&VAR12->VAR24, &VAR6->VAR24,
+sizeof(VAR12->VAR24));
+VAR12->VAR28 = VAR6->VAR28;
+
+VAR12->VAR18 = VAR29;
+VAR12->VAR30 = VAR6->VAR30;
+
+FUN7(VAR3->VAR15, VAR13);
+
+if (VAR8->VAR31->VAR32)
+memset(VAR12->VAR33, 0,
+VAR8->VAR31->VAR32);
+
+
+
+
+if ((VAR12->VAR34 != -1) &&
+(!(VAR6->VAR30 & VAR35)))
+return VAR12;
+
+
+if (!FUN8(&VAR12->VAR36))
+FUN9(VAR3);
+if (!FUN8(&VAR12->VAR37))
+FUN9(VAR3);
+
+FUN5(VAR3->VAR15, VAR13);
+
+VAR12->VAR13 &= ~(VAR38 |
+VAR39 |
+VAR40);
+
+FUN7(VAR3->VAR15, VAR13);
+
+
+if (VAR12->VAR34 != -1) {
+FUN10(&VAR12->VAR41,
+VAR42);
+FUN5(VAR3->VAR15,
+VAR13);
+VAR12->VAR13 |= VAR43;
+FUN11(VAR3,
+&VAR12->VAR44);
+FUN7(VAR3->VAR15,
+VAR13);
+}
+
+FUN12(VAR12);
+
+return VAR12;
+}
+}
+}
+
+
+if (VAR11->VAR21 != VAR23) {
+
+
+
+FUN6(VAR12, &VAR11->VAR45,
+VAR17) {
+if (VAR12->VAR4 != VAR4)
+continue;
+
+switch (VAR11->VAR21) {
+case VAR22:
+if (VAR12->VAR24 == VAR6->VAR24)
+VAR14 = 1;
+break;
+case VAR25:
+if (VAR12->VAR26 == VAR6->VAR26)
+VAR14 = 1;
+break;
+case VAR27:
+if (VAR12->VAR28 == VAR6->VAR28)
+VAR14 = 1;
+break;
+case VAR23: 
+break;
+}
+
+if (VAR14) {
+FUN13(&VAR12->VAR17, &VAR11->VAR16);
+break;
+}
+}
+
+if (VAR14) {
+memcpy(&VAR12->VAR26, &VAR6->VAR26,
+sizeof(VAR12->VAR26));
+memcpy(&VAR12->VAR24, &VAR6->VAR24,
+sizeof(VAR12->VAR24));
+VAR12->VAR28 = VAR6->VAR28;
+VAR12->VAR18 = VAR29;
+VAR12->VAR13 &= ~VAR38;
+
+if (VAR8->VAR31->VAR32)
+memset(VAR12->VAR33, 0,
+VAR8->VAR31->VAR32);
+FUN7(VAR3->VAR15, VAR13);
+
+FUN14(VAR12, VAR6->VAR30);
+return VAR12;
+}
+}
+
+FUN7(VAR3->VAR15, VAR13);
+
+
+VAR12 = FUN15(VAR3, VAR4, VAR6);
+
+return VAR12;
+}

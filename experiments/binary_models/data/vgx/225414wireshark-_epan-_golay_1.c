@@ -1,0 +1,1 @@
+gint FUN1 ( guint32 VAR1 ) { guint VAR2 = ( VAR3 ) VAR1 & 0xfff ; gint32 VAR4 = FUN2 ( VAR1 ) ; guint VAR5 ; VAR5 = ( VAR3 ) VAR4 & 0xfff ; return ( VAR6 ) ( VAR2 ^ VAR5 ) ; }

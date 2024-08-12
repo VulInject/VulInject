@@ -1,0 +1,53 @@
+int FUN1(__u64 VAR1, struct VAR2 *VAR3, VAR4 *VAR5)
+{
+struct VAR6 *VAR7;
+struct VAR2 *VAR8;
+struct VAR9 *VAR10 = NULL;
+int VAR11;
+int VAR12 = 0;
+
+FUN2(&VAR13);
+
+
+VAR8 = FUN3(VAR3) ? VAR3->VAR14 : VAR3;
+
+FUN4(VAR10, &VAR8->VAR15, VAR15) {
+if (VAR10->VAR16 == VAR1)
+goto VAR17;
+}
+FUN5(VAR18, "",
+VAR19, VAR1);
+VAR12 = -VAR20;
+goto VAR21;
+
+VAR17:
+FUN2(&VAR10->VAR22);
+if (FUN6(VAR10, VAR3) &&
+!FUN7(VAR10)) {
+
+memcpy(VAR5, VAR10->VAR23, VAR24);
+FUN8(&VAR10->VAR22);
+goto VAR21;
+}
+
+
+
+for (VAR11 = 0; VAR11 < VAR10->VAR25; VAR11++) {
+VAR7 = VAR10->VAR26 + VAR11;
+if (VAR7->VAR3 == VAR3) {
+memcpy(VAR5, VAR7->VAR27, VAR24);
+FUN8(&VAR10->VAR22);
+goto VAR21;
+}
+}
+FUN8(&VAR10->VAR22);
+
+FUN9(VAR18,
+"",
+VAR19, VAR1);
+VAR12 = -VAR20;
+
+VAR21:
+FUN8(&VAR13);
+return VAR12;
+}

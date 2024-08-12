@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * VAR2 = FUN2 ( VAR3 ) ; if ( VAR2 -> VAR4 != NULL ) { return VAR2 -> VAR4 ; } VAR2 -> VAR4 = FUN3 ( VAR5 , NULL ) ; FUN4 ( VAR2 -> VAR4 , "" VAR6 , FUN5 ( VAR7 ) , VAR3 ) ; FUN4 ( VAR2 -> VAR4 , "" VAR8 , FUN5 ( VAR9 ) , VAR3 ) ; FUN4 ( VAR2 -> VAR4 , "" VAR10 , FUN5 ( VAR11 ) , VAR3 ) ; return VAR2 -> VAR4 ; }

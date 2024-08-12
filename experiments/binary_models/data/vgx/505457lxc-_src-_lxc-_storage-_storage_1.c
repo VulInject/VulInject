@@ -1,0 +1,1 @@
+bool FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 ; char * VAR5 = VAR2 -> VAR6 . VAR7 ; bool VAR8 = false ; if ( VAR5 ) { return ( strcmp ( VAR5 , "" ) == 0 ) ; } VAR4 = FUN2 ( VAR2 ) ; if ( strcmp ( VAR4 -> VAR5 , "" ) == 0 ) { VAR8 = true ; } FUN3 ( VAR4 ) ; return VAR8 ; }

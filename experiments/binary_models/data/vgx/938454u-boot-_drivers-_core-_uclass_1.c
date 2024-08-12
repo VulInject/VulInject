@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( enum uclass_id VAR2 ) { struct VAR1 * VAR3 ; if ( ! VAR4 -> VAR5 ) { return VAR6 ; } FUN2 ( , , ) { if ( VAR3 -> VAR7 -> VAR8 == VAR2 ) { return VAR3 ; } } return NULL ; }

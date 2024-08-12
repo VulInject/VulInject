@@ -1,0 +1,27 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 *VAR6, int64_t VAR7)
+{
+const VAR8 *VAR9, *VAR10;
+VAR8 *VAR11;
+int VAR12;
+
+if (VAR7 > 61444) 
+return VAR13;
+VAR7 = FUN2(VAR2, VAR6, VAR7);
+if (VAR7 < 0)
+return VAR7;
+VAR11 = VAR6->VAR14;
+VAR10 = VAR6->VAR14 + VAR7;
+VAR9 = VAR6->VAR14 + 4; 
+for (; VAR10 - VAR9 >= VAR4->VAR15->VAR16 * 4; ) {
+for (VAR12 = 0; VAR12 < VAR4->VAR15->VAR16; VAR12++) {
+uint32_t VAR17 = FUN3(&VAR9);
+if (VAR4->VAR15->VAR18 == 24)
+FUN4(&VAR11, (VAR17 >> 4) & 0xffffff);
+else
+FUN5(&VAR11, (VAR17 >> 12) & 0xffff);
+}
+VAR9 += 32 - VAR4->VAR15->VAR16*4; 
+}
+FUN6(VAR6, VAR11 - VAR6->VAR14);
+return 0;
+}

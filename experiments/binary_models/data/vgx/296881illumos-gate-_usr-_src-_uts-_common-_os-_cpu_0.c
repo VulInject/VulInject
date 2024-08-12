@@ -1,0 +1,29 @@
+static void
+FUN1(VAR1 *VAR2)
+{
+zoneid_t VAR3;
+
+FUN2(FUN3(&VAR4));
+
+if (FUN4())
+VAR3 = VAR5;
+else
+VAR3 = VAR6;
+if ((VAR2->VAR7 = FUN5("", VAR2->VAR8,
+NULL, "", VAR9,
+sizeof (VAR10) / sizeof (VAR11),
+VAR12 | VAR13, VAR3)) != NULL) {
+VAR2->VAR7->VAR14 += 2 * VAR15;
+VAR2->VAR7->VAR14 +=
+strlen(FUN6(VAR2)) + 1;
+VAR2->VAR7->VAR14 += VAR16;
+if (VAR2->VAR17 != NULL)
+VAR2->VAR7->VAR14 +=
+strlen(VAR2->VAR17) + 1;
+VAR2->VAR7->VAR18 = &VAR19;
+VAR2->VAR7->VAR20 = &VAR10;
+VAR2->VAR7->VAR21 = VAR2;
+VAR2->VAR7->VAR22 = VAR23;
+FUN7(VAR2->VAR7);
+}
+}

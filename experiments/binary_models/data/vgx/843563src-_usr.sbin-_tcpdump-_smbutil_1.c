@@ -1,0 +1,1 @@
+static time_t FUN1 ( const void * VAR1 ) { uint32 VAR2 = 0 ; struct tm VAR3 ; VAR2 = FUN2 ( VAR1 , 0 ) ; if ( VAR2 == 0 ) { return ( 0 ) ; } FUN3 ( VAR2 , & VAR3 . VAR4 , & VAR3 . VAR5 , & VAR3 . VAR6 , & VAR3 . VAR7 , & VAR3 . VAR8 , & VAR3 . VAR9 ) ; VAR3 . VAR10 = 1 ; VAR3 . VAR11 = 1 ; VAR3 . VAR12 = 0 ; return ( FUN4 ( & VAR3 ) ) ; }

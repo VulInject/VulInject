@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , long VAR3 , unsigned int VAR4 ) { VAR5 * VAR6 ; VAR6 = ( ( VAR5 * ) VAR2 -> VAR7 ) + VAR3 ; while ( VAR4 -- ) { * VAR6 = FUN2 ( 0 ) ; FUN3 ( VAR6 , NULL ) ; VAR6 ++ ; } }

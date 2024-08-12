@@ -1,0 +1,1 @@
+int FUN1(VAR1 *VAR2, vaddr VAR3, vaddr VAR4, int VAR5, VAR6 **VAR7) { return -VAR8; }

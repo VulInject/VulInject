@@ -1,0 +1,17 @@
+static VAR1 ** FUN1(VAR2 * VAR3)
+{
+VAR1 ** VAR4 = (VAR1 **)FUN2(VAR5, VAR3);
+
+if (VAR4 == NULL) {
+VAR2 * VAR6;
+guint16 VAR7;
+VAR4 = FUN3(FUN4(), VAR1*, VAR8); 
+for (VAR7 = 0; VAR7 < VAR8; VAR7++) {
+VAR4[VAR7] = FUN5(FUN4(), VAR1); 
+}
+VAR6 = FUN6(FUN4(), VAR2); 
+*VAR6 = *VAR3;
+FUN7(VAR5, VAR6, VAR4);
+}
+return VAR4;
+}

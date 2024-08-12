@@ -1,0 +1,24 @@
+static void
+FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+int VAR5;
+VAR6 *VAR7;
+
+VAR4->VAR8 = VAR4->VAR9 = -1;
+VAR4->VAR10 = VAR4->VAR11 = -1;
+
+VAR5 = 0;
+VAR7 = FUN2(VAR2, VAR12, VAR13, VAR4, &VAR5);
+if (VAR7 == NULL) {
+FUN3(-1, "",
+FUN4(VAR5));
+}
+
+while ((VAR5 = FUN5(VAR7, VAR14)) == VAR15)
+;
+
+if (VAR5 == VAR16)
+FUN3(-1, "");
+
+FUN6(VAR7);
+}

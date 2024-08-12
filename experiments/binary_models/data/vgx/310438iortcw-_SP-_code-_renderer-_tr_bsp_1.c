@@ -1,0 +1,1 @@
+void FUN1 ( void ) { int VAR1 ; VAR2 * VAR3 ; for ( VAR1 = 0 ; VAR1 < VAR4 . VAR5 ; VAR1 ++ ) { VAR3 = ( VAR2 * ) VAR4 . VAR6 [ VAR1 ] . VAR7 ; if ( VAR3 -> VAR8 ) { continue ; } VAR3 -> VAR8 = 2 ; FUN2 ( VAR1 + 1 , VAR3 ) ; } }

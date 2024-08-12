@@ -1,0 +1,1 @@
+FUN1 ( VAR1 , VAR2 , "" ) ; FUN1 ( VAR1 , VAR3 , "" ) ; static struct list VAR4 ; static struct VAR5 * VAR6 = & VAR4 ; static struct VAR7 * FUN2 ( struct VAR8 * VAR9 ) { struct VAR7 * VAR10 ; VAR10 = FUN3 ( VAR11 , sizeof ( VAR7 ) ) ; return VAR10 ; }

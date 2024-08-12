@@ -1,0 +1,33 @@
+static void FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = FUN2(VAR2);
+    uint64_t VAR5, VAR6;
+    VAR7 *VAR8;
+    VAR9 *VAR10;
+    if (!(VAR2->VAR11.VAR5 & VAR12))
+    {
+        FUN3(FUN4(VAR4), "");
+    }
+    if (VAR2->VAR13 < 0 || VAR2->VAR13 > VAR14)
+    {
+        FUN3(FUN4(VAR4), "", VAR2->VAR13);
+    }
+    VAR10 = &VAR2->VAR15[VAR2->VAR13];
+    VAR8 = FUN5(VAR2);
+    VAR8->VAR16 = FUN6(VAR10->VAR17);
+    VAR8->VAR18 = FUN7(VAR10->VAR19);
+    VAR8->VAR20 = FUN8(VAR10->VAR21);
+    VAR8->VAR22.VAR5 = FUN8(FUN9(VAR2));
+    VAR8->VAR22.VAR6 = FUN8(VAR2->VAR11.VAR6);
+    VAR8->VAR23 = FUN6(VAR2->VAR24 | VAR25);
+    VAR5 = FUN10(VAR8->VAR26.VAR5);
+    VAR6 = FUN10(VAR8->VAR26.VAR6);
+    FUN11(VAR8);
+    VAR2->VAR13--;
+    if (VAR2->VAR13 == -1)
+    {
+        VAR2->VAR27 &= ~VAR28;
+    }
+    FUN12("" VAR29 "" VAR29 "", VAR30, VAR2->VAR11.VAR5, VAR2->VAR11.VAR6);
+    FUN13(VAR2, VAR5, VAR6);
+}

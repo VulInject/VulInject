@@ -1,0 +1,1 @@
+void FUN1 ( int VAR1 , int VAR2 ) { if ( FUN2 ( ! VAR3 ) ) { return ; } switch ( VAR1 ) { case VAR4 : FUN3 ( VAR3 , VAR5 , VAR2 ) ; break ; case VAR6 : FUN4 ( VAR3 , VAR7 , VAR2 ) ; break ; default : return ; } FUN5 ( VAR3 , NULL ) ; }

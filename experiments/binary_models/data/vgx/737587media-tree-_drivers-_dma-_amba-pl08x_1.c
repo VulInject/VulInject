@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { const struct VAR3 * VAR4 = VAR2 -> VAR5 -> VAR4 ; int VAR6 ; if ( VAR2 -> VAR7 ++ == 0 && VAR4 -> VAR8 ) { VAR6 = VAR4 -> FUN2 ( VAR2 -> VAR9 ) ; if ( VAR6 < 0 ) { return VAR6 ; } VAR2 -> signal = VAR6 ; } return 0 ; }

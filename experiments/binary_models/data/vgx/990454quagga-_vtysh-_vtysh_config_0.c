@@ -1,0 +1,7 @@
+FUN1 (struct VAR1* VAR1)
+{
+FUN2 (VAR1->VAR2);
+if (VAR1->VAR3)
+FUN3 (VAR4, VAR1->VAR3);
+FUN3 (VAR5, VAR1);
+}

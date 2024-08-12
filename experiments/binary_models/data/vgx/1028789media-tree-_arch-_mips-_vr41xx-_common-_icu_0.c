@@ -1,0 +1,11 @@
+FUN1(VAR1);
+
+void FUN2(uint16_t VAR2)
+{
+struct VAR3 *VAR4 = FUN3(VAR5);
+unsigned long VAR6;
+
+FUN4(&VAR4->VAR7, VAR6);
+FUN5(VAR8, VAR2);
+FUN6(&VAR4->VAR7, VAR6);
+}

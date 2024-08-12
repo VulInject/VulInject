@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR1 , const struct VAR2 * VAR3 , const bool VAR4 ) { bool VAR5 ; struct tomoyo_path_info VAR6 ; VAR6 . VAR7 = FUN2 ( & VAR1 -> VAR8 ) ; if ( ! VAR6 . VAR7 ) { return false ; } FUN3 ( & VAR6 ) ; VAR5 = FUN4 ( & VAR6 , VAR3 ) ; FUN5 ( VAR6 . VAR7 ) ; return VAR5 == VAR4 ; }

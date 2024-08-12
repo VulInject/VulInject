@@ -1,0 +1,1 @@
+int FUN1 ( Dwarf_Unsigned VAR1 , int * VAR2 , char * VAR3 , int VAR4 ) { char * VAR5 ; char * VAR6 = VAR3 + VAR4 ; VAR5 = VAR3 ; { unsigned char VAR7 ; VAR7 = VAR1 & VAR8 ; VAR1 >>= VAR9 ; if ( VAR1 != 0 ) { VAR7 |= VAR10 ; } * VAR5 = VAR7 ; VAR5 ++ ; } VAR1 ; * VAR2 = ( int ) ( VAR5 - VAR3 ) ; return VAR11 ; }

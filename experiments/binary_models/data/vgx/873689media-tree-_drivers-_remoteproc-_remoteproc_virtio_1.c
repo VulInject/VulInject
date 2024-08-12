@@ -1,0 +1,1 @@
+irqreturn_t FUN1 ( struct VAR1 * VAR1 , int VAR2 ) { struct VAR3 * VAR4 ; FUN2 ( & VAR1 -> VAR5 , "" , VAR2 ) ; VAR4 = FUN3 ( & VAR1 -> VAR6 , VAR2 ) ; return FUN4 ( 0 , VAR4 -> VAR7 ) ; }

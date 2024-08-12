@@ -1,0 +1,20 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+const u8 VAR3 = VAR4;
+
+VAR2->VAR5		= 0;
+VAR2->VAR6		= VAR7;
+VAR2->VAR8		= VAR9 | VAR10;
+VAR2->VAR11		= VAR12;
+VAR2->VAR13		= VAR14;
+VAR2->VAR15		= VAR16;
+VAR2->VAR17	= 1;
+VAR2->VAR18		= 1;
+FUN2(VAR2, &VAR3);
+
+VAR2->VAR19	= 1;
+
+VAR2->VAR20		= &VAR21;
+VAR2->VAR22	= true;
+VAR2->VAR23		= &VAR24;
+}

@@ -1,0 +1,21 @@
+static void
+FUN1(struct VAR1 *VAR2, ident_message VAR3)
+{
+struct VAR4 *VAR5 = FUN2(VAR2, VAR6);
+
+FUN3(VAR5 != NULL);
+
+FUN4(VAR2->VAR7, "", sizeof(VAR2->VAR7));
+
+if(VAR5->VAR8 != NULL)
+FUN5(VAR5->VAR8);
+
+FUN6(VAR5);
+FUN7(VAR2, VAR6, NULL);
+FUN8(VAR2, VAR6, 0);
+
+FUN9(VAR2->VAR9, VAR10[VAR3]);
+FUN10(VAR2, VAR6);
+
+FUN11(VAR2);
+}

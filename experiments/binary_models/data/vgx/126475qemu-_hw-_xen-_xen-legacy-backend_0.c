@@ -1,0 +1,49 @@
+static struct VAR1 *FUN1(const char *VAR2, int VAR3,
+int VAR4,
+struct VAR5 *VAR6)
+{
+struct VAR1 *VAR7;
+
+VAR7 = FUN2(VAR2, VAR3, VAR4);
+if (VAR7) {
+return VAR7;
+}
+
+
+VAR7 = FUN3(VAR6->VAR8);
+FUN4(&VAR7->VAR9, VAR6->VAR8, VAR10);
+FUN5(VAR7)->free = VAR11;
+FUN6(FUN7(VAR7), FUN8("", VAR2, VAR4),
+&VAR12);
+FUN9(FUN7(VAR7), VAR13, &VAR12);
+FUN10(FUN5(VAR7));
+
+VAR7->VAR2  = VAR2;
+VAR7->VAR3   = VAR3;
+VAR7->VAR4   = VAR4;
+VAR7->VAR6   = VAR6;
+
+snprintf(VAR7->VAR14, sizeof(VAR7->VAR14), "",
+VAR7->VAR2, VAR7->VAR3, VAR7->VAR4);
+snprintf(VAR7->VAR15, sizeof(VAR7->VAR15), "",
+VAR7->VAR2, VAR7->VAR4);
+
+VAR7->VAR16      = VAR16;
+VAR7->VAR17 = -1;
+
+VAR7->VAR18 = FUN11(NULL, 0);
+if (VAR7->VAR18 == NULL) {
+FUN12(NULL, 0, "");
+FUN13(FUN7(VAR7), NULL);
+return NULL;
+}
+FUN14(FUN15(VAR7->VAR18));
+
+FUN16(VAR7);
+
+if (VAR7->VAR6->VAR19) {
+VAR7->VAR6->FUN17(VAR7);
+}
+
+return VAR7;
+}

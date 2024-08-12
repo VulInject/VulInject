@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 ) { int VAR3 ; char * VAR4 ; VAR1 * VAR5 ; VAR4 = FUN2 ( VAR2 , "" ) ; FUN3 ( VAR2 , 0 ) ; VAR5 = FUN4 ( VAR4 , "" , VAR6 ) ; for ( VAR3 = 0 ; VAR3 < VAR5 -> VAR7 ; VAR3 ++ ) { if ( ! FUN5 ( VAR5 -> VAR8 [ VAR3 ] ) ) { continue ; } FUN6 ( VAR2 , VAR5 -> VAR8 [ VAR3 ] ) ; } FUN7 ( VAR5 ) ; return VAR2 -> VAR7 ; }

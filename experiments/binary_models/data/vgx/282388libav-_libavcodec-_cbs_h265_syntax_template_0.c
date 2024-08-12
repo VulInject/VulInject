@@ -1,0 +1,30 @@
+static int FUN1(VAR1)(VAR2 *VAR3, VAR4 *VAR5,
+VAR6 *VAR7)
+{
+int VAR8, VAR9, VAR10;
+
+FUN2(VAR11);
+
+FUN2(VAR12);
+if (VAR7->VAR12) {
+FUN3(VAR13, 0, 64);
+FUN3(VAR14, 0, 128);
+
+FUN2(VAR15);
+if (VAR7->VAR15) {
+FUN3(VAR16, 0, 128);
+for (VAR9 = 0; VAR9 < (VAR7->VAR17 ? 3 : 1); VAR9++) {
+int VAR18 = VAR9 == 0 ? VAR7->VAR19 + 8
+: VAR7->VAR20 + 8;
+for (VAR10 = 0; VAR10 <= VAR7->VAR16; VAR10++)
+FUN4(VAR18, VAR21[VAR9][VAR10],
+0, (1 << VAR18) - 1);
+}
+}
+}
+
+FUN4(2, VAR22, 0, 2);
+FUN2(VAR23);
+
+return 0;
+}

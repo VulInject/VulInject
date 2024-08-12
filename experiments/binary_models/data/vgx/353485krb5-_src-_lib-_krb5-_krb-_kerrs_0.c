@@ -1,0 +1,11 @@
+void
+FUN1(krb5_context VAR1, krb5_error_code VAR2, struct VAR3 *VAR4)
+{
+VAR4->VAR2 = VAR2;
+VAR4->VAR5 = NULL;
+if (VAR1 != NULL && VAR1->VAR6.VAR2 == VAR2) {
+VAR4->VAR5 = VAR1->VAR6.VAR5;
+VAR1->VAR6.VAR2 = 0;
+VAR1->VAR6.VAR5 = NULL;
+}
+}

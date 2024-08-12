@@ -1,0 +1,97 @@
+static void FUN1(struct VAR1 *VAR2,
+unsigned int VAR3)
+{
+struct VAR4 *VAR5;
+struct VAR6 *VAR7;
+struct VAR8 *VAR9;
+struct VAR10 *VAR11;
+struct VAR12 *VAR13;
+int VAR14, VAR15;
+
+if (!FUN2(VAR16, &VAR2->VAR17)) {
+FUN3(VAR2, VAR18,
+"",
+VAR19, VAR2->VAR17);
+return;
+}
+
+if (VAR2->VAR12.VAR3 != VAR3) {
+FUN3(VAR2, VAR18,
+"",
+VAR19, VAR3, VAR2->VAR12.VAR3);
+return;
+}
+VAR13 = &VAR2->VAR12;
+VAR14 = 1;
+VAR15 = 0;
+switch (VAR13->VAR20) {
+case VAR21:
+VAR15 = FUN4(VAR2, VAR3, NULL, NULL);
+if (!VAR15)
+VAR13->VAR20 = VAR22;
+else
+VAR13->VAR23--;
+break;
+case VAR22:
+VAR15 = FUN4(VAR2, VAR3, &VAR11, NULL);
+if (!VAR15) {
+VAR5 = FUN5(VAR11);
+VAR13->VAR24 = VAR5->VAR25;
+}
+if (VAR13->VAR24 == VAR26) {
+VAR13->VAR20 = VAR21;
+VAR13->VAR23--;
+} else {
+VAR13->VAR20 = VAR27;
+}
+break;
+case VAR27:
+VAR15 = FUN4(VAR2, VAR3, NULL,
+&VAR13->VAR28);
+if (!VAR15) {
+VAR9 = VAR13->VAR28.VAR29;
+memcpy(&VAR13->VAR30, &VAR9->VAR31,
+sizeof(struct VAR32));
+VAR13->VAR20 = VAR33;
+} else {
+FUN3(VAR2, VAR18,
+"",
+VAR15);
+VAR14 = 0;
+}
+FUN6(&VAR2->VAR34.VAR35->VAR36, VAR13->VAR28.VAR37,
+VAR13->VAR28.VAR29, VAR13->VAR28.VAR38);
+VAR13->VAR28.VAR29 = NULL;
+break;
+case VAR33:
+VAR15 = FUN4(VAR2, VAR3, &VAR11, NULL);
+if (!VAR15) {
+VAR7 = FUN5(VAR11);
+if (VAR7->VAR39 != VAR40) {
+FUN3(VAR2, VAR18,
+"",
+VAR7->VAR39);
+}
+}
+
+VAR13->VAR20 = VAR41;
+break;
+default:
+break;
+}
+
+
+VAR13->VAR3 = 0;
+if (!VAR13->VAR23) {
+VAR14 = 0;
+FUN3(VAR2, VAR18,
+"",
+VAR15, VAR13->VAR20);
+}
+if (!VAR14) {
+
+FUN7(VAR16, &VAR2->VAR17);
+return;
+}
+FUN8(&VAR2->VAR14);
+}

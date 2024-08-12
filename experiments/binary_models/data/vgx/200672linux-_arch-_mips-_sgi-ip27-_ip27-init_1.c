@@ -1,0 +1,1 @@
+void FUN1 ( void ) { int VAR1 = FUN2 ( ) ; nasid_t VAR2 = FUN3 ( ) ; FUN4 ( VAR3 ) ; FUN5 ( VAR2 , NULL ) ; FUN6 ( "" , VAR1 , VAR4 [ VAR1 ] . VAR5 ) ; FUN7 ( ) ; FUN8 ( FUN9 ( VAR1 ) ) ; FUN10 ( VAR6 , VAR7 ) ; FUN10 ( VAR8 , VAR7 ) ; }

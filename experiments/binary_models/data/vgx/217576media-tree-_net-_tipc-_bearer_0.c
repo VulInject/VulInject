@@ -1,0 +1,26 @@
+int FUN1(struct VAR1 *VAR1, struct VAR2 *VAR3,
+struct VAR4 *VAR5[])
+{
+struct VAR6 *VAR7;
+char *VAR8 = strchr((const char *)VAR3->VAR9, '') + 1;
+
+
+VAR7 = FUN2(VAR1, VAR8);
+if (!VAR7)
+return -VAR10;
+if (FUN3(VAR7, 0)) {
+FUN4(VAR7);
+return -VAR11;
+}
+
+
+FUN5(VAR3->VAR12, VAR7);
+memset(&VAR3->VAR13, 0, sizeof(VAR3->VAR13));
+memcpy(VAR3->VAR13.VAR14, VAR7->VAR15, VAR3->VAR16->VAR17);
+VAR3->VAR13.VAR18 = VAR3->VAR16->VAR19;
+VAR3->VAR13.VAR15 = VAR20;
+VAR3->VAR21 = VAR7->VAR21;
+VAR3->VAR16->FUN6(VAR3, &VAR3->VAR22, (char *)VAR7->VAR23);
+FUN5(VAR7->VAR24, VAR3);
+return 0;
+}

@@ -1,0 +1,22 @@
+FUN1 (VAR1 *VAR2,
+gboolean     VAR3)
+{
+gint VAR4, VAR5, VAR6, VAR7;
+
+if (! FUN2 (FUN3 (VAR2), &VAR4, &VAR5, &VAR6, &VAR7))
+return;
+
+if (FUN4 (VAR2))
+return;
+
+if (VAR3)
+FUN5 (VAR2,
+FUN6 (VAR2)->VAR8);
+
+FUN7 (FUN8 (FUN9 (VAR2)),
+NULL, NULL,
+FUN8 (FUN9 (VAR2)),
+FUN10 (VAR4, VAR5, VAR6, VAR7));
+
+FUN11 (FUN9 (VAR2), VAR4, VAR5, VAR6, VAR7);
+}

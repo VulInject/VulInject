@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 ) { VAR3 * class = FUN2 ( VAR2 ) ; FUN3 ( "" ) ; ( void ) FUN4 ( VAR2 ) ; if ( VAR2 -> VAR4 ) { unsigned char * VAR5 ; size_t VAR6 ; VAR6 = VAR2 -> VAR4 -> VAR7 ; VAR5 = FUN5 ( VAR2 -> VAR4 , VAR8 ) ; VAR2 -> VAR4 = NULL ; FUN6 ( VAR2 -> VAR9 , ( VAR10 ) VAR11 , VAR5 , VAR6 ) ; } else { class -> FUN7 ( VAR2 ) ; } VAR2 -> VAR12 = VAR13 ; }

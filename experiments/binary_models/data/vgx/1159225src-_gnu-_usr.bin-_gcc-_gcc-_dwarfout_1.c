@@ -1,0 +1,1 @@
+FUN1 ( ) { char VAR1 [ VAR2 ] ; fputc ( '' , VAR3 ) ; FUN2 ( VAR3 , VAR4 ) ; sprintf ( VAR1 , VAR5 , VAR6 [ 0 ] . VAR7 ) ; FUN3 ( VAR3 , VAR1 ) ; FUN4 ( VAR3 , VAR6 [ 0 ] . VAR8 ?VAR6 [ 0 ] . VAR8 : "" ) ; FUN5 ( VAR3 , NULL ) ; }

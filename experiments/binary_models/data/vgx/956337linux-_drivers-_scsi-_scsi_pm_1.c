@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , int * FUN2 ( struct VAR1 * , const struct VAR3 * ) ) { return FUN3 ( VAR2 , VAR4 ) ; }

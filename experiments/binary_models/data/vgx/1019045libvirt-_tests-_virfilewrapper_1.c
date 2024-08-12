@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { if ( VAR1 ) { return ; } FUN2 ( fopen , NULL ) ; FUN2 ( VAR2 ) ; FUN2 ( mkdir ) ; FUN2 ( open ) ; FUN3 ( VAR3 , "" ) ; FUN2 ( VAR3 ) ; FUN2 ( execv ) ; FUN2 ( VAR4 ) ; }

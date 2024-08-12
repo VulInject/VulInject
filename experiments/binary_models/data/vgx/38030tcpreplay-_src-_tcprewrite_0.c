@@ -1,0 +1,93 @@
+int
+FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 *VAR6)
+{
+tcpr_dir_t VAR7 = VAR8;     
+struct pcap_pkthdr VAR9, *VAR10;     
+const VAR11 *VAR12 = NULL;              
+VAR11 **VAR13 = NULL;
+static VAR11 *VAR14;
+static char *VAR15 = NULL;
+COUNTER VAR16 = 0;
+int VAR17;
+int VAR18, VAR19;
+
+VAR10 = &VAR9;
+
+if (VAR14 == NULL)
+VAR14 = (VAR11 *)FUN2(VAR20);
+
+VAR13 = &VAR14;
+
+if (VAR15 == NULL)
+VAR15 = (char *)FUN2(VAR20);
+
+
+while ((VAR12 = FUN3(VAR4, VAR10)) != NULL) {
+VAR16++;
+FUN4(2, "" VAR21 "", VAR16, VAR9.VAR22);
+
+if (VAR9.VAR22 > VAR23)
+FUN5(-1, "", VAR9.VAR22, VAR23);
+
+memcpy(*VAR13, VAR12, VAR9.VAR22);
+
+
+if (VAR24.VAR25 != NULL) {
+VAR7 = FUN6(VAR24.VAR25, VAR16);
+}
+
+
+
+if (VAR7 == VAR26)
+goto VAR27; 
+
+if ((VAR17 = FUN7(VAR2, &VAR10, VAR13, VAR7)) == VAR28) {
+return VAR17;
+} else if ((VAR17 == VAR29) && FUN8(VAR30)) {
+
+FUN4(1, "" VAR21 "", VAR16);
+continue;
+}
+
+if (VAR24.VAR31)
+FUN9(&VAR32, VAR10, *VAR13);
+
+VAR27:
+if (VAR24.VAR33 == NULL) {
+
+if (VAR10->VAR22)
+FUN10((VAR11 *)VAR6, VAR10, *VAR13);
+} else {
+
+VAR19 = FUN11(VAR2, VAR34, *VAR13, VAR10->VAR22);
+
+
+if ((VAR19 ==  VAR35 || VAR19 == VAR36) &&
+((VAR24.VAR37 == VAR38) ||
+(VAR7 == VAR8 && VAR24.VAR37 == VAR39) ||
+(VAR7 == VAR40 && VAR24.VAR37 == VAR41))) {
+int VAR42 = 0;
+if (FUN12(VAR24.VAR33, *VAR13, VAR10->VAR22) < 0)
+FUN5(-1, "", VAR24.VAR33->VAR43);
+
+while ((VAR18 = FUN13(VAR24.VAR33, &VAR15)) > 0) {
+
+FUN4(1, "" VAR21 "", VAR16, VAR42++, VAR18);
+VAR10->VAR22 = VAR18;
+VAR10->VAR44 = VAR18;
+if (VAR10->VAR22)
+FUN10((VAR11 *)VAR6, VAR10, (VAR11 *)VAR15);
+}
+} else {
+
+if (VAR10->VAR22)
+FUN10((VAR11 *)VAR6, VAR10, *VAR13);
+}
+}
+
+if (VAR10->VAR22)
+FUN10((VAR11 *)VAR6, VAR10, *VAR13);
+
+} 
+return 0;
+}

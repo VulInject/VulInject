@@ -1,0 +1,128 @@
+int
+FUN1(VAR1 *VAR2)
+{
+smb_lsa_msg_hdr_t	VAR3;
+VAR4 *VAR5 = VAR2->VAR6;
+VAR7	*VAR8 = NULL;
+void		*VAR9 = NULL;
+uint32_t	VAR10 = 0;
+uint32_t	VAR11;
+
+FUN2(VAR2->VAR12 == NULL);
+
+
+if (VAR2->VAR13->VAR14 >= VAR15) {
+
+FUN2(VAR2->VAR16 == 0);
+VAR2->VAR16 = 0;
+} else {
+
+FUN2(VAR2->VAR17 == 0);
+VAR2->VAR17 = 0;
+}
+
+
+if (VAR2->VAR17 == 0 && VAR2->VAR16 == 0) {
+VAR8 = FUN3(VAR2->VAR13);
+if (VAR8 == NULL)
+return (VAR18);
+
+
+VAR2->VAR12 = VAR8;
+if (VAR2->VAR13->VAR14 >= VAR15) {
+
+VAR2->VAR17 = VAR8->VAR19;
+} else {
+
+VAR2->VAR16 = VAR8->VAR20;
+}
+
+
+if ((VAR11 = FUN4(VAR2)) != 0)
+goto VAR21;
+
+
+if ((VAR11 = FUN5(VAR2)) != 0)
+goto VAR21;
+
+VAR3.VAR22 = VAR23;
+
+if (VAR2->VAR13->VAR14 >= VAR24) {
+if (FUN6(VAR2, &VAR2->VAR25,
+VAR2->VAR13->VAR26,
+VAR8->VAR27) != 0)
+FUN7(VAR28, ""
+"");
+}
+} else {
+VAR8 = FUN8(VAR2->VAR13,
+VAR2->VAR17, VAR2->VAR16, VAR29);
+if (VAR8 == NULL)
+return (VAR30);
+
+
+VAR2->VAR12 = VAR8;
+
+VAR3.VAR22 = VAR31;
+
+if (VAR2->VAR13->VAR14 >= VAR24) {
+if (FUN6(VAR2, &VAR2->VAR25,
+VAR8->VAR27,
+VAR8->VAR27) != 0)
+FUN7(VAR28, ""
+"");
+}
+}
+
+
+VAR3.VAR32 = VAR5->VAR33;
+VAR11 = FUN9(VAR2, &VAR3,
+VAR5->VAR34, &VAR9);
+if (VAR11 != 0)
+goto VAR21;
+VAR10 = VAR3.VAR32;
+
+
+switch (VAR3.VAR22) {
+
+case VAR35:
+VAR5->VAR36 = (VAR37)VAR10;
+VAR5->VAR38 = FUN10(VAR2, VAR5->VAR36);
+bcopy(VAR9, VAR5->VAR38, VAR5->VAR36);
+
+VAR11 = VAR39;
+break;
+
+case VAR40:
+VAR5->VAR36 = (VAR37)VAR10;
+VAR5->VAR38 = FUN10(VAR2, VAR5->VAR36);
+bcopy(VAR9, VAR5->VAR38, VAR5->VAR36);
+VAR5->VAR41 = 0;
+
+VAR11 = FUN11(VAR2);
+break;
+
+case VAR42:
+
+if (VAR10 == sizeof (VAR43)) {
+VAR43 *VAR44 = VAR9;
+VAR11 = VAR44->VAR45;
+goto VAR21;
+}
+
+
+default:	
+VAR11 = VAR46;
+goto VAR21;
+}
+
+if (VAR11 != 0 && VAR11 != VAR39) {
+VAR21:
+FUN12(VAR8);
+}
+
+if (VAR9 != NULL)
+FUN13(VAR9, VAR10);
+
+return (VAR11);
+}

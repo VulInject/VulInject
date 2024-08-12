@@ -1,0 +1,50 @@
+static void FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct VAR5	*VAR6 = VAR2->VAR7;
+struct VAR8 *VAR9 = VAR6->VAR10.VAR11->VAR9;
+int			VAR12 = VAR4->VAR12;
+
+switch (VAR12) {
+case 0:				
+if (VAR2 == VAR6->VAR13) {
+
+struct VAR3 *VAR14 = VAR4->VAR15;
+
+VAR14->VAR16 = (VAR4->VAR17 < VAR4->VAR18);
+VAR14->VAR18 = VAR4->VAR17;
+VAR2 = VAR6->VAR19;
+VAR4 = VAR14;
+} else {
+
+VAR4 = VAR4->VAR15;
+VAR2 = VAR6->VAR13;
+}
+
+
+VAR12 = FUN2(VAR2, VAR4, VAR20);
+if (VAR12 == 0) {
+return;
+} else {
+FUN3(VAR9, "",
+VAR2->VAR21, VAR12);
+goto VAR22;
+}
+
+
+default:
+FUN3(VAR9, "", VAR2->VAR21,
+VAR12, VAR4->VAR17, VAR4->VAR18);
+VAR23;
+
+
+case -VAR24:		
+case -VAR25:		
+case -VAR26:		
+VAR22:
+FUN4(VAR2 == VAR6->VAR19 ?
+VAR6->VAR13 : VAR6->VAR19,
+VAR4->VAR15);
+FUN5(VAR2, VAR4);
+return;
+}
+}

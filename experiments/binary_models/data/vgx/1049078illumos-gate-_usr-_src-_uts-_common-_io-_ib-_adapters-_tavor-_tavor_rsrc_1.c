@@ -1,0 +1,1 @@
+static int FUN1 ( void * VAR1 , void * VAR2 , int VAR3 ) { tavor_pdhdl_t VAR4 ; VAR5 * VAR6 ; VAR4 = ( VAR7 ) VAR1 ; VAR6 = ( VAR5 * ) VAR2 ; FUN2 ( & VAR4 -> VAR8 , VAR9 , FUN3 ( VAR6 -> VAR10 ) ) ; return ( VAR11 ) ; }

@@ -1,0 +1,1 @@
+static enum ofperr FUN1 ( const struct VAR1 * VAR2 , const struct VAR3 * VAR4 ) { return FUN2 ( VAR2 , VAR4 -> VAR5 ) ; } VAR6 { ovs_be16 VAR7 ; ovs_be16 VAR8 ; ovs_be32 VAR9 ; ovs_be16 VAR10 ; int VAR11 ; uint8_t VAR12 ; ovs_be32 VAR13 ; }

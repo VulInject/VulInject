@@ -1,0 +1,23 @@
+int
+FUN1(VAR1 *VAR2)
+{
+uint32_t VAR3;
+int VAR4 = 0;
+char **VAR5;
+
+if (VAR2->VAR6) {
+VAR5 = &VAR2->VAR7.VAR8;
+VAR3 = FUN2(VAR2->VAR9);
+VAR2->VAR10 = VAR11;
+} else {
+VAR5 = &VAR2->VAR12;
+VAR3 = FUN3(VAR2->VAR9);
+VAR2->VAR10 = VAR13;
+}
+
+if (VAR3 & VAR14) {
+*VAR5 = VAR2->VAR6 ? VAR15 : VAR16;
+VAR4++;
+}
+return (VAR4);
+}

@@ -1,0 +1,33 @@
+void FUN1(VAR1 *VAR2, bool VAR3) {
+VAR1 *VAR4 = FUN2(VAR5);
+if (FUN3(VAR2) || FUN4(VAR2)==0) {
+
+JsvObjectIterator VAR6;
+FUN5(&VAR6, VAR4);
+while (FUN6(&VAR6)) {
+VAR1 *VAR7 = FUN7(&VAR6);
+VAR1 *VAR8 = FUN8(VAR7, "", 0);
+if (!VAR8)
+FUN9(&VAR6, VAR4);
+else
+FUN10(&VAR6); 
+FUN11(VAR8, VAR7);
+}
+FUN12(&VAR6);
+} else {
+VAR1 *VAR9 = FUN13(VAR2, 0);
+if (FUN3(VAR9)) {
+const char *VAR10 = VAR3?"":"";
+FUN14(VAR11, "", VAR10, VAR10);
+} else {
+VAR1 *VAR12 = FUN15(VAR9) ? FUN16(VAR4, VAR9, false) : 0;
+if (VAR12) {
+FUN17(VAR4, VAR12);
+FUN18(VAR12);
+}
+FUN18(VAR9);
+}
+}
+FUN18(VAR4);
+FUN19(); 
+}

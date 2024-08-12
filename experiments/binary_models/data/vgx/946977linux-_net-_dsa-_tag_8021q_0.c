@@ -1,0 +1,24 @@
+void FUN1(struct VAR1 *VAR2, int *VAR3, int *VAR4,
+int *VAR5)
+{
+u16 VAR6, VAR7;
+
+if (FUN2(VAR2)) {
+VAR7 = FUN3(VAR2);
+FUN4(VAR2);
+} else {
+FUN5(VAR2, VAR8);
+FUN6(VAR2, &VAR7);
+FUN7(VAR2, VAR8);
+}
+
+VAR6 = VAR7 & VAR9;
+
+*VAR3 = FUN8(VAR6);
+*VAR4 = FUN9(VAR6);
+
+if (VAR5)
+*VAR5 = FUN10(VAR6);
+
+VAR2->VAR10 = (VAR7 & VAR11) >> VAR12;
+}

@@ -1,0 +1,16 @@
+void FUN1(void)
+{
+struct VAR1 *VAR2;
+struct VAR3 *VAR4;
+struct VAR5 *VAR6, *VAR7;
+struct VAR8 *VAR9;
+afi_t VAR10;
+
+for (FUN2(VAR11, VAR9, VAR2)) {
+VAR4 = VAR2->VAR12;
+for (VAR10 = 0; VAR10 < VAR13; VAR10++) {
+FUN3(VAR6, VAR7, &VAR4->VAR10[VAR10].VAR14, VAR15)
+FUN4(VAR6);
+}
+}
+}

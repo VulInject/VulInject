@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { u32 VAR1 ; VAR1 = FUN2 ( VAR2 , NULL ) ; VAR1 &= 0xfffffcff ; FUN3 ( VAR1 , VAR2 ) ; }

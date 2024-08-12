@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * , const char * ) static void FUN2 ( struct VAR2 * VAR3 , char * VAR4 , VAR5 * VAR6 ) DWORD FUN3 ( char * VAR7 , char * VAR8 ) { char VAR9 [ VAR10 ] ; return ( FUN4 ( VAR7 , VAR8 , VAR9 ) ) ; }

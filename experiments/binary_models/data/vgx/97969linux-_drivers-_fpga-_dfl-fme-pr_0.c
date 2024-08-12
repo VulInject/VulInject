@@ -1,0 +1,91 @@
+static int FUN1(struct VAR1 *VAR2, unsigned long VAR3)
+{
+struct VAR4 *VAR5 = FUN2(&VAR2->VAR6);
+void VAR7 *VAR8 = (void VAR7 *)VAR3;
+struct dfl_fpga_fme_port_pr VAR9;
+struct VAR10 *VAR11;
+struct VAR12 *VAR13;
+void VAR14 *VAR15;
+struct VAR16 *VAR17;
+unsigned long VAR18;
+void *VAR19 = NULL;
+size_t VAR20;
+int VAR21 = 0;
+u64 VAR22;
+
+VAR18 = FUN3(struct VAR23, VAR24);
+
+if (FUN4(&VAR9, VAR8, VAR18))
+return -VAR25;
+
+if (VAR9.VAR26 < VAR18 || VAR9.VAR27)
+return -VAR28;
+
+
+VAR15 = FUN5(&VAR2->VAR6,
+VAR29);
+
+
+VAR22 = FUN6(VAR15 + VAR30);
+if (VAR9.VAR31 >= FUN7(VAR32, VAR22)) {
+FUN8(&VAR2->VAR6, "");
+return -VAR28;
+}
+
+
+VAR20 = FUN9(VAR9.VAR33, 4);
+
+VAR19 = FUN10(VAR20);
+if (!VAR19)
+return -VAR34;
+
+if (FUN4(VAR19,
+(void VAR7 *)(unsigned long)VAR9.VAR24,
+VAR9.VAR33)) {
+VAR21 = -VAR25;
+goto VAR35;
+}
+
+
+VAR11 = FUN11(&VAR2->VAR6);
+if (!VAR11) {
+VAR21 = -VAR34;
+goto VAR35;
+}
+
+VAR11->VAR27 |= VAR36;
+
+FUN12(&VAR5->VAR37);
+VAR17 = FUN13(VAR5);
+
+if (!VAR17) {
+VAR21 = -VAR28;
+goto VAR38;
+}
+
+VAR13 = FUN14(VAR17, VAR9.VAR31);
+if (!VAR13) {
+VAR21 = -VAR28;
+goto VAR38;
+}
+
+FUN15(VAR13->VAR11);
+
+VAR11->VAR19 = VAR19;
+VAR11->VAR39 = VAR20;
+VAR11->VAR40 = VAR9.VAR31;
+VAR13->VAR11 = VAR11;
+
+VAR21 = FUN16(VAR13);
+
+
+if (VAR13->VAR41)
+FUN17(&VAR13->VAR42);
+
+FUN18(&VAR13->VAR6);
+VAR38:
+FUN19(&VAR5->VAR37);
+VAR35:
+FUN20(VAR19);
+return VAR21;
+}

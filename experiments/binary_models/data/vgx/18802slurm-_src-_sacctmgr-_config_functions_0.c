@@ -1,0 +1,34 @@
+static void FUN1(void)
+{
+time_t VAR1 = FUN2(NULL);
+char VAR2[256], *VAR3 = NULL;
+
+FUN3(&VAR1, VAR2, sizeof(VAR2));
+FUN4("", VAR2);
+FUN4("",
+VAR4.VAR5);
+FUN4("",
+VAR4.VAR6);
+FUN4("",
+VAR4.VAR7);
+FUN4("",
+VAR4.VAR8);
+FUN4("",
+VAR4.VAR9);
+FUN4("",
+VAR4.VAR10);
+FUN4("",
+VAR4.VAR11);
+FUN4("", VAR4.VAR12);
+FUN4("", VAR4.VAR13);
+FUN4("", VAR4.VAR14);
+FUN5(VAR4.VAR15, VAR2, sizeof(VAR2));
+FUN4("", VAR2);
+VAR3 = FUN6(VAR4.VAR16);
+FUN4("",
+VAR3, VAR4.VAR16);
+FUN4("", VAR17);
+FUN4("", VAR18);
+FUN4("", VAR4.VAR19);
+FUN4("", VAR20 ? "" : "");
+}

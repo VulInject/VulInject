@@ -1,0 +1,23 @@
+FUN1(VAR1 *VAR2, VAR1 *VAR3, VAR4 *VAR5)
+{
+    VAR6 *VAR7;
+    const VAR8 *VAR9 = &VAR5->VAR10[VAR11];
+    int VAR12 = VAR5->VAR13[VAR11] + VAR14;
+    VAR7 = FUN2(VAR2, sizeof(*VAR7));
+    VAR7->VAR15 = 0x3;
+    VAR7->VAR16.VAR17 = VAR18;
+    VAR7->VAR16.VAR19 = 8;
+    VAR7->VAR16.VAR20 = 0;
+    VAR7->VAR16.VAR21 = 1;
+    VAR7->VAR16.VAR22 = FUN3(VAR9->VAR23);
+    VAR7->VAR24 = (1 << 3);
+    VAR7->VAR25 = FUN4(VAR12);
+    VAR7->VAR26 = 3;
+    VAR7->VAR27 = 0;
+    VAR7->VAR28 = 1;
+    VAR7->VAR29 = (1 << 1);
+    VAR7->VAR30 = 0;
+    VAR7->VAR31 = 0xffff;
+    VAR7->VAR32 = 0xffff;
+    FUN5(VAR3, VAR2, (void *)VAR7, "", sizeof(*VAR7), 2, NULL, NULL);
+}

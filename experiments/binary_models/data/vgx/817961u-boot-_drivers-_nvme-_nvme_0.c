@@ -1,0 +1,13 @@
+static void FUN1(struct VAR1 *VAR2, u16 VAR3)
+{
+struct VAR4 *VAR5 = VAR2->VAR5;
+
+VAR2->VAR6 = 0;
+VAR2->VAR7 = 0;
+VAR2->VAR8 = 1;
+VAR2->VAR9 = &VAR5->VAR10[VAR3 * 2 * VAR5->VAR11];
+memset((void *)VAR2->VAR12, 0, FUN2(VAR2->VAR13));
+FUN3((VAR14)VAR2->VAR12,
+(VAR14)VAR2->VAR12 + VAR15);
+VAR5->VAR16++;
+}

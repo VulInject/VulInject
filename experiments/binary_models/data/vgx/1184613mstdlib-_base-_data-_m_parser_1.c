@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( M_uint32 VAR2 ) { VAR1 * VAR3 ; VAR3 = FUN2 ( sizeof ( * VAR3 ) ) ; FUN3 ( VAR3 , 0 , VAR2 ) ; return VAR3 ; }

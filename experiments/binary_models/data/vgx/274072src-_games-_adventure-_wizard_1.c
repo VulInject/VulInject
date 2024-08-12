@@ -1,0 +1,1 @@
+int FUN1 ( void ) { time_t VAR1 , VAR2 ; FUN2 ( & VAR1 ) ; VAR2 = ( VAR1 - VAR3 ) / 60 ; VAR4 = - 1 ; FUN3 ( "" , ( int ) VAR2 , VAR2 == 1 ?"" : "" ) ; if ( VAR2 <= VAR5 / 3 ) { FUN4 ( 2 ) ; FUN5 ( 0 ) ; } FUN4 ( 8 ) ; if ( ! FUN6 ( ) ) { FUN4 ( 9 ) ; FUN5 ( 0 ) ; } return ( VAR6 ) ; }

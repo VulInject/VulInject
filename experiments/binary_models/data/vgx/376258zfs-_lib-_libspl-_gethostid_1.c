@@ -1,0 +1,1 @@
+unsigned long FUN1 ( void ) { unsigned long VAR1 = FUN2 ( ) ; if ( VAR1 == 0 ) { int VAR2 , VAR3 ; cfs_time_t VAR4 ; int VAR5 = 4 ; VAR2 = open ( "" , VAR6 ) ; if ( VAR2 >= 0 ) { VAR3 = read ( VAR2 , & VAR4 , VAR5 ) ; if ( VAR3 > 0 ) { VAR1 = ( VAR4 & VAR7 ) ; } close ( VAR2 ) ; } } return ( VAR1 ) ; }

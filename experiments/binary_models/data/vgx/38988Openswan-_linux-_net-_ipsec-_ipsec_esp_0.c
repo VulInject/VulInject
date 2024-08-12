@@ -1,0 +1,112 @@
+enum VAR1
+FUN1(struct VAR2 *VAR3)
+{
+struct VAR4 *VAR5;
+VAR6 *VAR7;	
+struct VAR8 *VAR9 = VAR3->VAR9;
+int VAR10 = 0, VAR11;
+int VAR12 = 0;
+int VAR13;
+
+VAR5 = VAR3->VAR5;
+
+VAR7 = FUN2(VAR5) + VAR3->VAR14;
+
+FUN3("", VAR7, VAR3->VAR15);
+
+VAR3->VAR16 = VAR7[VAR3->VAR15 - 1];
+VAR11 = VAR7[VAR3->VAR15 - 2];
+VAR10 = VAR11 + 2 + VAR3->VAR17;
+
+FUN4(VAR18 & VAR19,
+""
+"",
+VAR11);
+
+for (VAR13 = 1; VAR13 <= VAR11; VAR13++) {
+if((VAR13 % 16) == 1) {
+FUN4(VAR18 & VAR19,
+"",
+VAR13 - 1);
+}
+FUN5(VAR18 & VAR19,
+"",
+VAR7[VAR3->VAR15 - 2 - VAR11 + VAR13 - 1]);
+if(VAR13 != VAR7[VAR3->VAR15 - 2 - VAR11 + VAR13 - 1]) {
+VAR12 = 1;
+}
+if((VAR13 % 16) == 0) {
+FUN5(VAR18 & VAR19,
+"");
+}
+}
+if((VAR13 % 16) != 1) {
+FUN5(VAR18 & VAR19,
+"");
+}
+if(VAR12) {
+FUN4(VAR18 & VAR19,
+""
+"",
+VAR3->VAR20);
+FUN4(VAR18 & VAR19,
+""
+"");
+VAR9->VAR21.VAR22 += 1;
+}
+
+FUN4(VAR18 & VAR19,
+""
+"",
+VAR3->VAR20,
+VAR3->VAR16,
+VAR10 - 2 - VAR3->VAR17);
+
+if (FUN6(VAR3) == 6)
+FUN7(VAR3)->VAR23 =
+FUN8(FUN9(FUN7(VAR3)->VAR23) - (VAR3->VAR14 + VAR10));
+else
+FUN10(VAR3)->VAR24 =
+FUN8(FUN9(FUN10(VAR3)->VAR24) - (VAR3->VAR14 + VAR10));
+
+
+memmove((void *)(VAR7 - VAR3->VAR25),
+(void *)(FUN11(VAR5)), VAR3->VAR25);
+
+FUN3("", (VAR7 - VAR3->VAR25),
+VAR3->VAR25 + VAR3->VAR15);
+
+
+
+
+if(VAR5->VAR26 < VAR3->VAR14) {
+FUN12(VAR27
+""
+"",
+VAR3->VAR14, (int)(VAR5->VAR26));
+return VAR28;
+}
+FUN13(VAR5, VAR3->VAR14);
+FUN14(VAR5, FUN15(VAR5, VAR7 - VAR3->VAR25));
+VAR3->VAR29 = (void *) FUN16(VAR5);
+
+FUN3("", VAR5->VAR30, VAR5->VAR26);
+
+
+FUN4(VAR18 & VAR31,
+""
+"",
+VAR3->VAR26 - VAR3->VAR14 - VAR10);
+if(VAR10 + VAR3->VAR14 <= VAR3->VAR26) {
+FUN17(VAR5, VAR3->VAR26 - VAR3->VAR14 - VAR10);
+} else {
+FUN4(VAR18 & VAR31,
+""
+"");
+return VAR32;
+}
+
+FUN3("", VAR5->VAR30, VAR5->VAR26);
+
+return VAR33;
+}

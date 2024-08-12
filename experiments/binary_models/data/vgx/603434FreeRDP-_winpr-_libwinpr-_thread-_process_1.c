@@ -1,0 +1,1 @@
+static BOOL FUN1 ( HANDLE VAR1 ) { VAR2 * VAR3 = ( VAR2 * ) VAR1 ; FUN2 ( VAR3 ) ; if ( VAR3 -> VAR4 >= 0 ) { close ( VAR3 -> VAR4 ) ; VAR3 -> VAR4 = - 1 ; } return VAR5 ; }

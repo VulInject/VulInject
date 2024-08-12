@@ -1,0 +1,71 @@
+static enum VAR1 FUN1(u32 VAR2, VAR3 *VAR4,
+struct VAR5 *VAR6)
+{
+enum emulation_result VAR7 = VAR8;
+struct VAR9 *VAR10 = &VAR6->VAR10;
+struct VAR11 *VAR12 = VAR6->VAR12;
+union mips_instruction VAR13;
+int VAR14, VAR15, VAR16;
+int VAR17;
+
+
+if (VAR2 & VAR18)
+VAR4 += 1;
+VAR17 = FUN2(VAR4, VAR6, &VAR13.VAR19);
+if (VAR17)
+return VAR20;
+
+switch (VAR13.VAR21.VAR22) {
+case VAR23:
+VAR7 = FUN3(VAR13, VAR4, VAR2, VAR12, VAR6);
+break;
+case VAR24:
+FUN4(VAR6, VAR25);
+VAR7 = FUN5(VAR13, VAR4, VAR2, VAR12, VAR6);
+break;
+case VAR26:
+switch (VAR13.VAR27.VAR28) {
+case VAR29:
+FUN4(VAR6, VAR25);
+VAR7 = FUN5(VAR13, VAR4, VAR2, VAR12, VAR6);
+break;
+case VAR30:
+if (VAR13.VAR21.VAR31 || (VAR13.VAR21.VAR32 >> 3))
+goto VAR33;
+
+VAR14 = VAR13.VAR21.VAR14;
+VAR15 = VAR13.VAR21.VAR15;
+VAR16 = VAR13.VAR21.VAR32 & 0x7;
+
+switch (VAR14) {
+case VAR34:	
+VAR10->VAR35[VAR15] =
+(long)(int)FUN6(VAR6);
+break;
+default:
+FUN7(VAR6, VAR36,
+FUN8(VAR14, VAR16), 0);
+goto VAR33;
+};
+
+FUN7(VAR6, VAR36,
+FUN8(VAR14, VAR16), VAR10->VAR35[VAR15]);
+
+VAR7 = FUN9(VAR6, VAR2);
+break;
+default:
+goto VAR33;
+};
+break;
+VAR33:
+
+default:
+FUN10("",
+VAR4, VAR13.VAR19);
+FUN11(VAR6);
+VAR7 = VAR20;
+break;
+}
+
+return VAR7;
+}

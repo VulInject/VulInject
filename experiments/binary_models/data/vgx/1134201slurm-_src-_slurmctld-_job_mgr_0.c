@@ -1,0 +1,39 @@
+static void FUN1(VAR1 *VAR2, uint16_t signal,
+uint16_t VAR3)
+{
+bitoff_t VAR4;
+VAR5 *VAR6 = NULL;
+VAR7 *VAR8 = NULL;
+
+FUN2(VAR2);
+FUN2(VAR2->VAR9);
+VAR4 = FUN3(VAR2->VAR10);
+if (VAR4 < 0) {
+FUN4("", VAR11, VAR2);
+return;
+}
+
+VAR8 = xmalloc(sizeof(VAR7));
+VAR8->VAR12	= VAR13;
+VAR8->VAR14	= 1;
+VAR8->VAR15  = 1;
+if (VAR2->VAR16)
+VAR8->VAR17 =
+VAR2->VAR16->VAR17;
+VAR18 *VAR19;
+if ((VAR19 = FUN5(VAR2->VAR9)))
+VAR8->VAR17 = VAR19->VAR17;
+VAR8->VAR20	= FUN6(VAR2->VAR9);
+VAR6 = xmalloc(sizeof(VAR5));
+VAR6->VAR21.VAR22      = VAR2->VAR22;
+VAR6->VAR21.VAR21 = VAR23;
+VAR6->VAR21.VAR24 = VAR25;
+
+VAR6->VAR3 = VAR3;
+VAR6->signal = signal;
+
+VAR8->VAR26 = VAR6;
+FUN7(VAR8, VAR27);
+FUN8(VAR8);
+return;
+}

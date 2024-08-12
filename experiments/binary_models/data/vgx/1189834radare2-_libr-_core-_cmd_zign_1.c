@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 , RSignType VAR5 , const char * VAR6 , unsigned int * VAR7 ) { int VAR8 = * VAR7 ; FUN2 ( VAR8 < sizeof ( VAR4 -> VAR9 ) / sizeof ( VAR10 ) - 1 ) ; if ( FUN3 ( VAR2 -> VAR11 , VAR6 ) ) { VAR4 -> VAR9 [ VAR8 ++ ] = VAR5 ; VAR4 -> VAR9 [ VAR8 ] = 0 ; * VAR7 = VAR8 ; } }

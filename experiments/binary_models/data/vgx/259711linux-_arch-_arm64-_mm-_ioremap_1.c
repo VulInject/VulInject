@@ -1,0 +1,1 @@
+bool FUN1 ( resource_size_t VAR1 , size_t VAR2 , unsigned long VAR3 ) { cfs_time_t VAR4 = FUN2 ( VAR1 ) ; return FUN3 ( VAR4 ) ; }

@@ -1,0 +1,82 @@
+FUN1(VAR1 *VAR2)
+{
+    ram_addr_t VAR3 = VAR2->VAR3;
+    VAR4 *VAR5 = FUN2();
+    VAR6 *VAR7, *VAR8, *VAR9;
+    VAR10 *VAR11, *VAR12;
+    VAR13 *VAR14;
+    VAR15 *VAR16;
+    VAR17 *VAR18;
+    int VAR19;
+    VAR4 *VAR20 = FUN3(VAR4, 1);
+    VAR4 *VAR21 = FUN3(VAR4, 1);
+    qemu_irq VAR22[32];
+    VAR14 = FUN4(FUN5(VAR23));
+    FUN6(FUN7(VAR14), true, "", &VAR24);
+    FUN8(VAR20, NULL, "", VAR25, &VAR24);
+    FUN9(VAR20);
+    FUN10(VAR5, 0x00000000, VAR20);
+    FUN8(VAR21, NULL, "", VAR3, &VAR24);
+    FUN9(VAR21);
+    FUN10(VAR5, VAR26, VAR21);
+    VAR18 = FUN11(VAR27, 0, 0);
+    FUN12(VAR28, NULL, "", VAR29, VAR18 ? FUN13(VAR18) : NULL, (64 * 1024), VAR29 >> 16, 2, 0x89, 0x18, 0x0000, 0x0, 0);
+    VAR7 = FUN14(NULL, "");
+    FUN15(VAR7, "", 1 << VAR30);
+    FUN16(VAR7);
+    FUN17(FUN18(VAR7), 0, VAR31);
+    FUN19(FUN18(VAR7), 0, FUN20(FUN21(VAR14), VAR32));
+    for (VAR19 = 0; VAR19 < 32; VAR19++)
+    {
+        VAR22[VAR19] = FUN20(VAR7, VAR19);
+    }
+    FUN22(VAR5, VAR33 + 0x1000, 2, VAR22[VAR34], 115200, VAR35[0], VAR36);
+    VAR7 = FUN14(NULL, "");
+    FUN15(VAR7, "", 0);
+    FUN15(VAR7, "", 100 * 1000000);
+    FUN16(VAR7);
+    FUN17(FUN18(VAR7), 0, VAR37);
+    FUN19(FUN18(VAR7), 0, VAR22[VAR30]);
+    FUN23(&VAR38[0], "");
+    VAR9 = FUN14(NULL, "");
+    VAR8 = FUN14(NULL, "");
+    FUN24(FUN25(), "", FUN7(VAR9), NULL);
+    FUN24(FUN25(), "", FUN7(VAR8), NULL);
+    VAR11 = FUN26(FUN7(VAR8), "", NULL);
+    VAR12 = FUN26(FUN7(VAR8), "", NULL);
+    FUN27(VAR9, &VAR38[0]);
+    FUN15(VAR9, "", 0x1000);
+    FUN15(VAR9, "", 0x1000);
+    FUN28(FUN7(VAR9), FUN7(VAR11), "", &VAR24);
+    FUN28(FUN7(VAR9), FUN7(VAR12), "", &VAR24);
+    FUN16(VAR9);
+    FUN17(FUN18(VAR9), 0, VAR39);
+    FUN19(FUN18(VAR9), 0, VAR22[VAR40]);
+    VAR11 = FUN26(FUN7(VAR9), "", NULL);
+    VAR12 = FUN26(FUN7(VAR9), "", NULL);
+    FUN15(VAR8, "", 100 * 1000000);
+    FUN28(FUN7(VAR8), FUN7(VAR11), "", &VAR24);
+    FUN28(FUN7(VAR8), FUN7(VAR12), "", &VAR24);
+    FUN16(VAR8);
+    FUN17(FUN18(VAR8), 0, VAR41);
+    FUN19(FUN18(VAR8), 0, VAR22[VAR42]);
+    FUN19(FUN18(VAR8), 1, VAR22[VAR43]);
+    {
+        VAR44 *VAR45;
+        VAR7 = FUN14(NULL, "");
+        FUN29(VAR7, "", VAR46);
+        FUN16(VAR7);
+        VAR16 = FUN18(VAR7);
+        FUN17(VAR16, 0, VAR47);
+        FUN19(VAR16, 0, VAR22[VAR48]);
+        VAR45 = (VAR44 *)FUN30(VAR7, "");
+        for (VAR19 = 0; VAR19 < VAR46; VAR19++)
+        {
+            qemu_irq VAR49;
+            VAR7 = FUN31(VAR45, "");
+            VAR49 = FUN32(VAR7, VAR50, 0);
+            FUN19(VAR16, VAR19 + 1, VAR49);
+        }
+    }
+    FUN33(VAR14, VAR26, VAR3, VAR2->VAR51, VAR52, VAR53);
+}

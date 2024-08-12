@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { FUN2 ( ) ; if ( VAR1 . VAR2 ) { FUN3 ( VAR1 . VAR2 , & VAR1 . VAR3 ) ; FUN3 ( VAR1 . VAR2 , & VAR1 . VAR4 ) ; if ( VAR1 . VAR5 ) { FUN4 ( VAR1 . VAR5 ) ; FUN5 ( VAR1 . VAR5 ) ; VAR1 . VAR5 = NULL ; } FUN4 ( VAR1 . VAR2 , NULL ) ; FUN5 ( VAR1 . VAR2 ) ; VAR1 . VAR2 = NULL ; } }

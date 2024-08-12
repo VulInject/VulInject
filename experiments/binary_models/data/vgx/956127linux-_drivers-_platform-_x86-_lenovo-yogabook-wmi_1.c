@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , enum led_brightness VAR3 ) { struct VAR4 * VAR5 = FUN2 ( VAR2 , VAR4 , VAR6 ) ; struct VAR7 * VAR8 = VAR5 -> VAR8 ; if ( ( VAR3 < 0 ) || ( VAR3 > 255 ) ) { return - VAR9 ; } VAR5 -> VAR10 = VAR3 ; return FUN3 ( VAR8 , VAR5 -> VAR10 ) ; }

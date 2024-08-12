@@ -1,0 +1,4 @@
+FUN1 (VAR1 *VAR2)
+{
+return FUN2 (NULL, FUN3 (VAR3));
+}

@@ -1,0 +1,128 @@
+static int FUN1(VAR1 *VAR2, 
+void **VAR3, VAR4 *VAR5,
+int VAR6, struct VAR7 *VAR8) {
+static c_complain_t VAR9 = VAR10;
+
+char *VAR11;
+size_t VAR12;
+size_t VAR13;
+
+size_t VAR14;
+char *VAR15;
+
+part_signature_sha256_t VAR16;
+uint16_t VAR17;
+char VAR18[sizeof(VAR16.VAR18)];
+
+gcry_md_hd_t VAR19;
+gcry_error_t VAR20;
+unsigned char *VAR21;
+
+VAR11 = *VAR3;
+VAR12 = *VAR5;
+VAR13 = 0;
+
+
+if (VAR12 <= VAR22)
+return -VAR23;
+
+
+FUN2(&VAR16.VAR24.VAR25, sizeof(VAR16.VAR24.VAR25));
+FUN2(&VAR16.VAR24.VAR26, sizeof(VAR16.VAR24.VAR26));
+VAR17 = FUN3(VAR16.VAR24.VAR26);
+
+
+if ((VAR17 <= VAR22) ||
+(VAR17 > VAR12)) {
+FUN4("");
+return -1;
+}
+
+if (VAR2->VAR27.VAR28.VAR29 == NULL) {
+FUN5(
+VAR30, &VAR9,
+""
+"");
+
+*VAR3 = VAR11 + VAR17;
+*VAR5 -= VAR17;
+
+return 0;
+}
+
+
+FUN2(VAR16.VAR18, sizeof(VAR16.VAR18));
+
+
+VAR14 = VAR17 - VAR22;
+VAR16.VAR31 = malloc(VAR14 + 1);
+if (VAR16.VAR31 == NULL)
+return -VAR23;
+
+
+FUN2(VAR16.VAR31, VAR14);
+VAR16.VAR31[VAR14] = 0;
+
+assert(VAR13 == VAR17);
+
+
+VAR15 = FUN6(VAR2->VAR27.VAR28.VAR29, VAR16.VAR31);
+if (VAR15 == NULL) {
+FUN4("", VAR16.VAR31);
+FUN7(VAR16.VAR31);
+return -VAR32;
+}
+
+
+VAR19 = NULL;
+VAR20 = FUN8(&VAR19, VAR33, VAR34);
+if (VAR20 != 0) {
+FUN4("",
+FUN9(VAR20));
+FUN7(VAR15);
+FUN7(VAR16.VAR31);
+return -1;
+}
+
+VAR20 = FUN10(VAR19, VAR15, strlen(VAR15));
+if (VAR20 != 0) {
+FUN4("", FUN9(VAR20));
+FUN11(VAR19);
+FUN7(VAR15);
+FUN7(VAR16.VAR31);
+return -1;
+}
+
+FUN12(VAR19, VAR11 + VAR22,
+VAR12 - VAR22);
+VAR21 = FUN13(VAR19, VAR33);
+if (VAR21 == NULL) {
+FUN4("");
+FUN11(VAR19);
+FUN7(VAR15);
+FUN7(VAR16.VAR31);
+return -1;
+}
+memcpy(VAR18, VAR21, sizeof(VAR18));
+
+
+FUN11(VAR19);
+VAR19 = NULL;
+
+if (memcmp(VAR16.VAR18, VAR18, sizeof(VAR16.VAR18)) != 0) {
+FUN14(""
+"",
+VAR16.VAR31);
+} else {
+FUN15(VAR2, VAR11 + VAR13, VAR12 - VAR13,
+VAR6 | VAR35, VAR16.VAR31, VAR8);
+}
+
+FUN7(VAR15);
+FUN7(VAR16.VAR31);
+
+*VAR3 = VAR11 + VAR12;
+*VAR5 = 0;
+
+return 0;
+}

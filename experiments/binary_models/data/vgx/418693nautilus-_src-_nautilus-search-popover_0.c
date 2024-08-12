@@ -1,0 +1,84 @@
+FUN1 (VAR1 *VAR2)
+{
+VAR3 *VAR4, *VAR5;
+VAR6 *VAR7;
+VAR3 *VAR8;
+VAR9 *VAR10;
+gint VAR11, VAR12;
+
+VAR11 = 1;
+VAR4 = FUN2 (0);
+VAR5 = FUN3 ();
+VAR12 = VAR13 * 365;
+
+
+VAR7 = FUN4 (FUN5(""), VAR14);
+FUN6 (FUN7 (VAR2->VAR15), VAR7, -1);
+
+
+while (VAR11 <= VAR12)
+{
+VAR16 *VAR17;
+gint VAR18;
+gint VAR19;
+
+if (VAR11 < 7)
+{
+
+VAR18 = VAR11;
+VAR19 = 2;
+}
+else if (VAR11 < 30)
+{
+
+VAR18 = VAR11 / 7;
+if (VAR18 == 1)
+{
+VAR11 = 7;
+}
+VAR19 = 7;
+}
+else if (VAR11 < 365)
+{
+
+VAR18 = VAR11 / 30;
+if (VAR18 == 1)
+{
+VAR11 = 30;
+}
+VAR19 = 90;
+}
+else
+{
+
+VAR18 = VAR11 / 365;
+if (VAR18 == 1)
+{
+VAR11 = 365;
+}
+VAR19 = 365;
+}
+
+VAR8 = FUN8 (VAR5, -VAR11);
+VAR10 = FUN9 (2, (VAR20) VAR21);
+FUN10 (VAR10, FUN11 (VAR8));
+FUN10 (VAR10, FUN11 (VAR5));
+VAR17 = FUN12 (VAR10, VAR22);
+VAR7 = FUN4 (VAR17, VAR18 == 1);
+FUN13 (FUN14 (VAR7),
+"",
+FUN11 (VAR8),
+(VAR20) VAR21);
+
+FUN6 (FUN7 (VAR2->VAR15), VAR7, -1);
+
+FUN15 (VAR17);
+FUN16 (VAR8);
+FUN17 (VAR10);
+
+VAR11 += VAR19;
+}
+
+FUN16 (VAR4);
+FUN16 (VAR5);
+}

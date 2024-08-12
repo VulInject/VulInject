@@ -1,0 +1,15 @@
+static void FUN1(void **VAR1, void *VAR2, VisitorFunc VAR3, VAR4 **VAR5)
+{
+    VAR6 *VAR7 = VAR2;
+    VAR8 *VAR9;
+    VAR10 *VAR11, *VAR12;
+    FUN2(VAR7->VAR13, &VAR7->VAR12);
+    VAR11 = VAR7->VAR12;
+    VAR9 = FUN3(VAR11);
+    VAR12 = FUN4(FUN5(VAR9));
+    FUN6(VAR9);
+    VAR7->VAR14 = FUN7(VAR12, true);
+    FUN8(VAR11);
+    FUN8(VAR12);
+    FUN9(VAR7->VAR14, VAR1, VAR5);
+}

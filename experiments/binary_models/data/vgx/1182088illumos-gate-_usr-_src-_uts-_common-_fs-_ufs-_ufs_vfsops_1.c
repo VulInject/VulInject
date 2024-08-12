@@ -1,0 +1,1 @@
+extern void FUN1 ( void * ) extern uint_t VAR1 ; int FUN2 ( void ) { FUN3 ( & VAR2 , VAR3 ) ; FUN3 ( & VAR1 ) ; return ( FUN4 ( & VAR4 ) ) ; }

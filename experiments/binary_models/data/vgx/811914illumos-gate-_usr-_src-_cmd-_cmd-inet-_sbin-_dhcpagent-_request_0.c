@@ -1,0 +1,70 @@
+static void
+FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+
+VAR2->VAR5++;
+
+if (*VAR4->VAR6[VAR7]->VAR8 == VAR9) {
+if (VAR2->VAR10 != VAR11 &&
+VAR2->VAR10 != VAR12 &&
+(VAR4->VAR6[VAR13] == NULL ||
+VAR4->VAR6[VAR13]->VAR14 != sizeof (VAR15))) {
+FUN2(VAR16, ""
+"",
+VAR2->VAR17);
+VAR2->VAR18++;
+FUN3(VAR4);
+return;
+}
+if ((VAR2->VAR10 == VAR19 ||
+VAR2->VAR10 == VAR20) &&
+VAR2->VAR21->VAR22->VAR23 !=
+VAR4->VAR24->VAR25.VAR26) {
+FUN2(VAR16, ""
+"",
+FUN4(VAR4->VAR24->VAR25));
+VAR2->VAR18++;
+FUN3(VAR4);
+return;
+}
+}
+
+
+
+FUN5(VAR2);
+
+if (*VAR4->VAR6[VAR7]->VAR8 == VAR27) {
+FUN2(VAR16, "",
+VAR2->VAR17);
+VAR2->VAR18++;
+FUN3(VAR4);
+FUN6(VAR2);
+
+
+
+(void) FUN7(VAR2->VAR17, VAR2->VAR28);
+return;
+}
+
+if (VAR4->VAR6[VAR29] == NULL ||
+VAR4->VAR6[VAR29]->VAR14 != sizeof (VAR30)) {
+FUN2(VAR31, ""
+"", VAR2->VAR17);
+VAR2->VAR18++;
+FUN3(VAR4);
+FUN6(VAR2);
+return;
+}
+
+if (VAR4->VAR6[VAR32] != NULL) {
+FUN8(VAR2, (char *)VAR4->VAR6[VAR32]->VAR8,
+VAR4->VAR6[VAR32]->VAR14);
+}
+
+FUN2(VAR33, "", VAR2->VAR17);
+if (!FUN9(VAR2, VAR4)) {
+FUN2(VAR16, ""
+"", VAR2->VAR17);
+FUN6(VAR2);
+}
+}

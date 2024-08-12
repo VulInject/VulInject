@@ -1,0 +1,44 @@
+static void FUN1(VAR1 *VAR2)
+{
+size_t VAR3 = ((VAR4)VAR2->VAR5) & (VAR6 - 1);
+uint64_t VAR7 = VAR2->VAR5 << 3;
+VAR8 *VAR9;
+
+
+VAR9 = VAR2->VAR10 + VAR3;
+*VAR9++ = 0x80;
+
+
+VAR3 = (VAR6 - 1) - VAR3;
+
+
+if (VAR3 < 8) {
+
+memset(VAR9, 0, VAR3);
+FUN2(VAR2, VAR2->VAR10);
+
+
+memset(VAR2->VAR10, 0, VAR6 - 8);
+} else {
+
+memset(VAR9, 0, VAR3 - 8);
+}
+
+
+VAR2->VAR10[VAR6 - 8] = (VAR8) VAR7;
+VAR2->VAR10[VAR6 - 7] = (VAR8) (VAR7 >> 8);
+VAR2->VAR10[VAR6 - 6] = (VAR8) (VAR7 >> 16);
+VAR2->VAR10[VAR6 - 5] = (VAR8) (VAR7 >> 24);
+VAR2->VAR10[VAR6 - 4] = (VAR8) (VAR7 >> 32);
+VAR2->VAR10[VAR6 - 3] = (VAR8) (VAR7 >> 40);
+VAR2->VAR10[VAR6 - 2] = (VAR8) (VAR7 >> 48);
+VAR2->VAR10[VAR6 - 1] = (VAR8) (VAR7 >> 56);
+
+FUN2(VAR2, VAR2->VAR10);
+
+VAR9 = VAR2->VAR10;
+FUN3(0);
+FUN3(1);
+FUN3(2);
+FUN3(3);
+}

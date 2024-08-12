@@ -1,0 +1,1 @@
+void FUN1 ( const void * VAR1 ) { char * VAR2 ; char * VAR3 ; VAR2 = FUN2 ( VAR1 , NULL ) ; VAR3 = FUN3 ( VAR2 ) ; FUN4 ( VAR2 ) ; FUN5 ( "" , VAR3 ) ; FUN6 ( VAR4 ) ; FUN4 ( VAR3 ) ; }

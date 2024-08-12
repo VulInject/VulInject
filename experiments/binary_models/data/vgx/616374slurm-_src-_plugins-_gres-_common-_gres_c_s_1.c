@@ -1,0 +1,1 @@
+static bool FUN1 ( void ) { struct stat VAR1 ; char * VAR2 = NULL ; bool VAR3 = false ; VAR2 = FUN2 ( "" ) ; if ( FUN3 ( VAR2 , & VAR1 ) >= 0 ) { VAR3 = true ; } return VAR3 ; }

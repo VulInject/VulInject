@@ -1,0 +1,94 @@
+int
+FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+struct VAR5 *VAR6, struct VAR5 **VAR7,
+unsigned long VAR8, unsigned long VAR9, unsigned long VAR10)
+{
+struct VAR11 *VAR12 = VAR6->VAR13;
+unsigned long VAR14 = VAR6->VAR15;
+long VAR16 = (VAR9 - VAR8) >> VAR17;
+unsigned int VAR18 = 0;
+unsigned long VAR19 = 0;
+pgoff_t VAR20;
+int VAR21;
+
+if (VAR10 == VAR14) {
+*VAR7 = VAR6;
+return 0;
+}
+
+
+if (FUN2() &&
+(VAR6->VAR15 & (VAR22|VAR23)) &&
+(VAR10 & VAR24) == 0) {
+pgprot_t VAR25 = FUN3(VAR10);
+
+VAR21 = FUN4(VAR26->VAR12, VAR8, VAR9,
+&VAR27, &VAR25);
+if (VAR21)
+return VAR21;
+}
+
+
+if (VAR10 & VAR28) {
+
+if (!FUN5(VAR12, VAR10, VAR16) &&
+FUN5(VAR12, VAR14, VAR16))
+return -VAR29;
+if (!(VAR14 & (VAR30|VAR28|VAR31|
+VAR32|VAR33))) {
+VAR19 = VAR16;
+if (FUN6(VAR12, VAR19))
+return -VAR29;
+VAR10 |= VAR30;
+}
+}
+
+
+VAR20 = VAR6->VAR34 + ((VAR8 - VAR6->VAR35) >> VAR17);
+*VAR7 = FUN7(VAR2, VAR12, *VAR7, VAR8, VAR9, VAR10,
+VAR6->VAR36, VAR6->VAR37, VAR20, FUN8(VAR6),
+VAR6->VAR38, FUN9(VAR6));
+if (*VAR7) {
+VAR6 = *VAR7;
+FUN10((VAR6->VAR15 ^ VAR10) & ~VAR39);
+goto VAR40;
+}
+
+*VAR7 = VAR6;
+
+if (VAR8 != VAR6->VAR35) {
+VAR21 = FUN11(VAR2, VAR6, VAR8, 1);
+if (VAR21)
+goto VAR41;
+}
+
+if (VAR9 != VAR6->VAR42) {
+VAR21 = FUN11(VAR2, VAR6, VAR9, 0);
+if (VAR21)
+goto VAR41;
+}
+
+VAR40:
+
+FUN12(VAR6, VAR10);
+if (FUN13(VAR6))
+VAR18 |= VAR43;
+FUN14(VAR6);
+
+FUN15(VAR4, VAR6, VAR8, VAR9, VAR18);
+
+
+if ((VAR14 & (VAR28 | VAR32 | VAR44)) == VAR44 &&
+(VAR10 & VAR28)) {
+FUN16(VAR6, VAR8, VAR9, NULL);
+}
+
+FUN17(VAR12, VAR14, -VAR16);
+FUN17(VAR12, VAR10, VAR16);
+FUN18(VAR6);
+return 0;
+
+VAR41:
+FUN19(VAR19);
+return VAR21;
+}

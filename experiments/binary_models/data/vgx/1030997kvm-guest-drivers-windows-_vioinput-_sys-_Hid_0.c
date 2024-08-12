@@ -1,0 +1,11 @@
+VAR1 FUN1(PUCHAR VAR2, PUCHAR VAR3)
+{
+ULONG VAR4;
+BOOLEAN VAR5 = FUN2(&VAR4, *VAR2);
+if (VAR5)
+{
+*VAR3 = (unsigned char)VAR4;
+*VAR2 &= ~(1 << VAR4);
+}
+return VAR5;
+}

@@ -1,0 +1,9 @@
+VAR1 *FUN1(VAR2 *VAR3, bool VAR4)
+{
+    VAR1 *VAR5 = FUN2(VAR1, 1);
+    VAR5->VAR6.VAR3 = FUN2(VAR7, 1);
+    VAR5->VAR8 = VAR9;
+    VAR5->VAR6.VAR3->VAR3 = VAR3;
+    VAR5->VAR6.VAR3->VAR4 = VAR4;
+    return VAR5;
+}

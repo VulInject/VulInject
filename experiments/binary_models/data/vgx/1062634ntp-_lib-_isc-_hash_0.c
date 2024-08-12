@@ -1,0 +1,18 @@
+VAR1
+FUN1(VAR2 *VAR3, VAR4 *VAR5, size_t VAR6) {
+isc_result_t VAR7 = VAR8;
+
+FUN2(VAR3 != NULL);
+FUN3(VAR9 == NULL);
+
+FUN4(FUN5(&VAR10, VAR11) == VAR8);
+
+FUN6(&VAR12);
+
+if (VAR9 == NULL)
+VAR7 = FUN7(VAR3, VAR5, VAR6, &VAR9);
+
+FUN8(&VAR12);
+
+return (VAR7);
+}

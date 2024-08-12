@@ -1,0 +1,1 @@
+void * FUN1 ( const VAR1 * VAR2 , M_uint64 VAR3 ) { void * VAR4 = NULL ; if ( ! FUN2 ( VAR2 , VAR3 , & VAR4 ) ) { return VAR5 ; } return VAR4 ; }

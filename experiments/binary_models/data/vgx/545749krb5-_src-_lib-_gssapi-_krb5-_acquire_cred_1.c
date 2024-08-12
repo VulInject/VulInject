@@ -1,0 +1,1 @@
+OM_uint32 FUN1 ( VAR1 * VAR2 , const gss_OID VAR3 , const gss_OID VAR4 , gss_buffer_t VAR5 ) { char * new = NULL , * VAR6 ; int VAR7 ; VAR7 = FUN2 ( ) ; if ( VAR7 != 0 ) { return VAR8 ; } if ( VAR5 -> VAR5 != NULL ) { new = strdup ( ( char * ) VAR5 -> VAR5 ) ; if ( new == NULL ) { return VAR8 ; } } FUN3 ( & VAR9 ) ; VAR6 = VAR10 ; VAR10 = new ; FUN4 ( & VAR9 ) ; return VAR11 ; }

@@ -1,0 +1,38 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+struct VAR5 *VAR6 = FUN3(FUN4(VAR2));
+struct VAR7 *VAR8 = &(VAR4->VAR9);
+struct VAR10 *VAR11 = FUN5(FUN2(VAR2));
+
+u8 VAR12 = 0;
+u32 VAR13 = 0;
+u8 VAR14 = 0;
+
+VAR12 = VAR15;
+VAR13 = VAR16 | VAR17;
+
+VAR14 = FUN6(VAR4, VAR18);
+VAR13 = ((VAR13 & 0x000fffff) << 8) | VAR14;
+FUN7(VAR4, VAR18, VAR13);
+FUN8(VAR4, VAR19, VAR12);
+
+
+VAR4->VAR20->VAR21->FUN9(VAR2, VAR22,
+(VAR23 *)(&VAR6->VAR24));
+
+FUN8(VAR4, VAR25, 0x8f);
+
+
+switch (VAR8->VAR26) {
+case VAR27:
+case VAR28:
+VAR11->VAR29 = (VAR30 << 3);
+break;
+case VAR31:
+case VAR32:
+VAR11->VAR29 = (VAR33 << 3);
+break;
+}
+FUN8(VAR4, VAR34, VAR11->VAR29);
+}

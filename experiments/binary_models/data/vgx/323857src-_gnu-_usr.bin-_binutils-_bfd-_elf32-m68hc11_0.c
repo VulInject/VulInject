@@ -1,0 +1,148 @@
+FUN1 (VAR1 *VAR2, VAR3 *VAR4,
+bfd_vma VAR5, int VAR6)
+{
+VAR7 *VAR8;
+unsigned int VAR9;
+VAR10 *VAR11;
+VAR12 *VAR13, *VAR14;
+bfd_vma VAR15;
+VAR16 *VAR17, *VAR18, *VAR19;
+struct VAR20 **VAR21;
+struct VAR20 **VAR22;
+unsigned int VAR23;
+
+VAR8 = &FUN2 (VAR2)->VAR8;
+VAR17 = (VAR16 *) VAR8->VAR11;
+
+VAR9 = FUN3 (VAR2, VAR4);
+
+VAR11 = FUN4 (VAR4)->VAR24.VAR11;
+
+VAR15 = VAR4->VAR25;
+
+VAR13 = FUN4 (VAR4)->VAR26;
+VAR14 = VAR13 + VAR4->VAR27;
+
+
+memmove (VAR11 + VAR5, VAR11 + VAR5 + VAR6,
+(VAR28) (VAR15 - VAR5 - VAR6));
+
+VAR4->VAR25 -= VAR6;
+
+
+for (VAR13 = FUN4 (VAR4)->VAR26; VAR13 < VAR14; VAR13++)
+{
+unsigned char VAR29;
+unsigned char VAR30;
+unsigned short VAR31;
+unsigned long VAR32;
+int VAR33;
+
+VAR32 = VAR13->VAR34;
+
+
+if (FUN5 (VAR13->VAR35) != VAR36
+&& VAR13->VAR34 >= VAR5 && VAR13->VAR34 < VAR5 + VAR6)
+VAR13->VAR35 = FUN6 (FUN7 (VAR13->VAR35),
+VAR37);
+
+if (FUN5 (VAR13->VAR35) == VAR37)
+continue;
+
+
+if ((VAR13->VAR34 > VAR5
+&& VAR13->VAR34 < VAR15))
+VAR13->VAR34 -= VAR6;
+
+
+switch (FUN5 (VAR13->VAR35))
+{
+default:
+break;
+
+case VAR36:
+VAR29 = FUN8 (VAR2, VAR11 + VAR13->VAR34);
+switch (VAR29)
+{
+
+case 0x7e:
+case 0x9d:
+case 0xbd:
+continue;
+
+case 0x12:
+case 0x13:
+VAR33 = 3;
+VAR31 = 4;
+
+
+if (VAR32 == VAR5)
+VAR31++;
+break;
+
+case 0x1e:
+case 0x1f:
+VAR33 = 3;
+VAR31 = 4;
+break;
+
+case 0x18:
+VAR33 = 4;
+VAR31 = 5;
+break;
+
+default:
+VAR33 = 1;
+VAR31 = 2;
+break;
+}
+VAR30 = FUN8 (VAR2, VAR11 + VAR13->VAR34 + VAR33);
+VAR31 += VAR32;
+VAR31 += ((unsigned short) VAR30 | ((VAR30 & 0x80) ? 0xff00 : 0));
+if (VAR13->VAR34 < VAR5 && VAR31 > VAR5)
+{
+VAR30 -= VAR6;
+FUN9 (VAR2, VAR30, VAR11 + VAR13->VAR34 + VAR33);
+}
+else if (VAR13->VAR34 >= VAR5 && VAR31 <= VAR5)
+{
+VAR30 += VAR6;
+FUN9 (VAR2, VAR30, VAR11 + VAR13->VAR34 + VAR33);
+}
+else
+{
+
+}
+
+break;
+}
+}
+
+
+VAR19 = VAR17 + VAR8->VAR38;
+for (VAR18 = VAR17; VAR18 < VAR19; VAR18++)
+{
+if (VAR18->VAR39 == VAR9
+&& VAR18->VAR40 > VAR5
+&& VAR18->VAR40 <= VAR15)
+VAR18->VAR40 -= VAR6;
+}
+
+
+VAR23 = (VAR8->VAR41 / sizeof (VAR42)
+- VAR8->VAR38);
+VAR21 = FUN10 (VAR2);
+VAR22 = VAR21 + VAR23;
+for (; VAR21 < VAR22; VAR21++)
+{
+struct VAR20 *VAR43 = *VAR21;
+if ((VAR43->VAR44.VAR45 == VAR46
+|| VAR43->VAR44.VAR45 == VAR47)
+&& VAR43->VAR44.VAR48.VAR49.VAR50 == VAR4
+&& VAR43->VAR44.VAR48.VAR49.VAR51 > VAR5
+&& VAR43->VAR44.VAR48.VAR49.VAR51 <= VAR15)
+{
+VAR43->VAR44.VAR48.VAR49.VAR51 -= VAR6;
+}
+}
+}

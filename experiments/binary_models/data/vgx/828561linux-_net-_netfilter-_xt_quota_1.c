@@ -1,0 +1,1 @@
+static void FUN1 ( const struct VAR1 * VAR2 ) { const struct VAR3 * VAR4 = VAR2 -> VAR5 ; } static struct xt_match quota_mt_reg VAR6 = { . VAR7 = "" . VAR8 = 0 . VAR9 = VAR10 . VAR11 = VAR12 . VAR13 = VAR14 . VAR15 = VAR16 . VAR17 = sizeof ( VAR3 ) . VAR18 = FUN2 ( VAR3 , VAR19 ) . VAR20 = VAR21 } ;

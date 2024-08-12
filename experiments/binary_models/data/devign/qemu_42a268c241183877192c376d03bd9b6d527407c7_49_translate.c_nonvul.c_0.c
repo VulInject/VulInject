@@ -1,0 +1,16 @@
+static inline void FUN1(VAR1 *VAR2, TCGv VAR3, int VAR4)
+{
+    VAR5 *VAR6 = FUN2();
+    TCGv VAR7 = FUN3();
+    TCGv_i32 VAR8, VAR9;
+    FUN4(VAR2, VAR2->VAR10 - 4);
+    FUN5(VAR7, VAR3, VAR4);
+    FUN6(VAR11, VAR7, 0, VAR6);
+    VAR8 = FUN7(VAR12);
+    VAR9 = FUN7(0);
+    FUN8(VAR13, VAR8, VAR9);
+    FUN9(VAR8);
+    FUN9(VAR9);
+    FUN10(VAR6);
+    FUN11(VAR7);
+}

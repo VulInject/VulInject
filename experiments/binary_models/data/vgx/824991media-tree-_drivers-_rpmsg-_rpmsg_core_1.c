@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , void * VAR3 , int VAR4 ) { if ( FUN2 ( ! VAR2 ) ) { return - VAR5 ; } return VAR2 -> VAR6 -> send ( VAR2 , VAR3 , VAR4 ) ; }

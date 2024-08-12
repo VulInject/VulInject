@@ -1,0 +1,1 @@
+unsigned int FUN1 ( struct VAR1 * VAR2 , unsigned int VAR3 ) { unsigned int VAR4 ; VAR4 = VAR5 | FUN2 ( VAR3 ) ; FUN3 ( VAR2 , VAR4 , VAR6 ) ; return FUN4 ( VAR2 , VAR3 ) ; }

@@ -1,0 +1,1 @@
+void FUN1 ( void ) { int VAR1 ; char * VAR2 ; FUN2 ( "" ) ; FUN3 ( setenv ( "" , "" , 1 ) , 0 ) ; FUN3 ( setenv ( "" , "" , 1 ) , 0 ) ; ( void ) FUN4 ( "" ) ; char * VAR3 = FUN5 ( NULL , ( VAR4 ) ) ; FUN6 ( VAR3 , ( VAR5 ) ) ; } while ( 0 ) { }

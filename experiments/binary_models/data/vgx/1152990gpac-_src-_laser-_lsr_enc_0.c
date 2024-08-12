@@ -1,0 +1,17 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4, Bool VAR5);
+static VAR6 FUN2(VAR1 *VAR2, VAR7 *VAR8, VAR3 *VAR9, Bool VAR10);
+static VAR6 FUN3(VAR1 *VAR2, VAR7 *VAR11, Bool VAR12);
+static void FUN4(VAR1 *VAR2, VAR7 **VAR13, const char *VAR14);
+static void FUN5(VAR1 *VAR2, VAR15 *VAR16, const char *VAR14);
+
+VAR17
+VAR1 *FUN6(VAR18 *VAR19)
+{
+VAR1 *VAR20;
+FUN7(VAR20, VAR1);
+if (!VAR20) return NULL;
+VAR20->VAR21 = FUN8();
+VAR20->VAR22 = FUN8();
+VAR20->VAR23 = VAR19;
+return VAR20;
+}

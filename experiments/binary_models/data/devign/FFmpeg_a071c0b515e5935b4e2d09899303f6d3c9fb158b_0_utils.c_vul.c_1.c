@@ -1,0 +1,1 @@
+unsigned int FUN1(unsigned int VAR1) { return FUN2(VAR1 & 0xFF) + (FUN2((VAR1 >> 8) & 0xFF) << 8) + (FUN2((VAR1 >> 16) & 0xFF) << 16) + (FUN2((VAR1 >> 24) & 0xFF) << 24); }

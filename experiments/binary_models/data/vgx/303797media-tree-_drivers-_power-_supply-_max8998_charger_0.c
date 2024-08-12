@@ -1,0 +1,42 @@
+static int FUN1(struct VAR1 *VAR2,
+enum power_supply_property VAR3,
+union VAR4 *VAR5)
+{
+struct VAR6 *VAR7 = FUN2(VAR2);
+struct VAR8 *VAR9 = VAR7->VAR10->VAR9;
+int VAR11;
+u8 VAR12;
+
+switch (VAR3) {
+case VAR13:
+VAR11 = FUN3(VAR9, VAR14, &VAR12);
+if (VAR11)
+return VAR11;
+if (VAR12 & (1 << 4))
+VAR5->VAR15 = 0;
+else
+VAR5->VAR15 = 1;
+break;
+case VAR16:
+VAR11 = FUN3(VAR9, VAR14, &VAR12);
+if (VAR11)
+return VAR11;
+if (VAR12 & (1 << 3))
+VAR5->VAR15 = 0;
+else
+VAR5->VAR15 = 1;
+break;
+default:
+return -VAR17;
+}
+
+return 0;
+}
+
+static const struct power_supply_desc VAR18 = {
+.VAR19		= "",
+.VAR20		= VAR21,
+.VAR22	= VAR23,
+.VAR24	= VAR25,
+.VAR26	= FUN4(VAR25),
+};

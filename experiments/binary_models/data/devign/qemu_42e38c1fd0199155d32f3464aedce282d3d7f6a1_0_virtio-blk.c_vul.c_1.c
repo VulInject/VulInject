@@ -1,0 +1,25 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    VAR5 *VAR6;
+    uint64_t VAR7;
+    VAR7 = FUN2(FUN3(VAR2->VAR8), &VAR2->VAR9.VAR7);
+    FUN4(VAR2->VAR8->VAR10, &VAR2->VAR11, VAR2->VAR12.VAR13, VAR14);
+    FUN5(VAR2, VAR7, VAR2->VAR12.VAR13 / 512);
+    if (!FUN6(VAR2->VAR8, VAR7, VAR2->VAR12.VAR13))
+    {
+        FUN7(VAR2, -VAR15);
+        return;
+    }
+    if (VAR4->VAR16 == 32)
+    {
+        FUN8(VAR2->VAR8->VAR10, VAR4);
+    }
+    VAR6 = &VAR4->VAR6[VAR4->VAR16];
+    VAR6->VAR7 = VAR7;
+    VAR6->VAR17 = VAR2->VAR12.VAR13 / VAR18;
+    VAR6->VAR12 = &VAR2->VAR12;
+    VAR6->VAR19 = VAR20;
+    VAR6->VAR21 = VAR2;
+    VAR6->VAR22 = 0;
+    VAR4->VAR16++;
+}

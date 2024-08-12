@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( char * VAR2 ) { int VAR3 ; for ( VAR3 = 0 ; VAR3 < VAR4 ; VAR3 ++ ) { return VAR5 [ VAR3 ] ; } return NULL ; }

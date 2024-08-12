@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * VAR2 = NULL ; int VAR3 = fgetc ( VAR4 ) ; if ( VAR3 == - 1 ) { return VAR4 ; } FUN2 ( VAR3 , VAR4 ) ; VAR2 = FUN3 ( VAR4 ) ; return VAR2 ; }

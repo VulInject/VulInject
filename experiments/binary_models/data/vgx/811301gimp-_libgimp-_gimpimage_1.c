@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * * VAR2 ; gint VAR3 ; VAR4 * VAR5 = NULL ; gint VAR6 ; VAR2 = FUN2 ( VAR7 , & VAR3 ) ; for ( VAR6 = 0 ; VAR6 < VAR3 ; VAR6 ++ ) { VAR5 = FUN3 ( VAR5 , VAR2 [ VAR6 ] ) ; } return FUN4 ( VAR5 ) ; }

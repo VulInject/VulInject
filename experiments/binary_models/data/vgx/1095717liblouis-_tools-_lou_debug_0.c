@@ -1,0 +1,16 @@
+static int
+FUN1(void) {
+FUN2("", VAR1->VAR2);
+FUN2("", VAR1->VAR3);
+FUN2("", VAR1->VAR4);
+FUN2("", FUN3(VAR1->VAR5));
+FUN2("", FUN3(VAR1->VAR6));
+FUN2("", FUN3(VAR1->VAR7));
+FUN2("", FUN3(VAR1->VAR8));
+FUN2("",
+FUN4(&VAR1->VAR9[0], VAR1->VAR10));
+FUN2("", FUN4(&VAR1->VAR11[0], VAR1->VAR12));
+FUN2("",
+FUN4(&VAR1->VAR13[0], VAR1->VAR14));
+return 1;
+}

@@ -1,0 +1,49 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 *VAR6, int VAR7)
+{
+    VAR8 *VAR9;
+    int VAR10;
+    if (VAR7 != VAR11)
+        return VAR12;
+    VAR10 = FUN2(VAR6 + 8);
+    if (VAR10 + 1 > VAR4->VAR13)
+    {
+        if (FUN3(&VAR4->VAR14, VAR10 + 1, sizeof(VAR15)))
+            return FUN4(VAR16);
+        memset(&VAR4->VAR14[VAR4->VAR13], 0, sizeof(VAR15) * (VAR10 + 1 - VAR4->VAR13));
+        VAR4->VAR13 = VAR10 + 1;
+    }
+    VAR4->VAR14[VAR10].VAR17 = FUN2(VAR6 + 12);
+    VAR4->VAR14[VAR10].VAR18 = FUN2(VAR6 + 36);
+    VAR4->VAR14[VAR10].VAR19 = FUN2(VAR6 + 40);
+    VAR4->VAR14[VAR10].VAR20 = FUN2(VAR6 + 44);
+    VAR4->VAR14[VAR10].VAR21 = 0;
+    if (VAR4->VAR14[VAR10].VAR18 <= 0 || VAR4->VAR14[VAR10].VAR19 <= 0 || VAR4->VAR14[VAR10].VAR20 < 0)
+    {
+        FUN5(VAR2, VAR22, "");
+        return VAR12;
+    }
+    VAR9 = FUN6(VAR2, NULL);
+    if (!VAR9)
+        return FUN4(VAR16);
+    VAR9->VAR23 = VAR10;
+    FUN7(VAR9, 60, 1, VAR4->VAR14[VAR10].VAR19);
+    VAR4->VAR14[VAR10].VAR24 = VAR9->VAR25;
+    VAR9->VAR26->VAR27 = VAR28;
+    VAR9->VAR26->VAR29 = 0;
+    VAR9->VAR26->VAR18 = VAR4->VAR14[VAR10].VAR18;
+    VAR9->VAR26->VAR19 = VAR4->VAR14[VAR10].VAR19;
+    VAR9->VAR26->VAR30 = VAR4->VAR14[VAR10].VAR20;
+    VAR9->VAR26->VAR31 = VAR9->VAR26->VAR18 * VAR9->VAR26->VAR19 * VAR9->VAR26->VAR30;
+    VAR9->VAR26->VAR32 = VAR9->VAR26->VAR18 * VAR9->VAR26->VAR30;
+    if (VAR4->VAR14[VAR10].VAR17)
+    {
+        VAR9->VAR26->VAR33 = VAR34;
+    }
+    else if (VAR9->VAR26->VAR30 == 8)
+    {
+        VAR9->VAR26->VAR33 = VAR35;
+    }
+    else
+        VAR9->VAR26->VAR33 = VAR36;
+    return 0;
+}

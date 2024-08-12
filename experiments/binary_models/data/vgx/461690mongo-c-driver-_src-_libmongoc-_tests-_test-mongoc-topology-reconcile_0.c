@@ -1,0 +1,97 @@
+FUN1 (bool VAR1)
+{
+VAR2 *VAR3;
+VAR2 *VAR4;
+char *VAR5;
+VAR6 *VAR7;
+VAR8 *VAR9 = NULL;
+VAR10 *VAR11;
+debug_stream_stats_t VAR12 = {0};
+VAR13 *VAR14;
+VAR13 *VAR15;
+VAR13 *VAR16;
+
+VAR3 = FUN2 ();
+VAR4 = FUN2 ();
+FUN3 (VAR3);
+FUN3 (VAR4);
+
+
+FUN4 (
+VAR3, VAR17, false, false, VAR3, VAR4);
+
+FUN4 (
+VAR4, VAR17, true, false, VAR3, VAR4);
+
+
+VAR5 = FUN5 ("VAR18:
+FUN6 (VAR3));
+
+VAR7 = FUN7 (VAR5);
+
+if (VAR1) {
+VAR9 = FUN8 (VAR7, NULL);
+VAR11 = FUN9 (VAR9);
+} else {
+VAR11 = FUN10 (VAR5, NULL);
+}
+
+if (!VAR1) {
+FUN11 (VAR11, &VAR12);
+}
+
+VAR14 = FUN12 (VAR19);
+VAR15 = FUN12 (VAR20);
+VAR16 = FUN12 (VAR21);
+FUN13 (VAR16, FUN14 (""));
+
+
+FUN15 (FUN16 (VAR11, VAR14, VAR3));
+if (!VAR1) {
+FUN15 (
+FUN17 (VAR11->VAR22, FUN6 (VAR4)));
+}
+
+
+FUN15 (FUN16 (VAR11, VAR15, VAR4));
+
+
+FUN4 (
+VAR3, VAR17, true, true, VAR3); 
+
+FUN15 (FUN16 (VAR11, VAR16, VAR3));
+FUN15 (!VAR11->VAR22->VAR23);
+
+if (!VAR1) {
+FUN18 (1, ==, VAR12.VAR24);
+}
+
+
+FUN4 (
+VAR3, VAR17, true, true, VAR3, VAR4);
+FUN4 (
+VAR4, VAR17, false, false, VAR3, VAR4);
+
+FUN15 (FUN16 (VAR11, VAR14, VAR4));
+
+if (!VAR1) {
+
+FUN18 (1, ==, VAR12.VAR24);
+}
+
+FUN19 (VAR15);
+FUN19 (VAR14);
+FUN19 (VAR16);
+
+if (VAR1) {
+FUN20 (VAR9, VAR11);
+FUN21 (VAR9);
+} else {
+FUN22 (VAR11);
+}
+
+FUN23 (VAR7);
+FUN24 (VAR5);
+FUN25 (VAR4);
+FUN25 (VAR3);
+}

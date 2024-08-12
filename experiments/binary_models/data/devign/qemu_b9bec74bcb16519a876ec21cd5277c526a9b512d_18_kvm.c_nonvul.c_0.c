@@ -1,0 +1,36 @@
+static int FUN1(VAR1 *VAR2, int VAR3)
+{
+    struct kvm_regs VAR4;
+    int VAR5 = 0;
+    if (!VAR3)
+    {
+        VAR5 = FUN2(VAR2, VAR6, &VAR4);
+        if (VAR5 < 0)
+        {
+            return VAR5;
+        }
+    }
+    FUN3(&VAR4.VAR7, &VAR2->VAR4[VAR8], VAR3);
+    FUN3(&VAR4.VAR9, &VAR2->VAR4[VAR10], VAR3);
+    FUN3(&VAR4.VAR11, &VAR2->VAR4[VAR12], VAR3);
+    FUN3(&VAR4.VAR13, &VAR2->VAR4[VAR14], VAR3);
+    FUN3(&VAR4.VAR15, &VAR2->VAR4[VAR16], VAR3);
+    FUN3(&VAR4.VAR17, &VAR2->VAR4[VAR18], VAR3);
+    FUN3(&VAR4.VAR19, &VAR2->VAR4[VAR20], VAR3);
+    FUN3(&VAR4.VAR21, &VAR2->VAR4[VAR22], VAR3);
+    FUN3(&VAR4.VAR23, &VAR2->VAR4[8], VAR3);
+    FUN3(&VAR4.VAR24, &VAR2->VAR4[9], VAR3);
+    FUN3(&VAR4.VAR25, &VAR2->VAR4[10], VAR3);
+    FUN3(&VAR4.VAR26, &VAR2->VAR4[11], VAR3);
+    FUN3(&VAR4.VAR27, &VAR2->VAR4[12], VAR3);
+    FUN3(&VAR4.VAR28, &VAR2->VAR4[13], VAR3);
+    FUN3(&VAR4.VAR29, &VAR2->VAR4[14], VAR3);
+    FUN3(&VAR4.VAR30, &VAR2->VAR4[15], VAR3);
+    FUN3(&VAR4.VAR31, &VAR2->VAR32, VAR3);
+    FUN3(&VAR4.VAR33, &VAR2->VAR34, VAR3);
+    if (VAR3)
+    {
+        VAR5 = FUN2(VAR2, VAR35, &VAR4);
+    }
+    return VAR5;
+}

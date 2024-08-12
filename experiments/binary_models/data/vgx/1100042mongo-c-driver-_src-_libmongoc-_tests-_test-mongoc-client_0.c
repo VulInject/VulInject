@@ -1,0 +1,39 @@
+FUN1 (void)
+{
+VAR1 *VAR2;
+VAR3 *VAR4;
+bson_error_t VAR5;
+VAR6 *VAR7;
+bson_t VAR8;
+VAR9 *VAR10;
+VAR11 *VAR12;
+
+VAR2 = FUN2 (VAR13);
+FUN3 (VAR2);
+FUN4 (VAR2);
+VAR4 =
+FUN5 (FUN6 (VAR2), NULL);
+
+VAR7 = FUN7 ("");
+VAR10 = FUN8 (VAR4,
+"",
+FUN7 (""),
+NULL ,
+VAR7,
+&VAR8,
+&VAR5);
+
+
+VAR12 = FUN9 (
+VAR2,
+VAR14,
+FUN7 (""));
+
+FUN10 (VAR12);
+FUN11 (FUN12 (VAR10), VAR5);
+
+FUN13 (&VAR8);
+FUN14 (VAR10);
+FUN15 (VAR4);
+FUN16 (VAR2);
+}

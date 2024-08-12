@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , size_t VAR3 , uint8_t VAR4 ) { FUN2 ( VAR2 ) ; if ( ! FUN3 ( VAR2 , VAR3 + sizeof ( VAR5 ) ) ) { return 0 ; } VAR2 -> VAR6 [ VAR3 ] = VAR4 ; return 1 ; }

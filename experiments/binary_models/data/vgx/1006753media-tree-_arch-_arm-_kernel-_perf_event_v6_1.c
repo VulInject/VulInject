@@ -1,0 +1,1 @@
+static inline unsigned long FUN1 ( void ) { int VAR1 ; volatile return VAR1 ; }

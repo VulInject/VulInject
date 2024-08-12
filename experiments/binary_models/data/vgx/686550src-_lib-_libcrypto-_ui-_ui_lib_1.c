@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 ) { if ( VAR2 == NULL ) { return ; } if ( VAR2 -> VAR3 & VAR4 ) { free ( ( char * ) VAR2 -> VAR5 ) ; switch ( VAR2 -> VAR6 ) { case VAR7 : free ( ( char * ) VAR2 -> VAR8 . VAR9 . VAR10 ) ; free ( ( char * ) VAR2 -> VAR8 . VAR9 . VAR11 ) ; free ( ( char * ) VAR2 -> VAR8 . VAR9 . VAR12 ) ; break ; default : break ; } } }

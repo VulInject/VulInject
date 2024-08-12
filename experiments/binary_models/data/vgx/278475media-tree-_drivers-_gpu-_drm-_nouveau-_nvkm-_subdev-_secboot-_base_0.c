@@ -1,0 +1,34 @@
+static int
+FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+int VAR5 = 0;
+
+switch (VAR4->VAR6->VAR7) {
+case VAR8:
+VAR4->VAR9 = VAR4->VAR7 = VAR2->VAR10->VAR11->VAR12;
+break;
+case VAR13:
+
+FUN3(&VAR2->VAR10->VAR14->VAR15);
+VAR4->VAR7 = VAR2->VAR10->VAR14->VAR12;
+VAR4->VAR9 = VAR2->VAR10->VAR11->VAR12;
+break;
+default:
+FUN4(VAR2, "",
+VAR16[VAR4->VAR6->VAR7]);
+return -VAR17;
+}
+FUN5(VAR2, "", VAR4->VAR7->VAR18);
+
+
+if (VAR4->VAR19->VAR20)
+VAR5 = VAR4->VAR19->FUN6(VAR4);
+if (VAR5) {
+FUN4(VAR2, "",
+VAR5);
+return VAR5;
+}
+
+return 0;
+}

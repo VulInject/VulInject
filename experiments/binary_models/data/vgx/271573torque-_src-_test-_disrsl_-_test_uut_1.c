@@ -1,0 +1,1 @@
+FUN1 ( ) { struct tcp_chan VAR1 ; int VAR2 = 0 ; unsigned long VAR3 ; FUN2 ( FUN3 ( & VAR1 , & VAR2 , & VAR3 , VAR4 + 1 ) == VAR5 ) ; } END_TEST FUN1 ( VAR6 ) { } END_TEST VAR7 * FUN4 ( void ) { }

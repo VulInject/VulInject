@@ -1,0 +1,74 @@
+FUN1 (struct VAR1 *VAR1, struct VAR2 *VAR3, vrf_id_t VAR4)
+{
+struct VAR5 *VAR6;
+struct VAR7 *VAR7;
+unsigned long VAR8;
+u_char VAR9;
+struct VAR10 *VAR10;
+struct VAR11 *VAR12;
+
+VAR12 = VAR1->VAR13;
+VAR7 = VAR1->VAR14;
+
+
+VAR6 = VAR3->VAR15;
+FUN2 (VAR6);
+
+FUN3 (VAR6, VAR16, VAR4);
+
+FUN4(VAR6, VAR12->VAR17.VAR18);
+FUN5 (VAR6, &VAR12->VAR17);
+
+if (VAR7)
+{
+FUN6 (VAR6, VAR7->VAR19);
+VAR9 = 0;
+VAR8 = FUN7(VAR6);
+FUN8 (VAR6, 0);
+for (VAR10 = VAR7->VAR10; VAR10; VAR10 = VAR10->VAR20)
+if (FUN9 (VAR10->VAR21, VAR22) &&
+! FUN9 (VAR10->VAR21, VAR23) &&
+FUN9 (VAR10->VAR21, VAR24))
+{
+FUN8 (VAR6, VAR10->VAR25);
+switch (VAR10->VAR25)
+{
+case VAR26:
+FUN10 (VAR6, &VAR10->VAR27.VAR28);
+break;
+case VAR29:
+case VAR30:
+FUN6 (VAR6, VAR10->VAR31);
+break;
+case VAR32:
+case VAR33:
+FUN10 (VAR6, &VAR10->VAR27.VAR28);
+FUN6 (VAR6, VAR10->VAR31);
+break;
+case VAR34:
+FUN11 (VAR6, &VAR10->VAR27.VAR35, 16);
+break;
+case VAR36:
+case VAR37:
+FUN11 (VAR6, &VAR10->VAR27.VAR35, 16);
+FUN6 (VAR6, VAR10->VAR31);
+break;
+default:
+
+break;
+}
+VAR9++;
+}
+FUN12 (VAR6, VAR8, VAR9);
+}
+else
+{
+FUN6 (VAR6, 0);
+FUN8 (VAR6, 0);
+}
+FUN13 (VAR6, 0, FUN7 (VAR6));
+
+VAR3->VAR38 = FUN14(NULL);
+VAR3->VAR39 = VAR16;
+return FUN15(VAR3);
+}

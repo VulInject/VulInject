@@ -1,0 +1,116 @@
+int FUN1(int (*VAR1)(VAR2, char *, int, void *), void *VAR3,
+VAR4 *VAR5, char **VAR6,
+VAR7 *VAR8, unsigned long long *VAR9,
+int *VAR10, VAR4 *VAR11,
+int *VAR12)
+{
+union VAR13 *VAR14;
+char *VAR15;
+int VAR16, VAR17;
+unsigned long VAR18, VAR19;
+
+VAR14 = FUN2(sizeof(*VAR14));
+if (VAR14 == NULL) {
+FUN3("");
+return -VAR20;
+}
+VAR16 = -VAR21;
+VAR17 = (*VAR1)(0, (char *) VAR14, sizeof(*VAR14), VAR3);
+if (VAR17 < FUN4(FUN5(VAR14->VAR22), VAR23)) {
+FUN3("");
+goto VAR24;
+}
+
+VAR19 = VAR14->VAR22.VAR19;
+if (VAR19 == VAR25)
+VAR18 = VAR14->VAR22.VAR18;
+else if (VAR19 == FUN6(VAR25))
+VAR18 = FUN6(VAR14->VAR22.VAR18);
+
+else goto VAR24;
+
+*VAR5 = VAR18;
+
+if (VAR18 == 1) {
+if (VAR17 < sizeof(VAR14->VAR22)) {
+FUN3(""
+"");
+goto VAR24;
+}
+*VAR8 = VAR14->VAR22.VAR26;
+*VAR9 = VAR14->VAR22.VAR27;
+*VAR10 = VAR14->VAR22.VAR28;
+*VAR12 = sizeof(VAR14->VAR22);
+*VAR11 = *VAR10;
+VAR15 = VAR14->VAR22.VAR23;
+}
+else if (VAR18 == 2) {
+if (VAR17 < sizeof(VAR14->VAR29)) {
+FUN3(""
+"");
+goto VAR24;
+}
+*VAR8 = FUN6(VAR14->VAR29.VAR26);
+*VAR9 = FUN7(VAR14->VAR29.VAR27);
+*VAR10 = FUN6(VAR14->VAR29.VAR28);
+*VAR12 = sizeof(VAR14->VAR29);
+*VAR11 = *VAR10;
+VAR15 = VAR14->VAR29.VAR23;
+}
+
+else if (VAR18 == 3 && (*((int*)VAR14->VAR30.VAR23) != 0)) {
+if (VAR17 < sizeof(VAR14->VAR30)) {
+FUN3(""
+"");
+goto VAR24;
+}
+*VAR8 = FUN6(VAR14->VAR30.VAR26);
+*VAR9 = FUN7(VAR14->VAR30.VAR27);
+*VAR10 = FUN6(VAR14->VAR30.VAR28);
+*VAR11 = FUN6(VAR14->VAR30.VAR31);
+if (*VAR11 == 0) {
+FUN3(""
+"");
+}
+*VAR12 = FUN8(sizeof(VAR14->VAR30), *VAR11);
+VAR15 = VAR14->VAR30.VAR23;
+}
+else if (VAR18 == 3) {
+FUN3(""
+"");
+
+if (VAR17 < sizeof(VAR14->VAR32)) {
+FUN3(""
+"");
+goto VAR24;
+}
+
+
+*VAR8 = (VAR33) FUN6(VAR14->VAR32.VAR26);
+
+*VAR9 = FUN7(VAR14->VAR32.VAR27);
+*VAR10 = FUN6(VAR14->VAR32.VAR28);
+*VAR11 = FUN6(VAR14->VAR32.VAR31);
+if (*VAR11 == 0) {
+FUN3(""
+"");
+}
+*VAR12 = FUN8(sizeof(VAR14->VAR32), *VAR11);
+VAR15 = VAR14->VAR32.VAR23;
+}
+else {
+FUN3("");
+goto VAR24;
+}
+VAR16 = -VAR20;
+*VAR6 = FUN9(VAR15);
+if (*VAR6 == NULL) {
+FUN3(""
+"");
+goto VAR24;
+}
+VAR16 = 0;
+VAR24:
+FUN10(VAR14);
+return VAR16;
+}

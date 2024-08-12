@@ -1,0 +1,1 @@
+void FUN1 ( char * * VAR1 ) { int VAR2 = 0 ; char * VAR3 = * VAR1 ; char VAR4 [ strlen ( VAR3 ) ] ; while ( * VAR3 ++ != '' ) { if ( VAR2 ) { if ( * VAR3 == '' && * ( VAR3 - 1 ) != '' ) { VAR2 = ! VAR2 ; } } } }

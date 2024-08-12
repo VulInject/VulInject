@@ -1,0 +1,1 @@
+static void FUN1(int signal) { FUN2(VAR1, 1); }

@@ -1,0 +1,1 @@
+TEE_Result FUN1 ( struct VAR1 * VAR2 ) { if ( VAR2 == NULL ) { return VAR3 ; } FUN2 ( & VAR4 ) ; VAR2 -> VAR5 -- ; if ( VAR2 -> VAR5 == 0 ) { FUN3 ( & VAR6 , VAR2 , VAR7 ) ; free ( VAR2 -> VAR8 ) ; } FUN4 ( & VAR4 ) ; return VAR9 ; }

@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 , size_t VAR3 ) { assert ( VAR3 == 0 || VAR2 != NULL ) ; int VAR4 ; for ( VAR4 = 0 ; VAR4 < VAR3 ; VAR4 ++ ) { FUN2 ( "" , VAR2 [ VAR4 ] ) ; } }

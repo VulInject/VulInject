@@ -1,0 +1,36 @@
+static void FUN1( VAR1 *VAR2 ) {
+VAR3    *VAR4;
+VAR5    *VAR6;
+int VAR7, VAR8, VAR9;
+
+VAR4 = ( void * )( VAR10 + VAR2->VAR11 );
+if ( VAR2->VAR12 % sizeof( *VAR4 ) ) {
+VAR13.FUN2( VAR14, "",VAR15.VAR16 );
+}
+VAR9 = VAR2->VAR12 / sizeof( *VAR4 );
+
+VAR15.VAR17 = VAR6 = VAR13.FUN3( VAR9 * sizeof( *VAR6 ), VAR18 );
+
+for ( VAR7 = 0 ; VAR7 < VAR9 ; VAR7++, VAR4++, VAR6++ ) {
+VAR19 *VAR20;
+
+VAR20 = FUN4();
+
+assert( VAR20 != NULL );            
+if ( VAR20 == NULL ) {
+VAR13.FUN2(VAR14, "");
+}
+
+VAR20->VAR21 = VAR22;
+VAR20->VAR23 = VAR6;
+FUN5( VAR20->VAR16, sizeof( VAR20->VAR16 ), "", VAR7 );
+
+for ( VAR8 = 0 ; VAR8 < 3 ; VAR8++ ) {
+VAR6->VAR24[0][VAR8] = FUN6( VAR4->VAR25[VAR8] );
+VAR6->VAR24[1][VAR8] = FUN6( VAR4->VAR26[VAR8] );
+}
+
+VAR6->VAR27 = VAR15.VAR28 + FUN7( VAR4->VAR27 );
+VAR6->VAR29 = FUN7( VAR4->VAR29 );
+}
+}

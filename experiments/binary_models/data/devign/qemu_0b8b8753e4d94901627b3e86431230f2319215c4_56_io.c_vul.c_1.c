@@ -1,0 +1,13 @@
+VAR1 *FUN1(VAR2 *VAR3, unsigned long int VAR4, void *VAR5, VAR6 *VAR7, void *VAR8)
+{
+    VAR9 *VAR10 = FUN2(&VAR11, VAR3, VAR7, VAR8);
+    VAR12 *VAR13;
+    VAR10->VAR14 = true;
+    VAR10->VAR4.VAR15 = -VAR16;
+    VAR10->VAR4.VAR4 = VAR4;
+    VAR10->VAR4.VAR5 = VAR5;
+    VAR13 = FUN3(VAR17);
+    FUN4(VAR13, VAR10);
+    FUN5(VAR10);
+    return &VAR10->VAR18;
+}

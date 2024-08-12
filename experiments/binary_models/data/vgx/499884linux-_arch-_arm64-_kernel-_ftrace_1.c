@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { unsigned long VAR5 = VAR4 -> VAR6 - VAR7 ; u32 VAR8 ; int VAR9 ; VAR9 = FUN2 ( VAR4 ) ; VAR8 = FUN3 ( ) ; new = FUN4 ( VAR10 , VAR11 , VAR12 ) ; return FUN5 ( VAR5 , VAR8 , new , true ) ; }

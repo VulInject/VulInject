@@ -1,0 +1,1 @@
+static inline int FUN1 ( void ) { int VAR1 = * ( volatile unsigned char * ) VAR2 ; return ( VAR1 & 0xa0 ) == 0x20 ; }

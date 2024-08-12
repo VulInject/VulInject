@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 ) { VAR3 * VAR4 = VAR2 -> VAR5 ; const VAR6 * VAR7 = FUN2 ( VAR2 -> VAR8 ) ; VAR9 * VAR10 = VAR4 -> VAR11 ; VAR10 -> VAR12 = VAR7 -> VAR13 ; FUN3 ( VAR10 -> VAR14 , NULL , VAR7 ) ; FUN4 ( VAR4 , VAR10 ) ; VAR4 -> VAR15 [ 1 ] -> VAR16 = VAR10 -> VAR16 ; VAR4 -> VAR15 [ 1 ] -> VAR17 = VAR10 -> VAR17 ; return 0 ; }

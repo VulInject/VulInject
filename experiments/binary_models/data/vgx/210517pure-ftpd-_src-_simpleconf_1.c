@@ -1,0 +1,1 @@
+static char * FUN1 ( char * VAR1 ) { size_t VAR2 = strlen ( VAR1 ) ; int VAR3 ; { VAR2 -- ; VAR3 = ( unsigned char ) VAR1 [ VAR2 ] ; if ( FUN2 ( VAR3 ) ) { VAR1 [ VAR2 ] = 0 ; } else { break ; } } VAR2 != 0 ; return VAR1 ; }

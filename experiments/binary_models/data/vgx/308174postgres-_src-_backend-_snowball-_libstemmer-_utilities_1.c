@@ -1,0 +1,1 @@
+extern int FUN1 ( const VAR1 * VAR2 , int VAR3 , int VAR4 , int VAR5 ) { int VAR6 ; for ( ; VAR5 > 0 ; VAR5 -- ) { if ( VAR3 >= VAR4 ) { return - 1 ; } VAR6 = VAR2 [ VAR3 ++ ] ; if ( VAR6 >= 0xC0 ) { while ( VAR3 < VAR4 ) { VAR6 = VAR2 [ VAR3 ] ; if ( VAR6 >= 0xC0 || VAR6 < 0x80 ) { break ; } VAR3 ++ ; } } } return VAR3 ; }

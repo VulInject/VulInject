@@ -1,0 +1,1 @@
+static const char * FUN1 ( const struct VAR1 * VAR2 , const char * VAR3 , const char * * VAR4 ) { if ( ! VAR2 || ! VAR3 || ! * VAR3 ) { return VAR5 ; } for ( ; VAR2 [ 0 ] . VAR6 ; VAR2 ++ ) { int VAR7 = strlen ( VAR2 [ 0 ] . VAR6 ) ; if ( ! FUN2 ( VAR3 , VAR2 [ 0 ] . VAR6 , VAR7 ) ) { if ( VAR4 ) { * VAR4 = VAR2 [ 0 ] . VAR8 ; } return VAR3 + VAR7 ; } } return NULL ; }

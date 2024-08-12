@@ -1,0 +1,1 @@
+int FUN1 ( void ) { int VAR1 ; int VAR2 = 1 ; for ( VAR1 = 0 ; VAR1 < sizeof VAR3 / sizeof VAR3 [ 0 ] ; VAR1 ++ ) { if ( VAR3 [ VAR1 ] . VAR4 && ! ( * VAR3 [ VAR1 ] . VAR4 ) ( ) ) { VAR2 = 0 ; } } return VAR2 ; }

@@ -1,0 +1,1 @@
+static pci_ers_result_t FUN1 ( struct VAR1 * VAR1 , pci_channel_state_t VAR2 ) { struct VAR3 * VAR4 ; FUN2 ( & VAR1 -> VAR5 , "" , VAR6 , VAR2 ) ; VAR4 = FUN3 ( & VAR1 -> VAR5 ) ; FUN4 ( VAR4 ) ; FUN5 ( VAR4 ) ; if ( VAR2 == VAR7 ) { return VAR8 ; } else { FUN6 ( VAR4 ) ; return VAR9 ; } }

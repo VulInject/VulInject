@@ -1,0 +1,59 @@
+static int FUN1(VAR1 *VAR2)
+{
+    struct kvm_sregs VAR3;
+    uint32_t VAR4;
+    int VAR5;
+    VAR5 = FUN2(VAR2, VAR6, &VAR3);
+    if (VAR5 < 0)
+        return VAR5;
+    memcpy(VAR2->VAR7, VAR3.VAR7, sizeof(VAR3.VAR7));
+    FUN3(&VAR2->VAR8[VAR9], &VAR3.VAR10);
+    FUN3(&VAR2->VAR8[VAR11], &VAR3.VAR12);
+    FUN3(&VAR2->VAR8[VAR13], &VAR3.VAR14);
+    FUN3(&VAR2->VAR8[VAR15], &VAR3.VAR16);
+    FUN3(&VAR2->VAR8[VAR17], &VAR3.VAR18);
+    FUN3(&VAR2->VAR8[VAR19], &VAR3.VAR20);
+    FUN3(&VAR2->VAR21, &VAR3.VAR21);
+    FUN3(&VAR2->VAR22, &VAR3.VAR22);
+    VAR2->VAR23.VAR24 = VAR3.VAR23.VAR24;
+    VAR2->VAR23.VAR25 = VAR3.VAR23.VAR25;
+    VAR2->VAR26.VAR24 = VAR3.VAR26.VAR24;
+    VAR2->VAR26.VAR25 = VAR3.VAR26.VAR25;
+    VAR2->VAR27[0] = VAR3.VAR28;
+    VAR2->VAR27[2] = VAR3.VAR29;
+    VAR2->VAR27[3] = VAR3.VAR30;
+    VAR2->VAR27[4] = VAR3.VAR31;
+    FUN4(VAR2, VAR3.VAR32);
+    VAR2->VAR33 = VAR3.VAR33; VAR34 | VAR35 | VAR36 | VAR37 | VAR38 | VAR39 | VAR40 | VAR41 | VAR42 | VAR43 | VAR44 | VAR45 | VAR46 | VAR47 ) VAR4 = ( VAR2 -> VAR8 [ VAR9 ] . VAR48 >> VAR49 ) & VAR34 ;
+    VAR4 |= (VAR2->VAR27[0] & VAR50) << (VAR51 - VAR52);
+    VAR4 |= (VAR2->VAR27[0] << (VAR53 - VAR54)) & (VAR36 | VAR37 | VAR38);
+    VAR4 |= (VAR2->VAR55 & (VAR39 | VAR40 | VAR41));
+    VAR4 |= (VAR2->VAR27[4] & VAR56) << (VAR57 - VAR58);
+    if (VAR2->VAR33 & VAR59)
+    {
+        VAR4 |= VAR43;
+    }
+    if ((VAR4 & VAR43) && (VAR2->VAR8[VAR9].VAR48 & VAR60))
+    {
+        VAR4 |= VAR44 | VAR45 | VAR46;
+    }
+    else
+    {
+        VAR4 |= (VAR2->VAR8[VAR9].VAR48 & VAR61) >> (VAR62 - VAR63);
+        VAR4 |= (VAR2->VAR8[VAR19].VAR48 & VAR61) >> (VAR62 - VAR64);
+        if (!(VAR2->VAR27[0] & VAR50) || (VAR2->VAR55 & VAR65) || !(VAR4 & VAR44))
+        {
+            VAR4 |= VAR47;
+        }
+        else
+        {
+            VAR4 |= ((VAR2->VAR8[VAR11].VAR25 | VAR2->VAR8[VAR13].VAR25 | VAR2->VAR8[VAR19].VAR25) != 0) << VAR66;
+        }
+    }
+    VAR2->VAR4 = (VAR2->VAR4 & VAR67) | VAR4;
+    VAR2->VAR68 = VAR2->VAR55 & (VAR69 | VAR70 | VAR71 | VAR72 | VAR73 | VAR74);
+    VAR2->VAR75 = 1 - (2 * ((VAR2->VAR55 >> 10) & 1));
+    VAR2->VAR76 = VAR77;
+    VAR2->VAR55 &= ~(VAR78 | VAR69 | VAR70 | VAR71 | VAR72 | VAR73 | VAR74);
+    return 0;
+}

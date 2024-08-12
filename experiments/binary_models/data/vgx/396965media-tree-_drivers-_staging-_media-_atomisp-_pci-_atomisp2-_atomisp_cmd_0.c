@@ -1,0 +1,118 @@
+int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+struct VAR5 *VAR6,
+bool VAR7)
+{
+struct VAR8 *VAR9;
+struct VAR8 *VAR10;
+struct atomisp_css_dvs_6axis_config VAR11;
+struct VAR12 *VAR13 =
+VAR2->VAR14[VAR15].VAR13;
+struct VAR16 *VAR17 =
+FUN2(&VAR2->VAR18.VAR19);
+int VAR20 = -VAR21;
+
+if (VAR13 == NULL) {
+FUN3(VAR2->VAR22->VAR23, "", VAR24);
+return -VAR25;
+}
+
+if (!VAR4 || !VAR17)
+return 0;
+
+if (!VAR17->VAR26)
+return 0;
+
+if (!VAR7 && VAR6->VAR27.VAR9)
+return 0;
+
+
+VAR10 = VAR6->VAR28;
+VAR9 = VAR10;
+
+if (FUN4(&VAR11, VAR4,
+sizeof(struct VAR3),
+VAR7)) {
+FUN3(VAR2->VAR22->VAR23, "");
+return -VAR21;
+}
+
+if (VAR10 &&
+(VAR10->VAR29 != VAR4->VAR29 ||
+VAR10->VAR30 != VAR4->VAR30 ||
+VAR10->VAR31 != VAR4->VAR31 ||
+VAR10->VAR32 != VAR4->VAR32)) {
+(VAR10->VAR29 != VAR11.VAR29 ||
+VAR10->VAR30 != VAR11.VAR30 ||
+VAR10->VAR31 != VAR11.VAR31 ||
+VAR10->VAR32 != VAR11.VAR32)) {
+FUN5(VAR6->VAR28);
+VAR6->VAR28 = NULL;
+
+VAR9 = FUN6(VAR13);
+if (!VAR9)
+return -VAR33;
+} else if (!VAR9) {
+VAR9 = FUN6(VAR13);
+if (!VAR9)
+return -VAR33;
+}
+
+VAR9->VAR34 = VAR4->VAR34;
+VAR9->VAR34 = VAR11.VAR34;
+
+if (FUN4(VAR9->VAR35,
+VAR4->VAR35,
+VAR4->VAR29 *
+VAR4->VAR30 *
+sizeof(*VAR4->VAR35),
+VAR11.VAR35,
+VAR11.VAR29 *
+VAR11.VAR30 *
+sizeof(*VAR9->VAR35),
+VAR7))
+goto VAR36;
+if (FUN4(VAR9->VAR37,
+VAR4->VAR37,
+VAR4->VAR29 *
+VAR4->VAR30 *
+sizeof(*VAR4->VAR37),
+VAR11.VAR37,
+VAR11.VAR29 *
+VAR11.VAR30 *
+sizeof(*VAR9->VAR37),
+VAR7))
+goto VAR36;
+if (FUN4(VAR9->VAR38,
+VAR4->VAR38,
+VAR4->VAR31 *
+VAR4->VAR32 *
+sizeof(*VAR4->VAR38),
+VAR11.VAR38,
+VAR11.VAR31 *
+VAR11.VAR32 *
+sizeof(*VAR9->VAR38),
+VAR7))
+goto VAR36;
+if (FUN4(VAR9->VAR39,
+VAR4->VAR39,
+VAR4->VAR31 *
+VAR4->VAR32 *
+sizeof(*VAR4->VAR39),
+VAR11.VAR39,
+VAR11.VAR31 *
+VAR11.VAR32 *
+sizeof(*VAR9->VAR39),
+VAR7))
+goto VAR36;
+
+VAR6->VAR28 = VAR9;
+VAR6->VAR27.VAR9 =
+(struct VAR3 *) VAR9;
+return 0;
+
+VAR36:
+if (VAR9)
+FUN5(VAR9);
+return VAR20;
+}

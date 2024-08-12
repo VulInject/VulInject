@@ -1,0 +1,96 @@
+static struct VAR1 *
+FUN1(struct VAR2 *VAR3, u16 VAR4,
+enum mlx5_flow_namespace_type VAR5,
+bool VAR6)
+{
+struct VAR7 *VAR8 = NULL;
+struct VAR1 *VAR9 = NULL;
+int VAR10 = 0;
+bool VAR11;
+u32 VAR12 = 0;
+int VAR13;
+
+if (VAR6)
+VAR13 = VAR14;
+else
+VAR13 = FUN2(VAR4, false);
+
+VAR11 = FUN3(VAR3->VAR15) !=
+VAR16;
+switch (VAR5) {
+case VAR17:
+VAR10 = FUN4(
+FUN5(VAR3->VAR15, VAR18));
+if (FUN5(VAR3->VAR15, VAR19) && !VAR11)
+VAR12 |= VAR20;
+if (FUN5(VAR3->VAR15,
+VAR21) &&
+!VAR11)
+VAR12 |= VAR22;
+break;
+case VAR23:
+VAR10 = FUN4(
+FUN6(VAR3->VAR15, VAR18));
+if (FUN6(VAR3->VAR15, VAR24) &&
+!VAR11)
+VAR12 |= VAR22;
+break;
+case VAR25:
+VAR10 = FUN4(
+FUN7(VAR3->VAR15, VAR18));
+if (FUN7(VAR3->VAR15, VAR19) && VAR11)
+VAR12 |= VAR20;
+if (FUN7(VAR3->VAR15,
+VAR21) &&
+VAR11)
+VAR12 |= VAR22;
+VAR13 = VAR4;
+break;
+case VAR26:
+VAR10 = FUN4(
+FUN8(VAR3->VAR15, VAR18));
+VAR13 = VAR4;
+break;
+case VAR27:
+VAR10 = FUN4(
+FUN9(VAR3->VAR15, VAR18));
+VAR13 = VAR4;
+break;
+default:
+break;
+}
+
+VAR10 = FUN10(int, VAR10, VAR28);
+
+VAR8 = FUN11(VAR3->VAR15, VAR5);
+if (!VAR8)
+return FUN12(-VAR29);
+
+switch (VAR5) {
+case VAR17:
+VAR9 = &VAR3->VAR30->VAR31[VAR13];
+break;
+case VAR23:
+VAR9 = &VAR3->VAR30->VAR32[VAR13];
+break;
+case VAR25:
+VAR9 = &VAR3->VAR30->VAR33[VAR13];
+break;
+case VAR26:
+VAR9 = &VAR3->VAR30->VAR34[VAR13];
+break;
+case VAR27:
+VAR9 = &VAR3->VAR30->VAR35[VAR13];
+break;
+default: return FUN12(-VAR36);
+}
+
+if (!VAR9)
+return FUN12(-VAR36);
+
+if (VAR9->VAR37)
+return VAR9;
+
+return FUN13(VAR3, VAR8, VAR9, VAR13, VAR10,
+VAR38, VAR12);
+}

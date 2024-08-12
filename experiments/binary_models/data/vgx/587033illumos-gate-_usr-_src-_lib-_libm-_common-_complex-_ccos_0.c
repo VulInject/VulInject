@@ -1,0 +1,9 @@
+FUN1(dcomplex VAR1) {
+double VAR2, VAR3;
+
+VAR2 = FUN2(VAR1);
+VAR3 = FUN3(VAR1);
+FUN2(VAR1) = VAR3;
+FUN3(VAR1) = -VAR2;
+return (FUN4(VAR1));
+}

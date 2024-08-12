@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * , VAR2 ) static int FUN2 ( struct VAR1 * , const char * ) static int FUN3 ( const char * VAR3 , size_t VAR4 ) { return ( 0 ) ; }

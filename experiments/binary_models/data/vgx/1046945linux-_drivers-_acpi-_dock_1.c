@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( acpi_handle VAR2 ) { struct VAR1 * VAR3 ; FUN2 ( , , ) return NULL ; }

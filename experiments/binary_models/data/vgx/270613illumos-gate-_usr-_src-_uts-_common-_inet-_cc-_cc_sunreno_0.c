@@ -1,0 +1,24 @@
+static void
+FUN1(struct VAR1 *VAR2, uint16_t VAR3)
+{
+uint32_t VAR4;
+uint32_t VAR5;
+int VAR6;
+
+if (VAR3 == VAR7 && !FUN2(VAR2->VAR8)) {
+VAR6 = FUN3(VAR2, VAR9);
+VAR5 = FUN3(VAR2, VAR10);
+VAR4 = VAR6;
+
+if (VAR5 >= FUN3(VAR2, VAR11)) {
+
+if (FUN3(VAR2, VAR12) <= 0) {
+FUN3(VAR2, VAR12) = VAR5 + VAR4;
+} else {
+FUN3(VAR2, VAR12) -= VAR4;
+VAR4 = 0;
+}
+}
+FUN3(VAR2, VAR10) = FUN4(VAR5 + VAR4, FUN3(VAR2, VAR13));
+}
+}

@@ -1,0 +1,1 @@
+extern bool VAR1 ; extern bool VAR2 ; extern bool VAR3 ; extern bool VAR4 ; extern bool VAR5 ; extern bool VAR6 ; FUN1 ( ) { int VAR7 ; char * VAR8 ; }

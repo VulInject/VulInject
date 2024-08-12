@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( void ) { VAR1 * VAR2 = ( VAR1 * ) calloc ( 1 , sizeof ( VAR1 ) ) ; if ( VAR2 == NULL ) { return ( NULL ) ; } VAR2 -> VAR3 = ( VAR4 * ) calloc ( 1 , sizeof ( VAR4 ) ) ; pthread_mutex_init ( VAR2 -> VAR3 ) ; FUN2 ( VAR2 , VAR5 , NULL , VAR6 ) ; VAR2 -> VAR7 . VAR8 = VAR9 ; VAR2 -> VAR10 = VAR11 ; VAR2 -> VAR12 = - 1 ; return ( VAR2 ) ; }

@@ -1,0 +1,1 @@
+static const VAR1 * FUN1 ( VAR2 * VAR3 , mrb_value VAR4 ) { const VAR1 * VAR5 = VAR3 -> VAR6 -> VAR5 ; size_t VAR7 = VAR5 - VAR3 -> VAR6 -> VAR8 ; VAR5 -- ; for ( ; VAR7 > 0 ; VAR7 -- , VAR5 -- ) { const VAR9 * VAR10 = VAR5 -> VAR11 + 1 ; } return NULL ; }

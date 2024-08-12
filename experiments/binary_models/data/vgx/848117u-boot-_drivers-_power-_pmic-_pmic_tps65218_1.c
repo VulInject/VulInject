@@ -1,0 +1,1 @@
+int FUN1 ( void ) { if ( FUN2 ( VAR1 , VAR2 , 0xfe , VAR3 ) ) { return - VAR4 ; } if ( FUN2 ( VAR1 , VAR2 , 0xa3 , VAR3 ) ) { return - VAR4 ; } return 0 ; }

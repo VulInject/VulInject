@@ -1,0 +1,1 @@
+VAR1 FUN1(VAR2)(uint32_t VAR3) { return FUN2(VAR3); }

@@ -1,0 +1,31 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 =
+FUN2(VAR2, struct VAR3, VAR2);
+struct VAR5 *VAR6 = VAR4->VAR6;
+const struct VAR7 *VAR8;
+struct VAR9 *VAR10;
+const enum sknetlink_groups VAR11 = FUN3(VAR6);
+int VAR12 = -1;
+
+FUN4(VAR11 == VAR13);
+
+VAR10 = FUN5(FUN6(), VAR14);
+if (!VAR10)
+goto VAR15;
+
+FUN7(&VAR16);
+VAR8 = VAR17[VAR6->VAR18];
+if (VAR8 && VAR8->VAR19)
+VAR12 = VAR8->FUN8(VAR10, VAR6);
+FUN9(&VAR16);
+
+if (!VAR12)
+FUN10(FUN11(VAR6)->VAR20, VAR10, 0, VAR11,
+VAR14);
+else
+FUN12(VAR10);
+VAR15:
+FUN13(VAR6);
+FUN14(VAR4);
+}

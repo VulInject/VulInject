@@ -1,0 +1,95 @@
+void
+FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4, int VAR5,
+struct VAR6 *VAR7)
+{
+struct VAR8	*VAR9;
+struct sockaddr_in	 VAR10;
+
+if (VAR4->VAR11 > sizeof VAR4->VAR12) {
+FUN2("");
+return;
+}
+
+
+if (VAR4->VAR13 == VAR14) {
+
+if (VAR4->VAR15.VAR16 !=
+VAR17->VAR18.VAR16)
+return;
+
+FUN3(&VAR10, sizeof(VAR10));
+if (!(VAR4->VAR19 & FUN4(VAR20))) {
+VAR10.VAR21 = VAR4->VAR22;
+VAR10.VAR23 = FUN4(VAR24);
+} else {
+VAR10.VAR21.VAR16 = FUN5(VAR25);
+VAR10.VAR23 = FUN4(VAR24);
+}
+VAR10.VAR26 = VAR27;
+VAR10.VAR28 = sizeof VAR10;
+*FUN6(&VAR7->VAR29) = VAR10;
+
+
+if (!(VAR4->VAR19 & FUN4(VAR20))) {
+VAR7->VAR30 = VAR4->VAR11;
+if (VAR7->VAR30 > VAR31)
+VAR7->VAR30 = VAR31;
+memcpy(VAR7->VAR32, VAR4->VAR12, VAR7->VAR30);
+VAR7->VAR33 = VAR4->VAR34;
+} else {
+memset(VAR7->VAR32, 0xff, sizeof(VAR7->VAR32));
+}
+
+FUN7(VAR7, VAR17, VAR4->VAR13);
+if ((VAR5 = FUN8(VAR7, VAR4,
+VAR5)) == -1) {
+FUN2(""
+"");
+return;
+}
+
+
+VAR4->VAR15.VAR16 = 0x0;
+
+FUN6(&VAR7->VAR35)->VAR21 = VAR17->VAR18;
+if (FUN9(VAR17, VAR4, VAR5, VAR7) != -1)
+FUN10("",
+FUN11(VAR4->VAR34, VAR4->VAR11,
+VAR4->VAR12), FUN12(VAR10.VAR21));
+return;
+}
+
+if (VAR2 == NULL) {
+FUN2("");
+return;
+}
+
+if (VAR4->VAR36 > 16) {
+FUN2("",
+VAR4->VAR36);
+return;
+}
+VAR4->VAR36++;
+
+
+if (!VAR4->VAR15.VAR16)
+VAR4->VAR15 = VAR2->VAR18;
+
+FUN7(VAR7, VAR17, VAR4->VAR13);
+if ((VAR5 = FUN13(VAR7, VAR4, VAR5)) == -1) {
+FUN2(""
+"");
+return;
+}
+
+
+for (VAR9 = VAR37; VAR9; VAR9 = VAR9->VAR38) {
+if (send(VAR9->VAR39, VAR4, VAR5, 0) != -1) {
+FUN10("",
+FUN11(VAR4->VAR34, VAR4->VAR11,
+VAR4->VAR12),
+FUN12(FUN6(&VAR9->VAR10)->VAR21));
+}
+}
+
+}

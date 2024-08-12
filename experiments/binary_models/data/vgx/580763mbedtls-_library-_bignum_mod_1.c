@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 ) { if ( VAR2 == NULL ) { return ; } VAR2 -> VAR3 = NULL ; VAR2 -> VAR4 = 0 ; VAR2 -> VAR5 = VAR6 ; }

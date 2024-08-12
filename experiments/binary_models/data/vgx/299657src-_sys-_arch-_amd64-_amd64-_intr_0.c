@@ -1,0 +1,55 @@
+void
+FUN1(struct VAR1 *VAR2)
+{
+int VAR3, VAR4;
+u_int64_t VAR5, VAR6[VAR7];
+struct VAR8 *VAR9;
+
+
+VAR5 = 0xffffffffffffffffUL;
+for (VAR3 = 0; VAR3 < VAR7; VAR3++) {
+int VAR10 = 0;
+
+if (VAR2->VAR11[VAR3] == NULL) {
+VAR6[VAR3] = 0;
+continue;
+}
+for (VAR9 = VAR2->VAR11[VAR3]->VAR12; VAR9; VAR9 = VAR9->VAR13)
+VAR10 |= (1 << VAR9->VAR14);
+VAR6[VAR3] = VAR10;
+if (VAR10)
+VAR5 &= ~(1UL << VAR3);
+}
+
+
+for (VAR4 = 0; VAR4 < VAR15; VAR4++) {
+u_int64_t VAR16 = 0;
+for (VAR3 = 0; VAR3 < VAR7; VAR3++)
+if (VAR6[VAR3] & (1 << VAR4))
+VAR16 |= (1UL << VAR3);
+VAR2->VAR17[VAR4] = VAR16 | VAR5;
+}
+
+for (VAR4 = 0; VAR4< (VAR15 - 1); VAR4++)
+VAR2->VAR17[VAR4 + 1] |= VAR2->VAR17[VAR4];
+
+for (VAR3 = 0; VAR3 < VAR7; VAR3++) {
+int VAR18 = VAR19;
+int VAR20 = VAR21;
+
+if (VAR2->VAR11[VAR3] == NULL)
+continue;
+for (VAR9 = VAR2->VAR11[VAR3]->VAR12; VAR9;
+VAR9 = VAR9->VAR13) {
+if (VAR9->VAR14 < VAR20)
+VAR20 = VAR9->VAR14;
+if (VAR9->VAR14 > VAR18)
+VAR18 = VAR9->VAR14;
+}
+VAR2->VAR11[VAR3]->VAR22 = VAR18;
+VAR2->VAR11[VAR3]->VAR23 = VAR20;
+}
+
+for (VAR4 = 0; VAR4 < VAR15; VAR4++)
+VAR2->VAR24[VAR4] = ~VAR2->VAR17[VAR4];
+}

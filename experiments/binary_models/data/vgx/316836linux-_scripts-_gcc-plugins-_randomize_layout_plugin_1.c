@@ -1,0 +1,1 @@
+static inline unsigned int FUN1 ( const unsigned char * VAR1 ) { cfs_time_t VAR2 = 0 ; unsigned int VAR3 = strlen ( ( const char * ) VAR1 ) ; while ( VAR3 -- ) { VAR2 = FUN2 ( * VAR1 ++ , VAR2 ) ; } return ( unsigned int ) VAR2 ; }

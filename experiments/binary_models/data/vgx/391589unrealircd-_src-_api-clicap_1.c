@@ -1,0 +1,1 @@
+long FUN1 ( void ) { long VAR1 ; VAR2 * VAR3 ; for ( VAR1 = 2 ; VAR1 ; VAR1 <<= 1 ) { int VAR4 = 0 ; for ( VAR3 = VAR5 ; VAR3 ; VAR3 = VAR3 -> VAR6 ) { if ( VAR3 -> VAR7 == VAR1 ) { VAR4 = 1 ; break ; } } if ( ! VAR4 ) { return VAR1 ; } } return 0 ; }

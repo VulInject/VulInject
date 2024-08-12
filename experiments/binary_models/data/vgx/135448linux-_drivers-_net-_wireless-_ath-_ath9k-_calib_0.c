@@ -1,0 +1,96 @@
+int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = NULL;
+unsigned VAR7, VAR8;
+u8 VAR9 = (VAR2->VAR10 << 3) | VAR2->VAR10;
+struct VAR11 *VAR12 = FUN2(VAR2);
+s16 VAR13 = FUN3(VAR2, VAR4)->VAR14;
+u32 VAR15 = FUN4(VAR2, FUN5(VAR2));
+
+if (VAR2->VAR16)
+VAR6 = VAR2->VAR16->VAR17;
+
+FUN6(VAR2);
+for (VAR7 = 0; VAR7 < VAR18; VAR7++) {
+if (VAR9 & (1 << VAR7)) {
+s16 VAR19;
+
+if ((VAR7 >= VAR20) && !FUN7(VAR4))
+continue;
+
+if (VAR2->VAR21)
+VAR19 = VAR2->VAR21;
+else if (VAR6)
+VAR19 = VAR6[VAR7].VAR22;
+else {
+
+VAR19 =
+FUN3(VAR2, VAR4)->VAR23[VAR7];
+if (VAR19 > -60 || VAR19 < -127)
+VAR19 = VAR13;
+}
+
+FUN8(VAR2, VAR2->VAR24[VAR7],
+(((VAR25) VAR19 << 1) & 0x1ff), 0x1ff);
+}
+}
+
+
+if (VAR15 & VAR26) {
+FUN9(VAR2, FUN5(VAR2), VAR26);
+FUN10(VAR2);
+FUN6(VAR2);
+}
+
+
+FUN9(VAR2, FUN5(VAR2),
+VAR27);
+FUN9(VAR2, FUN5(VAR2),
+VAR28);
+FUN11(VAR2, FUN5(VAR2), VAR26);
+FUN10(VAR2);
+
+
+for (VAR8 = 0; VAR8 < 22200; VAR8++) {
+if ((FUN4(VAR2, FUN5(VAR2)) &
+VAR26) == 0)
+break;
+FUN12(10);
+}
+
+
+if (VAR15 & VAR26) {
+FUN6(VAR2);
+if (VAR15 & VAR27)
+FUN11(VAR2, FUN5(VAR2),
+VAR27);
+if (VAR15 & VAR28)
+FUN11(VAR2, FUN5(VAR2),
+VAR28);
+FUN11(VAR2, FUN5(VAR2), VAR26);
+FUN10(VAR2);
+}
+
+
+if (VAR8 == 22200) {
+FUN13(VAR12, VAR29,
+"",
+FUN4(VAR2, FUN5(VAR2)));
+return -VAR30;
+}
+
+
+FUN6(VAR2);
+for (VAR7 = 0; VAR7 < VAR18; VAR7++) {
+if (VAR9 & (1 << VAR7)) {
+if ((VAR7 >= VAR20) && !FUN7(VAR4))
+continue;
+
+FUN8(VAR2, VAR2->VAR24[VAR7],
+(((VAR25) (-50) << 1) & 0x1ff), 0x1ff);
+}
+}
+FUN10(VAR2);
+
+return 0;
+}

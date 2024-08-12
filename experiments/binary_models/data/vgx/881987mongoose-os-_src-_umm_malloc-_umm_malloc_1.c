@@ -1,0 +1,1 @@
+void * FUN1 ( size_t VAR1 ) { void * VAR2 ; if ( ! FUN2 ( ) ) { return NULL ; } if ( ! FUN3 ( ) ) { return NULL ; } if ( FUN4 ( VAR1 ) >= VAR3 - VAR1 ) { return VAR4 ; } VAR1 += FUN4 ( VAR1 ) ; VAR2 = FUN5 ( VAR1 ) ; VAR2 = FUN6 ( VAR2 , VAR1 ) ; FUN7 ( ) ; return VAR2 ; }

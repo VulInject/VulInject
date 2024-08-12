@@ -1,0 +1,45 @@
+FUN1 (mp_ptr VAR1, mp_srcptr VAR2, mp_srcptr VAR3,
+mp_ptr VAR4, mp_srcptr VAR5,
+mp_size_t VAR6, mp_limb_t VAR7)
+{
+mp_limb_t VAR8, VAR9, VAR10, VAR11, VAR12, VAR13, VAR14, VAR15, VAR16, VAR17;
+
+FUN2 (VAR6 >= 1);
+FUN2 (FUN3 (VAR1, VAR2, VAR6));
+FUN2 (FUN3 (VAR1, VAR3, VAR6));
+FUN2 (! FUN4 (VAR1, VAR6, VAR5, VAR6));
+FUN2 (! FUN4 (VAR4, 2, VAR2, VAR6));
+FUN2 (! FUN4 (VAR4, 2, VAR3, VAR6));
+FUN2 (! FUN4 (VAR4, 2, VAR5, VAR6));
+FUN2 (! FUN4 (VAR4, 2, VAR1, VAR6));
+
+VAR5 += VAR6 - 1;
+VAR8 = VAR9 = 0;
+
+do
+{
+VAR12 = *VAR5--;
+VAR10 = *VAR2++;
+VAR11 = *VAR3++;
+
+
+FUN5 (VAR16, VAR15, VAR10, VAR11);
+FUN5 (VAR17, VAR14, VAR15, VAR7);
+VAR7 = VAR16 | VAR17;
+*VAR1++ = VAR14;
+
+
+VAR13 = (-VAR7) & VAR12;
+VAR8 += VAR13;
+VAR9 += VAR8 < VAR13;
+}
+while (--VAR6);
+
+VAR9 = (VAR9 << VAR18) + (VAR8 >> VAR19);
+VAR8 &= VAR20;
+
+VAR4[0] = VAR8;
+VAR4[1] = VAR9;
+
+return VAR7;
+}

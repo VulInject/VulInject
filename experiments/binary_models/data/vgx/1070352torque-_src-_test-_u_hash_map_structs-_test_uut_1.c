@@ -1,0 +1,1 @@
+FUN1 ( ) { int VAR1 = VAR2 ; VAR3 * VAR4 = new FUN2 ( ) ; char * VAR5 ; char * VAR6 ; FUN3 ( ) ; FUN4 ( & VAR5 , "" ) ; FUN4 ( & VAR6 , "" ) ; FUN5 ( VAR4 , VAR5 , VAR6 , VAR7 , VAR8 ) ; VAR1 = FUN6 ( VAR4 ) ; FUN7 ( VAR1 == 1 , "" , VAR1 ) ; }

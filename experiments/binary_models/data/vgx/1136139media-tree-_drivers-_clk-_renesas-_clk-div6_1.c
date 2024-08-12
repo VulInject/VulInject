@@ -1,0 +1,1 @@
+static u8 FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR2 ) ; unsigned int VAR5 ; u8 VAR6 ; VAR6 = ( FUN3 ( VAR4 -> VAR7 ) >> VAR4 -> VAR8 ) & ( FUN4 ( VAR4 -> VAR9 ) - 1 ) ; for ( VAR5 = 0 ; VAR5 < FUN5 ( VAR2 ) ; VAR5 ++ ) { if ( VAR4 -> VAR10 [ VAR5 ] == VAR6 ) { return VAR5 ; } } FUN6 ( "" , VAR11 , FUN7 ( VAR2 ) , VAR6 ) ; return 0 ; }

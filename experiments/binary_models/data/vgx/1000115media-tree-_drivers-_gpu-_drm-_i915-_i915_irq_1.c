@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR2 -> VAR5 . VAR6 ) ; cfs_time_t VAR7 ; int VAR8 ; FUN3 ( & VAR4 -> VAR9 . VAR10 , VAR7 ) ; VAR8 = FUN4 ( VAR2 ) ; FUN5 ( & VAR4 -> VAR9 . VAR10 , VAR7 ) ; return VAR8 ; }

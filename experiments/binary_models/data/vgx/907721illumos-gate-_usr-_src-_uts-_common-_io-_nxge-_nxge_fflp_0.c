@@ -1,0 +1,74 @@
+static VAR1 FUN1(VAR2);
+static VAR1 FUN2(VAR2);
+static int FUN3(VAR2, VAR3 *);
+static void FUN4(VAR2, VAR4 *, VAR5 *);
+static void FUN5(VAR2, VAR4 *, VAR5 *);
+static void FUN6(VAR2, VAR4 *, VAR5 *);
+static void FUN7(VAR2, VAR4 *,
+VAR5 *);
+static void FUN8(VAR2, VAR4 *,
+VAR5 *);
+static void FUN9(VAR2, VAR4 *,
+VAR5 *);
+static VAR6 FUN10(VAR2, VAR6, VAR7);
+static VAR6 FUN11(VAR2, VAR6, VAR7);
+static VAR8 FUN12(VAR2, VAR8);
+static VAR9 FUN13(VAR9);
+static VAR6 FUN14(VAR6);
+static VAR10 FUN15(VAR2, VAR7,
+VAR11 *);
+static VAR12 FUN16(VAR2, VAR6, int *);
+
+
+VAR1 FUN17(VAR2, VAR8);
+VAR1 FUN18(VAR2);
+VAR1 FUN19(VAR2, VAR3 *);
+static VAR1 FUN20(VAR2);
+VAR1 FUN21(VAR2, VAR3 *);
+VAR1 FUN22(VAR2, VAR3 *);
+VAR1 FUN23(VAR2, VAR3 *,
+VAR9 *, VAR8 *);
+int FUN24(VAR2);
+void FUN25(VAR2, VAR13 *);
+void FUN26(VAR2, VAR3 *);
+void FUN27(VAR2, VAR9);
+void FUN28(VAR2, VAR11 *, VAR6 *);
+void FUN29(VAR2, VAR11 *, VAR6);
+void FUN30(VAR2, VAR6);
+void FUN31(VAR2, VAR11 *, VAR6);
+void FUN32(VAR2, VAR6, VAR6);
+void FUN33(VAR2, VAR6, VAR6 *);
+
+
+VAR1
+FUN34(p_nxge_t VAR14, uint32_t VAR15)
+{
+tcam_entry_t VAR16;
+uint64_t VAR17 = 0;
+npi_handle_t VAR18;
+npi_status_t VAR19;
+
+VAR18 = VAR14->VAR20;
+
+FUN35((char *)&VAR16, sizeof (struct VAR21));
+VAR19 = FUN36(VAR18, (VAR22)VAR15,
+(struct VAR21 *)&VAR16);
+if (VAR19 & VAR23) {
+FUN37((VAR14, VAR24,
+""
+"", VAR15));
+return (VAR25);
+}
+VAR19 = FUN38(VAR18,
+(VAR22)VAR15, &VAR17);
+
+FUN37((VAR14, VAR24, ""
+""
+""
+"", VAR15,
+VAR16.VAR26, VAR16.VAR27,
+VAR16.VAR28, VAR16.VAR29,
+VAR16.VAR30, VAR16.VAR31,
+VAR16.VAR32, VAR16.VAR33, VAR17));
+return (VAR34);
+}

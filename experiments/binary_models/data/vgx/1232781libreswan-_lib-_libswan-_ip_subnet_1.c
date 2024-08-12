@@ -1,0 +1,1 @@
+bool FUN1 ( const ip_address VAR1 , const ip_subnet VAR2 ) { const struct VAR3 * VAR4 = FUN2 ( & VAR1 ) ; if ( FUN3 ( & VAR2 ) != VAR4 ) { return false ; } struct ip_bytes VAR5 = FUN4 ( VAR4 , VAR1 . VAR6 , & VAR7 , & VAR8 , VAR2 . VAR9 ) ; return FUN5 ( VAR5 , VAR2 . VAR6 ) ; }

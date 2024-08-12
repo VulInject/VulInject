@@ -1,0 +1,52 @@
+static int
+FUN1(struct VAR1 *VAR2, const struct VAR3 *VAR4,
+const struct VAR3 *VAR5, const char *VAR6)
+{
+char VAR7[VAR8] = "", VAR9[16];
+struct VAR10 *VAR11;
+int VAR12, VAR13, VAR14, VAR15, VAR16;
+
+
+VAR11 = FUN2(VAR2, "" VAR17 "", &VAR18,
+FUN3(FUN4(VAR2)) ? "" : FUN4(VAR2), VAR6);
+
+for (VAR12 = 0, VAR13 = 0; VAR12 < VAR19; VAR12++) {
+VAR15 = VAR20[VAR12].VAR15;
+
+if (!(VAR5 && FUN5(VAR5, VAR20[VAR12].VAR21))
+&& !(VAR4 && FUN5(VAR4, VAR20[VAR12].VAR21))
+&& (VAR5 || VAR4 || (VAR15 & VAR22)
+|| (VAR20[VAR12].VAR23 && (!FUN6(VAR20[VAR12].VAR23)))))
+continue;
+
+
+VAR16 = 0;
+if (VAR13)
+VAR9[VAR16++] = '';
+if (VAR5 && FUN5(VAR5, VAR20[VAR12].VAR21))
+VAR9[VAR16++] = '';
+else {
+if (VAR15 & VAR24)
+VAR9[VAR16++] = '';
+if (VAR15 & VAR25)
+VAR9[VAR16++] = '';
+}
+VAR9[VAR16] = '';
+
+VAR14 = VAR20[VAR12].VAR26 + VAR16; 
+if (FUN7(VAR11) < VAR13 + VAR14 + 2) { 
+FUN8(&VAR18, VAR27, VAR2, "",
+FUN3(FUN4(VAR2)) ? "" : FUN4(VAR2),  VAR6, VAR7);
+VAR7[(VAR13 = 0)] = ''; 
+}
+
+VAR13 += FUN9(0, VAR7 + VAR13, sizeof(VAR7) - VAR13, "",
+VAR9, VAR20[VAR12].VAR28);
+}
+
+FUN10(0, VAR11, "", VAR7); 
+FUN11(VAR2, VAR11, 0); 
+FUN12(VAR11); 
+
+return 0; 
+}

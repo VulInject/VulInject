@@ -1,0 +1,17 @@
+static int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+VAR4->VAR5 = FUN2(VAR2, NULL, VAR6,
+VAR7);
+if (FUN3(VAR4->VAR5))
+return FUN4(VAR4->VAR5);
+
+VAR4->VAR8 = FUN2(VAR2, NULL, VAR9,
+VAR10);
+if (FUN3(VAR4->VAR8))
+return FUN4(VAR4->VAR8);
+
+VAR4->VAR11 = FUN5(VAR2, NULL, VAR12,
+VAR7);
+return FUN6(VAR4->VAR11);
+}

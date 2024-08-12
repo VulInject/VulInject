@@ -1,0 +1,38 @@
+extern void FUN1(int VAR1);
+
+
+static int FUN2(void)
+{
+struct event VAR2;
+VAR3 *VAR4;
+
+
+FUN3(FUN4());
+
+
+FUN5(&VAR2, 0x500fa);
+VAR2.VAR5.VAR6 = VAR7;
+FUN6(FUN7(&VAR2));
+VAR2.VAR8 = FUN8(VAR2.VAR9, 1);
+
+FUN6(FUN9(&VAR2));
+
+
+FUN1(10000);
+
+FUN6(FUN10(&VAR2));
+
+
+FUN6(!FUN11(VAR2.VAR8));
+
+VAR4 = FUN12(&VAR2, VAR2.VAR8);
+
+
+FUN6(!VAR4);
+
+
+FUN6(FUN13(FUN14(VAR4, ""), 5));
+
+FUN15(&VAR2);
+return 0;
+}

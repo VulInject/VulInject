@@ -1,0 +1,37 @@
+static int
+FUN1(VAR1 *VAR2, const unsigned char *VAR3,
+const unsigned char *VAR4, int VAR5)
+{
+VAR6 *VAR7 = VAR2->VAR8;
+
+if (!VAR4 && !VAR3)
+return 1;
+
+if (VAR3) {
+
+if (VAR5) {
+FUN2(VAR3, VAR2->VAR9 * 4,
+&VAR7->VAR10);
+VAR7->VAR11.VAR12 = (VAR13)VAR14;
+VAR7->VAR15 = VAR16;
+} else {
+FUN3(VAR3, VAR2->VAR9 * 4,
+&VAR7->VAR10);
+VAR7->VAR11.VAR12 = (VAR13)VAR17;
+VAR7->VAR15 = VAR18;
+}
+
+FUN2(VAR3 + VAR2->VAR9 / 2,
+VAR2->VAR9 * 4, &VAR7->VAR19);
+VAR7->VAR11.VAR20 = (VAR13)VAR14;
+
+VAR7->VAR11.VAR21 = &VAR7->VAR10;
+}
+
+if (VAR4) {
+VAR7->VAR11.VAR22 = &VAR7->VAR19;
+memcpy(VAR2->VAR4, VAR4, 16);
+}
+
+return 1;
+}

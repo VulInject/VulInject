@@ -1,0 +1,28 @@
+int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4, int VAR5, gfp_t VAR6)
+{
+struct VAR7 *VAR8 = FUN2(VAR2);
+struct VAR9 *VAR10;
+int VAR11 = 0;
+
+FUN3(&VAR8->VAR12);
+
+FUN4(VAR10, &VAR8->VAR13, VAR14)
+if (!FUN5(VAR10, VAR4, VAR5))
+goto VAR15;
+
+VAR10 = FUN6(&VAR2->VAR16->VAR17->VAR2, VAR6);
+if (!VAR10) {
+VAR11 = -VAR18;
+goto VAR15;
+}
+
+FUN7(&VAR10->VAR14, &VAR8->VAR13);
+
+
+FUN8(FUN5(VAR10, VAR4, VAR5));
+
+VAR15:
+FUN9(&VAR8->VAR12);
+
+return VAR11;
+}

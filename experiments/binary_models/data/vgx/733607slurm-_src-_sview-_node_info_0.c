@@ -1,0 +1,134 @@
+extern void FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+int VAR5 = VAR6;
+static int VAR7 = -1;
+static VAR8 *VAR9 = NULL;
+char VAR10[100];
+VAR11 *VAR12 = NULL;
+VAR13 *VAR14 = NULL;
+static VAR11 *VAR15 = NULL;
+List VAR16 = NULL;
+int VAR17 = 0, VAR18;
+VAR19 *VAR20 = NULL;
+ListIterator VAR21 = NULL;
+VAR22 *VAR23 = NULL;
+static bool VAR24 = false;
+
+if (!VAR24)
+FUN2(VAR25, VAR26,
+VAR27, VAR28);
+VAR24 = true;
+
+
+if (!VAR2 && !VAR4) {
+if (VAR15)
+FUN3(VAR15);
+VAR15 = NULL;
+goto VAR29;
+}
+
+if (VAR4)
+VAR30 = VAR4;
+if (!VAR2) {
+VAR26->VAR31 = VAR30->VAR31;
+goto VAR29;
+}
+
+if (VAR15 && VAR32) {
+FUN3(VAR15);
+VAR15 = NULL;
+
+
+}
+if ((VAR5 = FUN4(&VAR9, VAR33))
+== VAR34) {
+if (!VAR15 || VAR7 == VAR35)
+goto VAR36;
+} else if (VAR5 != VAR6) {
+if (VAR7 == VAR35)
+goto VAR37;
+VAR7 = VAR35;
+if (VAR15)
+FUN3(VAR15);
+sprintf(VAR10, "",
+FUN5(FUN6()));
+VAR12 = FUN7(VAR10);
+VAR15 = FUN8(VAR12);
+FUN9(VAR2, VAR12, 0, 1, 0, 1);
+FUN10(VAR12);
+goto VAR37;
+}
+
+VAR36:
+VAR16 = FUN11(VAR9, false);
+if (!VAR16)
+goto VAR29;
+VAR17 = 0;
+
+if (VAR15 && FUN12(VAR15) &&
+FUN13(
+FUN14(
+FUN15(VAR15)))) {
+VAR38 *VAR39 = NULL;
+
+FUN16(FUN15(VAR15),
+&VAR23, &VAR39);
+}
+if (!VAR23) {
+int VAR40 = VAR9->VAR41;
+int  *VAR42 = xmalloc(sizeof(int) * VAR40);
+bool *VAR43 = xmalloc(sizeof(bool) * VAR40);
+VAR21 = FUN17(VAR16);
+while ((VAR20 = FUN18(VAR21))) {
+VAR43[VAR17] = true;
+VAR42[VAR17] = VAR17;
+VAR17++;
+}
+FUN19(VAR21);
+FUN20(VAR44, VAR40,
+VAR42, VAR43, true, 0);
+FUN21(VAR42);
+FUN21(VAR43);
+} else {
+FUN22(FUN15(VAR15),
+VAR45, (int)VAR46, VAR44);
+FUN23(VAR23);
+}
+
+if (VAR7 == VAR35 && VAR15) {
+FUN3(VAR15);
+VAR15 = NULL;
+}
+if (!VAR15) {
+VAR14 = FUN24(VAR30,
+&VAR44);
+
+FUN25(
+FUN14(VAR14),
+VAR47);
+VAR15 = FUN8(FUN26(VAR14));
+FUN9(FUN27(VAR2),
+FUN26(VAR14),
+0, 1, 0, 1);
+
+if (VAR9->VAR41 > 1000)
+VAR18 = -1;
+else
+VAR18 = VAR48;
+FUN28(VAR14, VAR26,
+VAR27, VAR18, VAR49);
+}
+
+VAR7 = VAR50;
+
+
+FUN29(VAR16, FUN15(VAR15));
+VAR37:
+VAR32 = false;
+VAR33 = 1;
+VAR29:
+if (VAR51 && VAR51->VAR52)
+FUN30(VAR51->VAR52, NULL);
+return;
+
+}

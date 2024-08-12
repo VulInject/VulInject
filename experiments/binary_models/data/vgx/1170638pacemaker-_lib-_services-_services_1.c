@@ -1,0 +1,1 @@
+static char * FUN1 ( const char * VAR1 , const char * VAR2 , const char * VAR3 ) { char * VAR4 ; if ( FUN2 ( VAR2 , VAR5 ) == 0 ) { const char * VAR6 = FUN3 ( VAR3 ) ; if ( VAR6 ) { FUN4 ( "" , VAR6 , VAR3 , VAR1 ) ; VAR4 = strdup ( VAR6 ) ; } else { FUN5 ( "" , VAR3 , VAR1 ) ; VAR4 = strdup ( VAR7 ) ; } } else { VAR4 = strdup ( VAR2 ) ; } FUN6 ( VAR4 ) ; return VAR4 ; }

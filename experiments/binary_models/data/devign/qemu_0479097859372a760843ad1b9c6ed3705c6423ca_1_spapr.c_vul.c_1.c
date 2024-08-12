@@ -1,0 +1,31 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 **VAR6)
+{
+    VAR7 *VAR8 = FUN2(VAR2);
+    VAR5 *VAR9 = NULL;
+    VAR10 *VAR11 = FUN3(VAR4);
+    VAR12 *VAR13 = FUN4(VAR11);
+    VAR14 *VAR15 = VAR13->FUN5(VAR11);
+    uint64_t VAR16 = FUN6(VAR15);
+    uint32_t VAR17 = VAR16 / VAR18;
+    uint64_t VAR19, VAR20;
+    int VAR21;
+    VAR22 *VAR23;
+    VAR19 = FUN7(FUN8(VAR11), VAR24, &VAR9);
+    if (VAR9)
+    {
+        goto VAR25;
+    }
+    FUN9(VAR8, VAR17, VAR11);
+    VAR20 = VAR19;
+    for (VAR21 = 0; VAR21 < VAR17; VAR21++)
+    {
+        VAR23 = FUN10(VAR26, VAR20 / VAR18);
+        FUN11(VAR23);
+        FUN12(VAR23);
+        VAR20 += VAR18;
+    }
+    VAR23 = FUN10(VAR26, VAR19 / VAR18);
+    FUN13(VAR27, VAR17, FUN14(VAR23));
+VAR25:
+    FUN15(VAR6, VAR9);
+}

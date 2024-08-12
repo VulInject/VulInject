@@ -1,0 +1,40 @@
+#VAR1 ""
+char* VAR2 = "";
+char* VAR3 = "";
+char * FUN1()
+{
+    if(rand()%2 == 0)
+    {
+        return NULL;
+    }
+    else
+    {
+        return VAR2;
+    }
+}
+char * FUN2()
+{
+    if(rand()%2 == 0)
+    {
+        return NULL;
+    }
+    else
+    {
+        return VAR3;
+    }
+}
+void FUN3()
+{
+    if(FUN4())
+    {
+        if(VAR4 == NULL)
+        {
+        }
+    }
+}
+int main(int argc, char * argv[])
+{
+    srand( (unsigned)FUN5(NULL) );
+    FUN3();
+    return 0;
+}

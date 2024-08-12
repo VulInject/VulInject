@@ -1,0 +1,1 @@
+static int FUN1 ( void ) { u8 VAR1 = FUN2 ( VAR2 ) ; u8 VAR3 = FUN2 ( VAR4 ) ; if ( VAR1 & VAR5 ) { return VAR6 ; } if ( VAR3 & VAR7 ) { return VAR8 ; } return VAR9 ; }

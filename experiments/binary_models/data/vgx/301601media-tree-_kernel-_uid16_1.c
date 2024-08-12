@@ -1,0 +1,1 @@
+static int FUN1 ( old_gid_t VAR1 * VAR2 , struct VAR3 * VAR3 ) { struct VAR4 * VAR5 = FUN2 ( ) ; int VAR6 ; old_gid_t VAR7 ; kgid_t VAR8 ; for ( VAR6 = 0 ; VAR6 < VAR3 -> VAR9 ; VAR6 ++ ) { VAR8 = VAR3 -> VAR10 [ VAR6 ] ; VAR7 = FUN3 ( FUN4 ( VAR5 , VAR8 ) ) ; } return 0 ; }

@@ -1,0 +1,1 @@
+isc_result_t FUN1 ( isc_thread_t VAR1 , VAR2 * VAR3 ) { DWORD VAR4 ; DWORD VAR5 ; VAR4 = FUN2 ( VAR1 , VAR6 ) ; if ( VAR4 != VAR7 ) { return ( VAR8 ) ; } if ( VAR3 != NULL ) { * VAR3 = VAR5 ; } ( void ) FUN3 ( VAR1 ) ; return ( VAR9 ) ; }

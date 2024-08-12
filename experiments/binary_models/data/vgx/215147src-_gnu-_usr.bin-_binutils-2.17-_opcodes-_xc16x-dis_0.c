@@ -1,0 +1,99 @@
+FUN1 (bfd_vma VAR1, VAR2 *VAR3)
+{
+static VAR4 *VAR5 = 0;
+VAR4 *VAR6 = 0;
+static CGEN_CPU_DESC VAR7 = 0;
+static VAR8 *VAR9;
+static int VAR10;
+static int VAR11;
+int VAR12;
+VAR8 *VAR13;
+int VAR14;
+int VAR15 = (VAR3->VAR15 == VAR16
+? VAR17
+: VAR18);
+enum bfd_architecture VAR19;
+
+
+VAR19 = VAR3->VAR19;
+if (VAR19 == VAR20)
+VAR19 = VAR21;
+
+
+VAR14 = FUN2 (VAR3);
+VAR14 = VAR3->VAR14;
+
+{
+static VAR8 *VAR22;
+
+if (!VAR22)
+VAR22 = FUN3 (VAR23);
+VAR13 = VAR22;
+FUN4 (VAR13);
+FUN5 (VAR13, FUN6 (VAR3));
+}
+VAR13 = VAR3->VAR24;
+
+
+if (VAR7
+&& (FUN7 (VAR13, VAR9) != 0
+|| VAR14 != VAR10
+|| VAR15 != VAR11))
+{
+VAR7 = 0;
+for (VAR6 = VAR5; VAR6; VAR6 = VAR6->VAR25)
+{
+if (FUN7 (VAR6->VAR13, VAR13) == 0 &&
+VAR6->VAR14 == VAR14 &&
+VAR6->VAR15 == VAR15)
+{
+VAR7 = VAR6->VAR7;
+VAR9 = VAR7->VAR26;
+break;
+}
+}
+} 
+
+
+if (! VAR7)
+{
+const VAR27 *VAR28 = FUN8 (VAR19, VAR14);
+const char *VAR29;
+
+if (!VAR28)
+FUN9 ();
+VAR29 = VAR28->VAR30;
+
+VAR9 = FUN10 (VAR13);
+VAR10 = VAR14;
+VAR11 = VAR15;
+VAR7 = FUN11 (VAR31, VAR9,
+VAR32, VAR29,
+VAR33, VAR11,
+VAR34);
+if (!VAR7)
+FUN9 ();
+
+
+VAR6 = xmalloc (sizeof (struct VAR4));
+VAR6->VAR7 = VAR7;
+VAR6->VAR13 = VAR9;
+VAR6->VAR14 = VAR14;
+VAR6->VAR15 = VAR15;
+VAR6->VAR25 = VAR5;
+VAR5 = VAR6;
+
+FUN12 (VAR7);
+}
+
+
+
+VAR12 = FUN13 (VAR7, VAR1, VAR3);
+if (VAR12 > 0)
+return VAR12;
+if (VAR12 < 0)
+return -1;
+
+(*VAR3->VAR35) (VAR3->VAR36, VAR37);
+return VAR7->VAR38 / 8;
+}

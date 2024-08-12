@@ -1,0 +1,53 @@
+static VAR1
+FUN1(VAR2 *VAR3, VAR4 *VAR5, gint VAR6,
+gint VAR7)
+{
+gint        VAR8 = VAR6;
+gint        VAR9;
+VAR2 *VAR10;
+gint        VAR11, VAR12;
+
+FUN2(VAR3,
+VAR13,
+VAR5, VAR6,
+1,
+VAR14);
+VAR6 += 1;
+
+VAR9 = FUN3(VAR5, VAR6);
+if (VAR9 == 0xFF) { 
+
+VAR6 += 1;
+VAR9 = FUN3(VAR5, VAR6);
+}
+
+FUN2(VAR3,
+VAR15,
+VAR5, VAR6,
+1,
+VAR14);
+VAR6 += 1;
+
+if (VAR9 == VAR16) { 
+FUN2(VAR3,
+VAR17,
+VAR5, VAR6,
+1,
+VAR14);
+VAR6 += 1;
+
+if (VAR7 > (VAR6 - VAR8)) {
+VAR11 = VAR7 - (VAR6 - VAR8);
+VAR10 = FUN4(VAR3, VAR5, VAR6, VAR11,
+VAR18, NULL, "");
+for (VAR12 = 0; VAR12 < VAR11; VAR12++) {
+FUN2(VAR10,
+VAR19,
+VAR5, VAR6, 1, VAR14);
+VAR6 += 1;
+}
+}
+}
+
+return (VAR6 - VAR8);
+}

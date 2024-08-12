@@ -1,0 +1,7 @@
+static inline void FUN1(int VAR1, int VAR2)
+{
+    FUN2(VAR3, VAR4, VAR2 + FUN3(VAR5, FUN4(0)));
+    FUN5(VAR3, VAR4, VAR1 + FUN3(VAR5, FUN4(0)));
+    FUN2(VAR3, VAR4, VAR2 + FUN3(VAR5, FUN4(1)));
+    FUN5(VAR3, VAR4, VAR1 + FUN3(VAR5, FUN4(1)));
+}

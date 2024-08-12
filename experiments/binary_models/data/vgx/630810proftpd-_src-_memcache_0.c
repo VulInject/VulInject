@@ -1,0 +1,90 @@
+VAR1 *FUN1(VAR2 *VAR3, VAR4 *VAR5, unsigned long VAR6,
+uint64_t VAR7) {
+VAR1 *VAR8;
+VAR2 *VAR9;
+VAR10 *VAR11;
+memcached_return VAR12;
+
+if (VAR3 == NULL) {
+VAR13 = VAR14;
+return NULL;
+}
+
+if (VAR15 == NULL) {
+FUN2(VAR16, 9, "",
+"");
+VAR13 = VAR17;
+return NULL;
+}
+
+VAR11 = FUN3(NULL);
+if (VAR11 == NULL) {
+VAR13 = VAR18;
+return NULL;
+}
+
+VAR12 = FUN4(VAR11, VAR15); 
+if (VAR12 != VAR19) {
+unsigned int VAR20;
+
+VAR20 = FUN5(VAR15);
+FUN2(VAR16, 2,
+"",
+VAR20, VAR20 != 1 ? "" : "", FUN6(VAR11, VAR12));
+FUN7(VAR11);
+
+VAR13 = VAR17;
+return NULL;
+}
+
+VAR9 = FUN8(VAR3);
+FUN9(VAR9, "");
+
+VAR8 = FUN10(VAR9, sizeof(VAR1));
+VAR8->VAR2 = VAR9;
+VAR8->VAR21 = VAR5;
+VAR8->VAR11 = VAR11;
+VAR8->VAR22 = 1;
+
+
+VAR8->VAR23 = NULL;
+
+
+if (FUN11(VAR8, VAR6, VAR7) < 0) {
+int VAR24 = VAR13;
+
+FUN12(VAR8);
+FUN13(VAR8->VAR2);
+
+VAR13 = VAR24;
+return NULL;    
+}
+
+
+if (FUN14(VAR8) < 0) {
+int VAR24 = VAR13;
+
+FUN12(VAR8);
+FUN13(VAR8->VAR2);
+
+VAR13 = VAR24;
+return NULL;    
+}
+
+
+if (FUN15(VAR8) < 0) {
+int VAR24 = VAR13;
+
+FUN12(VAR8);
+FUN13(VAR8->VAR2);
+
+VAR13 = VAR24;
+return NULL;    
+}
+
+if (VAR25 == NULL) {
+VAR25 = VAR8;
+}
+
+return VAR8;
+}

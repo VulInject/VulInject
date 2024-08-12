@@ -1,0 +1,1 @@
+void FUN1 ( size_t VAR1 , unsigned long long VAR2 ) { cell_t VAR3 [ 8 ] ; ihandle_t VAR4 = FUN2 ( ) ; VAR3 [ 0 ] = FUN3 ( "" ) ; VAR3 [ 1 ] = ( VAR5 ) 5 ; VAR3 [ 2 ] = ( VAR5 ) 0 ; VAR3 [ 3 ] = FUN3 ( "" ) ; VAR3 [ 4 ] = FUN4 ( VAR4 ) ; VAR3 [ 5 ] = FUN5 ( VAR1 ) ; VAR3 [ 6 ] = FUN6 ( VAR2 ) ; VAR3 [ 7 ] = FUN7 ( VAR2 ) ; FUN8 ( ) ; ( void ) FUN9 ( & VAR3 ) ; FUN10 ( ) ; }

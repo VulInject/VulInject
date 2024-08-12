@@ -1,0 +1,46 @@
+#VAR1 ""
+#define CHAR_ARRAY_SIZE 8
+int FUN1()
+{
+    return 1;
+}
+int FUN2()
+{
+    return 0;
+}
+void FUN3()
+{
+    short VAR2;
+    VAR2 = 0;
+    if(FUN1())
+    {
+        {
+            char VAR3[VAR4] = "";
+            if (fgets(VAR3, VAR4, stdin) != NULL)
+            {
+                VAR2 = (short)FUN4(VAR3);
+            }
+            else
+            {
+            }
+        }
+    }
+    {
+        char VAR5[100];
+        char VAR6[100] = "";
+        memset(VAR5, '', 100-1);
+        VAR5[100-1] = '';
+        if (VAR2 < 100)
+        {
+            memmove(VAR6, VAR5, VAR2);
+            VAR6[VAR2] = ''; 
+        }
+        FUN5(VAR6);
+    }
+}
+int main(int argc, char * argv[])
+{
+    srand( (unsigned)FUN6(NULL) );
+    FUN3();
+    return 0;
+}

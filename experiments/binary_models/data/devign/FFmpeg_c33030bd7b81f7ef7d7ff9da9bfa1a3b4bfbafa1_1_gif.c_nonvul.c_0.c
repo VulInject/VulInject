@@ -1,0 +1,13 @@
+static int FUN1(VAR1 *VAR2, unsigned char *VAR3, int VAR4, void *VAR5)
+{
+    VAR6 *VAR7 = VAR2->VAR8;
+    VAR9 *VAR10 = VAR5;
+    VAR9 *const VAR11 = (VAR9 *)&VAR7->VAR12;
+    VAR13 *VAR14 = VAR3;
+    *VAR11 = *VAR10;
+    VAR11->VAR15 = VAR16;
+    VAR11->VAR17 = 1;
+    FUN2(&VAR14, VAR2->VAR18, VAR2->VAR19, (VAR20 *)VAR10->VAR5[1]);
+    FUN3(&VAR14, 0, 0, VAR2->VAR18, VAR2->VAR19, VAR10->VAR5[0], VAR10->VAR21[0], VAR22);
+    return VAR14 - VAR3;
+}

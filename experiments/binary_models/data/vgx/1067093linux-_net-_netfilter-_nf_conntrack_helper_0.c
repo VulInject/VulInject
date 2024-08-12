@@ -1,0 +1,13 @@
+void FUN1(struct VAR1 *VAR2)
+{
+FUN2(&VAR3);
+FUN3(&VAR2->VAR4);
+VAR5--;
+FUN4(&VAR3);
+
+
+FUN5();
+
+FUN6(VAR6, NULL);
+FUN7(VAR7, VAR2);
+}

@@ -1,0 +1,1 @@
+static void FUN1(void) {}

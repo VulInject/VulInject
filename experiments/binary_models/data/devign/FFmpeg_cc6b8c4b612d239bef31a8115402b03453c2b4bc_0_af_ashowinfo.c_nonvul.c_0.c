@@ -1,0 +1,22 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    VAR5 *VAR6 = VAR2->VAR7;
+    VAR8 *VAR9 = VAR6->VAR10;
+    uint32_t VAR11[8] = {0}, VAR12 = 0;
+    char VAR13[128];
+    int VAR14;
+    int VAR15 = FUN2(VAR4->VAR16->VAR17) * VAR4->VAR16->VAR18 * FUN3(VAR4->VAR19);
+    for (VAR14 = 0; VAR4->VAR20[VAR14] && VAR14 < 8; VAR14++)
+    {
+        VAR21 *VAR20 = VAR4->VAR20[VAR14];
+        VAR11[VAR14] = FUN4(VAR11[VAR14], VAR20, VAR15);
+        VAR12 = FUN4(VAR12, VAR20, VAR15);
+    }
+    FUN5(VAR13, sizeof(VAR13), -1, VAR4->VAR16->VAR17);
+    FUN6(VAR6, VAR22, "" VAR23 "" VAR23 ""
+                             ""
+                             "",
+           VAR9->VAR24, VAR4->VAR25, VAR4->VAR25 * FUN7(VAR2->VAR26), VAR4->VAR27, FUN8(VAR4->VAR19), VAR13, VAR4->VAR16->VAR18, VAR4->VAR16->VAR28, VAR4->VAR16->VAR29, VAR12, VAR11[0], VAR11[1], VAR11[2], VAR11[3], VAR11[4], VAR11[5], VAR11[6], VAR11[7]);
+    VAR9->VAR24++;
+    FUN9(VAR2->VAR7->VAR30[0], VAR4);
+}

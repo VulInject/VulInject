@@ -1,0 +1,1 @@
+char * xstrdup ( VAR1 * VAR2 , const char * VAR3 ) { size_t VAR4 = strlen ( VAR3 ) ; char * VAR5 = FUN1 ( VAR2 , VAR4 + 1 ) ; ( void ) memcpy ( VAR5 , VAR3 , VAR4 ) ; return ( VAR5 ) ; }

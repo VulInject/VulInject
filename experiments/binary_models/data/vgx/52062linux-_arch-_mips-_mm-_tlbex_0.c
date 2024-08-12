@@ -1,0 +1,65 @@
+static void FUN1(void)
+{
+const int VAR1 = 4;
+const int __maybe_unused VAR2 = 5;
+const int __maybe_unused VAR3 = 6;
+VAR4 *VAR5 = (VAR4 *)FUN2((VAR6)VAR7);
+long VAR8 = (long)VAR9;
+
+memset(VAR5, 0, VAR10 - (char *)VAR5);
+memset(VAR11, 0, sizeof(VAR11));
+memset(VAR12, 0, sizeof(VAR12));
+VAR13 = FUN3();
+if (VAR13 == -1) {
+struct VAR14 *VAR15 = VAR11;
+struct VAR16 *VAR17 = VAR12;
+
+
+
+FUN4(&VAR5, VAR2, VAR1, 29);
+FUN5(&VAR5, VAR2, VAR2, 4);
+FUN6(&VAR5, &VAR17, VAR2, VAR18);
+FUN7(&VAR5);
+FUN8(&VAR5, VAR1, 0, 29, 64 - 29);
+FUN9(&VAR15, VAR5);
+FUN10(&VAR5, VAR1, VAR1, 11);
+FUN11(&VAR5, VAR1, VAR19);
+FUN12(&VAR5, 31);
+FUN13(&VAR5);
+} else {
+
+if (VAR20)
+FUN11(&VAR5, VAR1, VAR21);
+else
+FUN11(&VAR5, VAR1, FUN14(), VAR13);
+FUN12(&VAR5, 31);
+FUN13(&VAR5);
+}
+
+FUN15(&VAR5, VAR2, VAR22);
+FUN16(&VAR5, VAR2, VAR2, VAR23);
+FUN17(&VAR5, VAR3, VAR8);
+FUN18(&VAR5, VAR3, VAR3, VAR2);
+FUN19(&VAR5, VAR1, FUN20(VAR8), VAR3);
+FUN17(&VAR5, VAR3, VAR8);
+FUN19(&VAR5, VAR1, FUN20(VAR8), VAR3);
+
+
+if (VAR13 != -1) {
+FUN11(&VAR5, VAR1, FUN14(), VAR13);
+FUN12(&VAR5, 31);
+FUN13(&VAR5);
+} else {
+FUN12(&VAR5, 31);
+FUN7(&VAR5);
+}
+if (VAR5 >= (VAR4 *)VAR10)
+FUN21("");
+
+FUN22(VAR12, VAR11);
+FUN23("",
+(unsigned int)(VAR5 - (VAR4 *)VAR7));
+
+FUN24("", VAR7,
+VAR10);
+}

@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { uint64_t VAR3 = 0 ; VAR3 = FUN2 ( VAR2 -> VAR4 [ 1 ] ) + 1 ; VAR2 -> VAR4 [ 1 ] = FUN3 ( VAR3 , NULL ) ; if ( ! VAR3 ) { VAR3 = FUN2 ( VAR2 -> VAR4 [ 0 ] ) + 1 ; VAR2 -> VAR4 [ 0 ] = FUN3 ( VAR3 ) ; } }

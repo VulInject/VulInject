@@ -1,0 +1,1 @@
+isc_result_t FUN1 ( const char * VAR1 , VAR2 * VAR3 ) { struct timeval VAR4 [ 2 ] ; FUN2 ( VAR1 != NULL && VAR3 != NULL ) ; VAR4 [ 0 ] . VAR5 = VAR4 [ 1 ] . VAR5 = ( long ) FUN3 ( VAR3 ) ; VAR4 [ 0 ] . VAR6 = VAR4 [ 1 ] . VAR6 = ( VAR7 ) ( FUN4 ( VAR3 ) / 1000 ) ; if ( FUN5 ( VAR1 , VAR4 ) < 0 ) { return ( FUN6 ( VAR8 ) ) ; } return ( VAR9 ) ; }

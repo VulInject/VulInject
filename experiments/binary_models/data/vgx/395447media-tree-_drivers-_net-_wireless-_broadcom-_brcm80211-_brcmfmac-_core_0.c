@@ -1,0 +1,7 @@
+VAR1 FUN1(struct VAR2 *VAR3, char *VAR4, void *VAR5, u32 VAR6)
+{
+struct VAR7 *VAR8 = FUN2(VAR3);
+struct VAR9 *VAR10 = VAR8->VAR11->VAR12[0];
+
+return FUN3(VAR10, VAR4, VAR5, VAR6);
+}

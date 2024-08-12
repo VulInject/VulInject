@@ -1,0 +1,22 @@
+static void FUN1(VAR1 *VAR2, const VAR3 *VAR4)
+{
+    VAR5 *VAR6;
+    VAR7 *VAR8;
+    VAR9 *VAR10;
+    VAR10 = (VAR9 *)VAR2->VAR11;
+    VAR8 = VAR10->VAR12;
+    VAR6 = FUN2(VAR10->VAR6);
+    VAR10->VAR13 = 0;
+    VAR10->VAR14[VAR15] = VAR16;
+    VAR10->VAR14[VAR17] = VAR16;
+    VAR10->VAR14[VAR18] = VAR16;
+    VAR10->VAR19 = 0x7;
+    memset(VAR10->VAR20, 0, sizeof(VAR10->VAR20));
+    memset(VAR10->VAR21, 0, sizeof(VAR10->VAR21));
+    if (VAR8->VAR22)
+    {
+        return;
+    }
+    FUN3(VAR8->VAR23, VAR24, FUN4(VAR25, VAR6->VAR26), &VAR10->VAR27[VAR28], false);
+    VAR10->VAR27[VAR29] = VAR10->VAR27[VAR28];
+}

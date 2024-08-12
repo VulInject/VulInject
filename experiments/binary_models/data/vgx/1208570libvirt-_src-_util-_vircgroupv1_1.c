@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , unsigned long long * VAR3 ) { long long unsigned int VAR4 ; * VAR3 = VAR4 >> 10 ; if ( * VAR3 >= FUN2 ( ) ) { * VAR3 = VAR5 ; } return 0 ; }

@@ -1,0 +1,7 @@
+static void FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = FUN2(VAR2);
+    VAR4->VAR5[0] = 0x0c000000;
+    VAR4->VAR5[1] = 0x10000000;
+    VAR4->VAR5[2] = 0x10000000;
+}

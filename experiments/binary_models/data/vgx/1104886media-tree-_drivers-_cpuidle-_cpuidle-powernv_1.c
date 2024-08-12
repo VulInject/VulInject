@@ -1,0 +1,1 @@
+static int FUN1 ( unsigned int VAR1 ) { struct VAR2 * VAR3 = FUN2 ( VAR4 , VAR1 ) ; if ( VAR3 && FUN3 ( ) ) { FUN4 ( ) ; FUN5 ( VAR3 , NULL ) ; FUN6 ( ) ; } return 0 ; }

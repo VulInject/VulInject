@@ -1,0 +1,68 @@
+static void FUN1(VAR1 *VAR2,VAR3 *VAR4)
+{
+const char
+*VAR5;
+
+const VAR6
+*VAR7;
+
+if (VAR4->VAR8 == (void *) NULL)
+return;
+FUN2(VAR4);
+for (VAR5=FUN3(VAR4); VAR5 != (const char *) NULL; )
+{
+VAR7=FUN4(VAR4,VAR5);
+if (FUN5(VAR7) == 0)
+{
+VAR5=FUN3(VAR4);
+continue;
+}
+if (FUN6(VAR5,"") == 0)
+(void) FUN7(VAR2,VAR9,(VAR10) FUN5(
+VAR7),FUN8(VAR7));
+if (FUN6(VAR5,"") == 0)
+(void) FUN7(VAR2,VAR11,(VAR10) FUN5(
+VAR7),FUN8(VAR7));
+if (FUN6(VAR5,"") == 0)
+{
+const VAR12
+*VAR13;
+
+VAR14
+VAR15;
+
+VAR6
+*VAR16;
+
+VAR16=FUN9(VAR7);
+VAR15=FUN5(VAR7)+4-(FUN5(VAR7) &
+0x03);
+FUN10(VAR16,VAR15);
+VAR13=FUN11(VAR2,VAR17);
+if (FUN12(VAR13) == VAR18)
+{
+if (FUN13(VAR2))
+FUN14((VAR10 *) FUN8(VAR16),
+(unsigned long) (VAR15/4));
+(void) FUN7(VAR2,VAR17,(VAR10)
+FUN5(VAR16)/4,FUN8(
+VAR16));
+}
+else
+(void) FUN7(VAR2,VAR17,(VAR10)
+FUN5(VAR16),FUN8(
+VAR16));
+VAR16=FUN15(VAR16);
+}
+if (FUN6(VAR5,"") == 0)
+(void) FUN7(VAR2,VAR19,(VAR10)
+FUN5(VAR7),FUN8(VAR7));
+if (FUN6(VAR5,"") == 0)
+(void) FUN7(VAR2,37724,(VAR10) FUN5(VAR7),
+FUN8(VAR7));
+if (FUN6(VAR5,"") == 0)
+(void) FUN7(VAR2,34118,(VAR10) FUN5(VAR7),
+FUN8(VAR7));
+VAR5=FUN3(VAR4);
+}
+}

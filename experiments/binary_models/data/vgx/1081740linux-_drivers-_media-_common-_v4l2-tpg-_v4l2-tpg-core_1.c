@@ -1,0 +1,1 @@
+static unsigned FUN1 ( const struct VAR1 * VAR2 , unsigned VAR3 , unsigned VAR4 ) { VAR3 += VAR2 -> VAR5 . VAR6 ; switch ( VAR4 ) { case VAR7 : return VAR3 / 2 ; case VAR8 : if ( VAR3 & 1 ) { return VAR3 / 2 ; } return VAR2 -> VAR9 / 2 + VAR3 / 2 ; default : return VAR3 ; } }

@@ -1,0 +1,1 @@
+FUN1 ( ) { basic_block VAR1 = VAR2 -> VAR3 ; if ( VAR2 -> VAR4 & VAR5 ) { return ; } VAR2 -> VAR4 |= VAR5 ; if ( FUN2 ( VAR6 , VAR1 -> VAR7 ) ) { return ; } FUN3 ( VAR1 ) ; if ( VAR8 && ( VAR9 & VAR10 ) ) { fprintf ( VAR8 , "" , VAR2 -> VAR11 -> VAR7 , VAR2 -> VAR3 -> VAR7 ) ; } }

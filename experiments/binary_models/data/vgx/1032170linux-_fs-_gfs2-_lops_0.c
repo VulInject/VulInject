@@ -1,0 +1,54 @@
+static int FUN1(struct VAR1 *VAR2, u32 VAR3,
+struct VAR4 *VAR5, VAR6 *VAR7,
+int VAR8)
+{
+struct VAR9 *VAR10 = FUN2(VAR2->VAR11);
+struct VAR12 *VAR13 = FUN3(VAR2->VAR11);
+struct VAR14 *VAR15 = VAR10->VAR16;
+unsigned int VAR17 = FUN4(VAR5->VAR18);
+struct VAR19 *VAR20, *VAR21;
+u64 VAR22;
+int VAR23 = 0;
+
+if (VAR8 != 1 || FUN4(VAR5->VAR24) != VAR25)
+return 0;
+
+FUN5(VAR2, &VAR3);
+
+for (; VAR17; FUN5(VAR2, &VAR3), VAR17--) {
+VAR22 = FUN6(*VAR7++);
+
+VAR2->VAR26++;
+
+if (FUN7(VAR2, VAR22, VAR3))
+continue;
+
+VAR23 = FUN8(VAR2, VAR3, &VAR20);
+if (VAR23)
+return VAR23;
+
+VAR21 = FUN9(VAR15, VAR22);
+memcpy(VAR21->VAR27, VAR20->VAR27, VAR20->VAR28);
+
+if (FUN10(VAR13, VAR21))
+VAR23 = -VAR29;
+else {
+struct VAR30 *VAR31 =
+(struct VAR30 *)VAR21->VAR27;
+
+if (VAR31->VAR32 == FUN11(VAR33))
+FUN12(VAR2, VAR20, VAR22);
+
+FUN13(VAR21);
+}
+FUN14(VAR20);
+FUN14(VAR21);
+
+if (VAR23)
+break;
+
+VAR2->VAR34++;
+}
+
+return VAR23;
+}

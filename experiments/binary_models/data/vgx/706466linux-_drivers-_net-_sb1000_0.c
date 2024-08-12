@@ -1,0 +1,63 @@
+static int
+FUN1(struct VAR1 *VAR2)
+{
+char *VAR3;
+int VAR4[2], VAR5;
+struct VAR6 *VAR7 = FUN2(VAR2);
+const unsigned short VAR8[] = {0x01, 0x01};
+
+VAR4[0] = VAR2->VAR9;
+
+VAR4[1] = VAR2->VAR10;
+VAR3 = VAR2->VAR3;
+
+
+if ((VAR5 = FUN3(VAR4, VAR3)))
+return VAR5;
+FUN4(1);
+if ((VAR5 = FUN5(VAR4, VAR3)))
+return VAR5;
+
+
+VAR7->VAR11[0] = NULL;
+VAR7->VAR11[1] = NULL;
+VAR7->VAR11[2] = NULL;
+VAR7->VAR11[3] = NULL;
+VAR7->VAR12[0] = 0;
+VAR7->VAR12[1] = 0;
+VAR7->VAR12[2] = 0;
+VAR7->VAR12[3] = 0;
+VAR7->VAR13 = 0;
+VAR7->VAR14 = 0;
+VAR7->VAR15 = 0;
+VAR7->VAR16[0] = 0x50;
+VAR7->VAR16[1] = 0x48;
+VAR7->VAR16[2] = 0x44;
+VAR7->VAR16[3] = 0x42;
+VAR7->VAR17[0] = 0;
+VAR7->VAR17[1] = 0;
+VAR7->VAR17[2] = 0;
+VAR7->VAR17[3] = 0;
+if (FUN6(VAR2->VAR18, VAR19, 0, "", VAR2)) {
+return -VAR20;
+}
+
+if (VAR21 > 2)
+FUN7(VAR22 "", VAR3, VAR2->VAR18);
+
+
+FUN8(1000);
+if ((VAR5 = FUN9(VAR4, VAR3)))
+return VAR5;
+FUN8(0);
+if ((VAR5 = FUN10(VAR4, VAR3, VAR23, 0)))
+return VAR5;
+if (VAR23[0] != VAR8[0] || VAR23[1] != VAR8[1])
+FUN7(VAR24 ""
+"", VAR3, VAR23[0], VAR23[1],
+VAR8[0], VAR8[1]);
+
+
+FUN11(VAR2);
+return 0;					
+}

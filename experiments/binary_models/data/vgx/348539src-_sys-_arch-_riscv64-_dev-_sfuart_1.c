@@ -1,0 +1,1 @@
+void FUN1 ( void * ) void FUN2 ( struct VAR1 * ) int FUN3 ( VAR2 , VAR3 ) int FUN4 ( VAR4 ) void FUN5 ( VAR4 , int ) void FUN6 ( VAR4 , int ) void FUN7 ( void ) { struct fdt_reg VAR5 ; void * VAR6 ; if ( ( VAR6 = FUN8 ( "" ) ) == NULL ) { return ; } FUN3 ( VAR7 , VAR5 . VAR8 ) ; }

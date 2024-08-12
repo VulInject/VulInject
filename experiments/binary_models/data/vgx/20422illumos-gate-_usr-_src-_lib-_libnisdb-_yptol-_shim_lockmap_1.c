@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 ) { int VAR3 ; VAR3 = FUN2 ( VAR2 -> VAR4 , NULL ) ; return ( VAR3 ) ; }

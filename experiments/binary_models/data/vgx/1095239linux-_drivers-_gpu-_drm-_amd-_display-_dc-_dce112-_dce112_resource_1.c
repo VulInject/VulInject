@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( struct VAR2 * VAR3 , uint32_t VAR4 ) { struct VAR1 * VAR1 = FUN2 ( sizeof ( VAR1 ) , VAR5 ) ; if ( ! VAR1 ) { return VAR6 ; } FUN3 ( VAR1 , VAR3 , VAR4 , & VAR7 [ VAR4 ] , & VAR8 , & VAR9 ) ; return VAR1 ; }

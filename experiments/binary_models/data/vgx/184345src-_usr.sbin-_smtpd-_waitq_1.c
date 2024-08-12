@@ -1,0 +1,1 @@
+FUN1 ( VAR1 , VAR2 ) ; FUN2 ( VAR1 , VAR2 , VAR3 , VAR4 ) ; static struct waitqtree VAR5 = FUN3 ( & VAR5 ) ; static int FUN4 ( struct VAR2 * VAR6 , struct VAR2 * VAR7 ) { if ( VAR6 -> VAR8 > VAR7 -> VAR8 ) { return ( 1 ) ; } return ( 0 ) ; }

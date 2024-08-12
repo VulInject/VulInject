@@ -1,0 +1,1 @@
+void FUN1 ( uint8_t VAR1 [ VAR2 ] , void * VAR3 ) { VAR4 * VAR5 = VAR3 ; uint8_t VAR6 [ VAR7 ] ; int VAR8 ; FUN2 ( & VAR5 -> VAR9 , VAR5 -> VAR10 , VAR6 ) ; for ( VAR8 = 0 ; VAR8 < VAR2 ; VAR8 ++ ) { VAR1 [ VAR8 ] = VAR5 -> VAR11 . VAR12 [ VAR8 ] ^ VAR6 [ VAR8 ] ; } FUN3 ( VAR6 , sizeof ( VAR6 ) ) ; }

@@ -1,0 +1,1 @@
+char FUN1 ( VAR1 * VAR2 ) { char VAR3 = FUN2 ( VAR2 ) ; FUN3 ( VAR2 , NULL ) ; return VAR3 ; }

@@ -1,0 +1,13 @@
+static void FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR3, struct reg_field VAR4)
+{
+VAR2->VAR3 = VAR3;
+VAR2->VAR5 = VAR4.VAR5;
+VAR2->VAR6 = VAR4.VAR7;
+VAR2->VAR8 = FUN2(VAR4.VAR9, VAR4.VAR7);
+
+FUN3(VAR2->VAR8 == 0, "");
+
+VAR2->VAR10 = VAR4.VAR10;
+VAR2->VAR11 = VAR4.VAR11;
+}

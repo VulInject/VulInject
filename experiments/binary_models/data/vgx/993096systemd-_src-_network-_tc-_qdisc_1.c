@@ -1,0 +1,1 @@
+static const char * FUN1 ( const VAR1 * VAR2 ) { return ( FUN2 ( VAR2 ) && FUN2 ( VAR2 ) -> VAR3 ) ?FUN2 ( VAR2 ) -> VAR3 : VAR2 -> VAR3 ; }

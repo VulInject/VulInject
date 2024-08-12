@@ -1,0 +1,1 @@
+static inline void FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , struct VAR5 * VAR6 ) { struct VAR7 * VAR8 = ( VAR7 * ) VAR4 -> VAR9 ; u16 VAR10 = FUN2 ( VAR8 -> VAR11 ) ; VAR4 -> VAR12 = VAR2 -> VAR12 ; FUN3 ( VAR4 ) ; FUN4 ( VAR4 , FUN5 ( VAR10 ) ) ; VAR4 -> VAR13 = VAR14 ; VAR4 -> VAR15 = FUN6 ( VAR16 ) ; FUN7 ( VAR4 ) ; }

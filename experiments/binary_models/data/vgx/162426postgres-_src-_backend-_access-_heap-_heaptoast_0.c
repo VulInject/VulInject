@@ -1,0 +1,176 @@
+VAR1
+FUN1(Relation VAR2, HeapTuple VAR3, HeapTuple VAR4,
+int VAR5)
+{
+HeapTuple	VAR6;
+TupleDesc	VAR7;
+int			VAR8;
+
+Size		VAR9;
+Size		VAR10;
+
+bool		VAR11[VAR12];
+bool		VAR13[VAR12];
+Datum		VAR14[VAR12];
+Datum		VAR15[VAR12];
+ToastAttrInfo VAR16[VAR12];
+ToastTupleContext VAR17;
+
+
+VAR5 &= ~VAR18;
+
+
+FUN2(VAR2->VAR19->VAR20 == VAR21 ||
+VAR2->VAR19->VAR20 == VAR22);
+
+
+VAR7 = VAR2->VAR23;
+VAR8 = VAR7->VAR24;
+
+FUN2(VAR8 <= VAR12);
+FUN3(VAR3, VAR7, VAR14, VAR11);
+if (VAR4 != NULL)
+FUN3(VAR4, VAR7, VAR15, VAR13);
+
+
+VAR17.VAR25 = VAR2;
+VAR17.VAR26 = VAR14;
+VAR17.VAR27 = VAR11;
+if (VAR4 == NULL)
+{
+VAR17.VAR28 = NULL;
+VAR17.VAR29 = NULL;
+}
+else
+{
+VAR17.VAR28 = VAR15;
+VAR17.VAR29 = VAR13;
+}
+VAR17.VAR30 = VAR16;
+FUN4(&VAR17);
+
+
+
+
+VAR10 = VAR31;
+if ((VAR17.VAR32 & VAR33) != 0)
+VAR10 += FUN5(VAR8);
+VAR10 = FUN6(VAR10);
+
+VAR9 = FUN7(VAR2, VAR34) - VAR10;
+
+
+while (FUN8(VAR7,
+VAR14, VAR11) > VAR9)
+{
+int			VAR35;
+
+VAR35 = FUN9(&VAR17, true, false);
+if (VAR35 < 0)
+break;
+
+
+if (FUN10(VAR7, VAR35)->VAR36 == VAR37)
+FUN11(&VAR17, VAR35);
+else
+{
+
+VAR16[VAR35].VAR38 |= VAR39;
+}
+
+
+if (VAR16[VAR35].VAR40 > VAR9 &&
+VAR2->VAR19->VAR41 != VAR42)
+FUN12(&VAR17, VAR35, VAR5);
+}
+
+
+while (FUN8(VAR7,
+VAR14, VAR11) > VAR9 &&
+VAR2->VAR19->VAR41 != VAR42)
+{
+int			VAR35;
+
+VAR35 = FUN9(&VAR17, false, false);
+if (VAR35 < 0)
+break;
+FUN12(&VAR17, VAR35, VAR5);
+}
+
+
+while (FUN8(VAR7,
+VAR14, VAR11) > VAR9)
+{
+int			VAR35;
+
+VAR35 = FUN9(&VAR17, true, true);
+if (VAR35 < 0)
+break;
+
+FUN11(&VAR17, VAR35);
+}
+
+
+VAR9 = VAR43 - VAR10;
+
+while (FUN8(VAR7,
+VAR14, VAR11) > VAR9 &&
+VAR2->VAR19->VAR41 != VAR42)
+{
+int			VAR35;
+
+VAR35 = FUN9(&VAR17, false, true);
+if (VAR35 < 0)
+break;
+
+FUN12(&VAR17, VAR35, VAR5);
+}
+
+
+if ((VAR17.VAR32 & VAR44) != 0)
+{
+HeapTupleHeader VAR45 = VAR3->VAR46;
+HeapTupleHeader VAR47;
+int32		VAR48;
+int32		VAR49;
+int32		VAR50;
+
+
+VAR48 = VAR31;
+if ((VAR17.VAR32 & VAR33) != 0)
+VAR48 += FUN5(VAR8);
+VAR48 = FUN6(VAR48);
+VAR49 = FUN8(VAR7,
+VAR14, VAR11);
+VAR50 = VAR48 + VAR49;
+
+
+VAR6 = (VAR1) FUN13(VAR51 + VAR50);
+VAR6->VAR52 = VAR50;
+VAR6->VAR53 = VAR3->VAR53;
+VAR6->VAR54 = VAR3->VAR54;
+VAR47 = (VAR55) ((char *) VAR6 + VAR51);
+VAR6->VAR46 = VAR47;
+
+
+memcpy(VAR47, VAR45, VAR31);
+FUN14(VAR47, VAR8);
+VAR47->VAR56 = VAR48;
+
+
+FUN15(VAR7,
+VAR14,
+VAR11,
+(char *) VAR47 + VAR48,
+VAR49,
+&(VAR47->VAR57),
+((VAR17.VAR32 & VAR33) != 0) ?
+VAR47->VAR58 : NULL);
+}
+else
+VAR6 = VAR3;
+
+FUN16(&VAR17);
+
+return VAR6;
+}

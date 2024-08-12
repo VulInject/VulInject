@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( const char * VAR2 ) { VAR1 * VAR3 = NULL ; int VAR4 = 0 ; uint8_t VAR5 ; VAR4 = FUN2 ( & VAR5 , 10 , 0 , VAR2 , 0 , 2 ) ; if ( VAR4 < 0 ) { FUN3 ( "" , VAR2 ) ; return NULL ; } VAR3 = FUN4 ( sizeof ( VAR1 ) ) ; if ( FUN5 ( VAR3 == NULL ) ) { return VAR6 ; } * VAR3 = VAR5 ; return VAR3 ; }

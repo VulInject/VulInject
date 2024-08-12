@@ -1,0 +1,1 @@
+static uint8_t FUN1 ( uint8_t VAR1 ) { if ( ! VAR1 ) { return 0x12 ; } if ( VAR1 < 12 ) { return FUN2 ( VAR1 ) ; } return FUN2 ( VAR1 - 12 ) | VAR2 ; }

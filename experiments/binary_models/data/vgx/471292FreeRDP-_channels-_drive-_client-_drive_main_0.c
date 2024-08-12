@@ -1,0 +1,120 @@
+static VAR1 FUN1(PDEVICE_SERVICE_ENTRY_POINTS VAR2, const char* VAR3,
+const char* VAR4, BOOL VAR5)
+{
+size_t VAR6, VAR7;
+VAR8* VAR9;
+UINT VAR10 = VAR11;
+
+if (!VAR2 || !VAR3 || !VAR4)
+{
+FUN2(VAR12, "", VAR2,
+VAR3, VAR4);
+return VAR13;
+}
+
+if (VAR3[0] && VAR4[0])
+{
+size_t VAR14 = FUN3(VAR4, VAR15);
+VAR9 = (VAR8*)calloc(1, sizeof(VAR8));
+
+if (!VAR9)
+{
+FUN2(VAR12, "");
+return VAR16;
+}
+
+VAR9->VAR17.VAR18 = VAR19;
+VAR9->VAR17.VAR20 = VAR21;
+VAR9->VAR17.VAR22 = VAR23;
+VAR9->VAR24 = VAR2->VAR24;
+VAR9->VAR5 = VAR5;
+VAR7 = strlen(VAR3);
+VAR9->VAR17.VAR25 = FUN4(NULL, VAR7 + 1);
+
+if (!VAR9->VAR17.VAR25)
+{
+FUN2(VAR12, "");
+VAR10 = VAR16;
+goto VAR26;
+}
+
+for (VAR6 = 0; VAR6 < VAR7; VAR6++)
+{
+
+switch (VAR3[VAR6])
+{
+case '':
+case '':
+case '':
+case '':
+case '':
+case '':
+case '':
+case '':
+FUN5(VAR9->VAR17.VAR25, '');
+break;
+default:
+FUN5(VAR9->VAR17.VAR25, (VAR27)VAR3[VAR6]);
+break;
+}
+}
+FUN5(VAR9->VAR17.VAR25, '');
+
+VAR9->VAR17.VAR3 = (const char*)FUN6(VAR9->VAR17.VAR25);
+if (!VAR9->VAR17.VAR3)
+goto VAR26;
+
+if ((VAR14 > 1) && (VAR4[VAR14 - 1] == ''))
+VAR14--;
+
+VAR9->VAR4 = FUN7(VAR4, VAR14, NULL);
+if (!VAR9->VAR4)
+{
+VAR10 = VAR16;
+goto VAR26;
+}
+
+VAR9->VAR28 = FUN8(VAR29);
+
+if (!VAR9->VAR28)
+{
+FUN2(VAR12, "");
+VAR10 = VAR16;
+goto VAR26;
+}
+
+FUN9(VAR9->VAR28)->VAR30 = VAR31;
+VAR9->VAR32 = FUN10(NULL);
+
+if (!VAR9->VAR32)
+{
+FUN2(VAR12, "");
+VAR10 = VAR16;
+goto VAR26;
+}
+
+VAR33* VAR34 = FUN11(VAR9->VAR32);
+FUN12(VAR34);
+VAR34->VAR30 = VAR35;
+
+if ((VAR10 = VAR2->FUN13(VAR2->VAR36, (VAR37*)VAR9)))
+{
+FUN2(VAR12, "" VAR38 "", VAR10);
+goto VAR26;
+}
+
+if (!(VAR9->VAR39 =
+FUN14(NULL, 0, VAR40, VAR9, VAR41, NULL)))
+{
+FUN2(VAR12, "");
+goto VAR26;
+}
+
+FUN15(VAR9->VAR39);
+}
+
+return VAR42;
+VAR26:
+FUN16(VAR9);
+return VAR10;
+}

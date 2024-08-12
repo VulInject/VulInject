@@ -1,0 +1,29 @@
+VAR1 *FUN1(VAR2 *VAR3, int VAR4)
+{
+VAR5 *VAR6;
+int VAR7, VAR8;
+
+if (VAR3->VAR9) {
+int VAR10 = FUN2(VAR3->VAR11);
+if (!VAR10)
+return NULL;
+VAR7 = FUN3(VAR3->VAR12) ? VAR10 : 1;
+} else
+VAR7 = 4;
+
+if (VAR4 < 0 || VAR4 >= VAR7 || !VAR3->VAR13[VAR4])
+return NULL;
+VAR6 = VAR3->VAR13[VAR4];
+
+for (VAR8 = 0; VAR8 < FUN4(VAR3->VAR14) && VAR3->VAR14[VAR8]; VAR8++) {
+VAR1 *VAR14 = VAR3->VAR14[VAR8];
+if (VAR6 >= VAR14->VAR6 && VAR6 < VAR14->VAR6 + VAR14->VAR15)
+return VAR14;
+}
+for (VAR8 = 0; VAR8 < VAR3->VAR16; VAR8++) {
+VAR1 *VAR14 = VAR3->VAR17[VAR8];
+if (VAR6 >= VAR14->VAR6 && VAR6 < VAR14->VAR6 + VAR14->VAR15)
+return VAR14;
+}
+return NULL;
+}

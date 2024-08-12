@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( void ) { struct VAR1 * VAR2 ; if ( ( VAR2 = calloc ( 1 , sizeof ( VAR1 ) ) ) == NULL ) { VAR3 } if ( ( VAR2 -> VAR4 = FUN2 ( ) ) == NULL ) { VAR3 } VAR2 -> read = VAR2 -> VAR5 ; VAR2 -> write = VAR2 -> VAR4 ; return VAR2 ; err FUN3 ( VAR2 ) ; return NULL ; }

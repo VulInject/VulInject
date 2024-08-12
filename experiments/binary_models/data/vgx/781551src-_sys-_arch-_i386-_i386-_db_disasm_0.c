@@ -1,0 +1,77 @@
+VAR1
+FUN1(vaddr_t VAR2, int VAR3, int VAR4,
+struct VAR5 *VAR6)
+{
+int		VAR7, VAR8, VAR9, VAR10, VAR11;
+
+VAR7 = FUN2(VAR4);
+VAR8  = FUN3(VAR4);
+
+if (VAR7 == 3) {
+VAR6->VAR12 = 1;
+VAR6->VAR11 = VAR8;
+return (VAR2);
+}
+VAR6->VAR12 = 0;
+VAR6->VAR10 = 0;
+
+if (VAR3) {
+VAR6->VAR10 = 0;
+VAR6->VAR13 = 0;
+switch (VAR7) {
+case 0:
+if (VAR8 == 6) {
+FUN4(VAR11, VAR2, 2, 0);
+VAR6->VAR11 = VAR11;
+VAR6->VAR14 = 0;
+} else {
+VAR6->VAR11 = 0;
+VAR6->VAR14 = VAR15[VAR8];
+}
+break;
+case 1:
+FUN4(VAR11, VAR2, 1, 1);
+VAR11 &= 0xffff;
+VAR6->VAR11 = VAR11;
+VAR6->VAR14 = VAR15[VAR8];
+break;
+case 2:
+FUN4(VAR11, VAR2, 2, 0);
+VAR6->VAR11 = VAR11;
+VAR6->VAR14 = VAR15[VAR8];
+break;
+}
+} else {
+if (VAR8 == 4) {
+FUN4(VAR9, VAR2, 1, 0);
+VAR8 = FUN5(VAR9);
+VAR10 = FUN6(VAR9);
+if (VAR10 != 4)
+VAR6->VAR10 = VAR16[VAR17][VAR10];
+VAR6->VAR13 = FUN7(VAR9);
+}
+
+switch (VAR7) {
+case 0:
+if (VAR8 == 5) {
+FUN4(VAR6->VAR11, VAR2, 4, 0);
+VAR6->VAR14 = 0;
+} else {
+VAR6->VAR11 = 0;
+VAR6->VAR14 = VAR16[VAR17][VAR8];
+}
+break;
+case 1:
+FUN4(VAR11, VAR2, 1, 1);
+VAR6->VAR11 = VAR11;
+VAR6->VAR14 = VAR16[VAR17][VAR8];
+break;
+case 2:
+FUN4(VAR11, VAR2, 4, 0);
+VAR6->VAR11 = VAR11;
+VAR6->VAR14 = VAR16[VAR17][VAR8];
+break;
+}
+}
+return (VAR2);
+}

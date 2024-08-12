@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR3 , * VAR4 ; FUN2 ( , , , ) { FUN3 ( & VAR3 -> VAR5 ) ; FUN4 ( & VAR3 -> VAR6 ) ; FUN5 ( VAR3 -> VAR7 ) ; FUN6 ( VAR3 -> VAR8 , NULL ) ; } }

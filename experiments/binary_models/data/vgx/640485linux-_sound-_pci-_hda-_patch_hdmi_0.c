@@ -1,0 +1,32 @@
+static int FUN1(struct VAR1 *VAR2, hda_nid_t VAR3,
+hda_nid_t VAR4, int VAR5, u32 VAR6,
+int VAR7)
+{
+struct VAR8 *VAR9 = VAR2->VAR9;
+int VAR10 = FUN2(VAR2, VAR4, VAR5);
+struct VAR11 *VAR12;
+int VAR13;
+
+if (VAR10 < 0)
+VAR12 = NULL;
+else
+VAR12 = FUN3(VAR9, VAR10);
+
+FUN4(VAR2, VAR3, VAR4);
+
+if (VAR9->VAR14 == VAR15 && VAR12 && VAR12->VAR16) {
+FUN5(VAR2, VAR12, false);
+
+FUN6(100, 200);
+}
+
+VAR13 = FUN7(VAR2, VAR3, VAR4, VAR5,
+VAR6, VAR7);
+
+if (VAR9->VAR14 == VAR15 && VAR12 && VAR12->VAR16) {
+FUN6(100, 200);
+FUN5(VAR2, VAR12, true);
+}
+
+return VAR13;
+}

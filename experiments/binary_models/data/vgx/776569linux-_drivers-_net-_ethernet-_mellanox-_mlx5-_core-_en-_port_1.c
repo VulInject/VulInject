@@ -1,0 +1,1 @@
+bool FUN1 ( struct VAR1 * VAR2 ) { struct mlx5e_port_eth_proto VAR3 ; int VAR4 ; if ( FUN2 ( VAR2 , VAR5 ) ) { return true ; } VAR4 = FUN3 ( VAR2 , 1 , true , & VAR3 ) ; return ! ! VAR3 . VAR6 ; }

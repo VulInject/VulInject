@@ -1,0 +1,1 @@
+static bool FUN1 ( char * VAR1 , char * VAR2 ) { bool VAR3 = false ; char * VAR4 = NULL ; VAR4 = FUN2 ( VAR2 , NULL ) ; FUN3 ( "" , VAR1 , VAR4 ) ; if ( FUN4 ( VAR1 , VAR4 , VAR5 ) ) { VAR3 = true ; } free ( VAR4 ) ; return VAR3 ; }

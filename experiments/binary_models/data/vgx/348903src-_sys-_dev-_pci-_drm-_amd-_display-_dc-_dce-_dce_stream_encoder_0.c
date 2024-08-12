@@ -1,0 +1,108 @@
+static void FUN1(
+struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+int VAR5,
+bool VAR6)
+{
+struct VAR7 *VAR8 = FUN2(VAR2);
+struct bp_encoder_control VAR9 = {0};
+
+VAR9.VAR10 = VAR11;
+VAR9.VAR12 = VAR8->VAR13.VAR14;
+VAR9.signal = VAR15;
+VAR9.VAR16 = VAR6;
+VAR9.VAR17 = VAR5;
+VAR9.VAR18 = VAR19;
+VAR9.VAR20 = VAR4->VAR21;
+
+if (VAR8->VAR13.VAR22->VAR23->FUN3(
+VAR8->VAR13.VAR22, &VAR9) != VAR24)
+return;
+
+FUN4(VAR8, VAR4);
+
+
+if (!VAR8->VAR25->VAR26) {
+FUN5(VAR27,
+VAR28, 1,
+VAR29, 1,
+VAR30, 0);
+} else if (VAR8->VAR31->VAR32) {
+FUN6(VAR27,
+VAR28, 1,
+VAR29, 1,
+VAR30, 0,
+VAR26, 0,
+VAR33, 0);
+}
+
+switch (VAR4->VAR21) {
+case VAR34:
+FUN7(VAR27, VAR35, 0);
+break;
+case VAR36:
+if (VAR4->VAR37 == VAR38) {
+FUN8(VAR27,
+VAR35, 1,
+VAR30, 0);
+} else {
+FUN8(VAR27,
+VAR35, 1,
+VAR30, 1);
+}
+break;
+case VAR39:
+if (VAR4->VAR37 == VAR38) {
+FUN8(VAR27,
+VAR35, 2,
+VAR30, 0);
+} else {
+FUN8(VAR27,
+VAR35, 2,
+VAR30, 1);
+}
+break;
+case VAR40:
+FUN8(VAR27,
+VAR35, 3,
+VAR30, 1);
+break;
+default:
+break;
+}
+
+if (VAR8->VAR25->VAR26) {
+if (VAR5 >= VAR41) {
+
+FUN8(VAR27,
+VAR26, 1,
+VAR33, 1);
+} else if (VAR4->VAR42.VAR43) {
+
+
+
+
+FUN8(VAR27,
+VAR26, 1,
+VAR33, 0);
+}
+}
+
+FUN5(VAR44,
+VAR45, 1,
+VAR46, 1,
+VAR47, 1);
+
+FUN7(VAR44, VAR48, 0);
+
+
+FUN7(VAR49, VAR50, 1);
+
+FUN7(VAR51, VAR52, 1);
+
+FUN7(VAR53, VAR54,
+VAR55 + 2);
+
+FUN7(VAR56, VAR57, 0);
+
+}

@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * * VAR2 ) { FUN2 ( VAR2 ) ; FUN3 ( VAR2 ) ; FUN4 ( VAR2 ) ; FUN5 ( VAR2 ) ; FUN6 ( VAR2 ) ; FUN7 ( VAR2 ) ; FUN8 ( VAR2 ) ; FUN9 ( VAR2 ) ; FUN10 ( VAR2 ) ; FUN11 ( VAR2 ) ; FUN12 ( VAR2 ) ; FUN13 ( VAR2 ) ; FUN14 ( VAR2 ) ; FUN15 ( VAR2 ) ; FUN16 ( VAR2 ) ; FUN17 ( VAR2 ) ; FUN18 ( VAR2 , NULL ) ; FUN19 ( VAR2 ) ; }

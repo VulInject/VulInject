@@ -1,0 +1,43 @@
+int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct drbd_config_context VAR5;
+struct VAR6 *VAR7;
+enum drbd_ret_code VAR8;
+struct start_ov_parms VAR9;
+
+VAR8 = FUN2(&VAR5, VAR2, VAR4, VAR10);
+if (!VAR5.VAR11)
+return VAR8;
+if (VAR8 != VAR12)
+goto VAR13;
+
+VAR7 = VAR5.VAR7;
+
+
+VAR9.VAR14 = VAR7->VAR14;
+VAR9.VAR15 = VAR16;
+if (VAR4->VAR17[VAR18]) {
+int VAR19 = FUN3(&VAR9, VAR4);
+if (VAR19) {
+VAR8 = VAR20;
+FUN4(VAR5.VAR11, FUN5(VAR19));
+goto VAR13;
+}
+}
+FUN6(&VAR5.VAR21->VAR22);
+
+
+VAR7->VAR14 = VAR9.VAR14 & ~(VAR23-1);
+VAR7->VAR15 = VAR9.VAR15;
+
+
+FUN7(VAR7);
+FUN8(VAR7->VAR24, !FUN9(VAR25, &VAR7->VAR26));
+VAR8 = FUN10(VAR7, FUN11(VAR27, VAR28));
+FUN12(VAR7);
+
+FUN13(&VAR5.VAR21->VAR22);
+VAR13:
+FUN14(&VAR5, VAR4, VAR8);
+return 0;
+}

@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * VAR2 ; if ( VAR3 -> VAR4 ) { return FUN2 ( VAR3 -> VAR4 ) ; } VAR2 = FUN3 ( sizeof ( VAR1 ) ) ; if ( FUN4 ( VAR2 == NULL ) ) { FUN5 ( VAR5 , NULL ) ; return ( VAR6 * ) & VAR7 ; } FUN6 ( & VAR2 -> VAR8 , VAR9 , NULL , VAR10 ) ; VAR2 -> VAR3 = VAR3 ; VAR2 -> VAR11 = 0 ; return & VAR2 -> VAR8 ; }

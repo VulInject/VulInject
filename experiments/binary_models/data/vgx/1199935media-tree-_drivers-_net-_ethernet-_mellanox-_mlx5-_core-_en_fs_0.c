@@ -1,0 +1,41 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = &VAR2->VAR5.VAR6.VAR4;
+struct mlx5_flow_table_attr VAR7 = {};
+int VAR8;
+
+VAR4->VAR9 = 0;
+
+VAR7.VAR10 = VAR11;
+VAR7.VAR12 = VAR13;
+VAR7.VAR14 = VAR15;
+
+VAR4->VAR16 = FUN2(VAR2->VAR5.VAR17, &VAR7);
+
+if (FUN3(VAR4->VAR16)) {
+VAR8 = FUN4(VAR4->VAR16);
+VAR4->VAR16 = NULL;
+return VAR8;
+}
+VAR4->VAR18 = FUN5(VAR19, sizeof(*VAR4->VAR18), VAR20);
+if (!VAR4->VAR18) {
+VAR8 = -VAR21;
+goto VAR22;
+}
+
+VAR8 = FUN6(VAR4);
+if (VAR8)
+goto VAR23;
+
+FUN7(VAR2);
+
+return 0;
+
+VAR23:
+FUN8(VAR4->VAR18);
+VAR22:
+FUN9(VAR4->VAR16);
+VAR4->VAR16 = NULL;
+
+return VAR8;
+}

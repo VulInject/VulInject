@@ -1,0 +1,1 @@
+int main ( int argc , char * * argv ) { int VAR1 ; int VAR2 = 0 ; int VAR3 ; int VAR4 = VAR5 ; }

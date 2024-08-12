@@ -1,0 +1,1 @@
+pid_t FUN1 ( const char * VAR1 ) { int VAR2 ; pid_t VAR3 ; char VAR4 [ 16 ] ; char * VAR5 ; int VAR6 ; if ( ( ( VAR6 = read ( VAR2 , VAR4 , sizeof ( VAR4 ) ) ) ) == - 1 ) { close ( VAR2 ) ; return - 1 ; } close ( VAR2 ) ; if ( VAR6 == 0 ) { VAR7 = VAR8 ; return - 1 ; } VAR3 = ( VAR9 ) FUN2 ( VAR4 , & VAR5 , 10 ) ; if ( * VAR5 && * VAR5 != '' ) { return - 1 ; } return VAR3 ; }

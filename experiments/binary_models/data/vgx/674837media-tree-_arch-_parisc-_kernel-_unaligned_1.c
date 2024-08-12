@@ -1,0 +1,1 @@
+int unaligned_enabled VAR1 = 1 ; static int FUN1 ( struct VAR2 * VAR3 , int VAR4 ) { unsigned long VAR5 = VAR3 -> VAR6 ; cfs_time_t VAR7 = 0 ; int VAR8 ; FUN2 ( "" VAR9 "" VAR9 "" , VAR3 -> VAR10 , VAR3 -> VAR6 , VAR4 ) ; __volatile__ FUN2 ( "" VAR9 "" , VAR7 ) ; if ( VAR4 ) { VAR3 -> VAR11 [ VAR4 ] = VAR7 ; } return VAR8 ; }

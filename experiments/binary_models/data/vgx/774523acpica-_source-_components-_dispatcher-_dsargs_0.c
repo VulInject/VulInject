@@ -1,0 +1,34 @@
+FUN1 (
+VAR1     *VAR2)
+{
+VAR3     *VAR4;
+ACPI_STATUS             VAR5;
+
+
+FUN2 (VAR6, VAR2);
+
+
+if (VAR2->VAR7.VAR8 & VAR9)
+{
+FUN3 (VAR10);
+}
+
+
+
+VAR4 = VAR2->VAR11.VAR4;
+if (!VAR4)
+{
+FUN4 ((VAR12,
+"",
+VAR2));
+FUN3 (VAR13);
+}
+
+FUN5 ((VAR14, ""));
+
+
+
+VAR5 = FUN6 (VAR4, VAR4,
+VAR2->VAR11.VAR15, VAR2->VAR11.VAR16);
+FUN3 (VAR5);
+}

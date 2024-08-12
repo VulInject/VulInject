@@ -1,0 +1,41 @@
+void FUN1(void)
+{
+if (VAR1) {
+int VAR2;
+
+FUN2(&VAR3);
+for (VAR2 = 0; VAR2 < VAR4; VAR2++) {
+FUN2(&VAR1[VAR2].VAR5);
+FUN3(VAR1[VAR2].VAR6);
+FUN4(&VAR1[VAR2].VAR5);
+}
+FUN3(VAR1);
+FUN4(&VAR3);
+}
+if (VAR7) {
+struct VAR8 *VAR9;
+struct VAR10 *VAR11;
+int VAR2;
+
+FUN2(&VAR12);
+for (VAR2 = 0; VAR2 < (1 << VAR13); VAR2++) {
+int VAR14;
+
+FUN5(VAR9, VAR11,
+&VAR7[VAR2],
+VAR15) {
+VAR14 = FUN6(VAR9);
+if (VAR14)
+FUN7(VAR16 ""
+""
+""
+"",
+VAR17, VAR14);
+}
+}
+FUN3(VAR7);
+FUN4(&VAR12);
+}
+FUN8();
+return;
+}

@@ -1,0 +1,71 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+if (VAR2->VAR5) {
+FUN2(VAR2->VAR6, ""1.0\""VAR7-8\"");
+if (VAR2->VAR8==VAR9) return;
+FUN2(VAR2->VAR6, "",
+(VAR2->VAR8==VAR10) ? "" :
+(VAR2->VAR8==VAR11) ? "" :
+VAR2->VAR12 ? "" : ""
+);
+}
+if (VAR2->VAR8==VAR10) return;
+if (VAR2->VAR13) {
+FUN2(VAR2->VAR6, ""VAR14:VAR15:VAR16:VAR17:2005\"");
+if (VAR4) {
+VAR18 *VAR19 = (VAR18 *)VAR4;
+u32 VAR20, VAR21;
+FUN2(VAR2->VAR6, "");
+VAR21 = FUN3(VAR19->VAR22);
+for (VAR20=0; VAR20<VAR21; VAR20++) {
+GF_LASERConfig VAR23;
+VAR24 *VAR25 = (VAR24 *)FUN4(VAR19->VAR22, VAR20);
+if (!VAR25 || !VAR25->VAR26) continue;
+if (VAR25->VAR26->VAR27 != VAR28) continue;
+if (VAR25->VAR26->VAR29 != 0x09) continue;
+if (!VAR25->VAR26->VAR30 || !VAR25->VAR26->VAR30->VAR31) continue;
+FUN5(VAR25->VAR26->VAR30, &VAR23);
+FUN6((VAR3*)&VAR23, VAR2->VAR6, 1, 1);
+}
+FUN2(VAR2->VAR6, "");
+}
+return;
+}
+
+if (!VAR2->VAR12) {
+
+if (VAR2->VAR5) {
+FUN2(VAR2->VAR6, ""VAR14:VAR15:VAR16:VAR32:VAR33:2002\""VAR34:
+FUN2(VAR2->VAR6, "");
+if (VAR4) FUN6(VAR4, VAR2->VAR6, 1, 1);
+FUN2(VAR2->VAR6, "");
+FUN2(VAR2->VAR6, "");
+if (!VAR4) {
+FUN2(VAR2->VAR6, "");
+}
+} else {
+if (VAR2->VAR8==VAR35) {
+FUN2(VAR2->VAR6, "");
+} else {
+
+if (VAR4) FUN6(VAR4, VAR2->VAR6, 0, 0);
+}
+FUN2(VAR2->VAR6, "");
+}
+} else {
+if (VAR2->VAR5) {
+FUN2(VAR2->VAR6, ""VAR36
+
+
+
+FUN2(VAR2->VAR6, ""VAR34:
+
+FUN2(VAR2->VAR6, "");
+FUN2(VAR2->VAR6, ""X3D File VAR37/Dumped by GPAC VAR38 %VAR39 - %VAR39\""VAR40\"", FUN7(), FUN8() );
+FUN2(VAR2->VAR6, "");
+FUN2(VAR2->VAR6, "");
+} else {
+FUN2(VAR2->VAR6, "");
+}
+}
+}

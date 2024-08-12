@@ -1,0 +1,122 @@
+int
+FUN1(void *VAR1, VAR2 *VAR3)
+{
+struct VAR4 *VAR5 = VAR1;
+struct VAR6 *VAR7 = &VAR5->VAR8;
+struct ad1848_volume VAR9;
+int VAR10 = VAR11;
+
+FUN2(("", VAR3->VAR12, VAR3->VAR13));
+
+if (!FUN3(VAR5) && VAR3->VAR12 > VAR14)
+return VAR15;
+
+switch (VAR3->VAR12) {
+
+case VAR16:	
+if (VAR3->VAR13 == VAR17) {
+if (FUN3(VAR5))
+VAR3->VAR18.VAR19 = VAR7->VAR20[VAR21][VAR22];
+else
+VAR3->VAR18.VAR19 =
+VAR5->VAR23 & VAR24 ? 0 : 1;
+VAR10 = 0;
+}
+break;
+
+case VAR25:
+if (VAR3->VAR13 == VAR17) {
+if (FUN3(VAR5))
+VAR3->VAR18.VAR19 = VAR7->VAR20[VAR26][VAR22];
+else
+VAR3->VAR18.VAR19 =
+VAR5->VAR23 & VAR27 ? 1 : 0;
+VAR10 = 0;
+}
+break;
+
+case VAR14:
+if (VAR3->VAR13 == VAR17) {
+if (FUN3(VAR5))
+VAR3->VAR18.VAR19 = VAR7->VAR20[VAR28][VAR22];
+else
+VAR3->VAR18.VAR19 =
+VAR5->VAR23 & VAR29 ? 1 : 0;
+VAR10 = 0;
+}
+break;
+
+case VAR30:
+if (VAR3->VAR13 == VAR17) {
+VAR3->VAR18.VAR19 = VAR7->VAR20[VAR31][VAR22];
+VAR10 = 0;
+}
+break;
+
+case VAR32:
+if (VAR3->VAR13 == VAR17) {
+VAR3->VAR18.VAR19 = VAR7->VAR20[VAR33][VAR22];
+VAR10 = 0;
+}
+break;
+
+case VAR34:
+if (VAR3->VAR13 == VAR35) {
+VAR9.VAR36 = VAR7->VAR37[VAR28][VAR22];
+VAR9.VAR38 = VAR7->VAR37[VAR28][VAR39];
+if (FUN4(VAR3, &VAR9))
+VAR10 = 0;
+}
+break;
+
+case VAR40:	
+if (VAR3->VAR13 == VAR35) {
+VAR9.VAR36 = VAR7->VAR37[VAR21][VAR22];
+VAR9.VAR38 = VAR7->VAR37[VAR21][VAR39];
+if (FUN4(VAR3, &VAR9))
+VAR10 = 0;
+}
+break;
+
+case VAR41:	
+if (VAR3->VAR13 == VAR35) {
+VAR9.VAR36 = VAR7->VAR37[VAR26][VAR22];
+VAR9.VAR38 = VAR7->VAR37[VAR26][VAR39];
+if (FUN4(VAR3, &VAR9))
+VAR10 = 0;
+}
+break;
+
+
+case VAR42:
+if (VAR3->VAR13 == VAR35) {
+VAR9.VAR36 = VAR7->VAR37[VAR33][VAR22];
+VAR9.VAR38 = VAR7->VAR37[VAR33][VAR39];
+if (FUN4(VAR3, &VAR9))
+VAR10 = 0;
+}
+break;
+
+case VAR43:		
+if (VAR3->VAR13 == VAR35) {
+VAR9.VAR36 = VAR7->VAR37[VAR31][VAR22];
+VAR9.VAR38 = VAR7->VAR37[VAR31][VAR39];
+if (FUN4(VAR3, &VAR9))
+VAR10 = 0;
+}
+break;
+
+
+case VAR44:
+if (VAR3->VAR13 == VAR17) {
+
+VAR3->VAR18.VAR19 = 0;
+}
+break;
+
+default:
+return VAR15;
+
+}
+return VAR10;
+}

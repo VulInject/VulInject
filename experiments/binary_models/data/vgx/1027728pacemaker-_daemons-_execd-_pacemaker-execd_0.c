@@ -1,0 +1,26 @@
+static VAR1
+FUN1(gpointer VAR2)
+{
+FUN2("", FUN3());
+if (VAR3) {
+VAR3->VAR4->FUN4(VAR3, VAR5);
+VAR3->VAR4->FUN5(VAR3);
+FUN6(VAR3);
+}
+if (VAR6) {
+FUN7(VAR6);
+}
+
+FUN8();
+FUN9();
+
+FUN10();
+FUN11(VAR7);
+
+if (VAR8) {
+FUN12(VAR8);
+}
+
+FUN13(VAR9);
+return VAR10;
+}

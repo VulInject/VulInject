@@ -1,0 +1,7 @@
+static VAR1
+FUN1(RD_NTHANDLE VAR2, VAR3 * VAR4, uint32 VAR5, uint64 VAR6, VAR7 * VAR8)
+{
+FUN2(VAR6);  
+*VAR8 = read(VAR2, VAR4, VAR5);
+return VAR9;
+}

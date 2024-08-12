@@ -1,0 +1,1 @@
+FUN1 ( ) { int VAR1 ; TCGv VAR2 ; TCGv VAR3 ; VAR1 = ( VAR4 & 0x100 ) != 0 ; FUN2 ( VAR5 , VAR2 , VAR6 , VAR1 , NULL ) ; VAR3 = FUN3 ( FUN4 ( VAR4 , 9 ) ) ; if ( VAR1 ) { FUN5 ( VAR7 , VAR3 , VAR2 ) ; } else { FUN6 ( VAR7 , VAR3 , VAR2 ) ; } FUN7 ( VAR8 , VAR9 ) ; }

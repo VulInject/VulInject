@@ -1,0 +1,66 @@
+static int FUN1(struct VAR1 *VAR2, int VAR3)
+{
+int VAR4 = 0;
+FUN2("");
+
+
+if (VAR2->VAR5)
+FUN3(VAR2);
+
+if (VAR2->VAR6) {
+VAR7 *VAR8 = VAR2->VAR6;
+
+if ((VAR8->VAR9 != NULL)
+&& (VAR8->VAR9->VAR10 != VAR11))
+FUN4(VAR8->VAR9, VAR2);
+
+if ((VAR8->VAR12 != NULL)
+&& (VAR8->VAR12->VAR10 != VAR11))
+FUN4(VAR8->VAR12, VAR2);
+
+if (VAR2->VAR13 != NULL)
+FUN4(VAR2->VAR13, VAR2);
+
+if (VAR8->VAR14) {
+if (VAR8->VAR15 != 0) {
+struct drm_agp_binding VAR16;
+struct drm_agp_buffer VAR17;
+
+VAR16.VAR18 = VAR8->VAR15;
+FUN5(VAR2, &VAR16);
+
+VAR17.VAR18 = VAR8->VAR15;
+FUN6(VAR2, &VAR17);
+
+VAR8->VAR19 = NULL;
+VAR8->VAR20 = 0;
+VAR8->VAR15 = 0;
+}
+
+if ((VAR2->VAR21 != NULL) && VAR2->VAR21->VAR22)
+VAR4 = FUN7(VAR2);
+}
+
+VAR8->VAR9 = NULL;
+VAR8->VAR12 = NULL;
+VAR8->VAR23 = NULL;
+VAR8->VAR24 = NULL;
+VAR2->VAR13 = NULL;
+
+if (VAR3) {
+VAR8->VAR25 = NULL;
+VAR8->VAR26 = NULL;
+VAR8->VAR14 = 0;
+}
+
+memset(&VAR8->VAR27, 0, sizeof(VAR8->VAR27));
+VAR8->VAR28 = 0;
+memset(VAR8->VAR29, 0,
+sizeof(VAR8->VAR29));
+
+if (VAR8->VAR30 != NULL)
+FUN8(VAR2);
+}
+
+return VAR4;
+}

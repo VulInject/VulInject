@@ -1,0 +1,1 @@
+int main ( int argc , char * argv [ ] ) { VAR1 * VAR2 ; VAR3 * VAR4 ; VAR5 * VAR6 = NULL ; int VAR7 ; int VAR8 ; if ( FUN1 ( argv [ 0 ] ) ) { FUN2 ( "" ) ; } FUN3 ( VAR9 ) ; FUN4 ( VAR10 , "" ) ; { char * VAR11 ; VAR11 = FUN5 ( argv [ 0 ] ) ; FUN6 ( VAR11 ) ; } }

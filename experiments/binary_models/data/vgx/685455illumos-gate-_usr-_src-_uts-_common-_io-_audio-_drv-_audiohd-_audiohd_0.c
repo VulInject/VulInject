@@ -1,0 +1,84 @@
+static int
+FUN1(VAR1 *VAR2)
+{
+uint16_t		VAR3;
+VAR4		*VAR5;
+uint8_t			VAR6;
+int			VAR7;
+
+VAR3 = VAR2->VAR8;
+VAR5 = VAR2->VAR5;
+
+VAR6 = FUN2(VAR3 + VAR9);
+
+VAR6 &= ~VAR10;
+FUN3(VAR3 + VAR9, VAR6);
+
+
+FUN4(40);
+
+
+VAR6 |= VAR11;
+FUN3(VAR3 + VAR9, VAR6);
+
+for (VAR7 = 0; VAR7 < VAR12; VAR7++) {
+
+FUN4(50);
+VAR6 = FUN2(VAR3 + VAR9);
+VAR6 &= VAR11;
+if (VAR6)
+break;
+}
+
+if (!VAR6) {
+FUN5(VAR5->VAR13, "",
+VAR2->VAR14);
+return (VAR15);
+}
+
+
+FUN4(300);
+
+
+VAR6 &= ~VAR11;
+FUN3(VAR3 + VAR9, VAR6);
+
+for (VAR7 = 0; VAR7 < VAR12; VAR7++) {
+
+FUN4(50);
+VAR6 = FUN2(VAR3 + VAR9);
+VAR6 &= VAR11;
+if (!VAR6)
+break;
+}
+
+if (VAR6) {
+FUN5(VAR5->VAR13,
+""
+"", VAR2->VAR14, VAR6);
+return (VAR15);
+}
+
+FUN6(VAR3 + VAR16,
+(VAR17)VAR2->VAR18);
+FUN6(VAR3 + VAR19,
+(VAR17)(VAR2->VAR18 >> 32));
+FUN7(VAR3 + VAR20,
+VAR21 - 1);
+FUN6(VAR3 + VAR22, VAR2->VAR23);
+
+FUN7(VAR3 + VAR24,
+VAR2->VAR25 << 4 | VAR2->VAR26 - 1);
+
+
+FUN3(VAR3 + VAR27,
+VAR28 | VAR29 |
+VAR30);
+
+
+FUN3(VAR3 + VAR9 +
+VAR31,
+(VAR2->VAR14) << VAR32);
+
+return (0);
+}

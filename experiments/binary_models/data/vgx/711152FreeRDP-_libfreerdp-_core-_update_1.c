@@ -1,0 +1,1 @@
+static BOOL FUN1 ( VAR1 * update , VAR2 * VAR3 ) { UINT16 VAR4 ; FUN2 ( update ) ; if ( ! FUN3 ( VAR5 , VAR3 , 6 ) ) { return VAR6 ; } FUN4 ( VAR3 , NULL ) ; FUN5 ( VAR3 , VAR4 ) ; FUN4 ( VAR3 ) ; while ( VAR4 > 0 ) { if ( ! FUN6 ( update , VAR3 ) ) { FUN7 ( VAR5 , "" ) ; return VAR6 ; } VAR4 -- ; } return VAR7 ; }

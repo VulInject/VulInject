@@ -1,0 +1,91 @@
+bool FUN1(struct VAR1 *VAR2) {
+bool VAR3 = false;
+
+FUN2(&VAR2->VAR4.VAR5);
+VAR2->VAR4.VAR6 = false;
+
+if(!VAR2->VAR4.VAR7)
+VAR3 = true;
+
+else {
+
+
+
+FUN3(&VAR2->VAR4.VAR5);
+FUN4(VAR8, VAR2);
+FUN2(&VAR2->VAR4.VAR5);
+
+if(!VAR2->VAR4.VAR7)
+VAR3 = true;
+
+else {
+
+
+
+FUN3(&VAR2->VAR4.VAR5);
+usec_t VAR9 = FUN5();
+size_t VAR10 = FUN6(VAR8, (VAR11)VAR2->VAR12, VAR2);
+size_t VAR13 = FUN7(VAR8, (VAR11)VAR2->VAR12, VAR2);
+VAR9 = FUN5() - VAR9;
+FUN2(&VAR2->VAR4.VAR5);
+
+if(!VAR2->VAR4.VAR7)
+VAR3 = true;
+
+else if(!VAR10 && !VAR13) {
+
+
+time_t VAR14 = FUN8();
+
+if(!VAR2->VAR4.VAR15) {
+
+VAR2->VAR4.VAR15 = VAR14 + 120;
+FUN9(true, ""
+""
+""
+""
+"",
+VAR2->VAR16, VAR2->VAR12->VAR17.VAR18,
+VAR2->VAR4.VAR7,
+VAR2->VAR4.VAR19[VAR20],
+VAR2->VAR4.VAR19[VAR21],
+VAR10,
+VAR13,
+VAR9);
+}
+
+else if(VAR14 > VAR2->VAR4.VAR15) {
+
+VAR3 = true;
+FUN9(true, ""
+""
+""
+""
+"",
+VAR2->VAR16, VAR2->VAR12->VAR17.VAR18,
+VAR2->VAR4.VAR7,
+VAR2->VAR4.VAR19[VAR20],
+VAR2->VAR4.VAR19[VAR21],
+VAR10,
+VAR13,
+VAR9);
+}
+}
+else
+FUN9(true, ""
+""
+""
+"",
+VAR2->VAR16, VAR2->VAR12->VAR17.VAR18,
+VAR2->VAR4.VAR7,
+VAR2->VAR4.VAR19[VAR20],
+VAR2->VAR4.VAR19[VAR21],
+VAR10,
+VAR13,
+VAR9);
+}
+}
+FUN3(&VAR2->VAR4.VAR5);
+
+return VAR3;
+}

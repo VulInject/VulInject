@@ -1,0 +1,1 @@
+int sethostid ( long VAR1 ) { const int VAR2 [ 2 ] { CTL_KERN VAR3 } ; ; return ( 0 ) ; }

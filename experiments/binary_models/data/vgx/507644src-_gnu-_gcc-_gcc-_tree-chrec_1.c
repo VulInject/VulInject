@@ -1,0 +1,1 @@
+FUN1 ( ) { tree VAR1 ; if ( ! FUN2 ( VAR2 ) ) { return VAR3 ; } VAR1 = FUN3 ( VAR2 , NULL ) ; if ( FUN4 ( VAR1 ) != VAR4 ) { return VAR3 ; } if ( FUN5 ( VAR1 ) ) { return VAR5 ; } else { return VAR6 ; } }

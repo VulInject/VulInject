@@ -1,0 +1,36 @@
+static void FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = FUN2(VAR3, VAR4, VAR2->VAR5.VAR6);
+    ram_addr_t VAR7;
+    uint8_t VAR8;
+    int VAR9;
+    FUN3(VAR2->VAR10);
+    FUN4(VAR2->VAR11 + VAR12, VAR2->VAR10->VAR13);
+    FUN4(VAR2->VAR11 + VAR14, FUN5(VAR2));
+    FUN4(VAR2->VAR11 + VAR15, VAR2->VAR16);
+    FUN4(VAR2->VAR11 + VAR17, VAR2->VAR10->VAR18);
+    VAR8 = FUN5(VAR2);
+    FUN4(VAR2->VAR11 + VAR14, VAR8);
+    for (VAR9 = 0; VAR9 < VAR8; VAR9++)
+    {
+        ram_addr_t VAR19 = (VAR2->VAR11 + VAR20) + (VAR9 * VAR21);
+        ram_addr_t VAR22;
+        VAR22 = FUN6(VAR4);
+        FUN7(VAR2->VAR10, VAR9, VAR22);
+        FUN8(VAR2->VAR10, VAR9, VAR9);
+        FUN9(VAR19 + VAR23, VAR22);
+        FUN10(VAR19 + VAR24, FUN11(VAR2->VAR10, VAR9));
+    }
+    VAR7 = VAR2->VAR11;
+    VAR7 += VAR20;
+    VAR7 += VAR8 * VAR21;
+    FUN12(VAR7, VAR2->VAR25);
+    VAR2->VAR26 = VAR7 + VAR2->VAR16;
+    VAR7 += VAR2->VAR16 * 2;
+    if (VAR2->VAR10->VAR27)
+    {
+        VAR2->VAR10->FUN13(VAR2->VAR10, VAR2->VAR10->VAR28);
+    }
+    FUN14(VAR7, VAR2->VAR10->VAR28, VAR2->VAR10->VAR18, 1);
+    VAR7 += VAR2->VAR10->VAR18;
+}

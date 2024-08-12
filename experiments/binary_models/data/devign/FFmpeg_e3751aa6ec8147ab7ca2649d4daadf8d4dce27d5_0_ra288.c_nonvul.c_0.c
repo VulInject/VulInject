@@ -1,0 +1,11 @@
+static void FUN1(VAR1 *VAR2)
+{
+    float VAR3[37];
+    float VAR4[11];
+    FUN2(36, 40, 35, VAR2->VAR5 + 1, VAR3, VAR2->VAR6, VAR2->VAR7, VAR8);
+    if (!FUN3(VAR3, VAR2->VAR9, 36))
+        FUN4(VAR2->VAR9, VAR2->VAR9, VAR10, 36);
+    FUN2(10, 8, 20, VAR2->VAR11 + 2, VAR4, VAR2->VAR12, VAR2->VAR13, VAR14);
+    if (!FUN3(VAR4, VAR2->VAR15, 10))
+        FUN4(VAR2->VAR15, VAR2->VAR15, VAR16, 10);
+}

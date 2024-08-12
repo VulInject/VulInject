@@ -1,0 +1,34 @@
+VAR1 *FUN1(void)
+{
+VAR1 *VAR2 = FUN2("");
+VAR3 *VAR4 = FUN3("");
+FUN4(VAR4, VAR5);
+FUN5(VAR2, VAR4);
+
+VAR4 = FUN3("");
+FUN4(VAR4, VAR6);
+FUN5(VAR2, VAR4);
+
+VAR4 = FUN3("");
+FUN4(VAR4, VAR7);
+FUN5(VAR2, VAR4);
+
+return(VAR2);
+}
+
+void FUN6()
+{
+}
+
+int main(void)
+{
+int VAR8 = 0;
+VAR9 *VAR10 = NULL;
+FUN6();
+VAR10 = FUN7(FUN1());
+FUN8(VAR10, "");
+FUN9(VAR10, VAR11);
+VAR8 = FUN10(VAR10);
+FUN11(VAR10);
+return(VAR8);
+}

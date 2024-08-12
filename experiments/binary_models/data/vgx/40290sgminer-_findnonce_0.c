@@ -1,0 +1,34 @@
+void FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+uint32_t VAR5[16];
+int VAR6, VAR7;
+for (VAR6 = 0; VAR6 < 8; ++VAR6)  VAR5[VAR6] = VAR2->VAR8[VAR6];
+
+VAR5[8] = VAR9[0];
+VAR5[9] = VAR9[1];
+VAR5[10] = VAR9[2];
+VAR5[11] = VAR9[3];
+VAR5[12] = VAR9[4];
+VAR5[13] = VAR9[5];
+VAR5[14] = VAR9[6];
+VAR5[15] = VAR9[7];
+
+VAR5[12] ^= VAR2->VAR10;
+VAR5[13] ^= VAR2->VAR10;
+
+for (VAR7 = 0; VAR7 < VAR11; ++VAR7)
+{
+
+FUN2(0, 4, 8, 12, 0);
+FUN2(1, 5, 9, 13, 2);
+FUN2(2, 6, 10, 14, 4);
+FUN2(3, 7, 11, 15, 6);
+
+FUN2(0, 5, 10, 15, 8);
+FUN2(1, 6, 11, 12, 10);
+FUN2(2, 7, 8, 13, 12);
+FUN2(3, 4, 9, 14, 14);
+}
+
+for (VAR6 = 0; VAR6 < 16; ++VAR6)  VAR2->VAR8[VAR6 & 7] ^= VAR5[VAR6];
+}

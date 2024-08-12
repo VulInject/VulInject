@@ -1,0 +1,58 @@
+static void FUN1(int VAR1, int VAR2, int VAR3)
+{
+    VAR4 *VAR5;
+    VAR6 = FUN2();
+    if (!VAR6)
+        FUN3(1);
+    VAR6->VAR7 = FUN4(VAR8, NULL, NULL);
+    if (!VAR6->VAR7)
+        FUN3(1);
+    VAR6->VAR9 = FUN5(VAR10, sizeof(VAR10), VAR11, NULL, NULL, VAR12, NULL);
+    if (!VAR6->VAR9)
+        FUN3(1);
+    VAR6->VAR13 |= VAR14;
+    VAR5 = FUN6(VAR6, NULL);
+    if (!VAR5)
+        FUN3(1);
+    VAR5->VAR15->VAR16 = VAR17;
+    VAR5->VAR15->VAR18 = VAR19;
+    VAR5->VAR15->VAR20 = 640;
+    VAR5->VAR15->VAR21 = 480;
+    VAR5->VAR22.VAR23 = 1;
+    VAR5->VAR22.VAR24 = 30;
+    VAR5->VAR15->VAR25 = sizeof(VAR26);
+    VAR5->VAR15->VAR27 = FUN7(VAR5->VAR15->VAR25 + VAR28);
+    if (!VAR5->VAR15->VAR27)
+        FUN3(1);
+    memcpy(VAR5->VAR15->VAR27, VAR26, sizeof(VAR26));
+    VAR5->VAR15->VAR13 |= VAR29;
+    VAR30 = VAR5;
+    VAR5 = FUN6(VAR6, NULL);
+    if (!VAR5)
+        FUN3(1);
+    VAR5->VAR15->VAR16 = VAR31;
+    VAR5->VAR15->VAR18 = VAR32;
+    VAR5->VAR15->VAR33 = 44100;
+    VAR5->VAR15->VAR34 = 2;
+    VAR5->VAR22.VAR23 = 1;
+    VAR5->VAR22.VAR24 = 44100;
+    VAR5->VAR15->VAR25 = sizeof(VAR35);
+    VAR5->VAR15->VAR27 = FUN7(VAR5->VAR15->VAR25 + VAR28);
+    if (!VAR5->VAR15->VAR27)
+        FUN3(1);
+    memcpy(VAR5->VAR15->VAR27, VAR35, sizeof(VAR35));
+    VAR5->VAR15->VAR13 |= VAR29;
+    VAR36 = VAR5;
+    if (FUN8(VAR6, &VAR37) < 0)
+        FUN3(1);
+    FUN9(&VAR37);
+    VAR38 = 0;
+    VAR39 = 30;
+    VAR40 = VAR30->VAR22.VAR24 / VAR3;
+    VAR41 = 1024 * VAR36->VAR22.VAR24 / VAR36->VAR15->VAR33;
+    if (VAR2)
+        VAR2 = 2048 * VAR36->VAR22.VAR24 / VAR36->VAR15->VAR33;
+    VAR42 = VAR1;
+    VAR43 = VAR42 ? -VAR40 : 0;
+    VAR44 = -VAR2;
+}

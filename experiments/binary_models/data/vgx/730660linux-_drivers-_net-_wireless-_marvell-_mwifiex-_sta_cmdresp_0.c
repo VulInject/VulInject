@@ -1,0 +1,28 @@
+static int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 =
+&VAR4->VAR7.VAR8;
+int VAR9;
+
+VAR9 = FUN2(VAR6->VAR10.VAR11);
+if (VAR9 > sizeof(VAR6->VAR10.VAR6))
+return -VAR12;
+
+if (FUN2(VAR6->VAR13) == VAR14) {
+if ((FUN2(VAR6->VAR10.VAR15) & VAR16)) {
+FUN3(VAR2->VAR17, VAR18,
+"");
+VAR2->VAR19 = true;
+VAR2->VAR20 = false;
+VAR2->VAR21 = true;
+}
+}
+
+memset(VAR2->VAR22.VAR10.VAR6, 0,
+sizeof(VAR6->VAR10.VAR6));
+VAR2->VAR22.VAR10.VAR11 = FUN4(VAR9);
+memcpy(VAR2->VAR22.VAR10.VAR6, VAR6->VAR10.VAR6, VAR9);
+
+return 0;
+}

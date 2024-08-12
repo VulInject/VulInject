@@ -1,0 +1,11 @@
+static void FUN1(VAR1 *VAR2, long VAR3)
+{
+    VAR4 *VAR5;
+    VAR5 = VAR2->VAR6.VAR7 + (FUN2(&VAR2->VAR6) >> 3);
+    VAR5 -= VAR3;
+    memcpy(VAR5, VAR2->VAR8[VAR2->VAR9 ^ 1] + VAR10 + VAR2->VAR11 - VAR3, VAR3);
+    FUN3(&VAR2->VAR6, VAR5, (VAR2->VAR12 + VAR3) * 8);
+    VAR2->VAR9 ^= 1;
+    VAR2->VAR13 = &VAR2->VAR8[VAR2->VAR9][VAR10];
+    VAR2->VAR11 = VAR2->VAR12;
+}

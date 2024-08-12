@@ -1,0 +1,72 @@
+static VAR1 FUN1(struct VAR2 *VAR3)
+{
+struct VAR4 *VAR5 = VAR3->VAR6;
+struct VAR7 *VAR8 = &VAR5->VAR9;
+
+if (VAR3->VAR10 == true) {
+if (FUN2(VAR3)->VAR11 == true) {
+if (VAR3->VAR12 == true) {
+int VAR13 = 0;
+u8 VAR14 = 0;
+
+FUN3("", VAR15);
+
+FUN4(VAR3, 0x3);
+
+do {
+VAR14 = FUN5(VAR3, VAR16);
+VAR13++;
+FUN3("", VAR15, VAR14, VAR13);
+FUN6(10);
+} while (VAR13 < 100 && (VAR14 != 0));
+
+if (VAR14 == 0) {
+
+VAR14 = FUN5(VAR3, VAR17|VAR18);
+VAR14 += 0x80;
+VAR14 |= FUN7(0);
+FUN8(VAR3, VAR17|VAR18, VAR14);
+FUN3("", VAR15, VAR14);
+FUN2(VAR3)->VAR19 = (VAR14 + 0x80) & 0x80;
+VAR13 = VAR14 = 0;
+do {
+VAR14 = FUN5(VAR3, VAR20);
+VAR13++;
+FUN3("", VAR15, VAR14, VAR13);
+FUN6(10);
+} while (VAR13 < 100 && (VAR14 != 0xEA));
+} else {
+FUN3(
+"",
+FUN9(VAR3, 0x1c0),
+FUN9(VAR3, 0x1c4),
+FUN9(VAR3, 0x1c8),
+FUN9(VAR3, 0x1cc)
+);
+}
+
+FUN3(
+"",
+FUN5(VAR3, VAR20),
+VAR13,
+FUN5(VAR3, VAR16)
+);
+
+FUN2(VAR3)->VAR21 = 0;
+
+} else {
+VAR8->VAR22++;
+FUN10(VAR3);
+
+FUN2(VAR3)->VAR21 = 1;
+}
+
+} else {
+VAR8->VAR22++;
+FUN10(VAR3);
+}
+} else
+VAR8->VAR23++;
+
+return VAR24;
+}

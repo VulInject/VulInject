@@ -1,0 +1,132 @@
+static int FUN1(struct VAR1 *VAR2, unsigned argc, char **argv)
+{
+int VAR3;
+struct VAR4 *VAR5;
+struct VAR6 *VAR7, *VAR8;
+struct VAR9 *VAR10;
+unsigned long VAR11;
+
+FUN2(&VAR12.mutex);
+
+if (argc != 2 && argc != 3) {
+VAR2->VAR13 = "";
+VAR3 = -VAR14;
+goto VAR15;
+}
+
+VAR5 = VAR2->private = FUN3(sizeof(*VAR5), VAR16);
+if (!VAR5) {
+VAR2->VAR13 = "";
+VAR3 = -VAR17;
+goto VAR15;
+}
+VAR5->VAR18 = FUN4(VAR2->VAR19);
+FUN5(&VAR5->VAR20);
+FUN6(&VAR5->VAR21);
+FUN7(&VAR5->VAR22);
+FUN7(&VAR5->VAR23);
+VAR5->VAR24 = VAR25;
+
+if (argc == 3) {
+VAR3 = FUN8(VAR2, argv[2], VAR26, &VAR8);
+if (VAR3) {
+VAR2->VAR13 = "";
+goto VAR27;
+}
+VAR5->VAR8 = VAR8;
+}
+
+VAR3 = FUN8(VAR2, argv[0], FUN9(VAR2->VAR19), &VAR7);
+if (VAR3) {
+VAR2->VAR13 = "";
+goto VAR28;
+}
+VAR5->VAR7 = VAR7;
+
+if (FUN10(argv[1], (unsigned long long *)&VAR5->VAR29, 0)) {
+VAR2->VAR13 = "";
+VAR3 = -VAR14;
+goto VAR30;
+}
+
+VAR10 = FUN11(VAR5->VAR7->VAR31->VAR32);
+if (!VAR10) {
+VAR2->VAR13 = "";
+VAR3 = -VAR14;
+goto VAR30;
+}
+
+VAR5->VAR33 = FUN12(VAR10);
+if (!VAR5->VAR33) {
+VAR2->VAR13 = "";
+VAR3 = -VAR14;
+goto VAR34;
+}
+FUN13(VAR5->VAR33);
+
+if (FUN14(VAR5->VAR33) == VAR35) {
+VAR2->VAR13 = "";
+VAR3 = -VAR14;
+goto VAR36;
+}
+
+VAR3 = FUN15(VAR5->VAR33->VAR37, VAR5->VAR29, &VAR5->VAR38);
+if (VAR3) {
+VAR2->VAR13 = "";
+goto VAR36;
+}
+
+VAR3 = FUN16(VAR2, VAR5->VAR33->VAR39);
+if (VAR3)
+goto VAR40;
+
+VAR2->VAR41 = 1;
+VAR2->VAR42 = true;
+VAR2->VAR43 = sizeof(struct VAR44);
+
+
+if (VAR5->VAR33->VAR45.VAR46) {
+VAR2->VAR47 = true;
+VAR2->VAR48 = 1;
+VAR2->VAR49 = false;
+}
+
+FUN17(&VAR12.mutex);
+
+FUN18(&VAR5->VAR33->VAR20, VAR11);
+if (VAR5->VAR33->VAR50) {
+FUN19(&VAR5->VAR33->VAR20, VAR11);
+FUN2(&VAR12.mutex); 
+VAR2->VAR13 = "";
+VAR3 = -VAR14;
+goto VAR40;
+}
+FUN20(&VAR5->VAR51, 1);
+FUN21(&VAR5->VAR52);
+FUN22(&VAR5->VAR53, &VAR5->VAR33->VAR54);
+FUN19(&VAR5->VAR33->VAR20, VAR11);
+
+FUN23();
+
+FUN24(VAR10);
+
+return 0;
+
+VAR40:
+FUN25(VAR5->VAR38);
+VAR36:
+FUN26(VAR5->VAR33);
+VAR34:
+FUN24(VAR10);
+VAR30:
+FUN27(VAR2, VAR5->VAR7);
+VAR28:
+if (VAR5->VAR8)
+FUN27(VAR2, VAR5->VAR8);
+VAR27:
+FUN28(VAR5);
+VAR15:
+FUN17(&VAR12.mutex);
+
+return VAR3;
+}

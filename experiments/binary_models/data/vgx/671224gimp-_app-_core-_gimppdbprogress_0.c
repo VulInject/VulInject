@@ -1,0 +1,18 @@
+FUN1 (VAR1 *VAR2,
+const VAR3          *VAR4)
+{
+VAR5 *VAR6;
+
+FUN2 (FUN3 (VAR2), NULL);
+FUN2 (VAR4 != NULL, NULL);
+
+for (VAR6 = VAR2->VAR7; VAR6; VAR6 = FUN4 (VAR6))
+{
+VAR8 *VAR9 = VAR6->VAR10;
+
+if (! FUN5 (VAR4, VAR9->VAR4))
+return VAR9;
+}
+
+return NULL;
+}

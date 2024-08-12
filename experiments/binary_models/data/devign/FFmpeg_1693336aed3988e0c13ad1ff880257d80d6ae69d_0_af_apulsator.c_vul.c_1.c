@@ -1,0 +1,30 @@
+static double FUN1(VAR1 *VAR2)
+{
+    double VAR3 = FUN2(100, VAR2->VAR4 / FUN2(1.99, FUN3(0.01, VAR2->VAR5)) + VAR2->VAR6);
+    double VAR7;
+    if (VAR3 > 1)
+        VAR3 = FUN4(VAR3, 1.);
+    switch (VAR2->VAR8)
+    {
+    case VAR9:
+        VAR7 = FUN5(VAR3 * 2 * VAR10);
+        break;
+    case VAR11:
+        if (VAR3 > 0.75)
+            VAR7 = (VAR3 - 0.75) * 4 - 1;
+        else if (VAR3 > 0.25)
+            VAR7 = -4 * VAR3 + 2;
+        else
+            VAR7 = VAR3 * 4;
+        break;
+    case VAR12:
+        VAR7 = VAR3 < 0.5 ? -1 : +1;
+        break;
+    case VAR13:
+        VAR7 = VAR3 * 2 - 1;
+        break;
+    case VAR14:
+        VAR7 = 1 - VAR3 * 2;
+        break;
+    }
+    return VAR7 * VAR2->VAR15;

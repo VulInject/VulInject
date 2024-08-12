@@ -1,0 +1,120 @@
+static VAR1
+FUN1(struct VAR2 *VAR3, struct VAR4 *VAR5, char *VAR6)
+{
+struct VAR7 *VAR8;
+char *VAR9;
+unsigned VAR10, VAR11;
+unsigned long VAR12;
+u8 VAR13, VAR14;
+int VAR15;
+const char *VAR16;
+
+VAR8 = FUN2(VAR3);
+VAR9 = VAR6;
+VAR10 = VAR17;
+FUN3(&VAR8->VAR18, VAR12);
+
+
+VAR11 = FUN4(VAR9, VAR10, ""
+""
+""
+"",
+VAR19, VAR20, VAR8->VAR21,
+FUN5(VAR8, VAR22),
+FUN5(VAR8, VAR23),
+FUN5(VAR8, VAR24),
+FUN5(VAR8, VAR25),
+FUN5(VAR8, VAR26));
+VAR10 -= VAR11;
+VAR9 += VAR11;
+
+
+VAR13 = FUN5(VAR8, VAR27);
+VAR11 = FUN4(VAR9, VAR10, "",
+VAR13, VAR28[(VAR13 & 0x01) + 1],
+VAR13 & (1 << VAR29) ? "" : "",
+VAR13 & (1 << VAR30) ? "" : "",
+VAR13 & (1 << VAR31) ? "" : "",
+VAR13 & (1 << VAR32) ? "" : "");
+VAR10 -= VAR11;
+VAR9 += VAR11;
+
+
+VAR13 = FUN5(VAR8, VAR33);
+if (VAR13 & (1 << VAR34)) {
+if (VAR13 & (1 << VAR35))
+VAR16 = "";
+else if (VAR8->VAR36.VAR37 == VAR38)
+VAR16 = "";
+else
+VAR16 = "";
+} else
+VAR16 = "";
+VAR11 = FUN4(VAR9, VAR10,
+"",
+FUN5(VAR8, VAR39), VAR13,
+FUN5(VAR8, VAR40), VAR16);
+VAR10 -= VAR11;
+VAR9 += VAR11;
+
+
+for (VAR15 = 0; VAR15 < 4; ++VAR15) {
+struct VAR41 *VAR42;
+
+VAR42 = &VAR8->VAR42[VAR15];
+if (VAR15 && !VAR42->VAR43)
+continue;
+
+VAR13 = FUN6(VAR42, VAR44);
+VAR14 = FUN6(VAR42, VAR45);
+VAR11 = FUN4(VAR9, VAR10,
+""
+"",
+VAR42->VAR42.VAR46, VAR13, VAR14,
+(VAR14 & (1 << VAR47)) ? "" : "",
+(VAR14 & (1 << VAR48)) ? "" : "",
+(VAR14 & (1 << VAR49)) ? "" : "",
+(VAR14 & (1 << VAR50)) ? "" : "",
+(VAR14 & (1 << VAR51)) ? "" : "",
+(VAR14 & (1 << VAR52)) ? "" : "",
+(VAR14 & (1 << VAR53)) ? "" : "",
+(VAR14 & (1 << VAR54)) ? "" : "",
+FUN6(VAR42, VAR55));
+VAR10 -= VAR11;
+VAR9 += VAR11;
+
+VAR11 = FUN4(VAR9, VAR10,
+""
+"",
+FUN6(VAR42, VAR56),
+FUN6(VAR42, VAR57),
+(FUN6(VAR42, VAR58) << 8) | FUN6(VAR42, VAR59),
+VAR13 & 0x0f,
+VAR42->VAR60 ? "" : "",
+FUN7(VAR13 >> 5),
+VAR42->VAR61 ? "" : "");
+VAR10 -= VAR11;
+VAR9 += VAR11;
+
+VAR11 = FUN4(VAR9, VAR10,
+"",
+((FUN6(VAR42, VAR62) & 0xff) << 16) |
+((FUN6(VAR42, VAR63) & 0xff) << 8) |
+((FUN6(VAR42, VAR64) & 0xff)));
+VAR10 -= VAR11;
+VAR9 += VAR11;
+
+VAR13 = FUN6(VAR42, VAR65) & 0x03;
+VAR14 = (FUN6(VAR42, VAR65) >> 2) & 0x03;
+VAR11 = FUN4(VAR9, VAR10,
+"",
+FUN8(VAR13),
+FUN8(VAR14));
+VAR10 -= VAR11;
+VAR9 += VAR11;
+}
+
+FUN9(&VAR8->VAR18, VAR12);
+
+return VAR17 - VAR10;
+}

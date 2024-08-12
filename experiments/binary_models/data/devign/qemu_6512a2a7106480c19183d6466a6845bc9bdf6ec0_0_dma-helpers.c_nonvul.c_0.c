@@ -1,0 +1,15 @@
+static VAR1 *FUN1(VAR2 *VAR3, VAR4 *VAR5, uint64_t VAR6, VAR7 *VAR8, void *VAR9, int VAR10)
+{
+    VAR11 *VAR12 = FUN2(sizeof(*VAR12));
+    VAR12->VAR3 = VAR3;
+    VAR12->VAR13 = FUN3(&VAR14, VAR3, VAR8, VAR9);
+    VAR12->VAR5 = VAR5;
+    VAR12->VAR6 = VAR6;
+    VAR12->VAR15 = 0;
+    VAR12->VAR16 = 0;
+    VAR12->VAR10 = VAR10;
+    VAR12->VAR17 = NULL;
+    FUN4(&VAR12->VAR18, VAR5->VAR19);
+    FUN5(VAR12, 0);
+    return VAR12->VAR13;
+}

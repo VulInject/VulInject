@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 , Pin VAR3 ) { FUN2 ( VAR4 ) ; VAR4 = FUN3 ( VAR2 , NULL ) ; VAR5 = VAR3 ; if ( FUN4 ( ) ) { FUN5 ( ) ; } }

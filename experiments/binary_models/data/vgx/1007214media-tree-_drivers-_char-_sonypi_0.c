@@ -1,0 +1,46 @@
+static VAR1 FUN1(int VAR2, void *VAR3)
+{
+u8 VAR4, VAR5, VAR6 = 0;
+int VAR7, VAR8;
+
+VAR4 = FUN2(VAR9.VAR10);
+VAR5 = FUN2(VAR9.VAR10 + VAR9.VAR11);
+
+for (VAR7 = 0; VAR12[VAR7].VAR13; VAR7++) {
+if (VAR9.VAR13 != VAR12[VAR7].VAR13)
+continue;
+if ((VAR5 & VAR12[VAR7].VAR14) !=
+VAR12[VAR7].VAR14)
+continue;
+if (!(VAR15 & VAR12[VAR7].VAR15))
+continue;
+for (VAR8 = 0; VAR12[VAR7].VAR16[VAR8].VAR6; VAR8++) {
+if (VAR4 == VAR12[VAR7].VAR16[VAR8].VAR14) {
+VAR6 = VAR12[VAR7].VAR16[VAR8].VAR6;
+goto VAR17;
+}
+}
+}
+
+if (VAR18)
+FUN3(VAR19
+"",
+VAR4, VAR5);
+
+return VAR20;
+
+VAR17:
+if (VAR18 > 1)
+FUN3(VAR21
+"", VAR4, VAR5);
+
+if (VAR22)
+FUN4(VAR6);
+
+FUN5(&VAR9.VAR23, (unsigned char *)&VAR6,
+sizeof(VAR6), &VAR9.VAR24);
+FUN6(&VAR9.VAR25, VAR26, VAR27);
+FUN7(&VAR9.VAR28);
+
+return VAR20;
+}

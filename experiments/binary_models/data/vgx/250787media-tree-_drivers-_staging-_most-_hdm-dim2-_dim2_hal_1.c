@@ -1,0 +1,1 @@
+static void FUN1 ( u8 VAR1 , u16 VAR2 ) { VAR3 . VAR4 . VAR5 = VAR2 ; VAR3 . VAR4 . VAR6 = FUN2 ( VAR1 , NULL ) ; VAR3 . VAR4 . VAR7 = VAR3 . VAR4 . VAR6 ; }

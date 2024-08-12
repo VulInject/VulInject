@@ -1,0 +1,1 @@
+static ssize_t FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , const char * VAR5 , size_t VAR6 ) { int VAR7 ; unsigned long VAR8 ; struct VAR9 * VAR10 = FUN2 ( VAR2 -> VAR11 ) ; VAR7 = FUN3 ( VAR5 , 16 , & VAR8 ) ; VAR10 -> VAR12 = VAR8 ; return VAR6 ; }

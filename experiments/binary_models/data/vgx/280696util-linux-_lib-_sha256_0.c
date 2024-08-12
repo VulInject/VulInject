@@ -1,0 +1,22 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+unsigned VAR3 = VAR2->VAR4 % 64;
+
+VAR2->VAR5[VAR3++] = 0x80;
+if (VAR3 > 56) {
+memset(VAR2->VAR5 + VAR3, 0, 64 - VAR3);
+VAR3 = 0;
+FUN2(VAR2, VAR2->VAR5);
+}
+memset(VAR2->VAR5 + VAR3, 0, 56 - VAR3);
+VAR2->VAR4 *= 8;
+VAR2->VAR5[56] = VAR2->VAR4 >> 56;
+VAR2->VAR5[57] = VAR2->VAR4 >> 48;
+VAR2->VAR5[58] = VAR2->VAR4 >> 40;
+VAR2->VAR5[59] = VAR2->VAR4 >> 32;
+VAR2->VAR5[60] = VAR2->VAR4 >> 24;
+VAR2->VAR5[61] = VAR2->VAR4 >> 16;
+VAR2->VAR5[62] = VAR2->VAR4 >> 8;
+VAR2->VAR5[63] = VAR2->VAR4;
+FUN2(VAR2, VAR2->VAR5);
+}

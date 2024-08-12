@@ -1,0 +1,61 @@
+static void
+FUN1(VAR1 *VAR2, int VAR3, void *VAR4)
+{
+VAR5 *VAR6 = VAR4;
+VAR7 *VAR8;
+VAR9 *VAR10 = &VAR6->VAR11;
+zbookmark_phys_t VAR12;
+int VAR13 = FUN2(VAR14[''], VAR14['']);
+int VAR15;
+
+(void) FUN3("", VAR16,
+(VAR17)VAR6->VAR18, (VAR17)VAR6->VAR19,
+(VAR17)VAR6->VAR20);
+
+if (VAR3 == VAR21 || VAR13 < 5)
+return;
+
+if (VAR6->VAR22.VAR23 == sizeof (VAR5)) {
+(void) FUN3("", VAR16,
+!FUN4(VAR10) &&
+VAR10->VAR24 >= FUN5(VAR2->VAR25) ?
+"" : "");
+FUN6(VAR10, VAR16);
+
+if (FUN4(VAR10)) {
+(void) FUN3("",
+(VAR17)FUN7(VAR10));
+(void) FUN3("", VAR16);
+return;
+}
+if (VAR10->VAR24 < VAR2->VAR26->VAR27) {
+(void) FUN3("",
+VAR16);
+return;
+}
+
+FUN8(&VAR12, FUN9(VAR2->VAR28),
+VAR6->VAR18, VAR29,
+VAR6->VAR19 / FUN7(VAR10));
+
+VAR8 = FUN10(FUN7(VAR10), VAR30);
+VAR15 = FUN11(FUN12(NULL, VAR2->VAR25,
+VAR10, VAR8, FUN7(VAR10), NULL, NULL,
+VAR31, VAR32, &VAR12));
+if (VAR15)
+goto VAR33;
+} else {
+
+VAR8 = FUN10(VAR6->VAR20, VAR30);
+FUN13(VAR8, VAR6 + 1, VAR6->VAR20);
+}
+
+(void) FUN3("", VAR16);
+(void) FUN14(VAR8,
+0, FUN15(VAR6->VAR20, (VAR13 < 6 ? 20 : VAR34)),
+VAR35, NULL);
+(void) FUN3("");
+
+VAR33:
+FUN16(VAR8);
+}

@@ -1,0 +1,47 @@
+static void FUN1(VAR1 *VAR2, int VAR3)
+{
+    VAR4 *VAR5;
+    VAR6 *VAR7;
+    VAR8 *VAR9 = FUN2();
+    VAR8 *VAR10 = FUN3(VAR8, 1);
+    VAR8 *VAR11 = FUN3(VAR8, 1);
+    VAR8 *VAR12 = FUN3(VAR8, 1);
+    VAR8 *VAR13 = FUN3(VAR8, 1);
+    VAR8 *VAR14 = FUN3(VAR8, 1);
+    VAR8 *VAR15 = FUN3(VAR8, 1);
+    if (!VAR2->VAR16)
+    {
+        VAR2->VAR16 = "";
+    }
+    VAR5 = FUN4(VAR2->VAR16);
+    if (!VAR5)
+    {
+        FUN5("");
+        FUN6(1);
+    }
+    VAR7 = &VAR5->VAR7;
+    FUN7(VAR10, NULL, "", 2 * 1024 * 1024, &VAR17);
+    FUN8(VAR10);
+    FUN7(VAR11, NULL, "", 4 * 1024 * 1024, &VAR17);
+    FUN8(VAR11);
+    FUN7(VAR12, NULL, "", 48 * 1024, &VAR17);
+    FUN8(VAR12);
+    FUN7(VAR13, NULL, "", 48 * 1024, &VAR17);
+    FUN8(VAR13);
+    FUN7(VAR14, NULL, "", 16 * 1024, &VAR17);
+    FUN8(VAR14);
+    FUN7(VAR15, NULL, "", 32 * 1024, &VAR17);
+    FUN8(VAR15);
+    FUN9(VAR9, 0x80000000, VAR10);
+    FUN9(VAR9, 0xa1000000, VAR11);
+    FUN9(VAR9, 0xd4000000, VAR12);
+    FUN9(VAR9, 0xd0000000, VAR13);
+    FUN9(VAR9, 0xf0050000, VAR14);
+    FUN9(VAR9, 0xf0060000, VAR15);
+    VAR18.VAR19 = VAR2->VAR19;
+    VAR18.VAR20 = VAR2->VAR20;
+    if (VAR2->VAR20)
+    {
+        FUN10(VAR7);
+    }
+}

@@ -1,0 +1,100 @@
+static void FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+struct VAR5 *VAR6)
+{
+struct ieee80211_tx_status VAR7 = { 0 };
+struct ieee80211_rate_status VAR8 = { 0 };
+struct VAR9 *VAR10 = VAR2->VAR10;
+struct VAR11 *VAR12;
+struct VAR13 *VAR14;
+struct VAR15 *VAR16;
+struct VAR17 *VAR18;
+struct rate_info VAR19;
+
+if (FUN2(VAR6->VAR20 != VAR21)) {
+
+return;
+}
+
+VAR14 = FUN3(VAR4);
+
+FUN4(VAR10->VAR22, VAR14->VAR23, VAR4->VAR24, VAR25);
+
+if (FUN5(!FUN6(VAR10->VAR26[VAR2->VAR27]))) {
+FUN7(VAR4);
+return;
+}
+
+if (FUN5(!VAR14->VAR28)) {
+FUN7(VAR4);
+return;
+}
+
+VAR12 = FUN8(VAR4);
+memset(&VAR12->VAR7, 0, sizeof(VAR12->VAR7));
+
+
+VAR12->VAR7.VAR29[0].VAR30 = -1;
+
+if (VAR6->VAR7 == VAR31 &&
+!(VAR12->VAR32 & VAR33)) {
+VAR12->VAR32 |= VAR34;
+VAR12->VAR7.VAR35 = VAR36 +
+VAR6->VAR37;
+VAR12->VAR7.VAR32 |= VAR38;
+}
+
+if (VAR6->VAR7 == VAR39 &&
+(VAR12->VAR32 & VAR33))
+VAR12->VAR32 |= VAR40;
+
+if (FUN5(FUN9(VAR2)) ||
+VAR10->VAR41.VAR42) {
+if (VAR6->VAR32 & VAR43) {
+if (VAR2->VAR44 == 0) {
+VAR2->VAR44 = VAR6->VAR45;
+} else if (VAR2->VAR44 == VAR6->VAR45 ||
+VAR2->VAR46 == VAR2->VAR44) {
+VAR2->VAR46 = VAR2->VAR44;
+VAR2->VAR47.VAR48 = true;
+FUN10(VAR2, VAR6);
+memset(&VAR2->VAR47, 0,
+sizeof(struct VAR49));
+} else {
+VAR2->VAR47.VAR48 = false;
+FUN10(VAR2, VAR6);
+memset(&VAR2->VAR47, 0,
+sizeof(struct VAR49));
+}
+VAR2->VAR44 = VAR6->VAR45;
+}
+
+FUN11(VAR2, VAR4, VAR6);
+}
+
+FUN12(&VAR10->VAR50);
+VAR16 = FUN13(VAR10, VAR6->VAR51);
+if (!VAR16 || !VAR16->VAR52) {
+FUN14(VAR10, VAR53,
+"",
+VAR6->VAR51);
+FUN15(&VAR10->VAR50);
+FUN7(VAR4);
+return;
+}
+VAR18 = (struct VAR17 *)VAR16->VAR52->VAR54;
+VAR7.VAR52 = VAR16->VAR52;
+VAR7.VAR55 = VAR4;
+VAR7.VAR12 = VAR12;
+VAR19 = VAR18->VAR56;
+
+VAR8.VAR57 = VAR19;
+VAR8.VAR58 = 1;
+
+VAR7.VAR29 = &VAR8;
+VAR7.VAR59 = 1;
+
+FUN15(&VAR10->VAR50);
+
+FUN16(VAR2->VAR60, &VAR7);
+}

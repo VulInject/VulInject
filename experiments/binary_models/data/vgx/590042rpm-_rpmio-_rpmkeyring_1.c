@@ -1,0 +1,1 @@
+rpmKeyring FUN1 ( void ) { rpmKeyring VAR1 = xcalloc ( 1 , sizeof ( * VAR1 ) ) ; VAR1 -> VAR2 = NULL ; VAR1 -> VAR3 = 0 ; FUN2 ( & VAR1 -> VAR4 , NULL ) ; return VAR1 ; }

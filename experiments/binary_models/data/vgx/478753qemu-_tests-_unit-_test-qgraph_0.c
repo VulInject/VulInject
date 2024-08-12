@@ -1,0 +1,11 @@
+static void FUN1(const char *VAR1)
+{
+FUN2(VAR1, VAR2);
+FUN3(FUN4(VAR1), ==, VAR3);
+FUN5(FUN6(VAR1));
+FUN3(FUN7(VAR1), ==, VAR4);
+FUN3(FUN8(VAR1), ==, VAR5);
+FUN3(FUN9(VAR1), ==, VAR3);
+FUN10(VAR1, VAR4);
+FUN3(FUN9(VAR1), ==, VAR4);
+}

@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( struct VAR2 * VAR2 ) { u32 VAR3 = 1 ; while ( 1 ) { if ( VAR3 ++ == VAR4 ) { break ; } } return NULL ; }

@@ -1,0 +1,1 @@
+TEE_Result FUN1 ( VAR1 * VAR2 ) { struct versal_sip_payload VAR3 = { } ; const uint32_t VAR4 = 12 ; if ( FUN2 ( VAR5 | VAR6 , 0 , 0 , 0 , 0 , & VAR3 ) ) { return VAR7 ; } * VAR2 = VAR3 . VAR8 [ 2 ] >> VAR4 ; return VAR9 ; }

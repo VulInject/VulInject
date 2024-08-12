@@ -1,0 +1,23 @@
+int FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    VAR3 *VAR5;
+    int VAR6;
+    FUN2(VAR2->VAR7 == VAR8);
+    if (!VAR4->VAR9[0])
+        return FUN3(VAR2, VAR4, VAR10);
+    if (FUN4(VAR4))
+        return FUN5(VAR2, VAR4);
+    VAR5 = FUN6();
+    if (!VAR5)
+        return FUN7(VAR11);
+    FUN8(VAR5, VAR4);
+    VAR6 = FUN3(VAR2, VAR4, VAR10);
+    if (VAR6 < 0)
+    {
+        FUN9(&VAR5);
+        return VAR6;
+    }
+    FUN10(VAR4, VAR5);
+    FUN9(&VAR5);
+    return 0;
+}

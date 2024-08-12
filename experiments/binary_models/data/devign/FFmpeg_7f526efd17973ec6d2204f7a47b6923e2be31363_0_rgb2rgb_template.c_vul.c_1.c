@@ -1,0 +1,2 @@
+static inline void FUN1(VAR1)(const VAR2 *VAR3, const VAR2 *VAR4, const VAR2 *VAR5, VAR2 *VAR6, unsigned int VAR7, unsigned int VAR8, int VAR9, int VAR10, int VAR11) { FUN1(VAR12)
+                                                                                                                                                                                                             (VAR3, VAR4, VAR5, VAR6, VAR7, VAR8, VAR9, VAR10, VAR11, 2); }

@@ -1,0 +1,62 @@
+void
+FUN1(struct VAR1 *VAR2, uint32_t VAR3)
+{
+struct VAR4 *VAR5;
+int VAR6, VAR7, VAR8, VAR9;
+char VAR10[32];
+
+if (VAR2->VAR11 == NULL || VAR2->VAR12 == NULL ||
+VAR2->VAR13 == NULL || VAR2->VAR14 == NULL)
+return;
+
+VAR5 = (struct VAR4 *)(VAR2->VAR15 + VAR3);
+if (VAR5->VAR16 != VAR17 ||
+VAR5->VAR18 < VAR19)
+return;
+
+VAR2->VAR20 = VAR2->VAR15 + VAR3;
+VAR21 = VAR22 = VAR2;
+VAR6 = VAR7 = 0;
+
+VAR2->VAR23 = FUN2(VAR24, VAR25, VAR2);
+if (VAR2->VAR23 == NULL)
+FUN3("",
+VAR2->VAR26.VAR27);
+
+*VAR2->VAR11 |= VAR28;
+*VAR2->VAR13 |= VAR29 | VAR30;
+
+
+FUN4("");
+
+
+VAR8 = FUN5(FUN6());
+if (FUN7(VAR8, "", VAR10, sizeof(VAR10)) > 0)
+VAR6 = (strcmp(VAR10, "") == 0);
+
+
+VAR8 = FUN5(FUN8());
+if (FUN7(VAR8, "", VAR10, sizeof(VAR10)) > 0)
+VAR7 = (strcmp(VAR10, "") == 0);
+
+if (VAR6) {
+VAR31->VAR32 = VAR33;
+VAR31->VAR34 = VAR35;
+}
+
+if (VAR7)
+VAR31->VAR36 = VAR37;
+
+if (VAR6 || VAR7) {
+
+for (VAR9 = 0; VAR9 < VAR38; VAR9++)
+if (VAR39[VAR9].VAR40 == VAR41)
+break;
+VAR31->VAR42 = FUN9(VAR9, VAR2->VAR26.VAR43);
+
+
+FUN10(2000000);
+
+FUN11("", VAR2->VAR26.VAR27);
+}
+}

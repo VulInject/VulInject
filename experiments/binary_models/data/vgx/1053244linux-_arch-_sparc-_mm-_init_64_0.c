@@ -1,0 +1,12 @@
+inline void FUN1(struct VAR1 *VAR1)
+{
+FUN2(VAR2 == VAR3);
+FUN3(&VAR4);
+
+FUN4(FUN5(VAR1),
+((VAR2 == VAR5) &&
+FUN6(VAR1) != NULL));
+if (FUN6(VAR1) != NULL &&
+VAR2 == VAR5)
+FUN7(FUN8(FUN5(VAR1)));
+}

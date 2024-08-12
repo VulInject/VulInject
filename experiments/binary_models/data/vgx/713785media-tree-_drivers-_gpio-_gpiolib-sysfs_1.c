@@ -1,0 +1,1 @@
+static FUN1 ( VAR1 ) ; static ssize_t FUN2 ( struct VAR2 * VAR3 , struct VAR4 * VAR5 , char * VAR6 ) { struct VAR7 * VAR8 = FUN3 ( VAR3 ) ; struct VAR9 * VAR10 = VAR8 -> VAR10 ; int VAR11 ; FUN4 ( & VAR8 -> mutex ) ; VAR11 = sprintf ( VAR6 , "" , FUN5 ( VAR10 ) ) ; FUN6 ( & VAR8 -> mutex ) ; return VAR11 ; }

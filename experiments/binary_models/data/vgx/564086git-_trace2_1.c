@@ -1,0 +1,1 @@
+void FUN1 ( const char * VAR1 , int VAR2 , int VAR3 ) { struct VAR4 * VAR5 ; int VAR6 ; uint64_t VAR7 ; uint64_t VAR8 ; FUN2 ( ) ; FUN3 ( VAR9 ) ; VAR10 = VAR3 ; VAR7 = FUN4 ( ) / 1000 ; VAR8 = FUN5 ( VAR7 ) ; FUN6 ( , ) if ( VAR5 -> VAR11 ) { VAR5 -> FUN7 ( VAR1 , VAR2 , VAR8 , VAR3 ) ; } }

@@ -1,0 +1,41 @@
+FUN1(VAR1, VAR2,
+VAR3, "");
+
+static int
+FUN2(void *VAR4, u64 VAR5)
+{
+struct VAR6 *VAR7 = VAR4;
+struct VAR8 *VAR9 = &VAR7->VAR9;
+int VAR10 = 0;
+
+if (!FUN3(VAR7))
+return 0;
+
+if (!FUN4(VAR7) || FUN5(&VAR7->VAR11))
+return -VAR12;
+
+FUN6(&VAR7->VAR11.mutex);
+
+if (VAR5 == VAR9->VAR13)
+goto VAR14;
+
+if (VAR7->VAR15.VAR16) {
+VAR10 = -VAR17;
+goto VAR14;
+}
+
+if (!VAR9->VAR13) {
+VAR9->VAR18.VAR19 = VAR20;
+VAR9->VAR18.VAR21 = VAR20;
+}
+
+VAR9->VAR13 = false;
+FUN7(&VAR7->VAR22, VAR9);
+
+VAR9->VAR13 = VAR5;
+FUN8(&VAR7->VAR22, VAR9);
+VAR14:
+FUN9(&VAR7->VAR11.mutex);
+
+return VAR10;
+}

@@ -1,0 +1,1 @@
+FUN1 ( ) { void * VAR1 ; size_t VAR2 = VAR3 ; VAR3 += 2 * VAR4 ; VAR1 = malloc ( VAR3 , NULL ) ; if ( VAR1 == 0 ) { fprintf ( VAR5 , "" , ( long ) VAR3 ) ; FUN2 ( ) ; } { mp_ptr VAR6 = VAR1 ; VAR6 ++ ; VAR6 [ - 1 ] = ( 0xdeadbeef << 31 ) + 0xdeafdeed ; if ( VAR2 % VAR4 == 0 ) { VAR6 [ VAR2 / VAR4 ] = ~ ( ( 0xdeadbeef << 31 ) + 0xdeafdeed ) ; } VAR1 = VAR6 ; } return VAR1 ; }

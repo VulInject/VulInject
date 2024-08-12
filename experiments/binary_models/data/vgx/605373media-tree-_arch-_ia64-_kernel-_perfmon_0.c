@@ -1,0 +1,30 @@
+static int
+FUN1(VAR1 *VAR2, unsigned long VAR3)
+{
+VAR4 *VAR5 = NULL;
+
+if (VAR2->VAR6 == 0) {
+VAR5 = FUN2(VAR2);
+if (VAR5 == NULL) {
+FUN3(VAR7 "");
+return -1;
+}
+
+VAR5->VAR8.VAR9         = VAR10;
+VAR5->VAR8.VAR11       = VAR2->VAR12;
+VAR5->VAR8.VAR13   = 0;
+VAR5->VAR8.VAR14[0] = VAR3;
+VAR5->VAR8.VAR14[1] = 0UL;
+VAR5->VAR8.VAR14[2] = 0UL;
+VAR5->VAR8.VAR14[3] = 0UL;
+VAR5->VAR8.VAR15       = 0UL;
+}
+
+FUN4(("",
+VAR5,
+VAR2->VAR6,
+VAR2->VAR12,
+VAR3));
+
+return FUN5(VAR2, VAR5);
+}

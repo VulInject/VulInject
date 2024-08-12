@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { void * VAR1 ; int VAR2 [ 3 ] ; VAR1 = FUN2 ( "" ) ; if ( ! VAR1 ) { FUN3 ( "" ) ; } FUN4 ( VAR1 , "" , VAR2 , sizeof ( VAR2 ) ) ; if ( VAR2 [ 2 ] ) { VAR3 = VAR2 [ 1 ] ; } else { FUN5 ( ) ; } }

@@ -1,0 +1,40 @@
+static void
+FUN1(VAR1 *VAR2, int VAR3)
+{
+volatile xmlParserCtxtPtr VAR4 = NULL;
+VAR5 *VAR6;
+VAR7 *VAR8;
+
+VAR6 = FUN2(sizeof(VAR5));
+VAR6->VAR9 = VAR10;
+VAR6->VAR3 = VAR3;
+VAR6->VAR11 = FUN2(sizeof(VAR12) * VAR3);
+
+VAR8 = FUN3(VAR13);
+
+FUN4();
+{
+FUN5();
+
+VAR4 = FUN6();
+if (VAR4 == NULL || VAR8->VAR14)
+FUN7(VAR8, VAR15, VAR16,
+"");
+}
+FUN8();
+{
+if (VAR4 != NULL)
+FUN9(VAR4);
+
+FUN10(VAR8, true);
+
+FUN11();
+}
+FUN12();
+
+VAR6->VAR8 = VAR8;
+VAR6->VAR4 = VAR4;
+
+VAR2->VAR17 = VAR6;
+FUN13();
+}

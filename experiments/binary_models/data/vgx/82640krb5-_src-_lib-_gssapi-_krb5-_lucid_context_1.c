@@ -1,0 +1,1 @@
+static krb5_error_code FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 ) { if ( ! VAR2 || ! VAR2 -> VAR5 || VAR2 -> VAR6 == 0 ) { return VAR7 ; } if ( ( VAR4 -> VAR8 = xmalloc ( VAR2 -> VAR6 ) ) == NULL ) { return VAR9 ; } memcpy ( VAR4 -> VAR8 , VAR2 -> VAR5 , VAR2 -> VAR6 ) ; VAR4 -> VAR6 = VAR2 -> VAR6 ; VAR4 -> VAR10 = VAR2 -> VAR11 ; return 0 ; }

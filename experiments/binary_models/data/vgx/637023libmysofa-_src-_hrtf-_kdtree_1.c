@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( ) { struct VAR1 * VAR2 ; if ( ! ( VAR2 = malloc ( sizeof VAR2 ) ) ) { return 0 ; } VAR2 -> VAR3 = 0 ; VAR2 -> VAR4 = 0 ; return VAR2 ; }

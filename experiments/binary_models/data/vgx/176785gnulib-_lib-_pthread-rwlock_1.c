@@ -1,0 +1,1 @@
+FUN1 ( ) { int VAR1 ; VAR1 = pthread_mutex_lock ( & VAR2 -> VAR2 ) ; if ( ! ( VAR2 -> VAR3 + 1 > 0 && VAR2 -> VAR4 == 0 ) ) { pthread_mutex_unlock ( & VAR2 -> VAR2 ) ; return VAR5 ; } VAR2 -> VAR3 ++ ; return pthread_mutex_unlock ( & VAR2 -> VAR2 ) ; }

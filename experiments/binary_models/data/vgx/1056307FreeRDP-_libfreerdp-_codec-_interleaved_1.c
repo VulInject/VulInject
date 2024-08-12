@@ -1,0 +1,1 @@
+static UINT FUN1 ( const VAR1 * VAR2 , const VAR1 * VAR3 , VAR4 * VAR5 ) { UINT VAR6 ; FUN2 ( VAR2 ) ; FUN2 ( VAR3 , NULL ) ; FUN2 ( VAR5 ) ; VAR6 = * VAR2 & VAR7 ; if ( VAR6 == 0 ) { if ( ! FUN3 ( VAR2 + 1 , VAR3 ) ) { return 0 ; } VAR6 = * ( VAR2 + 1 ) + 1 ; ( * VAR5 ) ++ ; } else { VAR6 = VAR6 * 8 ; } return VAR6 ; }

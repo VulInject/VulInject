@@ -1,0 +1,172 @@
+static int FUN1(VAR1 *VAR2)
+{
+const VAR3 *VAR4 = NULL;
+const VAR5 *VAR6 = NULL;
+void *VAR7 = VAR8;
+
+if (VAR9 == 0)
+return -1;
+
+if (VAR10.VAR11 == 0) {
+FUN2("", &VAR12->VAR13);
+
+uint32_t VAR11 = VAR9;
+
+VAR10.VAR11 = VAR11;
+VAR10.VAR14 = FUN3(VAR10.VAR11, sizeof(VAR15));
+if (VAR10.VAR14 == NULL) {
+VAR10.VAR11 = 0;
+FUN4("");
+return -1;
+}
+
+VAR10.VAR16 = VAR12->VAR17;
+uint32_t VAR18 = VAR10.VAR11 * sizeof(VAR15);
+VAR10.VAR19 = FUN3(VAR10.VAR16, VAR18);
+if (VAR10.VAR19 == NULL) {
+VAR10.VAR16 = 0;
+FUN4("");
+return -1;
+}
+
+VAR10.VAR20 = VAR21;
+}
+
+const uint16_t VAR22 = VAR9;
+if (VAR22 == 0)
+return -1;
+
+
+struct VAR23 {
+int VAR24;
+int64_t VAR25;
+uint64_t VAR26;
+} VAR27[VAR22];
+memset(&VAR27, 0x00,
+VAR22 * sizeof(struct VAR23));
+
+int VAR28 = VAR12->VAR17 - 1;
+VAR15 *VAR29 = VAR10.VAR14;
+
+
+VAR4 = VAR12->VAR4;
+FUN5("", VAR4);
+while (VAR4 != NULL) {
+FUN6(VAR28 < 0);
+
+FUN5("", VAR28, VAR4->VAR30, VAR4->VAR31);
+
+
+struct CountersMergeTable VAR32[VAR22];
+memset(&VAR32, 0x00,
+VAR22 * sizeof(struct VAR23));
+
+FUN7(&VAR4->VAR31->VAR33);
+VAR6 = VAR4->VAR31->VAR34;
+while (VAR6 != NULL) {
+FUN5(""VAR35,
+VAR6->VAR30, VAR6->VAR36, VAR6->VAR37, VAR6->VAR25);
+
+VAR32[VAR6->VAR37].VAR24 = VAR6->VAR24;
+switch (VAR6->VAR24) {
+case VAR38:
+if (VAR6->VAR39 != NULL)
+VAR32[VAR6->VAR37].VAR25 = VAR6->FUN8();
+break;
+case VAR40:
+default:
+VAR32[VAR6->VAR37].VAR25 = VAR6->VAR25;
+break;
+}
+VAR32[VAR6->VAR37].VAR26 = VAR6->VAR26;
+VAR29[VAR6->VAR37].VAR30 = VAR6->VAR30;
+
+VAR6 = VAR6->VAR41;
+}
+FUN9(&VAR4->VAR31->VAR33);
+
+
+for (uint16_t VAR42 = 0; VAR42 < VAR22; VAR42++) {
+struct VAR23 *VAR43 = &VAR32[VAR42];
+
+if (VAR43->VAR24 == 0)
+continue;
+
+switch (VAR43->VAR24) {
+case VAR44:
+if (VAR43->VAR25 > VAR27[VAR42].VAR25)
+VAR27[VAR42].VAR25 = VAR43->VAR25;
+break;
+case VAR38:
+VAR27[VAR42].VAR25 = VAR43->VAR25;
+break;
+case VAR40:
+default:
+VAR27[VAR42].VAR25 += VAR43->VAR25;
+break;
+}
+VAR27[VAR42].VAR26 += VAR43->VAR26;
+VAR27[VAR42].VAR24 = VAR43->VAR24;
+}
+
+
+for (uint16_t VAR42 = 0; VAR42 < VAR22; VAR42++) {
+struct VAR23 *VAR43 = &VAR32[VAR42];
+
+if (VAR43->VAR24 == 0)
+continue;
+
+uint32_t VAR45 = (VAR28 * VAR10.VAR11) + VAR42;
+VAR15 *VAR46 = &VAR10.VAR19[VAR45];
+
+VAR46->VAR47 = VAR46->VAR25;
+VAR46->VAR25 = 0;
+VAR46->VAR30 = VAR29[VAR42].VAR30;
+VAR46->VAR48 = VAR4->VAR30;
+
+switch (VAR43->VAR24) {
+case VAR40:
+if (VAR43->VAR25 > 0 && VAR43->VAR26 > 0) {
+VAR46->VAR25 = (VAR49)(VAR43->VAR25 / VAR43->VAR26);
+}
+break;
+default:
+VAR46->VAR25 = VAR43->VAR25;
+break;
+}
+}
+
+VAR4 = VAR4->VAR41;
+VAR28--;
+}
+
+
+for (uint16_t VAR50 = 0; VAR50 < VAR22; VAR50++) {
+
+VAR29[VAR50].VAR47 = VAR29[VAR50].VAR25;
+VAR29[VAR50].VAR25 = 0;
+VAR29[VAR50].VAR48 = "";
+
+struct VAR23 *VAR33 = &VAR27[VAR50];
+switch (VAR33->VAR24) {
+case VAR44:
+if (VAR33->VAR25 > VAR29[VAR50].VAR25)
+VAR29[VAR50].VAR25 = VAR33->VAR25;
+break;
+case VAR40:
+if (VAR33->VAR25 > 0 && VAR33->VAR26 > 0) {
+VAR29[VAR50].VAR25 = (VAR49)(VAR33->VAR25 / VAR33->VAR26);
+}
+break;
+default:
+VAR29[VAR50].VAR25 += VAR33->VAR25;
+break;
+}
+}
+
+
+if (VAR51) {
+FUN10(VAR2, VAR7, &VAR10);
+}
+return 1;
+}

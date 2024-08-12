@@ -1,0 +1,1 @@
+static char * FUN1 ( char * VAR1 , unsigned int VAR2 ) { int VAR3 ; VAR1 [ 0 ] = '' ; while ( ( VAR3 = VAR2 & ( 1 + ~ VAR2 ) ) != 0 ) { VAR2 &= ~ VAR3 ; strcat ( VAR1 , FUN2 ( VAR3 ) ) ; if ( VAR2 != 0 ) { strcat ( VAR1 , "" ) ; } } return VAR1 ; }

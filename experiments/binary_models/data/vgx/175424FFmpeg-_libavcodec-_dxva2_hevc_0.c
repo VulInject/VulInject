@@ -1,0 +1,22 @@
+static int FUN1(VAR1 *VAR2,
+const VAR3 *VAR4,
+uint32_t VAR5)
+{
+const VAR6 *VAR7 = VAR2->VAR8;
+const VAR9 *VAR10 = VAR7->VAR11;
+struct VAR12 *VAR13 = VAR10->VAR14;
+unsigned VAR15;
+
+if (VAR13->VAR16 >= VAR17)
+return -1;
+
+if (!VAR13->VAR18)
+VAR13->VAR18 = VAR4;
+VAR13->VAR19 += VAR5;
+
+VAR15 = VAR4 - VAR13->VAR18;
+FUN2(&VAR13->VAR20[VAR13->VAR16], VAR15, VAR5);
+VAR13->VAR16++;
+
+return 0;
+}

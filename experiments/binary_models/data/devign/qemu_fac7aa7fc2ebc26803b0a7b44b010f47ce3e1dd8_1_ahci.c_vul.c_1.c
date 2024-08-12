@@ -1,0 +1,18 @@
+static void FUN1(VAR1 *VAR2, int VAR3, uint32_t VAR4)
+{
+    VAR5 *VAR6 = &VAR2->VAR7[VAR3].VAR8;
+    VAR9 *VAR10;
+    VAR11 *VAR12;
+    if (!VAR2->VAR7[VAR3].VAR13 || !(VAR6->VAR14 & VAR15))
+    {
+        return;
+    }
+    VAR12 = &VAR2->VAR7[VAR3].VAR13[VAR16];
+    VAR10 = &VAR2->VAR7[VAR3].VAR3.VAR17[0];
+    *(VAR18 *)VAR12 = 0;
+    VAR12[0] = VAR10->VAR19;
+    VAR12[2] = VAR10->VAR20 & 0x77;
+    VAR2->VAR7[VAR3].VAR4 |= VAR4;
+    *(VAR18 *)(VAR12 + 4) = FUN2(VAR2->VAR7[VAR3].VAR4);
+    FUN3(VAR2, &VAR2->VAR7[VAR3], VAR21);
+}

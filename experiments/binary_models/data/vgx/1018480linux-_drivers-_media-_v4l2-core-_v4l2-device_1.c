@@ -1,0 +1,1 @@
+( VAR1 ) ; void FUN1 ( struct VAR2 * VAR3 ) { struct VAR4 * VAR5 , * VAR6 ; FUN2 ( VAR3 ) ; FUN3 ( , , , ) { FUN4 ( VAR5 ) ; if ( VAR5 -> VAR7 & VAR8 ) { FUN5 ( VAR5 ) ; } if ( VAR5 -> VAR7 & VAR9 ) { FUN6 ( VAR5 ) ; } } VAR3 -> VAR10 [ 0 ] = '' ; }

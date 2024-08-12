@@ -1,0 +1,1 @@
+void FUN1 ( const char * VAR1 ) { VAR2 * VAR3 ; struct rawarc VAR4 ; VAR3 = FUN2 ( VAR1 ) ; FUN3 ( VAR3 ) ; while ( fread ( & VAR4 , sizeof VAR4 , 1 , VAR3 ) == 1 ) { if ( VAR5 & VAR6 ) { FUN4 ( "" , VAR4 . VAR7 , VAR4 . VAR8 , VAR4 . VAR9 ) ; } FUN5 ( & VAR4 ) ; } fclose ( VAR3 , NULL ) ; }

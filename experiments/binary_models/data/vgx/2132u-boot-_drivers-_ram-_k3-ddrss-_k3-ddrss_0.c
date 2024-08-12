@@ -1,0 +1,30 @@
+void FUN1(struct VAR1 *VAR2)
+{
+u32 VAR3 = 0U;
+u32 VAR4 = 0U;
+u32 VAR5 = 0U;
+VAR6 *VAR7 = VAR2->VAR7;
+VAR8 *VAR9 = &VAR2->VAR9;
+
+FUN2(VAR10, VAR11, VAR5);
+
+VAR3 = VAR7->FUN3(VAR9, VAR12, VAR5, &VAR4);
+if ((VAR3 > 0U) || ((VAR4 & FUN4(VAR13)) != 0U)) {
+FUN5("", VAR14);
+FUN6();
+}
+
+VAR3 = VAR7->FUN7(VAR9);
+if (VAR3 > 0U) {
+FUN5("", VAR14);
+FUN6();
+}
+
+VAR3 = VAR7->FUN3(VAR9, VAR12, VAR5, &VAR4);
+if ((VAR3 > 0U) || ((VAR4 & FUN4(VAR13)) != 1U)) {
+FUN5("", VAR14);
+FUN6();
+} else {
+FUN8("", VAR14);
+}
+}

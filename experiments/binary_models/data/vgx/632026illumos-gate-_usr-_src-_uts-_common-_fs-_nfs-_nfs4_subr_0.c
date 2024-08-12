@@ -1,0 +1,58 @@
+static void
+FUN1(struct VAR1 *VAR2, uint_t VAR3)
+{
+struct VAR4 *VAR5;
+struct VAR6 *VAR7;	
+struct VAR6 *VAR8;
+struct VAR6 *VAR9;
+struct VAR6 **VAR10;
+int VAR11 = 0;
+VAR12.VAR13.VAR14.VAR15++;
+
+
+VAR7 = NULL;
+
+FUN2(&VAR2->VAR16);
+
+
+for (VAR5 = VAR2->VAR17; VAR5 != NULL; VAR5 = VAR5->VAR18) {
+if (VAR5->VAR19 == NULL)
+continue;
+
+VAR9 = VAR5->VAR19;
+VAR10 = &VAR5->VAR19;
+while (VAR9 != NULL &&
+VAR9->VAR20 + VAR3 > FUN3()) {
+VAR10 = &VAR9->VAR19;
+VAR9 = VAR9->VAR19;
+}
+if (VAR9 != NULL) {
+*VAR10 = NULL;
+if (VAR7 != NULL) {
+VAR8 = VAR9;
+while (VAR8->VAR19 != NULL)
+VAR8 = VAR8->VAR19;
+VAR8->VAR19 = VAR7;
+}
+VAR7 = VAR9;
+}
+}
+
+FUN4(&VAR2->VAR16);
+
+
+if (VAR7 == NULL)
+return;
+
+
+while (VAR7 != NULL) {
+VAR11++;
+FUN5(VAR7->VAR21);
+VAR9 = VAR7->VAR19;
+FUN6(VAR22, VAR7);
+VAR7 = VAR9;
+}
+
+
+FUN7(&VAR2->VAR23.VAR24.VAR14.VAR15, -VAR11);
+}

@@ -1,0 +1,63 @@
+VAR1 *FUN1(VAR2 *VAR3)
+{
+    VAR1 *update;
+    VAR4 *VAR5;
+    VAR6 *VAR7;
+    VAR8 *VAR9;
+    VAR10 *VAR11, *VAR12;
+    int VAR13, VAR14, VAR15;
+    FUN2();
+    if (FUN3(&VAR3->VAR16))
+    {
+        FUN4();
+        return NULL;
+    };
+    FUN5(2, "", VAR17, VAR3->VAR16.VAR18, VAR3->VAR16.VAR19, VAR3->VAR16.VAR20, VAR3->VAR16.VAR21);
+    update = FUN6(sizeof(*update));
+    VAR5 = &update->VAR5;
+    VAR7 = &update->VAR7;
+    VAR9 = &update->VAR22.VAR9;
+    VAR14 = VAR3->VAR16.VAR19 - VAR3->VAR16.VAR18;
+    VAR15 = VAR3->VAR16.VAR21 - VAR3->VAR16.VAR20;
+    update->VAR23 = FUN7(VAR14 * VAR15 * 4);
+    VAR5->VAR24 = VAR3->VAR16;
+    VAR5->VAR25.VAR26 = VAR27;
+    VAR5->VAR28 = VAR29;
+    VAR5->VAR30.VAR31 = (VAR32)update;
+    VAR5->VAR26 = VAR33;
+    VAR5->VAR34[0] = -1;
+    VAR5->VAR34[1] = -1;
+    VAR5->VAR34[2] = -1;
+    VAR5->VAR35.copy.VAR36 = VAR37;
+    VAR5->VAR35.copy.VAR38 = (VAR32)VAR7;
+    VAR5->VAR35.copy.VAR39.VAR19 = VAR14;
+    VAR5->VAR35.copy.VAR39.VAR21 = VAR15;
+    FUN8(VAR7, VAR40, VAR3->VAR41++);
+    VAR7->VAR42.VAR26 = VAR43;
+    VAR7->VAR23.VAR44 = VAR45 | VAR46;
+    VAR7->VAR23.VAR47 = VAR14 * 4;
+    VAR7->VAR42.VAR48 = VAR7->VAR23.VAR49 = VAR14;
+    VAR7->VAR42.VAR50 = VAR7->VAR23.VAR51 = VAR15;
+    VAR7->VAR23.VAR52 = (VAR32)(update->VAR23);
+    VAR7->VAR23.VAR53 = 0;
+    VAR7->VAR23.VAR54 = VAR55;
+    if (VAR3->VAR56 == NULL)
+    {
+        PixelFormat VAR12 = FUN9(32);
+        VAR3->VAR56 = FUN10(&VAR12, &VAR3->VAR57->VAR58->VAR59);
+        assert(VAR3->VAR56);
+    }
+    VAR11 = FUN11(VAR3->VAR57) + VAR3->VAR16.VAR20 * FUN12(VAR3->VAR57) + VAR3->VAR16.VAR18 * FUN13(VAR3->VAR57);
+    VAR12 = update->VAR23;
+    for (VAR13 = 0; VAR13 < VAR15; VAR13++)
+    {
+        FUN14(VAR3->VAR56, VAR12, VAR11, VAR14);
+        VAR11 += FUN12(VAR3->VAR57);
+        VAR12 += VAR7->VAR23.VAR47;
+    }
+    VAR9->VAR26 = VAR60;
+    VAR9->VAR52 = (VAR32)VAR5;
+    memset(&VAR3->VAR16, 0, sizeof(VAR3->VAR16));
+    FUN4();
+    return update;
+}

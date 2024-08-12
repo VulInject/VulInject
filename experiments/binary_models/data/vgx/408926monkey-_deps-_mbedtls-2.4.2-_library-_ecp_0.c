@@ -1,0 +1,49 @@
+static int FUN1( VAR1 *VAR2, VAR3 *VAR4,
+const VAR5 *VAR6, const VAR3 *VAR7,
+int (*VAR8)(void *, unsigned char *, VAR9),
+void *VAR10 )
+{
+int VAR11;
+size_t VAR12;
+unsigned char VAR13;
+mbedtls_ecp_point VAR14;
+mbedtls_mpi VAR15;
+
+FUN2( &VAR14 ); FUN3( &VAR15 );
+
+
+FUN4( FUN5( &VAR15, &VAR7->VAR16 ) );
+FUN4( FUN6( &VAR14, VAR7 ) );
+
+
+FUN4( FUN7( &VAR4->VAR16, 1 ) );
+FUN4( FUN7( &VAR4->VAR17, 0 ) );
+FUN8( &VAR4->VAR18 );
+
+
+FUN9( VAR14.VAR16 );
+
+
+if( VAR8 != NULL )
+FUN4( FUN10( VAR2, &VAR14, VAR8, VAR10 ) );
+
+
+VAR12 = FUN11( VAR6 ); 
+while( VAR12-- > 0 )
+{
+VAR13 = FUN12( VAR6, VAR12 );
+
+FUN4( FUN13( &VAR4->VAR16, &VAR14.VAR16, VAR13 ) );
+FUN4( FUN13( &VAR4->VAR17, &VAR14.VAR17, VAR13 ) );
+FUN4( FUN14( VAR2, VAR4, &VAR14, VAR4, &VAR14, &VAR15 ) );
+FUN4( FUN13( &VAR4->VAR16, &VAR14.VAR16, VAR13 ) );
+FUN4( FUN13( &VAR4->VAR17, &VAR14.VAR17, VAR13 ) );
+}
+
+FUN4( FUN15( VAR2, VAR4 ) );
+
+VAR19:
+FUN16( &VAR14 ); FUN8( &VAR15 );
+
+return( VAR11 );
+}

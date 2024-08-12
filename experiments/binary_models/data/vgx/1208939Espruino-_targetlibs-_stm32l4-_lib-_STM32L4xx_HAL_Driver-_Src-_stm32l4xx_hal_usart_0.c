@@ -1,0 +1,37 @@
+VAR1 FUN1(VAR2 *VAR3)
+{
+
+if(VAR3 == NULL)
+{
+return VAR4;
+}
+
+
+FUN2(FUN3(VAR3->VAR5));
+
+VAR3->VAR6 = VAR7;
+
+VAR3->VAR5->VAR8 = 0x0;
+VAR3->VAR5->VAR9 = 0x0;
+VAR3->VAR5->VAR10 = 0x0;
+
+
+FUN4(VAR3);
+
+VAR3->VAR11 = VAR12;
+VAR3->VAR6 = VAR13;
+
+
+FUN5(VAR3);
+
+return VAR14;
+}
+
+
+__weak void FUN6(VAR2 *VAR3)
+{
+
+FUN7(VAR3);
+
+
+}

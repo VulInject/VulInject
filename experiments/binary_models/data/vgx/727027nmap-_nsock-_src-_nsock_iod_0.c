@@ -1,0 +1,69 @@
+VAR1 FUN1(nsock_pool VAR2, int VAR3, void *VAR4) {
+struct VAR5 *VAR6 = (struct VAR5 *)VAR2;
+VAR7 *VAR8;
+struct VAR9 *VAR10;
+
+VAR8 = FUN2(&VAR6->VAR11);
+if (!VAR8) {
+VAR10 = (struct VAR9 *)FUN3(sizeof(*VAR10));
+memset(VAR10, 0, sizeof(*VAR10));
+} else {
+VAR10 = FUN4(VAR8, struct VAR9, VAR12);
+}
+
+if (VAR3 == -1) {
+VAR10->VAR3 = -1;
+VAR10->VAR13 = VAR14;
+} else if (VAR3 == VAR15) {
+VAR10->VAR3 = VAR15;
+VAR10->VAR13 = VAR16;
+} else {
+VAR10->VAR3 = FUN5(VAR3);
+if (VAR10->VAR3 == -1) {
+free(VAR10);
+return NULL;
+}
+FUN6(VAR10->VAR3);
+VAR10->VAR13 = VAR16;
+}
+
+VAR10->VAR17 = NULL;
+VAR10->VAR18 = NULL;
+VAR10->VAR19 = NULL;
+VAR10->VAR20 = NULL;
+VAR10->VAR21 = 0;
+VAR10->VAR22 = 0;
+VAR10->VAR23 = 0;
+
+VAR10->VAR4 = VAR4;
+VAR10->VAR6 = (struct VAR5 *)VAR2;
+
+VAR10->VAR24 = 0;
+
+VAR10->VAR25 = 0;
+VAR10->VAR23 = 0;
+
+VAR10->VAR26 = NULL;
+
+VAR10->VAR27 = NULL;
+VAR10->VAR28 = 0;
+
+VAR10->VAR29 = NULL;
+
+if (VAR6->VAR30) {
+VAR10->VAR31 = FUN7(VAR6);
+} else {
+VAR10->VAR31 = NULL;
+}
+
+VAR10->VAR32 = VAR6->VAR33++;
+if (VAR10->VAR32 == 0)
+VAR10->VAR32 = VAR6->VAR33++;
+
+
+FUN8(&VAR6->VAR34, &VAR10->VAR12);
+
+FUN9("", VAR10->VAR32);
+
+return (VAR1)VAR10;
+}

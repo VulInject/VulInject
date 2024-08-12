@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , enum attr_idn VAR3 , long * VAR4 ) { u32 VAR5 ; int VAR6 ; VAR6 = FUN2 ( VAR2 , VAR7 , VAR3 , 0 , 0 , & VAR5 ) ; if ( VAR6 ) { return VAR6 ; } * VAR4 = ( ( long ) VAR5 - 80 ) * VAR8 ; return 0 ; }

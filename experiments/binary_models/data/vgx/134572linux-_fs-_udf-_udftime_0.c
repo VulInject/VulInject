@@ -1,0 +1,25 @@
+void
+FUN1(struct VAR1 *VAR2, struct timestamp VAR3)
+{
+u16 VAR4 = FUN2(VAR3.VAR4);
+u16 VAR5 = FUN2(VAR3.VAR5);
+uint8_t VAR6 = VAR4 >> 12;
+int16_t VAR7;
+
+if (VAR6 == 1) {
+VAR7 = VAR4 << 4;
+
+VAR7 = (VAR7 >> 4);
+if (VAR7 == -2047) 
+VAR7 = 0;
+} else
+VAR7 = 0;
+
+VAR2->VAR8 = FUN3(VAR5, VAR3.VAR9, VAR3.VAR10, VAR3.VAR11, VAR3.VAR12,
+VAR3.VAR13);
+VAR2->VAR8 -= VAR7 * 60;
+VAR2->VAR14 = 1000 * (VAR3.VAR15 * 10000 +
+VAR3.VAR16 * 100 + VAR3.VAR17);
+
+VAR2->VAR14 %= VAR18;
+}

@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , ev_uint32_t VAR3 ) { int VAR4 = 0 ; ev_uint8_t VAR5 [ 5 ] ; { ev_uint8_t VAR6 = VAR3 & 0x7f ; VAR3 >>= 7 ; if ( VAR3 ) { VAR6 |= 0x80 ; } VAR5 [ VAR4 ++ ] = VAR6 ; } VAR3 ; if ( VAR2 != NULL ) { FUN2 ( VAR2 , VAR5 , VAR4 ) ; } return ( VAR4 ) ; }

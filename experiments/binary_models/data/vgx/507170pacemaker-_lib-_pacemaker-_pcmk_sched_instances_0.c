@@ -1,0 +1,28 @@
+static VAR1 *
+FUN1(const VAR1 *VAR2,
+const VAR1 *VAR3,
+const VAR4 *VAR5, enum rsc_role_e VAR6,
+bool VAR7)
+{
+VAR8 *VAR9 = NULL;
+
+VAR9 = FUN2(VAR3);
+for (VAR8 *VAR10 = VAR9; VAR10 != NULL; VAR10 = VAR10->VAR11) {
+VAR1 *VAR12 = (VAR1 *) VAR10->VAR13;
+
+if (FUN3(VAR12, VAR5, VAR6, VAR7)) {
+FUN4(VAR2, "",
+VAR6 == VAR14? "" : FUN5(VAR6),
+VAR3->VAR15, VAR12->VAR15, VAR2->VAR15,
+FUN6(VAR5));
+FUN7(VAR3, VAR9); 
+return VAR12;
+}
+}
+FUN7(VAR3, VAR9);
+
+FUN4(VAR2, "",
+((VAR6 == VAR14)? "" : FUN5(VAR6)),
+VAR3->VAR15, VAR2->VAR15, FUN6(VAR5));
+return NULL;
+}

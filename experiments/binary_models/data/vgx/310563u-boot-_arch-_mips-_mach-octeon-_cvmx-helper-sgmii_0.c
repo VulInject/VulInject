@@ -1,0 +1,67 @@
+static int FUN1(int VAR1, int VAR2)
+{
+union cvmx_pcsx_mrx_control_reg VAR3;
+union cvmx_pcsx_miscx_ctl_reg VAR4;
+bool VAR5;
+bool VAR6; 
+bool VAR7; 
+
+if (!FUN2(VAR1, VAR2))
+return 0;
+
+
+VAR3.VAR8 = FUN3(FUN4(VAR2, VAR1));
+
+
+if (!FUN5()) {
+VAR3.VAR9.VAR10 = 1;
+FUN6(FUN4(VAR2, VAR1),
+VAR3.VAR8);
+if (FUN7(
+FUN4(VAR2, VAR1),
+VAR11, VAR10, ==, 0, 10000)) {
+FUN8("",
+VAR1, VAR2);
+return -1;
+}
+}
+
+
+VAR5 = FUN9(VAR1, VAR2);
+VAR6 = (VAR5 ||
+!FUN10(VAR1, VAR2));
+
+VAR3.VAR9.VAR12 = !VAR6;
+
+
+VAR3.VAR9.VAR13 = 1;
+FUN6(FUN4(VAR2, VAR1), VAR3.VAR8);
+FUN3(FUN4(VAR2, VAR1));
+
+
+FUN11(25);
+
+VAR3.VAR9.VAR13 = 0;
+FUN6(FUN4(VAR2, VAR1), VAR3.VAR8);
+
+
+VAR7 = FUN12(VAR1, VAR2);
+VAR4.VAR8 =
+FUN3(FUN13(VAR2, VAR1));
+VAR4.VAR9.VAR14 = VAR7;
+VAR4.VAR9.VAR15 = VAR5;
+FUN6(FUN13(VAR2, VAR1),
+VAR4.VAR8);
+if (VAR6)
+
+return 0;
+
+
+if (FUN7(FUN14(VAR2, VAR1),
+union VAR16, VAR17, ==, 1,
+10000)) {
+FUN8("", VAR1, VAR2);
+return -1;
+}
+return 0;
+}

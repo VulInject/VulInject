@@ -1,0 +1,25 @@
+static void FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+uint16_t VAR5;
+int VAR6;
+
+
+VAR5 = FUN2(VAR7);
+VAR6 = (VAR5 ^ VAR8[VAR2->VAR9])
+& VAR10;
+
+if (VAR6) {
+VAR8[VAR2->VAR9] = VAR5;
+if (VAR5 & VAR10)
+FUN3(VAR11);
+else
+FUN4(VAR11);
+}
+
+VAR4->VAR12	= !!(VAR5 & VAR13);
+VAR4->VAR14	= !!(VAR5 & VAR10);
+VAR4->VAR15	= 0;	
+VAR4->VAR16	= 1;	
+VAR4->VAR17	= 0;	
+}

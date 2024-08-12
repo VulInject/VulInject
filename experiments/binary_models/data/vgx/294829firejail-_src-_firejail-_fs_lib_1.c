@@ -1,0 +1,1 @@
+int FUN1 ( const char * VAR1 ) { FUN2 ( ) ; char * VAR2 = FUN3 ( VAR1 , NULL ) ; if ( ! VAR2 ) { return 0 ; } int VAR3 = 0 ; const char * VAR4 = FUN4 ( VAR2 ) ; if ( strcmp ( VAR4 , "" ) == 0 ) { VAR3 = 1 ; } free ( VAR2 ) ; return VAR3 ; }

@@ -1,0 +1,23 @@
+static VAR1 *FUN1(VAR2 *VAR3, struct VAR4 *VAR5) {
+int VAR6;
+VAR1 *VAR7, **VAR8;
+
+VAR8 = calloc(VAR3->VAR9 + 1, sizeof(VAR1 *));
+VAR5->VAR10 = FUN2(VAR5->VAR10, VAR8);
+for (VAR6 = 0; VAR6 < VAR3->VAR9; ++VAR6) {
+VAR8[VAR6] = FUN3(VAR3->VAR11 + VAR6, VAR5);
+if (VAR8[VAR6] == NULL) {
+return false;
+}
+}
+
+
+
+VAR7 = calloc(2, sizeof(VAR1));
+VAR5->VAR10 = FUN2(VAR5->VAR10, VAR7);
+VAR7[0].VAR12.VAR13 = VAR14 | VAR15 | VAR16 | VAR17 | VAR18;
+VAR7[0].VAR12.VAR19.VAR20 = VAR8;
+VAR7[0].VAR21 = VAR22;
+
+return VAR7;
+}

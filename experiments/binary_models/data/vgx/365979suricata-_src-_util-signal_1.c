@@ -1,0 +1,1 @@
+void FUN1 ( int VAR1 , void * FUN2 ( int ) ) { signal ( VAR1 , VAR2 ) ; struct sigaction VAR3 ; VAR3 . VAR4 = VAR2 ; FUN3 ( & ( VAR3 . VAR5 ) ) ; FUN4 ( & ( VAR3 . VAR5 ) , VAR1 ) ; VAR3 . VAR6 = 0 ; FUN5 ( VAR1 , & VAR3 , 0 ) ; return ; }

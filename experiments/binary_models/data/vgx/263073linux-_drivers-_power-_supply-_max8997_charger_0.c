@@ -1,0 +1,109 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+int VAR3 = 0;
+struct VAR4 *VAR5;
+struct VAR6 *VAR7 = FUN2(VAR2->VAR8.VAR9);
+struct VAR10 *VAR11 = VAR2->VAR8.VAR12;
+struct VAR13 *VAR14 = VAR7->VAR14;
+struct VAR15 *VAR16 = VAR7->VAR16;
+struct power_supply_config VAR17 = {};
+
+if (!VAR16) {
+FUN3(&VAR2->VAR8, "");
+return -VAR18;
+}
+
+if (VAR16->VAR19) {
+int VAR20 = (VAR16->VAR19 - 50) / 10;
+if (VAR20 < 0)
+VAR20 = 0;
+if (VAR20 > 0xf)
+VAR20 = 0xf;
+
+VAR3 = FUN4(VAR14, VAR21,
+VAR20 << VAR22, VAR23);
+if (VAR3 < 0) {
+FUN3(&VAR2->VAR8, "");
+return VAR3;
+}
+}
+switch (VAR16->VAR24) {
+case 5:
+VAR3 = FUN4(VAR14, VAR25,
+0x2 << VAR26, VAR27);
+break;
+case 6:
+VAR3 = FUN4(VAR14, VAR25,
+0x3 << VAR26, VAR27);
+break;
+case 7:
+VAR3 = FUN4(VAR14, VAR25,
+0x4 << VAR26, VAR27);
+break;
+case 0:
+VAR3 = FUN4(VAR14, VAR25,
+0x7 << VAR26, VAR27);
+break;
+default:
+FUN3(&VAR2->VAR8, "",
+VAR16->VAR24);
+return -VAR18;
+}
+if (VAR3 < 0) {
+FUN3(&VAR2->VAR8, "");
+return VAR3;
+}
+
+VAR5 = FUN5(&VAR2->VAR8, sizeof(*VAR5), VAR28);
+if (!VAR5)
+return -VAR29;
+
+FUN6(VAR2, VAR5);
+
+VAR5->VAR8 = &VAR2->VAR8;
+VAR5->VAR7 = VAR7;
+
+VAR17.VAR30 = VAR5;
+
+VAR5->VAR31 = FUN7(&VAR2->VAR8,
+&VAR32,
+&VAR17);
+if (FUN8(VAR5->VAR31)) {
+FUN3(&VAR2->VAR8, "");
+return FUN9(VAR5->VAR31);
+}
+
+
+VAR2->VAR8.VAR12 = VAR7->VAR8->VAR12;
+VAR5->VAR33 = FUN10(&VAR2->VAR8, "");
+VAR2->VAR8.VAR12 = VAR11;
+if (FUN8(VAR5->VAR33)) {
+if (FUN9(VAR5->VAR33) == -VAR34)
+return -VAR34;
+FUN11(&VAR2->VAR8, "");
+}
+VAR5->VAR35 = FUN12("");
+if (FUN8(VAR5->VAR35)) {
+FUN13(VAR5->VAR8, FUN9(VAR5->VAR35),
+"");
+return FUN9(VAR5->VAR35);
+}
+
+if (!FUN8(VAR5->VAR33) && !FUN14(VAR5->VAR35)) {
+VAR3 = FUN15(&VAR2->VAR8, &VAR5->VAR36,
+VAR37);
+if (VAR3) {
+FUN3(&VAR2->VAR8, "", VAR3);
+return VAR3;
+}
+VAR5->VAR38.VAR39 = VAR40;
+VAR3 = FUN16(&VAR2->VAR8, VAR5->VAR35,
+&VAR5->VAR38);
+if (VAR3) {
+FUN3(&VAR2->VAR8, "");
+return VAR3;
+}
+}
+
+return 0;
+}

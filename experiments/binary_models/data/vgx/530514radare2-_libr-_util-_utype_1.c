@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( VAR2 * VAR3 , ut64 VAR4 ) { VAR1 * VAR5 = NULL ; ut64 VAR6 = FUN2 ( VAR4 ) ; char * VAR7 = FUN3 ( "" VAR8 , VAR6 ) ; if ( VAR7 ) { char * VAR9 = FUN4 ( VAR3 , VAR7 , 0 ) ; if ( VAR9 ) { VAR5 = FUN5 ( VAR9 , "" , - 1 ) ; } } return VAR5 ; }

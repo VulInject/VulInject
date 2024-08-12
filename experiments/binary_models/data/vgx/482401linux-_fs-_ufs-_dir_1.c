@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( struct VAR2 * VAR3 , unsigned long VAR4 ) { struct VAR5 * VAR6 = VAR3 -> VAR7 ; struct VAR1 * VAR1 = FUN2 ( VAR6 , VAR4 , NULL ) ; if ( ! FUN3 ( VAR1 ) ) { FUN4 ( VAR1 ) ; if ( FUN5 ( ! FUN6 ( VAR1 ) ) ) { if ( ! FUN7 ( VAR1 ) ) { VAR8 } } } return VAR1 ; fail FUN8 ( VAR1 , NULL ) ; return FUN9 ( - VAR9 ) ; }

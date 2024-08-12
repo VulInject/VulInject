@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( struct VAR2 * VAR3 , int VAR4 ) { struct VAR1 * VAR5 ; if ( ! VAR3 ) { return NULL ; } VAR5 = ( VAR1 * ) calloc ( 1 , sizeof ( * VAR5 ) ) ; if ( ! VAR5 ) { FUN2 ( VAR3 , - VAR6 , "" , FUN3 ( & VAR3 -> VAR7 ) + 1 , VAR4 , strerror ( VAR6 ) ) ; return NULL ; } VAR5 -> VAR4 = VAR4 ; if ( FUN4 ( VAR3 , VAR5 ) < 0 ) { return NULL ; } return VAR5 ; }

@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { while ( VAR2 ) { struct VAR1 * VAR3 = VAR2 ; VAR2 = VAR2 -> VAR4 ; } }

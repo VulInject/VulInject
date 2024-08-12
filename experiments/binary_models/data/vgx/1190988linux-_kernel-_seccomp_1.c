@@ -1,0 +1,1 @@
+static long FUN1 ( unsigned int VAR1 , unsigned int VAR2 , void VAR3 * VAR4 ) { switch ( VAR1 ) { case VAR5 : return FUN2 ( ) ; case VAR6 : return FUN3 ( VAR2 , VAR4 ) ; case VAR7 : if ( VAR2 != 0 ) { return - VAR8 ; } return FUN4 ( VAR4 ) ; case VAR9 : if ( VAR2 != 0 ) { return - VAR8 ; } return FUN5 ( VAR4 ) ; default : return - VAR8 ; } }

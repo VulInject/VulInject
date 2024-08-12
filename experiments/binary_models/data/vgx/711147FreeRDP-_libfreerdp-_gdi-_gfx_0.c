@@ -1,0 +1,11 @@
+static VAR1 FUN1(DWORD VAR2, DWORD VAR3)
+{
+const UINT32 VAR4 = VAR3;
+const UINT32 VAR5 = VAR4 - (VAR2 % VAR3);
+UINT32 VAR6 = VAR2;
+
+if (VAR4 != VAR5)
+VAR6 += VAR5;
+
+return VAR6;
+}

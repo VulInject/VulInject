@@ -1,0 +1,34 @@
+void
+FUN1(VAR1 *VAR2, boolean_t VAR3)
+{
+ddi_eventcookie_t VAR4;
+t1394_localinfo_t VAR5;
+
+FUN2(&VAR2->VAR6);
+
+if (VAR2->VAR7 == VAR8) {
+FUN3(&VAR2->VAR6);
+if (VAR3 == VAR9)
+FUN4(VAR2).FUN5(VAR2->VAR10.VAR11);
+
+return;
+}
+
+VAR2->VAR7 = VAR8;
+FUN3(&VAR2->VAR6);
+
+if (VAR3 == VAR9)
+FUN4(VAR2).FUN5(VAR2->VAR10.VAR11);
+
+
+FUN2(&VAR2->VAR6);
+VAR5.VAR12 = VAR2->VAR13;
+VAR5.VAR14	 = VAR2->VAR15;
+FUN3(&VAR2->VAR6);
+
+if (FUN6(VAR2->VAR16, NULL,
+VAR17, &VAR4, VAR18) ==
+VAR19)
+(void) FUN7(VAR2->VAR16, NULL,
+VAR4, &VAR5);
+}

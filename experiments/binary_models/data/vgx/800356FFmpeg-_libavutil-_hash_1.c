@@ -1,0 +1,1 @@
+const char * FUN1 ( int VAR1 ) { if ( VAR1 < 0 || VAR1 >= VAR2 ) { return VAR3 ; } return VAR4 [ VAR1 ] . VAR5 ; }

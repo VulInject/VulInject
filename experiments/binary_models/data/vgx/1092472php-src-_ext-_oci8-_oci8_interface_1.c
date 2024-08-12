@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * VAR2 , * VAR3 ; VAR4 * VAR5 ; sb4 VAR6 = 0 ; if ( FUN2 ( FUN3 ( ) , FUN4 ( ) , "" , & VAR3 , VAR7 ) == VAR8 ) { FUN5 ( ) ; } if ( ( VAR2 = FUN6 ( FUN7 ( VAR3 ) , "" , sizeof ( "" ) - 1 ) ) == NULL ) { FUN8 ( NULL , VAR9 , "" ) ; VAR10 ; } FUN9 ( VAR2 , VAR5 ) ; if ( FUN10 ( VAR5 , & VAR6 ) ) { VAR10 ; } FUN11 ( VAR6 , NULL ) ; }

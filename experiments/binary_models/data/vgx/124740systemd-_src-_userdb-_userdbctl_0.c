@@ -1,0 +1,65 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4) {
+int VAR5;
+
+assert(VAR2);
+
+switch (VAR6) {
+
+case VAR7:
+if (!FUN2(VAR2->VAR8))
+break;
+
+FUN3("" VAR9 "" VAR10 "",
+VAR2->VAR11,
+VAR2->VAR8,
+FUN4(VAR2),
+FUN5(FUN6(VAR2)),
+FUN7(VAR2),
+FUN8(VAR2));
+
+break;
+
+case VAR12:
+FUN9(VAR2->VAR13, VAR14, NULL, 0);
+break;
+
+case VAR15:
+FUN10(VAR2, true);
+
+if (VAR2->VAR16) {
+FUN11(VAR17);
+FUN12("", VAR2->VAR11);
+}
+
+break;
+
+case VAR18: {
+UserDisposition VAR19;
+
+assert(VAR4);
+VAR19 = FUN13(VAR2);
+
+VAR5 = FUN14(
+VAR4,
+VAR20, "",
+VAR20, VAR2->VAR11,
+VAR21, FUN15(VAR19),
+VAR20, FUN16(VAR19),
+VAR22, VAR2->VAR8,
+VAR23, FUN4(VAR2),
+VAR20, FUN17(VAR2->VAR24),
+VAR20, FUN7(VAR2),
+VAR20, FUN8(VAR2),
+VAR25, 0);
+if (VAR5 < 0)
+return FUN18(VAR5);
+
+break;
+}
+
+default:
+FUN19();
+}
+
+return 0;
+}

@@ -1,0 +1,27 @@
+union VAR1 *FUN1(struct VAR2 *VAR3)
+{
+
+union VAR1  *VAR4;
+struct VAR5	*VAR6, *VAR7;
+struct VAR8 *VAR9;
+struct VAR10 *VAR11;
+
+if (FUN2(&VAR3->VAR12))
+VAR4 = NULL;
+else{
+VAR7 = FUN3(VAR3);
+
+VAR6 = FUN4(VAR7);
+
+VAR4 = FUN5(VAR6, union VAR1, VAR13);
+
+FUN6(&VAR4->VAR13.VAR14.VAR15);
+VAR9 = VAR4->VAR13.VAR14.VAR8;
+if (VAR9 != NULL) {
+VAR11 = &VAR9->VAR16;
+if (VAR3 == &VAR11->VAR17)
+VAR11->VAR18--;
+}
+}
+return VAR4;
+}

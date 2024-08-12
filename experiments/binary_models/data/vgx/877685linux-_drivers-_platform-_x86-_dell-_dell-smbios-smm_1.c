@@ -1,0 +1,1 @@
+static int VAR1 ; static int VAR2 ; static struct smi_buffer VAR3 ; static struct VAR4 * VAR5 ; static struct VAR6 * VAR6 ; static FUN1 ( VAR7 ) ; static void FUN2 ( const struct VAR8 * VAR9 ) { struct VAR10 * VAR11 = FUN3 ( VAR9 , VAR10 , VAR12 ) ; VAR1 = VAR11 -> VAR13 ; VAR2 = VAR11 -> VAR14 ; }

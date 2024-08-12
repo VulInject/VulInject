@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { struct ec_response_charge_port_count VAR3 ; int VAR4 ; VAR4 = FUN2 ( VAR2 , 0 , VAR5 , NULL , 0 , & VAR3 , sizeof ( VAR3 ) ) ; return VAR3 . VAR6 ; }

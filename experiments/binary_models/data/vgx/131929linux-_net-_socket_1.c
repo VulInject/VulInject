@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , struct user_msghdr VAR3 * VAR4 , unsigned VAR5 , struct VAR6 * * VAR7 ) { int VAR8 ; if ( VAR5 & VAR9 ) { struct compat_msghdr VAR3 * VAR10 ; VAR10 = ( compat_msghdr VAR3 * ) VAR4 ; VAR8 = FUN2 ( VAR2 , VAR10 , NULL , VAR7 ) ; } else { VAR8 = FUN3 ( VAR2 , VAR4 , NULL , VAR7 ) ; } return 0 ; }

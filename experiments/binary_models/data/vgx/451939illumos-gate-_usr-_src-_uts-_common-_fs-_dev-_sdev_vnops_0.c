@@ -1,0 +1,232 @@
+static int
+FUN1(struct VAR1 *VAR2, char *VAR3, struct VAR1 *VAR4, char *VAR5,
+struct VAR6 *VAR6, VAR7 *VAR8, int VAR9)
+{
+struct VAR10	*VAR11 = NULL;
+struct vattr		VAR12;
+struct VAR10	*VAR13;
+struct VAR10	*VAR14 = NULL;	
+struct VAR1 		*VAR15 = NULL;	
+struct VAR10	*VAR16 = NULL;	
+struct VAR1 		*VAR17 = NULL;	
+int			VAR18 = 0;	
+struct VAR1		*VAR19;
+int VAR20 = 0;
+dev_t VAR21;
+int VAR22 = 0;
+vtype_t VAR23;
+
+
+if ((VAR3[0] == '' &&
+(VAR3[1] == '' || (VAR3[1] == '' && VAR3[2] == ''))) ||
+(VAR5[0] == '' &&
+(VAR5[1] == '' || (VAR5[1] == '' && VAR5[2] == '')))) {
+return (VAR24);
+}
+
+VAR11 = FUN2(VAR2);
+VAR13 = FUN2(VAR4);
+
+
+FUN3(&VAR11->VAR25->VAR26, VAR27);
+if (VAR11->VAR28 == VAR29) {
+FUN4(&VAR11->VAR25->VAR26);
+return (VAR30);
+}
+
+
+if (!FUN5(VAR11)) {
+FUN4(&VAR11->VAR25->VAR26);
+return (VAR31);
+}
+FUN4(&VAR11->VAR25->VAR26);
+
+FUN3(&VAR13->VAR25->VAR26, VAR27);
+if (VAR13->VAR28 == VAR29) {
+FUN4(&VAR13->VAR25->VAR26);
+return (VAR30);
+}
+FUN4(&VAR13->VAR25->VAR26);
+
+
+FUN6(&VAR32);
+
+
+
+VAR20 = FUN7(VAR2, VAR3, &VAR15, NULL, 0, NULL, VAR6, VAR8,
+NULL, NULL);
+if (VAR20) {
+FUN8(("",
+VAR3));
+FUN9(&VAR32);
+return (VAR20);
+}
+
+if (FUN10(VAR15, &VAR19, VAR8) == 0) {
+FUN11(VAR19);
+FUN12(VAR15);
+VAR15 = VAR19;
+}
+
+
+
+VAR20 = FUN7(VAR4, VAR5, &VAR17, NULL, 0, NULL, VAR6, VAR8,
+NULL, NULL);
+if (VAR20 && (VAR20 != VAR30)) {
+FUN9(&VAR32);
+FUN12(VAR15);
+return (VAR20);
+}
+
+if (VAR17 && (FUN10(VAR17, &VAR19, VAR8) == 0)) {
+FUN11(VAR19);
+FUN12(VAR17);
+VAR17 = VAR19;
+}
+
+
+if (VAR2 != VAR4) {
+VAR12.VAR33 = VAR34;
+if (VAR20 = FUN13(VAR2, &VAR12, 0, VAR6, VAR8)) {
+FUN9(&VAR32);
+FUN12(VAR15);
+if (VAR17 != NULL)
+FUN12(VAR17);
+return (VAR20);
+}
+VAR21 = VAR12.VAR35;
+VAR12.VAR33 = VAR34;
+if (VAR20 = FUN13(VAR4, &VAR12, 0, VAR6, VAR8)) {
+FUN9(&VAR32);
+FUN12(VAR15);
+if (VAR17 != NULL)
+FUN12(VAR17);
+return (VAR20);
+}
+if (VAR21 != VAR12.VAR35) {
+FUN9(&VAR32);
+FUN12(VAR15);
+if (VAR17 != NULL)
+FUN12(VAR17);
+return (VAR36);
+}
+}
+
+
+VAR20 = FUN14(VAR2, VAR37, 0, VAR6, VAR8);
+if (VAR20) {
+FUN9(&VAR32);
+FUN12(VAR15);
+if (VAR17 != NULL)
+FUN12(VAR17);
+return (VAR20);
+}
+
+
+VAR18 = (VAR11 == VAR13);
+if (!VAR18) {
+VAR20 = FUN14(VAR4, VAR38|VAR37, 0, VAR6, VAR8);
+if (VAR20) {
+FUN9(&VAR32);
+FUN12(VAR15);
+if (VAR17 != NULL)
+FUN12(VAR17);
+return (VAR20);
+}
+}
+
+VAR14 = FUN2(VAR15);
+FUN15(VAR14);
+
+
+if (VAR17 != NULL) {
+VAR16 = FUN2(VAR17);
+FUN15(VAR16);
+}
+
+if ((VAR14->VAR39 & VAR40) != 0 ||
+(VAR16 != NULL && (VAR16->VAR39 & VAR40) != 0)) {
+FUN9(&VAR32);
+if (VAR17 != NULL)
+FUN12(VAR17);
+FUN12(VAR15);
+return (VAR41);
+}
+
+
+VAR20 = FUN16(VAR11, VAR14, VAR13, &VAR16, VAR5, VAR6);
+if (VAR17 != NULL)
+FUN12(VAR17);
+if (VAR20) {
+FUN8((""
+"", VAR3, VAR5, VAR20));
+FUN9(&VAR32);
+FUN12(VAR15);
+return (VAR20);
+}
+
+
+FUN3(&VAR11->VAR26, VAR27);
+VAR14 = FUN17(VAR11, VAR3);
+if (VAR14 == NULL) {
+FUN4(&VAR11->VAR26);
+FUN9(&VAR32);
+FUN12(VAR15);
+FUN8((""));
+return (0);
+}
+
+if (VAR14->VAR28 == VAR29) {
+FUN4(&VAR11->VAR26);
+FUN9(&VAR32);
+FUN12(FUN18(VAR14));
+FUN12(VAR15);
+FUN8((""));
+return (0);
+}
+FUN4(&VAR11->VAR26);
+FUN15(FUN18(VAR14) == VAR15);
+FUN12(VAR15);
+
+
+VAR23 = FUN18(VAR14)->VAR42;
+if (VAR23 == VAR43) {
+VAR20 = FUN19(VAR14, NULL, 0);
+FUN8(("",
+VAR20));
+if (VAR20 == VAR44)
+VAR20 = 0;
+}
+
+FUN3(&VAR11->VAR26, VAR45);
+VAR22 = FUN20(VAR14) ? 1 : 0;
+FUN21(VAR11, &VAR14, VAR3,
+VAR46);
+FUN12(FUN18(VAR14));
+
+
+if (VAR22) {
+FUN15(VAR11->VAR47);
+if (VAR23 != VAR43) {
+
+VAR20 = FUN22(VAR11->VAR47,
+VAR3, VAR48, VAR8, 0);
+} else {
+
+VAR20 = FUN23(VAR11->VAR47,
+VAR3, VAR11->VAR47, VAR48, VAR8, 0);
+}
+
+if (VAR20) {
+FUN8((""
+"", VAR3,
+VAR11->VAR49));
+VAR20 = 0;
+}
+}
+FUN4(&VAR11->VAR26);
+FUN9(&VAR32);
+
+
+return (0);
+}

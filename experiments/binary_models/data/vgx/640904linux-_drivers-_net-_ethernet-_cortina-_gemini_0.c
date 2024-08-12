@@ -1,0 +1,62 @@
+static VAR1 FUN1(int VAR2, void *VAR3)
+{
+struct VAR4 *VAR5;
+struct VAR6 *VAR7 = VAR3;
+struct VAR8 *VAR9;
+u32 VAR10, VAR11 = 0;
+
+VAR5 = FUN2(VAR7);
+VAR9 = VAR5->VAR9;
+
+VAR10 = FUN3(VAR7, 0);
+VAR11 |= VAR10;
+
+if (VAR10 & (VAR12 << (VAR7->VAR13 * 2))) {
+
+FUN4(VAR7, "");
+FUN5(VAR7);
+
+
+FUN6(VAR7, 0);
+return VAR14;
+}
+
+if (VAR10 & (VAR15 << (VAR7->VAR13 * 6)))
+FUN7(VAR7, 0);
+
+VAR10 = FUN3(VAR7, 1);
+VAR11 |= VAR10;
+
+if (VAR10 & (VAR16 << VAR7->VAR13)) {
+FUN8(VAR7, 0);
+
+if (!VAR5->VAR17) {
+FUN9(&VAR5->VAR18);
+} else {
+ktime_t VAR19;
+
+VAR19 = FUN10(0, VAR5->VAR17);
+FUN11(&VAR5->VAR20, VAR19,
+VAR21);
+}
+}
+
+VAR10 = FUN3(VAR7, 4);
+VAR11 |= VAR10;
+
+if (VAR10 & (VAR22 << (VAR7->VAR13 * 8)))
+FUN12(VAR7);
+
+if (VAR10 & (VAR23 << (VAR7->VAR13 * 8))) {
+FUN13(VAR24 << (VAR7->VAR13 * 8),
+VAR9->VAR25 + VAR26);
+
+FUN14(&VAR9->VAR27);
+FUN15(&VAR5->VAR28);
+++VAR5->VAR29.VAR30;
+FUN16(&VAR5->VAR28);
+FUN17(&VAR9->VAR27);
+}
+
+return VAR11 ? VAR14 : VAR31;
+}

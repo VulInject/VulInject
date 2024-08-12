@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR3 = FUN2 ( VAR2 ) ; FUN3 ( VAR2 ) ; } static const struct drm_encoder_funcs VAR4 = { . VAR5 = VAR6 } ;

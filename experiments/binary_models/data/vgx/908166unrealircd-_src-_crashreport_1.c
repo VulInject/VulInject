@@ -1,0 +1,1 @@
+char * * FUN1 ( char * VAR1 , char * VAR2 ) { static char * VAR3 [ VAR4 + 1 ] ; static char VAR5 [ 1024 ] ; char * VAR6 , * VAR7 ; int VAR8 = 0 ; FUN2 ( VAR5 , VAR1 , sizeof ( VAR5 ) ) ; for ( VAR7 = FUN3 ( & VAR6 , VAR5 , VAR2 ) ; VAR7 ; VAR7 = FUN3 ( & VAR6 , NULL , VAR2 ) ) { VAR3 [ VAR8 ++ ] = VAR7 ; if ( VAR8 == VAR4 ) { break ; } } VAR3 [ VAR8 ] = NULL ; return VAR3 ; }

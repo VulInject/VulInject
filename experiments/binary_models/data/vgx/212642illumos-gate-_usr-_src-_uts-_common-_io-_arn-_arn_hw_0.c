@@ -1,0 +1,49 @@
+static VAR1
+FUN1(struct VAR2 *VAR3, int VAR4)
+{
+uint32_t VAR5;
+uint32_t VAR6;
+
+FUN2(VAR3, VAR7, VAR8 |
+VAR9);
+
+if (FUN3(VAR3)) {
+VAR5 = VAR10 | VAR11 |
+VAR12 | VAR13;
+} else {
+VAR6 = FUN4(VAR3, VAR14);
+if (VAR6 &
+(VAR15 |
+VAR16)) {
+FUN2(VAR3, VAR17, 0);
+FUN2(VAR3, VAR18, VAR19 | VAR20);
+} else {
+FUN2(VAR3, VAR18, VAR19);
+}
+
+VAR5 = VAR10;
+if (VAR4 == VAR21)
+VAR5 |= VAR11;
+}
+
+FUN2(VAR3, (VAR22)(VAR23), VAR5);
+FUN5(50);
+
+FUN2(VAR3, (VAR22)(VAR23), 0);
+if (!FUN6(VAR3, (VAR22)(VAR23), VAR24, 0)) {
+FUN7((VAR25, ""
+""));
+
+return (VAR26);
+}
+
+if (!FUN3(VAR3))
+FUN2(VAR3, VAR18, 0);
+
+FUN8(VAR3, NULL);
+
+if (FUN3(VAR3))
+FUN5(50);
+
+return (VAR27);
+}

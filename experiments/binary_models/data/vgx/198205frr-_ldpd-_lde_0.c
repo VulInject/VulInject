@@ -1,0 +1,14 @@
+void
+FUN1(struct VAR1 *VAR2, uint16_t VAR3,
+uint32_t VAR4)
+{
+struct map	 VAR5;
+
+memset(&VAR5, 0, sizeof(VAR5));
+VAR5.VAR6 = VAR7;
+VAR5.VAR8.VAR9.VAR6 = VAR3;
+VAR5.VAR8.VAR9.VAR4 = VAR4;
+
+VAR5.VAR10 = VAR11;
+FUN2(VAR2, NULL, &VAR5, NULL);
+}

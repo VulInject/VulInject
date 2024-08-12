@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 = FUN2 ( 1 , 7 , "" , VAR2 , & VAR3 ) ; FUN3 ( VAR1 != NULL ) ; FUN3 ( VAR3 == 1 ) ; FUN3 ( FUN4 ( VAR1 [ 0 ] , "" ) ) ; FUN5 ( VAR1 , VAR3 ) ; }

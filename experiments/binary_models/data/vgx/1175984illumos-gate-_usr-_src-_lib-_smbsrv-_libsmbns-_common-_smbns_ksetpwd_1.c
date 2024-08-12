@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( smb_krb5_pn_id_t VAR2 ) { int VAR3 ; VAR1 * VAR4 ; for ( VAR3 = 0 ; VAR3 < VAR5 ; VAR3 ++ ) { VAR4 = & VAR6 [ VAR3 ] ; } return ( NULL ) ; }

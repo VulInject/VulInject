@@ -1,0 +1,1 @@
+int FUN1 ( uint32_t VAR1 ) { int VAR2 ; struct VAR3 * VAR4 = FUN2 ( ) ; if ( ! VAR4 ) { FUN3 ( "" , VAR5 ) ; return - VAR6 ; } VAR4 -> VAR7 . VAR8 . VAR9 = VAR1 ; VAR2 = FUN4 ( VAR10 , NULL ) ; return VAR2 ; }

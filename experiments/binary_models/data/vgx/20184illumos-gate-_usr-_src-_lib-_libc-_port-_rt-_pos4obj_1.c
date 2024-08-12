@@ -1,0 +1,1 @@
+int FUN1 ( const char * VAR1 , const char * VAR2 ) { int VAR3 ; char * VAR4 ; if ( ( VAR4 = FUN2 ( VAR1 , VAR2 ) ) == NULL ) { return ( - 1 ) ; } VAR3 = unlink ( VAR4 ) ; FUN3 ( VAR4 , NULL ) ; free ( VAR4 ) ; return ( VAR3 ) ; }

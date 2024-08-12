@@ -1,0 +1,1 @@
+static int FUN1 ( unsigned char * VAR1 , unsigned char * VAR2 , VAR3 * VAR4 , VAR3 * VAR5 ) { int VAR6 ; int VAR7 ; FUN2 ( & VAR8 ) ; VAR7 = FUN3 ( VAR1 , * VAR4 , VAR9 , & VAR6 , VAR10 ) ; if ( VAR7 != VAR11 ) { VAR12 } if ( VAR6 > * VAR5 ) { VAR12 } memcpy ( VAR2 , VAR9 , VAR6 ) ; FUN4 ( & VAR8 ) ; * VAR5 = VAR6 ; return 0 ; fail FUN4 ( & VAR8 ) ; return - 1 ; }

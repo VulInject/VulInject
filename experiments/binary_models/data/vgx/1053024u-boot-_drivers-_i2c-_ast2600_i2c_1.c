@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR2 ) ; int VAR5 ; VAR4 -> VAR6 = FUN3 ( VAR2 ) ; VAR5 = FUN4 ( VAR2 , 0 , & VAR4 -> VAR7 ) ; if ( VAR5 < 0 ) { FUN5 ( "" , VAR8 , VAR2 -> VAR9 , VAR5 ) ; return VAR5 ; } return 0 ; } static const struct dm_i2c_ops VAR10 = { . VAR11 = VAR12 . VAR13 = VAR14 . VAR15 = VAR16 } ;

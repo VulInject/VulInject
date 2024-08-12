@@ -1,0 +1,1 @@
+static inline int FUN1 ( long * VAR1 , int VAR2 ) { if ( VAR2 & VAR3 ) { return VAR4 ; } if ( * VAR1 < 0 ) { if ( * VAR1 == VAR5 ) { * VAR1 = VAR6 ; } else { * VAR1 = - * VAR1 ; } return VAR7 ; } if ( VAR2 & VAR8 ) { return VAR9 ; } return VAR10 ; }

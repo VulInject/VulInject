@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( char * VAR2 ) { VAR1 * VAR3 = fopen ( VAR2 , "" ) ; if ( VAR3 == NULL ) { FUN2 ( VAR2 , NULL ) ; FUN3 ( 1 ) ; } return VAR3 ; }

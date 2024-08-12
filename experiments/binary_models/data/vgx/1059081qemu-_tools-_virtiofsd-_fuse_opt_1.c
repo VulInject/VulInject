@@ -1,0 +1,1 @@
+int FUN1 ( const struct VAR1 * VAR2 , const char * VAR3 ) { int VAR4 ; return FUN2 ( VAR2 , VAR3 , & VAR4 ) ?1 : 0 ; }

@@ -1,0 +1,139 @@
+VAR1
+FUN1(VAR2 *VAR3, size_t VAR4, int VAR5)
+{
+uint16		VAR6;
+dsa_pointer VAR7;
+VAR8 *VAR9;
+dsa_pointer VAR10;
+
+FUN2(VAR4 > 0);
+
+
+if (((VAR5 & VAR11) != 0 && !FUN3(VAR4)) ||
+((VAR5 & VAR11) == 0 && !FUN4(VAR4)))
+FUN5(VAR12, "", VAR4);
+
+
+if (VAR4 > VAR13[FUN6(VAR13) - 1])
+{
+size_t		VAR14 = FUN7(VAR4);
+size_t		VAR15;
+dsa_pointer VAR16;
+VAR17 *VAR18 = &VAR3->VAR19->VAR20[VAR21];
+
+
+VAR16 = FUN8(VAR3, VAR22);
+if (!FUN9(VAR16))
+{
+
+if ((VAR5 & VAR23) == 0)
+FUN10(VAR12,
+(FUN11(VAR24),
+FUN12(""),
+FUN13("",
+VAR4)));
+return VAR25;
+}
+
+FUN14(FUN15(VAR3), VAR26);
+
+
+VAR9 = FUN16(VAR3, VAR14);
+if (VAR9 == NULL)
+VAR9 = FUN17(VAR3, VAR14);
+if (VAR9 == NULL)
+{
+
+FUN18(FUN15(VAR3));
+FUN19(VAR3, VAR16);
+
+
+if ((VAR5 & VAR23) == 0)
+FUN10(VAR12,
+(FUN11(VAR24),
+FUN12(""),
+FUN13("",
+VAR4)));
+return VAR25;
+}
+
+
+if (!FUN20(VAR9->VAR27, VAR14, &VAR15))
+FUN5(VAR28,
+"", VAR14);
+FUN18(FUN15(VAR3));
+
+VAR7 = FUN21(FUN22(VAR3, VAR9),
+VAR15 * VAR29);
+
+
+FUN14(FUN23(VAR3, VAR21),
+VAR26);
+FUN24(VAR3, VAR16, VAR18, VAR7, VAR14,
+VAR21);
+VAR9->VAR30[VAR15] = VAR16;
+FUN18(FUN23(VAR3, VAR21));
+
+
+if ((VAR5 & VAR31) != 0)
+memset(FUN25(VAR3, VAR7), 0, VAR4);
+
+return VAR7;
+}
+
+
+if (VAR4 < FUN6(VAR32) * VAR33)
+{
+int			VAR34;
+
+
+VAR34 = ((VAR4 + VAR33 - 1) /
+VAR33) - 1;
+VAR6 = VAR32[VAR34];
+}
+else
+{
+uint16		VAR35;
+uint16		VAR36;
+
+
+VAR35 = VAR32[FUN6(VAR32) - 1];
+VAR36 = FUN6(VAR13) - 1;
+
+while (VAR35 < VAR36)
+{
+uint16		VAR37 = (VAR35 + VAR36) / 2;
+uint16		VAR38 = VAR13[VAR37];
+
+if (VAR38 < VAR4)
+VAR35 = VAR37 + 1;
+else
+VAR36 = VAR37;
+}
+
+VAR6 = VAR35;
+}
+FUN2(VAR4 <= VAR13[VAR6]);
+FUN2(VAR6 == 0 || VAR4 > VAR13[VAR6 - 1]);
+
+
+VAR10 = FUN8(VAR3, VAR6);
+
+
+if (!FUN9(VAR10))
+{
+
+if ((VAR5 & VAR23) == 0)
+FUN10(VAR12,
+(FUN11(VAR24),
+FUN12(""),
+FUN13("", VAR4)));
+return VAR25;
+}
+
+
+if ((VAR5 & VAR31) != 0)
+memset(FUN25(VAR3, VAR10), 0, VAR4);
+
+return VAR10;
+}

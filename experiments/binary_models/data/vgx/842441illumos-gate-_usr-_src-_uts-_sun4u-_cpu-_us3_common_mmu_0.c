@@ -1,0 +1,38 @@
+void
+FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+uint64_t VAR5[VAR6];
+uint8_t VAR7[VAR6];
+uint8_t VAR8, VAR9, VAR10;
+uint16_t VAR11, VAR12;
+
+
+if (FUN2(VAR2)) {
+
+for (VAR8 = 0; VAR8 < VAR13; VAR8++) {
+VAR5[VAR8] = VAR4[VAR8];
+}
+for (VAR9 = 0; VAR9 < VAR13; VAR9++) {
+for (VAR8 = VAR13 - 1, VAR10 = 0; VAR8 > 0; VAR8--) {
+if (VAR5[VAR8] > VAR5[VAR10])
+VAR10 = VAR8;
+}
+VAR7[VAR9] = VAR10;
+VAR5[VAR10] = 0;
+}
+
+
+VAR11 = VAR2->VAR14[0] << 8 | VAR2->VAR14[1];
+
+if (VAR15) {
+FUN3(VAR2, VAR4, VAR7);
+} else {
+
+FUN4(VAR2, VAR4, VAR7);
+}
+VAR12 = VAR7[0] << 8 | VAR7[1];
+if (VAR12 != VAR11) {
+FUN5(VAR2, VAR7);
+}
+}
+}

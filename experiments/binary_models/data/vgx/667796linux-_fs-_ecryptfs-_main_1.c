@@ -1,0 +1,1 @@
+static void FUN1 ( void * VAR1 ) { struct VAR2 * VAR3 = ( VAR2 * ) VAR1 ; FUN2 ( & VAR3 -> VAR4 ) ; } static VAR5 { struct VAR6 * * VAR7 ; const char * VAR8 ; int VAR9 ; slab_flags_t VAR10 ; void * FUN3 ( void * VAR11 ) } , VAR12 [ ] { } ;

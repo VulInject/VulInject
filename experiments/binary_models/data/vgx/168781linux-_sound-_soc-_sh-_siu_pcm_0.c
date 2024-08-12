@@ -1,0 +1,35 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR3 = FUN2(VAR2, struct VAR3,
+VAR2);
+struct VAR4 *VAR5 = VAR3->VAR5;
+struct VAR6 *VAR7 = VAR5->VAR8->VAR9->VAR7;
+struct VAR10 *VAR11 = VAR5->VAR12;
+struct VAR13 *VAR14 = FUN3(VAR5);
+
+FUN4(VAR7, "", VAR15, VAR3->VAR16);
+
+if (!VAR3->VAR16) {
+FUN4(VAR7, "", VAR15);
+return;
+}
+
+if (VAR5->VAR17 == VAR18) {
+dma_addr_t VAR19;
+size_t VAR20;
+
+VAR19 = (VAR21)FUN5(VAR11->VAR22,
+VAR3->VAR23,
+VAR3->VAR24);
+VAR20 = VAR3->VAR24;
+
+
+FUN6(VAR14, VAR19, VAR20);
+} else {
+FUN7(VAR14,
+(VAR21)FUN5(VAR11->VAR22,
+VAR3->VAR23,
+VAR3->VAR24),
+VAR3->VAR24);
+}
+}

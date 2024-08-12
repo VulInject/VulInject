@@ -1,0 +1,49 @@
+static void
+FUN1(VAR1 *VAR2)
+{
+VAR3 **VAR4, **VAR5, *VAR6;
+size_t VAR7, VAR8, VAR9, VAR10;
+
+VAR10 = (VAR11)(VAR2->VAR12.VAR13.VAR14.VAR15 -
+VAR2->VAR12.VAR16.VAR14.VAR15);
+
+VAR8 = FUN2(VAR17, 1 << (FUN3(3 * VAR10 + 4) - 2));
+VAR7 = VAR2->VAR18 + 1;
+
+if ((VAR7 >> VAR19) <= VAR8 &&
+VAR8 <= (VAR7 << 1))
+return;
+
+VAR5 = FUN4(VAR20, VAR8 * sizeof (void *),
+VAR21);
+if (VAR5 == NULL)
+return;
+FUN5(VAR5, VAR8 * sizeof (void *));
+
+FUN6(&VAR2->VAR22);
+
+VAR7 = VAR2->VAR18 + 1;
+VAR4 = VAR2->VAR23;
+
+VAR2->VAR18 = VAR8 - 1;
+VAR2->VAR23 = VAR5;
+VAR2->VAR24 = FUN3(VAR2->VAR18);
+
+for (VAR9 = 0; VAR9 < VAR7; VAR9++) {
+VAR6 = VAR4[VAR9];
+while (VAR6 != NULL) {
+uintptr_t VAR25 = VAR6->VAR26;
+VAR3 *VAR27 = VAR6->VAR28;
+VAR3 **VAR29 = FUN7(VAR2, VAR25);
+VAR6->VAR28 = *VAR29;
+*VAR29 = VAR6;
+VAR6 = VAR27;
+}
+}
+
+FUN8(&VAR2->VAR22);
+
+if (VAR4 != VAR2->VAR30)
+FUN9(VAR20, VAR4,
+VAR7 * sizeof (void *));
+}

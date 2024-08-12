@@ -1,0 +1,209 @@
+static VAR1
+FUN1( FT_Renderer  VAR2 )
+{
+VAR2->VAR3->VAR4->FUN2( VAR2->VAR5, NULL, 0 );
+
+return 0;
+}
+
+
+
+static VAR1
+FUN3( FT_Renderer  VAR2,
+FT_ULong     VAR6,
+FT_Pointer   VAR7 )
+{
+
+return VAR2->VAR3->VAR4->FUN4( VAR2->VAR5,
+VAR6,
+VAR7 );
+}
+
+
+static VAR1
+FUN5( FT_Renderer       VAR2,
+FT_GlyphSlot      VAR8,
+const VAR9*  VAR10,
+const VAR11*  VAR12 )
+{
+FT_Error  VAR13 = VAR14;
+
+
+if ( VAR8->VAR15 != VAR2->VAR16 )
+{
+VAR13 = FUN6( VAR17 );
+goto VAR18;
+}
+
+if ( VAR10 )
+FUN7( &VAR8->VAR19, VAR10 );
+
+if ( VAR12 )
+FUN8( &VAR8->VAR19, VAR12->VAR20, VAR12->VAR21 );
+
+VAR18:
+return VAR13;
+}
+
+
+
+static void
+FUN9( FT_Renderer   VAR2,
+FT_GlyphSlot  VAR8,
+VAR22*      VAR23 )
+{
+FUN10( VAR23 );
+
+if ( VAR8->VAR15 == VAR2->VAR16 )
+FUN11( &VAR8->VAR19, VAR23 );
+}
+
+
+
+static VAR1
+FUN12( FT_Renderer       VAR2,
+FT_GlyphSlot      VAR8,
+FT_Render_Mode    VAR24,
+const VAR11*  VAR25,
+FT_Render_Mode    VAR26 )
+{
+FT_Error     VAR13   = VAR14;
+VAR27*  VAR19 = &VAR8->VAR19;
+VAR28*   VAR29  = &VAR8->VAR29;
+FT_Memory    VAR30  = VAR2->VAR31.VAR30;
+FT_Pos       VAR32 = 0;
+FT_Pos       VAR33 = 0;
+FT_Int       VAR34    = ( VAR24 == VAR35 );
+FT_Int       VAR36    = ( VAR24 == VAR37 );
+
+FT_Raster_Params  VAR38;
+
+
+
+if ( VAR8->VAR15 != VAR2->VAR16 )
+{
+VAR13 = FUN6( VAR17 );
+goto VAR18;
+}
+
+
+if ( VAR24 != VAR26 )
+{
+VAR13 = FUN6( VAR39 );
+goto VAR18;
+}
+
+
+if ( VAR8->VAR40->VAR41 & VAR42 )
+{
+FUN13( VAR29->VAR43 );
+VAR8->VAR40->VAR41 &= ~VAR42;
+}
+
+FUN14( VAR8, VAR24, VAR25 );
+
+
+if ( FUN15( VAR29->VAR43, VAR29->VAR44, VAR29->VAR45 ) )
+goto VAR18;
+
+VAR8->VAR40->VAR41 |= VAR42;
+
+VAR32 = 64 * -VAR8->VAR46;
+VAR33 = 64 * -VAR8->VAR47;
+if ( VAR29->VAR48 == VAR49 )
+VAR33 += 64 * (VAR50)VAR29->VAR44 / 3;
+else
+VAR33 += 64 * (VAR50)VAR29->VAR44;
+
+if ( VAR25 )
+{
+VAR32 += VAR25->VAR20;
+VAR33 += VAR25->VAR21;
+}
+
+
+if ( VAR32 || VAR33 )
+FUN8( VAR19, VAR32, VAR33 );
+
+
+VAR38.VAR51 = VAR29;
+VAR38.VAR52 = VAR19;
+VAR38.VAR41  = VAR53;
+
+
+
+{
+VAR11*  VAR54     = VAR19->VAR54;
+VAR11*  VAR55 = VAR54 + VAR19->VAR56;
+VAR11*  VAR57;
+
+
+if ( VAR34 )
+for ( VAR57 = VAR54; VAR57 < VAR55; VAR57++ )
+VAR57->VAR20 *= 3;
+
+if ( VAR36 )
+for ( VAR57 = VAR54; VAR57 < VAR55; VAR57++ )
+VAR57->VAR21 *= 3;
+}
+
+
+VAR13 = VAR2->FUN16( VAR2->VAR5, &VAR38 );
+
+
+{
+VAR11*  VAR54     = VAR19->VAR54;
+VAR11*  VAR55 = VAR54 + VAR19->VAR56;
+VAR11*  VAR57;
+
+
+if ( VAR34 )
+for ( VAR57 = VAR54; VAR57 < VAR55; VAR57++ )
+VAR57->VAR20 /= 3;
+
+if ( VAR36 )
+for ( VAR57 = VAR54; VAR57 < VAR55; VAR57++ )
+VAR57->VAR21 /= 3;
+}
+
+if ( VAR13 )
+goto VAR18;
+
+
+if ( VAR34 || VAR36 )
+{
+VAR58*                 VAR59;
+FT_Bitmap_LcdFilterFunc  VAR60;
+
+
+
+if ( VAR8->VAR61 && VAR8->VAR61->VAR40->VAR60 )
+{
+VAR59     = VAR8->VAR61->VAR40->VAR59;
+VAR60 = VAR8->VAR61->VAR40->VAR60;
+}
+else
+{
+VAR59     = VAR8->VAR62->VAR59;
+VAR60 = VAR8->VAR62->VAR60;
+}
+
+if ( VAR60 )
+FUN17( VAR29, VAR24, VAR59 );
+}
+
+
+if ( VAR34 )  
+{
+VAR58*  VAR63;
+VAR58*  VAR64 = NULL;
+FT_UInt   VAR65, VAR66;
+
+unsigned int  VAR67 = VAR29->VAR44;
+unsigned int  VAR68  = VAR29->VAR68;
+int           VAR45  = VAR29->VAR45;
+
+
+
+
+VAR68 /= 3;

@@ -1,0 +1,21 @@
+void FUN1(int VAR1, ...)
+{
+VAR2 *VAR3;
+va_list VAR4;
+
+VAR3 = VAR5;
+if (VAR3 == NULL || VAR3->VAR6 <= VAR3->VAR7)
+FUN2("");
+else {
+FUN3(VAR4, VAR1);
+
+
+if (VAR3->VAR6 > VAR3->VAR8)
+VAR3->VAR8++;
+
+
+VAR3->VAR7++;
+FUN4(VAR3, VAR1, VAR4, VAR9->VAR10);
+FUN5(VAR4);
+}
+}

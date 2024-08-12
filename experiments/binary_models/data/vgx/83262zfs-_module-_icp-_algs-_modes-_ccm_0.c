@@ -1,0 +1,126 @@
+int
+FUN1(VAR1 *VAR2, char *VAR3, size_t VAR4,
+VAR5 *VAR6, size_t VAR7,
+int (*VAR8)(const void *, const VAR9 *, VAR9 *),
+void (*VAR10)(VAR9 *, VAR9 *),
+void (*VAR11)(VAR9 *, VAR9 *))
+{
+size_t VAR12 = VAR4;
+size_t VAR13 = 0;
+VAR9 *VAR14 = (VAR9 *)VAR3;
+VAR9 *VAR15;
+VAR9 *VAR16;
+void *VAR17;
+offset_t VAR18;
+VAR9 *VAR19;
+VAR9 *VAR20;
+size_t VAR21;
+uint64_t VAR22;
+VAR9 *VAR23;
+
+if (VAR4 + VAR2->VAR24 < VAR7) {
+
+bcopy(VAR14,
+(VAR9 *)VAR2->VAR25 + VAR2->VAR24,
+VAR4);
+VAR2->VAR24 += VAR4;
+VAR2->VAR26 = VAR14;
+return (VAR27);
+}
+
+VAR16 = (VAR9 *)VAR2->VAR28;
+if (VAR6 != NULL)
+FUN2(VAR6, &VAR17, &VAR18);
+
+VAR23 = (VAR9 *)VAR2->VAR29;
+
+do {
+
+if (VAR2->VAR24 > 0) {
+VAR13 = VAR7 - VAR2->VAR24;
+
+if (VAR13 > VAR12)
+return (VAR30);
+
+bcopy(VAR14, &((VAR9 *)VAR2->VAR25)
+[VAR2->VAR24], VAR13);
+
+VAR15 = (VAR9 *)VAR2->VAR25;
+} else {
+VAR15 = VAR14;
+}
+
+
+FUN3(VAR15, VAR23);
+FUN4(VAR2->VAR31, VAR23, VAR23);
+
+
+FUN4(VAR2->VAR31, (VAR9 *)VAR2->VAR28,
+(VAR9 *)VAR2->VAR32);
+
+VAR16 = (VAR9 *)VAR2->VAR32;
+
+
+VAR22 = FUN5(VAR2->VAR28[1] & VAR2->VAR33);
+VAR22 = FUN6(VAR22 + 1);
+VAR22 = VAR2->VAR28[1] & VAR2->VAR33;
+VAR22++;
+VAR22 &= VAR2->VAR33;
+VAR2->VAR28[1] =
+(VAR2->VAR28[1] & ~(VAR2->VAR33)) | VAR22;
+
+
+FUN3(VAR15, VAR16);
+
+VAR2->VAR34 += VAR7;
+
+if (VAR6 == NULL) {
+if (VAR2->VAR24 > 0) {
+bcopy(VAR15, VAR2->VAR26,
+VAR2->VAR24);
+bcopy(VAR15 + VAR2->VAR24, VAR14,
+VAR13);
+}
+} else {
+FUN7(VAR6, &VAR17, &VAR18, &VAR19,
+&VAR21, &VAR20, VAR7);
+
+
+if (VAR21 == VAR7) {
+FUN8(VAR16, VAR19);
+} else {
+bcopy(VAR16, VAR19, VAR21);
+if (VAR20 != NULL) {
+bcopy(VAR16 + VAR21,
+VAR20,
+VAR7 - VAR21);
+}
+}
+
+VAR6->VAR35 += VAR7;
+}
+
+
+if (VAR2->VAR24 != 0) {
+VAR14 += VAR13;
+VAR2->VAR24 = 0;
+} else {
+VAR14 += VAR7;
+}
+
+VAR12 = (VAR36)&VAR3[VAR4] - (VAR36)VAR14;
+
+
+if (VAR12 > 0 && VAR12 < VAR7) {
+bcopy(VAR14, VAR2->VAR25, VAR12);
+VAR2->VAR24 = VAR12;
+VAR2->VAR26 = VAR14;
+goto VAR6;
+}
+VAR2->VAR26 = NULL;
+
+} while (VAR12 > 0);
+
+VAR6:
+return (VAR27);
+}

@@ -1,0 +1,91 @@
+static void
+FUN1(struct VAR1 *VAR1)
+{
+int VAR2;
+unsigned int VAR3;
+u32 VAR4;
+
+
+
+VAR4 = (VAR5) (VAR6 / FUN2(&VAR7));
+
+
+
+if (VAR4 < (1 << (20 - VAR8))) {
+VAR4 =  1 << (20 - VAR8);
+} else if (VAR4 > (1 << (30 - VAR8))) {
+VAR4 =  1 << (30 - VAR8);
+}
+
+
+
+
+
+VAR3 = FUN3(VAR4 << VAR8);
+
+
+VAR4 = 1 << (VAR3 + VAR8);
+
+VAR1->VAR9 = (VAR4 / VAR10) * sizeof(VAR11);
+
+FUN4(VAR1->VAR9 > 8 * 1024 * 1024);   
+
+
+FUN4((1 << FUN3(VAR1->VAR9)) != (VAR1->VAR9 >> VAR8));
+
+FUN5("",
+VAR12, VAR1->VAR13,
+(unsigned long) VAR6 >> (20 - VAR8),
+VAR4>>20,
+VAR3 + VAR8);
+
+VAR1->VAR14 = (VAR11 *)FUN6(VAR15, 
+FUN3(VAR1->VAR9));
+if(NULL == VAR1->VAR14) {
+FUN7("", VAR12);
+}
+memset(VAR1->VAR14, 0, VAR1->VAR9);
+
+FUN4((((unsigned long)VAR1->VAR14) & VAR16) != (unsigned long)VAR1->VAR14);
+FUN5("", VAR1->VAR14);
+
+
+VAR1->VAR17 = (VAR1->VAR9 / sizeof(VAR11)) >> 3;
+FUN5("", VAR12, VAR1->VAR17);
+
+VAR1->VAR18 = (VAR19 *)FUN6(VAR15, 
+FUN3(VAR1->VAR17));
+if(NULL == VAR1->VAR18) {
+FUN7("", VAR12);
+}
+memset(VAR1->VAR18, 0, VAR1->VAR17);
+
+
+VAR1->VAR20 = 16;
+
+
+FUN8(&VAR1->VAR21);
+
+
+VAR1->VAR22 = FUN3(VAR4) + VAR8 - VAR23;
+FUN5("", VAR1->VAR22);
+
+
+FUN9(VAR24 << VAR1->VAR22, 
+&VAR1->VAR13->VAR25);
+
+FUN9(FUN10(VAR1->VAR14), 
+&VAR1->VAR13->VAR26);
+
+
+FUN9(VAR27, &VAR1->VAR13->VAR28);
+
+
+FUN9(0, &VAR1->VAR13->VAR29);
+FUN9(0, &VAR1->VAR13->VAR30);
+
+for(VAR2 = 1 << VAR23; VAR2 ; VAR2--) {
+FUN9((VAR31 | (VAR2 << VAR1->VAR22)),
+&VAR1->VAR13->VAR32);
+}
+}

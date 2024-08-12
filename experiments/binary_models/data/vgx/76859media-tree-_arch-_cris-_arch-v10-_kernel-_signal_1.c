@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , struct sigcontext VAR3 * VAR4 ) { unsigned int VAR5 = 0 ; unsigned long VAR6 ; VAR7 -> VAR8 . VAR9 = VAR10 ; if ( FUN2 ( VAR2 , VAR4 , sizeof ( VAR1 ) ) ) { VAR11 } VAR2 -> VAR12 |= 1 << 8 ; VAR5 |= FUN3 ( VAR6 , & VAR4 -> VAR13 ) ; FUN4 ( VAR6 , NULL ) ; return VAR5 ; badframe return 1 ; }

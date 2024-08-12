@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * , struct VAR2 * ) static void FUN2 ( struct VAR1 * , struct VAR2 * ) struct VAR2 * FUN3 ( size_t VAR3 ) { struct VAR2 * VAR4 ; if ( ( VAR4 = calloc ( 1 , sizeof ( VAR2 ) ) ) == NULL ) { return NULL ; } if ( ( VAR4 -> VAR4 = malloc ( VAR3 ) ) == NULL ) { return NULL ; } VAR4 -> VAR5 = VAR4 -> VAR6 = VAR3 ; VAR4 -> VAR7 = - 1 ; return ( VAR4 ) ; }

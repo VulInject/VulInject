@@ -1,0 +1,20 @@
+void FUN1(VAR1 *VAR2)
+{
+    int VAR3;
+    VAR4 *VAR5 = VAR2->VAR6;
+    if (VAR5 == NULL || VAR5->VAR7 == NULL)
+        return;
+    for (VAR3 = 0; VAR3 < VAR8; VAR3++)
+    {
+        if (VAR5->VAR7[VAR3].VAR9[0] && (VAR5->VAR7[VAR3].VAR10 == VAR11 || VAR5->VAR7[VAR3].VAR10 == VAR12))
+            VAR2->FUN2(VAR2, (VAR13 *)&VAR5->VAR7[VAR3]);
+    }
+    VAR5->VAR14 = VAR5->VAR15 = VAR5->VAR16 = NULL;
+    VAR5->VAR17 = VAR5->VAR18 = 0;
+    VAR5->VAR19.VAR20 = -1;
+    VAR5->VAR19.VAR21 = 0;
+    VAR5->VAR19.VAR22 = 0;
+    VAR5->VAR19.VAR23 = 0;
+    VAR5->VAR19.VAR24 = 0;
+    VAR5->VAR19.VAR25 = 0;
+    VAR5->VAR26 = 0;

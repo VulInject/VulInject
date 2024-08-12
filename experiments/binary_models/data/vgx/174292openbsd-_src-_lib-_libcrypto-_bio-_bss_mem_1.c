@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , char * VAR3 , int VAR4 ) { struct VAR5 * VAR6 = VAR2 -> VAR7 ; FUN2 ( VAR2 ) ; if ( ( VAR8 ) VAR4 > FUN3 ( VAR6 ) ) { VAR4 = FUN3 ( VAR6 ) ; } if ( VAR4 == 0 ) { if ( VAR2 -> VAR9 != 0 ) { FUN4 ( VAR2 ) ; } return VAR2 -> VAR9 ; } memcpy ( VAR3 , FUN5 ( VAR6 ) , VAR4 ) ; VAR6 -> VAR10 += VAR4 ; return VAR4 ; }

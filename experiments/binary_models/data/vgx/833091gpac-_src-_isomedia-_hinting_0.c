@@ -1,0 +1,64 @@
+VAR1 FUN1(VAR2 *VAR3, VAR4 *VAR5, u32 VAR6)
+{
+u16 VAR7;
+u32 VAR8;
+GF_Err VAR9;
+char *VAR10 = (VAR3->VAR11==VAR12) ? "" : "";
+u64 VAR13, VAR14;
+
+VAR13 = FUN2(VAR5);
+
+switch (VAR3->VAR11) {
+case VAR15:
+case VAR16:
+case VAR17:
+case VAR12:
+break;
+case VAR18:
+VAR3->VAR19 = FUN3(VAR5);
+VAR8 = FUN3(VAR5);
+if (VAR8 != VAR20) {
+FUN4(VAR21, VAR22, ("", FUN5(VAR8) ));
+return VAR23;
+}
+return FUN6((VAR24*)VAR3, VAR5);
+default:
+return VAR25;
+}
+
+VAR3->VAR26 = FUN7(VAR5);
+VAR3->VAR27 = FUN7(VAR5);
+if (VAR3->VAR26>=VAR6) {
+FUN4(VAR21, VAR22, ("", VAR10, VAR3->VAR26, VAR6));
+return VAR23;
+}
+
+for (VAR7 = 0; VAR7 < VAR3->VAR26; VAR7++) {
+VAR28 *VAR29;
+if (! FUN2(VAR5) ) {
+FUN4(VAR21, VAR22, ("", VAR10, VAR3->VAR26-VAR7));
+return VAR23;
+}
+VAR29 = FUN8(VAR3->VAR11);
+VAR29->VAR30 = VAR3->VAR30;
+VAR29->VAR31 = VAR3->VAR31;
+FUN9(VAR3->VAR32, VAR29);
+
+VAR9 = FUN10(VAR29, VAR5);
+if (VAR9) return VAR9;
+}
+
+if (VAR3->VAR11==VAR12) return VAR33;
+
+
+VAR14 = FUN2(VAR5) - VAR13;
+
+
+if ((VAR34)VAR14 < VAR6) {
+VAR3->VAR35 = VAR6 - (VAR34)VAR14;
+VAR3->VAR36 = (char*)FUN11(sizeof(char) * VAR3->VAR35);
+if (!VAR3->VAR36) return VAR37;
+FUN12(VAR5, VAR3->VAR36, VAR3->VAR35);
+}
+return VAR33;
+}

@@ -1,0 +1,1 @@
+char FUN1 ( Oid VAR1 ) { HeapTuple VAR2 ; VAR2 = FUN2 ( VAR3 , FUN3 ( VAR1 ) ) ; if ( FUN4 ( VAR2 ) ) { Form_pg_class VAR4 = ( VAR5 ) FUN5 ( VAR2 ) ; char VAR6 ; VAR6 = VAR4 -> VAR7 ; FUN6 ( VAR2 , NULL ) ; return VAR6 ; } else { return '' ; } }

@@ -1,0 +1,75 @@
+static int FUN1(struct VAR1 *VAR2, VAR3 *VAR4,
+struct VAR5 *VAR6)
+{
+unsigned int VAR7 = VAR6->VAR8;
+unsigned int VAR9 = VAR6->VAR10;
+unsigned int VAR11 = FUN2(VAR6);
+unsigned int VAR12 = FUN3(VAR6);
+unsigned int VAR13 = FUN4(VAR11, 8);
+unsigned int VAR14 = FUN4(VAR12, 8);
+struct VAR15 *VAR16 = &VAR2->VAR16;
+u32 VAR17 = 0;
+int VAR18, VAR19, VAR20, VAR21;
+VAR3 *VAR22 = NULL;
+
+FUN5(VAR16, VAR9 % 8 != 0, "");
+
+VAR22 = FUN6(VAR11, VAR14, VAR23);
+if (!VAR22)
+return -VAR24;
+
+
+
+if (!VAR2->VAR25) {
+
+VAR18 = FUN7(VAR2, VAR2->VAR26 + VAR7, VAR11);
+if (VAR18 < 0)
+goto VAR27;
+
+VAR18 = FUN8(VAR2, VAR2->VAR28 + VAR9 / 8, VAR14);
+if (VAR18 < 0)
+goto VAR27;
+}
+
+for (VAR19 = 0; VAR19 < VAR14; VAR19++) {
+int VAR29 = 8;
+
+
+if (8 * (VAR9 / 8 + VAR19 + 1) > VAR2->VAR12)
+VAR29 = VAR2->VAR12 % 8;
+for (VAR20 = 0; VAR20 < VAR11; VAR20++) {
+u8 VAR30 = 0;
+
+for (VAR21 = 0; VAR21 < VAR29; VAR21++) {
+u8 VAR31 = VAR4[(8 * VAR19 + VAR21) * VAR13 + VAR20 / 8];
+u8 VAR32 = (VAR31 >> (VAR20 % 8)) & 1;
+
+VAR30 |= VAR32 << VAR21;
+}
+VAR22[VAR17++] = VAR30;
+}
+
+
+if (VAR2->VAR25) {
+VAR18 = FUN9(VAR2,
+VAR2->VAR28 + VAR19,
+VAR2->VAR26 + VAR7);
+if (VAR18 < 0)
+goto VAR27;
+
+VAR18 = FUN10(VAR2, VAR22, VAR11);
+if (VAR18 < 0)
+goto VAR27;
+
+VAR17 = 0;
+}
+}
+
+
+if (!VAR2->VAR25)
+VAR18 = FUN10(VAR2, VAR22, VAR11 * VAR14);
+
+VAR27:
+FUN11(VAR22);
+return VAR18;
+}

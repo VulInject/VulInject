@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * write ) { FUN2 ( write -> VAR2 ) ; FUN3 ( write -> VAR3 ) ; }

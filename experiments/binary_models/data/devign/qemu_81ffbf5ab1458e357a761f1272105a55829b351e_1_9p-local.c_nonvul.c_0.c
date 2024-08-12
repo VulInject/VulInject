@@ -1,0 +1,1 @@
+static bool FUN1(VAR1 *VAR2, const char *VAR3) { return !strcmp(VAR3, VAR4) || !strcmp(VAR3, VAR5); }

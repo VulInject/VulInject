@@ -1,0 +1,1 @@
+pgtable_t FUN1 ( struct VAR1 * VAR2 , unsigned long VAR3 ) { struct VAR4 * VAR4 ; VAR4 = FUN2 ( VAR5 | VAR6 , 0 ) ; VAR4 = FUN2 ( VAR5 , 0 ) ; if ( ! VAR4 ) { return VAR7 ; } FUN3 ( VAR4 ) ; if ( ! FUN4 ( VAR4 ) ) { FUN5 ( VAR4 ) ; return NULL ; } FUN6 ( VAR4 ) ; return VAR4 ; }

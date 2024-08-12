@@ -1,0 +1,57 @@
+FUN1 (VAR1 *VAR2,
+VAR3     *VAR4,
+VAR5      *VAR6,
+VAR5      *VAR7,
+VAR5      *VAR8,
+VAR5      *VAR9)
+{
+VAR3    *VAR10;
+gboolean  VAR11 = VAR12;
+
+FUN2 (FUN3 (VAR2), VAR12);
+FUN2 (VAR6 != 0, VAR12);
+FUN2 (VAR7 != 0, VAR12);
+FUN2 (VAR8 != 0, VAR12);
+FUN2 (VAR9 != 0, VAR12);
+
+for (VAR10 = VAR4; VAR10; VAR10 = FUN4 (VAR10))
+{
+VAR13 *VAR14 = VAR10->VAR15;
+gint      VAR16, VAR17;
+gint      VAR18, VAR19;
+
+if (FUN5 (VAR14, &VAR16, &VAR17, &VAR18, &VAR19))
+{
+gint VAR20, VAR21;
+
+FUN6 (VAR14, &VAR20, &VAR21);
+
+if (VAR11)
+{
+FUN7 (*VAR6, *VAR7, *VAR8, *VAR9,
+VAR16 + VAR20, VAR17 + VAR21,
+VAR18, VAR19,
+VAR6, VAR7, VAR8, VAR9);
+}
+else
+{
+*VAR6      = VAR16 + VAR20;
+*VAR7      = VAR17 + VAR21;
+*VAR8  = VAR18;
+*VAR9 = VAR19;
+
+VAR11 = VAR22;
+}
+}
+}
+
+if (! VAR11)
+{
+*VAR6      = 0;
+*VAR7      = 0;
+*VAR8  = FUN8  (VAR2);
+*VAR9 = FUN9 (VAR2);
+}
+
+return VAR11;
+}

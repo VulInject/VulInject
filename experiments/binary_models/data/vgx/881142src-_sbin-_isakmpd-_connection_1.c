@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , VAR1 * VAR3 , size_t VAR4 ) { int VAR5 , VAR6 ; VAR5 = FUN2 ( VAR2 , NULL ) ; VAR6 = FUN2 ( VAR3 ) ; return VAR5 == VAR6 ?memcmp ( VAR2 + VAR7 , VAR3 + VAR7 , VAR4 - VAR7 ) : - 1 ; }

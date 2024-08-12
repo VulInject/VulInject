@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , pm_message_t VAR3 ) { struct VAR4 * VAR5 = FUN2 ( VAR2 ) ; int VAR6 = 0 ; FUN3 ( & VAR5 -> VAR7 ) ; if ( VAR5 -> VAR8 ) { VAR6 = FUN4 ( VAR5 , false ) ; if ( VAR6 ) { FUN5 ( VAR5 -> VAR9 , "" ) ; } } FUN6 ( VAR5 -> VAR10 , NULL ) ; FUN6 ( VAR5 -> VAR11 ) ; FUN7 ( & VAR5 -> VAR7 ) ; return VAR6 ; }

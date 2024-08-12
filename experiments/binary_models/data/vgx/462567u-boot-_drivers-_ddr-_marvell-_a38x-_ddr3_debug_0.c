@@ -1,0 +1,194 @@
+int FUN1(u32 VAR1, u32 VAR2)
+{
+u32 VAR3 = 0;
+struct VAR4 *VAR5 = FUN2();
+
+if ((VAR6 != 0) ||
+(VAR7 != 0)) {
+u32 VAR8 = 0;
+enum mv_ddr_freq VAR9;
+
+VAR9 = VAR5->VAR10[VAR11].VAR12;
+
+VAR8 = (VAR7 != 0) ? 1 : 0;
+FUN3("");
+FUN3("", FUN4(VAR9));
+
+FUN5(VAR1, VAR13, 1, VAR8);
+FUN5(VAR1, VAR13, 0, VAR8);
+if (VAR14 == 1) {
+FUN6(VAR1, VAR13, 0, VAR8);
+FUN6(VAR1, VAR13, 1, VAR8);
+}
+FUN7(VAR1);
+FUN8(VAR1);
+FUN3("");
+FUN9(FUN10(VAR1));
+FUN11(VAR1);
+}
+
+for (VAR3 = 0; VAR3 <= VAR15 - 1; VAR3++) {
+FUN12(VAR5->VAR16, VAR3);
+
+FUN13(VAR17,
+("", VAR3));
+
+if (VAR18 & VAR19) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR22]
+[VAR3])));
+}
+if (VAR18 & VAR23) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR24]
+[VAR3])));
+}
+if (VAR18 & VAR25) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR26]
+[VAR3])));
+}
+if (VAR18 & VAR27) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR28]
+[VAR3])));
+}
+if (VAR18 & VAR29) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR30]
+[VAR3])));
+}
+if (VAR18 & VAR31) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR32]
+[VAR3])));
+}
+if (VAR18 & VAR33) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR34]
+[VAR3])));
+}
+if (VAR18 & VAR35) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR36]
+[VAR3])));
+}
+if (VAR18 & VAR37) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR38]
+[VAR3])));
+}
+if (VAR18 & VAR39) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR40]
+[VAR3])));
+}
+if (VAR18 & VAR41) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR42]
+[VAR3])));
+}
+if (VAR18 & VAR43) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR44]
+[VAR3])));
+}
+if (VAR18 & VAR45) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR46]
+[VAR3])));
+}
+if (VAR18 & VAR47) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21
+[VAR48]
+[VAR3])));
+}
+if (VAR18 & VAR49) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR50]
+[VAR3])));
+}
+if (VAR18 & VAR51) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR52]
+[VAR3])));
+}
+if (VAR18 & VAR53) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR54]
+[VAR3])));
+}
+if (VAR18 & VAR55) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR56]
+[VAR3])));
+}
+if (VAR18 & VAR57) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR58]
+[VAR3])));
+}
+if (VAR18 & VAR59) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR60]
+[VAR3])));
+}
+if (VAR18 & VAR61) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR62]
+[VAR3])));
+}
+if (VAR18 & VAR63) {
+FUN13(VAR17,
+("",
+VAR20
+(VAR21[VAR64]
+[VAR3])));
+}
+}
+
+return VAR65;
+}

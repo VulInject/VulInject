@@ -1,0 +1,116 @@
+static int FUN1(void *VAR1)
+{
+struct VAR2 *VAR3 = VAR1;
+struct VAR4 *VAR5 = VAR3->VAR6.VAR5;
+unsigned long VAR7 = VAR3->VAR6.VAR8 >> VAR9;
+unsigned long VAR10;
+bool VAR11 = false;
+FUN2(VAR12);
+FUN3(VAR13);
+int VAR14 = -VAR15;
+
+FUN4(VAR10, 1, VAR7) {
+struct VAR16 *VAR17;
+u64 VAR18 = VAR10 << VAR9;
+struct VAR19 *VAR20;
+unsigned int VAR21 = 0;
+int VAR22;
+
+VAR17 = FUN5(VAR5, VAR18, VAR11);
+if (FUN6(VAR17)) {
+VAR14 = FUN7(VAR17);
+break;
+}
+
+if (VAR17->VAR23.VAR18 != VAR18) {
+FUN8("",
+VAR17->VAR23.VAR18, VAR18);
+FUN9(VAR17);
+VAR14 = -VAR24;
+break;
+}
+
+VAR14 = FUN10(VAR17);
+if (VAR14) {
+FUN9(VAR17);
+break;
+}
+
+FUN11(&VAR17->VAR25, &VAR12);
+
+VAR20 = FUN12(VAR17, &VAR3->VAR6, NULL);
+if (FUN6(VAR20)) {
+VAR14 = FUN7(VAR20);
+break;
+}
+
+VAR14 = FUN13(VAR20, 0, 0, VAR26);
+if (VAR14)
+break;
+
+VAR14 = FUN14(VAR20);
+if (VAR14) {
+FUN15(VAR20);
+break;
+}
+
+
+for (VAR22 = 0; VAR22 < FUN16(VAR27); ++VAR22) {
+unsigned int VAR28 = VAR27[VAR22];
+
+if (FUN17(VAR5, VAR28) &&
+VAR18 >= VAR28) {
+VAR21 |= VAR28;
+VAR18 &= VAR28-1;
+}
+}
+
+FUN18(!VAR21);
+FUN18(VAR18);
+
+if (VAR21 & VAR29)
+VAR21 &= ~VAR30;
+
+FUN15(VAR20);
+
+if (VAR20->VAR27.VAR31 & VAR30) {
+if (!FUN19(VAR20->VAR32.VAR33,
+VAR34)) {
+FUN8("",
+VAR20->VAR32.VAR33);
+VAR14 = -VAR24;
+break;
+}
+
+if (!FUN19(VAR20->VAR32.VAR18,
+VAR34)) {
+FUN8("",
+VAR20->VAR32.VAR18);
+VAR14 = -VAR24;
+break;
+}
+}
+
+if (VAR20->VAR35->VAR36 != VAR21) {
+FUN8("",
+VAR20->VAR35->VAR36, VAR21,
+VAR17->VAR23.VAR18, FUN20(!!VAR11));
+VAR14 = -VAR24;
+break;
+}
+
+if (FUN21(VAR13,
+"",
+VAR37, VAR17->VAR23.VAR18))
+break;
+
+VAR11 = !VAR11;
+}
+
+FUN22(&VAR12, VAR3);
+
+if (VAR14 == -VAR38 || VAR14 == -VAR39)
+VAR14 = 0;
+
+return VAR14;
+}

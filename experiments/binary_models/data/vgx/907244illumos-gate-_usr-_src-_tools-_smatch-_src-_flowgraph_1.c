@@ -1,0 +1,1 @@
+bool FUN1 ( struct VAR1 * VAR2 , struct VAR1 * VAR3 ) { if ( VAR2 == VAR3 ) { return true ; } if ( VAR3 == VAR2 -> VAR4 ) { return false ; } if ( VAR2 -> VAR5 >= VAR3 -> VAR5 ) { return false ; } for ( VAR3 = VAR3 -> VAR4 ; VAR3 ; VAR3 = VAR3 -> VAR4 ) { if ( VAR3 == VAR2 ) { return true ; } } return false ; }

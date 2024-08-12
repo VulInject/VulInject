@@ -1,0 +1,129 @@
+static VAR1
+FUN1(VAR2 *VAR3, VAR4 *VAR5)
+{
+int       VAR6;
+uint32_t  VAR7 = 0;
+
+FUN2(VAR8, VAR3, VAR5, 0, 0);
+
+
+if (VAR3 == NULL) {
+FUN3("");
+FUN4(VAR8, VAR9);
+return VAR9;
+}
+
+
+VAR7 = VAR10;
+if ((VAR3->VAR11 & VAR7) != VAR7) {
+FUN3("");
+FUN4(VAR8, VAR12);
+return VAR12;
+}
+
+
+switch (VAR3->VAR13) {
+case VAR14:
+FUN5("", VAR3->VAR13);
+
+VAR7 = VAR15;
+if ((VAR3->VAR11 & VAR7) != VAR7) {
+FUN6("", VAR3->VAR11);
+FUN4(VAR8, VAR16);
+return VAR16;
+}
+break;
+default:
+FUN6("", VAR3->VAR13);
+FUN4(VAR8, VAR17);
+return VAR17;
+}
+
+
+VAR6 = 0;		
+if (VAR3->VAR18.VAR19 == VAR20)
+VAR6 = 1;
+
+
+
+if (   VAR3->VAR18.VAR19 == 0    || VAR3->VAR18.VAR19 == 2
+|| (VAR3->VAR18.VAR19 >= 0x50 && VAR3->VAR18.VAR19 <= 0x80)
+||  VAR3->VAR18.VAR19 >= 0x82)
+{
+FUN6("",
+VAR3->VAR18.VAR19);
+FUN4(VAR8, VAR21);
+return VAR21;
+}
+
+VAR3->VAR18.VAR22 = VAR23;
+VAR3->VAR18.VAR24    = 0;
+
+
+if (VAR3->VAR11 & VAR25) {
+
+if (FUN7(VAR26)) {
+FUN5("", VAR3->VAR18.VAR22);
+FUN5("", VAR3->VAR18.VAR19);
+FUN5("", VAR3->VAR18.VAR27);
+FUN5("", VAR3->VAR18.VAR28);
+FUN5("", VAR3->VAR18.VAR29);
+FUN5("", VAR3->VAR18.VAR30);
+FUN5("", VAR3->VAR18.VAR31);
+FUN8("", VAR3->VAR18.VAR32 & 0xffffffffu);
+FUN5("", VAR3->VAR18.VAR33);
+FUN5("", VAR3->VAR18.VAR34);
+FUN9(VAR8,""VAR35"", VAR3->VAR18.VAR32);
+}
+
+if (VAR6) {
+
+VAR3->VAR18.VAR29 = VAR3->VAR18.VAR28 == VAR36
+? VAR37 : VAR38;
+}
+
+memcpy(VAR5, &VAR3->VAR18, sizeof(VAR3->VAR18));
+(void)FUN10((VAR39 *)VAR5); 
+}
+
+
+if (!(VAR3->VAR11 & VAR40) && VAR3->VAR41 <= 0) {
+FUN6("", VAR3->VAR41);
+FUN4(VAR8, VAR42);
+return VAR42;
+} else {
+
+
+if (VAR3->VAR41 && VAR3->VAR41 > VAR43) {
+FUN6("", VAR3->VAR41);
+FUN4(VAR8, VAR44);
+return VAR44;
+} else {
+
+VAR3->VAR41 = VAR43;
+}
+
+memcpy(VAR5 + sizeof(VAR45), VAR3->VAR46, VAR3->VAR41);
+
+if (VAR6) {
+
+
+*(VAR47*)(VAR5 + 32) = FUN11(*(VAR47*)(VAR5 + 32));
+*(VAR47*)(VAR5 + 34) = FUN11(*(VAR47*)(VAR5 + 34));
+}
+}
+
+
+
+
+
+
+
+if (  VAR3->VAR18.VAR19 >= VAR48
+&& VAR3->VAR18.VAR19 <= VAR49)
+memcpy(VAR5 + 37, VAR50, 3);
+
+
+FUN4(VAR8, VAR51);
+return VAR51;
+}

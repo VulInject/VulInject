@@ -1,0 +1,23 @@
+static int FUN1(int VAR1, struct VAR2 *VAR3,
+struct VAR4 *VAR5)
+{
+struct VAR6 *VAR7 = VAR3->VAR7;
+struct VAR8 *VAR9 = VAR7->VAR10[VAR3->VAR11 - 1][1];
+struct ib_wc VAR12;
+struct rdma_ah_attr VAR13;
+
+
+if (!VAR9)
+return -VAR14;
+
+FUN2(VAR7->VAR15[VAR3->VAR11 - 1], &VAR13);
+
+if (FUN3(&VAR7->VAR16, VAR3->VAR11, VAR17, &VAR12.VAR18))
+return -VAR19;
+VAR12.VAR20 = 0;
+VAR12.VAR21 = 0;
+VAR12.VAR22 = VAR3->VAR11;
+VAR12.VAR23 = FUN4(&VAR13);  
+VAR12.VAR24 = 1;
+return FUN5(VAR7, VAR1, VAR3->VAR11, VAR25, &VAR12, NULL, VAR5);
+}

@@ -1,0 +1,1 @@
+int FUN1 ( HANDLE VAR1 ) { VAR2 * VAR3 ; VAR4 * VAR5 ; if ( FUN2 ( ) < 0 ) { return - 1 ; } VAR3 = FUN3 ( & VAR6 , ( VAR7 ) VAR1 ) ; if ( VAR3 == NULL ) { FUN4 ( VAR8 ) ; VAR9 } VAR5 = FUN5 ( VAR3 , NULL ) ; FUN6 ( VAR5 ) ; FUN7 ( VAR3 ) ; return FUN8 ( VAR5 ) ; err FUN9 ( VAR1 ) ; return - 1 ; }

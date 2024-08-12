@@ -1,0 +1,1 @@
+u64 FUN1 ( struct VAR1 * VAR2 ) { u64 VAR3 ; VAR3 = FUN2 ( VAR2 , NULL ) ; VAR3 <<= 32 ; VAR3 |= FUN2 ( VAR2 ) ; return VAR3 ; }

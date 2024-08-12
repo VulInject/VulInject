@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 ) { u32 VAR3 ; if ( ! ( VAR2 -> VAR4 & VAR5 ) ) { return 0 ; } VAR3 = FUN2 ( VAR6 ) ; switch ( ( VAR3 & VAR7 ) >> VAR8 ) { case VAR9 : return 0 ; case VAR10 : return 1 ; case VAR11 : return 2 ; case VAR12 : return 4 ; case VAR13 : return 8 ; case VAR14 : default : return 16 ; } }

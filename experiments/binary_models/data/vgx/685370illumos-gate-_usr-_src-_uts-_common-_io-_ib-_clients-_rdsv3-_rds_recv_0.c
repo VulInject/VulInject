@@ -1,0 +1,151 @@
+int
+FUN1(struct VAR1 *VAR2, VAR3 *VAR4,
+struct VAR5 *VAR6, size_t VAR7, int VAR8)
+{
+struct VAR9 *VAR10 = FUN2(VAR2);
+int VAR11 = 0;
+struct VAR12 *VAR13 = NULL;
+struct VAR14 *VAR15 = NULL;
+boolean_t VAR16 = VAR17;
+
+FUN3("",
+"", VAR2, VAR7, VAR8);
+
+if ((VAR4->VAR18 & (VAR19 | VAR20)) ||
+(VAR8 & VAR21))
+VAR16 = VAR22;
+
+if (VAR8 & VAR23)
+goto VAR24;
+
+
+if (VAR6) {
+VAR6->VAR25 = NULL;
+}
+
+while (1) {
+
+if (!FUN4(&VAR2->VAR26)) {
+VAR11 = FUN5(VAR2, VAR6);
+
+if (VAR6 && VAR6->VAR27) {
+VAR13 = FUN6(sizeof (struct VAR12),
+VAR28);
+VAR13->VAR29 = VAR30;
+if (VAR15) {
+VAR13->VAR31 = VAR15->VAR32.VAR33;
+VAR13->VAR34.VAR35 = VAR15->VAR36;
+}
+VAR6->VAR27 = sizeof (struct VAR12);
+VAR6->VAR37 = VAR13;
+}
+break;
+}
+
+if (VAR2->VAR38) {
+VAR11 = FUN7(VAR2, VAR6);
+goto VAR24;
+}
+
+if (!FUN8(VAR2, &VAR15)) {
+if (VAR16) {
+VAR11 = -VAR39;
+break;
+}
+
+FUN9("",
+"", VAR2);
+
+VAR11 = FUN10(VAR10->VAR40,
+!(FUN4(&VAR2->VAR26) &&
+!VAR2->VAR38 &&
+!FUN8(VAR2, &VAR15)));
+if (VAR11 == 0) {
+
+FUN11("",
+"");
+VAR11 = -VAR41;
+}
+FUN12(&VAR10->VAR40->VAR42);
+VAR10->VAR40->VAR43++;
+while ((FUN4(&VAR2->VAR26) &&
+!VAR2->VAR38 &&
+!FUN8(VAR2, &VAR15))) {
+VAR11 = FUN13(&VAR10->VAR40->VAR44,
+&VAR10->VAR40->VAR42);
+if (VAR11 == 0) {
+
+FUN11("",
+"");
+VAR11 = -VAR45;
+break;
+}
+}
+VAR10->VAR40->VAR43--;
+FUN14(&VAR10->VAR40->VAR42);
+
+FUN15("",
+"",
+VAR2, VAR15, -VAR11);
+
+if (VAR11 < 0)
+break;
+
+
+continue;
+}
+
+FUN15("",
+"", VAR15,
+FUN16(VAR15->VAR46->VAR47),
+FUN17(VAR15->VAR32.VAR33));
+
+VAR11 = VAR15->VAR46->VAR48->FUN18(VAR15, VAR4, VAR7);
+if (VAR11 < 0)
+break;
+
+
+if (!FUN19(VAR2, VAR15, !(VAR8 & VAR49))) {
+FUN20(VAR15);
+VAR15 = NULL;
+FUN21(VAR50);
+continue;
+}
+
+if (VAR11 < FUN22(VAR15->VAR32.VAR51)) {
+if (VAR8 & VAR52)
+VAR11 = FUN22(VAR15->VAR32.VAR51);
+VAR6->VAR8 |= VAR52;
+}
+
+if (FUN23(VAR15, VAR6)) {
+VAR11 = -VAR53;
+goto VAR24;
+}
+
+FUN21(VAR54);
+
+if (VAR6->VAR27) {
+VAR13 = FUN24(sizeof (struct VAR12), VAR28);
+VAR13->VAR29 = VAR30;
+VAR13->VAR31 = VAR15->VAR32.VAR33;
+VAR13->VAR34.VAR35 = VAR15->VAR36;
+(void) memset(VAR13->VAR55, 0,
+sizeof (VAR13->VAR55));
+VAR6->VAR27 = sizeof (struct VAR12);
+VAR6->VAR37 = VAR13;
+}
+break;
+}
+
+if (VAR15)
+FUN20(VAR15);
+
+VAR24:
+if (VAR6 && VAR6->VAR25 == NULL)
+VAR6->VAR56 = 0;
+
+FUN3("", "", VAR2, VAR11);
+
+return (VAR11);
+}

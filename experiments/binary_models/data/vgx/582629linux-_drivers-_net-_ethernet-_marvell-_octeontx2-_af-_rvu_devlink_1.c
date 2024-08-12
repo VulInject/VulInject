@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR1 , u32 VAR2 , union devlink_param_value VAR3 , struct VAR4 * VAR5 ) { struct VAR6 * VAR7 = FUN2 ( VAR1 ) ; struct VAR8 * VAR8 = VAR7 -> VAR8 ; u64 VAR9 ; if ( FUN3 ( VAR3 . VAR10 , 10 , & VAR9 ) ) { FUN4 ( VAR5 , "" ) ; return - VAR11 ; } if ( VAR9 != 1 ) { FUN4 ( VAR5 , "" ) ; return - VAR11 ; } FUN4 ( VAR5 , "" ) ; return - VAR12 ; }

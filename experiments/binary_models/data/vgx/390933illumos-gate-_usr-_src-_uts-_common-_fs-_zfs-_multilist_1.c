@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 , void * VAR3 ) { void * VAR4 = FUN2 ( & VAR2 -> VAR5 , VAR3 ) ; FUN3 ( FUN4 ( & VAR2 -> VAR6 ) ) ; FUN3 ( ! FUN5 ( & VAR2 -> VAR5 ) ) ; FUN6 ( & VAR2 -> VAR5 , VAR3 ) ; FUN7 ( & VAR2 -> VAR5 , VAR4 , VAR3 ) ; }

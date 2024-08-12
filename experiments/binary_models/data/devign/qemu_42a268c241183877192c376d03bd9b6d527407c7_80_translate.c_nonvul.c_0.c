@@ -1,0 +1,9 @@
+static void FUN1(VAR1 *VAR2, int VAR3, int32_t VAR4)
+{
+    VAR5 *VAR6 = FUN2();
+    FUN3(VAR7[VAR3], VAR7[VAR3], 1);
+    FUN4(VAR8, VAR7[VAR3], -1, VAR6);
+    FUN5(VAR2, 1, VAR2->VAR9 + VAR4);
+    FUN6(VAR6);
+    FUN5(VAR2, 0, VAR2->VAR10);
+}

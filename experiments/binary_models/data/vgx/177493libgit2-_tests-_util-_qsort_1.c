@@ -1,0 +1,1 @@
+static int FUN1 ( const void * VAR1 , const void * VAR2 , void * VAR3 ) { int VAR4 = * ( const int * ) VAR1 , VAR5 = * ( const int * ) VAR2 ; FUN2 ( VAR3 , NULL ) ; return ( VAR4 < VAR5 ) ?- 1 : ( VAR4 > VAR5 ) ?+ 1 : 0 ; }

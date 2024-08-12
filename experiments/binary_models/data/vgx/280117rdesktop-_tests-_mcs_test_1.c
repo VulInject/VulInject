@@ -1,0 +1,1 @@
+FUN1 ( VAR1 ) ; FUN2 ( VAR1 ) { } ; FUN3 ( VAR1 ) { } ; char VAR2 [ 16 ] ; VCHANNEL VAR3 [ 1 ] ; int VAR4 ; void * xmalloc ( int VAR5 ) { void * VAR6 = malloc ( VAR5 ) ; if ( VAR6 == NULL ) { FUN4 ( VAR7 , VAR8 , "" , VAR5 ) ; FUN5 ( VAR9 ) ; } return VAR6 ; }

@@ -1,0 +1,1 @@
+unsigned int FUN1 ( const struct VAR1 * VAR2 ) { int VAR3 = 0 ; int VAR4 ; for ( VAR4 = 0 ; VAR4 < FUN2 ( VAR2 -> VAR5 ) ; VAR4 ++ ) { VAR3 += VAR2 -> VAR5 [ VAR4 ] . VAR6 * VAR2 -> VAR5 [ VAR4 ] . VAR7 ; } return VAR3 ; }

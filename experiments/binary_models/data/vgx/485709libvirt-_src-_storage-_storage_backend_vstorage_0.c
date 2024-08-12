@@ -1,0 +1,42 @@
+static int
+FUN1(VAR1 *VAR2)
+{
+VAR3 *VAR4 = FUN2(VAR2);
+g_autofree char *VAR5 = NULL;
+g_autofree char *VAR6 = NULL;
+g_autofree char *VAR7 = NULL;
+FUN3(VAR8) VAR9 = NULL;
+int VAR10;
+
+
+if (VAR4->VAR11.VAR12.VAR7 == (VAR13)-1)
+VAR4->VAR11.VAR12.VAR7 = VAR14;
+if (VAR4->VAR11.VAR12.VAR15 == (VAR16)-1)
+VAR4->VAR11.VAR12.VAR15 = FUN4();
+if (VAR4->VAR11.VAR12.VAR17 == (VAR18)-1)
+VAR4->VAR11.VAR12.VAR17 = FUN5();
+
+
+
+if (!(VAR5 = FUN6(VAR4->VAR11.VAR12.VAR17)))
+return -1;
+
+if (!(VAR6 = FUN7(VAR4->VAR11.VAR12.VAR15)))
+return -1;
+
+VAR7 = FUN8("", VAR4->VAR11.VAR12.VAR7);
+
+VAR9 = FUN9("",
+"", VAR4->VAR19.VAR20,
+VAR4->VAR11.VAR21,
+"", VAR7,
+"", VAR5, "", VAR6,
+NULL);
+
+
+FUN10(VAR2);
+VAR10 = FUN11(VAR9, NULL);
+FUN12(VAR2);
+
+return VAR10;
+}

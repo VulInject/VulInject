@@ -1,0 +1,9 @@
+static void FUN1(VAR1 *VAR2)
+{
+    int VAR3 = VAR2->VAR4;
+    VAR5 *VAR6 = VAR2->VAR7;
+    while (VAR6->VAR8 != VAR6->VAR9 && VAR6->VAR10[VAR3] && VAR6->VAR10[VAR3](VAR6->VAR11[VAR3]))
+    {
+        VAR6->VAR12[VAR3](VAR6->VAR11[VAR3], &VAR6->VAR13[VAR6->VAR9++ & VAR14], 1);
+    }
+}

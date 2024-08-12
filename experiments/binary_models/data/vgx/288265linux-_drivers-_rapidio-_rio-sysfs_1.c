@@ -1,0 +1,1 @@
+static ssize_t FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , char * VAR5 ) { struct VAR6 * VAR7 = FUN2 ( VAR2 ) ; char * VAR8 = VAR5 ; int VAR9 ; for ( VAR9 = 0 ; VAR9 < FUN3 ( VAR7 -> VAR10 -> VAR11 -> VAR12 ) ; VAR9 ++ ) { VAR8 += sprintf ( VAR8 , "" , VAR9 , VAR7 -> VAR13 -> VAR14 [ VAR9 ] ) ; } return ( VAR8 - VAR5 ) ; }

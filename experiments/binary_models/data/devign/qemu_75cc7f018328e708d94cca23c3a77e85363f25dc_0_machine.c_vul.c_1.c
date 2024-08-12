@@ -1,0 +1,38 @@
+static void FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = FUN2(VAR2);
+    VAR4->VAR5 = true;
+    VAR4->VAR6 = -1;
+    VAR4->VAR7 = true;
+    FUN3(VAR2, "", VAR8, VAR9, NULL);
+    FUN4(VAR2, "", "", NULL);
+    FUN5(VAR2, "", NULL, VAR10, NULL);
+    FUN4(VAR2, "", "", NULL);
+    FUN6(VAR2, "", "", VAR11, VAR12, NULL, NULL, NULL);
+    FUN4(VAR2, "", "", NULL);
+    FUN3(VAR2, "", VAR13, VAR14, NULL);
+    FUN4(VAR2, "", "", NULL);
+    FUN3(VAR2, "", VAR15, VAR16, NULL);
+    FUN4(VAR2, "", "", NULL);
+    FUN3(VAR2, "", VAR17, VAR18, NULL);
+    FUN4(VAR2, "", "", NULL);
+    FUN3(VAR2, "", VAR19, VAR20, NULL);
+    FUN4(VAR2, "", "", NULL);
+    FUN3(VAR2, "", VAR21, VAR22, NULL);
+    FUN4(VAR2, "", "", NULL);
+    FUN6(VAR2, "", "", VAR23, VAR24, NULL, NULL, NULL);
+    FUN4(VAR2, "", "", NULL);
+    FUN3(VAR2, "", VAR25, VAR26, NULL);
+    FUN4(VAR2, "", ""VAR27\"", NULL);
+    FUN5(VAR2, "", VAR28, VAR29, NULL);
+    FUN4(VAR2, "", "", NULL);
+    FUN5(VAR2, "", VAR30, VAR31, NULL);
+    FUN4(VAR2, "", "", NULL);
+    FUN5(VAR2, "", VAR32, VAR33, NULL);
+    FUN4(VAR2, "", "", NULL);
+    FUN3(VAR2, "", VAR34, VAR35, NULL);
+    FUN4(VAR2, "", "", NULL);
+    FUN5(VAR2, "", VAR36, VAR37, NULL);
+    FUN4(VAR2, "", "", NULL);
+    VAR4->VAR38.VAR39 = VAR40;
+    FUN7(&VAR4->VAR38);

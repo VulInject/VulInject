@@ -1,0 +1,1 @@
+int FUN1 ( void ) { pthread_attr_t VAR1 ; pthread_t VAR2 ; int VAR3 ; VAR3 = FUN2 ( ) ; ( void ) pthread_attr_init ( & VAR1 ) ; ( void ) FUN3 ( & VAR1 , VAR4 ) ; VAR3 = FUN4 ( & VAR2 , & VAR1 , VAR5 , & VAR6 ) ; ( void ) pthread_attr_destroy ( & VAR1 ) ; if ( VAR3 ) { FUN5 ( ) ; return ( VAR3 ) ; } VAR6 . VAR7 = VAR2 ; return ( 0 ) ; }

@@ -1,0 +1,15 @@
+}
+FUN1(VAR1);
+
+void FUN2(struct VAR2 *VAR3, struct VAR4 *VAR5)
+{
+int VAR6, VAR7 = FUN3(VAR3);
+
+VAR5->VAR7 = VAR7;
+memcpy(VAR5->VAR8, VAR3->VAR8, sizeof(VAR5->VAR8));
+
+for (VAR6 = 0; VAR6 < VAR7; VAR6++) {
+VAR5->VAR9[VAR6] = VAR3->VAR10[VAR6].VAR9;
+VAR5->VAR11[VAR6] = VAR3->VAR10[VAR6].VAR11;
+}
+}

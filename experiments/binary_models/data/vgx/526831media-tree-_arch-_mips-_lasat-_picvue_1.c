@@ -1,0 +1,1 @@
+static void FUN1 ( u32 VAR1 , u8 VAR2 ) { VAR1 |= VAR3 -> VAR4 ; FUN2 ( VAR1 , NULL ) ; VAR1 &= ~ VAR3 -> VAR5 ; VAR1 |= VAR2 << VAR3 -> VAR6 ; FUN2 ( VAR1 ) ; FUN3 ( 220 ) ; FUN2 ( VAR1 & ~ VAR3 -> VAR4 ) ; FUN3 ( 220 ) ; }

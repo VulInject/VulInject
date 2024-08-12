@@ -1,0 +1,25 @@
+static unsigned int
+FUN1(png_bytep VAR1, unsigned int VAR2, png_const_bytep VAR3, int VAR4)
+{
+unsigned int VAR5;
+
+
+for (VAR5=0; VAR5<VAR2; ++VAR5, VAR1 += 5)
+{
+if (memcmp(VAR1, VAR3, 4) == 0)
+{
+VAR1[4] = (VAR6)VAR4;
+
+return VAR2;
+}
+}
+
+if (VAR4 != VAR7)
+{
+++VAR2;
+memcpy(VAR1, VAR3, 4);
+VAR1[4] = (VAR6)VAR4;
+}
+
+return VAR2;
+}

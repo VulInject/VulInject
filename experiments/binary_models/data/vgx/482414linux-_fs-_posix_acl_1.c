@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * * VAR2 , gfp_t VAR3 , VAR4 * VAR5 ) { struct VAR1 * VAR6 = FUN2 ( * VAR2 , VAR3 ) ; int VAR7 = - VAR8 ; if ( VAR6 ) { VAR7 = FUN3 ( VAR6 , VAR5 ) ; if ( VAR7 < 0 ) { VAR6 = NULL ; } } FUN4 ( * VAR2 ) ; * VAR2 = VAR6 ; return VAR7 ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR1 , void * VAR2 , struct VAR3 * VAR4 ) { struct VAR5 * VAR6 = FUN2 ( VAR1 ) ; strcpy ( VAR4 -> VAR7 , VAR8 ) ; strcpy ( VAR4 -> VAR9 , "" ) ; sprintf ( VAR4 -> VAR10 , "" , VAR6 -> VAR11 . VAR12 ) ; return 0 ; }

@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * * VAR2 , const char * VAR3 , const char * VAR4 ) { time_t VAR5 ; time_t VAR6 ; struct VAR7 * VAR8 ; VAR1 * VAR9 ; struct tm VAR10 ; * VAR2 = NULL ; FUN2 ( & VAR5 ) ; VAR8 = FUN3 ( & VAR5 , & VAR10 ) ; VAR8 -> VAR11 = - 1 ; VAR6 = ( VAR12 ) FUN4 ( VAR5 , FUN5 ( VAR8 ) ) ; VAR6 /= 60 ; * VAR2 = VAR9 ; return 0 ; }

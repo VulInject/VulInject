@@ -1,0 +1,21 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+struct VAR3 *VAR5;
+struct VAR6 *VAR7;
+
+VAR7 = FUN2(VAR2);
+VAR4 = FUN3(NULL, "", NULL, 0,
+2000000);
+FUN4(VAR2, VAR4);
+
+VAR5 = FUN5(NULL, "", VAR4, 0,
+VAR7->VAR8, 9,
+VAR9, NULL);
+FUN4(VAR2, VAR5);
+
+VAR7->VAR5 = VAR5;
+VAR7->VAR4 = VAR4;
+
+return 0;
+}

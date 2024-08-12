@@ -1,0 +1,1 @@
+static int FUN1 ( const char * VAR1 ) { int VAR2 ; struct statvfs VAR3 ; VAR2 = FUN2 ( VAR1 , & VAR3 ) ; return ( VAR3 . VAR4 & VAR5 ) > 0 ; return - VAR6 ; }

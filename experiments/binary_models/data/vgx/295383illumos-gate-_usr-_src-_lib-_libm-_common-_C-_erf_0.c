@@ -1,0 +1,76 @@
+double
+FUN1(double VAR1) {
+int VAR2, VAR3;
+double VAR4, VAR5, VAR6, VAR7, VAR8, VAR9, VAR10, VAR11;
+
+VAR2 = ((int *) &VAR1)[VAR12];
+VAR3 = VAR2 & 0x7fffffff;
+if (VAR3 >= 0x7ff00000) {	
+if (VAR3 >= 0x7ff80000)		
+return (VAR1);
+
+return ((double) (((unsigned) VAR2 >> 31) << 1) + VAR13 / VAR1);
+}
+
+if (VAR3 < 0x3feb0000) {	
+if (VAR3 < 0x3c700000)	
+return (VAR13 - VAR1);
+VAR10 = VAR1 * VAR1;
+VAR11 = VAR14 + VAR10 * (VAR15 + VAR10 * (VAR16 + VAR10 * (VAR17 + VAR10 * VAR18)));
+VAR8 = VAR13 +
+VAR10 * (VAR19 + VAR10 * (VAR20 + VAR10 * (VAR21 + VAR10 * (VAR22 + VAR10 * VAR23))));
+VAR9 = VAR11 / VAR8;
+if (VAR2 < 0x3fd00000) {	
+return (VAR13 - (VAR1 + VAR1 * VAR9));
+} else {
+VAR11 = VAR1 * VAR9;
+VAR11 += (VAR1 - VAR24);
+return (VAR24 - VAR11);
+}
+}
+if (VAR3 < 0x3ff40000) {	
+VAR8 = FUN2(VAR1) - VAR13;
+VAR6 = VAR25 + VAR8 * (VAR26 + VAR8 * (VAR27 + VAR8 * (VAR28 + VAR8 * (VAR29 +
+VAR8 * (VAR30 + VAR8 * VAR31)))));
+VAR7 = VAR13 + VAR8 * (VAR32 + VAR8 * (VAR33 + VAR8 * (VAR34 + VAR8 * (VAR35 +
+VAR8 * (VAR36 + VAR8 * VAR37)))));
+if (VAR2 >= 0) {
+VAR10 = VAR13 - VAR38;
+return (VAR10 - VAR6 / VAR7);
+} else {
+VAR10 = VAR38 + VAR6 / VAR7;
+return (VAR13 + VAR10);
+}
+}
+if (VAR3 < 0x403c0000) {	
+VAR1 = FUN2(VAR1);
+VAR8 = VAR13 / (VAR1 * VAR1);
+if (VAR3 < 0x4006DB6D) {	
+VAR4 = VAR39 + VAR8 * (VAR40 + VAR8 * (VAR41 + VAR8 * (VAR42 + VAR8 * (VAR43 +
+VAR8 * (VAR44 + VAR8 * (VAR45 + VAR8 * VAR46))))));
+VAR5 = VAR13 + VAR8 * (VAR47 + VAR8 * (VAR48 + VAR8 * (VAR49 + VAR8 * (VAR50 +
+VAR8 * (VAR51 + VAR8 * (VAR52 + VAR8 * (VAR53 + VAR8 * VAR54)))))));
+} else {
+
+if (VAR2 < 0 && VAR3 >= 0x40180000)
+return (VAR55 - VAR56);	
+
+VAR4 = VAR57 + VAR8 * (VAR58 + VAR8 * (VAR59 + VAR8 * (VAR60 + VAR8 * (VAR61 +
+VAR8 * (VAR62 + VAR8 * VAR63)))));
+VAR5 = VAR13 + VAR8 * (VAR64 + VAR8 * (VAR65 + VAR8 * (VAR66 + VAR8 * (VAR67 +
+VAR8 * (VAR68 + VAR8 * (VAR69 + VAR8 * VAR70))))));
+}
+VAR10 = VAR1;
+((int *) &VAR10)[VAR71] = 0;
+VAR11 = FUN3(-VAR10 * VAR10 - 0.5625) * FUN3((VAR10 - VAR1) * (VAR10 + VAR1) + VAR4 / VAR5);
+if (VAR2 > 0)
+return (VAR11 / VAR1);
+else
+return (VAR55 - VAR11 / VAR1);
+} else {
+if (VAR2 > 0)
+return (VAR56 * VAR56);
+else
+return (VAR55 - VAR56);
+}
+}

@@ -1,0 +1,22 @@
+void FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = (struct VAR5 *)VAR2->VAR6;
+struct VAR7 *VAR8;
+struct VAR9 *VAR10;
+int VAR11;
+u8 VAR12;
+
+VAR8 = (struct VAR7 *)VAR6->VAR13;
+for (VAR11 = 0; VAR11 < VAR6->VAR14; VAR11++) {
+if (VAR8->VAR15 == VAR16) {
+VAR12 = VAR8->VAR17;
+
+VAR10 = (struct VAR9 *)(VAR8->VAR18.VAR19
++ VAR8->VAR18.VAR20);
+
+FUN2(VAR2, VAR4, VAR10, VAR12);
+FUN3(VAR2, VAR4, VAR10, VAR12);
+}
+VAR8 = (struct VAR7 *)((VAR21 *)VAR8 + VAR8->VAR22);
+}
+}

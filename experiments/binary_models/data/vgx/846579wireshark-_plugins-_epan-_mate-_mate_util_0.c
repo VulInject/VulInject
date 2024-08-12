@@ -1,0 +1,36 @@
+extern VAR1 FUN1(VAR2* VAR3, VAR4* VAR5) {
+VAR6* VAR7;
+
+FUN2(VAR8,4,VAR9,"",VAR3,VAR5,VAR5->VAR10,VAR5->VAR11,VAR5->VAR12);
+
+
+for (VAR7=VAR3->VAR13.VAR14; VAR7->VAR5; VAR7 = VAR7->VAR14) {
+int VAR15 = strcmp(VAR5->VAR10, VAR7->VAR5->VAR10);
+
+if (VAR15 == 0) {
+int VAR16 = strcmp(VAR5->VAR12, VAR7->VAR5->VAR12);
+
+if (VAR16 < 0) {
+break;
+}
+
+if (VAR16 == 0) {
+
+
+
+
+if (VAR7->VAR5->VAR11 == VAR5->VAR11 && VAR5->VAR11 == VAR17) {
+return VAR18;
+}
+}
+}
+
+if (VAR15 < 0) {
+break;
+}
+}
+
+FUN3(VAR3, VAR7, VAR5, VAR18);
+
+return VAR19;
+}

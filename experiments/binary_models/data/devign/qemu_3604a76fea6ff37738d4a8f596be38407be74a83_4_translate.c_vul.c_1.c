@@ -1,0 +1,15 @@
+static void FUN1(VAR1 *VAR2)
+{
+    int VAR3;
+    FUN2("", VAR2->VAR4, VAR2->VAR5, VAR2->VAR6);
+    if (!(VAR2->VAR7->VAR8 & VAR9))
+    {
+        FUN3(VAR2->VAR7, "");
+    }
+    VAR3 = FUN4();
+    FUN5(VAR10, VAR11[VAR2->VAR6], 0, VAR3);
+    FUN6(VAR12, VAR2->VAR13);
+    FUN7(VAR2, VAR14);
+    FUN8(VAR3);
+    FUN9(VAR11[VAR2->VAR4], VAR11[VAR2->VAR5], VAR11[VAR2->VAR6]);
+}

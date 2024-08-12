@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( struct VAR2 * VAR3 ) { struct VAR1 * VAR4 ; struct ftrace_insn VAR5 ; s64 VAR6 ; u16 VAR7 ; if ( FUN2 ( & VAR5 , ( void * ) VAR3 -> VAR8 , sizeof ( VAR5 ) ) ) { return FUN3 ( - VAR9 ) ; } VAR6 = ( VAR10 ) VAR5 . VAR6 * 2 ; VAR4 = ( void * ) ( VAR3 -> VAR8 + VAR6 ) ; if ( VAR7 != 0xc015 ) { return FUN3 ( - VAR11 ) ; } return VAR4 ; }

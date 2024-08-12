@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( const char * VAR2 ) { struct VAR1 * VAR3 ; VAR3 = FUN2 ( sizeof ( * VAR3 ) , VAR4 ) ; if ( ! VAR3 ) { VAR5 } VAR3 -> VAR2 = FUN3 ( VAR2 , VAR4 ) ; if ( ! VAR3 -> VAR2 ) { VAR3 = NULL ; VAR5 } exit return VAR3 ; }

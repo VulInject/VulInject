@@ -1,0 +1,55 @@
+static int FUN1(struct VAR1 *VAR2, u16 VAR3, u8 VAR4)
+{
+struct VAR5 *VAR6;
+struct VAR7 *VAR8;
+int VAR9;
+int VAR10;
+
+if (VAR4 != VAR11 && VAR4 != VAR12)
+return -VAR13;
+if ((VAR10 = FUN2(VAR2)) < 0)
+return -VAR13;
+
+VAR6 = FUN3(sizeof(struct VAR7), "",
+VAR14, VAR15);
+if (!VAR6)
+return -VAR16;
+
+if (VAR2->VAR17->VAR18)
+snprintf(VAR6->VAR19, VAR20, "",
+VAR2->VAR17->VAR21->VAR22, VAR2->VAR17->VAR18, VAR10);
+else
+
+snprintf(VAR6->VAR19, VAR20, "",
+VAR2->VAR17->VAR21->VAR22, VAR10);
+
+VAR6->VAR23 = 6;
+FUN4(VAR6, VAR2->VAR17->VAR21->VAR24);
+
+VAR2->VAR25[VAR10] = VAR6;
+
+VAR8 = FUN5(VAR6);
+VAR8->VAR6 = VAR6;
+VAR8->VAR26 = VAR2->VAR26;
+VAR8->VAR3 = VAR3;
+VAR8->VAR27 = VAR28;
+VAR8->VAR29 = 1;
+VAR8->VAR30 = 0;
+VAR8->VAR4 = VAR4;
+FUN6(VAR8);
+
+FUN7(&VAR8->VAR31, VAR32);
+FUN7(&VAR8->VAR33, VAR34);
+FUN8(&VAR8->mutex);
+
+VAR6->VAR35 = VAR3;
+
+if ((VAR9 = FUN9(VAR6)) < 0) {
+VAR2->VAR25[VAR10] = NULL;
+FUN10(VAR6);
+return VAR9;
+}
+FUN11("", VAR6->VAR19);
+
+return VAR10;
+}

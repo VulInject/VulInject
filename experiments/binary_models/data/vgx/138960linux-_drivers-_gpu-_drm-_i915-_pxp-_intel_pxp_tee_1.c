@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , struct VAR1 * VAR3 , void * VAR4 ) { struct VAR5 * VAR6 = FUN2 ( VAR2 ) ; struct VAR7 * VAR8 = VAR6 -> VAR8 ; intel_wakeref_t VAR9 ; if ( FUN3 ( VAR8 ) ) { FUN4 ( , ) FUN5 ( VAR8 ) ; } FUN6 ( & VAR8 -> VAR10 ) ; FUN7 ( & VAR8 -> VAR10 ) ; }

@@ -1,0 +1,51 @@
+static int FUN1(struct VAR1 *VAR2, sector_t VAR3, int VAR4,
+struct VAR5 **VAR6, int VAR7)
+{
+struct VAR8 *VAR9 = VAR2->VAR10;
+sector_t VAR11 = VAR3 + FUN2(VAR9)->VAR12;
+int VAR13, VAR14, VAR15;
+
+
+VAR3 += VAR4;
+VAR15 = VAR4;
+while (VAR3 < VAR11) {
+VAR6[VAR15] = FUN3(VAR9, VAR3);
+if (!VAR6[VAR15]) {
+VAR13 = -VAR16;
+goto VAR17;
+}
+
+FUN4(VAR6[VAR15]);
+memset(VAR6[VAR15]->VAR18, 0, VAR9->VAR19);
+FUN5(VAR6[VAR15]);
+FUN6(VAR6[VAR15]);
+FUN7(VAR6[VAR15], VAR2);
+
+VAR15++;
+VAR3++;
+if (VAR15 == VAR7) {
+if (FUN8(VAR2)) {
+VAR13 = FUN9(VAR6, VAR15);
+if (VAR13)
+goto VAR17;
+}
+for (VAR14 = 0; VAR14 < VAR15; VAR14++)
+FUN10(VAR6[VAR14]);
+VAR15 = 0;
+}
+}
+if (FUN8(VAR2)) {
+VAR13 = FUN9(VAR6, VAR15);
+if (VAR13)
+goto VAR17;
+}
+for (VAR14 = 0; VAR14 < VAR15; VAR14++)
+FUN10(VAR6[VAR14]);
+
+return 0;
+
+VAR17:
+for (VAR14 = 0; VAR14 < VAR15; VAR14++)
+FUN11(VAR6[VAR14]);
+return VAR13;
+}

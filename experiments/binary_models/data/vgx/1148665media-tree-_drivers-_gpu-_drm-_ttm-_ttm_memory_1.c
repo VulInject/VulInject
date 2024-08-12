@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , uint64_t VAR5 ) { unsigned int VAR6 ; struct VAR3 * VAR7 ; FUN2 ( & VAR2 -> VAR8 ) ; for ( VAR6 = 0 ; VAR6 < VAR2 -> VAR9 ; ++ VAR6 ) { VAR7 = VAR2 -> VAR10 [ VAR6 ] ; VAR7 -> VAR11 -= VAR5 ; } FUN3 ( & VAR2 -> VAR8 ) ; }

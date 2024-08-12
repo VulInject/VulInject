@@ -1,0 +1,1 @@
+static char * FUN1 ( const char * VAR1 , const char * VAR2 , const char * VAR3 ) { if ( FUN2 ( VAR1 , VAR2 ) == 0 ) { return FUN3 ( VAR1 , "" , VAR3 , NULL ) ; } return FUN3 ( VAR2 , "" , VAR1 , "" , VAR3 , NULL ) ; }

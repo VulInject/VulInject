@@ -1,0 +1,1 @@
+static BOOL FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 , UINT16 VAR5 ) static BOOL FUN2 ( VAR1 * VAR2 , const VAR3 * VAR4 ) static BOOL FUN3 ( VAR1 * VAR2 , VAR3 * VAR4 ) static BOOL FUN4 ( VAR1 * VAR2 , const VAR3 * VAR4 ) static VAR6 * FUN5 ( VAR3 * VAR4 ) { FUN6 ( VAR4 ) ; VAR7 * VAR8 = FUN7 ( VAR4 -> VAR9 ) ; FUN6 ( VAR8 , NULL ) ; return VAR8 -> VAR10 ; }

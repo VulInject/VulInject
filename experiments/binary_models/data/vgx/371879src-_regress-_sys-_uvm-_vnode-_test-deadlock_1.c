@@ -1,0 +1,1 @@
+static void FUN1 ( const char * VAR1 , int VAR2 ) { char * VAR3 ; int VAR4 ; char VAR5 ; VAR4 = open ( VAR1 , VAR6 ) ; if ( VAR4 == - 1 ) { FUN2 ( 1 , "" , VAR1 ) ; } VAR3 = FUN3 ( NULL , VAR7 * VAR8 , VAR9 , VAR10 , VAR4 , 0 ) ; if ( VAR3 == VAR11 ) { FUN2 ( 1 , "" ) ; } for ( ; ; ) { const struct VAR12 * VAR13 = ( const VAR12 * ) VAR3 ; FUN4 ( - 1 , VAR13 , 1 , 0 ) ; } }

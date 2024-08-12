@@ -1,0 +1,1 @@
+int FUN1 ( const struct VAR1 * VAR2 ) { unsigned int VAR3 ; if ( VAR2 -> VAR4 ) { return VAR2 -> VAR4 ; } VAR3 = ( VAR2 -> VAR5 * 1000 ) / VAR2 -> VAR6 ; VAR3 += 500 ; VAR3 /= 1000 ; return VAR3 ; }

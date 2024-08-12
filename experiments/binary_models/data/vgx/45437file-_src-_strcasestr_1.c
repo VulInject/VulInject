@@ -1,0 +1,1 @@
+static int FUN1 ( const char * VAR1 , const char * VAR2 , size_t VAR3 ) { if ( VAR3 != 0 ) { const unsigned char * VAR4 = ( const unsigned char * ) VAR1 , * VAR5 = ( const unsigned char * ) VAR2 ; { if ( * VAR4 ++ == '' ) { break ; } } -- VAR3 != 0 ; } return 0 ; }

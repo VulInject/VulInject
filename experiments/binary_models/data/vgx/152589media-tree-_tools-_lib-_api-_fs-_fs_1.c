@@ -1,0 +1,1 @@
+int FUN1 ( const char * VAR1 , bool * VAR2 ) { char * VAR3 ; size_t VAR4 ; int VAR5 ; VAR5 = FUN2 ( VAR1 , & VAR3 , & VAR4 ) ; if ( VAR5 < 0 ) { return VAR5 ; } switch ( VAR3 [ 0 ] ) { case '' : case '' : case '' : * VAR2 = true ; break ; case '' : case '' : case '' : * VAR2 = false ; break ; default : VAR5 = - 1 ; } return VAR5 ; }

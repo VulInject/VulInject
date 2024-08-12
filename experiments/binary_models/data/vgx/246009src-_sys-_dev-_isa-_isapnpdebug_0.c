@@ -1,0 +1,38 @@
+void
+FUN1(const struct VAR1 *VAR2)
+{
+int VAR3;
+const struct VAR4 *VAR5;
+const struct VAR6 *VAR7;
+
+FUN2("");
+if (VAR2->VAR8)
+for (VAR3 = 0; VAR3 < VAR2->VAR8; VAR3++) {
+VAR5 = &VAR2->VAR9[VAR3];
+FUN2("", VAR3, VAR5->VAR10, VAR5->VAR11);
+}
+
+if (VAR2->VAR12)
+for (VAR3 = 0; VAR3 < VAR2->VAR12; VAR3++) {
+VAR5 = &VAR2->VAR13[VAR3];
+FUN2("", VAR3, VAR5->VAR10, VAR5->VAR11);
+}
+
+if (VAR2->VAR14)
+for (VAR3 = 0; VAR3 < VAR2->VAR14; VAR3++) {
+VAR7 = &VAR2->VAR15[VAR3];
+FUN2("", VAR3, VAR7->VAR16);
+}
+
+if (VAR2->VAR17)
+for (VAR3 = 0; VAR3 < VAR2->VAR17; VAR3++) {
+VAR7 = &VAR2->VAR18[VAR3];
+FUN2("", VAR3, VAR7->VAR16);
+}
+
+if (VAR2->VAR19)
+for (VAR3 = 0; VAR3 < VAR2->VAR19; VAR3++) {
+VAR5 = &VAR2->VAR20[VAR3];
+FUN2("", VAR3, VAR5->VAR10, VAR5->VAR11);
+}
+}

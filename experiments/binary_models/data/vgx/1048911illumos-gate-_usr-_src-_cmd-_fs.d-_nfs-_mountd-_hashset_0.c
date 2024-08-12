@@ -1,0 +1,21 @@
+const void *
+FUN1(HASHSET VAR1, const void *VAR2)
+{
+uint_t VAR3 = VAR1->FUN2(VAR2);
+uint_t VAR4 = VAR3 % VAR1->VAR5;
+VAR6 *VAR7, *VAR8;
+
+for (VAR7 = VAR1->VAR9[VAR4], VAR8 = NULL; VAR7; VAR8 = VAR7, VAR7 = VAR7->VAR10) {
+if (VAR7->VAR11 == VAR3 && VAR1->FUN3(VAR7->VAR12, VAR2)) {
+VAR2 = VAR7->VAR12;
+if (VAR8)
+VAR8->VAR10 = VAR7->VAR10;
+else
+VAR1->VAR9[VAR4] = VAR7->VAR10;
+free(VAR7);
+return (VAR2);
+}
+}
+
+return (NULL);
+}

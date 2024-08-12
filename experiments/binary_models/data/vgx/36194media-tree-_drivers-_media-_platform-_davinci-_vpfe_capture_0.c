@@ -1,0 +1,60 @@
+static VAR1 FUN1(int VAR2, void *VAR3)
+{
+struct VAR4 *VAR5 = VAR3;
+enum v4l2_field VAR6;
+int VAR7;
+
+FUN2(1, VAR8, &VAR5->VAR9, "");
+VAR6 = VAR5->VAR10.VAR10.VAR11.VAR6;
+
+
+if (!VAR5->VAR12)
+goto VAR13;
+
+
+if (VAR14->VAR15.VAR16)
+VAR14->VAR15.FUN3();
+
+if (VAR6 == VAR17) {
+
+FUN2(1, VAR8, &VAR5->VAR9,
+"");
+if (VAR5->VAR18 != VAR5->VAR19)
+FUN4(VAR5);
+goto VAR13;
+}
+
+
+VAR7 = VAR14->VAR15.FUN5();
+
+
+VAR5->VAR20 ^= 1;
+FUN2(1, VAR8, &VAR5->VAR9, "",
+VAR7, VAR5->VAR20);
+if (VAR7 == VAR5->VAR20) {
+
+if (VAR7 == 0) {
+
+if (VAR5->VAR18 != VAR5->VAR19)
+FUN4(VAR5);
+
+if (VAR6 == VAR21)
+FUN6(VAR5);
+goto VAR13;
+}
+
+FUN7(&VAR5->VAR22);
+if (!FUN8(&VAR5->VAR23) &&
+VAR5->VAR18 == VAR5->VAR19)
+FUN9(VAR5);
+FUN10(&VAR5->VAR22);
+} else if (VAR7 == 0) {
+
+VAR5->VAR20 = VAR7;
+}
+VAR13:
+if (VAR5->VAR24->VAR25)
+VAR5->VAR24->FUN11(VAR2);
+
+return VAR26;
+}

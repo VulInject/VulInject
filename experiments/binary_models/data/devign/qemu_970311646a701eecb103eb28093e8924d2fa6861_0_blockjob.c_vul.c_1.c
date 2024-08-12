@@ -1,0 +1,10 @@
+void FUN1(VAR1 *VAR2, int VAR3)
+{
+    VAR4 *VAR5 = VAR2->VAR5;
+    assert(VAR5->VAR2 == VAR2);
+    VAR2->FUN2(VAR2->VAR6, VAR3);
+    VAR5->VAR2 = NULL;
+    FUN3(VAR5, VAR2->VAR7);
+    FUN4(VAR2->VAR7);
+    FUN5(VAR2);
+}

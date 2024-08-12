@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 ) { VAR2 -> VAR3 = 0 ; VAR2 -> VAR4 = 1 ; VAR2 -> VAR5 = 1 ; VAR2 -> VAR6 = '' ; VAR2 -> VAR7 = 1 ; VAR2 -> VAR8 = 0 ; VAR2 -> VAR9 = 0 ; VAR2 -> VAR10 = 0 ; VAR2 -> VAR11 = 0 ; VAR2 -> VAR12 = 32 ; VAR2 -> VAR13 = 32 ; VAR2 -> VAR14 |= 0x01 ; VAR2 -> VAR15 = VAR16 ; VAR2 -> VAR17 = - 1 ; VAR2 -> VAR18 = 1 ; VAR2 -> VAR19 = 1 ; VAR2 -> VAR20 = 1 ; }

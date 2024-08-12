@@ -1,0 +1,1 @@
+clock_t FUN1 ( struct VAR1 * VAR2 ) { int VAR3 ; VAR4 = 0 ; if ( ! VAR2 ) { VAR4 = VAR5 ; return ( - 1 ) ; } VAR3 = FUN2 ( VAR2 , NULL ) ; return ( VAR3 == - 1 ?VAR3 : 0 ) ; }

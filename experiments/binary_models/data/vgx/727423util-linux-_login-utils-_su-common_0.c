@@ -1,0 +1,21 @@
+static void FUN1(void)
+{
+struct rlimit VAR1 = { .VAR2 = 0, .VAR3 = 0 };
+
+
+FUN2(VAR4, &VAR1);
+FUN2(VAR5, &VAR1);
+
+
+VAR1.VAR2 = VAR6;
+VAR1.VAR3 = VAR6;
+FUN2(VAR7, &VAR1);
+FUN2(VAR8, &VAR1);
+
+
+FUN3(VAR9, &VAR1);
+if (VAR1.VAR2 != VAR10) {
+VAR1.VAR2 = VAR10;
+FUN2(VAR9, &VAR1);
+}
+}

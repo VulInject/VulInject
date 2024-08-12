@@ -1,0 +1,83 @@
+static void
+FUN1(VAR1 *VAR2)
+{
+VAR3 *VAR4;
+TupleDesc	VAR5;
+StringInfoData VAR6;
+char		VAR7[VAR8];
+char		VAR9[VAR10];
+int			VAR11;
+off_t		VAR12;
+off_t		VAR13;
+Size		VAR14;
+
+VAR4 = FUN2(VAR15);
+
+
+VAR5 = FUN3(2);
+FUN4(VAR5, (VAR16) 1, "", VAR17, -1, 0);
+FUN4(VAR5, (VAR16) 2, "", VAR17, -1, 0);
+
+FUN5(VAR7, VAR2->VAR18);
+FUN6(VAR9, VAR2->VAR18);
+
+
+VAR4->FUN7(VAR4, VAR19, VAR5);
+
+
+FUN8(&VAR6, '');
+FUN9(&VAR6, 2);		
+VAR14 = strlen(VAR7);
+FUN10(&VAR6, VAR14);	
+FUN11(&VAR6, VAR7, VAR14);
+
+VAR11 = FUN12(VAR9, VAR20 | VAR21);
+if (VAR11 < 0)
+FUN13(VAR22,
+(FUN14(),
+FUN15(""%VAR23\"", VAR9)));
+
+
+VAR12 = FUN16(VAR11, 0, VAR24);
+if (VAR12 < 0)
+FUN13(VAR22,
+(FUN14(),
+FUN15(""%VAR23\"", VAR9)));
+if (FUN16(VAR11, 0, VAR25) != 0)
+FUN13(VAR22,
+(FUN14(),
+FUN15(""%VAR23\"", VAR9)));
+
+FUN10(&VAR6, VAR12);	
+
+VAR13 = VAR12;
+while (VAR13 > 0)
+{
+PGAlignedBlock VAR26;
+int			VAR27;
+
+FUN17(VAR28);
+VAR27 = read(VAR11, VAR26.VAR29, sizeof(VAR26));
+FUN18();
+if (VAR27 < 0)
+FUN13(VAR22,
+(FUN14(),
+FUN15(""%VAR23\"",
+VAR9)));
+else if (VAR27 == 0)
+FUN13(VAR22,
+(FUN19(VAR30),
+FUN15(""%VAR23\"",
+VAR9, VAR27, (VAR31) VAR13)));
+
+FUN11(&VAR6, VAR26.VAR29, VAR27);
+VAR13 -= VAR27;
+}
+
+if (FUN20(VAR11) != 0)
+FUN13(VAR22,
+(FUN14(),
+FUN15(""%VAR23\"", VAR9)));
+
+FUN21(&VAR6);
+}

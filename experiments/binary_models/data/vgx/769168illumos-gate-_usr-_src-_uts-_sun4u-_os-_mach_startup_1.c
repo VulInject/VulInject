@@ -1,0 +1,1 @@
+void FUN1 ( void ) { if ( ! VAR1 ) { VAR2 = 0 ; VAR3 = 0 ; VAR4 = 0 ; VAR5 = 0 ; VAR6 = 0 ; } }

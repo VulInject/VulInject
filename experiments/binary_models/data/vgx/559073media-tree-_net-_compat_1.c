@@ -1,0 +1,1 @@
+static int FUN1 ( struct socket * VAR1 , int VAR2 , int VAR3 , char VAR4 * VAR5 , unsigned int VAR6 ) { if ( VAR3 == VAR7 || VAR3 == VAR8 ) { return FUN2 ( VAR1 , VAR2 , VAR3 , VAR5 , VAR6 ) ; } return FUN3 ( VAR1 , VAR2 , VAR3 , VAR5 , VAR6 ) ; }

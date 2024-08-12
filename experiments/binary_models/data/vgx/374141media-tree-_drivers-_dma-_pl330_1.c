@@ -1,0 +1,1 @@
+static inline u32 FUN1 ( unsigned VAR1 , u8 VAR2 [ ] , unsigned VAR3 , u8 VAR4 ) { if ( VAR1 ) { return VAR5 ; } VAR2 [ 0 ] = VAR6 ; if ( VAR3 ) { VAR2 [ 0 ] |= ( 1 << 1 ) ; } VAR4 -- ; VAR2 [ 1 ] = VAR4 ; FUN2 ( VAR5 , "" , VAR3 ?'' : '' , VAR4 ) ; return VAR5 ; } VAR7 { enum pl330_cond VAR8 ; bool VAR9 ; unsigned VAR3 ; int VAR10 ; }

@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { struct VAR5 * VAR6 = FUN2 ( VAR2 -> VAR7 . VAR8 ) ; struct VAR9 * VAR10 = & VAR6 -> VAR10 ; enum pipe VAR11 = VAR2 -> VAR11 ; if ( VAR4 -> VAR7 . VAR12 ) { VAR10 -> VAR13 |= ( 1 << VAR11 ) ; } else { VAR10 -> VAR13 &= ~ ( 1 << VAR11 ) ; } return ( VAR10 -> VAR13 & ~ ( 1 << VAR11 ) ) != 0 ; }

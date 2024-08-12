@@ -1,0 +1,5 @@
+VAR1 *FUN1(VAR2 *VAR3, int64_t VAR4, int VAR5, BdrvRequestFlags VAR6, VAR7 *VAR8, void *VAR9)
+{
+    FUN2(VAR3, VAR4, VAR5, VAR6, VAR9);
+    return FUN3(VAR3, VAR4, NULL, VAR5, VAR10 | VAR6, VAR8, VAR9, true);
+}

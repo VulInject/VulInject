@@ -1,0 +1,1 @@
+static long FUN1 ( struct VAR1 * VAR1 , unsigned int VAR2 , unsigned long VAR3 ) { unsigned long VAR4 ; struct VAR5 * VAR6 = FUN2 ( VAR1 ) ; switch ( VAR2 ) { case VAR7 : FUN3 ( & VAR6 -> VAR8 , VAR4 ) ; FUN4 ( VAR6 , NULL ) ; FUN5 ( & VAR6 -> VAR8 , VAR4 ) ; return 0 ; case VAR9 : return FUN6 ( VAR6 ) ; } return - VAR10 ; }

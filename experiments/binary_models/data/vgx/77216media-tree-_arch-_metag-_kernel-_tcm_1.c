@@ -1,0 +1,1 @@
+unsigned long FUN1 ( unsigned int VAR1 , size_t VAR2 ) { unsigned long VAR3 ; struct VAR4 * VAR5 ; VAR5 = FUN2 ( VAR1 ) ; VAR3 = FUN3 ( VAR5 -> VAR5 , VAR2 ) ; if ( ! VAR3 ) { return 0 ; } return VAR3 ; }

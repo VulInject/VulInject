@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { int VAR3 ; if ( VAR4 ) { return ; } FUN2 ( VAR2 , VAR5 , & VAR3 ) ; switch ( VAR3 ) { case VAR6 : case VAR7 : VAR4 = VAR8 ; break ; case VAR9 : VAR4 = VAR10 ; break ; case VAR11 : default : VAR4 = VAR12 ; break ; } }

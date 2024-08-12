@@ -1,0 +1,129 @@
+static int FUN1(struct VAR1 *VAR2, const struct VAR3 *VAR4)
+{
+int VAR5, VAR6;
+struct VAR7 *VAR8;
+char VAR9[8];
+
+VAR5 = FUN2(VAR2);
+if (VAR5)
+return VAR5;
+FUN3(VAR2);
+
+VAR5 = FUN4(VAR2, FUN5(32));
+if (VAR5)
+goto VAR10;
+
+snprintf(VAR9, sizeof(VAR9), "",
+FUN6(&VAR11) - 1);
+
+VAR5 = FUN7(VAR2, VAR9);
+if (VAR5)
+goto VAR10;
+
+if (FUN8(VAR2, 0) < VAR12 ||
+FUN8(VAR2, 1) < VAR13 ||
+FUN8(VAR2, 2) < VAR14) {
+FUN9(&VAR2->VAR8, "");
+VAR5 = -VAR15;
+goto VAR16;
+}
+
+VAR8 = FUN10(sizeof(struct VAR7) + sizeof(struct VAR17),
+VAR18);
+if (!VAR8) {
+VAR5 = -VAR19;
+goto VAR16;
+}
+
+FUN11(&VAR8->VAR20);
+
+snprintf(VAR8->VAR9, sizeof(VAR8->VAR9), "", VAR9);
+FUN12(&VAR8->VAR21);
+
+for (VAR6 = 0; VAR6 < 3; ++VAR6) {
+unsigned long VAR22, VAR23;
+
+VAR22 = FUN13(VAR2, VAR6);
+VAR23 = FUN8(VAR2, VAR6);
+
+VAR8->VAR24[VAR6] = FUN14(VAR22, VAR23);
+if (!VAR8->VAR24[VAR6]) {
+VAR5 = -VAR19;
+goto VAR25;
+}
+}
+
+VAR8->VAR26 = FUN15(VAR2, sizeof(struct VAR27),
+&VAR8->VAR28);
+if (!VAR8->VAR26) {
+FUN9(&VAR2->VAR8, "");
+VAR5 = -VAR19;
+goto VAR25;
+}
+
+VAR8->VAR2 = VAR2;
+VAR8->VAR29 = VAR2->VAR29;
+
+for (VAR6 = 0; VAR6 < VAR30; ++VAR6)
+VAR8->VAR31[VAR6] = NULL;
+
+FUN16(VAR2, VAR8);
+
+FUN17(&VAR8->VAR32, VAR33, (unsigned long)VAR8);
+
+FUN18(&VAR8->VAR34, 1);
+
+VAR5 = FUN19(VAR8->VAR29, VAR35, VAR36, VAR8->VAR9, VAR8);
+if (VAR5) {
+FUN9(&VAR2->VAR8, "",
+VAR8->VAR29, VAR5);
+VAR8->VAR29 = 0;
+goto VAR37;
+}
+
+VAR5 = FUN20(VAR8);
+if (VAR5)
+goto VAR38;
+
+VAR5 = FUN21(VAR8);
+if (VAR5)
+goto VAR39;
+
+VAR5 = FUN22(VAR8);
+if (VAR5)
+goto VAR40;
+
+FUN23(&VAR8->VAR41, VAR42);
+FUN24(&VAR8->VAR41, VAR43);
+
+FUN25(&VAR2->VAR8, ""
+"",
+FUN26(VAR2), VAR8->VAR9);
+
+return 0;
+
+VAR40:
+FUN27(VAR8);
+VAR39:
+FUN28(VAR8, 1);
+FUN29(VAR8);
+VAR38:
+FUN30(VAR8->VAR29, VAR8);
+FUN31(&VAR8->VAR32);
+VAR37:
+FUN32(VAR2, sizeof(struct VAR27),
+VAR8->VAR26, VAR8->VAR28);
+
+VAR25:
+for (VAR6 = 0; VAR6 < 3; ++VAR6)
+if (VAR8->VAR24[VAR6])
+FUN33(VAR8->VAR24[VAR6]);
+
+VAR16:
+FUN34(VAR2);
+
+VAR10:
+FUN35(VAR2);
+
+return VAR5;
+}

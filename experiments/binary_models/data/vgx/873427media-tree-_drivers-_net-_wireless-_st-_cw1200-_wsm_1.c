@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , const struct VAR3 * VAR4 ) { int VAR5 ; struct VAR6 * VAR7 = & VAR2 -> VAR8 ; FUN2 ( VAR2 , NULL ) ; FUN3 ( VAR7 , VAR4 -> VAR9 ) ; FUN3 ( VAR7 , 0 ) ; FUN4 ( VAR7 , 0 ) ; VAR5 = FUN5 ( VAR2 , VAR7 , NULL , VAR10 , VAR11 ) ; FUN6 ( VAR2 ) ; return VAR5 ; nomem FUN6 ( VAR2 ) ; return - VAR12 ; }

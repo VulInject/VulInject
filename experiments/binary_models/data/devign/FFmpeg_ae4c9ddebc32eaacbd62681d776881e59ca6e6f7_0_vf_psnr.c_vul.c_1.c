@@ -1,0 +1,42 @@
+static int FUN1(VAR1 *VAR2)
+{
+    const VAR3 *VAR4 = FUN2(VAR2->VAR5);
+    VAR6 *VAR7 = VAR2->VAR8;
+    VAR9 *VAR10 = VAR7->VAR11;
+    unsigned VAR12;
+    int VAR13;
+    VAR10->VAR14 = VAR4->VAR14;
+    if (VAR7->VAR15[0]->VAR16 != VAR7->VAR15[1]->VAR16 || VAR7->VAR15[0]->VAR17 != VAR7->VAR15[1]->VAR17)
+    {
+        FUN3(VAR7, VAR18, "");
+        return FUN4(VAR19);
+    }
+    if (VAR7->VAR15[0]->VAR5 != VAR7->VAR15[1]->VAR5)
+    {
+        FUN3(VAR7, VAR18, "");
+        return FUN4(VAR19);
+    }
+    VAR10->VAR20[0] = (1 << (VAR4->VAR21[0].VAR22 + 1)) - 1;
+    VAR10->VAR20[1] = (1 << (VAR4->VAR21[1].VAR22 + 1)) - 1;
+    VAR10->VAR20[2] = (1 << (VAR4->VAR21[2].VAR22 + 1)) - 1;
+    VAR10->VAR20[3] = (1 << (VAR4->VAR21[3].VAR22 + 1)) - 1;
+    VAR10->VAR23 = FUN5(VAR10->VAR24, VAR2->VAR5) >= 0;
+    VAR10->VAR25[0] = VAR10->VAR23 ? '' : '';
+    VAR10->VAR25[1] = VAR10->VAR23 ? '' : '';
+    VAR10->VAR25[2] = VAR10->VAR23 ? '' : '';
+    VAR10->VAR25[3] = '';
+    VAR10->VAR26[1] = VAR10->VAR26[2] = FUN6(VAR2->VAR17, VAR4->VAR27);
+    VAR10->VAR26[0] = VAR10->VAR26[3] = VAR2->VAR17;
+    VAR10->VAR28[1] = VAR10->VAR28[2] = FUN6(VAR2->VAR16, VAR4->VAR29);
+    VAR10->VAR28[0] = VAR10->VAR28[3] = VAR2->VAR16;
+    VAR12 = 0;
+    for (VAR13 = 0; VAR13 < VAR10->VAR14; VAR13++)
+        VAR12 += VAR10->VAR26[VAR13] * VAR10->VAR28[VAR13];
+    for (VAR13 = 0; VAR13 < VAR10->VAR14; VAR13++)
+    {
+        VAR10->VAR30[VAR13] = (double)VAR10->VAR26[VAR13] * VAR10->VAR28[VAR13] / VAR12;
+        VAR10->VAR31 += VAR10->VAR20[VAR13] * VAR10->VAR30[VAR13];
+    }
+    VAR10->VAR32 = VAR4->VAR21[0].VAR22 > 7 ? VAR33 : VAR34;
+    return 0;
+}

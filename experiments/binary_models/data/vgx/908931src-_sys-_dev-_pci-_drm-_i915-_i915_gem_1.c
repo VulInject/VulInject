@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 , * VAR5 ; int VAR6 ; FUN2 ( , , , ) FUN3 ( VAR4 ) ; FUN2 ( , , , ) FUN4 ( VAR4 ) ; for ( VAR6 = 0 ; VAR6 < FUN5 ( VAR2 ) -> VAR7 -> VAR8 ; VAR6 ++ ) { struct VAR9 * VAR10 = & FUN5 ( VAR2 ) -> VAR7 -> VAR11 [ VAR6 ] ; FUN6 ( FUN7 ( VAR10 -> VAR12 ) ) ; VAR10 -> VAR13 = true ; } }

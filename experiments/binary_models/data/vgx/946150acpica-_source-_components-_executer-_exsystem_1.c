@@ -1,0 +1,1 @@
+FUN1 ( ) { FUN2 ( ) ; FUN3 ( ) ; if ( VAR1 > VAR2 ) { VAR1 = VAR2 ; } FUN4 ( VAR1 , NULL ) ; FUN5 ( ) ; return ( VAR3 ) ; }

@@ -1,0 +1,1 @@
+void FUN1(VAR1 *VAR2, const VAR1 *VAR3, ptrdiff_t VAR4) { FUN2(VAR3 + VAR4 - 2, VAR3 - (VAR4 * 2) + 1, VAR2, VAR4); }

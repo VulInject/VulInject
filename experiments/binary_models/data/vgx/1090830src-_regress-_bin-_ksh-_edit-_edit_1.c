@@ -1,0 +1,1 @@
+static size_t FUN1 ( const char * VAR1 , const char * VAR2 ) { char * VAR3 ; size_t VAR4 ; VAR4 = strlen ( VAR2 ) ; return ( VAR3 - VAR1 ) + VAR4 ; }

@@ -1,0 +1,1 @@
+FUN1 ( "" ) ; FUN2 ( "" ) ; FUN3 ( "" ) ; static void FUN4 ( struct VAR1 * VAR2 , int VAR3 ) { struct VAR4 * VAR5 = VAR2 -> VAR6 [ 0 ] ; FUN5 ( VAR5 , NULL ) ; }

@@ -1,0 +1,95 @@
+int
+FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR3 *VAR5, VAR3 *VAR6,
+ushort_t VAR7, VAR8 *VAR9, zoneid_t VAR10, uint_t VAR11,
+VAR12 *VAR13, VAR14 *VAR15)
+{
+int VAR16;
+
+
+if (VAR13 != NULL && !FUN2())
+return (VAR17);
+
+FUN3(VAR15->VAR18, VAR19);
+
+if (VAR4 != NULL)
+bcopy(VAR4, &VAR2->VAR20, VAR21);
+if (VAR6 != NULL)
+bcopy(VAR6, &VAR2->VAR22, VAR21);
+
+
+switch (VAR7) {
+case VAR23:
+case VAR24:
+case VAR25:
+case VAR26:
+case VAR27:
+VAR2->VAR28 = VAR29;
+VAR2->VAR30 = VAR31;
+break;
+case VAR32:
+case VAR33:
+case VAR34:
+case VAR35:
+if (VAR5 != NULL) {
+bcopy(VAR5, &VAR2->VAR28, VAR21);
+VAR2->VAR30 = FUN4(VAR2->VAR28);
+}
+break;
+case VAR36:
+case VAR37:
+FUN5(VAR5 == NULL);
+break;
+default:
+FUN5(0);
+return (VAR17);
+}
+
+VAR16 = FUN6(VAR2, VAR7, VAR9, VAR10, VAR11, VAR38,
+VAR13, VAR15);
+if (VAR16 != 0)
+return (VAR16);
+
+
+VAR2->VAR39 = VAR40;		
+
+switch (VAR2->VAR41) {
+case VAR26:
+VAR2->VAR42 = VAR43;
+VAR2->VAR44 = VAR45;
+FUN5(VAR2->VAR46 != NULL);
+if (VAR2->VAR46->VAR47 & VAR48)
+VAR2->VAR44 = VAR49;
+break;
+case VAR23:
+VAR2->VAR42 = VAR43;
+VAR2->VAR44 = VAR50;
+break;
+case VAR25:
+VAR2->VAR39 = VAR51;
+VAR2->VAR42 = VAR52;
+VAR2->VAR44 = VAR53;
+break;
+case VAR36:
+VAR2->VAR39 = VAR51;
+VAR2->VAR42 = VAR54;
+VAR2->VAR44 = VAR55;
+break;
+default:
+
+VAR2->VAR42 = VAR56;
+VAR2->VAR44 = VAR57;
+break;
+}
+if (VAR2->VAR58 & (VAR59|VAR60)) {
+VAR2->VAR42 = VAR61;
+VAR2->VAR44 = VAR62;
+} else if (VAR2->VAR58 & VAR63) {
+VAR2->VAR39 = VAR64;
+VAR2->VAR42 = VAR65;
+
+if (VAR2->VAR41 != VAR25)
+VAR2->VAR44 = VAR66;
+}
+VAR2->VAR67 = FUN7(VAR2);
+return (0);
+}

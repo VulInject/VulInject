@@ -1,0 +1,23 @@
+FUN1("");
+FUN2("");
+FUN3("");
+
+static int FUN4(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN5(VAR2);
+struct VAR5 *VAR6 = FUN6(VAR4);
+
+FUN7(VAR4);
+
+FUN8(VAR4->VAR7, VAR4);
+FUN8(VAR8, VAR4);
+
+FUN9(VAR6->VAR9, VAR10 * VAR11,
+VAR6->VAR12, VAR6->VAR13);
+FUN9(VAR6->VAR9, VAR14 * VAR11,
+VAR6->VAR15, VAR6->VAR16);
+
+FUN10(VAR4);
+
+return 0;
+}

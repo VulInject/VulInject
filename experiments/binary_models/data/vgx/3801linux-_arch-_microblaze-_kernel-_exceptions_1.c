@@ -1,0 +1,1 @@
+void FUN1 ( const char * VAR1 , struct VAR2 * VAR3 , long VAR4 ) { FUN2 ( ) ; FUN3 ( & VAR5 ) ; FUN4 ( "" , VAR1 , VAR4 ) ; FUN5 ( VAR3 , NULL ) ; FUN6 ( & VAR5 ) ; FUN7 ( VAR4 ) ; }

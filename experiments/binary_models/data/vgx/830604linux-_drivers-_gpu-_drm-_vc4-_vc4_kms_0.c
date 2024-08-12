@@ -1,0 +1,100 @@
+static int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6;
+struct VAR7 **VAR8;
+struct VAR7 *VAR9;
+unsigned int VAR10 = 0;
+unsigned int VAR11;
+int VAR12;
+
+VAR6 = FUN2(VAR4);
+if (FUN3(VAR6))
+return FUN4(VAR6);
+
+for (VAR11 = 0; VAR11 < FUN5(VAR6->VAR13); VAR11++)
+if (!VAR6->VAR13[VAR11].VAR14)
+VAR10 |= FUN6(VAR11);
+
+
+VAR8 = FUN7(VAR2->VAR15, sizeof(*VAR8), VAR16);
+if (!VAR8)
+return -VAR17;
+
+VAR11 = 0;
+FUN8(VAR9, VAR2)
+VAR8[VAR11++] = VAR9;
+
+FUN9(VAR8, VAR11, sizeof(*VAR8), VAR18, NULL);
+
+for (VAR11 = 0; VAR11 < VAR2->VAR15; VAR11++) {
+struct VAR19 *VAR20, *VAR21;
+struct VAR22 *VAR23, *VAR24;
+struct VAR25 *VAR25;
+unsigned int VAR26;
+unsigned int VAR27;
+
+VAR9 = VAR8[VAR11];
+if (!VAR9)
+continue;
+VAR25 = FUN10(VAR9);
+
+VAR23 = FUN11(VAR4, VAR9);
+if (!VAR23)
+continue;
+VAR20 = FUN12(VAR23);
+
+VAR24 = FUN13(VAR4, VAR9);
+if (!VAR24)
+continue;
+VAR21 = FUN12(VAR24);
+
+FUN14(VAR2, "", VAR9->VAR28);
+
+
+if (VAR23->VAR29 == VAR24->VAR29) {
+if (VAR24->VAR29)
+FUN14(VAR2, "",
+VAR9->VAR28, VAR21->VAR30);
+else
+FUN14(VAR2, "", VAR9->VAR28);
+
+continue;
+}
+
+
+VAR21->VAR31 = true;
+
+
+if (!VAR24->VAR29) {
+VAR27 = VAR20->VAR30;
+
+FUN14(VAR2, "",
+VAR9->VAR28, VAR27);
+
+VAR6->VAR13[VAR27].VAR14 = false;
+VAR21->VAR30 = VAR32;
+continue;
+}
+
+VAR26 = VAR10 & VAR25->VAR33->VAR34;
+if (!VAR26) {
+VAR12 = -VAR35;
+goto VAR36;
+}
+
+VAR27 = FUN15(VAR26) - 1;
+
+FUN14(VAR2, "", VAR27, VAR9->VAR28);
+VAR21->VAR30 = VAR27;
+VAR10 &= ~FUN6(VAR27);
+VAR6->VAR13[VAR27].VAR14 = true;
+}
+
+FUN16(VAR8);
+return 0;
+
+VAR36:
+FUN16(VAR8);
+return VAR12;
+}

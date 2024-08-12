@@ -1,0 +1,25 @@
+static void
+FUN1(VAR1 *VAR2)
+{
+const VAR3 *VAR4 = FUN2(VAR2);
+double VAR5;
+
+if (!VAR4 || VAR4->VAR6.VAR7 == VAR8) {
+VAR2->VAR9 = VAR10;
+return;
+}
+
+VAR5 = FUN3(VAR4->VAR6);
+VAR5 = FUN4(0, VAR5);
+VAR5 += VAR4->VAR11;
+
+if (VAR4->VAR12) {
+VAR5 = FUN5(VAR5, VAR4->VAR12);
+}
+
+VAR2->VAR9 = FUN6(VAR5);
+
+FUN7(VAR13, ""VAR14"",
+VAR2->VAR9, FUN8(VAR2->VAR15) ?
+FUN9(VAR2->VAR15)->VAR16 : 0);
+}

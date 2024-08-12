@@ -1,0 +1,82 @@
+static void FUN1(VAR1 *VAR2, const uint8_t VAR3[64], int VAR4)
+{
+    uint32_t VAR5, VAR6, VAR7, VAR8, VAR9, VAR10, VAR11, VAR12;
+    uint32_t VAR13[16];
+    int VAR14;
+    if (VAR4)
+    {
+        VAR5 = VAR2[0];
+        VAR6 = VAR2[1];
+        VAR7 = VAR2[2];
+        VAR8 = VAR2[3];
+        VAR9 = VAR2[4];
+        VAR10 = VAR2[5];
+        VAR11 = VAR2[6];
+        VAR12 = VAR2[7];
+    }
+    else
+    {
+        VAR5 = VAR9 = VAR2[0];
+        VAR6 = VAR10 = VAR2[1];
+        VAR7 = VAR11 = VAR2[2];
+        VAR8 = VAR12 = VAR2[3];
+    }
+    for (VAR14 = 0; VAR14 < 16; VAR14++)
+        VAR13[VAR14] = FUN2(VAR3 + 4 * VAR14);
+    VAR14 = 0;
+    FUN3(VAR5, VAR6, VAR7, VAR8, VAR9, VAR10, VAR11, VAR12);
+    FUN3(VAR8, VAR5, VAR6, VAR7, VAR12, VAR9, VAR10, VAR11);
+    FUN3(VAR7, VAR8, VAR5, VAR6, VAR11, VAR12, VAR9, VAR10);
+    FUN3(VAR6, VAR7, VAR8, VAR5, VAR10, VAR11, VAR12, VAR9)
+    VAR15;
+    VAR15;
+    VAR15;
+    VAR15;
+    FUN4(VAR5, VAR9)
+    FUN5(VAR5, VAR6, VAR7, VAR8, VAR9, VAR10, VAR11, VAR12);
+    FUN5(VAR8, VAR5, VAR6, VAR7, VAR12, VAR9, VAR10, VAR11);
+    FUN5(VAR7, VAR8, VAR5, VAR6, VAR11, VAR12, VAR9, VAR10);
+    FUN5(VAR6, VAR7, VAR8, VAR5, VAR10, VAR11, VAR12, VAR9)
+    VAR16;
+    VAR16;
+    VAR16;
+    VAR16;
+    FUN4(VAR6, VAR10)
+    FUN6(VAR5, VAR6, VAR7, VAR8, VAR9, VAR10, VAR11, VAR12);
+    FUN6(VAR8, VAR5, VAR6, VAR7, VAR12, VAR9, VAR10, VAR11);
+    FUN6(VAR7, VAR8, VAR5, VAR6, VAR11, VAR12, VAR9, VAR10);
+    FUN6(VAR6, VAR7, VAR8, VAR5, VAR10, VAR11, VAR12, VAR9)
+    VAR17;
+    VAR17;
+    VAR17;
+    VAR17;
+    FUN4(VAR7, VAR11)
+    FUN7(VAR5, VAR6, VAR7, VAR8, VAR9, VAR10, VAR11, VAR12);
+    FUN7(VAR8, VAR5, VAR6, VAR7, VAR12, VAR9, VAR10, VAR11);
+    FUN7(VAR7, VAR8, VAR5, VAR6, VAR11, VAR12, VAR9, VAR10);
+    FUN7(VAR6, VAR7, VAR8, VAR5, VAR10, VAR11, VAR12, VAR9)
+    VAR18;
+    VAR18;
+    VAR18;
+    VAR18;
+    FUN4(VAR8, VAR12)
+    if (VAR4)
+    {
+        VAR2[0] += VAR5;
+        VAR2[1] += VAR6;
+        VAR2[2] += VAR7;
+        VAR2[3] += VAR8;
+        VAR2[4] += VAR9;
+        VAR2[5] += VAR10;
+        VAR2[6] += VAR11;
+        VAR2[7] += VAR12;
+    }
+    else
+    {
+        VAR12 += VAR7 + VAR2[1];
+        VAR2[1] = VAR2[2] + VAR8 + VAR9;
+        VAR2[2] = VAR2[3] + VAR5 + VAR10;
+        VAR2[3] = VAR2[0] + VAR6 + VAR11;
+        VAR2[0] = VAR12;
+    }
+}

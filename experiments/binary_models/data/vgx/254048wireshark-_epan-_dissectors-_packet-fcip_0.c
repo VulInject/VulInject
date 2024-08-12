@@ -1,0 +1,141 @@
+FUN1 (VAR1 *VAR2, VAR3 *VAR4, VAR5 *VAR6,
+gboolean VAR7)
+{
+gint VAR8 = 0,
+VAR9  = 0,
+VAR10 = 0;
+gint VAR11 = FUN2 (VAR2);
+guint8 VAR12, VAR13 = 0, VAR14 = 0;
+
+VAR15 *VAR16;
+VAR5 *VAR17 = NULL;
+VAR1 *VAR18;
+fc_data_t VAR19;
+
+if (VAR11 < VAR20) {
+return VAR21;
+}
+
+if (VAR7 &&
+((VAR4->VAR22 != VAR23) && (VAR4->VAR24 != VAR23))) {
+return VAR21;
+}
+
+while (VAR11 > VAR20) {
+if ((VAR8 = FUN3 (VAR2, VAR4, VAR8)) == -1) {
+return VAR21;
+}
+else if (VAR8 == -2) {
+
+return (VAR25);
+}
+
+VAR9 = VAR8;
+FUN4(VAR4->VAR26, VAR27, "");
+
+VAR10 = (FUN5 (VAR2, VAR8+12) & 0x03FF)*4;
+
+if (VAR11 < VAR10) {
+if(VAR28 && VAR4->VAR29) {
+
+VAR4->VAR30 = VAR8;
+VAR4->VAR31 = VAR10 - VAR11;
+return (VAR25);
+}
+}
+
+VAR12 = FUN6 (VAR2, VAR9+8);
+
+if (VAR6) {
+if (FUN7 (VAR12)) {
+VAR16 = FUN8 (VAR6, VAR32, VAR2, 0,
+VAR20,
+"");
+}
+else if (FUN9 (VAR2, VAR8, VAR8+VAR10-4)) {
+VAR13 = FUN6 (VAR2, VAR8+VAR20);
+VAR14 = FUN6 (VAR2, VAR8+VAR10 - 4);
+
+VAR16 = FUN8 (VAR6, VAR32, VAR2, 0,
+VAR20,
+"",
+FUN10 (VAR13, VAR33,
+""),
+FUN10 (VAR14, VAR34,
+""));
+}
+else {
+VAR13 = FUN6 (VAR2, VAR8+VAR20);
+
+VAR16 = FUN8 (VAR6, VAR32, VAR2, 0,
+VAR20,
+"",
+FUN10 (VAR13, VAR33,
+""),
+"");
+}
+VAR17 = FUN11 (VAR16, VAR35);
+
+FUN12 (VAR2, VAR17, VAR8);
+
+VAR8 += VAR20;
+
+if (!FUN7 (VAR12)) {
+
+FUN13 (VAR17, VAR36, VAR2, VAR8, 1, VAR37);
+FUN13 (VAR17, VAR38, VAR2, VAR8+2, 1, VAR37);
+
+
+VAR8 += (VAR10-VAR20-4);
+if (FUN9 (VAR2, VAR8, 4)) {
+FUN13 (VAR17, VAR39, VAR2, VAR8, 1, VAR37);
+FUN13 (VAR17, VAR40, VAR2, VAR8+2, 1, VAR37);
+}
+}
+}
+
+
+if (!FUN7(VAR12)) {
+
+VAR19.VAR41 = 0;
+
+if (VAR13) {
+if ((VAR13 == VAR42) || (VAR13 == VAR43) || (VAR13 == VAR44)) {
+VAR19.VAR41 = VAR45;
+}
+else if (VAR13 == VAR46) {
+VAR19.VAR41 = VAR47;
+}
+
+if (VAR14 != VAR48) {
+VAR19.VAR41 |= VAR49;
+}
+else if (VAR14 != VAR50) {
+VAR19.VAR41 |= VAR51;
+}
+}
+
+
+VAR18 = FUN14 (VAR2, VAR20+4);
+if (VAR52) {
+VAR19.VAR53 = VAR54;
+FUN15(VAR52, VAR18, VAR4, VAR6, &VAR19);
+}
+else {
+FUN16(VAR18, VAR4, VAR6);
+}
+}
+else {
+FUN4(VAR4->VAR26, VAR55, "");
+if (FUN17 (VAR12)) {
+FUN18(VAR4->VAR26, VAR55, "");
+}
+
+FUN19 (VAR2, VAR17, VAR8+4);
+}
+
+VAR11 -= VAR10;
+}
+
+return (VAR25);
+}

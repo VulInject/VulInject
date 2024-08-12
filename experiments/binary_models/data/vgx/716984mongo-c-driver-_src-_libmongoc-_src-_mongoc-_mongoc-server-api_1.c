@@ -1,0 +1,1 @@
+FUN1 ( ) { FUN2 ( VAR1 , NULL ) ; return VAR1 -> VAR2 ; }

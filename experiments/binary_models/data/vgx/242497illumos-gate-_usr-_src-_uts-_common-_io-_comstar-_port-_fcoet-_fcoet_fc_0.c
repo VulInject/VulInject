@@ -1,0 +1,26 @@
+static VAR1
+FUN1(VAR2 *VAR3, VAR4 *VAR5,
+VAR6 *VAR7)
+{
+VAR8 *VAR9;
+
+VAR9 = ((VAR10 *)VAR7->VAR11)->VAR12;
+VAR9[0] = VAR13;
+VAR9[4] = 0x20;
+VAR9[5] = 0x20;
+VAR9[7] = 3;
+VAR9[8] = 0x88;
+VAR9[10] = 8;
+VAR9[13] = 0xff; VAR9[15] = 0x1f;
+VAR9[18] = 7; VAR9[19] = 0xd0;
+
+bcopy(VAR3->VAR14, VAR9 + 20, 8);
+bcopy(VAR3->VAR15, VAR9 + 28, 8);
+
+VAR9[68] = 0x80;
+VAR9[74] = 8;
+VAR9[77] = 0xff;
+VAR9[81] = 1;
+
+return (VAR16);
+}

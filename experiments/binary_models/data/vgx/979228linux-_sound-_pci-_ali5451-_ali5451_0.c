@@ -1,0 +1,14 @@
+static void FUN1(struct VAR1 *VAR2)
+{	
+unsigned int VAR3;
+
+VAR3 = FUN2(FUN3(VAR2, VAR4));
+VAR3 |= VAR5;
+FUN4(VAR3, FUN3(VAR2, VAR4));
+
+VAR3 = FUN5(FUN3(VAR2, VAR6));
+VAR3 |= 0x02;
+FUN6(VAR3, FUN3(VAR2, VAR6));
+
+FUN7(VAR2, VAR7);
+}

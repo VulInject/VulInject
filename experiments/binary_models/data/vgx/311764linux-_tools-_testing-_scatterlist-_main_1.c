@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR1 , struct VAR2 * VAR3 , const char * VAR4 ) { int VAR5 ; fprintf ( VAR6 , "" , VAR4 ) ; FUN2 ( "" , VAR1 -> VAR7 , VAR1 -> VAR8 , VAR1 -> VAR9 , VAR3 -> VAR10 , VAR3 -> VAR11 ) ; FUN2 ( "" , VAR1 -> VAR12 ) ; for ( VAR5 = 0 ; VAR5 < VAR1 -> VAR12 ; VAR5 ++ ) { FUN2 ( "" , VAR1 -> VAR13 [ VAR5 ] ) ; } FUN2 ( "" ) ; FUN3 ( 1 ) ; }

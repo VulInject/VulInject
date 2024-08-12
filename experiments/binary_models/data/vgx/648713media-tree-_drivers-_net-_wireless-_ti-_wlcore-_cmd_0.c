@@ -1,0 +1,56 @@
+int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+u16 VAR5, u8 VAR6, u8 VAR7,
+u8 VAR8, const VAR9 *VAR10, u8 VAR11, u32 VAR12,
+u16 VAR13)
+{
+struct VAR14 *VAR15;
+int VAR16 = 0;
+u8 VAR17;
+
+VAR15 = FUN2(sizeof(*VAR15), VAR18);
+if (!VAR15)
+return -VAR19;
+
+if (VAR11 == VAR4->VAR20.VAR21) {
+if (VAR7 == VAR22)
+VAR17 = VAR23;
+else
+VAR17 = VAR24;
+} else {
+VAR17 = VAR25;
+}
+
+FUN3(VAR26, ""
+"", (int)VAR5, (int)VAR6, (int)VAR17,
+(int)VAR7, (int)VAR11);
+
+VAR15->VAR27 = VAR17;
+VAR15->VAR11 = VAR11;
+VAR15->VAR28 = FUN4(VAR5);
+VAR15->VAR8 = VAR8;
+VAR15->VAR7 = VAR7;
+VAR15->VAR29 = VAR6;
+VAR15->VAR30[0] = FUN4(VAR13);
+VAR15->VAR31[0] = FUN5(VAR12);
+
+if (VAR7 == VAR32) {
+
+memcpy(VAR15->VAR10, VAR10, 16);
+memcpy(VAR15->VAR10 + 16, VAR10 + 24, 8);
+memcpy(VAR15->VAR10 + 24, VAR10 + 16, 8);
+} else {
+memcpy(VAR15->VAR10, VAR10, VAR8);
+}
+
+FUN6(VAR26, "", VAR15, sizeof(*VAR15));
+
+VAR16 = FUN7(VAR2, VAR33, VAR15, sizeof(*VAR15), 0);
+if (VAR16 < 0) {
+FUN8("");
+goto VAR34;
+}
+
+VAR34:
+FUN9(VAR15);
+return VAR16;
+}

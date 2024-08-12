@@ -1,0 +1,53 @@
+static enum VAR1 FUN1(struct VAR2 *VAR3,
+struct VAR4 *VAR5)
+{
+size_t VAR6, VAR7, VAR8, VAR9;
+struct VAR10 *VAR11 = VAR3->VAR11;
+struct VAR12 *VAR13 = VAR11->VAR13;
+struct VAR14 *VAR15 = &VAR13->VAR16;
+
+
+
+VAR7 = VAR13->VAR17.VAR7;
+VAR8 = VAR15->VAR18;
+VAR9 = VAR11->VAR9;
+
+VAR6 = FUN2(VAR5);
+
+if (VAR6 > VAR7 && VAR8 > 0)
+
+return VAR19;
+
+
+
+if (VAR5->VAR20 != VAR21 &&
+VAR9 >= VAR11->VAR22)
+return VAR19;
+
+
+
+if ((FUN3(VAR13->VAR23.VAR24)->VAR25 || VAR8 == 0) &&
+!VAR13->VAR26)
+
+return VAR27;
+
+if (!FUN4(VAR3))
+
+return VAR27;
+
+if (!FUN5(VAR13, VAR28))
+return VAR27;
+
+
+if (VAR5->VAR29->VAR30 + VAR15->VAR31 > VAR11->VAR32 -
+VAR3->VAR33 - FUN6(&VAR5->VAR13->VAR34) - 4)
+
+return VAR27;
+
+
+if (!VAR5->VAR35->VAR36)
+return VAR27;
+
+
+return VAR37;
+}

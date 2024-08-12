@@ -1,0 +1,1 @@
+FUN1 ( ) { int VAR1 = VAR2 >> VAR3 ; if ( VAR1 < VAR4 ) { int VAR5 = VAR6 . VAR7 [ VAR1 ] ; if ( VAR5 >= 0 ) { unsigned int VAR8 = ( VAR2 >> VAR9 ) & VAR10 ; int VAR11 = VAR6 . VAR12 [ VAR5 + VAR8 ] ; if ( VAR11 >= 0 ) { unsigned int VAR13 = VAR2 & VAR14 ; return VAR6 . VAR15 [ VAR11 + VAR13 ] ; } } } return VAR16 ; }

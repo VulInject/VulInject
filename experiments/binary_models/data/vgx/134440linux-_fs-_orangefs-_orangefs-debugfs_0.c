@@ -1,0 +1,109 @@
+static VAR1 FUN1(struct VAR2 *VAR2,
+const char VAR3 *VAR4,
+size_t VAR5,
+VAR6 *VAR7)
+{
+char *VAR8;
+int VAR9 = -VAR10;
+size_t VAR11 = 0;
+char *VAR12;
+struct VAR13 *VAR14 = NULL;
+struct client_debug_mask VAR15 = { NULL, 0, 0 };
+char *VAR16;
+
+FUN2(VAR17,
+"",
+VAR2);
+
+if (VAR5 == 0)
+return 0;
+
+
+if (VAR5 > VAR18 + 1) {
+VAR11 = VAR5;
+VAR5 = VAR18 + 1;
+}
+
+VAR8 = FUN3(VAR18, VAR19);
+if (!VAR8)
+goto VAR20;
+
+if (FUN4(VAR8, VAR4, VAR5 - 1)) {
+FUN2(VAR17,
+"",
+VAR21);
+goto VAR20;
+}
+
+
+if (!strcmp(VAR2->VAR22.VAR23->VAR24.VAR25,
+VAR26)) {
+FUN5(VAR8, &VAR27, 0);
+FUN6(&VAR27, 0);
+VAR12 = VAR28;
+FUN2(VAR17,
+"",
+VAR28);
+} else {
+
+if (FUN7()) {
+FUN8("",
+VAR21,
+FUN7());
+goto VAR20;
+}
+
+FUN5(VAR8, &VAR15, 1);
+FUN6(&VAR15, 1);
+VAR12 = VAR29;
+
+VAR14 = FUN9(VAR30);
+if (!VAR14) {
+FUN8("", VAR21);
+goto VAR20;
+}
+
+VAR14->VAR31.VAR32.VAR33.VAR34 =
+VAR35;
+VAR14->VAR31.VAR32.VAR33.VAR36 = VAR37;
+memset(VAR14->VAR31.VAR32.VAR33.VAR38,
+0,
+VAR18);
+sprintf(VAR14->VAR31.VAR32.VAR33.VAR38,
+"",
+VAR15.VAR39,
+VAR15.VAR40);
+
+
+VAR9 = FUN10(VAR14,
+"",
+VAR41);
+
+if (VAR9)
+FUN2(VAR17,
+"",
+VAR21,
+VAR9);
+
+FUN11(VAR14);
+}
+
+FUN12(&VAR42);
+VAR16 = FUN13(VAR2)->VAR43;
+memset(VAR16, 0, VAR18);
+sprintf(VAR16, "", VAR12);
+FUN14(&VAR42);
+
+*VAR7 += VAR5;
+if (VAR11)
+VAR9 = VAR11;
+else
+VAR9 = VAR5;
+
+VAR20:
+FUN2(VAR17,
+"",
+VAR9);
+FUN15(VAR8);
+return VAR9;
+}

@@ -1,0 +1,24 @@
+static void FUN1(const struct VAR1 *VAR2)
+{
+const struct VAR3 *VAR4 = VAR2->VAR5;
+
+FUN2("", VAR4->VAR6);
+
+FUN3(&VAR7);
+
+if (--VAR4->VAR8->VAR9 == 0) {
+FUN2("", VAR4->VAR6);
+
+FUN4(&VAR4->VAR8->VAR10);
+FUN5(&VAR4->VAR8->VAR8);
+FUN6(&VAR4->VAR8->VAR11);
+FUN7(VAR12, &VAR4->VAR8->VAR13.VAR13);
+FUN8(VAR4->VAR8->VAR13.VAR13.VAR14);
+FUN8(VAR4->VAR8);
+} else {
+FUN2("",
+VAR4->VAR6, VAR4->VAR8->VAR9);
+}
+
+FUN9(&VAR7);
+}

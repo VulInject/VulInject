@@ -1,0 +1,17 @@
+int
+FUN1(void *VAR1)
+{
+struct VAR2	*VAR3 = VAR1;
+struct VAR4		*VAR5 = VAR3->VAR6;
+struct VAR7		*VAR8 = VAR3->VAR9;
+int			 VAR10;
+
+if (!(VAR8->VAR11 & VAR12))
+return (VAR13);
+
+FUN2(VAR8->VAR14, VAR15|VAR16);
+VAR10 = FUN3(VAR8->VAR14, VAR3->VAR17, VAR3->VAR18, VAR5);
+FUN4(VAR8->VAR14);
+
+return (VAR10);
+}

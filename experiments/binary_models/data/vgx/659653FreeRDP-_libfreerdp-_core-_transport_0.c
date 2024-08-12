@@ -1,0 +1,47 @@
+static VAR1 FUN1(VAR2* VAR3, int VAR4)
+{
+VAR5* VAR6 = NULL;
+VAR5* VAR7;
+const VAR8* VAR9;
+VAR10* VAR11 = FUN2(VAR3);
+
+if (VAR4 < 0)
+{
+FUN3(VAR12, "", VAR4);
+return VAR13;
+}
+
+VAR9 = VAR11->VAR9;
+FUN4(VAR9);
+
+if (VAR4 >= 0)
+{
+if (!FUN5(VAR9, VAR4))
+goto VAR14;
+
+VAR6 = FUN6(FUN7());
+
+if (!VAR6)
+goto VAR14;
+
+FUN8(VAR6, VAR4, VAR15);
+}
+
+VAR7 = FUN6(FUN9());
+if (!VAR7)
+goto VAR14;
+
+if (VAR6)
+VAR7 = FUN10(VAR7, VAR6);
+FUN4(VAR7);
+VAR3->VAR16 = VAR7;
+return VAR13;
+VAR14:
+
+if (VAR6)
+FUN11(VAR6);
+else
+FUN12(VAR4);
+
+return VAR17;
+}

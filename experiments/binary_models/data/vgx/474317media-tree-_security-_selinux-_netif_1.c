@@ -1,0 +1,1 @@
+static inline struct VAR1 * FUN1 ( const struct VAR2 * VAR3 , int VAR4 ) { int VAR5 = FUN2 ( VAR3 , VAR4 ) ; struct VAR1 * VAR6 ; FUN3 ( , , ) return NULL ; }

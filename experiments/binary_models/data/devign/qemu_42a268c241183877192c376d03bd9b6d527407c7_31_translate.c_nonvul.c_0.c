@@ -1,0 +1,8 @@
+static void FUN1(VAR1 *VAR2, TCGv VAR3, TCGv VAR4)
+{
+    VAR5 *VAR6 = FUN2();
+    FUN3(VAR7[VAR8], VAR4);
+    FUN4(VAR9, VAR10, 0, VAR6);
+    FUN3(VAR7[VAR8], VAR3);
+    FUN5(VAR6);
+}

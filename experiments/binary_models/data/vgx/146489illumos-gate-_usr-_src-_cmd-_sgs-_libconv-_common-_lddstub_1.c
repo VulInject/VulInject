@@ -1,0 +1,1 @@
+static int FUN1 ( char * VAR1 , const char * VAR2 ) { int VAR3 ; if ( FUN2 ( VAR4 , VAR5 , ( void * ) VAR1 ) == - 1 ) { return ( - 1 ) ; } if ( ( VAR3 = FUN3 ( VAR1 , VAR1 , ( VAR6 - 1 ) ) ) == - 1 ) { return ( - 1 ) ; } VAR1 [ VAR3 ] = '' ; if ( FUN4 ( VAR1 , VAR7 ) == - 1 ) { return ( - 1 ) ; } return ( 1 ) ; }

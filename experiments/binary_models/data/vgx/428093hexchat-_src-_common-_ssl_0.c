@@ -1,0 +1,14 @@
+FUN1 (VAR1 * VAR2)
+{
+const VAR3 *VAR4;
+
+
+VAR4 = FUN2 (VAR2);
+FUN3 (VAR5.VAR6, FUN4 (VAR4),
+sizeof (VAR5.VAR6));
+FUN3 (VAR5.VAR7, FUN5 (VAR4),
+sizeof (VAR5.VAR7));
+FUN6 (VAR4, &VAR5.VAR8);
+
+return (&VAR5);
+}

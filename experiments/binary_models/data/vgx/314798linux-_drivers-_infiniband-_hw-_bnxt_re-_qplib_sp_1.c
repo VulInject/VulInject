@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , VAR3 * VAR4 ) { struct VAR5 * VAR6 = VAR2 -> VAR6 ; struct cmdq_map_tc_to_cos VAR7 ; int VAR8 ; u16 VAR9 = 0 ; FUN2 ( VAR7 , VAR10 , VAR9 ) ; VAR7 . VAR11 = FUN3 ( VAR4 [ 0 ] ) ; VAR7 . VAR12 = FUN3 ( VAR4 [ 1 ] ) ; return FUN4 ( VAR6 , ( void * ) & VAR7 , ( void * ) & VAR8 , NULL , 0 ) ; }

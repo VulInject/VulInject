@@ -1,0 +1,1 @@
+void FUN1 ( ino_t VAR1 ) { struct inodesc VAR2 ; union VAR3 * VAR4 ; memset ( & VAR2 , 0 , sizeof ( VAR5 ) ) ; VAR2 . VAR6 = VAR7 ; VAR2 . VAR8 = VAR9 ; VAR2 . VAR10 = VAR1 ; VAR4 = FUN2 ( VAR1 ) ; ( void ) FUN3 ( VAR4 , & VAR2 ) ; FUN4 ( ) ; FUN5 ( VAR1 , VAR11 ) ; VAR12 -- ; }

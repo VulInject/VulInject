@@ -1,0 +1,1 @@
+static enum ata_completion_errors FUN1 ( struct VAR1 * VAR2 ) { FUN2 ( VAR2 ) ; return VAR3 ; }

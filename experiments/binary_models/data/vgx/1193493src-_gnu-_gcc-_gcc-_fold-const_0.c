@@ -1,0 +1,450 @@
+FUN1 (enum tree_code VAR1, tree VAR2, tree VAR3)
+{
+tree VAR4;
+tree VAR5;
+enum tree_code_class VAR6 = FUN2 (VAR1);
+
+FUN3 (FUN4 (VAR6)
+&& FUN5 (VAR1) == 1);
+
+VAR5 = VAR3;
+if (VAR5)
+{
+if (VAR1 == VAR7 || VAR1 == VAR8
+|| VAR1 == VAR9 || VAR1 == VAR10)
+{
+
+FUN6 (VAR5);
+}
+else
+{
+
+FUN7 (VAR5);
+}
+}
+
+if (FUN2 (VAR1) == VAR11)
+{
+if (FUN8 (VAR5) == VAR12)
+return FUN9 (VAR12, VAR2, FUN10 (VAR5, 0),
+FUN11 (VAR1, VAR2, FUN10 (VAR5, 1)));
+else if (FUN8 (VAR5) == VAR13)
+{
+tree VAR14 = FUN10 (VAR5, 1);
+tree VAR15 = FUN10 (VAR5, 2);
+if (! FUN12 (FUN13 (VAR14)))
+VAR14 = FUN11 (VAR1, VAR2, VAR14);
+if (! FUN12 (FUN13 (VAR15)))
+VAR15 = FUN11 (VAR1, VAR2, VAR15);
+VAR4 = FUN14 (VAR13, VAR2, FUN10 (VAR5, 0),
+VAR14, VAR15);
+
+
+
+if ((VAR1 == VAR7 || VAR1 == VAR8
+|| VAR1 == VAR16)
+&& FUN8 (VAR4) == VAR13
+&& FUN8 (FUN10 (VAR4, 1)) == VAR1
+&& FUN8 (FUN10 (VAR4, 2)) == VAR1
+&& ! FUN12 (FUN10 (VAR4, 1))
+&& ! FUN12 (FUN10 (VAR4, 2))
+&& (FUN13 (FUN10 (FUN10 (VAR4, 1), 0))
+== FUN13 (FUN10 (FUN10 (VAR4, 2), 0)))
+&& (! (FUN15 (FUN13 (VAR4))
+&& (VAR17
+(FUN13 (FUN10 (FUN10 (VAR4, 1), 0))))
+&& FUN16 (FUN13 (VAR4)) <= VAR18)
+|| VAR19))
+VAR4 = FUN17 (VAR1, VAR2,
+FUN18 (VAR13,
+FUN13 (VAR20
+(FUN10 (VAR4, 1), 0)),
+FUN10 (VAR4, 0),
+FUN10 (FUN10 (VAR4, 1), 0),
+FUN10 (FUN10 (VAR4, 2), 0)));
+return VAR4;
+}
+else if (FUN19 (VAR5))
+{
+if (FUN8 (VAR2) == VAR21)
+{
+VAR5 = FUN20 (VAR5);
+FUN13 (VAR5) = VAR2;
+return VAR5;
+}
+else if (FUN8 (VAR2) != VAR22)
+return FUN14 (VAR13, VAR2, VAR5,
+FUN11 (VAR1, VAR2,
+VAR23),
+FUN11 (VAR1, VAR2,
+VAR24));
+}
+}
+
+switch (VAR1)
+{
+case VAR7:
+case VAR9:
+case VAR8:
+case VAR25:
+case VAR26:
+case VAR27:
+case VAR28:
+if (FUN13 (VAR3) == VAR2)
+return VAR3;
+
+
+if (FUN19 (VAR3) && FUN15 (VAR2))
+return FUN21 (FUN8 (VAR3), VAR2, FUN10 (VAR3, 0),
+FUN10 (VAR3, 1));
+
+
+if (FUN8 (VAR3) == VAR7
+|| FUN8 (VAR3) == VAR8)
+{
+tree VAR29 = FUN13 (FUN10 (VAR3, 0));
+tree VAR30 = FUN13 (VAR3);
+int VAR31 = FUN15 (VAR29);
+int VAR32 = FUN22 (VAR29);
+int VAR33 = FUN23 (VAR29);
+int VAR34 = FUN8 (VAR29) == VAR35;
+unsigned int VAR36 = FUN16 (VAR29);
+int VAR37 = FUN24 (VAR29);
+int VAR38 = FUN15 (VAR30);
+int VAR39 = FUN22 (VAR30);
+int VAR40 = FUN23 (VAR30);
+int VAR41 = FUN8 (VAR30) == VAR35;
+unsigned int VAR42 = FUN16 (VAR30);
+int VAR43 = FUN24 (VAR30);
+int VAR44 = FUN15 (VAR2);
+int VAR45 = FUN22 (VAR2);
+int VAR46 = FUN23 (VAR2);
+int VAR47 = FUN8 (VAR2) == VAR35;
+unsigned int VAR48 = FUN16 (VAR2);
+int VAR49 = FUN24 (VAR2);
+
+
+if (FUN25 (VAR29) == FUN25 (VAR2)
+&& (((VAR38 || VAR39) && VAR44)
+|| (VAR40 && VAR46))
+&& VAR42 >= VAR48)
+return FUN11 (VAR1, VAR2, FUN10 (VAR3, 0));
+
+
+if ((((VAR38 || VAR39) && (VAR31 || VAR32))
+|| (VAR40 && VAR33)
+|| (VAR41 && VAR34))
+&& VAR42 >= VAR36
+&& (VAR40 || VAR41
+|| VAR43 == VAR37)
+&& ! (VAR48 != FUN26 (FUN27 (VAR2))
+&& FUN27 (VAR2) == FUN27 (VAR30))
+&& ! VAR45
+&& (! VAR47 || VAR42 == VAR36))
+return FUN11 (VAR1, VAR2, FUN10 (VAR3, 0));
+
+
+if (VAR31 && VAR38 && VAR44
+&& VAR36 < VAR42 && VAR42 < VAR48
+&& VAR37 && !VAR43)
+return FUN11 (VAR1, VAR2, FUN10 (VAR3, 0));
+
+
+
+if (! VAR33 && ! VAR40 && ! VAR46
+&& ! VAR34 && ! VAR41 && ! VAR47
+&& (VAR42 >= VAR36 || VAR42 >= VAR48)
+&& ! (VAR31 && VAR38
+&& VAR43 != VAR37
+&& VAR42 < VAR48)
+&& ((VAR43 && VAR42 > VAR36)
+== (VAR49 && VAR48 > VAR42))
+&& ! (VAR32 && VAR42 != VAR48)
+&& ! (VAR45 && VAR36 != VAR42)
+&& ! (VAR48 != FUN26 (FUN27 (VAR2))
+&& FUN27 (VAR2) == FUN27 (VAR30))
+&& VAR45 == VAR32
+&& ! (VAR32
+&& FUN8 (FUN13 (VAR29)) == VAR50
+&& FUN8 (FUN13 (VAR2)) != VAR50)
+&& ! ((strcmp (VAR51.VAR52, "") == 0)
+&& VAR45))
+return FUN11 (VAR1, VAR2, FUN10 (VAR3, 0));
+}
+
+
+if (FUN8 (VAR3) == VAR53
+&& FUN22 (VAR2)
+&& FUN28 (FUN10 (VAR3, 0)))
+{
+HOST_WIDE_INT VAR54, VAR55;
+tree VAR56;
+enum machine_mode VAR57;
+int VAR58, VAR59;
+tree VAR60 = FUN10 (VAR3, 0);
+VAR60 = FUN29 (VAR60, &VAR54, &VAR55, &VAR56,
+&VAR57, &VAR58, &VAR59, false);
+
+if (! VAR56 && VAR55 == 0
+&& FUN25 (FUN13 (VAR2))
+== FUN25 (FUN13 (VAR60)))
+return FUN30 (VAR2, FUN31 (VAR60));
+}
+
+if (FUN8 (VAR3) == VAR61
+&& FUN32 (FUN10 (VAR3, 1))
+
+&& !(FUN8 (FUN10 (VAR3, 0)) == VAR62
+&& FUN33 (FUN10 (FUN10 (VAR3, 0), 1))))
+{
+
+VAR4 = FUN11 (VAR1, VAR2, FUN10 (VAR3, 1));
+
+VAR4 = FUN9 (VAR12, FUN13 (VAR4), VAR3, VAR4);
+FUN34 (VAR4) = 1;
+FUN35 (VAR4) = 1;
+return VAR4;
+}
+
+
+if (FUN15 (VAR2)
+&& FUN8 (VAR2) != VAR21
+&& FUN8 (VAR3) == VAR63
+&& FUN8 (FUN10 (VAR3, 1)) == VAR64)
+{
+tree and = VAR3;
+tree VAR65 = FUN10 (and, 0), VAR66 = FUN10 (and, 1);
+int VAR67 = 0;
+
+if (FUN24 (FUN13 (and))
+|| (FUN16 (VAR2)
+<= FUN16 (FUN13 (and))))
+VAR67 = 1;
+else if (FUN16 (FUN13 (VAR66))
+<= VAR68
+&& FUN36 (VAR66, 1))
+{
+unsigned HOST_WIDE_INT VAR69;
+
+VAR69 = FUN37 (VAR66, 1);
+VAR69 &= (VAR70) -1
+<< (FUN16 (FUN13 (VAR66)) - 1);
+VAR67 = (VAR69 == 0);
+if (VAR67
+&& !VAR19
+&& (FUN38 (FUN27 (FUN13 (VAR65)))
+== VAR71))
+{
+tree VAR72 = VAR51.VAR73.FUN39 (FUN13 (VAR65));
+VAR65 = FUN30 (VAR72, VAR65);
+VAR66 = FUN30 (VAR72, VAR66);
+}
+}
+if (VAR67)
+{
+VAR4 = FUN40 (VAR2, FUN41 (VAR66),
+FUN42 (VAR66));
+VAR4 = FUN43 (VAR4, 0, FUN44 (VAR66),
+FUN45 (VAR66));
+return FUN21 (VAR63, VAR2,
+FUN30 (VAR2, VAR65), VAR4);
+}
+}
+
+
+if (FUN22 (VAR2)
+&& FUN46 (VAR5)
+&& FUN8 (FUN10 (VAR5, 0)) == VAR7
+&& FUN22 (FUN13 (FUN10 (VAR5, 0))))
+{
+tree VAR74 = FUN10 (VAR5, 0);
+tree VAR75 = VAR2;
+tree VAR76 = FUN13 (VAR74);
+tree VAR77 = FUN13 (VAR75);
+tree VAR78 = FUN13 (VAR76);
+tree VAR79 = FUN47 (VAR77);
+tree VAR80 = FUN47 (VAR78);
+
+if (VAR79 && VAR80 && FUN48 (VAR79, VAR80, VAR81))
+return FUN9 (FUN8 (VAR5), VAR75, FUN30 (VAR75, VAR74),
+FUN10 (VAR5, 1));
+}
+
+
+if (FUN15 (VAR2)
+&& FUN8 (VAR3) == VAR82
+&& FUN15 (FUN13 (VAR3))
+&& (FUN8 (FUN10 (VAR3, 0)) == VAR7
+|| FUN8 (FUN10 (VAR3, 0)) == VAR8)
+&& FUN16 (VAR2) == FUN16 (FUN13 (VAR3)))
+{
+VAR4 = FUN10 (FUN10 (VAR3, 0), 0);
+if (FUN15 (FUN13 (VAR4))
+&& FUN16 (VAR2) <= FUN16 (FUN13 (VAR4)))
+return FUN11 (VAR82, VAR2, FUN30 (VAR2, VAR4));
+}
+
+VAR4 = FUN49 (VAR1, VAR2, VAR3);
+return VAR4 ? VAR4 : VAR83;
+
+case VAR84:
+if (FUN8 (VAR3) == VAR84)
+return FUN11 (VAR84, VAR2, FUN10 (VAR3, 0));
+return FUN50 (VAR2, VAR3);
+
+case VAR85:
+VAR4 = FUN51 (VAR5);
+if (VAR4)
+return FUN30 (VAR2, VAR4);
+return VAR83;
+
+case VAR10:
+if (FUN8 (VAR5) == VAR64 || FUN8 (VAR5) == VAR86)
+return FUN52 (VAR5, VAR2);
+else if (FUN8 (VAR5) == VAR85)
+return FUN11 (VAR10, VAR2, FUN10 (VAR5, 0));
+
+else if (FUN8 (VAR5) == VAR7
+&& FUN8 (VAR2) == VAR87)
+{
+tree VAR88 = FUN53 (VAR5);
+if (VAR88 != VAR5)
+return FUN30 (VAR2, FUN11 (VAR10,
+FUN13 (VAR88),
+VAR88));
+}
+
+else if (FUN8 (VAR5) == VAR10)
+return VAR5;
+else if (FUN54 (VAR5))
+return VAR5;
+
+
+if (FUN8 (VAR2) == VAR87)
+{
+VAR4 = FUN55 (VAR5);
+if (VAR4)
+return FUN11 (VAR10, VAR2, FUN30 (VAR2, VAR4));
+}
+return VAR83;
+
+case VAR89:
+if (FUN8 (FUN13 (VAR5)) != VAR90)
+return FUN30 (VAR2, VAR5);
+if (FUN8 (VAR5) == VAR91)
+{
+tree VAR92 = FUN13 (VAR2);
+tree VAR93 = FUN30 (VAR92, FUN10 (VAR5, 0));
+tree VAR94 = FUN30 (VAR92, FUN10 (VAR5, 1));
+return FUN21 (VAR91, VAR2, VAR93, FUN56 (VAR94));
+}
+if (FUN8 (VAR5) == VAR95)
+{
+tree VAR92 = FUN13 (VAR2);
+tree VAR93 = FUN30 (VAR92, FUN57 (VAR5));
+tree VAR94 = FUN30 (VAR92, FUN58 (VAR5));
+return FUN59 (VAR2, VAR93, FUN56 (VAR94));
+}
+if (FUN8 (VAR5) == VAR89)
+return FUN30 (VAR2, FUN10 (VAR5, 0));
+return VAR83;
+
+case VAR82:
+if (FUN8 (VAR5) == VAR64)
+return FUN60 (VAR5, VAR2);
+else if (FUN8 (VAR5) == VAR82)
+return FUN10 (VAR5, 0);
+
+else if (FUN15 (VAR2) && FUN8 (VAR5) == VAR85)
+return FUN21 (VAR96, VAR2, FUN10 (VAR5, 0),
+FUN61 (VAR2, 1));
+
+else if (FUN15 (VAR2)
+&& ((FUN8 (VAR5) == VAR96
+&& FUN62 (FUN10 (VAR5, 1)))
+|| (FUN8 (VAR5) == VAR97
+&& FUN63 (FUN10 (VAR5, 1)))))
+return FUN11 (VAR85, VAR2, FUN10 (VAR5, 0));
+
+else if (FUN8 (VAR5) == VAR98
+&& (VAR4 = FUN1 (VAR82, VAR2,
+FUN30 (VAR2,
+FUN10 (VAR5, 0)))))
+return FUN21 (VAR98, VAR2, VAR4,
+FUN30 (VAR2, FUN10 (VAR5, 1)));
+else if (FUN8 (VAR5) == VAR98
+&& (VAR4 = FUN1 (VAR82, VAR2,
+FUN30 (VAR2,
+FUN10 (VAR5, 1)))))
+return FUN21 (VAR98, VAR2,
+FUN30 (VAR2, FUN10 (VAR5, 0)), VAR4);
+
+return VAR83;
+
+case VAR99:
+
+if (FUN8 (FUN13 (VAR5)) != VAR21)
+VAR5 = FUN30 (VAR100, VAR5);
+
+
+VAR4 = FUN64 (VAR5);
+if (!VAR4)
+return VAR83;
+return FUN30 (VAR2, VAR4);
+
+case VAR101:
+if (FUN8 (FUN13 (VAR5)) != VAR90)
+return FUN30 (VAR2, VAR5);
+if (FUN8 (VAR5) == VAR91)
+return FUN65 (VAR2, FUN10 (VAR5, 0),
+FUN10 (VAR5, 1));
+if (FUN8 (VAR5) == VAR95)
+return FUN30 (VAR2, FUN57 (VAR5));
+if (FUN8 (VAR5) == VAR97 || FUN8 (VAR5) == VAR96)
+{
+tree VAR92 = FUN13 (FUN13 (VAR5));
+VAR4 = FUN21 (FUN8 (VAR5), VAR92,
+FUN11 (VAR101, VAR92,
+FUN10 (VAR5, 0)),
+FUN11 (VAR101, VAR92,
+FUN10 (VAR5, 1)));
+return FUN30 (VAR2, VAR4);
+}
+if (FUN8 (VAR5) == VAR89)
+{
+tree VAR92 = FUN13 (FUN13 (VAR5));
+VAR4 = FUN11 (VAR101, VAR92, FUN10 (VAR5, 0));
+return FUN30 (VAR2, VAR4);
+}
+return VAR83;
+
+case VAR102:
+if (FUN8 (FUN13 (VAR5)) != VAR90)
+return FUN30 (VAR2, VAR24);
+if (FUN8 (VAR5) == VAR91)
+return FUN65 (VAR2, FUN10 (VAR5, 1),
+FUN10 (VAR5, 0));
+if (FUN8 (VAR5) == VAR95)
+return FUN30 (VAR2, FUN58 (VAR5));
+if (FUN8 (VAR5) == VAR97 || FUN8 (VAR5) == VAR96)
+{
+tree VAR92 = FUN13 (FUN13 (VAR5));
+VAR4 = FUN21 (FUN8 (VAR5), VAR92,
+FUN11 (VAR102, VAR92,
+FUN10 (VAR5, 0)),
+FUN11 (VAR102, VAR92,
+FUN10 (VAR5, 1)));
+return FUN30 (VAR2, VAR4);
+}
+if (FUN8 (VAR5) == VAR89)
+{
+tree VAR92 = FUN13 (FUN13 (VAR5));
+VAR4 = FUN11 (VAR102, VAR92, FUN10 (VAR5, 0));
+return FUN30 (VAR2, FUN56 (VAR4));
+}
+return VAR83;
+
+default:
+return VAR83;
+} 
+}

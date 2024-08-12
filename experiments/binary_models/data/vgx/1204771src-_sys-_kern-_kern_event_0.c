@@ -1,0 +1,35 @@
+void
+FUN1(struct VAR1 *VAR2, const char *VAR3, int VAR4)
+{
+struct VAR5 *VAR6;
+int VAR7 = 0, VAR8 = 0;
+
+FUN2(&VAR2->VAR9);
+
+FUN3(VAR6, &VAR2->VAR10, VAR11) {
+if (VAR6->VAR12 == VAR13) {
+if ((VAR6->VAR14 & VAR15) != 0)
+FUN4("",
+VAR3, VAR4, VAR2, VAR6);
+VAR8++;
+} else {
+if ((VAR6->VAR14 & VAR16) == 0)
+FUN4("",
+VAR3, VAR4, VAR2, VAR6);
+if ((VAR6->VAR14 & VAR15) == 0)
+FUN4("",
+VAR3, VAR4, VAR2, VAR6);
+if (VAR6->VAR17 != VAR2)
+FUN4("",
+VAR3, VAR4, VAR2, VAR6, VAR6->VAR17);
+VAR7++;
+if (VAR7 > VAR2->VAR18)
+goto VAR19;
+}
+}
+if (VAR7 != VAR2->VAR18) {
+VAR19:
+FUN4("",
+VAR3, VAR4, VAR2, VAR2->VAR18, VAR7, VAR8);
+}
+}

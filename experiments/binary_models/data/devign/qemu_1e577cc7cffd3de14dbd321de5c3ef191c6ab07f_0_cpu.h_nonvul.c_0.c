@@ -1,0 +1,12 @@
+void FUN1(VAR1 *VAR2, VAR3 *VAR4, fprintf_function VAR5, int VAR6);
+VAR7 FUN2(VAR1 *VAR8, vaddr VAR9, VAR10 *VAR11);
+int FUN3(VAR1 *VAR8, VAR12 *VAR13, int VAR14);
+int FUN4(VAR1 *VAR8, VAR12 *VAR13, int VAR14);
+int FUN5(WriteCoreDumpFunction VAR4, VAR1 *VAR2, int VAR15, void *VAR16);
+int FUN6(WriteCoreDumpFunction VAR4, VAR1 *VAR2, int VAR15, void *VAR16);
+int FUN7(VAR1 *VAR8, VAR12 *VAR13, int VAR14);
+int FUN8(VAR1 *VAR8, VAR12 *VAR13, int VAR14);
+VAR17 FUN9(VAR18 *VAR19);
+void FUN10(VAR18 *VAR19);
+void FUN11(VAR18 *VAR19);
+static inline bool FUN12(VAR18 *VAR19) { return VAR19->VAR20; }

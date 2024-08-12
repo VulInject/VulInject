@@ -1,0 +1,58 @@
+static VAR1 FUN1(VAR2 *VAR3, const VAR4 *VAR5)
+{
+u32 VAR6;
+GF_FilterEvent VAR7;
+VAR8 *VAR9 = FUN2(VAR3);
+
+switch (VAR5->VAR10.VAR11) {
+case VAR12:
+if (!VAR9->VAR13) {
+VAR9->VAR13 = VAR14;
+VAR9->VAR15 = 0;
+}
+if (! VAR9->VAR16) {
+return VAR17;
+}
+VAR9->VAR18 = VAR5->VAR19.VAR18;
+VAR9->VAR20 = VAR14;
+VAR9->VAR21 = 0;
+if (VAR9->VAR18) {
+for (VAR6=1; VAR6<VAR9->VAR22; VAR6++) {
+if (VAR9->VAR23[VAR6].VAR24>VAR9->VAR18) {
+VAR9->VAR15 = (VAR25) (VAR9->VAR23[VAR6-1].VAR24 * VAR9->VAR26);
+VAR9->VAR21 = VAR9->VAR23[VAR6-1].VAR27;
+break;
+}
+}
+}
+if (!VAR9->VAR28) {
+VAR9->VAR28 = VAR14;
+
+if (!VAR9->VAR21)
+return VAR14;
+}
+VAR9->VAR29 = 0;
+VAR9->VAR30 = 0;
+
+FUN3(VAR7, VAR31, VAR9->VAR32);
+VAR7.VAR33.VAR34 = VAR9->VAR21;
+FUN4(VAR9->VAR32, &VAR7);
+
+
+return VAR14;
+
+case VAR35:
+
+VAR9->VAR13 = VAR17;
+VAR9->VAR15 = 0;
+return VAR17;
+
+case VAR36:
+
+return VAR14;
+default:
+break;
+}
+
+return VAR17;
+}

@@ -1,0 +1,35 @@
+static int FUN1(VAR1 *VAR2, VAR1 *VAR3)
+{
+    int VAR4 = VAR2->VAR5 * (2 * VAR2->VAR6 + 1);
+    int VAR7 = VAR2->VAR8 * (VAR2->VAR6 + 1);
+    int VAR9 = VAR4 + 2 * VAR7;
+    int VAR10;
+    FUN2(VAR2->VAR11, VAR2->VAR12, (VAR2->VAR13 + 64) * 2 * 21 * 2, VAR14);
+    VAR2->VAR15 = VAR2->VAR12 + (VAR2->VAR13 + 64) * 2 * 21;
+    FUN2(VAR2->VAR11, VAR2->VAR16.VAR17, (VAR2->VAR13 + 64) * 4 * 16 * 2 * sizeof(VAR18), VAR14)
+    VAR2->VAR16.VAR19 = VAR2->VAR16.VAR17;
+    VAR2->VAR20 = VAR2->VAR16.VAR17;
+    VAR2->VAR21 = VAR2->VAR16.VAR17;
+    VAR2->VAR22 = VAR2->VAR16.VAR17 + 16;
+    if (VAR2->VAR23)
+    {
+        FUN2(VAR2->VAR11, VAR2->VAR16.VAR24, VAR25 * sizeof(VAR26), VAR14)
+        FUN2(VAR2->VAR11, VAR2->VAR16.VAR27, VAR25 * sizeof(VAR26), VAR14) if (VAR2->VAR11->VAR28) { FUN2(VAR2->VAR11, VAR2->VAR29, 2 * 64 * sizeof(int), VAR14) }
+    }
+    FUN2(VAR2->VAR11, VAR2->VAR30, 64 * 12 * 2 * sizeof(VAR31), VAR14)
+    VAR2->VAR32 = VAR2->VAR30[0];
+    for (VAR10 = 0; VAR10 < 12; VAR10++)
+    {
+        VAR2->VAR33[VAR10] = &VAR2->VAR32[VAR10];
+    }
+    if (VAR2->VAR34 == VAR35)
+    {
+        FUN2(VAR2->VAR11, VAR2->VAR36, VAR9 * sizeof(VAR37) * 16, VAR14);
+        VAR2->VAR38[0] = VAR2->VAR36 + VAR2->VAR5 + 1;
+        VAR2->VAR38[1] = VAR2->VAR36 + VAR4 + VAR2->VAR8 + 1;
+        VAR2->VAR38[2] = VAR2->VAR38[1] + VAR7;
+    }
+    return 0;
+VAR14:
+    return -1;
+}

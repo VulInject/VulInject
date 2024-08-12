@@ -1,0 +1,24 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+int VAR5;
+
+FUN2(FUN3("", &VAR4));
+
+
+VAR5 = FUN4(VAR4, VAR6);
+FUN5(VAR5, 0x422100);
+
+
+VAR5 = 0;
+FUN2(FUN6(VAR4, VAR7, VAR5));
+FUN2(FUN6(VAR4, VAR7, VAR8));
+VAR5 = FUN4(VAR4, VAR7);
+FUN5(VAR5, VAR8);
+
+FUN7(VAR4, VAR6, 0x3 << 8, 1 << 9);
+VAR5 = FUN4(VAR4, VAR6);
+FUN5(VAR5, (0x422100 & ~(0x3 << 8)) | (1 << 9));
+
+return 0;
+}

@@ -1,0 +1,1 @@
+bool FUN1 ( const char * VAR1 ) { const char * VAR2 ; if ( FUN2 ( VAR1 ) ) { return false ; } VAR2 = FUN3 ( VAR1 , "" ) ; if ( FUN2 ( VAR2 ) ) { return false ; } if ( ! FUN4 ( VAR2 , VAR3 "" ) ) { return false ; } return true ; }

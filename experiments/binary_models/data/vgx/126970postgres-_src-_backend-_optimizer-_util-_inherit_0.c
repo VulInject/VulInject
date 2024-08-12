@@ -1,0 +1,40 @@
+static VAR1 *
+FUN1(const VAR1 *VAR2,
+VAR3 *VAR4)
+{
+VAR1  *VAR5 = NULL;
+bool		VAR6;
+int			VAR7;
+VAR8   *VAR9;
+
+
+for (VAR7 = VAR10 + 1; VAR7 < 0; VAR7++)
+{
+if (FUN2(VAR7 - VAR10,
+VAR2))
+VAR5 = FUN3(VAR5,
+VAR7 - VAR10);
+}
+
+
+VAR6 = FUN2(VAR11 - VAR10,
+VAR2);
+
+
+VAR7 = VAR11;
+FUN4(VAR9, VAR4)
+{
+VAR12		   *VAR13 = FUN5(VAR12, VAR9);
+
+VAR7++;
+if (VAR13 == NULL)		
+continue;
+if (VAR6 ||
+FUN2(VAR7 - VAR10,
+VAR2))
+VAR5 = FUN3(VAR5,
+VAR13->VAR14 - VAR10);
+}
+
+return VAR5;
+}

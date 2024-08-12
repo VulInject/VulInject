@@ -1,0 +1,1 @@
+void FUN1 ( u32 VAR1 , VAR2 * VAR3 , VAR2 * VAR4 , VAR2 * VAR5 , VAR2 * VAR6 , u32 VAR7 ) { FUN2 ( VAR4 ) ; FUN3 ( VAR3 ) ; FUN4 ( VAR7 , ( VAR8 * ) VAR5 , ( VAR8 * ) VAR6 ) ; }

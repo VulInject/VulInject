@@ -1,0 +1,109 @@
+FUN1 (struct VAR1 *VAR2, struct VAR3 *VAR4,
+int *VAR5, enum noside VAR6)
+{
+int VAR7 = *VAR5;
+int VAR8;
+char *VAR9;
+enum exp_opcode VAR10 = VAR4->VAR11[*VAR5].VAR12;
+struct VAR13 *VAR14;
+struct VAR13 *VAR15;
+struct VAR1 *VAR1;
+switch (VAR10)
+{
+case VAR16:
+if (VAR6 == VAR17)
+goto VAR18;
+(*VAR5)++;
+VAR14 = FUN1 (VAR19, VAR4, VAR5, VAR20);
+if (FUN2 (FUN3 (VAR14)))
+{
+struct VAR1 *VAR1;
+
+VAR1 = FUN4 (FUN5 (VAR14));
+VAR14 = FUN6 (FUN7 (VAR1), VAR14);
+}
+if (VAR6 == VAR17)
+goto VAR21;
+return FUN8 (VAR14);
+
+case VAR22:
+(*VAR5)++;
+VAR14 = FUN9 (VAR4, VAR5, VAR6);
+VAR15 = FUN9 (VAR4, VAR5, VAR6);
+if (VAR6 == VAR17)
+goto VAR21;
+
+
+FUN10 (VAR14);
+VAR1 = FUN11 (FUN3 (VAR14));
+if (FUN12 (VAR1) == VAR23)
+VAR1 = FUN11 (FUN13 (VAR1));
+VAR9 = FUN14 (VAR1);
+if (VAR9 == NULL)
+VAR9 = FUN15 (VAR1);
+VAR8 = VAR9 == NULL ? 0 : strlen (VAR9);
+if (FUN12 (VAR1) == VAR24
+&& VAR8 > 2 && VAR9[VAR8 - 1] == '')
+{
+CORE_ADDR VAR25;
+long VAR26, VAR27;
+struct VAR1 *VAR28;
+char VAR29[4];
+
+struct VAR13 *VAR30 = FUN5 (VAR14);
+struct VAR13 *VAR31 = VAR30;
+
+VAR31 = FUN16 (&VAR31, NULL, "",
+NULL, "");
+FUN3 (VAR31) = FUN3 (VAR30);
+VAR28 = FUN4 (VAR31);
+if (FUN12 (VAR28) == VAR24)
+VAR28 = FUN7 (VAR28);
+
+if (VAR6 == VAR32)
+return FUN17 (VAR28, FUN18 (VAR14));
+VAR25 = FUN19 (VAR14);
+VAR25 += VAR33;
+FUN20 (VAR25, VAR29, 4);
+VAR26 = (long) FUN21 (VAR29, 4);
+VAR27 = (long) FUN22 (VAR15);
+if (VAR27 >= VAR26 || VAR27 < 0)
+FUN23 ("",
+VAR27, VAR26);
+VAR25 = (VAR25 + 4) + VAR27 * FUN24 (VAR28);
+return FUN25 (VAR28, VAR25, NULL);
+}
+else if (FUN12 (VAR1) == VAR34)
+{
+if (VAR6 == VAR32)
+return FUN17 (FUN13 (VAR1), FUN18 (VAR14));
+else
+return FUN26 (VAR14, VAR15);
+}
+if (VAR9)
+FUN23 ("", VAR9);
+else
+FUN23 ("");
+
+case VAR35:
+(*VAR5)++;
+VAR8 = FUN27 (VAR4->VAR11[VAR7 + 1].VAR36);
+(*VAR5) += 3 + FUN28 (VAR8 + 1);
+if (VAR6 == VAR17)
+goto VAR21;
+return FUN29 (&VAR4->VAR11[VAR7 + 2].VAR37, VAR8);
+
+case VAR38:
+VAR14 = FUN30 (VAR2, VAR4, VAR5, VAR6);
+
+if (FUN12 (FUN3 (VAR14)) == VAR24)
+VAR14 = FUN31 (VAR14);
+return VAR14;
+default:
+break;
+}
+VAR18:
+return FUN30 (VAR2, VAR4, VAR5, VAR6);
+VAR21:
+return FUN32 (VAR39, (VAR40) 1);
+}

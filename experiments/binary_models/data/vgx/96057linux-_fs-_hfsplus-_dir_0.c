@@ -1,0 +1,154 @@
+static int FUN1(struct VAR1 *VAR1, struct VAR2 *VAR3)
+{
+struct VAR4 *VAR4 = FUN2(VAR1);
+struct VAR5 *VAR6 = VAR4->VAR7;
+int VAR8, VAR9;
+char *VAR10;
+hfsplus_cat_entry VAR11;
+struct hfs_find_data VAR12;
+struct VAR13 *VAR14;
+u16 VAR15;
+
+if (VAR1->VAR16 >= VAR4->VAR17)
+return 0;
+
+VAR9 = FUN3(FUN4(VAR6)->VAR18, &VAR12);
+if (VAR9)
+return VAR9;
+VAR10 = FUN5(VAR19 * VAR20 + 1, VAR21);
+if (!VAR10) {
+VAR9 = -VAR22;
+goto VAR23;
+}
+FUN6(VAR6, VAR12.VAR24, VAR4->VAR25);
+VAR9 = FUN7(&VAR12, VAR26);
+if (VAR9)
+goto VAR23;
+
+if (VAR3->VAR27 == 0) {
+
+if (!FUN8(VAR1, VAR3))
+goto VAR23;
+VAR3->VAR27 = 1;
+}
+if (VAR3->VAR27 == 1) {
+if (VAR12.VAR28 > sizeof(VAR11) || VAR12.VAR28 < 0) {
+VAR9 = -VAR29;
+goto VAR23;
+}
+
+FUN9(VAR12.VAR30, &VAR11, VAR12.VAR31,
+VAR12.VAR28);
+if (FUN10(VAR11.VAR15) != VAR32) {
+FUN11("");
+VAR9 = -VAR29;
+goto VAR23;
+}
+if (VAR12.VAR28 < VAR33) {
+FUN11("");
+VAR9 = -VAR29;
+goto VAR23;
+}
+if (!FUN12(VAR3, "", 2,
+FUN13(VAR11.VAR34.VAR35), VAR36))
+goto VAR23;
+VAR3->VAR27 = 2;
+}
+if (VAR3->VAR27 >= VAR4->VAR17)
+goto VAR23;
+VAR9 = FUN14(&VAR12, VAR3->VAR27 - 1);
+if (VAR9)
+goto VAR23;
+for (;;) {
+if (FUN13(VAR12.VAR37->VAR38.VAR39) != VAR4->VAR25) {
+FUN11("");
+VAR9 = -VAR29;
+goto VAR23;
+}
+
+if (VAR12.VAR28 > sizeof(VAR11) || VAR12.VAR28 < 0) {
+VAR9 = -VAR29;
+goto VAR23;
+}
+
+FUN9(VAR12.VAR30, &VAR11, VAR12.VAR31,
+VAR12.VAR28);
+VAR15 = FUN10(VAR11.VAR15);
+VAR8 = VAR19 * VAR20;
+VAR9 = FUN15(VAR6, &VAR12.VAR37->VAR38.VAR40, VAR10, &VAR8);
+if (VAR9)
+goto VAR23;
+if (VAR15 == VAR41) {
+if (VAR12.VAR28 <
+sizeof(struct VAR42)) {
+FUN11("");
+VAR9 = -VAR29;
+goto VAR23;
+}
+if (FUN4(VAR6)->VAR43 &&
+FUN4(VAR6)->VAR43->VAR25 ==
+FUN13(VAR11.VAR44.VAR45))
+goto VAR46;
+if (!FUN12(VAR3, VAR10, VAR8,
+FUN13(VAR11.VAR44.VAR45), VAR36))
+break;
+} else if (VAR15 == VAR47) {
+u16 VAR48;
+unsigned VAR15 = VAR49;
+
+if (VAR12.VAR28 < sizeof(struct VAR50)) {
+FUN11("");
+VAR9 = -VAR29;
+goto VAR23;
+}
+
+VAR48 = FUN10(VAR11.VAR1.VAR51.VAR48);
+if (FUN16(VAR48))
+VAR15 = VAR52;
+else if (FUN17(VAR48))
+VAR15 = VAR53;
+else if (FUN18(VAR48))
+VAR15 = VAR54;
+else if (FUN19(VAR48))
+VAR15 = VAR55;
+else if (FUN20(VAR48))
+VAR15 = VAR56;
+else if (FUN21(VAR48))
+VAR15 = VAR57;
+
+if (!FUN12(VAR3, VAR10, VAR8,
+FUN13(VAR11.VAR1.VAR45), VAR15))
+break;
+} else {
+FUN11("");
+VAR9 = -VAR29;
+goto VAR23;
+}
+VAR46:
+VAR3->VAR27++;
+if (VAR3->VAR27 >= VAR4->VAR17)
+goto VAR23;
+VAR9 = FUN14(&VAR12, 1);
+if (VAR9)
+goto VAR23;
+}
+VAR14 = VAR1->VAR58;
+if (!VAR14) {
+VAR14 = FUN5(sizeof(struct VAR13), VAR21);
+if (!VAR14) {
+VAR9 = -VAR22;
+goto VAR23;
+}
+VAR1->VAR58 = VAR14;
+VAR14->VAR1 = VAR1;
+FUN22(&FUN23(VAR4)->VAR59);
+FUN24(&VAR14->VAR60, &FUN23(VAR4)->VAR61);
+FUN25(&FUN23(VAR4)->VAR59);
+}
+
+memcpy(&VAR14->VAR37, VAR12.VAR37, sizeof(struct VAR62));
+VAR23:
+FUN26(VAR10);
+FUN27(&VAR12);
+return VAR9;
+}

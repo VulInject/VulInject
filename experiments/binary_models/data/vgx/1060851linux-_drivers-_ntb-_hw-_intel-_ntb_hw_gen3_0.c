@@ -1,0 +1,30 @@
+int FUN1(struct VAR1 *VAR2, VAR3 *VAR4,
+VAR5 *VAR6,
+VAR7 *VAR8, int VAR9)
+{
+phys_addr_t VAR10;
+struct VAR11 *VAR12 = FUN2(VAR2);
+
+if (FUN3(VAR9 >= VAR13))
+return -VAR14;
+
+if (FUN3(FUN4(VAR9) & ~FUN2(VAR2)->VAR15))
+return -VAR14;
+
+FUN5(VAR12, &VAR10, VAR6, VAR12->VAR16,
+VAR12->VAR17->VAR18);
+
+if (VAR4) {
+*VAR4 = VAR10 + (VAR9 * 4);
+FUN6(&VAR12->VAR2.VAR19->VAR20, "",
+*VAR4, VAR9);
+}
+
+if (VAR8) {
+*VAR8 = 1;
+FUN6(&VAR12->VAR2.VAR19->VAR20, "",
+*VAR8, VAR9);
+}
+
+return 0;
+}

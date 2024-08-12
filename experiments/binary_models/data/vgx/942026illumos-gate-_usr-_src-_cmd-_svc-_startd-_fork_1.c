@@ -1,0 +1,1 @@
+static struct VAR1 * VAR2 ; pid_t FUN1 ( int * VAR3 ) { pid_t VAR4 ; FUN2 ( ) ; FUN3 ( ) ; VAR4 = FUN4 ( ) ; if ( VAR4 == - 1 && VAR3 != NULL ) { * VAR3 = VAR5 ; } FUN5 ( ) ; FUN6 ( VAR4 , NULL ) ; return ( VAR4 ) ; }

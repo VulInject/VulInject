@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , unsigned int VAR3 , unsigned int VAR4 ) { static const char VAR5 [ ] "" ; ; if ( ( ( VAR3 == 0 ) && ( VAR4 == 0 ) ) || ( ( VAR3 == 1 ) && ( VAR4 == 0 ) ) ) { memcpy ( VAR2 , & VAR6 , sizeof ( VAR1 ) ) ; memcpy ( VAR2 -> VAR7 , VAR5 , sizeof ( VAR5 ) - 1 ) ; } return 0 ; }

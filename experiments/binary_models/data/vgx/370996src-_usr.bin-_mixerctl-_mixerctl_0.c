@@ -1,0 +1,77 @@
+void
+FUN1(int VAR1, struct VAR2 *VAR3, char *VAR4, int VAR5, char *VAR6)
+{
+VAR7 *VAR8, VAR9;
+int VAR10, VAR11;
+char *VAR12;
+
+VAR9 = *VAR3->VAR13;
+VAR8 = VAR3->VAR13;
+
+switch (VAR8->VAR14) {
+case VAR15:
+if (strcmp(VAR4, "") == 0) {
+for (VAR10 = 0; VAR10 < VAR3->VAR16->VAR17.VAR18.VAR19; VAR10++) {
+if (VAR8->VAR17.VAR20 == VAR3->VAR16->VAR17.VAR18.VAR21[VAR10].VAR20)
+break;
+}
+if (VAR10 < VAR3->VAR16->VAR17.VAR18.VAR19)
+VAR10++;
+else
+VAR10 = 0;
+VAR8->VAR17.VAR20 = VAR3->VAR16->VAR17.VAR18.VAR21[VAR10].VAR20;
+break;
+}
+for (VAR10 = 0; VAR10 < VAR3->VAR16->VAR17.VAR18.VAR19; VAR10++)
+if (strcmp(VAR3->VAR16->VAR22, VAR4) == 0)
+break;
+if (VAR10 < VAR3->VAR16->VAR17.VAR18.VAR19)
+VAR8->VAR17.VAR20 = VAR3->VAR16->VAR17.VAR18.VAR21[VAR10].VAR20;
+else
+FUN2(1, "", VAR4);
+break;
+case VAR23:
+VAR11 = 0;
+for (; VAR4 && *VAR4; VAR4 = VAR12) {
+if ((VAR12 = strchr(VAR4, '')) != NULL)
+*VAR12++ = 0;
+for (VAR10 = 0; VAR10 < VAR3->VAR16->VAR17.VAR12.VAR19; VAR10++)
+if (strcmp(VAR3->VAR16->VAR24, VAR4) == 0)
+break;
+if (VAR10 < VAR3->VAR16->VAR17.VAR12.VAR19)
+VAR11 |= VAR3->VAR16->VAR17.VAR12.VAR21[VAR10].VAR11;
+else
+FUN2(1, "", VAR4);
+}
+VAR8->VAR17.VAR11 = VAR11;
+break;
+case VAR25:
+if (VAR8->VAR17.VAR26.VAR27 == 1) {
+FUN3(&VAR4, &VAR8->VAR17.VAR26.VAR28[0], 0);
+} else {
+FUN3(&VAR4, &VAR8->VAR17.VAR26.VAR28[0], 1);
+if (*VAR4++ == '')
+FUN3(&VAR4, &VAR8->VAR17.VAR26.VAR28[1], 0);
+else
+VAR8->VAR17.VAR26.VAR28[1] = VAR8->VAR17.VAR26.VAR28[0];
+}
+break;
+default:
+FUN2(1, "");
+}
+
+if (FUN4(VAR1, VAR29, VAR3->VAR13) == -1) {
+FUN5("");
+} else if (!VAR5) {
+if (FUN4(VAR1, VAR30, VAR3->VAR13) == -1) {
+FUN5("");
+} else {
+if (VAR6) {
+FUN6(VAR3, "", 0, &VAR9);
+FUN7("");
+}
+FUN6(VAR3, NULL, 0, VAR3->VAR13);
+FUN7("");
+}
+}
+}

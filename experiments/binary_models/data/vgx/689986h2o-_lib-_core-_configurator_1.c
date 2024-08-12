@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( VAR2 * VAR3 , size_t VAR4 ) { VAR1 * VAR5 ; assert ( VAR4 >= sizeof ( * VAR5 ) ) ; VAR5 = FUN2 ( VAR4 ) ; FUN3 ( & VAR3 -> VAR6 , & VAR5 -> VAR7 ) ; return VAR5 ; }

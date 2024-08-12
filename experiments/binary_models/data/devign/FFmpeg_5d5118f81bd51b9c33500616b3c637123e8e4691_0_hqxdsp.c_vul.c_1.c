@@ -1,0 +1,42 @@
+static inline void FUN1(VAR1 *VAR2, const VAR3 *VAR4)
+{
+    int VAR5, VAR6, VAR7, VAR8, VAR9, VAR10, VAR11, VAR12, VAR13, VAR14, VAR15, VAR16, VAR17, VAR18, VAR19, VAR20;
+    int VAR21, VAR22, VAR23, VAR24;
+    int VAR25, VAR26, VAR27, VAR28, VAR29, VAR30, VAR31, VAR32;
+    VAR25 = (int)VAR2[0 * 8] * VAR4[0 * 8];
+    VAR26 = (int)VAR2[1 * 8] * VAR4[1 * 8];
+    VAR27 = (int)VAR2[2 * 8] * VAR4[2 * 8];
+    VAR28 = (int)VAR2[3 * 8] * VAR4[3 * 8];
+    VAR29 = (int)VAR2[4 * 8] * VAR4[4 * 8];
+    VAR30 = (int)VAR2[5 * 8] * VAR4[5 * 8];
+    VAR31 = (int)VAR2[6 * 8] * VAR4[6 * 8];
+    VAR32 = (int)VAR2[7 * 8] * VAR4[7 * 8];
+    VAR5 = (VAR28 * 19266 + VAR30 * 12873) >> 15;
+    VAR6 = (VAR30 * 19266 - VAR28 * 12873) >> 15;
+    VAR7 = ((VAR32 * 4520 + VAR26 * 22725) >> 15) - VAR5;
+    VAR8 = ((VAR26 * 4520 - VAR32 * 22725) >> 15) - VAR6;
+    VAR9 = VAR5 * 2 + VAR7;
+    VAR10 = VAR6 * 2 + VAR8;
+    VAR11 = VAR7 - VAR8;
+    VAR12 = VAR8 * 2 + VAR11;
+    VAR13 = (VAR11 * 11585) >> 14;
+    VAR14 = (VAR12 * 11585) >> 14;
+    VAR15 = (VAR27 * 8867 - VAR31 * 21407) >> 14;
+    VAR16 = (VAR31 * 8867 + VAR27 * 21407) >> 14;
+    VAR17 = (VAR25 >> 1) - (VAR29 >> 1);
+    VAR18 = (VAR29 >> 1) * 2 + VAR17;
+    VAR19 = VAR17 - (VAR15 >> 1);
+    VAR20 = VAR18 - (VAR16 >> 1);
+    VAR21 = VAR20 - VAR10;
+    VAR22 = VAR19 - VAR13;
+    VAR23 = VAR19 + (VAR15 >> 1) * 2 - VAR14;
+    VAR24 = VAR20 + (VAR16 >> 1) * 2 - VAR9;
+    VAR2[0 * 8] = VAR24 + VAR9 * 2;
+    VAR2[1 * 8] = VAR23 + VAR14 * 2;
+    VAR2[2 * 8] = VAR22 + VAR13 * 2;
+    VAR2[3 * 8] = VAR21 + VAR10 * 2;
+    VAR2[4 * 8] = VAR21;
+    VAR2[5 * 8] = VAR22;
+    VAR2[6 * 8] = VAR23;
+    VAR2[7 * 8] = VAR24;
+}

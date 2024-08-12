@@ -1,0 +1,70 @@
+static void FUN1(struct VAR1 *VAR1, struct VAR2 *VAR2)
+{
+unsigned long VAR3;
+struct VAR4 *VAR5;
+struct VAR6 *VAR7, *VAR8;
+
+VAR3 = FUN2(VAR1, VAR2);
+VAR5 = FUN3(VAR1, VAR3);
+
+FUN4(VAR5);
+
+VAR7 = FUN5(VAR5, VAR3);
+if (VAR7) {
+
+FUN6(&VAR7->VAR9, VAR2);
+FUN7(VAR5);
+return;
+}
+
+if (FUN8(VAR1->VAR10, VAR3)) {
+
+FUN7(VAR5);
+FUN9(VAR1, VAR2);
+return;
+}
+
+
+FUN7(VAR5);
+
+VAR7 = FUN10(VAR1);
+FUN11(VAR7, VAR3);
+
+FUN4(VAR5);
+
+
+if (FUN8(VAR1->VAR10, VAR3)) {
+FUN7(VAR5);
+FUN12(VAR7);
+FUN9(VAR1, VAR2);
+return;
+}
+
+VAR8 = FUN13(VAR5, VAR7);
+if (VAR8 != VAR7) {
+
+FUN6(&VAR8->VAR9, VAR2);
+FUN7(VAR5);
+FUN12(VAR7);
+return;
+}
+
+
+if (FUN14(FUN15(VAR1) >= VAR11)) {
+FUN16(&VAR7->VAR12);
+FUN7(VAR5);
+FUN12(VAR7);
+FUN17(VAR2);
+return;
+}
+
+
+if (FUN18(VAR1, VAR2)) {
+FUN7(VAR5);
+FUN19(VAR7, VAR2);
+} else {
+FUN6(&VAR7->VAR9, VAR2);
+FUN7(VAR5);
+FUN20(VAR7, 1);
+}
+}

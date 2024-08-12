@@ -1,0 +1,20 @@
+static struct VAR1*
+FUN1(VAR2 *VAR3, mrb_sym VAR4, struct VAR1 *VAR5, struct VAR1 *VAR6)
+{
+struct VAR1 * VAR7;
+
+if (FUN2(VAR3, FUN3(VAR6), VAR4)) {
+VAR7 = FUN4(VAR3, VAR6, VAR4);
+FUN5(VAR7);
+if (VAR5 && FUN6(VAR7->VAR5) != VAR5) {
+FUN7(VAR3, VAR8, "",
+VAR4, VAR7->VAR5, VAR5);
+}
+return VAR7;
+}
+
+VAR7 = FUN8(VAR3, VAR5);
+FUN9(VAR3, VAR6, VAR7, VAR4);
+
+return VAR7;
+}

@@ -1,0 +1,133 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    float VAR5;
+    int VAR6;
+    VAR6 = FUN2(VAR2->VAR7);
+    if (VAR6 < 0)
+        return VAR8;
+    VAR4->VAR9.VAR10.VAR11 = VAR6;
+    VAR4->VAR12 = VAR2->VAR7 == VAR13 ? 32 : 16;
+    if (VAR2->VAR14 > 0)
+        VAR4->VAR9.VAR10.VAR15 = VAR2->VAR14;
+    VAR4->VAR9.VAR10.VAR16 = VAR4->VAR17;
+    VAR4->VAR9.VAR10.VAR18 = VAR4->VAR19;
+    VAR4->VAR9.VAR10.VAR20 = FUN3(0, VAR2->VAR21);
+    VAR4->VAR9.VAR10.VAR22 = FUN3(-1, VAR2->VAR23) + 1;
+    VAR4->VAR9.VAR10.VAR24 = VAR2->VAR25 & VAR26 ? VAR27 : 0;
+    VAR4->VAR9.VAR10.VAR28 = VAR4->VAR29;
+    VAR4->VAR9.VAR10.VAR30 = VAR2->VAR31;
+    VAR4->VAR9.VAR10.VAR32 = FUN3(0, VAR2->VAR33);
+    VAR4->VAR9.VAR10.VAR34 = 0;
+    VAR4->VAR9.VAR10.VAR35 = 0;
+    VAR4->VAR9.VAR10.VAR36.VAR37 = VAR38;
+    VAR4->VAR9.VAR10.VAR36.VAR39 = FUN4(VAR2->VAR40, VAR4->VAR12);
+    VAR4->VAR9.VAR10.VAR36.VAR41 = FUN4(VAR2->VAR42, 32);
+    VAR4->VAR9.VAR10.VAR36.VAR43 = 0;
+    VAR4->VAR9.VAR10.VAR36.VAR44 = 0;
+    VAR4->VAR9.VAR10.VAR36.VAR45 = VAR2->VAR40;
+    VAR4->VAR9.VAR10.VAR36.VAR46 = VAR2->VAR42;
+    VAR4->VAR9.VAR10.VAR36.VAR47 = VAR2->VAR48.VAR49;
+    VAR4->VAR9.VAR10.VAR36.VAR50 = VAR2->VAR48.VAR51;
+    VAR4->VAR9.VAR10.VAR36.VAR52 = VAR53;
+    VAR4->VAR9.VAR10.VAR36.VAR54 = VAR55;
+    VAR4->VAR9.VAR10.VAR36.VAR56 = 8;
+    VAR4->VAR9.VAR10.VAR36.VAR57 = 8;
+    if (VAR2->VAR58.VAR51 > 0 && VAR2->VAR58.VAR49 > 0)
+    {
+        VAR4->VAR9.VAR10.VAR36.VAR59 = VAR2->VAR58.VAR49;
+        VAR4->VAR9.VAR10.VAR36.VAR60 = VAR2->VAR58.VAR51;
+    }
+    else
+    {
+        VAR4->VAR9.VAR10.VAR36.VAR59 = VAR2->VAR61.VAR51;
+        VAR4->VAR9.VAR10.VAR36.VAR60 = VAR2->VAR61.VAR49;
+    }
+    VAR6 = FUN5(VAR2, VAR4);
+    if (VAR6 < 0)
+        return VAR6;
+    switch (VAR4->VAR9.VAR10.VAR62)
+    {
+    case VAR63:
+    case VAR64:
+    case VAR65:
+        VAR4->VAR9.VAR10.VAR66 = VAR2->VAR67 / 1000;
+        VAR4->VAR9.VAR10.VAR68 = VAR2->VAR69 / 1000;
+        VAR4->VAR9.VAR10.VAR70 = VAR2->VAR71 / 1000;
+        break;
+    case VAR72:
+        VAR5 = VAR2->VAR73 / VAR74;
+        VAR4->VAR9.VAR10.VAR75 = FUN6(VAR5 * FUN7(VAR2->VAR76) + VAR2->VAR77, 0, 51);
+        VAR4->VAR9.VAR10.VAR78 = FUN6(VAR5, 0, 51);
+        VAR4->VAR9.VAR10.VAR79 = FUN6(VAR5 * FUN7(VAR2->VAR80) + VAR2->VAR81, 0, 51);
+        break;
+    case VAR82:
+        VAR4->VAR9.VAR10.VAR68 = VAR2->VAR69 / 1000;
+        VAR4->VAR9.VAR10.VAR83 = VAR4->VAR84;
+        VAR4->VAR9.VAR10.VAR85 = VAR4->VAR86;
+        break;
+    case VAR87:
+        VAR4->VAR9.VAR10.VAR68 = VAR2->VAR69 / 1000;
+        VAR4->VAR88.VAR89 = VAR4->VAR90;
+        break;
+    case VAR91:
+        VAR4->VAR88.VAR89 = VAR4->VAR90;
+    case VAR92:
+        VAR4->VAR9.VAR10.VAR93 = VAR2->VAR73;
+        break;
+    }
+    if (VAR2->VAR7 != VAR13)
+    {
+        VAR4->VAR94.VAR95.VAR96 = VAR97;
+        VAR4->VAR94.VAR95.VAR98 = sizeof(VAR4->VAR94);
+        VAR4->VAR94.VAR99 = VAR2->VAR100 == VAR101 ? VAR102 : VAR103;
+        if (VAR4->VAR104 >= 0)
+            VAR4->VAR94.VAR105 = VAR4->VAR104 > 0 ? VAR102 : VAR106;
+        if (VAR2->VAR7 == VAR107)
+        {
+            if (VAR2->VAR108 != VAR109)
+                VAR4->VAR94.VAR110 = VAR2->VAR108 > VAR109 ? VAR102 : VAR106;
+            if (VAR4->VAR111 >= 0)
+                VAR4->VAR94.VAR112 = VAR4->VAR111 ? VAR102 : VAR106;
+            if (VAR4->VAR113 >= 0)
+                VAR4->VAR94.VAR114 = VAR4->VAR113 ? VAR102 : VAR106;
+            VAR4->VAR94.VAR115 = VAR4->VAR116;
+        }
+        VAR4->VAR117[VAR4->VAR118++] = (VAR119 *)&VAR4->VAR94;
+        if (VAR2->VAR7 == VAR107)
+        {
+            VAR4->VAR88.VAR95.VAR96 = VAR120;
+            VAR4->VAR88.VAR95.VAR98 = sizeof(VAR4->VAR88);
+            if (VAR4->VAR121 >= 0)
+                VAR4->VAR88.VAR122 = VAR4->VAR121;
+            if (VAR4->VAR123 >= 0)
+                VAR4->VAR88.VAR124 = VAR4->VAR123;
+            if (VAR4->VAR125 != VAR126)
+                VAR4->VAR88.VAR127 = VAR4->VAR125;
+            if (VAR4->VAR128 >= 0)
+                VAR4->VAR88.VAR129 = VAR4->VAR128 ? VAR102 : VAR106;
+            if (VAR4->VAR130 >= 0)
+                VAR4->VAR88.VAR131 = VAR4->VAR130 ? VAR102 : VAR106;
+            if (VAR4->VAR132 >= 0)
+                VAR4->VAR88.VAR133 = VAR4->VAR132 ? VAR102 : VAR106;
+            if (VAR4->VAR134 >= 0)
+                VAR4->VAR88.VAR135 = VAR4->VAR134;
+            if (VAR4->VAR136 >= 0)
+                VAR4->VAR88.VAR137 = VAR4->VAR136;
+            VAR4->VAR88.VAR138 = VAR4->VAR139;
+            FF_DISABLE_DEPRECATION_WARNINGS if (VAR2->VAR140 >= 0) VAR4->VAR141 = VAR2->VAR140;
+            FF_ENABLE_DEPRECATION_WARNINGS if (VAR4->VAR88.VAR141 >= 0) VAR4->VAR88.VAR142 = VAR4->VAR141 ? VAR143 : VAR144;
+            if (VAR4->VAR145 >= 0)
+                VAR4->VAR88.VAR146 = VAR4->VAR145 ? VAR102 : VAR106;
+            if (VAR4->VAR147 >= 0)
+                VAR4->VAR88.VAR148 = VAR4->VAR147 ? VAR102 : VAR106;
+            VAR4->VAR117[VAR4->VAR118++] = (VAR119 *)&VAR4->VAR88;
+        }
+    }
+    if (!FUN8(VAR4))
+    {
+        FUN9(VAR2, VAR149, ""
+                                    "");
+        return FUN10(VAR150);
+    }
+    return 0;
+}

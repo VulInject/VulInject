@@ -1,0 +1,93 @@
+void FUN1(int VAR1)
+{
+const VAR2 *VAR3;
+unsigned long VAR4;
+struct VAR5 *VAR6 = NULL, *VAR7 = NULL, *VAR8 = NULL;
+struct VAR5 *VAR9, *VAR10 = NULL, *VAR11 = NULL;
+const char *VAR12;
+int VAR13, VAR14;
+
+VAR7 = FUN2(NULL, "");
+if (VAR7 == NULL)
+goto VAR15;
+VAR8 = FUN3(VAR7);
+if (VAR8 == NULL)
+goto VAR15;
+VAR12 = FUN4(VAR16, "", NULL);
+if (VAR12 != NULL)
+VAR6 = FUN5(VAR12);
+for (VAR9 = NULL; (VAR9 = FUN6(VAR7, VAR9)) != NULL;) {
+if (VAR9 == VAR6)
+VAR10 = FUN7(VAR9);
+if (strcmp(VAR9->VAR17, "") == 0)
+VAR11 = FUN7(VAR9);
+}
+if (VAR10 == NULL && !VAR1)
+goto VAR15;
+
+VAR9 = VAR10 ? VAR10 : VAR11;
+
+
+VAR3 = FUN4(VAR7, "", NULL);
+if (VAR3 == NULL)
+goto VAR15;
+VAR4 = VAR3[0];
+
+
+VAR3 = FUN4(VAR8, "", NULL);
+if (VAR3 == NULL)
+goto VAR15;
+VAR4 += VAR3[2];
+
+
+FUN8(VAR18, VAR9,
+VAR19 | VAR20, 1);
+
+if (VAR9 == VAR11)
+VAR4 += 0x20;
+VAR21 = FUN9(VAR4 & VAR22, VAR23) ;
+VAR21 += VAR4 & ~VAR22;
+VAR24 = VAR21 + 0x10;
+
+FUN10();
+
+for (VAR13 = 20000; VAR13 != 0; --VAR13)
+VAR14 = FUN11(VAR21);
+FUN12(VAR21, 0x09);		
+FUN12(VAR21, 0xc0);
+
+
+if (VAR10 != NULL) {
+FUN12(VAR21, 13);
+VAR25[1] = FUN11(VAR21);
+FUN12(VAR21, 12);
+VAR25[3] = FUN11(VAR21);
+} else if (FUN13("")
+|| FUN13("")
+|| FUN13("")) {
+
+VAR25[1] = 0;
+VAR25[3] = 0;
+} else {
+
+VAR25[1] = 0;
+VAR25[3] = 1;
+}
+
+for (VAR13 = 0; VAR13 < sizeof(VAR25); ++VAR13)
+FUN12(VAR21, VAR25[VAR13]);
+
+
+VAR26 = VAR27;
+VAR28 = VAR29;
+VAR30 = VAR31;
+
+FUN14("");
+
+VAR15:
+FUN15(VAR8);
+FUN15(VAR7);
+FUN15(VAR6);
+FUN15(VAR10);
+FUN15(VAR11);
+}

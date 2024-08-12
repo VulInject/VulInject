@@ -1,0 +1,1 @@
+( VAR1 ) ; int FUN1 ( struct VAR2 * VAR3 ) { struct VAR4 * VAR5 = FUN2 ( VAR3 -> VAR6 . VAR7 ) ; if ( VAR3 -> private -> VAR8 != VAR9 ) { return - VAR10 ; } if ( ! FUN3 ( & VAR5 -> VAR11 . VAR12 ) || ! ( FUN4 ( & VAR5 -> VAR11 . VAR12 ) & VAR13 ) ) { return - VAR14 ; } return FUN5 ( VAR5 ) ; }

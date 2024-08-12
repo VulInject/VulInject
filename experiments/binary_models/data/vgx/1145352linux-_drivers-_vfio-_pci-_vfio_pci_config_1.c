@@ -1,0 +1,1 @@
+static __le32 FUN1 ( struct VAR1 * VAR2 , int VAR3 ) { cfs_time_t VAR4 = FUN2 ( VAR2 , VAR3 ) ; u32 VAR5 ; if ( VAR4 & VAR6 ) { return FUN3 ( VAR7 ) ; } VAR5 = VAR8 ; if ( VAR4 & VAR9 ) { VAR5 |= VAR10 ; } if ( VAR4 & VAR11 ) { VAR5 |= VAR12 ; } return FUN3 ( VAR5 ) ; }

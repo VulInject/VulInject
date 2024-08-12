@@ -1,0 +1,64 @@
+static FUN1(VAR1 | VAR2,
+VAR3,
+VAR4,
+VAR5);
+static FUN2(VAR1 | VAR2,
+VAR3,
+VAR4,
+VAR6);
+static FUN3(VAR1 | VAR2,
+VAR3,
+VAR4,
+VAR7);
+static FUN4(VAR1 | VAR2,
+VAR3,
+VAR4,
+VAR8);
+static FUN5(VAR1 | VAR2,
+VAR9,
+VAR10,
+VAR11);
+static FUN6(VAR1 | VAR2,
+VAR9,
+VAR10,
+VAR12);
+static FUN7(VAR2,
+VAR13,
+NULL,
+VAR14);
+static FUN8(VAR2,
+VAR13,
+NULL,
+VAR15);
+static FUN9(VAR2,
+VAR3,
+NULL,
+VAR16);
+static FUN10(1, VAR1 | VAR2,
+VAR9,
+VAR10,
+VAR17);
+static FUN10(2, VAR1 | VAR2,
+VAR9,
+VAR10,
+VAR18);
+
+static int FUN11(struct VAR19 *VAR20, bool VAR21)
+{
+int VAR22;
+u8 VAR23;
+
+VAR22 = FUN12(VAR20, VAR24, &VAR23);
+if (VAR22)
+goto VAR25;
+
+if (VAR21)
+VAR23 |= FUN13(3); 
+else
+VAR23 &= ~FUN13(3);
+
+VAR22 = FUN14(VAR20, VAR24, VAR23);
+
+VAR25:
+return VAR22;
+}

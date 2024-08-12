@@ -1,0 +1,1 @@
+static int32_t FUN1 ( char * VAR1 , uint32_t VAR2 ) { char * VAR3 ; uint32_t VAR4 ; VAR3 = strchr ( VAR1 , '' ) ; VAR3 ++ ; while ( * VAR3 == '' ) { VAR3 ++ ; } if ( ! * VAR3 || * VAR3 == '' ) { return VAR2 ; } VAR4 = FUN2 ( VAR3 ) ; switch ( VAR4 ) { case - 2 : return - 1 ; case - 1 : return VAR2 ; } return VAR4 ; }

@@ -1,0 +1,33 @@
+static VAR1 FUN1(int VAR2, void *VAR3)
+{
+u32 VAR4 = VAR5 | VAR6;
+struct VAR7 *VAR8 = VAR3;
+irqreturn_t VAR9 = VAR10;
+unsigned int VAR11;
+u32 VAR12;
+
+for (VAR11 = 0; VAR11 < VAR8->VAR13->VAR14; ++VAR11) {
+struct VAR15 *VAR16 = VAR8->VAR16[VAR11];
+
+if (VAR16 == NULL)
+continue;
+
+VAR12 = FUN2(VAR8, FUN3(VAR11));
+FUN4(VAR8, FUN3(VAR11), ~VAR12 & VAR4);
+
+if (VAR12 & VAR5) {
+FUN5(VAR16->VAR17);
+VAR9 = VAR18;
+}
+}
+
+VAR12 = FUN2(VAR8, VAR19);
+FUN4(VAR8, VAR19, ~VAR12 & VAR20);
+
+if (VAR12 & VAR20) {
+FUN6(VAR8);
+VAR9 = VAR18;
+}
+
+return VAR9;
+}

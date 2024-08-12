@@ -1,0 +1,25 @@
+void FUN1(struct VAR1 *VAR1, struct VAR2 *VAR3,
+unsigned long *VAR4, long VAR5, int VAR6)
+{
+struct VAR2 *VAR7, *VAR8;
+unsigned long VAR9;
+
+if (*VAR4 & VAR10) {
+VAR9 = *VAR4 & VAR11;
+VAR7 = &VAR1->VAR12.VAR13.VAR3[VAR9];
+if (VAR6)
+VAR7 = FUN2(VAR7);
+VAR8 = &VAR1->VAR12.VAR13.VAR3[VAR7->VAR14];
+if (VAR6)
+VAR8 = FUN2(VAR8);
+VAR3->VAR15 = VAR9;
+VAR3->VAR14 = VAR7->VAR14;
+VAR8->VAR15 = VAR5;
+VAR7->VAR14 = VAR5;
+} else {
+VAR3->VAR15 = VAR3->VAR14 = VAR5;
+*VAR4 = (*VAR4 & ~VAR11) |
+VAR5 | VAR10;
+}
+FUN3(VAR4);
+}

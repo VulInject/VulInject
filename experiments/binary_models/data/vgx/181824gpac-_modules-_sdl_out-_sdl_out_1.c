@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 ) { switch ( VAR2 -> VAR3 ) { case VAR4 : FUN2 ( VAR2 ) ; break ; case VAR5 : FUN3 ( VAR2 , NULL ) ; break ; } }

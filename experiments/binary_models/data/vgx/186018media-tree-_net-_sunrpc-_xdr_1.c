@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { int VAR3 = VAR2 -> VAR4 . VAR5 ; void * VAR6 ; VAR6 = FUN2 ( * VAR2 -> VAR7 ) ; memcpy ( VAR2 -> VAR4 . VAR8 , VAR6 , VAR3 ) ; memmove ( VAR6 , VAR6 + VAR3 , ( void * ) VAR2 -> VAR9 - VAR6 ) ; VAR2 -> VAR4 . VAR5 = 0 ; }

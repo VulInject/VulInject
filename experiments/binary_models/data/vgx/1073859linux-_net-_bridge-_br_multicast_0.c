@@ -1,0 +1,31 @@
+int FUN1(struct VAR1 *VAR2, unsigned long VAR3)
+{
+unsigned long VAR4;
+
+VAR3 = !!VAR3;
+
+FUN2(&VAR2->VAR5->VAR6);
+if (VAR2->VAR7 == VAR3)
+goto VAR8;
+
+FUN3(VAR2->VAR7, VAR3);
+if (!VAR3)
+goto VAR8;
+
+VAR4 = VAR2->VAR9;
+
+if (!FUN4(&VAR2->VAR10.VAR11))
+VAR2->VAR10.VAR12 = VAR13 + VAR4;
+
+FUN5(VAR2, &VAR2->VAR14);
+
+if (!FUN4(&VAR2->VAR15.VAR11))
+VAR2->VAR15.VAR12 = VAR13 + VAR4;
+
+FUN5(VAR2, &VAR2->VAR16);
+
+VAR8:
+FUN6(&VAR2->VAR5->VAR6);
+
+return 0;
+}

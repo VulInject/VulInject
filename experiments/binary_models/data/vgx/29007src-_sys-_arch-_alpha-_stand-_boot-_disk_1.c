@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 ; VAR4 = VAR2 -> VAR5 ; ( void ) FUN2 ( VAR4 -> VAR6 ) ; free ( VAR4 , sizeof ( VAR3 ) ) ; return ( 0 ) ; }

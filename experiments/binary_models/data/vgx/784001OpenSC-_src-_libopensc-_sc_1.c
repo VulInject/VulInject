@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , int VAR3 , const VAR4 * VAR5 , size_t VAR6 , int VAR7 , int VAR8 ) { if ( VAR2 == NULL || VAR5 == NULL || VAR6 == 0 || VAR6 > VAR9 ) { return VAR10 ; } memcpy ( VAR2 -> VAR11 , VAR5 , VAR6 ) ; VAR2 -> VAR12 = VAR6 ; VAR2 -> VAR3 = VAR3 ; VAR2 -> VAR13 = VAR7 ; VAR2 -> VAR8 = VAR8 ; return VAR14 ; }

@@ -1,0 +1,1 @@
+static void FUN1 ( void * VAR1 , int VAR2 ) { if ( VAR3 ) { char VAR4 [ 3 * sizeof ( VAR1 ) + 4 ] ; sprintf ( VAR4 , "" , VAR1 ) ; FUN2 ( "" , VAR2 , VAR4 , VAR5 - 1 - strlen ( VAR4 ) , "" ) ; } if ( FUN3 ( VAR1 ) != 0 ) { fprintf ( VAR6 , "" , FUN4 ( ) ) ; FUN5 ( 1 ) ; } if ( VAR3 ) { FUN2 ( "" ) ; } }

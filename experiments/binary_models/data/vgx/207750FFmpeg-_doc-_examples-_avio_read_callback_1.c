@@ -1,0 +1,1 @@
+static int FUN1 ( void * VAR1 , VAR2 * VAR3 , int VAR4 ) { struct VAR5 * VAR6 = ( VAR5 * ) VAR1 ; VAR4 = FUN2 ( VAR4 , VAR6 -> VAR7 ) ; FUN3 ( "" , VAR6 -> VAR8 , VAR6 -> VAR7 ) ; memcpy ( VAR3 , VAR6 -> VAR8 , VAR4 ) ; VAR6 -> VAR8 += VAR4 ; VAR6 -> VAR7 -= VAR4 ; return VAR4 ; }

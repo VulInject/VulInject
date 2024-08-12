@@ -1,0 +1,1 @@
+static VAR1 FUN1(void *VAR2, hwaddr VAR3, unsigned VAR4) { return FUN2(VAR2, VAR3, VAR4, NULL); }

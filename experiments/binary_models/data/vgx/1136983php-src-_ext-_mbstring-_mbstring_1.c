@@ -1,0 +1,1 @@
+FUN1 ( ) { char * VAR1 ; size_t VAR2 ; VAR3 * VAR4 = NULL ; zend_long VAR5 ; FUN2 ( 1 , 2 ) FUN3 ( , ) Z_PARAM_OPTIONAL FUN4 ( VAR4 ) FUN5 ( ) ; if ( VAR2 == 0 ) { FUN6 ( 1 , "" ) ; FUN7 ( ) ; } VAR5 = FUN8 ( VAR1 , VAR2 , VAR4 , 2 ) ; if ( 0 > VAR5 ) { if ( VAR5 == - 2 ) { FUN7 ( ) ; } VAR6 ; } FUN9 ( VAR5 , NULL ) ; }

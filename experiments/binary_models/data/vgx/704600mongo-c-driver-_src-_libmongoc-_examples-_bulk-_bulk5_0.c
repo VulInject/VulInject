@@ -1,0 +1,36 @@
+FUN1 (VAR1 *VAR2)
+{
+VAR3 *VAR4;
+bson_error_t VAR5;
+VAR6 *VAR7;
+bson_t VAR8;
+char *VAR9;
+bool VAR10;
+
+VAR4 = FUN2 (VAR2, NULL);
+
+
+FUN3 (VAR4, true);
+
+
+VAR7 = FUN4 ("", FUN5 (31));
+FUN6 (VAR4, VAR7);
+FUN7 (VAR7);
+
+VAR7 = FUN4 ("", FUN5 (32));
+FUN6 (VAR4, VAR7);
+FUN7 (VAR7);
+
+VAR10 = FUN8 (VAR4, &VAR8, &VAR5);
+
+VAR9 = FUN9 (&VAR8, NULL);
+FUN10 ("", VAR9);
+FUN11 (VAR9);
+
+if (!VAR10) {
+FUN10 ("", VAR5.VAR11);
+}
+
+FUN7 (&VAR8);
+FUN12 (VAR4);
+}

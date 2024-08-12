@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR3 , void * VAR4 ) { const char * VAR5 ; if ( VAR3 == NULL ) { FUN2 ( "" , VAR6 ) ; } if ( FUN3 ( ) > VAR7 ) { FUN4 ( VAR2 , VAR3 ) ; } switch ( VAR3 -> VAR8 . VAR9 ) { case VAR10 : FUN5 ( VAR2 , & VAR5 ) ; FUN6 ( VAR2 ) ; FUN7 ( VAR5 , NULL ) ; break ; default : FUN2 ( "" , VAR6 , FUN8 ( VAR3 -> VAR8 . VAR9 ) ) ; } }

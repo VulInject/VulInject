@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * * VAR2 , const char * VAR3 , const char * VAR4 , unsigned int VAR5 , void * VAR6 ) { FUN2 ( VAR3 ) ; FUN2 ( VAR4 ) ; FUN2 ( VAR5 ) ; FUN2 ( VAR6 , NULL ) ; VAR7 = 1 ; return FUN3 ( VAR2 , VAR8 , VAR9 ) ; }

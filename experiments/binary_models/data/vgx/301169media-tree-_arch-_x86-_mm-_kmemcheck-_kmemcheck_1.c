@@ -1,0 +1,1 @@
+int FUN1 ( unsigned long VAR1 ) { VAR2 * VAR3 ; VAR3 = FUN2 ( VAR1 ) ; FUN3 ( VAR3 , FUN4 ( FUN5 ( * VAR3 ) & ~ VAR4 ) ) ; FUN6 ( VAR1 ) ; return 1 ; } VAR5 { bool VAR6 ; int VAR7 ; unsigned long VAR8 [ 4 ] ; unsigned long VAR9 ; unsigned long VAR10 ; unsigned int VAR11 ; }

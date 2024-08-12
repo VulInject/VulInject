@@ -1,0 +1,1 @@
+bool FUN1 ( const char * VAR1 ) { int VAR2 ; for ( VAR2 = 0 ; VAR1 [ VAR2 ] != '' ; VAR2 ++ ) { switch ( VAR1 [ VAR2 ] ) { case '' : case '' : return false ; } } return true ; }

@@ -1,0 +1,494 @@
+VAR1 *FUN1(VAR2 *VAR3, char *VAR4, char *VAR5) {
+
+return FUN2(&VAR3->VAR6, VAR4, VAR5);
+}
+
+
+
+
+VAR7 *FUN3(char *VAR8, char *VAR9) {
+VAR7 *VAR10 = NULL;
+int VAR11 = VAR12;
+
+
+if((VAR8 == NULL || !strcmp(VAR8, "")) || (VAR9 == NULL || !strcmp(VAR9, ""))) {
+FUN4(VAR13, VAR14, "");
+return NULL;
+}
+
+
+VAR10 = calloc(1, sizeof(*VAR10));
+if(!VAR10)
+return NULL;
+
+
+VAR10->VAR8 = VAR8;
+VAR10->VAR15 = VAR9;
+
+
+if(VAR11 == VAR12) {
+VAR11 = FUN5(VAR16[VAR17], VAR10->VAR8, NULL, VAR10);
+switch(VAR11) {
+case VAR18:
+FUN4(VAR13, VAR14, "", VAR8);
+VAR11 = VAR19;
+break;
+case VAR20:
+VAR11 = VAR12;
+break;
+default:
+FUN4(VAR13, VAR14, "", VAR8);
+VAR11 = VAR19;
+break;
+}
+}
+
+
+if(VAR11 == VAR19) {
+FUN6(VAR10);
+return NULL;
+}
+
+VAR10->VAR21 = VAR22.VAR23++;
+VAR24[VAR10->VAR21] = VAR10;
+if(VAR10->VAR21)
+VAR24[VAR10->VAR21 - 1]->VAR25 = VAR10;
+return VAR10;
+}
+
+
+
+
+VAR26 *FUN7(char *VAR27, char *VAR28, int VAR29, int VAR30, double VAR31, char *VAR32, int VAR33) {
+VAR26 *VAR34 = NULL;
+VAR2 *VAR3;
+VAR35 *VAR36 = NULL;
+
+
+if(VAR27 == NULL || !*VAR27 || VAR28 == NULL || !*VAR28) {
+FUN4(VAR13, VAR14, "");
+return NULL;
+}
+if(!(VAR3 = FUN8(VAR27, VAR28))) {
+FUN4(VAR13, VAR14, "",
+VAR27, VAR28);
+return NULL;
+}
+if (VAR32 && !(VAR36 = FUN9(VAR32))) {
+FUN4(VAR37, VAR14, "",
+VAR32, VAR28, VAR27);
+return NULL ;
+}
+
+VAR34 = calloc(1, sizeof(*VAR34));
+if(!VAR34)
+return NULL;
+
+if(FUN10(&VAR3->VAR38, VAR34) != VAR12) {
+FUN4(VAR13, VAR14, "",
+VAR3->VAR27, VAR3->VAR28);
+return NULL;
+}
+
+
+VAR34->VAR27 = VAR3->VAR27;
+VAR34->VAR28 = VAR3->VAR28;
+VAR34->VAR39 = VAR3;
+VAR34->VAR40 = VAR36;
+if(VAR36)
+VAR34->VAR32 = (char *)strdup(VAR36->VAR8);
+
+VAR34->VAR29 = VAR29;
+VAR34->VAR30 = VAR30;
+VAR34->VAR31 = (VAR31 <= 0) ? 0 : VAR31;
+VAR34->VAR33 = VAR33;
+
+VAR34->VAR21 = VAR22.VAR41++;
+VAR42[VAR34->VAR21] = VAR34;
+return VAR34;
+}
+
+
+
+
+VAR43 *FUN11(VAR26 *VAR44, char *VAR45) {
+return FUN12(&VAR44->VAR46, VAR45);
+}
+
+
+
+
+VAR47 *FUN13(VAR26 *VAR44, char *VAR48) {
+
+return FUN14(&VAR44->VAR49, VAR48);
+}
+
+
+
+
+VAR50 *FUN15(char *VAR51, char *VAR52, char *VAR27, char *VAR53, int VAR54, int VAR55, int VAR56, char *VAR57) {
+VAR50 *VAR58 = NULL;
+VAR2 *VAR59, *VAR60;
+VAR35 *VAR36 = NULL;
+int VAR11;
+
+
+VAR59 = FUN8(VAR27, VAR53);
+if(!VAR59) {
+FUN4(VAR13, VAR14, "",
+VAR53, VAR27);
+return NULL;
+}
+VAR60 = FUN8(VAR51, VAR52);
+if(!VAR60) {
+FUN4(VAR13, VAR14, "",
+VAR52, VAR51);
+return NULL;
+}
+if (VAR57 && !(VAR36 = FUN9(VAR57))) {
+FUN4(VAR13, VAR14, "",
+VAR57, VAR52, VAR51, VAR53, VAR27);
+return NULL;
+}
+
+
+if((VAR58 = calloc(1, sizeof(*VAR58))) == NULL)
+return NULL;
+
+VAR58->VAR61 = VAR60;
+VAR58->VAR62 = VAR59;
+VAR58->VAR63 = VAR36;
+
+
+VAR58->VAR51 = VAR60->VAR27;
+VAR58->VAR52 = VAR60->VAR28;
+VAR58->VAR27 = VAR59->VAR27;
+VAR58->VAR53 = VAR59->VAR28;
+if (VAR36)
+VAR58->VAR57 = (char *)strdup(VAR36->VAR8);
+
+VAR58->VAR54 = (VAR54 == VAR64) ? VAR64 : VAR65;
+VAR58->VAR55 = (VAR55 > 0) ? VAR14 : VAR66;
+VAR58->VAR56 = VAR56;
+
+
+if(VAR54 == VAR65)
+VAR11 = FUN16(&VAR60->VAR67, VAR58, sizeof(*VAR58));
+else
+VAR11 = FUN16(&VAR60->VAR68, VAR58, sizeof(*VAR58));
+
+if(VAR11 != VAR12) {
+free(VAR58);
+
+return VAR11 == VAR69 ? (void *)1 : NULL;
+}
+
+VAR22.VAR70++;
+return VAR58;
+}
+
+
+
+VAR71 *FUN17(char *VAR51, char *VAR27, int VAR54, int VAR55, int VAR56, char *VAR57) {
+VAR71 *VAR72 = NULL;
+VAR73 *VAR59, *VAR60;
+VAR35 *VAR36 = NULL;
+int VAR11;
+
+
+VAR59 = FUN18(VAR27);
+if (!VAR59) {
+FUN4(VAR13, VAR14, "",
+VAR27, VAR51, VAR27);
+return NULL;
+}
+VAR60 = FUN18(VAR51);
+if (!VAR60) {
+FUN4(VAR13, VAR14, "",
+VAR51, VAR51, VAR27);
+return NULL;
+}
+if (VAR57 && !(VAR36 = FUN9(VAR57))) {
+FUN4(VAR13, VAR14, "",
+VAR57, VAR59->VAR8, VAR60->VAR8);
+return NULL ;
+}
+
+if((VAR72 = calloc(1, sizeof(*VAR72))) == NULL)
+return NULL;
+
+VAR72->VAR74 = VAR60;
+VAR72->VAR75 = VAR59;
+VAR72->VAR63 = VAR36;
+
+
+VAR72->VAR51 = VAR60->VAR8;
+VAR72->VAR27 = VAR59->VAR8;
+if(VAR36)
+VAR72->VAR57 = (char *)strdup(VAR36->VAR8);
+
+VAR72->VAR54 = (VAR54 == VAR64) ? VAR64 : VAR65;
+VAR72->VAR55 = (VAR55 > 0) ? VAR14 : VAR66;
+VAR72->VAR56 = VAR56;
+
+if(VAR54 == VAR65)
+VAR11 = FUN16(&VAR60->VAR67, VAR72, sizeof(*VAR72));
+else
+VAR11 = FUN16(&VAR60->VAR68, VAR72, sizeof(*VAR72));
+
+if(VAR11 != VAR12) {
+free(VAR72);
+
+return VAR11 == VAR69 ? (void *)1 : NULL;
+}
+
+VAR22.VAR76++;
+return VAR72;
+}
+
+
+
+
+VAR77 *FUN19(char *VAR27, int VAR29, int VAR30, double VAR31, char *VAR32, int VAR33) {
+VAR77 *VAR78 = NULL;
+VAR73 *VAR79;
+VAR35 *VAR36 = NULL;
+
+
+if(VAR27 == NULL || !*VAR27) {
+FUN4(VAR13, VAR14, "");
+return NULL;
+}
+if (!(VAR79 = FUN18(VAR27))) {
+FUN4(VAR13, VAR14, "", VAR27);
+return NULL;
+}
+if (VAR32 && !(VAR36 = FUN9(VAR32))) {
+FUN4(VAR13, VAR14, "",
+VAR32, VAR27);
+return NULL;
+}
+
+VAR78 = calloc(1, sizeof(*VAR78));
+
+
+if (FUN10(&VAR79->VAR38, VAR78) != VAR12) {
+FUN4(VAR13, VAR14, "", VAR27);
+free(VAR78);
+return NULL;
+}
+
+
+VAR78->VAR27 = VAR79->VAR8;
+VAR78->VAR80 = VAR79;
+VAR78->VAR32 = VAR36 ? (char *)strdup(VAR36->VAR8) : NULL;
+VAR78->VAR40 = VAR36;
+VAR78->VAR29 = VAR29;
+VAR78->VAR30 = VAR30;
+VAR78->VAR31 = (VAR31 <= 0) ? 0 : VAR31;
+VAR78->VAR33 = VAR33;
+
+VAR78->VAR21 = VAR22.VAR81++;
+VAR82[VAR78->VAR21] = VAR78;
+return VAR78;
+}
+
+
+
+
+VAR43 *FUN20(VAR77 *VAR83, char *VAR45) {
+return FUN12(&VAR83->VAR46, VAR45);
+}
+
+
+
+
+VAR47 *FUN21(VAR77 *VAR83, char *VAR48) {
+
+return FUN14(&VAR83->VAR49, VAR48);
+}
+
+
+
+
+VAR47 *FUN14(VAR47 **VAR84, char *VAR85) {
+VAR47 *VAR86 = NULL;
+VAR87 *VAR88;
+
+
+if(VAR84 == NULL) {
+FUN4(VAR13, VAR14, "");
+return NULL;
+}
+
+if(VAR85 == NULL || !*VAR85) {
+FUN4(VAR13, VAR14, "");
+return NULL;
+}
+if(!(VAR88 = FUN22(VAR85))) {
+FUN4(VAR13, VAR14, "", VAR85);
+return NULL;
+}
+
+
+if((VAR86 = malloc(sizeof(VAR47))) == NULL) {
+FUN4(VAR13, VAR14, "");
+return NULL;
+}
+VAR86->VAR48 = VAR88->VAR8;
+
+
+VAR86->VAR89 = VAR88;
+
+
+VAR86->VAR25 = *VAR84;
+*VAR84 = VAR86;
+
+return VAR86;
+}
+
+
+
+
+VAR1 *FUN2(VAR1 **VAR84, char *VAR4, char *VAR5) {
+VAR1 *VAR90 = NULL;
+
+
+if(VAR84 == NULL) {
+FUN4(VAR13, VAR14, "");
+return NULL;
+}
+
+if(VAR4 == NULL || !strcmp(VAR4, "")) {
+FUN4(VAR13, VAR14, "");
+return NULL;
+}
+
+
+if((VAR90 = malloc(sizeof(VAR1))) == NULL) {
+FUN4(VAR13, VAR14, "");
+return NULL;
+}
+if((VAR90->VAR91 = (char *)strdup(VAR4)) == NULL) {
+FUN4(VAR13, VAR14, "");
+FUN6(VAR90);
+return NULL;
+}
+if(VAR5) {
+if((VAR90->VAR92 = (char *)strdup(VAR5)) == NULL) {
+FUN4(VAR13, VAR14, "");
+FUN6(VAR90->VAR91);
+FUN6(VAR90);
+return NULL;
+}
+}
+else
+VAR90->VAR92 = NULL;
+
+
+VAR90->VAR93 = VAR66;
+
+
+VAR90->VAR25 = *VAR84;
+*VAR84 = VAR90;
+
+return VAR90;
+}
+
+
+
+
+
+
+
+
+VAR35 *FUN9(const char *VAR8) {
+return FUN23(VAR16[VAR94], VAR8, NULL);
+}
+
+VAR73 *FUN18(const char *VAR8) {
+return FUN23(VAR16[VAR95], VAR8, NULL);
+}
+
+VAR96 *FUN24(const char *VAR8) {
+return FUN23(VAR16[VAR97], VAR8, NULL);
+}
+
+VAR98 *FUN25(const char *VAR8) {
+return FUN23(VAR16[VAR99], VAR8, NULL);
+}
+
+VAR87 *FUN22(const char *VAR8) {
+return FUN23(VAR16[VAR100], VAR8, NULL);
+}
+
+VAR101 *FUN26(const char *VAR8) {
+return FUN23(VAR16[VAR102], VAR8, NULL);
+}
+
+VAR7 *FUN27(const char *VAR8) {
+return FUN23(VAR16[VAR17], VAR8, NULL);
+}
+
+VAR2 *FUN8(const char *VAR27, const char *VAR103) {
+return FUN23(VAR16[VAR104], VAR27, VAR103);
+}
+
+
+
+
+int FUN10(VAR105 **VAR106, void *VAR84) {
+VAR105 *VAR107 = NULL;
+VAR105 *VAR108 = NULL;
+
+if(VAR106 == NULL || VAR84 == NULL)
+return VAR19;
+
+
+for(VAR107 = *VAR106; VAR107; VAR107 = VAR107->VAR25) {
+if(VAR107->VAR84 == VAR84)
+break;
+}
+if(VAR107)
+return VAR12;
+
+
+if((VAR108 = (VAR105 *)malloc(sizeof(VAR105))) == NULL)
+return VAR19;
+
+
+VAR108->VAR84 = VAR84;
+
+
+VAR108->VAR25 = *VAR106;
+*VAR106 = VAR108;
+
+return VAR12;
+}
+
+
+
+int FUN28(VAR105 **VAR106, void *VAR84)
+{
+VAR105 *VAR109;
+if(VAR106 == NULL || VAR84 == NULL)
+return VAR19;
+if((VAR109 = malloc(sizeof(*VAR109))) == NULL)
+return VAR19;
+VAR109->VAR25 = *VAR106;
+VAR109->VAR84 = VAR84;
+*VAR106 = VAR109;
+return VAR12;
+}
+
+
+int FUN16(VAR105 **VAR106, void *VAR84, size_t VAR110) {
+VAR105 *VAR111;
+if(VAR106 == NULL || VAR84 == NULL)
+return VAR19;
+for(VAR111 = *VAR106; VAR111; VAR111 = VAR111->VAR25) {
+if(!memcmp(VAR111->VAR84, VAR84, VAR110))
+return VAR69;
+}
+return FUN28(VAR106, VAR84);
+}

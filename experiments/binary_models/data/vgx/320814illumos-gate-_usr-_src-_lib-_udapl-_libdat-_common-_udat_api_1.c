@@ -1,0 +1,1 @@
+DAT_RETURN FUN1 ( IN DAT_EVD_HANDLE VAR1 ) { return ( FUN2 ( VAR1 ) ) ; }

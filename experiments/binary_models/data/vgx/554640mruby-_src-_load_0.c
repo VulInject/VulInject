@@ -1,0 +1,31 @@
+static VAR1
+FUN1(VAR2 *VAR3, const VAR4 *VAR5, const VAR4 *VAR6, VAR7 *VAR8, uint8_t VAR9, VAR10 **VAR11)
+{
+int VAR12 = FUN2(VAR3);
+mrb_bool VAR13 = FUN3(VAR3, VAR5, VAR6, VAR8, VAR9, VAR11);
+VAR10 **VAR14;
+int VAR15;
+
+FUN4(VAR3, VAR12);
+if (!VAR13) {
+return VAR16;
+}
+
+VAR14 = (VAR10**)FUN5(VAR3, (*VAR11)->VAR17, sizeof(VAR10*));
+(*VAR11)->VAR14 = (const VAR10**)VAR14;
+
+VAR5 += *VAR8;
+for (VAR15=0; VAR15<(*VAR11)->VAR17; VAR15++) {
+size_t VAR17;
+
+VAR13 = FUN1(VAR3, VAR5, VAR6, &VAR17, VAR9, &VAR14[VAR15]);
+FUN4(VAR3, VAR12);
+if (!VAR13) {
+return VAR16;
+}
+VAR5 += VAR17;
+*VAR8 += VAR17;
+}
+
+return VAR18;
+}

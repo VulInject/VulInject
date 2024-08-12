@@ -1,0 +1,1 @@
+bool FUN1 ( uint32_t VAR1 , VAR2 * VAR3 , VAR2 * VAR4 ) { if ( VAR1 < VAR5 ) { return false ; } * VAR3 = ( VAR2 ) ( FUN2 ( VAR1 / VAR6 ) * VAR6 ) ; * VAR4 = VAR6 ; return true ; }

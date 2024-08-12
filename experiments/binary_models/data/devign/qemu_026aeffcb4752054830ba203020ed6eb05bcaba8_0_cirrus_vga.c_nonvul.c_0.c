@@ -1,0 +1,1 @@
+static void FUN1(VAR1 *VAR2, uint32_t VAR3, const VAR4 *VAR5, int VAR6, int VAR7, int VAR8, int VAR9) {}

@@ -1,0 +1,87 @@
+FUN1 (VAR1 *VAR2)
+{
+char   VAR3[256];
+mode_t VAR4;
+char  *VAR5;
+int    VAR6;
+int    VAR7;
+
+
+FUN2 (VAR8);
+FUN3 (VAR9);
+FUN4 (VAR10);
+
+
+VAR7 = FUN5 (VAR11,
+VAR12,
+(VAR13)VAR14,
+VAR2,
+NULL,
+sizeof (VAR3),
+VAR3);
+if (! VAR7) {
+FUN6 (VAR15, "", VAR3);
+}
+
+
+FUN7 ("");
+
+
+VAR4 = FUN8 (0);
+FUN8 (VAR4);
+VAR7 = FUN9 (&VAR2->VAR16,
+&VAR2->VAR17,
+sizeof (VAR3),
+VAR3);
+if (! VAR7) {
+FUN6 (VAR15, FUN10(""), VAR3);
+}
+
+FUN8 (VAR4);
+
+
+for (VAR6 = VAR2->VAR18 = 0; VAR6 < VAR2->VAR16; VAR6++) {
+char *VAR19 = FUN11 (VAR2->VAR17[VAR6]);
+
+if (!FUN12 (VAR19, "", sizeof ("") - 1) ||
+!FUN12 (VAR19, "", sizeof ("") - 1)) {
+if (VAR6 > VAR2->VAR18) {
+IceListenObj VAR20;
+VAR20 = VAR2->VAR17[VAR6];
+VAR2->VAR17[VAR6] = VAR2->VAR17[VAR2->VAR18];
+VAR2->VAR17[VAR2->VAR18] = VAR20;
+}
+VAR2->VAR18++;
+}
+free (VAR19);
+}
+
+if (VAR2->VAR18 == 0) {
+FUN6 (VAR15, "");
+}
+
+if (VAR2->VAR18 != VAR2->VAR16) {
+
+VAR5 = FUN13 (VAR2->VAR16 - VAR2->VAR18,
+VAR2->VAR17 + VAR2->VAR18);
+FUN14 ("",
+VAR2->VAR16 - VAR2->VAR18,
+VAR5);
+free (VAR5);
+}
+
+
+if (!FUN15 (VAR2, VAR15)) {
+
+FUN6 (VAR15,
+"",
+FUN16 ());
+}
+
+VAR5 = FUN13 (VAR2->VAR18,
+VAR2->VAR17);
+
+FUN17 ("", VAR5);
+FUN18 ("", VAR5);
+free (VAR5);
+}

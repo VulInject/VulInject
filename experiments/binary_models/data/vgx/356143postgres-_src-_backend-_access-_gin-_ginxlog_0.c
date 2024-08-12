@@ -1,0 +1,181 @@
+static void
+FUN1(Page VAR1, VAR2 *VAR3)
+{
+int			VAR4;
+int			VAR5;
+VAR6 *VAR7;
+Pointer		VAR8;
+char	   *VAR9;
+int			VAR10;
+Pointer		VAR11 = NULL;
+Pointer		VAR12;
+Pointer		VAR13;
+
+
+if (!FUN2(VAR1))
+{
+ItemPointer VAR14 = (VAR15) FUN3(VAR1);
+int			VAR16 = FUN4(VAR1)->VAR17;
+int			VAR18;
+
+
+if (VAR16 > 0)
+{
+VAR6 *VAR19;
+
+VAR19 = FUN5(VAR14, VAR16,
+VAR20, &VAR18);
+VAR10 = FUN6(VAR19);
+
+FUN7(VAR18 == VAR16);
+
+memcpy(FUN8(VAR1), VAR19, VAR10);
+}
+else
+{
+VAR10 = 0;
+}
+
+FUN9(VAR1, VAR10);
+FUN10(VAR1);
+FUN4(VAR1)->VAR17 = VAR21;
+}
+
+VAR7 = FUN8(VAR1);
+VAR12 = (VAR22) VAR7;
+VAR8 = (VAR22) VAR7 + FUN11(VAR1);
+VAR5 = 0;
+
+VAR9 = ((char *) VAR3) + sizeof(VAR2);
+for (VAR4 = 0; VAR4 < VAR3->VAR23; VAR4++)
+{
+uint8		VAR24 = *((VAR25 *) (VAR9++));
+uint8		VAR26 = *((VAR25 *) (VAR9++));
+VAR6 *VAR27 = NULL;
+int			VAR28 = 0;
+VAR29 *VAR30 = NULL;
+uint16		VAR31 = 0;
+VAR29 *VAR32;
+int			VAR33;
+VAR29 *VAR34;
+int			VAR35;
+int			VAR36;
+
+
+if (VAR26 == VAR37 ||
+VAR26 == VAR38)
+{
+VAR27 = (VAR6 *) VAR9;
+VAR28 = FUN6(VAR27);
+VAR9 += FUN12(VAR28);
+}
+
+if (VAR26 == VAR39)
+{
+memcpy(&VAR31, VAR9, sizeof(VAR40));
+VAR9 += sizeof(VAR40);
+VAR30 = (VAR29 *) VAR9;
+VAR9 += VAR31 * sizeof(VAR29);
+}
+
+
+FUN7(VAR5 <= VAR24);
+while (VAR5 < VAR24)
+{
+
+VAR36 = FUN6(VAR7);
+if (VAR11)
+{
+FUN7(VAR12 + VAR36 < FUN13(VAR1));
+memcpy(VAR12, (VAR22) VAR7, VAR36);
+}
+VAR12 += VAR36;
+VAR7 = FUN14(VAR7);
+VAR5++;
+}
+
+
+if (VAR26 == VAR39)
+{
+int			VAR18;
+
+VAR32 = FUN15(VAR7, &VAR33);
+
+VAR34 = FUN16(VAR30, VAR31,
+VAR32, VAR33,
+&VAR35);
+FUN7(VAR35 == VAR33 + VAR31);
+
+VAR27 = FUN5(VAR34, VAR35,
+VAR20, &VAR18);
+FUN7(VAR18 == VAR35);
+
+VAR28 = FUN6(VAR27);
+VAR26 = VAR38;
+}
+
+VAR13 = (VAR22) VAR7;
+if (VAR13 != VAR8)
+VAR36 = FUN6(VAR7);
+else
+{
+
+FUN7(VAR26 == VAR37);
+VAR36 = 0;
+}
+
+
+if (!VAR11 && VAR13 != VAR8)
+{
+int			VAR41 = VAR8 - VAR13;
+
+VAR11 = (VAR22) FUN17(VAR41);
+memcpy(VAR11, VAR13, VAR41);
+VAR13 = VAR11;
+VAR7 = (VAR6 *) VAR13;
+VAR8 = VAR13 + VAR41;
+}
+
+switch (VAR26)
+{
+case VAR42:
+VAR13 += VAR36;
+VAR5++;
+break;
+
+case VAR37:
+
+FUN7(VAR12 + VAR28 <= FUN13(VAR1));
+memcpy(VAR12, VAR27, VAR28);
+VAR12 += VAR28;
+break;
+
+case VAR38:
+
+FUN7(VAR12 + VAR28 <= FUN13(VAR1));
+memcpy(VAR12, VAR27, VAR28);
+VAR12 += VAR28;
+VAR13 += VAR36;
+VAR5++;
+break;
+
+default:
+FUN18(VAR43, "", VAR26);
+}
+VAR7 = (VAR6 *) VAR13;
+}
+
+
+VAR13 = (VAR22) VAR7;
+if (VAR13 != VAR8 && VAR11)
+{
+int			VAR44 = VAR8 - VAR13;
+
+FUN7(VAR12 + VAR44 <= FUN13(VAR1));
+memcpy(VAR12, VAR13, VAR44);
+VAR12 += VAR44;
+}
+
+VAR10 = VAR12 - (VAR22) FUN8(VAR1);
+FUN9(VAR1, VAR10);
+}

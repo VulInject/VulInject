@@ -1,0 +1,4 @@
+static void FUN1(VAR1* VAR2, BYTE VAR3, BOOL VAR4)
+{
+FUN2(VAR2, (VAR5 | FUN3(VAR4)) | (VAR6 & VAR3));
+}

@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( struct VAR2 * VAR3 , struct VAR4 * VAR5 , umode_t VAR6 ) { struct VAR1 * VAR1 ; struct VAR7 * VAR8 ; struct VAR9 * VAR9 ; VAR1 = FUN2 ( VAR3 , VAR5 , VAR6 ) ; if ( ! VAR1 ) { return VAR10 ; } VAR8 = FUN3 ( VAR1 ) ; VAR9 = VAR8 -> VAR9 ; FUN4 ( & VAR9 -> VAR11 ) ; FUN5 ( & VAR8 -> VAR12 , & VAR9 -> VAR13 ) ; FUN6 ( & VAR9 -> VAR11 ) ; return VAR1 ; }

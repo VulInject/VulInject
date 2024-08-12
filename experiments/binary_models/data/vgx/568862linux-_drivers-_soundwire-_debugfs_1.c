@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { char VAR3 [ 16 ] ; if ( ! VAR4 ) { return ; } sprintf ( VAR3 , "" , VAR2 -> VAR5 , VAR2 -> VAR6 ) ; VAR2 -> VAR7 = FUN2 ( VAR3 , VAR4 ) ; }

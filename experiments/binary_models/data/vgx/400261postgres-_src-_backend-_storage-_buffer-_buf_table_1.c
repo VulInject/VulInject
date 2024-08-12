@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , uint32 VAR3 ) { VAR4 * VAR5 ; VAR5 = ( VAR4 * ) FUN2 ( VAR6 , VAR2 , VAR3 , VAR7 , NULL ) ; return VAR5 -> VAR8 ; }

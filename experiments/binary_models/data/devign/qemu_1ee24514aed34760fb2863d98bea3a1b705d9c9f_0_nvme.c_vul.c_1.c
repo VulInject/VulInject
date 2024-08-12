@@ -1,0 +1,18 @@
+static VAR1 FUN1(VAR2 *VAR3, VAR4 *VAR5, VAR6 *VAR7, VAR8 *VAR9)
+{
+    VAR10 *VAR11 = (VAR10 *)VAR7;
+    const uint8_t VAR12 = FUN2(VAR5->VAR13.VAR14);
+    const uint8_t VAR15 = VAR5->VAR13.VAR16[VAR12].VAR17;
+    uint64_t VAR18 = FUN3(VAR11->VAR18);
+    uint32_t VAR19 = FUN4(VAR11->VAR19) + 1;
+    uint64_t VAR20 = VAR18 << (VAR15 - VAR21);
+    uint32_t VAR22 = VAR19 << (VAR15 - VAR21);
+    if (VAR18 + VAR19 > VAR5->VAR13.VAR23)
+    {
+        return VAR24 | VAR25;
+    }
+    VAR9->VAR26 = false;
+    FUN5(FUN6(VAR3->VAR27.VAR28), &VAR9->VAR29, 0, VAR30);
+    VAR9->VAR31 = FUN7(VAR3->VAR27.VAR28, VAR20, VAR22, VAR32, VAR33, VAR9);
+    return VAR34;
+}

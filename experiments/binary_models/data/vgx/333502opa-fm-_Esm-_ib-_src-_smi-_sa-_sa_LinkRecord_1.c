@@ -1,0 +1,1 @@
+bool_t FUN1 ( VAR1 * VAR2 , VAR1 * VAR3 , uint32_t VAR4 , uint32_t VAR5 ) { return ( VAR4 < VAR5 ) ?VAR6 : VAR7 ; }

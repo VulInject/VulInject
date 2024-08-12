@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( VAR1 * VAR2 , const VAR3 * VAR4 , VAR5 * VAR6 ) { uInt VAR7 = 0 ; Int VAR8 ; decNumber VAR9 ; int VAR10 ; uInt VAR11 , VAR12 ; uInt VAR13 ; uInt VAR14 [ 2 ] { 0 0 } ; ; }

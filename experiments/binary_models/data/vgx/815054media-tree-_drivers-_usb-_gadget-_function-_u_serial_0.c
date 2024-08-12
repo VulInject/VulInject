@@ -1,0 +1,46 @@
+static int FUN1(void)
+{
+unsigned			VAR1;
+int				VAR2;
+
+VAR3 = FUN2(VAR4);
+if (!VAR3)
+return -VAR5;
+
+VAR3->VAR6 = "";
+VAR3->VAR7 = "";
+
+
+VAR3->VAR8 = VAR9;
+VAR3->VAR10 = VAR11;
+VAR3->VAR12 = VAR13 | VAR14;
+VAR3->VAR15 = VAR16;
+
+
+VAR3->VAR15.VAR17 =
+VAR18 | VAR19 | VAR20 | VAR21 | VAR22;
+VAR3->VAR15.VAR23 = 9600;
+VAR3->VAR15.VAR24 = 9600;
+
+FUN3(VAR3, &VAR25);
+for (VAR1 = 0; VAR1 < VAR4; VAR1++)
+FUN4(&VAR26[VAR1].VAR27);
+
+
+VAR2 = FUN5(VAR3);
+if (VAR2) {
+FUN6("",
+VAR28, VAR2);
+goto VAR29;
+}
+
+FUN7("", VAR28,
+VAR4,
+(VAR4 == 1) ? "" : "");
+
+return VAR2;
+VAR29:
+FUN8(VAR3);
+VAR3 = NULL;
+return VAR2;
+}

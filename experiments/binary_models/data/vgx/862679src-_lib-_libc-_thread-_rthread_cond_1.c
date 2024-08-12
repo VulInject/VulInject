@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 ) { pthread_cond_t VAR3 ; int VAR4 ; VAR3 = * VAR2 ; FUN2 ( & VAR3 -> VAR5 ) ; VAR4 = FUN3 ( & VAR3 -> VAR5 , 1 ) ; FUN4 ( 5 , "" , FUN5 ( ) , ( void * ) VAR3 , VAR4 ) ; return ( 0 ) ; }

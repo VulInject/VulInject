@@ -1,0 +1,197 @@
+VAR1 *FUN1(duk_alloc_function VAR2,
+duk_realloc_function VAR3,
+duk_free_function VAR4,
+void *VAR5,
+duk_fatal_function VAR6) {
+VAR1 *VAR7 = NULL;
+
+
+FUN2(VAR8);
+
+FUN3(FUN4(""));
+
+
+
+FUN5();
+FUN6();
+FUN7();
+
+
+FUN3(FUN4(""));
+FUN8();
+FUN3(FUN4(""));
+
+
+
+do {
+
+volatile double VAR9 = 0.0;
+volatile double VAR10 = 0.0;
+VAR11 = VAR9 / VAR10;
+} while (0);
+
+do {
+
+volatile double VAR9 = 1.0;
+volatile double VAR10 = 0.0;
+VAR12 = VAR9 / VAR10;
+} while (0);
+
+
+
+VAR7 = (VAR1 *) FUN9(VAR5, sizeof(VAR1));
+if (!VAR7) {
+goto VAR13;
+}
+
+
+
+FUN10(VAR7, sizeof(*VAR7));
+
+
+VAR7->VAR5 = NULL;
+VAR7->VAR14 = NULL;
+VAR7->VAR15 = NULL;
+VAR7->VAR16 = NULL;
+VAR7->VAR17 = NULL;
+VAR7->VAR18 = NULL;
+VAR7->VAR19 = NULL;
+VAR7->VAR20 = NULL;
+
+VAR7->VAR21 = (VAR22 *) NULL;
+VAR7->VAR23 = (VAR24 **) NULL;
+
+
+{
+duk_small_uint_t VAR25;
+for (VAR25 = 0; VAR25 < VAR26; VAR25++) {
+VAR7->VAR27[VAR25] = NULL;
+}
+}
+VAR7->VAR28 = NULL;
+VAR7->VAR29 = NULL;
+VAR7->VAR30 = NULL;
+VAR7->VAR31 = NULL;
+VAR7->VAR32 = NULL;
+VAR7->VAR33 = NULL;
+VAR7->VAR34 = NULL;
+VAR7->VAR35 = NULL;
+
+VAR7->VAR2 = VAR2;
+VAR7->VAR3 = VAR3;
+VAR7->VAR4 = VAR4;
+VAR7->VAR5 = VAR5;
+VAR7->VAR6 = VAR6;
+
+
+VAR7->VAR36 = FUN11(VAR7->VAR5, (void *) NULL);
+VAR7->VAR37 = FUN11(VAR7->VAR5, (void *) FUN12(VAR7));
+
+
+
+VAR7->VAR38 = 0;
+VAR7->VAR39 = VAR40;
+
+
+
+
+
+FUN3(FUN4("", (long) VAR41));
+VAR7->VAR42 = (VAR43) VAR41;
+VAR7->VAR42 = (VAR43) (VAR44) VAR7;
+VAR7->VAR45 = (VAR43) (VAR44) VAR7;
+VAR7->VAR42 ^= 5381;  
+
+VAR7->VAR46.VAR47 = NULL;
+FUN13(VAR7->VAR46.VAR48 == VAR49);  
+
+FUN14(&VAR7->VAR46.VAR50);
+FUN14(&VAR7->VAR46.VAR51);
+
+
+
+
+FUN10(VAR7->VAR23, sizeof(VAR52) * VAR53);
+{
+duk_small_uint_t VAR25;
+for (VAR25 = 0; VAR25 < VAR53; VAR25++) {
+VAR7->VAR23[VAR25].VAR54.VAR55 = VAR7->VAR36;
+VAR7->VAR23[VAR25].VAR54.VAR56 = NULL;
+}
+}
+
+
+
+VAR7->VAR21 = (VAR22 *) FUN9(VAR5, sizeof(VAR22) * VAR57);
+if (!VAR7->VAR21) {
+goto VAR13;
+}
+VAR7->VAR23 = (VAR24 **) FUN9(VAR5, sizeof(VAR24 *) * VAR57);
+if (!VAR7->VAR23) {
+goto VAR13;
+}
+VAR7->VAR58 = VAR57;
+{
+duk_small_uint_t VAR25;
+FUN13(VAR7->VAR58 == VAR57);
+for (VAR25 = 0; VAR25 < VAR57; VAR25++) {
+VAR7->VAR21[VAR25] = VAR7->VAR36;
+VAR7->VAR23[VAR25] = NULL;
+}
+}
+FUN10(VAR7->VAR21, sizeof(VAR22) * VAR57);
+FUN10(VAR7->VAR23, sizeof(VAR24 *) * VAR57);
+
+
+
+{
+duk_small_uint_t VAR25;
+for (VAR25 = 0; VAR25 < VAR59; VAR25++) {
+VAR7->VAR60[VAR25].VAR61 = NULL;
+}
+}
+
+
+
+
+
+FUN15(FUN16(""));
+if (!FUN17(VAR7)) {
+goto VAR13;
+}
+
+
+
+FUN15(FUN16(""));
+if (!FUN18(VAR7)) {
+goto VAR13;
+}
+
+
+
+FUN15(FUN16(""));
+FUN13(VAR7->VAR18 != NULL);
+VAR7->VAR20 = FUN19(VAR7, VAR62 |
+FUN20(VAR63));
+if (!VAR7->VAR20) {
+goto VAR13;
+}
+FUN21(VAR7->VAR18, VAR7->VAR20);
+
+
+
+FUN3(FUN4("", (void *) VAR7));
+return VAR7;
+
+VAR13:
+FUN3(FUN4(""));
+
+if (VAR7) {
+
+FUN13(VAR7->VAR2 != NULL);
+FUN13(VAR7->VAR3 != NULL);
+FUN13(VAR7->VAR4 != NULL);
+FUN22(VAR7);
+}
+return NULL;
+}

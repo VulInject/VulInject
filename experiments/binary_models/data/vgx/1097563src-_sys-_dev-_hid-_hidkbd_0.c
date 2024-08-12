@@ -1,0 +1,12 @@
+void
+FUN1(struct VAR1 *VAR2, VAR3 *VAR4, int *VAR5)
+{
+int VAR6;
+
+VAR6 = VAR2->VAR7[0];
+VAR2->VAR8--;
+memmove(VAR2->VAR7, VAR2->VAR7+1,
+VAR2->VAR8 * sizeof(VAR9));
+*VAR4 = VAR6 & VAR10 ? VAR11 : VAR12;
+*VAR5 = VAR6 & VAR13;
+}

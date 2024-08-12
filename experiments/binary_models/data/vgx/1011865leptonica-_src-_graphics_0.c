@@ -1,0 +1,33 @@
+VAR1 *
+FUN1(VAR2      *VAR3,
+l_int32   VAR4,
+VAR5  *VAR6,
+VAR5  *VAR7)
+{
+l_float32  VAR8, VAR9, VAR10, VAR11;
+VAR1       *VAR12;
+VAR2       *VAR13, *VAR14;
+
+if (VAR6) *VAR6 = 0;
+if (VAR7) *VAR7 = 0;
+if (!VAR3)
+return (VAR1 *)FUN2("", VAR15, NULL);
+
+
+if ((VAR13 = FUN3(VAR3, VAR4, 1, 0)) == NULL)
+return (VAR1 *)FUN2("", VAR15, NULL);
+if (VAR4 < 2)
+VAR14 = FUN4(VAR13);
+else
+VAR14 = FUN5(VAR13);
+
+
+FUN6(VAR14, &VAR8, &VAR9, &VAR10, &VAR11);
+if (VAR6) *VAR6 = (VAR5)(VAR8 + 0.5);
+if (VAR7) *VAR7 = (VAR5)(VAR10 + 0.5);
+VAR12 = FUN7((VAR5)(VAR9 + 0.5) + 1, (VAR5)(VAR11 + 0.5) + 1, 1);
+FUN8(VAR12, VAR14, VAR4, VAR16, 1);
+FUN9(&VAR13);
+FUN9(&VAR14);
+return VAR12;
+}

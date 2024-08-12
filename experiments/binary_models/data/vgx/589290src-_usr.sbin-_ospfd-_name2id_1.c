@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , u_int16_t VAR3 , u_int32_t VAR4 ) { struct VAR5 * VAR6 ; FUN2 ( , , ) if ( VAR6 -> VAR3 == VAR3 ) { VAR6 -> VAR7 = VAR4 ; } }

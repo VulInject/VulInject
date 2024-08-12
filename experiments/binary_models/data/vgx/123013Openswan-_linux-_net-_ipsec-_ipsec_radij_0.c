@@ -1,0 +1,45 @@
+struct VAR1 *
+FUN1(struct VAR2 *VAR3)
+{
+struct VAR4 *VAR5;
+char VAR6[VAR7], VAR8[VAR7];
+
+if (VAR9 & VAR10) {
+unsigned short *VAR11, *VAR12;
+unsigned char *VAR13, *VAR14, *VAR15;
+if (VAR3->VAR16 == VAR17) {
+FUN2(VAR18, &VAR3->VAR19, 0, VAR6, sizeof(VAR6));
+FUN2(VAR18, &VAR3->VAR20, 0, VAR8, sizeof(VAR8));
+VAR11 = &VAR3->VAR21;
+VAR12 = &VAR3->VAR22;
+VAR13 = &VAR3->VAR23;
+VAR14 = "";
+VAR15 = "";
+} else {
+FUN3(VAR3->VAR24, 0, VAR6, sizeof(VAR6));
+FUN3(VAR3->VAR25, 0, VAR8, sizeof(VAR8));
+VAR11 = &VAR3->VAR26;
+VAR12 = &VAR3->VAR27;
+VAR13 = &VAR3->VAR28;
+VAR14 = VAR15 = "";
+}
+FUN4(VAR29,
+""
+"",
+VAR14, VAR6, VAR15, FUN5(*VAR11),
+VAR14, VAR8, VAR15, FUN5(*VAR12),
+*VAR13);
+}
+VAR5 = FUN6((VAR30)VAR3, VAR31);
+if(VAR5) {
+if (VAR29 && VAR32)
+FUN7(&((struct VAR1*)VAR5)->VAR33.VAR34.VAR35, 0, VAR6, sizeof(VAR6));
+FUN4(VAR29 && VAR32,
+""
+"",
+((struct VAR1*)VAR5)->VAR33.VAR36,
+FUN8(((struct VAR1*)VAR5)->VAR33.VAR37),
+VAR6);
+}
+return (struct VAR1 *)VAR5;
+}

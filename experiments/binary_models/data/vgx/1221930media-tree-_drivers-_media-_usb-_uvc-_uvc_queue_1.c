@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , enum v4l2_buf_type VAR3 ) { int VAR4 ; VAR4 = FUN2 ( & VAR2 -> VAR2 , VAR3 ) ; FUN3 ( & VAR2 -> mutex ) ; return VAR4 ; }

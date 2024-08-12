@@ -1,0 +1,1 @@
+void * FUN1 ( VAR1 * VAR2 , const unsigned char * VAR3 , size_t VAR4 ) { VAR5 * VAR6 ; if ( VAR4 > VAR7 ) { return NULL ; } VAR6 = ( VAR5 * ) FUN2 ( sizeof ( * VAR6 ) ) ; if ( VAR6 != NULL ) { * VAR2 = * & VAR8 ; VAR6 -> VAR9 = VAR3 ; VAR6 -> VAR10 = VAR4 ; } return VAR6 ; }

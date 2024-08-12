@@ -1,0 +1,1 @@
+void FUN1 ( void * VAR1 , void * VAR2 ) { struct VAR3 * VAR4 = VAR1 ; int VAR5 ; VAR5 = FUN2 ( ) ; VAR4 -> VAR6 = 0 ; FUN3 ( VAR5 , NULL ) ; }

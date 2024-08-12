@@ -1,0 +1,1 @@
+static RD_NTSTATUS FUN1 ( RD_NTHANDLE VAR1 , VAR2 * VAR3 , uint32 VAR4 , uint64 VAR5 , VAR6 * VAR7 ) { FUN2 ( VAR5 ) ; VAR8 * VAR9 ; VAR9 = FUN3 ( VAR1 , NULL ) ; * VAR7 = VAR4 * fwrite ( VAR3 , VAR4 , 1 , VAR9 -> VAR10 ) ; if ( FUN4 ( VAR9 -> VAR10 ) ) { * VAR7 = 0 ; return VAR11 ; } return VAR12 ; }

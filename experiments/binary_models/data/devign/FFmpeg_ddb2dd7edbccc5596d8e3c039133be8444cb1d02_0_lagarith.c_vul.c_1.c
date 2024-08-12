@@ -1,0 +1,1 @@
+static VAR1 FUN1(int8_t VAR2) { return (VAR2 << 1) ^ (VAR2 >> 7); }

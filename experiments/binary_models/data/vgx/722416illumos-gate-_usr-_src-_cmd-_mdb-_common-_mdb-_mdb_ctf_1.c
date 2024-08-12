@@ -1,0 +1,1 @@
+int FUN1 ( mdb_ctf_id_t VAR1 , const char * VAR2 , VAR3 * VAR4 , VAR5 * VAR6 ) { mbr_info_t VAR7 ; int VAR8 ; VAR7 . VAR9 = VAR2 ; VAR7 . VAR10 = VAR4 ; VAR7 . VAR11 = VAR6 ; VAR8 = FUN2 ( VAR1 , VAR12 , & VAR7 ) ; if ( VAR8 == - 1 ) { return ( - 1 ) ; } return ( 0 ) ; }

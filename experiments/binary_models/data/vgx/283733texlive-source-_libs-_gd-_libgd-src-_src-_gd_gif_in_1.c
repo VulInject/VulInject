@@ -1,0 +1,1 @@
+static int FUN1 ( void ) { VAR1 = ! ! getenv ( "" ) ; VAR2 = 1 ; return ( VAR1 ) ; } static { unsigned int VAR3 ; unsigned int VAR4 ; unsigned char VAR5 [ 3 ] [ VAR6 ] ; unsigned int VAR7 ; unsigned int VAR8 ; unsigned int VAR9 ; int VAR10 ; } , VAR11

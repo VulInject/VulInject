@@ -1,0 +1,1 @@
+static inline unsigned char FUN1(uint8_t VAR1, uint8_t VAR2, uint8_t VAR3) { return ((((VAR1) / 47) % 6) * 6 * 6 + (((VAR2) / 47) % 6) * 6 + (((VAR3) / 47) % 6)); }

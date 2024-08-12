@@ -1,0 +1,65 @@
+static void FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR2);
+struct VAR7 *VAR8 = VAR4->VAR9.VAR8;
+struct VAR10 *VAR11;
+struct VAR12 *VAR13;
+struct VAR14 *VAR15;
+unsigned long VAR16;
+int VAR17;
+
+
+VAR13 = FUN3(VAR8,
+VAR2->VAR18);
+if (FUN4(!VAR13))
+return;
+VAR11 = FUN5(VAR8, VAR13);
+if (FUN4(!VAR11))
+return;
+VAR15 = FUN6(VAR8, VAR11->VAR19);
+if (FUN4(!VAR15))
+return;
+
+VAR6->VAR20.VAR21 = VAR13->VAR22.VAR23
+? VAR24 : VAR25;
+
+if (VAR13->VAR22.VAR23) {
+const struct VAR26 *VAR27;
+struct hdmi_avi_infoframe VAR28;
+
+VAR27 = &VAR15->VAR29;
+VAR17 = FUN7(&VAR28, VAR13,
+VAR27);
+if (VAR17 == 0)
+VAR6->VAR20.VAR30 = VAR28;
+}
+
+FUN8(&VAR6->VAR31);
+
+VAR17 = FUN9(VAR6);
+if (VAR17) {
+FUN10("");
+goto VAR32;
+}
+
+if (VAR6->VAR33) {
+VAR17 = FUN11(&VAR6->VAR34, &VAR6->VAR35,
+&VAR6->VAR36,
+VAR6->VAR20.VAR37.VAR38);
+if (VAR17) {
+FUN10("", VAR17);
+VAR6->FUN12(&VAR6->VAR39->VAR40);
+VAR6->VAR33 = false;
+}
+}
+
+FUN13(&VAR6->VAR41, VAR16);
+if (VAR6->VAR33 && VAR6->VAR42)
+FUN14(VAR6);
+VAR6->VAR43 = true;
+FUN15(&VAR6->VAR41, VAR16);
+
+VAR32:
+FUN16(&VAR6->VAR31);
+}

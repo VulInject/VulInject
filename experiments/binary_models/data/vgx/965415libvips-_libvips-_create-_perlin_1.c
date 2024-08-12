@@ -1,0 +1,1 @@
+static void * FUN1 ( void * VAR1 ) { int VAR2 ; for ( VAR2 = 0 ; VAR2 < 256 ; VAR2 ++ ) { double VAR3 = 2 * VAR4 * VAR2 / 256.0 ; VAR5 [ VAR2 ] = FUN2 ( VAR3 ) ; VAR6 [ VAR2 ] = FUN3 ( VAR3 , NULL ) ; } return ( NULL ) ; }

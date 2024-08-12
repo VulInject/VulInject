@@ -1,0 +1,54 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+const void *VAR5, size_t VAR6, umode_t VAR7,
+uid_t VAR8, gid_t VAR9, cfs_cap_t VAR10,
+__u64 VAR11, struct VAR12 **VAR13)
+{
+struct VAR14       *VAR15 = VAR2->VAR16;
+struct VAR17	  *VAR18 = &VAR15->VAR19.VAR18;
+struct VAR20     *VAR21;
+int		      VAR22;
+
+VAR22 = FUN2(VAR15);
+if (VAR22)
+return VAR22;
+
+if (!VAR18->VAR23.VAR24)
+return -VAR25;
+
+VAR21 = FUN3(VAR18, VAR4, &VAR4->VAR26);
+if (FUN4(VAR21))
+return FUN5(VAR21);
+
+FUN6(VAR27, ""VAR28"",
+(int)VAR4->VAR29, VAR4->VAR30,
+FUN7(&VAR4->VAR26), VAR4->VAR31);
+
+VAR22 = FUN8(NULL, VAR2, &VAR4->VAR32, VAR4);
+if (VAR22)
+return VAR22;
+
+if (FUN9(VAR2) & VAR33) {
+
+VAR21 = FUN10(VAR18, &VAR4->VAR32);
+if (FUN4(VAR21))
+return FUN5(VAR21);
+
+VAR4->VAR31 = VAR21->VAR34;
+} else {
+FUN6(VAR35, "");
+}
+
+FUN6(VAR27, ""VAR28"",
+FUN7(&VAR4->VAR26), VAR4->VAR31);
+
+VAR4->VAR36 |= VAR37;
+VAR22 = FUN11(VAR21->VAR38, VAR4, VAR5, VAR6, VAR7, VAR8, VAR9,
+VAR10, VAR11, VAR13);
+
+if (VAR22 == 0) {
+if (!*VAR13)
+return VAR22;
+FUN6(VAR27, ""VAR28"", FUN7(&VAR4->VAR32));
+}
+return VAR22;
+}

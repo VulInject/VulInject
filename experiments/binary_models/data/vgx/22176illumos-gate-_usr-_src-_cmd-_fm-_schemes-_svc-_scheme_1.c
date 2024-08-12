@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 ) { uint8_t VAR3 ; int VAR4 , VAR5 ; VAR6 * VAR7 ; if ( FUN2 ( VAR2 , VAR8 , & VAR3 ) != 0 || VAR3 > VAR9 ) { return ( FUN3 ( VAR10 ) ) ; } VAR4 = 0 ; VAR5 = FUN4 ( VAR7 , VAR2 , & VAR4 ) ; FUN5 ( VAR7 ) ; if ( VAR4 != 0 ) { return ( VAR11 ) ; } else { return ( VAR5 ) ; } }

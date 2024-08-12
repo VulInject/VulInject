@@ -1,0 +1,1 @@
+char * FUN1 ( int VAR1 ) { if ( FUN2 ( 0 || VAR1 ) 65535 ) { return VAR2 ; } return VAR3 [ VAR1 ] ; }

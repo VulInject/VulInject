@@ -1,0 +1,1 @@
+boolean_t FUN1 ( zfs_prop_t VAR1 ) { VAR2 * VAR3 = & VAR4 [ VAR1 ] ; return ( VAR3 -> VAR5 != VAR6 ) ; }

@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( struct VAR2 * VAR3 , uint64_t VAR4 , uint64_t VAR5 ) { struct VAR6 * VAR7 ; if ( VAR3 == NULL || FUN2 ( & VAR3 -> VAR8 ) ) { return VAR9 ; } FUN3 ( , ) { struct VAR1 * VAR10 = FUN4 ( VAR7 , VAR1 , VAR8 ) ; if ( VAR10 -> VAR4 == VAR4 && VAR10 -> VAR5 == VAR5 ) { return VAR10 ; } } return NULL ; }

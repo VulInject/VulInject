@@ -1,0 +1,1 @@
+static char * FUN1 ( const char * VAR1 , unsigned int VAR2 ) { char * VAR3 ; if ( ! VAR1 ) { return VAR4 ; } if ( ! VAR5 ) { VAR1 = FUN2 ( VAR1 ) ; } if ( asprintf ( & VAR3 , "" , VAR1 , VAR2 ) < 0 ) { return NULL ; } return VAR3 ; }

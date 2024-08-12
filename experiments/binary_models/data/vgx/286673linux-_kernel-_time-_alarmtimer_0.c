@@ -1,0 +1,60 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+ktime_t VAR3, VAR4, VAR5;
+int VAR6, VAR7, VAR8;
+struct VAR9 *VAR10;
+unsigned long VAR11;
+struct rtc_time VAR12;
+
+FUN2(&VAR13, VAR11);
+VAR3 = VAR14;
+VAR5 = VAR15;
+VAR8 = VAR16;
+VAR14 = 0;
+FUN3(&VAR13, VAR11);
+
+VAR10 = FUN4();
+
+if (!VAR10)
+return 0;
+
+
+for (VAR6 = 0; VAR6 < VAR17; VAR6++) {
+struct VAR18 *VAR19 = &VAR20[VAR6];
+struct VAR21 *VAR22;
+ktime_t VAR23;
+
+FUN2(&VAR19->VAR24, VAR11);
+VAR22 = FUN5(&VAR19->VAR25);
+FUN3(&VAR19->VAR24, VAR11);
+if (!VAR22)
+continue;
+VAR23 = FUN6(VAR22->VAR5, VAR19->FUN7());
+if (!VAR3 || (VAR23 < VAR3)) {
+VAR5 = VAR22->VAR5;
+VAR3 = VAR23;
+VAR8 = VAR6;
+}
+}
+if (VAR3 == 0)
+return 0;
+
+if (FUN8(VAR3) < 2 * VAR26) {
+FUN9(VAR2, 2 * VAR27);
+return -VAR28;
+}
+
+FUN10(VAR5, VAR8);
+
+
+FUN11(VAR10, &VAR29);
+FUN12(VAR10, &VAR12);
+VAR4 = FUN13(VAR12);
+VAR4 = FUN14(VAR4, VAR3);
+
+
+VAR7 = FUN15(VAR10, &VAR29, VAR4, 0);
+if (VAR7 < 0)
+FUN9(VAR2, VAR27);
+return VAR7;
+}

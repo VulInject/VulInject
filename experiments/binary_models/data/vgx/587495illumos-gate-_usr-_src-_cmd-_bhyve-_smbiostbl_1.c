@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , uint32_t VAR3 ) { memcpy ( VAR2 -> VAR4 , VAR5 , VAR6 ) ; VAR2 -> VAR7 = 0x1F ; assert ( sizeof ( VAR1 ) == VAR2 -> VAR7 ) ; VAR2 -> VAR8 = 2 ; VAR2 -> VAR9 = 6 ; VAR2 -> VAR10 = 0 ; memcpy ( VAR2 -> VAR11 , VAR12 , VAR13 ) ; VAR2 -> VAR3 = VAR3 ; VAR2 -> VAR14 = ( VAR2 -> VAR8 & 0xf ) << 4 | ( VAR2 -> VAR9 & 0xf ) ; }

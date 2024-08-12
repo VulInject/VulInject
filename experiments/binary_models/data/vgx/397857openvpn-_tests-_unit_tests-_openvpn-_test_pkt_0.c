@@ -1,0 +1,61 @@
+void
+FUN1(void **VAR1)
+{
+struct link_socket_actual VAR2 = { 0 };
+struct tls_auth_standalone VAR3 = { 0 };
+struct tls_pre_decrypt_state VAR4 = { 0 };
+enum first_packet_verdict VAR5;
+
+struct buffer VAR6 = FUN2(1024);
+VAR3 = FUN3(VAR7);
+
+
+FUN4(&VAR6, VAR8, sizeof(VAR8));
+
+VAR5 = FUN5(&VAR3, &VAR4, &VAR2, &VAR6);
+FUN6(VAR5, VAR9);
+FUN7(&VAR4);
+
+
+FUN8(&VAR6);
+FUN4(&VAR6, VAR10, sizeof(VAR10));
+VAR5 = FUN5(&VAR3, &VAR4, &VAR2, &VAR6);
+FUN6(VAR5, VAR11);
+FUN7(&VAR4);
+
+FUN7(&VAR4);
+
+VAR5 = FUN5(&VAR3, &VAR4, &VAR2, &VAR6);
+FUN6(VAR5, VAR11);
+FUN7(&VAR4);
+
+
+FUN9(FUN10(&VAR6), VAR10, sizeof(VAR10));
+FUN7(&VAR4);
+
+FUN8(&VAR6);
+FUN4(&VAR6, VAR12, sizeof(VAR12));
+VAR5 = FUN5(&VAR3, &VAR4, &VAR2, &VAR6);
+FUN6(VAR5, VAR13);
+FUN7(&VAR4);
+
+
+FUN10(&VAR6)[20] = 0x23;
+VAR5 = FUN5(&VAR3, &VAR4, &VAR2, &VAR6);
+FUN6(VAR5, VAR9);
+FUN7(&VAR4);
+
+FUN7(&VAR4);
+
+FUN11(&VAR3.VAR14.VAR15.VAR16);
+VAR3 = FUN3(VAR17);
+
+FUN8(&VAR6);
+FUN4(&VAR6, VAR10, sizeof(VAR10));
+VAR5 = FUN5(&VAR3, &VAR4, &VAR2, &VAR6);
+FUN6(VAR5, VAR9);
+
+FUN7(&VAR4);
+FUN11(&VAR3.VAR14.VAR15.VAR16);
+FUN12(&VAR6);
+}

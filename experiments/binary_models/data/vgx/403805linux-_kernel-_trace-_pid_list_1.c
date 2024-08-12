@@ -1,0 +1,1 @@
+static inline int FUN1 ( unsigned int VAR1 , unsigned int * VAR2 , unsigned int * VAR3 , unsigned int * VAR4 ) { FUN2 ( VAR5 < VAR6 ) ; * VAR2 = ( VAR1 >> VAR7 ) & VAR8 ; * VAR3 = ( VAR1 >> VAR9 ) & VAR8 ; * VAR4 = VAR1 & VAR10 ; return 0 ; }

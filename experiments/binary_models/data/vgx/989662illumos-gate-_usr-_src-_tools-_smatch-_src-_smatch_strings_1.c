@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( mtag_t VAR2 ) { char * VAR3 ; if ( ! VAR2 ) { return VAR4 ; } VAR3 = FUN2 ( VAR2 ) ; if ( ! VAR3 ) { return NULL ; } return FUN3 ( VAR3 ) ; }

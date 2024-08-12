@@ -1,0 +1,44 @@
+FUN1 (tree VAR1, tree VAR2, tree VAR3,
+bool VAR4)
+{
+tree VAR5, VAR6;
+tree VAR7, VAR8;
+struct VAR9 *VAR9;
+
+if (FUN2 (VAR2))
+return VAR2;
+
+VAR5 = FUN3 (VAR2);
+if (VAR5 == VAR1)
+return VAR2;
+
+if (!FUN4 (VAR2))
+goto VAR10;
+
+VAR9 = VAR11->VAR12[FUN5 (VAR2)];
+VAR7 = FUN6 (VAR2);
+VAR8 = FUN7 (VAR2);
+
+if (FUN8 (VAR9, VAR1, &VAR7, &VAR8, VAR3,
+VAR4))
+return FUN9 (VAR9->VAR13, VAR7, VAR8);
+
+
+VAR10:
+VAR6 = FUN10 (VAR1, VAR2);
+
+
+if (FUN11 (VAR6))
+{
+FUN12 (VAR6) = 0;
+FUN13 (VAR6) = 0;
+}
+
+
+if (FUN14 (VAR6) == VAR14
+&& FUN14 (VAR1) == VAR15
+&& !FUN15 (VAR6, VAR1))
+VAR6 = VAR16;
+
+return VAR6;
+}

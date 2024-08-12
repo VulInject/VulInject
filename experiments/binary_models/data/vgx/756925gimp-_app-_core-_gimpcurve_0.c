@@ -1,0 +1,45 @@
+FUN1 (VAR1 *VAR2,
+gdouble    VAR3,
+gdouble    VAR4)
+{
+VAR5 *VAR6;
+gint            VAR7;
+
+FUN2 (FUN3 (VAR2), -1);
+
+if (VAR2->VAR8 == VAR9)
+return -1;
+
+VAR3 = FUN4 (VAR3, 0.0, 1.0);
+VAR4 = FUN4 (VAR4, 0.0, 1.0);
+
+for (VAR7 = 0; VAR7 < VAR2->VAR10; VAR7++)
+{
+if (VAR2->VAR6[VAR7].VAR3 > VAR3)
+break;
+}
+
+VAR6 = FUN5 (VAR5, VAR2->VAR10 + 1);
+
+memcpy (VAR6,         VAR2->VAR6,
+VAR7 * sizeof (VAR5));
+memcpy (VAR6 + VAR7 + 1, VAR2->VAR6 + VAR7,
+(VAR2->VAR10 - VAR7) * sizeof (VAR5));
+
+VAR6[VAR7].VAR3    = VAR3;
+VAR6[VAR7].VAR4    = VAR4;
+VAR6[VAR7].VAR11 = VAR12;
+
+FUN6 (VAR2->VAR6);
+
+VAR2->VAR10++;
+VAR2->VAR6 = VAR6;
+
+FUN7 (FUN8 (VAR2), VAR13[VAR14]);
+FUN7 (FUN8 (VAR2), VAR13[VAR15]);
+FUN7 (FUN8 (VAR2), VAR13[VAR16]);
+
+FUN9 (FUN10 (VAR2));
+
+return VAR7;
+}

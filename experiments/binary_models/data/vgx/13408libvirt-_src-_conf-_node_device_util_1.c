@@ -1,0 +1,1 @@
+char * FUN1 ( virConnectPtr VAR1 , const char * VAR2 ) { virNodeDevicePtr VAR3 = NULL ; char * VAR4 ; if ( ! ( VAR3 = FUN2 ( VAR1 , VAR2 ) ) ) { FUN3 ( VAR5 , FUN4 ( "" ) , VAR2 ) ; return NULL ; } VAR4 = FUN5 ( FUN6 ( VAR3 ) ) ; FUN7 ( VAR3 , NULL ) ; return VAR4 ; }

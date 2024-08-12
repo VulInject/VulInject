@@ -1,0 +1,71 @@
+static int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+struct VAR5 *VAR6)
+{
+int VAR7, VAR8 = 0;
+
+for (VAR7 = 0; VAR7 < VAR6->VAR9; VAR7++) {
+struct VAR10 *VAR11 = &VAR6->VAR12[VAR7];
+struct VAR13 *VAR14 = &VAR4->VAR12[VAR7];
+VAR14->VAR2 = VAR2;
+VAR14->VAR15 = VAR7;
+
+switch (VAR11->VAR16) {
+
+case VAR17:
+case VAR18:
+VAR14->VAR16 = VAR11->VAR16;
+VAR14->VAR19.VAR20 = VAR11->VAR20;
+VAR14->VAR19.VAR21 = 1;
+VAR14->VAR19.VAR22 =
+VAR23;
+VAR14->VAR19.VAR24 = VAR25;
+VAR14->VAR19.VAR26 = VAR27;
+
+VAR8 = FUN2(&VAR2->VAR28, &VAR14->VAR19);
+if (VAR8 < 0) {
+FUN3(&VAR2->VAR28,
+"",
+VAR14->VAR19.VAR20);
+goto VAR29;
+}
+
+
+VAR14->VAR19.VAR30 =
+(enum VAR31) VAR11->VAR32;
+
+
+VAR8 = FUN4(VAR14, VAR11->VAR32);
+if (VAR8 < 0) {
+FUN3(&VAR2->VAR28,
+"",
+VAR14->VAR19.VAR20, VAR11->VAR32);
+goto VAR29;
+}
+break;
+
+case VAR33:
+default:
+break;
+
+}
+}
+return 0;
+
+VAR29:
+if (VAR7 > 0)
+for (VAR7 = VAR7 - 1; VAR7 >= 0; VAR7--)
+switch (VAR6->VAR12[VAR7].VAR16) {
+
+case VAR17:
+case VAR18:
+FUN5(&VAR4->VAR12[VAR7].VAR19);
+break;
+
+case VAR33:
+default:
+break;
+}
+
+return VAR8;
+}

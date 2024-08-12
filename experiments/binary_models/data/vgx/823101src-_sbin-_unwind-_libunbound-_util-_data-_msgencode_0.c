@@ -1,0 +1,52 @@
+static int
+FUN1(VAR1* VAR2, VAR3* VAR4, size_t VAR5, 
+struct VAR6* VAR7, struct VAR8** VAR9, 
+const VAR10* VAR11)
+{
+int VAR12, VAR13, VAR14 = 0;
+size_t VAR15, VAR16, VAR17 = FUN2(VAR2);
+uint8_t VAR18 = VAR11->VAR19;
+
+FUN3(VAR2, 2); 
+
+VAR4 += 2;
+VAR5 -= 2;
+while(VAR5 > 0 && VAR18) {
+switch(VAR11->VAR20[VAR14]) {
+case VAR21:
+VAR12 = FUN4(VAR4, &VAR15);
+if((VAR13=FUN5(VAR4, VAR2, VAR12, VAR7, 
+VAR9)) != VAR22)
+return VAR13;
+VAR4 += VAR15;
+VAR5 -= VAR15;
+VAR18--;
+VAR16 = 0;
+break;
+case VAR23:
+VAR16 = *VAR4 + 1;
+break;
+default:
+VAR16 = FUN6(VAR11->VAR20[VAR14]);
+}
+if(VAR16) {
+
+if(FUN7(VAR2) < VAR16)
+return VAR24;
+FUN8(VAR2, VAR4, VAR16);
+VAR5 -= VAR16;
+VAR4 += VAR16;
+}
+VAR14++;
+}
+
+if(VAR5 > 0) {
+if(FUN7(VAR2) < VAR5)
+return VAR24;
+FUN8(VAR2, VAR4, VAR5);
+}
+
+
+FUN9(VAR2, VAR17, FUN2(VAR2)-VAR17-2);
+return VAR22;
+}

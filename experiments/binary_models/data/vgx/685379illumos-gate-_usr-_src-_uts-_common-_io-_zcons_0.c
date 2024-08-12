@@ -1,0 +1,43 @@
+static int
+FUN1(VAR1 *VAR2,
+VAR3	*VAR4,	
+VAR5	*VAR6,	
+int		VAR7,	
+int		VAR8,	
+VAR9	*VAR10)	
+{
+VAR11 *VAR12;
+struct VAR13 *VAR14;
+
+
+if ((VAR2->VAR15 & VAR16) != 0)
+return (VAR17);
+
+if ((VAR12 = FUN2(sizeof (struct VAR13), VAR18)) == NULL) {
+FUN3("");
+return (VAR19);
+}
+
+VAR2->VAR15 |= VAR16;
+
+
+FUN4(VAR4)->VAR20 = VAR4->VAR20 = VAR2;
+FUN5(VAR4);
+
+
+VAR2->VAR21 = VAR4;
+
+
+VAR12->VAR22->VAR23 = VAR24;
+VAR12->VAR25 += sizeof (struct VAR13);
+VAR14 = (struct VAR13 *)(void *)VAR12->VAR26;
+if (VAR7 & VAR27)
+VAR14->VAR28 = VAR29 | VAR30;
+else
+VAR14->VAR28 = VAR29 | VAR30 | VAR31;
+VAR14->VAR32 = VAR33;
+VAR14->VAR34 = 256;
+FUN6(VAR4, VAR12);
+
+return (0);
+}

@@ -1,0 +1,1 @@
+int FUN1 ( u32 VAR1 ) { int VAR2 ; u32 VAR3 = FUN2 ( ) ; u32 VAR4 = FUN3 ( VAR3 ) ; if ( VAR4 == VAR5 && VAR1 == VAR6 ) { return 0 ; } for ( VAR2 = 0 ; VAR2 < VAR7 ; VAR2 ++ ) { if ( VAR8 [ VAR1 ] [ VAR2 ] != VAR9 ) { return 1 ; } } return 0 ; }

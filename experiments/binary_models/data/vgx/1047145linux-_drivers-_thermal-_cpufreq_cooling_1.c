@@ -1,0 +1,1 @@
+static u32 FUN1 ( struct VAR1 * VAR2 , int VAR3 , int VAR4 ) { cfs_time_t VAR5 = FUN2 ( VAR3 ) ; return ( VAR5 * 100 ) / FUN3 ( VAR3 ) ; }

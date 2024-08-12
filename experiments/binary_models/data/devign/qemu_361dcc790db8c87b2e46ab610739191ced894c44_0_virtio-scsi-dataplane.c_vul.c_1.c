@@ -1,0 +1,38 @@
+void FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = FUN2(FUN3(FUN4(VAR2)));
+    VAR5 *VAR6 = FUN5(VAR4);
+    VAR7 *VAR8 = FUN6(VAR2);
+    VAR9 *VAR10 = FUN7(VAR2);
+    int VAR11;
+    if (!VAR2->VAR12 || VAR2->VAR13)
+    {
+        return;
+    }
+    FUN8(VAR2->VAR14);
+    VAR2->VAR14 = NULL;
+    VAR2->VAR13 = true;
+    assert(VAR2->VAR15 == FUN9(VAR10->VAR16.VAR17));
+    FUN10(VAR2->VAR15);
+    FUN11(VAR2->VAR15, &VAR2->VAR18->VAR19, NULL);
+    FUN11(VAR2->VAR15, &VAR2->VAR20->VAR19, NULL);
+    for (VAR11 = 0; VAR11 < VAR10->VAR16.VAR21; VAR11++)
+    {
+        FUN11(VAR2->VAR15, &VAR2->VAR22[VAR11]->VAR19, NULL);
+    }
+    FUN12();
+    FUN13(VAR2->VAR15);
+    FUN14(&VAR2->VAR18->VAR23, VAR8, 0);
+    FUN14(&VAR2->VAR20->VAR23, VAR8, 1);
+    for (VAR11 = 0; VAR11 < VAR10->VAR16.VAR21; VAR11++)
+    {
+        FUN14(&VAR2->VAR22[VAR11]->VAR23, VAR8, 2 + VAR11);
+    }
+    for (VAR11 = 0; VAR11 < VAR10->VAR16.VAR21 + 2; VAR11++)
+    {
+        VAR6->FUN15(VAR4->VAR24, VAR11, false);
+    }
+    VAR6->FUN16(VAR4->VAR24, VAR10->VAR16.VAR21 + 2, false);
+    VAR2->VAR13 = false;
+    VAR2->VAR12 = false;
+}

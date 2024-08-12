@@ -1,0 +1,119 @@
+static int
+FUN1(VAR1 *VAR2, VAR3 *VAR4,
+struct VAR5 *VAR6, VAR7 *VAR8)
+{
+int VAR9 = VAR10;
+VAR11 *VAR12;
+ushort_t VAR13;
+uint_t VAR14, VAR15 = 0;
+
+FUN2(VAR16, VAR2->VAR17,
+"",
+(void *)VAR4, VAR4->VAR18, (void *)VAR6);
+
+*VAR8 = VAR19;
+
+
+VAR12 = VAR4->VAR20.VAR21;
+VAR13 = VAR4->VAR20.VAR22;
+if ((VAR13 == 0) || (VAR12 == NULL)) {
+VAR9 = VAR23;
+VAR4->VAR24 = VAR25;
+
+goto VAR26;
+}
+
+
+
+if (FUN3(VAR4) != VAR27) {
+if (VAR6->VAR28 < sizeof (VAR11) * VAR13) {
+VAR9 = VAR29;
+VAR4->VAR24 = VAR30;
+
+return (VAR9);
+}
+bcopy(VAR4->VAR20.VAR21, VAR6->VAR31.VAR32,
+VAR13 * sizeof (VAR11));
+VAR4->VAR24 = VAR33;
+
+return (VAR10);
+}
+
+
+VAR14 = VAR4->VAR20.VAR34;
+if (VAR6->VAR28 != VAR14 + sizeof (VAR11) * VAR13) {
+VAR9 = VAR29;
+VAR4->VAR24 = VAR30;
+
+goto VAR26;
+}
+
+
+if (VAR4->VAR35) {
+VAR15 = FUN4(FUN5(VAR4->VAR35),
+VAR6->VAR28);
+
+FUN6((VAR15 == 0) || (VAR15 == VAR6->VAR28));
+}
+
+
+if ((VAR4->VAR18 & VAR36) == 0) {
+if (VAR15 == 0) {
+VAR9 = VAR23;
+if ((VAR9 = FUN7(VAR2,
+VAR4)) != VAR10) {
+VAR4->VAR24 =
+VAR37;
+}
+
+goto VAR26;
+
+} else if (VAR4->VAR35 && (VAR15 >= VAR6->VAR28)) {
+bcopy(VAR4->VAR35->VAR38, VAR6->VAR31.VAR32,
+VAR6->VAR28);
+VAR6->VAR39 = 0;
+VAR4->VAR35->VAR38 += VAR6->VAR28;
+
+goto VAR26;
+}
+}
+
+
+if (VAR4->VAR35 && (VAR15 >= VAR6->VAR28)) {
+
+bcopy(VAR4->VAR35->VAR38, VAR6->VAR31.VAR32, VAR6->VAR28);
+VAR4->VAR35->VAR38 += VAR6->VAR28;
+VAR6->VAR39 = 0;
+} else if (VAR4->VAR40 & (VAR41 | VAR42)) {
+VAR6->VAR39 = VAR6->VAR28;
+} else {
+
+*VAR8 = VAR43;
+}
+
+VAR26:
+
+if (VAR4->VAR35 && (VAR4->VAR35->VAR38 == VAR4->VAR35->VAR44)) {
+VAR45 *VAR46 = NULL;
+
+
+VAR46 = FUN8(VAR4->VAR35);
+FUN9(VAR4->VAR35);
+
+if (VAR46) {
+VAR4->VAR35 = VAR46;
+} else {
+VAR4->VAR35 = NULL;
+}
+}
+
+if (*VAR8) {
+FUN6(VAR4->VAR18 & VAR36);
+}
+
+FUN2(VAR16, VAR2->VAR17,
+"",
+VAR9, VAR6->VAR28, VAR15, (void *)VAR4->VAR35);
+
+return (VAR9);
+}

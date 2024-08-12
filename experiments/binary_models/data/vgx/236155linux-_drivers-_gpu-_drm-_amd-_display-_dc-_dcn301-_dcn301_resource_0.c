@@ -1,0 +1,16 @@
+static struct VAR1 *FUN1(struct VAR2 *VAR3, uint32_t VAR4)
+{
+struct VAR5 *VAR1 =
+FUN2(sizeof(struct VAR5), VAR6);
+
+if (!VAR1)
+return NULL;
+
+if (FUN3(VAR1, VAR3, VAR4,
+&VAR7[VAR4], &VAR8, &VAR9))
+return &VAR1->VAR10;
+
+FUN4();
+FUN5(VAR1);
+return NULL;
+}

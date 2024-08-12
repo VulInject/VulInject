@@ -1,0 +1,1 @@
+isc_result_t FUN1 ( VAR1 * VAR2 , VAR3 * * VAR4 ) { isc_result_t VAR5 ; FUN2 ( & VAR6 ) ; VAR5 = * FUN3 ( VAR2 , VAR4 ) ; FUN4 ( & VAR6 ) ; return ( VAR5 ) ; }

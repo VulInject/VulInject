@@ -1,0 +1,10 @@
+VAR1 *FUN1(void)
+{
+    VAR1 *VAR2;
+    VAR2 = FUN2();
+    VAR2->VAR3 = VAR4;
+    VAR2->VAR5 = VAR6;
+    VAR2->VAR7 = true;
+    FUN3(VAR8, VAR2, 0, "");
+    return VAR2;
+}

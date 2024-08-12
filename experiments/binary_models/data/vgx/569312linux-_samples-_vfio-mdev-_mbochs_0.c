@@ -1,0 +1,51 @@
+static int FUN1(struct VAR1 *VAR1,
+struct VAR2 *VAR3)
+{
+struct VAR4 *VAR5 = FUN2(VAR1->VAR6);
+VAR7 *VAR8 = VAR1->VAR8;
+u32 VAR9;
+
+FUN3(!FUN4(&VAR1->VAR10));
+
+if (!(VAR8[VAR11] & VAR12))
+goto VAR13;
+
+memset(VAR3, 0, sizeof(*VAR3));
+switch (VAR8[VAR14]) {
+case 32:
+VAR3->VAR15 = VAR16;
+VAR3->VAR17 = 4;
+break;
+default:
+FUN5(VAR5, "",
+VAR18, VAR8[VAR14]);
+goto VAR13;
+}
+
+VAR3->VAR19  = VAR8[VAR20];
+VAR3->VAR21 = VAR8[VAR22];
+VAR9  = VAR8[VAR23];
+if (VAR9 < VAR3->VAR19)
+VAR9 = VAR3->VAR19;
+VAR3->VAR24 = VAR9 * VAR3->VAR17;
+VAR3->VAR25   = (VAR26)VAR3->VAR24 * VAR3->VAR21;
+VAR3->VAR27 = ((VAR26)VAR8[VAR28] * VAR3->VAR17 +
+(VAR26)VAR8[VAR29] * VAR3->VAR24);
+
+if (VAR3->VAR19 < 64 || VAR3->VAR21 < 64) {
+FUN5(VAR5, "",
+VAR18, VAR3->VAR19, VAR3->VAR21);
+goto VAR13;
+}
+if (VAR3->VAR27 + VAR3->VAR25 > VAR1->VAR30) {
+FUN5(VAR5, "",
+VAR18);
+goto VAR13;
+}
+
+return 0;
+
+VAR13:
+memset(VAR3, 0, sizeof(*VAR3));
+return -VAR31;
+}

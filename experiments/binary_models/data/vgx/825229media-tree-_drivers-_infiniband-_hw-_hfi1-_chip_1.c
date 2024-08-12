@@ -1,0 +1,1 @@
+static u64 FUN1 ( const struct VAR1 * VAR2 , void * VAR3 , int VAR4 , int VAR5 , u64 VAR6 ) { struct VAR7 * VAR8 = VAR3 ; u64 VAR9 ; u64 VAR10 = VAR2 -> VAR10 ; if ( VAR2 -> VAR11 & VAR12 ) { VAR10 += 8 * VAR4 ; } else { if ( VAR4 != VAR13 ) { return 0 ; } } VAR9 = FUN2 ( VAR8 -> VAR14 , VAR10 , VAR5 , VAR6 ) ; return VAR9 ; }

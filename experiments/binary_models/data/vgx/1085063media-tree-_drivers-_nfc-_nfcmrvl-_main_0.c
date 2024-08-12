@@ -1,0 +1,16 @@
+}
+FUN1(VAR1);
+
+void FUN2(struct VAR2 *VAR3)
+{
+
+FUN3(VAR4, &VAR3->VAR5);
+
+if (VAR3->VAR6.VAR7) {
+FUN4(VAR3->VAR8, "");
+FUN5(VAR3->VAR6.VAR7, 0);
+FUN6(5000, 10000);
+FUN5(VAR3->VAR6.VAR7, 1);
+} else
+FUN4(VAR3->VAR8, "");
+}

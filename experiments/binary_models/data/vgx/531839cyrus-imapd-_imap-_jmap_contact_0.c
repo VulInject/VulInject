@@ -1,0 +1,117 @@
+static void FUN1(VAR1 *VAR2,
+VAR3 *VAR4,
+struct VAR5 *VAR6,
+VAR3 **VAR7,
+VAR3 **VAR8)
+{
+struct jmap_parser VAR9 = VAR10;
+struct VAR11 *VAR12 = NULL;
+VAR3 *VAR13 = NULL;
+struct VAR14 *VAR15 = NULL;
+struct VAR14 *VAR16 = NULL;
+VAR17 *VAR18 = NULL;
+int VAR19 = 0;
+
+
+const char *VAR20 = FUN2(FUN3(VAR4, ""));
+if (!VAR20) {
+FUN4(&VAR9, "");
+}
+if (FUN5(VAR9.VAR21)) {
+*VAR8 = FUN6("", "", "",
+"", VAR9.VAR21);
+goto VAR22;
+}
+
+
+struct VAR23 *VAR24 = NULL;
+VAR19 = FUN7(VAR6, VAR20, &VAR24);
+if (VAR19 && VAR19 != VAR25) {
+syslog(VAR26, "",
+VAR20, FUN8(VAR19));
+goto VAR22;
+}
+if (VAR19 == VAR25 || !VAR24->VAR27.VAR28 ||
+!VAR24->VAR27.VAR29 || !VAR24->VAR27.VAR30) {
+*VAR8 = FUN6("", "", "");
+goto VAR22;
+}
+
+VAR18 = FUN9(VAR2, &VAR24->VAR27);
+if (!VAR18 || !FUN10(VAR2, VAR18, VAR31)) {
+*VAR8 = FUN6("", "", "");
+goto VAR22;
+}
+
+
+VAR19 = FUN11(VAR2, VAR18->VAR32, &VAR15, 0);
+if (VAR19) goto VAR22;
+
+struct index_record VAR33;
+VAR19 = FUN12(VAR15, VAR24->VAR27.VAR30, &VAR33);
+if (!VAR19) VAR12 = FUN13(VAR15, &VAR33);
+if (!VAR12 || !VAR12->VAR34) {
+syslog(VAR26, "", VAR20);
+VAR19 = VAR35;
+goto VAR22;
+}
+
+
+VAR3 *VAR36 = FUN14(VAR2->VAR37, VAR12->VAR34,
+VAR15, &VAR33);
+if (VAR36) {
+VAR3 *VAR38 = FUN3(VAR36, "");
+if (VAR38) {
+
+FUN15(VAR38, "",
+FUN3(VAR2->VAR39, ""));
+}
+FUN16(VAR36, "");  
+FUN16(VAR36, "");  
+VAR13 = FUN17(VAR36, VAR4, NULL);
+FUN16(VAR13, "");  
+}
+FUN18(VAR36);
+
+
+VAR3 *VAR21 = FUN19();
+jmap_contact_errors_t VAR40 = { VAR21, NULL };
+VAR3 *VAR41 = FUN20();
+VAR19 = FUN21(VAR2, VAR42, VAR13,
+NULL, &VAR16, VAR41, &VAR40);
+if (VAR19 || FUN5(VAR21) || VAR40.VAR43) {
+if (FUN5(VAR21)) {
+*VAR8 = FUN6("", "", "",
+"", VAR21);
+FUN18(VAR40.VAR43);
+}
+else {
+FUN18(VAR21);
+
+if (VAR40.VAR43) {
+*VAR8 = FUN6("", "", "",
+"", VAR40.VAR43);
+}
+else *VAR8 = FUN22(VAR19);
+}
+FUN18(VAR41);
+goto VAR22;
+}
+FUN18(VAR21);
+
+*VAR7 = VAR41;
+
+VAR22:
+if (VAR19 && *VAR8 == NULL) {
+if (VAR19 == VAR25)
+*VAR8 = FUN6("", "", "");
+else
+*VAR8 = FUN22(VAR19);
+}
+FUN23(&VAR18);
+FUN24(VAR2, &VAR16);
+FUN24(VAR2, &VAR15);
+if (VAR12) FUN25(VAR12);
+FUN18(VAR13);
+FUN26(&VAR9);
+}

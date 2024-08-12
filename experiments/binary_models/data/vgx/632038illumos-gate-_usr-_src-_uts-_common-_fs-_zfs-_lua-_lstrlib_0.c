@@ -1,0 +1,27 @@
+static int FUN1 (VAR1 *VAR2) {
+MatchState VAR3;
+size_t VAR4, VAR5;
+const char *VAR6 = FUN2(VAR2, FUN3(1), &VAR4);
+const char *VAR7 = FUN2(VAR2, FUN3(2), &VAR5);
+const char *VAR8;
+VAR3.VAR2 = VAR2;
+VAR3.VAR9 = VAR10;
+VAR3.VAR11 = VAR6;
+VAR3.VAR12 = VAR6+VAR4;
+VAR3.VAR13 = VAR7 + VAR5;
+for (VAR8 = VAR6 + (VAR14)FUN4(VAR2, FUN3(3));
+VAR8 <= VAR3.VAR12;
+VAR8++) {
+const char *VAR15;
+VAR3.VAR16 = 0;
+FUN5(VAR3.VAR9 == VAR10);
+if ((VAR15 = FUN6(&VAR3, VAR8, VAR7)) != NULL) {
+lua_Integer VAR17 = VAR15-VAR6;
+if (VAR15 == VAR8) VAR17++;  
+FUN7(VAR2, VAR17);
+FUN8(VAR2, FUN3(3));
+return FUN9(&VAR3, VAR8, VAR15);
+}
+}
+return 0;  
+}

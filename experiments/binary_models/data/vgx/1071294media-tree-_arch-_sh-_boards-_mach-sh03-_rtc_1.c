@@ -1,0 +1,1 @@
+int FUN1 ( const time_t VAR1 ) { cfs_time_t VAR2 = VAR1 ; return FUN2 ( VAR2 ) ; }

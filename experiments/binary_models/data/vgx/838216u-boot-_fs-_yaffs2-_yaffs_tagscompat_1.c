@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , int VAR3 ) { struct yaffs_spare VAR4 ; memset ( & VAR4 , 0xff , sizeof ( VAR5 ) ) ; VAR4 . VAR6 = '' ; FUN2 ( VAR2 , VAR3 * VAR2 -> VAR7 . VAR8 , & VAR4 ) ; FUN2 ( VAR2 , VAR3 * VAR2 -> VAR7 . VAR8 + 1 , NULL , & VAR4 ) ; return VAR9 ; }

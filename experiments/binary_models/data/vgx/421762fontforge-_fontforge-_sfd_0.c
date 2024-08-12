@@ -1,0 +1,43 @@
+static VAR1 *FUN1(VAR2 *VAR3) {
+int VAR4;
+VAR1 *VAR5;
+struct enc85 VAR6 = {0};
+int VAR7, VAR8;
+
+VAR5 = calloc(1,sizeof(VAR1));
+VAR6.VAR9 = -1;
+VAR6.VAR3 = VAR3;
+
+FUN2(VAR3,&VAR4);
+FUN3(VAR3,&VAR5->VAR10);
+FUN3(VAR3,&VAR5->VAR11);
+FUN3(VAR3,&VAR5->VAR12);
+FUN3(VAR3,&VAR5->VAR13);
+
+while ( (VAR8=FUN4(VAR3))=='' || VAR8=='' )
+;
+
+char* VAR14 = malloc(VAR4 * sizeof(char));
+if (VAR14 == NULL) {
+FUN5("");
+return NULL;
+}
+
+for (VAR7 = 0; VAR7<VAR4; ++VAR7) {
+VAR14[VAR7] = FUN6(&VAR6);
+}
+
+VAR5->VAR15 = FUN7(VAR14, VAR4);
+free(VAR14);
+
+if (VAR5->VAR15 == NULL) {
+FUN5("");
+free(VAR5);
+return NULL;
+}
+
+VAR5->VAR16.VAR17 = VAR5->VAR10; VAR5->VAR16.VAR18 = VAR5->VAR11;
+VAR5->VAR16.VAR19 = VAR5->VAR10 + FUN8(VAR5->VAR15)*VAR5->VAR12;
+VAR5->VAR16.VAR20 = VAR5->VAR11 - FUN9(VAR5->VAR15)*VAR5->VAR13;
+return VAR5;
+}

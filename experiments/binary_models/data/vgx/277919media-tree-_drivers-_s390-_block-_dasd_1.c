@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , __u8 VAR3 ) { if ( ! FUN2 ( VAR2 ) && VAR3 ) { FUN3 ( VAR2 , VAR3 ) ; FUN4 ( VAR2 , NULL ) ; } else { FUN5 ( VAR2 , VAR3 ) ; } return 0 ; }

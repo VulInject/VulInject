@@ -1,0 +1,66 @@
+static int FUN1(struct VAR1 *VAR2,
+const struct VAR3 *VAR3)
+{
+int VAR4 = 0;
+int VAR5;
+const VAR6 *VAR7;
+u8 VAR8[VAR9];
+
+VAR4 = FUN2(VAR2, 1, 0);
+if (VAR4)
+goto VAR10;
+
+VAR5 = VAR3->VAR11;
+VAR7 = VAR3->VAR12;
+
+
+while (VAR5 > 0) {
+
+VAR4 = FUN3(VAR2, VAR13,
+VAR9);
+if (VAR4)
+goto VAR10;
+
+VAR4 = FUN4(VAR2, VAR14,
+VAR15,
+VAR15);
+if (VAR4)
+goto VAR10;
+
+
+memset(VAR8, 0, sizeof(VAR8));
+memcpy(VAR8, VAR7,
+FUN5(VAR5, VAR9));
+FUN6(10);
+VAR4 = FUN7(VAR2, VAR16,
+VAR8, VAR9);
+if (VAR4)
+goto VAR10;
+
+
+VAR4 = FUN3(VAR2, VAR14, 0);
+if (VAR4)
+goto VAR10;
+VAR4 = FUN3(VAR2, VAR17,
+VAR18);
+if (VAR4)
+goto VAR10;
+VAR5 -= VAR9;
+VAR7 += VAR9;
+}
+
+
+VAR4 = FUN3(VAR2, VAR13, VAR19);
+if (VAR4)
+goto VAR10;
+VAR4 = FUN3(VAR2, VAR14, 0);
+if (VAR4)
+goto VAR10;
+VAR4 = FUN3(VAR2, VAR17,
+VAR18);
+VAR10:
+if (VAR4)
+FUN8("", VAR4);
+
+return VAR4;
+}

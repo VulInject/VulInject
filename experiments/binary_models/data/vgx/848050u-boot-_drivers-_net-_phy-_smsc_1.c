@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { int VAR3 ; VAR3 = FUN2 ( VAR2 ) ; return FUN3 ( VAR2 ) ; } static struct phy_driver VAR4 = { . VAR5 = "" . VAR6 = 0x0007c0c0 . VAR7 = 0xffff0 . VAR8 = VAR9 . VAR10 = & VAR11 . VAR12 = & VAR13 . VAR14 = & VAR15 } ;

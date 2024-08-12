@@ -1,0 +1,1 @@
+const struct VAR1 * FUN1 ( const u8 VAR2 [ 16 ] ) { int VAR3 = FUN2 ( VAR4 ) ; unsigned int VAR5 ; for ( VAR5 = 0 ; VAR5 < VAR3 ; ++ VAR5 ) { if ( memcmp ( VAR2 , VAR4 [ VAR5 ] . VAR2 , 16 ) == 0 ) { return & VAR4 [ VAR5 ] ; } } return NULL ; }

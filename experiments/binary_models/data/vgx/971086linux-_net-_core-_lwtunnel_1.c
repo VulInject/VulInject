@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( int VAR2 ) { struct VAR1 * VAR3 ; VAR3 = FUN2 ( sizeof ( * VAR3 ) + VAR2 , VAR4 ) ; return VAR3 ; }

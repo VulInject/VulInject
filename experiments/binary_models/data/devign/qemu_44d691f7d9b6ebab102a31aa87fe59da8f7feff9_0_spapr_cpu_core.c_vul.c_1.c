@@ -1,0 +1,18 @@
+void FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 **VAR6)
+{
+    VAR7 *VAR8 = FUN2(FUN3(VAR4));
+    VAR9 *VAR10 = FUN4(VAR8->VAR11);
+    int VAR12 = FUN5(VAR10);
+    VAR13 *VAR14 = FUN6(VAR15, VAR12);
+    VAR16 *VAR17;
+    VAR5 *VAR18 = NULL;
+    FUN7(VAR14);
+    VAR17 = FUN8(VAR14);
+    VAR17->FUN9(VAR14, VAR4, VAR19, NULL, &VAR18);
+    if (VAR18)
+    {
+        FUN10(VAR6, VAR18);
+        return;
+    }
+    FUN11(VAR14);
+}

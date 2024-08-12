@@ -1,0 +1,1 @@
+int FUN1 ( blkid_probe VAR1 ) { struct VAR2 * VAR3 ; const struct VAR4 * VAR5 = NULL ; int VAR6 ; VAR6 = FUN2 ( VAR1 , & VAR7 , NULL , & VAR5 ) ; if ( VAR6 < 0 ) { return VAR6 ; } if ( VAR6 != VAR8 || ! VAR5 ) { return 0 ; } VAR3 = FUN3 ( VAR1 , VAR5 , VAR2 ) ; if ( memcmp ( VAR3 -> VAR9 , "" , 8 ) != 0 ) { return 0 ; } return FUN4 ( VAR1 , VAR3 ) ; }

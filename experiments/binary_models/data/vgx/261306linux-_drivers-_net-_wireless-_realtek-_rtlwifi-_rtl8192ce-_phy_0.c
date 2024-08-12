@@ -1,0 +1,56 @@
+bool FUN1(struct VAR1 *VAR2,
+enum radio_path VAR3)
+{
+
+int VAR4;
+VAR5 *VAR6;
+VAR5 *VAR7;
+u16 VAR8, VAR9;
+struct VAR10 *VAR11 = FUN2(VAR2);
+struct VAR12 *VAR13 = FUN3(FUN2(VAR2));
+
+if (FUN4(VAR13->VAR14)) {
+VAR8 = VAR15;
+VAR6 = VAR16;
+VAR9 = VAR17;
+VAR7 = VAR18;
+FUN5(VAR11, VAR19, VAR20,
+"");
+FUN5(VAR11, VAR19, VAR20,
+"");
+} else {
+VAR8 = VAR21;
+VAR6 = VAR22;
+VAR9 = VAR23;
+VAR7 = VAR24;
+FUN5(VAR11, VAR19, VAR20,
+"");
+FUN5(VAR11, VAR19, VAR20,
+"");
+}
+FUN5(VAR11, VAR19, VAR20, "", VAR3);
+switch (VAR3) {
+case VAR25:
+for (VAR4 = 0; VAR4 < VAR8; VAR4 = VAR4 + 2) {
+FUN6(VAR2, VAR3, VAR6[VAR4],
+VAR26,
+VAR6[VAR4 + 1]);
+}
+break;
+case VAR27:
+for (VAR4 = 0; VAR4 < VAR9; VAR4 = VAR4 + 2) {
+FUN6(VAR2, VAR3, VAR7[VAR4],
+VAR26,
+VAR7[VAR4 + 1]);
+}
+break;
+case VAR28:
+case VAR29:
+FUN7("", VAR3);
+break;
+default:
+FUN7("", VAR3);
+break;
+}
+return true;
+}

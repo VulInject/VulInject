@@ -1,0 +1,71 @@
+VAR1 FUN1(int VAR2, int VAR3, int VAR4,
+int VAR5, int VAR6, int VAR7, int VAR8, int VAR9) {
+size_t VAR10 = 2;
+size_t VAR11 = 4;
+size_t VAR12 = 4;
+size_t VAR13 = 4; 
+size_t VAR14 = 7; 
+size_t VAR15 = 2;
+size_t VAR16 = 2;
+
+if (!VAR2 || !VAR3 || !VAR4) {
+FUN2();
+return 0;
+}
+
+int      VAR17 = (VAR3 + VAR5 + VAR2) * (1 << VAR9) + 64;
+FUN3("", VAR17);
+uint64_t VAR18 = FUN4() * VAR10;
+uint64_t VAR19 = FUN5(VAR3, VAR4, VAR4, VAR5, VAR2, VAR9, VAR20) * VAR10;
+uint64_t VAR21 = FUN5(VAR5, VAR6, VAR7, VAR3, VAR2, VAR9, VAR20) * VAR10;
+uint64_t VAR22 = FUN6();
+uint64_t VAR23 = FUN7();
+uint64_t VAR24 = FUN8();
+uint64_t VAR25 = FUN9();
+uint64_t VAR26 = sizeof(VAR27) * VAR10;
+uint64_t VAR28 = sizeof(VAR27) * VAR10;
+uint64_t VAR29 = FUN10();
+uint64_t VAR30 = FUN11();
+uint64_t VAR31 = FUN12();
+uint64_t VAR32 = VAR14 * VAR22 + VAR13 * VAR23;
+uint64_t VAR33 = VAR32 * VAR15;
+uint64_t VAR34 = 0;
+
+VAR18 += VAR16 * VAR23 + VAR12 * VAR22 + VAR11 * VAR25;
+VAR18 *= VAR2;
+
+VAR19 *= VAR3;
+VAR21 *= VAR5;
+
+VAR19 += VAR21;
+
+VAR24 *= VAR11;
+
+VAR28 *= (VAR3+VAR5) * (VAR3+VAR5);
+VAR26 *= (VAR3+VAR5) * (VAR3+VAR5);
+
+
+VAR30 *= (VAR2+VAR3+VAR5) * 4;
+
+VAR34 = VAR18 + VAR19 + VAR32 + VAR33 + VAR24 +
+VAR28 + VAR26 + VAR29 +
+VAR30 + VAR31;
+
+
+VAR34 += VAR34/10;
+
+FUN3(""VAR35"", VAR18);
+FUN3(""VAR35"", VAR19);
+FUN3(""VAR35"", VAR32);
+FUN3(""VAR35"", VAR15, VAR33);
+FUN3(""VAR35"", VAR11, VAR24);
+FUN3(""VAR35"", VAR28);
+FUN3(""VAR35"", VAR26);
+FUN3(""VAR35"", VAR31);
+FUN3(""VAR35"", VAR29);
+FUN3(""VAR35"", VAR30);
+
+FUN3(""VAR35"",
+VAR2, VAR3, VAR4, VAR5, VAR6, VAR7, VAR34);
+return VAR34;
+}

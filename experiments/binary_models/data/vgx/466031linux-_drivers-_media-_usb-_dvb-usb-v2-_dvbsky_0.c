@@ -1,0 +1,67 @@
+static int FUN1(struct VAR1 *VAR2, struct i2c_msg VAR3[],
+int VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR2);
+int VAR7 = 0;
+u8 VAR8[64], VAR9[64];
+
+if (FUN3(&VAR6->VAR10) < 0)
+return -VAR11;
+
+if (VAR4 > 2) {
+FUN4(&VAR6->VAR12->VAR13,
+"", VAR4);
+VAR7 = -VAR14;
+goto VAR15;
+}
+
+if (VAR4 == 1) {
+if (VAR3[0].VAR16 > 60) {
+FUN4(&VAR6->VAR12->VAR13,
+"",
+VAR3[0].VAR16);
+VAR7 = -VAR14;
+goto VAR15;
+}
+if (VAR3[0].VAR17 & VAR18) {
+
+VAR9[0] = 0x09;
+VAR9[1] = 0;
+VAR9[2] = VAR3[0].VAR16;
+VAR9[3] = VAR3[0].VAR19;
+VAR7 = FUN5(VAR6, VAR9, 4,
+VAR8, VAR3[0].VAR16 + 1);
+if (!VAR7)
+memcpy(VAR3[0].VAR20, &VAR8[1], VAR3[0].VAR16);
+} else {
+
+VAR9[0] = 0x08;
+VAR9[1] = VAR3[0].VAR19;
+VAR9[2] = VAR3[0].VAR16;
+memcpy(&VAR9[3], VAR3[0].VAR20, VAR3[0].VAR16);
+VAR7 = FUN5(VAR6, VAR9,
+VAR3[0].VAR16 + 3, VAR8, 1);
+}
+} else {
+if ((VAR3[0].VAR16 > 60) || (VAR3[1].VAR16 > 60)) {
+FUN4(&VAR6->VAR12->VAR13,
+"",
+VAR3[0].VAR16, VAR3[1].VAR16);
+VAR7 = -VAR14;
+goto VAR15;
+}
+
+VAR9[0] = 0x09;
+VAR9[1] = VAR3[0].VAR16;
+VAR9[2] = VAR3[1].VAR16;
+VAR9[3] = VAR3[0].VAR19;
+memcpy(&VAR9[4], VAR3[0].VAR20, VAR3[0].VAR16);
+VAR7 = FUN5(VAR6, VAR9,
+VAR3[0].VAR16 + 4, VAR8, VAR3[1].VAR16 + 1);
+if (!VAR7)
+memcpy(VAR3[1].VAR20, &VAR8[1], VAR3[1].VAR16);
+}
+VAR15:
+FUN6(&VAR6->VAR10);
+return (VAR7) ? VAR7 : VAR4;
+}

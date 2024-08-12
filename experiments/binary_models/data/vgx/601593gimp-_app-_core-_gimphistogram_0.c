@@ -1,0 +1,35 @@
+FUN1 (VAR1       *VAR2,
+VAR3          *VAR4,
+const VAR5 *VAR6,
+VAR3          *VAR7,
+const VAR5 *VAR8)
+{
+CalculateContext VAR9 = {};
+
+FUN2 (FUN3 (VAR2));
+FUN2 (FUN4 (VAR4));
+FUN2 (VAR6 != NULL);
+
+if (VAR2->VAR10->VAR11)
+FUN5 (VAR2->VAR10->VAR11);
+
+VAR9.VAR2   = VAR2;
+VAR9.VAR4      = VAR4;
+VAR9.VAR6 = *VAR6;
+
+if (VAR7)
+{
+VAR9.VAR7 = VAR7;
+
+if (VAR8)
+VAR9.VAR8 = *VAR8;
+else
+VAR9.VAR8 = *FUN6 (VAR7);
+}
+
+FUN7 (NULL, &VAR9);
+
+FUN8 (VAR2,
+VAR9.VAR12, VAR9.VAR13,
+VAR9.VAR14);
+}

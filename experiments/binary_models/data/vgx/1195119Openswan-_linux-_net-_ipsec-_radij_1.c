@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , int * FUN2 ( struct VAR5 * , void * ) , void * VAR6 ) { VAR2 -> VAR7 = VAR4 -> VAR8 ; while ( VAR2 -> VAR7 -> VAR9 >= 0 ) { VAR2 -> VAR7 = VAR2 -> VAR7 -> VAR10 ; } VAR2 -> VAR11 = VAR12 ; VAR2 -> VAR13 = VAR6 ; return 0 ; }

@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR1 , enum inode_type VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR1 ) ; int VAR5 = ( VAR2 == VAR6 ) ?VAR7 : VAR8 ; FUN3 ( VAR1 , VAR5 ) ; if ( ! FUN4 ( VAR1 ) ) { FUN5 ( & FUN6 ( VAR1 ) -> VAR9 , & VAR4 -> VAR10 [ VAR2 ] ) ; } FUN7 ( VAR4 , VAR2 ) ; }

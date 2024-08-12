@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , int VAR3 , int VAR4 ) { int VAR5 ; if ( FUN2 ( 0 || VAR3 ) 1 ) { return - VAR6 ; } if ( VAR3 ) { VAR5 = FUN3 ( VAR2 , VAR4 ) ; if ( VAR5 == 0 ) { VAR2 -> VAR7 = 1 ; } } else { VAR2 -> VAR7 = 0 ; VAR5 = FUN4 ( VAR2 , VAR4 ) ; if ( VAR5 != 0 ) { VAR2 -> VAR7 = 1 ; } } return VAR5 ; }

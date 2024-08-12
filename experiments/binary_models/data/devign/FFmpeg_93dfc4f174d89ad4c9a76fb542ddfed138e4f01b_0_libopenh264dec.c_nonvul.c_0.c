@@ -1,0 +1,36 @@
+static int FUN1(VAR1 *VAR2, void *VAR3, int *VAR4, VAR5 *VAR6)
+{
+    VAR7 *VAR8 = VAR2->VAR9;
+    SBufferInfo VAR10 = {0};
+    VAR11 *VAR12[3];
+    int VAR13, VAR14[3];
+    VAR15 *VAR16 = VAR3;
+    DECODING_STATE VAR17;
+    VAR17 = (*VAR8->VAR18)->FUN2(VAR8->VAR18, VAR6->VAR3, VAR6->VAR19, VAR12, &VAR10);
+    if (VAR17 != VAR20)
+    {
+        FUN3(VAR2, VAR21, "");
+        return VAR22;
+    }
+    if (VAR10.VAR23 != 1)
+    {
+        FUN3(VAR2, VAR24, "");
+        return VAR6->VAR19;
+    }
+    VAR13 = FUN4(VAR2, VAR10.VAR25.VAR26.VAR27, VAR10.VAR25.VAR26.VAR28);
+    if (VAR13 < 0)
+        return VAR13;
+    if (FUN5(VAR2, VAR16, 0) < 0)
+    {
+        FUN3(VAR2, VAR21, "");
+        return FUN6(VAR29);
+    }
+    VAR14[0] = VAR10.VAR25.VAR26.VAR30[0];
+    VAR14[1] = VAR14[2] = VAR10.VAR25.VAR26.VAR30[1];
+    FUN7(VAR16->VAR3, VAR16->VAR14, (const VAR11 **)VAR12, VAR14, VAR2->VAR31, VAR2->VAR32, VAR2->VAR33);
+    VAR16->VAR34 = VAR6->VAR34;
+    VAR16->VAR35 = VAR6->VAR36;
+    FF_DISABLE_DEPRECATION_WARNINGS VAR16->VAR37 = VAR6->VAR34;
+    VAR38 *VAR4 = 1;
+    return VAR6->VAR19;
+}

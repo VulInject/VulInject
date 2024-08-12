@@ -1,0 +1,24 @@
+static void FUN1(unsigned long VAR1)
+{
+struct VAR2 *VAR3 = (struct VAR2 *) VAR1;
+struct swim3 VAR4 *VAR5 = VAR3->VAR6;
+unsigned long VAR7;
+
+FUN2("", VAR3->VAR8);
+
+FUN3(&VAR9, VAR7);
+VAR3->VAR10 = 0;
+FUN4(&VAR5->VAR11, VAR12 | VAR13);
+FUN4(&VAR5->VAR14, VAR15);
+FUN4(&VAR5->VAR16, 0);
+VAR3->VAR17 = -1;
+if (VAR3->VAR18 > 5) {
+FUN5(VAR3, -VAR19, 0);
+VAR3->VAR8 = VAR20;
+FUN6(VAR3);
+} else {
+VAR3->VAR8 = VAR21;
+FUN7(VAR3);
+}
+FUN8(&VAR9, VAR7);
+}

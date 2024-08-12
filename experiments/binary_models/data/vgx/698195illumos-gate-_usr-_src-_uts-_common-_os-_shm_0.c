@@ -1,0 +1,21 @@
+void
+FUN1(struct VAR1 *VAR2)
+{
+VAR3 *VAR4;
+VAR5 *VAR6;
+void *VAR7 = NULL;
+
+FUN2(VAR2->VAR8 != NULL);
+
+FUN3(&VAR2->VAR9);
+FUN4(VAR2);
+VAR6 = VAR2->VAR8;
+VAR2->VAR8 = NULL;
+FUN5(&VAR2->VAR9);
+
+while ((VAR4 = FUN6(VAR6, &VAR7)) != NULL)
+(void) FUN7(VAR2, VAR4);
+
+FUN8(VAR6);
+FUN9(VAR6, sizeof (VAR5));
+}

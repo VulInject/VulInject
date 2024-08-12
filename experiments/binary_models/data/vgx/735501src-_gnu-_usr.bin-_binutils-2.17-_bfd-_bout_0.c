@@ -1,0 +1,68 @@
+FUN1 (VAR1 *VAR2,
+VAR3 *VAR4,
+struct VAR5 *VAR6,
+VAR7 *VAR8)
+{
+
+VAR1 *VAR9 = VAR4->VAR10;
+VAR3 *VAR11 = VAR4;
+unsigned int VAR12 = 0 ;
+VAR13 **VAR14 = NULL;
+long VAR15 = FUN2 (VAR9, VAR11);
+
+if (VAR15 < 0)
+return VAR16;
+
+
+*VAR8 = VAR16;
+
+if (VAR15)
+{
+long VAR17;
+
+VAR14 = FUN3 ((VAR18) VAR15);
+if (VAR14 == NULL && VAR15 != 0)
+goto VAR19;
+
+
+VAR17 =
+FUN4 (VAR9, VAR11, VAR14,
+FUN5 (VAR9));
+if (VAR17 < 0)
+goto VAR19;
+if (VAR17 > 0)
+{
+VAR13 **VAR20;
+
+for (VAR20 = VAR14; *VAR20; VAR20++)
+{
+VAR13 *VAR21 = *VAR20;
+
+switch (VAR21->VAR22->VAR23)
+{
+case VAR24:
+
+VAR12 = FUN6 (VAR2, VAR11, VAR21, VAR12);
+break;
+case VAR25:
+
+VAR12 = FUN7 (VAR9, VAR11, VAR21, VAR12,
+VAR6);
+break;
+case VAR26:
+VAR12 += 4;
+break;
+}
+}
+}
+}
+VAR11->VAR27 -= VAR12;
+
+if (VAR14 != NULL)
+free (VAR14);
+return VAR28;
+VAR19:
+if (VAR14 != NULL)
+free (VAR14);
+return VAR16;
+}

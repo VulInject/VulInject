@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , const VAR1 * VAR3 , VAR4 * VAR5 , uint32_t VAR6 ) { if ( VAR6 < sizeof ( VAR1 ) || * VAR5 > ( VAR6 - sizeof ( VAR1 ) ) ) { return 0 ; } * VAR2 = * ( VAR3 + * VAR5 ) ; * VAR5 += sizeof ( VAR1 ) ; return 1 ; }

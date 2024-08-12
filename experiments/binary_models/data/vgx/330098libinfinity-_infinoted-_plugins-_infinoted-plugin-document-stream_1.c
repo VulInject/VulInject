@@ -1,0 +1,1 @@
+static gboolean FUN1 ( VAR1 * VAR2 , const VAR3 * * VAR4 , VAR5 * VAR6 ) { guint32 VAR7 ; if ( * VAR6 < 4 ) { return VAR8 ; } VAR7 = * ( VAR9 * ) ( * VAR4 ) ; * VAR4 += 4 ; * VAR6 -= 4 ; switch ( VAR7 ) { case 0 : return FUN2 ( VAR2 , VAR4 , VAR6 ) ; case 1 : return FUN3 ( VAR2 , VAR4 , VAR6 ) ; default : FUN4 ( VAR2 , NULL ) ; return VAR8 ; } }

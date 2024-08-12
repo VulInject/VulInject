@@ -1,0 +1,26 @@
+void
+FUN1(struct VAR1 *VAR2)
+{
+FUN2(VAR2 != NULL);
+if(VAR2 == NULL)
+return;
+
+
+if(VAR2->VAR3)
+memset(VAR2->VAR3, 0, strlen(VAR2->VAR3));
+if(VAR2->VAR4)
+memset(VAR2->VAR4, 0, strlen(VAR2->VAR4));
+
+FUN3(VAR2->VAR3);
+FUN3(VAR2->VAR4);
+FUN3(VAR2->VAR5);
+FUN3(VAR2->VAR6);
+FUN3(VAR2->VAR7);
+
+if(FUN4(VAR2))
+FUN5(VAR2->VAR8.VAR9);
+else
+FUN3(VAR2->VAR8.VAR10);
+
+FUN6(VAR11, VAR2);
+}

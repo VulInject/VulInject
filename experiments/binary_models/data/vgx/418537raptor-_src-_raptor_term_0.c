@@ -1,0 +1,23 @@
+VAR1*
+FUN1(VAR2* VAR3, VAR4* VAR5)
+{
+VAR1 *VAR6;
+
+FUN2(VAR3);
+
+if(!VAR5)
+return NULL;
+
+FUN3(VAR3);
+
+VAR6 = FUN4(VAR1*, 1, sizeof(*VAR6));
+if(!VAR6)
+return NULL;
+
+VAR6->VAR7 = 1;
+VAR6->VAR3 = VAR3;
+VAR6->VAR8 = VAR9;
+VAR6->VAR10.VAR5 = FUN5(VAR5);
+
+return VAR6;
+}

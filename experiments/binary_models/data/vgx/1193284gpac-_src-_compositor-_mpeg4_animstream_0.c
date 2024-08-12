@@ -1,0 +1,32 @@
+static void FUN1(VAR1 *VAR2)
+{
+Double VAR3;
+VAR4 *VAR5 = (VAR4 *)VAR2->VAR6;
+VAR7 *VAR8 = (VAR7 *)FUN2(VAR2->VAR6);
+
+
+if ( ! VAR5->VAR9) {
+VAR8->VAR10 = VAR5->VAR11;
+}
+VAR3 = FUN3(VAR2->VAR6);
+
+if ((VAR3 < VAR8->VAR10) || (VAR8->VAR10 < 0)) return;
+
+if (FUN4(VAR8, VAR5) && VAR5->VAR9) {
+
+if ((VAR5->VAR12 > VAR8->VAR10) && (VAR3 >= VAR5->VAR12) ) {
+FUN5(VAR8, VAR5);
+return;
+}
+if (FUN6(VAR8->VAR13)) {
+if (FUN7(VAR8, VAR5)) {
+FUN8(VAR8->VAR13);
+} else if (FUN9(VAR8->VAR13)) {
+FUN5(VAR8, VAR5);
+}
+}
+}
+
+
+if (!VAR5->VAR9 && !VAR2->VAR14) FUN10(VAR8, VAR5);
+}

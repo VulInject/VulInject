@@ -1,0 +1,40 @@
+static void FUN1(VAR1 *VAR2)
+{
+VAR3 *VAR4;
+int VAR5, VAR6;
+
+if (VAR2->VAR7 == 0) {
+
+VAR2->VAR8 = NULL;
+}
+
+VAR6 = 0;
+VAR4 = FUN2(VAR2->VAR9);
+for (; VAR4 != NULL; VAR4 = VAR4->VAR10) {
+if (FUN3(VAR2, VAR4))
+continue;
+
+VAR5 = FUN4(VAR2, VAR4);
+if (VAR4 == VAR2->VAR8) {
+
+if (VAR2->VAR11 > VAR5)
+VAR2->VAR11 = VAR5;
+VAR2->VAR7 = VAR2->VAR12 - VAR6 -
+(VAR5-VAR2->VAR11);
+return;
+}
+
+VAR6 += VAR5;
+if (VAR6 >= VAR2->VAR12) {
+VAR2->VAR8 = VAR4;
+VAR2->VAR11 = VAR6 - VAR2->VAR12;
+VAR2->VAR7 = 0;
+return;
+}
+}
+
+
+VAR2->VAR8 = VAR2->VAR9->VAR13;
+VAR2->VAR11 = 0;
+VAR2->VAR7 = VAR2->VAR12 - VAR6;
+}

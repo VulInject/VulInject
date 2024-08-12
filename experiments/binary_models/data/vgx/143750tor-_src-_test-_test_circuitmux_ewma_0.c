@@ -1,0 +1,28 @@
+static void
+FUN1(void *VAR1)
+{
+circuitmux_t VAR2; 
+VAR3 *VAR4 = NULL;
+circuit_t VAR5; 
+VAR6 *VAR7 = NULL;
+
+(void) VAR1;
+
+VAR4 = VAR8.FUN2(&VAR2);
+FUN3(VAR4);
+VAR7 = VAR8.FUN4(&VAR2, VAR4, &VAR5,
+VAR9, 42);
+FUN3(VAR7);
+
+
+
+
+VAR8.FUN5(&VAR2, VAR4, &VAR5, VAR7);
+
+VAR10 *VAR11 = VAR8.FUN6(&VAR2, VAR4);
+FUN7(VAR11, VAR12, &VAR5, sizeof(VAR5));
+
+VAR13:
+VAR8.FUN8(&VAR2, VAR4, &VAR5, VAR7);
+VAR8.FUN9(&VAR2, VAR4);
+}

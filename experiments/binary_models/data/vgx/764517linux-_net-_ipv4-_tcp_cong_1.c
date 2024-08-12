@@ -1,0 +1,1 @@
+void FUN1 ( char * VAR1 , size_t VAR2 ) { struct VAR3 * VAR4 ; int VAR5 = 0 ; FUN2 ( ) ; FUN3 ( , , ) { VAR5 += snprintf ( VAR1 + VAR5 , VAR2 - VAR5 , "" , VAR5 == 0 ?"" : "" , VAR4 -> VAR6 ) ; if ( FUN4 ( VAR5 >= VAR2 ) ) { break ; } } FUN5 ( ) ; }

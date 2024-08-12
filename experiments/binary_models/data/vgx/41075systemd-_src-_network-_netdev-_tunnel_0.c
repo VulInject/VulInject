@@ -1,0 +1,89 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 *VAR6) {
+union in_addr_union VAR7;
+VAR8 *VAR9;
+int VAR10;
+
+assert(VAR2);
+assert(VAR6);
+
+if (VAR2->VAR11 == VAR12)
+VAR9 = FUN2(VAR2);
+else
+VAR9 = FUN3(VAR2);
+
+assert(VAR9);
+
+if (VAR9->VAR13) {
+VAR10 = FUN4(VAR6, VAR14);
+if (VAR10 < 0)
+return VAR10;
+
+
+return 0;
+}
+
+if (VAR4 || VAR9->VAR15) {
+VAR10 = FUN5(VAR6, VAR16, VAR4 ? VAR4->VAR17 : VAR18);
+if (VAR10 < 0)
+return VAR10;
+}
+
+VAR10 = FUN6(VAR9, VAR4, &VAR7);
+if (VAR10 < 0)
+return FUN7(VAR2, VAR10, "");
+
+VAR10 = FUN8(VAR6, VAR19, &VAR7.VAR20);
+if (VAR10 < 0)
+return VAR10;
+
+VAR10 = FUN8(VAR6, VAR21, &VAR9->VAR22.VAR20);
+if (VAR10 < 0)
+return VAR10;
+
+VAR10 = FUN9(VAR6, VAR23, VAR9->VAR24);
+if (VAR10 < 0)
+return VAR10;
+
+VAR10 = FUN9(VAR6, VAR25, VAR9->VAR26);
+if (VAR10 < 0)
+return VAR10;
+
+if (VAR9->VAR27) {
+VAR10 = FUN10(VAR6, VAR28, VAR9->VAR29);
+if (VAR10 < 0)
+return VAR10;
+
+VAR10 = FUN10(VAR6, VAR30, FUN11(VAR9->VAR31));
+if (VAR10 < 0)
+return VAR10;
+
+VAR10 = FUN10(VAR6, VAR32, FUN11(VAR9->VAR33));
+if (VAR10 < 0)
+return VAR10;
+}
+
+if (VAR2->VAR11 == VAR34) {
+if (VAR9->VAR35 > 0) {
+VAR10 = FUN12(VAR6, VAR36, &VAR9->VAR37);
+if (VAR10 < 0)
+return VAR10;
+
+
+VAR10 = FUN10(VAR6, VAR38, VAR9->VAR35);
+if (VAR10 < 0)
+return VAR10;
+}
+
+if (VAR9->VAR39 >= 0) {
+uint16_t VAR40 = 0;
+
+FUN13(VAR40, VAR41, VAR9->VAR39);
+
+VAR10 = FUN10(VAR6, VAR42, VAR40);
+if (VAR10 < 0)
+return VAR10;
+}
+}
+
+return 0;
+}

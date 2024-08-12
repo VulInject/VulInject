@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 ; VAR4 = FUN2 ( VAR2 -> VAR5 ) ; if ( ! VAR4 -> VAR6 ) { struct VAR7 * VAR8 = FUN3 ( VAR2 ) ; if ( strcmp ( VAR8 -> VAR9 , VAR4 -> VAR9 ) ) { return - VAR10 ; } return 0 ; } return VAR4 -> FUN4 ( FUN3 ( VAR2 ) ) ; }

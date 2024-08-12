@@ -1,0 +1,16 @@
+void
+FUN1(const void *VAR1, uint64_t VAR2, VAR3 *VAR4)
+{
+const VAR5 *VAR6 = VAR1;
+const VAR5 *VAR7 = VAR6 + (VAR2 / sizeof (VAR5));
+uint64_t VAR8, VAR9, VAR10, VAR11;
+
+for (VAR8 = VAR9 = VAR10 = VAR11 = 0; VAR6 < VAR7; VAR6 += 2) {
+VAR8 += FUN2(VAR6[0]);
+VAR10 += FUN2(VAR6[1]);
+VAR9 += VAR8;
+VAR11 += VAR10;
+}
+
+FUN3(VAR4, VAR8, VAR10, VAR9, VAR11);
+}

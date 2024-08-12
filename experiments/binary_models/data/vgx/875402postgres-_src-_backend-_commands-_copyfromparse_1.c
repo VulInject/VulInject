@@ -1,0 +1,1 @@
+static void FUN1 ( CopyFromState VAR1 ) { int VAR2 = FUN2 ( VAR1 ) ; if ( VAR1 -> VAR3 == VAR1 -> VAR4 ) { FUN3 ( ! VAR1 -> VAR5 ) ; FUN3 ( VAR1 -> VAR6 >= VAR1 -> VAR7 ) ; VAR1 -> VAR7 = VAR1 -> VAR6 ; } for ( ; ; ) { FUN4 ( VAR1 ) ; if ( VAR1 -> VAR8 ) { FUN5 ( VAR1 ) ; } if ( VAR1 -> VAR9 ) { break ; } FUN3 ( ! VAR1 -> VAR10 ) ; FUN6 ( VAR1 ) ; } }

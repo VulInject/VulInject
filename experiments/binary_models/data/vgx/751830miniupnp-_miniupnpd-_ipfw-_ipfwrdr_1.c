@@ -1,0 +1,1 @@
+void FUN1 ( void ) { FUN2 ( VAR1 , NULL , 0 ) ; } VAR2 { struct VAR2 * VAR3 ; int VAR4 ; unsigned short VAR5 ; short VAR6 ; char VAR7 [ ] ; }

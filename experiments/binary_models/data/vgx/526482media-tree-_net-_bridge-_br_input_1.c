@@ -1,0 +1,1 @@
+br_should_route_hook_t VAR1 * br_should_route_hook VAR2 ; FUN1 ( VAR3 ) ; static int FUN2 ( struct VAR4 * VAR4 , struct VAR5 * VAR6 , struct VAR7 * VAR8 ) { FUN3 ( VAR8 , NULL ) ; return FUN4 ( VAR8 ) ; }

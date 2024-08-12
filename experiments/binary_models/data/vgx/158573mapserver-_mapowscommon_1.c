@@ -1,0 +1,1 @@
+int FUN1 ( xmlNsPtr VAR1 ) { char VAR2 [ 10 ] ; sprintf ( VAR2 , "" , VAR1 -> VAR3 ) ; if ( strcmp ( VAR2 , VAR4 ) == 0 ) { return VAR5 ; } else { return VAR6 ; } }

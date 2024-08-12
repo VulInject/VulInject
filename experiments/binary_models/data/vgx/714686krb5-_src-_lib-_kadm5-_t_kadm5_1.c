@@ -1,0 +1,1 @@
+static void FUN1 ( char * VAR1 ) { void * VAR2 = FUN2 ( "" ) ; kadm5_policy_ent_rec VAR3 ; memset ( & VAR3 , 0 , sizeof ( VAR3 ) ) ; VAR3 . VAR4 = VAR1 ; FUN3 ( FUN4 ( VAR2 , & VAR3 , VAR5 ) ) ; }

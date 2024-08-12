@@ -1,0 +1,1 @@
+VAR1 FUN1(VAR2)(VAR3 *VAR4, uint64_t VAR5, uint64_t VAR6, uint64_t VAR7) { return FUN2(VAR4, VAR5, VAR6, VAR7, false); }

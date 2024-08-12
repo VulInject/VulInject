@@ -1,0 +1,22 @@
+int FUN1(VAR1 *VAR2, VAR1 *VAR3, VAR1 *VAR4) { return (FUN2(VAR2, VAR3, VAR4)); }
+
+void FUN3(VAR1 *VAR2, VAR1 *VAR3, VAR1 *VAR5) { FUN4(VAR2, VAR3, VAR5); }
+
+void FUN5(VAR1 *VAR2, VAR1 *VAR3, VAR1 *VAR5, VAR1 *VAR6) { FUN6(VAR2, VAR3, VAR5, VAR6); }
+
+void FUN7(VAR1 *VAR2, short VAR7, VAR1 *VAR3) { FUN8(VAR2, VAR7, VAR3); }
+
+VAR1 *FUN9(short VAR7) { return (FUN10(VAR7)); }
+
+int FUN11(VAR1 *VAR2, VAR1 *VAR3) { return (FUN12(VAR2, VAR3)); }
+
+VAR1 *FUN13(char *VAR8) { return (FUN14(VAR8)); }
+
+char *FUN15(VAR1 *VAR8) { return (FUN16(VAR8)); }
+
+void FUN17(VAR1 *VAR2) { FUN18(VAR2); }
+
+
+short *FUN19(int VAR9, char *VAR10) { return (FUN20(VAR9, VAR10)); }
+
+void FUN21(VAR1 *VAR5) { FUN22(VAR5); }

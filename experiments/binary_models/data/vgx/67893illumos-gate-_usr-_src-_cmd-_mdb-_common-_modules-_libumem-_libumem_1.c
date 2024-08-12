@@ -1,0 +1,1 @@
+static int FUN1 ( uintptr_t VAR1 , const VAR2 * VAR3 , int * VAR4 ) { * VAR4 += VAR3 -> VAR5 - VAR3 -> VAR6 ; return ( VAR7 ) ; } VAR8 { int VAR9 ; struct VAR8 * VAR10 ; int VAR11 ; int VAR12 ; int VAR13 ; } VAR14

@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , ddi_detach_cmd_t VAR3 ) { if ( FUN2 ( ) == VAR4 ) { return ( VAR5 ) ; } FUN3 ( VAR2 , NULL ) ; return ( VAR6 ) ; }

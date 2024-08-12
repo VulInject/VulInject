@@ -1,0 +1,1 @@
+static void FUN1 ( const struct VAR1 * VAR2 , unsigned int VAR3 , unsigned int VAR4 , unsigned int VAR5 ) { const struct VAR6 * VAR7 = VAR2 -> VAR7 ; unsigned int VAR8 = VAR3 + VAR5 ; if ( VAR4 + VAR8 > VAR7 -> VAR9 ) { VAR4 = VAR7 -> VAR9 - VAR8 ; } memmove ( VAR7 -> VAR10 + VAR8 , VAR7 -> VAR10 + VAR3 , VAR4 ) ; }

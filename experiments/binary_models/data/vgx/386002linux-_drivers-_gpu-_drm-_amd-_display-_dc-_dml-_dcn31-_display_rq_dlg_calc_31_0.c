@@ -1,0 +1,121 @@
+static void FUN1(struct VAR1 *VAR2, VAR3 *VAR4, const VAR5 *VAR6)
+{
+unsigned int VAR7 = 0;
+unsigned int VAR8 = 0;
+unsigned int VAR9 = 0;
+unsigned int VAR10 = 0;
+unsigned int VAR11 = 0;
+bool VAR12 = 0;
+bool VAR13 = 0;
+bool VAR14 = (VAR6->VAR15 == VAR16);
+bool VAR17 = (VAR6->VAR18 == VAR19);
+unsigned int VAR20 = 0;
+unsigned int VAR21 = 0;
+unsigned int VAR22 = VAR2->VAR23.VAR24 * 1024;
+
+VAR10 = VAR4->VAR25.VAR26.VAR27;
+VAR11 = VAR4->VAR25.VAR28.VAR27;
+
+FUN2("", VAR29, VAR10);
+FUN2("", VAR29, VAR11);
+
+if (VAR4->VAR30) {
+VAR10 = FUN3(VAR4->VAR25.VAR26.VAR27 * 2.0 / 3.0, 256, 1) + 256;
+VAR11 = FUN3(VAR4->VAR25.VAR28.VAR27 * 2.0 / 3.0, 256, 1) + 256;
+FUN2("", VAR29, VAR10);
+FUN2("", VAR29, VAR11);
+}
+
+if (VAR4->VAR31)
+VAR7 = 2 * VAR10 + 2 * VAR11;
+else
+VAR7 = 2 * VAR10;
+
+FUN2("", VAR29, VAR7);
+FUN2("", VAR29, VAR22);
+
+if (VAR7 <= VAR22) { 
+VAR12 = 0;
+VAR13 = 0;
+VAR8 = VAR10;
+VAR9 = VAR11;
+} else if (!VAR4->VAR31) {
+VAR12 = 1;
+VAR13 = 0;
+VAR9 = VAR11;
+VAR8 = VAR10 / 2;
+} else if ((double) VAR10 / (double) VAR11 < 1.5) {
+VAR12 = 0;
+VAR13 = 1;
+VAR8 = VAR10;
+VAR9 = VAR11 / 2;
+
+VAR7 = 2 * VAR8 + 2 * VAR9;
+
+if (VAR7 > VAR22) {
+VAR12 = 1;
+VAR8 = VAR10 / 2;
+}
+} else {
+VAR12 = 1;
+VAR13 = 0;
+VAR8 = VAR10 / 2;
+VAR9 = VAR11;
+
+VAR7 = 2 * VAR8 + 2 * VAR9;
+
+if (VAR7 > VAR22) {
+VAR13 = 1;
+VAR9 = VAR11 / 2;
+}
+}
+
+if (VAR4->VAR31)
+VAR7 = 2 * VAR8 + 2 * VAR9;
+else
+VAR7 = 2 * VAR8;
+
+VAR4->VAR25.VAR26.VAR32 = VAR8;
+VAR4->VAR25.VAR28.VAR32 = VAR9;
+
+FUN2("", VAR29, VAR7);
+FUN2("", VAR29, VAR4->VAR25.VAR26.VAR32);
+FUN2("", VAR29, VAR4->VAR25.VAR28.VAR32);
+if (VAR14) {
+VAR20 = 0;
+VAR21 = 0;
+} else {
+unsigned int VAR33;
+unsigned int VAR34;
+
+if (!VAR17) {
+VAR33 = VAR4->VAR25.VAR26.VAR35;
+VAR34 = VAR4->VAR25.VAR28.VAR35;
+} else {
+VAR33 = VAR4->VAR25.VAR26.VAR36;
+VAR34 = VAR4->VAR25.VAR28.VAR36;
+}
+
+if (VAR33 > 0)
+VAR20 = FUN4(VAR33);
+
+if (VAR12 && VAR20 > 0)
+VAR20 -= 1;
+
+if (VAR34 > 0)
+VAR21 = FUN4(VAR34);
+
+if (VAR13 && VAR21 > 0)
+VAR21 -= 1;
+}
+
+VAR4->VAR37.VAR26.VAR38 = 1 << VAR20;
+VAR4->VAR37.VAR28.VAR38 = 1 << VAR21;
+
+FUN2("", VAR29, VAR12);
+FUN2("", VAR29, VAR13);
+FUN2("", VAR29, VAR10);
+FUN2("", VAR29, VAR11);
+FUN2("", VAR29, VAR4->VAR37.VAR26.VAR38);
+FUN2("", VAR29, VAR4->VAR37.VAR28.VAR38);
+}

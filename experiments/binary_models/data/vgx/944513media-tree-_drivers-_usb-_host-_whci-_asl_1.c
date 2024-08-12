@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR1 , uint32_t VAR2 ) { struct VAR3 * VAR3 = & VAR1 -> VAR3 ; long VAR4 ; if ( VAR3 -> VAR5 ) { FUN2 ( VAR1 , VAR2 , VAR2 ) ; VAR4 = FUN3 ( VAR1 -> VAR6 , ( FUN4 ( VAR1 -> VAR7 + VAR8 ) & VAR9 ) == 0 , FUN5 ( 1000 ) ) ; if ( VAR4 == 0 ) { FUN6 ( VAR1 , "" ) ; } } FUN7 ( & VAR3 -> mutex ) ; }

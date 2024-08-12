@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( VAR2 * VAR3 , int VAR4 ) { if ( VAR4 >= VAR3 -> VAR5 || VAR4 < 0 ) { return VAR6 ; } return VAR3 -> VAR7 [ VAR4 ] ; }

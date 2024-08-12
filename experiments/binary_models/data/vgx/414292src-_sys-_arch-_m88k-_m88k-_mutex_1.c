@@ -1,0 +1,1 @@
+void FUN1 ( struct mutex * VAR1 ) { struct VAR2 * VAR3 = & FUN2 ( ) -> VAR4 ; int VAR5 = VAR6 ; FUN3 ( FUN4 ( VAR1 ) , VAR7 | VAR8 ) ; VAR3 -> VAR9 ++ ; while ( FUN5 ( VAR1 ) == 0 ) { FUN6 ( ) ; if ( -- VAR5 == 0 ) { FUN7 ( "" , VAR10 , VAR1 ) ; FUN8 ( ) ; VAR5 = VAR6 ; } } VAR3 -> VAR9 -- ; }

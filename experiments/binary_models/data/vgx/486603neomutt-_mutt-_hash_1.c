@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( const struct VAR2 * VAR3 , union HashKey VAR4 ) { if ( ! VAR3 ) { return VAR5 ; } size_t VAR6 = VAR3 -> FUN2 ( VAR4 , VAR3 -> VAR7 ) ; struct VAR1 * VAR8 = VAR3 -> VAR3 [ VAR6 ] ; for ( ; VAR8 ; VAR8 = VAR8 -> VAR9 ) { if ( VAR3 -> FUN3 ( VAR4 , VAR8 -> VAR4 ) == 0 ) { return VAR8 ; } } return NULL ; }

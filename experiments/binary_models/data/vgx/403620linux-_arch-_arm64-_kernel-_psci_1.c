@@ -1,0 +1,1 @@
+static int FUN1 ( unsigned int VAR1 ) { int VAR2 ; unsigned long VAR3 , VAR4 ; VAR3 = VAR5 ; VAR4 = VAR3 + FUN2 ( 100 ) ; { VAR2 = VAR6 . FUN3 ( FUN4 ( VAR1 ) , 0 ) ; if ( VAR2 == VAR7 ) { FUN5 ( "" , VAR1 , FUN6 ( VAR5 - VAR3 ) ) ; return 0 ; } FUN7 ( 100 , 1000 ) ; } FUN8 ( VAR5 , VAR4 ) ; FUN9 ( "" , VAR1 , VAR2 ) ; return - VAR8 ; }

@@ -1,0 +1,56 @@
+static VAR1 FUN1(struct VAR2 *VAR3,
+struct VAR4 *VAR5, char VAR6 *VAR7,
+size_t VAR8, VAR9 *VAR10,
+size_t VAR11)
+{
+struct VAR12 *VAR13;
+int VAR14 = 0;
+
+FUN2(&VAR3->VAR15);
+
+while (FUN3(&VAR3->VAR16)) {
+FUN4(&VAR3->VAR15);
+
+if (VAR5->VAR17 & VAR18)
+return -VAR19;
+
+if (FUN5(VAR3->VAR20,
+(!FUN3(&VAR3->VAR16) ||
+VAR3->VAR21)))
+return -VAR22;
+
+FUN2(&VAR3->VAR15);
+
+
+if (FUN3(&VAR3->VAR16) && VAR3->VAR21) {
+FUN4(&VAR3->VAR15);
+return -VAR23;
+}
+}
+
+VAR13 = FUN6(VAR3->VAR16.VAR24, struct VAR12, VAR25);
+
+if (VAR11 > VAR8) {
+VAR14   = -VAR26;
+VAR13 = NULL;
+} else {
+FUN7(VAR3->VAR16.VAR24);
+if (VAR13->VAR27) {
+++(*VAR13->VAR27);
+FUN7(&VAR13->VAR28);
+}
+}
+
+FUN4(&VAR3->VAR15);
+
+if (VAR13) {
+if (FUN8(VAR7, VAR13, VAR11))
+VAR14 = -VAR29;
+else
+VAR14 = VAR11;
+}
+
+FUN9(VAR13);
+
+return VAR14;
+}

@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * VAR2 = FUN2 ( VAR3 ) ; VAR1 * VAR4 = FUN3 ( VAR2 , sizeof ( VAR5 ) + VAR6 , VAR7 ) ; VAR5 * VAR8 = ( VAR5 * ) VAR4 ; VAR8 -> VAR9 . VAR10 . VAR11 = VAR12 ; VAR8 -> VAR9 . VAR10 . VAR13 . VAR14 = VAR15 ; VAR8 -> VAR9 . VAR10 . VAR16 . VAR6 = VAR6 ; VAR17 * VAR18 = ( VAR17 * ) ( VAR8 + 1 ) ; return VAR4 ; }

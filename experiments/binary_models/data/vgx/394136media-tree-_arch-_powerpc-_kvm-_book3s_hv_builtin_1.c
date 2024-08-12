@@ -1,0 +1,1 @@
+FUN1 ( VAR1 ) ; FUN1 ( VAR2 ) ; FUN1 ( VAR3 ) ; static unsigned long VAR4 = 5 ; static struct VAR5 * VAR6 ; static int __init FUN2 ( char * VAR7 ) { FUN3 ( "" , VAR8 , VAR7 ) ; return FUN4 ( VAR7 , 0 , & VAR4 ) ; }

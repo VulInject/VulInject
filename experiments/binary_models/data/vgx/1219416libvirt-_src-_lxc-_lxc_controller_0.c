@@ -1,0 +1,68 @@
+static int FUN1(VAR1 *VAR2,
+VAR3 *VAR4,
+VAR5 *VAR6)
+{
+g_autofree char *VAR7 = NULL;
+int VAR8 = -1;
+struct stat VAR9;
+mode_t VAR10;
+char *VAR11 = VAR4->VAR12->VAR13;
+
+if (FUN2(VAR4) != VAR14) {
+FUN3(VAR15, "",
+FUN4(""));
+goto VAR16;
+}
+if (!VAR11) {
+FUN3(VAR15, "",
+FUN4(""));
+goto VAR16;
+}
+
+VAR7 = FUN5("", VAR17, VAR2->VAR4->VAR18,
+VAR4->VAR7);
+
+if (FUN6(VAR4->VAR12->VAR13, &VAR9) < 0) {
+FUN7(VAR19,
+FUN4(""), VAR11);
+goto VAR16;
+}
+
+if (!FUN8(VAR9.VAR20) && !FUN9(VAR9.VAR20)) {
+FUN3(VAR15,
+FUN4(""),
+VAR11);
+goto VAR16;
+}
+
+VAR10 = 0700;
+if (FUN8(VAR9.VAR20))
+VAR10 |= VAR21;
+else
+VAR10 |= VAR22;
+
+
+FUN10("",
+VAR7, FUN11(VAR9.VAR23), FUN12(VAR9.VAR23), VAR11);
+if (FUN13(VAR7, VAR10, VAR9.VAR23) < 0) {
+FUN7(VAR19,
+FUN4(""),
+VAR7);
+goto VAR16;
+}
+
+if (FUN14(VAR2->VAR4, VAR7) < 0)
+goto VAR16;
+
+
+VAR4->VAR12->VAR13 = VAR7;
+if (FUN15(VAR6, VAR2->VAR4, VAR4->VAR12,
+VAR24) < 0)
+goto VAR16;
+
+VAR8 = 0;
+
+VAR16:
+VAR4->VAR12->VAR13 = VAR11;
+return VAR8;
+}

@@ -1,0 +1,18 @@
+static void
+FUN1( void *VAR1, unsigned int VAR2)
+{
+VAR3 *VAR4 = VAR1;
+
+(void)VAR2;
+
+VAR4->VAR5 = 0x67452301;
+VAR4->VAR6 = 0xefcdab89;
+VAR4->VAR7 = 0x98badcfe;
+VAR4->VAR8 = 0x10325476;
+
+VAR4->VAR9.VAR10 = 0;
+VAR4->VAR9.VAR11 = 0;
+VAR4->VAR9.VAR12 = 0;
+VAR4->VAR9.VAR13 = FUN2(64);
+VAR4->VAR9.VAR14 = VAR15;
+}

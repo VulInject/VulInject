@@ -1,0 +1,30 @@
+VAR1
+FUN1(VAR2 *VAR3, VAR4 *VAR5, uint32_t VAR6)
+{
+VAR7 *VAR8;
+smb_fssd_t VAR9;
+uint32_t VAR10;
+uint32_t VAR11;
+int VAR12;
+
+VAR8 = VAR3->VAR13->VAR14;
+VAR11 = FUN2(VAR8) ? VAR15 : 0;
+FUN3(&VAR9, VAR6, VAR11);
+
+VAR10 = FUN4(VAR5, &VAR9);
+if (VAR10 != VAR16) {
+FUN5(&VAR9);
+return (VAR10);
+}
+
+VAR12 = FUN6(VAR3, VAR3->VAR17, VAR8, &VAR9, 0);
+FUN5(&VAR9);
+
+if (VAR12) {
+if (VAR12 == VAR18)
+return (VAR19);
+return (FUN7(VAR12));
+}
+
+return (VAR16);
+}

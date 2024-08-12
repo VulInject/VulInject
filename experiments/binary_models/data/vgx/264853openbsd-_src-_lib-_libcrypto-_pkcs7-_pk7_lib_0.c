@@ -1,0 +1,43 @@
+long
+FUN1(VAR1 *VAR2, int VAR3, long VAR4, char *VAR5)
+{
+int VAR6;
+long VAR7;
+
+VAR6 = FUN2(VAR2->VAR8);
+
+switch (VAR3) {
+case VAR9:
+if (VAR6 == VAR10) {
+VAR7 = VAR2->VAR11 = (int)VAR4;
+if (VAR7 && FUN3(VAR2->VAR12.VAR13->VAR14)) {
+VAR15 *VAR16;
+VAR16 = VAR2->VAR12.VAR13->VAR14->VAR12.VAR17;
+FUN4(VAR16);
+VAR2->VAR12.VAR13->VAR14->VAR12.VAR17 = NULL;
+}
+} else {
+FUN5(VAR18);
+VAR7 = 0;
+}
+break;
+case VAR19:
+if (VAR6 == VAR10) {
+if (!VAR2->VAR12.VAR13  || !VAR2->VAR12.VAR13->VAR14->VAR12.VAR20)
+VAR7 = 1;
+else
+VAR7 = 0;
+
+VAR2->VAR11 = VAR7;
+} else {
+FUN5(VAR18);
+VAR7 = 0;
+}
+
+break;
+default:
+FUN5(VAR21);
+VAR7 = 0;
+}
+return (VAR7);
+}

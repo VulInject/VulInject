@@ -1,0 +1,82 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+struct VAR5 *VAR6)
+{
+struct VAR7 *VAR8 = VAR2->VAR8;
+struct VAR9 *VAR10;
+int VAR11 = 0;
+int VAR12 = FUN2(VAR8);
+__wsum VAR13 = 0;
+int VAR14 = FUN3(VAR2);
+int VAR15 = VAR2->VAR15 - VAR14;
+int VAR16 = VAR15 - sizeof(*VAR10);
+
+
+VAR10 = FUN4(VAR2);
+VAR10->VAR17 = VAR4->VAR18;
+VAR10->VAR19 = VAR4->VAR20;
+VAR10->VAR15 = FUN5(VAR15);
+VAR10->VAR21 = 0;
+
+if (VAR6->VAR22) {
+const int VAR23 = FUN6(VAR2) +
+sizeof(struct VAR9);
+
+if (VAR23 + VAR6->VAR22 > VAR6->VAR24) {
+FUN7(VAR2);
+return -VAR25;
+}
+if (VAR16 > VAR6->VAR22 * VAR26) {
+FUN7(VAR2);
+return -VAR25;
+}
+if (FUN8(VAR8)->VAR27) {
+FUN7(VAR2);
+return -VAR25;
+}
+if (VAR2->VAR28 != VAR29 || VAR12 ||
+FUN9(FUN10(VAR2))) {
+FUN7(VAR2);
+return -VAR30;
+}
+
+if (VAR16 > VAR6->VAR22) {
+FUN11(VAR2)->VAR22 = VAR6->VAR22;
+FUN11(VAR2)->VAR31 = VAR32;
+FUN11(VAR2)->VAR33 = FUN12(VAR16,
+VAR6->VAR22);
+}
+goto VAR34;
+}
+
+if (VAR12)
+VAR13 = FUN13(VAR2);
+else if (FUN8(VAR8)->VAR27) {   
+VAR2->VAR28 = VAR35;
+goto send;
+} else if (VAR2->VAR28 == VAR29) { 
+VAR34:
+FUN14(VAR8, VAR2, &VAR4->VAR36, &VAR4->VAR37, VAR15);
+goto send;
+} else
+VAR13 = FUN15(VAR2);
+
+
+VAR10->VAR21 = FUN16(&VAR4->VAR36, &VAR4->VAR37,
+VAR15, VAR4->VAR38, VAR13);
+if (VAR10->VAR21 == 0)
+VAR10->VAR21 = VAR39;
+
+send:
+VAR11 = FUN17(VAR2);
+if (VAR11) {
+if (VAR11 == -VAR40 && !FUN18(VAR8)->VAR41) {
+FUN19(FUN20(VAR8),
+VAR42, VAR12);
+VAR11 = 0;
+}
+} else {
+FUN19(FUN20(VAR8),
+VAR43, VAR12);
+}
+return VAR11;
+}

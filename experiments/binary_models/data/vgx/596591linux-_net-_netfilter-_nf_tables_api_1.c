@@ -1,0 +1,1 @@
+static int FUN1 ( const struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { u8 VAR5 = FUN2 ( VAR2 -> VAR6 ) ; struct VAR7 * VAR8 ; struct nft_set_elem VAR9 ; struct VAR10 * VAR11 ; int VAR12 = 0 ; FUN3 ( , , ) { VAR11 = FUN4 ( VAR4 , VAR8 -> VAR9 ) ; VAR9 . VAR13 = VAR8 -> VAR9 ; VAR12 = FUN5 ( VAR2 , VAR4 , & VAR9 ) ; if ( VAR12 < 0 ) { break ; } } return VAR12 ; }

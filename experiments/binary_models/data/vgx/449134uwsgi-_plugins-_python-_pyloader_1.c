@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( char * VAR2 ) { VAR1 * VAR3 , * VAR4 ; VAR3 = FUN2 ( VAR2 , NULL ) ; if ( ! VAR3 ) { FUN3 ( ) ; return NULL ; } VAR4 = FUN4 ( VAR3 ) ; if ( ! VAR4 ) { FUN3 ( ) ; return NULL ; } return VAR4 ; }

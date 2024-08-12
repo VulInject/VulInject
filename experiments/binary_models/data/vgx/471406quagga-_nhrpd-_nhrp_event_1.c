@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , const VAR3 * VAR4 , size_t VAR5 ) { static const char VAR6 [ ] "" ; ; size_t VAR7 ; char * VAR8 ; VAR8 = FUN2 ( VAR2 , 2 * VAR5 ) ; for ( VAR7 = 0 ; VAR7 < VAR5 ; VAR7 ++ ) { uint8_t VAR9 = VAR4 [ VAR7 ] ; * ( VAR8 ++ ) = VAR6 [ VAR9 >> 4 ] ; * ( VAR8 ++ ) = VAR6 [ VAR9 & 0xf ] ; } }

@@ -1,0 +1,20 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR2);
+unsigned long VAR7;
+u16 VAR8;
+
+VAR7 = FUN3(VAR4);
+FUN4(VAR7 & 0xFFFF, VAR6->VAR9 + VAR10);
+FUN4((VAR7 >> 16) & 0xFFFF, VAR6->VAR9 + VAR11);
+
+
+VAR8 = FUN5(VAR6->VAR9 + VAR12);
+FUN4(VAR8 | VAR13, VAR6->VAR9 + VAR12);
+
+
+while (FUN5(VAR6->VAR9 + VAR12) & VAR13)
+FUN6(1);
+FUN7(VAR6);
+return 0;
+}

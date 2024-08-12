@@ -1,0 +1,1 @@
+void FUN1 ( void ) { if ( VAR1 != - 1 ) { FUN2 ( VAR1 , 0 ) ; VAR1 = - 1 ; } else { FUN3 ( ) ; } close ( VAR2 ) ; VAR2 = - 1 ; }

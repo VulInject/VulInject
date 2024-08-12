@@ -1,0 +1,1 @@
+static u32 FUN1 ( u32 VAR1 ) { return VAR1 ; }

@@ -1,0 +1,35 @@
+FUN1 (VAR1 *VAR2,
+VAR3                *VAR4,
+VAR5                *VAR6)
+{
+VAR7 *VAR8;
+VAR9 *VAR10;
+guint VAR11;
+
+FUN2 (FUN3 (VAR2), NULL);
+FUN2 (FUN4 (VAR4), NULL);
+
+VAR11 = 0;
+
+for (VAR8 = VAR2->VAR12; VAR8 != NULL; VAR8 = VAR8->VAR13)
+{
+FUN5 (VAR3) VAR14 = NULL;
+
+VAR10 = VAR8->VAR15;
+VAR14 = FUN6 (VAR10);
+
+if (FUN7 (VAR4, VAR14))
+{
+if (VAR6)
+{
+*VAR6 = VAR11;
+}
+
+return VAR10;
+}
+
+VAR11++;
+}
+
+return NULL;
+}

@@ -1,0 +1,1 @@
+static inline int FUN1 ( const VAR1 * VAR2 , int VAR3 , int16_t VAR4 ) { int VAR5 ; for ( VAR5 = 0 ; VAR5 <= VAR3 ; VAR5 ++ ) { if ( VAR2 [ VAR5 ] == VAR4 ) { return 1 ; } } return 0 ; }

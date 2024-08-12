@@ -1,0 +1,1 @@
+static VAR1 FUN1(uint32_t VAR2, uint32_t VAR3) { return ((VAR4)VAR3 << 32) | VAR2; }

@@ -1,0 +1,1 @@
+void FUN1 ( void * * VAR1 ) { VAR2 * VAR3 [ ] { "" "" "" "" "" NULL } ; ; FUN2 ( VAR4 , VAR5 ) ; FUN3 ( VAR6 , VAR7 , VAR8 ) ; FUN4 ( "" ) ; gboolean VAR9 = FUN5 ( NULL , VAR8 , VAR3 ) ; }

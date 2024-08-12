@@ -1,0 +1,48 @@
+static VAR1 FUN1(struct VAR2 *VAR3, struct VAR4 *VAR5,
+char *VAR6)
+{
+struct VAR7 *VAR8 = FUN2(VAR3);
+struct VAR9 *VAR10 = FUN3(VAR5);
+int VAR11;
+
+switch (VAR10->VAR12) {
+case VAR13:
+FUN4(&VAR8->VAR14);
+VAR11 = VAR8->VAR15[VAR10->VAR12][VAR10->VAR16];
+if (VAR10->VAR16 != 1)
+VAR11 = (VAR11 >> 4) & 0xF;
+else
+VAR11 = (VAR11 & 0xF);
+
+VAR11 = FUN5(VAR8, VAR8->VAR15[VAR17][VAR10->VAR16]) -
+VAR11 * 1000;
+FUN6(&VAR8->VAR14);
+break;
+
+case VAR18:
+
+FUN4(&VAR8->VAR14);
+VAR11 = (VAR19)VAR8->VAR15[VAR10->VAR12][VAR10->VAR16];
+if (VAR8->VAR20 & VAR21)
+VAR11 *= 1000;
+else
+VAR11 *= 500;
+FUN6(&VAR8->VAR14);
+break;
+
+case VAR22:
+VAR11 = (VAR8->VAR23 >> (VAR10->VAR16 + 4)) & 1;
+break;
+
+case VAR24:
+
+VAR11 = !!(VAR8->VAR23 & (VAR10->VAR16 ? 0x8000 : 0x4000));
+break;
+
+default:
+
+VAR11 = FUN5(VAR8, VAR8->VAR15[VAR10->VAR12][VAR10->VAR16]);
+}
+
+return sprintf(VAR6, "", VAR11);
+}

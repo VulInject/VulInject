@@ -1,0 +1,1 @@
+void FUN1 ( void ) { struct VAR1 * VAR2 = FUN2 ( & VAR3 ) ; ktime_t VAR4 ; FUN3 ( ) ; FUN4 ( ! VAR2 -> VAR5 ) ; if ( VAR2 -> VAR6 || VAR2 -> VAR7 ) { VAR4 = FUN5 ( ) ; } if ( VAR2 -> VAR6 ) { FUN6 ( VAR2 , VAR4 ) ; } if ( VAR2 -> VAR7 ) { FUN7 ( VAR2 , VAR4 ) ; FUN8 ( VAR2 ) ; } FUN9 ( ) ; }

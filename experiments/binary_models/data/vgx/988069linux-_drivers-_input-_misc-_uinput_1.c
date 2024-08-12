@@ -1,0 +1,1 @@
+static int FUN1 ( void VAR1 * VAR2 , const char * VAR3 , unsigned int VAR4 ) { char VAR1 * VAR5 = VAR2 ; int VAR6 , VAR7 ; if ( VAR4 == 0 ) { return - VAR8 ; } VAR6 = strlen ( VAR3 ) + 1 ; if ( VAR6 > VAR4 ) { VAR6 = VAR4 ; } VAR7 = FUN2 ( VAR5 , VAR3 , VAR6 ) ; if ( VAR7 ) { return - VAR9 ; } VAR7 = FUN3 ( 0 , VAR5 + VAR6 - 1 ) ; return VAR7 ?- VAR9 : VAR6 ; }

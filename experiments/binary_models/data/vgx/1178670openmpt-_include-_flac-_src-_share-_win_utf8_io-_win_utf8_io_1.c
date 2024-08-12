@@ -1,0 +1,1 @@
+int FUN1 ( const char * VAR1 ) { wchar_t * VAR2 ; int VAR3 ; if ( ! ( VAR2 = FUN2 ( VAR1 ) ) ) { return - 1 ; } VAR3 = FUN3 ( VAR2 ) ; return VAR3 ; }

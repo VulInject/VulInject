@@ -1,0 +1,493 @@
+FUN1 (void)
+{
+static int VAR1 = 0;
+rtx VAR2;
+VAR3 *VAR4, VAR5;
+int * VAR6;
+int VAR7;
+unsigned VAR8,VAR9;
+partial_schedule_ptr VAR10;
+struct VAR11 *VAR11;
+struct VAR12 *VAR12;
+basic_block VAR13 = NULL;
+
+struct VAR14 * VAR15;
+basic_block VAR16 = NULL;
+edge VAR17;
+gcov_type VAR18 = 0;
+
+VAR12 = FUN2 (VAR19
+| VAR20);
+if (!VAR12)
+return;  
+
+
+if (VAR21.VAR22.VAR23)
+{
+int VAR24 = VAR25;
+
+VAR25 = 1;
+VAR23 = VAR21.VAR22.FUN3 ();
+VAR25 = VAR24;
+}
+else
+VAR23 = 1;
+
+
+VAR26 = &VAR27;
+FUN4 ();
+
+
+VAR11 = FUN5 (VAR28 | VAR29 | VAR30);
+FUN6 (VAR11, 0);
+FUN7 (VAR11, 0);
+FUN8 (VAR11, VAR31 | VAR32);
+FUN9 (VAR11);
+
+if (VAR33)
+FUN10 (VAR11, VAR33);
+
+
+VAR4 = FUN11 (VAR3, VAR12->VAR34);
+
+
+
+for (VAR8 = 0; VAR8 < VAR12->VAR34; VAR8++)
+{
+rtx VAR35, VAR36;
+rtx VAR37;
+struct VAR14 *VAR14 = VAR12->VAR38[VAR8];
+
+
+if ((VAR1++ > VAR39) && (VAR39 != -1))
+{
+if (VAR33)
+fprintf (VAR33, "");
+
+break;
+}
+
+if (! FUN12 (VAR14))
+continue;
+
+if (! FUN13 (VAR14))
+continue;
+
+VAR13 = VAR14->VAR40;
+
+FUN14 (VAR13, VAR13, &VAR35, &VAR36);
+VAR17 = FUN15 (VAR14);
+FUN16 (VAR14->VAR41);
+if (VAR14->VAR41->VAR42)
+VAR18 = VAR17->VAR42 / VAR14->VAR41->VAR42;
+
+
+
+if ( VAR17->VAR42
+&& (VAR17->VAR42 < VAR14->VAR41->VAR42 * VAR43))
+{
+if (VAR33)
+{
+rtx VAR44 = FUN17 (VAR36);
+
+if (VAR44)
+{
+expanded_location VAR45;
+FUN18 (VAR45, VAR44);
+fprintf (VAR33, "",
+VAR45.VAR46, VAR45.VAR47);
+}
+fprintf (VAR33, "");
+if (VAR48 && VAR49)
+{
+fprintf (VAR33, "");
+fprintf (VAR33, VAR50,
+(VAR51) VAR13->VAR42);
+fprintf (VAR33, "");
+fprintf (VAR33, "");
+fprintf (VAR33, VAR50,
+(VAR51) VAR18);
+fprintf (VAR33, "");
+fprintf (VAR33, "");
+fprintf (VAR33, VAR50,
+(VAR51) VAR48->VAR52);
+fprintf (VAR33, "");
+}
+}
+continue;
+}
+
+
+if ( !(VAR37 = FUN19 (VAR36)))
+continue;
+
+
+for (VAR2 = VAR35; VAR2 != FUN20 (VAR36); VAR2 = FUN20 (VAR2))
+if (FUN21 (VAR2)
+|| FUN22 (VAR2)
+|| (FUN23 (VAR2) && !FUN24 (VAR2)
+&& !FUN25 (VAR2) && FUN26 (FUN27 (VAR2)) != VAR53))
+break;
+
+if (VAR2 != FUN20 (VAR36))
+{
+if (VAR33)
+{
+if (FUN21 (VAR2))
+fprintf (VAR33, "");
+else if (FUN22 (VAR2))
+fprintf (VAR33, "");
+else
+fprintf (VAR33, "");
+FUN28 (VAR33, VAR2);
+}
+
+continue;
+}
+
+if (! (VAR5 = FUN29 (VAR13, VAR11, 0)))
+{
+if (VAR33)
+fprintf (VAR33, "");
+continue;
+}
+
+VAR4[VAR8] = VAR5;
+}
+
+
+FUN30 (VAR11);
+VAR11 = NULL;
+
+
+VAR9 = VAR12->VAR34;
+
+for (VAR8 = 0; VAR8 < VAR9; VAR8++)
+{
+rtx VAR35, VAR36;
+rtx VAR37, VAR54;
+int VAR55, VAR56;
+unsigned VAR57 = 0;
+HOST_WIDEST_INT VAR58 = 0;
+struct VAR14 *VAR14 = VAR12->VAR38[VAR8];
+
+if (! (VAR5 = VAR4[VAR8]))
+continue;
+
+if (VAR33)
+FUN31 (VAR33, VAR5);
+
+FUN14 (VAR14->VAR40, VAR14->VAR40, &VAR35, &VAR36);
+
+VAR17 = FUN15 (VAR14);
+FUN16 (VAR14->VAR41);
+if (VAR14->VAR41->VAR42)
+VAR18 = VAR17->VAR42 / VAR14->VAR41->VAR42;
+
+if (VAR33)
+{
+rtx VAR44 = FUN17 (VAR36);
+
+if (VAR44)
+{
+expanded_location VAR45;
+FUN18 (VAR45, VAR44);
+fprintf (VAR33, "",
+VAR45.VAR46, VAR45.VAR47);
+}
+fprintf (VAR33, "");
+if (VAR48 && VAR49)
+{
+fprintf (VAR33, "");
+fprintf (VAR33, VAR50,
+(VAR51) VAR13->VAR42);
+fprintf (VAR33, "");
+fprintf (VAR33, "");
+fprintf (VAR33, VAR50,
+(VAR51) VAR48->VAR52);
+fprintf (VAR33, "");
+}
+fprintf (VAR33, "");
+fprintf (VAR33, "", VAR5->VAR59);
+fprintf (VAR33, "", VAR5->VAR60);
+fprintf (VAR33, "", VAR5->VAR61);
+}
+
+
+
+VAR54 = VAR62;
+if ((VAR37 = FUN19 (VAR36)))
+{
+basic_block VAR63;
+
+VAR63 = FUN32 (VAR14)->VAR64;
+VAR54 = FUN33 (VAR37, VAR63,
+&VAR58);
+}
+FUN16 (VAR37);
+
+if (VAR33 && VAR54)
+{
+fprintf (VAR33, "");
+fprintf (VAR33, VAR50,
+VAR58);
+fprintf (VAR33, "");
+}
+
+VAR6 = FUN34 (int, VAR5->VAR59);
+
+VAR55 = 1; 
+VAR56 = FUN35 (VAR5, VAR55, VAR6);
+VAR55 = FUN36 (FUN37 (VAR5), VAR56);
+VAR7 = (FUN38 (VAR5) * VAR65) / 100;
+
+if (VAR33)
+fprintf (VAR33, "",
+VAR56, VAR55, VAR7);
+
+
+FUN39 (VAR5);
+
+VAR10 = FUN40 (VAR5, VAR55, VAR7, VAR6);
+
+if (VAR10)
+VAR57 = FUN41 (VAR10);
+
+
+if (VAR57 < 1
+|| (VAR54 && (VAR58 <= VAR57))
+|| (VAR49 && (VAR18 <= VAR57)))
+{
+if (VAR33)
+{
+fprintf (VAR33, "");
+fprintf (VAR33, "", VAR57);
+fprintf (VAR33, VAR50, VAR58);
+fprintf (VAR33, "");
+fprintf (VAR33, VAR50, VAR18);
+fprintf (VAR33, "");
+}
+continue;
+}
+else
+{
+int VAR66 = FUN42 (FUN43 (VAR5->VAR13), FUN44 (VAR5->VAR13));
+int VAR67;
+struct VAR68 *VAR69;
+
+if (VAR33)
+{
+fprintf (VAR33,
+"", VAR10->VAR70,
+VAR57);
+FUN45 (VAR10, VAR33);
+fprintf (VAR33,
+"",
+VAR5->VAR71->VAR72, FUN46 (VAR10) - 1);
+}
+
+
+FUN47 (VAR10);
+FUN48 (VAR10, FUN46 (VAR10));
+FUN49 (VAR10);
+
+
+FUN50 (VAR10, VAR5->VAR71->VAR73);
+VAR69 = FUN51 (VAR10);
+
+
+VAR67 = FUN42 (FUN43 (VAR5->VAR13), FUN44 (VAR5->VAR13));
+
+
+FUN52 (VAR10, VAR5->VAR71->VAR73);
+if (VAR69)
+FUN53 (VAR10, VAR69);
+
+if ( VAR67 >= VAR66)
+{
+
+if (VAR33)
+fprintf (VAR33, "");
+
+}
+else
+{
+FUN54 (VAR14);
+
+
+if (VAR37 && ! VAR54)
+{
+rtx VAR74 = FUN55 (VAR75, VAR76, VAR37,
+FUN56(VAR57));
+
+VAR15 = FUN57 (VAR12, VAR14, VAR74, &VAR16,
+true);
+}
+
+
+if (VAR37 && VAR54)
+FUN58 (FUN25 (VAR54)) = FUN56 (VAR58
+- VAR57 + 1);
+
+
+FUN50 (VAR10, VAR5->VAR71->VAR73);
+
+
+if (! VAR77)
+VAR5->VAR13->VAR78 |= VAR79;
+
+VAR5->VAR13->VAR78 |= VAR80;
+
+VAR69 = FUN51 (VAR10);
+if (VAR33)
+FUN59 (VAR33, VAR5->VAR59);
+
+if (VAR37 && !VAR54)
+FUN60 (VAR10, VAR14, VAR37);
+else
+FUN60 (VAR10, VAR14, VAR62);
+}
+FUN61 (VAR69);
+}
+
+FUN62 (VAR10);
+free (VAR81);
+free (VAR6);
+FUN63 (VAR5);
+}
+
+free (VAR4);
+
+
+FUN64 ();
+FUN65 (VAR12);
+}
+
+
+
+
+
+
+
+static int
+FUN66 (partial_schedule_ptr VAR10, int *VAR82, int VAR8,
+sbitmap VAR83, int VAR70, int *VAR84, int *VAR85, int *VAR86)
+{
+int VAR87, VAR88, VAR89;
+ddg_edge_ptr VAR90;
+int VAR91 = VAR82 [VAR8];
+ddg_node_ptr VAR92 = &VAR10->VAR5->VAR93[VAR91];
+sbitmap VAR94 = FUN67 (VAR10->VAR5->VAR59);
+sbitmap VAR95 = FUN67 (VAR10->VAR5->VAR59);
+sbitmap VAR96 = FUN68 (VAR92);
+sbitmap VAR97 = FUN69 (VAR92);
+int VAR98;
+int VAR99;
+
+
+FUN70 (VAR94);
+FUN70 (VAR95);
+VAR98 = FUN71 (VAR94, VAR96, VAR83);
+VAR99 = FUN71 (VAR95, VAR97, VAR83);
+
+if (VAR98 && !VAR99)
+{
+int VAR100 = VAR101;
+
+VAR89 = VAR102;
+for (VAR90 = VAR92->VAR103; VAR90 != 0; VAR90 = VAR90->VAR104)
+{
+ddg_node_ptr VAR105 = VAR90->VAR64;
+if (FUN72 (VAR83, VAR105->VAR72))
+{
+int VAR106 = FUN73 (VAR105)
++ VAR90->VAR107 - (VAR90->VAR108 * VAR70);
+
+VAR100 = FUN36 (VAR100, VAR106);
+
+if (VAR90->VAR109 == VAR110)
+VAR89 = FUN74 (VAR89, FUN73 (VAR105) + VAR70 - 1);
+}
+}
+VAR87 = VAR100;
+VAR89 = FUN74 (VAR89, VAR100 + VAR70);
+VAR88 = 1;
+}
+
+else if (!VAR98 && VAR99)
+{
+int VAR111 = VAR102;
+
+VAR89 = VAR101;
+for (VAR90 = VAR92->VAR112; VAR90 != 0; VAR90 = VAR90->VAR113)
+{
+ddg_node_ptr VAR105 = VAR90->VAR114;
+if (FUN72 (VAR83, VAR105->VAR72))
+{
+VAR111 = FUN74 (VAR111,
+FUN73 (VAR105) - VAR90->VAR107
++ (VAR90->VAR108 * VAR70));
+if (VAR90->VAR109 == VAR110)
+VAR89 = FUN36 (VAR89, FUN73 (VAR105) - VAR70 + 1);
+}
+}
+VAR87 = VAR111;
+VAR89 = FUN36 (VAR89, VAR111 - VAR70);
+VAR88 = -1;
+}
+
+else if (VAR98 && VAR99)
+{
+int VAR100 = VAR101;
+int VAR111 = VAR102;
+
+VAR87 = VAR101;
+VAR89 = VAR102;
+for (VAR90 = VAR92->VAR103; VAR90 != 0; VAR90 = VAR90->VAR104)
+{
+ddg_node_ptr VAR105 = VAR90->VAR64;
+
+if (FUN72 (VAR83, VAR105->VAR72))
+{
+VAR100 = FUN36 (VAR100,
+FUN73 (VAR105) + VAR90->VAR107
+- (VAR90->VAR108 * VAR70));
+if (VAR90->VAR109 == VAR110)
+VAR89 = FUN74 (VAR89, FUN73 (VAR105) + VAR70 - 1);
+}
+}
+for (VAR90 = VAR92->VAR112; VAR90 != 0; VAR90 = VAR90->VAR113)
+{
+ddg_node_ptr VAR105 = VAR90->VAR114;
+
+if (FUN72 (VAR83, VAR105->VAR72))
+{
+VAR111 = FUN74 (VAR111,
+FUN73 (VAR105) - VAR90->VAR107
++ (VAR90->VAR108 * VAR70));
+if (VAR90->VAR109 == VAR110)
+VAR87 = FUN36 (VAR87, FUN73 (VAR105) - VAR70 + 1);
+}
+}
+VAR87 = FUN36 (VAR87, VAR100);
+VAR89 = FUN74 (VAR89, FUN74 (VAR100 + VAR70, VAR111 + 1));
+VAR88 = 1;
+}
+else 
+{
+VAR87 = FUN75 (VAR92);
+VAR89 = VAR87 + VAR70;
+VAR88 = 1;
+}
+
+*VAR84 = VAR87;
+*VAR85 = VAR88;
+*VAR86 = VAR89;
+FUN76 (VAR94);
+FUN76 (VAR95);
+
+if ((VAR87 >= VAR89 && VAR88 == 1) || (VAR87 <= VAR89 && VAR88 == -1))
+return -1;
+else
+return 0;
+}

@@ -1,0 +1,107 @@
+static VAR1 *FUN1(VAR2 *VAR3, VAR4 *VAR5) {
+VAR1 *VAR6 = FUN2 (VAR1);
+if (!VAR6) {
+return NULL;
+}
+
+if (!VAR5->VAR7->VAR8 || !VAR5->VAR7->VAR9) {
+size_t VAR10 = 0;
+ut32 VAR11[VAR12];
+
+size_t VAR13;
+for (VAR13 = 0; VAR13 < VAR5->VAR14 && VAR13 < VAR12; VAR13++) {
+ut64 VAR15 = VAR5->VAR15[VAR13];
+if ((VAR11[VAR13] = FUN3 (VAR5->VAR16, 0x13c + VAR15)) == VAR17) {
+goto VAR18;
+}
+if (FUN4 (VAR10, VAR11[VAR13])) {
+goto VAR18;
+}
+VAR10 += VAR11[VAR13];
+}
+
+if (!VAR10) {
+goto VAR18;
+}
+
+VAR19 * VAR20 = FUN5 (VAR19, VAR10);
+if (!VAR20) {
+goto VAR18;
+}
+
+size_t VAR21 = 0;
+for (VAR13 = 0; VAR13 < VAR5->VAR14 && VAR13 < VAR12; VAR13++) {
+ut64 VAR15 = VAR5->VAR15[VAR13];
+ut64 VAR22;
+if (!VAR11[VAR13]) {
+continue;
+}
+if ((VAR22 = FUN3 (VAR5->VAR16, 0x138 + VAR15)) == VAR17) {
+continue;
+}
+if (!VAR22) {
+continue;
+}
+VAR22 += VAR15;
+
+ut32 VAR23;
+VAR24 *VAR25 = NULL;
+for (VAR23 = 0; VAR23 < VAR11[VAR13]; VAR23++) {
+ut64 VAR26 = VAR22 + VAR23 * sizeof (VAR27);
+cache_mapping_slide VAR28;
+if (FUN6 (VAR5->VAR16, VAR26, (VAR29*)&VAR28, "", 1) != sizeof (VAR27)) {
+break;
+}
+
+if (VAR28.VAR8 && VAR28.VAR9) {
+VAR20[VAR21].VAR30 = VAR28.VAR31 + VAR15;
+VAR20[VAR21].VAR32 = VAR20[VAR21].VAR30 + VAR28.VAR33;
+ut64 VAR34 = VAR25 ? VAR25->VAR34 : VAR35;
+VAR20[VAR21].VAR36 = FUN7 (VAR3, VAR5, VAR28.VAR8 + VAR15, VAR28.VAR9, VAR28.VAR31 + VAR15, VAR34);
+VAR25 = VAR20[VAR21].VAR36;
+VAR21++;
+}
+}
+}
+
+if (!VAR21) {
+free (VAR20);
+goto VAR18;
+}
+
+if (VAR21 < VAR10) {
+VAR19 * VAR37 = FUN5 (VAR19, VAR21);
+if (!VAR37) {
+free (VAR20);
+goto VAR18;
+}
+
+memcpy (VAR37, VAR20, sizeof (VAR19) * VAR21);
+free (VAR20);
+VAR20 = VAR37;
+}
+
+VAR6->VAR38 = VAR20;
+VAR6->VAR39 = VAR21;
+return VAR6;
+}
+
+if (VAR5->VAR7->VAR40 > 1) {
+VAR19 * VAR20 = FUN5 (VAR19, 1);
+if (!VAR20) {
+goto VAR18;
+}
+
+VAR20[0].VAR30 = VAR5->VAR41[1].VAR31;
+VAR20[0].VAR32 = VAR20[0].VAR30 + VAR5->VAR41[1].VAR33;
+VAR20[0].VAR36 = FUN7 (VAR3, VAR5, VAR5->VAR7->VAR8, VAR5->VAR7->VAR9, VAR20[0].VAR30, VAR35);
+
+VAR6->VAR38 = VAR20;
+VAR6->VAR39 = 1;
+return VAR6;
+}
+
+VAR18:
+free (VAR6);
+return NULL;
+}

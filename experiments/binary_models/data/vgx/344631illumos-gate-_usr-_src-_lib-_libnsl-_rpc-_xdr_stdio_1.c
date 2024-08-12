@@ -1,0 +1,1 @@
+static bool_t FUN1 ( VAR1 * VAR2 , long * VAR3 ) { int32_t VAR4 ; VAR4 = ( VAR5 ) * VAR3 ; return ( FUN2 ( VAR2 , & VAR4 ) ) ; }

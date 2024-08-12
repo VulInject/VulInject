@@ -1,0 +1,23 @@
+static void FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+double VAR5)
+{
+uint16_t VAR6[VAR7];
+double VAR8[VAR7];
+char VAR9[VAR10];
+int VAR11, VAR12;
+
+for (VAR11 = 0; VAR11 < VAR7; VAR11++) {
+VAR8[VAR11] = (double)VAR4->VAR13[VAR11] / ((double)32 * (double)0x100000000ull);
+VAR8[VAR11] = FUN2(VAR8[VAR11]) + 1;
+VAR8[VAR11] *= VAR8[VAR11];
+VAR8[VAR11] = VAR8[VAR11] * 32 * ((double)0x100000000ull / (double)1000000000) / VAR5;
+VAR6[VAR11] = VAR8[VAR11];
+}
+FUN3(VAR9, VAR14);
+VAR12 = VAR15;
+for (VAR11 = 0; VAR11 < VAR7; VAR11++) {
+FUN4(VAR9, VAR12, VAR6[VAR11]);
+VAR12 += 2; 
+}
+FUN5(VAR2, VAR9);
+}

@@ -1,0 +1,32 @@
+FUN1 (void)
+{
+struct VAR1 *VAR2;
+
+for (VAR2 = VAR3.VAR4; VAR2; VAR2 = VAR2->VAR5)
+{
+struct VAR6 *VAR7;
+VAR8 *VAR9;
+size_t VAR10, VAR11;
+size_t VAR12 = 0;
+
+VAR11
+= (VAR13 + VAR14 - 1) / VAR14;
+VAR10 = VAR2->VAR15 * VAR11;
+VAR2->VAR16 = (VAR8 *) xcalloc (sizeof (VAR8),
+VAR10);
+VAR9 = VAR2->VAR16;
+for (VAR7 = VAR2->VAR17; VAR7; VAR7 = VAR7->VAR18)
+{
+VAR7->VAR16 = VAR9;
+VAR9 += VAR11;
+VAR12++;
+}
+FUN2 (VAR12 == VAR2->VAR15);
+}
+
+
+if (VAR19.VAR20)
+VAR19.VAR16
+= (VAR8 *) xcalloc (sizeof (VAR8),
+FUN3 (VAR19.VAR20, VAR14));
+}

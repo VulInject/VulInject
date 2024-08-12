@@ -1,0 +1,24 @@
+static int
+FUN1(
+struct VAR1		*VAR1,
+umode_t			VAR2)
+{
+struct VAR3	*VAR4 = FUN2(VAR1);
+struct VAR5	*VAR6 = VAR4->VAR7;
+struct VAR8	*VAR9;
+int			VAR10;
+
+VAR10 = FUN3(VAR6, &FUN4(VAR6)->VAR11, 0, 0, 0, &VAR9);
+if (VAR10)
+return VAR10;
+
+FUN5(VAR4, VAR12);
+FUN6(VAR9, VAR4, VAR12);
+VAR1->VAR13 = VAR2;
+VAR1->VAR14 = FUN7(VAR1);
+FUN8(VAR9, VAR4, VAR15);
+
+if (FUN9(VAR6))
+FUN10(VAR9);
+return FUN11(VAR9);
+}

@@ -1,0 +1,14 @@
+VAR1 *FUN1(VAR2 *VAR3, void *VAR4, int VAR5, const char *VAR6)
+{
+    VAR1 *VAR7;
+    VAR7 = FUN2(sizeof(VAR1));
+    VAR7->VAR8 = VAR3;
+    VAR7->VAR9 = VAR4;
+    VAR7->VAR10 = VAR5;
+    VAR7->VAR11.VAR6 = VAR6;
+    VAR7->VAR11.VAR12 = VAR13 | (VAR5 ? VAR14 : VAR15);
+    VAR7->VAR11.VAR16 = VAR17;
+    VAR7->VAR11.VAR18 = VAR19;
+    VAR7->VAR7 = FUN3((VAR20 *)VAR7, &VAR7->VAR11);
+    return VAR7;
+}

@@ -1,0 +1,53 @@
+static int FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = VAR2->VAR5;
+    VAR6 *VAR7 = VAR2->VAR7;
+    VAR8 *VAR9;
+    unsigned int VAR10;
+    FUN2(VAR7, 3);
+    VAR4->VAR11 = FUN3(VAR7);
+    VAR4->VAR12 = FUN3(VAR7);
+    FUN2(VAR7, 32);
+    VAR4->VAR13 = FUN4(VAR7);
+    VAR4->VAR14 = FUN5(VAR7);
+    VAR4->VAR15 = FUN4(VAR7);
+    VAR4->VAR16 = FUN6(VAR7);
+    VAR4->VAR17 = FUN5(VAR7);
+    VAR4->VAR18 = FUN5(VAR7);
+    VAR4->VAR19 = FUN5(VAR7);
+    if (!VAR4->VAR17)
+        VAR4->VAR17 = VAR4->VAR19 / (VAR4->VAR16 >> 3) / VAR4->VAR18;
+    if (!VAR4->VAR18)
+        VAR4->VAR18 = VAR4->VAR19 / (VAR4->VAR16 >> 3) / VAR4->VAR17;
+    FUN2(VAR7, 4);
+    VAR10 = FUN5(VAR7);
+    if (VAR10 == 0)
+    {
+        FUN7(VAR2, "");
+        return VAR20;
+    }
+    VAR4->VAR21 = VAR10 * (VAR22 + VAR23) + VAR4->VAR19;
+    VAR4->VAR24 = (VAR4->VAR14 / 4) / VAR10;
+    VAR9 = FUN8(VAR2, NULL);
+    if (!VAR9)
+        return FUN9(VAR25);
+    FUN10(VAR9, 64, 1, VAR4->VAR24);
+    VAR9->VAR26->VAR27 = VAR28;
+    VAR9->VAR26->VAR29 = VAR30;
+    VAR9->VAR26->VAR31 = VAR32;
+    VAR9->VAR26->VAR33 = VAR4->VAR17;
+    VAR9->VAR26->VAR34 = VAR4->VAR18;
+    VAR9->VAR26->VAR35 = FUN11("");
+    VAR9->VAR26->VAR36 = 9;
+    VAR9 = FUN8(VAR2, NULL);
+    if (!VAR9)
+        return FUN9(VAR25);
+    FUN10(VAR9, 64, 1, VAR37);
+    VAR9->VAR26->VAR27 = VAR38;
+    VAR9->VAR26->VAR29 = VAR39;
+    VAR9->VAR26->VAR40 = VAR4->VAR14;
+    VAR9->VAR41 = VAR42;
+    if (FUN12(VAR7, VAR43, VAR44) != VAR43)
+        return FUN9(VAR45);
+    return 0;
+}

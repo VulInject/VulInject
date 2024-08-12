@@ -1,0 +1,1 @@
+static bool FUN1 ( VAR1 * VAR2 , ut32 VAR3 , VAR4 * VAR5 ) { ut8 VAR6 [ 4 ] { 0 } ; ; * VAR5 = FUN2 ( & VAR6 ) ; return true ; }

@@ -1,0 +1,20 @@
+static void *
+FUN1(VAR1 *VAR2, VAR3 *VAR4, void *VAR5,
+size_t VAR6, VAR7 *VAR8)
+{
+uint64_t VAR9;
+VAR10 *VAR11 = FUN2(VAR4);
+VAR12 *VAR13 = VAR5;
+VAR14 *VAR15;
+
+FUN3(FUN4(VAR11, VAR16,
+&VAR9) == 0);
+
+*VAR8 = sizeof (VAR14);
+VAR15 = &VAR13->VAR17[VAR9];
+
+if (!FUN5(VAR15, VAR5, VAR6))
+return (NULL);
+
+return (&VAR13->VAR17[VAR9]);
+}

@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , u64 VAR5 , u32 VAR6 , u32 VAR7 , u32 VAR8 ) { u32 VAR9 = VAR6 / sizeof ( VAR10 ) ; struct qed_dmae_params VAR11 ; int VAR12 ; VAR11 . VAR8 = VAR8 ; FUN2 ( & VAR2 -> VAR13 . mutex ) ; VAR12 = FUN3 ( VAR2 , VAR4 , VAR5 , VAR9 , VAR14 , VAR15 , VAR7 , & VAR11 ) ; FUN4 ( & VAR2 -> VAR13 . mutex ) ; return VAR12 ; }

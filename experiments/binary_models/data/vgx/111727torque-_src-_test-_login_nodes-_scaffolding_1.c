@@ -1,0 +1,1 @@
+int FUN1 ( char * * VAR1 , int * VAR2 ) { char VAR3 [ 80 ] ; int VAR4 = 0 ; char * VAR5 = * VAR1 ; while ( FUN2 ( * VAR5 ) && ( unsigned int ) ( VAR4 + 1 ) < sizeof VAR3 ) { VAR3 [ VAR4 ++ ] = * VAR5 ++ ; } VAR3 [ VAR4 ] = '' ; if ( ( VAR4 = FUN3 ( VAR3 ) ) <= 0 ) { return ( - 1 ) ; } }

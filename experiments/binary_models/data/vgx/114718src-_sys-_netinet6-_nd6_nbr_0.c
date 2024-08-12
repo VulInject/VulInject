@@ -1,0 +1,200 @@
+void
+FUN1(struct VAR1 *VAR2, int VAR3, int VAR4)
+{
+struct VAR5 *VAR6;
+struct VAR7 *VAR8 = FUN2(VAR2, struct VAR7 *);
+struct VAR9 *VAR10;
+struct in6_addr VAR11 = VAR8->VAR12;
+struct in6_addr VAR13 = VAR8->VAR14;
+struct in6_addr VAR15;
+struct in6_addr VAR16;
+char *VAR17 = NULL;
+struct VAR18 *VAR19 = NULL;
+int VAR20 = 0;
+int VAR21 = 0, VAR22 = 0, VAR23 = 0;
+int VAR24 = VAR25;
+int VAR26;
+struct nd_opts VAR27;
+struct VAR28 *VAR29 = NULL;
+char VAR30[VAR31], VAR32[VAR31];
+
+VAR6 = FUN3(VAR2->VAR33.VAR34);
+if (VAR6 == NULL)
+goto VAR35;
+
+FUN4(VAR10, struct VAR9 *, VAR2, VAR3, VAR4);
+if (VAR10 == NULL) {
+FUN5(VAR36);
+FUN6(VAR6);
+return;
+}
+VAR8 = FUN2(VAR2, struct VAR7 *); 
+VAR15 = VAR10->VAR37;
+
+if (VAR8->VAR38 != 255) {
+FUN7((VAR39,
+"",
+VAR8->VAR38,
+FUN8(VAR40, &VAR8->VAR12, VAR30, sizeof(VAR30)),
+FUN8(VAR40, &VAR8->VAR14, VAR32, sizeof(VAR32)),
+VAR6->VAR41));
+goto VAR42;
+}
+
+if (FUN9(&VAR11)) {
+
+
+if (VAR13.VAR43[0] == VAR44 &&
+VAR13.VAR45[1] == 0 &&
+VAR13.VAR45[2] == VAR46 &&
+VAR13.VAR47[12] == 0xff) {
+; 
+} else {
+FUN7((VAR48, ""
+""));
+goto VAR42;
+}
+} else {
+
+if (!FUN10(VAR6, &VAR11)) {
+FUN7((VAR48, ""
+""));
+goto VAR42;
+}
+}
+
+
+if (FUN11(&VAR15)) {
+FUN7((VAR48, ""));
+goto VAR42;
+}
+
+if (FUN12(&VAR15))
+VAR15.VAR43[1] = FUN13(VAR6->VAR49);
+
+VAR4 -= sizeof(*VAR10);
+if (FUN14(VAR10 + 1, VAR4, &VAR27) < 0) {
+FUN7((VAR48,
+""));
+
+goto VAR35;
+}
+
+if (VAR27.VAR50) {
+VAR17 = (char *)(VAR27.VAR50 + 1);
+VAR20 = VAR27.VAR50->VAR51 << 3;
+}
+
+if (FUN9(&VAR8->VAR12) && VAR17) {
+FUN7((VAR48, ""
+""));
+goto VAR42;
+}
+
+
+VAR19 = &FUN15(VAR6, &VAR13)->VAR52;
+if (VAR19 && (FUN16(VAR19)->VAR53 & VAR54))
+VAR26 = 0;
+else
+if (!FUN11(&VAR13))
+VAR26 = 0;
+else
+VAR26 = 1;
+
+
+
+VAR19 = &FUN15(VAR6, &VAR15)->VAR52;
+if (VAR6->VAR55 == VAR56 && VAR19 && !FUN17(VAR6))
+VAR19 = NULL;
+
+
+if (!VAR19) {
+struct VAR57 *VAR58;
+struct sockaddr_in6 VAR59;
+
+FUN18(&VAR59, sizeof VAR59);
+VAR59.VAR60 = sizeof(struct VAR61);
+VAR59.VAR62 = VAR40;
+VAR59.VAR63 = VAR15;
+
+VAR58 = FUN19(FUN20(&VAR59), 0, VAR2->VAR33.VAR64);
+if (VAR58 && (VAR58->VAR65 & VAR66) != 0 &&
+VAR58->VAR67->VAR68 == VAR69) {
+
+VAR19 = &FUN21(VAR6, VAR70|
+VAR71|VAR54)->VAR52;
+if (VAR19) {
+VAR22 = 1;
+VAR29 = FUN22(VAR58->VAR67);
+VAR24 = 0;	
+}
+}
+if (VAR58)
+FUN23(VAR58);
+}
+if (!VAR19) {
+
+goto VAR35;
+}
+VAR16 = *FUN24(VAR19);
+VAR21 = FUN16(VAR19)->VAR53 & VAR54;
+VAR23 = FUN16(VAR19)->VAR53 & VAR70;
+if (FUN16(VAR19)->VAR53 & VAR71)
+goto VAR35;
+
+if (VAR17 && ((VAR6->VAR72 + 2 + 7) & ~7) != VAR20) {
+FUN7((VAR48, ""
+"",
+FUN8(VAR40, &VAR15, VAR30, sizeof(VAR30)),
+VAR6->VAR72, VAR20 - 2));
+goto VAR42;
+}
+
+if (FUN25(&VAR16, &VAR11)) {
+FUN26(VAR48, "",
+FUN8(VAR40, &VAR11, VAR30, sizeof(VAR30)));
+goto VAR35;
+}
+
+
+if (VAR23) {
+
+if (FUN9(&VAR11))
+FUN27(VAR19);
+
+goto VAR35;
+}
+
+
+if (FUN9(&VAR11)) {
+VAR11 = VAR73;
+VAR11.VAR43[1] = FUN13(VAR6->VAR49);
+FUN28(VAR6, &VAR11, &VAR15,
+((VAR21 || VAR22 || !VAR26) ? 0 : VAR74) |
+(VAR24 ? VAR75 : 0),
+VAR26, FUN29(VAR29));
+goto VAR35;
+}
+
+FUN30(VAR6, &VAR11, VAR17, VAR20, VAR76, 0);
+
+FUN28(VAR6, &VAR11, &VAR15,
+((VAR21 || VAR22 || !VAR26) ? 0 : VAR74) |
+(VAR24 ? VAR75 : 0) | VAR77,
+VAR26, FUN29(VAR29));
+VAR35:
+FUN31(VAR2);
+FUN6(VAR6);
+return;
+
+VAR42:
+FUN7((VAR39, "",
+FUN8(VAR40, &VAR11, VAR30, sizeof(VAR30))));
+FUN7((VAR39, "",
+FUN8(VAR40, &VAR13, VAR30, sizeof(VAR30))));
+FUN7((VAR39, "",
+FUN8(VAR40, &VAR15, VAR30, sizeof(VAR30))));
+FUN5(VAR78);
+FUN31(VAR2);
+FUN6(VAR6);
+}

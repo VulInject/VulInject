@@ -1,0 +1,40 @@
+void FUN1(void)
+{
+git_checkout_options VAR1 = VAR2;
+git_oid VAR3;
+checkout_counts VAR4;
+memset(&VAR4, 0, sizeof(VAR4));
+
+FUN2(); 
+
+VAR5 = FUN3("");
+FUN4(FUN5(VAR5));
+
+VAR1.VAR6 = VAR7 |
+VAR8;
+
+VAR1.VAR9 = VAR10;
+VAR1.VAR11 = VAR12;
+VAR1.VAR13 = &VAR4;
+
+FUN6(FUN7(&VAR3, VAR5, ""));
+FUN6(FUN8(&VAR14, VAR5, &VAR3, VAR15));
+
+FUN9(FUN10(VAR5, VAR14, &VAR1));
+
+VAR1.VAR16 = "";
+FUN4(!FUN11(""));
+
+FUN6(FUN10(VAR5, VAR14, &VAR1));
+
+FUN12(0, VAR4.VAR17);
+FUN12(0, VAR4.VAR18);
+FUN12(3, VAR4.VAR19);
+
+FUN13("", "");
+FUN13("", "");
+FUN13("", "");
+
+FUN6(FUN14(
+"", NULL, VAR20));
+}

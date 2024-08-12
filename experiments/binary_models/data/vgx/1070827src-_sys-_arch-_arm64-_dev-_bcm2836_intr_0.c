@@ -1,0 +1,40 @@
+void *
+FUN1(int VAR1, int VAR2, struct VAR3 *VAR4,
+int (*VAR5)(void *), void *VAR6, char *VAR7)
+{
+struct VAR8 *VAR9 = VAR10;
+struct VAR11 *VAR12;
+u_long VAR13;
+
+if (VAR1 < 0 || VAR1 >= VAR14)
+FUN2("",
+VAR1, VAR7);
+
+if (VAR4 != NULL && !FUN3(VAR4))
+return NULL;
+
+VAR13 = FUN4();
+
+VAR12 = malloc(sizeof *VAR12, VAR15, VAR16);
+VAR12->VAR17 = VAR5;
+VAR12->VAR18 = VAR6;
+VAR12->VAR19 = VAR2 & VAR20;
+VAR12->VAR21 = VAR2 & VAR22;
+VAR12->VAR23 = VAR1;
+VAR12->VAR24 = VAR7;
+
+if (FUN5(VAR1))
+VAR9->VAR25[0] |= (1 << FUN6(VAR1));
+
+FUN7(&VAR9->VAR26[VAR1].VAR27, VAR12, VAR28);
+
+if (VAR7 != NULL)
+FUN8(&VAR12->VAR29, VAR7, &VAR12->VAR23);
+
+FUN9("", VAR30, VAR1, VAR2,
+VAR7);
+FUN10();
+
+FUN11(VAR13);
+return (VAR12);
+}

@@ -1,0 +1,137 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+struct VAR5 *VAR6, u64 VAR7, int VAR8)
+{
+int VAR9;
+struct btrfs_tree_parent_check VAR10 = {
+.VAR11 = VAR7,
+.VAR8 = VAR8
+};
+struct VAR12 *VAR13;
+struct VAR1 *VAR14 = VAR6->VAR15;
+struct btrfs_key VAR16;
+int VAR17;
+int VAR18;
+
+VAR18 = FUN2(VAR4, &VAR10);
+if (VAR18)
+return VAR18;
+
+VAR8 = FUN3(VAR4);
+
+if (VAR8 != 0)
+return 0;
+
+VAR13 = FUN4();
+if (!VAR13)
+return -VAR19;
+
+VAR9 = FUN5(VAR4);
+for (VAR17 = 0; VAR17 < VAR9; VAR17++) {
+FUN6(VAR4, &VAR16, VAR17);
+
+
+if (VAR16.VAR20 == VAR21 &&
+VAR6->VAR22 == VAR23) {
+struct VAR24 *VAR25;
+u32 VAR26;
+
+VAR25 = FUN7(VAR4, VAR17,
+struct VAR24);
+
+if (FUN8(VAR4, VAR25) == 0) {
+VAR6->VAR27 = true;
+continue;
+} else {
+VAR6->VAR27 = false;
+}
+VAR18 = FUN9(VAR6->VAR28, VAR14, VAR2,
+VAR13, VAR16.VAR29);
+if (VAR18)
+break;
+VAR26 = FUN10(VAR4, VAR25);
+if (FUN11(VAR26)) {
+VAR18 = FUN12(VAR6->VAR28,
+VAR14, VAR2, VAR13, VAR16.VAR29, 0);
+if (VAR18)
+break;
+}
+VAR18 = FUN13(VAR6->VAR28, VAR14, VAR13,
+VAR4, VAR17, &VAR16);
+if (VAR18)
+break;
+
+
+if (FUN14(VAR26)) {
+struct btrfs_drop_extents_args VAR30 = { 0 };
+struct VAR31 *VAR31;
+u64 VAR32;
+
+VAR31 = FUN15(VAR14, VAR16.VAR29);
+if (!VAR31) {
+VAR18 = -VAR33;
+break;
+}
+VAR32 = FUN16(FUN17(VAR31),
+VAR14->VAR34->VAR35);
+VAR30.VAR36 = VAR32;
+VAR30.VAR37 = (VAR38)-1;
+VAR30.VAR39 = true;
+VAR18 = FUN18(VAR6->VAR28, VAR14,
+FUN19(VAR31),
+&VAR30);
+if (!VAR18) {
+FUN20(VAR31,
+VAR30.VAR40);
+
+VAR18 = FUN21(VAR6->VAR28,
+VAR14, FUN19(VAR31));
+}
+FUN22(VAR31);
+if (VAR18)
+break;
+}
+
+VAR18 = FUN23(VAR6->VAR28, VAR14,
+VAR13, VAR16.VAR29);
+if (VAR18)
+break;
+}
+
+if (VAR6->VAR27)
+continue;
+
+if (VAR16.VAR20 == VAR41 &&
+VAR6->VAR22 == VAR42) {
+VAR18 = FUN24(VAR6->VAR28, VAR14, VAR13,
+VAR4, VAR17, &VAR16);
+if (VAR18)
+break;
+}
+
+if (VAR6->VAR22 < VAR43)
+continue;
+
+
+if (VAR16.VAR20 == VAR44) {
+VAR18 = FUN13(VAR6->VAR28, VAR14, VAR13,
+VAR4, VAR17, &VAR16);
+if (VAR18)
+break;
+} else if (VAR16.VAR20 == VAR45 ||
+VAR16.VAR20 == VAR46) {
+VAR18 = FUN25(VAR6->VAR28, VAR14, VAR2, VAR13,
+VAR4, VAR17, &VAR16);
+if (VAR18 && VAR18 != -VAR47)
+break;
+VAR18 = 0;
+} else if (VAR16.VAR20 == VAR48) {
+VAR18 = FUN26(VAR6->VAR28, VAR14, VAR13,
+VAR4, VAR17, &VAR16);
+if (VAR18)
+break;
+}
+
+}
+FUN27(VAR13);
+return VAR18;
+}

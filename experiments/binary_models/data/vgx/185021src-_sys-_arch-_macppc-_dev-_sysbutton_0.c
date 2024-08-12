@@ -1,0 +1,17 @@
+void
+FUN1(struct VAR1 *VAR2, struct VAR1 *VAR3, void *VAR4)
+{
+struct VAR5 *VAR6 = (struct VAR5 *)VAR3;
+struct VAR7 *VAR8 = VAR4;
+int VAR9[2];
+
+VAR6->VAR10 = VAR8->VAR11;
+
+FUN2(VAR6->VAR10, "", VAR9, sizeof(VAR9));
+VAR6->VAR12 = VAR9[0];
+
+FUN3("", VAR6->VAR12);
+
+FUN4(VAR2, VAR6->VAR12, VAR13,
+VAR14, VAR15, VAR6, VAR6->VAR16.VAR17);
+}

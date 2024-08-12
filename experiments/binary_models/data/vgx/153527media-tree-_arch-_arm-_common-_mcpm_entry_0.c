@@ -1,0 +1,30 @@
+int FUN1(void)
+{
+unsigned int VAR1, VAR2, VAR3;
+bool VAR4, VAR5;
+unsigned long VAR6;
+
+if (!VAR7)
+return -VAR8;
+
+VAR1 = FUN2();
+VAR2 = FUN3(VAR1, 0);
+VAR3 = FUN3(VAR1, 1);
+FUN4(VAR6);
+FUN5(&VAR9);
+
+VAR4 = !VAR10[VAR3][VAR2];
+VAR5 = FUN6(VAR3);
+
+if (VAR5 && VAR7->VAR11)
+VAR7->FUN7(VAR3);
+if (VAR4)
+VAR10[VAR3][VAR2] = 1;
+if (VAR7->VAR12)
+VAR7->FUN8(VAR2, VAR3);
+
+FUN9(&VAR9);
+FUN10(VAR6);
+
+return 0;
+}

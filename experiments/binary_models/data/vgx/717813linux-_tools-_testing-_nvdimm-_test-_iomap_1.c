@@ -1,0 +1,1 @@
+( VAR1 ) ; void FUN1 ( volatile void VAR2 * VAR3 ) { struct VAR4 * VAR5 = FUN2 ( ( long ) VAR3 ) ; return FUN3 ( VAR3 ) ; }

@@ -1,0 +1,1 @@
+unsigned int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , struct VAR1 * VAR1 ) { char VAR5 [ VAR6 ] ; struct VAR7 * VAR8 ; snprintf ( VAR5 , VAR6 , "" , VAR1 -> VAR9 ) ; VAR5 [ VAR6 - 1 ] = '' ; VAR8 = FUN2 ( VAR4 , VAR5 , '' ) ; if ( VAR8 != NULL ) { return 0 ; } FUN3 ( VAR4 , VAR5 , '' ) ; FUN4 ( VAR2 -> VAR10 , VAR4 , VAR11 , '' , VAR5 ) ; FUN5 ( ) ; return 1 ; }

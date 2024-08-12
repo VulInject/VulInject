@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 , int * VAR5 ) { if ( FUN2 ( VAR2 ) ) { return 0 ; } * VAR4 = FUN3 ( VAR2 ) ; * VAR5 = FUN2 ( VAR2 ) ; if ( ( * VAR5 >> 24 ) || * VAR5 < 16 ) { return 0 ; } * VAR5 -= 16 ; if ( FUN2 ( VAR2 ) ) { return 0 ; } if ( FUN3 ( VAR2 ) != 0xe1 ) { return 0 ; } if ( FUN3 ( VAR2 ) != 0xe2 ) { return 0 ; } return 1 ; }

@@ -1,0 +1,1 @@
+int FUN1 ( const VAR1 * VAR2 ) { if ( VAR3 . VAR4 == 0 ) { FUN2 ( "" ) ; VAR5 } VAR6 = VAR3 . FUN3 ( VAR2 , NULL ) ; if ( VAR6 == 0 ) { FUN2 ( "" ) ; VAR5 } return 0 ; error return - 1 ; }

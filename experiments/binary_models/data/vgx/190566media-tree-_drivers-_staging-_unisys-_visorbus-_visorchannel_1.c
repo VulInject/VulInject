@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , u32 VAR3 , void * VAR4 ) { int VAR5 ; cfs_time_t VAR6 ; if ( VAR2 -> VAR7 ) { FUN2 ( & VAR2 -> VAR8 , VAR6 ) ; VAR5 = FUN3 ( VAR2 , VAR3 , VAR4 ) ; FUN4 ( & VAR2 -> VAR8 , VAR6 ) ; } else { VAR5 = FUN3 ( VAR2 , VAR3 , VAR4 ) ; } return VAR5 ; }

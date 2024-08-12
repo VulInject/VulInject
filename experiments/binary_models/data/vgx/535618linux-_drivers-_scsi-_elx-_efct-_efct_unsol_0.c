@@ -1,0 +1,17 @@
+static void
+FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+struct VAR5 *VAR6, bool VAR7)
+{
+VAR2->VAR8 = FUN2(VAR6->VAR9);
+
+VAR2->VAR10 = FUN3(VAR4->VAR11);
+VAR2->VAR12 = 0;
+
+
+if (FUN4(VAR6->VAR13) & VAR14)
+VAR2->VAR15 = VAR6->VAR16;
+else
+VAR2->VAR15 = 0;
+
+VAR2->VAR17 = VAR7;
+}

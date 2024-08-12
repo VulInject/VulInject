@@ -1,0 +1,47 @@
+static int
+FUN1(void *VAR1, VAR2 *VAR3)
+{
+VAR4 *VAR5 = VAR1;
+VAR6 *VAR7 = FUN2(VAR3);
+int VAR8 = 0;
+
+FUN3(FUN4(VAR5->VAR9));
+FUN3(FUN4(VAR5->VAR10));
+
+if (!FUN5(VAR7->VAR11, VAR12))
+return (0);
+
+for (VAR13 *VAR14 = FUN6(VAR5->VAR15, NULL);
+VAR14 != NULL; VAR14 = FUN6(VAR5->VAR15, VAR14)) {
+const char *VAR16 = FUN7(VAR14);
+VAR17 *VAR18;
+zfs_bookmark_phys_t VAR19;
+int VAR20;
+char *VAR21;
+
+VAR20 = FUN8(VAR7, VAR16, &VAR18,
+VAR22, &VAR21);
+if (VAR20 == VAR23) {
+
+continue;
+}
+if (VAR20 == 0) {
+VAR20 = FUN9(VAR18, VAR21, &VAR19);
+FUN10(VAR18, VAR22);
+if (VAR20 == VAR24) {
+
+continue;
+}
+}
+if (VAR20 == 0) {
+if (FUN11(VAR3)) {
+FUN12(VAR5->VAR9,
+VAR16);
+}
+} else {
+FUN13(VAR5->VAR10, VAR16, VAR20);
+VAR8 = VAR20;
+}
+}
+return (VAR8);
+}

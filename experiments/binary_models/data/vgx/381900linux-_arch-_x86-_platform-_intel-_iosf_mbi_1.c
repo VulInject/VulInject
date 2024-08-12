@@ -1,0 +1,1 @@
+static int FUN1 ( void * VAR1 , u64 VAR2 ) { u8 VAR3 = ( ( VAR4 ) VAR2 & 0xFF000000 ) >> 24 , VAR5 = ( ( VAR4 ) VAR2 & 0x00FF0000 ) >> 16 , VAR6 = ( ( VAR4 ) VAR2 & 0x0000FF00 ) >> 8 ; int VAR7 ; * ( VAR4 * ) VAR1 = VAR2 ; if ( VAR3 & 1u ) { VAR7 = FUN2 ( VAR5 , VAR3 , VAR8 | VAR6 , VAR9 ) ; } else { VAR7 = FUN3 ( VAR5 , VAR3 , VAR8 | VAR6 , & VAR9 ) ; } return VAR7 ; }

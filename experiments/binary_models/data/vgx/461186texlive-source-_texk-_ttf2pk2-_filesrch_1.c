@@ -1,0 +1,1 @@
+char * FUN1 ( char * * VAR1 ) { int VAR2 ; char * VAR3 ; VAR2 = strlen ( * VAR1 ) ; FUN2 ( VAR1 , "" ) ; VAR3 = FUN3 ( * VAR1 , & VAR4 ) ; if ( ! VAR3 && VAR2 != strlen ( * VAR1 ) ) { ( * VAR1 ) [ strlen ( * VAR1 ) - 1 ] = '' ; VAR3 = FUN3 ( * VAR1 , & VAR4 ) ; } return VAR3 ; }

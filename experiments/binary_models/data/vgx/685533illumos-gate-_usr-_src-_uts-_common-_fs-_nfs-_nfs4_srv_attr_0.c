@@ -1,0 +1,58 @@
+static int
+FUN1(nfs4_attr_cmd_t VAR1, struct VAR2 *VAR3,
+union VAR4 *VAR5)
+{
+int VAR6 = 0;
+ulong_t VAR7;
+
+switch (VAR1) {
+case VAR8:
+if (VAR3->VAR9 == VAR10)
+VAR6 = VAR11;
+break;		
+case VAR12:
+if (VAR3->VAR13 && (VAR3->VAR14->VAR15 == NULL)) {
+VAR6 = -1;	
+break;
+}
+FUN2(VAR3->VAR14->VAR15 != NULL);
+
+
+
+VAR7 = 0;
+VAR6 = FUN3(VAR3->VAR14->VAR15, VAR16,
+&VAR7, VAR3->VAR14->VAR17, NULL);
+if ((VAR6 || VAR7 == 0) &&
+VAR3->VAR14->VAR15->VAR18->VAR19 & VAR20) {
+VAR6 = FUN3(VAR3->VAR14->VAR15,
+VAR21, &VAR7, VAR3->VAR14->VAR17, NULL);
+if (VAR6)
+break;
+}
+VAR5->VAR22 = (VAR7 ? VAR23 : VAR24);
+break;
+case VAR10:
+
+VAR6 = VAR11;
+break;
+case VAR25:
+FUN2(VAR3->VAR14->VAR15 != NULL);
+if (VAR3->VAR14->VAR15->VAR18->VAR19 & VAR20) {
+VAR6 = FUN3(VAR3->VAR14->VAR15, VAR16,
+&VAR7, VAR3->VAR14->VAR17, NULL);
+if (VAR6 || VAR7 == 0)
+VAR6 = FUN3(VAR3->VAR14->VAR15,
+VAR21, &VAR7,
+VAR3->VAR14->VAR17, NULL);
+if (VAR6)
+break;
+} else
+VAR7 = 0;
+if (VAR5->VAR22 != (VAR7 ? VAR23 : VAR24))
+VAR6 = -1;	
+break;
+case VAR26:
+break;
+}
+return (VAR6);
+}

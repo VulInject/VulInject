@@ -1,0 +1,34 @@
+static VAR1
+FUN1(struct VAR2 *VAR3, VAR4 *VAR5, VAR4 *VAR6, VAR4 *VAR7, VAR4 *VAR8)
+{
+struct bit_entry VAR9;
+u32 VAR10 = 0x0000;
+
+if (!FUN2(VAR3, '', &VAR9)) {
+if (VAR9.VAR11 == 1 && VAR9.VAR12 >= 10)
+VAR10 = FUN3(VAR3, VAR9.VAR13 + 8);
+if (VAR9.VAR11 == 2 && VAR9.VAR12 >= 4)
+VAR10 = FUN4(VAR3, VAR9.VAR13 + 0);
+if (VAR10) {
+*VAR5 = FUN5(VAR3, VAR10 + 0);
+*VAR6 = FUN5(VAR3, VAR10 + 1);
+*VAR8 = FUN5(VAR3, VAR10 + 2);
+*VAR7 = FUN5(VAR3, VAR10 + 3);
+return VAR10;
+}
+}
+
+if (FUN6(VAR3) >= 0x0524) {
+VAR10 = FUN3(VAR3, VAR3->VAR14 + 142);
+if (VAR10) {
+*VAR5 = FUN5(VAR3, VAR10 + 0);
+*VAR6 = 1;
+*VAR7 = 1;
+*VAR8 = 0x18;
+return VAR10;
+}
+}
+
+*VAR5 = 0x00;
+return VAR10;
+}

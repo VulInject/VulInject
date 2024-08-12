@@ -1,0 +1,38 @@
+void
+FUN1(VAR1 *VAR2)
+{
+ddi_acc_handle_t	VAR3;
+
+
+FUN2(VAR2, VAR4);
+
+if (VAR2->VAR5 != NULL) {
+
+FUN3(VAR6, VAR7);
+}
+
+if ((VAR3 = VAR2->VAR3) != NULL) {
+
+FUN4(VAR3, VAR8, 0);
+FUN4(VAR3, VAR8, 4);
+FUN4(VAR3, VAR8, 0);
+}
+
+
+FUN5(VAR2);
+
+FUN6(VAR2->VAR9[VAR10]);
+FUN6(VAR2->VAR9[VAR11]);
+
+FUN7(VAR2);
+
+if (VAR2->VAR12 != NULL) {
+FUN8(VAR2->VAR12);
+}
+
+if (VAR2->VAR13 != NULL) {
+FUN9(VAR2->VAR13);
+}
+
+FUN10(VAR2, sizeof (*VAR2));
+}

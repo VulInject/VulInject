@@ -1,0 +1,1 @@
+void FUN1 ( void ) { int VAR1 ; if ( VAR2 > 0 ) { for ( VAR1 = 0 ; VAR1 < VAR2 ; VAR1 ++ ) { free ( VAR3 [ VAR1 ] ) ; } VAR2 = 0 ; VAR3 = NULL ; } }

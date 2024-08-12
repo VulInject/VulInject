@@ -1,0 +1,1 @@
+static inline bool FUN1 ( void ) { return false ; } VAR1 { u16 VAR2 ; u16 VAR3 ; u32 VAR4 ; u32 VAR5 ; } , __packed VAR6 { u16 VAR2 ; u32 VAR7 ; u32 VAR8 ; u8 VAR9 ; } , __packed VAR10 { u16 VAR2 ; u32 VAR11 ; int VAR12 ; u8 VAR13 ; u8 VAR14 ; u8 VAR15 ; u8 VAR16 ; u8 VAR17 ; u8 VAR18 ; } , __packed

@@ -1,0 +1,1 @@
+static inline void FUN1 ( struct VAR1 * VAR1 ) { struct VAR2 * VAR3 = VAR1 -> VAR4 ; struct VAR5 * VAR6 = & VAR3 -> VAR6 ; cfs_time_t VAR7 ; FUN2 ( & VAR6 -> VAR8 , VAR7 ) ; if ( FUN3 ( & VAR6 -> VAR9 ) ) { FUN4 ( & VAR6 -> VAR9 , 0 ) ; VAR6 -> VAR10 = 1 ; FUN5 ( & VAR6 -> VAR11 . VAR12 ) ; } FUN6 ( & VAR6 -> VAR8 , VAR7 ) ; }

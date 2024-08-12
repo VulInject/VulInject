@@ -1,0 +1,6 @@
+void FUN1(VAR1 *VAR2, IOMMUTLBEntry VAR3)
+{
+    VAR4 *VAR5;
+    assert(FUN2(VAR2));
+    FUN3(VAR5, VAR2) { FUN4(VAR5, &VAR3); }
+}

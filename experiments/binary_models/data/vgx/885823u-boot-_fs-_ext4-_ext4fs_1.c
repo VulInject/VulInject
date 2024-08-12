@@ -1,0 +1,1 @@
+int FUN1 ( const char * VAR1 ) { struct VAR2 * VAR3 = NULL ; int VAR4 ; VAR4 = FUN2 ( VAR1 , & VAR5 -> VAR6 , & VAR3 , VAR7 ) ; if ( VAR4 != 1 ) { FUN3 ( "" ) ; if ( VAR3 ) { FUN4 ( VAR3 , & VAR5 -> VAR6 ) ; } return 1 ; } FUN5 ( VAR3 , NULL , NULL , NULL ) ; FUN4 ( VAR3 , & VAR5 -> VAR6 ) ; return 0 ; }

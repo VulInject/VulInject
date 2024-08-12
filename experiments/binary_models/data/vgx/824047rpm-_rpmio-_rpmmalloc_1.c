@@ -1,0 +1,1 @@
+void * FUN1 ( void * VAR1 ) { return NULL ; }

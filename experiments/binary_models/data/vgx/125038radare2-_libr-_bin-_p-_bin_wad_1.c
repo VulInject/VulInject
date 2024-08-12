@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( VAR2 * VAR3 ) { FUN2 ( VAR3 , NULL ) ; VAR1 * VAR4 = FUN3 ( VAR1 ) ; if ( ! VAR4 ) { return VAR5 ; } VAR4 -> VAR6 = strdup ( VAR3 -> VAR6 ) ; VAR4 -> VAR7 = strdup ( "" ) ; VAR4 -> VAR8 = strdup ( "" ) ; VAR4 -> VAR9 = strdup ( "" ) ; VAR4 -> VAR10 = strdup ( "" ) ; VAR4 -> VAR11 = 32 ; VAR4 -> VAR12 = false ; return VAR4 ; }

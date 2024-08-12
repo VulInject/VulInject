@@ -1,0 +1,1 @@
+void FUN1 ( const char * VAR1 ) { int VAR2 = 0 ; unsigned int VAR3 = 0 ; if ( * VAR1 == '' || * VAR1 == '' ) { VAR2 = * VAR1 ++ ; } while ( * VAR1 ) { VAR3 |= FUN2 ( * VAR1 ++ ) ; } switch ( VAR2 ) { case 0 : VAR4 = VAR3 ; break ; case '' : VAR4 |= VAR3 ; break ; case '' : VAR4 &= ~ VAR3 ; break ; } }

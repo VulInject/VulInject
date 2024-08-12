@@ -1,0 +1,1 @@
+M_uint32 FUN1 ( const VAR1 * VAR2 , M_fs_perms_who_t VAR3 ) { switch ( VAR3 ) { case VAR4 : return VAR2 -> VAR5 ; case VAR6 : return VAR2 -> VAR7 ; case VAR8 : return VAR2 -> VAR9 ; } return VAR10 ; }

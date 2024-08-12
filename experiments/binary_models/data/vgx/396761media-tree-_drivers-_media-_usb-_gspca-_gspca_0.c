@@ -1,0 +1,16 @@
+static void FUN1(struct VAR1 *VAR1)
+{
+int VAR2;
+
+FUN2(VAR3, "");
+if (VAR1->VAR4 != NULL) {
+FUN3(VAR1->VAR4);
+VAR1->VAR4 = NULL;
+for (VAR2 = 0; VAR2 < VAR1->VAR5; VAR2++)
+VAR1->VAR6[VAR2].VAR7 = NULL;
+}
+VAR1->VAR5 = 0;
+VAR1->VAR8 = 0;
+VAR1->VAR9 = NULL;
+VAR1->VAR10 = VAR11;
+}

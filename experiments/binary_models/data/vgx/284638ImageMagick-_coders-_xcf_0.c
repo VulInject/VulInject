@@ -1,0 +1,177 @@
+static VAR1 FUN1(VAR2 *VAR3,VAR2 *VAR4,
+VAR5 *VAR6,VAR7 *VAR8,size_t VAR9,
+VAR10 *VAR11)
+{
+VAR12
+VAR13;
+
+VAR14
+VAR15,
+VAR16;
+
+VAR14
+*VAR17;
+
+VAR18
+VAR19;
+
+VAR20
+VAR21,
+VAR22,
+VAR23,
+VAR24;
+
+unsigned char
+VAR25,
+*VAR26,
+*VAR27,
+*VAR28;
+
+VAR21=(VAR20) VAR6->VAR21;
+VAR26=(unsigned char *) FUN2(VAR9,sizeof(*VAR26));
+if (VAR26 == (unsigned char *) NULL)
+FUN3(VAR29,"",
+VAR3->VAR30);
+(void) memset(VAR26,0,(VAR18) VAR9*sizeof(*VAR26));
+VAR27=VAR26;
+VAR22=FUN4(VAR3, (VAR18) VAR9, VAR26);
+VAR28 = VAR27+VAR22-1;
+VAR15=FUN5((unsigned char) VAR8->VAR15);
+for (VAR23=0; VAR23 < VAR21; VAR23++)
+{
+VAR17=FUN6(VAR4,0,0,VAR4->VAR31,VAR4->VAR32,
+VAR11);
+if (VAR17 == (VAR14 *) NULL)
+continue;
+VAR13=(VAR12) VAR4->VAR32*VAR4->VAR31;
+while (VAR13 > 0)
+{
+if (VAR26 > VAR28)
+goto VAR33;
+VAR25=(*VAR26++);
+VAR19=(VAR18) VAR25;
+if (VAR19 >= 128)
+{
+VAR19=255-(VAR19-1);
+if (VAR19 == 128)
+{
+if (VAR26 >= VAR28)
+goto VAR33;
+VAR19=(VAR18) ((*VAR26 << 8) + VAR26[1]) & 0xffff;
+VAR26+=2;
+}
+VAR13-=VAR19;
+if (VAR13 < 0)
+goto VAR33;
+if ((VAR19 < 1) || (VAR19 > VAR9))
+goto VAR33;
+if (&VAR26[VAR19-1] > VAR28)
+goto VAR33;
+while (VAR19-- > 0)
+{
+VAR16=FUN5(*VAR26++);
+switch (VAR23)
+{
+case 0:
+{
+if (VAR6->VAR34 == VAR35)
+FUN7(VAR4,VAR16,VAR17);
+else
+{
+FUN8(VAR4,VAR16,VAR17);
+FUN9(VAR4,VAR16,VAR17);
+FUN10(VAR4,VAR16,VAR17);
+}
+FUN11(VAR4,VAR15,VAR17);
+break;
+}
+case 1:
+{
+if (VAR6->VAR34 == VAR35)
+FUN11(VAR4,VAR16,VAR17);
+else
+FUN9(VAR4,VAR16,VAR17);
+break;
+}
+case 2:
+{
+FUN10(VAR4,VAR16,VAR17);
+break;
+}
+case 3:
+{
+FUN11(VAR4,VAR16,VAR17);
+break;
+}
+}
+VAR17+=FUN12(VAR4);
+}
+}
+else
+{
+VAR19+=1;
+if (VAR19 == 128)
+{
+if (VAR26 >= VAR28)
+goto VAR33;
+VAR19=(VAR18) ((*VAR26 << 8) + VAR26[1]) & 0xffff;
+VAR26+=2;
+}
+VAR13-=VAR19;
+if (VAR13 < 0)
+goto VAR33;
+if (VAR26 > VAR28)
+goto VAR33;
+VAR25=(*VAR26++);
+for (VAR24=0; VAR24 < (VAR20) VAR19; VAR24++)
+{
+VAR16=FUN5(VAR25);
+switch (VAR23)
+{
+case 0:
+{
+if (VAR6->VAR34 == VAR35)
+FUN7(VAR4,VAR16,VAR17);
+else
+{
+FUN8(VAR4,VAR16,VAR17);
+FUN9(VAR4,VAR16,VAR17);
+FUN10(VAR4,VAR16,VAR17);
+}
+FUN11(VAR4,VAR15,VAR17);
+break;
+}
+case 1:
+{
+if (VAR6->VAR34 == VAR35)
+FUN11(VAR4,VAR16,VAR17);
+else
+FUN9(VAR4,VAR16,VAR17);
+break;
+}
+case 2:
+{
+FUN10(VAR4,VAR16,VAR17);
+break;
+}
+case 3:
+{
+FUN11(VAR4,VAR16,VAR17);
+break;
+}
+}
+VAR17+=FUN12(VAR4);
+}
+}
+}
+if (FUN13(VAR4,VAR11) == VAR36)
+break;
+}
+VAR27=(unsigned char *) FUN14(VAR27);
+return(VAR37);
+
+VAR33:
+if (VAR27 != (unsigned char *) NULL)
+VAR27=(unsigned char *) FUN14(VAR27);
+return(VAR36);
+}

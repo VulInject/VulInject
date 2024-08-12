@@ -1,0 +1,20 @@
+static int FUN1(struct VAR1 *VAR2,
+const struct VAR3 *VAR4)
+{
+unsigned int VAR5;
+int VAR6;
+
+if (VAR4->VAR7.VAR8 & VAR9)
+VAR5 = (VAR4->VAR7.VAR8 + VAR10) &
+~VAR9;
+else
+VAR5 = VAR4->VAR7.VAR8;
+
+VAR6 = FUN2(VAR2, VAR4->VAR11.VAR12, VAR5,
+(VAR13)VAR2->VAR14);
+
+if (!VAR6)
+memcpy(VAR4->VAR7.VAR15.VAR16, VAR2->VAR14, VAR4->VAR7.VAR8);
+
+return VAR6;
+}

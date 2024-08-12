@@ -1,0 +1,30 @@
+static struct VAR1 *FUN1(struct VAR2 *VAR3, void *VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR3);
+struct VAR7 *VAR8 = (struct VAR7 *)VAR4;
+int VAR9;
+
+VAR6->VAR10 = FUN3();
+if (!VAR6->VAR10)
+return NULL;
+
+VAR9 = FUN4(&VAR8->VAR11, 0, FUN5(VAR6->VAR10));
+if (VAR9)
+goto VAR12;
+
+VAR6->VAR13.VAR14.VAR15    = VAR16;
+VAR6->VAR13.VAR14.VAR17  = VAR18;
+VAR6->VAR13.VAR14.VAR19 = VAR20;
+
+VAR3->VAR21 = VAR22,
+VAR3->VAR23           = VAR24,
+VAR3->VAR25           = VAR26,
+VAR3->VAR27           = &VAR28;
+
+return &VAR6->VAR13;
+
+VAR12:
+FUN6(VAR6->VAR10);
+
+return NULL;
+}

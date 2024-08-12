@@ -1,0 +1,77 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+int VAR5;
+struct VAR6 *VAR6;
+const struct VAR7 *VAR7;
+struct VAR8 *VAR9;
+unsigned int VAR10;
+struct VAR11 *VAR12;
+int VAR13;
+int VAR14;
+int VAR15;
+
+if (!VAR2->VAR16) {
+FUN2(&VAR2->VAR17, "");
+return -VAR18;
+}
+
+VAR10 = (unsigned int)(VAR19)
+FUN3(&VAR2->VAR17);
+switch (VAR10) {
+case VAR20:
+VAR12 = VAR21;
+VAR13 = FUN4(VAR21);
+VAR7 = &VAR22;
+VAR9 = &VAR23;
+VAR15 = VAR24;
+VAR14 = VAR25;
+break;
+case VAR26:
+VAR12 = VAR27;
+VAR13 = FUN4(VAR27);
+VAR7 = &VAR28;
+VAR9 = &VAR29;
+VAR15 = VAR30;
+
+VAR14 = 0;
+break;
+default:
+FUN2(&VAR2->VAR17, "");
+return -VAR18;
+}
+
+VAR6 = FUN5(VAR2, VAR7);
+if (FUN6(VAR6))
+return FUN7(&VAR2->VAR17, FUN8(VAR6),
+"");
+
+VAR5 = FUN9(&VAR2->VAR17, VAR6, VAR2->VAR16,
+VAR31, 0, VAR9, &VAR4);
+if (VAR5)
+return FUN7(&VAR2->VAR17, VAR5,
+"");
+
+FUN10(&VAR2->VAR17, "",
+VAR9->VAR32);
+
+if (VAR14) {
+VAR5 = FUN11(VAR4, VAR14);
+if (VAR5 < 0)
+return FUN7(&VAR2->VAR17, VAR5,
+"");
+
+VAR33.VAR16 = VAR5;
+}
+
+VAR5 = FUN12(&VAR2->VAR17, VAR6, VAR15);
+if (VAR5)
+return VAR5;
+
+VAR5 = FUN13(&VAR2->VAR17, VAR34, VAR12, VAR13,
+NULL, 0, FUN14(VAR4));
+if (VAR5)
+FUN7(&VAR2->VAR17, VAR5, "");
+
+return VAR5;
+}

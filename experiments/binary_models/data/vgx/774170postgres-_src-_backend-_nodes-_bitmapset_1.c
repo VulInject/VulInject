@@ -1,0 +1,1 @@
+BMS_Membership FUN1 ( const VAR1 * VAR2 ) { BMS_Membership VAR3 = VAR4 ; int VAR5 ; int VAR6 ; VAR5 = VAR2 -> VAR5 ; for ( VAR6 = 0 ; VAR6 < VAR5 ; VAR6 ++ ) { bitmapword VAR7 = VAR2 -> VAR8 [ VAR6 ] ; if ( VAR7 != 0 ) { if ( VAR3 != VAR4 || FUN2 ( VAR7 ) ) { return VAR9 ; } VAR3 = VAR10 ; } } return VAR3 ; }

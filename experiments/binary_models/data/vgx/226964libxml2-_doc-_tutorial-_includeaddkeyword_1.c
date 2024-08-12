@@ -1,0 +1,1 @@
+int main ( int argc , char * * argv ) { char * VAR1 ; char * VAR2 ; xmlDocPtr VAR3 ; if ( argc <= 2 ) { FUN1 ( "" , argv [ 0 ] ) ; return ( 0 ) ; } VAR1 = argv [ 1 ] ; VAR2 = argv [ 2 ] ; VAR3 = FUN2 ( VAR1 , VAR2 ) ; if ( VAR3 != NULL ) { FUN3 ( VAR1 , VAR3 , 0 ) ; } return ( 1 ) ; }

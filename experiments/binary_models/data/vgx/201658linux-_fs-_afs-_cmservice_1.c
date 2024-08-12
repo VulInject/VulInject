@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR2 , VAR3 , VAR2 ) ; struct VAR5 * VAR6 = VAR4 -> VAR7 ; FUN3 ( "" ) ; if ( memcmp ( VAR6 , & VAR4 -> VAR8 -> VAR9 , sizeof ( VAR4 -> VAR8 -> VAR9 ) ) == 0 ) { FUN4 ( VAR4 ) ; } else { FUN5 ( VAR4 , 1 , 1 , VAR10 ) ; } FUN6 ( VAR4 , NULL ) ; _leave ( "" ) ; }

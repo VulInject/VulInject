@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR1 , fl_owner_t VAR2 ) { struct VAR3 * VAR4 ; int VAR5 ; VAR4 = VAR1 -> VAR6 ; FUN2 ( & VAR4 -> VAR7 ) ; FUN3 ( VAR4 ) ; FUN4 ( & VAR4 -> VAR8 ) ; VAR5 = VAR4 -> VAR9 ?( VAR4 -> VAR9 == - VAR10 ?- VAR10 : - VAR11 ) else 0 ; VAR4 -> VAR9 = 0 ; FUN5 ( & VAR4 -> VAR8 ) ; FUN6 ( & VAR4 -> VAR7 ) ; return VAR5 ; }

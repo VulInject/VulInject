@@ -1,0 +1,15 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = &VAR2->VAR4;
+
+
+FUN2(VAR2, VAR5, VAR5);
+
+VAR4->VAR6.VAR7 &= VAR8|VAR9|VAR10|VAR11|VAR12;
+VAR4->VAR13.VAR7 = 0x03;
+FUN3(VAR4);
+
+
+
+return 0;
+}

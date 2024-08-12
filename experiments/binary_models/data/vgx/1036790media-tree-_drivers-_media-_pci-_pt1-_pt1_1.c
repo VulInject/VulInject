@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR1 ) { int VAR2 , VAR3 ; int VAR4 ; FUN2 ( ( VAR5 + 999 ) / 1000 ) ; VAR4 = VAR1 -> VAR6 -> VAR7 == 0x211a ?128 : 166 ; for ( VAR2 = 0 ; VAR2 < VAR4 ; VAR2 ++ ) { VAR3 = FUN3 ( VAR1 ) ; } return 0 ; }

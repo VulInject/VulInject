@@ -1,0 +1,20 @@
+void FUN1(VAR1 *VAR2, const VAR3 *VAR4)
+{
+VAR5 *VAR6, *VAR7;
+
+VAR6 = FUN2(NULL);
+
+for (VAR7 = VAR6; VAR7; VAR7 = VAR7->VAR8) {
+int VAR9 = '';
+
+if (VAR7->VAR10->VAR11 == FUN3(VAR2)) {
+VAR9 = '';
+}
+
+FUN4(VAR2, "" VAR12 "", VAR9,
+VAR7->VAR10->VAR11);
+FUN4(VAR2, "" VAR12 "", VAR7->VAR10->VAR13);
+}
+
+FUN5(VAR6);
+}

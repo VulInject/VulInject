@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR1 , unsigned long VAR2 ) { u32 VAR3 ; int VAR4 ; unsigned long VAR5 ; VAR5 = VAR1 -> VAR6 -> VAR2 ; VAR4 = ( VAR5 + VAR2 - 1 ) / VAR2 ; VAR4 -- ; VAR3 = FUN2 ( VAR7 ) ; VAR3 &= ~ ( 7 << 17 ) ; VAR3 |= VAR4 << 17 ; FUN3 ( VAR3 , VAR7 ) ; VAR1 -> VAR2 = VAR5 / ( VAR4 + 1 ) ; return 0 ; }

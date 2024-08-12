@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , phys_addr_t VAR5 , size_t VAR6 ) { void VAR7 * VAR8 = FUN2 ( VAR5 , VAR6 , 0 ) ; FUN3 ( VAR8 , 0 , VAR6 ) ; FUN4 ( ( unsigned long ) VAR8 , ( unsigned long ) VAR8 + VAR6 ) ; FUN5 ( VAR8 ) ; return 0 ; }

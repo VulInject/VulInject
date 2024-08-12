@@ -1,0 +1,58 @@
+void FUN1 (note_type_t VAR1, VAR2 **VAR3) {
+elf_nhdr_t VAR4;
+static size_t VAR5 = sizeof (VAR6);
+ut32 VAR7;
+
+switch (VAR1) {
+case VAR8:
+VAR7 = VAR9;
+VAR4.VAR10 = VAR11[VAR1].VAR12;
+break;
+case VAR13:
+VAR7 = VAR14;
+VAR4.VAR10 = VAR11[VAR1].VAR12;
+break;
+case VAR15:
+VAR7 = VAR16;
+VAR4.VAR10 = VAR11[VAR1].VAR12;
+break;
+case VAR17:
+VAR7 = VAR18;
+VAR4.VAR10 = VAR11[VAR1].VAR12;
+break;
+case VAR19:
+VAR7 = VAR20;
+VAR4.VAR10 = VAR11[VAR1].VAR12;
+break;
+case VAR21:
+VAR7 = VAR22;
+VAR4.VAR10 = VAR11[VAR1].VAR12;
+break;
+case VAR23:
+VAR7 = VAR24;
+VAR4.VAR10 = VAR11[VAR1].VAR12;
+break;
+case VAR25:
+VAR7 = VAR26;
+VAR4.VAR10 = VAR11[VAR1].VAR12;
+break;
+case VAR27:
+VAR7 = VAR28;
+VAR4.VAR10 = VAR11[VAR1].VAR12;
+break;
+default:
+
+memset (*VAR3, 0, VAR5);
+return;
+}
+
+VAR4.VAR29 = VAR7;
+if (VAR7 == VAR26 || VAR7 == VAR28 || VAR7 == VAR22) {
+VAR4.VAR30 = sizeof ("");
+} else {
+VAR4.VAR30 = sizeof ("");
+}
+
+memcpy (*VAR3, (void *)&VAR4, VAR5);
+*VAR3 += VAR5;
+}

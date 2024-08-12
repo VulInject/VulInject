@@ -1,0 +1,1 @@
+static int FUN1 ( void * VAR1 ) { int VAR2 = VAR3 ; if ( VAR3 > 1 ) { VAR3 -- ; } FUN2 ( VAR2 , NULL ) ; return - 1 ; }

@@ -1,0 +1,16 @@
+static void FUN1(struct VAR1 *VAR2, unsigned VAR3, int VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR2);
+unsigned int VAR7, VAR8, VAR9;
+struct VAR10 *VAR11;
+int VAR12;
+
+VAR9 = VAR6->VAR13->VAR14 + VAR3;
+VAR12 = FUN3(VAR6, VAR9, &VAR11);
+if (VAR12)
+return;
+
+FUN4(VAR11, VAR9, VAR15, &VAR7, &VAR8);
+FUN5(VAR6->VAR16, VAR7, FUN6(VAR8),
+VAR4 ? FUN6(VAR8) : 0);
+}

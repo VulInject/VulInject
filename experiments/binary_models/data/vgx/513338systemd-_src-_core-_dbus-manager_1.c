@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , const char * VAR3 , const char * VAR4 , const char * VAR5 , VAR6 * VAR7 , void * VAR8 , VAR9 * VAR10 ) { _cleanup_strv_free_ char * * VAR11 = NULL ; VAR12 * VAR13 = FUN2 ( VAR8 ) ; int VAR14 ; assert ( VAR2 ) ; VAR14 = FUN3 ( VAR13 , & VAR11 ) ; if ( VAR14 < 0 ) { return VAR14 ; } return FUN4 ( VAR7 , VAR11 ) ; }

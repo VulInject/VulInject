@@ -1,0 +1,1 @@
+static void FUN1 ( err_t VAR1 , const char * this ) { if ( VAR1 != NULL ) { if ( this == NULL ) { FUN2 ( VAR1 ) ; } else { char VAR2 [ 120 ] ; sprintf ( VAR2 , ""%VAR3\"" , VAR1 , this ) ; FUN2 ( VAR2 ) ; } } }

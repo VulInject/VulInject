@@ -1,0 +1,110 @@
+int
+FUN1(void *VAR1)
+{
+struct VAR2 *VAR3 = VAR1;
+struct VAR4 *VAR5 = VAR3->VAR6;
+struct VAR7 *VAR8 = FUN2(VAR5);
+struct VAR9 *VAR10 = FUN3(VAR8);
+struct VAR11 *VAR11 = VAR3->VAR12;
+struct VAR13 *VAR14 = VAR10->VAR15;
+int VAR16, VAR17 = 0;
+u_int32_t VAR18 = 0, VAR19;
+struct dirent VAR20;
+off_t VAR21;
+
+FUN4("", VAR10->VAR22,
+VAR11->VAR23, VAR11->VAR24);
+
+VAR21 = VAR11->VAR23;
+memset(&VAR20, 0, sizeof(VAR20));
+
+
+if (VAR10->VAR22 != VAR25 && VAR11->VAR23 == 0) {
+VAR20.VAR26 = VAR10->VAR22;
+VAR20.VAR27 = sizeof(struct VAR28);
+VAR20.VAR29 = VAR30;
+VAR20.VAR31 = 1;
+VAR20.VAR32 = sizeof(struct VAR28);
+VAR20.VAR33[0] = '';
+VAR20.VAR33[1] = '';
+VAR17 = FUN5(&VAR20, sizeof(struct VAR28), VAR11);
+if (VAR17)
+goto VAR34;
+}
+
+
+if (VAR11->VAR23 < 2 * sizeof(struct VAR28)) {
+VAR20.VAR26 = VAR25;	
+VAR20.VAR27 = sizeof(struct VAR28);
+VAR20.VAR29 = VAR30;
+VAR20.VAR31 = 2;
+VAR20.VAR32 = 2 * sizeof(struct VAR28);
+VAR20.VAR33[0] = '';
+VAR20.VAR33[1] = '';
+VAR20.VAR33[2] = '';
+VAR17 = FUN5(&VAR20, sizeof(struct VAR28), VAR11);
+if (VAR17)
+goto VAR34;
+}
+
+VAR18 = (VAR10->VAR22 == VAR25) ? 1 : 2;
+VAR19 = VAR11->VAR23 / sizeof(struct VAR28) - VAR18;
+
+while (VAR11->VAR24 >= sizeof(struct VAR28)) {
+struct VAR35 *VAR36;
+char *VAR37;
+size_t VAR38;
+int VAR39;
+
+VAR17 = FUN6(VAR14, VAR8, VAR19, &VAR36, VAR11->VAR40);
+if (VAR17)
+goto VAR34;
+
+if (NULL == VAR36)
+break;
+
+for(; !(VAR36->VAR41 & VAR42) && (VAR11->VAR24 >= sizeof(struct VAR28));
+VAR36 = FUN7(VAR36, struct VAR35 *))
+{
+if(!FUN8(VAR14,VAR36))
+continue;
+
+VAR38 = sizeof(VAR20.VAR33) - 1;
+VAR37 = VAR20.VAR33;
+for(VAR16=0; VAR16<VAR36->VAR43; VAR16++) {
+VAR39 = (*VAR14->VAR44)(VAR37, VAR38,
+VAR36->VAR45[VAR16]);
+VAR37 += VAR39;
+VAR38 -= VAR39;
+}
+*VAR37 = '';
+FUN4(""
+"",
+VAR19, VAR20.VAR33, VAR36->VAR46, VAR36->VAR41);
+VAR20.VAR31 = VAR37 - (char *) VAR20.VAR33;
+VAR20.VAR26 = VAR36->VAR47;
+VAR20.VAR29 = (VAR36->VAR48 & VAR49) ? VAR30 : VAR50;
+VAR20.VAR27 = sizeof(struct VAR28);
+VAR20.VAR32 = VAR11->VAR23 + sizeof(struct VAR28);
+FUN4("", VAR20.VAR29 == VAR30 ? "" : "");
+
+VAR17 = FUN5(&VAR20, sizeof(struct VAR28), VAR11);
+if (VAR17)
+goto VAR34;
+VAR19++;
+}
+}
+
+FUN4("",
+VAR19, VAR11->VAR23 - VAR21);
+FUN4("",
+VAR11->VAR23, VAR11->VAR24);
+
+
+VAR34:
+if (VAR8->VAR51 != NULL) {
+free(VAR8->VAR51, VAR52, 0);
+VAR8->VAR51 = NULL;
+}
+return (VAR17);
+}

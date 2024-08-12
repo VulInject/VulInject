@@ -1,0 +1,1 @@
+TEE_Result FUN1 ( VAR1 * mutex ) { uint32_t VAR2 ; void * VAR3 ; VAR2 = * mutex ; VAR3 = FUN2 ( VAR2 , VAR4 , VAR5 ) ; if ( ! VAR3 ) { return VAR6 ; } VAR7 = VAR2 ; VAR8 = VAR3 ; return VAR9 ; }

@@ -1,0 +1,13 @@
+void FUN1(TCGv_i64 VAR1, TCGv_i64 VAR2, TCGv_i64 VAR3)
+{
+if (VAR4) {
+FUN2(VAR5, VAR1, VAR2, VAR3);
+} else if (VAR6) {
+TCGv_i64 VAR7 = FUN3();
+FUN4(VAR7, 0);
+FUN5(VAR8, VAR1, VAR7, VAR2, VAR7, VAR3);
+FUN6(VAR7);
+} else {
+FUN7(VAR1, VAR2, VAR3);
+}
+}

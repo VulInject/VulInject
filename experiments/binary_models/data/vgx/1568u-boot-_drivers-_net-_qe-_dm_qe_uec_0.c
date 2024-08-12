@@ -1,0 +1,26 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+VAR3		*VAR4;
+u32			VAR5;
+u32			VAR6;
+
+VAR4 = VAR2->VAR7->VAR4;
+
+
+FUN2(&VAR4->VAR6, VAR8);
+
+
+VAR5 =
+FUN3(VAR2->VAR9->VAR10.VAR11);
+FUN4(VAR12, VAR5,
+(VAR13)VAR14, 0);
+
+
+do {
+VAR6 = FUN5(&VAR4->VAR6);
+} while (!(VAR6 & VAR8));
+
+VAR2->VAR15 = 1;
+
+return 0;
+}

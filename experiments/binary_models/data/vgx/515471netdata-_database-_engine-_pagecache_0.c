@@ -1,0 +1,93 @@
+static VAR1 FUN1(struct VAR2 *VAR3, VAR4 *VAR5, usec_t VAR6, usec_t VAR7, page_found_callback_t VAR8, void *VAR9) {
+VAR10 *VAR11 = FUN2(VAR12, VAR5);
+Word_t VAR13 = FUN3(VAR12, VAR5);
+
+time_t VAR14 = (VAR15)(VAR6 / VAR16);
+time_t VAR17 = (VAR15)(VAR7 / VAR16);
+
+size_t VAR18 = 0;
+
+FUN4(&VAR3->VAR19.VAR20);
+struct VAR21 *VAR22;
+for(VAR22 = VAR3->VAR19.VAR23; VAR22 ; VAR22 = VAR22->VAR24) {
+struct VAR25 *VAR26 = FUN5(VAR22->VAR27, NULL,
+VAR14,
+VAR17);
+if (FUN6(!VAR26))
+continue;
+
+time_t VAR28 = (VAR15)(VAR26->VAR6 / VAR16);
+
+
+
+size_t VAR29 = (VAR1)VAR26->VAR30;
+struct VAR31 *VAR32 = (struct VAR31 *)((VAR33 *) VAR26 + VAR26->VAR34);
+struct VAR31 *VAR35 = FUN7(VAR11,VAR32,VAR29,sizeof(*VAR32), VAR36);
+
+if (FUN6(!VAR35)) {
+
+FUN8(VAR22->VAR27);
+continue;
+}
+
+struct VAR37 *VAR38 = (struct VAR37 *) ((VAR33 *) VAR26 + VAR35->VAR39);
+struct VAR40 *VAR41 = (struct VAR40 *)((VAR33 *) VAR38 + sizeof(*VAR38));
+struct VAR42 *VAR43 = (void *)((VAR33 *)VAR26 + VAR26->VAR44);
+uint32_t VAR45 = VAR38->VAR46;
+
+for (uint32_t VAR47 = 0; VAR47 < VAR45; VAR47++) {
+struct VAR40 *VAR48 = &VAR41[VAR47];
+
+time_t VAR49 = VAR48->VAR50 + VAR28;
+time_t VAR51 = VAR48->VAR52 + VAR28;
+
+TIME_RANGE_COMPARE VAR53 = FUN9(VAR49, VAR51, VAR14, VAR17);
+if(VAR53 == VAR54)
+continue;
+
+if(VAR53 == VAR55)
+break;
+
+time_t VAR56 = VAR48->VAR57;
+size_t VAR58 = VAR48->VAR58;
+
+if(FUN10(VAR22, VAR59)) { 
+
+bool VAR60 = false;
+struct extent_io_data VAR61 = {
+.VAR62 = VAR43[VAR48->VAR63].VAR64,
+.VAR65 = VAR43[VAR48->VAR63].VAR66,
+.VAR58 = VAR58,
+.VAR67 = VAR22->VAR67,
+.VAR68 = VAR22->VAR68,
+};
+
+VAR69 *VAR70 = FUN11(VAR71, (VAR72) {
+.VAR73 = false,
+.VAR74 = (VAR75) VAR3,
+.VAR13 = VAR13,
+.VAR76 = VAR49,
+.VAR77 = VAR51,
+.VAR57 = (VAR78) VAR56,
+.VAR79 = VAR22,
+.VAR80 = 0,
+.VAR81 = (VAR33 *) &VAR61,
+}, &VAR60);
+
+if(!VAR60)
+FUN12(VAR22, VAR59);
+
+FUN13(VAR70, VAR9);
+
+FUN14(VAR71, VAR70);
+
+VAR18++;
+}
+}
+
+FUN8(VAR22->VAR27);
+}
+FUN15(&VAR3->VAR19.VAR20);
+
+return VAR18;
+}

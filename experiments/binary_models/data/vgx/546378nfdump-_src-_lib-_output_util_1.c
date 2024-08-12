@@ -1,0 +1,1 @@
+void FUN1 ( char * VAR1 ) { size_t VAR2 = strlen ( VAR1 ) ; char * VAR3 , * VAR4 ; VAR3 = VAR1 + 7 ; * VAR3 ++ = '' ; * VAR3 ++ = '' ; VAR4 = VAR1 + VAR2 - 7 ; while ( * VAR4 ) { * VAR3 ++ = * VAR4 ++ ; } * VAR3 = 0 ; }

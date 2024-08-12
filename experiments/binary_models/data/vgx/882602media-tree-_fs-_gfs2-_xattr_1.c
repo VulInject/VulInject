@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , int VAR3 , const char * VAR4 , struct VAR5 * VAR6 ) { struct ea_find VAR7 ; int VAR8 ; VAR7 . VAR3 = VAR3 ; VAR7 . VAR4 = VAR4 ; VAR7 . VAR9 = strlen ( VAR4 , NULL ) ; VAR7 . VAR10 = VAR6 ; memset ( VAR6 , 0 , sizeof ( VAR5 ) ) ; VAR8 = FUN2 ( VAR2 , VAR11 , & VAR7 ) ; if ( VAR8 > 0 ) { return 0 ; } return VAR8 ; }

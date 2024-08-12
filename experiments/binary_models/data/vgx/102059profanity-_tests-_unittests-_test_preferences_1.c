@@ -1,0 +1,1 @@
+void FUN1 ( void * * VAR1 ) { char * VAR2 = FUN2 ( VAR3 ) ; FUN3 ( VAR2 ) ; FUN4 ( "" , VAR2 ) ; }

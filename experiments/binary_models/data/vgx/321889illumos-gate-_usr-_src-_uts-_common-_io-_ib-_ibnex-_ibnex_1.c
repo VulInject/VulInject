@@ -1,0 +1,1 @@
+static int FUN1 ( char * VAR1 , VAR2 * VAR3 ) { int VAR4 ; char * VAR5 , * VAR6 ; VAR5 = strchr ( VAR1 , '' ) ; VAR6 = strchr ( VAR5 , '' ) ; if ( VAR6 == NULL ) { return ( VAR7 ) ; } VAR5 ++ ; * VAR3 = FUN2 ( VAR5 , ( VAR6 - VAR5 ) , & VAR4 ) ; return ( VAR4 ) ; }

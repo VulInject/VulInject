@@ -1,0 +1,160 @@
+static int FUN1(VAR1 *VAR2)
+{
+VAR3 *VAR4 = VAR2->VAR5;
+int VAR6, VAR7 = FUN2(VAR8);
+VAR9 *VAR10;
+
+if (VAR2->VAR11 != 1) {
+FUN3(VAR2, VAR12, "");
+return FUN2(VAR8);
+}
+VAR10 = VAR2->VAR13[0];
+if (!FUN4(VAR10->VAR14->VAR15)) {
+FUN3(VAR2, VAR12, "", VAR10->VAR14->VAR15);
+
+return -1;
+}
+
+if (VAR4->VAR16 < 0) {
+
+if (VAR10->VAR17 < VAR18)
+VAR10->VAR17 = FUN5(VAR2, VAR10->VAR14, -1);
+
+VAR4->VAR16 = VAR10->VAR17;
+} else {
+
+VAR10->VAR17 = VAR4->VAR16;
+}
+
+VAR4->VAR19 = FUN6();
+VAR4->VAR20 = VAR4->VAR19;
+VAR4->VAR21 = 0;
+if (!VAR4->VAR22)
+VAR4->VAR22 = FUN6();
+VAR4->VAR23 = 1;
+VAR4->VAR24 = FUN7();
+if (VAR2->VAR25)
+
+VAR4->VAR24 = (VAR2->VAR25 / 1000) * 1000 +
+VAR26;
+
+
+
+if (VAR4->VAR27 < 0)
+VAR4->VAR27 = FUN6() & 0x0fff;
+else
+VAR4->VAR27 &= 0xffff; 
+
+if (VAR2->VAR28) {
+if (VAR2->VAR29->VAR30)
+VAR2->VAR28 = FUN8(VAR2->VAR28,
+VAR2->VAR29->VAR30);
+} else
+VAR2->VAR28 = VAR2->VAR29->VAR30;
+if (VAR2->VAR28 <= 12) {
+FUN3(VAR2, VAR12, "", VAR2->VAR28);
+return FUN2(VAR31);
+}
+VAR4->VAR32 = FUN9(VAR2->VAR28);
+if (!VAR4->VAR32) {
+return FUN2(VAR33);
+}
+VAR4->VAR34 = VAR2->VAR28 - 12;
+
+if (VAR10->VAR14->VAR35 == VAR36) {
+FUN10(VAR10, 32, 1, VAR10->VAR14->VAR37);
+} else {
+FUN10(VAR10, 32, 1, 90000);
+}
+VAR4->VAR38 = VAR4->VAR32;
+switch(VAR10->VAR14->VAR15) {
+case VAR39:
+case VAR40:
+VAR4->VAR38 = VAR4->VAR32 + 4;
+FUN10(VAR10, 32, 1, 90000);
+break;
+case VAR41:
+case VAR42:
+break;
+case VAR43:
+VAR6 = VAR4->VAR34 / VAR44;
+if (VAR6 < 1)
+VAR6 = 1;
+VAR4->VAR34 = VAR6 * VAR44;
+break;
+case VAR45:
+if (VAR2->VAR46 > VAR47) {
+FUN3(VAR4, VAR12,
+""
+""
+""
+"");
+VAR7 = VAR48;
+goto VAR49;
+}
+break;
+case VAR50:
+
+if (VAR10->VAR14->VAR51 > 4 && VAR10->VAR14->VAR52[0] == 1) {
+VAR4->VAR53 = (VAR10->VAR14->VAR52[4] & 0x03) + 1;
+}
+break;
+case VAR54:
+
+if (VAR10->VAR14->VAR51 > 21 && VAR10->VAR14->VAR52[0] == 1) {
+VAR4->VAR53 = (VAR10->VAR14->VAR52[21] & 0x03) + 1;
+}
+break;
+case VAR55:
+case VAR56:
+VAR4->VAR57 = 15;
+break;
+case VAR58:
+
+FUN10(VAR10, 32, 1, 8000);
+break;
+case VAR59:
+if (VAR10->VAR14->VAR60 > 2) {
+FUN3(VAR2, VAR12, "");
+goto VAR49;
+}
+
+FUN10(VAR10, 32, 1, 48000);
+break;
+case VAR61:
+if (VAR10->VAR14->VAR62 != 38 && VAR10->VAR14->VAR62 != 50) {
+FUN3(VAR2, VAR12, "");
+goto VAR49;
+}
+VAR4->VAR57 = VAR4->VAR34 / VAR10->VAR14->VAR62;
+break;
+case VAR63:
+case VAR64:
+VAR4->VAR57 = 50;
+if (VAR10->VAR14->VAR15 == VAR63)
+VAR6 = 31;
+else
+VAR6 = 61;
+
+if (1 + VAR4->VAR57 + VAR6 > VAR4->VAR34) {
+FUN3(VAR2, VAR12, "");
+goto VAR49;
+}
+if (VAR10->VAR14->VAR60 != 1) {
+FUN3(VAR2, VAR12, "");
+goto VAR49;
+}
+break;
+case VAR65:
+VAR4->VAR57 = 50;
+break;
+default:
+break;
+}
+
+return 0;
+
+VAR49:
+FUN11(&VAR4->VAR32);
+return VAR7;
+}

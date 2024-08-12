@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 , DviOrientation VAR3 ) { switch ( VAR3 ) { case VAR4 : break ; case VAR5 : FUN2 ( VAR2 ) ; break ; case VAR6 : FUN3 ( VAR2 ) ; break ; case VAR7 : FUN4 ( VAR2 ) ; break ; case VAR8 : FUN5 ( VAR2 ) ; break ; case VAR9 : FUN6 ( VAR2 , NULL ) ; break ; case VAR10 : FUN7 ( VAR2 ) ; break ; case VAR11 : FUN8 ( VAR2 ) ; break ; } }

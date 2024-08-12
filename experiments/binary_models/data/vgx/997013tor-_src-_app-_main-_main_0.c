@@ -1,0 +1,125 @@
+static void
+FUN1(int VAR1)
+{
+time_t VAR2 = FUN2(NULL);
+time_t VAR3;
+size_t VAR4, VAR5, VAR6, VAR7;
+
+FUN3(VAR1, VAR8, "");
+
+FUN4(FUN5(), VAR9 *, VAR10) {
+int VAR11 = VAR12;
+FUN3(VAR1, VAR8,
+"",
+VAR11, (int)VAR10->VAR13,
+FUN6(VAR10),
+(int)(VAR2 - VAR10->VAR14));
+if (!FUN7(VAR10)) {
+FUN3(VAR1,VAR8,
+"",
+VAR11,
+(int)FUN8(VAR10),
+(int)FUN9(VAR10->VAR15),
+(int)(VAR2 - VAR10->VAR16));
+FUN3(VAR1,VAR8,
+""
+"",VAR11,
+(int)FUN10(VAR10),
+(int)FUN9(VAR10->VAR17),
+(int)(VAR2 - VAR10->VAR18));
+if (VAR10->VAR19 == VAR20) {
+VAR21 *VAR22 = FUN11(VAR10);
+if (VAR22->VAR23) {
+if (FUN12(VAR22->VAR23, &VAR4, &VAR6,
+&VAR5, &VAR7) == 0) {
+FUN3(VAR1, VAR8,
+""
+"",
+VAR11, (int)VAR6, (int)VAR4, (int)VAR7, (int)VAR5);
+}
+}
+}
+}
+FUN13(VAR10, VAR1); 
+} FUN14(VAR10);
+
+FUN15(VAR1);
+FUN16(VAR1);
+
+FUN3(VAR1, VAR24,
+""VAR25""
+""VAR25""
+""VAR25""
+""VAR25""
+""VAR25""
+""VAR25""
+""VAR25"",
+(VAR26),
+(VAR27),
+(VAR28),
+(VAR29),
+(VAR30),
+(VAR31),
+(VAR32));
+if (VAR33)
+FUN3(VAR1,VAR24,"",
+100*(((double)VAR34) /
+((double)VAR33*VAR35)) );
+if (VAR36)
+FUN3(VAR1,VAR24,"",
+100*(((double)VAR37) /
+((double)VAR36*VAR35)) );
+
+FUN17(VAR1, VAR38, "");
+FUN17(VAR1, VAR39,"");
+
+if (VAR2 - VAR40 >= 0)
+VAR3 = VAR2 - VAR40;
+else
+VAR3 = 0;
+
+if (VAR3) {
+FUN3(VAR1, VAR24,
+""VAR25"",
+(FUN18()),
+(int)VAR3,
+(int) (FUN18()/VAR3));
+FUN3(VAR1, VAR24,
+""VAR25"",
+(FUN19()),
+(int)VAR3,
+(int) (FUN19()/VAR3));
+}
+
+FUN3(VAR1, VAR24, "");
+FUN20(VAR1);
+
+FUN21(VAR2,VAR1);
+FUN22(VAR1);
+}
+
+
+static struct {
+
+int VAR41;
+
+int VAR42;
+
+struct VAR43 *VAR44;
+} VAR45[] = {
+{ VAR46, VAR47, NULL }, 
+{ VAR48, VAR47, NULL }, 
+{ VAR49, VAR47, NULL }, 
+{ VAR50, VAR47, NULL }, 
+{ VAR51, VAR47, NULL }, 
+{ VAR52, VAR47, NULL }, 
+{ VAR53, VAR47, NULL }, 
+{ VAR54, VAR47, NULL }, 
+
+{ VAR55, 0, NULL },
+{ VAR56, 0, NULL },
+{ VAR57, 0, NULL },
+{ VAR58, 0, NULL },
+{ VAR59, 0, NULL },
+{ -1, -1, NULL }
+};

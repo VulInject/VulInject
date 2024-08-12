@@ -1,0 +1,48 @@
+static VAR1 FUN1(downmix_func VAR2, const void *VAR3, VAR1 *VAR4, opus_val32 VAR5[3], int VAR6, int VAR7, int VAR8, int VAR9, int VAR10, int VAR11)
+{
+FUN2(VAR1, VAR12);
+opus_val32 VAR13;
+int VAR14;
+opus_val32 VAR15 = 0;
+VAR16;
+
+if (VAR6==0) return 0;
+if (VAR11 == 48000)
+{
+VAR6 *= 2;
+VAR7 *= 2;
+} else if (VAR11 == 16000) {
+VAR6 = VAR6*2/3;
+VAR7 = VAR7*2/3;
+}
+FUN3(VAR12, VAR6, VAR1);
+
+FUN4(VAR3, VAR12, VAR6, VAR7, VAR8, VAR9, VAR10);
+VAR13 = (1<<VAR17);
+VAR13 = 1.VAR18/32768;
+if (VAR9==-2)
+VAR13 /= VAR10;
+else if (VAR9>-1)
+VAR13 /= 2;
+for (VAR14=0;VAR14<VAR6;VAR14++)
+VAR12[VAR14] *= VAR13;
+if (VAR11 == 48000)
+{
+VAR15 = FUN5(VAR5, VAR4, VAR12, VAR6);
+} else if (VAR11 == 24000) {
+FUN6(VAR4, VAR12, VAR6);
+} else if (VAR11 == 16000) {
+FUN2(VAR1, VAR19);
+FUN3(VAR19, 3*VAR6, VAR1);
+
+for (VAR14=0;VAR14<VAR6;VAR14++)
+{
+VAR19[3*VAR14] = VAR12[VAR14];
+VAR19[3*VAR14+1] = VAR12[VAR14];
+VAR19[3*VAR14+2] = VAR12[VAR14];
+}
+FUN5(VAR5, VAR4, VAR19, 3*VAR6);
+}
+VAR20;
+return VAR15;
+}

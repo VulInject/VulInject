@@ -1,0 +1,1 @@
+static void * FUN1 ( size_t VAR1 ) { if ( FUN2 ( ! FUN3 ( ) ) ) { return VAR2 ; } if ( VAR1 <= VAR3 ) { return FUN4 ( VAR1 , VAR4 ) ; } else { return FUN5 ( VAR1 ) ; } }

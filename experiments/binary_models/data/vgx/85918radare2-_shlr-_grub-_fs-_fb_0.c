@@ -1,0 +1,49 @@
+FUN1 (grub_file_t VAR1, char *VAR2, grub_size_t VAR3)
+{
+struct VAR4 *VAR5;
+grub_disk_t VAR6;
+grub_uint32_t VAR7;
+grub_size_t VAR8, VAR9;
+struct VAR10 *VAR11;
+
+VAR6 = VAR1->VAR12->VAR6;
+VAR6->VAR13 = VAR1->VAR13;
+VAR6->VAR14 = VAR1->VAR14;
+
+VAR11 = VAR1->VAR11;
+VAR5 = VAR11->VAR15;
+if (VAR5->VAR16 >= VAR11->VAR17)
+{
+grub_err_t VAR18;
+
+VAR18 = FUN2 (VAR6, VAR5->VAR16 - VAR11->VAR9,
+VAR1->VAR19, VAR3, VAR2, VAR1->VAR20);
+VAR6->VAR13 = 0;
+return (VAR18) ? -1 : (VAR21) VAR3;
+}
+
+VAR7 = VAR5->VAR16 + ((VAR22) VAR1->VAR19 / 510) - VAR11->VAR9;
+VAR9 = ((VAR22) VAR1->VAR19 % 510);
+VAR8 = VAR3;
+while (VAR3)
+{
+int VAR23;
+
+VAR23 = VAR3;
+if (VAR9 + VAR23 > 510)
+VAR23 = 510 - VAR9;
+if (FUN3 (VAR6, VAR7, VAR9, VAR23, VAR2))
+{
+VAR8 = -1;
+break;
+}
+VAR7++;
+if (VAR2)
+VAR2 += VAR23;
+VAR3 -= VAR23;
+VAR9 = 0;
+}
+
+VAR6->VAR13 = 0;
+return VAR8;
+}

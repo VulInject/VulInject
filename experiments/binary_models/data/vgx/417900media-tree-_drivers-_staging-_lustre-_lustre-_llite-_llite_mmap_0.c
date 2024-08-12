@@ -1,0 +1,52 @@
+static struct VAR1 *
+FUN1(struct VAR2 *VAR3, struct VAR4 *VAR5,
+pgoff_t VAR6, unsigned long *VAR7)
+{
+struct VAR8	       *VAR8 = VAR5->VAR9;
+struct VAR10	       *VAR10 = FUN2(VAR8);
+struct VAR1	       *VAR11;
+struct VAR12     *VAR13;
+int			VAR14;
+
+if (FUN3(VAR8))
+return FUN4(-VAR15);
+
+VAR16:
+VAR11 = FUN5(VAR3);
+VAR11->VAR17 = FUN6(VAR10)->VAR18;
+FUN7(VAR11->VAR17);
+
+VAR13 = &VAR11->VAR19.VAR20;
+VAR13->VAR21      = VAR6;
+VAR13->VAR22 = VAR5->VAR23 & VAR24;
+
+
+if (VAR7)
+*VAR7 = VAR5->VAR23 & (VAR25 | VAR26);
+VAR5->VAR23 &= ~VAR26;
+VAR5->VAR23 |= VAR25;
+
+FUN8(VAR27, "", VAR5->VAR23,
+VAR13->VAR21, VAR13->VAR22);
+
+VAR14 = FUN9(VAR3, VAR11, VAR28, VAR11->VAR17);
+if (VAR14 == 0) {
+struct VAR29 *VAR30 = FUN10(VAR3);
+struct VAR31 *VAR32 = FUN11(VAR8);
+
+FUN7(VAR30->VAR33.VAR34 == VAR11);
+
+
+VAR11->VAR35 = VAR36;
+VAR30->VAR37 = VAR32;
+} else {
+FUN7(VAR14 < 0);
+FUN12(VAR3, VAR11);
+if (VAR11->VAR38)
+goto VAR16;
+
+VAR11 = FUN4(VAR14);
+}
+
+return VAR11;
+}

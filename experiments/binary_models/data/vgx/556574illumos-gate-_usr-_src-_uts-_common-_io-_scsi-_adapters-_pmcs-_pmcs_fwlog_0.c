@@ -1,0 +1,10 @@
+static VAR1
+FUN1(VAR2 *VAR3)
+{
+uint32_t VAR4 = 0;
+FUN2(&VAR3->VAR5);
+VAR4 = FUN3(VAR3->VAR6,
+&VAR3->VAR7[VAR8 >> 2]);
+FUN4(&VAR3->VAR5);
+return (VAR4);
+}

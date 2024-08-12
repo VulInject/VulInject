@@ -1,0 +1,1 @@
+static int FUN1 ( const char * VAR1 ) void FUN2 ( const char * VAR1 ) { VAR2 * VAR3 ; VAR3 = FUN3 ( VAR1 , true ) ; if ( ! VAR3 ) { FUN4 ( VAR4 , ( FUN5 ( VAR5 ) , FUN6 ( ""%VAR6\"" , VAR1 ) ) ) ; } if ( FUN7 ( VAR3 ) ) { return ; } FUN8 ( VAR7 , VAR8 , FUN9 ( VAR3 ) ) ; }

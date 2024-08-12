@@ -1,0 +1,118 @@
+int
+FUN1(struct VAR1 *VAR2, const char *VAR3,
+bool VAR4, bool VAR5)
+{
+VAR6 *VAR7;
+VAR8 *VAR9;
+VAR10 *VAR11;
+FUN2(VAR10) *VAR12 = NULL;
+VAR13 *VAR14;
+int VAR15;
+char VAR16[256];
+
+FUN3(NULL != VAR2);
+
+if (VAR4)
+{
+VAR17 *VAR18 = FUN4(FUN5());
+VAR17 *VAR19 = FUN6((void *) VAR3,
+(int) strlen(VAR3));
+FUN3(VAR18 && VAR19);
+FUN7(VAR18, VAR19);
+VAR14 = FUN8(VAR18, NULL);
+if (!VAR14)
+{
+FUN9(VAR20, "");
+}
+FUN10(VAR18);
+FUN10(VAR19);
+}
+else
+{
+
+if (!(VAR7 = FUN11(VAR3, "")))
+{
+FUN9(VAR20, "", VAR3);
+}
+VAR14 = FUN12(VAR7, NULL);
+fclose(VAR7);
+if (!VAR14)
+{
+FUN9(VAR20, "", VAR3);
+}
+}
+
+
+if (!FUN13(VAR14, "", &VAR9, &VAR11, &VAR12))
+{
+FUN14(VAR16, sizeof(VAR16) - 1, 0, NULL);
+
+VAR12 = NULL;
+if (!FUN13(VAR14, VAR16, &VAR9, &VAR11, &VAR12))
+{
+FUN9(VAR21, ""
+"");
+if (VAR22 && (FUN15(FUN16()) == VAR23))
+{
+FUN17(VAR22, VAR24, NULL);
+}
+FUN18(VAR14);
+return 1;
+}
+}
+FUN18(VAR14);
+
+
+if (!FUN19(VAR2->VAR2, VAR11))
+{
+FUN9(VAR20, "");
+}
+
+
+if (!FUN20(VAR2->VAR2, VAR9))
+{
+FUN9(VAR20, "");
+}
+
+
+if (!FUN21(VAR2->VAR2))
+{
+FUN9(VAR20, "");
+}
+
+
+if (VAR5)
+{
+
+if (VAR12 && FUN22(VAR12))
+{
+for (VAR15 = 0; VAR15 < FUN22(VAR12); VAR15++)
+{
+VAR25 *VAR26 = FUN23(VAR2->VAR2);
+if (!FUN24(VAR26, FUN25(VAR12, VAR15)))
+{
+FUN9(VAR20, "");
+}
+if (!FUN26(VAR2->VAR2, FUN25(VAR12, VAR15)))
+{
+FUN9(VAR20, "");
+}
+}
+}
+}
+else
+{
+
+if (VAR12 && FUN22(VAR12))
+{
+for (VAR15 = 0; VAR15 < FUN22(VAR12); VAR15++)
+{
+if (!FUN27(VAR2->VAR2, FUN25(VAR12, VAR15)))
+{
+FUN9(VAR20, "");
+}
+}
+}
+}
+return 0;
+}

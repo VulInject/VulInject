@@ -1,0 +1,62 @@
+static struct VAR1 *FUN1(struct VAR2 *VAR3, VAR4 *VAR5, struct VAR6 *VAR7, u16 VAR8, u8 VAR9)
+{
+struct VAR1 *VAR10 = NULL;
+struct VAR11 *VAR12 = NULL;
+VAR4 *VAR13 = NULL;
+u16 VAR14 = VAR3->VAR15 + 9;
+
+FUN2(VAR16 | VAR17, "", VAR18, VAR9, VAR5, VAR3->VAR19);
+if (VAR7 == NULL) {
+FUN2(VAR20, "");
+return NULL;
+}
+VAR10 = FUN3(VAR14 + sizeof(struct VAR11)); 
+if (!VAR10)
+return NULL;
+
+memset(VAR10->VAR21, 0, sizeof(struct VAR11));	
+FUN4(VAR10, VAR3->VAR15);
+
+VAR12 = FUN5(VAR10, sizeof(struct VAR11));
+
+memcpy(VAR12->VAR22, VAR5, VAR23);
+memcpy(VAR12->VAR24, VAR3->VAR19->VAR25, VAR23);
+
+memcpy(VAR12->VAR26, VAR3->VAR27.VAR28, VAR23);
+
+VAR12->VAR29 = FUN6(VAR30); 
+
+
+
+VAR13 = FUN5(VAR10, 9);
+*VAR13++ = VAR31;
+*VAR13++ = VAR9;
+
+*VAR13++ = VAR7->VAR32;
+
+if (VAR9 == VAR33) {
+
+FUN7(VAR3->VAR19, "");
+
+FUN8(VAR8, VAR13);
+VAR13 += 2;
+}
+
+
+FUN8(VAR7->VAR34.VAR35, VAR13);
+VAR13 += 2;
+
+
+FUN8(VAR7->VAR36, VAR13);
+VAR13 += 2;
+
+if (VAR9 == VAR37) {
+
+memcpy(VAR13, (VAR4 *)&(VAR7->VAR38), 2);
+VAR13 += 2;
+}
+
+FUN9(VAR39 | VAR17, VAR10->VAR21, VAR10->VAR14);
+return VAR10;
+
+}

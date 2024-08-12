@@ -1,0 +1,105 @@
+int FUN1(const VAR1 *VAR2, VAR3 *VAR4)
+{
+int VAR5, VAR6;
+
+if(!VAR2 || !VAR4) {
+FUN2("");
+return -1;
+}
+
+
+FUN3(VAR4) = FUN4(FUN5(VAR2));
+
+
+FUN6(VAR4) = FUN7(FUN5(VAR2));
+
+if(!FUN6(VAR4)) {
+FUN8("");
+return -2;
+} else {
+FUN8("", FUN6(VAR4));
+}
+
+if(FUN9(VAR4, FUN6(VAR4)) != 0) {
+FUN2("");
+return -3;
+}
+
+
+for(VAR5 = 0; VAR5 < FUN6(VAR4); VAR5++) {
+
+FUN10(VAR4)[VAR5] = (VAR7 *)FUN11(sizeof(VAR7));
+if(!FUN10(VAR4)[VAR5]) {
+VAR8;
+FUN12(VAR4);
+return -4;
+}
+FUN8("",
+(unsigned int)sizeof(VAR7), VAR5, FUN10(VAR4)[VAR5]);
+
+
+FUN10(VAR4)[VAR5]->VAR9 = FUN13(FUN5(VAR2), VAR5);
+FUN10(VAR4)[VAR5]->VAR10 = strlen(FUN13(FUN5(VAR2), VAR5));
+
+FUN8("", FUN10(VAR4)[VAR5], VAR5,
+FUN10(VAR4)[VAR5]->VAR10, FUN10(VAR4)[VAR5]->VAR9);
+
+
+switch(VAR6 = FUN14(FUN5(VAR2), VAR5)) {
+case VAR11:
+case VAR12:
+FUN8("");
+FUN15(VAR4)[VAR5] = VAR13;
+break;
+
+case VAR14:
+FUN8("");
+FUN15(VAR4)[VAR5] = VAR15;
+break;
+
+case VAR16:
+case VAR17:
+case VAR18:
+FUN8("");
+FUN15(VAR4)[VAR5] = VAR19;
+break;
+
+case VAR20:
+case VAR21:
+case VAR22:
+FUN8("");
+FUN15(VAR4)[VAR5] = VAR23;
+break;
+
+case VAR24:
+case VAR25:
+case VAR26:
+case VAR27:
+case VAR28:
+FUN8("");
+FUN15(VAR4)[VAR5] = VAR29;
+break;
+
+case VAR30:
+case VAR31:
+FUN8("");
+FUN15(VAR4)[VAR5] = VAR32;
+break;
+
+case VAR33:
+case VAR34:
+FUN8("");
+FUN15(VAR4)[VAR5] = VAR35;
+break;
+
+default:
+FUN16(""
+"",
+FUN10(VAR4)[VAR5]->VAR10, FUN10(VAR4)[VAR5]->VAR9,
+VAR6);
+FUN15(VAR4)[VAR5] = VAR29;
+break;
+}
+}
+return 0;
+}

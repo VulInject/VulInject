@@ -1,0 +1,51 @@
+static struct VAR1 *
+FUN1(struct VAR2 *VAR3,
+struct VAR4 *VAR5,
+struct VAR6 *VAR7,
+struct VAR8 *VAR9, u32 VAR10)
+{
+struct mlx5_flow_act VAR11 = { .VAR12 = VAR13 };
+struct VAR14 *VAR15 = NULL;
+struct VAR1 *VAR16;
+struct VAR17 *VAR18;
+int VAR19 = 0;
+
+VAR18 = FUN2(sizeof(*VAR18), VAR20);
+if (!VAR18)
+return FUN3(-VAR21);
+VAR19 = FUN4(VAR18->VAR22, VAR18->VAR23,
+VAR9);
+if (VAR19)
+goto free;
+
+if (VAR9->VAR24 == VAR25) {
+VAR11.VAR26 = VAR27;
+} else {
+VAR15 = FUN5(sizeof(*VAR15), VAR20);
+if (!VAR15) {
+VAR19 = -VAR21;
+goto free;
+}
+
+VAR19 = FUN6(VAR3, VAR5, VAR9, VAR10, &VAR15->VAR28);
+if (VAR19)
+goto free;
+
+VAR15->VAR29 = VAR30;
+VAR11.VAR26 = VAR31;
+}
+
+VAR18->VAR32 = (!FUN7(VAR18->VAR22));
+VAR18->VAR33.VAR34 = VAR35;
+VAR16 = FUN8(VAR7, VAR18, &VAR11, VAR15, VAR15 ? 1 : 0);
+if (FUN9(VAR16)) {
+VAR19 = FUN10(VAR16);
+FUN11(VAR3->VAR36, "",
+VAR37, VAR19);
+goto free;
+}
+free:
+FUN12(VAR18);
+FUN13(VAR15);
+return VAR19 ? FUN3(VAR19) : VAR16;
+}

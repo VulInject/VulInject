@@ -1,0 +1,94 @@
+void *FUN1(void *VAR1)
+{
+VAR2 *VAR3 = VAR1;
+VAR4 *VAR5 = NULL;
+VAR6 *VAR7 = NULL; 
+VAR8 *VAR9 = NULL;
+
+FUN2();
+FUN3(&VAR3->VAR10, 0);
+
+FUN4(&VAR3->VAR11, VAR12,
+VAR13);
+
+if (FUN5() != VAR14) {
+FUN6("");
+return NULL;
+}
+
+FUN7();
+
+VAR3->VAR15 = FUN8(VAR3->VAR16);
+if (!VAR3->VAR15) {
+FUN6("");
+goto VAR17;
+}
+
+FUN9(VAR3->VAR16, true);
+
+FUN10();
+
+VAR7 = FUN11(VAR18);
+VAR5 = FUN12(FUN13(VAR7));
+FUN14(FUN15(VAR7));
+
+FUN16();
+FUN17(VAR19, &VAR9);
+if (VAR9) {
+FUN18();
+goto VAR17;
+}
+FUN19();
+FUN20();
+FUN18();
+FUN21("", "");
+
+FUN22(VAR3->VAR15, VAR20,
+&VAR9);
+if (VAR9) {
+goto VAR17;
+}
+
+while (VAR3->VAR11 == VAR13) {
+FUN23(VAR3, VAR5, VAR7, &VAR9);
+if (VAR9) {
+FUN24(VAR9);
+break;
+}
+
+if (FUN25() == VAR21) {
+FUN26(VAR21,
+VAR22);
+FUN27(NULL);
+break;
+}
+
+if (FUN25() != VAR22) {
+FUN6("");
+break;
+}
+}
+
+VAR17:
+
+switch (FUN25()) {
+case VAR23:
+FUN28(VAR14,
+VAR24);
+break;
+default:
+FUN28(VAR14,
+VAR25);
+}
+
+if (VAR5) {
+FUN29(VAR5);
+}
+
+
+FUN30(&VAR3->VAR10);
+FUN31(&VAR3->VAR10);
+
+FUN32();
+return NULL;
+}

@@ -1,0 +1,32 @@
+static int FUN1(struct VAR1 * VAR1)
+{
+struct VAR2 *VAR3 = VAR1->VAR3;
+struct VAR4 *VAR5 = &VAR3->VAR6->VAR7[VAR8];
+u32 VAR9;
+u64 VAR10;
+volatile void VAR11 *VAR12;
+
+unsigned long VAR13 = 10000000L; 
+FUN2(&VAR5->VAR14);
+for(;;) {
+VAR9 = FUN3(VAR3, VAR15.VAR16);
+if (FUN4(VAR9 == 0xFFFFFFFFL))
+VAR9 = FUN3(VAR3, VAR15.VAR16);
+if (FUN5(VAR9 != 0xFFFFFFFFL))
+break;
+if (--VAR13 == 0) {
+FUN6(&VAR5->VAR14);
+return -VAR17;
+}
+FUN7(5);
+}
+VAR12 = VAR3->VAR18 + VAR9;
+VAR10 = VAR1->VAR19;
+FUN8((VAR20)(VAR10 & 0xffffffff), VAR12);
+VAR12 += sizeof(VAR20);
+FUN8((VAR20)(VAR10 >> 32), VAR12);
+VAR12 += sizeof(VAR20);
+FUN8(FUN9(VAR1->VAR21->VAR22.VAR23), VAR12);
+FUN10(VAR3, VAR15.VAR16, VAR9);
+return 0;
+}

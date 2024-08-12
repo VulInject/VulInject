@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR1 , unsigned int VAR2 ) { if ( VAR2 > 400 ) { struct VAR3 * VAR3 = & VAR1 -> VAR3 ; int VAR4 = 3 ; FUN2 ( VAR3 , NULL , VAR5 ) ; FUN2 ( VAR3 , NULL , VAR5 ) ; FUN2 ( VAR3 , NULL , VAR5 ) ; FUN2 ( VAR3 , & VAR4 , VAR6 ) ; VAR1 -> VAR2 = 800 ; } else { FUN3 ( VAR1 , VAR2 ) ; } }

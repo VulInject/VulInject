@@ -1,0 +1,192 @@
+int
+FUN1(short VAR1,
+VAR2 *VAR3, VAR4 **VAR5)
+{
+int VAR6;
+VAR7 *VAR8 = NULL;
+VAR9 *VAR10;
+crypto_mech_type_t VAR11, VAR12;
+VAR4 *VAR13, *VAR14;
+crypto_func_group_t VAR15, VAR16;
+VAR9 *VAR17;
+VAR18 *VAR19, *VAR20;
+VAR7 *VAR21;
+int VAR22;
+
+FUN2(VAR3->VAR23 != VAR24);
+
+VAR10 = &VAR3->VAR25[VAR1];
+
+
+VAR11 = FUN3(VAR10->VAR26);
+if (VAR11 == VAR27) {
+crypto_func_group_t VAR28 = VAR10->VAR29;
+kcf_ops_class_t class;
+
+if (VAR28 & VAR30 || VAR28 & VAR31)
+class = VAR32;
+else if (VAR28 & VAR33 || VAR28 & VAR34 ||
+VAR28 & VAR35 ||
+VAR28 & VAR36)
+class = VAR37;
+else if (VAR28 & VAR38 || VAR28 & VAR39)
+class = VAR40;
+else if (VAR28 & VAR41 || VAR28 & VAR42 ||
+VAR28 & VAR43 ||
+VAR28 & VAR44 ||
+VAR28 & VAR45 ||
+VAR28 & VAR46)
+class = VAR47;
+else if (VAR28 & VAR48 ||
+VAR28 & VAR49 ||
+VAR28 & VAR50 || VAR28 & VAR51 ||
+VAR28 & VAR52)
+class = VAR53;
+else
+class = VAR54;
+
+
+if ((VAR6 = FUN4(class,
+VAR10->VAR26)) != VAR55) {
+return (VAR6);
+}
+
+VAR11 = FUN3(VAR10->VAR26);
+FUN2(VAR11 != VAR27);
+}
+
+VAR6 = FUN5(VAR11, &VAR8);
+FUN2(VAR6 == VAR55);
+
+
+VAR13 = FUN6(sizeof (VAR4), VAR56);
+bcopy(VAR10, &VAR13->VAR57, sizeof (VAR9));
+VAR13->VAR58 = VAR3;
+VAR3->VAR59[FUN7(VAR11)]
+[FUN8(VAR11)] = VAR1;
+
+FUN9(VAR3);
+FUN10(VAR3);
+
+VAR16 = VAR10->VAR29 & VAR60;
+
+if (VAR16 == ((VAR61)0))
+goto VAR62;
+
+VAR15 = (VAR10->VAR29 &
+VAR63) | VAR64;
+
+for (VAR22 = 0; VAR22 < VAR3->VAR65; VAR22++) {
+VAR17 = &VAR3->VAR25[VAR22];
+
+
+if (VAR17->VAR66 == VAR10->VAR66)
+continue;
+
+
+if (!(VAR17->VAR29 & VAR16) ||
+(VAR17->VAR29 & VAR15))
+continue;
+
+VAR12 = FUN3(VAR17->VAR26);
+if (VAR12 == VAR27)
+continue;
+
+if (FUN5(VAR12, &VAR21) != VAR55)
+continue;
+
+VAR19 = FUN6(sizeof (*VAR19), VAR56);
+VAR20 = FUN6(sizeof (*VAR20), VAR56);
+
+
+FUN11(&VAR21->VAR67);
+if (VAR21->VAR68 == NULL && VAR21->VAR69 == NULL) {
+FUN12(&VAR21->VAR67);
+FUN13(VAR19, sizeof (*VAR19));
+FUN13(VAR20, sizeof (*VAR20));
+continue;
+}
+
+
+VAR19->VAR70 = *VAR17; 
+VAR19->VAR71 = VAR12;
+
+
+VAR19->VAR72 = VAR13->VAR73;
+VAR13->VAR73 = VAR19;
+
+if (VAR3->VAR23 == VAR74)
+VAR14 = VAR21->VAR68;
+else
+VAR14 = VAR21->VAR69;
+
+if (VAR14 == NULL) {
+FUN13(VAR20, sizeof (*VAR20));
+FUN12(&VAR21->VAR67);
+continue;
+}
+
+
+while (VAR14 != NULL) {
+if (VAR14->VAR58 == VAR3) {
+
+VAR20->VAR70 = *VAR10;
+VAR20->VAR71 = VAR11;
+
+
+VAR20->VAR72 = VAR14->VAR73;
+VAR14->VAR73 = VAR20;
+break;
+}
+VAR14 = VAR14->VAR75;
+}
+if (VAR14 == NULL)
+FUN13(VAR20, sizeof (*VAR20));
+
+FUN12(&VAR21->VAR67);
+}
+
+VAR62:
+
+switch (VAR3->VAR23) {
+
+case VAR74:
+FUN11(&VAR8->VAR67);
+VAR13->VAR76 = VAR8;
+VAR13->VAR75 = VAR8->VAR68;
+VAR8->VAR68 = VAR13;
+VAR8->VAR77++;
+FUN12(&VAR8->VAR67);
+break;
+
+case VAR78:
+FUN11(&VAR8->VAR67);
+if (VAR8->VAR69 != NULL) {
+
+FUN14(VAR79, ""
+""%VAR80\""
+""%VAR80\""
+"", VAR3->VAR81,
+VAR10->VAR26,
+VAR8->VAR69->VAR58->
+VAR81);
+FUN15(VAR3);
+FUN13(VAR13, sizeof (VAR4));
+VAR13 = NULL;
+} else {
+
+VAR8->VAR69 = VAR13;
+
+
+VAR8->VAR82 = VAR83++;
+}
+FUN12(&VAR8->VAR67);
+break;
+default:
+break;
+}
+
+*VAR5 = VAR13;
+
+return (VAR55);
+}

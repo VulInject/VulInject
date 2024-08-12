@@ -1,0 +1,21 @@
+int
+FUN1(struct VAR1 *VAR2, void *VAR3)
+{
+struct VAR4 *VAR5 = (struct VAR4 *)VAR3;
+struct bfad_hal_comp	VAR6;
+unsigned long	VAR7;
+
+FUN2(&VAR6.VAR8);
+FUN3(&VAR2->VAR9, VAR7);
+VAR5->VAR10 = FUN4(FUN5(&VAR2->VAR11), &VAR5->VAR12,
+VAR13, &VAR6);
+FUN6(&VAR2->VAR9, VAR7);
+FUN7(VAR2, VAR5->VAR10);
+if (VAR5->VAR10 != VAR14)
+goto VAR15;
+
+FUN8(&VAR6.VAR8);
+VAR5->VAR10 = VAR6.VAR10;
+VAR15:
+return 0;
+}

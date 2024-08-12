@@ -1,0 +1,1 @@
+GF_Err FUN1 ( VAR1 * VAR2 , gf_fs_gl_activate VAR3 , void * VAR4 ) { if ( ! VAR2 || ! VAR3 || VAR2 -> VAR5 ) { return VAR6 ; } VAR2 -> VAR7 = VAR4 ; VAR2 -> VAR5 = VAR3 ; return VAR8 ; }

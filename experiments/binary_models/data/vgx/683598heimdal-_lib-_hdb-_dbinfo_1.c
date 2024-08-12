@@ -1,0 +1,1 @@
+void FUN1 ( krb5_context VAR1 , struct VAR2 * * VAR3 ) { struct VAR2 * VAR4 , * VAR5 ; for ( VAR4 = * VAR3 ; VAR4 != NULL ; VAR4 = VAR5 ) { VAR5 = VAR4 -> VAR6 ; free ( VAR4 -> VAR7 ) ; free ( VAR4 -> VAR8 ) ; free ( VAR4 -> VAR9 ) ; free ( VAR4 -> VAR10 ) ; free ( VAR4 -> VAR11 ) ; free ( VAR4 ) ; } * VAR3 = NULL ; }

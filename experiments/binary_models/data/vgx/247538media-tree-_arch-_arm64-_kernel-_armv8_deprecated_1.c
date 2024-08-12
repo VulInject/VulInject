@@ -1,0 +1,1 @@
+static int FUN1 ( unsigned int VAR1 ) { int VAR2 = 0 ; cfs_time_t VAR3 ; struct VAR4 * VAR5 ; FUN2 ( & VAR6 , VAR3 ) ; FUN3 ( , , ) { bool VAR7 = ( VAR5 -> VAR8 == VAR9 ) ; if ( VAR5 -> VAR10 -> VAR11 && VAR5 -> VAR10 -> FUN4 ( VAR7 ) ) { FUN5 ( "" , VAR1 , VAR5 -> VAR10 -> VAR12 ) ; VAR2 = - VAR13 ; } } FUN6 ( & VAR6 , VAR3 ) ; return VAR2 ; }

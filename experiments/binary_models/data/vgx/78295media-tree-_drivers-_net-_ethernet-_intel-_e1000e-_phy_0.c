@@ -1,0 +1,27 @@
+static VAR1 FUN1(struct VAR2 *VAR3, u32 VAR4, VAR5 *VAR6,
+bool VAR7)
+{
+s32 VAR8 = 0;
+
+if (!VAR7) {
+if (!VAR3->VAR9.VAR10.VAR11)
+return 0;
+
+VAR8 = VAR3->VAR9.VAR10.FUN2(VAR3);
+if (VAR8)
+return VAR8;
+}
+
+if (VAR4 > VAR12)
+VAR8 = FUN3(VAR3,
+VAR13,
+(VAR5)VAR4);
+if (!VAR8)
+VAR8 = FUN4(VAR3,
+VAR14 & VAR4,
+VAR6);
+if (!VAR7)
+VAR3->VAR9.VAR10.FUN5(VAR3);
+
+return VAR8;
+}

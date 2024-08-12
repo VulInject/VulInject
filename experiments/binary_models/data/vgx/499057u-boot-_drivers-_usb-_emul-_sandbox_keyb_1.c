@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , const char VAR3 [ VAR4 ] ) { struct VAR5 * VAR6 = FUN2 ( VAR2 ) ; int VAR7 ; VAR7 = FUN3 ( & VAR6 -> VAR8 , VAR3 , VAR4 ) ; return 0 ; }

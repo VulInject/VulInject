@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { FUN2 ( VAR3 , 0 , VAR4 , 0xFFFFFFFF ) ; FUN2 ( VAR3 , 0 , VAR5 , 0x0000000F ) ; FUN2 ( VAR3 , 0 , VAR6 , 0 ) ; FUN2 ( VAR3 , 0 , VAR7 , 0 ) ; FUN2 ( VAR3 , 0 , VAR8 , 0 ) ; FUN2 ( VAR3 , 0 , VAR9 , 0 ) ; }

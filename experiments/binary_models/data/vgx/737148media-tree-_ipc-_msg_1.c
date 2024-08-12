@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , long VAR3 , int VAR4 ) { switch ( VAR4 ) { case VAR5 : case VAR6 : return 1 ; case VAR7 : break ; case VAR8 : if ( VAR2 -> VAR9 == VAR3 ) { return 1 ; } break ; case VAR10 : if ( VAR2 -> VAR9 != VAR3 ) { return 1 ; } break ; } return 0 ; }

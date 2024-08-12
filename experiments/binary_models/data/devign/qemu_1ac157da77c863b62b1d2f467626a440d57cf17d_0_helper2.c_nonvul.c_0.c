@@ -1,0 +1,1 @@
+VAR1 FUN1(VAR2 *VAR3, target_ulong VAR4) { return VAR4; }

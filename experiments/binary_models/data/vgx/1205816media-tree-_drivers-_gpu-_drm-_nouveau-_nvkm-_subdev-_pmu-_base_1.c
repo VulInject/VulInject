@@ -1,0 +1,1 @@
+int FUN1 ( const struct VAR1 * VAR2 , struct VAR3 * VAR4 , int VAR5 , struct VAR6 * * VAR7 ) { struct VAR6 * VAR8 ; return FUN2 ( VAR2 , VAR4 , VAR5 , * VAR7 ) ; }

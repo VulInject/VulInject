@@ -1,0 +1,1 @@
+cfs_time_t VAR1 [ VAR2 ] ; unsigned long VAR3 [ VAR2 ] ; unsigned long VAR4 [ VAR2 ] ; unsigned long VAR5 [ VAR2 ] ; FUN1 ( ) void FUN2 ( void ) { FUN3 ( VAR6 , 0 ) ; }

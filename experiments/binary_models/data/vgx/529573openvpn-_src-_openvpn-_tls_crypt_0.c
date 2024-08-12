@@ -1,0 +1,98 @@
+bool
+FUN1(const struct VAR1 *VAR2, struct VAR1 *VAR3,
+struct VAR4 *VAR5)
+{
+static const char VAR6[] = "";
+const struct VAR7 *VAR8 = &VAR5->VAR9.VAR10;
+struct gc_arena VAR11;
+
+FUN2(&VAR11);
+
+FUN3(VAR5);
+FUN3(VAR2->VAR12 > 0);
+FUN3(VAR8->VAR13);
+FUN3(FUN4(&VAR5->VAR14)
+|| (VAR5->VAR15 & VAR16));
+
+FUN5(VAR17, "",
+FUN6(FUN7(VAR2), FUN8(VAR2), 80, &VAR11));
+
+if (FUN9(VAR2) < VAR18)
+{
+FUN10("");
+}
+
+
+{
+int VAR19 = 0;
+
+
+if (!FUN11(VAR3, FUN8(VAR2) - VAR18 + VAR20))
+{
+FUN10("");
+}
+
+if (!FUN12(VAR8->VAR13, FUN7(VAR2) + VAR21))
+{
+FUN10("");
+}
+if (!FUN13(VAR8->VAR13, FUN7(VAR3), &VAR19,
+FUN7(VAR2) + VAR18, FUN8(VAR2) - VAR18))
+{
+FUN10("");
+}
+FUN3(FUN14(VAR3, VAR19));
+if (!FUN15(VAR8->VAR13, FUN7(VAR3), &VAR19))
+{
+FUN10("");
+}
+FUN3(FUN14(VAR3, VAR19));
+}
+
+
+{
+const VAR22 *VAR23 = FUN7(VAR2) + VAR21;
+uint8_t VAR24[VAR25] = { 0 };
+
+FUN5(VAR17, "",
+FUN6(FUN7(VAR2), VAR21, 0, &VAR11));
+FUN5(VAR17, "",
+FUN6(FUN7(VAR3), FUN8(VAR3), 80, &VAR11));
+
+FUN16(VAR8->VAR26);
+FUN17(VAR8->VAR26, FUN7(VAR2), VAR21);
+FUN17(VAR8->VAR26, FUN7(VAR3), FUN8(VAR3));
+FUN18(VAR8->VAR26, VAR24);
+
+if (FUN19(VAR23, VAR24, sizeof(VAR24)))
+{
+FUN5(VAR27, "",
+FUN6(VAR23, sizeof(VAR24), 0, &VAR11));
+FUN5(VAR27, "",
+FUN6(VAR24, sizeof(VAR24), 0, &VAR11));
+FUN10("");
+}
+}
+
+
+if (!(VAR5->VAR15 & VAR16))
+{
+struct packet_id_net VAR28;
+struct buffer VAR29 = *VAR2;
+FUN3(FUN20(&VAR29, VAR30));
+FUN3(FUN21(&VAR28, &VAR29, true));
+if (!FUN22(VAR5, &VAR28, VAR6, &VAR11))
+{
+FUN10("");
+}
+}
+
+FUN23(&VAR11);
+return true;
+
+VAR31:
+FUN24();
+VAR3->VAR12 = 0;
+FUN23(&VAR11);
+return false;
+}

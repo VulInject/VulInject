@@ -1,0 +1,1 @@
+static char * FUN1 ( char * VAR1 ) { static char VAR2 [ 1024 ] ; int VAR3 ; VAR3 = 0 ; while ( * VAR1 && VAR3 < sizeof ( VAR2 ) - 3 ) { if ( * VAR1 == '' ) { VAR2 [ VAR3 ++ ] = '' ; VAR2 [ VAR3 ++ ] = '' ; } else { VAR2 [ VAR3 ++ ] = * VAR1 ; } VAR1 ++ ; } return VAR2 ; }

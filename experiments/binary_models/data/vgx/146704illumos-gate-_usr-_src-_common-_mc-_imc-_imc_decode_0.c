@@ -1,0 +1,181 @@
+static VAR1
+FUN1(const VAR2 *VAR3, VAR4 *VAR5)
+{
+uint_t VAR6, VAR7;
+uint8_t VAR8;
+uint32_t VAR9, VAR10, VAR11;
+uint64_t VAR12;
+const VAR13 *socket = &VAR3->VAR14[0];
+const VAR15 *VAR16 = &socket->VAR17;
+const VAR18 *VAR19;
+boolean_t VAR20 = VAR21;
+
+
+VAR22:
+for (VAR19 = NULL, VAR6 = 0, VAR12 = 0; VAR6 < VAR16->VAR23; VAR6++) {
+VAR19 = &VAR16->VAR24[VAR6];
+
+if (VAR19->VAR25 && VAR5->VAR26 >= VAR12 &&
+VAR5->VAR26 < VAR19->VAR27) {
+break;
+}
+
+VAR12 = VAR19->VAR27;
+}
+
+if (VAR19 == NULL || VAR6 == VAR16->VAR23) {
+VAR5->VAR28 = VAR29;
+return (VAR21);
+}
+
+
+VAR5->VAR30 = VAR16;
+VAR5->VAR31 = VAR19;
+
+
+VAR7 = FUN2(VAR19, VAR5->VAR26);
+if (VAR7 >= VAR19->VAR32) {
+VAR5->VAR28 = VAR33;
+VAR5->VAR34 = VAR7;
+return (VAR21);
+}
+VAR8 = VAR19->VAR35[VAR7];
+if (VAR3->VAR36 >= VAR37 &&
+FUN3(VAR8) == 0) {
+
+VAR9 = FUN4(VAR8);
+
+if (VAR20) {
+VAR5->VAR28 = VAR38;
+return (VAR21);
+}
+
+for (VAR6 = 0; VAR6 < VAR3->VAR39; VAR6++) {
+if (VAR3->VAR14[VAR6].VAR40 ==
+VAR41 &&
+VAR3->VAR14[VAR6].VAR42 == VAR9) {
+socket = &VAR3->VAR14[VAR6];
+VAR16 = &VAR3->VAR14[VAR6].VAR17;
+VAR20 = VAR43;
+goto VAR22;
+}
+}
+
+VAR5->VAR28 = VAR44;
+VAR5->VAR34 = VAR9;
+return (VAR21);
+}
+
+
+if (VAR19->VAR45) {
+uint64_t VAR46;
+uint8_t VAR47;
+
+switch (VAR19->VAR48) {
+case VAR49:
+VAR46 = VAR5->VAR26 >> 6;
+break;
+case VAR50:
+VAR46 = VAR5->VAR26 >> 8;
+break;
+case VAR51:
+VAR46 = VAR5->VAR26 >> 12;
+break;
+default:
+VAR5->VAR28 = VAR52;
+return (VAR21);
+}
+
+switch (VAR19->VAR53) {
+case VAR54:
+VAR47 = (VAR46 % 3) << 1;
+VAR47 |= VAR8 & 1;
+break;
+case VAR55:
+VAR47 = (VAR46 % 2) << 1;
+VAR47 |= VAR8 & 1;
+break;
+case VAR56:
+VAR47 = (VAR46 % 2) << 2;
+VAR47 |= (~VAR46 % 2) << 1;
+VAR47 |= VAR8 & 1;
+break;
+case VAR57:
+VAR47 = (VAR46 % 2) << 2;
+VAR47 |= VAR8 & 1;
+break;
+default:
+VAR5->VAR28 = VAR52;
+return (VAR21);
+}
+
+VAR8 = VAR47;
+}
+
+switch (VAR3->VAR36) {
+case VAR58:
+
+VAR9 = VAR8;
+VAR10 = 0;
+VAR11 = VAR59;
+break;
+case VAR60:
+case VAR61:
+case VAR62:
+
+VAR9 = FUN5(VAR8) |
+FUN6(VAR8);
+VAR10 = FUN7(VAR8);
+VAR11 = VAR59;
+break;
+case VAR37:
+
+VAR9 = socket->VAR42;
+if (VAR8 > VAR63) {
+VAR5->VAR28 = VAR33;
+VAR5->VAR34 = VAR8;
+return (VAR21);
+}
+VAR8 = FUN4(VAR8);
+if (VAR8 > VAR16->VAR64.VAR65) {
+VAR5->VAR28 = VAR33;
+VAR5->VAR34 = VAR8;
+return (VAR21);
+}
+VAR10 = VAR16->VAR64.VAR66[VAR8].VAR67;
+VAR11 =
+VAR16->VAR64.VAR66[VAR8].VAR68;
+break;
+default:
+VAR9 = VAR10 = VAR11 = VAR59;
+break;
+}
+
+
+VAR5->VAR69 = NULL;
+for (VAR6 = 0; VAR6 < VAR3->VAR39; VAR6++) {
+if (VAR3->VAR14[VAR6].VAR42 == VAR9) {
+VAR5->VAR69 = &VAR3->VAR14[VAR6];
+break;
+}
+}
+if (VAR5->VAR69 == NULL) {
+VAR5->VAR28 = VAR70;
+VAR5->VAR34 = VAR9;
+return (VAR21);
+}
+
+if (VAR10 >= VAR5->VAR69->VAR71) {
+VAR5->VAR28 = VAR72;
+VAR5->VAR34 = VAR10;
+return (VAR21);
+}
+
+VAR5->VAR73 = VAR9;
+VAR5->VAR74 = VAR10;
+VAR5->VAR75 = VAR11;
+VAR5->VAR76 = &VAR5->VAR69->VAR77[VAR10];
+VAR5->VAR78 = &VAR5->VAR69->VAR79[VAR10];
+
+return (VAR43);
+}

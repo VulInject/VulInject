@@ -1,0 +1,76 @@
+static void FUN1(const VAR1 *VAR2, const VAR1 *VAR3, VAR1 *VAR4, int32_t VAR5)
+{
+    const int16_t VAR6 = 0xfb01;
+    const int16_t VAR7 = 0x1414;
+    const int16_t VAR8 = 0x1fb;
+    const VAR1 *VAR9 = VAR2;
+    const VAR1 *VAR10 = VAR3;
+    VAR1 *VAR11 = VAR4;
+    uint32_t VAR12, VAR13;
+    uint64_t VAR14, VAR15, VAR16, VAR17;
+    v16u8 VAR18, VAR19, VAR20 = {0}, VAR21 = {0};
+    v16i8 VAR22, VAR23, VAR24, VAR25, VAR26, VAR27, VAR28;
+    v16i8 VAR29, VAR30, VAR31, VAR32, VAR33, VAR34, VAR35;
+    v16i8 VAR36, VAR37;
+    v16i8 VAR38, VAR39, VAR40, VAR41, VAR42;
+    v16i8 VAR43, VAR44, VAR45, VAR46, VAR47, VAR48;
+    v8i16 VAR49, VAR50, VAR51, VAR52, VAR53, VAR54, VAR55;
+    v8i16 VAR56, VAR57, VAR58, VAR59, VAR60;
+    VAR46 = (VAR61)FUN2(VAR6);
+    VAR47 = (VAR61)FUN2(VAR7);
+    VAR48 = (VAR61)FUN2(VAR8);
+    FUN3(&VAR62[0], 16, VAR26, VAR27, VAR28);
+    for (VAR12 = 2; VAR12--;)
+    {
+        VAR2 = VAR9;
+        VAR3 = VAR10;
+        VAR4 = VAR11;
+        FUN4(VAR3, VAR5, VAR29, VAR30, VAR31, VAR32, VAR33);
+        VAR3 += (5 * VAR5);
+        FUN5(VAR29, VAR30, VAR31, VAR32, VAR33);
+        for (VAR13 = 4; VAR13--;)
+        {
+            FUN6(VAR2, VAR5, VAR22, VAR23, VAR24, VAR25);
+            FUN7(VAR22, VAR23, VAR24, VAR25);
+            VAR2 += (4 * VAR5);
+            VAR49 = FUN8(VAR22, VAR22, VAR26, VAR27, VAR28);
+            VAR50 = FUN8(VAR23, VAR23, VAR26, VAR27, VAR28);
+            VAR51 = FUN8(VAR24, VAR24, VAR26, VAR27, VAR28);
+            VAR52 = FUN8(VAR25, VAR25, VAR26, VAR27, VAR28);
+            FUN9(VAR49, VAR50, VAR51, VAR52, 5);
+            FUN10(VAR49, VAR50, VAR51, VAR52, 7);
+            FUN6(VAR3, VAR5, VAR34, VAR35, VAR36, VAR37);
+            VAR3 += (4 * VAR5);
+            FUN7(VAR34, VAR35, VAR36, VAR37);
+            FUN11(VAR30, VAR29, VAR31, VAR30, VAR32, VAR31, VAR33, VAR32, VAR38, VAR39, VAR40, VAR41);
+            FUN11(VAR34, VAR33, VAR35, VAR34, VAR36, VAR35, VAR37, VAR36, VAR42, VAR43, VAR44, VAR45);
+            VAR53 = FUN12(VAR38, VAR40, VAR42, VAR46, VAR47, VAR48);
+            VAR54 = FUN12(VAR39, VAR41, VAR43, VAR46, VAR47, VAR48);
+            VAR55 = FUN12(VAR40, VAR42, VAR44, VAR46, VAR47, VAR48);
+            VAR56 = FUN12(VAR41, VAR43, VAR45, VAR46, VAR47, VAR48);
+            FUN9(VAR53, VAR54, VAR55, VAR56, 5);
+            FUN10(VAR53, VAR54, VAR55, VAR56, 7);
+            VAR57 = FUN13((VAR49 + VAR53), 1);
+            VAR58 = FUN13((VAR50 + VAR54), 1);
+            VAR59 = FUN13((VAR51 + VAR55), 1);
+            VAR60 = FUN13((VAR52 + VAR56), 1);
+            FUN14(VAR4, VAR5, VAR14, VAR15, VAR16, VAR17);
+            FUN15(VAR14, VAR15, VAR20);
+            FUN15(VAR16, VAR17, VAR21);
+            FUN10(VAR57, VAR58, VAR59, VAR60, 7);
+            VAR18 = FUN16(VAR57, VAR58);
+            VAR19 = FUN16(VAR59, VAR60);
+            FUN17(VAR18, VAR20, VAR19, VAR21, VAR20, VAR21);
+            FUN18(VAR20, VAR21, VAR4, VAR5);
+            VAR4 += (4 * VAR5);
+            VAR29 = VAR33;
+            VAR30 = VAR34;
+            VAR31 = VAR35;
+            VAR32 = VAR36;
+            VAR33 = VAR37;
+        }
+        VAR9 += 8;
+        VAR10 += 8;
+        VAR11 += 8;
+    }
+}

@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 , const void * VAR3 ) { VAR4 * VAR5 = NULL ; double VAR6 = 0 ; int VAR7 ; uint64_t VAR8 ; VAR9 * VAR10 ; VAR10 = FUN2 ( VAR2 , "" ) ; FUN3 ( VAR10 , NULL , & VAR6 , & VAR11 ) ; FUN4 ( VAR6 , == , - 18446744073709552e3 ) ; FUN5 ( VAR10 , NULL , & VAR7 , & VAR5 ) ; FUN6 ( & VAR5 ) ; FUN7 ( VAR10 , NULL , & VAR8 , & VAR5 ) ; FUN6 ( & VAR5 ) ; }

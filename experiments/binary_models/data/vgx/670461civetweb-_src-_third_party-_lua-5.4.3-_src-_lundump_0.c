@@ -1,0 +1,21 @@
+static VAR1 *FUN1 (VAR2 *VAR3, VAR4 *VAR5) {
+VAR6 *VAR7 = VAR3->VAR7;
+VAR1 *VAR8;
+size_t VAR9 = FUN2(VAR3);
+if (VAR9 == 0)  
+return NULL;
+else if (--VAR9 <= VAR10) {  
+char VAR11[VAR10];
+FUN3(VAR3, VAR11, VAR9);  
+VAR8 = FUN4(VAR7, VAR11, VAR9);  
+}
+else {  
+VAR8 = FUN5(VAR7, VAR9);  
+FUN6(VAR7, VAR7->VAR12, VAR8);  
+FUN7(VAR7);
+FUN3(VAR3, FUN8(VAR8), VAR9);  
+VAR7->VAR12--;  
+}
+FUN9(VAR7, VAR5, VAR8);
+return VAR8;
+}

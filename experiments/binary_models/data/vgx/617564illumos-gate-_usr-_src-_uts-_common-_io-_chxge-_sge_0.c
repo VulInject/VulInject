@@ -1,0 +1,48 @@
+static VAR1
+FUN1(VAR2 *VAR3, int VAR4)
+{
+VAR5 *VAR6;
+uint32_t VAR7;
+uint32_t VAR8;
+
+VAR9 *VAR10 = (VAR9 *)(VAR3->VAR11 + VAR4);
+uint32_t VAR12;
+int VAR13 = FUN2(VAR10);
+struct VAR14 *VAR15 = (struct VAR14 *)(VAR3->VAR11 + VAR4 + VAR13);
+VAR16 *VAR17;
+int VAR18;
+
+VAR6 = (VAR5 *)&VAR10->VAR19;
+VAR7 =  ((VAR20)(VAR6[0]) << 24) | ((VAR20)(VAR6[1]) << 16) |
+((VAR20)(VAR6[2]) << 8) | (VAR20)(VAR6[3]);
+
+VAR6 = (VAR5 *)&VAR10->VAR21;
+VAR8 =  ((VAR20)(VAR6[0]) << 24) | ((VAR20)(VAR6[1]) << 16) |
+((VAR20)(VAR6[2]) << 8) | (VAR20)(VAR6[3]);
+
+VAR12 = (VAR1)(VAR7 >> 16) +
+(VAR1)(VAR7) +
+(VAR1)(VAR8 >> 16) +
+(VAR1)(VAR8) + (VAR15->VAR22 + FUN3(VAR23));
+
+VAR12 = (VAR1)(VAR12 >> 16) + (VAR1)(VAR12);
+
+if (VAR12 > 0xffff)
+VAR12 -= 0xffff;
+
+VAR15->VAR24 = 0;
+VAR17 = VAR3->VAR11 + VAR4 + VAR13;
+do {
+VAR18 = (VAR3->VAR25 - VAR17);
+VAR12 = FUN4(VAR17, VAR18, VAR12);
+if (VAR12 > 0xffff)
+VAR12 -= 0xffff;
+VAR3 = VAR3->VAR26;
+if (VAR3)
+VAR17 = VAR3->VAR11;
+} while (VAR3);
+
+VAR12 = ~VAR12 & 0xffff;
+
+return (VAR12);
+}

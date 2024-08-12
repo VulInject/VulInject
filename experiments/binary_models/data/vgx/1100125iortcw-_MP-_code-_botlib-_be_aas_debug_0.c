@@ -1,0 +1,20 @@
+void FUN1( vec3_t VAR1, vec3_t VAR2, int VAR3, int VAR4 ) {
+vec3_t VAR5, VAR6, VAR7, VAR8, VAR9 = {0, 0, 1};
+float VAR10;
+
+FUN2( VAR2, VAR1, VAR5 );
+FUN3( VAR5 );
+VAR10 = FUN4( VAR5, VAR9 );
+if ( VAR10 > 0.99 || VAR10 < -0.99 ) {
+FUN5( VAR6, 1, 0, 0 );
+} else { FUN6( VAR5, VAR9, VAR6 );}
+
+FUN7( VAR2, -6, VAR5, VAR7 );
+FUN8( VAR7, VAR8 );
+FUN7( VAR7, 6, VAR6, VAR7 );
+FUN7( VAR8, -6, VAR6, VAR8 );
+
+FUN9( VAR1, VAR2, VAR3 );
+FUN9( VAR7, VAR2, VAR4 );
+FUN9( VAR8, VAR2, VAR4 );
+}

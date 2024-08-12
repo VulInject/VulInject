@@ -1,0 +1,24 @@
+static int FUN1(VAR1 *VAR2, int VAR3, int64_t VAR4, int VAR5)
+{
+VAR6 *VAR7 = VAR2->VAR8[0]; 
+VAR9 *VAR10 = VAR2->VAR11;
+int VAR12;
+
+if (!VAR7->VAR13.VAR14)
+return -1;
+
+VAR12 = FUN2(VAR4, VAR7->VAR15,
+(VAR16){VAR7->VAR13.VAR17, VAR7->VAR13.VAR14});
+FUN3(VAR2, VAR18, ""VAR19"",
+VAR12, VAR4);
+
+if (VAR12 < VAR10->VAR20) {
+if (FUN4(VAR2->VAR21, VAR10->VAR20, VAR22) < 0)
+return -1;
+} else {
+FUN3(VAR2, VAR23, "", VAR12);
+return -1;
+}
+
+return 0;
+}

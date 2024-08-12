@@ -1,0 +1,30 @@
+FUN1 (VAR1         *VAR2,
+VAR3                  *VAR4,
+VAR5           *VAR6,
+VAR7          *VAR8,
+const VAR9  *VAR10,
+VAR11               **VAR12)
+{
+gboolean VAR13 = VAR14;
+const VAR15 *VAR16;
+const VAR15 *VAR17;
+const VAR15 *VAR18;
+
+VAR16 = FUN2 (FUN3 (VAR10, 0));
+VAR17 = FUN2 (FUN3 (VAR10, 1));
+VAR18 = FUN2 (FUN3 (VAR10, 2));
+
+if (VAR13)
+{
+if (VAR4->VAR19 ||
+! FUN4 (VAR4->VAR20, VAR16) ||
+! FUN5 (VAR4, VAR6, VAR8,
+FUN6 (VAR4->VAR21),
+VAR17, VAR16, VAR18,
+NULL))
+VAR13 = VAR22;
+}
+
+return FUN7 (VAR2, VAR13,
+VAR12 ? *VAR12 : NULL);
+}

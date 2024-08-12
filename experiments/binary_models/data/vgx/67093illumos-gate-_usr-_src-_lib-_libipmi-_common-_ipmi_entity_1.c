@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( VAR2 * VAR3 , uint8_t VAR4 , uint8_t VAR5 ) { ipmi_entity_t VAR6 ; VAR7 * VAR8 ; VAR6 . VAR9 = VAR4 ; VAR6 . VAR10 = VAR5 ; if ( ( VAR8 = FUN2 ( VAR3 -> VAR11 , & VAR6 ) ) == NULL ) { ( void ) FUN3 ( VAR3 , VAR12 , NULL ) ; return ( NULL ) ; } return ( & VAR8 -> VAR13 ) ; }

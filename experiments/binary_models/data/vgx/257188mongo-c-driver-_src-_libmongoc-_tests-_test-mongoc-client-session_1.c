@@ -1,0 +1,1 @@
+FUN1 ( ) { const char * VAR1 [ ] { "" "" "" "" "" "" NULL } ; ; const char * * VAR2 ; VAR3 * VAR4 ; bson_error_t VAR5 ; bool VAR6 ; FUN2 ( VAR7 ) ; VAR4 = FUN3 ( ) ; for ( VAR2 = VAR1 ; * VAR2 ; VAR2 ++ ) { VAR6 = FUN4 ( VAR4 , "" , FUN5 ( "" ) , NULL , FUN5 ( * VAR2 ) , NULL , & VAR5 ) ; FUN6 ( ! VAR6 ) ; FUN7 ( VAR5 , VAR8 , VAR9 , "" ) ; } FUN8 ( VAR4 ) ; }

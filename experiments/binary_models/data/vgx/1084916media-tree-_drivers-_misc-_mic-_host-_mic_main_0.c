@@ -1,0 +1,24 @@
+FUN1(VAR1, VAR2);
+
+
+static struct ida VAR3;
+
+
+static int FUN2(struct VAR4 *VAR5)
+{
+VAR5->VAR6 = FUN3(VAR7, VAR8);
+if (!VAR5->VAR6)
+return -VAR9;
+
+VAR5->VAR10 = FUN4(VAR5,
+VAR5->VAR6, VAR7);
+if (FUN5(VAR5->VAR10)) {
+FUN6(VAR5->VAR6);
+FUN7(&VAR5->VAR11->VAR12, "",
+VAR13, VAR14, -VAR9);
+return -VAR9;
+}
+VAR5->VAR15->FUN8(VAR5, VAR16, VAR5->VAR10);
+VAR5->VAR15->FUN8(VAR5, VAR17, VAR5->VAR10 >> 32);
+return 0;
+}

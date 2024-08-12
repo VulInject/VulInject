@@ -1,0 +1,1 @@
+void FUN1 ( const char * VAR1 , struct VAR2 * VAR3 ) { FUN2 ( VAR4 , VAR1 , VAR3 ) ; }

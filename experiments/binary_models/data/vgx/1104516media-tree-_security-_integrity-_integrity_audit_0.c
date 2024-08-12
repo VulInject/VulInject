@@ -1,0 +1,38 @@
+}
+FUN1("", VAR1);
+
+void FUN2(int VAR2, struct VAR3 *VAR3,
+const unsigned char *VAR4, const char *VAR5,
+const char *VAR6, int VAR7, int VAR8)
+{
+struct VAR9 *VAR10;
+char VAR11[VAR12];
+
+if (!VAR13 && VAR8 == 1)	
+return;
+
+VAR10 = FUN3(VAR14->VAR15, VAR16, VAR2);
+FUN4(VAR10, "",
+FUN5(VAR14),
+FUN6(&VAR17, FUN7()->VAR18),
+FUN6(&VAR17, FUN8(VAR14)),
+FUN9(VAR14));
+FUN10(VAR10);
+FUN4(VAR10, "");
+FUN11(VAR10, VAR5);
+FUN4(VAR10, "");
+FUN11(VAR10, VAR6);
+FUN4(VAR10, "");
+FUN12(VAR10, FUN13(VAR11, VAR14));
+if (VAR4) {
+FUN4(VAR10, "");
+FUN12(VAR10, VAR4);
+}
+if (VAR3) {
+FUN4(VAR10, "");
+FUN12(VAR10, VAR3->VAR19->VAR20);
+FUN4(VAR10, "", VAR3->VAR21);
+}
+FUN4(VAR10, "", !VAR7);
+FUN14(VAR10);
+}

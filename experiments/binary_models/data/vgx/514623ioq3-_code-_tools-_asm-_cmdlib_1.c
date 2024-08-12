@@ -1,0 +1,1 @@
+void FUN1 ( const char * VAR1 , const char * VAR2 ) { void * VAR3 ; int VAR4 ; VAR4 = FUN2 ( VAR1 , & VAR3 ) ; FUN3 ( VAR2 , NULL ) ; FUN4 ( VAR2 , VAR3 , VAR4 ) ; free ( VAR3 ) ; }

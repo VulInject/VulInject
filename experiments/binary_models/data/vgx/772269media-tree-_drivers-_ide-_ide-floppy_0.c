@@ -1,0 +1,24 @@
+static void FUN1(VAR1 *VAR2,
+struct VAR3 *VAR4, struct VAR5 *VAR6,
+unsigned long VAR7)
+{
+struct VAR8 *VAR9 = VAR2->VAR10;
+int VAR11 = VAR7 / VAR9->VAR12;
+int VAR13 = FUN2(VAR6) / VAR9->VAR12;
+int VAR14 = FUN3(VAR6);
+
+FUN4(VAR15, "", VAR11, VAR13);
+
+FUN5(VAR4);
+VAR4->VAR16[0] = VAR14 == VAR17 ? VAR18 : VAR19;
+FUN6(FUN7(VAR13), (unsigned short *)&VAR4->VAR16[7]);
+FUN6(FUN8(VAR11), (unsigned int *) &VAR4->VAR16[2]);
+
+memcpy(FUN9(VAR6)->VAR14, VAR4->VAR16, 12);
+
+VAR4->VAR6 = VAR6;
+if (VAR14 == VAR20)
+VAR4->VAR21 |= VAR22;
+
+VAR4->VAR21 |= VAR23;
+}

@@ -1,0 +1,90 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    VAR5 *VAR6 = FUN2(VAR2);
+    struct mfi_ctrl_info VAR7;
+    size_t VAR8 = sizeof(VAR7);
+    VAR9 *VAR10;
+    int VAR11 = 0;
+    uint16_t VAR12;
+    memset(&VAR7, 0x0, VAR4->VAR13);
+    if (VAR4->VAR13 < VAR8)
+    {
+        FUN3(VAR4->VAR14, VAR4->VAR13, VAR8);
+        return VAR15;
+    }
+    VAR7.VAR16.VAR17 = FUN4(VAR18);
+    VAR7.VAR16.VAR19 = FUN4(VAR20);
+    VAR7.VAR16.VAR21 = FUN4(VAR18);
+    VAR7.VAR16.VAR22 = FUN4(0x1013);
+    VAR7.VAR23.VAR24 = VAR25;
+    VAR7.VAR19.VAR24 = VAR26;
+    VAR7.VAR19.VAR27 = 8;
+    FUN5(VAR10, &VAR2->VAR28.VAR29.VAR30, VAR31)
+    {
+        VAR32 *VAR33 = FUN6(VAR32, VAR34, VAR10->VAR35);
+        if (VAR11 < 8)
+        {
+            VAR12 = ((VAR33->VAR36 & 0xFF) >> 8) | (VAR33->VAR37 & 0xFF);
+            VAR7.VAR19.VAR38[VAR11] = FUN7(FUN8(VAR12));
+        }
+        VAR11++;
+    }
+    memcpy(VAR7.VAR39, "", 20);
+    snprintf(VAR7.VAR40, 32, "", VAR2->VAR41);
+    snprintf(VAR7.VAR42, 0x60, "", VAR43);
+    memcpy(VAR7.VAR44[0].VAR45, "", 3);
+    memcpy(VAR7.VAR44[0].VAR46, VAR47 "", 9);
+    memcpy(VAR7.VAR44[0].VAR48, "", 11);
+    memcpy(VAR7.VAR44[0].VAR49, "", 8);
+    VAR7.VAR50 = 1;
+    if (VAR6->VAR51)
+    {
+        uint8_t VAR52[32];
+        VAR53 *VAR54;
+        VAR54 = FUN9(&VAR6->VAR55);
+        memcpy(VAR52, VAR54 + 0x41, 31);
+        memcpy(VAR7.VAR44[1].VAR45, "", 4);
+        memcpy(VAR7.VAR44[1].VAR46, VAR52, strlen((const char *)VAR52));
+        VAR7.VAR50++;
+    }
+    VAR7.VAR56 = FUN10(FUN11());
+    VAR7.VAR57 = 32;
+    VAR7.VAR58 = 8;
+    VAR7.VAR59 = VAR60;
+    VAR7.VAR61 = VAR2->VAR62;
+    VAR7.VAR63 = FUN4(VAR2->VAR64);
+    VAR7.VAR65 = FUN4(VAR2->VAR66);
+    VAR7.VAR67 = FUN10(VAR68);
+    VAR7.VAR69 = FUN4(VAR11);
+    VAR7.VAR70 = FUN4(VAR11);
+    VAR7.VAR71 = FUN4(VAR11);
+    VAR7.VAR72 = FUN10(VAR73 | VAR74 | VAR75);
+    VAR7.VAR76 = FUN4(512);
+    VAR7.VAR77 = FUN4(32);
+    VAR7.VAR78 = FUN4(16);
+    VAR7.VAR79 = FUN10(VAR80);
+    VAR7.VAR81 = FUN10(VAR82 | VAR83 | VAR84);
+    VAR7.VAR85 = FUN10(VAR86 | VAR87 | VAR88 | VAR89 | VAR90);
+    VAR7.VAR91 = FUN4(VAR2->VAR66);
+    VAR7.VAR92.VAR93 = 3;
+    VAR7.VAR92.VAR94 = FUN12(VAR68 + 1) - 1;
+    VAR7.VAR95.VAR96 = FUN4(300);
+    VAR7.VAR95.VAR97 = FUN4(16);
+    VAR7.VAR95.VAR98 = FUN4(50);
+    VAR7.VAR95.VAR99 = 30;
+    VAR7.VAR95.VAR100 = 30;
+    VAR7.VAR95.VAR101 = 30;
+    VAR7.VAR95.VAR102 = 30;
+    VAR7.VAR95.VAR103 = 30;
+    VAR7.VAR95.VAR104 = 4;
+    VAR7.VAR95.VAR105 = 2;
+    VAR7.VAR95.VAR106 = 6;
+    VAR7.VAR95.VAR107 = 15;
+    VAR7.VAR95.VAR108 = FUN4(1440);
+    VAR7.VAR95.VAR109 = 1;
+    VAR7.VAR95.VAR110 = FUN10(VAR111);
+    VAR7.VAR112 = FUN10(VAR113 | VAR114);
+    VAR7.VAR115 = FUN10(VAR116 | VAR117 | VAR118);
+    VAR4->VAR13 -= FUN13((VAR53 *)&VAR7, VAR8, &VAR4->VAR119);
+    return VAR120;
+}

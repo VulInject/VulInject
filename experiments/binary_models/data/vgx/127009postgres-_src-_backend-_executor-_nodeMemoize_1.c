@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 ) { Size VAR3 ; VAR4 * VAR5 ; VAR3 = FUN2 ( VAR4 , VAR6 ) + VAR2 -> VAR7 -> VAR8 * sizeof ( VAR9 ) ; VAR5 = FUN3 ( VAR3 ) ; memcpy ( VAR5 , VAR2 -> VAR7 , VAR3 ) ; VAR2 -> VAR7 = VAR5 ; }

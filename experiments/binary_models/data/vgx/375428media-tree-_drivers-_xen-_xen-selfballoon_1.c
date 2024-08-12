@@ -1,0 +1,1 @@
+static ssize_t FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , const char * VAR5 , size_t VAR6 ) { unsigned long VAR7 ; int VAR8 ; if ( ! FUN2 ( VAR9 ) ) { return - VAR10 ; } VAR8 = FUN3 ( VAR5 , 10 , & VAR7 ) ; if ( VAR8 ) { return VAR8 ; } VAR11 = VAR7 ; return VAR6 ; }

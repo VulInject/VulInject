@@ -1,0 +1,65 @@
+int FUN1(struct VAR1 *VAR2)
+{
+size_t VAR3;
+size_t VAR4;
+size_t VAR5;
+
+
+if (VAR2->VAR6.VAR7) {
+VAR2->VAR8 =
+VAR2->VAR6.VAR9;
+return 0;
+}
+
+
+
+VAR3 =
+FUN2(VAR2->VAR6.VAR3,
+FUN3(VAR2));
+
+VAR4 =
+FUN4(VAR2->VAR6.VAR4,
+FUN3(VAR2));
+
+if (VAR4 > VAR3)
+VAR5 =
+(VAR4 - VAR3) /
+FUN3(VAR2);
+else
+return -VAR10;
+
+if (!VAR2->VAR11 ||
+VAR5 < VAR2->VAR11)
+VAR2->VAR11 = VAR5;
+
+VAR2->VAR8 = VAR2->VAR6.VAR9 +
+VAR3;
+
+VAR2->VAR12 = VAR3 / sizeof(VAR13);
+
+VAR2->VAR14 = FUN5(VAR2->VAR8,
+FUN3(VAR2));
+
+if (!VAR2->VAR14)
+return -VAR15;
+
+FUN6("");
+FUN6("",
+(VAR16)VAR2->VAR8);
+
+FUN6("",
+VAR2->VAR12);
+
+FUN6("",
+VAR5);
+
+FUN6("",
+(VAR16)VAR2->VAR8);
+
+FUN6("",
+VAR2->VAR6.VAR4);
+
+FUN6("", VAR2->VAR14);
+
+return 0;
+}

@@ -1,0 +1,91 @@
+static void
+FUN1( VAR1 *VAR2,
+VAR3 *VAR4, int VAR5, int VAR6, VAR7 *VAR8 )
+{
+VAR9                *VAR10, *VAR11;
+VAR1                *VAR12, *VAR13;
+int                        VAR14;
+guint8                     VAR15, VAR16, VAR17;
+cip_simple_request_info_t  VAR18;
+
+FUN2(VAR8->VAR19, VAR20, "");
+
+
+VAR15   = FUN3( VAR4, VAR5 );
+VAR12 = FUN4( VAR2, VAR4, VAR5, 1, VAR21, &VAR11, "" );
+
+
+FUN5( VAR12, VAR22, VAR4, VAR5, 1, VAR23 );
+
+FUN6( VAR11, "",
+FUN7( ( VAR15 & VAR24 ),
+VAR25 , ""),
+FUN8( ( VAR15 & VAR26 )>>7,
+VAR27, "") );
+
+
+FUN5(VAR12, VAR28, VAR4, VAR5, 1, VAR23 );
+
+FUN9(VAR8, &VAR18);
+
+if (VAR15 & VAR26)
+{
+
+
+
+VAR16 = FUN3( VAR4, VAR5+2 );
+VAR17 = FUN3( VAR4, VAR5+3 ) * 2;
+
+
+if( ( VAR6-4-VAR17 ) != 0 )
+{
+VAR13 = FUN4( VAR2, VAR4, VAR5+4+VAR17, VAR6-4-VAR17,
+VAR29, &VAR10, "" );
+
+if( VAR16 == VAR30 )
+{
+
+if (((VAR15 & VAR24) == VAR31) &&
+(VAR18.VAR32 != VAR33) &&
+(VAR18.VAR32 != 0))
+{
+FUN10(VAR4, VAR8, VAR13, VAR5 + 4 + VAR17, &VAR18);
+}
+else
+{
+
+FUN5(VAR13, VAR34,
+VAR4, VAR5+4+VAR17, VAR6-4-VAR17, VAR35);
+}
+}
+else
+{
+
+
+
+FUN5(VAR13, VAR34,
+VAR4, VAR5+4+VAR17, VAR6-4-VAR17, VAR35);
+} 
+
+} 
+
+} 
+else
+{
+
+
+VAR14 = FUN3( VAR4, VAR5+1 )*2;
+
+
+if( (VAR6-VAR14-2) != 0 )
+{
+VAR13 = FUN4( VAR2, VAR4, VAR5+2+VAR14, VAR6-VAR14-2,
+VAR29, NULL, "" );
+FUN5(VAR13, VAR34,
+VAR4, VAR5+2+VAR14, VAR6-VAR14-2, VAR35);
+}
+
+}
+
+FUN11(VAR8, VAR15, VAR25);
+}

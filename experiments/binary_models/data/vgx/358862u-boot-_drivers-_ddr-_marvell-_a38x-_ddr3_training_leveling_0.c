@@ -1,0 +1,109 @@
+int FUN1(u32 VAR1)
+{
+int VAR2;
+u32 VAR3, VAR4, VAR5, VAR6;
+int VAR7 = 0;
+u32 VAR8 = FUN2(VAR1, VAR9);
+struct VAR10 *VAR11 = FUN3();
+
+for (VAR3 = 0; VAR3 <= VAR12 - 1; VAR3++) {
+FUN4(VAR11->VAR13, VAR3);
+VAR7 = 0;
+
+for (VAR4 = 0; VAR4 < VAR8; VAR4++) {
+FUN5(VAR11->VAR14, VAR4);
+VAR15[VAR3][VAR4].VAR16 = 1;
+FUN6(VAR17
+(VAR1, VAR3, VAR18,
+VAR4, VAR19,
+FUN7(VAR20),
+&VAR5));
+FUN8(
+VAR21,
+("",
+VAR5));
+if (VAR22
+(VAR1, VAR3, VAR4) == VAR23) {
+FUN8(
+VAR21,
+("",
+VAR3, VAR4));
+continue;
+}
+
+
+VAR2 = 5;
+FUN6(VAR24
+(VAR1, VAR18, VAR3,
+VAR18, VAR4, VAR19,
+FUN7(VAR20),
+VAR5 + VAR2));
+FUN6(VAR17
+(VAR1, VAR3, VAR18,
+VAR4, VAR19,
+FUN7(VAR20),
+&VAR6));
+FUN8(
+VAR21,
+("",
+VAR2, VAR6));
+
+if (VAR22
+(VAR1, VAR3, VAR4) == VAR23) {
+FUN8(
+VAR21,
+("",
+VAR3, VAR4, VAR2));
+continue;
+}
+
+
+VAR2 = -5;
+FUN6(VAR24
+(VAR1, VAR18, VAR3,
+VAR18, VAR4, VAR19,
+FUN7(VAR20),
+VAR5 + VAR2));
+FUN6(VAR17
+(VAR1, VAR3, VAR18,
+VAR4, VAR19,
+FUN7(VAR20),
+&VAR6));
+FUN8(
+VAR21,
+("",
+VAR2, VAR6));
+if (VAR22
+(VAR1, VAR3, VAR4) == VAR23) {
+FUN8(
+VAR21,
+("",
+VAR3, VAR4, VAR2));
+continue;
+} else {
+FUN8(
+VAR25,
+("",
+VAR3, VAR4));
+VAR7 = 1;
+}
+}
+
+if (VAR7 == 1) {
+FUN8(VAR25,
+("",
+VAR20, VAR3));
+VAR26[VAR27][VAR3] = VAR28;
+} else {
+VAR26[VAR27][VAR3] = VAR29;
+}
+}
+
+for (VAR3 = 0; VAR3 <= VAR12 - 1; VAR3++) {
+FUN4(VAR11->VAR13, VAR3);
+if (VAR26[VAR27][VAR3] == VAR28)
+return VAR30;
+}
+
+return VAR23;
+}

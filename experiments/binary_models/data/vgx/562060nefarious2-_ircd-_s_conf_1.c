@@ -1,0 +1,1 @@
+int FUN1 ( void ) { if ( FUN2 ( ) ) { if ( VAR1 ) { return 0 ; } if ( 0 == VAR2 . VAR3 ) { FUN3 ( VAR2 . VAR3 , "" ) ; } if ( 0 == VAR2 . VAR4 ) { FUN3 ( VAR2 . VAR4 , "" ) ; } if ( 0 == VAR2 . VAR5 ) { FUN3 ( VAR2 . VAR5 , "" ) ; } return 1 ; } return 0 ; }

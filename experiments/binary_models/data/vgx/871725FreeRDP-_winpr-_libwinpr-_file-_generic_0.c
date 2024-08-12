@@ -1,0 +1,11 @@
+VAR1 FUN1(LPCSTR VAR2)
+{
+int VAR3 = FUN2(VAR2);
+
+if (VAR3 != 0)
+FUN3(FUN4(VAR4));
+else
+FUN3(VAR5);
+
+return VAR3 == 0;
+}

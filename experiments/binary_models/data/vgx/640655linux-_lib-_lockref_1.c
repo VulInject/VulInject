@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR1 ) { int VAR2 ; FUN2 ( 1 0 , 1 ) FUN3 ( & VAR1 -> VAR3 ) ; if ( VAR1 -> VAR4 > 1 ) { VAR1 -> VAR4 -- ; VAR2 = 1 ; } FUN4 ( & VAR1 -> VAR3 ) ; return VAR2 ; }

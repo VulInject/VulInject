@@ -1,0 +1,8 @@
+void FUN1(unsigned VAR1, uint32_t VAR2, uint32_t VAR3,
+TCGv_i64 VAR4, uint32_t VAR5, uint32_t VAR6)
+{
+TCGv_i64 VAR7 = FUN2();
+FUN3(VAR1, VAR7, VAR4);
+FUN4(VAR2, VAR3, VAR5, VAR6, VAR7, &VAR8);
+FUN5(VAR7);
+}

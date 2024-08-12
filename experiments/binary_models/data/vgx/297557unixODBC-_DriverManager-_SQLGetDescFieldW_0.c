@@ -1,0 +1,297 @@
+VAR1 FUN1( SQLHDESC VAR2,
+SQLSMALLINT VAR3, 
+SQLSMALLINT VAR4,
+SQLPOINTER VAR5, 
+SQLINTEGER VAR6,
+VAR7 *VAR8 )
+{
+
+DMHDESC VAR9 = (VAR10) VAR2;
+SQLRETURN VAR11;
+SQLCHAR VAR12[ 100 + VAR13 ];
+int VAR14 = 0;
+
+
+
+if ( !FUN2( VAR9 ))
+{
+FUN3( VAR15, 
+VAR16, 
+VAR17, 
+VAR17, 
+"" );
+
+{
+DMHDESC VAR18;
+
+VAR18 = FUN4( VAR9, VAR19 );
+
+if ( VAR18 ) {
+FUN3( VAR15, 
+VAR16, 
+VAR17, 
+VAR17, 
+"" );
+
+if ( FUN5( VAR18 -> VAR20 ))
+{
+FUN3( VAR15, 
+VAR16, 
+VAR17, 
+VAR17, 
+"" );
+
+return  FUN6( VAR18 -> VAR20,
+VAR9,
+VAR3,
+VAR4,
+VAR5,
+VAR6,
+VAR8 );
+}
+}
+}
+return VAR21;
+}
+
+FUN7( VAR9 );
+
+if ( VAR22.VAR23 )
+{
+sprintf( VAR9 -> VAR24, "\VAR25\VAR26\VAR27:\
+\VAR25\VAR26\VAR26\VAR28 = %VAR29\
+\VAR25\VAR26\VAR26\tRec VAR30 = %VAR31\
+\VAR25\VAR26\VAR26\tField VAR32 = %VAR33\
+\VAR25\VAR26\VAR26\VAR34 = %VAR29\
+\VAR25\VAR26\VAR26\tBuffer VAR35 = %VAR31\
+\VAR25\VAR26\VAR26\VAR36 = %VAR29",
+VAR9,
+VAR3,
+FUN8( VAR12, VAR4 ),
+VAR5, 
+(int)VAR6,
+(void*)VAR8 );
+
+FUN3( VAR15, 
+VAR16, 
+VAR17, 
+VAR17, 
+VAR9 -> VAR24 );
+}
+
+FUN9( VAR19, VAR9 );
+
+if ( VAR9 -> VAR20 -> VAR37 < VAR38 )
+{
+FUN3( VAR15, 
+VAR16, 
+VAR17, 
+VAR17, 
+"" );
+
+FUN10( &VAR9 -> VAR39,
+VAR40, NULL,
+VAR9 -> VAR20 -> VAR41 -> VAR42 );
+
+return FUN11( VAR19, VAR9, VAR43 );
+}
+
+
+
+if( FUN12( VAR9, VAR44 ) ||
+FUN12( VAR9, VAR45 ) ||
+FUN12( VAR9, VAR46 ) ||
+FUN12( VAR9, VAR47 ) ||
+FUN12( VAR9, VAR48 ) ||
+FUN12( VAR9, VAR49 ) ||
+FUN12( VAR9, VAR50 ) ||
+FUN12( VAR9, VAR51 )) {
+
+FUN3( VAR15, 
+VAR16, 
+VAR17, 
+VAR17, 
+"" );
+
+FUN10( &VAR9 -> VAR39,
+VAR40, NULL,
+VAR9 -> VAR20 -> VAR41 -> VAR42 );
+
+return FUN11( VAR19, VAR9, VAR43 );
+}
+
+if( FUN13( VAR9, VAR52 )) {
+
+FUN3( VAR15, 
+VAR16, 
+VAR17, 
+VAR17, 
+"" );
+
+FUN10( &VAR9 -> VAR39,
+VAR53, NULL,
+VAR9 -> VAR20 -> VAR41 -> VAR42 );
+
+return FUN11( VAR19, VAR9, VAR43 );
+}
+
+if ( VAR3 < 0 )
+{
+FUN10( &VAR9 -> VAR39,
+VAR54, NULL,
+VAR9 -> VAR20 -> VAR41 -> VAR42 );
+
+return FUN11( VAR19, VAR9, VAR43 );
+}
+
+switch ( VAR4 )
+{
+
+case VAR55:
+case VAR56:
+case VAR57:
+case VAR58:
+case VAR59:
+case VAR60:
+case VAR61:
+case VAR62:
+case VAR63:
+case VAR64:
+case VAR65:
+case VAR66:
+case VAR67:
+case VAR68:
+case VAR69:
+case VAR70:
+case VAR71:
+case VAR72:
+case VAR73:
+case VAR74:
+case VAR75:
+case VAR76:
+case VAR77:
+case VAR78:
+case VAR79:
+case VAR80:
+case VAR81:
+case VAR82:
+case VAR83:
+case VAR84:
+VAR14 = 0;
+break;
+
+case VAR85:
+case VAR86:
+case VAR87:
+case VAR88:
+case VAR89:
+case VAR90:
+case VAR91:
+case VAR92:
+case VAR93:
+case VAR94:
+case VAR95:
+VAR14 = 1;
+break;
+default:
+VAR14 = VAR6 != VAR96 && VAR6 != VAR97
+&& VAR6 != VAR98 && VAR6 != VAR99 &&
+VAR6 != VAR100;
+}
+
+if ( VAR14 && VAR6 < 0 )
+{
+FUN10( &VAR9 -> VAR39,
+VAR101, NULL,
+VAR9 -> VAR20 -> VAR41 -> VAR42 );
+
+return FUN11( VAR19, VAR9, VAR43 );
+}
+
+if ( VAR9 -> VAR20 -> VAR102 ||
+FUN5( VAR9 -> VAR20 ))
+{
+if ( !FUN5( VAR9 -> VAR20 ))
+{
+FUN3( VAR15, 
+VAR16, 
+VAR17, 
+VAR17, 
+"" );
+
+FUN10( &VAR9 -> VAR39,
+VAR103, NULL,
+VAR9 -> VAR20 -> VAR41 -> VAR42 );
+
+return FUN11( VAR19, VAR9, VAR43 );
+}
+
+VAR11 = FUN6( VAR9 -> VAR20,
+VAR9 -> VAR104,
+VAR3, 
+VAR4,
+VAR5, 
+VAR6,
+VAR8 );
+}
+else
+{
+VAR105 *VAR106 = NULL;
+
+if ( !FUN14( VAR9 -> VAR20 ))
+{
+FUN3( VAR15, 
+VAR16, 
+VAR17, 
+VAR17, 
+"" );
+
+FUN10( &VAR9 -> VAR39,
+VAR103, NULL,
+VAR9 -> VAR20 -> VAR41 -> VAR42 );
+
+return FUN11( VAR19, VAR9, VAR43 );
+}
+
+if ( VAR14 && VAR6 > 0 && VAR5 )
+{
+VAR106 = malloc( VAR6 + 1 );
+}
+
+VAR11 = FUN15( VAR9 -> VAR20,
+VAR9 -> VAR104,
+VAR3, 
+VAR4,
+VAR106 ? VAR106 : VAR5, 
+VAR6,
+VAR8 );
+
+if ( VAR14 && FUN16( VAR11 ) && VAR5 )
+{
+if ( VAR106 && VAR6 > 0)
+{
+FUN17( VAR5, (char*) VAR106, VAR107, VAR9 -> VAR20, NULL );
+}
+}
+
+if ( VAR106 )
+{
+free( VAR106 );
+}
+}
+
+if ( VAR22.VAR23 )
+{
+sprintf( VAR9 -> VAR24, 
+"",
+FUN18( VAR11, VAR12 ));
+
+FUN3( VAR15, 
+VAR16, 
+VAR17, 
+VAR17, 
+VAR9 -> VAR24 );
+}
+
+return FUN19( VAR19, VAR9, VAR11, VAR108 );
+}

@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , size_t VAR3 ) { if ( VAR2 -> VAR4 != & VAR2 -> VAR5 ) { int VAR6 = FUN2 ( VAR3 , VAR7 ) , VAR8 ; for ( VAR8 = 0 ; VAR8 < VAR6 ; VAR8 ++ ) { FUN3 ( VAR2 -> VAR4 [ VAR8 ] ) ; } FUN4 ( VAR2 -> VAR9 ) ; } else { FUN3 ( VAR2 -> VAR5 ) ; } }

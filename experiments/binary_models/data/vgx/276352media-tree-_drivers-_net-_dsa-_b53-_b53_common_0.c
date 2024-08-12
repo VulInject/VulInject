@@ -1,0 +1,39 @@
+int FUN1(struct VAR1 *VAR2, int VAR3,
+struct VAR4 *VAR5,
+int (*VAR6)(struct VAR7 *VAR8))
+{
+struct VAR9 *VAR10 = VAR2->VAR11;
+u16 VAR12, VAR13 = 0, VAR14;
+struct VAR15 *VAR16;
+int VAR17 = 0;
+
+if (FUN2(VAR10) || FUN3(VAR10))
+VAR13 = 1;
+
+FUN4(VAR10, VAR18, FUN5(VAR3), &VAR14);
+
+
+for (VAR12 = VAR13; VAR12 < VAR10->VAR19; VAR12++) {
+VAR16 = &VAR10->VAR20[VAR12];
+
+if (!VAR16->VAR21)
+continue;
+
+if (!(VAR16->VAR22 & FUN6(VAR3)))
+continue;
+
+VAR5->VAR23 = VAR5->VAR24 = VAR12;
+VAR5->VAR25 = 0;
+
+if (VAR16->VAR26 & FUN6(VAR3))
+VAR5->VAR25 |= VAR27;
+if (VAR14 == VAR12)
+VAR5->VAR25 |= VAR28;
+
+VAR17 = FUN7(&VAR5->VAR8);
+if (VAR17)
+break;
+}
+
+return VAR17;
+}

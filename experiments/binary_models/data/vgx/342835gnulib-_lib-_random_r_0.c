@@ -1,0 +1,52 @@
+FUN1 (unsigned int VAR1, char *VAR2, size_t VAR3,
+struct VAR4 *VAR5)
+{
+if (VAR5 == NULL)
+goto VAR6;
+
+VAR7 *VAR8 = VAR5->VAR9;
+if (VAR8 != NULL)
+{
+int VAR10 = VAR5->VAR11;
+FUN2 (&VAR8[-1],
+(VAR10 == VAR12
+? VAR12
+: (VAR13 * (VAR5->VAR14 - VAR8)) + VAR10));
+}
+
+int VAR15;
+if (VAR3 >= VAR16)
+VAR15 = VAR3 < VAR17 ? VAR18 : VAR19;
+else if (VAR3 < VAR20)
+{
+if (VAR3 < VAR21)
+goto VAR6;
+
+VAR15 = VAR12;
+}
+else
+VAR15 = VAR3 < VAR22 ? VAR23 : VAR24;
+
+int VAR25 = VAR26.VAR27[VAR15];
+int VAR28 = VAR26.VAR29[VAR15];
+
+VAR5->VAR11 = VAR15;
+VAR5->VAR30 = VAR28;
+VAR5->VAR31 = VAR25;
+VAR7 *VAR9 = &((VAR7 *) VAR2)[1]; 
+
+VAR5->VAR32 = &VAR9[VAR25];
+
+VAR5->VAR9 = VAR9;
+
+FUN3 (VAR1, VAR5);
+
+FUN2 (&VAR9[-1],
+VAR15 == VAR12 ? VAR12 : (VAR5->VAR14 - VAR9) * VAR13 + VAR15);
+
+return 0;
+
+VAR6:
+FUN4 (VAR33);
+return -1;
+}

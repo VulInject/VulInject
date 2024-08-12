@@ -1,0 +1,1 @@
+int FUN1 ( const struct VAR1 * VAR1 , struct VAR2 * VAR3 , int VAR4 , int VAR5 ) { struct VAR2 * VAR6 = VAR3 ; for ( ; ; ) { if ( VAR6 == & VAR7 ) { return - VAR8 ; } if ( ( VAR6 -> VAR9 == VAR1 -> VAR10 ) && FUN2 ( VAR6 -> VAR11 , VAR1 -> VAR12 ) ) { return 0 ; } VAR6 = VAR6 -> VAR9 ; } }

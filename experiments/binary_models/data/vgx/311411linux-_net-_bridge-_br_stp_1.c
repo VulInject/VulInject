@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , unsigned long VAR3 ) { cfs_time_t VAR4 = FUN2 ( VAR3 ) ; if ( FUN3 ( VAR5 || VAR4 ) VAR6 ) { return - VAR7 ; } FUN4 ( & VAR2 -> VAR8 ) ; VAR2 -> VAR9 = VAR4 ; if ( FUN5 ( VAR2 ) ) { VAR2 -> VAR10 = VAR2 -> VAR9 ; } FUN6 ( & VAR2 -> VAR8 ) ; return 0 ; }

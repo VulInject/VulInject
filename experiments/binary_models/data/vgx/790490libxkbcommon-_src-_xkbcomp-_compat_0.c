@@ -1,0 +1,43 @@
+static void
+FUN1(VAR1 *VAR2, VAR1 *VAR3,
+enum merge_mode VAR4)
+{
+if (VAR3->VAR5 > 0) {
+VAR2->VAR5 += VAR3->VAR5;
+return;
+}
+
+VAR2->VAR6 = VAR3->VAR6;
+
+if (VAR2->VAR7 == NULL) {
+VAR2->VAR7 = VAR3->VAR7;
+VAR3->VAR7 = NULL;
+}
+
+if (FUN2(VAR2->VAR8)) {
+VAR2->VAR8 = VAR3->VAR8;
+FUN3(VAR3->VAR8);
+}
+else {
+VAR9 *VAR10;
+FUN4(VAR10, VAR3->VAR8) {
+VAR10->VAR4 = (VAR4 == VAR11 ? VAR10->VAR4 : VAR4);
+if (!FUN5(VAR2, VAR10, false))
+VAR2->VAR5++;
+}
+}
+
+if (VAR2->VAR12 == 0) {
+memcpy(VAR2->VAR13, VAR3->VAR13, sizeof(*VAR3->VAR13) * VAR3->VAR12);
+VAR2->VAR12 = VAR3->VAR12;
+VAR3->VAR12 = 0;
+}
+else {
+for (xkb_led_index_t VAR14 = 0; VAR14 < VAR3->VAR12; VAR14++) {
+VAR15 *VAR16 = &VAR3->VAR13[VAR14];
+VAR16->VAR4 = (VAR4 == VAR11 ? VAR16->VAR4 : VAR4);
+if (!FUN6(VAR2, VAR16, false))
+VAR2->VAR5++;
+}
+}
+}

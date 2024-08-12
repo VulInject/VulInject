@@ -1,0 +1,71 @@
+static void
+FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = VAR2->VAR7->VAR6;
+struct VAR8  *VAR9 = &VAR6->VAR10->VAR9;
+struct bfa_port_attr_s VAR11;
+struct bfa_lport_attr_s VAR12;
+
+memset(VAR4, 0, sizeof(struct VAR3));
+
+
+FUN2(VAR6->VAR10->VAR13, &VAR11);
+
+
+FUN3(VAR14, VAR4->VAR15);
+
+
+switch (VAR11.VAR16) {
+case VAR17:
+VAR4->VAR18 =
+FUN4(VAR19);
+break;
+
+case VAR20:
+VAR4->VAR18 =
+FUN4(VAR21);
+break;
+
+case VAR22:
+VAR4->VAR18 =
+FUN4(VAR23);
+break;
+
+case VAR24:
+VAR4->VAR18 =
+FUN4(VAR25);
+break;
+
+default:
+FUN5(VAR6->VAR10, VAR11.VAR16);
+}
+
+
+VAR4->VAR26 = FUN4(
+FUN6(VAR11.VAR27));
+
+
+VAR4->VAR28 = FUN4(VAR11.VAR29.VAR30);
+
+
+strncpy(VAR4->VAR31, (char *)VAR9->VAR31,
+sizeof(VAR4->VAR31));
+
+
+strncpy(VAR4->VAR32, (char *)VAR9->VAR33,
+sizeof(VAR4->VAR32));
+
+VAR4->VAR34 = FUN7(VAR6);
+VAR4->VAR35 = FUN8(VAR6);
+
+strncpy(VAR4->VAR36.VAR37,
+(char *)&FUN9(VAR6), VAR38);
+FUN10(VAR6, &VAR12);
+VAR4->VAR39 = FUN4(VAR12.VAR39);
+VAR4->VAR40 = VAR11.VAR41;
+VAR4->VAR42 = VAR6->VAR43->VAR44->VAR45;
+FUN3(VAR14, VAR4->VAR46);
+VAR4->VAR47 = FUN4(VAR11.VAR47);
+VAR4->VAR48 = FUN4(VAR6->VAR49);
+}

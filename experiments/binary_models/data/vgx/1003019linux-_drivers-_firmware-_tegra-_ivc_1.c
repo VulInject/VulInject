@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , const struct VAR3 * VAR4 , unsigned int VAR5 , struct VAR3 * VAR6 ) { size_t VAR7 = sizeof ( VAR8 ) + VAR2 -> VAR9 * VAR5 ; * VAR6 = FUN2 ( VAR4 , VAR7 ) ; return 0 ; }

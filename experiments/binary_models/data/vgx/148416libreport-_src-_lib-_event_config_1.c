@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( const char * VAR2 ) { if ( ! VAR3 ) { return NULL ; } if ( VAR4 ) { char * VAR5 = FUN2 ( VAR4 , VAR2 ) ; if ( VAR5 ) { VAR2 = VAR5 ; } } return FUN2 ( VAR3 , VAR2 ) ; }

@@ -1,0 +1,1 @@
+static u8 FUN1 ( const struct VAR1 * VAR2 , int VAR3 ) { struct VAR4 * VAR5 = VAR2 -> VAR2 ; cfs_time_t VAR6 ; u8 VAR7 ; FUN2 ( & VAR5 -> VAR8 , VAR6 ) ; FUN3 ( VAR3 , VAR2 -> VAR9 + 0 ) ; VAR7 = FUN4 ( VAR2 -> VAR9 + 2 ) ; FUN5 ( & VAR5 -> VAR8 , VAR6 ) ; return VAR7 ; }

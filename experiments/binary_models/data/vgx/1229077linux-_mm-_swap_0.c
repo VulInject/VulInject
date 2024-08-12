@@ -1,0 +1,15 @@
+static void FUN1(struct VAR1 *VAR1, struct VAR2 *VAR2)
+{
+if (!FUN2(VAR2) && !FUN3(VAR2)) {
+long VAR3 = FUN4(VAR2);
+
+FUN5(VAR1, VAR2);
+FUN6(VAR2);
+FUN7(VAR1, VAR2);
+FUN8(VAR2);
+
+FUN9(VAR4, VAR3);
+FUN10(FUN11(VAR1), VAR4,
+VAR3);
+}
+}

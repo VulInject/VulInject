@@ -1,0 +1,25 @@
+static void FUN1(VAR1* VAR2, uint32_t VAR3)
+{
+VAR4* VAR5 = FUN2(VAR2, VAR4, VAR6);
+VAR7* VAR8 = VAR5->VAR9;
+uint64_t VAR10;
+
+if (read(VAR5->VAR11, &VAR10, sizeof VAR10) != sizeof VAR10)
+
+return;
+
+if (VAR8)
+{
+VAR12* VAR13;
+
+VAR13 = (VAR12*)FUN3(VAR5->VAR14, VAR15);
+if (!VAR13)
+return;
+
+VAR13->VAR8 = VAR8;
+VAR13->VAR16 = VAR5->VAR17;
+VAR13->VAR18 = VAR5->VAR19;
+VAR13->VAR20 = true;
+VAR13->VAR21 = true;
+}
+}

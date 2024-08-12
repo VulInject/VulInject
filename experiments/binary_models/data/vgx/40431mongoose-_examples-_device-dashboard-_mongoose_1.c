@@ -1,0 +1,1 @@
+int FUN1 ( const struct mg_str VAR1 , const struct mg_str VAR2 ) { size_t VAR3 = 0 ; while ( VAR3 < VAR1 . VAR4 && VAR3 < VAR2 . VAR4 ) { int VAR5 = VAR1 . VAR6 [ VAR3 ] ; int VAR7 = VAR2 . VAR6 [ VAR3 ] ; if ( VAR5 > VAR7 ) { return 1 ; } VAR3 ++ ; } if ( VAR3 < VAR1 . VAR4 ) { return 1 ; } if ( VAR3 < VAR2 . VAR4 ) { return - 1 ; } return 0 ; }

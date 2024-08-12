@@ -1,0 +1,1 @@
+static int FUN1 ( const VAR1 * VAR2 , void * VAR3 ) { int * VAR4 = VAR3 ; ( * VAR4 ) ++ ; FUN2 ( VAR2 , NULL ) ; return ( * VAR4 == 1000 ) ?321 : 0 ; }

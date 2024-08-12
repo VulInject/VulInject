@@ -1,0 +1,27 @@
+static void FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+__u64 VAR5 = VAR4->VAR6.VAR7;
+__u32 VAR8 = VAR4->VAR6.VAR9 / VAR10 / 16; 
+__u64 VAR11;
+
+
+
+VAR11 = (VAR5 << VAR12) |
+(VAR8 << VAR13) |
+(VAR2->VAR14 < 0 ? 0 : VAR2->VAR14);
+
+if (VAR11 > VAR2->VAR15) {
+
+VAR2->VAR15 = VAR11;
+} else {
+FUN2(FUN3(VAR2) < VAR13);
+
+VAR2->VAR15 += (1ULL << FUN3(VAR2));
+VAR11 = VAR2->VAR15;
+}
+
+VAR4->VAR16 = VAR11;
+
+FUN4(&VAR4->VAR17, &VAR2->VAR18);
+}

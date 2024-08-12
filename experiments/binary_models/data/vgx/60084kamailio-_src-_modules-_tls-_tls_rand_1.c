@@ -1,0 +1,1 @@
+void FUN1 ( const void * VAR1 , int VAR2 ) { FUN2 ( ) ; if ( VAR3 == 0 || VAR4 == 0 ) { return ; } FUN3 ( VAR3 ) ; VAR4 -> FUN4 ( VAR1 , VAR2 ) ; FUN5 ( VAR3 ) ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( fuse_req_t VAR1 , struct VAR2 * VAR3 , bool VAR4 , const char * VAR5 , bool * VAR6 ) { int VAR7 ; bool VAR8 ; assert ( VAR5 ) ; VAR7 = FUN2 ( VAR5 , & VAR8 ) ; VAR7 = FUN3 ( VAR1 , VAR3 , VAR4 ) ; if ( VAR7 ) { if ( VAR8 ) { if ( FUN4 ( VAR5 ) ) { FUN5 ( VAR9 , "" , VAR5 ) ; } } } if ( VAR6 ) { * VAR6 = VAR8 ; } return VAR7 ; }

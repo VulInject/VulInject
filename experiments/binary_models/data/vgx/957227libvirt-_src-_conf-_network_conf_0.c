@@ -1,0 +1,103 @@
+static int
+FUN1(VAR1 *VAR2,
+const VAR3 *VAR4)
+{
+size_t VAR5, VAR6;
+
+if (!(VAR4->VAR7 || VAR4->VAR8 || VAR4->VAR9 || VAR4->VAR10 ||
+VAR4->VAR11 || VAR4->VAR12))
+return 0;
+
+FUN2(VAR2, "");
+if (VAR4->VAR7) {
+const char *VAR13 = FUN3(VAR4->VAR7);
+
+if (!VAR13) {
+FUN4(VAR14,
+FUN5(""),
+VAR4->VAR7);
+return -1;
+}
+FUN6(VAR2, "", VAR13);
+}
+if (VAR4->VAR8) {
+const char *VAR13 = FUN3(VAR4->VAR8);
+
+if (!VAR13) {
+FUN4(VAR14,
+FUN5(""),
+VAR4->VAR8);
+return -1;
+}
+FUN6(VAR2, "", VAR13);
+}
+if (!(VAR4->VAR9 || VAR4->VAR10 || VAR4->VAR11 || VAR4->VAR12)) {
+FUN2(VAR2, "");
+return 0;
+}
+
+FUN2(VAR2, "");
+FUN7(VAR2, 2);
+
+for (VAR5 = 0; VAR5 < VAR4->VAR9; VAR5++) {
+
+FUN2(VAR2, "");
+if (VAR4->VAR15[VAR5].VAR16) {
+FUN8(VAR2, "",
+VAR4->VAR15[VAR5].VAR16);
+}
+if (FUN9(&VAR4->VAR15[VAR5].VAR17)) {
+g_autofree char *VAR17 = FUN10(&VAR4->VAR15[VAR5].VAR17);
+
+if (!VAR17)
+return -1;
+
+FUN6(VAR2, "", VAR17);
+}
+FUN2(VAR2, "");
+}
+
+for (VAR5 = 0; VAR5 < VAR4->VAR12; VAR5++) {
+FUN8(VAR2, "", VAR4->VAR18[VAR5].VAR19);
+FUN8(VAR2, "", VAR4->VAR18[VAR5].VAR20);
+}
+
+for (VAR5 = 0; VAR5 < VAR4->VAR11; VAR5++) {
+if (VAR4->VAR21[VAR5].VAR22 && VAR4->VAR21[VAR5].VAR23) {
+FUN8(VAR2, "",
+VAR4->VAR21[VAR5].VAR22);
+FUN8(VAR2, "", VAR4->VAR21[VAR5].VAR23);
+
+if (VAR4->VAR21[VAR5].VAR16)
+FUN8(VAR2, "", VAR4->VAR21[VAR5].VAR16);
+if (VAR4->VAR21[VAR5].VAR24)
+FUN8(VAR2, "", VAR4->VAR21[VAR5].VAR24);
+if (VAR4->VAR21[VAR5].VAR25)
+FUN6(VAR2, "", VAR4->VAR21[VAR5].VAR25);
+if (VAR4->VAR21[VAR5].VAR26)
+FUN6(VAR2, "", VAR4->VAR21[VAR5].VAR26);
+if (VAR4->VAR21[VAR5].VAR27)
+FUN6(VAR2, "", VAR4->VAR21[VAR5].VAR27);
+
+FUN2(VAR2, "");
+}
+}
+
+if (VAR4->VAR10) {
+for (VAR5 = 0; VAR5 < VAR4->VAR10; VAR5++) {
+g_autofree char *VAR28 = FUN10(&VAR4->VAR29[VAR5].VAR28);
+
+FUN6(VAR2, "", VAR28);
+FUN7(VAR2, 2);
+for (VAR6 = 0; VAR6 < VAR4->VAR29[VAR5].VAR30; VAR6++)
+FUN8(VAR2, "",
+VAR4->VAR29[VAR5].VAR31[VAR6]);
+
+FUN7(VAR2, -2);
+FUN2(VAR2, "");
+}
+}
+FUN7(VAR2, -2);
+FUN2(VAR2, "");
+return 0;
+}

@@ -1,0 +1,76 @@
+int
+FUN1(struct VAR1 *VAR2, int VAR3, daddr_t VAR4, size_t VAR5,
+void *VAR6, VAR7 *VAR8)
+{
+struct VAR9 *VAR10, *VAR11;
+struct VAR12 *VAR13;
+struct aes_xts_ctx VAR14;
+size_t VAR15, VAR16, VAR17;
+daddr_t VAR18;
+u_char VAR19[8];
+VAR20 *VAR21;
+int VAR22;
+
+
+if (VAR3 != VAR23)
+return VAR24;
+
+
+VAR10 = (struct VAR9 *)VAR2->VAR25;
+VAR4 += VAR10->VAR26.VAR27[VAR2->VAR28 - ''].VAR29;
+
+if (VAR2->VAR30 == 0) {
+return VAR24;
+} else if (VAR2->VAR30 == 1) {
+
+
+FUN2(VAR13, &VAR2->VAR31, VAR32)
+if (VAR13->VAR33 == VAR34)
+break;
+if (VAR13 == NULL)
+return VAR35;
+
+VAR11 = (struct VAR9 *)VAR13->VAR36;
+VAR11->VAR37 = VAR13->VAR38;
+VAR4 += VAR2->VAR39;
+
+
+return VAR11->FUN3(VAR11, VAR3, VAR4, VAR5, VAR6, VAR8);
+
+} else if (VAR2->VAR30 == '') {
+
+
+FUN2(VAR13, &VAR2->VAR31, VAR32)
+if (VAR13->VAR33 == VAR34)
+break;
+if (VAR13 == NULL)
+return VAR35;
+
+VAR11 = (struct VAR9 *)VAR13->VAR36;
+VAR11->VAR37 = VAR13->VAR38;
+
+
+FUN4(&VAR14, (VAR20 *)VAR2->VAR40, 64);
+
+VAR17 = (VAR5 + VAR41 - 1) / VAR41;
+for (VAR15 = 0; VAR15 < VAR17; VAR15++) {
+VAR18 = VAR4 + VAR15;
+VAR21 = ((VAR20 *)VAR6) + VAR15 * VAR41;
+VAR22 = VAR11->FUN3(VAR11, VAR3, VAR2->VAR39 + VAR18,
+VAR41, VAR21, NULL);
+if (VAR22 != 0)
+return VAR22;
+
+bcopy(&VAR18, VAR19, sizeof(VAR18));
+FUN5(&VAR14, VAR19);
+for (VAR16 = 0; VAR16 < VAR41; VAR16 += VAR42)
+FUN6(&VAR14, VAR21 + VAR16);
+}
+if (VAR8 != NULL)
+*VAR8 = VAR17 * VAR41;
+
+return VAR22;
+
+} else
+return VAR24;
+}

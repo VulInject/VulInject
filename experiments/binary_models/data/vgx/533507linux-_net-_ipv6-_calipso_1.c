@@ -1,0 +1,1 @@
+static int FUN1 ( unsigned char * VAR1 , unsigned int VAR2 , unsigned int VAR3 ) { switch ( VAR3 ) { case 0 : break ; case 1 : VAR1 [ VAR2 ] = VAR4 ; break ; default : VAR1 [ VAR2 ] = VAR5 ; VAR1 [ VAR2 + 1 ] = VAR3 - 2 ; if ( VAR3 > 2 ) { memset ( VAR1 + VAR2 + 2 , 0 , VAR3 - 2 ) ; } break ; } return 0 ; }

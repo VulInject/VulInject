@@ -1,0 +1,1 @@
+FUN1 ( ) { if ( VAR1 . VAR2 ) { if ( VAR1 . VAR3 && VAR1 . VAR4 < 0 ) { FUN2 ( VAR1 . VAR3 ) ; } fclose ( VAR1 . VAR2 ) ; VAR1 . VAR2 = 0 ; VAR1 . VAR5 = 0 ; } free ( VAR1 . VAR6 ) ; VAR1 . VAR7 = 0 ; VAR1 . VAR4 = 0 ; return VAR1 . VAR8 ; }

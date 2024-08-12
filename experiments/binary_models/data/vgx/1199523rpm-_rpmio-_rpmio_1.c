@@ -1,0 +1,1 @@
+static int FUN1 ( FDSTACK_t VAR1 ) { VAR2 * VAR3 = VAR1 -> VAR4 ; int VAR5 ; if ( VAR3 == NULL ) { return - 2 ; } VAR5 = FUN2 ( VAR3 , NULL ) ; return VAR5 ; }

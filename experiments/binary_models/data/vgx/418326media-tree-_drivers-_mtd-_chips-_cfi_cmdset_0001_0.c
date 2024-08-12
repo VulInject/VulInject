@@ -1,0 +1,106 @@
+static int FUN1(struct VAR1 *VAR2,
+struct VAR3 **VAR4)
+{
+struct VAR5 *VAR6 = VAR2->VAR7;
+struct VAR3 *VAR8 = *VAR4;
+struct VAR9 *VAR10 = VAR8->VAR11;
+
+
+if (VAR10 && VAR10->VAR12 == '' && VAR10->VAR13 >= ''
+&& VAR10->VAR14 & (1 << 9)) {
+struct VAR3 *VAR15;
+struct VAR16 *VAR17;
+struct VAR18 *VAR19;
+int VAR20, VAR21, VAR22, VAR23, VAR24, VAR25, VAR26;
+
+
+VAR20 = (VAR10->VAR27 - 1) *
+sizeof(struct VAR28);
+
+
+VAR20 += VAR10->VAR29[VAR20+1]+2;
+
+
+VAR21 = VAR10->VAR29[VAR20];
+VAR20 += 1;
+
+
+if (VAR10->VAR13 >= '')
+VAR20 += 2;
+
+
+VAR22 = 0;
+for (VAR25 = 0; VAR25 < VAR21; VAR25++) {
+struct VAR30 *VAR31;
+VAR31 = (struct VAR30 *)&VAR10->VAR29[VAR20];
+VAR22 += VAR31->VAR32;
+VAR20 += sizeof(*VAR31)
++ (VAR31->VAR33 - 1) *
+sizeof(struct VAR34);
+}
+
+if (!VAR22)
+VAR22 = 1;
+
+
+if (VAR10->VAR13 >= '') {
+struct VAR35 *VAR36;
+VAR36 = (struct VAR35 *)&VAR10->VAR29[VAR20];
+VAR2->VAR37 = VAR8->VAR38 << VAR36->VAR39;
+VAR2->VAR40 &= ~VAR41;
+FUN2(VAR42 "",
+VAR6->VAR43, VAR2->VAR37,
+VAR8->VAR38 * VAR36->VAR44,
+VAR8->VAR38 * VAR36->VAR45);
+}
+
+
+VAR23 = VAR8->VAR46 - FUN3(VAR22);
+
+if ((1 << VAR23) < VAR2->VAR47) {
+FUN2( VAR48
+"",
+VAR49, VAR22);
+return -VAR50;
+}
+
+VAR24 = VAR8->VAR51 * VAR22;
+VAR15 = FUN4(sizeof(struct VAR3) + VAR24 * sizeof(struct VAR16), VAR52);
+if (!VAR15)
+return -VAR53;
+VAR19 = FUN4(sizeof(struct VAR18) * VAR8->VAR51, VAR52);
+if (!VAR19) {
+FUN5(VAR15);
+return -VAR53;
+}
+memcpy(VAR15, VAR8, sizeof(struct VAR3));
+VAR15->VAR51 = VAR24;
+VAR15->VAR46 = VAR23;
+
+VAR17 = &VAR15->VAR54[0];
+for (VAR25 = 0; VAR25 < VAR8->VAR51; VAR25++) {
+VAR19[VAR25].VAR55 = VAR19[VAR25].VAR56 = NULL;
+FUN6(&VAR19[VAR25].VAR57);
+for (VAR26 = 0; VAR26 < VAR22; VAR26++) {
+*VAR17 = VAR8->VAR54[VAR25];
+VAR17->VAR58 += VAR26 << VAR23;
+VAR17->VAR7 = &VAR19[VAR25];
+
+FUN7(&VAR17->VAR59);
+FUN6(&VAR17->mutex);
+VAR17++;
+}
+}
+
+FUN2(VAR42 ""
+"",
+VAR6->VAR43, VAR8->VAR51, VAR8->VAR38,
+VAR15->VAR51, 1<<(VAR15->VAR46-10));
+
+VAR6->VAR60 = VAR15;
+*VAR4 = VAR15;
+FUN5(VAR8);
+}
+
+return 0;
+}

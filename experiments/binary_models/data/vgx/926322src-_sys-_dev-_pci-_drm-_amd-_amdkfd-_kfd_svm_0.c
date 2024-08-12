@@ -1,0 +1,179 @@
+int
+FUN1(struct VAR1 *VAR2, unsigned int VAR3,
+uint64_t VAR4, bool VAR5)
+{
+struct VAR6 *VAR7 = NULL;
+struct VAR8 *VAR9;
+struct VAR10 *VAR11;
+struct VAR12 *VAR13;
+ktime_t VAR14 = FUN2();
+int32_t VAR15;
+int32_t VAR16 = VAR17;
+bool VAR18 = false;
+struct VAR19 *VAR20;
+bool VAR21 = false;
+int VAR22 = 0;
+
+if (!FUN3(VAR2->VAR23.VAR24)) {
+FUN4("");
+return -VAR25;
+}
+
+VAR13 = FUN5(VAR3);
+if (!VAR13) {
+FUN4("", VAR3);
+return 0;
+}
+VAR9 = &VAR13->VAR9;
+
+FUN4("", VAR9, VAR4);
+
+if (FUN6(&VAR9->VAR26)) {
+FUN4("", VAR4);
+VAR22 = 0;
+goto VAR27;
+}
+
+if (!VAR13->VAR28) {
+FUN4("", VAR3);
+VAR22 = -VAR25;
+goto VAR27;
+}
+
+
+VAR7 = FUN7(VAR13->VAR29);
+if (!VAR7) {
+FUN4("", VAR9);
+VAR22 = 0;
+goto VAR27;
+}
+
+FUN8(VAR7);
+VAR30:
+FUN9(&VAR9->VAR31);
+VAR11 = FUN10(VAR9, VAR4, NULL);
+if (!VAR11) {
+FUN4("",
+VAR9, VAR4);
+if (!VAR18) {
+
+FUN11(&VAR9->VAR31);
+FUN12(VAR7);
+FUN13(VAR7);
+VAR18 = true;
+goto VAR30;
+}
+VAR11 = FUN14(VAR2, VAR13, VAR7, VAR4);
+if (!VAR11) {
+FUN4("",
+VAR9, VAR4);
+FUN15(VAR7);
+VAR22 = -VAR25;
+goto VAR32;
+}
+}
+if (VAR18)
+FUN15(VAR7);
+
+FUN9(&VAR11->VAR33);
+
+if (FUN16(VAR11)) {
+FUN17(VAR2, VAR4, VAR3);
+VAR22 = 0;
+goto VAR34;
+}
+
+
+if (FUN18(VAR14, FUN19(VAR11->VAR35,
+VAR36))) {
+FUN4("",
+VAR9, VAR11->VAR37, VAR11->VAR38);
+VAR22 = 0;
+goto VAR34;
+}
+
+
+VAR20 = FUN20(VAR7, VAR4 << VAR39);
+if (!VAR20 || (VAR4 << VAR39) < VAR20->VAR40) {
+FUN4("", VAR4);
+VAR22 = 0;
+goto VAR34;
+}
+
+if (!FUN21(VAR20, VAR5)) {
+FUN4("", VAR4,
+VAR5 ? "" : "");
+VAR22 = -VAR41;
+goto VAR34;
+}
+
+VAR15 = FUN22(VAR11, VAR2, &VAR16);
+if (VAR15 == -1) {
+FUN4("",
+VAR9, VAR11->VAR37, VAR11->VAR38);
+VAR22 = -VAR42;
+goto VAR34;
+}
+
+FUN4("",
+VAR9, VAR11->VAR37, VAR11->VAR38, VAR15,
+VAR11->VAR43);
+
+FUN23(VAR2->VAR23.VAR24, VAR13->VAR29->VAR44, VAR4,
+VAR5, VAR14);
+
+if (VAR11->VAR43 != VAR15) {
+VAR21 = true;
+if (VAR15) {
+VAR22 = FUN24(VAR11, VAR15, VAR7,
+VAR45);
+if (VAR22) {
+FUN4("",
+VAR22, VAR4);
+
+if (VAR11->VAR43)
+VAR22 = FUN25(VAR11, VAR7,
+VAR45,
+NULL);
+else
+VAR22 = 0;
+}
+} else {
+VAR22 = FUN25(VAR11, VAR7,
+VAR45,
+NULL);
+}
+if (VAR22) {
+FUN4("",
+VAR22, VAR9, VAR11->VAR37, VAR11->VAR38);
+goto VAR34;
+}
+}
+
+VAR22 = FUN26(VAR7, VAR11, VAR16, false, false, false);
+if (VAR22)
+FUN4("",
+VAR22, VAR9, VAR11->VAR37, VAR11->VAR38);
+
+FUN27(VAR2->VAR23.VAR24, VAR13->VAR29->VAR44, VAR4,
+VAR21);
+
+VAR34:
+FUN11(&VAR11->VAR33);
+VAR32:
+FUN11(&VAR9->VAR31);
+FUN12(VAR7);
+
+FUN28(VAR2, VAR13, VAR16);
+
+FUN29(VAR7);
+VAR27:
+FUN30(VAR13);
+
+if (VAR22 == -VAR46) {
+FUN4("");
+FUN17(VAR2, VAR4, VAR3);
+VAR22 = 0;
+}
+return VAR22;
+}

@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , const char * VAR3 , bpc_handle VAR4 ) { struct VAR5 * VAR6 ; VAR6 = FUN2 ( VAR3 , NULL ) ; if ( VAR6 == NULL ) { return - 1 ; } return FUN3 ( VAR6 , VAR4 , VAR2 ) ; }

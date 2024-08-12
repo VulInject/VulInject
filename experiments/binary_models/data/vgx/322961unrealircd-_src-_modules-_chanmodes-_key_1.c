@@ -1,0 +1,1 @@
+void FUN1 ( const char * VAR1 , char * VAR2 , int VAR3 ) { VAR3 -- ; for ( ; * VAR1 ; VAR1 ++ ) { if ( VAR3 <= 0 ) { break ; } * VAR2 ++ = * VAR1 ; VAR3 -- ; } * VAR2 = '' ; }

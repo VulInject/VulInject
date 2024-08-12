@@ -1,0 +1,1 @@
+int FUN1 ( int * argc , char * * * argv ) { char * VAR1 = FUN2 ( ) ; assert ( VAR1 && "" ) ; char VAR2 [ 512 ] ; snprintf ( VAR2 , sizeof ( VAR2 ) , "" "" "" "" , VAR1 ) ; FUN3 ( ) ; FUN4 ( VAR2 ) ; return 0 ; }

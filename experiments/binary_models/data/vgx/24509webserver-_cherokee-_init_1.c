@@ -1,0 +1,1 @@
+FUN1 ( ) { ret_t VAR1 ; FUN2 ( & VAR2 ) ; FUN3 ( & VAR2 ) ; FUN4 ( & VAR2 , "" ) ; VAR1 = FUN5 ( VAR2 . VAR3 ) ; return VAR4 ; }

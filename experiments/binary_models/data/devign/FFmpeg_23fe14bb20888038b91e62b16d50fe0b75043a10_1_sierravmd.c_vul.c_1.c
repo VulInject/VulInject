@@ -1,0 +1,21 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    VAR5 *VAR6 = (VAR5 *)VAR2->VAR7;
+    VAR8 *VAR9 = &VAR2->VAR9;
+    int VAR10 = 0;
+    VAR11 *VAR12;
+    if (VAR6->VAR13 >= VAR6->VAR14)
+        return -VAR15;
+    VAR12 = &VAR6->VAR16[VAR6->VAR13];
+    FUN2(VAR9, VAR12->VAR17, VAR18);
+    if (FUN3(VAR4, VAR12->VAR19 + VAR20))
+        return VAR21;
+    memcpy(VAR4->VAR22, VAR12->VAR23, VAR20);
+    VAR10 = FUN4(VAR9, VAR4->VAR22 + VAR20, VAR12->VAR19);
+    if (VAR10 != VAR12->VAR19)
+        VAR10 = -VAR15;
+    VAR4->VAR24 = VAR12->VAR24;
+    VAR4->VAR25 = VAR12->VAR25;
+    VAR6->VAR13++;
+    return VAR10;
+}

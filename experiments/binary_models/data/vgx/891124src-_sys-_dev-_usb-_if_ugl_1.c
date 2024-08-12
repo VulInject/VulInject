@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * , VAR2 , VAR3 ) void FUN2 ( void * ) void FUN3 ( struct VAR4 * ) void FUN4 ( struct VAR1 * ) int FUN5 ( struct VAR5 * VAR6 , void * VAR7 , void * VAR8 ) { struct VAR9 * VAR10 = VAR8 ; return ( FUN6 ( VAR11 , VAR10 -> VAR12 , VAR10 -> VAR13 ) != NULL ?VAR14 : VAR15 ) ; }

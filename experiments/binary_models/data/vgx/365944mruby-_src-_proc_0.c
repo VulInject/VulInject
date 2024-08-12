@@ -1,0 +1,36 @@
+void
+FUN1(VAR1 *VAR2, VAR3 *VAR4, struct VAR5 *VAR6, int VAR7, const VAR8 *VAR9, const VAR10 *VAR11)
+{
+FUN2(!(VAR4->VAR12 & VAR13));
+
+if ((VAR4->VAR14 + VAR7) > VAR15) {
+FUN3(VAR2, VAR16, "");
+}
+
+if (!VAR9) {
+FUN3(VAR2, VAR16, "");
+}
+
+VAR4->VAR9 = (VAR8*)FUN4(VAR2, (VAR8*)VAR4->VAR9, sizeof(VAR8) * (VAR4->VAR14 + VAR7));
+VAR6->VAR11 = (VAR10*)FUN4(VAR2, VAR6->VAR11, sizeof(VAR10) * (VAR4->VAR14 + 1  + VAR7));
+
+VAR8 *VAR17 = (VAR8*)VAR4->VAR9 + VAR4->VAR14 - 1 ;
+VAR10 *VAR18 = VAR6->VAR11 + VAR4->VAR14;
+memmove(VAR17, VAR9, sizeof(VAR8) * VAR7);
+if (VAR11) {
+memmove(VAR18, VAR11, sizeof(VAR10) * VAR7);
+for (int VAR19 = 0; VAR19 < VAR7; VAR19++) {
+if (!FUN5(VAR11[VAR19])) {
+FUN6(VAR2, (struct VAR20*)VAR6, (struct VAR20*)FUN7(VAR11[VAR19]));
+}
+}
+}
+else {
+for (int VAR19 = VAR7; VAR19 > 0; VAR19--, VAR18++) {
+*VAR18 = FUN8();
+}
+}
+VAR4->VAR14 += VAR7;
+VAR4->VAR21 = VAR4->VAR14;
+FUN9(VAR6, VAR4->VAR14);
+}

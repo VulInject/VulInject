@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , uint8_t VAR3 ) { if ( ! ( ( VAR3 == VAR4 ) ) ) { FUN2 ( VAR2 , NULL ) ; return - 1 ; } VAR2 -> VAR5 = VAR3 ; return 0 ; }

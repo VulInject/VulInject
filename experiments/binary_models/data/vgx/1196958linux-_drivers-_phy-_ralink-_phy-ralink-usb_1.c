@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR1 = FUN2 ( VAR2 ) ; FUN3 ( VAR1 -> VAR4 , VAR5 , VAR1 -> VAR6 , 0 ) ; FUN4 ( VAR1 -> VAR7 ) ; return 0 ; } static const struct phy_ops VAR8 = { . VAR9 = VAR10 . VAR11 = VAR12 . VAR13 = VAR14 } ;

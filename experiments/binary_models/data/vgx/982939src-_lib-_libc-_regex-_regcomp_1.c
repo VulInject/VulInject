@@ -1,0 +1,1 @@
+static sopno FUN1 ( struct VAR1 * VAR2 , sopno VAR3 , sopno VAR4 ) { sopno VAR5 = FUN2 ( ) ; sopno VAR6 = VAR4 - VAR3 ; assert ( VAR4 >= VAR3 ) ; if ( ! FUN3 ( VAR2 , VAR2 -> VAR7 + VAR6 ) ) { return ( VAR5 ) ; } ( void ) memcpy ( VAR2 -> VAR8 + VAR2 -> VAR9 , VAR2 -> VAR8 + VAR3 , VAR6 * sizeof ( VAR10 ) ) ; VAR2 -> VAR9 += VAR6 ; return ( VAR5 ) ; }

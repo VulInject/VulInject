@@ -1,0 +1,1 @@
+int FUN1 ( p_socket VAR1 , p_socket VAR2 , VAR3 * VAR4 , VAR5 * VAR6 , p_timeout VAR7 ) { if ( * VAR1 == VAR8 ) { return VAR9 ; } for ( ; ; ) { int VAR10 ; if ( ( * VAR2 = FUN2 ( * VAR1 , VAR4 , VAR6 ) ) != VAR8 ) { return VAR11 ; } VAR10 = FUN3 ( ) ; if ( ( VAR10 = FUN4 ( VAR1 , VAR12 , VAR7 ) ) != VAR11 ) { return VAR10 ; } } }

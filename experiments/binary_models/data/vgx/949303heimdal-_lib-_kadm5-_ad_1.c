@@ -1,0 +1,1 @@
+static const char * FUN1 ( krb5_context VAR1 , const krb5_principal VAR2 ) { const char * VAR3 , * VAR4 [ ] { "" "" "" "" "" } ; ; int VAR5 ; VAR3 = FUN2 ( VAR1 , VAR2 , 0 ) ; for ( VAR5 = 0 ; VAR5 < sizeof ( VAR4 ) / sizeof ( VAR4 [ 0 ] ) ; VAR5 ++ ) { if ( FUN3 ( VAR3 , VAR4 [ VAR5 ] ) == 0 ) { return FUN2 ( VAR1 , VAR2 , 1 ) ; } } return 0 ; }

@@ -1,0 +1,143 @@
+int
+FUN1(VAR1 *VAR2, tavor_srqhdl_t VAR3,
+VAR4 *VAR5, uint_t VAR6, VAR7 *VAR8)
+{
+VAR9			*VAR10, *VAR11, *VAR12, *VAR13;
+uint32_t			VAR14;
+uint32_t			VAR15;
+uint_t				VAR16, VAR17, VAR18;
+uint_t				VAR19, VAR20;
+uint_t				VAR21 = VAR22;
+int				VAR23;
+
+
+if (VAR3->VAR24) {
+return (VAR25);
+}
+
+
+VAR20 = 0;
+
+FUN2(&VAR3->VAR26);
+
+
+if (VAR3->VAR27 == VAR28) {
+FUN3(&VAR3->VAR26);
+return (VAR29);
+}
+
+
+FUN2(&VAR3->VAR30->VAR31);
+
+
+VAR17 = 0;
+VAR18 = VAR6;
+VAR23	  = VAR32;
+while ((VAR17 < VAR6) && (VAR23 == VAR32)) {
+
+if (VAR3->VAR33 == -1) {
+VAR11 = NULL;
+} else {
+VAR11 = FUN4(VAR3, VAR3->VAR33);
+}
+
+
+VAR19 = (VAR18 > VAR21) ? VAR21 : VAR18;
+VAR18 -= VAR19;
+for (VAR16 = 0; VAR16 < VAR19; VAR16++, VAR17++) {
+
+
+if (VAR3->VAR34->VAR35 == -1) {
+VAR23 = VAR36;
+break;
+}
+
+
+VAR10 = FUN4(VAR3,
+VAR3->VAR34->VAR35);
+
+
+VAR14 = VAR37;
+FUN5(VAR3, VAR5[VAR17].VAR38,
+VAR14);
+
+
+VAR23 = FUN6(VAR2, VAR3, &VAR5[VAR17],
+VAR10);
+if (VAR23 != VAR32) {
+break;
+}
+
+
+if (VAR16 != 0) {
+FUN7(VAR10, VAR11, VAR3);
+VAR15 = FUN8(
+VAR3->VAR39, VAR11,
+VAR3->VAR40);
+
+
+FUN9(VAR3, VAR15, VAR15+1,
+VAR41, VAR42);
+
+VAR11 = VAR10;
+} else {
+
+
+VAR12 = VAR11 = VAR10;
+}
+
+
+VAR20++;
+}
+
+
+if (VAR16 != 0) {
+
+FUN7(NULL, VAR11, VAR3);
+
+VAR15 = FUN8(VAR3->VAR39, VAR11,
+VAR3->VAR40);
+
+
+FUN9(VAR3, VAR15, VAR15+1,
+VAR41, VAR42);
+
+
+if (VAR3->VAR33 == -1) {
+VAR13 = NULL;
+} else {
+VAR13 = FUN4(VAR3,
+VAR3->VAR33);
+}
+FUN7(VAR12, VAR13, VAR3);
+
+
+if (VAR3->VAR33 != -1) {
+VAR15 = VAR3->VAR33;
+FUN9(VAR3, VAR15, VAR15+1,
+VAR41, VAR42);
+}
+
+
+VAR3->VAR33 = FUN8(
+VAR3->VAR39, VAR10,
+VAR3->VAR40);
+
+
+
+FUN10(VAR2,
+(VAR43)((VAR44)VAR12 - VAR3->VAR45),
+0, VAR3->VAR46, (VAR19 % VAR21));
+}
+}
+
+
+if (VAR8 != NULL) {
+*VAR8 = VAR20;
+}
+
+FUN3(&VAR3->VAR30->VAR31);
+FUN3(&VAR3->VAR26);
+
+return (VAR23);
+}

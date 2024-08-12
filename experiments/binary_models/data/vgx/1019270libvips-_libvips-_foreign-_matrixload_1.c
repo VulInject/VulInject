@@ -1,0 +1,1 @@
+static gboolean FUN1 ( const char * VAR1 ) { unsigned char VAR2 [ 80 ] ; guint64 VAR3 ; int VAR4 ; int VAR5 ; double VAR6 ; double VAR7 ; int VAR8 ; VAR2 [ VAR3 ] = '' ; FUN2 ( ) ; VAR8 = FUN3 ( ( char * ) VAR2 , & VAR4 , & VAR5 , & VAR6 , & VAR7 ) ; FUN4 ( ) ; return ( VAR8 == 0 ) ; }

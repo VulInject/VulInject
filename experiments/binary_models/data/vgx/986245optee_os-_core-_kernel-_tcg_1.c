@@ -1,0 +1,1 @@
+TEE_Result FUN1 ( struct VAR1 * VAR2 ) { if ( VAR3 ) { FUN2 ( "" ) ; return VAR4 ; } VAR3 = VAR2 ; return VAR5 ; }

@@ -1,0 +1,54 @@
+int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR4);
+volatile struct VAR7 *VAR8 = VAR6->VAR9;
+int VAR10, VAR11, VAR12;
+static int VAR13;
+unsigned long VAR14;
+
+FUN3(VAR4);
+
+if (!VAR15) {
+FUN4(VAR2);
+return VAR16;
+}
+
+VAR11 = VAR2->VAR12;
+
+
+{
+int VAR17;
+
+for (VAR17 = 0; VAR17 < 64; VAR17++) {
+if ((VAR17 % 16) == 0)
+FUN5("");
+FUN5("", VAR2->VAR18[VAR17]);
+}
+}
+VAR12 = (VAR11 <= VAR19) ? VAR19 : VAR11;
+VAR10 = VAR6->VAR20 & VAR6->VAR21;
+VAR8->VAR22[VAR10].VAR23 = (-VAR12) | 0xf000;
+VAR8->VAR22[VAR10].VAR24 = 0;
+
+if (VAR2->VAR12 < VAR19)
+memset((void *)&VAR8->VAR25[VAR10][0], 0, VAR19);
+FUN6(VAR2, (void *)&VAR8->VAR25[VAR10][0], VAR11);
+
+
+VAR8->VAR22[VAR10].VAR26 = (VAR27|VAR28);
+VAR6->VAR20 = (VAR6->VAR20 + 1) & VAR6->VAR21;
+
+VAR13++;
+
+FUN7(VAR6, VAR29 | VAR30);
+FUN4(VAR2);
+
+FUN8(&VAR6->VAR31, VAR14);
+if (VAR15)
+FUN9(VAR4);
+else
+VAR6->VAR32 = 1;
+FUN10(&VAR6->VAR31, VAR14);
+
+return VAR16;
+}

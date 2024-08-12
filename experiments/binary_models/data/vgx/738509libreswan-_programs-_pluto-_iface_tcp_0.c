@@ -1,0 +1,41 @@
+void FUN1(int VAR1, VAR2 *VAR3,
+void *VAR4, struct VAR5 *VAR5)
+{
+struct VAR6 *VAR7 = VAR4;
+ip_address VAR8;
+ip_port VAR9;
+err_t VAR10 = FUN2(&VAR3->VAR3.VAR3, VAR3->VAR11,
+&VAR8, &VAR9);
+if (VAR10 != NULL) {
+FUN3(VAR12, VAR5, "", VAR10);
+close(VAR1);
+return;
+}
+
+ip_endpoint VAR13 = FUN4(VAR8,
+&VAR14,
+VAR9);
+
+struct VAR6 *VAR15 =
+FUN5(VAR1, VAR7->VAR16, &VAR17,
+true,
+false,
+VAR7->VAR18,
+VAR19);
+VAR15->VAR20 = VAR13;
+VAR15->VAR21 = VAR22;
+VAR15->VAR23 = true;
+
+struct logger VAR24 = FUN6(VAR5, &VAR13);
+VAR5 = &VAR24;
+FUN7(VAR12, VAR5, VAR15,  0, "");
+
+
+FUN8("", &VAR15->VAR25.VAR26,
+FUN9(5) ,
+VAR27, VAR15);
+FUN10(&VAR15->VAR25.VAR28, VAR15->VAR29,
+"", VAR30, VAR15);
+
+VAR31[VAR15->VAR23]++;
+}

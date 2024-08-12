@@ -1,0 +1,23 @@
+void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR5;
+struct VAR6 *VAR7 = FUN2(VAR2);
+
+if (!VAR4)
+return; 
+
+if (VAR4->VAR8) {
+FUN3(VAR7, sizeof(VAR9), VAR4->VAR10,
+VAR4->VAR8);
+}
+
+FUN4(VAR7, "", (VAR4->VAR11 -
+VAR4->VAR12));
+FUN4(VAR7, "", VAR4->VAR13);
+
+FUN5(VAR4->VAR14);
+
+FUN6(&VAR4->VAR15);
+FUN7(VAR4);
+VAR2->VAR5 = NULL;
+}

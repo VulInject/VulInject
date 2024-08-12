@@ -1,0 +1,1 @@
+size_t FUN1 ( void ) { area_info VAR1 ; thread_info VAR2 ; size_t VAR3 = 0 ; ssize_t VAR4 = 0 ; while ( FUN2 ( VAR2 . VAR5 , & VAR4 , & VAR1 ) == VAR6 ) { VAR3 += VAR1 . VAR7 ; } return VAR3 ; }

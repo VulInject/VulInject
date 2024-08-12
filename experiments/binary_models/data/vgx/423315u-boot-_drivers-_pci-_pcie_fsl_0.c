@@ -1,0 +1,89 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+VAR3 *VAR4 = VAR2->VAR4;
+u32 VAR5;
+u16 VAR6;
+
+FUN2(VAR2);
+
+VAR5 = 0;
+FUN3(VAR2, VAR7, &VAR5);
+VAR5 &= ~0x03;
+FUN4(VAR2, VAR7, VAR5);
+FUN5(1);
+
+u16 VAR8;
+int VAR9;
+
+if (VAR2->VAR10 >= VAR11) {
+
+FUN6(&VAR4->VAR12, 0x08000000);
+(void)FUN7(&VAR4->VAR12);
+FUN5(1000);
+
+FUN8(&VAR4->VAR12, 0x08000000);
+asm("");
+for (VAR9 = 0; VAR9 < 100 && !FUN9(VAR2); VAR9++)
+FUN5(1000);
+} else {
+FUN10(VAR2, VAR13, &VAR8);
+if (VAR8 == 1) {
+
+FUN6(&VAR4->VAR12, 0x08000000);
+(void)FUN7(&VAR4->VAR12);
+FUN5(100);
+
+FUN8(&VAR4->VAR12, 0x08000000);
+asm("");
+for (VAR9 = 0; VAR9 < 100 &&
+!FUN9(VAR2); VAR9++)
+FUN5(1000);
+}
+}
+
+if (!FUN9(VAR2)) {
+VAR14 *VAR15;
+
+VAR15 = (void *)VAR16;
+VAR5 = FUN7(&VAR15->VAR17);
+
+if ((VAR5 >> 28) == 3) {
+int VAR9;
+
+FUN11(&VAR15->VAR17, 2 << 28);
+FUN6(&VAR4->VAR12, 0x08000000);
+FUN7(&VAR4->VAR12);
+FUN5(100);
+FUN8(&VAR4->VAR12, 0x08000000);
+asm("");
+for (VAR9 = 0; VAR9 < 100 && !FUN9(VAR2); VAR9++)
+FUN5(1000);
+}
+}
+
+
+FUN12(VAR2, false);
+
+
+FUN11(&VAR4->VAR18, ~0x20140);
+
+
+FUN3(VAR2, VAR19, &VAR5);
+VAR5 |= 0xf000e;
+FUN4(VAR2, VAR19, VAR5);
+
+
+FUN11(&VAR4->VAR20, 0xffffffff);
+FUN11(&VAR4->VAR21, 0xffffffff);
+FUN11(&VAR4->VAR22, 0xffffffff);
+
+FUN10(VAR2, VAR23, &VAR6);
+if (VAR6)
+FUN13(VAR2, VAR23, 0xffff);
+
+FUN10(VAR2, VAR24, &VAR6);
+if (VAR6)
+FUN13(VAR2, VAR24, 0xffff);
+
+return 0;
+}

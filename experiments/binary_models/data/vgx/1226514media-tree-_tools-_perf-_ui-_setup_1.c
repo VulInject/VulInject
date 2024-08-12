@@ -1,0 +1,1 @@
+void FUN1 ( bool VAR1 ) { switch ( VAR2 ) { case 2 : FUN2 ( VAR1 ) ; break ; case 1 : FUN3 ( VAR1 , NULL ) ; break ; default : break ; } }

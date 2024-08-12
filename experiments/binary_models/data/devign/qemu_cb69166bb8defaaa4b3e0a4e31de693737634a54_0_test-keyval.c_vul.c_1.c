@@ -1,0 +1,22 @@
+static void FUN1(void)
+{
+    VAR1 *VAR2;
+    VAR3 *VAR4;
+    VAR5 *VAR6;
+    VAR7 *VAR8;
+    VAR9 *VAR10;
+    VAR4 = FUN2("", NULL, &VAR11);
+    VAR2 = FUN3(FUN4(VAR4));
+    FUN5(VAR4);
+    FUN6(VAR2, NULL, NULL, 0, &VAR11);
+    FUN7(VAR2, "", &VAR6, &VAR11);
+    VAR8 = FUN8(VAR6);
+    FUN9(VAR8);
+    VAR10 = FUN10(FUN11(VAR8));
+    FUN12(FUN13(VAR10), ==, "");
+    VAR10 = FUN10(FUN11(VAR8));
+    FUN12(FUN13(VAR10), ==, "");
+    FUN9(FUN14(VAR8));
+    FUN15(VAR2, &VAR11);
+    FUN16(VAR2, NULL);
+    FUN17(VAR2);

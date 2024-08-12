@@ -1,0 +1,15 @@
+void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR5;
+
+VAR2->VAR5 = NULL;
+VAR2->VAR6 = 0;
+VAR2->VAR7 = 0;
+VAR2->VAR8 = 0;
+VAR2->VAR9 = NULL;
+while (VAR4) {
+struct VAR3 *VAR10 = VAR4->VAR10;
+FUN2(VAR4, VAR2->VAR11);
+VAR4 = VAR10;
+}
+}

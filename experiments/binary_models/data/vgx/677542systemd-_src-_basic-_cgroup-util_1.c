@@ -1,0 +1,1 @@
+int FUN1 ( const char * VAR1 , const char * VAR2 , VAR3 * VAR4 ) { _cleanup_free_ char * VAR5 = NULL ; struct stat VAR6 ; int VAR7 ; assert ( VAR4 ) ; VAR7 = FUN2 ( VAR1 , VAR2 , NULL , & VAR5 ) ; if ( VAR7 < 0 ) { return VAR7 ; } VAR7 = FUN3 ( VAR5 , & VAR6 ) ; * VAR4 = VAR6 . VAR8 ; return 0 ; }

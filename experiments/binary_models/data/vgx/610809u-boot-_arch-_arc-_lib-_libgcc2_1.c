@@ -1,0 +1,1 @@
+unsigned long FUN1 ( unsigned long VAR1 , unsigned long VAR2 , int VAR3 ) { unsigned long VAR4 = 1 ; cfs_time_t VAR5 = 0 ; while ( VAR2 < VAR1 && VAR4 && ! ( VAR2 & ( 1L << 31 ) ) ) { VAR2 <<= 1 ; VAR4 <<= 1 ; } while ( VAR4 ) { if ( VAR1 >= VAR2 ) { VAR1 -= VAR2 ; VAR5 |= VAR4 ; } VAR4 >>= 1 ; VAR2 >>= 1 ; } if ( VAR3 ) { return VAR1 ; } return VAR5 ; }

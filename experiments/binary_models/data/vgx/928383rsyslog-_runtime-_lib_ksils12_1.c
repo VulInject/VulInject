@@ -1,0 +1,1 @@
+void FUN1 ( ksifile VAR1 ) { if ( VAR1 == NULL ) { VAR2 } FUN2 ( VAR1 ) ; VAR1 -> VAR3 = 0 ; VAR1 -> VAR4 = 0 ; VAR1 -> VAR5 = 1 ; VAR1 -> VAR6 = FUN3 ( NULL ) ; VAR1 -> VAR7 = 1 << ( VAR1 -> VAR8 -> VAR9 - 1 ) ; if ( VAR1 -> VAR8 -> VAR10 != NULL ) { FUN4 ( VAR1 -> VAR8 -> VAR10 ) ; } done return ; }

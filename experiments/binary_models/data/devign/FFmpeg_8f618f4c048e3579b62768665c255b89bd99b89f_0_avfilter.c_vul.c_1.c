@@ -1,0 +1,18 @@
+VAR1 *FUN1(VAR2 *VAR3, char *VAR4)
+{
+    VAR1 *VAR5 = FUN2(sizeof(VAR1));
+    VAR5->VAR6 = FUN3(sizeof(VAR7));
+    VAR5->VAR6->VAR8 = VAR9;
+    VAR5->VAR3 = VAR3;
+    VAR5->VAR10 = VAR4 ? FUN4(VAR4) : NULL;
+    VAR5->VAR11 = FUN3(VAR3->VAR12);
+    VAR5->VAR13 = FUN5(VAR3->VAR14);
+    VAR5->VAR15 = FUN2(sizeof(VAR16) * VAR5->VAR13);
+    memcpy(VAR5->VAR15, VAR3->VAR14, sizeof(VAR16) * VAR5->VAR13);
+    VAR5->VAR14 = FUN3(sizeof(VAR17 *) * VAR5->VAR13);
+    VAR5->VAR18 = FUN5(VAR3->VAR19);
+    VAR5->VAR20 = FUN2(sizeof(VAR16) * VAR5->VAR18);
+    memcpy(VAR5->VAR20, VAR3->VAR19, sizeof(VAR16) * VAR5->VAR18);
+    VAR5->VAR19 = FUN3(sizeof(VAR17 *) * VAR5->VAR18);
+    return VAR5;
+}

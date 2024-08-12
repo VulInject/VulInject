@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR3 ; int VAR4 ; for ( VAR4 = 0 ; VAR4 < FUN2 ( VAR5 ) ; VAR4 ++ ) { VAR3 = FUN3 ( VAR5 [ VAR4 ] . VAR6 , VAR7 | VAR8 , VAR2 -> VAR9 , VAR2 -> VAR10 , VAR5 [ VAR4 ] . VAR11 ) ; } return FUN4 ( VAR12 , VAR13 , VAR2 -> VAR9 , VAR2 ) ; }

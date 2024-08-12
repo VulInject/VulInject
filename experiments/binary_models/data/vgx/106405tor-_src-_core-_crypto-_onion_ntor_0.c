@@ -1,0 +1,32 @@
+int
+FUN1(const VAR1 *VAR2,
+const VAR3 *VAR4,
+VAR5 **VAR6,
+VAR1 *VAR7)
+{
+VAR5 *VAR8;
+VAR1 *VAR9;
+
+VAR8 = FUN2(sizeof(VAR5));
+
+memcpy(VAR8->VAR2, VAR2, VAR10);
+memcpy(&VAR8->VAR11, VAR4, sizeof(VAR3));
+if (FUN3(&VAR8->VAR12, 0) < 0) {
+
+FUN4();
+FUN5(VAR8);
+return -1;
+
+}
+FUN6(&VAR8->VAR13, &VAR8->VAR12);
+
+VAR9 = VAR7;
+FUN7(VAR9, VAR2, VAR10);
+FUN7(VAR9, VAR4->VAR14, VAR15);
+FUN7(VAR9, VAR8->VAR13.VAR14, VAR15);
+FUN8(VAR9 == VAR7 + VAR16);
+
+*VAR6 = VAR8;
+
+return 0;
+}

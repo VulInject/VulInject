@@ -1,0 +1,1 @@
+static __inline__ size_t FUN1 ( const VAR1 * VAR2 , size_t VAR3 ) { if ( VAR3 > VAR2 -> VAR4 ) { VAR3 = VAR2 -> VAR4 - 1 ; } if ( ! ( VAR2 -> VAR5 & VAR6 ) ) { return VAR3 ; } if ( VAR2 -> VAR4 - 1 == VAR3 ) { return 0 ; } return VAR2 -> VAR4 - VAR3 - 1 ; }

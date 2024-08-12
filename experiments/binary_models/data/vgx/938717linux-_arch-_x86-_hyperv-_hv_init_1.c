@@ -1,0 +1,1 @@
+void FUN1 ( void ) { struct hv_reenlightenment_control VAR1 ; FUN2 ( VAR2 , * ( VAR3 * ) & VAR1 ) ; VAR1 . VAR4 = 0 ; FUN3 ( VAR2 , * ( VAR3 * ) & VAR1 ) ; VAR5 = NULL ; }

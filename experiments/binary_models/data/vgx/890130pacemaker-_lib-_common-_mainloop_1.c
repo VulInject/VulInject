@@ -1,0 +1,1 @@
+void FUN1 ( void ) { if ( VAR1 ) { FUN2 ( VAR1 ) ; } for ( int VAR2 = 0 ; VAR2 < VAR3 ; ++ VAR2 ) { FUN3 ( VAR2 ) ; } } VAR4 { int32_t VAR5 ; guint VAR6 ; int VAR7 ; void * VAR8 ; qb_ipcs_dispatch_fn_t VAR9 ; enum qb_loop_priority VAR10 ; }

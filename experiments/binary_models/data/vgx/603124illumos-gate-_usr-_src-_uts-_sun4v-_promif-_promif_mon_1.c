@@ -1,0 +1,1 @@
+int FUN1 ( void * VAR1 ) { FUN2 ( VAR2 ) ; FUN3 ( VAR2 ) ; FUN4 ( "" ) ; if ( VAR3 ) { FUN4 ( "" ) ; ( void ) FUN5 ( ) ; } ( void ) FUN6 ( ) ; FUN7 ( 0 ) ; FUN8 ( VAR2 , NULL ) ; return ( 0 ) ; }

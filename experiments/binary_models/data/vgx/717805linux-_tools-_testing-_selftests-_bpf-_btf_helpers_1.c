@@ -1,0 +1,1 @@
+static const char * FUN1 ( const struct VAR1 * VAR1 , __u32 VAR2 ) { return FUN2 ( VAR1 , VAR2 ) ?: "" ; }

@@ -1,0 +1,1 @@
+static const char * FUN1 ( char * VAR1 ) { VAR2 * VAR3 = FUN2 ( ) ; const char * VAR4 = NULL ; if ( VAR3 ) { if ( VAR1 ) { if ( ! FUN3 ( VAR3 , VAR5 , VAR1 , VAR6 | VAR7 ) ) { char * VAR8 ; if ( ! FUN4 ( VAR3 , VAR9 , & VAR8 , VAR10 ) && VAR8 ) { VAR4 = FUN5 ( VAR8 ) ; FUN6 ( VAR8 ) ; } } } FUN7 ( VAR3 ) ; } return VAR4 ?VAR4 : "" ; }

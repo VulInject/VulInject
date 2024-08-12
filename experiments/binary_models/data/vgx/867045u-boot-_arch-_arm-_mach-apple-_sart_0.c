@@ -1,0 +1,9 @@
+static void FUN1(struct VAR1 *VAR2, int VAR3, VAR4 *VAR5, void **VAR6,
+VAR7 *VAR8)
+{
+u32 VAR9 = FUN2(VAR2->VAR10 + FUN3(VAR3));
+*VAR5 = FUN4(VAR11, VAR9);
+*VAR8 = (VAR7)FUN4(VAR12, VAR9) << VAR13;
+*VAR6 = (void *)
+((VAR14)FUN2(VAR2->VAR10 + FUN5(VAR3)) << VAR15);
+}

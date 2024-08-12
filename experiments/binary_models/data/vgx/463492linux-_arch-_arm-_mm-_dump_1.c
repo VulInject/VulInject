@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , const struct VAR3 * VAR4 , size_t VAR5 ) { int VAR6 ; for ( VAR6 = 0 ; VAR6 < VAR5 ; VAR6 ++ , VAR4 ++ ) { const char * VAR7 ; if ( ( VAR2 -> VAR8 & VAR4 -> VAR9 ) == VAR4 -> VAR10 ) { VAR7 = VAR4 -> VAR11 ; } else { VAR7 = VAR4 -> VAR12 ; } if ( VAR7 ) { FUN2 ( VAR2 -> VAR13 , "" , VAR7 ) ; } } }

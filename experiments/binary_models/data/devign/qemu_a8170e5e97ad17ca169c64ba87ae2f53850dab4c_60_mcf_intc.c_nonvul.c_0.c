@@ -1,0 +1,10 @@
+VAR1 *FUN1(VAR2 *VAR3, hwaddr VAR4, VAR5 *VAR6)
+{
+    VAR7 *VAR8;
+    VAR8 = FUN2(sizeof(VAR7));
+    VAR8->VAR6 = VAR6;
+    FUN3(VAR8);
+    FUN4(&VAR8->VAR9, &VAR10, VAR8, "", 0x100);
+    FUN5(VAR3, VAR4, &VAR8->VAR9);
+    return FUN6(VAR11, VAR8, 64);
+}

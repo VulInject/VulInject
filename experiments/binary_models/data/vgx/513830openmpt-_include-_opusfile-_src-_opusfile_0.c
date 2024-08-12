@@ -1,0 +1,37 @@
+static VAR1 FUN1(const VAR2 *VAR3,
+ogg_int64_t VAR4,int *VAR5){
+const VAR6 *VAR7;
+ogg_int64_t        VAR8;
+ogg_int64_t        VAR9;
+opus_int32         VAR10;
+int                VAR11;
+int                VAR12;
+int                VAR13;
+FUN2(VAR4>=0);
+VAR11=VAR3->VAR11;
+VAR7=VAR3->VAR7;
+VAR12=0;
+VAR13=VAR11;
+do{
+int VAR14;
+VAR14=VAR12+(VAR13-VAR12>>1);
+if(VAR7[VAR14].VAR15<=VAR4)VAR12=VAR14;
+else VAR13=VAR14;
+}
+while(VAR13-VAR12>1);
+VAR4-=VAR7[VAR12].VAR15;
+VAR9=VAR7[VAR12].VAR9;
+VAR10=VAR7[VAR12].VAR16.VAR10;
+FUN3(!FUN4(&VAR8,VAR7[VAR12].VAR17,VAR9));
+VAR8-=VAR10;
+if(VAR4>=VAR8)return -1;
+VAR4+=VAR10;
+if(FUN5(VAR9>VAR18-VAR4)){
+
+VAR4-=VAR18-VAR9+1;
+VAR9=VAR19;
+}
+VAR9+=VAR4;
+*VAR5=VAR12;
+return VAR9;
+}

@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , int VAR3 , int VAR4 , const void * VAR5 ) { struct VAR6 * VAR7 = VAR2 -> VAR8 ; void * VAR9 ; VAR9 = FUN2 ( VAR2 -> VAR10 , VAR4 , VAR11 ) ; if ( VAR5 ) { memcpy ( VAR9 , VAR5 , VAR4 ) ; } VAR7 -> VAR12 [ VAR3 ] = VAR9 ; return 0 ; }

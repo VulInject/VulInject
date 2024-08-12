@@ -1,0 +1,1 @@
+static bool FUN1 ( const struct VAR1 * ) static bool FUN2 ( const struct VAR1 * ) static void FUN3 ( struct VAR2 * , size_t VAR3 ) static size_t FUN4 ( size_t VAR4 ) FUN5 ( VAR5 ) ; FUN5 ( VAR6 ) ; FUN5 ( VAR7 ) ; FUN5 ( VAR8 ) ; void FUN6 ( struct VAR2 * VAR2 ) { VAR2 -> VAR9 = & VAR2 -> VAR10 ; VAR2 -> VAR11 = 0 ; VAR2 -> VAR12 = 0 ; }

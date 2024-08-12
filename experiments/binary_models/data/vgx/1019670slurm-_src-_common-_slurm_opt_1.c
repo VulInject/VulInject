@@ -1,0 +1,1 @@
+extern bool FUN1 ( VAR1 * VAR2 , int VAR3 ) { int VAR4 ; if ( ! VAR2 ) { FUN2 ( "" , VAR5 , VAR3 ) ; return false ; } for ( VAR4 = 0 ; VAR6 [ VAR4 ] ; VAR4 ++ ) { if ( VAR6 [ VAR4 ] -> VAR7 == VAR3 ) { break ; } } if ( ! VAR6 [ VAR4 ] ) { return false ; } return ( VAR2 -> VAR8 [ VAR4 ] . VAR9 && ! VAR2 -> VAR8 [ VAR4 ] . VAR10 ) ; }

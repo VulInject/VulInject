@@ -1,0 +1,77 @@
+static int FUN1(struct VAR1 *VAR2,
+unsigned long VAR3, void *VAR4)
+{
+struct VAR5 *VAR6 = VAR4;
+struct VAR7 *VAR8 = VAR6->VAR9->VAR10;
+struct VAR11 *VAR12;
+struct VAR7 *VAR13;
+struct VAR7 *VAR14;
+struct VAR15 *VAR16;
+unsigned int VAR17;
+
+FUN2(VAR18, "",
+&VAR6->VAR19, &VAR6->VAR20);
+FUN3(VAR12, &VAR21, VAR22) {
+FUN2(VAR18, "",
+VAR12, VAR12->VAR13[0]->VAR23);
+VAR13 = VAR12->VAR13[0];
+VAR16 = FUN4(VAR13);
+VAR14 = FUN5(VAR13);
+VAR17 = FUN6(VAR13) &&
+(VAR14 == VAR8);
+if ((VAR13 == VAR8) || VAR17) {
+if (VAR16->VAR24 == 0) {
+FUN2(VAR18, ""
+"",
+VAR13->VAR23);
+return VAR25;
+}
+
+switch (VAR3) {
+case VAR26:
+FUN2(VAR18, "");
+FUN7(VAR12,
+VAR27+(0x10*FUN8(VAR12->VAR28->VAR29)), 0);
+
+FUN9(VAR13, VAR13->VAR30,
+FUN10(VAR16->VAR31), VAR32);
+VAR16->VAR31 = 0;
+if (VAR17)
+continue;
+else
+return VAR25;
+break;
+case VAR33:
+FUN2(VAR18, "");
+
+if (VAR16->VAR31 != 0) {
+FUN2(VAR18, "");
+return VAR25;
+}
+
+case VAR34:
+
+if (VAR14)
+VAR16->VAR31 =
+((struct VAR35 *)VAR14->VAR36)->VAR37->VAR19;
+else
+VAR16->VAR31 = VAR6->VAR19;
+
+FUN7(VAR12,
+VAR27+(0x10*FUN8(VAR12->VAR28->VAR29)),
+FUN10(VAR16->VAR31));
+FUN9(VAR13, VAR13->VAR30,
+FUN10(VAR16->VAR31), VAR38);
+if (VAR17)
+continue;
+else
+return VAR25;
+break;
+default:
+break;
+}
+}
+}
+
+return VAR39;
+}

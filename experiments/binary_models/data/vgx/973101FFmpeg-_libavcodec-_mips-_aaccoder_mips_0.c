@@ -1,0 +1,102 @@
+static void FUN1(struct VAR1 *VAR2,
+VAR3 *VAR4, const float *VAR5, float *VAR6,
+const float *VAR7, int VAR8, int VAR9,
+int VAR10, const float VAR11, const float VAR12,
+int *VAR13, float *VAR14, const float VAR15)
+{
+const float VAR16 = VAR17[VAR18 - VAR9 + VAR19 - VAR20];
+const float VAR21  = VAR22 [VAR18 + VAR9 - VAR19 + VAR20];
+int VAR23;
+int VAR24, VAR25, VAR26, VAR27;
+float VAR28 = 0.0f;
+
+VAR29  *VAR30  = (VAR29  *)VAR31[VAR10-1];
+VAR32 *VAR33 = (VAR32 *)VAR34[VAR10-1];
+float    *VAR35   = (float    *)VAR36[VAR10-1];
+
+FUN2(VAR2->VAR37, VAR5, VAR8);
+VAR7 = VAR2->VAR37;
+for (VAR23 = 0; VAR23 < VAR8; VAR23 += 4) {
+int VAR38, VAR39;
+int *VAR40 = (int *)&VAR5[VAR23];
+uint8_t VAR41;
+unsigned int VAR42;
+int VAR43, VAR44, VAR45, VAR46, VAR47, VAR48, VAR49, VAR50;
+const float *VAR51, *VAR52;
+
+VAR24 = VAR7[VAR23  ] * VAR16 + VAR53;
+VAR25 = VAR7[VAR23+1] * VAR16 + VAR53;
+VAR26 = VAR7[VAR23+2] * VAR16 + VAR53;
+VAR27 = VAR7[VAR23+3] * VAR16 + VAR53;
+
+__asm__ volatile (
+""
+""
+
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+
+""
+
+: [VAR24]""(VAR24), [VAR25]""(VAR25),
+[VAR26]""(VAR26), [VAR27]""(VAR27),
+[VAR43]""(VAR43), [VAR44]""(VAR44), [VAR45]""(VAR45), [VAR46]""(VAR46),
+[VAR47]""(VAR47), [VAR48]""(VAR48), [VAR49]""(VAR49), [VAR50]""(VAR50)
+: [VAR40]""(VAR40)
+: ""
+);
+
+VAR38 = 9 * VAR24;
+VAR38 += VAR25 + 40;
+
+VAR39 = 9 * VAR26;
+VAR39 += VAR27 + 40;
+
+VAR42 = (VAR33[VAR38] << VAR30[VAR39]) | (VAR33[VAR39]);
+VAR41  = VAR30[VAR38] + VAR30[VAR39];
+FUN3(VAR4, VAR41, VAR42);
+
+if (VAR6 || VAR14) {
+float VAR54,VAR55,VAR56,VAR57;
+VAR51 = &VAR35[VAR38*2 ];
+VAR52 = &VAR35[VAR39*2];
+VAR54 = VAR51[0] * VAR21;
+VAR55 = VAR51[1] * VAR21;
+VAR56 = VAR52[0] * VAR21;
+VAR57 = VAR52[1] * VAR21;
+if (VAR6) {
+VAR6[VAR23+0] = VAR54;
+VAR6[VAR23+1] = VAR55;
+VAR6[VAR23+2] = VAR56;
+VAR6[VAR23+3] = VAR57;
+}
+if (VAR14)
+VAR28 += (VAR54*VAR54 + VAR55*VAR55) + (VAR56*VAR56 + VAR57*VAR57);
+}
+}
+if (VAR14)
+*VAR14 = VAR28;
+}

@@ -1,0 +1,182 @@
+static VAR1
+FUN1(VAR2 *VAR3, VAR4 *VAR5, int VAR6) {
+int VAR7 = 0;
+VAR8 *VAR9, *VAR10 = NULL;
+VAR11 *VAR12;
+isc_result_t VAR13 = VAR14;
+int VAR15;
+
+FUN2(VAR6);
+
+
+VAR15 = (VAR16 == 1) ? 1 : 0;
+VAR16 = 1;
+if (VAR17 && !VAR18) {
+char VAR19[VAR20];
+
+FUN3("");
+FUN3("", VAR3->VAR21);
+FUN4(&VAR3->VAR22, VAR19,
+sizeof(VAR19));
+FUN3("", VAR19);
+FUN3("");
+VAR18 = 1;
+}
+
+if (VAR5->VAR23 != 0) {
+char VAR24[VAR25];
+FUN5(VAR3->VAR26->VAR27, VAR24, sizeof(VAR24));
+
+if (VAR3->VAR26->VAR28)
+FUN3("",
+VAR3->VAR29,
+(VAR5->VAR23 != VAR30) ? VAR24 :
+VAR3->VAR26->VAR31, VAR5->VAR23,
+FUN6(VAR5->VAR23));
+else
+FUN3("",
+(VAR5->VAR23 != VAR30) ? VAR24 :
+VAR3->VAR26->VAR31, VAR5->VAR23,
+FUN6(VAR5->VAR23));
+return (VAR14);
+}
+
+if (VAR32 && VAR3->VAR26->VAR33 == VAR34) {
+char VAR24[VAR25];
+VAR35 *VAR26;
+dns_fixedname_t VAR36;
+VAR11 *VAR27;
+
+
+FUN7(&VAR36);
+VAR27 = FUN8(&VAR36);
+FUN9(VAR3->VAR26->VAR27, VAR27, NULL);
+FUN10(VAR5, VAR27);
+FUN5(VAR27, VAR24, sizeof(VAR24));
+VAR26 = FUN11(VAR3->VAR26, 0);
+if (VAR26 != NULL) {
+FUN12(VAR26->VAR31, VAR24,
+sizeof(VAR26->VAR31));
+VAR26->VAR33 = VAR37;
+VAR26->VAR38 = 1;
+VAR26->VAR39 = NULL;
+VAR26->VAR40 = VAR41;
+FUN13(VAR42, VAR26, VAR43);
+}
+VAR26 = FUN11(VAR3->VAR26, 0);
+if (VAR26 != NULL) {
+FUN12(VAR26->VAR31, VAR24,
+sizeof(VAR26->VAR31));
+VAR26->VAR33 = VAR44;
+VAR26->VAR38 = 1;
+VAR26->VAR39 = NULL;
+VAR26->VAR40 = VAR41;
+FUN13(VAR42, VAR26, VAR43);
+}
+}
+
+if (!VAR45) {
+FUN3("",
+VAR46[VAR5->VAR47], FUN6(VAR5->VAR23),
+VAR5->VAR48);
+FUN3("");
+if ((VAR5->VAR49 & VAR50) != 0) {
+FUN3("");
+VAR7 = 1;
+}
+if ((VAR5->VAR49 & VAR51) != 0) {
+FUN3("", VAR7 ? "" : "");
+VAR7 = 1;
+}
+if ((VAR5->VAR49 & VAR52) != 0) {
+FUN3("", VAR7 ? "" : "");
+VAR7 = 1;
+}
+if ((VAR5->VAR49 & VAR53) != 0) {
+FUN3("", VAR7 ? "" : "");
+VAR7 = 1;
+}
+if ((VAR5->VAR49 & VAR54) != 0) {
+FUN3("", VAR7 ? "" : "");
+VAR7 = 1;
+}
+if ((VAR5->VAR49 & VAR55) != 0) {
+FUN3("", VAR7 ? "" : "");
+VAR7 = 1;
+}
+if ((VAR5->VAR49 & VAR56) != 0) {
+FUN3("", VAR7 ? "" : "");
+VAR7 = 1;
+FUN14(VAR7);
+}
+FUN3(""
+"",
+VAR5->VAR57[VAR58],
+VAR5->VAR57[VAR59],
+VAR5->VAR57[VAR60],
+VAR5->VAR57[VAR61]);
+VAR9 = FUN15(VAR5);
+if (VAR9 != NULL)
+FUN3("",
+(unsigned int)((VAR9->VAR62 & 0x00ff0000) >> 16),
+(unsigned int)VAR9->VAR63);
+VAR12 = NULL;
+VAR10 = FUN16(VAR5, &VAR12);
+if (VAR10 != NULL)
+FUN3("");
+}
+if (! FUN17(VAR5->VAR64[VAR58]) &&
+!VAR45) {
+FUN3("");
+VAR13 = FUN18(VAR5, VAR58, "",
+1, VAR3);
+if (VAR13 != VAR14)
+return (VAR13);
+}
+if (! FUN17(VAR5->VAR64[VAR59])) {
+if (!VAR45)
+FUN3("");
+VAR13 = FUN18(VAR5, VAR59, "",
+!VAR45, VAR3);
+if (VAR13 != VAR14)
+return (VAR13);
+}
+
+if (! FUN17(VAR5->VAR64[VAR60]) &&
+!VAR45) {
+FUN3("");
+VAR13 = FUN18(VAR5, VAR60, "",
+1, VAR3);
+if (VAR13 != VAR14)
+return (VAR13);
+}
+if (! FUN17(VAR5->VAR64[VAR61]) &&
+!VAR45) {
+FUN3("");
+VAR13 = FUN18(VAR5, VAR61,
+"", 1, VAR3);
+if (VAR13 != VAR14)
+return (VAR13);
+}
+if ((VAR10 != NULL) && !VAR45) {
+FUN3("");
+VAR13 = FUN19(VAR5, VAR10, VAR12,
+"", 1);
+if (VAR13 != VAR14)
+return (VAR13);
+}
+if (!VAR45)
+FUN3("");
+
+if (VAR45 && !VAR32 &&
+FUN17(VAR5->VAR64[VAR59])) {
+char VAR24[VAR25];
+char VAR65[VAR66];
+FUN5(VAR3->VAR26->VAR27, VAR24, sizeof(VAR24));
+FUN20(VAR3->VAR26->VAR33, VAR65,
+sizeof(VAR65));
+FUN3("", VAR24, VAR65);
+}
+VAR16 = VAR15;
+return (VAR13);
+}

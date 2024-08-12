@@ -1,0 +1,14 @@
+static void FUN1(VAR1 *VAR2)
+{
+    target_long VAR3 = FUN2(VAR2->VAR4);
+    VAR5 *VAR6 = FUN3();
+    VAR5 *VAR7 = FUN3();
+    FUN4(VAR8, VAR9[FUN5(VAR2->VAR4)], VAR3, VAR6);
+    FUN6(VAR9[FUN7(VAR2->VAR4)], VAR3, VAR9[FUN5(VAR2->VAR4)]);
+    FUN8(VAR7);
+    FUN9(VAR6);
+    FUN10(VAR9[FUN7(VAR2->VAR4)], 0);
+    FUN9(VAR7);
+    if (FUN11(FUN12(VAR2->VAR4) != 0))
+        FUN13(VAR2, VAR9[FUN7(VAR2->VAR4)]);
+}

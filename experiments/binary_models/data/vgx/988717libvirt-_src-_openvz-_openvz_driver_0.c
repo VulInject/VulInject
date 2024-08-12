@@ -1,0 +1,45 @@
+static int
+FUN1(virDomainPtr VAR1, unsigned int VAR2)
+{
+FUN2(VAR3) VAR4 = FUN3(VAR5, "", "", NULL);
+struct VAR6 *VAR7 = VAR1->VAR8->VAR9;
+VAR10 *VAR11 = NULL;
+int VAR12 = -1;
+int VAR13;
+
+FUN4(0, -1);
+
+FUN5(&VAR7->VAR14) {
+VAR11 = FUN6(VAR7->VAR15, VAR1->VAR16);
+}
+
+if (!VAR11) {
+FUN7(VAR17,
+FUN8(""), VAR1->VAR16);
+goto VAR18;
+}
+
+if (FUN9(VAR11, &VAR13, NULL) == -1)
+goto VAR18;
+
+if (VAR13 != VAR19) {
+FUN7(VAR20, "",
+FUN8(""));
+goto VAR18;
+}
+
+FUN10(VAR4, VAR11->VAR21->VAR16);
+
+if (FUN11(VAR4, NULL) < 0)
+goto VAR18;
+
+VAR11->VAR22 = FUN12(VAR11->VAR21->VAR16);
+VAR11->VAR21->VAR23 = VAR11->VAR22;
+VAR1->VAR23 = VAR11->VAR22;
+FUN13(VAR11, VAR24, VAR25);
+VAR12 = 0;
+
+VAR18:
+FUN14(&VAR11);
+return VAR12;
+}

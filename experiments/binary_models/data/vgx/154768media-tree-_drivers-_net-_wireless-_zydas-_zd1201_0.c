@@ -1,0 +1,81 @@
+static int FUN1(struct VAR1 *VAR2, int VAR3, void *VAR4, int VAR5, int VAR6)
+{
+int VAR7;
+unsigned char *VAR8;
+int VAR9;
+char VAR10=0;
+struct VAR11 *VAR11;
+gfp_t VAR12 = VAR6 ? VAR13 : VAR14;
+
+VAR5 += 4;			
+
+VAR2->VAR15 = 0;
+VAR2->VAR16 = 0;
+for (VAR10=0; VAR5 > 0; VAR10++) {
+VAR8 = FUN2(16, VAR12);
+if (!VAR8)
+return -VAR17;
+VAR11 = FUN3(0, VAR12);
+if (!VAR11) {
+FUN4(VAR8);
+return -VAR17;
+}
+memset(VAR8, 0, 16);
+VAR9 = VAR5>12 ? 12 : VAR5;
+VAR8[0] = VAR18;
+VAR8[1] = VAR10;
+VAR8[2] = 0;
+VAR8[3] = 0;
+if (VAR8[1] == 0) {
+
+*(VAR19*)&VAR8[4] = FUN5((VAR5-2+1)/2);
+*(VAR19*)&VAR8[6] = FUN5(VAR3);
+memcpy(VAR8+8, VAR4, VAR9-4);
+VAR4 += VAR9-4;
+} else {
+memcpy(VAR8+4, VAR4, VAR9);
+VAR4 += VAR9;
+}
+
+VAR5 -= VAR9;
+
+FUN6(VAR11, VAR2->VAR20, FUN7(VAR2->VAR20,
+VAR2->VAR21), VAR8, 16, VAR22, VAR2);
+VAR7 = FUN8(VAR11, VAR12);
+if (VAR7)
+goto VAR7;
+}
+
+VAR8 = FUN2(16, VAR12);
+if (!VAR8)
+return -VAR17;
+VAR11 = FUN3(0, VAR12);
+if (!VAR11) {
+FUN4(VAR8);
+return -VAR17;
+}
+*((VAR23*)VAR8) = FUN9(VAR24);
+*((VAR19*)&VAR8[4]) = 
+FUN5(VAR25|VAR26);
+*((VAR19*)&VAR8[6]) = FUN5(VAR3);
+*((VAR19*)&VAR8[8]) = FUN5(0);
+*((VAR19*)&VAR8[10]) = FUN5(0);
+FUN6(VAR11, VAR2->VAR20, FUN7(VAR2->VAR20, VAR2->VAR21),
+VAR8, 16, VAR22, VAR2);
+VAR7 = FUN8(VAR11, VAR12);
+if (VAR7)
+goto VAR7;
+
+if (VAR6) {
+FUN10(VAR2->VAR27, VAR2->VAR15);
+if (!VAR2->VAR16 || FUN11(*(VAR19*)&VAR2->VAR28[6]) != VAR3) {
+FUN12(&VAR2->VAR20->VAR29, "");
+}
+}
+
+return 0;
+VAR7:
+FUN4(VAR8);
+FUN13(VAR11);
+return VAR7;
+}

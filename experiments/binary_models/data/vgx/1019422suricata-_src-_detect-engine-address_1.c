@@ -1,0 +1,1 @@
+static int FUN1 ( void ) { VAR1 * VAR2 , * VAR3 , * VAR4 ; VAR2 = FUN2 ( "" ) ; VAR3 = FUN2 ( "" ) ; if ( FUN3 ( NULL , VAR2 , VAR3 , & VAR4 ) == - 1 ) { VAR5 } if ( VAR4 == NULL ) { VAR5 } FUN4 ( VAR3 ) ; FUN4 ( VAR4 ) ; return 1 ; error FUN4 ( VAR2 ) ; FUN4 ( VAR3 ) ; FUN4 ( VAR4 ) ; return 0 ; }

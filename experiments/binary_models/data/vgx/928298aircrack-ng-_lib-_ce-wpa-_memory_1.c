@@ -1,0 +1,1 @@
+void FUN1 ( unsigned char * VAR1 , void * VAR2 , unsigned int VAR3 , unsigned int VAR4 ) { int VAR5 ; for ( VAR5 = 0 ; VAR5 < VAR3 ; VAR5 ++ ) { * VAR1 ++ = ( ( unsigned char * ) VAR2 ) [ FUN2 ( VAR5 , VAR4 ) ] ; } }

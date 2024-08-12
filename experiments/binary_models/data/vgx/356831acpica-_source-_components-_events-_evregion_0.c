@@ -1,0 +1,42 @@
+FUN1 (
+VAR1     *VAR2,
+ACPI_ADR_SPACE_TYPE     VAR3,
+UINT32                  VAR4)
+{
+ACPI_REG_WALK_INFO      VAR5;
+
+
+FUN2 (VAR6);
+
+
+if ((VAR3 == VAR7) ||
+(VAR3 == VAR8) ||
+(VAR3 == VAR9))
+{
+VAR10;
+}
+
+VAR5.VAR3 = VAR3;
+VAR5.VAR4 = VAR4;
+VAR5.VAR11 = 0;
+
+FUN3 ((VAR12,
+"",
+FUN4 (VAR5.VAR3)));
+
+
+(void) FUN5 (VAR13, VAR2, VAR14,
+VAR15, VAR16, NULL, &VAR5, NULL);
+
+
+if (VAR3 == VAR17 || VAR3 == VAR18)
+{
+FUN6 (VAR2, VAR3);
+}
+
+FUN3 ((VAR12,
+"",
+VAR5.VAR11, FUN4 (VAR5.VAR3)));
+
+VAR10;
+}

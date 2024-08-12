@@ -1,0 +1,1 @@
+( VAR1 ) ; int FUN1 ( struct VAR2 * VAR3 , u16 VAR4 , const VAR5 * VAR6 , size_t VAR7 ) { return FUN2 ( VAR3 -> VAR8 , VAR9 , VAR3 -> VAR10 , VAR4 , VAR6 , VAR7 ) ; }

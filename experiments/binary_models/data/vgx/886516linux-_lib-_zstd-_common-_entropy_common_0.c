@@ -1,0 +1,7 @@
+static VAR1 FUN1(VAR2* VAR3, size_t VAR4, VAR5* VAR6,
+VAR5* VAR7, VAR5* VAR8,
+const void* VAR9, size_t VAR10,
+void* VAR11, size_t VAR12)
+{
+return FUN2(VAR3, VAR4, VAR6, VAR7, VAR8, VAR9, VAR10, VAR11, VAR12, 0);
+}

@@ -1,0 +1,28 @@
+int FUN1(struct VAR1 *VAR2, int VAR3, int VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR2);
+struct rgmii_regs VAR7 *VAR8 = VAR6->VAR9;
+
+FUN3(VAR6, "" VAR10, VAR3);
+
+
+if (VAR3 < 0 || !FUN4(VAR4)) {
+FUN5(VAR11 "",
+VAR2->VAR6.VAR12);
+return -VAR13;
+}
+
+FUN6(&VAR6->VAR14);
+
+
+FUN7(&VAR8->VAR15, FUN8(&VAR8->VAR15) | FUN9(VAR4, VAR3));
+
+FUN5(VAR16 "",
+VAR2->VAR6.VAR12, VAR3, FUN10(VAR4));
+
+++VAR6->VAR17;
+
+FUN11(&VAR6->VAR14);
+
+return 0;
+}

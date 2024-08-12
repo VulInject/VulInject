@@ -1,0 +1,1 @@
+extern int FUN1 ( void ) extern int FUN2 ( void ) extern int FUN3 ( void ) extern int FUN4 ( void ) extern int FUN5 ( void ) extern int FUN6 ( void ) extern int FUN7 ( void ) ulong FUN8 ( long VAR1 ) { int VAR2 = 0 ; if ( VAR1 < 0 ) { VAR2 |= 0x80000000 ; } if ( VAR1 > 0 ) { VAR2 |= 0x40000000 ; } if ( VAR1 == 0 ) { VAR2 |= 0x20000000 ; } return VAR2 ; }

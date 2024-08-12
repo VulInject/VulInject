@@ -1,0 +1,1 @@
+void FUN1 ( pdu_counter_t VAR1 , uint8_t VAR2 ) { int VAR3 = FUN2 ( VAR2 ) ; VAR1 [ VAR3 ] ++ ; }

@@ -1,0 +1,1 @@
+( VAR1 ) ; void FUN1 ( const struct VAR2 * VAR3 ) { struct VAR4 * VAR5 ; FUN2 ( & VAR6 ) ; FUN3 ( , , ) { if ( VAR5 -> VAR3 == VAR3 ) { FUN4 ( & VAR5 -> VAR7 ) ; break ; } } FUN5 ( & VAR6 ) ; }

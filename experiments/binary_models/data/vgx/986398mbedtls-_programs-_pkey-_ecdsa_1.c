@@ -1,0 +1,1 @@
+static void FUN1 ( const char * VAR1 , unsigned char * VAR2 , size_t VAR3 ) { int VAR4 ; FUN2 ( "" , VAR1 ) ; for ( VAR4 = 0 ; VAR4 < VAR3 ; VAR4 ++ ) { FUN2 ( "" , "" [ VAR2 [ VAR4 ] / 16 ] , "" [ VAR2 [ VAR4 ] % 16 ] ) ; } FUN2 ( "" ) ; }

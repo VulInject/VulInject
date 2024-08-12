@@ -1,0 +1,11 @@
+void
+FUN1(void)	
+{
+int VAR1, VAR2;
+VAR2 = FUN2(&VAR3);
+for (VAR1 = 0; VAR1 < VAR4; VAR1++)
+if (VAR1 != VAR2 && VAR5[VAR1].VAR6[0] && VAR5[VAR1].VAR7 <= 1) {
+FUN3(&VAR5[VAR2], &VAR5[VAR1]);
+VAR5[VAR1].VAR6[0] = 0;
+}
+}

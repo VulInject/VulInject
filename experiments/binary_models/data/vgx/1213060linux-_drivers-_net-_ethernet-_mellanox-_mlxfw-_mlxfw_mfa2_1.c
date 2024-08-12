@@ -1,0 +1,1 @@
+static bool FUN1 ( const struct VAR1 * VAR2 ) { const struct VAR3 * VAR4 ; u16 VAR5 ; FUN2 ( "" ) ; FUN3 ( , , , , ) { if ( ! VAR4 ) { FUN4 ( "" ) ; return false ; } } FUN3 ( , , , , ) { if ( ! VAR4 ) { FUN4 ( "" ) ; return false ; } if ( ! FUN5 ( VAR2 , VAR4 , VAR5 ) ) { return false ; } } return true ; }

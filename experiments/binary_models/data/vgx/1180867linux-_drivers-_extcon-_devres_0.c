@@ -1,0 +1,9 @@
+}
+FUN1(VAR1);
+
+
+void FUN2(struct VAR2 *VAR3, struct VAR4 *VAR5)
+{
+FUN3(FUN4(VAR3, VAR6,
+VAR7, VAR5));
+}

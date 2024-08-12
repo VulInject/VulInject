@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , char VAR3 ) { VAR2 -> VAR4 [ VAR2 -> VAR5 ++ ] = VAR3 ; }

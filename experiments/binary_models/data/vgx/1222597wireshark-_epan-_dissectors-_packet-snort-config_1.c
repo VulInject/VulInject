@@ -1,0 +1,1 @@
+static gboolean FUN1 ( gpointer VAR1 , gpointer VAR2 , gpointer user_data VAR3 ) { char * VAR4 = ( char * ) VAR1 ; char * VAR5 = ( char * ) VAR2 ; FUN2 ( VAR4 ) ; return VAR6 ; }

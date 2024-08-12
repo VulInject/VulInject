@@ -1,0 +1,69 @@
+static VAR1 FUN1(VAR2* VAR3)
+{
+BOOL VAR4 = VAR5;
+VAR6* VAR7;
+
+if (!VAR3 || !VAR3->VAR8)
+return VAR5;
+
+if ((VAR3->VAR9 > VAR10) || (VAR3->VAR11 > VAR10))
+return VAR5;
+
+VAR7 = (VAR6*)VAR3->VAR12;
+if (!VAR7)
+return VAR5;
+VAR4 = !VAR7->VAR13 || !VAR7->VAR14;
+
+if (VAR7->VAR14)
+{
+if ((VAR7->VAR14->VAR9 != (int)VAR3->VAR9) ||
+(VAR7->VAR14->VAR11 != (int)VAR3->VAR11))
+VAR4 = VAR15;
+}
+
+if (!VAR4)
+return VAR15;
+
+FUN2(VAR3);
+VAR7->VAR13 = FUN3(VAR16);
+
+if (!VAR7->VAR13)
+goto VAR17;
+
+VAR7->VAR14 = FUN4(VAR7->VAR13);
+
+if (!VAR7->VAR14)
+goto VAR17;
+
+switch (VAR3->VAR18)
+{
+case VAR19:
+VAR7->VAR14->VAR20 = VAR3->VAR21;
+break;
+
+case VAR22:
+
+break;
+
+default:
+break;
+}
+
+VAR7->VAR14->VAR9 = (int)FUN5(VAR23, VAR3->VAR9);
+VAR7->VAR14->VAR11 = (int)FUN5(VAR23, VAR3->VAR11);
+VAR7->VAR14->VAR24 = 0;
+VAR7->VAR14->VAR25 = (VAR26){ VAR3->VAR27, 1 };
+VAR7->VAR14->VAR28 = (VAR26){ 1, VAR3->VAR27 };
+FUN6(VAR7->VAR14, "", "", VAR29);
+FUN6(VAR7->VAR14, "", "", VAR29);
+VAR7->VAR14->VAR30 |= VAR31;
+VAR7->VAR14->VAR32 = VAR33;
+
+if (FUN7(VAR7->VAR14, VAR7->VAR13, NULL) < 0)
+goto VAR17;
+
+return VAR15;
+VAR17:
+FUN2(VAR3);
+return VAR5;
+}

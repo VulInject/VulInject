@@ -1,0 +1,121 @@
+static int FUN1(pTHX_ int VAR1, ...) {
+int VAR2 = 0;
+
+va_list VAR3;
+int VAR4 = 0;
+char *VAR5;
+
+VAR6;
+
+if ((VAR1 < 0) || (VAR1 >= VAR7))
+return -1;
+
+FUN2(VAR3, VAR1);
+
+VAR8;
+VAR9;
+
+FUN3(VAR10);
+
+if (VAR11 == VAR1) {
+VAR5 = FUN4(VAR3, char *);
+} else if (VAR12 == VAR1) {
+VAR13 *VAR14;
+VAR15 *VAR16;
+
+VAR17 *VAR18 = FUN5();
+VAR19 *VAR20 = FUN6();
+
+VAR5 = FUN4(VAR3, char *);
+
+VAR14 = FUN4(VAR3, VAR13 *);
+VAR16 = FUN4(VAR3, VAR15 *);
+
+if (-1 == FUN7(aTHX_ VAR14, VAR18)) {
+FUN8(VAR18);
+FUN9(VAR18);
+VAR18 = (VAR17 *)&VAR21;
+VAR4 = -1;
+}
+
+if (-1 == FUN10(aTHX_ VAR16, VAR14, VAR20)) {
+FUN11(VAR20);
+FUN12(VAR20);
+VAR20 = (VAR19 *)&VAR21;
+VAR4 = -1;
+}
+
+FUN13(FUN14(FUN15(VAR14->VAR1, 0)));
+FUN13(FUN14(FUN16((VAR22 *)VAR18)));
+FUN13(FUN14(FUN16((VAR22 *)VAR20)));
+} else if (VAR23 == VAR1) {
+VAR5 = FUN4(VAR3, char *);
+
+FUN13(FUN14(FUN17(FUN4(VAR3, int))));
+FUN13(FUN14(FUN15(FUN4(VAR3, char *), 0)));
+} else if (VAR24 == VAR1) {
+VAR25 *VAR26;
+VAR19 *VAR27 = FUN6();
+
+VAR5 = FUN4(VAR3, char *);
+
+VAR26 = FUN4(VAR3, VAR25 *);
+
+if (-1 == FUN18(aTHX_ VAR26, VAR27)) {
+FUN11(VAR27);
+FUN12(VAR27);
+VAR27 = (VAR19 *)&VAR21;
+VAR4 = -1;
+}
+
+FUN13(FUN14(FUN16((VAR22 *)VAR27)));
+} else if (VAR28 == VAR1) {
+cdtime_t VAR29;
+VAR5 = FUN4(VAR3, char *);
+
+VAR29 = FUN4(VAR3, VAR30);
+
+FUN13(FUN14(FUN19(FUN20(VAR29))));
+FUN13(FUN14(FUN15(FUN4(VAR3, char *), 0)));
+} else if (VAR31 == VAR1) {
+cdtime_t VAR29;
+VAR5 = "";
+
+VAR29 = FUN4(VAR3, VAR30);
+
+FUN13(FUN14(FUN17((VAR32)VAR28)));
+FUN13(FUN14(FUN19(FUN20(VAR29))));
+FUN13(FUN14(FUN15(FUN4(VAR3, char *), 0)));
+} else if (VAR33 == VAR1) {
+VAR5 = "";
+FUN13(FUN14(FUN17((VAR32)VAR1)));
+} else if (VAR34 == VAR1) {
+VAR5 = "";
+FUN13(FUN14(FUN17((VAR32)VAR1)));
+} else { 
+VAR5 = "";
+FUN13(FUN14(FUN17((VAR32)VAR1)));
+}
+
+VAR35;
+
+VAR2 = FUN21(aTHX_ VAR5);
+
+VAR36;
+if (FUN22(VAR37)) {
+if (VAR23 != VAR1)
+FUN23("", VAR5, FUN24(VAR37));
+VAR4 = -1;
+} else if (0 < VAR2) {
+VAR22 *VAR38 = VAR39;
+if (!FUN22(VAR38))
+VAR4 = -1;
+}
+
+VAR35;
+VAR40;
+VAR41;
+
+FUN25(VAR3);
+return VAR4;
+}

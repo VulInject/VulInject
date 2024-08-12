@@ -1,0 +1,11 @@
+VAR1 *FUN1(VAR2 *VAR3)
+{
+    VAR4 *VAR5;
+    VAR5 = FUN2(sizeof(*VAR5));
+    VAR5->VAR3 = VAR3;
+    VAR5->VAR6 = VAR3->VAR7 / 10;
+    VAR5->VAR8 = false;
+    VAR5->VAR9 = FUN3(VAR5, &VAR10);
+    FUN4(&VAR5->VAR11, VAR12, VAR5, VAR13);
+    return VAR5->VAR9;
+}

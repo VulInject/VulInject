@@ -1,0 +1,87 @@
+static enum VAR1 FUN1(
+struct VAR2 *VAR3,
+struct VAR4 *VAR5)
+{
+enum bp_result VAR6 = VAR7;
+DIG_TRANSMITTER_CONTROL_PARAMETERS_V2 VAR8;
+enum connector_id VAR9 =
+FUN2(VAR5->VAR10);
+
+memset(&VAR8, 0, sizeof(VAR8));
+
+switch (VAR5->VAR11) {
+case VAR12:
+case VAR13:
+case VAR14:
+case VAR15:
+case VAR16:
+case VAR17:
+case VAR18:
+break;
+default:
+return VAR19;
+}
+
+switch (VAR5->VAR20) {
+case VAR21:
+if ((VAR22 == VAR9) ||
+(VAR23 == VAR9))
+
+VAR8.VAR24.VAR25 = 1;
+
+
+VAR8.VAR26 =
+FUN3((VAR27)VAR5->VAR10.VAR28);
+break;
+case VAR29:
+
+VAR8.VAR30.VAR31 = (VAR27)VAR5->VAR32;
+VAR8.VAR30.VAR33 = (VAR27)VAR5->VAR34;
+break;
+default:
+
+if (VAR35 < VAR5->VAR36) {
+
+VAR8.VAR24.VAR25 = 1;
+
+
+VAR8.VAR37 =
+FUN3((VAR38)(VAR5->VAR39 / 20));
+} else
+
+VAR8.VAR37 =
+FUN3((VAR38)(VAR5->VAR39 / 10));
+break;
+}
+
+
+
+VAR8.VAR24.VAR40 = VAR5->VAR41;
+
+if ((VAR13 == VAR5->VAR11)
+|| (VAR15 == VAR5->VAR11)
+|| (VAR17 == VAR5->VAR11))
+
+VAR8.VAR24.VAR42 = 1;
+
+if (VAR43 == VAR5->VAR44)
+
+VAR8.VAR24.VAR45 = 1;
+
+if (VAR46 == VAR9 ||
+VAR47 == VAR9)
+
+VAR8.VAR24.VAR48 = 1;
+
+
+VAR8.VAR24.VAR49 =
+(VAR27)VAR3->VAR50->FUN4(
+VAR5->VAR11);
+
+VAR8.VAR51 = (VAR27)VAR5->VAR20;
+
+if (FUN5(VAR52, VAR8))
+VAR6 = VAR53;
+
+return VAR6;
+}

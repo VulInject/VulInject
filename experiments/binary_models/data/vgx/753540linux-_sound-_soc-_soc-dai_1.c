@@ -1,0 +1,1 @@
+u64 FUN1 ( struct VAR1 * VAR2 , int VAR3 ) { const struct VAR4 * VAR5 = VAR2 -> VAR6 -> VAR5 ; int VAR7 = 0 ; int VAR8 , VAR9 = 0 , VAR10 = VAR3 ; if ( VAR5 ) { VAR9 = VAR5 -> VAR11 ; } if ( VAR9 < VAR10 ) { VAR10 = VAR9 ; } for ( VAR8 = 0 ; VAR8 < VAR10 ; VAR8 ++ ) { VAR7 |= VAR5 -> VAR12 [ VAR8 ] ; } return VAR7 ; }

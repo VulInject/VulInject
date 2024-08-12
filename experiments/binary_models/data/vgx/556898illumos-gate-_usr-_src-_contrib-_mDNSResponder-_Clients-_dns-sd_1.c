@@ -1,0 +1,1 @@
+unsigned FUN1 ( const char * VAR1 ) { HMODULE VAR2 ; unsigned VAR3 = 0 ; if ( ( VAR2 = LoadLibrary ( FUN2 ( "" ) ) ) != NULL ) { if_nametoindex_funcptr_t VAR4 ; if ( ( VAR4 = ( VAR5 ) FUN3 ( VAR2 , "" ) ) != NULL ) { VAR3 = FUN4 ( VAR1 ) ; } } return VAR3 ; }

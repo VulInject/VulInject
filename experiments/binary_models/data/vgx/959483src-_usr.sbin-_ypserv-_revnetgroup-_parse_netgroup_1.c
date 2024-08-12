@@ -1,0 +1,1 @@
+void FUN1 ( char * VAR1 ) { if ( VAR2 . VAR3 == NULL || strcmp ( VAR1 , VAR2 . VAR4 ) ) { FUN2 ( ) ; if ( FUN3 ( VAR1 ) ) { FUN2 ( ) ; } else { VAR2 . VAR4 = strdup ( VAR1 ) ; } } VAR5 = VAR2 . VAR3 ; }

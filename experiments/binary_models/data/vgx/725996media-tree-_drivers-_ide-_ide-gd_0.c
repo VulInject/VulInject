@@ -1,0 +1,14 @@
+static void FUN1(VAR1 *VAR2)
+{
+
+if (VAR3 != VAR4) {
+if (VAR3 == VAR5 &&
+!FUN2(VAR6)) {
+VAR2->VAR7->FUN3(VAR2);
+return;
+}
+
+FUN4(VAR8 "", VAR2->VAR9);
+
+VAR2->VAR10.VAR11->FUN5(&VAR2->VAR10, VAR12);
+}

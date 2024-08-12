@@ -1,0 +1,47 @@
+void FUN1(
+VAR1		*VAR2,
+VAR3 *VAR4)
+{
+VAR5	*VAR6 = (VAR5 *)VAR4->VAR7;
+uint_t			VAR8 = VAR6->VAR9;
+usb_cr_t		VAR10;
+
+FUN2(VAR11, VAR2->VAR12,
+"", (void *)VAR4);
+
+FUN3(FUN4(&VAR2->VAR13));
+
+
+FUN5(VAR2, VAR6);
+
+
+FUN6(VAR2, VAR6);
+
+
+FUN7(VAR2, VAR6);
+
+switch (VAR8) {
+case VAR14:
+VAR10 = VAR15;
+break;
+case VAR16:
+case VAR17:
+
+VAR10 = (VAR8 ==
+VAR16) ?
+VAR18: VAR19;
+
+
+VAR6->VAR9 = VAR20;
+
+break;
+}
+
+
+if ((VAR4->VAR21.VAR22 & VAR23) ==
+VAR24) {
+
+FUN8(
+VAR2, VAR6, VAR10);
+}
+}

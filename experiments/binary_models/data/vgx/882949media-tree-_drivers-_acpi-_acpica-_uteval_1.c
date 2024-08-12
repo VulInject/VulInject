@@ -1,0 +1,1 @@
+acpi_status FUN1 ( struct VAR1 * VAR2 , VAR3 * VAR4 ) { union VAR5 * VAR6 ; acpi_status VAR7 ; FUN2 ( VAR8 ) ; VAR7 = FUN3 ( VAR2 , VAR9 , VAR10 , & VAR6 ) ; if ( FUN4 ( VAR7 ) ) { if ( VAR11 == VAR7 ) { FUN5 ( ( VAR12 , "" , FUN6 ( VAR2 ) ) ) ; * VAR4 = VAR13 ; VAR7 = VAR14 ; } FUN7 ( VAR7 ) ; } * VAR4 = ( VAR3 ) VAR6 -> VAR15 . VAR16 ; FUN8 ( VAR6 , NULL ) ; FUN7 ( VAR7 ) ; }

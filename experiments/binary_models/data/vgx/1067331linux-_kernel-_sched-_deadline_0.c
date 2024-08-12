@@ -1,0 +1,34 @@
+int FUN1(void)
+{
+u64 VAR1 = FUN2();
+u64 VAR2 = FUN3();
+u64 VAR3 = FUN4(VAR2, VAR1);
+u64 VAR4 = ++VAR5;
+struct VAR6 *VAR7;
+int VAR8, VAR9, VAR10 = 0;
+unsigned long VAR11;
+
+
+FUN5(VAR8) {
+FUN6();
+
+if (FUN7(VAR8, VAR4))
+goto VAR12;
+
+VAR7 = FUN8(VAR8);
+VAR9 = FUN9(VAR8);
+
+FUN10(&VAR7->VAR13, VAR11);
+if (VAR3 * VAR9 < VAR7->VAR14)
+VAR10 = -VAR15;
+FUN11(&VAR7->VAR13, VAR11);
+
+VAR12:
+FUN12();
+
+if (VAR10)
+break;
+}
+
+return VAR10;
+}

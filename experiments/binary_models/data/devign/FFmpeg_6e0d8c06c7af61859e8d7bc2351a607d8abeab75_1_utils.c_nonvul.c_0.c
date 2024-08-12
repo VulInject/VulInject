@@ -1,0 +1,41 @@
+void FUN1(VAR1 *VAR2)
+{
+    memset(VAR2, 0, sizeof(VAR1));
+    VAR2->VAR3 = &VAR4;
+    VAR2->VAR5 = 800 * 1000;
+    VAR2->VAR6 = VAR2->VAR5 * 10;
+    VAR2->VAR7 = 2;
+    VAR2->VAR8 = 31;
+    VAR2->VAR9 = VAR10 * 2;
+    VAR2->VAR11 = VAR10 * 31;
+    VAR2->VAR12 = "";
+    VAR2->VAR13 = 0.5;
+    VAR2->VAR14 = 3;
+    VAR2->VAR15 = 1.25;
+    VAR2->VAR16 = 1.25;
+    VAR2->VAR17 = -0.8;
+    VAR2->VAR18 = 0.0;
+    VAR2->VAR19 = 3;
+    VAR2->VAR20 = 1;
+    VAR2->VAR21 = VAR22;
+    VAR2->VAR23 = 1;
+    VAR2->VAR24 = 25;
+    VAR2->VAR25 = 50;
+    VAR2->VAR26 = VAR27;
+    VAR2->VAR28 = VAR29;
+    VAR2->VAR30 = VAR31;
+    VAR2->VAR32 = VAR33;
+    VAR2->VAR34 = VAR35;
+    VAR2->VAR36 = 1;
+    VAR2->VAR37 = 8;
+    VAR2->VAR38 = VAR10 * VAR2->VAR7;
+    VAR2->VAR39 = VAR10 * VAR2->VAR8;
+    VAR2->VAR40 = (VAR41){0, 1};
+    VAR2->VAR42 = VAR43;
+    VAR2->VAR44 = VAR45;
+    VAR2->VAR46 = VAR47;
+    VAR2->VAR48 = VAR49;
+    VAR2->VAR50 = VAR49;
+    VAR2->VAR51 = NULL;
+    VAR2->VAR52 = VAR53;
+}

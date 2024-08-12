@@ -1,0 +1,35 @@
+int FUN1(VAR1 *VAR2)
+{
+    int VAR3, VAR4 = 0;
+    char *VAR5;
+    if (!VAR2->VAR6)
+    {
+        return 0;
+    }
+    VAR4 |= VAR2->VAR7 & VAR8 ? VAR9 : 0;
+    VAR4 |= VAR2->VAR7 & VAR10 ? VAR11 : 0;
+    for (VAR3 = 0; VAR3 < VAR2->VAR12; VAR3++)
+    {
+        VAR2->VAR13[VAR3].VAR14 = FUN2(NULL, VAR2->VAR13[VAR3].VAR15, VAR4, VAR16, VAR2->VAR17->VAR18, VAR2->VAR19 + VAR2->VAR13[VAR3].VAR20);
+        if (VAR2->VAR13[VAR3].VAR14 == VAR21)
+        {
+            int VAR22 = -VAR23;
+            FUN3(FUN4(VAR2->VAR6), VAR3, VAR2->VAR19 + VAR2->VAR13[VAR3].VAR20, VAR2->VAR19 + VAR2->VAR13[VAR3].VAR20 + VAR2->VAR13[VAR3].VAR15 - 1, VAR22);
+            VAR2->VAR13[VAR3].VAR14 = NULL;
+            for (VAR3--; VAR3 >= 0; VAR3--)
+            {
+                FUN5(VAR2->VAR6, &VAR2->VAR13[VAR3].VAR6);
+                FUN6(VAR2->VAR13[VAR3].VAR14, VAR2->VAR13[VAR3].VAR15);
+                FUN7(FUN8(&VAR2->VAR13[VAR3].VAR6));
+                VAR2->VAR13[VAR3].VAR14 = NULL;
+            }
+            return VAR22;
+        }
+        VAR5 = FUN9("", FUN4(VAR2->VAR6), VAR3);
+        FUN10(&VAR2->VAR13[VAR3].VAR6, FUN11(VAR2->VAR6), VAR5, VAR2->VAR13[VAR3].VAR15, VAR2->VAR13[VAR3].VAR14);
+        FUN12(VAR5);
+        FUN13(VAR2->VAR6, VAR2->VAR13[VAR3].VAR20, &VAR2->VAR13[VAR3].VAR6);
+        FUN14(FUN4(&VAR2->VAR13[VAR3].VAR6), VAR2->VAR13[VAR3].VAR20, VAR2->VAR13[VAR3].VAR20 + VAR2->VAR13[VAR3].VAR15 - 1);
+    }
+    return 0;
+}

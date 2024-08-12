@@ -1,0 +1,7 @@
+void
+FUN1(pTHX_ VAR1 *VAR2)
+{
+VAR3;
+
+FUN2((VAR2), NULL, VAR4, NULL, 0);
+}

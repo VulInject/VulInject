@@ -1,0 +1,103 @@
+static void FUN1(struct VAR1 *VAR1)
+{
+struct VAR2 *VAR3 = VAR1->private;
+unsigned char *VAR4 = VAR1->VAR4;
+struct VAR5 *VAR6 = VAR1->VAR6;
+struct VAR5 *VAR7 = VAR3->VAR7;
+int VAR8, VAR9, VAR10, VAR11, VAR12, VAR13, VAR14, VAR15;
+int VAR16 = 0, VAR17 = 0;
+
+if (VAR3->VAR18 == VAR19) {
+VAR13 = VAR4[2] & 0x10;
+VAR14 = VAR4[2] & 0x08;
+VAR15 = 0;
+VAR8 = VAR4[1] | ((VAR4[0] & 0x07) << 7);
+VAR9 = VAR4[4] | ((VAR4[3] & 0x07) << 7);
+VAR10 = VAR4[5];
+} else {
+VAR13 = VAR4[3] & 1;
+VAR14 = VAR4[3] & 2;
+VAR15 = VAR4[3] & 4;
+VAR8 = VAR4[1] | ((VAR4[2] & 0x78) << (7 - 3));
+VAR9 = VAR4[4] | ((VAR4[3] & 0x70) << (7 - 4));
+VAR10 = VAR4[5];
+}
+
+if (VAR3->VAR20 & VAR21) {
+VAR16 = VAR4[0] & 0x10;
+VAR17 = VAR4[2] & 4;
+}
+
+if (VAR3->VAR20 & VAR22) {
+VAR16 = VAR4[3] & 4;
+VAR17 = VAR4[2] & 4;
+if ((VAR15 = VAR17 && VAR16))
+VAR17 = VAR16 = 0;
+}
+
+VAR11 = VAR4[2] & 1;
+VAR12 = VAR4[2] & 2;
+
+if ((VAR3->VAR20 & VAR23) && VAR10 == 127) {
+FUN2(VAR7, VAR24,  (VAR8 > 383 ? (VAR8 - 768) : VAR8));
+FUN2(VAR7, VAR25, -(VAR9 > 255 ? (VAR9 - 512) : VAR9));
+
+FUN3(VAR7, VAR6, VAR13, VAR14, VAR15);
+
+FUN4(VAR7);
+return;
+}
+
+
+if (VAR3->VAR20 & VAR26) {
+VAR13 |= VAR4[0] & 1;
+VAR14 |= VAR4[0] & 2;
+VAR15 |= VAR4[0] & 4;
+}
+
+FUN3(VAR6, VAR7, VAR13, VAR14, VAR15);
+
+
+if (VAR11 && !VAR12)
+VAR10 = 40;
+
+
+if (VAR11 && VAR12 && !VAR3->VAR27) {
+FUN5(VAR6, VAR28, VAR8);
+FUN5(VAR6, VAR29, VAR9);
+FUN5(VAR6, VAR30, 0);
+FUN6(VAR6, VAR31, 0);
+FUN4(VAR6);
+}
+VAR3->VAR27 = VAR12;
+
+if (VAR10 > 30)
+FUN6(VAR6, VAR32, 1);
+if (VAR10 < 25)
+FUN6(VAR6, VAR32, 0);
+
+if (VAR10 > 0) {
+FUN5(VAR6, VAR28, VAR8);
+FUN5(VAR6, VAR29, VAR9);
+}
+
+FUN5(VAR6, VAR30, VAR10);
+FUN6(VAR6, VAR31, VAR10 > 0);
+
+if (VAR3->VAR20 & VAR33)
+FUN2(VAR6, VAR34, ((VAR4[2] << 1) & 0x08) - ((VAR4[0] >> 4) & 0x07));
+
+if (VAR3->VAR20 & (VAR21 | VAR22)) {
+FUN6(VAR6, VAR35, VAR17);
+FUN6(VAR6, VAR36, VAR16);
+}
+
+if (VAR3->VAR20 & VAR37) {
+FUN6(VAR6, VAR38, VAR4[2] & 4);
+FUN6(VAR6, VAR39, VAR4[0] & 0x10);
+FUN6(VAR6, VAR40, VAR4[3] & 4);
+FUN6(VAR6, VAR41, VAR4[0] & 0x20);
+}
+
+FUN4(VAR6);
+}

@@ -1,0 +1,1 @@
+bool FUN1 ( struct VAR1 * VAR2 , VAR3 * VAR4 ) { struct prefix VAR5 ; struct VAR6 * VAR7 ; FUN2 ( & VAR5 , * VAR4 ) ; VAR7 = FUN3 ( VAR8 , VAR2 -> VAR9 ) ; return VAR7 ?FUN4 ( VAR7 , NULL , & VAR5 , true ) == VAR10 : false ; }

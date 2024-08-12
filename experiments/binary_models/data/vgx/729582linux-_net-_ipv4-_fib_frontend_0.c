@@ -1,0 +1,132 @@
+void FUN1(struct VAR1 *VAR2, struct VAR1 *VAR3)
+{
+struct VAR4 *VAR5 = VAR2->VAR6;
+struct VAR7 *VAR8 = VAR5->VAR8;
+struct VAR1 *VAR9;
+struct VAR1 *VAR10 = VAR2, *VAR11 = NULL;
+__be32 VAR12 = VAR2->VAR13 | ~VAR2->VAR14;
+__be32 VAR15 = VAR2->VAR13 & VAR2->VAR14;
+unsigned int VAR16 = 0;
+int VAR17 = 0;		
+int VAR18 = 1;		
+int VAR19 = 0;	
+
+if (VAR2->VAR20 & VAR21) {
+VAR10 = FUN2(VAR5, VAR15, VAR2->VAR14);
+if (!VAR10) {
+
+if (!VAR5->VAR22)
+FUN3("", VAR23);
+return;
+}
+if (VAR3 && VAR3 != VAR10) {
+FUN3("", VAR23);
+return;
+}
+} else if (!FUN4(VAR15) &&
+(VAR15 != VAR2->VAR24 || VAR2->VAR25 < 32)) {
+if (!(VAR2->VAR20 & VAR26))
+FUN5(VAR27,
+VAR8->VAR28 & VAR29 ? VAR30 : VAR31,
+VAR15, VAR2->VAR25, VAR10, 0);
+VAR17 = 1;
+}
+
+if (VAR5->VAR22)
+goto VAR32;
+
+
+FUN6();
+FUN7(VAR9, VAR5) {
+if (VAR9 == VAR2) {
+
+VAR18 = 0;
+continue;
+}
+
+if (VAR3 && VAR9->VAR14 == VAR3->VAR14 &&
+FUN8(VAR9->VAR13, VAR3))
+continue;
+
+
+if (VAR9->VAR20 & VAR21) {
+
+if (VAR9->VAR14 == VAR10->VAR14 &&
+FUN8(VAR9->VAR13, VAR10))
+VAR11 = VAR10;
+else {
+
+if (!VAR19)
+continue;
+
+if (!VAR11 ||
+VAR9->VAR14 != VAR11->VAR14 ||
+!FUN8(VAR9->VAR13, VAR11))
+VAR11 = FUN2(VAR5,
+VAR9->VAR13,
+VAR9->VAR14);
+if (!VAR11)
+continue;
+if (VAR11->VAR24 != VAR10->VAR24)
+continue;
+}
+} else {
+if (VAR10->VAR24 != VAR9->VAR24)
+continue;
+VAR11 = VAR9;
+if (VAR10 != VAR11)
+VAR19 = 1;
+}
+if (VAR2->VAR24 == VAR9->VAR24)
+VAR16 |= VAR33;
+if (VAR2->VAR34 == VAR9->VAR34)
+VAR16 |= VAR35;
+if (VAR12 == VAR9->VAR34)
+VAR16 |= VAR36;
+if (VAR15 == VAR9->VAR34)
+VAR16 |= VAR37;
+
+if (VAR11 == VAR9 && VAR9->VAR25 < 31) {
+__be32 VAR38 = VAR9->VAR13 | ~VAR9->VAR14;
+__be32 VAR39 = VAR9->VAR13 & VAR9->VAR14;
+
+if (!FUN4(VAR39)) {
+if (VAR2->VAR34 == VAR38 ||
+VAR2->VAR34 == VAR39)
+VAR16 |= VAR35;
+if (VAR12 == VAR38 || VAR12 == VAR39)
+VAR16 |= VAR36;
+if (VAR15 == VAR38 || VAR15 == VAR39)
+VAR16 |= VAR37;
+}
+}
+}
+FUN9();
+
+VAR32:
+if (!(VAR16 & VAR35))
+FUN5(VAR27, VAR40, VAR2->VAR34, 32,
+VAR10, 0);
+if (VAR17 && VAR2->VAR25 < 31) {
+if (!(VAR16 & VAR36))
+FUN5(VAR27, VAR40, VAR12, 32,
+VAR10, 0);
+if (!(VAR16 & VAR37))
+FUN5(VAR27, VAR40, VAR15, 32,
+VAR10, 0);
+}
+if (!(VAR16 & VAR33)) {
+unsigned int VAR41;
+
+FUN5(VAR27, VAR30, VAR2->VAR24, 32, VAR10, 0);
+
+
+VAR41 = FUN10(FUN11(VAR8), VAR8,
+VAR2->VAR24);
+if (VAR18 && VAR41 != VAR30) {
+
+if (FUN12(VAR8, VAR2->VAR24))
+FUN13(FUN11(VAR8));
+}
+}
+}

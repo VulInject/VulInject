@@ -1,0 +1,180 @@
+int
+FUN1(struct VAR1 *VAR2, enum nl80211_iftype VAR3,
+struct VAR4 *VAR5, bool VAR6, bool VAR7)
+{
+u32 VAR8[10], VAR9[3], VAR10, VAR11;
+u8 VAR12;
+int VAR13, VAR14;
+
+VAR10 = 0;
+VAR11 = 0;
+VAR12 = 0;
+
+
+if (VAR6 && (VAR2->VAR15 != VAR16) &&
+(VAR2->VAR15 != VAR17))
+VAR6 = false;
+
+
+if (VAR2->VAR18 == VAR19)
+FUN2(VAR2, false);
+
+VAR12 = VAR5->VAR20;
+switch (VAR12) {
+case VAR21:
+break;
+case VAR22:
+if (VAR2->VAR18 <= VAR23) {
+FUN3(VAR2,
+"");
+return -VAR24;
+}
+break;
+case VAR25:
+if (VAR2->VAR18 < VAR23) {
+FUN3(VAR2,
+"");
+return -VAR24;
+}
+break;
+default:
+FUN3(VAR2,
+"", VAR5->VAR26);
+return -VAR24;
+}
+
+
+if (VAR6) {
+VAR14 = FUN4(VAR2, VAR5, VAR12, true);
+if (VAR14) {
+FUN5(VAR2, VAR27,
+"");
+
+VAR14 = 0;
+} else {
+FUN5(VAR2, VAR27,
+"");
+return 0;
+}
+}
+
+
+if (VAR2->VAR18 != VAR28) {
+
+if (VAR2->VAR29 < VAR30) {
+
+for (VAR13 = 0; VAR13 < 10; VAR13++)
+VAR8[VAR13] = FUN6(VAR2,
+FUN7(VAR13));
+
+} else {
+VAR8[0] = FUN6(VAR2,
+FUN7(0));
+}
+
+
+if (VAR2->VAR18 == VAR23) {
+VAR10 = FUN6(VAR2, VAR31);
+VAR11 = FUN6(VAR2, VAR32);
+}
+}
+
+
+
+VAR9[0] = FUN6(VAR2, VAR33) &
+VAR34;
+VAR9[1] = FUN6(VAR2, VAR35);
+VAR9[2] = FUN6(VAR2, VAR36);
+
+
+
+if (VAR2->VAR18 == VAR19 &&
+(VAR2->VAR15 <= VAR37)) {
+if (!VAR6 && VAR2->VAR38 != NULL)
+FUN8(VAR2);
+}
+
+
+VAR14 = FUN9(VAR2, VAR5);
+if (VAR14)
+return VAR14;
+
+
+if (VAR2->VAR29 >= VAR30)
+FUN10(VAR2, VAR39, FUN11(0));
+else
+FUN10(VAR2, VAR39 | 0x40,
+FUN11(0));
+
+
+VAR14 = FUN12(VAR2, VAR12, VAR7);
+if (VAR14)
+return VAR14;
+
+
+FUN13(VAR2);
+
+
+FUN14(VAR2, VAR5);
+
+
+FUN15(VAR2, VAR5);
+
+
+
+
+
+if (VAR2->VAR18 != VAR28) {
+if (VAR2->VAR29 < VAR30) {
+for (VAR13 = 0; VAR13 < 10; VAR13++)
+FUN10(VAR2, VAR8[VAR13],
+FUN7(VAR13));
+} else {
+FUN10(VAR2, VAR8[0],
+FUN7(0));
+}
+
+if (VAR2->VAR18 == VAR23) {
+FUN10(VAR2, VAR10, VAR31);
+FUN10(VAR2, VAR11, VAR32);
+}
+}
+
+
+FUN16(VAR2, VAR33, VAR9[0]);
+
+
+FUN10(VAR2, VAR9[1], VAR35);
+FUN10(VAR2, VAR9[2], VAR36);
+
+
+FUN17(VAR2, VAR3);
+
+
+VAR14 = FUN4(VAR2, VAR5, VAR12, false);
+if (VAR14) {
+FUN3(VAR2,
+"", VAR14);
+return VAR14;
+}
+
+
+VAR14 = FUN18(VAR2);
+if (VAR14)
+return VAR14;
+
+
+
+FUN19(VAR2);
+
+
+
+if (VAR2->VAR40 && VAR2->VAR18 == VAR19 &&
+VAR3 != VAR41)
+FUN2(VAR2, true);
+
+
+FUN20(VAR2, VAR42, VAR43);
+FUN21(VAR2);
+return 0;
+}

@@ -1,0 +1,63 @@
+int
+FUN1(struct VAR1 *VAR2, void *VAR3,
+struct VAR4 *VAR5)
+{
+struct VAR6 *VAR7 = VAR3;
+struct VAR8 *VAR9 = VAR5->VAR10;
+struct VAR11 *VAR12 = FUN2(VAR2);
+struct VAR13 *VAR14 = NULL;
+int VAR15;
+
+if (FUN3(VAR12->VAR16))
+return -VAR17;
+
+if (VAR7->VAR18 == 0)
+return -VAR19;
+
+if (VAR7->VAR18 % sizeof(VAR20) != 0)
+return -VAR19;
+
+if (VAR7->VAR21 != 0) {
+FUN4("", VAR7->VAR21);
+return -VAR19;
+}
+
+if (VAR7->VAR22 != 0) {
+FUN4("", VAR7->VAR22);
+return -VAR19;
+}
+
+VAR15 = FUN5(VAR12, VAR9);
+if (VAR15)
+return VAR15;
+
+VAR14 = FUN6(VAR2, VAR7->VAR18, true, VAR23);
+if (FUN7(VAR14))
+return FUN8(VAR14);
+
+VAR14->VAR24 = VAR25;
+
+if (FUN9(VAR14->VAR26.VAR27,
+(void VAR28 *)(VAR29)VAR7->VAR3,
+VAR7->VAR18)) {
+VAR15 = -VAR30;
+goto VAR31;
+}
+
+memset(VAR14->VAR26.VAR27 + VAR7->VAR18, 0,
+VAR14->VAR26.VAR26.VAR18 - VAR7->VAR18);
+
+VAR14->VAR32 = FUN10(&VAR14->VAR26);
+if (!VAR14->VAR32) {
+VAR15 = -VAR19;
+goto VAR31;
+}
+
+
+VAR15 = FUN11(VAR5, &VAR14->VAR26.VAR26, &VAR7->VAR33);
+
+VAR31:
+FUN12(&VAR14->VAR26.VAR26);
+
+return VAR15;
+}

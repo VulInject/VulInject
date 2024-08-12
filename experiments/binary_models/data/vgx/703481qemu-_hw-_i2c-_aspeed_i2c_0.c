@@ -1,0 +1,11 @@
+VAR1 *FUN1(VAR2 *VAR3, int VAR4)
+{
+VAR5 *VAR6 = FUN2(VAR3);
+VAR1 *VAR7 = NULL;
+
+if (VAR4 >= 0 && VAR4 < VAR6->VAR8) {
+VAR7 = VAR3->VAR9[VAR4].VAR7;
+}
+
+return VAR7;
+}

@@ -1,0 +1,62 @@
+VAR1 *
+FUN1(VAR1 *VAR2, const VAR3 *VAR4, const u4byte VAR5,
+int VAR6)
+{
+u4byte		VAR7,
+VAR8,
+VAR9,
+VAR10,
+VAR11;
+VAR3	   *VAR12 = VAR2->VAR12;
+VAR3	   *VAR13 = VAR2->VAR13;
+
+VAR2->VAR14 = !VAR6;
+
+if (!VAR15)
+FUN2();
+
+VAR2->VAR16 = (VAR5 + 31) / 32;
+
+VAR12[0] = FUN3(VAR4[0]);
+VAR12[1] = FUN3(VAR4[1]);
+VAR12[2] = FUN3(VAR4[2]);
+VAR12[3] = FUN3(VAR4[3]);
+
+switch (VAR2->VAR16)
+{
+case 4:
+VAR8 = VAR12[3];
+for (VAR7 = 0; VAR7 < 10; ++VAR7)
+FUN4(VAR7);
+break;
+
+case 6:
+VAR12[4] = FUN3(VAR4[4]);
+VAR8 = VAR12[5] = FUN3(VAR4[5]);
+for (VAR7 = 0; VAR7 < 8; ++VAR7)
+FUN5(VAR7);
+break;
+
+case 8:
+VAR12[4] = FUN3(VAR4[4]);
+VAR12[5] = FUN3(VAR4[5]);
+VAR12[6] = FUN3(VAR4[6]);
+VAR8 = VAR12[7] = FUN3(VAR4[7]);
+for (VAR7 = 0; VAR7 < 7; ++VAR7)
+FUN6(VAR7);
+break;
+}
+
+if (!VAR6)
+{
+VAR13[0] = VAR12[0];
+VAR13[1] = VAR12[1];
+VAR13[2] = VAR12[2];
+VAR13[3] = VAR12[3];
+
+for (VAR7 = 4; VAR7 < 4 * VAR2->VAR16 + 24; ++VAR7)
+FUN7(VAR13[VAR7], VAR12[VAR7]);
+}
+
+return VAR2;
+}

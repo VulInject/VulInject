@@ -1,0 +1,31 @@
+FUN1 (struct VAR1 *VAR1,
+CORE_ADDR VAR2, CORE_ADDR VAR3, int VAR4,
+struct VAR5 **VAR6, int VAR7,
+struct VAR8 *VAR9,
+VAR10 *VAR11, VAR10 *VAR12)
+{
+
+int VAR13;
+
+FUN2 (FUN3 (VAR1));
+
+VAR2 = FUN4 (VAR1, VAR2);
+
+if (FUN5 (VAR1, 1, 2))
+{
+CORE_ADDR VAR14 = VAR2;
+FUN6 (VAR1, &VAR14, &VAR13);
+VAR2 = FUN4 (VAR1, VAR2 - VAR13);
+(*VAR12) = VAR2;
+
+}      
+else
+{
+(*VAR12) = VAR2;
+FUN6 (VAR1, VAR12, &VAR13);
+VAR2 = FUN4 (VAR1, VAR2 + VAR13);
+}
+
+(*VAR11) = VAR3;
+return VAR2;
+}

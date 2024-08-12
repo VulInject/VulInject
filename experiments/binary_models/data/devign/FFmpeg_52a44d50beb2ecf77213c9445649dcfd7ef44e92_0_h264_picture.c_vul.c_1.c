@@ -1,0 +1,51 @@
+int FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR3 *VAR5)
+{
+    int VAR6, VAR7;
+    FUN2(!VAR4->VAR8->VAR9[0]);
+    FUN2(VAR5->VAR8->VAR9[0]);
+    FUN2(VAR5->VAR10.VAR8 == VAR5->VAR8);
+    VAR4->VAR10.VAR8 = VAR4->VAR8;
+    VAR6 = FUN3(&VAR4->VAR10, &VAR5->VAR10);
+    if (VAR6 < 0)
+        goto VAR11;
+    VAR4->VAR12 = FUN4(VAR5->VAR12);
+    VAR4->VAR13 = FUN4(VAR5->VAR13);
+    if (!VAR4->VAR12 || !VAR4->VAR13)
+        goto VAR11;
+    VAR4->VAR14 = VAR5->VAR14;
+    VAR4->VAR15 = VAR5->VAR15;
+    for (VAR7 = 0; VAR7 < 2; VAR7++)
+    {
+        VAR4->VAR16[VAR7] = FUN4(VAR5->VAR16[VAR7]);
+        VAR4->VAR17[VAR7] = FUN4(VAR5->VAR17[VAR7]);
+        if (!VAR4->VAR16[VAR7] || !VAR4->VAR17[VAR7])
+            goto VAR11;
+        VAR4->VAR18[VAR7] = VAR5->VAR18[VAR7];
+        VAR4->VAR19[VAR7] = VAR5->VAR19[VAR7];
+    }
+    if (VAR5->VAR20)
+    {
+        VAR4->VAR21 = FUN4(VAR5->VAR21);
+        if (!VAR4->VAR21)
+            goto VAR11;
+        VAR4->VAR20 = VAR4->VAR21->VAR22;
+    }
+    for (VAR7 = 0; VAR7 < 2; VAR7++)
+        VAR4->VAR23[VAR7] = VAR5->VAR23[VAR7];
+    memcpy(VAR4->VAR24, VAR5->VAR24, sizeof(VAR5->VAR24));
+    memcpy(VAR4->VAR25, VAR5->VAR25, sizeof(VAR5->VAR25));
+    VAR4->VAR26 = VAR5->VAR26;
+    VAR4->VAR27 = VAR5->VAR27;
+    VAR4->VAR28 = VAR5->VAR28;
+    VAR4->VAR29 = VAR5->VAR29;
+    VAR4->VAR30 = VAR5->VAR30;
+    VAR4->VAR31 = VAR5->VAR31;
+    VAR4->VAR32 = VAR5->VAR32;
+    VAR4->VAR33 = VAR5->VAR33;
+    VAR4->VAR34 = VAR5->VAR34;
+    VAR4->VAR35 = VAR5->VAR35;
+    return 0;
+VAR11:
+    FUN5(VAR2, VAR4);
+    return VAR6;
+}

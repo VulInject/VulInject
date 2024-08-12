@@ -1,0 +1,43 @@
+static int
+FUN1(void *VAR1, const VAR2 *VAR3, const char *VAR4)
+{
+VAR5 *VAR6 = VAR1;
+struct VAR7 *VAR8 = VAR6->VAR9->VAR10;
+prsyminfo_t VAR11;
+GElf_Sym VAR12;
+
+if (FUN2(VAR8, VAR6->VAR13, VAR4, VAR6->VAR14, &VAR12,
+&VAR11) != 0)
+return (0);
+
+
+if (VAR12.VAR15 == VAR16) {
+if (!VAR6->VAR17) {
+VAR6->VAR17 = VAR18;
+*VAR6->VAR19 = VAR12;
+VAR6->VAR20->VAR21 = VAR11.VAR22;
+VAR6->VAR20->VAR23 = VAR11.VAR24;
+}
+
+return (0);
+}
+
+
+if (FUN3(VAR12.VAR25) == VAR26 &&
+VAR6->VAR27 != (VAR28)-1) {
+psaddr_t VAR29;
+
+if (FUN4(VAR6->VAR9, VAR6->VAR27, VAR6->VAR13, VAR4,
+&VAR29) != 0)
+return (-1); 
+
+VAR12.VAR30 += VAR29;
+}
+
+VAR6->VAR17 = VAR18;
+*VAR6->VAR19 = VAR12;
+VAR6->VAR20->VAR21 = VAR11.VAR22;
+VAR6->VAR20->VAR23 = VAR11.VAR24;
+
+return (1);
+}

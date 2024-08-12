@@ -1,0 +1,1 @@
+static int FUN1 ( unsigned long VAR1 , unsigned int VAR2 , size_t VAR3 ) { unsigned long VAR4 ; int VAR5 ; int VAR6 ; VAR4 = FUN2 ( VAR1 , NULL ) ; VAR6 = ( VAR2 + VAR3 + VAR7 - 1 ) >> VAR8 ; for ( VAR5 = 1 ; VAR5 < VAR6 ; VAR5 ++ ) { if ( FUN2 ( ++ VAR1 ) != ++ VAR4 ) { return 0 ; } } return 1 ; }

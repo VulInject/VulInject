@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , void * VAR3 , int VAR4 ) { hci1394_ioctl_wrvreg_t VAR5 ; int VAR6 ; FUN2 ( VAR2 != NULL ) ; VAR6 = FUN3 ( VAR3 , & VAR5 , sizeof ( VAR7 ) , VAR4 ) ; if ( VAR6 != 0 ) { return ( VAR8 ) ; } VAR6 = FUN4 ( VAR2 -> VAR9 , VAR5 . VAR10 , VAR5 . VAR11 , VAR5 . VAR12 ) ; if ( VAR6 != VAR13 ) { return ( VAR14 ) ; } return ( 0 ) ; }

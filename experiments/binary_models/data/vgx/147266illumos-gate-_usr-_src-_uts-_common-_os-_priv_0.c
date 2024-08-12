@@ -1,0 +1,103 @@
+int
+FUN1(VAR1 *VAR2, VAR3 *VAR4, const VAR5 *VAR6)
+{
+VAR5 *VAR7;
+VAR5 *VAR8;
+int VAR9;
+int VAR10 = VAR11;
+VAR12 *VAR13, *VAR14;
+priv_set_t VAR15;
+
+FUN2(FUN3(&VAR2->VAR16));
+
+
+if (VAR4->VAR17 != VAR18 ||
+VAR4->VAR19 != VAR20 ||
+(VAR4->VAR21 & (sizeof (VAR22) - 1)) != 0 ||
+VAR4->VAR21 > VAR23->VAR24)
+return (VAR25);
+
+FUN4(&VAR2->VAR16);
+
+if (FUN5(VAR6, VAR2, &VAR7, VAR26) != 0) {
+FUN6(&VAR2->VAR16);
+return (VAR11);
+}
+
+VAR8 = FUN7(VAR7);
+
+
+bcopy(VAR4->VAR27, FUN8(VAR8), VAR28);
+
+VAR13 = &VAR8->VAR29;
+VAR14 = &VAR7->VAR29;
+VAR15 = FUN9(VAR6);
+
+FUN10(&FUN11(VAR7), &VAR15);
+
+
+for (VAR9 = 0; VAR9 < VAR18; VAR9++)
+if (!FUN12(&VAR13->VAR30[VAR9], &VAR14->VAR30[VAR9]) &&
+(VAR9 == VAR31 || !FUN12(&VAR13->VAR30[VAR9], &VAR15)))
+break;
+
+FUN13(VAR7);
+
+if (VAR9 < VAR18 || !FUN14(VAR8))
+goto VAR10;
+
+
+if (VAR4->VAR21 > 0) {
+char *VAR32 = (char *)VAR4 + FUN15(VAR4);
+char *VAR33 = VAR32 + VAR4->VAR21;
+
+while (VAR32 < VAR33) {
+VAR34 *VAR35 = (VAR34 *)VAR32;
+VAR36 *VAR37;
+
+switch (VAR35->VAR38) {
+case VAR39:
+VAR37 = (VAR36 *)VAR32;
+if (VAR37->VAR40.VAR41 != sizeof (*VAR37)) {
+VAR10 = VAR25;
+goto VAR10;
+}
+FUN16(VAR8) &= ~VAR42;
+FUN16(VAR8) |= (VAR37->VAR43 & VAR42);
+break;
+default:
+VAR10 = VAR25;
+goto VAR10;
+}
+
+if ((VAR35->VAR41 & (sizeof (VAR22) - 1)) ||
+VAR35->VAR41 < sizeof (*VAR35) ||
+VAR33 - VAR32 > VAR35->VAR41) {
+VAR10 = VAR25;
+goto VAR10;
+}
+
+VAR32 += VAR35->VAR41;
+}
+}
+
+
+if ((FUN16(VAR8) & VAR44) == 0) {
+FUN16(VAR8) |= VAR44;
+FUN17(VAR8);
+}
+
+FUN6(&VAR2->VAR45);
+VAR7 = VAR2->VAR46;
+VAR2->VAR46 = VAR8;
+FUN4(&VAR2->VAR45);
+FUN13(VAR7);
+
+FUN6(&VAR2->VAR16);
+return (0);
+
+VAR10:
+FUN13(VAR8);
+FUN6(&VAR2->VAR16);
+return (VAR10);
+}

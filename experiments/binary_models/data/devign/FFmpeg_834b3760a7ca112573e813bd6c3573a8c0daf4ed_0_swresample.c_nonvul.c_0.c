@@ -1,0 +1,79 @@
+int FUN1(VAR1 *VAR2)
+{
+    VAR2->VAR3 = 0;
+    VAR2->VAR4 = 0;
+    VAR2->VAR5 = 0;
+    FUN2(&VAR2->VAR6);
+    FUN2(&VAR2->VAR7);
+    FUN2(&VAR2->VAR8);
+    FUN2(&VAR2->VAR9);
+    FUN3(&VAR2->VAR10);
+    FUN3(&VAR2->VAR11);
+    VAR2->VAR12.VAR13 = VAR2->VAR14 >= 0x100;
+    VAR2->VAR15.VAR13 = VAR2->VAR16 >= 0x100;
+    VAR2->VAR14 &= 0xFF;
+    VAR2->VAR16 &= 0xFF;
+    if (VAR2->VAR14 >= VAR17)
+    {
+        FUN4(VAR2, VAR18, "", FUN5(VAR2->VAR14));
+        return FUN6(VAR19);
+    }
+    if (VAR2->VAR16 >= VAR17)
+    {
+        FUN4(VAR2, VAR18, "", FUN5(VAR2->VAR16));
+        return FUN6(VAR19);
+    }
+    if (VAR2->VAR20 != VAR21 && VAR2->VAR20 != VAR22)
+    {
+        FUN4(VAR2, VAR18, "", FUN5(VAR2->VAR20));
+        return FUN6(VAR19);
+    }
+    if (VAR2->VAR14 <= VAR21 || VAR2->VAR20 == VAR21)
+    {
+        VAR2->VAR20 = VAR21;
+    }
+    else
+        VAR2->VAR20 = VAR22;
+    if (VAR2->VAR23 != VAR2->VAR24 || (VAR2->VAR25 & VAR26))
+    {
+        VAR2->VAR27 = FUN7(VAR2->VAR27, VAR2->VAR23, VAR2->VAR24, 16, 10, 0, 0.8);
+    }
+    else
+        FUN8(&VAR2->VAR27);
+    if (VAR2->VAR20 != VAR21 && VAR2->VAR27)
+    {
+        FUN4(VAR2, VAR18, "");
+        return -1;
+    }
+    if (!VAR2->VAR28)
+        VAR2->VAR28 = FUN9(VAR2->VAR12.VAR29);
+    if (!VAR2->VAR30)
+        VAR2->VAR30 = FUN9(VAR2->VAR15.VAR29);
+    VAR2->VAR31 = VAR2->VAR30 != VAR2->VAR28;
+    if (!VAR2->VAR12.VAR29)
+        VAR2->VAR12.VAR29 = FUN10(VAR2->VAR28);
+    if (!VAR2->VAR15.VAR29)
+        VAR2->VAR15.VAR29 = FUN10(VAR2->VAR30);
+    FUN11(VAR2->VAR12.VAR29);
+    FUN11(VAR2->VAR15.VAR29);
+    VAR2->VAR32 = VAR33 * VAR2->VAR15.VAR29 / VAR2->VAR12.VAR29 - VAR33 < VAR2->VAR23 / (float)VAR2->VAR24 - 1.0;
+    VAR2->VAR12.VAR34 = FUN12(VAR2->VAR14) / 8;
+    VAR2->VAR35 = FUN12(VAR2->VAR20) / 8;
+    VAR2->VAR15.VAR34 = FUN12(VAR2->VAR16) / 8;
+    VAR2->VAR10 = FUN13(VAR2->VAR20, VAR2->VAR14, VAR2->VAR12.VAR29, 0);
+    VAR2->VAR11 = FUN13(VAR2->VAR16, VAR2->VAR20, VAR2->VAR15.VAR29, 0);
+    VAR2->VAR6 = VAR2->VAR12;
+    VAR2->VAR8 = VAR2->VAR15;
+    VAR2->VAR7 = VAR2->VAR12;
+    VAR2->VAR9 = VAR2->VAR12;
+    if (!VAR2->VAR32)
+    {
+        VAR2->VAR7.VAR29 = VAR2->VAR15.VAR29;
+        VAR2->VAR9.VAR29 = VAR2->VAR15.VAR29;
+    }
+    VAR2->VAR9.VAR34 = VAR2->VAR6.VAR34 = VAR2->VAR7.VAR34 = VAR2->VAR8.VAR34 = VAR2->VAR35;
+    VAR2->VAR9.VAR13 = VAR2->VAR6.VAR13 = VAR2->VAR7.VAR13 = VAR2->VAR8.VAR13 = 1;
+    if (VAR2->VAR31 && FUN14(VAR2) < 0)
+        return -1;
+    return 0;
+}

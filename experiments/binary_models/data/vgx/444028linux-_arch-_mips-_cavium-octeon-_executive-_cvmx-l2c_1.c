@@ -1,0 +1,1 @@
+int FUN1 ( uint32_t VAR1 ) { uint32_t VAR2 ; VAR2 = ( 0x1 << FUN2 ( ) ) - 1 ; VAR1 &= VAR2 ; if ( FUN3 ( VAR3 ) ) { FUN4 ( FUN5 ( 0 ) , VAR1 ) ; } else { FUN4 ( VAR4 , ( FUN6 ( VAR4 ) & ~ 0xFF ) | VAR1 ) ; } return 0 ; }

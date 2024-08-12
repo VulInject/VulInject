@@ -1,0 +1,1 @@
+( VAR1 ) ; void FUN1 ( u16 VAR2 ) { struct VAR3 * VAR4 = VAR5 ; VAR4 -> VAR6 |= VAR2 ; }

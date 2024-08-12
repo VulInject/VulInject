@@ -1,0 +1,39 @@
+static int FUN1(VAR1 *VAR2, const unsigned char *VAR3)
+{
+unsigned long VAR4;
+ulong32 VAR5[16];
+ulong32 VAR6[16];
+
+for (VAR4 = 0; VAR4 < 16; ++VAR4) {
+FUN2(VAR5[VAR4], VAR3 + VAR4 * sizeof(VAR5[VAR4]));
+}
+
+for (VAR4 = 0; VAR4 < 8; ++VAR4) {
+VAR6[VAR4] = VAR2->VAR7.VAR8[VAR4];
+}
+
+VAR6[8] = VAR9[0];
+VAR6[9] = VAR9[1];
+VAR6[10] = VAR9[2];
+VAR6[11] = VAR9[3];
+VAR6[12] = VAR2->VAR7.VAR10[0] ^ VAR9[4];
+VAR6[13] = VAR2->VAR7.VAR10[1] ^ VAR9[5];
+VAR6[14] = VAR2->VAR7.VAR11[0] ^ VAR9[6];
+VAR6[15] = VAR2->VAR7.VAR11[1] ^ VAR9[7];
+
+FUN3(0);
+FUN3(1);
+FUN3(2);
+FUN3(3);
+FUN3(4);
+FUN3(5);
+FUN3(6);
+FUN3(7);
+FUN3(8);
+FUN3(9);
+
+for (VAR4 = 0; VAR4 < 8; ++VAR4) {
+VAR2->VAR7.VAR8[VAR4] = VAR2->VAR7.VAR8[VAR4] ^ VAR6[VAR4] ^ VAR6[VAR4 + 8];
+}
+return VAR12;
+}

@@ -1,0 +1,25 @@
+static void FUN1(gconstpointer VAR1)
+{
+    VAR2 *VAR3;
+    VAR4 *VAR5;
+    VAR6 *VAR7, *VAR8;
+    VAR9 *VAR10;
+    void (*VAR11)(const VAR12 *VAR5, VAR13 *VAR3, VAR9 *VAR10, VAR14 *VAR15, VAR14 *VAR16, int socket) = VAR1;
+    int VAR17[2], VAR18;
+    VAR18 = FUN2(VAR19, VAR20, 0, VAR17);
+    FUN3(VAR18, !=, -1);
+    VAR5 = FUN4(VAR17[1]);
+    VAR3 = FUN5(VAR5, VAR21);
+    VAR10 = FUN6();
+    VAR8 = (VAR6 *)FUN7(&VAR22, &VAR3->VAR23, VAR10, 0);
+    VAR7 = (VAR6 *)FUN7(&VAR22, &VAR3->VAR23, VAR10, 1);
+    FUN8(&VAR22, &VAR3->VAR23);
+    FUN9(&VAR22, &VAR3->VAR23, VAR10, &VAR8->VAR24, &VAR7->VAR24, VAR17[0]);
+    close(VAR17[0]);
+    FUN10(VAR10, VAR7->VAR24.VAR25);
+    FUN11(VAR10);
+    FUN12(VAR3);
+    FUN13(VAR3);
+    FUN14(VAR5);
+    FUN15();
+}

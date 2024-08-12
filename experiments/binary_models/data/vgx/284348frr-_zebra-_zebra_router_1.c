@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( struct VAR2 * VAR3 , uint32_t VAR4 , afi_t VAR5 , safi_t VAR6 ) { struct zebra_router_table VAR7 ; struct VAR1 * VAR8 ; VAR7 . VAR5 = VAR5 ; VAR7 . VAR6 = VAR6 ; VAR7 . VAR4 = VAR4 ; VAR7 . VAR9 = VAR3 -> VAR10 -> VAR9 ; VAR8 = FUN2 ( VAR11 , & VAR12 . VAR13 , & VAR7 ) ; return VAR8 ; }

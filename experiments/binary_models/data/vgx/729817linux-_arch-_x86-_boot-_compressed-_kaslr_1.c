@@ -1,0 +1,1 @@
+static unsigned long FUN1 ( void ) { cfs_time_t VAR1 = 0 ; VAR1 = FUN2 ( VAR1 , VAR2 , sizeof ( VAR2 ) ) ; VAR1 = FUN2 ( VAR1 , VAR3 , sizeof ( * VAR3 ) ) ; return VAR1 ; } static bool VAR4 ; static u64 VAR5 ; static int VAR6 ; VAR7 { VAR8 = 0 , VAR9 , VAR10 , VAR11 , VAR12 , VAR13 = VAR12 + VAR14 - 1 , VAR15 }

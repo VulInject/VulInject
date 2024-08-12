@@ -1,0 +1,9 @@
+void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR4;
+struct VAR5	*VAR6 = &VAR4->VAR7->VAR8;
+
+VAR6->VAR9 = false;
+VAR6->VAR10 = VAR11;
+VAR6->VAR12 = VAR11;
+}

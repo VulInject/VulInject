@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( struct VAR2 * VAR3 , const char * VAR4 , struct VAR1 * VAR5 ) { struct VAR1 * VAR1 = NULL ; VAR1 = FUN2 ( VAR4 , & VAR6 , & VAR5 , 1 ) ; if ( ! VAR1 ) { return VAR7 ; } VAR1 -> VAR8 = & VAR6 ; VAR1 -> VAR9 = VAR3 ; VAR1 -> VAR4 = VAR4 ; VAR1 -> VAR10 = VAR11 ; if ( FUN3 ( VAR1 ) ) { FUN4 ( VAR1 ) ; return NULL ; } return VAR1 ; }

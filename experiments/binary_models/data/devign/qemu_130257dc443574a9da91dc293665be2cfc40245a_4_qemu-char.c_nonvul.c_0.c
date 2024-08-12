@@ -1,0 +1,5 @@
+static VAR1 *FUN1(const char *VAR2, VAR3 *VAR4, VAR5 *VAR6, VAR7 **VAR8)
+{
+    VAR9 *VAR10 = VAR4->VAR11.VAR10;
+    return FUN2(VAR10->VAR12, VAR8);
+}

@@ -1,0 +1,17 @@
+static struct VAR1 *FUN1(struct VAR2 *VAR3, int VAR4)
+{
+struct VAR5 *VAR6;
+struct VAR7 *VAR8 = VAR3->VAR8;
+
+VAR6 = FUN2(sizeof(*VAR6), VAR9);
+if (!VAR6)
+return FUN3(-VAR10);
+
+VAR6->VAR11 = VAR3->VAR12;
+VAR6->VAR13 = VAR4;
+VAR6->VAR14 = ++VAR8->VAR13[VAR4].VAR15;
+FUN4(&VAR6->VAR16, &VAR17, &VAR8->VAR18,
+VAR8->VAR13[VAR4].VAR19, VAR6->VAR14);
+
+return &VAR6->VAR16;
+}

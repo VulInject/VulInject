@@ -1,0 +1,142 @@
+static int FUN1(struct VAR1 *VAR1,
+struct ne_user_memory_region VAR2)
+{
+long VAR3 = 0;
+unsigned long VAR4 = 0;
+unsigned long VAR5 = 0;
+unsigned long VAR6 = 0;
+struct VAR7 *VAR7 = NULL;
+struct VAR8 *VAR9 = VAR10.VAR11->VAR9;
+struct ne_phys_contig_mem_regions VAR12 = {};
+int VAR13 = -VAR14;
+
+VAR13 = FUN2(VAR1, VAR2);
+if (VAR13 < 0)
+return VAR13;
+
+VAR7 = FUN3(sizeof(*VAR7), VAR15);
+if (!VAR7)
+return -VAR16;
+
+VAR5 = VAR2.VAR6 / VAR17;
+
+VAR7->VAR18 = FUN4(VAR5, sizeof(*VAR7->VAR18),
+VAR15);
+if (!VAR7->VAR18) {
+VAR13 = -VAR16;
+
+goto VAR19;
+}
+
+VAR12.VAR20 = FUN4(VAR5,
+sizeof(*VAR12.VAR20),
+VAR15);
+if (!VAR12.VAR20) {
+VAR13 = -VAR16;
+
+goto VAR19;
+}
+
+do {
+VAR4 = VAR7->VAR21;
+
+if (VAR4 == VAR5) {
+FUN5(VAR22.VAR23,
+"");
+
+VAR13 = -VAR16;
+
+goto VAR24;
+}
+
+VAR3 = FUN6(VAR2.VAR25 + VAR6, 1,
+VAR7->VAR18 + VAR4, VAR26);
+
+if (VAR3 < 0) {
+VAR13 = VAR3;
+
+FUN5(VAR22.VAR23,
+"", VAR13);
+
+goto VAR24;
+}
+
+VAR13 = FUN7(VAR1, VAR7->VAR18[VAR4]);
+if (VAR13 < 0)
+goto VAR24;
+
+VAR13 = FUN8(&VAR12,
+FUN9(VAR7->VAR18[VAR4]),
+FUN10(VAR7->VAR18[VAR4]));
+if (VAR13 < 0)
+goto VAR24;
+
+VAR6 += FUN10(VAR7->VAR18[VAR4]);
+
+VAR7->VAR21++;
+} while (VAR6 < VAR2.VAR6);
+
+if ((VAR1->VAR27 + VAR12.VAR28) >
+VAR1->VAR29) {
+FUN5(VAR22.VAR23,
+"",
+VAR1->VAR29);
+
+VAR13 = -VAR30;
+
+goto VAR24;
+}
+
+for (VAR4 = 0; VAR4 < VAR12.VAR28; VAR4++) {
+u64 VAR31 = VAR12.VAR20[VAR4].VAR32;
+u64 VAR33 = FUN11(&VAR12.VAR20[VAR4]);
+
+VAR13 = FUN12(VAR31, VAR33);
+if (VAR13 < 0)
+goto VAR24;
+}
+
+VAR7->VAR6 = VAR2.VAR6;
+VAR7->VAR25 = VAR2.VAR25;
+
+FUN13(&VAR7->VAR34, &VAR1->VAR35);
+
+for (VAR4 = 0; VAR4 < VAR12.VAR28; VAR4++) {
+struct ne_pci_dev_cmd_reply VAR36 = {};
+struct slot_add_mem_req VAR37 = {};
+
+VAR37.VAR38 = VAR1->VAR38;
+VAR37.VAR39 = VAR12.VAR20[VAR4].VAR32;
+VAR37.VAR40 = FUN11(&VAR12.VAR20[VAR4]);
+
+VAR13 = FUN14(VAR9, VAR41,
+&VAR37, sizeof(VAR37),
+&VAR36, sizeof(VAR36));
+if (VAR13 < 0) {
+FUN5(VAR22.VAR23,
+"", VAR13);
+
+FUN15(VAR12.VAR20);
+
+
+return VAR13;
+}
+
+VAR1->VAR42 += VAR37.VAR40;
+VAR1->VAR27++;
+}
+
+FUN15(VAR12.VAR20);
+
+return 0;
+
+VAR24:
+for (VAR4 = 0; VAR4 < VAR7->VAR21; VAR4++)
+FUN16(VAR7->VAR18[VAR4]);
+VAR19:
+FUN15(VAR12.VAR20);
+FUN15(VAR7->VAR18);
+FUN15(VAR7);
+
+return VAR13;
+}

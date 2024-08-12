@@ -1,0 +1,1 @@
+extern const char VAR1 [ ] ; static void const * VAR2 = VAR1 ; static void FUN1 ( int VAR3 , void * FUN2 ( int , VAR4 * , void * ) , int VAR5 ) { struct sigaction VAR6 ; VAR6 . VAR7 = VAR8 ; VAR6 . VAR9 = VAR10 | VAR5 ; FUN3 ( & VAR6 . VAR11 ) ; if ( FUN4 ( VAR3 , & VAR6 , 0 ) ) { FUN5 ( 1 , "" ) ; } }

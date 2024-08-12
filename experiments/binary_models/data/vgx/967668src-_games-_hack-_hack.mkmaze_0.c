@@ -1,0 +1,79 @@
+static int  FUN1(int, int, int);
+
+
+void
+FUN2(void)
+{
+int VAR1,VAR2;
+int VAR3,VAR4;
+coord VAR5;
+boolean VAR6 = (VAR7 >= 30 && !VAR8.VAR9);
+
+for(VAR1 = 2; VAR1 < VAR10-1; VAR1++)
+for(VAR2 = 2; VAR2 < VAR11-1; VAR2++)
+VAR12[VAR1][VAR2].VAR13 = (VAR1%2 && VAR2%2) ? 0 : VAR14;
+if(VAR6) {
+struct VAR15 *VAR16;
+
+VAR3 = 2*(VAR10/4) - 1;
+VAR4 = 2*(VAR11/4) - 1;
+for(VAR1 = VAR3-2; VAR1 < VAR3+4; VAR1++) for(VAR2 = VAR4-2; VAR2 <= VAR4+2; VAR2++) {
+VAR12[VAR1][VAR2].VAR13 =
+(VAR2 == VAR4-2 || VAR2 == VAR4+2 || VAR1 == VAR3-2 || VAR1 == VAR3+3) ? VAR17 :
+(VAR2 == VAR4-1 || VAR2 == VAR4+1 || VAR1 == VAR3-1 || VAR1 == VAR3+2) ? VAR14:
+VAR18;
+}
+(void) FUN3(VAR19, VAR3, VAR4);
+VAR8.VAR9 = 1;
+FUN4(VAR3+4, VAR4);
+if ((VAR16 = FUN5(&VAR20, VAR3, VAR4)))
+VAR16->VAR21 = 1;
+if ((VAR16 = FUN5(VAR22, VAR3+1, VAR4))) {
+VAR16->VAR21 = 1;
+VAR8.VAR23 = 1;
+}
+} else {
+VAR5 = FUN6();
+VAR3 = VAR5.VAR1;
+VAR4 = VAR5.VAR2;
+FUN4(VAR3,VAR4);
+(void) FUN7(VAR24, VAR3, VAR4);
+(void) FUN3(VAR25, VAR3, VAR4);	
+}
+
+for(VAR1 = 2; VAR1 < VAR10-1; VAR1++)
+for(VAR2 = 2; VAR2 < VAR11-1; VAR2++) {
+switch(VAR12[VAR1][VAR2].VAR13) {
+case VAR14:
+VAR12[VAR1][VAR2].VAR26 = '';
+break;
+case VAR18:
+VAR12[VAR1][VAR2].VAR26 = '';
+break;
+}
+}
+for(VAR1 = FUN8(8,11); VAR1; VAR1--) {
+VAR5 = FUN6();
+(void) FUN3(FUN9(2) ? VAR27 : 0, VAR5.VAR1, VAR5.VAR2);
+}
+for(VAR1 = FUN8(10,2); VAR1; VAR1--) {
+VAR5 = FUN6();
+(void) FUN3(VAR25, VAR5.VAR1, VAR5.VAR2);
+}
+VAR5 = FUN6();
+(void) FUN5(VAR28, VAR5.VAR1, VAR5.VAR2);
+for(VAR1 = FUN8(5,7); VAR1; VAR1--) {
+VAR5 = FUN6();
+(void) FUN5((struct VAR29 *) 0, VAR5.VAR1, VAR5.VAR2);
+}
+for(VAR1 = FUN8(6,7); VAR1; VAR1--) {
+VAR5 = FUN6();
+FUN10(0L,VAR5.VAR1,VAR5.VAR2);
+}
+for(VAR1 = FUN8(6,7); VAR1; VAR1--)
+FUN11(0,1,(struct VAR30 *) 0);
+VAR5 = FUN6();
+VAR12[(int)(VAR31 = VAR5.VAR1)][(int)(VAR32 = VAR5.VAR2)].VAR26 = '';
+VAR12[(int)VAR31][(int)VAR32].VAR13 = VAR33;
+VAR34 = VAR35 = 0;
+}

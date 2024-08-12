@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( void ) { static pthread_key_t VAR2 = VAR3 ; struct VAR1 * VAR4 ; VAR4 = FUN2 ( & VAR2 , sizeof ( VAR1 ) , free ) ; if ( VAR4 == NULL ) { syslog ( VAR5 , "" ) ; return ( & VAR6 ) ; } return ( VAR4 ) ; }

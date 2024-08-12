@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 ) { int VAR3 ; int VAR4 = VAR5 ; VAR1 * VAR6 ; VAR6 = FUN2 ( VAR2 ) ; FUN3 ( VAR6 != NULL ) ; for ( VAR3 = 0 ; VAR3 < VAR7 ; VAR3 ++ ) { if ( FUN4 ( VAR2 , NULL , 0 ) == 0 ) { VAR4 = 0 ; break ; } FUN5 ( VAR8 ) ; } return ( VAR4 ) ; }

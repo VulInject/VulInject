@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * VAR2 ; FUN2 ( FUN3 ( VAR3 ) , NULL ) ; VAR2 = FUN4 ( VAR3 , NULL ) ; return VAR2 -> VAR3 ; }

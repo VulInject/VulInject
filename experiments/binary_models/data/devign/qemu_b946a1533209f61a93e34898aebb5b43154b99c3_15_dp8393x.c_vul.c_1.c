@@ -1,0 +1,19 @@
+void FUN1(VAR1 *VAR2, target_phys_addr_t VAR3, int VAR4, qemu_irq VAR5, void *VAR6, void (*VAR7)(void *VAR8, target_phys_addr_t VAR9, VAR10 *VAR11, int VAR12, int VAR13))
+{
+    VAR14 *VAR15;
+    int VAR16;
+    FUN2(VAR2, "");
+    VAR15 = FUN3(sizeof(VAR14));
+    VAR15->VAR6 = VAR6;
+    VAR15->VAR7 = VAR7;
+    VAR15->VAR4 = VAR4;
+    VAR15->VAR5 = VAR5;
+    VAR15->VAR17 = FUN4(VAR18, VAR19, VAR15);
+    VAR15->VAR20[VAR21] = 0x0004;
+    VAR15->VAR22 = FUN5(VAR2->VAR23, VAR2->VAR24, VAR2->VAR25, VAR26, VAR27, VAR15);
+    FUN6(VAR15->VAR22, VAR2->VAR28);
+    FUN7(VAR29, VAR15);
+    FUN8(VAR15);
+    VAR16 = FUN9(0, VAR30, VAR31, VAR15);
+    FUN10(VAR3, 0x40 << VAR4, VAR16);
+}

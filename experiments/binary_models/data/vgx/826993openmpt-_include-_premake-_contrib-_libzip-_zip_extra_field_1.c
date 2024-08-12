@@ -1,0 +1,1 @@
+zip_uint16_t FUN1 ( const struct VAR1 * VAR2 , zip_flags_t VAR3 ) { zip_uint16_t VAR4 ; for ( ; VAR2 ; VAR2 = VAR2 -> VAR5 ) { if ( VAR2 -> VAR3 & VAR3 & VAR6 ) { VAR4 += 4 + VAR2 -> VAR4 ; } } return VAR4 ; }

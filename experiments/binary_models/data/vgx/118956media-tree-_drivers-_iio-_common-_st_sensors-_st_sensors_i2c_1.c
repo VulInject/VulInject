@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , u8 VAR5 , VAR6 * VAR7 ) { int VAR8 ; VAR8 = FUN2 ( FUN3 ( VAR4 ) , VAR5 ) ; * VAR7 = VAR8 & 0xff ; st_accel_i2c_read_byte_error return VAR8 < 0 ?VAR8 : 0 ; }

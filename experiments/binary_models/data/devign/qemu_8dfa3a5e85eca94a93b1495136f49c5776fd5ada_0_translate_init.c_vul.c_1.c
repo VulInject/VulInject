@@ -1,0 +1,23 @@
+FUN1(VAR1)
+(VAR2 *VAR3, void *VAR4)
+{
+    VAR5 *VAR6 = FUN2(VAR3);
+    VAR7 *VAR8 = FUN3(VAR3);
+    VAR6->VAR9 = "";
+    VAR6->VAR10 = "";
+    VAR8->VAR11 = VAR12;
+    VAR8->VAR13 = VAR14;
+    VAR8->VAR15 = VAR16;
+    VAR8->VAR17 = VAR18;
+    VAR8->VAR19 = VAR20 | VAR21 | VAR22 | VAR23 | VAR24 | VAR25 | VAR26 | VAR27 | VAR28 | VAR29 | VAR30 | VAR31 | VAR32 | VAR33 | VAR34 | VAR35 | VAR36 | VAR37 | VAR38 | VAR39 | VAR40 | VAR41 | VAR42 | VAR43 | VAR44;
+    VAR8->VAR45 = VAR46 | VAR47 | VAR48 | VAR49 | VAR50 | VAR51 | VAR52 | VAR53 | VAR54;
+    VAR8->VAR55 = (1ull << VAR56) | (1ull << VAR57) | (1ull << VAR58) | (1ull << VAR59) | (1ull << VAR60) | (1ull << VAR61) | (1ull << VAR62) | (1ull << VAR63) | (1ull << VAR64) | (1ull << VAR65) | (1ull << VAR66) | (1ull << VAR67) | (1ull << VAR68) | (1ull << VAR69) | (1ull << VAR70) | (1ull << VAR71);
+    VAR8->VAR72 = VAR73;
+    VAR8->VAR74 = VAR75;
+    VAR8->VAR76 = VAR77;
+    VAR8->VAR78 = VAR79;
+    VAR8->VAR80 = VAR81;
+    VAR8->VAR82 = VAR83 | VAR84 | VAR85 | VAR86 | VAR87 | VAR88 | VAR89;
+    VAR8->VAR90 = 0x8000;
+    VAR8->VAR91 = 0x8000;
+    VAR8->VAR92 = VAR93;

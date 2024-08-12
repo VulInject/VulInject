@@ -1,0 +1,15 @@
+static void
+FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4, const char *VAR5)
+{
+if (VAR4->VAR6 & VAR7)
+{
+
+
+FUN2("", VAR2 ? VAR2->VAR8 : VAR9.VAR10, VAR4->VAR11);
+VAR4->VAR6 &= ~VAR7;
+}
+if (VAR2 == NULL || FUN3(VAR4, VAR2))
+FUN2("", VAR2 ? VAR2->VAR8 : VAR9.VAR10, VAR4->VAR11, VAR5);
+else
+FUN2("", VAR9.VAR10, VAR4->VAR11, VAR2->VAR12, VAR4->VAR11, VAR5);
+}

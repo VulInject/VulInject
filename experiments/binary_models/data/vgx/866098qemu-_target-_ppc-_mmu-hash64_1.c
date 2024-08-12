@@ -1,0 +1,1 @@
+unsigned FUN1 ( VAR1 * VAR2 , uint64_t VAR3 , uint64_t VAR4 ) { int VAR5 ; if ( ! ( VAR3 & VAR6 ) ) { return 12 ; } for ( VAR5 = 0 ; VAR5 < VAR7 ; VAR5 ++ ) { const VAR8 * VAR9 = & VAR2 -> VAR10 -> VAR9 [ VAR5 ] ; int VAR11 ; if ( ! VAR9 -> VAR12 ) { break ; } VAR11 = FUN2 ( VAR9 , VAR3 , VAR4 ) ; if ( VAR11 ) { return VAR11 ; } } return 0 ; }

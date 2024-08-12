@@ -1,0 +1,1 @@
+static int FUN1 ( const char * VAR1 , int VAR2 ) { if ( ! memcmp ( VAR1 , VAR3 , VAR4 ) ) { return 1 ; } return 0 ; }

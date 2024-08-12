@@ -1,0 +1,1 @@
+static IOInstEnding FUN1 ( VAR1 * VAR2 ) { int VAR3 ; VAR3 = FUN2 ( VAR2 ) ; if ( VAR3 == - VAR4 ) { return VAR5 ; } switch ( VAR3 ) { case - VAR6 : return VAR7 ; case - VAR8 : case - VAR9 : return VAR10 ; default : return VAR5 ; } }

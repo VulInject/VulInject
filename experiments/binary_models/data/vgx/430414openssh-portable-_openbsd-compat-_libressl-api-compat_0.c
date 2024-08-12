@@ -1,0 +1,21 @@
+int
+FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR3 *VAR5, VAR3 *VAR6)
+{
+if ((VAR2->VAR4 == NULL && VAR4 == NULL) || (VAR2->VAR5 == NULL && VAR5 == NULL))
+return 0;
+
+if (VAR4 != NULL) {
+FUN2(VAR2->VAR4);
+VAR2->VAR4 = VAR4;
+}
+if (VAR5 != NULL) {
+FUN2(VAR2->VAR5);
+VAR2->VAR5 = VAR5;
+}
+if (VAR6 != NULL) {
+FUN2(VAR2->VAR6);
+VAR2->VAR6 = VAR6;
+}
+
+return 1;
+}

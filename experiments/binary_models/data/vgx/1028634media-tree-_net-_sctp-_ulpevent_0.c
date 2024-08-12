@@ -1,0 +1,21 @@
+void FUN1(const struct VAR1 *VAR2,
+struct VAR3 *VAR3)
+{
+struct sctp_rcvinfo VAR4;
+
+if (FUN2(VAR2))
+return;
+
+memset(&VAR4, 0, sizeof(struct VAR5));
+VAR4.VAR6 = VAR2->VAR7;
+VAR4.VAR8 = VAR2->VAR9;
+VAR4.VAR10 = VAR2->VAR11;
+VAR4.VAR12 = VAR2->VAR13;
+VAR4.VAR14 = VAR2->VAR15;
+VAR4.VAR16 = VAR2->VAR17;
+VAR4.VAR18 = FUN3(VAR2->VAR19);
+VAR4.VAR20 = VAR2->VAR19->VAR21;
+
+FUN4(VAR3, VAR22, VAR23,
+sizeof(VAR4), &VAR4);
+}

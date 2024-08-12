@@ -1,0 +1,1 @@
+static u64 FUN1 ( struct VAR1 * VAR2 ) { u64 VAR3 = ( VAR4 ) FUN2 ( 32 ) ; if ( VAR2 ) { VAR3 = VAR2 -> VAR5 ; if ( VAR3 == 0 ) { FUN3 ( VAR2 , "" ) ; return 0 ; } } return VAR3 ; }

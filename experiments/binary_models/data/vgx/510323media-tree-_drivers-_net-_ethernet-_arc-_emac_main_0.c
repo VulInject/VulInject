@@ -1,0 +1,80 @@
+static int FUN1(struct VAR1 *VAR2, int VAR3)
+{
+struct VAR4 *VAR5 = FUN2(VAR2);
+unsigned int VAR6;
+
+for (VAR6 = 0; VAR6 < VAR3; VAR6++) {
+unsigned int *VAR7 = &VAR5->VAR7;
+struct VAR8 *VAR9 = &VAR2->VAR9;
+struct VAR10 *VAR11 = &VAR5->VAR11[*VAR7];
+struct VAR12 *VAR13 = &VAR5->VAR13[*VAR7];
+unsigned int VAR14, VAR15 = FUN3(VAR13->VAR15);
+struct VAR16 *VAR17;
+dma_addr_t VAR18;
+
+if (FUN4((VAR15 & VAR19) == VAR20))
+break;
+
+
+*VAR7 = (*VAR7 + 1) % VAR21;
+
+if (FUN4((VAR15 & VAR22) !=
+VAR22)) {
+
+if (FUN5())
+FUN6(VAR2, "");
+
+
+VAR13->VAR15 = FUN7(VAR20 | VAR23);
+VAR9->VAR24++;
+VAR9->VAR25++;
+continue;
+}
+
+VAR14 = VAR15 & VAR26;
+VAR9->VAR27++;
+VAR9->VAR28 += VAR14;
+VAR17 = VAR11->VAR17;
+FUN8(VAR17, VAR14);
+VAR17->VAR29 = VAR2;
+VAR17->VAR30 = FUN9(VAR17, VAR2);
+
+FUN10(&VAR2->VAR29, FUN11(VAR11, VAR18),
+FUN12(VAR11, VAR31), VAR32);
+
+
+VAR11->VAR17 = FUN13(VAR2,
+VAR23);
+if (FUN4(!VAR11->VAR17)) {
+VAR9->VAR24++;
+
+VAR9->VAR33++;
+continue;
+}
+
+
+FUN14(VAR17);
+
+VAR18 = FUN15(&VAR2->VAR29, (void *)VAR11->VAR17->VAR34,
+VAR23, VAR32);
+if (FUN16(&VAR2->VAR29, VAR18)) {
+if (FUN5())
+FUN6(VAR2, "");
+FUN17(VAR11->VAR17);
+VAR9->VAR24++;
+continue;
+}
+FUN18(VAR11, VAR18, VAR18);
+FUN19(VAR11, VAR31, VAR23);
+
+VAR13->VAR34 = FUN7(VAR18);
+
+
+FUN20();
+
+
+VAR13->VAR15 = FUN7(VAR20 | VAR23);
+}
+
+return VAR6;
+}

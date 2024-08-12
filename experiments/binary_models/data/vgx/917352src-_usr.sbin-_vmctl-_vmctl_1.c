@@ -1,0 +1,1 @@
+int FUN1 ( const char * VAR1 , uint32_t VAR2 ) { if ( VAR3 != 0 && VAR3 == VAR2 ) { return ( 1 ) ; } if ( * VAR4 != '' && VAR1 && strcmp ( VAR4 , VAR1 ) == 0 ) { return ( 1 ) ; } return ( 0 ) ; }

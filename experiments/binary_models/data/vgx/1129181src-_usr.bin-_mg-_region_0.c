@@ -1,0 +1,20 @@
+int
+FUN1(int VAR1, int VAR2)
+{
+int	VAR3;
+struct region	VAR4;
+
+if ((VAR3 = FUN2(&VAR4)) != VAR5)
+return (VAR3);
+
+if ((VAR6 & VAR7) == 0)
+FUN3();
+VAR8 |= VAR7;
+VAR9->VAR10 = VAR4.VAR11;
+VAR9->VAR12 = VAR4.VAR13;
+VAR9->VAR14 = VAR4.VAR15;
+VAR3 = FUN4(VAR4.VAR16, VAR17 | VAR18);
+FUN5(VAR19, 0);
+
+return (VAR3);
+}

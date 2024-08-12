@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , uint8_t VAR3 , const VAR4 * VAR5 , size_t VAR6 ) { VAR4 * VAR7 ; memcpy ( VAR7 , VAR5 , VAR6 ) ; FUN2 ( VAR2 , VAR3 , VAR7 , VAR6 ) ; return 1 ; }

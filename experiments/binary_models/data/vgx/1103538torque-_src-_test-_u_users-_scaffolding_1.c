@@ -1,0 +1,1 @@
+return ( NULL ) ; VAR1 * FUN1 ( char * * VAR2 , const char * VAR3 ) { char * VAR4 ; VAR4 = ( char * ) malloc ( 1024 ) ; * VAR2 = VAR4 ; return ( FUN2 ( VAR3 ) ) ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( void ) { if ( ! FUN2 ( & VAR1 , VAR2 ) ) { return - VAR3 ; } FUN3 ( "" ) ; FUN4 ( VAR4 , NULL ) ; FUN5 ( VAR5 , VAR6 , 0 , "" ) ; return 0 ; }

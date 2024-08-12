@@ -1,0 +1,55 @@
+static void FUN1(const VAR1* VAR2, VAR3** VAR4)
+{
+int VAR5;
+int VAR6;
+uint32_t VAR7;
+
+if (VAR8 == 0) {
+for (VAR5=0; VAR5<VAR9; VAR5++) {
+VAR10[VAR5].VAR11 = 0;
+}
+VAR8 = 1;
+}
+
+
+for (VAR5=0; VAR5<VAR9; VAR5++) {
+if (!VAR10[VAR5].VAR11)
+continue;
+
+if (FUN2(VAR2->VAR12, VAR10[VAR5].VAR12) &
+FUN2(VAR2->VAR13, VAR10[VAR5].VAR13)) {
+VAR10[VAR5].VAR14++;
+break;
+}
+}
+
+
+if (VAR5 == VAR9) {
+
+VAR5 = (VAR15 + 1) % VAR9;
+for (; VAR5 != VAR15; VAR5=(VAR5+1)%VAR9) {
+if (!VAR10[VAR5].VAR11) {
+break;
+}
+}
+
+
+if (VAR5 == VAR15) {
+VAR7 = VAR10[0].VAR14;
+for (VAR6=1; VAR6<VAR9; VAR6++) {
+if (VAR10[VAR6].VAR14 < VAR7) {
+VAR5 = VAR6;
+VAR7 = VAR10[VAR5].VAR14;
+}
+}
+}
+
+FUN3(VAR10[VAR5].VAR12, VAR2->VAR12, sizeof(VAR10[VAR5].VAR12));
+FUN3(VAR10[VAR5].VAR13, VAR2->VAR13, sizeof(VAR10[VAR5].VAR13));
+VAR10[VAR5].VAR11 = 1;
+VAR10[VAR5].VAR14 = 1;
+}
+
+*VAR4 = &VAR10[VAR5];
+VAR15 = VAR5;
+}

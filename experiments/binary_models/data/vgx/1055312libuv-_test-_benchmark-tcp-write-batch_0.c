@@ -1,0 +1,24 @@
+static void FUN1(VAR1* VAR2, int VAR3);
+static void FUN2(VAR4* VAR2, int VAR3);
+static void FUN3(VAR5* VAR2, int VAR3);
+static void FUN4(VAR6* VAR7);
+
+
+static void FUN1(VAR1* VAR2, int VAR3) {
+VAR8* VAR9;
+int VAR10;
+int VAR11;
+
+FUN5(VAR2->VAR7 == (VAR12*)&VAR13);
+
+for (VAR10 = 0; VAR10 < VAR14; VAR10++) {
+VAR9 = &VAR15[VAR10];
+VAR11 = FUN6(&VAR9->VAR2, VAR2->VAR7, &VAR9->VAR16, 1, VAR17);
+FUN5(VAR11 == 0);
+}
+
+VAR11 = FUN7(&VAR18, VAR2->VAR7, VAR19);
+FUN5(VAR11 == 0);
+
+VAR20++;
+}

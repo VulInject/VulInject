@@ -1,0 +1,66 @@
+int FUN1(curl_socket_t VAR1, 
+curl_socket_t VAR2,
+curl_socket_t VAR3, 
+timediff_t VAR4) 
+{
+struct pollfd VAR5[3];
+int VAR6;
+int VAR7;
+
+if((VAR1 == VAR8) && (VAR2 == VAR8) &&
+(VAR3 == VAR8)) {
+
+return FUN2(VAR4);
+}
+
+
+
+VAR6 = 0;
+if(VAR1 != VAR8) {
+VAR5[VAR6].VAR9 = VAR1;
+VAR5[VAR6].VAR10 = VAR11|VAR12|VAR13|VAR14;
+VAR5[VAR6].VAR15 = 0;
+VAR6++;
+}
+if(VAR2 != VAR8) {
+VAR5[VAR6].VAR9 = VAR2;
+VAR5[VAR6].VAR10 = VAR11|VAR12|VAR13|VAR14;
+VAR5[VAR6].VAR15 = 0;
+VAR6++;
+}
+if(VAR3 != VAR8) {
+VAR5[VAR6].VAR9 = VAR3;
+VAR5[VAR6].VAR10 = VAR16|VAR17|VAR14;
+VAR5[VAR6].VAR15 = 0;
+VAR6++;
+}
+
+VAR7 = FUN3(VAR5, VAR6, VAR4);
+if(VAR7 <= 0)
+return VAR7;
+
+VAR7 = 0;
+VAR6 = 0;
+if(VAR1 != VAR8) {
+if(VAR5[VAR6].VAR15 & (VAR11|VAR12|VAR18|VAR19))
+VAR7 |= VAR20;
+if(VAR5[VAR6].VAR15 & (VAR14|VAR21))
+VAR7 |= VAR22;
+VAR6++;
+}
+if(VAR2 != VAR8) {
+if(VAR5[VAR6].VAR15 & (VAR11|VAR12|VAR18|VAR19))
+VAR7 |= VAR23;
+if(VAR5[VAR6].VAR15 & (VAR14|VAR21))
+VAR7 |= VAR22;
+VAR6++;
+}
+if(VAR3 != VAR8) {
+if(VAR5[VAR6].VAR15 & (VAR16|VAR17))
+VAR7 |= VAR24;
+if(VAR5[VAR6].VAR15 & (VAR18|VAR19|VAR14|VAR21))
+VAR7 |= VAR22;
+}
+
+return VAR7;
+}

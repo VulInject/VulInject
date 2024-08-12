@@ -1,0 +1,5 @@
+int FUN1(int VAR1)
+{
+    static const char VAR2[] = ""
+                                       "" No SMP KVM VAR3,
+                      VAR4 ''\VAR5 "" / VAR6 / VAR7 "" Could not access KVM kernel VAR8 : % VAR9\VAR5 "" kvm version too VAR10\VAR5 "" kvm version not VAR11\VAR5 "" kvm does not support VAR12\VAR5 % VAR13 "" KVM kernel VAR8 FUN2(VAR14).\VAR5 % VAR13 " , VAR2 ) ; goto VAR15 ; } VAR13 -> VAR16 = FUN3 ( VAR13 , VAR17 ) ; VAR13 -> VAR16 = 0 ; VAR13 -> VAR18 = 1 ; VAR19 = FUN4 ( VAR13 , VAR20 , VAR21 ) ; if ( VAR19 > 0 ) { VAR13 -> VAR18 = 0 ; } VAR19 = FUN5 ( VAR13 , VAR1 ) ; if ( VAR19 < 0 ) goto VAR15 ; VAR22 = VAR13 ; return 0 ; VAR15 : if ( VAR13 ) { if ( VAR13 -> VAR23 != - 1 ) close ( VAR13 -> VAR23 ) ; if ( VAR13 -> VAR24 != - 1 ) close ( VAR13 -> VAR24 ) ; } FUN6 ( VAR13 ) ; return VAR19 ; }

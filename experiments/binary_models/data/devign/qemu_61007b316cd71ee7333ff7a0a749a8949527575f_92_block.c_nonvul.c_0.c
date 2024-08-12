@@ -1,0 +1,1 @@
+static int FUN1(const void *VAR1, const void *VAR2) { return strcmp(VAR1, VAR2); }

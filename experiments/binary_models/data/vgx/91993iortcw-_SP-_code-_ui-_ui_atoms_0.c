@@ -1,0 +1,94 @@
+static void FUN1( void ) {
+char VAR1[VAR2];
+char VAR3[VAR2];
+char VAR4[VAR5];
+fileHandle_t VAR6;
+int VAR7, VAR8, VAR9, VAR10;
+postGameInfo_t VAR11;
+postGameInfo_t VAR12;
+qboolean VAR13 = VAR14;
+
+FUN2( VAR15, VAR4, sizeof( VAR4 ) );
+FUN3( VAR1, FUN4( VAR4, "" ), sizeof( VAR1 ) );
+VAR8 = FUN5( FUN4( VAR4, "" ) );
+
+
+FUN6( VAR3, VAR2, "", VAR1, VAR8 );
+
+memset( &VAR11, 0, sizeof( VAR16 ) );
+if ( FUN7( VAR3, &VAR6, VAR17 ) >= 0 ) {
+
+VAR7 = 0;
+FUN8( &VAR7, sizeof( int ), VAR6 );
+if ( VAR7 == sizeof( VAR16 ) ) {
+FUN8( &VAR11, sizeof( VAR16 ), VAR6 );
+}
+FUN9( VAR6 );
+}
+
+VAR12.VAR18 = FUN5( FUN10( 3 ) );
+VAR12.VAR19 = FUN5( FUN10( 4 ) );
+VAR12.VAR20 = FUN5( FUN10( 5 ) );
+VAR12.VAR21 = FUN5( FUN10( 6 ) );
+VAR12.VAR22 = FUN5( FUN10( 7 ) );
+VAR12.VAR23 = FUN5( FUN10( 8 ) );
+VAR12.VAR24 = FUN5( FUN10( 9 ) );
+VAR12.VAR25 = FUN5( FUN10( 10 ) );
+VAR12.VAR26 = FUN5( FUN10( 11 ) );
+VAR12.VAR27 = FUN5( FUN10( 12 ) );
+VAR9 = FUN5( FUN10( 13 ) );
+VAR12.VAR28 = FUN5( FUN10( 14 ) );
+
+VAR12.VAR9 = ( VAR9 - FUN11( "" ) ) / 1000;
+VAR10 = VAR29.VAR30[VAR31.VAR32].VAR33[VAR8];
+if ( VAR12.VAR9 < VAR10 ) {
+VAR12.VAR34 = ( VAR10 - VAR12.VAR9 ) * 10;
+} else {
+VAR12.VAR34 = 0;
+}
+
+if ( VAR12.VAR26 > VAR12.VAR27 && VAR12.VAR27 <= 0 ) {
+VAR12.VAR35 = 100;
+} else {
+VAR12.VAR35 = 0;
+}
+
+VAR12.VAR36 = FUN11( "" );
+if ( VAR12.VAR36 <= 0 ) {
+VAR12.VAR36 = 1;
+}
+VAR12.VAR37 = VAR12.VAR24 + VAR12.VAR35 + VAR12.VAR34;
+VAR12.VAR37 *= VAR12.VAR36;
+
+
+VAR13 = ( VAR12.VAR26 > VAR12.VAR27 && VAR12.VAR37 > VAR11.VAR37 );
+
+if  ( VAR13 ) {
+
+VAR29.VAR38 = VAR29.VAR39.VAR40 + 20000;
+if ( FUN7( VAR3, &VAR6, VAR41 ) >= 0 ) {
+VAR7 = sizeof( VAR16 );
+FUN12( &VAR7, sizeof( int ), VAR6 );
+FUN12( &VAR12, sizeof( VAR16 ), VAR6 );
+FUN9( VAR6 );
+}
+}
+
+if ( VAR12.VAR9 < VAR11.VAR9 ) {
+VAR29.VAR42 = VAR29.VAR39.VAR40 + 20000;
+}
+
+
+FUN13( "", FUN14( "" ) );
+FUN13( "", FUN14( "" ) );
+FUN13( "", FUN14( "" ) );
+FUN13( "", FUN14( "" ) );
+FUN13( "", FUN14( "" ) );
+FUN13( "", FUN14( "" ) );
+FUN13( "", FUN14( "" ) );
+
+FUN15( &VAR12, VAR43 );
+FUN16( VAR13 );
+
+
+}

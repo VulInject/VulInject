@@ -1,0 +1,1 @@
+static inline struct VAR1 * FUN1 ( const struct VAR2 * VAR3 ) { return ( VAR1 * ) VAR3 ; } VAR4 { VAR5 = 1 , VAR6 = 2 } VAR7 { VAR8 , VAR9 , VAR10 , VAR11 , VAR12 , VAR13 , VAR14 , VAR15 , VAR16 , VAR17 , VAR18 , VAR19 , VAR20 , VAR21 } VAR22 { int VAR23 ; int VAR24 ; cfs_time_t VAR25 ; unsigned int VAR26 ; enum tcp_estats_event_type VAR27 ; }

@@ -1,0 +1,94 @@
+void
+FUN1(LOCKTAG VAR1, bool VAR2)
+{
+TimestampTz VAR3;
+TimestampTz VAR4;
+
+FUN2(VAR5);
+
+VAR3 = FUN3();
+VAR4 = FUN4();
+
+
+if (FUN5(&VAR6->VAR7) == 0)
+FUN6(&VAR6->VAR7, VAR4);
+
+if (VAR4 >= VAR3 && VAR3 != 0)
+{
+
+VAR8 *VAR9;
+
+VAR9 = FUN7(&VAR1, VAR10, NULL);
+
+
+FUN8(VAR9,
+VAR11,
+VAR12 | VAR1.VAR13,
+false);
+}
+else
+{
+
+EnableTimeoutParams VAR14[2];
+int			VAR15 = 0;
+
+if (VAR3 != 0)
+{
+VAR16 = false;
+VAR14[VAR15].VAR17 = VAR18;
+VAR14[VAR15].VAR19 = VAR20;
+VAR14[VAR15].VAR21 = VAR3;
+VAR15++;
+}
+
+VAR22 = false;
+VAR14[VAR15].VAR17 = VAR23;
+VAR14[VAR15].VAR19 = VAR24;
+VAR14[VAR15].VAR25 = VAR26;
+VAR15++;
+
+FUN9(VAR14, VAR15);
+}
+
+
+FUN10(VAR12 | VAR1.VAR13);
+
+
+if (VAR16)
+goto VAR27;
+
+if (VAR22)
+{
+VAR8 *VAR9;
+
+VAR9 = FUN7(&VAR1, VAR10, NULL);
+
+
+if (!FUN11(*VAR9))
+goto VAR27;
+
+
+while (FUN11(*VAR9))
+{
+FUN12(*VAR9,
+VAR28,
+false);
+VAR9++;
+}
+
+
+if (VAR2)
+goto VAR27;
+
+
+VAR22 = false;
+FUN10(VAR12 | VAR1.VAR13);
+}
+
+VAR27:
+
+
+FUN13(false);
+VAR16 = false;
+VAR22 = false;
+}

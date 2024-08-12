@@ -1,0 +1,105 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{  
+BOOL VAR5 = VAR6, VAR7 = VAR6, VAR8 = (VAR4->VAR9 != NULL);
+int VAR10 = 0, VAR11 = 0, VAR12 = VAR13, VAR14 = 0, VAR15 = 0;
+register char *VAR16;
+
+while (VAR5)
+{
+VAR16 = FUN2(VAR2);
+if (VAR16 == NULL)
+
+
+{
+VAR12 = VAR17;
+break; 
+}
+if (VAR14 > VAR4->VAR18)
+{
+VAR12 = VAR19;
+break; 
+}
+if (!VAR8)
+
+
+switch(FUN3(VAR16))
+{
+case VAR20:
+VAR5 = VAR21;
+break;
+case VAR22:
+VAR5 = VAR21;
+VAR12 = VAR23;
+break;
+default:
+break;
+} 
+else
+
+
+switch(FUN3(VAR16))
+{
+case VAR24:
+VAR16 = FUN4(VAR2);
+break;
+case VAR25:
+if (VAR14 < VAR4->VAR18)
+{
+VAR16 = FUN2(VAR2);
+if (VAR15 != VAR4->VAR9[VAR10].VAR26)
+VAR12 = VAR19;
+VAR15 = 0;
+if (VAR7) VAR7 = VAR21;
+else VAR10++;
+VAR4->VAR9[VAR10].VAR27 = (char *) 
+malloc(strlen(VAR16) + 1);
+strcpy(VAR4->VAR9[VAR10].VAR27, VAR16);
+VAR16 = FUN2(VAR2);
+VAR4->VAR9[VAR10].VAR26 = FUN5(VAR16);
+VAR4->VAR9[VAR10].VAR28 = (VAR29 *)
+calloc(VAR4->VAR9[VAR10].VAR26, sizeof(VAR29));
+VAR11 = 0;
+VAR14++;
+}
+else
+{
+VAR12 = VAR19;
+VAR5 = VAR21;
+}
+break;
+case VAR30:
+if (VAR15 < VAR4->VAR9[VAR10].VAR26)
+{
+VAR16 = FUN2(VAR2);
+VAR4->VAR9[VAR10].VAR28[VAR11].VAR31 = (char *) 
+malloc(strlen(VAR16) + 1);
+strcpy(VAR4->VAR9[VAR10].VAR28[VAR11].VAR31, VAR16);
+VAR16 = FUN2(VAR2);
+VAR4->VAR9[VAR10].VAR28[VAR11].VAR32 = FUN5(VAR16);
+VAR16 = FUN2(VAR2);
+VAR4->VAR9[VAR10].VAR28[VAR11++].VAR33 = FUN5(VAR16);
+VAR15++;
+}
+else
+VAR12 = VAR19;
+break;
+case VAR20:
+VAR5 = VAR21;
+break;
+case VAR22:
+VAR5 = VAR21;
+VAR12 = VAR23;
+break;
+case VAR34:
+default:
+VAR12 = VAR19;
+break;
+} 
+} 
+
+if (VAR12 == VAR13 && VAR14 != VAR4->VAR18)
+VAR12 = VAR19;
+
+return(VAR12);
+
+}

@@ -1,0 +1,1 @@
+static inline struct VAR1 * FUN1 ( struct VAR2 * VAR3 ) { return FUN2 ( VAR3 , VAR1 , VAR4 ) ; } VAR5 { u32 VAR6 ; bool VAR7 ; int VAR8 ; unsigned char VAR9 ; u8 VAR10 ; u8 VAR11 ; }

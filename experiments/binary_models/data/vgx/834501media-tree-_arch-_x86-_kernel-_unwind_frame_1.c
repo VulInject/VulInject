@@ -1,0 +1,1 @@
+static bool FUN1 ( unsigned long VAR1 ) { char * VAR2 = ( char * ) VAR1 ; if ( VAR2 >= VAR3 && VAR2 < VAR4 ) { return true ; } return false ; }

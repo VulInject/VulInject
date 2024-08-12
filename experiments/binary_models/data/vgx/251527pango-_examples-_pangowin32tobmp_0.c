@@ -1,0 +1,38 @@
+FUN1 (int VAR1, int VAR2)
+{
+HDC VAR3;
+HDC VAR4;
+HBITMAP VAR5;
+RECT VAR6;
+VAR6.VAR7 = 0; VAR6.VAR8 = 0;
+VAR6.VAR9  = VAR1;
+VAR6.VAR10 = VAR2;
+
+VAR11 = FUN2 ("",
+"",
+VAR12,
+0, 0, VAR1, VAR2,
+FUN3(),
+NULL,
+FUN4(NULL),
+NULL);
+
+if (VAR11 == NULL)
+fprintf (VAR13, ""), FUN5 (1);
+
+VAR4 = FUN6(VAR11);
+VAR3 = FUN7 (VAR4);
+if (VAR4 == NULL)
+fprintf (VAR13, ""), FUN5 (1);
+
+VAR5 = FUN8 (VAR4, VAR1, VAR2);
+if (VAR5 == NULL)
+fprintf (VAR13, ""), FUN5 (1);
+
+VAR14 = FUN9(VAR3, VAR5);
+
+FUN10 (VAR3, &VAR6, FUN11(VAR15));
+FUN12 (VAR3, FUN13 (0,0,0));
+FUN14 (VAR3, VAR16);
+return VAR3;
+}

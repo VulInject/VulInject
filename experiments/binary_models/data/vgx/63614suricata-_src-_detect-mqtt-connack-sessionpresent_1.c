@@ -1,0 +1,1 @@
+static int FUN1 ( void ) { bool * VAR1 = NULL ; VAR1 = FUN2 ( "" ) ; FUN3 ( VAR1 ) ; FUN4 ( VAR1 ) ; VAR1 = FUN2 ( "" ) ; FUN3 ( VAR1 ) ; FUN4 ( NULL , VAR1 ) ; VAR1 = FUN2 ( "" ) ; FUN3 ( VAR1 ) ; FUN4 ( NULL , VAR1 ) ; VAR1 = FUN2 ( "" ) ; FUN3 ( VAR1 ) ; FUN4 ( NULL , VAR1 ) ; VAR2 ; }

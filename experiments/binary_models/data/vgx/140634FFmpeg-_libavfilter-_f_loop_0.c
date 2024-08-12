@@ -1,0 +1,41 @@
+static int FUN1(VAR1 *VAR2)
+{
+VAR3 *VAR4 = VAR2->VAR5[0];
+VAR3 *VAR6 = VAR2->VAR7[0];
+VAR8 *VAR9 = VAR2->VAR10;
+VAR11 *VAR12 = NULL;
+int VAR13, VAR14;
+int64_t VAR15;
+
+FUN2(VAR6, VAR4);
+
+if (!VAR9->VAR16 && (VAR9->VAR17 < VAR9->VAR18 || !VAR9->VAR19 || !VAR9->VAR18)) {
+VAR13 = FUN3(VAR4, &VAR12);
+if (VAR13 < 0)
+return VAR13;
+if (VAR13 > 0)
+return FUN4(VAR4, VAR12);
+}
+
+if (!VAR9->VAR16 && FUN5(VAR4, &VAR14, &VAR15)) {
+if (VAR14 == VAR20) {
+VAR9->VAR18 = VAR9->VAR17;
+VAR9->VAR16 = 1;
+}
+}
+
+if (VAR9->VAR16 && (!VAR9->VAR19 || !VAR9->VAR18)) {
+FUN6(VAR6, VAR20, VAR9->VAR21);
+return 0;
+}
+
+if (!VAR9->VAR16 && (!VAR9->VAR18 ||
+(VAR9->VAR17 < VAR9->VAR18) ||
+(VAR9->VAR17 >= VAR9->VAR18 && VAR9->VAR19 == 0))) {
+FUN7(VAR6, VAR4);
+} else if (VAR9->VAR19 && VAR9->VAR17 == VAR9->VAR18) {
+return FUN8(VAR6);
+}
+
+return VAR22;
+}

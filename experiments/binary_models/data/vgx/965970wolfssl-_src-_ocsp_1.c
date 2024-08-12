@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 ) { if ( VAR2 == NULL ) { return ; } if ( VAR2 -> VAR3 != NULL ) { FUN2 ( VAR2 -> VAR3 , NULL ) ; FUN3 ( VAR2 -> VAR3 , NULL , VAR4 ) ; } if ( VAR2 -> VAR5 != NULL ) { FUN3 ( VAR2 -> VAR5 , NULL , VAR6 ) ; } FUN3 ( VAR2 , VAR7 ) ; }

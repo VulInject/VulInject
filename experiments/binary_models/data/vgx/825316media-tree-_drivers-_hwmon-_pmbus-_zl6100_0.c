@@ -1,0 +1,80 @@
+static int FUN1(struct VAR1 *VAR2,
+const struct VAR3 *VAR4)
+{
+int VAR5;
+struct VAR6 *VAR7;
+struct VAR8 *VAR9;
+u8 VAR10[VAR11 + 1];
+const struct VAR3 *VAR12;
+
+if (!FUN2(VAR2->VAR13,
+VAR14
+| VAR15))
+return -VAR16;
+
+VAR5 = FUN3(VAR2, VAR17,
+VAR10);
+if (VAR5 < 0) {
+FUN4(&VAR2->VAR18, "");
+return VAR5;
+}
+VAR10[VAR5] = '';
+FUN5(&VAR2->VAR18, "", VAR10);
+
+VAR12 = NULL;
+for (VAR12 = VAR19; VAR12->VAR20[0]; VAR12++) {
+if (!FUN6(VAR12->VAR20, VAR10, strlen(VAR12->VAR20)))
+break;
+}
+if (!VAR12->VAR20[0]) {
+FUN4(&VAR2->VAR18, "");
+return -VAR16;
+}
+if (VAR4->VAR21 != VAR12->VAR21)
+FUN7(&VAR2->VAR18,
+"",
+VAR4->VAR20, VAR12->VAR20);
+
+VAR7 = FUN8(&VAR2->VAR18, sizeof(struct VAR6),
+VAR22);
+if (!VAR7)
+return -VAR23;
+
+VAR7->VAR4 = VAR12->VAR21;
+
+
+VAR7->VAR24 = VAR24;
+
+
+VAR7->VAR25 = FUN9();
+FUN10(VAR7);
+
+VAR9 = &VAR7->VAR9;
+
+VAR9->VAR26 = 1;
+VAR9->VAR27[0] = VAR28 | VAR29
+| VAR30 | VAR31
+| VAR32 | VAR33
+| VAR34 | VAR35;
+
+
+if (VAR7->VAR4 == VAR36 || VAR7->VAR4 == VAR37 || VAR7->VAR4 == VAR38)
+VAR9->VAR27[0] |= VAR39 | VAR40;
+
+VAR5 = FUN11(VAR2, VAR41);
+if (VAR5 < 0)
+return VAR5;
+
+if (VAR5 & VAR42)
+VAR9->VAR27[0] |= VAR43;
+
+VAR7->VAR25 = FUN9();
+FUN10(VAR7);
+
+VAR9->VAR44 = VAR45;
+VAR9->VAR46 = VAR47;
+VAR9->VAR48 = VAR49;
+VAR9->VAR50 = VAR51;
+
+return FUN12(VAR2, VAR12, VAR9);
+}

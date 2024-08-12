@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = VAR2 -> VAR4 ; struct VAR5 * VAR6 = VAR4 -> VAR7 ; unsigned long VAR8 ; enum omap_channel VAR9 = FUN2 ( VAR2 ) ; FUN3 ( "" , VAR4 , VAR9 ) ; FUN4 ( & VAR6 -> VAR10 , VAR8 ) ; VAR6 -> VAR11 |= FUN5 ( VAR6 -> VAR12 , VAR9 ) ; FUN6 ( VAR4 , NULL ) ; FUN7 ( & VAR6 -> VAR10 , VAR8 ) ; return 0 ; }

@@ -1,0 +1,1 @@
+static void FUN1 ( int VAR1 , const char * VAR2 , va_list VAR3 ) { switch ( VAR1 ) { default : case VAR4 : VAR1 = VAR5 ; break ; case VAR6 : VAR1 = VAR7 ; break ; case VAR8 : VAR1 = VAR9 ; break ; case VAR10 : VAR1 = VAR11 ; break ; case VAR12 : VAR1 = VAR13 ; break ; case VAR14 : VAR1 = VAR15 ; break ; } FUN2 ( VAR1 , VAR2 , VAR3 ) ; FUN3 ( NULL , VAR1 , "" ) ; }

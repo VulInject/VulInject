@@ -1,0 +1,98 @@
+static void
+FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6;
+unsigned VAR7, VAR8;
+const char *VAR9;
+const char *VAR10;
+int VAR11 = (VAR4->VAR12->VAR13 > VAR4->VAR14);
+
+FUN2(VAR4->VAR15);
+FUN3(FUN4(VAR4->VAR16));
+FUN3(FUN4(VAR4->VAR17));
+FUN3(FUN4(VAR4->VAR18));
+FUN2(VAR4->VAR12);
+
+if (VAR4->VAR19) {
+VAR7 = VAR4->VAR19->VAR20;
+VAR9 = "";
+} else {
+VAR7 = VAR4->VAR15;
+VAR9 = "";
+}
+
+if (VAR11 == 0 && (VAR4->VAR21 & VAR22) == VAR4->VAR21)
+VAR10 = "";
+else
+VAR10 = "";
+
+VAR8 = VAR2->VAR8++;
+
+FUN5(VAR2, 1, "", FUN6(VAR4->VAR16));
+FUN5(VAR2, 1, "",
+FUN6(VAR4->VAR16));
+FUN5(VAR2, 1, "", FUN6(VAR4->VAR16));
+FUN5(VAR2, 1, "");
+FUN5(VAR2, 1, "", VAR4->VAR15);
+FUN5(VAR2, 1, ""%.*VAR23\"", FUN7(VAR4->VAR24));
+FUN5(VAR2, 1, "");
+FUN5(VAR2, 1, "", FUN6(VAR4->VAR16));
+FUN5(VAR2, 1, "", VAR8);
+FUN5(VAR2, 1, "", VAR4->VAR12->VAR13);
+FUN5(VAR2, 1, "", VAR4->VAR14);
+FUN5(VAR2, 1, "\VAR25
+FUN5(VAR2, 1, "");
+
+if (VAR11) {
+FUN8(VAR2, 1, "", VAR10);
+FUN8(VAR2, 1, "", FUN6(VAR4->VAR16));
+} else {
+FUN8(VAR2, 1, "", VAR10);
+FUN8(VAR2, 1, "",
+FUN6(VAR4->VAR16));
+FUN8(VAR2, 1, "");
+FUN8(VAR2, 1, "");
+FUN8(VAR2, 1, "");
+}
+
+VAR6 = FUN9();
+FUN2(VAR6);
+FUN10(VAR6, VAR7);
+FUN3(FUN4(VAR6));
+FUN8(VAR2, 1, "", VAR9, FUN6(VAR6));
+FUN11(&VAR6);
+FUN8(VAR2, 1, "", FUN6(VAR4->VAR17), FUN6(VAR4->VAR18));
+FUN11(&VAR4->VAR18);
+FUN11(&VAR4->VAR17);
+
+if (! VAR11) {
+FUN11(&VAR4->VAR16);
+return;
+}
+
+
+FUN8(VAR2, 1, "");
+FUN8(VAR2, 1, "",
+FUN6(VAR4->VAR16));
+FUN8(VAR2, 1, "");
+FUN8(VAR2, 1, "");
+FUN8(VAR2, 1, "",
+VAR7, VAR8);
+FUN8(VAR2, 1, "");
+FUN8(VAR2, 1, "");
+FUN8(VAR2, 1, "");
+FUN8(VAR2, 1, ""call VAR26 \\\"""
+"");\VAR27", FUN7(VAR4->VAR24));
+FUN8(VAR2, 1, "");
+FUN8(VAR2, 1, ""Recursive call VAR26 "
+""VAR28 %.*VAR23{}\\\"");\VAR27", FUN7(VAR4->VAR24));
+FUN8(VAR2, 1, "");
+FUN8(VAR2, 1, "");
+FUN8(VAR2, 1, "");
+FUN8(VAR2, 1, "");
+FUN8(VAR2, 1, "", VAR8);
+FUN8(VAR2, 1, "", FUN6(VAR4->VAR16));
+FUN8(VAR2, 1, "", VAR8);
+FUN8(VAR2, 1, "");
+FUN11(&VAR4->VAR16);
+}

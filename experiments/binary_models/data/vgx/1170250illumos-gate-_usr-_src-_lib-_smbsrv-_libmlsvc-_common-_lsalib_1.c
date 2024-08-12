@@ -1,0 +1,1 @@
+static uint32_t FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 ) { mlsvc_handle_t VAR5 ; smb_domainex_t VAR6 ; char VAR7 [ VAR8 ] ; uint32_t VAR9 ; FUN2 ( VAR7 , VAR8 ) ; VAR9 = FUN3 ( VAR6 . VAR10 . VAR11 , VAR6 . VAR12 . VAR13 , VAR7 , & VAR5 ) ; if ( VAR9 != 0 ) { return ( FUN4 ( VAR9 ) ) ; } VAR9 = FUN5 ( & VAR5 , VAR2 , VAR4 ) ; ( void ) FUN6 ( & VAR5 ) ; return ( VAR9 ) ; }

@@ -1,0 +1,162 @@
+static void
+FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 *VAR6, int VAR7, int VAR8)
+{
+VAR1   *VAR9, *VAR10 = NULL;
+VAR11   *VAR12;
+int           VAR13                = VAR7;
+int           VAR14                  = VAR13+VAR8;
+gint          VAR15                  = -1,
+VAR16                  = -1,
+VAR17,
+VAR18, VAR19;
+const VAR20 *VAR21;
+guchar        VAR22            = 0;
+gboolean      VAR23         = VAR24;
+
+VAR12 = FUN2(VAR2, VAR25, VAR4, VAR7, VAR8, VAR26);
+if (VAR8 <= 0)
+return;
+
+VAR9 = FUN3(VAR12, VAR27 );
+
+
+if (FUN4(VAR4, VAR7) == '')
+{
+
+VAR15 = FUN5(VAR4, VAR7+1, VAR8-1, '');
+if (VAR15 == -1)
+{
+FUN6(VAR6, VAR12, &VAR28);
+return;
+}
+
+FUN2(VAR9, VAR29, VAR4, VAR7+1, VAR15-VAR7-1, VAR26);
+VAR7 = VAR15+1;
+}
+
+
+while(VAR7 < VAR14 && FUN4(VAR4, VAR7) == '')
+{
+VAR7++;
+}
+if (VAR7 == VAR14)
+{
+FUN6(VAR6, VAR12, &VAR30);
+return;
+}
+
+VAR16 = FUN5(VAR4, VAR7, VAR14-VAR7, '');
+if (VAR16 == -1)
+{
+const VAR20* VAR31;
+FUN7(VAR9, VAR32, VAR4, VAR7, VAR14-VAR7, VAR26|VAR33, VAR6->VAR34, &VAR31);
+FUN8( VAR6->VAR35, VAR36, "", VAR31);
+
+
+if ((VAR14-VAR7 == 3) &&
+(FUN9(FUN4(VAR4, VAR7))) &&
+(FUN9(FUN4(VAR4, VAR7+1))) &&
+(FUN9(FUN4(VAR4, VAR7+2))))
+{
+FUN6(VAR6, VAR12, &VAR37);
+}
+return;
+}
+
+FUN7(VAR9, VAR32, VAR4, VAR7, VAR16-VAR7, VAR26|VAR33, VAR6->VAR34, &VAR21);
+FUN8( VAR6->VAR35, VAR36, "", VAR21);
+
+
+if ((VAR16-VAR7 == 3) &&
+(FUN9(FUN4(VAR4, VAR7))) &&
+(FUN9(FUN4(VAR4, VAR7+1))) &&
+(FUN9(FUN4(VAR4, VAR7+2))))
+{
+FUN6(VAR6, VAR12, &VAR37);
+}
+
+VAR7 = VAR16+1;
+
+
+while(VAR7 < VAR14 && FUN4(VAR4, VAR7) == '')
+{
+VAR7++;
+}
+if (VAR7 == VAR14)
+{
+
+return;
+}
+
+
+if (FUN4(VAR4, VAR7) == '')
+{
+FUN2(VAR9, VAR38, VAR4, VAR7+1, VAR14-VAR7-1, VAR26);
+FUN10(VAR9, VAR12, VAR4, VAR7+1, VAR14-VAR7-1, VAR6, VAR21);
+return;
+}
+
+while(VAR7 < VAR14)
+{
+VAR17 = FUN5(VAR4, VAR7, VAR14-VAR7, '');
+VAR18 = FUN11(VAR4, VAR7, VAR14-VAR7, &VAR39, &VAR22);
+
+
+if (VAR23)
+{
+VAR10 = FUN12(VAR9, VAR4, VAR7, VAR14-VAR7,
+VAR40, NULL, "");
+VAR23 = VAR41;
+}
+
+if (((VAR17 == -1) && (VAR18 == -1)) ||
+((VAR17 != -1) && (VAR18 == -1)) ||
+(VAR17 < VAR18))
+{
+
+
+if (VAR17 == -1)
+{
+FUN2(VAR10, VAR42, VAR4, VAR7, VAR14-VAR7, VAR26);
+return;
+}
+
+FUN2(VAR10, VAR42, VAR4, VAR7, VAR17-VAR7, VAR26);
+VAR7 = VAR17+1;
+
+
+while(VAR7 < VAR14 && FUN4(VAR4, VAR7) == '')
+{
+VAR7++;
+}
+if (VAR7 == VAR14)
+{
+break;
+}
+
+
+if (FUN4(VAR4, VAR7) == '')
+{
+FUN2(VAR9, VAR38, VAR4, VAR7+1, VAR14-VAR7-1, VAR26);
+FUN10(VAR9, VAR12, VAR4, VAR7+1, VAR14-VAR7-1, VAR6, VAR21);
+return;
+}
+}
+else if (((VAR17 == -1) && (VAR18 != -1)) ||
+(VAR17 > VAR18))
+{
+
+
+VAR22 = 0;
+VAR19 = FUN11(VAR4, VAR18+1, VAR14-VAR18-1, &VAR39, &VAR22);
+if (VAR19 == -1)
+{
+FUN6(VAR6, VAR12, &VAR43);
+return;
+}
+
+FUN10(VAR9, VAR12, VAR4, VAR18, VAR19-VAR18, VAR6, VAR21);
+VAR7 = VAR19+1;
+}
+}
+}

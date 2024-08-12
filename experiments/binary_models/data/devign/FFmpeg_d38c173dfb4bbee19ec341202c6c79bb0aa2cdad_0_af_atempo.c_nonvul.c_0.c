@@ -1,0 +1,24 @@
+static void FUN1(VAR1 *VAR2)
+{
+    VAR2->VAR3 = 0;
+    VAR2->VAR4 = 0;
+    VAR2->VAR5 = 0;
+    VAR2->VAR6 = 0;
+    VAR2->VAR7 = 0;
+    VAR2->VAR8 = VAR9;
+    VAR2->VAR10[0] = 0;
+    VAR2->VAR10[1] = 0;
+    VAR2->VAR11[0].VAR10[0] = 0;
+    VAR2->VAR11[0].VAR10[1] = 0;
+    VAR2->VAR11[0].VAR12 = 0;
+    VAR2->VAR11[1].VAR10[0] = 0;
+    VAR2->VAR11[1].VAR10[1] = 0;
+    VAR2->VAR11[1].VAR12 = 0;
+    VAR2->VAR11[0].VAR10[0] = -(VAR13)(VAR2->VAR14 / 2);
+    VAR2->VAR11[0].VAR10[1] = -(VAR13)(VAR2->VAR14 / 2);
+    FUN2(&VAR2->VAR15);
+    VAR2->VAR16 = NULL;
+    VAR2->VAR17 = NULL;
+    VAR2->VAR18 = 0;
+    VAR2->VAR19 = 0;
+}

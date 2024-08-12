@@ -1,0 +1,25 @@
+int FUN1(struct VAR1 *VAR2)
+{
+FUN2("", VAR3, VAR2->VAR4, VAR2->VAR5);
+
+
+if (FUN3(&VAR2->VAR6,
+VAR7,
+VAR8) != VAR7) {
+FUN4("",
+VAR3, VAR2->VAR4);
+}
+
+if (VAR2->VAR9 && VAR2->VAR9->VAR10 == VAR2) {
+FUN5(VAR2->VAR9);
+FUN6(VAR2->VAR9);
+}
+
+
+FUN7(&VAR11);
+FUN8(&VAR2->VAR12);
+FUN9(&VAR11);
+FUN10(&VAR2->VAR13);
+
+return 0;
+}

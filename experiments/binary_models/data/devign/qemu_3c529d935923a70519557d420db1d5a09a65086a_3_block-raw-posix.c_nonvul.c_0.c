@@ -1,0 +1,22 @@
+static VAR1 *FUN1(VAR2 *VAR3, int64_t VAR4, VAR5 *VAR6, int VAR7, VAR8 *VAR9, void *VAR10)
+{
+    VAR11 *VAR12 = VAR3->VAR10;
+    VAR1 *VAR13;
+    if (FUN2(VAR3) < 0)
+        return NULL;
+    VAR13 = FUN3(VAR3, VAR9, VAR10);
+    if (!VAR13)
+        return NULL;
+    VAR13->VAR14.VAR15 = VAR12->VAR16;
+    VAR13->VAR14.VAR17.VAR18 = VAR19;
+    VAR13->VAR14.VAR17.VAR20 = VAR21;
+    VAR13->VAR14.VAR22 = VAR6;
+    if (VAR7 < 0)
+        VAR13->VAR14.VAR23 = -VAR7;
+    else
+        VAR13->VAR14.VAR23 = VAR7 * 512;
+    VAR13->VAR14.VAR24 = VAR4 * 512;
+    VAR13->VAR25 = VAR26->VAR27;
+    VAR26->VAR27 = VAR13;
+    return VAR13;
+}

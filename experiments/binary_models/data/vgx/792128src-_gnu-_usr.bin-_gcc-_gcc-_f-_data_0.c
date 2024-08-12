@@ -1,0 +1,107 @@
+FUN1 (ffebld VAR1, ffebld VAR2)
+{
+ffetargetIntegerDefault VAR3 = 0;
+ffetargetIntegerDefault VAR4 = 1;
+ffetargetIntegerDefault VAR5;
+ffetargetIntegerDefault VAR6;
+ffetargetIntegerDefault VAR7;
+ffetargetOffset final;
+ffebld VAR8;
+ffebld VAR9;
+ffebld VAR10;
+ffebld VAR11;
+int VAR12 = 0;
+bool VAR13;
+
+while (VAR1 != NULL)
+{
+ffeinfoKindtype VAR14, VAR15, VAR16;
+ffebld VAR17, VAR18, VAR19;
+
+++VAR12;
+assert (VAR2 != NULL);
+
+VAR8 = FUN2 (VAR1);
+VAR9 = FUN2 (VAR2);
+
+assert (FUN3 (FUN4 (VAR8)) == VAR20);
+if (FUN5 (VAR8) == VAR21)
+{
+
+VAR14 = FUN6 (FUN4 (VAR8));
+VAR17 = FUN7 (FUN8 (
+VAR14 == VAR22 ? VAR8->VAR23.VAR24.VAR25->VAR23.VAR26 :
+VAR14 == VAR27 ? VAR8->VAR23.VAR24.VAR25->VAR23.VAR28 :
+VAR14 == VAR29 ? VAR8->VAR23.VAR24.VAR25->VAR23.VAR30 :
+VAR8->VAR23.VAR24.VAR25->VAR23.VAR31), NULL);
+VAR5 = FUN9 (VAR17);
+}
+else
+VAR5 = FUN9 (VAR8);
+
+assert (FUN5 (VAR9) == VAR32);
+VAR10 = FUN10 (VAR9);
+VAR11 = FUN11 (VAR9);
+
+if (VAR10 == NULL)
+VAR6 = 1;
+else
+{
+assert (FUN3 (FUN4 (VAR10)) == VAR20);
+if (FUN5 (VAR10) == VAR21)
+{
+
+VAR15 = FUN6 (FUN4 (VAR10));
+VAR18 = FUN7 (FUN8 (
+VAR15 == VAR22 ? VAR10->VAR23.VAR24.VAR25->VAR23.VAR26 :
+VAR15 == VAR27 ? VAR10->VAR23.VAR24.VAR25->VAR23.VAR28 :
+VAR15 == VAR29 ? VAR10->VAR23.VAR24.VAR25->VAR23.VAR30 :
+VAR10->VAR23.VAR24.VAR25->VAR23.VAR31), NULL);
+VAR6 = FUN9 (VAR18);
+}
+else
+VAR6 = FUN9 (VAR10);
+}
+
+assert (FUN3 (FUN4 (VAR11)) == VAR20);
+if (FUN5 (VAR11) == VAR21)
+{
+
+VAR16 = FUN6 (FUN4 (VAR11));
+VAR19 = FUN7 (FUN8 (
+VAR16 == VAR22 ? VAR11->VAR23.VAR24.VAR25->VAR23.VAR26 :
+VAR16 == VAR27 ? VAR11->VAR23.VAR24.VAR25->VAR23.VAR28 :
+VAR16 == VAR29 ? VAR11->VAR23.VAR24.VAR25->VAR23.VAR30 :
+VAR11->VAR23.VAR24.VAR25->VAR23.VAR31), NULL);
+VAR7 = FUN9 (VAR19);
+}
+else
+VAR7 = FUN9 (VAR11);
+
+if ((VAR5 < VAR6) || (VAR5 > VAR7))
+{
+char VAR33[10];
+
+sprintf (VAR33, "", VAR12);
+VAR5 = VAR6;
+FUN12 (VAR34);
+FUN13 (FUN14 (VAR35));
+FUN13 (VAR33);
+FUN15 ();
+}
+
+VAR1 = FUN16 (VAR1);
+VAR2 = FUN16 (VAR2);
+
+VAR3 += VAR4 * (VAR5 - VAR6);
+if (VAR1 != NULL)
+VAR4 *= VAR7 - VAR6 + 1;
+}
+
+assert (VAR2 == NULL);
+
+VAR13 = FUN17 (&final, VAR3);
+assert (VAR13);
+
+return final;
+}

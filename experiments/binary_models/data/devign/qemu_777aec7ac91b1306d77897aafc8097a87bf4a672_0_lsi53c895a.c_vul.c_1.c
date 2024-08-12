@@ -1,0 +1,23 @@
+static void FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = (VAR3 *)VAR2;
+    VAR5 *VAR6;
+    VAR6 = VAR4->VAR7.VAR8;
+    FUN2(VAR6, VAR9);
+    FUN3(VAR6, VAR10);
+    FUN4(VAR6, VAR11);
+    VAR6[0x2e] = 0x00;
+    VAR6[0x2f] = 0x10;
+    VAR6[0x0d] = 0xff;
+    VAR6[0x3d] = 0x01;
+    VAR4->VAR12 = FUN5(VAR13, VAR14, VAR4);
+    VAR4->VAR15 = FUN5(VAR16, VAR17, VAR4);
+    FUN6((struct VAR1 *)VAR4, 0, 256, VAR18, VAR19);
+    FUN6((struct VAR1 *)VAR4, 1, 0x400, VAR20, VAR21);
+    FUN6((struct VAR1 *)VAR4, 2, 0x2000, VAR20, VAR22);
+    VAR4->VAR23 = FUN7(sizeof(VAR24));
+    VAR4->VAR25 = 1;
+    VAR4->VAR26 = 0;
+    VAR4->VAR7.VAR27 = VAR28;
+    FUN8(VAR4);
+    FUN9(&VAR2->VAR29, VAR30);

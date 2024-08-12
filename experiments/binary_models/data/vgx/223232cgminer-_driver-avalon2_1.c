@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { int VAR3 ; if ( VAR4 == VAR5 ) { VAR2 -> VAR6 = VAR7 ; VAR2 -> VAR8 = FUN2 ( VAR2 -> VAR6 , NULL ) ; return ; } VAR3 = FUN3 ( VAR2 ) ; if ( VAR3 < 60 ) { VAR2 -> VAR6 = VAR7 ; } if ( VAR3 > 80 ) { VAR2 -> VAR6 = VAR9 ; } else { VAR2 -> VAR6 = ( VAR3 - 60 ) * ( VAR9 - VAR7 ) / 20 + VAR7 ; } VAR2 -> VAR8 = FUN2 ( VAR2 -> VAR6 ) ; }

@@ -1,0 +1,29 @@
+void
+FUN1(void)
+{
+size_t VAR1;
+VAR2 *VAR3;
+const VAR2 *VAR4;
+
+
+if ((VAR4 = VAR5) != NULL)
+for (VAR1 = VAR6.VAR7, VAR3 = VAR6.VAR8 - 1; VAR1--; VAR3--)
+*VAR3 = VAR4[*VAR3];
+
+for (VAR3 = VAR6.VAR9; VAR6.VAR10 >= VAR11; VAR3 += VAR11, VAR6.VAR10 -= VAR11) {
+for (VAR4 = VAR3 + VAR11 - 1; VAR4 >= VAR3 && *VAR4 == ''; --VAR4);
+if (VAR4 >= VAR3) {
+VAR1 = VAR4 - VAR3 + 1;
+(void)memmove(VAR12.VAR8, VAR3, VAR1);
+VAR12.VAR8 += VAR1;
+VAR12.VAR10 += VAR1;
+}
+++VAR12.VAR10;
+*VAR12.VAR8++ = '';
+if (VAR12.VAR10 >= VAR12.VAR13)
+FUN2(0);
+}
+if (VAR6.VAR10)
+(void)memmove(VAR6.VAR9, VAR6.VAR8 - VAR6.VAR10, VAR6.VAR10);
+VAR6.VAR8 = VAR6.VAR9 + VAR6.VAR10;
+}

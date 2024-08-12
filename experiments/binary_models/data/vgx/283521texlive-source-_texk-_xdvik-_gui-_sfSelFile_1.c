@@ -1,0 +1,1 @@
+static int FUN1 ( char * VAR1 , char * * VAR2 , struct VAR3 * VAR4 ) { FUN2 ( VAR2 , NULL ) ; if ( ( VAR5 && VAR1 [ 0 ] == '' ) || ( ! FUN3 ( VAR4 -> VAR6 ) && FUN4 ( VAR7 , VAR1 ) ) ) { return 0 ; } VAR1 [ strlen ( VAR1 ) ] = FUN5 ( VAR4 ) ; return 1 ; }

@@ -1,0 +1,57 @@
+static char *
+FUN1(const VAR1 *VAR2)
+{
+char *VAR3 = NULL;
+VAR4 *VAR5 = FUN2();
+
+
+{
+if (!VAR2->VAR6.VAR7) {
+FUN3(VAR8, "");
+goto VAR9;
+}
+FUN4(VAR5, "", VAR10,
+VAR11);
+
+if (VAR2->VAR6.VAR12 &&
+FUN5(VAR2->VAR6.VAR12)) {
+
+char *VAR13 = FUN6(VAR2->VAR6.VAR12,
+"", 0, NULL);
+FUN4(VAR5, "", VAR14, VAR13);
+FUN7(VAR13);
+}
+
+if (VAR2->VAR6.VAR15) {
+FUN4(VAR5, "", VAR16);
+}
+
+if (FUN8()) {
+
+FUN4(VAR5, "", VAR17,
+FUN9(VAR18),
+FUN10());
+}
+}
+
+
+FUN11(VAR2->VAR6.VAR19,
+const VAR20 *, VAR21) {
+char *VAR22 = FUN12(&VAR2->VAR23.VAR24,
+VAR21);
+if (VAR22 == NULL) {
+FUN3(VAR8, "");
+goto VAR9;
+}
+FUN13(VAR5, VAR22);
+} FUN14(VAR21);
+
+
+VAR3 = FUN6(VAR5, "", 0, NULL);
+
+VAR9:
+FUN15(VAR5, char *, VAR25, FUN7(VAR25));
+FUN16(VAR5);
+
+return VAR3;
+}

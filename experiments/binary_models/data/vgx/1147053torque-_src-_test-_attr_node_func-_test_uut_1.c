@@ -1,0 +1,1 @@
+FUN1 ( ) { pbs_attribute VAR1 ; pbs_attribute VAR2 ; memset ( & VAR1 , 0 , sizeof ( VAR1 ) ) ; VAR2 . VAR3 . VAR4 = strdup ( "" ) ; }

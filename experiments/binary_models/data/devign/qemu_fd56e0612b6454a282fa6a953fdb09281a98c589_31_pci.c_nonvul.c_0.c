@@ -1,0 +1,16 @@
+void FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR3 *VAR5, VAR3 *VAR6)
+{
+    VAR7 *VAR8 = FUN2(VAR2);
+    assert(!VAR2->VAR9);
+    assert(FUN3(VAR4) == VAR10);
+    VAR2->VAR11[VAR12] = VAR4;
+    FUN4(VAR8->VAR13, VAR14, VAR4, 1);
+    assert(FUN3(VAR5) == VAR15);
+    VAR2->VAR11[VAR16] = VAR5;
+    FUN4(VAR8->VAR17, VAR18, VAR5, 1);
+    assert(FUN3(VAR6) == VAR19);
+    VAR2->VAR11[VAR20] = VAR6;
+    FUN4(VAR8->VAR17, VAR21, VAR6, 1);
+    VAR2->VAR9 = true;
+    FUN5(VAR2);
+}

@@ -1,0 +1,1 @@
+value FUN1 ( LLVMValueRef VAR1 ) { char * VAR2 = FUN2 ( VAR1 ) ; value VAR3 = FUN3 ( VAR2 ) ; FUN4 ( VAR2 , NULL ) ; return VAR3 ; }

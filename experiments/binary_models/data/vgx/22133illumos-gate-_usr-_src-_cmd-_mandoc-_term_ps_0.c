@@ -1,0 +1,90 @@
+static struct VAR1 *
+FUN1(const struct VAR2 *VAR3, enum termtype VAR4)
+{
+struct VAR1	*VAR5;
+unsigned int	 VAR6, VAR7;
+size_t		 VAR8, VAR9, VAR10;
+const char	*VAR11;
+
+VAR5 = FUN2(1, sizeof(*VAR5));
+VAR5->VAR12 = VAR5->VAR13 = FUN2(1, sizeof(*VAR5->VAR12));
+VAR5->VAR14 = 1;
+VAR5->VAR4 = VAR4;
+
+VAR5->VAR15 = VAR16;
+VAR5->VAR17 = FUN3(NULL,
+(VAR5->VAR18 = 8), sizeof(*VAR5->VAR17));
+VAR5->VAR17[0] = VAR5->VAR19 = VAR20;
+VAR5->VAR21 = FUN2(1, sizeof(*VAR5->VAR21));
+
+VAR5->VAR22 = VAR23;
+VAR5->VAR24 = VAR25;
+VAR5->VAR26 = VAR27;
+VAR5->VAR28 = VAR29;
+VAR5->VAR30 = VAR31;
+VAR5->VAR32 = VAR33;
+VAR5->VAR34 = VAR35;
+VAR5->VAR36 = VAR37;
+
+
+
+VAR5->VAR21->VAR38 = "";
+VAR6 = 216;
+VAR7 = 279;
+
+
+
+VAR11 = VAR3->VAR39;
+if (VAR11 != NULL && FUN4(VAR11, "") != 0) {
+if (FUN4(VAR11, "") == 0) {
+VAR5->VAR21->VAR38 = "";
+VAR6 = 297;
+VAR7 = 420;
+} else if (FUN4(VAR11, "") == 0) {
+VAR5->VAR21->VAR38 = "";
+VAR6 = 210;
+VAR7 = 297;
+} else if (FUN4(VAR11, "") == 0) {
+VAR5->VAR21->VAR38 = "";
+VAR6 = 148;
+VAR7 = 210;
+} else if (FUN4(VAR11, "") == 0) {
+VAR5->VAR21->VAR38 = "";
+VAR6 = 216;
+VAR7 = 356;
+} else if (sscanf(VAR11, "", &VAR6, &VAR7) == 2)
+VAR5->VAR21->VAR38 = "";
+else
+FUN5("", VAR11);
+}
+
+
+
+VAR5->VAR21->VAR40 = 11;
+
+
+
+VAR6 = FUN6(VAR5, ((double)VAR6 * 72.0 / 25.4));
+VAR7 = FUN6(VAR5, ((double)VAR7 * 72.0 / 25.4));
+
+
+
+VAR8 = (VAR41)((double)VAR6 / 9.0);
+VAR9 = (VAR41)((double)VAR7 / 9.0);
+
+
+
+VAR10 = FUN6(VAR5, ((double)VAR5->VAR21->VAR40 * 1.4));
+
+VAR5->VAR21->VAR36 = VAR5->VAR21->VAR42 = (VAR41)VAR6;
+VAR5->VAR21->VAR43 = (VAR41)VAR7;
+VAR5->VAR21->VAR44 = VAR7 - (VAR9 / 2) - (VAR10 / 2);
+VAR5->VAR21->VAR45 = VAR7 - VAR9;
+VAR5->VAR21->VAR46 = (VAR9 / 2) - (VAR10 / 2);
+VAR5->VAR21->VAR47 = VAR9;
+VAR5->VAR21->VAR48 = VAR8;
+VAR5->VAR21->VAR10 = VAR10;
+
+VAR5->VAR49 = VAR6 - (VAR8 * 2);
+return VAR5;
+}

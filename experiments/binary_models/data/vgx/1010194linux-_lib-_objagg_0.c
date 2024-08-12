@@ -1,0 +1,30 @@
+const struct VAR1 *FUN1(struct VAR2 *VAR2)
+{
+struct VAR1 *VAR1;
+struct VAR3 *VAR3;
+int VAR4;
+
+VAR1 = FUN2(FUN3(VAR1, VAR5,
+VAR2->VAR6), VAR7);
+if (!VAR1)
+return FUN4(-VAR8);
+
+VAR4 = 0;
+FUN5(VAR3, &VAR2->VAR9, VAR10) {
+memcpy(&VAR1->VAR5[VAR4].VAR11, &VAR3->VAR11,
+sizeof(VAR1->VAR5[0].VAR11));
+VAR1->VAR5[VAR4].VAR3 = VAR3;
+VAR1->VAR5[VAR4].VAR12 =
+FUN6(VAR3);
+if (VAR1->VAR5[VAR4].VAR12)
+VAR1->VAR13++;
+VAR4++;
+}
+VAR1->VAR14 = VAR4;
+
+FUN7(VAR1->VAR5, VAR1->VAR14,
+sizeof(struct VAR15),
+VAR16, NULL);
+
+return VAR1;
+}

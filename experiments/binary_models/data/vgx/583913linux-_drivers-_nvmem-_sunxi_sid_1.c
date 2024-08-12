@@ -1,0 +1,1 @@
+static int FUN1 ( void * VAR1 , unsigned int VAR2 , void * VAR3 , size_t VAR4 ) { struct VAR5 * VAR6 = VAR1 ; u32 VAR7 ; int VAR8 ; while ( VAR4 >= 4 ) { VAR8 = FUN2 ( VAR6 , VAR2 , VAR3 ) ; VAR3 += 4 ; VAR2 += 4 ; VAR4 -= 4 ; } if ( ! VAR4 ) { return 0 ; } VAR8 = FUN2 ( VAR6 , VAR2 , & VAR7 ) ; if ( VAR8 ) { return VAR8 ; } memcpy ( VAR3 , & VAR7 , VAR4 ) ; return 0 ; }

@@ -1,0 +1,51 @@
+static int FUN1(struct VAR1 *VAR2, int *VAR3)
+{
+u8 VAR4;
+u16 VAR5;
+
+*VAR3 = 0;
+
+
+if (VAR6 & FUN2(VAR2->VAR7 + VAR8)) {
+VAR2->VAR9 = true;
+goto VAR10;
+}
+
+VAR4 = FUN2(VAR2->VAR7 + VAR11);
+
+if (VAR4 & VAR12) {
+FUN3(&VAR2->VAR13->VAR14, "");
+return -VAR15;
+}
+
+FUN4(VAR4|VAR16, VAR2->VAR7 + VAR11);
+if (!(VAR6 & FUN2(VAR2->VAR7 + VAR8))) {
+FUN3(&VAR2->VAR13->VAR14, "");
+return -VAR15;
+}
+
+VAR10:
+VAR2->VAR17 = -1;
+VAR5 = FUN5(VAR2->VAR7 + VAR18);
+VAR5 &= 0x1FF;
+if (VAR5) {
+
+VAR2->VAR19 = VAR5 * 1000 / 2 - 50000;
+VAR2->VAR17 = 0;
+++(*VAR3);
+}
+
+VAR2->VAR20 = -1;
+VAR5 = FUN5(VAR2->VAR7 + VAR21);
+VAR5 &= 0x1FF;
+if (VAR5) {
+
+VAR2->VAR22 = VAR5 * 1000 / 2 - 50000;
+VAR2->VAR20 = *VAR3;
+++(*VAR3);
+}
+
+FUN6(VAR2, VAR3);
+
+return 0;
+}

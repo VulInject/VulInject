@@ -1,0 +1,36 @@
+int FUN1(struct VAR1 *VAR2, int VAR3, int VAR4,
+struct VAR5 *VAR6)
+{
+if (VAR3 <= VAR4) {
+return FUN2(VAR2, VAR3, VAR6);
+} else {
+dma_addr_t VAR7;
+int VAR8;
+
+VAR6->VAR9.VAR6 = NULL;
+VAR6->VAR10      = FUN3(VAR3, VAR11);
+VAR6->VAR12	= VAR6->VAR10;
+VAR6->VAR13  = VAR14;
+VAR6->VAR15   = FUN4(VAR6->VAR10, sizeof(*VAR6->VAR15),
+VAR16);
+if (!VAR6->VAR15)
+return -VAR17;
+
+for (VAR8 = 0; VAR8 < VAR6->VAR10; ++VAR8) {
+VAR6->VAR15[VAR8].VAR6 =
+FUN5(&VAR2->VAR18->VAR19->VAR2,
+VAR11, &VAR7, VAR16);
+if (!VAR6->VAR15[VAR8].VAR6)
+goto VAR20;
+
+VAR6->VAR15[VAR8].VAR21 = VAR7;
+}
+}
+
+return 0;
+
+VAR20:
+FUN6(VAR2, VAR3, VAR6);
+
+return -VAR17;
+}

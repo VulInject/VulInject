@@ -1,0 +1,1 @@
+static int FUN1 ( const char * VAR1 , blkid_cache VAR2 , int VAR3 , boolean_t VAR4 ) { int VAR5 ; char * VAR6 ; VAR6 = FUN2 ( VAR2 , "" , VAR1 ) ; if ( VAR6 == NULL ) { return ( 0 ) ; } if ( strcmp ( VAR6 , "" ) == 0 ) { VAR5 = FUN3 ( VAR1 , VAR3 , VAR4 ) ; } else { if ( VAR3 ) { VAR5 = 0 ; } else { VAR5 = - 1 ; FUN4 ( FUN5 ( "" "" ) , VAR1 , VAR6 ) ; } } return ( VAR5 ) ; }

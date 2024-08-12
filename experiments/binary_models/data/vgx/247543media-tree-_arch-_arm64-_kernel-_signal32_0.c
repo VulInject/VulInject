@@ -1,0 +1,38 @@
+static int FUN1(struct compat_vfp_sigframe VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = &VAR5->VAR6.VAR3;
+compat_ulong_t VAR7 = VAR8;
+compat_ulong_t VAR9 = VAR10;
+compat_ulong_t VAR11, VAR12;
+int VAR13, VAR14 = 0;
+
+
+FUN2();
+
+
+FUN3(VAR7, &VAR2->VAR7, VAR14);
+FUN3(VAR9, &VAR2->VAR9, VAR14);
+
+
+for (VAR13 = 0; VAR13 < FUN4(VAR2->VAR15.VAR16); VAR13 += 2) {
+union __fpsimd_vreg VAR17 = {
+.VAR18 = VAR4->VAR19[VAR13 >> 1],
+};
+
+FUN3(VAR17.VAR20, &VAR2->VAR15.VAR16[VAR13], VAR14);
+FUN3(VAR17.VAR21, &VAR2->VAR15.VAR16[VAR13 + 1], VAR14);
+}
+
+
+VAR11 = (VAR4->VAR22 & VAR23) |
+(VAR4->VAR24 & VAR25);
+FUN3(VAR11, &VAR2->VAR15.VAR11, VAR14);
+
+
+VAR12 = (1 << 30);
+FUN3(VAR12, &VAR2->VAR26.VAR12, VAR14);
+FUN3(0, &VAR2->VAR26.VAR27, VAR14);
+FUN3(0, &VAR2->VAR26.VAR28, VAR14);
+
+return VAR14 ? -VAR29 : 0;
+}

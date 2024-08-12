@@ -1,0 +1,107 @@
+static int
+FUN1(VAR1 *VAR2,
+VAR3 *VAR4,
+unsigned caps VAR5,
+unsigned VAR6,
+unsigned VAR7,
+unsigned VAR8,
+const char *VAR9)
+{
+
+
+VAR10 *VAR11 = NULL;
+VAR12 *VAR13 = NULL;
+FUN2(VAR14) VAR15 = NULL;
+GStrv VAR16;
+
+if (!(VAR11 = FUN3(VAR4)))
+goto VAR17;
+
+VAR11->VAR18 = VAR19;
+
+if (!(VAR13 = FUN4(VAR4)))
+goto VAR17;
+
+VAR13->VAR18 = VAR20;
+VAR11->VAR21.VAR22.VAR23.VAR6 = VAR6;
+VAR11->VAR21.VAR22.VAR23.VAR7 = VAR7;
+VAR11->VAR21.VAR22.VAR23.VAR8 = VAR8;
+
+if (!VAR9)
+goto VAR24;
+
+if (!(VAR15 = FUN5(VAR9, "", 0)))
+goto VAR24;
+
+for (VAR16 = VAR15; *VAR16; VAR16++) {
+char *VAR25 = *VAR16;
+char *VAR26;
+if (!VAR11->VAR27)
+VAR11->VAR27 = FUN6(VAR28, 1);
+
+if (FUN7(VAR25, ""))
+VAR11->VAR27->VAR29 = VAR30;
+
+if (FUN7(VAR25, ""))
+VAR11->VAR27->VAR29 = VAR31;
+
+if (FUN7(VAR25, ""))
+VAR11->VAR27->VAR29 = VAR32;
+
+if (FUN8(VAR25, "") || FUN8(VAR25, "")) {
+
+VAR25 += strlen("");
+
+if (!(VAR26 = strchr(VAR25, '')))
+goto VAR24;
+
+*VAR26 = '';
+
+if (VAR26 != VAR25)
+FUN9(VAR13, VAR25);
+else
+
+FUN9(VAR13, "");
+
+VAR25 = ++VAR26;
+if (FUN10(VAR25, NULL, 10, &VAR13->VAR33.VAR34.VAR35))
+goto VAR24;
+}
+
+if (FUN8(VAR25, "")) {
+VAR25 += strlen("");
+
+if (VAR11->VAR36 == NULL)
+VAR11->VAR36 = FUN6(VAR37, 1);
+
+if (FUN11(VAR25, NULL, 10, &VAR11->VAR36->VAR38))
+goto VAR24;
+}
+
+if (FUN8(VAR25, "")) {
+VAR25 += strlen("");
+
+if (VAR11->VAR36 == NULL)
+VAR11->VAR36 = FUN6(VAR37, 1);
+
+if (FUN11(VAR25, NULL, 10, &VAR11->VAR36->VAR39))
+goto VAR24;
+}
+
+if (FUN8(VAR25, "")) {
+VAR25 += strlen("");
+VAR13->VAR33.VAR34.VAR40.VAR41 = FUN12(VAR25);
+}
+}
+
+VAR17:
+FUN13(VAR2->VAR42, VAR2->VAR43, VAR11);
+FUN13(VAR2->VAR13, VAR2->VAR44, VAR13);
+
+return 0;
+
+VAR24:
+FUN14(VAR11);
+FUN15(VAR13);
+return -1;
+}

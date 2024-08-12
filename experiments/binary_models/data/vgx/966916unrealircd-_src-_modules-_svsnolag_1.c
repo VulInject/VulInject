@@ -1,0 +1,1 @@
+FUN1 ( VAR1 ) ; FUN1 ( VAR2 ) ; ModuleHeader VAR3 = { "" "" "" "" "" } ; FUN2 ( ) { FUN3 ( VAR4 -> VAR5 , VAR6 , VAR1 , VAR7 , VAR8 ) ; FUN3 ( VAR4 -> VAR5 , VAR9 , VAR2 , VAR7 , VAR8 ) ; FUN4 ( VAR4 , NULL ) ; return VAR10 ; }

@@ -1,0 +1,20 @@
+VAR1 FUN1(cmsHTRANSFORM VAR2, cmsFloat64Number VAR3, cmsFloat64Number VAR4, cmsFloat64Number VAR5)
+{
+cmsCIELab VAR6, VAR7;
+cmsFloat64Number VAR8;
+
+VAR6.VAR3 = VAR3; VAR6.VAR4 = VAR4; VAR6.VAR5 = VAR5;
+FUN2(VAR2, &VAR6, &VAR7, 1);
+
+VAR8 = FUN3(&VAR6, &VAR7);
+
+if (VAR8 > VAR9) VAR9 = VAR8;
+
+if (VAR9 >  0.003) {
+FUN4("", VAR9, VAR6.VAR3, VAR6.VAR4, VAR6.VAR5, VAR7.VAR3, VAR7.VAR4, VAR7.VAR5);
+FUN2(VAR2, &VAR6, &VAR7, 1);
+return 0;
+}
+
+return 1;
+}

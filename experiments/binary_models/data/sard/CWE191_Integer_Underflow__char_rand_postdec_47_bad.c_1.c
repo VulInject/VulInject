@@ -1,0 +1,40 @@
+#VAR1 ""
+void FUN1()
+{
+    char VAR2;
+    VAR2 = '';
+    if(FUN2())
+    {
+        VAR2 = (char)FUN3();
+    }
+    else
+    {
+        VAR2 = -2;
+    }
+    if(FUN2())
+    {
+        {
+            VAR2--;
+            char VAR3 = VAR2;
+            FUN4(VAR3);
+        }
+    }
+    else
+    {
+        if (VAR2 > VAR4)
+        {
+            VAR2--;
+            char VAR3 = VAR2;
+            FUN4(VAR3);
+        }
+        else
+        {
+        }
+    }
+}
+int main(int argc, char * argv[])
+{
+    srand( (unsigned)FUN5(NULL) );
+    FUN1();
+    return 0;
+}

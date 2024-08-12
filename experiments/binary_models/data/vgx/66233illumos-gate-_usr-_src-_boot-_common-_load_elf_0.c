@@ -1,0 +1,111 @@
+int
+FUN1(VAR1)(struct VAR2 *VAR3, u_int64_t VAR4)
+{
+struct elf_file		 VAR5;
+int			 VAR6, VAR7, VAR8;
+VAR9		*VAR10, *VAR11 = NULL;
+VAR9		*VAR12[2];
+char			*VAR13 = NULL;
+size_t			 VAR14;
+Elf_Addr		 VAR15, VAR16;
+
+FUN2(&VAR5, sizeof(struct VAR17));
+VAR5.VAR18 = -1;
+
+VAR6 = FUN1(VAR19)(VAR3->VAR20, &VAR5);
+if (VAR6 != 0)
+goto VAR21;
+
+if (VAR5.VAR22 == 1 || VAR5.VAR23->VAR24 == VAR25) {
+VAR5.VAR22 = 1;
+} else if (VAR5.VAR23->VAR24 != VAR26) {
+VAR6 = VAR27;
+goto VAR21;
+}
+
+VAR14 = VAR5.VAR23->VAR28 * VAR5.VAR23->VAR29;
+VAR11 = FUN3(VAR5.VAR18, VAR5.VAR23->VAR30, VAR14);
+if (VAR11 == NULL) {
+VAR6 = VAR31;
+goto VAR21;
+}
+
+
+VAR13 = FUN3(VAR5.VAR18, VAR11[VAR5.VAR23->VAR32].VAR33,
+VAR11[VAR5.VAR23->VAR32].VAR34);
+if (VAR13 == NULL) {
+FUN4("" FUN5(VAR35)
+"");
+VAR6 = VAR27;
+goto VAR21;
+}
+
+
+VAR12[0] = VAR12[1] = VAR10 = NULL;
+for (VAR7 = 0, VAR8 = 0; VAR7 < VAR5.VAR23->VAR28; VAR7++) {
+if (strcmp(&VAR13[VAR11[VAR7].VAR36],
+"") == 0) {
+VAR10 = &VAR11[VAR7];
+}
+if ((strcmp(&VAR13[VAR11[VAR7].VAR36], "") == 0) ||
+(strcmp(&VAR13[VAR11[VAR7].VAR36], "") == 0)) {
+VAR12[VAR8++] = &VAR11[VAR7];
+}
+}
+if (VAR10 == NULL || VAR12[0] == NULL || VAR12[1] == NULL) {
+FUN4("" FUN5(VAR35)
+"");
+VAR6 = VAR27;
+goto VAR21;
+}
+
+
+VAR6 = FUN6(VAR5.VAR18, VAR4, VAR10->VAR34, VAR10->VAR33);
+if (VAR6 != 0) {
+FUN4("" FUN5(VAR35)
+"", VAR6);
+goto VAR21;
+}
+VAR15 = VAR4;
+VAR16 = VAR4 + VAR10->VAR34;
+VAR4 += VAR10->VAR34;
+
+
+VAR6 = FUN6(VAR5.VAR18, VAR4, VAR12[0]->VAR34,
+VAR12[0]->VAR33);
+if (VAR6 != 0) {
+FUN4("" FUN5(VAR35)
+"", VAR6);
+goto VAR21;
+}
+
+
+VAR5.VAR37 = -(VAR12[0]->VAR38 - VAR4);
+VAR4 +=	(VAR12[1]->VAR38 - VAR12[0]->VAR38);
+
+VAR6 = FUN6(VAR5.VAR18, VAR4, VAR12[1]->VAR34,
+VAR12[1]->VAR33);
+if (VAR6 != 0) {
+FUN4("" FUN5(VAR35)
+"", VAR6);
+goto VAR21;
+}
+
+VAR6 = FUN1(VAR39)(VAR3, &VAR5, VAR15, VAR16);
+if (VAR6 != 0) {
+FUN4("" FUN5(VAR35)
+"", VAR6);
+goto VAR21;
+}
+
+VAR21:
+if (VAR13 != NULL)
+free(VAR13);
+if (VAR11 != NULL)
+free(VAR11);
+if (VAR5.VAR40 != NULL)
+free(VAR5.VAR40);
+if (VAR5.VAR18 != -1)
+close(VAR5.VAR18);
+return (VAR6);
+}

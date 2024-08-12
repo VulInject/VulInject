@@ -1,0 +1,1 @@
+void FUN1 ( void ) { size_t VAR1 = 0 ; VAR2 * VAR3 , * VAR4 ; for ( VAR1 = 0 ; VAR1 < FUN2 ( VAR5 ) ; VAR1 ++ ) { FUN3 ( , , , , ) { FUN4 ( & VAR3 -> VAR6 ) ; FUN5 ( VAR3 ) ; } } }

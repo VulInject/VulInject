@@ -1,0 +1,38 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+int VAR5;
+
+VAR4->VAR6 =
+FUN2(VAR4->VAR7.VAR8, sizeof(struct VAR9),
+VAR10);
+if (!VAR4->VAR6)
+return -VAR11;
+for (VAR5 = 0; VAR5 < VAR4->VAR7.VAR8; VAR5++) {
+VAR4->VAR6[VAR5].VAR12 =
+FUN3(sizeof (struct VAR13),
+VAR10);
+if (!VAR4->VAR6[VAR5].VAR12)
+goto VAR14;
+VAR4->VAR6[VAR5].VAR15 =
+FUN4(VAR2, VAR4->VAR6[VAR5].VAR12,
+sizeof (struct VAR13),
+VAR16);
+if (FUN5(VAR2, VAR4->VAR6[VAR5].VAR15)) {
+FUN6(VAR4->VAR6[VAR5].VAR12);
+goto VAR14;
+}
+}
+return 0;
+
+VAR14:
+while (VAR5 > 0) {
+--VAR5;
+FUN7(VAR2, VAR4->VAR6[VAR5].VAR15,
+sizeof (struct VAR13),
+VAR16);
+FUN6(VAR4->VAR6[VAR5].VAR12);
+}
+FUN6(VAR4->VAR6);
+VAR4->VAR6 = NULL;
+return -VAR11;
+}

@@ -1,0 +1,94 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR4;
+struct VAR5 *VAR6 = FUN2(VAR4->VAR7);
+struct VAR8 *VAR8 = FUN3(VAR4);
+int VAR9, VAR10 = VAR8->VAR10;
+uint16_t VAR11[9] = { 0, };
+struct VAR12 *VAR12 = FUN4(VAR2);
+
+if (VAR2->VAR13) {
+struct VAR14 *VAR13 =
+(struct VAR14 *)VAR2->VAR13->VAR15;
+uint64_t VAR16[9] = { 0, };
+
+if (VAR12->VAR17) {
+FUN5(VAR16, VAR13->VAR18);
+} else {
+for (VAR9 = 0; VAR9 < FUN6(VAR16); VAR9++)
+VAR16[VAR9] = VAR13->VAR18[VAR9];
+}
+
+
+for (VAR9 = 0; VAR9 < FUN6(VAR11); VAR9++) {
+uint64_t VAR19 = ((1ULL << 63) - 1) & VAR16[VAR9];
+
+
+VAR19 = FUN7(VAR19, 0, VAR20 - 1);
+
+
+if (FUN8(VAR16[VAR9]))
+VAR11[VAR9] |= 1 << 15;
+
+if (VAR19 < VAR21)
+VAR11[VAR9] |= (3 << 12) |
+FUN9(VAR19, 12);
+else if (VAR19 < VAR22)
+VAR11[VAR9] |= (2 << 12) |
+FUN9(VAR19, 11);
+else if (VAR19 < VAR23)
+VAR11[VAR9] |= (1 << 12) |
+FUN9(VAR19, 10);
+else if (VAR19 < VAR24)
+VAR11[VAR9] |= FUN9(VAR19, 9);
+else if (VAR19 < VAR25)
+VAR11[VAR9] |= (7 << 12) |
+FUN9(VAR19, 8);
+else
+VAR11[VAR9] |= (6 << 12) |
+FUN9(VAR19, 7);
+}
+} else {
+
+for (VAR9 = 0; VAR9 < 3; VAR9++) {
+if (VAR12->VAR17)
+VAR11[VAR9 * 3 + VAR9] =
+VAR26;
+else
+VAR11[VAR9 * 3 + VAR9] = VAR27;
+}
+}
+
+FUN10(FUN11(VAR10), VAR11[0] << 16 | VAR11[1]);
+FUN10(FUN12(VAR10), VAR11[2] << 16);
+
+FUN10(FUN13(VAR10), VAR11[3] << 16 | VAR11[4]);
+FUN10(FUN14(VAR10), VAR11[5] << 16);
+
+FUN10(FUN15(VAR10), VAR11[6] << 16 | VAR11[7]);
+FUN10(FUN16(VAR10), VAR11[8] << 16);
+
+FUN10(FUN17(VAR10), 0);
+FUN10(FUN18(VAR10), 0);
+FUN10(FUN19(VAR10), 0);
+
+if (FUN20(VAR6) > 6) {
+uint16_t VAR28 = 0;
+
+if (VAR12->VAR17)
+VAR28 = (16 * (1 << 12) / 255) & 0x1fff;
+
+FUN10(FUN21(VAR10), VAR28);
+FUN10(FUN22(VAR10), VAR28);
+FUN10(FUN23(VAR10), VAR28);
+
+FUN10(FUN24(VAR10), 0);
+} else {
+uint32_t VAR29 = VAR30;
+
+if (VAR12->VAR17)
+VAR29 |= VAR31;
+
+FUN10(FUN24(VAR10), VAR29);
+}
+}

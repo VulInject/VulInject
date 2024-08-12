@@ -1,0 +1,1 @@
+boolean_t FUN1 ( VAR1 * VAR2 , void * VAR3 ) { uint_t VAR4 = 1 ; VAR5 * VAR6 = VAR3 ; VAR6 -> VAR7 = 0 ; VAR6 -> VAR8 = VAR9 ; VAR6 -> VAR10 = VAR11 ; return ( VAR12 ) ; }

@@ -1,0 +1,29 @@
+static void FUN1(VAR1 *VAR2, void *VAR3)
+{
+    VAR4 *VAR5 = (VAR4 *)VAR3;
+    unsigned int VAR6;
+    FUN2(VAR2, &VAR5->VAR7);
+    FUN2(VAR2, &VAR5->VAR8);
+    FUN2(VAR2, &VAR5->VAR9);
+    FUN2(VAR2, &VAR5->VAR10);
+    FUN2(VAR2, &VAR5->VAR11);
+    for (VAR6 = 0; VAR6 < VAR5->VAR12; VAR6++)
+    {
+        FUN2(VAR2, &VAR5->VAR13[VAR6].VAR14);
+        FUN2(VAR2, &VAR5->VAR13[VAR6].VAR15);
+        FUN3(VAR2, &VAR5->VAR13[VAR6].VAR16);
+        FUN3(VAR2, &VAR5->VAR13[VAR6].VAR17);
+    }
+    FUN2(VAR2, &VAR5->VAR18);
+    for (VAR6 = 0; VAR6 < VAR5->VAR18; VAR6++)
+    {
+        FUN2(VAR2, &VAR5->VAR19[VAR6].VAR20);
+        FUN4(VAR2, &VAR5->VAR19[VAR6].VAR21);
+        FUN4(VAR2, &VAR5->VAR19[VAR6].VAR22);
+    }
+    for (VAR6 = 0; VAR6 < VAR23; VAR6++)
+    {
+        FUN2(VAR2, &VAR5->VAR24[VAR6].VAR25);
+        FUN2(VAR2, &VAR5->VAR24[VAR6].VAR26);
+    }
+}

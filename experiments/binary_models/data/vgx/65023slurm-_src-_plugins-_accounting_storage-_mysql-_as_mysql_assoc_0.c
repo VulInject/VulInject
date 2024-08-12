@@ -1,0 +1,59 @@
+static int FUN1(VAR1 *VAR2,
+VAR3 *VAR4,
+char **VAR5,
+bool VAR6)
+{
+time_t VAR7 = FUN2(NULL);
+int VAR8 = VAR9;
+
+FUN3(VAR5);
+
+if ((VAR4->VAR10 != 1) || !VAR4->VAR11
+|| !VAR4->VAR12 || !VAR4->VAR13)
+return VAR14;
+
+FUN4(*VAR5, ""%VAR15%VAR16\""
+"",
+VAR4->VAR11, VAR17, (long)VAR7,
+VAR4->VAR13, VAR4->VAR12);
+if (VAR6) {
+char *VAR18 = NULL;
+VAR19 *VAR20 = NULL;
+MYSQL_ROW VAR21;
+
+FUN4(VAR18, ""%VAR15%VAR16\""
+"",
+VAR4->VAR11, VAR17,
+VAR4->VAR13, VAR4->VAR12);
+FUN5(VAR22, VAR2->VAR23, "", VAR18);
+if (!(VAR20 = FUN6(
+VAR2, VAR18, 1))) {
+FUN7(VAR18);
+VAR8 = VAR14;
+goto VAR24;
+}
+FUN7(VAR18);
+
+while ((VAR21 = FUN8(VAR20))) {
+VAR3 *VAR25 = xmalloc(
+sizeof(VAR3));
+FUN9(VAR25, 0);
+
+VAR25->VAR11 = xstrdup(VAR4->VAR11);
+VAR25->VAR26 = FUN10(VAR21[0]);
+VAR25->VAR10 = 0;
+if (FUN11(VAR2->VAR27,
+VAR28,
+VAR25)
+!= VAR9) {
+FUN12(VAR25);
+FUN13("");
+VAR8 = VAR14;
+break;
+}
+}
+FUN14(VAR20);
+}
+VAR24:
+return VAR8;
+}

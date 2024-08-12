@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = VAR2 -> VAR4 ; uint32_t VAR5 = 0 , VAR6 = 0 ; if ( FUN2 ( VAR2 , VAR7 , & VAR5 ) ) { VAR8 } if ( FUN2 ( VAR2 , VAR9 , & VAR6 ) ) { VAR8 } out VAR4 -> VAR10 = ( ( VAR11 ) VAR5 << 32 ) | VAR6 ; if ( VAR4 -> VAR12 [ 0 ] == '' ) { snprintf ( VAR4 -> VAR12 , sizeof ( VAR4 -> VAR12 ) , "" , VAR4 -> VAR10 ) ; } }

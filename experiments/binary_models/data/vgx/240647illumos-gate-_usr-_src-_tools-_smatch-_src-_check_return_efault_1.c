@@ -1,0 +1,1 @@
+static void FUN1 ( const char * VAR1 , struct VAR2 * VAR3 , void * VAR4 ) { FUN2 ( VAR5 , VAR3 -> VAR6 , & VAR7 ) ; }

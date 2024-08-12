@@ -1,0 +1,44 @@
+FUN1 (struct VAR1 *VAR1, afi_t VAR2, safi_t VAR3, int VAR4, 
+const char *VAR5)
+{
+struct VAR6 *VAR7;
+struct VAR8 *VAR9;
+struct VAR10 *VAR11, *VAR12;
+
+if (! VAR1->VAR13[VAR2][VAR3])
+return VAR14;
+
+if (VAR4 != VAR15 && VAR4 != VAR16 &&
+VAR4 != VAR17 && VAR4 != VAR18)
+return VAR19;
+
+if ( (VAR4 == VAR16 || VAR4 == VAR17)
+&& FUN2 (VAR1, VAR2, VAR3))
+return VAR20;
+
+VAR7 = &VAR1->VAR7[VAR2][VAR3];
+
+if (VAR7->VAR21[VAR4].VAR5)
+free (VAR7->VAR21[VAR4].VAR5);
+
+VAR7->VAR21[VAR4].VAR5 = strdup (VAR5);
+VAR7->VAR21[VAR4].VAR21 = FUN3 (VAR5);
+
+if (! FUN4 (VAR1->VAR22, VAR23))
+return 0;
+
+VAR9 = VAR1->VAR9;
+for (FUN5 (VAR9->VAR1, VAR11, VAR12, VAR1))
+{
+VAR7 = &VAR1->VAR7[VAR2][VAR3];
+
+if (! VAR1->VAR24[VAR2][VAR3])
+continue;
+
+if (VAR7->VAR21[VAR4].VAR5)
+free (VAR7->VAR21[VAR4].VAR5);
+VAR7->VAR21[VAR4].VAR5 = strdup (VAR5);
+VAR7->VAR21[VAR4].VAR21 = FUN3 (VAR5);
+}
+return 0;
+}

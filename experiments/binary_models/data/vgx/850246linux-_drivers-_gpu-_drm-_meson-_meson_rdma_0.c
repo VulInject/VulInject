@@ -1,0 +1,11 @@
+static void FUN1(struct VAR1 *VAR2, uint32_t VAR3,
+uint32_t VAR4)
+{
+if (VAR2->VAR5.VAR6 >= (VAR7 / VAR8)) {
+FUN2(VAR2->VAR9, "", VAR10);
+return;
+}
+
+VAR2->VAR5.VAR11[VAR2->VAR5.VAR6++] = VAR4;
+VAR2->VAR5.VAR11[VAR2->VAR5.VAR6++] = VAR3;
+}

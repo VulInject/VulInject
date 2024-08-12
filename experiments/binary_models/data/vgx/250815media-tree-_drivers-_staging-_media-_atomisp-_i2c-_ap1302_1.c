@@ -1,0 +1,1 @@
+static u16 FUN1 ( enum ap1302_contexts VAR1 , u16 VAR2 ) { u16 VAR3 ; if ( VAR1 == VAR4 ) { if ( VAR2 > VAR5 ) { VAR2 -= 2 ; } } if ( VAR1 == VAR6 ) { VAR3 = VAR7 + VAR2 ; } if ( VAR1 == VAR8 ) { VAR3 = VAR9 + VAR2 ; } else { VAR3 = VAR10 + VAR2 ; } return VAR3 ; }

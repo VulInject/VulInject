@@ -1,0 +1,24 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+if (VAR2->VAR3 > VAR4)
+VAR2->VAR5 = VAR4;
+else
+VAR2->VAR5 = VAR2->VAR3;
+if (VAR2->VAR3 < VAR4) {
+VAR2->VAR5 = VAR4;
+} else {
+VAR2->VAR5 = VAR2->VAR3;
+}
+
+FUN2((VAR6
+"",
+&VAR2->VAR7->VAR2, VAR2->VAR5, VAR2->VAR8->VAR9,
+VAR10, &VAR2->VAR11));
+VAR2->VAR12 = FUN3(&VAR2->VAR7->VAR2,
+(VAR2->VAR5 + sizeof(struct VAR13))
+* (VAR2->VAR8->VAR9 + VAR10) + (VAR14 - 1),
+&VAR2->VAR11, VAR15);
+if (VAR2->VAR12 == NULL)
+return -VAR16;
+return 0;
+}

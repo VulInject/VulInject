@@ -1,0 +1,1 @@
+static int FUN1 ( const struct VAR1 * VAR2 ) { struct object_id VAR3 ; return ! FUN2 ( & VAR3 , & VAR2 -> VAR3 ) ; }

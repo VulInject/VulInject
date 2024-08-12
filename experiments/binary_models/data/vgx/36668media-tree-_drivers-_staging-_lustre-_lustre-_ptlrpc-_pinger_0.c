@@ -1,0 +1,63 @@
+static int FUN1(void *VAR1)
+{
+struct VAR2 *VAR3 = VAR1;
+
+
+FUN2(VAR3, VAR4);
+FUN3(&VAR3->VAR5);
+
+
+while (1) {
+unsigned long VAR6 = FUN4();
+struct l_wait_info VAR7;
+long VAR8;
+struct VAR9 *VAR10;
+struct VAR11 *VAR12;
+
+FUN5(&VAR13);
+FUN6(VAR10, &VAR14, VAR15) {
+VAR10->FUN7(VAR10, VAR10->VAR16);
+}
+FUN8(VAR12, &VAR17) {
+struct VAR18 *VAR19 =
+FUN9(VAR12, struct VAR18,
+VAR20);
+
+FUN10(VAR19, VAR6);
+
+if (VAR19->VAR21 && VAR19->VAR22 &&
+FUN11(VAR19->VAR22,
+FUN12(VAR6,
+FUN13(VAR23))))
+FUN14(VAR19, 0);
+}
+FUN15(&VAR13);
+
+
+VAR8 = FUN16(VAR6);
+
+FUN17(VAR24, "" VAR25 "",
+VAR8,
+FUN12(VAR6,
+FUN13(VAR23)));
+if (VAR8 > 0) {
+VAR7 = FUN18(FUN19(long, VAR8,
+FUN13(1)),
+NULL, NULL);
+FUN20(VAR3->VAR5,
+FUN21(VAR3) ||
+FUN22(VAR3),
+&VAR7);
+if (FUN23(VAR3, VAR26))
+break;
+
+FUN23(VAR3, VAR27);
+}
+}
+
+FUN2(VAR3, VAR28);
+FUN3(&VAR3->VAR5);
+
+FUN17(VAR29, "", FUN24());
+return 0;
+}

@@ -1,0 +1,37 @@
+static void FUN1(hwaddr VAR1, qemu_irq VAR2, int VAR3, int VAR4, int VAR5, int VAR6)
+{
+    VAR7 *VAR8;
+    VAR9 *VAR10;
+    VAR8 = FUN2(NULL, "");
+    FUN3(VAR8, "", VAR3);
+    FUN4(VAR8, "", VAR4);
+    FUN4(VAR8, "", VAR5);
+    FUN4(VAR8, "", VAR6);
+    FUN5(VAR8);
+    VAR10 = FUN6(VAR8);
+    FUN7(VAR10, 0, VAR1);
+    FUN7(VAR10, 1, VAR1 + 0x04000000ULL);
+    FUN7(VAR10, 2, VAR1 + 0x06000000ULL);
+    FUN7(VAR10, 3, VAR1 + 0x0c000000ULL);
+    FUN7(VAR10, 4, VAR1 + 0x0e000000ULL);
+    FUN7(VAR10, 5, VAR1 + 0x00700000ULL);
+    FUN7(VAR10, 6, VAR1 + 0x00200000ULL);
+    if (VAR6 == 8)
+    {
+        FUN7(VAR10, 7, VAR1 + 0x00300000ULL);
+    }
+    else
+    {
+        FUN7(VAR10, 7, VAR1 + 0x00301000ULL);
+    }
+    FUN7(VAR10, 8, VAR1 + 0x00240000ULL);
+    FUN7(VAR10, 9, VAR1 + 0x00280000ULL);
+    FUN7(VAR10, 10, VAR1 + 0x00800000ULL);
+    FUN7(VAR10, 11, VAR1 + 0x02000000ULL);
+    FUN7(VAR10, 12, VAR1 + 0x0a000000ULL);
+    if (VAR6 == 8)
+    {
+        FUN7(VAR10, 13, VAR1 + 0x00301000ULL);
+    }
+    FUN8(VAR10, 0, VAR2);
+}

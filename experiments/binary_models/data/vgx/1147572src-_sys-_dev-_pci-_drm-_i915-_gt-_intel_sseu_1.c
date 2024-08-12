@@ -1,0 +1,1 @@
+unsigned int FUN1 ( const struct VAR1 * VAR2 , u8 VAR3 ) { FUN2 ( VAR2 -> VAR4 ) ; return VAR2 -> VAR5 . VAR6 [ VAR3 ] ; }

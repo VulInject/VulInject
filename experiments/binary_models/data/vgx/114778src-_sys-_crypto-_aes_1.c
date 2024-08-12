@@ -1,0 +1,1 @@
+static inline uint32_t FUN1 ( uint32_t VAR1 ) { uint32_t VAR2 [ 8 ] ; int VAR3 ; for ( VAR3 = 0 ; VAR3 < 8 ; VAR3 ++ ) { VAR2 [ VAR3 ] = VAR1 ; } FUN2 ( VAR2 , NULL ) ; FUN3 ( VAR2 ) ; FUN2 ( VAR2 ) ; return VAR2 [ 0 ] ; }

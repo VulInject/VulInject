@@ -1,0 +1,57 @@
+int
+FUN1(struct VAR1 *VAR2)
+{
+int VAR3, VAR4;
+int VAR5 = VAR6;
+daddr32_t VAR7 = VAR2->VAR8;
+int VAR9;
+struct VAR10 *VAR11 = &VAR12;
+caddr_t VAR13;
+
+if ((VAR2->VAR14 >= 0) && (VAR2->VAR15 < VAR2->VAR14)) {
+if (VAR16)
+(void) FUN2(
+"",
+VAR2->VAR17, VAR2->VAR15,
+VAR2->VAR14);
+return (VAR6);
+}
+
+for (VAR3 = 0; VAR3 < VAR2->VAR18; VAR3++) {
+if (FUN3(VAR7 + VAR3, 1)) {
+VAR5 = VAR19;
+} else if (FUN4(VAR7 + VAR3)) {
+
+VAR4 = VAR7 + VAR3;
+if (!FUN5(VAR4, VAR2->VAR17,
+VAR2->VAR15 * VAR20.VAR21 + VAR3,
+VAR22)) {
+
+if (VAR16)
+(void) FUN2("",
+VAR4);
+FUN6(VAR4);
+VAR23--;
+
+
+VAR9 = FUN7(&VAR20, VAR4);
+(void) FUN8(&VAR24, FUN9(&VAR20, VAR9),
+(VAR25)VAR20.VAR26);
+VAR13 = FUN10(VAR11, VAR9);
+if (VAR13 != NULL) {
+FUN11("", VAR9, VAR13);
+free((void *)VAR13);
+if (FUN12("") == 0)
+FUN13("");
+FUN14(VAR11, VAR9);
+}
+FUN15(FUN16(VAR11),
+FUN17(&VAR20, VAR4));
+FUN18();
+
+VAR5 |= VAR27;
+}
+}
+}
+return (VAR5);
+}

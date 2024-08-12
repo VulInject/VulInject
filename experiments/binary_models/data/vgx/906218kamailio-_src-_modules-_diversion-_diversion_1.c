@@ -1,0 +1,1 @@
+int FUN1 ( char * VAR1 , int * VAR2 , void * VAR3 , void * VAR4 ) { FUN2 ( VAR5 , NULL ) ; return 0 ; }

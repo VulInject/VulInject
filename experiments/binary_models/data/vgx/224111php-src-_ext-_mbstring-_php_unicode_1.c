@@ -1,0 +1,1 @@
+static bool FUN1 ( unsigned char * VAR1 , size_t VAR2 , unsigned int VAR3 , const VAR4 * VAR5 ) { uint32_t VAR6 [ 64 ] ; while ( VAR2 ) { size_t VAR7 = VAR5 -> FUN2 ( & VAR1 , & VAR2 , VAR6 , 64 , & VAR3 ) ; FUN3 ( VAR7 <= 64 ) ; for ( unsigned int VAR8 = 0 ; VAR8 < VAR7 ; VAR8 ++ ) { uint32_t VAR9 = VAR6 [ VAR8 ] ; if ( FUN4 ( VAR9 ) ) { return true ; } } } return false ; }

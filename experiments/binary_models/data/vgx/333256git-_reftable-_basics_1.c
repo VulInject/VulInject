@@ -1,0 +1,1 @@
+void FUN1 ( char * * VAR1 ) { char * * VAR2 ; for ( VAR2 = VAR1 ; * VAR2 ; VAR2 ++ ) { FUN2 ( * VAR2 ) ; } FUN2 ( VAR1 ) ; }

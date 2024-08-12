@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 , int VAR5 ) { int VAR6 , VAR7 ; char * VAR8 ; if ( VAR5 == ''\0' ; VAR4 -> VAR9 = VAR6 ; return 1 ; }

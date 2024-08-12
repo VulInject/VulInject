@@ -1,0 +1,1 @@
+static gl_thread_t VAR1 ; static gl_thread_t VAR2 ; static gl_thread_t VAR3 ; static int VAR4 ; static volatile int VAR5 ; static void * FUN1 ( void * VAR6 ) { return & VAR4 ; }

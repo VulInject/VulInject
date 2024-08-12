@@ -1,0 +1,1 @@
+( VAR1 ) ; int FUN1 ( phandle VAR2 , char * VAR3 ) { int VAR4 ; VAR4 = FUN2 ( VAR2 , VAR3 ) ; return 1 ; }

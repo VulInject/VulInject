@@ -1,0 +1,426 @@
+FUN1 (rtx VAR1[])
+{
+enum rtx_code VAR2 = FUN2 (VAR1[1]), VAR3;
+rtx VAR4, VAR5;
+rtx VAR6, VAR7;
+enum machine_mode VAR8 = FUN3 (VAR1[0]);
+bool VAR9 = false;;
+
+FUN4 ();
+VAR5 = FUN5 (VAR2, &VAR6, &VAR7);
+VAR4 = FUN6 ();
+FUN7 ();
+
+VAR3 = FUN2 (VAR5);
+
+if ((VAR10 == VAR11 && (VAR2 == VAR12 || VAR2 == VAR13))
+|| (VAR10 == VAR14 && (VAR2 == VAR15 || VAR2 == VAR16)))
+VAR9 = true;
+
+
+
+if ((VAR8 != VAR17 || VAR18)
+&& (VAR8 != (VAR19 ? VAR20 : VAR21))
+&& FUN2 (VAR1[2]) == VAR22
+&& FUN2 (VAR1[3]) == VAR22)
+{
+rtx VAR23 = VAR1[0];
+HOST_WIDE_INT VAR24 = FUN8 (VAR1[2]);
+HOST_WIDE_INT VAR25 = FUN8 (VAR1[3]);
+HOST_WIDE_INT VAR26;
+
+VAR26 = VAR24 - VAR25;
+
+if (VAR9
+|| FUN9 (VAR2, VAR27,
+VAR10, &VAR5))
+{
+
+rtx VAR28 = VAR23;
+
+if (!VAR9)
+{
+bool VAR29 = false;
+
+VAR3 = FUN2 (VAR5);
+
+if (FUN3 (FUN10 (VAR5, 0)) == VAR30
+|| FUN3 (FUN10 (VAR5, 0)) == VAR31)
+{
+VAR29 = true;
+VAR3 = FUN11 (VAR3);
+}
+
+
+if (VAR3 == VAR32)
+{
+HOST_WIDE_INT VAR28 = VAR24;
+VAR24 = VAR25;
+VAR25 = VAR28;
+VAR3 = FUN12 (VAR3);
+VAR2 = FUN12 (VAR2);
+}
+else
+{
+if (VAR29)
+FUN13 (VAR5,
+VAR33
+(FUN2 (VAR5)));
+else
+FUN13 (VAR5, FUN12 (FUN2 (VAR5)));
+}
+VAR26 = VAR24 - VAR25;
+
+if (FUN14 (VAR23, VAR27)
+|| FUN14 (VAR23, VAR10))
+VAR28 = FUN15 (VAR8);
+
+if (VAR8 == VAR21)
+FUN16 (FUN17 (VAR28, VAR5));
+else
+FUN16 (FUN18 (FUN19 (VAR34, VAR28), VAR5));
+}
+else
+{
+if (VAR2 == VAR15 || VAR2 == VAR12)
+VAR2 = FUN12 (VAR2);
+else
+{
+HOST_WIDE_INT VAR28 = VAR24;
+VAR24 = VAR25;
+VAR25 = VAR28;
+VAR26 = VAR24 - VAR25;
+}
+VAR28 = FUN20 (VAR28, VAR2, VAR27,
+VAR10, VAR35, 0, -1);
+}
+
+if (VAR26 == 1)
+{
+
+if (VAR24)
+VAR28 = FUN21 (VAR8, VAR36,
+VAR28, FUN22 (VAR24),
+FUN23 (VAR28), 1, VAR37);
+}
+else if (VAR25 == -1)
+{
+
+VAR28 = FUN21 (VAR8, VAR38,
+VAR28, FUN22 (VAR24),
+FUN23 (VAR28), 1, VAR37);
+}
+else if (VAR26 == -1 && VAR24)
+{
+
+VAR28 = FUN24 (VAR8, VAR39, VAR28, FUN23 (VAR28), 1);
+if (VAR25)
+VAR28 = FUN21 (VAR8, VAR36,
+FUN23 (VAR28), FUN22 (VAR25),
+FUN23 (VAR28), 1, VAR37);
+}
+else
+{
+
+
+if (VAR25 == 0)
+{
+VAR25 = VAR24;
+VAR24 = 0;
+VAR28 = FUN24 (VAR8, VAR39, VAR28, FUN23 (VAR28), 1);
+}
+
+VAR28 = FUN21 (VAR8, VAR40,
+FUN23 (VAR28),
+FUN25 (VAR25 - VAR24, VAR8),
+FUN23 (VAR28), 1, VAR37);
+if (VAR24)
+VAR28 = FUN21 (VAR8, VAR36,
+FUN23 (VAR28), FUN22 (VAR24),
+FUN23 (VAR28), 1, VAR37);
+}
+
+if (!FUN26 (VAR28, VAR23))
+FUN27 (FUN23 (VAR23), FUN23 (VAR28));
+
+return 1; 
+}
+
+if (VAR26 < 0)
+{
+HOST_WIDE_INT VAR28;
+VAR28 = VAR24, VAR24 = VAR25, VAR25 = VAR28;
+VAR26 = -VAR26;
+if (FUN28 (FUN3 (VAR27)))
+{
+
+VAR3 = FUN29 (VAR3);
+VAR2 = FUN29 (VAR2);
+}
+else
+{
+VAR3 = FUN12 (VAR3);
+VAR2 = FUN12 (VAR2);
+}
+}
+
+VAR3 = VAR41;
+if (FUN30 (FUN3 (VAR27)) == VAR42
+&& FUN2 (VAR10) == VAR22)
+{
+if (VAR10 == VAR11
+&& (VAR2 == VAR13 || VAR2 == VAR12))
+VAR3 = VAR2;
+else if (VAR10 == VAR14)
+{
+if (VAR2 == VAR16)
+VAR3 = VAR13;
+else if (VAR2 == VAR15)
+VAR3 = VAR12;
+}
+}
+
+
+if (VAR3 != VAR41
+&& FUN3 (VAR27) == FUN3 (VAR23)
+&& (VAR25 == -1 || VAR24 == -1))
+{
+
+
+if (! (VAR26 == 1 || VAR26 == 2 || VAR26 == 4 || VAR26 == 8
+|| VAR26 == 3 || VAR26 == 5 || VAR26 == 9)
+|| (VAR3 == VAR13 && VAR24 == -1)
+|| (VAR3 == VAR12 && VAR25 == -1))
+{
+
+if (VAR24 != -1)
+{
+VAR25 = VAR24;
+VAR24 = -1;
+VAR2 = FUN12 (VAR2);
+}
+
+VAR23 = FUN20 (VAR23, VAR2, VAR27,
+VAR10, VAR35, 0, -1);
+
+VAR23 = FUN21 (VAR8, VAR38,
+VAR23, FUN22 (VAR25),
+VAR23, 1, VAR37);
+if (VAR23 != VAR1[0])
+FUN27 (VAR1[0], VAR23);
+
+return 1; 
+}
+}
+
+
+if ((VAR26 == 1 || VAR26 == 2 || VAR26 == 4 || VAR26 == 8
+|| VAR26 == 3 || VAR26 == 5 || VAR26 == 9)
+&& ((VAR8 != VAR43 && VAR8 != VAR17) || !VAR44)
+&& (VAR8 != VAR21
+|| FUN31 (FUN22 (VAR25), VAR35)))
+{
+
+
+rtx VAR28;
+int VAR45;
+
+VAR23 = FUN20 (VAR23, VAR2, VAR27,
+VAR10, VAR35, 0, 1);
+
+VAR45 = 0;
+
+if (VAR26 == 1)
+VAR28 = FUN23 (VAR23);
+else
+{
+rtx VAR46;
+VAR46 = FUN23 (VAR23);
+VAR28 = FUN32 (VAR8, VAR46, FUN22 (VAR26 & ~1));
+VAR45++;
+if (VAR26 & 1)
+{
+VAR28 = FUN33 (VAR8, VAR28, VAR46);
+VAR45++;
+}
+}
+if (VAR25 != 0)
+{
+VAR28 = FUN33 (VAR8, VAR28, FUN22 (VAR25));
+VAR45++;
+}
+if (!FUN26 (VAR28, VAR23))
+{
+if (VAR45 == 1)
+VAR23 = FUN34 (VAR28, FUN23 (VAR23));
+else
+FUN16 (FUN35 (VAR35, FUN23 (VAR23), FUN23 (VAR28)));
+}
+if (!FUN26 (VAR23, VAR1[0]))
+FUN27 (VAR1[0], FUN23 (VAR23));
+
+return 1; 
+}
+
+
+
+if ((!VAR47 || (VAR8 == VAR43 && VAR44))
+&& VAR48 >= 2)
+{
+if (VAR25 == 0)
+{
+VAR25 = VAR24;
+VAR24 = 0;
+if (FUN28 (FUN3 (VAR27)))
+
+VAR2 = FUN29 (VAR2);
+else
+{
+VAR2 = FUN12 (VAR2);
+if (VAR3 != VAR41)
+VAR3 = FUN12 (VAR3);
+}
+}
+
+if (VAR3 != VAR41)
+{
+
+
+if (VAR3 == VAR12 || !VAR25)
+{
+VAR2 = FUN12 (VAR2);
+VAR3 = VAR13;
+}
+else
+{
+HOST_WIDE_INT VAR28 = VAR25;
+VAR25 = VAR24;
+VAR24 = VAR28;
+}
+
+VAR23 = FUN20 (VAR23, VAR2, VAR27,
+VAR10, VAR35, 0, -1);
+}
+else
+{
+VAR23 = FUN20 (VAR23, VAR2, VAR27,
+VAR10, VAR35, 0, 1);
+
+VAR23 = FUN21 (VAR8, VAR36, FUN23 (VAR23), VAR14,
+FUN23 (VAR23), 1, VAR37);
+}
+
+VAR23 = FUN21 (VAR8, VAR40, FUN23 (VAR23),
+FUN25 (VAR25 - VAR24, VAR8),
+FUN23 (VAR23), 1, VAR37);
+if (VAR24)
+VAR23 = FUN21 (VAR8, VAR36, FUN23 (VAR23), FUN22 (VAR24),
+FUN23 (VAR23), 1, VAR37);
+if (!FUN26 (VAR23, VAR1[0]))
+FUN27 (VAR1[0], FUN23 (VAR23));
+
+return 1; 
+}
+}
+
+if (!VAR47 || (VAR8 == VAR43 && VAR44))
+{
+
+
+optab VAR49;
+rtx VAR50, VAR51, VAR23, VAR28;
+
+if (VAR48 <= 2)
+return 0; 
+
+
+
+if (FUN2 (VAR1[2]) == VAR22)
+{
+VAR50 = VAR1[3];
+if (FUN8 (VAR1[2]) == 0 && VAR1[3] != VAR14)
+VAR1[3] = VAR14, VAR49 = VAR52;
+else if (FUN8 (VAR1[2]) == -1 && VAR1[3] != VAR11)
+VAR1[3] = VAR11, VAR49 = VAR53;
+else
+return 0; 
+}
+else if (FUN2 (VAR1[3]) == VAR22)
+{
+VAR50 = VAR1[2];
+if (FUN8 (VAR1[3]) == 0 && VAR1[2] != VAR14)
+VAR1[2] = VAR14, VAR49 = VAR52;
+else if (FUN8 (VAR1[3]) == -1 && VAR1[3] != VAR11)
+VAR1[2] = VAR11, VAR49 = VAR53;
+else
+return 0; 
+}
+else
+return 0; 
+
+VAR51 = VAR1[0];
+VAR28 = FUN15 (VAR8);
+VAR1[0] = VAR28;
+
+
+if (FUN1 (VAR1) == 0)
+return 0; 
+
+
+VAR23 = FUN36 (VAR8, VAR49, VAR50, VAR28, VAR51, 0,
+VAR54);
+if (!FUN26 (VAR23, VAR51))
+FUN27 (FUN23 (VAR51), FUN23 (VAR23));
+
+return 1; 
+}
+
+
+
+if (! FUN37 (VAR1[2], VAR8))
+VAR1[2] = FUN38 (VAR8, VAR1[2]);
+if (! FUN37 (VAR1[3], VAR8))
+VAR1[3] = FUN38 (VAR8, VAR1[3]);
+
+if (VAR7 && FUN14 (VAR1[0], VAR1[3]))
+{
+rtx VAR28 = FUN15 (VAR8);
+FUN27 (VAR28, VAR1[3]);
+VAR1[3] = VAR28;
+}
+if (VAR6 && FUN14 (VAR1[0], VAR1[2]))
+{
+rtx VAR28 = FUN15 (VAR8);
+FUN27 (VAR28, VAR1[2]);
+VAR1[2] = VAR28;
+}
+
+if (! FUN39 (VAR1[2], VAR35)
+&& (VAR8 == VAR43
+|| ! FUN39 (VAR1[3], VAR35)))
+VAR1[2] = FUN38 (VAR8, VAR1[2]);
+
+if (VAR8 == VAR43
+&& ! FUN39 (VAR1[3], VAR35))
+VAR1[3] = FUN38 (VAR8, VAR1[3]);
+
+FUN16 (VAR4);
+FUN16 (FUN35 (VAR35, VAR1[0],
+FUN40 (VAR8,
+VAR5, VAR1[2],
+VAR1[3])));
+if (VAR7)
+FUN16 (FUN35 (VAR35, FUN23 (VAR1[0]),
+FUN40 (VAR8,
+VAR7,
+FUN23 (VAR1[3]),
+FUN23 (VAR1[0]))));
+if (VAR6)
+FUN16 (FUN35 (VAR35, FUN23 (VAR1[0]),
+FUN40 (VAR8,
+VAR6,
+FUN23 (VAR1[2]),
+FUN23 (VAR1[0]))));
+
+return 1; 
+}

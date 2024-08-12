@@ -1,0 +1,19 @@
+static bool
+FUN1(VAR1 *VAR2, VAR3 *VAR4, Snapshot VAR5)
+{
+Page		VAR6 = FUN2(VAR4->VAR7);
+
+if (VAR4->VAR8 > FUN3(VAR6))
+{
+
+if (FUN4(VAR6))
+return false;		
+
+VAR4->VAR7 = FUN5(VAR4->VAR7, VAR2->VAR9, VAR10);
+VAR4->VAR11 = FUN6(VAR4->VAR7);
+VAR4->VAR8 = VAR12;
+FUN7(VAR2->VAR9, VAR4->VAR11, VAR5);
+}
+
+return true;
+}

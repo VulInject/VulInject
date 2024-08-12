@@ -1,0 +1,48 @@
+static VAR1
+FUN1(krb5_context VAR2, VAR3 *VAR4,
+VAR5 *VAR6, VAR7 *VAR8,
+VAR7 *VAR9)
+{
+krb5_tl_data VAR10;
+krb5_error_code VAR11;
+osa_princ_ent_rec VAR12;
+XDR VAR13;
+
+*VAR6 = 0;
+*VAR8 = 0;
+*VAR9 = 0;
+
+VAR10.VAR14 = VAR15;
+
+VAR11 = FUN2(VAR2, VAR4, &VAR10);
+if (VAR11 != 0 || VAR10.VAR16 == 0)
+return VAR11;
+
+memset(&VAR12, 0, sizeof(VAR12));
+FUN3(&VAR13, (char *)VAR10.VAR17,
+VAR10.VAR16, VAR18);
+if (!FUN4(&VAR13, &VAR12)) {
+FUN5(&VAR13);
+return VAR19;
+}
+
+if (VAR12.VAR20 != NULL) {
+osa_policy_ent_t VAR20 = NULL;
+
+VAR11 = FUN6(VAR2, VAR12.VAR20, &VAR20);
+if (VAR11 == 0) {
+*VAR6 = VAR20->VAR6;
+*VAR8 = VAR20->VAR8;
+*VAR9 = VAR20->VAR9;
+FUN7(VAR2, VAR20);
+}
+}
+
+FUN5(&VAR13);
+
+FUN3(&VAR13, NULL, 0, VAR21);
+FUN4(&VAR13, &VAR12);
+FUN5(&VAR13);
+
+return 0;
+}

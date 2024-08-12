@@ -1,0 +1,1 @@
+virNodeDevicePtr FUN1 ( virConnectPtr VAR1 , const char * VAR2 ) { FUN2 ( "" , VAR1 , FUN3 ( VAR2 ) ) ; FUN4 ( ) ; FUN5 ( VAR1 , NULL ) ; FUN6 ( VAR2 , VAR3 ) ; if ( VAR1 -> VAR4 && VAR1 -> VAR4 -> VAR5 ) { virNodeDevicePtr VAR6 ; VAR6 = VAR1 -> VAR4 -> FUN7 ( VAR1 , VAR2 ) ; if ( ! VAR6 ) { VAR3 } return VAR6 ; } FUN8 ( ) ; error FUN9 ( VAR1 , NULL ) ; return NULL ; }

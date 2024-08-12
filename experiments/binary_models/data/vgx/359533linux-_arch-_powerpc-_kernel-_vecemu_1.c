@@ -1,0 +1,1 @@
+static unsigned int FUN1 ( unsigned int VAR1 ) { int VAR2 ; VAR2 = ( ( VAR1 >> 23 ) & 0xff ) - 127 ; if ( VAR2 >= 23 ) { return VAR1 ; } if ( VAR2 < 0 ) { return VAR1 & 0x80000000 ; } return VAR1 & ~ ( 0x7fffff >> VAR2 ) ; }

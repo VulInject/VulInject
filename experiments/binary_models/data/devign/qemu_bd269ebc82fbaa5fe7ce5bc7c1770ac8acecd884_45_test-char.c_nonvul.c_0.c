@@ -1,0 +1,41 @@
+static void FUN1(void)
+{
+    VAR1 *VAR2 = FUN2("", "");
+    VAR1 *VAR3;
+    VAR4 *VAR5;
+    VAR6 *VAR7;
+    const char *VAR8;
+    SocketIdleData VAR9 = {.VAR2 = VAR2};
+    CharBackend VAR10;
+    CharBackend VAR11;
+    char *VAR12;
+    VAR9.VAR10 = &VAR10;
+    VAR9.VAR11 = &VAR10;
+    FUN3(VAR2);
+    FUN4(!FUN5(FUN6(VAR2), "", &VAR13));
+    VAR5 = FUN7(FUN6(VAR2), "", &VAR13);
+    VAR7 = FUN8(VAR5);
+    VAR8 = FUN9(VAR7, "");
+    VAR12 = FUN10("", VAR8);
+    FUN11(VAR7);
+    FUN12(&VAR10, VAR2, &VAR13);
+    FUN13(&VAR10, VAR14, VAR15, NULL, &VAR9, NULL, true);
+    VAR3 = FUN2("", VAR12);
+    FUN12(&VAR11, VAR3, &VAR13);
+    FUN13(&VAR11, VAR16, VAR17, NULL, &VAR9, NULL, true);
+    FUN14(VAR12);
+    VAR9.VAR18 = true;
+    guint VAR19 = FUN15(VAR20, &VAR9);
+    FUN16(VAR19, "");
+    FUN17(VAR19, >, 0);
+    FUN18();
+    FUN4(FUN5(FUN6(VAR2), "", &VAR13));
+    FUN4(FUN5(FUN6(VAR3), "", &VAR13));
+    FUN19(VAR3, (const VAR21 *)"", 1);
+    FUN18();
+    FUN20(FUN6(VAR3));
+    VAR9.VAR18 = false;
+    FUN15(VAR20, &VAR9);
+    FUN18();
+    FUN20(FUN6(VAR2));
+}

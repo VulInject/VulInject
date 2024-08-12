@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , u8 VAR3 , u8 VAR4 , u8 VAR5 ) { struct VAR6 * VAR6 = VAR2 -> VAR7 ; u8 VAR8 [ ] { 0x00 reg VAR5 } ; ; struct i2c_msg VAR9 = { . VAR3 = VAR3 . VAR10 = 0 . VAR8 = VAR8 . VAR11 = 3 } ; FUN2 ( 4 , "" , VAR2 ) ; return 0 ; }

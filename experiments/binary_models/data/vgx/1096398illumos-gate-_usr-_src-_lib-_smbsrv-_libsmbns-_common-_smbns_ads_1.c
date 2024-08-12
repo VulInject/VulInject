@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( void ) { char VAR2 [ VAR3 ] ; VAR1 * VAR4 ; smb_ads_status_t VAR5 ; if ( FUN2 ( VAR2 , VAR3 ) != 0 ) { return ( NULL ) ; } VAR5 = FUN3 ( & VAR4 , VAR2 , NULL , NULL ) ; if ( VAR5 != 0 ) { FUN4 ( VAR5 ) ; return ( NULL ) ; } return ( VAR4 ) ; }

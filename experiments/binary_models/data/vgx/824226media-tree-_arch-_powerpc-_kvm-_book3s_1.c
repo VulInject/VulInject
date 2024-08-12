@@ -1,0 +1,1 @@
+static inline unsigned long FUN1 ( struct VAR1 * VAR2 ) { return 0 ; }

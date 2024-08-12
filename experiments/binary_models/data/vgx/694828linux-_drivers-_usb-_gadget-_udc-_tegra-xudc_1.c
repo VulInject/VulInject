@@ -1,0 +1,1 @@
+static dma_addr_t FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { unsigned int VAR5 ; VAR5 = VAR4 - VAR2 -> VAR6 ; return ( VAR2 -> VAR7 + VAR5 * sizeof ( * VAR4 ) ) ; }

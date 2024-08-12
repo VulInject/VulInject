@@ -1,0 +1,1 @@
+static u8 FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * const VAR4 = & VAR2 -> VAR4 ; if ( VAR4 -> VAR5 != VAR4 -> VAR6 ) { VAR4 -> VAR5 ++ ; -- VAR4 -> VAR7 ; VAR2 -> VAR8 ++ ; } return VAR9 ; }

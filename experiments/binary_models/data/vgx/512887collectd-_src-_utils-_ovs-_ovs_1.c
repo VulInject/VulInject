@@ -1,0 +1,1 @@
+static int FUN1 ( const VAR1 * VAR2 , const char * VAR3 , size_t VAR4 ) { ssize_t VAR5 = 0 ; size_t VAR6 = VAR4 ; size_t VAR7 = 0 ; while ( VAR6 > 0 ) { VAR6 -= ( VAR8 ) VAR5 ; VAR7 += ( VAR8 ) VAR5 ; } return 0 ; }

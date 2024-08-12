@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { if ( VAR4 -> VAR5 == FUN2 ( VAR6 ) ) { return FUN3 ( VAR2 , VAR4 ) ; } if ( ! FUN4 ( VAR4 ) ) { VAR7 } return FUN5 ( & VAR8 , & VAR9 , VAR2 , VAR4 ) ; drop FUN6 ( VAR2 , NULL ) ; return 0 ; }

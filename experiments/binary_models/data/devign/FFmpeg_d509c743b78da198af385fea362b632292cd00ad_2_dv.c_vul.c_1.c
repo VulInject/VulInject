@@ -1,0 +1,30 @@
+static int FUN1(VAR1 *VAR2, void *VAR3, int *VAR4, VAR5 *VAR6)
+{
+    const VAR7 *VAR8 = VAR6->VAR3;
+    int VAR9 = VAR6->VAR10;
+    VAR11 *VAR12 = VAR2->VAR13;
+    VAR12->VAR14 = FUN2(VAR8);
+    if (!VAR12->VAR14 || VAR9 < VAR12->VAR14->VAR15 || FUN3(VAR12->VAR14))
+        return -1;
+    if (VAR12->VAR16.VAR3[0])
+        VAR2->FUN4(VAR2, &VAR12->VAR16);
+    VAR12->VAR16.VAR17 = 0;
+    VAR12->VAR16.VAR18 = 1;
+    VAR12->VAR16.VAR19 = VAR20;
+    VAR2->VAR21 = VAR12->VAR14->VAR21;
+    VAR2->VAR22 = VAR12->VAR14->VAR22;
+    FUN5(VAR2, VAR12->VAR14->VAR23, VAR12->VAR14->VAR24);
+    if (VAR2->FUN6(VAR2, &VAR12->VAR16) < 0)
+    {
+        FUN7(VAR2, VAR25, "");
+        return -1;
+    }
+    VAR12->VAR16.VAR26 = 1;
+    VAR12->VAR16.VAR27 = 0;
+    VAR12->VAR8 = VAR8;
+    VAR2->FUN8(VAR2, VAR28, VAR12->VAR14->VAR29, NULL, FUN9(VAR12->VAR14), sizeof(VAR30));
+    FUN10();
+    *VAR4 = sizeof(VAR31);
+    *(VAR31 *)VAR3 = VAR12->VAR16;
+    return VAR12->VAR14->VAR15;
+}

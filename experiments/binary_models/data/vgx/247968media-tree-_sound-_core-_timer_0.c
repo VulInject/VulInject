@@ -1,0 +1,114 @@
+static int FUN1(struct VAR1 *VAR1,
+struct snd_timer_params VAR2 *VAR3)
+{
+struct VAR4 *VAR5;
+struct snd_timer_params VAR6;
+struct VAR7 *VAR8;
+struct VAR9 *VAR10;
+struct VAR11 *VAR12;
+int VAR13;
+
+VAR5 = VAR1->VAR14;
+if (!VAR5->VAR15)
+return -VAR16;
+VAR8 = VAR5->VAR15->VAR17;
+if (!VAR8)
+return -VAR16;
+if (FUN2(&VAR6, VAR3, sizeof(VAR6)))
+return -VAR18;
+if (!(VAR8->VAR19.VAR20 & VAR21)) {
+u64 VAR22;
+
+if (VAR6.VAR23 < 1) {
+VAR13 = -VAR24;
+goto VAR25;
+}
+
+
+VAR22 = FUN3(VAR5->VAR15);
+VAR22 *= VAR6.VAR23;
+if (VAR22 < 1000000) {
+VAR13 = -VAR24;
+goto VAR25;
+}
+}
+if (VAR6.VAR26 > 0 &&
+(VAR6.VAR26 < 32 || VAR6.VAR26 > 1024)) {
+VAR13 = -VAR24;
+goto VAR25;
+}
+if (VAR6.VAR27 & ~((1<<VAR28)|
+(1<<VAR29)|
+(1<<VAR30)|
+(1<<VAR31)|
+(1<<VAR32)|
+(1<<VAR33)|
+(1<<VAR34)|
+(1<<VAR35)|
+(1<<VAR36)|
+(1<<VAR37)|
+(1<<VAR38)|
+(1<<VAR39)|
+(1<<VAR40)|
+(1<<VAR41))) {
+VAR13 = -VAR24;
+goto VAR25;
+}
+FUN4(VAR5->VAR15);
+FUN5(&VAR8->VAR42);
+VAR5->VAR15->VAR20 &= ~(VAR43|
+VAR44|
+VAR45);
+if (VAR6.VAR20 & VAR46)
+VAR5->VAR15->VAR20 |= VAR43;
+if (VAR6.VAR20 & VAR47)
+VAR5->VAR15->VAR20 |= VAR44;
+if (VAR6.VAR20 & VAR48)
+VAR5->VAR15->VAR20 |= VAR45;
+FUN6(&VAR8->VAR42);
+if (VAR6.VAR26 > 0 &&
+(unsigned int)VAR5->VAR26 != VAR6.VAR26) {
+if (VAR5->VAR49) {
+VAR12 = FUN7(VAR6.VAR26 * sizeof(*VAR12),
+VAR50);
+if (VAR12) {
+FUN8(VAR5->VAR51);
+VAR5->VAR26 = VAR6.VAR26;
+VAR5->VAR51 = VAR12;
+}
+} else {
+VAR10 = FUN7(VAR6.VAR26 * sizeof(*VAR10),
+VAR50);
+if (VAR10) {
+FUN8(VAR5->VAR52);
+VAR5->VAR26 = VAR6.VAR26;
+VAR5->VAR52 = VAR10;
+}
+}
+}
+VAR5->VAR53 = VAR5->VAR54 = VAR5->VAR55 = 0;
+if (VAR5->VAR15->VAR20 & VAR45) {
+if (VAR5->VAR49) {
+struct snd_timer_tread VAR49;
+memset(&VAR49, 0, sizeof(VAR49));
+VAR49.VAR56 = VAR57;
+VAR49.VAR58.VAR59 = 0;
+VAR49.VAR58.VAR60 = 0;
+VAR49.VAR61 = 0;
+FUN9(VAR5, &VAR49);
+} else {
+struct VAR9 *VAR62 = &VAR5->VAR52[0];
+VAR62->VAR22 = 0;
+VAR62->VAR23 = 0;
+VAR5->VAR55++;
+VAR5->VAR54++;
+}
+}
+VAR5->VAR27 = VAR6.VAR27;
+VAR5->VAR23 = VAR6.VAR23;
+VAR13 = 0;
+VAR25:
+if (FUN10(VAR3, &VAR6, sizeof(VAR6)))
+return -VAR18;
+return VAR13;
+}

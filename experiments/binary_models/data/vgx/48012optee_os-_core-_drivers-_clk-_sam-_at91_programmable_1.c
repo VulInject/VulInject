@@ -1,0 +1,1 @@
+static TEE_Result FUN1 ( struct VAR1 * VAR1 , size_t VAR2 ) { struct VAR3 * VAR4 = VAR1 -> VAR5 ; const struct VAR6 * VAR7 = VAR4 -> VAR7 ; unsigned int VAR8 = VAR7 -> VAR9 ; unsigned int VAR10 = VAR2 ; if ( VAR7 -> VAR11 ) { VAR8 |= VAR12 ; } if ( VAR2 > VAR7 -> VAR9 ) { VAR10 |= VAR12 ; } FUN2 ( VAR4 -> VAR13 + FUN3 ( VAR4 -> VAR14 ) , VAR8 , VAR10 ) ; return VAR15 ; }

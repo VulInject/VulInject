@@ -1,0 +1,1 @@
+void * FUN1 ( void ) NULL ; int * FUN2 ( void ) NULL ; void FUN3 ( const char * VAR1 , const char * VAR2 ) { FUN4 ( VAR1 , VAR2 ) ; }

@@ -1,0 +1,1 @@
+static double FUN1 ( void ) { unsigned int VAR1 ; int VAR2 = 0 ; for ( VAR1 = 0 ; VAR1 < VAR3 ; ++ VAR1 ) { VAR2 += FUN2 ( ) / ( VAR4 * VAR3 ) ; } return VAR2 ; }

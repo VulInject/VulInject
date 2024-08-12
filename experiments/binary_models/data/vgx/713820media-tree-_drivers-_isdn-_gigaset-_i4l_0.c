@@ -1,0 +1,26 @@
+}
+FUN1(VAR1);
+
+
+void FUN2(struct VAR2 *VAR3)
+{
+VAR4 *VAR5 = VAR3->VAR6->VAR5;
+isdn_ctrl VAR7;
+
+
+if (VAR3->VAR8) {
+VAR3->VAR8--;
+return;
+}
+
+
+VAR3->VAR9++;
+
+
+FUN3(VAR10, "");
+VAR7.VAR11 = VAR3->VAR6->VAR12;
+VAR7.VAR13 = VAR14;
+VAR7.VAR15 = VAR3->VAR16;
+VAR7.VAR17.VAR18 = VAR19;
+VAR5->FUN4(&VAR7);
+}

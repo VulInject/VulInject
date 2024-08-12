@@ -1,0 +1,62 @@
+static int
+FUN1(
+struct VAR1	*VAR2,
+VAR3		*VAR4,
+VAR5	*VAR6,		
+VAR7		*VAR8,		
+int		VAR9,
+struct VAR10	*VAR11)
+{
+struct VAR12 *VAR13 = FUN2(VAR2);
+u_offset_t VAR14;
+size_t VAR15;
+size_t VAR16;
+u_offset_t VAR17;
+int VAR18 = 0;
+struct VAR19 *VAR20;
+u_offset_t VAR21;
+size_t VAR22;
+u_offset_t VAR23;
+
+
+VAR13->VAR24 = 0;
+VAR21 = FUN3(FUN2(VAR13->VAR25));
+
+VAR22 = VAR26;
+
+VAR17 = (VAR4->VAR27 / VAR22) * VAR22;
+
+if (VAR17 + VAR22 <= VAR21)
+VAR16 = VAR22;
+else
+VAR16 = VAR21 - VAR17;
+
+
+VAR4 = FUN4(VAR2, VAR4, &VAR23, &VAR15, VAR17,
+VAR16, VAR9);
+VAR14 = VAR23;
+
+
+if (VAR14 + VAR15 > VAR21) {
+FUN5((VAR14 + VAR15) - VAR21 < VAR28);
+VAR15 = VAR21 - VAR14;
+}
+
+VAR20 = FUN6(VAR2, VAR4, VAR14, VAR15, VAR29 | VAR9);
+
+
+if ((VAR9 & VAR30) == 0) {
+VAR18 = FUN7(VAR20);
+FUN8(VAR20);
+FUN9(VAR4, ((VAR18) ? VAR31 : 0) | VAR29 | VAR9);
+}
+
+if (VAR6)
+*VAR6 = VAR14;
+if (VAR8)
+*VAR8 = VAR15;
+FUN10(VAR32, VAR33,
+"",
+VAR2, VAR6, VAR13, VAR18);
+return (VAR18);
+}

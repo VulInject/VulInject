@@ -1,0 +1,45 @@
+void FUN1(void)
+{
+struct VAR1 *const VAR2 = (struct VAR1 *)VAR3;
+struct VAR4 *VAR5 = (struct VAR4 *)VAR6;
+unsigned int VAR7, VAR8;
+
+
+
+FUN2(&VAR2->VAR9, VAR10);
+
+
+FUN3(&VAR2->VAR11, VAR12);
+
+if (FUN4() || FUN5()) {
+VAR7 = FUN6(&VAR5->VAR13[11]);
+if (VAR7 & VAR14) {
+
+VAR7 &= ~VAR14;
+FUN7(VAR7, &VAR5->VAR13[11]);
+}
+}
+
+FUN7(0x132, &VAR2->VAR15);
+FUN7(0x132, &VAR2->VAR16);
+
+VAR7 = FUN6(&VAR2->VAR17);
+
+
+
+VAR7 |= 0x7000000f;
+
+
+VAR8 = FUN6(&VAR2->VAR18);
+if (((VAR8 & VAR19) == VAR20)
+&& ((VAR8 & VAR21) < VAR22))
+VAR7 &= ~(1 << 30);
+FUN7(VAR7, &VAR2->VAR17);
+
+VAR7 = FUN6(&VAR2->VAR23);
+VAR7 |= VAR24;
+VAR7 |= VAR25;
+FUN7(VAR7, &VAR2->VAR23);
+
+FUN3(&VAR2->VAR9, VAR10);
+}

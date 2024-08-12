@@ -1,0 +1,40 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+unsigned long VAR3;
+
+bool VAR4 = VAR2->VAR5->VAR6 >= VAR7;
+struct sg_mapping_iter VAR8;
+
+FUN2(&VAR2->VAR9);
+
+if (!VAR2->VAR5->VAR10) {
+if (VAR4) {
+FUN3(VAR2, VAR2->VAR5->VAR11,
+VAR2->VAR5->VAR12);
+FUN4(VAR2);
+} else
+FUN5(VAR2, VAR2->VAR5->VAR11,
+VAR2->VAR5->VAR12);
+return 0;
+}
+
+FUN6(VAR3);
+FUN7(&VAR8, &VAR2->VAR5->VAR13, 1, VAR14 |
+(VAR4 ? VAR15 : VAR16));
+
+
+while (FUN8(&VAR8))
+if (VAR4)
+FUN3(VAR2, VAR8.VAR17, VAR8.VAR18);
+else
+FUN5(VAR2, VAR8.VAR17, VAR8.VAR18);
+
+
+
+if (VAR4)
+FUN4(VAR2);
+
+FUN9(&VAR8);
+FUN10(VAR3);
+return 0;
+}

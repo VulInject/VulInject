@@ -1,0 +1,211 @@
+VAR1 FUN1(struct VAR2 *VAR2)
+{
+u16		VAR3;
+u16		VAR4;
+void VAR5	*VAR6 = VAR2->VAR7;
+void VAR5	*VAR8 = VAR2->VAR9[0].VAR8;
+irqreturn_t	VAR10 = VAR11;
+
+FUN2(VAR6, 0);	
+VAR3 = FUN3(VAR8, VAR12);
+VAR4 = FUN4(VAR8, VAR13);
+
+FUN5(VAR2, "",
+VAR3, VAR4, FUN6(VAR2->VAR14));
+
+if (VAR3 & VAR15) {
+
+return VAR16;
+}
+
+
+if (VAR3 & VAR17) {
+FUN7(VAR8, VAR12,
+VAR3 & ~VAR17);
+VAR10 = VAR16;
+VAR2->VAR14 = VAR18;
+VAR3 = FUN3(VAR8, VAR12);
+}
+
+
+if (VAR3 & VAR19) {
+FUN7(VAR8, VAR12, VAR20);
+VAR10 = VAR16;
+
+switch (VAR2->VAR14) {
+case VAR21:
+VAR2->VAR14 = VAR22;
+break;
+case VAR23:
+VAR2->VAR14 = VAR24;
+break;
+default:
+FUN8("",
+FUN6(VAR2->VAR14));
+}
+VAR3 = FUN3(VAR8, VAR12);
+
+}
+
+
+switch (VAR2->VAR14) {
+
+case VAR21:
+
+if ((VAR3 & VAR25) == 0) {
+FUN9(VAR2);
+VAR10 = VAR16;
+}
+break;
+
+case VAR23:
+
+if (VAR3 & VAR26) {
+FUN10(VAR2);
+VAR10 = VAR16;
+}
+break;
+
+case VAR24:
+
+
+
+if (VAR2->VAR27) {
+VAR2->VAR27 = false;
+FUN11(VAR6, VAR28, VAR2->VAR29);
+}
+
+
+else if (VAR2->VAR30) {
+FUN5(VAR2, "");
+
+if (VAR31 == VAR2->VAR32)
+FUN12(VAR2);
+
+FUN11(VAR6, VAR33,
+VAR2->VAR32);
+}
+VAR34;
+
+case VAR22:
+
+{
+struct VAR35	*VAR36;
+
+VAR36 = FUN13(VAR2);
+if (VAR36)
+FUN14(VAR2, &VAR36->VAR37);
+}
+
+
+if (VAR3 & VAR26)
+goto VAR38;
+
+VAR10 = VAR16;
+VAR2->VAR14 = VAR18;
+break;
+
+case VAR18:
+
+VAR10 = VAR16;
+VAR2->VAR14 = VAR39;
+VAR34;
+
+case VAR39:
+VAR38:
+if (VAR3 & VAR26) {
+struct usb_ctrlrequest	VAR38;
+int			VAR40 = 0;
+
+if (VAR4 != 8) {
+FUN8("", VAR4);
+break;
+}
+FUN15(VAR2, &VAR38);
+VAR10 = VAR16;
+
+
+if (FUN16(VAR2->VAR41.VAR42 == VAR43)) {
+u8	VAR44;
+
+FUN17(VAR45 ""
+"",
+VAR46);
+VAR44 = FUN4(VAR6, VAR47);
+VAR2->VAR41.VAR42 = (VAR44 & VAR48)
+? VAR49 : VAR50;
+
+}
+
+switch (VAR2->VAR14) {
+
+
+case VAR51:
+VAR40 = FUN18(
+VAR2, &VAR38);
+
+
+VAR2->VAR52 |= VAR15;
+
+
+if (VAR40 > 0)
+VAR2->VAR14 =
+VAR24;
+break;
+
+
+case VAR21:
+VAR40 = FUN19(VAR2, &VAR38);
+if (VAR40 > 0) {
+VAR2->VAR52 = VAR25
+| VAR15;
+VAR2->VAR14 =
+VAR22;
+}
+break;
+
+
+default:		
+break;
+}
+
+FUN5(VAR2, "",
+VAR40, VAR3,
+FUN6(VAR2->VAR14));
+
+
+if (VAR40 < 0)
+goto VAR53;
+else if (VAR40 > 0)
+goto VAR54;
+
+VAR40 = FUN20(VAR2, &VAR38);
+if (VAR40 < 0) {
+FUN2(VAR6, 0);
+VAR53:
+FUN5(VAR2, "", VAR40);
+VAR2->VAR52 |= VAR55;
+VAR2->VAR14 = VAR18;
+VAR54:
+FUN7(VAR8, VAR12,
+VAR2->VAR52);
+VAR2->VAR52 = 0;
+}
+}
+break;
+
+case VAR51:
+
+VAR10 = VAR16;
+break;
+
+default:
+
+FUN21(1);
+FUN7(VAR8, VAR12, VAR55);
+VAR2->VAR14 = VAR18;
+break;
+}
+
+return VAR10;
+}

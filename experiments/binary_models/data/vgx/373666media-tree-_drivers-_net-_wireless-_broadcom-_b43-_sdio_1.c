@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR2 ) ; FUN3 ( & VAR4 -> VAR5 ) ; FUN4 ( VAR2 ) ; FUN5 ( VAR2 ) ; FUN6 ( VAR2 ) ; FUN7 ( VAR2 , NULL ) ; } static const struct sdio_device_id VAR6 [ ] { { FUN8 ( 0x02d0 , 0x044b ) } { FUN8 ( 0x0092 , 0x0004 ) } { } } ; ;

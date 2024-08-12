@@ -1,0 +1,1 @@
+u16 FUN1 ( struct VAR1 * VAR2 , void * VAR3 , u32 VAR4 , u16 VAR5 , u32 VAR6 ) { struct VAR7 * VAR8 = ( VAR7 * ) VAR3 ; VAR9 * VAR10 = ( VAR9 * ) ( VAR8 + 1 ) ; u32 VAR11 = FUN2 ( VAR12 ) ; FUN3 ( VAR2 , VAR11 , VAR4 , VAR5 ) ; FUN4 ( VAR8 , VAR4 , VAR13 ) ; VAR10 -> VAR14 = VAR6 ; return sizeof ( VAR9 ) + sizeof ( VAR7 ) ; }

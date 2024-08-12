@@ -1,0 +1,1 @@
+static void FUN1 ( unsigned long VAR1 ) { unsigned long VAR2 ; FUN2 ( & VAR3 , VAR2 ) ; if ( FUN3 ( ) ) { FUN4 ( ) ; } VAR4 . VAR5 = 1 + VAR6 ; FUN5 ( & VAR4 ) ; FUN6 ( & VAR3 , VAR2 ) ; }

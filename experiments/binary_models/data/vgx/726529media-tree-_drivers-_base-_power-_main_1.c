@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { VAR2 -> VAR3 . VAR4 = false ; VAR2 -> VAR3 . VAR5 = false ; VAR2 -> VAR3 . VAR6 = false ; VAR2 -> VAR3 . VAR7 = false ; FUN2 ( & VAR2 -> VAR3 . VAR8 ) ; FUN3 ( & VAR2 -> VAR3 . VAR8 ) ; FUN4 ( & VAR2 -> VAR3 . VAR9 ) ; }

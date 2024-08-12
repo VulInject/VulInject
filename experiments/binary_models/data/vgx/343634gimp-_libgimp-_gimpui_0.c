@@ -1,0 +1,27 @@
+FUN1 (VAR1 *VAR2,
+VAR3 *VAR4)
+{
+FUN2 (VAR2, NULL);
+
+
+FUN3 (VAR2, VAR5,
+0, 0, NULL,
+VAR6,
+NULL);
+
+if (! VAR4)
+return VAR7;
+
+if (FUN4 (FUN5 (VAR2)))
+FUN6 (FUN7 (FUN5 (VAR2)),
+VAR4);
+
+FUN8 (VAR2, "",
+FUN9 (VAR6),
+VAR4, 0);
+FUN10 (VAR4);
+
+return VAR8;
+
+return VAR7;
+}

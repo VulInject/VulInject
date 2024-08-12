@@ -1,0 +1,165 @@
+static VAR1 *
+FUN1(ad_disc_t VAR2, enum ad_disc_req VAR3)
+{
+VAR4 *VAR5 = NULL;
+VAR6 *VAR7 = NULL;
+boolean_t VAR8 = VAR9;
+boolean_t VAR10 = VAR9;
+VAR1 *VAR11;
+VAR1 *VAR12;
+VAR1 *VAR13;
+char *VAR14;
+char *VAR15;
+
+
+if (FUN2(&VAR2->VAR16))
+return (&VAR2->VAR16);
+
+VAR12 = FUN3(VAR2);
+if (VAR12 == NULL) {
+FUN4(VAR2, "");
+return (NULL);
+}
+VAR14 = (char *)VAR12->VAR17;
+
+if (VAR3 == VAR18)
+VAR8 = VAR19;
+else {
+if (FUN2(&VAR2->VAR15))
+VAR10 = VAR19;
+if (VAR3 == VAR20)
+VAR8 = VAR19;
+}
+
+
+if (VAR10) {
+VAR13 = &VAR2->VAR15;
+VAR15 = (char *)VAR13->VAR17;
+
+if (!FUN5(&VAR2->VAR21) ||
+FUN6(&VAR2->VAR21, VAR22,
+VAR12) ||
+FUN6(&VAR2->VAR21, VAR23,
+VAR13)) {
+char VAR24[VAR25];
+
+
+VAR11 = FUN7(VAR2, VAR3);
+if (VAR11 != NULL) {
+VAR4 *VAR26 = VAR11->VAR17;
+if ((VAR26->VAR27 & VAR28) != 0) {
+FUN4(VAR2,
+"",
+VAR14, VAR15);
+VAR5 = FUN8(VAR26);
+if (VAR5 != NULL) {
+VAR5->VAR29 = VAR30;
+goto VAR31;
+}
+}
+}
+
+
+FUN4(VAR2, "",
+VAR14, VAR15);
+(void) snprintf(VAR24, sizeof (VAR24),
+LDAP_SRV_HEAD SITE_SRV_MIDDLE VAR32,
+VAR15);
+FUN9(VAR2);
+VAR7 = FUN10(&VAR2->VAR33, VAR24,
+VAR14, NULL);
+
+if (VAR7 == NULL) {
+FUN4(VAR2, "");
+goto VAR34;
+}
+FUN11(VAR2, VAR7);
+
+
+VAR5 = FUN12(
+NULL,
+VAR7,
+VAR14,
+VAR28);
+FUN13(VAR7);
+VAR7 = NULL;
+
+if (VAR5 == NULL) {
+FUN4(VAR2, "");
+goto VAR34;
+}
+FUN14(VAR2, VAR5);
+
+VAR31:
+FUN15(&VAR2->VAR21, VAR5,
+VAR35, VAR5->VAR36);
+FUN16(&VAR2->VAR21, VAR22,
+VAR12);
+FUN16(&VAR2->VAR21, VAR23,
+VAR13);
+}
+return (&VAR2->VAR21);
+}
+
+VAR34:
+
+if (VAR8) {
+if (!FUN5(&VAR2->VAR16) ||
+FUN6(&VAR2->VAR16, VAR22,
+VAR12)) {
+
+
+VAR11 = FUN7(VAR2, VAR3);
+if (VAR11 != NULL) {
+VAR4 *VAR26 = VAR11->VAR17;
+if ((VAR26->VAR27 & VAR28) != 0) {
+FUN4(VAR2,
+"",
+VAR14);
+VAR5 = FUN8(VAR26);
+if (VAR5 != NULL) {
+VAR5->VAR29 = VAR30;
+goto VAR37;
+}
+}
+}
+
+
+FUN4(VAR2, "",
+VAR14);
+FUN9(VAR2);
+VAR7 = FUN10(&VAR2->VAR33,
+LDAP_SRV_HEAD VAR32,
+VAR14, NULL);
+
+if (VAR7 == NULL) {
+FUN4(VAR2, "");
+return (NULL);
+}
+FUN11(VAR2, VAR7);
+
+
+VAR5 = FUN12(
+NULL,
+VAR7,
+VAR14,
+VAR28);
+FUN13(VAR7);
+VAR7 = NULL;
+
+if (VAR5 == NULL) {
+FUN4(VAR2, "");
+return (NULL);
+}
+FUN14(VAR2, VAR5);
+
+VAR37:
+FUN15(&VAR2->VAR16, VAR5,
+VAR35, VAR5->VAR36);
+FUN16(&VAR2->VAR16, VAR22,
+VAR12);
+}
+return (&VAR2->VAR16);
+}
+return (NULL);
+}

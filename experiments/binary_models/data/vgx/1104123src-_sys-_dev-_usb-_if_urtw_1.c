@@ -1,0 +1,1 @@
+usbd_status FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = VAR2 -> VAR5 ; usbd_status VAR6 ; if ( VAR2 -> VAR7 > 4 ) { FUN2 ( VAR4 , 0x0c , 0x850 ) ; } else { FUN2 ( VAR4 , 0x0c , 0x50 ) ; } VAR2 -> VAR7 = 6 - VAR2 -> VAR7 ; VAR6 = FUN3 ( VAR4 , VAR2 -> VAR7 ) ; if ( VAR6 ) { VAR8 } FUN4 ( VAR4 , 0x41 , VAR9 [ VAR2 -> VAR7 ] ) ; fail return ( VAR6 ) ; }

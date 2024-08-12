@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * this , struct VAR2 * VAR3 ) { struct VAR4 * VAR5 = & this -> VAR6 ; unsigned long VAR7 ; FUN2 ( VAR5 ) ; FUN3 ( this , VAR3 ) ; VAR7 = FUN4 ( VAR5 , FUN5 ( 1000 ) ) ; if ( ! VAR7 ) { FUN6 ( this -> VAR8 , "" , this -> VAR9 ) ; FUN7 ( this , NULL ) ; return - VAR10 ; } return 0 ; }

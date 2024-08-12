@@ -1,0 +1,20 @@
+static inline void FUN1(struct VAR1 *VAR2)
+{
+int VAR3;
+
+VAR3 = FUN2(VAR2, VAR4);
+
+if ((VAR3 & VAR5) == 0)
+return;
+
+if (VAR3 & VAR6)
+VAR2->VAR7.VAR8.VAR9++;
+if (VAR3 & VAR10)
+VAR2->VAR7.VAR8.VAR11++;
+if (VAR3 & VAR12)
+FUN3(&VAR2->VAR7, VAR3 & VAR13);
+if (VAR3 & VAR14)
+FUN4(&VAR2->VAR7, VAR3 & VAR15);
+
+FUN5(&VAR2->VAR7.VAR16->VAR7.VAR17);
+}

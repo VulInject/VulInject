@@ -1,0 +1,152 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+int VAR3, VAR4, VAR5 = -VAR6;
+u32 VAR7 = 0, VAR8;
+int VAR9 = FUN2(VAR2);
+static const struct {
+u32 VAR8;
+u32 VAR10;
+u32 VAR11;
+u32 VAR12;
+} VAR13[] = {
+{ VAR14,
+VAR15,	4, 0x000003ff },
+{ VAR14,
+VAR16,		4, 0xffffffff },
+{ VAR17,
+VAR18,		4, 0x000003ff },
+{ VAR14,
+VAR19,		4, 0x00000001 },
+{ VAR17 | VAR20 | VAR21,
+VAR22,		4, 0x000007ff },
+{ VAR23,
+VAR24,		4, 0x000007ff },
+{ VAR14,
+VAR25,		4, 0x00ffffff },
+{ VAR14,
+VAR26,	4, 0x000fffff },
+{ VAR14,
+VAR27, 8, 0x0003ffff },
+{ VAR14,
+VAR28,		4, 0x000fffff },
+{ VAR14,
+VAR29, 8, 0x0003ffff },
+{ VAR14,
+VAR30,	4, 0x000fffff },
+{ VAR14,
+VAR31,		4, 0x000fffff },
+{ VAR14,
+VAR32,	4, 0x0003ffff },
+{ VAR14,
+VAR33,		40, 0xffffffff },
+{ VAR14,
+VAR34,		40, 0xffffffff },
+{ VAR14,
+VAR35, 4, 0x00000001 },
+{ VAR14,
+VAR36,	4, 0x00000003 },
+{ VAR14,
+VAR37,	4, 0x000000ff },
+{ VAR14,
+VAR38,		4, 0x00000001 },
+{ VAR17 | VAR20,
+VAR39,		4, 0x00000001 },
+{ VAR17 | VAR20,
+VAR40,		4, 0x00000001 },
+{ VAR14,
+VAR41,		4, 0x00000001 },
+{ VAR14,
+VAR42,		4, 0x00000001 },
+{ VAR14,
+VAR43,		4, 0x00000007 },
+{ VAR14,
+VAR44,	68, 0x000000ff },
+{ VAR14,
+VAR45,	68, 0xffffffff },
+{ VAR14,
+VAR46,	160, 0xffffffff },
+{ VAR14,
+VAR47,	160, 0xffffffff },
+{ VAR14,
+VAR48,	160, 0x00000001 },
+{ VAR14,
+VAR49,	160, 0x0000ffff },
+{ VAR14,
+VAR50,	160, 0x0000ffff },
+{ VAR14,
+VAR51,	160, 0x00000fff },
+{ VAR17 | VAR20,
+VAR52,	4, 0x00000001 },
+{ VAR14,
+VAR53, 4, 0x00000001},
+{ VAR14,
+VAR54,	4, 0x07ffffff },
+{ VAR17 | VAR20,
+VAR55, 24, 0x00000001 },
+{ VAR17 | VAR20,
+VAR56,	16, 0x0000001f },
+
+{ VAR14, 0xffffffff, 0, 0x00000000 }
+};
+
+if (!FUN3(VAR2)) {
+FUN4(VAR57 | VAR58,
+"");
+return VAR5;
+}
+
+if (FUN5(VAR2))
+VAR8 = VAR59;
+else if (FUN6(VAR2))
+VAR8 = VAR60;
+else if (FUN7(VAR2))
+VAR8 = VAR20;
+else if (FUN8(VAR2))
+VAR8 = VAR23;
+else 
+VAR8 = VAR21;
+
+
+for (VAR3 = 0; VAR3 < 2; VAR3++) {
+
+switch (VAR3) {
+case 0:
+VAR7 = 0;
+break;
+case 1:
+VAR7 = 0xffffffff;
+break;
+}
+
+for (VAR4 = 0; VAR13[VAR4].VAR10 != 0xffffffff; VAR4++) {
+u32 VAR61, VAR12, VAR62, VAR63;
+if (!(VAR8 & VAR13[VAR4].VAR8))
+continue;
+
+VAR61 = VAR13[VAR4].VAR10 + VAR9*VAR13[VAR4].VAR11;
+VAR12 = VAR13[VAR4].VAR12;
+
+VAR62 = FUN9(VAR2, VAR61);
+
+FUN10(VAR2, VAR61, VAR7 & VAR12);
+
+VAR63 = FUN9(VAR2, VAR61);
+
+
+FUN10(VAR2, VAR61, VAR62);
+
+
+if ((VAR63 & VAR12) != (VAR7 & VAR12)) {
+FUN4(VAR57,
+"",
+VAR61, VAR63, VAR7, VAR12);
+goto VAR64;
+}
+}
+}
+
+VAR5 = 0;
+
+VAR64:
+return VAR5;
+}

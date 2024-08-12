@@ -1,0 +1,48 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+void VAR3 *VAR4 = VAR2->VAR4;
+u16 VAR5;
+
+
+VAR2->VAR6 &= ~0x40000;
+FUN2(VAR2->VAR6, VAR4);
+
+
+if (VAR2->VAR7 == VAR8) {
+VAR5 = FUN3(VAR2->VAR4,
+VAR2->VAR9, 18, VAR2->VAR7) & ~0x1000;
+
+FUN4(VAR2->VAR4,
+VAR2->VAR9, 18, VAR5, VAR2->VAR7);
+}
+
+
+VAR5 = FUN3(VAR2->VAR4, VAR2->VAR9, 4, VAR2->VAR7) & ~0x01e0;
+
+if (VAR2->VAR10 & VAR11) {
+
+VAR5 |= VAR2->VAR12;
+} else {
+
+switch(VAR2->VAR10) {
+case VAR13: VAR5 |= 0x20; break;
+case VAR14: VAR5 |= 0x40; break;
+case VAR15: VAR5 |= 0x80; break;
+case VAR16: VAR5 |= 0x100; break;
+}
+if (VAR2->VAR7 == VAR8) VAR5 &= 0x61;
+}
+
+
+if ( !(VAR5 & 0x01e0)) {
+VAR5|=VAR2->VAR12;
+VAR2->VAR10|=VAR11;
+}
+FUN4(VAR2->VAR4, VAR2->VAR9, 4, VAR5, VAR2->VAR7);
+
+
+if ( VAR2->VAR17 && (VAR2->VAR7 == VAR18) )
+FUN4(VAR2->VAR4, VAR2->VAR9, 0, 0x1800, VAR2->VAR7);
+if ( !VAR2->VAR17 )
+FUN4(VAR2->VAR4, VAR2->VAR9, 0, 0x1200, VAR2->VAR7);
+}

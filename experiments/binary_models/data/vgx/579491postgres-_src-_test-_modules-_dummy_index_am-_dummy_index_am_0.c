@@ -1,0 +1,55 @@
+static void
+FUN1(void)
+{
+VAR1 = FUN2();
+
+FUN3(VAR1, "",
+"",
+10, -10, 100, VAR2);
+VAR3[0].VAR4 = "";
+VAR3[0].VAR5 = VAR6;
+VAR3[0].VAR7 = FUN4(VAR8, VAR9);
+
+FUN5(VAR1, "",
+"",
+3.1415, -10, 100, VAR2);
+VAR3[1].VAR4 = "";
+VAR3[1].VAR5 = VAR10;
+VAR3[1].VAR7 = FUN4(VAR8, VAR11);
+
+FUN6(VAR1, "",
+"",
+true, VAR2);
+VAR3[2].VAR4 = "";
+VAR3[2].VAR5 = VAR12;
+VAR3[2].VAR7 = FUN4(VAR8, VAR13);
+
+FUN7(VAR1, "",
+"",
+VAR14,
+VAR15,
+""VAR16\""VAR17\"",
+VAR2);
+VAR3[3].VAR4 = "";
+VAR3[3].VAR5 = VAR18;
+VAR3[3].VAR7 = FUN4(VAR8, VAR19);
+
+FUN8(VAR1, "",
+"",
+"", &VAR20,
+VAR2);
+VAR3[4].VAR4 = "";
+VAR3[4].VAR5 = VAR21;
+VAR3[4].VAR7 = FUN4(VAR8,
+VAR22);
+
+
+FUN8(VAR1, "",
+NULL,	
+NULL, &VAR20,
+VAR2);
+VAR3[5].VAR4 = "";
+VAR3[5].VAR5 = VAR21;
+VAR3[5].VAR7 = FUN4(VAR8,
+VAR23);
+}

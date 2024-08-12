@@ -1,0 +1,40 @@
+static int FUN1(VAR1 *VAR2, const VAR3 *VAR4, int VAR5, VAR6 *VAR7)
+{
+int VAR8;
+
+if (VAR5 > VAR9 - VAR2->VAR10) {
+VAR8 = FUN2(VAR11);
+goto VAR12;
+}
+
+memcpy(VAR2->VAR13 + VAR2->VAR10, VAR4, VAR5);
+VAR2->VAR10 += VAR5;
+
+
+if (VAR2->VAR14 > 0 && --VAR2->VAR14)
+return FUN2(VAR15);
+
+if ((VAR8 = FUN3(VAR2, VAR2->VAR13, VAR2->VAR10, VAR7)) < 0)
+goto VAR12;
+
+if (VAR2->VAR16 > VAR2->VAR10) {
+VAR8 = FUN2(VAR17);
+goto VAR12;
+}
+
+if (VAR2->VAR16 == VAR2->VAR10) {
+
+FUN4(VAR2);
+} else {
+VAR2->VAR10 -= VAR2->VAR16;
+memmove(VAR2->VAR13, VAR2->VAR13 + VAR2->VAR16, VAR2->VAR10);
+}
+
+return 0;
+
+VAR12:
+
+
+FUN4(VAR2);
+return VAR8;
+}

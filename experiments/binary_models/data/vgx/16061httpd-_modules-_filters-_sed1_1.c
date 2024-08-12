@@ -1,0 +1,1 @@
+apr_status_t FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 , void * VAR5 ) { for ( ; ; ) { char VAR6 [ 1024 ] ; apr_size_t VAR7 = 0 ; VAR7 = sizeof ( VAR6 ) ; if ( FUN2 ( VAR4 , VAR6 , & VAR7 ) != VAR8 ) { break ; } if ( FUN3 ( VAR2 , VAR6 , VAR7 , VAR5 ) != VAR8 ) { return VAR9 ; } } return FUN4 ( VAR2 , VAR5 ) ; }

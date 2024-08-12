@@ -1,0 +1,1 @@
+int FUN1 ( char * VAR1 ) { if ( FUN2 ( VAR1 ) ) { return VAR2 ; } return 0 ; }

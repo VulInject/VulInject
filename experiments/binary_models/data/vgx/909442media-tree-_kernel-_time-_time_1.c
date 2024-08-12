@@ -1,0 +1,1 @@
+struct timespec64 FUN1 ( const struct timespec64 VAR1 , const struct timespec64 VAR2 ) { struct timespec64 VAR3 ; FUN2 ( & VAR3 , ( VAR4 ) VAR1 . VAR5 + VAR2 . VAR5 , VAR1 . VAR6 + VAR2 . VAR6 ) ; if ( FUN3 ( VAR3 . VAR5 < VAR1 . VAR5 || VAR3 . VAR5 < VAR2 . VAR5 ) ) { VAR3 . VAR5 = VAR7 ; } return VAR3 ; }

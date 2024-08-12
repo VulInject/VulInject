@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 ; struct nf_ct_event VAR5 ; unsigned int VAR6 ; VAR4 = FUN2 ( VAR2 ) ; if ( VAR4 == NULL ) { return ; } VAR6 = FUN3 ( & VAR4 -> VAR7 , 0 ) ; VAR5 . VAR2 = VAR2 ; VAR5 . VAR8 = 0 ; VAR5 . VAR9 = 0 ; FUN4 ( VAR4 , VAR6 , VAR4 -> VAR10 , & VAR5 ) ; }

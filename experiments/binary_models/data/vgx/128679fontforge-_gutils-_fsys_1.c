@@ -1,0 +1,1 @@
+off_t FUN1 ( char * VAR1 ) { struct stat VAR2 ; long VAR3 ; return ( VAR2 . VAR4 ) ; }

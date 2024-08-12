@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , u16 VAR3 ) { int VAR4 ; int VAR5 [ VAR6 ] ; const u8 VAR7 [ VAR8 ] { 0x00 FUN2 ( VAR3 ) FUN3 ( VAR3 ) } ; ; VAR4 = FUN4 ( VAR2 , VAR9 , VAR7 , FUN5 ( VAR7 ) , VAR5 , FUN5 ( VAR5 ) , VAR10 ) ; if ( VAR4 < 0 ) { return VAR4 ; } else { return FUN6 ( VAR5 + 2 ) ; } }

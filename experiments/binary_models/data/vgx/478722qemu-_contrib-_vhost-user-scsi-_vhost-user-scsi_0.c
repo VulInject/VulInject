@@ -1,0 +1,87 @@
+static int FUN1(struct VAR1 *VAR2,
+VAR3 *VAR4,
+struct VAR5 *VAR6, unsigned int VAR7,
+VAR8 *VAR9,
+struct VAR5 *VAR10, unsigned int VAR11)
+{
+struct VAR12 *VAR13;
+uint32_t VAR14;
+uint32_t VAR15;
+int VAR16;
+int VAR17;
+
+assert(VAR2);
+assert(VAR4);
+assert(VAR9);
+
+if (!(!VAR4->VAR18[1] && VAR4->VAR18[2] == 0x40 && !VAR4->VAR18[3])) {
+
+FUN2("",
+VAR4->VAR18[1], VAR4->VAR18[3]);
+VAR9->VAR19 = VAR20;
+memset(VAR9->VAR21, 0, sizeof(VAR9->VAR21));
+VAR9->VAR22 = 18;
+VAR9->VAR21[0] = 0x70;
+VAR9->VAR21[2] = VAR23;
+VAR9->VAR21[7] = 10;
+VAR9->VAR21[12] = 0x24;
+
+return 0;
+}
+
+VAR16 = FUN3(VAR4->VAR24);
+if (VAR16 == -1) {
+return -1;
+}
+
+VAR15 = 0;
+if (!VAR7 && !VAR11) {
+VAR14 = VAR25;
+} else if (VAR7) {
+VAR14 = VAR26;
+for (VAR17 = 0; VAR17 < VAR7; VAR17++) {
+VAR15 += VAR6[VAR17].VAR27;
+}
+} else {
+VAR14 = VAR28;
+for (VAR17 = 0; VAR17 < VAR11; VAR17++) {
+VAR15 += VAR10[VAR17].VAR27;
+}
+}
+
+VAR13 = FUN4(VAR16, VAR4->VAR24, VAR14, VAR15);
+
+if (VAR14 == VAR26) {
+VAR13->VAR29.VAR30 = (struct VAR31 *)VAR6;
+VAR13->VAR29.VAR32 = VAR7;
+} else if (VAR14 == VAR28) {
+VAR13->VAR33.VAR30 = (struct VAR31 *)VAR10;
+VAR13->VAR33.VAR32 = VAR11;
+}
+
+FUN2("",
+VAR16, VAR14, VAR13);
+if (!FUN5(VAR2, 0, VAR13, NULL)) {
+FUN6("");
+FUN7(VAR13);
+return -1;
+}
+
+memset(VAR9, 0, sizeof(*VAR9));
+
+VAR9->VAR19 = VAR13->VAR19;
+VAR9->VAR34  = VAR13->VAR35;
+
+if (VAR13->VAR19 == VAR20) {
+VAR9->VAR36 = VAR37;
+VAR9->VAR22 = VAR13->VAR38.VAR39 - 2;
+memcpy(VAR9->VAR21, &VAR13->VAR38.VAR40[2], VAR9->VAR22);
+}
+
+FUN7(VAR13);
+
+FUN2("",
+VAR9->VAR19, VAR9->VAR34, VAR9->VAR36, VAR9->VAR22);
+
+return 0;
+}

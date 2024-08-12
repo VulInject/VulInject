@@ -1,0 +1,5 @@
+int FUN1(void)
+{
+    static const char VAR1[] = ""
+                                       "" /
+                                       VAR2 / VAR3 "" Could not access KVM kernel VAR4 : % VAR5\VAR6 "" kvm version too VAR7\VAR6 "" kvm version not VAR8\VAR6 "" Please add VAR9 '' kernel parameter VAR10 "" your host kernel command VAR11 \VAR6 "" kvm does not VAR12 % VAR13\VAR6 % VAR13 " , VAR14 -> VAR15 , VAR1 ) ; goto VAR16 ; } VAR13 -> VAR17 = FUN2 ( VAR13 , VAR18 ) ; VAR13 -> VAR19 = 1 ; VAR20 = FUN2 ( VAR13 , VAR21 ) ; if ( VAR20 > 0 ) { VAR13 -> VAR19 = 0 ; } VAR13 -> VAR22 = FUN2 ( VAR13 , VAR23 ) ; VAR13 -> VAR24 = FUN2 ( VAR13 , VAR25 ) ; VAR13 -> VAR26 = FUN2 ( VAR13 , VAR27 ) ; VAR13 -> VAR28 = FUN2 ( VAR13 , VAR29 ) ; VAR13 -> VAR30 = FUN2 ( VAR13 , VAR31 ) ; VAR20 = FUN3 ( VAR13 ) ; if ( VAR20 < 0 ) { goto VAR16 ; } VAR32 = VAR13 ; FUN4 ( & VAR33 ) ; VAR13 -> VAR34 = FUN5 ( ) ; VAR35 = VAR36 ; return 0 ; VAR16 : if ( VAR13 ) { if ( VAR13 -> VAR37 >= 0 ) { close ( VAR13 -> VAR37 ) ; } if ( VAR13 -> VAR38 != - 1 ) { close ( VAR13 -> VAR38 ) ; } } FUN6 ( VAR13 ) ; return VAR20 ; }

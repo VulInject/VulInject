@@ -1,0 +1,1 @@
+static int64 FUN1 ( Relation VAR1 ) { int64 VAR2 ; VAR2 = FUN2 ( VAR1 , NULL ) ; VAR2 += FUN3 ( VAR1 ) ; return VAR2 ; }

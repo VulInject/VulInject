@@ -1,0 +1,18 @@
+static int FUN1(VAR1 *VAR2, const VAR3 *VAR4, int VAR5, int VAR6);
+static av_cold void FUN2(VAR1 *VAR2)
+{
+    VAR7 *const VAR8 = &VAR2->VAR8;
+    VAR8->VAR9 = VAR8->VAR10->VAR9;
+    VAR8->VAR11 = VAR8->VAR10->VAR11;
+    VAR8->VAR12 = VAR8->VAR10->VAR13->VAR14;
+    VAR8->VAR10->VAR15 = 8;
+    VAR2->VAR16 = 1;
+    FUN3(&VAR2->VAR17, VAR8->VAR10->VAR15, VAR2->VAR16);
+    FUN4(&VAR2->VAR18, VAR8->VAR12, VAR8->VAR10->VAR15, VAR2->VAR16);
+    VAR2->VAR19 = -1;
+    VAR8->VAR20 = 1;
+    VAR8->VAR21.VAR22 = 16;
+    FUN5(&VAR8->VAR21, VAR8->VAR10);
+    memset(VAR2->VAR23.VAR24, 16, 6 * 16 * sizeof(VAR3));
+    memset(VAR2->VAR23.VAR25, 16, 2 * 64 * sizeof(VAR3));
+}

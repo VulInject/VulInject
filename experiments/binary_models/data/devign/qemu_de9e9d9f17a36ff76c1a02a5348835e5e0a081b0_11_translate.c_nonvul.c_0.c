@@ -1,0 +1,28 @@
+static inline void FUN1(TCGv VAR1, TCGv VAR2, TCGv VAR3)
+{
+    TCGv VAR4, VAR5, VAR6;
+    VAR4 = FUN2();
+    VAR6 = FUN2();
+    VAR5 = FUN3(0);
+    FUN4(VAR7, VAR2, 0xffffffff);
+    FUN4(VAR4, VAR8, 0x1);
+    FUN4(VAR9, VAR3, 0xffffffff);
+    FUN5(VAR10, VAR9, VAR4, VAR5, VAR5, VAR9);
+    FUN6(VAR5);
+    FUN4(VAR4, VAR7, 0x1);
+    FUN7(VAR4, VAR4, 31);
+    FUN8(VAR6, VAR8, 1);
+    FUN4(VAR6, VAR6, 0x7fffffff);
+    FUN9(VAR6, VAR6, VAR4);
+    FUN4(VAR8, VAR6, 0xffffffff);
+    FUN10(VAR6, VAR11);
+    FUN11(VAR4, VAR11);
+    FUN12(VAR6, VAR6, VAR4);
+    FUN6(VAR4);
+    FUN7(VAR6, VAR6, 31);
+    FUN8(VAR7, VAR7, 1);
+    FUN9(VAR7, VAR7, VAR6);
+    FUN6(VAR6);
+    FUN13(VAR12, VAR7, VAR9);
+    FUN14(VAR1, VAR12);
+}

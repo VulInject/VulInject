@@ -1,0 +1,1 @@
+static double FUN1 ( double VAR1 ) { if ( FUN2 ( VAR1 ) ) { return VAR1 ; } if ( FUN3 ( VAR1 ) ) { return VAR1 ; } if ( VAR1 == 0 ) { return VAR1 ; } if ( VAR1 < 0 && VAR1 >= - 0.5 ) { return - 0 ; } return FUN4 ( VAR1 + 0.5 ) ; }

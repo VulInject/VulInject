@@ -1,0 +1,8 @@
+static inline VAR1 FUN1(VAR2 *VAR3)
+{
+    VAR4 *VAR5 = FUN2(VAR3);
+    AVRational VAR6 = {1, VAR7};
+    int64_t VAR8;
+    VAR8 = VAR3->VAR9.VAR10.VAR11 * VAR7 + VAR3->VAR9.VAR10.VAR12;
+    return FUN3(VAR8, VAR6, VAR5->VAR13->VAR14);
+}

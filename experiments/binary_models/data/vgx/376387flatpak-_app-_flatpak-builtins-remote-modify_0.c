@@ -1,0 +1,61 @@
+FUN1 (int argc, char **argv, VAR1 *VAR2, VAR3 **VAR4)
+{
+FUN2(VAR5) VAR6 = NULL;
+FUN2(VAR7) VAR8 = NULL;
+FUN2(VAR9) VAR10 = NULL;
+FUN2(VAR11) VAR12 = NULL;
+FUN2(VAR13) VAR14 = NULL;
+const char *VAR15;
+gboolean VAR16 = VAR17;
+
+VAR6 = FUN3 (FUN4(""));
+FUN5 (VAR6, VAR18);
+
+FUN6 (VAR6, VAR19, NULL);
+
+if (!FUN7 (VAR6, VAR20, &argc, &argv,
+VAR21, &VAR8, VAR2, VAR4))
+return VAR17;
+
+if (argc < 2)
+return FUN8 (VAR6, FUN4(""), VAR4);
+
+VAR15 = argv[1];
+
+if (!FUN9 (VAR8, VAR15, &VAR10, VAR2, VAR4))
+return VAR17;
+
+if (VAR22)
+{
+FUN2(VAR3) VAR23 = NULL;
+
+FUN10 (FUN4(""), VAR15);
+if (!FUN11 (VAR10, VAR15, NULL, NULL, VAR2, &VAR23))
+{
+FUN12 (FUN4(""), VAR15, VAR23->VAR24);
+return FUN13 (VAR4, FUN4(""), VAR15);
+}
+
+
+if (!FUN14 (VAR10, VAR2, VAR4))
+return VAR17;
+}
+
+if (VAR25 && !FUN15 (VAR25))
+return FUN13 (VAR4, FUN4(""), VAR25);
+
+VAR12 = FUN16 (VAR10, VAR15, &VAR16);
+
+if (VAR26 != NULL)
+{
+VAR14 = FUN17 (VAR26, VAR2, VAR4);
+if (VAR14 == NULL)
+return VAR17;
+VAR16 = VAR27;
+}
+
+if (!VAR16)
+return VAR27;
+
+return FUN18 (VAR10, VAR15, VAR12, VAR14, VAR2, VAR4);
+}

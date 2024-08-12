@@ -1,0 +1,15 @@
+void FUN1(struct VAR1 **VAR2, VAR3 *VAR4, uint32_t VAR5, bool VAR6)
+{
+    struct VAR1 *VAR7 = FUN2(sizeof *VAR7);
+    VAR7->VAR4 = VAR4;
+    VAR7->VAR8 = FUN3((sizeof *VAR7->VAR8) * (VAR5 + VAR9));
+    VAR7->VAR10 = FUN3((sizeof *VAR7->VAR10) * VAR5);
+    VAR7->VAR11 = VAR5;
+    VAR7->VAR12 = VAR5;
+    VAR7->VAR6 = VAR6;
+    VAR7->VAR8[VAR13].VAR14 = &VAR7->VAR15;
+    VAR7->VAR8[VAR13].VAR16 = VAR7->VAR6 ? sizeof VAR7->VAR15 : 0;
+    VAR7->VAR8[VAR17].VAR14 = &VAR7->VAR18;
+    VAR7->VAR8[VAR19].VAR14 = &VAR7->VAR20;
+    *VAR2 = VAR7;
+}

@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( struct VAR2 * VAR3 , struct VAR4 * VAR5 , uint16_t VAR6 ) { struct VAR1 * VAR7 ; VAR7 = FUN2 ( VAR3 , VAR1 ) ; if ( ! VAR7 ) { return VAR8 ; } if ( ! VAR5 -> VAR9 ) { VAR5 -> VAR9 = FUN3 ( VAR3 -> VAR10 - ( VAR11 * ) VAR5 - sizeof ( VAR1 ) ) ; } * VAR7 = ( VAR1 ) { . VAR6 = FUN3 ( VAR6 ) . VAR12 = 0 } ; return VAR7 ; }

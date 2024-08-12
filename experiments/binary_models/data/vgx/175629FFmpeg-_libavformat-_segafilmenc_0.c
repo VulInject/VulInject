@@ -1,0 +1,80 @@
+static int FUN1(VAR1 *VAR2)
+{
+int VAR3 = 0;
+unsigned VAR4, VAR5, VAR6;
+VAR7 *VAR8 = VAR2->VAR9;
+VAR10 *VAR11 = NULL;
+VAR12 *VAR13, *VAR14;
+
+
+VAR5 = FUN2(VAR8->VAR13, &VAR13);
+if (VAR5 < 64) {
+FUN3(VAR8->VAR13->VAR15 < 0);
+return VAR8->VAR13->VAR15;
+}
+VAR6 = (VAR5 - 64) / 16;
+VAR4 = 16 + 16 * VAR6;
+VAR5 = 16 + 
+32 + 
+VAR4;
+
+
+VAR14 = VAR13;
+FUN4(&VAR14, FUN5('', '', '', ''));
+FUN4(&VAR14, VAR5);
+
+FUN4(&VAR14, FUN5('', '', '', ''));
+
+VAR14 += 4;
+
+
+FUN4(&VAR14, FUN5('', '', '', ''));
+FUN4(&VAR14, 0x20); 
+
+VAR11 = VAR2->VAR16[VAR8->VAR17];
+
+
+switch (VAR11->VAR18->VAR19) {
+case VAR20:
+FUN4(&VAR14, FUN5('', '', '', ''));
+break;
+case VAR21:
+FUN4(&VAR14, FUN5('', '', '', ''));
+break;
+}
+
+FUN4(&VAR14, VAR11->VAR18->VAR22);
+FUN4(&VAR14, VAR11->VAR18->VAR23);
+FUN6(&VAR14, 24); 
+
+if (VAR8->VAR24 > -1) {
+VAR10 *VAR25 = VAR2->VAR16[VAR8->VAR24];
+int VAR26 = FUN7(VAR25->VAR18->VAR19);
+
+FUN6(&VAR14, VAR25->VAR18->VAR27.VAR28); 
+FUN6(&VAR14, VAR25->VAR18->VAR29); 
+FUN6(&VAR14, VAR26); 
+FUN8(&VAR14, VAR25->VAR18->VAR30); 
+} else {
+
+VAR14 += 1 + 1 + 1 + 2;
+}
+
+
+VAR14 += 4 + 2;
+
+
+FUN4(&VAR14, FUN5('', '', '', ''));
+FUN4(&VAR14, VAR4);
+
+FUN4(&VAR14, FUN9(FUN10(VAR11->VAR31)));
+
+FUN4(&VAR14, VAR6);
+
+
+VAR3 = FUN11(VAR2, VAR13, VAR5);
+if (VAR3 < 0)
+return VAR3;
+
+return 0;
+}

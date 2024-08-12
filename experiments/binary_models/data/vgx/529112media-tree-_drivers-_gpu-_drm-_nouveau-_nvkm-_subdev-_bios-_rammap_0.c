@@ -1,0 +1,12 @@
+VAR1
+FUN1(struct VAR2 *VAR3, u32 VAR4,
+u8 VAR5, u8 VAR6, u8 VAR7, u8 VAR8, int VAR9, VAR10 *VAR11, VAR10 *VAR12)
+{
+if (VAR9 < VAR7) {
+VAR4 = VAR4 + VAR6 + (VAR9 * VAR8);
+*VAR11 = VAR5;
+*VAR12 = VAR8;
+return VAR4;
+}
+return 0;
+}

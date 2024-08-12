@@ -1,0 +1,191 @@
+static void
+FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+VAR5	*VAR6;
+VAR7		*VAR8;
+int		VAR9, VAR10;
+pghw_type_t	VAR11;
+VAR12		*VAR13 = NULL;
+VAR5	*VAR14[VAR15];
+lgrp_handle_t	VAR16;
+VAR17	*VAR18;
+cmt_lineage_validation_t	VAR19;
+
+FUN2(FUN3(&VAR20));
+FUN2(FUN4(VAR2));
+
+if (VAR21)
+return;
+
+
+VAR8 = &VAR4->VAR8;
+VAR4->VAR22 = NULL;
+
+FUN5(VAR14, sizeof (VAR14));
+VAR9 = 0;
+for (VAR11 = VAR23; VAR11 < VAR15; VAR11++) {
+
+pg_cmt_policy_t	VAR24;
+
+
+VAR24 = FUN6(VAR11);
+if (VAR24 == VAR25 ||
+FUN7(VAR2, VAR11) == 0)
+continue;
+
+
+if (VAR26[VAR11] == 1)
+VAR24 = VAR25;
+
+
+VAR6 = (VAR5 *)FUN8(VAR2, VAR11);
+if (VAR6 == NULL) {
+
+VAR6 = (VAR5 *)FUN9(VAR27);
+
+
+FUN10((VAR28 *)VAR6, VAR2, VAR11);
+
+
+VAR6->VAR29 = VAR24;
+
+
+FUN11((VAR12 *)VAR6);
+
+FUN12(&VAR6->VAR30);
+FUN13(&VAR6->VAR31);
+} else {
+FUN2(FUN14(VAR6));
+}
+
+((VAR28 *)VAR6)->VAR32++;
+
+
+FUN15((VAR12 *)VAR6, VAR2, VAR4);
+
+
+FUN16(&VAR6->VAR31,
+FUN17(&((VAR12 *)VAR6)->VAR33));
+
+if (VAR2->VAR34 >=
+FUN18(&VAR6->VAR30)) {
+FUN19(&VAR6->VAR30,
+VAR2->VAR34 + 1);
+}
+
+
+if (VAR24 & (VAR35 | VAR36)) {
+VAR14[VAR9++] = VAR6;
+}
+
+
+if (VAR11 == VAR37)
+VAR13 = (VAR12 *)VAR6;
+}
+
+FUN16(VAR8, VAR9);
+
+if (VAR38 == NULL)
+VAR38 = FUN20(FUN21());
+
+
+VAR16 = FUN22(VAR2->VAR39);
+if ((VAR18 = FUN23(VAR16)) == NULL)
+VAR18 = FUN20(VAR16);
+
+
+FUN24(VAR14, VAR9);
+
+
+VAR19 = FUN25(VAR14, &VAR9, VAR4);
+if ((VAR19 != VAR40) &&
+(VAR19 != VAR41)) {
+
+FUN2((VAR21 == 0) ||
+(FUN17(&(VAR4->VAR8)) == 0));
+return;
+}
+
+
+for (VAR10 = VAR9 - 1; VAR10 >= 0; ) {
+int VAR42;
+
+VAR42 = 0;
+VAR6 = VAR14[VAR10];
+
+
+while (VAR6->VAR43 &&
+VAR6->VAR43 != VAR14[VAR10 + 1]) {
+FUN26(VAR6, VAR4);
+VAR42++;
+}
+if (VAR42 > 0)
+VAR10 = VAR9 - 1;
+else
+VAR10--;
+}
+
+
+for (VAR10 = 0; VAR10 < VAR9; VAR10++) {
+uint_t		VAR44;
+int		VAR45;
+
+VAR6 = VAR14[VAR10];
+VAR45 = FUN27(VAR8, VAR6, VAR9 - VAR10 - 1);
+FUN2(VAR45 == 0);
+
+if (VAR10 == 0)
+VAR4->VAR22 = (VAR12 *)VAR6;
+
+if (VAR6->VAR46 != NULL) {
+
+FUN2(VAR6->VAR43 == NULL ||
+VAR6->VAR43 == VAR14[VAR10 + 1]);
+FUN2(VAR6->VAR46 == &VAR18->VAR47 ||
+((VAR6->VAR43 != NULL) &&
+VAR6->VAR46 == VAR6->VAR43->VAR48));
+continue;
+}
+
+if ((VAR10 + 1) == VAR9) {
+VAR6->VAR43 = NULL;
+
+VAR6->VAR46 = &VAR18->VAR47;
+VAR44 = ++VAR18->VAR49;
+if (VAR38 != VAR18)
+VAR38->VAR49++;
+} else {
+VAR6->VAR43 = VAR14[VAR10 + 1];
+
+
+if (VAR6->VAR43->VAR48 == NULL) {
+VAR6->VAR43->VAR48 =
+FUN28(sizeof (VAR7), VAR50);
+FUN13(VAR6->VAR43->VAR48);
+}
+VAR6->VAR46 = VAR6->VAR43->VAR48;
+VAR44 = ++VAR6->VAR43->VAR51;
+}
+
+FUN16(VAR6->VAR46, VAR44);
+FUN16(&VAR38->VAR47, VAR38->VAR49);
+}
+
+
+if (VAR2->VAR52) {
+VAR2->VAR52->VAR53 =
+FUN29(VAR2, VAR54);
+VAR2->VAR52->VAR55 = FUN30(VAR2);
+
+
+if (VAR13)
+VAR2->VAR52->VAR56 = VAR13->VAR57;
+}
+
+
+if (VAR58) {
+VAR58 = 0;
+VAR59 = VAR18;
+}
+
+}

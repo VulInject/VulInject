@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { { FILETIME VAR5 ; ev_uint64_t VAR6 ; } , ft FUN2 ( & VAR7 . VAR5 ) ; if ( FUN3 ( VAR7 . VAR6 < VAR8 ) ) { return - 1 ; } VAR7 . VAR6 -= VAR8 ; VAR2 -> VAR9 = ( long ) ( VAR7 . VAR6 / VAR10 ) ; VAR2 -> VAR11 = ( long ) ( ( VAR7 . VAR6 / VAR12 ) % VAR13 ) ; return 0 ; }

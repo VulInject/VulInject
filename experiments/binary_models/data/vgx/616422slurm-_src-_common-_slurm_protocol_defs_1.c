@@ -1,0 +1,1 @@
+static int FUN1 ( List VAR1 , char * VAR2 , void * VAR3 ) { bool VAR4 = * ( bool * ) VAR3 ; char * VAR5 = FUN2 ( VAR2 , VAR4 ) ; if ( ! VAR5 ) { FUN3 ( VAR1 ) ; return VAR6 ; } if ( ! FUN4 ( VAR1 , VAR7 , VAR5 ) ) { FUN5 ( VAR1 , VAR5 ) ; return 1 ; } else { return 0 ; } }

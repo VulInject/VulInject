@@ -1,0 +1,69 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+int64_t VAR5, VAR6;
+uint64_t VAR7;
+VAR8 *VAR9 = VAR2->VAR10;
+FITSHeader VAR11;
+AVBPrint VAR12;
+char *VAR13;
+
+if (VAR9->VAR14) {
+FUN2(&VAR11, VAR15);
+} else {
+FUN2(&VAR11, VAR16);
+}
+
+FUN3(&VAR12, VAR17, VAR18);
+while ((VAR6 = FUN4(VAR2, VAR9, &VAR11, &VAR12, &VAR7)) == 0) {
+FUN5(&VAR12, NULL);
+VAR5 = FUN6(VAR2->VAR19, VAR7);
+if (VAR5 < 0)
+return VAR5;
+
+FUN3(&VAR12, VAR17, VAR18);
+FUN2(&VAR11, VAR16);
+}
+if (VAR6 < 0)
+goto VAR20;
+
+if (!FUN7(&VAR12)) {
+VAR6 = FUN8(VAR21);
+goto VAR20;
+}
+
+FUN9(VAR12.VAR22 <= VAR23 && VAR7 <= VAR23);
+if (VAR12.VAR22 + VAR7 > VAR24 - 80)  {
+VAR6 = VAR25;
+goto VAR20;
+}
+
+VAR6 = FUN10(VAR4, VAR12.VAR22 - 80 + VAR7);
+if (VAR6 < 0)
+goto VAR20;
+
+VAR4->VAR26 = 0;
+VAR4->VAR27 |= VAR28;
+
+VAR6 = FUN5(&VAR12, &VAR13);
+if (VAR6 < 0) {
+return VAR6;
+}
+
+memcpy(VAR4->VAR29, VAR13 + 80, VAR12.VAR22 - 80);
+VAR4->VAR7 = VAR12.VAR22 - 80;
+FUN11(&VAR13);
+VAR6 = FUN12(VAR2->VAR19, VAR4->VAR29 + VAR4->VAR7, VAR7);
+if (VAR6 < 0) {
+return VAR6;
+}
+
+VAR4->VAR7 += VAR6;
+VAR4->VAR30 = VAR9->VAR30;
+VAR9->VAR30++;
+
+return 0;
+
+VAR20:
+FUN5(&VAR12, NULL);
+return VAR6;
+}

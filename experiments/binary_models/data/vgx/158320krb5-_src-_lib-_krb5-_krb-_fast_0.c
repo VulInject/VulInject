@@ -1,0 +1,58 @@
+static VAR1
+FUN1(krb5_context VAR2,
+struct VAR3 *VAR4,
+krb5_ccache VAR5, krb5_principal VAR6)
+{
+krb5_error_code VAR7 = 0;
+krb5_creds VAR8, *VAR9 = NULL;
+krb5_auth_context VAR10 = NULL;
+krb5_data VAR11;
+VAR12 *VAR13 = NULL;
+VAR14 *VAR15 = NULL, *VAR16 = NULL;
+
+VAR11.VAR17 = NULL;
+memset(&VAR8, 0, sizeof(VAR8));
+VAR8.VAR18 = VAR6;
+VAR7 = FUN2(VAR2, VAR5, &VAR8.VAR19);
+if (VAR7 == 0)
+VAR7 = FUN3(VAR2, 0, VAR5,  &VAR8, &VAR9);
+if (VAR7 == 0) {
+FUN4(VAR2, &VAR9->VAR20);
+VAR7 = FUN5(VAR2, &VAR10,
+VAR21, NULL ,
+VAR9, &VAR11);
+}
+if (VAR7 == 0)
+VAR7 = FUN6(VAR2, VAR10, &VAR15);
+if (VAR7 == 0)
+VAR7 = FUN7(VAR2, VAR15, "",
+&VAR9->VAR20, "",
+&VAR16);
+if (VAR7 == 0) {
+FUN8(VAR2, VAR16);
+VAR13 = calloc(1, sizeof(VAR12));
+if (VAR13 == NULL)
+VAR7 = VAR22;
+}
+if (VAR7 == 0) {
+VAR13->VAR23 = VAR24;
+VAR13->VAR25 = VAR11;
+VAR11.VAR17 = NULL;
+VAR11.VAR26 = 0;
+VAR4->VAR13 = VAR13;
+VAR13 = NULL;
+VAR4->VAR16 = VAR16;
+VAR16 = NULL;
+}
+FUN9(VAR2, VAR16);
+FUN9(VAR2, VAR15);
+if (VAR9)
+FUN10(VAR2, VAR9);
+
+VAR8.VAR18 = NULL;
+FUN11(VAR2, &VAR8);
+if (VAR11.VAR17)
+FUN12(VAR2, &VAR11);
+FUN13(VAR2, VAR10);
+return VAR7;
+}

@@ -1,0 +1,1 @@
+static __be32 FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { VAR5 * VAR6 ; u32 VAR7 ; if ( FUN2 ( VAR2 -> VAR8 , & VAR7 ) < 0 ) { return VAR9 ; } if ( VAR7 == 0 || VAR7 > VAR10 ) { return VAR9 ; } VAR6 = FUN3 ( VAR2 -> VAR8 , VAR7 ) ; VAR4 -> VAR11 = FUN4 ( VAR2 , VAR6 , VAR7 ) ; if ( ! VAR4 -> VAR11 ) { return VAR12 ; } VAR4 -> VAR7 = VAR7 ; return VAR13 ; }

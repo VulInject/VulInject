@@ -1,0 +1,1 @@
+static void FUN1 ( const char * VAR1 , void * VAR2 , void * VAR3 ) { FUN2 ( VAR4 , "" , VAR1 ) ; }

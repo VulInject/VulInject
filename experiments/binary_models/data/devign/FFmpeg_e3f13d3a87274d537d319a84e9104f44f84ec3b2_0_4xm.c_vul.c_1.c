@@ -1,0 +1,64 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 *VAR6, int VAR7, int VAR8)
+{
+    VAR9 *VAR10;
+    int VAR11;
+    if (VAR7 != VAR12 || VAR8 < VAR7 + 8)
+        return VAR13;
+    VAR11 = FUN2(VAR6 + 8);
+    if ((unsigned)VAR11 >= VAR14 / sizeof(VAR15) - 1)
+    {
+        FUN3(VAR2, VAR16, "");
+        return VAR13;
+    }
+    if (VAR11 + 1 > VAR4->VAR17)
+    {
+        if (FUN4(&VAR4->VAR18, VAR11 + 1, sizeof(VAR15)))
+            return FUN5(VAR19);
+        memset(&VAR4->VAR18[VAR4->VAR17], 0, sizeof(VAR15) * (VAR11 + 1 - VAR4->VAR17));
+        VAR4->VAR17 = VAR11 + 1;
+    }
+    VAR4->VAR18[VAR11].VAR20 = FUN2(VAR6 + 12);
+    VAR4->VAR18[VAR11].VAR21 = FUN2(VAR6 + 36);
+    VAR4->VAR18[VAR11].VAR22 = FUN2(VAR6 + 40);
+    VAR4->VAR18[VAR11].VAR23 = FUN2(VAR6 + 44);
+    VAR4->VAR18[VAR11].VAR24 = 0;
+    if (VAR4->VAR18[VAR11].VAR21 <= 0 || VAR4->VAR18[VAR11].VAR22 <= 0 || VAR4->VAR18[VAR11].VAR23 <= 0)
+    {
+        FUN3(VAR2, VAR16, "");
+        return VAR13;
+    }
+    if (!VAR4->VAR18[VAR11].VAR20 && VAR4->VAR18[VAR11].VAR23 < 8)
+    {
+        FUN3(VAR2, VAR16, "");
+        return VAR13;
+    }
+    if (VAR4->VAR18[VAR11].VAR22 > VAR25 / VAR4->VAR18[VAR11].VAR23 / VAR4->VAR18[VAR11].VAR21)
+    {
+        FUN3(VAR2, VAR16, "", VAR4->VAR18[VAR11].VAR22, VAR4->VAR18[VAR11].VAR23, VAR4->VAR18[VAR11].VAR21);
+        return VAR13;
+    }
+    VAR10 = FUN6(VAR2, NULL);
+    if (!VAR10)
+        return FUN5(VAR19);
+    VAR10->VAR26 = VAR11;
+    FUN7(VAR10, 60, 1, VAR4->VAR18[VAR11].VAR22);
+    VAR4->VAR18[VAR11].VAR27 = VAR10->VAR28;
+    VAR10->VAR29->VAR30 = VAR31;
+    VAR10->VAR29->VAR32 = 0;
+    VAR10->VAR29->VAR21 = VAR4->VAR18[VAR11].VAR21;
+    VAR10->VAR29->VAR22 = VAR4->VAR18[VAR11].VAR22;
+    VAR10->VAR29->VAR33 = VAR4->VAR18[VAR11].VAR23;
+    VAR10->VAR29->VAR34 = (VAR35)VAR10->VAR29->VAR21 * VAR10->VAR29->VAR22 * VAR10->VAR29->VAR33;
+    VAR10->VAR29->VAR36 = VAR10->VAR29->VAR21 * VAR10->VAR29->VAR33;
+    if (VAR4->VAR18[VAR11].VAR20)
+    {
+        VAR10->VAR29->VAR37 = VAR38;
+    }
+    else if (VAR10->VAR29->VAR33 == 8)
+    {
+        VAR10->VAR29->VAR37 = VAR39;
+    }
+    else
+        VAR10->VAR29->VAR37 = VAR40;
+    return 0;
+}

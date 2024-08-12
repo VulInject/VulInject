@@ -1,0 +1,13 @@
+static void FUN1 (VAR1 *VAR2) {
+VAR3 *VAR4 = VAR2->VAR4;
+int VAR5 = VAR2->VAR5 - 1;  
+if (VAR4->VAR6[VAR5] != VAR7) {  
+VAR2->VAR8 -= VAR4->VAR6[VAR5];  
+VAR2->VAR9--;  
+}
+else {  
+FUN2(VAR4->VAR10[VAR2->VAR11 - 1].VAR5 == VAR5);
+VAR2->VAR11--;  
+VAR2->VAR9 = VAR12 + 1;  
+}
+}

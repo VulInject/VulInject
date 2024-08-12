@@ -1,0 +1,78 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+size_t VAR3 = VAR2->VAR4.VAR5;
+char VAR6[1024];
+clock_t VAR7 = FUN2();
+struct copy_rock VAR8;
+int VAR9 = 0;
+
+VAR9 = FUN3(VAR2, VAR2->VAR10);
+if (VAR9) {
+syslog(VAR11, "",
+FUN4(VAR2));
+FUN5(VAR2);
+return VAR9;
+}
+
+
+snprintf(VAR6, sizeof(VAR6), "", FUN4(VAR2));
+FUN6(VAR6);
+
+VAR8.VAR2 = NULL;
+VAR8.VAR12 = NULL;
+VAR9 = FUN7(VAR6, VAR2->VAR13 | VAR14, &VAR8.VAR2, &VAR8.VAR12);
+if (VAR9) return VAR9;
+
+VAR9 = FUN8(VAR2, NULL, 0, NULL, VAR15, &VAR8, &VAR2->VAR10);
+if (VAR9) goto VAR16;
+
+VAR9 = FUN3(VAR8.VAR2, VAR8.VAR12);
+if (VAR9) {
+syslog(VAR11, "",
+FUN4(VAR2));
+goto VAR16;
+}
+
+
+VAR8.VAR2->VAR4.VAR17 = VAR8.VAR2->VAR18;
+
+
+VAR8.VAR2->VAR4.VAR19 = VAR2->VAR4.VAR19 + 1;
+
+VAR9 = FUN9(VAR8.VAR2, VAR8.VAR12);
+if (VAR9) goto VAR16;
+
+VAR8.VAR12 = NULL;  
+
+
+VAR9 = FUN10(VAR8.VAR2->VAR20, FUN4(VAR2));
+if (VAR9) goto VAR16;
+
+
+FUN5(VAR2);
+
+
+FUN11(&VAR2->VAR20);
+FUN12(&VAR2->VAR21.VAR22);
+
+*VAR2 = *VAR8.VAR2;
+free(VAR8.VAR2); 
+
+{
+syslog(VAR23,
+"",
+FUN4(VAR2), (VAR24)VAR2->VAR4.VAR25,
+VAR2->VAR4.VAR25 == 1 ? "" : "", (VAR24)VAR3,
+(VAR24)(VAR2->VAR4.VAR5),
+(FUN2() - VAR7) / (double) VAR26);
+}
+
+return 0;
+
+VAR16:
+if (VAR8.VAR12) FUN13(VAR8.VAR2, VAR8.VAR12);
+FUN6(FUN4(VAR8.VAR2));
+FUN14(VAR8.VAR2);
+FUN5(VAR2);
+return VAR27;
+}

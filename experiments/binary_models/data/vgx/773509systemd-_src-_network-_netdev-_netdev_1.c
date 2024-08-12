@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( VAR1 * VAR2 ) { assert ( VAR2 ) ; FUN2 ( VAR2 ) ; free ( VAR2 -> VAR3 ) ; free ( VAR2 -> VAR4 ) ; FUN3 ( VAR2 -> VAR5 ) ; if ( VAR2 -> VAR6 != VAR7 && FUN4 ( VAR2 ) && FUN4 ( VAR2 ) -> VAR8 ) { FUN4 ( VAR2 ) -> FUN5 ( VAR2 ) ; } return FUN6 ( VAR2 ) ; }

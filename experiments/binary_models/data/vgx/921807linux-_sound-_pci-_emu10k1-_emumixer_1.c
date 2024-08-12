@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( struct VAR2 * VAR3 , const char * VAR4 ) { struct snd_ctl_elem_id VAR5 ; strcpy ( VAR5 . VAR4 , VAR4 ) ; VAR5 . VAR6 = VAR7 ; return FUN2 ( VAR3 , & VAR5 ) ; }

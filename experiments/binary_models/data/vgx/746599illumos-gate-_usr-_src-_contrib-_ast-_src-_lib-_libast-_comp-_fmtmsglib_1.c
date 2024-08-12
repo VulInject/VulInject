@@ -1,0 +1,1 @@
+static char * FUN1 ( register const VAR1 * VAR2 , int VAR3 , int VAR4 ) { while ( VAR2 -> VAR5 ) { VAR2 ++ ; } return 0 ; }

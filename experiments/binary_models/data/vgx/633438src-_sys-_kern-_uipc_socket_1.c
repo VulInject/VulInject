@@ -1,0 +1,1 @@
+int FUN1 ( struct socket * VAR1 , struct VAR2 * VAR3 , struct VAR4 * VAR5 ) { return FUN2 ( VAR1 , VAR3 , VAR5 ) ; }

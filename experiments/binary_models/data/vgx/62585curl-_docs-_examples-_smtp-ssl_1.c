@@ -1,0 +1,1 @@
+static size_t FUN1 ( char * VAR1 , size_t VAR2 , size_t VAR3 , void * VAR4 ) { struct VAR5 * VAR6 = ( VAR5 * ) VAR4 ; const char * VAR7 ; size_t VAR8 = VAR2 * VAR3 ; VAR7 = & VAR9 [ VAR6 -> VAR10 ] ; if ( VAR7 ) { size_t VAR11 = strlen ( VAR7 ) ; if ( VAR8 < VAR11 ) { VAR11 = VAR8 ; } memcpy ( VAR1 , VAR7 , VAR11 ) ; VAR6 -> VAR10 += VAR11 ; return VAR11 ; } return 0 ; }

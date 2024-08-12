@@ -1,0 +1,6 @@
+static void FUN1(const VAR1 *VAR2)
+{
+    FUN2(VAR2->VAR3, VAR2->VAR4 + VAR5, 0x0008);
+    FUN2(VAR2->VAR3, VAR2->VAR4 + VAR6, 0x0002);
+    FUN2(VAR2->VAR3, VAR2->VAR4 + VAR6, 0x0004);
+}

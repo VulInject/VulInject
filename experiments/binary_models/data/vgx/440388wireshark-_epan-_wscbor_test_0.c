@@ -1,0 +1,39 @@
+static void
+FUN1(void)
+{
+const VAR1 * VAR2[] = {
+&VAR3, &VAR4,
+};
+for (size_t VAR5 = 0; VAR5 < (sizeof(VAR2) / sizeof(VAR1*)); ++VAR5) {
+const VAR1 *VAR6 = VAR2[VAR5];
+FUN2("", VAR5);
+
+VAR7 *VAR8 = FUN3(VAR6->VAR9, VAR6->VAR10, VAR6->VAR10);
+gint VAR11 = 0;
+
+VAR12 *VAR13 = FUN4(VAR14, VAR8, &VAR11);
+FUN5(VAR13);
+FUN6(FUN7(VAR13), ==, 0);
+FUN6(VAR13->VAR15, ==, VAR6->VAR15);
+FUN6(VAR13->VAR16, ==, VAR6->VAR16);
+
+const VAR17 *VAR18 = FUN8(VAR14, VAR13);
+if (VAR6->VAR15 == VAR19) {
+FUN5(VAR18);
+FUN6(FUN7(VAR13), ==, 1);
+FUN9(*VAR18, ==, VAR20);
+}
+else if (VAR6->VAR15 == VAR21) {
+FUN5(VAR18);
+FUN6(FUN7(VAR13), ==, 1);
+FUN9(*VAR18, ==, VAR22);
+}
+else {
+FUN10(VAR18);
+FUN6(FUN7(VAR13), ==, 1);
+}
+
+FUN11(VAR13);
+FUN12(VAR8);
+}
+}

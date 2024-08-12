@@ -1,0 +1,1 @@
+static bool FUN1 ( VAR1 * VAR2 , const char * VAR3 ) { char * VAR4 = FUN2 ( VAR2 -> VAR5 ) ; if ( ! VAR4 ) { return false ; } char * VAR6 = FUN2 ( VAR3 ) ; if ( ! VAR6 ) { free ( VAR4 ) ; return false ; } int VAR7 = FUN3 ( ""%VAR8\""%VAR8\"" , VAR4 , VAR6 ) ; free ( VAR4 ) ; return ! VAR7 ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( const char * VAR1 , char * VAR2 ) { int VAR3 = VAR4 - 1 ; while ( * VAR1 ) { if ( ! VAR3 ) { * VAR2 = 0 ; return ( - 1 ) ; } switch ( * VAR1 ) { case '' : case ''''$''#''*''('')''\\' ; VAR3 -- ; default : * VAR2 ++ = * VAR1 ++ ; VAR3 -- ; } } * VAR2 = 0 ; return ( 0 ) ; }

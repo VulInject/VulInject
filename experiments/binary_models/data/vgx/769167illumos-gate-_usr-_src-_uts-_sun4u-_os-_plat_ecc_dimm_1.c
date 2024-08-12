@@ -1,0 +1,1 @@
+static void FUN1 ( uint32_t VAR1 ) { int VAR2 ; int VAR3 ; for ( VAR2 = 0 ; VAR2 < FUN2 ( ) ; VAR2 ++ ) { VAR3 = FUN3 ( VAR2 ) ; if ( VAR3 ) { FUN4 ( & VAR4 [ VAR2 ] . VAR5 ) ; VAR4 [ VAR2 ] . VAR6 = VAR7 ; FUN5 ( & VAR4 [ VAR2 ] . VAR5 ) ; } } }

@@ -1,0 +1,32 @@
+static struct VAR1 * FUN1(char * VAR2)
+{
+struct VAR1 * VAR3;
+struct VAR4 * VAR5;
+int VAR6;
+
+
+VAR3 = FUN2(sizeof(*VAR5));
+if (!VAR3) return NULL;
+VAR3->VAR7 = VAR8;
+VAR3->VAR9 = VAR10;
+VAR3->VAR11 = VAR12;
+VAR3->VAR13 = VAR14;
+VAR3->VAR15 = VAR16;
+VAR3->VAR17 = VAR18;
+VAR3->VAR19 = VAR20;
+VAR3->VAR21 = VAR22;
+
+
+VAR6 = FUN3(VAR3, VAR2);
+if (VAR6 == -1)
+{
+FUN4(VAR3);
+return NULL;
+}
+
+
+VAR5 = FUN5(VAR3);
+VAR5->VAR23 = VAR6;
+
+return VAR3;
+}

@@ -1,0 +1,1 @@
+static void FUN1 ( char * VAR1 ) extern int VAR2 ; static ulg VAR3 ; static ulg VAR4 ; int FUN2 ( void ) { if ( VAR5 != 0 ) { FUN1 ( "" ) ; } VAR6 = VAR7 ; VAR5 = VAR8 ; return VAR6 [ 0 ] ; }

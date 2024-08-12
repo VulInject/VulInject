@@ -1,0 +1,1 @@
+static char *FUN1(void *VAR1) { return FUN2(FUN3(VAR1)); }

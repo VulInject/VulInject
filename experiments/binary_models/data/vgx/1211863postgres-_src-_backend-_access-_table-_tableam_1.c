@@ -1,0 +1,1 @@
+bool FUN1 ( Relation VAR1 , ItemPointer VAR2 , Snapshot VAR3 , bool * VAR4 ) { VAR5 * VAR6 ; VAR7 * VAR8 ; bool VAR9 = false ; bool VAR10 ; VAR8 = FUN2 ( VAR1 , NULL ) ; VAR6 = FUN3 ( VAR1 ) ; VAR10 = FUN4 ( VAR6 , VAR2 , VAR3 , VAR8 , & VAR9 , VAR4 ) ; FUN5 ( VAR6 ) ; FUN6 ( VAR8 , NULL ) ; return VAR10 ; }

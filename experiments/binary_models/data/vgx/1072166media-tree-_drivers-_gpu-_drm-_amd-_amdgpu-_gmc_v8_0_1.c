@@ -1,0 +1,1 @@
+static bool FUN1 ( void * VAR1 ) { struct VAR2 * VAR3 = ( VAR2 * ) VAR1 ; u32 VAR4 = FUN2 ( VAR5 ) ; return true ; }

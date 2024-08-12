@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { struct VAR5 * VAR6 = FUN2 ( VAR4 ) ; FUN3 ( VAR4 , NULL ) ; FUN4 ( VAR4 , VAR4 -> VAR7 + sizeof ( VAR8 ) + VAR2 -> VAR9 . VAR10 ) ; if ( VAR6 -> VAR11 & VAR12 ) { FUN5 ( VAR4 ) ; VAR4 -> VAR13 -= VAR2 -> VAR9 . VAR10 ; } }

@@ -1,0 +1,26 @@
+bool
+FUN1(Oid VAR1)
+{
+Relation	VAR2;
+ScanKeyData VAR3;
+SysScanDesc VAR4;
+HeapTuple	VAR5;
+bool		VAR6 = false;
+
+VAR2 = FUN2(VAR7, VAR8);
+FUN3(&VAR3,
+VAR9,
+VAR10, VAR11,
+FUN4(VAR1));
+
+VAR4 = FUN5(VAR2,
+VAR12,
+true, NULL, 1, &VAR3);
+VAR5 = FUN6(VAR4);
+VAR6 = FUN7(VAR5);
+
+FUN8(VAR4);
+FUN9(VAR2, VAR8);
+
+return VAR6;
+}

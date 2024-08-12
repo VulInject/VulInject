@@ -1,0 +1,1 @@
+static int FUN1 ( unsigned VAR1 , unsigned VAR2 ) { if ( VAR1 & ( VAR2 << VAR3 ) ) { return ( 1 ) ; } return ( ( VAR1 & ( VAR2 << VAR4 ) ) && VAR5 == 0 ) ; }

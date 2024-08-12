@@ -1,0 +1,110 @@
+FUN1 (VAR1		*VAR2,
+VAR3	*VAR4)
+
+
+{
+cairo_truetype_subset_t VAR5;
+cairo_status_t VAR6;
+unsigned int VAR7, VAR8, VAR9;
+
+VAR6 = FUN2 (&VAR5, VAR4);
+if (FUN3 (VAR6))
+return VAR6;
+
+
+
+FUN4 (VAR2->VAR10,
+"");
+
+FUN4 (VAR2->VAR10,
+"",
+VAR5.VAR11);
+FUN4 (VAR2->VAR10,
+""
+""
+""
+""
+""
+""
+""
+"",
+VAR5.VAR11);
+
+
+
+if (VAR4->VAR12) {
+for (VAR7 = 1; VAR7 < 256; VAR7++) {
+if (VAR4->VAR13[VAR7] > 0) {
+if (VAR4->VAR14 != NULL) {
+FUN4 (VAR2->VAR10,
+"",
+VAR7, VAR4->VAR14[VAR4->VAR13[VAR7]]);
+} else {
+FUN4 (VAR2->VAR10,
+"", VAR7, VAR4->VAR13[VAR7]);
+}
+}
+}
+} else {
+for (VAR7 = 1; VAR7 < VAR4->VAR15; VAR7++) {
+if (VAR4->VAR14 != NULL) {
+FUN4 (VAR2->VAR10,
+"",
+VAR7, VAR4->VAR14[VAR7]);
+} else {
+FUN4 (VAR2->VAR10,
+"", VAR7, VAR7);
+}
+}
+}
+
+FUN4 (VAR2->VAR10,
+""
+"",
+VAR4->VAR15);
+
+for (VAR7 = 1; VAR7 < VAR4->VAR15; VAR7++) {
+if (VAR4->VAR14 != NULL) {
+FUN4 (VAR2->VAR10,
+"",
+VAR4->VAR14[VAR7], VAR7);
+} else {
+FUN4 (VAR2->VAR10,
+"", VAR7, VAR7);
+}
+}
+
+FUN4 (VAR2->VAR10,
+"");
+
+FUN4 (VAR2->VAR10,
+"");
+VAR8 = 0;
+VAR9 = 0;
+for (VAR7 = 0; VAR7 < VAR5.VAR16; VAR7++) {
+VAR9 = VAR5.VAR17[VAR7];
+FUN4 (VAR2->VAR10,"");
+FUN5 (VAR2->VAR10,
+VAR5.VAR18 + VAR8, VAR9 - VAR8);
+FUN4 (VAR2->VAR10,"");
+VAR8 = VAR9;
+}
+if (VAR5.VAR19 > VAR9) {
+FUN4 (VAR2->VAR10,"");
+FUN5 (VAR2->VAR10,
+VAR5.VAR18 + VAR9, VAR5.VAR19 - VAR9);
+FUN4 (VAR2->VAR10,"");
+}
+
+FUN4 (VAR2->VAR10,
+""
+"",
+VAR4->VAR20,
+VAR4->VAR21);
+FUN4 (VAR2->VAR10,
+"");
+FUN6 (&VAR5);
+
+
+return VAR22;
+}

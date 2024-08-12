@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( VAR2 * * VAR3 , int * VAR4 ) static VAR2 * * FUN2 ( VAR1 * VAR5 , int * VAR4 ) static int FUN3 ( char * VAR6 , char * VAR7 , char * VAR8 , char * * VAR9 , int * VAR10 , int * VAR4 ) void FUN4 ( dm_descriptor_t VAR11 ) { VAR2 * VAR12 ; if ( VAR11 == 0 ) { return ; } VAR12 = ( VAR2 * ) ( VAR13 ) VAR11 ; FUN5 ( ) ; FUN6 ( ) ; }

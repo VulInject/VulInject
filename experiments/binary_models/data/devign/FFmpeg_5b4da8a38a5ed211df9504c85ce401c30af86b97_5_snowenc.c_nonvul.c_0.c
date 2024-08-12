@@ -1,0 +1,214 @@
+static int FUN1(VAR1 *VAR2, int VAR3, int VAR4, int VAR5)
+{
+    uint8_t VAR6[1024];
+    uint8_t VAR7[1024];
+    uint8_t VAR8[sizeof(VAR2->VAR9)];
+    uint8_t VAR10[sizeof(VAR2->VAR9)];
+    RangeCoder VAR11, VAR12;
+    VAR13 *VAR14 = VAR2->VAR15.VAR16;
+    VAR13 *VAR17 = VAR2->VAR15.VAR18;
+    int VAR19, VAR20, VAR21, VAR22, VAR23, VAR24, VAR25, VAR26;
+    const int VAR27 = VAR2->VAR28 << VAR2->VAR29;
+    const int VAR30 = VAR2->VAR31 << VAR2->VAR29;
+    const int VAR32 = VAR2->VAR29 - VAR3;
+    const int VAR33 = (VAR4 + VAR5 * VAR27) << VAR32;
+    const int VAR34 = 1 << (VAR35 - VAR3);
+    int VAR36 = (VAR4 + 1) << VAR32;
+    int try = (VAR5 + 1) << VAR32;
+    const VAR37 *VAR38 = VAR4 ? &VAR2->VAR39[VAR33 - 1] : &VAR40;
+    const VAR37 *VAR41 = VAR5 ? &VAR2->VAR39[VAR33 - VAR27] : &VAR40;
+    const VAR37 *VAR42 = VAR36 < VAR27 ? &VAR2->VAR39[VAR33 + 1] : &VAR40;
+    const VAR37 *VAR43 = try < VAR30 ? &VAR2->VAR39[VAR33 + VAR27] : &VAR40;
+    const VAR37 *VAR44 = VAR5 && VAR4 ? &VAR2->VAR39[VAR33 - VAR27 - 1] : VAR38;
+    const VAR37 *VAR45 = VAR5 && VAR36 < VAR27 && ((VAR4 & 1) == 0 || VAR3 == 0) ? &VAR2->VAR39[VAR33 - VAR27 + (1 << VAR32)] : VAR44;
+    int VAR46 = VAR38->VAR47[0];
+    int VAR48 = VAR38->VAR47[1];
+    int VAR49 = VAR38->VAR47[2];
+    int VAR50, VAR51;
+    int VAR52 = 0, VAR53 = 0;
+    int VAR54, VAR55, VAR56;
+    const int VAR57 = VAR2->VAR58->VAR59[0];
+    const int VAR60 = VAR2->VAR58->VAR59[1];
+    VAR13 *VAR61[3] = {VAR2->VAR62->VAR63[0] + (VAR4 + VAR5 * VAR57) * VAR34, VAR2->VAR62->VAR63[1] + ((VAR4 * VAR34) >> VAR2->VAR64) + ((VAR5 * VAR60 * VAR34) >> VAR2->VAR65), VAR2->VAR62->VAR63[2] + ((VAR4 * VAR34) >> VAR2->VAR64) + ((VAR5 * VAR60 * VAR34) >> VAR2->VAR65)};
+    int VAR66[10][2];
+    int16_t VAR67[3][2];
+    int VAR68 = !!(VAR2->VAR69->VAR70 & VAR71);
+    const int VAR72 = 1 + VAR68;
+    VAR73 *VAR15 = &VAR2->VAR74.VAR75;
+    int VAR76 = FUN2(2 * VAR38->VAR77) + FUN2(2 * VAR41->VAR77);
+    int VAR78 = FUN2(2 * FUN3(VAR38->VAR52 - VAR41->VAR52));
+    int VAR79 = FUN2(2 * FUN3(VAR38->VAR53 - VAR41->VAR53));
+    int VAR80 = 2 * VAR38->VAR3 + 2 * VAR41->VAR3 + VAR44->VAR3 + VAR45->VAR3;
+    int VAR77, VAR81, VAR82, VAR83, VAR84;
+    FUN4(sizeof(VAR2->VAR9) >= 256);
+    if (VAR2->VAR85)
+    {
+        FUN5(VAR2, VAR3, VAR4, VAR5, VAR46, VAR48, VAR49, 0, 0, 0, VAR86);
+        return 0;
+    }
+    VAR87[0] = VAR38->VAR52;
+    VAR87[1] = VAR38->VAR53;
+    VAR88[0] = VAR41->VAR52;
+    VAR88[1] = VAR41->VAR53;
+    VAR89[0] = VAR45->VAR52;
+    VAR89[1] = VAR45->VAR53;
+    VAR67[0][0] = VAR2->VAR39[VAR33].VAR52;
+    VAR67[0][1] = VAR2->VAR39[VAR33].VAR53;
+    VAR67[1][0] = VAR42->VAR52;
+    VAR67[1][1] = VAR42->VAR53;
+    VAR67[2][0] = VAR43->VAR52;
+    VAR67[2][1] = VAR43->VAR53;
+    VAR2->VAR74.VAR90 = 2;
+    VAR2->VAR74.VAR91 = VAR2->VAR74.VAR92 = 0;
+    VAR15->VAR93 = 0;
+    FUN6(VAR15->VAR57 == VAR57);
+    FUN6(VAR15->VAR60 == VAR60);
+    VAR15->VAR94 = FUN7(VAR2->VAR95, VAR2->VAR96, VAR15->VAR69->VAR97);
+    VAR15->VAR98 = FUN7(VAR2->VAR95, VAR2->VAR96, VAR15->VAR69->VAR99);
+    VAR15->VAR100 = FUN7(VAR2->VAR95, VAR2->VAR96, VAR15->VAR69->VAR101);
+    VAR15->VAR102 = VAR15->VAR103[VAR2->VAR74.VAR104 = 1] + VAR105;
+    VAR15->VAR106 = -VAR4 * VAR34 - 16 + 3;
+    VAR15->VAR107 = -VAR5 * VAR34 - 16 + 3;
+    VAR15->VAR108 = -(VAR4 + 1) * VAR34 + (VAR27 << (VAR35 - VAR2->VAR29)) + 16 - 3;
+    VAR15->VAR109 = -(VAR5 + 1) * VAR34 + (VAR30 << (VAR35 - VAR2->VAR29)) + 16 - 3;
+    if (VAR87[0] > (VAR15->VAR108 << VAR72))
+        VAR87[0] = (VAR15->VAR108 << VAR72);
+    if (VAR87[1] > (VAR15->VAR109 << VAR72))
+        VAR87[1] = (VAR15->VAR109 << VAR72);
+    if (VAR88[0] > (VAR15->VAR108 << VAR72))
+        VAR88[0] = (VAR15->VAR108 << VAR72);
+    if (VAR88[1] > (VAR15->VAR109 << VAR72))
+        VAR88[1] = (VAR15->VAR109 << VAR72);
+    if (VAR89[0] < (VAR15->VAR106 << VAR72))
+        VAR89[0] = (VAR15->VAR106 << VAR72);
+    if (VAR89[0] > (VAR15->VAR108 << VAR72))
+        VAR89[0] = (VAR15->VAR108 << VAR72);
+    if (VAR89[1] > (VAR15->VAR109 << VAR72))
+        VAR89[1] = (VAR15->VAR109 << VAR72);
+    VAR110[0] = FUN8(VAR87[0], VAR88[0], VAR89[0]);
+    VAR110[1] = FUN8(VAR87[1], VAR88[1], VAR89[1]);
+    if (!VAR5)
+    {
+        VAR15->VAR111 = VAR87[0];
+        VAR15->VAR112 = VAR87[1];
+    }
+    else
+    {
+        VAR15->VAR111 = VAR110[0];
+        VAR15->VAR112 = VAR110[1];
+    }
+    VAR19 = VAR113;
+    VAR81 = 0;
+    for (VAR77 = 0; VAR77 < VAR2->VAR114; VAR77++)
+    {
+        FUN9(VAR15, VAR61, VAR2->VAR115[VAR77]->VAR63, NULL, VAR34 * VAR4, VAR34 * VAR5, 0);
+        VAR82 = FUN10(&VAR2->VAR74, &VAR83, &VAR84, VAR66, 0, 0, VAR67, (1 << 16) >> VAR72, VAR3 - VAR35 + 4, VAR34);
+        FUN11(VAR83 >= VAR15->VAR106);
+        FUN11(VAR83 <= VAR15->VAR108);
+        FUN11(VAR84 >= VAR15->VAR107);
+        FUN11(VAR84 <= VAR15->VAR109);
+        VAR82 = VAR15->FUN12(&VAR2->VAR74, &VAR83, &VAR84, VAR82, 0, 0, VAR3 - VAR35 + 4, VAR34);
+        VAR82 = FUN13(&VAR2->VAR74, VAR83, VAR84, 0, 0, VAR3 - VAR35 + 4, VAR34, 0);
+        VAR82 += 2 * FUN2(2 * VAR77) * VAR15->VAR94;
+        if (VAR2->VAR116[VAR77])
+        {
+            VAR2->VAR116[VAR77][VAR33][0] = VAR83;
+            VAR2->VAR116[VAR77][VAR33][1] = VAR84;
+            VAR2->VAR117[VAR77][VAR33] = VAR82;
+        }
+        if (VAR19 > VAR82)
+        {
+            VAR19 = VAR82;
+            VAR81 = VAR77;
+            VAR52 = VAR83;
+            VAR53 = VAR84;
+        }
+    }
+    VAR26 = FUN14(&VAR2->VAR15) - 8 * (VAR2->VAR15.VAR16 - VAR2->VAR15.VAR18);
+    VAR11 = VAR2->VAR15;
+    VAR11.VAR18 = VAR11.VAR16 = VAR6;
+    memcpy(VAR8, VAR2->VAR9, sizeof(VAR2->VAR9));
+    if (VAR3 != VAR2->VAR29)
+        FUN15(&VAR11, &VAR8[4 + VAR80], 1);
+    FUN15(&VAR11, &VAR8[1 + VAR38->VAR118 + VAR41->VAR118], 0);
+    if (VAR2->VAR114 > 1)
+        FUN16(&VAR11, &VAR8[128 + 1024 + 32 * VAR76], VAR81, 0);
+    FUN17(VAR2, &VAR50, &VAR51, VAR81, VAR38, VAR41, VAR45);
+    FUN16(&VAR11, &VAR8[128 + 32 * (VAR78 + 16 * !!VAR81)], VAR52 - VAR50, 1);
+    FUN16(&VAR11, &VAR8[128 + 32 * (VAR79 + 16 * !!VAR81)], VAR53 - VAR51, 1);
+    VAR23 = VAR11.VAR16 - VAR11.VAR18;
+    VAR19 += (VAR2->VAR96 * (FUN14(&VAR11) - VAR26)) >> VAR119;
+    VAR24 = VAR34 * VAR34;
+    VAR25 = FUN18(VAR61[0], VAR57, VAR34, VAR34);
+    VAR54 = (VAR25 + VAR24 / 2) / VAR24;
+    VAR21 = FUN19(VAR61[0], VAR57, VAR34) - 2 * VAR54 * VAR25 + VAR54 * VAR54 * VAR24;
+    if (VAR2->VAR120 > 2)
+    {
+        VAR24 = VAR34 * VAR34 >> (VAR2->VAR64 + VAR2->VAR65);
+        VAR25 = FUN18(VAR61[1], VAR60, VAR34 >> VAR2->VAR64, VAR34 >> VAR2->VAR65);
+        VAR56 = (VAR25 + VAR24 / 2) / VAR24;
+        VAR25 = FUN18(VAR61[2], VAR60, VAR34 >> VAR2->VAR64, VAR34 >> VAR2->VAR65);
+        VAR55 = (VAR25 + VAR24 / 2) / VAR24;
+    }
+    else
+        VAR56 = VAR55 = 0;
+    VAR12 = VAR2->VAR15;
+    VAR12.VAR18 = VAR12.VAR16 = VAR7;
+    memcpy(VAR10, VAR2->VAR9, sizeof(VAR2->VAR9));
+    if (VAR3 != VAR2->VAR29)
+        FUN15(&VAR12, &VAR10[4 + VAR80], 1);
+    FUN15(&VAR12, &VAR10[1 + VAR38->VAR118 + VAR41->VAR118], 1);
+    FUN16(&VAR12, &VAR10[32], VAR54 - VAR46, 1);
+    if (VAR2->VAR120 > 2)
+    {
+        FUN16(&VAR12, &VAR10[64], VAR56 - VAR48, 1);
+        FUN16(&VAR12, &VAR10[96], VAR55 - VAR49, 1);
+    }
+    VAR22 = VAR12.VAR16 - VAR12.VAR18;
+    VAR21 += (VAR2->VAR96 * (FUN14(&VAR12) - VAR26)) >> VAR119;
+    FUN6(VAR21 < 255 * 255 * 256 + VAR2->VAR96 * 10);
+    FUN6(VAR21 >= 0);
+    FUN6(VAR54 >= 0 && VAR54 <= 255);
+    FUN6(VAR46 >= 0 && VAR46 <= 255);
+    if (VAR3 == 0)
+    {
+        int VAR121 = VAR21 >> 8;
+        int VAR122 = VAR19 >> 8;
+        if (VAR122 <= 64 || VAR122 < VAR121)
+            VAR15->VAR123 += FUN20(VAR122) - FUN20(VAR121);
+        else
+            VAR15->VAR123 += VAR2->VAR74.VAR124;
+    }
+    if (VAR3 != VAR2->VAR29)
+    {
+        FUN15(&VAR2->VAR15, &VAR2->VAR9[4 + VAR80], 0);
+        VAR20 = FUN1(VAR2, VAR3 + 1, 2 * VAR4 + 0, 2 * VAR5 + 0);
+        VAR20 += FUN1(VAR2, VAR3 + 1, 2 * VAR4 + 1, 2 * VAR5 + 0);
+        VAR20 += FUN1(VAR2, VAR3 + 1, 2 * VAR4 + 0, 2 * VAR5 + 1);
+        VAR20 += FUN1(VAR2, VAR3 + 1, 2 * VAR4 + 1, 2 * VAR5 + 1);
+        VAR20 += VAR2->VAR96 >> VAR119;
+        if (VAR20 < VAR19 && VAR20 < VAR21)
+            return VAR20;
+    }
+    if (VAR21 < VAR19)
+    {
+        FUN17(VAR2, &VAR50, &VAR51, 0, VAR38, VAR41, VAR45);
+        memcpy(VAR14, VAR7, VAR22);
+        VAR2->VAR15 = VAR12;
+        VAR2->VAR15.VAR18 = VAR17;
+        VAR2->VAR15.VAR16 = VAR14 + VAR22;
+        FUN5(VAR2, VAR3, VAR4, VAR5, VAR54, VAR56, VAR55, VAR50, VAR51, 0, VAR86);
+        memcpy(VAR2->VAR9, VAR10, sizeof(VAR2->VAR9));
+        return VAR21;
+    }
+    else
+    {
+        memcpy(VAR14, VAR6, VAR23);
+        VAR2->VAR15 = VAR11;
+        VAR2->VAR15.VAR18 = VAR17;
+        VAR2->VAR15.VAR16 = VAR14 + VAR23;
+        FUN5(VAR2, VAR3, VAR4, VAR5, VAR46, VAR48, VAR49, VAR52, VAR53, VAR81, 0);
+        memcpy(VAR2->VAR9, VAR8, sizeof(VAR2->VAR9));
+        return VAR19;
+    }
+}

@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * VAR2 ; gint VAR3 ; gboolean VAR4 = VAR5 ; VAR2 = FUN2 ( VAR6 , NULL , NULL ) ; if ( ! VAR2 ) { return VAR4 ; } for ( VAR3 = 0 ; VAR3 < VAR2 -> VAR7 ; VAR3 ++ ) { if ( strcmp ( VAR2 -> VAR8 [ VAR3 ] . VAR9 , "" ) == 0 ) { VAR4 = VAR10 ; break ; } } return VAR4 ; }

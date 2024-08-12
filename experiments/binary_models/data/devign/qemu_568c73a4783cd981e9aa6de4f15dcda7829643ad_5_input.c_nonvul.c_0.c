@@ -1,0 +1,9 @@
+VAR1 *FUN1(InputButton VAR2, bool VAR3)
+{
+    VAR1 *VAR4 = FUN2(VAR1, 1);
+    VAR4->VAR5.VAR2 = FUN2(VAR6, 1);
+    VAR4->VAR7 = VAR8;
+    VAR4->VAR5.VAR2->VAR9 = VAR2;
+    VAR4->VAR5.VAR2->VAR3 = VAR3;
+    return VAR4;
+}

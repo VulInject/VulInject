@@ -1,0 +1,1 @@
+static int FUN1 ( hashf_t VAR1 ) { if ( VAR1 == VAR2 ) { return VAR3 ; } if ( VAR1 == VAR4 ) { return VAR5 ; } FUN2 ( ) ; return 0 ; }

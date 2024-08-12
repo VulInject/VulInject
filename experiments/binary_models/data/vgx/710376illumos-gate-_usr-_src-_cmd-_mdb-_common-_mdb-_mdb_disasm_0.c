@@ -1,0 +1,36 @@
+VAR1 *
+FUN1(VAR2 *VAR3)
+{
+VAR1 *VAR4 = FUN2(sizeof (VAR1), VAR5);
+
+if ((VAR4->VAR6 = VAR7.VAR8) == NULL)
+VAR4->VAR6 = &VAR7.VAR9;
+
+if (FUN3(VAR4) == 0) {
+VAR10 *VAR11 = FUN4(&VAR7.VAR12, VAR4->VAR13);
+
+if (VAR11 != NULL) {
+VAR4->VAR14->FUN5(VAR4);
+FUN6(VAR4, sizeof (VAR1));
+(void) FUN7(VAR15);
+return (NULL);
+}
+
+(void) FUN8(&VAR7.VAR12, VAR4->VAR13, NULL,
+(VAR16)VAR4, VAR17 | VAR18);
+
+if (VAR7.VAR19 == NULL) {
+VAR7.VAR19 = VAR4;
+} else if (VAR7.VAR20 != NULL &&
+strcmp(VAR7.VAR20, VAR4->VAR13) == 0) {
+VAR7.VAR19 = VAR4;
+FUN9(VAR7.VAR20);
+VAR7.VAR20 = NULL;
+}
+
+return (VAR4);
+}
+
+FUN6(VAR4, sizeof (VAR1));
+return (NULL);
+}

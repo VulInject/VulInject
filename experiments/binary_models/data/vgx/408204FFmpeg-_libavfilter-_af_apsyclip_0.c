@@ -1,0 +1,29 @@
+static int FUN1(VAR1 *VAR2)
+{
+VAR3 *VAR4 = VAR2->VAR5[0];
+VAR3 *VAR6 = VAR2->VAR7[0];
+VAR8 *VAR9 = VAR2->VAR10;
+VAR11 *VAR12 = NULL;
+int VAR13 = 0, VAR14;
+int64_t VAR15;
+
+FUN2(VAR6, VAR4);
+
+VAR13 = FUN3(VAR4, VAR9->VAR16, VAR9->VAR16, &VAR12);
+if (VAR13 < 0)
+return VAR13;
+
+if (VAR13 > 0) {
+return FUN4(VAR4, VAR12);
+} else if (FUN5(VAR4, &VAR14, &VAR15)) {
+FUN6(VAR6, VAR14, VAR15);
+return 0;
+} else {
+if (FUN7(VAR4) >= VAR9->VAR16) {
+FUN8(VAR2, 10);
+} else if (FUN9(VAR6)) {
+FUN10(VAR4);
+}
+return 0;
+}
+}

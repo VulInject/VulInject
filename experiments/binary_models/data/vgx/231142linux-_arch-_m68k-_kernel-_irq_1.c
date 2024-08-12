@@ -1,0 +1,1 @@
+asmlinkage void FUN1 ( int VAR1 , struct VAR2 * VAR3 ) { struct VAR2 * VAR4 = FUN2 ( VAR3 ) ; FUN3 ( ) ; FUN4 ( VAR1 , NULL ) ; FUN5 ( ) ; FUN2 ( VAR4 ) ; } atomic_t VAR5 ; int FUN6 ( struct VAR6 * VAR7 , int VAR8 ) { FUN7 ( VAR7 , "" , VAR8 , "" , FUN8 ( & VAR5 ) ) ; return 0 ; }

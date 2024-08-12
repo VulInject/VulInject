@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 , struct VAR2 * , VAR3 * ) FUN2 ( VAR4 , NULL ) ; int FUN1 ( clockid_t VAR5 , struct VAR2 * VAR6 , VAR3 * VAR7 ) { VAR8 = VAR9 ; return - 1 ; }

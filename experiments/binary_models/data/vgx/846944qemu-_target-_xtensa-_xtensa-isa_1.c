@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( xtensa_isa VAR2 , xtensa_opcode VAR3 , int VAR4 ) { VAR5 * VAR6 = ( VAR5 * ) VAR2 ; FUN2 ( VAR6 , VAR3 ) ; if ( VAR4 < 0 || VAR4 >= VAR6 -> VAR7 [ VAR3 ] . VAR8 ) { VAR9 = VAR10 ; sprintf ( VAR11 , "" ""%VAR12\"" , VAR4 , VAR6 -> VAR7 [ VAR3 ] . VAR13 , VAR6 -> VAR7 [ VAR3 ] . VAR8 ) ; return NULL ; } return & VAR6 -> VAR7 [ VAR3 ] . VAR14 [ VAR4 ] ; }

@@ -1,0 +1,33 @@
+static void
+FUN1(
+struct VAR1 *VAR1,
+VAR2 *VAR3,
+size_t VAR4
+)
+{
+long VAR5, VAR6, VAR7;
+double VAR8, VAR9, VAR10;
+
+
+VAR5 = FUN2(&VAR3[4]);
+VAR6 = FUN2(&VAR3[8]);
+VAR7  = FUN2(&VAR3[12]);  
+
+VAR8 = VAR5;
+VAR9 = VAR6;
+VAR10  = VAR7;
+
+VAR8 /= 3600000;
+VAR9 /= 3600000;
+VAR10  /= 100;
+
+FUN3(VAR1, VAR11,
+"", VAR8,
+VAR9, VAR10);
+
+VAR1->VAR12  = VAR5;
+VAR1->VAR13 = VAR6;
+VAR1->VAR14   = VAR7;
+
+FUN4(VAR1);
+}

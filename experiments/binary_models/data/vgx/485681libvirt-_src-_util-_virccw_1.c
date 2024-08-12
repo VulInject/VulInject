@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( const char * VAR2 ) { g_autofree VAR1 * VAR3 = NULL ; VAR3 = FUN2 ( VAR1 , 1 ) ; if ( FUN3 ( VAR2 , & VAR3 -> VAR4 , & VAR3 -> VAR5 , & VAR3 -> VAR6 ) < 0 ) { FUN4 ( VAR7 , FUN5 ( "" ) , VAR2 ) ; return NULL ; } return FUN6 ( & VAR3 ) ; }

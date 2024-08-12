@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { uint8_t VAR1 [ 20 ] ; VAR1 [ 0 ] = 3 ; VAR1 [ 1 ] = VAR2 ; VAR1 [ 2 ] = 0x68 ; VAR1 [ 3 ] = 0x42 ; FUN2 ( VAR3 , VAR1 , 4 , VAR4 , VAR2 , 0x6842 ) ; }

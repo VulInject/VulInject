@@ -1,0 +1,36 @@
+void
+FUN1(void)
+{
+long    VAR1 = 0L;	
+
+VAR2 = 0;
+FUN2(VAR3, 0L, VAR4);
+
+while (fread(&VAR5, VAR6, 1, VAR3) == 1) {
+if (VAR5.VAR7 != VAR8
+&& VAR5.VAR7 != VAR9
+&& VAR5.VAR7 != VAR10
+&& (VAR5.VAR7 != VAR11 || VAR5.VAR12 != VAR13))
+
+{
+++VAR2;
+
+if (VAR14.VAR15 == VAR5.VAR15
+&& VAR14.VAR16 == VAR5.VAR16
+
+&& VAR1 != VAR17
+
+&& VAR14.VAR7 == VAR18
+&& (VAR5.VAR7 == VAR18 || VAR5.VAR7 == VAR19)
+
+&& VAR5.VAR12 != VAR13
+&& VAR14.VAR12 != VAR13)
+
+{
+FUN3(VAR1);
+return;
+}
+}
+VAR1 += VAR6;
+}
+}

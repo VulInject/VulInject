@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { memcpy ( VAR2 -> VAR4 . VAR5 , VAR4 -> VAR5 , VAR6 ) ; VAR2 -> VAR4 . VAR7 = VAR4 -> VAR7 + 100 ; VAR2 -> VAR4 . VAR8 = VAR4 -> VAR8 ; VAR2 -> VAR4 . VAR9 = VAR4 -> VAR9 ; return 0 ; }

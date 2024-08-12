@@ -1,0 +1,17 @@
+static VAR1 *FUN1(VAR2 *VAR3, int VAR4, int VAR5)
+{
+    VAR6 *VAR7 = VAR3->VAR8->VAR9;
+    VAR1 *VAR10 = FUN2(VAR3->VAR8->VAR11[0], VAR4 + (VAR7->VAR4 - VAR7->VAR12), VAR5 + (VAR7->VAR5 - VAR7->VAR13));
+    int VAR14;
+    if (!VAR10)
+        return NULL;
+    VAR10->VAR15 = VAR4;
+    VAR10->VAR16 = VAR5;
+    for (VAR14 = 0; VAR14 < 4 && VAR10->VAR17[VAR14] && VAR10->VAR18[VAR14]; VAR14++)
+    {
+        int VAR19 = VAR7->VAR20.VAR19[VAR14];
+        int VAR21 = VAR7->VAR20.VAR21[VAR14];
+        VAR10->VAR17[VAR14] += (VAR7->VAR22 >> VAR19) * VAR7->VAR20.VAR23[VAR14] + (VAR7->VAR24 >> VAR21) * VAR10->VAR18[VAR14];
+    }
+    return VAR10;
+}

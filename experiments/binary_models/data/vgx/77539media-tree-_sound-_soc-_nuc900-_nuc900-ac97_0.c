@@ -1,0 +1,9 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+FUN2(&VAR2->VAR3);
+
+VAR4 = NULL;
+FUN3(NULL);
+
+return 0;
+}

@@ -1,0 +1,84 @@
+FUN1 (void)
+{
+VAR1 **VAR2;
+char *VAR3;
+VAR4 *VAR5;
+bson_error_t VAR6;
+bson_t VAR7 = VAR8;
+int VAR9;
+unsigned int VAR10 = 42;
+int VAR11, VAR12;
+int VAR13, VAR14;
+char VAR15[25];
+char VAR16[25];
+VAR17 *VAR18;
+int VAR19;
+
+VAR5 = FUN2 (NULL);
+
+
+for (VAR11 = 1; VAR11 < 10; VAR11++) {
+
+for (VAR9 = 0; VAR9 < 50; VAR9++) {
+VAR2 = FUN3 (VAR11 * sizeof (VAR1 *));
+for (VAR12 = 0; VAR12 < VAR11; VAR12++) {
+
+VAR2[VAR12] = FUN4 ();
+VAR13 = FUN5 (&VAR10) % 5;
+for (VAR14 = 0; VAR14 < VAR13; VAR14++) {
+FUN6 (VAR2[VAR12],
+FUN7 (sizeof VAR15, &VAR10, VAR15),
+-1,
+FUN7 (sizeof VAR16, &VAR10, VAR16),
+-1);
+
+FUN8 (VAR2[VAR12],
+FUN7 (sizeof VAR15, &VAR10, VAR15),
+-1,
+FUN5 (&VAR10) % VAR20);
+}
+
+
+VAR3 = FUN9 (VAR2[VAR12], NULL);
+FUN10 (VAR3);
+FUN11 (VAR5, VAR3);
+FUN12 (VAR3);
+}
+
+VAR18 = FUN13 (
+true ,
+(VAR21) FUN5 (&VAR10) % 100 );
+
+FUN14 (
+VAR18, (VAR22 *) VAR5->VAR23, VAR5->VAR24);
+
+for (VAR12 = 0; VAR12 < VAR11; VAR12++) {
+FUN15 (&VAR7);
+VAR19 = FUN16 (VAR18, &VAR7, &VAR6);
+if (VAR19 == -1) {
+fprintf (VAR25, "", VAR6.VAR26);
+FUN17 ();
+}
+
+FUN10 (VAR19);
+FUN18 (&VAR7, VAR2[VAR12]);
+}
+
+
+FUN19 (
+0, ==, FUN16 (VAR18, &VAR7, &VAR6));
+
+FUN20 (VAR18);
+FUN21 (VAR5, 0);
+
+for (VAR12 = 0; VAR12 < VAR11; VAR12++) {
+FUN22 (VAR2[VAR12]);
+}
+
+FUN12 (VAR2);
+}
+}
+
+FUN23 (VAR5, true);
+FUN22 (&VAR7);
+}

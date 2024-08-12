@@ -1,0 +1,93 @@
+"");
+FUN1(VAR1, VAR2, VAR3, 0);
+
+
+
+
+struct VAR4 {
+struct VAR5 *VAR6;	
+struct hrtimer VAR7;
+long VAR8;		
+};
+
+static struct pps_generator_pp VAR9 = {
+.VAR6 = NULL,
+};
+
+static int VAR10;
+
+
+static long VAR11 = VAR12;
+
+
+static enum VAR13 FUN2(struct VAR14 *VAR7)
+{
+struct timespec VAR15, VAR16, VAR17, VAR18, VAR19;
+struct VAR4 *VAR20;
+struct VAR21 *VAR22;
+long VAR23, VAR24;
+unsigned long VAR25;
+
+
+FUN3(VAR25);
+
+
+FUN4(&VAR16);
+VAR15 = FUN5(FUN6(VAR7));
+VAR20 = FUN7(VAR7, struct VAR4, VAR7);
+VAR23 = VAR26 - VAR2 - VAR20->VAR8;
+
+
+if (VAR15.VAR27 != VAR16.VAR27 || VAR16.VAR28 > VAR23) {
+FUN8(VAR25);
+FUN9("",
+VAR16.VAR27, VAR16.VAR28);
+goto VAR29;
+}
+
+
+do {
+FUN4(&VAR17);
+} while (VAR15.VAR27 == VAR17.VAR27 && VAR17.VAR28 < VAR23);
+
+
+VAR22 = VAR20->VAR6->VAR22;
+VAR22->VAR30->FUN10(VAR22, VAR31);
+
+
+VAR23 = VAR26 - VAR20->VAR8;
+do {
+FUN4(&VAR17);
+} while (VAR15.VAR27 == VAR17.VAR27 && VAR17.VAR28 < VAR23);
+
+
+VAR22->VAR30->FUN10(VAR22, VAR32);
+
+FUN4(&VAR18);
+
+FUN8(VAR25);
+
+
+VAR19 = FUN11(VAR18, VAR17);
+VAR20->VAR8 =
+(VAR20->VAR8 + FUN12(&VAR19)) >> 1;
+
+VAR29:
+
+VAR19 = FUN11(VAR16, VAR15);
+VAR24 = FUN12(&VAR19);
+
+if (VAR24 >= VAR11)
+VAR11 = VAR24;
+else
+VAR11 = (3 * VAR11 + VAR24) >> 2;
+
+
+FUN13(VAR7,
+FUN14(VAR15.VAR27 + 1,
+VAR26 - (VAR2 +
+VAR20->VAR8 + VAR12 +
+2 * VAR11)));
+
+return VAR33;
+}

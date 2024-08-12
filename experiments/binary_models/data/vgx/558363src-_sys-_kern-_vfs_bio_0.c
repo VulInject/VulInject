@@ -1,0 +1,60 @@
+void
+FUN1(struct VAR1 *VAR2)
+{
+struct VAR1 **VAR3 = VAR2->VAR4;
+int VAR5;
+
+if (VAR3[1] != NULL) {
+size_t VAR6 = VAR3[1]->VAR7;
+
+
+FUN2(VAR2, VAR6);
+VAR2->VAR8 = VAR6;
+}
+
+
+if (VAR2->VAR9 > 0) {
+for (VAR5 = 1; VAR3[VAR5] != NULL; VAR5++)
+continue;
+for (VAR5 = VAR5 - 1; VAR5 != 0; VAR5--) {
+if (VAR3[VAR5]->VAR7 <= VAR2->VAR9) {
+VAR2->VAR9 -= VAR3[VAR5]->VAR7;
+FUN3(VAR3[VAR5]->VAR10, VAR11);
+} else if (VAR2->VAR9 > 0) {
+VAR2->VAR9 = 0;
+FUN3(VAR3[VAR5]->VAR10, VAR11);
+} else
+break;
+}
+}
+
+for (VAR5 = 1; VAR3[VAR5] != NULL; VAR5++) {
+if (FUN4(VAR2->VAR10, VAR12))
+FUN3(VAR3[VAR5]->VAR10, VAR11 | VAR12);
+
+struct VAR13 *VAR14 = &VAR3[VAR5]->VAR15;
+struct VAR13 *VAR16 = &VAR2->VAR15;
+int VAR17;
+
+FUN5(VAR14, &VAR18, 1);
+for (VAR17 = 0; VAR17 < FUN6(VAR3[VAR5]->VAR7); VAR17++) {
+struct VAR19 *VAR20 = FUN7(VAR16,
+VAR3[VAR5]->VAR21 + FUN8(VAR17));
+FUN9(VAR20 != NULL);
+FUN9(VAR20->VAR22 == 1);
+FUN10(VAR20, VAR14, VAR3[VAR5]->VAR21 + FUN8(VAR17));
+}
+VAR3[VAR5]->VAR23 = VAR14;
+
+FUN11(VAR3[VAR5]);
+}
+
+free(VAR3, VAR24, (VAR5 + 1) * sizeof(*VAR3));
+
+if (FUN4(VAR2->VAR10, VAR25)) {
+FUN12(VAR2);
+} else {
+FUN13(VAR2->VAR10, VAR26);
+FUN14(VAR2);
+}
+}

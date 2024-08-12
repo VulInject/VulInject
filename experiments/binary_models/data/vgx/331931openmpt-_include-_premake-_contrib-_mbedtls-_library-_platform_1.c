@@ -1,0 +1,1 @@
+int FUN1 ( unsigned char * VAR1 , size_t VAR2 ) { VAR3 * VAR4 ; size_t VAR5 ; if ( ( VAR5 = fwrite ( VAR1 , 1 , VAR2 , VAR4 ) ) != VAR2 ) { fclose ( VAR4 ) ; return - 1 ; } fclose ( VAR4 ) ; return ( ( int ) VAR5 ) ; }

@@ -1,0 +1,1 @@
+void * FUN1 ( size_t VAR1 ) { void * VAR2 = malloc ( VAR1 ) ; FUN2 ( VAR2 , NULL ) ; return ( VAR2 ) ; }

@@ -1,0 +1,376 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4, int VAR5, VAR6 *VAR7) {
+static gboolean               VAR8 = VAR9;
+static ansi_map_tap_rec_t     VAR10[16];
+static VAR11     *VAR12;
+static int                    VAR13=0;
+
+
+VAR13++;
+if (VAR13 == FUN2(VAR10))
+{
+VAR13 = 0;
+}
+VAR12 = &VAR10[VAR13];
+
+switch(VAR14){
+case 1: 
+VAR5 = FUN3(VAR9, VAR4, VAR5, VAR7, VAR2, VAR15);
+break;
+case 2: 
+VAR5 = FUN4(VAR9, VAR4, VAR5, VAR7, VAR2, VAR16);
+break;
+case 3: 
+FUN5(VAR2, VAR7->VAR17, &VAR18, VAR4, VAR5, -1);
+break;
+case 4: 
+VAR5 = FUN6(VAR9, VAR4, VAR5, VAR7, VAR2, VAR19);
+break;
+case 5: 
+VAR5 = FUN7(VAR9, VAR4, VAR5, VAR7, VAR2, VAR20);
+break;
+case 6: 
+VAR5 = FUN8(VAR9, VAR4, VAR5, VAR7, VAR2, VAR21);
+break;
+case 7: 
+VAR5 = FUN9(VAR9, VAR4, VAR5, VAR7, VAR2, VAR22);
+break;
+case 8: 
+VAR5 = FUN10(VAR9, VAR4, VAR5, VAR7, VAR2, VAR23);
+break;
+case 9: 
+VAR5 = FUN11(VAR9, VAR4, VAR5, VAR7, VAR2, VAR24);
+break;
+case 10: 
+VAR5 = FUN12(VAR9, VAR4, VAR5, VAR7, VAR2, VAR25);
+break;
+case 11: 
+VAR5 = FUN13(VAR9, VAR4, VAR5, VAR7, VAR2, VAR26);
+break;
+case 12: 
+VAR5 = FUN14(VAR9, VAR4, VAR5, VAR7, VAR2, VAR27);
+break;
+case  13: 
+VAR5 = FUN15(VAR9, VAR4, VAR5, VAR7, VAR2, VAR28);
+break;
+case  14: 
+VAR5 = FUN16(VAR9, VAR4, VAR5, VAR7, VAR2, VAR29);
+break;
+case  15: 
+VAR5 = FUN17(VAR9, VAR4, VAR5, VAR7, VAR2, VAR30);
+break;
+case  16: 
+VAR5 = FUN18(VAR9, VAR4, VAR5, VAR7, VAR2, VAR31);
+break;
+case  17: 
+VAR5 = FUN19(VAR9, VAR4, VAR5, VAR7, VAR2, VAR32);
+break;
+case  18: 
+FUN20(VAR2, VAR7->VAR17, &VAR33, VAR4, VAR5, -1, "");
+break;
+case  19: 
+FUN20(VAR2, VAR7->VAR17, &VAR33, VAR4, VAR5, -1, "");
+break;
+case  20: 
+VAR5 = FUN21(VAR9, VAR4, VAR5, VAR7, VAR2, VAR34);
+break;
+case  21: 
+FUN20(VAR2, VAR7->VAR17, &VAR33, VAR4, VAR5, -1, "");
+break;
+case  22: 
+VAR5 = FUN22(VAR9, VAR4, VAR5, VAR7, VAR2, VAR35);
+break;
+case  23: 
+VAR5 = FUN23(VAR9, VAR4, VAR5, VAR7, VAR2, VAR36);
+break;
+case  24: 
+VAR5 = FUN24(VAR9, VAR4, VAR5, VAR7, VAR2, VAR37);
+break;
+case  25: 
+VAR5 = FUN25(VAR9, VAR4, VAR5, VAR7, VAR2, VAR38);
+break;
+case  26: 
+VAR5 = FUN26(VAR9, VAR4, VAR5, VAR7, VAR2, VAR39);
+break;
+case  27: 
+VAR5 = FUN27(VAR9, VAR4, VAR5, VAR7, VAR2, VAR40);
+break;
+case  28: 
+VAR5 = FUN28(VAR9, VAR4, VAR5, VAR7, VAR2, VAR41);
+break;
+case  29: 
+VAR5 = FUN29(VAR9, VAR4, VAR5, VAR7, VAR2, VAR42);
+break;
+case  30: 
+VAR5 = FUN30(VAR9, VAR4, VAR5, VAR7, VAR2, VAR43);
+break;
+case  31: 
+VAR5 = FUN31(VAR9, VAR4, VAR5, VAR7, VAR2, VAR44);
+break;
+case  32: 
+VAR5 = FUN32(VAR9, VAR4, VAR5, VAR7, VAR2, VAR45);
+break;
+case  33: 
+VAR5 = FUN33(VAR9, VAR4, VAR5, VAR7, VAR2, VAR46);
+break;
+case  34: 
+VAR5 = FUN34(VAR9, VAR4, VAR5, VAR7, VAR2, VAR47);
+break;
+case  35: 
+VAR5 = FUN35(VAR9, VAR4, VAR5, VAR7, VAR2, VAR48);
+break;
+case  36: 
+VAR5 = FUN36(VAR9, VAR4, VAR5, VAR7, VAR2, VAR49);
+break;
+case  37: 
+VAR5 = FUN37(VAR9, VAR4, VAR5, VAR7, VAR2, VAR50);
+break;
+case  38: 
+VAR5 = FUN38(VAR9, VAR4, VAR5, VAR7, VAR2, VAR51);
+break;
+case  39: 
+VAR5 = FUN39(VAR9, VAR4, VAR5, VAR7, VAR2, VAR52);
+break;
+case  40: 
+VAR5 = FUN40(VAR9, VAR4, VAR5, VAR7, VAR2, VAR53);
+break;
+case  41: 
+FUN20(VAR2, VAR7->VAR17, &VAR33, VAR4, VAR5, -1, "");
+break;
+case  42: 
+VAR5 = FUN41(VAR9, VAR4, VAR5, VAR7, VAR2, VAR54);
+break;
+case  43: 
+VAR5 = FUN42(VAR9, VAR4, VAR5, VAR7, VAR2, VAR55);
+break;
+case  44: 
+VAR5 = FUN43(VAR9, VAR4, VAR5, VAR7, VAR2, VAR56);
+break;
+case  45: 
+VAR5 = FUN44(VAR9, VAR4, VAR5, VAR7, VAR2, VAR57);
+break;
+case  46: 
+VAR5 = FUN45(VAR9, VAR4, VAR5, VAR7, VAR2, VAR58);
+break;
+case  47: 
+VAR5 = FUN46(VAR9, VAR4, VAR5, VAR7, VAR2, VAR59);
+break;
+case  48: 
+VAR5 = FUN47(VAR9, VAR4, VAR5, VAR7, VAR2, VAR60);
+break;
+case  49: 
+VAR5 = FUN48(VAR9, VAR4, VAR5, VAR7, VAR2, VAR61);
+break;
+case  50: 
+VAR5 = FUN49(VAR9, VAR4, VAR5, VAR7, VAR2, VAR62);
+break;
+case  51: 
+VAR5 = FUN50(VAR9, VAR4, VAR5, VAR7, VAR2, VAR63);
+break;
+case  52: 
+VAR5 = FUN51(VAR9, VAR4, VAR5, VAR7, VAR2, VAR64);
+break;
+case  53: 
+VAR5 = FUN52(VAR9, VAR4, VAR5, VAR7, VAR2, VAR65);
+break;
+case  54: 
+VAR5 = FUN53(VAR9, VAR4, VAR5, VAR7, VAR2, VAR66);
+break;
+case  55: 
+VAR5 = FUN54(VAR9, VAR4, VAR5, VAR7, VAR2, VAR67);
+break;
+
+
+
+case  56: 
+VAR5 = FUN55(VAR9, VAR4, VAR5, VAR7, VAR2, VAR68);
+break;
+
+case  57: 
+break;
+
+case  58: 
+VAR5 = FUN56(VAR9, VAR4, VAR5, VAR7, VAR2, VAR69);
+break;
+case  59: 
+VAR5 = FUN57(VAR9, VAR4, VAR5, VAR7, VAR2, VAR70);
+break;
+
+case  60: 
+VAR5 = FUN58(VAR9, VAR4, VAR5, VAR7, VAR2, VAR71);
+break;
+case  61: 
+VAR5 = FUN59(VAR9, VAR4, VAR5, VAR7, VAR2, VAR72);
+break;
+
+case  62: 
+VAR5 = FUN60(VAR9, VAR4, VAR5, VAR7, VAR2, VAR73);
+break;
+case  63: 
+VAR5 = FUN61(VAR9, VAR4, VAR5, VAR7, VAR2, VAR74);
+break;
+
+case  64: 
+VAR5 = FUN62(VAR9, VAR4, VAR5, VAR7, VAR2, VAR75);
+break;
+case  65: 
+VAR5 = FUN63(VAR9, VAR4, VAR5, VAR7, VAR2, VAR76);
+break;
+case  66: 
+VAR5 = FUN64(VAR9, VAR4, VAR5, VAR7, VAR2, VAR77);
+break;
+case  67: 
+
+break;
+case  68: 
+VAR5 = FUN65(VAR9, VAR4, VAR5, VAR7, VAR2, VAR78);
+break;
+case  69: 
+
+break;
+case  70: 
+VAR5 = FUN66(VAR9, VAR4, VAR5, VAR7, VAR2, VAR79);
+break;
+case  71: 
+
+break;
+case  72: 
+VAR5 = FUN67(VAR9, VAR4, VAR5, VAR7, VAR2, VAR80);
+break;
+case  73: 
+VAR5 = FUN68(VAR9, VAR4, VAR5, VAR7, VAR2, VAR81);
+break;
+case  74: 
+VAR5 = FUN69(VAR9, VAR4, VAR5, VAR7, VAR2, VAR82);
+break;
+case  75: 
+VAR5 = FUN70(VAR9, VAR4, VAR5, VAR7, VAR2, VAR83);
+break;
+case  76: 
+VAR5 = FUN71(VAR9, VAR4, VAR5, VAR7, VAR2, VAR84);
+break;
+
+case  77: 
+break;
+case  78: 
+VAR5 = FUN72(VAR9, VAR4, VAR5, VAR7, VAR2, VAR85);
+break;
+
+case  79: 
+VAR5 = FUN73(VAR9, VAR4, VAR5, VAR7, VAR2, VAR86);
+break;
+
+
+case  80: 
+VAR5 = FUN74(VAR9, VAR4, VAR5, VAR7, VAR2, VAR87);
+break;
+case  81: 
+VAR5 = FUN75(VAR9, VAR4, VAR5, VAR7, VAR2, VAR88);
+break;
+case  82: 
+VAR5 = FUN76(VAR9, VAR4, VAR5, VAR7, VAR2, VAR89);
+break;
+case  83: 
+VAR5 = FUN77(VAR9, VAR4, VAR5, VAR7, VAR2, VAR90);
+break;
+case  84: 
+VAR5 = FUN78(VAR9, VAR4, VAR5, VAR7, VAR2, VAR91);
+break;
+case  85: 
+VAR5 = FUN79(VAR9, VAR4, VAR5, VAR7, VAR2, VAR92);
+break;
+case  86: 
+VAR5 = FUN80(VAR9, VAR4, VAR5, VAR7, VAR2, VAR93);
+break;
+case  87: 
+VAR5 = FUN81(VAR9, VAR4, VAR5, VAR7, VAR2, VAR94);
+break;
+
+
+case  88: 
+VAR5 = FUN82(VAR9, VAR4, VAR5, VAR7, VAR2, VAR95);
+break;
+case  89: 
+VAR5 = FUN83(VAR9, VAR4, VAR5, VAR7, VAR2, VAR96);
+break;
+case  90: 
+VAR5 = FUN84(VAR9, VAR4, VAR5, VAR7, VAR2, VAR97);
+break;
+case  91: 
+VAR5 = FUN85(VAR9, VAR4, VAR5, VAR7, VAR2, VAR98);
+break;
+
+case  92: 
+VAR5 = FUN86(VAR9, VAR4, VAR5, VAR7, VAR2, VAR99);
+break;
+case  93: 
+break;
+case  94: 
+VAR5 = FUN87(VAR9, VAR4, VAR5, VAR7, VAR2, VAR100);
+break;
+case  95: 
+VAR5 = FUN88(VAR9, VAR4, VAR5, VAR7, VAR2, VAR101);
+break;
+case  96: 
+VAR5 = FUN89(VAR9, VAR4, VAR5, VAR7, VAR2, VAR102);
+break;
+
+case  97: 
+VAR5 = FUN90(VAR9, VAR4, VAR5, VAR7, VAR2, VAR103);
+break;
+
+case  98: 
+VAR5 = FUN91(VAR9, VAR4, VAR5, VAR7, VAR2, VAR104);
+break;
+
+case  99: 
+VAR5 = FUN92(VAR9, VAR4, VAR5, VAR7, VAR2, VAR105);
+break;
+case  100: 
+VAR5 = FUN93(VAR9, VAR4, VAR5, VAR7, VAR2, VAR106);
+break;
+
+
+
+case 101:    
+VAR5 = FUN94(VAR9, VAR4, VAR5, VAR7, VAR2, VAR107);
+break;
+case 102:
+VAR5 = FUN95(VAR9, VAR4, VAR5, VAR7, VAR2, VAR108);
+break;
+
+case 104:
+VAR5 = FUN96(VAR9, VAR4, VAR5, VAR7, VAR2, VAR109);
+break;
+
+case 106:
+VAR5 = FUN97(VAR9, VAR4, VAR5, VAR7, VAR2, VAR110);
+break;
+case 107:
+
+VAR5 = FUN98(VAR9, VAR4, VAR5, VAR7, VAR2, VAR111);
+break;
+
+case 111:
+
+VAR5 = FUN99(VAR9, VAR4, VAR5, VAR7, VAR2, VAR112);
+break;
+case 112:
+
+VAR5 = FUN100(VAR9, VAR4, VAR5, VAR7, VAR2, VAR113);
+break;
+default:
+FUN5(VAR2, VAR7->VAR17, &VAR33, VAR4, VAR5, -1);
+VAR8 = VAR114;
+break;
+}
+
+if (VAR8)
+{
+VAR12->VAR115 = VAR14;
+VAR12->VAR116 = 0;    
+
+FUN101(VAR117, VAR118, VAR12);
+}
+
+return VAR5;
+}

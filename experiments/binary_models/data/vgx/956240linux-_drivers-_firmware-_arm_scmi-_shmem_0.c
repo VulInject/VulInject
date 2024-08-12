@@ -1,0 +1,12 @@
+void FUN1(struct scmi_shared_mem VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+size_t VAR5 = FUN2(&VAR2->VAR6);
+
+VAR4->VAR7.VAR8 = FUN2(VAR2->VAR9);
+
+VAR4->VAR10.VAR5 = FUN3(VAR11, VAR4->VAR10.VAR5, VAR5 > 8 ? VAR5 - 8 : 0);
+
+
+FUN4(VAR4->VAR10.VAR12, VAR2->VAR9 + 4, VAR4->VAR10.VAR5);
+}

@@ -1,0 +1,1 @@
+FUN1 ( ) { struct VAR1 * VAR2 ; int VAR3 = 1 ; for ( VAR2 = VAR1 -> VAR2 ; VAR2 ; VAR2 = VAR2 -> VAR4 ) { int VAR5 = FUN1 ( VAR2 ) + 1 ; if ( VAR5 > VAR3 ) { VAR3 = VAR5 ; } } VAR1 -> VAR3 = VAR3 ; return VAR3 ; }

@@ -1,0 +1,1 @@
+int FUN1 ( int argc , char * argv [ ] ) { FUN2 ( argc , NULL ) ; FUN2 ( argv ) ; if ( ! FUN3 ( ) ) { return - 1 ; } if ( ! FUN4 ( ) ) { return - 2 ; } return 0 ; }

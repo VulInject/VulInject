@@ -1,0 +1,17 @@
+static void FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+void *VAR5)
+{
+struct VAR6 *VAR7 = VAR5;
+
+if (FUN2(VAR2) == VAR8) {
+VAR4->VAR9 = VAR2->VAR10;
+VAR4->VAR11 = VAR2->VAR12;
+} else if (VAR2->VAR13 == VAR14) {
+const struct VAR15 *VAR16 = FUN3(VAR2);
+
+VAR4->VAR9 = FUN4(int, VAR16->VAR17 - VAR16->VAR18, 0);
+VAR4->VAR11 = VAR16->VAR19 - VAR16->VAR20;
+}
+if (VAR7)
+FUN5(VAR2, VAR7);
+}

@@ -1,0 +1,1 @@
+int FUN1 ( int VAR1 , unsigned VAR2 ) { extern int FUN2 ( unsigned ) ; switch ( VAR2 ) { case VAR3 : return VAR4 ; case VAR5 : return VAR6 ; case VAR7 : return VAR8 ; case VAR9 : return VAR10 ; default : return VAR11 ; } }

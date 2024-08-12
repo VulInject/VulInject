@@ -1,0 +1,20 @@
+void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+
+FUN2(&VAR2->VAR5.VAR6);
+FUN3(VAR2->VAR5.VAR7);
+
+switch (VAR2->VAR5.VAR8) {
+case VAR9:
+FUN4(VAR2);
+case VAR10:
+return;
+}
+
+if (VAR2->VAR11.VAR12 == NULL)
+return;
+
+VAR4 = VAR2->VAR11.VAR12->VAR13,
+FUN5(VAR4, 0, (VAR14)-1);
+}

@@ -1,0 +1,1 @@
+const char * FUN1 ( int VAR1 ) { switch ( VAR1 ) { case VAR2 : case VAR3 : case VAR4 : case VAR5 : case VAR6 : case VAR7 : return ( "" "" "" ) ; default : return ( NULL ) ; } } VAR8 { char * VAR9 ; int * FUN2 ( const char * , const struct VAR8 * , int , char * , VAR10 * ) int VAR11 ; int VAR12 ; }

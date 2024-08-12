@@ -1,0 +1,66 @@
+FUN1 (struct VAR1 *VAR2,
+bfd_vma VAR3,
+char *VAR4,
+unsigned int VAR5,
+unsigned int VAR6,
+int VAR7)
+{
+bfd_size_type VAR8 = sizeof (struct VAR9);
+struct VAR9* VAR10 = FUN2 (VAR2->VAR11, VAR8);
+
+
+VAR10->VAR3 = VAR3;
+VAR10->VAR5 = VAR5;
+VAR10->VAR6 = VAR6;
+VAR10->VAR7 = VAR7;
+
+if (VAR4 && VAR4[0])
+{
+VAR10->VAR4 = FUN2 (VAR2->VAR11, strlen (VAR4) + 1);
+if (VAR10->VAR4)
+strcpy (VAR10->VAR4, VAR4);
+}
+else
+VAR10->VAR4 = NULL;
+
+
+
+if (!VAR2->VAR12
+|| FUN3 (VAR10, VAR2->VAR12))
+{
+
+VAR10->VAR13 = VAR2->VAR12;
+VAR2->VAR12 = VAR10;
+
+
+if (!VAR2->VAR14)
+VAR2->VAR14 = VAR10;
+}
+else if (!FUN3 (VAR10, VAR2->VAR14)
+&& (!VAR2->VAR14->VAR13
+|| FUN3 (VAR10, VAR2->VAR14->VAR13)))
+{
+
+VAR10->VAR13 = VAR2->VAR14->VAR13;
+VAR2->VAR14->VAR13 = VAR10;
+}
+else
+{
+
+struct VAR9* VAR15 = VAR2->VAR12; 
+struct VAR9* VAR16 = VAR15->VAR13;
+
+while (VAR16)
+{
+if (!FUN3 (VAR10, VAR15)
+&& FUN3 (VAR10, VAR16))
+break;
+
+VAR15 = VAR16; 
+VAR16 = VAR16->VAR13;
+}
+VAR2->VAR14 = VAR15;
+VAR10->VAR13 = VAR2->VAR14->VAR13;
+VAR2->VAR14->VAR13 = VAR10;
+}
+}

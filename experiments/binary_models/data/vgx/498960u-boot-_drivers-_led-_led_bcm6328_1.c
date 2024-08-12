@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { ofnode VAR3 ; FUN2 ( , ) { struct VAR1 * VAR4 ; int VAR5 ; VAR5 = FUN3 ( VAR2 , "" , FUN4 ( VAR3 ) , VAR3 , & VAR4 ) ; } return 0 ; }

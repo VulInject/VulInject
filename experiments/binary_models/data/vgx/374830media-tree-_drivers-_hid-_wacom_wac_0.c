@@ -1,0 +1,27 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+unsigned char *VAR3 = VAR2->VAR3;
+struct VAR4 *VAR5 = VAR2->VAR6;
+bool VAR7 = VAR3[1] & 0x20;
+
+if (!VAR2->VAR8->VAR9) 
+
+VAR2->VAR10[0] = (VAR3[1] & 0x0c) ? VAR11 : VAR12;
+
+
+VAR2->VAR8->VAR9 = VAR7;
+
+
+if (!FUN2(VAR2)) {
+FUN3(VAR5, VAR13, VAR3[1] & 0x02);
+FUN3(VAR5, VAR14, VAR3[1] & 0x10);
+FUN4(VAR5, VAR15, FUN5((VAR16 *)&VAR3[2]));
+FUN4(VAR5, VAR17, FUN5((VAR16 *)&VAR3[4]));
+FUN4(VAR5, VAR18, ((VAR3[7] & 0x07) << 8) | VAR3[6]);
+FUN3(VAR5, VAR19, VAR3[1] & 0x05);
+FUN3(VAR5, VAR2->VAR10[0], VAR7);
+return 1;
+}
+
+return 0;
+}

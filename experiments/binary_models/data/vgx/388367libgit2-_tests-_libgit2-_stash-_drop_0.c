@@ -1,0 +1,10 @@
+void FUN1(void)
+{
+FUN2(VAR1);
+VAR1 = NULL;
+
+FUN3(VAR2);
+VAR2 = NULL;
+
+FUN4(FUN5("", NULL, VAR3));
+}

@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( const char * VAR2 , char * VAR3 , int * VAR4 ) { VAR1 * VAR5 = NULL ; * VAR4 = 0 ; * VAR4 = ! FUN2 ( VAR2 , "" , 5 ) ; if ( ! * VAR4 ) { return NULL ; } VAR5 = FUN3 ( VAR3 , VAR6 ) ; VAR5 -> VAR7 = VAR8 ; return VAR5 ; }

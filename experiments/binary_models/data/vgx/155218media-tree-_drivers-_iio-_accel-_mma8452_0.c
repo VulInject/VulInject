@@ -1,0 +1,151 @@
+static int FUN1(struct VAR1 *VAR2,
+const struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6;
+struct VAR7 *VAR8;
+int VAR9;
+const struct VAR10 *VAR11;
+
+VAR11 = FUN2(VAR12, &VAR2->VAR13);
+if (!VAR11) {
+FUN3(&VAR2->VAR13, "");
+return -VAR14;
+}
+
+VAR8 = FUN4(&VAR2->VAR13, sizeof(*VAR6));
+if (!VAR8)
+return -VAR15;
+
+VAR6 = FUN5(VAR8);
+VAR6->VAR2 = VAR2;
+FUN6(&VAR6->VAR16);
+VAR6->VAR17 = VAR11->VAR6;
+
+VAR9 = FUN7(VAR2, VAR18);
+if (VAR9 < 0)
+return VAR9;
+
+switch (VAR9) {
+case VAR19:
+case VAR20:
+case VAR21:
+case VAR22:
+case VAR23:
+case VAR24:
+if (VAR9 == VAR6->VAR17->VAR25)
+break;
+default:
+return -VAR14;
+}
+
+FUN8(&VAR2->VAR13, "",
+VAR11->VAR26, VAR6->VAR17->VAR25);
+
+FUN9(VAR2, VAR8);
+VAR8->VAR27 = &VAR28;
+VAR8->VAR29 = VAR4->VAR29;
+VAR8->VAR13.VAR30 = &VAR2->VAR13;
+VAR8->VAR31 = VAR32;
+VAR8->VAR33 = VAR6->VAR17->VAR33;
+VAR8->VAR34 = VAR6->VAR17->VAR34;
+VAR8->VAR35 = VAR36;
+
+VAR9 = FUN10(VAR2);
+if (VAR9 < 0)
+return VAR9;
+
+VAR6->VAR37 = VAR38;
+VAR9 = FUN11(VAR2, VAR39,
+VAR6->VAR37);
+if (VAR9 < 0)
+return VAR9;
+
+
+VAR9 = FUN11(VAR2, VAR40,
+VAR41);
+if (VAR9 < 0)
+return VAR9;
+
+if (VAR2->VAR42) {
+
+int VAR43 = VAR44 |
+VAR45 |
+VAR46;
+int VAR47 = VAR45 |
+VAR46;
+int VAR48;
+
+VAR48 = FUN12(VAR2->VAR13.VAR49, "");
+
+if (VAR48 == VAR2->VAR42) {
+FUN13(&VAR2->VAR13, "");
+} else {
+VAR9 = FUN11(VAR2,
+VAR50,
+VAR43);
+if (VAR9 < 0)
+return VAR9;
+
+FUN13(&VAR2->VAR13, "");
+}
+
+VAR9 = FUN11(VAR2,
+VAR51,
+VAR47);
+if (VAR9 < 0)
+return VAR9;
+
+VAR9 = FUN14(VAR8);
+if (VAR9 < 0)
+return VAR9;
+}
+
+VAR6->VAR52 = VAR53 |
+(VAR54 << VAR55);
+VAR9 = FUN11(VAR2, VAR56,
+VAR6->VAR52);
+if (VAR9 < 0)
+goto VAR57;
+
+VAR9 = FUN15(VAR8, NULL,
+VAR58, NULL);
+if (VAR9 < 0)
+goto VAR57;
+
+if (VAR2->VAR42) {
+VAR9 = FUN16(&VAR2->VAR13,
+VAR2->VAR42,
+NULL, VAR59,
+VAR60 | VAR61,
+VAR2->VAR29, VAR8);
+if (VAR9)
+goto VAR62;
+}
+
+VAR9 = FUN17(&VAR2->VAR13);
+if (VAR9 < 0)
+goto VAR62;
+
+FUN18(&VAR2->VAR13);
+FUN19(&VAR2->VAR13,
+VAR63);
+FUN20(&VAR2->VAR13);
+
+VAR9 = FUN21(VAR8);
+if (VAR9 < 0)
+goto VAR62;
+
+VAR9 = FUN22(VAR6, false);
+if (VAR9 < 0)
+goto VAR62;
+
+return 0;
+
+VAR62:
+FUN23(VAR8);
+
+VAR57:
+FUN24(VAR8);
+
+return VAR9;
+}

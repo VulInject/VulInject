@@ -1,0 +1,76 @@
+static int FUN1(struct VAR1 *VAR2, gpa_t VAR3,
+unsigned long VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR2->VAR7);
+unsigned long VAR8 = VAR3 & ~VAR9;
+bool VAR10 = false;
+unsigned long VAR11;
+kvm_pfn_t VAR12;
+void *VAR13;
+int VAR14;
+
+
+if (VAR8 + VAR4 > VAR15)
+return -VAR16;
+
+
+FUN3(&VAR2->VAR17);
+
+FUN4(&VAR2->VAR18);
+
+if (!VAR2->VAR19) {
+VAR14 = -VAR16;
+goto VAR20;
+}
+
+VAR12 = VAR2->VAR21;
+VAR13 = VAR2->VAR22 - FUN5(VAR2->VAR22);
+VAR11 = VAR2->VAR23;
+
+
+if (VAR2->VAR3 != VAR3 || VAR2->VAR24 != VAR6->VAR24 ||
+FUN6(VAR2->VAR23)) {
+gfn_t VAR25 = FUN7(VAR3);
+
+VAR2->VAR3 = VAR3;
+VAR2->VAR24 = VAR6->VAR24;
+VAR2->VAR26 = FUN8(VAR6, VAR25);
+VAR2->VAR23 = FUN9(VAR2->VAR26, VAR25);
+
+if (FUN6(VAR2->VAR23)) {
+VAR14 = -VAR27;
+goto VAR28;
+}
+}
+
+
+if (!VAR2->VAR29 || VAR11 != VAR2->VAR23) {
+VAR14 = FUN10(VAR2);
+} else {
+
+VAR2->VAR22 = VAR13 + VAR8;
+VAR14 = 0;
+goto VAR20;
+}
+
+VAR28:
+
+if (VAR14) {
+VAR2->VAR29 = false;
+VAR2->VAR21 = VAR30;
+VAR2->VAR22 = NULL;
+}
+
+
+VAR10 = (VAR12 != VAR2->VAR21);
+
+VAR20:
+FUN11(&VAR2->VAR18);
+
+FUN12(&VAR2->VAR17);
+
+if (VAR10)
+FUN13(VAR12, VAR13);
+
+return VAR14;
+}

@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 ) { int VAR3 = FUN2 ( ) ; VAR2 [ 0 ] = VAR3 ; if ( VAR3 == VAR4 ) { VAR2 [ 1 ] = VAR5 ; } else { VAR2 [ 1 ] = VAR4 ; } VAR2 [ 2 ] = VAR6 ; }

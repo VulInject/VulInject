@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , const struct VAR3 * VAR4 ) { if ( FUN2 ( VAR2 , VAR5 , & VAR4 -> xor , VAR6 , VAR4 -> VAR7 ) < 0 ) { return - 1 ; } return 0 ; }

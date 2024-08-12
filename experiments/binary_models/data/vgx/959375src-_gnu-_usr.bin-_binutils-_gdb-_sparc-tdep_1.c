@@ -1,0 +1,1 @@
+FUN1 ( ) { struct VAR1 * VAR2 = & VAR3 ; char VAR4 [ 8 ] ; int VAR5 ; VAR5 = FUN2 ( VAR2 , VAR6 , NULL , VAR4 , 0 , 8 ) ; FUN3 ( VAR5 == 4 || VAR5 == 8 ) ; return FUN4 ( VAR4 , VAR5 ) ; }

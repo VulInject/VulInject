@@ -1,0 +1,40 @@
+static void
+FUN1(struct VAR1 *VAR2, uint32_t VAR3)
+{
+uint32_t VAR4, VAR5;
+uint32_t VAR6;
+
+VAR4 = FUN2(VAR2, VAR7);
+VAR6 = FUN2(VAR2, VAR8);
+VAR5 =
+FUN3((FUN2(VAR2, VAR9) - FUN2(VAR2, VAR10)) / 2 / VAR6, 2)
+* VAR6;
+
+
+FUN4((VAR3 & VAR11) == 0);
+
+VAR4 = FUN3(VAR4 / 2 / VAR6, 2) * VAR6;
+
+switch (VAR3) {
+case VAR12:
+if (!FUN5(VAR2->VAR13)) {
+if (!FUN6(VAR2->VAR13)) {
+FUN2(VAR2, VAR14) = VAR5;
+FUN2(VAR2, VAR7) = VAR4;
+}
+FUN7(VAR2->VAR13);
+}
+break;
+case VAR15:
+if (!FUN6(VAR2->VAR13)) {
+FUN2(VAR2, VAR14) = VAR5;
+FUN2(VAR2, VAR7) = VAR4;
+FUN8(VAR2->VAR13);
+}
+break;
+case VAR16:
+FUN2(VAR2, VAR14) = VAR5;
+FUN2(VAR2, VAR7) = VAR6;
+break;
+}
+}

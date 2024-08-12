@@ -1,0 +1,82 @@
+static int FUN1(VAR1 *VAR2,
+icaltimetype VAR3, icaltimetype VAR4,
+icaltimetype VAR5 FUN2((VAR6)), 
+int VAR7 FUN2((VAR6)),
+void *VAR8)
+{
+VAR1 *VAR9 = FUN3(VAR2);
+VAR1 *VAR10 = (VAR1 *) VAR8;
+VAR11 *VAR12, *VAR13, *VAR14 = NULL;
+struct icaldatetimeperiodtype VAR15;
+icaltimetype VAR16;
+
+VAR3 = FUN4(VAR3, VAR17);
+VAR4 = FUN4(VAR4, VAR17);
+
+
+for (VAR12 = FUN5(VAR2, VAR18);
+VAR12; VAR12 = VAR13) {
+VAR13 = FUN6(VAR2, VAR18);
+
+switch (FUN7(VAR12)) {
+case VAR19:
+
+VAR15 = FUN8(VAR12);
+VAR16 = FUN4(VAR15.VAR20, VAR17);
+
+
+FUN9(VAR12, VAR3);
+FUN10(VAR12, VAR21);
+break;
+
+case VAR22:
+
+FUN11(VAR12, VAR4);
+FUN10(VAR12, VAR21);
+break;
+
+case VAR23:
+
+FUN12(VAR12, FUN13(VAR4, VAR3));
+break;
+
+case VAR24:
+
+VAR15 = FUN8(VAR12);
+VAR15.VAR20 = FUN4(VAR15.VAR20, VAR17);
+FUN14(VAR12, VAR15.VAR20);
+FUN10(VAR12, VAR21);
+VAR14 = VAR12;
+
+
+FUN15(VAR9, VAR2);
+break;
+
+case VAR25:
+case VAR26:
+case VAR27:
+case VAR28:
+
+FUN16(VAR2, VAR12);
+FUN17(VAR12);
+break;
+
+default:
+break;
+}
+}
+
+if (!VAR14) {
+
+VAR2 = FUN18(VAR2);
+if (FUN19(VAR3, VAR16)) {
+
+FUN20(VAR2, VAR3);
+}
+}
+
+
+FUN21(VAR10, VAR2);
+
+return 1;
+}

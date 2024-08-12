@@ -1,0 +1,1 @@
+static tool_rc FUN1 ( VAR1 * VAR2 , tpm2_option_flags VAR3 ) { FUN2 ( VAR3 ) ; tool_rc VAR4 = FUN3 ( ) ; VAR4 = FUN4 ( VAR2 ) ; if ( VAR4 != VAR5 ) { return VAR4 ; } VAR4 = FUN5 ( VAR2 ) ; if ( VAR4 != VAR5 ) { return VAR4 ; } return FUN6 ( VAR2 ) ; }

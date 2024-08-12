@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , bool * VAR3 ) { int VAR4 = - 1 ; * VAR3 = false ; if ( ( VAR4 = FUN2 ( VAR2 ) ) != 0 ) { * VAR3 = true ; } return 0 ; }

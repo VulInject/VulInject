@@ -1,0 +1,179 @@
+static int FUN1(struct VAR1 *VAR2,
+struct nphy_txgains VAR3, u8 VAR4, bool VAR5)
+{
+struct VAR6 *VAR7 = VAR2->VAR8.VAR9;
+int VAR10, VAR11, VAR12;
+u8 VAR13[2];
+u8 VAR14;
+u16 VAR15[6];
+VAR16 FUN2(VAR17), FUN2(VAR18), VAR19;
+u32 VAR20, VAR21;
+enum nl80211_band VAR22;
+
+u8 VAR23;
+u16 VAR24;
+u16 VAR25[3] = { 3, 3, 1 };
+u16 VAR26[3] = { 7, 2, 0 };
+u16 VAR27[3] = { 2, 0, 0 };
+u32 VAR28[3] = { };
+u16 VAR29[2];
+u16 VAR30[2];
+struct nphy_iqcal_params VAR31[2];
+struct nphy_iq_est VAR32;
+int VAR33 = 0;
+bool VAR34 = true;
+int VAR35 = 13;
+
+FUN3(VAR2, 1);
+
+if (VAR2->VAR8.VAR36 < 2)
+FUN4(VAR2);
+FUN5(VAR2, FUN6(7, 0x110), 2, VAR29);
+for (VAR10 = 0; VAR10 < 2; VAR10++) {
+FUN7(VAR2, VAR10, VAR3, &VAR31[VAR10]);
+VAR30[VAR10] = VAR31[VAR10].VAR30;
+}
+FUN8(VAR2, FUN6(7, 0x110), 2, VAR30);
+
+for (VAR10 = 0; VAR10 < 2; VAR10++) {
+if (VAR10 == 0) {
+VAR13[0] = VAR37;
+VAR13[1] = VAR38;
+VAR14 = VAR39;
+} else {
+VAR13[0] = VAR38;
+VAR13[1] = VAR37;
+VAR14 = VAR40;
+}
+
+VAR15[1] = FUN9(VAR2, VAR41);
+VAR15[2] = FUN9(VAR2, VAR14);
+VAR15[3] = FUN9(VAR2, VAR42);
+VAR15[4] = FUN9(VAR2, VAR13[0]);
+VAR15[5] = FUN9(VAR2, VAR13[1]);
+
+FUN10(VAR2, VAR41,
+~VAR43 & 0xFFFF,
+((1 - VAR10) << VAR44));
+FUN10(VAR2, VAR41, ~VAR45,
+(1 - VAR10));
+FUN11(VAR2, VAR14, 0x0006);
+FUN11(VAR2, VAR42, 0x0006);
+
+VAR22 = FUN12(VAR2->VAR46);
+
+if (VAR7->VAR47 & 0xFF000000) {
+if (VAR22 == VAR48)
+FUN13(VAR2, VAR13[0], 0x140);
+else
+FUN13(VAR2, VAR13[0], 0x110);
+} else {
+if (VAR22 == VAR48)
+FUN13(VAR2, VAR13[0], 0x180);
+else
+FUN13(VAR2, VAR13[0], 0x120);
+}
+
+if (VAR22 == VAR48)
+FUN13(VAR2, VAR13[1], 0x148);
+else
+FUN13(VAR2, VAR13[1], 0x114);
+
+if (VAR7->VAR47 & 0x10000) {
+FUN14(VAR2, VAR49, 0xFC,
+(VAR10 + 1));
+FUN14(VAR2, VAR50, 0xFC,
+(2 - VAR10));
+}
+
+for (VAR11 = 0; VAR11 < 4; VAR11++) {
+if (VAR11 < 3) {
+VAR19 = VAR25[VAR11];
+VAR17 = VAR26[VAR11];
+VAR18 = VAR27[VAR11];
+} else {
+if (VAR28[1] > 10000) {
+VAR23 = 1;
+VAR24 = VAR17;
+VAR12 = 2;
+} else {
+if (VAR28[0] > 10000) {
+VAR23 = 1;
+VAR24 = VAR17;
+VAR12 = 1;
+} else {
+VAR12 = 0;
+VAR23 = 2;
+VAR24 = VAR18;
+}
+}
+VAR19 = VAR25[VAR12];
+VAR17 = VAR26[VAR12];
+VAR18 = VAR27[VAR12];
+VAR24 += VAR35 - FUN15(VAR28[VAR12]);
+VAR24 = FUN16(VAR24, 0, 10);
+if (VAR23 == 1)
+VAR17 = VAR24;
+else
+VAR18 = VAR24;
+}
+
+VAR15[0] = ((VAR18 << 8) | (VAR17 << 4) |
+(VAR19 << 2));
+FUN17(VAR2, 0x400, VAR15[0], 3,
+false);
+FUN18(VAR2, VAR51);
+FUN19(VAR2);
+
+if (VAR34) {
+VAR33 = FUN20(VAR2, 4000,
+(VAR7->VAR47 & 0xFFFF),
+false, false, true);
+VAR34 = false;
+} else {
+FUN21(VAR2, 160, 0xFFFF, 0, false,
+false, true);
+}
+
+if (VAR33 == 0) {
+if (VAR11 < 3) {
+FUN22(VAR2, &VAR32, 1024, 32,
+false);
+if (VAR10 == 0) {
+VAR20 = VAR32.VAR52;
+VAR21 = VAR32.VAR53;
+} else {
+VAR20 = VAR32.VAR54;
+VAR21 = VAR32.VAR55;
+}
+VAR28[VAR10] = ((VAR20 + VAR21) / 1024) + 1;
+} else {
+FUN23(VAR2, 1 << VAR10);
+}
+FUN19(VAR2);
+}
+
+if (VAR33 != 0)
+break;
+}
+
+FUN24(VAR2, VAR49, 0xFC);
+FUN24(VAR2, VAR50, 0xFC);
+FUN13(VAR2, VAR13[1], VAR15[5]);
+FUN13(VAR2, VAR13[0], VAR15[4]);
+FUN13(VAR2, VAR42, VAR15[3]);
+FUN13(VAR2, VAR14, VAR15[2]);
+FUN13(VAR2, VAR41, VAR15[1]);
+
+if (VAR33 != 0)
+break;
+}
+
+FUN17(VAR2, 0x400, 0, 3, true);
+FUN18(VAR2, VAR51);
+FUN8(VAR2, FUN6(7, 0x110), 2, VAR29);
+
+FUN3(VAR2, 0);
+
+return VAR33;
+}

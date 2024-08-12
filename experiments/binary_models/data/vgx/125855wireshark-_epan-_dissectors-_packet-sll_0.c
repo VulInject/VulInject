@@ -1,0 +1,39 @@
+static void
+FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR1 *VAR5,
+VAR6 *VAR7, int VAR8, int VAR9, guint16 VAR10)
+{
+VAR6 *VAR11;
+ethertype_data_t VAR12;
+
+VAR11 = FUN2(VAR7, VAR8);
+if (VAR10 <= 1536) {	
+
+if (!FUN3(VAR13, VAR9,
+VAR11, VAR4, VAR2)) {
+FUN4(VAR4->VAR14, VAR4, VAR15, 0, FUN5((VAR16)VAR10));
+if (!FUN3(VAR17,
+VAR10, VAR11, VAR4, VAR2)) {
+FUN6(VAR11, VAR4, VAR2);
+}
+}
+} else {
+switch (VAR9) {
+
+case VAR18:
+
+FUN3(VAR19, VAR10,
+VAR11, VAR4, VAR2);
+break;
+
+default:
+VAR12.VAR20 = VAR10;
+VAR12.VAR21 = VAR8;
+VAR12.VAR5 = VAR5;
+VAR12.VAR22 = VAR23;
+VAR12.VAR24 = 0;
+
+FUN7(VAR25, VAR7, VAR4, VAR2, &VAR12);
+break;
+}
+}
+}

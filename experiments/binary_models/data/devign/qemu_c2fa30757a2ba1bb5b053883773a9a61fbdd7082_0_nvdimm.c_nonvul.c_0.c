@@ -1,0 +1,26 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4, hwaddr VAR5)
+{
+    VAR6 *VAR7 = FUN2(VAR2);
+    VAR8 *VAR9;
+    VAR10 *VAR11;
+    uint32_t VAR12;
+    int VAR13;
+    VAR9 = (VAR8 *)VAR4->VAR14;
+    FUN3(&VAR9->VAR15);
+    FUN3(&VAR9->VAR16);
+    FUN4("", VAR9->VAR15, VAR9->VAR16);
+    VAR12 = FUN5(VAR2, VAR9->VAR15, VAR9->VAR16);
+    if (VAR12 != VAR17)
+    {
+        FUN6(VAR12, VAR5);
+        return;
+    }
+    VAR13 = sizeof(*VAR11) + VAR9->VAR16;
+    assert(VAR13 <= 4096);
+    VAR11 = FUN7(VAR13);
+    VAR11->VAR18 = FUN8(VAR13);
+    VAR11->VAR19 = FUN8(VAR17);
+    VAR7->FUN9(VAR2, VAR11->VAR20, VAR9->VAR16, VAR9->VAR15);
+    FUN10(VAR5, VAR11, VAR13);
+    FUN11(VAR11);
+}

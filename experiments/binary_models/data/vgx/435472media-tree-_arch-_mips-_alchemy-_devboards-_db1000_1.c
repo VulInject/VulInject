@@ -1,0 +1,1 @@
+static int FUN1 ( const struct VAR1 * VAR2 , u8 VAR3 , u8 VAR4 ) { if ( ( VAR3 < 12 ) || ( VAR3 > 13 ) || VAR4 == 0 ) { return - 1 ; } if ( VAR3 == 13 ) { switch ( VAR4 ) { case 1 : return VAR5 ; case 2 : return VAR6 ; case 3 : return VAR7 ; case 4 : return VAR8 ; } } return - 1 ; }

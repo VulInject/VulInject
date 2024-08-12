@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , uint16 VAR3 ) { if ( ( VAR4 ) VAR3 <= VAR2 -> VAR5 ) { VAR2 -> VAR6 += VAR3 ; VAR2 -> VAR5 -= VAR3 ; } else { uint16 VAR7 ; VAR7 = VAR3 - VAR2 -> VAR5 ; if ( VAR7 <= VAR2 -> VAR8 ) { VAR2 -> VAR9 += VAR7 ; VAR2 -> VAR8 -= VAR7 ; VAR2 -> VAR10 = 0 ; } else { VAR2 -> VAR5 = 0 ; VAR2 -> VAR8 = 0 ; } } }

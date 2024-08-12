@@ -1,0 +1,1 @@
+errcode_t FUN1 ( const char * VAR1 , int * VAR2 ) { int VAR3 = 0 ; __u64 VAR4 , VAR5 ; HANDLE VAR6 ; BOOLEAN VAR7 ; * VAR2 = 0 ; if ( ! FUN2 ( VAR1 , VAR8 , & VAR6 , & VAR4 , & VAR5 , & VAR7 , & VAR3 ) ) { return VAR3 ; } * VAR2 &= FUN3 ( VAR6 ) ?VAR9 : 0 ; FUN4 ( VAR6 ) ; return 0 ; }

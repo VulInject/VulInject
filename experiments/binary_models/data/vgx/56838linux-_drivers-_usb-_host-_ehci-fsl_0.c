@@ -1,0 +1,96 @@
+static int FUN1(struct VAR1 *VAR2,
+enum fsl_usb2_phy_modes VAR3,
+unsigned int VAR4)
+{
+u32 VAR5, VAR6;
+struct VAR7 *VAR8 = FUN2(VAR2);
+void VAR9 *VAR10 = VAR2->VAR11;
+struct VAR12 *VAR13 = VAR2->VAR14.VAR15;
+struct VAR16 *VAR17 = FUN3(VAR13);
+
+if (VAR17->VAR18 < 0) {
+FUN4(VAR2->VAR14.VAR15, "");
+return -VAR19;
+}
+
+VAR5 = FUN5(VAR8, &VAR8->VAR11->VAR20[VAR4]);
+VAR5 &= ~(VAR21 | VAR22);
+
+switch (VAR3) {
+case VAR23:
+if (VAR17->VAR24 && VAR17->VAR18) {
+
+
+VAR6 = FUN6(VAR10 + VAR25);
+VAR6 &= ~(VAR26 | VAR27);
+FUN7(VAR6, VAR10 + VAR25);
+
+
+VAR6 = FUN6(VAR10 + VAR25);
+VAR6 &= ~VAR26;
+VAR6 |= VAR28 | VAR29;
+FUN7(VAR6, VAR10 + VAR25);
+}
+VAR5 |= VAR30;
+break;
+case VAR31:
+VAR5 |= VAR32;
+break;
+case VAR33:
+VAR5 |= VAR22;
+VAR34;
+case VAR35:
+
+if (VAR17->VAR36) {
+FUN4(VAR13, "");
+return -VAR37;
+}
+VAR34;
+case VAR38:
+
+if (VAR17->VAR18 > VAR39 &&
+VAR17->VAR24 && !FUN8(VAR2)) {
+FUN9(VAR13, "");
+return -VAR37;
+}
+
+if (VAR17->VAR24 && VAR17->VAR18) {
+
+VAR6 = FUN6(VAR10 + VAR25);
+VAR6 &= ~VAR26;
+VAR6 |= VAR27;
+FUN7(VAR6, VAR10 + VAR25);
+
+FUN10(VAR40);  
+}
+
+if (VAR17->VAR24) {
+VAR6 = FUN6(VAR10 + VAR25);
+VAR6 &= ~VAR26;
+VAR6 |= VAR41;
+FUN7(VAR6, VAR10 + VAR25);
+}
+VAR5 |= VAR42;
+break;
+case VAR43:
+break;
+}
+
+if (VAR17->VAR24 &&
+VAR17->VAR18 > VAR44 &&
+!FUN8(VAR2)) {
+FUN4(VAR2->VAR14.VAR15, "");
+return -VAR37;
+}
+
+FUN11(VAR8, VAR5, &VAR8->VAR11->VAR20[VAR4]);
+
+if (VAR3 != VAR23 && VAR17->VAR24) {
+VAR6 = FUN6(VAR10 + VAR25);
+VAR6 &= ~VAR26;
+VAR6 |= VAR29;
+FUN7(VAR6, VAR10 + VAR25);
+}
+
+return 0;
+}

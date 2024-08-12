@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = & VAR5 . VAR3 ; struct timespec64 VAR6 ; unsigned int VAR7 ; u64 VAR8 ; FUN2 ( VAR9 ) ; { VAR7 = FUN3 ( & VAR5 . VAR7 ) ; VAR2 -> VAR10 = VAR4 -> VAR11 ; VAR8 = FUN4 ( & VAR4 -> VAR12 ) ; VAR6 = VAR4 -> VAR13 ; } FUN5 ( & VAR5 . VAR7 , VAR7 ) ; VAR2 -> VAR10 += VAR6 . VAR10 ; FUN6 ( VAR2 , VAR8 + VAR6 . VAR14 ) ; }

@@ -1,0 +1,19 @@
+static int FUN1(VAR1 *VAR2)
+{
+    VAR3 *const VAR4 = &VAR2->VAR4;
+    PutBitContext VAR5;
+    int VAR6;
+    FUN2(&VAR5, VAR4->VAR7->VAR8, VAR4->VAR7->VAR9);
+    FUN3(&VAR5, 5, VAR4->VAR7->VAR10.VAR11 / VAR4->VAR7->VAR10.VAR12);
+    FUN3(&VAR5, 11, FUN4(VAR4->VAR13 / 1024, 2047));
+    FUN3(&VAR5, 1, VAR2->VAR14 = 1);
+    FUN3(&VAR5, 1, VAR4->VAR15);
+    FUN3(&VAR5, 1, VAR2->VAR16 = 1);
+    FUN3(&VAR5, 1, VAR2->VAR17 = 1);
+    FUN3(&VAR5, 1, VAR2->VAR18 = 0);
+    FUN3(&VAR5, 1, VAR2->VAR19 = 1);
+    FUN3(&VAR5, 3, VAR6 = 1);
+    FUN5(&VAR5);
+    VAR4->VAR20 = VAR4->VAR21 / VAR6;
+    return 0;
+}

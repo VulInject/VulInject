@@ -1,0 +1,45 @@
+static int FUN1(VAR1 *VAR2)
+{
+    int VAR3;
+    VAR4 *VAR5 = VAR2->VAR6;
+    GetBitContext VAR7;
+    static int VAR8 = 0;
+    if (VAR2->VAR9 < 2)
+    {
+        FUN2(VAR2, VAR10, "", VAR2->VAR9);
+        return -1;
+    }
+    memset(VAR5->VAR11, 0, sizeof(VAR5->VAR11));
+    FUN3(0xDEADBEEF, &VAR5->VAR12);
+    FUN4(&VAR5->VAR13, VAR2);
+    FUN5();
+    FUN6(&VAR7, VAR2->VAR14, 16);
+    FUN7(&VAR7, 3);
+    VAR5->VAR15 = FUN8(&VAR7, 5) + 1;
+    FUN7(&VAR7, 4);
+    VAR5->VAR16 = FUN9(&VAR7);
+    VAR5->VAR17 = 1 << (FUN8(&VAR7, 3) * 2);
+    if (VAR8)
+        return 0;
+    FUN2(VAR2, VAR18, "");
+    FUN10(&VAR19, VAR20, VAR21, VAR22, 1, 1, VAR23, 1, 1, VAR24);
+    FUN10(&VAR25, VAR26, VAR27, VAR28, 1, 1, VAR29, 1, 1, VAR24);
+    FUN10(&VAR30, VAR31, VAR32, VAR33, 1, 1, VAR34, 1, 1, VAR24);
+    FUN10(&VAR35[0], VAR36, VAR37, VAR38, 1, 1, VAR39, 1, 1, VAR24);
+    FUN10(&VAR35[1], VAR40, VAR41, VAR42, 1, 1, VAR43, 1, 1, VAR24);
+    FUN10(&VAR44[0], VAR45, VAR46, VAR47, 1, 1, VAR48, 1, 1, VAR24);
+    FUN10(&VAR44[1], VAR49, VAR50, VAR51, 1, 1, VAR52, 1, 1, VAR24);
+    FUN11(&VAR53[0], VAR54, VAR55, VAR56, 1, 1, VAR57, 1, 1, VAR58, 1, 1, VAR24);
+    FUN11(&VAR53[1], VAR59, VAR60, VAR61, 1, 1, VAR62, 1, 1, VAR63, 1, 1, VAR24);
+    for (VAR3 = 0; VAR3 < 2; VAR3++)
+    {
+        FUN10(&VAR64[VAR3], VAR65, VAR66, &VAR67[VAR3], 1, 1, &VAR68[VAR3], 1, 1, VAR24);
+        FUN10(&VAR69[VAR3], VAR70, VAR71, &VAR72[VAR3], 1, 1, &VAR73[VAR3], 1, 1, VAR24);
+        FUN10(&VAR74[0][VAR3], VAR75, VAR76, &VAR77[VAR3], 1, 1, &VAR78[VAR3], 1, 1, VAR24);
+        FUN10(&VAR74[1][VAR3], VAR79, VAR80, &VAR81[VAR3], 1, 1, &VAR82[VAR3], 1, 1, VAR24);
+        FUN10(&VAR74[2][VAR3], VAR83, VAR84, &VAR85[VAR3], 1, 1, &VAR86[VAR3], 1, 1, VAR24);
+        FUN10(&VAR74[3][VAR3], VAR87, VAR88, &VAR89[VAR3], 1, 1, &VAR90[VAR3], 1, 1, VAR24);
+    }
+    VAR8 = 1;
+    return 0;
+}

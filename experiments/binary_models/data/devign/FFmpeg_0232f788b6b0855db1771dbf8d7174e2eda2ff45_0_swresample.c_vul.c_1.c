@@ -1,0 +1,99 @@
+int FUN1(struct VAR1 *VAR2)
+{
+    VAR2->VAR3 = 0;
+    VAR2->VAR4 = 0;
+    VAR2->VAR5 = 0;
+    FUN2(&VAR2->VAR6);
+    FUN2(&VAR2->VAR7);
+    FUN2(&VAR2->VAR8);
+    FUN2(&VAR2->VAR9);
+    FUN3(&VAR2->VAR10);
+    FUN3(&VAR2->VAR11);
+    FUN3(&VAR2->VAR12);
+    VAR2->VAR13.VAR14 = FUN4(VAR2->VAR15);
+    VAR2->VAR16.VAR14 = FUN4(VAR2->VAR17);
+    VAR2->VAR15 = FUN5(VAR2->VAR15, 0);
+    VAR2->VAR17 = FUN5(VAR2->VAR17, 0);
+    if (VAR2->VAR15 >= VAR18)
+    {
+        FUN6(VAR2, VAR19, "", FUN7(VAR2->VAR15));
+        return FUN8(VAR20);
+    }
+    if (VAR2->VAR17 >= VAR18)
+    {
+        FUN6(VAR2, VAR19, "", FUN7(VAR2->VAR17));
+        return FUN8(VAR20);
+    }
+    if (VAR2->VAR21 != VAR22 && VAR2->VAR21 != VAR23)
+    {
+        FUN6(VAR2, VAR19, "", FUN7(VAR2->VAR21));
+        return FUN8(VAR20);
+    }
+    if (VAR2->VAR15 <= VAR22 || VAR2->VAR21 == VAR22)
+    {
+        VAR2->VAR21 = VAR22;
+    }
+    else
+        VAR2->VAR21 = VAR23;
+    if (VAR2->VAR24 != VAR2->VAR25 || (VAR2->VAR26 & VAR27))
+    {
+        VAR2->VAR28 = FUN9(VAR2->VAR28, VAR2->VAR24, VAR2->VAR25, 16, 10, 0, 0.8);
+    }
+    else
+        FUN10(&VAR2->VAR28);
+    if (VAR2->VAR21 != VAR22 && VAR2->VAR28)
+    {
+        FUN6(VAR2, VAR19, "");
+        return -1;
+    }
+    if (!VAR2->VAR29)
+        VAR2->VAR29 = VAR2->VAR13.VAR30;
+    if (VAR2->VAR29 && VAR2->VAR31 && VAR2->VAR29 != FUN11(VAR2->VAR31))
+    {
+        FUN6(VAR2, VAR32, "");
+        VAR2->VAR31 = 0;
+    }
+    if (!VAR2->VAR31)
+        VAR2->VAR31 = FUN12(VAR2->VAR29);
+    if (!VAR2->VAR33)
+        VAR2->VAR33 = FUN12(VAR2->VAR16.VAR30);
+    VAR2->VAR34 = VAR2->VAR33 != VAR2->VAR31 || VAR2->VAR35 != 1.0;
+    if (!VAR2->VAR13.VAR30)
+        VAR2->VAR13.VAR30 = FUN11(VAR2->VAR31);
+    if (!VAR2->VAR29)
+        VAR2->VAR29 = VAR2->VAR13.VAR30;
+    if (!VAR2->VAR16.VAR30)
+        VAR2->VAR16.VAR30 = FUN11(VAR2->VAR33);
+    FUN13(VAR2->VAR13.VAR30);
+    FUN13(VAR2->VAR29);
+    FUN13(VAR2->VAR16.VAR30);
+    VAR2->VAR36 = VAR37 * VAR2->VAR16.VAR30 / VAR2->VAR13.VAR30 - VAR37 < VAR2->VAR24 / (float)VAR2->VAR25 - 1.0;
+    VAR2->VAR13.VAR38 = FUN14(VAR2->VAR15);
+    VAR2->VAR39 = FUN14(VAR2->VAR21);
+    VAR2->VAR16.VAR38 = FUN14(VAR2->VAR17);
+    if (!VAR2->VAR28 && !VAR2->VAR34 && !VAR2->VAR40)
+    {
+        VAR2->VAR12 = FUN15(VAR2->VAR17, VAR2->VAR15, VAR2->VAR13.VAR30, NULL, 0);
+        return 0;
+    }
+    VAR2->VAR10 = FUN15(VAR2->VAR21, VAR2->VAR15, VAR2->VAR29, VAR2->VAR40, 0);
+    VAR2->VAR11 = FUN15(VAR2->VAR17, VAR2->VAR21, VAR2->VAR16.VAR30, NULL, 0);
+    VAR2->VAR6 = VAR2->VAR13;
+    VAR2->VAR8 = VAR2->VAR16;
+    VAR2->VAR7 = VAR2->VAR13;
+    VAR2->VAR9 = VAR2->VAR13;
+    if (VAR2->VAR40)
+    {
+        VAR2->VAR6.VAR30 = VAR2->VAR7.VAR30 = VAR2->VAR9.VAR30 = VAR2->VAR29;
+    }
+    if (!VAR2->VAR36)
+    {
+        VAR2->VAR7.VAR30 = VAR2->VAR16.VAR30;
+        VAR2->VAR9.VAR30 = VAR2->VAR16.VAR30;
+    }
+    VAR2->VAR9.VAR38 = VAR2->VAR6.VAR38 = VAR2->VAR7.VAR38 = VAR2->VAR8.VAR38 = VAR2->VAR39;
+    VAR2->VAR9.VAR14 = VAR2->VAR6.VAR14 = VAR2->VAR7.VAR14 = VAR2->VAR8.VAR14 = 1;
+    if (VAR2->VAR34)
+        return FUN16(VAR2);
+    return 0;
+}

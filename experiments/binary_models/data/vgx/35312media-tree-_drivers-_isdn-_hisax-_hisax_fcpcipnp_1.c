@@ -1,0 +1,1 @@
+static irqreturn_t FUN1 ( int VAR1 , void * VAR2 ) { struct VAR3 * VAR4 = VAR2 ; unsigned char VAR5 ; VAR5 = FUN2 ( VAR4 -> VAR6 + VAR7 ) ; FUN3 ( 2 , "" , VAR5 ) ; if ( VAR5 & VAR8 ) { FUN4 ( & VAR4 -> VAR9 ) ; } if ( VAR5 & VAR10 ) { FUN5 ( VAR4 ) ; } if ( VAR5 & VAR8 ) { FUN4 ( & VAR4 -> VAR9 ) ; } return VAR11 ; }

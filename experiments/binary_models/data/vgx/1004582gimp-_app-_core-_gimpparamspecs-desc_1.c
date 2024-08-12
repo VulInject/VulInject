@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * VAR2 = FUN2 ( VAR3 ) ; const VAR4 * VAR5 = FUN3 ( VAR3 ) ; if ( VAR2 -> VAR6 == - VAR7 ) { return FUN4 ( "" , VAR5 , FUN5 ( VAR3 ) , VAR2 -> VAR8 ) ; } if ( VAR2 -> VAR8 == VAR7 ) { return FUN4 ( "" , VAR5 , FUN5 ( VAR3 ) , VAR2 -> VAR6 ) ; } return FUN4 ( "" , VAR5 , VAR2 -> VAR6 , FUN5 ( VAR3 ) , VAR2 -> VAR8 ) ; }

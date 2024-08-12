@@ -1,0 +1,30 @@
+VAR1
+FUN1(const struct VAR2 *VAR3,
+const VAR4 *VAR5, unsigned long VAR6,
+const VAR4 *VAR7, const VAR4 *VAR8)
+{
+krb5_keyblock VAR9;
+char VAR10[128];
+krb5_data VAR11;
+krb5_crypto_iov VAR12;
+krb5_error_code VAR13;
+
+assert(VAR3->VAR14 <= sizeof(VAR10));
+if (VAR7->VAR15 > VAR3->VAR16) {
+VAR11 = FUN2(VAR10, VAR3->VAR14);
+VAR12.VAR17 = VAR18;
+VAR12.VAR19 = *VAR7;
+VAR13 = VAR3->FUN3(&VAR12, 1, &VAR11);
+if (VAR13)
+return VAR13;
+VAR9.VAR15 = VAR11.VAR15;
+VAR9.VAR20 = (VAR21 *) VAR11.VAR19;
+} else {
+VAR9.VAR15 = VAR7->VAR15;
+VAR9.VAR20 = (VAR21 *) VAR7->VAR19;
+}
+VAR9.VAR22 = VAR23;
+
+VAR13 = FUN4(VAR3, &VAR9, VAR8, VAR6, VAR5);
+return VAR13;
+}

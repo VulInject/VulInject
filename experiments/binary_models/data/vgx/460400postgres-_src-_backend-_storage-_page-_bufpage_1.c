@@ -1,0 +1,1 @@
+Page FUN1 ( Page VAR1 ) { Size VAR2 ; Page VAR3 ; VAR2 = FUN2 ( VAR1 , NULL ) ; VAR3 = ( VAR4 ) FUN3 ( VAR2 ) ; return VAR3 ; }

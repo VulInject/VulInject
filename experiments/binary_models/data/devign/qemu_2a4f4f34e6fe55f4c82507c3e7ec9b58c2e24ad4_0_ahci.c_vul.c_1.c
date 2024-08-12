@@ -1,0 +1,23 @@
+void FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 *VAR6, int VAR7)
+{
+    VAR8 *VAR9;
+    int VAR10;
+    VAR2->VAR6 = VAR6;
+    VAR2->VAR7 = VAR7;
+    VAR2->VAR11 = FUN2(sizeof(VAR12) * VAR7);
+    FUN3(VAR2);
+    FUN4(&VAR2->VAR13, &VAR14, VAR2, "", VAR15);
+    FUN4(&VAR2->VAR16, &VAR17, VAR2, "", 32);
+    VAR9 = FUN5(VAR18, VAR2, VAR2->VAR7);
+    for (VAR10 = 0; VAR10 < VAR2->VAR7; VAR10++)
+    {
+        VAR12 *VAR19 = &VAR2->VAR11[VAR10];
+        FUN6(&VAR19->VAR20, VAR4, VAR10);
+        FUN7(&VAR19->VAR20, VAR9[VAR10]);
+        VAR19->VAR21 = VAR2;
+        VAR19->VAR22 = VAR10;
+        VAR19->VAR20.VAR6 = &VAR19->VAR6;
+        VAR19->VAR20.VAR6->VAR23 = &VAR24;
+        VAR19->VAR25.VAR26 = VAR27 | VAR28;
+    }
+}

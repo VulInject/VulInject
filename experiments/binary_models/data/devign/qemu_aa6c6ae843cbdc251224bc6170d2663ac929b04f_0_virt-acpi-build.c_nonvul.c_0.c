@@ -1,0 +1,1 @@
+static VAR1 *FUN1(VAR2 *VAR3, VAR4 *VAR5, const char *VAR6, uint64_t VAR7) { return FUN2(VAR6, VAR5->VAR8, FUN3(VAR5), VAR7, -1, VAR6, VAR9, VAR3, NULL); }

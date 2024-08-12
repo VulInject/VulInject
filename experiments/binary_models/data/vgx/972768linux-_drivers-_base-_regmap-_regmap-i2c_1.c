@@ -1,0 +1,1 @@
+static int FUN1 ( void * VAR1 , const void * VAR2 , size_t VAR3 ) { struct VAR4 * VAR5 = VAR1 ; struct VAR6 * VAR7 = FUN2 ( VAR5 ) ; -- VAR3 ; return FUN3 ( VAR7 , ( ( VAR8 * ) VAR2 ) [ 0 ] , VAR3 , ( ( VAR8 * ) VAR2 + 1 ) ) ; }

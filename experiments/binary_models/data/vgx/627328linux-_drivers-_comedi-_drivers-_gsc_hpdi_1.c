@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , struct VAR5 * VAR6 , unsigned int * VAR7 ) { int VAR8 ; switch ( VAR7 [ 0 ] ) { case VAR9 : VAR8 = FUN2 ( VAR2 , VAR7 [ 1 ] ) ; VAR7 [ 1 ] = VAR8 ; break ; default : VAR8 = FUN3 ( VAR2 , VAR4 , VAR6 , VAR7 , 0xffffffff ) ; if ( VAR8 ) { return VAR8 ; } break ; } return VAR6 -> VAR10 ; }

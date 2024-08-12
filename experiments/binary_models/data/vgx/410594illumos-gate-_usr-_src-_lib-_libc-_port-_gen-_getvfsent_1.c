@@ -1,0 +1,1 @@
+static int FUN1 ( char * VAR1 , VAR2 * VAR3 ) { char * VAR4 ; while ( ( VAR1 = fgets ( VAR1 , VAR5 , VAR3 ) ) != NULL ) { for ( VAR4 = VAR1 ; * VAR4 == '' || * VAR4 == '' ; VAR4 ++ ) { } if ( * VAR4 != '' && * VAR4 != '' ) { return ( 0 ) ; } } return ( - 1 ) ; }

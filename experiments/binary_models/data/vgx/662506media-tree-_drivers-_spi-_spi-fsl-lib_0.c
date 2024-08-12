@@ -1,0 +1,14 @@
+}								\
+FUN1(VAR1##VAR2);
+
+FUN2(VAR3)
+FUN2(VAR4)
+FUN2(VAR5)
+FUN3(VAR3)
+FUN3(VAR4)
+FUN3(VAR5)
+
+struct VAR6 *FUN4(struct VAR7 *VAR8)
+{
+return FUN5(VAR8, struct VAR6, VAR8);
+}

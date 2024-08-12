@@ -1,0 +1,1 @@
+void FUN1 ( cnodeid_t VAR1 ) { nasid_t VAR2 ; int VAR3 ; VAR2 = FUN2 ( VAR1 ) ; if ( VAR2 == VAR4 ) { return ; } for ( VAR3 = 0 ; VAR3 < FUN3 ( VAR3 ) ; VAR3 ++ ) { FUN4 ( VAR2 , VAR3 ) ; FUN5 ( VAR2 , VAR3 ) ; } }

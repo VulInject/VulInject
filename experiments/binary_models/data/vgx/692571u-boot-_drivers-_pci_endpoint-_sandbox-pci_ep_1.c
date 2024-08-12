@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , uint VAR3 , uint VAR4 ) { struct VAR5 * VAR6 = FUN2 ( VAR2 ) ; VAR6 -> VAR7 = VAR4 ; return 0 ; }

@@ -1,0 +1,1 @@
+static inline int FUN1(int VAR1) { return ((VAR1 + 1) * 21845 + 10922) >> 16; }

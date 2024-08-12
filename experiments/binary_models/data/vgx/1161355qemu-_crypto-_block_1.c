@@ -1,0 +1,1 @@
+bool FUN1 ( QCryptoBlockFormat VAR1 , const VAR2 * VAR3 , size_t VAR4 ) { const VAR5 * VAR6 ; VAR6 = VAR7 [ VAR1 ] ; return VAR6 -> FUN2 ( VAR3 , VAR4 ) ; }

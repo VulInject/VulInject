@@ -1,0 +1,1 @@
+static unsigned long FUN1 ( unsigned long VAR1 , unsigned long VAR2 ) { unsigned long VAR3 ; VAR3 = VAR2 - VAR4 ; if ( VAR1 < VAR3 ) { VAR3 = VAR1 ; } return FUN2 ( VAR3 , VAR5 ) ; }

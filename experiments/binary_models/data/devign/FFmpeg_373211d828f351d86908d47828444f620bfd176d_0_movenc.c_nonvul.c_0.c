@@ -1,0 +1,18 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    int32_t VAR5 = FUN2(VAR4->VAR6->VAR7.VAR8, VAR4->VAR6->VAR5, VAR4->VAR6->VAR7.VAR9);
+    int64_t VAR10 = FUN3(VAR2);
+    FUN4(VAR2, 0);
+    FUN5(VAR2, "");
+    FUN4(VAR2, 20);
+    FUN5(VAR2, "");
+    FUN4(VAR2, 0);
+    FUN4(VAR2, VAR5 << 16);
+    FUN4(VAR2, VAR4->VAR6->VAR11 << 16);
+    FUN4(VAR2, 20);
+    FUN5(VAR2, "");
+    FUN4(VAR2, 0);
+    FUN4(VAR2, VAR4->VAR6->VAR5 << 16);
+    FUN4(VAR2, VAR4->VAR6->VAR11 << 16);
+    return FUN6(VAR2, VAR10);
+}

@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( const char * VAR2 ) { char * VAR3 ; VAR1 * VAR4 = FUN2 ( ) ; if ( ! VAR4 ) { return NULL ; } VAR3 = FUN3 ( "" VAR5 "" , VAR2 , VAR6 ) ; if ( ! FUN4 ( VAR4 , VAR7 , VAR3 ) ) { VAR8 } free ( VAR3 ) ; } while ( 0 ) { FUN5 ( "" , "" ) ; } FUN5 ( "" , "" ) ; FUN5 ( "" , "" ) ; FUN5 ( "" , "" ) ; return VAR4 ; error FUN6 ( VAR4 ) ; return NULL ;

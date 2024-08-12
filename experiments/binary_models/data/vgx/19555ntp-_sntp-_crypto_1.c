@@ -1,0 +1,1 @@
+int FUN1 ( const void * VAR1 , int VAR2 , int VAR3 , const struct VAR4 * VAR5 ) { int VAR6 ; int VAR7 ; char VAR8 [ 20 ] ; const VAR9 * VAR10 ; VAR10 = VAR1 ; VAR6 = FUN2 ( VAR10 , VAR2 , sizeof ( VAR8 ) , VAR5 , VAR8 ) ; if ( ! VAR6 ) { VAR7 = VAR11 ; } else { VAR7 = ! memcmp ( VAR8 , VAR10 + VAR2 + 4 , VAR6 ) ; } return VAR7 ; }

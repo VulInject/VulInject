@@ -1,0 +1,105 @@
+int
+FUN1(int VAR1, int VAR2)
+{
+struct VAR3	*VAR4, *VAR5;
+int		 VAR6, VAR7;
+struct VAR8	*VAR9;
+int		 VAR10, VAR11;
+static int	 VAR12 = VAR13;
+int		 VAR14;
+
+if (VAR2 < 0)
+return (VAR13);
+
+VAR4 = VAR15->VAR16;
+
+
+if ((VAR4 == NULL && VAR12 == VAR17) ||  VAR18 == 0) {
+VAR4 = FUN2(&VAR15->VAR19);
+VAR12 = VAR17;
+}
+
+VAR7 = VAR17;
+while (VAR2--) {
+
+while (VAR4 && VAR4->VAR20 == VAR21) {
+VAR5 = FUN3(VAR4, VAR22);
+FUN4(&VAR15->VAR19, VAR4, VAR22);
+FUN5(VAR4);
+VAR4 = VAR5;
+}
+
+if (VAR4 == NULL) {
+FUN6();
+FUN7("");
+VAR7 = VAR13;
+VAR12 = VAR17;
+break;
+}
+VAR12 = VAR13;
+
+
+
+FUN8(VAR23, 1);
+
+VAR11 = VAR24;
+VAR24 = VAR13;
+
+VAR6 = 0;
+do {
+
+if (VAR4->VAR20 != VAR21 && VAR4->VAR20 != VAR25) {
+if (FUN9(VAR4->VAR26, &VAR9,
+&VAR10, &VAR14) == VAR13) {
+FUN6();
+FUN7("");
+VAR7 = VAR13;
+break;
+}
+VAR27->VAR28 = VAR9;
+VAR27->VAR29 = VAR10;
+VAR27->VAR30 = VAR27->VAR31;
+VAR27->VAR31 = VAR14;
+}
+
+
+switch (VAR4->VAR20) {
+case VAR32:
+FUN10(VAR4->VAR33.VAR34, VAR35);
+break;
+case VAR36:
+VAR9 = VAR27->VAR28;
+VAR10 = VAR27->VAR29;
+FUN11(VAR4->VAR37,
+VAR4->VAR33.VAR34);
+VAR27->VAR28 = VAR9;
+VAR27->VAR29 = VAR10;
+break;
+case VAR38:
+FUN11(VAR4->VAR37,
+VAR4->VAR33.VAR34);
+break;
+case VAR21:
+VAR6 = 1;
+break;
+case VAR25:
+VAR15->VAR39 &= ~VAR40;
+break;
+default:
+break;
+}
+
+
+VAR4 = FUN3(VAR4, VAR22);
+} while (VAR4 != NULL && !VAR6);
+
+VAR24 = VAR11;
+FUN8(VAR23, 1);
+
+FUN7("");
+}
+
+VAR15->VAR16 = VAR4;
+
+return (VAR7);
+}

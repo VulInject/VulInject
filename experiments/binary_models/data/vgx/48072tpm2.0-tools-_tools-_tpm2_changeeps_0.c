@@ -1,0 +1,43 @@
+static VAR1 FUN1(VAR2 *VAR3) {
+
+
+
+
+
+
+tool_rc VAR4 = FUN2(VAR3, VAR5.VAR6,
+&VAR5.VAR7, false);
+if (VAR4 != VAR8) {
+FUN3("");
+return VAR4;
+}
+
+
+VAR4 = FUN4(VAR3, VAR5.VAR9,
+VAR5.VAR10, VAR5.VAR11, VAR5.VAR12);
+if (VAR4 != VAR8) {
+return VAR4;
+}
+
+
+
+
+VAR13 *VAR14[VAR15] = {
+VAR5.VAR7,
+VAR5.VAR12[0],
+VAR5.VAR12[1]
+};
+
+
+const char **VAR16 = VAR5.VAR17 ? &VAR5.VAR17 : 0;
+const char **VAR18 = VAR5.VAR19 ? &VAR5.VAR19 : 0;
+
+VAR5.VAR20 = FUN5(VAR3,
+VAR16, &VAR5.VAR21, VAR18, &VAR5.VAR22, VAR14);
+
+
+VAR5.VAR23 = (VAR5.VAR17 && !VAR5.VAR19) ?
+false : true;
+
+return VAR8;
+}

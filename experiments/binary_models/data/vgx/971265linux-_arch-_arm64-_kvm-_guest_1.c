@@ -1,0 +1,1 @@
+unsigned long FUN1 ( struct VAR1 * VAR2 ) { cfs_time_t VAR3 = 0 ; VAR3 += FUN2 ( VAR2 ) ; VAR3 += FUN3 ( VAR2 ) ; VAR3 += FUN4 ( VAR2 ) ; VAR3 += FUN5 ( VAR2 ) ; VAR3 += VAR4 ; return VAR3 ; }

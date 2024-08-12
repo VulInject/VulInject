@@ -1,0 +1,1 @@
+static int FUN1 ( u8 VAR1 [ 8 ] ) { const char * VAR2 , * VAR3 ; size_t VAR4 , VAR5 ; for ( VAR4 = 0 ; VAR4 < VAR6 ; VAR4 ++ ) { VAR3 = VAR7 + ( 8 * VAR4 ) ; VAR2 = FUN2 ( VAR3 , 8 , VAR8 ) ; VAR5 = ( VAR2 ) ?VAR2 - VAR3 : 8 ; if ( 0 == memcmp ( VAR1 , VAR3 , VAR5 ) ) { return 0 ; } } return 1 ; }

@@ -1,0 +1,58 @@
+static VAR1 FUN1( VAR2 *VAR3 )
+{
+PaError VAR4 = VAR5;
+VAR6 *VAR7 = (VAR6*)VAR3;
+
+VAR8;
+
+if (VAR7->VAR9 != NULL)
+{
+return VAR10;
+}
+
+VAR7->VAR11 = 0;
+VAR7->VAR12 = 0;
+
+FUN2(VAR7);
+
+FUN3( &VAR7->VAR13 );
+
+VAR7->VAR14 = FUN4(FUN5());
+
+
+
+VAR7->VAR9 = FUN6 (NULL, 0, VAR15, VAR7, VAR16, NULL);
+if(VAR7->VAR9 == NULL)
+{
+VAR4 = VAR17;
+goto VAR18;
+}
+FUN7(VAR7->VAR9);
+
+switch (FUN8(2, VAR7->VAR19, VAR20, 5000))
+{
+case VAR21 + VAR22:
+FUN9((""));
+VAR4 = VAR5;
+
+VAR7->VAR23 = 1;
+break;
+case VAR21 + VAR24:
+FUN9(("", VAR7->VAR25));
+VAR4 = VAR7->VAR25;
+
+FUN10(VAR7->VAR9, 200);
+FUN11(VAR7->VAR9);
+VAR7->VAR9 = 0;
+break;
+case VAR26:
+default:
+VAR4 = VAR27;
+FUN12(VAR4, "");
+break;
+}
+
+VAR18:
+VAR28;
+return VAR4;
+}

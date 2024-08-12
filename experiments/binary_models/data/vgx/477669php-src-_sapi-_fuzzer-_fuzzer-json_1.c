@@ -1,0 +1,1 @@
+int FUN1 ( int * argc , char * * * argv ) { FUN2 ( NULL , NULL ) ; return 0 ; }

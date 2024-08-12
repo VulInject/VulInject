@@ -1,0 +1,1 @@
+static bool FUN1 ( char VAR1 , char * VAR2 ) { bool VAR3 = true ; switch ( VAR1 ) { case '' : VAR4 . VAR5 = VAR2 ; break ; case '' : VAR4 . VAR6 = VAR2 ; break ; case '' : VAR3 = FUN2 ( VAR2 , NULL ) ; break ; } return VAR3 ; }

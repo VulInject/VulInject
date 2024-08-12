@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = VAR2 -> VAR4 ; struct VAR5 * VAR6 = ( VAR5 * ) VAR4 -> VAR7 ; VAR4 -> VAR8 = VAR9 << 16 ; if ( VAR6 ) { int VAR10 = sizeof ( VAR5 ) < VAR11 ?sizeof ( VAR5 ) : VAR11 ; memcpy ( VAR6 , VAR2 -> VAR12 . VAR13 , VAR10 ) ; VAR6 -> VAR14 = VAR15 ; VAR6 -> VAR16 = 1 ; } }

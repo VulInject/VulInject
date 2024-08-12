@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , u32 VAR5 ) { u32 VAR6 ; VAR6 = FUN2 ( VAR2 , VAR4 ) ; FUN3 ( VAR2 , VAR7 , "" , VAR4 -> VAR8 , VAR5 ) ; VAR4 -> VAR9 . VAR10 = FUN4 ( VAR5 >> 2 ) ; FUN5 ( VAR2 , FUN6 ( VAR4 ) + FUN7 ( VAR11 , VAR10 ) , FUN8 ( VAR4 -> VAR9 . VAR10 ) ) ; }

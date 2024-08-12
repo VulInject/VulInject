@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 ) { unsigned long VAR3 ; void * VAR4 ; * VAR2 = 0 ; if ( ! FUN2 ( ) ) { return 0 ; } VAR3 = VAR5 ?VAR6 : VAR7 ; VAR4 = FUN3 ( VAR3 , VAR8 ) ; if ( ! VAR4 ) { return - VAR9 ; } FUN4 ( VAR4 , NULL ) ; * VAR2 = FUN5 ( VAR4 ) ; if ( VAR5 ) { * VAR2 |= FUN6 ( VAR6 ) ; } return 0 ; }

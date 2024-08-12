@@ -1,0 +1,65 @@
+static void FUN1(const VAR1 *VAR2, VAR3 *VAR4, bool VAR5)
+{
+    hwaddr VAR6 = VAR2->VAR7[VAR8].VAR9;
+    hwaddr VAR10 = VAR2->VAR7[VAR8].VAR11;
+    hwaddr VAR12 = VAR2->VAR7[VAR13].VAR9;
+    hwaddr VAR14 = VAR2->VAR7[VAR13].VAR11;
+    hwaddr VAR15 = VAR2->VAR7[VAR16].VAR9;
+    hwaddr VAR17 = VAR2->VAR7[VAR16].VAR11;
+    hwaddr VAR18 = VAR2->VAR7[VAR19].VAR9;
+    hwaddr VAR20 = VAR2->VAR7[VAR19].VAR11;
+    hwaddr VAR9 = VAR6;
+    int VAR21 = VAR20 / VAR22;
+    int VAR23 = VAR2->VAR24[VAR25];
+    VAR26 *VAR27;
+    VAR26 *VAR28;
+    VAR26 *VAR29;
+    VAR26 *VAR30;
+    VAR31 *VAR32;
+    char *VAR33;
+    int VAR34;
+    VAR32 = FUN2(NULL, VAR35);
+    FUN3(VAR32);
+    VAR29 = FUN4(VAR26, 1);
+    VAR30 = FUN5(FUN6(VAR32), 0);
+    FUN7(VAR29, FUN8(VAR32), "", VAR30, 0, VAR20);
+    FUN9(FUN10(), VAR18, VAR29);
+    VAR27 = FUN4(VAR26, 1);
+    VAR28 = FUN5(FUN6(VAR32), 1);
+    FUN7(VAR27, FUN8(VAR32), "", VAR28, VAR6, VAR10);
+    FUN9(FUN10(), VAR6, VAR27);
+    if (VAR5)
+    {
+        VAR26 *VAR36 = FUN4(VAR26, 1);
+        FUN7(VAR36, FUN8(VAR32), "", VAR28, VAR12, VAR14);
+        FUN9(FUN10(), VAR12, VAR36);
+    }
+    FUN11(FUN6(VAR32), 2, VAR15);
+    for (VAR34 = 0; VAR34 < VAR37; VAR34++)
+    {
+        FUN12(FUN6(VAR32), VAR34, VAR4[VAR23 + VAR34]);
+    }
+    VAR33 = FUN13("" VAR38, VAR9);
+    FUN14(VAR2->VAR39, VAR33);
+    FUN15(VAR2->VAR39, VAR33, "", "");
+    FUN15(VAR2->VAR39, VAR33, "", "");
+    FUN16(VAR2->VAR39, VAR33, "", 3);
+    FUN16(VAR2->VAR39, VAR33, "", 2);
+    FUN17(VAR2->VAR39, VAR33, "", 0, VAR21 - 1);
+    if (VAR2->VAR40)
+    {
+        FUN17(VAR2->VAR39, VAR33, "", VAR2->VAR40);
+    }
+    FUN18(VAR2->VAR39, VAR33, "", 2, VAR18, 2, VAR20);
+    if (VAR5)
+    {
+        FUN18(VAR2->VAR39, VAR33, "", 1, VAR41, 2, 0, 2, VAR15, 2, VAR17, 1, VAR42, 2, VAR6, 2, VAR6, 2, VAR10, 1, VAR43, 2, VAR12, 2, VAR12, 2, VAR14);
+    }
+    else
+    {
+        FUN18(VAR2->VAR39, VAR33, "", 1, VAR41, 2, 0, 2, VAR15, 2, VAR17, 1, VAR42, 2, VAR6, 2, VAR6, 2, VAR10);
+    }
+    FUN16(VAR2->VAR39, VAR33, "", 1);
+    FUN19(VAR2, VAR2->VAR44, VAR23, VAR33);
+    FUN20(VAR33);
+}

@@ -1,0 +1,74 @@
+static void             FUN1         (VAR1 *VAR2,
+VAR3        *VAR4);
+static VAR5 * FUN2  (VAR1 *VAR2);
+static gboolean         FUN3          (VAR1 *VAR2,
+gdouble         VAR6,
+gdouble         VAR7);
+
+
+FUN4 (VAR8, VAR9,
+VAR10)
+
+
+
+
+
+static void
+FUN5 (VAR11 *VAR12)
+{
+VAR13        *VAR14 = FUN6 (VAR12);
+VAR15 *VAR16   = FUN7 (VAR12);
+
+VAR14->VAR17 = VAR18;
+VAR14->VAR19 = VAR20;
+
+VAR16->VAR21           = VAR22;
+VAR16->VAR23    = VAR24;
+VAR16->VAR25            = VAR26;
+
+FUN8 (VAR14, VAR27,
+FUN9 ("", NULL, NULL,
+VAR28,
+VAR29,
+VAR30));
+
+FUN8 (VAR14, VAR31,
+FUN10 ("", NULL, NULL,
+-VAR32,
++VAR32,
+0.0,
+VAR30));
+
+FUN8 (VAR14, VAR33,
+FUN10 ("", NULL, NULL,
+-VAR32,
++VAR32,
+0.0,
+VAR30));
+
+FUN8 (VAR14, VAR34,
+FUN10 ("", NULL, NULL,
+0.0,
++VAR32,
+0.0,
+VAR30));
+
+FUN8 (VAR14, VAR35,
+FUN10 ("", NULL, NULL,
+-1.0,
++1.0,
+0.0,
+VAR30));
+
+FUN8 (VAR14, VAR36,
+FUN10 ("", NULL, NULL,
+-VAR32,
++VAR32,
+0.0,
+VAR30));
+
+FUN8 (VAR14, VAR37,
+FUN11 ("", NULL, NULL,
+VAR38,
+VAR30));
+}

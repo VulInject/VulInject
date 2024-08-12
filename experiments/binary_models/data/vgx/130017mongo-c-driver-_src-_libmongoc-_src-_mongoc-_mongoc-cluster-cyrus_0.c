@@ -1,0 +1,121 @@
+FUN1 (VAR1 *VAR2,
+VAR3 *VAR4,
+VAR5 *VAR6,
+VAR7 *VAR8)
+{
+mongoc_cmd_parts_t VAR9;
+mongoc_cyrus_t VAR10;
+bson_iter_t VAR11;
+bool VAR12 = false;
+const char *VAR13;
+
+VAR14 *VAR15 = NULL;
+uint32_t VAR16 = 0;
+
+VAR14 *VAR17 = NULL;
+uint32_t VAR18 = 0;
+mc_shared_tpld VAR19 = VAR20;
+
+bson_t VAR21;
+bson_t VAR22;
+int VAR23 = 0;
+VAR24 *VAR25;
+
+FUN2 (VAR2);
+FUN2 (VAR4);
+
+if (!FUN3 (
+&VAR10, VAR2, VAR4, VAR6->VAR26.VAR26, VAR8)) {
+return false;
+}
+
+for (;;) {
+FUN4 (
+&VAR9, VAR2->VAR27, "", VAR28, &VAR21);
+VAR9.VAR29 = true;
+
+
+FUN5 (VAR17);
+VAR17 = NULL;
+VAR18 = 0;
+if (!FUN6 (
+&VAR10, VAR15, VAR16, &VAR17, &VAR18, VAR8)) {
+goto VAR30;
+}
+
+FUN7 (&VAR21);
+
+if (VAR10.VAR31 == 1) {
+FUN8 (&VAR21,
+VAR10.VAR32.VAR33,
+(const char *) VAR17,
+VAR18);
+} else {
+FUN9 (
+&VAR21, VAR23, (const char *) VAR17, VAR18);
+}
+
+FUN10 ("", VAR10.VAR31);
+
+FUN11 (&VAR19, VAR2->VAR27->VAR34);
+VAR25 = FUN12 (VAR19.VAR35, VAR6, VAR4);
+
+if (!FUN13 (&VAR9, VAR25, VAR8)) {
+FUN14 (VAR25);
+FUN15 (&VAR21);
+goto VAR30;
+}
+
+if (!FUN16 (
+VAR2, &VAR9.VAR36, &VAR22, VAR8)) {
+FUN14 (VAR25);
+FUN15 (&VAR21);
+FUN15 (&VAR22);
+goto VAR30;
+}
+FUN14 (VAR25);
+
+FUN15 (&VAR21);
+
+if (FUN17 (&VAR11, &VAR22, "") &&
+FUN18 (&VAR11)) {
+FUN15 (&VAR22);
+break;
+}
+
+VAR23 = FUN19 (&VAR22);
+
+if (!FUN17 (&VAR11, &VAR22, "") ||
+!FUN20 (&VAR11)) {
+FUN21 ("");
+FUN15 (&VAR22);
+FUN22 (VAR8,
+VAR37,
+VAR38,
+"");
+goto VAR30;
+}
+
+VAR13 = FUN23 (&VAR11, &VAR16);
+FUN5 (VAR15);
+
+VAR15 = FUN24 (VAR16 + 1);
+memcpy (VAR15, VAR13, VAR16 + 1);
+
+FUN15 (&VAR22);
+FUN25 (&VAR9);
+}
+
+FUN10 ("", "");
+
+VAR12 = true;
+
+VAR30:
+FUN5 (VAR15);
+FUN5 (VAR17);
+FUN26 (&VAR10);
+FUN25 (&VAR9);
+FUN27 (&VAR19);
+
+return VAR12;
+}

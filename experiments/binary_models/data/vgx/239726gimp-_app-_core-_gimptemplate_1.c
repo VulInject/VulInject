@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * private ; FUN2 ( , ) private = FUN3 ( ) ; return NULL ; }

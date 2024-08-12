@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , u32 VAR3 ) { struct VAR4 * VAR5 = VAR2 -> VAR6 ; struct VAR7 * VAR8 ; FUN2 ( & VAR5 -> mutex ) ; VAR8 = FUN3 ( VAR5 , VAR3 ) ; if ( VAR8 ) { FUN4 ( & VAR8 -> VAR9 ) ; } FUN5 ( & VAR5 -> mutex ) ; FUN6 ( VAR8 ) ; return FUN7 ( VAR2 , VAR3 ) ; }

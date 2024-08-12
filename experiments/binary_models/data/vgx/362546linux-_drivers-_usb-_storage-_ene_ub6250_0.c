@@ -1,0 +1,19 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = (struct VAR3 *) VAR2->VAR5;
+
+FUN2(VAR2); 
+FUN3(VAR2); 
+
+
+VAR4->VAR6.VAR7 = 0;
+VAR4->VAR6.VAR8 = 0;
+VAR4->VAR6.VAR9 = 0;
+
+VAR4->VAR6.VAR10 = 0;
+VAR4->VAR6.VAR11 = 0;
+VAR4->VAR6.VAR12 = 0;
+
+VAR4->VAR6.VAR13 = 0;
+VAR4->VAR6.VAR14 = 0;
+}

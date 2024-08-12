@@ -1,0 +1,1 @@
+static void FUN1 ( const void * VAR1 , void * VAR2 ) { if ( strcmp ( "" , ( const char * ) VAR1 ) == 0 ) { FUN2 ( & VAR3 , NULL ) ; FUN3 ( "" , VAR4 ) ; } }

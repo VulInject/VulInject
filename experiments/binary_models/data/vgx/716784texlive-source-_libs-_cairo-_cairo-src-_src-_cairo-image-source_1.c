@@ -1,0 +1,1 @@
+FUN1 ( ) { while ( VAR1 ) { FUN2 ( VAR2 [ -- VAR1 ] . VAR3 ) ; } if ( VAR4 ) { FUN2 ( VAR4 ) ; } if ( VAR5 ) { FUN2 ( VAR5 ) ; VAR5 = NULL ; } if ( VAR6 ) { FUN2 ( VAR6 ) ; VAR6 = NULL ; } }

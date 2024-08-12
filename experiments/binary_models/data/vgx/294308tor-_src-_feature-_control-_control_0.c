@@ -1,0 +1,16 @@
+static void
+FUN1(VAR1 *VAR2)
+{
+size_t VAR3;
+char VAR4[128];
+FUN2(VAR4+2, FUN3(0x0000)); 
+FUN2(VAR4+4, FUN3(0x0001)); 
+FUN4(VAR4+6, ""
+"",
+sizeof(VAR4)-6);
+VAR3 = 2+strlen(VAR4+6)+2; 
+FUN2(VAR4+0, FUN3(VAR3));
+FUN5(VAR4, 4+VAR3, FUN6(VAR2));
+
+FUN7(FUN6(VAR2));
+}

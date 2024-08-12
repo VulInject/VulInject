@@ -1,0 +1,84 @@
+extern void FUN1(VAR1 *VAR2,
+const char *VAR3,
+const char *VAR4,
+gpointer VAR5)
+{
+VAR6 *VAR7 = NULL;
+VAR8 *VAR9 = NULL;
+GtkTreeIter VAR10;
+VAR11 *VAR12 = NULL;
+
+char *VAR13 = NULL;
+char *VAR14 = NULL;
+const char *VAR15 = NULL;
+int VAR16;
+
+if (!VAR4 || !FUN2(VAR4, ""))
+goto VAR17;
+
+if (VAR18 & VAR19) {
+FUN3(VAR15);
+goto VAR17;
+}
+
+VAR12 = xmalloc(sizeof(VAR11));
+
+VAR7 = FUN4(VAR5);
+VAR9 = FUN5(VAR3);
+FUN6(FUN7(VAR7), &VAR10, VAR9);
+
+VAR16 = FUN8(FUN9(FUN10(VAR2), ""));
+if (VAR16 != VAR20) {
+FUN11(VAR12);
+FUN12(FUN7(VAR7), &VAR10,
+VAR21, &VAR13,
+VAR16, &VAR14,
+-1);
+VAR12->VAR22 = xstrdup(VAR13);
+FUN13(VAR13);
+}
+
+VAR15 = FUN14(VAR12, VAR4, VAR16);
+if (VAR23)
+goto VAR24;
+if (VAR25) {
+VAR13 = VAR25;
+VAR25 = NULL;
+FUN15(FUN7(VAR7), &VAR10, VAR13);
+FUN16(VAR13);
+goto VAR17;
+}
+
+if (VAR26) {
+FUN15(FUN7(VAR7), &VAR10, (char *)VAR15);
+goto VAR17;
+}
+
+if ((VAR16 != VAR20) && (VAR16 != VAR27)) {
+if (VAR14 && !FUN2(VAR14, VAR4)) {
+VAR13 = FUN17("");
+} else if (FUN18(VAR12)
+== VAR28) {
+FUN19(VAR7, &VAR10, VAR16,
+VAR4, -1);
+VAR13 = FUN17("",
+VAR12->VAR22,
+VAR15,
+VAR4);
+} else {
+VAR24:
+VAR13 = FUN17(""
+"",
+VAR12->VAR22,
+VAR15,
+VAR4);
+}
+FUN20(VAR13);
+FUN13(VAR13);
+}
+VAR17:
+FUN21(VAR12);
+FUN22(VAR9);
+FUN13(VAR14);
+FUN23(VAR29);
+}

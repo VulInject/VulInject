@@ -1,0 +1,64 @@
+static enum VAR1
+FUN1(struct VAR2 *VAR3, bool VAR4)
+{
+struct VAR5 *VAR6 = VAR3->VAR6;
+struct VAR7 *VAR8 = FUN2(VAR6);
+struct VAR9 *VAR10 = FUN3(VAR3);
+struct VAR11 *VAR12 = NULL;
+enum drm_connector_status VAR13 = VAR14;
+
+
+if (VAR10->VAR15) {
+FUN4(VAR3, NULL);
+FUN5(VAR10->VAR15);
+VAR10->VAR15 = NULL;
+}
+
+VAR12 = FUN6(VAR3, VAR16);
+if (!VAR12)
+return VAR14;
+
+
+if (!VAR8->VAR17.VAR18) {
+VAR13 = FUN7(VAR3, VAR4);
+if (VAR13 == VAR19)
+goto VAR20;
+}
+
+
+if (VAR12->VAR21->VAR22.VAR23) {
+if ((VAR10->VAR15 = FUN8(VAR6, VAR3))) {
+VAR13 = VAR19;
+goto VAR20;
+}
+}
+
+
+if (FUN9(VAR6, NULL) && (VAR8->VAR17.VAR18 ||
+VAR12->VAR21->VAR22.VAR24)) {
+VAR13 = VAR19;
+goto VAR20;
+}
+
+
+if (!VAR8->VAR17.VAR18) {
+struct VAR15 *VAR15 =
+(struct VAR15 *)FUN10(VAR6);
+if (VAR15) {
+VAR10->VAR15 =
+FUN11(VAR15, VAR25, VAR26);
+if (VAR10->VAR15)
+VAR13 = VAR19;
+}
+}
+
+VAR20:
+(FUN12(VAR27) && FUN12(VAR28))
+if (VAR13 == VAR19 &&
+!VAR29 && !FUN13())
+VAR13 = VAR30;
+
+FUN4(VAR3, VAR10->VAR15);
+FUN14(VAR3, VAR12);
+return VAR13;
+}

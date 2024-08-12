@@ -1,0 +1,1 @@
+static uint32_t FUN1 ( struct VAR1 * VAR2 ) { int VAR3 = 0 ; uint32_t VAR4 = FUN2 ( & VAR2 -> VAR4 ) ; uint32_t VAR5 = ( VAR4 & VAR6 ) >> VAR7 ; switch ( VAR5 ) { case 0 : VAR3 = FUN3 ( VAR2 , VAR8 ) / 4 ; break ; case 1 : VAR3 = FUN3 ( VAR2 , VAR8 ) / 2 ; break ; case 2 : VAR3 = FUN3 ( VAR2 , VAR8 ) ; break ; case 3 : VAR3 = FUN4 ( VAR2 ) ; break ; } return VAR3 ; }

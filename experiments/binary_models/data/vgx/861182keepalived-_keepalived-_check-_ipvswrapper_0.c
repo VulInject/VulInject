@@ -1,0 +1,20 @@
+static const char * FUN1((VAR1))
+FUN2(int VAR2)
+{
+switch (VAR2)
+{
+FUN3(VAR3);
+FUN3(VAR4);
+FUN3(VAR5);
+FUN3(VAR6);
+FUN3(VAR7);
+FUN3(VAR8);
+FUN3(VAR9);
+FUN3(VAR10);
+FUN3(VAR11);
+FUN3(VAR12);
+FUN3(VAR13);
+}
+
+return "";
+}

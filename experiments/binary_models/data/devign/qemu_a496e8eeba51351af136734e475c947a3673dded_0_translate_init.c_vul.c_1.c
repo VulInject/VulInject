@@ -1,0 +1,63 @@
+static void FUN1(VAR1 *VAR2, int VAR3)
+{
+    uint32_t VAR4[2];
+    uint64_t VAR5 = 0x0000000F0000FFFFULL;
+    int VAR6;
+    FUN2(VAR2);
+    if (VAR3 == VAR7)
+    {
+        VAR5 = 0x000003FE0000FFFFULL;
+    }
+    FUN3(VAR2, VAR5);
+    FUN4(VAR2, VAR8, "", VAR9, VAR9, &VAR10, &VAR11, 0x00000000);
+    FUN4(VAR2, VAR12, "", &VAR13, &VAR14, &VAR13, &VAR14, 0x00000000);
+    VAR2->VAR15 = 3;
+    VAR2->VAR16 = 2;
+    VAR2->VAR17 = 0;
+    switch (VAR3)
+    {
+    case VAR18:
+        VAR4[0] = FUN5(2, 1, 1, 0, 256);
+        VAR4[1] = FUN5(16, 1, 9, VAR19 | VAR20, 16);
+        VAR2->VAR21 = 32;
+        VAR2->VAR22 = 32;
+        break;
+    case VAR23:
+        VAR4[0] = FUN5(4, 1, 1, 0, 512);
+        VAR4[1] = FUN5(16, 1, 12, VAR19 | VAR20, 16);
+        VAR2->VAR21 = 32;
+        VAR2->VAR22 = 32;
+        break;
+    case VAR7:
+        VAR4[0] = FUN5(4, 1, 1, 0, 512);
+        VAR4[1] = FUN5(64, 1, 12, VAR19 | VAR20, 64);
+        VAR2->VAR21 = 64;
+        VAR2->VAR22 = 64;
+        break;
+    default:
+        FUN6(VAR2, "" VAR24 "", VAR2->VAR25[VAR26]);
+    }
+    FUN7(VAR2, 0x000000DF, VAR4);
+    FUN4(VAR2, VAR27, "", VAR9, VAR9, &VAR10, &VAR28, 0x00000000);
+    FUN4(VAR2, VAR29, "", VAR9, VAR9, &VAR10, &VAR28, 0x00000000);
+    FUN4(VAR2, VAR30, "", VAR9, VAR9, &VAR10, &VAR28, 0x00000000);
+    FUN4(VAR2, VAR31, "", VAR9, VAR9, &VAR10, &VAR28, 0x00000000);
+    FUN4(VAR2, VAR32, "", VAR9, VAR9, &VAR10, &VAR28, 0x00000000);
+    FUN4(VAR2, VAR33, "", VAR9, VAR9, &VAR10, &VAR28, 0x00000000);
+    FUN4(VAR2, VAR34, "", VAR9, VAR9, &VAR10, &VAR28, 0x00000000);
+    FUN4(VAR2, VAR35, "", VAR9, VAR9, &VAR10, &VAR28, 0x00000000);
+    FUN4(VAR2, VAR36, "", VAR9, VAR9, &VAR10, &VAR28, 0x00000000);
+    FUN4(VAR2, VAR37, "", VAR9, VAR9, &VAR10, &VAR38, 0x00000000);
+    FUN4(VAR2, VAR39, "", VAR9, VAR9, &VAR10, &VAR28, 0x00000000);
+    FUN4(VAR2, VAR40, "", VAR9, VAR9, &VAR10, &VAR28, 0x00000000);
+    FUN4(VAR2, VAR41, "", VAR9, VAR9, &VAR10, &VAR28, 0x00000000);
+    FUN4(VAR2, VAR42, "", VAR9, VAR9, &VAR10, &VAR43, 0x00000000);
+    VAR2->VAR44 = 0;
+    VAR2->VAR45 = VAR46;
+    for (VAR6 = 0; VAR6 < VAR47; VAR6++)
+    {
+        VAR2->VAR44 += FUN8(VAR2, VAR6);
+    }
+    FUN9(VAR2);
+    FUN10(VAR2);
+}

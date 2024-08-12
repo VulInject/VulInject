@@ -1,0 +1,15 @@
+FUN1(VAR1 *VAR2, VAR1 *VAR3)
+{
+    int VAR4 = VAR2->VAR5;
+    VAR6 *VAR7;
+    VAR7 = FUN2(VAR2, sizeof *VAR7);
+    VAR7->VAR8 = VAR9 + 16;
+    VAR7->VAR10 = VAR11;
+    VAR7->VAR12 = VAR13 + 16;
+    VAR7->VAR14 = VAR11;
+    VAR7->VAR15 = VAR16 + 16;
+    VAR7->VAR17 = VAR11;
+    VAR7->VAR18 = VAR19 + 16;
+    VAR7->VAR20 = VAR11;
+    FUN3(VAR3, VAR2, (void *)(VAR2->VAR21 + VAR4), "", VAR2->VAR5 - VAR4, 2, NULL, NULL);
+}

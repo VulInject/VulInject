@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 , const char * VAR3 ) { VAR2 -> VAR3 = FUN2 ( VAR3 ) ; }

@@ -1,0 +1,35 @@
+void FUN1(struct VAR1 *VAR2,
+u8 VAR3, VAR4 *VAR5, VAR6 *VAR7)
+{
+struct VAR8 *VAR9 = FUN2(VAR2);
+struct VAR10 *VAR11 = FUN3(FUN2(VAR2));
+u8 VAR12 = 0;
+u8 VAR13 = VAR11->VAR14;
+u8 VAR15 = VAR11->VAR16;
+u8 VAR17 = VAR11->VAR18[0];
+u8 VAR19 = VAR9->VAR20.VAR21[VAR22];
+
+if (VAR3 == 0) {
+if (VAR19 <= VAR17) {
+*VAR5 = 1;
+VAR12 = VAR17 - VAR19;
+} else {
+*VAR5 = 2;
+VAR12 = VAR17 - VAR19;
+}
+} else if (VAR3 == 1) {
+if (VAR15 <= VAR13) {
+*VAR5 = 1;
+VAR12 = VAR13 - VAR15;
+} else {
+*VAR5 = 2;
+VAR12 = VAR15 - VAR13;
+}
+}
+
+if (VAR12 >= VAR23 && (*VAR5 == 1))
+VAR12 = VAR23;
+
+*VAR7 = VAR12 | (VAR12 << 8) | (VAR12 << 16) |
+(VAR12 << 24);
+}

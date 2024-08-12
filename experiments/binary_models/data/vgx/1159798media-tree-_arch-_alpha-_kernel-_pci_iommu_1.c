@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( struct VAR2 * VAR3 ) { FUN2 ( ! VAR4 ) ; if ( ! VAR3 || ! VAR3 -> VAR5 || ! * VAR3 -> VAR5 ) { return VAR4 ; } if ( * VAR3 -> VAR5 >= VAR4 -> VAR5 ) { return VAR4 ; } return NULL ; }

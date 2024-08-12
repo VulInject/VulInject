@@ -1,0 +1,1 @@
+void FUN1 ( vec3_t VAR1 ) { float VAR2 ; int VAR3 ; VAR2 = rand ( ) & 3 ; if ( VAR2 < 2 ) { VAR3 = VAR4 . VAR5 . VAR6 ; } if ( VAR2 == 2 ) { VAR3 = VAR4 . VAR5 . VAR7 ; } else { VAR3 = VAR4 . VAR5 . VAR8 ; } FUN2 ( VAR1 , VAR9 , VAR10 , VAR3 ) ; }

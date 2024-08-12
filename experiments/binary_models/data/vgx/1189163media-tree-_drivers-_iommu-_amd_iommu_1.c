@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , u16 VAR3 , int VAR4 , int VAR5 , int VAR6 , bool VAR7 ) { VAR2 -> VAR8 [ 0 ] = VAR3 ; if ( VAR7 ) { VAR2 -> VAR8 [ 1 ] = VAR4 ; VAR2 -> VAR8 [ 2 ] = VAR9 ; } VAR2 -> VAR8 [ 3 ] = VAR6 & 0x1ff ; VAR2 -> VAR8 [ 3 ] |= ( VAR5 & VAR10 ) << VAR11 ; FUN2 ( VAR2 , VAR12 ) ; }

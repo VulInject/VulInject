@@ -1,0 +1,1 @@
+char * FUN1 ( virNetworkPortPtr VAR1 , unsigned int VAR2 ) { virConnectPtr VAR3 ; FUN2 ( "" , VAR1 , VAR2 ) ; FUN3 ( ) ; FUN4 ( VAR1 ) ; VAR3 = VAR1 -> VAR4 -> VAR3 ; if ( VAR3 -> VAR5 && VAR3 -> VAR5 -> VAR6 ) { char * VAR7 ; VAR7 = VAR3 -> VAR5 -> FUN5 ( VAR1 , VAR2 ) ; if ( ! VAR7 ) { VAR8 } return VAR7 ; } FUN6 ( ) ; error FUN7 ( VAR3 ) ; return NULL ; }

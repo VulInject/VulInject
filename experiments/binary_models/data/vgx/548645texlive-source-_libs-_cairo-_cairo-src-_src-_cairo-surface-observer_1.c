@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 * VAR2 = ( VAR1 * ) VAR3 ; FUN2 ( VAR2 -> VAR4 ) ; } static const cairo_device_backend_t VAR5 = { CAIRO_INTERNAL_DEVICE_TYPE_OBSERVER _cairo_device_observer_lock _cairo_device_observer_unlock _cairo_device_observer_flush _cairo_device_observer_finish VAR6 } ;

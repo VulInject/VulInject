@@ -1,0 +1,26 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = VAR4->VAR7->VAR6;
+int VAR8;
+sc_path_t VAR9;
+
+
+FUN2("", &VAR9);
+VAR8 = FUN3(VAR4->VAR7, &VAR9, NULL);
+if (VAR8 == VAR10) {
+
+VAR11 *VAR12 = NULL;
+
+FUN2("", &VAR9);
+VAR8 = FUN4(VAR2, FUN5(), &VAR12);
+if (VAR8 != VAR10)
+return VAR8;
+
+VAR4->VAR7->VAR13 &= ~VAR14;
+VAR8 = FUN6(VAR2, VAR4, VAR12, VAR15);
+VAR4->VAR7->VAR13 |=  VAR14;
+FUN7(VAR12);
+FUN8(VAR6, VAR8, "");
+}
+return VAR10;
+}

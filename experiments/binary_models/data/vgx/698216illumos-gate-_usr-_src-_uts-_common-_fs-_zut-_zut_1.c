@@ -1,0 +1,1 @@
+static int FUN1 ( dev_t VAR1 , int VAR2 , intptr_t VAR3 , int VAR4 , VAR5 * VAR6 , int * VAR7 ) { int VAR8 ; if ( FUN2 ( VAR1 ) != 0 ) { return ( VAR9 ) ; } switch ( VAR2 ) { case VAR10 : VAR8 = FUN3 ( VAR3 , VAR6 , VAR4 , VAR7 ) ; break ; case VAR11 : VAR8 = FUN4 ( VAR3 , VAR6 , VAR4 , VAR7 ) ; default : break ; } return ( VAR8 ) ; }

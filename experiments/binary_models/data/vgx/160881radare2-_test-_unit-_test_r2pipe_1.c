@@ -1,0 +1,1 @@
+static int FUN1 ( ) { FUN2 ( VAR1 , NULL ) ; FUN2 ( VAR2 ) ; return VAR3 != VAR4 ; }

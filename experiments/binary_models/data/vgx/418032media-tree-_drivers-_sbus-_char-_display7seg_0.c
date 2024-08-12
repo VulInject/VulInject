@@ -1,0 +1,61 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+int VAR5 = -VAR6;
+struct VAR7 *VAR8;
+u8 VAR9;
+
+if (VAR10)
+goto VAR11;
+
+VAR8 = FUN2(&VAR2->VAR12, sizeof(*VAR8), VAR13);
+VAR5 = -VAR14;
+if (!VAR8)
+goto VAR11;
+
+VAR8->VAR9 = FUN3(&VAR2->VAR15[0], 0, sizeof(VAR16), "");
+if (!VAR8->VAR9) {
+FUN4(KERN_ERR VAR17 "");
+goto VAR18;
+}
+
+VAR5 = FUN5(&VAR19);
+if (VAR5) {
+FUN4(KERN_ERR VAR17 "",
+VAR20);
+goto VAR21;
+}
+
+
+VAR9 = FUN6(VAR8->VAR9);
+VAR4 = FUN7("");
+if (VAR4 &&
+FUN8(VAR4, "", NULL))
+VAR8->VAR22 = true;
+
+if (VAR8->VAR22)
+VAR9 |= VAR23;
+else
+VAR9 &= ~VAR23;
+
+FUN9(VAR9,  VAR8->VAR9);
+
+FUN4(KERN_INFO VAR17 "",
+VAR2->VAR12.VAR24->VAR25,
+(VAR9 & VAR23) ? "" : "",
+VAR2->VAR15[0].VAR26,
+VAR27 ? "" : "");
+
+FUN10(&VAR2->VAR12, VAR8);
+VAR10 = VAR8;
+VAR5 = 0;
+
+VAR11:
+return VAR5;
+
+VAR21:
+FUN11(&VAR2->VAR15[0], VAR8->VAR9, sizeof(VAR16));
+
+VAR18:
+goto VAR11;
+}

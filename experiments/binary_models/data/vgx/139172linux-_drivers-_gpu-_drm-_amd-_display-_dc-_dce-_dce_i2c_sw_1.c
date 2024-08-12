@@ -1,0 +1,1 @@
+static bool FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR3 , uint16_t VAR4 ) { uint32_t VAR5 = 0 ; uint32_t VAR6 = VAR7 / VAR4 ; FUN2 ( VAR4 , NULL ) ; { if ( FUN3 ( VAR3 , VAR8 ) ) { return true ; } FUN2 ( VAR4 ) ; ++ VAR5 ; } VAR5 <= VAR6 ; return false ; }

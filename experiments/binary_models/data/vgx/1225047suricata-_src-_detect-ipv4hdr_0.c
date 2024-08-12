@@ -1,0 +1,29 @@
+void FUN1 (void);
+
+static int VAR1 = 0;
+
+static VAR2 *FUN2(VAR3 *VAR4,
+const VAR5 *VAR6, VAR7 *VAR8, const int VAR9);
+
+
+void FUN3(void)
+{
+VAR10[VAR11].VAR12 = "";
+VAR10[VAR11].VAR13 = "";
+VAR10[VAR11].VAR14 = "";
+VAR10[VAR11].VAR15 = VAR16;
+VAR10[VAR11].VAR17 |= VAR18 | VAR19;
+VAR10[VAR11].VAR20 = VAR21;
+
+VAR1 = FUN4("");
+FUN5(VAR1 < 0);
+
+FUN6("");
+
+FUN7("", 2, VAR22, VAR23);
+
+FUN8("", VAR23,
+VAR24);
+
+return;
+}

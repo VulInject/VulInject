@@ -1,0 +1,1 @@
+static int VAR1 = 0 ; static int VAR2 = 500 * 1024 ; static void FUN1 ( void ) { if ( VAR3 ) { fclose ( VAR3 ) ; } }

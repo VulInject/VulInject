@@ -1,0 +1,24 @@
+VAR1 *FUN1(VAR2 *VAR3, struct VAR4 *VAR5, struct VAR6 *VAR7, void *VAR8);
+void FUN2(VAR1 *VAR9, void *VAR10);
+VAR11 *FUN3(VAR12 *VAR13, VAR11 *VAR14, const char *VAR15, void *VAR16, audio_callback_fn_t VAR17, struct VAR4 *VAR18);
+void FUN4(VAR12 *VAR13, VAR11 *VAR14);
+int FUN5(VAR11 *VAR14, void *VAR19, int VAR20);
+int FUN6(VAR11 *VAR14);
+void FUN7(VAR11 *VAR14, int VAR21);
+int FUN8(VAR11 *VAR14);
+void FUN9(VAR11 *VAR14, VAR22 *VAR23);
+VAR24 FUN10(VAR11 *VAR14, VAR22 *VAR23);
+void FUN11(VAR11 *VAR14, int VAR25, uint8_t VAR26, uint8_t VAR27);
+void FUN12(VAR28 *VAR14, int VAR25, uint8_t VAR26, uint8_t VAR27);
+VAR28 *FUN13(VAR12 *VAR13, VAR28 *VAR14, const char *VAR15, void *VAR16, audio_callback_fn_t VAR17, struct VAR4 *VAR18);
+void FUN14(VAR12 *VAR13, VAR28 *VAR14);
+int FUN15(VAR28 *VAR14, void *VAR19, int VAR20);
+void FUN16(VAR28 *VAR14, int VAR21);
+int FUN17(VAR28 *VAR14);
+void FUN18(VAR28 *VAR14, VAR22 *VAR23);
+VAR24 FUN19(VAR28 *VAR14, VAR22 *VAR23);
+static inline void *FUN20(void *VAR29, int VAR30)
+{
+    VAR31 *VAR32 = VAR29;
+    return (VAR32 + VAR30);
+}

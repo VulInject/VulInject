@@ -1,0 +1,1 @@
+static int FUN1 ( struct socket * VAR1 , struct VAR2 * VAR3 , size_t VAR4 , size_t VAR5 ) { int VAR6 ; struct msghdr VAR7 = { . VAR8 = 0 } ; if ( VAR1 == NULL ) { VAR6 = - VAR9 ; VAR10 } VAR6 = FUN2 ( VAR1 , & VAR7 , VAR3 , VAR4 , VAR5 ) ; FUN3 ( VAR11 , "" , VAR6 , VAR5 ) ; if ( VAR6 >= 0 ) { VAR6 = - VAR12 ; } out FUN3 ( 0 , "" , VAR6 ) ; return VAR6 ; }

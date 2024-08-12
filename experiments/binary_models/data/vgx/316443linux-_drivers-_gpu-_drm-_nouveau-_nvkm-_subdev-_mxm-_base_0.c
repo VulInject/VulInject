@@ -1,0 +1,34 @@
+static bool
+FUN1(struct VAR1 *VAR2, u8 VAR3)
+{
+struct VAR4 *VAR5 = VAR2->VAR6.VAR5;
+struct VAR7 *VAR8 = VAR5->VAR8;
+struct VAR9 *VAR10 = VAR5->VAR10;
+struct VAR11 *VAR12 = NULL;
+u8 VAR13, VAR14[6], VAR15, VAR16;
+
+VAR13 = FUN2(VAR8, 1 ) & 0x0f;
+if (VAR13 < 0x0f)
+VAR12 = FUN3(VAR10, VAR13);
+if (!VAR12)
+return false;
+
+VAR15 = 0x54;
+if (!FUN4(VAR12, VAR15, 0, 6, VAR14)) {
+VAR15 = 0x56;
+if (!FUN4(VAR12, VAR15, 0, 6, VAR14))
+return false;
+}
+
+VAR2->VAR14 = VAR14;
+VAR16 = FUN5(VAR2) + FUN6(VAR2);
+VAR2->VAR14 = FUN7(VAR16, VAR17);
+
+if (VAR2->VAR14 &&
+FUN4(VAR12, VAR15, 0, VAR16, VAR2->VAR14))
+return true;
+
+FUN8(VAR2->VAR14);
+VAR2->VAR14 = NULL;
+return false;
+}

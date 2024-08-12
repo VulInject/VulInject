@@ -1,0 +1,14 @@
+int
+FUN1()
+{
+int VAR1, VAR2;
+
+FUN2("", VAR3->VAR4, VAR3->VAR5);
+
+VAR1 = FUN3(VAR3, VAR3->VAR4, VAR3->VAR5);
+VAR2 = FUN4(
+VAR3, VAR3->VAR4, VAR1, VAR3->VAR6-1, VAR3->VAR7-1
+);
+
+return FUN5("", VAR2 == 0 ? VAR8 : VAR9);
+}

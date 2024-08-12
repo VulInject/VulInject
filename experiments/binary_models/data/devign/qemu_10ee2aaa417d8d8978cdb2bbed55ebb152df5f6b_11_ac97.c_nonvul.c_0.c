@@ -1,0 +1,29 @@
+static void FUN1(VAR1 *VAR2, void *VAR3)
+{
+    size_t VAR4;
+    uint8_t VAR5[VAR6];
+    VAR7 *VAR8 = VAR3;
+    FUN2(&VAR8->VAR9, VAR2);
+    FUN3(VAR2, &VAR8->VAR10);
+    FUN3(VAR2, &VAR8->VAR11);
+    FUN3(VAR2, &VAR8->VAR12);
+    for (VAR4 = 0; VAR4 < FUN4(VAR8->VAR13); ++VAR4)
+    {
+        VAR14 *VAR15 = &VAR8->VAR13[VAR4];
+        FUN3(VAR2, &VAR15->VAR16);
+        FUN5(VAR2, &VAR15->VAR17);
+        FUN5(VAR2, &VAR15->VAR18);
+        FUN6(VAR2, &VAR15->VAR19);
+        FUN6(VAR2, &VAR15->VAR20);
+        FUN5(VAR2, &VAR15->VAR21);
+        FUN5(VAR2, &VAR15->VAR22);
+        FUN3(VAR2, &VAR15->VAR23);
+        FUN3(VAR2, &VAR15->VAR24.VAR25);
+        FUN3(VAR2, &VAR15->VAR24.VAR26);
+    }
+    FUN7(VAR2, VAR8->VAR27, sizeof(VAR8->VAR27));
+    VAR5[VAR28] = FUN8(VAR8->VAR29) ? 1 : 0;
+    VAR5[VAR30] = FUN9(VAR8->VAR31) ? 1 : 0;
+    VAR5[VAR32] = FUN8(VAR8->VAR33) ? 1 : 0;
+    FUN7(VAR2, VAR5, sizeof(VAR5));
+}

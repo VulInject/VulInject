@@ -1,0 +1,1 @@
+l_ok FUN1 ( const char * VAR1 , VAR2 * VAR3 ) { l_int32 VAR4 ; VAR5 * VAR6 ; if ( ! VAR1 ) { return FUN2 ( "" , VAR7 , 1 ) ; } if ( ! VAR3 ) { return FUN2 ( "" , VAR7 , 1 ) ; } if ( ( VAR6 = FUN3 ( VAR1 , "" ) ) == NULL ) { return FUN2 ( "" , VAR7 , 1 ) ; } VAR4 = FUN4 ( VAR6 , VAR3 ) ; fclose ( VAR6 , NULL ) ; if ( VAR4 ) { return FUN2 ( "" , VAR7 , 1 ) ; } return 0 ; }

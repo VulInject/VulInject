@@ -1,0 +1,1 @@
+static const struct VAR1 * FUN1 ( enum dpu_dspp VAR2 , const struct VAR3 * VAR4 , void VAR5 * VAR6 , struct VAR7 * VAR8 ) { int VAR9 ; for ( VAR9 = 0 ; VAR9 < VAR4 -> VAR10 ; VAR9 ++ ) { if ( VAR2 == VAR4 -> VAR2 [ VAR9 ] . VAR11 ) { VAR8 -> VAR12 = VAR6 + VAR4 -> VAR2 [ VAR9 ] . VAR13 ; VAR8 -> VAR14 = VAR15 ; return & VAR4 -> VAR2 [ VAR9 ] ; } } return FUN2 ( - VAR16 ) ; }

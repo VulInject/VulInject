@@ -1,0 +1,71 @@
+static int
+FUN1(VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR5;
+struct VAR6 *VAR7 = (struct VAR6 *)VAR4->VAR8;
+struct VAR9 *VAR10 =
+(struct VAR9 *)VAR2->VAR11->VAR12;
+int VAR13;
+
+FUN2(VAR2, VAR14);
+
+VAR13 = VAR15 - VAR4->VAR16;
+
+if (VAR10->VAR17 & VAR18) {
+VAR10->VAR19 = *((char *)VAR7);
+uchar_t VAR20 = FUN3((VAR21)VAR13, VAR10->VAR22);
+VAR10->VAR23 = VAR10->VAR22 - VAR20;
+FUN4(VAR10->VAR22 && VAR2->VAR24);
+bcopy(VAR2->VAR25, VAR2->VAR24, VAR20);
+FUN5(VAR2, VAR26, ""
+"",
+VAR10->VAR19, VAR10->VAR23);
+}
+
+if (VAR7->VAR27) {
+FUN5(VAR2, VAR28, ""
+"");
+FUN2(VAR2, VAR29);
+return (VAR30);
+}
+
+if (VAR7->VAR31) {
+FUN5(VAR2, VAR28, ""
+"");
+FUN2(VAR2, VAR29);
+return (VAR30);
+}
+
+if ((VAR4->VAR32 & VAR33) == 0 || VAR13 == 0) {
+FUN5(VAR2, VAR28, ""
+"");
+FUN2(VAR2, VAR29);
+return (VAR30);
+}
+
+
+if (VAR13 < VAR34) {
+FUN5(VAR2, VAR28, ""
+"");
+FUN2(VAR2, VAR29);
+return (VAR30);
+}
+
+
+FUN5(VAR2, VAR28, "",
+FUN6(VAR2->VAR25->VAR35),
+VAR2->VAR25->VAR35);
+switch (VAR2->VAR25->VAR35) {
+case VAR36:
+FUN2(VAR2, VAR37);
+break;
+case VAR38:
+FUN2(VAR2, VAR39);
+break;
+default:
+FUN2(VAR2, VAR40);
+break;
+}
+
+return (VAR41);
+}

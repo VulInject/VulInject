@@ -1,0 +1,106 @@
+static VAR1
+FUN1(VAR2* VAR3,
+VAR4* VAR5,
+xmlNodePtr VAR6,
+gboolean VAR7,
+VAR8** VAR9)
+{
+VAR10* VAR11;
+gboolean VAR12;
+InfChatBufferMessageType VAR13;
+InfChatBufferMessageFlags VAR14;
+long VAR15;
+guint VAR16;
+VAR17* VAR18;
+VAR19* VAR20;
+
+VAR14 = 0;
+
+VAR11 = FUN2(VAR6, "");
+if(VAR11 == NULL)
+{
+VAR13 = VAR21;
+}
+else
+{
+VAR12 = FUN3(
+(const char*)VAR11,
+&VAR13,
+VAR9
+);
+
+FUN4(VAR11);
+if(VAR12 == VAR22) return VAR22;
+}
+
+if(VAR7)
+{
+VAR12 = FUN5(
+VAR6,
+"",
+&VAR15,
+VAR9
+);
+
+if(VAR12 == VAR22) return VAR22;
+VAR14 = VAR23;
+}
+else
+{
+if(VAR13 == VAR24 ||
+VAR13 == VAR25)
+{
+FUN6(
+VAR9,
+VAR26,
+VAR27,
+""%VAR28\"",
+FUN7(VAR13)
+);
+
+return VAR22;
+}
+
+VAR15 = FUN8(NULL);
+}
+
+if(!FUN9(VAR6, "", &VAR16, VAR9))
+return VAR22;
+
+VAR18 = FUN10(FUN11(VAR3));
+VAR20 = FUN12(VAR18, VAR16);
+
+if(VAR20 == NULL)
+{
+FUN6(
+VAR9,
+VAR26,
+VAR29,
+FUN13(""%VAR30\""),
+VAR16
+);
+
+return VAR22;
+}
+
+if(VAR13 != VAR24 &&
+VAR13 != VAR25)
+{
+VAR5->VAR31 =
+FUN14(VAR6, &VAR5->VAR32, NULL, VAR9);
+if(!VAR5->VAR31)
+return VAR22;
+}
+else
+{
+VAR5->VAR31 = NULL;
+VAR5->VAR32 = 0;
+}
+
+VAR5->VAR11 = VAR13;
+VAR5->VAR20 = VAR20;
+VAR5->VAR33 = VAR15;
+VAR5->VAR34 = VAR14;
+
+return VAR35;
+}

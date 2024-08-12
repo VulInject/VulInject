@@ -1,0 +1,1 @@
+int32_t FUN1 ( struct VAR1 * VAR2 ) { int32_t VAR3 = VAR4 ; FUN2 ( "" ) ; switch ( VAR2 -> VAR5 . VAR6 . FUN3 ( VAR2 ) ) { case VAR7 : VAR3 = FUN4 ( VAR2 , NULL ) ; break ; case VAR8 : VAR3 = FUN5 ( VAR2 ) ; break ; default : VAR2 -> VAR9 . VAR10 = VAR11 ; VAR3 = VAR4 ; break ; } return VAR3 ; }

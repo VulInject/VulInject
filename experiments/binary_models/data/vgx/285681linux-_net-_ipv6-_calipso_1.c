@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { struct VAR1 * VAR2 , * VAR3 ; u32 VAR4 ; for ( VAR4 = 0 ; VAR4 < VAR5 ; VAR4 ++ ) { FUN2 ( & VAR6 [ VAR4 ] . VAR7 ) ; FUN3 ( , , , ) { FUN4 ( & VAR2 -> VAR8 ) ; } VAR6 [ VAR4 ] . VAR9 = 0 ; FUN5 ( & VAR6 [ VAR4 ] . VAR7 ) ; } }

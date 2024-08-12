@@ -1,0 +1,13 @@
+VAR1 *FUN1(target_phys_addr_t VAR2, VAR3 *VAR4, VAR1 *VAR5, int VAR6)
+{
+    VAR1 *VAR7;
+    VAR7 = FUN2(NULL, "");
+    FUN3(VAR7, "", VAR6);
+    FUN3(VAR7, "", VAR4->VAR8);
+    FUN4(VAR7);
+    FUN5(FUN6(VAR7), 0, VAR2);
+    FUN7(FUN6(VAR7), 0, FUN8(VAR5, VAR9));
+    FUN7(FUN6(VAR7), 1, FUN8(VAR5, VAR10));
+    FUN7(FUN6(VAR7), 2, FUN8(VAR5, VAR11));
+    return VAR7;
+}

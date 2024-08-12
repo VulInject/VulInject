@@ -1,0 +1,1 @@
+int main ( int argc , char * argv [ ] ) { signal ( VAR1 , & VAR2 ) ; FUN1 ( "" ) ; FUN2 ( VAR3 , NULL ) ; if ( FUN3 ( "" , NULL ) == - 1 ) { FUN4 ( VAR4 , "" ) ; } FUN1 ( "" ) ; FUN1 ( "" ) ; return ( VAR5 ) ; }

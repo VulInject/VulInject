@@ -1,0 +1,74 @@
+FUN1 (VAR1	*VAR2,
+const char			*VAR3,
+VAR4	*VAR5,
+cairo_bool_t                VAR6)
+{
+VAR7 *VAR8;
+cairo_status_t VAR9;
+unsigned long VAR10;
+unsigned int VAR11, VAR12;
+
+VAR9 = FUN2 (VAR5, &VAR8, VAR6);
+if (FUN3 (VAR9))
+return VAR9;
+
+VAR9 = FUN4 (VAR8, VAR3);
+if (FUN3 (VAR9))
+goto VAR13;
+
+VAR2->VAR14 = strdup (VAR3);
+if (FUN3 (VAR2->VAR14 == NULL)) {
+VAR9 = FUN5 (VAR15);
+goto VAR13;
+}
+
+VAR2->VAR16 = calloc (sizeof (double), VAR8->VAR5->VAR17);
+if (FUN3 (VAR2->VAR16 == NULL)) {
+VAR9 = FUN5 (VAR15);
+goto VAR18;
+}
+for (VAR11 = 0; VAR11 < VAR8->VAR5->VAR17; VAR11++)
+VAR2->VAR16[VAR11] = (double)VAR8->VAR16[VAR11]/1000;
+
+VAR2->VAR19   = (double)VAR8->VAR19/1000;
+VAR2->VAR20   = (double)VAR8->VAR20/1000;
+VAR2->VAR21   = (double)VAR8->VAR21/1000;
+VAR2->VAR22   = (double)VAR8->VAR22/1000;
+VAR2->VAR23  = (double)VAR8->VAR22/1000;
+VAR2->VAR24 = (double)VAR8->VAR20/1000;
+
+VAR10 = VAR8->VAR25 + VAR8->VAR26 +
+VAR8->VAR27;
+VAR2->VAR28 = FUN6 (VAR10);
+if (FUN3 (VAR2->VAR28 == NULL)) {
+VAR9 = FUN5 (VAR15);
+goto VAR29;
+}
+memcpy (VAR2->VAR28,
+FUN7 (&VAR8->VAR30, 0), VAR10);
+
+VAR12 = snprintf(VAR2->VAR28 + VAR8->VAR31,
+VAR8->VAR32,
+"",
+(int)VAR8->VAR19,
+(int)VAR8->VAR20,
+(int)VAR8->VAR21,
+(int)VAR8->VAR22);
+VAR2->VAR28[VAR8->VAR31 + VAR12] = '';
+
+VAR2->VAR33 = VAR8->VAR25;
+VAR2->VAR34 = VAR8->VAR26;
+VAR2->VAR35 = VAR8->VAR27;
+
+return FUN8 (VAR8);
+
+VAR29:
+free (VAR2->VAR16);
+VAR18:
+free (VAR2->VAR14);
+VAR13:
+
+FUN8 (VAR8);
+
+return VAR9;
+}

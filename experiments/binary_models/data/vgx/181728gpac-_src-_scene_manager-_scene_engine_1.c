@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( VAR2 * VAR3 , u32 VAR4 ) { VAR1 * VAR5 , * VAR6 ; if ( ! VAR3 ) { return VAR7 ; } VAR6 = FUN2 ( VAR3 -> VAR8 ) ; if ( VAR6 && VAR6 -> VAR9 == VAR4 ) { FUN3 ( VAR10 , VAR11 , ( "" ) ) ; VAR4 ++ ; } VAR5 = FUN4 ( VAR3 , VAR4 , 0 , 0 ) ; return VAR5 ; }

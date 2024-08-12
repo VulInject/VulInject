@@ -1,0 +1,44 @@
+VAR1 FUN1(struct VAR2 *VAR3,
+struct VAR4 **VAR5)
+{
+struct VAR6 *VAR7 = VAR3->VAR8.VAR9.VAR10;
+CURLcode VAR11 = VAR12;
+
+FUN2(VAR5);
+*VAR5 = NULL;
+
+if(FUN3(VAR3, 0) < 0)
+return VAR13;
+
+
+if(VAR7
+&& VAR7->VAR14
+
+&& (VAR7->VAR15.VAR16
+|| VAR7->VAR15.VAR17)
+&& (FUN4(FUN5(), VAR7->VAR15)
+>= VAR18)) {
+
+memset(
+&VAR7->VAR15, 0, sizeof(VAR7->VAR15));
+
+
+FUN6((VAR19)VAR3->VAR8.VAR9.VAR20);
+FUN2(VAR7->VAR14 == 0);
+}
+
+if(VAR7 && !VAR7->VAR14) {
+(void)FUN7(VAR3, VAR7->VAR21, VAR7->VAR22);
+
+VAR7->VAR22 = NULL;
+
+if(!VAR3->VAR8.VAR9.VAR5)
+VAR11 = FUN8(VAR3);
+else
+*VAR5 = VAR3->VAR8.VAR9.VAR5;
+
+FUN9(&VAR3->VAR8.VAR9);
+}
+
+return VAR11;
+}

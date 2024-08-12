@@ -1,0 +1,1 @@
+bool FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , struct VAR5 * VAR6 ) { struct VAR7 * VAR8 = FUN2 ( VAR4 ) ; struct VAR9 * VAR10 ; VAR10 = FUN3 ( VAR4 ) ; VAR6 -> VAR11 = VAR8 -> VAR12 . VAR13 ; VAR6 -> VAR14 = VAR8 -> VAR12 . VAR15 ; VAR6 -> VAR16 = VAR10 -> VAR17 . VAR18 ; return true ; }

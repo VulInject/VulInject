@@ -1,0 +1,1 @@
+int FUN1 ( unsigned char VAR1 , unsigned VAR2 ) { u8 VAR3 [ 6 ] { CCGR_I2C1 CCGR_I2C2 CCGR_I2C3 CCGR_I2C4 CCGR_I2C5_8MP VAR4 } ; ; FUN2 ( VAR3 [ VAR2 ] , ! ! VAR1 ) ; return 0 ; }

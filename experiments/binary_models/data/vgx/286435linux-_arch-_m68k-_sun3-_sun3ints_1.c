@@ -1,0 +1,1 @@
+static irqreturn_t FUN1 ( int VAR1 , void * VAR2 ) { int VAR3 ; VAR3 = FUN2 ( VAR1 , 0 ) ; if ( ! ( VAR3 % 2000 ) ) { FUN3 ( VAR4 [ VAR3 % 16000 / 2000 ] ) ; } return VAR5 ; }

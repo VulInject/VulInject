@@ -1,0 +1,1 @@
+FUN1 ( ) { return VAR1 ; }

@@ -1,0 +1,1 @@
+static void * FUN1 ( struct VAR1 * VAR2 , int VAR3 ) { gfp_t VAR4 = VAR5 | VAR6 | VAR7 ; if ( VAR2 -> VAR8 ) { void * * VAR9 = FUN2 ( VAR2 -> VAR8 , VAR4 , VAR3 ) ; void * VAR10 = FUN3 ( VAR2 -> VAR11 , 8 , VAR4 ) ; if ( ! VAR9 || ! VAR10 ) { FUN4 ( VAR10 ) ; return NULL ; } VAR9 [ 1 ] = VAR10 ; return VAR9 ; } return FUN2 ( VAR2 -> VAR11 , VAR4 | VAR12 , VAR3 ) ; }

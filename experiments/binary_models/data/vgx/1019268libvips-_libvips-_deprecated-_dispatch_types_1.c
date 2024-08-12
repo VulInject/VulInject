@@ -1,0 +1,1 @@
+static int FUN1 ( im_object VAR1 ) { VAR2 * VAR3 = VAR1 ; if ( VAR3 -> VAR4 ) { FUN2 ( VAR3 -> VAR4 ) ; VAR3 -> VAR5 = 0 ; } return ( 0 ) ; }

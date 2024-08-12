@@ -1,0 +1,1 @@
+u32 FUN1 ( void ) { return 0 ; }

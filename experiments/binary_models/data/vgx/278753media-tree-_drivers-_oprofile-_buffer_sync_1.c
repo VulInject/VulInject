@@ -1,0 +1,1 @@
+static void FUN1 ( int VAR1 ) { FUN2 ( VAR2 ) ; FUN2 ( VAR3 , NULL ) ; FUN2 ( VAR1 ) ; VAR4 = VAR5 ; }

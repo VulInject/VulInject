@@ -1,0 +1,14 @@
+void
+FUN1(VAR1 **VAR2)
+{
+VAR1 *VAR3, *VAR4;
+VAR3 = *VAR2;
+while (VAR3 != NULL) {
+VAR4 = VAR3->VAR5;
+FUN2(VAR3->VAR6, strlen(VAR3->VAR6) + 1);
+FUN2(VAR3->VAR7, strlen(VAR3->VAR7) + 1);
+FUN2(VAR3, sizeof (VAR1));
+VAR3 = VAR4;
+}
+*VAR2 = NULL;
+}

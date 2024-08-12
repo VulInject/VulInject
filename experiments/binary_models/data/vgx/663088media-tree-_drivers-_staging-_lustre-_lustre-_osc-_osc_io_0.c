@@ -1,0 +1,29 @@
+static int FUN1(const struct VAR1 *VAR2,
+const struct VAR3 *VAR4,
+pgoff_t VAR5, struct VAR6 *VAR7)
+{
+struct VAR8 *VAR9 = FUN2(VAR4->VAR10);
+struct VAR11 *VAR12;
+int VAR13 = -VAR14;
+
+VAR12 = FUN3(VAR2, VAR9, VAR5, 0);
+if (VAR12) {
+FUN4(VAR12->VAR15 == VAR9);
+if (VAR12->VAR16 != VAR17) {
+struct lustre_handle VAR18;
+
+FUN5(VAR12, &VAR18);
+FUN6(&VAR18, VAR17);
+FUN7(&VAR18, VAR12->VAR16);
+}
+
+VAR7->VAR19 = FUN8(VAR9)->VAR20;
+VAR7->VAR21 = FUN9(FUN10(VAR9),
+VAR12->VAR22.VAR23.VAR24);
+VAR7->VAR25 = VAR26;
+VAR7->VAR27 = VAR12;
+VAR13 = 0;
+}
+
+return VAR13;
+}

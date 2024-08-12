@@ -1,0 +1,57 @@
+static bool
+FUN1(const struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+const struct VAR5 *VAR6 = VAR4->VAR7;
+struct gnet_stats_rate_est64 VAR8 = {0};
+u_int32_t VAR9, VAR10, VAR11, VAR12;
+bool VAR13 = true;
+
+FUN2(&VAR6->VAR14->VAR15, &VAR8);
+
+if (VAR6->VAR16 & VAR17) {
+VAR9 = VAR6->VAR9 >= VAR8.VAR18 ? VAR6->VAR9 - VAR8.VAR18 : 0;
+VAR11 = VAR6->VAR11 >= VAR8.VAR19 ? VAR6->VAR11 - VAR8.VAR19 : 0;
+} else {
+VAR9 = VAR8.VAR18;
+VAR11 = VAR8.VAR19;
+}
+
+if (VAR6->VAR16 & VAR20) {
+VAR10 = VAR6->VAR10;
+VAR12 = VAR6->VAR12;
+} else {
+FUN2(&VAR6->VAR21->VAR15, &VAR8);
+
+if (VAR6->VAR16 & VAR17) {
+VAR10 = VAR6->VAR10 >= VAR8.VAR18 ? VAR6->VAR10 - VAR8.VAR18 : 0;
+VAR12 = VAR6->VAR12 >= VAR8.VAR19 ? VAR6->VAR12 - VAR8.VAR19 : 0;
+} else {
+VAR10 = VAR8.VAR18;
+VAR12 = VAR8.VAR19;
+}
+}
+
+switch (VAR6->VAR22) {
+case VAR23:
+if (VAR6->VAR16 & VAR24)
+VAR13 &= VAR9 < VAR10;
+if (VAR6->VAR16 & VAR25)
+VAR13 &= VAR11 < VAR12;
+break;
+case VAR26:
+if (VAR6->VAR16 & VAR24)
+VAR13 &= VAR9 > VAR10;
+if (VAR6->VAR16 & VAR25)
+VAR13 &= VAR11 > VAR12;
+break;
+case VAR27:
+if (VAR6->VAR16 & VAR24)
+VAR13 &= VAR9 == VAR10;
+if (VAR6->VAR16 & VAR25)
+VAR13 &= VAR11 == VAR12;
+break;
+}
+
+VAR13 ^= VAR6->VAR16 & VAR28 ? true : false;
+return VAR13;
+}

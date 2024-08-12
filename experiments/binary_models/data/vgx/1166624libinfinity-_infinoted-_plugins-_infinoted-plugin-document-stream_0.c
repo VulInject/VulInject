@@ -1,0 +1,34 @@
+static void
+FUN1(
+VAR1* VAR2,
+gsize VAR3,
+gsize VAR4)
+{
+gsize VAR5;
+const VAR6* VAR7;
+gsize VAR8;
+
+FUN2(VAR2->VAR9 == VAR10);
+
+VAR5 = 0;
+while(VAR2->VAR9 == VAR10 &&
+VAR2->VAR11.VAR8 > 0 &&
+(VAR5 == 0 || VAR2->VAR11.VAR8 < VAR5))
+{
+VAR5 = VAR2->VAR11.VAR8;
+
+VAR7 = VAR2->VAR11.VAR7;
+VAR8 = VAR2->VAR11.VAR8;
+
+if(FUN3(VAR2, &VAR7, &VAR8))
+{
+if(VAR2->VAR9 == VAR10)
+{
+FUN4(
+&VAR2->VAR11,
+VAR2->VAR11.VAR8 - VAR8
+);
+}
+}
+}
+}

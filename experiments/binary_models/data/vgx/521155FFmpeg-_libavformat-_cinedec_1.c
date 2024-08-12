@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , int VAR3 , int64_t VAR4 , int VAR5 ) { VAR6 * VAR7 = VAR2 -> VAR8 ; if ( ! ( VAR2 -> VAR9 -> VAR10 & VAR11 ) ) { return FUN2 ( VAR12 ) ; } VAR7 -> VAR13 = VAR4 ; return 0 ; } const AVInputFormat VAR14 = { . VAR15 = "" . VAR16 = FUN3 ( "" ) . VAR17 = sizeof ( VAR6 ) . VAR18 = VAR19 . VAR20 = VAR21 . VAR22 = VAR23 . VAR24 = VAR25 } ;

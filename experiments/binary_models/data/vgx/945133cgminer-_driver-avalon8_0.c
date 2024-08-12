@@ -1,0 +1,56 @@
+static void FUN1(struct VAR1 *VAR2, int VAR3)
+{
+struct avalon8_pkg VAR4;
+uint32_t VAR5;
+
+memset(VAR4.VAR6, 0, VAR7);
+
+VAR5 = FUN2(VAR8);
+memcpy(VAR4.VAR6 + 4, &VAR5, 4);
+
+
+VAR5 = 1;
+if (!VAR9)
+VAR5 = 0;
+VAR5 |= (VAR10 << 1);
+VAR5 |= (VAR11 << 2);
+VAR4.VAR6[8] = VAR5 & 0xff;
+VAR4.VAR6[9] = VAR12 & 0xff;
+
+VAR5 = FUN2(VAR13);
+memcpy(VAR4.VAR6 + 10, &VAR5, 4);
+FUN3(VAR14, "",
+VAR2->VAR15->VAR16, VAR2->VAR17, VAR3,
+VAR13);
+
+VAR5 = FUN2(VAR18);
+memcpy(VAR4.VAR6 + 14, &VAR5, 4);
+FUN3(VAR14, "",
+VAR2->VAR15->VAR16, VAR2->VAR17, VAR3,
+VAR18);
+
+VAR5 = FUN2(VAR19);
+memcpy(VAR4.VAR6 + 18, &VAR5, 4);
+FUN3(VAR14, "",
+VAR2->VAR15->VAR16, VAR2->VAR17, VAR3,
+VAR19);
+
+VAR5 = FUN2(VAR20);
+memcpy(VAR4.VAR6 + 22, &VAR5, 4);
+FUN3(VAR14, "",
+VAR2->VAR15->VAR16, VAR2->VAR17, VAR3,
+VAR20);
+
+VAR5 = FUN2(VAR21);
+memcpy(VAR4.VAR6 + 26, &VAR5, 4);
+FUN3(VAR14, "",
+VAR2->VAR15->VAR16, VAR2->VAR17, VAR3,
+VAR21);
+
+
+FUN4(&VAR4, VAR22, 1, 1);
+if (VAR3 == VAR23)
+FUN5(VAR2, &VAR4);
+else
+FUN6(VAR2, VAR3, &VAR4, NULL);
+}

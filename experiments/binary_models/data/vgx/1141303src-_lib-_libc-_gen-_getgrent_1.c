@@ -1,0 +1,1 @@
+static int FUN1 ( void ) { if ( VAR1 ) { FUN2 ( VAR1 ) ; VAR2 = 0 ; VAR3 = NULL ; if ( VAR4 ) { FUN3 ( & VAR4 ) ; } VAR4 = NULL ; return ( 1 ) ; } return ( ( VAR1 = fopen ( VAR5 , "" ) ) ?1 : 0 ) ; }

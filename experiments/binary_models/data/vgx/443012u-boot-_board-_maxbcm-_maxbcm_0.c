@@ -1,0 +1,16 @@
+int FUN1(void)
+{
+
+
+
+FUN2(VAR1, 16 << 20,
+VAR2, VAR3);
+FUN2(VAR4, 16 << 20,
+VAR2, VAR5);
+FUN2(VAR6, 16 << 20,
+VAR2, VAR7);
+FUN2(VAR8, 16 << 20,
+VAR2, VAR9);
+
+return 0;
+}

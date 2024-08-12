@@ -1,0 +1,1 @@
+int FUN1 ( int VAR1 ) { int class IOPRIO_PRIO_CLASS VAR1 ; int VAR2 = FUN2 ( VAR1 ) ; switch ( class ) { case VAR3 : VAR4 ; case VAR5 : if ( VAR2 >= VAR6 || VAR2 < 0 ) { return - VAR7 ; } break ; case VAR8 : break ; case VAR9 : if ( VAR2 ) { return - VAR7 ; } break ; default : return - VAR7 ; } return 0 ; }

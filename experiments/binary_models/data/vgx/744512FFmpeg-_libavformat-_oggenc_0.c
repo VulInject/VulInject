@@ -1,0 +1,35 @@
+static int FUN1(VAR1 *VAR2,
+VAR3 *VAR4, int VAR5,
+VAR6 **VAR7)
+{
+VAR8 *VAR9;
+
+if (VAR2->VAR10 < VAR11)
+return FUN2(VAR12);
+
+
+VAR4->VAR13[0] = 51;
+VAR4->VAR14[0] = FUN3(51); 
+VAR9 = VAR4->VAR14[0];
+if (!VAR9)
+return FUN2(VAR15);
+FUN4(&VAR9, 0x7F);
+FUN5(&VAR9, "", 4);
+FUN4(&VAR9, 1); 
+FUN4(&VAR9, 0); 
+FUN6(&VAR9, 1); 
+FUN5(&VAR9, "", 4);
+FUN4(&VAR9, 0x00); 
+FUN7(&VAR9, 34);
+FUN5(&VAR9, VAR2->VAR16, VAR11);
+
+
+VAR9 = FUN8(4, VAR5, &VAR4->VAR13[1], VAR7, 0, NULL, 0);
+if (!VAR9)
+return FUN2(VAR15);
+VAR4->VAR14[1] = VAR9;
+FUN4(&VAR9, 0x84); 
+FUN7(&VAR9, VAR4->VAR13[1] - 4);
+
+return 0;
+}

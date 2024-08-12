@@ -1,0 +1,1 @@
+void FUN1 ( void ) { struct VAR1 * VAR1 ; if ( VAR2 != NULL ) { VAR3 . VAR4 &= ~ VAR5 ; } while ( ( VAR1 = VAR2 ) != NULL ) { FUN2 ( VAR2 ) ; } FUN3 ( ) ; }

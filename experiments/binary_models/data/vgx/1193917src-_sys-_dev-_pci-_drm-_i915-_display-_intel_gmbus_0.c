@@ -1,0 +1,14 @@
+static int FUN1(void *VAR1)
+{
+struct VAR2 *VAR3 = VAR1;
+struct VAR4 *VAR5 = &VAR3->VAR6->VAR5;
+u32 VAR7 = FUN2(VAR3);
+
+FUN3(VAR5,
+VAR3->VAR8,
+VAR7 | VAR9);
+FUN3(VAR5, VAR3->VAR8, VAR7);
+
+return (FUN4(VAR5, VAR3->VAR8) &
+VAR10) != 0;
+}

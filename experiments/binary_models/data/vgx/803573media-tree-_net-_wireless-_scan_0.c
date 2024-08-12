@@ -1,0 +1,75 @@
+struct VAR1 *
+FUN1(struct VAR2 *VAR2,
+struct VAR3 *VAR4,
+enum cfg80211_bss_frame_type VAR5,
+const VAR6 *VAR7, u64 VAR8, u16 VAR9,
+u16 VAR10, const VAR6 *VAR11, size_t VAR12,
+gfp_t VAR13)
+{
+struct VAR14 *VAR15;
+struct VAR16 *VAR17;
+struct cfg80211_internal_bss VAR18 = {}, *VAR19;
+int VAR20;
+bool VAR21;
+
+if (FUN2(!VAR2))
+return NULL;
+
+if (FUN2(VAR2->VAR22 == VAR23 &&
+(VAR4->signal < 0 || VAR4->signal > 100)))
+return NULL;
+
+VAR17 = FUN3(VAR2, VAR11, VAR12, VAR4->VAR24);
+if (!VAR17)
+return NULL;
+
+memcpy(VAR18.VAR25.VAR7, VAR7, VAR26);
+VAR18.VAR25.VAR17 = VAR17;
+VAR18.VAR25.VAR27 = VAR4->VAR27;
+VAR18.VAR25.signal = VAR4->signal;
+VAR18.VAR25.VAR10 = VAR10;
+VAR18.VAR25.VAR9 = VAR9;
+VAR18.VAR28 = VAR4->VAR29;
+
+
+VAR15 = FUN4(sizeof(*VAR15) + VAR12, VAR13);
+if (!VAR15)
+return NULL;
+VAR15->VAR30 = VAR12;
+VAR15->VAR8 = VAR8;
+VAR15->VAR31 = false;
+memcpy(VAR15->VAR4, VAR11, VAR12);
+
+switch (VAR5) {
+case VAR32:
+VAR15->VAR31 = true;
+
+case VAR33:
+FUN5(VAR18.VAR25.VAR34, VAR15);
+break;
+case VAR35:
+FUN5(VAR18.VAR25.VAR36, VAR15);
+break;
+}
+FUN5(VAR18.VAR25.VAR15, VAR15);
+
+VAR21 = FUN6(VAR4->VAR24->VAR37 - VAR17->VAR37) <=
+VAR2->VAR38;
+VAR19 = FUN7(FUN8(VAR2), &VAR18, VAR21);
+if (!VAR19)
+return NULL;
+
+if (VAR17->VAR39 == VAR40) {
+VAR20 = VAR19->VAR25.VAR9 & VAR41;
+if (VAR20 == VAR42 ||
+VAR20 == VAR43)
+FUN9(VAR2, VAR17, VAR13);
+} else {
+if (VAR19->VAR25.VAR9 & VAR44)
+FUN9(VAR2, VAR17, VAR13);
+}
+
+FUN10(&VAR19->VAR25);
+
+return &VAR19->VAR25;
+}

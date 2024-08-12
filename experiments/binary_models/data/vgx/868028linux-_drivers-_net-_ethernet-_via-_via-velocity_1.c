@@ -1,0 +1,1 @@
+static u32 FUN1 ( struct VAR1 * VAR2 ) { int VAR3 = 0 ; switch ( VAR2 -> VAR4 . VAR5 ) { case VAR6 : VAR3 = VAR7 ; break ; case VAR8 : VAR3 = VAR9 | VAR10 ; break ; case VAR11 : VAR3 = VAR12 | VAR10 ; break ; case VAR13 : VAR3 = VAR9 ; break ; case VAR14 : VAR3 = VAR12 ; break ; case VAR15 : VAR3 = VAR16 | VAR10 ; break ; } VAR2 -> VAR17 = VAR3 ; return VAR3 ; }

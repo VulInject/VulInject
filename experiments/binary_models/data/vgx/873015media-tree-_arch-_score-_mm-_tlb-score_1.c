@@ -1,0 +1,1 @@
+void FUN1 ( void ) { unsigned long VAR1 ; unsigned long VAR2 ; int VAR3 ; FUN2 ( VAR1 ) ; VAR2 = FUN3 ( ) & VAR4 ; FUN4 ( 0 ) ; VAR3 = FUN5 ( ) ; for ( ; VAR3 < VAR5 ; VAR3 ++ ) { FUN6 ( VAR3 ) ; FUN7 ( VAR6 ) ; FUN8 ( ) ; FUN9 ( ) ; } FUN7 ( VAR2 , NULL ) ; FUN10 ( VAR1 ) ; }

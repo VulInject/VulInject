@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , clockid_t VAR3 ) { ( * VAR2 ) -> VAR4 = VAR3 ; return ( 0 ) ; }

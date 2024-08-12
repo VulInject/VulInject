@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , size_t VAR3 , size_t VAR4 ) { if ( ! VAR2 ) { return 0 ; } if ( VAR4 == 0 ) { return 0 ; } if ( ( VAR3 / VAR4 ) * VAR4 == FUN2 ( VAR2 ) ) { return 1 ; } return 0 ; }

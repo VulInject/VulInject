@@ -1,0 +1,1 @@
+ARGV_t FUN1 ( ARGV_t argv ) { if ( argv ) { for ( ARGV_t VAR1 = argv ; * VAR1 ; VAR1 ++ ) { free ( * VAR1 ) ; } } return NULL ; }

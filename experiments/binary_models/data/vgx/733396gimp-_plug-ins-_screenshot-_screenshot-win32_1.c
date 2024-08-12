@@ -1,0 +1,1 @@
+FUN1 ( ) { HWND VAR1 ; HWND VAR2 ; switch ( VAR3 ) { case VAR4 : case VAR5 : VAR2 = FUN2 ( VAR6 ) ; { VAR1 = VAR2 ; VAR2 = FUN3 ( VAR1 , NULL ) ; } VAR2 ; return VAR1 ; break ; case VAR7 : return FUN2 ( VAR6 ) ; break ; } return FUN2 ( VAR6 ) ; }

@@ -1,0 +1,1 @@
+static void * FUN1 ( void * VAR1 ) { struct VAR2 * VAR3 = ( VAR2 * ) VAR1 ; size_t VAR4 = 0 ; for ( ; ; ) { size_t VAR5 ; int VAR6 = 0 ; for ( VAR5 = 0 ; VAR5 < VAR7 ; VAR5 ++ ) { VAR6 += VAR3 [ VAR5 ] . VAR8 ; } FUN2 ( "" , VAR6 - VAR4 ) ; VAR4 = VAR6 ; sleep ( 1 ) ; FUN2 ( "" ) ; } return NULL ; }

@@ -1,0 +1,66 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 *VAR6)
+{
+VAR7 *VAR8 = VAR4->VAR8;
+VAR9 *VAR10 = &VAR8->VAR10;
+uint64_t VAR11 = 0, VAR12 = 0, VAR13;
+int VAR14;
+
+VAR14 = FUN2(VAR4, &VAR11, sizeof(VAR11),
+VAR10->VAR15 + FUN3(VAR11));
+if (VAR14 < 0) {
+return VAR14;
+}
+
+VAR14 = FUN2(VAR4, &VAR12, sizeof(VAR12),
+VAR10->VAR15 + FUN3(VAR12));
+if (VAR14 < 0) {
+return VAR14;
+}
+
+FUN4(VAR4->VAR16, VAR11, VAR12,
+VAR8->VAR17);
+
+FUN5(VAR2, VAR12);
+VAR13 = VAR12;
+
+while (VAR13) {
+void *VAR18;
+uint64_t VAR19;
+bool VAR20 = false;
+
+VAR18 = FUN6(VAR10, VAR11, VAR13, &VAR19);
+
+if (!VAR18) {
+VAR18 = FUN7(VAR19);
+if (!VAR18) {
+FUN8("", VAR21);
+return -VAR22;
+}
+VAR20 = true;
+
+VAR14 = FUN2(VAR4, VAR18, VAR19,
+VAR10->VAR15 + VAR11);
+if (VAR14 < 0) {
+FUN9(VAR18);
+return VAR14;
+}
+}
+
+FUN10(VAR2, VAR18, VAR19);
+
+if (VAR20) {
+FUN9(VAR18);
+}
+VAR13 -= VAR19;
+VAR11 += VAR19;
+}
+
+VAR14 = FUN11(VAR2);
+
+if (!VAR14 && VAR6) {
+*VAR6 = VAR12;
+}
+
+VAR23 += VAR12;
+return VAR14;
+}

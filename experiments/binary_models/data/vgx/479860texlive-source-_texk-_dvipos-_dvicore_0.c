@@ -1,0 +1,48 @@
+static void FUN1 (void)
+{
+UNSIGNED_BYTE VAR1;
+SIGNED_QUAD VAR2 = VAR3;
+
+
+do {
+VAR2--;
+FUN2(VAR4, VAR2, VAR5);
+} while((VAR1 = FUN3()) == VAR6 && VAR2 > 0);
+
+
+if (VAR3 <= VAR2 + 4)
+FUN4(VAR7, "", VAR3 - VAR2 - 1);
+
+VAR8 = VAR2 - 5;
+FUN2(VAR4, VAR8, VAR5);
+if ((VAR1 = FUN3()) != VAR9)
+FUN4(VAR7, "", VAR1);
+
+
+VAR10 = FUN5();
+FUN2(VAR4, VAR10, VAR5);
+if ((VAR1 = FUN3()) != VAR11)
+FUN4(VAR7, "", VAR1);
+
+FUN4(VAR12, "", VAR10);
+
+FUN5(); 
+
+if (FUN5() != VAR13)
+FUN4(VAR7, "");
+
+if (FUN5() != VAR14)
+FUN4(VAR7, "");
+
+if (FUN5() != VAR15 && VAR16 == 0)
+FUN4(VAR7, "");
+
+VAR17 = FUN5();
+VAR18 = FUN5();
+FUN4(VAR12, "", VAR17, VAR18);
+
+if ((VAR19 = FUN6()) > VAR20)
+FUN4(VAR7, "", VAR19, VAR20);
+VAR21 = FUN6();
+FUN4(VAR12, "", VAR19, VAR21);
+}

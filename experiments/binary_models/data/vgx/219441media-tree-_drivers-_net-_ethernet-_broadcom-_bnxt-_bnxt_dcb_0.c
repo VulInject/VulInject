@@ -1,0 +1,40 @@
+static int FUN1(struct VAR1 *VAR2, unsigned int VAR3)
+{
+struct hwrm_queue_cfg_input VAR4 = {0};
+int VAR5;
+
+if (FUN2(VAR2->VAR6))
+FUN3(VAR2);
+
+FUN4(VAR2, &VAR4, VAR7, -1, -1);
+VAR4.VAR8 = FUN5(VAR9);
+VAR4.VAR10 = FUN5(VAR11);
+
+
+VAR4.VAR12 = VAR13;
+for (VAR5 = 0; VAR5 < VAR2->VAR14; VAR5++) {
+if (FUN6(VAR2->VAR15[VAR5].VAR16)) {
+VAR4.VAR17 = FUN5(VAR2->VAR15[VAR5].VAR17);
+FUN7(VAR2, &VAR4, sizeof(VAR4),
+VAR18);
+VAR2->VAR15[VAR5].VAR16 =
+VAR13;
+}
+}
+
+
+VAR4.VAR12 = VAR19;
+for (VAR5 = 0; VAR5 < VAR2->VAR14; VAR5++) {
+if (VAR3 & (1 << VAR5)) {
+VAR4.VAR17 = FUN5(VAR2->VAR15[VAR5].VAR17);
+FUN7(VAR2, &VAR4, sizeof(VAR4),
+VAR18);
+VAR2->VAR15[VAR5].VAR16 =
+VAR19;
+}
+}
+if (FUN2(VAR2->VAR6))
+FUN8(VAR2);
+
+return 0;
+}

@@ -1,0 +1,44 @@
+static VAR1 FUN1(VAR2 *VAR3, mz_bool VAR4)
+{
+mz_bool VAR5 = VAR6;
+
+if (!VAR3)
+return VAR7;
+
+if ((!VAR3->VAR8) || (!VAR3->VAR9) || (!VAR3->VAR10) || (VAR3->VAR11 != VAR12))
+{
+if (VAR4)
+VAR3->VAR13 = VAR14;
+
+return VAR7;
+}
+
+if (VAR3->VAR8)
+{
+VAR15 *VAR16 = VAR3->VAR8;
+VAR3->VAR8 = NULL;
+
+FUN2(VAR3, &VAR16->VAR17);
+FUN2(VAR3, &VAR16->VAR18);
+FUN2(VAR3, &VAR16->VAR19);
+
+if (VAR16->VAR20)
+{
+if (VAR3->VAR21 == VAR22)
+{
+if (FUN3(VAR16->VAR20) == VAR23)
+{
+if (VAR4)
+VAR3->VAR13 = VAR24;
+VAR5 = VAR7;
+}
+}
+VAR16->VAR20 = NULL;
+}
+
+VAR3->FUN4(VAR3->VAR25, VAR16);
+}
+VAR3->VAR11 = VAR26;
+
+return VAR5;
+}

@@ -1,0 +1,75 @@
+void
+FUN1(struct VAR1 *VAR2)
+{
+struct multi_context VAR3;
+int VAR4;
+
+VAR2->VAR5 = VAR6;
+FUN2(VAR2);
+
+
+FUN3(VAR2, VAR2->VAR7, VAR8);
+if (FUN4(VAR2))
+{
+return;
+}
+
+
+FUN5(&VAR3, VAR2, true);
+
+
+FUN6(&VAR3, VAR2);
+
+
+FUN7(&VAR3);
+
+
+FUN8(VAR2, VAR9); 
+
+VAR3.VAR2.VAR10.VAR11 = FUN9();
+if (VAR3.VAR2.VAR10.VAR11 < 0)
+{
+FUN10(VAR12 | VAR13, "");
+}
+
+
+while (true)
+{
+FUN11(VAR14);
+
+
+FUN12(&VAR3, &VAR3.VAR2.VAR10.VAR15);
+VAR4 = FUN13(&VAR3.VAR2, VAR3.VAR16);
+FUN14(&VAR3);
+
+
+FUN15(&VAR3);
+
+
+if (VAR4 > 0)
+{
+
+FUN16(&VAR3);
+FUN14(&VAR3);
+}
+else if (VAR4 == 0)
+{
+FUN17(&VAR3, NULL, VAR17, false);
+}
+
+FUN18();
+}
+
+close(VAR2->VAR10.VAR11);
+
+
+FUN19();
+
+
+FUN20(&VAR3, true);
+
+
+FUN21(&VAR3);
+FUN22(&VAR3);
+FUN23(VAR2);
+}

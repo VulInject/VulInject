@@ -1,0 +1,79 @@
+void
+FUN1(struct VAR1 *VAR2, size_t VAR3)
+{
+struct mapid_res	VAR4;
+struct group		VAR5;
+struct VAR6		*VAR7;
+int			VAR8;
+char			*VAR9;
+char			*VAR6;
+char			*VAR10;
+idmap_stat		VAR11;
+
+if (VAR2->VAR12.VAR13 <= 0 ||
+VAR3 < FUN2(VAR2->VAR12.VAR13)) {
+VAR4.VAR14 = VAR15;
+VAR4.VAR16.VAR17 = VAR18;
+goto VAR19;
+}
+
+if (!FUN3(VAR2->VAR20, &VAR6, &VAR10)) {
+unsigned long VAR21;
+
+
+if (!FUN4(VAR6)) {
+VAR4.VAR14 = VAR22;
+VAR4.VAR16.VAR17 = VAR18;
+goto VAR19;
+}
+
+VAR23 = 0;
+VAR21 = FUN5(VAR6, (char **)NULL, 10);
+
+
+if (VAR23 || VAR21 > VAR24) {
+VAR4.VAR14 = VAR22;
+VAR4.VAR16.VAR17 = VAR18;
+goto VAR19;
+}
+
+VAR4.VAR16.VAR17 = (VAR25)VAR21;
+VAR4.VAR14 = VAR26;
+goto VAR19;
+}
+
+
+if (!FUN6() && !FUN7(VAR10)) {
+
+VAR11 = FUN8(VAR6, VAR10, 0, &VAR4.VAR16.VAR17);
+if (VAR11 != VAR27) {
+VAR4.VAR14 = VAR28;
+VAR4.VAR16.VAR17 = VAR18;
+goto VAR19;
+}
+VAR4.VAR14 = VAR29;
+goto VAR19;
+}
+
+if ((VAR9 = malloc(VAR30)) == NULL ||
+(VAR8 = FUN9(VAR6, &VAR5, VAR9, VAR30, &VAR7))
+!= 0 || VAR7 == NULL) {
+
+if (VAR9 == NULL || VAR8 != 0)
+VAR4.VAR14 = VAR31;
+else {
+
+VAR4.VAR14 = VAR32;
+free(VAR9);
+}
+VAR4.VAR16.VAR17 = VAR18;
+goto VAR19;
+}
+
+
+VAR4.VAR14 = VAR29;
+VAR4.VAR16.VAR17 = VAR5.VAR33;
+free(VAR9);
+VAR19:
+(void) FUN10((char *)&VAR4, sizeof (struct VAR34), NULL, 0);
+}

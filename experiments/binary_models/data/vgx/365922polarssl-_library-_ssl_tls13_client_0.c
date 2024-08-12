@@ -1,0 +1,83 @@
+static int FUN1(VAR1 *VAR2,
+unsigned char *VAR3,
+unsigned char *VAR4,
+unsigned char **VAR5,
+VAR6 *VAR7)
+{
+int VAR8 = VAR9;
+unsigned char *VAR10 = VAR3;
+VAR11 *VAR12 = VAR2->VAR12;
+size_t VAR13;
+unsigned char *VAR14;
+size_t VAR15;
+
+*VAR5 = NULL;
+*VAR7 = 0;
+
+FUN2(VAR10, VAR4, 9);
+
+VAR12->VAR16 = FUN3(VAR10, 0);
+FUN4(3,
+("",
+(unsigned int) VAR12->VAR16));
+
+VAR12->VAR17 = FUN3(VAR10, 4);
+FUN4(3,
+("",
+(unsigned int) VAR12->VAR17));
+
+*VAR7 = VAR10[8];
+VAR10 += 9;
+
+FUN2(VAR10, VAR4, *VAR7);
+*VAR5 = VAR10;
+FUN5(3, "", *VAR5, *VAR7);
+VAR10 += *VAR7;
+
+
+FUN2(VAR10, VAR4, 2);
+VAR13 = FUN6(VAR10, 0);
+VAR10 += 2;
+FUN2(VAR10, VAR4, VAR13);
+FUN5(3, "", VAR10, VAR13);
+
+
+if (VAR12->VAR14 != NULL || VAR12->VAR13 > 0) {
+FUN7(VAR12->VAR14);
+VAR12->VAR14 = NULL;
+VAR12->VAR13 = 0;
+}
+
+if ((VAR14 = FUN8(1, VAR13)) == NULL) {
+FUN4(1, (""));
+return VAR18;
+}
+memcpy(VAR14, VAR10, VAR13);
+VAR10 += VAR13;
+VAR12->VAR14 = VAR14;
+VAR12->VAR13 = VAR13;
+
+
+FUN9(
+VAR12, VAR19);
+
+FUN2(VAR10, VAR4, 2);
+VAR15 = FUN6(VAR10, 0);
+VAR10 += 2;
+FUN2(VAR10, VAR4, VAR15);
+
+FUN5(3, "", VAR10, VAR15);
+
+VAR8 = FUN10(VAR2, VAR10, VAR10 + VAR15);
+if (VAR8 != 0) {
+FUN11(1,
+"",
+VAR8);
+return VAR8;
+}
+
+
+VAR12->VAR20 = 0;
+
+return 0;
+}

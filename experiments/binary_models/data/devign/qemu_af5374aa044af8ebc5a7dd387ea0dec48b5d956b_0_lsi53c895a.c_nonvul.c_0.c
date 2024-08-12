@@ -1,0 +1,20 @@
+static int FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = FUN2(VAR3, VAR2, VAR2);
+    VAR5 *VAR6;
+    VAR6 = VAR4->VAR2.VAR7;
+    VAR6[VAR8] = 0xff;
+    VAR6[VAR9] = 0x01;
+    VAR4->VAR10 = FUN3(VAR11, VAR12, VAR4, VAR13);
+    VAR4->VAR14 = FUN3(VAR15, VAR16, VAR4, VAR13);
+    FUN4(&VAR4->VAR2, 0, 256, VAR17, VAR18);
+    FUN5(&VAR4->VAR2, 1, 0x400, 0, VAR4->VAR10);
+    FUN4(&VAR4->VAR2, 2, 0x2000, VAR19, VAR20);
+    FUN6(&VAR4->VAR21);
+    FUN7(&VAR4->VAR22, &VAR2->VAR23, 1, VAR24, VAR25);
+    if (!VAR2->VAR23.VAR26)
+    {
+        return FUN8(&VAR4->VAR22);
+    }
+    return 0;
+}

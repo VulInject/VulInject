@@ -1,0 +1,1 @@
+void * FUN1 ( Lst VAR1 ) { void * VAR2 ; LstNode VAR3 ; VAR3 = VAR1 -> VAR4 ; VAR2 = VAR3 -> VAR5 ; VAR1 -> VAR4 = VAR3 -> VAR6 ; if ( VAR1 -> VAR4 ) { VAR1 -> VAR4 -> VAR7 = NULL ; } else { VAR1 -> VAR8 = NULL ; } free ( VAR3 ) ; return VAR2 ; }

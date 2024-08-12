@@ -1,0 +1,10 @@
+typedef struct{void*VAR1;int VAR2;int VAR3;}VAR4;
+VAR4*FUN1(VAR4*VAR5,int VAR3)
+{
+VAR4*VAR6=(VAR4*)malloc(VAR3);
+memcpy(VAR6,VAR5,VAR5->VAR3);
+VAR6->VAR1=VAR5;
+VAR6->VAR2=0;
+VAR6->VAR3=VAR3;
+return VAR6;
+}

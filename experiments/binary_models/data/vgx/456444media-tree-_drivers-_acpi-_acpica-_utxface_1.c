@@ -1,0 +1,1 @@
+acpi_status FUN1 ( acpi_string VAR1 ) { acpi_status VAR2 ; struct VAR3 * VAR4 ; VAR2 = FUN2 ( VAR5 , VAR6 ) ; if ( FUN3 ( VAR2 ) ) { return ( VAR2 ) ; } VAR4 = FUN4 ( VAR1 ) ; if ( VAR4 ) { if ( VAR4 -> VAR7 & VAR8 ) { VAR4 -> VAR7 &= ~ VAR8 ; VAR2 = VAR9 ; } else { VAR2 = VAR10 ; } } else { VAR2 = FUN5 ( VAR1 ) ; } FUN6 ( VAR5 ) ; return ( VAR2 ) ; }

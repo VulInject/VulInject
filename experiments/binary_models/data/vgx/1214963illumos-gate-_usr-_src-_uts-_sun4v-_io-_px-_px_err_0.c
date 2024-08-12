@@ -1,0 +1,48 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4,
+VAR5 *VAR6);
+static VAR7 FUN2(VAR8 *VAR9, VAR5 *VAR6);
+static int  FUN3(VAR10 *VAR11, VAR12 *VAR13,
+VAR5 *VAR6, VAR3 *VAR4);
+
+static void FUN4(VAR1 *VAR2, VAR5 *VAR6,
+boolean_t VAR14, char *VAR15);
+static void FUN5(VAR1 *VAR2, VAR5 *VAR6,
+boolean_t VAR14, int VAR16, VAR12 *VAR13,
+boolean_t VAR17);
+static int FUN6(VAR1 *VAR2, VAR12 *VAR13,
+VAR5 *VAR6, VAR3 *VAR4);
+static int FUN7(VAR1 *VAR2, VAR12 *VAR13,
+VAR5 *VAR6, VAR3 *VAR4);
+static int FUN8(VAR1 *VAR2, VAR12 *VAR13,
+VAR5 *VAR6, VAR3 *VAR4);
+static int FUN9(VAR1 *VAR2, VAR12 *VAR13,
+VAR5 *VAR6, VAR3 *VAR4);
+static int FUN10(VAR1 *VAR2, VAR12 *VAR13,
+VAR5 *VAR6, VAR3 *VAR4);
+static int FUN11(VAR1 *VAR2, VAR12 *VAR13,
+VAR5 *VAR6, VAR3 *VAR4);
+static int FUN12(VAR1 *VAR2, VAR12 *VAR13,
+VAR5 *VAR6, VAR3 *VAR4);
+static void FUN13(VAR1 *VAR2, VAR12 *VAR13,
+VAR5 *VAR6);
+static int FUN14(VAR1 *VAR2, VAR12 *VAR13,
+VAR5 *VAR6);
+
+
+
+
+boolean_t VAR18 = VAR19;
+
+
+VAR7
+FUN15(caddr_t VAR20)
+{
+VAR8	*VAR9 = (VAR8 *)VAR20;
+VAR5	*VAR6 = (VAR5 *)VAR9->VAR21;
+
+if (VAR6 != NULL) {
+return (FUN2(VAR9, VAR6));
+}
+
+return (VAR22);
+}

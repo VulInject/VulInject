@@ -1,0 +1,1 @@
+static void FUN1 ( const struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { const struct VAR5 * * VAR6 = FUN2 ( VAR2 ) ; size_t VAR7 = FUN3 ( VAR2 ) ; size_t VAR8 ; for ( VAR8 = 0 ; VAR8 < VAR7 ; VAR8 ++ ) { const struct VAR5 * VAR9 = VAR6 [ VAR8 ] ; FUN4 ( VAR4 , "" , VAR9 -> VAR10 , VAR9 -> VAR11 ) ; } FUN5 ( VAR4 , '' ) ; }

@@ -1,0 +1,93 @@
+VAR1
+FUN1(struct VAR2 *VAR3)
+{
+struct VAR4 *VAR5 = VAR3->VAR5;
+struct VAR6 *VAR7 = VAR5->VAR8->VAR7;
+int VAR9 = VAR7->VAR10;
+usbd_status VAR11;
+int VAR12, VAR13;
+
+if (FUN2(VAR5->VAR8))
+return (VAR14);
+
+FUN3(5,("", VAR15,
+VAR3, VAR3->VAR12, VAR5, VAR5->VAR16));
+if (VAR17 > 5)
+FUN4(VAR5);
+VAR3->VAR18 = 0;
+VAR3->VAR19 = VAR20;
+
+if (VAR5->VAR21)
+return (VAR22);
+
+
+if ((VAR3->VAR23 & VAR24) == 0) {
+if (VAR3->VAR23 & VAR25)
+FUN5("");
+VAR11 = FUN6(VAR7, VAR3->VAR26, 0, 0, &VAR3->VAR27);
+if (VAR11)
+return (VAR11);
+VAR3->VAR23 |= VAR25;
+}
+
+if (!FUN7(VAR3) && (VAR3->VAR12 & VAR28) == 0)
+memcpy(FUN8(&VAR3->VAR27, 0), VAR3->VAR29,
+VAR3->VAR26);
+
+FUN9(VAR7, VAR3, VAR30);
+
+VAR11 = VAR5->VAR31->FUN10(VAR3);
+
+if (VAR11 != VAR32 && VAR11 != VAR33) {
+
+if (VAR3->VAR23 & VAR25) {
+FUN11(VAR7, &VAR3->VAR27);
+VAR3->VAR23 &= ~VAR25;
+}
+}
+
+if (!(VAR3->VAR12 & VAR34))
+return (VAR11);
+
+
+if (VAR11 != VAR32)
+return (VAR11);
+
+VAR13 = FUN12();
+if (VAR9) {
+int VAR35;
+
+for (VAR35 = VAR3->VAR36; VAR35 >= 0; VAR35--) {
+FUN13(VAR7, 1);
+if (VAR7->VAR37) {
+VAR3->VAR19 = VAR14;
+FUN14(VAR3);
+break;
+}
+
+FUN15(VAR5->VAR8);
+if (VAR3->VAR18)
+break;
+}
+
+if (VAR35 < 0) {
+VAR3->VAR19 = VAR38;
+FUN14(VAR3);
+}
+} else {
+while (!VAR3->VAR18) {
+VAR12 = VAR39|(VAR3->VAR12 & VAR40 ? VAR41 : 0);
+
+VAR11 = FUN16(VAR3, VAR12, "", VAR42);
+if (VAR11 && !VAR3->VAR18) {
+FUN17(VAR5);
+if (VAR11 == VAR43)
+VAR3->VAR19 = VAR44;
+else
+VAR3->VAR19 = VAR38;
+}
+}
+}
+FUN18(VAR13);
+return (VAR3->VAR19);
+}

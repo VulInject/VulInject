@@ -1,0 +1,10 @@
+static VAR1 FUN1(VAR2 *VAR3, int64_t VAR4)
+{
+    VAR5 *VAR6 = VAR3->VAR7;
+    VAR8 *VAR9 = VAR3->VAR9;
+    int64_t VAR10;
+    VAR10 = FUN2(VAR4, VAR6->VAR11 - VAR12);
+    VAR10 = FUN3(VAR10, VAR12);
+    FUN4(VAR3, "" VAR13 "" VAR13 "", VAR4, VAR10);
+    return FUN5(VAR9, VAR10, VAR14);
+}

@@ -1,0 +1,1 @@
+static void FUN1 ( unsigned int VAR1 , void * VAR2 ) { static uint64_t VAR3 ; uint64_t VAR4 = FUN2 ( VAR2 ) ; if ( VAR4 == VAR3 ) { g_autofree VAR5 * VAR6 = FUN3 ( "" VAR7 "" , VAR4 ) ; FUN4 ( VAR6 , NULL ) ; } VAR3 = VAR4 ; VAR8 ++ ; }

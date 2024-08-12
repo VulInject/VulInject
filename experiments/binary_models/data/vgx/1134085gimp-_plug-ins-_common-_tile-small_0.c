@@ -1,0 +1,42 @@
+FUN1 (gint  VAR1,
+gint  VAR2,
+gint  VAR3,
+gint  VAR4,
+VAR5 *VAR6,
+VAR5 *VAR7)
+{
+gint    VAR8,VAR9;
+gint    VAR10,VAR11;
+gint    VAR12;
+gdouble VAR13 = 1 - (1.0 / (VAR14) VAR15.VAR16) + 0.01;
+
+VAR10 = VAR4 * VAR15.VAR16 / VAR2;
+
+VAR9   = (VAR4 * VAR15.VAR16) % VAR2;
+VAR8   = (VAR3 * VAR15.VAR16) % VAR1;
+VAR11 = VAR3 * VAR15.VAR16 / VAR1;
+
+if ((VAR12 = VAR17[VAR11][VAR10]))
+{
+if (VAR12 & VAR18)
+{
+gdouble VAR19;
+
+VAR19 =  VAR2 - VAR4 - 1 + VAR13;
+VAR9 = ((VAR5) (VAR19 * (VAR14) VAR15.VAR16)) % VAR2;
+}
+
+if (VAR12 & VAR20)
+{
+gdouble VAR21;
+
+VAR21 = VAR1 - VAR3 - 1 + VAR13;
+VAR8 = ((VAR5) (VAR21 * (VAR14) VAR15.VAR16)) % VAR1;
+}
+}
+
+*VAR6 = VAR8;
+*VAR7 = VAR9;
+
+return(VAR12);
+}

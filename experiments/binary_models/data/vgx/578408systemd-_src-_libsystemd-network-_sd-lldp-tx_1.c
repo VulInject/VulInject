@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , const char * VAR3 ) { FUN2 ( VAR2 , - VAR4 ) ; if ( ! FUN3 ( VAR3 ) ) { FUN4 ( VAR5 < 512 ) ; } return FUN5 ( & VAR2 -> VAR3 , FUN6 ( VAR3 ) ) ; }

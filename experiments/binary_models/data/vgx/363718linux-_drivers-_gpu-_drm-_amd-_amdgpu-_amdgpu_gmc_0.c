@@ -1,0 +1,12 @@
+VAR1 FUN1(struct VAR2 *VAR3)
+{
+struct VAR4 *VAR5 = FUN2(VAR3->VAR6);
+
+if (VAR3->VAR7->VAR8 != 1 || VAR3->VAR7->VAR9 == VAR10)
+return VAR11;
+
+if (VAR3->VAR7->VAR12[0] + VAR13 >= VAR5->VAR14.VAR15)
+return VAR11;
+
+return VAR5->VAR14.VAR16 + VAR3->VAR7->VAR12[0];
+}

@@ -1,0 +1,14 @@
+VAR1 FUN1(VAR2 *VAR3, VAR4 *VAR5)
+{
+    uint8_t VAR6[VAR7];
+    FUN2(""
+          "" VAR8 "" VAR9 "" VAR8 "" VAR10 "" VAR11 "",
+          VAR5->VAR12, VAR5->VAR13, VAR5->VAR14, VAR5->VAR15, VAR5->VAR16);
+    FUN3(VAR6, VAR17);
+    FUN4(VAR6 + 4, VAR5->VAR15);
+    FUN4(VAR6 + 6, VAR5->VAR16);
+    FUN5(VAR6 + 8, VAR5->VAR14);
+    FUN5(VAR6 + 16, VAR5->VAR12);
+    FUN3(VAR6 + 24, VAR5->VAR13);
+    return FUN6(VAR3, VAR6, sizeof(VAR6), NULL);
+}

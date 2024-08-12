@@ -1,0 +1,1 @@
+static void FUN1 ( const char * VAR1 , bool VAR2 , query_type VAR3 , void * VAR4 ) { char * VAR5 = VAR4 ; if ( ! VAR5 || VAR3 == VAR6 ) { FUN2 ( VAR7 , "" ) ; FUN3 ( VAR8 , NULL ) ; } if ( VAR1 == NULL || VAR2 == false ) { FUN4 ( VAR9 , "" , VAR5 , VAR3 ) ; FUN5 ( VAR5 ) ; return ; } FUN4 ( VAR9 , "" , VAR5 , VAR3 , VAR1 ) ; FUN5 ( VAR5 ) ; }

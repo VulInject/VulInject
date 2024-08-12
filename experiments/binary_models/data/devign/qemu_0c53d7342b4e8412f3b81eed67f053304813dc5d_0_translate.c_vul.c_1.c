@@ -1,0 +1,1 @@
+static void FUN1(VAR1 *VAR2, TCGv VAR3) { FUN2(VAR4, VAR3); }

@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , char * VAR3 ) { static char * VAR4 [ ] { "" "" "" NULL } ; ; char * argv [ ] { nfs_cache_getent_prog VAR2 -> name entry_name NULL } ; ; int VAR5 = - VAR6 ; VAR5 = FUN2 ( argv [ 0 ] , argv , VAR4 , VAR7 ) ; if ( VAR5 == - VAR8 || VAR5 == - VAR6 ) { VAR9 [ 0 ] = '' ; } out return VAR5 > 0 ?0 : VAR5 ; }

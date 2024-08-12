@@ -1,0 +1,165 @@
+struct VAR1 *FUN1( VAR2 *VAR3,int VAR4, VAR5 *VAR6,int VAR7 ) {
+struct VAR1 *VAR8;
+struct VAR9 *VAR10;
+struct VAR11 *VAR12;
+BasePoint VAR13;
+struct VAR14 *VAR15;
+int VAR16, VAR17, VAR18, VAR19, VAR20, VAR21, VAR22, VAR23, VAR24;
+double VAR25;
+DBounds VAR26;
+
+VAR18 = ( !VAR27 && ( !VAR7 || VAR3->VAR28 == NULL ));
+VAR25 = ( VAR3->VAR29 != NULL ) ? VAR3->VAR29->VAR30 + VAR3->VAR29->VAR31 : 1000;
+
+VAR8 = FUN2( VAR3,VAR4,VAR25,VAR18 );
+if ( VAR8 == NULL )
+return( VAR8 );
+
+if ( VAR6 == NULL )
+FUN3( VAR8->VAR32,VAR8->VAR4,&VAR8->VAR6 );
+else
+memcpy( &VAR8->VAR6,VAR6,sizeof( VAR5 ));
+
+
+VAR8->VAR33 = malloc( 2*VAR8->VAR34*sizeof( struct VAR35 ));
+VAR8->VAR36 = 0;
+for ( VAR16=0; VAR16<VAR8->VAR34; ++VAR16 ) if ( VAR8->VAR37[VAR16].VAR38!=NULL ) {
+VAR10 = &VAR8->VAR37[VAR16];
+if (( !VAR8->VAR18 || VAR10->VAR39 || VAR10->VAR40 ) && VAR10->VAR41==NULL ) {
+VAR10->VAR41 = FUN4(VAR8,VAR10,true);
+if ( VAR10->VAR42 )
+VAR10->VAR43 = VAR10->VAR41;
+}
+if (( !VAR8->VAR18 || VAR10->VAR44 || VAR10->VAR45 ) && VAR10->VAR43==NULL ) {
+VAR10->VAR43 = FUN4(VAR8,VAR10,false);
+if ( VAR10->VAR42 && VAR10->VAR41 == NULL )
+VAR10->VAR41 = VAR10->VAR43;
+}
+}
+
+
+VAR8->VAR46 = calloc( 2*VAR8->VAR34,sizeof( struct VAR11 ));
+VAR8->VAR20 = 0;			
+
+if ( VAR7 ) {
+FUN5( VAR8->VAR3,&VAR26 );
+if ( VAR3->VAR47 != NULL )
+FUN6( VAR8,VAR3->VAR47,&VAR26,true,&VAR19 );
+if ( VAR3->VAR48 != NULL )
+FUN6( VAR8,VAR3->VAR48,&VAR26,false,&VAR19 );
+if ( VAR3->VAR28 != NULL )
+FUN7( VAR8,VAR3->VAR28,&VAR19 );
+}
+
+for ( VAR16=0; VAR16<VAR8->VAR34; ++VAR16 ) if ( VAR8->VAR37[VAR16].VAR38!=NULL ) {
+VAR10 = &VAR8->VAR37[VAR16];
+if ( VAR10->VAR49 > 0 ) {
+VAR21 = FUN8( VAR8,VAR10,false,false,VAR7,0 );
+if ( VAR21 == 0 && VAR10->VAR49 > 1 )
+FUN8( VAR8,VAR10,false,false,false,1 );
+}
+if ( VAR10->VAR50 > 0 ) {
+VAR21 = FUN8( VAR8,VAR10,true,false,VAR7,0 );
+if ( VAR21 == 0 && VAR10->VAR50 > 1 )
+FUN8( VAR8,VAR10,true,false,false,1 );
+}
+if ( VAR10->VAR51!=NULL ) {
+FUN9( VAR8,VAR10,false );
+}
+
+
+
+
+if ( VAR7 && ( VAR10->VAR52 || VAR10->VAR53 )) {
+VAR23 = VAR24 = false;
+for ( VAR17=0; VAR17<VAR10->VAR54 && (( VAR10->VAR52 && !VAR24 ) || ( VAR10->VAR53 && !VAR23 )); VAR17++ ) {
+VAR22 = FUN10( &VAR10->VAR55[VAR17]->VAR56,true );
+if ( VAR22 == 1 ) VAR23 = true;
+else if ( VAR22 == 2 ) VAR24 = true;
+}
+for ( VAR17=0; VAR17<VAR10->VAR57 && (( VAR10->VAR52 && !VAR24 ) || ( VAR10->VAR53 && !VAR23 )); VAR17++ ) {
+VAR22 = FUN10( &VAR10->VAR58[VAR17]->VAR56,true );
+if ( VAR22 == 1 ) VAR23 = true;
+else if ( VAR22 == 2 ) VAR24 = true;
+}
+if ( VAR10->VAR52 && !VAR24 ) {
+VAR13.VAR59 = 0; VAR13.VAR60 = 1;
+FUN11( VAR8,VAR10,NULL,&VAR13,2 );
+} else if ( VAR10->VAR53 && !VAR23 ) {
+VAR13.VAR59 = 1; VAR13.VAR60 = 0;
+FUN11( VAR8,VAR10,NULL,&VAR13,2 );
+}
+}
+}
+FUN12( VAR8 );
+
+
+
+for ( VAR16=0; VAR16<VAR8->VAR20; ++VAR16 )
+FUN13( VAR8,&VAR8->VAR46[VAR16] );
+FUN14( VAR8 );
+
+
+
+
+VAR8->VAR61 = malloc(VAR8->VAR34*sizeof(struct VAR62));
+VAR8->VAR63 = malloc(VAR8->VAR34*sizeof(struct VAR62));
+VAR8->VAR64 = malloc(3*VAR8->VAR34*sizeof(struct VAR62));
+VAR8->VAR65 = malloc(3*VAR8->VAR34*sizeof(struct VAR62));
+fprintf( VAR66,"",VAR8->VAR3->VAR67 );
+for ( VAR16=0; VAR16<VAR8->VAR20; ++VAR16 )
+FUN15( VAR8,&VAR8->VAR46[VAR16] );
+
+
+
+
+FUN16( VAR8 );
+
+
+
+
+for ( VAR16=0; VAR16<VAR8->VAR20; ++VAR16 ) {
+VAR12 = &VAR8->VAR46[VAR16];
+for ( VAR17=0; VAR17<VAR12->VAR68; ++VAR17 ) {
+VAR15 = &VAR12->VAR69[VAR17];
+if ( VAR15->VAR70!=NULL && VAR15->VAR71 ) {
+VAR20 = ( VAR15->VAR72 ) ? VAR15->VAR70->VAR57 : VAR15->VAR70->VAR54;
+if ( VAR20 == 1 ) VAR15->VAR71 = false;
+}
+if ( VAR15->VAR73!=NULL && VAR15->VAR74 ) {
+VAR20 = ( VAR15->VAR75 ) ? VAR15->VAR73->VAR57 : VAR15->VAR73->VAR54;
+if ( VAR20 == 1 ) VAR15->VAR74 = false;
+}
+}
+}
+
+for ( VAR16=0; VAR16<VAR8->VAR34; ++VAR16 ) if ( VAR8->VAR37[VAR16].VAR38 != NULL ) {
+VAR10 = &VAR8->VAR37[VAR16];
+if ( VAR10->VAR54 > 1 ) FUN17( VAR8,VAR10,false );
+if ( VAR10->VAR57 > 1 ) FUN17( VAR8,VAR10,true );
+}
+
+if ( VAR76 )
+FUN18( VAR8 );
+FUN19( VAR8 );
+if ( VAR7 )
+FUN20( VAR8 );
+
+FUN21( VAR8,0,VAR7 );
+if ( VAR7 ) {
+for ( VAR16=0; VAR16<VAR8->VAR20; ++VAR16 ) {
+VAR12 = &VAR8->VAR46[VAR16];
+if ( VAR12->VAR77 == 1 && FUN10( &VAR12->VAR56,true ))
+FUN22( VAR8,VAR12 );
+}
+FUN23( VAR8,true );
+}
+
+FUN24( VAR8 );
+free(VAR8->VAR61);		VAR8->VAR61 = NULL;
+free(VAR8->VAR63);		VAR8->VAR63 = NULL;
+free(VAR8->VAR64);	VAR8->VAR64 = NULL;
+free(VAR8->VAR65);	VAR8->VAR65 = NULL;
+
+return( VAR8 );
+}

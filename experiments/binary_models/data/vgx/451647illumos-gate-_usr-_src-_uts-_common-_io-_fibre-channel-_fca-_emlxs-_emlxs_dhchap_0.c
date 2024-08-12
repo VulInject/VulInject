@@ -1,0 +1,319 @@
+static VAR1
+FUN1(
+VAR2 *VAR3,
+void *VAR4,
+void *VAR5,
+void *VAR6,
+void *VAR7,
+uint32_t VAR8)
+{
+VAR9 *VAR10 = VAR11;
+VAR12 *VAR13 = &VAR3->VAR13;
+VAR14 *VAR15 = (VAR14 *)VAR5;
+VAR16 *VAR17 = (VAR16 *)VAR6;
+VAR18 *VAR19 = (VAR18 *)VAR7;
+VAR20 *VAR21 = &VAR19->VAR21;
+VAR22 *VAR23;
+VAR1 *VAR24;
+VAR25 *VAR26;
+uint16_t VAR27;
+uint32_t VAR28;
+VAR22 *VAR29;
+uint8_t VAR30;
+uint8_t VAR31;
+
+union challenge_val VAR32;
+
+VAR22 *VAR33 = NULL;
+uint8_t VAR34[20];	
+VAR1 *VAR35 = NULL;	
+uint32_t VAR36;	
+uint32_t VAR37 = 0;	
+
+VAR38 *VAR39;
+
+FUN2(VAR40, &VAR41,
+"",
+VAR19->VAR42);
+
+FUN3(VAR3, VAR19, VAR43, 0, 0);
+
+(void) FUN4(VAR3, VAR15, VAR44, VAR45, 0, 0);
+
+VAR23 = VAR17->VAR46;
+VAR24 = (VAR1 *)VAR23;
+
+
+VAR26 = (VAR25 *)((VAR22 *)VAR24);
+
+if (VAR26->VAR47.VAR48 != VAR49) {
+FUN2(VAR40, &VAR50,
+"",
+VAR19->VAR42, VAR26->VAR47.VAR48);
+
+
+VAR30 = VAR51;
+VAR31 = VAR52;
+goto VAR53;
+}
+if (VAR26->VAR47.VAR54 == VAR55) {
+VAR39 = (VAR38 *)((VAR22 *)VAR24);
+VAR30 = VAR39->VAR30;
+VAR31 = VAR39->VAR31;
+
+FUN2(VAR40, &VAR41,
+"",
+VAR19->VAR42, VAR30, VAR31);
+
+switch (VAR30) {
+case VAR56:
+switch (VAR31) {
+case VAR57:
+case VAR58:
+case VAR59:
+VAR30 = VAR56;
+VAR31 = VAR60;
+break;
+
+case VAR60:
+
+if (VAR21->VAR61 != 0) {
+VAR21->VAR61 = 0;
+VAR21->VAR62 = 0;
+}
+if (FUN5(VAR3, VAR19, NULL,
+NULL) != 0) {
+FUN2(VAR40,
+&VAR63,
+"",
+VAR19->VAR42, VAR21->VAR64);
+}
+return (VAR21->VAR64);
+
+default:
+VAR30 = VAR51;
+VAR31 = VAR65;
+break;
+}
+break;
+
+case VAR51:
+default:
+VAR30 = VAR51;
+VAR31 = VAR65;
+break;
+}
+
+goto VAR53;
+}
+if (VAR26->VAR47.VAR54 != VAR66) {
+FUN2(VAR40, &VAR50,
+"",
+VAR19->VAR42, VAR26->VAR47.VAR54);
+
+VAR30 = VAR51;
+VAR31 = VAR52;
+goto VAR53;
+}
+VAR36 = VAR26->VAR47.VAR36;
+
+if (FUN6(VAR36) != VAR21->VAR67) {
+FUN2(VAR40, &VAR50,
+"",
+VAR19->VAR42, FUN6(VAR36),
+VAR21->VAR67);
+
+VAR30 = VAR51;
+VAR31 = VAR68;
+goto VAR53;
+}
+VAR21->VAR61 = 0;
+
+VAR27 = VAR26->VAR47.VAR69;
+
+if (VAR27 == VAR70) {
+
+bcopy((void *)&VAR26->VAR47.VAR71,
+(void *)&VAR21->VAR72, sizeof (VAR73));
+}
+
+VAR29 = (VAR22 *)((VAR22 *)VAR24 + sizeof (VAR25));
+
+if (VAR26->VAR74 == VAR75) {
+if (VAR26->VAR76 != FUN6(VAR77)) {
+FUN2(VAR40, &VAR50,
+"",
+VAR19->VAR42, VAR26->VAR76, FUN6(VAR77));
+
+VAR30 = VAR51;
+VAR31 = VAR68;
+goto VAR53;
+}
+FUN7(VAR32.VAR78.VAR79, sizeof (VAR80));
+bcopy((void *)VAR29, (void *)VAR32.VAR78.VAR79,
+sizeof (VAR80));
+VAR29 += sizeof (VAR80);
+
+VAR37 = VAR77;
+
+} else if (VAR26->VAR74 == VAR81) {
+if (VAR26->VAR76 != FUN6(VAR82)) {
+FUN2(VAR40, &VAR50,
+"",
+VAR19->VAR42, VAR26->VAR76, FUN6(VAR77));
+
+VAR30 = VAR51;
+VAR31 = VAR68;
+goto VAR53;
+}
+FUN7(VAR32.VAR83.VAR79, sizeof (VAR84));
+bcopy((void *)VAR29, (void *)VAR32.VAR83.VAR79,
+sizeof (VAR84));
+VAR29 += sizeof (VAR84);
+
+VAR37 = VAR82;
+
+} else {
+FUN2(VAR40, &VAR50,
+"",
+VAR19->VAR42, VAR26->VAR74);
+
+VAR30 = VAR51;
+VAR31 = VAR68;
+goto VAR53;
+}
+
+
+VAR21->VAR74 = VAR26->VAR74;
+
+
+
+VAR21->VAR85 = VAR26->VAR74;
+
+
+VAR21->VAR86 = VAR26->VAR86;
+
+
+
+VAR21->VAR87 = VAR26->VAR86;
+
+
+
+VAR28 = *((VAR1 *)(VAR29));
+
+switch (VAR26->VAR86) {
+case VAR88:
+
+if (FUN6(VAR28) != 0) {
+FUN2(VAR40, &VAR50,
+"",
+VAR19->VAR42, VAR26->VAR86, FUN6(VAR28));
+
+VAR30 = VAR51;
+VAR31 = VAR68;
+goto VAR53;
+}
+break;
+
+case VAR89:
+case VAR90:
+case VAR91:
+case VAR92:
+
+VAR29 += sizeof (VAR1);
+
+VAR33 = (VAR22 *)FUN8(FUN6(VAR28),
+VAR93);
+if (VAR33 == NULL) {
+FUN2(VAR40, &VAR50,
+"",
+VAR19->VAR42, VAR26->VAR86, VAR33);
+
+VAR30 = VAR56;
+VAR31 = VAR60;
+goto VAR53;
+}
+bcopy((void *)VAR29, (void *)VAR33, FUN6(VAR28));
+break;
+
+default:
+FUN2(VAR40, &VAR50,
+"",
+VAR19->VAR42, VAR26->VAR86);
+
+VAR30 = VAR51;
+VAR31 = VAR68;
+goto VAR53;
+}
+
+
+
+
+VAR35 = (VAR1 *)FUN9(VAR3, VAR13,
+VAR19, VAR36, VAR32, VAR33, FUN6(VAR28));
+
+
+if (VAR21->VAR94.VAR95 == 1) {
+
+
+FUN7(&VAR34, sizeof (VAR34));
+
+if (VAR10->VAR96 == 1) {
+FUN10(VAR19, VAR34, 20);
+} else {
+(void) FUN11(VAR34, VAR37);
+}
+
+
+if (VAR19->VAR42 == VAR97) {
+bcopy((void *)&VAR34[0],
+(void *)&VAR21->VAR98[0], VAR37);
+VAR21->VAR99 = VAR37;
+
+
+bcopy((void *)&VAR34[0],
+(void *)&VAR21->VAR100.VAR98[0],
+VAR37);
+VAR21->VAR100.VAR99 = VAR37;
+} else {
+bcopy((void *)&VAR34[0],
+(void *)&VAR21->VAR100.VAR98[0],
+VAR37);
+VAR21->VAR100.VAR99 = VAR37;
+}
+}
+FUN2(VAR40, &VAR41,
+"",
+VAR19->VAR42, VAR21->VAR67,
+VAR21->VAR101,
+VAR26->VAR74, VAR26->VAR86, VAR28);
+
+
+
+
+
+if (FUN12(VAR3, VAR19, 0, VAR35, VAR33,
+FUN6(VAR28),
+VAR34, VAR37)) {
+FUN2(VAR40, &VAR50,
+"",
+VAR19->VAR42);
+
+FUN13(VAR33, FUN6(VAR28));
+VAR30 = VAR56;
+VAR31 = VAR60;
+goto VAR53;
+}
+return (VAR21->VAR64);
+
+VAR53:
+
+FUN3(VAR3, VAR19, VAR102, VAR30,
+VAR31);
+(void) FUN14(VAR3, VAR19, 0, 0, VAR30,
+VAR31);
+FUN15(VAR3, VAR19, 1);
+
+return (VAR21->VAR64);
+
+}

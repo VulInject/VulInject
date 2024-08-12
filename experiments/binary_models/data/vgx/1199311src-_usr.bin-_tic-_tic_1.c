@@ -1,0 +1,1 @@
+static bool FUN1 ( char * * VAR1 , const char * VAR2 ) { bool VAR3 = VAR4 ; int VAR5 ; if ( VAR1 != 0 ) { for ( VAR5 = 0 ; VAR1 [ VAR5 ] != 0 ; VAR5 ++ ) { if ( FUN2 ( VAR2 , VAR1 [ VAR5 ] , "" ) ) { VAR3 = VAR6 ; break ; } } } else { VAR3 = VAR6 ; } return ( VAR3 ) ; }

@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 ) { VAR3 * VAR4 ; if ( VAR2 ) { VAR4 = ( VAR3 * ) VAR2 ; free ( VAR4 -> VAR5 ) ; free ( VAR4 -> VAR6 ) ; free ( VAR4 ) ; } }

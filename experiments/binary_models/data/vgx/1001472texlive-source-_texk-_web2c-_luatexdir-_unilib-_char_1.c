@@ -1,0 +1,1 @@
+int FUN1 ( const char * VAR1 , const char * VAR2 , int VAR3 ) { int VAR4 , VAR5 ; for ( ; VAR3 -- > 0 ; ) { VAR4 = * VAR1 ++ ; VAR5 = * VAR2 ++ ; VAR4 = FUN2 ( VAR4 , NULL ) ; VAR5 = FUN2 ( VAR5 ) ; if ( VAR4 != VAR5 || VAR4 == '' ) { return ( VAR4 - VAR5 ) ; } } return ( 0 ) ; }

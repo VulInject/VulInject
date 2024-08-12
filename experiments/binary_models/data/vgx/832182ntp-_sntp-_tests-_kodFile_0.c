@@ -1,0 +1,23 @@
+void
+FUN1(void) {
+FUN2(FUN3("", VAR1), VAR2);
+
+FUN4(3, VAR3);
+
+struct VAR4* VAR5;
+
+FUN4(1, FUN5("", &VAR5));
+FUN6("", VAR5->VAR6);
+FUN6("", VAR5->VAR7);
+FUN4(0x12345678, VAR5->VAR8);
+
+FUN4(1, FUN5("", &VAR5));
+FUN6("", VAR5->VAR6);
+FUN6("", VAR5->VAR7);
+FUN4(0xfff, VAR5->VAR8);
+
+FUN4(1, FUN5("", &VAR5));
+FUN6("", VAR5->VAR6);
+FUN6("", VAR5->VAR7);
+FUN4(0xabcd, VAR5->VAR8);
+}

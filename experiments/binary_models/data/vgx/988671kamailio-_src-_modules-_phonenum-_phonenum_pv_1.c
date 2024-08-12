@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , VAR3 * VAR4 , VAR5 * VAR6 , char * VAR7 ) { str VAR8 ; VAR8 . VAR8 = VAR7 ; VAR8 . VAR9 = strlen ( VAR8 . VAR8 ) ; return FUN2 ( VAR2 , VAR4 , VAR6 , & VAR8 ) ; }

@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * mutex ) { EnterCriticalSection ( mutex , NULL ) ; return 0 ; }

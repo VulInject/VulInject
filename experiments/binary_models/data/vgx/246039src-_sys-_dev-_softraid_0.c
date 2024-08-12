@@ -1,0 +1,35 @@
+int
+FUN1(struct VAR1 *VAR2)
+{
+struct VAR3		*VAR4 = VAR2->VAR5;
+struct VAR6	*VAR7 = &VAR2->VAR8.VAR9;
+struct VAR10		*VAR11;
+void			*VAR12;
+int			VAR13 = 1;
+
+FUN2(VAR14, "", FUN3(VAR4));
+
+if (VAR2->VAR15 != VAR16) {
+FUN4(VAR4, "");
+goto VAR17;
+}
+
+VAR12 = malloc(VAR18 * VAR19, VAR20, VAR21 | VAR22);
+FUN5(VAR11, VAR7, VAR23) {
+if (FUN6(VAR2, VAR11->VAR24, VAR12, NULL)) {
+
+FUN2(VAR14, ""
+"", FUN3(VAR4), VAR11->VAR25);
+VAR13++;
+continue;
+}
+FUN7(&VAR11->VAR26, sizeof(VAR11->VAR26));
+}
+
+FUN7(VAR2->VAR27, VAR18 * VAR19);
+
+free(VAR12, VAR20, VAR18 * VAR19);
+VAR13 = 0;
+VAR17:
+return (VAR13);
+}

@@ -1,0 +1,1 @@
+int FUN1 ( unsigned char * * VAR1 , const unsigned char * VAR2 , int * VAR3 ) { int VAR4 ; size_t VAR5 ; if ( ( VAR4 = FUN2 ( VAR1 , VAR2 , & VAR5 , VAR6 ) ) != 0 ) { return ( VAR4 ) ; } * VAR3 = ( * * VAR1 != 0 ) ?1 : 0 ; ( * VAR1 ) ++ ; return ( 0 ) ; }

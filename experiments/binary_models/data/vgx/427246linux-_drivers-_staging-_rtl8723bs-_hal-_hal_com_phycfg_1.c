@@ -1,0 +1,1 @@
+u8 FUN1 ( struct VAR1 * VAR2 , u8 VAR3 , enum rate_section VAR4 ) { struct VAR5 * VAR6 = FUN2 ( VAR2 ) ; u8 VAR7 = 0 ; switch ( VAR4 ) { case VAR8 : VAR7 = VAR6 -> VAR9 [ VAR3 ] [ 0 ] ; break ; case VAR10 : VAR7 = VAR6 -> VAR9 [ VAR3 ] [ 1 ] ; break ; case VAR11 : VAR7 = VAR6 -> VAR9 [ VAR3 ] [ 2 ] ; break ; default : break ; } return VAR7 ; }

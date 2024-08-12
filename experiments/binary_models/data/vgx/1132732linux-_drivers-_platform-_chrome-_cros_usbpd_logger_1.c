@@ -1,0 +1,1 @@
+static int FUN1 ( char * VAR1 , int VAR2 , const char * VAR3 , ... ) { va_list VAR4 ; int VAR5 ; FUN2 ( VAR4 , VAR3 ) ; VAR5 = vsnprintf ( VAR1 + VAR2 , VAR6 - VAR2 , VAR3 , VAR4 ) ; FUN3 ( VAR4 ) ; return VAR5 ; }

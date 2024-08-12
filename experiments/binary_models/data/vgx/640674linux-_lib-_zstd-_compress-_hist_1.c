@@ -1,0 +1,1 @@
+size_t FUN1 ( unsigned * VAR1 , unsigned * VAR2 , const void * VAR3 , size_t VAR4 , void * VAR5 , size_t VAR6 ) { if ( ( VAR7 ) VAR5 & 3 ) { return FUN2 ( VAR8 ) ; } if ( VAR6 < VAR9 ) { return FUN2 ( VAR10 ) ; } return FUN3 ( VAR1 , VAR2 , VAR3 , VAR4 , VAR11 , ( VAR12 * ) VAR5 ) ; }

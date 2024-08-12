@@ -1,0 +1,69 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+const struct VAR5 *VAR6)
+{
+struct VAR7 *VAR8 = FUN2(VAR2);
+struct VAR9 *VAR10 = VAR8->VAR2.VAR10;
+int VAR11;
+
+if (VAR6->VAR12 > VAR13) {
+FUN3(VAR10, "");
+return -VAR14;
+}
+
+if (VAR6->VAR15 != VAR16)
+return -VAR14;
+
+if (FUN4(VAR4) && !VAR6->VAR17) {
+VAR11 = FUN5(VAR8->VAR18, VAR19, 0);
+if (VAR11) {
+FUN3(VAR10, "", VAR11);
+return VAR11;
+}
+}
+
+if (FUN6(VAR4) != VAR6->VAR20 ||
+FUN7(VAR4) != VAR6->VAR12) {
+u64 VAR21 = VAR6->VAR20 * VAR22;
+
+FUN8(VAR21, VAR6->VAR12);
+
+VAR11 = FUN5(VAR8->VAR18, VAR23, VAR21);
+if (VAR11) {
+FUN3(VAR10, "", VAR11);
+return VAR11;
+}
+}
+
+if (FUN4(VAR4) && VAR6->VAR17 &&
+FUN7(VAR4) != VAR6->VAR12) {
+
+VAR11 = FUN5(VAR8->VAR18, VAR24, 0);
+if (VAR11) {
+FUN3(VAR10, "", VAR11);
+return VAR11;
+}
+}
+
+if (FUN7(VAR4) != VAR6->VAR12 ||
+FUN4(VAR4) != VAR6->VAR17) {
+int VAR25 = FUN9(VAR6->VAR12);
+int VAR26 = VAR6->VAR17 ? VAR27 : 0;
+
+VAR11 = FUN5(VAR8->VAR18, VAR24,
+VAR25 | VAR26);
+if (VAR11) {
+FUN3(VAR10, "", VAR11);
+return VAR11;
+}
+}
+
+if (!FUN4(VAR4) && VAR6->VAR17) {
+VAR11 = FUN5(VAR8->VAR18, VAR19, 1);
+if (VAR11) {
+FUN3(VAR10, "", VAR11);
+return VAR11;
+}
+}
+
+return 0;
+}

@@ -1,0 +1,86 @@
+static VAR1 *
+FUN1(VAR2 *VAR3, zip_uint64_t VAR4) {
+VAR1 *VAR5, *VAR6;
+VAR7 *VAR8;
+zip_int64_t VAR9;
+zip_uint64_t VAR10;
+zip_int64_t VAR11;
+zip_int64_t VAR12;
+zip_error_t VAR13;
+VAR14 *VAR15;
+
+if (VAR4 < VAR16) {
+FUN2(&VAR3->VAR13, VAR17, 0);
+return NULL;
+}
+
+VAR10 = (VAR4 < VAR18 ? VAR4 : VAR18);
+if (FUN3(VAR3->VAR19, -(VAR20)VAR10, VAR21) < 0) {
+VAR22 *VAR23 = FUN4(VAR3->VAR19);
+if (FUN5(VAR23) != VAR24 || FUN6(VAR23) != VAR25) {
+
+FUN7(&VAR3->VAR13, VAR23);
+return NULL;
+}
+}
+if ((VAR9 = FUN8(VAR3->VAR19)) < 0) {
+FUN9(&VAR3->VAR13, VAR3->VAR19);
+return NULL;
+}
+
+if ((VAR15 = FUN10(VAR3->VAR19, VAR10, NULL, &VAR3->VAR13)) == NULL) {
+return NULL;
+}
+
+VAR12 = -1;
+VAR5 = NULL;
+if (VAR10 >= VAR18) {
+
+FUN11(VAR15, VAR26);
+}
+FUN2(&VAR13, VAR17, 0);
+
+VAR8 = FUN12(VAR15, 0);
+while ((VAR8 = FUN13(VAR8, FUN14(VAR15) - (VAR16 - 4), (const unsigned char *)VAR27, 4)) != NULL) {
+FUN11(VAR15, (VAR28)(VAR8 - FUN15(VAR15)));
+if ((VAR6 = FUN16(VAR3, VAR15, (VAR28)VAR9, &VAR13)) != NULL) {
+if (VAR5) {
+if (VAR12 <= 0) {
+VAR12 = FUN17(VAR3, VAR5, &VAR13);
+}
+
+VAR11 = FUN17(VAR3, VAR6, &VAR13);
+if (VAR12 < VAR11) {
+FUN18(VAR5);
+VAR5 = VAR6;
+VAR12 = VAR11;
+}
+else {
+FUN18(VAR6);
+}
+}
+else {
+VAR5 = VAR6;
+if (VAR3->VAR29 & VAR30)
+VAR12 = FUN17(VAR3, VAR5, &VAR13);
+else {
+VAR12 = 0;
+}
+}
+VAR6 = NULL;
+}
+
+VAR8++;
+FUN11(VAR15, (VAR28)(VAR8 - FUN15(VAR15)));
+}
+
+FUN19(VAR15);
+
+if (VAR12 < 0) {
+FUN7(&VAR3->VAR13, &VAR13);
+FUN18(VAR5);
+return NULL;
+}
+
+return VAR5;
+}

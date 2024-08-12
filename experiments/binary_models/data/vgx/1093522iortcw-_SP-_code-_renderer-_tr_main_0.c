@@ -1,0 +1,16 @@
+void FUN1( vec3_t VAR1, VAR2 *VAR3, VAR2 *VAR4, vec3_t VAR5 ) {
+int VAR6;
+vec3_t VAR7;
+vec3_t VAR8;
+float VAR9;
+
+FUN2( VAR1, VAR3->VAR10, VAR7 );
+
+FUN3( VAR8 );
+for ( VAR6 = 0 ; VAR6 < 3 ; VAR6++ ) {
+VAR9 = FUN4( VAR7, VAR3->VAR11[VAR6] );
+FUN5( VAR8, VAR9, VAR4->VAR11[VAR6], VAR8 );
+}
+
+FUN6( VAR8, VAR4->VAR10, VAR5 );
+}

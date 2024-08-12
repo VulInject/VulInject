@@ -1,0 +1,1 @@
+integer FUN1 ( VAR1 ) VAR2 * VAR1 ; integer FUN1 ( VAR2 * VAR1 ) { int VAR3 ; if ( ! VAR4 ) { FUN2 ( ) ; } VAR5 = 0 ; VAR6 = 0 ; if ( VAR7 -> VAR8 != 1 && FUN3 ( VAR7 ) ) { FUN4 ( VAR1 -> VAR9 , VAR10 , "" ) ; } VAR11 = FUN5 ( VAR12 ) ; FUN6 ( VAR12 , ( VAR13 ) sizeof ( VAR14 ) , VAR15 ) ; return ( 0 ) ; }

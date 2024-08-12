@@ -1,0 +1,1 @@
+static void FUN1 ( pid_t VAR1 , int VAR2 ) { waitpid_callback_t VAR3 , * VAR4 ; VAR3 . VAR1 = VAR1 ; VAR4 = FUN2 ( VAR5 , & VAR5 , & VAR3 ) ; if ( ! VAR4 || ! VAR4 -> VAR6 ) { FUN3 ( VAR7 , "" "" , ( unsigned ) VAR1 ) ; return ; } FUN3 ( VAR7 , "" , ( unsigned ) VAR1 ) ; VAR4 -> FUN4 ( VAR2 , VAR4 -> VAR8 ) ; }

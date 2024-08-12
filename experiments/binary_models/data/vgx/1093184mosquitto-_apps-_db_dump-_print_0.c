@@ -1,0 +1,10 @@
+void FUN1(struct VAR1 *VAR2, uint32_t VAR3)
+{
+FUN2("");
+FUN2("", VAR3);
+FUN2("", VAR2->VAR4);
+FUN2("", VAR2->VAR5);
+FUN2("", VAR2->VAR6.VAR7);
+FUN2("", VAR2->VAR6.VAR8);
+FUN2("", VAR2->VAR6.VAR9);
+}

@@ -1,0 +1,27 @@
+int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+const struct VAR5 *VAR6,
+const struct VAR7 *VAR8,
+const VAR9 *VAR10, int VAR11,
+u32 VAR12)
+{
+int VAR13 = 0;
+
+FUN2(&VAR4->VAR14, VAR8);
+
+VAR4->VAR14.VAR12 = VAR12;
+
+VAR13 = FUN3(VAR2, &VAR4->VAR14,
+&VAR15,
+VAR16, NULL);
+if (VAR13)
+return VAR13;
+
+VAR13 = FUN4(VAR2, VAR4, &VAR4->VAR14,
+VAR6, VAR10, VAR11);
+
+if (VAR13)
+FUN5(&VAR4->VAR14);
+
+return VAR13;
+}

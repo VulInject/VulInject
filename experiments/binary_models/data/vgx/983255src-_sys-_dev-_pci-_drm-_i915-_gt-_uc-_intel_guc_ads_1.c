@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 ) { FUN2 ( ) ; return - VAR3 ; struct VAR4 * VAR5 = FUN3 ( VAR2 ) ; u32 VAR6 ; intel_wakeref_t VAR7 ; int VAR8 ; VAR6 = FUN4 ( VAR2 , VAR9 . VAR6 ) ; FUN5 ( ! VAR6 ) ; FUN6 ( VAR2 ) ; if ( ! FUN7 ( VAR2 ) ) { return 0 ; } FUN8 ( , ) VAR8 = FUN9 ( VAR2 , VAR6 ) ; return VAR8 ; }

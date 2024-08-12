@@ -1,0 +1,81 @@
+#VAR1 ""
+#VAR1 <VAR2.VAR3>
+#VAR1 <VAR4.VAR3>
+#VAR5 FUN1(VAR6, "")
+void FUN2()
+{
+    char * VAR7;
+    char VAR8[256] = "";
+    VAR7 = VAR8;
+    {
+        size_t VAR9 = strlen(VAR7);
+        if (256-VAR9 > 1)
+        {
+            if (fgets(VAR7+VAR9, (int)(256-VAR9), stdin) != NULL)
+            {
+                VAR9 = strlen(VAR7);
+                if (VAR9 > 0 && VAR7[VAR9-1] == '')
+                {
+                    VAR7[VAR9-1] = '';
+                }
+            }
+            else
+            {
+                VAR7[VAR9] = '';
+            }
+        }
+    }
+    {
+        char * VAR10 = VAR7;
+        char * VAR7 = VAR10;
+        {
+            VAR11* VAR12 = NULL;
+            ULONG VAR13 = 0L;
+            ULONG VAR14 = 0L;
+            VAR15 *VAR16 = NULL;
+            char VAR17[256];
+            _snprintf(VAR17, 256-1, "", VAR7);
+            VAR12 = FUN3("", VAR18);
+            if (VAR12 == NULL)
+            {
+                FUN4(1);
+            }
+            VAR13 = FUN5(VAR12, NULL);
+            if (VAR13 != VAR19)
+            {
+                FUN4(1);
+            }
+            VAR14 = FUN6(
+                                VAR12,
+                                "",
+                                VAR20,
+                                VAR17,
+                                NULL,
+                                0,
+                                NULL,
+                                NULL,
+                                VAR21,
+                                VAR21,
+                                &VAR16);
+            if (VAR14 != VAR19)
+            {
+                if (VAR16 != NULL)
+                {
+                    FUN7(VAR16);
+                }
+                FUN4(1);
+            }
+            if (VAR16 != NULL)
+            {
+                FUN7(VAR16);
+            }
+            FUN8(VAR12);
+        }
+    }
+}
+int main(int argc, char * argv[])
+{
+    srand( (unsigned)FUN9(NULL) );
+    FUN2();
+    return 0;
+}

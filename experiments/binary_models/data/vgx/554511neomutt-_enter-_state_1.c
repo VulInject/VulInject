@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , size_t VAR3 ) { if ( ! VAR2 ) { return ; } VAR3 = FUN2 ( VAR3 + 4 , 128 ) ; FUN3 ( & VAR2 -> VAR4 , VAR3 * sizeof ( wchar_t ) ) ; memset ( VAR2 -> VAR4 + VAR2 -> VAR5 , 0 , ( VAR3 - VAR2 -> VAR5 ) * sizeof ( wchar_t ) ) ; VAR2 -> VAR5 = VAR3 ; }

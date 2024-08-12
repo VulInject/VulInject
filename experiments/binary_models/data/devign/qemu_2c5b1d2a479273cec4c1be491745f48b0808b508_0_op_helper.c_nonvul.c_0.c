@@ -1,0 +1,1 @@
+void FUN1(VAR1)(VAR2 *VAR3, uint32_t VAR4, uint32_t VAR5) { FUN2(VAR3->VAR6, VAR5, VAR4, VAR7, NULL); }

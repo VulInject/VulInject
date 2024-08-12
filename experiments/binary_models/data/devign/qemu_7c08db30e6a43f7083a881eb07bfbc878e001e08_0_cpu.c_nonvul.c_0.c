@@ -1,0 +1,42 @@
+static void FUN1(VAR1 *VAR2, const char *VAR3, VAR4 **VAR5)
+{
+    VAR6 *VAR7 = &VAR2->VAR7;
+    x86_def_t VAR8, *VAR9 = &VAR8;
+    memset(VAR9, 0, sizeof(*VAR9));
+    if (FUN2(VAR2, VAR9, VAR3) < 0)
+    {
+        FUN3(VAR5, "", VAR3);
+        return;
+    }
+    FUN4(FUN5(VAR2), VAR9->VAR10, "", VAR5);
+    FUN4(FUN5(VAR2), VAR9->VAR11, "", VAR5);
+    FUN4(FUN5(VAR2), VAR9->VAR12, "", VAR5);
+    FUN4(FUN5(VAR2), VAR9->VAR13, "", VAR5);
+    VAR7->VAR14[VAR15] = VAR9->VAR14[VAR15];
+    VAR7->VAR14[VAR16] = VAR9->VAR14[VAR16];
+    VAR7->VAR14[VAR17] = VAR9->VAR14[VAR17];
+    VAR7->VAR14[VAR18] = VAR9->VAR14[VAR18];
+    FUN4(FUN5(VAR2), VAR9->VAR19, "", VAR5);
+    VAR7->VAR14[VAR20] = VAR9->VAR14[VAR20];
+    VAR7->VAR14[VAR21] = VAR9->VAR14[VAR21];
+    VAR7->VAR14[VAR22] = VAR9->VAR14[VAR22];
+    VAR7->VAR14[VAR23] = VAR9->VAR14[VAR23];
+    VAR7->VAR24 = VAR9->VAR25;
+    VAR2->VAR26 = VAR9->VAR26;
+    FUN6(FUN5(VAR2), VAR9->VAR27, "", VAR5);
+    if (FUN7())
+    {
+        VAR7->VAR14[VAR20] |= VAR28;
+    }
+    VAR7->VAR14[VAR16] |= VAR29;
+    const char *VAR30 = VAR9->VAR30;
+    char VAR31[VAR32 + 1];
+    if (FUN7())
+    {
+        uint32_t VAR33 = 0, VAR34 = 0, VAR35 = 0;
+        FUN8(0, 0, NULL, &VAR33, &VAR34, &VAR35);
+        FUN9(VAR31, VAR33, VAR35, VAR34);
+        VAR30 = VAR31;
+    }
+    FUN6(FUN5(VAR2), VAR30, "", VAR5);
+}

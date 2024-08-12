@@ -1,0 +1,16 @@
+struct VAR1 *VAR2;
+FUN1(VAR2);
+
+s32 VAR3 = 32;
+
+static void VAR4 FUN2(void)
+{
+u64 VAR5;
+s32 VAR6 = FUN3();
+s32 VAR7 = FUN4(VAR8, VAR6*2, 32);
+
+
+VAR5 = FUN5(VAR9, (VAR10/VAR6)/256, 0x7fffffff);
+
+VAR3 = FUN4(VAR8, VAR5, VAR7);
+}

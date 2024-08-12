@@ -1,0 +1,45 @@
+VAR1 FUN1(HANDLE VAR2, uint64_t VAR3,
+uint64_t VAR4, uint64_t VAR5,
+const void *VAR6)
+{
+LARGE_INTEGER VAR7;
+DWORD VAR8;
+
+if((VAR5*VAR3) > 0xFFFFFFFFUL)
+{
+FUN2("");
+return -1;
+}
+VAR8 = (VAR9)(VAR5*VAR3);
+
+VAR7.VAR10 = VAR4*VAR3;
+if(!FUN3(VAR2, VAR7, NULL, VAR11))
+{
+FUN2("" VAR12 "", VAR4, FUN4());
+return -1;
+}
+
+VAR13 = 0;
+if(!FUN5(VAR2, VAR6, VAR8, &VAR8, VAR14))
+{
+VAR13 = VAR15|FUN6(VAR16)|FUN7();
+FUN2("", FUN4());
+FUN2("" VAR12 "" VAR12 "" VAR12 "", VAR4, VAR5, VAR3);
+return -1;
+}
+if (VAR8 != VAR5*VAR3)
+{
+
+if (VAR17 && VAR8 == 0) {
+FUN2("");
+return 0;
+}
+FUN2("");
+VAR13 = VAR15|FUN6(VAR16)|VAR18;
+FUN2("" VAR19 "", VAR8, VAR5*VAR3);
+FUN2("" VAR12 "" VAR12 "" VAR12 "", VAR4, VAR5, VAR3);
+return -1;
+}
+
+return (VAR1)VAR8;
+}

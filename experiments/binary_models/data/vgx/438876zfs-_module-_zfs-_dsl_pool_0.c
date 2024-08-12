@@ -1,0 +1,37 @@
+void
+FUN1(VAR1 *VAR2)
+{
+zap_attribute_t VAR3;
+zap_cursor_t VAR4;
+VAR5 *VAR6 = VAR2->VAR7;
+uint64_t VAR8 = VAR2->VAR9;
+VAR10 *VAR11;
+
+if (VAR8 == 0)
+return;
+FUN2(FUN3(VAR2->VAR12) >= VAR13);
+
+VAR11 = FUN4();
+
+for (FUN5(&VAR4, VAR6, VAR8);
+FUN6(&VAR4, &VAR3) == 0;
+FUN7(&VAR4)) {
+char *VAR14;
+VAR10 *VAR15;
+
+VAR14 = strchr(VAR3.VAR16, '');
+*VAR14 = '';
+++VAR14;
+if (FUN8(VAR11, VAR3.VAR16, &VAR15) != 0) {
+VAR15 = FUN4();
+FUN9(VAR15, VAR14);
+FUN10(VAR11, VAR3.VAR16, VAR15);
+FUN11(VAR15);
+} else {
+FUN9(VAR15, VAR14);
+}
+}
+FUN12(VAR2, VAR11);
+FUN11(VAR11);
+FUN13(&VAR4);
+}

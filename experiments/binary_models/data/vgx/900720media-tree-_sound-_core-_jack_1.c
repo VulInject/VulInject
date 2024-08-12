@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , enum snd_jack_types VAR3 , int VAR4 ) { int VAR5 = FUN2 ( VAR6 ) - FUN2 ( VAR3 ) ; FUN3 ( VAR2 -> VAR7 ) ; VAR2 -> VAR3 |= VAR3 ; VAR2 -> VAR5 [ VAR5 ] = VAR4 ; return 0 ; }

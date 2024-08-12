@@ -1,0 +1,1 @@
+( VAR1 ) ; void FUN1 ( struct VAR2 * VAR3 ) { cfs_time_t VAR4 ; FUN2 ( & VAR3 -> VAR5 -> VAR6 , VAR4 ) ; if ( ! VAR3 -> VAR5 -> VAR7 ++ ) { FUN3 ( VAR8 , VAR3 ) ; } FUN4 ( & VAR3 -> VAR5 -> VAR6 , VAR4 ) ; }

@@ -1,0 +1,1 @@
+static uint64_t FUN1 ( uint64_t VAR1 ) { uint64_t VAR2 = VAR1 % VAR3 ; return 0 ; }

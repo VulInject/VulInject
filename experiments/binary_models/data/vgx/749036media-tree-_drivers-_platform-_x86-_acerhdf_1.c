@@ -1,0 +1,1 @@
+static int FUN1 ( int * VAR1 ) { u8 VAR2 ; if ( VAR2 != VAR3 -> VAR4 . VAR5 ) { * VAR1 = VAR6 ; } else { * VAR1 = VAR7 ; } return 0 ; }

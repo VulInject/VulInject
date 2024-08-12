@@ -1,0 +1,10 @@
+int FUN1(struct VAR1 *VAR2)
+{
+VAR2->VAR3[0] = VAR4;
+FUN2("", VAR2->VAR5, VAR2->VAR6,
+VAR2->VAR7);
+FUN2("", VAR2->VAR3[0],
+VAR2->VAR8, VAR2->VAR9);
+
+return VAR10;
+}

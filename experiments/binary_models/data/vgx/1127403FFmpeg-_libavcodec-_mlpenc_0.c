@@ -1,0 +1,27 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+VAR5 *VAR6 = VAR2->VAR7;
+VAR8 *VAR9 = &VAR6->VAR10;
+
+FUN2(VAR4, 4, VAR9->VAR11);
+
+for (unsigned int VAR12 = 0; VAR12 < VAR9->VAR11; VAR12++) {
+FUN2(VAR4, 4, VAR9->VAR13[VAR12]); 
+FUN2(VAR4, 4, VAR9->VAR14[VAR12]);
+FUN2(VAR4, 1, 0             ); 
+
+for (unsigned int VAR15 = 0; VAR15 < VAR2->VAR16; VAR15++) {
+int32_t VAR17 = VAR9->VAR17[VAR12][VAR15];
+
+if (VAR17) {
+FUN2(VAR4, 1, 1);
+
+VAR17 >>= 14 - VAR9->VAR14[VAR12];
+
+FUN3(VAR4, VAR9->VAR14[VAR12] + 2, VAR17);
+} else {
+FUN2(VAR4, 1, 0);
+}
+}
+}
+}

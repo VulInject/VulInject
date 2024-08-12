@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( int VAR2 , VAR3 * VAR4 , const unsigned char * VAR5 , int VAR6 ) { VAR7 * VAR8 = NULL ; VAR1 * VAR9 = NULL ; VAR8 = FUN2 ( VAR2 , VAR4 ) ; if ( ! VAR8 ) { return NULL ; } if ( FUN3 ( VAR8 ) <= 0 ) { VAR10 } if ( FUN4 ( VAR8 , - 1 , VAR11 , VAR12 , VAR6 , ( void * ) VAR5 ) <= 0 ) { VAR10 } if ( FUN5 ( VAR8 , & VAR9 ) <= 0 ) { VAR10 } merr return VAR9 ; }

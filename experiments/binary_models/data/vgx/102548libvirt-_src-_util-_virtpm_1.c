@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( virTPMBinaryCapsParse VAR2 , const char * VAR3 , const char * VAR4 ) { FUN2 ( ) VAR5 = NULL ; VAR5 = FUN3 ( VAR3 , NULL ) ; if ( VAR4 ) { FUN4 ( VAR5 , VAR4 ) ; } FUN4 ( VAR5 , "" ) ; FUN5 ( VAR5 ) ; return FUN6 ( VAR5 , VAR2 ) ; }

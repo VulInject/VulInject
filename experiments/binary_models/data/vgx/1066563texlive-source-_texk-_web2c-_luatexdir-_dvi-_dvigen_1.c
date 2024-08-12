@@ -1,0 +1,1 @@
+static void FUN1 ( int VAR1 ) { pointer VAR2 ; while ( VAR3 != VAR4 ) { if ( FUN2 ( VAR3 ) < VAR1 ) { break ; } VAR2 = VAR3 ; VAR3 = FUN3 ( VAR2 ) ; FUN4 ( VAR2 , NULL ) ; } while ( VAR5 != VAR4 ) { if ( FUN2 ( VAR5 ) < VAR1 ) { return ; } VAR2 = VAR5 ; VAR5 = FUN3 ( VAR2 ) ; FUN4 ( VAR2 ) ; } }

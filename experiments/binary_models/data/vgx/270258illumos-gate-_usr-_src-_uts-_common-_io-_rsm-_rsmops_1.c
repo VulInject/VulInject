@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( const char * VAR2 , const minor_t VAR3 ) { major_t VAR4 ; VAR1 * VAR5 ; int VAR6 ; VAR4 = FUN2 ( ( char * ) VAR2 ) ; if ( VAR4 == ( VAR7 ) - 1 ) { return ( NULL ) ; } VAR5 = FUN3 ( FUN4 ( VAR4 , VAR3 ) , VAR8 ) ; VAR6 = FUN5 ( & VAR5 , VAR9 | VAR10 , FUN6 ( ) , NULL ) ; if ( VAR6 == 0 ) { return ( VAR5 ) ; } else { FUN7 ( VAR5 ) ; return ( NULL ) ; } }

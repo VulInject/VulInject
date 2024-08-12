@@ -1,0 +1,86 @@
+static int FUN1(struct VAR1 *VAR2,
+int VAR3, int VAR4,
+unsigned long *VAR5)
+{
+FUN2(VAR6, VAR7);
+int VAR8;
+int VAR9;
+int VAR10;
+
+
+for (VAR10 = 0; VAR10 < VAR2->VAR11; VAR10++) {
+struct VAR12 *VAR13 = &VAR2->VAR13[VAR10];
+
+VAR9 = FUN3(VAR13->VAR14, VAR7);
+
+if (VAR9 == VAR3) {
+FUN4(VAR6, VAR13->VAR14, VAR7);
+
+VAR8 = FUN5(VAR6, VAR7);
+while (VAR8 < VAR7) {
+if (FUN6(VAR8, VAR5)) {
+
+VAR13->VAR15 = VAR8;
+FUN7(VAR5, VAR8, 1);
+FUN8(VAR2->VAR16,
+"",
+VAR10, VAR8);
+break;
+}
+FUN7(VAR6, VAR8, 1);
+VAR8 = FUN5(VAR6, VAR7);
+}
+if (VAR8 >= VAR7)
+return -VAR17;
+VAR4--;
+}
+}
+return VAR4;
+}
+
+
+static int FUN9(struct VAR1 *VAR2)
+{
+FUN2(VAR5, VAR7);
+FUN2(VAR6, VAR7);
+int VAR4 = 0;
+int VAR8;
+int VAR10, VAR3;
+int VAR18 = 0;
+
+FUN10(VAR5, VAR7);
+
+
+for (VAR10 = 0; VAR10 < VAR2->VAR11; VAR10++)
+FUN11(VAR5,
+VAR5, VAR2->VAR13[VAR10].VAR14,
+VAR7);
+
+VAR4 = FUN3(VAR5, VAR7);
+
+if (VAR4 >= VAR2->VAR11) {
+
+for (VAR3 = 1;
+VAR4 && (VAR3 <= VAR7);
+VAR3++) {
+VAR18 = FUN1(VAR2, VAR3, VAR4,
+VAR5);
+if (VAR18 < 0)
+return -VAR17;
+VAR4 = VAR18;
+}
+}
+
+VAR18 = 0;
+
+FUN4(VAR6, VAR5, VAR7);
+
+VAR8 = FUN12(VAR6, VAR7);
+while (VAR8 < VAR7) {
+FUN13(VAR2->VAR19, VAR8 * VAR20, VAR20);
+FUN13(VAR6, VAR8, 1);
+VAR8 = FUN12(VAR6, VAR7);
+}
+
+return VAR18;
+}

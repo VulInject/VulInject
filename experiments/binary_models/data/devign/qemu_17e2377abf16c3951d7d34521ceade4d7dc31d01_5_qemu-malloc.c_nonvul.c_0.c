@@ -1,0 +1,1 @@
+void *FUN1(unsigned long VAR1) { return NULL; }

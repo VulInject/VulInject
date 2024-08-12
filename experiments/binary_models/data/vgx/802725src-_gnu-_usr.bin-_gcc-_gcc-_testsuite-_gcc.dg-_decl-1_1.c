@@ -1,0 +1,1 @@
+int FUN1 ( int VAR1 ) int FUN2 ( int ( FUN3 ( VAR1 ) ) ) ; int main ( ) { FUN4 ( VAR2 , NULL ) ; return FUN2 ( VAR3 ) ; }

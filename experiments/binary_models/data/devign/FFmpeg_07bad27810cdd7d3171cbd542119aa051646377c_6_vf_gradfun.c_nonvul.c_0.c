@@ -1,0 +1,27 @@
+static void FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = VAR2->VAR5->VAR6;
+    VAR7 *VAR8 = VAR2->VAR9;
+    VAR1 *VAR10 = VAR2->VAR5->VAR11[0];
+    VAR7 *VAR12 = VAR10->VAR13;
+    int VAR14;
+    for (VAR14 = 0; VAR14 < 4 && VAR8->VAR15[VAR14]; VAR14++)
+    {
+        int VAR16 = VAR2->VAR16;
+        int VAR17 = VAR2->VAR17;
+        int VAR18 = VAR4->VAR19;
+        if (VAR14)
+        {
+            VAR16 = VAR4->VAR20;
+            VAR17 = VAR4->VAR21;
+            VAR18 = VAR4->VAR22;
+        }
+        if (FUN2(VAR16, VAR17) > 2 * VAR18)
+            FUN3(VAR4, VAR12->VAR15[VAR14], VAR8->VAR15[VAR14], VAR16, VAR17, VAR12->VAR23[VAR14], VAR8->VAR23[VAR14], VAR18);
+        else if (VAR12->VAR15[VAR14] != VAR8->VAR15[VAR14])
+            FUN4(VAR12->VAR15[VAR14], VAR12->VAR23[VAR14], VAR8->VAR15[VAR14], VAR8->VAR23[VAR14], VAR16, VAR17);
+    }
+    FUN5(VAR10, 0, VAR2->VAR17, 1);
+    FUN6(VAR10);
+    FUN7(VAR12);
+}

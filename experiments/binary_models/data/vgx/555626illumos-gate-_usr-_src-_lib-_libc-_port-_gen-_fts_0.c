@@ -1,0 +1,158 @@
+VAR1 *
+FUN1(VAR2 *VAR3)
+{
+VAR1 *VAR4, *VAR5;
+int VAR6;
+char *VAR7;
+int VAR8;
+
+
+if (VAR3->VAR9 == NULL || FUN2(VAR10))
+return (NULL);
+
+
+VAR4 = VAR3->VAR9;
+
+
+VAR6 = VAR4->VAR11;
+VAR4->VAR11 = VAR12;
+
+
+if (VAR6 == VAR13) {
+VAR4->VAR14 = FUN3(VAR3, VAR4, 0, -1);
+return (VAR4);
+}
+
+
+if (VAR6 == VAR15 &&
+(VAR4->VAR14 == VAR16 || VAR4->VAR14 == VAR17)) {
+VAR4->VAR14 = FUN3(VAR3, VAR4, 1, -1);
+if (VAR4->VAR14 == VAR18 && !FUN2(VAR19)) {
+if ((VAR4->VAR20 =
+open("", VAR21 | VAR22)) < 0) {
+VAR4->VAR23 = VAR24;
+VAR4->VAR14 = VAR25;
+} else
+VAR4->VAR26 |= VAR27;
+}
+return (VAR4);
+}
+
+
+if (VAR4->VAR14 == VAR18) {
+
+if (VAR6 == VAR28 ||
+(FUN2(VAR29) && VAR4->VAR30 != VAR3->VAR30)) {
+if (VAR4->VAR26 & VAR27)
+(void) close(VAR4->VAR20);
+if (VAR3->VAR31) {
+FUN4(VAR3->VAR31);
+VAR3->VAR31 = NULL;
+}
+VAR4->VAR14 = VAR32;
+return (VAR4);
+}
+
+
+if (VAR3->VAR31 && FUN2(VAR33)) {
+FUN5(VAR33);
+FUN4(VAR3->VAR31);
+VAR3->VAR31 = NULL;
+}
+
+
+if (VAR3->VAR31) {
+if (FUN6(VAR3, VAR4, -1, VAR4->VAR34)) {
+VAR4->VAR23 = VAR24;
+VAR4->VAR26 |= VAR35;
+for (VAR4 = VAR3->VAR31; VAR4; VAR4 = VAR4->VAR36)
+VAR4->VAR34 =
+VAR4->VAR37->VAR34;
+}
+} else if ((VAR3->VAR31 = FUN7(VAR3, VAR38)) == NULL) {
+if (FUN2(VAR10))
+return (NULL);
+return (VAR4);
+}
+VAR4 = VAR3->VAR31;
+VAR3->VAR31 = NULL;
+goto VAR39;
+}
+
+
+VAR40:	VAR5 = VAR4;
+if ((VAR4 = VAR4->VAR36) != NULL) {
+free(VAR5);
+
+
+if (VAR4->VAR41 == VAR42) {
+if (FUN8(VAR3, VAR3->VAR43)) {
+FUN9(VAR10);
+return (NULL);
+}
+FUN10(VAR3, VAR4);
+return (VAR3->VAR9 = VAR4);
+}
+
+
+if (VAR4->VAR11 == VAR28)
+goto VAR40;
+if (VAR4->VAR11 == VAR15) {
+VAR4->VAR14 = FUN3(VAR3, VAR4, 1, -1);
+if (VAR4->VAR14 == VAR18 && !FUN2(VAR19)) {
+if ((VAR4->VAR20 =
+open("", VAR21 | VAR22)) < 0) {
+VAR4->VAR23 = VAR24;
+VAR4->VAR14 = VAR25;
+} else
+VAR4->VAR26 |= VAR27;
+}
+VAR4->VAR11 = VAR12;
+}
+
+VAR39:		VAR7 = VAR3->VAR44 + FUN11(VAR4->VAR37);
+*VAR7++ = '';
+(void) memmove(VAR7, VAR4->VAR45, VAR4->VAR46 + 1);
+return (VAR3->VAR9 = VAR4);
+}
+
+
+VAR4 = VAR5->VAR37;
+free(VAR5);
+
+if (VAR4->VAR41 == VAR47) {
+
+free(VAR4);
+VAR24 = 0;
+return (VAR3->VAR9 = NULL);
+}
+
+
+VAR3->VAR44[VAR4->VAR48] = '';
+
+
+if (VAR4->VAR41 == VAR42) {
+if (FUN8(VAR3, VAR3->VAR43)) {
+FUN9(VAR10);
+VAR3->VAR9 = VAR4;
+return (NULL);
+}
+} else if (VAR4->VAR26 & VAR27) {
+if (FUN8(VAR3, VAR4->VAR20)) {
+VAR8 = VAR24;
+(void) close(VAR4->VAR20);
+VAR24 = VAR8;
+FUN9(VAR10);
+VAR3->VAR9 = VAR4;
+return (NULL);
+}
+(void) close(VAR4->VAR20);
+} else if (!(VAR4->VAR26 & VAR35) &&
+FUN6(VAR3, VAR4->VAR37, -1, "")) {
+FUN9(VAR10);
+VAR3->VAR9 = VAR4;
+return (NULL);
+}
+VAR4->VAR14 = VAR4->VAR23 ? VAR25 : VAR32;
+return (VAR3->VAR9 = VAR4);
+}

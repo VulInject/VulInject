@@ -1,0 +1,1 @@
+int getchar ( void ) { register int VAR1 ; while ( ( VAR1 = FUN1 ( ) ) == - 1 ) { } if ( VAR1 == '' ) { FUN2 ( VAR1 , NULL ) ; VAR1 = '' ; } if ( VAR1 == 0177 || VAR1 == '' ) { FUN2 ( '' ) ; FUN2 ( '' ) ; VAR1 = '' ; } FUN2 ( VAR1 ) ; return ( VAR1 ) ; }

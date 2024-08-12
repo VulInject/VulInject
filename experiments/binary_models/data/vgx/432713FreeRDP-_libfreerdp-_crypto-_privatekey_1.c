@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( const VAR2 * VAR3 ) { if ( ! FUN2 ( VAR3 ) ) { FUN3 ( VAR4 , "" ) ; return NULL ; } VAR1 * VAR5 = NULL ; VAR6 * VAR7 = FUN4 ( FUN5 ( ) ) ; if ( ! VAR7 ) { return NULL ; } const int VAR8 = FUN6 ( VAR7 , VAR3 -> VAR9 , NULL , NULL , 0 , NULL , NULL ) ; if ( VAR8 != 1 ) { VAR10 } VAR5 = FUN7 ( VAR7 , NULL , NULL , NULL ) ; fail return VAR5 ; }

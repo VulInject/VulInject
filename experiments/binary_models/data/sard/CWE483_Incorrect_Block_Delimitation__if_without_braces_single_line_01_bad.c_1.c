@@ -1,0 +1,16 @@
+#VAR1 ""
+void FUN1()
+{
+    int VAR2,VAR3;
+    VAR2 = (rand() % 3);
+    VAR3 = 0;
+    if (VAR3) 
+    {
+    }
+}
+int main(int argc, char * argv[])
+{
+    srand( (unsigned)FUN2(NULL) );
+    FUN1();
+    return 0;
+}

@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR3 , int VAR4 ) { FUN2 ( VAR3 -> VAR5 , VAR4 , 0 ) ; FUN3 ( VAR3 -> VAR5 , NULL ) ; }

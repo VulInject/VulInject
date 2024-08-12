@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , int VAR5 ) { struct bio_list VAR6 ; struct VAR7 * VAR7 ; FUN2 ( & VAR6 ) ; FUN3 ( VAR2 , VAR4 , & VAR6 ) ; while ( ( VAR7 = FUN4 ( & VAR6 ) ) ) { VAR7 -> VAR8 = VAR5 ; FUN5 ( VAR7 , NULL ) ; } }

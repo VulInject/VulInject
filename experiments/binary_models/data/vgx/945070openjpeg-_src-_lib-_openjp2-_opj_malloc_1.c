@@ -1,0 +1,1 @@
+void * FUN1 ( void * VAR1 , size_t VAR2 ) { if ( VAR2 == 0U ) { return VAR3 ; } return realloc ( VAR1 , VAR2 ) ; }

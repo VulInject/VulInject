@@ -1,0 +1,33 @@
+void FUN1(void *VAR1)
+{
+struct VAR2 *VAR3 = VAR1;
+int VAR4;
+int VAR5 = 1 * VAR6;
+
+
+if (!FUN2(VAR7,
+&VAR3->VAR8)) {
+FUN3(VAR3->VAR9,
+VAR10);
+VAR5 = VAR3->VAR11;
+}
+
+FUN4(VAR3->VAR12,
+(FUN5(&VAR3->VAR13) &&
+FUN5(&VAR3->VAR14)),
+2 * VAR6);
+
+while (VAR3->VAR15) {
+VAR4 = VAR3->VAR15;
+FUN4(VAR3->VAR12,
+(VAR3->VAR15 != VAR4),
+VAR5);
+if (VAR3->VAR15 == VAR4)
+break;
+}
+FUN6(VAR3);
+
+
+FUN7(VAR7, &VAR3->VAR8);
+FUN7(VAR16, &VAR3->VAR8);
+}

@@ -1,0 +1,68 @@
+static void FUN1(struct VAR1 *VAR2,
+unsigned int VAR3, u16 VAR4,
+u16 VAR5)
+{
+struct VAR6 *VAR7 = VAR2->private;
+u16 VAR8;
+u16 VAR9;
+unsigned int VAR10, VAR11, VAR12;
+
+
+
+VAR8 = FUN2(FUN3(VAR4));
+
+VAR8 |= FUN4(FUN5(VAR4));
+
+
+VAR9 = FUN6(1) | FUN7(1);
+
+VAR9 |= FUN8(FUN9(VAR4));
+
+
+if (!VAR5)
+VAR8 |= FUN10(FUN11(VAR4));
+
+
+VAR12 = FUN12(VAR4);
+switch (FUN13(VAR4)) {
+case VAR13: 
+
+
+case VAR14:	
+
+VAR10 = VAR15;
+
+VAR10 |= VAR12;
+
+VAR12 = 1;
+
+VAR11 = VAR16;
+break;
+default:		
+
+VAR10 = VAR17;
+
+
+VAR11 = FUN14(VAR4);
+if (VAR11 == VAR18)
+VAR11 = VAR16;
+break;
+}
+VAR8 |= FUN15(VAR10) | FUN16(VAR12) |
+FUN17(VAR11);
+
+
+if (FUN5(VAR4) != VAR19)
+VAR8 |= FUN18(FUN19(VAR4));
+
+
+if (VAR5)
+VAR7->VAR20 &= ~(FUN20(VAR3) |
+FUN21(VAR3));
+
+
+FUN22(VAR2, FUN23(VAR3),
+VAR21 | VAR22, VAR8);
+FUN22(VAR2, FUN24(VAR3),
+~(VAR23 | VAR24), VAR9);
+}

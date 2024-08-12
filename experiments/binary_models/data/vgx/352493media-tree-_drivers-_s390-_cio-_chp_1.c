@@ -1,0 +1,1 @@
+static enum cfg_task_t FUN1 ( struct VAR1 * VAR2 ) { enum cfg_task_t VAR3 = VAR4 ; FUN2 ( ) { VAR3 = FUN3 ( * VAR2 ) ; } return VAR3 ; }

@@ -1,0 +1,23 @@
+void FUN1(struct VAR1 *VAR2, int VAR3, u64 VAR4, bool VAR5)
+{
+struct VAR6 *VAR6 = VAR2->VAR7.VAR8[VAR3];
+u32 VAR9 = ((VAR10)VAR4) | VAR11;
+int VAR12;
+
+
+
+FUN2(VAR13 + VAR6->VAR14, VAR9);
+
+
+for (VAR12 = 0; VAR12 < VAR2->VAR15; VAR12++) {
+if (FUN3(VAR13 + VAR6->VAR14) & VAR16)
+break;
+FUN4(1);
+}
+FUN5("");
+
+
+VAR9 &= ~VAR11;
+FUN2(VAR13 + VAR6->VAR14, VAR9);
+
+}

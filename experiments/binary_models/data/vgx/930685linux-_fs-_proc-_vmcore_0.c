@@ -1,0 +1,52 @@
+static void FUN1(char *VAR1, size_t VAR2,
+size_t VAR3)
+{
+unsigned char *VAR4 = (unsigned char *)VAR1;
+u64 VAR5, VAR6, VAR7;
+loff_t VAR8;
+u32 VAR9;
+
+VAR8 = VAR10 + VAR2;
+
+if (VAR4[VAR11] == VAR12) {
+VAR13 *VAR14 = (VAR13 *)VAR1;
+VAR15 *VAR16 = (VAR15 *)(VAR1 + sizeof(VAR13));
+
+
+for (VAR9 = 0; VAR9 < VAR14->VAR17; VAR9++, VAR16++) {
+if (VAR16->VAR18 == VAR19) {
+
+VAR16->VAR20 = VAR21 + VAR3;
+VAR16->VAR22 = VAR16->VAR20;
+continue;
+}
+
+VAR5 = FUN2(VAR16->VAR23, VAR24);
+VAR6 = FUN3(VAR16->VAR23 + VAR16->VAR20,
+VAR24);
+VAR7 = VAR6 - VAR5;
+VAR16->VAR23 = VAR8 + (VAR16->VAR23 - VAR5);
+VAR8 += VAR7;
+}
+} else {
+VAR25 *VAR14 = (VAR25 *)VAR1;
+VAR26 *VAR16 = (VAR26 *)(VAR1 + sizeof(VAR25));
+
+
+for (VAR9 = 0; VAR9 < VAR14->VAR17; VAR9++, VAR16++) {
+if (VAR16->VAR18 == VAR19) {
+
+VAR16->VAR20 = VAR21 + VAR3;
+VAR16->VAR22 = VAR16->VAR20;
+continue;
+}
+
+VAR5 = FUN2(VAR16->VAR23, VAR24);
+VAR6 = FUN3(VAR16->VAR23 + VAR16->VAR20,
+VAR24);
+VAR7 = VAR6 - VAR5;
+VAR16->VAR23 = VAR8 + (VAR16->VAR23 - VAR5);
+VAR8 += VAR7;
+}
+}
+}

@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 , VAR3 * VAR5 ) { VAR6 * VAR7 ; VAR3 * VAR8 ; FUN2 ( , , ) { if ( VAR8 -> VAR9 == VAR4 -> VAR9 ) { return 1 ; } if ( VAR8 -> VAR9 == VAR5 -> VAR9 ) { return - 1 ; } } return 0 ; }

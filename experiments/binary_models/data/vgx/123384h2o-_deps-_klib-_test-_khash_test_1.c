@@ -1,0 +1,1 @@
+int main ( int argc , char * argv [ ] ) { if ( argc > 1 ) { VAR1 = FUN1 ( argv [ 1 ] ) ; } FUN2 ( ) ; FUN3 ( VAR2 ) ; FUN3 ( VAR3 ) ; FUN3 ( VAR4 , NULL ) ; FUN3 ( VAR5 ) ; FUN4 ( ) ; return 0 ; }

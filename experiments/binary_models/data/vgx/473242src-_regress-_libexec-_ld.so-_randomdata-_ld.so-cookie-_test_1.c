@@ -1,0 +1,1 @@
+int main ( ) { FUN1 ( VAR1 , NULL ) ; return ( 0 ) ; }

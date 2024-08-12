@@ -1,0 +1,15 @@
+static VAR1 *FUN1(VAR2 *VAR3, hwaddr VAR4, qemu_irq VAR5, VAR6 *VAR7)
+{
+    VAR1 *VAR8;
+    VAR8 = (VAR1 *)FUN2(sizeof(VAR1));
+    FUN3(&VAR8->VAR9, &VAR10, VAR8, "", 0x100000);
+    FUN4(&VAR8->VAR11, "", &VAR8->VAR9, 0, 0x900);
+    FUN4(&VAR8->VAR12, "", &VAR8->VAR9, 0xa00, 0x10000 - 0xa00);
+    FUN5(VAR3, VAR4, &VAR8->VAR11);
+    FUN5(VAR3, VAR4 + 0xa00, &VAR8->VAR12);
+    VAR8->VAR13 = FUN6("", "", VAR14);
+    VAR8->VAR15 = FUN7(VAR3, VAR4 + 0x900, 3, VAR5, 230400, VAR7, VAR16);
+    FUN8(VAR8);
+    FUN9(VAR17, VAR8);
+    return VAR8;
+}

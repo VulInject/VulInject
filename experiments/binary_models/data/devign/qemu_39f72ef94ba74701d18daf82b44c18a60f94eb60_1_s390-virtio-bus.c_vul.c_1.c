@@ -1,0 +1,6 @@
+static void FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = FUN2(VAR2);
+    FUN3(&VAR4->VAR5, sizeof(VAR4->VAR5), VAR6);
+    FUN4(VAR2, "", FUN5(&VAR4->VAR5), NULL);
+    FUN6(VAR2, "", VAR7, (VAR1 **)&VAR4->VAR5.VAR8.VAR9, VAR10, NULL);

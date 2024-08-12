@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , uint32_t VAR3 , uint32_t VAR4 ) { uint32_t VAR5 ; int VAR6 ; for ( VAR6 = 10000 ; VAR6 > 0 ; VAR6 -- ) { VAR5 = FUN2 ( VAR2 , VAR7 ) ; if ( VAR5 & VAR8 ) { return VAR9 ; } if ( VAR5 & VAR10 ) { return VAR11 ; } FUN3 ( 1 ) ; } return VAR9 ; }

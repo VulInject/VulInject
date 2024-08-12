@@ -1,0 +1,1 @@
+static void FUN1 ( const char * VAR1 , int VAR2 ) { enum ofputil_protocol VAR3 ; struct ofputil_flow_mod VAR4 ; char * VAR5 ; VAR5 = FUN2 ( & VAR4 , VAR1 , NULL , NULL , VAR2 , & VAR3 ) ; if ( VAR5 ) { FUN3 ( "" , VAR5 ) ; } else { FUN4 ( & VAR4 , 1 , VAR3 ) ; } }

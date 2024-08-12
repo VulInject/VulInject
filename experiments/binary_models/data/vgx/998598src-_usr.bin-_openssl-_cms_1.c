@@ -1,0 +1,1 @@
+static int FUN1 ( int VAR1 , VAR2 * VAR3 ) { int VAR4 ; VAR4 = FUN2 ( VAR3 ) ; VAR5 = VAR4 ; FUN3 ( NULL , VAR3 ) ; return VAR1 ; }

@@ -1,0 +1,23 @@
+void FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    void (*VAR5)(VAR1 *, VAR3 *);
+    VAR6 *VAR7 = VAR2->VAR8;
+    int VAR9;
+    FUN2(NULL, VAR5);
+    FUN3(NULL, VAR2, 1);
+    if (!(VAR5 = VAR7->VAR5))
+        VAR5 = VAR10;
+    if ((VAR7->VAR11 & VAR4->VAR12) != VAR7->VAR11 || VAR7->VAR13 & VAR4->VAR12)
+    {
+        FUN4(VAR2->VAR7, VAR14, "", VAR4->VAR12, VAR2->VAR8->VAR11, VAR2->VAR8->VAR13);
+        VAR2->VAR15 = FUN5(VAR2, VAR7->VAR11, VAR4->VAR16->VAR17);
+        VAR2->VAR15->VAR18 = VAR4->VAR18;
+        VAR2->VAR15->VAR16->VAR19 = VAR4->VAR16->VAR19;
+        for (VAR9 = 0; VAR4->VAR20[VAR9] && VAR9 < 8; VAR9++)
+            memcpy(VAR2->VAR15->VAR20[VAR9], VAR4->VAR20[VAR9], VAR4->VAR21[0]);
+        FUN6(VAR4);
+    }
+    else
+        VAR2->VAR15 = VAR4;
+    FUN7(VAR2, VAR2->VAR15);
+}

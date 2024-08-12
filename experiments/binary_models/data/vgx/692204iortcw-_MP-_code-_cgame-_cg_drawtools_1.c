@@ -1,0 +1,1 @@
+float * FUN1 ( int VAR1 , int VAR2 ) { static vec4_t VAR3 ; int VAR4 ; if ( VAR1 == 0 ) { return VAR5 ; } VAR4 = VAR6 . VAR7 - VAR1 ; if ( VAR4 >= VAR2 ) { return NULL ; } if ( VAR2 - VAR4 < VAR8 ) { VAR3 [ 3 ] = ( VAR2 - VAR4 ) * 1.0 / VAR8 ; } else { VAR3 [ 3 ] = 1.0 ; } VAR3 [ 0 ] = VAR3 [ 1 ] = VAR3 [ 2 ] = 1 ; VAR3 [ 3 ] *= VAR9 . VAR10 ; return VAR3 ; }

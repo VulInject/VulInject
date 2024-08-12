@@ -1,0 +1,74 @@
+static void FUN1(VAR1 *VAR2,const VAR3 *VAR4)
+{
+VAR5
+VAR6;
+
+VAR5
+VAR7,
+VAR8;
+
+unsigned char
+*VAR9;
+
+unsigned int
+VAR10,
+VAR11;
+
+
+assert(VAR2 != (VAR1 *) NULL);
+assert(VAR2->VAR12 == VAR13);
+assert(VAR4 != (VAR3 *) NULL);
+if (FUN2() != VAR14)
+(void) FUN3(VAR15,FUN4(),"");
+VAR8=4;
+VAR2->VAR16=10;
+if ((8*FUN5(VAR4)) >= 256)
+{
+VAR8=8;
+VAR2->VAR16=14;
+}
+else
+if ((8*FUN5(VAR4)) >= 192)
+{
+VAR8=6;
+VAR2->VAR16=12;
+}
+
+VAR9=FUN6(VAR2->VAR4);
+(void) memset(VAR9,0,FUN5(VAR2->VAR4));
+(void) memcpy(VAR9,FUN6(VAR4),FUN7(
+FUN5(VAR4),FUN5(VAR2->VAR4)));
+for (VAR6=0; VAR6 < VAR8; VAR6++)
+VAR2->VAR17[VAR6]=(unsigned int) VAR9[4*VAR6] |
+((unsigned int) VAR9[4*VAR6+1] << 8) |
+((unsigned int) VAR9[4*VAR6+2] << 16) |
+((unsigned int) VAR9[4*VAR6+3] << 24);
+VAR11=1;
+VAR7=(VAR18/4)*(VAR2->VAR16+1);
+for (VAR6=VAR8; VAR6 < VAR7; VAR6++)
+{
+VAR10=VAR2->VAR17[VAR6-1];
+if ((VAR6 % VAR8) == 0)
+{
+VAR10=FUN8(FUN9(VAR10),VAR19) ^ VAR11;
+VAR11=FUN10((unsigned char) (VAR11 & 0xff));
+}
+else
+if ((VAR8 > 6) && ((VAR6 % VAR8) == 4))
+VAR10=FUN8(VAR10,VAR19);
+VAR2->VAR17[VAR6]=VAR2->VAR17[VAR6-VAR8] ^ VAR10;
+}
+
+for (VAR6=0; VAR6 < 4; VAR6++)
+{
+VAR2->VAR20[VAR6]=VAR2->VAR17[VAR6];
+VAR2->VAR20[VAR7-4+VAR6]=VAR2->VAR17[VAR7-4+VAR6];
+}
+for (VAR6=4; VAR6 < (VAR7-4); VAR6+=4)
+FUN11(VAR2->VAR17+VAR6,VAR2->VAR20+VAR6);
+
+VAR9=FUN6(VAR2->VAR4);
+(void) memset(VAR9,0,FUN5(VAR2->VAR4));
+VAR10=0;
+VAR11=0;
+}

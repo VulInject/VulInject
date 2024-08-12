@@ -1,0 +1,1 @@
+void FUN1 ( unsigned long VAR1 , unsigned long VAR2 ) { cfs_time_t VAR3 ; if ( FUN2 ( ( VAR2 - VAR1 ) >= VAR4 * 32 ) ) { FUN3 ( ) ; return ; } VAR1 &= VAR5 ; FUN4 ( VAR3 ) ; while ( VAR1 < VAR2 ) { FUN5 ( VAR1 ) ; VAR1 += VAR4 ; } FUN6 ( VAR3 ) ; }

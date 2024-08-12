@@ -1,0 +1,12 @@
+void FUN1(void *VAR1, int VAR2, qemu_irq VAR3, DBDMA_rw VAR4, DBDMA_flush VAR5, void *VAR6)
+{
+    VAR7 *VAR8 = VAR1;
+    VAR9 *VAR10 = &VAR8->VAR11[VAR2];
+    FUN2("", VAR2);
+    VAR10->VAR3 = VAR3;
+    VAR10->VAR12 = VAR2;
+    VAR10->VAR4 = VAR4;
+    VAR10->VAR5 = VAR5;
+    VAR10->VAR13.VAR6 = VAR6;
+    VAR10->VAR13.VAR12 = VAR10;
+}

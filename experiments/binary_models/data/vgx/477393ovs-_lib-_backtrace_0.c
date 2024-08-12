@@ -1,0 +1,11 @@
+void
+FUN1(struct VAR1 *VAR2)
+{
+void *VAR3[VAR4];
+int VAR5;
+
+VAR2->VAR6 = FUN2(VAR3, VAR4);
+for (VAR5 = 0; VAR5 < VAR2->VAR6; VAR5++) {
+VAR2->VAR3[VAR5] = (VAR7) VAR3[VAR5];
+}
+}

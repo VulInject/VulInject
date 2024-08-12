@@ -1,0 +1,145 @@
+static void
+FUN1(struct VAR1 *VAR2, ulong_t VAR3, ulong_t VAR4,
+uint_t VAR5, uint_t VAR6)
+{
+opl_async_flt_t VAR7;
+struct VAR8 *VAR9;
+int VAR10 = 0;
+char VAR11[VAR12];
+uint64_t VAR13;
+int VAR14 = VAR15;
+VAR16 *VAR17;
+
+
+uint_t VAR18 = FUN2(VAR19)->VAR20;
+
+VAR11[0] = '';
+
+
+FUN3(&VAR7, sizeof (VAR21));
+VAR9 = (struct VAR8 *)&VAR7;
+VAR9->VAR22 = FUN4();
+VAR9->VAR23 = FUN5();
+VAR9->VAR24 = VAR25->VAR26;
+VAR9->VAR27 = VAR4;
+VAR9->VAR28 = VAR3;
+VAR9->VAR29 = (VAR30)VAR2->VAR31;
+VAR9->VAR32 = (VAR33)VAR34;
+VAR9->VAR35 = (VAR33)VAR36;
+VAR9->VAR37 = (VAR33)(VAR5 == 1 ? 1 : ((VAR2->VAR38 &
+VAR39) ? 1 : 0));
+VAR9->VAR40 = (VAR33)VAR5;
+VAR9->VAR41 = (VAR33)(VAR5 != 0 || VAR42 != 0 ||
+(VAR4 & (VAR43|VAR44)) != 0);
+VAR9->VAR45 = (VAR18 & VAR46) ? 1 : 0;
+VAR9->VAR47 = (VAR6) ? VAR48 : VAR49;
+
+
+if (!(VAR4 & VAR50)) {
+VAR7.VAR51 = VAR52;
+VAR9->VAR41 = 1;
+VAR9->VAR53 = VAR54;
+FUN6(VAR55, (void *)&VAR7,
+sizeof (VAR21), VAR56, VAR9->VAR41);
+FUN7("", "");
+}
+
+
+if ((VAR4 & (VAR57|VAR58)) !=
+(VAR57|VAR58)) {
+VAR4 &= ~(VAR57|VAR58);
+}
+
+
+if (!VAR9->VAR41 && VAR9->VAR37 && VAR5 == 0) {
+if (VAR19->VAR59 != NULL) {
+VAR60 *VAR61 = VAR19->VAR59;
+
+if (VAR61->VAR62 & VAR63) {
+VAR9->VAR32 = (VAR33)VAR64;
+VAR61->VAR65 |= (VAR66)VAR63;
+VAR2->VAR31 = VAR61->VAR67;
+VAR2->VAR68 = VAR2->VAR31 + 4;
+VAR10 = 1;
+}
+
+if ((VAR4 & (VAR69 | VAR70)) &&
+(VAR61->VAR62 & VAR71)) {
+VAR9->VAR32 = (VAR33)VAR72;
+VAR61->VAR65 |= (VAR66)VAR71;
+VAR2->VAR31 = VAR61->VAR67;
+VAR2->VAR68 = VAR2->VAR31 + 4;
+VAR10 = 1;
+
+VAR17 = (VAR16 *)VAR61->VAR73;
+if (!VAR17)
+VAR14 = VAR74;
+else if (VAR17->VAR75.VAR76 ==
+VAR77)
+VAR14 = VAR78;
+}
+
+} else if (VAR19->VAR79) {
+VAR9->VAR32 = VAR80;
+VAR2->VAR81 = VAR82;
+VAR2->VAR31 = VAR19->VAR79;
+VAR2->VAR68 = VAR2->VAR31 + 4;
+VAR10 = 1;
+}
+}
+
+
+if (!VAR9->VAR37 || VAR9->VAR32 == VAR80) {
+if (VAR4 & (VAR83 & ~(VAR70 | VAR69)))
+VAR9->VAR41 |= VAR84;
+} else if (!VAR10) {
+VAR9->VAR41 = 1;
+}
+
+
+VAR13 = VAR4;
+if (VAR10) {
+VAR13 &= ~(VAR69 | VAR70);
+} else if (!VAR9->VAR37) {
+
+if (!VAR85)
+VAR13 &= ~(VAR69 | VAR70);
+}
+
+if (((VAR13 & VAR83) && (FUN8(&VAR7, VAR11,
+VAR4) == 0)) || ((VAR4 & VAR83) == 0)) {
+VAR7.VAR51 = VAR52;
+VAR9->VAR53 = VAR54;
+FUN6(VAR55, (void *)&VAR7,
+sizeof (VAR21), VAR56, VAR9->VAR41);
+}
+
+if (VAR4 & (VAR58|VAR69|VAR70)) {
+FUN9(VAR9, VAR14);
+}
+
+
+if (VAR9->VAR41) {
+if (VAR11[0] == 0)
+strcpy(VAR11, "");
+
+FUN7("", VAR11);
+}
+
+
+if (!VAR9->VAR37 || VAR9->VAR32 == VAR80) {
+int VAR86 = 0;
+
+if (VAR4 & (VAR83 & ~(VAR70 | VAR69)))
+VAR86 |= VAR87;
+
+if (VAR4 & VAR70)
+VAR86 |= VAR88;
+
+if (VAR4 & VAR69)
+VAR86 |= VAR89;
+
+FUN10(VAR19)->VAR90.VAR91 |= VAR86;
+FUN11(VAR19);
+}
+}

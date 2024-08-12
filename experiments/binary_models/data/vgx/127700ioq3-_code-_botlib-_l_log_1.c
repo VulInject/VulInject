@@ -1,0 +1,1 @@
+void FUN1 ( void ) { if ( ! VAR1 . VAR2 ) { return ; } if ( fclose ( VAR1 . VAR2 ) ) { VAR3 . FUN2 ( VAR4 , "" , VAR1 . VAR5 ) ; return ; } VAR3 . FUN2 ( VAR6 , "" , VAR1 . VAR5 ) ; }

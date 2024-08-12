@@ -1,0 +1,13 @@
+VAR1 *FUN1(VAR2 *VAR3)
+{
+    VAR1 *VAR4 = FUN2(VAR1, 1);
+    VAR5 *VAR6 = FUN3(VAR3);
+    VAR7 *VAR8 = FUN4(VAR3->VAR9);
+    VAR4->VAR10 = FUN5(VAR3->VAR10);
+    VAR4->VAR11 = VAR8->VAR11;
+    if (VAR6->VAR12)
+    {
+        VAR4->VAR13 = VAR6->FUN6(VAR3);
+    }
+    return VAR4;
+}

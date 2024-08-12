@@ -1,0 +1,29 @@
+VAR1 *FUN1(int VAR2, int VAR3, int VAR4, int VAR5, int VAR6, int VAR7, int VAR8, int VAR9, int VAR10, int VAR11, int VAR12, int VAR13)
+{
+    VAR1 *VAR14;
+    VAR14 = FUN2(sizeof(VAR1));
+    if (!VAR14)
+        VAR14->VAR15 = FUN2(VAR2 * (VAR16 + VAR17));
+    if (!VAR14->VAR15)
+        goto VAR18;
+    VAR14->VAR2 = VAR2;
+    VAR14->VAR3 = VAR3;
+    VAR14->VAR4 = VAR4;
+    VAR14->VAR5 = VAR5;
+    VAR14->VAR6 = VAR6;
+    VAR14->VAR7 = VAR7;
+    VAR14->VAR8 = VAR8;
+    VAR14->VAR9 = VAR9;
+    VAR14->VAR10 = VAR10;
+    VAR14->VAR11 = VAR11;
+    VAR14->VAR12 = VAR12;
+    VAR14->VAR13 = VAR13;
+    VAR14->VAR19 = VAR2 - (VAR12 + VAR13);
+    VAR14->VAR20 = VAR3 - (VAR10 + VAR11);
+    VAR14->VAR21 = ((VAR4 - VAR8 - VAR9) * VAR22) / VAR14->VAR19;
+    VAR14->VAR23 = ((VAR5 - VAR6 - VAR7) * VAR22) / VAR14->VAR20;
+    FUN3(&VAR14->VAR24[0][0], (float)VAR14->VAR19 / (float)(VAR4 - VAR8 - VAR9), VAR17, VAR25, 1 << VAR26, 0);
+    FUN3(&VAR14->VAR27[0][0], (float)VAR14->VAR20 / (float)(VAR5 - VAR6 - VAR7), VAR17, VAR25, 1 << VAR26, 0);
+    return VAR14;
+VAR18:
+    FUN4(VAR14);

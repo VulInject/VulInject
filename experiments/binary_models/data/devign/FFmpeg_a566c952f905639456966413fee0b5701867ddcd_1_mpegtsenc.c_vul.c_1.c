@@ -1,0 +1,17 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    VAR5 *VAR6 = VAR2->VAR7;
+    VAR8 *VAR9 = VAR4->VAR7;
+    VAR10 *VAR11;
+    uint8_t VAR12[VAR13];
+    VAR11 = VAR12;
+    *VAR11++ = 0x47;
+    *VAR11++ = VAR9->VAR14 >> 8;
+    *VAR11++ = VAR9->VAR14;
+    *VAR11++ = 0x20 | VAR9->VAR15;
+    *VAR11++ = VAR13 - 5;
+    *VAR11++ = 0x10;
+    VAR11 += FUN2(VAR11, FUN3(VAR6, VAR2->VAR16));
+    memset(VAR11, 0xFF, VAR13 - (VAR11 - VAR12));
+    FUN4(VAR2);
+    FUN5(VAR2->VAR16, VAR12, VAR13);

@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 ) { VAR5 * const VAR6 = FUN2 ( VAR2 ) ; if ( FUN3 ( VAR6 -> VAR7 ) ) { return FUN4 ( VAR8 ) ; } FUN5 ( VAR4 , VAR6 -> VAR7 ) ; return 0 ; } VAR9 { const VAR10 * class ; VAR1 * * VAR11 ; int VAR12 ; unsigned VAR13 ; char * VAR14 ; } VAR9

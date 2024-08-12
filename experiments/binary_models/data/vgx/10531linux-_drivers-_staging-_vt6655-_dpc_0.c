@@ -1,0 +1,94 @@
+static bool FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+u16 VAR5)
+{
+struct VAR6 *VAR7 = VAR2->VAR7;
+struct VAR8 *VAR9;
+struct ieee80211_rx_status VAR10 = { 0 };
+struct VAR11 *VAR12;
+__le16 VAR13;
+VAR14 *VAR15, *VAR16, *VAR17;
+VAR18 *VAR19;
+u16 VAR20;
+int VAR21, VAR22;
+VAR14 *VAR23;
+VAR14 *VAR24;
+u8 VAR25 = 0;
+u8 VAR26[VAR27] = {2, 4, 11, 22, 12, 18, 24, 36, 48, 72, 96, 108};
+long VAR28;
+
+
+VAR20 = FUN2(*((VAR29 *)(VAR4->VAR30 + 2)));
+if (VAR20 > 2346 || VAR20 < 14) {
+FUN3(&VAR2->VAR31->VAR32, "");
+return false;
+}
+
+VAR24 = (VAR14 *)VAR4->VAR30;
+
+VAR23 = VAR24 + 1;
+
+VAR9 = VAR7->VAR33->VAR34[VAR7->VAR35.VAR36.VAR37->VAR38];
+
+for (VAR22 = VAR39; VAR22 < VAR27; VAR22++) {
+if (*VAR23 == VAR26[VAR22])
+break;
+}
+
+VAR2->VAR23 = VAR22;
+
+for (VAR21 = 0; VAR21 < VAR9->VAR40; VAR21++) {
+if (VAR9->VAR41[VAR21].VAR42 == VAR22) {
+VAR25 = VAR21;
+break;
+}
+}
+
+if (VAR21 == VAR9->VAR40) {
+FUN3(&VAR2->VAR31->VAR32, "", *VAR23);
+return false;
+}
+
+VAR19 = (VAR18 *)(VAR24 + VAR5 - 12);
+VAR16 = VAR24 + VAR5 - 3;
+VAR17 = VAR24 + VAR5 - 2;
+VAR15 = VAR24 + VAR5 - 1;
+if (*VAR15 & (VAR43 | VAR44))
+return false;
+
+FUN4(VAR2, *VAR17, &VAR28);
+
+VAR2->VAR45 = (VAR14)VAR28 + 1;
+VAR2->VAR46 = *VAR17;
+
+FUN5(VAR4, 4);
+FUN6(VAR4, VAR20);
+
+VAR10.VAR47 = FUN7(*VAR19);
+VAR10.VAR38 = VAR7->VAR35.VAR36.VAR37->VAR38;
+VAR10.signal = VAR28;
+VAR10.VAR48 = 0;
+VAR10.VAR49 = VAR7->VAR35.VAR36.VAR37->VAR50;
+
+if (!(*VAR15 & VAR51))
+VAR10.VAR48 |= VAR52;
+
+VAR12 = (struct VAR11 *)(VAR4->VAR30);
+VAR13 = VAR12->VAR53;
+
+VAR10.VAR25 = VAR25;
+
+if (FUN8(VAR13)) {
+if (VAR2->VAR54 > VAR55)
+VAR10.VAR48 |= VAR56;
+
+
+if (!(*VAR16 & VAR57))
+return false;
+}
+
+memcpy(FUN9(VAR4), &VAR10, sizeof(VAR10));
+
+FUN10(VAR2->VAR7, VAR4);
+
+return true;
+}

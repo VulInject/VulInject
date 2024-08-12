@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR1 , int VAR2 , int VAR3 , int VAR4 ) { int VAR5 ; if ( FUN2 ( VAR1 , VAR6 , 0x01 , 0 ) ) { return - VAR7 ; } if ( FUN2 ( VAR1 , VAR2 , 0x80 , VAR4 << 7 ) ) { return - VAR7 ; } if ( FUN3 ( VAR1 , VAR6 , VAR5 ) ) { return - VAR7 ; } return 0 ; }

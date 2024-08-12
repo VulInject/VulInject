@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 ; int VAR5 ; VAR4 = FUN2 ( & VAR2 -> VAR6 ) ; VAR4 -> VAR7 = "" ; VAR4 -> VAR8 = "" ; VAR4 -> VAR9 . VAR10 = VAR11 ; FUN3 ( VAR4 , VAR12 , VAR13 ) ; VAR5 = FUN4 ( VAR4 , VAR14 ) ; if ( VAR5 ) { return VAR5 ; } FUN5 ( VAR4 , VAR15 ) ; VAR5 = FUN6 ( VAR4 ) ; if ( VAR5 ) { return VAR5 ; } return 0 ; }

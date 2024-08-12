@@ -1,0 +1,29 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    VAR5 *VAR6 = VAR2->VAR7->VAR8;
+    VAR3 *VAR9 = FUN2(VAR4, ~0);
+    int VAR10;
+    for (VAR10 = 0; VAR10 < 4 && VAR9->VAR11[VAR10]; VAR10++)
+    {
+        int VAR12 = (VAR10 == 1 || VAR10 == 2) ? VAR6->VAR12 : 0;
+        int VAR13 = (VAR10 == 1 || VAR10 == 2) ? VAR6->VAR13 : 0;
+        FUN3(VAR9->VAR14->VAR15 > 0 && VAR9->VAR14->VAR16 > 0);
+        if (VAR9->VAR17 != VAR9->VAR14->VAR17)
+            break;
+        VAR9->VAR11[VAR10] -= (VAR6->VAR18 >> VAR12) * VAR6->VAR19[VAR10] + (VAR6->VAR20 >> VAR13) * VAR9->VAR21[VAR10];
+        if (FUN4(VAR6, VAR9, VAR10, VAR12, VAR13, 0, 0) || FUN4(VAR6, VAR9, VAR10, VAR12, VAR13, 0, VAR6->VAR16 - 1) || FUN4(VAR6, VAR9, VAR10, VAR12, VAR13, VAR6->VAR15 - 1, 0) || FUN4(VAR6, VAR9, VAR10, VAR12, VAR13, VAR6->VAR15 - 1, VAR6->VAR16 - 1))
+            break;
+    }
+    VAR6->VAR22 = VAR10 < 4 && VAR9->VAR11[VAR10];
+    if (VAR6->VAR22)
+    {
+        FUN5(VAR2->VAR7, VAR23, "");
+        FUN6(VAR9);
+        VAR9 = FUN7(VAR2->VAR7->VAR24[0], VAR25 | VAR26, FUN8(VAR2->VAR15, VAR6->VAR15), FUN8(VAR2->VAR16, VAR6->VAR16));
+        FUN9(VAR9, VAR4);
+    }
+    VAR2->VAR7->VAR24[0]->VAR27 = VAR9;
+    VAR9->VAR28->VAR15 = VAR6->VAR15;
+    VAR9->VAR28->VAR16 = VAR6->VAR16;
+    FUN10(VAR2->VAR7->VAR24[0], VAR9);
+}

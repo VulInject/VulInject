@@ -1,0 +1,1 @@
+static void * FUN1 ( struct VAR1 * VAR2 , void * VAR3 , VAR4 * VAR5 ) { ( * VAR5 ) ++ ; if ( * VAR5 >= ( VAR6 + VAR7 ) ) { return VAR8 ; } return VAR5 ; }

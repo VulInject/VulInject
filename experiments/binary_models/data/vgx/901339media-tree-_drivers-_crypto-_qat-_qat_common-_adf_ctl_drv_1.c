@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , unsigned int VAR3 , unsigned long VAR4 ) { int VAR5 = 0 ; FUN2 ( & VAR5 ) ; if ( FUN3 ( ( void VAR6 * ) VAR4 , & VAR5 , sizeof ( VAR5 ) ) ) { return - VAR7 ; } return 0 ; }

@@ -1,0 +1,1 @@
+static const char *FUN1(const VAR1 *VAR2, int VAR3, int VAR4) { return ((VAR1 *)FUN2(&VAR4, VAR2, VAR3, sizeof(VAR2[0]), VAR5))->VAR6; }

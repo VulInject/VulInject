@@ -1,0 +1,1 @@
+FUN1 ( ) { if ( VAR1 ) { fclose ( VAR2 , NULL ) ; if ( VAR3 ) { unlink ( VAR4 ) ; } } if ( VAR5 ) { if ( FUN2 ( VAR5 ) != 0 ) { FUN3 ( "" , VAR6 ) ; } if ( fclose ( VAR5 ) != 0 ) { FUN3 ( "" , VAR6 ) ; } } FUN4 ( ) ; if ( VAR7 ) { FUN5 ( ) ; FUN6 ( ) ; FUN7 ( ) ; FUN8 ( ) ; FUN9 ( ) ; FUN10 ( ) ; FUN11 ( ) ; } FUN12 ( ) ; VAR8 . FUN13 ( ) ; }

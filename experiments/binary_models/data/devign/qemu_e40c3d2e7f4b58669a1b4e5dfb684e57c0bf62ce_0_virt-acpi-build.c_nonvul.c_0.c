@@ -1,0 +1,111 @@
+static void FUN1(VAR1 *VAR2, const VAR3 *VAR4, uint32_t VAR5, bool VAR6)
+{
+    VAR1 *VAR7, *VAR8, *VAR9, *VAR10, *VAR11, *VAR12, *VAR13;
+    int VAR14, VAR15;
+    hwaddr VAR16 = VAR4[VAR17].VAR18;
+    hwaddr VAR19 = VAR4[VAR17].VAR20;
+    hwaddr VAR21 = VAR4[VAR22].VAR18;
+    hwaddr VAR23 = VAR4[VAR22].VAR20;
+    hwaddr VAR24 = VAR4[VAR25].VAR18;
+    hwaddr VAR26 = VAR4[VAR25].VAR20;
+    int VAR27 = VAR26 / VAR28;
+    VAR1 *VAR29 = FUN2("", "");
+    FUN3(VAR29, FUN4("", FUN5("")));
+    FUN3(VAR29, FUN4("", FUN5("")));
+    FUN3(VAR29, FUN4("", FUN6(0)));
+    FUN3(VAR29, FUN4("", FUN6(0)));
+    FUN3(VAR29, FUN4("", FUN6(0)));
+    FUN3(VAR29, FUN4("", FUN5("")));
+    FUN3(VAR29, FUN4("", FUN7("")));
+    FUN3(VAR29, FUN4("", FUN6(1)));
+    VAR1 *VAR30 = FUN8(VAR27 * VAR31);
+    for (VAR15 = 0; VAR15 < VAR27; VAR15++)
+    {
+        for (VAR14 = 0; VAR14 < VAR31; VAR14++)
+        {
+            int VAR32 = (VAR14 + VAR15) % VAR31;
+            VAR1 *VAR33 = FUN8(4);
+            FUN3(VAR33, FUN6((VAR15 << 16) | 0xFFFF));
+            FUN3(VAR33, FUN6(VAR14));
+            FUN3(VAR33, FUN9("", VAR32));
+            FUN3(VAR33, FUN6(0));
+            FUN3(VAR30, VAR33);
+        }
+    }
+    FUN3(VAR29, FUN4("", VAR30));
+    for (VAR14 = 0; VAR14 < VAR31; VAR14++)
+    {
+        uint32_t VAR34 = VAR5 + VAR14;
+        VAR1 *VAR35 = FUN2("", VAR14);
+        FUN3(VAR35, FUN4("", FUN5("")));
+        FUN3(VAR35, FUN4("", FUN6(0)));
+        VAR8 = FUN10();
+        FUN3(VAR8, FUN11(VAR36, VAR37, VAR38, VAR39, &VAR34, 1));
+        FUN3(VAR35, FUN4("", VAR8));
+        VAR8 = FUN10();
+        FUN3(VAR8, FUN11(VAR36, VAR37, VAR38, VAR39, &VAR34, 1));
+        FUN3(VAR35, FUN4("", VAR8));
+        VAR7 = FUN12("", 1, VAR40);
+        FUN3(VAR35, VAR7);
+        FUN3(VAR29, VAR35);
+    }
+    VAR7 = FUN12("", 0, VAR40);
+    FUN3(VAR7, FUN13(FUN6(VAR24)));
+    FUN3(VAR29, VAR7);
+    VAR7 = FUN12("", 0, VAR40);
+    VAR1 *VAR41 = FUN10();
+    FUN3(VAR41, FUN14(VAR42, VAR43, VAR44, 0x0000, 0x0000, VAR27 - 1, 0x0000, VAR27));
+    FUN3(VAR41, FUN15(VAR44, VAR42, VAR43, VAR45, VAR46, 0x0000, VAR16, VAR16 + VAR19 - 1, 0x0000, VAR19));
+    FUN3(VAR41, FUN16(VAR42, VAR43, VAR44, VAR47, 0x0000, 0x0000, VAR23 - 1, VAR21, VAR23));
+    if (VAR6)
+    {
+        hwaddr VAR48 = VAR4[VAR49].VAR18;
+        hwaddr VAR50 = VAR4[VAR49].VAR20;
+        FUN3(VAR41, FUN17(VAR44, VAR42, VAR43, VAR45, VAR46, 0x0000, VAR48, VAR48 + VAR50 - 1, 0x0000, VAR50));
+    }
+    FUN3(VAR7, FUN4("", VAR41));
+    FUN3(VAR7, FUN13(VAR41));
+    FUN3(VAR29, VAR7);
+    FUN3(VAR29, FUN4("", FUN6(0)));
+    FUN3(VAR29, FUN4("", FUN6(0)));
+    VAR7 = FUN12("", 4, VAR40);
+    FUN3(VAR7, FUN18(FUN19(3), FUN6(0), ""));
+    VAR10 = FUN20("");
+    VAR9 = FUN21(FUN22(FUN19(0), VAR10));
+    FUN3(VAR9, FUN18(FUN19(3), FUN6(4), ""));
+    FUN3(VAR9, FUN18(FUN19(3), FUN6(8), ""));
+    FUN3(VAR9, FUN23(FUN9(""), FUN9("")));
+    FUN3(VAR9, FUN23(FUN9(""), FUN9("")));
+    FUN3(VAR9, FUN23(FUN24(FUN9(""), FUN6(0x1D), NULL), FUN9("")));
+    VAR11 = FUN21(FUN25(FUN22(FUN19(1), FUN6(0x1))));
+    FUN3(VAR11, FUN23(FUN26(FUN9(""), FUN6(0x08), NULL), FUN9("")));
+    FUN3(VAR9, VAR11);
+    VAR11 = FUN21(FUN25(FUN22(FUN9(""), FUN9(""))));
+    FUN3(VAR11, FUN23(FUN26(FUN9(""), FUN6(0x10), NULL), FUN9("")));
+    FUN3(VAR9, VAR11);
+    FUN3(VAR9, FUN23(FUN9(""), FUN9("")));
+    FUN3(VAR9, FUN13(FUN19(3)));
+    FUN3(VAR7, VAR9);
+    VAR12 = FUN27();
+    FUN3(VAR12, FUN23(FUN26(FUN9(""), FUN6(4), NULL), FUN9("")));
+    FUN3(VAR12, FUN13(FUN19(3)));
+    FUN3(VAR7, VAR12);
+    FUN3(VAR29, VAR7);
+    VAR7 = FUN12("", 4, VAR40);
+    VAR10 = FUN20("");
+    VAR9 = FUN21(FUN22(FUN19(0), VAR10));
+    VAR11 = FUN21(FUN22(FUN19(2), FUN6(0)));
+    uint8_t VAR51[1] = {1};
+    VAR13 = FUN28(1, VAR51);
+    FUN3(VAR11, FUN13(VAR13));
+    FUN3(VAR9, VAR11);
+    FUN3(VAR7, VAR9);
+    VAR51[0] = 0;
+    VAR13 = FUN28(1, VAR51);
+    FUN3(VAR7, FUN13(VAR13));
+    FUN3(VAR29, VAR7);
+    VAR1 *VAR52 = FUN2("", "");
+    FUN3(VAR52, FUN4("", FUN6(0)));
+    FUN3(VAR29, VAR52);
+    FUN3(VAR2, VAR29);
+}

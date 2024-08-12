@@ -1,0 +1,1 @@
+static void FUN1 ( guint16 VAR1 , VAR2 * VAR3 ) { guint8 VAR4 , VAR5 ; guint64 VAR6 ; VAR6 = VAR1 & VAR7 ; VAR4 = ( VAR1 & VAR8 ) >> VAR9 ; VAR5 = VAR9 * VAR4 ; * VAR3 &= ~ ( VAR7 << VAR5 ) ; * VAR3 |= ( VAR6 << VAR5 ) ; }

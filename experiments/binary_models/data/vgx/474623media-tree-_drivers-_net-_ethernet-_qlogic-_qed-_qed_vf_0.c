@@ -1,0 +1,34 @@
+int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4, bool VAR5)
+{
+struct VAR6 *VAR7 = VAR2->VAR8;
+struct VAR9 *VAR10;
+struct VAR11 *VAR12;
+int VAR13;
+
+
+VAR10 = FUN2(VAR2, VAR14, sizeof(*VAR10));
+
+VAR10->VAR15 = VAR4->VAR16.VAR17;
+VAR10->VAR18 = 1;
+VAR10->VAR5 = VAR5;
+
+
+FUN3(VAR2, &VAR7->VAR19,
+VAR20, sizeof(struct VAR21));
+
+VAR12 = &VAR7->VAR22->VAR23;
+VAR13 = FUN4(VAR2, &VAR12->VAR24.VAR25, sizeof(*VAR12));
+if (VAR13)
+goto VAR26;
+
+if (VAR12->VAR24.VAR25 != VAR27) {
+VAR13 = -VAR28;
+goto VAR26;
+}
+
+VAR26:
+FUN5(VAR2, VAR13);
+
+return VAR13;
+}

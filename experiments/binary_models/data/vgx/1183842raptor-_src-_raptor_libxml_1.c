@@ -1,0 +1,1 @@
+static void FUN1 ( void * VAR1 , xmlErrorPtr VAR2 ) { VAR3 * VAR4 = NULL ; if ( VAR1 ) { VAR4 = ( VAR3 * ) VAR1 ; if ( VAR4 -> VAR5 != VAR6 ) { VAR4 = NULL ; } } FUN2 ( VAR4 , VAR2 ) ; }

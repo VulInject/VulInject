@@ -1,0 +1,1 @@
+void * FUN1 ( void ) { struct VAR1 * VAR2 = calloc ( 1 , sizeof ( VAR1 ) ) ; FUN2 ( & VAR3 ) ; return VAR2 ; }

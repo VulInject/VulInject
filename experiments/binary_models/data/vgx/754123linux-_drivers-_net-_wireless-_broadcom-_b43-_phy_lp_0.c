@@ -1,0 +1,13 @@
+static void FUN1(struct VAR1 *VAR2, u32 VAR3)
+{
+u16 VAR4 = VAR3 & 0x1;
+u16 VAR5 = (VAR3 & 0xFFFC) | ((VAR3 & 0xC) >> 2);
+u16 VAR6 = (VAR3 & 2) >> 1;
+
+FUN2(VAR2, VAR7, 0xFFFE, VAR4);
+FUN2(VAR2, VAR8,
+0xFBFF, VAR6 << 10);
+FUN2(VAR2, VAR8,
+0xF7FF, VAR6 << 11);
+FUN3(VAR2, VAR9, VAR5);
+}

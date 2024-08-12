@@ -1,0 +1,1 @@
+static struct VAR1 * FUN1 ( enum hash_algo VAR2 ) { struct VAR1 * VAR3 = VAR4 ; int VAR5 ; if ( VAR2 < 0 || VAR2 >= VAR6 ) { VAR2 = VAR7 ; } if ( VAR2 != VAR7 || ! VAR3 ) { VAR3 = FUN2 ( VAR8 [ VAR2 ] , 0 , 0 ) ; if ( ! FUN3 ( VAR3 ) ) { if ( VAR2 == VAR7 ) { VAR4 = VAR3 ; } } else { VAR5 = FUN4 ( VAR3 , NULL ) ; FUN5 ( "" , VAR8 [ VAR2 ] , VAR5 ) ; } } return VAR3 ; }

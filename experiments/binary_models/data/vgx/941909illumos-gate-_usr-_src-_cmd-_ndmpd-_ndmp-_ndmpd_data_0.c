@@ -1,0 +1,26 @@
+void
+FUN1(VAR1 *VAR2, void *VAR3)
+{
+ndmp_data_stop_reply VAR4;
+VAR5 *VAR6 = FUN2(VAR2);
+
+if (VAR6->VAR7.VAR8 != VAR9) {
+FUN3(VAR10, "");
+VAR4.VAR11 = VAR12;
+FUN4(VAR2, &VAR4,
+"");
+return;
+}
+FUN5(VAR6);
+FUN6(VAR6);
+FUN7(VAR6, VAR13);
+
+FUN8(VAR6);
+
+
+(void) FUN9(VAR6);
+FUN10(VAR6);
+
+VAR4.VAR11 = VAR14;
+FUN4(VAR2, &VAR4, "");
+}

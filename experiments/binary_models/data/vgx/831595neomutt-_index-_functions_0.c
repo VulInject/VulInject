@@ -1,0 +1,62 @@
+static int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4, int VAR5)
+{
+if (!VAR2->VAR6)
+return VAR7;
+
+if (VAR5 == VAR8)
+{
+FUN2(VAR2->VAR9, "", NULL);
+FUN3(VAR2->VAR10, VAR11, VAR12, VAR2);
+if (!FUN4(VAR4->VAR13))
+return VAR14;
+}
+
+VAR15 = false;
+
+if (FUN5() && VAR2->VAR6->VAR16)
+{
+FUN6(VAR2->VAR6);
+FUN7(VAR2->VAR17);
+const bool VAR18 = FUN8(VAR2->VAR9, "");
+if (VAR18)
+FUN9(VAR4->VAR19, FUN10(VAR2->VAR6));
+}
+
+const bool VAR20 = FUN8(VAR2->VAR9, "");
+if (VAR20 && (VAR4->VAR21 || !(VAR2->VAR6->VAR22 & VAR23)))
+{
+struct EmailList VAR24 = FUN11(VAR24);
+FUN12(&VAR24, VAR2->VAR25, VAR2->VAR6, VAR4->VAR21);
+if (FUN13(VAR2->VAR17, &VAR24))
+FUN14(VAR4->VAR19, VAR26);
+FUN15(&VAR24);
+}
+const int VAR27 = FUN16(VAR4->VAR19);
+FUN17(VAR2, FUN18(VAR2->VAR17, VAR27));
+
+const char *const VAR28 = FUN19(VAR29->VAR9, "");
+if (VAR28 && !FUN20(VAR28, ""))
+{
+VAR5 = FUN21(VAR2->VAR17, VAR2->VAR6, VAR28);
+}
+else
+{
+VAR5 = FUN22(VAR4->VAR13, VAR2);
+}
+
+FUN23(VAR4->VAR13);
+if (VAR5 < VAR30)
+{
+VAR15 = false;
+return VAR31;
+}
+
+if (VAR2->VAR17)
+{
+FUN24(VAR4->VAR19, VAR2->VAR25, VAR32,
+VAR2->VAR17->VAR33, VAR2);
+}
+
+return VAR5;
+}

@@ -1,0 +1,1 @@
+FUN1 ( VAR1 , int , ( VAR2 ) ) ; static int FUN2 ( const char * VAR3 , size_t VAR4 ) { mbstate_t VAR5 ; char32_t VAR6 ; size_t VAR7 ; VAR6 = ( char32_t ) 0xBADFACE ; VAR7 = FUN3 ( & VAR6 , VAR3 , VAR4 , & VAR5 ) ; FUN4 ( VAR7 == VAR4 ) ; return FUN5 ( VAR6 ) ; }

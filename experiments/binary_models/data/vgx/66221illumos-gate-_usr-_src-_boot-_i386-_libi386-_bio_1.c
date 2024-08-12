@@ -1,0 +1,1 @@
+void * FUN1 ( size_t VAR1 ) { char * VAR2 ; VAR2 = VAR3 ; VAR3 += VAR1 ; return ( VAR2 ) ; }

@@ -1,0 +1,34 @@
+extern vec3_t VAR1, VAR2;
+void FUN1( VAR3 *VAR4 ) {
+vec3_t VAR5;
+trace_t VAR6;
+vec3_t VAR7, VAR8;
+
+if ( VAR9.VAR10 != VAR11 ) {
+FUN2( VAR4 );
+return;
+}
+
+
+FUN3( VAR1, VAR7 );
+VAR7[0] += 1;
+VAR7[1] += 1;
+FUN3( VAR2, VAR8 );
+VAR8[0] -= 1;
+VAR8[1] -= 1;
+
+
+if ( !( VAR4->VAR12 & 1 ) ) {
+
+VAR4->VAR13.VAR14[2] += 1.0; 
+FUN4( VAR5, VAR4->VAR13.VAR14[0], VAR4->VAR13.VAR14[1], VAR4->VAR13.VAR14[2] - 4096 );
+FUN5( &VAR6, VAR4->VAR13.VAR14, VAR7, VAR8, VAR5, VAR4->VAR15.VAR16, VAR17 | VAR18 );
+
+if ( VAR6.VAR19 ) {
+FUN6( "", VAR4->VAR20, FUN7( VAR4->VAR13.VAR14 ) );
+return;
+}
+
+FUN8( VAR4, VAR6.VAR21 );
+}
+}

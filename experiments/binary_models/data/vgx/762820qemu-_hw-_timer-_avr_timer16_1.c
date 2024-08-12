@@ -1,0 +1,1 @@
+static inline int64_t FUN1 ( VAR1 * VAR2 , int64_t VAR3 ) { return VAR3 / VAR2 -> VAR4 ; }

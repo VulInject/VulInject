@@ -1,0 +1,102 @@
+int FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+VkResult VAR5;
+VAR6 *VAR7 = &VAR2->VAR8;
+
+VAR4->VAR9 = FUN2(VAR4->VAR10*sizeof(*VAR4->VAR9));
+if (!VAR4->VAR9)
+return FUN3(VAR11);
+
+{ 
+VkDescriptorPoolCreateInfo VAR12 = {
+.VAR13         = VAR14,
+.VAR15 = VAR4->VAR16,
+.VAR17    = VAR4->VAR18,
+.VAR19       = VAR4->VAR20,
+};
+
+VAR5 = VAR7->FUN4(VAR2->VAR21->VAR22, &VAR12,
+VAR2->VAR21->VAR23, &VAR4->VAR24);
+FUN5(&VAR4->VAR18);
+if (VAR5 != VAR25) {
+FUN6(VAR2, VAR26, ""
+"", FUN7(VAR5));
+return VAR27;
+}
+}
+
+{ 
+VkDescriptorSetAllocateInfo VAR28 = {
+.VAR13              = VAR29,
+.VAR30     = VAR4->VAR24,
+.VAR31 = VAR4->VAR20,
+.VAR32        = VAR4->VAR33,
+};
+
+VAR4->VAR34 = FUN2(VAR4->VAR20*sizeof(*VAR4->VAR34));
+if (!VAR4->VAR34)
+return FUN3(VAR11);
+
+VAR5 = VAR7->FUN8(VAR2->VAR21->VAR22, &VAR28,
+VAR4->VAR34);
+if (VAR5 != VAR25) {
+FUN6(VAR2, VAR26, "",
+FUN7(VAR5));
+return VAR27;
+}
+}
+
+{ 
+VkPipelineLayoutCreateInfo VAR35 = {
+.VAR13                  = VAR36,
+.VAR32            = (VAR37 *)VAR4->VAR9,
+.VAR38 = VAR4->VAR39,
+.VAR40    = VAR4->VAR41,
+};
+
+for (int VAR42 = 0; VAR42 < VAR4->VAR20; VAR42 += VAR4->VAR43->VAR44)
+VAR4->VAR9[VAR35.VAR45++] = VAR4->VAR33[VAR42];
+
+VAR5 = VAR7->FUN9(VAR2->VAR21->VAR22, &VAR35,
+VAR2->VAR21->VAR23, &VAR4->VAR46);
+FUN5(&VAR4->VAR41);
+VAR4->VAR39 = 0;
+if (VAR5 != VAR25) {
+FUN6(VAR2, VAR26, "",
+FUN7(VAR5));
+return VAR27;
+}
+}
+
+{ 
+VAR47 *VAR48;
+
+VAR4->VAR49 = FUN2(VAR4->VAR20*sizeof(*VAR4->VAR49));
+if (!VAR4->VAR49)
+return FUN3(VAR11);
+
+
+for (int VAR42 = 0; VAR42 < VAR4->VAR20; VAR42++) {
+VAR48 = &VAR4->VAR50[VAR42];
+VAR48->VAR51 = VAR4->VAR46;
+VAR5 = VAR7->FUN10(VAR2->VAR21->VAR22,
+VAR48, VAR2->VAR21->VAR23,
+&VAR4->VAR49[VAR42]);
+if (VAR5 != VAR25) {
+FUN6(VAR2, VAR26, ""
+"", FUN7(VAR5));
+return VAR27;
+}
+}
+
+
+for (int VAR42 = 0; VAR42 < VAR4->VAR20; VAR42 += VAR4->VAR43->VAR44) {
+VAR48 = &VAR4->VAR50[VAR42];
+FUN11((void *)VAR48->VAR52);
+}
+
+FUN5(&VAR4->VAR50);
+}
+
+return 0;
+}

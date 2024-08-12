@@ -1,0 +1,44 @@
+void FUN1( VAR1 *VAR2, VAR1 *VAR3 ) {
+VAR1	*VAR4;
+vec3_t		VAR5;
+char		*VAR6;
+
+
+if ( VAR2->VAR7->VAR8.VAR9[VAR10] ||
+VAR2->VAR7->VAR8.VAR9[VAR11] ||
+VAR2->VAR7->VAR8.VAR9[VAR12] ) {
+
+if ( VAR13.VAR14 == VAR15 ) {
+if ( VAR2->VAR7->VAR16.VAR17 == VAR18 ) {
+VAR6 = "";
+}
+else {
+VAR6 = "";
+}
+}
+else {
+if ( VAR2->VAR7->VAR16.VAR17 == VAR18 ) {
+VAR6 = "";
+}
+else {
+VAR6 = "";
+}
+}
+VAR4 = NULL;
+do
+{
+VAR4 = FUN2(VAR4, FUN3(VAR6), VAR6);
+} while (VAR4 && (VAR4->VAR19 & VAR20));
+
+if (VAR4 && !(VAR4->VAR21.VAR22 & VAR23) ) {
+
+FUN4( VAR2->VAR7->VAR8.VAR24, VAR4->VAR25.VAR24, VAR5 );
+if ( FUN5(VAR5) < 200 ) {
+VAR2->VAR7->VAR8.VAR26[VAR27] ^= VAR28;
+if ( VAR3->VAR7 ) {
+VAR3->VAR7->VAR8.VAR26[VAR27] ^= VAR28;
+}
+}
+}
+}
+}

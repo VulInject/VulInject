@@ -1,0 +1,61 @@
+static int FUN1(VAR1* VAR2, const char* VAR3, int VAR4)
+{
+int VAR5 = VAR4;
+int VAR6 = 0;
+size_t VAR7 = 0;
+DataChunk VAR8[2] = { 0 };
+VAR9* VAR10 = (VAR9*)FUN2(VAR2);
+VAR1* VAR11 = NULL;
+
+FUN3(VAR2);
+FUN3(VAR10);
+
+VAR10->VAR12 = VAR13;
+FUN4(VAR2, VAR14);
+
+
+if (VAR3 && VAR4 && !FUN5(&VAR10->VAR15, (const VAR16*)VAR3, VAR4))
+{
+FUN6(VAR17, "", VAR4);
+return -1;
+}
+
+VAR6 = FUN7(&VAR10->VAR15, VAR8, FUN8(&VAR10->VAR15));
+VAR11 = FUN9(VAR2);
+
+for (int VAR18 = 0; VAR18 < VAR6; VAR18++)
+{
+while (VAR8[VAR18].VAR19)
+{
+FUN10();
+const int VAR20 = FUN11(VAR11, VAR8[VAR18].VAR21, VAR8[VAR18].VAR19);
+
+if (VAR20 <= 0)
+{
+if (!FUN12(VAR11))
+{
+FUN4(VAR2, VAR22);
+VAR5 = -1; 
+goto VAR23;
+}
+
+if (FUN13(VAR11))
+{
+FUN14(VAR2, VAR14);
+VAR10->VAR12 = VAR24;
+goto VAR23; 
+}
+}
+else
+{
+VAR7 += (VAR25)VAR20;
+VAR8[VAR18].VAR19 -= (VAR25)VAR20;
+VAR8[VAR18].VAR21 += VAR20;
+}
+}
+}
+
+VAR23:
+FUN15(&VAR10->VAR15, VAR7);
+return VAR5;
+}

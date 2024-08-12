@@ -1,0 +1,52 @@
+int FUN1(void *VAR1,
+u8 VAR2,
+struct VAR3 *VAR4,
+bool VAR5)
+{
+struct VAR6 *VAR7 = VAR1;
+struct VAR8 *VAR9 = NULL;
+struct VAR10 *VAR11 = NULL;
+struct VAR12 *VAR13;
+struct VAR14 *VAR15;
+unsigned long VAR16;
+int VAR17 = 0;
+
+VAR11 = FUN2(VAR7, VAR2);
+if (FUN3(!VAR11))
+return -VAR18;
+VAR13 = &VAR11->VAR19;
+VAR15 = &VAR13->VAR20;
+
+if (FUN3(VAR4->VAR21 > VAR11->VAR22.VAR23))
+return -VAR24;
+
+FUN4(&VAR13->VAR25, VAR16);
+if (FUN3(VAR13->VAR26)) {
+VAR17 = -VAR27;
+goto VAR28;
+}
+
+
+if (FUN3(!FUN5(&VAR13->VAR29)))
+VAR9 = FUN6(&VAR13->VAR29,
+struct VAR8, VAR30);
+if (FUN3(VAR9 &&
+FUN7(VAR15) < VAR4->VAR21))
+VAR9 = NULL;
+
+if (FUN3(!VAR9)) {
+VAR17 = -VAR31;
+goto VAR28;
+}
+
+
+FUN8(VAR7, VAR13, VAR9, VAR4, VAR5);
+
+FUN9(VAR7, VAR11, VAR9, VAR4);
+
+FUN10(VAR7, VAR11);
+
+VAR28:
+FUN11(&VAR13->VAR25, VAR16);
+return VAR17;
+}

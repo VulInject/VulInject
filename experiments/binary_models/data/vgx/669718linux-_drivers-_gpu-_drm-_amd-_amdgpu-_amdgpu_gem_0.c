@@ -1,0 +1,32 @@
+static VAR1 FUN1(struct VAR2 *VAR3)
+{
+struct VAR4 *VAR5 = VAR3->VAR6->VAR7;
+struct VAR8 *VAR9 = VAR5->VAR10.VAR11;
+vm_fault_t VAR12;
+int VAR13;
+
+VAR12 = FUN2(VAR5, VAR3);
+if (VAR12)
+return VAR12;
+
+if (FUN3(VAR9, &VAR13)) {
+VAR12 = FUN4(VAR5);
+if (VAR12) {
+FUN5(VAR13);
+goto VAR14;
+}
+
+VAR12 = FUN6(VAR3, VAR3->VAR6->VAR15,
+VAR16);
+
+FUN5(VAR13);
+} else {
+VAR12 = FUN7(VAR3, VAR3->VAR6->VAR15);
+}
+if (VAR12 == VAR17 && !(VAR3->VAR18 & VAR19))
+return VAR12;
+
+VAR14:
+FUN8(VAR5->VAR10.VAR20);
+return VAR12;
+}

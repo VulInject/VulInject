@@ -1,0 +1,1 @@
+static void * FUN1 ( void * VAR1 , VAR2 * VAR3 , void * VAR4 ) { VAR5 * VAR6 = FUN2 ( sizeof ( VAR5 ) ) ; VAR7 * VAR8 = & VAR6 -> VAR9 ; VAR8 -> VAR10 = VAR1 ; VAR11 = VAR3 ; VAR6 -> VAR12 . VAR13 = VAR14 ; VAR6 -> VAR12 . VAR15 = VAR16 ; VAR6 -> VAR12 . VAR17 = VAR18 ; return & VAR6 -> VAR12 ; }

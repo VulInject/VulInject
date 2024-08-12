@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , enum kmsg_dump_reason VAR3 ) { static char VAR4 [ 1024 ] ; size_t VAR5 = 0 ; bool VAR6 = false ; if ( VAR7 != NULL ) { VAR6 = true ; } FUN2 ( ) ; if ( VAR6 == true ) { return ; } FUN3 ( "" ) ; while ( FUN4 ( VAR2 , true , VAR4 , sizeof ( VAR4 ) , & VAR5 ) ) { VAR4 [ VAR5 ] = '' ; FUN3 ( "" , VAR4 ) ; } }

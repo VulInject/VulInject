@@ -1,0 +1,98 @@
+int FUN1(VAR1 *VAR2, const VAR1 *VAR3)
+{
+    VAR4 *VAR5 = VAR2->VAR6, *VAR7 = VAR3->VAR6;
+    int VAR8 = VAR5->VAR9, VAR10 = 0;
+    int VAR11 = 0;
+    int VAR12, VAR13;
+    if (VAR2 == VAR3 || !VAR7->VAR9)
+        return 0;
+    if (!VAR7->VAR14.VAR15)
+        return VAR16;
+    if (VAR8 && (VAR5->VAR17 != VAR7->VAR17 || VAR5->VAR18 != VAR7->VAR18 || VAR5->VAR19 != VAR7->VAR19 || VAR5->VAR20 != VAR7->VAR20 || !VAR5->VAR14.VAR15 || VAR5->VAR14.VAR15->VAR21 != VAR7->VAR14.VAR15->VAR21 || VAR5->VAR14.VAR15->VAR22 != VAR7->VAR14.VAR15->VAR22 || VAR5->VAR14.VAR15->VAR23 != VAR7->VAR14.VAR15->VAR23))
+    {
+        VAR11 = 1;
+    }
+    for (VAR12 = 0; VAR12 < FUN2(VAR5->VAR14.VAR24); VAR12++)
+    {
+        FUN3(&VAR5->VAR14.VAR24[VAR12]);
+        if (VAR7->VAR14.VAR24[VAR12])
+        {
+            VAR5->VAR14.VAR24[VAR12] = FUN4(VAR7->VAR14.VAR24[VAR12]);
+            if (!VAR5->VAR14.VAR24[VAR12])
+                return FUN5(VAR25);
+        }
+    }
+    for (VAR12 = 0; VAR12 < FUN2(VAR5->VAR14.VAR26); VAR12++)
+    {
+        FUN3(&VAR5->VAR14.VAR26[VAR12]);
+        if (VAR7->VAR14.VAR26[VAR12])
+        {
+            VAR5->VAR14.VAR26[VAR12] = FUN4(VAR7->VAR14.VAR26[VAR12]);
+            if (!VAR5->VAR14.VAR26[VAR12])
+                return FUN5(VAR25);
+        }
+    }
+    VAR5->VAR14.VAR15 = VAR7->VAR14.VAR15;
+    if (VAR11 || !VAR8)
+    {
+        VAR5->VAR17 = VAR7->VAR17;
+        VAR5->VAR18 = VAR7->VAR18;
+        VAR5->VAR20 = VAR7->VAR20;
+        VAR5->VAR19 = VAR7->VAR19;
+        VAR5->VAR27 = VAR7->VAR27;
+        VAR5->VAR28 = VAR7->VAR28;
+        VAR5->VAR29 = VAR7->VAR29;
+        if ((VAR10 = FUN6(VAR5)) < 0)
+        {
+            FUN7(VAR5->VAR30, VAR31, "");
+            return VAR10;
+        }
+        memcpy(VAR5->VAR32, VAR7->VAR32, sizeof(VAR5->VAR32));
+    }
+    VAR5->VAR30->VAR33 = VAR7->VAR30->VAR33;
+    VAR5->VAR30->VAR34 = VAR7->VAR30->VAR34;
+    VAR5->VAR30->VAR17 = VAR7->VAR30->VAR17;
+    VAR5->VAR30->VAR18 = VAR7->VAR30->VAR18;
+    VAR5->VAR35 = VAR7->VAR35;
+    VAR5->VAR36 = VAR7->VAR36;
+    VAR5->VAR37 = VAR7->VAR37;
+    VAR5->VAR38 = VAR7->VAR38;
+    VAR5->VAR39 = VAR7->VAR39;
+    for (VAR12 = 0; VAR12 < VAR40; VAR12++)
+    {
+        FUN8(VAR5, &VAR5->VAR41[VAR12]);
+        if (VAR7->VAR41[VAR12].VAR42->VAR43[0] && (VAR13 = FUN9(VAR5, &VAR5->VAR41[VAR12], &VAR7->VAR41[VAR12])) < 0)
+            return VAR13;
+    }
+    VAR5->VAR44 = FUN10(VAR7->VAR44, VAR5, VAR7);
+    FUN8(VAR5, &VAR5->VAR45);
+    if (VAR7->VAR45.VAR42->VAR43[0])
+    {
+        VAR13 = FUN9(VAR5, &VAR5->VAR45, &VAR7->VAR45);
+        if (VAR13 < 0)
+            return VAR13;
+    }
+    VAR5->VAR46 = VAR7->VAR46;
+    VAR5->VAR47 = VAR7->VAR47;
+    VAR5->VAR39 = VAR7->VAR39;
+    VAR5->VAR38 = VAR7->VAR38;
+    VAR5->VAR48 = VAR7->VAR48;
+    VAR5->VAR49 = VAR7->VAR49;
+    FUN11(VAR5, VAR7, VAR50, VAR51);
+    FUN12(VAR5->VAR52, VAR7->VAR52, 32, VAR5, VAR7);
+    FUN12(VAR5->VAR53, VAR7->VAR53, 32, VAR5, VAR7);
+    FUN12(VAR5->VAR54, VAR7->VAR54, VAR55 + 2, VAR5, VAR7);
+    if (!VAR5->VAR44)
+        return 0;
+    if (!VAR5->VAR38)
+    {
+        VAR10 = FUN13(VAR5, VAR5->VAR56, VAR5->VAR57);
+        VAR5->VAR50.VAR58 = VAR5->VAR50.VAR59;
+        VAR5->VAR50.VAR60 = VAR5->VAR50.VAR61;
+    }
+    VAR5->VAR50.VAR62 = VAR5->VAR50.VAR63;
+    VAR5->VAR50.VAR64 = VAR5->VAR50.VAR65;
+    VAR5->VAR66 = VAR7->VAR66;
+    VAR5->VAR67 = VAR7->VAR67;
+    return VAR10;
+}

@@ -1,0 +1,67 @@
+int main()
+{
+gdImagePtr VAR1;
+int VAR2 = 0;
+int VAR3, VAR4;
+
+VAR1 = FUN1(5, 5);
+VAR3 = FUN2(VAR1, 255, 0, 255);
+FUN3(VAR1);
+
+if (FUN4(VAR3==0xFF00FF) != 1) {
+VAR2 = -1;
+}
+
+VAR1 = FUN5(5, 5);
+VAR3 = FUN2(VAR1, 255, 0, 255);
+if (FUN4(VAR3==-1) != 1) {
+VAR2 = -1;
+}
+FUN3(VAR1);
+
+VAR1 = FUN5(5, 5);
+VAR3 = FUN6(VAR1, 255, 0, 255);
+VAR3 = FUN2(VAR1, 255, 0, 255);
+VAR3 = FUN4(VAR3>=0) ?
+FUN7(FUN8(VAR1, VAR3), FUN9(VAR1, VAR3), FUN10(VAR1, VAR3), 0)
+:
+-1;
+
+
+
+FUN3(VAR1);
+if (FUN4(VAR3==0xFF00FF) != 1) {
+VAR2 = -1;
+}
+
+
+VAR1 = FUN5(5, 5);
+for (VAR4=0; VAR4 < 255; VAR4++) {
+VAR3 = FUN6(VAR1, 255, 0, 0);
+}
+VAR3 = FUN2(VAR1, 255, 0, 0);
+VAR3 = FUN4(VAR3>=0) ?
+FUN7(FUN8(VAR1, VAR3), FUN9(VAR1, VAR3), FUN10(VAR1, VAR3), 0)
+:
+-1;
+FUN3(VAR1);
+if (FUN4(VAR3==0xFF0000) != 1) {
+VAR2 = -1;
+}
+
+VAR1 = FUN5(5, 5);
+for (VAR4=0; VAR4 < 256; VAR4++) {
+VAR3 = FUN6(VAR1, 255, 0, 0);
+}
+VAR3 = FUN2(VAR1, 255, 0, 0);
+VAR3 = FUN4(VAR3>=0) ?
+FUN7(FUN8(VAR1, VAR3), FUN9(VAR1, VAR3), FUN10(VAR1, VAR3), 0)
+:
+-1;
+FUN3(VAR1);
+if (FUN4(VAR3==0xFF0000) != 1) {
+VAR2 = -1;
+}
+
+return VAR2;
+}

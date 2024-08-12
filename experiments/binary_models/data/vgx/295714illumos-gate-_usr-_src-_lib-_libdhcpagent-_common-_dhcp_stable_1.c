@@ -1,0 +1,1 @@
+int FUN1 ( const VAR1 * VAR2 , size_t VAR3 ) { int VAR4 ; ssize_t VAR5 ; ( void ) unlink ( VAR6 ) ; VAR5 = write ( VAR4 , VAR2 , VAR3 ) ; if ( VAR5 == VAR3 ) { return ( close ( VAR4 ) ) ; } else { ( void ) close ( VAR4 ) ; if ( VAR5 >= 0 ) { VAR7 = VAR8 ; } return ( - 1 ) ; } }

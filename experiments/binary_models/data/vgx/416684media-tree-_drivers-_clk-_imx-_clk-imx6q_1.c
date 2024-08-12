@@ -1,0 +1,1 @@
+static int FUN1 ( int VAR1 ) { switch ( VAR1 ) { case VAR2 : return 0 ; case VAR3 : return 1 ; case VAR4 : return 2 ; case VAR5 : return 3 ; case VAR6 : return 4 ; default : return - VAR7 ; } }

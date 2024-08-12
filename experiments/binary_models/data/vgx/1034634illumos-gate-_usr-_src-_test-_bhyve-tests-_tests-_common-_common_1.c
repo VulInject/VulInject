@@ -1,0 +1,1 @@
+bool FUN1 ( const char * VAR1 ) { char VAR2 [ VAR3 ] ; char VAR4 [ VAR5 ] ; FUN2 ( VAR1 , VAR2 ) ; ( void ) sprintf ( VAR4 , "" , VAR2 ) ; return ( FUN3 ( VAR4 , VAR6 ) == 0 ) ; }

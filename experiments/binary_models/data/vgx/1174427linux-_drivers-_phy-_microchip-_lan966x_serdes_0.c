@@ -1,0 +1,117 @@
+static void FUN1(u32 VAR1, u32 VAR2, void VAR3 *VAR4, u32 VAR5)
+{
+u32 VAR6;
+
+VAR6 = FUN2(VAR4 + VAR5);
+VAR6 = (VAR6 & ~VAR2) | (VAR1 & VAR2);
+FUN3(VAR6, VAR4 + VAR5);
+}
+
+struct VAR7 {
+u8			VAR8;
+u8			VAR9;
+enum phy_mode		VAR10;
+int			VAR11;
+u32			VAR2;
+u32			VAR12;
+};
+
+static const struct serdes_mux VAR13[] = {
+FUN4(FUN5(1), 0, VAR14,
+FUN6(FUN7(0))),
+FUN4(FUN5(1), 1, VAR14,
+FUN6(FUN7(0))),
+FUN4(FUN5(1), 2, VAR14,
+FUN6(FUN7(0))),
+FUN4(FUN5(1), 3, VAR14,
+FUN6(FUN7(0))),
+
+FUN4(FUN5(2), 4, VAR14,
+FUN6(FUN7(1))),
+FUN4(FUN5(2), 5, VAR14,
+FUN6(FUN7(1))),
+FUN4(FUN5(2), 6, VAR14,
+FUN6(FUN7(1))),
+FUN4(FUN5(2), 7, VAR14,
+FUN6(FUN7(1))),
+
+FUN8(FUN9(0), 0, VAR15,
+FUN10(FUN7(0))),
+FUN8(FUN9(1), 1, VAR15,
+FUN10(FUN7(1))),
+
+FUN11(FUN5(0), 0, VAR16, 0),
+FUN11(FUN5(1), 1, VAR17, 0),
+FUN11(FUN5(0), 2, VAR16,
+FUN12(1)),
+FUN11(FUN5(1), 3, VAR17,
+FUN13(1)),
+
+FUN14(FUN15(0), 2, VAR18 |
+VAR19 |
+VAR15,
+FUN16(0) |
+FUN17(FUN7(0)) |
+FUN10(FUN7(2))),
+FUN14(FUN15(1), 3, VAR20 |
+VAR19 |
+VAR15,
+FUN18(0) |
+FUN17(FUN7(1)) |
+FUN10(FUN7(3))),
+FUN14(FUN15(0), 5, VAR18 |
+VAR19 |
+VAR15,
+FUN16(FUN7(0)) |
+FUN17(FUN7(0)) |
+FUN10(FUN7(5))),
+FUN14(FUN15(1), 6, VAR20 |
+VAR19 |
+VAR15,
+FUN18(FUN7(0)) |
+FUN17(FUN7(1)) |
+FUN10(FUN7(6))),
+};
+
+struct VAR21 {
+void VAR3		*VAR22;
+struct VAR23		*VAR24;
+struct VAR25		*VAR26[VAR27];
+int			VAR28;
+};
+
+struct VAR29 {
+u8			VAR8;
+int			VAR9;
+struct VAR21	*VAR30;
+int			VAR31;
+phy_interface_t		VAR10;
+};
+
+enum VAR32 {
+VAR33,
+VAR34,
+};
+
+enum VAR35 {
+VAR36,
+VAR37
+};
+
+struct VAR38 {
+enum lan966x_sd6g40_mode	VAR10;
+enum lan966x_sd6g40_ltx2rx	VAR39;
+bool				VAR40;
+bool				VAR41;
+bool				VAR42;
+bool				VAR43;
+};
+
+struct VAR44 {
+enum lan966x_sd6g40_mode	VAR10;
+u8				 VAR45;
+u8				 VAR46;
+u8				 VAR47;
+u8				 VAR48;
+u8				 VAR49;
+};

@@ -1,0 +1,1 @@
+static unsigned int FUN1 ( void ) { unsigned int VAR1 , VAR2 = 0 ; char VAR3 [ 32 ] , * VAR4 ; for ( VAR1 = 0 ; VAR1 < VAR5 ; VAR1 ++ ) { snprintf ( VAR3 , 32 , "" , VAR1 ) ; VAR4 = FUN2 ( VAR3 ) ; VAR2 |= 1 << VAR1 ; } return VAR2 ; }

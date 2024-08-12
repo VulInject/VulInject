@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , const struct VAR3 * VAR4 ) { u32 VAR5 * VAR6 = ( u32 VAR5 * ) ( long ) VAR4 -> VAR7 ; struct VAR8 * VAR9 = & VAR2 -> VAR10 . VAR11 . VAR12 ; u64 VAR13 ; VAR13 = FUN2 ( VAR4 -> VAR14 ) ; if ( VAR13 >= sizeof ( * VAR9 ) / FUN3 ( VAR4 -> VAR14 ) ) { return - VAR15 ; } return FUN4 ( ( ( VAR16 * ) VAR9 ) [ VAR13 ] , VAR6 ) ; }

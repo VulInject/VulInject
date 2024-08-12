@@ -1,0 +1,1 @@
+int FUN1 ( char * VAR1 , unsigned int VAR2 ) { unsigned int VAR3 ; VAR2 -- ; for ( VAR3 = 0 ; VAR3 < VAR2 && VAR1 [ VAR3 ] ; VAR3 ++ ) { if ( ! FUN2 ( VAR1 [ VAR3 ] ) && ! FUN3 ( VAR1 [ VAR3 ] ) ) { return 0 ; } } return 1 ; }

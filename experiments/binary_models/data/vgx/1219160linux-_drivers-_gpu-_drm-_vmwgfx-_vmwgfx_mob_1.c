@@ -1,0 +1,1 @@
+static unsigned long FUN1 ( unsigned long VAR1 ) { unsigned long VAR2 = VAR1 * VAR3 ; cfs_time_t VAR4 = 0 ; while ( FUN2 ( VAR2 > VAR3 ) ) { VAR2 = FUN3 ( VAR2 , VAR3 ) ; VAR2 *= VAR5 ; VAR4 += FUN4 ( VAR2 ) ; } return VAR4 >> VAR6 ; }

@@ -1,0 +1,65 @@
+static int FUN1(struct VAR1 *VAR2,
+const struct VAR3 *VAR4,
+struct VAR5 *VAR6)
+{
+struct VAR7 *VAR8;
+size_t VAR9;
+
+
+if (FUN2(VAR4->VAR9 < sizeof(struct VAR7))) {
+FUN3(&VAR2->VAR10, "",
+FUN4(VAR6->VAR11), VAR6->VAR12.VAR13,
+VAR4->VAR9, sizeof(struct VAR7));
+return -VAR14;
+}
+
+VAR8 = (struct VAR7 *)VAR4->VAR15;
+
+
+VAR9 = (VAR8->VAR16 - VAR8->VAR17 - VAR8->VAR18 -
+VAR8->VAR19) * sizeof(VAR20);
+if (FUN2(VAR9 != sizeof(struct VAR7))) {
+FUN3(&VAR2->VAR10,
+"",
+FUN4(VAR6->VAR11), VAR6->VAR12.VAR13,
+VAR4->VAR9, sizeof(struct VAR7));
+return -VAR21;
+}
+
+
+VAR6->VAR22 = (VAR8->VAR23 - VAR8->VAR16) * sizeof(VAR20);
+
+
+VAR6->VAR24 = VAR8->VAR17 * sizeof(VAR20);
+
+
+VAR9 = sizeof(struct VAR7) + VAR6->VAR22 + VAR6->VAR24;
+if (FUN2(VAR4->VAR9 < VAR9)) {
+FUN3(&VAR2->VAR10, "",
+FUN4(VAR6->VAR11), VAR6->VAR12.VAR13,
+VAR4->VAR9, VAR9);
+return -VAR25;
+}
+
+
+VAR9 = FUN5(VAR6);
+if (FUN2(VAR9 >= VAR2->VAR26.VAR9)) {
+FUN3(&VAR2->VAR10, "",
+FUN4(VAR6->VAR11), VAR6->VAR12.VAR13,
+VAR9, (VAR27)VAR2->VAR26.VAR9);
+return -VAR28;
+}
+
+
+VAR6->VAR12.VAR29 = FUN6(VAR30,
+VAR8->VAR31);
+VAR6->VAR12.VAR32 = FUN6(VAR33,
+VAR8->VAR31);
+VAR6->VAR12.VAR34 = FUN6(VAR35,
+VAR8->VAR31);
+
+if (VAR6->VAR11 == VAR36)
+VAR6->VAR37 = VAR8->VAR37;
+
+return 0;
+}

@@ -1,0 +1,51 @@
+FUN1 (struct VAR1 *VAR2, void *VAR3)
+{
+FUN2 (VAR2->VAR4 == 0 || FUN3 (VAR2->VAR4));
+
+if (VAR5 && VAR2->VAR4)
+FUN4 (VAR6, "",
+FUN5 (FUN6 (VAR2->VAR4)),
+FUN7 (VAR2->VAR7));
+
+while (VAR2->VAR8 && VAR2->VAR9)
+{
+VAR10 = 0;
+if (FUN8 (VAR11, FUN9 (VAR2->VAR7), 0,
+FUN6 (VAR2->VAR4)) < 0)
+FUN10 ("", FUN7 (VAR2->VAR7),
+FUN11 (VAR10));
+
+if (VAR5)
+FUN4 (VAR6,
+"",
+FUN7 (VAR2->VAR7),
+FUN12 (VAR2->VAR4));
+
+VAR2->VAR9 = 0;
+VAR2->VAR8 = 0;
+VAR2->VAR4 = 0;
+
+
+FUN2 (VAR2->VAR4 == 0 || FUN3 (VAR2->VAR4));
+}
+
+
+if (FUN9 (VAR2->VAR7) != FUN13 (VAR2->VAR7))
+{
+VAR10 = 0;
+if (FUN8 (VAR12, FUN9 (VAR2->VAR7), 0,
+FUN6 (VAR2->VAR4)) < 0)
+FUN10 ("", FUN7 (VAR2->VAR7),
+FUN11 (VAR10));
+
+if (VAR5)
+FUN4 (VAR6,
+"",
+FUN7 (VAR2->VAR7),
+FUN5 (FUN6 (VAR2->VAR4)));
+
+FUN14 (VAR2->VAR7);
+}
+
+return 0;
+}

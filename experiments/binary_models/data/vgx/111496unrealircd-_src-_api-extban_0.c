@@ -1,0 +1,113 @@
+VAR1 *FUN1(VAR2 *VAR3, ExtbanInfo VAR4)
+{
+VAR1 *VAR5;
+VAR6 *VAR7;
+int VAR8 = 0;
+
+if (!VAR4.VAR9)
+{
+VAR3->VAR10 = VAR11;
+FUN2(VAR12, "", "", NULL,
+"",
+FUN3("", VAR3->VAR13->VAR9));
+return NULL;
+}
+
+if (!VAR4.VAR14 && VAR4.VAR15)
+{
+VAR3->VAR10 = VAR11;
+FUN2(VAR12, "", "", NULL,
+""
+"",
+FUN3("", VAR3->VAR13->VAR9));
+return NULL;
+}
+
+if (!FUN4(VAR4.VAR16))
+{
+VAR3->VAR10 = VAR11;
+FUN2(VAR12, "", "", NULL,
+""
+"",
+FUN3("", VAR3->VAR13->VAR9));
+return NULL;
+}
+
+if (!FUN5(VAR4.VAR9))
+{
+VAR3->VAR10 = VAR11;
+FUN2(VAR12, "", "", NULL,
+""
+"",
+FUN3("", VAR3->VAR13->VAR9),
+FUN3("", VAR4.VAR9));
+return NULL;
+}
+
+if (!VAR4.VAR17)
+{
+VAR3->VAR10 = VAR11;
+FUN2(VAR12, "", "", NULL,
+"",
+FUN3("", VAR3->VAR13->VAR9));
+return NULL;
+}
+
+for (VAR5=VAR18; VAR5; VAR5 = VAR5->VAR19)
+{
+if (VAR5->VAR16 == VAR4.VAR16)
+{
+
+if (VAR5->VAR20)
+{
+VAR5->VAR20 = 0;
+VAR8 = 1;
+break;
+} else
+if ((VAR3->VAR21 == VAR22) && VAR5->VAR23)
+{
+
+VAR5->VAR23 = 0;
+VAR8 = 1;
+break;
+} else
+if (VAR3->VAR21 == VAR24)
+{
+
+return VAR5;
+} else
+{
+VAR3->VAR10 = VAR25;
+return NULL;
+}
+}
+}
+
+if (!VAR5)
+{
+
+VAR5 = FUN6(sizeof(VAR1));
+VAR5->VAR16 = VAR4.VAR16;
+FUN7(VAR5);
+}
+VAR5->VAR16 = VAR4.VAR16;
+FUN8(VAR5->VAR9, VAR4.VAR9);
+VAR5->VAR26 = VAR4.VAR26;
+VAR5->VAR17 = VAR4.VAR17;
+VAR5->VAR15 = VAR4.VAR15;
+VAR5->VAR14 = VAR4.VAR14;
+VAR5->VAR27 = VAR3;
+VAR5->VAR28 = VAR4.VAR28;
+
+if (VAR3->VAR21 == VAR24)
+VAR5->VAR23 = 1;
+
+VAR7 = FUN6(sizeof(VAR6));
+VAR7->VAR29.VAR30 = VAR5;
+VAR7->VAR31 = VAR32;
+FUN9(VAR7, VAR3->VAR33);
+VAR3->VAR10 = VAR34;
+
+FUN10();
+return VAR5;
+}

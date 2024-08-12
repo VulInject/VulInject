@@ -1,0 +1,30 @@
+static int FUN1(VAR1 *VAR2, void *VAR3, const VAR4 *VAR5, int VAR6)
+{
+    VAR7 *VAR8 = VAR3;
+    VAR9 *VAR10 = VAR2->VAR11;
+    if (!VAR10->VAR12.VAR13)
+        return 1;
+    VAR8->VAR14 = 0;
+    VAR8->VAR15 = 20000;
+    VAR8->VAR16 = 0;
+    VAR8->VAR17 = FUN2(sizeof(*VAR8->VAR17));
+    VAR8->VAR17[0] = FUN2(sizeof(*VAR8->VAR17[0]));
+    VAR8->VAR18 = 1;
+    VAR8->VAR17[0]->VAR19 = VAR10->VAR12.VAR19;
+    VAR8->VAR17[0]->VAR20 = VAR10->VAR12.VAR20;
+    VAR8->VAR17[0]->VAR21 = VAR10->VAR22.VAR21;
+    VAR8->VAR17[0]->VAR23 = VAR10->VAR22.VAR23;
+    VAR8->VAR17[0]->VAR24 = VAR25;
+    VAR8->VAR17[0]->VAR26.VAR27[0] = VAR10->VAR22.VAR21;
+    if (VAR10->VAR22.VAR28)
+    {
+        if (VAR10->VAR22.VAR29)
+            FUN3(VAR2, VAR30, "", VAR10->VAR22.VAR31, VAR10->VAR22.VAR29);
+        if (FUN4(VAR2, VAR8, VAR10->VAR22.VAR28, VAR10->VAR22.VAR31) < 0)
+            return 0;
+    }
+    VAR8->VAR17[0]->VAR32 = 256;
+    VAR8->VAR17[0]->VAR26.VAR3[1] = FUN2(VAR33);
+    memcpy(VAR8->VAR17[0]->VAR26.VAR3[1], VAR10->VAR34, VAR8->VAR17[0]->VAR32 * sizeof(VAR35));
+    return 1;
+}

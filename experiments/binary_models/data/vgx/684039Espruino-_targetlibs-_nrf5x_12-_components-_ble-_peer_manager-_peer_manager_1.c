@@ -1,0 +1,1 @@
+ret_code_t FUN1 ( uint16_t VAR1 , VAR2 * VAR3 ) { FUN2 ( ) ; FUN3 ( VAR3 , NULL ) ; ble_conn_state_status_t VAR4 = FUN4 ( VAR1 ) ; if ( VAR4 == VAR5 ) { return VAR6 ; } VAR3 -> VAR7 = ( VAR4 == VAR8 ) ; VAR3 -> VAR9 = FUN5 ( VAR1 , VAR10 ) ; VAR3 -> VAR11 = FUN6 ( VAR1 ) ; VAR3 -> VAR12 = FUN7 ( VAR1 ) ; return VAR13 ; }

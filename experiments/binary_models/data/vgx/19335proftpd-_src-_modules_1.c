@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( const char * VAR2 ) { char VAR3 [ 80 ] { '' } ; ; VAR1 * VAR4 ; if ( VAR2 == NULL ) { VAR5 = VAR6 ; return NULL ; } for ( VAR4 = VAR7 ; VAR4 ; VAR4 = VAR4 -> VAR8 ) { FUN2 ( VAR3 , sizeof ( VAR3 ) , "" , VAR4 -> VAR2 ) ; VAR3 [ sizeof ( VAR3 ) - 1 ] = '' ; if ( strcmp ( VAR3 , VAR2 ) == 0 ) { return VAR4 ; } } VAR5 = VAR9 ; return NULL ; }

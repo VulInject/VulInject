@@ -1,0 +1,70 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+struct VAR5 *VAR6)
+{
+struct VAR7 *VAR8 = FUN2(VAR2);
+int VAR9, VAR10, VAR11, VAR12;
+int VAR13 = 0;
+struct tso_t VAR14;
+struct VAR15 *VAR16;
+u32 VAR17 = 0;
+
+
+if ((VAR2->VAR18 + FUN3(VAR4)) >= VAR2->VAR19) {
+FUN4(VAR6, "");
+return -VAR20;
+}
+
+VAR16 = &VAR2->VAR21[VAR2->VAR22];
+
+
+VAR9 = FUN5(VAR4, &VAR14);
+
+VAR10 = VAR4->VAR23 - VAR9;
+while (VAR10 > 0) {
+bool VAR24 = (VAR13 == 0);
+char *VAR25;
+
+VAR11 = FUN6(int, FUN7(VAR4)->VAR26, VAR10);
+VAR10 -= VAR11;
+VAR13++;
+
+
+VAR25 = VAR2->VAR27 + VAR2->VAR22 * VAR28;
+FUN8(VAR4, VAR25, &VAR14, VAR11, VAR10 == 0);
+FUN9(VAR4, VAR2, VAR11, &VAR17,
+VAR24);
+
+while (VAR11 > 0) {
+int VAR29;
+VAR13++;
+
+VAR29 = FUN6(int, VAR14.VAR29, VAR11);
+VAR12 = FUN10(VAR6, VAR2, VAR4, VAR14.VAR30, VAR29,
+VAR29 == VAR11,
+VAR10 == 0);
+if (VAR12)
+goto VAR31;
+VAR11 -= VAR29;
+FUN11(VAR4, &VAR14, VAR29);
+}
+}
+
+FUN12(&VAR2->VAR32, VAR4);
+FUN13(VAR4);
+
+
+FUN14();
+VAR16->VAR33 = VAR17;
+
+
+VAR8->VAR34 &= ~(1 << VAR2->VAR35);
+
+
+FUN14();
+FUN15(VAR2);
+VAR2->VAR18 += VAR13;
+return 0;
+VAR31:
+
+return VAR12;
+}

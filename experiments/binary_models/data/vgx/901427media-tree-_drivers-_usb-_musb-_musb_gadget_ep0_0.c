@@ -1,0 +1,38 @@
+static void
+FUN1(struct VAR1 *VAR1, struct VAR2 *VAR3)
+{
+struct VAR4	*VAR5;
+void VAR6		*VAR7 = VAR1->VAR8->VAR7;
+
+FUN2(&VAR1->VAR9[0], sizeof *VAR3, (VAR10 *)VAR3);
+
+
+FUN3(VAR1, "",
+VAR3->VAR11,
+VAR3->VAR12,
+FUN4(VAR3->VAR13),
+FUN4(VAR3->VAR14),
+FUN4(VAR3->VAR15));
+
+
+VAR5 = FUN5(VAR1);
+if (VAR5)
+FUN6(VAR1, &VAR5->VAR16);
+
+
+VAR1->VAR17 = false;
+VAR1->VAR18 = VAR19;
+if (VAR3->VAR15 == 0) {
+if (VAR3->VAR11 & VAR20)
+VAR1->VAR18 |= VAR21;
+VAR1->VAR22 = VAR23;
+} else if (VAR3->VAR11 & VAR20) {
+VAR1->VAR22 = VAR24;
+FUN7(VAR7, VAR25, VAR19);
+while ((FUN8(VAR7, VAR25)
+& VAR26) != 0)
+FUN9();
+VAR1->VAR18 = 0;
+} else
+VAR1->VAR22 = VAR27;
+}

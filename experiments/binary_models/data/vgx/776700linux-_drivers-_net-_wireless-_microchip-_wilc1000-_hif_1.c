@@ -1,0 +1,1 @@
+static s32 FUN1 ( VAR1 * VAR2 , u32 VAR3 , struct VAR4 * VAR5 ) { VAR1 * VAR6 ; u16 VAR7 ; struct VAR8 * VAR9 = ( VAR8 * ) VAR2 ; VAR5 -> VAR10 = FUN2 ( VAR9 -> VAR11 ) ; if ( VAR5 -> VAR10 == VAR12 ) { VAR6 = & VAR2 [ sizeof ( * VAR9 ) ] ; VAR7 = VAR3 - sizeof ( * VAR9 ) ; VAR5 -> VAR13 = FUN3 ( VAR6 , VAR7 , VAR14 ) ; VAR5 -> VAR15 = VAR7 ; } return 0 ; }

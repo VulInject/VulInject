@@ -1,0 +1,42 @@
+static void FUN1(struct VAR1 *VAR1,
+u32 VAR2, u32 VAR3, u32 VAR4)
+{
+struct VAR5 *VAR6 = VAR1->VAR7;
+VAR8 * const VAR9 =
+VAR6->VAR10[VAR6->VAR11];
+
+if (VAR2 == VAR12)
+VAR9[0] = VAR4;
+if (VAR2 == VAR13)
+VAR9[1] = VAR4;
+if (VAR2 == VAR14)
+VAR9[6] = VAR4;
+if (VAR2 == VAR15 && VAR3 == 0xffffff00)
+VAR9[7] = VAR4;
+if (VAR2 == VAR16)
+VAR9[2] = VAR4;
+if (VAR2 == VAR17)
+VAR9[3] = VAR4;
+if (VAR2 == VAR18)
+VAR9[4] = VAR4;
+if (VAR2 == VAR19) {
+VAR9[5] = VAR4;
+VAR6->VAR11++;
+}
+if (VAR2 == VAR20)
+VAR9[8] = VAR4;
+if (VAR2 == VAR21)
+VAR9[9] = VAR4;
+if (VAR2 == VAR22)
+VAR9[14] = VAR4;
+if (VAR2 == VAR15 && VAR3 == 0x000000ff)
+VAR9[15] = VAR4;
+if (VAR2 == VAR23)
+VAR9[10] = VAR4;
+if (VAR2 == VAR24)
+VAR9[11] = VAR4;
+if (VAR2 == VAR25)
+VAR9[12] = VAR4;
+if (VAR2 == VAR26)
+VAR9[13] = VAR4;
+}

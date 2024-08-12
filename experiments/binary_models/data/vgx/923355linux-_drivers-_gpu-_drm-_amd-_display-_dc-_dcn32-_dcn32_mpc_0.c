@@ -1,0 +1,25 @@
+void FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+const struct VAR5 *VAR6,
+const struct VAR7 *VAR8,
+const struct VAR9 *VAR10,
+int VAR11,
+int VAR12)
+{
+int VAR13;
+
+VAR2->VAR14.VAR4 = VAR4;
+
+VAR2->VAR14.VAR15 = &VAR16;
+
+VAR2->VAR6 = VAR6;
+VAR2->VAR8 = VAR8;
+VAR2->VAR10 = VAR10;
+
+VAR2->VAR17 = 0;
+VAR2->VAR11 = VAR11;
+VAR2->VAR12 = VAR12;
+
+for (VAR13 = 0; VAR13 < VAR18; VAR13++)
+FUN2(&VAR2->VAR14.VAR19[VAR13], VAR13);
+}

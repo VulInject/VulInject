@@ -1,0 +1,155 @@
+static void
+FUN1(struct VAR1 *VAR2, int VAR3, char *VAR4[])
+{
+
+struct VAR5 *VAR6;
+VAR7 *VAR8, *VAR9;
+struct VAR10 *VAR11;
+struct VAR12 *VAR13;
+unsigned int VAR14 = 0, VAR15 = 0;
+bool VAR16, VAR17 = false;
+struct VAR18 *VAR19;
+
+
+char *VAR20 = VAR4[0];
+char *VAR21 = VAR4[1];
+
+
+if (!VAR20 || !VAR21)
+{
+FUN2(VAR2, VAR22,
+VAR23, "");
+
+FUN2(VAR2, VAR22,
+FUN3(""));
+
+return;
+}
+
+if (VAR2->VAR24->VAR25 & VAR26)
+{
+FUN2(VAR2, VAR27, VAR28);
+return;
+}
+
+
+if (VAR29 - VAR2->VAR24->VAR30 > VAR31)
+VAR2->VAR24->VAR32 = 0;
+if (VAR2->VAR24->VAR32 > VAR33 && !FUN4(VAR2, VAR34))
+{
+FUN2(VAR2, VAR35, FUN3(""));
+return;
+}
+
+
+if (strlen(VAR21) > VAR36)
+{
+FUN2(VAR2, VAR37, FUN3(""), VAR36);
+return;
+}
+
+
+if (*VAR21 == '')
+{
+FUN2(VAR2, VAR37, FUN3(""));
+return;
+}
+
+VAR13 = FUN5(FUN6(VAR20));
+if (VAR13 == NULL)
+{
+FUN2(VAR2, VAR38, VAR39, VAR20);
+return;
+}
+
+VAR2->VAR24->VAR32++;
+VAR2->VAR24->VAR30 = VAR29;
+
+FUN7(VAR9, VAR13->VAR40.VAR41)
+{
+struct VAR42 *VAR43 = (struct VAR42 *) VAR9->VAR44;
+VAR6 = FUN8(VAR43->VAR45);
+
+if (!(VAR43->VAR25 & VAR46) || VAR6 == NULL || VAR6 == VAR2->VAR24)
+continue;
+
+VAR15++;
+
+
+if (VAR6->VAR25 & VAR47)
+continue;
+
+
+if (VAR6->VAR48.VAR49 >= *VAR50)
+continue;
+
+
+VAR14++;
+
+
+VAR16 = false;
+FUN7(VAR8, VAR6->VAR51.VAR41)
+{
+struct VAR52 *VAR53;
+struct VAR5 *VAR54;
+
+if (VAR55.VAR56)
+VAR54 = FUN9((const char *)VAR8->VAR44);
+else
+{
+VAR53 = FUN10((const char *)VAR8->VAR44);
+VAR54 = VAR53 != NULL ? VAR53->VAR57 : NULL;
+}
+if (VAR54 == VAR2->VAR24)
+VAR16 = true;
+}
+if (VAR16)
+continue;
+
+
+VAR11 = FUN11(sizeof *VAR11);
+VAR11->VAR14 = VAR29;
+VAR11->VAR58 = VAR59;
+FUN12(VAR11->VAR60, FUN13(VAR2->VAR24)->VAR61, sizeof VAR11->VAR60);
+snprintf(VAR11->VAR62, sizeof VAR11->VAR62, "", FUN13(VAR13)->VAR61, VAR21);
+
+
+VAR8 = FUN14();
+FUN15(VAR11, VAR8, &VAR6->VAR48);
+VAR6->VAR63++;
+
+
+if (VAR6->VAR25 & VAR64)
+{
+FUN16(VAR2->VAR65, VAR6, VAR66, VAR6->VAR67, VAR11->VAR62);
+}
+
+VAR19 = FUN17("");
+if (VAR19 == NULL)
+VAR19 = VAR2->VAR18;
+
+
+if (VAR2->VAR65 == NULL || !FUN18(VAR2->VAR65->VAR68, FUN13(VAR2->VAR24)->VAR61))
+FUN19(VAR19->VAR68, VAR6, "", FUN13(VAR2->VAR24)->VAR61, FUN20(&VAR6->VAR48));
+else
+FUN19(VAR19->VAR68, VAR6, "", FUN13(VAR2->VAR24)->VAR61, VAR2->VAR65->VAR68, FUN20(&VAR6->VAR48));
+
+FUN19(VAR2->VAR18->VAR68, VAR6, "",
+VAR19->VAR69, FUN20(&VAR6->VAR48));
+}
+
+
+if (VAR14 > 4)
+FUN21(VAR2, VAR70);
+else if (VAR14 > 1)
+FUN21(VAR2, VAR71);
+if (VAR17)
+FUN22(VAR2, VAR72, "", FUN13(VAR13)->VAR61, VAR14, VAR15);
+else
+FUN22(VAR2, VAR73, "", FUN13(VAR13)->VAR61, VAR14, VAR15);
+
+FUN23(VAR2, FUN24(FUN25(""),
+FUN25(""),
+VAR14), VAR14, FUN13(VAR13)->VAR61);
+return;
+}

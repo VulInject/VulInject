@@ -1,0 +1,1 @@
+int FUN1 ( unsigned VAR1 , int VAR2 ) { const struct VAR3 * VAR4 ; VAR4 = FUN2 ( VAR1 ) ; FUN3 ( VAR4 , FUN4 ( VAR1 ) , VAR2 ) ; return 0 ; }

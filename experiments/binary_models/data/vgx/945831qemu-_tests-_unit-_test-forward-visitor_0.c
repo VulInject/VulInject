@@ -1,0 +1,15 @@
+static void FUN1(void)
+{
+VAR1 *VAR2 = FUN2("",
+FUN3(VAR3));
+VAR1 *VAR4;
+int VAR5;
+
+for (VAR4 = VAR2, VAR5 = 1; VAR5 <= 4; VAR5++) {
+FUN4(VAR4);
+FUN5(VAR4->VAR6, ==, VAR5);
+VAR4 = VAR4->VAR7;
+}
+FUN4(!VAR4);
+FUN6(VAR2);
+}

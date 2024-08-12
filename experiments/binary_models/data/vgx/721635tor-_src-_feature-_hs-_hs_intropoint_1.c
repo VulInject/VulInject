@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , const VAR3 * VAR4 , size_t VAR5 ) { FUN2 ( VAR2 ) ; if ( VAR5 == 0 ) { FUN3 ( VAR6 , VAR7 , "" ) ; VAR8 } const uint8_t VAR9 = VAR4 [ 0 ] ; switch ( VAR9 ) { case VAR10 : case VAR11 : err case VAR12 : return FUN4 ( VAR2 , VAR4 , VAR5 ) ; default : FUN3 ( VAR6 , VAR7 , "" , VAR9 ) ; VAR8 } err FUN5 ( FUN6 ( VAR2 ) , VAR13 ) ; return - 1 ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( void ) { int VAR1 = 0 ; VAR2 * VAR3 = FUN2 ( "" ) ; if ( VAR3 ) { if ( VAR3 -> VAR4 & VAR5 && VAR3 -> VAR6 . VAR7 [ 0 ] == FUN3 ( 16909060 ) ) { VAR1 = 1 ; } return VAR1 ; } return 0 ; }

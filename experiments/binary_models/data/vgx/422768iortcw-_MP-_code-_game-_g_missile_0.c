@@ -1,0 +1,148 @@
+VAR1 *FUN1( VAR1 *VAR2, vec3_t VAR3, vec3_t VAR4, int VAR5 ) {
+VAR1   *VAR6;
+qboolean VAR7 = VAR8;
+
+VAR6 = FUN2();
+
+
+if ( VAR2->VAR9 && VAR2->VAR9->VAR10.VAR11 ) {
+
+
+
+if ( VAR12.VAR13 < VAR14 && ( VAR5 == VAR15 || VAR5 == VAR16 ) ) {  
+VAR2->VAR9->VAR10.VAR11 *= 5;
+VAR2->VAR9->VAR10.VAR11 -= ( VAR2->VAR9->VAR10.VAR11 % 5000 );
+VAR2->VAR9->VAR10.VAR11 += 5000;
+if ( VAR2->VAR9->VAR10.VAR11 < 5000 ) { 
+VAR7 = VAR17;
+}
+}
+
+if ( !VAR7 ) {
+VAR6->VAR18 = VAR19.VAR20 + VAR2->VAR9->VAR10.VAR11;
+}
+} else {
+VAR6->VAR18 = VAR19.VAR20 + 2500;
+}
+
+
+
+
+if ( VAR12.VAR13 >= VAR14 && ( VAR5 == VAR15 || VAR5 == VAR16 ) ) {
+VAR7 = VAR17;
+VAR6->VAR18 = VAR19.VAR20 + 15000;
+VAR6->VAR21 = VAR22;
+VAR6->VAR23 = VAR19.VAR20 + 16500;
+}
+
+
+if ( VAR2->VAR9 ) {
+VAR2->VAR9->VAR10.VAR11 = 0;       
+
+}
+if ( !VAR7 ) {
+VAR6->VAR21         = VAR24;
+}
+
+VAR6->VAR25.VAR26       = VAR27;
+VAR6->VAR28.VAR29     = VAR30 | VAR31;
+VAR6->VAR25.VAR32      = VAR5;
+VAR6->VAR28.VAR33    = VAR2->VAR25.VAR34;
+VAR6->VAR35        = VAR2;
+
+
+
+VAR6->VAR36 = FUN3( VAR5 ); 
+VAR6->VAR37 = FUN3( VAR5 );
+
+
+switch ( VAR5 ) {
+case VAR38:
+VAR6->VAR39             = "";
+
+
+if ( VAR12.VAR13 >= VAR14 ) {
+VAR6->VAR40          = 300;
+} else {
+VAR6->VAR40          = 150;
+}
+VAR6->VAR41         = VAR42;
+VAR6->VAR43   = VAR44;
+VAR6->VAR25.VAR45              = VAR46 | VAR47;
+break;
+case VAR48:
+VAR6->VAR39             = "";
+
+
+VAR6->VAR40          = 300;
+VAR6->VAR41         = VAR42;
+VAR6->VAR43   = VAR44;
+VAR6->VAR25.VAR45              = VAR46 | VAR47;
+break;
+
+case VAR49:
+VAR6->VAR39             = "";
+VAR6->VAR25.VAR45              = VAR46 | VAR47;
+break;
+
+case VAR15:
+case VAR16:
+
+VAR6->VAR50 = 0;     
+FUN4( VAR2 - VAR51, ""Dynamite is VAR52, but NOT VAR53!\"" );
+
+if ( VAR2->VAR9 )
+VAR6->VAR25.VAR54 = VAR2->VAR9->VAR55.VAR56 + 4;
+VAR6->VAR39             = "";
+VAR6->VAR36                = 0;
+
+VAR6->VAR40          = 400;
+VAR6->VAR41         = VAR57;
+VAR6->VAR43   = VAR58;
+VAR6->VAR25.VAR45              = ( VAR47 | VAR46 );   
+
+
+
+if ( VAR12.VAR13 == VAR59 ) {
+VAR6->VAR60                = 5;
+VAR6->VAR61            = VAR17;
+VAR6->VAR62                   = VAR63;
+} else {
+VAR6->VAR60                = 5;
+VAR6->VAR61            = VAR8;
+}
+
+
+VAR6->VAR28.VAR64            = VAR65;      
+
+
+
+
+
+
+
+FUN5( VAR6->VAR28.VAR66, -12, -12, 0 );
+FUN6( VAR6->VAR28.VAR66, VAR6->VAR28.VAR67 );
+FUN5( VAR6->VAR28.VAR68, 12, 12, 20 );
+FUN6( VAR6->VAR28.VAR68, VAR6->VAR28.VAR69 );
+break;
+}
+
+
+if ( VAR12.VAR13 != VAR59 ) {
+VAR6->VAR40 = FUN3( VAR5 );
+}
+
+
+VAR6->VAR70 = VAR71;
+
+VAR6->VAR25.VAR72.VAR73 = VAR74;
+VAR6->VAR25.VAR72.VAR75 = VAR19.VAR20 - VAR76;     
+FUN6( VAR3, VAR6->VAR25.VAR72.VAR77 );
+FUN6( VAR4, VAR6->VAR25.VAR72.VAR78 );
+FUN7( VAR6->VAR25.VAR72.VAR78 );          
+
+FUN6( VAR3, VAR6->VAR28.VAR79 );
+
+return VAR6;
+}

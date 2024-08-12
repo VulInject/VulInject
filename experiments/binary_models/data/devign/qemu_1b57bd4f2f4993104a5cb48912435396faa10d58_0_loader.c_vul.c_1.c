@@ -1,0 +1,1 @@
+static inline bool FUN1(VAR1 *VAR2, VAR1 *VAR3) { return (VAR2->VAR4 > VAR3->VAR4) || (VAR2->VAR4 == VAR3->VAR4 && VAR2->VAR5 >= VAR3->VAR5); }

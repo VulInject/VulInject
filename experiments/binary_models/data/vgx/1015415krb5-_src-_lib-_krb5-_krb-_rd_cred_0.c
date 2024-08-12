@@ -1,0 +1,31 @@
+static VAR1
+FUN1(krb5_context VAR2, VAR3 *VAR4,
+krb5_auth_context VAR5, VAR6 **VAR7)
+{
+krb5_error_code VAR8;
+krb5_data VAR9 = FUN2();
+krb5_boolean VAR10 = VAR11;
+
+*VAR7 = NULL;
+
+if (VAR5->VAR12 == NULL && VAR5->VAR13 == NULL)
+return FUN3(&VAR4->VAR14, VAR7);
+
+VAR8 = FUN4(&VAR9, VAR4->VAR14.VAR15);
+if (VAR8)
+return VAR8;
+if (VAR5->VAR12 != NULL) {
+VAR8 = FUN5(VAR2, VAR5->VAR12,
+VAR16, 0, VAR4, &VAR9);
+VAR10 = (VAR8 == 0);
+}
+if (!VAR10 && VAR5->VAR13 != NULL) {
+VAR8 = FUN5(VAR2, VAR5->VAR13,
+VAR16, 0, VAR4, &VAR9);
+VAR10 = (VAR8 == 0);
+}
+if (VAR10)
+VAR8 = FUN3(&VAR9, VAR7);
+FUN6(VAR9.VAR17, VAR9.VAR15);
+return VAR8;
+}

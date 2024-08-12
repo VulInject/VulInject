@@ -1,0 +1,1 @@
+void FUN1 ( ) { if ( VAR1 == 10000 ) { return ; } }

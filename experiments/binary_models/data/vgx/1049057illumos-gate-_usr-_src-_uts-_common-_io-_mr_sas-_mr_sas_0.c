@@ -1,0 +1,138 @@
+static int
+FUN1(struct VAR1 *VAR2, int VAR3)
+{
+
+VAR4 *VAR5 = VAR2->VAR5;
+int	VAR6, VAR7, VAR8;
+int	VAR9, VAR10, VAR11;
+
+FUN2(VAR12, (VAR13, "",
+VAR3));
+
+
+VAR11 = FUN3(VAR5, VAR3, &VAR8);
+if ((VAR11 != VAR14) || (VAR8 == 0)) {
+FUN2(VAR15, (VAR16, ""
+"", VAR11, VAR8));
+
+return (VAR17);
+}
+
+FUN2(VAR12, (VAR13, "", VAR8));
+
+
+VAR11 = FUN4(VAR5, VAR3, &VAR6);
+if ((VAR11 != VAR14) || (VAR6 == 0)) {
+FUN2(VAR15, (VAR16, ""
+"", VAR11, VAR6));
+
+return (VAR17);
+}
+FUN2(VAR12, (VAR13, "", VAR6));
+
+
+if (VAR8 > 1) {
+VAR8 = 1;
+}
+
+
+VAR2->VAR18 = VAR8 * sizeof (VAR19);
+VAR2->VAR20 = FUN5(VAR2->VAR18,
+VAR21);
+FUN6(VAR2->VAR20);
+
+VAR10 = ((VAR3 == VAR22) ||
+(VAR3 == VAR23)) ?
+VAR24 : VAR25;
+
+
+VAR11 = FUN7(VAR5, VAR2->VAR20, VAR3, 0,
+VAR8, &VAR7, VAR10);
+
+if ((VAR11 != VAR14) || (VAR7 == 0)) {
+FUN2(VAR15, (VAR16, ""
+"", VAR6));
+goto VAR26;
+}
+
+if (VAR7 < VAR8) {
+FUN2(VAR15, (VAR16, ""
+"", VAR8, VAR7));
+}
+VAR2->VAR27 = VAR7;
+
+
+if ((VAR11 = FUN8(VAR2->VAR20[0],
+&VAR2->VAR28)) != VAR14) {
+FUN2(VAR15, (VAR16, ""
+""));
+goto VAR29;
+}
+
+
+if (VAR2->VAR28 >= FUN9()) {
+FUN2(VAR15, (VAR16, ""
+""));
+goto VAR29;
+}
+
+FUN2(VAR12, (VAR13, "",
+VAR2->VAR28));
+
+
+for (VAR9 = 0; VAR9 < VAR7; VAR9++) {
+VAR11 = FUN10(VAR2->VAR20[VAR9],
+VAR30, (VAR31)VAR2, (VAR31)(VAR32)VAR9);
+
+if (VAR11 != VAR14) {
+FUN2(VAR15, (VAR16, ""
+"", VAR11));
+goto VAR29;
+}
+
+}
+
+FUN2(VAR12, (VAR13, ""));
+
+if ((VAR11 = FUN11(VAR2->VAR20[0],
+&VAR2->VAR33)) != VAR14) {
+FUN2(VAR15, (VAR16, "",
+VAR11));
+goto VAR34;
+}
+
+if (VAR2->VAR33 &  VAR35) {
+FUN2(VAR15, (VAR16, ""));
+
+(void) FUN12(VAR2->VAR20,
+VAR2->VAR27);
+} else {
+FUN2(VAR15, (VAR13, ""));
+
+for (VAR9 = 0; VAR9 < VAR2->VAR27; VAR9++) {
+(void) FUN13(VAR2->VAR20[VAR9]);
+FUN2(VAR15, (VAR13, ""
+"", VAR9));
+}
+}
+
+return (VAR14);
+
+VAR34:
+for (VAR9 = 0; VAR9 < VAR7; VAR9++)
+(void) FUN14(VAR2->VAR20[VAR9]);
+
+VAR29:
+for (VAR9 = 0; VAR9 < VAR7; VAR9++)
+(void) FUN15(VAR2->VAR20[VAR9]);
+
+VAR26:
+if (VAR2->VAR20 != NULL)
+FUN16(VAR2->VAR20, VAR2->VAR18);
+
+VAR2->VAR20 = NULL;
+VAR2->VAR18 = 0;
+
+return (VAR17);
+
+}

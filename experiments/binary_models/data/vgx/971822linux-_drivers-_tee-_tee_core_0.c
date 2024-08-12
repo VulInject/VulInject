@@ -1,0 +1,43 @@
+static int FUN1(struct VAR1 *VAR2,
+struct tee_ioctl_param VAR3 *VAR4,
+size_t VAR5, struct VAR6 *VAR7)
+{
+size_t VAR8;
+
+for (VAR8 = 0; VAR8 < VAR5; VAR8++) {
+struct tee_ioctl_param VAR9;
+struct VAR6 *VAR10 = VAR7 + VAR8;
+
+VAR9.VAR11 = VAR10->VAR11;
+switch (VAR10->VAR11 & VAR12) {
+case VAR13:
+case VAR14:
+VAR9.VAR15 = VAR10->VAR16.VAR17.VAR15;
+VAR9.VAR18 = VAR10->VAR16.VAR17.VAR18;
+VAR9.VAR19 = VAR10->VAR16.VAR17.VAR19;
+break;
+case VAR20:
+case VAR21:
+case VAR22:
+VAR9.VAR18 = VAR10->VAR16.VAR23.VAR24;
+if (!VAR10->VAR16.VAR23.VAR25) {
+VAR9.VAR15 = 0;
+VAR9.VAR19 = (VAR26)-1; 
+break;
+}
+VAR9.VAR15 = VAR10->VAR16.VAR23.VAR27;
+VAR9.VAR19 = VAR10->VAR16.VAR23.VAR25->VAR28;
+break;
+default:
+VAR9.VAR15 = 0;
+VAR9.VAR18 = 0;
+VAR9.VAR19 = 0;
+break;
+}
+
+if (FUN2(VAR4 + VAR8, &VAR9, sizeof(VAR9)))
+return -VAR29;
+}
+
+return 0;
+}

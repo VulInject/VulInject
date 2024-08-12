@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR2 ) ; FUN3 ( VAR4 , NULL ) ; return 0 ; } static const struct vm_operations_struct VAR5 = { . VAR6 = VAR7 . open = VAR8 . close = VAR9 } ;

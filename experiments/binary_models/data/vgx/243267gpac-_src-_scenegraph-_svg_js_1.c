@@ -1,0 +1,1 @@
+static JSValue FUN1 ( VAR1 * VAR2 , JSValueConst VAR3 , int VAR4 ) { VAR5 * VAR6 = FUN2 ( VAR3 , VAR7 . VAR8 ) ; switch ( VAR4 ) { case 0 : return VAR9 ; case 1 : if ( VAR6 -> VAR10 && VAR6 -> VAR10 -> VAR11 ) { return FUN3 ( VAR2 , VAR6 -> VAR10 -> VAR11 -> VAR12 ) ; } return VAR9 ; default : return VAR13 ; } }

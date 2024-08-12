@@ -1,0 +1,1 @@
+int FUN1 ( double VAR1 [ 6 ] ) { VAR1 [ 1 ] = 0 ; VAR1 [ 2 ] = 0 ; VAR1 [ 3 ] = 1 ; VAR1 [ 4 ] = 0 ; VAR1 [ 5 ] = 0 ; return VAR2 ; }

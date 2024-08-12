@@ -1,0 +1,115 @@
+static void FUN1(struct VAR1 *VAR1)
+{
+size_t VAR2;
+uint16_t VAR3, VAR4;
+uint8_t VAR5, VAR6;
+vrf_id_t VAR7;
+struct VAR8 *VAR8;
+
+
+VAR8 = FUN2(VAR1);
+VAR8->VAR9 = NULL;
+
+
+VAR2 = FUN3(VAR8->VAR10);
+if (VAR2 < VAR11) {
+ssize_t VAR12;
+if (((VAR12 = FUN4(VAR8->VAR10, VAR8->VAR13,
+VAR11 - VAR2))
+== 0)
+|| (VAR12 == -1)) {
+if (VAR14)
+FUN5(
+"",
+VAR8->VAR13);
+FUN6(VAR8);
+return;
+}
+if (VAR12 != (VAR15)(VAR11 - VAR2)) {
+FUN7(VAR16, VAR8);
+return;
+}
+VAR2 = VAR11;
+}
+
+
+FUN8(VAR8->VAR10, 0);
+
+
+VAR3 = FUN9(VAR8->VAR10);
+VAR5 = FUN10(VAR8->VAR10);
+VAR6 = FUN10(VAR8->VAR10);
+VAR7 = FUN11(VAR8->VAR10);
+VAR4 = FUN9(VAR8->VAR10);
+
+if (VAR5 != VAR17 || VAR6 != VAR18) {
+FUN12(
+VAR19,
+"",
+VAR20, VAR8->VAR13, VAR5, VAR6);
+FUN6(VAR8);
+return;
+}
+
+if (VAR3 < VAR11) {
+FUN12(VAR19,
+"",
+VAR20, VAR8->VAR13, VAR3, VAR11);
+FUN6(VAR8);
+return;
+}
+
+
+if (VAR3 > FUN13(VAR8->VAR10)) {
+struct VAR21 *VAR22;
+FUN12(
+VAR23,
+"",
+VAR20, VAR3,
+(unsigned long)FUN13(VAR8->VAR10));
+VAR22 = FUN14(VAR3);
+FUN15(VAR22, VAR8->VAR10);
+FUN16(VAR8->VAR10);
+VAR8->VAR10 = VAR22;
+}
+
+
+if (VAR2 < VAR3) {
+ssize_t VAR12;
+if (((VAR12 = FUN4(VAR8->VAR10, VAR8->VAR13,
+VAR3 - VAR2))
+== 0)
+|| (VAR12 == -1)) {
+if (VAR14)
+FUN5(
+"",
+VAR8->VAR13);
+FUN6(VAR8);
+return;
+}
+if (VAR12 != (VAR15)(VAR3 - VAR2)) {
+
+FUN7(VAR16, VAR8);
+return;
+}
+}
+
+VAR3 -= VAR11;
+
+if (VAR14)
+FUN5("", VAR8,
+FUN17(VAR4), VAR7);
+
+if (VAR4 < FUN18(VAR24) && VAR24[VAR4])
+VAR24[VAR4](VAR4, VAR8, VAR3, VAR7);
+if (VAR4 < VAR8->VAR25 && VAR8->VAR26[VAR4])
+VAR8->VAR26[VAR4](VAR4, VAR8, VAR3, VAR7);
+
+if (VAR8->VAR13 < 0)
+
+return;
+
+
+FUN19(VAR8->VAR10);
+FUN7(VAR16, VAR8);
+}

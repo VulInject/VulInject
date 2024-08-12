@@ -1,0 +1,1 @@
+static boolean FUN1 ( ) { FUN2 ( VAR1 ) ; FUN3 ( ) ; FUN4 ( ) ; FUN5 ( VAR2 , VAR3 ) ; FUN6 ( ) ; FUN6 ( ) ; FUN5 ( VAR2 , 0 ) ; if ( FUN7 ( ) != 0xaa ) { return VAR1 ; } if ( ( VAR4 . VAR5 = FUN8 ( ) ) == 0xffff ) { return VAR1 ; } return VAR6 ; }

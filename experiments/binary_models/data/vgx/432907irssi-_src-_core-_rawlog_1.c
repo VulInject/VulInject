@@ -1,0 +1,1 @@
+void FUN1 ( void ) { VAR1 = FUN2 ( "" ) ; FUN3 ( "" , "" , 200 ) ; FUN4 ( ) ; FUN5 ( "" , ( VAR2 ) VAR3 ) ; FUN6 ( "" , NULL , ( VAR2 ) VAR4 ) ; FUN6 ( "" , NULL , ( VAR2 ) VAR5 ) ; FUN6 ( "" , NULL , ( VAR2 ) VAR6 ) ; FUN6 ( "" , ( VAR2 ) VAR7 ) ; }

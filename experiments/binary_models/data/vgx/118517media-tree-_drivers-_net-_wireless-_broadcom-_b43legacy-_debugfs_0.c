@@ -1,0 +1,62 @@
+void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4;
+struct VAR5 *VAR6;
+char VAR7[16];
+
+FUN2(!VAR2);
+VAR4 = FUN3(sizeof(*VAR4), VAR8);
+if (!VAR4) {
+FUN4(VAR2->VAR9, "");
+return;
+}
+VAR4->VAR2 = VAR2;
+VAR6 = &VAR4->VAR10;
+VAR6->VAR6 = FUN5(VAR11,
+sizeof(struct VAR12), VAR8);
+if (!VAR6->VAR6) {
+FUN4(VAR2->VAR9, "");
+FUN6(VAR4);
+return;
+}
+VAR6->VAR13 = -1;
+FUN7(&VAR6->VAR14);
+
+VAR2->VAR15 = VAR4;
+
+snprintf(VAR7, sizeof(VAR7), "", FUN8(VAR2->VAR9->VAR16->VAR17));
+VAR4->VAR18 = FUN9(VAR7, VAR19);
+if (!VAR4->VAR18 || FUN10(VAR4->VAR18)) {
+if (VAR4->VAR18 == FUN11(-VAR20)) {
+FUN12(VAR2->VAR9, ""
+"");
+} else {
+FUN4(VAR2->VAR9, "",
+VAR7);
+}
+VAR2->VAR15 = NULL;
+FUN6(VAR6->VAR6);
+FUN6(VAR4);
+return;
+}
+
+do {							\
+struct VAR21 *VAR22;				\
+VAR22 = FUN13(FUN14(VAR23),	\
+VAR24, VAR4->VAR18, VAR2,	\
+&VAR25##VAR23.VAR26);	\
+VAR4->VAR27##VAR23.VAR21 = NULL;			\
+if (!FUN10(VAR22))					\
+VAR4->VAR27##VAR23.VAR21 = VAR22;		\
+} while (0)
+
+
+FUN15(VAR28, 0600);
+FUN15(VAR29, 0400);
+FUN15(VAR30, 0400);
+FUN15(VAR31, 0400);
+FUN15(VAR32, 0200);
+
+
+FUN16(VAR2);
+}

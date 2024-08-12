@@ -1,0 +1,15 @@
+static void FUN1(struct VAR1 *VAR2, int VAR3, int VAR4)
+{
+struct VAR5 *VAR6;
+
+FUN2(&VAR2->VAR7);
+VAR6 = FUN3(VAR2, VAR3, VAR4);
+VAR6->VAR8 -= 1;
+FUN4(VAR6->VAR8 >= 0);
+FUN5(&VAR6->mutex);
+if (VAR6->VAR8 == 0) {
+FUN6(&VAR6->VAR9, &VAR2->VAR10);
+FUN7(VAR6);
+}
+FUN8(&VAR2->VAR7);
+}

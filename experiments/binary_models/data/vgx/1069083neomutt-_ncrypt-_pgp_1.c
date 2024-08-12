@@ -1,0 +1,1 @@
+bool FUN1 ( void ) { char * VAR1 = NULL ; const bool VAR2 = FUN2 ( VAR3 -> VAR4 , "" ) ; VAR1 = FUN3 ( 0 ) ; if ( VAR1 ) { setenv ( "" , VAR1 , 0 ) ; FUN4 ( "" , VAR1 , false ) ; } return true ; }

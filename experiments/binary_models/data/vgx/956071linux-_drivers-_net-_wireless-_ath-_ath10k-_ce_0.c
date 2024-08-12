@@ -1,0 +1,17 @@
+static inline VAR1 FUN1(struct VAR2 *VAR3,
+u32 VAR4)
+{
+struct VAR5 *VAR6 = FUN2(VAR3);
+u32 VAR7 = FUN3(VAR4);
+struct VAR8 *VAR9 = &VAR6->VAR10[VAR7];
+u32 VAR11;
+
+if (VAR3->VAR12.VAR13 &&
+(VAR9->VAR14 & VAR15))
+VAR11 = FUN4(VAR3, VAR7);
+else
+VAR11 = FUN5(VAR3, VAR4 +
+VAR3->VAR16->VAR17);
+
+return VAR11;
+}

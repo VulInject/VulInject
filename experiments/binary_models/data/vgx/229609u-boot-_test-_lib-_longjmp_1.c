@@ -1,0 +1,1 @@
+static int FUN1 ( int VAR1 ) { struct test_jmp_buf VAR2 ; int VAR3 ; VAR2 . VAR4 = - 1 ; VAR3 = FUN2 ( VAR2 . VAR2 ) ; FUN3 ( & VAR2 , VAR1 ) ; return 0x1000 ; }

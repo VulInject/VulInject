@@ -1,0 +1,1 @@
+static char * FUN1 ( char * VAR1 ) { off_t VAR2 ; char * VAR3 = VAR1 ; for ( VAR2 = 0 ; VAR2 < ( int ) strlen ( VAR1 ) ; VAR2 ++ ) { VAR3 ++ ; if ( VAR1 [ VAR2 ] == '' ) { return VAR3 ; } } return VAR3 ; }

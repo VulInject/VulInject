@@ -1,0 +1,35 @@
+FUN1 (tree VAR1, int VAR2)
+{
+tree VAR3 = VAR4;
+FUN2(VAR5,VAR6) *VAR7;
+tree VAR8;
+tree VAR9;
+tree VAR10;
+int VAR11;
+
+for (VAR8 = FUN3 (VAR1), VAR11 = 0;
+FUN4 (VAR8, VAR11, VAR9); ++VAR11)
+{
+if (!VAR2
+&& FUN5 (VAR9)
+&& (!FUN6 (VAR9)
+|| FUN7 (VAR9) != FUN3 (VAR1)))
+continue;
+
+VAR10 = FUN8 (VAR9);
+if (FUN9 (VAR3, VAR10))
+VAR3 = VAR10;
+}
+
+
+if (FUN10 (2) && VAR2)
+for (VAR7 = FUN11 (VAR1), VAR11 = 0;
+FUN12 (VAR5, VAR7, VAR11, VAR9); VAR11++)
+{
+VAR10 = FUN8 (VAR9);
+if (FUN9 (VAR3, VAR10))
+VAR3 = VAR10;
+}
+
+return VAR3;
+}

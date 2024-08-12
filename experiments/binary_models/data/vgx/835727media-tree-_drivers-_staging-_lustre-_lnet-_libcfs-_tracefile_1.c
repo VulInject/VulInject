@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , gfp_t VAR3 , struct VAR4 * VAR5 ) { int VAR6 ; for ( VAR6 = 0 ; VAR6 + VAR2 -> VAR7 < VAR8 ; ++ VAR6 ) { struct VAR9 * VAR10 ; VAR10 = FUN2 ( VAR3 ) ; FUN3 ( & VAR10 -> VAR11 , VAR5 ) ; } return VAR6 ; }

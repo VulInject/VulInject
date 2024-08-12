@@ -1,0 +1,18 @@
+static void FUN1(VAR1 *VAR2)
+{
+VAR3 *VAR4 = &VAR2->VAR5;
+VAR6 *VAR7 = VAR2->VAR7;
+
+VAR4->VAR8 = 5;             
+VAR4->VAR8 |= VAR9; 
+if (VAR7->write) {
+VAR4->VAR8 |= VAR10;
+}
+if (VAR7->VAR11) {
+VAR4->VAR8 |= VAR12;
+}
+
+VAR4->VAR13 = FUN2(VAR2->VAR14, VAR2->VAR15);
+VAR4->VAR16 = 0;
+VAR4->VAR17 = 0;
+}

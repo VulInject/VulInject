@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 ) { if ( FUN2 ( VAR2 ) ) { VAR3 } if ( FUN3 ( VAR2 ) ) { VAR3 } if ( FUN4 ( VAR2 ) ) { VAR3 } return 0 ; err_out FUN5 ( VAR2 ) ; return - VAR4 ; }

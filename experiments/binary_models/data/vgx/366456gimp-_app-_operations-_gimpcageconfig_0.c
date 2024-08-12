@@ -1,0 +1,22 @@
+FUN1 (VAR1  *VAR2,
+gint             VAR3,
+gdouble          VAR4,
+gdouble          VAR5)
+{
+GimpCagePoint VAR6;
+
+FUN2 (FUN3 (VAR2));
+FUN2 (VAR3 <= VAR2->VAR7->VAR8);
+FUN2 (VAR3 >= 0);
+
+VAR6.VAR9.VAR4 = VAR4 + VAR10;
+VAR6.VAR9.VAR5 = VAR5 + VAR10;
+
+VAR6.VAR11.VAR4 = VAR4 + VAR10;
+VAR6.VAR11.VAR5 = VAR5 + VAR10;
+
+FUN4 (VAR2->VAR7, VAR3, VAR6);
+
+FUN5 (VAR2);
+FUN6 (VAR2);
+}

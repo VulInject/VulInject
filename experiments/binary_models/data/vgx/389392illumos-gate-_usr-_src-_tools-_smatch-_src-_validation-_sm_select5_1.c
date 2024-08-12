@@ -1,0 +1,1 @@
+int FUN1 ( unsigned long VAR1 ) { return VAR1 < 4 ?0 : - 12 ; } int VAR2 ; void FUN2 ( void ) { int VAR3 ; VAR3 = FUN1 ( VAR2 ) ; if ( VAR3 ) { FUN3 ( VAR3 , NULL ) ; FUN3 ( VAR2 ) ; } else { FUN3 ( VAR2 ) ; } }

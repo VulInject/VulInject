@@ -1,0 +1,20 @@
+*	FUN1(VAR1);
+*	VAR1 = FUN2(VAR2, VAR3);
+*	FUN3(FUN4(VAR1), 0);
+*	FUN5(VAR1, VAR4, VAR5, "");
+*	FUN1(VAR1);
+
+
+
+static int
+FUN6(int VAR6, int VAR7)
+{
+struct flock VAR8;
+
+VAR8.VAR9 = VAR7;
+VAR8.VAR10 = VAR11;
+VAR8.VAR12 = 0;
+VAR8.VAR13 = 0;
+
+return (FUN7(VAR6, VAR14, &VAR8));
+}

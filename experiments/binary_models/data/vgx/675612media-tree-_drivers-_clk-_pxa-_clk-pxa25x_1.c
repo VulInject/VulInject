@@ -1,0 +1,1 @@
+static u8 FUN1 ( struct VAR1 * VAR2 ) { unsigned long VAR3 ; unsigned int VAR4 ; VAR4 = VAR3 & ( 1 << 0 ) ; return VAR5 ; }

@@ -1,0 +1,76 @@
+int FUN1(struct VAR1 *VAR2, __be16 VAR3,
+struct VAR4 *VAR5)
+{
+struct VAR6 *VAR6 = FUN2(VAR2);
+unsigned int VAR7, VAR8, VAR9, VAR10;
+struct VAR11 *VAR12 = NULL;
+struct VAR13 *VAR14;
+u32 VAR15, VAR16;
+int VAR17;
+
+if (!FUN3(VAR2))
+return -VAR18;
+
+
+VAR7 = VAR5->VAR19.VAR15 & 0xFFFFF;
+
+if (VAR7 > VAR6->VAR20.VAR21) {
+FUN4(VAR6->VAR22,
+"",
+VAR7, VAR6->VAR20.VAR21);
+return -VAR23;
+}
+
+VAR14 = VAR6->VAR24;
+VAR15 = VAR5->VAR19.VAR15;
+VAR16 = FUN5(VAR5->VAR19.VAR15);
+
+
+if (VAR16 != 0x800 && VAR16 >= VAR14->VAR25)
+return -VAR26;
+
+
+if (VAR16 != 0x800) {
+VAR12 = &VAR14->VAR27[VAR16 - 1];
+if (!VAR12->VAR28)
+return -VAR26;
+
+if (!FUN6(VAR7, VAR12->VAR29))
+return -VAR26;
+}
+
+VAR17 = FUN7(VAR2, VAR7);
+if (VAR17)
+goto VAR30;
+
+if (VAR12)
+FUN8(VAR7, VAR12->VAR29);
+
+
+VAR8 = VAR6->VAR20.VAR21;
+for (VAR9 = 0; VAR9 < VAR14->VAR25; VAR9++) {
+VAR12 = &VAR14->VAR27[VAR9];
+
+if (VAR12->VAR28 == VAR15) {
+for (VAR10 = 0; VAR10 < VAR8; VAR10++) {
+if (!FUN6(VAR10, VAR12->VAR29))
+continue;
+
+VAR17 = FUN9(VAR2, VAR10, NULL);
+if (VAR17)
+goto VAR30;
+
+FUN8(VAR10, VAR12->VAR29);
+}
+
+
+VAR12->VAR31 = NULL;
+VAR12->VAR28 = 0;
+memset(&VAR12->VAR32, 0, sizeof(VAR12->VAR32));
+break;
+}
+}
+
+VAR30:
+return VAR17;
+}

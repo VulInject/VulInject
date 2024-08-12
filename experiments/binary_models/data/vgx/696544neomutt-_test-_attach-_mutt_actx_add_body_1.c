@@ -1,0 +1,1 @@
+void FUN1 ( void ) { { struct Body VAR1 = { 0 } ; FUN2 ( NULL , & VAR1 ) ; FUN3 ( 1 , "" ) ; } { struct AttachCtx VAR2 = { 0 } ; FUN2 ( & VAR2 ) ; FUN3 ( 1 , "" ) ; } }

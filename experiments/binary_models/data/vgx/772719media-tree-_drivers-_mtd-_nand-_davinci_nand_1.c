@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , int VAR3 ) { struct VAR4 * VAR5 ; uint32_t VAR6 ; cfs_time_t VAR7 ; VAR5 = FUN2 ( VAR2 ) ; FUN3 ( VAR2 ) ; FUN4 ( & VAR8 , VAR7 ) ; VAR6 = FUN5 ( VAR5 , VAR9 ) ; VAR6 |= FUN6 ( 8 + VAR5 -> VAR10 ) ; FUN7 ( VAR5 , VAR9 , VAR6 ) ; FUN8 ( & VAR8 , VAR7 ) ; }

@@ -1,0 +1,8 @@
+void FUN1(void)
+{
+    VAR1->VAR2 = VAR1->VAR3[VAR4] & ~0x00000003;
+    VAR5 = VAR1->VAR3[VAR6] & ~0xFFFF0000UL;
+    FUN2(VAR1, VAR5);
+    FUN3();
+    VAR1->VAR7 |= VAR8;
+}

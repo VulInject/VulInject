@@ -1,0 +1,1 @@
+long lrand48 ( void ) { if ( VAR1 == 0 ) { return FUN1 ( ) & 0x7fffffff ; } FUN2 ( VAR2 , NULL ) ; return ( ( long ) VAR2 [ 2 ] << 15 ) + ( ( long ) VAR2 [ 1 ] >> 1 ) ; }

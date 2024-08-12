@@ -1,0 +1,1 @@
+enum bna_cb_status FUN1 ( struct VAR1 * VAR2 , const VAR3 * VAR4 ) { struct VAR5 * VAR6 = & VAR2 -> VAR6 ; if ( VAR6 -> VAR7 == NULL ) { VAR6 -> VAR7 = FUN2 ( FUN3 ( VAR6 -> VAR2 -> VAR8 ) ) ; } FUN4 ( VAR6 -> VAR7 -> VAR9 , VAR4 ) ; VAR6 -> VAR10 = 1 ; VAR6 -> VAR11 = NULL ; VAR6 -> VAR12 = VAR2 -> VAR8 -> VAR13 ; FUN5 ( VAR6 , VAR14 ) ; return VAR15 ; }

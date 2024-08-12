@@ -1,0 +1,55 @@
+static void FUN1(VAR1 *VAR2, gpointer VAR3) {
+VAR4 *VAR5 = NULL;
+GtkTreeIter VAR6;
+VAR7 *VAR8;
+struct VAR9 *VAR10 = NULL;
+VAR11 *VAR12 = VAR3;
+
+
+(void) VAR2;
+
+if (VAR12 == NULL)
+return;
+
+switch(*VAR12) {
+case 1:
+FUN2("");
+VAR8 = FUN3 (VAR13);
+
+if(FUN4(VAR14) > 0) {
+VAR5 = FUN5 (VAR14, &VAR8);
+for(VAR5 = FUN6(VAR5); VAR5; VAR5 = FUN7(VAR5)) {
+FUN8(VAR8, &VAR6, VAR5->VAR3);
+FUN9 (VAR8, &VAR6, 1, &VAR10, -1);
+
+
+FUN10(&VAR10->VAR15, VAR16);
+
+FUN11(FUN12 (VAR13), &VAR6);
+}
+}
+break;
+case 2:
+FUN2("");
+VAR8 = FUN3 (VAR17);
+
+if(FUN4(VAR18) > 0) {
+VAR5 = FUN5 (VAR18, &VAR8);
+for(VAR5 = FUN6(VAR5); VAR5; VAR5 = FUN7(VAR5)) {
+FUN8(VAR8, &VAR6, VAR5->VAR3);
+FUN9 (VAR8, &VAR6, 1, &VAR10, -1);
+
+
+FUN10(&VAR10->VAR15, VAR19);
+
+FUN11(FUN12 (VAR17), &VAR6);
+}
+}
+break;
+}
+
+
+if(VAR5) {
+FUN13(VAR5, (VAR20)VAR21);
+}
+}

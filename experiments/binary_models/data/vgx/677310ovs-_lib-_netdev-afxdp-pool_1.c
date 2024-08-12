@@ -1,0 +1,1 @@
+static void * * FUN1 ( unsigned int VAR1 ) { void * * VAR2 ; VAR2 = FUN2 ( VAR1 * sizeof VAR2 ) ; return VAR2 ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( unsigned long VAR1 ) { int VAR2 ; VAR2 = FUN2 ( VAR1 , 0x09 ) ; VAR2 = FUN2 ( VAR1 , 0x00 ) ; if ( VAR2 ) { return VAR2 ; } FUN3 ( 5 ) ; return 0 ; }

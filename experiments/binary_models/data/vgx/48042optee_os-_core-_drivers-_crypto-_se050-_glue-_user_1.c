@@ -1,0 +1,1 @@
+sss_status_t FUN1 ( void * * VAR1 , const VAR2 * VAR3 , size_t VAR4 ) { if ( FUN2 ( * VAR1 , VAR3 , VAR4 ) ) { return VAR5 ; } return VAR6 ; }

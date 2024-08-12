@@ -1,0 +1,1 @@
+FUN1 ( ) { VAR1 -> VAR2 = FUN2 ( sizeof ( VAR3 ) , VAR1 -> VAR4 & VAR5 ) ; ( ( VAR3 * ) VAR1 -> VAR2 ) -> VAR6 = VAR1 -> VAR6 ; return VAR7 ; }

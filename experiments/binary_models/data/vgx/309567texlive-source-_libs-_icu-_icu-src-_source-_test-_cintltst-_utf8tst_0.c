@@ -1,0 +1,73 @@
+static void FUN1() {
+
+static const uint8_t VAR1[]={
+0x61,
+0xf0, 0x90, 0x90, 0x81,
+0xc0, 0x80,  
+0xe2, 0x82, 0xac,
+0xc2, 0xa1,
+0xf4, 0x8f, 0xbf, 0xbf,
+0x00
+};
+
+static const int8_t VAR2[]={ 0, 1, 5, 6, 7, 10, 12, 16, 17 };
+
+static const int8_t VAR3[]={ 0, 1, 5, 7, 10, 12, 16, 17 };
+
+int32_t VAR4;
+int32_t VAR5;
+for(VAR5=1, VAR4=0; VAR4<FUN2(VAR1); ++VAR5) {
+FUN3(VAR1, VAR4);
+if(VAR4 != VAR2[VAR5]){
+FUN4("", VAR2[VAR5], VAR4);
+}
+}
+for(VAR5=1, VAR4=0; VAR4<FUN2(VAR1); ++VAR5) {
+FUN5(VAR1, VAR4);
+if(VAR4 != VAR2[VAR5]){
+FUN4("", VAR2[VAR5], VAR4);
+}
+}
+for(VAR5=FUN2(VAR3)-2, VAR4=FUN2(VAR1); VAR4>0; --VAR5) {
+FUN6(VAR1, VAR4);
+if(VAR4 != VAR3[VAR5]){
+FUN4("", VAR3[VAR5], VAR4);
+}
+}
+for(VAR5=FUN2(VAR3)-2, VAR4=FUN2(VAR1); VAR4>0; --VAR5) {
+FUN7(VAR1, VAR4);
+if(VAR4 != VAR3[VAR5]){
+FUN4("", VAR3[VAR5], VAR4);
+}
+}
+for(VAR5=0; VAR5<FUN2(VAR2); ++VAR5) {
+VAR4=0;
+FUN8(VAR1, VAR4, VAR5);
+if(VAR4 != VAR2[VAR5]) {
+FUN4("", VAR2[VAR5], VAR4);
+}
+}
+for(VAR5=0; VAR5<FUN2(VAR2); ++VAR5) {
+VAR4=0;
+FUN9(VAR1, VAR4, VAR5);
+if(VAR4 != VAR2[VAR5]) {
+FUN4("", VAR2[VAR5], VAR4);
+}
+}
+for(VAR5=0; VAR5<FUN2(VAR3); ++VAR5) {
+int32_t VAR6=FUN2(VAR3)-1-VAR5;
+VAR4=FUN2(VAR1);
+FUN10(VAR1, VAR4, VAR5);
+if(VAR4 != VAR3[VAR6]) {
+FUN4("", VAR3[VAR6], VAR4);
+}
+}
+for(VAR5=0; VAR5<FUN2(VAR3); ++VAR5) {
+int32_t VAR6=FUN2(VAR3)-1-VAR5;
+VAR4=FUN2(VAR1);
+FUN11(VAR1, VAR4, VAR5);
+if(VAR4 != VAR3[VAR6]) {
+FUN4("", VAR3[VAR6], VAR4);
+}
+}
+}

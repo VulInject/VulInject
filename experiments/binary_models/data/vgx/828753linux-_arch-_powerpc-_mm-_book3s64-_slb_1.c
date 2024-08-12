@@ -1,0 +1,1 @@
+static void FUN1 ( unsigned long VAR1 ) { int VAR2 ; if ( FUN2 ( ) ) { return ; } VAR2 = VAR3 -> VAR4 ; if ( VAR2 < VAR5 ) { VAR3 -> VAR6 [ VAR2 ++ ] = VAR1 >> VAR7 ; VAR3 -> VAR4 ++ ; } else { VAR3 -> VAR4 = VAR5 + 1 ; } }

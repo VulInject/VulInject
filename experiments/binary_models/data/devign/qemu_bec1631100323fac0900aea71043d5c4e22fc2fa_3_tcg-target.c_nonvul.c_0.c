@@ -1,0 +1,5 @@
+static void FUN1(VAR1 *VAR2, TCGCond VAR3, TCGArg VAR4, TCGArg VAR5, int VAR6, VAR7 *VAR8, int VAR9)
+{
+    FUN2(VAR2, VAR4, VAR5, VAR6, 0);
+    FUN3(VAR2, VAR10[VAR3], VAR8, VAR9);
+}

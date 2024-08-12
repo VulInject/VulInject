@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 , size_t VAR3 ) { int VAR4 ; pfn_t VAR5 ; pgcnt_t VAR6 ; VAR7 = VAR8 ; VAR9 = ( 1ull << VAR10 ) ; VAR6 = 1ull << VAR8 ; for ( VAR4 = 0 ; VAR4 < VAR11 ; VAR4 ++ ) { VAR5 = ( VAR12 ) VAR4 << VAR8 ; FUN2 ( VAR5 , VAR5 + VAR6 - 1 ) ; } }

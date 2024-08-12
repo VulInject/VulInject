@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR1 , struct VAR2 * VAR3 ) { struct VAR4 * VAR5 ; struct bvec_iter_all VAR6 ; FUN2 ( , , ) { int VAR7 ; VAR7 = FUN3 ( VAR5 -> VAR8 , VAR5 -> VAR9 , VAR5 -> VAR10 , VAR3 ) ; if ( ! FUN4 ( VAR3 ) ) { break ; } if ( VAR7 < VAR5 -> VAR10 ) { return - VAR11 ; } } return 0 ; }

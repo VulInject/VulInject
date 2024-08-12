@@ -1,0 +1,20 @@
+struct VAR1 *
+FUN1(int VAR2, int VAR3)
+{
+struct VAR1 *VAR4;
+
+VAR4 = FUN2(sizeof *VAR4);
+
+FUN3(&VAR2, &VAR3);
+FUN4(&VAR4->VAR5,
+VAR2, FUN5(VAR3, 1000));
+
+FUN6(&VAR4->VAR6);
+VAR4->VAR7 = 0;
+VAR4->VAR8 = NULL;
+VAR4->VAR9 = 0;
+VAR4->VAR10 = 0;
+VAR4->VAR11 = 0;
+
+return VAR4;
+}

@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 ; FUN2 ( VAR2 -> VAR5 , VAR6 , VAR2 -> VAR5 -> VAR7 , "" , VAR2 -> VAR8 ) ; while ( VAR2 -> VAR9 != VAR2 -> VAR10 ) { unsigned int VAR11 = 0 , VAR12 = 0 ; VAR4 = & VAR2 -> VAR4 [ VAR2 -> VAR9 & VAR2 -> VAR13 ] ; FUN3 ( VAR2 , VAR4 , & VAR11 , & VAR12 ) ; ++ VAR2 -> VAR9 ; } VAR2 -> VAR14 = false ; FUN4 ( VAR2 -> VAR15 ) ; }

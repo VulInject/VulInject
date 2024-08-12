@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) static void FUN2 ( struct VAR1 * VAR2 ) static int FUN3 ( void * VAR3 , enum amd_powergating_state VAR4 ) static void FUN4 ( struct VAR1 * VAR2 ) static int FUN5 ( void * VAR3 ) { struct VAR1 * VAR2 = ( VAR1 * ) VAR3 ; VAR2 -> VAR5 . VAR6 = 1 ; FUN1 ( VAR2 ) ; FUN2 ( VAR2 , NULL ) ; FUN4 ( VAR2 ) ; return 0 ; }

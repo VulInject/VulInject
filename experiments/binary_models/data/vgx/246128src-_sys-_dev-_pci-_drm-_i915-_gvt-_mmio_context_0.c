@@ -1,0 +1,33 @@
+static void FUN1(const struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = VAR2->VAR5->VAR4;
+struct VAR6 *VAR7 = VAR2->VAR7;
+u32 VAR8 = VAR4->VAR9.VAR10;
+VAR11 *VAR12 = VAR4->VAR9.VAR13;
+i915_reg_t VAR14;
+int VAR15, VAR16;
+
+
+if (!VAR12)
+return;
+
+for (VAR15 = 0; VAR15 < VAR8; VAR15++) {
+if (!FUN2(VAR2->VAR17, VAR15))
+continue;
+
+VAR14.VAR18 = VAR12[VAR15];
+for (VAR16 = 0; VAR16 < VAR19; VAR16++) {
+VAR20.VAR21[VAR15][VAR16] =
+FUN3(VAR7, VAR14);
+VAR14.VAR18 += 4;
+}
+}
+
+VAR14.VAR18 = 0xb020;
+for (VAR16 = 0; VAR16 < VAR19 / 2; VAR16++) {
+VAR20.VAR22[VAR16] =
+FUN3(VAR7, VAR14);
+VAR14.VAR18 += 4;
+}
+VAR20.VAR23 = true;
+}

@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , const char * VAR3 , const char * VAR4 , const char * VAR5 , VAR6 * VAR7 , void * VAR8 , VAR9 * VAR10 ) { assert ( VAR7 ) ; return FUN2 ( VAR7 , "" , "" ) ; }

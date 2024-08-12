@@ -1,0 +1,132 @@
+static int
+FUN1(hx509_context VAR1,
+hx509_certs VAR2, void **VAR3, int VAR4,
+const char *VAR5, hx509_lock VAR6)
+{
+struct VAR7 *VAR8;
+size_t VAR9;
+void *VAR10;
+PKCS12_PFX VAR11;
+PKCS12_AuthenticatedSafe VAR12;
+int VAR13;
+size_t VAR14;
+struct VAR15 *VAR16;
+
+*VAR3 = NULL;
+
+if (VAR5 == NULL || VAR5[0] == '') {
+FUN2(VAR1, 0, VAR17,
+"");
+return VAR17;
+}
+
+if (VAR6 == NULL)
+VAR6 = VAR18;
+
+VAR13 = FUN3(VAR1, VAR6, &VAR16);
+if (VAR13)
+return VAR13;
+
+VAR8 = calloc(1, sizeof(*VAR8));
+if (VAR8 == NULL) {
+VAR13 = VAR19;
+FUN2(VAR1, 0, VAR13, "");
+goto VAR20;
+}
+
+VAR8->VAR21 = strdup(VAR5);
+if (VAR8->VAR21 == NULL) {
+VAR13 = VAR19;
+FUN2(VAR1, 0, VAR13, "");
+goto VAR20;
+}
+
+if (VAR4 & VAR22) {
+VAR13 = FUN4(VAR1, "",
+0, VAR6, &VAR8->VAR2);
+if (VAR13 == 0)
+*VAR3 = VAR8;
+goto VAR20;
+}
+
+VAR13 = FUN5(VAR5, &VAR10, &VAR9);
+if (VAR13) {
+FUN6(VAR1);
+goto VAR20;
+}
+
+VAR13 = FUN7(VAR10, VAR9, &VAR11, NULL);
+FUN8(VAR10);
+if (VAR13) {
+FUN2(VAR1, 0, VAR13,
+"", VAR5);
+goto VAR20;
+}
+
+if (FUN9(&VAR11.VAR23.VAR24, &VAR25) != 0) {
+FUN10(&VAR11);
+VAR13 = VAR17;
+FUN2(VAR1, 0, VAR13,
+"");
+goto VAR20;
+}
+
+if (VAR11.VAR23.VAR26 == NULL) {
+FUN10(&VAR11);
+VAR13 = VAR17;
+FUN2(VAR1, 0, VAR13,
+"");
+goto VAR20;
+}
+
+{
+heim_octet_string VAR27;
+
+VAR13 = FUN11(VAR11.VAR23.VAR26->VAR3,
+VAR11.VAR23.VAR26->VAR28,
+&VAR27,
+NULL);
+FUN10(&VAR11);
+if (VAR13) {
+FUN6(VAR1);
+goto VAR20;
+}
+VAR13 = FUN12(VAR27.VAR3,
+VAR27.VAR28,
+&VAR12,
+NULL);
+FUN13(&VAR27);
+if (VAR13) {
+FUN6(VAR1);
+goto VAR20;
+}
+}
+
+for (VAR14 = 0; VAR14 < VAR12.VAR9; VAR14++)
+FUN14(VAR1,
+VAR16,
+VAR4,
+&VAR12.VAR29[VAR14].VAR24,
+VAR12.VAR29[VAR14].VAR26->VAR3,
+VAR12.VAR29[VAR14].VAR26->VAR28,
+NULL);
+
+FUN15(&VAR12);
+
+VAR13 = FUN16(VAR1, VAR16, &VAR8->VAR2);
+if (VAR13 == 0)
+*VAR3 = VAR8;
+
+VAR20:
+FUN17(VAR16);
+
+if (VAR13 && VAR8) {
+if (VAR8->VAR21)
+free(VAR8->VAR21);
+if (VAR8->VAR2)
+FUN18(&VAR8->VAR2);
+free(VAR8);
+}
+
+return VAR13;
+}

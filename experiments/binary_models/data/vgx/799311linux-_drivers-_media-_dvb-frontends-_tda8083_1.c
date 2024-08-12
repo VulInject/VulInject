@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , enum fe_spectral_inversion VAR3 ) { return - VAR4 ; }

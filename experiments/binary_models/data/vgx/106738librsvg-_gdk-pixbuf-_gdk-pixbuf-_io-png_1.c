@@ -1,0 +1,1 @@
+static void FUN1 ( png_structp VAR1 , png_const_charp VAR2 ) { VAR3 * * VAR4 ; VAR4 = FUN2 ( VAR1 , NULL ) ; if ( VAR4 && * VAR4 == NULL ) { FUN3 ( VAR4 , VAR5 , VAR6 , FUN4 ( "" ) , VAR2 ) ; } FUN5 ( FUN6 ( VAR1 ) , 1 ) ; }

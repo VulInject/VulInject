@@ -1,0 +1,17 @@
+static VAR1 FUN1(struct VAR2 *VAR3,
+struct VAR4 *VAR5,
+const char *VAR6, size_t VAR7)
+{
+int VAR8;
+struct VAR9 *VAR10;
+struct VAR11 *VAR12 = FUN2(VAR3);
+
+FUN3(&VAR13);
+FUN4(VAR14, VAR8, VAR10, VAR15)
+if (VAR12 == VAR10->VAR16)
+VAR10->VAR17 = 0;
+FUN5(&VAR13);
+FUN6(&VAR12->VAR17, 0);
+
+return VAR7;
+}

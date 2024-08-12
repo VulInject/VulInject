@@ -1,0 +1,64 @@
+int FUN1(struct VAR1 *VAR1)
+{
+struct VAR2 *VAR3 =
+(struct VAR2 *)VAR1->VAR3;
+struct VAR4 *VAR4 = &VAR1->VAR4;
+
+VAR5 **VAR6 = VAR3->VAR7->VAR6;
+if (VAR6) {
+
+VAR3->VAR8 = VAR3->VAR8->VAR9;
+FUN2(VAR6, VAR3->VAR7->VAR10);
+VAR3->VAR11 -= VAR3->VAR7->VAR10;
+VAR4->VAR12 -= VAR3->VAR7->VAR12;
+}
+VAR6 = FUN3((VAR13)VAR4->VAR14, sizeof(VAR5 *));
+VAR3->VAR7->VAR6 = VAR6;
+
+VAR15 *VAR16 = (VAR15 *)VAR1->VAR16;
+char *VAR17 = (char *)FUN4(VAR16);
+char *VAR18 = VAR17;
+
+size_t VAR10 = 0;
+
+while (*VAR18 && VAR10 <= (VAR13)VAR4->VAR14) {
+while (*VAR18 && *VAR18 != '')
+VAR18++;
+
+if (FUN5(*VAR18)) {
+*VAR18 = '';
+VAR18++;
+} else {
+break;
+}
+
+bson_error_t VAR19;
+VAR6[VAR10] = FUN6((const VAR20 *)VAR17, -1, &VAR19);
+
+if (FUN7(!VAR6[VAR10])) {
+FUN8(
+""%VAR21\"", VAR17, VAR19.VAR22);
+FUN2(VAR6, VAR10);
+return 1;
+}
+
+VAR17 = VAR18;
+
+VAR10++;
+}
+
+VAR4->VAR12 += VAR3->VAR7->VAR12 = FUN9(VAR16);
+
+FUN10(VAR16);
+
+
+
+
+VAR4->VAR14 = 0;
+VAR3->VAR11 += VAR10;
+
+VAR3->VAR7->VAR10 = VAR10;
+VAR3->VAR7 = VAR3->VAR7->VAR9;
+
+return 0;
+}

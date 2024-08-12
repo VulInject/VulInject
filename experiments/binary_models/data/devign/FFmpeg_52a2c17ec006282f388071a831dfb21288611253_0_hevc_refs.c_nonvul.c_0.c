@@ -1,0 +1,8 @@
+VAR1 *FUN1(VAR2 *VAR3, VAR4 *VAR5, int VAR6, int VAR7)
+{
+    int VAR8 = VAR6 >> VAR3->VAR9->VAR10;
+    int VAR11 = VAR7 >> VAR3->VAR9->VAR10;
+    int VAR12 = (VAR3->VAR9->VAR13 + (1 << VAR3->VAR9->VAR10) - 1) >> VAR3->VAR9->VAR10;
+    int VAR14 = VAR3->VAR15->VAR16[VAR11 * VAR12 + VAR8];
+    return (VAR1 *)VAR5->VAR17[VAR14];
+}

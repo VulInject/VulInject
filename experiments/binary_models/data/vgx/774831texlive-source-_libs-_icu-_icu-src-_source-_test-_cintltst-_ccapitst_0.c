@@ -1,0 +1,71 @@
+static void FUN1(VAR1 *VAR2, VAR1 *VAR3, const char *VAR4,
+char VAR5[4], int32_t VAR6,
+char VAR7[8], int32_t VAR8,
+char VAR9[8], int32_t VAR10) {
+
+(void)VAR7;
+(void)VAR8;
+(void)VAR9;
+(void)VAR10;
+
+char VAR11[16];
+int32_t VAR12;
+
+char VAR13[16];
+int32_t VAR14;
+
+char VAR15[8];
+int8_t VAR16;
+
+const char *VAR17;
+char *VAR18;
+
+UChar VAR19[8];
+VAR20 *VAR21, *VAR22;
+
+UErrorCode VAR23;
+int32_t VAR24;
+
+
+VAR23=VAR25;
+FUN2(VAR2, VAR26, NULL, NULL, NULL, &VAR23);
+
+memcpy(VAR11, VAR5, VAR6);
+
+for(VAR24=0; VAR24<FUN3(VAR27); ++VAR24) {
+
+int32_t VAR28 = (VAR29)strlen(VAR27[VAR24]);
+if(!FUN4(VAR27[VAR24], VAR28)) {
+continue;
+}
+
+
+memcpy(VAR11+VAR6, VAR27[VAR24], VAR28);
+VAR12=VAR6+VAR28;
+
+
+VAR17=VAR11;
+VAR18=VAR13;
+VAR21=VAR22=VAR19;
+VAR23=VAR25;
+FUN5(VAR3, VAR2,
+&VAR18, VAR13+sizeof(VAR13),
+&VAR17, VAR11+VAR12,
+VAR19, &VAR21, &VAR22, VAR19+FUN3(VAR19),
+true, true, 
+&VAR23);
+VAR14=(VAR29)(VAR18-VAR13);
+(void)VAR14;   
+if(VAR23!=VAR30 || VAR21!=VAR19) {
+FUN6("", FUN7(VAR23), VAR4, (long)VAR24);
+continue;
+}
+
+VAR23=VAR25;
+VAR16=(VAR31)sizeof(VAR15);
+FUN8(VAR2, VAR15, &VAR16, &VAR23);
+if(VAR16!=VAR28 || 0!=memcmp(VAR15, VAR27[VAR24], VAR28)) {
+FUN6("", VAR4, (long)VAR24);
+}
+}
+}

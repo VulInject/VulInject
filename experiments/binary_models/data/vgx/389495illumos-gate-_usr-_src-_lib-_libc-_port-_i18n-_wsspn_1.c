@@ -1,0 +1,1 @@
+size_t FUN1 ( const wchar_t * VAR1 , const wchar_t * VAR2 ) { const wchar_t * VAR3 , * VAR4 ; for ( VAR4 = VAR1 ; * VAR4 ; ++ VAR4 ) { for ( VAR3 = VAR2 ; * VAR3 && * VAR3 != * VAR4 ; ++ VAR3 ) { } } return ( VAR4 - VAR1 ) ; }

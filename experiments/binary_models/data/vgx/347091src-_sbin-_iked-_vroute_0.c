@@ -1,0 +1,54 @@
+int
+FUN1(struct VAR1 *VAR2, uint32_t VAR3, struct VAR4 *VAR5,
+uint8_t VAR6, struct VAR4 *VAR7, int VAR8)
+{
+struct sockaddr_storage	 VAR9;
+struct VAR10	*VAR11;
+struct VAR12	*VAR13;
+struct iovec		 VAR14[5];
+int			 VAR15 = 0;
+uint8_t			 VAR16;
+
+if (VAR7 && VAR5->VAR17 != VAR7->VAR17)
+return (-1);
+VAR16 = VAR5->VAR17;
+
+VAR14[VAR15].VAR18 = &VAR3;
+VAR14[VAR15].VAR19 = sizeof(VAR3);
+VAR15++;
+
+VAR14[VAR15].VAR18 = VAR5;
+VAR14[VAR15].VAR19 = VAR5->VAR20;
+VAR15++;
+
+if (VAR8 != VAR21 && VAR7) {
+FUN2(&VAR9, sizeof(VAR9));
+switch(VAR16) {
+case VAR22:
+VAR11 = (struct VAR10 *)&VAR9;
+VAR11->VAR23.VAR24 = FUN3(VAR6);
+VAR11->VAR25 = VAR16;
+VAR11->VAR26 = sizeof(*VAR11);
+VAR14[VAR15].VAR18 = VAR11;
+VAR14[VAR15].VAR19 = sizeof(*VAR11);
+VAR15++;
+break;
+case VAR27:
+VAR13 = (struct VAR12 *)&VAR9;
+FUN4(VAR6,
+(VAR28 *)VAR13->VAR29.VAR30);
+VAR13->VAR31 = VAR16;
+VAR13->VAR32 = sizeof(*VAR13);
+VAR14[VAR15].VAR18 = VAR13;
+VAR14[VAR15].VAR19 = sizeof(*VAR13);
+VAR15++;
+break;
+}
+
+VAR14[VAR15].VAR18 = VAR7;
+VAR14[VAR15].VAR19 = VAR7->VAR20;
+VAR15++;
+}
+
+return (FUN5(&VAR2->VAR33, VAR34, VAR8, VAR14, VAR15));
+}

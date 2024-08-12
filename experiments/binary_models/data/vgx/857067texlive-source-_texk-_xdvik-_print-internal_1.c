@@ -1,0 +1,1 @@
+static void FUN1 ( Widget VAR1 , XtPointer VAR2 , XtPointer VAR3 ) { struct VAR4 * VAR5 = ( VAR4 * ) VAR2 ; FUN2 ( VAR1 ) ; FUN2 ( VAR3 , NULL ) ; if ( VAR6 == VAR7 ) { FUN3 ( VAR8 . VAR9 , VAR10 ) ; VAR10 = VAR11 ; FUN4 ( VAR5 , "" ) ; } if ( VAR6 == VAR12 ) { VAR6 = VAR13 ; FUN5 ( & VAR14 ) ; } FUN6 ( VAR5 ) ; FUN7 ( VAR5 , VAR15 ) ; }

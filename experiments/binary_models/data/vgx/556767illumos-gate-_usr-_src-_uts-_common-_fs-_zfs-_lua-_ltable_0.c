@@ -1,0 +1,18 @@
+int FUN1 (VAR1 *VAR2, VAR3 *VAR4, StkId VAR5) {
+int VAR6 = FUN2(VAR2, VAR4, VAR5);  
+for (VAR6++; VAR6 < VAR4->VAR7; VAR6++) {  
+if (!FUN3(&VAR4->VAR8[VAR6])) {  
+FUN4(VAR5, FUN5(VAR6+1));
+FUN6(VAR2, VAR5+1, &VAR4->VAR8[VAR6]);
+return 1;
+}
+}
+for (VAR6 -= VAR4->VAR7; VAR6 < FUN7(VAR4); VAR6++) {  
+if (!FUN3(FUN8(FUN9(VAR4, VAR6)))) {  
+FUN6(VAR2, VAR5, FUN10(FUN9(VAR4, VAR6)));
+FUN6(VAR2, VAR5+1, FUN8(FUN9(VAR4, VAR6)));
+return 1;
+}
+}
+return 0;  
+}

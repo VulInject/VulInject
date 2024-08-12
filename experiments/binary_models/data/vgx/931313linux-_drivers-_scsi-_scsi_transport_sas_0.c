@@ -1,0 +1,18 @@
+}
+FUN1(VAR1);
+
+
+void FUN2(struct VAR2 *VAR3)
+{
+struct VAR4 *VAR5 = &VAR3->VAR5;
+struct VAR6 *VAR7 = FUN3(VAR3->VAR5.VAR8->VAR8);
+struct VAR9 *VAR10 = FUN4(VAR7);
+
+FUN5(&VAR10->VAR11);
+FUN6(&VAR3->VAR12);
+FUN7(&VAR10->VAR11);
+
+FUN8(VAR5);
+
+FUN9(VAR5);
+}

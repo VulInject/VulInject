@@ -1,0 +1,1 @@
+static uint8_t FUN1 ( uint32_t VAR1 ) { int VAR2 = 0 ; switch ( VAR1 ) { case 1 : VAR2 = VAR3 ; break ; case 2 : VAR2 = VAR4 ; break ; case 4 : VAR2 = VAR5 ; break ; } return ( VAR2 ) ; }

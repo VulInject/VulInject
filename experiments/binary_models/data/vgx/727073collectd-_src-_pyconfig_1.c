@@ -1,0 +1,1 @@
+static char VAR1 [ ] "" "" "" "" ; ; static VAR2 * FUN1 ( VAR3 * VAR4 , VAR2 * VAR5 , VAR2 * VAR6 ) { VAR7 * VAR8 ; VAR8 = ( VAR7 * ) VAR4 -> FUN2 ( VAR4 , 0 ) ; if ( VAR8 == NULL ) { return NULL ; } VAR8 -> VAR9 = NULL ; VAR8 -> VAR10 = NULL ; VAR8 -> VAR11 = NULL ; return ( VAR2 * ) VAR8 ; }

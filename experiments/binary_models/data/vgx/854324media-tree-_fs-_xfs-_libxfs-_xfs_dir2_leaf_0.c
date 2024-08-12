@@ -1,0 +1,41 @@
+static void
+FUN1(
+struct VAR1	*VAR2,
+struct VAR3	*VAR4,
+struct VAR5		*VAR6,
+xfs_ino_t		VAR7,
+__uint16_t		VAR8)
+{
+struct VAR9	*VAR10 = VAR6->VAR11;
+
+FUN2(VAR8 == VAR12 || VAR8 == VAR13);
+
+if (FUN3(&VAR2->VAR14)) {
+struct VAR15 *VAR16 = VAR6->VAR11;
+
+memset(VAR16, 0, sizeof(*VAR16));
+
+VAR16->VAR17.VAR18.VAR19 = (VAR8 == VAR12)
+? FUN4(VAR20)
+: FUN4(VAR21);
+VAR16->VAR17.VAR22 = FUN5(VAR6->VAR23);
+VAR16->VAR17.VAR7 = FUN5(VAR7);
+FUN6(&VAR16->VAR17.VAR24, &VAR2->VAR14.VAR25);
+} else {
+memset(VAR10, 0, sizeof(*VAR10));
+VAR10->VAR18.VAR17.VAR19 = FUN4(VAR8);
+}
+
+
+if (VAR8 == VAR12) {
+struct VAR26 *VAR27;
+
+VAR27 = FUN7(VAR2->VAR28, VAR10);
+VAR27->VAR29 = 0;
+VAR6->VAR30 = &VAR31;
+FUN8(VAR4, VAR6, VAR32);
+} else {
+VAR6->VAR30 = &VAR33;
+FUN8(VAR4, VAR6, VAR34);
+}
+}

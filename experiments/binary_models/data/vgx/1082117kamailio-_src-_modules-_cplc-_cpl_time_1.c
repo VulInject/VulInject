@@ -1,0 +1,1 @@
+cpl_tmrec_p FUN1 ( void ) { cpl_tmrec_p VAR1 = NULL ; VAR1 = ( VAR2 ) FUN2 ( sizeof ( VAR3 ) ) ; if ( ! VAR1 ) { return NULL ; } FUN3 ( & VAR1 -> VAR4 , & ( VAR1 -> VAR5 ) ) ; return VAR1 ; }

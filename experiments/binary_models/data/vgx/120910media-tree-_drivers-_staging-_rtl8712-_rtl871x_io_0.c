@@ -1,0 +1,29 @@
+static VAR1 FUN1(struct VAR2 *VAR3,
+struct VAR4 *VAR5)
+{
+struct	VAR6	*VAR7;
+void (*VAR8)(VAR9 *VAR10) = NULL;
+void (*VAR11)(struct VAR4 *VAR5);
+void (*VAR12)(struct VAR13	*VAR14);
+FUN2 (*VAR15)(struct VAR6 *VAR16);
+
+VAR8 = &(VAR17);
+VAR11 = &(VAR18);
+VAR12 = &VAR19;
+VAR15 = &VAR20;
+VAR7 = VAR5->VAR16 = FUN3(sizeof(struct VAR6),
+VAR21);
+if (VAR7 == NULL)
+goto VAR22;
+VAR5->VAR23 = (VAR24 *)VAR3;
+FUN4(&VAR5->VAR25);
+FUN5(VAR5);
+FUN6(&VAR5->VAR26);
+VAR7->VAR27 = (VAR24 *)&(VAR3->VAR28);
+if (FUN7(VAR7) == VAR29)
+goto VAR22;
+return VAR30;
+VAR22:
+FUN8(VAR7);
+return VAR29;
+}

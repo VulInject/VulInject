@@ -1,0 +1,25 @@
+int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2);
+struct VAR5 *VAR6 = FUN3(VAR2->VAR7);
+union pvrdma_cmd_req VAR8;
+struct VAR9 *VAR10 = &VAR8.VAR11;
+int VAR12;
+
+memset(VAR10, 0, sizeof(*VAR10));
+VAR10->VAR13.VAR10 = VAR14;
+VAR10->VAR15 = VAR4->VAR16.VAR15;
+VAR12 = FUN4(VAR6, &VAR8, NULL, 0);
+if (VAR12 < 0)
+FUN5(&VAR6->VAR17->VAR6,
+"", VAR12);
+
+FUN6(VAR6, &VAR4->VAR18);
+if (VAR4->VAR19)
+FUN7(VAR4->VAR19);
+
+FUN8(VAR4->VAR20);
+FUN8(VAR4);
+
+return 0;
+}

@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 , int VAR3 , const char * VAR4 ) { FUN2 ( & VAR5 ) ; FUN3 ( VAR6 ) ; FUN4 ( VAR7 ) ; FUN5 ( VAR8 ) ; FUN6 ( VAR9 ) ; FUN7 ( VAR10 ) ; FUN8 ( VAR11 ) ; FUN9 ( VAR12 ) ; FUN10 ( VAR13 ) ; FUN11 ( VAR14 , NULL ) ; return ( 1 ) ; }

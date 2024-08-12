@@ -1,0 +1,21 @@
+static void FUN1(VAR1 *VAR2, uint32_t VAR3)
+{
+unsigned VAR4 = FUN2(VAR2, VAR5, VAR6);
+unsigned VAR7 = FUN2(VAR2, VAR5, VAR8);
+
+if (VAR3 & VAR9) {
+if (VAR4 == VAR10) {
+FUN3(&VAR2->VAR11, VAR7,
+FUN2(VAR2, VAR12, VAR13));
+}
+}
+if (VAR3 & VAR14) {
+if (VAR4 == VAR10) {
+FUN4(VAR2, VAR15, VAR16,
+FUN5(&VAR2->VAR11, VAR7));
+} else {
+VAR2->VAR17[VAR15] = 0xffff;
+}
+FUN4(VAR2, VAR18, VAR19, FUN6(VAR2->VAR20)->VAR21);
+}
+}

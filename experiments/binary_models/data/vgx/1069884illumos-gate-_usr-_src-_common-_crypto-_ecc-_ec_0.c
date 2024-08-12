@@ -1,0 +1,41 @@
+static unsigned char *
+FUN1(const unsigned char *VAR1, int VAR2, int VAR3)
+{
+SECStatus VAR4 = VAR5;
+mp_err VAR6;
+unsigned char *VAR7 = NULL;
+mp_int VAR8, VAR9, VAR10;
+
+FUN2(&VAR8) = 0;
+FUN2(&VAR9) = 0;
+FUN2(&VAR10) = 0;
+FUN3( FUN4(&VAR8, VAR3) );
+FUN3( FUN4(&VAR9, VAR3) );
+FUN3( FUN4(&VAR10, VAR3) );
+
+
+if ((VAR7 = FUN5(2*VAR2, VAR3)) == NULL) goto VAR11;
+FUN6( FUN7(VAR7, 2*VAR2) );
+FUN3( FUN8(&VAR8, VAR7, 2*VAR2) );
+FUN3( FUN8(&VAR9, VAR1, VAR2) );
+FUN3( FUN9(&VAR10, 1) );
+FUN3( FUN10(&VAR9, &VAR10, &VAR9) );
+FUN3( FUN11(&VAR8, &VAR9, &VAR8) );
+FUN3( FUN12(&VAR8, &VAR10, &VAR8) );
+FUN3( FUN13(&VAR8, VAR7, VAR2) );
+memset(VAR7+VAR2, 0, VAR2);
+VAR11:
+FUN14(&VAR8);
+FUN14(&VAR9);
+FUN14(&VAR10);
+if (VAR6 < VAR12) {
+FUN15(VAR6);
+VAR4 = VAR13;
+}
+if (VAR4 != VAR5 && VAR7) {
+FUN16(VAR7, 2*VAR2);
+free(VAR7);
+VAR7 = NULL;
+}
+return VAR7;
+}

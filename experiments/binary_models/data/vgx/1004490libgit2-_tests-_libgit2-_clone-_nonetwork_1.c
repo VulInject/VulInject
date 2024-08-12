@@ -1,0 +1,1 @@
+void FUN1 ( void ) { git_checkout_options VAR1 = VAR2 ; git_fetch_options VAR3 = VAR4 ; VAR5 = NULL ; VAR6 . VAR7 = VAR8 ; VAR6 . VAR9 = VAR1 ; VAR6 . VAR9 . VAR10 = VAR11 ; VAR6 . VAR12 = VAR3 ; }

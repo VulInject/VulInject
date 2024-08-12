@@ -1,0 +1,116 @@
+static VAR1 FUN1(struct VAR2 *VAR3,
+void *VAR4)
+{
+struct VAR5 *VAR6 = VAR4;
+struct VAR7 *VAR8 = VAR6->VAR8;
+struct VAR9 *VAR10;
+acpi_handle VAR11, VAR12;
+struct VAR13 *VAR14;
+irq_handler_t VAR15 = NULL;
+struct VAR16 *VAR17;
+unsigned long VAR18;
+int VAR19, VAR20, VAR21;
+
+if (VAR3->VAR22 != VAR23)
+return VAR24;
+
+VAR10 = &VAR3->VAR25.VAR26;
+if (VAR10->VAR27 != VAR28)
+return VAR24;
+
+VAR11 = FUN2(VAR8->VAR29);
+VAR20 = VAR10->VAR30[0];
+
+if (VAR20 <= 255) {
+char VAR31[5];
+sprintf(VAR31, "",
+VAR10->VAR32 == VAR33 ? '' : '',
+VAR20);
+if (FUN3(FUN4(VAR11, VAR31, &VAR12)))
+VAR15 = VAR34;
+}
+if (!VAR15) {
+if (FUN3(FUN4(VAR11, "", &VAR12)))
+VAR15 = VAR35;
+}
+if (!VAR15)
+return VAR36;
+
+VAR20 = FUN5(VAR8->VAR37, VAR20);
+if (VAR20 < 0)
+return VAR36;
+
+VAR17 = FUN6(VAR8, VAR20, "");
+if (FUN7(VAR17)) {
+FUN8(VAR8->VAR29, "");
+return VAR38;
+}
+
+FUN9(VAR17);
+
+VAR19 = FUN10(VAR8, VAR20);
+if (VAR19) {
+FUN8(VAR8->VAR29, "");
+goto VAR39;
+}
+
+VAR21 = FUN11(VAR17);
+if (VAR21 < 0) {
+FUN8(VAR8->VAR29, "");
+goto VAR40;
+}
+
+VAR18 = VAR41;
+if (VAR10->VAR32 == VAR42) {
+if (VAR10->VAR43 == VAR44)
+VAR18 |= VAR45;
+else
+VAR18 |= VAR46;
+} else {
+switch (VAR10->VAR43) {
+case VAR44:
+VAR18 |= VAR47;
+break;
+case VAR48:
+VAR18 |= VAR49;
+break;
+default:
+VAR18 |= VAR47 |
+VAR49;
+break;
+}
+}
+
+VAR14 = FUN12(sizeof(*VAR14), VAR50);
+if (!VAR14)
+goto VAR40;
+
+VAR14->VAR11 = VAR12;
+VAR14->VAR21 = VAR21;
+VAR14->VAR20 = VAR20;
+VAR14->VAR17 = VAR17;
+
+VAR19 = FUN13(VAR14->VAR21, NULL, VAR15, VAR18,
+"", VAR14);
+if (VAR19) {
+FUN8(VAR8->VAR29,
+"",
+VAR14->VAR21);
+goto VAR51;
+}
+
+if (VAR10->VAR52 == VAR53)
+FUN14(VAR21);
+
+FUN15(&VAR14->VAR54, &VAR6->VAR55);
+return VAR24;
+
+VAR51:
+FUN16(VAR14);
+VAR40:
+FUN17(VAR8, VAR20);
+VAR39:
+FUN18(VAR17);
+
+return VAR38;
+}

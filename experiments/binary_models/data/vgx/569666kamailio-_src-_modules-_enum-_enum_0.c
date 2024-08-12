@@ -1,0 +1,155 @@
+int FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR3 *VAR5)
+{
+char *VAR6;
+int VAR7, VAR8, VAR9;
+char VAR10[VAR11];
+char VAR12[VAR13 + 1];
+char VAR14[VAR13 + 1];
+int VAR15 = 0; 
+int VAR16;
+struct VAR17 *VAR18;
+
+char VAR19[VAR20];
+
+if(FUN2(VAR2) < 0) {
+FUN3("");
+return -1;
+}
+
+if(FUN4(&(VAR2->VAR21.VAR22)) == -1) {
+FUN3("");
+return -1;
+}
+
+VAR6 = VAR2->VAR21.VAR22.VAR23;
+VAR7 = VAR2->VAR21.VAR22.VAR24;
+
+
+if((2 * VAR7 + VAR13 + VAR13 + 4)
+> VAR11) {
+FUN3("");
+return -1;
+}
+if(VAR25.VAR24 > VAR13) {
+FUN3("");
+return -1;
+}
+if(VAR4->VAR24 > VAR13) {
+FUN3("");
+return -1;
+}
+
+
+memcpy(&(VAR19[0]), VAR6, VAR7);
+VAR19[VAR7] = (char)0;
+
+
+memcpy(VAR12, VAR4->VAR23, VAR4->VAR24);
+VAR12[VAR4->VAR24] = (char)0;
+VAR15 = 0;		  
+VAR14[0] = 0; 
+
+VAR16 = FUN5(VAR19 + 1);
+
+if(!FUN6(VAR26.VAR23, "", VAR26.VAR24)) {
+VAR15 = VAR16; 
+
+VAR9 = 0;
+memcpy(VAR10, VAR25.VAR23, VAR25.VAR24);
+VAR9 += VAR25.VAR24;
+VAR10[VAR9++] = '';
+
+for(VAR8 = VAR16; VAR8 > 0; VAR8--) {
+VAR10[VAR9++] = VAR6[VAR8];
+VAR10[VAR9++] = '';
+}
+memcpy(VAR10 + VAR9, VAR4->VAR23, VAR4->VAR24 + 1);
+
+FUN7("", VAR10);
+VAR18 = FUN8(VAR10, VAR27, VAR28);
+if(VAR18 == 0) {
+FUN7("", VAR10);
+} else {
+struct VAR29 *VAR30;
+VAR30 = (struct VAR29 *)VAR18->VAR17;
+
+FUN7("", VAR10,
+VAR30->VAR31, (int)VAR30->VAR32, VAR30->VAR14,
+(int)VAR30->VAR33, VAR30->VAR12);
+
+if((VAR30->VAR33 > VAR13)
+|| (VAR30->VAR32 > VAR13)) {
+FUN3("");
+FUN9(VAR18);
+return -1;
+}
+
+if(VAR30->VAR31 > 15) {
+FUN3("", VAR30->VAR31);
+FUN9(VAR18);
+return -1;
+}
+
+VAR15 = VAR30->VAR31;
+
+memcpy(VAR14, VAR30->VAR14, VAR30->VAR32);
+VAR14[VAR30->VAR32] = 0;
+
+memcpy(VAR12, VAR30->VAR12, VAR30->VAR33);
+VAR12[VAR30->VAR33] = 0;
+FUN9(VAR18);
+}
+} else if(!FUN6(VAR26.VAR23, "", VAR26.VAR24)) {
+VAR15 = VAR16; 
+memcpy(VAR14, VAR25.VAR23, VAR25.VAR24);
+VAR14[VAR25.VAR24] = 0;
+
+
+VAR9 = 0;
+memcpy(VAR10, VAR25.VAR23, VAR25.VAR24);
+VAR9 += VAR25.VAR24;
+VAR10[VAR9++] = '';
+
+for(VAR8 = VAR16; VAR8 > 0; VAR8--) {
+VAR10[VAR9++] = VAR6[VAR8];
+VAR10[VAR9++] = '';
+}
+memcpy(VAR10 + VAR9, VAR4->VAR23, VAR4->VAR24 + 1);
+
+VAR18 = FUN8(VAR10, VAR34, VAR28);
+if(VAR18 == 0) {
+FUN7("", VAR10, VAR16);
+} else {
+VAR15 = FUN10(((struct VAR35 *)VAR18->VAR17)->VAR36[0].VAR37);
+FUN7("", VAR10, VAR15);
+
+if((VAR15 < 0) || (VAR15 > 10)) {
+FUN3("", VAR15);
+VAR15 = VAR16;
+}
+FUN9(VAR18);
+}
+} else { 
+VAR15 = VAR16;
+memcpy(VAR14, VAR25.VAR23, VAR25.VAR24);
+VAR14[VAR25.VAR24] = 0;
+
+}
+
+VAR9 = 0;
+VAR15++; 
+for(VAR8 = VAR7 - 1; VAR8 > 0; VAR8--) {
+VAR10[VAR9] = VAR6[VAR8];
+VAR10[VAR9 + 1] = '';
+VAR9 = VAR9 + 2;
+if(VAR14[0] && (VAR8 == VAR15)) { 
+strcpy(VAR10 + VAR9, VAR14); 
+VAR9 += strlen(VAR14);
+VAR10[VAR9++] = '';
+}
+}
+
+memcpy(VAR10 + VAR9, VAR12, strlen(VAR12) + 1);
+
+return FUN11(VAR2, VAR19, VAR10, VAR5);
+}

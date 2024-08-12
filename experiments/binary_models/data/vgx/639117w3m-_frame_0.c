@@ -1,0 +1,20 @@
+struct VAR1 *
+FUN1(struct VAR2 *VAR3, VAR4 *VAR5)
+{
+struct VAR1 *VAR6;
+char *VAR7;
+
+VAR6 = FUN2(struct VAR1);
+FUN3((void *)VAR6, sizeof(*VAR6));
+VAR6->VAR8 = VAR9;
+VAR6->VAR10 = 0;
+VAR6->VAR11 = FUN4(VAR5);
+if (VAR3) {
+if (FUN5(VAR3, VAR12, &VAR7))
+VAR6->VAR13 = FUN6(FUN7(VAR7), VAR6->VAR11,
+VAR5->VAR14);
+if (FUN5(VAR3, VAR15, &VAR7) && *VAR7 != '')
+VAR6->VAR16 = FUN8(VAR7, VAR5->VAR14);
+}
+return VAR6;
+}

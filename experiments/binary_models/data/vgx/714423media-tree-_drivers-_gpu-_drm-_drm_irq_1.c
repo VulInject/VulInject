@@ -1,0 +1,1 @@
+static u32 FUN1 ( struct VAR1 * VAR2 , unsigned int VAR3 ) { struct VAR4 * VAR5 = & VAR2 -> VAR5 [ VAR3 ] ; return VAR5 -> VAR6 ; }

@@ -1,0 +1,121 @@
+static VAR1 FUN1(VAR2 *VAR3, VAR4 *VAR5, VAR4 *VAR6,
+l_uint32 VAR7);
+
+
+
+
+static const l_float32   VAR8 = 0.45;
+static const l_int32     VAR9 = 10; 
+static const l_int32     VAR10 = 3;  
+static const l_float32   VAR11 = 0.05;  
+
+
+
+
+VAR12
+FUN2(VAR13    *VAR14,
+const char  *VAR15)
+{
+l_int32  VAR16, VAR17, VAR18, VAR19, VAR20, VAR21;
+VAR2     *VAR3, *VAR22, *VAR23, *VAR24;
+VAR4     *VAR25;
+VAR26    *VAR27, *VAR28;
+
+if (!VAR14)
+return FUN3("", VAR29, 1);
+
+VAR14->VAR30 = (VAR15) ? 1 : 0;
+VAR14->VAR31 = VAR14->VAR32 = 0;
+VAR3 = VAR14->VAR3;
+if (VAR15) {
+FUN4("");  
+FUN5("");
+FUN6(VAR3, 0, 0, "", 1);
+FUN7("", VAR3, VAR33);
+}
+
+
+VAR27 = FUN8(VAR3, VAR15 || VAR34);
+if (!VAR27) {
+FUN9("", VAR29);
+return 1;
+}
+if (VAR15) {
+VAR22 = FUN10(VAR3);
+VAR25 = FUN11(1);
+VAR23 = FUN12(VAR25, 5, 5);
+VAR24 = FUN13(NULL, VAR22, VAR27, VAR23, 2, 2);
+FUN7("", VAR24, VAR33);
+FUN14(&VAR22);
+FUN14(&VAR23);
+FUN14(&VAR24);
+FUN15(&VAR25);
+}
+
+
+VAR28 = FUN16(VAR3, VAR27, 0.8,
+VAR15 || VAR35);
+if (VAR15) {
+VAR22 = FUN10(VAR3);
+VAR25 = FUN11(1);
+VAR23 = FUN12(VAR25, 5, 5);
+VAR24 = FUN13(NULL, VAR22, VAR28, VAR23, 2, 2);
+FUN7("", VAR24, VAR33);
+FUN14(&VAR22);
+FUN14(&VAR23);
+FUN14(&VAR24);
+FUN15(&VAR25);
+}
+FUN17(&VAR27);
+
+
+VAR16 = FUN18(VAR28);
+if (VAR16 < VAR14->VAR36) {
+FUN17(&VAR28);
+FUN9("",
+VAR29, VAR16, VAR14->VAR36);
+return 1;
+}
+
+
+if (FUN19(VAR28, FUN20(VAR3),
+&VAR17, &VAR18, &VAR19, &VAR20) == VAR37) {
+FUN17(&VAR28);
+FUN9(""
+"", VAR29,
+VAR17, VAR18, VAR19, VAR20, FUN20(VAR3));
+return 1;
+}
+
+
+if (FUN21(VAR14, VAR28, 0) != 0) {
+FUN9("", VAR29);
+FUN17(&VAR28);
+return 1;
+}
+
+
+if ((VAR21 = FUN22(VAR14, VAR28)) == 0)
+FUN23("", VAR29);
+
+
+if (VAR15) {
+FUN24(VAR14, NULL, 0, 0);
+VAR22 = FUN25(VAR14->VAR38, 3.0, 0.15);
+FUN7("", VAR22, VAR33);
+FUN26(VAR22, 1000, 0);
+FUN14(&VAR22);
+if (VAR21 == 0) {
+VAR22 = FUN25(VAR14->VAR39, 3.0, 0.15);
+FUN7("", VAR22, VAR33);
+FUN26(VAR22, 1000, 0);
+FUN14(&VAR22);
+}
+FUN27("", NULL, 135, 1.0, 0, 0,
+"", VAR15);
+FUN28("", VAR15);
+}
+
+FUN17(&VAR28);
+return 0;
+}

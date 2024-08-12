@@ -1,0 +1,30 @@
+VAR1 *FUN1(VAR2 *VAR3, VAR4 *VAR5, int VAR6)
+{
+    VAR7 *VAR8;
+    VAR9 *VAR10;
+    FUN2("", sizeof(struct VAR11), sizeof(struct VAR12));
+    VAR8 = (VAR7 *)FUN3(VAR3, "", sizeof(VAR7), VAR6, NULL, NULL);
+    VAR10 = VAR8->VAR13.VAR14;
+    FUN4(VAR10, VAR15);
+    FUN5(VAR10, VAR16);
+    *(VAR17 *)&VAR10[0x04] = FUN6(0x0007);
+    *(VAR17 *)&VAR10[0x06] = FUN6(0x0280);
+    VAR10[0x08] = 0x10;
+    VAR10[0x09] = 0x00;
+    FUN7(VAR10, VAR18);
+    VAR10[0x0e] = 0x00;
+    *(VAR19 *)&VAR10[0x10] = FUN8(0x00000001);
+    *(VAR19 *)&VAR10[0x14] = FUN8(0x00000000);
+    VAR10[0x3d] = 1;
+    VAR10[0x3e] = 0x06;
+    VAR10[0x3f] = 0xff;
+    VAR8->VAR20 = FUN9(0, VAR21, VAR22, VAR8);
+    FUN10((VAR1 *)VAR8, 0, VAR23, VAR24, VAR25);
+    FUN10((VAR1 *)VAR8, 1, VAR26, VAR27, VAR28);
+    VAR8->VAR29 = VAR8->VAR13.VAR29[0];
+    VAR8->VAR30 = VAR31;
+    VAR8->VAR32 = VAR33;
+    VAR8->VAR34 = &VAR8->VAR13;
+    FUN11(VAR8, VAR5);
+    return (VAR1 *)VAR8;
+}

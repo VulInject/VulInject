@@ -1,0 +1,38 @@
+void FUN1(VAR1 *VAR2)
+{
+    int VAR3;
+    FUN2(&VAR2->VAR4);
+    FUN2(&VAR2->VAR5);
+    FUN2(&VAR2->VAR6);
+    FUN2(&VAR2->VAR7);
+    FUN2(&VAR2->VAR8);
+    FUN2(&VAR2->VAR9);
+    FUN2(&VAR2->VAR10);
+    FUN2(&VAR2->VAR11);
+    FUN2(&VAR2->VAR12[0]);
+    FUN2(&VAR2->VAR13[0]);
+    FUN2(&VAR2->VAR14);
+    FUN2(&VAR2->VAR15);
+    FUN2(&VAR2->VAR16);
+    FUN2(&VAR2->VAR17);
+    FUN2(&VAR2->VAR18.VAR19);
+    FUN2(&VAR2->VAR18.VAR20);
+    FUN2(&VAR2->VAR18.VAR21);
+    FUN2(&VAR2->VAR22);
+    FUN2(&VAR2->VAR23);
+    FUN2(&VAR2->VAR24);
+    FUN2(&VAR2->VAR25);
+    FUN2(&VAR2->VAR26);
+    VAR2->VAR27 = NULL;
+    FUN2(&VAR2->VAR28);
+    FUN2(&VAR2->VAR29);
+    FUN2(&VAR2->VAR30);
+    FUN2(&VAR2->VAR31->VAR32);
+    FUN2(&VAR2->VAR33);
+    FUN2(&VAR2->VAR34);
+    for (VAR3 = 0; VAR3 < VAR35; VAR3++)
+    {
+        FUN3(VAR2, &VAR2->VAR36[VAR3]);
+    }
+    VAR2->VAR37 = 0;
+}

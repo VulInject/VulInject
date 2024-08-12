@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * * VAR2 , char * VAR3 , char * VAR4 ) { VAR1 * VAR5 ; ind_state_t VAR6 ; char * VAR7 ; VAR5 = FUN2 ( VAR6 , VAR7 , VAR4 ) ; FUN3 ( VAR2 , VAR5 ) ; return ( 0 ) ; }

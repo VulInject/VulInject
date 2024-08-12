@@ -1,0 +1,64 @@
+static VAR1 *FUN1(VAR2 *VAR3,
+const VAR4 *VAR5,
+const VAR6 *VAR7,
+VAR8 *VAR9)
+{
+const VAR10 *VAR11;
+const VAR12 *VAR13;
+VAR4 *VAR14;
+VAR15 *VAR16;
+char *VAR17;
+int VAR18;
+
+FUN2(VAR3->VAR19, VAR9, "" VAR20);
+
+if (VAR5->VAR21 == NULL) {
+
+VAR11 = FUN3(VAR7);
+VAR13 = (const VAR12 *)VAR11->VAR13;
+
+for (VAR18 = 0; VAR18 < VAR11->VAR22; ++VAR18) {
+if (VAR13[VAR18].VAR23 == NULL)
+continue;
+
+VAR17 = FUN4(VAR3->VAR19,
+""",
+VAR13[VAR18].VAR23,
+""/>" VAR20, NULL);
+FUN2(VAR3->VAR19, VAR9, VAR17);
+}
+}
+else {
+
+for (VAR14 = VAR5->VAR21; VAR14 != NULL; VAR14 = VAR14->VAR24) {
+if (VAR14->VAR25 == VAR26
+&& strcmp(VAR14->VAR27, "") == 0) {
+const char *VAR27 = NULL;
+
+
+for (VAR16 = VAR14->VAR16; VAR16 != NULL; VAR16 = VAR16->VAR24) {
+if (VAR16->VAR25 == VAR26
+&& strcmp(VAR16->VAR27, "") == 0)
+VAR27 = VAR16->VAR28;
+}
+
+if (VAR27 == NULL) {
+return FUN5(VAR3->VAR19, VAR29, 0, 0,
+""
+""VAR27\"");
+}
+
+
+if (FUN6(VAR7, VAR27) != NULL) {
+VAR17 = FUN4(VAR3->VAR19,
+""",
+VAR27, ""/>" VAR20, NULL);
+FUN2(VAR3->VAR19, VAR9, VAR17);
+}
+}
+}
+}
+
+FUN2(VAR3->VAR19, VAR9, "" VAR20);
+return NULL;
+}

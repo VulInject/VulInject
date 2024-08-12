@@ -1,0 +1,73 @@
+static int
+FUN1(const struct VAR1 *VAR2)
+{
+const struct VAR3 *VAR4 = VAR2->VAR5;
+ip_set_id_t VAR6;
+int VAR7 = 0;
+
+if (VAR4->VAR8.VAR6 != VAR9) {
+VAR6 = FUN2(VAR2->VAR10,
+VAR4->VAR8.VAR6);
+if (VAR6 == VAR9) {
+FUN3("",
+VAR4->VAR8.VAR6);
+return -VAR11;
+}
+}
+
+if (VAR4->VAR12.VAR6 != VAR9) {
+VAR6 = FUN2(VAR2->VAR10,
+VAR4->VAR12.VAR6);
+if (VAR6 == VAR9) {
+FUN3("",
+VAR4->VAR12.VAR6);
+VAR7 = -VAR11;
+goto VAR13;
+}
+}
+
+if (VAR4->VAR14.VAR6 != VAR9) {
+if (FUN4(VAR2->VAR15, "", 7)) {
+FUN3("");
+VAR7 = -VAR16;
+goto VAR17;
+}
+if (((VAR4->VAR18 & VAR19) |
+(VAR4->VAR18 & VAR20)) &&
+(VAR2->VAR21 & ~(1 << VAR22 |
+1 << VAR23 |
+1 << VAR24))) {
+FUN3("");
+VAR7 = -VAR16;
+goto VAR17;
+}
+VAR6 = FUN2(VAR2->VAR10,
+VAR4->VAR14.VAR6);
+if (VAR6 == VAR9) {
+FUN3("",
+VAR4->VAR14.VAR6);
+VAR7 = -VAR11;
+goto VAR17;
+}
+}
+
+if (VAR4->VAR8.VAR25 > VAR26 ||
+VAR4->VAR12.VAR25 > VAR26 ||
+VAR4->VAR14.VAR25 > VAR26) {
+FUN3("");
+VAR7 = -VAR27;
+goto VAR28;
+}
+
+return 0;
+VAR28:
+if (VAR4->VAR14.VAR6 != VAR9)
+FUN5(VAR2->VAR10, VAR4->VAR14.VAR6);
+VAR17:
+if (VAR4->VAR12.VAR6 != VAR9)
+FUN5(VAR2->VAR10, VAR4->VAR12.VAR6);
+VAR13:
+if (VAR4->VAR8.VAR6 != VAR9)
+FUN5(VAR2->VAR10, VAR4->VAR8.VAR6);
+return VAR7;
+}

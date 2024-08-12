@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { static const int VAR3 [ ] { 3 5 7 } ; ; int VAR4 ; for ( VAR4 = 0 ; VAR4 < FUN2 ( VAR3 ) ; VAR4 ++ ) { u32 VAR5 ; int VAR6 ; VAR6 = FUN3 ( VAR2 -> VAR7 -> VAR8 , & VAR5 , FUN4 ( VAR2 ) , VAR3 [ VAR4 ] , 2 , 1 , VAR9 ) ; } return - VAR10 ; }

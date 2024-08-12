@@ -1,0 +1,55 @@
+static VAR1 FUN1(struct VAR2 *VAR3)
+{
+struct VAR4 *VAR5 = FUN2(VAR3);
+struct VAR6 *VAR7 = &VAR5->VAR8.VAR7;
+struct VAR9 *VAR10 = VAR5->VAR10;
+struct ieee_ets VAR11;
+struct ieee_pfc VAR12;
+int VAR13 = -VAR14;
+int VAR15;
+
+if (!FUN3(VAR10, VAR11))
+goto VAR16;
+
+memset(&VAR11, 0, sizeof(VAR11));
+memset(&VAR12, 0, sizeof(VAR12));
+
+VAR11.VAR17 = VAR18;
+for (VAR15 = 0; VAR15 < VAR19; VAR15++) {
+VAR11.VAR20[VAR15] = VAR7->VAR21[VAR15];
+VAR11.VAR22[VAR15] = VAR7->VAR21[VAR15];
+VAR11.VAR23[VAR15]   = VAR24;
+VAR11.VAR25[VAR15]  = VAR7->VAR26[VAR15];
+}
+
+VAR13 = FUN4(VAR3, &VAR11);
+if (VAR13) {
+FUN5(VAR3,
+"", VAR27, VAR13);
+goto VAR16;
+}
+
+VAR13 = FUN6(VAR5, &VAR11);
+if (VAR13) {
+FUN5(VAR3,
+"", VAR27, VAR13);
+goto VAR16;
+}
+
+
+VAR12.VAR28 = FUN7(VAR10) + 1;
+if (!VAR7->VAR29)
+VAR12.VAR30 = 0;
+else
+for (VAR15 = 0; VAR15 < VAR31; VAR15++)
+VAR12.VAR30 |= VAR7->VAR32[VAR15] << VAR15;
+
+VAR13 = FUN8(VAR3, &VAR12);
+if (VAR13) {
+FUN5(VAR3,
+"", VAR27, VAR13);
+goto VAR16;
+}
+VAR16:
+return VAR13 ? VAR33 : VAR34;
+}

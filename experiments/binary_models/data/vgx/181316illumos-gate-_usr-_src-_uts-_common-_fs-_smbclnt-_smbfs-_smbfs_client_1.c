@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , VAR3 * VAR4 ) { struct smbfattr VAR5 ; int VAR6 ; if ( FUN2 ( VAR2 ) ) { VAR6 = FUN3 ( VAR2 ) ; return ( 0 ) ; } return ( FUN4 ( VAR2 , & VAR5 , VAR4 ) ) ; }

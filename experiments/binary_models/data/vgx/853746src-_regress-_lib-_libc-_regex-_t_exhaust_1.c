@@ -1,0 +1,1 @@
+static char * FUN1 ( const char * VAR1 , const char * VAR2 , size_t VAR3 ) { char * VAR4 , * VAR5 , * VAR6 , * VAR7 ; VAR5 = FUN2 ( VAR1 , VAR3 ) ; VAR6 = FUN2 ( VAR2 , VAR3 ) ; VAR7 = FUN3 ( VAR5 , VAR6 ) ; free ( VAR5 ) ; VAR4 = FUN3 ( "" , VAR7 ) ; free ( VAR7 ) ; return VAR4 ; }

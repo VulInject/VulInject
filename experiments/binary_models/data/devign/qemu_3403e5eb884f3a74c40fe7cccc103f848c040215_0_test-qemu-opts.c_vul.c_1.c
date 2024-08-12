@@ -1,0 +1,41 @@
+static void FUN1(void)
+{
+    VAR1 *VAR2 = NULL;
+    VAR3 *VAR4;
+    VAR4 = FUN2(&VAR5, "", false, &VAR6);
+    FUN3(FUN4(VAR4), ==, 1);
+    FUN3(FUN5(VAR4, "", 1), ==, 0);
+    VAR4 = FUN2(&VAR5, "", false, &VAR6);
+    FUN3(FUN4(VAR4), ==, 2);
+    FUN6(FUN5(VAR4, "", 1), ==, VAR7);
+    FUN6(FUN5(VAR4, "", 0), ==, VAR7);
+    VAR4 = FUN2(&VAR5, "", false, &VAR6);
+    FUN3(FUN4(VAR4), ==, 1);
+    FUN3(FUN5(VAR4, "", 1), ==, VAR7);
+    VAR4 = FUN2(&VAR5, "", false, &VAR6);
+    FUN3(FUN4(VAR4), ==, 1);
+    FUN3(FUN5(VAR4, "", 1), ==, VAR7);
+    VAR4 = FUN2(&VAR5, "", false, &VAR6);
+    FUN3(FUN4(VAR4), ==, 2);
+    FUN3(FUN5(VAR4, "", 1), ==, 42);
+    FUN3(FUN5(VAR4, "", 0), ==, 42);
+    VAR4 = FUN2(&VAR5, "", false, &VAR2);
+    FUN3(FUN4(VAR4), ==, 1);
+    FUN3(FUN5(VAR4, "", 1), ==, 0);
+    VAR4 = FUN2(&VAR5, "", false, &VAR2);
+    FUN7(&VAR2);
+    FUN8(!VAR4);
+    VAR4 = FUN2(&VAR5, "", false, &VAR6);
+    FUN3(FUN4(VAR4), ==, 1);
+    FUN3(FUN5(VAR4, "", 1), ==, 42);
+    VAR4 = FUN2(&VAR5, "", false, &VAR2);
+    FUN7(&VAR2);
+    FUN8(!VAR4);
+    VAR4 = FUN2(&VAR5, "", false, &VAR2);
+    FUN7(&VAR2);
+    FUN8(!VAR4);
+    VAR4 = FUN2(&VAR5, "", false, &VAR2);
+    FUN7(&VAR2);
+    FUN8(!VAR4);
+    FUN9(&VAR5);
+}

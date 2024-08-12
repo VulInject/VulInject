@@ -1,0 +1,1 @@
+static blk_status_t FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { blk_status_t VAR5 ; FUN2 ( VAR2 ) ; VAR5 = FUN3 ( VAR2 , VAR4 ) ; FUN4 ( VAR2 ) ; return VAR5 ; }

@@ -1,0 +1,28 @@
+static int FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = &VAR2->VAR4;
+    int VAR5 = VAR2->VAR6 * VAR2->VAR7;
+    int VAR8;
+    VAR4->VAR9 = VAR2->VAR9;
+    VAR4->VAR10 = VAR2->VAR10;
+    VAR4->VAR11 = VAR2->VAR11;
+    VAR4->VAR12 = VAR2->VAR12;
+    VAR4->VAR6 = VAR2->VAR6;
+    VAR4->VAR7 = VAR2->VAR7;
+    VAR4->VAR13 = VAR2->VAR13;
+    VAR4->VAR14 = FUN2(VAR2->VAR6 * VAR2->VAR7);
+    VAR4->VAR15 = FUN3(VAR5);
+    if (!VAR4->VAR14 || !VAR4->VAR15)
+        goto VAR16;
+    VAR4->VAR17 = VAR2->VAR17;
+    VAR4->VAR18 = VAR2->VAR18;
+    for (VAR8 = 0; VAR8 < FUN4(VAR2->VAR19); VAR8++)
+        VAR4->VAR19[VAR8] = VAR2->VAR19[VAR8];
+    VAR4->VAR20 = VAR21;
+    VAR4->VAR22 = VAR2;
+    return 0;
+VAR16:
+    FUN5(&VAR4->VAR14);
+    FUN5(&VAR4->VAR15);
+    return FUN6(VAR23);
+}

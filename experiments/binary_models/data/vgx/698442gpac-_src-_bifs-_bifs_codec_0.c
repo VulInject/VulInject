@@ -1,0 +1,15 @@
+VAR1 FUN1(VAR2 *VAR3, u16 VAR4)
+{
+u32 VAR5;
+VAR6 *VAR7;
+
+VAR5=0;
+while ((VAR7 = (VAR6*)FUN2(VAR3->VAR8, &VAR5))) {
+if(VAR7->VAR4==VAR4) {
+FUN3(VAR7);
+FUN4(VAR3->VAR8, VAR5-1);
+return VAR9;
+}
+}
+return VAR10;
+}

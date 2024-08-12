@@ -1,0 +1,26 @@
+static void FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4 = VAR2->VAR5;
+    VAR6 *VAR7 = VAR2->VAR7;
+    FUN2(VAR7, 0x012f00);
+    FUN3(VAR2, "", VAR7->VAR8 - 16);
+    FUN4(VAR7, 130 + 16 * VAR4->VAR9);
+    FUN5(VAR7, 16, 0x3C0A);
+    FUN6(VAR7, VAR10, 0);
+    FUN3(VAR2, "", VAR7->VAR8 - 16);
+    FUN5(VAR7, 8, 0x3B02);
+    FUN7(VAR7, VAR4->VAR11);
+    FUN5(VAR7, 2, 0x3B05);
+    FUN8(VAR7, 258);
+    FUN5(VAR7, 16 + 8, 0x3B06);
+    FUN9(VAR7, 1);
+    FUN6(VAR7, VAR12, 0);
+    FUN5(VAR7, 16, 0x3B03);
+    FUN6(VAR7, VAR13, 0);
+    FUN5(VAR7, 16, 0x3B09);
+    FUN10(VAR7, VAR14, 16);
+    FUN5(VAR7, 8 + 16 * VAR4->VAR9, 0x3B0A);
+    FUN11(VAR2);
+    FUN5(VAR7, 8, 0x3B0B);
+    FUN7(VAR7, 0);
+}

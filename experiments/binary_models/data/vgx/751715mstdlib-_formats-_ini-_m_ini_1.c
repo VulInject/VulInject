@@ -1,0 +1,1 @@
+char * FUN1 ( char * VAR1 ) { size_t VAR2 ; size_t VAR3 ; size_t VAR4 ; VAR2 = FUN2 ( VAR1 ) ; for ( VAR3 = 0 ; VAR3 < VAR2 ; VAR3 ++ ) { for ( VAR4 = 0 ; VAR5 [ VAR4 ] != 0 ; VAR4 ++ ) { if ( VAR1 [ VAR3 ] == VAR5 [ VAR4 ] ) { FUN3 ( VAR1 + VAR3 , VAR1 + VAR3 + 1 , VAR2 - VAR3 ) ; break ; } } } VAR1 [ VAR3 ] = '' ; return VAR1 ; }

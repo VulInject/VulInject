@@ -1,0 +1,1 @@
+( VAR1 ) ; static void FUN1 ( struct VAR2 * VAR3 ) { struct VAR4 * VAR5 = FUN2 ( VAR3 ) ; FUN3 ( VAR5 , VAR5 -> VAR6 == NULL ) ; FUN3 ( VAR5 , VAR5 -> VAR7 == NULL ) ; FUN3 ( VAR5 , VAR5 -> VAR8 == NULL ) ; FUN3 ( VAR5 , VAR5 -> VAR9 == VAR10 ) ; FUN4 ( VAR3 , FUN5 ( VAR3 ) ) ; FUN4 ( VAR3 , FUN6 ( VAR5 ) == VAR3 ) ; FUN7 ( VAR3 , "" ) ; VAR3 -> VAR11 = NULL ; FUN8 ( VAR3 ) ; }

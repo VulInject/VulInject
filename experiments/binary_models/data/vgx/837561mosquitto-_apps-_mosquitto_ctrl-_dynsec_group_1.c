@@ -1,0 +1,1 @@
+int FUN1 ( int argc , char * argv [ ] , VAR1 * VAR2 ) { FUN2 ( argc , NULL ) ; FUN2 ( argv ) ; if ( FUN3 ( VAR2 , "" , "" ) == NULL ) { return VAR3 ; } else { return VAR4 ; } }

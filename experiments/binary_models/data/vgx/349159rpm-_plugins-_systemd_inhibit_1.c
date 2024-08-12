@@ -1,0 +1,1 @@
+static rpmRC FUN1 ( rpmPlugin VAR1 , rpmts VAR2 ) { int VAR3 ; if ( FUN2 ( "" , & VAR3 ) == 0 ) { if ( FUN3 ( VAR3 . VAR4 ) ) { return VAR5 ; } } return VAR6 ; }

@@ -1,0 +1,1 @@
+size_t FUN1 ( const struct VAR1 * VAR2 ) { return VAR2 -> VAR3 - VAR2 -> VAR4 ; }

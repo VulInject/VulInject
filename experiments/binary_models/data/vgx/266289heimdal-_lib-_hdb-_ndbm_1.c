@@ -1,0 +1,1 @@
+static krb5_error_code FUN1 ( krb5_context VAR1 , const char * VAR2 , int * VAR3 ) { char * VAR4 ; int VAR5 = 0 ; if ( asprintf ( & VAR4 , "" , VAR2 ) == - 1 ) { FUN2 ( VAR1 , VAR6 , "" ) ; return VAR6 ; } * VAR3 = open ( VAR4 , VAR7 | VAR8 , 0600 ) ; if ( * VAR3 < 0 ) { VAR5 = VAR9 ; FUN2 ( VAR1 , VAR5 , "" , VAR4 , strerror ( VAR5 ) ) ; } return VAR5 ; }

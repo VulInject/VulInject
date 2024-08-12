@@ -1,0 +1,78 @@
+FUN1 (VAR1	  *VAR2,
+double		   VAR3,
+double		   VAR4,
+double		   VAR5,
+double		   VAR6,
+double		   VAR7,
+cairo_direction_t VAR8)
+{
+if (FUN2 (VAR2))
+return;
+
+assert (VAR7 >= VAR6);
+
+if (VAR7 - VAR6 > 2 * VAR9 * VAR10) {
+VAR7 = FUN3 (VAR7 - VAR6, 2 * VAR9);
+VAR6 = FUN3 (VAR6, 2 * VAR9);
+VAR7 += VAR6 + 2 * VAR9 * VAR10;
+}
+
+
+if (VAR7 - VAR6 > VAR9) {
+double VAR11 = VAR6 + (VAR7 - VAR6) / 2.0;
+if (VAR8 == VAR12) {
+FUN1 (VAR2, VAR3, VAR4, VAR5,
+VAR6, VAR11,
+VAR8);
+
+FUN1 (VAR2, VAR3, VAR4, VAR5,
+VAR11, VAR7,
+VAR8);
+} else {
+FUN1 (VAR2, VAR3, VAR4, VAR5,
+VAR11, VAR7,
+VAR8);
+
+FUN1 (VAR2, VAR3, VAR4, VAR5,
+VAR6, VAR11,
+VAR8);
+}
+} else if (VAR7 != VAR6) {
+cairo_matrix_t VAR13;
+int VAR14, VAR15;
+double VAR16;
+
+FUN4 (VAR2, &VAR13);
+VAR15 = FUN5 (VAR7 - VAR6,
+VAR5, &VAR13,
+FUN6 (VAR2));
+VAR16 = (VAR7 - VAR6) / VAR15;
+VAR15 -= 1;
+
+if (VAR8 == VAR17) {
+double VAR18;
+
+VAR18 = VAR6;
+VAR6 = VAR7;
+VAR7 = VAR18;
+
+VAR16 = -VAR16;
+}
+
+FUN7 (VAR2,
+VAR3 + VAR5 * FUN8 (VAR6),
+VAR4 + VAR5 * FUN9 (VAR6));
+
+for (VAR14 = 0; VAR14 < VAR15; VAR14++, VAR6 += VAR16) {
+FUN10 (VAR2, VAR3, VAR4, VAR5,
+VAR6, VAR6 + VAR16);
+}
+
+FUN10 (VAR2, VAR3, VAR4, VAR5,
+VAR6, VAR7);
+} else {
+FUN7 (VAR2,
+VAR3 + VAR5 * FUN8 (VAR6),
+VAR4 + VAR5 * FUN9 (VAR6));
+}
+}

@@ -1,0 +1,1 @@
+void *FUN1(VAR1 *VAR2, size_t VAR3) { return memset(FUN2(VAR2, VAR3), 0, VAR3); }

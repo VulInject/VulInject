@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( VAR1 * VAR2 ) { VAR1 * VAR3 ; basexx_state_pointer VAR4 ; VAR3 = FUN2 ( VAR5 , sizeof ( VAR6 ) , & VAR4 . VAR7 ) ; FUN3 ( VAR3 , VAR2 ) ; FUN4 ( VAR4 . VAR8 , NULL ) ; VAR4 . VAR8 -> VAR9 = 1 ; return VAR3 ; }

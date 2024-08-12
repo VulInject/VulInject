@@ -1,0 +1,68 @@
+int
+FUN1(struct VAR1 *VAR2)
+{
+VAR3 *VAR4 = NULL;
+char *VAR5 = NULL;
+g_autofree char *VAR6 = NULL;
+vmwareDomainPtr VAR7;
+int VAR8 = -1;
+virVMXContext VAR9;
+g_autofree char *VAR10 = NULL;
+char *VAR11;
+char *VAR12 = NULL;
+FUN2(VAR13) VAR14 = NULL;
+
+VAR9.VAR15 = VAR16;
+VAR9.VAR17 = NULL;
+VAR9.VAR18 = NULL;
+VAR9.VAR19 = NULL;
+
+VAR14 = FUN3(VAR2->VAR20, "",
+FUN4(VAR2->VAR21),
+"", NULL);
+FUN5(VAR14, &VAR10);
+if (FUN6(VAR14, NULL) < 0)
+goto VAR22;
+
+for (VAR11 = VAR10; (VAR5 = FUN7(VAR11, "", &VAR12)) != NULL; VAR11 = NULL) {
+FUN2(VAR23) VAR24 = NULL;
+
+if (!FUN8(VAR5))
+continue;
+
+if (FUN9(VAR5, 10000, &VAR6) < 0)
+goto VAR22;
+
+if ((VAR24 =
+FUN10(&VAR9, VAR2->VAR25,
+VAR2->VAR26, VAR6)) == NULL) {
+goto VAR22;
+}
+
+if (!(VAR4 = FUN11(VAR2->VAR27, &VAR24,
+VAR2->VAR25,
+0, NULL)))
+goto VAR22;
+
+VAR7 = VAR4->VAR28;
+
+VAR7->VAR5 = FUN12(VAR5);
+
+FUN13(VAR7, VAR4->VAR29);
+
+if ((VAR4->VAR29->VAR30 = FUN14(VAR5)) < 0)
+goto VAR22;
+
+FUN15(VAR4, VAR31,
+VAR32);
+VAR4->VAR33 = 1;
+
+FUN16(&VAR4);
+}
+
+VAR8 = 0;
+
+VAR22:
+FUN17(VAR4);
+return VAR8;
+}

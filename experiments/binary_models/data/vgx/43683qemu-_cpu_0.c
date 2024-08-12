@@ -1,0 +1,33 @@
+void FUN1(VAR1 *VAR2, const char *VAR3, ...)
+{
+va_list VAR4;
+va_list VAR5;
+
+FUN2(VAR4, VAR3);
+FUN3(VAR5, VAR4);
+fprintf(VAR6, "");
+FUN4(VAR6, VAR3, VAR4);
+fprintf(VAR6, "");
+FUN5(VAR2, VAR6, VAR7 | VAR8);
+if (FUN6()) {
+VAR9 *VAR10 = FUN7();
+FUN8("");
+FUN9(VAR3, VAR5);
+FUN8("");
+FUN10(VAR2, VAR7 | VAR8);
+FUN11();
+FUN12(VAR10);
+FUN13();
+}
+FUN14(VAR5);
+FUN14(VAR4);
+FUN15();
+{
+struct sigaction VAR11;
+FUN16(&VAR11.VAR12);
+VAR11.VAR13 = VAR14;
+VAR11.VAR15 = 0;
+FUN17(VAR16, &VAR11, NULL);
+}
+FUN18();
+}

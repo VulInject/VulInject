@@ -1,0 +1,1 @@
+static ssize_t FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , char * VAR5 ) { struct VAR6 * VAR7 = FUN2 ( VAR2 ) ; struct ep11_card_info VAR8 ; struct VAR9 * VAR10 = FUN3 ( VAR2 ) ; FUN4 ( VAR10 -> VAR11 , & VAR8 , VAR7 -> VAR12 ) ; if ( VAR8 . VAR13 > 0 ) { return FUN5 ( VAR5 , VAR14 , "" , VAR8 . VAR13 ) ; } else { return FUN5 ( VAR5 , VAR14 , "" ) ; } }

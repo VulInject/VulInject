@@ -1,0 +1,55 @@
+static int FUN1(int VAR1, const VAR2 *VAR3) {
+int VAR4 = -1;
+uid_t VAR5 = VAR6, VAR7 = VAR6;
+uid_t VAR8 = VAR9, VAR10 = VAR9;
+int VAR11;
+
+assert(VAR1 >= 0);
+assert(VAR3);
+
+if (!VAR3->VAR12[VAR13])
+return FUN2(FUN3(VAR14), "");
+
+uint8_t VAR15[VAR16];
+VAR17 = 0;
+if (pread(VAR1, &VAR15, sizeof(VAR15), 0) != sizeof(VAR15))
+return FUN2(FUN4(VAR18),
+"", FUN5(VAR17));
+
+if (VAR15[VAR19] != VAR20 ||
+VAR15[VAR21] != VAR22 ||
+VAR15[VAR23] != VAR24 ||
+VAR15[VAR25] != VAR26 ||
+VAR15[VAR27] != VAR28)
+return FUN6(FUN3(VAR29),
+"");
+if (!FUN7(VAR15[VAR30], VAR31, VAR32) ||
+!FUN7(VAR15[VAR33], VAR34, VAR35))
+return FUN6(FUN3(VAR29),
+"");
+
+if ((VAR15[VAR33] == VAR34) != (VAR36 == VAR37))
+return FUN6(FUN3(VAR29),
+"");
+
+if (VAR15[VAR30] == VAR32)
+VAR11 = FUN8((const VAR38*) VAR3->VAR12[VAR13],
+VAR3->VAR39[VAR13],
+&VAR4, &VAR5, &VAR7, &VAR8, &VAR10);
+else
+VAR11 = FUN9((const VAR40*) VAR3->VAR12[VAR13],
+VAR3->VAR39[VAR13],
+&VAR4, &VAR5, &VAR7, &VAR8, &VAR10);
+if (VAR11 < 0)
+return VAR11;
+
+
+bool VAR41 =
+VAR4 == 0 &&
+VAR5 != VAR6 && VAR7 != VAR6 && VAR5 == VAR7 &&
+VAR8 != VAR9 && VAR10 != VAR9 && VAR8 == VAR10;
+FUN10(""VAR42 ""VAR42 ""VAR43 ""VAR43 "",
+VAR41 ? "" : "",
+VAR5, VAR7, VAR8, VAR10, FUN11(VAR4));
+return VAR41;
+}

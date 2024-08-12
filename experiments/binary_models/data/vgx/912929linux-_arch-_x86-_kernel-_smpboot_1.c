@@ -1,0 +1,1 @@
+int FUN1 ( unsigned int VAR1 ) { int VAR2 ; FUN2 ( ) { struct VAR3 * VAR4 = & FUN3 ( VAR2 ) ; } return - 1 ; }

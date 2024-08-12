@@ -1,0 +1,1 @@
+int FUN1 ( dev_t VAR1 , struct VAR2 * VAR2 , int VAR3 ) { struct VAR4 * VAR5 ; int VAR6 ; VAR5 -> VAR7 ++ ; VAR6 = FUN2 ( VAR5 , VAR2 , VAR3 ) ; if ( -- VAR5 -> VAR7 < 0 ) { FUN3 ( & VAR5 -> VAR8 . VAR9 ) ; } return ( VAR6 ) ; }

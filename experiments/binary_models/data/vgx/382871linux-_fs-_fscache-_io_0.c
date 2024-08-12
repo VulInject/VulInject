@@ -1,0 +1,51 @@
+void FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4,
+loff_t VAR5, size_t VAR6, loff_t VAR7,
+netfs_io_terminated_t VAR8,
+void *VAR9,
+bool VAR10)
+{
+struct VAR11 *VAR12;
+struct VAR13 *VAR14;
+struct iov_iter VAR15;
+int VAR16 = -VAR17;
+
+if (VAR6 == 0)
+goto VAR18;
+
+FUN2("", VAR5, VAR6);
+
+VAR12 = FUN3(sizeof(struct VAR11), VAR19);
+if (!VAR12)
+goto VAR18;
+VAR12->VAR4		= VAR4;
+VAR12->VAR5		= VAR5;
+VAR12->VAR6		= VAR6;
+VAR12->VAR20		= VAR10;
+VAR12->VAR8		= VAR8;
+VAR12->VAR9	= VAR9;
+
+VAR14 = &VAR12->VAR21;
+if (FUN4(VAR14, VAR2, VAR22,
+VAR23) < 0)
+goto VAR24;
+
+VAR16 = VAR14->VAR25->FUN5(VAR14, &VAR5, &VAR6, VAR7, false);
+if (VAR16 < 0)
+goto VAR26;
+
+
+
+FUN6(&VAR15, VAR27, &VAR4->VAR28, VAR5, VAR6);
+FUN7(VAR14, VAR5, &VAR15, VAR29, VAR12);
+return;
+
+VAR26:
+return FUN8(VAR12, VAR16, false);
+VAR24:
+FUN9(VAR12);
+VAR18:
+FUN10(VAR4, VAR5, VAR6, VAR10);
+if (VAR8)
+FUN11(VAR9, VAR16, false);
+}

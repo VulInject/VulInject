@@ -1,0 +1,73 @@
+static struct VAR1 *FUN1(void)
+{
+struct VAR1 *VAR2;
+int VAR3;
+u32 VAR4;
+int VAR5;
+
+VAR2 = FUN2(sizeof(*VAR2), VAR6);
+if (!VAR2) {
+VAR3 = -VAR7;
+return FUN3(-VAR7);
+}
+
+
+VAR3 = FUN4(VAR8, VAR9,
+VAR10, &VAR4);
+if (VAR3)
+goto VAR11;
+
+if (VAR4 & VAR12) {
+VAR2->VAR13 = true;
+VAR5 = VAR14;
+} else {
+VAR2->VAR13 = false;
+VAR5 = VAR15;
+}
+
+
+if (!VAR2->VAR13) {
+
+VAR3 = FUN4(VAR8, VAR9,
+VAR16,
+&VAR2->VAR17);
+if (VAR3)
+goto VAR11;
+
+
+VAR3 = FUN4(VAR8, VAR9,
+VAR18,
+&VAR2->VAR19);
+if (VAR3)
+goto VAR11;
+}
+
+VAR2->VAR20[VAR21].VAR22 = FUN5(VAR21);
+VAR2->VAR20[VAR21].VAR23 = VAR24;
+
+VAR2->VAR20[VAR25].VAR22 = FUN5(VAR25);
+VAR2->VAR20[VAR25].VAR23 = VAR26;
+
+VAR2->VAR27 = FUN6("",
+VAR2->VAR20,
+VAR28,
+VAR5,
+VAR2, &VAR29,
+NULL, 0, VAR30);
+if (FUN7(VAR2->VAR27)) {
+VAR3 = FUN8(VAR2->VAR27);
+goto VAR11;
+}
+
+VAR3 = FUN9(VAR2->VAR27);
+if (VAR3)
+goto VAR31;
+
+return VAR2;
+
+VAR31:
+FUN10(VAR2->VAR27);
+VAR11:
+FUN11(VAR2);
+return FUN3(VAR3);
+}

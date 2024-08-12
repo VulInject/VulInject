@@ -1,0 +1,1 @@
+static int FUN1 ( void ) { void * VAR1 = NULL ; void * VAR2 = NULL ; if ( VAR3 == NULL ) { return 0 ; } while ( FUN2 ( VAR3 , & VAR1 , & VAR2 ) == 0 ) { FUN3 ( VAR1 ) ; FUN3 ( VAR2 ) ; } VAR3 = NULL ; return 0 ; }

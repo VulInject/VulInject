@@ -1,0 +1,63 @@
+static void FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+u32 VAR5;
+int VAR6;
+
+if (VAR4->VAR7 & VAR8) {
+VAR5 = FUN2(VAR4, 17, VAR9);
+VAR6 = FUN2(VAR4, 17, VAR10);
+FUN3(VAR2, "",
+VAR11, VAR5);
+} else {
+VAR5 = FUN4(VAR4, 17, VAR9);
+VAR6 = (VAR5 >> 16) & 0x7ff;
+VAR5 &= 0xffff;
+FUN3(VAR2, "",
+VAR11, VAR5);
+}
+
+
+if ((VAR5 & VAR12) && !(VAR5 & VAR13)) {
+struct VAR14 *VAR15 = FUN5(VAR2, VAR6 + 3);
+
+if (VAR15) {
+
+FUN6(VAR2, VAR5, VAR6);
+
+if (VAR4->VAR7 & VAR8) {
+VAR16 *VAR17 = (VAR16 *)FUN7(VAR15, VAR6);
+FUN8(VAR4, 17);
+while (VAR6 > 0) {
+*VAR17++ = FUN9(VAR4->VAR18 +
+VAR9);
+*VAR17++ = FUN9(VAR4->VAR18 +
+VAR10);
+VAR6 -= sizeof(VAR19);
+}
+} else {
+VAR19 *VAR20 = (VAR19 *)FUN7(VAR15, VAR6);
+
+FUN8(VAR4, 17);
+while (VAR6 > 0) {
+*VAR20++ = FUN10(VAR4->VAR18 +
+VAR9);
+VAR6 -= sizeof(VAR19);
+}
+}
+VAR15->VAR21 = FUN11(VAR15, VAR2);
+FUN12(VAR15);
+} else
+VAR2->VAR22.VAR23++;
+} else
+FUN13(VAR2, VAR5);
+
+
+FUN14(VAR4, 0, 1 << 12, VAR24);
+
+
+FUN15(VAR4, 17, 0x01, VAR25);
+
+
+FUN16(VAR4, 0, 1 << 12, VAR24);
+}

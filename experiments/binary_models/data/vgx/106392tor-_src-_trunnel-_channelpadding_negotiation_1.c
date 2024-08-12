@@ -1,0 +1,1 @@
+ssize_t FUN1 ( VAR1 * * VAR2 , const VAR3 * VAR4 , const size_t VAR5 ) { ssize_t VAR6 ; * VAR2 = FUN2 ( ) ; VAR6 = FUN3 ( * VAR2 , VAR4 , VAR5 ) ; if ( VAR6 < 0 ) { FUN4 ( * VAR2 ) ; * VAR2 = NULL ; } return VAR6 ; }

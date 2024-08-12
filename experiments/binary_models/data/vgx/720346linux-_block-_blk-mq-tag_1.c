@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , struct VAR1 * VAR3 , unsigned int VAR4 , unsigned int VAR5 , int VAR6 , int VAR7 ) { unsigned int VAR8 = VAR4 - VAR5 ; bool VAR9 = VAR7 == VAR10 ; if ( FUN2 ( VAR3 , VAR5 , VAR9 , VAR6 ) ) { VAR11 } return 0 ; free_bitmap_tags FUN3 ( VAR2 ) ; return - VAR12 ; }

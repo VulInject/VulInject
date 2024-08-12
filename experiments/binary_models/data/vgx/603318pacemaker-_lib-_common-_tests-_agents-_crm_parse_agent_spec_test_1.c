@@ -1,0 +1,1 @@
+static void FUN1 ( void * * VAR1 ) { char * VAR2 = NULL ; char * VAR3 = NULL ; char * VAR4 = NULL ; FUN2 ( FUN3 ( "" , & VAR2 , & VAR3 , & VAR4 ) , VAR5 ) ; FUN4 ( VAR2 , "" ) ; FUN4 ( VAR3 , "" ) ; FUN4 ( VAR4 , "" ) ; free ( VAR2 ) ; free ( VAR4 ) ; }

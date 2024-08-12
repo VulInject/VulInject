@@ -1,0 +1,1 @@
+void FUN1 ( void ) { VAR1 = 0 ; if ( ! VAR2 ) { return ; } FUN2 ( VAR2 , char * , VAR3 , FUN3 ( VAR3 ) ) ; VAR2 = NULL ; }

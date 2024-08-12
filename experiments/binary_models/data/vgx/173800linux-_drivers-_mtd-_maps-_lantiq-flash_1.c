@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR3 = FUN2 ( VAR2 ) ; if ( VAR3 && VAR3 -> VAR4 ) { FUN3 ( VAR3 -> VAR4 , NULL ) ; FUN4 ( VAR3 -> VAR4 ) ; } return 0 ; } static const struct of_device_id VAR5 [ ] { { . VAR6 = "" } { } } ; ;

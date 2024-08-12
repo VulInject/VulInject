@@ -1,0 +1,1 @@
+int FUN1 ( struct VAR1 * VAR2 , u16 VAR3 , struct VAR4 * VAR5 ) { const struct VAR6 * VAR7 = VAR2 -> VAR8 -> VAR9 + VAR3 ; static const char * const VAR10 [ ] { "" "" "" } ; ; if ( VAR3 >= VAR2 -> VAR11 ) { return - VAR12 ; } FUN2 ( VAR5 -> VAR13 , VAR10 [ VAR7 -> VAR14 - 1 ] , sizeof ( VAR5 -> VAR13 ) ) ; VAR5 -> VAR3 = VAR3 ; VAR5 -> VAR15 = VAR16 ; return 0 ; }

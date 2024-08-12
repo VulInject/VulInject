@@ -1,0 +1,1 @@
+int FUN1 ( void ) { const char * VAR1 = FUN2 ( ) ; bool VAR2 = false ; int VAR3 ; for ( VAR3 = 0 ; VAR3 < VAR4 ; VAR3 ++ ) { char VAR5 [ VAR6 ] ; struct VAR7 * VAR8 = & VAR9 [ VAR3 ] ; struct stat VAR10 ; FUN3 ( VAR5 , VAR6 , "" , VAR1 , VAR8 -> VAR11 ) ; if ( ! FUN4 ( VAR5 , & VAR10 ) ) { VAR8 -> VAR12 = VAR2 = true ; } } return VAR2 ?0 : - VAR13 ; }

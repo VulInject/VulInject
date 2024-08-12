@@ -1,0 +1,103 @@
+int
+FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+int		VAR5 = VAR2->VAR6;
+int		VAR7 = VAR2->VAR8;
+sbbc_msg_t	VAR9, *VAR10 = &VAR9;
+sbbc_msg_t	VAR11, *VAR12 = &VAR11;
+info_t		VAR13, *VAR14 = &VAR13;
+show_board_t	VAR15, *VAR16 = &VAR15;
+int		VAR17 = 0;
+VAR18	*VAR19 = VAR2->VAR20;
+int		VAR21;
+VAR22	*VAR23;
+static fn_t	VAR24 = "";
+
+FUN2("", VAR24);
+
+
+if (VAR2->VAR25 != NULL && VAR2->VAR25->VAR26 != NULL) {
+FUN3(VAR19, VAR27, VAR2->VAR25->VAR26);
+return (-1);
+}
+
+VAR23 = FUN4(VAR7, VAR5);
+
+VAR14->VAR5 = VAR5;
+VAR14->VAR7 = VAR7;
+VAR14->VAR28 = 0xdead;
+VAR21 = sizeof (VAR29);
+
+FUN5(VAR10, VAR30, VAR21, (VAR31)VAR14);
+
+FUN6(VAR16, sizeof (VAR32));
+VAR16->VAR33 = -1;
+VAR16->VAR34 = -1;
+VAR16->VAR35 = -1;
+VAR16->VAR36 = -1;
+VAR16->VAR37 = -1;
+VAR21 = sizeof (VAR32);
+
+FUN5(VAR12, VAR30, VAR21, (VAR31)VAR16);
+
+VAR17 = FUN7(VAR10, VAR12, VAR38);
+
+FUN8("", VAR17);
+
+
+if ((VAR12->VAR39 == VAR40) ||
+(VAR12->VAR39 == VAR41) ||
+(VAR12->VAR39 == VAR42)) {
+
+
+VAR23->VAR43 = -1;
+
+FUN3(VAR19, VAR44, NULL);
+return (VAR45);
+}
+
+
+if (VAR17 != 0) {
+FUN9(&VAR23->VAR46);
+if (VAR23->VAR43 == -1) {
+FUN3(VAR19, VAR44,
+NULL);
+FUN10(&VAR23->VAR46);
+return (VAR45);
+}
+
+
+bcopy(VAR23->VAR47, VAR16, sizeof (VAR32));
+FUN10(&VAR23->VAR46);
+VAR4->VAR48 = 1;
+
+VAR17 = 0;
+} else {
+
+if (VAR23 == NULL) {
+FUN11("");
+} else {
+FUN9(&VAR23->VAR46);
+bcopy(VAR16, VAR23->VAR47, sizeof (VAR32));
+VAR23->VAR43 = 1;
+FUN10(&VAR23->VAR46);
+}
+}
+
+
+FUN11(""
+""
+""
+"",
+VAR5, VAR16->VAR28, VAR16->VAR33, VAR16->VAR34,
+VAR16->VAR35, VAR16->VAR36, VAR16->VAR37,
+VAR16->VAR49, VAR16->VAR50, VAR16->VAR51);
+
+
+FUN12(VAR16, VAR4, VAR5);
+
+
+FUN13(VAR4->VAR52);
+
+return (VAR17);
+}

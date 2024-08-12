@@ -1,0 +1,24 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = &VAR2->VAR5.VAR6;
+
+if (VAR4->VAR7 != FUN2(0x8129))
+return -VAR8;
+
+FUN3(VAR2->VAR9, VAR4->VAR9);
+
+memcpy(VAR2->VAR10, VAR4->VAR11.VAR12,
+sizeof(VAR4->VAR11.VAR12));
+
+memcpy(VAR2->VAR13,
+VAR4->VAR11.VAR14,
+sizeof(VAR4->VAR11.VAR14));
+
+VAR2->VAR15 = VAR4->VAR16 & 0x3f;
+
+FUN4(&VAR2->VAR17->VAR18, "", VAR4->VAR19);
+FUN4(&VAR2->VAR17->VAR18, "", VAR4->VAR20);
+FUN4(&VAR2->VAR17->VAR18, "", VAR4->VAR21);
+
+return 0;
+}

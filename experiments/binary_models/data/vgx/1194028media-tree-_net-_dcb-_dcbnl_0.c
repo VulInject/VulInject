@@ -1,0 +1,48 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+u32 VAR5, struct VAR6 **VAR7, struct VAR8 *VAR9)
+{
+int VAR10;
+u16 VAR11;
+u8 VAR12, VAR13;
+struct VAR6 *VAR14[VAR15 + 1];
+
+if (!VAR7[VAR16])
+return -VAR17;
+
+VAR10 = FUN2(VAR14, VAR15, VAR7[VAR16],
+VAR18, NULL);
+if (VAR10)
+return VAR10;
+
+
+if ((!VAR14[VAR19]) ||
+(!VAR14[VAR20]) ||
+(!VAR14[VAR21]))
+return -VAR17;
+
+
+VAR13 = FUN3(VAR14[VAR19]);
+if ((VAR13 != VAR22) &&
+(VAR13 != VAR23))
+return -VAR17;
+
+VAR11 = FUN4(VAR14[VAR20]);
+VAR12 = FUN3(VAR14[VAR21]);
+
+if (VAR2->VAR24->VAR25) {
+VAR10 = VAR2->VAR24->FUN5(VAR2, VAR13, VAR11, VAR12);
+if (VAR10 < 0)
+return VAR10;
+} else {
+struct dcb_app VAR26;
+VAR26.VAR27 = VAR13;
+VAR26.VAR28 = VAR11;
+VAR26.VAR29 = VAR12;
+VAR10 = FUN6(VAR2, &VAR26);
+}
+
+VAR10 = FUN7(VAR9, VAR16, VAR10);
+FUN8(VAR2, VAR30, VAR31, VAR5, 0);
+
+return VAR10;
+}

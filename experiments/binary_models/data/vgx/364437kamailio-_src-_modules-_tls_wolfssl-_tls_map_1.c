@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 ) { VAR3 * VAR4 , * VAR5 ; int VAR6 ; VAR6 = VAR2 -> VAR7 ; while ( VAR6 -- ) { VAR5 = VAR2 -> VAR8 [ VAR6 ] ; while ( VAR5 ) { VAR4 = VAR5 -> VAR4 ; FUN2 ( VAR5 ) ; VAR5 = VAR4 ; } } }

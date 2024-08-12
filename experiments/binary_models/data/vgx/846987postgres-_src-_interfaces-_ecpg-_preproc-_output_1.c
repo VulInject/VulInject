@@ -1,0 +1,1 @@
+void FUN1 ( char * VAR1 , char * VAR2 ) { fprintf ( VAR3 , "" , VAR4 ?VAR4 : "" , VAR5 ) ; FUN2 ( VAR1 , true ) ; fputs ( "" , VAR3 ) ; FUN2 ( VAR2 , true ) ; fputs ( "" , VAR3 ) ; FUN3 ( 2 ) ; }

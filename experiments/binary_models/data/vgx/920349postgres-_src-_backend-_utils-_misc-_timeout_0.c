@@ -1,0 +1,33 @@
+static void
+FUN1(TimeoutId VAR1, TimestampTz VAR2, TimestampTz VAR3,
+int VAR4)
+{
+int			VAR5;
+
+
+FUN2(VAR6);
+FUN2(VAR7[VAR1].VAR8 != NULL);
+
+
+if (VAR7[VAR1].VAR9)
+FUN3(FUN4(VAR1));
+
+
+for (VAR5 = 0; VAR5 < VAR10; VAR5++)
+{
+VAR11 *VAR12 = VAR13[VAR5];
+
+if (VAR3 < VAR12->VAR3)
+break;
+if (VAR3 == VAR12->VAR3 && VAR1 < VAR12->VAR14)
+break;
+}
+
+
+VAR7[VAR1].VAR15 = false;
+VAR7[VAR1].VAR16 = VAR2;
+VAR7[VAR1].VAR3 = VAR3;
+VAR7[VAR1].VAR4 = VAR4;
+
+FUN5(VAR1, VAR5);
+}

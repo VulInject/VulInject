@@ -1,0 +1,62 @@
+static int FUN1(HANDLE VAR1, ut128 VAR2[16], ut128 VAR3[16]) {
+int VAR4 = 0, VAR5 = 0;
+DWORD VAR6 = 0;
+DWORD VAR7 = 0;
+ut64 VAR8 = 0;
+VAR9 *VAR10 = NULL;
+VAR9 *VAR11 = NULL;
+PCONTEXT VAR12;
+
+VAR8 = FUN2 ();
+if ((VAR8 & VAR13) == 0) {
+return 0;
+}
+if ((FUN3 (NULL, VAR14 | VAR15, NULL, &VAR6)) || (FUN4 () != VAR16)) {
+return 0;
+}
+void *VAR17 = malloc (VAR6);
+if (!VAR17) {
+return 0;
+}
+if (!FUN3 (VAR17, VAR14 | VAR15, &VAR12, &VAR6)) {
+goto VAR18;
+}
+if (!FUN5 (VAR12, VAR13)) {
+goto VAR18;
+}
+
+if (!FUN6 (VAR1, VAR12)) {
+goto VAR18;
+}
+if (FUN7 (VAR12, &VAR8)) {
+goto VAR18;
+}
+VAR10 = (VAR9 *)FUN8 (VAR12, VAR19, &VAR7);
+VAR4 = VAR7 / sizeof (*VAR10);
+for (VAR5 = 0; VAR5 < VAR4; VAR5++) {
+VAR3[VAR5].VAR20 = 0;
+VAR2[VAR5].VAR20 = 0;
+VAR3[VAR5].VAR21 = 0;
+VAR2[VAR5].VAR21 = 0;
+}
+if (VAR10) {
+for (VAR5 = 0; VAR5 < VAR4; VAR5++) {
+VAR2[VAR5].VAR20 = VAR10[VAR5].VAR20;
+VAR2[VAR5].VAR21 = VAR10[VAR5].VAR21;
+}
+}
+if ((VAR8 & VAR13) != 0) {
+
+VAR11 = (VAR9 *)FUN8 (VAR12, VAR22, NULL);
+if (!VAR11) {
+goto VAR18;
+}
+for (VAR5 = 0; VAR5 < VAR4; VAR5++) {
+VAR3[VAR5].VAR20 = VAR11[VAR5].VAR20;
+VAR3[VAR5].VAR21 = VAR11[VAR5].VAR21;
+}
+}
+VAR18:
+free (VAR17);
+return VAR4;
+}

@@ -1,0 +1,1 @@
+void FUN1 ( ulong VAR1 ) { struct VAR2 * VAR3 ; int VAR4 ; FUN2 ( ) ; FUN3 ( 1 ) ; FUN4 ( ) ; VAR4 = FUN5 ( ) ; if ( VAR4 ) { FUN6 ( "" , VAR4 ) ; FUN7 ( ) ; } FUN8 ( ) ; VAR4 = FUN9 ( VAR5 , "" , & VAR3 ) ; if ( VAR4 < 0 ) { FUN10 ( "" ) ; FUN7 ( ) ; } FUN11 ( ) ; FUN12 ( ) ; FUN13 ( ) ; FUN14 ( NULL , 0 ) ; }

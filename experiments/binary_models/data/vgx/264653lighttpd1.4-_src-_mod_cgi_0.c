@@ -1,0 +1,81 @@
+static int FUN1(VAR1 *VAR2, int VAR3) {
+VAR4 * const VAR5 = VAR2->VAR5;
+VAR6 *VAR7 = &VAR5->VAR8;
+VAR9 *VAR10;
+
+FUN2(VAR7); 
+
+
+
+for (VAR10 = VAR7->VAR11; VAR10; VAR10 = VAR7->VAR11) {
+ssize_t VAR12 = FUN3(VAR3, VAR7, VAR5->VAR13.VAR14);
+if (VAR12 > 0) {
+VAR2->VAR15 = VAR16;
+FUN4(VAR7, VAR12);
+
+if (VAR10 != VAR7->VAR11 || VAR12 == 16384)
+continue;
+
+}
+else if (VAR12 < 0) {
+switch(VAR17) {
+case VAR18:
+case VAR19:
+
+break;
+case VAR20:
+case VAR21:
+
+FUN5(VAR5->VAR13.VAR14, VAR22, VAR23,
+"");
+
+FUN4(VAR7, FUN6(VAR7));
+break;
+default:
+
+FUN7(VAR5->VAR13.VAR14, VAR22, VAR23, "");
+return -1;
+}
+}
+
+break;
+}
+
+if (VAR7->VAR24 == (VAR25)VAR5->VAR26 && !VAR2->VAR13.VAR27) {
+
+
+if (-1 == VAR2->VAR28) { 
+--VAR5->VAR29->VAR30->VAR31;
+if (close(VAR3)) {
+FUN7(VAR5->VAR13.VAR14, VAR22, VAR23, "", VAR3);
+}
+} else {
+FUN8(VAR2); 
+}
+} else {
+off_t VAR32 = FUN6(VAR7);
+if (VAR7->VAR33 != VAR5->VAR26 && VAR32 < 65536 - 16384) {
+
+if (!(VAR5->VAR13.VAR34 & VAR35)) {
+VAR5->VAR13.VAR34 |= VAR35;
+VAR5->VAR29->VAR36 = 1; 
+}
+}
+struct VAR37 * const VAR38 = VAR2->VAR38;
+if (-1 == VAR2->VAR28) { 
+VAR2->VAR28 = VAR3;
+VAR2->VAR39 = FUN9(VAR38, VAR2->VAR28, VAR40, VAR2);
+}
+if (0 == VAR32) { 
+if ((FUN10(VAR2->VAR39) & VAR41)) {
+FUN11(VAR38, VAR2->VAR39, 0);
+}
+} else {
+
+VAR2->VAR15 = VAR16;
+FUN11(VAR38, VAR2->VAR39, VAR41);
+}
+}
+
+return 0;
+}

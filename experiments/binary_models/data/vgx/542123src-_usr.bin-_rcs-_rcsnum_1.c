@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 ) { if ( VAR2 == NULL ) { return ; } free ( VAR2 -> VAR3 ) ; }

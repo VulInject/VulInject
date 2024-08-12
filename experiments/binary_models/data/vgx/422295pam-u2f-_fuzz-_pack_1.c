@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * * VAR2 , VAR3 * VAR4 , const VAR1 * VAR5 , size_t VAR6 ) { memcpy ( * VAR2 , VAR5 , VAR6 ) ; * VAR2 += VAR6 ; * VAR4 -= VAR6 ; return 1 ; }

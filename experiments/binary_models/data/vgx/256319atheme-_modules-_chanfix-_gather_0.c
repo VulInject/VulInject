@@ -1,0 +1,29 @@
+void
+FUN1(struct VAR1 *VAR2)
+{
+FUN2(VAR3);
+FUN3(VAR4);
+FUN4(VAR5);
+
+FUN5("", VAR6);
+FUN5("", VAR7);
+FUN5("", VAR8);
+FUN5("", VAR9);
+
+VAR10 = FUN6(VAR11, "", VAR12, NULL, VAR13);
+VAR14 = FUN6(VAR11, "", VAR15, NULL, VAR16);
+
+if (VAR2 != NULL)
+{
+VAR17 = VAR2->VAR17;
+VAR18 = VAR2->VAR18;
+
+VAR19 = VAR2->VAR19;
+return;
+}
+
+VAR17 = FUN7(sizeof(struct VAR20), 32, VAR21);
+VAR18 = FUN7(sizeof(struct VAR22), 32, VAR21);
+
+VAR19 = FUN8(VAR23);
+}

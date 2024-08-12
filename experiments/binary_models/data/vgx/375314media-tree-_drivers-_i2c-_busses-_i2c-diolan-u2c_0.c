@@ -1,0 +1,40 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+int VAR3, VAR4;
+
+if (VAR5 >= 200000) {
+VAR3 = VAR6;
+VAR5 = VAR7;
+} else if (VAR5 >= 100000 || VAR5 == 0) {
+VAR3 = VAR8;
+VAR5 = VAR9;
+} else {
+VAR3 = FUN2(VAR5);
+if (VAR3 > VAR10)
+VAR3 = VAR10;
+VAR5 = FUN3(VAR3);
+}
+
+FUN4(&VAR2->VAR11->VAR2,
+"",
+VAR2->VAR12->VAR13->VAR14, VAR2->VAR12->VAR15, VAR5);
+
+FUN5(VAR2);
+FUN6(VAR2);
+FUN7(VAR2);
+
+
+VAR4 = FUN8(VAR2, VAR3);
+if (VAR4 < 0)
+return VAR4;
+
+
+VAR4 = FUN9(VAR2, VAR3 != VAR6);
+if (VAR4 < 0)
+return VAR4;
+
+if (VAR3 != VAR6)
+VAR4 = FUN10(VAR2, VAR16);
+
+return VAR4;
+}

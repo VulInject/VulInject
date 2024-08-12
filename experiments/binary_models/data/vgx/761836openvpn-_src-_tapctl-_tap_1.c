@@ -1,0 +1,1 @@
+static DWORD FUN1 ( _In_ HDEVINFO VAR1 , _In_ PSP_DEVINFO_DATA VAR2 , _Inout_ LPBOOL VAR3 ) { SP_DEVINSTALL_PARAMS VAR4 = { . VAR5 = ( VAR6 ) } ; if ( ! FUN2 ( VAR1 , VAR2 , & VAR4 ) ) { DWORD VAR7 = FUN3 ( ) ; FUN4 ( VAR8 | VAR9 , "" , VAR10 ) ; return VAR7 ; } if ( ( VAR4 . VAR11 & ( VAR12 | VAR13 ) ) != 0 ) { * VAR3 = VAR14 ; } return VAR15 ; }

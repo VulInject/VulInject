@@ -1,0 +1,74 @@
+void
+FUN1(struct VAR1 *VAR2)
+{
+struct VAR3	*VAR4;
+uint32_t		 VAR5[4];
+int			 VAR6 = 0;
+int			 VAR7;
+
+VAR8 = FUN2(VAR9);
+VAR10 = FUN2(VAR11);
+
+
+if (!(VAR10 & VAR12)) {
+FUN3("");
+return;
+}
+VAR6 = VAR8 & 0xff;
+FUN3("", VAR6);
+
+
+if ((VAR8 & VAR13) && 
+(VAR10 & VAR14)) {
+VAR2->VAR15 = VAR16;
+VAR6 += VAR17 + VAR18 + VAR19;
+FUN3("", VAR17 + VAR18 + VAR19);
+}
+
+FUN3("");
+
+VAR2->VAR20 = FUN4(VAR6, sizeof(struct VAR3),
+VAR21, VAR22|VAR23);
+VAR2->VAR24 = VAR6;
+
+VAR4 = VAR2->VAR20;
+
+
+if (VAR2->VAR15 & VAR16) {
+for (VAR7 = 0; VAR7 < VAR17; VAR7++, VAR4++) {
+VAR4->VAR25 = VAR7 * 0x10000;
+VAR4->VAR26 = 0x10000;
+VAR4->VAR27 = VAR28 | VAR29 | VAR30;
+}
+
+for (VAR7 = 0; VAR7 < VAR18; VAR7++, VAR4++) {
+VAR4->VAR25 = VAR7 * 0x4000 + 0x80000;
+VAR4->VAR26 = 0x4000;
+VAR4->VAR27 = VAR28 | VAR29 | VAR30;
+}
+
+for (VAR7 = 0; VAR7 < VAR19; VAR7++, VAR4++) {
+VAR4->VAR25 = VAR7 * 0x1000 + 0xc0000;
+VAR4->VAR26 = 0x1000;
+VAR4->VAR27 = VAR28 | VAR29 | VAR30;
+}
+}
+
+
+FUN5(0x80000000, VAR5[0], VAR5[1], VAR5[2], VAR5[3]);
+if (VAR5[0] >= 0x80000008) {
+FUN5(0x80000008, VAR5[0], VAR5[1], VAR5[2], VAR5[3]);
+if (VAR5[0] & 0xff) {
+VAR31 = (1ULL << (VAR5[0] & 0xff)) - 1;
+VAR31 &= ~0x0000000000000fffULL;
+}
+}
+
+
+FUN6(VAR2);
+VAR4 = VAR2->VAR20;
+for (VAR7 = 0; VAR7 < VAR2->VAR24; VAR7++, VAR4++) {
+if (VAR4->VAR27 & VAR32)
+VAR4->VAR27 |= VAR33;
+}
+}

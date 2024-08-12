@@ -1,0 +1,1 @@
+int FUN1 ( pnode_t VAR1 , char * VAR2 ) { VAR3 * VAR4 ; VAR4 = FUN2 ( VAR1 ) ; return ( FUN3 ( VAR4 , VAR2 ) ) ; }

@@ -1,0 +1,1 @@
+int main ( int argc , char * * argv ) { int VAR1 ; FUN1 ( & argc , & argv , NULL ) ; for ( VAR1 = 0 ; VAR1 < FUN2 ( VAR2 ) ; VAR1 ++ ) { char * VAR3 = FUN3 ( "" , VAR1 ) ; FUN4 ( VAR3 , & VAR2 [ VAR1 ] , ( VAR4 ) VAR5 ) ; } FUN5 ( ) ; return FUN6 ( ) ; }

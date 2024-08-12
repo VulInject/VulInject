@@ -1,0 +1,1 @@
+void FUN1 ( void * VAR1 , int VAR2 ) { if ( ! VAR1 ) { return ; } FUN2 ( VAR1 , VAR2 ) ; { size_t VAR3 ; size_t VAR4 = 0 ; char * * VAR5 = FUN3 ( VAR1 , & VAR4 ) ; if ( ! VAR5 ) { return ; } for ( VAR3 = 0 ; VAR3 < VAR4 ; VAR3 ++ ) { FUN4 ( VAR2 , VAR5 [ VAR3 ] , ( unsigned ) FUN5 ( VAR5 [ VAR3 ] , VAR6 ) ) ; } } FUN6 ( VAR7 ) ; }

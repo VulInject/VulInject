@@ -1,0 +1,1 @@
+FUN1 ( ) { int VAR1 = 0 ; while ( * VAR2 ) { if ( * VAR2 == '' ) { VAR1 ++ ; while ( * VAR2 == '' ) { VAR2 ++ ; } } VAR2 ++ ; } return ( ++ VAR1 ) ; }

@@ -1,0 +1,81 @@
+static void FUN1(VAR1 *VAR2, int VAR3)
+{
+assert(VAR3 < 0);
+
+if (!VAR2->VAR4) {
+VAR2->VAR4 = VAR3;
+}
+}
+
+
+VAR5, VAR6, VAR7) \
+for (VAR2 = (VAR1) { .VAR8 = VAR9 }; \
+FUN2(VAR10, &VAR2, VAR11, VAR5, VAR6, VAR7);)
+
+
+static bool FUN2(VAR12 *VAR10,
+VAR1 *VAR2,
+uint64_t VAR11,
+VAR13 *VAR5, VAR14 *VAR6,
+void **VAR7)
+{
+int VAR3, VAR4;
+NBDReply VAR15;
+VAR16 *VAR17;
+VAR18 *VAR19 = NULL;
+if (!FUN3(VAR10)) {
+FUN4(&VAR19, "");
+FUN5(VAR2, -VAR20, &VAR19);
+goto VAR21;
+}
+
+if (VAR2->VAR22) {
+
+goto VAR21;
+}
+
+if (VAR6 == NULL) {
+VAR6 = &VAR15;
+}
+
+VAR3 = FUN6(VAR10, VAR11, VAR2->VAR8,
+&VAR4, VAR5, VAR6, VAR7,
+&VAR19);
+if (VAR3 < 0) {
+FUN5(VAR2, VAR3, &VAR19);
+} else if (VAR4 < 0) {
+FUN1(VAR2, VAR4);
+}
+
+
+if (FUN7(VAR6) || !FUN3(VAR10)) {
+goto VAR21;
+}
+
+VAR17 = &VAR6->VAR9;
+VAR2->VAR8 = true;
+
+if (VAR17->VAR23 == VAR24) {
+
+assert(VAR17->VAR25 & VAR26);
+goto VAR21;
+}
+
+if (VAR17->VAR25 & VAR26) {
+
+VAR2->VAR22 = true;
+}
+
+
+return true;
+
+VAR21:
+VAR10->VAR27[FUN8(VAR10, VAR11)].VAR28 = NULL;
+
+FUN9(&VAR10->VAR29);
+VAR10->VAR30--;
+FUN10(&VAR10->VAR31);
+FUN11(&VAR10->VAR29);
+
+return false;
+}

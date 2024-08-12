@@ -1,0 +1,100 @@
+static VAR1 FUN1(struct VAR2 *VAR3,
+struct VAR4 *VAR5,
+uint16_t VAR6, uint16_t VAR7,
+const VAR8 *VAR9, const VAR10 *VAR11)
+{
+TEE_Result VAR12 = VAR13;
+int VAR14;
+struct VAR15 *VAR16;
+
+if (!VAR3 || !VAR5 || !VAR6)
+return VAR17;
+
+
+if ((VAR5->VAR18 == VAR19) &&
+(VAR6 > VAR20->VAR21)) {
+FUN2("", VAR6,
+VAR20->VAR21);
+return VAR13;
+}
+
+VAR3->VAR22 = VAR23;
+VAR3->VAR7 = VAR7;
+
+
+VAR16 = calloc(VAR6, VAR24);
+if (!VAR16)
+return VAR25;
+
+for (VAR14 = 0; VAR14 < VAR6; VAR14++) {
+FUN3(VAR5->VAR18, VAR16[VAR14].VAR18);
+
+if (VAR5->VAR26)
+FUN3(*VAR5->VAR26,
+VAR16[VAR14].VAR26);
+
+if (VAR5->VAR27) {
+
+if ((*VAR5->VAR27 + VAR6 - 1) >
+VAR20->VAR28) {
+VAR12 = VAR13;
+goto VAR29;
+}
+FUN3(*VAR5->VAR27, VAR16[VAR14].VAR30);
+}
+
+if (VAR5->VAR31)
+FUN4(*VAR5->VAR31,
+VAR16[VAR14].VAR31);
+
+if (VAR5->VAR32)
+memcpy(VAR16[VAR14].VAR32, VAR5->VAR32,
+VAR33);
+
+if (VAR5->VAR34) {
+if (VAR9) {
+VAR12 = FUN5(VAR16[VAR14].VAR34,
+VAR5->VAR34 +
+(VAR14 * VAR35),
+*VAR5->VAR27 + VAR14,
+VAR9, VAR11);
+if (VAR12 != VAR36)
+goto VAR29;
+} else {
+memcpy(VAR16[VAR14].VAR34,
+VAR5->VAR34 + (VAR14 * VAR35),
+VAR35);
+}
+}
+}
+
+if (VAR5->VAR37) {
+if (VAR5->VAR18 == VAR19) {
+VAR12 =
+FUN6(VAR5->VAR37,
+VAR38, VAR20->VAR39,
+VAR38, VAR16,
+VAR6);
+if (VAR12 != VAR36)
+goto VAR29;
+}
+memcpy(VAR16[VAR6 - 1].VAR37,
+VAR5->VAR37, VAR38);
+}
+
+memcpy(FUN7(VAR3), VAR16,
+VAR6 * VAR24);
+
+if (FUN8(VAR40)) {
+for (VAR14 = 0; VAR14 < VAR6; VAR14++) {
+FUN2("", VAR14);
+FUN9((VAR8 *)&VAR16[VAR14] + VAR41,
+512 - VAR41);
+}
+}
+
+VAR12 = VAR36;
+VAR29:
+free(VAR16);
+return VAR12;
+}

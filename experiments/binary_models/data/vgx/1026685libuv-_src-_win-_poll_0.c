@@ -1,0 +1,31 @@
+static VAR1 FUN1(HANDLE VAR2,
+VAR3* VAR4) {
+SOCKET VAR5 = 0;
+
+VAR5 = FUN2(VAR4->VAR6,
+VAR4->VAR7,
+VAR4->VAR8,
+VAR4,
+0,
+VAR9);
+if (VAR5 == VAR10) {
+return VAR10;
+}
+
+if (!FUN3((VAR11) VAR5, VAR12, 0)) {
+goto VAR13;
+};
+
+if (FUN4((VAR11) VAR5,
+VAR2,
+(VAR14) VAR5,
+0) == NULL) {
+goto VAR13;
+}
+
+return VAR5;
+
+VAR13:
+FUN5(VAR5);
+return VAR10;
+}

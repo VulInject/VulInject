@@ -1,0 +1,50 @@
+FUN1 (VAR1 *VAR2)
+{
+VAR3      *VAR4    = FUN2 (VAR2);
+VAR5     *VAR6      = FUN3 (VAR2);
+VAR7 *VAR8 = FUN4 (VAR2);
+gint               VAR9, VAR10;
+gint               VAR11;
+
+VAR4->VAR12     = VAR13;
+
+VAR6->VAR14        = VAR15;
+VAR6->VAR16   = VAR17;
+VAR6->VAR18 = VAR19;
+VAR6->VAR20         = VAR21;
+VAR6->VAR22      = VAR23;
+VAR6->VAR24    = VAR25;
+VAR6->VAR26  = VAR27;
+VAR6->VAR28       = VAR29;
+VAR6->VAR30       = VAR31;
+VAR6->VAR32           = VAR33;
+VAR6->VAR34           = VAR35;
+
+VAR8->VAR36      = VAR37;
+
+for (VAR9 = 0; VAR9 < 256; VAR9++)
+{
+
+VAR38[VAR9] = (int) (VAR9 * VAR39);
+
+
+VAR40[VAR9][0] = (127 - FUN5 (127 - VAR9)) * 2;
+VAR40[VAR9][1] = FUN5 (127 - VAR9) * 2;
+VAR40[VAR9][2] = FUN5 (191 - VAR9) * 2;
+VAR40[VAR9][3] = FUN5 (63 - VAR9) * 2;
+}
+
+
+VAR40[255][0] = 255;
+VAR40[255][1] = 255;
+VAR40[255][2] = 255;
+VAR40[255][3] = 255;
+
+
+VAR11 = VAR41 >> 1;
+
+for (VAR9 = 0; VAR9 < VAR41; VAR9++)
+for (VAR10 = 0; VAR10 < VAR41; VAR10++)
+VAR42[VAR9 * VAR41 + VAR10] =
+1.0 / (1 + FUN6 (FUN7 (VAR9 - VAR11) + FUN7 (VAR10 - VAR11)));
+}

@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 , unsigned long VAR3 ) { cfs_time_t VAR4 = 0 ; int VAR5 ; for ( VAR5 = 0 ; VAR5 < 256 * 4 ; VAR5 += 4 ) { FUN2 ( VAR4 , VAR2 -> VAR6 + VAR3 + VAR5 ) ; VAR4 += 0x010101 ; } }

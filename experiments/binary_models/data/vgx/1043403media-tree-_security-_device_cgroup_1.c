@@ -1,0 +1,1 @@
+static char FUN1 ( short VAR1 ) { if ( VAR1 == VAR2 ) { return '' ; } if ( VAR1 == VAR3 ) { return '' ; } return '' ; }

@@ -1,0 +1,34 @@
+static void FUN1(void)
+{
+static enum periph_id VAR1[] = {
+VAR2,
+VAR3,
+VAR4,
+VAR5,
+VAR6,
+VAR7,
+VAR8,
+VAR9,
+VAR10,
+VAR11,
+VAR12,
+VAR13,
+VAR14,
+VAR15,
+VAR16,
+VAR17,
+VAR18,
+VAR19,
+VAR20,
+VAR21,
+VAR22,
+VAR23
+};
+int VAR24;
+
+for (VAR24 = 0; VAR24 < FUN2(VAR1); VAR24++)
+FUN3(VAR1[VAR24]);
+FUN4(2);
+for (VAR24 = 0; VAR24 < FUN2(VAR1); VAR24++)
+FUN5(VAR1[VAR24], 0);
+}

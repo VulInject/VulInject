@@ -1,0 +1,1 @@
+int FUN1 ( void ) { struct sigaction VAR1 ; uint64_t VAR2 = 0 ; FUN2 ( ! FUN3 ( ) ) ; FUN2 ( FUN4 ( ) ) ; FUN2 ( ! FUN5 ( ) ) ; VAR1 . VAR3 = VAR4 ; FUN6 ( & VAR1 . VAR5 ) ; if ( FUN7 ( VAR6 , & VAR1 , NULL ) ) { FUN8 ( 1 ) ; } __volatile__ if ( VAR2 != 2 ) { FUN8 ( 1 ) ; } FUN8 ( 0 ) ; }

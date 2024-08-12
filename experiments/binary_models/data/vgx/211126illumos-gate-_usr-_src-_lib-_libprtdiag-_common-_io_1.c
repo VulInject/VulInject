@@ -1,0 +1,1 @@
+void FUN1 ( char * VAR1 , VAR2 * VAR3 , struct VAR4 * VAR5 ) { if ( strcmp ( VAR1 , "" ) == 0 ) { FUN2 ( VAR3 , VAR5 ) ; } }

@@ -1,0 +1,56 @@
+void
+FUN1()
+{
+struct VAR1 *VAR2 = VAR3;
+struct VAR4 *VAR5;
+char *VAR6, *VAR7;
+int VAR8;
+
+FUN2("");
+FUN2("");
+FUN2("");
+
+for (VAR5 = VAR2->VAR9; VAR5; VAR5 = VAR5->VAR10) {
+VAR8 = strlen(VAR5->VAR11);
+if (VAR8 < 8)
+VAR7 = "";
+else if (VAR8 < 16)
+VAR7 = "";
+else
+VAR7 = "";
+if (strcmp(VAR5->VAR11, "") == 0 ||
+strcmp(VAR5->VAR11, "") == 0 ||
+strcmp(VAR5->VAR11, "") == 0 ||
+strcmp(VAR5->VAR11, "") == 0)
+VAR6 = "";
+else
+VAR6 = "";
+FUN2(VAR6, VAR5->VAR11, VAR7, (int)VAR5->VAR12,
+(int)VAR5->VAR13.VAR14, (int)(VAR5->VAR15.VAR14 / 10),
+(int)VAR5->VAR13.VAR16, (int)(VAR5->VAR15.VAR16 / 10));
+}
+FUN3(FUN4(10000)); 
+
+FUN2("");
+FUN2("",
+VAR2->VAR17*VAR18/1000, VAR2->VAR17);
+FUN2("",
+VAR2->VAR19*VAR18/1000, VAR2->VAR19);
+if (VAR2->VAR20)
+FUN2("",
+VAR2->VAR20/1000, VAR2->VAR20/VAR18,
+((VAR2->VAR20%VAR18)*10/VAR18),
+((VAR2->VAR20%VAR18)*100/VAR18)%10);
+FUN2("", VAR2->VAR21/1000);
+FUN2("", VAR2->VAR22/1000);
+FUN2("", VAR2->VAR23/1000);
+if (VAR2->VAR23) {
+int VAR24 = VAR2->VAR25;
+int new = ((VAR26)((VAR26)
+VAR2->VAR21*100)/VAR2->VAR23);
+
+FUN2("",
+new/100, (new%100)/10, new%10,
+VAR24/100, (VAR24%100)/10, VAR24%10);
+}
+}

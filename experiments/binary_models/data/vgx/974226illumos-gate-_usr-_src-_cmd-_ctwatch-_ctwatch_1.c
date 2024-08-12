@@ -1,0 +1,1 @@
+static int FUN1 ( ctid_t VAR1 ) { ct_stathdl_t VAR2 ; int VAR3 , VAR4 ; if ( VAR5 = FUN2 ( VAR4 , VAR6 , & VAR2 ) ) { ( void ) close ( VAR4 ) ; return ( - 1 ) ; } VAR3 = FUN3 ( FUN4 ( VAR2 ) ) ; FUN5 ( VAR2 ) ; ( void ) close ( VAR4 ) ; return ( VAR3 ) ; }

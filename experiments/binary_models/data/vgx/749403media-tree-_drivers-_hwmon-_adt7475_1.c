@@ -1,0 +1,1 @@
+static int FUN1 ( long VAR1 , const int * VAR2 , int VAR3 ) { int VAR4 ; if ( VAR1 < VAR2 [ 0 ] ) { return 0 ; } for ( VAR4 = 0 ; VAR4 < VAR3 - 1 ; VAR4 ++ ) { int VAR5 , VAR6 ; if ( VAR1 > VAR2 [ VAR4 + 1 ] ) { continue ; } VAR5 = VAR1 - VAR2 [ VAR4 ] ; VAR6 = VAR2 [ VAR4 + 1 ] - VAR1 ; return ( VAR5 <= VAR6 ) ?VAR4 : VAR4 + 1 ; } return 0 ; }

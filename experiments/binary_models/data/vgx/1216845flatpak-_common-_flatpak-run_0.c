@@ -1,0 +1,242 @@
+FUN1 (VAR1   *VAR2,
+const char     *VAR3,
+gulong          VAR4,
+FlatpakRunFlags VAR5,
+VAR6        **VAR7)
+{
+gboolean VAR8 = (VAR5 & VAR9) != 0;
+gboolean VAR10 = (VAR5 & VAR11) != 0;
+
+FUN2((FUN3 (VAR12))) scmp_filter_ctx VAR13 = NULL;
+
+
+struct
+{
+int                  VAR14;
+int                  VAR15;
+struct VAR16 *VAR17;
+} VAR18[] = {
+
+{FUN4 (syslog), VAR19},
+
+{FUN4 (VAR20), VAR19},
+
+{FUN4 (VAR21), VAR19},
+
+{FUN4 (VAR22), VAR19},
+
+
+{FUN4 (VAR23), VAR19},
+{FUN4 (VAR24), VAR19},
+{FUN4 (VAR25), VAR19},
+
+
+{FUN4 (VAR26), VAR19},
+{FUN4 (VAR27), VAR19},
+{FUN4 (VAR28), VAR19},
+{FUN4 (VAR29), VAR19},
+{FUN4 (VAR30), VAR19},
+
+
+{FUN4 (VAR31), VAR19},
+{FUN4 (VAR32), VAR19},
+{FUN4 (VAR33), VAR19},
+{FUN4 (VAR34), VAR19},
+{FUN4 (VAR35), VAR19},
+{FUN4 (VAR36), VAR19},
+{FUN4 (VAR37), VAR19},
+
+{FUN4 (VAR38), VAR19, &FUN5 (VAR39, VAR40, VAR40)},
+
+{FUN4 (VAR38), VAR19, &FUN6 (VAR39, VAR40, VAR40)},
+
+
+{FUN4 (VAR41), VAR19, &FUN5 (VAR39, 0xFFFFFFFFu, (int) VAR42)},
+
+
+{FUN4 (VAR43), VAR44},
+
+
+{FUN4 (VAR45), VAR44},
+{FUN4 (VAR46), VAR44},
+{FUN4 (VAR47), VAR44},
+{FUN4 (VAR48), VAR44},
+{FUN4 (VAR49), VAR44},
+{FUN4 (VAR50), VAR44},
+{FUN4 (VAR51), VAR44},
+};
+
+struct
+{
+int                  VAR14;
+int                  VAR15;
+struct VAR16 *VAR17;
+} VAR52[] = {
+
+{FUN4 (VAR53), VAR19},
+
+{FUN4 (VAR54), VAR19, &FUN6 (VAR55, VAR4)},
+{FUN4 (VAR56), VAR19}
+};
+
+struct
+{
+int             VAR57;
+FlatpakRunFlags VAR58;
+} VAR59[] = {
+
+{ VAR60, 0 },
+{ VAR61, 0 },
+{ VAR62, 0 },
+{ VAR63, 0 },
+{ VAR64, 0 },
+{ VAR65, VAR66 },
+{ VAR67, VAR68 },
+};
+int VAR69;
+int VAR70, VAR71;
+FUN7(VAR72) VAR73  = { 0, };
+
+VAR13 = FUN8 (VAR74);
+if (!VAR13)
+return FUN9 (VAR7, VAR75, FUN10(""));
+
+if (VAR3 != NULL)
+{
+uint32_t VAR76 = 0;
+const VAR77 *VAR78 = NULL;
+
+if (strcmp (VAR3, "") == 0)
+{
+VAR76 = VAR79;
+}
+else if (strcmp (VAR3, "") == 0)
+{
+VAR76 = VAR80;
+VAR78 = VAR81;
+}
+else if (strcmp (VAR3, "") == 0)
+{
+VAR76 = VAR82;
+}
+else if (strcmp (VAR3, "") == 0)
+{
+VAR76 = VAR83;
+VAR78 = VAR84;
+}
+
+
+if (VAR76 != 0)
+{
+
+VAR71 = FUN11 (VAR13, VAR76);
+if (VAR71 < 0 && VAR71 != -VAR85)
+return FUN9 (VAR7, VAR75, FUN10(""), FUN12 (VAR71));
+
+if (VAR8 && VAR78 != NULL)
+{
+for (VAR70 = 0; VAR78[VAR70] != 0; VAR70++)
+{
+VAR71 = FUN11 (VAR13, VAR78[VAR70]);
+if (VAR71 < 0 && VAR71 != -VAR85)
+return FUN9 (VAR7, VAR75, FUN10(""), FUN12 (VAR71));
+}
+}
+}
+}
+
+
+
+for (VAR70 = 0; VAR70 < FUN13 (VAR18); VAR70++)
+{
+int VAR14 = VAR18[VAR70].VAR14;
+int VAR15 = VAR18[VAR70].VAR15;
+
+FUN14 (VAR15 == VAR19 || VAR15 == VAR44, VAR86);
+
+if (VAR18[VAR70].VAR17)
+VAR71 = FUN15 (VAR13, FUN16 (VAR15), VAR14, 1, *VAR18[VAR70].VAR17);
+else
+VAR71 = FUN15 (VAR13, FUN16 (VAR15), VAR14, 0);
+
+
+if (VAR71 == -VAR87)
+FUN17 ("",
+VAR14);
+else if (VAR71 < 0)
+return FUN9 (VAR7, VAR75, FUN10(""), VAR14, FUN12 (VAR71));
+}
+
+if (!VAR8)
+{
+
+int VAR14 = FUN4 (VAR88);
+VAR71 = FUN15 (VAR13, FUN16 (VAR19), VAR14, 0);
+
+
+if (VAR71 == -VAR87)
+FUN17 ("",
+VAR14);
+else if (VAR71 < 0)
+return FUN9 (VAR7, VAR75, FUN10(""), VAR14, FUN12 (VAR71));
+}
+
+if (!VAR10)
+{
+for (VAR70 = 0; VAR70 < FUN13 (VAR52); VAR70++)
+{
+int VAR14 = VAR52[VAR70].VAR14;
+int VAR15 = VAR52[VAR70].VAR15;
+
+FUN14 (VAR15 == VAR19 || VAR15 == VAR44, VAR86);
+
+if (VAR52[VAR70].VAR17)
+VAR71 = FUN15 (VAR13, FUN16 (VAR15), VAR14, 1, *VAR52[VAR70].VAR17);
+else
+VAR71 = FUN15 (VAR13, FUN16 (VAR15), VAR14, 0);
+
+
+if (VAR71 == -VAR87)
+FUN17 ("",
+VAR14);
+else if (VAR71 < 0)
+return FUN9 (VAR7, VAR75, FUN10(""), VAR14, FUN12 (VAR71));
+}
+}
+
+
+VAR69 = -1;
+for (VAR70 = 0; VAR70 < FUN13 (VAR59); VAR70++)
+{
+int VAR57 = VAR59[VAR70].VAR57;
+int VAR89;
+
+if (VAR59[VAR70].VAR58 != 0 &&
+(VAR59[VAR70].VAR58 & VAR5) != VAR59[VAR70].VAR58)
+continue;
+
+for (VAR89 = VAR69 + 1; VAR89 < VAR57; VAR89++)
+{
+
+FUN18 (VAR13, FUN16 (VAR90), FUN4 (socket), 1, FUN6 (VAR91, VAR89));
+}
+VAR69 = VAR57;
+}
+
+FUN18 (VAR13, FUN16 (VAR90), FUN4 (socket), 1, FUN6 (VAR92, VAR69 + 1));
+
+if (!FUN19 (VAR93 | VAR94, "", &VAR73, VAR7))
+return VAR86;
+
+VAR71 = FUN20 (VAR13, VAR73.VAR95);
+
+if (VAR71 != 0)
+return FUN9 (VAR7, VAR75, FUN10(""), FUN12 (VAR71));
+
+FUN21 (VAR73.VAR95, 0, VAR96);
+
+FUN22 (VAR2,
+"", FUN23 (&VAR73.VAR95), NULL);
+
+return VAR97;
+}

@@ -1,0 +1,1 @@
+static int FUN1 ( const char * VAR1 , unsigned long * VAR2 ) { char * VAR3 = NULL ; cfs_time_t VAR4 ; VAR4 = FUN2 ( VAR1 , & VAR3 , 10 ) ; if ( VAR3 && * VAR3 ) { VAR5 = VAR6 ; return - 1 ; } * VAR2 = VAR4 ; return 0 ; }

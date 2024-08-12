@@ -1,0 +1,1 @@
+static void FUN1 ( VAR1 * VAR2 , dev_t VAR3 ) { VAR4 * VAR5 ; ldi_handle_t VAR6 ; FUN2 ( VAR7 , "" ) ; VAR5 = FUN3 ( VAR6 ) ; if ( VAR5 == NULL ) { FUN2 ( VAR7 , "" ) ; ( void ) FUN4 ( VAR6 , VAR8 | VAR9 , VAR10 ) ; return ; } FUN5 ( ) ; FUN2 ( VAR7 , "" ) ; ( void ) FUN6 ( VAR5 , 0 ) ; ( void ) FUN4 ( VAR6 , VAR8 | VAR9 , VAR10 ) ; FUN2 ( VAR7 , "" ) ; }

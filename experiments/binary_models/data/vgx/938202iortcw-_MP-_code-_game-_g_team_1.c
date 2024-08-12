@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( int VAR2 ) { char * VAR3 ; VAR1 * VAR4 , * VAR5 = NULL ; switch ( VAR2 ) { case VAR6 : VAR3 = "" ; break ; case VAR7 : VAR3 = "" ; break ; default : return NULL ; } VAR4 = NULL ; while ( ( VAR4 = FUN2 ( VAR4 , FUN3 ( VAR8 ) , VAR3 ) ) != NULL ) { if ( VAR4 -> VAR9 & VAR10 ) { FUN4 ( VAR4 ) ; } else { VAR5 = VAR4 ; FUN5 ( VAR4 , NULL ) ; } } return VAR5 ; }

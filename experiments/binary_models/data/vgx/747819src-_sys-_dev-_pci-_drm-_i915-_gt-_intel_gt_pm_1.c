@@ -1,0 +1,1 @@
+ktime_t FUN1 ( const struct VAR1 * VAR2 ) { unsigned int VAR3 ; ktime_t VAR4 ; { VAR3 = FUN2 ( & VAR2 -> VAR5 . VAR6 ) ; VAR4 = FUN3 ( VAR2 , NULL ) ; } FUN4 ( & VAR2 -> VAR5 . VAR6 , VAR3 ) ; { VAR3 = FUN2 ( ( VAR7 * ) & VAR2 -> VAR5 . VAR6 ) ; VAR4 = FUN3 ( VAR2 ) ; } FUN4 ( ( VAR7 * ) & VAR2 -> VAR5 . VAR6 , VAR3 ) ; return VAR4 ; }

@@ -1,0 +1,200 @@
+static int FUN1(struct VAR1 *VAR1, size_t VAR2,
+int *VAR3, VAR4 **VAR5)
+{
+int VAR6;
+struct VAR7 *VAR8 = FUN2(VAR1);
+size_t VAR9 = FUN3(VAR8) + VAR2;
+uint16_t VAR10 = 0;
+
+assert(FUN4(VAR8) >= VAR2);
+
+while (FUN3(VAR8) < VAR9) {
+size_t VAR11;
+VAR4 *VAR12 = FUN5(VAR8);
+struct capability_header VAR13;
+
+VAR6 = 0;
+
+if (FUN3(VAR8) + 2 > VAR9) {
+FUN6("",
+VAR1->VAR14);
+FUN7(VAR1, VAR15,
+VAR16);
+return -1;
+}
+
+VAR13.VAR17 = FUN8(VAR8);
+VAR13.VAR2 = FUN8(VAR8);
+VAR11 = FUN3(VAR8);
+
+
+if (VAR11 + VAR13.VAR2 > VAR9) {
+FUN6("",
+VAR1->VAR14);
+FUN7(VAR1, VAR15,
+VAR16);
+return -1;
+}
+
+if (FUN9(VAR1))
+FUN10("",
+VAR1->VAR14,
+FUN11(VAR18, VAR13.VAR17, NULL),
+VAR13.VAR17, VAR13.VAR2);
+
+
+switch (VAR13.VAR17) {
+case VAR19:
+case VAR20:
+case VAR21:
+case VAR22:
+case VAR23:
+case VAR24:
+case VAR25:
+case VAR26:
+case VAR27:
+case VAR28:
+case VAR29:
+case VAR30:
+case VAR31:
+case VAR32:
+case VAR33:
+case VAR34:
+
+if (VAR13.VAR2 < VAR35[VAR13.VAR17]) {
+FUN6(
+"",
+VAR1->VAR14,
+FUN11(VAR18, VAR13.VAR17,
+NULL),
+VAR13.VAR2,
+(unsigned)VAR35[VAR13.VAR17]);
+FUN7(VAR1, VAR15,
+VAR16);
+return -1;
+}
+if (VAR13.VAR2
+&& VAR13.VAR2 % VAR36[VAR13.VAR17] != 0) {
+FUN6(
+"",
+VAR1->VAR14,
+FUN11(VAR18, VAR13.VAR17,
+NULL),
+VAR13.VAR2,
+(unsigned)VAR36[VAR13.VAR17]);
+FUN7(VAR1, VAR15,
+VAR16);
+return -1;
+}
+
+default:
+break;
+}
+
+switch (VAR13.VAR17) {
+case VAR19: {
+*VAR3 = 1;
+
+
+if (!FUN12(VAR1->VAR37,
+VAR38)) {
+
+VAR6 = FUN13(VAR1, &VAR13);
+
+
+if (VAR6 < 0) {
+
+memcpy(*VAR5, VAR12, VAR13.VAR2 + 2);
+*VAR5 += VAR13.VAR2 + 2;
+}
+VAR6 = 0; 
+}
+} break;
+case VAR31:
+case VAR20:
+case VAR21: {
+
+if (VAR13.VAR17 == VAR31)
+FUN14(VAR1->VAR39, VAR40);
+else if (VAR13.VAR17 == VAR21)
+FUN14(VAR1->VAR39, VAR41);
+else
+FUN14(VAR1->VAR39, VAR42);
+} break;
+case VAR22:
+case VAR23:
+VAR6 = FUN15(VAR1, &VAR13);
+break;
+case VAR24:
+VAR6 = FUN16(VAR1, &VAR13);
+break;
+case VAR43:
+VAR6 = FUN17(VAR1, &VAR13);
+break;
+case VAR27:
+case VAR28:
+FUN14(VAR1->VAR39, VAR44);
+break;
+case VAR25:
+
+if (!FUN18(VAR1, &VAR13))
+VAR6 = -1;
+break;
+case VAR26:
+VAR6 = FUN19(VAR1, &VAR13);
+break;
+case VAR29:
+VAR6 = FUN20(VAR1, &VAR13);
+break;
+case VAR32:
+VAR6 = FUN21(VAR1, &VAR13);
+break;
+case VAR30:
+VAR6 = FUN22(VAR1, &VAR13);
+break;
+case VAR33:
+VAR6 = FUN23(VAR1, &VAR13);
+break;
+case VAR34:
+VAR6 = FUN24(VAR1, &VAR13);
+break;
+default:
+if (VAR13.VAR17 > 128) {
+
+FUN25(VAR45,
+"",
+VAR1->VAR14, VAR13.VAR17);
+} else {
+FUN25(
+VAR46,
+"",
+VAR1->VAR14, VAR13.VAR17);
+memcpy(*VAR5, VAR12, VAR13.VAR2 + 2);
+*VAR5 += VAR13.VAR2 + 2;
+}
+}
+
+if (VAR6 < 0) {
+FUN7(VAR1, VAR15,
+VAR16);
+return -1;
+}
+if (FUN3(VAR8) != (VAR11 + VAR13.VAR2)) {
+if (FUN3(VAR8) > (VAR11 + VAR13.VAR2))
+FUN25(
+VAR47,
+"",
+VAR1->VAR14,
+FUN11(VAR18, VAR13.VAR17,
+NULL),
+VAR13.VAR2);
+FUN26(VAR8, VAR11 + VAR13.VAR2);
+}
+
+if (!FUN12(VAR1->VAR39, VAR48)) {
+FUN27(VAR10, 0xF000);
+VAR1->VAR49 = VAR10;
+}
+}
+return 0;
+}

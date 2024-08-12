@@ -1,0 +1,1 @@
+int FUN1 ( int * FUN2 ( struct VAR1 , void * ) , void * VAR2 ) { struct subchannel_id VAR3 ; int VAR4 ; FUN3 ( & VAR3 ) ; { { VAR4 = FUN2 ( VAR3 , VAR2 ) ; } VAR3 . VAR5 ++ < VAR6 ; VAR3 . VAR5 = 0 ; } VAR3 . VAR7 ++ < VAR8 ; return VAR4 ; } VAR9 { void * VAR2 ; struct VAR10 * VAR11 ; int * FUN4 ( struct VAR12 * , void * ) int * FUN5 ( struct VAR1 , void * ) }

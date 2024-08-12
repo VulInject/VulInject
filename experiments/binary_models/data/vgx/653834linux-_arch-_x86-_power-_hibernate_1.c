@@ -1,0 +1,1 @@
+int FUN1 ( unsigned long VAR1 ) { unsigned long VAR2 ; unsigned long VAR3 ; VAR2 = FUN2 ( & VAR4 ) >> VAR5 ; VAR3 = FUN3 ( FUN2 ( & VAR6 ) ) >> VAR5 ; return VAR1 >= VAR2 && VAR1 < VAR3 ; } VAR7 { unsigned long VAR8 ; unsigned long VAR9 ; cfs_time_t VAR10 ; unsigned long VAR11 ; unsigned long VAR12 ; }

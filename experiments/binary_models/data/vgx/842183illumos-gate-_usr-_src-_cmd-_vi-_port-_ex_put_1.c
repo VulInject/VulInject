@@ -1,0 +1,1 @@
+void FUN1 ( void ) { if ( VAR1 ) { return ; } if ( VAR2 == 0 || VAR3 ) { return ; } FUN2 ( ) ; FUN3 ( ) ; VAR3 = 1 ; VAR4 ++ ; VAR5 = VAR6 ; VAR5 . VAR7 &= ~ ( VAR8 | VAR9 ) ; VAR5 . VAR10 &= ~ VAR11 ; FUN4 ( ) ; FUN5 ( 2 ) ; }

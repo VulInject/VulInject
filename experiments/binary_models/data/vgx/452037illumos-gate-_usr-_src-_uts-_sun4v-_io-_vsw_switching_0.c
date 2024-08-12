@@ -1,0 +1,83 @@
+int
+FUN1(VAR1 *VAR2, uint8_t VAR3, uint64_t VAR4, void *VAR5)
+{
+int		VAR6 = 0;
+int		VAR7 = 0;
+VAR8	*VAR9 = NULL;
+VAR8	*VAR10 = NULL;
+VAR8	*VAR11 = NULL;
+void		*VAR12 = NULL;
+
+if (VAR3 == VAR13) {
+
+FUN2(VAR5 != NULL);
+VAR12 = VAR5;
+FUN3(NULL, "", VAR14,
+((VAR15 *)VAR5)->VAR16, VAR4);
+} else {
+
+FUN3(NULL, "", VAR14, VAR4);
+VAR12 = (void *)VAR2;
+}
+
+FUN4(&VAR2->VAR17);
+if (FUN5(VAR2->VAR18, (VAR19)VAR4,
+(VAR20 *)&VAR9) != 0) {
+
+
+VAR9 = FUN6(sizeof (VAR8), VAR21);
+VAR9->VAR22 = (void *)VAR12;
+VAR9->VAR23 = VAR3;
+VAR9->VAR24 = NULL;
+
+if (FUN7(VAR2->VAR18, (VAR19)VAR4,
+(VAR20)VAR9) != 0) {
+FUN8(VAR2, "", VAR14);
+FUN9(VAR9, sizeof (VAR8));
+VAR7 = 1;
+} else {
+FUN3(VAR2, ""
+"", VAR14, VAR4);
+}
+} else {
+
+VAR10 = VAR9;
+while (VAR10 != NULL) {
+if (VAR10->VAR22 == (void *)VAR12) {
+if (VAR3 == VAR13) {
+FUN8(VAR2, ""
+""
+"", VAR14,
+((VAR15 *)VAR5)->VAR16,
+VAR4);
+} else {
+FUN8(VAR2, ""
+"", VAR14, VAR4);
+}
+VAR7 = 1;
+VAR6 = 1;
+break;
+}
+VAR10 = VAR10->VAR24;
+}
+
+
+if (0 == VAR6) {
+FUN3(VAR2, "",
+VAR14, VAR4);
+VAR11 = FUN6(sizeof (VAR8), VAR21);
+VAR11->VAR22 = (void *)VAR12;
+VAR11->VAR23 = VAR3;
+VAR11->VAR24 = NULL;
+
+VAR10 = VAR9;
+while (VAR10->VAR24 != NULL)
+VAR10 = VAR10->VAR24;
+
+VAR10->VAR24 = VAR11;
+}
+}
+
+FUN10(&VAR2->VAR17);
+return (VAR7);
+}

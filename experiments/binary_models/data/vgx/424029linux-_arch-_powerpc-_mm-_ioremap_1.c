@@ -1,0 +1,1 @@
+int FUN1 ( unsigned long VAR1 , phys_addr_t VAR2 , unsigned long VAR3 , pgprot_t VAR4 ) { unsigned long VAR5 ; for ( VAR5 = 0 ; VAR5 < VAR3 ; VAR5 += VAR6 ) { int VAR7 = FUN2 ( VAR1 + VAR5 , VAR2 + VAR5 , VAR4 ) ; } return 0 ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( const VAR1 * VAR2 , const VAR1 * VAR3 , size_t VAR4 ) { for ( ; 0 < VAR4 ; ++ VAR2 , ++ VAR3 , -- VAR4 ) { krb5_unicode VAR5 = FUN2 ( * VAR2 ) ; krb5_unicode VAR6 = FUN2 ( * VAR3 ) ; if ( VAR5 != VAR6 ) { return VAR5 < VAR6 ?- 1 : + 1 ; } } return 0 ; }

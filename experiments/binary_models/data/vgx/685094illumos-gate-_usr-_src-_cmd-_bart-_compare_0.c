@@ -1,0 +1,33 @@
+static void
+FUN1(char *VAR1, char *VAR2, char *VAR3, char *VAR4, char *VAR5,
+char *VAR6, char *VAR7, char *VAR8, char *VAR9, char *VAR10, char *VAR11,
+char *VAR12)
+{
+int		VAR13, VAR14;
+
+VAR14 = strlen(VAR1);
+VAR13 = 0;
+
+FUN2(VAR1, &VAR13, VAR14, VAR2, VAR15);
+FUN2(VAR1, &VAR13, VAR14, VAR3, VAR16);
+FUN2(VAR1, &VAR13, VAR14, VAR4, VAR17);
+FUN2(VAR1, &VAR13, VAR14, VAR5, VAR17);
+FUN2(VAR1, &VAR13, VAR14, VAR6, VAR18);
+FUN2(VAR1, &VAR13, VAR14, VAR7, VAR17);
+FUN2(VAR1, &VAR13, VAR14, VAR8, VAR17);
+FUN2(VAR1, &VAR13, VAR14, VAR9, VAR17);
+
+
+
+*VAR10 = '';
+*VAR11 = '';
+*VAR12 = '';
+
+
+if (VAR3[0] == '')
+FUN2(VAR1, &VAR13, VAR14, VAR10, VAR15);
+else if ((VAR3[0] == '') || (VAR3[0] == ''))
+FUN2(VAR1, &VAR13, VAR14, VAR11, VAR15);
+else if (VAR3[0] == '')
+FUN2(VAR1, &VAR13, VAR14, VAR12, VAR15);
+}

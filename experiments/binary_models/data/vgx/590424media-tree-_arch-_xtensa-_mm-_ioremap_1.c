@@ -1,0 +1,1 @@
+( VAR1 ) ; void FUN1 ( volatile void VAR2 * VAR3 ) { void * VAR4 = ( void * ) ( VAR5 & ( unsigned long ) VAR3 ) ; FUN2 ( VAR4 , NULL ) ; }

@@ -1,0 +1,15 @@
+void FUN1(void)
+{
+unsigned long VAR1 = 0x08000000;
+unsigned long VAR2 = VAR1 - (unsigned long)VAR3;
+u32 VAR4;
+
+FUN2(VAR3, VAR2, 128, 64);
+VAR5.VAR6 = VAR7;
+VAR5.VAR8 = VAR9;
+VAR5.VAR10 = VAR11;
+VAR4 = FUN3(VAR12);
+FUN4(VAR13, VAR4);
+FUN5(VAR13);
+FUN6();
+}

@@ -1,0 +1,1 @@
+static bool FUN1(struct VAR1 *VAR2) { return (FUN2(VAR2->VAR3) && VAR2->VAR4 == sizeof(struct VAR1) && VAR2->VAR5 == sizeof(struct VAR6) && (VAR2->VAR7 == VAR8 || VAR2->VAR7 == VAR9)); }

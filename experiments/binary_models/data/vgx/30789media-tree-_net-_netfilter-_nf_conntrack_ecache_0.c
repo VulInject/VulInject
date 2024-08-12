@@ -1,0 +1,51 @@
+int FUN1(unsigned int VAR1, struct VAR2 *VAR3,
+u32 VAR4, int VAR5)
+{
+int VAR6 = 0;
+struct VAR7 *VAR7 = FUN2(VAR3);
+struct VAR8 *VAR9;
+struct VAR10 *VAR11;
+
+FUN3();
+VAR9 = FUN4(VAR7->VAR3.VAR12);
+if (!VAR9)
+goto VAR13;
+
+VAR11 = FUN5(VAR3);
+if (!VAR11)
+goto VAR13;
+
+if (FUN6(VAR3)) {
+struct nf_ct_event VAR14 = {
+.VAR3	= VAR3,
+.VAR4	= VAR11->VAR4 ? VAR11->VAR4 : VAR4,
+.VAR5 = VAR5
+};
+
+unsigned long VAR15 = VAR11->VAR4 ? 0 : VAR11->VAR15;
+
+if (!((VAR1 | VAR15) & VAR11->VAR16))
+goto VAR13;
+
+VAR6 = VAR9->FUN7(VAR1 | VAR15, &VAR14);
+if (FUN8(VAR6 < 0 || VAR15)) {
+FUN9(&VAR3->VAR17);
+if (VAR6 < 0) {
+
+if (VAR1 & (1 << VAR18)) {
+if (VAR11->VAR4 == 0 && VAR4 != 0)
+VAR11->VAR4 = VAR4;
+VAR11->VAR19 = VAR20;
+} else {
+VAR11->VAR15 |= VAR1;
+}
+} else {
+VAR11->VAR15 &= ~VAR15;
+}
+FUN10(&VAR3->VAR17);
+}
+}
+VAR13:
+FUN11();
+return VAR6;
+}

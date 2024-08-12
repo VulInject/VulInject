@@ -1,0 +1,10 @@
+int 
+FUN1(int *VAR1) 
+{
+VAR1[0]=VAR2;
+VAR1[1]=VAR3;
+VAR1[2]=VAR4;
+VAR1[3]=VAR5;
+VAR1[4]=VAR6;
+return 0;
+}

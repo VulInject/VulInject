@@ -1,0 +1,31 @@
+static void FUN1(VAR1 *VAR2, int32_t VAR3)
+{
+    uint32_t VAR4, VAR5, VAR6, VAR7;
+    uint32_t VAR8, VAR9, VAR10, VAR11;
+    uint64_t VAR12, VAR13;
+    v16u8 VAR14;
+    v8u16 VAR15;
+    v4u32 VAR16;
+    VAR14 = FUN2(VAR2 - VAR3);
+    VAR15 = FUN3(VAR14, VAR14);
+    VAR16 = FUN4(VAR15, VAR15);
+    VAR4 = FUN5((VAR17)VAR16, 0);
+    VAR5 = FUN5((VAR17)VAR16, 1);
+    VAR6 = VAR2[4 * VAR3 - 1];
+    VAR6 += VAR2[5 * VAR3 - 1];
+    VAR6 += VAR2[6 * VAR3 - 1];
+    VAR6 += VAR2[7 * VAR3 - 1];
+    VAR4 = (VAR4 + 2) >> 2;
+    VAR7 = (VAR5 + VAR6 + 4) >> 3;
+    VAR5 = (VAR5 + 2) >> 2;
+    VAR6 = (VAR6 + 2) >> 2;
+    VAR8 = VAR4 * 0x01010101;
+    VAR9 = VAR5 * 0x01010101;
+    VAR10 = VAR6 * 0x01010101;
+    VAR11 = VAR7 * 0x01010101;
+    VAR12 = ((VAR18)VAR9 << 32) | VAR8;
+    VAR13 = ((VAR18)VAR11 << 32) | VAR10;
+    FUN6(VAR12, VAR12, VAR12, VAR12, VAR2, VAR3);
+    VAR2 += (4 * VAR3);
+    FUN6(VAR13, VAR13, VAR13, VAR13, VAR2, VAR3);
+}

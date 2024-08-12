@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 ) { Int32 VAR3 ; VAR2 -> VAR4 = 0 ; VAR2 -> VAR5 = 0 ; FUN2 ( VAR2 -> VAR6 ) ; for ( VAR3 = 0 ; VAR3 < 256 ; VAR3 ++ ) { VAR2 -> VAR7 [ VAR3 ] = VAR8 ; } VAR2 -> VAR9 ++ ; }

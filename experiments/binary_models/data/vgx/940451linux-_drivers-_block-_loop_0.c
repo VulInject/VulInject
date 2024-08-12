@@ -1,0 +1,65 @@
+static int
+FUN1(struct VAR1 *VAR2, const struct VAR3 *VAR4)
+{
+int VAR5;
+int VAR6;
+bool VAR7 = false;
+bool VAR8 = false;
+
+VAR5 = FUN2(&VAR2->VAR9);
+if (VAR5)
+return VAR5;
+if (VAR2->VAR10 != VAR11) {
+VAR5 = -VAR12;
+goto VAR13;
+}
+
+if (VAR2->VAR14 != VAR4->VAR14 ||
+VAR2->VAR15 != VAR4->VAR15) {
+VAR8 = true;
+FUN3(VAR2->VAR16);
+FUN4(VAR2->VAR16);
+}
+
+
+FUN5(VAR2->VAR17);
+
+VAR6 = VAR2->VAR18;
+
+VAR5 = FUN6(VAR2, VAR4);
+if (VAR5)
+goto VAR19;
+
+
+VAR2->VAR18 &= VAR20;
+
+VAR2->VAR18 |= VAR6 & ~VAR20;
+
+VAR2->VAR18 |= VAR6 & ~VAR21;
+
+if (VAR8) {
+loff_t VAR22 = FUN7(VAR2->VAR14, VAR2->VAR15,
+VAR2->VAR23);
+FUN8(VAR2, VAR22);
+}
+
+FUN9(VAR2);
+
+
+FUN10(VAR2, VAR2->VAR24);
+
+VAR19:
+FUN11(VAR2->VAR17);
+
+if (!VAR5 && (VAR2->VAR18 & VAR25) &&
+!(VAR6 & VAR25)) {
+FUN12(VAR26, &VAR2->VAR27->VAR28);
+VAR7 = true;
+}
+VAR13:
+FUN13(&VAR2->VAR9);
+if (VAR7)
+FUN14(VAR2);
+
+return VAR5;
+}

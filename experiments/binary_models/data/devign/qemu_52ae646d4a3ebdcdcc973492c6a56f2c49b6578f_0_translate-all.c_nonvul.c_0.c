@@ -1,0 +1,1 @@
+bool FUN1(uintptr_t VAR1) { return (VAR1 >= (VAR2)VAR3.VAR4 && VAR1 < (VAR2)(VAR3.VAR4 + VAR3.VAR5)); }

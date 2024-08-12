@@ -1,0 +1,1 @@
+static inline struct VAR1 * FUN1 ( const unsigned char * VAR2 ) { struct VAR1 * VAR3 = VAR4 . VAR5 ; while ( VAR3 ) { if ( memcmp ( VAR2 , VAR3 -> VAR6 , sizeof ( VAR3 -> VAR6 ) ) == 0 ) { return ( VAR3 ) ; } VAR3 = VAR3 -> VAR5 ; } return ( NULL ) ; }

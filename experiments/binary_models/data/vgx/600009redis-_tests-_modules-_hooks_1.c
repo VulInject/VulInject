@@ -1,0 +1,1 @@
+void FUN1 ( VAR1 * VAR2 , RedisModuleEvent VAR3 , uint64_t VAR4 , void * VAR5 ) { FUN2 ( VAR3 ) ; VAR6 * VAR7 = VAR5 ; FUN3 ( VAR2 , "" , VAR7 -> VAR8 ) ; FUN4 ( VAR2 , "" , VAR7 -> VAR9 [ 0 ] ) ; }

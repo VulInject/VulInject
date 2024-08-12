@@ -1,0 +1,41 @@
+void FUN1(VAR1 *VAR2, int VAR3, VAR4 *VAR5)
+{
+    FUN2(VAR6, 1);
+    FUN3(VAR6, 1);
+    void FUN4(VAR1 * VAR2, int VAR7, VAR8 *VAR5);
+    FUN4(VAR2, VAR3, (VAR8 *)VAR5);
+    FUN5(VAR6, 1);
+    vector_u8_t VAR9;
+    vector_s16_t VAR10, VAR11;
+    vector_u8_t VAR12;
+    vector_u8_t VAR13;
+    vector_u8_t VAR14, VAR15, VAR16;
+    FUN3(VAR6, 1);
+    IDCT VAR14 = FUN6(0, VAR2);
+    VAR15 = FUN6(VAR3, VAR2);
+    VAR16 = FUN7(-1);
+    VAR12 = FUN8(VAR16, VAR14);
+    VAR13 = FUN8(VAR16, VAR15);
+    VAR9 = FUN9(0, VAR2);
+    VAR10 = (VAR4)FUN10(VAR9, (VAR17)VAR18, VAR19);
+    VAR11 = FUN11(VAR10, VAR20);
+    VAR9 = FUN12(VAR11, VAR11);
+    FUN13((VAR21)VAR9, 0, (unsigned int *)VAR2);
+    FUN13((VAR21)VAR9, 4, (unsigned int *)VAR2);
+    FUN14(VAR2, VAR22, VAR12)
+    VAR2 += VAR3;
+    FUN14(VAR2, VAR23, VAR13)
+    VAR2 += VAR3;
+    FUN14(VAR2, VAR24, VAR12)
+    VAR2 += VAR3;
+    FUN14(VAR2, VAR25, VAR13)
+    VAR2 += VAR3;
+    FUN14(VAR2, VAR26, VAR12)
+    VAR2 += VAR3;
+    FUN14(VAR2, VAR27, VAR13)
+    VAR2 += VAR3;
+    FUN14(VAR2, VAR28, VAR12)
+    VAR2 += VAR3;
+    FUN14(VAR2, VAR29, VAR13)
+    FUN5(VAR6, 1);
+}

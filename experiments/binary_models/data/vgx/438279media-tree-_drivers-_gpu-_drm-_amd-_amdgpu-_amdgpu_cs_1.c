@@ -1,0 +1,1 @@
+static s64 FUN1 ( struct VAR1 * VAR2 , u64 VAR3 ) { return VAR3 >> VAR2 -> VAR4 . VAR5 ; }

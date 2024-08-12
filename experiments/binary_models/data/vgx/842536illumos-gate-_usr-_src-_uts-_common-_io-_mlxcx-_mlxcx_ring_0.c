@@ -1,0 +1,65 @@
+void
+FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+size_t VAR5, VAR6, VAR7, VAR8, VAR9;
+VAR10 *VAR11;
+VAR12 *VAR13;
+VAR14 *VAR15[VAR16];
+uint_t VAR17;
+
+FUN2(FUN3(&VAR4->VAR18));
+VAR11 = VAR4->VAR19;
+FUN2(FUN3(&VAR11->VAR20));
+
+FUN2(VAR4->VAR21 & VAR22);
+
+VAR5 = VAR4->VAR23 - VAR16;
+VAR11 = VAR4->VAR19;
+
+if ((VAR4->VAR21 & VAR24) == 0)
+return;
+
+if ((VAR11->VAR25 & VAR26) != 0)
+return;
+
+VAR6 = VAR11->VAR27;
+
+if (VAR6 >= VAR5 - VAR16)
+return;
+
+VAR7 = VAR5 - VAR6;
+VAR8 = 0;
+
+while (!(VAR4->VAR21 & VAR28) && VAR8 < VAR7) {
+VAR9 = FUN4(VAR2, VAR4, VAR15, VAR16);
+if (VAR9 == 0) {
+
+if (VAR6 < VAR16 &&
+(VAR4->VAR21 & VAR29) == 0) {
+VAR4->VAR21 |= VAR29;
+VAR13 = VAR4->VAR30;
+FUN5(VAR13->VAR31,
+VAR32, VAR4, VAR33,
+&VAR4->VAR34);
+}
+
+return;
+}
+
+if ((VAR4->VAR21 & VAR28) != 0) {
+for (VAR17 = 0; VAR17 < VAR9; ++VAR17)
+FUN6(VAR2, VAR15[VAR17]);
+return;
+}
+if (!FUN7(VAR2, VAR4, VAR15, VAR9)) {
+
+for (VAR17 = 0; VAR17 < VAR9; ++VAR17) {
+if (VAR15[VAR17] != NULL) {
+FUN6(VAR2, VAR15[VAR17]);
+}
+}
+return;
+}
+VAR8 += VAR9;
+}
+}

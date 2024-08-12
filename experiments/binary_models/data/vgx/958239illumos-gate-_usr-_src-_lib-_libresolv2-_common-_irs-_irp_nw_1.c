@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * this ) { struct VAR2 * VAR2 = ( VAR2 * ) this -> private ; FUN2 ( VAR2 -> VAR3 , NULL ) ; }

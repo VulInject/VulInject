@@ -1,0 +1,1 @@
+int main ( int argc , char * * argv ) { krb5_context VAR1 ; krb5_error_code VAR2 ; FUN1 ( argv [ 0 ] ) ; VAR2 = FUN2 ( & VAR1 ) ; if ( VAR2 ) { FUN3 ( 1 , "" , VAR2 ) ; } FUN4 ( VAR1 ) ; return 0 ; }

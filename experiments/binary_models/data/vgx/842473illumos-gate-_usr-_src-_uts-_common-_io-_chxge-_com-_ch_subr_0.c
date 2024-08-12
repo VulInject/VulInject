@@ -1,0 +1,32 @@
+static int FUN1(VAR1 *VAR2)
+{
+u32 VAR3 = FUN2(VAR2, VAR4);
+
+VAR3 &= ~VAR5;
+if (VAR3 & VAR6)
+(void) FUN3(VAR2->VAR7);
+
+if (VAR3 & VAR8)
+(void) FUN4(VAR2);
+
+if (VAR3 & VAR9) {
+
+u32 VAR10 = FUN2(VAR2,
+VAR11);
+if (VAR10 & VAR12)
+FUN5(VAR2->VAR13);
+
+FUN6(VAR2, VAR11,
+VAR10);
+}
+if (VAR3 & VAR14)
+(void) FUN7(VAR2->VAR15);
+if (VAR3 & VAR16)
+(void) FUN8(VAR2);
+
+
+if (VAR3)
+FUN6(VAR2, VAR4, VAR3);
+
+return (VAR3 != 0);
+}

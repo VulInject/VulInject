@@ -1,0 +1,1 @@
+void FUN1 ( const VAR1 * VAR2 , struct VAR3 * VAR4 ) { if ( VAR2 -> VAR5 & VAR6 ) { VAR4 -> VAR7 = VAR2 -> VAR8 ; } if ( VAR2 -> VAR5 & VAR9 ) { VAR4 -> VAR10 = VAR2 -> VAR11 ; VAR4 -> VAR12 = VAR2 -> VAR13 ; } if ( VAR2 -> VAR5 & VAR14 ) { VAR4 -> VAR15 = VAR2 -> VAR16 ; } if ( VAR2 -> VAR5 & VAR17 ) { VAR4 -> VAR18 = VAR2 -> VAR19 ; VAR4 -> VAR20 = VAR2 -> VAR21 ; } }

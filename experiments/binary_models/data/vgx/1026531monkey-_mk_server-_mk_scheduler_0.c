@@ -1,0 +1,30 @@
+int FUN1(struct VAR1 *VAR2,
+struct VAR3 *VAR4)
+{
+int VAR5;
+struct VAR6 *VAR7;
+struct VAR8 *VAR9;
+struct VAR8 *VAR10;
+
+
+FUN2(VAR9, VAR10, &VAR2->VAR11) {
+VAR7 = FUN3(VAR9, struct VAR6, VAR12);
+if (VAR7->VAR13.VAR14 & VAR15) {
+continue;
+}
+
+VAR5 = VAR7->VAR16 + VAR4->VAR17;
+
+
+if (VAR5 <= VAR18) {
+FUN4("",
+VAR7->VAR13.VAR19);
+FUN5(VAR7->VAR13.VAR19, "");
+VAR7->VAR20->FUN6(VAR7, VAR2, VAR21,
+VAR4);
+FUN7(VAR7, VAR2, VAR4);
+}
+}
+
+return 0;
+}

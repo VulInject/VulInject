@@ -1,0 +1,7 @@
+VAR1 *FUN1(VAR2 *VAR3, const char *VAR4, int VAR5, int VAR6, VAR7 *VAR8, VAR9 *VAR10)
+{
+    VAR1 *VAR11;
+    VAR11 = FUN2(VAR5);
+    VAR11 = FUN3(VAR11, VAR3, VAR4, VAR6, VAR8, VAR10, VAR12);
+    return VAR11;
+}

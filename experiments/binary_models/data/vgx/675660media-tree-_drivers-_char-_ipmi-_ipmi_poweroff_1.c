@@ -1,0 +1,1 @@
+static void * FUN1 ( void ) static int FUN2 ( const char * VAR1 , struct VAR2 * VAR3 ) { int VAR4 = FUN3 ( VAR1 , VAR3 ) ; if ( ( VAR5 < 0 ) || ( VAR5 == VAR6 ) ) { return 0 ; } FUN4 ( VAR6 ) ; FUN5 ( VAR5 , NULL ) ; return 0 ; }

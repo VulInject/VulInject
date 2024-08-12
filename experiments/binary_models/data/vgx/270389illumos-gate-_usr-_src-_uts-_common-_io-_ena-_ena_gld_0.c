@@ -1,0 +1,17 @@
+static void
+FUN1(void *VAR1, mac_ring_type_t VAR2, const int VAR3,
+const int VAR4, VAR5 *VAR6, mac_ring_handle_t VAR7)
+{
+VAR8 *VAR9 = VAR1;
+VAR10 *VAR11 = &(VAR9->VAR12[VAR4]);
+
+FUN2(VAR2, ==, VAR13);
+FUN2(VAR4, <, VAR9->VAR14);
+
+VAR11->VAR15 = VAR7;
+VAR6->VAR16 = (VAR17)VAR11;
+VAR6->VAR18 = VAR19;
+VAR6->VAR20 = VAR21;
+VAR6->VAR22 = VAR23;
+VAR6->VAR24 = VAR25;
+}

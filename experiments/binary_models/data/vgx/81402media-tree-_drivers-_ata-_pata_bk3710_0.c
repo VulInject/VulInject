@@ -1,0 +1,33 @@
+static void FUN1(void VAR1 *VAR2, unsigned int VAR3,
+unsigned int VAR4)
+{
+u32 VAR5;
+u16 VAR6;
+u8 VAR7, VAR8, VAR9;
+
+
+VAR9 = FUN2(VAR10[VAR4].VAR11,
+VAR12) - 1;
+VAR7 = FUN2(20, VAR12) - 1;
+VAR8 = FUN2(VAR10[VAR4].VAR13,
+VAR12) - 1;
+
+
+VAR5 = FUN3(VAR2 + VAR14) & (0xFF << (VAR3 ? 0 : 8));
+VAR5 |= VAR9 << (VAR3 ? 8 : 0);
+FUN4(VAR5, VAR2 + VAR14);
+
+
+VAR5 = FUN3(VAR2 + VAR15) & (0xFF << (VAR3 ? 0 : 8));
+VAR5 |= VAR8 << (VAR3 ? 8 : 0);
+FUN4(VAR5, VAR2 + VAR15);
+
+
+VAR5 = FUN3(VAR2 + VAR16) & (0xFF << (VAR3 ? 0 : 8));
+VAR5 |= VAR7 << (VAR3 ? 8 : 0);
+FUN4(VAR5, VAR2 + VAR16);
+
+
+VAR6 = FUN5(VAR2 + VAR17) | (1 << VAR3);
+FUN6(VAR6, VAR2 + VAR17);
+}

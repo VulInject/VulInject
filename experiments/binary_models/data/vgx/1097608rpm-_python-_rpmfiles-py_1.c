@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 ) { const char * VAR5 = NULL ; return ( FUN2 ( VAR2 -> VAR6 , VAR5 ) >= 0 ) ?1 : 0 ; }

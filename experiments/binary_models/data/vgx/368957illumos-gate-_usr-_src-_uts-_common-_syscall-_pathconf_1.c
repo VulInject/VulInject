@@ -1,0 +1,1 @@
+long FUN1 ( char * VAR1 , int VAR2 ) { VAR3 * VAR4 ; long VAR5 ; int VAR6 ; int VAR7 = 0 ; lookup if ( VAR6 = FUN2 ( VAR1 , VAR8 , VAR9 , VAR10 , & VAR4 ) ) { if ( ( VAR6 == VAR11 ) && FUN3 ( VAR7 ++ ) ) { VAR12 } return ( ( long ) FUN4 ( VAR6 ) ) ; } VAR5 = FUN5 ( VAR4 , VAR2 , FUN6 ( ) ) ; FUN7 ( VAR4 , NULL ) ; return ( VAR5 ) ; }

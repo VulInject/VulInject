@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 ) { int VAR3 ; if ( VAR2 -> VAR4 . VAR5 != VAR6 || VAR2 -> VAR7 != VAR8 || FUN2 ( VAR2 ) ) { FUN3 ( VAR9 , "" ) ; return - 5 ; } VAR3 = FUN4 ( VAR2 ) ; if ( VAR3 == 1 ) { VAR2 -> VAR10 |= VAR11 ; FUN5 ( VAR2 , VAR12 ) ; } return VAR3 ; }

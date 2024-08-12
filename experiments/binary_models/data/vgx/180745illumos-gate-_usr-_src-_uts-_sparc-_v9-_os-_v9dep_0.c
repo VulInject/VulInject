@@ -1,0 +1,85 @@
+void
+FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+struct VAR5 *VAR6;
+VAR7 *VAR8;
+uint32_t VAR9 = (VAR10|VAR11|VAR12);
+model_t VAR13 = FUN2(VAR2);
+
+VAR6 = FUN3(VAR2);
+VAR8 = FUN4(VAR2);
+
+
+if (VAR4->VAR14) {
+FUN5();
+
+if (!(VAR8->VAR14) && (!(VAR8->VAR15 & VAR10)) &&
+VAR16) {
+
+VAR8->VAR15 = (VAR17)VAR9;
+}
+
+if (VAR4->VAR14 == VAR18)
+VAR4->VAR14 = 0;
+
+
+if (VAR4->VAR19 > VAR20)	
+VAR4->VAR19 = VAR20;
+VAR4->VAR21 = sizeof (struct VAR22);
+
+
+(void) FUN6(VAR4, VAR8, sizeof (VAR4->VAR23));
+if (VAR13 == VAR24)
+VAR8->VAR25 = VAR4->VAR25;
+else
+VAR8->VAR25 = FUN7(VAR8->VAR25, VAR4->VAR25);
+VAR8->VAR19 = VAR4->VAR19;
+VAR8->VAR21 = VAR4->VAR21;
+VAR8->VAR14 = VAR4->VAR14;
+VAR8->VAR26 = VAR6->VAR27;
+if (VAR4->VAR19)
+(void) FUN6(VAR4->VAR26, VAR8->VAR26,
+VAR4->VAR19 * VAR4->VAR21);
+
+VAR8->VAR25 &= ~(VAR28|VAR29);
+
+
+if (VAR2 != FUN8(VAR30)) {
+
+VAR8->VAR15 |= VAR10;
+FUN9();
+return;
+}
+
+
+if (VAR16) {
+VAR8->VAR15 = FUN10();
+if ((VAR8->VAR15 & VAR10) != VAR10) {
+FUN11(VAR9);
+VAR8->VAR15 = (VAR17)VAR9;
+if (VAR31)
+FUN12(VAR32,
+"");
+}
+
+if (VAR13 == VAR24)
+FUN13(VAR8);
+else
+FUN14(VAR8);
+}
+
+FUN9();
+} else {
+if ((VAR8->VAR14) ||	
+(VAR8->VAR15 & VAR10)) { 
+
+VAR8->VAR14 = 0;
+if (VAR16) {
+VAR9 = 0;
+if (VAR2 == FUN8(VAR30))
+FUN11(VAR9);
+VAR8->VAR15 = (VAR17)VAR9;
+}
+}
+}
+}

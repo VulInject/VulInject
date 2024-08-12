@@ -1,0 +1,1 @@
+static bool FUN1 ( const struct VAR1 * VAR2 , uint32_t VAR3 ) { int VAR4 ; uint32_t VAR5 ; int VAR6 ; for ( VAR4 = 0 ; VAR4 < VAR3 ; VAR4 ++ ) { if ( ( VAR2 [ VAR4 ] . VAR7 != VAR2 [ VAR4 ] . VAR8 ) || ( VAR2 [ VAR4 ] . VAR8 != VAR2 [ VAR4 ] . VAR9 ) ) { return false ; } VAR5 = VAR4 * VAR10 / ( VAR3 - 1 ) ; VAR6 = VAR2 [ VAR4 ] . VAR7 - VAR5 ; } return true ; }

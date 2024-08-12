@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR2 ) ; int VAR5 ; VAR5 = FUN3 ( VAR4 ) ; return FUN4 ( VAR2 ) ; } static const struct dev_pm_ops VAR6 = { FUN5 ( , ) FUN6 ( , , ) } ;

@@ -1,0 +1,44 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 *VAR6, float *VAR7, int VAR8, int VAR9)
+{
+    int VAR10, VAR11, VAR12, VAR13, VAR14;
+    VAR15 *VAR16 = &VAR6->VAR17[VAR6->VAR18];
+    VAR15 *VAR19 = &VAR6->VAR17[1 - VAR6->VAR18];
+    if (VAR9 == VAR20 && (VAR8 % 2) == 1)
+    {
+        if (FUN2(VAR4, 2) != 3)
+        {
+            FUN3(NULL, VAR21, "");
+            return VAR22;
+        }
+    }
+    else
+    {
+        if (FUN2(VAR4, 6) != 0x28)
+        {
+            FUN3(NULL, VAR21, "");
+            return VAR22;
+        }
+    }
+    VAR6->VAR23 = FUN2(VAR4, 2);
+    VAR11 = FUN4(VAR4, VAR19, VAR6->VAR23);
+    if (VAR11)
+        return VAR11;
+    VAR6->VAR24 = FUN5(VAR4, VAR6->VAR25, VAR6->VAR23);
+    if (VAR6->VAR24 < 0)
+        return VAR6->VAR24;
+    VAR12 = FUN6(VAR4, VAR6->VAR26);
+    VAR13 = FUN7(VAR6->VAR26, VAR6->VAR24, VAR6->VAR25);
+    VAR14 = (VAR27[VAR12] - 1) >> 8;
+    if (VAR13 >= 0)
+        VAR14 = FUN8((VAR13 + 256) >> 8, VAR14);
+    for (VAR10 = 0; VAR10 < 4; VAR10++)
+    {
+        if (VAR10 <= VAR14)
+            FUN9(VAR2, &VAR6->VAR26[VAR10 * 256], VAR6->VAR28, VAR10 & 1);
+        else
+            memset(VAR6->VAR28, 0, 512 * sizeof(*VAR6->VAR28));
+        FUN10(&VAR2->VAR29, VAR6->VAR28, &VAR6->VAR30[VAR10 * 256], &VAR16->VAR31[VAR10], &VAR19->VAR31[VAR10], 256, &VAR7[VAR10 * 256]);
+    }
+    VAR6->VAR18 ^= 1;
+    return 0;
+}

@@ -1,0 +1,1 @@
+static int FUN1 ( void ) { cfs_time_t VAR1 ; if ( FUN2 ( 0x4 ) ) { return - 5 ; } for ( VAR1 = 0 ; VAR1 < VAR2 ; VAR1 ++ ) { if ( FUN3 ( ) == VAR3 ) { break ; } if ( FUN3 ( ) == VAR4 ) { break ; } } if ( VAR1 == VAR2 ) { return - 6 ; } return 0 ; }

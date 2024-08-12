@@ -1,0 +1,1 @@
+static int FUN1 ( const char * VAR1 ) { _cleanup_strv_free_ char * * VAR2 = NULL ; VAR2 = FUN2 ( VAR1 , "" ) ; if ( FUN3 ( & VAR3 , VAR2 , true ) < 0 ) { return FUN4 ( ) ; } return 0 ; }

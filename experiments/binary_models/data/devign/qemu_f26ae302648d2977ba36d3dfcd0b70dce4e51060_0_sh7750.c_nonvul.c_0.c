@@ -1,0 +1,38 @@
+VAR1 *FUN1(VAR2 *VAR3)
+{
+    VAR1 *VAR4;
+    int VAR5;
+    int VAR6 = VAR7;
+    VAR4 = FUN2(sizeof(VAR1));
+    VAR4->VAR3 = VAR3;
+    VAR4->VAR8 = 60000000;
+    VAR5 = FUN3(0, VAR9, VAR10, VAR4);
+    FUN4(0x1c000000, 0x04000000, VAR5);
+    FUN5(&VAR4->VAR11, VAR12, FUN6(VAR13), FUN6(VAR14));
+    FUN7(&VAR4->VAR11, FUN6(VAR15), FUN6(VAR16));
+    FUN8(0x1fe00000, 0, VAR4->VAR8, VAR17[0]);
+    FUN8(0x1fe80000, VAR18, VAR4->VAR8, VAR17[1]);
+    FUN9(0x1fd80000, VAR19 | VAR20 | VAR21, VAR4->VAR8);
+    if (VAR6 & (VAR22 | VAR23 | VAR24))
+    {
+        FUN7(&VAR4->VAR11, FUN6(VAR25), FUN6(VAR26));
+    }
+    if (VAR6 & (VAR27 | VAR7))
+    {
+        FUN7(&VAR4->VAR11, FUN6(VAR28), FUN6(VAR29));
+    }
+    if (VAR6 & (VAR27 | VAR24 | VAR7))
+    {
+        FUN7(&VAR4->VAR11, FUN6(VAR30), NULL, 0);
+        FUN9(0x1e100000, 0, VAR4->VAR8);
+    }
+    if (VAR6 & (VAR31))
+    {
+        FUN7(&VAR4->VAR11, FUN6(VAR32), FUN6(VAR33));
+    }
+    if (VAR6 & (VAR23 | VAR27 | VAR31))
+    {
+        FUN7(&VAR4->VAR11, FUN6(VAR34), NULL, 0);
+    }
+    return VAR4;
+}

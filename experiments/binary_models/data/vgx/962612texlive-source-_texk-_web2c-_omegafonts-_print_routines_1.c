@@ -1,0 +1,1 @@
+void FUN1 ( unsigned VAR1 , unsigned VAR2 ) { FUN2 ( ) ; FUN3 ( "" ) ; FUN3 ( "" ) ; FUN4 ( VAR1 , NULL ) ; FUN3 ( "" ) ; FUN4 ( VAR2 ) ; FUN5 ( ) ; }

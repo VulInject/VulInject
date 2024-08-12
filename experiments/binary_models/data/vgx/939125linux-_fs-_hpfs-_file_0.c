@@ -1,0 +1,11 @@
+static int FUN1(struct VAR1 *VAR1, struct VAR2 *VAR3, u64 VAR4, u64 VAR5)
+{
+int VAR6;
+
+FUN2(VAR1);
+VAR5 = FUN3(VAR7, VAR5, FUN4(VAR1));
+VAR6 = FUN5(VAR1, VAR3, VAR4, VAR5, &VAR8);
+FUN6(VAR1);
+
+return VAR6;
+}

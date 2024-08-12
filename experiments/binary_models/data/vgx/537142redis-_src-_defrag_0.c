@@ -1,0 +1,74 @@
+void FUN1(VAR1 *VAR2, VAR3 *VAR4) {
+sds VAR5 = FUN2(VAR4);
+VAR6 *VAR7, *VAR8;
+unsigned char *VAR9;
+sds VAR10;
+
+
+VAR10 = FUN3(VAR5);
+if (VAR10) {
+FUN4(VAR2->VAR11, VAR4, VAR10);
+if (FUN5(VAR2->VAR12)) {
+
+uint64_t VAR13 = FUN6(VAR2->VAR11, VAR10);
+VAR3 *VAR14 = FUN7(VAR2->VAR12, VAR5, VAR13);
+if (VAR14) FUN4(VAR2->VAR12, VAR14, VAR10);
+}
+}
+
+
+VAR8 = FUN8(VAR4);
+if ((VAR7 = FUN9(VAR8))) {
+FUN10(VAR2->VAR11, VAR4, VAR7);
+VAR8 = VAR7;
+}
+
+if (VAR8->VAR15 == VAR16) {
+
+} else if (VAR8->VAR15 == VAR17) {
+if (VAR8->VAR18 == VAR19) {
+FUN11(VAR2, VAR4);
+} else if (VAR8->VAR18 == VAR20) {
+if ((VAR9 = FUN12(VAR8->VAR21)))
+VAR8->VAR21 = VAR9;
+} else {
+FUN13("");
+}
+} else if (VAR8->VAR15 == VAR22) {
+if (VAR8->VAR18 == VAR23) {
+FUN14(VAR2, VAR4);
+} else if (VAR8->VAR18 == VAR24 ||
+VAR8->VAR18 == VAR20)
+{
+void *VAR25, *VAR21 = VAR8->VAR21;
+if ((VAR25 = FUN12(VAR21)))
+VAR8->VAR21 = VAR25;
+} else {
+FUN13("");
+}
+} else if (VAR8->VAR15 == VAR26) {
+if (VAR8->VAR18 == VAR20) {
+if ((VAR9 = FUN12(VAR8->VAR21)))
+VAR8->VAR21 = VAR9;
+} else if (VAR8->VAR18 == VAR27) {
+FUN15(VAR2, VAR4);
+} else {
+FUN13("");
+}
+} else if (VAR8->VAR15 == VAR28) {
+if (VAR8->VAR18 == VAR20) {
+if ((VAR9 = FUN12(VAR8->VAR21)))
+VAR8->VAR21 = VAR9;
+} else if (VAR8->VAR18 == VAR23) {
+FUN16(VAR2, VAR4);
+} else {
+FUN13("");
+}
+} else if (VAR8->VAR15 == VAR29) {
+FUN17(VAR2, VAR4);
+} else if (VAR8->VAR15 == VAR30) {
+FUN18(VAR2, VAR4);
+} else {
+FUN13("");
+}
+}

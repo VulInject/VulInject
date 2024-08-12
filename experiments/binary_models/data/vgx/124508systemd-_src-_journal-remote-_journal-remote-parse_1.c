@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( int VAR2 , bool VAR3 , char * VAR4 , VAR5 * VAR6 ) { VAR1 * VAR7 ; FUN2 ( "" , VAR3 ?"" : "" , VAR2 , VAR4 ) ; assert ( VAR2 >= 0 ) ; VAR7 = FUN3 ( VAR1 , 1 ) ; if ( ! VAR7 ) { return NULL ; } VAR7 -> VAR8 = FUN4 ( VAR2 , NULL ) ; VAR7 -> VAR8 . VAR3 = VAR3 ; VAR7 -> VAR8 . VAR4 = VAR4 ; VAR7 -> VAR6 = VAR6 ; return VAR7 ; }

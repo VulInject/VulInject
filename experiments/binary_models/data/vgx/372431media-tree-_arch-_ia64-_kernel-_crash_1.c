@@ -1,0 +1,1 @@
+static int FUN1 ( void ) { static struct notifier_block VAR1 = { . VAR2 = VAR3 . VAR4 = 1 } ; int VAR5 ; FUN2 ( VAR6 ) ; return 0 ; }

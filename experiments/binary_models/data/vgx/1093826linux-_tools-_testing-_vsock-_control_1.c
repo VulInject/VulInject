@@ -1,0 +1,1 @@
+bool FUN1 ( char * VAR1 , const char * VAR2 , bool VAR3 ) { if ( strcmp ( VAR2 , VAR1 ) == 0 ) { return true ; } if ( VAR3 ) { fprintf ( VAR4 , ""%VAR5\""%VAR5\"" , VAR2 , VAR1 ) ; FUN2 ( VAR6 , NULL ) ; } return false ; }

@@ -1,0 +1,25 @@
+}
+FUN1(VAR1);
+
+
+struct VAR2 *FUN2(struct VAR3 *VAR4,
+u32 VAR5, u64 VAR6)
+{
+struct VAR2 *VAR7;
+
+VAR7 = FUN3(VAR4, VAR5, VAR6);
+if (!VAR7)
+return NULL;
+
+
+if (FUN4(&VAR7->VAR8, 2, 0) != 2)
+return VAR7;
+
+FUN5(&VAR4->VAR9);
+if (!FUN6(&VAR7->VAR10))
+FUN7(&VAR7->VAR10);
+VAR4->VAR11--;
+FUN8(&VAR4->VAR9);
+FUN9(VAR4, VAR7);
+return NULL;
+}

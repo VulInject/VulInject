@@ -1,0 +1,51 @@
+void
+FUN1(int VAR1, char *VAR2, char *VAR3, int VAR4,
+int *VAR5, int VAR6)
+{
+VAR7	*VAR8;
+
+VAR8 = FUN2(sizeof (VAR7), VAR9);
+VAR8->VAR10 = VAR1;
+VAR8->VAR11 = VAR4;
+VAR8->VAR12 = 0;
+VAR8->VAR13 = 0;
+VAR8->VAR14 = VAR6;
+FUN3(&VAR8->VAR15, NULL, VAR16, NULL);
+if (VAR2 != NULL) {
+VAR8->VAR17 = FUN2(strlen(VAR2) + 1,
+VAR9);
+(void) strcpy(VAR8->VAR17, VAR2);
+}
+if (VAR3 != NULL) {
+VAR8->VAR18 = FUN2(strlen(VAR3) + 1, VAR9);
+(void) strcpy(VAR8->VAR18, VAR3);
+}
+FUN4(&VAR19);
+if (VAR20 == NULL) {
+VAR20 = VAR8;
+VAR21 = VAR8;
+VAR8->VAR22 = NULL;
+} else {
+VAR21->VAR22 = VAR8;
+VAR21 = VAR8;
+VAR8->VAR22 = NULL;
+}
+FUN5(&VAR23);
+
+if (VAR4)  {
+while (!VAR8->VAR12)
+FUN6(&VAR8->VAR15, &VAR19);
+
+if (VAR5 != NULL)
+*VAR5 = VAR8->VAR13;
+
+if (VAR8->VAR17)
+FUN7(VAR8->VAR17,
+strlen(VAR8->VAR17) + 1);
+if (VAR8->VAR18)
+FUN7(VAR8->VAR18,
+strlen(VAR8->VAR18) + 1);
+FUN7(VAR8, sizeof (VAR7));
+}
+FUN8(&VAR19);
+}

@@ -1,0 +1,10 @@
+static int FUN1(struct VAR1 *VAR2)
+{
+    USBPacket VAR3;
+    VAR3.VAR4 = VAR5;
+    VAR3.VAR6 = 1;
+    VAR3.VAR7 = VAR2->VAR8.VAR9;
+    VAR3.VAR10 = sizeof(VAR2->VAR8.VAR9);
+    VAR2->VAR8.VAR10 = VAR2->VAR11->VAR12->FUN2(VAR2->VAR11, &VAR3);
+    return VAR2->VAR8.VAR10;
+}

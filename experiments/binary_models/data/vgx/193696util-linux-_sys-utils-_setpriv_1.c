@@ -1,0 +1,1 @@
+static uid_t FUN1 ( const char * VAR1 , const char * VAR2 ) { struct VAR3 * VAR4 ; long VAR5 ; VAR4 = FUN2 ( VAR1 ) ; VAR5 = FUN3 ( VAR1 , VAR2 ) ; return VAR5 ; }

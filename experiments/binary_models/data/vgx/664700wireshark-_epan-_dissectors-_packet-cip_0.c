@@ -1,0 +1,40 @@
+static void FUN1(void)
+{
+size_t VAR1, VAR2;
+VAR3* VAR4;
+VAR5* VAR6;
+cip_gaa_key_t VAR7;
+VAR8* VAR9;
+VAR10 *VAR11;
+int VAR12 = -1;
+
+VAR13 = FUN2(FUN3(), VAR14, VAR15);
+
+for (VAR1 = 0; VAR1 < sizeof(VAR16)/sizeof(VAR3); VAR1++)
+{
+VAR4 = &VAR16[VAR1];
+for (VAR2 = 0; VAR2 < VAR4->VAR17; VAR2++)
+{
+VAR6 = &VAR4->VAR18[VAR2];
+VAR7.VAR19 = VAR6->VAR20;
+VAR7.VAR21 = VAR6->VAR21;
+
+VAR11 = (VAR10 *)FUN4( VAR13, &VAR7 );
+if (VAR11 == NULL)
+{
+VAR9 = (VAR8*)FUN5(FUN3(), &VAR7, sizeof(VAR8));
+VAR11 = FUN6(FUN3(), VAR10);
+VAR11->VAR22 = FUN7(FUN3());
+
+FUN8(VAR13, VAR9, VAR11 );
+VAR12 = -1;
+}
+
+if ((VAR6->VAR23 >= 0) && (VAR6->VAR23 > VAR12))
+{
+FUN9(VAR11->VAR22, VAR6);
+VAR12 = VAR6->VAR23;
+}
+}
+}
+}

@@ -1,0 +1,135 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4,
+VAR5 *VAR6)
+{
+struct rt_signal_frame32 VAR7 *VAR8;
+int VAR9, VAR10, VAR11;
+void VAR7 *VAR12;
+int VAR13;
+u32 VAR14;
+
+
+FUN2();
+FUN3();
+
+VAR11 = FUN4();
+
+VAR13 = sizeof(*VAR8);
+if (FUN5()->VAR15[0] & VAR16)
+VAR13 += sizeof(VAR17);
+if (VAR11)
+VAR13 += sizeof(VAR18);
+
+VAR8 = (struct rt_signal_frame32 VAR7 *)
+FUN6(VAR2, VAR4, VAR13);
+
+if (FUN7(VAR8, VAR13)) {
+if (VAR19)
+FUN8("",
+VAR20->VAR21, VAR20->VAR22, (unsigned long)VAR8,
+VAR4->VAR23, VAR4->VAR24[VAR25]);
+FUN9(VAR2->VAR26);
+return -VAR27;
+}
+
+VAR12 = (VAR8 + 1);
+
+
+if (FUN10(VAR28)) {
+VAR4->VAR23 &= 0xffffffff;
+VAR4->VAR29 &= 0xffffffff;
+}
+VAR10  = FUN11(VAR4->VAR23, &VAR8->VAR4.VAR30);
+VAR10 |= FUN12(VAR4->VAR29, &VAR8->VAR4.VAR31);
+VAR10 |= FUN12(VAR4->VAR32, &VAR8->VAR4.VAR32);
+VAR14 = FUN13(VAR4->VAR33);
+if (FUN5()->VAR15[0] & VAR16)
+VAR14 |= VAR34;
+VAR10 |= FUN12(VAR14, &VAR8->VAR4.VAR14);
+for (VAR9 = 0; VAR9 < 16; VAR9++)
+VAR10 |= FUN12(VAR4->VAR24[VAR9], &VAR8->VAR4.VAR24[VAR9]);
+VAR10 |= FUN12(sizeof(VAR35), &VAR8->VAR36);
+VAR10 |= FUN12(VAR37, &VAR8->VAR38.VAR39[0]);
+for (VAR9 = 1; VAR9 < 16; VAR9++)
+VAR10 |= FUN12(((VAR40 *)VAR4->VAR24)[2*VAR9],
+&VAR8->VAR38.VAR39[VAR9]);
+VAR10 |= FUN12((VAR4->VAR33 & VAR41) >> 24UL,
+&VAR8->VAR38.VAR42);
+
+if (VAR14 & VAR34) {
+__siginfo_fpu_t VAR7 *VAR43 = VAR12;
+VAR12 += sizeof(*VAR43);
+VAR10 |= FUN14(VAR4, VAR43);
+VAR10 |= FUN12((VAR44)VAR43, &VAR8->VAR45);
+} else {
+VAR10 |= FUN12(0, &VAR8->VAR45);
+}
+if (VAR11) {
+__siginfo_rwin_t VAR7 *VAR46 = VAR12;
+VAR12 += sizeof(*VAR46);
+VAR10 |= FUN15(VAR11, VAR46);
+VAR10 |= FUN12((VAR44)VAR46, &VAR8->VAR47);
+FUN16(0);
+} else {
+VAR10 |= FUN12(0, &VAR8->VAR47);
+}
+
+
+VAR10 |= FUN17(&VAR8->VAR48, &VAR2->VAR48);
+
+
+VAR10 |= FUN18(&VAR8->VAR49, VAR4->VAR24[VAR50]);
+
+VAR10 |= FUN19(&VAR8->VAR51, VAR6, sizeof(VAR52));
+
+if (!VAR11) {
+VAR10 |= FUN20((u32 VAR7 *)VAR8,
+(u32 VAR7 *)(VAR4->VAR24[VAR50]),
+sizeof(struct VAR53));
+} else {
+struct VAR54 *VAR55;
+
+VAR55 = &FUN5()->VAR54[VAR11 - 1];
+for (VAR9 = 0; VAR9 < 8; VAR9++)
+VAR10 |= FUN12(VAR55->VAR56[VAR9], &VAR8->VAR57.VAR56[VAR9]);
+for (VAR9 = 0; VAR9 < 6; VAR9++)
+VAR10 |= FUN12(VAR55->VAR58[VAR9], &VAR8->VAR57.VAR58[VAR9]);
+VAR10 |= FUN12(VAR55->VAR58[6], &VAR8->VAR57.VAR43);
+VAR10 |= FUN12(VAR55->VAR58[7], &VAR8->VAR57.VAR59);
+}
+if (VAR10)
+return VAR10;
+
+
+VAR4->VAR24[VAR50] = (unsigned long) VAR8;
+VAR4->VAR24[VAR60] = VAR2->VAR26;
+VAR4->VAR24[VAR61] = (unsigned long) &VAR8->VAR48;
+VAR4->VAR24[VAR62] = (unsigned long) &VAR8->VAR4;
+
+
+VAR4->VAR23 = (unsigned long) VAR2->VAR63.VAR64.VAR65;
+VAR4->VAR29 = (VAR4->VAR23 + 4);
+if (FUN10(VAR28)) {
+VAR4->VAR23 &= 0xffffffff;
+VAR4->VAR29 &= 0xffffffff;
+}
+
+
+if (VAR2->VAR63.VAR66)
+VAR4->VAR24[VAR25] = (unsigned long)VAR2->VAR63.VAR66;
+else {
+unsigned long VAR67 = ((unsigned long)&(VAR8->VAR68[0]));
+
+VAR4->VAR24[VAR25] = (unsigned long) (&(VAR8->VAR68[0]) - 2);
+
+
+VAR10 |= FUN12(0x82102065, &VAR8->VAR68[0]);
+
+
+VAR10 |= FUN12(0x91d02010, &VAR8->VAR68[1]);
+if (VAR10)
+return VAR10;
+
+FUN21(VAR67);
+}
+return 0;
+}

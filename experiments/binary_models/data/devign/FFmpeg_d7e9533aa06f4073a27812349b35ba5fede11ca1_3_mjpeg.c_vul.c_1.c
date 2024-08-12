@@ -1,0 +1,12 @@
+int FUN1(VAR1 *VAR2)
+{
+    VAR3 *VAR4;
+    VAR4 = malloc(sizeof(VAR3));
+    if (!VAR4)
+        return -1;
+    FUN2(VAR4->VAR5, VAR4->VAR6, VAR7, VAR8);
+    FUN2(VAR4->VAR9, VAR4->VAR10, VAR11, VAR12);
+    FUN2(VAR4->VAR13, VAR4->VAR14, VAR15, VAR16);
+    FUN2(VAR4->VAR17, VAR4->VAR18, VAR19, VAR20);
+    VAR2->VAR21 = VAR4;
+    return 0;

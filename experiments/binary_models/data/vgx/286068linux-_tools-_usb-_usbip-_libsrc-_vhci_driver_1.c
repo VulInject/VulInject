@@ -1,0 +1,1 @@
+int FUN1 ( uint32_t VAR1 ) { for ( int VAR2 = 0 ; VAR2 < VAR3 -> VAR4 ; VAR2 ++ ) { switch ( VAR1 ) { case VAR5 : break ; default : if ( VAR3 -> VAR6 [ VAR2 ] . VAR7 != VAR8 ) { continue ; } break ; } if ( VAR3 -> VAR6 [ VAR2 ] . VAR9 == VAR10 ) { return VAR3 -> VAR6 [ VAR2 ] . VAR11 ; } } return - 1 ; }

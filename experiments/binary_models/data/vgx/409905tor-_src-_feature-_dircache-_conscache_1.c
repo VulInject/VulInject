@@ -1,0 +1,1 @@
+int FUN1 ( const VAR1 * VAR2 , const VAR3 * * VAR4 , VAR5 * VAR6 ) { if ( FUN2 ( VAR2 -> VAR7 != VAR8 ) ) { return - 1 ; } if ( ! VAR2 -> VAR9 ) { FUN3 ( ( VAR10 * ) VAR2 -> VAR11 , ( VAR1 * ) VAR2 ) ; if ( ! VAR2 -> VAR9 ) { return - 1 ; } } * VAR4 = VAR2 -> VAR12 ; * VAR6 = VAR2 -> VAR13 ; return 0 ; }

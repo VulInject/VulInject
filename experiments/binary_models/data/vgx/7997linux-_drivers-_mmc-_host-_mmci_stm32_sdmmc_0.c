@@ -1,0 +1,33 @@
+static void FUN1(struct VAR1 *VAR2, unsigned int VAR3)
+{
+struct mmc_ios VAR4 = VAR2->VAR5->VAR4;
+struct VAR6 *VAR7 = VAR2->VAR8;
+
+
+VAR3 = VAR2->VAR9;
+
+FUN2(VAR7);
+
+if (VAR4.VAR10 == VAR11) {
+
+FUN3(VAR2->VAR12);
+FUN4(2);
+FUN5(VAR2->VAR12);
+
+
+FUN6(VAR2, VAR13 | VAR3);
+} else if (VAR4.VAR10 == VAR14) {
+
+FUN7(VAR15 | VAR2->VAR16->VAR17,
+VAR2->VAR18 + VAR19);
+
+
+VAR3 |= VAR2->VAR20 & (VAR21 |
+VAR22);
+
+
+FUN6(VAR2, VAR23 | VAR3);
+FUN8(1);
+FUN6(VAR2, VAR24 | VAR3);
+}
+}

@@ -1,0 +1,15 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4, VAR5 **VAR6)
+{
+    VAR7 *VAR8 = FUN2(VAR2);
+    VAR9 *VAR10 = FUN3(VAR8);
+    VAR11 *VAR12 = FUN4(VAR4);
+    if (FUN5(VAR8, VAR13))
+    {
+        FUN6(VAR10, VAR12, VAR14, VAR15);
+    }
+    if (VAR10->VAR16)
+    {
+        FUN7(VAR12->VAR17.VAR18, VAR10->VAR19);
+    }
+    FUN8(VAR2, VAR4, VAR6);
+}

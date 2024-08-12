@@ -1,0 +1,1 @@
+static void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = VAR2 -> VAR4 ; struct drm_display_mode VAR5 = VAR2 -> VAR6 ; struct VAR7 * VAR8 ; FUN2 ( ""%VAR9\"" , VAR4 -> VAR10 - VAR11 , VAR5 . VAR12 , VAR5 . VAR13 , VAR5 . VAR14 ) ; FUN3 ( VAR2 ) ; FUN4 ( VAR2 ) ; FUN5 ( VAR2 ) ; FUN6 ( VAR2 , VAR8 ) ; FUN7 ( VAR2 ) ; }

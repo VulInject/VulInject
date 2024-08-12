@@ -1,0 +1,71 @@
+FUN1 (tree VAR1)
+{
+
+
+if (FUN2 (VAR1) != VAR2 && FUN2 (VAR1) != VAR3
+&& (VAR4
+|| (FUN3 (VAR1) != VAR5 && FUN3 (VAR1) != VAR6
+&& FUN3 (VAR1) != VAR7
+&& FUN3 (VAR1) != VAR8)))
+{
+unsigned VAR9 = FUN4 (FUN2 (VAR1));
+
+
+if (VAR9 >= FUN5 (VAR1))
+{
+FUN5 (VAR1) = VAR9;
+FUN6 (VAR1) = 0;
+}
+}
+
+
+FUN5 (VAR1)
+= FUN7 (VAR1, FUN5 (VAR1), VAR10);
+
+
+if (FUN8 (VAR1) == 0 && FUN9 (VAR1) != 0)
+
+FUN8 (VAR1)
+= FUN10 (VAR11,
+FUN11 (VAR12, FUN9 (VAR1),
+VAR13));
+
+if (FUN9 (VAR1) != 0)
+{
+FUN9 (VAR1) = FUN12 (FUN9 (VAR1), FUN5 (VAR1));
+FUN8 (VAR1) = FUN12 (FUN8 (VAR1),
+FUN13 (VAR1));
+}
+
+
+if (FUN9 (VAR1) != 0 && FUN3 (FUN9 (VAR1)) != VAR14)
+FUN9 (VAR1) = FUN14 (FUN9 (VAR1));
+if (FUN8 (VAR1) != 0
+&& FUN3 (FUN8 (VAR1)) != VAR14)
+FUN8 (VAR1) = FUN14 (FUN8 (VAR1));
+
+
+if (FUN15 (VAR1)
+|| VAR1 != FUN16 (VAR1))
+{
+tree VAR15;
+
+tree VAR16 = FUN9 (VAR1);
+tree VAR17 = FUN8 (VAR1);
+unsigned int VAR18 = FUN5 (VAR1);
+unsigned int VAR19 = FUN6 (VAR1);
+enum machine_mode VAR20 = FUN2 (VAR1);
+
+
+for (VAR15 = FUN16 (VAR1);
+VAR15 != 0;
+VAR15 = FUN15 (VAR15))
+{
+FUN9 (VAR15) = VAR16;
+FUN8 (VAR15) = VAR17;
+FUN5 (VAR15) = VAR18;
+FUN6 (VAR15) = VAR19;
+FUN2 (VAR15) = VAR20;
+}
+}
+}

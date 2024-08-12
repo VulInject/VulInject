@@ -1,0 +1,1 @@
+static VAR1 * FUN1 ( VAR1 * VAR2 ) { VAR3 * VAR4 = FUN2 ( VAR2 ) ; VAR3 * VAR5 = FUN3 ( VAR3 , 1 ) ; VAR6 * VAR7 ; for ( VAR7 = VAR4 -> VAR8 ; VAR7 ; VAR7 = VAR7 -> VAR9 ) { VAR10 * VAR11 = ( VAR10 * ) VAR7 -> VAR12 ; FUN4 ( VAR5 , VAR11 -> VAR13 , VAR11 -> VAR14 ) ; } return & VAR5 -> VAR2 ; }

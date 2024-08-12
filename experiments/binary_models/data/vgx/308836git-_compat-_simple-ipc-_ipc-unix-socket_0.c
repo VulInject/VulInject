@@ -1,0 +1,86 @@
+int FUN1(struct VAR1 **VAR2,
+const char *VAR3, const struct VAR4 *VAR5,
+VAR6 *VAR7,
+void *VAR8)
+{
+struct VAR9 *VAR10 = NULL;
+struct VAR1 *VAR11;
+int VAR12[2];
+int VAR13;
+int VAR14;
+int VAR15 = VAR5->VAR15;
+
+*VAR2 = NULL;
+
+
+if (FUN2(VAR16, VAR17, 0, VAR12) < 0)
+return -1;
+
+if (FUN3(VAR12[1], 1)) {
+int VAR18 = VAR19;
+close(VAR12[0]);
+close(VAR12[1]);
+VAR19 = VAR18;
+return -1;
+}
+
+VAR14 = FUN4(VAR3, VAR5, &VAR10);
+if (VAR14) {
+int VAR18 = VAR19;
+close(VAR12[0]);
+close(VAR12[1]);
+VAR19 = VAR18;
+return VAR14;
+}
+
+VAR11 = xcalloc(1, sizeof(*VAR11));
+VAR11->VAR20 = VAR21;
+VAR11->VAR7 = VAR7;
+VAR11->VAR8 = VAR8;
+FUN5(&VAR11->VAR22, 0);
+FUN6(&VAR11->VAR22, VAR3);
+
+if (VAR15 < 1)
+VAR15 = 1;
+
+pthread_mutex_init(&VAR11->VAR23, NULL);
+pthread_cond_init(&VAR11->VAR24, NULL);
+
+VAR11->VAR25 = VAR15 * VAR26;
+FUN7(VAR11->VAR27, VAR11->VAR25);
+
+VAR11->VAR28 =
+xcalloc(1, sizeof(*VAR11->VAR28));
+VAR11->VAR28->VAR20 = VAR29;
+VAR11->VAR28->VAR11 = VAR11;
+VAR11->VAR28->VAR10 = VAR10;
+VAR11->VAR28->VAR30 = VAR12[0];
+VAR11->VAR28->VAR31 = VAR12[1];
+
+if (FUN8(&VAR11->VAR28->VAR32, NULL,
+VAR33, VAR11->VAR28))
+FUN9(FUN10(""), VAR3);
+
+for (VAR13 = 0; VAR13 < VAR15; VAR13++) {
+struct VAR34 *VAR35;
+
+VAR35 = xcalloc(1, sizeof(*VAR35));
+VAR35->VAR20 = VAR36;
+VAR35->VAR11 = VAR11;
+
+if (FUN8(&VAR35->VAR32, NULL, VAR37,
+VAR35)) {
+if (VAR13 == 0)
+FUN11(FUN10(""),
+VAR3);
+
+break;
+}
+
+VAR35->VAR38 = VAR11->VAR39;
+VAR11->VAR39 = VAR35;
+}
+
+*VAR2 = VAR11;
+return 0;
+}

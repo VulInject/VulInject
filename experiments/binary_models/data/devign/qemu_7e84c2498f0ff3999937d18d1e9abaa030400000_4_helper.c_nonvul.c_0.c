@@ -1,0 +1,1 @@
+static inline VAR1 *FUN1(uint32_t VAR2, uint32_t VAR3) { return (VAR1 *)((VAR2 >> 16) | ((VAR3 & 0xff) << 16) | (VAR3 & 0xff000000)); }

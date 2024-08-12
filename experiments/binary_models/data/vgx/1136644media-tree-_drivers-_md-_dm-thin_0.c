@@ -1,0 +1,42 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR3 = VAR2->VAR3;
+unsigned long VAR4;
+struct list_head VAR5;
+struct VAR6 *VAR7;
+unsigned VAR8, VAR9, VAR10;
+
+FUN2(&VAR5);
+
+FUN3(&VAR2->VAR11, VAR4);
+FUN4(&VAR2->VAR12, &VAR5);
+FUN5(&VAR2->VAR11, VAR4);
+
+if (FUN6(&VAR5))
+return;
+
+do {
+VAR10 = FUN7(VAR2->VAR3, &VAR5);
+
+for (VAR8 = 0; VAR8 < VAR10; VAR8++) {
+VAR7 = VAR3->VAR13[VAR8];
+FUN8(!VAR7->VAR14);
+
+
+if (FUN9(VAR3)) {
+for (VAR9 = VAR8; VAR9 < VAR10; VAR9++)
+FUN10(&VAR3->VAR13[VAR9]->VAR15, &VAR5);
+
+FUN3(&VAR2->VAR11, VAR4);
+FUN11(&VAR5, &VAR2->VAR12);
+FUN5(&VAR2->VAR11, VAR4);
+return;
+}
+
+if (FUN12(VAR7->VAR14) == VAR16)
+VAR3->FUN13(VAR2, VAR7);
+else
+VAR3->FUN14(VAR2, VAR7);
+}
+} while (!FUN6(&VAR5));
+}

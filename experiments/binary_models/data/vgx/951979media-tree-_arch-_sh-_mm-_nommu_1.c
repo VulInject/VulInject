@@ -1,0 +1,1 @@
+__kernel_size_t FUN1 ( void * VAR1 , __kernel_size_t VAR2 ) { return 0 ; }

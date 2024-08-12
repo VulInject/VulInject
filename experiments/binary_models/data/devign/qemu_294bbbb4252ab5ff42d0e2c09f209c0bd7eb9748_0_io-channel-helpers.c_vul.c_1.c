@@ -1,0 +1,11 @@
+void FUN1(VAR1 *VAR2)
+{
+    FUN2(memcmp(VAR2->VAR3, VAR2->VAR4, VAR2->VAR5), ==, 0);
+    FUN3(VAR2->VAR6 == NULL);
+    FUN3(VAR2->VAR7 == NULL);
+    FUN4(VAR2->VAR8);
+    FUN4(VAR2->VAR9);
+    FUN4(VAR2->VAR3);
+    FUN4(VAR2->VAR4);
+    FUN4(VAR2);
+}

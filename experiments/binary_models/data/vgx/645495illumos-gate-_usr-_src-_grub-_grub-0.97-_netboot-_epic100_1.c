@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { unsigned char VAR1 [ 8 ] ; int VAR2 ; FUN2 ( 0x0C , VAR3 ) ; for ( VAR2 = 0 ; VAR2 < 4 ; VAR2 ++ ) { FUN3 ( ( ( unsigned short * ) VAR1 ) [ VAR2 ] , VAR4 + VAR2 * 4 ) ; } return ; }

@@ -1,0 +1,85 @@
+static int FUN1(struct VAR1 *VAR2, struct VAR3 *VAR3)
+{
+int VAR4, VAR5;
+struct VAR1 *VAR1;
+struct reiserfs_transaction_handle VAR6;
+int VAR7;
+FUN2(VAR8);
+struct reiserfs_dir_entry VAR9;
+
+
+VAR7 =
+VAR10 * 2 + 2 +
+4 * FUN3(VAR2->VAR11);
+
+VAR4 = FUN4(VAR2);
+if (VAR4)
+return VAR4;
+
+FUN5(VAR2->VAR11);
+VAR4 = FUN6(&VAR6, VAR2->VAR11, VAR7);
+if (VAR4)
+goto VAR12;
+
+VAR9.VAR13 = NULL;
+if ((VAR4 =
+FUN7(VAR2, VAR3->VAR14.VAR15, VAR3->VAR14.VAR16,
+&VAR8, &VAR9)) == VAR17) {
+VAR4 = -VAR18;
+goto VAR19;
+} else if (VAR4 == VAR20) {
+VAR4 = -VAR21;
+goto VAR19;
+}
+
+VAR1 = FUN8(VAR3);
+
+FUN9(VAR1);
+FUN9(VAR2);
+
+if (VAR9.VAR22 != VAR1->VAR23) {
+
+VAR4 = -VAR21;
+goto VAR19;
+}
+if (!FUN10(VAR1)) {
+VAR4 = -VAR24;
+goto VAR19;
+}
+
+
+VAR4 = FUN11(&VAR6, &VAR8, &VAR9.VAR25,
+VAR2, NULL,	
+0  );
+if (VAR4 < 0)
+goto VAR19;
+
+if (VAR1->VAR26 != 2 && VAR1->VAR26 != 1)
+FUN12(VAR1->VAR11, "",
+"",
+VAR1->VAR26);
+
+FUN13(VAR1);
+VAR1->VAR27 = VAR2->VAR27 = VAR2->VAR28 = FUN14(VAR2);
+FUN15(&VAR6, VAR1);
+
+FUN16(VAR2)
+VAR2->VAR29 -= (VAR30 + VAR9.VAR31);
+FUN15(&VAR6, VAR2);
+
+
+FUN17(&VAR6, VAR1, 0  );
+
+VAR4 = FUN18(&VAR6);
+FUN19(&VAR8);
+VAR12:
+FUN20(VAR2->VAR11);
+return VAR4;
+
+VAR19:
+
+FUN21(&VAR8);
+VAR5 = FUN18(&VAR6);
+FUN20(VAR2->VAR11);
+return VAR5 ? VAR5 : VAR4;
+}

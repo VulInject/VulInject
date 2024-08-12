@@ -1,0 +1,1 @@
+struct VAR1 * FUN1 ( struct VAR2 * VAR3 , unsigned int VAR4 ) { struct VAR1 * VAR5 ; int VAR6 ; VAR6 = FUN2 ( & VAR3 -> signal -> VAR7 ) ; if ( VAR6 ) { return FUN3 ( VAR6 ) ; } VAR5 = FUN4 ( VAR3 ) ; if ( VAR5 && VAR5 != VAR8 -> VAR5 && ! FUN5 ( VAR3 , VAR4 ) ) { FUN6 ( VAR5 ) ; VAR5 = FUN3 ( - VAR9 ) ; } return VAR5 ; }

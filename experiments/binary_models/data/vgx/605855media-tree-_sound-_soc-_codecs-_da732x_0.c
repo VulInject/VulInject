@@ -1,0 +1,86 @@
+static int FUN1(struct VAR1 *VAR2,
+enum snd_soc_bias_level VAR3)
+{
+struct VAR4 *VAR5 = FUN2(VAR2);
+
+switch (VAR3) {
+case VAR6:
+FUN3(VAR2, VAR7,
+VAR8,
+VAR9);
+break;
+case VAR10:
+break;
+case VAR11:
+if (FUN4(VAR2) == VAR12) {
+
+FUN5(VAR2, VAR13,
+VAR14);
+FUN5(VAR2, VAR7,
+VAR15);
+
+FUN6(VAR16);
+
+
+FUN5(VAR2, VAR13,
+VAR17);
+
+
+FUN5(VAR2, VAR18,
+VAR19);
+
+
+FUN5(VAR2, VAR20,
+VAR21);
+
+FUN5(VAR2, VAR22,
+VAR23 |
+VAR24 |
+VAR25);
+FUN5(VAR2, VAR26,
+VAR27);
+
+FUN7(VAR2, VAR28);
+
+FUN5(VAR2, VAR29,
+VAR30 | VAR31);
+
+
+FUN5(VAR2, VAR32,
+VAR33 |
+VAR34 |
+VAR35 |
+VAR36 |
+VAR37 |
+VAR38 |
+VAR39 |
+VAR40);
+FUN5(VAR2, VAR41,
+VAR42 | VAR43 |
+VAR44 | VAR45 |
+VAR46);
+
+FUN8(VAR2);
+
+FUN9(VAR5->VAR47, false);
+FUN10(VAR5->VAR47);
+} else {
+FUN3(VAR2, VAR7,
+VAR8,
+VAR48);
+FUN3(VAR2, VAR49,
+VAR50, 0);
+VAR5->VAR51 = false;
+}
+break;
+case VAR12:
+FUN9(VAR5->VAR47, true);
+FUN7(VAR2, VAR52);
+FUN3(VAR2, VAR7, VAR15,
+VAR53);
+VAR5->VAR51 = false;
+break;
+}
+
+return 0;
+}

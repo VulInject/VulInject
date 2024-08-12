@@ -1,0 +1,16 @@
+static void FUN1(bool VAR1)
+{
+u32 VAR2;
+
+
+VAR2 = FUN2(VAR3 + VAR4);
+VAR2 &= ~VAR5;
+VAR2 |= VAR1 ? VAR5 : 0;
+FUN3(VAR2, VAR3 + VAR4);
+
+
+VAR2 = FUN2(VAR3 + VAR6);
+VAR2 &= ~VAR7;
+VAR2 |= VAR1 ? VAR7 : 0;
+FUN3(VAR2, VAR3 + VAR6);
+}

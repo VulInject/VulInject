@@ -1,0 +1,1 @@
+static unsigned long FUN1 ( struct VAR1 * VAR2 , u32 VAR3 ) { struct VAR4 * VAR5 = FUN2 ( VAR2 -> VAR6 ) ; struct VAR7 * VAR8 ; VAR8 = FUN2 ( VAR5 -> VAR9 [ FUN3 ( VAR3 ) ] ) ; for ( ; VAR8 ; VAR8 = FUN2 ( VAR8 -> VAR10 ) ) { if ( VAR8 -> VAR11 == VAR3 ) { return ( unsigned long ) VAR8 ; } } return 0 ; }

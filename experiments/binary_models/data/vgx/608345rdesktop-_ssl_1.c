@@ -1,0 +1,1 @@
+RD_BOOL FUN1 ( VAR1 * VAR2 , uint32 VAR3 , VAR1 * VAR4 , uint32 VAR5 , VAR1 * VAR6 , uint32 VAR7 ) { FUN2 ( VAR2 ) ; FUN2 ( VAR3 , NULL ) ; FUN2 ( VAR4 ) ; FUN2 ( VAR5 ) ; FUN2 ( VAR6 ) ; FUN2 ( VAR7 ) ; return VAR8 ; }

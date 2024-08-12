@@ -1,0 +1,20 @@
+VAR1 *FUN1(void)
+{
+    VAR1 *VAR2;
+    VAR3 *VAR4;
+    VAR5 *VAR6;
+    VAR6 = FUN2(NULL, "");
+    FUN3(VAR6);
+    VAR4 = FUN4(VAR7, VAR6, "");
+    VAR2 = FUN5(VAR1, VAR2, VAR4);
+    VAR2->VAR8 = 0x1000;
+    FUN6(VAR9, VAR10);
+    FUN6(VAR11, VAR12);
+    FUN6(VAR13, VAR14);
+    FUN6(VAR15, VAR16);
+    FUN6(VAR17, VAR18);
+    FUN6(VAR19, VAR20);
+    FUN7("", VAR21);
+    FUN7("", VAR22);
+    return VAR2;
+}

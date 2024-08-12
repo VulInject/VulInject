@@ -1,0 +1,38 @@
+static void FUN1(VAR1 *VAR2, VAR3 *VAR4, int VAR5, int VAR6, int VAR7, int VAR8)
+{
+int VAR9, VAR10;
+int VAR11 = VAR2->VAR12[0].VAR13->VAR11;
+int VAR14 = VAR2->VAR12[0].VAR13->VAR14;
+
+for (VAR10 = 0; VAR10 < 2; VAR10++)
+for (VAR9 = 0; VAR9 < 2; VAR9++) {
+VAR3 *VAR15 = &VAR4->VAR16[VAR9 + VAR10 * 2];
+
+if (VAR15->VAR15)
+FUN1(VAR2, VAR15, VAR5 + (VAR9 << (VAR7 - 1)), VAR6 + (VAR10 << (VAR7 - 1)), VAR7 - 1, VAR8);
+else {
+int VAR17, VAR18;
+int VAR19 = VAR15->VAR20[0][0] * 2;
+int VAR21 = VAR15->VAR20[0][1] * 2;
+
+int VAR22 = VAR5 + (VAR9 << (VAR7 - 1));
+int VAR23 = VAR6 + (VAR10 << (VAR7 - 1));
+int VAR24 = VAR22 + (1 << (VAR7 - 1));
+int VAR25 = VAR23 + (1 << (VAR7 - 1));
+
+for (VAR18 = VAR23; VAR18 < VAR25; VAR18++)  {
+int VAR26 = -VAR18;
+int VAR27 = VAR14 - VAR18 - 1;
+for (VAR17 = VAR22; VAR17 < VAR24; VAR17++) {
+int VAR28 = -VAR17;
+int VAR29 = VAR11 - VAR17 - 1;
+VAR30 *VAR31 = &VAR2->VAR31[VAR17 + VAR18 * VAR11];
+VAR32 *VAR33 = &VAR2->VAR33[VAR17 + VAR18 * VAR11];
+VAR34 *VAR35 = &VAR2->VAR35[VAR17 + VAR18 * VAR11];
+
+FUN2(VAR36, VAR19, VAR21);
+}
+}
+}
+}
+}

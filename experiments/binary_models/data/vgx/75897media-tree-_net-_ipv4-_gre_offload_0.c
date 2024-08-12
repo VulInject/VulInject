@@ -1,0 +1,98 @@
+static struct VAR1 *FUN1(struct VAR1 *VAR2,
+netdev_features_t VAR3)
+{
+int VAR4 = FUN2(VAR2) - FUN3(VAR2);
+struct VAR1 *VAR5 = FUN4(-VAR6);
+u16 VAR7 = VAR2->VAR8;
+__be16 VAR9 = VAR2->VAR9;
+u16 VAR10 = VAR2->VAR10;
+int VAR11, VAR12;
+bool VAR13, VAR14, VAR15;
+
+if (!VAR2->VAR16)
+goto VAR17;
+
+if (FUN5(VAR4 < sizeof(struct VAR18)))
+goto VAR17;
+
+if (FUN5(!FUN6(VAR2, VAR4)))
+goto VAR17;
+
+
+VAR2->VAR16 = 0;
+FUN7(VAR2)->VAR19 = 0;
+FUN8(VAR2, VAR4);
+FUN9(VAR2);
+FUN10(VAR2, FUN11(VAR2));
+VAR2->VAR10 = FUN11(VAR2);
+VAR2->VAR9 = VAR2->VAR20;
+
+VAR13 = !!(FUN12(VAR2)->VAR21 & VAR22);
+VAR2->VAR23 = VAR13;
+
+VAR14 = !!(FUN12(VAR2)->VAR21 & VAR24);
+
+VAR3 &= VAR2->VAR25->VAR26;
+
+
+if (VAR14) {
+VAR3 &= ~VAR27;
+if (!VAR13)
+VAR3 |= VAR28;
+}
+
+
+VAR5 = FUN13(VAR2, VAR3);
+if (FUN14(VAR5)) {
+FUN15(VAR2, VAR9, VAR4, VAR7,
+VAR10);
+goto VAR17;
+}
+
+VAR15 = !!(FUN12(VAR5)->VAR21 & VAR29);
+
+VAR12 = FUN16(VAR2);
+VAR11 = VAR12 - VAR4;
+VAR2 = VAR5;
+do {
+struct VAR18 *VAR30;
+VAR31 *VAR32;
+
+
+if (VAR2->VAR33 == VAR34) {
+FUN17(VAR2);
+VAR2->VAR16 = 1;
+}
+
+VAR2->VAR10 = VAR10;
+VAR2->VAR9 = VAR9;
+
+FUN18(VAR2, VAR12);
+FUN9(VAR2);
+FUN10(VAR2, VAR10);
+FUN19(VAR2, VAR11);
+
+if (!VAR13)
+continue;
+
+VAR30 = (struct VAR18 *)FUN3(VAR2);
+VAR32 = (VAR31 *)(VAR30 + 1);
+
+if (VAR15) {
+unsigned int VAR35;
+
+
+VAR35 = VAR2->VAR36 + FUN20(VAR2) -
+FUN7(VAR2)->VAR37 -
+FUN12(VAR2)->VAR38;
+*VAR32 = ~FUN21((__force VAR39)FUN22(VAR35));
+} else {
+*VAR32 = 0;
+}
+
+*(VAR32 + 1) = 0;
+*VAR32 = FUN23(VAR2, 0);
+} while ((VAR2 = VAR2->VAR40));
+VAR17:
+return VAR5;
+}

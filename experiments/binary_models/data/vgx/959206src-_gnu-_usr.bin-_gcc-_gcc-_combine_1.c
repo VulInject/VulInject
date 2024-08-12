@@ -1,0 +1,1 @@
+FUN1 ( ) { struct VAR1 * VAR1 , * VAR2 ; for ( VAR1 = VAR3 . VAR4 ; VAR1 ; VAR1 = VAR2 ) { VAR2 = VAR1 -> VAR2 ; if ( VAR1 -> VAR5 ) { * VAR1 -> VAR6 . VAR7 = VAR1 -> VAR8 . VAR7 ; } else { * VAR1 -> VAR6 . VAR9 = VAR1 -> VAR8 . VAR9 ; } VAR1 -> VAR2 = VAR3 . VAR10 ; VAR3 . VAR10 = VAR1 ; } VAR11 = VAR12 ; }

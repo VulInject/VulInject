@@ -1,0 +1,33 @@
+static int FUN1( struct VAR1 *VAR2, struct VAR1 *VAR3,
+struct VAR1 *VAR4, struct VAR1 *VAR5 ) {
+
+int VAR6, VAR7, VAR8 = 0;
+double VAR9, VAR10;
+
+
+
+VAR6 = (  VAR4->VAR11 >= VAR2->VAR11 - VAR12 && 
+VAR4->VAR11 <= VAR2->VAR11 + VAR12 &&
+VAR5->VAR11 >= VAR3->VAR11 - VAR12 && 
+VAR5->VAR11 <= VAR3->VAR11 + VAR12 );
+VAR7 = (VAR4->VAR11 >= VAR3->VAR11 - VAR12 && 
+VAR4->VAR11 <= VAR3->VAR11 + VAR12 &&
+VAR5->VAR11 >= VAR2->VAR11 - VAR12 && 
+VAR5->VAR11 <= VAR2->VAR11 + VAR12 );
+
+if ( !VAR6 && !VAR7 )
+return( false );
+
+if ( VAR6 ) {
+VAR9 = FUN2( VAR2, VAR4 );
+VAR10 = FUN2( VAR3, VAR5 );
+VAR8 =   VAR9 > VAR2->VAR13/3 && VAR9 > VAR4->VAR13/3 &&
+VAR10 > VAR3->VAR13/3 && VAR10 > VAR5->VAR13/3;
+} else if ( VAR7 ) {
+VAR9 = FUN2( VAR2, VAR5 );
+VAR10 = FUN2( VAR3, VAR4 );
+VAR8 =   VAR9 > VAR2->VAR13/3 && VAR9 > VAR5->VAR13/3 &&
+VAR10 > VAR3->VAR13/3 && VAR10 > VAR4->VAR13/3;
+}
+return( VAR8 );
+}

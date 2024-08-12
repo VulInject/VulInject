@@ -1,0 +1,32 @@
+static struct VAR1 *FUN1(struct VAR2 *VAR3,
+const void *VAR4, u8 VAR5, u8 VAR6)
+{
+struct VAR7 *VAR8 = NULL, **VAR9 = &VAR3->VAR10.VAR7;
+struct VAR1 *VAR11;
+int VAR12;
+
+while (*VAR9) {
+VAR8 = *VAR9;
+VAR11 = FUN2(VAR8, struct VAR1, VAR13);
+VAR12 = FUN3(VAR11, VAR4, VAR5, VAR6);
+if (VAR12 > 0)
+VAR9 = &VAR8->VAR14;
+else if (VAR12 < 0)
+VAR9 = &VAR8->VAR15;
+else {
+
+return VAR11;
+}
+}
+VAR11 = FUN4(sizeof(*VAR11) + VAR5, VAR16);
+if (!VAR11)
+return VAR11;
+VAR11->VAR17 = VAR18;
+VAR11->VAR6  = VAR6;
+VAR11->VAR19  = VAR5;
+memcpy(VAR11->VAR4, VAR4, VAR5);
+
+FUN5(&VAR11->VAR13, VAR8, VAR9);
+FUN6(&VAR11->VAR13, &VAR3->VAR10);
+return VAR11;
+}

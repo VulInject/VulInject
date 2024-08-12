@@ -1,0 +1,33 @@
+}
+FUN1(VAR1);
+
+int FUN2(struct VAR2 *VAR3,
+const struct VAR4 *VAR5)
+{
+struct VAR6 *VAR7;
+unsigned long VAR8;
+
+if (VAR5->VAR9 == VAR10) {
+FUN3(VAR3);
+return 0;
+}
+
+FUN4(&VAR3->VAR11);
+
+FUN5(&VAR3->VAR12->VAR13, VAR8);
+
+VAR7 = FUN6(VAR3, VAR5->VAR9, VAR5->VAR14);
+if (VAR7 != NULL)
+FUN7(VAR7);
+
+FUN8(&VAR3->VAR12->VAR13, VAR8);
+
+if (VAR7 && VAR7->VAR15 && VAR7->VAR15->VAR16)
+VAR7->VAR15->FUN9(VAR7);
+
+FUN10(&VAR3->VAR11);
+
+FUN11(VAR7);
+
+return 0;
+}

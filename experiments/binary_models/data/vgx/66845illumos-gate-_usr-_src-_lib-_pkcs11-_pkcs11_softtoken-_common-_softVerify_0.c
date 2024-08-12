@@ -1,0 +1,49 @@
+VAR1
+FUN1(CK_SESSION_HANDLE VAR2, CK_BYTE_PTR VAR3, CK_ULONG VAR4,
+CK_BYTE_PTR VAR5, CK_ULONG VAR6)
+{
+
+CK_RV		VAR7;
+VAR8	*VAR9;
+boolean_t	VAR10 = VAR11;
+
+if (!VAR12)
+return (VAR13);
+
+
+VAR7 = FUN2(VAR2, &VAR9);
+if (VAR7 != VAR14)
+return (VAR7);
+
+if (VAR3 == NULL) {
+VAR7 = VAR15;
+goto VAR16;
+}
+
+(void) pthread_mutex_lock(&VAR9->VAR17);
+VAR10 = VAR18;
+
+
+if (!(VAR9->VAR19.VAR20 & VAR21)) {
+FUN3(VAR9, VAR10);
+return (VAR22);
+}
+
+
+if (VAR9->VAR19.VAR20 & VAR23) {
+
+FUN3(VAR9, VAR10);
+return (VAR24);
+}
+
+(void) pthread_mutex_unlock(&VAR9->VAR17);
+VAR10 = VAR11;
+
+VAR7 = FUN4(VAR9, VAR3, VAR4, VAR5,
+VAR6);
+
+VAR16:
+
+FUN5(VAR9, VAR11, VAR11);
+return (VAR7);
+}

@@ -1,0 +1,130 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+struct VAR3 *VAR4 = FUN2(VAR2, struct VAR3, VAR5.VAR2);
+struct VAR6 *VAR7 = &VAR4->VAR8;
+uint32_t VAR9, VAR10, VAR11, VAR12;
+int VAR13 = 0;
+int VAR14 = 0;
+int VAR15;
+int VAR16, VAR17;
+
+FUN3(&VAR7->VAR18);
+
+if (!FUN4(VAR19, &VAR7->VAR20) ||
+FUN4(VAR21, &VAR7->VAR20)) {
+FUN5(&VAR7->VAR18);
+return;
+}
+VAR9 = VAR7->VAR22;
+VAR10 = VAR7->VAR23;
+FUN5(&VAR7->VAR18);
+
+
+
+if (VAR9 == VAR10)
+return;
+
+
+
+VAR17 = FUN6(VAR4, VAR24, VAR25|VAR26);
+if (VAR17) {
+FUN7(VAR4, "", VAR17);
+return;
+}
+
+FUN8(VAR7, &VAR11, VAR7->VAR27);
+
+FUN3(&VAR7->VAR18);
+if (VAR9 != VAR7->VAR22 ||
+VAR10 != VAR7->VAR23) {
+FUN9(VAR4, "",
+VAR10, VAR9, VAR7->VAR22);
+FUN5(&VAR7->VAR18);
+FUN6(VAR4, VAR28, VAR25);
+return;
+}
+
+VAR15 = VAR7->VAR29;
+
+if (VAR11 <= VAR10) {
+
+for (VAR16 = 0; VAR16 < VAR15; VAR16++) {
+if (VAR7->VAR30[VAR16] != VAR31)
+continue;
+
+VAR7->VAR30[VAR16] = 0;
+
+if (!FUN10(VAR16, VAR7->VAR27 + VAR32))
+continue;
+
+FUN11(VAR16, VAR7->VAR27 + VAR32);
+VAR14 = 1;
+}
+}
+
+if (VAR11 == VAR10) {
+
+for (VAR16 = 0; VAR16 < VAR15; VAR16++) {
+if (!VAR7->VAR33[VAR16])
+continue;
+if (VAR7->VAR33[VAR16] < VAR11)
+VAR7->VAR33[VAR16] = 0;
+}
+} else if (VAR11 < VAR10) {
+
+for (VAR16 = 0; VAR16 < VAR15; VAR16++) {
+if (!VAR7->VAR33[VAR16])
+continue;
+if (VAR7->VAR33[VAR16] < VAR10) {
+VAR7->VAR33[VAR16] = 0;
+FUN12(VAR16, VAR7->VAR27 + VAR32);
+}
+}
+
+VAR14 = 1;
+} else {
+
+}
+FUN5(&VAR7->VAR18);
+
+if (VAR14) {
+FUN13(VAR7, VAR10, VAR7->VAR27);
+VAR12 = VAR25 | VAR26;
+} else {
+VAR12 = VAR25;
+}
+
+VAR17 = FUN6(VAR4, VAR28, VAR12);
+if (VAR17) {
+FUN7(VAR4, "", VAR17);
+return;
+}
+
+
+
+for (VAR16 = 0; VAR16 < VAR15; VAR16++) {
+if (FUN10(VAR16, VAR7->VAR27 + VAR32)) {
+FUN9(VAR4, "",
+VAR10, VAR16);
+FUN14(VAR4, VAR16);
+VAR13++;
+}
+}
+if (VAR13)
+return;
+
+
+
+FUN3(&VAR7->VAR18);
+if (VAR7->VAR22 == VAR9 &&
+VAR7->VAR23 == VAR10) {
+FUN15(VAR34, &VAR7->VAR20);
+FUN5(&VAR7->VAR18);
+FUN9(VAR4, "", VAR10);
+FUN16(VAR4);
+} else {
+FUN9(VAR4, "",
+VAR10, VAR9, VAR7->VAR22);
+FUN5(&VAR7->VAR18);
+}
+}

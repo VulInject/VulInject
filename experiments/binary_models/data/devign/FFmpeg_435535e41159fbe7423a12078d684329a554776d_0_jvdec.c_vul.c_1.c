@@ -1,0 +1,56 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    VAR5 *VAR6 = VAR2->VAR7;
+    VAR8 *VAR9 = VAR2->VAR9;
+    VAR10 *VAR11, *VAR12;
+    int64_t VAR13 = 0;
+    int64_t VAR14;
+    int VAR15;
+    FUN2(VAR9, 80);
+    VAR12 = FUN3(VAR2, 0);
+    VAR11 = FUN3(VAR2, 1);
+    if (!VAR12 || !VAR11)
+        return FUN4(VAR16);
+    VAR11->VAR17->VAR18 = VAR19;
+    VAR11->VAR17->VAR20 = VAR21;
+    VAR11->VAR17->VAR22 = 0;
+    VAR11->VAR17->VAR23 = FUN5(VAR9);
+    VAR11->VAR17->VAR24 = FUN5(VAR9);
+    VAR11->VAR25 = VAR12->VAR26 = FUN5(VAR9);
+    FUN6(VAR11, 64, FUN5(VAR9), 1000);
+    FUN2(VAR9, 4);
+    VAR12->VAR17->VAR18 = VAR27;
+    VAR12->VAR17->VAR20 = VAR28;
+    VAR12->VAR17->VAR22 = 0;
+    VAR12->VAR17->VAR29 = FUN5(VAR9);
+    VAR12->VAR17->VAR30 = 1;
+    FUN6(VAR12, 64, 1, VAR12->VAR17->VAR29);
+    FUN2(VAR9, 10);
+    VAR12->VAR31 = FUN7(VAR12->VAR26 * sizeof(*VAR12->VAR31));
+    if (!VAR12->VAR31)
+        return FUN4(VAR16);
+    VAR6->VAR32 = FUN7(VAR12->VAR26 * sizeof(VAR33));
+    if (!VAR6->VAR32)
+        return FUN4(VAR16);
+    VAR14 = 0x68 + VAR12->VAR26 * 16;
+    for (VAR15 = 0; VAR15 < VAR12->VAR26; VAR15++)
+    {
+        VAR34 *VAR35 = VAR12->VAR31 + VAR15;
+        VAR33 *VAR36 = VAR6->VAR32 + VAR15;
+        VAR35->VAR37 = FUN8(VAR9);
+        VAR35->VAR38 = VAR15;
+        VAR35->VAR39 = VAR14;
+        VAR14 += VAR35->VAR37;
+        VAR36->VAR40 = FUN8(VAR9);
+        VAR36->VAR41 = FUN8(VAR9);
+        VAR36->VAR42 = FUN9(VAR9) ? 768 : 0;
+        if (FUN9(VAR9))
+            FUN10(VAR2, VAR43, "");
+        VAR36->VAR44 = FUN9(VAR9);
+        FUN2(VAR9, 1);
+        VAR35->VAR38 = VAR36->VAR40 ? VAR13 : VAR45;
+        VAR13 += VAR36->VAR40;
+        VAR35->VAR46 = VAR36->VAR44 != 1 ? VAR47 : 0;
+    }
+    VAR6->VAR48 = VAR49;
+    return 0;

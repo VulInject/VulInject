@@ -1,0 +1,1 @@
+static char * FUN1 ( char * VAR1 ) { char * VAR2 ; while ( FUN2 ( * VAR1 ) ) { VAR1 ++ ; } if ( * VAR1 == '' ) { return ( NULL ) ; } VAR2 = VAR1 + strlen ( VAR1 ) ; while ( VAR2 > VAR1 && FUN2 ( VAR2 [ - 1 ] ) ) { VAR2 -- ; } * VAR2 = '' ; return ( VAR1 ) ; }

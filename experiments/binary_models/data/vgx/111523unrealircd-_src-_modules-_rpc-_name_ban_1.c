@@ -1,0 +1,1 @@
+VAR1 * FUN1 ( const char * VAR2 ) { VAR1 * VAR3 ; for ( VAR3 = VAR4 [ FUN2 ( '' ) ] ; VAR3 ; VAR3 = VAR3 -> VAR5 ) { if ( ! FUN3 ( VAR2 , VAR3 -> VAR6 . VAR7 -> VAR2 ) ) { return VAR3 ; } } return NULL ; }

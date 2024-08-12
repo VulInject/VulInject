@@ -1,0 +1,1 @@
+static inline void FUN1 ( struct VAR1 * VAR2 , unsigned int VAR3 ) { struct VAR4 * VAR5 = & VAR4 ; int VAR6 = VAR5 -> VAR7 [ VAR3 ] ; FUN2 ( VAR5 -> VAR8 == 0 ) ; if ( VAR5 -> VAR8 == 0 ) { return ; } switch ( VAR5 -> VAR9 ) { case VAR10 : { FUN3 ( VAR2 , FUN4 ( VAR6 ) ) ; break ; } case VAR11 : { FUN3 ( VAR2 , FUN5 ( VAR6 ) ) ; break ; } } }

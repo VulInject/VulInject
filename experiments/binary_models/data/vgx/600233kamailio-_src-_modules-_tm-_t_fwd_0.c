@@ -1,0 +1,65 @@
+static char *FUN1( struct VAR1 *VAR2, struct VAR3 *VAR4,
+int VAR5, VAR6 *VAR7, unsigned int *VAR8, struct VAR9* VAR10,
+char *VAR11, short VAR12)
+{
+char *VAR13;
+str VAR14;
+char *VAR15, *VAR16, *VAR17;
+unsigned int VAR18;
+
+VAR13=0;
+
+
+if (!FUN2(VAR2, VAR5, VAR4->VAR19,
+&VAR4->VAR20 ))
+{
+FUN3("");
+goto VAR21;
+}
+VAR14.VAR22 = VAR4->VAR19;
+VAR14.VAR8 = VAR4->VAR20;
+
+
+VAR16 = FUN4(VAR11, VAR11+VAR12);
+if (!VAR16) {
+FUN3("");
+goto VAR21;
+}
+
+VAR17 = FUN5(VAR16, VAR11+VAR12);
+if (!VAR17) {
+FUN3("");
+goto VAR21;
+}
+
+
+VAR15 = FUN6(&VAR18, VAR4, VAR10, &VAR14);
+if (!VAR15) {
+FUN3("");
+goto VAR21;
+}
+
+
+*VAR8 = VAR12 + VAR18 - (VAR17 - VAR16);
+VAR13=(char *)FUN7(*VAR8);
+if (!VAR13) {
+VAR23=VAR24;
+VAR25;
+goto VAR26;
+}
+
+
+memcpy(VAR13, VAR11, VAR16-VAR11);
+memcpy(VAR13+(VAR16-VAR11), VAR15, VAR18);
+memcpy(VAR13+(VAR16-VAR11)+VAR18, VAR17, (VAR11+VAR12)-VAR17);
+
+if (VAR13[*VAR8-1]==0) {
+FUN3("");
+FUN8();
+}
+
+VAR26:
+FUN9(VAR15);
+VAR21:
+return VAR13;
+}

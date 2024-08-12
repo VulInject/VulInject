@@ -1,0 +1,18 @@
+int FUN1(struct VAR1 *VAR2, enum bmi160_sensor_type VAR3,
+int VAR4, int VAR5)
+{
+int VAR6;
+
+for (VAR6 = 0; VAR6 < VAR7[VAR3].VAR8; VAR6++)
+if (VAR7[VAR3].VAR9[VAR6].VAR4 == VAR4 &&
+VAR7[VAR3].VAR9[VAR6].VAR5 == VAR5)
+break;
+
+if (VAR6 >= VAR7[VAR3].VAR8)
+return -VAR10;
+
+return FUN2(VAR2->VAR11,
+VAR12[VAR3].VAR13,
+VAR12[VAR3].VAR14,
+VAR7[VAR3].VAR9[VAR6].VAR15);
+}

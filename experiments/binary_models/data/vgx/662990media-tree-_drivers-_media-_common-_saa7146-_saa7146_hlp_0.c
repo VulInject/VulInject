@@ -1,0 +1,18 @@
+void FUN1(struct VAR1 *VAR2, int VAR3, int VAR4)
+{
+struct VAR5 *VAR6 = VAR2->VAR7;
+u32 VAR8 = 0;
+
+
+VAR8 = FUN2(VAR2, VAR9);
+
+VAR8 &= ~( VAR10 | VAR11 | VAR12 );
+VAR8 |= (VAR3 << 30) | (VAR4 << 28);
+
+
+FUN3(VAR2, VAR9, VAR8);
+FUN3(VAR2, VAR13, (VAR14 | VAR15));
+
+VAR6->VAR16 = VAR3;
+VAR6->VAR17 = VAR4;
+}

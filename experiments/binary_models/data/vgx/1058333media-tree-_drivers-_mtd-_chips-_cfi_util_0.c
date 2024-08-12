@@ -1,0 +1,13 @@
+void FUN1(struct VAR1 *VAR2, struct VAR3 *VAR4)
+{
+struct VAR5 *VAR6 = VAR2->VAR7;
+struct VAR8 *VAR9 = VAR6->VAR10;
+struct VAR3 *VAR11;
+
+for (VAR11=VAR4; VAR11->VAR12; VAR11++) {
+if (((VAR11->VAR13 == VAR14) || (VAR11->VAR13 == VAR9->VAR13)) &&
+((VAR11->VAR15  == VAR16)  || (VAR11->VAR15  == VAR9->VAR15))) {
+VAR11->FUN2(VAR2);
+}
+}
+}

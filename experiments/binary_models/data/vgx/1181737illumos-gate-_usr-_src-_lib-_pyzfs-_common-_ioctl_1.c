@@ -1,0 +1,1 @@
+static void FUN1 ( char * VAR1 , ... ) { int VAR2 [ 1024 ] ; va_list VAR3 ; FUN2 ( VAR3 , VAR1 ) ; ( void ) vsnprintf ( VAR2 , sizeof ( VAR2 ) , VAR1 , VAR3 ) ; FUN3 ( VAR3 ) ; FUN4 ( VAR4 , FUN5 ( "" , VAR5 , VAR2 ) ) ; }

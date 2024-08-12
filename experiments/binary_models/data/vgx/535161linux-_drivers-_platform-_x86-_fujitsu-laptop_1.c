@@ -1,0 +1,1 @@
+static ssize_t FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , char * VAR5 ) { struct VAR6 * VAR7 = FUN2 ( VAR2 ) ; if ( VAR7 -> VAR8 & VAR9 ) { return sprintf ( VAR5 , "" ) ; } else { return sprintf ( VAR5 , "" ) ; } }

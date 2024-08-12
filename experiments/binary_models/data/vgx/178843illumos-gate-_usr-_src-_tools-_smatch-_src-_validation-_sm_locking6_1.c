@@ -1,0 +1,1 @@
+void FUN1 ( void ) { int VAR1 = 1 ; int VAR2 = 1 ; FUN2 ( VAR1 , VAR2 ) ; if ( VAR3 ) { return ; } if ( FUN3 ( VAR1 , VAR2 ) ) { return ; } return ; }

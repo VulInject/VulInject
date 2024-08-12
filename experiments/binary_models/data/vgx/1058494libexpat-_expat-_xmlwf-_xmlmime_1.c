@@ -1,0 +1,1 @@
+int main ( int argc , char * argv [ ] ) { char VAR1 [ VAR2 ] ; FUN1 ( "" , argv [ 1 ] ) ; FUN2 ( argv [ 1 ] , VAR1 ) ; FUN1 ( ""%VAR3\"" , VAR1 ) ; return 0 ; }

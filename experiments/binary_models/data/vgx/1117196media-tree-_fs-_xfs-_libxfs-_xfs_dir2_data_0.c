@@ -1,0 +1,50 @@
+void
+FUN1(
+struct VAR1	*VAR2,
+const struct VAR3 *VAR4,
+struct VAR5 *VAR6,
+int			*VAR7)
+{
+VAR8	*VAR9;		
+VAR10	*VAR11;		
+VAR12	*VAR13;		
+struct VAR14 *VAR15;
+char			*VAR16;		
+char			*VAR17;		
+
+FUN2(VAR6->VAR18 == FUN3(VAR19) ||
+VAR6->VAR18 == FUN3(VAR20) ||
+VAR6->VAR18 == FUN3(VAR21) ||
+VAR6->VAR18 == FUN3(VAR22));
+
+
+VAR15 = VAR4->FUN4(VAR6);
+memset(VAR15, 0, sizeof(*VAR15) * VAR23);
+*VAR7 = 1;
+
+VAR17 = (char *)VAR4->FUN5(VAR6);
+if (VAR6->VAR18 == FUN3(VAR21) ||
+VAR6->VAR18 == FUN3(VAR22)) {
+VAR9 = FUN6(VAR2, VAR6);
+VAR16 = (char *)FUN7(VAR9);
+} else
+VAR16 = (char *)VAR6 + VAR2->VAR24;
+
+while (VAR17 < VAR16) {
+VAR13 = (VAR12 *)VAR17;
+
+if (FUN8(VAR13->VAR25) == VAR26) {
+FUN2((char *)VAR13 - (char *)VAR6 ==
+FUN8(*FUN9(VAR13)));
+FUN10(VAR6, VAR15, VAR13, VAR7);
+VAR17 += FUN8(VAR13->VAR27);
+}
+
+else {
+VAR11 = (VAR10 *)VAR17;
+FUN2((char *)VAR11 - (char *)VAR6 ==
+FUN8(*VAR4->FUN11(VAR11)));
+VAR17 += VAR4->FUN12(VAR11->VAR28);
+}
+}
+}

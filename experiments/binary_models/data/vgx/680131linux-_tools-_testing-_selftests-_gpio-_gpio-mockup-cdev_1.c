@@ -1,0 +1,1 @@
+static int FUN1 ( int VAR1 ) { struct gpiohandle_data VAR2 ; int VAR3 ; VAR3 = FUN2 ( VAR1 , VAR4 , & VAR2 ) ; if ( VAR3 == - 1 ) { return - VAR5 ; } return VAR2 . VAR6 [ 0 ] ; }

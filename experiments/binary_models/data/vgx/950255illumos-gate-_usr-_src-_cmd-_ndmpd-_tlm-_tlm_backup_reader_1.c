@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 ) { int VAR3 = 0 ; VAR4 * VAR5 ; VAR6 * VAR7 ; ( void ) FUN2 ( VAR8 , & VAR3 , VAR9 , VAR9 , VAR10 | VAR11 ) ; ( void ) FUN3 ( VAR2 , VAR12 , VAR13 , & VAR3 ) ; ( void ) FUN3 ( VAR2 , VAR14 , VAR13 , & VAR3 ) ; VAR5 = FUN4 ( VAR2 ) ; VAR7 = FUN5 ( VAR5 , NULL ) ; for ( ; VAR7 != NULL ; VAR7 = FUN5 ( VAR5 , VAR7 ) ) { VAR3 ++ ; } return ( VAR3 ) ; }

@@ -1,0 +1,1 @@
+static int FUN1 ( VAR1 * VAR2 ) { VAR3 * VAR4 ; if ( VAR2 == NULL ) { return ( 0 ) ; } VAR4 = ( VAR3 * ) VAR2 -> VAR5 ; free ( VAR4 ) ; return ( 1 ) ; }

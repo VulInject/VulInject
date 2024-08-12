@@ -1,0 +1,24 @@
+static int FUN1(struct VAR1 *VAR2, void *VAR3)
+{
+struct VAR4 *VAR5 = (struct VAR4 *) VAR3;
+dma_addr_t VAR6;
+struct otx_cpt_bitmap VAR7;
+int VAR8;
+
+VAR7 = FUN2(&VAR5->VAR9->VAR10, VAR2);
+if (!VAR7.VAR11)
+return -VAR12;
+
+if (VAR2->VAR13.VAR14)
+VAR6 =
+VAR2->VAR15->VAR16[VAR2->VAR13.VAR17].VAR18[0].VAR19;
+else
+VAR6 = VAR2->VAR18[0].VAR19;
+
+
+FUN3(VAR8, VAR7.VAR20, VAR7.VAR11)
+if (!VAR2->VAR15->VAR21[VAR8])
+FUN4((VAR22) VAR6, VAR5->VAR23 +
+FUN5(VAR8));
+return 0;
+}

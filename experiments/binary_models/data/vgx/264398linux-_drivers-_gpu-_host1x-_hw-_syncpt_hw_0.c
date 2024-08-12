@@ -1,0 +1,18 @@
+static VAR1 FUN1(struct VAR2 *VAR3)
+{
+struct VAR4 *VAR5 = VAR3->VAR5;
+u32 VAR6, VAR7;
+
+
+do {
+VAR6 = FUN2(VAR3);
+VAR7 = FUN3(VAR5, FUN4(VAR3->VAR8));
+} while ((VAR1)FUN5(&VAR3->VAR9, VAR6, VAR7) != VAR6);
+
+if (!FUN6(VAR3, VAR7))
+FUN7(VAR5->VAR10, "",
+VAR11, VAR3->VAR8, FUN2(VAR3),
+FUN8(VAR3));
+
+return VAR7;
+}

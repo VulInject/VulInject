@@ -1,0 +1,73 @@
+static void FUN1(VAR1 *VAR2, int VAR3, VAR4 *VAR5) {
+FUN2(VAR6) sd_bus_error VAR7 = VAR8;
+FUN2(VAR9) VAR4 *VAR10 = NULL;
+bool VAR11;
+int VAR12;
+
+assert(VAR2);
+assert(FUN3(VAR2->VAR13, VAR14, VAR15, VAR16));
+
+VAR10 = FUN4(VAR2->VAR10); 
+
+if (VAR3 < 0) {
+if (VAR3 == -VAR17)
+(void) FUN5(VAR2, false);
+
+(void) FUN6(VAR2, VAR3, &VAR7);
+VAR12 = FUN7(VAR3, "");
+goto VAR18;
+}
+if (!VAR5) {
+VAR12 = FUN7(FUN8(VAR19), "");
+goto VAR18;
+}
+
+VAR12 = FUN9(VAR2, VAR5, &VAR11, &VAR7);
+if (VAR12 < 0)
+goto VAR18;
+
+VAR12 = FUN10(VAR2, VAR5);
+if (VAR12 < 0) {
+FUN7(VAR12, "");
+goto VAR18;
+}
+
+VAR2->VAR11 = VAR11;
+
+
+if (VAR2->VAR13 == VAR14) {
+VAR12 = FUN11(VAR2->VAR20);
+if (VAR12 < 0)
+FUN12(VAR12, "");
+}
+
+VAR12 = FUN13(VAR2);
+if (VAR12 < 0)
+FUN12(VAR12, "");
+
+if (FUN3(VAR2->VAR13, VAR15, VAR16)) {
+
+VAR12 = FUN14(VAR2, "", VAR2->VAR20, VAR10);
+if (VAR12 < 0) {
+VAR2->VAR21 = FUN15(VAR2->VAR21, VAR12, NULL);
+FUN16(VAR2, VAR22);
+} else
+FUN16(VAR2, VAR2->VAR13 == VAR15 ? VAR23 : VAR24);
+
+return;
+}
+
+FUN17("", VAR2->VAR25);
+
+VAR2->VAR21 = FUN15(VAR2->VAR21, 0, NULL);
+
+
+FUN16(VAR2, VAR22);
+(void) FUN18(VAR2->VAR26,  false);
+return;
+
+VAR18:
+
+VAR2->VAR21 = FUN15(VAR2->VAR21, VAR12, &VAR7);
+FUN16(VAR2, VAR27);
+}

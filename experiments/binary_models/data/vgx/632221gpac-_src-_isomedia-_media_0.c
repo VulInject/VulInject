@@ -1,0 +1,21 @@
+VAR1 FUN1(VAR2 *VAR3, u64 VAR4, VAR5 *VAR6)
+{
+GF_Err VAR7;
+u32 VAR8, VAR9, VAR10;
+u64 VAR11;
+if (VAR6 == NULL) return VAR12;
+
+
+VAR7 = FUN2(VAR3->VAR13->VAR14, (VAR5) VAR4, 0, &VAR8, &VAR9);
+if (VAR7) return VAR7;
+
+if (!VAR8 && !VAR9) {
+
+if (FUN3(VAR3->VAR13->VAR14->VAR15->VAR16)) {
+(*VAR6) = 1;
+return VAR17;
+}
+return VAR12;
+}
+return FUN4(VAR3->VAR13->VAR14, ( VAR8 ? VAR8 : VAR9), &VAR11, &VAR10, VAR6, NULL);
+}

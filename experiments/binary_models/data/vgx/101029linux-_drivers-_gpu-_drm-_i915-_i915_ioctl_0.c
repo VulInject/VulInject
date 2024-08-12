@@ -1,0 +1,55 @@
+int FUN1(struct VAR1 *VAR2,
+void *VAR3, struct VAR4 *VAR5)
+{
+struct VAR6 *VAR7 = FUN2(VAR2);
+struct VAR8 *VAR9 = &VAR7->VAR9;
+struct VAR10 *VAR11 = VAR3;
+struct reg_whitelist const *VAR12;
+intel_wakeref_t VAR13;
+unsigned int VAR14;
+int VAR15;
+int VAR16 = 0;
+
+VAR12 = VAR17;
+VAR15 = FUN3(VAR17);
+while (VAR15) {
+u32 VAR18 = FUN4(VAR12->VAR19);
+
+FUN5(!FUN6(VAR12->VAR20));
+FUN5(VAR12->VAR20 > 8);
+FUN5(VAR18 & (VAR12->VAR20 - 1));
+
+if (FUN7(VAR7, VAR12->VAR21, VAR12->VAR22) &&
+VAR18 == (VAR11->VAR23 & -VAR12->VAR20))
+break;
+VAR12++;
+VAR15--;
+}
+
+if (!VAR15)
+return -VAR24;
+
+VAR14 = VAR11->VAR23 & (VAR12->VAR20 - 1);
+
+FUN8(&VAR7->VAR25, VAR13) {
+if (VAR12->VAR20 == 8 && VAR14 == VAR26)
+VAR11->VAR27 = FUN9(VAR9,
+VAR12->VAR19,
+VAR12->VAR28);
+else if (VAR12->VAR20 == 8 && VAR14 == 0)
+VAR11->VAR27 = FUN10(VAR9,
+VAR12->VAR19);
+else if (VAR12->VAR20 == 4 && VAR14 == 0)
+VAR11->VAR27 = FUN11(VAR9, VAR12->VAR19);
+else if (VAR12->VAR20 == 2 && VAR14 == 0)
+VAR11->VAR27 = FUN12(VAR9,
+VAR12->VAR19);
+else if (VAR12->VAR20 == 1 && VAR14 == 0)
+VAR11->VAR27 = FUN13(VAR9,
+VAR12->VAR19);
+else
+VAR16 = -VAR24;
+}
+
+return VAR16;
+}

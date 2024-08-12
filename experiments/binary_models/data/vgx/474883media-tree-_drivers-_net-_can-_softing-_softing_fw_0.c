@@ -1,0 +1,97 @@
+int FUN1(const char *VAR1, struct VAR2 *VAR3)
+{
+const struct VAR4 *VAR5;
+const VAR6 *VAR7, *VAR8, *VAR9;
+int VAR10, VAR11;
+uint16_t VAR12, VAR13;
+uint32_t VAR14, VAR15 = 0;
+unsigned int VAR16, VAR17;
+int8_t VAR18 = 0, VAR19 = 0;
+
+VAR10 = FUN2(&VAR5, VAR1, &VAR3->VAR20->VAR21);
+if (VAR10) {
+FUN3(&VAR3->VAR20->VAR21, "",
+VAR1, VAR10);
+return VAR10;
+}
+FUN4(&VAR3->VAR20->VAR21, "",
+VAR1, (unsigned long)VAR5->VAR22);
+
+VAR7 = VAR5->VAR23;
+VAR8 = &VAR7[VAR5->VAR22];
+
+VAR10 = FUN5(&VAR7, &VAR12, &VAR14, &VAR13, &VAR9);
+if (VAR10)
+goto VAR24;
+VAR10 = -VAR25;
+if (VAR12 != 0xffff) {
+FUN3(&VAR3->VAR20->VAR21, "",
+VAR12);
+goto VAR24;
+}
+if (FUN6("", VAR9, VAR13)) {
+FUN3(&VAR3->VAR20->VAR21, "",
+VAR13, VAR9);
+goto VAR24;
+}
+
+while (VAR7 < VAR8) {
+VAR10 = FUN5(&VAR7, &VAR12, &VAR14, &VAR13, &VAR9);
+if (VAR10)
+goto VAR24;
+
+if (VAR12 == 3) {
+
+VAR15 = VAR14;
+VAR19 = 1;
+continue;
+} else if (VAR12 == 1) {
+
+VAR18 = 1;
+break;
+} else if (VAR12 != 0) {
+FUN3(&VAR3->VAR20->VAR21,
+"", VAR12);
+VAR10 = -VAR25;
+goto VAR24;
+}
+
+
+for (VAR16 = 0, VAR11 = 0; VAR11 < VAR13; ++VAR11)
+VAR16 += VAR9[VAR11];
+
+VAR16 &= 0xffff;
+
+FUN7(&VAR3->VAR26[VAR3->VAR27->VAR28.VAR29], VAR9, VAR13);
+FUN8(VAR3->VAR27->VAR28.VAR29 + VAR3->VAR27->VAR28.VAR14,
+&VAR3->VAR26[VAR30 + 2]);
+FUN8(VAR14, &VAR3->VAR26[VAR30 + 6]);
+FUN9(VAR13, &VAR3->VAR26[VAR30 + 10]);
+FUN10(1, &VAR3->VAR26[VAR30 + 12]);
+VAR10 = FUN11(VAR3, 1, "");
+if (VAR10 < 0)
+goto VAR24;
+
+VAR17 = FUN12(&VAR3->VAR26[VAR31 + 2]);
+if (VAR17 != VAR16) {
+FUN3(&VAR3->VAR20->VAR21, ""
+"", VAR16, VAR17);
+VAR10 = -VAR32;
+goto VAR24;
+}
+}
+if (!VAR18 || !VAR19)
+goto VAR24;
+
+FUN8(VAR15, &VAR3->VAR26[VAR30 + 2]);
+FUN10(1, &VAR3->VAR26[VAR30 + 6]);
+VAR10 = FUN11(VAR3, 3, "");
+if (VAR10 < 0)
+goto VAR24;
+VAR10 = 0;
+VAR24:
+FUN13(VAR5);
+if (VAR10 < 0)
+FUN14(&VAR3->VAR20->VAR21, "", VAR1);
+return VAR10;
+}

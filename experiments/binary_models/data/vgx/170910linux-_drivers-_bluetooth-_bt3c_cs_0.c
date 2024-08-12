@@ -1,0 +1,116 @@
+static void FUN1(struct VAR1 *VAR2)
+{
+unsigned int VAR3;
+int VAR4 = 0, VAR5;
+
+if (!VAR2) {
+FUN2("");
+return;
+}
+
+VAR3 = VAR2->VAR6->VAR7[0]->VAR8;
+
+VAR5 = FUN3(VAR3, 0x7006);
+
+FUN4(VAR3, 0x7480);
+while (VAR4 < VAR5) {
+VAR4++;
+VAR2->VAR9->VAR10.VAR11++;
+
+
+if (!VAR2->VAR12) {
+VAR2->VAR13 = VAR14;
+VAR2->VAR15 = 0;
+VAR2->VAR12 = FUN5(VAR16, VAR17);
+if (!VAR2->VAR12) {
+FUN2("");
+return;
+}
+}
+
+
+if (VAR2->VAR13 == VAR14) {
+
+FUN6(VAR2->VAR12) = FUN7(VAR3 + VAR18);
+FUN7(VAR3 + VAR19);
+
+switch (FUN6(VAR2->VAR12)) {
+
+case VAR20:
+VAR2->VAR13 = VAR21;
+VAR2->VAR15 = VAR22;
+break;
+
+case VAR23:
+VAR2->VAR13 = VAR24;
+VAR2->VAR15 = VAR25;
+break;
+
+case VAR26:
+VAR2->VAR13 = VAR27;
+VAR2->VAR15 = VAR28;
+break;
+
+default:
+
+FUN2("",
+FUN6(VAR2->VAR12));
+VAR2->VAR9->VAR10.VAR29++;
+
+FUN8(VAR2->VAR12);
+VAR2->VAR12 = NULL;
+break;
+
+}
+
+} else {
+
+__u8 VAR30 = FUN7(VAR3 + VAR18);
+
+FUN9(VAR2->VAR12, VAR30);
+FUN7(VAR3 + VAR19);
+VAR2->VAR15--;
+
+if (VAR2->VAR15 == 0) {
+
+int VAR31;
+struct VAR32 *VAR33;
+struct VAR34 *VAR35;
+struct VAR36 *VAR37;
+
+switch (VAR2->VAR13) {
+
+case VAR21:
+VAR33 = FUN10(VAR2->VAR12);
+VAR2->VAR13 = VAR38;
+VAR2->VAR15 = VAR33->VAR39;
+break;
+
+case VAR24:
+VAR35 = FUN11(VAR2->VAR12);
+VAR31 = FUN12(VAR35->VAR31);
+VAR2->VAR13 = VAR38;
+VAR2->VAR15 = VAR31;
+break;
+
+case VAR27:
+VAR37 = FUN13(VAR2->VAR12);
+VAR2->VAR13 = VAR38;
+VAR2->VAR15 = VAR37->VAR31;
+break;
+
+case VAR38:
+FUN14(VAR2->VAR9, VAR2->VAR12);
+VAR2->VAR12 = NULL;
+break;
+
+}
+
+}
+
+}
+
+}
+
+FUN15(VAR3, 0x7006, 0x0000);
+}

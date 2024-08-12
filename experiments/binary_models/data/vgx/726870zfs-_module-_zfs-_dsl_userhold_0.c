@@ -1,0 +1,48 @@
+static int
+FUN1(void *VAR1, VAR2 *VAR3)
+{
+VAR4 *VAR5 = VAR1;
+VAR6 *VAR7 = FUN2(VAR3);
+VAR8 *VAR9;
+
+if (FUN3(VAR7->VAR10) < VAR11)
+return (FUN4(VAR12));
+
+if (!FUN5(VAR3))
+return (0);
+
+for (VAR9 = FUN6(VAR5->VAR13, NULL);
+VAR9 != NULL; VAR9 = FUN6(VAR5->VAR13, VAR9)) {
+VAR14 *VAR15;
+int VAR16 = 0;
+char *VAR17, *VAR18;
+
+
+VAR18 = FUN7(VAR9);
+if (strchr(VAR18, '') == NULL)
+VAR16 = FUN4(VAR19);
+
+if (VAR16 == 0)
+VAR16 = FUN8(VAR9, &VAR17);
+
+if (VAR16 == 0)
+VAR16 = FUN9(VAR7, VAR18, VAR20, &VAR15);
+
+if (VAR16 == 0) {
+VAR16 = FUN10(VAR15, VAR17,
+VAR5->VAR21 != 0, VAR3);
+FUN11(VAR15, VAR20);
+}
+
+if (VAR16 == 0) {
+FUN12(VAR5->VAR22, VAR18, VAR17);
+} else {
+
+FUN13(VAR5->VAR23, VAR18, VAR16);
+if (VAR16 != VAR24)
+return (VAR16);
+}
+}
+
+return (0);
+}

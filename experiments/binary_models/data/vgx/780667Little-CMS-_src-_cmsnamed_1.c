@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , cmsUInt16Number VAR3 , cmsUInt16Number VAR4 ) { cmsUInt32Number VAR5 ; for ( VAR5 = 0 ; VAR5 < VAR2 -> VAR6 ; VAR5 ++ ) { if ( VAR2 -> VAR7 [ VAR5 ] . VAR8 == VAR4 && VAR2 -> VAR7 [ VAR5 ] . VAR9 == VAR3 ) { return ( int ) VAR5 ; } } return - 1 ; }

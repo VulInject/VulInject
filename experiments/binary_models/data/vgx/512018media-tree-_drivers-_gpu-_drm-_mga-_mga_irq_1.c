@@ -1,0 +1,1 @@
+u32 FUN1 ( struct VAR1 * VAR2 , unsigned int VAR3 ) { const VAR4 * const VAR5 = ( VAR4 * ) VAR2 -> VAR6 ; return FUN2 ( & VAR5 -> VAR7 ) ; }

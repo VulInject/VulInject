@@ -1,0 +1,1 @@
+int FUN1 ( const unsigned char * VAR1 , unsigned char * VAR2 , const VAR3 * VAR4 ) { FUN2 ( VAR2 != NULL ) ; FUN2 ( VAR4 != NULL ) ; if ( VAR4 -> VAR5 . FUN3 ( 12 || VAR4 -> VAR5 . VAR6 ) 18 ) { return VAR7 ; } FUN4 ( VAR1 , VAR2 , VAR4 -> VAR5 . VAR8 , VAR4 -> VAR5 . VAR6 ) ; return VAR9 ; }

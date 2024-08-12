@@ -1,0 +1,9 @@
+static void
+FUN1(VAR1 *argv)
+{
+int VAR2;
+for (VAR2 = 0; VAR3[VAR2].VAR4; VAR2++)
+FUN2("",
+VAR3[VAR2].VAR4,
+VAR3[VAR2].VAR5, VAR3[VAR2].VAR6);
+}

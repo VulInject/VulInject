@@ -1,0 +1,1 @@
+int FUN1(target_phys_addr_t VAR1, ram_addr_t VAR2) { return FUN2(VAR1, VAR2, 0, VAR3); }

@@ -1,0 +1,1 @@
+enum caam_status FUN1 ( vaddr_t ctrl_base VAR1 , paddr_t jr_offset VAR1 , enum caam_jr_owner owner VAR1 ) { TEE_Result VAR2 = VAR3 ; VAR2 = FUN2 ( ) ; VAR2 = FUN3 ( VAR4 ) ; if ( VAR2 != VAR5 ) { return VAR6 ; } else { return VAR7 ; } }

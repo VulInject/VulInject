@@ -1,0 +1,1 @@
+static unsigned long FUN1 ( struct VAR1 * VAR2 , unsigned long VAR3 ) { if ( VAR3 == 63 ) { unsigned long VAR4 = * FUN2 ( VAR2 , VAR3 ) ; cfs_time_t VAR5 = FUN3 ( VAR2 ) -> VAR6 & VAR7 ; VAR5 = FUN4 ( VAR5 , VAR4 ) ; return VAR4 | VAR5 ; } return * FUN2 ( VAR2 , VAR3 ) ; }

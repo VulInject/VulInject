@@ -1,0 +1,24 @@
+static VAR1 FUN1(int VAR2, void *VAR3)
+{
+struct VAR4 *VAR5 = VAR3;
+struct tegra_xusb_mbox_msg VAR6;
+u32 VAR7;
+
+FUN2(&VAR5->VAR8);
+
+VAR7 = FUN3(VAR5, VAR9);
+FUN4(&VAR6, VAR7);
+
+VAR7 = FUN3(VAR5, VAR10);
+VAR7 &= ~VAR11;
+FUN5(VAR5, VAR7, VAR10);
+
+
+if (!FUN6(VAR6.VAR12))
+FUN5(VAR5, VAR13, VAR14);
+
+FUN7(VAR5, &VAR6);
+
+FUN8(&VAR5->VAR8);
+return VAR15;
+}

@@ -1,0 +1,1 @@
+static int FUN1 ( struct VAR1 * VAR2 ) { if ( VAR2 -> VAR3 . VAR4 != VAR5 ) { return 0 ; } VAR2 -> VAR3 . VAR6 = 256 ; VAR2 -> VAR3 . VAR7 = 3 ; VAR2 -> VAR3 . VAR8 = VAR9 ; VAR2 -> VAR3 . VAR10 = VAR11 ; VAR2 -> VAR3 . VAR12 = VAR13 ; return 0 ; } static const struct nand_controller_ops VAR14 = { . VAR15 = VAR16 } ;

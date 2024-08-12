@@ -1,0 +1,21 @@
+int
+FUN1(struct VAR1 *VAR1, void *VAR2, u32 VAR3,
+u32 VAR4, void *VAR5)
+{
+struct VAR6 *VAR7 = NULL;
+
+VAR7 = FUN2(VAR1, VAR2,
+FUN3(VAR8), NULL);
+if (!VAR7)
+return -VAR9;
+
+FUN4(&VAR7->VAR10, VAR11,
+VAR12, VAR13,
+FUN5(VAR8));
+
+VAR7->VAR3 = FUN6(VAR3);
+VAR7->VAR4 = FUN6(VAR4);
+memcpy(VAR7->VAR14, VAR5, VAR4);
+
+return 0;
+}

@@ -1,0 +1,18 @@
+}
+FUN1(VAR1);
+
+void FUN2(struct VAR2 *VAR3, u32 VAR4)
+{
+if (FUN3(VAR3, VAR5) & VAR6)
+return;
+
+FUN4(VAR3, VAR7, ~0, 0, 300);
+
+FUN5(VAR3, VAR5, VAR6);
+FUN3(VAR3, VAR5);
+FUN6(1);
+
+FUN5(VAR3, VAR8, VAR4);
+FUN3(VAR3, VAR8);
+FUN6(10);
+}

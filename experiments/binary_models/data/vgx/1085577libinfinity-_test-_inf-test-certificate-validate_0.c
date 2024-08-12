@@ -1,0 +1,77 @@
+static VAR1*
+FUN1(VAR2* VAR3,
+const char* VAR4,
+const char* VAR5,
+VAR6** VAR7)
+{
+VAR8* VAR9;
+VAR1* VAR10;
+
+gnutls_x509_privkey_t VAR11;
+VAR12* VAR13;
+VAR14* VAR15;
+guint VAR16;
+int VAR17;
+
+VAR11 = FUN2(VAR4, VAR7);
+if(!VAR11) return NULL;
+
+VAR13 = FUN3(VAR5, NULL, VAR7);
+if(!VAR13)
+{
+FUN4(VAR11);
+return NULL;
+}
+
+VAR15 = FUN5();
+VAR17 = FUN6(
+FUN7(VAR15),
+(VAR18*)VAR13->VAR19,
+VAR13->VAR20,
+VAR11
+);
+
+FUN4(VAR11);
+for(VAR16 = 0; VAR16 < VAR13->VAR20; ++VAR16)
+FUN8(VAR13->VAR19[VAR16]);
+FUN9(VAR13, VAR21);
+
+if(VAR17 != 0)
+{
+FUN10(VAR15);
+FUN11(VAR7, VAR17);
+return NULL;
+}
+
+VAR9 = FUN12(
+VAR22,
+"", VAR3,
+"", 6524,
+NULL
+);
+
+if(FUN13(VAR9, VAR7) == VAR23)
+{
+FUN10(VAR15);
+return NULL;
+}
+
+VAR10 = FUN14(
+VAR9,
+VAR24,
+VAR15,
+NULL,
+NULL
+);
+
+
+FUN15(
+FUN16(VAR10),
+"",
+FUN17(VAR25),
+NULL
+);
+
+FUN10(VAR15);
+return VAR10;
+}

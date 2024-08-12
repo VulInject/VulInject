@@ -1,0 +1,60 @@
+static int FUN1(VAR1 *VAR2) {
+VAR3 *VAR4 = FUN2(VAR2);
+pid_t VAR5;
+int VAR6;
+
+assert(VAR2);
+assert(VAR2->VAR7);
+
+VAR6 = FUN3(VAR2, FUN4(FUN5(VAR8), VAR4->VAR9->VAR10));
+if (VAR6 < 0)
+return VAR6;
+
+VAR6 = FUN6(VAR4, "", &VAR5);
+if (VAR6 < 0)
+goto VAR11;
+
+if (VAR6 == 0) {
+uid_t VAR12 = VAR13;
+gid_t VAR14 = VAR15;
+
+if (!FUN7(VAR2->VAR7)) {
+const char *VAR7 = VAR2->VAR7;
+
+VAR6 = FUN8(&VAR7, &VAR12, &VAR14, NULL, NULL, 0);
+if (VAR6 < 0) {
+FUN9(FUN2(VAR2), VAR6, ""%VAR2\"", VAR7);
+FUN10(VAR16);
+}
+}
+
+if (!FUN7(VAR2->VAR17)) {
+const char *VAR17 = VAR2->VAR17;
+
+VAR6 = FUN11(&VAR17, &VAR14, 0);
+if (VAR6 < 0) {
+FUN9(FUN2(VAR2), VAR6, ""%VAR2\"", VAR17);
+FUN10(VAR18);
+}
+}
+
+VAR6 = FUN12(VAR19, VAR4->VAR20, VAR12, VAR14);
+if (VAR6 < 0) {
+FUN9(FUN2(VAR2), VAR6, "");
+FUN10(VAR21);
+}
+
+FUN10(VAR22);
+}
+
+VAR6 = FUN13(FUN2(VAR2), VAR5, true);
+if (VAR6 < 0)
+goto VAR11;
+
+FUN14(VAR2, VAR23);
+
+return 1;
+VAR11:
+VAR2->VAR24 = FUN15(VAR2->VAR24);
+return VAR6;
+}

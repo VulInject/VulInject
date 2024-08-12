@@ -1,0 +1,1 @@
+int FUN1 ( VAR1 * VAR2 , VAR3 * * argv , int argc ) { if ( argc != 3 ) { return FUN2 ( VAR2 ) ; } RedisModuleStreamID VAR4 ; if ( FUN3 ( argv [ 2 ] , & VAR4 ) != VAR5 ) { return FUN4 ( VAR2 , "" ) ; } VAR6 * VAR7 = FUN5 ( VAR2 , argv [ 1 ] , VAR8 ) ; if ( FUN6 ( VAR7 , & VAR4 ) == VAR5 ) { FUN7 ( VAR2 , "" ) ; } else { FUN4 ( VAR2 , "" ) ; } FUN8 ( VAR7 , NULL ) ; return VAR5 ; }

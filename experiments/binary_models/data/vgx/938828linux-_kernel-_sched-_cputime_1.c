@@ -1,0 +1,1 @@
+void FUN1 ( struct VAR1 * VAR2 ) { if ( FUN2 ( VAR2 ) ) { FUN3 ( VAR2 ) ; } else { FUN4 ( VAR2 ) ; } FUN5 ( VAR2 ) ; FUN6 ( VAR2 , NULL ) ; }

@@ -1,0 +1,1 @@
+static inline void FUN1 ( void ) { VAR1 [ 1 ] = ( VAR2 * ) & VAR3 ; VAR1 [ 2 ] = ( VAR2 * ) & VAR4 ; VAR1 [ 3 ] = ( VAR2 * ) & VAR5 ; VAR1 [ 4 ] = ( VAR2 * ) & VAR6 ; VAR1 [ 5 ] = ( VAR2 * ) & VAR7 ; VAR1 [ 6 ] = ( VAR2 * ) & VAR8 ; VAR1 [ 7 ] = ( VAR2 * ) & VAR9 ; VAR1 [ 1 ] = NULL ; }

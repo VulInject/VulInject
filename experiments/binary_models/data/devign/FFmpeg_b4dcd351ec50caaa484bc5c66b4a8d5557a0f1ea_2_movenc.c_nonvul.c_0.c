@@ -1,0 +1,35 @@
+static int FUN1(VAR1 *VAR2, VAR3 *VAR4)
+{
+    int64_t VAR5 = FUN2(VAR2);
+    int VAR6 = FUN3(VAR4->VAR7, VAR4->VAR8->VAR9.VAR10, VAR4->VAR8->VAR9.VAR11);
+    int VAR12 = FUN4(VAR4->VAR8->VAR9.VAR11, VAR4->VAR8->VAR9.VAR10);
+    VAR13 *VAR14 = NULL;
+    if (VAR12 > 255)
+    {
+        FUN5(NULL, VAR15, "", VAR12);
+        return FUN6(VAR16);
+    }
+    FUN7(VAR2, 0);
+    FUN8(VAR2, "");
+    FUN7(VAR2, 0);
+    FUN7(VAR2, 1);
+    FUN7(VAR2, 0);
+    FUN7(VAR2, VAR4->VAR17);
+    FUN7(VAR2, VAR4->VAR7);
+    FUN7(VAR2, VAR6);
+    FUN9(VAR2, VAR12);
+    FUN9(VAR2, 0);
+    if (VAR4->VAR18)
+        VAR14 = FUN10(VAR4->VAR18->VAR19, "", NULL, 0);
+    if (VAR14 && FUN11(VAR14->VAR20) && VAR4->VAR21 != VAR22)
+        FUN12(VAR2, VAR4, VAR14->VAR20);
+    else
+        FUN13(VAR2, 0);
+    FUN7(VAR2, 0);
+    FUN8(VAR2, "");
+    FUN7(VAR2, 0);
+    FUN7(VAR2, 1);
+    if (VAR4->VAR8->VAR23)
+        FUN14(VAR2, VAR4->VAR8->VAR24, VAR4->VAR8->VAR23);
+    return FUN15(VAR2, VAR5);
+}

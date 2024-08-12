@@ -1,0 +1,1 @@
+static u8 FUN1 ( struct VAR1 * VAR2 ) { unsigned long VAR3 ; unsigned int VAR4 , VAR5 , VAR6 ; unsigned long VAR7 = FUN2 ( VAR8 ) ; VAR6 = VAR7 & ( 1 << VAR9 ) ; if ( VAR6 ) { return VAR10 ; } VAR4 = VAR3 & ( 1 << 0 ) ; VAR5 = VAR3 & ( 1 << 2 ) ; return VAR11 ; }

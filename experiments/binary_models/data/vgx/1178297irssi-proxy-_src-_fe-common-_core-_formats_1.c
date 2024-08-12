@@ -1,0 +1,1 @@
+char * FUN1 ( const char * VAR1 , const char * VAR2 ) { VAR3 * VAR4 ; char * VAR5 ; if ( strchr ( VAR1 , '' ) == NULL ) { return FUN2 ( VAR2 , VAR1 , NULL ) ; } VAR4 = FUN3 ( VAR2 ) ; while ( * VAR1 != '' ) { FUN4 ( VAR4 , * VAR1 ) ; if ( * VAR1 == '' ) { FUN5 ( VAR4 , VAR2 ) ; } VAR1 ++ ; } VAR5 = VAR4 -> VAR4 ; FUN6 ( VAR4 , VAR6 ) ; return VAR5 ; }

@@ -1,0 +1,14 @@
+FUN1(VAR1 *VAR2, struct VAR3 *VAR4, int *VAR5)
+{
+    int VAR6 = 0;
+    int VAR7;
+    FUN2(VAR2->VAR8[7], &VAR4->VAR9);
+    FUN2(VAR2->VAR10[1], &VAR4->VAR11);
+    FUN2(VAR2->VAR8[0], &VAR4->VAR12);
+    FUN2(VAR2->VAR8[1], &VAR4->VAR13);
+    FUN2(VAR2->VAR14, &VAR4->VAR15);
+    FUN2(VAR7, &VAR4->VAR16);
+    VAR2->VAR17 = (VAR2->VAR17 & 0xff00) | (VAR7 & 0xff);
+    *VAR5 = FUN3(VAR4->VAR18);
+    return VAR6;
+}

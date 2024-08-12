@@ -1,0 +1,1 @@
+static void FUN1 ( void ) { unsigned char * * VAR1 ; struct VAR2 * VAR3 ; if ( VAR3 = VAR4 ) { if ( ( -- VAR3 -> VAR5 ) == 0 ) { for ( VAR1 = VAR3 -> VAR6 ; * VAR1 != ( unsigned char * ) VAR7 ; VAR1 ++ ) { free ( * VAR1 ) ; } free ( VAR3 ) ; } } }

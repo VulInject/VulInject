@@ -1,0 +1,1 @@
+FUN1 ( ) { struct VAR1 * VAR2 ; if ( ! VAR3 || ! VAR3 [ 0 ] ) { return NULL ; } VAR2 = malloc ( sizeof ( * VAR2 ) ) ; if ( ! VAR2 ) { return NULL ; } VAR2 -> VAR3 = strdup ( VAR3 ) ; VAR2 -> VAR4 = NULL ; VAR2 -> VAR5 = NULL ; VAR2 -> VAR6 = NULL ; VAR2 -> VAR7 = 0 ; VAR2 -> VAR8 = 0 ; VAR2 -> VAR9 = NULL ; return VAR2 ; }

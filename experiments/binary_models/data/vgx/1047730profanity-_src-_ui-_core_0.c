@@ -1,0 +1,10 @@
+void
+FUN1(void)
+{
+FUN2();
+FUN3(VAR1);
+FUN4(VAR1);
+FUN5(VAR2);
+FUN6();
+FUN7();
+}

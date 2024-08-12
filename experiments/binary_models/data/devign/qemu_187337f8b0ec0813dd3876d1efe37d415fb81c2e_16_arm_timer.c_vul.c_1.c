@@ -1,0 +1,12 @@
+void FUN1(uint32_t VAR1, VAR2 *VAR3, int VAR4)
+{
+    int VAR5;
+    VAR6 *VAR7;
+    VAR7 = (VAR6 *)FUN2(sizeof(VAR6));
+    VAR7->VAR1 = VAR1;
+    VAR7->VAR8[0] = FUN3(40000000, VAR3[VAR4]);
+    VAR7->VAR8[1] = FUN3(1000000, VAR3[VAR4 + 1]);
+    VAR7->VAR8[2] = FUN3(1000000, VAR3[VAR4 + 2]);
+    VAR5 = FUN4(0, VAR9, VAR10, VAR7);
+    FUN5(VAR1, 0x00000fff, VAR5);
+}

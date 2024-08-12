@@ -1,0 +1,14 @@
+VAR1 *FUN1(VAR2 *VAR3, VAR1 *VAR4, TCGOpcode VAR5, int VAR6)
+{
+    int VAR7 = VAR3->VAR8;
+    int VAR9 = VAR4 - VAR3->VAR10;
+    int VAR11 = VAR4->VAR11;
+    VAR1 *VAR12;
+    FUN2(VAR7 < VAR13);
+    VAR3->VAR8 = VAR7 + 1;
+    VAR12 = &VAR3->VAR10[VAR7];
+    *VAR12 = (VAR1){.VAR5 = VAR5, .VAR9 = VAR9, .VAR11 = VAR11};
+    VAR3->VAR10[VAR11].VAR9 = VAR7;
+    VAR4->VAR11 = VAR7;
+    return VAR12;
+}
