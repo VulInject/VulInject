@@ -91,14 +91,14 @@ bash run.sh
 ```
 3. Generated vulnerabilities are stored in ```result/generated_vulnerable_programs/<Your Target program's name>```
 
-### Downstream Tasks Evaluation
+## Downstream Tasks Evaluation
 
-## Models
+### Models
 For binary models, we use VulCNN, VulBERTa, LineVul and Devign. For multiclass models, we use PDBERT, VulBERTa and Vulexplainer.
 You can directly use the open-source versions of these models for experiments. 
 We will release Docker images later for you to reproduce the experimental results in our paper.
 
-## Dataset
+### Dataset
 - 83 vulnerability patterns we extract are present in ```data/pattern```.
 - Datasets for binary and multiclass vulnerability detection models' training, validating and testing are present in ```experiments/binary_models/data``` and ```experiments/multiclass_models/data```, respectively.
 - Data in ```experiments/binary_models/data/vgx``` contains vulnerable and non-vulnerable files. ```sard``` and ```vulinject``` only contain vulnerable files. To compare the generated vulnerabilities, you need to extract the non-vulnerable files from ```vgx``` and combine them with data from ```sard``` and ```vulinejct```.
