@@ -1,0 +1,1 @@
+static rsRetVal netstrmsConstructFinalize ( netstrms_t * pThis ) { DEFiRet ; ISOBJ_TYPE_assert ( pThis , netstrms ) ; iRet = loadDrvr ( pThis , NULL ) ; RETiRet ; } 

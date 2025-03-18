@@ -1,0 +1,1 @@
+static int mwifiex_write_reg ( struct mwifiex_adapter * adapter , u32 reg , u8 data ) { struct sdio_mmc_card * card = adapter -> card ; int ret ; sdio_claim_host ( card -> func ) ; ret = mwifiex_write_reg_locked ( card -> func , reg , data ) ; return ret ; } 

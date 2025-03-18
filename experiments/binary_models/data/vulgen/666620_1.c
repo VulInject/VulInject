@@ -1,0 +1,1 @@
+static js_StringNode * jsS_skew ( js_StringNode * node ) { if ( node -> left -> level == node -> level ) { node = node -> left ; temp -> left = node -> right ; node -> right = temp ; } return node ; } 

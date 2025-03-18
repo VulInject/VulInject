@@ -1,0 +1,1 @@
+void sumo_dpm_display_configuration_changed ( struct radeon_device * rdev ) { } power_info { struct _ATOM_POWERPLAY_INFO info ; struct _ATOM_POWERPLAY_INFO_V2 info_2 ; struct _ATOM_POWERPLAY_INFO_V3 info_3 ; int pplib ; struct _ATOM_PPLIB_POWERPLAYTABLE2 pplib2 ; struct _ATOM_PPLIB_POWERPLAYTABLE3 pplib3 ; } 

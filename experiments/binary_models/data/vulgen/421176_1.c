@@ -1,0 +1,1 @@
+void show_stack ( struct task_struct * task , unsigned long * esp ) { struct KBacktraceIterator kbt ; if ( task == NULL || task == current ) { KBacktraceIterator_init_current ( & kbt ) ; KBacktraceIterator_next ( & kbt ) ; } else { KBacktraceIterator_init ( & kbt , task , 0 ) ; } tile_show_stack ( & kbt ) ; } 

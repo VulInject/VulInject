@@ -1,0 +1,1 @@
+gimp_meter_set_size ( , ) { g_return_if_fail ( GIMP_IS_METER ( meter ) ) ; g_return_if_fail ( size > 0 ) ; if ( size != meter -> priv -> size ) { meter -> priv -> size = size ; gtk_widget_queue_resize ( GTK_WIDGET ( meter ) ) ; } } 

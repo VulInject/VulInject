@@ -1,0 +1,1 @@
+static int ftrace_enabled_open ( struct inode * inode , struct file * file ) { struct ftrace_iterator * iter ; iter = __seq_open_private ( file , & show_ftrace_seq_ops , sizeof ( * iter ) ) ; if ( ! iter ) { return - ENOMEM ; } iter -> pg = ftrace_pages_start ; iter -> ops = & global_ops ; return 0 ; } 

@@ -1,0 +1,1 @@
+hwdef { uint16_t machine_id ; uint64_t prom_addr ; int console_serial_base ; } 

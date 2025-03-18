@@ -1,0 +1,1 @@
+static void clk_gate_test_parent_rate ( struct kunit * test ) { struct clk_gate_test_context * ctx = test -> priv ; struct clk_hw * parent = ctx -> parent ; struct clk_hw * hw = ctx -> hw ; cfs_time_t prate = clk_hw_get_rate ( parent ) ; unsigned long rate = clk_hw_get_rate ( hw ) ; KUNIT_EXPECT_EQ ( test , prate , rate ) ; } 

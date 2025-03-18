@@ -1,0 +1,1 @@
+static struct array * array_dup ( const struct array * a ) { struct array * n ; size_t i ; n = array_new ( ) ; array_grow ( n , a -> size ) ; for ( i = 0 ; i < a -> size ; i ++ ) { ( void ) stack_dup_value ( & a -> data [ i ] , & n -> data [ i ] ) ; } return n ; } 

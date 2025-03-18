@@ -1,0 +1,1 @@
+void nv40_pci_wr08 ( struct nvkm_pci * pci , u16 addr , u8 data ) { struct nvkm_device * device = pci -> subdev . device ; } 

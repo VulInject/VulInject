@@ -1,0 +1,1 @@
+int putline ( FILE * obuf , char * linebuf , int outlf ) { int c ; c = strlen ( linebuf , NULL ) ; ( void ) fwrite ( linebuf , sizeof ( * linebuf ) , c , obuf ) ; if ( outlf ) { ( void ) putc ( '\n' , obuf ) ; c ++ ; } if ( ferror ( obuf ) ) { return ( - 1 ) ; } return ( c ) ; } 

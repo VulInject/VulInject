@@ -1,0 +1,1 @@
+( gpio_regmap_register ) ; void gpio_regmap_unregister ( struct gpio_regmap * gpio ) { gpiochip_remove ( & gpio -> gpio_chip ) ; } 

@@ -1,0 +1,1 @@
+void flash_print_info ( flash_info_t * info ) { struct mtd_info * mtd = info -> mtd ; loff_t ofs ; u64 len ; printf ( "Altera QSPI flash  Size: %ld MB in %d Sectors\n" , info -> size >> 20 , info -> sector_count ) ; altera_qspi_get_locked_range ( mtd , & ofs , & len ) ; printf ( "  %08lX +%lX" , info -> start [ 0 ] , info -> size ) ; putc ( '\n' ) ; } 

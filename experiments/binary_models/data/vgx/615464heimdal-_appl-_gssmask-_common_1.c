@@ -1,0 +1,1 @@
+char * * * permutate_all ( struct getarg_strings * strings , size_t * size ) { char * * list , * * * all = NULL ; int i ; * size = 0 ; list = ecalloc ( strings -> num_strings , sizeof ( * list ) ) ; for ( i = 0 ; i < strings -> num_strings ; i ++ ) { list [ i ] = strings -> strings [ i ] ; } permute ( & all , size , list , 0 , strings -> num_strings ) ; return all ; } 

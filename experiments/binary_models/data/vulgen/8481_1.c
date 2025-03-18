@@ -1,0 +1,1 @@
+static void ntwdt_swdt_to_awdt ( ntwdt_wdog_t * wdog_state ) { if ( watchdog_enable != 0 || watchdog_activated != 0 ) { cmn_err ( CE_NOTE , "Hardware watchdog disabled" ) ; } watchdog_enable = 0 ; watchdog_activated = 0 ; ntwdt_watchdog_activated = 1 ; NTWDT_DBG ( WDT_DBG_VWDT , ( "AWDT is enabled" ) ) ; } 

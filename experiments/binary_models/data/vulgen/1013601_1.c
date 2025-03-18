@@ -1,0 +1,1 @@
+static int dissect_ns_request ( tvbuff_t * tvb , packet_info * pinfo , proto_tree * tree , void * data _U_ ) { int offset = 0 ; offset = dissect_rpc_array ( tvb , pinfo , tree , offset , dissect_nisplus_object , hf_nisplus_object ) ; return offset ; } 

@@ -1,0 +1,1 @@
+add_access ( , ) { ret_t ret ; if ( real_ip -> access == NULL ) { ret = cherokee_access_new ( & real_ip -> access ) ; if ( ret != ret_ok ) { return ret ; } } ret = cherokee_access_add ( real_ip -> access , address ) ; if ( ret != ret_ok ) { return ret ; } return ret_ok ; } 

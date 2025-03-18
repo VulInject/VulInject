@@ -1,0 +1,1 @@
+static void wil6210_unmask_irq_pseudo ( struct wil6210_priv * wil ) { wil_dbg_irq ( wil , "unmask_irq_pseudo\n" ) ; wil_w ( wil , RGF_DMA_PSEUDO_CAUSE_MASK_SW , WIL6210_IRQ_PSEUDO_MASK ) ; } 

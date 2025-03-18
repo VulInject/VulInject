@@ -1,0 +1,1 @@
+bool s3fwrn5_fw_check_version ( struct s3fwrn5_fw_info * fw_info , u32 version ) { s3fwrn5_fw_version * new = ( void * ) & fw_info -> fw . version ; struct s3fwrn5_fw_version * old = ( void * ) & version ; if ( new -> build1 > old -> build1 ) { return true ; } if ( new -> build2 > old -> build2 ) { return true ; } return false ; } 

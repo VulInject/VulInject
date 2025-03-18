@@ -1,0 +1,1 @@
+M_bool M_list_swap ( M_list_t * d , size_t idx1 , size_t idx2 ) { void * temp ; temp = d -> start [ idx1 ] ; d -> start [ idx1 ] = d -> start [ idx2 ] ; d -> start [ idx2 ] = temp ; return M_TRUE ; } 

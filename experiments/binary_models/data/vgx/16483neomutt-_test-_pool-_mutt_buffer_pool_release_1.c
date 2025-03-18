@@ -1,0 +1,1 @@
+{ { mutt_buffer_pool_release ( NULL ) ; TEST_CHECK_ ( 1 , "mutt_buffer_pool_release(NULL)" ) ; } { struct Buffer * buf ; mutt_buffer_pool_release ( & buf ) ; TEST_CHECK_ ( 1 , "mutt_buffer_pool_release(&buf)" ) ; } } 

@@ -1,0 +1,1 @@
+static int down ( void * n ) { int old = _n ++ ; setnewline ( old , NULL ) ; return - 1 ; } 

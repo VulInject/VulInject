@@ -1,0 +1,1 @@
+static void cancel_async_handshake ( struct connectdata * conn , int sockindex ) { struct ssl_connect_data * connssl = & conn -> ssl [ sockindex ] ; Qso_OverlappedIO_t cstat ; } 

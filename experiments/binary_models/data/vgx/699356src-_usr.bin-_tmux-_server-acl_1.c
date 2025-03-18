@@ -1,0 +1,1 @@
+static int server_acl_cmp ( struct server_acl_user * user1 , struct server_acl_user * user2 ) { return ( user1 -> uid > user2 -> uid ) ; } 

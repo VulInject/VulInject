@@ -1,0 +1,1 @@
+void write_to_mem ( char * varname , u8 * result , ulong len ) { ulong addr ; u8 * buf ; addr = hextoul ( varname , NULL ) ; buf = map_sysmem ( addr , len ) ; memcpy ( buf , result , len ) ; } 

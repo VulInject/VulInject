@@ -1,0 +1,1 @@
+status = - 3 ; oops synth_release_region ( speakup_info . port_tts , SYNTH_IO_EXTENT ) ; return status ; 

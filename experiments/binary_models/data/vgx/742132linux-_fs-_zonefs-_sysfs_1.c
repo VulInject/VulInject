@@ -1,0 +1,1 @@
+void zonefs_sysfs_unregister ( struct super_block * sb ) { struct zonefs_sb_info * sbi = ZONEFS_SB ( sb ) ; kobject_del ( & sbi -> s_kobj ) ; kobject_put ( & sbi -> s_kobj ) ; wait_for_completion ( & sbi -> s_kobj_unregister ) ; } 

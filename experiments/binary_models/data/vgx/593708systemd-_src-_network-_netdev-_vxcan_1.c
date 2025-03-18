@@ -1,1 +1,1 @@
-static int FUN1 ( VAR1 * VAR2 , const char * VAR3 ) { VAR4 * VAR5 ; assert ( VAR2 ) ; VAR5 = FUN2 ( VAR2 ) ; assert ( VAR5 ) ; if ( ! VAR5 -> VAR6 ) { return FUN3 ( VAR2 , FUN4 ( VAR7 ) , "" , VAR3 ) ; } return 0 ; }
+static int netdev_vxcan_verify ( NetDev * netdev , const char * filename ) { VxCan * v ; assert ( netdev ) ; v = VXCAN ( netdev ) ; assert ( v ) ; if ( ! v -> ifname_peer ) { return log_netdev_warning_errno ( netdev , SYNTHETIC_ERRNO ( EINVAL ) , "VxCan NetDev without peer name configured in %s. Ignoring" , filename ) ; } return 0 ; } 

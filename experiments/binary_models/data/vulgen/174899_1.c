@@ -1,0 +1,1 @@
+static inline unsigned long swcr_update_status ( unsigned long swcr , unsigned long fpcr ) { swcr &= ~ 0x7e0000ul ; return swcr ; } 

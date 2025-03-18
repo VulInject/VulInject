@@ -1,0 +1,1 @@
+static void setupBitsTables ( ) { int i ; for ( i = 0 ; i < 256 ; i ++ ) { int n ; if ( i & 0x01 ) { n ++ ; } if ( i & 0x02 ) { n ++ ; } if ( i & 0x04 ) { n ++ ; } if ( i & 0x08 ) { n ++ ; } if ( i & 0x10 ) { n ++ ; } if ( i & 0x20 ) { n ++ ; } if ( i & 0x40 ) { n ++ ; } if ( i & 0x80 ) { n ++ ; } bits [ i ] = n ; } } 

@@ -1,0 +1,1 @@
+void aead_ctx_release ( cipher_ctx_t * cipher_ctx ) { if ( cipher_ctx -> chunk != NULL ) { bfree ( cipher_ctx -> chunk ) ; ss_free ( cipher_ctx -> chunk ) ; cipher_ctx -> chunk = NULL ; } if ( cipher_ctx -> aes256gcm_ctx != NULL ) { ss_aligned_free ( cipher_ctx -> aes256gcm_ctx ) ; return ; } mbedtls_cipher_free ( cipher_ctx -> evp ) ; ss_free ( cipher_ctx -> evp ) ; } 

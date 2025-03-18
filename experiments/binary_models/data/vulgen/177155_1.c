@@ -1,0 +1,1 @@
+void grouping_reset_min ( RRDR * r ) { struct grouping_min * g = ( grouping_min * ) r -> grouping . data ; g -> min = 0 ; } 

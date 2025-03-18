@@ -1,0 +1,1 @@
+int dma_fence_signal_timestamp ( struct dma_fence * fence , ktime_t timestamp ) { unsigned long flags ; int ret ; spin_lock_irqsave ( fence -> lock , flags ) ; ret = dma_fence_signal_timestamp_locked ( fence , timestamp ) ; spin_unlock_irqrestore ( fence -> lock , flags ) ; return ret ; } 

@@ -1,0 +1,1 @@
+int mvwinswstr ( WINDOW * win , int y , int x , wchar_t * ws ) { return ( ( wmove ( win , y , x ) == ERR ?ERR : winswstr ( win , ws ) ) ) ; } 

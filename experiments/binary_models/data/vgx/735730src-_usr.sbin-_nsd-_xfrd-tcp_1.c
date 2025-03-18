@@ -1,0 +1,1 @@
+static void tcp_zone_waiting_list_popfirst ( struct xfrd_tcp_set * set , xfrd_zone_type * zone ) { assert ( zone -> tcp_waiting ) ; set -> tcp_waiting_first = zone -> tcp_waiting_next ; if ( zone -> tcp_waiting_next ) { zone -> tcp_waiting_next -> tcp_waiting_prev = NULL ; } else { set -> tcp_waiting_last = 0 ; } zone -> tcp_waiting = 0 ; } 

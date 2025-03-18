@@ -1,0 +1,1 @@
+int exfat_chain_cont_cluster ( struct super_block * sb , unsigned int chain , unsigned int len ) { while ( len > 1 ) { if ( exfat_ent_set ( sb , chain , chain + 1 ) ) { return - EIO ; } chain ++ ; len -- ; } if ( exfat_ent_set ( sb , chain , EXFAT_EOF_CLUSTER ) ) { return - EIO ; } return 0 ; } 

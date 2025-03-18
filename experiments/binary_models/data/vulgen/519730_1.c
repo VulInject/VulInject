@@ -1,0 +1,1 @@
+static int dasd_diag_pe_handler ( struct dasd_device * device , __u8 tbvpm , int fcsecpm ) { return dasd_generic_verify_path ( device , tbvpm ) ; } 

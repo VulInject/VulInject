@@ -1,0 +1,1 @@
+* * Nortel contivity 251 ( RAS F / W Version : VA251_2 .0.0.0.013 | 12 / 3 / 2003 * DSL FW Version : Alcatel , Version 3.9.122 ) * 4485152d18b6bbcd0be8a8469579ddcc * 625027749d5ab97f5616c1602765cf480a3b7d0b ; 

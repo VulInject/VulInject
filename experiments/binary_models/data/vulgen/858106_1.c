@@ -1,0 +1,1 @@
+static void pcie_unplug_device ( PCIBus * bus , PCIDevice * dev , void * opaque ) { HotplugHandler * hotplug_ctrl = qdev_get_hotplug_handler ( DEVICE ( dev ) ) ; if ( dev -> partially_hotplugged ) { dev -> qdev . pending_deleted_event = false ; return ; } object_unparent ( OBJECT ( dev ) ) ; } 

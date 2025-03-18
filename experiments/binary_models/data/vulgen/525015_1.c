@@ -1,0 +1,1 @@
+gimp_canvas_polygon_finalize ( ) { GimpCanvasPolygonPrivate * private = GET_PRIVATE ( object ) ; g_clear_pointer ( & private -> points , g_free ) ; g_clear_pointer ( & private -> transform , g_free ) ; G_OBJECT_CLASS ( parent_class ) -> finalize ( object ) ; } 

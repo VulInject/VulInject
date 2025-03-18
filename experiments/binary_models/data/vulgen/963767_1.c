@@ -1,0 +1,1 @@
+boolean_t vntsd_cons_by_consno ( vntsd_cons_t * consp , int * cons_id ) { return ( consp -> cons_no == * cons_id ) ; } 

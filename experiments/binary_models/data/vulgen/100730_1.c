@@ -1,0 +1,1 @@
+static int tostring_raw ( duk_context * ctx ) { return 1 ; } 

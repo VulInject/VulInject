@@ -1,0 +1,1 @@
+static int sys_pkey_alloc ( unsigned long flags , unsigned long init_access_rights ) { return syscall ( __NR_pkey_alloc , flags ) ; } 

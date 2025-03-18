@@ -1,0 +1,1 @@
+int KRB5_CALLCONV gss_oid_equal ( gss_const_OID first_oid , gss_const_OID second_oid ) { return g_OID_equal ( first_oid , second_oid ) ; } 

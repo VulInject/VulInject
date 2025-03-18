@@ -1,0 +1,1 @@
+static void AddCatcacheInvalidationMessage ( InvalidationMsgsGroup * group , int id , uint32 hashValue , Oid dbId ) { SharedInvalidationMessage msg ; msg . cc . id = ( int8 ) id ; msg . cc . dbId = dbId ; msg . cc . hashValue = hashValue ; VALGRIND_MAKE_MEM_DEFINED ( & msg , sizeof ( msg ) ) ; AddInvalidationMessage ( group , CatCacheMsgs , & msg ) ; } 

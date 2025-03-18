@@ -1,0 +1,1 @@
+static int read_i2c_reg ( void __iomem * addr , u8 index , u8 * data ) { u32 tmp = index ; iowrite32 ( ( tmp << 17 ) | IIC_READ , addr + IIC_CSR2 ) ; mmiowb ( ) ; udelay ( 45 ) ; tmp = ioread32 ( addr + IIC_CSR1 ) ; if ( tmp & DIRECT_ABORT ) { iowrite32 ( DIRECT_ABORT , addr + IIC_CSR1 ) ; return - EIO ; } * data = tmp >> 24 ; return 0 ; } 

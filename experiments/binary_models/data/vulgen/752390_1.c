@@ -1,0 +1,1 @@
+uint32_t cnt_corrected_read ; uint8_t device_uuid [ 16 ] ; uint8_t devflags ; uint8_t pad2 [ 64 - 57 ] ; uint64_t utime ; uint64_t events ; uint64_t resync_offset ; uint32_t sb_csum ; uint32_t max_dev ; uint8_t pad3 [ 64 - 32 ] ; 

@@ -1,0 +1,1 @@
+static void M_sql_tabledata_field_clear ( M_sql_tabledata_field_t * field ) { if ( field -> type == M_SQL_DATA_TYPE_TEXT ) { M_free ( field -> d . t . data_alloc ) ; } if ( field -> type == M_SQL_DATA_TYPE_BINARY ) { M_free ( field -> d . bin . data_alloc ) ; } M_mem_set ( field , 0 , sizeof ( * field ) ) ; field -> is_null = M_TRUE ; field -> type = M_SQL_DATA_TYPE_TEXT ; } 

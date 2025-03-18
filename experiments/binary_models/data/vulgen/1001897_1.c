@@ -1,0 +1,1 @@
+WMV2EncContext { MSMPEG4EncContext msmpeg4 ; WMV2Context common ; int j_type_bit ; int j_type ; int abt_flag ; int abt_type ; int per_mb_abt ; int mspel_bit ; int top_left_mv_flag ; int per_mb_rl_bit ; } WMV2EncContext 

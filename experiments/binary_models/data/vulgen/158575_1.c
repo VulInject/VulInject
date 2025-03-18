@@ -1,0 +1,1 @@
+sof_dtrace_state { SOF_DTRACE_DISABLED , SOF_DTRACE_STOPPED , SOF_DTRACE_INITIALIZING , SOF_DTRACE_ENABLED } sof_dtrace_priv { struct snd_dma_buffer dmatp ; int dma_trace_pages ; wait_queue_head_t trace_sleep ; u32 host_offset ; bool dtrace_error ; bool dtrace_draining ; enum sof_dtrace_state dtrace_state ; } 

@@ -1,0 +1,1 @@
+static time_t shutdown_time ( pe_node_t * node ) { const char * shutdown = pe_node_attribute_raw ( node , XML_CIB_ATTR_SHUTDOWN ) ; time_t result = 0 ; return ( result == 0 ) ?get_effective_time ( node -> details -> data_set ) : result ; } 

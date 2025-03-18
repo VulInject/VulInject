@@ -1,0 +1,1 @@
+( vio_ldc_send ) ; static int send_ctrl ( struct vio_driver_state * vio , struct vio_msg_tag * tag , int len ) { return vio_ldc_send ( vio , tag , len ) ; } 

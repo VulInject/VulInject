@@ -1,0 +1,1 @@
+static int parse_frequency ( const char * str , uint32_t * percent ) { double val ; char * post ; val = strtod ( str , & post ) ; if ( post == NULL || * post != '\0' ) { return ( EINVAL ) ; } val /= 100.0f ; * percent = ( ( uint32_t ) ( val * ZI_PERCENTAGE_MAX ) ) ; return ( 0 ) ; } 

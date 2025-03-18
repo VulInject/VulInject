@@ -1,0 +1,1 @@
+static int mailimap_idle_send ( mailimap * session ) { int r ; r = mailimap_token_send ( session -> imap_stream , "IDLE" ) ; return MAILIMAP_NO_ERROR ; } 

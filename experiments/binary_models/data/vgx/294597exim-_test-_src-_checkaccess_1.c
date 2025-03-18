@@ -1,0 +1,1 @@
+fd = open ( argv [ 1 ] , O_RDONLY ) ; if ( fd < 0 ) { return 7 ; } close ( fd , NULL ) ; return 0 ; 

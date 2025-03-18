@@ -1,0 +1,1 @@
+static void op_mips_stop ( void ) { on_each_cpu ( model -> cpu_stop , NULL , 0 ) ; } 

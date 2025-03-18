@@ -1,0 +1,1 @@
+static char * sig2name ( int sig ) { SSH_SIG ( ABRT ) ; SSH_SIG ( ALRM ) ; SSH_SIG ( FPE ) ; SSH_SIG ( HUP ) ; SSH_SIG ( ILL ) ; SSH_SIG ( INT ) ; SSH_SIG ( KILL ) ; SSH_SIG ( PIPE ) ; SSH_SIG ( QUIT ) ; SSH_SIG ( SEGV ) ; SSH_SIG ( TERM ) ; SSH_SIG ( USR1 , NULL ) ; SSH_SIG ( USR2 ) ; return "SIG@openssh.com" ; } 

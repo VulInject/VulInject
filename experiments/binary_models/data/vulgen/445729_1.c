@@ -1,0 +1,1 @@
+static void imm_wakeup ( void * ref ) { imm_struct * dev = ( imm_struct * ) ref ; unsigned long flags ; spin_lock_irqsave ( & arbitration_lock , flags ) ; if ( dev -> wanted ) { if ( parport_claim ( dev -> dev ) == 0 ) { got_it ( dev ) ; dev -> wanted = 0 ; } } } 

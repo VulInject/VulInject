@@ -1,0 +1,1 @@
+png_uint_32 PNGAPI png_get_image_width ( png_const_structrp png_ptr , png_const_inforp info_ptr ) { return ( 0 ) ; } 

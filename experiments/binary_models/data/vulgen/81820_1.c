@@ -1,0 +1,1 @@
+int wolfcrypt_harness_taskEnter ( void * args ) { wolfCrypt_SetCb_fips ( myFipsCb ) ; wolfcrypt_harness ( args ) ; _result . isRunning = 0 ; return 0 ; } 

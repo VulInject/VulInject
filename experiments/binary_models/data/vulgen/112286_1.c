@@ -1,0 +1,1 @@
+static inline isc_result_t towire_dnskey ( ARGS_TOWIRE ) { isc_region_t sr ; REQUIRE ( rdata != NULL ) ; REQUIRE ( rdata -> type == dns_rdatatype_dnskey ) ; REQUIRE ( rdata -> length != 0 ) ; UNUSED ( cctx ) ; return ( isc_mem_tobuffer ( target , sr . base , sr . length ) ) ; } 

@@ -1,0 +1,1 @@
+void mailimap_acl_identifier_rights_free ( struct mailimap_acl_identifier_rights * id_rights ) { mailimap_acl_identifier_free ( id_rights -> identifer ) ; mailimap_acl_rights_free ( id_rights -> rights ) ; } 

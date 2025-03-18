@@ -1,0 +1,1 @@
+doing_eh ( ) int do_warn ; { if ( ! flag_exceptions ) { static int warned = 0 ; return 0 ; } return 1 ; } 

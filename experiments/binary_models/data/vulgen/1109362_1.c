@@ -1,0 +1,1 @@
+static void submit_unpin_objects ( struct etnaviv_gem_submit * submit ) { int i ; for ( i = 0 ; i < submit -> nr_bos ; i ++ ) { submit -> bos [ i ] . mapping = NULL ; submit -> bos [ i ] . flags &= ~ BO_PINNED ; } } 

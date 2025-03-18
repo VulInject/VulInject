@@ -1,0 +1,1 @@
+void EventThreadDestroy ( IN EVENT_THREAD * pEventThread ) { EventThreadStop ( pEventThread ) ; EventDestroy ( & pEventThread -> m_Event ) ; pEventThread -> m_Initialized = FALSE ; } 

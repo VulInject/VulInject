@@ -1,0 +1,1 @@
+unsigned long cpm_muram_alloc ( unsigned long size , unsigned long align ) { unsigned long start ; unsigned long flags ; struct genpool_data_align muram_pool_data ; spin_lock_irqsave ( & cpm_muram_lock , flags ) ; muram_pool_data . align = align ; spin_unlock_irqrestore ( & cpm_muram_lock , flags ) ; return start ; } 

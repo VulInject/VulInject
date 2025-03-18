@@ -1,0 +1,1 @@
+static int fair_queueing_controlled_delay_init ( QDisc * qdisc ) { FairQueueingControlledDelay * fqcd ; fqcd = FQ_CODEL ( qdisc ) ; fqcd -> memory_limit = UINT32_MAX ; fqcd -> ce_threshold_usec = USEC_INFINITY ; fqcd -> ecn = - 1 ; return 0 ; } 

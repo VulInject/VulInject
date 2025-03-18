@@ -1,0 +1,1 @@
+void __weak flush_dcache_range ( ulong start_addr , ulong stop ) { unsigned long lsize = dcache_line_size ( ) ; unsigned long slsize = scache_line_size ( ) ; cache_loop ( start_addr , stop , lsize , HIT_WRITEBACK_INV_D ) ; cache_loop ( start_addr , stop , slsize , HIT_WRITEBACK_INV_SD ) ; sync ( ) ; } 

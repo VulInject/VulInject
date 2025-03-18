@@ -1,0 +1,1 @@
+document_changed_cb ( , , ) { EvDocument * document = ev_document_model_get_document ( model ) ; clear_children ( accessible ) ; initialize_children ( accessible ) ; g_signal_emit_by_name ( accessible , "reload" ) ; g_signal_emit_by_name ( accessible , "load-complete" ) ; } 

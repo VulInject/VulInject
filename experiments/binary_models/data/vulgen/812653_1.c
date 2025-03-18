@@ -1,0 +1,1 @@
+static void __exit sample_trace_array_exit ( void ) { kthread_stop ( simple_tsk ) ; } 

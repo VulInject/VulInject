@@ -1,0 +1,1 @@
+gimp_plug_in_cleanup_image_get ( , ) { GList * list ; for ( list = proc_frame -> image_cleanups ; list ; list = g_list_next ( list ) ) { GimpPlugInCleanupImage * cleanup = list -> data ; } return NULL ; } 

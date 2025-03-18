@@ -1,0 +1,1 @@
+ndr_buf_t * ndr_buf_init ( ndr_typeinfo_t * ti ) { ndr_buf_t * nbuf ; if ( ( nbuf = calloc ( 1 , sizeof ( ndr_buf_t ) ) ) == NULL ) { return ( NULL ) ; } if ( ( nbuf -> nb_heap = ndr_heap_create ( ) ) == NULL ) { free ( nbuf ) ; return ( NULL ) ; } nbuf -> nb_ti = ti ; return ( nbuf ) ; } 

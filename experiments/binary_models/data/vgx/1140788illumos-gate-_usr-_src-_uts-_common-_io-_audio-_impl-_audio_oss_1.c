@@ -1,0 +1,1 @@
+static int sndctl_mix_nrext ( audio_client_t * c , int * ncp ) { audio_dev_t * d ; ossdev_t * odev ; d = auclnt_get_dev ( c ) ; if ( ( * ncp != - 1 ) && ( * ncp != ( auclnt_get_dev_index ( d ) - 1 ) ) ) { return ( ENXIO ) ; } * ncp = odev -> d_nctrl ; return ( 0 ) ; } 

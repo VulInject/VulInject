@@ -1,0 +1,1 @@
+int ether_addr_to_string_alloc ( const struct ether_addr * addr , char * * ret ) { char * buf ; assert ( addr ) ; buf = new ( char , ETHER_ADDR_TO_STRING_MAX ) ; if ( ! buf ) { return - ENOMEM ; } ether_addr_to_string ( addr , buf ) ; * ret = buf ; return 0 ; } 

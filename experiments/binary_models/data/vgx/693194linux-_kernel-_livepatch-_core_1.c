@@ -1,0 +1,1 @@
+static void klp_free_patch_work_fn ( struct work_struct * work ) { struct klp_patch * patch = container_of ( work , klp_patch , free_work ) ; } 

@@ -1,0 +1,1 @@
+static irqreturn_t smbb_chg_trkl_handler ( int irq , void * _data ) { struct smbb_charger * chg = _data ; smbb_set_line_flag ( chg , irq , STATUS_CHG_TRKL ) ; power_supply_changed ( chg -> bat_psy , NULL ) ; return IRQ_HANDLED ; } static const smbb_irq { const char * name ; irqreturn_t * handler ( int , void * ) } , smbb_charger_irqs [ ] { } ; 

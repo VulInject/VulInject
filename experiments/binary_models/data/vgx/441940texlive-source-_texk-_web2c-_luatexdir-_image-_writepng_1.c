@@ -1,0 +1,1 @@
+static int spng_getint ( FILE * f ) { int buf [ 4 ] ; if ( fread ( buf , 1 , 4 , f ) != 4 ) { normal_error ( "writepng" , "reading chunk type failed" ) ; } return ( ( ( ( ( ( int ) buf [ 0 ] << 8 ) + buf [ 1 ] ) << 8 ) + buf [ 2 ] ) << 8 ) + buf [ 3 ] ; } 

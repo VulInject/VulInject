@@ -1,0 +1,1 @@
+( { int __ret local_irq_save ( flags ) __ret = spin_trylock ( lock ) __ret } ; 

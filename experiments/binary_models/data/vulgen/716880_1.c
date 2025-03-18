@@ -1,0 +1,1 @@
+static void mtk_drm_crtc_mode_set_nofb ( struct drm_crtc * crtc ) { struct mtk_crtc_state * state = to_mtk_crtc_state ( crtc -> state ) ; state -> pending_width = crtc -> mode . hdisplay ; state -> pending_height = crtc -> mode . vdisplay ; state -> pending_vrefresh = drm_mode_vrefresh ( & crtc -> mode ) ; state -> pending_config = true ; } 

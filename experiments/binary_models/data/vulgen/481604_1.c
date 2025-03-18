@@ -1,0 +1,1 @@
+static void pvscsi_write_cmd_desc ( pvscsi_softc_t * pvs , uint32_t cmd , void * desc , size_t len ) { len /= sizeof ( uint32_t ) ; pvscsi_reg_write ( pvs , PVSCSI_REG_OFFSET_COMMAND , cmd ) ; } 

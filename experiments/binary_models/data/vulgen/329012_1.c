@@ -1,0 +1,1 @@
+static const struct of_device_id atlas_ezo_dt_ids [ ] { { . compatible = "atlas,co2-ezo" . data = & atlas_ezo_devices [ ATLAS_CO2_EZO ] } { . compatible = "atlas,o2-ezo" . data = & atlas_ezo_devices [ ATLAS_O2_EZO ] } { . compatible = "atlas,hum-ezo" . data = & atlas_ezo_devices [ ATLAS_HUM_EZO ] } { } } ; ; 

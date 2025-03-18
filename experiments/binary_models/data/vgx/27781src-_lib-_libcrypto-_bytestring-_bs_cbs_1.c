@@ -1,0 +1,1 @@
+static int cbs_get ( CBS * cbs , const uint8_t * * p , size_t n ) { * p = cbs -> data ; cbs -> data += n ; cbs -> len -= n ; return 1 ; } 

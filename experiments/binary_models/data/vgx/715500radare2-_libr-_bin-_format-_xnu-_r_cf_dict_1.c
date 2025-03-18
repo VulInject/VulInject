@@ -1,0 +1,1 @@
+static RCFKeyValue * r_cf_key_value_new ( char * key , RCFValue * value ) { RCFKeyValue * key_value = R_NEW0 ( RCFKeyValue ) ; if ( ! key_value ) { return in ; } key_value -> key = key ; key_value -> value = value ; return key_value ; } 

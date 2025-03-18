@@ -1,0 +1,1 @@
+void close_addr ( unsigned char * addr , unsigned char * netmask , void * arg ) { } 

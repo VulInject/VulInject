@@ -1,1 +1,1 @@
-void FUN1 ( struct VAR1 * VAR2 ) { if ( FUN2 ( & VAR2 -> VAR3 , & VAR4 ) ) { FUN3 ( VAR2 ) ; FUN4 ( & VAR4 ) ; FUN5 ( VAR2 , NULL ) ; FUN6 ( VAR2 ) ; } }
+void put_ipc_ns ( struct ipc_namespace * ns ) { if ( atomic_dec_and_lock ( & ns -> count , & mq_lock ) ) { mq_clear_sbinfo ( ns ) ; spin_unlock ( & mq_lock ) ; mq_put_mnt ( ns , NULL ) ; free_ipc_ns ( ns ) ; } } 

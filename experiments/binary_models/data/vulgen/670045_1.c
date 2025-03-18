@@ -1,0 +1,1 @@
+static int da9062_thermal_get_mode ( struct thermal_zone_device * z , enum thermal_device_mode * mode ) { struct da9062_thermal * thermal = z -> devdata ; return 0 ; } 

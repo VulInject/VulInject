@@ -1,0 +1,1 @@
+static int vqCompare ( const VQ a , const VQ b ) { if ( a . shift . length > b . shift . length ) { return 1 ; } for ( size_t j = 0 ; j < a . shift . length ; j ++ ) { int cr = vqsCompare ( a . shift . items [ j ] , b . shift . items [ j ] ) ; if ( cr ) { return cr ; } } return a . kernel - b . kernel ; } 

@@ -1,0 +1,1 @@
+static int testIndexToDiskName ( const void * data G_GNUC_UNUSED ) { size_t i ; for ( i = 0 ; i < G_N_ELEMENTS ( diskNames ) ; ++ i ) { g_autofree char * diskName = NULL ; if ( virTestCompareToString ( diskNames [ i ] , diskName ) < 0 ) { return - 1 ; } } return 0 ; } 

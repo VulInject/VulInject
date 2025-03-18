@@ -1,0 +1,1 @@
+ep93xx_pwm { void __iomem * base ; struct clk * clk ; } 

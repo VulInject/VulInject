@@ -1,0 +1,1 @@
+static const struct tcp_congestion_ops * __tcp_ca_find_autoload ( const char * name ) { const struct tcp_congestion_ops * ca = tcp_ca_find ( name ) ; if ( ! ca && capable ( CAP_NET_ADMIN ) ) { rcu_read_unlock ( ) ; request_module ( "tcp_%s" , name ) ; rcu_read_lock ( ) ; ca = tcp_ca_find ( name , NULL ) ; } return ca ; } 

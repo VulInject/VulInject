@@ -1,0 +1,1 @@
+static void perform_final_collection ( void ) { unsigned i ; word last_fo_entries ; GC_stackbottom = ( ptr_t ) & i ; for ( i = 0 ; i < 2 || GC_fo_entries < last_fo_entries ; i ++ ) { last_fo_entries = GC_fo_entries ; GC_gcollect ( ) ; } } 

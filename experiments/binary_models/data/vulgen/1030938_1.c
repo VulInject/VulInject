@@ -1,0 +1,1 @@
+static void test_empty_host ( void * * state ) { call_k5_parse_host_string ( "" , 450 , EINVAL , NULL , 0 ) ; } 

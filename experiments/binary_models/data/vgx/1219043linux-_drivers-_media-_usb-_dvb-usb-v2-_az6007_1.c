@@ -1,0 +1,1 @@
+static void az6007_usb_disconnect ( struct usb_interface * intf ) { struct dvb_usb_device * d = usb_get_intfdata ( intf ) ; az6007_ci_uninit ( d ) ; dvb_usbv2_disconnect ( intf , NULL ) ; } 

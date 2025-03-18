@@ -1,0 +1,1 @@
+void rs400_gart_tlb_flush ( struct radeon_device * rdev ) { uint32_t tmp ; WREG32_MC ( RS480_GART_CACHE_CNTRL , RS480_GART_CACHE_INVALIDATE ) ; { tmp = RREG32_MC ( RS480_GART_CACHE_CNTRL ) ; if ( ( tmp & RS480_GART_CACHE_INVALIDATE ) == 0 ) { break ; } DRM_UDELAY ( 1 ) ; timeout -- ; } timeout > 0 ; WREG32_MC ( RS480_GART_CACHE_CNTRL , 0 ) ; } 

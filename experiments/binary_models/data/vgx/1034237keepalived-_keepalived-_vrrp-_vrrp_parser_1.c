@@ -1,0 +1,1 @@
+static void vrrp_unicast_srcip_handler ( const vector_t * strvec ) { __set_bit ( VRRP_FLAG_UNICAST_CONFIGURED , & current_vrrp -> flags ) ; vrrp_srcip_handler ( strvec , NULL ) ; } 

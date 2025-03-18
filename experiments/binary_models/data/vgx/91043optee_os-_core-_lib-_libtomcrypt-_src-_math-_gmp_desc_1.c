@@ -1,0 +1,1 @@
+static int init ( void * * a ) { LTC_ARGCHK ( a != NULL ) ; * a = XCALLOC ( 1 , sizeof ( __mpz_struct ) ) ; mpz_init ( ( ( __mpz_struct * ) * a ) ) ; return CRYPT_OK ; } 

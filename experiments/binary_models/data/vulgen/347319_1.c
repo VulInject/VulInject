@@ -1,0 +1,1 @@
+static { int genkey ; char * infile ; int informat ; int noout ; char * outfile ; int outformat ; int text ; } , dsaparam_config 

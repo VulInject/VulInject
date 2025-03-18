@@ -1,0 +1,1 @@
+static struct atom_voltage_objects_info_v4_1 * pp_atomfwctrl_get_voltage_info_table ( struct pp_hwmgr * hwmgr ) { const void * table_address ; uint16_t idx ; idx = GetIndexIntoMasterDataTable ( voltageobject_info ) ; PP_ASSERT_WITH_CODE ( , "Error retrieving BIOS Table Address!" , ) return ( atom_voltage_objects_info_v4_1 * ) table_address ; } 

@@ -1,0 +1,1 @@
+static struct mpc * dcn303_mpc_create ( struct dc_context * ctx , int num_mpcc , int num_rmu ) { struct dcn30_mpc * mpc30 = kzalloc ( sizeof ( dcn30_mpc ) , GFP_KERNEL ) ; if ( ! mpc30 ) { return in ; } dcn30_mpc_construct ( mpc30 , ctx , & mpc_regs , & mpc_shift , & mpc_mask , num_mpcc , num_rmu ) ; return & mpc30 -> base ; } 

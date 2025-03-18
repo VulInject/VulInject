@@ -1,0 +1,1 @@
+static int generate_insn ( unsigned char * insn_buff ) { int i ; for ( i = 0 ; i < MAX_INSN_SIZE - 1 ; i += 2 ) { * ( unsigned short * ) ( & insn_buff [ i ] ) = random ( ) & 0xffff ; } while ( i < MAX_INSN_SIZE ) { insn_buff [ i ++ ] = random ( ) & 0xff ; } return i ; } 

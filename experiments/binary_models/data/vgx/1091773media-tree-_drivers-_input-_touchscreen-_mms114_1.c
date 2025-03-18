@@ -1,0 +1,1 @@
+static void mms114_input_close ( struct input_dev * dev ) { struct mms114_data * data = input_get_drvdata ( dev ) ; mms114_stop ( data , NULL ) ; } 

@@ -1,0 +1,1 @@
+static void xen_vcpu_notify_restore ( void * data ) { tick_resume_local ( ) ; } 

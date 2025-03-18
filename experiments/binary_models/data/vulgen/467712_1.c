@@ -1,0 +1,1 @@
+DECLARE_GLOBAL_DATA_PTR ; static void append ( char * * buf , char * buf_end , const char * fmt , ... ) { va_list args ; va_start ( args , fmt ) ; vsnprintf ( * buf , size , fmt , args ) ; va_end ( args ) ; * buf += strlen ( * buf ) ; } 

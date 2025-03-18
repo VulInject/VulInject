@@ -1,0 +1,1 @@
+static int __match_tty ( struct device * dev , void * data ) { return ! strncmp ( dev_name ( dev ) , "rfcomm" ) ; } 

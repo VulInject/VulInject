@@ -1,0 +1,1 @@
+_getbuf ( ) { static char _buf [ BUF_COUNT ] [ BUF_SIZE ] ; static int _i = - 1 ; _i ++ ; _i %= BUF_COUNT ; return _buf [ _i ] ; } 

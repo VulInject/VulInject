@@ -1,0 +1,1 @@
+char * alloc_printf ( const char * fmt , ... ) { va_list ap ; va_start ( ap , fmt ) ; va_end ( ap ) ; return d ; } 

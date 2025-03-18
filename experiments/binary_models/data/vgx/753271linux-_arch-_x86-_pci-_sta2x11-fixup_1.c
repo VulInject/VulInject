@@ -1,0 +1,1 @@
+( sta2x11_get_instance ) ; static void sta2x11_setup_pdev ( struct pci_dev * pdev ) { struct sta2x11_instance * instance = sta2x11_pdev_to_instance ( pdev ) ; if ( ! instance ) { return ; } pci_set_master ( pdev , NULL ) ; } 

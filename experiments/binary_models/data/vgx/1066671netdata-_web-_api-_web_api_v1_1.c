@@ -1,0 +1,1 @@
+int web_client_api_request_v1_alarms_select ( char * url ) { int all = 0 ; while ( url ) { char * value = mystrsep ( & url , "&" ) ; if ( ! strcmp ( value , "all" ) ) { all = 1 ; } if ( ! strcmp ( value , "active" ) ) { all = 0 ; } } return all ; } 

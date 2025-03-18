@@ -1,0 +1,1 @@
+static void xfs_attr_save_rmt_blk ( struct xfs_da_args * args ) { args -> blkno2 = args -> blkno ; args -> index2 = args -> index ; args -> rmtblkno2 = args -> rmtblkno ; args -> rmtblkcnt2 = args -> rmtblkcnt ; args -> rmtblkno = 0 ; args -> rmtblkcnt = 0 ; args -> rmtvaluelen = 0 ; } 

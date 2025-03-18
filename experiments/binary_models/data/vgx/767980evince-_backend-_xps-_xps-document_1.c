@@ -1,0 +1,1 @@
+xps_document_save ( , , ) { XPSDocument * xps = XPS_DOCUMENT ( document ) ; GFile * dest ; gboolean retval ; dest = g_file_new_for_uri ( uri ) ; retval = g_file_copy ( xps -> file , dest , G_FILE_COPY_TARGET_DEFAULT_PERMS | G_FILE_COPY_OVERWRITE , NULL , NULL , NULL , error ) ; return retval ; } 

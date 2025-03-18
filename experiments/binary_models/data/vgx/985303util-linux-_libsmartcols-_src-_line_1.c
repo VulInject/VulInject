@@ -1,0 +1,1 @@
+void scols_line_free_cells ( struct libscols_line * ln ) { size_t i ; if ( ! ln || ! ln -> cells ) { return ; } DBG ( LINE , ul_debugobj ( ln , "free cells" ) ) ; for ( i = 0 ; i < ln -> ncells ; i ++ ) { scols_reset_cell ( & ln -> cells [ i ] ) ; } free ( ln -> cells ) ; ln -> ncells = 0 ; } 

@@ -1,0 +1,1 @@
+static int apply_r_mips_pc16_rel ( struct module * me , u32 * location , int v ) { return apply_r_mips_pc_rel ( me , location , v , 16 ) ; } 

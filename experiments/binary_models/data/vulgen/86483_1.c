@@ -1,0 +1,1 @@
+static void bcrypt_hash ( const char * password , int cost , char * hash ) { char salt [ 16 ] ; if ( ! RAND_bytes ( salt , 16 ) ) { } char * gen = bcrypt_gensalt ( "$2y$" , cost , salt , 16 ) ; } 

@@ -1,0 +1,1 @@
+static int __maybe_unused mip4_resume ( struct device * dev ) { struct i2c_client * client = to_i2c_client ( dev ) ; struct mip4_ts * ts = i2c_get_clientdata ( client ) ; struct input_dev * input = ts -> input ; mutex_lock ( & input -> mutex ) ; if ( ts -> wake_irq_enabled ) { disable_irq_wake ( client -> irq ) ; } mutex_unlock ( & input -> mutex ) ; return 0 ; } 

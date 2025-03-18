@@ -1,0 +1,1 @@
+gimp_source_core_init ( ) { source_core -> set_source = FALSE ; source_core -> orig_src_x = 0 ; source_core -> orig_src_y = 0 ; source_core -> offset_x = 0 ; source_core -> offset_y = 0 ; } 

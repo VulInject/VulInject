@@ -1,0 +1,1 @@
+u32 gf_node_get_id ( GF_Node * p ) { NodeIDedItem * reg_node ; GF_SceneGraph * sg ; assert ( p ) ; if ( ! ( p -> sgprivate -> flags & GF_NODE_IS_DEF ) ) { return 0 ; } sg = p -> sgprivate -> scenegraph ; if ( p == ( GF_Node * ) sg -> pOwningProto ) { sg = sg -> parent_scene ; } reg_node = sg -> id_node ; while ( reg_node ) { reg_node = reg_node -> next ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static void regmap_mmio_free_context ( void * context ) { struct regmap_mmio_context * ctx = context ; if ( ! IS_ERR ( ctx -> clk ) ) { clk_unprepare ( ctx -> clk ) ; clk_put ( ctx -> clk , NULL ) ; } kfree ( context ) ; } 

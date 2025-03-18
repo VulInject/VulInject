@@ -1,0 +1,1 @@
+static int dissect_rwall_call ( tvbuff_t * tvb , packet_info * pinfo _U_ , proto_tree * tree , void * data _U_ ) { return dissect_rpc_string ( tvb , tree , hf_rwall_message , 0 ) ; } 

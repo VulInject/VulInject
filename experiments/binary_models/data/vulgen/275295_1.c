@@ -1,0 +1,1 @@
+u32 k3_ringacc_ring_get_occ ( struct k3_ring * ring ) { return k3_ringacc_ring_read_occ ( ring ) ; } 

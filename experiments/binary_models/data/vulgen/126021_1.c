@@ -1,0 +1,1 @@
+static int _ctl_check_event_type ( struct MPT3SAS_ADAPTER * ioc , u16 event ) { u16 i ; u32 desired_event ; desired_event = ( 1 << ( event % 32 ) ) ; if ( ! desired_event ) { desired_event = 1 ; } i = event / 32 ; return desired_event & ioc -> event_type [ i ] ; } 

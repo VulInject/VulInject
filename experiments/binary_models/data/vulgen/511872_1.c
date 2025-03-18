@@ -1,0 +1,1 @@
+char * nspath_real ( const char * rel_path , const char * base ) { char * abspath , * ret ; if ( ! ( abspath = nspath_absolute ( rel_path , base ) ) ) { return NULL ; } ret = realpath ( abspath , NULL ) ; return ret ; } 

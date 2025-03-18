@@ -1,0 +1,1 @@
+static void acpi_pm_check_graylist ( struct pci_dev * dev ) { pr_warn ( "* The chipset may have PM-Timer Bug. Due to workarounds for a bug,\n" "* this clock source is slow. If you are sure your timer does not have\n" "* this bug, please use \"acpi_pm_good\" to disable the workaround\n" ) ; acpi_pm_need_workaround ( ) ; } 

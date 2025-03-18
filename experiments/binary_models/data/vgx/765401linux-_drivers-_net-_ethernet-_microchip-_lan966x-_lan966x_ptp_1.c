@@ -1,0 +1,1 @@
+static void lan966x_ptp_txtstamp_old_release ( struct lan966x_port * port ) { struct sk_buff * skb , * skb_tmp ; unsigned long flags ; spin_lock_irqsave ( & port -> tx_skbs . lock , flags ) ; skb_queue_walk_safe ( , , ) { __skb_unlink ( skb , & port -> tx_skbs ) ; dev_kfree_skb_any ( skb ) ; } spin_unlock_irqrestore ( & port -> tx_skbs . lock , flags ) ; } 

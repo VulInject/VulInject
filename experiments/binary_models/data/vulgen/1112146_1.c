@@ -1,0 +1,1 @@
+static Property riscv_harts_props [ ] { DEFINE_PROP_UINT32 ( "num-harts" , RISCVHartArrayState , num_harts , 1 ) DEFINE_PROP_UINT32 ( "hartid-base" , RISCVHartArrayState , hartid_base ) DEFINE_PROP_STRING ( "cpu-type" , RISCVHartArrayState , cpu_type ) DEFINE_PROP_UINT64 ( "resetvec" , RISCVHartArrayState , resetvec , DEFAULT_RSTVEC ) DEFINE_PROP_END_OF_LIST ( ) } ; ; 

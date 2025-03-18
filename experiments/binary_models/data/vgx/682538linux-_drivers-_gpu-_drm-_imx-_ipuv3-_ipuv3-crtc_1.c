@@ -1,0 +1,1 @@
+static void ipu_crtc_atomic_enable ( struct drm_crtc * crtc , struct drm_atomic_state * state ) { struct ipu_crtc * ipu_crtc = to_ipu_crtc ( crtc ) ; struct ipu_soc * ipu = dev_get_drvdata ( ipu_crtc -> dev -> parent ) ; ipu_prg_enable ( ipu ) ; ipu_dc_enable ( ipu ) ; ipu_dc_enable_channel ( ipu_crtc -> dc ) ; ipu_di_enable ( ipu_crtc -> di , NULL ) ; } 

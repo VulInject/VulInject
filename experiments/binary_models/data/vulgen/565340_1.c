@@ -1,0 +1,1 @@
+static int __maybe_unused mtk_mdp_pm_suspend ( struct device * dev ) { mtk_mdp_clock_off ( mdp ) ; return 0 ; } 

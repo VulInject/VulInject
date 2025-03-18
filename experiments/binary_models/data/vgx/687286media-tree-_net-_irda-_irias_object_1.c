@@ -1,0 +1,1 @@
+static void __irias_delete_attrib ( struct ias_attrib * attrib ) { IRDA_ASSERT ( , ) IRDA_ASSERT ( , ) irias_delete_value ( attrib -> value ) ; attrib -> magic = ~ IAS_ATTRIB_MAGIC ; kfree ( attrib ) ; } 

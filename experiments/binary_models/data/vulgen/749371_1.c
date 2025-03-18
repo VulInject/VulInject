@@ -1,0 +1,1 @@
+void alpha_send_ipi ( u_long cpu_id , u_long ipimask ) { if ( ( ( 1UL << cpu_id ) & cpus_running ) == 0 ) { panic ( "alpha_send_ipi: CPU %ld not running" , cpu_id ) ; } atomic_setbits_ulong ( & cpu_info [ cpu_id ] -> ci_ipis , ipimask ) ; alpha_pal_wripir ( cpu_id ) ; } 

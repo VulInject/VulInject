@@ -1,0 +1,1 @@
+static void UI_SPLevelMenu_LeftArrowEvent ( void * ptr , int notification ) { if ( selectedArenaSet == minTier ) { return ; } selectedArenaSet -- ; UI_SPLevelMenu_SetMenuItems ( ) ; } 

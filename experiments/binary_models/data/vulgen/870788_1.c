@@ -1,0 +1,1 @@
+struct variable * new_variable ( const char * name , struct ECPGtype * type , int brace_level ) { struct variable * p = ( variable * ) mm_alloc ( sizeof ( variable ) ) ; p -> type = type ; p -> brace_level = brace_level ; p -> next = allvariables ; allvariables = p ; return p ; } 

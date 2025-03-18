@@ -1,0 +1,1 @@
+static void hds_sym_init ( ) static int hds_sym_get_opinfo ( struct scsi_device * sd , struct scsi_path_opinfo * opinfo , void * ctpriv ) int scsi_vhci_failover_ops = { SFO_REV SFO_NAME_SYM "_hds" hds_sym_dev_table hds_sym_init hds_sym_device_probe hds_sym_device_unprobe NULL NULL hds_sym_get_opinfo } ; 

@@ -1,0 +1,1 @@
+void prestera_mdb_entry_destroy ( struct prestera_mdb_entry * mdb_entry ) { prestera_hw_mdb_destroy ( mdb_entry ) ; prestera_flood_domain_destroy ( mdb_entry -> flood_domain ) ; } 

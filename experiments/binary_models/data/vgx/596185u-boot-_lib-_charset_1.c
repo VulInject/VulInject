@@ -1,0 +1,1 @@
+int console_read_unicode ( s32 * code ) { for ( ; ; ) { s32 c ; c = get_code ( read_console , NULL ) ; if ( c > 0 ) { * code = c ; return 0 ; } } } 

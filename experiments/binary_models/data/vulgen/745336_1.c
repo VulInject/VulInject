@@ -1,0 +1,1 @@
+void print_sa_attr_ipsec ( struct db_attr * at ) { const struct enum_names * en = NULL ; if ( at -> type . ipsec == 0 ) { return ; } DBG_log ( "        type: %u(%s) val: %u(%s)\n" , at -> type . ipsec , enum_name ( & ipsec_attr_names , at -> type . ipsec ) , at -> val , en ?enum_name ( en , at -> val ) : "unknown" ) ; } 

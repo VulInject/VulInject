@@ -1,0 +1,1 @@
+static PyObject * Fs_get_propagation ( FsObject * self ) { cfs_time_t flags ; int rc ; rc = mnt_fs_get_propagation ( self -> fs , & flags ) ; return rc ?UL_RaiseExc ( - rc ) : PyObjectResultInt ( flags ) ; } 

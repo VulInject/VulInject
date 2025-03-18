@@ -1,0 +1,1 @@
+static void alpha_bootblock_checksum ( char * boot ) { uint64_t * dp = ( uint64_t * ) boot , sum = 0 ; int i ; for ( i = 0 ; i < 63 ; i ++ ) { sum += dp [ i ] ; } } 

@@ -1,0 +1,1 @@
+static int find_pool ( zpool_handle_t * zhp , void * data ) { cbdata_t * cbp = data ; if ( zpool_get_prop_int ( zhp , ZPOOL_PROP_GUID , NULL ) == cbp -> cb_guid ) { cbp -> cb_pool = zhp ; return ( 1 ) ; } zpool_close ( zhp , NULL ) ; return ( 0 ) ; } 

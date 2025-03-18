@@ -1,0 +1,1 @@
+int pudp_set_access_flags ( struct vm_area_struct * vma , unsigned long address , pud_t * pudp , pud_t entry , int dirty ) { int changed = ! pud_same ( * pudp , entry ) ; VM_BUG_ON ( address & ~ HPAGE_PUD_MASK ) ; return changed ; } 

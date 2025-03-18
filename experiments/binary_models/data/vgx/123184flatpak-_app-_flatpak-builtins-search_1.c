@@ -1,0 +1,1 @@
+match_result_add_remote ( , ) { guint i ; for ( i = 0 ; i < self -> remotes -> len ; ++ i ) { const char * remote_entry = g_ptr_array_index ( self -> remotes , i ) ; } g_ptr_array_add ( self -> remotes , g_strdup ( remote ) ) ; } 

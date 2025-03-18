@@ -1,0 +1,1 @@
+( mmc_gpio_set_cd_wake ) ; void mmc_gpio_set_cd_isr ( struct mmc_host * host , irqreturn_t * isr ( int irq , void * dev_id ) ) { struct mmc_gpio * ctx = host -> slot . handler_priv ; WARN_ON ( ctx -> cd_gpio_isr , NULL ) ; ctx -> cd_gpio_isr = isr ; } 

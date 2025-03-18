@@ -1,0 +1,1 @@
+static int cs5536_dma_end ( ide_drive_t * drive ) { int ret = ide_dma_end ( drive ) ; cfs_time_t timings = ( unsigned long ) ide_get_drivedata ( drive ) ; if ( drive -> current_speed < XFER_UDMA_0 && ( timings >> 8 ) != ( timings & IDE_DRV_MASK ) ) { cs5536_program_dtc ( drive , timings & IDE_DRV_MASK ) ; } return ret ; } 

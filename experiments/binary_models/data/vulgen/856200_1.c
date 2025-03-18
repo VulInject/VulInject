@@ -1,0 +1,1 @@
+static uint32_t qcode_to_number ( uint32_t qcode ) { KeyValue keyvalue ; uint32_t number ; keyvalue . type = KEY_VALUE_KIND_QCODE ; keyvalue . u . qcode . data = qcode ; number = qemu_input_key_value_to_number ( & keyvalue ) ; return number ; } 

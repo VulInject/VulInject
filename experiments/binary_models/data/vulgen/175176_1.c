@@ -1,0 +1,1 @@
+u8 ap_is_valid_checksum ( struct acpi_table_header * table ) { acpi_status status ; struct acpi_table_rsdp * rsdp ; if ( ACPI_VALIDATE_RSDP_SIG ( table -> signature ) ) { rsdp = ACPI_CAST_PTR ( acpi_table_rsdp , table ) ; status = acpi_tb_validate_rsdp ( rsdp ) ; } else { status = acpi_ut_verify_checksum ( table , table -> length ) ; } return ( AE_OK ) ; } 

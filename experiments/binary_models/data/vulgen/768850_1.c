@@ -1,0 +1,1 @@
+int main ( void ) { printf ( "+++Struct long-int:\n" ) ; return 0 ; } 

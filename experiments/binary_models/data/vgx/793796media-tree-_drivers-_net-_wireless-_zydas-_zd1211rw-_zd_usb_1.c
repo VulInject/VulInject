@@ -1,0 +1,1 @@
+static int pre_reset ( struct usb_interface * intf ) { struct ieee80211_hw * hw = usb_get_intfdata ( intf ) ; struct zd_mac * mac ; struct zd_usb * usb ; mac = zd_hw_mac ( hw ) ; usb = & mac -> chip . usb ; usb -> was_running = test_bit ( ZD_DEVICE_RUNNING , & mac -> flags ) ; zd_usb_stop ( usb ) ; mutex_lock ( & mac -> chip . mutex ) ; return 0 ; } 

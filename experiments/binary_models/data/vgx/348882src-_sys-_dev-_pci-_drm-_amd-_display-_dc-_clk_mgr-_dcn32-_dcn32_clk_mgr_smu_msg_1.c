@@ -1,0 +1,1 @@
+void dcn32_smu_set_pme_workaround ( struct clk_mgr_internal * clk_mgr ) { smu_print ( "SMU Set PME workaround\n" ) ; dcn32_smu_send_msg_with_param ( clk_mgr , DALSMC_MSG_BacoAudioD3PME , 0 ) ; } 

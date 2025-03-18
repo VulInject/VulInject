@@ -1,0 +1,1 @@
+static inline int mcp251xfd_vdd_enable ( const struct mcp251xfd_priv * priv ) { return regulator_enable ( priv -> reg_vdd ) ; } 

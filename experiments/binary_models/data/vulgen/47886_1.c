@@ -1,0 +1,1 @@
+static void cmd_log_stop ( const char * data ) { LOG_REC * log ; log = log_find_from_data ( data ) ; if ( log == NULL || log -> handle == - 1 ) { printformat ( NULL , NULL , MSGLEVEL_CLIENTERROR , TXT_LOG_NOT_OPEN , data ) ; } else { printformat ( NULL , NULL , MSGLEVEL_CLIENTNOTICE , TXT_LOG_CLOSED , data ) ; } } 

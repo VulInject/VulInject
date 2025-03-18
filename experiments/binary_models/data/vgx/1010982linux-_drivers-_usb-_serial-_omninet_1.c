@@ -1,0 +1,1 @@
+static int omninet_calc_num_ports ( struct usb_serial * serial , struct usb_serial_endpoints * epds ) { epds -> bulk_out [ 0 ] = epds -> bulk_out [ 1 ] ; return 1 ; } 

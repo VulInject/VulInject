@@ -1,0 +1,1 @@
+static int etnaviv_ioctl_get_param ( struct drm_device * dev , void * data , struct drm_file * file ) { struct etnaviv_drm_private * priv = dev -> dev_private ; struct drm_etnaviv_param * args = data ; struct etnaviv_gpu * gpu ; gpu = priv -> gpu [ args -> pipe ] ; if ( ! gpu ) { return - ENXIO ; } return etnaviv_gpu_get_param ( gpu , args -> param , & args -> value ) ; } 

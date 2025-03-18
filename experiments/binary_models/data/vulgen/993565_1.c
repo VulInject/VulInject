@@ -1,0 +1,1 @@
+int fpm_trace_close ( pid_t pid ) { mem_file = - 1 ; return 0 ; } 

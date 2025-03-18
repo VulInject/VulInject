@@ -1,0 +1,1 @@
+int mls_from_string ( struct policydb * p , char * str , struct context * context , gfp_t gfp_mask ) { char * tmpstr ; int rc ; tmpstr = kstrdup ( str , gfp_mask ) ; if ( ! tmpstr ) { rc = - ENOMEM ; } else { rc = mls_context_to_sid ( p , ':' , tmpstr , context , NULL , SECSID_NULL ) ; kfree ( tmpstr ) ; } return rc ; } 

@@ -1,0 +1,1 @@
+static int __init disable_alternative_instructions ( char * str ) { return 0 ; } 

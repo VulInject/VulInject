@@ -1,0 +1,1 @@
+void ingenic_intc_irq_resume ( struct irq_data * data ) { struct irq_chip_generic * gc = irq_data_get_irq_chip_data ( data ) ; } static struct irqaction intc_cascade_action = { . handler = intc_cascade . name = "SoC intc cascade interrupt" } ; 

@@ -1,0 +1,1 @@
+int hns_mac_wait_fifo_clean ( struct hns_mac_cb * mac_cb ) { struct mac_driver * drv = hns_mac_get_drv ( mac_cb ) ; return 0 ; } 

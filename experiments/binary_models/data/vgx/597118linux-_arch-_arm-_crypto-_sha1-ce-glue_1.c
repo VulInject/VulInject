@@ -1,0 +1,1 @@
+static int sha1_ce_finup ( struct shash_desc * desc , const u8 * data , unsigned int len , u8 * out ) { kernel_neon_begin ( ) ; if ( len ) { sha1_base_do_update ( desc , data , len , sha1_ce_transform ) ; } sha1_base_do_finalize ( desc , sha1_ce_transform ) ; kernel_neon_end ( ) ; return sha1_base_finish ( desc , out ) ; } 

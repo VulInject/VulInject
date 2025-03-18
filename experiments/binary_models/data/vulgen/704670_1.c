@@ -1,0 +1,1 @@
+static int stm32mp1_hwspinlock_probe ( struct udevice * dev ) { struct stm32mp1_hws_priv * priv = dev_get_priv ( dev ) ; struct clk clk ; int ret ; priv -> base = dev_read_addr ( dev ) ; ret = clk_get_by_index ( dev , 0 , & clk ) ; if ( ret ) { return ret ; } ret = clk_enable ( & clk ) ; if ( ret ) { clk_free ( & clk ) ; } return ret ; } 

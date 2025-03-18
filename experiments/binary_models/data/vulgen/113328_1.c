@@ -1,0 +1,1 @@
+static void restore_env ( void ) { for ( int i = 0 ; i < nenviron ; i ++ ) { char * key = environment [ i ] . key , * value = environment [ i ] . value ; if ( value ) { setenv ( key , value , 1 ) ; } else { unsetenv ( key ) ; } free ( key ) ; } nenviron = 0 ; memset ( environment , 0 , sizeof ( environment ) ) ; } 

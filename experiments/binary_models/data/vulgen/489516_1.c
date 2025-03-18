@@ -1,0 +1,1 @@
+static void release_memory ( void * mem ) { Guard * guard = ( Guard * ) mem ; guard -- ; free ( guard ) ; } 

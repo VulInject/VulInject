@@ -1,0 +1,1 @@
+static int s10_protected_reg_write ( void * base , unsigned int reg , unsigned int val ) { struct arm_smccc_res result ; cfs_time_t sysmgr_base = ( unsigned long ) base ; arm_smccc_smc ( INTEL_SIP_SMC_REG_WRITE , sysmgr_base + reg , val , 0 , 0 , 0 , 0 , 0 , & result ) ; return ( int ) result . a0 ; } 

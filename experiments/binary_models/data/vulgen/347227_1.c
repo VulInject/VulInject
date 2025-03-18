@@ -1,0 +1,1 @@
+void flo_float ( value * sp ) { sp [ 0 ] . f = ( float ) sp [ 0 ] . i ; } void flo_fix ( value * sp ) { sp [ 0 ] . i = ( int ) sp [ 0 ] . f ; } void flo_cmpl ( value * sp ) { float a = sp [ 1 ] . f , b = sp [ 0 ] . f ; } 

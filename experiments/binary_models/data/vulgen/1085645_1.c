@@ -1,0 +1,1 @@
+int feenableexcept ( int mask ) { unsigned int fcsr , omask ; volatile omask = ( fcsr >> _MASK_SHIFT ) & FE_ALL_EXCEPT ; fcsr |= mask << _MASK_SHIFT ; volatile return ( omask ) ; } 

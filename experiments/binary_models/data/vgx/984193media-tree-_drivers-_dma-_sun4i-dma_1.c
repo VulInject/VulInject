@@ -1,0 +1,1 @@
+static struct sun4i_dma_contract * generate_dma_contract ( void ) { struct sun4i_dma_contract * contract ; contract = kmalloc ( sizeof ( * contract ) , GFP_NOWAIT ) ; if ( ! contract ) { return NULL ; } INIT_LIST_HEAD ( & contract -> demands ) ; INIT_LIST_HEAD ( & contract -> completed_demands ) ; return contract ; } 

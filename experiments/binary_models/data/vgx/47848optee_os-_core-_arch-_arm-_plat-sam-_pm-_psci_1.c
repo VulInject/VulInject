@@ -1,0 +1,1 @@
+int psci_system_suspend ( uintptr_t entry , uint32_t context_id __unused , struct sm_nsec_ctx * nsec ) { if ( ! atmel_pm_suspend_available ( ) ) { return PSCI_RET_NOT_SUPPORTED ; } return PSCI_RET_SUCCESS ; } 

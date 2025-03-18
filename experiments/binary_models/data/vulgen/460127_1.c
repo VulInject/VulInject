@@ -1,0 +1,1 @@
+METHODDEF ( ) empty_output_buffer ( ) { my_dest_ptr dest = ( my_dest_ptr ) cinfo -> dest ; if ( fwrite ( dest -> buffer , 1 , OUTPUT_BUF_SIZE , dest -> outfile ) != ( size_t ) OUTPUT_BUF_SIZE ) { ERREXIT ( cinfo , 0 ) ; } dest -> pub . next_output_byte = dest -> buffer ; dest -> pub . free_in_buffer = OUTPUT_BUF_SIZE ; return TRUE ; } 

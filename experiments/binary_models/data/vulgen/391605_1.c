@@ -1,0 +1,1 @@
+void librad_md5_calc ( unsigned char * output , unsigned char * input , unsigned int inlen ) { MD5_CTX context ; MD5Init ( & context ) ; MD5Update ( & context , input , inlen ) ; } 

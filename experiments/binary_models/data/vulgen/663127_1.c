@@ -1,0 +1,1 @@
+static irqreturn_t timer_trig_interrupt ( int irq , void * dev_id ) { reg_timer_r_masked_intr masked_intr ; masked_intr = REG_RD ( timer , regi_timer0 , r_masked_intr ) ; if ( ! masked_intr . trig ) { return IRQ_NONE ; } return IRQ_HANDLED ; } 

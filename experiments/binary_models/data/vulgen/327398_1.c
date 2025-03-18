@@ -1,0 +1,1 @@
+void feh_clean_exit ( void ) { delete_rm_files ( ) ; free ( opt . menu_font ) ; if ( opt . auto_reload ) { if ( close ( opt . inotify_fd ) ) { eprintf ( "inotify close failed" ) ; } } if ( disp ) { XCloseDisplay ( disp ) ; } uninit_magic ( ) ; if ( control_via_stdin && isatty ( STDIN_FILENO ) && getpgrp ( ) == ( tcgetpgrp ( STDIN_FILENO ) ) ) { restore_stdin ( ) ; } return ; } 

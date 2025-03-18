@@ -1,0 +1,1 @@
+spx_close ( ) { SPX_PRIVATE * spx = psf -> codec_data ; if ( spx -> state ) { speex_decoder_destroy ( spx -> state ) ; } return 0 ; } 

@@ -1,0 +1,1 @@
+int __init io_subchannel_init ( void ) { int ret ; ret = bus_register ( & ccw_bus_type ) ; if ( ret ) { return ret ; } ret = css_driver_register ( & io_subchannel_driver ) ; if ( ret ) { bus_unregister ( & ccw_bus_type ) ; } return ret ; } 

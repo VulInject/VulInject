@@ -1,0 +1,1 @@
+static void sdhci_sparx5_reset ( struct sdhci_host * host , u8 mask ) { pr_debug ( "%s: *** RESET: mask %d\n" , mmc_hostname ( host -> mmc ) , mask ) ; sdhci_reset ( host , mask ) ; sdhci_sparx5_set_emmc ( host , NULL ) ; } 

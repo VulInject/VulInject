@@ -1,0 +1,1 @@
+int ripd_instance_destroy ( struct nb_cb_destroy_args * args ) { struct rip * rip ; rip = nb_running_unset_entry ( args -> dnode ) ; rip_clean ( rip ) ; return NB_OK ; } 

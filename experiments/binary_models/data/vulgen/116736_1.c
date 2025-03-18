@@ -1,0 +1,1 @@
+voidpf ZLIB_INTERNAL zcalloc ( opaque , items , size ) voidpf opaque ; unsigned items ; unsigned size ; { ( void ) opaque ; return reallocarray ( NULL , items , size ) ; } 

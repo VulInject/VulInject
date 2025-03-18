@@ -1,0 +1,1 @@
+static int bq24190_read ( struct bq24190_dev_info * bdi , u8 reg , u8 * data ) { int ret ; ret = i2c_smbus_read_byte_data ( bdi -> client , reg ) ; * data = ret ; return 0 ; } 

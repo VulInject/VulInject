@@ -1,0 +1,1 @@
+CinFileHeader { int video_frame_size ; int video_frame_width ; int video_frame_height ; int audio_frequency ; int audio_bits ; int audio_stereo ; } CinFileHeader CinFrameHeader { int audio_frame_type ; int video_frame_type ; int pal_colors_count ; int audio_frame_size ; int video_frame_size ; } CinFrameHeader 

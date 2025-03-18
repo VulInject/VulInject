@@ -1,0 +1,1 @@
+static int tegra210_ope_component_probe ( struct snd_soc_component * cmpnt ) { struct tegra210_ope * ope = dev_get_drvdata ( cmpnt -> dev ) ; tegra210_peq_component_init ( cmpnt ) ; tegra210_mbdrc_component_init ( cmpnt , NULL ) ; snd_soc_component_init_regmap ( cmpnt , ope -> regmap ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static struct dlm_ls * find_ls_to_scan ( void ) { struct dlm_ls * ls ; spin_lock ( & lslist_lock ) ; list_for_each_entry ( , , ) { if ( time_after_eq ( jiffies , ls -> ls_scan_time + dlm_config . ci_scan_secs * HZ ) ) { return ls ; } } spin_unlock ( & lslist_lock ) ; return NULL ; } 

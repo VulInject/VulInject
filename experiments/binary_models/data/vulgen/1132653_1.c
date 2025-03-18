@@ -1,0 +1,1 @@
+static unsigned int serial_in ( struct uart_sio_port * up , int offset ) { return __sio_in ( offset ) ; } 

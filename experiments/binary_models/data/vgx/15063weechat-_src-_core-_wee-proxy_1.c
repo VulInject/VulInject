@@ -1,0 +1,1 @@
+proxy_valid ( ) { struct t_proxy * ptr_proxy ; for ( ptr_proxy = weechat_proxies ; ptr_proxy ; ptr_proxy = ptr_proxy -> next_proxy ) { if ( ptr_proxy == proxy ) { return 1 ; } } return 0 ; } 

@@ -1,0 +1,1 @@
+PrInitializeGlobals ( ) { Gbl_InputFileList = NULL ; Gbl_PreprocessorLineNumber = 1 ; Gbl_PreprocessorError = FALSE ; Gbl_IfDepth = 0 ; Gbl_IgnoringThisCodeBlock = FALSE ; Gbl_DirectiveStack = NULL ; } 

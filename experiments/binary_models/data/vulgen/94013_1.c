@@ -1,0 +1,1 @@
+static MagickBooleanType IsXBM ( const unsigned char * magick , const size_t length ) { if ( length < 7 ) { return ( MagickFalse ) ; } return ( MagickFalse ) ; } 

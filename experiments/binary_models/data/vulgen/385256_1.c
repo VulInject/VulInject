@@ -1,0 +1,1 @@
+static void upload_err_inject_error ( struct test_firmware_upload * tst , const u8 * p , const char * prog ) { for ( err = FW_UPLOAD_ERR_NONE + 1 ; err < FW_UPLOAD_ERR_MAX ; err ++ ) { if ( strncmp ( p , fw_upload_err_str [ err ] , strlen ( fw_upload_err_str [ err ] ) ) == 0 ) { tst -> inject . prog = prog ; tst -> inject . err_code = err ; return ; } } } 

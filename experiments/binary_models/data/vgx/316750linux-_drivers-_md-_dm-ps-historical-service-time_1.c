@@ -1,0 +1,1 @@
+static u64 path_service_time ( struct path_info * pi , u64 start_time ) { u64 now = ktime_get_ns ( ) ; if ( time_after64 ( pi -> last_finish , start_time ) ) { start_time = pi -> last_finish ; } pi -> last_finish = now ; return now - start_time ; } 

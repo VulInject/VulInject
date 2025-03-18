@@ -1,0 +1,1 @@
+size_t ff_libjxl_get_threadcount ( int threads ) { if ( threads <= 0 ) { return av_cpu_count ( ) ; } return threads ; } 

@@ -1,0 +1,1 @@
+static int set_rtc_irq_bit ( struct twl_rtc * twl_rtc , unsigned char bit ) { unsigned char val ; int ret ; if ( twl_rtc -> rtc_irq_bits & bit ) { return 0 ; } val = twl_rtc -> rtc_irq_bits | bit ; ret = twl_rtc_write_u8 ( twl_rtc , val , REG_RTC_INTERRUPTS_REG ) ; if ( ret == 0 ) { twl_rtc -> rtc_irq_bits = val ; } return ret ; } 

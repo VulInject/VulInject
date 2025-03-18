@@ -1,0 +1,1 @@
+extern struct ubuntu_flags Flags ; static bool ubuntu_cap_have ( cap_value_t c ) { cap_t cap ; pid_t pid ; cap_flag_value_t f ; if ( ! CAP_IS_SUPPORTED ( c ) ) { return false ; } pid = getpid ( ) ; cap = cap_get_pid ( pid ) ; cap_get_flag ( cap , c , CAP_EFFECTIVE , & f ) ; return f == CAP_SET ; } 

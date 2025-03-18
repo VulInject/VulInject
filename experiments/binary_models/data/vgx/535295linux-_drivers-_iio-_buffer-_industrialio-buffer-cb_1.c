@@ -1,0 +1,1 @@
+static void iio_buffer_cb_release ( struct iio_buffer * buffer ) { struct iio_cb_buffer * cb_buff = buffer_to_cb_buffer ( buffer ) ; bitmap_free ( cb_buff -> buffer . scan_mask ) ; } static const struct iio_buffer_access_funcs iio_cb_access = { . store_to = & iio_buffer_cb_store_to . release = & iio_buffer_cb_release . modes = INDIO_BUFFER_SOFTWARE | INDIO_BUFFER_TRIGGERED } ; 

@@ -1,0 +1,1 @@
+static int generic_print ( const mbedtls_md_info_t * md_info , char * filename ) { int i ; unsigned char sum [ MBEDTLS_MD_MAX_SIZE ] ; for ( i = 0 ; i < mbedtls_md_get_size ( md_info ) ; i ++ ) { mbedtls_printf ( "%02x" , sum [ i ] ) ; } mbedtls_printf ( "  %s\n" , filename ) ; return ( 0 ) ; } 

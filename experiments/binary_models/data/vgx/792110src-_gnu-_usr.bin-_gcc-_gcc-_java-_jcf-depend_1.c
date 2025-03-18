@@ -1,0 +1,1 @@
+jcf_dependency_write ( ) { if ( ! dep_out ) { return ; } deps_write ( dependencies , dep_out , 72 ) ; if ( print_dummies ) { deps_phony_targets ( dependencies , dep_out ) ; } fflush ( dep_out ) ; } 

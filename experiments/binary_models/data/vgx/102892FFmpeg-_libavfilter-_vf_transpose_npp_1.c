@@ -1,0 +1,1 @@
+static int npptranspose_init ( AVFilterContext * ctx ) { NPPTransposeContext * s = ctx -> priv ; int i ; for ( i = 0 ; i < FF_ARRAY_ELEMS ( s -> stages ) ; i ++ ) { s -> stages [ i ] . frame = av_frame_alloc ( ) ; if ( ! s -> stages [ i ] . frame ) { return AVERROR ( ENOMEM ) ; } } s -> tmp_frame = av_frame_alloc ( ) ; return 0 ; } 

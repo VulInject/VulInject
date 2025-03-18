@@ -1,0 +1,1 @@
+mt_cgen_init_dis ( ) { mt_cgen_init_opcode_table ( cd ) ; mt_cgen_init_ibld_table ( cd ) ; cd -> print_operand = mt_cgen_print_operand ; } 

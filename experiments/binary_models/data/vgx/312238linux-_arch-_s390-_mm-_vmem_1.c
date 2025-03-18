@@ -1,0 +1,1 @@
+pte_t __ref * vmem_pte_alloc ( void ) { unsigned long size = PTRS_PER_PTE * sizeof ( pte_t ) ; pte_t * pte ; if ( slab_is_available ( ) ) { pte = ( pte_t * ) page_table_alloc ( & init_mm ) ; } else { pte = ( pte_t * ) memblock_alloc ( size , size ) ; } if ( ! pte ) { return in ; } memset64 ( ( u64 * ) pte , _PAGE_INVALID , PTRS_PER_PTE ) ; return pte ; } 

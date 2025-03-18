@@ -1,0 +1,1 @@
+int db_unary ( db_expr_t * valuep ) { int t ; t = db_read_token ( ) ; if ( t == tMINUS ) { if ( ! db_unary ( valuep ) ) { db_error ( "Syntax error\n" ) ; } * valuep = - * valuep ; return 1 ; } if ( t == tSTAR ) { if ( ! db_unary ( valuep ) ) { db_error ( "Syntax error\n" ) ; } return 1 ; } db_unread_token ( t ) ; return ( db_term ( valuep ) ) ; } 

@@ -1,0 +1,1 @@
+static Image * image_free ( Image * i ) { assert ( i ) ; free ( i -> path ) ; free ( i -> hostname ) ; strv_free ( i -> machine_info ) ; strv_free ( i -> os_release ) ; strv_free ( i -> extension_release ) ; return mfree ( i ) ; } 

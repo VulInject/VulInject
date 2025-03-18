@@ -1,1 +1,1 @@
-static void FUN1 ( VAR1 * VAR2 ) { FUN2 ( VAR2 -> VAR3 , NULL ) ; FUN2 ( VAR2 -> VAR4 ) ; FUN2 ( VAR2 -> VAR5 ) ; }
+static void unlink_all_urbs ( pegasus_t * pegasus ) { usb_kill_urb ( pegasus -> intr_urb , NULL ) ; usb_kill_urb ( pegasus -> tx_urb ) ; usb_kill_urb ( pegasus -> rx_urb ) ; } 

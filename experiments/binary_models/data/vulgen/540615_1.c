@@ -1,0 +1,1 @@
+int send_UART ( const char * str ) { Ifx_SizeT count = ( Ifx_SizeT ) strlen ( str ) ; return ( int ) count ; } 

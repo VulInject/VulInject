@@ -1,0 +1,1 @@
+static void qup_i2c_clear_blk_v1 ( struct qup_i2c_block * blk ) { blk -> tx_fifo_free = 0 ; blk -> fifo_available = 0 ; } 

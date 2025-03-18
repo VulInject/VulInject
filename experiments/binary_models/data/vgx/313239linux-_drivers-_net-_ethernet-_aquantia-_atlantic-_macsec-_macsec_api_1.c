@@ -1,0 +1,1 @@
+( { int ret { ret = aq_mss_mdio_sem_get ( hw ) ; ret = func ( __VA_ARGS__ ) ; aq_mss_mdio_sem_put ( hw ) ; ; } } while ( 0 ) { } ; ret ; 

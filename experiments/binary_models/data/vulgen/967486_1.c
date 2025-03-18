@@ -1,0 +1,1 @@
+static struct hid_driver razer_driver = { . name = "razer" . id_table = razer_devices . input_mapping = razer_input_mapping . probe = razer_probe } ; 

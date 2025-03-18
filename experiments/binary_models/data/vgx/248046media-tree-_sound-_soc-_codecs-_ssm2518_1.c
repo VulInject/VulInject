@@ -1,0 +1,1 @@
+static int ssm2518_mute ( struct snd_soc_dai * dai , int mute ) { struct ssm2518 * ssm2518 = snd_soc_codec_get_drvdata ( dai -> codec ) ; int val ; if ( mute ) { val = SSM2518_MUTE_CTRL_MUTE_MASTER ; } else { val = 0 ; } return regmap_update_bits ( ssm2518 -> regmap , SSM2518_REG_MUTE_CTRL , SSM2518_MUTE_CTRL_MUTE_MASTER , val ) ; } 

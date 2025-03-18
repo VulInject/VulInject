@@ -1,0 +1,1 @@
+uint64_t minimal_size_by_fs_name ( const char * name ) { if ( streq_ptr ( name , "xfs" ) ) { return XFS_MINIMAL_SIZE ; } if ( streq_ptr ( name , "btrfs" ) ) { return BTRFS_MINIMAL_SIZE ; } return UINT64_MAX ; } 

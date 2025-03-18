@@ -1,0 +1,1 @@
+int undef ( wchar_t * nam ) { struct nlist * np , * tnp ; if ( ( np = lookup ( nam ) ) -> name == NULL ) { return ( 0 ) ; } tnp = hshtab [ hshval ] ; if ( tnp == np ) { hshtab [ hshval ] = tnp -> next ; } else { while ( tnp -> next != np ) { tnp = tnp -> next ; } tnp -> next = np -> next ; } free ( np -> def ) ; free ( np ) ; return ( 1 ) ; } 

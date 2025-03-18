@@ -1,0 +1,1 @@
+int mailimf_mailbox_list_write_file ( FILE * f , int * col , struct mailimf_mailbox_list * mb_list ) { return mailimf_mailbox_list_write_driver ( do_write , f , col , mb_list ) ; } 

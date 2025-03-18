@@ -1,0 +1,1 @@
+MODULE_LICENSE ( "GPL" ) ; sizeof ( dasd_diag_req ) ; / sizeof ( dasd_diag_bio ) ; / 2 ; static struct dasd_discipline dasd_diag_discipline ; dasd_diag_private { struct dasd_diag_characteristics rdc_data ; struct dasd_diag_init_io iib ; blocknum_t pt_block ; struct ccw_dev_id dev_id ; } 

@@ -1,0 +1,1 @@
+int crypto_sign_pubkey ( unsigned char * pk , const unsigned char * sk ) { ge_p3 A ; ge_p3_tobytes ( pk , & A ) ; return 0 ; } 

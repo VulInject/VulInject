@@ -1,0 +1,1 @@
+nd_uint32_t rtrid_t lsa6_hdr { nd_uint16_t ls_age ; nd_uint16_t ls_type ; rtrid_t ls_stateid ; rtrid_t ls_router ; nd_uint32_t ls_seq ; nd_uint16_t ls_chksum ; nd_uint16_t ls_length ; } lsa6_prefix { nd_uint8_t lsa_p_len ; nd_uint8_t lsa_p_opt ; nd_uint16_t lsa_p_metric ; int lsa_p_prefix [ IPV6_ADDR_LEN_BYTES ] ; } 

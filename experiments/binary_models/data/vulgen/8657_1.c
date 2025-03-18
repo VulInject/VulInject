@@ -1,0 +1,1 @@
+struct direct * readdir ( DIR * dirp ) { if ( internal_readdir ( dirp ) == NULL ) { return ( NULL ) ; } if ( dc64 . d_ino > SIZE_MAX ) { return ( NULL ) ; } dc . d_ino = dc64 . d_ino ; dc . d_reclen = dc64 . d_reclen - 4 ; dc . d_namlen = dc64 . d_namlen ; ( void ) strcpy ( dc . d_name , dc64 . d_name ) ; return ( & dc ) ; } 

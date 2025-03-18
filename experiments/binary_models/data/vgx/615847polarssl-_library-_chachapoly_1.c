@@ -1,0 +1,1 @@
+int mbedtls_chachapoly_update_aad ( mbedtls_chachapoly_context * ctx , const unsigned char * aad , size_t aad_len ) { ctx -> aad_len += aad_len ; return mbedtls_poly1305_update ( & ctx -> poly1305_ctx , aad , aad_len ) ; } 

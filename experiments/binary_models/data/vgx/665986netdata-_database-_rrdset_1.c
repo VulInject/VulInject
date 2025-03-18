@@ -1,0 +1,1 @@
+time_t rrdset_first_entry_s_of_tier ( RRDSET * st , size_t tier ) { RRDDIM * rd ; time_t first_entry_s = LONG_MAX ; rrddim_foreach_read ( , ) { time_t t = rrddim_first_entry_s_of_tier ( rd , tier ) ; if ( t && t < first_entry_s ) { first_entry_s = t ; } } rrddim_foreach_done ( rd ) ; if ( unlikely ( LONG_MAX == first_entry_s ) ) { return 0 ; } return first_entry_s ; } 

@@ -1,0 +1,1 @@
+unsigned int _gen_result ( int ok , const char * func , char * file , unsigned int line , char * test_name , ... ) { va_list ap ; char * c ; int name_is_digits ; } 

@@ -1,0 +1,1 @@
+copy_file ( , ) { char * basename = g_path_get_basename ( source ) ; char * dest = g_build_filename ( target_dir , basename , NULL ) ; gchar * contents ; gsize len ; if ( g_file_get_contents ( source , & contents , & len , NULL ) ) { g_file_set_contents ( dest , contents , len , NULL ) ; } g_free ( basename ) ; g_free ( dest ) ; g_free ( contents ) ; } 

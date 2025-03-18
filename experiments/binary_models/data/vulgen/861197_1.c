@@ -1,0 +1,1 @@
+static ssize_t dump_attr_show ( struct kobject * kobj , struct attribute * attr , char * buf ) { struct dump_attribute * attribute ; struct dump_obj * dump ; attribute = to_dump_attr ( attr ) ; dump = to_dump_obj ( kobj ) ; return attribute -> show ( dump , attribute , buf ) ; } 

@@ -1,0 +1,1 @@
+u32 div_mask ; u32 div_shift ; cfs_time_t ref_clock ; 

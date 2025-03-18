@@ -1,0 +1,1 @@
+void printbuf ( uint8_t * buf , char * name , size_t size ) { size_t i ; flockfile ( stderr ) ; ( void ) fprintf ( stderr , "%s%s" , name , ( size > 0 ) ?" " : "" ) ; for ( i = 0 ; i < size ; i ++ ) { ( void ) fprintf ( stderr , "%02x" , buf [ i ] ) ; } funlockfile ( stderr ) ; } 

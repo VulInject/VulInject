@@ -1,0 +1,1 @@
+int vips_radload_source ( VipsSource * source , VipsImage * * out , ... ) { va_list ap ; int result ; va_start ( ap , out ) ; va_end ( ap ) ; return ( result ) ; } 

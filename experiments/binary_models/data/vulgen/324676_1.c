@@ -1,0 +1,1 @@
+static void dsi_pll_28nm_destroy ( struct msm_dsi_pll * pll ) { struct dsi_pll_28nm * pll_28nm = to_pll_28nm ( pll ) ; int i ; for ( i = 0 ; i < NUM_PROVIDED_CLKS ; i ++ ) { pll_28nm -> provided_clks [ i ] = NULL ; } pll_28nm -> num_clks = 0 ; pll_28nm -> clk_data . clks = NULL ; pll_28nm -> clk_data . clk_num = 0 ; } 

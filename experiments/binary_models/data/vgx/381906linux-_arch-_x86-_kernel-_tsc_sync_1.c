@@ -1,0 +1,1 @@
+bool __init tsc_store_and_check_tsc_adjust ( bool bootcpu ) { struct tsc_adjust * cur = this_cpu_ptr ( & tsc_adjust ) ; s64 bootval ; if ( check_tsc_unstable ( ) ) { return false ; } rdmsrl ( MSR_IA32_TSC_ADJUST , bootval ) ; cur -> bootval = bootval ; cur -> nextcheck = jiffies + HZ ; tsc_sanitize_first_cpu ( cur , bootval , smp_processor_id ( ) , bootcpu ) ; return false ; } 

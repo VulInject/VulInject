@@ -1,0 +1,1 @@
+static zend_bool debrotli_done ( php_http_encoding_stream_t * s ) { return ! BrotliDecoderIsUsed ( s -> ctx ) || BrotliDecoderIsFinished ( ) ; } 

@@ -1,0 +1,1 @@
+static int read_vbt_r0 ( u32 addr , struct vbt_r0 * vbt ) { void __iomem * vbt_virtual ; vbt_virtual = ioremap ( addr , sizeof ( * vbt ) ) ; memcpy_fromio ( vbt , vbt_virtual , sizeof ( * vbt ) ) ; iounmap ( vbt_virtual ) ; return 0 ; } 

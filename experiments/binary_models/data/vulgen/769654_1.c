@@ -1,0 +1,1 @@
+bool address_in_subnet ( const ip_address l , const ip_subnet r ) { const struct ip_info * afi = address_type ( & l ) ; if ( subnet_type ( & r ) != afi ) { return false ; } struct ip_bytes lb = ip_bytes_blit ( afi , l . bytes , & keep_routing_prefix , & clear_host_identifier , r . maskbits ) ; return thingeq ( lb , r . bytes ) ; } 

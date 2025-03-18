@@ -1,0 +1,1 @@
+R_API void r_config_free ( RConfig * cfg ) { if ( R_LIKELY ( cfg ) ) { cfg -> nodes -> free = r_config_node_free ; ht_pp_free ( cfg -> ht ) ; free ( cfg ) ; } } 

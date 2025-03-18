@@ -1,0 +1,1 @@
+void helper_rfe ( CPUCRISState * env ) { int rflag = env -> pregs [ PR_CCS ] & R_FLAG ; D_LOG ( "rfe: erp=%x pid=%x ccs=%x btarget=%x\n" , env -> pregs [ PR_ERP ] , env -> pregs [ PR_PID ] , env -> pregs [ PR_CCS ] , env -> btarget ) ; if ( ! rflag ) { env -> pregs [ PR_CCS ] |= P_FLAG ; } } 

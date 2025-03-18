@@ -1,0 +1,1 @@
+static int sst_byt_pcm_dev_resume_early ( struct device * dev ) { struct sst_pdata * sst_pdata = dev_get_platdata ( dev ) ; int ret ; dev_dbg ( dev , "resume early\n" ) ; ret = sst_byt_dsp_boot ( dev , sst_pdata ) ; return sst_byt_dsp_wait_for_ready ( dev , sst_pdata ) ; } 

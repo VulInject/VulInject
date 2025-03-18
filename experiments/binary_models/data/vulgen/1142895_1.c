@@ -1,0 +1,1 @@
+void __init kernfs_init ( void ) { kernfs_node_cache = kmem_cache_create ( "kernfs_node_cache" , sizeof ( kernfs_node ) , 0 , SLAB_PANIC , NULL ) ; kernfs_iattrs_cache = kmem_cache_create ( "kernfs_iattrs_cache" , sizeof ( kernfs_iattrs ) , 0 , SLAB_PANIC , NULL ) ; } 

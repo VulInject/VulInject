@@ -1,0 +1,1 @@
+static void print_r ( mrb_state * mrb , const mrb_irep * irep , size_t n , FILE * out ) { if ( n >= irep -> nlocals ) { return ; } if ( ! irep -> lv [ n - 1 ] ) { return ; } fprintf ( out , " R%d:%s" , ( int ) n , mrb_sym_dump ( mrb , irep -> lv [ n - 1 ] ) ) ; } 

@@ -1,0 +1,1 @@
+int trap_R_RegisterShader ( const char * name ) { return syscall ( CG_R_REGISTERSHADER , name ) ; } 

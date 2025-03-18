@@ -1,0 +1,1 @@
+static int sbsm_read_word ( struct i2c_client * client , u8 address ) { int reg , retries ; for ( retries = SBSM_RETRY_CNT ; retries > 0 ; retries -- ) { reg = i2c_smbus_read_word_data ( client , address ) ; } if ( reg < 0 ) { dev_err ( & client -> dev , "failed to read register 0x%02x\n" , address ) ; } return reg ; } 

@@ -1,0 +1,1 @@
+static int ocfs2_sysfs_init ( void ) { int ret ; ocfs2_kset = kset_create_and_add ( "ocfs2" , NULL , fs_kobj ) ; if ( ! ocfs2_kset ) { return - ENOMEM ; } ret = sysfs_create_group ( & ocfs2_kset -> kobj , & ocfs2_attr_group ) ; if ( ret ) { error } return 0 ; error kset_unregister ( ocfs2_kset , NULL ) ; return ret ; } 

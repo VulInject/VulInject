@@ -1,0 +1,1 @@
+static int hdr_get_line ( GetByteContext * gb , uint8_t * buffer , int size ) { int n = 0 , c ; { c = bytestream2_get_byte ( gb ) ; if ( n < size - 1 ) { buffer [ n ++ ] = c ; } } bytestream2_get_bytes_left ( gb ) > 0 && c != '\n' ; return 0 ; } 

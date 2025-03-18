@@ -1,0 +1,1 @@
+void fstyp_mod_fini ( fstyp_mod_handle_t handle ) { struct fstyp_pcfs * h = ( fstyp_pcfs * ) handle ; if ( h -> attr == NULL ) { nvlist_free ( h -> attr ) ; h -> attr = NULL ; } } 

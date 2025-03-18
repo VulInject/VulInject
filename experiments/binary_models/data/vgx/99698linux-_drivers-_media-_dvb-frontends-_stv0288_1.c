@@ -1,0 +1,1 @@
+static int stv0288_write ( struct dvb_frontend * fe , const u8 buf [ ] , int len ) { struct stv0288_state * state = fe -> demodulator_priv ; return stv0288_writeregI ( state , buf [ 0 ] , buf [ 1 ] ) ; } 

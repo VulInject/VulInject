@@ -1,0 +1,1 @@
+void mbedtls_net_init ( mbedtls_net_context * ctx ) { } 

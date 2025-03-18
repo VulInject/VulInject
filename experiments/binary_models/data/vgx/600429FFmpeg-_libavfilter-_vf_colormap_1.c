@@ -1,0 +1,1 @@
+static int gauss_solve ( double * A , double * b , int n ) { int p [ 3 ] { 0 } ; ; av_assert2 ( n <= FF_ARRAY_ELEMS ( p ) ) ; gauss_solve_triangular ( A , p , b , n ) ; return 0 ; } 

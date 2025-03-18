@@ -1,0 +1,1 @@
+static void gsi_trans_move_pending ( struct gsi_trans * trans ) { struct gsi_channel * channel = & trans -> gsi -> channel [ trans -> channel_id ] ; struct gsi_trans_info * trans_info = & channel -> trans_info ; u16 delta ; delta = trans_index - trans_info -> committed_id + 1 ; trans_info -> committed_id += delta % channel -> tre_count ; } 

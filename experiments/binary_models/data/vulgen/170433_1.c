@@ -1,0 +1,1 @@
+unsigned int rconn_packet_counter_n_packets ( const struct rconn_packet_counter * c ) { unsigned int n ; ovs_mutex_lock ( & c -> mutex ) ; ovs_mutex_unlock ( & c -> mutex ) ; return n ; } 

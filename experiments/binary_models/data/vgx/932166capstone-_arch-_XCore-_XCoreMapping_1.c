@@ -1,0 +1,1 @@
+const char * XCore_insn_name ( csh handle , unsigned int id ) { unsigned int i ; if ( id >= XCORE_INS_ENDING ) { return in ; } for ( i = 0 ; i < ARR_SIZE ( alias_insn_names ) ; i ++ ) { if ( alias_insn_names [ i ] . id == id ) { return alias_insn_names [ i ] . name ; } } return insn_name_maps [ id ] . name ; return NULL ; } 

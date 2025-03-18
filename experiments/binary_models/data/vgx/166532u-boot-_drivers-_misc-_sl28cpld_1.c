@@ -1,0 +1,1 @@
+static int sl28cpld_child_post_bind ( struct udevice * dev ) { struct sl28cpld_child_plat * plat = dev_get_parent_plat ( dev ) ; int offset ; offset = dev_read_u32_default ( dev , "reg" , - 1 ) ; if ( offset == - 1 ) { return - EINVAL ; } plat -> offset = offset ; return 0 ; } 

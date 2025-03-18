@@ -1,0 +1,1 @@
+static bool rwdt_blacklisted ( struct device * dev ) { const struct soc_device_attribute * attr ; attr = soc_device_match ( rwdt_quirks_match , NULL ) ; if ( attr && setup_max_cpus > ( uintptr_t ) attr -> data ) { dev_info ( dev , "Watchdog blacklisted on %s %s\n" , attr -> soc_id , attr -> revision ) ; return true ; } return false ; } 

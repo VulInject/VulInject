@@ -1,0 +1,1 @@
+int __init aa_alloc_root_ns ( void ) { struct aa_profile * kernel_p ; root_ns = alloc_ns ( NULL , "root" ) ; kernel_p = alloc_unconfined ( "kernel_t" ) ; if ( ! kernel_p ) { destroy_ns ( root_ns ) ; aa_free_ns ( root_ns ) ; return - ENOMEM ; } kernel_t = & kernel_p -> label ; root_ns -> unconfined -> ns = aa_get_ns ( root_ns ) ; return 0 ; } 

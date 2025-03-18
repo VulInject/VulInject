@@ -1,0 +1,1 @@
+static void pnv_core_cpu_unrealize ( PnvCore * pc , PowerPCCPU * cpu ) { PnvCPUState * pnv_cpu = pnv_cpu_state ( cpu ) ; PnvChipClass * pcc = PNV_CHIP_GET_CLASS ( pc -> chip ) ; pcc -> intc_destroy ( pc -> chip , cpu ) ; cpu_remove_sync ( CPU ( cpu ) ) ; cpu -> machine_data = NULL ; object_unparent ( OBJECT ( cpu ) ) ; } 

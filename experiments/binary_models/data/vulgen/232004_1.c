@@ -1,0 +1,1 @@
+static void init_fake_secrets ( void ) { h2h_insert_states ( ) ; } 

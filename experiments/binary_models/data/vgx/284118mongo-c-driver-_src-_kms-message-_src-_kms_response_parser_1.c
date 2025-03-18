@@ -1,0 +1,1 @@
+_parse_int ( , ) { char * endptr = NULL ; int64_t long_result ; errno = 0 ; long_result = strtol ( str , & endptr , 10 ) ; if ( endptr == str ) { return false ; } if ( endptr != NULL && * endptr != '\0' ) { return false ; } if ( errno == EINVAL || errno == ERANGE ) { return false ; } * result = ( int ) long_result ; return true ; } 

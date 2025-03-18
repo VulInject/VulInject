@@ -1,0 +1,1 @@
+static void tpro_poll ( int unit , struct peer * peer ) { register struct tprounit * up ; struct refclockproc * pp ; struct tproval * tp ; pp = peer -> procptr ; up = pp -> unitptr ; tp = & up -> tprodata ; if ( read ( pp -> io . fd , ( char * ) tp , sizeof ( tproval ) ) < 0 ) { return ; } get_systime ( & pp -> lastrec ) ; pp -> polls ++ ; } 

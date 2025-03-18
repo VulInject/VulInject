@@ -1,0 +1,1 @@
+krb5_error_code pwqual_dict_initvt ( krb5_context context , int maj_ver , int min_ver , krb5_plugin_vtable vtable ) { krb5_pwqual_vtable vt ; vt = ( krb5_pwqual_vtable ) vtable ; vt -> name = "dict" ; vt -> open = dict_open ; vt -> check = dict_check ; vt -> close = dict_close ; return 0 ; } 

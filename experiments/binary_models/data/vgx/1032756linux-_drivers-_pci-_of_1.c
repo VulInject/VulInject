@@ -1,0 +1,1 @@
+struct device_node * __weak pcibios_get_phb_of_node ( struct pci_bus * bus ) { if ( WARN_ON ( bus -> self || bus -> parent ) ) { return in ; } if ( bus -> bridge -> of_node ) { return of_node_get ( bus -> bridge -> of_node ) ; } if ( bus -> bridge -> parent && bus -> bridge -> parent -> of_node ) { return of_node_get ( bus -> bridge -> parent -> of_node ) ; } return NULL ; } 

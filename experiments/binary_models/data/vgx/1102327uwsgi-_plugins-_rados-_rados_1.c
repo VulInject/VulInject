@@ -1,0 +1,1 @@
+uwsgi_rados_io { int fds [ 2 ] ; int rid ; pthread_mutex_t mutex ; } 

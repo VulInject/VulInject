@@ -1,0 +1,1 @@
+static struct kfd_mem_obj * allocate_mqd ( struct kfd_dev * kfd , struct queue_properties * q ) { struct kfd_mem_obj * mqd_mem_obj ; if ( kfd_gtt_sa_allocate ( kfd , sizeof ( cik_mqd ) , & mqd_mem_obj ) ) { return in ; } return mqd_mem_obj ; } 

@@ -1,0 +1,1 @@
+long ret = 0 ; int num_subtests = 0 ; int ran_subtests ; bool skip = false ; { __uint ( , ) __uint ( , 1 ) __type ( , ) __type ( , ) } , strdata SEC ( ".maps" ) 

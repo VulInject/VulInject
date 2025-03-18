@@ -1,0 +1,1 @@
+( gb_audio_gb_activate_rx ) ; int gb_audio_gb_deactivate_rx ( struct gb_connection * connection , u16 data_cport ) { struct gb_audio_deactivate_rx_request req ; req . data_cport = cpu_to_le16 ( data_cport , NULL ) ; return gb_operation_sync ( connection , GB_AUDIO_TYPE_DEACTIVATE_RX , & req , sizeof ( req ) , NULL , 0 ) ; } 

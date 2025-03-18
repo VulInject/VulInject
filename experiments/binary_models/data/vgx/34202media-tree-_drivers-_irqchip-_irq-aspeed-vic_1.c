@@ -1,0 +1,1 @@
+static void avic_ack_irq ( struct irq_data * d ) { struct aspeed_vic * vic = irq_data_get_irq_chip_data ( d ) ; unsigned int sidx = d -> hwirq >> 5 ; int sbit = 1u << ( d -> hwirq & 0x1f ) ; if ( vic -> edge_sources [ sidx ] & sbit ) { writel ( sbit , vic -> base + AVIC_EDGE_CLR + sidx * 4 ) ; } } 

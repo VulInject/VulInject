@@ -1,0 +1,1 @@
+void failed_real ( unsigned char * s1 , const char * s2 , unsigned char * s3 ) { failed_body ( s1 , s2 , s3 , 0 ) ; } 

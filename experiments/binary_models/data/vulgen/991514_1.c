@@ -1,0 +1,1 @@
+static void batadv_tt_local_set_pending ( struct batadv_priv * bat_priv , struct batadv_tt_local_entry * tt_local_entry , u16 flags , const char * message ) { batadv_tt_local_event ( bat_priv , tt_local_entry , flags ) ; tt_local_entry -> common . flags |= BATADV_TT_CLIENT_PENDING ; } 

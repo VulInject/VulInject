@@ -1,0 +1,1 @@
+grub_xfs_label ( , ) { struct grub_xfs_data * data ; grub_disk_t disk = device -> disk ; data = grub_xfs_mount ( disk ) ; if ( data ) { * label = grub_strndup ( ( char * ) ( data -> sblock . label ) , 12 ) ; } else { * label = 0 ; } return grub_errno ; } 

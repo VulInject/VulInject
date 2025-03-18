@@ -1,0 +1,1 @@
+static int uart_get_rs485_config ( struct uart_port * port , struct serial_rs485 __user * rs485 ) { unsigned long flags ; struct serial_rs485 aux ; spin_lock_irqsave ( & port -> lock , flags ) ; aux = port -> rs485 ; spin_unlock_irqrestore ( & port -> lock , flags ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static zip_int64_t window_read ( zip_source_t * , void * , void * , zip_uint64_t , zip_source_cmd_t ) zip_source_t * zip_source_window ( zip_t * za , zip_source_t * src , zip_uint64_t start , int len ) { return _zip_source_window_new ( src , start , len , NULL , 0 , NULL , 0 , & za -> error ) ; } 

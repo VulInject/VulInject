@@ -1,0 +1,1 @@
+static void dw_wdt_arm_system_reset ( struct dw_wdt * dw_wdt ) { u32 val = readl ( dw_wdt -> regs + WDOG_CONTROL_REG_OFFSET ) ; if ( dw_wdt -> rmod == DW_WDT_RMOD_IRQ ) { val |= WDOG_CONTROL_REG_RESP_MODE_MASK ; } else { val &= ~ WDOG_CONTROL_REG_RESP_MODE_MASK ; } writel ( val , dw_wdt -> regs + WDOG_CONTROL_REG_OFFSET ) ; } 

@@ -1,0 +1,1 @@
+rtl8365mb_mib_counter { u32 offset ; u32 length ; const char * name ; } 

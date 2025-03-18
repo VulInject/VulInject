@@ -1,0 +1,1 @@
+static void match_is_err ( const char * fn , struct expression * expr , void * unused ) { struct expression * arg ; int arg_num ; arg = get_argument_from_call_expr ( expr -> args , 0 ) ; arg_num = get_arg_num ( arg ) ; sm_msg ( "info: expects ERR_PTR %d" , arg_num ) ; } 

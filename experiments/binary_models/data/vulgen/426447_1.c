@@ -1,0 +1,1 @@
+int cupsdLoadEnv ( char * envp [ ] , int envmax ) { int i ; envmax -- ; for ( i = 0 ; i < num_common_env && i < envmax ; i ++ ) { envp [ i ] = common_env [ i ] ; } return ( i ) ; } 

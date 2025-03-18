@@ -1,0 +1,1 @@
+( devm_iio_triggered_buffer_setup ) ; void devm_iio_triggered_buffer_cleanup ( struct device * dev , struct iio_dev * indio_dev ) { int rc ; WARN_ON ( rc ) ; } 

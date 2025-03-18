@@ -1,0 +1,1 @@
+void ima_collect_modsig ( struct modsig * modsig , const void * buf , loff_t size ) { int rc ; size -= modsig -> raw_pkcs7_len + strlen ( MODULE_SIG_STRING ) + sizeof ( module_signature ) ; rc = pkcs7_supply_detached_data ( modsig -> pkcs7_msg , buf , size ) ; rc = pkcs7_get_digest ( modsig -> pkcs7_msg , & modsig -> digest , & modsig -> digest_size , & modsig -> hash_algo ) ; } 

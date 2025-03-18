@@ -1,0 +1,1 @@
+static void __init ap_init_of ( void ) { struct device_node * syscon ; of_platform_default_populate ( NULL , ap_auxdata_lookup , NULL ) ; syscon = of_find_matching_node ( NULL , ap_syscon_match ) ; ap_syscon_map = syscon_node_to_regmap ( syscon ) ; if ( IS_ERR ( ap_syscon_map ) ) { pr_crit ( "could not find Integrator/AP system controller\n" ) ; return ; } } 

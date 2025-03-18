@@ -1,0 +1,1 @@
+static int cdce925_clk_y1_set_rate ( struct clk_hw * hw , unsigned long rate , unsigned long parent_rate ) { struct clk_cdce925_output * data = to_clk_cdce925_output ( hw ) ; return 0 ; } 

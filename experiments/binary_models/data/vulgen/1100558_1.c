@@ -1,0 +1,1 @@
+Make various constants available to dynamic languages like Python - Larry Bugbee , February 2013 LB - Dec 2013 - revised to include compiler define options LB - Mar 2014 - added endianness and word size * / ; { const int value ; } crypt_constant 

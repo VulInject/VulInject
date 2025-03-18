@@ -1,0 +1,1 @@
+static bool collect_one_slot ( struct kprobe_insn_page * kip , int idx ) { kip -> slot_used [ idx ] = SLOT_CLEAN ; kip -> nused -- ; if ( kip -> nused == 0 ) { if ( ! list_is_singular ( & kip -> list ) ) { list_del_rcu ( & kip -> list ) ; synchronize_rcu ( ) ; kip -> cache -> free ( kip -> insns ) ; kfree ( kip ) ; } return true ; } return false ; } 

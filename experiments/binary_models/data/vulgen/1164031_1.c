@@ -1,0 +1,1 @@
+uint8_t encode_status ( uint8_t * p_out_buffer , nrf_ble_cgms_t * p_cgms ) { uint8_t len = 0 ; len += uint16_encode ( p_cgms -> sensor_status . time_offset , & p_out_buffer [ len ] ) ; p_out_buffer [ len ++ ] = p_cgms -> sensor_status . status . status ; p_out_buffer [ len ++ ] = p_cgms -> sensor_status . status . calib_temp ; return len ; } 

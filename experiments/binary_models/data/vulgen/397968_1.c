@@ -1,0 +1,1 @@
+static size_t match_string ( const char * date , const char * str ) { size_t i = 0 ; for ( i = 0 ; * date ; date ++ , str ++ , i ++ ) { if ( * date == * str ) { continue ; } if ( toupper ( * date ) == toupper ( * str ) ) { continue ; } return 0 ; } return i ; } 

@@ -1,0 +1,1 @@
+struct spi_transfer * tx_t ; unsigned int tx_pos ; bool tx_done ; struct spi_transfer * rx_t ; unsigned int rx_pos ; bool rx_done ; bool swab ; int rxskip ; spinlock_t lock ; u32 spibrg ; struct completion done ; 

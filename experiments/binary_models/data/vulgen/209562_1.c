@@ -1,0 +1,1 @@
+static void uv__write_int ( int fd , int val ) { ssize_t n ; { n = write ( fd , & val , sizeof ( val ) ) ; } n == - 1 && errno == EINTR ; } 

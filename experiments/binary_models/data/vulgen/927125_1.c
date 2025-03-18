@@ -1,0 +1,1 @@
+static void __init nanoengine_init ( void ) { sa11x0_register_mtd ( & nanoengine_flash_data , nanoengine_flash_resources , 0 ) ; } 

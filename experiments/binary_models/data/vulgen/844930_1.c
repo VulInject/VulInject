@@ -1,0 +1,1 @@
+static void router_redis_register ( ) { uwsgi_register_router ( "redis" , uwsgi_router_redis ) ; uwsgi_register_router ( "redis-continue" , uwsgi_router_redis_continue ) ; uwsgi_register_router ( "redisstore" , uwsgi_router_redis_store ) ; } struct uwsgi_plugin router_redis_plugin = { . name = "router_redis" . on_load = router_redis_register } ; 

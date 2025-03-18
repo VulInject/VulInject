@@ -1,0 +1,1 @@
+GptPartitionType gpt_partition_type_from_uuid ( sd_id128_t id ) { const GptPartitionType * pt ; pt = gpt_partition_type_find_by_uuid ( id ) ; return ( GptPartitionType ) { . uuid = id . arch = _ARCHITECTURE_INVALID . designator = _PARTITION_DESIGNATOR_INVALID } ; } 

@@ -1,0 +1,1 @@
+reinit_search_statistics ( ) { n_fields_searched = 0 ; n_calls_lookup_field = 0 , n_calls_lookup_field_1 = 0 ; n_calls_lookup_fnfields = 0 , n_calls_lookup_fnfields_1 = 0 ; n_calls_get_base_type = 0 ; n_contexts_saved = 0 ; } 

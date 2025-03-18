@@ -1,0 +1,1 @@
+static int univ8250_setup_irq ( struct uart_8250_port * up ) { struct uart_port * port = & up -> port ; return 0 ; } 

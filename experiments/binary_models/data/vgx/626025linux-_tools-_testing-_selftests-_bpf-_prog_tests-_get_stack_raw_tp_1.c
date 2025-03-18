@@ -1,0 +1,1 @@
+static int duration = 0 ; get_stack_trace_t { int pid ; int kern_stack_size ; int user_stack_size ; int user_stack_buildid_size ; __u64 kern_stack [ MAX_STACK_RAWTP ] ; __u64 user_stack [ MAX_STACK_RAWTP ] ; int user_stack_buildid [ MAX_STACK_RAWTP ] ; } 

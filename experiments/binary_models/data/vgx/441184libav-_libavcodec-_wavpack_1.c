@@ -1,0 +1,1 @@
+static av_always_inline int get_tail ( BitstreamContext * bc , int k ) { int p , e , res ; p = av_log2 ( k ) ; e = ( 1 << ( p + 1 ) ) - k - 1 ; res = bitstream_read ( bc , p ) ; if ( res >= e ) { res = ( res << 1 ) - e + bitstream_read_bit ( bc ) ; } return res ; } 

@@ -1,0 +1,1 @@
+static void flow_cache_clear ( flow_hash_table_t * fht ) { flow_hash_entry_t * fhe ; flow_hash_entry_t * fhe_next = NULL ; size_t i ; for ( i = 0 ; i < fht -> num_buckets ; i ++ ) { if ( ( fhe = fht -> buckets [ i ] ) != NULL ) { while ( fhe ) { fhe_next = fhe -> next ; safe_free ( fhe ) ; fhe = fhe_next ; } fht -> buckets [ i ] = NULL ; } } } 

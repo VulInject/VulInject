@@ -1,0 +1,1 @@
+MagickExport double GetElapsedTime ( TimerInfo * time_info ) { assert ( time_info != ( TimerInfo * ) NULL ) ; assert ( time_info -> signature == MagickCoreSignature ) ; if ( time_info -> state == RunningTimerState ) { StopTimer ( time_info ) ; } return ( time_info -> elapsed . total ) ; } 

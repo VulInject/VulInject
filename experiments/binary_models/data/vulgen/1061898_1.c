@@ -1,0 +1,1 @@
+static void siena_rx_qdestroy ( __in efx_rxq_t * erp ) { efx_nic_t * enp = erp -> er_enp ; efx_oword_t oword ; EFSYS_ASSERT ( enp -> en_rx_qcount != 0 ) ; -- enp -> en_rx_qcount ; EFX_ZERO_OWORD ( oword ) ; EFX_BAR_TBL_WRITEO ( enp , FR_AZ_RX_DESC_PTR_TBL , erp -> er_index , & oword , B_TRUE ) ; } 

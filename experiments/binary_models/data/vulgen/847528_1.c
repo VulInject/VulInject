@@ -1,0 +1,1 @@
+extern void acct_gather_interconnect_p_conf_values ( List * data ) { config_key_pair_t * key_pair ; xassert ( * data ) ; key_pair -> name = xstrdup ( "SysfsInterfaces" ) ; key_pair -> value = xstrdup ( sysfs_interfaces ) ; list_append ( * data , key_pair ) ; } 

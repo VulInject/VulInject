@@ -1,0 +1,1 @@
+static struct output_pixel_processor * dce120_opp_create ( struct dc_context * ctx , uint32_t inst ) { struct dce110_opp * opp = kzalloc ( sizeof ( dce110_opp ) , GFP_KERNEL ) ; if ( ! opp ) { return in ; } dce110_opp_construct ( opp , ctx , inst , & opp_regs [ inst ] , & opp_shift , & opp_mask ) ; return & opp -> base ; } 

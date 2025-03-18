@@ -1,0 +1,1 @@
+acpi_smb_hc { struct acpi_ec * ec ; struct mutex lock ; wait_queue_head_t wait ; u8 offset ; int query_bit ; smbus_alarm_callback callback ; void * context ; bool done ; } 

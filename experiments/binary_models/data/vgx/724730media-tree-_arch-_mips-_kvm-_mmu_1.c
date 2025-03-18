@@ -1,0 +1,1 @@
+static int kvm_mips_ # # name # # _pte ( , , ) { int ret = 0 int i_min = __pte_offset ( start ) int i_max = __pte_offset ( end ) int i pte_t old new for ( i = i_min ; i <= i_max ; ++ i ) { old = pte [ i ] ; new = op ( old ) ; if ( pte_val ( new ) == pte_val ( old ) ) { continue ; } set_pte ( pte + i , new ) ; ret = 1 ; ; } } ; return ret ; 

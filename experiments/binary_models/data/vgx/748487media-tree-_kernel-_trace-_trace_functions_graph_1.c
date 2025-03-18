@@ -1,0 +1,1 @@
+static int graph_trace_update_thresh ( struct trace_array * tr ) { graph_trace_reset ( tr , NULL ) ; return graph_trace_init ( tr ) ; } 

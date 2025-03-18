@@ -1,0 +1,1 @@
+int main ( int argc , char * * argv ) { if ( argc != 2 ) { return ( 1 ) ; } LIBXML_TEST_VERSION desc = fopen ( argv [ 1 ] , "rb" ) ; if ( desc != NULL ) { example4Func ( argv [ 1 ] ) ; fclose ( desc , NULL ) ; } else { fprintf ( stderr , "Failed to parse %s\n" , argv [ 1 ] ) ; } xmlCleanupParser ( ) ; xmlMemoryDump ( ) ; return ( 0 ) ; } 

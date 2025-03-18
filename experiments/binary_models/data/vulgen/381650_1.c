@@ -1,0 +1,1 @@
+void kvm_arm_gic_set_irq ( uint32_t num_irq , int irq , int level ) { int irqtype , cpu ; if ( irq < ( num_irq - GIC_INTERNAL ) ) { irqtype = KVM_ARM_IRQ_TYPE_SPI ; cpu = 0 ; irq += GIC_INTERNAL ; } else { irqtype = KVM_ARM_IRQ_TYPE_PPI ; irq -= ( num_irq - GIC_INTERNAL ) ; cpu = irq / GIC_INTERNAL ; irq %= GIC_INTERNAL ; } } 

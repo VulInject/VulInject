@@ -1,0 +1,1 @@
+int LuaCallbackError ( lua_State * luastate , const char * msg ) { lua_pushnil ( luastate ) ; return 2 ; } 

@@ -1,0 +1,1 @@
+bool dcn20_wait_for_blank_complete ( struct output_pixel_processor * opp ) { int counter ; for ( counter = 0 ; counter < 1000 ; counter ++ ) { if ( opp -> funcs -> dpg_is_blanked ( opp ) ) { break ; } udelay ( 100 ) ; } return true ; } 

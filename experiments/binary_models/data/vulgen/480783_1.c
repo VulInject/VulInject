@@ -1,0 +1,1 @@
+const AVFilter ff_af_anull = { . name = "anull" . description = NULL_IF_CONFIG_SMALL ( ) . flags = AVFILTER_FLAG_METADATA_ONLY FILTER_INPUTS ( avfilter_af_anull_inputs ) FILTER_OUTPUTS ( avfilter_af_anull_outputs ) } ; 

@@ -1,0 +1,1 @@
+static void delete_command_destruct ( Command_t * parent ) static CmdExecuteValue_t delete_command_execute ( Command_t * parent ) static void delete_command_undo ( Command_t * parent ) 

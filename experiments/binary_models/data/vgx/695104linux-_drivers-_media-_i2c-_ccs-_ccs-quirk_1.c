@@ -1,0 +1,1 @@
+static int jt8ev1_init ( struct ccs_sensor * sensor ) { sensor -> pll . flags |= CCS_PLL_FLAG_LANE_SPEED_MODEL | CCS_PLL_FLAG_LINK_DECOUPLED ; sensor -> pll . op_lanes = sensor -> pll . csi2 . lanes ; return 0 ; } 

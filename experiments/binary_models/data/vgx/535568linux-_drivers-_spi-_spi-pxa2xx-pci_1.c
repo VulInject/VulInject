@@ -1,0 +1,1 @@
+static int pxa2xx_spi_pci_clk_register ( struct pci_dev * dev , struct ssp_device * ssp , unsigned long rate ) { char buf [ 40 ] ; snprintf ( buf , sizeof ( buf ) , "pxa2xx-spi.%d" , ssp -> port_id ) ; ssp -> clk = clk_register_fixed_rate ( & dev -> dev , buf , NULL , 0 , rate ) ; return devm_add_action_or_reset ( & dev -> dev , pxa2xx_spi_pci_clk_unregister , ssp -> clk ) ; } 

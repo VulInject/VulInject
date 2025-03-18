@@ -1,0 +1,1 @@
+static krb5_boolean is_printable_string ( const krb5_data * data ) { unsigned int i ; for ( i = 0 ; i < data -> length ; i ++ ) { if ( ! isprint ( ( unsigned char ) data -> data [ i ] ) ) { return FALSE ; } } return TRUE ; } 

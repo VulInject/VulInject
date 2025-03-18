@@ -1,0 +1,1 @@
+static int sirfsoc_wdt_settimeout ( struct watchdog_device * wdd , unsigned int to ) { wdd -> timeout = to ; return 0 ; } static const struct watchdog_info sirfsoc_wdt_ident = { . options = OPTIONS . firmware_version = 0 . identity = "SiRFSOC Watchdog" } ; 

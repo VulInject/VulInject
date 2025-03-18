@@ -1,0 +1,1 @@
+static int cpt_set_ucode_base ( struct otx2_cpt_eng_grp_info * eng_grp , void * obj ) { struct otx2_cptpf_dev * cptpf = obj ; int ret ; if ( cptpf -> has_cpt1 ) { ret = cptx_set_ucode_base ( eng_grp , cptpf , BLKADDR_CPT1 ) ; } return cptx_set_ucode_base ( eng_grp , cptpf , BLKADDR_CPT0 ) ; } 

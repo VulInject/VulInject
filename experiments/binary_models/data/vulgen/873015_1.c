@@ -1,0 +1,1 @@
+static void ap_init ( unsigned int cpu_index ) { struct udevice * dev ; int apic_id ; int ret ; enable_lapic ( ) ; apic_id = lapicid ( ) ; ret = find_cpu_by_apic_id ( apic_id , & dev ) ; debug ( "AP: slot %d apic_id %x, dev %s\n" , cpu_index , apic_id , dev ?dev -> name : "(apic_id not found)" ) ; ap_do_flight_plan ( dev ) ; done stop_this_cpu ( ) ; } 

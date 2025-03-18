@@ -1,0 +1,1 @@
+static int do_bcb_clear ( struct cmd_tbl * cmdtp , int flag , int argc , char * const argv [ ] ) { int size ; char * field ; if ( argc == 1 ) { return CMD_RET_SUCCESS ; } if ( bcb_field_get ( argv [ 1 ] , & field , & size ) ) { return CMD_RET_FAILURE ; } memset ( field , 0 , size ) ; return CMD_RET_SUCCESS ; } 

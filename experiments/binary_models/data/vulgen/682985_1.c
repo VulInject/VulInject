@@ -1,0 +1,1 @@
+void dcss_scaler_exit ( struct dcss_scaler * scl ) { int ch_no ; for ( ch_no = 0 ; ch_no < 3 ; ch_no ++ ) { struct dcss_scaler_ch * ch = & scl -> ch [ ch_no ] ; dcss_writel ( 0 , ch -> base_reg + DCSS_SCALER_CTRL ) ; if ( ch -> base_reg ) { iounmap ( ch -> base_reg ) ; } } } 

@@ -1,0 +1,1 @@
+static void sysc_clkdm_deny_idle ( struct sysc * ddata ) { struct ti_sysc_platform_data * pdata ; pdata = dev_get_platdata ( ddata -> dev ) ; if ( pdata && pdata -> clkdm_deny_idle ) { pdata -> clkdm_deny_idle ( ddata -> dev , & ddata -> cookie ) ; } } 

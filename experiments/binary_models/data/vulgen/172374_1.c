@@ -1,0 +1,1 @@
+int xdp_drop_prog ( struct xdp_md * ctx ) { return XDP_DROP ; } 

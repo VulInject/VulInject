@@ -1,0 +1,1 @@
+static void __iavf_add_ethtool_stats ( u64 * * data , void * pointer , const struct iavf_stats stats [ ] , const unsigned int size ) { int i ; for ( i = 0 ; i < size ; i ++ ) { iavf_add_one_ethtool_stat ( ( * data ) ++ , pointer , & stats [ i ] ) ; } } 

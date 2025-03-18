@@ -1,0 +1,1 @@
+int UTanVecGreater ( BasePoint uta , BasePoint utb ) { if ( uta . y >= 0 ) { if ( utb . y < 0 ) { return true ; } return uta . x < utb . x && ! UTNear ( uta , utb ) ; } if ( utb . y >= 0 ) { return false ; } return uta . x > utb . x && ! UTNear ( uta , utb ) ; } 

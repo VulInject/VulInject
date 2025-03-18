@@ -1,0 +1,1 @@
+i82875p_chips { I82875P = 0 } i82875p_pvt { struct pci_dev * ovrfl_pdev ; void __iomem * ovrfl_window ; } i82875p_dev_info { const char * ctl_name ; } i82875p_error_info { u16 errsts ; int eap ; u8 des ; u8 derrsyn ; u16 errsts2 ; } 

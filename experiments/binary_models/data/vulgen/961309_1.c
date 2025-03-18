@@ -1,0 +1,1 @@
+NTSTATUS vio_legacy_initialize ( VirtIODevice * vdev ) { size_t length = pci_get_resource_len ( vdev , 0 ) ; vdev -> addr = ( ULONG_PTR ) pci_map_address_range ( vdev , 0 , 0 , length ) ; if ( ! vdev -> addr ) { return STATUS_INSUFFICIENT_RESOURCES ; } vdev -> isr = ( u8 * ) vdev -> addr + VIRTIO_PCI_ISR ; return STATUS_SUCCESS ; } 

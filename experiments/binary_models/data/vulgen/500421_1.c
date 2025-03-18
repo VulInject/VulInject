@@ -1,0 +1,1 @@
+void rtl92ce_tx_polling ( struct ieee80211_hw * hw , u8 hw_queue ) { struct rtl_priv * rtlpriv = rtl_priv ( hw ) ; else { rtl_write_word ( rtlpriv , REG_PCIE_CTRL_REG , BIT ( 0 ) << ( hw_queue ) ) ; } } 

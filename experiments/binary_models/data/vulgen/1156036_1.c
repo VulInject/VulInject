@@ -1,0 +1,1 @@
+DEFUN ( , , "spf-interval<1-120>" , "Minimum interval between SPF calculations\n" "Minimum interval between consecutive SPFs in seconds\n" ) { struct isis_area * area ; area = vty -> index ; interval = atoi ( argv [ 0 ] ) ; area -> min_spf_interval [ 0 ] = interval ; area -> min_spf_interval [ 1 ] = interval ; return CMD_SUCCESS ; } 

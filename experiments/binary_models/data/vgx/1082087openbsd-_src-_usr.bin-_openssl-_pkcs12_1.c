@@ -1,0 +1,1 @@
+static int pkcs12_opt_canames ( char * arg ) { if ( pkcs12_config . canames == NULL && ( pkcs12_config . canames = sk_OPENSSL_STRING_new_null ( ) ) == NULL ) { return ( 1 ) ; } return ( 0 ) ; } 

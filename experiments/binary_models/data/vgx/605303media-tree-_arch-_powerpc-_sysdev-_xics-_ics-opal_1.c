@@ -1,0 +1,1 @@
+static unsigned int ics_opal_startup ( struct irq_data * d ) { if ( irq_data_get_msi_desc ( d ) ) { pci_msi_unmask_irq ( d ) ; } ics_opal_unmask_irq ( d , NULL ) ; return 0 ; } 

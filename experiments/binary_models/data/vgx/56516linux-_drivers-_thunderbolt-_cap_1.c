@@ -1,0 +1,1 @@
+int tb_switch_find_cap ( struct tb_switch * sw , enum tb_switch_cap cap ) { int offset = 0 ; { struct tb_cap_any header ; int ret ; offset = tb_switch_next_cap ( sw , offset ) ; ret = tb_sw_read ( sw , & header , TB_CFG_SWITCH , offset , 1 ) ; if ( ret ) { return ret ; } if ( header . basic . cap == cap ) { return offset ; } } offset ; return - ENOENT ; } 

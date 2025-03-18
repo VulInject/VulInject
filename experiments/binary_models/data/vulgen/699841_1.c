@@ -1,0 +1,1 @@
+( mlx4_mr_free ) ; void mlx4_mr_rereg_mem_cleanup ( struct mlx4_dev * dev , struct mlx4_mr * mr ) { mr -> mtt . order = - 1 ; } 

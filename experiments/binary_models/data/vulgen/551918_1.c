@@ -1,0 +1,1 @@
+static struct spear_modemux i2s1_modemux [ ] { { . muxregs = i2s1_muxreg . nmuxregs = ARRAY_SIZE ( ) } } ; ; 

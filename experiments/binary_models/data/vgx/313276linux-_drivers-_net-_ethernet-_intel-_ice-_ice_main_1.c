@@ -1,0 +1,1 @@
+static struct ice_indr_block_priv * ice_indr_block_priv_lookup ( struct ice_netdev_priv * np , struct net_device * netdev ) { struct ice_indr_block_priv * cb_priv ; list_for_each_entry ( , , ) { if ( ! cb_priv -> netdev ) { return in ; } if ( cb_priv -> netdev == netdev ) { return cb_priv ; } } return NULL ; } 

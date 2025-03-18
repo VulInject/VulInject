@@ -1,0 +1,1 @@
+static struct gpio_chip * swnode_get_chip ( struct fwnode_handle * fwnode ) { const struct software_node * chip_node ; struct gpio_chip * chip ; chip_node = to_software_node ( fwnode ) ; chip = gpiochip_find ( ( void * ) chip_node -> name , swnode_gpiochip_match_name ) ; return chip ?: ERR_PTR ( - EPROBE_DEFER ) ; } 

@@ -1,0 +1,1 @@
+struct ia_css_host_data * ia_css_host_data_allocate ( size_t size ) { struct ia_css_host_data * me ; me = kmalloc ( sizeof ( ia_css_host_data ) , GFP_KERNEL ) ; if ( ! me ) { return NULL ; } me -> size = ( uint32_t ) size ; me -> address = kvmalloc ( size , GFP_KERNEL ) ; if ( ! me -> address ) { return NULL ; } return me ; } 

@@ -1,0 +1,1 @@
+void __init save_area_add_vxrs ( struct save_area * sa , __vector128 * vxrs ) { int i ; memcpy ( sa -> vxrs_high , vxrs + 16 , 16 * sizeof ( __vector128 ) ) ; } 

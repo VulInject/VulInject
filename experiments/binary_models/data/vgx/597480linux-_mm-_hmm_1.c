@@ -1,0 +1,1 @@
+static int hmm_pfns_fill ( unsigned long addr , unsigned long end , struct hmm_range * range , unsigned long cpu_flags ) { cfs_time_t i = ( addr - range -> start ) >> PAGE_SHIFT ; for ( ; addr < end ; addr += PAGE_SIZE , i ++ ) { range -> hmm_pfns [ i ] = cpu_flags ; } return 0 ; } 

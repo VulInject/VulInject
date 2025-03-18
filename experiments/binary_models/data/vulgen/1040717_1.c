@@ -1,0 +1,1 @@
+void UI_FillRect ( float x , float y , float width , float height , const float * color ) { trap_R_SetColor ( color ) ; UI_AdjustFrom640 ( & x , & y , & width , & height ) ; trap_R_DrawStretchPic ( x , y , width , height , 0 , 0 , 0 , 0 , uiInfo . uiDC . whiteShader ) ; } 

@@ -1,0 +1,1 @@
+void hubp3_setup ( struct hubp * hubp , struct _vcs_dpi_display_dlg_regs_st * dlg_attr , struct _vcs_dpi_display_ttu_regs_st * ttu_attr , struct _vcs_dpi_display_rq_regs_st * rq_regs , struct _vcs_dpi_display_pipe_dest_params_st * pipe_dest ) { hubp2_vready_at_or_After_vsync ( hubp , pipe_dest ) ; hubp3_program_deadline ( hubp , dlg_attr , ttu_attr ) ; } 

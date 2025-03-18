@@ -1,0 +1,1 @@
+int vm_set_topology ( struct vm * vm , uint16_t sockets , uint16_t cores , uint16_t threads , uint16_t maxcpus ) { if ( ( sockets * cores * threads ) > vm -> maxcpus ) { return ( EINVAL ) ; } vm -> sockets = sockets ; vm -> cores = cores ; vm -> threads = threads ; vm -> maxcpus = VM_MAXCPU ; return ( 0 ) ; } 

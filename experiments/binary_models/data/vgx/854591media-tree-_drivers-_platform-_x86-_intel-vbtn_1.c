@@ -1,0 +1,1 @@
+static int __init intel_vbtn_init ( void ) { acpi_walk_namespace ( ACPI_TYPE_DEVICE , ACPI_ROOT_OBJECT , ACPI_UINT32_MAX , check_acpi_dev , ( void * ) intel_vbtn_ids , NULL ) ; return platform_driver_register ( & intel_vbtn_pl_driver ) ; } 

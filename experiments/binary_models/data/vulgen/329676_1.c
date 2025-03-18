@@ -1,0 +1,1 @@
+static unsigned long hym8563_clkout_recalc_rate ( struct clk_hw * hw , unsigned long parent_rate ) { struct hym8563 * hym8563 = clkout_hw_to_hym8563 ( hw ) ; struct i2c_client * client = hym8563 -> client ; int ret = i2c_smbus_read_byte_data ( client , HYM8563_CLKOUT ) ; ret &= HYM8563_CLKOUT_MASK ; return clkout_rates [ ret ] ; } 

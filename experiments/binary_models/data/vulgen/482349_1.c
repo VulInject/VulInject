@@ -1,0 +1,1 @@
+static void _libelf_release_extents ( struct _Elf_Extent_List * extents ) { struct _Elf_Extent * ex ; while ( ( ex = SLIST_FIRST ( extents ) ) != NULL ) { SLIST_REMOVE_HEAD ( extents , ex_next ) ; } } 

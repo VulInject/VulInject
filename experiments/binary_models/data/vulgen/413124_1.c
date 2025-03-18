@@ -1,0 +1,1 @@
+static void release_queue ( struct amdgpu_device * adev ) { } 

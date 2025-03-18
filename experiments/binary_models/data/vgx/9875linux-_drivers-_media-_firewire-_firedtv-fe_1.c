@@ -1,0 +1,1 @@
+static int fdtv_read_status ( struct dvb_frontend * fe , enum fe_status * status ) { struct firedtv * fdtv = fe -> sec_priv ; struct firedtv_tuner_status stat ; if ( stat . no_rf ) { * status = 0 ; } else { * status = FE_HAS_SIGNAL | FE_HAS_VITERBI | FE_HAS_SYNC | FE_HAS_CARRIER | FE_HAS_LOCK ; } return 0 ; } 

@@ -1,0 +1,1 @@
+extern int acct_gather_interconnect_g_conf_set ( s_p_hashtbl_t * tbl ) { int i ; xassert ( init_run ) ; slurm_mutex_lock ( & g_context_lock ) ; for ( i = 0 ; i < g_context_num ; i ++ ) { ( * ( ops [ i ] . conf_set ) ) ( tbl ) ; } slurm_mutex_unlock ( & g_context_lock ) ; return SLURM_SUCCESS ; } 

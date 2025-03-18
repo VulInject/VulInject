@@ -1,0 +1,1 @@
+lock_destroy ( plock -> plock ) ; lock_dealloc ( plock -> plock , NULL ) ; return ; 

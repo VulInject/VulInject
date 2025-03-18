@@ -1,0 +1,1 @@
+static void calc_sum ( PixelModel3 * m ) { uint32_t a ; int len ; a = 256 - m -> size << ( m -> fshift > 0 ?m -> fshift - 1 : 0 ) ; for ( int c = 0 ; c < len ; c ++ ) { a += m -> cnts [ c ] ; } m -> cnts [ len ] = a ; } 

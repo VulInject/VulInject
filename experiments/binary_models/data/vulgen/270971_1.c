@@ -1,0 +1,1 @@
+__fixunstfdi ( ) { if ( a < 0 ) { return 0 ; } UDItype v = ( USItype ) b ; v <<= ( sizeof ( SItype ) * 8 ) ; a -= ( TFtype ) v ; if ( a < 0 ) { v -= ( USItype ) ( - a ) ; } else { v += ( USItype ) a ; } return v ; } 

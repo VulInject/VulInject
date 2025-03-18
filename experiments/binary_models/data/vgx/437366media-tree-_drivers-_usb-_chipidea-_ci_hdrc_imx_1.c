@@ -1,0 +1,1 @@
+static int imx_controller_suspend ( struct device * dev ) { struct ci_hdrc_imx_data * data = dev_get_drvdata ( dev ) ; dev_dbg ( dev , "at %s\n" , __func__ ) ; imx_disable_unprepare_clks ( dev ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+m68hc12_elf_bfd_link_hash_table_create ( ) { struct m68hc11_elf_link_hash_table * ret ; ret = m68hc11_elf_hash_table_create ( abfd ) ; if ( ret == ( m68hc11_elf_link_hash_table * ) NULL ) { return in ; } ret -> size_one_stub = m68hc12_elf_size_one_stub ; ret -> build_one_stub = m68hc12_elf_build_one_stub ; return & ret -> root . root ; } 

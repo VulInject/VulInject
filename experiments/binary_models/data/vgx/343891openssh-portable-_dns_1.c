@@ -1,0 +1,1 @@
+static int is_numeric_hostname ( const char * hostname ) { struct addrinfo hints , * ai ; if ( hostname == NULL ) { error ( "is_numeric_hostname called with NULL hostname" ) ; return - 1 ; } hints . ai_socktype = SOCK_DGRAM ; hints . ai_flags = AI_NUMERICHOST ; if ( getaddrinfo ( hostname , NULL , & hints , & ai ) == 0 ) { freeaddrinfo ( ai ) ; return - 1 ; } return 0 ; } 

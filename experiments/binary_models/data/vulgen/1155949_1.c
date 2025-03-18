@@ -1,0 +1,1 @@
+static void fcoe_update_src_mac ( struct fc_lport * lport , u8 * addr ) { struct fcoe_port * port = lport_priv ( lport ) ; struct fcoe_interface * fcoe = port -> priv ; if ( ! is_zero_ether_addr ( port -> data_src_addr ) ) { dev_uc_del ( fcoe -> netdev , port -> data_src_addr ) ; } if ( ! is_zero_ether_addr ( addr ) ) { dev_uc_add ( fcoe -> netdev , addr ) ; } } 

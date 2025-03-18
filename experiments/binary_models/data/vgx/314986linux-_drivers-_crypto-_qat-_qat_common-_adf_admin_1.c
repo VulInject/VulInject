@@ -1,0 +1,1 @@
+static int adf_send_admin ( struct adf_accel_dev * accel_dev , struct icp_qat_fw_init_admin_req * req , struct icp_qat_fw_init_admin_resp * resp , const unsigned long ae_mask ) { int ae ; for_each_set_bit ( , , ) if ( adf_put_admin_msg_sync ( accel_dev , ae , req , resp ) || resp -> status ) { return - EFAULT ; } return 0 ; } 

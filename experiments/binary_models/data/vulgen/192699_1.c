@@ -1,0 +1,1 @@
+host_priv { struct udevice * cur_dev ; } 

@@ -1,0 +1,1 @@
+{ ut8 window [ ROLLING_WINDOW ] ; ut32 h1 ; ut32 h2 ; ut32 h3 ; ut32 bh1 ; ut32 bh2 ; int n ; int bs ; char hs1 [ 64 + 1 ] ; int hs1_len ; char hs2 [ 64 + 1 ] ; int hs2_len ; } State 

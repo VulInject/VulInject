@@ -1,0 +1,1 @@
+int main ( void ) { plan_tests ( 23 ) ; reset_variables ( ) ; setup_environment ( ) ; setup_objects ( ) ; test_escaping ( mac ) ; free_memory ( mac ) ; free_hstgrp1 ( ) ; free_svcgrp1 ( ) ; free_svc1 ( ) ; free_hst1 ( ) ; return exit_status ( ) ; } 

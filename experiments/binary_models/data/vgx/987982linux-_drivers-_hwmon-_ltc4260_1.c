@@ -1,0 +1,1 @@
+static ssize_t ltc4260_value_show ( struct device * dev , struct device_attribute * da , char * buf ) { struct sensor_device_attribute * attr = to_sensor_dev_attr ( da ) ; int value ; value = ltc4260_get_value ( dev , attr -> index ) ; return sysfs_emit ( buf , "%d\n" , value ) ; } 

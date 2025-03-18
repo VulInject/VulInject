@@ -1,0 +1,1 @@
+void vq_free_entry ( struct virtqueue * vq , struct vq_entry * qe ) { SLIST_INSERT_HEAD ( & vq -> vq_freelist , qe , qe_list ) ; } int virtio_enqueue_prep ( struct virtqueue * vq , int * slotp ) { struct vq_entry * qe1 ; qe1 = vq_alloc_entry ( vq ) ; if ( qe1 == NULL ) { return EAGAIN ; } qe1 -> qe_next = - 1 ; * slotp = qe1 -> qe_index ; return 0 ; } 

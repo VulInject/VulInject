@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "Bin Yang<bin.yang@intel.com>" ) ; MODULE_AUTHOR ( "Vincent Pelletier<plr.vincent@gmail.com>" ) ; MODULE_AUTHOR ( "Andy Shevchenko<andriy.shevchenko@linux.intel.com>" ) ; MODULE_DESCRIPTION ( "ADC driver for Basin Cove PMIC" ) ; 

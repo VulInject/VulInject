@@ -1,0 +1,1 @@
+static int apic_wait_timeout ( int total_delay , const char * msg ) { int total = 0 ; debug ( "Waiting for %s..." , msg ) ; while ( lapic_read ( LAPIC_ICR ) & LAPIC_ICR_BUSY ) { udelay ( 50 ) ; total += 50 ; if ( total >= total_delay ) { debug ( "timed out: aborting\n" ) ; return - ETIMEDOUT ; } } debug ( "done\n" ) ; return 0 ; } 

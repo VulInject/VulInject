@@ -1,0 +1,1 @@
+static void pch_gbe_mdio_write ( struct net_device * netdev , int addr , int reg , int data ) { struct pch_gbe_adapter * adapter = netdev_priv ( netdev ) ; struct pch_gbe_hw * hw = & adapter -> hw ; } 

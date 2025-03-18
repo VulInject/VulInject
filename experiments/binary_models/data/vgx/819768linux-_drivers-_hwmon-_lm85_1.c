@@ -1,0 +1,1 @@
+static inline u16 FAN_TO_REG ( unsigned long val ) { return clamp_val ( 5400000 / val , 1 , 0xfffe ) ; } 

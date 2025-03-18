@@ -1,0 +1,1 @@
+static void removeSBITS ( int dirfd , const char * path ) { struct stat stb ; int flags = AT_SYMLINK_NOFOLLOW ; if ( fstatat ( dirfd , path , & stb , flags ) == 0 && S_ISREG ( stb . st_mode ) ) { if ( stb . st_mode & ( S_IXUSR | S_IXGRP | S_IXOTH ) ) { ( void ) cap_set_fileat ( dirfd , path , NULL ) ; } } } 

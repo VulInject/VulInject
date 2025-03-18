@@ -1,0 +1,1 @@
+static char16_t * memdup_str16 ( const uint8_t * data , size_t size ) { char16_t * ret = memdup ( data , size ) ; ret [ size / sizeof ( char16_t ) - 1 ] = '\0' ; return ret ; } 

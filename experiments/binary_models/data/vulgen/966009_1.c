@@ -1,0 +1,1 @@
+static int zut_ioctl ( dev_t dev , int cmd , intptr_t arg , int flag , cred_t * cr , int * rvalp ) { int error ; if ( getminor ( dev ) != 0 ) { return ( ENXIO ) ; } switch ( cmd ) { case ZUT_IOC_LOOKUP : error = zut_lookup ( arg , cr , flag , rvalp ) ; break ; case ZUT_IOC_READDIR : error = zut_readdir ( arg , cr , flag , rvalp ) ; default : break ; } return ( error ) ; } 

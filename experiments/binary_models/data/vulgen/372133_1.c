@@ -1,0 +1,1 @@
+PHP_METHOD ( , ) { zval * value ; spl_heap_object * intern ; ZEND_PARSE_PARAMETERS_START ( 1 , 1 ) Z_PARAM_ZVAL ( value ) ; ZEND_PARSE_PARAMETERS_END ( ) ; intern = Z_SPLHEAP_P ( ZEND_THIS ) ; Z_TRY_ADDREF_P ( value ) ; spl_ptr_heap_insert ( intern -> heap , value , ZEND_THIS ) ; RETURN_TRUE ; } 

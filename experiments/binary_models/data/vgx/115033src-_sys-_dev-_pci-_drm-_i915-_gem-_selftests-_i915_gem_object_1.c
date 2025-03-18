@@ -1,1 +1,1 @@
-int FUN1 ( void ) { static const struct i915_subtest VAR1 [ ] { FUN2 ( VAR2 ) } ; ; struct VAR3 * VAR4 ; int VAR5 ; VAR4 = FUN3 ( ) ; if ( ! VAR4 ) { return - VAR6 ; } VAR5 = FUN4 ( VAR1 , VAR4 ) ; return VAR5 ; }
+int i915_gem_object_mock_selftests ( void ) { static const struct i915_subtest tests [ ] { SUBTEST ( igt_gem_object ) } ; ; struct drm_i915_private * i915 ; int err ; i915 = mock_gem_device ( ) ; if ( ! i915 ) { return - ENOMEM ; } err = i915_subtests ( tests , i915 ) ; return err ; } 

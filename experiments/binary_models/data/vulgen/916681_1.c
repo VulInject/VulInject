@@ -1,0 +1,1 @@
+struct tty * of_tty ; int of_flags ; 

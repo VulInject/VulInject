@@ -1,0 +1,1 @@
+. end = TAHVO_INT_VBUS , . flags IORESOURCE_IRQ , ; 

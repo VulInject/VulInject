@@ -1,0 +1,1 @@
+static void test_file_free ( test_file * tf ) { assert_non_null ( tf ) ; int rc = remove ( tf -> path ) ; assert_return_code ( rc , errno ) ; fclose ( tf -> file ) ; free ( tf ) ; } 

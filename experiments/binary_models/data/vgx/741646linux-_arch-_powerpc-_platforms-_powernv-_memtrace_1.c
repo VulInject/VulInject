@@ -1,0 +1,1 @@
+static int memtrace_init ( void ) { memtrace_debugfs_dir = debugfs_create_dir ( "memtrace" , arch_debugfs_dir ) ; debugfs_create_file ( "enable" , 0600 , memtrace_debugfs_dir , & memtrace_init_fops ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static int bcm283x_mu_serial_getc ( struct udevice * dev ) { struct bcm283x_mu_priv * priv = dev_get_priv ( dev ) ; struct bcm283x_mu_regs * regs = priv -> regs ; u32 data ; data = readl ( & regs -> io ) ; return ( int ) data ; } 

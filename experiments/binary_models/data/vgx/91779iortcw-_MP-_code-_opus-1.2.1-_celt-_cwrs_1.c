@@ -1,0 +1,1 @@
+static OPUS_INLINE void unext ( opus_uint32 * _ui , unsigned _len , opus_uint32 _ui0 ) { opus_uint32 ui1 ; int j ; j = 1 ; { ui1 = UADD32 ( UADD32 ( _ui [ j ] , _ui [ j - 1 ] ) , _ui0 ) ; _ui [ j - 1 ] = _ui0 ; _ui0 = ui1 ; } ++ j < _len ; _ui [ j - 1 ] = _ui0 ; } 

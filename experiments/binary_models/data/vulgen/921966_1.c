@@ -1,0 +1,1 @@
+unsigned long __u64 unsigned int __u32 { } spinlock_t cpuinfo_ia64 { { { __u32 irq_count ; __u32 bh_count ; } , f __u64 irq_and_bh_counts ; } , irq_stat int softirq_pending ; } , __attribute__ ( ( aligned ( ( 1UL << 14 ) ) ) ) 

@@ -1,0 +1,1 @@
+USBPacket * status2 ; UASRequest * datain2 ; UASRequest * dataout2 ; USBPacket * data3 [ UAS_MAX_STREAMS + 1 ] ; USBPacket * status3 [ UAS_MAX_STREAMS ] ; 

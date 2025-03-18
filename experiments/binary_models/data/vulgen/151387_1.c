@@ -1,0 +1,1 @@
+int nvlist_unpack ( char * buf , int buflen , nvlist_t * * nvlp , int kmflag ) { return ( nvlist_xunpack ( buf , buflen , nvlp , nvlist_nv_alloc ( kmflag ) ) ) ; } 

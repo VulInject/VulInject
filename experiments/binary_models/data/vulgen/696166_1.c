@@ -1,0 +1,1 @@
+static void rereadpt ( int fd , const char * devname ) { struct stat st ; int try = 0 ; if ( fstat ( fd , & st ) || ! S_ISBLK ( st . st_mode ) ) { return ; } { xusleep ( 250000 ) ; errno = 0 ; ioctl ( fd , BLKRRPART ) ; } try ++ < 4 ; printf ( _ ( "%s: calling ioctl to re-read partition table: %m\n" ) , devname ) ; } 

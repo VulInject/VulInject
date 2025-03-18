@@ -1,0 +1,1 @@
+ret_code_t nrf_ble_gatt_att_mtu_periph_set ( nrf_ble_gatt_t * p_gatt , uint16_t desired_mtu ) { VERIFY_PARAM_NOT_NULL ( p_gatt ) ; p_gatt -> att_mtu_desired_periph = desired_mtu ; return NRF_SUCCESS ; return NRF_ERROR_NOT_SUPPORTED ; } 

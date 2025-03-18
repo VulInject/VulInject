@@ -1,0 +1,1 @@
+__setup ( "rootfstype=" , fs_names_setup ) ; __setup ( "rootdelay=" , root_delay_setup ) ; static int __init split_fs_names ( char * page , size_t size , char * names ) { int count = 1 ; char * p = page ; while ( * p ++ ) { if ( p [ - 1 ] == ',' ) { p [ - 1 ] = '\0' ; count ++ ; } } return count ; } 

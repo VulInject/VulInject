@@ -1,0 +1,1 @@
+void ath5k_hw_release_tx_queue ( struct ath5k_hw * ah , unsigned int queue ) { ah -> ah_txq [ queue ] . tqi_type = AR5K_TX_QUEUE_INACTIVE ; AR5K_Q_DISABLE_BITS ( ah -> ah_txq_status , queue ) ; } 

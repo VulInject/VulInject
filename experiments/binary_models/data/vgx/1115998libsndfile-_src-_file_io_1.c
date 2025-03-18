@@ -1,0 +1,1 @@
+static int psf_close_handle ( HANDLE handle ) static HANDLE psf_open_handle ( PSF_FILE * pfile ) static sf_count_t psf_get_filelen_handle ( HANDLE handle ) int psf_fopen ( SF_PRIVATE * psf ) { psf -> file . handle = psf_open_handle ( & psf -> file ) ; if ( psf -> file . handle == INVALID_HANDLE_VALUE ) { psf_log_syserr ( psf , GetLastError ( ) ) ; } return psf -> error ; } 

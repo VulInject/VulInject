@@ -1,0 +1,1 @@
+static inline struct object_entry * oe_delta ( const struct packing_data * pack , const struct object_entry * e ) { if ( ! e -> delta_idx ) { return in ; } if ( e -> ext_base ) { return & pack -> ext_bases [ e -> delta_idx - 1 ] ; } else { return & pack -> objects [ e -> delta_idx - 1 ] ; } } 

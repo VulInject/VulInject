@@ -1,0 +1,1 @@
+listing_prev_line ( ) { list_info_type * l ; fragS * f ; new_frag ( ) ; for ( l = head ; l -> next != listing_tail ; l = l -> next ) { } for ( f = frchain_now -> frch_root ; f != ( fragS * ) NULL ; f = f -> fr_next ) { if ( f -> line == listing_tail ) { f -> line = l ; } } listing_tail -> frag = frag_now ; new_frag ( ) ; } 

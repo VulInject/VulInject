@@ -1,0 +1,1 @@
+{ int fromindex toindex ; char * target ; char * * * rows ; int numrows ; int nextrow ; } msCSVJoinInfo 

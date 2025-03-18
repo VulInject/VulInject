@@ -1,0 +1,1 @@
+static void unknown_encoding_data_free ( void * data ) { struct unknown_encoding_data * enc_data ; enc_data = data ; free ( enc_data -> charset ) ; iconv_close ( enc_data -> cd , NULL ) ; free ( enc_data ) ; } 

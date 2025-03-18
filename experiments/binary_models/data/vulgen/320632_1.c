@@ -1,0 +1,1 @@
+void drm_iommu_detach_device ( struct drm_device * drm_dev , struct device * subdrv_dev ) { struct exynos_drm_private * priv = drm_dev -> dev_private ; __exynos_iommu_detach ( priv , subdrv_dev ) ; } 

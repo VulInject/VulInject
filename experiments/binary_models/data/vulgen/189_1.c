@@ -1,0 +1,1 @@
+static void _set_range ( uint32_t addr , uint32_t size , uint32_t perm ) { uint32_t rgn_addr = addr ; uint32_t rgn_size = size ; uint32_t p ; while ( rgn_size ) { p = _find_granule ( rgn_addr , rgn_size ) ; if ( set_range ( rgn_addr , p , perm ) ) { panic ( "set_range failed!" ) ; } rgn_addr += p ; rgn_size -= p ; } } 

@@ -1,0 +1,1 @@
+static int simbiosis_imx_probe ( const AVProbeData * p ) { if ( AV_RN32 ( p -> buf + 4 ) == 0 ) { return 0 ; } if ( AV_RN16 ( p -> buf + 8 ) == 0 ) { return 0 ; } if ( AV_RL16 ( p -> buf + 10 ) != 0x102 ) { return 0 ; } return AVPROBE_SCORE_EXTENSION + 10 ; } 

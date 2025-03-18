@@ -1,0 +1,1 @@
+static void ll_bus_reset ( const struct pvscsi_adapter * adapter ) { dev_dbg ( pvscsi_dev ( adapter ) , "Resetting bus on %p\n" , adapter ) ; pvscsi_write_cmd_desc ( adapter , PVSCSI_CMD_RESET_BUS , 0 ) ; } 

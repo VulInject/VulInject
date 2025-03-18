@@ -1,0 +1,1 @@
+static void free_socketdata ( RIOSocketData * sd ) { if ( sd ) { r_socket_free ( sd -> sc ) ; r_socket_free ( sd -> sl ) ; } } 

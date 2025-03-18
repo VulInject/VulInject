@@ -1,0 +1,1 @@
+static int qib_7220_intr_fallback ( struct qib_devdata * dd ) { if ( ! dd -> msi_lo ) { return 0 ; } qib_devinfo ( dd -> pcidev , "MSI interrupt not detected, trying INTx interrupts\n" ) ; qib_7220_free_irq ( dd ) ; qib_enable_intx ( dd -> pcidev , NULL ) ; dd -> cspec -> irq = dd -> pcidev -> irq ; qib_setup_7220_interrupt ( dd ) ; return 1 ; } 

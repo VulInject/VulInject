@@ -1,0 +1,1 @@
+void match_set_tun_gbp_flags_masked ( struct match * match , uint8_t flags , uint8_t mask ) { match -> wc . masks . tunnel . gbp_flags = mask ; } 

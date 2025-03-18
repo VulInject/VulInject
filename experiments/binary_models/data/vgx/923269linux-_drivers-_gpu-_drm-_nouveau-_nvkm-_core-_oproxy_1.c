@@ -1,0 +1,1 @@
+int nvkm_oproxy_new_ ( const struct nvkm_oproxy_func * func , const struct nvkm_oclass * oclass , struct nvkm_oproxy * * poproxy ) { nvkm_oproxy_ctor ( func , oclass , * poproxy ) ; return 0 ; } 

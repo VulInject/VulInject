@@ -1,0 +1,1 @@
+void kvm_s390_pci_aen_exit ( void ) { unsigned long flags ; struct kvm_zdev * * gait_kzdev ; lockdep_assert_held ( & aift -> aift_lock ) ; spin_lock_irqsave ( & aift -> gait_lock , flags ) ; gait_kzdev = aift -> kzdev ; aift -> gait = NULL ; aift -> sbv = NULL ; aift -> kzdev = NULL ; spin_unlock_irqrestore ( & aift -> gait_lock , flags ) ; } 

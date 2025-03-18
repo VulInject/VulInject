@@ -1,0 +1,1 @@
+static rrw_node_t * rrn_find ( rrwlock_t * rrl ) { rrw_node_t * rn ; for ( rn = tsd_get ( rrw_tsd_key ) ; rn != NULL ; rn = rn -> rn_next ) { if ( rn -> rn_rrl == rrl ) { return ( rn ) ; } } return ( NULL ) ; } 

@@ -1,0 +1,1 @@
+MODULE_DEVICE_TABLE ( pci , optidma ) ; MODULE_VERSION ( DRV_VERSION , NULL ) ; 

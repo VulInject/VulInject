@@ -1,0 +1,1 @@
+static void sas_destruct_ports ( struct asd_sas_port * port ) { struct sas_port * sas_port , * p ; list_for_each_entry_safe ( , , , ) { sas_port_delete ( sas_port ) ; } } 

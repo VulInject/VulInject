@@ -1,0 +1,1 @@
+static int submod ( void * a , void * b , void * c , void * d ) { LTC_ARGCHK ( b != NULL ) ; LTC_ARGCHK ( c != NULL ) ; LTC_ARGCHK ( d != NULL ) ; return mpi_to_ltc_error ( mp_submod ( a , b , c , d ) ) ; } 

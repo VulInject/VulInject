@@ -1,0 +1,1 @@
+_func_det { const char * name ; thread_func_t func ; int n ; } func_det_t 

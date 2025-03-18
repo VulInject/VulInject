@@ -1,0 +1,1 @@
+void enqueue_reserved_jobs ( Conn * c ) { while ( ! job_list_is_empty ( & c -> reserved_jobs ) ) { Job * j = job_list_remove ( c -> reserved_jobs . next ) ; int r = enqueue_job ( c -> srv , j , 0 , 0 ) ; if ( r < 1 ) { bury_job ( c -> srv , j , 0 ) ; } global_stat . reserved_ct -- ; j -> tube -> stat . reserved_ct -- ; } } 

@@ -1,0 +1,1 @@
+hppabsd_supply_fpregset ( , , , , ) { const char * regs = fpregs ; int i ; gdb_assert ( len >= HPPABSD_SIZEOF_FPREGS ) ; for ( i = HPPA_FP0_REGNUM ; i < HPPA_FP0_REGNUM + 32 * 2 ; i ++ ) { if ( regnum == i || regnum == - 1 ) { regcache_raw_supply ( regcache , i , 0 ) ; } } } 

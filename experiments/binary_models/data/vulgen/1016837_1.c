@@ -1,0 +1,1 @@
+_TYPE ( ) t_tob64cstr ( , , ) cstr * dst ; const char * src ; unsigned int sz ; { return t_tob64 ( dst -> data , src , sz ) ; } 

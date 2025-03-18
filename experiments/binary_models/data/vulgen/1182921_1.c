@@ -1,0 +1,1 @@
+foo { int x , y , z ; int count ; } 

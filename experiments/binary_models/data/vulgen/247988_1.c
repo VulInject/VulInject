@@ -1,0 +1,1 @@
+void l1_cleanup ( void ) { mISDN_FsmFree ( 0 ) ; } 

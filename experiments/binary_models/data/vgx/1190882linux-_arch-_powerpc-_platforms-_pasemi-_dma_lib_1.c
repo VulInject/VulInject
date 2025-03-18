@@ -1,0 +1,1 @@
+void pasemi_dma_free_chan ( struct pasemi_dmachan * chan ) { if ( chan -> ring_virt ) { pasemi_dma_free_ring ( chan ) ; } switch ( chan -> chan_type & ( RXCHAN | TXCHAN ) ) { case RXCHAN : pasemi_free_rx_chan ( chan -> chno ) ; break ; case TXCHAN : pasemi_free_tx_chan ( chan -> chno ) ; break ; } } 

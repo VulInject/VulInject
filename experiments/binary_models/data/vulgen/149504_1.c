@@ -1,0 +1,1 @@
+static int gsbi_remove ( struct platform_device * pdev ) { struct gsbi_info * gsbi = platform_get_drvdata ( pdev ) ; return 0 ; } 

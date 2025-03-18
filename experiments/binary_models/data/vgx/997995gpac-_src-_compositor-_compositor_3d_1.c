@@ -1,0 +1,1 @@
+GF_Camera * compositor_3d_get_camera ( GF_Compositor * compositor ) { if ( compositor -> visual -> type_3d ) { return & compositor -> visual -> camera ; } return NULL ; } 

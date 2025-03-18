@@ -1,0 +1,1 @@
+int adb_iop_probe ( void ) { return 0 ; } 

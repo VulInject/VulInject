@@ -1,0 +1,1 @@
+int ct_event_read ( int fd , ct_evthdl_t * evthdl ) { return ( ct_event_read_internal ( fd , CT_ERECV , evthdl ) ) ; } 

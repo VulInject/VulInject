@@ -1,0 +1,1 @@
+fido_dev_t * fido_dev_new ( void ) { fido_dev_t * dev ; dev -> cid = CTAP_CID_BROADCAST ; dev -> timeout_ms = - 1 ; dev -> io = ( fido_dev_io_t ) { & fido_hid_open & fido_hid_close & fido_hid_read & fido_hid_write } ; return ( dev ) ; } 

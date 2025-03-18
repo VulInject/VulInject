@@ -1,0 +1,1 @@
+static VALUE ossl_x509ext_alloc ( VALUE klass ) { X509_EXTENSION * ext ; VALUE obj ; obj = NewX509Ext ( klass ) ; SetX509Ext ( obj , ext ) ; return obj ; } 

@@ -1,0 +1,1 @@
+static void * nt_final ( void * ptr ) { Elf64_Nhdr * note ; note = ( Elf64_Nhdr * ) ptr ; note -> n_namesz = 0 ; note -> n_type = 0 ; return PTR_ADD ( ptr , sizeof ( Elf64_Nhdr ) ) ; } 

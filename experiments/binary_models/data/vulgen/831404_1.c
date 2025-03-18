@@ -1,0 +1,1 @@
+uw_resolver { struct event check_ev ; struct event free_ev ; struct ub_ctx * ctx ; void * asr_ctx ; struct timeval check_tv ; int ref_cnt ; int stop ; enum uw_resolver_state state ; enum uw_resolver_type type ; int check_running ; int64_t histogram [ nitems ( histogram_limits ) ] ; int64_t latest_histogram [ nitems ( histogram_limits ) ] ; } 

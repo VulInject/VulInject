@@ -1,0 +1,1 @@
+static void tbs_sched_clean_vgpu ( struct intel_vgpu * vgpu ) { struct intel_gvt * gvt = vgpu -> gvt ; struct gvt_sched_data * sched_data = gvt -> scheduler . sched_data ; kfree ( vgpu -> sched_data ) ; vgpu -> sched_data = NULL ; } 

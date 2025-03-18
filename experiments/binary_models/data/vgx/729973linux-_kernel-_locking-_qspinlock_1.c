@@ -1,0 +1,1 @@
+static __always_inline u32 xchg_tail ( struct qspinlock * lock , u32 tail ) { u32 old , val = atomic_read ( & lock -> val ) ; for ( ; ; ) { new = ( val & _Q_LOCKED_PENDING_MASK ) | tail ; old = atomic_cmpxchg_relaxed ( & lock -> val , val , new ) ; val = old ; } return old ; } 

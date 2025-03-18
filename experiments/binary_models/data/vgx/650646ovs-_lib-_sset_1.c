@@ -1,0 +1,1 @@
+bool sset_equals ( const struct sset * a , const struct sset * b ) { struct sset_node * node ; HMAP_FOR_EACH ( , , ) { if ( ! sset_find__ ( b , node -> name , node -> hmap_node . hash ) ) { return false ; } } return true ; } 

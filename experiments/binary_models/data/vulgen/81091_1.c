@@ -1,0 +1,1 @@
+size_t tcp_create_ident ( void * * i , struct packet_object * po ) { struct tcp_ident * ident ; SAFE_CALLOC ( ident , 1 , sizeof ( tcp_ident ) ) ; ident -> magic = TCP_MAGIC ; memcpy ( & ident -> L3_src , & po -> L3 . src , sizeof ( ip_addr ) ) ; ident -> L4_src = po -> L4 . src ; ident -> L4_dst = po -> L4 . dst ; * i = ident ; return sizeof ( tcp_ident ) ; } 

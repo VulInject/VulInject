@@ -1,0 +1,1 @@
+void test_vcpu_creation ( int first_vcpu_id , int num_vcpus ) { struct kvm_vm * vm ; int i ; pr_info ( "Testing creating %d vCPUs, with IDs %d...%d.\n" , num_vcpus , first_vcpu_id , first_vcpu_id + num_vcpus - 1 ) ; vm = vm_create_barebones ( ) ; for ( i = first_vcpu_id ; i < first_vcpu_id + num_vcpus ; i ++ ) { __vm_vcpu_add ( vm , i ) ; } } 

@@ -1,0 +1,1 @@
+LIST_INFO ( iface_dev , ifd_entry , iface_dev_info , jam_iface_dev ) ; static struct list_head interface_dev = INIT_LIST_HEAD ( & interface_dev , & iface_dev_info ) ; static void free_iface_dev ( void * obj , where_t where UNUSED ) { struct iface_dev * ifd = obj ; remove_list_entry ( & ifd -> ifd_entry ) ; pfree ( ifd ) ; } 

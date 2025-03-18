@@ -1,0 +1,1 @@
+mongoc_client_encryption_create_datakey ( , , , , ) { BSON_UNUSED ( client_encryption ) ; BSON_UNUSED ( kms_provider , NULL ) ; BSON_UNUSED ( opts ) ; if ( keyid ) { memset ( keyid , 0 , sizeof ( * keyid ) ) ; } return _disabled_error ( error ) ; } 

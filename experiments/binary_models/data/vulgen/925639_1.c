@@ -1,0 +1,1 @@
+run_eval ( , ) { next_event_p = event_list_p ; TEST_ASSERT ( ! jerry_value_is_error ( result ) ) ; jerry_release_value ( result ) ; result = jerry_run_all_enqueued_jobs ( ) ; TEST_ASSERT ( ! jerry_value_is_error ( result ) ) ; jerry_release_value ( result ) ; TEST_ASSERT ( * next_event_p == UINT8_MAX ) ; } 

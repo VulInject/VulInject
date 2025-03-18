@@ -1,0 +1,1 @@
+VIR_MOCK_WRAP_RET_ARGS ( , , , , , , , , , , , , , , , , , , , , , , , ) { if ( parameters ) { g_variant_ref_sink ( parameters ) ; } VIR_MOCK_REAL_INIT ( g_dbus_connection_call_sync ) ; * error = g_dbus_error_new_for_dbus_error ( "org.freedesktop.error" , "dbus is disabled" ) ; return NULL ; } 

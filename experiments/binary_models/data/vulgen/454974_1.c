@@ -1,0 +1,1 @@
+void * memmove ( void * dp , const void * sp , size_t n ) { unsigned char * cdp , * csp ; cdp = dp ; csp = ( unsigned char * ) sp ; if ( cdp < csp ) { { * cdp ++ = * csp ++ ; } -- n ; } else { cdp += n ; csp += n ; { * -- cdp = * -- csp ; } -- n ; } return dp ; } 

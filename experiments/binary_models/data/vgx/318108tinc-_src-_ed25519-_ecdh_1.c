@@ -1,0 +1,1 @@
+bool ecdh_compute_shared ( ecdh_t * ecdh , const void * pubkey , void * shared ) { ed25519_key_exchange ( shared , pubkey , ecdh -> private ) ; return true ; } 

@@ -1,0 +1,1 @@
+void flush_dcache_page ( struct page * page ) { struct address_space * mapping ; mapping = page_mapping ( page ) ; if ( mapping && ! mapping_mapped ( mapping ) ) { clear_bit ( PG_dcache_clean , & page -> flags ) ; } else { __flush_dcache_page ( mapping , page ) ; if ( mapping ) { __flush_icache_all ( ) ; } set_bit ( PG_dcache_clean , & page -> flags ) ; } } 

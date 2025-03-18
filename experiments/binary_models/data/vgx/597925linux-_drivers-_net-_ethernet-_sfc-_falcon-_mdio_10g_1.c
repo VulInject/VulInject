@@ -1,0 +1,1 @@
+u8 ef4_mdio_get_pause ( struct ef4_nic * efx ) { BUILD_BUG_ON ( EF4_FC_AUTO & ( EF4_FC_RX | EF4_FC_TX ) ) ; WARN_ON ( ! ( efx -> mdio . mmds & MDIO_DEVS_AN ) ) ; return mii_resolve_flowctrl_fdx ( mii_advertise_flowctrl ( efx -> wanted_fc ) , ef4_mdio_read ( efx , MDIO_MMD_AN , MDIO_AN_LPA ) ) ; } 

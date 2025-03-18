@@ -1,0 +1,1 @@
+void snd_sof_dsp_update_bits_forced ( struct snd_sof_dev * sdev , u32 bar , u32 offset , u32 mask , u32 value ) { cfs_time_t flags ; spin_lock_irqsave ( & sdev -> hw_lock , flags ) ; snd_sof_dsp_update_bits_forced_unlocked ( sdev , bar , offset , mask , value ) ; spin_unlock_irqrestore ( & sdev -> hw_lock , flags ) ; } 

@@ -1,0 +1,1 @@
+static enum gab_chan_type gab_prop_to_chan ( enum power_supply_property psp ) { switch ( psp ) { case POWER_SUPPLY_PROP_POWER_NOW : return GAB_POWER ; case POWER_SUPPLY_PROP_VOLTAGE_NOW : return GAB_VOLTAGE ; case POWER_SUPPLY_PROP_CURRENT_NOW : return GAB_CURRENT ; default : break ; } return GAB_POWER ; } 

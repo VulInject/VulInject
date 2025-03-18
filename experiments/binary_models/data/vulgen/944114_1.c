@@ -1,0 +1,1 @@
+static int bt_sco_remove ( struct platform_device * pdev ) { return 0 ; } 

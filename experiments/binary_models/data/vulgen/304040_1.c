@@ -1,0 +1,1 @@
+static void expr_type ( TCCState * s1 , CType * type ) { bool saved_nocode_wanted = s1 -> nocode_wanted ; s1 -> nocode_wanted = true ; gexpr ( s1 ) ; s1 -> nocode_wanted = saved_nocode_wanted ; } 

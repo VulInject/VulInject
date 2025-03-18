@@ -1,0 +1,1 @@
+static wchar_t * mbs_to_wcs ( const char * s ) { ssize_t n ; wchar_t * wcs ; n = mbstowcs ( ( wchar_t * ) 0 , s , 0 ) ; if ( n < 0 ) { return NULL ; } wcs = xcalloc ( ( n + 1 ) * sizeof ( wchar_t ) , 1 ) ; n = mbstowcs ( wcs , s , n + 1 ) ; if ( n < 0 ) { return NULL ; } return wcs ; return xstrdup ( s ) ; } 

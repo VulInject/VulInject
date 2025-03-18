@@ -1,0 +1,1 @@
+static enum drm_mode_status rk3066_hdmi_connector_mode_valid ( struct drm_connector * connector , struct drm_display_mode * mode ) { if ( vic > 1 ) { return MODE_OK ; } else { return MODE_BAD ; } } 

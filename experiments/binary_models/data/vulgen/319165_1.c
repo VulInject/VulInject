@@ -1,0 +1,1 @@
+( drm_vblank_work_cancel_sync ) ; void drm_vblank_work_flush ( struct drm_vblank_work * work ) { struct drm_vblank_crtc * vblank = work -> vblank ; struct drm_device * dev = vblank -> dev ; spin_lock_irq ( & dev -> event_lock ) ; wait_event_lock_irq ( vblank -> work_wait_queue , list_empty ( & work -> node ) , dev -> event_lock ) ; spin_unlock_irq ( & dev -> event_lock ) ; } 

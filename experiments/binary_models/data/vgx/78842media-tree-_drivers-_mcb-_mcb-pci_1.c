@@ -1,0 +1,1 @@
+static void mcb_pci_remove ( struct pci_dev * pdev ) { struct priv * priv = pci_get_drvdata ( pdev ) ; pci_disable_device ( pdev ) ; } 

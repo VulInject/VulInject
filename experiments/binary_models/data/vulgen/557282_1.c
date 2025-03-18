@@ -1,0 +1,1 @@
+static struct tx4927_pcic_reg __iomem * pci_bus_to_pcicptr ( struct pci_bus * bus ) { return get_tx4927_pcicptr ( channel ) ; } 

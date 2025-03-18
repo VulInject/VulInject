@@ -1,0 +1,1 @@
+static int monitor_device_open ( struct inode * inode , struct file * file ) { atomic_inc ( & dlm_monitor_opened ) ; return 0 ; } 

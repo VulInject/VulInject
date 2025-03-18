@@ -1,0 +1,1 @@
+bool selector_is_unset ( const ip_selector * selector ) { return ! selector -> is_set ; } 

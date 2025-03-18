@@ -1,0 +1,1 @@
+int imxpciephy_match ( struct device * , void * , void * ) int imxpciephy_attach ( struct device * , struct device * , void * ) const struct cfattach imxpciephy_ca = { sizeof ( imxpciephy_softc ) imxpciephy_match imxpciephy_attach } ; 

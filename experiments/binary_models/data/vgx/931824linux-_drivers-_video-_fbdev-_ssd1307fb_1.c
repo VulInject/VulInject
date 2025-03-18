@@ -1,0 +1,1 @@
+static u_int refreshrate = REFRESHRATE ; module_param ( refreshrate , uint , 0 ) ; ssd1307fb_deviceinfo { u32 default_vcomh ; int default_dclk_div ; u32 default_dclk_frq ; int need_pwm ; int need_chargepump ; } 

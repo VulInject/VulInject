@@ -1,0 +1,1 @@
+usage ( ) { arg_printusage ( args , sizeof ( args ) / sizeof ( args [ 0 ] ) , "dns-names ..." ) ; exit ( ret ) ; } 

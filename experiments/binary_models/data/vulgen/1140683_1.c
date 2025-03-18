@@ -1,0 +1,1 @@
+static int samsung_sound_setup ( struct udevice * dev ) { struct sound_uc_priv * uc_priv = dev_get_uclass_priv ( dev ) ; struct i2s_uc_priv * i2c_priv = dev_get_uclass_priv ( uc_priv -> i2s ) ; int ret ; if ( uc_priv -> setup_done ) { return - EALREADY ; } if ( ret ) { return ret ; } uc_priv -> setup_done = true ; return 0 ; } 

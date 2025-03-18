@@ -1,0 +1,1 @@
+fct_status_t fcoet_deregister_remote_port ( fct_local_port_t * port , fct_remote_port_t * rp ) { fcoet_soft_state_t * this_ss = PORT2SS ( port ) ; this_ss -> ss_rport_dereg_state = 0 ; return ( FCT_SUCCESS ) ; } 

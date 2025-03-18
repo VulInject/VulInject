@@ -1,0 +1,1 @@
+void xp_set_rxq_info ( struct xsk_buff_pool * pool , struct xdp_rxq_info * rxq ) { int i ; for ( i = 0 ; i < pool -> heads_cnt ; i ++ ) { pool -> heads [ i ] . xdp . rxq = rxq ; } } 

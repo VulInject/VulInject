@@ -1,0 +1,1 @@
+badlogin { char bl_line [ UT_LINESIZE ] ; char bl_name [ UT_NAMESIZE ] ; char bl_host [ UT_HOSTSIZE ] ; time_t bl_time ; } 

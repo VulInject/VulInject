@@ -1,0 +1,1 @@
+static int mount_entry_matches ( const char * url , const char * prefix , const char * * path_info ) { int i ; for ( i = 0 ; prefix [ i ] != '\0' ; i ++ ) { if ( url [ i ] == '\0' || url [ i ] != prefix [ i ] ) { return 0 ; } } if ( url [ i ] == '\0' || url [ i ] == '/' ) { * path_info = url + i ; return 1 ; } return 0 ; } 

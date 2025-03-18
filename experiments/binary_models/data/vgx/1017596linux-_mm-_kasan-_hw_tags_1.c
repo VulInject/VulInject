@@ -1,0 +1,1 @@
+static void unpoison_vmalloc_pages ( const void * addr , u8 tag ) { struct vm_struct * area ; int i ; area = find_vm_area ( ( void * ) addr ) ; for ( i = 0 ; i < area -> nr_pages ; i ++ ) { struct page * page = area -> pages [ i ] ; page_kasan_tag_set ( page , tag ) ; } } 

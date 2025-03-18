@@ -1,0 +1,1 @@
+void wbt_set_queue_depth ( struct rq_wb * rwb , unsigned int depth ) { if ( rwb ) { rwb -> queue_depth = depth ; wbt_update_limits ( rwb , NULL ) ; } } 

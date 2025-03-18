@@ -1,0 +1,1 @@
+static void addrinfo_to_text ( struct addrinfo * ai , char buf [ ] , const size_t buf_size ) { char hbuf [ NI_MAXHOST ] ; char sbuf [ NI_MAXSERV ] ; int rc ; buf [ 0 ] = '\0' ; if ( rc ) { err ( "getnameinfo: %s" , gai_strerror ( rc ) ) ; } snprintf ( buf , buf_size , "%s:%s" , hbuf , sbuf ) ; } 

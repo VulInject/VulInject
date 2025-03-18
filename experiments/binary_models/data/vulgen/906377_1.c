@@ -1,0 +1,1 @@
+int intel_uc_fw_mark_load_failed ( struct intel_uc_fw * uc_fw , int err ) { struct intel_gt * gt = __uc_fw_to_gt ( uc_fw ) ; i915_probe_error ( gt -> i915 , "Failed to load %s firmware %s (%d)\n" , intel_uc_fw_type_repr ( uc_fw -> type ) , uc_fw -> file_selected . path , err ) ; intel_uc_fw_change_status ( uc_fw , INTEL_UC_FIRMWARE_LOAD_FAIL ) ; return err ; } 

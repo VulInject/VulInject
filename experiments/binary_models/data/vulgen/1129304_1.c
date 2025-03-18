@@ -1,0 +1,1 @@
+static void chacha_ctx_full_test ( struct chacha_tv * tv , unsigned char * out , unsigned char * in ) { ChaCha_ctx ctx ; ChaCha_set_key ( & ctx , tv -> key , 256 ) ; ChaCha ( & ctx , out , in , tv -> len ) ; } 

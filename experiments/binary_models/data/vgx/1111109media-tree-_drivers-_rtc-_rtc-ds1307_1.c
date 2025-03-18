@@ -1,0 +1,1 @@
+static int ds3231_clk_32khz_is_prepared ( struct clk_hw * hw ) { struct ds1307 * ds1307 = clk_32khz_to_ds1307 ( hw ) ; int status ; status = i2c_smbus_read_byte_data ( ds1307 -> client , DS1337_REG_STATUS ) ; return ! ! ( status & DS3231_BIT_EN32KHZ ) ; } 

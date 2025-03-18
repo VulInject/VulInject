@@ -1,0 +1,1 @@
+static int pca963x_remove ( struct i2c_client * client ) { struct pca963x * pca963x = i2c_get_clientdata ( client ) ; int i ; return 0 ; } 

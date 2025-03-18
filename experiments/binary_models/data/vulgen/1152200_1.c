@@ -1,0 +1,1 @@
+void EnablePortalManager ( void ) { HASHCTL ctl ; TopPortalContext = AllocSetContextCreate ( TopMemoryContext , "TopPortalContext" , ALLOCSET_DEFAULT_SIZES ) ; ctl . keysize = MAX_PORTALNAME_LEN ; ctl . entrysize = sizeof ( PortalHashEnt ) ; PortalHashTable = hash_create ( "Portal hash" , PORTALS_PER_USER , & ctl , HASH_ELEM | HASH_STRINGS ) ; } 

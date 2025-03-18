@@ -1,0 +1,1 @@
+static ssize_t dfscache_proc_write ( struct file * file , const char __user * buffer , size_t count , loff_t * ppos ) { char c ; int rc ; rc = get_user ( c , buffer ) ; if ( c != '0' ) { return - EINVAL ; } cifs_dbg ( FYI , "clearing dfs cache\n" ) ; down_write ( & htable_rw_lock ) ; flush_cache_ents ( ) ; up_write ( & htable_rw_lock ) ; return count ; } 

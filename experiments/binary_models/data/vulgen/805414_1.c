@@ -1,0 +1,1 @@
+int uu_strcaseeq ( const char * a , const char * b ) { return ( strcasecmp ( a , b ) == 0 ) ; } 

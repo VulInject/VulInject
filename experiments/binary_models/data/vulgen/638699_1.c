@@ -1,0 +1,1 @@
+__attribute__ ( ) int d0 ( void ) , __attribute__ ( ( format ( printf , 1 , 2 ) ) ) d1 ( const char * , ... ) , d2 ( void ) ; 

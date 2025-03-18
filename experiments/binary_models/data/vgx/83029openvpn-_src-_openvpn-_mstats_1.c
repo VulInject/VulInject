@@ -1,0 +1,1 @@
+void mstats_close ( void ) { if ( mmap_stats ) { mmap_stats -> state = MSTATS_EXPIRED ; if ( munmap ( ( void * ) mmap_stats , sizeof ( mmap_stats ) ) ) { msg ( M_WARN | M_ERRNO , "mstats_close: munmap error" ) ; } platform_unlink ( mmap_fn ) ; } } 

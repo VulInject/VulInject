@@ -1,0 +1,1 @@
+static size_t manager_current_workers ( Manager * m ) { return set_size ( m -> workers_fixed ) + set_size ( m -> workers_dynamic ) ; } 

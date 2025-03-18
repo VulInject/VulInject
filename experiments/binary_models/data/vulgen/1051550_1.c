@@ -1,0 +1,1 @@
+int mgr_get_resource ( struct rsc_mgr * mgr , unsigned int n , unsigned int * ridx ) { int err ; err = get_resource ( mgr -> rscs , mgr -> amount , n , ridx ) ; if ( ! err ) { mgr -> avail -= n ; } return err ; } 

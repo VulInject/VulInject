@@ -1,0 +1,1 @@
+int pq2_fixup_clocks ( u32 crystal ) { u32 sysfreq , corefreq , timebase , brgfreq ; pq2_set_clocks ( sysfreq , corefreq , timebase , brgfreq ) ; return 1 ; } 

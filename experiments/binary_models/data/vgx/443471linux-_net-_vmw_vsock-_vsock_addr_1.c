@@ -1,0 +1,1 @@
+( vsock_addr_init ) ; int vsock_addr_validate ( const struct sockaddr_vm * addr ) { __u8 svm_valid_flags = VMADDR_FLAG_TO_HOST ; if ( ! addr ) { return - EFAULT ; } if ( addr -> svm_family != AF_VSOCK ) { return - EAFNOSUPPORT ; } return 0 ; } 

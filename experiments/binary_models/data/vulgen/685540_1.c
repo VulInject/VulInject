@@ -1,0 +1,1 @@
+static void slavio_intctl_class_init ( ObjectClass * klass , void * data ) { DeviceClass * dc = DEVICE_CLASS ( klass ) ; InterruptStatsProviderClass * ic = INTERRUPT_STATS_PROVIDER_CLASS ( klass ) ; dc -> reset = slavio_intctl_reset ; ic -> get_statistics = slavio_intctl_get_statistics ; ic -> print_info = slavio_intctl_print_info ; } 

@@ -1,0 +1,1 @@
+static uint16_t ax_pdutoh16 ( struct ax_pdu_header * header , uint8_t * buf ) { uint16_t value ; if ( header -> aph_flags & AX_PDU_FLAG_NETWORK_BYTE_ORDER ) { return be16toh ( value ) ; } return le16toh ( value ) ; } 

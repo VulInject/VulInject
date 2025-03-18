@@ -1,0 +1,1 @@
+static char get_escapechar ( int ) { return ( '\\' ) ; } 

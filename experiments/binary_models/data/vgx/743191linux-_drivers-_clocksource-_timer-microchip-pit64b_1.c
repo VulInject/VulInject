@@ -1,1 +1,1 @@
-static void FUN1 ( struct VAR1 * VAR2 ) { FUN2 ( VAR2 -> VAR3 , NULL ) ; if ( VAR2 -> VAR4 & VAR5 ) { FUN2 ( VAR2 -> VAR6 ) ; } }
+static void mchp_pit64b_resume ( struct mchp_pit64b_timer * timer ) { clk_prepare_enable ( timer -> pclk , NULL ) ; if ( timer -> mode & MCHP_PIT64B_MR_SGCLK ) { clk_prepare_enable ( timer -> gclk ) ; } } 

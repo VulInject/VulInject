@@ -1,0 +1,1 @@
+static void ccw_device_release ( struct device * dev ) { struct ccw_device * cdev ; cdev = to_ccwdev ( dev ) ; cio_gp_dma_free ( cdev -> private -> dma_pool , cdev -> private -> dma_area , sizeof ( * cdev -> private -> dma_area ) ) ; cio_gp_dma_destroy ( cdev -> private -> dma_pool , & cdev -> dev ) ; put_device ( cdev -> dev . parent ) ; kfree ( cdev -> private ) ; } 

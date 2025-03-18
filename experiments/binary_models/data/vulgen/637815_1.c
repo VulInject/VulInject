@@ -1,0 +1,1 @@
+module_param ( prescaler , int , 0444 ) ; module_param ( clock , int , 0444 ) ; max6650_data { struct i2c_client * client ; int nr_fans ; bool valid ; unsigned long last_updated ; u8 speed ; u8 config ; u8 tach [ 4 ] ; u8 count ; u8 dac ; u8 alarm ; u8 alarm_en ; unsigned long cooling_dev_state ; } 

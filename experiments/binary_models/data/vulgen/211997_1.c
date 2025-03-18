@@ -1,0 +1,1 @@
+void auth2_authctxt_reset_info ( Authctxt * authctxt ) { free ( authctxt -> auth_method_info ) ; authctxt -> auth_method_key = NULL ; authctxt -> auth_method_info = NULL ; } 

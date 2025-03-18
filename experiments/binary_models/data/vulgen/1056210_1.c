@@ -1,0 +1,1 @@
+virLockDriver * virLockManagerPluginGetDriver ( virLockManagerPlugin * plugin ) { return plugin -> driver ; } 

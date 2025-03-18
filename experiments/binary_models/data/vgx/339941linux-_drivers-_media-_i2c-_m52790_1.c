@@ -1,0 +1,1 @@
+static int m52790_g_register ( struct v4l2_subdev * sd , struct v4l2_dbg_register * reg ) { struct m52790_state * state = to_state ( sd ) ; reg -> size = 1 ; reg -> val = state -> input | state -> output ; return 0 ; } 

@@ -1,0 +1,1 @@
+value |= 0x00000080 ; __write_32bit_c0_register ( $16 , 3 , value ) ; value = __read_32bit_c0_register ( $16 , 3 ) ; pr_info ( "CP0_Config3: CP0 16.3 (0x%lx)\n" , value ) ; value = __read_32bit_c0_register ( $5 , 1 ) ; __write_32bit_c0_register ( $5 , 1 , value ) ; value = __read_32bit_c0_register ( $5 , 1 ) ; pr_info ( "CP0_PageGrain: CP0 5.1 (0x%lx)\n" , value ) ; 

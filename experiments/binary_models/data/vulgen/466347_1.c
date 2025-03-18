@@ -1,0 +1,1 @@
+opregion_acpi { u32 drdy ; u32 csts ; u32 cevt ; u8 rsvd1 [ 20 ] ; u32 didl [ 8 ] ; u32 cpdl [ 8 ] ; u32 cadl [ 8 ] ; u32 nadl [ 8 ] ; u32 aslp ; u32 tidx ; u32 chpd ; u32 clid ; u32 cdck ; u32 sxsw ; u32 evts ; u32 cnot ; u32 nrdy ; u8 rsvd2 [ 60 ] ; } , __packed 

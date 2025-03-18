@@ -1,0 +1,1 @@
+rockchip_saradc_regs { unsigned int data ; unsigned int stas ; unsigned int ctrl ; } 

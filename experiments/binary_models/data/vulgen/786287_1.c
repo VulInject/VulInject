@@ -1,0 +1,1 @@
+AVFrame * magnitude , * phase ; AVTXContext * fft ; av_tx_fn tx_fn ; AVComplexFloat * * fft_in ; AVComplexFloat * * fft_out ; int win_size ; int size ; int nb_freq ; int hop_size ; int start , end ; int xpos ; int xend ; int64_t pts ; float factor ; AVFrame * buffer ; 

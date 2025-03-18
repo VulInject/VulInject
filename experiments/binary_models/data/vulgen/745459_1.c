@@ -1,0 +1,1 @@
+START_TEST ( ) { strs = M_str_explode_lines ( 3 , 7 , "12345 12345 1 1234567 123" , M_FALSE , & num ) ; ck_assert ( strs == NULL ) ; M_str_explode_free ( strs , num ) ; } 

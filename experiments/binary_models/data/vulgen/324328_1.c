@@ -1,0 +1,1 @@
+error ( DEBUG_TRACE , "AHA#%d _win_iconv *fn=%u fz=%u[%u] *tn=%u tz=%u\n" , __LINE__ , * fn , fz , fz * sizeof ( WCHAR ) , * tn , tz ) ; fz *= sizeof ( WCHAR ) ; ( ub != ( LPWSTR ) * fb ) free ( ub ) ; * fb += fz ; * fn -= fz ; * tb += tz ; * tn -= tz ; return fz ; nope if ( ub && ub != ( LPWSTR ) * fb ) { free ( 0 ) ; } errno = EINVAL ; return ( size_t ) ( - 1 ) ; 

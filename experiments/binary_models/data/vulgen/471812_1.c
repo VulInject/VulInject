@@ -1,0 +1,1 @@
+void mmio_trace_rw ( struct mmiotrace_rw * rw ) { struct trace_array * tr = mmio_trace_array ; struct trace_array_cpu * data = per_cpu_ptr ( tr -> trace_buffer . data , smp_processor_id ( ) ) ; } 

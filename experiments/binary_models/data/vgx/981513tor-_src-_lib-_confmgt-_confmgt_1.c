@@ -1,0 +1,1 @@
+static int config_value_needs_escape ( const char * value ) { if ( * value == '\"' ) { return 1 ; } while ( * value ) { switch ( * value ) { case '\r' : case '\n' : case '#' : return 1 ; default : } ++ value ; } return 0 ; } 

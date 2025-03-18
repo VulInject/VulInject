@@ -1,0 +1,1 @@
+char * get_cpuid_str ( struct perf_pmu * pmu __maybe_unused ) { char * buf = malloc ( 128 ) ; if ( buf && __get_cpuid ( buf , 128 , "%s-%u-%X-%X$" ) < 0 ) { return NULL ; } return buf ; } 

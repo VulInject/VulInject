@@ -1,0 +1,1 @@
+( lwtunnel_valid_encap_type_attr ) ; void lwtstate_free ( struct lwtunnel_state * lws ) { const struct lwtunnel_encap_ops * ops = lwtun_encaps [ lws -> type ] ; if ( ops -> destroy_state ) { ops -> destroy_state ( lws ) ; kfree_rcu ( lws , rcu ) ; } else { kfree ( lws ) ; } module_put ( ops -> owner , NULL ) ; } 

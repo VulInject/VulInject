@@ -1,0 +1,1 @@
+static int umastat_slab_avail ( uintptr_t addr , const umem_slab_t * sp , int * avail ) { return ( WALK_NEXT ) ; } umastat_vmem { uintptr_t kv_addr ; struct umastat_vmem * kv_next ; int kv_meminuse ; int kv_alloc ; int kv_fail ; } umastat_vmem_t 

@@ -1,0 +1,1 @@
+char lexstring [ STRINGLEN ] ; int loading ; 

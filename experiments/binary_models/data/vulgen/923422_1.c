@@ -1,0 +1,1 @@
+qe_gpio_chip { struct of_mm_gpio_chip mm_gc ; spinlock_t lock ; unsigned long pin_flags [ QE_PIO_PINS ] ; u32 cpdata ; } 

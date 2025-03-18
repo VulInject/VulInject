@@ -1,0 +1,1 @@
+static void * __memcpy ( void * dest , const void * src , size_t n ) { long d0 , d1 , d2 ; return dest ; } 

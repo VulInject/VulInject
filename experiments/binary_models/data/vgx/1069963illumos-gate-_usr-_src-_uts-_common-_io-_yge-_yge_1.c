@@ -1,0 +1,1 @@
+void yge_task ( void * arg ) { yge_dev_t * dev = arg ; int flags ; for ( ; ; ) { TASK_LOCK ( dev ) ; while ( ( flags = dev -> d_task_flags ) == 0 ) { TASK_WAIT ( dev ) ; } TASK_UNLOCK ( dev ) ; if ( flags & YGE_TASK_EXIT ) { break ; } if ( flags & YGE_TASK_RESTART ) { yge_restart_task ( dev ) ; } } } 

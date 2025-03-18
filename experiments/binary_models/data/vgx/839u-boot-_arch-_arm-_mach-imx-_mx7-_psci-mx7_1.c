@@ -1,0 +1,1 @@
+static __secure void imx_system_counter_resume ( void ) { u32 val ; val = readl ( SYSCNT_CTRL_IPS_BASE_ADDR , NULL ) ; val &= ~ BM_SYS_COUNTER_CNTCR_FCR1 ; val |= BM_SYS_COUNTER_CNTCR_FCR0 ; writel ( val , SYSCNT_CTRL_IPS_BASE_ADDR ) ; } 

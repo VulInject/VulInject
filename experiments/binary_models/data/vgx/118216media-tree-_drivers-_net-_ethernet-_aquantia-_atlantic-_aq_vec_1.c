@@ -1,0 +1,1 @@
+void aq_vec_free ( struct aq_vec_s * self ) { struct aq_ring_s * ring = NULL ; unsigned int i = 0U ; if ( ! self ) { err_exit } for ( i = 0U , ring = self -> ring [ 0 ] ; self -> tx_rings > i ; ++ i , ring = self -> ring [ i ] ) { aq_ring_free ( & ring [ AQ_VEC_TX_ID ] ) ; aq_ring_free ( & ring [ AQ_VEC_RX_ID ] ) ; } netif_napi_del ( & self -> napi ) ; err_exit } 

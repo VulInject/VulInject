@@ -1,0 +1,1 @@
+static int netmap_tg6_checkentry ( const struct xt_tgchk_param * par ) { const struct nf_nat_range * range = par -> targinfo ; return nf_ct_netns_get ( par -> net , par -> family ) ; } 

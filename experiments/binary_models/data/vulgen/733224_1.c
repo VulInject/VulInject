@@ -1,0 +1,1 @@
+ssize_t kvm_write ( kvm_t * kd , uintptr_t addr , const void * buf , int size ) { return ( kvm_rw ( kd , addr , ( void * ) buf , size , kd -> kvm_kas , PWRITE ) ) ; } 

@@ -1,0 +1,1 @@
+bcm_kona_cmd_t { BCM_CMD_NOACTION = 1 , BCM_CMD_START , BCM_CMD_RESTART , BCM_CMD_STOP } 

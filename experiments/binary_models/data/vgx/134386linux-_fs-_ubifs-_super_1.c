@@ -1,0 +1,1 @@
+static int check_volume_empty ( struct ubifs_info * c ) { int lnum , err ; for ( lnum = 0 ; lnum < c -> leb_cnt ; lnum ++ ) { err = ubifs_is_mapped ( c , lnum ) ; if ( unlikely ( err < 0 ) ) { return err ; } if ( err == 1 ) { c -> empty = 0 ; break ; } cond_resched ( ) ; } return 0 ; } 

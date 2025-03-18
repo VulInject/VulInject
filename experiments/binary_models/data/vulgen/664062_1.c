@@ -1,0 +1,1 @@
+struct ovs_numa_dump * ovs_numa_dump_cores_on_numa ( int numa_id ) { struct ovs_numa_dump * dump = ovs_numa_dump_create ( ) ; if ( numa ) { struct cpu_core * core ; LIST_FOR_EACH ( , , ) { ovs_numa_dump_add ( dump , numa -> numa_id , core -> core_id ) ; } } return dump ; } 

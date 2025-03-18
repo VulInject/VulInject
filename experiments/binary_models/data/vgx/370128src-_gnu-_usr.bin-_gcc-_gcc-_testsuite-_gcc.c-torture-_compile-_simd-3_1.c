@@ -1,0 +1,1 @@
+{ floatvect2 vector ; int f [ 2 ] ; } resfloatvect2 ; 

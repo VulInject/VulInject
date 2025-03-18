@@ -1,0 +1,1 @@
+static inline void QuickSortSigIntId ( SigIntId * sids , uint32_t n ) { SigIntId p = sids [ n / 2 ] ; SigIntId * l = sids ; SigIntId * r = sids + n - 1 ; while ( l <= r ) { if ( * l < p ) { l ++ ; } if ( * r > p ) { r -- ; } else { SigIntId t = * l ; * l = * r ; * r = t ; l ++ ; r -- ; } } QuickSortSigIntId ( sids , r - sids + 1 ) ; QuickSortSigIntId ( l , sids + n - l ) ; } 

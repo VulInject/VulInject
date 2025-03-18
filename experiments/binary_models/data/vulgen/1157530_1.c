@@ -1,0 +1,1 @@
+static unsigned int hi6421v530_regulator_ldo_get_mode ( struct regulator_dev * rdev ) { struct hi6421v530_regulator_info * info ; unsigned int reg_val ; info = rdev_get_drvdata ( rdev ) ; if ( reg_val & ( info -> mode_mask ) ) { return REGULATOR_MODE_IDLE ; } return REGULATOR_MODE_NORMAL ; } 

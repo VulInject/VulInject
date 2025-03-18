@@ -1,0 +1,1 @@
+static void pabort ( int sig ) { extern int mflag ; } 

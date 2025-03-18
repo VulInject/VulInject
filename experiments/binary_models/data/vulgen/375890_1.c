@@ -1,0 +1,1 @@
+static void pf_matchfn ( const char * proto ) { int i ; for ( i = 0 ; dl . dl_net_map_tbl [ i ] . nmt_val != - 1 ; i ++ ) { } } 

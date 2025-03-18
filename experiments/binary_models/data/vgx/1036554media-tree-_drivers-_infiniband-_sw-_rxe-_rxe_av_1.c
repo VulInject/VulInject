@@ -1,0 +1,1 @@
+int rxe_av_from_attr ( struct rxe_dev * rxe , u8 port_num , struct rxe_av * av , struct rdma_ah_attr * attr ) { memcpy ( & av -> grh , rdma_ah_read_grh ( attr ) , sizeof ( * rdma_ah_read_grh ( attr ) ) ) ; av -> port_num = port_num ; return 0 ; } 

@@ -1,0 +1,1 @@
+void X509_reject_clear ( X509 * x ) { if ( x -> aux && x -> aux -> reject ) { x -> aux -> reject = NULL ; } } 

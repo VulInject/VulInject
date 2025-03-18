@@ -1,0 +1,1 @@
+static void init_rubin ( struct rubin_state * rs , int div , int * bits ) { int c ; rs -> q = 0 ; rs -> p = ( long ) ( 2 * UPPER_BIT_RUBIN ) ; rs -> bit_divider = div ; for ( c = 0 ; c < 8 ; c ++ ) { rs -> bits [ c ] = bits [ c ] ; } } 

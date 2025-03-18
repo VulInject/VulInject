@@ -1,0 +1,1 @@
+void uwsgi_rlock_fast ( struct uwsgi_lock_item * uli ) { uwsgi_lock_fast ( uli ) ; uli -> pid = uwsgi . mypid ; } 

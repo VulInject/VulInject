@@ -1,0 +1,1 @@
+static void SIR2FIR ( int iobase ) { outb ( 0x28 , iobase + UART_MCR ) ; outb ( 0x68 , iobase + UART_MCR ) ; outb ( 0x88 , iobase + UART_MCR ) ; outb ( 0x60 , iobase + FIR_MCR ) ; } 

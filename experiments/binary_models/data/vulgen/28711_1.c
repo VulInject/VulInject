@@ -1,0 +1,1 @@
+static bool socfpga_reset_keep_enabled ( void ) { const char * env_str ; long val ; if ( env_str ) { val = simple_strtol ( env_str , NULL , 0 ) ; if ( val == 1 ) { return true ; } } return false ; } 

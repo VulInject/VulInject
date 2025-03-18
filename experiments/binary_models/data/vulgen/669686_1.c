@@ -1,0 +1,1 @@
+static bool print_keymap ( struct xkb_context * ctx , const struct xkb_rule_names * rmlvo ) { struct xkb_keymap * keymap ; if ( keymap == NULL ) { return false ; } printf ( "%s\n" , xkb_keymap_get_as_string ( keymap , XKB_KEYMAP_FORMAT_TEXT_V1 ) ) ; xkb_keymap_unref ( keymap ) ; return true ; } 

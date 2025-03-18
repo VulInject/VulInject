@@ -1,0 +1,1 @@
+LIST_HEAD ( nbr_head , nbr ) ; nbr_table { struct nbr_head * hashtbl ; u_int32_t hashmask ; } , nbrtable & nbrtable . hashtbl [ ( x ) & nbrtable . hashmask ] u_int32_t peercnt = NBR_CNTSTART ; { int state ; int event ; enum nbr_action action ; int new_state ; } , nbr_fsm_tbl [ ] { } ; 

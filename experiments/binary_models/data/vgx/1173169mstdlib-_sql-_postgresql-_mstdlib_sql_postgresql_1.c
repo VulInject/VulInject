@@ -1,1 +1,1 @@
-static void FUN1 ( char * * VAR1 , char * * VAR2 ) { size_t VAR3 ; for ( VAR3 = 0 ; VAR1 [ VAR3 ] != NULL ; VAR3 ++ ) { FUN2 ( VAR1 [ VAR3 ] ) ; FUN2 ( VAR2 [ VAR3 ] ) ; } FUN2 ( VAR1 ) ; FUN2 ( VAR2 ) ; }
+static void pgsql_kvarray_free ( char * * keys , char * * vals ) { size_t i ; for ( i = 0 ; keys [ i ] != NULL ; i ++ ) { M_free ( keys [ i ] ) ; M_free ( vals [ i ] ) ; } M_free ( keys ) ; M_free ( vals ) ; } 

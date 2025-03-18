@@ -1,0 +1,1 @@
+static void ecp_restart_rsm_free ( mbedtls_ecp_restart_mul_ctx * ctx ) { unsigned char i ; if ( ctx == NULL ) { return ; } mbedtls_ecp_point_free ( & ctx -> R ) ; ecp_restart_rsm_init ( ctx ) ; } mbedtls_ecp_restart_muladd { mbedtls_ecp_point mP ; mbedtls_ecp_point R ; { ecp_rsma_mul1 = 0 , ecp_rsma_mul2 , ecp_rsma_add , ecp_rsma_norm } , state } 

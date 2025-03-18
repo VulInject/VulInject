@@ -1,0 +1,1 @@
+static bool parent_is_fresh_alloc ( struct expression * expr ) { struct symbol * sym ; sym = expr_to_sym ( expr ) ; return is_fresh_alloc_var_sym ( sym -> ident -> name , sym ) ; } 

@@ -1,0 +1,1 @@
+static phys_addr_t kvm_kaddr_to_phys ( void * kaddr ) { if ( ! is_vmalloc_addr ( kaddr ) ) { BUG_ON ( ! virt_addr_valid ( kaddr ) ) ; return __pa ( kaddr ) ; } else { return page_to_phys ( vmalloc_to_page ( kaddr ) ) + offset_in_page ( kaddr ) ; } } hyp_shared_pfn { int pfn ; int count ; struct rb_node node ; } 

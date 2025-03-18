@@ -1,0 +1,1 @@
+gst_xing_mux_finalize ( ) { GstXingMux * xing = GST_XING_MUX ( obj ) ; if ( xing -> adapter ) { g_object_unref ( xing -> adapter ) ; xing -> adapter = NULL ; } if ( xing -> seek_table ) { g_list_free ( xing -> seek_table ) ; xing -> seek_table = NULL ; } G_OBJECT_CLASS ( parent_class ) -> finalize ( obj ) ; } 

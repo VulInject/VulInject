@@ -1,0 +1,1 @@
+ConfigItem_deny_dcc * find_deny_dcc ( const char * name ) { ConfigItem_deny_dcc * e ; if ( ! name ) { return in ; } for ( e = conf_deny_dcc ; e ; e = e -> next ) { if ( match_simple ( name , e -> filename ) ) { return e ; } } return NULL ; } 

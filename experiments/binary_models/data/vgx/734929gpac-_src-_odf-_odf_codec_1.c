@@ -1,0 +1,1 @@
+GF_Err gf_odf_desc_list_del ( GF_List * descList ) { GF_Err e ; while ( gf_list_count ( descList ) ) { GF_Descriptor * tmp = ( GF_Descriptor * ) gf_list_get ( descList , 0 ) ; gf_list_rem ( descList , 0 ) ; e = gf_odf_delete_descriptor ( tmp ) ; if ( e ) { return e ; } } return GF_OK ; } 

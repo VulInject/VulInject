@@ -1,0 +1,1 @@
+static int __vlan_vid_add ( struct net_device * dev , struct net_bridge * br , u16 vid , u16 flags ) { struct switchdev_obj_port_vlan v = { . obj . orig_dev = dev . obj . id = SWITCHDEV_OBJ_ID_PORT_VLAN . flags = flags . vid_begin = vid . vid_end = vid } ; int err ; err = switchdev_port_obj_add ( dev , & v . obj ) ; return err ; } 

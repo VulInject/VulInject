@@ -1,0 +1,1 @@
+static u32 gen_new_htid ( struct tc_u_common * tp_c , struct tc_u_hnode * ptr ) { int id = idr_alloc_cyclic ( & tp_c -> handle_idr , ptr , 1 , 0x7FF , GFP_KERNEL ) ; return ( id | 0x800U ) << 20 ; } 

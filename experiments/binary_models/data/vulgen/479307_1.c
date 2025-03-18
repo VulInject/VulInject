@@ -1,0 +1,1 @@
+void idgen32_init ( struct idgen32_ctx * ctx ) { bzero ( ctx , sizeof ( * ctx ) ) ; idgen32_rekey ( ctx ) ; } 

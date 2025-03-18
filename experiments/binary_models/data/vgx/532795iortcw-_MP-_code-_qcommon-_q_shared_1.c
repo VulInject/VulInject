@@ -1,0 +1,1 @@
+static char * SkipWhitespace ( char * data , qboolean * hasNewLines ) { int c ; while ( ( c = * data ) <= ' ' ) { if ( ! c ) { return in ; } if ( c == '\n' ) { com_lines ++ ; * hasNewLines = qtrue ; } data ++ ; } return data ; } 

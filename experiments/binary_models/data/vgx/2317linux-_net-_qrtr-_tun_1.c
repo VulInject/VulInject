@@ -1,0 +1,1 @@
+qrtr_tun { struct qrtr_endpoint ep ; int queue ; wait_queue_head_t readq ; } 

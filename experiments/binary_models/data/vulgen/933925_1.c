@@ -1,0 +1,1 @@
+VOID f_init ( Void ) { unit * p ; f__init = 1 ; p = & f__units [ 0 ] ; p -> ufd = stderr ; p -> useek = f__canseek ( stderr ) ; p -> ufmt = 1 ; p -> uwrt = 1 ; p = & f__units [ 5 ] ; p -> ufd = stdin ; p -> useek = f__canseek ( stdin ) ; p -> ufmt = 1 ; p -> uwrt = 0 ; p -> ufd = stdout ; p -> useek = f__canseek ( stdout ) ; p -> ufmt = 1 ; p -> uwrt = 1 ; } 

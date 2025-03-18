@@ -1,1 +1,1 @@
-static int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR2 , VAR3 , VAR2 ) ; if ( VAR4 -> VAR5 ) { FUN3 ( VAR2 -> VAR6 , NULL ) ; VAR4 -> VAR5 = 0 ; } return 0 ; }
+static int ccount_timer_shutdown ( struct clock_event_device * evt ) { struct ccount_timer * timer = container_of ( evt , ccount_timer , evt ) ; if ( timer -> irq_enabled ) { disable_irq ( evt -> irq , NULL ) ; timer -> irq_enabled = 0 ; } return 0 ; } 

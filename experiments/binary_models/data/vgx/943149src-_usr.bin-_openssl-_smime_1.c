@@ -1,0 +1,1 @@
+static int smime_opt_verify_param ( int argc , char * * argv , int * argsused ) { int oargc = argc ; int badarg = 0 ; if ( ! args_verify ( & argv , & argc , & badarg , bio_err , & smime_config . vpm ) ) { return ( 1 ) ; } * argsused = oargc - argc ; return ( 0 ) ; } 

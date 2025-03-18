@@ -1,0 +1,1 @@
+LEXER_TOKEN lexer_lex ( register Lexer * lp ) { lp -> d_token = l_lex ( lp ) ; if ( message_show ( MSG_INFO ) ) { message ( "lexer_lex() returns %s (= `%s')" , l_token_name [ lp -> d_token ] , lexer_text ( lp ) ) ; } return lp -> d_token ; } 

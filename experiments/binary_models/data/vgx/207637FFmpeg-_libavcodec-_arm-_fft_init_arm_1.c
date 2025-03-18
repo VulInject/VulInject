@@ -1,0 +1,1 @@
+if ( have_vfp_vm ( cpu_flags ) ) { s -> fft_calc = ff_fft_calc_vfp ; } if ( have_neon ( cpu_flags ) ) { if ( s -> nbits < 17 ) { s -> fft_permute = ff_fft_permute_neon ; s -> fft_calc = ff_fft_calc_neon ; } s -> imdct_calc = ff_imdct_calc_neon ; s -> imdct_half = ff_imdct_half_neon ; s -> mdct_calc = ff_mdct_calc_neon ; s -> mdct_permutation = FF_MDCT_PERM_INTERLEAVE ; } 

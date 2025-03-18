@@ -1,0 +1,1 @@
+int ims_match ( struct device * , void * , void * ) void ims_attach ( struct device * , struct device * , void * ) int ims_detach ( struct device * , int ) int ims_cd = { NULL "ims" DV_DULL } ; 

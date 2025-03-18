@@ -1,0 +1,1 @@
+static int scpsys_power_request ( struct power_domain * power_domain ) { struct scp_domain * scpd = dev_get_priv ( power_domain -> dev ) ; struct scp_domain_data * data ; data = & scpd -> data [ power_domain -> id ] ; return 0 ; } 

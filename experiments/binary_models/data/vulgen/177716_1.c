@@ -1,0 +1,1 @@
+static void pppoed_listener_init ( pppoed * _this , pppoed_listener * listener ) { memset ( listener , 0 , sizeof ( pppoed_listener ) ) ; listener -> self = _this ; listener -> index = PPPOED_LISTENER_INVALID_INDEX ; } 

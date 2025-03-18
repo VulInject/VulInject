@@ -1,0 +1,1 @@
+void isc_ondestroy_init ( isc_ondestroy_t * ondest ) { ondest -> magic = ONDESTROY_MAGIC ; ISC_LIST_INIT ( ondest -> events , NULL ) ; } 

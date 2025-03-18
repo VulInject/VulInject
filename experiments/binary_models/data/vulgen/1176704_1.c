@@ -1,0 +1,1 @@
+static int i810fb_open ( struct fb_info * info , int user ) { struct i810fb_par * par = info -> par ; mutex_lock ( & par -> open_lock ) ; par -> use_count ++ ; mutex_unlock ( & par -> open_lock ) ; return 0 ; } 

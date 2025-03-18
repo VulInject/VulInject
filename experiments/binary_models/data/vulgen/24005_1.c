@@ -1,0 +1,1 @@
+( snd_hda_override_amp_caps ) ; static unsigned int encode_amp ( struct hda_codec * codec , hda_nid_t nid , int ch , int dir , int idx ) { unsigned int cmd = snd_hdac_regmap_encode_amp ( nid , ch , dir , idx ) ; return cmd ; } 

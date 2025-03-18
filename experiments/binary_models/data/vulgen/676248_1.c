@@ -1,0 +1,1 @@
+START_TEST ( ) { pbs_attribute attr ; pbs_attribute new_attr ; memset ( & attr , 0 , sizeof ( attr ) ) ; new_attr . at_val . at_str = strdup ( "ERROR message\n" ) ; } 

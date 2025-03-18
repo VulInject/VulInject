@@ -1,0 +1,1 @@
+static void slist_destroy ( const struct ConfigSet * cs , void * var , const struct ConfigDef * cdef ) { if ( ! cs || ! var || ! cdef ) { return ; } struct Slist * * l = ( Slist * * ) var ; if ( ! * l ) { return ; } } 

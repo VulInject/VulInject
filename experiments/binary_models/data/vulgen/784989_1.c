@@ -1,0 +1,1 @@
+void cfg80211_mlme_unreg_wk ( struct work_struct * wk ) { struct cfg80211_registered_device * rdev ; rdev = container_of ( wk , cfg80211_registered_device , mlme_unreg_wk ) ; rtnl_lock ( ) ; cfg80211_process_mlme_unregistrations ( rdev ) ; } 

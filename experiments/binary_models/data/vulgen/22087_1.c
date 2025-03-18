@@ -1,0 +1,1 @@
+UuidInfo * qmp_query_uuid ( Error * * errp ) { UuidInfo * info = g_malloc0 ( sizeof ( * info ) ) ; return info ; } 

@@ -1,0 +1,1 @@
+krb5_error_code KRB5_CALLCONV krb5_enctype_to_string ( krb5_enctype enctype , char * buffer , size_t buflen ) { const struct krb5_keytypes * ktp ; ktp = find_enctype ( enctype , NULL ) ; if ( ktp == NULL ) { return EINVAL ; } if ( strlcpy ( buffer , ktp -> out_string , buflen ) >= buflen ) { return ENOMEM ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static void _iq_free_room_data ( ProfRoomInfoData * roominfo ) { if ( roominfo ) { free ( roominfo -> room ) ; } } 

@@ -1,0 +1,1 @@
+static void ucan_cleanup_rx_urbs ( struct ucan_priv * up , struct urb * * urbs ) { int i ; for ( i = 0 ; i < UCAN_MAX_RX_URBS ; i ++ ) { if ( urbs [ i ] ) { usb_unanchor_urb ( urbs [ i ] ) ; usb_free_coherent ( up -> udev , up -> in_ep_size , urbs [ i ] -> transfer_buffer , urbs [ i ] -> transfer_dma ) ; } } memset ( urbs , 0 , sizeof ( * urbs ) * UCAN_MAX_RX_URBS ) ; } 

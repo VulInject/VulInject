@@ -1,0 +1,1 @@
+bool dirent_is_file_with_suffix ( const struct dirent * de , const char * suffix ) { assert ( de ) ; if ( de -> d_name [ 0 ] == '.' ) { return false ; } if ( ! suffix ) { return true ; } return endswith ( de -> d_name , suffix ) ; } 

@@ -1,0 +1,1 @@
+static void virEventGLibFDSourceFinalize ( GSource * source G_GNUC_UNUSED ) { } int virEventGLibFDSourceFuncs = { . prepare = virEventGLibFDSourcePrepare . check = virEventGLibFDSourceCheck . dispatch = virEventGLibFDSourceDispatch . finalize = virEventGLibFDSourceFinalize } ; 

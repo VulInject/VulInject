@@ -1,0 +1,1 @@
+int smp_error ( smp_errno_t err , const char * fmt , ... ) { va_list ap ; va_start ( ap , fmt ) ; err = smp_verror ( err , fmt , ap ) ; va_end ( ap ) ; return ( err ) ; } 

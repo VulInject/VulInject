@@ -1,0 +1,1 @@
+( GCMDP2GDEVP ( gcmdp1 ) == GCMDP2GDEVP ( gcmdp2 ) ) ( GCMDP2CCCP ( gcmdp1 ) == GCMDP2CCCP ( gcmdp2 ) ) { if ( ( gcmdp ) -> cmd_state < ( newstate ) ) { ( ( gcmdp ) -> cmd_state = ( newstate ) ) ; ; } } ; struct mod_ops mod_miscops ; static struct modlmisc modlmisc = { & mod_miscops "CCB Timeout Utility Routines" } ; 

@@ -1,0 +1,1 @@
+module_init ( rng_init ) ; module_exit ( rng_exit , NULL ) ; 

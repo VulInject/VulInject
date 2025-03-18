@@ -1,0 +1,1 @@
+( ath9k_hw_stopdmarecv ) ; int ath9k_hw_beaconq_setup ( struct ath_hw * ah ) { struct ath9k_tx_queue_info qi ; memset ( & qi , 0 , sizeof ( qi ) ) ; qi . tqi_cwmin = 0 ; qi . tqi_cwmax = 0 ; if ( ah -> caps . hw_caps & ATH9K_HW_CAP_EDMA ) { qi . tqi_qflags = TXQ_FLAG_TXINT_ENABLE ; } return ath9k_hw_setuptxqueue ( ah , ATH9K_TX_QUEUE_BEACON , & qi ) ; } 

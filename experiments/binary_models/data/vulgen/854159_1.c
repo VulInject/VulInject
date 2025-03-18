@@ -1,0 +1,1 @@
+static void match_kmap_atomic ( const char * fn , struct expression * expr , void * data ) { struct expression * arg ; arg = get_argument_from_call_expr ( expr -> args , 0 ) ; } 

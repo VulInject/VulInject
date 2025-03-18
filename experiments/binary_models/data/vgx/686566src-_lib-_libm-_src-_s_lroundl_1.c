@@ -1,0 +1,1 @@
+static const type dtype_min = DTYPE_MIN - 0.5 ; static const type dtype_max = DTYPE_MAX + 0.5 ; ( ( x ) > dtype_min && ( x ) < dtype_max ) ; dtype fn ( type x ) { if ( INRANGE ( x ) ) { x = roundit ( x , NULL ) ; return ( ( dtype ) x ) ; } else { feraiseexcept ( FE_INVALID ) ; return ( DTYPE_MAX ) ; } } 

@@ -1,0 +1,1 @@
+int islocal ( char * user , uid_t * puid ) { char fname [ MAXPATHLEN ] ; struct stat statb ; struct passwd * pwd_ptr ; ( void ) snprintf ( fname , sizeof ( fname ) , "%s%s" , maildir , user ) ; if ( stat ( fname , & statb ) == 0 ) { * puid = statb . st_uid ; return ( TRUE ) ; } setpwent ( ) ; * puid = pwd_ptr -> pw_uid ; return ( TRUE ) ; } 

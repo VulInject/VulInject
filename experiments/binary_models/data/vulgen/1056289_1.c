@@ -1,0 +1,1 @@
+static void * bfin_dma_alloc ( struct device * dev , size_t size , dma_addr_t * dma_handle , gfp_t gfp , unsigned long attrs ) { void * ret ; ret = ( void * ) __alloc_dma_pages ( get_pages ( size ) ) ; if ( ret ) { * dma_handle = virt_to_phys ( ret ) ; } return ret ; } 

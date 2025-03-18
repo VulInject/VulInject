@@ -1,0 +1,1 @@
+extern void ufs_lockfs_tsd_destructor ( void * ) extern uint_t bypass_snapshot_throttle_key ; int _init ( void ) { tsd_create ( & bypass_snapshot_throttle_key , NULL ) ; return ( mod_install ( & modlinkage ) ) ; } 

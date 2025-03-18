@@ -1,0 +1,1 @@
+int put_var_int ( struct string_view * dest , uint64_t val ) { uint8_t buf [ 10 ] { 0 } ; ; int i = 9 ; int n = 0 ; buf [ i ] = ( uint8_t ) ( val & 0x7f ) ; i -- ; while ( 1 ) { val >>= 7 ; if ( ! val ) { break ; } val -- ; buf [ i ] = 0x80 | ( uint8_t ) ( val & 0x7f ) ; i -- ; } n = sizeof ( buf ) - i - 1 ; memcpy ( dest -> buf , & buf [ i + 1 ] , n ) ; return n ; } 

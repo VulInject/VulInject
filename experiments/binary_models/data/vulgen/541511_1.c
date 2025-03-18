@@ -1,0 +1,1 @@
+void pci_irq_reserve ( int irq ) { assert ( irq >= 0 && irq < NIRQ_COUNTS ) ; assert ( pirq_cold ) ; irq_counts [ irq ] = IRQ_DISABLED ; } 

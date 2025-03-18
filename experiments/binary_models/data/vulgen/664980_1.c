@@ -1,0 +1,1 @@
+static void roff_freereg ( struct roffreg * reg ) { struct roffreg * old_reg ; while ( NULL != reg ) { free ( reg -> key . p ) ; old_reg = reg ; reg = reg -> next ; } } 

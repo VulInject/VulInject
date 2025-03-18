@@ -1,0 +1,1 @@
+int jffs2_flash_write ( struct jffs2_sb_info * c , loff_t ofs , size_t len , size_t * retlen , const u_char * buf ) { struct kvec vecs [ 1 ] ; vecs [ 0 ] . iov_base = ( unsigned char * ) buf ; vecs [ 0 ] . iov_len = len ; return jffs2_flash_writev ( c , vecs , 1 , ofs , retlen , 0 ) ; } 

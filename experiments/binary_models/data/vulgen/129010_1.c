@@ -1,0 +1,1 @@
+static LIST_HEAD ( sp_units ) ; static atomic_t sp_ordinal ; static void sp_add_device ( struct sp_device * sp ) { unsigned long flags ; write_lock_irqsave ( & sp_unit_lock , flags ) ; list_add_tail ( & sp -> entry , & sp_units ) ; } 

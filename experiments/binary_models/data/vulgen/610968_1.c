@@ -1,0 +1,1 @@
+static int wdt87xx_validate_fw_chunk ( const void * data , int id ) { if ( id == CHUNK_ID_FRWR ) { u32 fw_id ; fw_id = get_unaligned_le32 ( data + FW_CHUNK_PAYLOAD_OFFSET ) ; } return 0 ; } 

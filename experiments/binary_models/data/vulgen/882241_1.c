@@ -1,0 +1,1 @@
+static int fsl_pcie_init_atmu ( struct fsl_pcie * pcie ) { fsl_pcie_setup_outbound_wins ( pcie ) ; return 0 ; } 

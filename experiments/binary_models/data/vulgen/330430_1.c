@@ -1,0 +1,1 @@
+static bool __kunit_static_stub_resource_match ( struct kunit * test , struct kunit_resource * res , void * match_real_fn_addr ) { struct kunit_static_stub_ctx * ctx = res -> data ; return ctx -> real_fn_addr == match_real_fn_addr ; } 

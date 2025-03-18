@@ -1,0 +1,1 @@
+int pr_json_object_free ( pr_json_object_t * json ) { if ( json == NULL ) { errno = EINVAL ; return - 1 ; } json_delete ( json -> object , NULL ) ; json -> object = NULL ; destroy_pool ( json -> pool ) ; return 0 ; } 

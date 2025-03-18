@@ -1,0 +1,1 @@
+char __nan [ ] __attribute__ ( ( __aligned__ ( sizeof ( ) ) ) ) { 0x7f 0xc0 0 0 } ; ; { 0 , 0 , 0xc0 , 0x7f ; } 

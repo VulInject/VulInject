@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "EP93xx Watchdog" ) ; 

@@ -1,0 +1,1 @@
+static void afs_manage_cell_work ( struct work_struct * work ) { struct afs_cell * cell = container_of ( work , afs_cell , manager ) ; afs_manage_cell ( cell , NULL ) ; afs_put_cell ( cell , afs_cell_trace_put_queue_work ) ; } 

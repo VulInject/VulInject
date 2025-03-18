@@ -1,0 +1,1 @@
+int mv88e61xx_hw_reset ( struct phy_device * phydev ) { return 0 ; } 

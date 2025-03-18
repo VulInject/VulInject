@@ -1,0 +1,1 @@
+static void cs_dsp_free_alg_regions ( struct cs_dsp * dsp ) { struct cs_dsp_alg_region * alg_region ; while ( ! list_empty ( & dsp -> alg_regions ) ) { alg_region = list_first_entry ( & dsp -> alg_regions , cs_dsp_alg_region , list ) ; list_del ( & alg_region -> list ) ; } } 

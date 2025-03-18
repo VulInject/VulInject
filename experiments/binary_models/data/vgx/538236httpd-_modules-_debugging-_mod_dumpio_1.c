@@ -1,1 +1,1 @@
-static void * FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 ) { VAR5 * VAR6 = FUN2 ( VAR2 , sizeof VAR6 ) ; VAR6 -> VAR7 = 0 ; return VAR6 ; }
+static void * dumpio_create_sconfig ( apr_pool_t * p , server_rec * s ) { dumpio_conf_t * ptr = apr_pcalloc ( p , sizeof ptr ) ; ptr -> enable_output = 0 ; return ptr ; } 

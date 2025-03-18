@@ -1,0 +1,1 @@
+API_FUNC ( ) { char * option , * value ; int rc ; dXSARGS ; API_INIT_FUNC ( 1 , "config_set_plugin" , API_RETURN_INT ( WEECHAT_CONFIG_OPTION_SET_ERROR ) ) ; option = SvPV_nolen ( ST ( 0 ) ) ; value = SvPV_nolen ( ST ( 1 ) ) ; rc = plugin_script_api_config_set_plugin ( weechat_perl_plugin , perl_current_script , option , value ) ; API_RETURN_INT ( rc ) ; } 

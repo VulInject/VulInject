@@ -1,0 +1,1 @@
+SyncQueue * sq_alloc ( enum SyncQueueType type , int64_t buf_size_us ) { SyncQueue * sq = av_mallocz ( sizeof ( * sq ) ) ; if ( ! sq ) { return NULL ; } sq -> type = type ; sq -> buf_size_us = buf_size_us ; sq -> head_stream = - 1 ; sq -> head_finished_stream = - 1 ; sq -> pool = ( type == SYNC_QUEUE_PACKETS ) ?objpool_alloc_packets ( ) : objpool_alloc_frames ( ) ; return sq ; } 

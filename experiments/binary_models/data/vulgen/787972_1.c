@@ -1,0 +1,1 @@
+static int st_wdog_start ( struct watchdog_device * wdd ) { struct st_wdog * st_wdog = watchdog_get_drvdata ( wdd ) ; return 0 ; } 

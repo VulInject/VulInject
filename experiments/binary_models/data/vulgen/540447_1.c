@@ -1,0 +1,1 @@
+size_t __wrap_fread ( void * ptr , size_t size , size_t nmemb , FILE * stream ) { if ( stream != & mocked_file_stream ) { return __real_fread ( ptr , size , nmemb , stream ) ; } return mock_type ( size_t ) ; } 

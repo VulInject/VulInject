@@ -1,0 +1,1 @@
+void sirdev_enable_rx ( struct sir_dev * dev ) { if ( unlikely ( atomic_read ( & dev -> enable_rx ) ) ) { return ; } dev -> rx_buff . data = dev -> rx_buff . head ; dev -> rx_buff . in_frame = FALSE ; dev -> rx_buff . state = OUTSIDE_FRAME ; atomic_set ( & dev -> enable_rx , 1 ) ; } 

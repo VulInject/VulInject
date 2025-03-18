@@ -1,0 +1,1 @@
+gdImageFill ( im , 0 , 0 , 0xffffff ) ; gdImageFill ( im , 0 , 0 , 0xffffff ) ; if ( ! gdAssertImageEqualsToFile ( "gdimagefill/bug00002_3_exp.png" , im ) ) { error = 1 ; } gdImageDestroy ( im , NULL ) ; gdImageDestroy ( tile ) ; return error ; 

@@ -1,0 +1,1 @@
+mac_setkey ( , , ) { if ( keylen > 0 && ! key ) { return GPG_ERR_INV_ARG ; } return hd -> spec -> ops -> setkey ( hd , key , keylen ) ; } 

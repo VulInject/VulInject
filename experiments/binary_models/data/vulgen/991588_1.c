@@ -1,0 +1,1 @@
+static void unmap_free_dma_scatter ( struct pl022 * pl022 ) { dma_unmap_sg ( pl022 -> dma_tx_channel -> device -> dev , pl022 -> sgt_tx . sgl , pl022 -> sgt_tx . nents , DMA_TO_DEVICE ) ; dma_unmap_sg ( pl022 -> dma_rx_channel -> device -> dev , pl022 -> sgt_rx . sgl , pl022 -> sgt_rx . nents , DMA_FROM_DEVICE ) ; sg_free_table ( & pl022 -> sgt_tx ) ; } 

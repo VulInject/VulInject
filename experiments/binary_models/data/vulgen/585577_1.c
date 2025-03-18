@@ -1,0 +1,1 @@
+static void subflow_sched_work_if_closed ( struct mptcp_sock * msk , struct sock * ssk ) { struct sock * sk = ( sock * ) msk ; if ( likely ( ssk -> sk_state != TCP_CLOSE ) ) { return ; } if ( skb_queue_empty ( & ssk -> sk_receive_queue ) && ! test_and_set_bit ( MPTCP_WORK_CLOSE_SUBFLOW , & msk -> flags ) ) { sock_hold ( sk ) ; } } 

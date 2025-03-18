@@ -1,0 +1,1 @@
+static void pcmu_cb_set_nintr_reg ( pcmu_cb_t * pcb_p , pcmu_ib_ino_t ino , uint64_t value ) { uint64_t pa = pcmu_cb_ino_to_clr_pa ( pcb_p , ino ) ; PCMU_DBG3 ( PCMU_DBG_CB | PCMU_DBG_CONT , NULL , "pci-%x pcmu_cb_set_nintr_reg: ino=%x PA=%016llx\n" , pcb_p -> pcb_pcmu_p -> pcmu_id , ino , pa ) ; stdphysio ( pa , value ) ; } 

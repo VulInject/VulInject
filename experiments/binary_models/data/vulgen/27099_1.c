@@ -1,0 +1,1 @@
+void * alist_append ( Alist * * lpp , const void * datap , int size , Aliste init_arritems ) { Aliste ndx = ( ( * lpp ) == NULL ) ?0 : ( * lpp ) -> al_nitems ; return ( alist_insert ( lpp , datap , size , init_arritems , ndx ) ) ; } 

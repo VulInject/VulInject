@@ -1,0 +1,1 @@
+static int defaultarg ( int argc , char * * argv , int * argsused ) { if ( strcmp ( argv [ 0 ] , "-multiargz" ) == 0 ) { if ( argc < 3 ) { return ( 1 ) ; } * argsused = 3 ; return ( 0 ) ; } if ( strcmp ( argv [ 0 ] , "-flagz" ) == 0 ) { test_config . flag = 1 ; * argsused = 1 ; return ( 0 ) ; } return ( 1 ) ; } 

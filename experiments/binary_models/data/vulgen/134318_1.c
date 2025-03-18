@@ -1,0 +1,1 @@
+{ WT_NONE , WT_INFO , WT_META , WT_RSRC , WT_REQ , WT_RSP , WT_RVIS , WT_CONV , WT_CONT , LAST_WT } warc_type_t 

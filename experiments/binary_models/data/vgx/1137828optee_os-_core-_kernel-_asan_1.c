@@ -1,0 +1,1 @@
+static bool va_range_outside_shadow ( const void * begin , const void * end ) { vaddr_t b = ( vaddr_t ) begin ; vaddr_t e = ( vaddr_t ) end ; return ( e <= asan_va_base ) || ( b >= ( asan_va_base + asan_va_size ) ) ; } 

@@ -1,0 +1,1 @@
+watchdog_regs { u32 twcsr1 ; u32 tbr ; } 

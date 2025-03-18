@@ -1,0 +1,1 @@
+static ZEND_INI_MH ( ) { if ( ! CG ( multibyte ) ) { return FAILURE ; ; } } ; return zend_multibyte_set_script_encoding_by_string ( new_value ?ZSTR_VAL ( new_value ) : NULL , new_value ?ZSTR_LEN ( new_value ) : 0 ) ; 

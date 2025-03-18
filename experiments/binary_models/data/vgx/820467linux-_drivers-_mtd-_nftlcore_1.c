@@ -1,0 +1,1 @@
+static void nftl_remove_dev ( struct mtd_blktrans_dev * dev ) { struct NFTLrecord * nftl = ( void * ) dev ; pr_debug ( "NFTL: remove_dev (i=%d)\n" , dev -> devnum ) ; del_mtd_blktrans_dev ( dev ) ; kfree ( nftl -> ReplUnitTable ) ; } 

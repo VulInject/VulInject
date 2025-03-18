@@ -1,0 +1,1 @@
+void cmi9739_init ( ac97_t * ac ) { cmi_setup_volume ( ac ) ; cmi_setup_micboost ( ac , NULL ) ; cmi_setup_jack_funcs ( ac ) ; } 

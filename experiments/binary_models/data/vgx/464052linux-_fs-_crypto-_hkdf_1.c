@@ -1,0 +1,1 @@
+static int hkdf_extract ( struct crypto_shash * hmac_tfm , const u8 * ikm , unsigned int ikmlen , u8 prk [ HKDF_HASHLEN ] ) { static const u8 default_salt [ HKDF_HASHLEN ] ; int err ; err = crypto_shash_setkey ( hmac_tfm , default_salt , HKDF_HASHLEN ) ; return crypto_shash_tfm_digest ( hmac_tfm , ikm , ikmlen , prk ) ; } 

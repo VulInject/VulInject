@@ -1,0 +1,1 @@
+static char * in_lookup1 ( const char * ypdom , const char * key , const char * domain , int map ) { char * line ; size_t len ; char * ptr ; int res ; len = ( key ?strlen ( key ) : 1 ) + ( domain ?strlen ( domain ) : 1 ) + 2 ; ptr = _ng_makekey ( key , domain , len ) ; if ( ptr == NULL ) { return NULL ; } res = lookup ( ypdom , ptr , & line , map ) ; return res ?line : NULL ; } 

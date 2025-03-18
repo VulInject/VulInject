@@ -1,0 +1,1 @@
+find_best_successor ( ) basic_block bb ; { edge e ; edge best = NULL ; for ( e = bb -> succ ; e ; e = e -> succ_next ) { if ( ! best || better_p ( e , best ) ) { best = e ; } } if ( ! best || ignore_bb_p ( best -> dest ) ) { return in ; } if ( best -> probability <= probability_cutoff ) { return NULL ; } return best ; } 

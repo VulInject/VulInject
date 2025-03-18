@@ -1,0 +1,1 @@
+static void ifbw_print ( void ) { IFBW * ptr = ifbw ; while ( ptr ) { ptr = ptr -> next ; } } 

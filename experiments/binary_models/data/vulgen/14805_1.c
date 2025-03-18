@@ -1,0 +1,1 @@
+decimal32 * decimal32FromNumber ( decimal32 * d32 , const decNumber * dn , decContext * set ) { uInt status ; Int ae ; } 

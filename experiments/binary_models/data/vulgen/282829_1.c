@@ -1,0 +1,1 @@
+crypto_xof_t * crypto_xof_new ( void ) { crypto_xof_t * xof ; xof = tor_malloc ( sizeof ( crypto_xof_t ) ) ; xof -> ctx = EVP_MD_CTX_new ( ) ; tor_assert ( xof -> ctx ) ; int r = EVP_DigestInit ( xof -> ctx , EVP_shake256 ( ) ) ; tor_assert ( r == 1 ) ; return xof ; } 

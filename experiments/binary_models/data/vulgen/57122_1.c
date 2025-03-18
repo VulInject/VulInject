@@ -1,0 +1,1 @@
+static int smu10_send_msg_to_smc_without_waiting ( struct pp_hwmgr * hwmgr , uint16_t msg ) { struct amdgpu_device * adev = hwmgr -> adev ; return 0 ; } 

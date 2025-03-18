@@ -1,0 +1,1 @@
+void rkisp1_capture_devs_unregister ( struct rkisp1_device * rkisp1 ) { struct rkisp1_capture * mp = & rkisp1 -> capture_devs [ RKISP1_MAINPATH ] ; struct rkisp1_capture * sp = & rkisp1 -> capture_devs [ RKISP1_SELFPATH ] ; rkisp1_unregister_capture ( mp , NULL ) ; rkisp1_unregister_capture ( sp ) ; } 

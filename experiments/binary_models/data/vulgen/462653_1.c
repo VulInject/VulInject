@@ -1,0 +1,1 @@
+int64_t qemu_announce_timer_step ( AnnounceTimer * timer ) { int64_t step ; step = timer -> params . initial + ( timer -> params . rounds - timer -> round - 1 ) * timer -> params . step ; if ( step ( 0 || step ) timer -> params . max ) { step = timer -> params . max ; } return step ; } 

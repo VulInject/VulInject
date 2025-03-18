@@ -1,0 +1,1 @@
+void kgdb_roundup_cpus ( unsigned long flags ) { local_irq_enable ( ) ; smp_call_function ( hexagon_kgdb_nmi_hook , 0 ) ; local_irq_disable ( ) ; } 

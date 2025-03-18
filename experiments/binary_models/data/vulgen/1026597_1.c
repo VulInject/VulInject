@@ -1,0 +1,1 @@
+static void free_links_and_skel ( void ) { if ( ! IS_ERR_OR_NULL ( maps_link ) ) { bpf_link_put ( maps_link ) ; } if ( ! IS_ERR_OR_NULL ( progs_link ) ) { bpf_link_put ( progs_link ) ; } } 

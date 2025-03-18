@@ -1,0 +1,1 @@
+void duk_free_torture ( void * udata , void * ptr ) { unsigned char * p ; size_t old_size ; ( void ) udata ; if ( ! ptr ) { return ; } p = ( unsigned char * ) ptr - sizeof ( alloc_hdr ) - RED_ZONE_SIZE ; old_size = ( ( alloc_hdr * ) ( void * ) p ) -> u . sz ; check_red_zone ( ( alloc_hdr * ) ( void * ) p ) ; free ( ( void * ) p ) ; } 

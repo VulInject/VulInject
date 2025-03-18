@@ -1,0 +1,1 @@
+int new_get_skb_len ( struct __sk_buff * skb ) { int len = skb -> len ; test_get_skb_len = 1 ; return 74 ; } 

@@ -1,0 +1,1 @@
+NODE * node3 ( a , b , c , d ) NODE * b , * c , * d ; { register NODE * x ; x = nodealloc ( 3 ) ; x -> nobj = a ; x -> narg [ 0 ] = b ; x -> narg [ 1 ] = c ; x -> narg [ 2 ] = d ; return ( x ) ; } 

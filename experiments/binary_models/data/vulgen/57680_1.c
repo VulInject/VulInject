@@ -1,0 +1,1 @@
+int gm200_privring_new ( struct nvkm_device * device , enum nvkm_subdev_type type , int inst , struct nvkm_subdev * * pprivring ) { return nvkm_subdev_new_ ( & gm200_privring , device , type , inst , pprivring ) ; } 

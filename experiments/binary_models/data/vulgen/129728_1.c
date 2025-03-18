@@ -1,0 +1,1 @@
+void bar ( int i ) { bar_enter ++ ; if ( i == 0 ) { longjmp ( env , 1 ) ; } val += i + 1 ; bar_exit ++ ; } 

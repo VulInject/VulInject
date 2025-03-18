@@ -1,0 +1,1 @@
+void IntlDateFormatter_object_free ( zend_object * object ) { IntlDateFormatter_object * dfo = php_intl_dateformatter_fetch_object ( object ) ; zend_object_std_dtor ( & dfo -> zo ) ; if ( dfo -> requested_locale ) { efree ( dfo -> requested_locale ) ; } } 

@@ -1,0 +1,1 @@
+( ntb_set_ctx ) ; void ntb_clear_ctx ( struct ntb_dev * ntb ) { unsigned long irqflags ; spin_lock_irqsave ( & ntb -> ctx_lock , irqflags ) ; { ntb -> ctx = NULL ; } spin_unlock_irqrestore ( & ntb -> ctx_lock , irqflags ) ; } 

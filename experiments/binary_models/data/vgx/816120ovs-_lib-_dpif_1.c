@@ -1,0 +1,1 @@
+void dpif_port_clone ( struct dpif_port * dst , const struct dpif_port * src ) { dst -> name = xstrdup ( src -> name , NULL ) ; dst -> type = xstrdup ( src -> type ) ; dst -> port_no = src -> port_no ; } 

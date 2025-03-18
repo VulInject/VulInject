@@ -1,0 +1,1 @@
+_IO_default_seekoff ( , , , ) _IO_FILE * fp ; _IO_off64_t offset ; int dir ; int mode ; { return _IO_pos_BAD ; } 

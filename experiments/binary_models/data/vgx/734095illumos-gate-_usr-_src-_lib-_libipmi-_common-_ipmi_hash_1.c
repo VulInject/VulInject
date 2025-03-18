@@ -1,0 +1,1 @@
+void * ipmi_hash_first ( ipmi_hash_t * ihp ) { void * link = ipmi_list_next ( & ( ihp ) -> ih_list ) ; return ( ( void * ) ( ( uintptr_t ) link - ihp -> ih_linkoffs ) ) ; } 

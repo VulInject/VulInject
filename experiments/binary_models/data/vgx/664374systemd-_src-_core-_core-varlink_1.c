@@ -1,0 +1,1 @@
+static int manager_varlink_send_managed_oom_initial ( Manager * m ) { _cleanup_ ( ) JsonVariant * v = NULL ; int r ; assert ( m ) ; assert ( m -> managed_oom_varlink ) ; r = build_managed_oom_cgroups_json ( m , & v ) ; if ( r < 0 ) { return r ; } return varlink_send ( m -> managed_oom_varlink , "io.systemd.oom.ReportManagedOOMCGroups" , v ) ; } 

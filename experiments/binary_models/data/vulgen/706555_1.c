@@ -1,0 +1,1 @@
+int i2d_X509_REQ ( X509_REQ * a , unsigned char * * out ) { return ASN1_item_i2d ( ( ASN1_VALUE * ) a , out , & X509_REQ_it ) ; } 

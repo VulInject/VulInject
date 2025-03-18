@@ -1,0 +1,1 @@
+extern int ok1 [ 1 ] ; int ok1 [ ] ; extern int ko1 [ 1 ] ; int ko1 [ 2 ] ; 

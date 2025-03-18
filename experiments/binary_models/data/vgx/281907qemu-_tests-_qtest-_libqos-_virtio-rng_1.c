@@ -1,0 +1,1 @@
+static void * virtio_rng_device_create ( void * virtio_dev , QGuestAllocator * t_alloc , void * addr ) { QVirtioRngDevice * virtio_rdevice = g_malloc0 ( sizeof ( QVirtioRngDevice ) ) ; QVirtioRng * interface = & virtio_rdevice -> rng ; interface -> vdev = virtio_dev ; virtio_rdevice -> obj . get_driver = qvirtio_rng_device_get_driver ; return & virtio_rdevice -> obj ; } 

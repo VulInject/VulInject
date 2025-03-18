@@ -1,0 +1,1 @@
+add_to_inhibit_string ( , ) { GimpModule * module = data ; GString * str = user_data ; if ( ! gimp_module_get_auto_load ( module ) ) { GFile * file = gimp_module_get_file ( module ) ; gchar * path = g_file_get_path ( file ) ; g_string_append_c ( str , G_SEARCHPATH_SEPARATOR ) ; g_string_append ( str , path ) ; } } 

@@ -1,0 +1,1 @@
+static void target_remove_from_state_list ( struct se_cmd * cmd ) { struct se_device * dev = cmd -> se_dev ; unsigned long flags ; spin_lock_irqsave ( & dev -> execute_task_lock , flags ) ; if ( cmd -> state_active ) { list_del ( & cmd -> state_list ) ; cmd -> state_active = false ; } spin_unlock_irqrestore ( & dev -> execute_task_lock , flags ) ; } 

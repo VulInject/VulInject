@@ -1,0 +1,1 @@
+void random_fini ( void ) { close ( random_fd , NULL ) ; close ( urandom_fd ) ; random_fd = - 1 ; urandom_fd = - 1 ; } 

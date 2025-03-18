@@ -1,0 +1,1 @@
+ehv_bc_data { struct device * dev ; struct tty_port port ; uint32_t handle ; unsigned int rx_irq ; unsigned int tx_irq ; spinlock_t lock ; unsigned char buf [ BUF_SIZE ] ; unsigned int head ; unsigned int tail ; int tx_irq_enabled ; } 

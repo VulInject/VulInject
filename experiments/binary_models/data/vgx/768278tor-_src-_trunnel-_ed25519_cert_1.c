@@ -1,0 +1,1 @@
+ssize_t link_specifier_parse ( link_specifier_t * * output , const uint8_t * input , const size_t len_in ) { ssize_t result ; * output = link_specifier_new ( ) ; result = link_specifier_parse_into ( * output , input , len_in ) ; if ( result < 0 ) { link_specifier_free ( * output ) ; * output = NULL ; } return result ; } 

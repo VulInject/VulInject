@@ -1,0 +1,1 @@
+static kcf_policy_desc_t * kcf_policy_alloc_desc ( int km_flag ) { kcf_policy_desc_t * desc ; mutex_init ( & desc -> pd_mutex , NULL , MUTEX_DEFAULT , NULL ) ; return ( desc ) ; } 

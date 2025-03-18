@@ -1,0 +1,1 @@
+int X509_set_notAfter ( X509 * x , const ASN1_TIME * tm ) { ASN1_TIME * in ; in = x -> cert_info -> validity -> notAfter ; if ( in != tm ) { in = ASN1_STRING_dup ( tm ) ; if ( in != NULL ) { ASN1_TIME_free ( x -> cert_info -> validity -> notAfter ) ; x -> cert_info -> validity -> notAfter = in ; } } return ( in != NULL ) ; } 

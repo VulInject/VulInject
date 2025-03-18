@@ -1,0 +1,1 @@
+static double td_bad_spec ( int ctx , int cpu ) { double bad_spec = 0 ; double total_slots ; double total ; total_slots = td_total_slots ( ctx , cpu ) ; if ( total_slots ) { bad_spec = total / total_slots ; } return sanitize_val ( bad_spec ) ; } 

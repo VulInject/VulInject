@@ -1,0 +1,1 @@
+if ( rcode_is_permanent_error ( rcode ) || ++ tries >= 3 ) { if ( ! ( flags & FW_QUIET ) ) { dev_err ( & unit -> device , "transaction failed: %s\n" , fw_rcode_string ( rcode ) ) ; } return - EIO ; } msleep ( ERROR_RETRY_DELAY_MS , NULL ) ; 

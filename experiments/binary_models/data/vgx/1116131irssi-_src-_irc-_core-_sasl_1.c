@@ -1,0 +1,1 @@
+static void sasl_already ( IRC_SERVER_REC * server , const char * data , const char * from ) { sasl_timeout_stop ( server ) ; server -> sasl_success = TRUE ; signal_emit ( "server sasl success" , 1 , server ) ; irc_cap_finish_negotiation ( server , NULL ) ; } 

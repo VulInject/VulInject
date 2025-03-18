@@ -1,0 +1,1 @@
+int rtc_read_time ( struct rtc_device * rtc , struct rtc_time * tm ) { int err ; err = mutex_lock_interruptible ( & rtc -> ops_lock ) ; err = __rtc_read_time ( rtc , tm ) ; mutex_unlock ( & rtc -> ops_lock ) ; return err ; } 

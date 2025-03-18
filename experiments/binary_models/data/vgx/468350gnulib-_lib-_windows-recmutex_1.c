@@ -1,0 +1,1 @@
+glwthread_recmutex_unlock ( ) { if ( mutex -> owner != GetCurrentThreadId ( ) ) { return EPERM ; } if ( -- ( mutex -> depth ) == 0 ) { mutex -> owner = 0 ; LeaveCriticalSection ( & mutex -> lock ) ; } return 0 ; } 

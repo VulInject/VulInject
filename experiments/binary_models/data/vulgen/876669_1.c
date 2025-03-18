@@ -1,0 +1,1 @@
+__weak void board_init_f_init_stack_protection ( void ) { memset ( ( void * ) stack_bottom , CONFIG_VAL ( SYS_STACK_F_CHECK_BYTE ) , CONFIG_VAL ( SIZE_LIMIT_PROVIDE_STACK ) - 0x20 ) ; } 

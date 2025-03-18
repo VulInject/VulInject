@@ -1,0 +1,1 @@
+static int __init test_module_init ( void ) { return 0 ; } 

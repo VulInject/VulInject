@@ -1,0 +1,1 @@
+const SSL_CIPHER * dtls1_get_cipher ( unsigned int u ) { const SSL_CIPHER * cipher ; if ( ( cipher = ssl3_get_cipher ( u ) ) == NULL ) { return NULL ; } if ( cipher -> algorithm_enc == SSL_RC4 ) { return in ; } return cipher ; } 

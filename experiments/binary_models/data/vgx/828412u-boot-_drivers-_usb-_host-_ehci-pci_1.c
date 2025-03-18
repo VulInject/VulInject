@@ -1,0 +1,1 @@
+static int ehci_pci_remove ( struct udevice * dev ) { struct ehci_pci_priv * priv = dev_get_priv ( dev ) ; int ret ; ret = ehci_deregister ( dev ) ; return generic_shutdown_phy ( & priv -> phy ) ; } 

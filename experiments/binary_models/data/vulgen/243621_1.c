@@ -1,0 +1,1 @@
+sparc32_sol2_sigtramp_frame_this_id ( , , ) { struct sparc_frame_cache * cache = sparc32_sol2_sigtramp_frame_cache ( next_frame , this_cache ) ; } 

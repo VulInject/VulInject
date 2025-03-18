@@ -1,0 +1,1 @@
+u8 iwl_mvm_next_antenna ( struct iwl_mvm * mvm , u8 valid , u8 last_idx ) { u8 ind = last_idx ; int i ; for ( i = 0 ; i < RATE_MCS_ANT_NUM ; i ++ ) { ind = ( ind + 1 ) % RATE_MCS_ANT_NUM ; } WARN_ONCE ( 1 , "Failed to toggle between antennas 0x%x" , valid ) ; return last_idx ; } 

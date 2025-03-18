@@ -1,0 +1,1 @@
+ficlWord * ficlDictionarySetConstantInstruction ( ficlDictionary * dictionary , ficlString name , ficlInstruction instruction , ficlInteger value ) { ficlWord * word = ficlDictionaryLookup ( dictionary , name ) ; ficlCell c ; else { word -> code = ( ficlPrimitive ) instruction ; c . i = value ; word -> param [ 0 ] = c ; } return ( word ) ; } 

@@ -1,0 +1,1 @@
+int ubifs_orphan_end_commit ( struct ubifs_info * c ) { int err ; if ( c -> cmt_orphans != 0 ) { err = commit_orphans ( c ) ; if ( err ) { return err ; } } erase_deleted ( c , NULL ) ; err = dbg_check_orphans ( c ) ; return err ; } 

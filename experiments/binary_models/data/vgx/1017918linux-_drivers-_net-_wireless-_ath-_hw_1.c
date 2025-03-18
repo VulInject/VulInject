@@ -1,0 +1,1 @@
+( ath_hw_cycle_counters_update ) ; int32_t ath_hw_get_listen_time ( struct ath_common * common ) { struct ath_cycle_counters * cc = & common -> cc_ani ; int32_t listen_time ; listen_time = ( cc -> cycles - cc -> rx_frame - cc -> tx_frame ) / ( common -> clockrate * 1000 ) ; return listen_time ; } 

@@ -1,0 +1,1 @@
+asmlinkage long sys32_sync_file_range ( int fd , int __pad , unsigned long a2 , unsigned long a3 , unsigned long a4 , unsigned long a5 , int flags ) { return ksys_sync_file_range ( fd , merge_64 ( a2 , a3 ) , merge_64 ( a4 , a5 ) , flags ) ; } 

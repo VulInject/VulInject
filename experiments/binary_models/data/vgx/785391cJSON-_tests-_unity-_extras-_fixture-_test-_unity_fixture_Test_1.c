@@ -1,0 +1,1 @@
+TEST ( , ) { void * m1 = malloc ( 10 ) ; void * m2 = realloc ( m1 , 5 ) ; TEST_ASSERT_POINTERS_EQUAL ( m1 , m2 ) ; } 

@@ -1,0 +1,1 @@
+static int fc2580_s_power ( struct v4l2_subdev * sd , int on ) { struct fc2580_dev * dev = fc2580_subdev_to_dev ( sd ) ; struct i2c_client * client = dev -> client ; int ret ; dev_dbg ( & client -> dev , "on=%d\n" , on ) ; if ( on ) { ret = fc2580_init ( dev ) ; } else { ret = fc2580_sleep ( dev ) ; } return fc2580_set_params ( dev ) ; } 

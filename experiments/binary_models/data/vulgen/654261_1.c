@@ -1,0 +1,1 @@
+void drm_buddy_free_list ( struct drm_buddy * mm , struct list_head * objects ) { struct drm_buddy_block * block , * on ; list_for_each_entry_safe ( , , , ) { drm_buddy_free_block ( mm , block ) ; cond_resched ( ) ; } } 

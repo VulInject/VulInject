@@ -1,0 +1,1 @@
+static unsigned int pmz_get_mctrl ( struct uart_port * port ) { struct uart_pmac_port * uap = to_pmz ( port ) ; unsigned char status ; int ret ; status = read_zsreg ( uap , R0 ) ; ret = 0 ; if ( status & DCD ) { ret |= TIOCM_CAR ; } if ( status & SYNC_HUNT ) { ret |= TIOCM_DSR ; } if ( ! ( status & CTS ) ) { ret |= TIOCM_CTS ; } return ret ; } 

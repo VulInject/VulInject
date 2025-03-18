@@ -1,0 +1,1 @@
+setup_connection ( ) { GError * error = NULL ; if ( client -> connection == NULL ) { client -> connection = g_bus_get_sync ( G_BUS_TYPE_SESSION , NULL , & error ) ; if ( error != NULL ) { g_debug ( "GsmDbusClient: Couldn't connect to session bus: %s" , error -> message ) ; return FALSE ; } } return TRUE ; } 

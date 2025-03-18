@@ -1,0 +1,1 @@
+static void virMediatedDeviceListDispose ( void * obj ) { virMediatedDeviceList * list = obj ; int i ; for ( i = 0 ; i < list -> count ; i ++ ) { g_clear_pointer ( & list -> devs [ i ] , virMediatedDeviceFree ) ; } list -> count = 0 ; g_free ( list -> devs ) ; } 

@@ -1,0 +1,1 @@
+static void free_ga_log ( struct amd_iommu * iommu ) { free_pages ( ( unsigned long ) iommu -> ga_log , get_order ( GA_LOG_SIZE ) ) ; } 

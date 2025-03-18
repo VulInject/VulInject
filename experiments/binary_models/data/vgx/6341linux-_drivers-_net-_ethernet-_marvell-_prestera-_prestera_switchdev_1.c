@@ -1,0 +1,1 @@
+static int prestera_port_attr_br_ageing_set ( struct prestera_port * port , unsigned long ageing_clock_t ) { unsigned long ageing_jiffies = clock_t_to_jiffies ( ageing_clock_t ) ; u32 ageing_time_ms = jiffies_to_msecs ( ageing_jiffies ) ; struct prestera_switch * sw = port -> sw ; return prestera_hw_switch_ageing_set ( sw , ageing_time_ms ) ; } 

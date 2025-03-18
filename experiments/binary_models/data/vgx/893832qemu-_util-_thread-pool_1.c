@@ -1,1 +1,1 @@
-static void FUN1 ( void * VAR1 , int VAR2 ) { VAR3 * VAR4 = VAR1 ; VAR4 -> VAR2 = VAR2 ; FUN2 ( VAR4 -> VAR4 , NULL ) ; }
+static void thread_pool_co_cb ( void * opaque , int ret ) { ThreadPoolCo * co = opaque ; co -> ret = ret ; aio_co_wake ( co -> co , NULL ) ; } 

@@ -1,0 +1,1 @@
+static __init void rng_init_per_cpu ( struct pnv_rng * rng , struct device_node * dn ) { int chip_id , cpu ; chip_id = of_get_ibm_chip_id ( dn , NULL ) ; if ( chip_id == - 1 ) { pr_warn ( "No ibm,chip-id found for %pOF.\n" , dn ) ; } for_each_possible_cpu ( ) { if ( per_cpu ( pnv_rng , cpu ) == NULL || cpu_to_chip_id ( cpu ) == chip_id ) { per_cpu ( pnv_rng , cpu ) = rng ; } } } 

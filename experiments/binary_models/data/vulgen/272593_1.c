@@ -1,0 +1,1 @@
+static void access_list_init_ipv4 ( void ) { install_node ( & access_node ) ; install_element ( ENABLE_NODE , & show_ip_access_list_cmd ) ; } 

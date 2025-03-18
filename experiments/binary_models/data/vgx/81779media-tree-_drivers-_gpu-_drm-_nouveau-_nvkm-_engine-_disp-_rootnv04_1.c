@@ -1,0 +1,1 @@
+static int nv04_disp_root_new ( struct nvkm_disp * disp , const struct nvkm_oclass * oclass , void * data , u32 size , struct nvkm_object * * pobject ) { struct nv04_disp_root * root ; root -> disp = disp ; * pobject = & root -> object ; nvkm_object_ctor ( & nv04_disp_root , oclass , & root -> object ) ; return 0 ; } 

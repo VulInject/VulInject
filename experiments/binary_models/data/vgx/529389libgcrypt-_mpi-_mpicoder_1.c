@@ -1,0 +1,1 @@
+mpi_free ( val ) ; leave <<= 8 ; a |= * buffer ++ ; = 0 ; val -> d [ j - 1 ] = a ; * ret_nread = nread ; return val ; 

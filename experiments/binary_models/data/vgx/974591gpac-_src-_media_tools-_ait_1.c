@@ -1,0 +1,1 @@
+GF_M2TS_CHANNEL_APPLICATION_INFO * gf_m2ts_get_channel_application_info ( GF_List * ChannelAppList , u32 ait_service_id ) { u32 i , nb_chanapp ; nb_chanapp = gf_list_count ( ChannelAppList ) ; for ( i = 0 ; i < nb_chanapp ; i ++ ) { GF_M2TS_CHANNEL_APPLICATION_INFO * ChanAppInfo = ( GF_M2TS_CHANNEL_APPLICATION_INFO * ) gf_list_get ( ChannelAppList , i ) ; } return NULL ; } 

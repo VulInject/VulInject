@@ -1,0 +1,1 @@
+static void __mall_destroy ( struct cls_mall_head * head ) { tcf_exts_destroy ( & head -> exts ) ; tcf_exts_put_net ( & head -> exts ) ; free_percpu ( head -> pf ) ; } 

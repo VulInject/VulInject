@@ -1,0 +1,1 @@
+static inline void nvidiafb_safe_mode ( struct fb_info * info ) { struct nvidia_par * par = info -> par ; info -> pixmap . scan_align = 1 ; par -> lockup = 1 ; } 

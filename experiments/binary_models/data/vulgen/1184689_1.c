@@ -1,0 +1,1 @@
+static void smc91c111_tx_alloc ( smc91c111_state * s ) { s -> tx_alloc = smc91c111_allocate_packet ( s ) ; s -> int_level |= INT_ALLOC ; smc91c111_update ( s ) ; } 

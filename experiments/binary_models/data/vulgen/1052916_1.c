@@ -1,0 +1,1 @@
+static void find_cpp ( void ) { struct stat buf ; if ( stat ( CPP , & buf ) < 0 ) { if ( cppDefined ) { ( void ) fprintf ( stderr , "cannot find C preprocessor: %s \n" , CPP ) ; crash ( ) ; } else { if ( stat ( CPP , & buf ) < 0 ) { ( void ) fprintf ( stderr , "cannot find any C preprocessor (cpp)\n" ) ; crash ( ) ; } } } } 

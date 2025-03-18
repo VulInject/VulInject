@@ -1,0 +1,1 @@
+struct urbp * alloc_urbp ( void ) { struct urbp * urb_p ; urb_p = kmalloc ( sizeof ( * urb_p ) , GFP_KERNEL ) ; if ( ! urb_p ) { return urb_p ; } urb_p -> urb = NULL ; urb_p -> ep = NULL ; INIT_LIST_HEAD ( & urb_p -> urb_entry ) ; return urb_p ; } 

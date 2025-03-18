@@ -1,0 +1,1 @@
+static void stm32_throttle ( struct uart_port * port ) { struct stm32_port * stm32_port = to_stm32_port ( port ) ; struct stm32_usart_offsets * ofs = & stm32_port -> info -> ofs ; unsigned long flags ; stm32_clr_bits ( port , ofs -> cr1 , USART_CR1_RXNEIE ) ; spin_unlock_irqrestore ( & port -> lock , flags ) ; } 

@@ -1,0 +1,1 @@
+fakelb_phy { struct ieee802154_hw * hw ; u8 page ; u8 channel ; bool suspended ; struct list_head list ; struct list_head list_ifup ; } 

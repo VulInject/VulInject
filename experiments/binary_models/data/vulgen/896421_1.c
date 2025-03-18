@@ -1,0 +1,1 @@
+static void __exit gbphy_exit ( void ) { greybus_deregister ( & gb_gbphy_driver ) ; bus_unregister ( & gbphy_bus_type ) ; } 

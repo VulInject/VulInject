@@ -1,0 +1,1 @@
+static __inline uint32_t MEM_READ_4 ( struct ipw_softc * sc , uint32_t addr ) { return CSR_READ_4 ( sc , IPW_CSR_INDIRECT_DATA ) ; } int ipw_debug = 0 ; const struct cfattach ipw_ca = { sizeof ( ipw_softc ) ipw_match ipw_attach NULL ipw_activate } ; 

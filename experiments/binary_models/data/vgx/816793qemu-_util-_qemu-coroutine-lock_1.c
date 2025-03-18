@@ -1,0 +1,1 @@
+static void coroutine_fn qemu_co_mutex_wake ( CoMutex * mutex , Coroutine * co ) { smp_read_barrier_depends ( ) ; mutex -> ctx = co -> ctx ; aio_co_wake ( co , NULL ) ; } 

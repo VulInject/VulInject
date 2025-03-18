@@ -1,0 +1,1 @@
+gimp_list_new ( , ) { GimpList * list ; list = g_object_new ( GIMP_TYPE_LIST , "children-type" , children_type , "policy" , GIMP_CONTAINER_POLICY_STRONG , "unique-names" , unique_names ?TRUE : FALSE , NULL ) ; gimp_object_set_static_name ( GIMP_OBJECT ( list ) , g_type_name ( children_type ) ) ; return GIMP_CONTAINER ( list ) ; } 

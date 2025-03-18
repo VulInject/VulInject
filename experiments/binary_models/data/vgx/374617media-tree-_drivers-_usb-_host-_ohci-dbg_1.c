@@ -1,0 +1,1 @@
+static struct debug_buffer * alloc_buffer ( struct ohci_hcd * ohci , ssize_t * fill_func ( struct debug_buffer * ) ) { struct debug_buffer * buf ; buf = kzalloc ( sizeof ( debug_buffer ) , GFP_KERNEL ) ; if ( buf ) { buf -> ohci = ohci ; buf -> fill_func = fill_func ; } return buf ; } 

@@ -1,0 +1,1 @@
+static struct transaction * u2f_transaction_get ( U2FPassthruState * key , uint32_t cid ) { int index = u2f_transaction_get_index ( key , cid ) ; if ( index < 0 ) { return in ; } return & key -> current_transactions [ index ] ; } 

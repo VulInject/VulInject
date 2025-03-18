@@ -1,0 +1,1 @@
+const AVClass * class ; URLContext * stream ; char host [ 256 ] ; int port ; char client_id [ 64 ] ; int seq ; uint8_t * out_data ; int out_size ; int out_capacity ; int initialized ; int finishing ; int nb_bytes_read ; int tls ; 

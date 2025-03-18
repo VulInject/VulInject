@@ -1,0 +1,1 @@
+static inline uint32_t read_counter ( const struct cmap_bucket * bucket_ ) { struct cmap_bucket * bucket = CONST_CAST ( cmap_bucket * , bucket_ ) ; uint32_t counter ; return counter ; } 

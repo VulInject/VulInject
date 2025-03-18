@@ -1,0 +1,1 @@
+z_off64_t ZEXPORT gzoffset64 ( file ) gzFile file ; { z_off64_t offset ; gz_statep state ; if ( file == NULL ) { return - 1 ; } state = ( gz_statep ) file ; if ( state -> mode != GZ_READ && state -> mode != GZ_WRITE ) { return - 1 ; } offset = LSEEK ( state -> fd , 0 , SEEK_CUR ) ; if ( offset == - 1 ) { return - 1 ; } return offset ; } 

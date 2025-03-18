@@ -1,0 +1,1 @@
+static void send_shallow ( struct upload_pack_data * data , struct commit_list * result ) { while ( result ) { struct object * object = & result -> item -> object ; if ( ! ( object -> flags & ( CLIENT_SHALLOW | NOT_SHALLOW ) ) ) { packet_writer_write ( & data -> writer , "shallow %s" , oid_to_hex ( & object -> oid ) ) ; data -> shallow_nr ++ ; } result = result -> next ; } } 

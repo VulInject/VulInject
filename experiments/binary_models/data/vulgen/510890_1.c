@@ -1,0 +1,1 @@
+static struct hid_driver twinhan_driver = { . name = "twinhan" . id_table = twinhan_devices . input_mapping = twinhan_input_mapping } ; 

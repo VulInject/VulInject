@@ -1,0 +1,1 @@
+void DMA2D_ClearFlag ( uint32_t DMA2D_FLAG ) { DMA2D -> IFCR = ( uint32_t ) DMA2D_FLAG ; } 

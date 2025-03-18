@@ -1,0 +1,1 @@
+static const IntelHDAReg * intel_hda_reg_find ( IntelHDAState * d , hwaddr addr ) { const IntelHDAReg * reg ; reg = regtab + addr ; if ( reg -> name == NULL ) { noreg } return reg ; noreg dprint ( d , 1 , "unknown register, addr 0x%x\n" , ( int ) addr ) ; return NULL ; } 

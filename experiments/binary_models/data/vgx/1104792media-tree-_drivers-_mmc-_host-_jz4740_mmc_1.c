@@ -1,0 +1,1 @@
+static int jz4740_mmc_request_gpio ( struct device * dev , int gpio , const char * name , bool output , int value ) { int ret ; ret = gpio_request ( gpio , name ) ; if ( ret ) { dev_err ( dev , "Failed to request %s gpio: %d\n" , name , ret ) ; return ret ; } if ( output ) { gpio_direction_output ( gpio , value ) ; } else { gpio_direction_input ( gpio ) ; } return 0 ; } 

@@ -1,0 +1,1 @@
+void snd_oxfw_proc_init ( struct snd_oxfw * oxfw ) { struct snd_info_entry * root ; root = snd_info_create_card_entry ( oxfw -> card , "firewire" , oxfw -> card -> proc_root ) ; if ( root == NULL ) { return ; } root -> mode = S_IFDIR | S_IRUGO | S_IXUGO ; if ( snd_info_register ( root ) < 0 ) { return ; } add_node ( oxfw , root , "formation" , proc_read_formation ) ; } 

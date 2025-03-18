@@ -1,0 +1,1 @@
+int sxiccmu_a64_set_frequency ( struct sxiccmu_softc * sc , uint32_t idx , uint32_t freq ) { struct sxiccmu_clock clock ; uint32_t parent , parent_freq ; uint32_t reg ; int k , n ; int error ; printf ( "%s: 0x%08x\n" , __func__ , idx ) ; return - 1 ; } 

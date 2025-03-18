@@ -1,0 +1,1 @@
+u8 acpi_ut_ascii_char_to_hex ( int hex_char ) { if ( hex_char <= 'F' ) { return ( ( u8 ) ( hex_char - 0x37 ) ) ; } return ( ( u8 ) ( hex_char - 0x57 ) ) ; } 

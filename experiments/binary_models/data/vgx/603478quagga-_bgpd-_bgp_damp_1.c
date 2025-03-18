@@ -1,0 +1,1 @@
+bgp_damp_disable ( , , ) { if ( ! CHECK_FLAG ( bgp -> af_flags [ afi ] [ safi ] , BGP_CONFIG_DAMPENING ) ) { return 0 ; } if ( damp -> t_reuse ) { thread_cancel ( damp -> t_reuse ) ; } bgp_damp_info_clean ( ) ; bgp_damp_config_clean ( & bgp_damp_cfg ) ; UNSET_FLAG ( bgp -> af_flags [ afi ] [ safi ] , BGP_CONFIG_DAMPENING ) ; return 0 ; } 

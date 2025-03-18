@@ -1,0 +1,1 @@
+static int testTerminateMachine ( const void * opaque G_GNUC_UNUSED ) { return 0 ; } 

@@ -1,0 +1,1 @@
+static void mrvl_send_ack ( struct hci_uart * hu , unsigned char type ) { struct mrvl_data * mrvl = hu -> priv ; struct sk_buff * skb ; skb = bt_skb_alloc ( 0 , GFP_ATOMIC ) ; if ( ! skb ) { bt_dev_err ( hu -> hdev , "Unable to alloc ack/nak packet" ) ; return ; } hci_skb_pkt_type ( skb ) = type ; skb_queue_tail ( & mrvl -> txq , skb ) ; } 

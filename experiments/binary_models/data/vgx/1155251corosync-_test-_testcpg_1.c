@@ -1,0 +1,1 @@
+static int quit = 0 ; static int show_ip = 0 ; static int restart = 0 ; static uint32_t nodeidStart = 0 ; static void print_localnodeid ( cpg_handle_t handle ) static void print_cpgname ( const struct cpg_name * name ) { int i ; for ( i = 0 ; i < name -> length ; i ++ ) { printf ( "%c" , name -> value [ i ] ) ; } } 

@@ -1,0 +1,1 @@
+void tlbi_mva_range ( vaddr_t va , size_t len , size_t granule ) { assert ( ! ( va & ( granule - 1 ) ) && ! ( len & ( granule - 1 ) ) ) ; dsb_ishst ( ) ; while ( len ) { tlbi_mva_allasid_nosync ( va ) ; len -= granule ; va += granule ; } dsb_ish ( ) ; isb ( ) ; } 

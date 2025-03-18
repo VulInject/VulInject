@@ -1,0 +1,1 @@
+sm_warning ( "right shifting more than type allows %d vs %lld" , type_bits ( type ) , bits . value ) ; 

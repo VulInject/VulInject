@@ -1,0 +1,1 @@
+struct pfi_kif * pfi_kif_find ( const char * kif_name ) { struct pfi_kif_cmp s ; strlcpy ( s . pfik_name , kif_name , sizeof ( s . pfik_name ) ) ; return ( RB_FIND ( pfi_ifhead , & pfi_ifs , ( pfi_kif * ) & s ) ) ; } 

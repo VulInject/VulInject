@@ -1,0 +1,1 @@
+{ . init_data = wm8994_ldo2 , ; } , 

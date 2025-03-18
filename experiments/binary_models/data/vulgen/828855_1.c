@@ -1,0 +1,1 @@
+int sbppkqfilter ( dev_t , struct knote * ) int sbppioctl ( dev_t , u_long , caddr_t , int , struct proc * ) const struct cfattach spif_ca = { sizeof ( spif_softc ) spifmatch spifattach } ; 

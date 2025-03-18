@@ -1,0 +1,1 @@
+XPS2_IPIXR_WDT_TOUT ; xps2data { int irq ; spinlock_t lock ; void __iomem * base_address ; unsigned int flags ; struct serio * serio ; } 

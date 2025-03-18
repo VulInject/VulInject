@@ -1,0 +1,1 @@
+ssize_t atf_get_part ( struct storage_partition * part , unsigned int index ) { struct pt_regs regs ; regs . regs [ 0 ] = THUNDERX_GET_PART ; regs . regs [ 1 ] = ( uintptr_t ) part ; regs . regs [ 2 ] = index ; return regs . regs [ 0 ] ; } 

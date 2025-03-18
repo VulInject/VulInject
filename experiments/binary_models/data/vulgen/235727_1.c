@@ -1,0 +1,1 @@
+void mt7601u_set_rx_path ( struct mt7601u_dev * dev , u8 path ) { mt7601u_bbp_rmw ( dev , 3 , 0x18 , 0 ) ; } 

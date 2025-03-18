@@ -1,0 +1,1 @@
+static void __exit uv_sysfs_exit ( void ) { if ( ! is_uv_system ( ) ) { if ( uv_get_hubless_system ( ) ) { uv_sysfs_hubless_exit ( ) ; } return ; } pci_topology_exit ( ) ; uv_ports_exit ( ) ; uv_hubs_exit ( ) ; vfree ( uv_biosheap ) ; sysfs_remove_group ( sgi_uv_kobj , & base_attr_group ) ; kobject_put ( sgi_uv_kobj , NULL ) ; } 

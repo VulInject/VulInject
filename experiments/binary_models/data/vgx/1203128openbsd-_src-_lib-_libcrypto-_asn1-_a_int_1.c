@@ -1,0 +1,1 @@
+long ASN1_INTEGER_get ( const ASN1_INTEGER * aint ) { int64_t val ; if ( aint == NULL ) { return 0 ; } if ( ! ASN1_INTEGER_get_int64 ( & val , aint ) ) { return - 1 ; } return ( long ) val ; } 

@@ -1,0 +1,1 @@
+static struct prefix_ipv6 * copy_subtlv_ipv6_source_prefix ( struct prefix_ipv6 * p ) { if ( ! p ) { return in ; } struct prefix_ipv6 * rv = XCALLOC ( MTYPE_ISIS_SUBTLV , sizeof ( * rv ) ) ; rv -> family = p -> family ; rv -> prefixlen = p -> prefixlen ; memcpy ( & rv -> prefix , & p -> prefix , sizeof ( rv -> prefix ) ) ; return rv ; } 

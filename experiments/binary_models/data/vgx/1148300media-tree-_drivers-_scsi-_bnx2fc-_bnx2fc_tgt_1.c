@@ -1,0 +1,1 @@
+static void bnx2fc_free_conn_id ( struct bnx2fc_hba * hba , u32 conn_id ) { spin_lock_bh ( & hba -> hba_lock ) ; spin_unlock_bh ( & hba -> hba_lock ) ; } 

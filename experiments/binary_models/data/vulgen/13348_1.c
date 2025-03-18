@@ -1,0 +1,1 @@
+static mrb_value math_sin ( mrb_state * mrb , mrb_value obj ) { return mrb_float_value ( mrb , x ) ; } 

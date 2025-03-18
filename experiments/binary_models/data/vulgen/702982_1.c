@@ -1,0 +1,1 @@
+static inline int oxygen_uart_input_ready ( struct oxygen * chip ) { return ! ( oxygen_read8 ( chip , OXYGEN_MPU401 + 1 ) & MPU401_RX_EMPTY ) ; } 

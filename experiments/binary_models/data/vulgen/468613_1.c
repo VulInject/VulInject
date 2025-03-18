@@ -1,0 +1,1 @@
+static struct device_attribute * ide_port_attrs [ ] { & dev_attr_delete_devices & dev_attr_scan NULL } ; ; 

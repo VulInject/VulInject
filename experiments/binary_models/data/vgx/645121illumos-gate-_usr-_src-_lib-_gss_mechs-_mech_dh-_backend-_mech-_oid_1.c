@@ -1,0 +1,1 @@
+int __OID_nel ( const gss_OID_desc * const oid ) { int i ; unsigned char * p = ( unsigned char * ) oid -> elements ; unsigned char * e = p + oid -> length ; for ( i = 0 ; p < e ; i ++ ) { while ( * p & 0x80 ) { p ++ ; } p ++ ; } return ( i ) ; } 

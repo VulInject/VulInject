@@ -1,0 +1,1 @@
+int bootflow_first_glob ( struct bootflow * * bflowp ) { struct bootstd_priv * std ; int ret ; ret = bootstd_get_priv ( & std ) ; if ( list_empty ( & std -> glob_head ) ) { return - ENOENT ; } * bflowp = list_first_entry ( & std -> glob_head , bootflow , glob_node ) ; return 0 ; } 

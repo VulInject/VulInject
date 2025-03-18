@@ -1,0 +1,1 @@
+static int calculate_inocache_hashsize ( uint32_t flash_size ) { int size_mb = flash_size / 1024 / 1024 ; if ( hashsize < INOCACHE_HASHSIZE_MIN ) { return INOCACHE_HASHSIZE_MIN ; } if ( hashsize > INOCACHE_HASHSIZE_MAX ) { return INOCACHE_HASHSIZE_MAX ; } return hashsize ; } 

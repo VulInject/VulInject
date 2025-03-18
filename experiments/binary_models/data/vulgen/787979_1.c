@@ -1,0 +1,1 @@
+static int atmel_pcm_close ( struct snd_soc_component * component , struct snd_pcm_substream * substream ) { struct atmel_runtime_data * prtd = substream -> runtime -> private_data ; return 0 ; } 

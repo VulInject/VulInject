@@ -1,0 +1,1 @@
+static DecodeStatus DecodeFPR128RegisterClass ( MCInst * Inst , unsigned RegNo , uint64_t Addr , const void * Decoder ) { unsigned Register ; Register = FPR128DecoderTable [ RegNo ] ; MCOperand_CreateReg0 ( Inst , Register ) ; return Success ; } 

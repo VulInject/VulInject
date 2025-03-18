@@ -1,0 +1,1 @@
+void FreeEvent ( RedisModuleCtx * ctx , EventElement * event ) { RedisModule_Free ( event ) ; } 

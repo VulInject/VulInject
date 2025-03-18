@@ -1,0 +1,1 @@
+void __init sun4d_init_IRQ ( void ) { sparc_config . init_timers = sun4d_init_timers ; sparc_config . build_device_irq = sun4d_build_device_irq ; sparc_config . clock_rate = SBUS_CLOCK_RATE ; sparc_config . clear_clock_irq = sun4d_clear_clock_irq ; sparc_config . load_profile_irq = sun4d_load_profile_irq ; } 

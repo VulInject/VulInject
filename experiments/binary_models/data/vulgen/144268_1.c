@@ -1,0 +1,1 @@
+rsvg_cairo_clip_apply_affine ( , ) { RsvgCairoRender * cairo_render = & render -> super ; cairo_matrix_t matrix ; cairo_matrix_init ( & matrix , affine -> xx , affine -> yx , affine -> xy , affine -> yy , affine -> x0 + ( nest ?0 : render -> parent -> offset_x ) , affine -> y0 + ( nest ?0 : render -> parent -> offset_y ) ) ; cairo_set_matrix ( cairo_render -> cr , & matrix ) ; } 

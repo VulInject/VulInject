@@ -1,0 +1,1 @@
+static bool static_nht_hash_decref ( struct static_nht_data * * nhtd_p ) { struct static_nht_data * nhtd = * nhtd_p ; * nhtd_p = NULL ; static_nht_hash_del ( static_nht_hash , nhtd ) ; XFREE ( MTYPE_STATIC_NHT_DATA , nhtd ) ; return false ; } 

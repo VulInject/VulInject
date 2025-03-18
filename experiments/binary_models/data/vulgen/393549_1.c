@@ -1,0 +1,1 @@
+static TEE_Result i2c_write_data ( uint8_t bid , const uint8_t * buf , int len ) { TEE_Result ret = TEE_SUCCESS ; uint32_t tmp = 0 ; tmp = i2c_io_read8 ( bid , I2CR ) | I2CR_MTX | I2CR_TX_NO_AK ; i2c_io_write8 ( bid , I2CR , tmp ) ; while ( len -- ) { ret = i2c_write_byte ( bid , * buf ++ ) ; if ( ret ) { return ret ; } } return ret ; } 

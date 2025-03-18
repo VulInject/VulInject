@@ -1,0 +1,1 @@
+static void insert_case3 ( L_RBTREE * t , node * n ) { if ( node_color ( uncle ( n ) ) == L_RED_NODE ) { uncle ( n ) -> color = L_BLACK_NODE ; grandparent ( n ) -> color = L_RED_NODE ; insert_case1 ( t , grandparent ( n ) ) ; } else { insert_case4 ( t , n ) ; } } 

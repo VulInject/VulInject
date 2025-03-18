@@ -1,0 +1,1 @@
+static gpointer function_new ( gpointer funcdef ) { function_t * stfuncrec ; stfuncrec -> magic = FUNCTION_MAGIC ; stfuncrec -> funcdef = funcdef ; stfuncrec -> params = NULL ; return stfuncrec ; } 

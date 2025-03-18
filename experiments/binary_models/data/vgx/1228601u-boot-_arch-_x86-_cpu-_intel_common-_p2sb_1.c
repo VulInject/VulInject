@@ -1,0 +1,1 @@
+static int p2sb_child_post_bind ( struct udevice * dev ) { if ( CONFIG_IS_ENABLED ( OF_REAL ) ) { struct p2sb_child_plat * pplat = dev_get_parent_plat ( dev ) ; int ret ; u32 pid ; ret = dev_read_u32 ( dev , "intel,p2sb-port-id" , & pid ) ; pplat -> pid = pid ; } return 0 ; } static const struct p2sb_ops p2sb_ops = { . set_hide = intel_p2sb_set_hide } ; 

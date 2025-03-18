@@ -1,0 +1,1 @@
+static void set_pcb_revision ( char * string ) { unsigned long p ; p = dectoul ( string , & string ) ; e . pcb_revision = p ; update_crc ( ) ; } 

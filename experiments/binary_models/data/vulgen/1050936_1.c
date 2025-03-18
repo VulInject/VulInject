@@ -1,0 +1,1 @@
+__tfind ( , , ) { node * rootp = ( node * ) vrootp ; if ( rootp == NULL ) { return NULL ; } while ( * rootp != NULL ) { node root = * rootp ; int r ; r = * compar ( key , root -> key ) ; if ( r == 0 ) { return root ; } rootp = r < 0 ?& root -> left : & root -> right ; } return NULL ; } 

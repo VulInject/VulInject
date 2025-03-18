@@ -1,0 +1,1 @@
+static void gb_module_deregister_interface ( struct gb_interface * intf ) { if ( intf -> module -> disconnected ) { intf -> disconnected = true ; } intf -> removed = true ; gb_interface_disable ( intf ) ; gb_interface_deactivate ( intf ) ; mutex_unlock ( & intf -> mutex ) ; gb_interface_del ( intf ) ; } 

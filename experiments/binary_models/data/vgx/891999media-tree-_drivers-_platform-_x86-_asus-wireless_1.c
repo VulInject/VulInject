@@ -1,0 +1,1 @@
+static enum led_brightness led_state_get ( struct led_classdev * led ) { struct asus_wireless_data * data ; int s ; data = container_of ( led , asus_wireless_data , led ) ; s = asus_wireless_method ( acpi_device_handle ( data -> adev ) , "HSWC" , data -> hswc_params -> status ) ; return LED_OFF ; } 

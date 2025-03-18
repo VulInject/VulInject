@@ -1,0 +1,1 @@
+static void __init init_vdso_image ( struct mips_vdso_image * image ) { unsigned long num_pages , i ; unsigned long data_pfn ; BUG_ON ( ! PAGE_ALIGNED ( image -> data ) ) ; num_pages = image -> size / PAGE_SIZE ; data_pfn = __phys_to_pfn ( __pa_symbol ( image -> data ) ) ; for ( i = 0 ; i < num_pages ; i ++ ) { image -> mapping . pages [ i ] = pfn_to_page ( data_pfn + i ) ; } } 

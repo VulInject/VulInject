@@ -1,0 +1,1 @@
+void timer_main ( ) { in_timer = 1 ; while ( 1 ) { if ( run_timer ) { timer_handler ( ) ; } pause ( ) ; } } 

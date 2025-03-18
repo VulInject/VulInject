@@ -1,0 +1,1 @@
+int axppmic_set_voltage ( void * , uint32_t ) int axppmic_enable ( void * , int ) void axppmic_attach_regulators ( struct axppmic_softc * sc , int node ) { node = OF_getnodebyname ( node , "regulators" ) ; for ( node = OF_child ( node ) ; node ; node = OF_peer ( node ) ) { axppmic_attach_regulator ( sc , node ) ; } } 

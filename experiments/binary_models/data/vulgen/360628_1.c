@@ -1,0 +1,1 @@
+static int to_d71_opmode ( int core_mode ) { switch ( core_mode ) { case KOMEDA_MODE_DISP0 : return DO0_ACTIVE_MODE ; case KOMEDA_MODE_DISP1 : return DO1_ACTIVE_MODE ; case KOMEDA_MODE_DUAL_DISP : return DO01_ACTIVE_MODE ; case KOMEDA_MODE_INACTIVE : return INACTIVE_MODE ; default : return INACTIVE_MODE ; } } 

@@ -1,0 +1,1 @@
+void virLockDaemonConfigFree ( virLockDaemonConfig * data ) { if ( ! data ) { return ; } g_free ( data -> log_filters ) ; g_free ( data -> log_outputs ) ; } 

@@ -1,0 +1,1 @@
+static RCFValueString * r_cf_value_string_new ( char * string ) { RCFValueString * value_string = R_NEW0 ( RCFValueString ) ; value_string -> type = R_CF_STRING ; value_string -> value = string ; return value_string ; } 

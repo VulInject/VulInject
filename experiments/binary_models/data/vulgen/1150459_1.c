@@ -1,0 +1,1 @@
+static char * queue_pop ( struct queue * queue ) { return ( char * ) g_queue_pop_tail ( & queue -> q ) ; } 

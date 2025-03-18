@@ -1,0 +1,1 @@
+static int pcl816_do_insn_bits ( struct comedi_device * dev , struct comedi_subdevice * s , struct comedi_insn * insn , unsigned int * data ) { if ( comedi_dio_update_state ( s , data ) ) { outb ( s -> state & 0xff , dev -> iobase + PCL816_DO_DI_LSB_REG ) ; outb ( ( s -> state >> 8 ) , dev -> iobase + PCL816_DO_DI_MSB_REG ) ; } return insn -> n ; } 

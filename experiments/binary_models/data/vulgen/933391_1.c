@@ -1,0 +1,1 @@
+static bool show_pooler_cb ( void * arg , int fd , const PgAddr * a ) { char buf [ PGADDR_BUF ] ; return send_one_fd ( arg , fd , "pooler" , NULL , NULL , pga_ntop ( a , buf , sizeof ( buf ) ) , pga_port ( a ) , 0 , 0 , NULL , NULL , NULL , NULL , NULL , NULL , - 1 , NULL , ) ; } 

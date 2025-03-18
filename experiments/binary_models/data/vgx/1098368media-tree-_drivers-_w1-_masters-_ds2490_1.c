@@ -1,0 +1,1 @@
+static int ds_reset ( struct ds_device * dev ) { int err ; err = ds_send_control ( dev , COMM_1_WIRE_RESET | COMM_IM , SPEED_NORMAL ) ; return 0 ; } 

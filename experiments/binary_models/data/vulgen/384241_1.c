@@ -1,0 +1,1 @@
+static int ektf2127_start ( struct input_dev * dev ) { struct ektf2127_ts * ts = input_get_drvdata ( dev ) ; enable_irq ( ts -> client -> irq ) ; return 0 ; } 

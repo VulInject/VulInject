@@ -1,0 +1,1 @@
+av_cold void av_dct_end ( DCTContext * s ) { if ( s ) { ff_dct_end ( s , NULL ) ; av_free ( s ) ; } } 

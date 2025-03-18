@@ -1,0 +1,1 @@
+void cern_pop_buffer_state ( void ) { if ( ! YY_CURRENT_BUFFER ) { return ; } cern__delete_buffer ( YY_CURRENT_BUFFER , NULL ) ; YY_CURRENT_BUFFER_LVALUE = NULL ; if ( ( yy_buffer_stack_top ) > 0 ) { -- ( yy_buffer_stack_top ) ; } if ( YY_CURRENT_BUFFER ) { cern__load_buffer_state ( ) ; ( yy_did_buffer_switch_on_eof ) = 1 ; } } 

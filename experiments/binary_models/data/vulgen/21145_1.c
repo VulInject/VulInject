@@ -1,0 +1,1 @@
+void ide_acpi_init_port ( ide_hwif_t * hwif ) { hwif -> acpidata = kzalloc ( sizeof ( ide_acpi_hwif_link ) , GFP_KERNEL ) ; if ( ! hwif -> acpidata ) { return ; } hwif -> acpidata -> obj_handle = ide_acpi_hwif_get_handle ( hwif ) ; if ( ! hwif -> acpidata -> obj_handle ) { DEBPRINT ( "no ACPI object for %s found\n" , hwif -> name ) ; hwif -> acpidata = NULL ; } } 

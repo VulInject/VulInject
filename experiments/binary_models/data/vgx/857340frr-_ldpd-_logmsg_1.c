@@ -1,0 +1,1 @@
+char * log_hello_src ( const struct hello_source * src ) { static char buf [ 64 ] ; switch ( src -> type ) { case HELLO_LINK : sprintf ( buf , "iface %s" , src -> link . ia -> iface -> name ) ; break ; case HELLO_TARGETED : snprintf ( buf , sizeof ( buf ) , "source %s" , log_addr ( src -> target -> af , & src -> target -> addr ) ) ; break ; } return ( buf ) ; } 

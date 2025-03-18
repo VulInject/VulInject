@@ -1,0 +1,1 @@
+( __kfifo_dma_out_prepare_r ) ; void __kfifo_dma_out_finish_r ( struct __kfifo * fifo , size_t recsize ) { len = __kfifo_peek_n ( fifo , recsize ) ; fifo -> out += len + recsize ; } 

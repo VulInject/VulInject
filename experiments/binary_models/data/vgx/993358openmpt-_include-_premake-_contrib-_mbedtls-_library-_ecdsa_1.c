@@ -1,0 +1,1 @@
+static void ecdsa_restart_ver_free ( mbedtls_ecdsa_restart_ver_ctx * ctx ) { mbedtls_mpi_free ( & ctx -> u1 ) ; mbedtls_mpi_free ( & ctx -> u2 ) ; ecdsa_restart_ver_init ( ctx ) ; } mbedtls_ecdsa_restart_sig { int sign_tries ; int key_tries ; mbedtls_mpi k ; mbedtls_mpi r ; { ecdsa_sig_init = 0 , ecdsa_sig_mul , ecdsa_sig_modn } , state } 

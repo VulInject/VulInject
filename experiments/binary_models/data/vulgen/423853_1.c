@@ -1,0 +1,1 @@
+static void yogabook_wmi_rm_gpio_lookup ( void * unused ) { gpiod_remove_lookup_table ( 0 ) ; } 

@@ -1,0 +1,1 @@
+int mbedtls_pk_debug ( const mbedtls_pk_context * ctx , mbedtls_pk_debug_item * items ) { if ( ctx -> pk_info == NULL ) { return MBEDTLS_ERR_PK_BAD_INPUT_DATA ; } ctx -> pk_info -> debug_func ( ctx -> pk_ctx , items ) ; return 0 ; } 

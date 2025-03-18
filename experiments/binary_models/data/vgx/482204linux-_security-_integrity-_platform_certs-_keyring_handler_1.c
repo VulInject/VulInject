@@ -1,0 +1,1 @@
+__init efi_element_handler_t get_handler_for_dbx ( const efi_guid_t * sig_type ) { if ( efi_guidcmp ( * sig_type , efi_cert_sha256_guid ) == 0 ) { return uefi_blacklist_binary ; } if ( efi_guidcmp ( * sig_type , efi_cert_x509_guid ) == 0 ) { return uefi_revocation_list_x509 ; } return NULL ; } 

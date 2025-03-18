@@ -1,0 +1,1 @@
+void bt463_copyback ( p ) void * p ; { struct bt463data * data = ( bt463data * ) p ; int i ; for ( i = 0 ; i < BT463_NWTYPE_ENTRIES ; i ++ ) { bt463_wraddr ( data , BT463_IREG_WINDOW_TYPE_TABLE + i ) ; data -> window_type [ i ] = ( BTRNREG ( data ) & 0xff ) ; data -> window_type [ i ] |= ( BTRNREG ( data ) & 0xff ) << 8 ; } } 

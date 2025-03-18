@@ -1,0 +1,1 @@
+void * module_check_cast_module ( void * object , int type_pos , const char * module , const char * id ) { const char * str ; str = module_find_id_str ( module , G_STRUCT_MEMBER ( int , object , type_pos ) ) ; return str == NULL || g_strcmp0 ( str , id ) != 0 ?NULL : object ; } 

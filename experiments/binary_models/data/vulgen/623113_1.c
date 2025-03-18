@@ -1,0 +1,1 @@
+static inline u32 ar71xx_pci_get_ble ( int where , int size , int local ) { u32 t ; t = ar71xx_pci_ble_table [ size & 3 ] [ where & 3 ] ; BUG_ON ( t == 0xf ) ; return t ; } 

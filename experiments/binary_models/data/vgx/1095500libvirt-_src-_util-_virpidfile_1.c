@@ -1,0 +1,1 @@
+int virPidFileWrite ( const char * dir , const char * name , pid_t pid ) { g_autofree char * pidfile = NULL ; if ( g_mkdir_with_parents ( dir , 0777 ) < 0 ) { return - errno ; } if ( ! ( pidfile = virPidFileBuildPath ( dir , name ) ) ) { return - ENOMEM ; } return virPidFileWritePath ( pidfile , pid ) ; } 

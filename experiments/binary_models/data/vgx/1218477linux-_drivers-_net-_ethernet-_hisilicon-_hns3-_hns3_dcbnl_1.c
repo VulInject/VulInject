@@ -1,0 +1,1 @@
+static int hns3_dcbnl_ieee_setapp ( struct net_device * ndev , struct dcb_app * app ) { struct hnae3_handle * h = hns3_get_handle ( ndev ) ; if ( h -> kinfo . dcb_ops -> ieee_setapp ) { return h -> kinfo . dcb_ops -> ieee_setapp ( h , app ) ; } return - EOPNOTSUPP ; } 

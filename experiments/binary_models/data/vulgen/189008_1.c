@@ -1,0 +1,1 @@
+static int ht1380_write_protection_off ( struct ht1380_priv * priv ) { int ret ; ret = ht1380_reset_off ( priv ) ; if ( ret ) { return ret ; } ret = ht1380_send_byte ( priv , PROTECT ) ; if ( ret ) { return ret ; } ret = ht1380_send_byte ( priv , 0 ) ; if ( ret ) { return ret ; } return ht1380_reset_on ( priv ) ; } 

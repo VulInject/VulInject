@@ -1,0 +1,1 @@
+int pr_trace_get_max_level ( const char * channel ) { const struct trace_levels * levels ; levels = trace_get_levels ( channel ) ; return levels -> max_level ; } 

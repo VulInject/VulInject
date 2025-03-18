@@ -1,0 +1,1 @@
+int u32_mbtouc ( ucs4_t * puc , const uint32_t * s , size_t n ) { if ( c < 0xd800 || ( c >= 0xe000 && c < 0x110000 ) ) { * puc = c ; } else { * puc = 0xfffd ; } return 1 ; } 

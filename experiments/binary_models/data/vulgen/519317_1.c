@@ -1,0 +1,1 @@
+void flush_tlb_mm ( struct mm_struct * mm ) { sync_is ( ) ; volatile } 

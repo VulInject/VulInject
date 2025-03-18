@@ -1,0 +1,1 @@
+static int ipr_reset_wait_for_dump ( struct ipr_cmnd * ipr_cmd ) { struct ipr_ioa_cfg * ioa_cfg = ipr_cmd -> ioa_cfg ; if ( ioa_cfg -> sdt_state == GET_DUMP ) { ioa_cfg -> sdt_state = WAIT_FOR_DUMP ; } if ( ioa_cfg -> sdt_state == READ_DUMP ) { ioa_cfg -> sdt_state = ABORT_DUMP ; } ipr_cmd -> job_step = ipr_reset_alert ; return IPR_RC_JOB_CONTINUE ; } 

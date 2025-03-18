@@ -1,0 +1,1 @@
+static void ushc_clean_up ( struct ushc_data * ushc ) { usb_free_urb ( ushc -> csw_urb ) ; usb_free_urb ( ushc -> data_urb ) ; usb_free_urb ( ushc -> cbw_urb ) ; kfree ( ushc -> int_data ) ; kfree ( ushc -> cbw ) ; kfree ( ushc -> csw ) ; mmc_free_host ( ushc -> mmc ) ; } 

@@ -1,0 +1,1 @@
+static void bl_trig_deactivate ( struct led_classdev * led ) { struct bl_trig_notifier * n = led_get_trigger_data ( led ) ; fb_unregister_client ( & n -> notifier ) ; } 

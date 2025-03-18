@@ -1,0 +1,1 @@
+void flush_thread ( void ) { struct task_struct * tsk = current ; flush_ptrace_hw_breakpoint ( tsk ) ; fpu__clear ( & tsk -> thread . fpu ) ; } 

@@ -1,0 +1,1 @@
+int gpio_set_value ( unsigned gpio , int value ) { const struct gpio_bank * bank ; bank = get_gpio_bank ( gpio ) ; _set_gpio_dataout ( bank , get_gpio_index ( gpio ) , value ) ; return 0 ; } 

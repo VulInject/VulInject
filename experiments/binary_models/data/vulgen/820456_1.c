@@ -1,0 +1,1 @@
+void mf_get ( const struct mf_field * mf , const struct match * match , union mf_value * value , union mf_value * mask ) { mf_get_value ( mf , & match -> flow , value ) ; } 

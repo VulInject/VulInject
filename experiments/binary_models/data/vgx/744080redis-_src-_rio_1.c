@@ -1,0 +1,1 @@
+static int rioBufferFlush ( rio * r ) { UNUSED ( r , NULL ) ; return 1 ; } 

@@ -1,0 +1,1 @@
+static ssize_t overlay_input_size_show ( struct omap_overlay * ovl , char * buf ) { struct omap_overlay_info info ; return sysfs_emit ( buf , "%d,%d\n" , info . width , info . height ) ; } 

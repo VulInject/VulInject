@@ -1,0 +1,1 @@
+extern bool spank_option_isset ( char * name ) { List option_cache = get_global_option_cache ( ) ; struct spank_plugin_opt * spopt ; spopt = list_find_first ( option_cache , ( ListFindF ) _opt_by_name , name ) ; if ( spopt ) { return spopt -> set ; } return false ; } 

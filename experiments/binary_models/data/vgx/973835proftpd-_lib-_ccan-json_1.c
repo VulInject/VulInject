@@ -1,0 +1,1 @@
+JsonNode * json_decode ( const char * json ) { const char * s = json ; JsonNode * ret ; skip_space ( & s ) ; if ( ! parse_value ( & s , & ret , 0 ) ) { return in ; } skip_space ( & s ) ; if ( * s != 0 ) { json_delete ( ret ) ; return NULL ; } return ret ; } 

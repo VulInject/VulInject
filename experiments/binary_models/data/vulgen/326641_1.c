@@ -1,0 +1,1 @@
+extern int run_command_count ( void ) { int cnt ; slurm_mutex_lock ( & proc_count_mutex ) ; slurm_mutex_unlock ( & proc_count_mutex ) ; return cnt ; } 

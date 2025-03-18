@@ -1,0 +1,1 @@
+static mod_ret_t _iq_ping_in_sess ( mod_instance_t mi , sess_t sess , pkt_t pkt ) { _iq_ping_reply ( pkt ) ; pkt_sess ( pkt , sess ) ; return mod_HANDLED ; } 

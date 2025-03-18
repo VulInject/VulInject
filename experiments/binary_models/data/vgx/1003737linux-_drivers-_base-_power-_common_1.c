@@ -1,0 +1,1 @@
+( dev_pm_domain_detach ) ; int dev_pm_domain_start ( struct device * dev ) { return 0 ; } 

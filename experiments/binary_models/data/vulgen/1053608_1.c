@@ -1,0 +1,1 @@
+void closure_debug_create ( struct closure * cl ) { unsigned long flags ; BUG_ON ( cl -> magic == CLOSURE_MAGIC_ALIVE ) ; cl -> magic = CLOSURE_MAGIC_ALIVE ; spin_lock_irqsave ( & closure_list_lock , flags ) ; spin_unlock_irqrestore ( & closure_list_lock , flags ) ; } 

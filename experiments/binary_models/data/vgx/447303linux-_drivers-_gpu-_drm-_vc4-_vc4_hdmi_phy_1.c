@@ -1,0 +1,1 @@
+static u8 phy_get_vco_gain ( unsigned long long vco_freq ) { if ( vco_freq < 3350000000ULL ) { return 0xf ; } if ( vco_freq < 4050000000ULL ) { return 0x6 ; } if ( vco_freq < 4800000000ULL ) { return 0x5 ; } if ( vco_freq < 5200000000ULL ) { return 0x7 ; } return 0x2 ; } 

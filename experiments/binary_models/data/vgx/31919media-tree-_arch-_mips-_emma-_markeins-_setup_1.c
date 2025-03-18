@@ -1,0 +1,1 @@
+static void __init markeins_board_init ( void ) { u32 val ; val = emma2rh_in32 ( EMMA2RH_PBRD_INT_EN , NULL ) ; emma2rh_out32 ( EMMA2RH_PBRD_INT_EN , val | 0xaa ) ; val = emma2rh_in32 ( EMMA2RH_PBRD_CLKSEL ) ; emma2rh_out32 ( EMMA2RH_PBRD_CLKSEL , val | 0x5 ) ; emma2rh_out32 ( EMMA2RH_PCI_CONTROL , 0 ) ; markeins_led ( "MVL E2RH" ) ; } 

@@ -1,0 +1,1 @@
+static int dbgp_consume ( char * buf , unsigned len ) { char c ; c = buf [ len - 1 ] ; if ( c != 0 ) { buf [ len - 1 ] = 0 ; } printk ( KERN_NOTICE "%s%c" , buf , c ) ; return 0 ; } 

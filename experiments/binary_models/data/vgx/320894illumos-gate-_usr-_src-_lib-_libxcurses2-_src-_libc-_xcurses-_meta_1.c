@@ -1,0 +1,1 @@
+int meta ( WINDOW * w , bool bf ) { PTERMIOS ( _prog ) -> c_cflag &= ~ CSIZE ; PTERMIOS ( _prog ) -> c_cflag |= bf ?CS8 : CS7 ; __m_screen -> _flags &= ~ S_USE_META ; if ( bf ) { if ( meta_on != NULL ) { ( void ) TPUTS ( meta_on , 1 , __m_outc ) ; } __m_screen -> _flags |= S_USE_META ; } if ( meta_off != NULL ) { ( void ) TPUTS ( meta_off , 1 , __m_outc ) ; } return ( OK ) ; } 

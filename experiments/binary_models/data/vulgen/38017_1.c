@@ -1,0 +1,1 @@
+{ char b0 ; char b1 ; char b2 ; char b3 ; char b4 ; char b5 ; } __attribute__ ( ) 

@@ -1,0 +1,1 @@
+static void rate_control_free ( struct ieee80211_local * local , struct rate_control_ref * ctrl_ref ) { ctrl_ref -> ops -> free ( ctrl_ref -> priv ) ; debugfs_remove_recursive ( local -> debugfs . rcdir , NULL ) ; local -> debugfs . rcdir = NULL ; kfree ( ctrl_ref ) ; } 

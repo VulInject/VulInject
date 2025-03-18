@@ -1,0 +1,1 @@
+static int dbiCursorPrep ( dbiCursor dbc , const char * fmt , ... ) { if ( dbc -> stmt == NULL ) { char * cmd = NULL ; va_list ap ; va_start ( ap , fmt ) ; cmd = sqlite3_vmprintf ( fmt , ap ) ; va_end ( ap ) ; sqlite3_prepare_v2 ( dbc -> sdb , cmd , - 1 , & dbc -> stmt , NULL ) ; } else { dbiCursorReset ( dbc ) ; } return dbiCursorResult ( dbc ) ; } 

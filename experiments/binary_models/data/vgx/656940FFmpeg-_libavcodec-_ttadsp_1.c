@@ -1,0 +1,1 @@
+* error = * in ; * in += ( round >> shift ) ; dl [ 4 ] = - dl [ 5 ] ; dl [ 5 ] = - ( unsigned ) dl [ 6 ] ; dl [ 6 ] = * in - ( unsigned ) dl [ 7 ] ; dl [ 7 ] = * in ; dl [ 5 ] += ( unsigned ) dl [ 6 ] ; dl [ 4 ] += ( unsigned ) dl [ 5 ] ; 

@@ -1,1 +1,1 @@
-static VAR1 * FUN1 ( VAR2 * VAR3 ) { VAR1 * VAR4 ; FUN2 ( VAR3 -> VAR5 == VAR3 -> VAR6 ) ; FUN2 ( VAR3 -> VAR5 < VAR7 ) ; VAR3 -> VAR5 ++ ; VAR4 = FUN3 ( VAR3 , NULL ) ; VAR4 -> VAR8 = VAR9 ; return VAR4 ; }
+static TCGTemp * tcg_global_alloc ( TCGContext * s ) { TCGTemp * ts ; tcg_debug_assert ( s -> nb_globals == s -> nb_temps ) ; tcg_debug_assert ( s -> nb_globals < TCG_MAX_TEMPS ) ; s -> nb_globals ++ ; ts = tcg_temp_alloc ( s , NULL ) ; ts -> kind = TEMP_GLOBAL ; return ts ; } 

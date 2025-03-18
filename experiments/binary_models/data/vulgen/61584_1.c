@@ -1,0 +1,1 @@
+static int qmp_ufs_vreg_init ( struct qmp_ufs * qmp ) { const struct qmp_phy_cfg * cfg = qmp -> cfg ; struct device * dev = qmp -> dev ; int num = cfg -> num_vregs ; int i ; if ( ! qmp -> vregs ) { return - ENOMEM ; } for ( i = 0 ; i < num ; i ++ ) { qmp -> vregs [ i ] . supply = cfg -> vreg_list [ i ] ; } return devm_regulator_bulk_get ( dev , num , qmp -> vregs ) ; } 

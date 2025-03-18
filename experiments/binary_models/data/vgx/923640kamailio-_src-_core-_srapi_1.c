@@ -1,0 +1,1 @@
+void sr_cfgenv_init ( void ) { memset ( & _sr_cfgenv , 0 , sizeof ( sr_cfgenv_t ) ) ; _sr_cfgenv . uac_cseq_auth . s = "P-K-CSeq-Auth" ; _sr_cfgenv . uac_cseq_auth . len = strlen ( _sr_cfgenv . uac_cseq_auth . s , NULL ) ; _sr_cfgenv . uac_cseq_refresh . s = "P-K-CSeq-Refresh" ; _sr_cfgenv . uac_cseq_refresh . len = strlen ( _sr_cfgenv . uac_cseq_refresh . s ) ; } 

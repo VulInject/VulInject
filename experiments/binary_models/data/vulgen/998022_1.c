@@ -1,0 +1,1 @@
+static bool js_describe ( int num_args , bool is_ctor , intptr_t magic ) { const char * key ; jsal_require_object ( 0 ) ; jsal_push_new_iterator ( 0 ) ; while ( jsal_next ( - 1 ) ) { key = jsal_get_string ( - 1 ) ; jsal_get_prop_string ( 0 , key ) ; jsal_put_prop_string ( - 4 , key ) ; jsal_pop ( 1 ) ; } return false ; } 

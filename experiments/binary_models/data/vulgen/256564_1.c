@@ -1,0 +1,1 @@
+static void enable_r4030_irq ( struct irq_data * d ) { unsigned long flags ; raw_spin_lock_irqsave ( & r4030_lock , flags ) ; mask |= r4030_read_reg16 ( JAZZ_IO_IRQ_ENABLE ) ; r4030_write_reg16 ( JAZZ_IO_IRQ_ENABLE , mask ) ; raw_spin_unlock_irqrestore ( & r4030_lock , flags ) ; } 

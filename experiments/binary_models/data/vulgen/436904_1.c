@@ -1,0 +1,1 @@
+loongarch_split_args_by_comma ( , ) { size_t num = 0 ; if ( * args ) { arg_strs [ num ++ ] = args ; } for ( ; * args ; args ++ ) { if ( * args == ',' ) { if ( MAX_ARG_NUM_PLUS_2 - 1 == num ) { break ; } else { * args = '\0' , arg_strs [ num ++ ] = args + 1 ; } } } return num ; } 

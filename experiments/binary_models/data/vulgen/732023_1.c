@@ -1,0 +1,1 @@
+int evp_pkey_meth_get_count ( void ) { int num = pkey_methods_count ; return num ; } 

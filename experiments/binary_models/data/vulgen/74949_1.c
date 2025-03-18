@@ -1,0 +1,1 @@
+int opt_set_ip6_add_membership ( lua_State * L , int ps ) { return opt_ip6_setmembership ( L , ps , IPPROTO_IPV6 , IPV6_ADD_MEMBERSHIP ) ; } 

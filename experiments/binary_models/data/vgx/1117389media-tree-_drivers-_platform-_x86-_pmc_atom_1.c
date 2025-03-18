@@ -1,0 +1,1 @@
+static int __init pmc_atom_init ( void ) { struct pci_dev * pdev = NULL ; const struct pci_device_id * ent ; for_each_pci_dev ( ) { ent = pci_match_id ( pmc_pci_ids , pdev ) ; } return - ENODEV ; } 

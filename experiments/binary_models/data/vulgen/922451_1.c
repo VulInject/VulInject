@@ -1,0 +1,1 @@
+static int __init hisi_ptt_init ( void ) { int ret ; ret = cpuhp_setup_state_multi ( CPUHP_AP_ONLINE_DYN , DRV_NAME , NULL , hisi_ptt_cpu_teardown ) ; if ( ret < 0 ) { return ret ; } hisi_ptt_pmu_online = ret ; ret = pci_register_driver ( & hisi_ptt_driver ) ; if ( ret ) { cpuhp_remove_multi_state ( 0 ) ; } return ret ; } 

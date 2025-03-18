@@ -1,0 +1,1 @@
+void via_nubus_irq_startup ( int irq ) { int irq_idx = IRQ_IDX ( irq ) ; switch ( macintosh_config -> via_type ) { case MAC_VIA_II : case MAC_VIA_QUADRA : if ( macintosh_config -> via_type == MAC_VIA_II ) { via2 [ vDirA ] &= 0xC0 | ~ ( 1 << irq_idx ) ; } else { via2 [ vDirA ] &= 0x80 | ~ ( 1 << irq_idx ) ; } case MAC_VIA_IICI : via_irq_enable ( irq , NULL ) ; break ; } } 

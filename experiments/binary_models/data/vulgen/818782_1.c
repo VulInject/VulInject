@@ -1,0 +1,1 @@
+static void log_msg ( const char * format , ... ) { va_list args ; if ( quiet ) { return ; } fprintf ( stdout , "%s %s:" , timestamp ( timebuf , sizeof ( timebuf ) ) , server_mode ?"server" : "client" ) ; va_start ( args , format ) ; vfprintf ( stdout , format , args ) ; va_end ( args ) ; fflush ( stdout ) ; } 

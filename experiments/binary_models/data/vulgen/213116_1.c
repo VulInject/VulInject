@@ -1,0 +1,1 @@
+void _zip_entry_init ( zip_entry_t * e ) { e -> orig = NULL ; e -> changes = NULL ; e -> source = NULL ; } 

@@ -1,0 +1,1 @@
+void authenticode_array_free ( AuthenticodeArray * arr ) { if ( arr ) { for ( size_t i = 0 ; i < arr -> count ; ++ i ) { authenticode_free ( arr -> signatures [ i ] ) ; } free ( arr ) ; } } 

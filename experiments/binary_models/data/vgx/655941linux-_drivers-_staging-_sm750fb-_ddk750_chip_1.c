@@ -1,0 +1,1 @@
+static void set_chip_clock ( unsigned int frequency ) { struct pll_value pll ; if ( frequency ) { pll . input_freq = DEFAULT_INPUT_CLOCK ; pll . clock_type = MXCLK_PLL ; sm750_calc_pll_value ( frequency , & pll ) ; poke32 ( MXCLK_PLL_CTRL , sm750_format_pll_reg ( & pll ) ) ; } } 

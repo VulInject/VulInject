@@ -1,0 +1,1 @@
+static inline void _dsp_pipeline_destroy ( struct dsp_pipeline * pipeline ) { struct dsp_pipeline_entry * entry , * n ; list_for_each_entry_safe ( , , , ) { list_del ( & entry -> list ) ; else { entry -> elem -> free ( entry -> p ) ; } kfree ( entry ) ; } } 

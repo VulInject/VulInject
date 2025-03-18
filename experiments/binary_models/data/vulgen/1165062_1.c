@@ -1,0 +1,1 @@
+TEST ( ) { long ret ; ret = prctl ( PR_SET_NO_NEW_PRIVS , 1 , 0 , 0 , 0 ) ; EXPECT_EQ ( 0 , ) { } } 

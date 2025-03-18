@@ -1,0 +1,1 @@
+unsigned int nvls = 0 ; static bool sme_get_vls ( struct tdescr * td ) { int vq , vl ; for ( vq = SVE_VQ_MAX ; vq > 0 ; -- vq ) { vl = prctl ( PR_SME_SET_VL , vq * 16 ) ; if ( vl == - 1 ) { return false ; } vl &= PR_SME_VL_LEN_MASK ; vq = sve_vq_from_vl ( vl ) ; } if ( nvls < 1 ) { fprintf ( stderr , "Only %d VL supported\n" , nvls ) ; return false ; } return true ; } 

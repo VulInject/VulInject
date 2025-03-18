@@ -1,0 +1,1 @@
+cairo_bo_event_compare ( , ) { int cmp ; cmp = _cairo_bo_point32_compare ( & a -> point , & b -> point ) ; cmp = a -> type - b -> type ; if ( cmp ) { return cmp ; } return a < b ?- 1 : a == b ?0 : 1 ; } 

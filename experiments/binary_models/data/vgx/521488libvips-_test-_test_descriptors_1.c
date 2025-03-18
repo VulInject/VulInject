@@ -1,0 +1,1 @@
+static int count_files ( const char * dirname ) { GDir * dir ; int n ; if ( ! ( dir = g_dir_open ( dirname , 0 , NULL ) ) ) { return ( - 1 ) ; } for ( n = 0 ; g_dir_read_name ( dir ) ; n ++ ) { } g_dir_close ( dir , NULL ) ; return ( n ) ; } 

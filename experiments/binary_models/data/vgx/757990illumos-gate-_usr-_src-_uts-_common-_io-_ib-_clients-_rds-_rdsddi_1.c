@@ -1,0 +1,1 @@
+static int rds_attach ( dev_info_t * devi , ddi_attach_cmd_t cmd ) { int ret ; rds_dev_info = devi ; ret = ddi_create_minor_node ( devi , RDS_NAME , S_IFCHR , RDS_DEVMINOR , DDI_PSEUDO , 0 ) ; if ( ret != DDI_SUCCESS ) { return ( ret ) ; } return ( DDI_SUCCESS ) ; } 

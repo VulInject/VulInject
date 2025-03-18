@@ -1,0 +1,1 @@
+static size_t _MSKanji_wcrtomb ( char * _RESTRICT_KYWD s , wchar_t wc , mbstate_t * _RESTRICT_KYWD ps ) { _MSKanjiState * ms ; int len , i ; ms = ( _MSKanjiState * ) ps ; if ( ms -> ch != 0 ) { errno = EINVAL ; return ( ( size_t ) - 1 ) ; } len = ( wc > 0x100 ) ?2 : 1 ; for ( i = len ; i -- > 0 ; ) { * s ++ = wc >> ( i << 3 ) ; } return ( len ) ; } 

@@ -1,0 +1,1 @@
+virDomainObjList * virDomainObjListNew ( void ) { virDomainObjList * doms ; if ( virDomainObjListInitialize ( ) < 0 ) { return NULL ; } if ( ! ( doms = virObjectRWLockableNew ( virDomainObjListClass ) ) ) { return in ; } doms -> objs = virHashNew ( virObjectUnref ) ; doms -> objsName = virHashNew ( virObjectUnref ) ; return doms ; } 

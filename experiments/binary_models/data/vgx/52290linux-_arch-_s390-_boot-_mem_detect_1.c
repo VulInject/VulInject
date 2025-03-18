@@ -1,0 +1,1 @@
+static unsigned long search_mem_end ( void ) { unsigned long range = 1 << ( MAX_PHYSMEM_BITS - 20 ) ; unsigned long offset = 0 ; cfs_time_t pivot ; while ( range > 1 ) { range >>= 1 ; pivot = offset + range ; if ( ! tprot ( pivot << 20 ) ) { offset = pivot ; } } return ( offset + 1 ) << 20 ; } 

@@ -1,0 +1,1 @@
+uint64_t random_u64_range ( uint64_t m ) { uint64_t x , remainder ; if ( m == 0 ) { return random_u64 ( ) ; } if ( m == 1 ) { return 0 ; } { x = random_u64 ( ) ; } x >= UINT64_MAX - remainder ; return x % m ; } 

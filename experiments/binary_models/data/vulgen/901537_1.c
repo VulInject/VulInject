@@ -1,0 +1,1 @@
+* / BGD_DECLARE ( ) gdImageGetTrueColorPixel ( , , ) { int p = gdImageGetPixel ( im , x , y ) } ; else { return p ; } 

@@ -1,0 +1,1 @@
+static void set_timeout ( struct addr_req * req , unsigned long time ) { unsigned long delay ; delay = time - jiffies ; mod_delayed_work ( addr_wq , & req -> work , delay ) ; } 

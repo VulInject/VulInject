@@ -1,0 +1,1 @@
+void virInterfaceObjListDispose ( void * obj ) { virInterfaceObjList * interfaces = obj ; g_clear_pointer ( & interfaces -> objsName , g_hash_table_unref ) ; } _virInterfaceObjListCloneData { bool error ; } 

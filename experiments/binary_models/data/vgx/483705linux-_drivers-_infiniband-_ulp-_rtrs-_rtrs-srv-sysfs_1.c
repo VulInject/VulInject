@@ -1,0 +1,1 @@
+static void rtrs_srv_release ( struct kobject * kobj ) { struct rtrs_srv_path * srv_path ; srv_path = container_of ( kobj , rtrs_srv_path , kobj ) ; } 

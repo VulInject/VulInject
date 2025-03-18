@@ -1,0 +1,1 @@
+static int tmp117_identify ( struct i2c_client * client ) { int dev_id ; dev_id = i2c_smbus_read_word_swapped ( client , TMP117_REG_DEVICE_ID ) ; if ( dev_id != TMP117_DEVICE_ID ) { dev_err ( & client -> dev , "TMP117 not found\n" ) ; return - ENODEV ; } return 0 ; } 

@@ -1,0 +1,1 @@
+void call_path_root__free ( struct call_path_root * cpr ) { struct call_path_block * pos , * n ; list_for_each_entry_safe ( , , , ) { list_del_init ( & pos -> node ) ; free ( pos ) ; } } 

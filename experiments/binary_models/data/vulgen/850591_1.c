@@ -1,0 +1,1 @@
+if ( substring == NULL ) { return PCRE_ERROR_NOMEMORY ; } memcpy ( substring , subject + ovector [ stringnumber ] , IN_UCHARS ( yield ) ) ; substring [ yield ] = 0 ; * stringptr = ( const char * ) substring ; * stringptr = ( PCRE_SPTR16 ) substring ; * stringptr = ( PCRE_SPTR32 ) substring ; return yield ; 

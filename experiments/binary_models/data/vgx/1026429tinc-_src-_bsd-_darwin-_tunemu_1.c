@@ -1,0 +1,1 @@
+static int check_device_name ( tunemu_device device ) { if ( strlen ( device ) < 4 ) { return - 1 ; } int unit_number = atoi ( device + 3 ) ; tunemu_device compare ; make_device_name ( compare , unit_number ) ; if ( strcmp ( device , compare ) != 0 ) { return - 1 ; } return 0 ; } 

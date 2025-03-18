@@ -1,0 +1,1 @@
+cbor_item_t * fido_blob_encode ( const fido_blob_t * b ) { if ( b == NULL || b -> ptr == NULL ) { return in ; } return cbor_build_bytestring ( b -> ptr , b -> len ) ; } 

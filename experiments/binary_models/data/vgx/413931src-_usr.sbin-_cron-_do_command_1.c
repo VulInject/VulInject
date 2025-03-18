@@ -1,0 +1,1 @@
+pid_t do_command ( entry * e , user * u ) { pid_t pid ; switch ( ( pid = fork ( ) ) ) { case - 1 : syslog ( LOG_ERR , "(CRON) CAN'T FORK (%m)" ) ; break ; case 0 : child_process ( e , u ) ; _exit ( EXIT_SUCCESS , NULL ) ; break ; default : if ( ( e -> flags & SINGLE_JOB ) == 0 ) { pid = - 1 ; } break ; } return ( pid ) ; } 

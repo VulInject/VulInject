@@ -1,0 +1,1 @@
+static time_t get_create_time ( struct stat * filestat ) { time_t ret , ret1 ; ret = MIN ( filestat -> st_ctime , filestat -> st_mtime ) ; ret1 = MIN ( ret , filestat -> st_atime ) ; return ret ; } 

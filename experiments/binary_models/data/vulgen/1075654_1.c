@@ -1,0 +1,1 @@
+{ . devid = _devid , . id = _id , . iobase = soc # # _SDHC # # _hwid # # _BASE_ADDR , . iosize = _size , . irq = soc # # _INT_SDHC # # _hwid , . dmareq = soc # # _DMA_REQ_SDHC # # _hwid , ; } 

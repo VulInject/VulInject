@@ -1,0 +1,1 @@
+static bool match_oper_password ( const char * password , struct oper_conf * oper_p ) { const char * encr ; if ( EmptyString ( oper_p -> passwd ) ) { return false ; } if ( IsOperConfEncrypted ( oper_p ) ) { else { encr = "" ; } } else { encr = password ; } if ( encr != NULL && strcmp ( encr , oper_p -> passwd ) == 0 ) { return true ; } else { return false ; } } 

@@ -1,0 +1,1 @@
+int akbd_enable ( void * v , int on ) { return 0 ; } 

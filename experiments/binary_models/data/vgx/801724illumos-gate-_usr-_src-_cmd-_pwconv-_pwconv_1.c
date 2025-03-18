@@ -1,0 +1,1 @@
+struct spwd * local_getspnam ( char * name ) { FILE * shadf ; struct spwd * sp ; while ( ( sp = fgetspent ( shadf ) ) != NULL ) { if ( strcmp ( sp -> sp_namp , name ) == 0 ) { break ; } } ( void ) fclose ( shadf ) ; return ( sp ) ; } 

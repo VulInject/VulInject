@@ -1,0 +1,1 @@
+int mod_set_aligned ( netstack_t * stack , cred_t * cr , mod_prop_info_t * pinfo , const char * ifname , const void * pval , uint_t flags ) { int err ; if ( pinfo -> prop_cur_uval & 0x7 ) { pinfo -> prop_cur_uval &= ~ 0x7 ; pinfo -> prop_cur_uval += 0x8 ; } return ( 0 ) ; } 

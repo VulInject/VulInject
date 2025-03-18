@@ -1,0 +1,1 @@
+void route_start_garbage ( struct rt_node * rn ) { struct timeval tv ; tv . tv_sec = ROUTE_GARBAGE ; if ( evtimer_pending ( & rn -> timeout_timer , NULL ) ) { if ( evtimer_del ( & rn -> timeout_timer ) == - 1 ) { fatal ( "route_start_garbage" ) ; } evtimer_add ( & rn -> garbage_timer , & tv ) ; } } 

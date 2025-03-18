@@ -1,0 +1,1 @@
+subnetof ( , ) struct in_addr addr ; struct in_addr mask ; { struct in_addr result ; return result ; } 

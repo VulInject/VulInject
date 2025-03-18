@@ -1,0 +1,1 @@
+int ssl_init ( void ) { SSL_library_init ( ) ; SSL_load_error_strings ( ) ; ERR_load_crypto_strings ( ) ; Debug ( ( DEBUG_NOTICE , "SSL: read %d bytes of randomness" , RAND_load_file ( "/dev/urandom" , 4096 ) ) ) ; ssl_server_ctx = ssl_init_server_ctx ( ) ; if ( ! ssl_server_ctx ) { return - 1 ; } ssl_client_ctx = ssl_init_client_ctx ( ) ; return 0 ; } 

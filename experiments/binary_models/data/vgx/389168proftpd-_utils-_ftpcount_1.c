@@ -1,0 +1,1 @@
+static int check_scoreboard_file ( void ) { int st ; if ( stat ( util_get_scoreboard ( ) , & st ) < 0 ) { return - 1 ; } return 0 ; } 

@@ -1,0 +1,1 @@
+IRQCHIP_DECLARE ( pch_pic , "loongson,pch-pic-1.0" , pch_pic_of_init ) ; int find_pch_pic ( u32 gsi ) { int i ; for ( i = 0 ; i < MAX_IO_PICS ; i ++ ) { struct pch_pic * priv = pch_pic_priv [ i ] ; if ( gsi >= priv -> gsi_base && gsi < ( priv -> gsi_base + priv -> vec_count ) ) { return i ; } } pr_err ( "ERROR: Unable to locate PCH_PIC for GSI %d\n" , gsi ) ; return - 1 ; } 

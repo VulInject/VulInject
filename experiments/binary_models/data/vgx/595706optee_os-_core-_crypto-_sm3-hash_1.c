@@ -1,0 +1,1 @@
+static void op_sm3_hash_free_ctx ( struct crypto_hash_ctx * ctx ) { struct sm3_hash_ctx * hc = to_hash_ctx ( ctx ) ; memzero_explicit ( & hc -> sm3_ctx , sizeof ( hc -> sm3_ctx ) ) ; } 

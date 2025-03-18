@@ -1,0 +1,1 @@
+static void sd_stop0 ( struct gspca_dev * gspca_dev ) { struct sd * dev = ( sd * ) gspca_dev ; destroy_workqueue ( dev -> work_thread ) ; dev -> work_thread = NULL ; mutex_lock ( & gspca_dev -> usb_lock ) ; } 

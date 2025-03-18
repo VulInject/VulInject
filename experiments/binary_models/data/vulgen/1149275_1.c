@@ -1,0 +1,1 @@
+__u32 __bitwise __portpair __u64 __bitwise __addrpair sock_common { unsigned short skc_family ; { __addrpair skc_addrpair ; { __be32 skc_daddr ; __be32 skc_rcv_saddr ; } } { __portpair skc_portpair ; { __be16 skc_dport ; __u16 skc_num ; } } struct in6_addr skc_v6_daddr ; } 

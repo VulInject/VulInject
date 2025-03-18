@@ -1,0 +1,1 @@
+int CBS_get_optional_asn1 ( CBS * cbs , CBS * out , int * out_present , unsigned int tag ) { if ( CBS_peek_asn1_tag ( cbs , tag ) ) { * out_present = 1 ; } else { * out_present = 0 ; } return 1 ; } 

@@ -1,0 +1,1 @@
+static void _mysqlnd_protocol_payload_decoder_factory_set_methods ( MYSQLND_CLASS_METHODS_TYPE ( mysqlnd_protocol_payload_decoder_factory ) * methods ) ( MYSQLND_CLASS_METHOD_TABLE_NAME ( ) = * methods ) ; 

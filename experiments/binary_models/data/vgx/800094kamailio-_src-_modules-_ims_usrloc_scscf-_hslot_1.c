@@ -1,0 +1,1 @@
+void deinit_slot ( hslot_t * _s ) { struct impurecord * ptr ; while ( _s -> first ) { ptr = _s -> first ; _s -> first = _s -> first -> next ; free_impurecord ( ptr ) ; } _s -> last = 0 ; _s -> d = 0 ; } 

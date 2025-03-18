@@ -1,0 +1,1 @@
+static void get_conf_section_doall_arg ( CONF_VALUE * cv , VALUE * aryp ) { rb_ary_push ( * aryp , rb_str_new_cstr ( cv -> section ) ) ; } 

@@ -1,0 +1,1 @@
+bool core_vbuf_is ( uint32_t attr , const void * vbuf , size_t len ) { paddr_t p ; p = virt_to_phys ( ( void * ) vbuf ) ; if ( ! p ) { return false ; } return core_pbuf_is ( attr , p , len ) ; } 

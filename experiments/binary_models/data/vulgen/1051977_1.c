@@ -1,0 +1,1 @@
+int pcie_next_streamid ( int currentid , int idx ) { return currentid | ( ( idx + 1 ) << 11 ) ; } 

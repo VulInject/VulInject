@@ -1,0 +1,1 @@
+void pdb_exit ( struct pdb_reader * reader ) { pdb_reader_exit ( reader ) ; } 

@@ -1,0 +1,1 @@
+void proxychains_write_log ( char * str , ... ) { va_list arglist ; if ( ! proxychains_quiet_mode ) { va_start ( arglist , str ) ; vsnprintf ( buff , sizeof ( buff ) , str , arglist ) ; va_end ( arglist ) ; fprintf ( stderr , "%s" , buff ) ; fflush ( stderr ) ; } } 

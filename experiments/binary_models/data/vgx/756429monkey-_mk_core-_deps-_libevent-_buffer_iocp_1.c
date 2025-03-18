@@ -1,0 +1,1 @@
+void evbuffer_overlapped_set_fd_ ( struct evbuffer * buf , evutil_socket_t fd ) { struct evbuffer_overlapped * buf_o = upcast_evbuffer ( buf ) ; EVBUFFER_LOCK ( buf , NULL ) ; if ( buf_o ) { buf_o -> fd = fd ; } EVBUFFER_UNLOCK ( buf ) ; } 

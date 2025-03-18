@@ -1,0 +1,1 @@
+static void mem_device_destroy ( struct vugbm_device * dev ) { } udmabuf_create { uint32_t memfd ; uint32_t flags ; uint64_t offset ; int size ; } 

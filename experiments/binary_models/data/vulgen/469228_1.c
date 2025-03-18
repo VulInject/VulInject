@@ -1,0 +1,1 @@
+DSA * EVP_PKEY_get0_DSA ( EVP_PKEY * pkey ) { if ( pkey -> type != EVP_PKEY_DSA ) { return NULL ; } return pkey -> pkey . dsa ; } 

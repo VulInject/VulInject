@@ -1,0 +1,1 @@
+static void alloc_cpupda ( cpuid_t cpu , int cpunum ) { cnodeid_t node = get_cpu_cnode ( cpu ) ; nasid_t nasid = COMPACT_TO_NASID_NODEID ( node ) ; cputonasid ( cpunum ) = nasid ; sn_cpu_info [ cpunum ] . p_nodeid = node ; } 

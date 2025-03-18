@@ -1,0 +1,1 @@
+PHP_FUNCTION ( ) { char * str ; size_t str_len ; zend_string * enc = NULL ; zend_long cp ; ZEND_PARSE_PARAMETERS_START ( 1 , 2 ) Z_PARAM_STRING ( , ) Z_PARAM_OPTIONAL Z_PARAM_STR_OR_NULL ( enc ) ZEND_PARSE_PARAMETERS_END ( ) ; cp = php_mb_ord ( str , str_len , enc , 2 ) ; if ( 0 > cp ) { if ( cp == - 2 ) { RETURN_THROWS ( ) ; } RETURN_FALSE ; } RETURN_LONG ( cp ) ; } 

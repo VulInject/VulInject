@@ -1,0 +1,1 @@
+static void fsm_sconfreq ( fsm * , int ) int peer_mru [ NUM_PPP ] ; void fsm_init ( fsm * f ) { f -> state = INITIAL ; f -> id = 0 ; f -> timeouttime = DEFTIMEOUT ; f -> maxconfreqtransmits = DEFMAXCONFREQS ; f -> maxtermtransmits = DEFMAXTERMREQS ; f -> maxnakloops = DEFMAXNAKLOOPS ; f -> term_reason_len = 0 ; } 

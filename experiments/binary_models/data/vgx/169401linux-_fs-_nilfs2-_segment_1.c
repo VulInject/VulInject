@@ -1,0 +1,1 @@
+static void nilfs_segctor_do_flush ( struct nilfs_sc_info * sci , int bn ) { spin_lock ( & sci -> sc_state_lock ) ; if ( ! ( sci -> sc_flush_request & BIT ( bn ) ) ) { cfs_time_t prev_req = sci -> sc_flush_request ; sci -> sc_flush_request |= BIT ( bn ) ; if ( ! prev_req ) { wake_up ( & sci -> sc_wait_daemon ) ; } } spin_unlock ( & sci -> sc_state_lock ) ; } 

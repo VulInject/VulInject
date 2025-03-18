@@ -1,0 +1,1 @@
+void __init disable_srat ( void ) { } 

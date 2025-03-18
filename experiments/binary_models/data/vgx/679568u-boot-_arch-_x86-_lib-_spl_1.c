@@ -1,0 +1,1 @@
+void __noreturn jump_to_image_no_args ( struct spl_image_info * spl_image ) { int ret ; printf ( "Jumping to 64-bit U-Boot: Note many features are missing\n" ) ; ret = cpu_jump_to_64bit_uboot ( spl_image -> entry_point , NULL ) ; debug ( "ret=%d\n" , ret ) ; hang ( ) ; } 

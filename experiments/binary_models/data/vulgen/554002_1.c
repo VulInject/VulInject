@@ -1,0 +1,1 @@
+search_engine_start_real_setup ( ) { NautilusSearchEnginePrivate * priv ; priv = nautilus_search_engine_get_instance_private ( engine ) ; priv -> providers_running = 0 ; priv -> providers_finished = 0 ; priv -> providers_error = 0 ; priv -> restart = FALSE ; DEBUG ( "Search engine start real setup" ) ; } 

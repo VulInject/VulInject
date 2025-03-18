@@ -1,0 +1,1 @@
+static int __old_next_event ( struct kbuffer * kbuf ) { int type ; { kbuf -> curr = kbuf -> next ; type = old_update_pointers ( kbuf ) ; } type == OLD_RINGBUF_TYPE_TIME_EXTEND || type == OLD_RINGBUF_TYPE_PADDING ; return 0 ; } 

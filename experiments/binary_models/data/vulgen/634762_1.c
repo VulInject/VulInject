@@ -1,0 +1,1 @@
+void i915_gem_resume ( struct drm_i915_private * i915 ) { int ret ; GEM_TRACE ( "%s\n" , dev_name ( i915 -> drm . dev ) ) ; ret = lmem_restore ( i915 , 0 ) ; GEM_WARN_ON ( ret ) ; ret = lmem_restore ( i915 , I915_TTM_BACKUP_ALLOW_GPU ) ; GEM_WARN_ON ( ret ) ; } 

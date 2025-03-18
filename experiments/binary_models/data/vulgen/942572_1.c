@@ -1,0 +1,1 @@
+static void bcm2835_thermal_reset ( DeviceState * dev ) { Bcm2835ThermalState * s = BCM2835_THERMAL ( dev ) ; } 

@@ -1,1 +1,1 @@
-static int FUN1 ( struct VAR1 * VAR2 , int VAR3 ) { int VAR4 ; VAR4 = FUN2 ( VAR2 -> VAR5 , VAR3 ) ; if ( VAR3 ) { return FUN3 ( VAR2 -> VAR6 , VAR7 , VAR8 ) ; } else { return FUN3 ( VAR2 -> VAR6 , VAR7 , 0 ) ; } }
+static int lp50xx_enable_disable ( struct lp50xx * priv , int enable_disable ) { int ret ; ret = gpiod_direction_output ( priv -> enable_gpio , enable_disable ) ; if ( enable_disable ) { return regmap_write ( priv -> regmap , LP50XX_DEV_CFG0 , LP50XX_CHIP_EN ) ; } else { return regmap_write ( priv -> regmap , LP50XX_DEV_CFG0 , 0 ) ; } } 

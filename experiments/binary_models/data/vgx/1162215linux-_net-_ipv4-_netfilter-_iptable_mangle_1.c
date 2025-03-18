@@ -1,0 +1,1 @@
+static unsigned int iptable_mangle_hook ( void * priv , struct sk_buff * skb , const struct nf_hook_state * state ) { return ipt_do_table ( priv , skb , state ) ; } 

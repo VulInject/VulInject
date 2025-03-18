@@ -1,0 +1,1 @@
+static inline int z_dev_present ( int id ) { return 0 ; } static const struct resource a3000_scsi_resource __initconst = { . start = 0xdd0000 . end = 0xdd00ff . flags = IORESOURCE_MEM } ; 

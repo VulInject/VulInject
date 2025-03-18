@@ -1,0 +1,1 @@
+static bool psb_intel_sdvo_set_target_input ( struct psb_intel_sdvo * psb_intel_sdvo ) { return psb_intel_sdvo_set_value ( psb_intel_sdvo , SDVO_CMD_SET_TARGET_INPUT , & targets , sizeof ( targets ) ) ; } 

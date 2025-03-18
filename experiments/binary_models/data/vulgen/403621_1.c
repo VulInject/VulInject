@@ -1,0 +1,1 @@
+transmitted end to end . Using multiple calls to send ( ) will result in significantly slower transmission speeds . For maximum speeds , please pass either Strings Typed Arrays as arguments . Note that you can even pass arrays of arrays , like , * ( spi_sender spiSend , spi_sender_data spiSendData , int rxAmt , int txAmt ) jswrap_spi_send_data ; 

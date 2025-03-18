@@ -1,0 +1,1 @@
+static int qmp_pcie_msm8996_init ( struct phy * phy ) { struct qmp_phy * qphy = phy_get_drvdata ( phy ) ; struct qcom_qmp * qmp = qphy -> qmp ; int ret ; dev_vdbg ( qmp -> dev , "Initializing QMP phy\n" ) ; if ( ret ) { return ret ; } return 0 ; } 

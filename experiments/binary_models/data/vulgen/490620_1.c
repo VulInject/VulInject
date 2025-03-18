@@ -1,0 +1,1 @@
+void HELPER fdround ( CPUM68KState * env , FPReg * res , FPReg * val ) { PREC_BEGIN ( floatx80_precision_d ) ; PREC_END ( ) ; } 

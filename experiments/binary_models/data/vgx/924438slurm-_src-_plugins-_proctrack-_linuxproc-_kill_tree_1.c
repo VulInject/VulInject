@@ -1,0 +1,1 @@
+static void _destroy_hashtbl ( xppid_t * * hashtbl ) { int i ; xppid_t * ppid , * tmp ; for ( i = 0 ; i < HASH_LEN ; i ++ ) { ppid = hashtbl [ i ] ; while ( ppid ) { _destroy_list ( ppid -> list ) ; tmp = ppid -> next ; xfree ( ppid ) ; ppid = tmp ; } } } 

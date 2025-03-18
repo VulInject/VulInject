@@ -1,0 +1,1 @@
+hdc2010_data { struct i2c_client * client ; u8 measurement_config ; u8 interrupt_config ; u8 drdy_config ; } 

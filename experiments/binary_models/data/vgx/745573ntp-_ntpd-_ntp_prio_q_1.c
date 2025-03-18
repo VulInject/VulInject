@@ -1,0 +1,1 @@
+void destroy_queue ( queue * my_queue ) { node * temp = NULL ; while ( my_queue -> front != NULL ) { temp = my_queue -> front ; my_queue -> front = my_queue -> front -> node_next ; free ( temp ) ; } } 

@@ -1,0 +1,1 @@
+bool dc_link_get_hpd_state ( struct dc_link * dc_link ) { uint32_t state ; dal_gpio_lock_pin ( dc_link -> hpd_gpio , NULL ) ; dal_gpio_get_value ( dc_link -> hpd_gpio , & state ) ; dal_gpio_unlock_pin ( dc_link -> hpd_gpio ) ; return state ; } 

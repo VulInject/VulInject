@@ -1,0 +1,1 @@
+struct wif * wi_alloc ( int sz ) { struct wif * wi ; void * priv ; wi = malloc ( sizeof ( * wi ) ) ; if ( ! wi ) { return NULL ; } priv = malloc ( sz ) ; if ( ! priv ) { free ( wi ) ; return NULL ; } memset ( priv , 0 , sz ) ; wi -> wi_priv = priv ; return wi ; } 

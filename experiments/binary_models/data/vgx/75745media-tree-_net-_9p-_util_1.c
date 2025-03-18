@@ -1,0 +1,1 @@
+int p9_idpool_get ( struct p9_idpool * p ) { int i ; unsigned long flags ; idr_preload ( GFP_NOFS ) ; spin_lock_irqsave ( & p -> lock , flags ) ; i = idr_alloc ( & p -> pool , p , 0 , 0 , GFP_NOWAIT ) ; spin_unlock_irqrestore ( & p -> lock , flags ) ; idr_preload_end ( ) ; p9_debug ( P9_DEBUG_MUX , " id %d pool %p\n" , i , p ) ; return i ; } 

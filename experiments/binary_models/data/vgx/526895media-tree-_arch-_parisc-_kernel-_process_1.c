@@ -1,0 +1,1 @@
+void * pm_power_off ( void ) machine_power_off ; EXPORT_SYMBOL ( pm_power_off , NULL ) ; void flush_thread ( void ) { } 

@@ -1,0 +1,1 @@
+static ssize_t da9052_ich_show ( struct device * dev , struct device_attribute * devattr , char * buf ) { struct da9052_hwmon * hwmon = dev_get_drvdata ( dev ) ; int ret ; ret = da9052_reg_read ( hwmon -> da9052 , DA9052_ICHG_AV_REG ) ; return sprintf ( buf , "%d\n" , DIV_ROUND_CLOSEST ( ret * 39 , 10 ) ) ; } 

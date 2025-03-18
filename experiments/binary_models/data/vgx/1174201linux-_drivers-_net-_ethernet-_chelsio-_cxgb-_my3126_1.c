@@ -1,0 +1,1 @@
+static void my3126_poll ( struct work_struct * work ) { struct cphy * cphy = container_of ( work , cphy , phy_update . work ) ; my3126_interrupt_handler ( cphy , NULL ) ; } 

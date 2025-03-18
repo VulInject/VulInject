@@ -1,0 +1,1 @@
+R_API void r_th_sem_free ( RThreadSemaphore * sem ) { if ( ! sem ) { return ; } if ( sem -> sem ) { sem_close ( sem -> sem ) ; free ( sem -> sem ) ; } CloseHandle ( sem -> sem ) ; free ( sem ) ; } 

@@ -1,0 +1,1 @@
+int zx_do_cursor ( struct rasops_info * ri ) { return 0 ; } 

@@ -1,0 +1,1 @@
+void test_mutt_replacelist_free ( void ) { { mutt_replacelist_free ( NULL ) ; } } 

@@ -1,0 +1,1 @@
+static bool __init qcom_spm_find_any_cpu ( void ) { struct device_node * cpu_node , * saw_node ; for_each_of_cpu_node ( ) { saw_node = of_parse_phandle ( cpu_node , "qcom,saw" , 0 ) ; if ( of_device_is_available ( saw_node ) ) { of_node_put ( saw_node ) ; of_node_put ( cpu_node , NULL ) ; return true ; } of_node_put ( saw_node ) ; } return false ; } 

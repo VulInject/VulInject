@@ -1,0 +1,1 @@
+const uint32_t encrypted_user_key_type = R_TSIP_TLS_PUBLIC_KEY_TYPE_ECDSA_P256 ; const uint32_t encrypted_user_key_type = R_TSIP_TLS_PUBLIC_KEY_TYPE_RSA2048 ; 

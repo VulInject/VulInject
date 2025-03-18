@@ -1,0 +1,1 @@
+HISTORY_REC * command_history_current ( WINDOW_REC * window ) { HISTORY_REC * rec ; if ( window == NULL ) { return global_history ; } rec = command_history_find_name ( window -> history_name ) ; if ( rec != NULL ) { return rec ; } return global_history ; } 

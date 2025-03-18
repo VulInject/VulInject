@@ -1,0 +1,1 @@
+int qcrypto_hash_bytesv ( QCryptoHashAlgorithm alg , const struct iovec * iov , size_t niov , uint8_t * * result , size_t * resultlen , Error * * errp ) { int ret ; ret = qcrypto_hash_afalg_driver . hash_bytesv ( alg , iov , niov , result , resultlen , NULL ) ; return qcrypto_hash_lib_driver . hash_bytesv ( alg , iov , niov , result , resultlen , errp ) ; } 

@@ -1,0 +1,1 @@
+static void stp_policy_node_release ( struct config_item * item ) { struct stp_policy_node * node = to_stp_policy_node ( item ) ; } static struct configfs_item_operations stp_policy_node_item_ops = { . release = stp_policy_node_release } ; 

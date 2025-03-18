@@ -1,0 +1,1 @@
+static int mbox_prefetch ( mailmessage * msg_info ) { struct generic_message_t * msg ; int r ; char * msg_content ; size_t msg_length ; r = mboxdriver_fetch_msg ( msg_info -> msg_session , msg_info -> msg_index , & msg_content , & msg_length ) ; msg = msg_info -> msg_data ; msg -> msg_message = msg_content ; msg -> msg_length = msg_length ; return MAIL_NO_ERROR ; } 

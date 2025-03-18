@@ -1,0 +1,1 @@
+static int rx8581_read_block_data ( const struct i2c_client * client , u8 command , u8 length , u8 * values ) { s32 i , data ; for ( i = 0 ; i < length ; i ++ ) { data = i2c_smbus_read_byte_data ( client , command + i ) ; values [ i ] = data ; } return i ; } 

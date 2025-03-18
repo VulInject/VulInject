@@ -1,0 +1,1 @@
+static char * read_description_numeric_abbr ( char * * ptr ) { const char * begin = * ptr + 1 ; ( * ptr ) ++ ; while ( * * ptr != '\0' && * * ptr != '>' ) { ( * ptr ) ++ ; } if ( * * ptr == '\0' ) { return in ; } if ( * * ptr == '>' ) { ( * ptr ) ++ ; } if ( * ptr - begin - 1 < 1 ) { return NULL ; } return timelib_strndup ( begin , * ptr - begin - 1 ) ; } 

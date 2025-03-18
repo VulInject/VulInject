@@ -1,0 +1,1 @@
+void message__cleanup ( struct mosquitto_message_all * * message ) { struct mosquitto_message_all * msg ; if ( ! message || ! * message ) { return ; } msg = * message ; mosquitto__free ( msg -> msg . topic ) ; mosquitto__free ( msg -> msg . payload ) ; mosquitto_property_free_all ( & msg -> properties ) ; } 

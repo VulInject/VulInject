@@ -1,0 +1,1 @@
+double target_diff ( const unsigned char * target ) { int targ = 0 ; signed int i ; for ( i = 31 ; i >= 0 ; -- i ) { targ = ( targ * 0x100 ) + target [ i ] ; } return DIFFEXACTONE / ( targ ?: 1 ) ; } 

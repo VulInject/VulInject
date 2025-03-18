@@ -1,0 +1,1 @@
+void inline_node__delete ( struct inline_node * node ) { struct inline_list * ilist , * tmp ; list_for_each_entry_safe ( , , , ) { list_del_init ( & ilist -> list ) ; if ( ilist -> symbol && ilist -> symbol -> inlined ) { symbol__delete ( ilist -> symbol ) ; } free ( ilist ) ; } free ( node ) ; } 

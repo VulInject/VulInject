@@ -1,0 +1,1 @@
+void mailimap_msg_att_xgmlabels_free ( struct mailimap_msg_att_xgmlabels * att ) { clist_foreach ( att -> att_labels , ( clist_func ) mailimap_astring_free , NULL ) ; clist_free ( att -> att_labels ) ; } 

@@ -1,0 +1,1 @@
+int get_option ( char * * str , int * pint ) { char * cur = * str ; int value ; if ( * cur == '-' ) { value = - simple_strtoull ( ++ cur , str , 0 ) ; } else { value = simple_strtoull ( cur , str , 0 ) ; } if ( pint ) { * pint = value ; } if ( cur == * str ) { return 0 ; } if ( * * str == ',' ) { ( * str ) ++ ; return 2 ; } if ( * * str == '-' ) { return 3 ; } return 1 ; } 

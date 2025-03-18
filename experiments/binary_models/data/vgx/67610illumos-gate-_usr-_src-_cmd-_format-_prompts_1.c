@@ -1,0 +1,1 @@
+int get_phead ( int n_heads , ulong_t * options ) { int ioparam ; int deflt ; if ( SCSI ) { ioparam . io_bounds . lower = n_heads ; ioparam . io_bounds . upper = INFINITY ; if ( input ( FIO_OPINT , "Enter physical number of heads" , ':' , & ioparam , & deflt , DATA_INPUT ) ) { * options |= SUP_PHEAD ; return ( deflt ) ; } } return ( 0 ) ; } 

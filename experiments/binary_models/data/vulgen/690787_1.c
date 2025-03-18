@@ -1,0 +1,1 @@
+int safer_ecb_encrypt ( const unsigned char * pt , unsigned char * ct , const symmetric_key * skey ) { int err = s_safer_ecb_encrypt ( pt , ct , skey ) ; return err ; } 

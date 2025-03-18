@@ -1,0 +1,1 @@
+static const int bbr_min_tso_rate = 1200000 ; static const int bbr_high_gain = BBR_UNIT * 2885 / 1000 ; static const int bbr_drain_gain = BBR_UNIT * 1000 / 2885 ; static const int bbr_cwnd_gain = BBR_UNIT * 2 ; static const int bbr_pacing_gain [ ] { BBR_UNIT * 5 / 4 BBR_UNIT * 3 / 4 BBR_UNIT BBR_UNIT BBR_UNIT BBR_UNIT BBR_UNIT BBR_UNIT } ; ; 

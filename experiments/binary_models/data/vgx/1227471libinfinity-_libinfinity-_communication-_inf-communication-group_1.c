@@ -1,0 +1,1 @@
+const gchar * inf_communication_group_get_name ( InfCommunicationGroup * group ) { g_return_val_if_fail ( INF_COMMUNICATION_IS_GROUP ( group ) ) ; return INF_COMMUNICATION_GROUP_PRIVATE ( group ) -> name ; } 

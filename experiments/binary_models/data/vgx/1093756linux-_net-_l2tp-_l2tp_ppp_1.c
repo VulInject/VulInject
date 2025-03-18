@@ -1,0 +1,1 @@
+static int pppol2tp_tunnel_mtu ( const struct l2tp_tunnel * tunnel ) { int mtu ; mtu = l2tp_tunnel_dst_mtu ( tunnel ) ; return mtu - PPPOL2TP_HEADER_OVERHEAD ; } 

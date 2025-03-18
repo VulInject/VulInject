@@ -1,0 +1,1 @@
+int eth_mac_skip ( int index ) { char enetvar [ 15 ] ; char * skip_state ; sprintf ( enetvar , index ?"eth%dmacskip" : "ethmacskip" , index ) ; skip_state = env_get ( enetvar , NULL ) ; return skip_state != NULL ; } 

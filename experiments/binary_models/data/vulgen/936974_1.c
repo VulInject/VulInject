@@ -1,0 +1,1 @@
+int pblk_write_ts ( void * data ) { struct pblk * pblk = data ; while ( ! kthread_should_stop ( ) ) { set_current_state ( TASK_INTERRUPTIBLE ) ; io_schedule ( ) ; } return 0 ; } 

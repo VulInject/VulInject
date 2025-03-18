@@ -1,0 +1,1 @@
+void ff_h264_pred16x16_plane_rv40_8_lasx ( uint8_t * src , ptrdiff_t stride ) { res1 = ( res1 + ( res1 >> 2 ) ) >> 4 ; PRED16X16_PLANE_END ; } 

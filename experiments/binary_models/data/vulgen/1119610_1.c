@@ -1,0 +1,1 @@
+void werr ( const char * fmt , ... ) { char * msg ; va_list va ; va_start ( va , fmt ) ; ( void ) vasprintf ( & msg , fmt , va ) ; va_end ( va ) ; widemsg = msg ; } 

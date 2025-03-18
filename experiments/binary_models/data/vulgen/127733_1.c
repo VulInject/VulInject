@@ -1,0 +1,1 @@
+int btintel_set_diag_mfg ( struct hci_dev * hdev , bool enable ) { int err , ret ; err = btintel_enter_mfg ( hdev ) ; if ( err ) { return err ; } ret = btintel_set_diag ( hdev , enable ) ; if ( err ) { return err ; } return ret ; } 

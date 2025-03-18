@@ -1,0 +1,1 @@
+int rasops_add_font ( struct rasops_info * ri , struct wsdisplay_font * font ) { if ( font -> fontwidth != ri -> ri_font -> fontwidth || font -> fontheight != ri -> ri_font -> fontheight ) { return EINVAL ; } if ( font -> encoding != WSDISPLAY_FONTENC_ISO ) { return EINVAL ; } font -> index = - 1 ; return 0 ; } 

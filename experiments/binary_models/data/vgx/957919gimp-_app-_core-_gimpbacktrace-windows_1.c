@@ -1,0 +1,1 @@
+gimp_backtrace_get_thread_name ( , ) { g_return_val_if_fail ( backtrace != NULL , NULL ) ; g_return_val_if_fail ( thread >= 0 && thread < backtrace -> n_threads ) ; return backtrace -> threads [ thread ] . name ; } 

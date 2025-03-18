@@ -1,0 +1,1 @@
+START_TEST ( ) { M_uint64 tests [ ] { 1 25 50 0 } ; ; int i ; for ( i = 0 ; tests [ i ] != 0 ; i ++ ) { M_event_err_t err = check_event_pipe_test ( tests [ i ] ) ; ck_assert_msg ( err == M_EVENT_ERR_DONE , "%d cnt%d expected M_EVENT_ERR_DONE got %s" , ( int ) i , ( int ) tests [ i ] , event_err_msg ( err ) ) ; } } 

@@ -1,0 +1,1 @@
+int iprb_cmd_ready ( iprb_t * ip ) { for ( int cnt = 1000000 ; cnt != 0 ; cnt -= 10 ) { drv_usecwait ( 10 ) ; } iprb_error ( ip , "timeout waiting for chip to become ready" ) ; return ( DDI_FAILURE ) ; } 

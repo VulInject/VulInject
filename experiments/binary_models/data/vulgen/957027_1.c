@@ -1,0 +1,1 @@
+static void cpy2 ( uint8_t * * dst , const uint8_t * * src , int len ) { } 

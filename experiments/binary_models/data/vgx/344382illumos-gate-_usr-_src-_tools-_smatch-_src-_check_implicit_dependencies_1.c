@@ -1,0 +1,1 @@
+static void print_write_list ( void ) { struct tracker * tracker ; int i = 0 ; FOR_EACH_PTR ( , ) { if ( i == 0 ) { sm_printf ( "%s write_list: [" , syscall_name ) ; } sm_printf ( "%s, " , tracker -> name ) ; i ++ ; } END_FOR_EACH_PTR ( tracker , NULL ) ; if ( i > 0 ) { sm_printf ( "]\n" ) ; } } 

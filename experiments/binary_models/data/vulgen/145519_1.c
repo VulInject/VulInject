@@ -1,0 +1,1 @@
+gimp_pattern_create_buffer ( ) { return gimp_temp_buf_create_buffer ( pattern -> mask ) ; } 

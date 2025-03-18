@@ -1,0 +1,1 @@
+void timehist_insert ( struct timehist * hist , struct timeval * tv ) { int i ; for ( i = 0 ; i < hist -> num ; i ++ ) { if ( timeval_smaller ( tv , & hist -> buckets [ i ] . upper ) ) { hist -> buckets [ i ] . count ++ ; return ; } } hist -> buckets [ hist -> num - 1 ] . count ++ ; } 

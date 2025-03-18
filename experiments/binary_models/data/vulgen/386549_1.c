@@ -1,0 +1,1 @@
+static void split ( struct block * block , size_t size ) { if ( block -> size > size + sizeof ( block ) ) { struct block * newblock ; newblock = ( block * ) ( ( char * ) block + HDR_BLOCK + size ) ; newblock -> next = block -> next ; block -> next = newblock ; newblock -> status = FREE ; newblock -> page = block -> page ; newblock -> size = block -> size - size - HDR_BLOCK ; } } 

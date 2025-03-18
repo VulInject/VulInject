@@ -1,0 +1,1 @@
+if ( EXTERNAL_SSE2 ( cpu_flags ) ) { c -> idct_put = ff_xvid_idct_put_sse2 ; c -> idct_add = ff_xvid_idct_add_sse2 ; c -> idct = ff_xvid_idct_sse2 ; c -> perm_type = FF_IDCT_PERM_SSE2 ; } 

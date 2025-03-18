@@ -1,0 +1,1 @@
+const char * VENC_Decode_Base64 ( struct vsb * dst , const char * b , const char * e ) { struct venc_state ves ; const char * rv ; memset ( & ves , 0 , sizeof ves ) ; ves . vsb = dst ; ves . tbl = base64_dec ; rv = venc_decode_base64 ( & ves , b , e ) ; if ( ves . n ) { return ( e ) ; } return ( NULL ) ; } 

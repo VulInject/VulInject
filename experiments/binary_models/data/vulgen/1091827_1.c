@@ -1,0 +1,1 @@
+reset_basic_sd ( ) { bson_error_t error ; bson_t * hello ; hello = BCON_NEW ( "minWireVersion" , BCON_INT32 ( WIRE_VERSION_MIN ) , "maxWireVersion" , BCON_INT32 ( WIRE_VERSION_MAX ) ) ; mongoc_server_description_reset ( sd ) ; mongoc_server_description_handle_hello ( sd , hello , 0 , & error ) ; bson_destroy ( hello ) ; } 

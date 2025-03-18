@@ -1,0 +1,1 @@
+R_API PJ * pj_se ( PJ * j , const char * k ) { r_return_val_if_fail ( j && k , j ) ; pj_comma ( j ) ; if ( j -> str_encoding == PJ_ENCODING_STR_ARRAY ) { pj_raw ( j , "[" ) ; } else { pj_raw ( j , "\"" ) ; } if ( en ) { pj_raw ( j , en ) ; free ( en ) ; } if ( j -> str_encoding == PJ_ENCODING_STR_ARRAY ) { pj_raw ( j , "]" ) ; } else { pj_raw ( j , "\"" ) ; } return j ; } 

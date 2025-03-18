@@ -1,0 +1,1 @@
+void port_kern_free ( void * d ) { struct port_dev * dev = d ; port_remove_dev ( dev ) ; } 

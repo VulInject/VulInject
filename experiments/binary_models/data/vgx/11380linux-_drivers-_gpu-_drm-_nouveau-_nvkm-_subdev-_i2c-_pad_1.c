@@ -1,0 +1,1 @@
+int nvkm_i2c_pad_acquire ( struct nvkm_i2c_pad * pad , enum nvkm_i2c_pad_mode mode ) { PAD_TRACE ( pad , "acquire" ) ; if ( pad -> mode != mode ) { if ( pad -> mode != NVKM_I2C_PAD_OFF ) { mutex_unlock ( & pad -> mutex ) ; return - EBUSY ; } nvkm_i2c_pad_mode_locked ( pad , mode ) ; } return 0 ; } 

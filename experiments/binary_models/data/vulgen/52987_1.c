@@ -1,0 +1,1 @@
+static int lm3530_led_enable ( struct lm3530_data * drvdata ) { int ret ; ret = regulator_enable ( drvdata -> regulator ) ; if ( ret ) { dev_err ( drvdata -> led_dev . dev , "Failed to enable vin:%d\n" , ret ) ; return ret ; } drvdata -> enable = true ; return 0 ; } 

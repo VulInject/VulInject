@@ -1,0 +1,1 @@
+MOD_INIT ( ) { CommandAdd ( modinfo -> handle , MSG_SETIDENT , cmd_setident , MAXPARA , CMD_USER ) ; return MOD_SUCCESS ; } 

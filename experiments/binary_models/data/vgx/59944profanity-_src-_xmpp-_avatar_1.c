@@ -1,0 +1,1 @@
+gboolean avatar_get_by_nick ( const char * nick , gboolean open ) { caps_remove_feature ( XMPP_FEATURE_USER_AVATAR_METADATA_NOTIFY ) ; g_hash_table_insert ( looking_for , strdup ( nick ) , NULL ) ; caps_add_feature ( XMPP_FEATURE_USER_AVATAR_METADATA_NOTIFY , NULL ) ; if ( open ) { g_hash_table_insert ( shall_open , strdup ( nick ) , NULL ) ; } return TRUE ; } 

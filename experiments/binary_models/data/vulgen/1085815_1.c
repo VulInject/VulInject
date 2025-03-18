@@ -1,0 +1,1 @@
+static void bm_get_version ( u16 * id , u8 * major , u8 * minor ) { * id = ( v >> 16 ) ; * major = ( v >> 8 ) & 0xff ; * minor = v & 0xff ; } 

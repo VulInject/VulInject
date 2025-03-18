@@ -1,0 +1,1 @@
+static char * str ; static int option ; char const * args_multiarg ( int optchar ) { if ( optchar ) { option = optchar ; } register char * pos = strchr ( str , option ) ; if ( pos ) { size_t idx = pos - str ; * pos = ' ' ; return args . d_optarg [ idx ] ; } return PFAILED ; } 

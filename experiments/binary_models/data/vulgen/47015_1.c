@@ -1,0 +1,1 @@
+extern void reset_watchdog ( int ) dbg_port { unsigned int index ; const volatile unsigned * read ; volatile char * write ; volatile unsigned * xoff ; volatile char * baud ; volatile char * tr_ctrl ; volatile char * rec_ctrl ; unsigned long irq ; unsigned int started ; unsigned long baudrate ; unsigned char parity ; unsigned int bits ; } 

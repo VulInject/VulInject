@@ -1,0 +1,1 @@
+static int usbhsp_pipe_barrier ( struct usbhs_pipe * pipe ) { struct usbhs_priv * priv = usbhs_pipe_to_priv ( pipe ) ; int timeout = 1024 ; u16 mask = usbhs_mod_is_host ( priv ) ?( CSSTS | PID_MASK ) : PID_MASK ; usbhs_write ( priv , CFIFOSEL , 0 ) ; usbhs_pipe_disable ( pipe ) ; { udelay ( 10 ) ; } timeout -- ; return - EBUSY ; } 

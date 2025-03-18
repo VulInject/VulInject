@@ -1,0 +1,1 @@
+DEF_ATTR ( kobj_pkt_attr_st5 , "kb_read" , 0444 ) ; static struct attribute * kobj_pkt_attrs_stat [ ] { & kobj_pkt_attr_st1 & kobj_pkt_attr_st2 & kobj_pkt_attr_st3 & kobj_pkt_attr_st4 & kobj_pkt_attr_st5 & kobj_pkt_attr_st6 NULL } ; ; 

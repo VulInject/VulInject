@@ -1,0 +1,1 @@
+static uint32_t cpu_decay ( uint32_t pct , hrtime_t nsec ) { uint64_t delta = ( uint64_t ) nsec ; return ( ( pct * exp_x ( delta ) ) >> LSHIFT ) ; } 

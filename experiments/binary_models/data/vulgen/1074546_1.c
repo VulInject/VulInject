@@ -1,0 +1,1 @@
+static char * pm_map ( int cmd ) { pm_req_t req ; req . value = cmd ; req . data = ( void * ) pm_cmd_string ; req . datasize = sizeof ( pm_cmd_string ) ; return ( pm_cmd_string ) ; } 

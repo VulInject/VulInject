@@ -1,0 +1,1 @@
+copysignf ( , ) { return ( signbit ( x ) != signbit ( ) ?- x : x ) ; } 

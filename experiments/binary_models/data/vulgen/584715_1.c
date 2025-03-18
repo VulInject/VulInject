@@ -1,0 +1,1 @@
+void fixup_BUG ( struct pt_regs * regs ) { BUG_regs = * regs ; { const struct exception_table_entry * fixup ; fixup = search_exception_tables ( instruction_pointer ( regs ) - 2 ) ; if ( fixup ) { instruction_pointer ( regs ) = fixup -> fixup ; arch_fixup ( regs ) ; } } } 

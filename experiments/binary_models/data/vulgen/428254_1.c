@@ -1,0 +1,1 @@
+int h_msg ( unsigned char * out , const unsigned char * in , unsigned long long inlen , const unsigned char * key , const unsigned int keylen , const unsigned int n ) { return core_hash_SHA2 ( out , 2 , key , keylen , in , inlen , n ) ; } 

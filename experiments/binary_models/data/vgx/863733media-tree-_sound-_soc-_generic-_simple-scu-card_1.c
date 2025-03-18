@@ -1,0 +1,1 @@
+simple_card_data { struct snd_soc_card snd_card ; struct snd_soc_codec_conf codec_conf ; struct asoc_simple_dai * dai_props ; struct snd_soc_dai_link * dai_link ; int convert_rate ; u32 convert_channels ; } 

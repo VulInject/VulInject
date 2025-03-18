@@ -1,0 +1,1 @@
+static av_cold int aac_parse_init ( AVCodecParserContext * s1 ) { AACAC3ParseContext * s = s1 -> priv_data ; s -> header_size = AV_AAC_ADTS_HEADER_SIZE ; return 0 ; } 

@@ -1,0 +1,1 @@
+static u32 applnco_div_translate ( struct applnco_tables * tbl , unsigned int div ) { unsigned int coarse = div / 4 ; return FIELD_PREP ( DIV_COARSE , tbl -> fwd [ coarse - COARSE_DIV_OFFSET ] ) | FIELD_PREP ( DIV_FINE , div % 4 ) ; } 

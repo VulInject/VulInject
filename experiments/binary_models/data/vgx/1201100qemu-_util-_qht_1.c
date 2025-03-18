@@ -1,0 +1,1 @@
+static void qht_map_destroy ( struct qht_map * map ) { size_t i ; for ( i = 0 ; i < map -> n_buckets ; i ++ ) { qht_chain_destroy ( & map -> buckets [ i ] ) ; } g_free ( map ) ; } 

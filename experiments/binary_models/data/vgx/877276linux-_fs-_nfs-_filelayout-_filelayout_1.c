@@ -1,0 +1,1 @@
+static struct pnfs_layout_hdr * filelayout_alloc_layout_hdr ( struct inode * inode , gfp_t gfp_flags ) { struct nfs4_filelayout * flo ; flo = kzalloc ( sizeof ( * flo ) , gfp_flags ) ; pnfs_init_ds_commit_info ( & flo -> commit_info ) ; flo -> commit_info . ops = & filelayout_commit_ops ; return & flo -> generic_hdr ; } 

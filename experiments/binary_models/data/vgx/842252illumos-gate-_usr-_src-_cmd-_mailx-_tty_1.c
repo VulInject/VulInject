@@ -1,0 +1,1 @@
+static void Echo ( int cc ) { char c = ( char ) cc ; switch ( c ) { case '\t' : { putchar ( ' ' ) ; } ++ Col % 8 ; break ; case '\b' : if ( Col > 0 ) { putchar ( '\b' ) ; Col -- ; } break ; case '\r' : case '\n' : Col = 0 ; fputs ( "\r\n" , stdout ) ; break ; default : if ( isprint ( c ) ) { Col ++ ; putchar ( c , NULL ) ; } } } 

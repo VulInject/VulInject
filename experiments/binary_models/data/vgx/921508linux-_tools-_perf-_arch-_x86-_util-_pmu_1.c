@@ -1,0 +1,1 @@
+static void pmu_alias__delete ( struct pmu_alias * pmu_alias ) { if ( ! pmu_alias ) { return ; } zfree ( & pmu_alias -> name ) ; zfree ( & pmu_alias -> alias ) ; } 

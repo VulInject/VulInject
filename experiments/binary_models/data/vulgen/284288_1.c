@@ -1,0 +1,1 @@
+nvlist_t * fnvlist_unpack ( char * buf , size_t buflen ) { nvlist_t * rv ; return ( rv ) ; } 

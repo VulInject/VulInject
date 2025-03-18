@@ -1,0 +1,1 @@
+static uint32_t kbd_read_word ( void * opaque , hwaddr addr ) { return 0 ; } 

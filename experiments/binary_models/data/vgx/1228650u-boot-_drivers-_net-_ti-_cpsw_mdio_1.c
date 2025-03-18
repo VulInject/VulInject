@@ -1,0 +1,1 @@
+void cpsw_mdio_free ( struct mii_dev * bus ) { struct cpsw_mdio * mdio = bus -> priv ; u32 reg ; reg = readl ( & mdio -> regs -> control ) ; reg &= ~ CONTROL_ENABLE ; writel ( reg , & mdio -> regs -> control ) ; mdio_unregister ( bus ) ; mdio_free ( bus ) ; } 

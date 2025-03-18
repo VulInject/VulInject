@@ -1,0 +1,1 @@
+static irqreturn_t mpu3050_irq_handler ( int irq , void * p ) { struct iio_trigger * trig = p ; struct iio_dev * indio_dev = iio_trigger_get_drvdata ( trig ) ; struct mpu3050 * mpu3050 = iio_priv ( indio_dev ) ; mpu3050 -> hw_timestamp = iio_get_time_ns ( indio_dev ) ; return IRQ_WAKE_THREAD ; } 

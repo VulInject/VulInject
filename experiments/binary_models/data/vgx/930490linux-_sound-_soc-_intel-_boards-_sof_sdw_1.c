@@ -1,1 +1,1 @@
-static inline int FUN1 ( const VAR1 * VAR2 ) { int VAR3 ; if ( ! VAR2 [ 0 ] ) { return - VAR4 ; } for ( VAR3 = 0 ; VAR3 < FUN2 ( VAR5 ) ; VAR3 ++ ) { if ( ! memcmp ( VAR5 [ VAR3 ] . VAR2 , VAR2 , VAR6 ) ) { break ; } } return VAR3 ; }
+static inline int find_codec_info_acpi ( const u8 * acpi_id ) { int i ; if ( ! acpi_id [ 0 ] ) { return - EINVAL ; } for ( i = 0 ; i < ARRAY_SIZE ( codec_info_list ) ; i ++ ) { if ( ! memcmp ( codec_info_list [ i ] . acpi_id , acpi_id , ACPI_ID_LEN ) ) { break ; } } return i ; } 

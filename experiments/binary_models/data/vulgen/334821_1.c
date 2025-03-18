@@ -1,0 +1,1 @@
+unsigned int comedi_8254_status ( struct comedi_8254 * i8254 , unsigned int counter ) { unsigned int cmd ; cmd = I8254_CTRL_READBACK_STATUS | I8254_CTRL_READBACK_SEL_CTR ( counter ) ; __i8254_write ( i8254 , cmd , I8254_CTRL_REG ) ; return __i8254_read ( i8254 , counter ) ; } 

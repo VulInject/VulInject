@@ -1,0 +1,1 @@
+static uint64_t npcm7xx_mc_read ( void * opaque , hwaddr addr , unsigned int size ) { qemu_log_mask ( LOG_UNIMP , "%s: mostly unimplemented\n" , __func__ ) ; return 0 ; } 

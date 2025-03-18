@@ -1,0 +1,1 @@
+static ssize_t __write_ports_names ( char * buf , struct net * net ) { struct nfsd_net * nn = net_generic ( net , nfsd_net_id ) ; return svc_xprt_names ( nn -> nfsd_serv , buf , SIMPLE_TRANSACTION_LIMIT ) ; } 

@@ -1,0 +1,1 @@
+static int __init segments_info ( void ) { struct dentry * segments ; if ( cpu_has_segments ) { segments = debugfs_create_file ( "segments" , S_IRUGO , mips_debugfs_dir , NULL , & segments_fops ) ; if ( ! segments ) { return - ENOMEM ; } } return 0 ; } 

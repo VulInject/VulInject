@@ -1,0 +1,1 @@
+const char * poe_tagname ( uint16_t tagtype ) { const struct tag_list * tlp ; static char tname [ 32 ] ; for ( tlp = tag_list ; tlp -> tl_name != NULL ; tlp ++ ) { if ( tagtype == tlp -> tl_type ) { return ( tlp -> tl_name ) ; } } return ( tname ) ; } 

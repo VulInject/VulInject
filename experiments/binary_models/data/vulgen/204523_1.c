@@ -1,0 +1,1 @@
+static void ap_bus_class_init ( ObjectClass * oc , void * data ) { BusClass * k = BUS_CLASS ( oc ) ; k -> get_dev_path = ap_bus_get_dev_path ; } static const TypeInfo ap_bus_info = { . name = TYPE_AP_BUS . parent = TYPE_BUS . instance_size = 0 . class_init = ap_bus_class_init } ; 

@@ -1,0 +1,1 @@
+int cayman_suspend ( struct radeon_device * rdev ) { radeon_pm_suspend ( rdev ) ; radeon_audio_fini ( rdev ) ; radeon_vm_manager_fini ( rdev ) ; cayman_cp_enable ( rdev , false ) ; cayman_dma_stop ( rdev ) ; if ( rdev -> has_uvd ) { radeon_uvd_suspend ( rdev ) ; uvd_v1_0_fini ( rdev ) ; } evergreen_irq_suspend ( rdev ) ; radeon_wb_disable ( rdev ) ; return 0 ; } 

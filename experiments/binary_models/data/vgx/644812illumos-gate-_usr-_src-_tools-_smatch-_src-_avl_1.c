@@ -1,0 +1,1 @@
+static AvlNode * mkNode ( const struct sm_state * sm ) { AvlNode * node = malloc ( sizeof ( * node ) ) ; assert ( node != NULL ) ; node -> sm = sm ; node -> lr [ 1 ] = NULL ; node -> balance = 0 ; return node ; } 

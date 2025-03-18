@@ -1,0 +1,1 @@
+mpn_bsqrt ( , , , ) { mp_ptr sp ; mp_size_t n ; n = nb / GMP_NUMB_BITS ; sp = tp + n ; mpn_bsqrtinv ( tp , ap , nb , sp ) ; mpn_mullo_n ( rp , tp , ap , n ) ; } 

@@ -1,0 +1,1 @@
+static int __init acpi_parse_gicc_affinity ( struct acpi_subtable_header * header , const unsigned long end ) { struct acpi_srat_gicc_affinity * processor_affinity ; processor_affinity = ( acpi_srat_gicc_affinity * ) header ; acpi_table_print_srat_entry ( header ) ; acpi_numa_gicc_affinity_init ( processor_affinity ) ; return 0 ; } 

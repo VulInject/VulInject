@@ -1,0 +1,1 @@
+static inline int pcan_channel_present ( struct sja1000_priv * priv ) { pcan_write_canreg ( priv , SJA1000_MOD , 1 ) ; pcan_write_canreg ( priv , SJA1000_CDR , CDR_PELICAN ) ; return 0 ; } 

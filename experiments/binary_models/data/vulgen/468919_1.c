@@ -1,0 +1,1 @@
+{ i = va_arg ( v , char ) ; i = va_arg ( v , short ) ; } 

@@ -1,0 +1,1 @@
+boolean_t memstream_seek ( size_t base , off_t off , size_t max , size_t * nposp ) { size_t npos ; npos = base + ( size_t ) off ; if ( off >= 0 && npos > LONG_MAX ) { return ( B_FALSE ) ; } if ( off < 0 && npos >= base ) { return ( B_FALSE ) ; } if ( npos > max ) { return ( B_FALSE ) ; } * nposp = npos ; return ( B_TRUE ) ; } 

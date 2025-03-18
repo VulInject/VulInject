@@ -1,0 +1,1 @@
+u_int8_t wbenv_readreg ( struct wbenv_softc * sc , u_int8_t reg ) { u_int8_t data ; return data ; } 

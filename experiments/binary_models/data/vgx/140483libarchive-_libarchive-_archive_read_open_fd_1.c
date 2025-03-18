@@ -1,0 +1,1 @@
+__FBSDID ( "$FreeBSD: head/lib/libarchive/archive_read_open_fd.c 201103 2009-12-28 03:13:49Z kientzle $" ) ; read_fd_data { int fd ; size_t block_size ; char use_lseek ; void * buffer ; } 

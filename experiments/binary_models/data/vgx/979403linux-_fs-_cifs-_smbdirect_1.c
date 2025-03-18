@@ -1,0 +1,1 @@
+static void destroy_mr_list ( struct smbd_connection * info ) { struct smbd_mr * mr , * tmp ; cancel_work_sync ( & info -> mr_recovery_work ) ; list_for_each_entry_safe ( , , , ) { if ( mr -> state == MR_INVALIDATED ) { ib_dma_unmap_sg ( info -> id -> device , mr -> sgt . sgl , mr -> sgt . nents , mr -> dir ) ; } ib_dereg_mr ( mr -> mr ) ; kfree ( mr ) ; } } 

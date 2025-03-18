@@ -1,0 +1,1 @@
+static const struct io_pgtable_cfg * qcom_adreno_smmu_get_ttbr1_cfg ( const void * cookie ) { struct arm_smmu_domain * smmu_domain = ( void * ) cookie ; return & pgtable -> cfg ; } 

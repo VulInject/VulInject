@@ -1,0 +1,1 @@
+int atapiscsi_match ( struct device * parent , void * match , void * aux ) { struct ata_atapi_attach * aa_link = aux ; struct cfdata * cf = match ; if ( aa_link -> aa_type != T_ATAPI ) { return ( 0 ) ; } if ( cf -> cf_loc [ 0 ] != aa_link -> aa_channel && cf -> cf_loc [ 0 ] != - 1 ) { return ( 0 ) ; } return ( 1 ) ; } 

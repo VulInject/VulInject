@@ -1,0 +1,1 @@
+static int __init mx27_3ds_otg_mode ( char * options ) { if ( ! strcmp ( options , "host" ) ) { otg_mode_host = true ; } if ( ! strcmp ( options , "device" ) ) { otg_mode_host = false ; } else { } return 1 ; } 

@@ -1,0 +1,1 @@
+void __ndelay ( unsigned long ns ) { int lpj = raw_current_cpu_data . udelay_val ; __delay ( ( ns * 0x00000005ull * HZ * lpj ) >> 32 ) ; } 

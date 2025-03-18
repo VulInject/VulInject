@@ -1,0 +1,1 @@
+void foo ( int a , int b ) { baz ( & a ) ; bar ( b , NULL ) ; } 

@@ -1,0 +1,1 @@
+extern long tm_signal_self ( pid_t pid , int sig , long * ret ) static sig_atomic_t signaled ; static sig_atomic_t fail ; static void signal_handler ( int sig ) { if ( tcheck_active ( ) ) { fail = 2 ; return ; } else { fail = 1 ; } } 

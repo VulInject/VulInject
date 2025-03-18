@@ -1,0 +1,1 @@
+static int nfs41_sign_s32 ( s32 s1 ) { if ( s1 < 0 ) { return - 1 ; } return 0 ; } 

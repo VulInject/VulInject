@@ -1,0 +1,1 @@
+static int __init cb710_init_module ( int ) { return pci_register_driver ( & cb710_driver ) ; } 

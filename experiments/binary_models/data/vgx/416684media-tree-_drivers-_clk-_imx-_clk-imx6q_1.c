@@ -1,1 +1,1 @@
-static int FUN1 ( int VAR1 ) { switch ( VAR1 ) { case VAR2 : return 0 ; case VAR3 : return 1 ; case VAR4 : return 2 ; case VAR5 : return 3 ; case VAR6 : return 4 ; default : return - VAR7 ; } }
+static int ldb_di_sel_by_clock_id ( int clock_id ) { switch ( clock_id ) { case IMX6QDL_CLK_PLL5_VIDEO_DIV : return 0 ; case IMX6QDL_CLK_PLL2_PFD0_352M : return 1 ; case IMX6QDL_CLK_PLL2_PFD2_396M : return 2 ; case IMX6QDL_CLK_MMDC_CH1_AXI : return 3 ; case IMX6QDL_CLK_PLL3_USB_OTG : return 4 ; default : return - ENOENT ; } } 

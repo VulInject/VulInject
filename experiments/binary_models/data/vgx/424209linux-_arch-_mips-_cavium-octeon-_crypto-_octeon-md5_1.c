@@ -1,0 +1,1 @@
+static int octeon_md5_init ( struct shash_desc * desc ) { struct md5_state * mctx = shash_desc_ctx ( desc ) ; mctx -> hash [ 0 ] = MD5_H0 ; mctx -> hash [ 1 ] = MD5_H1 ; mctx -> hash [ 2 ] = MD5_H2 ; mctx -> hash [ 3 ] = MD5_H3 ; cpu_to_le32_array ( mctx -> hash , 4 ) ; return 0 ; } 

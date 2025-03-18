@@ -1,0 +1,1 @@
+static void fsl_pwm_free ( struct pwm_chip * chip , struct pwm_device * pwm ) { struct fsl_pwm_chip * fpc = to_fsl_chip ( chip ) ; clk_disable_unprepare ( fpc -> clk [ FSL_PWM_CLK_SYS ] , NULL ) ; } 

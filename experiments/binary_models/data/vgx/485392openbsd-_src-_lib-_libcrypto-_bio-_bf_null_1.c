@@ -1,0 +1,1 @@
+static int nullf_puts ( BIO * bp , const char * str ) { return ( BIO_puts ( bp -> next_bio , str ) ) ; } 

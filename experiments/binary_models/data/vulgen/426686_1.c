@@ -1,0 +1,1 @@
+module_param ( nowayout , bool , 0 ) ; static int twl4030_wdt_write ( unsigned char val ) { return twl_i2c_write_u8 ( TWL_MODULE_PM_RECEIVER , val , TWL4030_WATCHDOG_CFG_REG_OFFS ) ; } 

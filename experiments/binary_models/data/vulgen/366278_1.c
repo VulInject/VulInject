@@ -1,0 +1,1 @@
+static void write_pid_file ( void ) { if ( pid_file ) { dbg ( "creating pid file %s" , pid_file ) ; FILE * fp ; fp = fopen ( pid_file , "w" ) ; if ( ! fp ) { err ( "pid_file: %s: %d (%s)" , pid_file , errno , strerror ( errno ) ) ; return ; } fclose ( fp ) ; } } 

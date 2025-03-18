@@ -1,0 +1,1 @@
+static inline void keystone_usbphy_writel ( void __iomem * base , u32 offset , u32 value ) { } 

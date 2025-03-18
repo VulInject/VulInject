@@ -1,0 +1,1 @@
+WOLFSSL_API int wc_Sha224Final ( Sha224 * sha224 , byte * hash ) { return hashFinal ( ( wolfssl_TI_Hash * ) sha224 , hash , SHAMD5_ALGO_SHA224 ) ; } 

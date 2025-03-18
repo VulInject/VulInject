@@ -1,0 +1,1 @@
+static int64_t find_guid ( AVIOContext * pb , const uint8_t guid1 [ 16 ] ) { uint8_t guid [ 16 ] ; int64_t size ; while ( ! avio_feof ( pb ) ) { avio_read ( pb , guid , 16 ) ; size = avio_rl64 ( pb ) ; if ( ! memcmp ( guid , guid1 , 16 ) ) { return size ; } avio_skip ( pb , FFALIGN ( size , INT64_C ( 8 ) ) - 24 ) ; } return AVERROR_EOF ; } 

@@ -1,0 +1,1 @@
+static void bfa_ioc_ct2_wait_till_nfc_running ( void __iomem * rb ) { u32 r32 ; int i ; for ( i = 0 ; i < CT2_NFC_PAUSE_MAX_DELAY ; i ++ ) { r32 = readl ( rb + CT2_NFC_STS_REG ) ; if ( r32 == CT2_NFC_STATE_RUNNING ) { return ; } udelay ( 1000 ) ; } r32 = readl ( rb + CT2_NFC_STS_REG ) ; WARN_ON ( ! ( r32 == CT2_NFC_STATE_RUNNING ) ) ; } 

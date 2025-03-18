@@ -1,0 +1,1 @@
+gimp_tool_options_dispose ( ) { GimpToolOptions * options = GIMP_TOOL_OPTIONS ( object ) ; g_clear_object ( & options -> tool_info ) ; } 

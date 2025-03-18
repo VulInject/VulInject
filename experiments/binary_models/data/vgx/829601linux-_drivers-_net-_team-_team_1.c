@@ -1,0 +1,1 @@
+static void __team_carrier_check ( struct team * team ) { struct team_port * port ; bool team_linkup ; team_linkup = false ; list_for_each_entry ( , , ) { if ( port -> linkup ) { team_linkup = true ; break ; } } if ( team_linkup ) { netif_carrier_on ( team -> dev ) ; } else { netif_carrier_off ( team -> dev ) ; } } 

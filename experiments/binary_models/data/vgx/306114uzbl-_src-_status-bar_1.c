@@ -1,0 +1,1 @@
+uzbl_status_bar_update_left ( , ) { UzblStatusBar * status_bar = UZBL_STATUS_BAR ( widget ) ; gtk_label_set_markup ( GTK_LABEL ( status_bar -> left_label ) , format ) ; } 

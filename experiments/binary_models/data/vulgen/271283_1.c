@@ -1,0 +1,1 @@
+ut32 r_bin_wasm_get_entrypoint ( RBinWasmObj * bin ) { if ( bin -> entrypoint ) { return bin -> entrypoint ; } ut32 start = r_bin_wasm_get_start ( bin ) ; RPVector * code = r_bin_wasm_get_codes ( bin ) ; if ( code && start != UT32_MAX ) { RBinWasmCodeEntry * func = r_pvector_at ( code , start ) ; return func ?func -> code : 0 ; } return 0 ; } 

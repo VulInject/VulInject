@@ -1,0 +1,1 @@
+void __init tlb_init ( void ) { int i ; for ( i = 1 ; i < ARRAY_SIZE ( page_id_map ) ; i ++ ) { page_id_map [ i ] = NULL ; } flush_tlb_all ( ) ; page_id_map [ 0 ] = & init_mm ; } 

@@ -1,0 +1,1 @@
+HX509_LIB_FUNCTION int HX509_LIB_CALL hx509_lock_prompt ( hx509_lock lock , hx509_prompt * prompt ) { return * lock -> prompt ( lock -> prompt_data , prompt ) ; } 

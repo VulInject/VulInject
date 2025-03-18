@@ -1,0 +1,1 @@
+void ci_hdrc_host_driver_init ( void ) { orig_bus_suspend = ci_ehci_hc_driver . bus_suspend ; ci_ehci_hc_driver . bus_suspend = ci_ehci_bus_suspend ; ci_ehci_hc_driver . hub_control = ci_ehci_hub_control ; } 

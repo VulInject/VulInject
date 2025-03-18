@@ -1,0 +1,1 @@
+static inline app_usbd_hid_kbd_ctx_t * hid_kbd_ctx_get ( app_usbd_hid_kbd_t const * p_kbd ) { ASSERT ( p_kbd != NULL ) ; return & p_kbd -> specific . p_data -> ctx ; } 

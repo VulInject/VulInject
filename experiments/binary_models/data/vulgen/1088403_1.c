@@ -1,0 +1,1 @@
+insert_insn_on_edge ( , ) rtx pattern ; edge e ; { if ( ( e -> flags & EDGE_ABNORMAL ) && EDGE_CRITICAL_P ( e ) ) { abort ( ) ; } if ( e -> insns == NULL_RTX ) { start_sequence ( ) ; } else { push_to_sequence ( e -> insns ) ; } e -> insns = get_insns ( ) ; end_sequence ( ) ; } 

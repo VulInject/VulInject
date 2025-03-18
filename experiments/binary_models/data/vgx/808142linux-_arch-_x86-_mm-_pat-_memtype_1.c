@@ -1,0 +1,1 @@
+static void __init pat_disable ( const char * msg_reason ) { pat_disabled = true ; pr_info ( "x86/PAT: %s\n" , msg_reason ) ; memory_caching_control &= ~ CACHE_PAT ; } 

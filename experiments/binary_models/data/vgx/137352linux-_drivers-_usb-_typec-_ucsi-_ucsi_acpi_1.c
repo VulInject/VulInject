@@ -1,0 +1,1 @@
+static int ucsi_acpi_read ( struct ucsi * ucsi , unsigned int offset , void * val , size_t val_len ) { struct ucsi_acpi * ua = ucsi_get_drvdata ( ucsi ) ; int ret ; ret = ucsi_acpi_dsm ( ua , UCSI_DSM_FUNC_READ ) ; memcpy ( val , ua -> base + offset , val_len ) ; return 0 ; } 

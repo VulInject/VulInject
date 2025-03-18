@@ -1,0 +1,1 @@
+void g_make_token_header ( struct xdr_netobj * mech , int body_size , unsigned char * * buf ) { * ( * buf ) ++ = 0x60 ; * ( * buf ) ++ = 0x06 ; * ( * buf ) ++ = ( unsigned char ) mech -> len ; TWRITE_STR ( * buf , mech -> data , ( ( int ) mech -> len ) ) ; } 

@@ -1,0 +1,1 @@
+static void _set_psw ( CPURXState * env , uint32_t psw , uint32_t rte ) { uint32_t prev_u ; prev_u = env -> psw_u ; if ( prev_u != env -> psw_u ) { if ( env -> psw_u ) { env -> isp = env -> regs [ 0 ] ; env -> regs [ 0 ] = env -> usp ; } else { env -> usp = env -> regs [ 0 ] ; env -> regs [ 0 ] = env -> isp ; } } } 

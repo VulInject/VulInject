@@ -1,0 +1,1 @@
+static void clockevents_notify_released ( void ) { struct clock_event_device * dev ; while ( ! list_empty ( & clockevents_released ) ) { dev = list_entry ( clockevents_released . next , clock_event_device , list ) ; list_del ( & dev -> list ) ; list_add ( & dev -> list , & clockevent_devices ) ; } } 

@@ -1,0 +1,1 @@
+static struct spi_driver adt7310_driver = { . driver = { . name = "adt7310" . pm = pm_sleep_ptr ( & adt7x10_dev_pm_ops ) } . probe = adt7310_spi_probe . id_table = adt7310_id } ; 

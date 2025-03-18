@@ -1,1 +1,1 @@
-void FUN1 ( VAR1 * VAR2 , VAR3 * VAR4 , size_t VAR5 ) { * VAR2 = VAR6 ; VAR2 -> VAR7 . VAR4 . VAR4 = VAR4 ; VAR2 -> VAR7 . VAR4 . VAR8 = 0 ; VAR2 -> VAR7 . VAR4 . VAR5 = VAR5 ; VAR2 -> VAR7 . VAR4 . VAR9 = 0 ; VAR2 -> VAR7 . VAR4 . VAR10 = FUN2 ( NULL , VAR11 ) ; }
+void rioInitWithConn ( rio * r , connection * conn , size_t read_limit ) { * r = rioConnIO ; r -> io . conn . conn = conn ; r -> io . conn . pos = 0 ; r -> io . conn . read_limit = read_limit ; r -> io . conn . read_so_far = 0 ; r -> io . conn . buf = sdsnewlen ( NULL , PROTO_IOBUF_LEN ) ; } 

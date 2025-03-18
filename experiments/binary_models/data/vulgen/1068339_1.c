@@ -1,0 +1,1 @@
+enum zebra_dplane_result kernel_intf_netconf_update ( struct zebra_dplane_ctx * ctx ) { const char * ifname = dplane_ctx_get_ifname ( ctx ) ; zlog_warn ( "%s:  Unable to set kernel mpls state for interface %s(%d)" , __func__ , ifname , mpls_on ) ; return ZEBRA_DPLANE_REQUEST_SUCCESS ; } 

@@ -1,1 +1,1 @@
-void FUN1 ( struct VAR1 * VAR2 , u_int16_t VAR3 , u_int32_t VAR4 ) { struct VAR5 * VAR6 ; FUN2 ( , , ) if ( VAR6 -> VAR3 == VAR3 ) { VAR6 -> VAR7 = VAR4 ; } }
+void _tag ( struct n2id_labels * head , u_int16_t id , u_int32_t tag ) { struct n2id_label * label ; TAILQ_FOREACH ( , , ) if ( label -> id == id ) { label -> ext_tag = tag ; } } 

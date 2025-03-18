@@ -1,0 +1,1 @@
+struct string_list * combine_string_lists ( struct string_list * one , struct string_list * two ) { struct string_list * ret ; char * tmp ; ret = clone_str_list ( one ) ; FOR_EACH_PTR ( , ) { insert_string ( & ret , tmp ) ; } END_FOR_EACH_PTR ( tmp , NULL ) ; return ret ; } 

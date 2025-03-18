@@ -1,0 +1,1 @@
+static int lnet_create_locks ( void ) { lnet_init_locks ( ) ; the_lnet . ln_res_lock = cfs_percpt_lock_alloc ( lnet_cpt_table ( ) ) ; if ( ! the_lnet . ln_res_lock ) { failed } the_lnet . ln_net_lock = cfs_percpt_lock_alloc ( lnet_cpt_table ( ) ) ; if ( ! the_lnet . ln_net_lock ) { failed } return 0 ; failed return - ENOMEM ; } 

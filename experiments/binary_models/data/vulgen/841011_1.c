@@ -1,0 +1,1 @@
+static void stm_source_device_release ( struct device * dev ) { kfree ( src ) ; } 

@@ -1,0 +1,1 @@
+static av_cold int decode_init ( AVCodecContext * avctx ) { ProresContext * ctx = avctx -> priv_data ; ctx -> total_slices = 0 ; avctx -> bits_per_raw_sample = PRORES_BITS_PER_SAMPLE ; ff_proresdsp_init ( & ctx -> dsp ) ; ctx -> scantable_type = - 1 ; memset ( ctx -> qmat_luma , 4 , 64 ) ; memset ( ctx -> qmat_chroma , 4 , 64 ) ; return 0 ; } 

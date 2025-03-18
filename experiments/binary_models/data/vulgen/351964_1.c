@@ -1,0 +1,1 @@
+static void start_iauth_query ( struct AuthRequest * auth ) { FlagSet ( & auth -> flags , AR_IAUTH_PENDING ) ; if ( IAuthHas ( iauth , IAUTH_SSLFP ) && cli_sslclifp ( auth -> client ) && ! EmptyString ( cli_sslclifp ( auth -> client ) ) ) { sendto_iauth ( auth -> client , "F %s" , cli_sslclifp ( auth -> client ) ) ; } } 

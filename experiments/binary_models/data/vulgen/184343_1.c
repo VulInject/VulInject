@@ -1,0 +1,1 @@
+static rpmRC fapolicyd_tsm_post ( rpmPlugin plugin , rpmts ts , int res ) { if ( rpmtsFlags ( ts ) & ( RPMTRANS_FLAG_TEST | RPMTRANS_FLAG_BUILD_PROBS ) ) { end } end return RPMRC_OK ; } 

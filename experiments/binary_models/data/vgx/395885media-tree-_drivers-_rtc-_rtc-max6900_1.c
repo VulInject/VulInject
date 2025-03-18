@@ -1,0 +1,1 @@
+static int max6900_probe ( struct i2c_client * client , const struct i2c_device_id * id ) { struct rtc_device * rtc ; rtc = devm_rtc_device_register ( & client -> dev , max6900_driver . driver . name , & max6900_rtc_ops , THIS_MODULE ) ; if ( IS_ERR ( rtc ) ) { return PTR_ERR ( rtc ) ; } i2c_set_clientdata ( client , rtc ) ; return 0 ; } 

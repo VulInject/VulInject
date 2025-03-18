@@ -1,0 +1,1 @@
+static inline const char * check_heap_object ( const void * ptr , unsigned long n , bool to_user ) { struct page * page ; if ( ! virt_addr_valid ( ptr ) ) { return in ; } page = virt_to_head_page ( ptr ) ; if ( PageSlab ( page ) ) { return __check_heap_object ( ptr , n , page ) ; } return check_page_span ( ptr , n , page , to_user ) ; } 

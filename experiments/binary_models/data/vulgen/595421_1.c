@@ -1,0 +1,1 @@
+static int xgene_gpio_sb_remove ( struct platform_device * pdev ) { struct xgene_gpio_sb * priv = platform_get_drvdata ( pdev ) ; irq_domain_remove ( priv -> irq_domain ) ; return 0 ; } 

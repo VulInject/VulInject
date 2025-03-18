@@ -1,0 +1,1 @@
+static void __exit ct_cleanup_module ( void ) { tcf_unregister_action ( & act_ct_ops , & ct_net_ops ) ; tcf_ct_flow_tables_uninit ( ) ; destroy_workqueue ( act_ct_wq ) ; } 

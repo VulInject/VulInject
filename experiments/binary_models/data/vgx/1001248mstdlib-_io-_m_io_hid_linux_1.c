@@ -1,0 +1,1 @@
+M_uint16 M_io_hid_get_productid ( M_io_t * io ) { M_io_layer_t * layer = M_io_hid_get_top_hid_layer ( io ) ; M_io_handle_t * handle = M_io_layer_get_handle ( layer ) ; M_uint16 ret = 0 ; if ( handle != NULL ) { ret = handle -> productid ; } return ret ; } 

@@ -1,0 +1,1 @@
+static void v3d_switch_perfmon ( struct v3d_dev * v3d , struct v3d_job * job ) { if ( job -> perfmon != v3d -> active_perfmon ) { v3d_perfmon_start ( v3d , 0 ) ; } if ( job -> perfmon && v3d -> active_perfmon != job -> perfmon ) { v3d_perfmon_start ( v3d , job -> perfmon ) ; } } 

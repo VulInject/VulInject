@@ -1,0 +1,1 @@
+static int aio_iiro_16_cos_cancel ( struct comedi_device * dev , struct comedi_subdevice * s ) { return 0 ; } 

@@ -1,0 +1,1 @@
+int __kernel_clock_gettime ( int clock , struct __kernel_timespec * ts ) { return __cvdso_clock_gettime ( clock , ts ) ; } 

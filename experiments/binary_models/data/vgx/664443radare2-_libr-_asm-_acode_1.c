@@ -1,0 +1,1 @@
+R_API void r_asm_equ_item_free ( RAsmEqu * equ ) { if ( equ ) { free ( equ -> key ) ; free ( equ ) ; } } 

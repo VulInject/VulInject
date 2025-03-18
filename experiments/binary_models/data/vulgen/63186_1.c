@@ -1,0 +1,1 @@
+static int lnet_nrb_tiny_calculate ( void ) { int nrbs = LNET_NRB_TINY ; if ( tiny_router_buffers < 0 ) { LCONSOLE_ERROR_MSG ( 0x10c , "tiny_router_buffers=%d invalid when routing enabled\n" , tiny_router_buffers ) ; return - EINVAL ; } if ( tiny_router_buffers > 0 ) { nrbs = tiny_router_buffers ; } return max ( nrbs , LNET_NRB_TINY_MIN ) ; } 

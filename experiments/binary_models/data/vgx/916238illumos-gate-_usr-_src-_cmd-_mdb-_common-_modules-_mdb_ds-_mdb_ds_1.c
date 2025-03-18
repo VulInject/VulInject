@@ -1,0 +1,1 @@
+static int se_matched_walk_step ( mdb_walk_state_t * wsp ) { uintptr_t addr = wsp -> walk_addr ; mdb_sespec_t s ; if ( mdb_vread ( & s , sizeof ( s ) , addr ) == - 1 ) { mdb_warn ( "failed to read sespec at %p" , addr ) ; return ( WALK_ERR ) ; } wsp -> walk_addr = ( uintptr_t ) s . se_matched ; return ( wsp -> walk_callback ( addr , & s , wsp -> walk_cbdata ) ) ; } 

@@ -1,0 +1,1 @@
+static void pmu_dump_cpu ( void ) { DEBUG ( PMU_PLUGIN ": num cpus   : %d" , g_ctx . entl -> event_list -> num_cpus ) ; DEBUG ( PMU_PLUGIN ": num sockets: %d" , g_ctx . entl -> event_list -> num_sockets ) ; for ( size_t i = 0 ; i < g_ctx . entl -> event_list -> num_sockets ; i ++ ) { } } 

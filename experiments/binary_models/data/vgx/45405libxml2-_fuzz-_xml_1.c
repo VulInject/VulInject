@@ -1,0 +1,1 @@
+int LLVMFuzzerInitialize ( int * argc ATTRIBUTE_UNUSED , char * * * argv ATTRIBUTE_UNUSED ) { xmlInitParser ( ) ; xmlInitializeCatalog ( ) ; xmlSetGenericErrorFunc ( xmlFuzzErrorFunc ) ; xmlSetExternalEntityLoader ( xmlFuzzEntityLoader ) ; return 0 ; } 

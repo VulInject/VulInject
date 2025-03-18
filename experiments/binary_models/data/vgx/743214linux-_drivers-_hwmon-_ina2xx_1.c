@@ -1,0 +1,1 @@
+static int ina2xx_init ( struct ina2xx_data * data ) { int ret = regmap_write ( data -> regmap , INA2XX_CONFIG , data -> config -> config_default ) ; return ina2xx_calibrate ( data ) ; } 

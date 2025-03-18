@@ -1,0 +1,1 @@
+int vorbis_bitrate_managed ( vorbis_block * vb ) { vorbis_dsp_state * vd = vb -> vd ; private_state * b = vd -> backend_state ; if ( bm && bm -> managed ) { return ( 1 ) ; } return ( 0 ) ; } 

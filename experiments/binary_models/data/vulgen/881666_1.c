@@ -1,0 +1,1 @@
+asmlinkage void __exception_irq_entry ft010_irqchip_handle_irq ( struct pt_regs * regs ) { struct ft010_irq_data * f = & firq ; int irq ; u32 status ; while ( ( status = readl ( FT010_IRQ_STATUS ( f -> base ) ) ) ) { irq = ffs ( status ) - 1 ; } } 

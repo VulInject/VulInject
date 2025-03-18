@@ -1,0 +1,1 @@
+static void * get_extension_function ( SOCKET s , const GUID * which_fn ) { void * ptr = NULL ; DWORD bytes = 0 ; WSAIoctl ( s , SIO_GET_EXTENSION_FUNCTION_POINTER , ( GUID * ) which_fn , sizeof ( * which_fn ) , & ptr , sizeof ( ptr ) , & bytes , NULL ) ; return ptr ; } 

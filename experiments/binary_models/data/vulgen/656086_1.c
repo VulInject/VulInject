@@ -1,0 +1,1 @@
+static void op # # _ # # filter # # sz # # _hv_neon ( , , , , , , ) { LOCAL_ALIGNED_16 ( uint8_t , temp , [ ( ( 1 + ( sz < 64 ) ) * sz + 8 ) * sz ] ) ff_vp9_put_ # # filter # # sz # # _h_neon ( temp , sz , src - 3 * src_stride , src_stride , h , mx , 0 ) ff_vp9_ # # op # # _ # # filter # # sz # # _v_neon ( dst , dst_stride , temp + 3 * sz , sz , h , 0 , my ) } ; 

@@ -1,0 +1,1 @@
+snd_pcm_uframes_t snd_ivtv_pcm_pointer ( struct snd_pcm_substream * substream ) { unsigned long flags ; snd_pcm_uframes_t hwptr_done ; struct snd_ivtv_card * itvsc = snd_pcm_substream_chip ( substream ) ; hwptr_done = itvsc -> hwptr_done_capture ; spin_unlock_irqrestore ( & itvsc -> slock , flags ) ; return hwptr_done ; } 

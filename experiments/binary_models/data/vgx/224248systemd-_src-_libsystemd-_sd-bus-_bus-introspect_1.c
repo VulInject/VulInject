@@ -1,0 +1,1 @@
+void introspect_free ( struct introspect * i ) { assert ( i ) ; safe_fclose ( i -> f ) ; free ( i -> interface_name ) ; } 

@@ -1,0 +1,1 @@
+static int drm_set_master ( struct drm_device * dev , struct drm_file * fpriv , bool new_master ) { int ret = 0 ; dev -> master = drm_master_get ( fpriv -> master , NULL ) ; if ( dev -> driver -> master_set ) { ret = dev -> driver -> master_set ( dev , fpriv , new_master ) ; if ( unlikely ( ret != 0 ) ) { drm_master_put ( & dev -> master ) ; } } return ret ; } 

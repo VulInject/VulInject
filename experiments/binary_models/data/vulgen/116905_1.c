@@ -1,0 +1,1 @@
+int uniphier_ld20_dspll_init ( unsigned long reg_base ) { void __iomem * base = sc_base + reg_base ; u32 tmp ; tmp = readl ( base + 4 ) ; writel ( tmp , base + 4 ) ; return 0 ; } 

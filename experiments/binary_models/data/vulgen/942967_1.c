@@ -1,0 +1,1 @@
+CURLcode Curl_ssl_md5sum ( unsigned char * tmp , size_t tmplen , unsigned char * md5sum , size_t md5len ) { curlssl_md5sum ( tmp , tmplen , md5sum , md5len ) ; MD5_context * MD5pw ; ( void ) md5len ; MD5pw = Curl_MD5_init ( Curl_DIGEST_MD5 ) ; Curl_MD5_update ( MD5pw , tmp , curlx_uztoui ( tmplen ) ) ; Curl_MD5_final ( MD5pw , md5sum ) ; return CURLE_OK ; } 

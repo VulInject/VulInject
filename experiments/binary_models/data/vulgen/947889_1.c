@@ -1,0 +1,1 @@
+R_API char * r_asm_code_equ_replace ( RAsmCode * code , char * str ) { RAsmEqu * equ ; RListIter * iter ; r_list_foreach ( , , ) { str = r_str_replace ( str , equ -> key , equ -> value , true ) ; } return str ; } 

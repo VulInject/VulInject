@@ -1,0 +1,1 @@
+static void snd_cx18_card_free ( struct snd_cx18_card * cxsc ) { if ( cxsc == NULL ) { return ; } if ( cxsc -> v4l2_dev != NULL ) { to_cx18 ( cxsc -> v4l2_dev ) -> alsa = NULL ; } } 

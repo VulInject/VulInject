@@ -1,0 +1,1 @@
+bool avb_rsa_public_key_header_validate_and_byteswap ( const AvbRSAPublicKeyHeader * src , AvbRSAPublicKeyHeader * dest ) { avb_memcpy ( dest , src , sizeof ( AvbRSAPublicKeyHeader ) ) ; dest -> key_num_bits = avb_be32toh ( dest -> key_num_bits ) ; return true ; } 

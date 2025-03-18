@@ -1,0 +1,1 @@
+void onintr ( int sig ) { switch ( inquire ( terse ?"\nContinue? " : "\nInterrupt: Do you want to continue? " ) ) { case Q_YES : case Q_yes : ( void ) signal ( SIGINT , onintr ) ; return ; default : if ( tempfileopen ) { writetouched ( 0 ) ; } exit ( 1 ) ; } } 

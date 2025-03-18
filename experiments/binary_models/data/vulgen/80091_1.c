@@ -1,0 +1,1 @@
+static void hdac_ext_writel ( u32 value , u32 __iomem * addr ) { } 

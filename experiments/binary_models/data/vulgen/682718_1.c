@@ -1,0 +1,1 @@
+relax_seg ( , , ) { segment_info_type * seginfo = seg_info ( sec ) ; } 

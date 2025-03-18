@@ -1,0 +1,1 @@
+void zfs_fini ( topo_mod_t * mod ) { ( void ) pthread_mutex_lock ( & g_lock ) ; if ( g_refcount == 0 ) { libzfs_fini ( g_zfs ) ; g_zfs = NULL ; } ( void ) pthread_mutex_unlock ( & g_lock ) ; topo_mod_unregister ( mod ) ; } 

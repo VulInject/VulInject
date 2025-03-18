@@ -1,0 +1,1 @@
+QEMU_BUILD_BUG_ON ( HOST_MEM_POLICY_BIND != MPOL_BIND ) ; QEMU_BUILD_BUG_ON ( HOST_MEM_POLICY_INTERLEAVE != MPOL_INTERLEAVE ) ; char * host_memory_backend_get_name ( HostMemoryBackend * backend ) { return object_get_canonical_path ( OBJECT ( backend ) ) ; } 

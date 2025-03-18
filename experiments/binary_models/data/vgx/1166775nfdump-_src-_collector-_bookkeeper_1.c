@@ -1,0 +1,1 @@
+int LookBooks ( bookkeeper_t * bookkeeper ) { bookkeeper_list_t * bookkeeper_list_entry ; bookkeeper_list_entry = Get_bookkeeper_list_entry ( bookkeeper ) ; if ( ! bookkeeper_list_entry ) { LogError ( "Software error in %s line %d: %s" , __FILE__ , __LINE__ , "Entry not found in list" ) ; return 1 ; } sem_lock ( bookkeeper_list_entry -> sem_id ) ; return 0 ; } 

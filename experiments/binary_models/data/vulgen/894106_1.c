@@ -1,0 +1,1 @@
+static void signal_handler ( int signum ) { if ( ! crash_handler_cmd ) { return ; } char * cmd = r_str_newf ( "%s %d" , crash_handler_cmd , 0 ) ; char * cmd = r_str_newf ( "%s %d" , crash_handler_cmd , r_sys_getpid ( ) ) ; int rc = 1 ; if ( cmd ) { r_sys_backtrace ( ) ; rc = r_sys_cmd ( cmd ) ; } exit ( rc ) ; } 

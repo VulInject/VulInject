@@ -1,0 +1,1 @@
+static void ibx_assert_pch_refclk_enabled ( struct drm_i915_private * dev_priv ) { u32 val ; bool enabled ; val = intel_de_read ( dev_priv , PCH_DREF_CONTROL ) ; enabled = ! ! ( val & ( DREF_SSC_SOURCE_MASK | DREF_NONSPREAD_SOURCE_MASK | DREF_SUPERSPREAD_SOURCE_MASK ) ) ; I915_STATE_WARN ( ! enabled , "PCH refclk assertion failure, should be active but is disabled\n" ) ; } 

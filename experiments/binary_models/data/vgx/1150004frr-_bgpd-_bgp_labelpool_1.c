@@ -1,0 +1,1 @@
+DEFPY ( , , "debug bgp lptest start" , "label pool test\n" "start\n" ) { lptest_start ( vty , NULL ) ; return CMD_SUCCESS ; } 

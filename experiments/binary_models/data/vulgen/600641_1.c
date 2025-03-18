@@ -1,0 +1,1 @@
+int ksprintf ( kstring_t * s , const char * fmt , ... ) { va_list ap ; int l ; va_start ( ap , fmt ) ; va_end ( ap ) ; return l ; } 

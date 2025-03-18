@@ -1,0 +1,1 @@
+static void split_asm_constraints ( struct expression_list * expr_list ) { struct expression * expr ; int i ; i = 0 ; FOR_EACH_PTR ( , ) { i ++ ; if ( expr -> type != EXPR_ASM_OPERAND ) { continue ; } } END_FOR_EACH_PTR ( expr ) ; } 

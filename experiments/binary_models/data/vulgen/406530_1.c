@@ -1,0 +1,1 @@
+static void oti6858_init_termios ( struct tty_struct * tty ) { tty -> termios . c_cflag = B38400 | CS8 | CREAD | HUPCL | CLOCAL ; tty -> termios . c_ispeed = 38400 ; tty -> termios . c_ospeed = 38400 ; } 

@@ -1,0 +1,1 @@
+static int atc_suspend ( struct ct_atc * atc ) { int i ; struct hw * hw = atc -> hw ; snd_power_change_state ( atc -> card , SNDRV_CTL_POWER_D3hot ) ; for ( i = FRONT ; i < NUM_PCMS ; i ++ ) { snd_pcm_suspend_all ( atc -> pcms [ i ] ) ; } atc_release_resources ( atc ) ; hw -> suspend ( hw ) ; return 0 ; } 

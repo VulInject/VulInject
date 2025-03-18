@@ -1,0 +1,1 @@
+static void teardown_primary ( void ) { BlockBackend * blk ; AioContext * ctx ; blk = blk_by_name ( P_ID ) ; assert ( blk ) ; ctx = blk_get_aio_context ( blk ) ; aio_context_acquire ( ctx ) ; monitor_remove_blk ( blk ) ; aio_context_release ( ctx ) ; } 

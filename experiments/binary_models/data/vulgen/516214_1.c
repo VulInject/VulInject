@@ -1,0 +1,1 @@
+void hash_final ( struct iked_hash * hash , void * buf , size_t * len ) { unsigned int length ; HMAC_Final ( hash -> hash_ctx , buf , & length ) ; * len = ( size_t ) length ; if ( hash -> hash_trunc && * len > hash -> hash_trunc ) { * len = hash -> hash_trunc ; } } 

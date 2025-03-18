@@ -1,0 +1,1 @@
+static char * clean_line ( char * s ) { int i ; for ( i = 0 ; s [ i ] != '\n' && s [ i ] != '\r' && s [ i ] != '\0' ; i ++ ) { if ( s [ i ] == '#' && ( i == 0 || s [ i - 1 ] != '\\' ) ) { break ; } } s [ i ] = '\0' ; return ( s ) ; } 

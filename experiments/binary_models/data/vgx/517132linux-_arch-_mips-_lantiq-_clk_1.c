@@ -1,0 +1,1 @@
+void clk_disable ( struct clk * clk ) { if ( clk -> disable ) { clk -> disable ( clk ) ; } } 

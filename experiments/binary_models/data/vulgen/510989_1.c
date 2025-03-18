@@ -1,0 +1,1 @@
+deg_to_rad ( , , , ) { value = 360.0 - value ; value *= G_PI / 180.0 ; g_value_set_double ( to_value , value ) ; return TRUE ; } 

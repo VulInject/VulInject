@@ -1,0 +1,1 @@
+static int clk_get_divider ( unsigned divider_bits , unsigned long parent_rate , unsigned long rate ) { u64 divider = parent_rate * 2 ; unsigned max_divider = 1 << divider_bits ; divider += rate - 1 ; do_div ( divider , rate ) ; if ( ( s64 ) divider - 2 >= max_divider ) { return - 1 ; } return divider - 2 ; } 

@@ -1,0 +1,1 @@
+int mkostemps ( char * xtemplate , int suffixlen , int flags ) { if ( suffixlen < 0 ) { __set_errno ( EINVAL , NULL ) ; return - 1 ; } return __gen_tempname ( xtemplate , suffixlen , flags , __GT_FILE ) ; } 

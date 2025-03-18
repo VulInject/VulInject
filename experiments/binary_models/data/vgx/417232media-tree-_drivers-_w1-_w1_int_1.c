@@ -1,0 +1,1 @@
+EXPORT_SYMBOL ( w1_add_master_device ) ; EXPORT_SYMBOL ( w1_remove_master_device , NULL ) ; 

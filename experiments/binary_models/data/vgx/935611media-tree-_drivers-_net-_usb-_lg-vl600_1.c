@@ -1,1 +1,1 @@
-static void FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 ) { struct VAR5 * VAR6 = VAR2 -> VAR7 ; if ( VAR6 -> VAR8 ) { FUN2 ( VAR6 -> VAR8 ) ; } return FUN3 ( VAR2 , VAR4 ) ; }
+static void vl600_unbind ( struct usbnet * dev , struct usb_interface * intf ) { struct vl600_state * s = dev -> driver_priv ; if ( s -> current_rx_buf ) { dev_kfree_skb ( s -> current_rx_buf ) ; } return usbnet_cdc_unbind ( dev , intf ) ; } 

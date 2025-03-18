@@ -1,0 +1,1 @@
+static void dodefn ( const char * name ) { struct macro_definition * p ; if ( ( p = lookup_macro_definition ( name ) ) != NULL ) { if ( ( p -> type & TYPEMASK ) == MACRTYPE ) { pbstr ( rquote ) ; pbstr ( p -> defn ) ; pbstr ( lquote ) ; } else { pbstr ( p -> defn ) ; } } } 

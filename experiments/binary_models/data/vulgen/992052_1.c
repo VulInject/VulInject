@@ -1,0 +1,1 @@
+static void ef4_farch_flush_rx_queue ( struct ef4_rx_queue * rx_queue ) { struct ef4_nic * efx = rx_queue -> efx ; ef4_oword_t rx_flush_descq ; EF4_POPULATE_OWORD_2 ( rx_flush_descq , FRF_AZ_RX_FLUSH_DESCQ_CMD , 1 , FRF_AZ_RX_FLUSH_DESCQ , ef4_rx_queue_index ( rx_queue ) ) ; } 

@@ -1,0 +1,1 @@
+static void hisi_ptt_free ( struct perf_session * session ) { struct hisi_ptt * ptt = container_of ( session -> auxtrace , hisi_ptt , auxtrace ) ; session -> auxtrace = NULL ; } 

@@ -1,0 +1,1 @@
+struct hw_addr_data * hw_addr_set ( struct hw_addr_data * addr , const uint8_t * bytes , size_t length ) { assert ( length <= HW_ADDR_MAX_SIZE ) ; addr -> length = length ; memcpy_safe ( addr -> bytes , bytes , length ) ; return addr ; } 

@@ -1,0 +1,1 @@
+void Com_TruncateLongString ( char * buffer , const char * s ) { int length = strlen ( s ) ; if ( length <= TRUNCATE_LENGTH ) { Q_strncpyz ( buffer , s , TRUNCATE_LENGTH ) ; } else { Q_strncpyz ( buffer , s , ( TRUNCATE_LENGTH / 2 ) - 3 ) ; Q_strcat ( buffer , TRUNCATE_LENGTH , " ... " ) ; } } 

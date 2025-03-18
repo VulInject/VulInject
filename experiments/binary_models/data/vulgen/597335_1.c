@@ -1,0 +1,1 @@
+static void __twl4030_phy_power ( struct twl4030_usb * twl , int on ) { u8 pwr = twl4030_usb_read ( twl , PHY_PWR_CTRL ) ; if ( on ) { pwr &= ~ PHY_PWR_PHYPWD ; } else { pwr |= PHY_PWR_PHYPWD ; } } 

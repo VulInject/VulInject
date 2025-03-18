@@ -1,0 +1,1 @@
+static void sun6i_drc_unbind ( struct device * dev , struct device * master , void * data ) { struct sun6i_drc * drc = dev_get_drvdata ( dev ) ; clk_rate_exclusive_put ( drc -> mod_clk ) ; clk_disable_unprepare ( drc -> mod_clk ) ; clk_disable_unprepare ( drc -> bus_clk ) ; } 

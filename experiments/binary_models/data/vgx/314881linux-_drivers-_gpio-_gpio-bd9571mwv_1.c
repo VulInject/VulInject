@@ -1,0 +1,1 @@
+static int bd9571mwv_gpio_get ( struct gpio_chip * chip , unsigned int offset ) { struct bd9571mwv_gpio * gpio = gpiochip_get_data ( chip ) ; int ret , val ; ret = regmap_read ( gpio -> regmap , BD9571MWV_GPIO_IN , & val ) ; return val & BIT ( offset ) ; } 

@@ -1,0 +1,1 @@
+static void intel_th_device_free ( struct intel_th_device * thdev ) { kfree ( thdev ) ; } static const intel_th_subdevice { const char * name ; struct resource res [ 3 ] ; unsigned nres ; unsigned type ; unsigned otype ; unsigned scrpd ; int id ; } , intel_th_subdevices [ TH_SUBDEVICE_MAX ] { } ; 

@@ -1,0 +1,1 @@
+GF_Err gf_rtp_setup_payload ( GF_RTPChannel * ch , u32 PayloadType , u32 ClockRate ) { ch -> PayloadType = PayloadType ; ch -> TimeScale = ClockRate ; return GF_OK ; } 

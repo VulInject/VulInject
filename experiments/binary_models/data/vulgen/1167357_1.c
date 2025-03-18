@@ -1,0 +1,1 @@
+static int aq_a2_fw_set_link_speed ( struct aq_hw_s * self , u32 speed ) { hw_atl2_shared_buffer_get ( self , link_options , link_options ) ; link_options . link_up = 1U ; a2_link_speed_mask2fw ( speed , & link_options ) ; hw_atl2_shared_buffer_write ( self , link_options , link_options ) ; return hw_atl2_shared_buffer_finish_ack ( self ) ; } 

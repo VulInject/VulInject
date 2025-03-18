@@ -1,0 +1,1 @@
+static void init_once ( void * foo ) { struct fat_cache * cache = ( fat_cache * ) foo ; } 

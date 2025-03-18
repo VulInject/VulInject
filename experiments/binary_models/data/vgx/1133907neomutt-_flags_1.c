@@ -1,0 +1,1 @@
+void mutt_emails_set_flag ( struct Mailbox * m , struct EmailList * el , enum MessageType flag , bool bf ) { if ( ! m || ! el || STAILQ_EMPTY ( el ) ) { return ; } struct EmailNode * en ; STAILQ_FOREACH ( , , ) { mutt_set_flag ( m , en -> email , flag , bf ) ; } } 

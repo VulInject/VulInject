@@ -1,0 +1,1 @@
+static void inf_communication_manager_joined_key_free ( gpointer key_ ) { InfCommunicationManagerJoinedKey * key ; key = ( InfCommunicationManagerJoinedKey * ) key_ ; g_free ( key -> network ) ; g_free ( key -> publisher_id ) ; } 

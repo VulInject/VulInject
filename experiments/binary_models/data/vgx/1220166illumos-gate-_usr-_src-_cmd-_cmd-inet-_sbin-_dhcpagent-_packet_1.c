@@ -1,0 +1,1 @@
+void free_pkt_entry ( PKT_LIST * plp ) { if ( plp != NULL ) { free ( plp -> pkt ) ; } } 

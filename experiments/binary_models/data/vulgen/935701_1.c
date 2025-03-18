@@ -1,0 +1,1 @@
+int imxrtc_attach ( struct device * , struct device * , void * ) const struct cfattach imxrtc_ca = { sizeof ( imxrtc_softc ) imxrtc_match imxrtc_attach } ; 

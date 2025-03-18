@@ -1,0 +1,1 @@
+void destroy_environment ( fcode_env_t * env ) { FREE ( env -> input ) ; FREE ( env -> order , NULL ) ; FREE ( env -> ds0 ) ; FREE ( env -> rs0 ) ; FREE ( env -> base ) ; FREE ( env -> table ) ; FREE ( env ) ; if ( env == initial_env ) { initial_env = NULL ; } } 

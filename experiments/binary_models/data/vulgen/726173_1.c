@@ -1,0 +1,1 @@
+if ( buffer == NULL ) { return ( ERR ) ; } while ( 1 ) { n = vsnprintf ( buffer , size , fmt , ap ) ; if ( n < size ) { break ; } size *= 2 ; if ( buffer == NULL ) { return ( ERR ) ; } } va_end ( ap ) ; rv = waddnstr ( w , buffer , - 1 ) ; free ( buffer ) ; return ( rv ) ; 

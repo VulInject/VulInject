@@ -1,0 +1,1 @@
+void arm_intr_disable ( void * cookie ) { struct arm_intr_handle * ih = cookie ; struct interrupt_controller * ic = ih -> ih_ic ; ic -> ic_disable ( ih -> ih_ih ) ; } 

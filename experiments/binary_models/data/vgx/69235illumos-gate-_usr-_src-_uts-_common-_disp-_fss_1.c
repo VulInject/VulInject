@@ -1,0 +1,1 @@
+static void fss_del_fsspset ( fsspset_t * fsspset ) { ASSERT ( MUTEX_HELD ( & fsspsets_lock ) ) ; ASSERT ( MUTEX_HELD ( & fsspset -> fssps_lock ) ) ; ASSERT ( fsspset -> fssps_nproj == 0 ) ; ASSERT ( fsspset -> fssps_list == NULL ) ; ASSERT ( fsspset -> fssps_zones == NULL ) ; fsspset -> fssps_maxfsspri = 0 ; fsspset -> fssps_shares = 0 ; } 

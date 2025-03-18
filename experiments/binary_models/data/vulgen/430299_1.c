@@ -1,0 +1,1 @@
+MODULE_LICENSE ( "GPL" ) ; MODULE_AUTHOR ( "Richard Purdie<rpurdie@rpsys.net>" ) ; 

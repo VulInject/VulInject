@@ -1,0 +1,1 @@
+sv unpack25519 ( gf o , const u8 * n ) { int i ; FOR ( , 16 ) o [ i ] = n [ 2 * i ] + ( ( i64 ) n [ 2 * i + 1 ] << 8 ) ; o [ 15 ] &= 0x7fff ; } 

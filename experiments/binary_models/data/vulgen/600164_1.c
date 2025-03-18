@@ -1,0 +1,1 @@
+static void rk_pcie_debug_dump ( struct rk_pcie * rk_pcie ) { u32 loop ; debug ( "ltssm = 0x%x\n" , rk_pcie_readl_apb ( rk_pcie , PCIE_CLIENT_LTSSM_STATUS ) ) ; for ( loop = 0 ; loop < 64 ; loop ++ ) { } } 

@@ -1,0 +1,1 @@
+STACK_OF ( PKCS7 ) * PKCS12_unpack_authsafes ( ) { if ( ! PKCS7_type_is_data ( p12 -> authsafes ) ) { PKCS12error ( PKCS12_R_CONTENT_TYPE_NOT_DATA , NULL ) ; return NULL ; ; } } ; return ASN1_item_unpack ( p12 -> authsafes -> d . data , & PKCS12_AUTHSAFES_it ) ; 

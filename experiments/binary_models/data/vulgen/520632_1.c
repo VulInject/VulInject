@@ -1,0 +1,1 @@
+static void mask_and_ack_maceisa_irq ( struct irq_data * d ) { unsigned long mace_int ; mace_int = mace -> perif . ctrl . istat ; mace -> perif . ctrl . istat = mace_int ; disable_maceisa_irq ( d ) ; } 

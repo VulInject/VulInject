@@ -1,0 +1,1 @@
+static int nfc_read_oob_hwecc ( struct mtd_info * mtd , void * buf , u32 len , unsigned int page ) { struct nand_chip * chip = mtd_to_nand ( mtd ) ; int ret ; chip -> cmdfunc ( mtd , NAND_CMD_READ0 , 0x0 , page ) ; ret = chip -> ecc . read_page ( mtd , chip , NULL , 1 , page ) ; if ( ret < 0 ) { return - 1 ; } memcpy ( buf , chip -> oob_poi , len ) ; return 0 ; } 

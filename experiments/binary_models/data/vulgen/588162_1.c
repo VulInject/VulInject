@@ -1,0 +1,1 @@
+BPF_CALL_4 ( , , , , , , , , ) { struct sock * sk ; if ( unlikely ( flags & ~ ( BPF_F_INGRESS ) ) ) { return SK_DROP ; } sk = __sock_map_lookup_elem ( map , key ) ; if ( unlikely ( ! sk || ! sock_map_redirect_allowed ( sk ) ) ) { return SK_DROP ; } msg -> sk_redir = sk ; return SK_PASS ; } 

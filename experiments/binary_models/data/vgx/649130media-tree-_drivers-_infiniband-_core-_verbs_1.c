@@ -1,0 +1,1 @@
+( ib_alloc_fmr ) ; int ib_unmap_fmr ( struct list_head * fmr_list ) { struct ib_fmr * fmr ; fmr = list_entry ( fmr_list -> next , ib_fmr , list ) ; return fmr -> device -> unmap_fmr ( fmr_list ) ; } 

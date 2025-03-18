@@ -1,0 +1,1 @@
+static void cirrus_bo_evict_flags ( struct ttm_buffer_object * bo , struct ttm_placement * pl ) { struct cirrus_bo * cirrusbo = cirrus_bo ( bo ) ; if ( ! cirrus_ttm_bo_is_cirrus_bo ( bo ) ) { return ; } * pl = cirrusbo -> placement ; } 

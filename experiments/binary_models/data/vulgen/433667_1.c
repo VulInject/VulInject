@@ -1,0 +1,1 @@
+void abrt_p2_task_add_detail ( AbrtP2Task * task , const char * key , GVariant * value ) { AbrtP2TaskPrivate * pv ; GVariantDict dict ; pv = abrt_p2_task_get_instance_private ( task ) ; g_variant_dict_init ( & dict , pv -> p2t_details ) ; g_variant_dict_insert ( & dict , key , "v" , value ) ; pv -> p2t_details = g_variant_dict_end ( & dict ) ; } 

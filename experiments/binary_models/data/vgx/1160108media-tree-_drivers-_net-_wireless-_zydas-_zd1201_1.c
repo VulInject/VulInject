@@ -1,0 +1,1 @@
+static int zd1201_get_rts ( struct net_device * dev , struct iw_request_info * info , struct iw_param * rts , char * extra ) { struct zd1201 * zd = netdev_priv ( dev ) ; short rtst ; int err ; err = zd1201_getconfig16 ( zd , ZD1201_RID_CNFRTSTHRESHOLD , & rtst ) ; rts -> value = rtst ; rts -> disabled = ( rts -> value == ZD1201_RTSMAX ) ; rts -> fixed = 1 ; return 0 ; } 

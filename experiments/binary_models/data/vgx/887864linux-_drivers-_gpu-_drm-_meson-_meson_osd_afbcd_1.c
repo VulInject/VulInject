@@ -1,0 +1,1 @@
+static void meson_g12a_afbcd_exit ( struct meson_drm * priv ) { meson_g12a_afbcd_reset ( priv ) ; } 

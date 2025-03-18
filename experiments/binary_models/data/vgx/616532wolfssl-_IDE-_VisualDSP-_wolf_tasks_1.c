@@ -1,1 +1,1 @@
-int FUN1 ( void * VAR1 ) { FUN2 ( VAR2 ) ; FUN3 ( VAR1 ) ; FUN4 ( VAR3 ) ; return 0 ; }
+int wolfcrypt_harness_taskEnter ( void * args ) { wolfCrypt_SetCb_fips ( myFipsCb ) ; wolfcrypt_harness ( args ) ; fosTaskDelete ( _task ) ; return 0 ; } 

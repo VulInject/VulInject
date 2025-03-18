@@ -1,0 +1,1 @@
+void sm_ma_control ( struct s_smc * smc , int mode ) { switch ( mode ) { case MA_OFFLINE : formac_offline ( smc ) ; break ; case MA_RESET : ( void ) init_mac ( smc , 0 ) ; break ; case MA_BEACON : formac_online ( smc ) ; break ; case MA_DIRECTED : directed_beacon ( smc , NULL ) ; break ; case MA_TREQ : break ; } } 

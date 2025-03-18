@@ -1,0 +1,1 @@
+static boolean_t dir_is_empty_stat ( const char * dirname ) { struct stat st ; if ( stat ( dirname , & st ) < 0 || ! S_ISDIR ( st . st_mode ) ) { return ( B_TRUE ) ; } return ( B_TRUE ) ; } 

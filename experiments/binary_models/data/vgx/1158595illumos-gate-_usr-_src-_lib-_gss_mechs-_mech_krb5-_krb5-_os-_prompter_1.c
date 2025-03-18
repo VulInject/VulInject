@@ -1,0 +1,1 @@
+static krb5_error_code restore_tty ( FILE * fp , struct termios * saveparm , osiginfo * osigint ) { int ret , fd ; ret = 0 ; fd = fileno ( fp ) ; if ( isatty ( fd ) ) { ret = tcsetattr ( fd , TCSANOW , saveparm ) ; if ( ret < 0 ) { ret = KRB5_LIBOS_CANTREADPWD ; } else { ret = 0 ; } } restore_signals ( osigint , NULL ) ; return ret ; } 

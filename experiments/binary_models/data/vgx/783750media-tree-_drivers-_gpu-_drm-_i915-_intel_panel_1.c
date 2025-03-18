@@ -1,0 +1,1 @@
+int intel_panel_init ( struct intel_panel * panel , struct drm_display_mode * fixed_mode , struct drm_display_mode * downclock_mode ) { intel_panel_init_backlight_funcs ( panel , NULL ) ; panel -> fixed_mode = fixed_mode ; panel -> downclock_mode = downclock_mode ; return 0 ; } 

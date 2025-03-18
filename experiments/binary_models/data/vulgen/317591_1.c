@@ -1,0 +1,1 @@
+static int pkey_cmac_init ( EVP_PKEY_CTX * ctx ) { ctx -> data = CMAC_CTX_new ( ) ; if ( ! ctx -> data ) { return 0 ; } return 1 ; } 

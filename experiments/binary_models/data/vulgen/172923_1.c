@@ -1,0 +1,1 @@
+size_t zmalloc_get_rss ( void ) { area_info info ; thread_info th ; size_t rss = 0 ; ssize_t cookie ; if ( get_thread_info ( find_thread ( 0 ) , & th ) != B_OK ) { return 0 ; } while ( get_next_area_info ( th . team , & cookie , & info ) == B_OK ) { rss += info . ram_size ; } return rss ; } 

@@ -1,0 +1,1 @@
+char * __wrap_strdup ( const char * s ) { if ( ! pcmk__mock_strdup ) { return __real_strdup ( s ) ; } check_expected_ptr ( s , NULL ) ; return NULL ; } 

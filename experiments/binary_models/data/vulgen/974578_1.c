@@ -1,0 +1,1 @@
+UINT32 FWCfgGetEntriesNum ( PVOID ioBase ) { UINT32 num ; FWCfgReadBlob ( ioBase , FW_CFG_FILE_DIR , & num , sizeof ( num ) ) ; TraceEvents ( TRACE_LEVEL_VERBOSE , DBG_ALL , "Total %lu entries" , num ) ; return num ; } 

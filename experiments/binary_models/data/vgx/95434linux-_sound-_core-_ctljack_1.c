@@ -1,0 +1,1 @@
+void snd_kctl_jack_report ( struct snd_card * card , struct snd_kcontrol * kctl , bool status ) { kctl -> private_value = status ; snd_ctl_notify ( card , SNDRV_CTL_EVENT_MASK_VALUE , & kctl -> id ) ; } 

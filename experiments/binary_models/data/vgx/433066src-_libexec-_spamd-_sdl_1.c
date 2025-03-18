@@ -1,0 +1,1 @@
+static int compar_v4 ( const void * va , const void * vb ) { const struct sdentry_v4 * a = va ; const struct sdentry_v4 * b = vb ; struct in_addr aa ; struct in_addr bb ; aa . s_addr = ntohl ( a -> sda . s_addr ) ; bb . s_addr = ntohl ( b -> sda . s_addr ) ; if ( aa . s_addr < bb . s_addr ) { return ( - 1 ) ; } return ( 0 ) ; } 

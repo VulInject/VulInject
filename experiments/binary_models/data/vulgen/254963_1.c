@@ -1,0 +1,1 @@
+__weak void HAL_DSI_MspInit ( DSI_HandleTypeDef * hdsi ) { } 

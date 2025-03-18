@@ -1,0 +1,1 @@
+long nf_get_id ( const char * feature_name ) { char name_copy [ 32 ] ; size_t n ; n = strlcpy ( name_copy , feature_name , sizeof ( name_copy ) ) ; return nf_get_id_phys ( virt_to_phys ( name_copy ) ) ; } 

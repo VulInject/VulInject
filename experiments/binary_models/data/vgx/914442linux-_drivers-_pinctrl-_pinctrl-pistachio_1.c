@@ -1,0 +1,1 @@
+static unsigned int pistachio_gpio_irq_startup ( struct irq_data * data ) { struct gpio_chip * chip = irq_data_get_irq_chip_data ( data ) ; pistachio_gpio_direction_input ( chip , data -> hwirq ) ; pistachio_gpio_irq_unmask ( data , NULL ) ; return 0 ; } 

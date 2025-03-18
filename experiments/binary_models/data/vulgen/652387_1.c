@@ -1,0 +1,1 @@
+gsm_store_lookup ( , ) { g_return_val_if_fail ( store != NULL , NULL ) ; g_return_val_if_fail ( id != NULL , NULL ) ; object = g_hash_table_lookup ( store -> priv -> objects , id ) ; return object ; } { GsmStoreFunc func ; gpointer user_data ; GsmStore * store ; GList * removed ; } WrapperData 

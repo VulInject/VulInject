@@ -1,0 +1,1 @@
+const char * aa_ns_name ( struct aa_ns * curr , struct aa_ns * view , bool subns ) { if ( aa_ns_visible ( curr , view , subns ) ) { return view -> base . hname + strlen ( curr -> base . hname ) + 2 ; } return aa_hidden_ns_name ; } 

@@ -1,1 +1,1 @@
-int FUN1 ( xmlNsPtr VAR1 ) { char VAR2 [ 10 ] ; sprintf ( VAR2 , "" , VAR1 -> VAR3 ) ; if ( strcmp ( VAR2 , VAR4 ) == 0 ) { return VAR5 ; } else { return VAR6 ; } }
+int _validateNamespace ( xmlNsPtr psNsOws ) { char namespace_prefix [ 10 ] ; sprintf ( namespace_prefix , "%s" , psNsOws -> prefix ) ; if ( strcmp ( namespace_prefix , MS_OWSCOMMON_OWS_NAMESPACE_PREFIX ) == 0 ) { return MS_SUCCESS ; } else { return MS_FAILURE ; } } 

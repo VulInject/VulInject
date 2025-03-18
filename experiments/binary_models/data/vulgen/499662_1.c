@@ -1,0 +1,1 @@
+( parport_release ) ; irqreturn_t parport_irq_handler ( int irq , void * dev_id ) { struct parport * port = dev_id ; return IRQ_HANDLED ; } 

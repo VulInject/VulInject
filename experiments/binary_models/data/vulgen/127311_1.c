@@ -1,0 +1,1 @@
+static void dsi_pll_disable_pll_bias ( struct dsi_pll_10nm * pll ) { dsi_phy_write ( pll -> phy -> pll_base + REG_DSI_10nm_PHY_PLL_SYSTEM_MUXES , 0 ) ; dsi_phy_write ( pll -> phy -> base + REG_DSI_10nm_PHY_CMN_CTRL_0 , data & ~ BIT ( 5 ) ) ; ndelay ( 250 ) ; } 

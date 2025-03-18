@@ -1,0 +1,1 @@
+int RSA_padding_add_none ( unsigned char * to , int tlen , const unsigned char * from , int flen ) { if ( flen > tlen ) { RSAerror ( RSA_R_DATA_TOO_LARGE_FOR_KEY_SIZE ) ; return 0 ; } if ( flen < tlen ) { return 0 ; } memcpy ( to , from , flen ) ; return 1 ; } 

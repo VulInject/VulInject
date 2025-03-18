@@ -1,0 +1,1 @@
+static int mcu_remove ( struct i2c_client * client ) { struct mcu * mcu = i2c_get_clientdata ( client ) ; int ret ; kthread_stop ( shutdown_thread ) ; device_remove_file ( & client -> dev , & dev_attr_status ) ; if ( glob_mcu == mcu ) { pm_power_off = NULL ; glob_mcu = NULL ; } ret = mcu_gpiochip_remove ( mcu ) ; if ( ret ) { return ret ; } return 0 ; } 

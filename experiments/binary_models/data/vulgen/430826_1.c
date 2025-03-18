@@ -1,0 +1,1 @@
+static u32 load_per_type ( struct venus_core * core , u32 session_type ) { struct venus_inst * inst = NULL ; u32 mbs_per_sec ; list_for_each_entry ( , , ) { if ( inst -> session_type != session_type ) { continue ; } mbs_per_sec += load_per_instance ( inst ) ; } return mbs_per_sec ; } 

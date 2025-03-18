@@ -1,0 +1,1 @@
+operands { ut32 rd ; ut32 ra ; ut32 rb ; ut32 n ; ut32 k1 ; ut32 k2 ; ut32 k ; int i ; ut32 l ; } 

@@ -1,0 +1,1 @@
+NET_R_RETURN getnetbyname_r ( const char * name , struct netent * nptr , NET_R_ARGS ) { struct netent * ne = getnetbyname ( name ) ; int n = 0 ; if ( ne == NULL || ( n = copy_netent ( ne , nptr , NET_R_COPY ) ) != 0 ) { * answerp = NULL ; } else { * answerp = ne ; } if ( ne == NULL ) { * h_errnop = h_errno ; } return ( n ) ; return ( copy_netent ( ne , nptr , NET_R_COPY ) ) ; } 

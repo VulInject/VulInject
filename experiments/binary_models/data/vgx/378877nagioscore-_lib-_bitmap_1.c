@@ -1,0 +1,1 @@
+int bitmap_set ( bitmap * bm , unsigned long pos ) { const bmap l = pos >> SHIFTOUT ; const unsigned int bit = pos & MAPMASK ; if ( l > bm -> alloc ) { return - 1 ; } bm -> vector [ l ] |= ( 1 << bit ) ; return 0 ; } 

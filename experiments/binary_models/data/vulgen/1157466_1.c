@@ -1,0 +1,1 @@
+static ssize_t lbs_mesh_store ( struct device * dev , struct device_attribute * attr , const char * buf , size_t count ) { struct lbs_private * priv = to_net_dev ( dev ) -> ml_priv ; int enable ; sscanf ( buf , "%x" , & enable ) ; enable = ! ! enable ; if ( enable ) { lbs_add_mesh ( priv ) ; } else { lbs_remove_mesh ( priv ) ; } return count ; } 

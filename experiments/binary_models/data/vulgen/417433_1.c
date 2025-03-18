@@ -1,0 +1,1 @@
+void gru_release_async_resources ( unsigned long han ) { struct gru_blade_state * bs = ASYNC_HAN_TO_BS ( han ) ; down_write ( & bs -> bs_kgts_sema ) ; bs -> bs_async_dsr_bytes = 0 ; bs -> bs_async_cbrs = 0 ; up_write ( & bs -> bs_kgts_sema ) ; } 

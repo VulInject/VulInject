@@ -1,0 +1,1 @@
+void iscsit_attach_datain_req ( struct iscsi_cmd * cmd , struct iscsi_datain_req * dr ) { spin_lock ( & cmd -> datain_lock ) ; spin_unlock ( & cmd -> datain_lock ) ; } 

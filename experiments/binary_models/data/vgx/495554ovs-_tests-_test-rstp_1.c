@@ -1,0 +1,1 @@
+static struct lan * new_lan ( struct test_case * tc , const char * name ) { struct lan * lan = xmalloc ( sizeof lan ) ; lan -> tc = tc ; lan -> name = xstrdup ( name ) ; assert ( tc -> n_lans < ARRAY_SIZE ( tc -> lans ) ) ; tc -> lans [ tc -> n_lans ++ ] = lan ; return lan ; } 

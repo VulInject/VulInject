@@ -1,1 +1,1 @@
-bool FUN1 ( resource_size_t VAR1 , size_t VAR2 , unsigned long VAR3 ) { cfs_time_t VAR4 = FUN2 ( VAR1 ) ; return FUN3 ( VAR4 ) ; }
+bool arch_memremap_can_ram_remap ( resource_size_t offset , size_t size , unsigned long flags ) { cfs_time_t pfn = PHYS_PFN ( offset ) ; return pfn_is_map_memory ( pfn ) ; } 

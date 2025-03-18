@@ -1,0 +1,1 @@
+static int altera_spi_of_to_plat ( struct udevice * bus ) { struct altera_spi_plat * plat = dev_get_plat ( bus ) ; return 0 ; } 

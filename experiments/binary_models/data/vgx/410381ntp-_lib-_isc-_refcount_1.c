@@ -1,0 +1,1 @@
+isc_result_t isc_refcount_init ( isc_refcount_t * ref , unsigned int n ) { ref -> refs = n ; return ( isc_mutex_init ( & ref -> lock ) ) ; return ( ISC_R_SUCCESS ) ; } 

@@ -1,0 +1,1 @@
+static struct mark * getumark ( int c ) { if ( c >= 'a' && c <= 'z' ) { return ( & marks [ c - 'a' ] ) ; } error ( "Invalid mark letter" , NULL ) ; return ( NULL ) ; } 

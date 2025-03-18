@@ -1,0 +1,1 @@
+( ishtp_device_init ) ; int ishtp_start ( struct ishtp_device * dev ) { if ( ishtp_hbm_start_wait ( dev ) ) { dev_err ( dev -> devc , "HBM haven't started" ) ; err } ishtp_query_subscribers ( dev , NULL ) ; return 0 ; err dev_err ( dev -> devc , "link layer initialization failed.\n" ) ; dev -> dev_state = ISHTP_DEV_DISABLED ; return - ENODEV ; } 

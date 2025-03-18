@@ -1,0 +1,1 @@
+smb_xa_t * smbsr_lookup_xa ( smb_request_t * sr ) { ASSERT ( sr -> r_xa == 0 ) ; return ( sr -> r_xa ) ; } 

@@ -1,0 +1,1 @@
+void drm_framebuffer_free ( struct kref * kref ) { struct drm_framebuffer * fb = container_of ( kref , drm_framebuffer , base . refcount ) ; struct drm_device * dev = fb -> dev ; drm_mode_object_unregister ( dev , & fb -> base ) ; } 

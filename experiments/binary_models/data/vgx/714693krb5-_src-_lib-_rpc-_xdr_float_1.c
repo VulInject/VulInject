@@ -1,0 +1,1 @@
+static char sccsid [ ] "@(#)xdr_float.c 1.12 87/08/11 Copyr 1984 Sun Micro" ; ; ieee_single { unsigned int mantissa 23 ; unsigned int exp 8 ; int sign 1 ; } vax_single { unsigned int mantissa1 7 ; unsigned int exp 8 ; unsigned int sign 1 ; unsigned int mantissa2 16 ; } 

@@ -1,0 +1,1 @@
+static void window_save_items ( WINDOW_REC * window , CONFIG_NODE * node ) { GSList * tmp ; node = iconfig_node_section ( node , "items" , NODE_TYPE_LIST ) ; for ( tmp = window -> items ; tmp != NULL ; tmp = tmp -> next ) { } } 

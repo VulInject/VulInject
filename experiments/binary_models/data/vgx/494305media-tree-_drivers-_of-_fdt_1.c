@@ -1,0 +1,1 @@
+void __init early_init_dt_scan_nodes ( void ) { of_scan_flat_dt ( early_init_dt_scan_chosen , boot_command_line ) ; of_scan_flat_dt ( early_init_dt_scan_root ) ; of_scan_flat_dt ( early_init_dt_scan_memory , NULL ) ; } 

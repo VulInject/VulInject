@@ -1,0 +1,1 @@
+unsigned int snd_soc_read ( struct snd_soc_codec * codec , unsigned int reg ) { int val ; int ret ; ret = snd_soc_component_read ( & codec -> component , reg , & val ) ; if ( ret < 0 ) { return - 1 ; } return val ; } 

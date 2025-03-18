@@ -1,0 +1,1 @@
+uint32_t size ; uint32_t nr_disks ; uint32_t raid_disks ; uint32_t not_persistent ; uint32_t set_uuid1 ; uint32_t set_uuid2 ; uint32_t set_uuid3 ; 

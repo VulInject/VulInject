@@ -1,0 +1,1 @@
+static void fdisk_script_free_header ( struct fdisk_scriptheader * fi ) { if ( ! fi ) { return ; } DBG ( SCRIPT , ul_debugobj ( fi , "free header %s" , fi -> name ) ) ; free ( fi -> name ) ; list_del ( & fi -> headers ) ; free ( fi ) ; } 

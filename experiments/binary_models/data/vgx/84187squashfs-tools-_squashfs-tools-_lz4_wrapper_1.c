@@ -1,0 +1,1 @@
+static int lz4_options ( char * argv [ ] , int argc ) { if ( strcmp ( argv [ 0 ] , "-Xhc" ) == 0 ) { return 0 ; } return - 1 ; } 

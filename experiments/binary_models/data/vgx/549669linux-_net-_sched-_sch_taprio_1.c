@@ -1,0 +1,1 @@
+static struct sk_buff * taprio_dequeue_txq_priority ( struct Qdisc * sch , struct sched_entry * entry , u32 gate_mask ) { struct net_device * dev = qdisc_dev ( sch ) ; struct sk_buff * skb ; int i ; for ( i = 0 ; i < dev -> num_tx_queues ; i ++ ) { skb = taprio_dequeue_from_txq ( sch , i , entry , gate_mask ) ; } return NULL ; } 

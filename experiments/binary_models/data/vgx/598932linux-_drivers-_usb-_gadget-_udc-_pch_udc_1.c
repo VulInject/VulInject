@@ -1,0 +1,1 @@
+static int pch_udc_pcd_wakeup ( struct usb_gadget * gadget ) { struct pch_udc_dev * dev ; unsigned long flags ; dev = container_of ( gadget , pch_udc_dev , gadget ) ; spin_lock_irqsave ( & dev -> lock , flags ) ; pch_udc_rmt_wakeup ( dev ) ; spin_unlock_irqrestore ( & dev -> lock , flags ) ; return 0 ; } 

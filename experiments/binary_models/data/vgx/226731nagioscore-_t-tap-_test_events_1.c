@@ -1,0 +1,1 @@
+int log_debug_info ( int level , int verbosity , const char * fmt , ... ) { va_list ap ; char * buffer = NULL ; if ( test_event_debugging == TRUE ) { va_start ( ap , fmt ) ; vasprintf ( & buffer , fmt , ap ) ; if ( strstr ( buffer , "## " ) != buffer ) { printf ( "DEBUG: %s" , buffer ) ; } va_end ( ap ) ; } return OK ; } 

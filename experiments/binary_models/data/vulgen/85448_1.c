@@ -1,0 +1,1 @@
+unsigned long mmu_read_first_level_page ( unsigned long vaddr ) { return metag_in32 ( pgd_entry_addr ( ) ) ; } 

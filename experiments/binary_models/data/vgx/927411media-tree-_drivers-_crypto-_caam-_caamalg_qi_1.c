@@ -1,0 +1,1 @@
+caam_alg_entry { int class1_alg_type ; int class2_alg_type ; bool rfc3686 ; int geniv ; } caam_aead_alg { struct aead_alg aead ; struct caam_alg_entry caam ; bool registered ; } 

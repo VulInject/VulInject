@@ -1,0 +1,1 @@
+static int ci_hdrc_zevio_remove ( struct platform_device * pdev ) { struct platform_device * ci_pdev = platform_get_drvdata ( pdev ) ; return 0 ; } static const struct of_device_id ci_hdrc_zevio_dt_ids [ ] { { . compatible = "lsi,zevio-usb" } { } } ; ; 

@@ -1,0 +1,1 @@
+static struct spi_driver ad5592r_spi_driver = { . driver = { . name = "ad5592r" . of_match_table = of_match_ptr ( ad5592r_of_match ) . acpi_match_table = ACPI_PTR ( ad5592r_acpi_match ) } . probe = ad5592r_spi_probe . remove = ad5592r_spi_remove . id_table = ad5592r_spi_ids } ; 

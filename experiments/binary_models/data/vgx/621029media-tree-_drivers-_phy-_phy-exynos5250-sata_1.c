@@ -1,0 +1,1 @@
+static int wait_for_reg_status ( void __iomem * base , u32 reg , u32 checkbit , u32 status ) { cfs_time_t timeout = jiffies + PHY_PLL_TIMEOUT ; while ( time_before ( jiffies , timeout ) ) { if ( ( readl ( base + reg ) & checkbit ) == status ) { return 0 ; } } return - EFAULT ; } 

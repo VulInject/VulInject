@@ -1,0 +1,1 @@
+static void seqiv_aead_encrypt_complete2 ( struct aead_request * req , int err ) { struct aead_request * subreq = aead_request_ctx ( req ) ; struct crypto_aead * geniv ; if ( err ) { out } geniv = crypto_aead_reqtfm ( req ) ; memcpy ( req -> iv , subreq -> iv , crypto_aead_ivsize ( geniv ) ) ; out kfree_sensitive ( subreq -> iv ) ; } 

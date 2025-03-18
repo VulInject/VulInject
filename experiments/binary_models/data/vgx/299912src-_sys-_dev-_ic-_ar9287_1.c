@@ -1,0 +1,1 @@
+void ar9287_olpc_init ( struct athn_softc * sc ) { uint32_t reg ; AR_SETBITS ( sc , AR_PHY_TX_PWRCTRL9 , AR_PHY_TX_PWRCTRL9_RES_DC_REMOVAL ) ; reg = AR_READ ( sc , AR9287_AN_TXPC0 ) ; reg = RW ( reg , AR9287_AN_TXPC0_TXPCMODE , AR9287_AN_TXPC0_TXPCMODE_TEMPSENSE ) ; AR_WRITE ( sc , AR9287_AN_TXPC0 , reg ) ; AR_WRITE_BARRIER ( sc , NULL ) ; DELAY ( 100 ) ; } 

@@ -1,0 +1,1 @@
+void my_usr2 ( int sig , siginfo_t * si , void * u ) { char * aa ; struct stk_data * p ; printf ( "[RUN]\tsignal USR2\n" ) ; aa = alloca ( 1024 ) ; if ( p ) { printf ( "[FAIL]\tsigaltstack re-used\n" ) ; strcpy ( p -> msg , msg2 ) ; p -> flag = 0 ; } } 

@@ -1,0 +1,1 @@
+the Free Software Foundation ; either version of the License ( at your option ) , any later version . The GNU MPFR Library is distributed in the hope that it will be useful , but WITHOUT ANY WARRANTY ; for see the file COPYING . LESSER . If not , see https : 51 Franklin St , Fifth Floor , Boston , MA 02110 - 1301 , USA . * / 

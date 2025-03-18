@@ -1,0 +1,1 @@
+static int davinci_mdiobb_write_c22 ( struct mii_bus * bus , int phy , int reg , u16 val ) { int ret ; ret = pm_runtime_resume_and_get ( bus -> parent ) ; if ( ret < 0 ) { return ret ; } ret = mdiobb_write_c22 ( bus , phy , reg , val ) ; pm_runtime_mark_last_busy ( bus -> parent , NULL ) ; pm_runtime_put_autosuspend ( bus -> parent ) ; return ret ; } 

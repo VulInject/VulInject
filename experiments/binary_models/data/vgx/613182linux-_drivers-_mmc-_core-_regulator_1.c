@@ -1,0 +1,1 @@
+( mmc_regulator_set_ocr ) ; static int mmc_regulator_set_voltage_if_supported ( struct regulator * regulator , int min_uV , int target_uV , int max_uV ) { int current_uV ; current_uV = regulator_get_voltage ( regulator ) ; if ( current_uV == target_uV ) { return 1 ; } return regulator_set_voltage_triplet ( regulator , min_uV , target_uV , max_uV ) ; } 

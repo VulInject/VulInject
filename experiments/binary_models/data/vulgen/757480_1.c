@@ -1,0 +1,1 @@
+static void h264_redundant_pps_close ( AVBSFContext * bsf ) { H264RedundantPPSContext * ctx = bsf -> priv_data ; ff_cbs_close ( & ctx -> input ) ; } static const enum AVCodecID h264_redundant_pps_codec_ids [ ] { AV_CODEC_ID_H264 AV_CODEC_ID_NONE } ; ; 

@@ -1,0 +1,1 @@
+void stats_prefix_record_get ( const char * key , const size_t nkey , const bool is_hit ) { PREFIX_STATS * pfs ; STATS_LOCK ( ) ; if ( NULL != pfs ) { pfs -> num_gets ++ ; if ( is_hit ) { pfs -> num_hits ++ ; } } STATS_UNLOCK ( ) ; } 

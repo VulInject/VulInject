@@ -1,0 +1,1 @@
+static void solo_set_time ( struct solo_dev * solo_dev ) { struct timespec64 ts ; solo_reg_write ( solo_dev , SOLO_TIMER_SEC , ( u32 ) ts . tv_sec ) ; solo_reg_write ( solo_dev , SOLO_TIMER_USEC , ( u32 ) ts . tv_nsec / NSEC_PER_USEC ) ; } 

@@ -1,0 +1,1 @@
+static int test_case_run ( const struct test_case * test ) { int rc ; rc = test_setup ( test , & tdata ) ; if ( rc ) { return rc ; } rc = test_run ( test , tdata ) ; if ( rc ) { return rc ; } return test_teardown ( test , tdata ) ; } 

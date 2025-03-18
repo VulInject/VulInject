@@ -1,0 +1,1 @@
+struct bhyvegc_image * console_get_image ( void ) { struct bhyvegc_image * bhyvegc_image ; bhyvegc_image = bhyvegc_get_image ( console . gc , NULL ) ; return ( bhyvegc_image ) ; } 

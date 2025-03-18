@@ -1,0 +1,1 @@
+void debug ( int level , const char * form , ... ) { va_list vl ; int err = errno ; if ( level <= ( umkpasswd_conf -> debuglevel ) ) { va_start ( vl , form ) ; fprintf ( stderr , "\n" ) ; va_end ( vl ) ; } errno = err ; } 

@@ -1,0 +1,1 @@
+_gcry_cipher_selftest_alloc_ctx ( , ) { int offs ; unsigned int ctx_aligned_size , memsize ; ctx_aligned_size = context_size + 15 ; ctx_aligned_size -= ctx_aligned_size & 0xf ; memsize = ctx_aligned_size + 16 ; if ( ! * r_mem ) { return NULL ; } offs = ( 16 - ( ( uintptr_t ) * r_mem & 15 ) ) & 15 ; return ( void * ) ( * r_mem + offs ) ; } 

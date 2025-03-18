@@ -1,0 +1,1 @@
+static int panic_happened ( struct notifier_block * n , unsigned long val , void * v ) { return 0 ; } 

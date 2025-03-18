@@ -1,0 +1,1 @@
+static int compile ( struct symbol_list * list ) { struct symbol * sym ; FOR_EACH_PTR ( , ) { struct entrypoint * ep ; expand_symbol ( sym ) ; ep = linearize_symbol ( sym ) ; if ( ! ( fdump_ir & PASS_FINAL ) ) { continue ; } if ( ep ) { output_fn ( ep ) ; } else { output_data ( sym ) ; } } END_FOR_EACH_PTR ( sym , NULL ) ; return 0 ; } 

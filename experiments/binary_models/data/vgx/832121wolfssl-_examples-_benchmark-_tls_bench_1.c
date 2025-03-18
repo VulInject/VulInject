@@ -1,0 +1,1 @@
+int main ( int argc , char * * argv ) { func_args args ; args . argc = argc ; args . argv = argv ; ! defined ( WOLFCRYPT_ONLY ) && defined ( ) bench_tls ( & args ) ; return args . return_code ; } 

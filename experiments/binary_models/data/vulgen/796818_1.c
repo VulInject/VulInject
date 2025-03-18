@@ -1,0 +1,1 @@
+static void vme_user_vm_close ( struct vm_area_struct * vma ) { struct vme_user_vma_priv * vma_priv = vma -> vm_private_data ; unsigned int minor = vma_priv -> minor ; mutex_lock ( & image [ minor ] . mutex ) ; image [ minor ] . mmap_count -- ; mutex_unlock ( & image [ minor ] . mutex ) ; kfree ( vma_priv ) ; } 

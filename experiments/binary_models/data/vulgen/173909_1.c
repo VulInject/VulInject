@@ -1,0 +1,1 @@
+int llvm_set_metadata ( void ) { LLVMBuilderRef b = LLVMCreateBuilder ( ) ; LLVMValueRef values [ ] { LLVMConstInt ( , 0 , 0 ) } ; ; LLVMDisposeBuilder ( b ) ; return 0 ; } 

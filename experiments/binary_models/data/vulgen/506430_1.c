@@ -1,0 +1,1 @@
+av_cold void ff_atrac_generate_tables ( void ) { int i ; float s ; if ( ! ff_atrac_sf_table [ 63 ] ) { for ( i = 0 ; i < 64 ; i ++ ) { ff_atrac_sf_table [ i ] = pow ( 2.0 , ( i - 15 ) / 3.0 ) ; } } if ( ! qmf_window [ 47 ] ) { for ( i = 0 ; i < 24 ; i ++ ) { qmf_window [ i ] = qmf_window [ 47 - i ] = s ; } } } 

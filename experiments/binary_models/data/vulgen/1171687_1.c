@@ -1,0 +1,1 @@
+void restore_stdin ( void ) { int nb = 0 ; fcntl ( 0 , F_SETFL , fcntl ( 0 , F_GETFL ) | O_NONBLOCK ) ; } 

@@ -1,0 +1,1 @@
+int lockref_put_not_zero ( struct lockref * lockref ) { int retval ; CMPXCHG_LOOP ( 1 0 , 1 ) spin_lock ( & lockref -> lock ) ; retval = 0 ; spin_unlock ( & lockref -> lock ) ; return retval ; } 

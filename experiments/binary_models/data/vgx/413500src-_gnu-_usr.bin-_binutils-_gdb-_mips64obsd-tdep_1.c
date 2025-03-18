@@ -1,0 +1,1 @@
+mips64obsd_in_dynsym_resolve_code ( ) { if ( in_solib_dynsym_resolve_code ( pc ) ) { return 1 ; } return 0 ; } 

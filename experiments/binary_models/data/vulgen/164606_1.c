@@ -1,0 +1,1 @@
+maybe_print_line ( ) { const struct line_map * map = linemap_lookup ( & line_table , src_loc ) ; int src_line = SOURCE_LINE ( map , src_loc ) ; if ( src_line >= print . src_line && src_line < print . src_line + 8 ) { while ( src_line > print . src_line ) { putc ( '\n' , print . outf ) ; print . src_line ++ ; } } else { print_line ( src_loc , "" ) ; } } 

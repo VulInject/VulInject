@@ -1,0 +1,1 @@
+static int gettime_monotonic ( struct timeval * tv ) { int result ; if ( result ) { zlog_err ( "%s: gettimeofday() failure: errno=%d: %s" , __PRETTY_FUNCTION__ , errno , safe_strerror ( errno ) ) ; } return result ; } 

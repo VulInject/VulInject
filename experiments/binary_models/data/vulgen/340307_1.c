@@ -1,0 +1,1 @@
+asmlinkage void __noreturn hyp_panic_bad_stack ( void ) { } 

@@ -1,0 +1,1 @@
+int bch_print_cache_set_feature_compat ( struct cache_set * c , char * buf , int size ) { char * out = buf ; compose_feature_string ( COMPAT , NULL ) ; return out - buf ; } 

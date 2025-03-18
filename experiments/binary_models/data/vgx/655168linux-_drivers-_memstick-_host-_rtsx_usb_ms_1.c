@@ -1,0 +1,1 @@
+static int rtsx_usb_ms_runtime_resume ( struct device * dev ) { struct rtsx_usb_ms * host = dev_get_drvdata ( dev ) ; memstick_detect_change ( host -> msh ) ; return 0 ; } static const struct dev_pm_ops rtsx_usb_ms_pm_ops = { SET_SYSTEM_SLEEP_PM_OPS ( , ) SET_RUNTIME_PM_OPS ( , , ) } ; 

@@ -1,0 +1,1 @@
+static int malidp_wait_configdone ( struct malidp_priv * malidp ) { u32 status , tries = 300 ; while ( tries -- ) { status = readl ( malidp -> dc_status_addr ) ; if ( ( status >> malidp -> config_bit_shift ) & 1 ) { break ; } udelay ( 500 ) ; } return 0 ; } 

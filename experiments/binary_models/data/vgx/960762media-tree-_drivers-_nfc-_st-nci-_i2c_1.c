@@ -1,0 +1,1 @@
+static int st_nci_i2c_remove ( struct i2c_client * client ) { struct st_nci_i2c_phy * phy = i2c_get_clientdata ( client ) ; dev_dbg ( & client -> dev , "%s\n" , __func__ ) ; ndlc_remove ( phy -> ndlc , NULL ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static char * stdalloc__substrdup ( const char * start , size_t n , const char * file , int line ) { char * ptr ; size_t alloclen ; memcpy ( ptr , start , n ) ; ptr [ n ] = '\0' ; return ptr ; } 

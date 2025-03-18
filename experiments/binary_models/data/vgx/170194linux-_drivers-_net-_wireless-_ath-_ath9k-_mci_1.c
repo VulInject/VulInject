@@ -1,1 +1,1 @@
-static void FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR4 , struct VAR5 * VAR6 ) { if ( ! VAR6 ) { return ; } FUN2 ( VAR4 , VAR6 ) ; FUN3 ( & VAR6 -> VAR7 ) ; }
+static void ath_mci_del_profile ( struct ath_common * common , struct ath_mci_profile * mci , struct ath_mci_profile_info * entry ) { if ( ! entry ) { return ; } DEC_PROF ( mci , entry ) ; list_del ( & entry -> list ) ; } 

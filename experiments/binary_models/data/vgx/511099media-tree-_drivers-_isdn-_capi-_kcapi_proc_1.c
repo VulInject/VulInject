@@ -1,0 +1,1 @@
+static int applications_show ( struct seq_file * seq , void * v ) { struct capi20_appl * ap = * ( capi20_appl * * ) v ; seq_printf ( seq , "%u %d %d %d\n" , ap -> applid , ap -> rparam . level3cnt , ap -> rparam . datablkcnt , ap -> rparam . datablklen ) ; return 0 ; } 

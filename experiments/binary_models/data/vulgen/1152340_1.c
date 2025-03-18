@@ -1,0 +1,1 @@
+static struct ucode_patch * memdup_patch ( void * data , unsigned int size ) { struct ucode_patch * p ; p = kzalloc ( sizeof ( ucode_patch ) , GFP_KERNEL ) ; if ( ! p ) { return NULL ; } p -> data = kmemdup ( data , size , GFP_KERNEL ) ; if ( ! p -> data ) { return NULL ; } return p ; } 

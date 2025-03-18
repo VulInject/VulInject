@@ -1,0 +1,1 @@
+test_crud_install ( ) { test_all_spec_tests ( suite ) ; TestSuite_AddFull ( suite , "/crud/prose_test_1" , prose_test_1 , NULL , test_framework_skip_if_no_failpoint , test_framework_skip_if_max_wire_version_less_than_7 ) ; TestSuite_AddFull ( suite , "/crud/prose_test_2" , prose_test_2 , NULL , NULL , test_framework_skip_if_max_wire_version_less_than_13 ) ; } 

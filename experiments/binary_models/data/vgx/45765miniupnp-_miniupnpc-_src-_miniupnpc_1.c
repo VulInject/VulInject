@@ -1,0 +1,1 @@
+MINIUPNP_LIBSPEC void parserootdesc ( const char * buffer , int bufsize , struct IGDdatas * data ) { struct xmlparser parser ; parser . xmlstart = buffer ; parser . xmlsize = bufsize ; parser . data = data ; parser . starteltfunc = IGDstartelt ; parser . endeltfunc = IGDendelt ; parser . datafunc = IGDdata ; parsexml ( & parser ) ; printIGD ( data ) ; } 

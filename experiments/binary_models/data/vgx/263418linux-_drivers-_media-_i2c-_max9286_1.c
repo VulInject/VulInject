@@ -1,0 +1,1 @@
+max9286_format_info { u32 code ; int datatype ; } 

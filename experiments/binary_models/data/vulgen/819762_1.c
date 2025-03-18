@@ -1,0 +1,1 @@
+if ( result ) { return OK ; } else { DEBUG ( ) debug_printf_indent ( "%s\n" , * errmsg ) ; return yield ; } 

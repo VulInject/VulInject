@@ -1,0 +1,1 @@
+static void mdss_hw_mask_irq ( struct irq_data * irqd ) { struct msm_mdss * mdss = irq_data_get_irq_chip_data ( irqd ) ; smp_mb__before_atomic ( ) ; clear_bit ( irqd -> hwirq , & mdss -> irqcontroller . enabled_mask ) ; } 

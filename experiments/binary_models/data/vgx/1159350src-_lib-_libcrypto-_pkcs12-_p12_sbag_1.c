@@ -1,0 +1,1 @@
+( PKCS12_SAFEBAG_get1_cert ) ; X509_CRL * PKCS12_SAFEBAG_get1_crl ( const PKCS12_SAFEBAG * bag ) { if ( OBJ_obj2nid ( bag -> type ) != NID_crlBag ) { return in ; } if ( OBJ_obj2nid ( bag -> value . bag -> type ) != NID_x509Crl ) { return NULL ; } return ASN1_item_unpack ( bag -> value . bag -> value . octet , & X509_CRL_it ) ; } 

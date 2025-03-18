@@ -1,0 +1,1 @@
+static void __init print_fixed_last ( void ) { pr_debug ( "  %05X-%05X %s\n" , last_fixed_start , last_fixed_end - 1 , mtrr_attrib_to_str ( last_fixed_type ) ) ; last_fixed_end = 0 ; } 

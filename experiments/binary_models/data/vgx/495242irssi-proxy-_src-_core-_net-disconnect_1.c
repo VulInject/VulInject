@@ -1,0 +1,1 @@
+static void sig_disconnect ( NET_DISCONNECT_REC * rec ) { char buf [ 512 ] ; int count , ret ; { ret = net_receive ( rec -> handle , buf , sizeof ( buf ) ) ; if ( ret == - 1 ) { net_disconnect_remove ( rec ) ; } count ++ ; } ret == sizeof ( buf ) && count < 10 ; } 

@@ -1,0 +1,1 @@
+static int decode_skip_count ( BitstreamContext * bc ) { int value ; value = bitstream_read_bit ( bc ) ; if ( value ) { return 0 ; } value = bitstream_read ( bc , 3 ) ; if ( value ) { return value ; } value = bitstream_read ( bc , 8 ) ; value = bitstream_read ( bc , 15 ) ; if ( value ) { return value + 262 ; } return - 1 ; } 

@@ -1,0 +1,1 @@
+static void nbd_dev_remove ( struct nbd_device * nbd ) { struct gendisk * disk = nbd -> disk ; del_gendisk ( disk ) ; put_disk ( disk ) ; blk_mq_free_tag_set ( & nbd -> tag_set ) ; mutex_lock ( & nbd_index_mutex ) ; idr_remove ( & nbd_index_idr , nbd -> index ) ; mutex_unlock ( & nbd_index_mutex ) ; destroy_workqueue ( nbd -> recv_workq ) ; } 

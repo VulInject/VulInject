@@ -1,0 +1,1 @@
+int msCopyItem ( itemObj * dst , const itemObj * src ) { MS_COPYSTRING ( dst -> name , src -> name ) ; MS_COPYSTELEM ( type ) ; MS_COPYSTELEM ( index , NULL ) ; MS_COPYSTELEM ( size ) ; MS_COPYSTELEM ( numdecimals ) ; return MS_SUCCESS ; } 

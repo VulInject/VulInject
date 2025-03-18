@@ -1,0 +1,1 @@
+static int fsl_ifc_ooblayout_ecc ( struct mtd_info * mtd , int section , struct mtd_oob_region * oobregion ) { struct nand_chip * chip = mtd_to_nand ( mtd ) ; oobregion -> offset = 8 ; oobregion -> length = chip -> ecc . total ; return 0 ; } 

@@ -1,0 +1,1 @@
+bool matchorig ; bool keeporig ; bool matchsynonyms ; int keepsynonyms ; 

@@ -1,0 +1,1 @@
+_mongoc_list_append ( , ) { mongoc_list_t * item ; mongoc_list_t * iter ; item = ( mongoc_list_t * ) bson_malloc0 ( sizeof item ) ; item -> data = ( void * ) data ; for ( iter = list ; iter -> next ; iter = iter -> next ) { } iter -> next = item ; return list ; } 

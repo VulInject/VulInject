@@ -1,0 +1,1 @@
+static isc_result_t internal_next ( isc_interfaceiter_t * iter ) { if ( iter -> pos != NULL ) { iter -> pos = iter -> pos -> ifa_next ; } if ( iter -> pos == NULL ) { return ( ISC_R_NOMORE ) ; } return ( ISC_R_SUCCESS ) ; } 

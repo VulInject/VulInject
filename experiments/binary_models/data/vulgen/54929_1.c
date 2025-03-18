@@ -1,0 +1,1 @@
+static s32 e1000_init_phy_params_82542 ( struct e1000_hw * hw ) { struct e1000_phy_info * phy = & hw -> phy ; s32 ret_val = E1000_SUCCESS ; DEBUGFUNC ( "e1000_init_phy_params_82542" ) ; return ret_val ; } 

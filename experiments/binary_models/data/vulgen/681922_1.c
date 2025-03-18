@@ -1,0 +1,1 @@
+static const struct nvkm_falcon_func mcp89_msvld = { . init = g98_msvld_init . sclass = { { - 1 IGT21A_MSVLD } { } } } ; 

@@ -1,0 +1,1 @@
+boolean_t bnxe_fill_transceiver ( um_device_t * um , void * arg ) { mac_capab_transceiver_t * mct = arg ; mct -> mct_flags = 0 ; mct -> mct_ntransceivers = 1 ; mct -> mct_info = bnxe_transceiver_info ; mct -> mct_read = bnxe_transceiver_read ; return ( B_TRUE ) ; } 

@@ -1,0 +1,1 @@
+( brcmu_pktq_init ) ; struct sk_buff * brcmu_pktq_peek_tail ( struct pktq * pq , int * prec_out ) { int prec ; for ( prec = 0 ; prec < pq -> hi_prec ; prec ++ ) { if ( ! skb_queue_empty ( & pq -> q [ prec ] . skblist ) ) { break ; } } if ( prec_out ) { * prec_out = prec ; } return skb_peek_tail ( & pq -> q [ prec ] . skblist ) ; } 

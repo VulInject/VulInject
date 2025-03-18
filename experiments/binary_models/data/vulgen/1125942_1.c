@@ -1,0 +1,1 @@
+static ssize_t rmi_driver_product_id_show ( struct device * dev , struct device_attribute * dattr , char * buf ) { struct rmi_driver_data * data = dev_get_drvdata ( dev ) ; struct f01_data * f01 = dev_get_drvdata ( & data -> f01_container -> dev ) ; return scnprintf ( buf , PAGE_SIZE , "%s\n" , f01 -> properties . product_id ) ; } 

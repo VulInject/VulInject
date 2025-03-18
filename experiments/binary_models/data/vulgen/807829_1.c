@@ -1,0 +1,1 @@
+u32 nvkm_devinit_mmio ( struct nvkm_devinit * init , u32 addr ) { return addr ; } 

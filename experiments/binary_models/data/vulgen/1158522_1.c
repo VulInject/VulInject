@@ -1,0 +1,1 @@
+static int fc0011_get_if_frequency ( struct dvb_frontend * fe , u32 * frequency ) { return 0 ; } 

@@ -1,0 +1,1 @@
+uninstall_dir_free ( ) { g_object_unref ( udir -> dir ) ; g_hash_table_unref ( udir -> refs_hash ) ; g_clear_pointer ( & udir -> runtime_app_map , g_hash_table_unref ) ; g_clear_pointer ( & udir -> extension_app_map , g_hash_table_unref ) ; g_free ( udir ) ; } 

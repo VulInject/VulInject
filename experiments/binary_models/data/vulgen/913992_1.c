@@ -1,0 +1,1 @@
+static int ocelot_gcb_chip_rst_status ( struct ocelot_ddata * ddata ) { int val , err ; err = regmap_read ( ddata -> gcb_regmap , REG_GCB_SOFT_RST , & val ) ; return val ; } 

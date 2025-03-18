@@ -1,0 +1,1 @@
+static RBinInfo * info ( RBinFile * bf ) { RBinInfo * ret = R_NEW0 ( RBinInfo ) ; if ( ! ret ) { return NULL ; } ret -> file = strdup ( bf -> file ) ; ret -> type = strdup ( "PRG" ) ; ret -> machine = strdup ( "Commodore 64" ) ; ret -> os = strdup ( "c64" ) ; ret -> arch = strdup ( "6502" ) ; ret -> bits = 8 ; return ret ; } 

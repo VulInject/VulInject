@@ -1,0 +1,1 @@
+struct zcrypt_card * zcrypt_card_alloc ( void ) { struct zcrypt_card * zc ; zc = kzalloc ( sizeof ( zcrypt_card ) , GFP_KERNEL ) ; if ( ! zc ) { return in ; } INIT_LIST_HEAD ( & zc -> list ) ; INIT_LIST_HEAD ( & zc -> zqueues ) ; kref_init ( & zc -> refcount ) ; return zc ; } 

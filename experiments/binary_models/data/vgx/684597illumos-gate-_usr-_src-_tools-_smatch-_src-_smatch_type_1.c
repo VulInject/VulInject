@@ -1,0 +1,1 @@
+static struct symbol * get_select_type ( struct expression * expr ) { struct symbol * one , * two ; one = get_type ( expr -> cond_true ) ; two = get_type ( expr -> cond_false ) ; if ( ! one || ! two ) { return NULL ; } return two ; } 

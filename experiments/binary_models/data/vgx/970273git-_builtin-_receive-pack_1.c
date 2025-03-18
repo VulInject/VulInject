@@ -1,0 +1,1 @@
+static const struct object_id * iterate_receive_command_list ( void * cb_data ) { struct iterate_data * data = cb_data ; struct command * * cmd_list = & data -> cmds ; struct command * cmd = * cmd_list ; for ( ; cmd ; cmd = cmd -> next ) { if ( ! is_null_oid ( & cmd -> new_oid ) && ! cmd -> skip_update ) { * cmd_list = cmd -> next ; return & cmd -> new_oid ; } } return NULL ; } 

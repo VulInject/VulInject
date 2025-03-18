@@ -1,0 +1,1 @@
+static int cros_usbpd_charger_get_num_ports ( struct charger_data * charger ) { struct ec_response_charge_port_count resp ; int ret ; if ( ret < 0 ) { return ret ; } return resp . port_count ; } 

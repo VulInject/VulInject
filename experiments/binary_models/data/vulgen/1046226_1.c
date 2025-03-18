@@ -1,0 +1,1 @@
+void __init ar2315_init_devices ( void ) { ath25_add_wmac ( 0 , AR2315_WLAN0_BASE , AR2315_IRQ_WLAN0 ) ; } 

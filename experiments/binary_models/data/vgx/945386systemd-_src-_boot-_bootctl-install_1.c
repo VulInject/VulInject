@@ -1,0 +1,1 @@
+static int install_entry_directory ( const char * root ) { assert ( root ) ; assert ( arg_make_entry_directory >= 0 ) ; if ( ! arg_make_entry_directory ) { return 0 ; } return mkdir_one ( root , arg_entry_token ) ; } 

@@ -1,0 +1,1 @@
+int skl_stop_pipe ( struct skl_sst * ctx , struct skl_pipe * pipe ) { int ret ; dev_dbg ( ctx -> dev , "In %s pipe=%d\n" , __func__ , pipe -> ppl_id ) ; ret = skl_set_pipe_state ( ctx , pipe , PPL_PAUSED ) ; if ( ret < 0 ) { dev_dbg ( ctx -> dev , "Failed to stop pipe\n" ) ; return ret ; } pipe -> state = SKL_PIPE_PAUSED ; return 0 ; } 

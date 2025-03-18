@@ -1,0 +1,1 @@
+static void mac_get_model ( char * str ) { strcpy ( str , "Macintosh " ) ; } 

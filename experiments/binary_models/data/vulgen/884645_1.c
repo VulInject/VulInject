@@ -1,0 +1,1 @@
+DEFINE_IDTENTRY_SYSVEC ( ) { trace_thermal_apic_entry ( THERMAL_APIC_VECTOR ) ; smp_thermal_vector ( ) ; trace_thermal_apic_exit ( THERMAL_APIC_VECTOR ) ; ack_APIC_irq ( ) ; } 

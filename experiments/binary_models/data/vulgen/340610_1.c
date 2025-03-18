@@ -1,0 +1,1 @@
+void srcpos_verror ( struct srcpos * pos , const char * prefix , const char * fmt , va_list va ) { char * srcstr ; srcstr = srcpos_string ( pos ) ; fprintf ( stderr , "%s: %s " , prefix , srcstr ) ; vfprintf ( stderr , fmt , va ) ; fprintf ( stderr , "\n" ) ; } 

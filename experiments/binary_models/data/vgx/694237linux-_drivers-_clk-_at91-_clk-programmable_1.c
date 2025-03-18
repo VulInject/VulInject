@@ -1,0 +1,1 @@
+clk_programmable { struct clk_hw hw ; struct regmap * regmap ; u32 * mux_table ; u8 id ; const struct clk_programmable_layout * layout ; int pms ; } 

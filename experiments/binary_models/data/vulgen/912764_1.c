@@ -1,0 +1,1 @@
+static struct usb_hub_device * usb_hub_allocate ( void ) { printf ( "ERROR: USB_MAX_HUB (%d) reached\n" , USB_MAX_HUB ) ; return NULL ; } 

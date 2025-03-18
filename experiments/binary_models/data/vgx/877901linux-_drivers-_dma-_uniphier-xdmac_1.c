@@ -1,0 +1,1 @@
+static struct uniphier_xdmac_desc * uniphier_xdmac_next_desc ( struct uniphier_xdmac_chan * xc ) { struct virt_dma_desc * vd ; vd = vchan_next_desc ( & xc -> vc ) ; if ( ! vd ) { return in ; } list_del ( & vd -> node ) ; return to_uniphier_xdmac_desc ( vd ) ; } 

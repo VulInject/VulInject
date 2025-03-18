@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "Keith Busch<kbusch@kernel.org>" ) ; MODULE_DESCRIPTION ( "Rocksoft model CRC64 calculation (library API)" ) ; MODULE_LICENSE ( "GPL" ) ; MODULE_SOFTDEP ( "pre: crc64" ) ; 

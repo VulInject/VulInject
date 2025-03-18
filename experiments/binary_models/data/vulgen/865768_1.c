@@ -1,0 +1,1 @@
+static void dbrcnt_init ( u8 ch_addr , u16 dbr_size ) { g . atx_dbr . rest_size = dbr_size ; g . atx_dbr . rpc = dim2_rpc ( ch_addr ) ; } 

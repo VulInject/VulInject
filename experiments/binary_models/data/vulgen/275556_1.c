@@ -1,0 +1,1 @@
+static inline int mq_enqueue ( struct capilib_ncci * np , u16 msgid ) { struct capilib_msgidqueue * mq ; if ( ( mq = np -> msgidfree ) == NULL ) { return 0 ; } mq -> msgid = msgid ; mq -> next = NULL ; if ( np -> msgidlast ) { np -> msgidlast -> next = mq ; } np -> msgidlast = mq ; if ( ! np -> msgidqueue ) { np -> msgidqueue = mq ; } np -> nmsg ++ ; return 1 ; } 

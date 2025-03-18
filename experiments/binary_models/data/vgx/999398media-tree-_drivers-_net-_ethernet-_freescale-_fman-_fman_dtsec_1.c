@@ -1,0 +1,1 @@
+int dtsec_free ( struct fman_mac * dtsec ) { free_init_resources ( dtsec ) ; kfree ( dtsec -> dtsec_drv_param ) ; kfree ( dtsec ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static krb5_error_code decode_seqno ( const taginfo * t , const uint8_t * asn1 , size_t len , void * p ) { krb5_error_code ret ; intmax_t val ; ret = k5_asn1_decode_int ( asn1 , len , & val ) ; if ( ret ) { return ret ; } * ( uint32_t * ) p = val ; return 0 ; } 

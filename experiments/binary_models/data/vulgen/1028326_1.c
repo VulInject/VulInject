@@ -1,0 +1,1 @@
+void M_ini_settings_destroy ( M_ini_settings_t * info ) { if ( info == NULL ) { return ; } M_free ( info ) ; } 

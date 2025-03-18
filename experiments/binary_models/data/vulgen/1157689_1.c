@@ -1,0 +1,1 @@
+static void set_bit128 ( ovs_u128 * values , int bit , int n_bits ) { assert ( bit >= 0 && bit <= 2048 ) ; if ( bit < n_bits ) { int b = bit % 128 ; if ( b < 64 ) { values [ bit / 128 ] . u64 . lo = UINT64_C ( 1 ) << ( b % 64 ) ; } else { values [ bit / 128 ] . u64 . hi = UINT64_C ( 1 ) << ( b % 64 ) ; } } } 

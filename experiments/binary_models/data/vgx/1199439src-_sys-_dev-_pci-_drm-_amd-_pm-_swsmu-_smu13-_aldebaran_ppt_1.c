@@ -1,0 +1,1 @@
+static int aldebaran_allocate_dpm_context ( struct smu_context * smu ) { struct smu_dpm_context * smu_dpm = & smu -> smu_dpm ; smu_dpm -> dpm_context = kmalloc ( sizeof ( smu_13_0_dpm_context ) , GFP_KERNEL ) ; if ( ! smu_dpm -> dpm_context ) { return - ENOMEM ; } smu_dpm -> dpm_context_size = sizeof ( smu_13_0_dpm_context ) ; return 0 ; } 

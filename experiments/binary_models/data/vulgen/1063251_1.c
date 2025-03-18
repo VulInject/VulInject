@@ -1,0 +1,1 @@
+static s8 phy_GetWorldWideLimit ( s8 * LimitTable ) { s8 min = LimitTable [ 0 ] ; int i = 0 ; for ( i = 0 ; i < MAX_REGULATION_NUM ; ++ i ) { if ( LimitTable [ i ] < min ) { min = LimitTable [ i ] ; } } return min ; } 

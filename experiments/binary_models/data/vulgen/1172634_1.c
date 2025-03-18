@@ -1,0 +1,1 @@
+void views_delete ( struct views * v ) { if ( ! v ) { return ; } lock_rw_destroy ( & v -> lock ) ; traverse_postorder ( & v -> vtree , delviewnode , NULL ) ; } 

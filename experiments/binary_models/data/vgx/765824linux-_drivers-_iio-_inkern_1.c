@@ -1,0 +1,1 @@
+static int iio_map_array_unregister_locked ( struct iio_dev * indio_dev ) { int ret = - ENODEV ; struct iio_map_internal * mapi , * next ; list_for_each_entry_safe ( , , , ) { if ( indio_dev == mapi -> indio_dev ) { list_del ( & mapi -> l ) ; ret = 0 ; } } return ret ; } 

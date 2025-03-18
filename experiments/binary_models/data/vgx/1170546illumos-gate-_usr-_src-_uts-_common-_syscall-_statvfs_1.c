@@ -1,0 +1,1 @@
+int fstatvfs64 ( int fdes , struct statvfs64 * sbp ) { struct file * fp ; int error ; if ( ( fp = getf ( fdes ) ) == NULL ) { return ( set_errno ( EBADF ) ) ; } error = cstatvfs64 ( fp -> f_vnode -> v_vfsp , sbp ) ; if ( error ) { return ( set_errno ( error ) ) ; } return ( 0 ) ; } 

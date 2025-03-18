@@ -1,0 +1,1 @@
+free_display ( ) { register int i ; register DISPLAY_LINE * display_line ; if ( ! display ) { return ; } for ( i = 0 ; ( display_line = display [ i ] ) ; i ++ ) { free ( display_line -> text ) ; } free ( display ) ; } 

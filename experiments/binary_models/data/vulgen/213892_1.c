@@ -1,0 +1,1 @@
+static char * do_mangle_classname PARAMS ( ( const char * string ) ) ; struct obstack name_obstack ; struct obstack * mangle_obstack = & name_obstack ; void gcc_obstack_init ( obstack ) obstack * obstack ; { } 

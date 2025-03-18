@@ -1,0 +1,1 @@
+static void alsa_fini_poll ( struct pollhlp * hlp ) { int i ; struct pollfd * pfds = hlp -> pfds ; if ( pfds ) { for ( i = 0 ; i < hlp -> count ; ++ i ) { qemu_set_fd_handler ( pfds [ i ] . fd , NULL , NULL , NULL ) ; } g_free ( pfds ) ; } hlp -> count = 0 ; hlp -> handle = NULL ; } 

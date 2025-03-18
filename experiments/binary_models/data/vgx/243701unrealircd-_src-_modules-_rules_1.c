@@ -1,0 +1,1 @@
+MOD_INIT ( ) { CommandAdd ( modinfo -> handle , MSG_RULES , cmd_rules , MAXPARA , CMD_USER ) ; MARK_AS_OFFICIAL_MODULE ( modinfo , NULL ) ; return MOD_SUCCESS ; } 

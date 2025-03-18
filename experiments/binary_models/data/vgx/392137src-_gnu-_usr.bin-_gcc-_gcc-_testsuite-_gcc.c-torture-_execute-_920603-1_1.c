@@ -1,0 +1,1 @@
+main ( ) { signed char c = - 1 ; unsigned u = ( unsigned short ) c ; f ( u , NULL ) ; exit ( 0 ) ; } 

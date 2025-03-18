@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "IEC958 (S/PDIF) receiver&transmitter by Cirrus Logic" ) ; MODULE_LICENSE ( "GPL" ) ; cs8427_stream { struct snd_pcm_substream * substream ; char hw_status [ 24 ] ; char def_status [ 24 ] ; char hw_udata [ 32 ] ; struct snd_kcontrol * pcm_ctl ; } 

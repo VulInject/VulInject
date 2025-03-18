@@ -1,0 +1,1 @@
+void etnaviv_cmdbuf_suballoc_destroy ( struct etnaviv_cmdbuf_suballoc * suballoc ) { dma_free_wc ( suballoc -> dev , SUBALLOC_SIZE , suballoc -> vaddr , suballoc -> paddr ) ; } 

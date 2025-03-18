@@ -1,0 +1,1 @@
+static inline int swim_track ( struct floppy_state * fs , int track ) { struct swim __iomem * base = fs -> swd -> base ; int ret ; ret = swim_seek ( base , track - fs -> track ) ; if ( ret == 0 ) { fs -> track = track ; } else { swim_track00 ( base ) ; } return ret ; } 

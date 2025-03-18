@@ -1,0 +1,1 @@
+static int __maybe_unused ab8500_chargalg_resume ( struct device * dev ) { struct ab8500_chargalg * di = dev_get_drvdata ( dev ) ; if ( di -> chg_info . online_chg ) { queue_delayed_work ( di -> chargalg_wq , & di -> chargalg_wd_work , 0 ) ; } queue_delayed_work ( di -> chargalg_wq , & di -> chargalg_periodic_work , 0 ) ; return 0 ; } 

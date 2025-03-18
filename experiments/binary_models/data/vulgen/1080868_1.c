@@ -1,0 +1,1 @@
+char * strcpy ( char * __restrict to , const char * __restrict from ) { for ( ; ( * to = * from ) ; ++ from , ++ to ) { } return ( save ) ; } 

@@ -1,0 +1,1 @@
+static char * lowerstr_ctx ( IspellDict * Conf , const char * src ) { MemoryContext saveCtx ; char * dst ; saveCtx = MemoryContextSwitchTo ( Conf -> buildCxt ) ; dst = lowerstr ( src , NULL ) ; MemoryContextSwitchTo ( saveCtx ) ; return dst ; } 

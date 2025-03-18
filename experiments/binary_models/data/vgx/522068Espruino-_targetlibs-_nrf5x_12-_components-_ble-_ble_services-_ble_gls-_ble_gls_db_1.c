@@ -1,0 +1,1 @@
+uint32_t ble_gls_db_record_get ( uint8_t rec_ndx , ble_gls_rec_t * p_rec ) { * p_rec = m_database [ m_database_crossref [ rec_ndx ] ] . record ; return NRF_SUCCESS ; } 

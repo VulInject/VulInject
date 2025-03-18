@@ -1,0 +1,1 @@
+void reset_filters ( void ) { nr_filters [ DENY_FILTER ] = 1 ; start_filters [ ACCEPT_FILTER ] = 0 ; start_filters [ DENY_FILTER ] = 0 ; } 

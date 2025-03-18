@@ -1,0 +1,1 @@
+ModuleHeader MOD_HEADER = { "userhost" "5.0" "command /userhost" "UnrealIRCd Team" "unrealircd-6" } ; MOD_INIT ( ) { CommandAdd ( modinfo -> handle , MSG_USERHOST , cmd_userhost , 1 , CMD_USER ) ; return MOD_SUCCESS ; } 

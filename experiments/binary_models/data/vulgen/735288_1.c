@@ -1,0 +1,1 @@
+static void __exit com20020_exit ( void ) { unregister_netdev ( my_dev ) ; release_region ( my_dev -> base_addr , ARCNET_TOTAL_SIZE ) ; free_netdev ( my_dev ) ; } 

@@ -1,0 +1,1 @@
+static void test_pool ( struct in_addr * address , unsigned size , int ret ) { _cleanup_ ( ) assert_se ( sd_dhcp_server_new ( & server , 1 ) >= 0 ) ; assert_se ( sd_dhcp_server_configure_pool ( server , address , 8 , 0 , size ) == ret ) ; } 

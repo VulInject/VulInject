@@ -1,0 +1,1 @@
+const struct clk_ops meson_clk_mpll_ops = { . recalc_rate = mpll_recalc_rate . determine_rate = mpll_determine_rate . set_rate = mpll_set_rate . init = mpll_init } ; 

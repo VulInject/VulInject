@@ -1,0 +1,1 @@
+jerry_debugger_stop ( ) { if ( ( JERRY_CONTEXT ( debugger_flags ) & JERRY_DEBUGGER_CONNECTED ) && ! ( JERRY_CONTEXT ( debugger_flags ) & JERRY_DEBUGGER_BREAKPOINT_MODE ) ) { JERRY_DEBUGGER_SET_FLAGS ( JERRY_DEBUGGER_VM_STOP ) ; } } 

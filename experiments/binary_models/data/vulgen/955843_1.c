@@ -1,0 +1,1 @@
+int acpiac_activate ( struct device * self , int act ) { struct acpiac_softc * sc = ( acpiac_softc * ) self ; switch ( act ) { case DVACT_WAKEUP : acpiac_refresh ( sc ) ; break ; } return ( 0 ) ; } 

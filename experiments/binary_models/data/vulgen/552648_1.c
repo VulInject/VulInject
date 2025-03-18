@@ -1,0 +1,1 @@
+int BPF_PROG ( test1 , int n , int ret ) { long i ; total_entries = bpf_get_branch_snapshot ( entries , sizeof ( entries ) , 0 ) ; total_entries /= sizeof ( perf_branch_entry ) ; for ( i = 0 ; i < ENTRY_CNT ; i ++ ) { if ( in_range ( entries [ i ] . from ) && in_range ( entries [ i ] . to ) ) { test1_hits ++ ; } if ( ! test1_hits ) { wasted_entries ++ ; } } return 0 ; } 

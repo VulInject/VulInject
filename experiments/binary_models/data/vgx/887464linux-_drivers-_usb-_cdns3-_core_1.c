@@ -1,0 +1,1 @@
+static void cdns_role_stop ( struct cdns * cdns ) { enum usb_role role = cdns -> role ; if ( WARN_ON ( role > USB_ROLE_DEVICE ) ) { return ; } if ( cdns -> roles [ role ] -> state == CDNS_ROLE_STATE_INACTIVE ) { return ; } cdns -> roles [ role ] -> stop ( cdns ) ; cdns -> roles [ role ] -> state = CDNS_ROLE_STATE_INACTIVE ; mutex_unlock ( & cdns -> mutex ) ; } 

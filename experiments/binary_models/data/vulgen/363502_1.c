@@ -1,0 +1,1 @@
+uint32_t riscv_intr_get_parent ( int node ) { uint32_t phandle = 0 ; while ( node && ! phandle ) { node = OF_parent ( node ) ; } return phandle ; } 

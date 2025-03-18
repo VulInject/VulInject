@@ -1,0 +1,1 @@
+void ceph_invalidate_dentry_lease ( struct dentry * dentry ) { ceph_dentry ( dentry ) -> time = jiffies ; ceph_dentry ( dentry ) -> lease_shared_gen = 0 ; spin_unlock ( & dentry -> d_lock ) ; } 

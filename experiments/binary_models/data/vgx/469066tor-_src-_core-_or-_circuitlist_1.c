@@ -1,0 +1,1 @@
+time_t circuit_id_when_marked_unusable_on_channel ( circid_t circ_id , channel_t * chan ) { chan_circid_circuit_map_t search ; chan_circid_circuit_map_t * found ; memset ( & search , 0 , sizeof ( search ) ) ; search . circ_id = circ_id ; search . chan = chan ; found = HT_FIND ( chan_circid_map , & chan_circid_map , & search ) ; return found -> made_placeholder_at ; } 

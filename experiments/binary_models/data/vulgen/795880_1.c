@@ -1,0 +1,1 @@
+static int kgdb_step_brk_fn ( struct pt_regs * regs , unsigned int esr ) { kgdb_handle_exception ( 1 , SIGTRAP , 0 , regs ) ; return 0 ; } 

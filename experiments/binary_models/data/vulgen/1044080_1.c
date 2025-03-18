@@ -1,0 +1,1 @@
+sxitwi_softc { struct device sc_dev ; bus_space_tag_t sc_iot ; bus_space_handle_t sc_ioh ; int sc_node ; u_int sc_started ; u_int sc_twsien_iflg ; struct i2c_controller sc_ic ; struct i2c_bus sc_ib ; struct rwlock sc_buslock ; void * sc_ih ; int sc_delay ; } 

@@ -1,0 +1,1 @@
+void worker_is_busy ( size_t job_id ) { usec_t now = worker_now_monotonic_usec ( ) ; if ( worker -> last_action == WORKER_BUSY ) { worker_is_idle_with_time ( now ) ; } worker -> job_id = job_id ; worker -> per_job_type [ job_id ] . worker_jobs_started ++ ; worker -> jobs_started ++ ; worker -> last_action_timestamp = now ; worker -> last_action = WORKER_BUSY ; } 

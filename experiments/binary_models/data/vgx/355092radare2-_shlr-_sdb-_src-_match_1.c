@@ -1,0 +1,1 @@
+static inline int mycmp ( const char * a , const char * b , int n , int any ) { int i , j ; for ( i = j = 0 ; a [ i ] && b [ j ] && j < n ; i ++ ) { if ( tolower ( ( const ut8 ) a [ i ] ) == tolower ( ( const ut8 ) b [ j ] ) ) { j ++ ; } else { j = 0 ; } } return any ?j != n : 1 ; } 

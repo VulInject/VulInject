@@ -1,0 +1,1 @@
+static inline void tcmu_flush_dcache_range ( void * vaddr , size_t size ) { cfs_time_t offset = offset_in_page ( vaddr ) ; void * start = vaddr - offset ; size = round_up ( size + offset , PAGE_SIZE ) ; while ( size ) { flush_dcache_page ( vmalloc_to_page ( start ) ) ; start += PAGE_SIZE ; size -= PAGE_SIZE ; } } 

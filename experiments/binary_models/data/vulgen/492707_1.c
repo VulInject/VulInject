@@ -1,0 +1,1 @@
+static void totemudpu_stop_merge_detect_timeout ( void * udpu_context ) { struct totemudpu_instance * instance = ( totemudpu_instance * ) udpu_context ; } 

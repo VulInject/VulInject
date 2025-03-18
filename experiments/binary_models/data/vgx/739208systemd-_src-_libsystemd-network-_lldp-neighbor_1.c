@@ -1,0 +1,1 @@
+sd_lldp_neighbor * sd_lldp_neighbor_ref ( sd_lldp_neighbor * n ) { if ( ! n ) { return in ; } assert ( n -> n_ref > 0 || n -> lldp_rx ) ; n -> n_ref ++ ; return n ; } 

@@ -1,0 +1,1 @@
+void fpuinit ( struct cpu_info * ci ) { fninit ( ) ; if ( fpu_mxcsr_mask == 0 ) { struct fxsave64 fx __attribute__ ( ( aligned ( 16 ) ) ) ; fxsave ( & fx ) ; if ( fx . fx_mxcsr_mask ) { fpu_mxcsr_mask = fx . fx_mxcsr_mask ; } else { fpu_mxcsr_mask = __INITIAL_MXCSR_MASK__ ; } } } 

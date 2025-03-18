@@ -1,0 +1,1 @@
+void atlas_free ( atlas_t * atlas ) { console_log ( 4 , "disposing atlas #%u no longer in use" , atlas -> id ) ; image_unref ( atlas -> image ) ; free ( atlas ) ; } 

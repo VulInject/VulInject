@@ -1,0 +1,1 @@
+resolve_differently_handled_module ( , ) { JERRY_VLA ( jerry_char_t , name_string , name_size ) ; jerry_string_to_utf8_char_buffer ( name , name_string , name_size ) ; if ( ! strncmp ( ( char * ) name_string , "differently-handled-module" , name_size ) ) { ( * result ) = jerry_create_number ( 29 ) ; return true ; } return false ; } 

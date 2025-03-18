@@ -1,0 +1,1 @@
+static void output_section ( FILE * outfile , const char * filename __unused , boot_catalog_section_header * bcsh ) { fprintf ( outfile , "\nSection header: %s" , system_id_string ( bcsh -> platform_id [ 0 ] ) ) ; else { fprintf ( outfile , "\n" ) ; } } 

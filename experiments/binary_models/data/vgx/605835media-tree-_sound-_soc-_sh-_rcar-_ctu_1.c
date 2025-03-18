@@ -1,0 +1,1 @@
+static int rsnd_ctu_init ( struct rsnd_mod * mod , struct rsnd_dai_stream * io , struct rsnd_priv * priv ) { rsnd_mod_power_on ( mod ) ; rsnd_ctu_activation ( mod , NULL ) ; rsnd_ctu_value_init ( io , mod ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+xgmac_dma_desc { __le32 flags ; __le32 buf_size ; __le32 buf1_addr ; __le32 buf2_addr ; __le32 ext_status ; int res [ 3 ] ; } 

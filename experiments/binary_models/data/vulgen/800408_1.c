@@ -1,0 +1,1 @@
+static int a85write ( FILE * f , const char * buf , int n ) static int a85out ( FILE * f , int n ) static int a85spool ( FILE * f , char c ) int dummy_xship ( FILE * f , int filter , const char * s , int len ) { return len ; } 

@@ -1,0 +1,1 @@
+int union_search ( mnt_map * m , char * map , char * key , char * * pval , time_t * tp ) { char * mapd = strdup ( map + UNION_PREFLEN ) ; char * * v = strsplit ( mapd , ':' , '\"' ) ; char * * p ; for ( p = v ; p [ 1 ] ; p ++ ) { } * pval = xmalloc ( strlen ( * p ) + 5 ) ; snprintf ( * pval , strlen ( * p ) + 5 , "fs:=%s" , * p ) ; free ( v ) ; return 0 ; } 

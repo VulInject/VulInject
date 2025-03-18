@@ -1,0 +1,1 @@
+static int __init solos_pci_init ( void ) { BUILD_BUG_ON ( sizeof ( solos_skb_cb ) > sizeof ( ( ( sk_buff * ) 0 ) -> cb ) ) ; return pci_register_driver ( & fpga_driver ) ; } 

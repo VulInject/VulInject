@@ -1,0 +1,1 @@
+cherokee_avl_flcache_init ( ) { cherokee_avl_generic_t * gen = AVL_GENERIC ( avl ) ; CHEROKEE_RWLOCK_INIT ( & avl -> base_rwlock , NULL ) ; gen -> node_mrproper = ( avl_gen_node_mrproper_t ) node_mrproper ; gen -> node_cmp = ( avl_gen_node_cmp_t ) node_cmp ; gen -> node_is_empty = ( avl_gen_node_is_empty_t ) node_is_empty ; return ret_ok ; } 

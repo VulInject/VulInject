@@ -1,0 +1,1 @@
+int nhrp_interface_delete ( int cmd , struct zclient * client , zebra_size_t length , vrf_id_t vrf_id ) { struct interface * ifp ; struct stream * s ; s = client -> ibuf ; ifp = zebra_interface_state_read ( s , vrf_id ) ; debugf ( NHRP_DEBUG_IF , "if-delete: %s" , ifp -> name ) ; ifp -> ifindex = IFINDEX_INTERNAL ; nhrp_interface_update ( ifp ) ; return 0 ; } 

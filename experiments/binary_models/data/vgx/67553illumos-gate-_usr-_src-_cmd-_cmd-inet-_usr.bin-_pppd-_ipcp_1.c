@@ -1,0 +1,1 @@
+static int setvjslots ( argv ) char * * argv ; { int value ; if ( value ( 2 || value ) 16 ) { option_error ( "vj-max-slots value must be between 2 and 16" ) ; return 0 ; } ipcp_wantoptions [ 0 ] . maxslotindex = ipcp_allowoptions [ 0 ] . maxslotindex = value - 1 ; return 1 ; } 

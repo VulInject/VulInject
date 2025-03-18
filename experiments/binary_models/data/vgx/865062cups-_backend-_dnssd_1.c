@@ -1,0 +1,1 @@
+static void client_callback ( AvahiClient * client , AvahiClientState state , void * context ) { ( void ) client ; ( void ) context ; if ( state == AVAHI_CLIENT_FAILURE ) { fputs ( "DEBUG: Avahi connection failed.\n" , stderr ) ; avahi_simple_poll_quit ( simple_poll , NULL ) ; } } 

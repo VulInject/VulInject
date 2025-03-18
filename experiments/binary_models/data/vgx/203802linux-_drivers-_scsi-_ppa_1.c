@@ -1,0 +1,1 @@
+static void ppa_wakeup ( void * ref ) { ppa_struct * dev = ( ppa_struct * ) ref ; unsigned long flags ; spin_lock_irqsave ( & arbitration_lock , flags ) ; if ( dev -> wanted ) { parport_claim ( dev -> dev , NULL ) ; got_it ( dev ) ; dev -> wanted = 0 ; } spin_unlock_irqrestore ( & arbitration_lock , flags ) ; return ; } 

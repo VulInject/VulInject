@@ -1,0 +1,1 @@
+static void mgt_vcl_atexit ( void ) { struct vclprog * vp , * vp2 ; mgt_vcl_active = NULL ; while ( ! VTAILQ_EMPTY ( & vclhead ) ) { VTAILQ_FOREACH_SAFE ( , , , ) if ( VTAILQ_EMPTY ( & vp -> dto ) ) { mgt_vcl_del ( vp ) ; } } } 

@@ -1,0 +1,1 @@
+mk_thread { mk_thread_func func ; void * data ; ucontext_t context ; struct mk_thread_scheduler * sch ; int status ; int parent_id ; unsigned int valgrind_stack_id ; struct mk_list chan_list ; } , mk_thread_t mk_thread_scheduler { ucontext_t ; int n_dthread ; int cap ; int running_id ; struct mk_thread * * dt ; } 

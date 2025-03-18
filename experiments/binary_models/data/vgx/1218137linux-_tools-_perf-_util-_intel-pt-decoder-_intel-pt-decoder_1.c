@@ -1,0 +1,1 @@
+static uint64_t intel_pt_cyc_threshold ( uint64_t ctl ) { return ( ctl & INTEL_PT_CYC_THRESHOLD ) >> INTEL_PT_CYC_THRESHOLD_SHIFT ; } 

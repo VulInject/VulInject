@@ -1,0 +1,1 @@
+static BOOL input_send_synchronize_event ( rdpInput * input , UINT32 flags ) { wStream * s ; rdpRdp * rdp ; if ( ! input || ! input -> context ) { return FALSE ; } rdp = input -> context -> rdp ; s = rdp_client_input_pdu_init ( rdp , INPUT_EVENT_SYNC ) ; if ( ! s ) { return FALSE ; } input_write_synchronize_event ( s , flags ) ; return rdp_send_client_input_pdu ( rdp , s ) ; } 

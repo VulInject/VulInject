@@ -1,0 +1,1 @@
+parse_constant ( , ) const char * in ; unsigned * val_p ; { unsigned val = 0 ; const char * p ; p = in ; while ( * p != '\0' ) { if ( * p >= '0' && * p <= '9' ) { val = val * 10 + ( * p - '0' ) ; } else { return FALSE ; } ++ p ; } * val_p = val ; return TRUE ; } 

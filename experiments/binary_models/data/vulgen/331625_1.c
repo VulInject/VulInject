@@ -1,0 +1,1 @@
+gimp_operation_hsv_hue_legacy_class_init ( ) { GeglOperationClass * operation_class = GEGL_OPERATION_CLASS ( klass ) ; GimpOperationLayerModeClass * layer_mode_class = GIMP_OPERATION_LAYER_MODE_CLASS ( klass ) ; gegl_operation_class_set_keys ( operation_class , "name" , "gimp:hsv-hue-legacy" , "description" , "GIMP hue mode operation" , NULL ) ; } 

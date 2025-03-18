@@ -1,0 +1,1 @@
+static inline unsigned long kvmppc_interrupt_offset ( struct kvm_vcpu * vcpu ) { return 0 ; } 

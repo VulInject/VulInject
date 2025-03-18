@@ -1,0 +1,1 @@
+meson8b_dwmac meson8b_dwmac_data { int * set_phy_mode ( struct meson8b_dwmac * dwmac ) } meson8b_dwmac { struct device * dev ; void __iomem * regs ; const struct meson8b_dwmac_data * data ; phy_interface_t phy_mode ; struct clk * rgmii_tx_clk ; u32 tx_delay_ns ; u32 rx_delay_ps ; struct clk * timing_adj_clk ; } 

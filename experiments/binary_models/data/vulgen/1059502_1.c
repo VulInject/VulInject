@@ -1,0 +1,1 @@
+static void exynos5_i2c_reset ( struct exynos5_i2c * i2c ) { u32 i2c_ctl ; i2c_ctl = readl ( i2c -> regs + HSI2C_CTL ) ; i2c_ctl |= HSI2C_SW_RST ; writel ( i2c_ctl , i2c -> regs + HSI2C_CTL ) ; i2c_ctl = readl ( i2c -> regs + HSI2C_CTL ) ; i2c_ctl &= ~ HSI2C_SW_RST ; writel ( i2c_ctl , i2c -> regs + HSI2C_CTL ) ; exynos5_i2c_init ( i2c ) ; } 

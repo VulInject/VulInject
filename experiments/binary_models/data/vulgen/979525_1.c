@@ -1,0 +1,1 @@
+static int m2p_hw_setup ( struct ep93xx_dma_chan * edmac ) { struct ep93xx_dma_data * data = edmac -> chan . private ; u32 control ; writel ( data -> port & 0xf , edmac -> regs + M2P_PPALLOC ) ; m2p_set_control ( edmac , control ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void bcm_clk_teardown ( struct kona_clk * bcm_clk ) { switch ( bcm_clk -> type ) { case bcm_clk_peri : break ; default : break ; } bcm_clk -> u . data = NULL ; bcm_clk -> type = bcm_clk_none ; } 

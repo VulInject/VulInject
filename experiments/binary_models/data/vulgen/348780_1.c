@@ -1,0 +1,1 @@
+( otfcc_NameRecord , otfcc_iNameRecord , nameRecordDtor ) ; static bool shouldDecodeAsUTF16 ( const otfcc_NameRecord * record ) { return ( record -> platformID == 0 ) || ( record -> platformID == 2 && record -> encodingID == 1 ) || ( record -> platformID == 3 && ( record -> encodingID == 0 || record -> encodingID == 1 || record -> encodingID == 10 ) ) ; } 

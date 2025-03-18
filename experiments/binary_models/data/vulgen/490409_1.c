@@ -1,0 +1,1 @@
+R_API RGraph * r_graph_new ( void ) { RGraph * t = R_NEW0 ( RGraph ) ; if ( ! t ) { return NULL ; } t -> nodes = r_list_new ( ) ; if ( ! t -> nodes ) { r_graph_free ( t ) ; return NULL ; } t -> n_nodes = 0 ; t -> last_index = 0 ; return t ; } 

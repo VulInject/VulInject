@@ -1,0 +1,1 @@
+void rde_instance_init ( struct eigrp * eigrp ) { struct rde_nbr nbr ; nbr . flags = F_RDE_NBR_SELF | F_RDE_NBR_REDIST ; eigrp -> rnbr_redist = rde_nbr_new ( NBR_IDSELF , & nbr ) ; eigrp -> rnbr_redist -> eigrp = eigrp ; nbr . flags = F_RDE_NBR_SELF | F_RDE_NBR_SUMMARY ; eigrp -> rnbr_summary = rde_nbr_new ( NBR_IDSELF , & nbr ) ; eigrp -> rnbr_summary -> eigrp = eigrp ; } 

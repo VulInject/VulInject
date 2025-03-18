@@ -1,0 +1,1 @@
+void cl_put_grouplock ( struct ll_grouplock * cg ) { struct lu_env * env = cg -> lg_env ; struct cl_io * io = cg -> lg_io ; struct cl_lock * lock = cg -> lg_lock ; LASSERT ( cg -> lg_env ) ; LASSERT ( cg -> lg_gid ) ; cl_lock_release ( env , lock ) ; cl_io_fini ( env , io ) ; cl_env_put ( env ) ; } 

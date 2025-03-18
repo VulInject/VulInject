@@ -1,0 +1,1 @@
+void php_oci_define_hash_dtor ( zval * data ) { php_oci_define * define = ( php_oci_define * ) Z_PTR_P ( data ) ; if ( define -> name ) { efree ( define -> name ) ; define -> name = NULL ; } zval_ptr_dtor ( & define -> val ) ; } 

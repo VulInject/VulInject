@@ -1,0 +1,1 @@
+int lxc_id128_write_fd ( int fd , lxc_id128_t id ) { char buffer [ 36 + 2 ] ; size_t sz ; int ret ; id128_to_uuid_string ( id , buffer ) ; buffer [ 36 ] = '\n' ; sz = 37 ; ret = lxc_write_nointr ( fd , buffer , sz ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+free_insn_info ( ) { free ( refs_for_insn_df ) ; refs_for_insn_df = NULL ; insn_df = NULL ; insn_df_max_uid = 0 ; } 

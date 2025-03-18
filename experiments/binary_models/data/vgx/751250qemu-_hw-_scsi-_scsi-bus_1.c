@@ -1,0 +1,1 @@
+static void scsi_dma_restart_cb ( void * opaque , bool running , RunState state ) { SCSIDevice * s = opaque ; if ( ! s -> bh ) { AioContext * ctx = blk_get_aio_context ( s -> conf . blk ) ; object_ref ( OBJECT ( s ) ) ; s -> bh = aio_bh_new ( ctx , scsi_dma_restart_bh , s ) ; qemu_bh_schedule ( s -> bh ) ; } } 

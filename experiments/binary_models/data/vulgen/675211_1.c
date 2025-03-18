@@ -1,0 +1,1 @@
+int log__close ( struct mosquitto__config * config ) { if ( log_destinations & MQTT3_LOG_SYSLOG ) { closelog ( ) ; } if ( log_destinations & MQTT3_LOG_FILE ) { if ( config -> log_fptr ) { fclose ( config -> log_fptr ) ; config -> log_fptr = NULL ; } } if ( dlt_allowed ) { dlt_unregister_context ( & dltContext ) ; DLT_UNREGISTER_APP ( ) ; } return MOSQ_ERR_SUCCESS ; } 

@@ -1,0 +1,1 @@
+Suite * req_shutdown_suite ( void ) { Suite * s = suite_create ( "req_shutdown_suite methods" ) ; TCase * tc_core = tcase_create ( "test_one" ) ; tcase_add_test ( tc_core , test_one ) ; tc_core = tcase_create ( "test_two" ) ; tcase_add_test ( tc_core , test_two ) ; } 

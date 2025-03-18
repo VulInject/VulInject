@@ -1,0 +1,1 @@
+if ( length_size ) { * length_size = TYPE_LENGTH ( TYPE_FIELD_TYPE ( type , 1 ) ) ; } if ( string_pos ) { * string_pos = TYPE_FIELD_BITPOS ( type , 2 ) / TARGET_CHAR_BIT ; } if ( char_size ) { * char_size = 1 ; } return 3 ; 0 ; 

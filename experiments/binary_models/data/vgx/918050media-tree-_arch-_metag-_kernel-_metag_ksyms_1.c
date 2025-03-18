@@ -1,0 +1,1 @@
+DECLARE_EXPORT ( __muldi3 ) ; DECLARE_EXPORT ( __cmpdi2 ) ; DECLARE_EXPORT ( __ucmpdi2 ) ; EXPORT_SYMBOL ( div_u64 ) ; EXPORT_SYMBOL ( div_s64 ) ; EXPORT_SYMBOL ( memcpy ) ; EXPORT_SYMBOL ( memset ) ; EXPORT_SYMBOL ( memmove ) ; EXPORT_SYMBOL ( mcount_wrapper , NULL ) ; 

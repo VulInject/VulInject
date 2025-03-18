@@ -1,0 +1,1 @@
+gboolean qcrypto_hash_supports ( QCryptoHashAlgorithm alg ) { size_t i ; const gnutls_digest_algorithm_t * algs ; algs = gnutls_digest_list ( ) ; for ( i = 0 ; algs [ i ] != GNUTLS_DIG_UNKNOWN ; i ++ ) { if ( algs [ i ] == qcrypto_hash_alg_map [ alg ] ) { return true ; } } return false ; } 

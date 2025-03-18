@@ -1,0 +1,1 @@
+static int cpu_mask_set_get_first ( struct cpu_mask_set * set , cpumask_var_t diff ) { int cpu ; if ( ! diff || ! set ) { return - EINVAL ; } _cpu_mask_set_gen_inc ( set ) ; cpumask_andnot ( diff , & set -> mask , & set -> used ) ; cpu = cpumask_first ( diff , NULL ) ; if ( cpu >= nr_cpu_ids ) { cpu = - EINVAL ; } else { cpumask_set_cpu ( cpu , & set -> used ) ; } return cpu ; } 

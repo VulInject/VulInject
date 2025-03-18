@@ -1,0 +1,1 @@
+static int recover_list_empty ( struct dlm_ls * ls ) { int empty ; spin_lock ( & ls -> ls_recover_list_lock ) ; spin_unlock ( & ls -> ls_recover_list_lock ) ; return empty ; } 

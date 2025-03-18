@@ -1,0 +1,1 @@
+int aoa_snd_ctl_add ( struct snd_kcontrol * control ) { int err ; err = snd_ctl_add ( aoa_card -> alsa_card , control ) ; if ( err ) { printk ( KERN_ERR "snd-aoa: failed to add alsa control (%d)\n" , err ) ; } return err ; } 

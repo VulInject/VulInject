@@ -1,0 +1,1 @@
+int v4l2_clk_enable ( struct v4l2_clk * clk ) { int ret ; if ( clk -> clk ) { return clk_prepare_enable ( clk -> clk ) ; } ret = v4l2_clk_lock_driver ( clk ) ; mutex_lock ( & clk -> lock ) ; if ( ++ clk -> enable == 1 && clk -> ops -> enable ) { ret = clk -> ops -> enable ( clk ) ; if ( ret < 0 ) { clk -> enable -- ; } } mutex_unlock ( & clk -> lock ) ; return ret ; } 

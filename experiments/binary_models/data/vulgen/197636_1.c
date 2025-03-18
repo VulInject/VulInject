@@ -1,0 +1,1 @@
+void bootmem_dump ( void ) { struct octeon_bootmem_desc * memdesc = ( octeon_bootmem_desc * ) PHYS_TO_XKPHYS ( octeon_boot_info -> phys_mem_desc_addr , CCA_CACHED ) ; struct octeon_bootmem_block * block ; paddr_t pa ; pa = memdesc -> head_addr ; while ( pa != 0 ) { block = pa_to_block ( pa ) ; pa = block -> next ; } } 

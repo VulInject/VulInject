@@ -1,0 +1,1 @@
+static cxt { char const * keyPath ; char const * digest ; char const * signature ; char const * publicKey ; char const * certificate ; char const * padding ; } , ctx 

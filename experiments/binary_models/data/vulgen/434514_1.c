@@ -1,0 +1,1 @@
+static RETSIGTYPE main_sigh ( int sig ) { if ( ! sig_quit ) { char str [ ] "exit on signal   \n" ; ; str [ 15 ] = '0' + ( sig / 10 ) % 10 ; str [ 16 ] = '0' + sig % 10 ; ( void ) ! write ( STDERR_FILENO , str , strlen ( str ) ) ; } if ( sig_base ) { sig_base = NULL ; } sig_quit = 1 ; } 

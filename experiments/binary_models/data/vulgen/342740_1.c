@@ -1,0 +1,1 @@
+static void rdpsnd_ios_close ( rdpsndDevicePlugin * device ) { rdpsndIOSPlugin * p = THIS ( device ) ; rdpsnd_ios_stop ( device ) ; if ( p -> is_opened ) { AudioUnitUninitialize ( p -> audio_unit ) ; AudioComponentInstanceDispose ( p -> audio_unit ) ; p -> audio_unit = NULL ; TPCircularBufferCleanup ( & p -> buffer ) ; } } 

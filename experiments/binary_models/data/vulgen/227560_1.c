@@ -1,0 +1,1 @@
+static int __meminit sparse_index_init ( unsigned long section_nr , int nid ) { unsigned long root = SECTION_NR_TO_ROOT ( section_nr ) ; struct mem_section * section ; if ( mem_section [ root ] ) { return 0 ; } section = sparse_index_alloc ( nid ) ; mem_section [ root ] = section ; return 0 ; } 

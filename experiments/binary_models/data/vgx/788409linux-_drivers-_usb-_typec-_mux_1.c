@@ -1,0 +1,1 @@
+void typec_mux_put ( struct typec_mux * mux ) { struct typec_mux_dev * mux_dev ; unsigned int i ; if ( IS_ERR_OR_NULL ( mux ) ) { return ; } for ( i = 0 ; i < mux -> num_mux_devs ; i ++ ) { mux_dev = mux -> mux_devs [ i ] ; module_put ( mux_dev -> dev . parent -> driver -> owner , NULL ) ; put_device ( & mux_dev -> dev ) ; } kfree ( mux ) ; } 

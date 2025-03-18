@@ -1,0 +1,1 @@
+void noerror ( str , i ) unsigned char * str ; int i ; { error0 ( ) ; merror ( str , i ) ; if ( writing ) { serror ( ( unsigned char * ) gettext ( " [Warning - %s is incomplete]" ) , file ) ; writing = 0 ; } error1 ( str , NULL ) ; } 

@@ -1,0 +1,1 @@
+BloomTuple * BloomFormTuple ( BloomState * state , ItemPointer iptr , Datum * values , bool * isnull ) { int i ; BloomTuple * res = ( BloomTuple * ) palloc0 ( state -> sizeOfBloomTuple ) ; res -> heapPtr = * iptr ; for ( i = 0 ; i < state -> nColumns ; i ++ ) { signValue ( state , res -> sign , values [ i ] , i ) ; } return res ; } 

@@ -1,0 +1,1 @@
+void ethernut5_print_celsius ( void ) { int val ; val = i2c_reg_read ( PWRMAN_I2C_ADDR , PWRMAN_REG_TEMP ) ; val *= 5000 ; val += 128 ; val /= 256 ; val -= 450 ; } 

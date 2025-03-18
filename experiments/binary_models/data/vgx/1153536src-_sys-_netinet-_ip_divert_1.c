@@ -1,0 +1,1 @@
+void divert_init ( void ) { in_pcbinit ( & divbtable , divbhashsize ) ; divcounters = counters_alloc ( divs_ncounters , NULL ) ; } 

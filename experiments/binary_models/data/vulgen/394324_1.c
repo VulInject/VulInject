@@ -1,0 +1,1 @@
+int cmp ( LINE * lp1 , u_long fieldno1 , LINE * lp2 , u_long fieldno2 ) { if ( lp1 -> fieldcnt <= fieldno1 ) { return lp2 -> fieldcnt <= fieldno2 ?0 : - 1 ; } return strcmp ( lp1 -> fields [ fieldno1 ] , lp2 -> fields [ fieldno2 ] ) ; } 

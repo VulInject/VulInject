@@ -1,0 +1,1 @@
+gimp_plug_in_def_class_init ( ) { GObjectClass * object_class = G_OBJECT_CLASS ( klass ) ; GimpObjectClass * gimp_object_class = GIMP_OBJECT_CLASS ( klass ) ; object_class -> finalize = gimp_plug_in_def_finalize ; } 

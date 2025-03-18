@@ -1,0 +1,1 @@
+static int __init pdc_chassis_create_procfs ( void ) { unsigned long test ; int ret ; ret = pdc_chassis_warn ( & test ) ; if ( ( ret == PDC_BAD_PROC ) || ( ret == PDC_BAD_OPTION ) ) { printk ( KERN_INFO "Chassis warnings not supported.\n" ) ; return 0 ; } printk ( KERN_INFO "Enabling PDC chassis warnings support v%s\n" , PDC_CHASSIS_VER ) ; return 0 ; } 

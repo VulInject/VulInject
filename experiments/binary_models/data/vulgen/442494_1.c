@@ -1,0 +1,1 @@
+static void prom_init ( buf * serverinfo __attribute__ ( ( unused ) ) ) ( namespace_prometheus . enabled = ( config_httpmodules & IMAP_ENUM_HTTPMODULES_PROMETHEUS ) && config_getswitch ( ) ) ; 

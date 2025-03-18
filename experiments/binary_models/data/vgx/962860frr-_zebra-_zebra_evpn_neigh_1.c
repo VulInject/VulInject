@@ -1,0 +1,1 @@
+int remote_neigh_count ( struct zebra_mac * zmac ) { struct zebra_neigh * n = NULL ; struct listnode * node = NULL ; int count ; for ( ALL_LIST_ELEMENTS_RO ( zmac -> neigh_list , node , n ) ; ) { if ( CHECK_FLAG ( n -> flags , ZEBRA_NEIGH_REMOTE ) ) { count ++ ; } } return count ; } 

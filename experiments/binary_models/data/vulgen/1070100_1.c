@@ -1,0 +1,1 @@
+int is_serdes_prtcl_valid ( u32 prtcl ) { int i ; u32 svr = get_svr ( ) ; u32 ver = SVR_SOC_VER ( svr ) ; if ( ver == SVR_P2040 && prtcl == XAUI_FM1 ) { return 0 ; } for ( i = 0 ; i < SRDS_MAX_LANES ; i ++ ) { if ( serdes_cfg_tbl [ prtcl ] [ i ] != NONE ) { return 1 ; } } return 0 ; } 

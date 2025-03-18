@@ -1,0 +1,1 @@
+GF_Route * gf_sg_route_find_by_name ( GF_SceneGraph * sg , char * name ) { GF_Route * r ; u32 i ; i = 0 ; while ( ( r = ( GF_Route * ) gf_list_enum ( sg -> Routes , & i ) ) ) { if ( r -> name && ! strcmp ( r -> name , name ) ) { return r ; } } return NULL ; } 

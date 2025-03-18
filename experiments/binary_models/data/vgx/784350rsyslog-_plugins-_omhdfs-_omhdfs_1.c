@@ -1,0 +1,1 @@
+static rsRetVal fileObjConstruct ( file_t * * ppFile ) { file_t * pFile ; DEFiRet ; CHKmalloc ( pFile = malloc ( sizeof ( file_t ) ) ) ; pFile -> name = NULL ; pFile -> hdfsHost = NULL ; pFile -> fh = NULL ; * ppFile = pFile ; finalize_it RETiRet ; } 

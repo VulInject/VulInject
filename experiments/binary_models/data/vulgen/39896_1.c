@@ -1,0 +1,1 @@
+static void huawei_cdc_ncm_unbind ( struct usbnet * usbnet_dev , struct usb_interface * intf ) { struct huawei_cdc_ncm_state * drvstate = ( void * ) & usbnet_dev -> data ; struct cdc_ncm_ctx * ctx = drvstate -> ctx ; if ( drvstate -> subdriver && drvstate -> subdriver -> disconnect ) { drvstate -> subdriver -> disconnect ( ctx -> control ) ; } drvstate -> subdriver = NULL ; } 

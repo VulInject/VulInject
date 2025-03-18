@@ -1,0 +1,1 @@
+static int mtk_reset ( struct reset_controller_dev * rcdev , unsigned long id ) { int ret ; ret = mtk_reset_assert ( rcdev , id ) ; return mtk_reset_deassert ( rcdev , id ) ; } static const struct reset_control_ops mtk_reset_ops = { . assert = mtk_reset_assert . deassert = mtk_reset_deassert . reset = mtk_reset } ; 

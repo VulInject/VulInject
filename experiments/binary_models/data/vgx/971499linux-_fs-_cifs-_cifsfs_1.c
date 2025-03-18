@@ -1,0 +1,1 @@
+static void cifs_destroy_request_bufs ( void ) { mempool_destroy ( cifs_req_poolp ) ; mempool_destroy ( cifs_sm_req_poolp ) ; kmem_cache_destroy ( cifs_sm_req_cachep ) ; } 

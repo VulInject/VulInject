@@ -1,0 +1,1 @@
+static void add_msr_offset ( u32 offset ) { int i ; for ( i = 0 ; i < MSRPM_OFFSETS ; ++ i ) { if ( msrpm_offsets [ i ] == offset ) { return ; } msrpm_offsets [ i ] = offset ; return ; } BUG ( ) ; } 

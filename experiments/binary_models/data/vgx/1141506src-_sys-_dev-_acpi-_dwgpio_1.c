@@ -1,0 +1,1 @@
+int dwgpio_pin_intr ( struct dwgpio_softc * , int ) int dwgpio_intr ( void * ) int dwgpio_match ( struct device * parent , void * match , void * aux ) { struct acpi_attach_args * aaa = aux ; struct cfdata * cf = match ; return acpi_matchhids ( aaa , dwgpio_hids , cf -> cf_driver -> cd_name ) ; } 

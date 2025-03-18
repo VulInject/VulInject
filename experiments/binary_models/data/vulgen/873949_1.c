@@ -1,0 +1,1 @@
+OM_uint32 * minor_status , gss_OID mechanism , gss_OID_set * name_types { OM_uint32 ret ; if ( ret != GSS_S_COMPLETE ) { return ret ; } * minor_status = 0 ; return GSS_S_COMPLETE ; } ; 

@@ -1,0 +1,1 @@
+unsigned int vavon_eline ; unsigned int hso_begin ; unsigned int hso_end ; unsigned int vso_begin ; unsigned int vso_end ; unsigned int vso_bline ; unsigned int vso_eline ; bool vso_eline_present ; unsigned int sy_val ; bool sy_val_present ; unsigned int sy2_val ; int sy2_val_present ; unsigned int max_lncnt ; 

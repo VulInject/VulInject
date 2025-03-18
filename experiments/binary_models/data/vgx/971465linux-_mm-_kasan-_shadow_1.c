@@ -1,0 +1,1 @@
+void kasan_unpoison ( const void * addr , size_t size , bool init ) { u8 tag = get_tag ( addr ) ; addr = kasan_reset_tag ( addr ) ; if ( is_kfence_address ( addr ) ) { return ; } kasan_poison ( addr , round_up ( size , KASAN_GRANULE_SIZE ) , tag , false ) ; if ( IS_ENABLED ( CONFIG_KASAN_GENERIC ) ) { kasan_poison_last_granule ( addr , size ) ; } } 

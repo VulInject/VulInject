@@ -1,0 +1,1 @@
+int evtag_peek ( struct evbuffer * evbuf , ev_uint32_t * ptag ) { return ( decode_tag_internal ( ptag , evbuf , 0 ) ) ; } 

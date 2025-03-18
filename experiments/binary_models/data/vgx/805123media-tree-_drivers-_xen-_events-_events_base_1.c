@@ -1,0 +1,1 @@
+static int __must_check xen_allocate_irq_gsi ( unsigned gsi ) { int irq ; if ( xen_pv_domain ( ) && ! xen_initial_domain ( ) ) { return xen_allocate_irq_dynamic ( ) ; } if ( gsi < nr_legacy_irqs ( ) ) { irq = gsi ; } else { irq = irq_alloc_desc_at ( gsi , - 1 ) ; } xen_irq_init ( irq , NULL ) ; return irq ; } 

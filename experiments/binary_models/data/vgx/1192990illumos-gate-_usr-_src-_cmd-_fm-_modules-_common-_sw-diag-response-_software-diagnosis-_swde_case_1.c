@@ -1,0 +1,1 @@
+swde_case_data { uint32_t sc_version ; int32_t sc_type ; uint32_t sc_sub_bufvers ; char sc_sub_bufname [ SW_CASE_DATA_BUFNAMELEN ] ; int sc_sub_bufsz ; } swde_case_data_t 

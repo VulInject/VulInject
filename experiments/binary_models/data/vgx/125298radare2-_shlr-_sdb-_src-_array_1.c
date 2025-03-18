@@ -1,0 +1,1 @@
+static int astrcmp ( const char * a , const char * b ) { char va = * a ; char vb = * b ; for ( ; ; ) { if ( va == '\0' || va == SDB_RS ) { return - 1 ; } if ( vb == '\0' || vb == SDB_RS ) { return 1 ; } if ( va != vb ) { return ( va > vb ) ?1 : - 1 ; } va = * ( ++ a ) ; vb = * ( ++ b ) ; } } 

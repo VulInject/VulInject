@@ -1,0 +1,1 @@
+long srm_puts ( const char * str , long len ) { long remaining , written ; if ( ! callback_init_done ) { return len ; } for ( remaining = len ; remaining > 0 ; remaining -= written ) { written = callback_puts ( 0 , str , remaining ) ; str += written ; } return len ; } 

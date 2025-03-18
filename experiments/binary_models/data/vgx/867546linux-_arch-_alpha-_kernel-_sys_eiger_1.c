@@ -1,0 +1,1 @@
+static void eiger_disable_irq ( struct irq_data * d ) { unsigned int irq = d -> irq ; cfs_time_t mask ; mask = ( cached_irq_mask [ irq >= 64 ] |= 1UL << ( irq & 63 ) ) ; eiger_update_irq_hw ( irq , mask ) ; } 

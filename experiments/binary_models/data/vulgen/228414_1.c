@@ -1,0 +1,1 @@
+static enum cmd_retval cmd_detach_client_exec ( struct cmd * , struct cmdq_item * ) 

@@ -1,0 +1,1 @@
+memarea_t * memarea_new ( void ) { memarea_t * head = tor_malloc ( sizeof ( memarea_t ) ) ; return head ; } 

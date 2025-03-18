@@ -1,0 +1,1 @@
+static int cs35l45_asp_set_tdm_slot ( struct snd_soc_dai * dai , unsigned int tx_mask , unsigned int rx_mask , int slots , int slot_width ) { struct cs35l45_private * cs35l45 = snd_soc_component_get_drvdata ( dai -> component ) ; cs35l45 -> slot_width = slot_width ; cs35l45 -> slot_count = slots ; return 0 ; } 

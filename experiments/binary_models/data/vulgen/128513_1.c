@@ -1,0 +1,1 @@
+mpg123_string * attribute_align_arg mpg123_new_string ( const char * val ) { if ( ! sb ) { return NULL ; } mpg123_init_string ( sb ) ; mpg123_set_string ( sb , val ) ; return sb ; } 

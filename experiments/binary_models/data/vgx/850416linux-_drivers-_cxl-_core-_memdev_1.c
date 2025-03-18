@@ -1,0 +1,1 @@
+static DEFINE_IDA ( cxl_memdev_ida ) ; static void cxl_memdev_release ( struct device * dev ) { struct cxl_memdev * cxlmd = to_cxl_memdev ( dev ) ; ida_free ( & cxl_memdev_ida , cxlmd -> id ) ; } 

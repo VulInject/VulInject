@@ -1,0 +1,1 @@
+void test_regexp__search_finds_complete_match ( void ) { git_regmatch matches [ 1 ] ; cl_git_pass ( git_regexp_compile ( & regex , "abc" , 0 ) ) ; cl_git_pass ( git_regexp_search ( & regex , "abc" , 1 , matches ) ) ; cl_assert_equal_i ( matches [ 0 ] . start , 0 ) ; } 

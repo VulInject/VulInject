@@ -1,0 +1,1 @@
+static void printer_win_release_enum_printers ( rdpPrinter * * printers ) { rdpPrinter * * cur = printers ; while ( ( cur != NULL ) && ( ( * cur ) != NULL ) ) { if ( ( * cur ) -> ReleaseRef ) { ( * cur ) -> ReleaseRef ( * cur ) ; } cur ++ ; } } 

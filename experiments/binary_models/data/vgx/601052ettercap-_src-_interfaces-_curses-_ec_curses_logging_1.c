@@ -1,0 +1,1 @@
+static void curses_log_msg ( void ) { DEBUG_MSG ( "curses_log_msg" ) ; SAFE_FREE ( logfile , NULL ) ; SAFE_CALLOC ( logfile , FILE_LEN , sizeof ( char ) ) ; curses_input ( "Log File :" , logfile , FILE_LEN , log_msg ) ; } 

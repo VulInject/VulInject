@@ -1,0 +1,1 @@
+static void qlcnic_sriov_schedule_flr ( struct qlcnic_sriov * sriov , struct qlcnic_vf_info * vf , work_func_t func ) { INIT_WORK ( & vf -> flr_work , func ) ; queue_work ( sriov -> bc . bc_flr_wq , & vf -> flr_work ) ; } 

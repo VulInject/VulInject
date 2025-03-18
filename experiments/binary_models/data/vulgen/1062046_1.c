@@ -1,0 +1,1 @@
+static void hgpk_reset_spew_detection ( struct hgpk_data * priv ) { priv -> spew_count = 0 ; priv -> dupe_count = 0 ; priv -> x_tally = 0 ; priv -> y_tally = 0 ; } 

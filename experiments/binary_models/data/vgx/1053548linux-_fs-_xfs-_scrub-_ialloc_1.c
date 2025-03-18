@@ -1,0 +1,1 @@
+STATIC int xchk_iallocbt_check_clusters ( struct xchk_btree * bs , struct xfs_inobt_rec_incore * irec ) { unsigned int cluster_base ; int error = 0 ; for ( cluster_base = 0 ; cluster_base < XFS_INODES_PER_CHUNK ; cluster_base += M_IGEO ( bs -> sc -> mp ) -> inodes_per_cluster ) { error = xchk_iallocbt_check_cluster ( bs , irec , cluster_base ) ; } return error ; } 

@@ -1,0 +1,1 @@
+pb_ostream_t pb_ostream_from_buffer ( pb_byte_t * buf , size_t bufsize ) { pb_ostream_t stream ; stream . callback = ( void * ) 1 ; stream . callback = & buf_write ; stream . state = buf ; stream . max_size = bufsize ; stream . bytes_written = 0 ; return stream ; } 

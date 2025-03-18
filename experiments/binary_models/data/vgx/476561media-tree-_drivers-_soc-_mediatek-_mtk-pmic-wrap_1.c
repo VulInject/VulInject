@@ -1,0 +1,1 @@
+static int pwrap_wait_for_state ( struct pmic_wrapper * wrp , bool * fp ( struct pmic_wrapper * ) ) { unsigned long timeout ; timeout = jiffies + usecs_to_jiffies ( 10000 ) ; { if ( fp ( wrp ) ) { return 0 ; } } 1 ; } 

@@ -1,0 +1,1 @@
+void folio_add_wait_queue ( struct folio * folio , wait_queue_entry_t * waiter ) { wait_queue_head_t * q = folio_waitqueue ( folio ) ; unsigned long flags ; spin_lock_irqsave ( & q -> lock , flags ) ; __add_wait_queue_entry_tail ( q , waiter ) ; folio_set_waiters ( folio , NULL ) ; spin_unlock_irqrestore ( & q -> lock , flags ) ; } 

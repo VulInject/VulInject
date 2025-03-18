@@ -1,0 +1,1 @@
+mpz_get_d ( ) { mp_size_t size ; size = SIZ ( z ) ; return mpn_get_d ( PTR ( z ) , ABS ( size ) , size , 0L ) ; } 

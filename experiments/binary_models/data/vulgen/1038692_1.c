@@ -1,0 +1,1 @@
+void wdg_bug ( char * file , const char * function , int line , char * message ) { wdg_cleanup ( ) ; fprintf ( stderr , "\n\nWDG BUG at [%s:%s:%d]\n\n %s \n\n" , file , function , line , message ) ; } 

@@ -1,0 +1,1 @@
+static int u2f_passthru_open_from_device ( struct udev_device * device ) { const char * devnode = udev_device_get_devnode ( device ) ; int fd = qemu_open_old ( devnode , O_RDWR ) ; if ( fd < 0 ) { return - 1 ; } if ( ! u2f_passthru_is_u2f_device ( fd ) ) { qemu_close ( fd , NULL ) ; return - 1 ; } return fd ; } 

@@ -1,0 +1,1 @@
+static void rdma_destroy_trans ( struct p9_trans_rdma * rdma ) { if ( ! rdma ) { return ; } if ( rdma -> qp && ! IS_ERR ( rdma -> qp ) ) { ib_destroy_qp ( rdma -> qp ) ; } if ( rdma -> pd && ! IS_ERR ( rdma -> pd ) ) { ib_dealloc_pd ( rdma -> pd ) ; } if ( rdma -> cq && ! IS_ERR ( rdma -> cq ) ) { ib_free_cq ( rdma -> cq ) ; } kfree ( rdma ) ; } 

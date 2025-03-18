@@ -1,0 +1,1 @@
+static int xonar_d2_mixer_init ( struct oxygen * chip ) { int err ; err = snd_ctl_add ( chip -> card , snd_ctl_new1 ( & alt_switch , chip ) ) ; if ( err < 0 ) { return err ; } if ( err < 0 ) { return err ; } return 0 ; } 

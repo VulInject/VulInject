@@ -1,0 +1,1 @@
+long double nanl ( const char * s ) { { long double e ; int ieee ; uint32_t bits [ 3 ] ; } , u _scan_nan ( u . bits , 3 , s ) ; u . ieee . ext_exp = 0x7fff ; u . ieee . ext_frach |= 0xc0000000 ; return ( u . e ) ; } 

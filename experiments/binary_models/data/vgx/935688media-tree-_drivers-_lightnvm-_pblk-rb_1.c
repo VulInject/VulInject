@@ -1,0 +1,1 @@
+unsigned int pblk_rb_read_commit ( struct pblk_rb * rb , unsigned int nr_entries ) { int subm ; subm = READ_ONCE ( rb -> subm ) ; smp_store_release ( & rb -> subm , ( subm + nr_entries ) & ( rb -> nr_entries - 1 ) ) ; return subm ; } 

@@ -1,0 +1,1 @@
+__FBSDID ( "$FreeBSD: head/lib/libarchive/archive_read_open_filename.c 201093 2009-12-28 02:28:44Z kientzle $" ) ; read_file_data { int fd ; size_t block_size ; void * buffer ; mode_t st_mode ; fnt_e { FNT_STDIN , FNT_MBS , FNT_WCS } , filename_type { char m [ 1 ] ; wchar_t w [ 1 ] ; } , filename } 

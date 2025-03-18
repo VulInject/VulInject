@@ -1,0 +1,1 @@
+static int rmi_f55_probe ( struct rmi_function * fn ) { struct f55_data * f55 ; f55 = devm_kzalloc ( & fn -> dev , sizeof ( f55_data ) , GFP_KERNEL ) ; f55 -> fn = fn ; dev_set_drvdata ( & fn -> dev , f55 ) ; return rmi_f55_detect ( fn ) ; } struct rmi_function_handler rmi_f55_handler = { . driver = { . name = F55_NAME } . func = 0x55 . probe = rmi_f55_probe } ; 

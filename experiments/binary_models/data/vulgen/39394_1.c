@@ -1,0 +1,1 @@
+size_t M_sql_trace_get_conn_id ( const M_sql_trace_data_t * data ) { return M_sql_driver_conn_get_id ( data -> conn ) ; } 

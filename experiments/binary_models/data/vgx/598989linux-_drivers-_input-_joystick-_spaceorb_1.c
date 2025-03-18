@@ -1,0 +1,1 @@
+static void spaceorb_disconnect ( struct serio * serio ) { struct spaceorb * spaceorb = serio_get_drvdata ( serio ) ; serio_close ( serio ) ; serio_set_drvdata ( serio , NULL ) ; input_unregister_device ( spaceorb -> dev ) ; } 

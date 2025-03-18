@@ -1,0 +1,1 @@
+static void lockstat_provide ( void * arg , const dtrace_probedesc_t * desc ) { int i = 0 ; for ( i = 0 ; lockstat_probes [ i ] . lsp_func != NULL ; i ++ ) { lockstat_probe_t * probe = & lockstat_probes [ i ] ; ASSERT ( ! probe -> lsp_id ) ; probe -> lsp_id = dtrace_probe_create ( lockstat_id , "genunix" , probe -> lsp_func , probe -> lsp_name , 1 , probe ) ; } } 

@@ -1,0 +1,1 @@
+static testcase { krb5_enctype enctype ; unsigned char constant [ MAXSIZE ] ; unsigned char key [ MAXSIZE ] ; unsigned char res [ MAXSIZE ] ; } , tests [ ] { } ; 

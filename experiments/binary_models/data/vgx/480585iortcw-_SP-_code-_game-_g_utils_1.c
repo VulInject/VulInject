@@ -1,0 +1,1 @@
+void G_FreeEntity ( gentity_t * ed ) { trap_UnlinkEntity ( ed ) ; if ( ed -> neverFree ) { return ; } ed -> classname = "freed" ; ed -> freetime = level . time ; ed -> inuse = qfalse ; } 

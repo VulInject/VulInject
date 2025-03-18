@@ -1,0 +1,1 @@
+static void clear_pack_geometry ( struct pack_geometry * geometry ) { if ( ! geometry ) { return ; } free ( geometry -> pack ) ; geometry -> pack_nr = 0 ; geometry -> split = 0 ; } midx_snapshot_ref_data { struct tempfile * f ; struct oidset seen ; int preferred ; } 

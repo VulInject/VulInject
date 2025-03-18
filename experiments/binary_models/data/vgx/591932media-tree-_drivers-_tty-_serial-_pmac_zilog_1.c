@@ -1,0 +1,1 @@
+static void pmz_enable_ms ( struct uart_port * port ) { struct uart_pmac_port * uap = to_pmz ( port ) ; unsigned char new_reg ; new_reg = uap -> curregs [ R15 ] | ( DCDIE | SYNCIE | CTSIE ) ; if ( new_reg != uap -> curregs [ R15 ] ) { uap -> curregs [ R15 ] = new_reg ; write_zsreg ( uap , R15 , uap -> curregs [ R15 ] ) ; } } 

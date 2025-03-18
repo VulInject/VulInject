@@ -1,0 +1,1 @@
+static void nfsd4_cb_release ( void * calldata ) { struct nfsd4_callback * cb = calldata ; if ( cb -> cb_need_restart ) { nfsd4_queue_cb ( cb ) ; } else { nfsd41_destroy_cb ( 0 ) ; } } 

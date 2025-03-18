@@ -1,0 +1,1 @@
+int __irq_put_desc_unlock ( irq_desc * desc , unsigned long flags , bool bus ) __releases ( & desc -> lock ) ( raw_spin_unlock_irqrestore ( & desc -> lock , flags ) , ( bus ) chip_bus_sync_unlock ( desc ) ) ; 

@@ -1,0 +1,1 @@
+static int __init sirfsoc_of_pwrc_init ( void ) { struct device_node * np ; np = of_find_matching_node ( NULL , pwrc_ids ) ; if ( of_property_read_u32 ( np , "reg" , & sirfsoc_pwrc_base ) ) { panic ( "unable to find base address of pwrc node in dtb\n" ) ; } of_node_put ( np ) ; return 0 ; } 

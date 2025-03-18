@@ -1,0 +1,1 @@
+static ssize_t name # # _show ( , , ) { acpi_device * acpi_dev = dev_get_drvdata ( dev ) pch_fivr_resp fivr_resp int status status = pch_fivr_read ( acpi_dev -> handle , # method , & fivr_resp ) } ; return sprintf ( buf , "%llu\n" , fivr_resp . result ) ; 

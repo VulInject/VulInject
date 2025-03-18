@@ -1,0 +1,1 @@
+static int read_word_be ( struct mtk_jpeg_stream * stream , u32 * word ) { u32 temp ; int byte ; byte = read_byte ( stream ) ; temp = byte << 8 ; byte = read_byte ( stream ) ; if ( byte == - 1 ) { return - 1 ; } * word = ( u32 ) byte | temp ; return 0 ; } 

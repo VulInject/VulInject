@@ -1,0 +1,1 @@
+void pm_smbus_init ( DeviceState * parent , PMSMBus * smb , bool force_aux_blk ) { smb -> op_done = true ; smb -> reset = pm_smbus_reset ; smb -> smbus = i2c_init_bus ( parent , "i2c" ) ; if ( force_aux_blk ) { smb -> smb_auxctl |= AUX_BLK ; } } 

@@ -1,0 +1,1 @@
+alloc_buf_gc ( , ) { struct buffer buf ; if ( ! buf_size_valid ( size ) ) { buf_size_error ( size ) ; } buf . capacity = ( int ) size ; buf . offset = 0 ; buf . len = 0 ; buf . data = ( uint8_t * ) gc_malloc_debug ( size , false , gc , file , line ) ; buf . data = ( uint8_t * ) gc_malloc ( size , false , gc ) ; return buf ; } 

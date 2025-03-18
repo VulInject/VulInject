@@ -1,0 +1,1 @@
+static int ki_secsipid_build_identity ( sip_msg_t * msg , str * origtn , str * desttn , str * attest , str * origid , str * x5u , str * keypath ) { if ( _secsipid_data . value . s ) { free ( _secsipid_data . value . s ) ; } return ki_secsipid_add_identity_mode ( msg , origtn , desttn , attest , origid , x5u , keypath , SECSIPID_MODE_VALVAR | SECSIPID_MODE_KEYPATH ) ; } 

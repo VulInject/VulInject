@@ -1,0 +1,1 @@
+. resource = scif_resources , . num_resources = ARRAY_SIZE ( ) , . dev = { . platform_data = & scif_platform_data } , ; 

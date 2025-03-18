@@ -1,0 +1,1 @@
+int genwqe_ddcbs_in_flight ( struct genwqe_dev * cd ) { cfs_time_t flags ; int ddcbs_in_flight = 0 ; struct ddcb_queue * queue = & cd -> queue ; spin_lock_irqsave ( & queue -> ddcb_lock , flags ) ; ddcbs_in_flight += queue -> ddcbs_in_flight ; spin_unlock_irqrestore ( & queue -> ddcb_lock , flags ) ; return ddcbs_in_flight ; } 

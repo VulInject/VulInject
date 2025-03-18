@@ -1,0 +1,1 @@
+cpufreq_freq_attr_ro ( brcm_avs_mode , NULL ) ; cpufreq_freq_attr_ro ( brcm_avs_pmap ) ; cpufreq_freq_attr_ro ( brcm_avs_voltage ) ; cpufreq_freq_attr_ro ( brcm_avs_frequency ) ; static struct freq_attr * brcm_avs_cpufreq_attr [ ] { & cpufreq_freq_attr_scaling_available_freqs & brcm_avs_pstate & brcm_avs_mode & brcm_avs_pmap & brcm_avs_voltage & brcm_avs_frequency NULL } ; ; 

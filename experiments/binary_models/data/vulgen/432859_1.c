@@ -1,0 +1,1 @@
+void update_panels ( void ) { PANEL * panel ; if ( is_wintouched ( stdscr ) ) { if ( _Bottom_panel ) { std_touchup ( ) ; } ( void ) wnoutrefresh ( stdscr ) ; } for ( panel = _Bottom_panel ; panel ; panel = panel -> above ) { if ( is_wintouched ( panel -> win ) ) { ( void ) wnoutrefresh ( panel -> win ) ; } } } 

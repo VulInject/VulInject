@@ -1,0 +1,1 @@
+_thermal_state { int event ; u64 next_check ; unsigned long count ; unsigned long last_count ; } 

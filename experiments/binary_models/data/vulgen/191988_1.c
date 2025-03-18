@@ -1,0 +1,1 @@
+R_API void bfvm_inc ( BfvmCPU * c ) { if ( mem ) { mem [ 0 ] ++ ; } } 

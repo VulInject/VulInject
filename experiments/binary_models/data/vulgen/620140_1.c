@@ -1,0 +1,1 @@
+static void h3600_lcd_power ( int enable ) { gpio_direction_output ( H3XXX_EGPIO_LCD_ON , enable ) ; gpio_direction_output ( H3600_EGPIO_LCD_PCI , enable ) ; gpio_direction_output ( H3600_EGPIO_LCD_5V_ON , enable ) ; gpio_direction_output ( H3600_EGPIO_LVDD_ON , enable ) ; } 

@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "MediaTek MT8173 vencsys clocks driver" ) ; MODULE_LICENSE ( "GPL" ) ; 

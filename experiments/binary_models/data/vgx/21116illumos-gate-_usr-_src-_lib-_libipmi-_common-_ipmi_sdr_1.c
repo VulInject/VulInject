@@ -1,0 +1,1 @@
+static int ipmi_sdr_reserve_repository ( ipmi_handle_t * ihp ) { ipmi_cmd_t cmd , * rsp ; cmd . ic_netfn = IPMI_NETFN_STORAGE ; cmd . ic_cmd = IPMI_CMD_RESERVE_SDR_REPOSITORY ; cmd . ic_dlen = 0 ; cmd . ic_data = NULL ; if ( ( rsp = ipmi_send ( ihp , & cmd ) ) == NULL ) { return ( - 1 ) ; } ihp -> ih_reservation = * ( ( uint16_t * ) rsp -> ic_data ) ; return ( 0 ) ; } 

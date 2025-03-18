@@ -1,0 +1,1 @@
+bool myentity_can_register_channel ( struct myentity * mt ) { const struct entity_vtable * vt ; return_val_if_fail ( mt != NULL , false ) ; vt = myentity_get_vtable ( mt ) ; return ( myentity_count_channels_with_flagset ( mt , CA_FOUNDER ) < chansvs . maxchans ) ; } 

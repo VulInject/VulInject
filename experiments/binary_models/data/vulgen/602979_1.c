@@ -1,0 +1,1 @@
+static void varpd_disable_service_when_no_overlays ( dladm_handle_t handle ) { uint32_t cnt ; ( void ) dladm_walk_datalink_id ( dladm_overlay_count_cb , handle , & cnt , DATALINK_CLASS_OVERLAY , DATALINK_ANY_MEDIATYPE , DLADM_OPT_ACTIVE ) ; if ( cnt == 0 ) { ( void ) smf_disable_instance ( VARPD_SERVICE , 0 ) ; } } 

@@ -1,0 +1,1 @@
+void ttfFreeTTCFont ( TTCHeaderPtr ttc ) { int i ; for ( i = 0 ; i < ttc -> DirCount ; i ++ ) { ttfFreeRequiredTables ( ttc -> font + i ) ; ttfFreeOptionalTables ( ttc -> font + i ) ; ttfFreeTableDir ( ( ttc -> font + i ) -> dir ) ; free ( ( ttc -> font + i ) -> refcount ) ; } free ( ttc -> offset ) ; free ( ttc ) ; } 

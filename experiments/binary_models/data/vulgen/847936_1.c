@@ -1,0 +1,1 @@
+MODULE_LICENSE ( "GPL" ) ; MODULE_DESCRIPTION ( "driver for iPAQ Atmel micro leds" ) ; 

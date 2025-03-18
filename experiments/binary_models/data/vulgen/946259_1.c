@@ -1,0 +1,1 @@
+static const char fcopy_devname [ ] "vmbus/hv_fcopy" ; ; static u8 * recv_buffer ; static struct hvutil_transport * hvt ; static int dm_reg_value ; static void fcopy_poll_wrapper ( void * channel ) { fcopy_transaction . state = HVUTIL_READY ; tasklet_schedule ( & ( ( vmbus_channel * ) channel ) -> callback_event ) ; } 

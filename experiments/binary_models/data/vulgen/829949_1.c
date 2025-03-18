@@ -1,0 +1,1 @@
+static u64 read_pit_clk ( struct clocksource * cs ) { struct pit_data * data = clksrc_to_pit_data ( cs ) ; unsigned long flags ; u32 elapsed ; u32 t ; raw_local_irq_save ( flags ) ; elapsed = data -> cnt ; t = pit_read ( data -> base , AT91_PIT_PIIR ) ; raw_local_irq_restore ( flags ) ; elapsed += PIT_CPIV ( t ) ; return elapsed ; } 

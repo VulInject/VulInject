@@ -1,0 +1,1 @@
+static void virtio_gpu_destroy_udmabuf ( struct virtio_gpu_simple_resource * res ) { if ( res -> remapped ) { munmap ( res -> remapped , res -> blob_size ) ; res -> remapped = NULL ; } if ( res -> dmabuf_fd >= 0 ) { res -> dmabuf_fd = - 1 ; } } 

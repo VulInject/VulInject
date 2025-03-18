@@ -1,0 +1,1 @@
+static int irq_poll_cpu_dead ( unsigned int cpu ) { local_bh_disable ( ) ; local_irq_disable ( ) ; list_splice_init ( & per_cpu ( blk_cpu_iopoll , cpu ) , this_cpu_ptr ( & blk_cpu_iopoll ) ) ; __raise_softirq_irqoff ( IRQ_POLL_SOFTIRQ , NULL ) ; local_irq_enable ( ) ; local_bh_enable ( ) ; return 0 ; } 

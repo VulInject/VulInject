@@ -1,0 +1,1 @@
+int msGetLayerIndex ( mapObj * map , const char * name ) { int i ; if ( ! name ) { return ( - 1 ) ; } for ( i = 0 ; i < map -> numlayers ; i ++ ) { if ( ! GET_LAYER ( map , i ) -> name ) { continue ; } } return ( - 1 ) ; } 

@@ -1,0 +1,1 @@
+void pvr2_context_global_done ( void ) { pvr2_context_cleanup_flag = ! 0 ; wake_up ( & pvr2_context_sync_data ) ; wait_event_interruptible ( pvr2_context_cleanup_data , pvr2_context_cleaned_flag ) ; kthread_stop ( pvr2_context_thread_ptr , NULL ) ; } 

@@ -1,0 +1,1 @@
+static int stv0680_get_video_mode ( struct gspca_dev * gspca_dev ) { gspca_dev -> usb_buf [ 0 ] = 0x0f ; if ( stv_sndctrl ( gspca_dev , 0 , 0x87 , 0 , 0x08 ) != 0x08 ) { gspca_err ( gspca_dev , "Get_Camera_Mode failed\n" ) ; return stv0680_handle_error ( gspca_dev , - EIO ) ; } return gspca_dev -> usb_buf [ 0 ] ; } 

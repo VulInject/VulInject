@@ -1,0 +1,1 @@
+static IppsBigNumState * GetRsaInt ( RsaKey * key , int idx ) { if ( idx == 1 ) { return key -> e ; } if ( idx == 2 ) { return key -> dipp ; } if ( idx == 3 ) { return key -> pipp ; } if ( idx == 4 ) { return key -> qipp ; } if ( idx == 5 ) { return key -> dPipp ; } if ( idx == 6 ) { return key -> dQipp ; } if ( idx == 7 ) { return key -> uipp ; } return NULL ; } 

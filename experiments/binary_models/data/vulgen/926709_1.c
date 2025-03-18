@@ -1,0 +1,1 @@
+static int queue_len ( struct netqueue * head ) { struct netqueue * q = head -> q_next ; int i = 0 ; while ( q != head ) { q = q -> q_next ; } return i ; } 

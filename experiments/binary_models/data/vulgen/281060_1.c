@@ -1,0 +1,1 @@
+void * dict_pop ( struct dict * d , const char * k ) { struct dictentry key , * entry ; void * data ; key . key = k ; if ( ( entry = SPLAY_FIND ( _dict , & d -> dict , & key ) ) == NULL ) { return ( NULL ) ; } data = entry -> data ; SPLAY_REMOVE ( _dict , & d -> dict , entry ) ; d -> count -= 1 ; return ( data ) ; } 

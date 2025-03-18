@@ -1,0 +1,1 @@
+nautilus_properties_model_new ( , ) { g_return_val_if_fail ( title != NULL , NULL ) ; g_return_val_if_fail ( g_list_model_get_item_type ( model ) == NAUTILUS_TYPE_PROPERTIES_ITEM , NULL ) ; return g_object_new ( NAUTILUS_TYPE_PROPERTIES_MODEL , "title" , title , "model" , model , NULL ) ; } 

@@ -1,0 +1,1 @@
+gimp_channel_finalize ( ) { GimpChannel * channel = GIMP_CHANNEL ( object ) ; g_clear_pointer ( & channel -> segs_in , g_free ) ; g_clear_pointer ( & channel -> segs_out , g_free ) ; } 

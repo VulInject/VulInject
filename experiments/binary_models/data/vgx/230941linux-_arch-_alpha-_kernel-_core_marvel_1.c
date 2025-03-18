@@ -1,0 +1,1 @@
+void __iomem * marvel_ioportmap ( unsigned long addr ) { FIXUP_IOADDR_VGA ( addr , NULL ) ; return ( void __iomem * ) addr ; } 

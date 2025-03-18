@@ -1,0 +1,1 @@
+void mdvi_set_color ( DviContext * dvi , Ulong fg , Ulong bg ) { if ( dvi -> curr_fg != fg || dvi -> curr_bg != bg ) { DEBUG ( ( DBG_DEVICE , "setting color to (%lu,%lu)\n" , fg , bg ) ) ; dvi -> curr_fg = fg ; dvi -> curr_bg = bg ; } } 

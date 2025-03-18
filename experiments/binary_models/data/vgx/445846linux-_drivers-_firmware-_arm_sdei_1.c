@@ -1,0 +1,1 @@
+static void sdei_mark_interface_broken ( void ) { pr_err ( "disabling SDEI firmware interface\n" ) ; on_each_cpu ( & _ipi_mask_cpu , NULL , true ) ; } 

@@ -1,0 +1,1 @@
+static int odev_release ( struct inode * inode , struct file * file ) { struct seq_oss_devinfo * dp ; dp = file -> private_data ; if ( ! dp ) { return 0 ; } mutex_lock ( & register_mutex ) ; mutex_unlock ( & register_mutex ) ; return 0 ; } 

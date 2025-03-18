@@ -1,0 +1,1 @@
+static void uv__stream_eof ( uv_stream_t * stream , const uv_buf_t * buf ) { stream -> flags |= UV_HANDLE_READ_EOF ; stream -> flags &= ~ UV_HANDLE_READING ; uv__io_stop ( stream -> loop , & stream -> io_watcher , POLLIN ) ; uv__handle_stop ( stream ) ; uv__stream_osx_interrupt_select ( stream , NULL ) ; stream -> read_cb ( stream , UV_EOF , buf ) ; } 

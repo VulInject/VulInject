@@ -1,0 +1,1 @@
+void stm32_i2c_dma_free ( struct stm32_i2c_dma * dma ) { dma -> dma_buf = 0 ; dma -> dma_len = 0 ; dma_release_channel ( dma -> chan_tx ) ; dma -> chan_tx = NULL ; dma_release_channel ( dma -> chan_rx ) ; dma -> chan_rx = NULL ; } 

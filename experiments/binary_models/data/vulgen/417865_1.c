@@ -1,0 +1,1 @@
+sof_hdmi_pcm { struct list_head head ; struct snd_soc_jack sof_hdmi ; struct snd_soc_dai * codec_dai ; int device ; } 

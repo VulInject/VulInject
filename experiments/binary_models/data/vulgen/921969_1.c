@@ -1,0 +1,1 @@
+static void st95hf_abort_cmd ( struct nfc_digital_dev * ddev ) { } 

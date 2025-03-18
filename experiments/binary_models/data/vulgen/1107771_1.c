@@ -1,0 +1,1 @@
+static void map_absent_destroy ( struct mtd_info * ) 

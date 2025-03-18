@@ -1,0 +1,1 @@
+static void bgx_reg_write ( struct bgx * bgx , u8 lmac , u64 offset , u64 val ) { writeq_relaxed ( val , addr ) ; } 

@@ -1,0 +1,1 @@
+static void mod_deinit ( void ) { curl_easy_cleanup ( glb_hcurl ) ; free_dynstr ( & glb_sdgst ) ; free_dynstr ( & glb_sidentity ) ; free_dynstr ( & glb_sdate ) ; free_table ( glb_tcert_table ) ; free_table ( glb_tcallid_table ) ; if ( glb_cacerts ) { X509_STORE_free ( glb_cacerts ) ; } } 

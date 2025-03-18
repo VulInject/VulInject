@@ -1,0 +1,1 @@
+static bool tcphdr_ok ( struct sk_buff * skb ) { int th_ofs = skb_transport_offset ( skb ) ; int tcp_len ; tcp_len = tcp_hdrlen ( skb ) ; if ( unlikely ( tcp_len < sizeof ( tcphdr ) || skb -> len < th_ofs + tcp_len ) ) { return false ; } return true ; } 

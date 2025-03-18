@@ -1,0 +1,1 @@
+void mvmbus_disable_window ( struct mvmbus_softc * sc , int window ) { bus_space_write_4 ( sc -> sc_iot , sc -> sc_mbus_ioh , MVMBUS_XP_WINDOW ( window ) + MVMBUS_WINDOW_BASE , 0 ) ; bus_space_write_4 ( sc -> sc_iot , sc -> sc_mbus_ioh , MVMBUS_XP_WINDOW ( window ) + MVMBUS_WINDOW_CTRL , 0 ) ; sc -> sc_windows [ window ] . enabled = 0 ; } 

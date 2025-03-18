@@ -1,0 +1,1 @@
+static void * eeh_disable_and_save_dev_state ( void * data , void * userdata ) { struct eeh_dev * edev = data ; struct pci_dev * pdev = eeh_dev_to_pci_dev ( edev ) ; struct pci_dev * dev = userdata ; pci_set_power_state ( pdev , PCI_D0 ) ; pci_save_state ( pdev ) ; pci_write_config_word ( pdev , PCI_COMMAND , PCI_COMMAND_INTX_DISABLE ) ; return NULL ; } 

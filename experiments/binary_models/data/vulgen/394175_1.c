@@ -1,0 +1,1 @@
+static void notrace persistent_ram_encode_rs8 ( struct persistent_ram_zone * prz , uint8_t * data , size_t len , uint8_t * ecc ) { int i ; uint16_t par [ prz -> ecc_info . ecc_size ] ; encode_rs8 ( prz -> rs_decoder , data , len , par , 0 ) ; for ( i = 0 ; i < prz -> ecc_info . ecc_size ; i ++ ) { ecc [ i ] = par [ i ] ; } } 

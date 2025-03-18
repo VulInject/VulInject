@@ -1,0 +1,1 @@
+static int kvm_s390_apxa_installed ( void ) { u8 config [ 128 ] ; int cc ; if ( test_facility ( 12 ) ) { cc = kvm_s390_query_ap_config ( config , NULL ) ; if ( cc ) { pr_err ( "PQAP(QCI) failed with cc=%d" , cc ) ; } else { return config [ 0 ] & 0x40 ; } } return 0 ; } 

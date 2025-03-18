@@ -1,0 +1,1 @@
+static inline bool is_el1_permission_fault ( unsigned long addr , unsigned long esr , struct pt_regs * regs ) { unsigned long fsc_type = esr & ESR_ELx_FSC_TYPE ; if ( fsc_type == ESR_ELx_FSC_PERM ) { return true ; } if ( is_ttbr0_addr ( addr ) && system_uses_ttbr0_pan ( ) ) { return fsc_type == ESR_ELx_FSC_FAULT && ( regs -> pstate & PSR_PAN_BIT ) ; } return false ; } 

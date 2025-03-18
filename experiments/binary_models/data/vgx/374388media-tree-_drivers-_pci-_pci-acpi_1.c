@@ -1,0 +1,1 @@
+void acpi_pci_remove_bus ( struct pci_bus * bus ) { if ( acpi_pci_disabled || ! bus -> bridge ) { return ; } acpiphp_remove_slots ( bus ) ; acpi_pci_slot_remove ( bus , NULL ) ; } 

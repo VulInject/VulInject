@@ -1,0 +1,1 @@
+static const char * get_config_fullpath ( void ) { DWORD r ; r = GetFullPathName ( cf_config_file , sizeof ( buf ) , buf , NULL ) ; if ( r == 0 || r >= sizeof ( buf ) ) { fprintf ( stderr , "Failed to get full pathname for '%s': %s\n" , cf_config_file , strerror ( GetLastError ( ) ) ) ; exit ( 1 ) ; } return buf ; } 

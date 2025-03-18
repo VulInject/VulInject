@@ -1,0 +1,1 @@
+static int cgwb_bdi_init ( struct backing_dev_info * bdi ) { return wb_init ( & bdi -> wb , bdi ) ; } 

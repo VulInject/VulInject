@@ -1,0 +1,1 @@
+struct l2vpn_pw * l2vpn_pw_find ( struct l2vpn * l2vpn , const char * ifname ) { struct l2vpn_pw * pw ; struct l2vpn_pw s ; strlcpy ( s . ifname , ifname , sizeof ( s . ifname ) ) ; pw = RB_FIND ( l2vpn_pw_head , & l2vpn -> pw_tree , & s ) ; return ( RB_FIND ( l2vpn_pw_head , & l2vpn -> pw_inactive_tree , & s ) ) ; } 

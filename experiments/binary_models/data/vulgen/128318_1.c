@@ -1,0 +1,1 @@
+static void start_rmt_timer0 ( struct s_smc * smc , u_long value , int event ) { smc -> r . timer0_exp = FALSE ; } 

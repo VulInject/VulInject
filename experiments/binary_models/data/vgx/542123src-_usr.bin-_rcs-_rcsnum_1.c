@@ -1,1 +1,1 @@
-void FUN1 ( VAR1 * VAR2 ) { if ( VAR2 == NULL ) { return ; } free ( VAR2 -> VAR3 ) ; }
+void rcsnum_free ( RCSNUM * rn ) { if ( rn == NULL ) { return ; } free ( rn -> rn_id ) ; } 

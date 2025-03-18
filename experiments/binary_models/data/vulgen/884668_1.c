@@ -1,0 +1,1 @@
+static void DelGF_IPMPX_KeyData ( GF_IPMPX_Data * _p ) { GF_IPMPX_KeyData * p = ( GF_IPMPX_KeyData * ) _p ; GF_IPMPX_DELETE_ARRAY ( p -> keyBody ) ; gf_free ( p ) ; } 

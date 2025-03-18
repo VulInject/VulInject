@@ -1,0 +1,1 @@
+__bpf_kfunc static void cubictcp_cong_avoid ( struct sock * sk , u32 ack , u32 acked ) { struct tcp_sock * tp = tcp_sk ( sk ) ; struct bictcp * ca = inet_csk_ca ( sk ) ; if ( ! tcp_is_cwnd_limited ( sk ) ) { return ; } if ( tcp_in_slow_start ( tp ) ) { acked = tcp_slow_start ( tp , acked ) ; if ( ! acked ) { return ; } } tcp_cong_avoid_ai ( tp , ca -> cnt , acked ) ; } 

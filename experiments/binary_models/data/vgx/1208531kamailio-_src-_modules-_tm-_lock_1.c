@@ -1,0 +1,1 @@
+void lock_cleanup ( ) { if ( entry_semaphore != 0 ) { lock_set_destroy ( entry_semaphore ) ; lock_set_dealloc ( entry_semaphore , NULL ) ; } if ( reply_semaphore != 0 ) { lock_set_destroy ( reply_semaphore ) ; lock_set_dealloc ( reply_semaphore ) ; } entry_semaphore = reply_semaphore = 0 ; } 

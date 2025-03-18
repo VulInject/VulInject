@@ -1,0 +1,1 @@
+static void destroy_pid_namespace ( struct pid_namespace * ns ) { ns_free_inum ( & ns -> ns ) ; idr_destroy ( & ns -> idr ) ; } 

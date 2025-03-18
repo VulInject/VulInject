@@ -1,0 +1,1 @@
+static inline void _tlbiel_kernel_broadcast ( void ) { on_each_cpu ( do_tlbiel_kernel , NULL , 1 ) ; if ( tlbie_capable ) { _tlbie_pid ( 0 , 0 ) ; } } 

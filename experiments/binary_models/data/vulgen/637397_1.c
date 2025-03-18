@@ -1,0 +1,1 @@
+void unsave_cat_codes ( int h , quarterword gl ) { int k ; for ( k = 0 ; k <= catcode_max ; k ++ ) { if ( catcode_heads [ k ] != NULL ) { restore_sa_stack ( catcode_heads [ k ] , gl ) ; } } } 

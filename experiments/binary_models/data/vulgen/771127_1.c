@@ -1,0 +1,1 @@
+VOID VIOSerialShutDownAllQueues ( IN WDFOBJECT WdfDevice ) { PPORTS_DEVICE pContext = GetPortsDevice ( WdfDevice ) ; TraceEvents ( TRACE_LEVEL_INFORMATION , DBG_INIT , "-->%s\n" , __FUNCTION__ ) ; TraceEvents ( TRACE_LEVEL_INFORMATION , DBG_INIT , "<-- %s\n" , __FUNCTION__ ) ; } 

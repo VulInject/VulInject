@@ -1,0 +1,1 @@
+void i_refstr_deinit ( void ) { g_hash_table_destroy ( i_refstr_table ) ; } 

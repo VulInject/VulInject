@@ -1,0 +1,1 @@
+static void pci_bus_change_irq_level ( PCIBus * bus , int irq_num , int change ) { assert ( irq_num >= 0 ) ; assert ( irq_num < bus -> nirq ) ; bus -> irq_count [ irq_num ] += change ; } 

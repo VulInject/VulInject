@@ -1,0 +1,1 @@
+ihex_get_byte ( , ) { int c ; if ( bfd_bread ( & c , ( bfd_size_type ) 1 , abfd ) != 1 ) { if ( bfd_get_error ( ) != bfd_error_file_truncated ) { * errorptr = TRUE ; } return EOF ; } return ( int ) ( c & 0xff ) ; } 

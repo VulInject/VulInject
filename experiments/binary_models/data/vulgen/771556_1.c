@@ -1,0 +1,1 @@
+{ MPEG_DEC_PRIVATE * pmp3d = ( MPEG_DEC_PRIVATE * ) psf -> codec_data ; mpg123_id3v1 * v1_tags ; mpg123_id3v2 * v2_tags ; if ( v1_tags != NULL ) { mpeg_decoder_read_strings_id3v1 ( psf , v1_tags ) ; } if ( v2_tags != NULL ) { mpeg_decoder_read_strings_id3v2 ( psf , v2_tags ) ; } } 

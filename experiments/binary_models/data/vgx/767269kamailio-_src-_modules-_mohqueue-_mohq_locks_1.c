@@ -1,0 +1,1 @@
+int mohq_lock_set ( mohq_lock * plock , int bexcl , int nms_cnt ) { int nret = 0 ; { lock_get ( plock -> plock ) ; if ( bexcl ) { if ( ! plock -> lock_cnt ) { plock -> lock_cnt = - 1 ; nret = 1 ; } } else { if ( plock -> lock_cnt != - 1 ) { plock -> lock_cnt ++ ; nret = 1 ; } } if ( ! nret ) { usleep ( 1 ) ; } } ! nret && -- nms_cnt >= 0 ; return nret ; } 

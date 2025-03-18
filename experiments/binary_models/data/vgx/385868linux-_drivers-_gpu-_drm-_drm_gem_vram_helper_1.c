@@ -1,0 +1,1 @@
+( drm_gem_vram_vmap ) ; void drm_gem_vram_vunmap ( struct drm_gem_vram_object * gbo , struct iosys_map * map ) { dma_resv_assert_held ( gbo -> bo . base . resv ) ; drm_gem_vram_kunmap_locked ( gbo , map ) ; drm_gem_vram_unpin_locked ( gbo , NULL ) ; } 

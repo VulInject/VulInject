@@ -1,0 +1,1 @@
+static void enum_sids ( gpointer key , gpointer value , gpointer userdata _U_ ) { const char * sid = ( const char * ) key ; const char * name = ( const char * ) value ; } 

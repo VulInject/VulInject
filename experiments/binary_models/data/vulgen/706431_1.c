@@ -1,0 +1,1 @@
+void dsl_pool_user_hold_create_obj ( dsl_pool_t * dp , dmu_tx_t * tx ) { objset_t * mos = dp -> dp_meta_objset ; ASSERT ( dp -> dp_tmp_userrefs_obj == 0 ) ; ASSERT ( dmu_tx_is_syncing ( tx ) ) ; } 

@@ -1,0 +1,1 @@
+static uint8_t * bgmc_lut_getp ( uint8_t * lut , int * lut_status , int delta ) { int i = av_clip ( delta , 0 , LUT_BUFF - 1 ) ; lut += ( i * LUT_SIZE ) << 4 ; if ( lut_status [ i ] != delta ) { bgmc_lut_fillp ( lut , & lut_status [ i ] , delta ) ; } return lut ; } 

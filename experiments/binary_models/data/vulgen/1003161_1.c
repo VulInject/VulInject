@@ -1,0 +1,1 @@
+list_supported_targets ( , ) { int t ; const char * * targ_names = bfd_target_list ( ) ; if ( name == NULL ) { fprintf ( f , _ ( "Supported targets:" ) ) ; } else { fprintf ( f , _ ( "%s: supported targets:" ) , name ) ; } for ( t = 0 ; targ_names [ t ] != NULL ; t ++ ) { fprintf ( f , " %s" , targ_names [ t ] ) ; } fprintf ( f , "\n" ) ; } 

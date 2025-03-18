@@ -1,0 +1,1 @@
+on_screensaver_dbus_signal ( , , , , ) { gboolean is_active ; g_variant_get ( parameters , "(b)" , & is_active ) ; if ( presence -> priv -> screensaver_active != is_active ) { presence -> priv -> screensaver_active = is_active ; set_session_idle ( presence , is_active ) ; } } 

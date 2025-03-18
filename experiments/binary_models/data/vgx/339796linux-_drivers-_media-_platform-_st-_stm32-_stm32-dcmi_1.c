@@ -1,0 +1,1 @@
+static struct media_entity * dcmi_find_source ( struct stm32_dcmi * dcmi ) { struct media_entity * entity = & dcmi -> vdev -> entity ; struct media_pad * pad ; while ( 1 ) { pad = & entity -> pads [ 0 ] ; if ( ! ( pad -> flags & MEDIA_PAD_FL_SINK ) ) { break ; } pad = media_pad_remote_pad_first ( pad ) ; entity = pad -> entity ; } return entity ; } 

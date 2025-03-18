@@ -1,0 +1,1 @@
+static size_t skip_cols_to_start ( const struct bwstring * s , size_t cols , size_t start , bool skip_blanks , bool * empty_key ) { if ( skip_blanks ) { while ( start < BWSLEN ( s ) && iswblank ( BWS_GET ( s , start ) ) ) { ++ start ; } } while ( start ( BWSLEN ( s ) && cols ) 1 ) { -- cols ; ++ start ; } if ( start >= BWSLEN ( s ) ) { * empty_key = true ; } return start ; } 

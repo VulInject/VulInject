@@ -1,0 +1,1 @@
+static void bflsc_thread_enable ( struct thr_info * thr ) { struct cgpu_info * bflsc = thr -> cgpu ; bflsc_initialise ( bflsc ) ; } 

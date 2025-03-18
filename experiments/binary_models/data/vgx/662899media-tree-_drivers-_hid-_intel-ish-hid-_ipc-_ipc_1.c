@@ -1,0 +1,1 @@
+static void _ish_sync_fw_clock ( struct ishtp_device * dev ) { static unsigned long prev_sync ; struct timespec ts ; uint64_t usec ; prev_sync = jiffies ; get_monotonic_boottime ( & ts ) ; usec = ( timespec_to_ns ( & ts ) ) / NSEC_PER_USEC ; ipc_send_mng_msg ( dev , MNG_SYNC_FW_CLOCK , & usec , sizeof ( uint64_t ) ) ; } 

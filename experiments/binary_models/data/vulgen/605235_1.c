@@ -1,0 +1,1 @@
+void SFdrawList ( int n , int doScroll ) { SFDir * dir ; Window w ; SFclearList ( n , doScroll ) ; if ( SFdirPtr + n < SFdirEnd ) { dir = & ( SFdirs [ SFdirPtr + n ] ) ; w = XtWindow ( selFileLists [ n ] ) ; SFdrawStrings ( w , dir , 0 , SFlistSize - 1 ) ; } } 

@@ -1,0 +1,1 @@
+void setup_node ( __test_metadata * _metadata , FIXTURE_DATA ( file ) * self , const FIXTURE_VARIANT ( file ) * variant ) ( dev_t dev , int rc , dev = makedev ( variant -> major , variant -> minor ) , rc = mknod ( self -> pathname , 0755 | variant -> mode , dev ) , ASSERT_EQ ( , 0 ) { } ) ; 

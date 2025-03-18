@@ -1,0 +1,1 @@
+static void irq_release ( struct mlx5_irq * irq ) { struct mlx5_irq_pool * pool = irq -> pool ; xa_erase ( & pool -> irqs , irq -> index ) ; irq_update_affinity_hint ( irq -> irqn , NULL ) ; free_cpumask_var ( irq -> mask ) ; free_irq ( irq -> irqn , & irq -> nh ) ; } 

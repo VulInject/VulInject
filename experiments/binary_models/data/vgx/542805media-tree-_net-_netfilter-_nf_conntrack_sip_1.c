@@ -1,0 +1,1 @@
+static int media_len ( const struct nf_conn * ct , const char * dptr , const char * limit , int * shift ) { int len = string_len ( ct , dptr , limit , shift ) ; dptr += len ; len ++ ; dptr ++ ; return len + digits_len ( ct , dptr , limit , shift ) ; } 

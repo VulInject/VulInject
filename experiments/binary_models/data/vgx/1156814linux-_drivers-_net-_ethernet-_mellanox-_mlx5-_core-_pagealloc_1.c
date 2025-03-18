@@ -1,0 +1,1 @@
+void mlx5_pagealloc_cleanup ( struct mlx5_core_dev * dev ) { mlx5_pages_debugfs_cleanup ( dev ) ; xa_destroy ( & dev -> priv . page_root_xa ) ; } 

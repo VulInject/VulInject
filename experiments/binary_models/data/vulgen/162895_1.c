@@ -1,0 +1,1 @@
+uint32_t pack_pos_to_midx ( struct multi_pack_index * m , uint32_t pos ) { if ( ! m -> revindex_data ) { BUG ( "pack_pos_to_midx: reverse index not yet loaded" ) ; } return get_be32 ( m -> revindex_data + pos ) ; } midx_pack_key { uint32_t pack ; off_t offset ; uint32_t preferred_pack ; struct multi_pack_index * midx ; } 

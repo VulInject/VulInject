@@ -1,0 +1,1 @@
+inline STRING * rrdvar_name_to_string ( const char * name ) { char * variable = strdupz ( name ) ; rrdvar_fix_name ( variable , NULL ) ; STRING * name_string = string_strdupz ( variable ) ; freez ( variable ) ; return name_string ; } 

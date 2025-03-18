@@ -1,0 +1,1 @@
+static void cubic_record_rtt ( struct cc_var * ccv ) static void cubic_ssthresh_update ( struct cc_var * ccv ) static void cubic_after_idle ( struct cc_var * ccv ) cubic { int64_t K ; hrtime_t sum_rtt_nsecs ; uint32_t max_cwnd ; int prev_max_cwnd ; uint32_t num_cong_events ; hrtime_t min_rtt_nsecs ; hrtime_t mean_rtt_nsecs ; int epoch_ack_count ; hrtime_t t_last_cong ; } 

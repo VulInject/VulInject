@@ -1,0 +1,1 @@
+static bool __is_clk_gate_enabled ( struct ccu_data * ccu , struct bcm_clk_gate * gate ) { u32 bit_mask ; u32 reg_val ; bit_mask = 1 << gate -> status_bit ; reg_val = __ccu_read ( ccu , gate -> offset ) ; return ( reg_val & bit_mask ) != 0 ; } 

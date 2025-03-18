@@ -1,0 +1,1 @@
+rs_image16_dispose ( ) { RS_IMAGE16 * self = ( RS_IMAGE16 * ) obj ; self -> dispose_has_run = TRUE ; G_OBJECT_CLASS ( parent_class ) -> dispose ( obj ) ; } 

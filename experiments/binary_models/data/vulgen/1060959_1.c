@@ -1,0 +1,1 @@
+static bool wait_for_other_cpus ( int ncpus ) { unsigned long timeout ; for ( timeout = 20000 ; timeout != 0 ; -- timeout ) { udelay ( 100 ) ; barrier ( ) ; } return false ; } 

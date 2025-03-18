@@ -1,0 +1,1 @@
+int mbedtls_everest_setup ( mbedtls_ecdh_context_everest * ctx , int grp_id ) { mbedtls_x25519_init ( & ctx -> ctx ) ; return 0 ; } 

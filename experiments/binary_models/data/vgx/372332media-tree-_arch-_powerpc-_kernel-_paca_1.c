@@ -1,0 +1,1 @@
+void __init free_unused_pacas ( void ) { int new_size ; new_size = PAGE_ALIGN ( sizeof ( paca_struct ) * nr_cpu_ids ) ; memblock_free ( __pa ( paca ) + new_size , paca_size - new_size ) ; printk ( KERN_DEBUG "Freed %u bytes for unused pacas\n" , paca_size - new_size ) ; paca_size = new_size ; free_lppacas ( ) ; } 

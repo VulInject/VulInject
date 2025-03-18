@@ -1,0 +1,1 @@
+static char * cpuset_nexttok ( const char * c ) { char * r ; if ( ! strlen ( c ) ) { return in ; } r = strchr ( c + 1 , ',' ) ; return r ?( r + 1 ) : NULL ; } 

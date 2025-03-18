@@ -1,0 +1,1 @@
+gimp_buffer_source_box_init ( ) { gtk_orientable_set_orientation ( GTK_ORIENTABLE ( box ) , GTK_ORIENTATION_HORIZONTAL ) ; gtk_box_set_spacing ( GTK_BOX ( box ) , 2 ) ; } 

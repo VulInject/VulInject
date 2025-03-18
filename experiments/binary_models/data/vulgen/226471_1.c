@@ -1,0 +1,1 @@
+void cxgb3_queue_tid_release ( struct t3cdev * tdev , unsigned int tid ) { struct t3c_data * td = T3C_DATA ( tdev ) ; struct t3c_tid_entry * p = & td -> tid_maps . tid_tab [ tid ] ; spin_lock_bh ( & td -> tid_release_lock ) ; p -> ctx = ( void * ) td -> tid_release_list ; p -> client = NULL ; td -> tid_release_list = p ; spin_unlock_bh ( & td -> tid_release_lock ) ; } 

@@ -1,0 +1,1 @@
+void copy_user_page ( void * vto , void * vfrom , unsigned long vaddr , struct page * pg ) { copy_page ( vto , vfrom ) ; flush_dcache_page ( pg ) ; } 

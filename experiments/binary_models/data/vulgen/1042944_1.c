@@ -1,0 +1,1 @@
+* / PG_FUNCTION_INFO_V1 ( ean13_out ) ; Datum ean13_out ( PG_FUNCTION_ARGS ) { ean13 val = PG_GETARG_EAN13 ( 0 ) ; char * result ; char buf [ MAXEAN13LEN + 1 ] ; result = pstrdup ( buf ) ; PG_RETURN_CSTRING ( result ) ; } 

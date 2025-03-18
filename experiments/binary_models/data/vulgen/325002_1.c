@@ -1,0 +1,1 @@
+uint32_t * regsbak ; void __iomem * regs ; uint32_t len ; spinlock_t reg_lock ; spinlock_t irq_lock ; unsigned int irq ; struct clk * hclk ; struct clk * dclk ; struct clk * aclk ; struct reset_control * dclk_rst ; int win [ ] ; 

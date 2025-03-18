@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "Andrew F. Davis<afd@ti.com>" ) ; MODULE_DESCRIPTION ( "TPS65086 GPIO driver" ) ; MODULE_LICENSE ( "GPL v2" ) ; 

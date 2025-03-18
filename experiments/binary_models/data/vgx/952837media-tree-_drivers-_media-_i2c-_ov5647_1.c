@@ -1,0 +1,1 @@
+static int ov5647_enum_mbus_code ( struct v4l2_subdev * sd , struct v4l2_subdev_pad_config * cfg , struct v4l2_subdev_mbus_code_enum * code ) { code -> code = MEDIA_BUS_FMT_SBGGR8_1X8 ; return 0 ; } 

@@ -1,0 +1,1 @@
+void test_online_fetch__cleanup ( void ) { git_repository_free ( _repo ) ; cl_fixture_cleanup ( "./fetch" ) ; cl_fixture_cleanup ( "./redirected" ) ; git__free ( _remote_proxy_scheme ) ; git__free ( _remote_proxy_host ) ; git__free ( _remote_proxy_user ) ; git__free ( _remote_proxy_pass ) ; git__free ( _remote_redirect_initial ) ; git__free ( _remote_redirect_subsequent ) ; } 

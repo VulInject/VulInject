@@ -1,0 +1,1 @@
+static int nl_open ( void ) { struct sockaddr_nl nladdr ; int sd ; sd = socket ( PF_NETLINK , SOCK_RAW , NETLINK_ROUTE ) ; if ( sd < 0 ) { return - 1 ; } nladdr . nl_family = AF_NETLINK ; if ( bind ( sd , ( sockaddr * ) & nladdr , sizeof ( nladdr ) ) < 0 ) { nl_close ( sd ) ; return - 1 ; } return sd ; } 

@@ -1,1 +1,1 @@
-static void FUN1 ( VAR1 * VAR2 , jsmntype_t VAR3 , int VAR4 , int VAR5 ) { VAR2 -> VAR3 = VAR3 ; VAR2 -> VAR4 = VAR4 ; VAR2 -> VAR5 = VAR5 ; }
+static void jsmn_fill_token ( jsmntok_t * token , jsmntype_t type , int start , int end ) { token -> type = type ; token -> start = start ; token -> end = end ; } 

@@ -1,0 +1,1 @@
+static int acpi_lpss_resume_early ( struct device * dev ) { struct lpss_private_data * pdata = acpi_driver_data ( ACPI_COMPANION ( dev ) ) ; int ret ; ret = acpi_dev_resume_early ( dev ) ; if ( ret ) { return ret ; } acpi_lpss_d3_to_d0_delay ( pdata ) ; return pm_generic_resume_early ( dev ) ; } 

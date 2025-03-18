@@ -1,0 +1,1 @@
+static void lp5521_set_led_current ( struct lp55xx_led * led , u8 led_current ) { led -> led_current = led_current ; } 

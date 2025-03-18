@@ -1,0 +1,1 @@
+int reset_link_local_address ( struct in6_addr * old_addr , vrrp_t * vrrp ) { return change_link_local_address ( vrrp -> ifp , old_addr , & PTR_CAST ( sockaddr_in6 , & vrrp -> saddr ) -> sin6_addr ) ; } 

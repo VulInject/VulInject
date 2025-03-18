@@ -1,0 +1,1 @@
+void test_libbpf_str ( void ) { if ( test__start_subtest ( "bpf_attach_type_str" ) ) { test_libbpf_bpf_attach_type_str ( ) ; } if ( test__start_subtest ( "bpf_link_type_str" ) ) { test_libbpf_bpf_link_type_str ( ) ; } if ( test__start_subtest ( "bpf_map_type_str" ) ) { test_libbpf_bpf_map_type_str ( ) ; } } 

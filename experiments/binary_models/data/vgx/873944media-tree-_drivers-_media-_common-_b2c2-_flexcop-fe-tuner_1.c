@@ -1,0 +1,1 @@
+static int airstar_atsc2_attach ( struct flexcop_device * fc , struct i2c_adapter * i2c ) { fc -> fe = dvb_attach ( nxt200x_attach , & samsung_tbmv_config , i2c ) ; return ! ! dvb_attach ( dvb_pll_attach , fc -> fe , 0x61 , NULL , DVB_PLL_SAMSUNG_TBMV ) ; } 

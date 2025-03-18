@@ -1,0 +1,1 @@
+static void p8_aes_cbc_exit ( struct crypto_tfm * tfm ) { struct p8_aes_cbc_ctx * ctx = crypto_tfm_ctx ( tfm ) ; if ( ctx -> fallback ) { ctx -> fallback = NULL ; } } 

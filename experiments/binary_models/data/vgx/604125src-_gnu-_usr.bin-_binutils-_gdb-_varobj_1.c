@@ -1,0 +1,1 @@
+new_variable ( ) { struct varobj * var ; var = ( varobj * ) xmalloc ( sizeof ( varobj ) ) ; var -> name = NULL ; var -> obj_name = NULL ; var -> index = - 1 ; var -> type = NULL ; var -> value = NULL ; var -> error = 0 ; var -> num_children = - 1 ; var -> parent = NULL ; var -> children = NULL ; var -> format = 0 ; var -> updated = 0 ; return var ; } 

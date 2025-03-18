@@ -1,0 +1,1 @@
+int cru_clksel0 ; uint32_t cru_clksel1 ; uint32_t cru_clksel10 ; uint32_t cru_clksel21 ; uint32_t cru_clkgate [ CRU_CLKGATE_CON_CNT ] ; 

@@ -1,0 +1,1 @@
+static void swap_inactive ( struct vnode * vp , struct cred * cr , caller_context_t * ct ) { } 

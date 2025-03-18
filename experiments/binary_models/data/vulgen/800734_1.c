@@ -1,0 +1,1 @@
+ether1_inw_p ( , , ) { unsigned long flags ; unsigned short ret ; if ( svflgs ) { local_irq_save ( flags ) ; } writeb ( addr >> 12 , REG_PAGE ) ; if ( svflgs ) { local_irq_restore ( flags ) ; } return ret ; } 

@@ -1,0 +1,1 @@
+static struct cgroup_subsys_state * cgrp_css_alloc ( struct cgroup_subsys_state * parent_css ) { struct cgroup_subsys_state * css ; css = kzalloc ( sizeof ( * css ) , GFP_KERNEL ) ; return css ; } 

@@ -1,0 +1,1 @@
+void TeXtype2 ( Char * s ) { Char STR2 [ 256 ] ; if ( ! pmx_preamble_done ) { putLine ( s ) ; return ; } if ( s [ 0 ] == '%' ) { putLine ( s ) ; return ; } if ( first_paragraph ) { sprintf ( STR2 , "\\\\%s\\" , 0 ) ; putLine ( STR2 ) ; } else { sprintf ( STR2 , "\\\\%s\\" , s ) ; putLine ( STR2 ) ; } } 

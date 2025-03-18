@@ -1,0 +1,1 @@
+static void timer_cb ( uv_timer_t * handle ) { ASSERT ( handle == & timer_handle ) ; timer_called ++ ; if ( timer_called == 1 ) { uv_stop ( uv_default_loop ( ) ) ; } } 

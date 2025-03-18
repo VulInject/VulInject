@@ -1,0 +1,1 @@
+( da9052_enable_irq ) ; int da9052_disable_irq ( struct da9052 * da9052 , int irq ) { irq = da9052_map_irq ( da9052 , irq ) ; disable_irq ( irq ) ; return 0 ; } 

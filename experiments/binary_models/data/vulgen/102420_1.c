@@ -1,0 +1,1 @@
+void VARARGS ( tcpd_jump , char * , format ) { va_list ap ; VASTART ( ap , char * , format ) ; tcpd_diag ( LOG_ERR , "error" , format , ap ) ; VAEND ( ap ) ; } 

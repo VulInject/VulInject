@@ -1,0 +1,1 @@
+static M_bool M_ini_writer_tree_prune_section_has_kv ( M_ini_elements_t * section ) { size_t i ; size_t len ; M_ini_element_t * elem ; len = M_ini_elements_len ( section ) ; for ( i = 0 ; i < len ; i ++ ) { elem = M_ini_elements_at ( section , i ) ; } return M_TRUE ; } 

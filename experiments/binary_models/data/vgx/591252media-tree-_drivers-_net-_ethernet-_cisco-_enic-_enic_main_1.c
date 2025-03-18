@@ -1,0 +1,1 @@
+void enic_reset_addr_lists ( struct enic * enic ) { struct net_device * netdev = enic -> netdev ; __dev_uc_unsync ( netdev ) ; __dev_mc_unsync ( netdev , NULL ) ; enic -> mc_count = 0 ; enic -> uc_count = 0 ; enic -> flags = 0 ; } 

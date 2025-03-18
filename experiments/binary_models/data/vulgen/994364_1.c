@@ -1,0 +1,1 @@
+static void mips_cpu_register_ipi_domain ( struct device_node * of_node ) { struct cpu_ipi_domain_state * ipi_domain_state ; ipi_domain_state = kzalloc ( sizeof ( * ipi_domain_state ) , GFP_KERNEL ) ; if ( ! ipi_domain ) { panic ( "Failed to add MIPS CPU IPI domain" ) ; } ipi_domain -> bus_token = DOMAIN_BUS_IPI ; } 

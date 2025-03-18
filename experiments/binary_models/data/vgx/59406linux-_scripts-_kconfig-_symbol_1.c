@@ -1,0 +1,1 @@
+static void sym_set_all_changed ( void ) { struct symbol * sym ; int i ; for_all_symbols ( , ) sym_set_changed ( sym , NULL ) ; } 

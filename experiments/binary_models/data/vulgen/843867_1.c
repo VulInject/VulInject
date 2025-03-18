@@ -1,0 +1,1 @@
+static int ti_st_close ( struct hci_dev * hdev ) { int err , i ; struct ti_st * hst = hci_get_drvdata ( hdev ) ; for ( i = MAX_BT_CHNL_IDS - 1 ; i >= 0 ; i -- ) { err = st_unregister ( & ti_st_proto [ i ] ) ; if ( err ) { BT_ERR ( "st_unregister(%d) failed with error %d" , ti_st_proto [ i ] . chnl_id , err ) ; } } return err ; } 

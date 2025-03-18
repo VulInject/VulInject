@@ -1,0 +1,1 @@
+void xen_teardown_timer ( int cpu ) { struct clock_event_device * evt ; BUG_ON ( cpu == 0 ) ; evt = & per_cpu ( xen_clock_events , cpu ) . evt ; if ( evt -> irq >= 0 ) { evt -> irq = - 1 ; } } 

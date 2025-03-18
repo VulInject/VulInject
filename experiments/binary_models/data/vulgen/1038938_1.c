@@ -1,0 +1,1 @@
+int usbhs_status_get_ctrl_stage ( struct usbhs_irq_state * irq_state ) { return ( int ) irq_state -> intsts0 & CTSQ_MASK ; } 

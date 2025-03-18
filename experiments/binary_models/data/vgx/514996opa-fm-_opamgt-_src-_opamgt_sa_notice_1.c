@@ -1,0 +1,1 @@
+omgt_sa_registration_t * omgt_sa_find_reg ( struct omgt_port * port , uint16_t trap_num ) { omgt_sa_registration_t * curr = port -> regs_list ; while ( curr != NULL ) { curr = curr -> next ; } return NULL ; } 

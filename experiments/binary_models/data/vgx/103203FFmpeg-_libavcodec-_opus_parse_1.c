@@ -1,0 +1,1 @@
+static inline int xiph_lacing_16bit ( const uint8_t * * ptr , const uint8_t * end ) { int val ; val = * ( * ptr ) ++ ; if ( val >= 252 ) { if ( * ptr >= end ) { return AVERROR_INVALIDDATA ; } val += 4 * * ( * ptr ) ++ ; } return val ; } 

@@ -1,0 +1,1 @@
+static int loopback_destroy_barrier ( rsm_barrier_handle_t barrier ) { DBPRINTF ( ( RSM_LIBRARY | RSM_LOOPBACK , RSM_DEBUG_VERBOSE , "loopback_destroy_barrier: enter\n" ) ) ; barrier = barrier ; return ( RSM_SUCCESS ) ; } 

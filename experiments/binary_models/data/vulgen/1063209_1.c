@@ -1,0 +1,1 @@
+void ___mp_lock_init ( struct __mp_lock * lock ) { lock -> mpl_lock [ 0 ] = MPL_UNLOCKED ; lock -> mpl_lock [ 1 ] = MPL_UNLOCKED ; lock -> mpl_lock [ 2 ] = MPL_UNLOCKED ; lock -> mpl_lock [ 3 ] = MPL_UNLOCKED ; lock -> mpl_count = 0 ; } 

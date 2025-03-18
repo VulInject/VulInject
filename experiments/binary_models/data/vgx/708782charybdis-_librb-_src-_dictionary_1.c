@@ -1,0 +1,1 @@
+void rb_dictionary_foreach ( rb_dictionary * dtree , int * foreach_cb ( rb_dictionary_element * delem , void * privdata ) , void * privdata ) { rb_dictionary_element * n , * tn ; RB_DLINK_FOREACH_SAFE ( , , ) { rb_dictionary_element * delem = ( rb_dictionary_element * ) n ; if ( foreach_cb != NULL ) { * foreach_cb ( delem , privdata ) ; } } } 

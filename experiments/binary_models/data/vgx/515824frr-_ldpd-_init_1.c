@@ -1,0 +1,1 @@
+static int gen_cap_dynamic_tlv ( struct ibuf * buf ) { struct capability_tlv cap ; cap . type = htons ( TLV_TYPE_DYNAMIC_CAP ) ; cap . length = htons ( CAP_TLV_DYNAMIC_LEN ) ; cap . reserved = STATE_BIT ; return ( ibuf_add ( buf , & cap , CAP_TLV_DYNAMIC_SIZE ) ) ; } 

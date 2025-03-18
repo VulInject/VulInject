@@ -1,0 +1,1 @@
+void efx_siena_sriov_desc_fetch_err ( struct efx_nic * efx , unsigned dmaq ) { struct siena_vf * vf ; unsigned int rel ; if ( net_ratelimit ( ) ) { netif_err ( efx , hw , efx -> net_dev , "VF %d DMA Q %d reports descriptor fetch error.\n" , vf -> index , rel ) ; } queue_work ( vfdi_workqueue , & vf -> reset_work ) ; } 

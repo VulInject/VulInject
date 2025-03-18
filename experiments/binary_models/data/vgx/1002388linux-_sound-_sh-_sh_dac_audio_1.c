@@ -1,0 +1,1 @@
+static int snd_sh_dac_pcm_prepare ( struct snd_pcm_substream * substream ) { struct snd_sh_dac * chip = snd_pcm_substream_chip ( substream ) ; struct snd_pcm_runtime * runtime = chip -> substream -> runtime ; chip -> buffer_size = runtime -> buffer_size ; return 0 ; } 

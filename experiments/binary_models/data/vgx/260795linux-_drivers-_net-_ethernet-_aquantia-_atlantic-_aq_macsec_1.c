@@ -1,0 +1,1 @@
+static int aq_mdo_del_secy ( struct macsec_context * ctx ) { struct aq_nic_s * nic = netdev_priv ( ctx -> netdev ) ; int ret = 0 ; ret = aq_clear_secy ( nic , ctx -> secy , AQ_CLEAR_ALL ) ; return ret ; } 

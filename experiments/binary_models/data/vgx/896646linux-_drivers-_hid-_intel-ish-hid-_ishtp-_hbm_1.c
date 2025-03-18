@@ -1,0 +1,1 @@
+static void ishtp_hbm_fw_cl_allocate ( struct ishtp_device * dev ) { struct ishtp_fw_client * clients ; int b ; for_each_set_bit ( , , ) dev -> fw_clients_num ++ ; clients = kcalloc ( dev -> fw_clients_num , sizeof ( ishtp_fw_client ) , GFP_KERNEL ) ; if ( ! clients ) { dev -> dev_state = ISHTP_DEV_RESETTING ; ish_hw_reset ( dev ) ; return ; } dev -> fw_clients = clients ; } 

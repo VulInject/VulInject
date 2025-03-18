@@ -1,0 +1,1 @@
+int ufshci_acpi_match ( struct device * , void * , void * ) int ufshci_acpi_attach ( struct device * , struct device * , void * ) const struct cfattach ufshci_acpi_ca = { sizeof ( ufshci_acpi_softc ) ufshci_acpi_match ufshci_acpi_attach } ; 

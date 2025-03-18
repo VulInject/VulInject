@@ -1,0 +1,1 @@
+struct mbs_editor * mbs_new_edit ( char * buf , size_t bufsz , size_t ncells ) { struct mbs_editor * edit = calloc ( 1 , sizeof ( * edit ) ) ; if ( edit ) { edit -> buf = buf ; edit -> max_bytes = bufsz ; edit -> max_cells = ncells ; edit -> cur_cells = mbs_safe_width ( buf ) ; edit -> cur_bytes = strlen ( buf , NULL ) ; } return edit ; } 

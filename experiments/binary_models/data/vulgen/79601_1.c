@@ -1,0 +1,1 @@
+static int team_mode_option_get ( struct team * team , struct team_gsetter_ctx * ctx ) { return 0 ; } 

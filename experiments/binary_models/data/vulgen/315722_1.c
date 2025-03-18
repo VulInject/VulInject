@@ -1,0 +1,1 @@
+void fun_devlink_register ( struct devlink * devlink ) { } 

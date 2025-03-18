@@ -1,0 +1,1 @@
+void uwsgi_alarm_init_mule ( struct uwsgi_alarm_instance * uai ) { uai -> data32 = atoi ( uai -> arg ) ; } 

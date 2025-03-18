@@ -1,0 +1,1 @@
+static void log_destroy ( LOG_REC * log ) { g_return_if_fail ( log != NULL ) ; if ( log -> handle != - 1 ) { log_stop_logging ( log ) ; } logs = g_slist_remove ( logs , log ) ; signal_emit ( "log remove" , 1 , log ) ; while ( log -> items != NULL ) { log_item_destroy ( log , log -> items -> data ) ; } g_free_not_null ( log -> real_fname ) ; g_free ( log ) ; } 

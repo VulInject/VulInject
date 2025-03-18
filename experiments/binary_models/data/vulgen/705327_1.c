@@ -1,0 +1,1 @@
+void akbd_set_leds ( void * v , int on ) { struct akbd_softc * sc = v ; int leds ; if ( sc -> sc_extended ) { leds = 0 ; if ( on & WSKBD_LED_NUM ) { leds |= LED_NUMLOCK ; } if ( on & WSKBD_LED_CAPS ) { leds |= LED_CAPSLOCK ; } if ( on & WSKBD_LED_SCROLL ) { leds |= LED_SCROLL_LOCK ; } setleds ( sc , leds ) ; } } 

@@ -1,0 +1,1 @@
+PHP_METHOD ( , ) { zval * in , * out , * consumed ; bool closing ; if ( zend_parse_parameters ( ZEND_NUM_ARGS ( ) , "rrzb" , & in , & out , & consumed , & closing ) == FAILURE ) { RETURN_THROWS ( ) ; } RETURN_LONG ( PSFS_ERR_FATAL , NULL ) ; } 

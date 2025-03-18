@@ -1,0 +1,1 @@
+LDAP_CALL ldap_free_friendlymap ( FriendlyMap * map ) { struct friendly * pF ; if ( map == NULL || * map == NULL ) { return ; } for ( pF = * map ; pF -> f_unfriendly ; pF ++ ) { NSLDAPI_FREE ( pF -> f_unfriendly , NULL ) ; NSLDAPI_FREE ( pF -> f_friendly ) ; } NSLDAPI_FREE ( * map ) ; * map = NULL ; } 

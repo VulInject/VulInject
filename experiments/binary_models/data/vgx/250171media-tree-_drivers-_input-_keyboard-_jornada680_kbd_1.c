@@ -1,1 +1,1 @@
-static void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR3 = VAR2 -> private ; FUN2 ( VAR3 -> VAR4 ) ; FUN3 ( VAR3 , NULL ) ; memcpy ( VAR3 -> VAR5 , VAR3 -> VAR4 , VAR6 ) ; }
+static void jornadakbd680_poll ( struct input_polled_dev * dev ) { struct jornadakbd * jornadakbd = dev -> private ; jornada_scan_keyb ( jornadakbd -> new_scan ) ; jornada_parse_kbd ( jornadakbd , NULL ) ; memcpy ( jornadakbd -> old_scan , jornadakbd -> new_scan , JORNADA_SCAN_SIZE ) ; } 

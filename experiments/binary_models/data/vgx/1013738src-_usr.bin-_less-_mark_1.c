@@ -1,0 +1,1 @@
+off_t markpos ( int c ) { struct mark * m ; m = getmark ( c , NULL ) ; if ( m == NULL ) { return ( - 1 ) ; } if ( m -> m_ifile != curr_ifile ) { error ( "Mark not in current file" , NULL ) ; return ( - 1 ) ; } return ( m -> m_scrpos . pos ) ; } 

@@ -1,0 +1,1 @@
+void mii_resume ( mii_handle_t mh ) { mutex_enter ( & mh -> m_lock ) ; switch ( mh -> m_tstate ) { case MII_STATE_PROBE : break ; case MII_STATE_RESET : case MII_STATE_START : case MII_STATE_RUN : mh -> m_tstate = MII_STATE_RESET ; break ; case MII_STATE_LOOPBACK : ( void ) _mii_loopback ( mh ) ; break ; } cv_broadcast ( & mh -> m_cv ) ; mutex_exit ( & mh -> m_lock ) ; } 

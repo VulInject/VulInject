@@ -1,0 +1,1 @@
+static int octeon_lmc_edac_remove ( struct platform_device * pdev ) { struct mem_ctl_info * mci = platform_get_drvdata ( pdev ) ; edac_mc_del_mc ( & pdev -> dev ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+void kvm_free_hpt_cma ( struct page * page , unsigned long nr_pages ) { } 

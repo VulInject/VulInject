@@ -1,0 +1,1 @@
+void PM_AddTouchEnt ( int entityNum ) { int i ; if ( pm -> numtouch == MAXTOUCH ) { return ; } for ( i = 0 ; i < pm -> numtouch ; i ++ ) { if ( pm -> touchents [ i ] == entityNum ) { return ; } } pm -> touchents [ pm -> numtouch ] = entityNum ; pm -> numtouch ++ ; } 

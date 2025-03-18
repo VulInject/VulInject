@@ -1,0 +1,1 @@
+n = u_strlen ( pt ) ; if ( ( n + 1 ) >= MEMORY_MASK ) { n = MEMORY_MASK / sizeof ( unichar_t ) - 1 ; } res = ( char * ) xmalloc ( n + 1 ) ; for ( rpt = res ; -- n >= 0 ; * rpt ++ = * pt ++ ) { } * rpt = '\0' ; return ( res ) ; 

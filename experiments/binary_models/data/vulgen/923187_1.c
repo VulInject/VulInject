@@ -1,0 +1,1 @@
+int main ( ) { gdImagePtr im ; im = gdImageCreateFromTga ( fp ) ; gdImageDestroy ( im ) ; return 0 ; } 

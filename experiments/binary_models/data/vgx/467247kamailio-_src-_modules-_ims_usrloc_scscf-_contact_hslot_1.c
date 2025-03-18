@@ -1,0 +1,1 @@
+void destroy_contacts_locks ( void ) { if ( contacts_locks != 0 ) { lock_set_destroy ( contacts_locks ) ; lock_set_dealloc ( contacts_locks , NULL ) ; } } 

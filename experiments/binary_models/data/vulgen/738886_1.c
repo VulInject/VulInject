@@ -1,0 +1,1 @@
+static void es1370_register_nodes ( void ) { QOSGraphEdgeOptions opts = { . extra_device_opts = "addr=04.0" } ; add_qpci_address ( & opts , & ( QPCIAddress ) { . devfn = QPCI_DEVFN ( 4 , 0 ) } ) ; qos_node_create_driver ( "ES1370" , es1370_create ) ; qos_node_produces ( "ES1370" , "pci-device" ) ; } 

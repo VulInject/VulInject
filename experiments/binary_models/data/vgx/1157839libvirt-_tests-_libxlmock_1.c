@@ -1,0 +1,1 @@
+VIR_MOCK_IMPL_RET_ARGS ( , , , , , ) { physinfo -> nr_nodes = 6 ; if ( 0 ) { real_libxl_get_physinfo ( ctx , physinfo ) ; } return 0 ; } 

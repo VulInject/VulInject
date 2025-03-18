@@ -1,0 +1,1 @@
+static void cond_node_destroy ( struct cond_node * node ) { struct cond_expr * cur_expr , * next_expr ; for ( cur_expr = node -> expr ; cur_expr ; cur_expr = next_expr ) { next_expr = cur_expr -> next ; kfree ( cur_expr ) ; } cond_av_list_destroy ( node -> true_list ) ; cond_av_list_destroy ( node -> false_list ) ; } 

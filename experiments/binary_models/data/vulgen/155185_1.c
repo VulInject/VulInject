@@ -1,0 +1,1 @@
+static void __exit chnl_exit_module ( void ) { struct chnl_net * dev = NULL ; struct list_head * list_node ; struct list_head * _tmp ; rtnl_link_unregister ( & ipcaif_link_ops ) ; rtnl_lock ( ) ; list_for_each_safe ( , , ) { dev = list_entry ( list_node , chnl_net , list_field ) ; delete_device ( dev ) ; } rtnl_unlock ( ) ; } 

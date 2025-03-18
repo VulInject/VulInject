@@ -1,0 +1,1 @@
+static int wiidebug_drm_open ( struct inode * i , struct file * f ) { return single_open ( f , wiidebug_drm_show ) ; } 

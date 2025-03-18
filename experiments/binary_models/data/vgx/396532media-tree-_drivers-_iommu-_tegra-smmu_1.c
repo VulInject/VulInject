@@ -1,0 +1,1 @@
+static const struct tegra_smmu_swgroup * tegra_smmu_find_swgroup ( struct tegra_smmu * smmu , unsigned int swgroup ) { const struct tegra_smmu_swgroup * group = NULL ; int i ; for ( i = 0 ; i < smmu -> soc -> num_swgroups ; i ++ ) { if ( smmu -> soc -> swgroups [ i ] . swgroup == swgroup ) { group = & smmu -> soc -> swgroups [ i ] ; break ; } } return group ; } 

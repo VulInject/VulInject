@@ -1,0 +1,1 @@
+bool mailbox_set_subset ( struct Mailbox * m , struct ConfigSubset * sub ) { m -> sub = cs_subset_new ( m -> name , sub , m -> notify ) ; m -> sub -> scope = SET_SCOPE_MAILBOX ; return true ; } static EmailGarbageCollector { struct Email * arr [ 10 ] ; size_t idx ; } , gc = { 0 } 

@@ -1,0 +1,1 @@
+static void free_banners ( void ) { cupsd_banner_t * temp ; for ( temp = ( cupsd_banner_t * ) cupsArrayFirst ( Banners ) ; temp ; temp = ( cupsd_banner_t * ) cupsArrayNext ( Banners ) ) { free ( temp -> name ) ; } cupsArrayDelete ( Banners ) ; Banners = NULL ; } 

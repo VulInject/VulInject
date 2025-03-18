@@ -1,0 +1,1 @@
+int im_point_bilinear ( IMAGE * im , double x , double y , int band , double * out ) { return ( im_point ( im , vips_interpolate_bilinear_static ( ) , x , y , band , out ) ) ; } 

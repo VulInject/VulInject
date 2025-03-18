@@ -1,0 +1,1 @@
+DEFUN ( , , "agentx" , "SNMP AgentX protocol settings\n" "SNMP AgentX settings\n" ) { if ( ! agentx_enabled ) { init_snmp ( "quagga" ) ; events = list_new ( ) ; agentx_events_update ( ) ; return CMD_SUCCESS ; } vty_out ( vty , "SNMP AgentX already enabled%s" , VTY_NEWLINE ) ; return CMD_WARNING ; } 

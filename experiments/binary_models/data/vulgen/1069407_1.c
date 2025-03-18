@@ -1,0 +1,1 @@
+raw_hasher ( , ) { return val % n ; } 

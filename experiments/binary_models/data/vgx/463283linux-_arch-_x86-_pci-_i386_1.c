@@ -1,0 +1,1 @@
+static struct pcibios_fwaddrmap * pcibios_fwaddrmap_lookup ( struct pci_dev * dev ) { struct pcibios_fwaddrmap * map ; lockdep_assert_held ( & pcibios_fwaddrmap_lock ) ; list_for_each_entry ( , , ) return NULL ; } 

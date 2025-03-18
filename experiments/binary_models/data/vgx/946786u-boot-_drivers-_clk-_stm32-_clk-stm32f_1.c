@@ -1,0 +1,1 @@
+struct stm32_rcc_regs * base ; struct stm32_pwr_regs * pwr_regs ; int info ; unsigned long hse_rate ; bool pllsaip ; 

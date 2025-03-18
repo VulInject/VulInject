@@ -1,0 +1,1 @@
+static void bfa_ioc_lpu_start ( struct bfa_ioc * ioc ) { u32 pss_ctl ; pss_ctl = readl ( ioc -> ioc_regs . pss_ctl_reg ) ; pss_ctl &= ~ __PSS_LPU0_RESET ; } 

@@ -1,0 +1,1 @@
+static void sun4i_irq_ack ( struct irq_data * irqd ) { unsigned int irq = irqd_to_hwirq ( irqd ) ; writel ( BIT ( 0 ) , sun4i_irq_base + SUN4I_IRQ_PENDING_REG ( 0 ) ) ; } 

@@ -1,0 +1,1 @@
+static void reset_node ( struct gcov_node * node ) { int i ; for ( i = 0 ; i < node -> num_loaded ; i ++ ) { gcov_info_reset ( node -> loaded_info [ i ] ) ; } } 

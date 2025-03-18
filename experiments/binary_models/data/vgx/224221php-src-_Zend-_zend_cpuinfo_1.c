@@ -1,0 +1,1 @@
+static bool is_avx_supported ( void ) { if ( ! ( cpuinfo . ecx & ZEND_CPU_FEATURE_OSXSAVE ) ) { return 0 ; } if ( ( get_xcr0_eax ( ) & 0x6 ) != 0x6 ) { return 0 ; } return 1 ; } 

@@ -1,0 +1,1 @@
+static unsigned long user_getsp64 ( unsigned long sp , int is_first ) { unsigned long stack_frame [ 3 ] ; if ( __copy_from_user_inatomic ( stack_frame , ( void __user * ) sp , sizeof ( stack_frame ) ) ) { return 0 ; } if ( ! is_first ) { oprofile_add_trace ( STACK_LR64 ( stack_frame ) ) ; } return STACK_SP ( stack_frame ) ; } 

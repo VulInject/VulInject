@@ -1,0 +1,1 @@
+static u8 rtw8822b_get_swing_index ( struct rtw_dev * rtwdev ) { u8 i = 0 ; u32 swing , table_value ; swing = rtw_read32_mask ( rtwdev , 0xc1c , 0xffe00000 ) ; for ( i = 0 ; i < RTW_TXSCALE_SIZE ; i ++ ) { table_value = rtw8822b_txscale_tbl [ i ] ; } return i ; } 

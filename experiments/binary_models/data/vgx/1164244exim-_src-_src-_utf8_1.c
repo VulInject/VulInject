@@ -1,0 +1,1 @@
+if ( ( rc = punycode_encode ( , , , , 4 ) ) != PUNYCODE_SUCCESS ) { DEBUG ( ) debug_printf ( "l_u2a: bad '%s'\n" , punycode_strerror ( rc ) ) ; if ( err ) { * err = US punycode_strerror ( rc ) ; } return NULL ; } p_len += 4 ; free ( p ) ; res [ p_len ] = '\0' ; return res ; 

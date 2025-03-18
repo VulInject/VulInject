@@ -1,0 +1,1 @@
+int p_handle_ignore ( register Parser * pp ) { return true ; } 

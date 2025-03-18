@@ -1,0 +1,1 @@
+static void virtio_input_host_unrealize ( DeviceState * dev ) { VirtIOInputHost * vih = VIRTIO_INPUT_HOST ( dev ) ; if ( vih -> fd > 0 ) { qemu_set_fd_handler ( vih -> fd , NULL , NULL ) ; close ( vih -> fd ) ; } } 

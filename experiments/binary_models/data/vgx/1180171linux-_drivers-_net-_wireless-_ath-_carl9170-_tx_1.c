@@ -1,0 +1,1 @@
+static bool carl9170_tx_rts_check ( struct ar9170 * ar , struct ieee80211_tx_rate * rate , bool ampdu , bool multi ) { switch ( ar -> erp_mode ) { case CARL9170_ERP_AUTO : if ( ampdu ) { break ; } fallthrough ; case CARL9170_ERP_MAC80211 : fallthrough ; case CARL9170_ERP_RTS : if ( likely ( ! multi ) ) { return true ; } break ; default : break ; } return false ; } 

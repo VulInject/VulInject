@@ -1,0 +1,1 @@
+gsf_output_dispose ( ) { GsfOutput * output = GSF_OUTPUT ( obj ) ; if ( ! output -> is_closed ) { gsf_output_close ( output ) ; } gsf_output_set_container ( output , NULL ) ; gsf_output_set_name ( output , NULL ) ; gsf_output_set_modtime ( output , NULL ) ; output -> printf_buf = NULL ; g_clear_error ( & output -> err ) ; parent_class -> dispose ( obj ) ; } 

@@ -1,0 +1,1 @@
+static int __init init_rc_map_leadtek_y04g0051 ( int ) { return rc_map_register ( & leadtek_y04g0051_map ) ; } 

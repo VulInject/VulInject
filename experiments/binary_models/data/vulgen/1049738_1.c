@@ -1,0 +1,1 @@
+size_t HUF_estimateCompressedSize ( const HUF_CElt * CTable , const unsigned * count , unsigned maxSymbolValue ) { HUF_CElt const * ct = CTable + 1 ; size_t nbBits ; int s ; for ( s = 0 ; s <= ( int ) maxSymbolValue ; ++ s ) { nbBits += HUF_getNbBits ( ct [ s ] ) * count [ s ] ; } return nbBits >> 3 ; } 

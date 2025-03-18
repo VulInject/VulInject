@@ -1,0 +1,1 @@
+size_t buff_add ( Buffer * buf , const char * data , size_t len ) { if ( buf -> length + len + 1 > buf -> size ) { buf -> size = buf -> length + len + 256 ; buf -> data = mdvi_realloc ( buf -> data , buf -> size ) ; } memcpy ( buf -> data + buf -> length , data , len ) ; buf -> length += len ; return buf -> length ; } 

@@ -1,0 +1,1 @@
+void addCurrencyTest ( TestNode * * root ) { TESTCASE ( TestEnumList ) ; TESTCASE ( TestEnumListReset ) ; TESTCASE ( TestEnumListCount ) ; TESTCASE ( TestFractionDigitOverride ) ; TESTCASE ( TestPrefixSuffix , NULL ) ; TESTCASE ( TestNumericCode ) ; } 

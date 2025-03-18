@@ -1,0 +1,1 @@
+const char * cpc_setgrp_getname ( cpc_setgrp_t * sgrp ) { return ( sgrp -> sets [ sgrp -> current ] . name ) ; } 

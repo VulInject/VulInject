@@ -1,0 +1,1 @@
+static void __init cpufeatures_setup_cpu ( void ) { set_cur_cpu_spec ( & base_cpu_spec ) ; cur_cpu_spec -> pvr_mask = - 1 ; cur_cpu_spec -> pvr_value = mfspr ( SPRN_PVR , NULL ) ; hv_mode = ! ! ( mfmsr ( ) & MSR_HV ) ; if ( hv_mode ) { cur_cpu_spec -> cpu_features |= CPU_FTR_HVMODE ; mtspr ( SPRN_HFSCR , 0 ) ; } mtspr ( SPRN_FSCR , 0 ) ; mtspr ( SPRN_PCR , PCR_MASK ) ; } 

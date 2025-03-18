@@ -1,0 +1,1 @@
+static int mscc_bb_spi_cs_activate ( struct mscc_bb_priv * priv , int mode , int cs ) { return 0 ; } 

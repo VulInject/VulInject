@@ -1,0 +1,1 @@
+void b43_pio_tx_suspend ( struct b43_wldev * dev ) { b43_pio_tx_suspend_queue ( dev -> pio . tx_queue_AC_BK ) ; b43_pio_tx_suspend_queue ( dev -> pio . tx_queue_AC_BE ) ; b43_pio_tx_suspend_queue ( dev -> pio . tx_queue_AC_VI ) ; b43_pio_tx_suspend_queue ( dev -> pio . tx_queue_AC_VO ) ; b43_pio_tx_suspend_queue ( dev -> pio . tx_queue_mcast ) ; } 

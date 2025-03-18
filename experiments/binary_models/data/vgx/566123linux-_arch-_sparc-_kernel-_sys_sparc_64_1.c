@@ -1,0 +1,1 @@
+SYSCALL_DEFINE1 ( , , ) { long ret ; if ( personality ( current -> personality ) == PER_LINUX32 && personality ( personality ) == PER_LINUX ) { personality |= PER_LINUX32 ; } ret = sys_personality ( personality , NULL ) ; if ( personality ( ret ) == PER_LINUX32 ) { ret &= ~ PER_LINUX32 ; } return ret ; } 

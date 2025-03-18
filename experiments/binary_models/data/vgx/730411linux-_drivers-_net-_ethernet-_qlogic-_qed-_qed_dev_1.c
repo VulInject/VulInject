@@ -1,0 +1,1 @@
+static void qed_init_qm_offload_pq ( struct qed_hwfn * p_hwfn ) { struct qed_qm_info * qm_info = & p_hwfn -> qm_info ; qed_init_qm_set_idx ( p_hwfn , PQ_FLAGS_OFLD , qm_info -> num_pqs ) ; qed_init_qm_mtc_pqs ( p_hwfn ) ; } 

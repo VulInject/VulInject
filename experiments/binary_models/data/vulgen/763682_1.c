@@ -1,0 +1,1 @@
+static void drmach_fini ( void ) { rw_enter ( & drmach_boards_rwlock , RW_WRITER ) ; drmach_array_dispose ( drmach_boards , drmach_board_dispose ) ; drmach_boards = NULL ; rw_exit ( & drmach_boards_rwlock ) ; rw_destroy ( & drmach_boards_rwlock ) ; } 

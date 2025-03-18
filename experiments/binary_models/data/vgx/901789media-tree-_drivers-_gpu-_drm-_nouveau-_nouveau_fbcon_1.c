@@ -1,0 +1,1 @@
+static void nouveau_fbcon_zfill ( struct drm_device * dev , struct nouveau_fbdev * fbcon ) { struct fb_info * info = fbcon -> helper . fbdev ; int rect ; rect . dx = rect . dy = 0 ; rect . width = info -> var . xres_virtual ; rect . height = info -> var . yres_virtual ; rect . color = 0 ; rect . rop = ROP_COPY ; info -> fbops -> fb_fillrect ( info , & rect ) ; } 

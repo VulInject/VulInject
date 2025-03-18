@@ -1,0 +1,1 @@
+static void * * umem_pool_alloc__ ( unsigned int size ) { void * * bufs ; bufs = xmalloc_pagealign ( size * sizeof bufs ) ; return bufs ; } 

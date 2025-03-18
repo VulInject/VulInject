@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "Driver for the Qlogic FAS408 based ISA card" ) ; MODULE_LICENSE ( "GPL" ) ; module_init ( qlogicfas_init , NULL ) ; module_exit ( qlogicfas_exit ) ; 

@@ -1,0 +1,1 @@
+static int mcc_probe ( const AVProbeData * p ) { char buf [ 28 ] ; FFTextReader tr ; ff_text_init_buf ( & tr , p -> buf , p -> buf_size ) ; while ( ff_text_peek_r8 ( & tr ) == '\r' || ff_text_peek_r8 ( & tr ) == '\n' ) { ff_text_r8 ( & tr ) ; } if ( ! memcmp ( buf , "File Format=MacCaption_MCC V" , 28 ) ) { return AVPROBE_SCORE_MAX ; } return 0 ; } 

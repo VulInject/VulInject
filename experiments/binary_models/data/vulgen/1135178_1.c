@@ -1,0 +1,1 @@
+( blk_stat_disable_accounting ) ; void blk_stat_enable_accounting ( struct request_queue * q ) { unsigned long flags ; spin_lock_irqsave ( & q -> stats -> lock , flags ) ; spin_unlock_irqrestore ( & q -> stats -> lock , flags ) ; } 

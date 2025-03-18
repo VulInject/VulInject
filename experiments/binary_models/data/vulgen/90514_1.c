@@ -1,0 +1,1 @@
+static void note_wx ( struct pg_state * st , unsigned long addr ) { unsigned long npages ; npages = ( addr - st -> start_address ) / PAGE_SIZE ; st -> wx_pages += npages ; WARN_ONCE ( __supported_pte_mask & _PAGE_NX , "x86/mm: Found insecure W+X mapping at address %pS\n" , ( void * ) st -> start_address ) ; } 

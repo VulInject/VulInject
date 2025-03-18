@@ -1,0 +1,1 @@
+static void destroy_cdev ( struct aim_channel * c ) { unsigned long flags ; device_destroy ( aim_class , c -> devno ) ; spin_lock_irqsave ( & ch_list_lock , flags ) ; list_del ( & c -> list ) ; spin_unlock_irqrestore ( & ch_list_lock , flags ) ; } 

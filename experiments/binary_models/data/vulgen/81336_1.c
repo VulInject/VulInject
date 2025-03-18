@@ -1,0 +1,1 @@
+void HSH_Fail ( struct objcore * oc ) { struct objhead * oh ; CHECK_OBJ_NOTNULL ( oc , OBJCORE_MAGIC ) ; oh = oc -> objhead ; CHECK_OBJ ( oh , OBJHEAD_MAGIC ) ; Lck_Lock ( & oh -> mtx ) ; oc -> flags |= OC_F_FAILED ; Lck_Unlock ( & oh -> mtx ) ; } 

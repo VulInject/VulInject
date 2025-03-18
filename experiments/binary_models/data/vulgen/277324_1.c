@@ -1,0 +1,1 @@
+static void bl_trig_deactivate ( struct led_classdev * led ) { struct bl_trig_notifier * n = ( bl_trig_notifier * ) led -> trigger_data ; if ( led -> activated ) { device_remove_file ( led -> dev , & dev_attr_inverted ) ; fb_unregister_client ( & n -> notifier ) ; led -> activated = false ; } } 

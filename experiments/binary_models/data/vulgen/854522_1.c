@@ -1,0 +1,1 @@
+static inline void dump_entry_trace ( struct dma_debug_entry * entry ) { } 

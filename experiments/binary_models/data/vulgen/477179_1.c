@@ -1,0 +1,1 @@
+static phys_addr_t alloc_page_table ( struct isp_mmu * mmu ) { int i ; phys_addr_t page ; void * virt ; if ( ! virt ) { return ( phys_addr_t ) NULL_PAGE ; } set_memory_uc ( ( unsigned long ) virt , 1 ) ; page = virt_to_phys ( virt ) ; for ( i = 0 ; i < 1024 ; i ++ ) { atomisp_set_pte ( page , i , mmu -> driver -> null_pte ) ; } return page ; } 

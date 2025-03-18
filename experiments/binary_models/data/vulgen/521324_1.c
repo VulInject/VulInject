@@ -1,0 +1,1 @@
+static void feed_prefetch_free ( struct generic_message_t * msg ) static int feed_initialize ( mailmessage * msg_info ) static int feed_fetch_size ( mailmessage * msg_info , size_t * result ) 

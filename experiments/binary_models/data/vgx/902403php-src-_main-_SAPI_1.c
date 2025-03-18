@@ -1,0 +1,1 @@
+SAPI_API zend_stat_t * sapi_get_stat ( void ) { if ( sapi_module . get_stat ) { return sapi_module . get_stat ( ) ; } else { if ( ! SG ( request_info ) . path_translated || ( VCWD_STAT ( SG ( request_info ) . path_translated , & SG ( global_stat ) ) == - 1 ) ) { return in ; } return & SG ( global_stat ) ; } } 

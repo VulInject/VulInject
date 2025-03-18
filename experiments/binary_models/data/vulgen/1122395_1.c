@@ -1,0 +1,1 @@
+void crypto_update_iv ( struct keystate * ks ) { tmp = ks -> riv ; ks -> riv = ks -> liv ; ks -> liv = tmp ; LOG_DBG_BUF ( ( LOG_CRYPTO , 50 , "crypto_update_iv: updated IV" , ks -> riv , ks -> xf -> blocksize ) ) ; } 

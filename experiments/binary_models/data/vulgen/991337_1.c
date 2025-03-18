@@ -1,0 +1,1 @@
+static void v_midi_close ( int dev ) { vmidi_devc * devc = midi_devs [ dev ] -> devc ; unsigned long flags ; spin_lock_irqsave ( & devc -> lock , flags ) ; devc -> intr_active = 0 ; devc -> input_opened = 0 ; devc -> opened = 0 ; spin_unlock_irqrestore ( & devc -> lock , flags ) ; } 

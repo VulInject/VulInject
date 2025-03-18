@@ -1,0 +1,1 @@
+int peek_buf_has_control0_command ( buf_t * buf ) { if ( buf_datalen ( buf ) >= 4 ) { char header [ 4 ] ; uint16_t cmd ; buf_peek ( buf , header , sizeof ( header ) ) ; if ( cmd <= 0x14 ) { return 1 ; } } return 0 ; } 

@@ -1,0 +1,1 @@
+static int process_answer ( struct ub_ctx * ctx , uint8_t * msg , uint32_t len ) { int err ; ub_callback_type cb ; void * cbarg ; struct ub_result * res ; int r ; if ( r == 2 ) { * cb ( cbarg , err , res ) ; } return r ; } 

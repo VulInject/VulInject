@@ -1,0 +1,1 @@
+IM_OUTPUT_IMAGE ( "out" ) , IM_INPUT_INT ( "bandno" ) , IM_INPUT_INT ( "xr" ) , IM_INPUT_INT ( "yr" ) , IM_INPUT_INT ( "xs" ) , IM_INPUT_INT ( "ys" ) , IM_INPUT_INT ( "halfcorrelation" ) , IM_INPUT_INT ( "halfarea" ) , IM_INPUT_INT ( ) , IM_INPUT_INT ( "mwidth" ) ; 

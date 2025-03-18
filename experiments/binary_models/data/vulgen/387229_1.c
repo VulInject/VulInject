@@ -1,0 +1,1 @@
+selection_start ( ) { selection_stop ( selection ) ; if ( selection -> paused == 0 && gimp_display_get_image ( selection -> shell -> display ) && selection -> show_selection ) { selection_timeout ( selection ) ; if ( selection -> segs_in && selection -> shell_visible ) { GimpDisplayConfig * config = selection -> shell -> display -> config ; } } } 

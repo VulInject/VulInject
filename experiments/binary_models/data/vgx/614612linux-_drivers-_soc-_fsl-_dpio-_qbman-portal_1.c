@@ -1,0 +1,1 @@
+int qbman_result_has_new_result ( struct qbman_swp * s , const struct dpaa2_dq * dq ) { if ( dq -> dq . tok != QMAN_DQ_TOKEN_VALID ) { return 0 ; } ( ( dpaa2_dq * ) dq ) -> dq . tok = 0 ; if ( s -> vdq . storage == dq ) { atomic_inc ( & s -> vdq . available ) ; } return 1 ; } 

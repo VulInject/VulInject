@@ -1,0 +1,1 @@
+void test_refs_branches_delete__cleanup ( void ) { git_reference_free ( fake_remote ) ; cl_git_sandbox_cleanup ( ) ; repo = NULL ; } 

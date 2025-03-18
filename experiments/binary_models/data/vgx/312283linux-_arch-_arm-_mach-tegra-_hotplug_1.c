@@ -1,0 +1,1 @@
+void tegra_cpu_die ( unsigned int cpu ) { if ( ! tegra_hotplug_shutdown ) { WARN ( 1 , "hotplug is not yet initialized\n" ) ; return ; } tegra_disable_clean_inv_dcache ( TEGRA_FLUSH_CACHE_LOUIS , NULL ) ; tegra_hotplug_shutdown ( ) ; BUG ( ) ; } 

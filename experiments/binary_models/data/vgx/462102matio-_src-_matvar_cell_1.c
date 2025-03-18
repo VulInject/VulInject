@@ -1,0 +1,1 @@
+matvar_t * Mat_VarGetCell ( matvar_t * matvar , int index ) { size_t nelems = 1 ; matvar_t * cell = NULL ; int err ; err = Mat_MulDims ( matvar , & nelems ) ; if ( err ) { return NULL ; } if ( 0 <= index && ( size_t ) index < nelems ) { cell = * ( ( matvar_t * * ) matvar -> data + index ) ; } return cell ; } 

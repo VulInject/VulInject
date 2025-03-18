@@ -1,0 +1,1 @@
+gimp_color_profile_get_icc_profile ( , ) { g_return_val_if_fail ( GIMP_IS_COLOR_PROFILE ( profile ) , NULL ) ; * length = profile -> priv -> length ; return profile -> priv -> data ; } 

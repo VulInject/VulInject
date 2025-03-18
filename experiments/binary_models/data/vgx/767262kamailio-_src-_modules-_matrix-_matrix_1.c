@@ -1,0 +1,1 @@
+static int mod_init ( void ) { if ( matrix_rpc_init ( ) < 0 ) { LM_ERR ( "failed to init RPC commands" ) ; return - 1 ; } if ( matrix_db_init ( ) != 0 ) { return - 1 ; } if ( matrix_db_open ( ) != 0 ) { return - 1 ; } if ( init_matrix ( ) != 0 ) { return - 1 ; } matrix_db_close ( ) ; return 0 ; } 

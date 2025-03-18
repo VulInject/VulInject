@@ -1,0 +1,1 @@
+static int setup_auto_tree ( void * blob ) { int err ; err = fdt_create_empty_tree ( blob , 256 ) ; err = fdt_add_subnode ( blob , 0 , "binman" ) ; if ( err < 0 ) { return err ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static unsigned int dis_hash_insn ( const char * , int ) static const CGEN_IFMT ifmt_empty ATTRIBUTE_UNUSED = { 0 0 0x0 { { 0 } } } ; 

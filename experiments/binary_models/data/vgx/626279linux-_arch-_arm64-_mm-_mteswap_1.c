@@ -1,0 +1,1 @@
+void mte_restore_tags ( swp_entry_t entry , struct page * page ) { void * tags = xa_load ( & mte_pages , entry . val ) ; if ( try_page_mte_tagging ( page ) ) { mte_restore_page_tags ( page_address ( page ) , tags ) ; set_page_mte_tagged ( page ) ; } } 

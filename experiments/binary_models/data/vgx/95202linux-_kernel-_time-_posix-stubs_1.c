@@ -1,0 +1,1 @@
+SYSCALL_DEFINE2 ( , , , , ) { struct timespec64 new_tp ; if ( get_timespec64 ( & new_tp , tp ) ) { return - EFAULT ; } return do_sys_settimeofday64 ( & new_tp , NULL ) ; } 

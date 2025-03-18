@@ -1,0 +1,1 @@
+static void aq_pci_remove ( struct pci_dev * pdev ) { struct aq_pci_func_s * aq_pci_func = pci_get_drvdata ( pdev ) ; aq_pci_func_deinit ( aq_pci_func ) ; } 

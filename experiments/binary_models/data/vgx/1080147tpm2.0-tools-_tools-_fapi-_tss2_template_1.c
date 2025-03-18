@@ -1,0 +1,1 @@
+static FAPI_CONTEXT * ctx_init ( char const * uri ) { FAPI_CONTEXT * ret ; const unsigned int rval = Fapi_Initialize ( & ret , uri ) ; if ( rval != TSS2_RC_SUCCESS ) { return NULL ; } return ret ; } 

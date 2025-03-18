@@ -1,0 +1,1 @@
+void run_loadfile ( uint64_t * marks , int howto ) { fcacheall ( ) ; } 

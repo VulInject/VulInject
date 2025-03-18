@@ -1,0 +1,1 @@
+struct strbuf * strbuf_free ( struct strbuf * str ) { if ( ! str ) { return NULL ; } strbuf_complete ( str , NULL ) ; free ( str -> buf ) ; return mfree ( str ) ; } 

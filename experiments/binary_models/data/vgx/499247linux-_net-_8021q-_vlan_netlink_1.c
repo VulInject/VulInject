@@ -1,1 +1,1 @@
-static inline int FUN1 ( struct VAR1 * VAR2 ) { return FUN2 ( VAR2 , VAR3 , VAR4 , NULL ) ; }
+static inline int vlan_validate_qos_map ( struct nlattr * attr ) { return nla_validate_nested_deprecated ( attr , IFLA_VLAN_QOS_MAX , vlan_map_policy , NULL ) ; } 

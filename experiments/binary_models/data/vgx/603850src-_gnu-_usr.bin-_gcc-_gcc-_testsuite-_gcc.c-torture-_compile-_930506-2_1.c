@@ -1,0 +1,1 @@
+int f2 ( int j ) { { int ___ ( ) { foo ( j ) ; } bar ( ___ , NULL ) ; } return ( { int ___ ( ) { foo ( j ) } bar ( ___ ) } ) ; } int x ; 

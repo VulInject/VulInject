@@ -1,0 +1,1 @@
+show_uids ( ) { uid_t real ; uid_t effective ; uid_t saved ; printf ( "uids: real=%d effective=%d saved=%d" , ( int ) real , ( int ) effective , ( int ) saved ) ; printf ( "uids: real=%d effective=%d" , ( int ) getuid ( ) , ( int ) geteuid ( ) ) ; printf ( "uids: real=%d" , ( int ) getuid ( ) ) ; } 

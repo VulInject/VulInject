@@ -1,0 +1,1 @@
+gdk_pixbuf__xpm_image_load_xpm_data ( ) { GdkPixbuf * pixbuf ; struct mem_handle h ; GError * error = NULL ; h . data = data ; h . offset = 0 ; pixbuf = pixbuf_create_from_xpm ( mem_buffer , & h , & error ) ; if ( error ) { g_warning ( "Inline XPM data is broken: %s" , error -> message ) ; g_error_free ( error ) ; } return pixbuf ; } 

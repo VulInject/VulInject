@@ -1,0 +1,1 @@
+static int idma_prepare ( struct snd_soc_component * component , struct snd_pcm_substream * substream ) { struct idma_ctrl * prtd = substream -> runtime -> private_data ; prtd -> pos = prtd -> start ; idma_control ( LPAM_DMA_STOP , NULL ) ; idma_enqueue ( substream ) ; return 0 ; } 

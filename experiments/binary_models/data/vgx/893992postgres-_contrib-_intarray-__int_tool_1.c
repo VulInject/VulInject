@@ -1,0 +1,1 @@
+bool inner_int_overlap ( ArrayType * a , ArrayType * b ) { int na , nb ; int i , j ; int * da , * db ; na = ARRNELEMS ( a ) ; nb = ARRNELEMS ( b ) ; da = ARRPTR ( a , NULL ) ; db = ARRPTR ( b ) ; i = j = 0 ; while ( i < na && j < nb ) { if ( da [ i ] < db [ j ] ) { i ++ ; } if ( da [ i ] == db [ j ] ) { return true ; } else { j ++ ; } } return false ; } 

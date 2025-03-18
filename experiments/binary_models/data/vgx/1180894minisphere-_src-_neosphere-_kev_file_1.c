@@ -1,0 +1,1 @@
+const char * kev_read_string ( kev_file_t * it , const char * key , const char * def_value ) { const char * value ; console_log ( 2 , "reading key '%s' from kevfile #%u" , key , it -> id ) ; if ( ! ( value = al_get_config_value ( it -> conf , NULL , key ) ) ) { value = def_value ; } return value ; } 

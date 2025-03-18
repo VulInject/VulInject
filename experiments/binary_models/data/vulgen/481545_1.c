@@ -1,0 +1,1 @@
+static struct jsonrpc_msg * ovsdb_jsonrpc_create_notify ( const struct ovsdb_jsonrpc_monitor * m , struct json * params ) ovsdb_jsonrpc_server { struct ovsdb_server up ; unsigned int n_sessions ; bool read_only ; int remotes ; } 

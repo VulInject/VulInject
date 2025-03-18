@@ -1,0 +1,1 @@
+static av_cold void uninit ( AVFilterContext * ctx ) { FreezeFramesContext * s = ctx -> priv ; } 

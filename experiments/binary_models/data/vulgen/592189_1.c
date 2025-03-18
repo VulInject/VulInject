@@ -1,0 +1,1 @@
+int fat_flush_inodes ( struct super_block * sb , struct inode * i1 , struct inode * i2 ) { int ret ; if ( ! MSDOS_SB ( sb ) -> options . flush ) { return 0 ; } if ( i1 ) { ret = writeback_inode ( i1 ) ; } if ( ! ret && i2 ) { ret = writeback_inode ( i2 ) ; } if ( ! ret ) { ret = sync_blockdev_nowait ( sb -> s_bdev ) ; } return ret ; } 

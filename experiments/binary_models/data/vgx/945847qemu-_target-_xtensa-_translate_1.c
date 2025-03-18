@@ -1,0 +1,1 @@
+static void translate_dcache ( DisasContext * dc , const OpcodeArg arg [ ] , const uint32_t par [ ] ) { TCGv_i32 addr = tcg_temp_new_i32 ( ) ; TCGv_i32 res = tcg_temp_new_i32 ( ) ; tcg_gen_addi_i32 ( addr , arg [ 0 ] . in , arg [ 1 ] . imm ) ; tcg_gen_qemu_ld8u ( res , addr , dc -> cring ) ; tcg_temp_free ( addr ) ; } 

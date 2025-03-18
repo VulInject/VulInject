@@ -1,0 +1,1 @@
+static struct media_entity * stack_pop ( struct media_graph * graph ) { struct media_entity * entity ; entity = graph -> stack [ graph -> top ] . entity ; return entity ; } 

@@ -1,0 +1,1 @@
+static void tmc_etb_disable_hw ( struct tmc_drvdata * drvdata ) { __tmc_etb_disable_hw ( drvdata ) ; coresight_disclaim_device ( drvdata -> csdev , NULL ) ; } 

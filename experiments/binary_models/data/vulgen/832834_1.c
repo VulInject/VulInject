@@ -1,0 +1,1 @@
+RAMList ram_list = { . blocks = QLIST_HEAD_INITIALIZER ( ) } ; static MemoryRegion * system_memory ; static MemoryRegion * system_io ; AddressSpace address_space_io ; AddressSpace address_space_memory ; struct PhysPageEntry PhysPageEntry PhysPageEntry { uint32_t skip 6 ; uint32_t ptr 26 ; } 

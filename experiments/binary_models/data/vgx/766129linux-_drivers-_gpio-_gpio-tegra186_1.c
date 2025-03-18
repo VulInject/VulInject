@@ -1,0 +1,1 @@
+static void tegra186_irq_ack ( struct irq_data * data ) { struct gpio_chip * gc = irq_data_get_irq_chip_data ( data ) ; struct tegra_gpio * gpio = to_tegra_gpio ( gc ) ; void __iomem * base ; base = tegra186_gpio_get_base ( gpio , data -> hwirq ) ; writel ( 1 , base + TEGRA186_GPIO_INTERRUPT_CLEAR ) ; } 

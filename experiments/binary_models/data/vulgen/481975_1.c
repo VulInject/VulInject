@@ -1,0 +1,1 @@
+static char * OVS_WARN_UNUSED_RESULT build_short_options ( const struct option * long_options ) { char * tmp , * short_options ; tmp = ovs_cmdl_long_options_to_short_options ( long_options ) ; short_options = xasprintf ( "+:%s" , tmp ) ; return short_options ; } 

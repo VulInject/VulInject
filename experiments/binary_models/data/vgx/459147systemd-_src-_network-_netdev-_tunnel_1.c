@@ -1,0 +1,1 @@
+static int netdev_tunnel_is_ready_to_create ( NetDev * netdev , Link * link ) { Tunnel * t ; assert ( netdev ) ; t = TUNNEL ( netdev ) ; assert ( t ) ; return tunnel_get_local_address ( t , link , NULL ) >= 0 ; } 

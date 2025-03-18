@@ -1,0 +1,1 @@
+static int nlmon_validate ( struct nlattr * tb [ ] , struct nlattr * data [ ] ) { return 0 ; } 

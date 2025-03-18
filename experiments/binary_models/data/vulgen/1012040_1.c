@@ -1,0 +1,1 @@
+void proto_register_sndcp_xid ( int ) static const value_string sndcp_xid_dcomp_algo_str [ ] { { 0x0 "V.42 bis" } { 0x1 "V.44" } { 0 NULL } } ; ; 

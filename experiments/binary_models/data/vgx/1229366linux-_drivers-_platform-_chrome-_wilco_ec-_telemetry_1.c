@@ -1,0 +1,1 @@
+static DEFINE_IDA ( telem_ida ) ; telem_args_get_log { u8 log_type ; int log_index ; } , __packed 

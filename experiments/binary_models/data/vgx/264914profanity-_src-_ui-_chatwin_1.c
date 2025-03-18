@@ -1,0 +1,1 @@
+void chatwin_receipt_received ( ProfChatWin * chatwin , const char * const id ) { ProfWin * win = ( ProfWin * ) chatwin ; win_mark_received ( win , id ) ; } 

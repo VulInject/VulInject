@@ -1,0 +1,1 @@
+int qdio_enable_async_operation ( struct qdio_output_q * outq ) { outq -> aobs = kzalloc ( sizeof ( qaob * ) * QDIO_MAX_BUFFERS_PER_Q , GFP_ATOMIC ) ; if ( ! outq -> aobs ) { return - ENOMEM ; } outq -> use_cq = 1 ; return 0 ; } 

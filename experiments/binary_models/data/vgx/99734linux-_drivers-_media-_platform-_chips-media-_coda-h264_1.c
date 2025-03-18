@@ -1,0 +1,1 @@
+int coda_sps_parse_profile ( struct coda_ctx * ctx , struct vb2_buffer * vb ) { const u8 * buf = vb2_plane_vaddr ( vb , 0 ) ; const u8 * end = buf + vb2_get_plane_payload ( vb , 0 ) ; { buf = coda_find_nal_header ( buf , end ) ; } ( * buf ++ & 0x1f ) != 0x7 ; ctx -> params . h264_profile_idc = buf [ 0 ] ; ctx -> params . h264_level_idc = buf [ 2 ] ; return 0 ; } 

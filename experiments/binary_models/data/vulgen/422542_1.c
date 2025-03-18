@@ -1,0 +1,1 @@
+void process_reset_environment ( process_t * process , const smartlist_t * env ) { tor_assert ( process ) ; tor_assert ( env ) ; SMARTLIST_FOREACH ( process -> environment , char * , x , tor_free ( x ) ) ; process -> environment = smartlist_new ( ) ; SMARTLIST_FOREACH ( env , char * , x , smartlist_add ( process -> environment , tor_strdup ( x ) ) ) ; } 

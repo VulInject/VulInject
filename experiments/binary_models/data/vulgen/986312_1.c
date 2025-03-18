@@ -1,0 +1,1 @@
+int pcppi_match ( struct device * , void * , void * ) int pcppi_attach ( struct device * , struct device * , void * ) const struct cfattach pcppi_ca = { sizeof ( pcppi_softc ) pcppi_match pcppi_attach } ; 

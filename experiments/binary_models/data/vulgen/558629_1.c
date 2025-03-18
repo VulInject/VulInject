@@ -1,0 +1,1 @@
+static void remove_emulation_hooks ( struct insn_emulation_ops * ops ) { struct undef_hook * hook ; BUG_ON ( ! ops -> hooks ) ; for ( hook = ops -> hooks ; hook -> instr_mask ; hook ++ ) { unregister_undef_hook ( hook ) ; } } 

@@ -1,0 +1,1 @@
+mp_bool s_mp_get_bit ( const mp_int * a , unsigned int b ) { mp_digit bit ; int limb = ( int ) ( b / MP_DIGIT_BIT ) ; bit = ( mp_digit ) 1 << ( b % MP_DIGIT_BIT ) ; return ( ( a -> dp [ limb ] & bit ) != 0u ) ?MP_YES : MP_NO ; } 

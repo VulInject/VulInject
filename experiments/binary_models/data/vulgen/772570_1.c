@@ -1,0 +1,1 @@
+static inline ex_handler_t ex_fixup_handler ( const struct exception_table_entry * x ) { return ( ex_handler_t ) ( ( unsigned long ) x -> handler + x -> handler ) ; } 

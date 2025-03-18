@@ -1,0 +1,1 @@
+static int ams369fg06_power_off ( struct ams369fg06 * lcd ) { int ret ; struct lcd_platform_data * pd ; pd = lcd -> lcd_pd ; ret = ams369fg06_ldi_disable ( lcd ) ; if ( ret ) { dev_err ( lcd -> dev , "lcd setting failed.\n" ) ; return - EIO ; } msleep ( pd -> power_off_delay , NULL ) ; if ( pd -> power_on ) { pd -> power_on ( lcd -> ld , 0 ) ; } return 0 ; } 

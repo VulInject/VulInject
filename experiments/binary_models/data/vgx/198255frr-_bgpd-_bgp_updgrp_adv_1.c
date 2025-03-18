@@ -1,0 +1,1 @@
+static int bgp_adj_out_compare ( const struct bgp_adj_out * o1 , const struct bgp_adj_out * o2 ) { if ( o1 -> subgroup > o2 -> subgroup ) { return 1 ; } if ( o1 -> addpath_tx_id < o2 -> addpath_tx_id ) { return - 1 ; } if ( o1 -> addpath_tx_id > o2 -> addpath_tx_id ) { return 1 ; } return 0 ; } 

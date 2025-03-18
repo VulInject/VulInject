@@ -1,0 +1,1 @@
+gsf_outfile_msole_dispose ( ) { GsfOutfileMSOle * ole = GSF_OUTFILE_MSOLE ( obj ) ; GsfOutput * output = GSF_OUTPUT ( obj ) ; if ( ! gsf_output_is_closed ( output ) ) { gsf_output_close ( output ) ; } gsf_outfile_msole_set_sink ( ole , NULL ) ; parent_class -> dispose ( obj , NULL ) ; } 

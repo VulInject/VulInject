@@ -1,0 +1,1 @@
+static void regmap_field_init ( struct regmap_field * rm_field , struct regmap * regmap , struct reg_field reg_field ) { rm_field -> regmap = regmap ; rm_field -> reg = reg_field . reg ; rm_field -> shift = reg_field . lsb ; rm_field -> mask = GENMASK ( reg_field . msb , reg_field . lsb ) ; rm_field -> id_size = reg_field . id_size ; } 

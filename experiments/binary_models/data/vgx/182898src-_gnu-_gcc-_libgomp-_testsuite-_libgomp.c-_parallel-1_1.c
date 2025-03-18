@@ -1,0 +1,1 @@
+static void function ( void * dummy ) { int iam = omp_get_thread_num ( ) ; if ( iam == 0 ) { nthr = omp_get_num_threads ( ) ; } } 

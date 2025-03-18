@@ -1,0 +1,1 @@
+static void rinfo_free ( struct runinfo * entry ) { struct runinfo * * rpp ; struct runinfo * rp ; ( void ) fprintf ( stderr , "freeing job %s\n" , entry -> jobname ) ; for ( rpp = & rthead ; ( rp = * rpp ) != NULL ; rpp = & rp -> next ) { if ( rp == entry ) { * rpp = rp -> next ; free ( rp -> jobname ) ; free ( rp ) ; break ; } } } 

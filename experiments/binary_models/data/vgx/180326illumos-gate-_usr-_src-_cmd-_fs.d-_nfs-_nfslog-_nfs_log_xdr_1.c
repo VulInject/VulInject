@@ -1,0 +1,1 @@
+static bool_t xdr_set_size3 ( XDR * xdrs , set_size3 * objp ) { switch ( objp -> set_it ) { case TRUE : if ( ! xdr_size3 ( xdrs , & objp -> size ) ) { return ( FALSE ) ; } break ; } return ( TRUE ) ; } 

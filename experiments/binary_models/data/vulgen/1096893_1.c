@@ -1,0 +1,1 @@
+char _license [ ] SEC ( "license" ) "GPL" ; ; static __always_inline int local_strncmp ( const char * s1 , unsigned int sz , const char * s2 ) { int ret = 0 ; unsigned int i ; for ( i = 0 ; i < sz ; i ++ ) { if ( ret || ! s1 [ i ] ) { break ; } } return ret ; } 

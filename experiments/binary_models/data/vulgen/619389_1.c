@@ -1,0 +1,1 @@
+static int afs_proc_cell_volumes_open ( struct inode * inode , struct file * file ) { struct afs_cell * cell ; struct seq_file * m ; int ret ; cell = PDE_DATA ( inode ) ; ret = seq_open ( file , & afs_proc_cell_volumes_ops ) ; if ( ret < 0 ) { return ret ; } m = file -> private_data ; m -> private = cell ; return 0 ; } 

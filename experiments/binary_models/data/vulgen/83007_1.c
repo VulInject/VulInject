@@ -1,0 +1,1 @@
+void sftp_disconnect_conn ( uint32_t reason , const char * explain , const char * file , int lineno , const char * func ) { sftp_disconnect_send ( reason , explain , file , lineno , func ) ; pr_session_end ( PR_SESS_END_FL_NOEXIT ) ; abort ( ) ; } 

@@ -1,0 +1,1 @@
+static TEE_Result init_timer_itr ( void ) { itr_add ( & timer_itr ) ; itr_enable ( IT_SEC_TIMER ) ; generic_timer_start ( TIMER_PERIOD_MS , NULL ) ; return TEE_SUCCESS ; } 

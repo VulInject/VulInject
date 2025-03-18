@@ -1,0 +1,1 @@
+void filt_wseventdetach ( struct knote * kn ) { struct wseventvar * ev = kn -> kn_hook ; struct klist * klist = & ev -> sel . si_note ; int s ; s = splwsevent ( ) ; klist_remove_locked ( klist , kn ) ; splx ( s , NULL ) ; } 

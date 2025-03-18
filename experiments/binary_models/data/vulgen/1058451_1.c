@@ -1,0 +1,1 @@
+void Error ( char * fmt , ... ) { va_list args ; fprintf ( stderr , "%s: ERROR: " , pname ) ; va_start ( args , fmt ) ; vfprintf ( stderr , fmt , args ) ; va_end ( args ) ; exit ( 1 ) ; } 

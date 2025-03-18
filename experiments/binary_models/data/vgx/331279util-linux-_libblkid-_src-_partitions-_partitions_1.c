@@ -1,0 +1,1 @@
+static void unref_parttable ( blkid_parttable tab ) { if ( ! tab ) { return ; } tab -> nparts -- ; if ( tab -> nparts <= 0 ) { list_del ( & tab -> t_tabs ) ; } } 

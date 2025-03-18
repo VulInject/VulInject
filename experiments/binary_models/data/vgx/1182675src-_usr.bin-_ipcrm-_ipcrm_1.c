@@ -1,0 +1,1 @@
+int shmrm ( key_t key , int id ) { if ( key ) { id = shmget ( key , 0 , 0 ) ; } return ( shmctl ( id , IPC_RMID , NULL ) ) ; } 

@@ -1,0 +1,1 @@
+int i915_gem_phys_mock_selftests ( void ) { static const struct i915_subtest tests [ ] { SUBTEST ( mock_phys_object ) } ; ; struct drm_i915_private * i915 ; int err ; i915 = mock_gem_device ( ) ; if ( ! i915 ) { return - ENOMEM ; } err = i915_subtests ( tests , i915 ) ; return err ; } 

@@ -1,0 +1,1 @@
+uint32 ResMgrFreeCount ( IN const RES_MGR * const pResMgr ) { ASSERT ( pResMgr , NULL ) ; return FreePoolFreeCount ( & pResMgr -> m_FreePool ) ; } 

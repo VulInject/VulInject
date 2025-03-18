@@ -1,0 +1,1 @@
+kperm = key -> perm ; use_these_perms kperm = kperm & perm & KEY_NEED_ALL ; if ( kperm != perm ) { return - EACCES ; } return security_key_permission ( key_ref , cred , perm ) ; 

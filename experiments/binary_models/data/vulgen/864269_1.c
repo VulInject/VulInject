@@ -1,0 +1,1 @@
+ev_view_presentation_get_property ( , , , ) { EvViewPresentation * pview = EV_VIEW_PRESENTATION ( object ) ; switch ( prop_id ) { case PROP_CURRENT_PAGE : g_value_set_uint ( value , pview -> current_page ) ; break ; case PROP_ROTATION : g_value_set_uint ( value , ev_view_presentation_get_rotation ( pview ) ) ; break ; default : } } 

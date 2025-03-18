@@ -1,0 +1,1 @@
+void free ( void * ptr , unsigned size ) { register struct ml * a ; if ( ptr == NULL ) { return ; } a = ( ml * ) ( ( char * ) ptr - OVERHEAD ) ; printf ( "free(%lx, %u) (origsize %u)\n" , ( u_long ) ptr , size , a -> size ) ; LIST_REMOVE ( a , list ) ; LIST_INSERT_HEAD ( & freelist , a , list ) ; } 

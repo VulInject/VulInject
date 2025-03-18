@@ -1,0 +1,1 @@
+static void flow_meter_unref ( struct enetc_ndev_priv * priv , u32 index ) { struct enetc_psfp_meter * fmi ; u8 z ; fmi = enetc_get_meter_by_index ( index ) ; WARN_ON ( ! fmi ) ; z = refcount_dec_and_test ( & fmi -> refcount ) ; if ( z ) { enetc_flowmeter_hw_set ( priv , fmi , false ) ; hlist_del ( & fmi -> node ) ; } } 

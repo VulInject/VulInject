@@ -1,0 +1,1 @@
+static void gm_subscriber_drop ( struct gm_subscriber * * subp ) { struct gm_subscriber * sub = * subp ; struct gm_if * gm_ifp ; gm_ifp = sub -> iface ; * subp = NULL ; sub -> refcount -- ; if ( sub -> refcount ) { return ; } gm_subscribers_del ( gm_ifp -> subscribers , sub ) ; XFREE ( MTYPE_GM_SUBSCRIBER , sub ) ; } 

@@ -1,0 +1,1 @@
+uint32_t boot_load ; uint32_t boot_load2 ; int boot_entry ; uint32_t boot_entry2 ; uint32_t boot_cksum ; char processor [ 16 ] ; ( ( packed ) ) ; 

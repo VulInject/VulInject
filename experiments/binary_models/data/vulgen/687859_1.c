@@ -1,0 +1,1 @@
+( fpga_bridges_disable ) ; void fpga_bridges_put ( struct list_head * bridge_list ) { struct fpga_bridge * bridge , * next ; unsigned long flags ; list_for_each_entry_safe ( , , , ) { fpga_bridge_put ( bridge ) ; spin_lock_irqsave ( & bridge_list_lock , flags ) ; list_del ( & bridge -> node ) ; } } 

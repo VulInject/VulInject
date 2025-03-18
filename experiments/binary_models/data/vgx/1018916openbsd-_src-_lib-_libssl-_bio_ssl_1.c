@@ -1,0 +1,1 @@
+BIO * BIO_new_buffer_ssl_connect ( SSL_CTX * ctx ) { BIO * ret = NULL , * buf = NULL , * ssl = NULL ; if ( ( buf = BIO_new ( BIO_f_buffer ( ) ) ) == NULL ) { err } if ( ( ssl = BIO_new_ssl_connect ( ctx ) ) == NULL ) { err } if ( ( ret = BIO_push ( buf , ssl ) ) == NULL ) { err } return ( ret ) ; err BIO_free ( buf ) ; return ( NULL ) ; } 

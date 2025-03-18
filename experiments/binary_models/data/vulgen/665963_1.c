@@ -1,0 +1,1 @@
+static void rekey_state ( struct state * st , bool background , struct logger * logger ) { if ( ! background ) { st -> st_logger -> global_whackfd = fd_addref ( logger -> global_whackfd ) ; } event_force ( EVENT_v2_REKEY , st ) ; } 

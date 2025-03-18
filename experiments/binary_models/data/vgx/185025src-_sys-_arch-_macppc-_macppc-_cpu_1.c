@@ -1,0 +1,1 @@
+int cpumatch ( struct device * parent , void * cfdata , void * aux ) { struct confargs * ca = aux ; int * reg = ca -> ca_reg ; if ( strcmp ( ca -> ca_name , cpu_cd . cd_name ) != 0 ) { return ( 0 ) ; } return ( 1 ) ; } 

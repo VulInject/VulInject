@@ -1,0 +1,1 @@
+struct regmap_config regmap_config ; struct regmap * regmap ; struct dvb_frontend * fe ; struct delayed_work stat_work ; int * get_agc_pwm ( struct dvb_frontend * fe , u8 * _agc_pwm ) struct i2c_adapter * i2c ; int i2c_address ; bool loop_through 1 ; u8 clk_out 2 ; u8 clk_out_div 5 ; bool dont_poll 1 ; u32 frequency_div ; int frequency_khz ; u8 tuner ; 

@@ -1,0 +1,1 @@
+void free_pjobs ( prev_job_info * pjinfo_arr , int size ) { int i ; if ( pjinfo_arr == NULL ) { return ; } for ( i = 0 ; i < size ; i ++ ) { free_prev_job_info ( & pjinfo_arr [ i ] ) ; } } 

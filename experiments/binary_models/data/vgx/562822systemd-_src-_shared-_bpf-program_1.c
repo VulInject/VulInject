@@ -1,0 +1,1 @@
+BPFProgram * bpf_program_free ( BPFProgram * p ) { if ( ! p ) { return NULL ; } ( void ) bpf_program_cgroup_detach ( p ) ; safe_close ( p -> kernel_fd ) ; free ( p -> prog_name ) ; free ( p -> attached_path ) ; return mfree ( p ) ; } 

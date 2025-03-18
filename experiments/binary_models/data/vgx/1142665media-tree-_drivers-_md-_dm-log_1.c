@@ -1,0 +1,1 @@
+static void fail_log_device ( struct log_c * lc ) { if ( lc -> log_dev_failed ) { return ; } lc -> log_dev_failed = 1 ; dm_table_event ( lc -> ti -> table , NULL ) ; } 

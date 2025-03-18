@@ -1,0 +1,1 @@
+TEE_Result tee_pobj_release ( struct tee_pobj * obj ) { mutex_lock ( & pobjs_mutex ) ; obj -> refcnt -- ; if ( obj -> refcnt == 0 ) { TAILQ_REMOVE ( & tee_pobjs , obj , link ) ; free ( obj -> obj_id ) ; free ( obj ) ; } mutex_unlock ( & pobjs_mutex ) ; return TEE_SUCCESS ; } 

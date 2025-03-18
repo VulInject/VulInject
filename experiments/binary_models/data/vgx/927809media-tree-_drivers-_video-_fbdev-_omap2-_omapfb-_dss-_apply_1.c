@@ -1,0 +1,1 @@
+static int dss_ovl_set_info ( struct omap_overlay * ovl , struct omap_overlay_info * info ) { struct ovl_priv_data * op = get_ovl_priv ( ovl ) ; unsigned long flags ; int r ; r = dss_ovl_simple_check ( ovl , info ) ; spin_lock_irqsave ( & data_lock , flags ) ; op -> user_info = * info ; op -> user_info_dirty = true ; spin_unlock_irqrestore ( & data_lock , flags ) ; return 0 ; } 

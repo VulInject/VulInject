@@ -1,0 +1,1 @@
+void ud_set_input_hook ( register struct ud * u , int * hook ( struct ud * ) ) { ud_inp_init ( u , NULL ) ; u -> inp_hook = hook ; } 

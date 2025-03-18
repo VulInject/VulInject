@@ -1,0 +1,1 @@
+static void omnia_leds_remove ( struct i2c_client * client ) { u8 buf [ 5 ] ; buf [ 0 ] = CMD_LED_COLOR ; buf [ 1 ] = OMNIA_BOARD_LEDS ; buf [ 2 ] = 255 ; buf [ 3 ] = 255 ; buf [ 4 ] = 255 ; i2c_master_send ( client , buf , 5 ) ; } 

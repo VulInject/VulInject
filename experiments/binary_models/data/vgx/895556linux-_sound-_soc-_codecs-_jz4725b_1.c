@@ -1,0 +1,1 @@
+static int jz4725b_codec_io_wait ( struct jz_icdc * icdc ) { int reg ; return readl_poll_timeout ( icdc -> base + ICDC_RGADW_OFFSET , reg , ! ( reg & ICDC_RGADW_RGWR ) , 1000 , 10000 ) ; } 

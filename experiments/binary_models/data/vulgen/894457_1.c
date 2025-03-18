@@ -1,0 +1,1 @@
+void * memarea_memdup ( memarea_t * area , const void * s , size_t n ) { char * result = memarea_alloc ( area , n ) ; return result ; } 

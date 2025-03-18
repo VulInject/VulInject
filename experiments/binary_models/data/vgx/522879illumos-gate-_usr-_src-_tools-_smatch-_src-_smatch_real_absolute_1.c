@@ -1,1 +1,1 @@
-static int FUN1 ( void ) { struct VAR1 * VAR2 ; VAR2 = FUN2 ( ( VAR3 * ) VAR4 ) ; if ( VAR2 -> VAR5 -> VAR6 != VAR7 ) { return 0 ; } if ( VAR2 -> VAR5 -> VAR8 != VAR2 ) { return 0 ; } return 1 ; }
+static int in_iterator_pre_statement ( void ) { struct statement * stmt ; stmt = last_ptr_list ( ( ptr_list * ) big_statement_stack ) ; if ( stmt -> parent -> type != STMT_ITERATOR ) { return 0 ; } if ( stmt -> parent -> iterator_pre_statement != stmt ) { return 0 ; } return 1 ; } 

@@ -1,0 +1,1 @@
+static int snd_pcm_stream_proc_done ( struct snd_pcm_str * pstr ) { snd_info_free_entry ( pstr -> proc_xrun_debug_entry ) ; pstr -> proc_xrun_debug_entry = NULL ; snd_info_free_entry ( pstr -> proc_info_entry ) ; pstr -> proc_info_entry = NULL ; pstr -> proc_root = NULL ; return 0 ; } 

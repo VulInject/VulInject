@@ -1,0 +1,1 @@
+spawn_init ( ) { ret_t ret ; int re ; ret = cherokee_services_server_init ( & worker_services_fd ) ; snprintf ( worker_services_fd_str , 16 , "%d" , worker_services_fd ) ; re = pthread_create ( & spawn_thread , NULL , spawn_thread_func , NULL ) ; if ( re != 0 ) { PRINT_MSG_S ( "(critical) Couldn't spawning thread..\n" ) ; return ret_error ; } return ret_ok ; } 

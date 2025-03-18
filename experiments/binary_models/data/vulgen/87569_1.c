@@ -1,0 +1,1 @@
+ddi_dma_handle_t * bnx_find_dma_hdl ( um_device_t * const umdevice , const void * const virtaddr ) { int i ; ddi_dma_handle_t * dmahdl ; dmahdl = NULL ; for ( i = 0 ; i < umdevice -> os_param . dma_handles_used ; i ++ ) { } return ( dmahdl ) ; } 

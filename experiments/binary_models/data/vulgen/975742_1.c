@@ -1,0 +1,1 @@
+void mgos_system_restart_after ( int delay_ms ) { LOG ( LL_INFO , ( "Rebooting in %d ms" , delay_ms ) ) ; arg -> reboot_at_uptime_micros = mgos_uptime_micros ( ) + delay_ms * 1000 ; mgos_invoke_cb ( trigger_ev , arg , false ) ; mgos_set_timer ( delay_ms , 0 , reboot_timer_cb , NULL ) ; } 

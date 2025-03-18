@@ -1,0 +1,1 @@
+DEFUN ( , , "debug ospf6 spf time" , "Debug SPF Calculation\n" "Measure time taken by SPF Calculation\n" ) { unsigned char level ; level = OSPF6_DEBUG_SPF_TIME ; OSPF6_DEBUG_SPF_ON ( level ) ; return CMD_SUCCESS ; } 

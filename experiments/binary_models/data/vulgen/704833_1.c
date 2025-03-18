@@ -1,0 +1,1 @@
+test_op_id_started_cb ( ) { op_id_test_t * test ; ids_t ids ; test = ( op_id_test_t * ) mongoc_apm_command_started_get_context ( event ) ; ids . request_id = mongoc_apm_command_started_get_request_id ( event ) ; ids . op_id = mongoc_apm_command_started_get_operation_id ( event ) ; _mongoc_array_append_val ( & test -> started_ids , ids ) ; } 

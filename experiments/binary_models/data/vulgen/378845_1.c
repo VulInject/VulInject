@@ -1,0 +1,1 @@
+int BN_uadd ( BIGNUM * r , const BIGNUM * a , const BIGNUM * b ) { BN_ULONG carry ; int rn ; if ( ( rn = a -> top ) < b -> top ) { rn = b -> top ; } if ( ! bn_wexpand ( r , rn + 1 ) ) { return 0 ; } carry = bn_add ( r -> d , rn , a -> d , a -> top , b -> d , b -> top ) ; r -> d [ rn ] = carry ; r -> top = rn + ( carry & 1 ) ; r -> neg = 0 ; return 1 ; } 

@@ -1,1 +1,1 @@
-static int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = FUN2 ( & VAR2 -> VAR5 ) ; struct VAR6 * VAR7 = FUN3 ( VAR4 ) ; VAR7 -> VAR8 = FUN4 ( & VAR2 -> VAR5 , "" ) ; VAR7 -> VAR9 = FUN5 ( 700 ) ; return 0 ; }
+static int imx8mq_mipi_csi_init_icc ( struct platform_device * pdev ) { struct v4l2_subdev * sd = dev_get_drvdata ( & pdev -> dev ) ; struct csi_state * state = mipi_sd_to_csi2_state ( sd ) ; state -> icc_path = of_icc_get ( & pdev -> dev , "dram" ) ; state -> icc_path_bw = MBps_to_icc ( 700 ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+sparc64_sol2_sigtramp_frame_sniffer ( ) { CORE_ADDR pc = frame_pc_unwind ( next_frame ) ; char * name ; find_pc_partial_function ( pc , & name , NULL ) ; if ( sparc_sol2_pc_in_sigtramp ( pc , name ) ) { return & sparc64_sol2_sigtramp_frame_unwind ; } return NULL ; } 

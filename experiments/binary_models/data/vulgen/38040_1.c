@@ -1,0 +1,1 @@
+static int fop_close ( struct inode * inode , struct file * file ) { if ( wdt_expect_close == 42 ) { wdt_turnoff ( ) ; } else { del_timer ( & timer ) ; pr_crit ( "device file closed unexpectedly. Will not stop the WDT!\n" ) ; } wdt_expect_close = 0 ; return 0 ; } 

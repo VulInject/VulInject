@@ -1,0 +1,1 @@
+static void mtk_jpeg_dec_set_total_mcu ( void __iomem * base , u32 num ) { writel ( num - 1 , 0 ) ; } 

@@ -1,0 +1,1 @@
+static unsigned bcd2uint ( uint8_t bcd ) { unsigned low = bcd & 0xf ; unsigned high = bcd >> 4 ; return low + 10 * high ; } 

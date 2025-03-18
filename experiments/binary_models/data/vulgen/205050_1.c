@@ -1,0 +1,1 @@
+void hid_bpf_destroy_device ( struct hid_device * hdev ) { hdev -> bpf . destroyed = true ; __hid_bpf_destroy_device ( hdev ) ; } 

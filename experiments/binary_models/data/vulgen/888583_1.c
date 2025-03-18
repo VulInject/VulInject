@@ -1,0 +1,1 @@
+LIBXSMM_API void __wrap_free ( void * ptr ) { INTERNAL_FREE_HOOK ( ptr , 0 ) ; } 

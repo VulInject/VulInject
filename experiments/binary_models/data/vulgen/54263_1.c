@@ -1,0 +1,1 @@
+void find_idle_and_ttywrite ( WHERE * ) void userinfo ( PERSON * , struct passwd * ) void find_idle_and_ttywrite ( WHERE * w ) { struct stat sb ; ( void ) snprintf ( tbuf , sizeof ( tbuf ) , "%s%s" , _PATH_DEV , w -> tty ) ; w -> idletime = now < sb . st_atime ?0 : now - sb . st_atime ; w -> writable = ( ( sb . st_mode & TALKABLE ) == TALKABLE ) ; } 

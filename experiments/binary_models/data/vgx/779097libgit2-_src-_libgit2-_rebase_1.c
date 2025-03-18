@@ -1,0 +1,1 @@
+static int rebase_ensure_not_in_progress ( git_repository * repo ) { int error ; git_rebase_t type ; if ( type != GIT_REBASE_NONE ) { git_error_set ( GIT_ERROR_REBASE , "there is an existing rebase in progress" ) ; return - 1 ; } return 0 ; } 

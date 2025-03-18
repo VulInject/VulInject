@@ -1,0 +1,1 @@
+static inline void bonito_irq_enable ( struct irq_data * d ) { mmiowb ( ) ; } 

@@ -1,0 +1,1 @@
+static int inet_diag_parse_attrs ( const struct nlmsghdr * nlh , int hdrlen , struct nlattr * * req_nlas ) { struct nlattr * nla ; int remaining ; nlmsg_for_each_attr ( , , , ) { int type = nla_type ( nla ) ; if ( type == INET_DIAG_REQ_PROTOCOL && nla_len ( nla ) != sizeof ( u32 ) ) { return - EINVAL ; } } return 0 ; } 

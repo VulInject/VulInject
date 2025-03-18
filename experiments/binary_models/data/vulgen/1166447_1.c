@@ -1,0 +1,1 @@
+* float complex z , w ; * * * * DESCRIPTION : * * Inverse tanh , equal to - i catan ( iz ) ; * * ACCURACY : * * Relative error : * arithmetic domain # trials peak rms * IEEE - 10 , + 10 30000 2.3e-16 6.2e-17 * * / float complex catanhf ( ) { float complex w w = - 1.0f * I * catanf ( z * I ) return ( w ) ; } ; 

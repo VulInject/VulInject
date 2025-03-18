@@ -1,0 +1,1 @@
+static int suspend_iter ( struct device * dev , void * data ) { struct pcie_port_service_driver * service_driver ; if ( ( dev -> bus == & pcie_port_bus_type ) && dev -> driver ) { service_driver = to_service_driver ( dev -> driver , NULL ) ; if ( service_driver -> suspend ) { service_driver -> suspend ( to_pcie_device ( dev ) ) ; } } return 0 ; } 

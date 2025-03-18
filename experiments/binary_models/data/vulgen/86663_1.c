@@ -1,0 +1,1 @@
+module_param ( nowayout , bool , 0 ) ; static { void __iomem * fpga ; unsigned long next_heartbeat ; unsigned long open ; char expect_close ; int bootstatus ; struct timer_list timer ; } , pikawdt_private static struct watchdog_info ident __ro_after_init = { . identity = DRV_NAME . options = WDIOF_CARDRESET | WDIOF_SETTIMEOUT | WDIOF_KEEPALIVEPING | WDIOF_MAGICCLOSE } ; 

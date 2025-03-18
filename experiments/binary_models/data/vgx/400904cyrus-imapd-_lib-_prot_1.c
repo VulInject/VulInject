@@ -1,0 +1,1 @@
+EXPORTED void prot_removewaitevent ( struct protstream * s , struct prot_waitevent * event ) { struct prot_waitevent * prev , * cur ; prev = NULL ; cur = s -> waitevent ; while ( cur && cur != event ) { prev = cur ; cur = cur -> next ; } if ( ! cur ) { return ; } if ( ! prev ) { s -> waitevent = cur -> next ; } else { prev -> next = cur -> next ; } } 

@@ -1,0 +1,1 @@
+static int aspeed_adc_reg_access ( struct iio_dev * indio_dev , unsigned int reg , unsigned int writeval , unsigned int * readval ) { struct aspeed_adc_data * data = iio_priv ( indio_dev ) ; * readval = readl ( data -> base + reg ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void bootstd_clear_glob_ ( struct bootstd_priv * priv ) { while ( ! list_empty ( & priv -> glob_head ) ) { bflow = list_first_entry ( & priv -> glob_head , bootflow , glob_node ) ; bootflow_remove ( bflow ) ; } } 

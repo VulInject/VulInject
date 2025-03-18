@@ -1,0 +1,1 @@
+oom_fn CORD_oom_fn = ( oom_fn ) 0 ; ABORT ( "Out of memory" ) ; Concatenation { CORD left ; CORD right ; } Function { CORD_fn fn ; void * client_data ; } Generic { char nul ; char header ; char depth ; unsigned char left_len ; cfs_time_t len ; } ConcatOrFunc { struct Concatenation concat ; struct Function function ; } 

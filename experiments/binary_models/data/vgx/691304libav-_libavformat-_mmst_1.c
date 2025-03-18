@@ -1,0 +1,1 @@
+static void pad_media_packet ( MMSContext * mms ) { if ( mms -> remaining_in_len < mms -> asf_packet_len ) { int padding_size = mms -> asf_packet_len - mms -> remaining_in_len ; mms -> remaining_in_len += padding_size ; } } 

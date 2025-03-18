@@ -1,0 +1,1 @@
+static uint32_t rn_smu_wait_for_response ( struct clk_mgr_internal * clk_mgr , unsigned int delay_us , unsigned int max_retries ) { uint32_t res_val = VBIOSSMC_Status_BUSY ; { res_val = REG_READ ( MP1_SMN_C2PMSG_91 ) ; if ( delay_us >= 1000 ) { drm_msleep ( delay_us / 1000 ) ; } if ( delay_us > 0 ) { udelay ( delay_us ) ; } } max_retries -- ; return res_val ; } 

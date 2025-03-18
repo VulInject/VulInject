@@ -1,0 +1,1 @@
+static int DetectSshSoftwareSetup ( DetectEngineCtx * de_ctx , Signature * s , const char * arg ) { if ( DetectSignatureSetAppProto ( s , ALPROTO_SSH ) < 0 ) { return - 1 ; } return 0 ; } 

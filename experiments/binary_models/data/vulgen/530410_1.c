@@ -1,0 +1,1 @@
+unsigned int another_method ( ) { unsigned int const square = size * size ; return square ; } 

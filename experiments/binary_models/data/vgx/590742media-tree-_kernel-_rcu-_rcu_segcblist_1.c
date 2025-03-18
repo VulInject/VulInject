@@ -1,0 +1,1 @@
+void rcu_cblist_init ( struct rcu_cblist * rclp ) { rclp -> tail = & rclp -> head ; rclp -> len = 0 ; rclp -> len_lazy = 0 ; } 

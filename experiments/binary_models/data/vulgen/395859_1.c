@@ -1,0 +1,1 @@
+JsVar * jswrap_number_toFixed ( JsVar * parent , int decimals ) { if ( decimals < 0 ) { decimals = 0 ; } if ( decimals > 20 ) { decimals = 20 ; } char buf [ JS_NUMBER_BUFFER_SIZE ] ; return jsvNewFromString ( buf ) ; } 

@@ -1,0 +1,1 @@
+const char * VM_ValueToSymbol ( vm_t * vm , int value ) { vmSymbol_t * sym ; static char text [ MAX_TOKEN_CHARS ] ; sym = vm -> symbols ; if ( ! sym ) { return "NO SYMBOLS" ; } while ( sym -> next && sym -> next -> symValue <= value ) { sym = sym -> next ; } if ( value == sym -> symValue ) { return sym -> symName ; } return text ; } 

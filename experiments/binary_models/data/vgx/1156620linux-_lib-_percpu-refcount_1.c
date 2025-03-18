@@ -1,0 +1,1 @@
+void percpu_ref_switch_to_percpu ( struct percpu_ref * ref ) { unsigned long flags ; spin_lock_irqsave ( & percpu_ref_switch_lock , flags ) ; ref -> data -> force_atomic = false ; __percpu_ref_switch_mode ( ref ) ; spin_unlock_irqrestore ( & percpu_ref_switch_lock , flags ) ; } 

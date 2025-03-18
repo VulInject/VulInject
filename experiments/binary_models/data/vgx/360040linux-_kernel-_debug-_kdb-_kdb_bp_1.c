@@ -1,0 +1,1 @@
+static int _kdb_bp_remove ( kdb_bp_t * bp ) { int ret = 1 ; if ( ! bp -> bp_type ) { ret = dbg_remove_sw_break ( bp -> bp_addr ) ; } else { ret = arch_kgdb_ops . remove_hw_breakpoint ( bp -> bp_addr , bp -> bph_length , bp -> bp_type ) ; } if ( ret == 0 ) { bp -> bp_installed = 0 ; } return ret ; } 

@@ -1,0 +1,1 @@
+static void recodehash ( char * hash , size_t len ) { uint8_t data [ HASHBUFSIZE / 2 ] ; int i , rv ; if ( ( rv = b64_pton ( hash , data , sizeof ( data ) ) ) == - 1 ) { errx ( 1 , "invalid base64 encoding" ) ; } for ( i = 0 ; i < rv ; i ++ ) { snprintf ( hash + i * 2 , HASHBUFSIZE - i * 2 , "%2.2x" , data [ i ] ) ; } } 

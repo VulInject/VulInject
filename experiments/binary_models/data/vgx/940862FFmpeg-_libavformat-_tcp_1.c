@@ -1,0 +1,1 @@
+static int tcp_get_window_size ( URLContext * h ) { TCPContext * s = h -> priv_data ; int avail ; socklen_t avail_len = sizeof ( avail ) ; if ( getsockopt ( s -> fd , SOL_SOCKET , SO_RCVBUF , & avail , & avail_len ) ) { return ff_neterrno ( ) ; } return avail ; } 

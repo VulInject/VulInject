@@ -1,0 +1,1 @@
+static int proc_match ( const char * name , struct proc_dir_entry * de , unsigned int len ) { if ( len > de -> namelen ) { return 1 ; } return memcmp ( name , de -> name , len ) ; } 

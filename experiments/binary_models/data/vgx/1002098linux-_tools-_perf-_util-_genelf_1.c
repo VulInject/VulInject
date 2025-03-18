@@ -1,0 +1,1 @@
+{ unsigned int namesz ; unsigned int descsz ; int type ; char name [ 0 ] ; } Elf_Note options { char * output ; int fd ; } 

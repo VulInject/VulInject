@@ -1,0 +1,1 @@
+lang -> charset = g_malloc0 ( 1 ) ; return ; encoding = '\0' ; ++ encoding ; lang -> charset = g_strdup ( encoding , NULL ) ; 

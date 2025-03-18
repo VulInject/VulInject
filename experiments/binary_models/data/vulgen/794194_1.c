@@ -1,0 +1,1 @@
+LclEncContext { AVCodecContext * avctx ; int imgtype ; int compression ; FFZStream zstream ; } LclEncContext 

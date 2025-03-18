@@ -1,0 +1,1 @@
+void radeondrm_setpal ( struct radeon_device * , struct rasops_info * ) int radeondrm_stdscreen = { "std" 0 0 0 0 0 WSSCREEN_UNDERLINE | WSSCREEN_HILIT | WSSCREEN_REVERSE | WSSCREEN_WSCOLORS } ; 

@@ -1,0 +1,1 @@
+void PHY_RF8256_Config ( struct net_device * dev ) { struct r8192_priv * priv = ieee80211_priv ( dev ) ; priv -> NumTotalRFPath = RTL819X_TOTAL_RF_PATH ; } 

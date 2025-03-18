@@ -1,0 +1,1 @@
+static unsigned long m41t80_get_freq ( struct m41t80_data * m41t80 ) { struct i2c_client * client = m41t80 -> client ; int reg_sqw = ( m41t80 -> features & M41T80_FEATURE_SQ_ALT ) ?M41T80_REG_WDAY : M41T80_REG_SQW ; int ret = i2c_smbus_read_byte_data ( client , reg_sqw ) ; return m41t80_decode_freq ( ret >> 4 ) ; } 

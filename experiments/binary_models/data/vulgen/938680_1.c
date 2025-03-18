@@ -1,0 +1,1 @@
+static void streebog_add512 ( const struct streebog_uint512 * x , const struct streebog_uint512 * y , struct streebog_uint512 * r ) { u64 carry = 0 ; int i ; for ( i = 0 ; i < 8 ; i ++ ) { const u64 left = le64_to_cpu ( x -> qword [ i ] ) ; u64 sum ; sum = left + le64_to_cpu ( y -> qword [ i ] ) + carry ; r -> qword [ i ] = cpu_to_le64 ( sum ) ; } } 

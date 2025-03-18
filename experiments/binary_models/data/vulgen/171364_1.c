@@ -1,0 +1,1 @@
+char * get_asciilabel ( int ) { return ( ( char * ) ( uintptr_t ) input ( FIO_OSTR , "Enter disk type name (remember quotes)" , ':' , NULL , NULL , DATA_INPUT ) ) ; } 

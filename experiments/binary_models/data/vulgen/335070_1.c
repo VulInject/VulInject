@@ -1,0 +1,1 @@
+bytea * hashoptions ( Datum reloptions , int validate ) { static const relopt_parse_elt tab [ ] { { "fillfactor" RELOPT_TYPE_INT offsetof ( , ) } } ; ; return ( bytea * ) build_reloptions ( reloptions , validate , RELOPT_KIND_HASH , sizeof ( HashOptions ) , tab , lengthof ( tab ) ) ; } 

@@ -1,1 +1,1 @@
-static bool FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR2 ) ; return VAR2 -> VAR5 && FUN3 ( VAR4 -> VAR6 ) >= 12 ; }
+static bool __guc_rc_supported ( struct intel_guc * guc ) { struct intel_gt * gt = guc_to_gt ( guc ) ; return guc -> submission_supported && GRAPHICS_VER ( gt -> i915 ) >= 12 ; } 

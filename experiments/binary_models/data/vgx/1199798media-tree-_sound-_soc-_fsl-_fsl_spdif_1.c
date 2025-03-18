@@ -1,0 +1,1 @@
+static int spdif_set_rx_clksrc ( struct fsl_spdif_priv * spdif_priv , enum spdif_gainsel gainsel , int dpll_locked ) { struct regmap * regmap = spdif_priv -> regmap ; u8 clksrc = spdif_priv -> rxclk_src ; regmap_update_bits ( regmap , REG_SPDIF_SRPC , SRPC_CLKSRC_SEL_MASK | SRPC_GAINSEL_MASK , SRPC_CLKSRC_SEL_SET ( clksrc ) | SRPC_GAINSEL_SET ( gainsel ) ) ; return 0 ; } 

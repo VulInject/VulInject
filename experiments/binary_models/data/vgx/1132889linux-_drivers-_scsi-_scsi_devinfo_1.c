@@ -1,0 +1,1 @@
+module_param_named ( default_dev_flags , scsi_default_dev_flags , ullong , 0644 ) ; MODULE_PARM_DESC ( default_dev_flags , "scsi default device flag uint64_t value" ) ; void scsi_exit_devinfo ( void ) { remove_proc_entry ( "scsi/device_info" , NULL ) ; scsi_dev_info_remove_list ( SCSI_DEVINFO_GLOBAL , NULL ) ; } 

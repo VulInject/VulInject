@@ -1,0 +1,1 @@
+static int hyp_ack_share ( u64 addr , const struct pkvm_mem_transition * tx , enum kvm_pgtable_prot perms ) { u64 size = tx -> nr_pages * PAGE_SIZE ; if ( __hyp_ack_skip_pgtable_check ( tx ) ) { return 0 ; } return __hyp_check_page_state_range ( addr , size , PKVM_NOPAGE ) ; } 

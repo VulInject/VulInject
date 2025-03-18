@@ -1,0 +1,1 @@
+struct value * stack_dup_value ( const struct value * a , struct value * copy ) { copy -> type = a -> type ; switch ( a -> type ) { case BCODE_NONE : break ; case BCODE_NUMBER : copy -> u . num = dup_number ( a -> u . num ) ; break ; case BCODE_STRING : copy -> u . string = bstrdup ( a -> u . string ) ; break ; } return copy ; } 

@@ -1,0 +1,1 @@
+static void LDAP_CALLBACK prldap_shared_disposehandle ( LDAP * ld , struct lextiof_session_private * sessionarg ) { prldap_thread_dispose_handle ( ld , sessionarg ) ; } 

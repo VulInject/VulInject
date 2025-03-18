@@ -1,0 +1,1 @@
+int parse_log_level ( const char * level ) { if ( ! strcasecmp ( level , "err" ) ) { return LOG_ERR ; } if ( ! strcasecmp ( level , "notice" ) ) { return LOG_NOTICE ; } if ( ! strcasecmp ( level , "info" ) ) { return LOG_INFO ; } if ( ! strcasecmp ( level , "debug" ) ) { return LOG_DEBUG ; } return - 1 ; } 

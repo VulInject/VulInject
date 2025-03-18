@@ -1,0 +1,1 @@
+static void mxs_lradc_enable_touch_detection ( struct mxs_lradc_ts * ts ) { mxs_lradc_setup_touch_detection ( ts ) ; ts -> cur_plate = LRADC_TOUCH ; writel ( LRADC_CTRL1_TOUCH_DETECT_IRQ_EN , ts -> base + LRADC_CTRL1 + STMP_OFFSET_REG_SET ) ; } 

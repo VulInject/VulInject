@@ -1,0 +1,1 @@
+struct gss_api_mech * gss_mech_get_by_name ( const char * name ) { struct gss_api_mech * gm = NULL ; gm = _gss_mech_get_by_name ( name ) ; if ( ! gm ) { gm = _gss_mech_get_by_name ( name ) ; } return gm ; } 

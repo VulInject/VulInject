@@ -1,0 +1,1 @@
+void symtab_set_filename ( const char * p ) { errlog ( BEGIN , "symtab_set_filename() {" ) ; ( void ) strncpy ( Symtab . Filename , p , sizeof ( Symtab . Filename ) ) ; Symtab . Filename [ sizeof ( Symtab . Filename ) - 1 ] = '\0' ; } 

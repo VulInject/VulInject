@@ -1,0 +1,1 @@
+XZ_EXTERN void XZ_FUNC xz_dec_end ( struct xz_dec * s ) { if ( s != NULL ) { xz_dec_lzma2_end ( s -> lzma2 ) ; xz_dec_bcj_end ( s -> bcj ) ; } } 

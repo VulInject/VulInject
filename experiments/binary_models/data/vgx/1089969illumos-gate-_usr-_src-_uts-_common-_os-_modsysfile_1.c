@@ -1,0 +1,1 @@
+void hwc_free_spec_list ( struct hwc_spec * list ) { while ( list ) { struct hwc_spec * tmp = list ; list = tmp -> hwc_next ; } } val_list { struct val_list * val_next ; { VAL_STRING , VAL_INTEGER } , val_type int val_size ; { char * string ; int integer ; } , val } 

@@ -1,0 +1,1 @@
+. max_divider = 0x80 , . min_divider = 0x1 , . recal_en_bit = 0x5 , . max_multiplier = 0x7ff , . enable_mask = 0x7 , . mult_mask = 0x7ff0000 , . recal_st_bit = 0x5 , . autoidle_mask 0x7 , ; 

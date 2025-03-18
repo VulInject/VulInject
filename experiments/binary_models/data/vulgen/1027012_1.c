@@ -1,0 +1,1 @@
+char * wstandout ( WINDOW * win ) { win -> _flags |= _STANDOUT ; return ( SO ?SO : UC ) ; } 

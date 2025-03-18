@@ -1,0 +1,1 @@
+int f8_done ( symmetric_F8 * f8 ) { int err ; LTC_ARGCHK ( f8 != NULL ) ; cipher_descriptor [ f8 -> cipher ] -> done ( & f8 -> key ) ; return CRYPT_OK ; } 

@@ -1,0 +1,1 @@
+static void audio_stream_fini ( audio_stream_t * sp ) { auimpl_format_free ( sp ) ; if ( sp -> s_cnv_buf1 ) { kmem_free ( sp -> s_cnv_buf1 , sp -> s_cnv_max ) ; } mutex_destroy ( & sp -> s_lock ) ; cv_destroy ( & sp -> s_cv ) ; if ( sp -> s_data != NULL ) { ddi_umem_free ( sp -> s_cookie ) ; sp -> s_data = NULL ; } } 

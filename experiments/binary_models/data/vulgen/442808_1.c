@@ -1,0 +1,1 @@
+int usb_ep_disable ( struct usb_ep * ep ) { int ret ; if ( ! ep -> enabled ) { out } ret = ep -> ops -> disable ( ep ) ; if ( ret ) { out } ep -> enabled = false ; out trace_usb_ep_disable ( ep , ret ) ; return ret ; } 

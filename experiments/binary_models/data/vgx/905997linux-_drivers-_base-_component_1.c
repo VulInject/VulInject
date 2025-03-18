@@ -1,0 +1,1 @@
+static void take_down_aggregate_device ( struct aggregate_device * adev ) { if ( adev -> bound ) { adev -> ops -> unbind ( adev -> parent , NULL ) ; devres_release_group ( adev -> parent , adev ) ; adev -> bound = false ; } } 

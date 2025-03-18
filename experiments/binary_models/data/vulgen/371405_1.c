@@ -1,0 +1,1 @@
+const char LICENSE [ ] SEC ( "license" ) "GPL" ; ; { __uint ( , ) __uint ( , 1 ) __type ( , ) __type ( , ) } , array SEC ( ) 

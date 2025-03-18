@@ -1,0 +1,1 @@
+void __exit sclp_sdias_exit ( void ) { sclp_unregister ( & sclp_sdias_register ) ; } 

@@ -1,0 +1,1 @@
+void on_log ( struct mosquitto * mosq , void * obj , int level , const char * str ) { } 

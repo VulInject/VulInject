@@ -1,0 +1,1 @@
+static void realtek_cr_destructor ( void * extra ) { struct rts51x_chip * chip = extra ; if ( ! chip ) { return ; } if ( ss_en ) { del_timer ( & chip -> rts51x_suspend_timer ) ; chip -> timer_expires = 0 ; } } 

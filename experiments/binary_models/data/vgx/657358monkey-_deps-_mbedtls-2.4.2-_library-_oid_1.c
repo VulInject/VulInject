@@ -1,0 +1,1 @@
+static const TYPE_T * oid_ # # NAME # # _from_asn1 ( ) { const TYPE_T * p = LIST const mbedtls_oid_descriptor_t * cur = ( const mbedtls_oid_descriptor_t * ) p } ; while ( cur -> asn1 != NULL ) { if ( cur -> asn1_len == oid -> len && memcmp ( cur -> asn1 , oid -> p , oid -> len ) == 0 ) { return ( p ) ; } p ++ ; cur = ( const mbedtls_oid_descriptor_t * ) p ; } return ( NULL ) ; 

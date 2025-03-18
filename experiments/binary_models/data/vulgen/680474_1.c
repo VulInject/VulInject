@@ -1,0 +1,1 @@
+iso_codes_parser_end_element ( , , , ) { IsoCodesParser * parser = user_data ; switch ( parser -> state ) { case ISO_CODES_START : g_warning ( "%s: shouldn't get here" , G_STRLOC ) ; break ; case ISO_CODES_IN_ENTRIES : parser -> state = ISO_CODES_START ; break ; case ISO_CODES_IN_ENTRY : parser -> state = ISO_CODES_IN_ENTRIES ; break ; case ISO_CODES_IN_UNKNOWN : break ; } } 

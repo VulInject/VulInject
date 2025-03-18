@@ -1,0 +1,1 @@
+static void verity_work ( struct work_struct * w ) { struct dm_verity_io * io = container_of ( w , dm_verity_io , work ) ; io -> in_tasklet = false ; verity_fec_init_io ( io ) ; } 

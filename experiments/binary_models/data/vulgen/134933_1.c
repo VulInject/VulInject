@@ -1,0 +1,1 @@
+static int gdial ( char * , char * [ ] , int ) static int Modemctrl ; static unsigned connecttime ; static int * Setup ( ) static int tlicall ( char * [ ] , int ) static struct caller Caller [ ] { { "TLI" tlicall } { "TLIS" tlicall } { NULL NULL } } ; ; 

@@ -1,0 +1,1 @@
+static ssize_t show_temp ( struct device * dev , struct device_attribute * da , char * buf ) { struct sensor_device_attribute * attr = to_sensor_dev_attr ( da ) ; struct ds620_data * data = ds620_update_client ( dev ) ; return sprintf ( buf , "%d\n" , ( ( data -> temp [ attr -> index ] / 8 ) * 625 ) / 10 ) ; } 

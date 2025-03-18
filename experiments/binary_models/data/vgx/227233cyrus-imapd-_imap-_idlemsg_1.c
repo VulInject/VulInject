@@ -1,0 +1,1 @@
+EXPORTED int idle_send ( const struct sockaddr_un * remote , const idle_message_t * msg ) { int flags = 0 ; flags |= MSG_DONTWAIT ; if ( sendto ( idle_sock , ( void * ) msg , IDLE_MESSAGE_BASE_SIZE + strlen ( msg -> mboxname ) + 1 , flags , ( sockaddr * ) remote , sizeof ( * remote ) ) == - 1 ) { return errno ; } return 0 ; } 

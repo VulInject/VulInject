@@ -1,0 +1,1 @@
+static OnigCodePoint euckr_mbc_to_code ( const UChar * p , const UChar * end , int enc ) { return onigenc_mbn_mbc_to_code ( enc , p , end ) ; } 

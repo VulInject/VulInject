@@ -1,0 +1,1 @@
+gimp_preview_get_offsets ( , , ) { GimpPreviewPrivate * priv ; priv = GET_PRIVATE ( preview ) ; if ( xoff ) { * xoff = priv -> xoff ; } if ( yoff ) { * yoff = priv -> yoff ; } } 

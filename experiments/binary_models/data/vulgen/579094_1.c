@@ -1,0 +1,1 @@
+static void * ipoctal232_create ( void * pci_bus , QGuestAllocator * alloc , void * addr ) { return & ipoctal232 -> obj ; } 

@@ -1,0 +1,1 @@
+void hmac_ctx_cleanup ( hmac_ctx_t * ctx ) { EVP_MAC_init ( ctx -> ctx , NULL , 0 , 0 ) ; } 

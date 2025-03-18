@@ -1,0 +1,1 @@
+DBA_FIRSTKEY_FUNC ( ) { dba_db1_data * dba = info -> dbf ; DBT gkey ; DBT gval ; memset ( & gkey , 0 , sizeof ( gkey ) ) ; memset ( & gval , 0 , sizeof ( gval ) ) ; return NULL ; } 

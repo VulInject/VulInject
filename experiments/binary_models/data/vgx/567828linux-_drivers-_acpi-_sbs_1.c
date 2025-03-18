@@ -1,0 +1,1 @@
+static int acpi_battery_get_info ( struct acpi_battery * battery ) { int i , result = 0 ; for ( i = 0 ; i < ARRAY_SIZE ( info_readers ) ; ++ i ) { result = acpi_smbus_read ( battery -> sbs -> hc , info_readers [ i ] . mode , ACPI_SBS_BATTERY , info_readers [ i ] . command , ( u8 * ) battery + info_readers [ i ] . offset ) ; } return result ; } 

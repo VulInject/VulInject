@@ -1,0 +1,1 @@
+( lm3533_ctrlbank_set_ # # _name ) ; int lm3533_ctrlbank_get_ # # _name ( , ) { u8 reg int ret reg = lm3533_ctrlbank_get_reg ( cb , LM3533_REG_ # # _NAME # # _BASE ) ret = lm3533_read ( cb -> lm3533 , reg , val ) } ; return ret ; 

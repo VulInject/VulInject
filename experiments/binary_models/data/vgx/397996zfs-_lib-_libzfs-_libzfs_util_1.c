@@ -1,0 +1,1 @@
+void libzfs_free_str_array ( char * * strs , int count ) { while ( -- count >= 0 ) { free ( strs [ count ] ) ; } } 

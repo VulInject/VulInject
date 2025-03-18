@@ -1,0 +1,1 @@
+static int altr_sdram_remove ( struct platform_device * pdev ) { struct mem_ctl_info * mci = platform_get_drvdata ( pdev ) ; edac_mc_del_mc ( & pdev -> dev ) ; platform_set_drvdata ( pdev , NULL ) ; return 0 ; } 

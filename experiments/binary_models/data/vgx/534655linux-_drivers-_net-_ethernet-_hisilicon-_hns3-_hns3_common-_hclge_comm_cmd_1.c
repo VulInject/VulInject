@@ -1,0 +1,1 @@
+static int hclge_comm_alloc_cmd_desc ( struct hclge_comm_cmq_ring * ring ) { int size = ring -> desc_num * sizeof ( hclge_desc ) ; ring -> desc = dma_alloc_coherent ( & ring -> pdev -> dev , size , & ring -> desc_dma_addr , GFP_KERNEL ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static int mch_post_load ( void * opaque , int version_id ) { MCHPCIState * mch = opaque ; mch_update ( mch , NULL ) ; return 0 ; } 

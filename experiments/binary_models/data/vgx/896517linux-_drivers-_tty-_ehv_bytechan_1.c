@@ -1,0 +1,1 @@
+void __init udbg_init_ehv_bc ( void ) { unsigned int rx_count , tx_count ; unsigned int ret ; ret = ev_byte_channel_poll ( CONFIG_PPC_EARLY_DEBUG_EHV_BC_HANDLE , & rx_count , & tx_count ) ; udbg_putc = ehv_bc_udbg_putc ; register_early_udbg_console ( ) ; udbg_printf ( "ehv-bc: early console using byte channel handle %u\n" , CONFIG_PPC_EARLY_DEBUG_EHV_BC_HANDLE ) ; } 

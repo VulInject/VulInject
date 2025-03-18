@@ -1,0 +1,1 @@
+static void ath6kl_usb_device_detached ( struct usb_interface * interface ) { struct ath6kl_usb * ar_usb ; ar_usb = usb_get_intfdata ( interface , NULL ) ; if ( ar_usb == NULL ) { return ; } ath6kl_stop_txrx ( ar_usb -> ar ) ; mdelay ( 20 ) ; ath6kl_core_cleanup ( ar_usb -> ar ) ; ath6kl_usb_destroy ( ar_usb ) ; } 

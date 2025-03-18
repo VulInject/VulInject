@@ -1,0 +1,1 @@
+static int recv_verify_packet_tcp ( void * th , int len ) { struct tcphdr * tcph = th ; return recv_verify_csum ( th , len , ntohs ( tcph -> source ) , tcph -> check ) ; } 

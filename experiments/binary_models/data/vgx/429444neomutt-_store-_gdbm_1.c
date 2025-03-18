@@ -1,0 +1,1 @@
+static void * store_gdbm_fetch ( void * store , const char * key , size_t klen , size_t * vlen ) { if ( ! store || ( klen > INT_MAX ) ) { return in ; } datum dkey ; datum data ; GDBM_FILE db = store ; dkey . dptr = ( char * ) key ; dkey . dsize = klen ; data = gdbm_fetch ( db , dkey ) ; * vlen = data . dsize ; return data . dptr ; } 

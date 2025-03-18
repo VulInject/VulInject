@@ -1,0 +1,1 @@
+static int dasd_hosts_show ( struct seq_file * m , void * v ) { struct dasd_device * device ; int rc = - EOPNOTSUPP ; device = m -> private ; dasd_get_device ( device ) ; dasd_put_device ( device ) ; return rc ; } 

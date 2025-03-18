@@ -1,0 +1,1 @@
+static int rdf ( int fd0 , int fd1 , uint64_t * pcnt ) { int i , j ; char buf [ BUFSIZ ] , * p ; i = read ( fd0 , buf , sizeof buf ) ; VTCP_Assert ( i ) ; for ( p = buf ; i > 0 ; i -= j , p += j ) { j = write ( fd1 , p , i ) ; VTCP_Assert ( j ) ; if ( j <= 0 ) { return ( 1 ) ; } * pcnt += j ; if ( i != j ) { ( void ) usleep ( 100000 ) ; } } return ( 0 ) ; } 

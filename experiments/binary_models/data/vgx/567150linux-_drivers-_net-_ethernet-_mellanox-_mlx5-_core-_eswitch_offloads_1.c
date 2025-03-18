@@ -1,0 +1,1 @@
+int mlx5_devlink_eswitch_inline_mode_get ( struct devlink * devlink , u8 * mode ) { struct mlx5_eswitch * esw ; int err ; esw = mlx5_devlink_eswitch_get ( devlink ) ; down_read ( & esw -> mode_lock ) ; err = esw_inline_mode_to_devlink ( esw -> offloads . inline_mode , mode ) ; up_read ( & esw -> mode_lock ) ; return err ; } 

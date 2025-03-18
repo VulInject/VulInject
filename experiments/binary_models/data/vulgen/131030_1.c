@@ -1,0 +1,1 @@
+static void mpc_err_string_cat ( char * buffer , int * pos , int * max , char const * fmt , ... ) { int left = ( ( * max ) - ( * pos ) ) ; va_list va ; va_start ( va , fmt ) ; ( * pos ) += vsprintf ( buffer + ( * pos ) , fmt , va ) ; va_end ( va ) ; } 

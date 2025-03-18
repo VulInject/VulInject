@@ -1,0 +1,1 @@
+{ 0x0147 , KEY_PLAYPAUSE ; } , { 0x014f , KEY_FASTFORWARD ; } , { 0x0157 , KEY_MUTE ; } , { 0x010d , KEY_STOP ; } , { 0x0101 , KEY_RECORD ; } , { 0x014e , ; } , 

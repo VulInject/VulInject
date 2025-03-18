@@ -1,0 +1,1 @@
+krb5_c_init_state ( , , , ) { int i ; for ( i = 0 ; i < krb5_enctypes_length ; i ++ ) { if ( krb5_enctypes_list [ i ] . etype == key -> enctype ) { break ; } } if ( i == krb5_enctypes_length ) { return ( KRB5_BAD_ENCTYPE ) ; } return ( * ( krb5_enctypes_list [ i ] . enc -> init_state ) ) ( context , key , keyusage , new_state ) ; } 

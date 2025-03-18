@@ -1,0 +1,1 @@
+bool optc2_enable_crtc ( struct timing_generator * optc ) { REG_UPDATE ( OPTC_DATA_SOURCE_SELECT , OPTC_SEG0_SRC_SEL , optc -> inst ) ; REG_UPDATE ( CONTROL , VTG0_ENABLE , 1 ) ; REG_SEQ_START ( ) ; REG_UPDATE_2 ( OTG_CONTROL , OTG_DISABLE_POINT_CNTL , 3 , OTG_MASTER_EN , 1 ) ; REG_SEQ_SUBMIT ( ) ; REG_SEQ_WAIT_DONE ( ) ; return true ; } 

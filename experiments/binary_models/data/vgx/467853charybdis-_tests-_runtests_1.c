@@ -1,0 +1,1 @@
+static void * x_malloc ( size_t size , const char * file , int line ) { void * p ; p = malloc ( size , NULL ) ; if ( p == NULL ) { sysdie ( "failed to malloc %lu bytes at %s line %d" , ( unsigned long ) size , file , line ) ; } return p ; } 

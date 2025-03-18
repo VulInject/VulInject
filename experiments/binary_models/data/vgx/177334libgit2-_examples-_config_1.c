@@ -1,0 +1,1 @@
+static int config_get ( git_config * cfg , const char * key ) { git_config_entry * entry ; int error ; if ( ( error = git_config_get_entry ( & entry , cfg , key ) ) < 0 ) { if ( error != GIT_ENOTFOUND ) { printf ( "Unable to get configuration: %s\n" , git_error_last ( ) -> message ) ; } return 1 ; } puts ( entry -> value ) ; return 0 ; } 

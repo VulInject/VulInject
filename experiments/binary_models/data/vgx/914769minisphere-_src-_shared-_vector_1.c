@@ -1,0 +1,1 @@
+bool vector_insert ( vector_t * it , int index , const void * in_object ) { memmove ( it -> buffer + ( index + 1 ) * it -> pitch , it -> buffer + index * it -> pitch , ( it -> num_items - index ) * it -> pitch ) ; memcpy ( it -> buffer + index * it -> pitch , in_object , it -> pitch ) ; ++ it -> num_items ; return true ; } 

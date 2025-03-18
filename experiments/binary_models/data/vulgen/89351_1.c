@@ -1,0 +1,1 @@
+void RTC_CalibOutputConfig ( uint32_t RTC_CalibOutput ) { RTC -> WPR = 0xCA ; RTC -> WPR = 0x53 ; RTC -> CR &= ( uint32_t ) ~ ( RTC_CR_COSEL ) ; RTC -> CR |= ( uint32_t ) RTC_CalibOutput ; RTC -> WPR = 0xFF ; } 

@@ -1,0 +1,1 @@
+static void vfio_batch_init ( struct vfio_batch * batch ) { batch -> size = 0 ; batch -> offset = 0 ; batch -> pages = ( page * * ) __get_free_page ( GFP_KERNEL ) ; if ( ! batch -> pages ) { fallback } batch -> capacity = VFIO_BATCH_MAX_CAPACITY ; return ; fallback batch -> pages = & batch -> fallback_page ; batch -> capacity = 1 ; } 

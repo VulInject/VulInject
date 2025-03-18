@@ -1,0 +1,1 @@
+int BZ_API BZ2_bzread ( BZFILE * b , void * buf , int len ) { int bzerr , nread ; nread = BZ2_bzRead ( & bzerr , b , buf , len ) ; if ( bzerr == BZ_OK || bzerr == BZ_STREAM_END ) { return nread ; } else { return - 1 ; } } 

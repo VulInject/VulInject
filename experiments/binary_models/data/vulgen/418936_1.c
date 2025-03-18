@@ -1,0 +1,1 @@
+static int crypto_kpp_report ( struct sk_buff * skb , struct crypto_alg * alg ) { struct crypto_report_kpp rkpp ; strncpy ( rkpp . type , "kpp" , sizeof ( rkpp . type ) ) ; return 0 ; nla_put_failure return - EMSGSIZE ; } 

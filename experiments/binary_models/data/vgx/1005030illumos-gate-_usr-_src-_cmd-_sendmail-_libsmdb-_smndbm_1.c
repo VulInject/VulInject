@@ -1,0 +1,1 @@
+int smdbm_close ( database ) SMDB_DATABASE * database ; { SMDB_DBM_DATABASE * db = ( SMDB_DBM_DATABASE * ) database -> smdb_impl ; DBM * dbm = ( ( SMDB_DBM_DATABASE * ) database -> smdb_impl ) -> smndbm_dbm ; dbm_close ( dbm ) ; if ( db -> smndbm_lock_fd != - 1 ) { close ( db -> smndbm_lock_fd ) ; } database -> smdb_impl = NULL ; return SMDBE_OK ; } 

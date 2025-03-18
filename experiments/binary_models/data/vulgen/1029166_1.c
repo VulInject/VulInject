@@ -1,0 +1,1 @@
+static struct i2c_driver max98390_i2c_driver = { . driver = { . name = "max98390" . of_match_table = of_match_ptr ( max98390_of_match ) . acpi_match_table = ACPI_PTR ( max98390_acpi_match ) . pm = & max98390_pm } . probe_new = max98390_i2c_probe . id_table = max98390_i2c_id } ; 

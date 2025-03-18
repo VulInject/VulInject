@@ -1,0 +1,1 @@
+mvspi_softc { struct device sc_dev ; bus_space_tag_t sc_iot ; bus_space_handle_t sc_ioh ; bus_size_t sc_ios ; int sc_node ; uint32_t sc_pfreq ; struct rwlock sc_buslock ; int sc_cs ; u_int sc_cs_delay ; } 

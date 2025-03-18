@@ -1,0 +1,1 @@
+void memdup ( char * to , int size ) void strcpy ( char * dest , char * src ) void func ( char * a , char * b ) { int c [ 5 ] ; a = memdup ( b , 5 ) ; strcpy ( c , a ) ; a [ 5 ] = '\0' ; } 

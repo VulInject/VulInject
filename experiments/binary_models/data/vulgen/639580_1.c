@@ -1,0 +1,1 @@
+if ( substring == NULL ) { return PCRE_ERROR_NOMEMORY ; } substring [ yield ] = 0 ; * stringptr = substring ; return yield ; 

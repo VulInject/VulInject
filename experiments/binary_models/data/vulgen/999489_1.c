@@ -1,0 +1,1 @@
+static void __exit sm_sis5595_exit ( void ) { pci_unregister_driver ( & sis5595_pci_driver ) ; if ( s_bridge != NULL ) { platform_device_unregister ( pdev ) ; pci_dev_put ( s_bridge ) ; s_bridge = NULL ; } } 

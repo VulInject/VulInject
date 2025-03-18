@@ -1,0 +1,1 @@
+void blk_queue_alignment_offset ( struct request_queue * q , unsigned int offset ) { q -> limits . alignment_offset = offset & ( q -> limits . physical_block_size - 1 ) ; } 

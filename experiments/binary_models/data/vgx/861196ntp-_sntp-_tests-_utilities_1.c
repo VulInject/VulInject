@@ -1,0 +1,1 @@
+void FinishDebugTest ( const char * expected , const char * actual ) { if ( outputFileOpened ) { fclose ( outputFile ) ; } FILE * e = fopen ( expected , "rb" ) ; FILE * a = fopen ( actual , "rb" ) ; TEST_ASSERT_NOT_NULL ( e , NULL ) ; TEST_ASSERT_NOT_NULL ( a ) ; CompareFileContent ( e , a ) ; } 

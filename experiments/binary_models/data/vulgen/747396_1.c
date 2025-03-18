@@ -1,0 +1,1 @@
+static int minix_tmpfile ( struct inode * dir , struct dentry * dentry , umode_t mode ) { int error ; struct inode * inode = minix_new_inode ( dir , mode , & error ) ; if ( inode ) { minix_set_inode ( inode , 0 ) ; d_tmpfile ( dentry , inode ) ; } return error ; } 

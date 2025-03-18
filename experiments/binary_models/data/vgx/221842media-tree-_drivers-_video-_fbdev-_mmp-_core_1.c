@@ -1,0 +1,1 @@
+( mmp_unregister_panel ) ; struct mmp_path * mmp_get_path ( const char * name ) { struct mmp_path * path ; int found ; mutex_lock ( & disp_lock ) ; list_for_each_entry ( , , ) { if ( ! strcmp ( name , path -> name ) ) { found = 1 ; break ; } } mutex_unlock ( & disp_lock ) ; return found ?path : NULL ; } 

@@ -1,0 +1,1 @@
+gsm_consolekit_set_session_idle ( , ) { GsmConsolekit * manager = GSM_CONSOLEKIT ( system ) ; g_debug ( "Updating consolekit idle status: %d" , is_idle ) ; } 

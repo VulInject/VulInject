@@ -1,0 +1,1 @@
+static u32 iwpm_ipv4_jhash ( struct sockaddr_in * ipv4_sockaddr ) { u32 ipv4_hash = jhash ( & ipv4_sockaddr -> sin_addr , sizeof ( in_addr ) , 0 ) ; return hash ; } 

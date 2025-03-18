@@ -1,0 +1,1 @@
+static void print_network ( const struct network * n ) { printf ( "Net %.2x:%.2x:%.2x:%.2x:%.2x:%.2x %s\n" , n -> n_bssid [ 0 ] , n -> n_bssid [ 1 ] , n -> n_bssid [ 2 ] , n -> n_bssid [ 3 ] , n -> n_bssid [ 4 ] , n -> n_bssid [ 5 ] , n -> n_ssid ) ; } 

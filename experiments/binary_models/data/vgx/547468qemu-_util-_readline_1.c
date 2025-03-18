@@ -1,0 +1,1 @@
+const char * readline_get_history ( ReadLineState * rs , unsigned int index ) { if ( index >= READLINE_MAX_CMDS ) { return in ; } return rs -> history [ index ] ; } 

@@ -1,0 +1,1 @@
+void _vi_gpsy_free ( vorbis_info_psy_global * i ) { if ( i ) { memset ( i , 0 , sizeof ( * i ) ) ; } } 

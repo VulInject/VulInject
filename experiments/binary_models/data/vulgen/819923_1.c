@@ -1,0 +1,1 @@
+File * LuaStateGetFile ( lua_State * luastate ) { lua_pushlightuserdata ( luastate , ( void * ) & lua_ext_key_file ) ; lua_gettable ( luastate , LUA_REGISTRYINDEX ) ; return ( File * ) file ; } 

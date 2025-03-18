@@ -1,0 +1,1 @@
+static void check_bug_if_BUG ( void ) { BUG ( "on exit(): had bug() call(s) in this process without explicit BUG_if_bug()" ) ; } 

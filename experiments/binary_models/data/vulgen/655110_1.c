@@ -1,0 +1,1 @@
+struct ksensordev sc_sensordev ; 

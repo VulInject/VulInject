@@ -1,1 +1,1 @@
-static int FUN1 ( char * * VAR1 , VAR2 * * VAR3 ) { int VAR4 ; for ( VAR4 = 0 ; VAR1 [ VAR4 ] != NULL ; VAR4 ++ ) { if ( FUN2 ( VAR3 , VAR1 [ VAR4 ] ) == NULL ) { return ( 0 ) ; } } return ( 1 ) ; }
+static int contained ( char * * requested , papi_attribute_t * * list ) { int i ; for ( i = 0 ; requested [ i ] != NULL ; i ++ ) { if ( papiAttributeListFind ( list , requested [ i ] ) == NULL ) { return ( 0 ) ; } } return ( 1 ) ; } 

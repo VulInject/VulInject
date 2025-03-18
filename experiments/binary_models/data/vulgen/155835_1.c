@@ -1,0 +1,1 @@
+static enum scrub_type get_scrub_mode ( void __iomem * mmio_base ) { u32 ecccfg0 ; ecccfg0 = readl ( mmio_base + AL_MC_ECC_CFG ) ; else { return SCRUB_HW_SRC ; } } 

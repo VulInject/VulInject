@@ -1,0 +1,1 @@
+void register_parameter_names ( int id ) { add_hook ( & match_def , FUNC_DEF_HOOK ) ; } 

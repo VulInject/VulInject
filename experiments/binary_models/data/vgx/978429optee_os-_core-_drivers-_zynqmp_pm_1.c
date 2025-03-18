@@ -1,0 +1,1 @@
+TEE_Result zynqmp_soc_version ( uint32_t * version ) { uint32_t res = 0 ; res = zynqmp_sip_call ( VERSION_ACCESS_SMC , 0 , 0 , 0 , 0 , version ) ; if ( res ) { EMSG ( "Failed to retrieve version" ) ; return TEE_ERROR_GENERIC ; } return TEE_SUCCESS ; } 

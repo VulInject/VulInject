@@ -1,0 +1,1 @@
+( 0 ) ; FastDivData { int8_t shift1 ; int8_t shift2 ; } FastDivData 

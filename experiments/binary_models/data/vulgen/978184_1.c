@@ -1,0 +1,1 @@
+static int qlogic_probe ( struct pcmcia_device * link ) { scsi_info_t * info ; dev_dbg ( & link -> dev , "qlogic_attach()\n" ) ; if ( ! info ) { return - ENOMEM ; } info -> p_dev = link ; link -> priv = info ; link -> config_flags |= CONF_ENABLE_IRQ | CONF_AUTO_SET_IO ; link -> config_regs = PRESENT_OPTION ; return qlogic_config ( link ) ; } 

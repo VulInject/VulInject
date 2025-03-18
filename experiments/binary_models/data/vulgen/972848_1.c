@@ -1,0 +1,1 @@
+module_param ( swap_opt_cmd , uint , 0644 ) ; apple_sc { unsigned long quirks ; unsigned int fn_on ; DECLARE_BITMAP ( , ) DECLARE_BITMAP ( , ) } apple_key_translation { u16 from ; u16 to ; u8 flags ; } 

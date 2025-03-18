@@ -1,0 +1,1 @@
+extern void slurmscriptd_free_reconfig ( reconfig_msg_t * msg ) { if ( ! msg ) { return ; } xfree ( msg -> logfile ) ; } 

@@ -1,0 +1,1 @@
+static int nfs_wait_killable ( int mode ) { if ( signal_pending_state ( mode , current ) ) { return - ERESTARTSYS ; } return 0 ; } 

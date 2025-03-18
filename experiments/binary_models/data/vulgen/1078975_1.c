@@ -1,0 +1,1 @@
+{ retry if ( * mqc -> bp == 0xff ) { mqc -> bp ++ ; * mqc -> bp = mqc -> c >> 20 ; mqc -> c &= 0xfffff ; mqc -> ct = 7 ; } if ( ( mqc -> c & 0x8000000 ) ) { mqc -> c &= 0x7ffffff ; retry } else { mqc -> bp ++ ; * mqc -> bp = mqc -> c >> 19 ; mqc -> c &= 0x7ffff ; mqc -> ct = 8 ; } } 

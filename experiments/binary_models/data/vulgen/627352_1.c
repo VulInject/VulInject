@@ -1,0 +1,1 @@
+unsigned int num_modes ; const struct display_timing * timings ; unsigned int num_timings ; unsigned int bpc ; { unsigned int width ; unsigned int height ; } , size { unsigned int enable ; unsigned int disable ; unsigned int unprepare ; } , delay u32 bus_format ; u32 bus_flags ; int connector_type ; 

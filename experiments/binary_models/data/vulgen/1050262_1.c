@@ -1,0 +1,1 @@
+static void cxl_ep_remove ( struct cxl_port * port , struct cxl_ep * ep ) { xa_erase ( & port -> endpoints , ( unsigned long ) ep -> ep ) ; cxl_ep_release ( ep ) ; } 

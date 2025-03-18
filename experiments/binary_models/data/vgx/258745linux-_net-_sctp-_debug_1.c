@@ -1,0 +1,1 @@
+const char * sctp_oname ( const union sctp_subtype id ) { return "unknown 'other' event" ; } 

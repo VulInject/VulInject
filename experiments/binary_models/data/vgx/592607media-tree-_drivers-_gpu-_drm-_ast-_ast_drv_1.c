@@ -1,0 +1,1 @@
+static int ast_drm_resume ( struct drm_device * dev ) { int ret ; if ( pci_enable_device ( dev -> pdev ) ) { return - EIO ; } ret = ast_drm_thaw ( dev ) ; drm_kms_helper_poll_enable ( dev ) ; return 0 ; } 

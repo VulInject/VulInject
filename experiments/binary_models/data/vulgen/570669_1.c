@@ -1,0 +1,1 @@
+static void pppoatm_unassign_vcc ( struct atm_vcc * atmvcc ) { struct pppoatm_vcc * pvcc ; pvcc = atmvcc_to_pvcc ( atmvcc ) ; atmvcc -> push = pvcc -> old_push ; atmvcc -> pop = pvcc -> old_pop ; atmvcc -> release_cb = pvcc -> old_release_cb ; ppp_unregister_channel ( & pvcc -> chan ) ; atmvcc -> user_back = NULL ; kfree ( pvcc ) ; } 

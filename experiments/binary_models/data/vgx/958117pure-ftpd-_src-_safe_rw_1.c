@@ -1,0 +1,1 @@
+ssize_t safe_read_partial ( const int fd , void * const buf_ , const size_t max_count ) { unsigned char * const buf = ( unsigned char * ) buf_ ; int readnb ; while ( ( readnb = read ( fd , buf , max_count ) ) < ( ssize_t ) 0 && errno == EINTR ) { } return readnb ; } 

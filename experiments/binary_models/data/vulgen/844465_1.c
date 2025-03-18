@@ -1,0 +1,1 @@
+FUNC ( "gpio" , 1 ) , FUNC ( "sdxc" ) , ; 

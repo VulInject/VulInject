@@ -1,0 +1,1 @@
+SQLRETURN CLSetDescRec ( SQLHDESC descriptor_handle , SQLSMALLINT rec_number , SQLSMALLINT type , SQLSMALLINT subtype , SQLLEN length , SQLSMALLINT precision , SQLSMALLINT scale , int data , SQLLEN * string_length , SQLLEN * indicator ) { return SQL_ERROR ; } 

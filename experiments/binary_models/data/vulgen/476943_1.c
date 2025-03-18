@@ -1,0 +1,1 @@
+static void gb_operation_message_free ( struct gb_message * message ) { kmem_cache_free ( gb_message_cache , message ) ; } 

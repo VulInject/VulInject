@@ -1,0 +1,1 @@
+void cfg80211_sme_disassoc ( struct wireless_dev * wdev ) { struct cfg80211_registered_device * rdev = wiphy_to_rdev ( wdev -> wiphy ) ; wdev -> conn -> state = CFG80211_CONN_DEAUTH ; schedule_work ( & rdev -> conn_work ) ; } 

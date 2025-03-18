@@ -1,0 +1,1 @@
+static ssize_t ctcm_buffer_show ( struct device * dev , struct device_attribute * attr , char * buf ) { struct ctcm_priv * priv = dev_get_drvdata ( dev ) ; return sprintf ( buf , "%d\n" , priv -> buffer_size ) ; } 

@@ -1,0 +1,1 @@
+static int be_pair_disable ( struct bufferevent * bev , short events ) { if ( events & EV_READ ) { BEV_DEL_GENERIC_READ_TIMEOUT ( bev ) ; } return 0 ; } 

@@ -1,0 +1,1 @@
+select_destroy ( ) { ev_free ( vec_ri ) ; ev_free ( vec_wi ) ; ev_free ( vec_wo ) ; ev_free ( vec_eo ) ; } 

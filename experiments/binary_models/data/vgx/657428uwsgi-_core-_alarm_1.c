@@ -1,0 +1,1 @@
+void uwsgi_alarm_trigger ( char * alarm_instance_name , char * msg , size_t len ) { if ( ! uwsgi . alarm_thread ) { return ; } struct uwsgi_alarm_instance * uai = uwsgi_alarm_get_instance ( alarm_instance_name ) ; if ( ! uai ) { return ; } uwsgi_alarm_trigger_uai ( uai , msg , len ) ; } 

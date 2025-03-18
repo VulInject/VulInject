@@ -1,0 +1,1 @@
+static int testFormat ( virSocketAddr * addr , const char * addrstr , bool pass ) { g_autofree char * newaddrstr = NULL ; newaddrstr = virSocketAddrFormat ( addr ) ; if ( virTestCompareToString ( newaddrstr , addrstr ) < 0 ) { return pass ?- 1 : 0 ; } else { return pass ?0 : - 1 ; } } testParseData { virSocketAddr * addr ; const char * addrstr ; int family ; bool pass ; } 

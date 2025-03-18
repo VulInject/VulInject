@@ -1,0 +1,1 @@
+static int acc_api_fixup ( void * * param , int param_no ) { struct acc_param * accp ; char * p ; p = ( char * ) * param ; if ( p == 0 || p [ 0 ] == 0 ) { LM_ERR ( "first parameter is empty\n" ) ; return E_SCRIPT ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static int DV_Run ( GGadget * g , GEvent * e ) { DebugView * dv ; if ( e -> type == et_controlevent && e -> u . control . subtype == et_buttonactivate ) { DVGoFigure ( dv , ( debug_gotype ) GGadgetGetCid ( g ) ) ; } return ( true ) ; } 

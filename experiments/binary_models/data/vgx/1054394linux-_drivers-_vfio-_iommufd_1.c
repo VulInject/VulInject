@@ -1,0 +1,1 @@
+void vfio_iommufd_physical_unbind ( struct vfio_device * vdev ) { lockdep_assert_held ( & vdev -> dev_set -> lock ) ; if ( vdev -> iommufd_attached ) { iommufd_device_detach ( vdev -> iommufd_device ) ; vdev -> iommufd_attached = false ; } iommufd_device_unbind ( vdev -> iommufd_device ) ; } 

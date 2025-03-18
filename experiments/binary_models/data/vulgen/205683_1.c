@@ -1,0 +1,1 @@
+void mlxsw_afa_block_destroy ( struct mlxsw_afa_block * block ) { struct mlxsw_afa_set * set = block -> first_set ; struct mlxsw_afa_set * next_set ; { next_set = set -> next ; mlxsw_afa_set_put ( block -> afa , set ) ; set = next_set ; } set ; mlxsw_afa_fwd_entry_refs_destroy ( block ) ; } 

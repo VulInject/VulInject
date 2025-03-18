@@ -1,0 +1,1 @@
+[ TIPC_NLA_NET_ID ] = { . type = NLA_U32 } , [ TIPC_NLA_NET_ADDR ] = { . type = NLA_U32 } , [ TIPC_NLA_NET_NODEID ] = { . type = NLA_U64 } , [ TIPC_NLA_NET_NODEID_W1 ] = { . type = NLA_U64 } , [ ] = { . type = NLA_FLAG } ; 

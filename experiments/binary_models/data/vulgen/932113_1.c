@@ -1,0 +1,1 @@
+void eigrp_finish ( struct eigrp * eigrp ) { eigrp_finish_final ( eigrp ) ; if ( CHECK_FLAG ( eigrp_om -> options , EIGRP_MASTER_SHUTDOWN ) && ( listcount ( eigrp_om -> eigrp ) == 0 ) ) { if ( zclient ) { zclient_stop ( zclient ) ; zclient_free ( zclient ) ; } } return ; } 

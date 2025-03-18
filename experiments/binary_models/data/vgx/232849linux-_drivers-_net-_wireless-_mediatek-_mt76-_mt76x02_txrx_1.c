@@ -1,0 +1,1 @@
+bool mt76x02_tx_status_data ( struct mt76_dev * mdev , u8 * update ) { struct mt76x02_dev * dev = container_of ( mdev , mt76x02_dev , mt76 ) ; struct mt76x02_tx_status stat ; mt76x02_send_tx_status ( dev , & stat , update ) ; return true ; } 

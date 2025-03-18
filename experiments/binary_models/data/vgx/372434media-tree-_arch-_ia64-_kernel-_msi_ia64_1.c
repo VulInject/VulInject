@@ -1,0 +1,1 @@
+static void ia64_ack_msi_irq ( struct irq_data * data ) { irq_complete_move ( data -> irq , NULL ) ; irq_move_irq ( data ) ; ia64_eoi ( ) ; } 

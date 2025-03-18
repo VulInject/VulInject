@@ -1,0 +1,1 @@
+static int gp8psk_fe_read_snr ( struct dvb_frontend * fe , u16 * snr ) { struct gp8psk_fe_state * st = fe -> demodulator_priv ; gp8psk_fe_update_status ( st , NULL ) ; * snr = st -> snr ; return 0 ; } 

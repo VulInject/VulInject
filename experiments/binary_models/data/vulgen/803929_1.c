@@ -1,0 +1,1 @@
+void qemu_timer_notify_cb ( void * opaque , QEMUClockType type ) { if ( ! icount_enabled ( ) || type != QEMU_CLOCK_VIRTUAL ) { qemu_notify_event ( ) ; return ; } if ( qemu_in_vcpu_thread ( ) ) { qemu_cpu_kick ( current_cpu ) ; } if ( first_cpu ) { async_run_on_cpu ( first_cpu , do_nothing , 0 ) ; } } 

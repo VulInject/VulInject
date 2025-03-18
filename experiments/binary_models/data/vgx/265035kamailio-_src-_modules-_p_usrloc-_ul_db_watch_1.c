@@ -1,0 +1,1 @@
+void check_dbs ( unsigned int ticks , void * param ) static int init_watch_db_list ( void ) int ul_db_watch_init ( void ) { if ( ( list = shm_malloc ( sizeof ( ul_db_watch_list_t * ) ) ) == NULL ) { LM_ERR ( "couldn't allocate shared memory.\n" ) ; return - 1 ; } * list = NULL ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void AddEntryToHostStorage ( Host * h , DetectThresholdEntry * e , SCTime_t packet_time ) { if ( h && e ) { e -> current_count = 1 ; e -> tv1 = packet_time ; e -> next = HostGetStorageById ( h , host_threshold_id ) ; HostSetStorageById ( h , host_threshold_id , e ) ; } } 

@@ -1,0 +1,1 @@
+void get_datestamp ( char * f , size_t fsiz , time_t tt ) { struct tm _tm ; struct tm * tm = & _tm ; localtime_r ( & tt , tm ) ; snprintf ( f , fsiz , "[%d-%02d-%02d %02d:%02d:%02d]" , tm -> tm_year + 1900 , tm -> tm_mon + 1 , tm -> tm_mday , tm -> tm_hour , tm -> tm_min , tm -> tm_sec ) ; } 

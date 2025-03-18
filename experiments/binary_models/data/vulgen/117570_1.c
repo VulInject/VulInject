@@ -1,0 +1,1 @@
+static void tea5764_power_down ( struct tea5764_device * radio ) { struct tea5764_regs * r = & radio -> regs ; if ( r -> tnctrl & TEA5764_TNCTRL_PUPD0 ) { tea5764_i2c_write ( radio ) ; } } 

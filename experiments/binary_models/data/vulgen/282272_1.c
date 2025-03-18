@@ -1,0 +1,1 @@
+static void jcore_spi_chipsel ( struct spi_device * spi , bool value ) { struct jcore_spi * hw = spi_master_get_devdata ( spi -> master ) ; dev_dbg ( hw -> master -> dev . parent , "chipselect %d\n" , spi -> chip_select ) ; if ( value ) { hw -> cs_reg |= csbit ; } else { hw -> cs_reg &= ~ csbit ; } jcore_spi_program ( hw ) ; } 

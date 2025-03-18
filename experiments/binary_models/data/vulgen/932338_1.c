@@ -1,0 +1,1 @@
+static ssize_t serial_show ( struct device * dev , struct device_attribute * attr , char * buf ) { struct zorro_dev * z ; return sprintf ( buf , "0x%08x\n" , be32_to_cpu ( z -> rom . er_SerialNumber ) ) ; } 

@@ -1,0 +1,1 @@
+. pixclock = 187617 , . left_margin = 6 , . right_margin = 26 , . upper_margin = 0 , . lower_margin = 6 , . hsync_len = 6 , . vsync_len = 1 , . sync = 0 , . vmode = FB_VMODE_NONINTERLACED , ; . width = - 1 , . height = , . tim2 = 16 , . cntl = CNTL_LCDTFT | CNTL_BGR , . bpp = 16 , . grayscale = 0 , ; 

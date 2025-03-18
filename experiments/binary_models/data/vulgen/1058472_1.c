@@ -1,0 +1,1 @@
+memset_explicit ( , , ) { return explicit_memset ( s , c , len ) ; ( void ) memset_s ( s , len , c , len ) ; return s ; memset ( s , c , len ) ; volatile return s ; volatile return s ; void ( ( * const volatile volatile_memset ) ( void * , int , size_t ) = memset , volatile_memset ( s , c , len ) ) ; } 

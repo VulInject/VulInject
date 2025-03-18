@@ -1,0 +1,1 @@
+void logicalrep_write_begin ( StringInfo out , ReorderBufferTXN * txn ) { pq_sendbyte ( out , LOGICAL_REP_MSG_BEGIN ) ; pq_sendint64 ( out , txn -> final_lsn ) ; pq_sendint64 ( out , txn -> xact_time . commit_time ) ; } 

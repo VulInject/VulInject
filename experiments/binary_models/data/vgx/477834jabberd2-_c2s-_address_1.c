@@ -1,0 +1,1 @@
+static void _address_features ( sx_t s , sx_plugin_t p , nad_t nad ) { int ns ; _sx_debug ( ZONE , "adding address feature" ) ; ns = nad_add_namespace ( nad , uri_ADDRESS_FEATURE , NULL ) ; nad_append_elem ( nad , ns , "address" , 1 ) ; nad_append_cdata ( nad , s -> ip , strlen ( s -> ip ) , 2 ) ; } 

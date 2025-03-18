@@ -1,0 +1,1 @@
+struct gemini_wdt * to_gemini_wdt ( struct watchdog_device * wdd ) { return container_of ( wdd , gemini_wdt ) ; } 

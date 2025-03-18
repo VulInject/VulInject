@@ -1,0 +1,1 @@
+static void match_wait_for_common ( const char * fn , struct expression * expr , void * unused ) { char * name ; name = expr_to_str ( expr -> left ) ; sm_error ( "'%s()' returns negative and '%s' is unsigned" , fn , name ) ; free_string ( name ) ; } 

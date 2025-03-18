@@ -1,0 +1,1 @@
+trash_state_changed_cb ( , , ) { NautilusFileUndoManager * self = user_data ; if ( is_empty && self -> state == NAUTILUS_FILE_UNDO_MANAGER_STATE_UNDO && NAUTILUS_IS_FILE_UNDO_INFO_TRASH ( self -> info ) ) { g_signal_emit ( self , signals [ SIGNAL_UNDO_CHANGED ] , 0 ) ; } } 

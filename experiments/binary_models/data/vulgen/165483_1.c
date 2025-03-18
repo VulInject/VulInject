@@ -1,0 +1,1 @@
+static void rrn_add ( rrwlock_t * rrl , void * tag ) { rrw_node_t * rn ; rn = kmem_alloc ( sizeof ( * rn ) , KM_SLEEP ) ; rn -> rn_rrl = rrl ; rn -> rn_tag = tag ; VERIFY ( tsd_set ( rrw_tsd_key , rn ) == 0 ) ; } 

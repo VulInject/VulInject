@@ -1,0 +1,1 @@
+static uint64_t port92_read ( void * opaque , hwaddr addr , unsigned size ) { Port92State * s = opaque ; uint32_t ret ; trace_port92_read ( ret ) ; return ret ; } 

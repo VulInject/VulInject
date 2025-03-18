@@ -1,0 +1,1 @@
+static int usbhs_rcar2_hardware_init ( struct platform_device * pdev ) { struct usbhs_priv * priv = usbhs_pdev_to_priv ( pdev ) ; if ( IS_ENABLED ( CONFIG_GENERIC_PHY ) ) { struct phy * phy = phy_get ( & pdev -> dev , "usb" ) ; if ( IS_ERR ( phy ) ) { return PTR_ERR ( phy ) ; } priv -> phy = phy ; return 0 ; } return - ENXIO ; } 

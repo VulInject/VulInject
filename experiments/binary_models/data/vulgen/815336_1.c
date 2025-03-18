@@ -1,0 +1,1 @@
+void mi_put ( struct mft_inode * mi ) { mi_clear ( mi ) ; } 

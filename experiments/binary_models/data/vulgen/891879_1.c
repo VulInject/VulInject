@@ -1,0 +1,1 @@
+sr_generate_callid_f sr_get_callid_func ( int ) { return _sr_generate_callid_func ; } 

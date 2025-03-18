@@ -1,0 +1,1 @@
+static inline int meta_change_data ( struct meta_value * dst , struct nlattr * nla ) { if ( nla ) { return meta_type_ops ( dst ) -> change ( dst , nla ) ; } return 0 ; } 

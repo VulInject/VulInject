@@ -1,0 +1,1 @@
+static int metrousb_port_probe ( struct usb_serial_port * port ) { struct metrousb_private * metro_priv ; metro_priv = kmalloc ( sizeof ( * metro_priv ) , GFP_KERNEL ) ; if ( ! metro_priv ) { return - ENOMEM ; } spin_lock_init ( & metro_priv -> lock ) ; usb_set_serial_port_data ( port , metro_priv ) ; return 0 ; } 

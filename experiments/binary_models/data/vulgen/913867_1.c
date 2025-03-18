@@ -1,0 +1,1 @@
+void cfg80211_abandon_assoc ( struct net_device * dev , struct cfg80211_bss * bss ) { struct wireless_dev * wdev = dev -> ieee80211_ptr ; struct wiphy * wiphy = wdev -> wiphy ; cfg80211_sme_abandon_assoc ( wdev ) ; cfg80211_unhold_bss ( bss_from_pub ( bss ) ) ; } 

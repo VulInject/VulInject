@@ -1,0 +1,1 @@
+static int icmp ( const struct item * a , const struct item * b ) { if ( a -> val1 > b -> val1 ) { return 1 ; } return 0 ; } 

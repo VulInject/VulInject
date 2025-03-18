@@ -1,0 +1,1 @@
+static int cc770_set_mode ( struct net_device * dev , enum can_mode mode ) { switch ( mode ) { case CAN_MODE_START : cc770_start ( dev ) ; break ; default : return - EOPNOTSUPP ; } return 0 ; } 

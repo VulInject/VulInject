@@ -1,0 +1,1 @@
+static void mt7601u_set_channel_target_power ( struct mt7601u_dev * dev , u8 * eeprom , u8 max_pwr ) { u8 trgt_pwr = eeprom [ MT_EE_TX_TSSI_TARGET_POWER ] ; if ( trgt_pwr > max_pwr || ! trgt_pwr ) { dev_warn ( dev -> dev , "Error: EEPROM trgt power invalid %hhx!\n" , trgt_pwr ) ; trgt_pwr = 0x20 ; } } 

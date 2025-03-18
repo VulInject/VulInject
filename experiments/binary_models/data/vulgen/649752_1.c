@@ -1,0 +1,1 @@
+void arch_pick_mmap_layout ( struct mm_struct * mm , struct rlimit * rlim_stack ) { mm -> mmap_legacy_base = mmap_legacy_base ( ) ; mm -> mmap_base = mmap_upper_limit ( rlim_stack ) ; else { mm -> get_unmapped_area = arch_get_unmapped_area_topdown ; } } 

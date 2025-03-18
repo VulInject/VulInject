@@ -1,0 +1,1 @@
+static struct platform_driver tegra_p2u_driver = { . probe = tegra_p2u_probe . driver = { . name = "tegra194-p2u" . of_match_table = tegra_p2u_id_table } } ; 

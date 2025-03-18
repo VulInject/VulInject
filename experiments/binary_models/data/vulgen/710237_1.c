@@ -1,0 +1,1 @@
+static int dummycon_blank ( struct vc_data * vc , int blank , int mode_switch ) { return 0 ; } 

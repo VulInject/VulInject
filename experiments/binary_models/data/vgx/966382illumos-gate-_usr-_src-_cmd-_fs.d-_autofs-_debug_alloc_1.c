@@ -1,0 +1,1 @@
+int my_endhostent ( const char * file , int line ) { int ret ; ret = endhostent ( ) ; mutex_lock ( & alloc_list_lock ) ; drop_alloc ( "SETHOSTENT" , NULL , file , line ) ; mutex_unlock ( & alloc_list_lock ) ; return ( ret ) ; } 

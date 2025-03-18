@@ -1,1 +1,1 @@
-static void FUN1 ( void * VAR1 ) { struct VAR2 * VAR3 = VAR1 ; FUN2 ( VAR3 , NULL ) ; }
+static void ltrf216a_cleanup ( void * data ) { struct iio_dev * indio_dev = data ; ltrf216a_disable ( indio_dev , NULL ) ; } 

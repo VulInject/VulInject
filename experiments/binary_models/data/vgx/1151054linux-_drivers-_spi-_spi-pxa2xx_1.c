@@ -1,0 +1,1 @@
+static void int_error_stop ( struct driver_data * drv_data , const char * msg , int err ) { int_stop_and_reset ( drv_data , NULL ) ; pxa2xx_spi_flush ( drv_data ) ; pxa2xx_spi_off ( drv_data ) ; dev_err ( drv_data -> ssp -> dev , "%s\n" , msg ) ; drv_data -> controller -> cur_msg -> status = err ; spi_finalize_current_transfer ( drv_data -> controller ) ; } 

@@ -1,0 +1,1 @@
+accessor_from_format ( ) { switch ( c ) { case 'i' : return "XINT" ; case 'w' : return "XWINT" ; case 's' : return "XSTR" ; case 'e' : case 'u' : return "XEXP" ; case 'E' : return "XVEC" ; case 'b' : return "XBITMAP" ; case 't' : return "XTREE" ; case 'B' : return "XBBDEF" ; default : } } 

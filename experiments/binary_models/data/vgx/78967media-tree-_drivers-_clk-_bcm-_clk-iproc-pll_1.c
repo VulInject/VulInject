@@ -1,0 +1,1 @@
+static void iproc_pll_disable ( struct clk_hw * hw ) { struct iproc_clk * clk = to_iproc_clk ( hw ) ; struct iproc_pll * pll = clk -> pll ; const struct iproc_pll_ctrl * ctrl = pll -> ctrl ; __pll_disable ( pll ) ; } 

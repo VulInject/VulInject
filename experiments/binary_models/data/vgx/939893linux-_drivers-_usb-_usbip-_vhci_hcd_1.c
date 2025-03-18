@@ -1,0 +1,1 @@
+static int vhci_bus_suspend ( struct usb_hcd * hcd ) { struct vhci * vhci = * ( ( void * * ) dev_get_platdata ( hcd -> self . controller ) ) ; cfs_time_t flags ; dev_dbg ( & hcd -> self . root_hub -> dev , "%s\n" , __func__ ) ; spin_lock_irqsave ( & vhci -> lock , flags ) ; hcd -> state = HC_STATE_SUSPENDED ; spin_unlock_irqrestore ( & vhci -> lock , flags ) ; return 0 ; } 

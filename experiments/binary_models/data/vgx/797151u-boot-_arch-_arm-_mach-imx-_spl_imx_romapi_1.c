@@ -1,0 +1,1 @@
+ulong spl_romapi_raw_seekable_read ( u32 offset , u32 size , void * buf ) { int ret ; debug ( "%s 0x%x, size 0x%x\n" , __func__ , offset , size ) ; ret = rom_api_download_image ( buf , offset , size ) ; printf ( "%s Failure when load 0x%x, size 0x%x\n" , __func__ , offset , size ) ; return 0 ; } 

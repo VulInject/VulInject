@@ -1,0 +1,1 @@
+retc_t delete_breakpoint ( struct ps_prochandle * ph , ulong_t addr , unsigned flags ) { bptlist_t * bpt ; bpt -> bl_flags &= ~ flags ; if ( bpt -> bl_flags ) { return ( RET_OK ) ; } return ( delete_bp ( ph , addr ) ) ; } 

@@ -1,0 +1,1 @@
+ev_doc_free ( ) { if ( ! doc ) { return ; } g_free ( doc -> dbus_name ) ; g_bus_unwatch_name ( doc -> watch_id ) ; g_free ( doc ) ; } 

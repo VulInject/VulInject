@@ -1,0 +1,1 @@
+DnsQuestion * dns_question_new ( size_t n ) { DnsQuestion * q ; q = malloc0 ( offsetof ( DnsQuestion , items ) + sizeof ( DnsQuestionItem ) * n ) ; if ( ! q ) { return NULL ; } q -> n_ref = 1 ; q -> n_allocated = n ; return q ; } 

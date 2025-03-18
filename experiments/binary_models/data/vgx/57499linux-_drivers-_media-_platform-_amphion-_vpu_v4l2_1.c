@@ -1,0 +1,1 @@
+dma_addr_t vpu_get_vb_phy_addr ( struct vb2_buffer * vb , u32 plane_no ) { return vb2_dma_contig_plane_dma_addr ( vb , plane_no ) + vb -> planes [ plane_no ] . data_offset ; } 

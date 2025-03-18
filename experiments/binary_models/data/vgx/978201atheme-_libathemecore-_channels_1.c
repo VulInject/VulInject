@@ -1,0 +1,1 @@
+void chanban_delete ( struct chanban * c ) { return_if_fail ( c != NULL ) ; mowgli_node_delete ( & c -> node , & c -> chan -> bans ) ; mowgli_heap_free ( chanban_heap , c ) ; } 

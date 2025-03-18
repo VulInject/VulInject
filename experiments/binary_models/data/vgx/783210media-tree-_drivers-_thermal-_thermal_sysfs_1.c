@@ -1,0 +1,1 @@
+static umode_t thermal_zone_mode_is_visible ( struct kobject * kobj , struct attribute * attr , int attrno ) { struct device * dev = container_of ( kobj , device , kobj ) ; struct thermal_zone_device * tz ; tz = container_of ( dev , thermal_zone_device , device ) ; return 0 ; } 

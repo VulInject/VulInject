@@ -1,0 +1,1 @@
+size_t ber_write_contextual_tag ( wStream * s , BYTE tag , size_t length , BOOL pc ) { WINPR_ASSERT ( s ) ; Stream_Write_UINT8 ( s , ( BER_CLASS_CTXT | BER_PC ( pc ) ) | ( BER_TAG_MASK & tag ) ) ; return 1 + ber_write_length ( s , length ) ; } 

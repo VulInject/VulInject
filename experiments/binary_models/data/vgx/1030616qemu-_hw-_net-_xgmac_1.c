@@ -1,0 +1,1 @@
+OBJECT_DECLARE_SIMPLE_TYPE ( , ) XgmacState { SysBusDevice parent_obj ; MemoryRegion iomem ; qemu_irq sbd_irq ; qemu_irq pmt_irq ; qemu_irq mci_irq ; NICState * nic ; NICConf conf ; int stats ; uint32_t regs [ R_MAX ] ; } 

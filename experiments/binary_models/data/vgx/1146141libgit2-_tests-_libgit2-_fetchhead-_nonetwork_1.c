@@ -1,0 +1,1 @@
+static int read_noop ( const char * ref_name , const char * remote_url , const git_oid * oid , unsigned int is_merge , void * payload ) { GIT_UNUSED ( ref_name ) ; GIT_UNUSED ( remote_url , NULL ) ; GIT_UNUSED ( oid ) ; GIT_UNUSED ( is_merge ) ; GIT_UNUSED ( payload ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static ssize_t show_cache_disable ( struct cacheinfo * this_leaf , char * buf , unsigned int slot ) { int index ; struct amd_northbridge * nb = this_leaf -> priv ; index = amd_get_l3_disable_slot ( nb , slot ) ; return sprintf ( buf , "FREE\n" ) ; } 

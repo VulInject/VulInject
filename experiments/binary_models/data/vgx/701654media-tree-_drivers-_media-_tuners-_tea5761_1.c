@@ -1,0 +1,1 @@
+static int tea5761_read_status ( struct dvb_frontend * fe , char * buffer ) { struct tea5761_priv * priv = fe -> tuner_priv ; int rc ; if ( 16 != ( rc = tuner_i2c_xfer_recv ( & priv -> i2c_props , buffer , 16 ) ) ) { tuner_warn ( "i2c i/o error: rc == %d (should be 16)\n" , rc ) ; return - EREMOTEIO ; } return 0 ; } 

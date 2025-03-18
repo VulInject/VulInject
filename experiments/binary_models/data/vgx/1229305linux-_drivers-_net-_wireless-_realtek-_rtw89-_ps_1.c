@@ -1,0 +1,1 @@
+void rtw89_leave_ps_mode ( struct rtw89_dev * rtwdev ) { __rtw89_leave_ps_mode ( rtwdev ) ; } 

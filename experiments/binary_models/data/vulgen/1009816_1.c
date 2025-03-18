@@ -1,0 +1,1 @@
+static int __init init_nls_cp850 ( int ) { return register_nls ( & table ) ; } 

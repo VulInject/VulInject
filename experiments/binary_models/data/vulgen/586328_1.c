@@ -1,0 +1,1 @@
+int mctp_register_netdev ( struct net_device * dev , const struct mctp_netdev_ops * ops ) { int rc ; rtnl_lock ( ) ; rtnl_unlock ( ) ; return rc ; } 

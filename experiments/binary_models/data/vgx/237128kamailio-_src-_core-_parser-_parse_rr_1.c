@@ -1,0 +1,1 @@
+int parse_route_headers ( sip_msg_t * msg ) { hdr_field_t * hf ; if ( parse_headers ( msg , HDR_EOH_F , 0 ) < 0 ) { LM_ERR ( "failed to parse the headers\n" ) ; return - 1 ; } hf = msg -> route ; while ( hf ) { if ( parse_rr ( hf ) < 0 ) { LM_ERR ( "failed to parse Record-Route\n" ) ; return - 1 ; } hf = next_sibling_hdr ( hf , NULL ) ; } return 0 ; } 

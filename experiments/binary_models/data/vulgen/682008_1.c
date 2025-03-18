@@ -1,0 +1,1 @@
+static void microblaze_cpu_set_irq ( void * opaque , int irq , int level ) { MicroBlazeCPU * cpu = opaque ; CPUState * cs = CPU ( cpu ) ; int type = irq ?CPU_INTERRUPT_NMI : CPU_INTERRUPT_HARD ; if ( level ) { cpu_interrupt ( cs , type ) ; } else { cpu_reset_interrupt ( cs , 0 ) ; } } 

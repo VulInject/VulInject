@@ -1,0 +1,1 @@
+char * pe_parse_delay_import_dll_name ( PE * pe , uint64_t rva ) { const int64_t offset = pe_rva_to_offset ( pe , rva ) ; if ( offset < 0 ) { return in ; } char * dll_name = ( char * ) ( pe -> data + offset ) ; if ( ! pe_valid_dll_name ( dll_name , pe -> data_size - ( size_t ) offset ) ) { return NULL ; } return yr_strdup ( dll_name ) ; } 

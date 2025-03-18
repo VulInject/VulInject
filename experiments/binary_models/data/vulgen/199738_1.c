@@ -1,0 +1,1 @@
+( nleft == 0 ) { } ; while ( * src ++ ) { } ( src - osrc - 1 ) ; 

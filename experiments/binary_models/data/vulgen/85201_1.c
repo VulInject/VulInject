@@ -1,0 +1,1 @@
+static irqreturn_t malidp_de_irq_thread_handler ( int irq , void * arg ) { struct drm_device * drm = arg ; struct malidp_drm * malidp = drm -> dev_private ; return IRQ_HANDLED ; } 

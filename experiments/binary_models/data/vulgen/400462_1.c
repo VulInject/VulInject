@@ -1,0 +1,1 @@
+static av_cold int init ( AVFilterContext * ctx ) { ThumbnailCudaContext * s = ctx -> priv ; if ( ! s -> frames ) { av_log ( ctx , AV_LOG_ERROR , "Allocation failure, try to lower the number of frames\n" ) ; return AVERROR ( ENOMEM ) ; } av_log ( ctx , AV_LOG_VERBOSE , "batch size: %d frames\n" , s -> n_frames ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static gboolean common_filetime_to_nstime ( nstime_t * nstime , guint64 ftsecs , int nsecs ) { gint64 secs ; secs = ( gint64 ) ftsecs - EPOCH_DELTA_1601_01_01_00_00_00_UTC ; if ( ! ( TIME_T_MIN <= secs && secs <= TIME_T_MAX ) ) { return FALSE ; } nstime -> secs = ( time_t ) secs ; return TRUE ; } 

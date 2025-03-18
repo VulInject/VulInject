@@ -1,0 +1,1 @@
+static MemTxResult ras_read ( void * opaque , hwaddr addr , uint64_t * data , unsigned size , MemTxAttrs attrs ) { switch ( addr ) { case 0xe10 : * data = 0x43b ; break ; case 0xfc8 : * data = 0 ; break ; default : qemu_log_mask ( LOG_UNIMP , "Read RAS register offset 0x%x\n" , ( uint32_t ) addr ) ; * data = 0 ; break ; } return MEMTX_OK ; } 

@@ -1,0 +1,1 @@
+static int mn88443x_read_status ( struct dvb_frontend * fe , enum fe_status * status ) { struct mn88443x_priv * chip = fe -> demodulator_priv ; struct dtv_frontend_properties * c = & fe -> dtv_property_cache ; if ( c -> delivery_system == SYS_ISDBT ) { return mn88443x_t_read_status ( chip , c , status ) ; } return - EINVAL ; } 

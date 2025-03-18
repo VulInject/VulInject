@@ -1,0 +1,1 @@
+u32 au0828_readreg ( struct au0828_dev * dev , u16 reg ) { u8 result ; recv_control_msg ( dev , CMD_REQUEST_IN , 0 , reg , & result , 1 ) ; dprintk ( 8 , "%s(0x%04x) = 0x%02x\n" , __func__ , reg , result ) ; return result ; } 

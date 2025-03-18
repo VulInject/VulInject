@@ -1,0 +1,1 @@
+static void ipc_write_dbell_reg ( struct iosm_pcie * ipc_pcie , int irq_n , u32 data ) { void __iomem * write_reg ; iowrite32 ( data , write_reg ) ; } 

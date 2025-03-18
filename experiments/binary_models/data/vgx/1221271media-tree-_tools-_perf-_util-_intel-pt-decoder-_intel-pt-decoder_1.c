@@ -1,0 +1,1 @@
+static bool intel_pt_next_tsc ( unsigned char * buf , size_t len , uint64_t * tsc ) { struct intel_pt_pkt packet ; int ret ; while ( len ) { ret = intel_pt_get_packet ( buf , len , & packet ) ; if ( ret <= 0 ) { return false ; } if ( packet . type == INTEL_PT_TSC ) { * tsc = packet . payload ; return true ; } buf += ret ; len -= ret ; } return false ; } 

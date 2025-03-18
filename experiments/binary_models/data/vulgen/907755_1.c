@@ -1,0 +1,1 @@
+static void emac_get_regs ( struct net_device * netdev , struct ethtool_regs * regs , void * buff ) { struct emac_adapter * adpt = netdev_priv ( netdev ) ; u32 * val = buff ; unsigned int i ; regs -> version = EMAC_REGS_VERSION ; for ( i = 0 ; i < EMAC_MAX_REG_SIZE ; i ++ ) { val [ i ] = readl ( adpt -> base + emac_regs [ i ] ) ; } } 

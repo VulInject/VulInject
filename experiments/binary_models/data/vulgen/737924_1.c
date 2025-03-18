@@ -1,0 +1,1 @@
+for ( ; ; ) { if ( nq == NULL ) { g = string_cat ( g , lpart ) ; break ; } g = string_catn ( g , lpart , nq - lpart ) ; g = string_catn ( g , US "\\" , 1 ) ; g = string_catn ( g , nq , 1 ) ; lpart = nq + 1 ; } g = string_catn ( g , US "\"" , 1 ) ; return string_from_gstring ( g ) ; 

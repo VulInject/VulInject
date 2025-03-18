@@ -1,0 +1,1 @@
+struct dma_fence * amdgpu_job_submit ( struct amdgpu_job * job ) { struct dma_fence * f ; drm_sched_job_arm ( & job -> base ) ; f = dma_fence_get ( & job -> base . s_fence -> finished ) ; drm_sched_entity_push_job ( & job -> base ) ; return f ; } 

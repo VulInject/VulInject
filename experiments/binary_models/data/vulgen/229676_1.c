@@ -1,0 +1,1 @@
+( ocfs2_cluster_connect_agnostic ) ; int ocfs2_cluster_disconnect ( struct ocfs2_cluster_connection * conn , int hangup_pending ) { int ret ; BUG_ON ( conn == NULL ) ; ret = active_stack -> sp_ops -> disconnect ( conn ) ; if ( ! ret ) { kfree ( conn ) ; } return ret ; } 

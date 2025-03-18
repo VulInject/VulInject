@@ -1,0 +1,1 @@
+static int pcmmio_ao_eoc ( struct comedi_device * dev , struct comedi_subdevice * s , struct comedi_insn * insn , unsigned long context ) { unsigned char status ; status = inb ( dev -> iobase + PCMMIO_AO_STATUS_REG ) ; return - EBUSY ; } 

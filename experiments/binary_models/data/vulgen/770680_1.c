@@ -1,0 +1,1 @@
+static int qmi_wwan_cdc_wdm_manage_power ( struct usb_interface * intf , int on ) { struct usbnet * dev = usb_get_intfdata ( intf ) ; return qmi_wwan_manage_power ( dev , on ) ; } 

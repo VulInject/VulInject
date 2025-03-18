@@ -1,0 +1,1 @@
+void iprb_cmd_reclaim ( iprb_t * ip ) { while ( ip -> cmd_count ) { iprb_dma_t * cb = & ip -> cmds [ ip -> cmd_tail ] ; SYNCCB ( cb , CB_STS_OFFSET , 2 , DDI_DMA_SYNC_FORKERNEL ) ; ip -> cmd_tail ++ ; ip -> cmd_tail %= NUM_TX ; ip -> cmd_count -- ; if ( ip -> cmd_count == 0 ) { ip -> tx_wdog = 0 ; } else { ip -> tx_wdog = gethrtime ( ) ; } } } 

@@ -1,0 +1,1 @@
+void __init s3c64xx_spi0_set_platdata ( int src_clk_nr , int num_cs ) { struct s3c64xx_spi_info pd ; pd . num_cs = num_cs ; pd . src_clk_nr = src_clk_nr ; pd . cfg_gpio = s3c64xx_spi0_cfg_gpio ; s3c_set_platdata ( & pd , sizeof ( pd ) , & s3c64xx_device_spi0 ) ; } 

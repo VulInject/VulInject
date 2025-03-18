@@ -1,0 +1,1 @@
+static void unlist_file ( struct epitems_head * head ) { struct epitems_head * to_free = head ; if ( p ) { struct epitem * epi = container_of ( p , epitem , fllink ) ; spin_lock ( & epi -> ffd . file -> f_lock ) ; if ( ! hlist_empty ( & head -> epitems ) ) { to_free = NULL ; } head -> next = NULL ; spin_unlock ( & epi -> ffd . file -> f_lock ) ; } free_ephead ( to_free ) ; } 

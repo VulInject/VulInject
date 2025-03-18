@@ -1,0 +1,1 @@
+static int lgdt3305_i2c_gate_ctrl ( struct dvb_frontend * fe , int enable ) { struct lgdt3305_state * state = fe -> demodulator_priv ; lg_dbg ( "(%d)\n" , enable ) ; return lgdt3305_set_reg_bit ( state , LGDT3305_GEN_CTRL_2 , 5 , enable ?0 : 1 ) ; } 

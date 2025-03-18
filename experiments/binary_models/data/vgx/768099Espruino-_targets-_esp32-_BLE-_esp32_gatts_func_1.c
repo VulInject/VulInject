@@ -1,0 +1,1 @@
+void notifTimerCB ( ) { if ( notifBufferPnt > 0 ) { sendNotifBuffer ( ) ; } jstStopExecuteFn ( notifTimerCB ) ; inNotif = false ; } 

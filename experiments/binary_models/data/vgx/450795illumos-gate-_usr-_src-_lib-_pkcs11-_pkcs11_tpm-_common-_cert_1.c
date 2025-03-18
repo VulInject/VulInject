@@ -1,0 +1,1 @@
+static CK_RV cert_check_required_attributes ( TEMPLATE * tmpl , CK_ULONG mode ) { CK_ATTRIBUTE * attr = NULL ; CK_BBOOL found ; if ( mode == MODE_CREATE ) { found = template_attribute_find ( tmpl , CKA_CERTIFICATE_TYPE , & attr ) ; if ( found == FALSE ) { return ( CKR_TEMPLATE_INCOMPLETE ) ; } } return ( template_check_required_base_attributes ( tmpl , mode ) ) ; } 

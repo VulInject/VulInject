@@ -1,0 +1,1 @@
+void keynote_keylist_free ( struct keylist * kl ) { struct keylist * kl2 ; while ( kl != NULL ) { kl2 = kl -> key_next ; free ( kl -> key_stringkey ) ; free ( kl ) ; kl = kl2 ; } } 

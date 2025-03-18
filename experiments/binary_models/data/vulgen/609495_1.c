@@ -1,0 +1,1 @@
+static void iwl_mvm_skb_prepare_status ( struct sk_buff * skb , struct iwl_device_tx_cmd * cmd ) { struct ieee80211_tx_info * skb_info = IEEE80211_SKB_CB ( skb ) ; memset ( & skb_info -> status , 0 , sizeof ( skb_info -> status ) ) ; skb_info -> driver_data [ 1 ] = cmd ; } 

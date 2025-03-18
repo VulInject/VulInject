@@ -1,0 +1,1 @@
+static void skl_tplg_update_chmap ( struct skl_module_fmt * fmt , int chs ) { int slot_map = 0xFFFFFFFF ; int start_slot = 0 ; int i ; for ( i = 0 ; i < chs ; i ++ ) { start_slot ++ ; } fmt -> ch_map = slot_map ; } 

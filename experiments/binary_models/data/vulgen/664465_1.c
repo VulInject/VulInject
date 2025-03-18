@@ -1,0 +1,1 @@
+static void close_epoll_handle ( HANDLE h ) { epoll_close ( h ) ; } int epoll_handle static void close_epoll_handle ( int h ) { close ( h ) ; } epollop { int nevents ; epoll_handle epfd ; int timerfd ; } 

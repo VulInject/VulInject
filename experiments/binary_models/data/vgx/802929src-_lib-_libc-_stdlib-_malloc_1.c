@@ -1,0 +1,1 @@
+static int find_chunksize ( size_t size ) { int r ; if ( size < MALLOC_MINSIZE ) { size = MALLOC_MINSIZE ; } size -- ; r = MALLOC_MINSHIFT ; while ( size >> r ) { r ++ ; } return r ; } 

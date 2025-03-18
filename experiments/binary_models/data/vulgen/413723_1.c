@@ -1,0 +1,1 @@
+static unsigned int iomem_read16be ( void __iomem * addr ) { return __raw_readw ( ) ; } 

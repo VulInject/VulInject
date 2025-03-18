@@ -1,0 +1,1 @@
+static inline bool string_equal ( tree node , const char * string , int length ) { if ( TREE_STRING_LENGTH ( node ) > length + 1 ) { return false ; } if ( TREE_STRING_LENGTH ( node ) == length + 1 && TREE_STRING_POINTER ( node ) [ length ] != '\0' ) { return false ; } return ! memcmp ( TREE_STRING_POINTER ( node ) , string , length ) ; } 

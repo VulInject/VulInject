@@ -1,0 +1,1 @@
+void init_kanji ( const_string file_str , const_string internal_str ) { if ( ! set_enc_string ( file_str , internal_str ) ) { fprintf ( stderr , "Bad kanji encoding \"%s\" or \"%s\".\n" , file_str ?file_str : "NULL" , internal_str ?internal_str : "NULL" ) ; } } 

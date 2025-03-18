@@ -1,0 +1,1 @@
+static double get_audio_clock ( PlayerState * is ) { double pts ; int hw_buf_size , bytes_per_sec ; pts = is -> audio_clock ; hw_buf_size = audio_write_get_buf_size ( is ) ; bytes_per_sec = 0 ; if ( is -> audio_st ) { bytes_per_sec = is -> sdl_sample_rate * is -> sdl_channels * av_get_bytes_per_sample ( is -> sdl_sample_fmt ) ; } return pts ; } 

@@ -1,0 +1,1 @@
+int virKeycodeValueTranslate ( virKeycodeSet from_codeset , virKeycodeSet to_codeset , int key_value ) { int i ; if ( key_value < 0 ) { return - 1 ; } for ( i = 0 ; i < VIR_KEYMAP_ENTRY_MAX ; i ++ ) { if ( virKeymapValues [ from_codeset ] [ i ] == key_value ) { return virKeymapValues [ to_codeset ] [ i ] ; } } return - 1 ; } 

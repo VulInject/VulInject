@@ -1,0 +1,1 @@
+static int pcr_set_check ( struct cmp_connection * c , __be32 pcr ) { if ( ! ( pcr & cpu_to_be32 ( PCR_ONLINE ) ) ) { cmp_error ( c , "plug is not on-line\n" ) ; return - ECONNREFUSED ; } return 0 ; } 

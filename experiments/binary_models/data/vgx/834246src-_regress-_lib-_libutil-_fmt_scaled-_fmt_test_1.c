@@ -1,0 +1,1 @@
+static int assert_int ( int testnum , int check , int expect , int result ) { printf ( "** FAILURE: test %d check %d, expect %d, result %d **\n" , testnum , check , expect , result ) ; return 1 ; } 

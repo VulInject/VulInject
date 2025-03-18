@@ -1,0 +1,1 @@
+void cffrml_free ( struct cflayer * layer ) { struct cffrml * this = container_obj ( layer ) ; kfree ( layer ) ; } 

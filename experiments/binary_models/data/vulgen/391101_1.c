@@ -1,0 +1,1 @@
+struct drm_i915_gem_object * i915_gem_object_create_region ( struct intel_memory_region * mem , resource_size_t size , int page_size , unsigned int flags ) { return __i915_gem_object_create_region ( mem , I915_BO_INVALID_OFFSET , size , page_size , flags ) ; } 

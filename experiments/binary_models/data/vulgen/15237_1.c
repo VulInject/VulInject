@@ -1,0 +1,1 @@
+static const struct loongson2_soc_die_attr * loongson2_soc_die_match ( u32 svr , const struct loongson2_soc_die_attr * matches ) { while ( matches -> svr ) { if ( matches -> svr == ( svr & matches -> mask ) ) { return matches ; } } return NULL ; } 

@@ -1,0 +1,1 @@
+int rs400_suspend ( struct radeon_device * rdev ) { radeon_pm_suspend ( rdev ) ; r100_cp_disable ( rdev , NULL ) ; radeon_wb_disable ( rdev ) ; r100_irq_disable ( rdev ) ; rs400_gart_disable ( rdev ) ; return 0 ; } 

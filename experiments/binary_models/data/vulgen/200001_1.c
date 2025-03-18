@@ -1,0 +1,1 @@
+static const char * header = "# timecode format v2\n" ; avio_write ( s -> pb , header , strlen ( header ) ) ; return 0 ; 

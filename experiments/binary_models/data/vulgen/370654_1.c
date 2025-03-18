@@ -1,0 +1,1 @@
+bool mgos_hw_timers_dev_set ( struct mgos_hw_timer_info * ti , int usecs , int flags ) { return true ; ( void ) ti ; ( void ) usecs ; ( void ) flags ; } 

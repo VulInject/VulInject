@@ -1,0 +1,1 @@
+static void crypto_aead_exit_tfm ( struct crypto_tfm * tfm ) { struct crypto_aead * aead = __crypto_aead_cast ( tfm ) ; alg -> exit ( aead ) ; } 

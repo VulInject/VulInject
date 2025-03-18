@@ -1,0 +1,1 @@
+int pcibios_write_config_byte ( unsigned int bus , unsigned int device_fn , unsigned int where , uint8_t value ) { cfs_time_t ret ; unsigned long bx = ( bus << 8 ) | device_fn ; unsigned long flags ; save_flags ( flags ) ; cli ( ) ; restore_flags ( flags ) ; return ( int ) ( ret & 0xff00 ) >> 8 ; } 

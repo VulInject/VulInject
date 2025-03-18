@@ -1,0 +1,1 @@
+static int tea575x_init ( struct bttv * btv ) { btv -> tea . private_data = btv ; btv -> tea . ops = & bttv_tea_ops ; if ( ! snd_tea575x_hw_init ( & btv -> tea ) ) { pr_info ( "%d: detected TEA575x radio\n" , btv -> c . nr ) ; btv -> tea . mute = false ; return 0 ; } btv -> has_tea575x = 0 ; return - ENODEV ; } 

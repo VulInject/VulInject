@@ -1,0 +1,1 @@
+void dpaa2_eth_dl_traps_unregister ( struct dpaa2_eth_priv * priv ) { devlink_traps_unregister ( priv -> devlink , dpaa2_eth_traps_arr , ARRAY_SIZE ( dpaa2_eth_traps_arr ) ) ; devlink_trap_groups_unregister ( priv -> devlink , dpaa2_eth_trap_groups_arr , ARRAY_SIZE ( dpaa2_eth_trap_groups_arr ) ) ; kfree ( priv -> trap_data ) ; } 

@@ -1,0 +1,1 @@
+MODULE_DEVICE_TABLE ( i2c , tca6416_id ) ; tca6416_drv_data { struct input_dev * input ; int data [ ] ; } 

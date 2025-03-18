@@ -1,0 +1,1 @@
+void pvh_hdrs_reset_flags ( struct sip_msg * msg ) { if ( msg -> first_line . type == SIP_REPLY ) { resetflag ( msg , FL_PV_HDRS_COLLECTED ) ; resetflag ( msg , FL_PV_HDRS_APPLIED ) ; } else { resetbflag ( _branch , FL_PV_HDRS_COLLECTED ) ; } } 

@@ -1,0 +1,1 @@
+static int process_events ( union perf_event * * events , size_t count ) { struct perf_evlist * evlist = NULL ; int err = 0 ; int i ; for ( i = 0 ; i < count && ! err ; i ++ ) { err = process_event ( & evlist , events [ i ] ) ; } perf_evlist__delete ( evlist ) ; return err ; } 

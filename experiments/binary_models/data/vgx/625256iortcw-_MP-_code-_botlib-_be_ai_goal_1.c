@@ -1,0 +1,1 @@
+void BotRemoveFromAvoidGoals ( int goalstate , int number ) { int i ; bot_goalstate_t * gs ; gs = BotGoalStateFromHandle ( goalstate ) ; for ( i = 0 ; i < MAX_AVOIDGOALS ; i ++ ) { if ( gs -> avoidgoals [ i ] == number && gs -> avoidgoaltimes [ i ] >= AAS_Time ( ) ) { gs -> avoidgoaltimes [ i ] = 0 ; return ; } } } 

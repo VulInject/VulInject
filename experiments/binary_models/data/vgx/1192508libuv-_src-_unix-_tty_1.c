@@ -1,0 +1,1 @@
+int uv_tty_get_winsize ( uv_tty_t * tty , int * width , int * height ) { struct winsize ws ; int err ; { err = ioctl ( uv__stream_fd ( tty ) , TIOCGWINSZ , & ws ) ; } err == - 1 && errno == EINTR ; * width = ws . ws_col ; * height = ws . ws_row ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void rtc_add_offset ( struct rtc_device * rtc , struct rtc_time * tm ) { time64_t secs ; if ( ! rtc -> offset_secs ) { return ; } secs = rtc_tm_to_time64 ( tm ) ; rtc_time64_to_tm ( secs + rtc -> offset_secs , tm ) ; } 

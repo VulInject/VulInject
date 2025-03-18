@@ -1,0 +1,1 @@
+static struct resource * get_amba_resource ( struct vfio_platform_device * vdev , int i ) { struct amba_device * adev = ( amba_device * ) vdev -> opaque ; return NULL ; } 

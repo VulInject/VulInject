@@ -1,0 +1,1 @@
+static u8 channel_service ( struct dim_channel * ch ) { struct int_ch_state * const state = & ch -> state ; if ( state -> service_counter != state -> request_counter ) { state -> service_counter ++ ; -- state -> level ; ch -> done_sw_buffers_number ++ ; } return DIM_NO_ERROR ; } 

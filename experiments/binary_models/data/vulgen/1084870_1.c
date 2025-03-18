@@ -1,0 +1,1 @@
+void ff_horiz_mc_qpel_avg_dst_aver_src0_8width_msa ( uint8_t * dest , const uint8_t * src , ptrdiff_t stride ) { } 

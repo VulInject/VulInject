@@ -1,0 +1,1 @@
+sd_8255 , sd_8255 , sd_8255 , ; . sdinfo = { 0x00 0x08 0x10 0x3f } , . has_int_sce = true , ; 

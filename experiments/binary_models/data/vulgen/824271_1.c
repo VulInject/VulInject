@@ -1,0 +1,1 @@
+gimp_tool_gyroscope_save ( ) { GimpToolGyroscopePrivate * private = gyroscope -> private ; private -> orig_yaw = private -> yaw ; private -> orig_pitch = private -> pitch ; private -> orig_roll = private -> roll ; } 

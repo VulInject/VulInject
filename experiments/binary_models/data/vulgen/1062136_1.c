@@ -1,0 +1,1 @@
+static int kp_setcontext ( mdb_tgt_t * t , void * context ) { kp_data_t * kp = t -> t_data ; mdb_warn ( "debugger context is already set to proc %p\n" , context ) ; return ( 0 ) ; } 

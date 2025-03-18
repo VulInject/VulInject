@@ -1,1 +1,1 @@
-int main ( void ) { unsigned VAR1 ; int VAR2 = 0 ; for ( VAR1 = 0 ; VAR1 < sizeof ( VAR3 ) / sizeof ( VAR3 [ 0 ] ) ; ++ VAR1 ) { VAR2 += try ( & VAR3 [ VAR1 ] ) ; } return VAR2 != 0 ; }
+int main ( void ) { unsigned i ; int failures = 0 ; for ( i = 0 ; i < sizeof ( cases ) / sizeof ( cases [ 0 ] ) ; ++ i ) { failures += try ( & cases [ i ] ) ; } return failures != 0 ; } 

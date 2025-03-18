@@ -1,0 +1,1 @@
+static inline void hecc_set_bit ( struct ti_hecc_priv * priv , int reg , u32 bit_mask ) { } 

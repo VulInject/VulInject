@@ -1,0 +1,1 @@
+static void hvcs_return_index ( int index ) { if ( index < 0 || index >= hvcs_index_count ) { return ; } if ( hvcs_index_list [ index ] == - 1 ) { return ; } else { hvcs_index_list [ index ] = - 1 ; } } 

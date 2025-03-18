@@ -1,0 +1,1 @@
+int ipmi_si_hardcode_match ( int addr_space , unsigned long addr ) { int i ; if ( addr_space == IPMI_IO_ADDR_SPACE ) { for ( i = 0 ; i < num_ports ; i ++ ) { if ( ports [ i ] == addr ) { return 1 ; } } } else { for ( i = 0 ; i < num_addrs ; i ++ ) { if ( addrs [ i ] == addr ) { return 1 ; } } } return 0 ; } 

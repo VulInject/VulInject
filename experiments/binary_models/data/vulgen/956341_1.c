@@ -1,0 +1,1 @@
+int ip6_datagram_connect ( struct sock * sk , struct sockaddr * uaddr , int addr_len ) { int res ; lock_sock ( sk ) ; release_sock ( sk ) ; return res ; } 

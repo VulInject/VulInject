@@ -1,0 +1,1 @@
+struct ofpbuf * ofputil_encode_set_packet_in_format ( enum ofp_version ofp_version , enum ofputil_packet_in_format format ) { struct ofpbuf * msg = ofpraw_alloc ( OFPRAW_NXT_SET_PACKET_IN_FORMAT , ofp_version , 0 ) ; ovs_be32 * spif = ofpbuf_put_uninit ( msg , sizeof spif ) ; return msg ; } 

@@ -1,0 +1,1 @@
+void log_data_free ( LogData * d ) { if ( d -> type == LOG_FIELD_STRING ) { safe_free ( d -> value . string ) ; } if ( ( d -> type == LOG_FIELD_OBJECT ) && d -> value . object ) { json_decref ( d -> value . object ) ; } safe_free ( d ) ; } 

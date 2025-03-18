@@ -1,0 +1,1 @@
+static void midi_input_intr ( int dev , unsigned char data ) { if ( data == 0xfe ) { return ; } if ( SPACE_AVAIL ( midi_in_buf [ dev ] ) ) { QUEUE_BYTE ( midi_in_buf [ dev ] , data ) ; wake_up ( & input_sleeper [ dev ] ) ; } } 

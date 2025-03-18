@@ -1,0 +1,1 @@
+static int num_counters ; static unsigned long reset_value [ OP_MAX_COUNTER ] ; static u32 ibs_caps ; ibs_config { unsigned long op_enabled ; unsigned long fetch_enabled ; unsigned long max_cnt_fetch ; unsigned long max_cnt_op ; unsigned long rand_en ; unsigned long dispatched_ops ; cfs_time_t branch_target ; } 

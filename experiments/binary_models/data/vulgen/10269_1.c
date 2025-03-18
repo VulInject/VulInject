@@ -1,0 +1,1 @@
+static void iio_dummy_evgen_free ( void ) { kfree ( iio_evgen ) ; } 

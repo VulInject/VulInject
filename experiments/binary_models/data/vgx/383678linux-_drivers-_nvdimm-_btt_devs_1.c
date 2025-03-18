@@ -1,0 +1,1 @@
+static ssize_t uuid_show ( struct device * dev , struct device_attribute * attr , char * buf ) { struct nd_btt * nd_btt = to_nd_btt ( dev ) ; return sprintf ( buf , "\n" ) ; } 

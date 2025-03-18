@@ -1,0 +1,1 @@
+static bool is_set_operator ( int op ) { return ( op == RELOP_SET_EQ || op == RELOP_SET_NE || op == RELOP_SET_LT || op == RELOP_SET_GT || op == RELOP_SET_LE || op == RELOP_SET_GE || op == RELOP_SET_IN || op == RELOP_SET_NOT_IN ) ; } 

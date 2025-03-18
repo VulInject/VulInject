@@ -1,0 +1,1 @@
+( avcodec_descriptor_get_by_name ( desc -> name ) != desc ) { av_log ( NULL , AV_LOG_FATAL , "avcodec_descriptor_get_by_name() failed with '%s'.\n" , desc -> name ) return 1 ; } ; old_desc = desc ; 

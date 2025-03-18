@@ -1,0 +1,1 @@
+static int isc_clk_init ( struct isc_device * isc ) { unsigned int i ; int ret ; for ( i = 0 ; i < ARRAY_SIZE ( isc -> isc_clks ) ; i ++ ) { isc -> isc_clks [ i ] . clk = ERR_PTR ( - EINVAL ) ; } for ( i = 0 ; i < ARRAY_SIZE ( isc -> isc_clks ) ; i ++ ) { ret = isc_clk_register ( isc , i ) ; } return 0 ; } 

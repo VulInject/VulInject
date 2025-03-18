@@ -1,0 +1,1 @@
+void PNGAPI png_set_packswap ( png_structrp png_ptr ) { png_debug ( 1 , "in png_set_packswap" ) ; if ( png_ptr -> bit_depth < 8 ) { png_ptr -> transformations |= PNG_PACKSWAP ; } } 

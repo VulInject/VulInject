@@ -1,0 +1,1 @@
+static int __init register_mrfld_power_btn ( void ) { intel_scu_notifier_add ( & mrfld_power_btn_scu_notifier ) ; return 0 ; } 

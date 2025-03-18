@@ -1,0 +1,1 @@
+static void rr_fail_path ( struct path_selector * ps , struct dm_path * p ) { unsigned long flags ; struct selector * s = ps -> context ; struct path_info * pi = p -> pscontext ; spin_lock_irqsave ( & s -> lock , flags ) ; spin_unlock_irqrestore ( & s -> lock , flags ) ; } 

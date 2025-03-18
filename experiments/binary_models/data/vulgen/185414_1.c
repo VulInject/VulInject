@@ -1,0 +1,1 @@
+int pm_runtime_barrier ( struct device * dev ) { int retval = 0 ; pm_runtime_get_noresume ( dev ) ; spin_lock_irq ( & dev -> power . lock ) ; __pm_runtime_barrier ( dev ) ; spin_unlock_irq ( & dev -> power . lock ) ; pm_runtime_put_noidle ( dev ) ; return retval ; } 

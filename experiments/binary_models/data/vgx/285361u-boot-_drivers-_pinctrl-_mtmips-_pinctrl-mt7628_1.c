@@ -1,0 +1,1 @@
+static int mt7628_set_drv_strength ( void __iomem * base , u32 val , u32 bit , const u32 tbl [ ] , u32 reg_lo , u32 reg_hi ) { int i ; for ( i = 0 ; i < 4 ; i ++ ) { if ( tbl [ i ] == val ) { break ; } } clrsetbits_32 ( base + reg_lo , BIT ( bit ) , ( i & 1 ) << bit ) ; clrsetbits_32 ( base + reg_hi , BIT ( bit ) , ( ( i >> 1 ) & 1 ) << bit ) ; return 0 ; } 

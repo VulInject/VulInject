@@ -1,0 +1,1 @@
+static ssize_t data_read_write_offset ( struct dso * dso , struct machine * machine , u64 offset , u8 * data , ssize_t size , bool out ) { if ( dso__data_file_size ( dso , machine ) ) { return - 1 ; } if ( offset > dso -> data . file_size ) { return - 1 ; } return cached_io ( dso , machine , offset , data , size , out ) ; } 

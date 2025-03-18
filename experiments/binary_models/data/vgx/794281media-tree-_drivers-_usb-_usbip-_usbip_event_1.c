@@ -1,0 +1,1 @@
+( usbip_stop_eh ) ; static struct workqueue_struct * usbip_queue ; static DECLARE_WORK ( usbip_work , event_handler ) ; int usbip_init_eh ( void ) { usbip_queue = create_singlethread_workqueue ( WORK_QUEUE_NAME , NULL ) ; if ( usbip_queue == NULL ) { pr_err ( "failed to create usbip_event\n" ) ; return - ENOMEM ; } return 0 ; } 

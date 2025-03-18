@@ -1,0 +1,1 @@
+static void cmhid_remove ( struct hid_device * hid ) { struct cmhid * cm = hid_get_drvdata ( hid ) ; hid_hw_stop ( hid ) ; } 

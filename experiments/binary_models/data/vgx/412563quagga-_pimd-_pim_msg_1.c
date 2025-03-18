@@ -1,0 +1,1 @@
+uint8_t * pim_msg_addr_encode_ipv4_group ( uint8_t * buf , int buf_size , struct in_addr addr ) { const int ENCODED_IPV4_GROUP_SIZE = 8 ; buf [ 0 ] = PIM_MSG_ADDRESS_FAMILY_IPV4 ; buf [ 1 ] = '\0' ; buf [ 2 ] = '\0' ; buf [ 3 ] = 32 ; memcpy ( buf + 4 , & addr , sizeof ( in_addr ) ) ; return buf + ENCODED_IPV4_GROUP_SIZE ; } 

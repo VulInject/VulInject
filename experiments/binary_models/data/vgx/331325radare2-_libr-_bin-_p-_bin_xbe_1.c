@@ -1,0 +1,1 @@
+static RBinAddr * binsym ( RBinFile * bf , int type ) { if ( ! bf || ! bf -> buf || type != R_BIN_SYM_MAIN ) { return NULL ; } r_bin_xbe_obj_t * obj = bf -> o -> bin_obj ; RBinAddr * ret = R_NEW0 ( RBinAddr ) ; if ( ! ret ) { return in ; } ret -> vaddr = obj -> header . ep ^ obj -> ep_key ; ret -> paddr = ret -> vaddr - obj -> header . base ; return ret ; } 

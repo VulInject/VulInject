@@ -1,0 +1,1 @@
+SDB_API bool dict_del ( dict * m , dicti k ) { int bucket = dict_bucket ( m , k ) ; if ( k == 0 ) { return false ; } dictkv * kv = ( dictkv * ) m -> table [ bucket ] ; if ( kv ) { while ( kv -> k != 0 ) { if ( kv -> k == k ) { if ( m -> f ) { m -> f ( kv -> u ) ; } while ( n -> k != 0 ) { * kv ++ = * n ++ ; } kv -> k = 0 ; return true ; } kv ++ ; } } return false ; } 

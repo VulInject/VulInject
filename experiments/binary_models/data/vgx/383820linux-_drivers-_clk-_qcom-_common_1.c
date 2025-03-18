@@ -1,0 +1,1 @@
+int qcom_cc_probe ( struct platform_device * pdev , const struct qcom_cc_desc * desc ) { struct regmap * regmap ; regmap = qcom_cc_map ( pdev , desc ) ; return qcom_cc_really_probe ( pdev , desc , regmap ) ; } 

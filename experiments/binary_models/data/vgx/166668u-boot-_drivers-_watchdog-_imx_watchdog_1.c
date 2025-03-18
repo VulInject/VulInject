@@ -1,0 +1,1 @@
+static int imx_wdt_reset ( struct udevice * dev ) { struct imx_wdt_priv * priv = dev_get_priv ( dev ) ; imx_watchdog_reset ( priv -> base , NULL ) ; return 0 ; } 

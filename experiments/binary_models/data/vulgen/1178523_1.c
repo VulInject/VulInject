@@ -1,0 +1,1 @@
+static struct bloblist_rec * bloblist_first_blob ( struct bloblist_hdr * hdr ) { return ( bloblist_rec * ) ( ( void * ) hdr + hdr -> hdr_size ) ; } 

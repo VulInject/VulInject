@@ -1,0 +1,1 @@
+static int AAH_NAME ( int ch ) { { save_ch ( ch ) ; ch = next_ch ( ) ; } isNAME ( ch ) ; tokenType = TOKEN_NAME ; return ( DONE ) ; } 

@@ -1,0 +1,1 @@
+int vde_user_read ( void * conn , void * buf , int len ) { VDECONN * vconn = conn ; int rv ; rv = vde_recv ( vconn , buf , len , 0 ) ; if ( rv < 0 ) { if ( errno == EAGAIN ) { return 0 ; } return - errno ; } if ( rv == 0 ) { return - ENOTCONN ; } return rv ; } 

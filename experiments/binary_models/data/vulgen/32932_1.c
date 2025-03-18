@@ -1,0 +1,1 @@
+static void amd_pmu_cpu_reset ( int cpu ) { if ( x86_pmu . lbr_nr ) { static_call amd_pmu_branch_reset ( ) } if ( x86_pmu . version < 2 ) { return ; } wrmsrl ( MSR_AMD64_PERF_CNTR_GLOBAL_CTL , 0 ) ; } 

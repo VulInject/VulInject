@@ -1,0 +1,1 @@
+static void match_return ( struct expression * expr ) { char * name ; if ( is_impossible_path ( ) ) { return ; } if ( ! expr ) { return ; } name = expr_to_var ( expr ) ; sm_warning ( "returning freed memory '%s'" , name ) ; set_state_expr ( my_id , expr , & ok ) ; free_string ( name ) ; } 

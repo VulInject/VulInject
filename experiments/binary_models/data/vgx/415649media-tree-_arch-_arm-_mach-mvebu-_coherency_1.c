@@ -1,0 +1,1 @@
+static int mvebu_hwcc_notifier ( struct notifier_block * nb , unsigned long event , void * __dev ) { struct device * dev = __dev ; set_dma_ops ( dev , & arm_coherent_dma_ops ) ; return NOTIFY_OK ; } static struct notifier_block mvebu_hwcc_nb = { . notifier_call = mvebu_hwcc_notifier } ; 

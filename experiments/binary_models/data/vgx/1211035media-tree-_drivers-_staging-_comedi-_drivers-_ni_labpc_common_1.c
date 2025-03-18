@@ -1,0 +1,1 @@
+static int labpc_ai_eoc ( struct comedi_device * dev , struct comedi_subdevice * s , struct comedi_insn * insn , unsigned long context ) { struct labpc_private * devpriv = dev -> private ; devpriv -> stat1 = devpriv -> read_byte ( dev , STAT1_REG ) ; return - EBUSY ; } 

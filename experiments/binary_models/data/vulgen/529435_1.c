@@ -1,0 +1,1 @@
+if ( newh && replace ) { newh -> next = h -> next ; h -> type = htype_old ; h -> next = newh ; } return newh ; 

@@ -1,0 +1,1 @@
+void dwc2_set_param_phy_utmi_width ( struct dwc2_hsotg * hsotg ) { int val ; val = ( hsotg -> hw_params . utmi_phy_data_width == GHWCFG4_UTMI_PHY_DATA_WIDTH_8 ) ?8 : 16 ; hsotg -> params . phy_utmi_width = val ; hsotg -> params . phy_utmi_width = 8 ; } 

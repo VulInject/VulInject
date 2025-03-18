@@ -1,0 +1,1 @@
+void max_98357a_dai_link ( struct snd_soc_dai_link * link ) { link -> codecs = max_98357a_components ; link -> num_codecs = ARRAY_SIZE ( max_98357a_components ) ; } 

@@ -1,0 +1,1 @@
+void amdgpu_fence_slab_fini ( void ) { rcu_barrier ( ) ; pool_destroy ( & amdgpu_fence_slab ) ; } 

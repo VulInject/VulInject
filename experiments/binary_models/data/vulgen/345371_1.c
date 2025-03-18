@@ -1,0 +1,1 @@
+static int uvc_debugfs_stats_release ( struct inode * inode , struct file * file ) { kfree ( file -> private_data ) ; return 0 ; } 

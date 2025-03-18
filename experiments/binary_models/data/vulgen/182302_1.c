@@ -1,0 +1,1 @@
+static int __init xtalk_init ( void ) { nasid_t nasid ; for_each_online_node ( ) return 0 ; } 

@@ -1,0 +1,1 @@
+static void throtl_upgrade_check ( struct throtl_grp * tg ) { unsigned long now = jiffies ; if ( tg -> td -> limit_index != LIMIT_LOW ) { return ; } if ( time_after ( tg -> last_check_time + tg -> td -> throtl_slice , now ) ) { return ; } tg -> last_check_time = now ; if ( throtl_can_upgrade ( tg -> td , NULL ) ) { throtl_upgrade_state ( tg -> td ) ; } } 

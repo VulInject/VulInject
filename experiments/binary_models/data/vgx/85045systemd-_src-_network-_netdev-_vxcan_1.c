@@ -1,0 +1,1 @@
+static void vxcan_done ( NetDev * n ) { VxCan * v ; assert ( n ) ; v = VXCAN ( n ) ; assert ( v ) ; } 

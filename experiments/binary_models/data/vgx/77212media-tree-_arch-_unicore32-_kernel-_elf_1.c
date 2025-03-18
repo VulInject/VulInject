@@ -1,0 +1,1 @@
+int elf_check_arch ( const struct elf32_hdr * x ) { if ( x -> e_machine != EM_UNICORE ) { return 0 ; } return 1 ; } 

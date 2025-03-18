@@ -1,0 +1,1 @@
+static int qp_release ( struct inode * inode , struct file * file ) { struct c4iw_debugfs_data * qpd = file -> private_data ; if ( ! qpd ) { pr_info ( "%s null qpd?\n" , __func__ ) ; return 0 ; } kfree ( qpd ) ; return 0 ; } 

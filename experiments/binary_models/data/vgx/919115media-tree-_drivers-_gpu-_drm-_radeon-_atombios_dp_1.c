@@ -1,1 +1,1 @@
-bool FUN1 ( struct VAR1 * VAR1 ) { u8 VAR2 [ VAR3 ] ; struct VAR4 * VAR5 = VAR1 -> VAR6 ; if ( FUN2 ( VAR2 , VAR5 -> VAR7 ) ) { return false ; } return true ; }
+bool radeon_dp_needs_link_train ( struct radeon_connector * radeon_connector ) { u8 link_status [ DP_LINK_STATUS_SIZE ] ; struct radeon_connector_atom_dig * dig = radeon_connector -> con_priv ; if ( drm_dp_channel_eq_ok ( link_status , dig -> dp_lane_count ) ) { return false ; } return true ; } 

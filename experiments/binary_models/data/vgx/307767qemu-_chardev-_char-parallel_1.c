@@ -1,1 +1,1 @@
-static int FUN1 ( VAR1 * VAR2 , uint16_t VAR3 ) { if ( VAR2 -> VAR3 != VAR3 ) { int VAR4 = VAR3 ; VAR2 -> VAR3 = VAR3 ; } return 1 ; }
+static int pp_hw_mode ( ParallelChardev * s , uint16_t mode ) { if ( s -> mode != mode ) { int m = mode ; s -> mode = mode ; } return 1 ; } 

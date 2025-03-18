@@ -1,0 +1,1 @@
+buffer_json_member_add_double ( wb , "con" , ( qt -> query_stats . volume > 0 ) ?d -> volume * 100.0 / qt -> query_stats . volume : 0.0 ) ; buffer_json_object_close ( wb , NULL ) ; 

@@ -1,0 +1,1 @@
+static void input_key ( struct system76_data * data , unsigned int code ) { input_report_key ( data -> input , code , 1 ) ; input_sync ( data -> input , NULL ) ; input_report_key ( data -> input , code , 0 ) ; input_sync ( data -> input ) ; } 

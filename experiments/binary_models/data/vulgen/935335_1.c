@@ -1,0 +1,1 @@
+bool is_valid_irk ( ble_gap_irk_t const * p_irk ) { for ( uint32_t i = 0 ; i < BLE_GAP_SEC_KEY_LEN ; i ++ ) { if ( p_irk -> irk [ i ] != 0 ) { return true ; } } return false ; } 

@@ -1,0 +1,1 @@
+static inline dns_msgblock_t * msgblock_allocate ( unsigned int sizeof_type , unsigned int count ) { dns_msgblock_t * block ; unsigned int length ; length = sizeof ( dns_msgblock_t ) + ( sizeof_type * count ) ; if ( block == NULL ) { return ( NULL ) ; } block -> count = count ; block -> remaining = count ; ISC_LINK_INIT ( block , link ) ; return ( block ) ; } 

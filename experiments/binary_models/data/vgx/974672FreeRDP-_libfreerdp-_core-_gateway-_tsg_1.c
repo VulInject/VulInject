@@ -1,0 +1,1 @@
+static BOOL tsg_packet_header_to_string ( char * * buffer , size_t * length , const TSG_PACKET_HEADER * header ) { WINPR_ASSERT ( buffer ) ; WINPR_ASSERT ( length , NULL ) ; WINPR_ASSERT ( header ) ; return tsg_print ( buffer , length , "header { ComponentId=0x%04" PRIx16 ", PacketId=0x%04" PRIx16 " }" , header -> ComponentId , header -> PacketId ) ; } 

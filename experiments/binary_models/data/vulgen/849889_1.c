@@ -1,0 +1,1 @@
+static int parport_probe ( struct pcmcia_device * link ) { parport_info_t * info ; dev_dbg ( & link -> dev , "parport_attach()\n" ) ; if ( ! info ) { return - ENOMEM ; } link -> priv = info ; info -> p_dev = link ; link -> config_flags |= CONF_ENABLE_IRQ | CONF_AUTO_SET_IO ; return parport_config ( link ) ; } 

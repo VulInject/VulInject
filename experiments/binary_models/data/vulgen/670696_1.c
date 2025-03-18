@@ -1,0 +1,1 @@
+void removenode ( struct entry * ep ) { char * cp ; if ( ep -> e_type != NODE ) { badentry ( ep , "removenode: not a node" ) ; } ep -> e_flags |= REMOVED ; ep -> e_flags &= ~ TMPNAME ; cp = myname ( ep ) ; if ( ! Nflag && rmdir ( cp ) == - 1 ) { warn ( "%s" , cp ) ; return ; } Vprintf ( stdout , "Remove node %s\n" , cp ) ; } 

@@ -1,0 +1,1 @@
+static int cm3605_get_lux ( struct cm3605 * cm3605 ) { int ret , res ; s64 lux ; ret = iio_read_channel_processed ( cm3605 -> aout , & res ) ; if ( ret < 0 ) { return ret ; } dev_dbg ( cm3605 -> dev , "read %d mV from ADC\n" , res ) ; if ( res < 30 ) { return 0 ; } lux = res - 30 ; lux *= cm3605 -> als_max ; lux = div64_s64 ( lux , CM3605_AOUT_TYP_MAX_MV ) ; return lux ; } 

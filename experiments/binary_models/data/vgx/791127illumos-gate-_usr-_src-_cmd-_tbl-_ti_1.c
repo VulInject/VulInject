@@ -1,0 +1,1 @@
+if ( kl == '=' && kr == '=' ) { return ( THRU ) ; } if ( kr == '=' ) { return ( RIGHT ) ; } return ( 0 ) ; 

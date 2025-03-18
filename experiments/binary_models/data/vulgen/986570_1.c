@@ -1,0 +1,1 @@
+void clear_hv_tscchange_cb ( void ) { struct hv_reenlightenment_control re_ctrl ; rdmsrl ( HV_X64_MSR_REENLIGHTENMENT_CONTROL , * ( u64 * ) & re_ctrl ) ; re_ctrl . enabled = 0 ; wrmsrl ( HV_X64_MSR_REENLIGHTENMENT_CONTROL , * ( u64 * ) & re_ctrl ) ; hv_reenlightenment_cb = NULL ; } 

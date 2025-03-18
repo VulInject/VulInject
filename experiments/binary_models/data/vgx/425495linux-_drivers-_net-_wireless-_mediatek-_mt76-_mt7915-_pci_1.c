@@ -1,0 +1,1 @@
+static struct mt7915_hif * mt7915_pci_get_hif2 ( u32 idx ) { struct mt7915_hif * hif ; u32 val ; spin_lock_bh ( & hif_lock ) ; list_for_each_entry ( , , ) { val = readl ( hif -> regs + MT_PCIE_RECOG_ID ) ; val &= MT_PCIE_RECOG_ID_MASK ; get_device ( hif -> dev ) ; out } hif = NULL ; out spin_unlock_bh ( & hif_lock ) ; return hif ; } 

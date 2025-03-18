@@ -1,0 +1,1 @@
+static void LogTlsLogExitPrintStats ( ThreadVars * tv , void * data ) { LogTlsLogThread * aft = ( LogTlsLogThread * ) data ; SCLogInfo ( "TLS logger logged %" PRIu32 " requests" , aft -> tls_cnt ) ; } 

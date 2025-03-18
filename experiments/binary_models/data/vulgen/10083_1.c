@@ -1,0 +1,1 @@
+int __db_byteorder ( dbenv , lorder ) DB_ENV * dbenv ; int lorder ; { switch ( lorder ) { case 0 : break ; case 1234 : return ( DB_SWAPBYTES ) ; break ; case 4321 : break ; return ( DB_SWAPBYTES ) ; default : return ( EINVAL ) ; } return ( 0 ) ; } 

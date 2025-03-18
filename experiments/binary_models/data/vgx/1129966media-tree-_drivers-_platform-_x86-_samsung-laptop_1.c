@@ -1,0 +1,1 @@
+static ssize_t set_lid_handling ( struct device * dev , struct device_attribute * attr , const char * buf , size_t count ) { struct samsung_laptop * samsung = dev_get_drvdata ( dev ) ; int ret , value ; ret = write_lid_handling ( samsung , ! ! value ) ; if ( ret < 0 ) { return ret ; } return count ; } 

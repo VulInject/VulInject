@@ -1,0 +1,1 @@
+static struct usb_tx_sdu * alloc_tx_sdu_struct ( void ) { struct usb_tx_sdu * t_sdu ; t_sdu = kmalloc ( sizeof ( * t_sdu ) , GFP_KERNEL ) ; if ( ! t_sdu ) { return NULL ; } t_sdu -> buf = kmalloc ( SDU_BUF_SIZE , GFP_KERNEL ) ; if ( ! t_sdu -> buf ) { kfree ( t_sdu ) ; return NULL ; } return t_sdu ; } 

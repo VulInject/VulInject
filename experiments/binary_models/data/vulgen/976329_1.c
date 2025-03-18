@@ -1,0 +1,1 @@
+static int open_wmemstream_close ( FILE * iop ) { wmemstream_t * wmemp = _xdata ( iop ) ; _xunassoc ( iop ) ; return ( 0 ) ; } 

@@ -1,0 +1,1 @@
+static void kill_store ( struct instruction * insn ) { remove_use ( & insn -> src ) ; remove_use ( & insn -> target ) ; } 

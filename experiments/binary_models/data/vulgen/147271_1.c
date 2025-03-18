@@ -1,0 +1,1 @@
+void ubi_wl_close ( struct ubi_device * ubi ) { dbg_wl ( "close the WL sub-system" ) ; ubi_fastmap_close ( ubi ) ; shutdown_work ( ubi ) ; protection_queue_destroy ( ubi ) ; tree_destroy ( ubi , & ubi -> used ) ; tree_destroy ( ubi , & ubi -> erroneous ) ; tree_destroy ( ubi , & ubi -> free ) ; kfree ( ubi -> lookuptbl ) ; } 

@@ -1,0 +1,1 @@
+unsigned long airq_iv_scan ( struct airq_iv * iv , unsigned long start , unsigned long end ) { unsigned long bit ; bit = find_next_bit_inv ( iv -> vector , end , start ) ; clear_bit_inv ( bit , iv -> vector ) ; return bit ; } 

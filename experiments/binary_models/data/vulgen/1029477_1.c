@@ -1,0 +1,1 @@
+main ( int argc , char * * argv ) { return rsvg_tools_main ( & argc , & argv ) ; } 

@@ -1,0 +1,1 @@
+long WINAPI ff_dshow_filter_JoinFilterGraph ( DShowFilter * this , IFilterGraph * graph , const wchar_t * name ) { dshowdebug ( "ff_dshow_filter_JoinFilterGraph(%p)\n" , this ) ; this -> info . pGraph = graph ; return S_OK ; } 

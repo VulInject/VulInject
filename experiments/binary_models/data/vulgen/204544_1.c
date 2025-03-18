@@ -1,0 +1,1 @@
+void acpi_handle_facp ( struct FACPbody * facp ) { struct ACPIsdt * dsdp ; acpi_print_facp ( facp ) ; if ( facp -> dsdt_ptr == 0 ) { dsdp = ( ACPIsdt * ) acpi_map_sdt ( facp -> x_dsdt ) ; } else { dsdp = ( ACPIsdt * ) acpi_map_sdt ( facp -> dsdt_ptr ) ; } if ( acpi_checksum ( dsdp , dsdp -> len ) ) { errx ( 1 , "DSDT is corrupt" ) ; } acpi_handle_dsdt ( dsdp ) ; } 

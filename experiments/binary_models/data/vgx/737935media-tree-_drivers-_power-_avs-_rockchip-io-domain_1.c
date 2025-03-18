@@ -1,0 +1,1 @@
+static void rk3368_iodomain_init ( struct rockchip_iodomain * iod ) { int ret ; u32 val ; val = RK3368_SOC_CON15_FLASH0 | ( RK3368_SOC_CON15_FLASH0 << 16 ) ; ret = regmap_write ( iod -> grf , RK3368_SOC_CON15 , val ) ; if ( ret < 0 ) { dev_warn ( iod -> dev , "couldn't update flash0 ctrl\n" ) ; } } 

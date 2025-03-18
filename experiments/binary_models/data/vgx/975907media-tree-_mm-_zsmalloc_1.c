@@ -1,0 +1,1 @@
+static void remove_zspage ( struct size_class * class , struct zspage * zspage , enum fullness_group fullness ) { VM_BUG_ON ( list_empty ( & class -> fullness_list [ fullness ] ) ) ; VM_BUG_ON ( is_zspage_isolated ( zspage ) ) ; list_del ( & zspage -> list ) ; zs_stat_dec ( class , fullness , 1 ) ; } 

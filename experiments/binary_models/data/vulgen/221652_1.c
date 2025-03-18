@@ -1,0 +1,1 @@
+MODULE_FIRMWARE ( "nvidia/ga102/acr/ucode_ahesasc.bin" ) ; MODULE_FIRMWARE ( "nvidia/ga103/acr/ucode_ahesasc.bin" ) ; MODULE_FIRMWARE ( "nvidia/ga104/acr/ucode_ahesasc.bin" ) ; MODULE_FIRMWARE ( "nvidia/ga106/acr/ucode_ahesasc.bin" ) ; static const struct nvkm_acr_hsf_fwif ga102_acr_ahesasc_fwif [ ] { { 0 ga100_acr_hsfw_ctor & ga102_acr_ahesasc_0 NVKM_ACR_HSF_SEC2 } { } } ; ; 

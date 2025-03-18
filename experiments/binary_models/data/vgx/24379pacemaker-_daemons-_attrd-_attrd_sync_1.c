@@ -1,0 +1,1 @@
+static void free_waitlist_node ( gpointer data ) { struct waitlist_node * wl = ( waitlist_node * ) data ; free ( wl -> client_id ) ; } 

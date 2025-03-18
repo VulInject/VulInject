@@ -1,0 +1,1 @@
+int sqphymatch ( struct device * , void * , void * ) int sqphyattach ( struct device * , struct device * , void * ) const struct cfattach sqphy_ca = { sizeof ( mii_softc ) sqphymatch sqphyattach mii_phy_detach } ; 

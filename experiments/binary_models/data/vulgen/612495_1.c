@@ -1,0 +1,1 @@
+static void props_skip ( nvlist_t * props , nvlist_t * skipped , nvlist_t * * newprops ) { nvpair_t * pair ; pair = NULL ; while ( ( pair = nvlist_next_nvpair ( props , pair ) ) != NULL ) { if ( nvlist_exists ( skipped , nvpair_name ( pair ) ) ) { continue ; } VERIFY ( nvlist_add_nvpair ( * newprops , pair ) == 0 ) ; } } 

@@ -1,0 +1,1 @@
+static void detachfromtty ( ) { ( void ) chdir ( "/" ) ; ( void ) setsid ( ) ; ( void ) close ( 0 ) ; ( void ) close ( 1 ) ; ( void ) close ( 2 ) ; ( void ) open ( "/dev/null" , O_RDWR , 0 ) ; ( void ) dup2 ( 0 , 1 ) ; ( void ) dup2 ( 0 , 2 ) ; openlog ( prog , LOG_PID , LOG_DAEMON ) ; } 

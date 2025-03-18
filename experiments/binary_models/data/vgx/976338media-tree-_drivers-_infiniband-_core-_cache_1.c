@@ -1,0 +1,1 @@
+( ib_find_cached_gid ) ; int ib_find_gid_by_filter ( struct ib_device * device , const union ib_gid * gid , u8 port_num , bool * filter ( const union ib_gid * gid , const struct ib_gid_attr * , void * ) , void * context , u16 * index ) { return ib_cache_gid_find_by_filter ( device , gid , port_num , filter , context , index ) ; } 

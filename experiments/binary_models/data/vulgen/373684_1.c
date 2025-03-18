@@ -1,0 +1,1 @@
+int lkdtm_check_bool_cmdline ( const char * param ) { char * command_line ; struct check_cmdline_args args = { . param = param . value = - ESRCH } ; command_line = kstrdup ( saved_command_line , GFP_KERNEL ) ; if ( ! command_line ) { return - ENOMEM ; } parse_args ( "Setting sysctl args" , command_line , NULL , 0 , - 1 , - 1 , & args , lkdtm_parse_one ) ; return args . value ; } 

@@ -1,0 +1,1 @@
+static void mvebu_uart_put_poll_char ( struct uart_port * port , unsigned char c ) { int st ; for ( ; ; ) { st = readl ( port -> membase + UART_STAT ) ; if ( ! ( st & STAT_TX_FIFO_FUL ) ) { break ; } udelay ( 1 ) ; } writel ( c , port -> membase + UART_TSH ) ; } 

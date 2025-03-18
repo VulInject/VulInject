@@ -1,1 +1,1 @@
-static void FUN1 ( np_client_t VAR1 ) { FUN2 ( "" ) ; }
+static void np_lock ( np_client_t client ) { debug_info ( "Locked" ) ; } 

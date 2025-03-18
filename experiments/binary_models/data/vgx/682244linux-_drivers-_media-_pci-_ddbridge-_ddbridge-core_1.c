@@ -1,0 +1,1 @@
+irqreturn_t ddb_irq_handler0 ( int irq , void * dev_id ) { struct ddb * dev = ( ddb * ) dev_id ; u32 mask = 0x8fffff00 ; u32 s = mask & ddbreadl ( dev , INTERRUPT_STATUS ) ; { if ( s & 0x80000000 ) { return IRQ_NONE ; } ddbwritel ( dev , s , INTERRUPT_ACK ) ; irq_handle_io ( dev , s ) ; } ( s = mask & ddbreadl ( dev , INTERRUPT_STATUS ) ) ; return IRQ_HANDLED ; } 

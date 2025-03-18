@@ -1,0 +1,1 @@
+static char * getpass ( const char * prompt ) { int c ; int i = 0 ; fputs ( prompt , stderr ) ; for ( ; ; ) { c = _getch ( ) ; if ( c == '\r' ) { getpassbuf [ i ] = '\0' ; break ; } if ( i < PASS_MAX ) { getpassbuf [ i ++ ] = c ; } } fputs ( "\r\n" , stderr ) ; return getpassbuf ; } 

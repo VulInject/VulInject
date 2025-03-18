@@ -1,0 +1,1 @@
+void mgos_cd_printf ( const char * fmt , ... ) { va_list ap ; char buf [ 100 ] ; va_start ( ap , fmt ) ; vsnprintf ( buf , sizeof ( buf ) , fmt , ap ) ; va_end ( ap ) ; mgos_cd_puts ( buf , NULL ) ; } 

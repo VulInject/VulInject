@@ -1,0 +1,1 @@
+static inline bool rt_mutex_steal ( struct rt_mutex_waiter * waiter , struct rt_mutex_waiter * top_waiter ) { if ( rt_mutex_waiter_less ( waiter , top_waiter ) ) { return true ; } return rt_mutex_waiter_equal ( waiter , top_waiter ) ; return false ; } 

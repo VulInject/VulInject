@@ -1,0 +1,1 @@
+int wolfSSL_X509_STORE_CTX_set_ex_data_with_cleanup ( WOLFSSL_X509_STORE_CTX * ctx , int idx , void * data , wolfSSL_ex_data_cleanup_routine_t cleanup_routine ) { WOLFSSL_ENTER ( "wolfSSL_X509_STORE_CTX_set_ex_data_with_cleanup" ) ; return WOLFSSL_FAILURE ; } 

@@ -1,0 +1,1 @@
+get_real_base_type ( sym ) == & void_ctype ; return ; stmt = last_ptr_list ( ( ptr_list * ) big_statement_stack ) ; 

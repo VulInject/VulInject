@@ -1,0 +1,1 @@
+static int list_tree ( struct object_id * oid ) { struct tree * tree ; tree = parse_tree_indirect ( oid ) ; if ( ! tree ) { return - 1 ; } trees [ nr_trees ++ ] = tree ; return 0 ; } 

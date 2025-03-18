@@ -1,0 +1,1 @@
+void __qcom_scm_init ( void ) { u64 cmd ; struct arm_smccc_res res ; u32 function = QCOM_SCM_FNID ( QCOM_SCM_SVC_INFO , QCOM_IS_CALL_AVAIL_CMD ) ; cmd = ARM_SMCCC_CALL_VAL ( ARM_SMCCC_FAST_CALL , ARM_SMCCC_SMC_64 , ARM_SMCCC_OWNER_SIP , function ) ; if ( ! res . a0 && res . a1 ) { qcom_smccc_convention = ARM_SMCCC_SMC_64 ; } else { qcom_smccc_convention = ARM_SMCCC_SMC_32 ; } } 

@@ -1,0 +1,1 @@
+static int radiustab_init ( void ) { quotatab_register_backend ( "radius" , radiustab_open , QUOTATAB_LIMIT_SRC ) ; pr_event_register ( & quotatab_radius_module , "core.module-unload" , radiustab_mod_unload_ev ) ; return 0 ; } module quotatab_radius_module = { NULL NULL 0x20 "quotatab_radius" NULL NULL NULL radiustab_init NULL } ; 

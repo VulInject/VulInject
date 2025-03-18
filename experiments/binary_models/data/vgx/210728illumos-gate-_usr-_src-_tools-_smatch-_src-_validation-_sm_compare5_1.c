@@ -1,0 +1,1 @@
+void func ( void ) { a = b + 3 ; c = d - 3 ; if ( a > 10 ) { return ; } __smatch_implied ( a , NULL ) ; __smatch_implied ( b ) ; if ( 10 > c ) { return ; } __smatch_implied ( c ) ; __smatch_implied ( d ) ; } 

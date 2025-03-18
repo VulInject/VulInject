@@ -1,0 +1,1 @@
+gimp_move_options_set_property ( , , , ) { GimpMoveOptions * options = GIMP_MOVE_OPTIONS ( object ) ; switch ( property_id ) { case PROP_MOVE_TYPE : options -> move_type = g_value_get_enum ( value ) ; break ; case PROP_MOVE_CURRENT : options -> move_current = g_value_get_boolean ( value ) ; break ; default : break ; } } 

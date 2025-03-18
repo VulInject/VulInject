@@ -1,0 +1,1 @@
+static int wl18xx_get_spare_blocks ( struct wl1271 * wl , bool is_gem ) { struct wl18xx_priv * priv = wl -> priv ; return WL18XX_TX_HW_BLOCK_SPARE ; } 

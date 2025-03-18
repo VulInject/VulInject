@@ -1,0 +1,1 @@
+static void exynos_lpass_disable ( struct exynos_lpass * lpass ) { regmap_write ( lpass -> top , SFR_LPASS_INTR_CPU_MASK , 0 ) ; regmap_write ( lpass -> top , SFR_LPASS_INTR_CA5_MASK , 0 ) ; clk_disable_unprepare ( lpass -> sfr0_clk , NULL ) ; } 

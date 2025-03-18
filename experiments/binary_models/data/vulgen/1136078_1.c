@@ -1,0 +1,1 @@
+blkid_tag_iterate blkid_tag_iterate_begin ( blkid_dev dev ) { blkid_tag_iterate iter ; if ( ! dev ) { errno = EINVAL ; return NULL ; } iter = malloc ( sizeof ( blkid_struct_tag_iterate ) ) ; return ( iter ) ; } 

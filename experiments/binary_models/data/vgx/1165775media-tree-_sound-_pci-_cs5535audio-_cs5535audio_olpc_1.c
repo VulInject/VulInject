@@ -1,0 +1,1 @@
+void olpc_mic_bias ( struct snd_ac97 * ac97 , int on ) { int err ; on = on ?0 : 1 ; err = snd_ac97_update_bits ( ac97 , AC97_AD_MISC , 1 << AC97_AD_VREFD_SHIFT , on << AC97_AD_VREFD_SHIFT ) ; if ( err < 0 ) { dev_err ( ac97 -> bus -> card -> dev , "setting MIC Bias - %d\n" , err ) ; } } 

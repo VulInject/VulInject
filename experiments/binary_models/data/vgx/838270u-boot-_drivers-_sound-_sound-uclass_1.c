@@ -1,0 +1,1 @@
+int sound_setup ( struct udevice * dev ) { struct sound_ops * ops = sound_get_ops ( dev ) ; return ops -> setup ( dev ) ; } 

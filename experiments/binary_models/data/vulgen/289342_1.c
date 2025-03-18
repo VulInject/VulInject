@@ -1,0 +1,1 @@
+TEST ( ) { int f , pid = fork ( ) ; char mm [ 64 ] ; if ( ! pid ) { pthread_t pt ; pthread_create ( & pt , NULL , thread , NULL ) ; pthread_join ( pt , NULL ) ; execlp ( "true" , "true" , NULL ) ; } sleep ( 1 ) ; sprintf ( mm , "/proc/%d/mem" , pid ) ; ASSERT_GE ( f , 0 ) ; close ( f ) ; f = kill ( pid , SIGCONT ) ; ASSERT_EQ ( f , 0 ) ; } 

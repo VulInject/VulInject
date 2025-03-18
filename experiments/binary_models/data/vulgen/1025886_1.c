@@ -1,0 +1,1 @@
+void hotplug_handler_unplug ( HotplugHandler * plug_handler , DeviceState * plugged_dev , Error * * errp ) { HotplugHandlerClass * hdc = HOTPLUG_HANDLER_GET_CLASS ( plug_handler ) ; } 

@@ -1,0 +1,1 @@
+nss_status_t _nss_files_destr ( be , dummy ) files_backend_ptr_t be ; void * dummy ; { if ( be != 0 ) { if ( be -> f != 0 ) { ( void ) _nss_files_endent ( be , 0 ) ; } if ( be -> hashinfo != NULL ) { ( void ) mutex_lock ( & be -> hashinfo -> fh_lock ) ; ( void ) mutex_unlock ( & be -> hashinfo -> fh_lock ) ; } free ( be ) ; } return ( NSS_SUCCESS ) ; } 

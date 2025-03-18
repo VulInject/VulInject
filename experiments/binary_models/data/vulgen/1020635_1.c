@@ -1,0 +1,1 @@
+static void do_setsockopt ( int fd , int level , int optname , int val ) { } 

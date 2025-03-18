@@ -1,0 +1,1 @@
+static int zfs_replay_error ( void * arg1 , void * arg2 , int byteswap ) { return ( SET_ERROR ( ENOTSUP ) ) ; } 

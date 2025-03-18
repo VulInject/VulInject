@@ -1,0 +1,1 @@
+main ( ) { { static char stack [ SIGSTKSZ * NR_LEVELS ] ; struct sigaltstack alt ; alt . ss_sp = stack ; alt . ss_size = SIGSTKSZ ; alt . ss_flags = 0 ; if ( sigaltstack ( & alt , NULL ) < 0 ) { perror ( "sigaltstack" ) ; exit ( 0 ) ; } } level = MAIN ; catcher ( 0 ) ; } 

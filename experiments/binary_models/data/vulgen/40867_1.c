@@ -1,0 +1,1 @@
+void nmi_node_eframe_save ( cnodeid_t cnode ) { nasid_t nasid ; int slice ; if ( cnode == CNODEID_NONE ) { return ; } nasid = COMPACT_TO_NASID_NODEID ( cnode ) ; if ( nasid == INVALID_NASID ) { return ; } for ( slice = 0 ; slice < NODE_NUM_CPUS ( slice ) ; slice ++ ) { nmi_cpu_eframe_save ( nasid , slice ) ; } } 

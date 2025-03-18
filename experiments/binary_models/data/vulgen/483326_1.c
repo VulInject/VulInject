@@ -1,0 +1,1 @@
+static int dm9161_config_intr ( struct phy_device * phydev ) { int temp ; temp = phy_read ( phydev , MII_DM9161_INTR ) ; if ( PHY_INTERRUPT_ENABLED == phydev -> interrupts ) { temp &= ~ ( MII_DM9161_INTR_STOP ) ; } else { temp |= MII_DM9161_INTR_STOP ; } temp = phy_write ( phydev , MII_DM9161_INTR , temp ) ; return temp ; } 

@@ -1,0 +1,1 @@
+static void dummy_packet_stream_wait ( struct dummy_packet_stream * s ) { stream_run_wait ( s -> stream ) ; stream_recv_wait ( s -> stream ) ; } 

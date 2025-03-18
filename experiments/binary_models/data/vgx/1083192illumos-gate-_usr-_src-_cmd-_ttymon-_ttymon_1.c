@@ -1,0 +1,1 @@
+static void free_defs ( void ) { int i ; struct Gdef * tp ; tp = & Gdef [ 0 ] ; for ( i = 0 ; i < Ndefs ; i ++ , tp ++ ) { free ( tp -> g_iflags ) ; free ( tp -> g_fflags ) ; free ( tp -> g_nextid ) ; tp -> g_id = NULL ; tp -> g_iflags = NULL ; tp -> g_fflags = NULL ; tp -> g_nextid = NULL ; } Ndefs = 0 ; } 

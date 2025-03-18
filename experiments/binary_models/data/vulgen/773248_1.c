@@ -1,0 +1,1 @@
+static void vnic_get_strings ( struct net_device * netdev , u32 stringset , u8 * data ) { int i ; for ( i = 0 ; i < VNIC_STATS_LEN ; i ++ ) { memcpy ( data + i * ETH_GSTRING_LEN , vnic_gstrings_stats [ i ] . stat_string , ETH_GSTRING_LEN ) ; } } 

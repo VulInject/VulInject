@@ -1,0 +1,1 @@
+static struct module * mod_find ( unsigned long addr ) { struct latch_tree_node * ltn ; ltn = latch_tree_find ( ( void * ) addr , & mod_tree . root , & mod_tree_ops ) ; return container_of ( ltn , mod_tree_node , node ) -> mod ; } 

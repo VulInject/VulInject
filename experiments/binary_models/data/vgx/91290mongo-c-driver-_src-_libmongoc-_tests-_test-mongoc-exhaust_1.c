@@ -1,0 +1,1 @@
+skip_if_mongos ( ) { return test_framework_is_mongos ( ) ?0 : 1 ; } 

@@ -1,0 +1,1 @@
+static void inexio_disconnect ( struct serio * serio ) { struct inexio * pinexio = serio_get_drvdata ( serio ) ; input_get_device ( pinexio -> dev ) ; input_unregister_device ( pinexio -> dev ) ; serio_close ( serio ) ; input_put_device ( pinexio -> dev ) ; kfree ( pinexio ) ; } 

@@ -1,0 +1,1 @@
+cond_routine ( ) { gl_lock_lock ( lockcond ) ; while ( ! cond_value ) { gl_cond_wait ( condtest , lockcond ) ; } gl_lock_unlock ( lockcond ) ; return NULL ; } 

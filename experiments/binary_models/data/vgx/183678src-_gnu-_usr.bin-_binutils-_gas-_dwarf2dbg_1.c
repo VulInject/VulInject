@@ -1,0 +1,1 @@
+get_frag_fix ( ) { frchainS * fr ; for ( fr = frchain_root ; fr ; fr = fr -> frch_next ) { if ( fr -> frch_last == frag ) { return ( char * ) obstack_next_free ( & fr -> frch_obstack ) - frag -> fr_literal ; } } abort ( ) ; } 

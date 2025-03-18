@@ -1,0 +1,1 @@
+static unsigned int read_next_entry ( TreeBuildData * build ) { unsigned int result ; result = build -> next_entry ; ++ build -> next_entry ; return result ; } 

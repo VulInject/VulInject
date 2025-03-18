@@ -1,0 +1,1 @@
+int ice_ptp_get_ts_config ( struct ice_pf * pf , struct ifreq * ifr ) { struct hwtstamp_config * config ; config = & pf -> ptp . tstamp_config ; return copy_to_user ( ifr -> ifr_data , config , sizeof ( * config ) ) ?- EFAULT : 0 ; } 

@@ -1,0 +1,1 @@
+Suite * qhold_suite ( void ) { Suite * s = suite_create ( "qhold_suite methods" ) ; TCase * tc_core = tcase_create ( "test_one" ) ; tcase_add_test ( tc_core , test_one ) ; } 

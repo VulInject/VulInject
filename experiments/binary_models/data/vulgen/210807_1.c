@@ -1,0 +1,1 @@
+static void bochs_unload ( struct drm_device * dev ) { struct bochs_device * bochs = dev -> dev_private ; bochs_fbdev_fini ( bochs ) ; bochs_kms_fini ( bochs ) ; bochs_mm_fini ( bochs ) ; bochs_hw_fini ( dev ) ; dev -> dev_private = NULL ; } 

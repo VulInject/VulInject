@@ -1,0 +1,1 @@
+static void qcrypto_tls_creds_x509_finalize ( Object * obj ) { QCryptoTLSCredsX509 * creds = QCRYPTO_TLS_CREDS_X509 ( obj ) ; qcrypto_tls_creds_x509_unload ( creds ) ; } 

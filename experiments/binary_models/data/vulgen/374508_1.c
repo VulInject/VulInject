@@ -1,0 +1,1 @@
+uint32_t nrf_drv_ppi_init ( void ) { uint32_t err_code ; else { err_code = NRF_ERROR_MODULE_ALREADY_INITIALIZED ; } NRF_LOG_INFO ( "Function: %s, error code: %s.\r\n" , ( uint32_t ) __func__ , ( uint32_t ) ERR_TO_STR ( err_code ) ) ; return err_code ; } 

@@ -1,0 +1,1 @@
+int dn_nsp_xmit_timeout ( struct sock * sk ) { struct dn_scp * scp = DN_SK ( sk ) ; dn_nsp_output ( sk , NULL ) ; if ( ! skb_queue_empty ( & scp -> data_xmit_queue ) || ! skb_queue_empty ( & scp -> other_xmit_queue ) ) { scp -> persist = dn_nsp_persist ( sk ) ; } return 0 ; } 

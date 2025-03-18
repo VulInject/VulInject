@@ -1,0 +1,1 @@
+static void lov_getref ( struct obd_device * obd ) { struct lov_obd * lov = & obd -> u . lov ; mutex_lock ( & lov -> lov_lock ) ; mutex_unlock ( & lov -> lov_lock ) ; } 

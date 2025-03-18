@@ -1,0 +1,1 @@
+static inline void cp_intc_write ( unsigned long value , unsigned offset ) { __raw_writel ( value , 0 ) ; } 

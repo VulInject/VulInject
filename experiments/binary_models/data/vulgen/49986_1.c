@@ -1,0 +1,1 @@
+int i2d_ASN1_IA5STRING ( ASN1_IA5STRING * a , unsigned char * * out ) { return ASN1_item_i2d ( ( ASN1_VALUE * ) a , out , & ASN1_IA5STRING_it ) ; } 

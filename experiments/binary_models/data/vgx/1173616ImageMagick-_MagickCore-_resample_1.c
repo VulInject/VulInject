@@ -1,0 +1,1 @@
+ssize_t image_area ; PixelInterpolateMethod interpolate ; VirtualPixelMethod virtual_pixel ; FilterType filter ; MagickBooleanType limit_reached , do_interpolate , average_defined ; PixelInfo average_pixel ; double A , B , C , Vlimit , Ulimit , Uwidth , slope ; int filter_lut [ WLUT_WIDTH ] ; ResizeFilter * filter_def ; double F ; double support ; size_t signature ; 

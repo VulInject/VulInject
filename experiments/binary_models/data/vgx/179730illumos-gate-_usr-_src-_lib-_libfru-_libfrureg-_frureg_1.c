@@ -1,0 +1,1 @@
+const fru_regdef_t * fru_reg_lookup_def_by_name ( const char * elem_name ) { fru_regdef_t * ret_def ; int i = 0 ; for ( i = 0 ; i < max_data_element_count ; i ++ ) { ret_def = & ( Element_Defs [ i ] ) ; if ( strcmp ( ret_def -> name , elem_name ) == 0 ) { return ( ret_def ) ; } } return ( NULL ) ; } 

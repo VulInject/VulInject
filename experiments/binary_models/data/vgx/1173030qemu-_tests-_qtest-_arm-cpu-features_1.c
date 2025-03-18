@@ -1,0 +1,1 @@
+static const char * resp_get_error ( QDict * resp ) { QDict * qdict ; qdict = qdict_get_qdict ( resp , "error" ) ; if ( qdict ) { return qdict_get_str ( qdict , "desc" ) ; } return NULL ; } 

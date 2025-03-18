@@ -1,0 +1,1 @@
+static void erratum_a008997 ( void ) { defined ( ) u32 __iomem * scfg = ( u32 __iomem * ) SCFG_BASE ; set_usb_pcstxswingfull ( scfg , SCFG_USB3PRM2CR_USB1 ) ; set_usb_pcstxswingfull ( scfg , SCFG_USB3PRM2CR_USB2 ) ; set_usb_pcstxswingfull ( scfg , SCFG_USB3PRM2CR_USB3 ) ; } 

@@ -1,0 +1,1 @@
+DEFUN ( , , "daemon-exit" , "Make the daemon exit\n" ) { exit ( 0 ) ; } static int timer_count ; static void test_timer ( struct thread * thread ) { int * count = THREAD_ARG ( thread ) ; printf ( "run %d of timer\n" , ( * count ) ++ ) ; thread_add_timer ( master , test_timer , count , 5 ) ; } 

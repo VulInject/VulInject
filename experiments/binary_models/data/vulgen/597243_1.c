@@ -1,0 +1,1 @@
+static void loop_filter_ # # dir # # _ # # wd1 # # wd2 # # _ # # bpp # # _ # # opt ( , , , , ) { ff_vp9_loop_filter_ # # dir # # _ # # wd1 # # _ # # bpp # # _ # # opt ( dst , stride , E & 0xff , I & 0xff , H & 0xff ) ff_vp9_loop_filter_ # # dir # # _ # # wd2 # # _ # # bpp # # _ # # opt ( dst , stride , E >> 8 , I >> 8 , H >> 8 ) } ; 

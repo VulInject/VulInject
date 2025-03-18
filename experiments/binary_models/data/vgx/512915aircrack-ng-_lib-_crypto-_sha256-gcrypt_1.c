@@ -1,0 +1,1 @@
+void Digest_SHA256_Destroy ( Digest_SHA256_CTX * ctx ) { REQUIRE ( ctx != NULL ) ; } 

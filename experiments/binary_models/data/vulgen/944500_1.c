@@ -1,0 +1,1 @@
+static void move_command_destruct ( Command_t * parent ) static CmdExecuteValue_t move_command_execute ( Command_t * parent ) 

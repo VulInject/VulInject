@@ -1,0 +1,1 @@
+static void me_roleplay ( struct MsgBuf * msgbuf_p , struct Client * client_p , struct Client * source_p , int parc , const char * parv [ ] ) { struct Channel * chptr ; sendto_channel_local ( source_p , ALL_MEMBERS , chptr , ":%s!%s@npc.fakeuser.invalid PRIVMSG %s :%s" , parv [ 2 ] , source_p -> name , parv [ 1 ] , parv [ 3 ] ) ; } 

@@ -1,0 +1,1 @@
+sss_status_t glue_cipher_one_go ( void * cipher , TEE_OperationMode mode , uint8_t * iv , size_t iv_len , uint8_t * key , size_t key_len , const uint8_t * src , uint8_t * dst , size_t len ) { if ( crypto_cipher_update ( cipher , 0 , true , src , len , dst ) ) { return kStatus_SSS_Fail ; } crypto_cipher_final ( cipher ) ; return kStatus_SSS_Success ; } 

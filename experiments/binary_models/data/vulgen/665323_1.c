@@ -1,0 +1,1 @@
+static enum drm_mode_status hyperv_mode_valid ( struct drm_device * dev , const struct drm_display_mode * mode ) { struct hyperv_drm_device * hv = to_hv ( dev ) ; return MODE_OK ; } 

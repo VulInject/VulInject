@@ -1,0 +1,1 @@
+static void on_ifjoin_expiry_timer ( struct thread * t ) { struct pim_ifchannel * ch ; ch = THREAD_ARG ( t ) ; if ( PIM_DEBUG_PIM_TRACE ) { zlog_debug ( "%s: ifchannel %s expiry timer" , __func__ , ch -> sg_str ) ; } } 

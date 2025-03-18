@@ -1,0 +1,1 @@
+struct dc_transfer_func * dc_create_transfer_func ( void ) { struct dc_transfer_func * tf = kvzalloc ( sizeof ( * tf ) , GFP_KERNEL ) ; if ( tf == NULL ) { alloc_fail } return tf ; alloc_fail return NULL ; } 

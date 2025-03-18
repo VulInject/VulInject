@@ -1,0 +1,1 @@
+static void z_erofs_decompressqueue_work ( struct work_struct * work ) { struct z_erofs_decompressqueue * bgq = container_of ( work , z_erofs_decompressqueue , u . work ) ; struct page * pagepool = NULL ; DBG_BUGON ( bgq -> head == Z_EROFS_PCLUSTER_TAIL_CLOSED ) ; z_erofs_decompress_queue ( bgq , & pagepool ) ; erofs_release_pages ( & pagepool ) ; } 

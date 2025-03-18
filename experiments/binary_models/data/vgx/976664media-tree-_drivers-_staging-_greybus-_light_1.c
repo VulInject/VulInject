@@ -1,0 +1,1 @@
+static struct gb_channel * get_channel_from_mode ( struct gb_light * light , u32 mode ) { struct gb_channel * channel = NULL ; int i ; for ( i = 0 ; i < light -> channels_count ; i ++ ) { channel = & light -> channels [ i ] ; if ( channel && channel -> mode == mode ) { break ; } } return channel ; } 

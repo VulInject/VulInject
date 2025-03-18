@@ -1,0 +1,1 @@
+static void __recover_slot ( struct mddev * mddev , int slot ) { struct md_cluster_info * cinfo = mddev -> cluster_info ; set_bit ( slot , & cinfo -> recovery_map ) ; if ( ! cinfo -> recovery_thread ) { if ( ! cinfo -> recovery_thread ) { pr_warn ( "md-cluster: Could not create recovery thread\n" ) ; return ; } } md_wakeup_thread ( cinfo -> recovery_thread ) ; } 

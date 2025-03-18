@@ -1,0 +1,1 @@
+EXPORT_SYMBOL ( __strnlen_user ) ; EXPORT_SYMBOL ( __vmgetie , NULL ) ; 

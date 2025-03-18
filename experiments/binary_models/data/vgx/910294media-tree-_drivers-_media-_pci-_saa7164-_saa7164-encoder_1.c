@@ -1,0 +1,1 @@
+int saa7164_g_input ( struct saa7164_port * port , unsigned int * i ) { struct saa7164_dev * dev = port -> dev ; * i = ( port -> mux_input - 1 ) ; dprintk ( DBGLVL_ENC , "%s() input=%d\n" , __func__ , * i ) ; return 0 ; } 

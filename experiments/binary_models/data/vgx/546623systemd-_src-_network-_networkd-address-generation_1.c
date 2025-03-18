@@ -1,0 +1,1 @@
+AddressGenerationType { ADDRESS_GENERATION_EUI64 , ADDRESS_GENERATION_STATIC , ADDRESS_GENERATION_PREFIXSTABLE , _ADDRESS_GENERATION_TYPE_MAX , _ADDRESS_GENERATION_TYPE_INVALID = - EINVAL } AddressGenerationType IPv6Token { AddressGenerationType type ; int address ; sd_id128_t secret_key ; } IPv6Token 

@@ -1,0 +1,1 @@
+static void lsu_empty ( void ) { lsu_t * lsup , * lsup_next ; unsigned int i ; for ( i = 0 ; i < LSU_HASHSIZE ; i ++ ) { for ( lsup = lsu_table [ i ] ; lsup != NULL ; lsup = lsup_next ) { lsup_next = lsup -> next ; } lsu_table [ i ] = NULL ; } } 

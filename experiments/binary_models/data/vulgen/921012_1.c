@@ -1,0 +1,1 @@
+static int do_demo_light ( struct cmd_tbl * cmdtp , int flag , int argc , char * const argv [ ] ) { int light ; int ret ; if ( argc ) { light = hextoul ( argv [ 0 ] , NULL ) ; } else { ret = demo_get_light ( demo_dev ) ; if ( ret >= 0 ) { printf ( "Light: %x\n" , ret ) ; ret = 0 ; } } return ret ; } 

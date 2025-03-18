@@ -1,0 +1,1 @@
+static short _rtl92e_check_nic_enough_desc ( struct net_device * dev , int prio ) { struct r8192_priv * priv = rtllib_priv ( dev ) ; struct rtl8192_tx_ring * ring = & priv -> tx_ring [ prio ] ; return 0 ; } 

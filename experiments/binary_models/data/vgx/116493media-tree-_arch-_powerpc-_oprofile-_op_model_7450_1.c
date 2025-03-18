@@ -1,1 +1,1 @@
-static void FUN1 ( void ) { FUN2 ( ) ; FUN3 ( ) ; }
+static void fsl7450_stop ( void ) { pmc_stop_ctrs ( ) ; mb ( ) ; } 

@@ -1,0 +1,1 @@
+static void mapply ( struct matchinfo * , struct cfdata * ) deferred_config { TAILQ_ENTRY ( ) dc_queue struct device * dc_dev ; int * dc_func ( struct device * ) } 

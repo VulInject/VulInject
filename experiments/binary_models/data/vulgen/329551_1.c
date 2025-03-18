@@ -1,0 +1,1 @@
+static void bcm63xx_rng_cleanup ( struct hwrng * rng ) { struct bcm63xx_rng_priv * priv = to_rng_priv ( rng ) ; u32 val ; val = __raw_readl ( priv -> regs + RNG_CTRL ) ; val &= ~ RNG_EN ; __raw_writel ( val , priv -> regs + RNG_CTRL ) ; } 

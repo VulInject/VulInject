@@ -1,0 +1,1 @@
+static int altera_jtaguart_putc ( struct udevice * dev , const char ch ) { struct altera_jtaguart_plat * plat = dev_get_plat ( dev ) ; struct altera_jtaguart_regs * const regs = plat -> regs ; u32 st = readl ( & regs -> control ) ; if ( ! ( st & ALTERA_JTAG_AC ) ) { return - ENETUNREACH ; } writel ( ch , & regs -> data ) ; return 0 ; } 

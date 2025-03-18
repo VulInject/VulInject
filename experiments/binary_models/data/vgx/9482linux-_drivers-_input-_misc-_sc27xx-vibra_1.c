@@ -1,0 +1,1 @@
+static int sc27xx_vibra_hw_init ( struct vibra_info * info ) { const struct sc27xx_vibra_data * data = info -> data ; return regmap_update_bits ( info -> regmap , info -> base , data -> cur_drv_cal_sel , 0 ) ; } 

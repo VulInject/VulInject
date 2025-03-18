@@ -1,0 +1,1 @@
+static TEE_Result op_attr_25519_from_user ( void * attr , const void * buffer , size_t size ) { uint8_t * * key = attr ; memcpy ( * key , buffer , size ) ; return TEE_SUCCESS ; } 

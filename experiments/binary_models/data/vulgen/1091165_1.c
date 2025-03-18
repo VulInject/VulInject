@@ -1,0 +1,1 @@
+uc_is_category_Cs ( ) { return ( uc >= 0xd800 && uc < 0xe000 ) ; } 

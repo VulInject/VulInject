@@ -1,0 +1,1 @@
+static const char * mv88e6060_get_name ( struct mii_bus * bus , int sw_addr ) { int ret ; ret = mdiobus_read ( bus , sw_addr + REG_PORT ( 0 ) , PORT_SWITCH_ID ) ; if ( ret >= 0 ) { if ( ret == PORT_SWITCH_ID_6060 ) { return "Marvell 88E6060 (A0)" ; } if ( ( ret & PORT_SWITCH_ID_6060_MASK ) == PORT_SWITCH_ID_6060 ) { return "Marvell 88E6060" ; } } return NULL ; } 

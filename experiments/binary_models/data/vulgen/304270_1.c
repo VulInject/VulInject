@@ -1,0 +1,1 @@
+static inline unsigned int ltc3676_scale ( unsigned int uV , u32 r1 , u32 r2 ) { uint64_t tmp ; tmp = ( uint64_t ) uV * r1 ; do_div ( tmp , r2 ) ; return uV + ( unsigned int ) tmp ; } 

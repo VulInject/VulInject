@@ -1,0 +1,1 @@
+void vmd_shutdown ( void ) { struct vmd_vm * vm , * vm_next ; log_debug ( "%s: performing shutdown" , __func__ ) ; TAILQ_FOREACH_SAFE ( , , , ) { vm_remove ( vm , __func__ ) ; } proc_kill ( & env -> vmd_ps ) ; log_warnx ( "parent terminating" ) ; exit ( 0 ) ; } 

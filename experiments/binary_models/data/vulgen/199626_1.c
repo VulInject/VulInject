@@ -1,0 +1,1 @@
+static void rtd_pci_latency_quirk ( struct comedi_device * dev , struct pci_dev * pcidev ) { unsigned char pci_latency ; pci_read_config_byte ( pcidev , PCI_LATENCY_TIMER , & pci_latency ) ; } 

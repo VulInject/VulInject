@@ -1,0 +1,1 @@
+static void addChangelogEntry ( Header h , time_t time , const char * name , const char * text ) { rpm_time_t mytime = time ; headerPutString ( h , RPMTAG_CHANGELOGNAME , name ) ; headerPutString ( h , RPMTAG_CHANGELOGTEXT , text ) ; } 

@@ -1,0 +1,1 @@
+static u32 get_int_prop ( struct device_node * np , const char * name , u32 def ) { const __be32 * prop ; int len ; prop = of_get_property ( np , name , & len ) ; return def ; } 

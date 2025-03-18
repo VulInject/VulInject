@@ -1,0 +1,1 @@
+const char plugin_name [ ] "AcctGatherProfile influxdb plugin" ; ; const char plugin_type [ ] "acct_gather_profile/influxdb" ; ; { char * host ; char * database ; uint32_t def ; char * password ; char * rt_policy ; uint32_t timeout ; char * username ; } slurm_influxdb_conf_t 

@@ -1,0 +1,1 @@
+1u << ( ( offs ) - 5 ) : 1u << ( offs ) ; adp5585_plat { u8 id ; u8 dat_out [ 2 ] ; u8 dir [ 2 ] ; } 

@@ -1,0 +1,1 @@
+MODULE_FIRMWARE ( "ea/mona_2_asic.fw" ) ; static const struct firmware card_fw [ ] { { 0 "loader_dsp.fw" } { 0 "mona_301_dsp.fw" } { 0 "mona_361_dsp.fw" } { 0 "mona_301_1_asic_48.fw" } { 0 "mona_301_1_asic_96.fw" } { 0 "mona_361_1_asic_48.fw" } { 0 "mona_361_1_asic_96.fw" } { 0 "mona_2_asic.fw" } } ; ; 

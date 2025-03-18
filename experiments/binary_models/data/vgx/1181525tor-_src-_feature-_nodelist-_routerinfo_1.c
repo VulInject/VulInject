@@ -1,0 +1,1 @@
+smartlist_t * router_get_all_orports ( const routerinfo_t * ri ) { tor_assert ( ri ) ; node_t fake_node ; fake_node . ri = ( routerinfo_t * ) ri ; return node_get_all_orports ( & fake_node ) ; } 

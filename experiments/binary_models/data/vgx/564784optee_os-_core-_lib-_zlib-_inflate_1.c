@@ -1,0 +1,1 @@
+int ZEXPORT inflateUndermine ( strm , subvert ) z_streamp strm ; int subvert ; { struct inflate_state FAR * state ; if ( inflateStateCheck ( strm ) ) { return Z_STREAM_ERROR ; } state = ( inflate_state FAR * ) strm -> state ; state -> sane = ! subvert ; return Z_OK ; ( void ) subvert ; return Z_DATA_ERROR ; } 

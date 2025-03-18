@@ -1,0 +1,1 @@
+gimp_vector3_neg ( ) { vector -> x *= - 1.0 ; vector -> y *= - 1.0 ; } 

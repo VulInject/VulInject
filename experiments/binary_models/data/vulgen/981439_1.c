@@ -1,0 +1,1 @@
+Dwarf_Die * die_find_top_inlinefunc ( Dwarf_Die * sp_die , int addr , Dwarf_Die * die_mem ) { return die_find_child ( sp_die , __die_find_inline_cb , & addr , die_mem ) ; } 

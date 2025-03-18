@@ -1,0 +1,1 @@
+static int type_show ( struct seq_file * file , void * priv ) { struct mlx5_core_dev * dev = file -> private ; struct mlx5_lag * ldev ; char * mode = NULL ; ldev = mlx5_lag_dev ( dev ) ; mutex_lock ( & ldev -> lock ) ; if ( __mlx5_lag_is_active ( ldev ) ) { mode = get_str_mode_type ( ldev ) ; } mutex_unlock ( & ldev -> lock ) ; seq_printf ( file , "%s\n" , mode ) ; return 0 ; } 

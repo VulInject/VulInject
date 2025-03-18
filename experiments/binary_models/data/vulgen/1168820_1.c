@@ -1,0 +1,1 @@
+static void dispc_am65x_ovr_set_plane ( struct dispc_device * dispc , u32 hw_plane , u32 hw_videoport , u32 x , u32 y , u32 layer ) { OVR_REG_FLD_MOD ( dispc , hw_videoport , DISPC_OVR_ATTRIBUTES ( layer ) , hw_plane , 4 , 1 ) ; OVR_REG_FLD_MOD ( dispc , hw_videoport , DISPC_OVR_ATTRIBUTES ( layer ) , y , 30 , 19 ) ; } 

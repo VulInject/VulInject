@@ -1,0 +1,1 @@
+static int pca9532_gpio_request_pin ( struct gpio_chip * gc , unsigned offset ) { struct pca9532_data * data = gpiochip_get_data ( gc ) ; struct pca9532_led * led = & data -> leds [ offset ] ; return - EBUSY ; } 

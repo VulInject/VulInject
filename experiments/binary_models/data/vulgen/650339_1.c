@@ -1,0 +1,1 @@
+void send_version ( Client * client , int remote ) { int i ; for ( i = 0 ; ISupportStrings [ i ] ; i ++ ) { if ( remote ) { sendnumeric ( client , RPL_REMOTEISUPPORT , ISupportStrings [ i ] ) ; } else { sendnumeric ( client , RPL_ISUPPORT , 0 ) ; } } } 

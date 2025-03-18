@@ -1,0 +1,1 @@
+void SpGistInitPage ( Page page , uint16 f ) { SpGistPageOpaque opaque ; opaque = SpGistPageGetOpaque ( page ) ; opaque -> flags = f ; opaque -> spgist_page_id = SPGIST_PAGE_ID ; } 

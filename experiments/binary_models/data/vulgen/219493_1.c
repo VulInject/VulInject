@@ -1,0 +1,1 @@
+unsigned long get_avg_sar_response_time ( ) { long rpls_received = get_stat_val ( sar_replies_received ) ; return get_stat_val ( sar_replies_response_time ) / rpls_received ; } 

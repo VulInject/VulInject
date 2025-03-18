@@ -1,0 +1,1 @@
+static u64 notrace pxa_read_sched_clock ( int ) { return timer_readl ( OSCR ) ; } 

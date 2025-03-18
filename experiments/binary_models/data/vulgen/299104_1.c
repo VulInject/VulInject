@@ -1,0 +1,1 @@
+void pcmu_cb_suspend ( pcmu_cb_t * pcb_p ) { int i , inos = pcb_p -> pcb_no_of_inos ; ASSERT ( ! pcb_p -> pcb_imr_save ) ; for ( i = 0 ; i < inos ; i ++ ) { uint64_t pa ; pcmu_ib_ino_t ino = pcb_p -> pcb_inos [ i ] ; if ( ! ino ) { continue ; } pa = pcmu_cb_ino_to_map_pa ( pcb_p , ino ) ; pcb_p -> pcb_imr_save [ i ] = lddphysio ( pa ) ; } } 

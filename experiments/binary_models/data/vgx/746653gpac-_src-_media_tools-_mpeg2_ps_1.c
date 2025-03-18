@@ -1,0 +1,1 @@
+static mpeg2ps_record_pes_t * create_record ( s64 loc , u64 ts ) { mpeg2ps_record_pes_t * ret ; GF_SAFEALLOC ( ret , mpeg2ps_record_pes_t ) ; if ( ! ret ) { return NULL ; } ret -> dts = ts ; ret -> location = loc ; return ret ; } 

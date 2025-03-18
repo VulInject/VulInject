@@ -1,0 +1,1 @@
+static void pca955x_initfn ( Object * obj ) { PCA955xClass * k = PCA955X_GET_CLASS ( obj ) ; int led ; for ( led = 0 ; led < k -> pin_count ; led ++ ) { char * name ; name = g_strdup_printf ( "led%d" , led ) ; object_property_add ( obj , name , "bool" , pca955x_get_led , pca955x_set_led , NULL , NULL ) ; g_free ( name ) ; } } 

@@ -1,0 +1,1 @@
+static inline void hash_netportnet4_data_netmask ( struct hash_netportnet4_elem * elem , u8 cidr , bool inner ) { if ( inner ) { elem -> cidr [ 1 ] = cidr ; } else { elem -> ip [ 0 ] &= ip_set_netmask ( cidr ) ; elem -> cidr [ 0 ] = cidr ; } } 

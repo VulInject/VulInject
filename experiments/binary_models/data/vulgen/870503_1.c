@@ -1,0 +1,1 @@
+VIR_LOG_INIT ( "access.accessmanager" ) ; virReportErrorHelper ( , , , , , ) _virAccessManager { virObjectLockable parent ; virAccessDriver * drv ; void * privateData ; } static virClass * virAccessManagerClass ; static virAccessManager * virAccessManagerDefault ; static void virAccessManagerDispose ( void * obj ) static int virAccessManagerOnceInit ( void ) { return 0 ; } 

@@ -1,0 +1,1 @@
+static irqreturn_t al_mc_edac_irq_handler_ue ( int irq , void * info ) { struct platform_device * pdev = info ; struct mem_ctl_info * mci = platform_get_drvdata ( pdev ) ; return IRQ_NONE ; } 

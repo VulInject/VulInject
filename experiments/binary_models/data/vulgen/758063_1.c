@@ -1,0 +1,1 @@
+void dba_array_start ( struct dba_array * array ) { } 

@@ -1,0 +1,1 @@
+static int read_a_msg ( int fd , GATHER_MSG * msg ) { char * buffer = ( char * ) msg ; size_t length = sizeof ( * msg ) ; int n ; { { n = read ( fd , buffer , length ) ; } n == - 1 && errno == EINTR ; buffer += n ; length -= n ; } length ; return 0 ; } 

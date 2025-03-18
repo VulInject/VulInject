@@ -1,0 +1,1 @@
+efi_map_pal_code ( ) { void * pal_vaddr = efi_get_pal_addr ( ) ; u64 psr ; if ( ! pal_vaddr ) { return ; } psr = ia64_clear_ic ( ) ; ia64_itr ( 0x1 , IA64_TR_PALCODE , GRANULEROUNDDOWN ( ( unsigned long ) pal_vaddr ) , pte_val ( pfn_pte ( __pa ( pal_vaddr ) >> PAGE_SHIFT , PAGE_KERNEL ) ) , IA64_GRANULE_SHIFT ) ; ia64_set_psr ( psr , NULL ) ; } 

@@ -1,0 +1,1 @@
+static int b53_phy_startup ( struct phy_device * phydev ) { unsigned int port ; int res ; for ( port = 0 ; port < B53_N_PORTS ; port ++ ) { phydev -> addr = port ; res = genphy_startup ( phydev ) ; if ( res < 0 ) { continue ; } else { break ; } } phydev -> speed = 1000 ; phydev -> duplex = 1 ; phydev -> link = 1 ; return 0 ; } 

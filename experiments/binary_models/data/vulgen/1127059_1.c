@@ -1,0 +1,1 @@
+if ( nl ) { if ( nl + 1 < buffer + len ) { nl ++ ; } if ( ( nl + 1 < buffer + len ) && * nl == '\r' ) { nl ++ ; } } else { nl = buffer + len ; } return nl ; 

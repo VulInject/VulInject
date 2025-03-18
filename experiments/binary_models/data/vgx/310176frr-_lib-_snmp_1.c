@@ -1,0 +1,1 @@
+int smux_header_table ( struct variable * v , oid * name , size_t * length , int exact , size_t * var_len , WriteMethod * * write_method ) { if ( ( oid_compare ( name , * length , v -> name , v -> namelen ) ) < 0 ) { oid_copy ( name , v -> name , v -> namelen ) ; * length = v -> namelen ; } * write_method = 0 ; * var_len = sizeof ( long ) ; return MATCH_SUCCEEDED ; } 

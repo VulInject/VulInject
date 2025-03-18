@@ -1,0 +1,1 @@
+static void dozap ( section_info_table * info ) { Elf_Data * data ; info -> mdata = data = malloc ( sizeof ( Elf_Data ) ) ; if ( data == NULL ) { error_message ( MALLOC_ERROR , PLAIN_ERROR , NULL , prog ) ; mcs_exit ( FAILURE ) ; } * data = * info -> data ; if ( data -> d_buf == NULL ) { error_message ( MALLOC_ERROR , PLAIN_ERROR , NULL , prog ) ; mcs_exit ( FAILURE ) ; } } 

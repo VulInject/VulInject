@@ -1,0 +1,1 @@
+static inline struct aidaw * scm_aidaw_alloc ( int ) { struct page * page = mempool_alloc ( aidaw_pool , GFP_ATOMIC ) ; return page ?page_address ( page ) : NULL ; } 

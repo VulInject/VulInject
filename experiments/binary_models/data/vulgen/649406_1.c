@@ -1,0 +1,1 @@
+static void reg_dump ( struct ak4117 * ak4117 ) { int i ; for ( i = 0 ; i < 0x1b ; i ++ ) { printk ( KERN_DEBUG "reg[%02x] = %02x (%02x)\n" , i , reg_read ( ak4117 , i ) , i < sizeof ( ak4117 -> regmap ) ?ak4117 -> regmap [ i ] : 0 ) ; } } 

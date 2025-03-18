@@ -1,0 +1,1 @@
+unsigned long long corosync_timer_expire_time_get ( corosync_timer_handle_t th ) { uint64_t expire ; if ( th == 0 ) { return ( 0 ) ; } return ( expire ) ; } 

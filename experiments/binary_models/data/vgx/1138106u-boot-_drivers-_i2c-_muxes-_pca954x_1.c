@@ -1,0 +1,1 @@
+PCA9847 , ; chip_desc { u8 enable ; muxtype { pca954x_ismux = 0 , pca954x_isswi } , muxtype int width ; } pca954x_priv { u32 addr ; u32 width ; struct gpio_desc gpio_mux_reset ; } 

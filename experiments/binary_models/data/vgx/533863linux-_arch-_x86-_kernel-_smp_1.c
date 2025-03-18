@@ -1,0 +1,1 @@
+DEFINE_IDTENTRY_SYSVEC ( ) { ack_APIC_irq ( ) ; trace_call_function_entry ( CALL_FUNCTION_VECTOR , NULL ) ; inc_irq_stat ( irq_call_count ) ; generic_smp_call_function_interrupt ( ) ; trace_call_function_exit ( CALL_FUNCTION_VECTOR ) ; } 

@@ -1,0 +1,1 @@
+static boolean_t cons_by_name ( vntsd_cons_t * consp , char * name ) { return ( strcmp ( consp -> domain_name , name ) == 0 ) ; } 

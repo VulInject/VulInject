@@ -1,0 +1,1 @@
+static struct spi_driver ad5624r_driver = { . driver = { . name = "ad5624r" } . probe = ad5624r_probe . remove = ad5624r_remove . id_table = ad5624r_id } ; 

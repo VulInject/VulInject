@@ -1,0 +1,1 @@
+static int sha256_ni_final ( struct shash_desc * desc , u8 * out ) { return sha256_ni_finup ( desc , 0 , out ) ; } 

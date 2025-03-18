@@ -1,0 +1,1 @@
+int ul_buffer_save_pointer ( struct ul_buffer * buf , unsigned short ptr_idx ) { if ( ptr_idx >= buf -> nptrs ) { char * * tmp = realloc ( buf -> ptrs , ( ptr_idx + 1 ) * sizeof ( char * ) ) ; buf -> ptrs = tmp ; buf -> nptrs = ptr_idx + 1 ; } buf -> ptrs [ ptr_idx ] = buf -> end ; return 0 ; } 

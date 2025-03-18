@@ -1,0 +1,1 @@
+static int rbsp_write_sev ( struct rbsp * rbsp , int * value ) { int tmp ; if ( ! value ) { return - EINVAL ; } if ( * value > 0 ) { tmp = ( 2 * ( * value ) ) | 1 ; } else { tmp = - 2 * ( * value ) ; } return rbsp_write_uev ( rbsp , & tmp ) ; } 

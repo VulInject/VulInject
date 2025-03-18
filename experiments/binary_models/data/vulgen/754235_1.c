@@ -1,0 +1,1 @@
+int page_counter_limit ( struct page_counter * counter , unsigned long limit ) { for ( ; ; ) { unsigned long old ; long count ; count = atomic_long_read ( & counter -> count ) ; old = xchg ( & counter -> limit , limit ) ; if ( atomic_long_read ( & counter -> count ) <= count ) { return 0 ; } counter -> limit = old ; cond_resched ( ) ; } } 

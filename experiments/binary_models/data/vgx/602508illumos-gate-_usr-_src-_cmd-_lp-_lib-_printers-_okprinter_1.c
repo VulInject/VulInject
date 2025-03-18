@@ -1,0 +1,1 @@
+static int okinterface ( char * name , PRINTER * prbufp ) { int ret ; register char * path ; if ( prbufp -> interface ) { ret = canread ( prbufp -> interface ) ; } if ( ! ( path = makepath ( Lp_A_Interfaces , name , ( char * ) 0 ) ) ) { ret = 0 ; } else { ret = canread ( path ) ; } return ( ret ) ; } 

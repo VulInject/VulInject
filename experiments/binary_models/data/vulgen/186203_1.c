@@ -1,0 +1,1 @@
+static void kunit_test_no_catch ( void * data ) { KUNIT_FAIL ( test , "Catch should not be called\n" ) ; } 

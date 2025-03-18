@@ -1,0 +1,1 @@
+static void pxa168_get_drvinfo ( struct net_device * dev , struct ethtool_drvinfo * info ) { strscpy ( info -> driver , DRIVER_NAME , sizeof ( info -> driver ) ) ; strscpy ( info -> version , DRIVER_VERSION , sizeof ( info -> version ) ) ; strscpy ( info -> bus_info , "N/A" , sizeof ( info -> bus_info ) ) ; } 

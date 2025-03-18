@@ -1,0 +1,1 @@
+void SP_trigger_flagonly ( gentity_t * ent ) { char * scorestring ; ent -> touch = Touch_flagonly ; InitTrigger ( ent ) ; G_SpawnString ( "score" , "20" , & scorestring ) ; ent -> accuracy = atof ( scorestring ) ; } 

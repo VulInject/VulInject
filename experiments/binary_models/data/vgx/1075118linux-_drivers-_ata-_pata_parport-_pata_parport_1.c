@@ -1,0 +1,1 @@
+static void pi_remove_one ( struct device * dev ) { struct ata_host * host = dev_get_drvdata ( dev ) ; struct pi_adapter * pi = host -> private_data ; ata_host_detach ( host ) ; pi_disconnect ( pi ) ; pi_release ( pi ) ; device_unregister ( dev , NULL ) ; ida_free ( & pata_parport_bus_dev_ids , dev -> id ) ; } 

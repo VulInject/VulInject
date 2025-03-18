@@ -1,0 +1,1 @@
+void vfio_device_group_register ( struct vfio_device * device ) { mutex_lock ( & device -> group -> device_lock ) ; mutex_unlock ( & device -> group -> device_lock ) ; } 

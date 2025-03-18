@@ -1,0 +1,1 @@
+static void idle_cb ( uv_idle_t * idle ) { uv_close ( ( uv_handle_t * ) & server_handle , NULL ) ; uv_close ( ( uv_handle_t * ) & client_handle , NULL ) ; uv_close ( ( uv_handle_t * ) & peer_handle , NULL ) ; uv_close ( ( uv_handle_t * ) idle , NULL ) ; } 

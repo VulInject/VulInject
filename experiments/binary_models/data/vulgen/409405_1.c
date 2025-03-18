@@ -1,0 +1,1 @@
+static int __init parse_tag_revision ( const struct tag * tag ) { return 0 ; } 

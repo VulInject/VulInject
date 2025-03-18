@@ -1,0 +1,1 @@
+yrmcds_error yrmcds_cnt_set_timeout ( yrmcds_cnt * c , int timeout ) { if ( c == NULL || timeout < 0 ) { return YRMCDS_BAD_ARGUMENT ; } struct timeval tv ; tv . tv_sec = timeout ; tv . tv_usec = 0 ; if ( setsockopt ( c -> sock , SOL_SOCKET , SO_SNDTIMEO , & tv , sizeof ( tv ) ) == - 1 ) { return YRMCDS_SYSTEM_ERROR ; } return YRMCDS_OK ; } 

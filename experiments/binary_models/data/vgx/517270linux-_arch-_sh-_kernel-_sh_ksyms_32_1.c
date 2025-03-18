@@ -1,0 +1,1 @@
+DECLARE_EXPORT ( __movstrSI32 , NULL ) ; DECLARE_EXPORT ( __movstrSI36 ) ; DECLARE_EXPORT ( __movstrSI40 ) ; DECLARE_EXPORT ( __movstrSI44 ) ; DECLARE_EXPORT ( __movstrSI48 ) ; DECLARE_EXPORT ( __movstrSI52 ) ; DECLARE_EXPORT ( __movstrSI56 ) ; 

@@ -1,0 +1,1 @@
+void intel_guc_slpc_init_early ( struct intel_guc_slpc * slpc ) { struct intel_guc * guc = slpc_to_guc ( slpc ) ; slpc -> selected = __guc_slpc_selected ( guc ) ; } 

@@ -1,0 +1,1 @@
+static void udc_disable ( struct pxa_udc * udc ) { udc_writel ( udc , UDCICR0 , 0 ) ; udc_writel ( udc , UDCICR1 , 0 ) ; udc_clear_mask_UDCCR ( udc , UDCCR_UDE ) ; ep0_idle ( udc ) ; udc -> gadget . speed = USB_SPEED_UNKNOWN ; clk_disable ( udc -> clk ) ; udc -> enabled = 0 ; } 

@@ -1,0 +1,1 @@
+static void ttf_init_font ( int n ) { int i , k ; for ( i = 1 , k = 0 ; i <= n ; i <<= 1 , k ++ ) { } put_fixed ( 0x00010000 ) ; ( void ) put_ushort ( n ) ; ( void ) put_ushort ( i << 3 ) ; ( void ) put_ushort ( k - 1 ) ; ( void ) put_ushort ( ( n << 4 ) - ( i << 3 ) ) ; } 

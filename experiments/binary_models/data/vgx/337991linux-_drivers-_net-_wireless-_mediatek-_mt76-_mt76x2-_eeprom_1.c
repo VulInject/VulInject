@@ -1,0 +1,1 @@
+static enum mt76x2_cal_channel_group mt76x2_get_cal_channel_group ( int channel ) { if ( channel >= 184 && channel <= 196 ) { return MT_CH_5G_JAPAN ; } if ( channel <= 64 ) { return MT_CH_5G_UNII_2 ; } if ( channel <= 114 ) { return MT_CH_5G_UNII_2E_1 ; } if ( channel <= 144 ) { return MT_CH_5G_UNII_2E_2 ; } return MT_CH_5G_UNII_3 ; } 

@@ -1,0 +1,1 @@
+static gint dissect_amstcp ( tvbuff_t * tvb , packet_info * pinfo , proto_tree * tree , void * data _U_ ) { return dissect_ams_pdu ( tvb , pinfo , tree , TcpAdsParserHDR_Len ) ; } 

@@ -1,0 +1,1 @@
+int wsm_remove_key ( struct cw1200_common * priv , const struct wsm_remove_key * arg ) { int ret ; struct wsm_buf * buf = & priv -> wsm_cmd_buf ; wsm_cmd_lock ( priv ) ; WSM_PUT8 ( buf , arg -> index ) ; WSM_PUT8 ( buf , 0 ) ; WSM_PUT16 ( buf , 0 ) ; wsm_cmd_unlock ( priv ) ; return ret ; nomem wsm_cmd_unlock ( priv ) ; return - ENOMEM ; } 

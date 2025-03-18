@@ -1,0 +1,1 @@
+static int cik_sdma_sw_fini ( void * handle ) { struct amdgpu_device * adev = ( amdgpu_device * ) handle ; int i ; for ( i = 0 ; i < adev -> sdma . num_instances ; i ++ ) { amdgpu_ring_fini ( & adev -> sdma . instance [ i ] . ring ) ; } return 0 ; } 

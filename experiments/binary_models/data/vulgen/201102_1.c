@@ -1,0 +1,1 @@
+md_show_usage ( ) FILE * stream ; { fprintf ( stream , _ ( "IP2K specific command line options:\n" ) ) ; fprintf ( stream , _ ( "  -mip2022               restrict to IP2022 insns \n" ) ) ; } 

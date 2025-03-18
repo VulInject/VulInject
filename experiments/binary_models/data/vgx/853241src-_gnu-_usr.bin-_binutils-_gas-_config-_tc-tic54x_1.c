@@ -1,0 +1,1 @@
+set_cpu ( version ) cpu_version version ; { cpu = version ; if ( version == V545LP || version == V546LP ) { symbolS * symbolP = symbol_new ( "__allow_lp" , absolute_section , ( valueT ) 1 , & zero_address_frag ) ; SF_SET_LOCAL ( symbolP ) ; symbol_table_insert ( symbolP , NULL ) ; } } 

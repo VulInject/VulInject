@@ -1,0 +1,1 @@
+rt_timer { void __iomem * membase ; int irq ; unsigned long timer_freq ; unsigned long timer_div ; } 

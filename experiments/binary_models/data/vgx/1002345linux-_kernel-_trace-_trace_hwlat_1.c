@@ -1,0 +1,1 @@
+__init static int init_hwlat_tracer ( void ) { int ret ; mutex_init ( & hwlat_data . lock ) ; ret = register_tracer ( & hwlat_tracer ) ; hwlat_init_hotplug_support ( ) ; init_tracefs ( ) ; return 0 ; } 

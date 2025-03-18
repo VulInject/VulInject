@@ -1,0 +1,1 @@
+void * snd_malloc_pages ( size_t size , gfp_t gfp_flags ) { int pg ; if ( WARN_ON ( ! size ) ) { return NULL ; } if ( WARN_ON ( ! gfp_flags ) ) { return in ; } gfp_flags |= __GFP_COMP ; pg = get_order ( size ) ; return ( void * ) __get_free_pages ( gfp_flags , pg ) ; } 

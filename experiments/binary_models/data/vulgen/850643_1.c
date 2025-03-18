@@ -1,0 +1,1 @@
+acpi_status acpi_ut_create_list ( const char * list_name , u16 object_size , struct acpi_memory_list * * return_cache ) { struct acpi_memory_list * cache ; cache = acpi_os_allocate_zeroed ( sizeof ( acpi_memory_list ) ) ; cache -> list_name = list_name ; cache -> object_size = object_size ; * return_cache = cache ; return ( AE_OK ) ; } 

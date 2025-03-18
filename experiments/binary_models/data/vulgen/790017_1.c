@@ -1,0 +1,1 @@
+static int run = - 1 ; static int sent_mid = - 1 ; void on_connect ( struct mosquitto * mosq , void * obj , int rc ) { if ( rc ) { exit ( 1 ) ; } else { mosquitto_subscribe ( mosq , NULL , "request/topic" , 0 ) ; } } 

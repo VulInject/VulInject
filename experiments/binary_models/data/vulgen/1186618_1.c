@@ -1,0 +1,1 @@
+static void armsse_forward_sec_resp_cfg ( ARMSSE * s ) { DeviceState * dev = DEVICE ( s ) ; DeviceState * dev_splitter = DEVICE ( & s -> sec_resp_splitter ) ; qdev_init_gpio_out_named ( dev , & s -> sec_resp_cfg , "sec_resp_cfg" , 1 ) ; qdev_connect_gpio_out ( dev_splitter , 2 , s -> sec_resp_cfg_in ) ; } 

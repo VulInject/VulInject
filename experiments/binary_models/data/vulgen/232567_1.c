@@ -1,0 +1,1 @@
+static void ts_key_list_free ( ts_key_list_t * l ) { sfree ( l -> key ) ; if ( l -> next != NULL ) { ts_key_list_free ( l -> next ) ; } sfree ( l ) ; } ts_data_s { char * host ; char * plugin ; char * plugin_instance ; char * type_instance ; meta_data_t * meta ; ts_key_list_t * meta_delete ; } 

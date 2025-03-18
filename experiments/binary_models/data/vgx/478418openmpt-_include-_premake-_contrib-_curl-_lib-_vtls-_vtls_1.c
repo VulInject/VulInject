@@ -1,0 +1,1 @@
+void Curl_ssl_kill_session ( struct curl_ssl_session * session ) { if ( session -> sessionid ) { curlssl_session_free ( session -> sessionid ) ; session -> sessionid = NULL ; session -> age = 0 ; Curl_free_primary_ssl_config ( & session -> ssl_config ) ; Curl_safefree ( session -> name ) ; } } 

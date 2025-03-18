@@ -1,0 +1,1 @@
+gimp_bezier_desc_free ( ) { g_return_if_fail ( desc != NULL ) ; g_slice_free ( GimpBezierDesc , desc ) ; } 

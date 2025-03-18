@@ -1,0 +1,1 @@
+static int decode_rdma_segment ( struct xdr_stream * xdr , u32 * length ) { u32 handle ; u64 offset ; __be32 * p ; p = xdr_inline_decode ( xdr , 4 * sizeof ( * p ) ) ; xdr_decode_rdma_segment ( p , & handle , length , & offset ) ; trace_xprtrdma_decode_seg ( handle , * length , offset ) ; return 0 ; } 

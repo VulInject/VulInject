@@ -1,0 +1,1 @@
+struct prng * prng_new ( unsigned long long seed ) { struct prng * rv = calloc ( sizeof ( * rv ) , 1 ) ; rv -> state = seed ; return rv ; } 

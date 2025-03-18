@@ -1,0 +1,1 @@
+WC_STATIC WC_INLINE word16 ctMask16Eq ( int a , int b ) { return ( word16 ) ( ~ctMask16GT ( a , b ) ) & ( word16 ) ( ~ctMask16LT ( a , b ) ) ; } 

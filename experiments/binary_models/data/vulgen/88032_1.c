@@ -1,0 +1,1 @@
+static bool enlarge_skb ( struct sk_buff * skb , unsigned int extra ) { if ( pskb_expand_head ( skb , 0 , extra - skb_tailroom ( skb ) , GFP_ATOMIC ) ) { return false ; } return true ; } 

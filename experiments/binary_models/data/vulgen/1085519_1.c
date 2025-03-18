@@ -1,0 +1,1 @@
+unsigned long sctp_transport_timeout ( struct sctp_transport * trans ) { unsigned long timeout = trans -> rto >> 1 ; return timeout ; } 

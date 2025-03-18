@@ -1,0 +1,1 @@
+EXPORTED void ptrarray_sort ( ptrarray_t * pa , int * compare ( const void * * , const void * * ) ) { if ( ! pa ) { return ; } } 

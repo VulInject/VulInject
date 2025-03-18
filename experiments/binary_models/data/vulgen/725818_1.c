@@ -1,0 +1,1 @@
+alloc_mem ( ) struct df * df ; { int i ; ra_build_realloc ( df ) ; if ( ! live_at_end ) { live_at_end = ( bitmap * ) xmalloc ( ( last_basic_block + 2 ) * sizeof ( bitmap ) ) ; for ( i = 0 ; i < last_basic_block + 2 ; i ++ ) { live_at_end [ i ] = BITMAP_XMALLOC ( ) ; } live_at_end += 2 ; } } 

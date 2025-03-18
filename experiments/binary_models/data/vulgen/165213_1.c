@@ -1,0 +1,1 @@
+sccsid [ ] = "@(#)mvscanw.c 1.8 88/02/08 SMI" ; int mvscanw ( int y , int x , char * fmt , ... ) { va_list ap ; return ( move ( y , x ) == OK ?_sscans ( stdscr , fmt , ap ) : ERR ) ; } 

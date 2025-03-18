@@ -1,0 +1,1 @@
+static void dpaa2_dpmai_store_free ( struct dpaa2_qdma_priv * priv ) { struct dpaa2_qdma_priv_per_prio * ppriv = priv -> ppriv ; int i ; for ( i = 0 ; i < priv -> num_pairs ; i ++ ) { ppriv ++ ; } } 

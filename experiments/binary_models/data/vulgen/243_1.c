@@ -1,0 +1,1 @@
+static int write_orph_nodes ( struct ubifs_info * c , int atomic ) { int err ; while ( c -> cmt_orphans > 0 ) { err = write_orph_node ( c , atomic ) ; if ( err ) { return err ; } } if ( atomic ) { int lnum ; for ( lnum = c -> ohead_lnum + 1 ; lnum <= c -> orph_last ; lnum ++ ) { if ( err ) { return err ; } } } return 0 ; } 

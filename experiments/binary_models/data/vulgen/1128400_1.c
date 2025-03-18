@@ -1,0 +1,1 @@
+static void Float32_To_Int32 ( void * destinationBuffer , signed int destinationStride , void * sourceBuffer , signed int sourceStride , unsigned int count , PaUtilTriangularDitherGenerator * ditherGenerator ) { ( void ) ditherGenerator ; } 

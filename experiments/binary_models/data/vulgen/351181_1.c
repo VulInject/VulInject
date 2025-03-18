@@ -1,0 +1,1 @@
+gimp_image_add_guide ( , , ) { GimpImagePrivate * private ; g_return_if_fail ( GIMP_IS_IMAGE ( image ) ) ; g_return_if_fail ( GIMP_IS_GUIDE ( guide ) ) ; private = GIMP_IMAGE_GET_PRIVATE ( image ) ; gimp_guide_set_position ( guide , position ) ; g_object_ref ( guide ) ; gimp_image_guide_added ( image , guide ) ; } 

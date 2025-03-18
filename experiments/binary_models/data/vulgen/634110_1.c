@@ -1,0 +1,1 @@
+static int FUNC sei ( CodedBitstreamContext * ctx , RWContext * rw , H264RawSEI * current ) { int err ; HEADER ( "Supplemental Enhancement Information" ) ; CHECK ( FUNC ( nal_unit_header ) ( ctx , rw , & current -> nal_unit_header , 1 << H264_NAL_SEI ) ) ; CHECK ( FUNC ( rbsp_trailing_bits ) ( ctx , rw ) ) ; return 0 ; } 

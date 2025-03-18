@@ -1,0 +1,1 @@
+void zebra_evpn_rem_mac_install_all ( struct zebra_evpn * zevpn ) { struct mac_walk_ctx wctx ; memset ( & wctx , 0 , sizeof ( mac_walk_ctx ) ) ; wctx . zevpn = zevpn ; wctx . uninstall = 0 ; wctx . upd_client = 0 ; wctx . flags = ZEBRA_MAC_REMOTE ; hash_iterate ( zevpn -> mac_table , zebra_evpn_install_mac_hash , & wctx ) ; } 

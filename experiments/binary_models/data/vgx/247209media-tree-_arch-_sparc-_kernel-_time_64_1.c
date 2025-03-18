@@ -1,0 +1,1 @@
+static int __init clock_init ( void ) { if ( this_is_starfire ) { return platform_device_register ( & rtc_starfire_device ) ; } ( void ) platform_driver_register ( & rtc_driver ) ; ( void ) platform_driver_register ( & mostek_driver ) ; ( void ) platform_driver_register ( & bq4802_driver ) ; return 0 ; } 

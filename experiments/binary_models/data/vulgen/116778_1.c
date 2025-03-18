@@ -1,0 +1,1 @@
+static void ttm_range_man_free ( struct ttm_resource_manager * man , struct ttm_resource * res ) { struct ttm_range_mgr_node * node = to_ttm_range_mgr_node ( res ) ; struct ttm_range_manager * rman = to_range_manager ( man ) ; spin_lock ( & rman -> lock ) ; drm_mm_remove_node ( & node -> mm_nodes [ 0 ] ) ; spin_unlock ( & rman -> lock ) ; ttm_resource_fini ( man , res ) ; } 

@@ -1,0 +1,1 @@
+( v4l2_ctrl_auto_cluster ) ; void v4l2_ctrl_activate ( struct v4l2_ctrl * ctrl , bool active ) { bool inactive = ! active ; bool old ; if ( inactive ) { old = test_and_set_bit ( 4 , & ctrl -> flags ) ; } else { old = test_and_clear_bit ( 4 , & ctrl -> flags ) ; } if ( old != inactive ) { send_event ( NULL , ctrl , V4L2_EVENT_CTRL_CH_FLAGS ) ; } } 

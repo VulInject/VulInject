@@ -1,0 +1,1 @@
+static int bus_manager_send_inhibited_change ( Inhibitor * i ) { const char * property ; property = i -> mode == INHIBIT_BLOCK ?"BlockInhibited" : "DelayInhibited" ; return manager_send_changed ( i -> manager , property , NULL ) ; } 

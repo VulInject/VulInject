@@ -1,0 +1,1 @@
+not_cursor_position ( ) { attr -> is_cursor_position = FALSE ; attr -> is_char_break = FALSE ; attr -> is_mandatory_break = FALSE ; } 

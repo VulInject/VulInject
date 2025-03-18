@@ -1,0 +1,1 @@
+static void fixed_phy_del ( int phy_addr ) { struct fixed_mdio_bus * fmb = & platform_fmb ; struct fixed_phy * fp , * tmp ; list_for_each_entry_safe ( , , , ) { if ( fp -> addr == phy_addr ) { list_del ( & fp -> node ) ; if ( gpio_is_valid ( fp -> link_gpio ) ) { gpio_free ( fp -> link_gpio ) ; } ida_simple_remove ( & phy_fixed_ida , phy_addr ) ; return ; } } } 

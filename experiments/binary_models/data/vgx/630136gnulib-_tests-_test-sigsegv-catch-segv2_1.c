@@ -1,0 +1,1 @@
+jmp_buf mainloop ; sigset_t mainsigset ; volatile int pass = 0 ; int page ; volatile int handler_called = 0 ; static void handler_continuation ( void * arg1 , void * arg2 , void * arg3 ) { longjmp ( mainloop , pass ) ; } 

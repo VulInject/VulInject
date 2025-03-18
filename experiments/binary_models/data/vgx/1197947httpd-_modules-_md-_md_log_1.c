@@ -1,0 +1,1 @@
+int md_log_is_level ( apr_pool_t * p , md_log_level_t level ) { return log_level ( log_baton , p , level ) ; } 

@@ -1,0 +1,1 @@
+static int pseries_eeh_write_config ( struct pci_dn * pdn , int where , int size , int val ) { return rtas_write_config ( pdn , where , size , val ) ; } 

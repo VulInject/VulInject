@@ -1,0 +1,1 @@
+static inline void php_output_context_reset ( php_output_context * context ) { int op = context -> op ; php_output_context_dtor ( context , NULL ) ; memset ( context , 0 , sizeof ( php_output_context ) ) ; context -> op = op ; } 

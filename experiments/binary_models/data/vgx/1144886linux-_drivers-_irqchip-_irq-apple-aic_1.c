@@ -1,0 +1,1 @@
+static int __init aic_init_smp ( struct aic_irq_chip * irqc , struct device_node * node ) { int base_ipi ; base_ipi = ipi_mux_create ( AIC_NR_SWIPI , aic_ipi_send_single ) ; set_smp_ipi_range ( base_ipi , AIC_NR_SWIPI ) ; return 0 ; } 

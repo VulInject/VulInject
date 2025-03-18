@@ -1,0 +1,1 @@
+REG_STRIDE ( CH_C_CNTXT_2 , ch_c_cntxt_2 , 0x0000f008 + 0x4000 * GSI_EE_AP , 0x80 ) ; static const u32 reg_ch_c_qos_fmask [ ] { [ WRR_WEIGHT ] = GENMASK ( 3 , 0 ) [ MAX_PREFETCH ] = BIT ( 8 ) [ USE_DB_ENG ] = BIT ( 9 ) [ PREFETCH_MODE ] = GENMASK ( 13 , 10 ) [ EMPTY_LVL_THRSHOLD ] = GENMASK ( 23 , 16 ) [ DB_IN_BYTES ] = BIT ( 24 ) } ; ; 

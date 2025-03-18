@@ -1,0 +1,1 @@
+void mt76_tx_worker_run ( struct mt76_dev * dev ) { struct mt76_phy * phy ; int i ; for ( i = 0 ; i < ARRAY_SIZE ( dev -> phys ) ; i ++ ) { phy = dev -> phys [ i ] ; if ( ! phy ) { continue ; } mt76_txq_schedule_all ( phy ) ; } for ( i = 0 ; i < ARRAY_SIZE ( dev -> phys ) ; i ++ ) { phy = dev -> phys [ i ] ; if ( ! phy || ! phy -> test . tx_pending ) { continue ; } } } 

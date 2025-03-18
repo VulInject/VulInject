@@ -1,0 +1,1 @@
+int expand_file ( int f , off_t len ) { int buf [ 1024 ] ; off_t i ; if ( lseek ( f , 0 , SEEK_END ) == - 1 ) { return ( - 1 ) ; } bzero ( buf , sizeof ( buf ) ) ; while ( len ) { i = ( sizeof ( buf ) < len ) ?sizeof ( buf ) : len ; if ( write ( f , buf , i ) != i ) { return ( - 1 ) ; } len -= i ; } return ( 0 ) ; } 

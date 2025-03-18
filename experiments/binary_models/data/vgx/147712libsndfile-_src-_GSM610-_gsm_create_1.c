@@ -1,0 +1,1 @@
+gsm gsm_create ( void ) { gsm r ; r = malloc ( sizeof ( gsm_state ) ) ; if ( ! r ) { return r ; } r -> nrp = 40 ; return r ; } 

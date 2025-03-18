@@ -1,0 +1,1 @@
+bcm6753_nand_soc { struct brcmnand_soc soc ; } 

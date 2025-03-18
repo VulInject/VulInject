@@ -1,0 +1,1 @@
+static inline sdp_ice_opt_t * add_sdp_ice_opt ( sdp_stream_cell_t * _stream ) { sdp_ice_opt_t * ice_opt ; int len ; len = sizeof ( sdp_ice_opt_t ) ; ice_opt = ( sdp_ice_opt_t * ) pkg_malloc ( len ) ; if ( ice_opt == NULL ) { PKG_MEM_ERROR ; return NULL ; } ice_opt -> next = _stream -> ice_opt ; _stream -> ice_opt = ice_opt ; _stream -> ice_opt_num ++ ; return ice_opt ; } 

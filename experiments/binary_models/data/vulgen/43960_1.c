@@ -1,0 +1,1 @@
+DBMLoadState { char node_alias [ 256 ] ; char bitmap_alias [ 256 ] ; char bitmap_name [ BDRV_BITMAP_MAX_NAME_SIZE + 1 ] ; BlockDriverState * bs ; BdrvDirtyBitmap * bitmap ; bool before_vm_start_handled ; BitmapMigrationBitmapAlias * bmap_inner ; bool cancelled ; GSList * bitmaps ; QemuMutex lock ; } DBMLoadState DBMState { DBMSaveState save ; DBMLoadState load ; } DBMState 

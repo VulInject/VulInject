@@ -1,0 +1,1 @@
+static void R_AddWorldSurface ( msurface_t * surf , shader_t * shader , int dlightBits ) { surf -> viewCount = tr . viewCount ; if ( R_CullSurface ( surf -> data , shader ) ) { return ; } if ( dlightBits ) { dlightBits = R_DlightSurface ( surf , dlightBits ) ; dlightBits = ( dlightBits != 0 ) ; } R_AddDrawSurf ( surf -> data , shader , surf -> fogIndex , dlightBits ) ; } 

@@ -1,0 +1,1 @@
+static int devm_aspeed_peci_reset_control_deassert ( struct device * dev , struct reset_control * rst ) { int ret ; ret = reset_control_deassert ( rst ) ; return devm_add_action_or_reset ( dev , aspeed_peci_reset_control_release , rst ) ; } 

@@ -1,0 +1,1 @@
+static SFBool * NewSFBool ( ) { SFBool * tmp = ( SFBool * ) gf_malloc ( sizeof ( SFBool ) ) ; return tmp ; } 

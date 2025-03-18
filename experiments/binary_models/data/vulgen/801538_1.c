@@ -1,0 +1,1 @@
+mlxsw_afk_key_info { struct list_head list ; unsigned int ref_count ; unsigned int blocks_count ; int element_to_block [ MLXSW_AFK_ELEMENT_MAX ] ; struct mlxsw_afk_element_usage elusage ; const struct mlxsw_afk_block * blocks [ 0 ] ; } 

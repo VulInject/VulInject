@@ -1,0 +1,1 @@
+static struct window_pane * control_window_pane ( struct client * c , u_int pane ) { struct window_pane * wp ; if ( ( wp = window_pane_find_by_id ( pane ) ) == NULL ) { return ( NULL ) ; } if ( winlink_find_by_window ( & c -> session -> windows , wp -> window ) == NULL ) { return ( NULL ) ; } return ( wp ) ; } 

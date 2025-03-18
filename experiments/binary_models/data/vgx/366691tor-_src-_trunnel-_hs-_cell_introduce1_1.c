@@ -1,0 +1,1 @@
+ssize_t trn_cell_introduce1_parse ( trn_cell_introduce1_t * * output , const uint8_t * input , const size_t len_in ) { ssize_t result ; * output = trn_cell_introduce1_new ( ) ; result = trn_cell_introduce1_parse_into ( * output , input , len_in ) ; if ( result < 0 ) { trn_cell_introduce1_free ( * output ) ; * output = NULL ; } return result ; } 

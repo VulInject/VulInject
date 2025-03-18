@@ -1,0 +1,1 @@
+static void inf_gtk_certificate_manager_init ( InfGtkCertificateManager * manager ) { InfGtkCertificateManagerPrivate * priv ; priv = INF_GTK_CERTIFICATE_MANAGER_PRIVATE ( manager ) ; priv -> parent_window = NULL ; } 

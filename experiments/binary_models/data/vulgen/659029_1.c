@@ -1,0 +1,1 @@
+int pthread_mutexattr_settype ( pthread_mutexattr_t * attrp , int type ) { ( * attrp ) -> ma_type = type ; return ( 0 ) ; } 

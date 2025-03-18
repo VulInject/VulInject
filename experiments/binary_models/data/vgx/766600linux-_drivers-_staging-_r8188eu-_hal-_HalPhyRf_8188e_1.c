@@ -1,0 +1,1 @@
+static void _PHY_PathADDAOn ( struct adapter * adapt , u32 * ADDAReg ) { int i ; rtl8188e_PHY_SetBBReg ( adapt , ADDAReg [ 0 ] , bMaskDWord , 0x0b1b25a0 ) ; for ( i = 1 ; i < IQK_ADDA_REG_NUM ; i ++ ) { rtl8188e_PHY_SetBBReg ( adapt , ADDAReg [ i ] , bMaskDWord , 0x0bdb25a0 ) ; } } 

@@ -1,0 +1,1 @@
+get_config_bool ( , , , ) { krb5_boolean b ; b = krb5_config_get_bool_default ( context , NULL , def_value , "realms" , realm , name , NULL ) ; if ( b != def_value ) { return b ; } if ( b != def_value ) { return b ; } return def_value ; } 

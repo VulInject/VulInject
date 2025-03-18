@@ -1,0 +1,1 @@
+static inline void qusb2_clrbits ( void __iomem * base , u32 offset , u32 val ) { u32 reg ; reg = readl ( base + offset ) ; writel ( reg , base + offset ) ; readl ( base + offset ) ; } 

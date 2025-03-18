@@ -1,0 +1,1 @@
+static unsigned bch_cache_max_chain ( struct cache_set * c ) { unsigned ret = 0 ; struct hlist_head * h ; mutex_lock ( & c -> bucket_lock ) ; for ( h = c -> bucket_hash ; h < c -> bucket_hash + ( 1 << BUCKET_HASH_BITS ) ; h ++ ) { unsigned i = 0 ; struct hlist_node * p ; hlist_for_each ( , ) ret = max ( ret , i ) ; } mutex_unlock ( & c -> bucket_lock ) ; return ret ; } 

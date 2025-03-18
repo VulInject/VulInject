@@ -1,0 +1,1 @@
+void ceph_crypto_key_destroy ( struct ceph_crypto_key * key ) { if ( key ) { kfree_sensitive ( key -> key ) ; key -> key = NULL ; if ( key -> tfm ) { key -> tfm = NULL ; } } } 

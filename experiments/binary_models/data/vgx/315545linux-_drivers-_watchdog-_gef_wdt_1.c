@@ -1,0 +1,1 @@
+static int gef_wdt_probe ( struct platform_device * dev ) { int timeout = 10 ; u32 freq ; bus_clk = 133 ; freq = fsl_get_sys_freq ( ) ; if ( freq != - 1 ) { bus_clk = freq ; } gef_wdt_regs = of_iomap ( dev -> dev . of_node , 0 ) ; gef_wdt_set_timeout ( timeout ) ; gef_wdt_handler_disable ( ) ; return misc_register ( & gef_wdt_miscdev ) ; } 

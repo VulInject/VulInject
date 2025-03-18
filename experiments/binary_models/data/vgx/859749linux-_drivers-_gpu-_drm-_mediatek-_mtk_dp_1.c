@@ -1,0 +1,1 @@
+static int mtk_dp_poweron ( struct mtk_dp * mtk_dp ) { int ret ; ret = phy_init ( mtk_dp -> phy ) ; if ( ret ) { dev_err ( mtk_dp -> dev , "Failed to initialize phy: %d\n" , ret ) ; return ret ; } mtk_dp_init_port ( mtk_dp , NULL ) ; mtk_dp_power_enable ( mtk_dp ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void __init pxa25x_dt_clocks_init ( struct device_node * np ) { pxa25x_clocks_init ( ioremap ( 0x41300000ul , 0x10 ) ) ; clk_pxa_dt_common_init ( np , NULL ) ; } 

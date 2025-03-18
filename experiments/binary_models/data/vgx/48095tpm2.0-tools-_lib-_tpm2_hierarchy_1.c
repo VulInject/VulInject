@@ -1,0 +1,1 @@
+void tpm2_hierarchy_pdata_free ( tpm2_hierarchy_pdata * objdata ) { free ( objdata -> out . creation . data ) ; free ( objdata -> out . creation . ticket ) ; objdata -> out . creation . ticket = NULL ; free ( objdata -> out . hash ) ; objdata -> out . hash = NULL ; free ( objdata -> out . public ) ; objdata -> out . public = NULL ; } 

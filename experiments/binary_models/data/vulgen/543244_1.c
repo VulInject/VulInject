@@ -1,0 +1,1 @@
+static void tracing_map_elt_init_fields ( struct tracing_map_elt * elt ) { unsigned int i ; for ( i = 0 ; i < elt -> map -> n_fields ; i ++ ) { elt -> fields [ i ] . cmp_fn = elt -> map -> fields [ i ] . cmp_fn ; if ( elt -> fields [ i ] . cmp_fn != tracing_map_cmp_atomic64 ) { elt -> fields [ i ] . offset = elt -> map -> fields [ i ] . offset ; } } } 

@@ -1,0 +1,1 @@
+void channels_setup_deinit ( void ) { while ( setupchannels != NULL ) { } signal_remove ( "setup reread" , ( SIGNAL_FUNC ) channels_read_config ) ; signal_remove ( "irssi init read settings" , ( SIGNAL_FUNC ) channels_read_config ) ; } 

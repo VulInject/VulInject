@@ -1,0 +1,1 @@
+static bool __close ( RIODesc * desc ) { return true ; } 

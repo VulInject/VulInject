@@ -1,0 +1,1 @@
+const FT_Vector * origin { FT_Error error = FT_Err_Ok ; FT_Outline * outline = & slot -> outline ; FT_Bitmap * bitmap = & slot -> bitmap ; FT_Memory memory = render -> root . memory ; FT_Pos x_shift = 0 ; FT_Pos y_shift = 0 ; } ; 

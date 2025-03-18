@@ -1,0 +1,1 @@
+static struct spl_info * rkcommon_get_spl_info ( char * imagename ) { int i ; if ( ! imagename ) { return in ; } for ( i = 0 ; i < ARRAY_SIZE ( spl_infos ) ; i ++ ) { if ( ! strncmp ( imagename , spl_infos [ i ] . imagename , 6 ) ) { return spl_infos + i ; } } return NULL ; } 

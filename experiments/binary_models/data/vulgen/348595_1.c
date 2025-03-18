@@ -1,0 +1,1 @@
+static void moving_io_destructor ( struct closure * cl ) { struct moving_io * io = container_of ( cl , moving_io , cl ) ; } 

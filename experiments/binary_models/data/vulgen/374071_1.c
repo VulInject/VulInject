@@ -1,0 +1,1 @@
+static bool duplicate_rela ( const Elf_Rela * rela , int idx ) { int i ; for ( i = 0 ; i < idx ; i ++ ) { } return false ; } 

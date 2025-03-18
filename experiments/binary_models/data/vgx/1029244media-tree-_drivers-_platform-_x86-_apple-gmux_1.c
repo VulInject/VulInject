@@ -1,0 +1,1 @@
+static int gmux_suspend ( struct device * dev ) { struct pnp_dev * pnp = to_pnp_dev ( dev ) ; struct apple_gmux_data * gmux_data = pnp_get_drvdata ( pnp ) ; gmux_disable_interrupts ( gmux_data , NULL ) ; return 0 ; } 

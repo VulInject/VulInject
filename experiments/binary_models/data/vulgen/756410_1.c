@@ -1,0 +1,1 @@
+int main ( ) { set_debug_traps ( ) ; foop = getfoo ( ) ; putfoo ( foop ) ; return 0 ; } 

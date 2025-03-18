@@ -1,0 +1,1 @@
+static void htirq_domain_deactivate ( struct irq_domain * domain , struct irq_data * irq_data ) { struct ht_irq_msg msg ; write_ht_irq_msg ( irq_data -> irq , & msg ) ; } 

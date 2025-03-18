@@ -1,0 +1,1 @@
+lock_style_t flock_styleenum ( char * stylestr ) { if ( strcmp ( stylestr , "posix" ) == 0 ) { return ( LSTYLE_POSIX ) ; } if ( strcmp ( stylestr , "ofd" ) == 0 ) { return ( LSTYLE_OFD ) ; } if ( strcmp ( stylestr , "flock" ) == 0 ) { return ( LSTYLE_FLOCK ) ; } else { errx ( EXIT_FAILURE , 0 ) ; } } 

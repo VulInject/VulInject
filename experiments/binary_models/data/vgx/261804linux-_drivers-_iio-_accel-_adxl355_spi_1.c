@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "ADXL355 3-Axis Digital Accelerometer SPI driver" ) ; MODULE_LICENSE ( "GPL v2" ) ; MODULE_IMPORT_NS ( IIO_ADXL355 , NULL ) ; 

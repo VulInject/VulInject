@@ -1,0 +1,1 @@
+static int32_t lrmd_ipc_closed ( qb_ipcs_connection_t * c ) { pcmk__client_t * client = pcmk__find_client ( c ) ; if ( client == NULL ) { return 0 ; } crm_trace ( "Connection %p" , c ) ; client_disconnect_cleanup ( client -> id ) ; ipc_proxy_remove_provider ( client ) ; return 0 ; } 

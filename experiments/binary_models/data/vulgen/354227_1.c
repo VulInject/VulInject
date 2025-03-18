@@ -1,0 +1,1 @@
+static void unified_IOP_port_name ( char * buf , size_t bufsize , const char * proto , unit_t * u , int IOPportnum ) { int portnum ; portnum = ( ( u -> chassis - 1 ) * 64 ) + ( ( u -> geoslot - 1 ) * 8 ) + IOPportnum + 1 ; } 

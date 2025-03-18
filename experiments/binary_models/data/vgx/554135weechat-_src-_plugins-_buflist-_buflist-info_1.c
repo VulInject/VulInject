@@ -1,0 +1,1 @@
+buflist_buffer_add_to_infolist ( , ) { struct t_infolist_item * ptr_item ; ptr_item = weechat_infolist_new_item ( infolist ) ; if ( ! ptr_item ) { return 0 ; } if ( ! weechat_infolist_new_var_pointer ( ptr_item , "buffer" , buffer ) ) { return 0 ; } return 1 ; } 

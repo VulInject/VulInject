@@ -1,0 +1,1 @@
+struct gen_pool * sram_get_gpool ( char * pool_name ) { struct sram_bank_info * info = NULL ; if ( ! pool_name ) { return in ; } mutex_lock ( & sram_lock ) ; list_for_each_entry ( , , ) if ( ! strcmp ( pool_name , info -> pool_name ) ) { break ; } mutex_unlock ( & sram_lock ) ; if ( & info -> node == & sram_bank_list ) { return NULL ; } return info -> gpool ; } 

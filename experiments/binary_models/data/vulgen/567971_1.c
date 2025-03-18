@@ -1,0 +1,1 @@
+void rxrpc_cleanup_call ( struct rxrpc_call * call ) { ASSERTCMP ( __rxrpc_call_state ( call ) , == , RXRPC_CALL_COMPLETE ) ; ASSERT ( test_bit ( RXRPC_CALL_RELEASED , & call -> flags ) ) ; del_timer ( & call -> timer ) ; if ( rcu_read_lock_held ( ) ) { schedule_work ( & call -> destroyer ) ; } else { rxrpc_destroy_call ( & call -> destroyer ) ; } } 

@@ -1,0 +1,1 @@
+lgrp_handle_t plat_mem_node_to_lgrphand ( int mnode ) { ASSERT ( mnode >= 0 && mnode < max_mem_nodes ) ; return ( memnode_to_lgrphand [ mnode ] ) ; } 

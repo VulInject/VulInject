@@ -1,0 +1,1 @@
+int trap_AAS_IntForBSPEpairKey ( int ent , char * key , int * value ) { return syscall ( BOTLIB_AAS_INT_FOR_BSP_EPAIR_KEY , ent , key , value ) ; } 

@@ -1,0 +1,1 @@
+Suite * disrd_suite ( void ) { Suite * s = suite_create ( "disrd_suite methods" ) ; tcase_add_test ( tc_core , test_one ) ; suite_add_tcase ( s , tc_core ) ; tc_core = tcase_create ( "test_two" ) ; tcase_add_test ( tc_core , test_two ) ; suite_add_tcase ( s , tc_core ) ; return s ; } void rundebug ( ) { } 

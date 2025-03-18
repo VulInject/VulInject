@@ -1,0 +1,1 @@
+static ssize_t new_id_store ( struct device_driver * driver , const char * buf , size_t count ) { struct hv_driver * drv = drv_to_hv_drv ( driver ) ; guid_t guid ; ssize_t retval ; retval = guid_parse ( buf , & guid ) ; if ( retval ) { return retval ; } retval = vmbus_add_dynid ( drv , & guid ) ; if ( retval ) { return retval ; } return count ; } 

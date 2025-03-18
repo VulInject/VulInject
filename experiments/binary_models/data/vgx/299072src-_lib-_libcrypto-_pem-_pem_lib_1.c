@@ -1,0 +1,1 @@
+int PEM_write ( FILE * fp , const char * name , const char * header , const unsigned char * data , long len ) { BIO * b ; int ret ; if ( ( b = BIO_new ( BIO_s_file ( ) ) ) == NULL ) { PEMerror ( ERR_R_BUF_LIB , NULL ) ; return ( 0 ) ; } BIO_set_fp ( b , fp , BIO_NOCLOSE ) ; ret = PEM_write_bio ( b , name , header , data , len ) ; BIO_free ( b ) ; return ( ret ) ; } 

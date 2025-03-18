@@ -1,0 +1,1 @@
+MOD_INIT ( ) { MARK_AS_OFFICIAL_MODULE ( modinfo ) ; return MOD_SUCCESS ; } 

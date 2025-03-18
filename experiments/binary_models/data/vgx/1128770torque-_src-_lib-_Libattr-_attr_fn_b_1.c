@@ -1,0 +1,1 @@
+int encode_b ( pbs_attribute * attr , tlist_head * phead , const char * atname , const char * rsname , int UNUSED ( mode ) , int UNUSED ( perm ) ) { size_t ct ; svrattrl * pal ; const char * value ; if ( ! ( attr -> at_flags & ATR_VFLAG_SET ) ) { return ( 0 ) ; } if ( attr -> at_val . at_bool ) { value = true_val ; } } 

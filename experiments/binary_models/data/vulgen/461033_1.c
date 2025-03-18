@@ -1,0 +1,1 @@
+int remove_pid ( char * pidfile ) { if ( pid == getpid ( ) ) { return unlink ( pidfile ) ; } else { LogError ( "Pid file is held by pid %d" , pid ) ; return - 1 ; } } 

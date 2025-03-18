@@ -1,0 +1,1 @@
+static int buck_get_value ( struct udevice * dev ) { int uV ; int ret ; ret = s2mps11_buck_val ( dev , PMIC_OP_GET , & uV ) ; return uV ; } 

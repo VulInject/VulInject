@@ -1,0 +1,1 @@
+static apr_status_t identifier_to_json ( void * value , md_json_t * json , apr_pool_t * p , void * baton ) { md_json_t * jid ; ( void ) baton ; jid = md_json_create ( p , NULL ) ; md_json_sets ( "dns" , jid , "type" , NULL ) ; md_json_sets ( value , jid , "value" , NULL ) ; return md_json_setj ( jid , json , NULL ) ; } 

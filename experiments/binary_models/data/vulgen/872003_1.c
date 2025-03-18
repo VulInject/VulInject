@@ -1,0 +1,1 @@
+int ffs ( int mask ) { int bit ; unsigned int r = mask ; static const signed char t [ 16 ] { - 28 1 2 1 3 1 2 1 4 1 2 1 3 1 2 1 } ; ; bit = 0 ; if ( ! ( r & 0xffff ) ) { bit += 16 ; r >>= 16 ; } if ( ! ( r & 0xff ) ) { bit += 8 ; r >>= 8 ; } return ( bit + t [ r & 0xf ] ) ; } 

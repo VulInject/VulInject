@@ -1,0 +1,1 @@
+static DecodeStatus readInstruction32 ( const uint8_t * code , size_t len , uint32_t * Insn ) { * Insn = ( code [ 3 ] << 0 ) | ( code [ 2 ] << 8 ) | ( code [ 1 ] << 16 ) | ( ( uint32_t ) code [ 0 ] << 24 ) ; return MCDisassembler_Success ; } 

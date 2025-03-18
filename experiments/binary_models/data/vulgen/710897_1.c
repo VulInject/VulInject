@@ -1,0 +1,1 @@
+static ssize_t manager_alpha_blending_enabled_show ( struct omap_overlay_manager * mgr , char * buf ) { struct omap_overlay_manager_info info ; mgr -> get_manager_info ( mgr , & info ) ; return snprintf ( buf , PAGE_SIZE , "%d\n" , info . partial_alpha_enabled ) ; } 

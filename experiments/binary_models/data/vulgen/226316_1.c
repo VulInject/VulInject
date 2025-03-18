@@ -1,0 +1,1 @@
+static void nuke ( struct pxa_ep * ep , int status ) { struct pxa27x_request * req ; unsigned long flags ; spin_lock_irqsave ( & ep -> lock , flags ) ; while ( ! list_empty ( & ep -> queue ) ) { req = list_entry ( ep -> queue . next , pxa27x_request , queue ) ; } spin_unlock_irqrestore ( & ep -> lock , flags ) ; } 

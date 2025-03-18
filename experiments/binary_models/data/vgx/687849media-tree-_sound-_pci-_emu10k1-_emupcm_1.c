@@ -1,0 +1,1 @@
+static int snd_emu10k1_efx_playback_close ( struct snd_pcm_substream * substream ) { struct snd_emu10k1 * emu = snd_pcm_substream_chip ( substream ) ; struct snd_emu10k1_pcm_mixer * mix ; int i ; for ( i = 0 ; i < NUM_EFX_PLAYBACK ; i ++ ) { mix = & emu -> efx_pcm_mixer [ i ] ; snd_emu10k1_pcm_efx_mixer_notify ( emu , i , 0 ) ; } return 0 ; } 

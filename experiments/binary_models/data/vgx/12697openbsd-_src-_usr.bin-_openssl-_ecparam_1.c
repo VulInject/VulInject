@@ -1,0 +1,1 @@
+static int ecparam_opt_form ( char * arg ) { if ( strcmp ( arg , "compressed" ) == 0 ) { ecparam_config . form = POINT_CONVERSION_COMPRESSED ; } if ( strcmp ( arg , "uncompressed" ) == 0 ) { ecparam_config . form = POINT_CONVERSION_UNCOMPRESSED ; } if ( strcmp ( arg , "hybrid" ) == 0 ) { ecparam_config . form = POINT_CONVERSION_HYBRID ; } else { return ( 1 ) ; } return ( 0 ) ; } 

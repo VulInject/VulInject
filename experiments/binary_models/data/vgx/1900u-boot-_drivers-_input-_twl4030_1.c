@@ -1,0 +1,1 @@
+int twl4030_input_power_button ( void ) { u8 data ; twl4030_i2c_read_u8 ( TWL4030_CHIP_PM_MASTER , TWL4030_PM_MASTER_STS_HW_CONDITIONS , & data ) ; return 0 ; } 

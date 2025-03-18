@@ -1,0 +1,1 @@
+static void * open_to_1253 ( ) { kiconv_state_t s ; s = ( kiconv_state_t ) kmem_alloc ( sizeof ( kiconv_state_data_t ) , KM_SLEEP ) ; s -> id = KICONV_TBLID_1253 ; return ( ( void * ) s ) ; } 

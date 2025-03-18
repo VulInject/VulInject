@@ -1,0 +1,1 @@
+char * plat_fbpath ( void ) { static char * fbpath = NULL ; static char buf [ MAXPATHLEN ] ; char * path ; path = get_alias ( "screen" , buf ) ; if ( path != NULL ) { fbpath = path ; return ( path ) ; } return ( NULL ) ; } 

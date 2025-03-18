@@ -1,0 +1,1 @@
+static void xen_vcpu_notify_restore ( void * data ) { if ( xen_pv_domain ( ) && boot_cpu_has ( X86_FEATURE_SPEC_CTRL ) ) { wrmsrl ( MSR_IA32_SPEC_CTRL , this_cpu_read ( spec_ctrl ) ) ; } tick_resume_local ( ) ; } 

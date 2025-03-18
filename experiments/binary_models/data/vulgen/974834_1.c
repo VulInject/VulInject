@@ -1,0 +1,1 @@
+static struct serio_driver tr_drv = { . driver = { . name = "touchright" } . description = DRIVER_DESC . id_table = tr_serio_ids . interrupt = tr_interrupt . connect = tr_connect . disconnect = tr_disconnect } ; 

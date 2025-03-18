@@ -1,0 +1,1 @@
+static char * get_enum ( register Namval_t * np , Namfun_t * fp ) { static char buff [ 6 ] ; struct Enum * ep = ( Enum * ) fp ; long n = nv_getn ( np , fp ) ; if ( n < ep -> nelem ) { return ( ( char * ) ep -> values [ n ] ) ; } return ( buff ) ; } 

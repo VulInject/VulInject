@@ -1,0 +1,1 @@
+int X509_CRL_set_lastUpdate ( X509_CRL * x , const ASN1_TIME * tm ) { ASN1_TIME * in ; in = x -> crl -> lastUpdate ; if ( in != tm ) { in = ASN1_STRING_dup ( tm ) ; if ( in != NULL ) { ASN1_TIME_free ( x -> crl -> lastUpdate ) ; x -> crl -> lastUpdate = in ; } } return ( in != NULL ) ; } 

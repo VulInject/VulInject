@@ -1,0 +1,1 @@
+int PixelSize ( cmsUInt32Number dwFormat ) { return T_BYTES ( dwFormat ) * ( T_CHANNELS ( dwFormat ) + T_EXTRA ( dwFormat ) ) ; } 

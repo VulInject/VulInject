@@ -1,0 +1,1 @@
+static void igc_ptm_stop ( struct igc_adapter * adapter ) { struct igc_hw * hw = & adapter -> hw ; u32 ctrl ; ctrl = rd32 ( IGC_PTM_CTRL ) ; wr32 ( IGC_PTM_CTRL , ctrl ) ; } 

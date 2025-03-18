@@ -1,0 +1,1 @@
+void ip_drop_register ( ipdropper_t * ipd , char * name ) { if ( ipd -> ipd_name != NULL ) { cmn_err ( CE_WARN , "ip_drop_register: ipdropper %s already registered with %s" , name , ipd -> ipd_name ) ; return ; } ( void ) strcpy ( ipd -> ipd_name , name ) ; } 

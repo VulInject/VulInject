@@ -1,0 +1,1 @@
+static int bfin_flash_remove ( struct platform_device * pdev ) { struct async_state * state = platform_get_drvdata ( pdev ) ; gpio_free ( state -> enet_flash_pin ) ; mtd_device_unregister ( state -> mtd ) ; map_destroy ( state -> mtd ) ; return 0 ; } 

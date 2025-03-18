@@ -1,0 +1,1 @@
+static void print_tnbr ( struct tnbr * tnbr ) { printf ( "\n\ttargeted-neighbor %s {\n" , log_addr ( tnbr -> af , & tnbr -> addr ) ) ; printf ( "\t\ttargeted-hello-holdtime %u\n" , tnbr -> hello_holdtime ) ; printf ( "\t\ttargeted-hello-interval %u\n" , tnbr -> hello_interval ) ; } 

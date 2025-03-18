@@ -1,0 +1,1 @@
+static void btmrvl_free_adapter ( struct btmrvl_private * priv ) { skb_queue_purge ( & priv -> adapter -> tx_queue ) ; kfree ( priv -> adapter ) ; priv -> adapter = NULL ; } 

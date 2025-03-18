@@ -1,0 +1,1 @@
+static void mxl301rf_remove ( struct i2c_client * client ) { struct mxl301rf_state * state ; state = cfg_to_state ( i2c_get_clientdata ( client ) ) ; state -> cfg . fe -> tuner_priv = NULL ; } 

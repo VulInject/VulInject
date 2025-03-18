@@ -1,0 +1,1 @@
+static int rsa_check_key_length ( unsigned int len ) { switch ( len ) { case 512 : case 1024 : case 1536 : fallthrough ; case 2048 : case 3072 : case 4096 : return 0 ; } return - EINVAL ; } 

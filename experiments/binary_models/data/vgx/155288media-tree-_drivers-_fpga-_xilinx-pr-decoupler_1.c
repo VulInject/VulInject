@@ -1,0 +1,1 @@
+static int xlnx_pr_decoupler_enable_show ( struct fpga_bridge * bridge ) { const struct xlnx_pr_decoupler_data * priv = bridge -> priv ; u32 status ; int err ; err = clk_enable ( priv -> clk ) ; status = readl ( priv -> io_base ) ; clk_disable ( priv -> clk ) ; return ! status ; } 

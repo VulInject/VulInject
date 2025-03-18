@@ -1,0 +1,1 @@
+int noknock_mode_del ( Channel * channel , int modeChar ) MOD_TEST ( ) { return MOD_SUCCESS ; } 

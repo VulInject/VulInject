@@ -1,0 +1,1 @@
+static void xfs_allocbt_read_verify ( struct xfs_buf * bp ) { xfs_failaddr_t fa ; else { fa = xfs_allocbt_verify ( bp ) ; if ( fa ) { xfs_verifier_error ( bp , - EFSCORRUPTED , fa ) ; } } if ( bp -> b_error ) { trace_xfs_btree_corrupt ( bp , _RET_IP_ ) ; } } 

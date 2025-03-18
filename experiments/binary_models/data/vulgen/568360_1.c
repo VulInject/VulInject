@@ -1,0 +1,1 @@
+static void action_cancel ( void * arg ) { int * p = ( int * ) arg ; p += TIMERS_IN_TEST ; ( * p ) ++ ; } 

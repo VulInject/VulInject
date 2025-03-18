@@ -1,0 +1,1 @@
+GC_INLINE void GC_store_stack_ptr ( GC_stack_context_t crtn ) { ao_store_async ( ( volatile AO_t * ) & ( crtn -> stack_ptr ) , ( AO_t ) GC_save_regs_in_stack ( ) ) ; ao_store_async ( ( volatile AO_t * ) & ( crtn -> stack_ptr ) , ( AO_t ) GC_approx_sp ( ) ) ; } 

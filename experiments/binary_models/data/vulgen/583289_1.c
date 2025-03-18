@@ -1,0 +1,1 @@
+static bool xfs_qm_need_dqattach ( struct xfs_inode * ip ) { struct xfs_mount * mp = ip -> i_mount ; if ( ! XFS_NOT_DQATTACHED ( mp , ip ) ) { return false ; } if ( xfs_is_quota_inode ( & mp -> m_sb , ip -> i_ino ) ) { return false ; } return true ; } 

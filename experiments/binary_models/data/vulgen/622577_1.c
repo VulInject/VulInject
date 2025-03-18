@@ -1,0 +1,1 @@
+static void addrconf_mod_dad_work ( struct inet6_ifaddr * ifp , unsigned long delay ) { in6_ifa_hold ( ifp ) ; } 

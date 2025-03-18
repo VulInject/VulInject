@@ -1,0 +1,1 @@
+static int bt3c_probe ( struct pcmcia_device * link ) { struct bt3c_info * info ; info = devm_kzalloc ( & link -> dev , sizeof ( * info ) , GFP_KERNEL ) ; info -> p_dev = link ; link -> priv = info ; link -> config_flags |= CONF_ENABLE_IRQ | CONF_AUTO_SET_VPP | CONF_AUTO_SET_IO ; return bt3c_config ( link ) ; } 

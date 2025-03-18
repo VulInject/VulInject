@@ -1,0 +1,1 @@
+void acx_cardbus_power ( struct acx_softc * , int ) void acx_cardbus_setup ( struct acx_cardbus_softc * ) int acx_cardbus_match ( struct device * parent , void * match , void * aux ) { return ( cardbus_matchbyid ( ( cardbus_attach_args * ) aux , acx_cardbus_devices , sizeof ( acx_cardbus_devices ) / sizeof ( acx_cardbus_devices [ 0 ] ) ) ) ; } 

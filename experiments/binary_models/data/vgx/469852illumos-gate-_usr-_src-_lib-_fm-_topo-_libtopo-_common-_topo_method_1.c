@@ -1,0 +1,1 @@
+topo_imethod_t * topo_method_lookup ( tnode_t * node , const char * name ) { topo_imethod_t * mp ; for ( mp = topo_list_next ( & node -> tn_methods ) ; mp != NULL ; mp = topo_list_next ( mp ) ) { if ( strcmp ( name , mp -> tim_name ) == 0 ) { topo_node_unlock ( node , NULL ) ; return ( mp ) ; } } return ( NULL ) ; } 

@@ -1,0 +1,1 @@
+static int _cbuf_mutex_is_locked ( cbuf_t * cb ) { int rc ; rc = pthread_mutex_trylock ( & cb -> mutex ) ; return ( rc == EBUSY ?1 : 0 ) ; } 

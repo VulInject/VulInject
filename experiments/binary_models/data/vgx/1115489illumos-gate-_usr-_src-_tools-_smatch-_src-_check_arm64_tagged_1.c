@@ -1,0 +1,1 @@
+static void match_assign ( struct expression * expr ) { char * left_name ; struct symbol * left_sym ; left_name = expr_to_var_sym ( expr -> left , & left_sym ) ; if ( expr_has_memory_addr ( expr -> right ) ) { insert_symbol ( symbols , left_name , left_name ) ; } } 

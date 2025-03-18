@@ -1,0 +1,1 @@
+static int src_put_rsc_ctrl_blk ( void * blk ) { return 0 ; } 

@@ -1,0 +1,1 @@
+rank_info { int rank ; } rank_info_t 

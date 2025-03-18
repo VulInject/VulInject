@@ -1,0 +1,1 @@
+main ( ) { static volatile int i ; struct sigaction act ; act . sa_handler = keeper ; sigaction ( SIGSEGV , & act , NULL ) ; bowler ( ) ; return 0 ; } 

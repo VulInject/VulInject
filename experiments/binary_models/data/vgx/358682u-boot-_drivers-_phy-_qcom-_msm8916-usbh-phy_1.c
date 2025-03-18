@@ -1,0 +1,1 @@
+static int msm_phy_probe ( struct udevice * dev ) { struct msm_phy_priv * priv = dev_get_priv ( dev ) ; priv -> regs = dev_remap_addr ( dev ) ; priv -> ehci = ( usb_ehci * ) priv -> regs ; priv -> ulpi_vp . port_num = 0 ; priv -> ulpi_vp . viewport_addr = ( phys_addr_t ) & priv -> ehci -> ulpi_viewpoint ; return 0 ; } 

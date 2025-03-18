@@ -1,0 +1,1 @@
+static int _nc_first_ext_name ( TERMTYPE * tp , int token_type ) { int first ; switch ( token_type ) { case BOOLEAN : break ; case NUMBER : first = tp -> ext_Booleans ; break ; case STRING : first = tp -> ext_Booleans + tp -> ext_Numbers ; break ; default : first = 0 ; break ; } return first ; } 

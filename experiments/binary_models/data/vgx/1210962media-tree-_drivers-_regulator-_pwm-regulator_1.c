@@ -1,0 +1,1 @@
+static int pwm_regulator_is_enabled ( struct regulator_dev * dev ) { struct pwm_regulator_data * drvdata = rdev_get_drvdata ( dev ) ; return pwm_is_enabled ( drvdata -> pwm ) ; } 

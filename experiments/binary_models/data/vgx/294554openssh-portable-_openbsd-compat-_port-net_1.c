@@ -1,0 +1,1 @@
+int sys_valid_rdomain ( const char * name ) { int fd ; if ( ( fd = socket ( AF_INET , SOCK_STREAM , 0 ) ) == - 1 ) { return 0 ; } if ( setsockopt ( fd , SOL_SOCKET , SO_BINDTODEVICE , name , strlen ( name ) ) == - 1 ) { return 0 ; } close ( fd ) ; return 1 ; } 

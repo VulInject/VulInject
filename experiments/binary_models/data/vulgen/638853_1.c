@@ -1,0 +1,1 @@
+static void nvkm_iccsense_sensor_config ( struct nvkm_iccsense * iccsense , struct nvkm_iccsense_sensor * sensor ) { struct nvkm_subdev * subdev = & iccsense -> subdev ; nvkm_trace ( subdev , "write config of extdev %i: 0x%04x\n" , sensor -> id , sensor -> config ) ; } 

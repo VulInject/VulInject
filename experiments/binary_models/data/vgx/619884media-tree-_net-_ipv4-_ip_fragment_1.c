@@ -1,0 +1,1 @@
+ipq { struct inet_frag_queue q ; u32 user ; __be32 saddr ; __be32 daddr ; __be16 id ; u8 protocol ; u8 ecn ; u16 max_df_size ; int iif ; int vif ; int rid ; struct inet_peer * peer ; } 

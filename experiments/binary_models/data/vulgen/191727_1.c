@@ -1,0 +1,1 @@
+static sector_t omfs_bmap ( struct address_space * mapping , int block ) { return generic_block_bmap ( mapping , block , omfs_get_block ) ; } 

@@ -1,0 +1,1 @@
+void usbip_vhci_driver_close ( void ) { if ( ! vhci_driver ) { return ; } udev_device_unref ( vhci_driver -> hc_device ) ; vhci_driver = NULL ; udev_unref ( udev_context ) ; } 

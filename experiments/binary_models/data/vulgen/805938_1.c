@@ -1,0 +1,1 @@
+static void time_printf ( int verb , char * fmt , ... ) { time_t now = _state . s_now . tv_sec ; struct tm * t ; va_list ap ; if ( verb > _conf . cf_verb ) { return ; } t = localtime ( & now ) ; if ( ! t ) { err ( 1 , "localtime()" ) ; } printf ( "[%.2d:%.2d:%.2d] " , t -> tm_hour , t -> tm_min , t -> tm_sec ) ; va_start ( ap , fmt ) ; vprintf ( fmt , ap ) ; va_end ( ap ) ; } 

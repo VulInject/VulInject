@@ -1,0 +1,1 @@
+struct ospf6_lsdb * ospf6_lsdb_create ( void * data ) { struct ospf6_lsdb * lsdb ; lsdb = XCALLOC ( MTYPE_OSPF6_LSDB , sizeof ( ospf6_lsdb ) ) ; memset ( lsdb , 0 , sizeof ( ospf6_lsdb ) ) ; lsdb -> data = data ; return lsdb ; } 

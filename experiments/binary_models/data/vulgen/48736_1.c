@@ -1,0 +1,1 @@
+void maxcoin_regenhash ( struct work * work ) { uint256 result ; unsigned int data [ 20 ] , datacopy [ 20 ] ; memcpy ( datacopy , work -> data , 80 ) ; maxcoin1 ( ( unsigned char * ) & result , ( unsigned char * ) data , 80 ) ; memcpy ( work -> hash , & result , 32 ) ; } 

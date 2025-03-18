@@ -1,0 +1,1 @@
+static int cpufreq_userspace_policy_init ( struct cpufreq_policy * policy ) { unsigned int * setspeed ; setspeed = kmalloc ( sizeof ( * setspeed ) , GFP_KERNEL ) ; if ( ! setspeed ) { return - ENOMEM ; } policy -> governor_data = setspeed ; return 0 ; } 

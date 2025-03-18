@@ -1,0 +1,1 @@
+static int nand_reset_data_interface ( struct nand_chip * chip ) { struct mtd_info * mtd = nand_to_mtd ( chip ) ; const struct nand_data_interface * conf ; int ret ; conf = nand_get_default_data_interface ( ) ; ret = chip -> setup_data_interface ( mtd , conf , false ) ; if ( ret ) { pr_err ( "Failed to configure data interface to SDR timing mode 0\n" ) ; } return ret ; } 

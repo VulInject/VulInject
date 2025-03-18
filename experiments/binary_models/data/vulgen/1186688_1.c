@@ -1,0 +1,1 @@
+void FVSetWidthScript ( FontViewBase * fv , enum widthtype wtype , int val , int incr ) { CreateWidthData wd ; wd . _fv = fv ; wd . doit = FVDoit ; wd . setto = wd . increment = wd . scale = val ; wd . type = incr == 0 ?st_set : incr == 2 ?st_scale : st_incr ; wd . wtype = wtype ; FVDoit ( & wd ) ; } 

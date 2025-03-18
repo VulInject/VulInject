@@ -1,0 +1,1 @@
+static int aer_inj_read ( struct pci_bus * bus , unsigned int devfn , int where , int size , u32 * val ) { struct pci_ops * ops , * my_ops ; int rv ; ops = __find_pci_bus_ops ( bus ) ; my_ops = bus -> ops ; bus -> ops = ops ; rv = ops -> read ( bus , devfn , where , size , val ) ; bus -> ops = my_ops ; return rv ; } 

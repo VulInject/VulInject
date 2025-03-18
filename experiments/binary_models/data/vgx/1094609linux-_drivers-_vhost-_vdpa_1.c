@@ -1,0 +1,1 @@
+static struct vhost_iotlb * asid_to_iotlb ( struct vhost_vdpa * v , u32 asid ) { struct vhost_vdpa_as * as = asid_to_as ( v , asid ) ; if ( ! as ) { return in ; } return & as -> iotlb ; } 

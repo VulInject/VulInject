@@ -1,0 +1,1 @@
+NCURSES_EXPORT ( ) data_behind ( ) { bool result = FALSE ; T ( ( T_CALLED ( "data_behind(%p)" ) , form ) ) ; returnBool ( result ) ; } 

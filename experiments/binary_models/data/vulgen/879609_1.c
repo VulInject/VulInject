@@ -1,0 +1,1 @@
+static const struct drm_driver lcdif_driver = { . driver_features = DRIVER_GEM | DRIVER_MODESET | DRIVER_ATOMIC DRM_GEM_DMA_DRIVER_OPS . fops = & fops . name = "imx-lcdif" . desc = "i.MX LCDIF Controller DRM" . date = "20220417" . major = 1 . minor = 0 } ; 

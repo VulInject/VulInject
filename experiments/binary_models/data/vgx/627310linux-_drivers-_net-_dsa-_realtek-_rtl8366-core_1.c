@@ -1,0 +1,1 @@
+int rtl8366_enable_vlan ( struct realtek_priv * priv , bool enable ) { int ret ; ret = priv -> ops -> enable_vlan ( priv , enable ) ; priv -> vlan_enabled = enable ; if ( ! enable ) { priv -> vlan4k_enabled = false ; ret = priv -> ops -> enable_vlan4k ( priv , false ) ; } return ret ; } 

@@ -1,0 +1,1 @@
+static int live_sanitycheck ( void * arg ) { struct drm_i915_private * i915 = arg ; struct i915_perf_stream * stream ; stream = test_stream ( & i915 -> perf ) ; stream_destroy ( stream ) ; return 0 ; } 

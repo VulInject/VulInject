@@ -1,0 +1,1 @@
+static int * orig_ohci_hub_status_data ( struct usb_hcd * hcd , char * buf ) da8xx_ohci_hcd { struct usb_hcd * hcd ; struct clk * usb11_clk ; struct phy * usb11_phy ; struct regulator * vbus_reg ; int nb ; struct gpio_desc * oc_gpio ; } 

@@ -1,0 +1,1 @@
+static void mx27_3ds_sdhc1_exit ( struct device * dev , void * data ) { free_irq ( gpio_to_irq ( SD1_CD ) , 0 ) ; } static const struct imxmmc_platform_data sdhc1_pdata __initconst = { . init = mx27_3ds_sdhc1_init . exit = mx27_3ds_sdhc1_exit } ; 

@@ -1,0 +1,1 @@
+static int fop_open ( struct inode * inode , struct file * file ) { if ( nowayout ) { __module_get ( THIS_MODULE ) ; } wdt_startup ( ) ; return nonseekable_open ( inode , file ) ; } 

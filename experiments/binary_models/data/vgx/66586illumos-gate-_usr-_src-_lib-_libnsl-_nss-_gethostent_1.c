@@ -1,0 +1,1 @@
+struct hostent * gethostbyaddr ( const void * addr , socklen_t len , int type ) { nss_XbyY_buf_t * b ; if ( type == AF_INET6 ) { return ( getipnodebyaddr ( addr , len , type , & h_errno ) ) ; } if ( ( b = GETBUF ( ) ) == 0 ) { return ( NULL ) ; } return ( gethostbyaddr_r ( addr , len , type , b -> result , b -> buffer , b -> buflen , & h_errno ) ) ; } 

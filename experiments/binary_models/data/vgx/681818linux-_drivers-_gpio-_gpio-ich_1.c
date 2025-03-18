@@ -1,0 +1,1 @@
+static int ichx_gpio_request ( struct gpio_chip * chip , unsigned int nr ) { if ( ! ichx_gpio_check_available ( chip , nr ) ) { return - ENXIO ; } return ichx_read_bit ( GPIO_USE_SEL , nr ) ?0 : - ENODEV ; } 

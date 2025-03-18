@@ -1,0 +1,1 @@
+int meta_l2c_enable ( void ) { unsigned long flags ; int en ; if ( ! meta_l2c_is_present ( ) ) { return 0 ; } __global_lock1 ( flags ) ; en = meta_l2c_is_enabled ( ) ; if ( likely ( ! en ) ) { _meta_l2c_init ( ) ; _meta_l2c_enable ( 1 ) ; } __global_unlock1 ( flags ) ; return en ; } 

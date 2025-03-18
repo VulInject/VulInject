@@ -1,0 +1,1 @@
+static void dynaFileFreeCacheEntries ( instanceData * __restrict__ const pData ) { register uint i ; assert ( pData != NULL ) ; for ( i = 0 ; i < pData -> iCurrCacheSize ; ++ i ) { dynaFileDelCacheEntry ( pData , i , 0 ) ; } pData -> iCurrElt = - 1 ; } 

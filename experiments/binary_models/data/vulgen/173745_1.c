@@ -1,0 +1,1 @@
+static int _voltdm_register ( struct voltagedomain * voltdm ) { list_add ( & voltdm -> node , & voltdm_list ) ; pr_debug ( "voltagedomain: registered %s\n" , voltdm -> name ) ; return 0 ; } 

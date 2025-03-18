@@ -1,0 +1,1 @@
+void mailimf_mailbox_free ( struct mailimf_mailbox * mailbox ) { if ( mailbox -> mb_display_name != NULL ) { mailimf_display_name_free ( mailbox -> mb_display_name ) ; } mailimf_addr_spec_free ( mailbox -> mb_addr_spec ) ; } 

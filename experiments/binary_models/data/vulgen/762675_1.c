@@ -1,0 +1,1 @@
+static void mutt_poll_fd_add ( int fd , short events ) { int i = 0 ; for ( ; ( i < PollFdsCount ) && ( PollFds [ i ] . fd != fd ) ; i ++ ) { } if ( i == PollFdsCount ) { PollFdsCount ++ ; PollFds [ i ] . fd = fd ; PollFds [ i ] . events = events ; } else { PollFds [ i ] . events |= events ; } } 

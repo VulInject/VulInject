@@ -1,0 +1,1 @@
+static void scm_request_start ( struct scm_request * scmrq ) { struct scm_blk_dev * bdev = scmrq -> bdev ; atomic_inc ( & bdev -> queued_reqs ) ; if ( eadm_start_aob ( scmrq -> aob ) ) { SCM_LOG ( 5 , "no subchannel" ) ; scm_request_requeue ( scmrq , NULL ) ; } } 

@@ -1,0 +1,1 @@
+static const uint8_t type_sizes2 [ 14 ] { 0 1 1 2 4 8 1 1 2 4 8 4 8 3 } ; ; 

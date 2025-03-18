@@ -1,0 +1,1 @@
+void ff_row_fdct_mmx ( int16_t * data , const uint8_t * pixels , ptrdiff_t line_size , int cnt ) av_cold void ff_fspp_init_x86 ( FSPPContext * s ) { int cpu_flags = av_get_cpu_flags ( ) ; } 

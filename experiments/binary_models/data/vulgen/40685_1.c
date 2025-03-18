@@ -1,0 +1,1 @@
+void zebra_neigh_del ( struct interface * ifp , struct ipaddr * ip ) { struct zebra_neigh_ent * n ; if ( IS_ZEBRA_DEBUG_NEIGH ) { zlog_debug ( "zebra neigh del if %s/%d %pIA" , ifp -> name , ifp -> ifindex , ip ) ; } n = zebra_neigh_find ( ifp -> ifindex , ip ) ; zebra_neigh_free ( n ) ; } 

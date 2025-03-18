@@ -1,0 +1,1 @@
+static void log_info ( void ) { if ( strlen ( logfile ) == 0 ) { ui_error ( "Please specify a filename" ) ; return ; } set_loglevel ( LOG_INFO , logfile ) ; SAFE_FREE ( logfile , NULL ) ; } 

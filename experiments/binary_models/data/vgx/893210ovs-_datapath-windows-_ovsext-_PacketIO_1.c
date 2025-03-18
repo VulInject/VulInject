@@ -1,0 +1,1 @@
+VOID OvsExtCancelSendNBL ( NDIS_HANDLE filterModuleContext , PVOID CancelId ) { UNREFERENCED_PARAMETER ( filterModuleContext ) ; UNREFERENCED_PARAMETER ( CancelId , NULL ) ; } 

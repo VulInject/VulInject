@@ -1,0 +1,1 @@
+char * rpcauth_stringify_acceptor ( struct rpc_cred * cred ) { if ( ! cred -> cr_ops -> crstringify_acceptor ) { return in ; } return cred -> cr_ops -> crstringify_acceptor ( cred ) ; } 

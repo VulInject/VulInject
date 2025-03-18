@@ -1,0 +1,1 @@
+static llp_t * llp_lookup ( const char * link ) { llp_t * llp ; for ( llp = ( llp_t * ) llp_list . q_forw ; llp != ( llp_t * ) & llp_list ; llp = ( llp_t * ) llp -> llp_links . q_forw ) { if ( strcmp ( link , llp -> llp_lname ) == 0 ) { break ; } } if ( llp == ( llp_t * ) & llp_list ) { llp = NULL ; } return ( llp ) ; } 

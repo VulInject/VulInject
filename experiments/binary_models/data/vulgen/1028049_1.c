@@ -1,0 +1,1 @@
+static void amdgpu_pci_shutdown ( struct pci_dev * pdev ) { struct drm_device * dev = pci_get_drvdata ( pdev ) ; struct amdgpu_device * adev = drm_to_adev ( dev ) ; if ( amdgpu_ras_intr_triggered ( ) ) { return ; } amdgpu_device_ip_suspend ( adev ) ; adev -> mp1_state = PP_MP1_STATE_NONE ; } 

@@ -1,0 +1,1 @@
+{ TEST_CHECK ( mutt_file_sanitize_regex ( NULL , "apple" ) != 0 ) ; } { TEST_CHECK ( mutt_file_sanitize_regex ( & buf , NULL ) != 0 ) ; } 

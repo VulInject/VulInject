@@ -1,0 +1,1 @@
+static void rtl871x_load_fw_cb ( const struct firmware * firmware , void * context ) { struct _adapter * adapter = context ; if ( ! firmware ) { return ; } adapter -> fw = firmware ; register_netdev ( adapter -> pnetdev ) ; complete ( & adapter -> rtl8712_fw_ready ) ; } 

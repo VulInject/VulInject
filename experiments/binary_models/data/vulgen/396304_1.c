@@ -1,0 +1,1 @@
+static int atmel_tdes_hw_init ( struct atmel_tdes_dev * dd ) { int err ; if ( err ) { return err ; } if ( ! ( dd -> flags & TDES_FLAGS_INIT ) ) { atmel_tdes_write ( dd , TDES_CR , TDES_CR_SWRST ) ; dd -> flags |= TDES_FLAGS_INIT ; } return 0 ; } 

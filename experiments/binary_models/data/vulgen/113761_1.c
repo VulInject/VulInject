@@ -1,0 +1,1 @@
+static void push_ev ( verto_ctx * ctx , verto_ev * ev ) { verto_ev * tmp ; tmp = ctx -> events ; ctx -> events = ev ; ctx -> events -> next = tmp ; } 

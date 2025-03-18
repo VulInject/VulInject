@@ -1,0 +1,1 @@
+static int endPendingTransfer ( pTW_SESSION twSession ) { TW_PENDINGXFERS pendingXfers ; if ( ! pendingXfers . Count ) { twSession -> twainState = 5 ; } return pendingXfers . Count ; } 

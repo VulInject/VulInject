@@ -1,0 +1,1 @@
+static u_int32_t user2credits ( u_int32_t user ) { return ( user * HZ * CREDITS_PER_JIFFY ) / EBT_LIMIT_SCALE ; } 

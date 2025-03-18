@@ -1,0 +1,1 @@
+static void l2x0_priv_reset ( DeviceState * dev ) { L2x0State * s = ARM_L2X0 ( dev ) ; s -> ctrl = 0 ; s -> aux_ctrl = 0x02020000 ; s -> tag_ctrl = 0 ; s -> data_ctrl = 0 ; s -> filter_start = 0 ; } 

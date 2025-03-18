@@ -1,0 +1,1 @@
+int a , b ; int frob ( int size ) { if ( a % 4 ) { __smatch_implied ( a ) ; } else { __smatch_implied ( a ) ; } if ( b <= 0 || b > 100 ) { return ; } if ( b % 4 ) { __smatch_implied ( b ) ; } else { __smatch_implied ( b ) ; } return 0 ; } 

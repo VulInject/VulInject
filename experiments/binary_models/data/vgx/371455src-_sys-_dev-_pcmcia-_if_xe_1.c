@@ -1,0 +1,1 @@
+void xe_reset ( struct xe_softc * sc ) { int s ; s = splnet ( ) ; xe_stop ( sc ) ; xe_full_reset ( sc ) ; xe_init ( sc ) ; splx ( s , NULL ) ; } 

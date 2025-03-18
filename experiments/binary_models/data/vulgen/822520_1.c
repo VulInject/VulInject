@@ -1,0 +1,1 @@
+static void samsung_bl_exit ( struct device * dev ) { struct platform_pwm_backlight_data * pdata = dev -> platform_data ; struct samsung_bl_drvdata * drvdata = container_of ( pdata , samsung_bl_drvdata , plat_data ) ; struct samsung_bl_gpio_info * bl_gpio_info = drvdata -> gpio_info ; gpio_free ( bl_gpio_info -> no ) ; } 

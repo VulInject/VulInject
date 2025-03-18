@@ -1,0 +1,1 @@
+ffestt_caselist_append ( , , , , ) { ffesttCaseList new ; new = ( ffesttCaseList ) malloc_new_kp ( ffesta_scratch_pool , "FFEST case list" , sizeof ( * new ) ) ; new -> next = list -> previous -> next ; new -> previous = list -> previous ; new -> next -> previous = new ; new -> previous -> next = new ; new -> expr1 = case1 ; new -> expr2 = case2 ; new -> range = range ; } 

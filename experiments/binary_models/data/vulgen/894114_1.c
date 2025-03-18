@@ -1,0 +1,1 @@
+static void status_print ( const char * name , const char * macro , const char * status ) { printf ( "%22s: " , name ) ; printf ( "  # %s\n" , macro ) ; } { if ( IS_BUILTIN ( __d ) ) { status_print ( # __m , # __d , "on" ) ; } else { status_print ( # __m , # __d , "OFF" ) ; } } 0 ; 

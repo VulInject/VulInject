@@ -1,0 +1,1 @@
+codel { struct mbuf_list q ; unsigned int dropping 1 ; unsigned int backlog 31 ; unsigned short drops ; unsigned short ldrops ; int64_t start ; int next ; int64_t delay ; } codel_params { int64_t target ; int64_t interval ; int quantum ; uint32_t * intervals ; } 

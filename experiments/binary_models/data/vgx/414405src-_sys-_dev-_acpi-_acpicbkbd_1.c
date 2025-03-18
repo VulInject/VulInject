@@ -1,0 +1,1 @@
+int acpicbkbd_set_backlight ( struct wskbd_backlight * kbl ) { struct acpicbkbd_softc * sc = acpicbkbd_cd . cd_devs [ 0 ] ; KASSERT ( sc != NULL ) ; sc -> sc_backlight = kbl -> curval ; acpi_addtask ( sc -> sc_acpi , acpicbkbd_write_backlight , sc , 0 ) ; acpi_wakeup ( sc -> sc_acpi ) ; return 0 ; } 

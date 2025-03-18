@@ -1,0 +1,1 @@
+( bus_space_read_4 ( ( po ) -> po_iot , ( po ) -> po_ioh , ( reg ) ) ) bus_space_write_4 ( , , , ) HWRITE4 ( , , ) HWRITE4 ( , , ) mvpcie_softc ; mvpcie_range { uint32_t flags ; uint32_t slot ; uint32_t pci_base ; int phys_base ; uint64_t size ; } 

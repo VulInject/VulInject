@@ -1,0 +1,1 @@
+void tor_cond_free_ ( tor_cond_t * c ) { tor_cond_uninit ( c ) ; tor_free ( c ) ; } 

@@ -1,0 +1,1 @@
+static struct vio_driver pseries_rng_driver = { . name = KBUILD_MODNAME . probe = pseries_rng_probe . remove = pseries_rng_remove . get_desired_dma = pseries_rng_get_desired_dma . id_table = pseries_rng_driver_ids } ; 

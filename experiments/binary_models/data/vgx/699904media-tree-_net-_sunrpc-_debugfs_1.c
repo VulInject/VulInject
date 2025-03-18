@@ -1,0 +1,1 @@
+static void * tasks_start ( seq_file * f , loff_t * ppos ) __acquires ( & clnt -> cl_lock ) ( rpc_clnt * clnt = f -> private , loff_t pos = * ppos , rpc_task * task , spin_lock ( & clnt -> cl_lock ) , list_for_each_entry ( , , ) ) ; return NULL ; 

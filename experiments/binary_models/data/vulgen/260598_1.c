@@ -1,0 +1,1 @@
+They appear as in dumpsig output * idasig_v5_t ( ut8 magic [ 6 ] , ut8 version , ut8 arch , ut32 file_types , ut16 os_types , ut16 app_types , ut16 features , ut16 old_n_functions , ut16 crc16 , ut8 ctype [ 12 ] , ut8 library_name_len ) idasig_v5_t ; 

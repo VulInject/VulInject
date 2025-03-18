@@ -1,0 +1,1 @@
+static ulong rv1126_spi_get_pmuclk ( struct rv1126_pmuclk_priv * priv ) { struct rv1126_pmucru * pmucru = priv -> pmucru ; u32 div , con ; con = readl ( & pmucru -> pmu_clksel_con [ 9 ] ) ; return DIV_TO_RATE ( priv -> gpll_hz , div ) ; } 

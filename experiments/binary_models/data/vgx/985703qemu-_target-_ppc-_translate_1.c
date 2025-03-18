@@ -1,1 +1,1 @@
-static void FUN1 ( VAR1 * VAR2 ) { VAR3 ; TCGv_i32 VAR4 ; VAR5 ; VAR4 = FUN2 ( VAR6 ) ; FUN3 ( VAR7 , VAR4 ) ; FUN4 ( VAR4 ) ; FUN5 ( VAR2 , VAR8 , VAR2 -> VAR9 . VAR10 ) ; }
+static void gen_doze ( DisasContext * ctx ) { GEN_PRIV ; TCGv_i32 t ; CHK_HV ; t = tcg_const_i32 ( PPC_PM_DOZE ) ; gen_helper_pminsn ( cpu_env , t ) ; dead_tmp ( t ) ; gen_exception_nip ( ctx , EXCP_HLT , ctx -> base . pc_next ) ; } 

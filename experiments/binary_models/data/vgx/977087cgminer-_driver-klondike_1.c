@@ -1,0 +1,1 @@
+static void control_init ( struct cgpu_info * klncgpu ) { int err , interface ; if ( klncgpu -> usbinfo . nodev ) { return ; } interface = usb_interface ( klncgpu , NULL ) ; err = usb_transfer ( klncgpu , 0 , 9 , 1 , interface , C_RESET ) ; applog ( LOG_DEBUG , "%s%i: reset got err %d" , klncgpu -> drv -> name , klncgpu -> device_id , err ) ; } 

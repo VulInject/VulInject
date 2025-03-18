@@ -1,0 +1,1 @@
+static netdev_features_t jme_fix_features ( struct net_device * netdev , netdev_features_t features ) { return features ; } 

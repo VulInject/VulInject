@@ -1,0 +1,1 @@
+convert_precision_dialog_response ( , , ) { if ( response_id == GTK_RESPONSE_OK ) { private -> callback ( dialog , private -> image , precision , private -> layer_dither_method , private -> text_layer_dither_method , private -> channel_dither_method , private -> user_data ) ; } else { gtk_widget_destroy ( dialog ) ; } } 

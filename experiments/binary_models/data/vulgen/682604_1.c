@@ -1,0 +1,1 @@
+int kvm_s390_mask_adapter ( struct kvm * kvm , unsigned int id , bool masked ) { int ret ; struct s390_io_adapter * adapter = get_io_adapter ( kvm , id ) ; ret = adapter -> masked ; adapter -> masked = masked ; return ret ; } 

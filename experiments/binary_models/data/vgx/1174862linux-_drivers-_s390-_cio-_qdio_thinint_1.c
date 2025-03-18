@@ -1,0 +1,1 @@
+void __exit qdio_thinint_exit ( void ) { WARN_ON ( ! list_empty ( & tiq_list ) ) ; unregister_adapter_interrupt ( & tiqdio_airq ) ; } 

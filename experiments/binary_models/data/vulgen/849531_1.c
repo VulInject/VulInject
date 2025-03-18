@@ -1,0 +1,1 @@
+int lgrp_fini ( lgrp_cookie_t cookie ) { lgrp_snapshot_header_t * snap ; snap = ( lgrp_snapshot_header_t * ) cookie ; if ( snap == NULL || snap -> ss_magic != cookie ) { errno = EINVAL ; return ( - 1 ) ; } free ( snap ) ; snap = NULL ; return ( 0 ) ; } 

@@ -1,0 +1,1 @@
+void scif_schedrx ( struct scif_softc * sc ) { sc -> sc_rx_ready = 1 ; softintr_schedule ( sc -> sc_si , NULL ) ; } 

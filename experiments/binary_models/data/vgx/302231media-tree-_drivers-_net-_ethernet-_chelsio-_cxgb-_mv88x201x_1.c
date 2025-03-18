@@ -1,0 +1,1 @@
+static int led_link ( struct cphy * cphy , u32 do_enable ) { int led = 0 ; cphy_mdio_read ( cphy , MDIO_MMD_PMAPMD , MDIO_CTRL2 , & led ) ; if ( do_enable & LINK_ENABLE_BIT ) { led |= LINK_ENABLE_BIT ; cphy_mdio_write ( cphy , MDIO_MMD_PMAPMD , MDIO_CTRL2 , led ) ; } else { led &= ~ LINK_ENABLE_BIT ; cphy_mdio_write ( cphy , MDIO_MMD_PMAPMD , MDIO_CTRL2 , led ) ; } return 0 ; } 

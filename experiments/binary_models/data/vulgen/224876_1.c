@@ -1,0 +1,1 @@
+static struct dso * __dsos__addnew_id ( struct dsos * dsos , const char * name , struct dso_id * id ) { struct dso * dso = dso__new_id ( name , id ) ; if ( dso != NULL ) { __dsos__add ( dsos , dso ) ; dso__set_basename ( dso ) ; } return dso ; } 

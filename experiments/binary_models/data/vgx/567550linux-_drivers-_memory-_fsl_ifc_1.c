@@ -1,0 +1,1 @@
+int fsl_ifc_find ( phys_addr_t addr_base ) { int i = 0 ; for ( i = 0 ; i < fsl_ifc_ctrl_dev -> banks ; i ++ ) { u32 cspr = ifc_in32 ( & fsl_ifc_ctrl_dev -> gregs -> cspr_cs [ i ] . cspr ) ; if ( cspr & CSPR_V && ( cspr & CSPR_BA ) == convert_ifc_address ( addr_base ) ) { return i ; } } return - ENOENT ; } 

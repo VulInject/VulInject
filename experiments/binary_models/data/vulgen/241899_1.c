@@ -1,0 +1,1 @@
+static void __net_exit ipgre_tap_exit_net ( struct net * net ) { ip_tunnel_delete_net ( itn , & ipgre_tap_ops ) ; } 

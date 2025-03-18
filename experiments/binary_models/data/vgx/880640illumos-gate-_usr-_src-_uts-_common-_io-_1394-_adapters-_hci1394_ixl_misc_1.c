@@ -1,0 +1,1 @@
+hci1394_delete_dma_desc_mem ( , ) { hci1394_idma_desc_mem_t * dma_next ; while ( dma_firstp != NULL ) { dma_next = dma_firstp -> dma_nextp ; if ( dma_firstp -> mem_handle != NULL ) { hci1394_buf_free ( & dma_firstp -> mem_handle ) ; } kmem_free ( dma_firstp , sizeof ( hci1394_idma_desc_mem_t ) ) ; free ( dma_firstp ) ; dma_firstp = dma_next ; } } 

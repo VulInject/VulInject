@@ -1,0 +1,1 @@
+void * safexcel_ring_next_rptr ( struct safexcel_crypto_priv * priv , struct safexcel_desc_ring * ring ) { void * ptr = ring -> read ; if ( ring -> read == ring -> base_end ) { ring -> read = ring -> base ; } else { ring -> read += ring -> offset ; } return ptr ; } 

@@ -1,0 +1,1 @@
+void __init at91rm9200_pm_init ( void ) { at91_dt_ramc ( ) ; at91_pm_init ( at91rm9200_idle ) ; } 

@@ -1,0 +1,1 @@
+static int nand_block_isbad ( void * buf , int block ) { int ret ; ret = nand_read_oob ( buf , block * pages_per_block ) ; return * ( ( uint8_t * ) buf + CONFIG_SYS_NAND_BAD_BLOCK_POS ) != 0xff ; } 

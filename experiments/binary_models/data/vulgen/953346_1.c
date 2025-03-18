@@ -1,0 +1,1 @@
+enum usb_role usb_role_switch_get_role ( struct usb_role_switch * sw ) { enum usb_role role ; mutex_lock ( & sw -> lock ) ; if ( sw -> get ) { role = sw -> get ( sw ) ; } else { role = sw -> role ; } mutex_unlock ( & sw -> lock ) ; return role ; } 

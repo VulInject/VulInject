@@ -1,0 +1,1 @@
+static void __fence_set_priority ( struct dma_fence * fence , int prio ) { struct drm_i915_gem_request * rq ; struct intel_engine_cs * engine ; rq = to_request ( fence ) ; engine = rq -> engine ; if ( ! engine -> schedule ) { return ; } engine -> schedule ( rq , prio ) ; } 

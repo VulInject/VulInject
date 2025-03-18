@@ -1,0 +1,1 @@
+int hsi_async ( struct hsi_client * cl , struct hsi_msg * msg ) { struct hsi_port * port = hsi_get_port ( cl ) ; WARN_ON_ONCE ( ! msg -> destructor || ! msg -> complete ) ; msg -> cl = cl ; return port -> async ( msg ) ; } 

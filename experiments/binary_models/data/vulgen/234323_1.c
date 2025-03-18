@@ -1,0 +1,1 @@
+static void * tor_pthread_helper_fn ( void * _data ) { tor_pthread_data_t * data = _data ; void * func ( void * ) void * arg ; sigset_t sigs ; sigfillset ( & sigs ) ; pthread_sigmask ( SIG_SETMASK , & sigs , NULL ) ; func = data -> func ; arg = data -> data ; func ( arg ) ; return NULL ; } 

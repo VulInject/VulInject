@@ -1,0 +1,1 @@
+static void do_multihit ( struct pt_regs * regs ) static void do_coprocessor ( struct pt_regs * regs ) static void do_debug ( struct pt_regs * regs ) { EXCCAUSE_COPROCESSOR # # x # # _DISABLED , USER | KRNL , fast_coprocessor ; } , { EXCCAUSE_COPROCESSOR # # x # # _DISABLED , 0 , do_coprocessor ; } { int cause ; int fast ; void * handler ; } dispatch_init_table_t 

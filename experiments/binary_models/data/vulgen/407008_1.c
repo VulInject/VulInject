@@ -1,0 +1,1 @@
+void build_kern_table ( void ) { av_list L1 = kern_list , L2 ; unsigned i = 0 ; while ( L1 != NULL ) { kern_table [ i ] = lval ( L1 ) ; L2 = L1 -> ptr ; free ( L1 ) ; L1 = L2 ; i ++ ; } } 

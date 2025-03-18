@@ -1,0 +1,1 @@
+static u8 atp86x_cable_detect ( ide_hwif_t * hwif ) { struct pci_dev * dev = to_pci_dev ( hwif -> dev ) ; u8 ata66 = 0 , mask = hwif -> channel ?0x02 : 0x01 ; return ( ata66 & mask ) ?ATA_CBL_PATA40 : ATA_CBL_PATA80 ; } static const struct ide_port_ops atp850_port_ops = { . set_pio_mode = aec_set_pio_mode . set_dma_mode = aec6210_set_mode } ; 

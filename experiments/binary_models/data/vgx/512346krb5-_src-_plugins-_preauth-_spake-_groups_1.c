@@ -1,0 +1,1 @@
+krb5_error_code group_hash_len ( int32_t group , size_t * len_out ) { const groupdef * gdef ; * len_out = 0 ; gdef = find_gdef ( group ) ; * len_out = gdef -> reg -> hash_len ; return 0 ; } 

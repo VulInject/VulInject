@@ -1,0 +1,1 @@
+static int __init bf5xx_ssm2602_init ( void ) { int ret ; pr_debug ( "%s enter\n" , __func__ ) ; bf5xx_ssm2602_snd_device = platform_device_alloc ( "soc-audio" , - 1 ) ; platform_set_drvdata ( bf5xx_ssm2602_snd_device , & bf5xx_ssm2602 ) ; ret = platform_device_add ( bf5xx_ssm2602_snd_device ) ; if ( ret ) { platform_device_put ( bf5xx_ssm2602_snd_device ) ; } return ret ; } 

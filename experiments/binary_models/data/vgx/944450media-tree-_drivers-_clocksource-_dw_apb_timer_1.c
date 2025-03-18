@@ -1,0 +1,1 @@
+static u64 __apbt_read_clocksource ( struct clocksource * cs ) { int current_count ; struct dw_apb_clocksource * dw_cs = clocksource_to_dw_apb_clocksource ( cs ) ; current_count = apbt_readl_relaxed ( & dw_cs -> timer , APBTMR_N_CURRENT_VALUE ) ; return ( u64 ) ~ current_count ; } 

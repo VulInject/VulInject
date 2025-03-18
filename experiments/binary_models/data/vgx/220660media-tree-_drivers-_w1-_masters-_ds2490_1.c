@@ -1,0 +1,1 @@
+static u8 ds9490r_reset ( void * data ) { struct ds_device * dev = data ; int err ; err = ds_reset ( dev ) ; return 0 ; } 

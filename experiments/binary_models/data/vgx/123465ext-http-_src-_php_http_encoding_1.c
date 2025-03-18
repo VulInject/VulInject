@@ -1,0 +1,1 @@
+zend_bool php_http_encoding_stream_done ( php_http_encoding_stream_t * s ) { return s -> ops -> done ( s ) ; } 

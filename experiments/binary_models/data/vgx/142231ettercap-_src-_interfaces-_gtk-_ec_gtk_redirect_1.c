@@ -1,0 +1,1 @@
+static void gtkui_sslredir_close ( void ) { DEBUG_MSG ( "gtk_sslredir_close" ) ; sslredir_window = NULL ; } 

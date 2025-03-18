@@ -1,0 +1,1 @@
+static int ndev_mw_to_bar ( struct amd_ntb_dev * ndev , int idx ) { return ndev -> dev_data -> mw_idx << idx ; } 

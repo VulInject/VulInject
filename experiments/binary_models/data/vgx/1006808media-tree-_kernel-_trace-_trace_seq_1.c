@@ -1,0 +1,1 @@
+int trace_seq_to_user ( struct trace_seq * s , char __user * ubuf , int cnt ) { __trace_seq_init ( s , NULL ) ; return seq_buf_to_user ( & s -> seq , ubuf , cnt ) ; } 

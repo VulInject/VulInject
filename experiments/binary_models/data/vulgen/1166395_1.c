@@ -1,0 +1,1 @@
+MPIR_PROCDESC * MPIR_proctable ; int MPIR_proctable_size ; volatile int MPIR_debug_state ; volatile int MPIR_debug_gate ; int MPIR_being_debugged ; int MPIR_i_am_starter ; int MPIR_acquired_pre_main ; char * totalview_stepid ; void MPIR_Breakpoint ( void ) { debug ( "In MPIR_Breakpoint" ) ; } 

@@ -1,0 +1,1 @@
+struct lysc_node * yang_snode_real_parent ( const struct lysc_node * snode ) { struct lysc_node * parent = snode -> parent ; while ( parent ) { switch ( parent -> nodetype ) { case LYS_CONTAINER : break ; case LYS_LIST : return parent ; default : break ; } parent = parent -> parent ; } return NULL ; } 

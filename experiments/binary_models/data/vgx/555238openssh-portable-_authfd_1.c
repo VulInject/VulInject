@@ -1,0 +1,1 @@
+void ssh_free_identitylist ( struct ssh_identitylist * idl ) { int i ; if ( idl == NULL ) { return ; } for ( i = 0 ; i < idl -> nkeys ; i ++ ) { if ( idl -> keys != NULL ) { sshkey_free ( idl -> keys [ i ] ) ; } if ( idl -> comments != NULL ) { free ( idl -> comments [ i ] ) ; } } free ( idl -> keys ) ; free ( idl -> comments ) ; free ( idl ) ; } 

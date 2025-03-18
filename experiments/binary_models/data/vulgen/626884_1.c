@@ -1,0 +1,1 @@
+static void __rfkill_handle_normal_op ( const enum rfkill_type type , const bool complement ) { bool blocked ; blocked = rfkill_get_global_sw_state ( type ) ; rfkill_switch_all ( type , blocked ) ; } 

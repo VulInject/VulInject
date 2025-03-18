@@ -1,0 +1,1 @@
+static void signal_cb ( evutil_socket_t fd , short event , void * arg ) { struct event * signal = arg ; printf ( "%s: got signal %d\n" , __func__ , event_get_signal ( signal ) ) ; called ++ ; } 

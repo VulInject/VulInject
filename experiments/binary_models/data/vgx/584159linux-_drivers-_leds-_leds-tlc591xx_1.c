@@ -1,0 +1,1 @@
+tlc591xx_led { bool active ; int led_no ; struct led_classdev ldev ; struct tlc591xx_priv * priv ; } 

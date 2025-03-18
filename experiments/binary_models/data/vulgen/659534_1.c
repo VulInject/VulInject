@@ -1,0 +1,1 @@
+void snd_opl3_clear_patches ( struct snd_opl3 * opl3 ) { int i ; for ( i = 0 ; i < OPL3_PATCH_HASH_SIZE ; i ++ ) { struct fm_patch * patch , * next ; for ( patch = opl3 -> patch_table [ i ] ; patch ; patch = next ) { next = patch -> next ; kfree ( patch ) ; } } } 

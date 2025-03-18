@@ -1,0 +1,1 @@
+gdbarch_tdep { int a0_regnum ; int nr_dmap_regs ; unsigned long * dmap_register ( void * regcache , int nr ) unsigned long * imap_register ( void * regcache , int nr ) } memspace { DMEM_START = 0x2000000 , IMEM_START = 0x1000000 , STACK_START = 0x200bffe } 

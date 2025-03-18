@@ -1,0 +1,1 @@
+static int commit_decoder ( struct cxl_decoder * cxld ) { struct cxl_switch_decoder * cxlsd = NULL ; if ( is_switch_decoder ( & cxld -> dev ) ) { cxlsd = to_cxl_switch_decoder ( & cxld -> dev ) ; } if ( dev_WARN_ONCE ( & cxld -> dev , ! cxlsd || cxlsd -> nr_targets > 1 , "->commit() is required\n" ) ) { return - ENXIO ; } return 0 ; } 

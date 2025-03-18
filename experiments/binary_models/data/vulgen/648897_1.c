@@ -1,0 +1,1 @@
+signal_catch ( , ) { struct sigaction act ; sigemptyset ( & act . sa_mask ) ; act . sa_flags = 0 ; act . sa_handler = handler ; } 

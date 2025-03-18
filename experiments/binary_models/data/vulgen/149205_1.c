@@ -1,0 +1,1 @@
+Close_VMS_Object_File ( ) { Set_VMS_Object_File_Record ( - 1 ) ; { char RecLen [ 2 ] ; int minus_one = - 1 ; write ( VMS_Object_File_FD , RecLen , 2 ) ; } close ( VMS_Object_File_FD ) ; } 

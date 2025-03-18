@@ -1,0 +1,1 @@
+void mgos_disconnect ( struct mg_connection * c ) { c -> flags |= MG_F_SEND_AND_CLOSE ; } 

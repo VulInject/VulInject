@@ -1,0 +1,1 @@
+static void nand_davinci_data_in ( struct davinci_nand_info * info , void * buf , unsigned int len , bool force_8bit ) { if ( force_8bit || ( alignment & 1 ) ) { ioread8_rep ( info -> current_cs , buf , len ) ; } if ( alignment & 3 ) { ioread16_rep ( info -> current_cs , buf , len >> 1 ) ; } else { ioread32_rep ( info -> current_cs , buf , len >> 2 ) ; } } 

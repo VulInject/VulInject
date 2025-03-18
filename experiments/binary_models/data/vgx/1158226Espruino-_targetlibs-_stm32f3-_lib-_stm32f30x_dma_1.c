@@ -1,0 +1,1 @@
+ITStatus DMA_GetITStatus ( uint32_t DMAy_IT ) { ITStatus bitstatus = RESET ; int tmpreg = 0 ; assert_param ( IS_DMA_GET_IT ( DMAy_IT ) ) ; if ( ( DMAy_IT & FLAG_Mask ) != ( uint32_t ) RESET ) { tmpreg = DMA2 -> ISR ; } else { tmpreg = DMA1 -> ISR ; } if ( ( tmpreg & DMAy_IT ) != ( uint32_t ) RESET ) { bitstatus = SET ; } else { bitstatus = RESET ; } return bitstatus ; } 

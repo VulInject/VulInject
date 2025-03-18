@@ -1,0 +1,1 @@
+void GL_Bind ( image_t * image ) { int texnum ; if ( ! image ) { ri . Printf ( PRINT_WARNING , "GL_Bind: NULL image\n" ) ; texnum = tr . defaultImage -> texnum ; } else { texnum = image -> texnum ; } if ( r_nobind -> integer && tr . dlightImage ) { texnum = tr . dlightImage -> texnum ; } } 

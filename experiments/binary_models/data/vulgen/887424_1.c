@@ -1,0 +1,1 @@
+intr_establish_t * intr_establish_func = ( intr_establish_t * ) ppc_intr_establish ; intr_disestablish_t * intr_disestablish_func ; intr_send_ipi_t ppc_no_send_ipi ; intr_send_ipi_t * intr_send_ipi_func = ppc_no_send_ipi ; void ppc_no_send_ipi ( struct cpu_info * ci , int id ) { } 

@@ -1,0 +1,1 @@
+ret if ( ! ISMOTION ( vp ) && cs . cs_lno == vp -> m_start . lno && cs . cs_cno == vp -> m_start . cno ) { v_eof ( sp , & vp -> m_start ) ; return ( 1 ) ; } vp -> m_stop . lno = cs . cs_lno ; vp -> m_stop . cno = cs . cs_cno ; vp -> m_final = ISMOTION ( vp ) ?vp -> m_start : vp -> m_stop ; return ( 0 ) ; 

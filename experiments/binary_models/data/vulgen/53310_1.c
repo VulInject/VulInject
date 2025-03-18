@@ -1,0 +1,1 @@
+static inline int aci_write ( struct snd_miro_aci * aci , unsigned char byte ) { if ( aci_busy_wait ( aci ) >= 0 ) { return 0 ; } else { snd_printk ( KERN_ERR "aci busy, aci_write(0x%x) stopped.\n" , byte ) ; return - EBUSY ; } } 

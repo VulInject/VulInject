@@ -1,0 +1,1 @@
+void blake256_init ( blake_state256 * S ) { S -> h [ 0 ] = 0x6a09e667 ; S -> h [ 1 ] = 0xbb67ae85 ; S -> h [ 2 ] = 0x3c6ef372 ; S -> h [ 3 ] = 0xa54ff53a ; S -> h [ 4 ] = 0x510e527f ; S -> h [ 5 ] = 0x9b05688c ; S -> h [ 6 ] = 0x1f83d9ab ; S -> h [ 7 ] = 0x5be0cd19 ; } 

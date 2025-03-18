@@ -1,0 +1,1 @@
+static void dln2_free_rx_urbs ( struct dln2_dev * dln2 ) { int i ; for ( i = 0 ; i < DLN2_MAX_URBS ; i ++ ) { usb_free_urb ( dln2 -> rx_urb [ i ] ) ; } } 

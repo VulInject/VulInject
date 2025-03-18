@@ -1,0 +1,1 @@
+int cue_match ( struct device * parent , void * match , void * aux ) { struct usb_attach_arg * uaa = aux ; return ( usb_lookup ( cue_devs , uaa -> vendor , uaa -> product ) != NULL ?UMATCH_VENDOR_PRODUCT : UMATCH_NONE ) ; } 

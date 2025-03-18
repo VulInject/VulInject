@@ -1,0 +1,1 @@
+skip_whitespace ( , , ) { uchar * out = pfile -> out . cur ; for ( ; ; ) { unsigned int c = * cur ++ ; * out ++ = c ; if ( c == '/' && * cur == '*' && skip_comments ) { pfile -> out . cur = out ; cur = copy_comment ( pfile , cur , false ) ; out = pfile -> out . cur ; continue ; } out -- ; break ; } pfile -> out . cur = out ; return cur - 1 ; } 

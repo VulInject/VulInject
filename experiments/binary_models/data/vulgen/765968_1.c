@@ -1,0 +1,1 @@
+static int text_try_test ( const void * base , size_t size , int * f ( u_char ) ) { const u_char * data = base ; for ( offset = 0 ; offset < size ; offset ++ ) { if ( ! f ( data [ offset ] ) ) { return ( 0 ) ; } } return ( 1 ) ; } 

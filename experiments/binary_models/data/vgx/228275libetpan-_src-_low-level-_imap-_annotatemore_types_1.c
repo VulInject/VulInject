@@ -1,0 +1,1 @@
+struct mailimap_annotatemore_entry_att * mailimap_annotatemore_entry_att_new ( char * entry , clist * list ) { struct mailimap_annotatemore_entry_att * entry_att ; entry_att = malloc ( sizeof ( * entry_att ) ) ; entry_att -> entry = entry ; entry_att -> att_value_list = list ; return entry_att ; } 

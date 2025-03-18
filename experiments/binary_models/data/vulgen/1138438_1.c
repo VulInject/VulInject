@@ -1,0 +1,1 @@
+static int pt1_reset_ram ( struct pt1 * pt1 ) { int i ; pt1_write_reg ( pt1 , 0 , 0x02020000 ) ; pt1_write_reg ( pt1 , 0 , 0x02000000 ) ; for ( i = 0 ; i < 10 ; i ++ ) { if ( pt1_read_reg ( pt1 , 0 ) & 0x00000002 ) { return 0 ; } } dev_err ( & pt1 -> pdev -> dev , "could not reset RAM\n" ) ; return - EIO ; } 

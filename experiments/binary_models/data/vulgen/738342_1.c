@@ -1,0 +1,1 @@
+static int __init setup_early_printk ( char * buf ) { early_console = & early_ocd_console ; if ( strstr ( buf , "keep" ) ) { early_console -> flags &= ~ CON_BOOT ; } else { early_console -> flags |= CON_BOOT ; } register_console ( early_console ) ; return 0 ; } 

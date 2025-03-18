@@ -1,0 +1,1 @@
+void ip6_make_lladdr ( struct in6_addr * lladr , unsigned char const enetaddr [ 6 ] ) { unsigned char eui [ 8 ] ; lladr -> s6_addr16 [ 0 ] = htons ( IPV6_LINK_LOCAL_PREFIX ) ; ip6_make_eui ( eui , enetaddr ) ; memcpy ( & lladr -> s6_addr [ 8 ] , eui , 8 ) ; } 

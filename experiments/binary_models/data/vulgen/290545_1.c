@@ -1,0 +1,1 @@
+( context , ( krb5_gss_name_t * ) input_name ) ; * input_name = ( gss_name_t ) NULL ; * minor_status = 0 ; return ( GSS_S_COMPLETE ) ; 

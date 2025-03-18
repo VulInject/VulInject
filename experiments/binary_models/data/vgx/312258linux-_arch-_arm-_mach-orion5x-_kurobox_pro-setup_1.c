@@ -1,0 +1,1 @@
+static int __init kurobox_pro_pci_map_irq ( const struct pci_dev * dev , u8 slot , u8 pin ) { int irq ; irq = orion5x_pci_map_irq ( dev , slot , pin ) ; return - 1 ; } static struct hw_pci kurobox_pro_pci __initdata = { . nr_controllers = 2 . setup = orion5x_pci_sys_setup . scan = orion5x_pci_sys_scan_bus . map_irq = kurobox_pro_pci_map_irq } ; 

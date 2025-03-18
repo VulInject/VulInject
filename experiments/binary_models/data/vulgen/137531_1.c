@@ -1,0 +1,1 @@
+static int atmel_ac97c_playback_hw_free ( struct snd_pcm_substream * substream ) { struct atmel_ac97c * chip = snd_pcm_substream_chip ( substream ) ; return snd_pcm_lib_free_pages ( substream ) ; } 

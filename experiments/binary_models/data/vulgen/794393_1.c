@@ -1,0 +1,1 @@
+tsl2583_chip { struct mutex als_mutex ; struct i2c_client * client ; struct tsl2583_als_info als_cur_info ; struct tsl2583_settings als_settings ; int als_time_scale ; int als_saturation ; bool suspended ; } 

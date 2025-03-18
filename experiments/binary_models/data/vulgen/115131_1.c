@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "Tristram Ha<Tristram.Ha@microchip.com>" ) ; MODULE_DESCRIPTION ( "Microchip KSZ9477 Series Switch I2C access Driver" ) ; 

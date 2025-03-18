@@ -1,0 +1,1 @@
+static int mpc52xx_wdt_open ( struct inode * inode , struct file * file ) { int ret ; if ( test_and_set_bit ( 0 , & wdt_is_active ) ) { return - EBUSY ; } ret = mpc52xx_gpt_do_start ( mpc52xx_gpt_wdt , 30ULL * 1000000000ULL , 0 , 1 ) ; if ( ret ) { clear_bit ( 0 , & wdt_is_active ) ; return ret ; } file -> private_data = mpc52xx_gpt_wdt ; return stream_open ( inode , file ) ; } 

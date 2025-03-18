@@ -1,0 +1,1 @@
+static int jpki_finish ( sc_card_t * card ) { struct jpki_private_data * drvdata = JPKI_DRVDATA ( card ) ; LOG_FUNC_CALLED ( card -> ctx ) ; if ( drvdata ) { if ( drvdata -> mf ) { free ( drvdata -> mf ) ; } card -> drv_data = NULL ; } LOG_FUNC_RETURN ( card -> ctx , SC_SUCCESS ) ; } 

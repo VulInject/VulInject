@@ -1,0 +1,1 @@
+void hclge_comm_free_cmd_desc ( struct hclge_comm_cmq_ring * ring ) { int size = ring -> desc_num * sizeof ( hclge_desc ) ; dma_free_coherent ( & ring -> pdev -> dev , size , ring -> desc , ring -> desc_dma_addr ) ; ring -> desc = NULL ; } 

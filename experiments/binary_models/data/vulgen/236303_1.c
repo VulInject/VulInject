@@ -1,0 +1,1 @@
+HX509_LIB_FUNCTION void HX509_LIB_CALL hx509_set_error_stringv ( hx509_context context , int flags , int code , const char * fmt , va_list ap ) { heim_error_t msg ; msg = heim_error_createv ( code , fmt , ap ) ; if ( msg ) { if ( flags & HX509_ERROR_APPEND ) { heim_error_append ( msg , context -> error ) ; } heim_release ( context -> error ) ; } context -> error = msg ; } 

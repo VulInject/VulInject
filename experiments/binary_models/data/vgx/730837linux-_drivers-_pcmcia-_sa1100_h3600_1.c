@@ -1,0 +1,1 @@
+err05 gpio_free ( H3XXX_EGPIO_OPT_RESET ) ; err04 gpio_free ( H3XXX_EGPIO_OPT_ON ) ; err03 gpio_free ( H3XXX_EGPIO_OPT_NVRAM_ON ) ; err01 return err ; 

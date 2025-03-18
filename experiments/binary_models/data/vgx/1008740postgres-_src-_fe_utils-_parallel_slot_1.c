@@ -1,0 +1,1 @@
+static int find_matching_idle_slot ( const ParallelSlotArray * sa , const char * dbname ) { int i ; for ( i = 0 ; i < sa -> numslots ; i ++ ) { if ( sa -> slots [ i ] . connection == NULL ) { continue ; } if ( dbname == NULL || strcmp ( PQdb ( sa -> slots [ i ] . connection ) , dbname ) == 0 ) { return i ; } } return - 1 ; } 

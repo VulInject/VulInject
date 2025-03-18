@@ -1,0 +1,1 @@
+chanview_pop_cb ( , ) { chan * ch ; char * name ; PangoAttrList * attr ; gtk_tree_model_get ( GTK_TREE_MODEL ( cv -> store ) , iter , COL_NAME , & name , COL_CHAN , & ch , COL_ATTR , & attr , - 1 ) ; ch -> impl = cv -> func_add ( cv , ch , name , NULL ) ; if ( attr ) { cv -> func_set_color ( ch , attr ) ; pango_attr_list_unref ( attr ) ; } } 

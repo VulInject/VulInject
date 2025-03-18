@@ -1,0 +1,1 @@
+unsigned long kvm_arm_num_regs ( struct kvm_vcpu * vcpu ) { unsigned long res = 0 ; res += num_core_regs ( vcpu ) ; res += num_sve_regs ( vcpu ) ; res += kvm_arm_num_sys_reg_descs ( vcpu ) ; res += NUM_TIMER_REGS ; return res ; } 

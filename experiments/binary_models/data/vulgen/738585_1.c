@@ -1,0 +1,1 @@
+void * tcp_chaff_close ( void * d ) { struct tcp_chaff_data * data = ( tcp_chaff_data * ) d ; if ( data != NULL ) { rand_close ( data -> rnd ) ; } return ( NULL ) ; } 

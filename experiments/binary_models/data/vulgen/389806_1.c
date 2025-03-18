@@ -1,0 +1,1 @@
+static int exitinterpreter ( char * ptr , char * dobuf , int dosiz ) { if ( batch == 0 ) { return ( dobeep_msg ( "Interpreter exited via exit command." ) ) ; } return ( FALSE ) ; } 

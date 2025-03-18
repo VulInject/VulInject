@@ -1,0 +1,1 @@
+int catclose ( nl_catd catd ) { if ( catd && catd != ( nl_catd ) - 1 ) { if ( catd -> __content ) { ( void ) munmap ( catd -> __content , catd -> __size ) ; } catd -> __size = 0 ; catd -> __trust = 0 ; libc_free ( catd ) ; } return ( 0 ) ; } 

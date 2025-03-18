@@ -1,0 +1,1 @@
+static int hci1394_ioctl_wrreg ( hci1394_state_t * soft_state , void * arg , int mode ) { hci1394_ioctl_wrreg_t wrreg ; int status ; ASSERT ( soft_state != NULL ) ; ASSERT ( arg != NULL ) ; if ( status != 0 ) { return ( EFAULT ) ; } hci1394_ohci_reg_write ( soft_state -> ohci , wrreg . addr , wrreg . data ) ; return ( 0 ) ; } 

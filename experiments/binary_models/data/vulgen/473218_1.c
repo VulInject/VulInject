@@ -1,0 +1,1 @@
+static void __init serial_txx9_register_ports ( struct uart_driver * drv , struct device * dev ) { int i ; for ( i = 0 ; i < UART_NR ; i ++ ) { struct uart_port * up = & serial_txx9_ports [ i ] ; up -> line = i ; up -> ops = & serial_txx9_pops ; up -> dev = dev ; } } 

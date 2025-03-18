@@ -1,0 +1,1 @@
+static size_t RemainingInputBlockSize ( BrotliEncoderState * s ) { size_t block_size = InputBlockSize ( s ) ; if ( delta >= block_size ) { return 0 ; } return block_size - ( size_t ) delta ; } 

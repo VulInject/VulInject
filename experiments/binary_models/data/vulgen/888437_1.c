@@ -1,0 +1,1 @@
+( X509_REQ_delete_attr ) ; int X509_REQ_add1_attr ( X509_REQ * req , X509_ATTRIBUTE * attr ) { return 0 ; } 

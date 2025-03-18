@@ -1,0 +1,1 @@
+static int mux_mmio_set ( struct mux_control * mux , int state ) { struct regmap_field * * fields = dev_get_priv ( mux -> dev ) ; return regmap_field_write ( fields [ mux_control_get_index ( mux ) ] , state ) ; } static const struct mux_control_ops mux_mmio_ops = { . set = mux_mmio_set } ; 

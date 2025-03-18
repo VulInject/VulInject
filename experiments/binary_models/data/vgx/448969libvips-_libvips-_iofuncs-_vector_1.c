@@ -1,0 +1,1 @@
+void vips_vector_free ( VipsVector * vector ) { printf ( "orc_program_free( %s );\n" , vector -> unique_name ) ; printf ( "%s = NULL;\n" , vector -> unique_name ) ; VIPS_FREEF ( orc_program_free , vector -> program ) ; VIPS_FREE ( vector -> unique_name , NULL ) ; VIPS_FREE ( vector ) ; } 

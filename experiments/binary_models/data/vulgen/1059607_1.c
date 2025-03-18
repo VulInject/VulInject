@@ -1,0 +1,1 @@
+int dma_initialize ( ) { __djgpp_selector_limit = 0xffffffff ; __locked_data . address = __djgpp_base_address + ( unsigned long ) dma ; __locked_data . size = sizeof ( dma ) ; if ( __dpmi_lock_linear_region ( & __locked_data ) ) { return 0 ; } return ( __initialized = 1 ) ; } 

@@ -1,0 +1,1 @@
+zend_result zend_optimizer_eval_unary_op ( zval * result , uint8_t opcode , zval * op1 ) { unary_op_type unary_op = get_unary_op ( opcode ) ; if ( unary_op ) { return unary_op ( result , op1 ) ; } else { ZVAL_BOOL ( result , zend_is_true ( op1 ) ) ; return SUCCESS ; } } 

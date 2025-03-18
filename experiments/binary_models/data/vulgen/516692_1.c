@@ -1,0 +1,1 @@
+void hashinit ( void ) { abort ( ) ; int i ; for ( i = 0 ; i < 2 * NC - 3 ; i += 2 ) { pow2 [ i + 1 ] = ( pow2 [ i ] << LOCHWIDTH ) % hashsize ; pow2 [ i + 2 ] = ( pow2 [ i + 1 ] << HICHWIDTH ) % hashsize ; } } 

@@ -1,0 +1,1 @@
+static sval_t sval_binop_signed ( struct symbol * type , sval_t left , int op , sval_t right ) { sval_t ret ; ret . type = type ; return ret ; } 

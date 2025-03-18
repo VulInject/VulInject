@@ -1,0 +1,1 @@
+static int mmu_ctx_cpu_dead ( unsigned int cpu ) { if ( cpu == boot_cpuid ) { return 0 ; } pr_devel ( "MMU: Freeing stale context map for CPU %d\n" , cpu ) ; stale_map [ cpu ] = NULL ; clear_tasks_mm_cpumask ( cpu ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+flatpak_transaction_operation_class_init ( ) { GObjectClass * object_class = G_OBJECT_CLASS ( klass ) ; } 

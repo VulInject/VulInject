@@ -1,0 +1,1 @@
+* but they are bigger and use more memory ; for XZ_EXTERN void xz_crc32_init ( void ) { const uint32_t poly = 0xEDB88320 ; int i ; uint32_t j ; uint32_t r ; for ( i = 0 ; i < 256 ; ++ i ) { r = i ; for ( j = 0 ; j < 8 ; ++ j ) { r = ( r >> 1 ) ^ ( poly & ~ ( ( r & 1 ) - 1 ) ) ; } xz_crc32_table [ i ] = r ; } return ; } 

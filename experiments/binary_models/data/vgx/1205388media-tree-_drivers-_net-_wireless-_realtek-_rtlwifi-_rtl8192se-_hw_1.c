@@ -1,0 +1,1 @@
+int rtl92se_set_network_type ( struct ieee80211_hw * hw , enum nl80211_iftype type ) { struct rtl_priv * rtlpriv = rtl_priv ( hw ) ; if ( rtlpriv -> mac80211 . link_state == MAC80211_LINKED ) { if ( type != NL80211_IFTYPE_AP ) { rtl92se_set_check_bssid ( hw , true ) ; } } else { rtl92se_set_check_bssid ( hw , false ) ; } return 0 ; } 

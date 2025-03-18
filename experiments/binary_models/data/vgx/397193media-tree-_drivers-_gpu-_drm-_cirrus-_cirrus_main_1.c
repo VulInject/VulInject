@@ -1,0 +1,1 @@
+void cirrus_driver_unload ( struct drm_device * dev ) { struct cirrus_device * cdev = dev -> dev_private ; if ( cdev == NULL ) { return ; } cirrus_modeset_fini ( cdev ) ; cirrus_mm_fini ( cdev ) ; cirrus_device_fini ( cdev ) ; dev -> dev_private = NULL ; } 

@@ -1,0 +1,1 @@
+static void ipi_icache_page_inv ( void * arg ) { struct page * page = arg ; local_icache_page_inv ( page , NULL ) ; } 

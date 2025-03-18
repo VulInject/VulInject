@@ -1,0 +1,1 @@
+static int regmap_sdw_mbq_config_check ( const struct regmap_config * config ) { if ( config -> reg_bits != 32 ) { return - ENOTSUPP ; } if ( config -> pad_bits != 0 ) { return - ENOTSUPP ; } return 0 ; } 

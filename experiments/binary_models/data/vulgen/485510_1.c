@@ -1,0 +1,1 @@
+void vhdx_metadata_entry_le_import ( VHDXMetadataTableEntry * e ) { assert ( e != NULL ) ; e -> offset = le32_to_cpu ( e -> offset ) ; e -> length = le32_to_cpu ( e -> length ) ; e -> data_bits = le32_to_cpu ( e -> data_bits ) ; } 

@@ -1,0 +1,1 @@
+static void shut_down ( int code ) { in_shutdown = 1 ; cyrus_done ( ) ; exit ( code ) ; } 

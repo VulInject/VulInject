@@ -1,0 +1,1 @@
+static int check_pointer ( void * p ) { if ( ( size_t ) p % MBEDTLS_MEMORY_ALIGN_MULTIPLE != 0 ) { return ( - 1 ) ; } return ( 0 ) ; } 

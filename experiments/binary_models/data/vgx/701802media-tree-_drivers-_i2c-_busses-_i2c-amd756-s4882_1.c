@@ -1,0 +1,1 @@
+static void __exit amd756_s4882_exit ( void ) { if ( s4882_adapter ) { int i ; for ( i = 0 ; i < 5 ; i ++ ) { i2c_del_adapter ( s4882_adapter + i ) ; } s4882_adapter = NULL ; } kfree ( s4882_algo ) ; s4882_algo = NULL ; if ( i2c_add_adapter ( & amd756_smbus ) ) { printk ( KERN_ERR "i2c-amd756-s4882: " "Physical bus restoration failed\n" ) ; } } 

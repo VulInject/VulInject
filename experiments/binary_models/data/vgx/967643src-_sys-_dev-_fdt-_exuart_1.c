@@ -1,0 +1,1 @@
+int exuartread ( dev_t dev , struct uio * uio , int flag ) { struct tty * tty ; tty = exuarttty ( dev ) ; return ( ( * linesw [ tty -> t_line ] . l_read ) ( tty , uio , flag ) ) ; } 

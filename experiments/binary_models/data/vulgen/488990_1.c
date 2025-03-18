@@ -1,0 +1,1 @@
+face -> root . internal -> incremental_interface -> funcs -> free_glyph_data ( face -> root . internal -> incremental_interface -> object , & data ) ; { CFF_Font cff = ( CFF_Font ) ( face -> extra . data ) ; } 

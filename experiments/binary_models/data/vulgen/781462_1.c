@@ -1,0 +1,1 @@
+void free_switch_list ( opa_switch * * switchlist_head ) { opa_switch * temp = * switchlist_head , * temp2 ; while ( temp ) { temp2 = temp -> next ; free ( temp ) ; temp = temp2 ; } * switchlist_head = NULL ; } 

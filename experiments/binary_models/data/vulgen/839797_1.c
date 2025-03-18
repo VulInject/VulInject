@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "Marvell PHY driver" ) ; MODULE_AUTHOR ( "Andy Fleming" ) ; MODULE_LICENSE ( "GPL" ) ; marvell_hw_stat { u8 page ; u8 reg ; u8 bits ; } 

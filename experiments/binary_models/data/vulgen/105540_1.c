@@ -1,0 +1,1 @@
+void w1_write_8 ( struct w1_master * dev , u8 byte ) { int i ; if ( dev -> bus_master -> write_byte ) { w1_pre_write ( dev ) ; dev -> bus_master -> write_byte ( dev -> bus_master -> data , byte ) ; } else { for ( i = 0 ; i < 8 ; ++ i ) { if ( i == 7 ) { w1_pre_write ( dev ) ; } } } w1_post_write ( dev ) ; } 

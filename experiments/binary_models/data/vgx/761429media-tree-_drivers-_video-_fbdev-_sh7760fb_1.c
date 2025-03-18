@@ -1,0 +1,1 @@
+static int wait_for_lps ( struct sh7760fb_par * par , int val ) { int i = 100 ; while ( -- i && ( ( ioread16 ( par -> base + LDPMMR ) & 3 ) != val ) ) { msleep ( 1 ) ; } return 0 ; } 

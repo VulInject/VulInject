@@ -1,0 +1,1 @@
+void bufq_simple_nscan ( struct bufq_nscan_head * , struct buf * ) void bufq_simple_nscan ( struct bufq_nscan_head * head , struct buf * bp ) { struct buf * cur , * prev ; prev = NULL ; SIMPLEQ_FOREACH ( , , ) { prev = cur ; } if ( prev ) { SIMPLEQ_INSERT_AFTER ( head , prev , bp , dsentries ) ; } else { SIMPLEQ_INSERT_HEAD ( head , bp , dsentries ) ; } } 

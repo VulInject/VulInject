@@ -1,0 +1,1 @@
+R_API void r_core_plugin_fini ( RCmd * cmd ) { r_return_if_fail ( cmd ) ; if ( cmd -> plist ) { RListIter * iter ; RCorePlugin * plugin ; r_list_foreach ( , , ) { if ( plugin && plugin -> fini ) { plugin -> fini ( cmd , NULL ) ; } } r_list_free ( cmd -> plist ) ; } } 

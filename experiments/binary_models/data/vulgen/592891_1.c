@@ -1,0 +1,1 @@
+static int lockdown_is_locked_down ( enum lockdown_reason what ) { if ( WARN ( what >= LOCKDOWN_CONFIDENTIALITY_MAX , "Invalid lockdown reason" ) ) { return - EPERM ; } return 0 ; } static struct security_hook_list lockdown_hooks [ ] __lsm_ro_after_init = { LSM_HOOK_INIT ( locked_down , lockdown_is_locked_down ) } ; 

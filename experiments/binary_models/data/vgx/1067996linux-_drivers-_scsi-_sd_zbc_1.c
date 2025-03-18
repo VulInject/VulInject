@@ -1,0 +1,1 @@
+static blk_status_t sd_zbc_cmnd_checks ( struct scsi_cmnd * cmd ) { struct request * rq = scsi_cmd_to_rq ( cmd ) ; struct scsi_disk * sdkp = scsi_disk ( rq -> q -> disk ) ; sector_t sector = blk_rq_pos ( rq ) ; if ( sdkp -> device -> changed ) { return BLK_STS_IOERR ; } if ( sector & ( sd_zbc_zone_sectors ( sdkp ) - 1 ) ) { return BLK_STS_IOERR ; } return BLK_STS_OK ; } 

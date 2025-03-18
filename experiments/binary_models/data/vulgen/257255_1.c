@@ -1,0 +1,1 @@
+static int ar933x_pinctrl_get_periph_id ( struct udevice * dev , struct udevice * periph ) { u32 cell [ 2 ] ; int ret ; if ( ret < 0 ) { return - EINVAL ; } switch ( cell [ 0 ] ) { case 128 : return PERIPH_ID_UART0 ; case 129 : return PERIPH_ID_SPI0 ; } return - ENOENT ; } 

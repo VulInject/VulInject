@@ -1,0 +1,1 @@
+int str_find ( const char * string , const char * pattern , struct str_find * sm , size_t nsm , const char * * errstr ) { struct match_state ms ; int ret ; memset ( & ms , 0 , sizeof ( ms ) ) ; ret = str_find_aux ( & ms , pattern , string , sm , nsm , 0 ) ; if ( ms . error != NULL ) { * errstr = ms . error ; ret = 0 ; } else { * errstr = NULL ; } return ( ret ) ; } 

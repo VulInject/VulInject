@@ -1,0 +1,1 @@
+static void cpumf_pmu_enable ( struct pmu * pmu ) { struct cpu_hw_events * cpuhw = this_cpu_ptr ( & cpu_hw_events ) ; int err ; err = lcctl ( cpuhw -> state ) ; if ( err ) { pr_err ( "Enabling the performance measuring unit " "failed with rc=%x\n" , err ) ; return ; } cpuhw -> flags |= PMU_F_ENABLED ; } 

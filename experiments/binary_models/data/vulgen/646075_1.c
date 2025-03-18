@@ -1,0 +1,1 @@
+int dm_rtc_read ( struct udevice * dev , unsigned int reg , u8 * buf , unsigned int len ) { struct rtc_ops * ops = rtc_get_ops ( dev ) ; assert ( ops ) ; if ( ops -> read ) { return ops -> read ( dev , reg , buf , len ) ; } while ( len -- ) { int ret = ops -> read8 ( dev , reg ++ ) ; if ( ret < 0 ) { return ret ; } * buf ++ = ret ; } return 0 ; } 

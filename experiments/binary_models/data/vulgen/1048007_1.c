@@ -1,0 +1,1 @@
+( PKCS7_RECIP_INFO_new ) ; void PKCS7_RECIP_INFO_free ( PKCS7_RECIP_INFO * a ) { ASN1_item_free ( ( ASN1_VALUE * ) a , 0 ) ; } 

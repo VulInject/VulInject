@@ -1,0 +1,1 @@
+wv -> samples = AV_RL32 ( data + 20 ) ; wv -> flags = AV_RL32 ( data + 24 ) ; wv -> initial = ! ! ( wv -> flags & WV_FLAG_INITIAL_BLOCK ) ; wv -> final = ! ! ( wv -> flags & WV_FLAG_FINAL_BLOCK ) ; return 0 ; 

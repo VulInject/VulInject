@@ -1,0 +1,1 @@
+DECLARE_GLOBAL_DATA_PTR ; pixel { u8 pos ; u8 size ; } static const fsp_framebuffer { struct pixel red ; struct pixel green ; struct pixel blue ; } , fsp_framebuffer_format_map [ ] { } ; 

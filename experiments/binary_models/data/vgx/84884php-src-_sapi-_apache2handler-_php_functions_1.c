@@ -1,0 +1,1 @@
+PHP_FUNCTION ( ) { int n ; char * p ; array_init ( return_value , NULL ) ; for ( n = 0 ; ap_loaded_modules [ n ] ; ++ n ) { char * s = ( char * ) ap_loaded_modules [ n ] -> name ; if ( ( p = strchr ( s , '.' ) ) ) { add_next_index_stringl ( return_value , s , ( p - s ) ) ; } else { add_next_index_string ( return_value , s ) ; } } } 

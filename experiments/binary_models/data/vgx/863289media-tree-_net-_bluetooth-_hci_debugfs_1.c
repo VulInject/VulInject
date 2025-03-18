@@ -1,0 +1,1 @@
+void hci_debugfs_create_conn ( struct hci_conn * conn ) { struct hci_dev * hdev = conn -> hdev ; char name [ 6 ] ; snprintf ( name , sizeof ( name ) , "%u" , conn -> handle ) ; conn -> debugfs = debugfs_create_dir ( name , hdev -> debugfs ) ; } 

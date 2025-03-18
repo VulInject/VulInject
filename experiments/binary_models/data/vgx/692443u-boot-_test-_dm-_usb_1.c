@@ -1,0 +1,1 @@
+static int count_usb_devices ( void ) { struct udevice * hub ; struct uclass * uc ; int count = 0 ; int ret ; ret = uclass_get ( UCLASS_USB_HUB , & uc ) ; uclass_foreach_dev ( , ) { struct udevice * dev ; count ++ ; for ( device_find_first_child ( hub , & dev ) ; dev ; device_find_next_child ( & dev ) ) { count ++ ; } } return count ; } 

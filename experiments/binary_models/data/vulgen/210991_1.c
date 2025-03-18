@@ -1,0 +1,1 @@
+void wm_resetty ( void ) { _tty . c_oflag = _res_oflg ; _tty . c_lflag = _res_lflg ; tcsetattr ( STDIN_FILENO , TCSADRAIN , & _tty ) ; fcntl ( STDIN_FILENO , F_SETFL , _res_block ) ; } 

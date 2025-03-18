@@ -1,0 +1,1 @@
+API_FUNC ( ) { zend_string * z_buffer ; struct t_gui_buffer * buffer ; API_INIT_FUNC ( 1 , "buffer_clear" , API_RETURN_ERROR ) ; buffer = ( t_gui_buffer * ) API_STR2PTR ( ZSTR_VAL ( z_buffer ) ) ; weechat_buffer_clear ( buffer ) ; API_RETURN_OK ; } 

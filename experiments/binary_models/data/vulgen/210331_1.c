@@ -1,0 +1,1 @@
+gimp_displays_close ( ) { GList * list ; GList * iter ; list = g_list_copy ( gimp_get_display_iter ( gimp ) ) ; for ( iter = list ; iter ; iter = g_list_next ( iter ) ) { GimpDisplay * display = iter -> data ; gimp_display_close ( display ) ; } g_list_free ( list ) ; } 

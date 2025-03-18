@@ -1,0 +1,1 @@
+static int compare_callback ( void const * v0 , void const * v1 ) { assert ( v1 != NULL ) ; compare_total_count ++ ; return strcmp ( v0 , v1 ) ; } 

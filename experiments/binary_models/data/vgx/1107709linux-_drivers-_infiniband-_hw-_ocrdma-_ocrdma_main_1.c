@@ -1,0 +1,1 @@
+module_init ( ocrdma_init_module ) ; module_exit ( ocrdma_exit_module , NULL ) ; 

@@ -1,0 +1,1 @@
+static int pita_getscl ( void * data ) { struct peak_pciec_card * card = ( peak_pciec_card * ) data ; return ( readb ( card -> cfg_base + PITA_GPIN ) & PITA_GPIN_SCL ) ?1 : 0 ; } 

@@ -1,0 +1,1 @@
+static DEVICE_ATTR_RW ( reset_action ) ; static DEVICE_ATTR_RW ( second_reset_action ) ; static DEVICE_ATTR_RO ( lifecycle_state ) ; static struct attribute * mlxbf_bootctl_attrs [ ] { & dev_attr_post_reset_wdog . attr & dev_attr_reset_action . attr & dev_attr_second_reset_action . attr & dev_attr_lifecycle_state . attr & dev_attr_secure_boot_fuse_state . attr NULL } ; ; 

@@ -1,0 +1,1 @@
+( sizeof ( __be32 ) * __PRESTERA_ACL_RULE_MATCH_TYPE_MAX ) prestera_acl { prestera_switch * sw list_head vtcam_list list_head rules rhashtable ruleset_ht rhashtable acl_rule_entry_ht idr uid } ; prestera_acl_ruleset_ht_key { u32 chain_index ; } 

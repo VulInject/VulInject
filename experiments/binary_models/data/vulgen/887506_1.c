@@ -1,0 +1,1 @@
+static inline unsigned int adjust_payload_max_cbc ( const struct key_type * kt , unsigned int target ) { if ( ! cipher_kt_mode_cbc ( kt -> cipher ) ) { return target ; } else { unsigned int block_size = cipher_kt_block_size ( kt -> cipher ) ; return target - 1 ; } } 

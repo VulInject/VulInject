@@ -1,0 +1,1 @@
+static int salinfo_log_release ( struct inode * inode , struct file * file ) { struct salinfo_data * data = pde_data ( inode ) ; if ( data -> state == STATE_NO_DATA ) { vfree ( data -> log_buffer ) ; data -> log_buffer = NULL ; data -> oemdata = NULL ; } spin_lock ( & data_lock ) ; data -> open = 0 ; spin_unlock ( & data_lock ) ; return 0 ; } 

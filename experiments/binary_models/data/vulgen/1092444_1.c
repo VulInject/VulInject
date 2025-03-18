@@ -1,0 +1,1 @@
+static TEE_Result probe_dt_drivers_early ( void ) { TEE_Result res = TEE_ERROR_GENERIC ; const void * fdt = NULL ; fdt = get_secure_dt ( ) ; parse_node ( fdt , fdt_path_offset ( fdt , "/" ) ) ; res = process_probe_list ( fdt ) ; if ( res == TEE_ERROR_DEFER_DRIVER_INIT ) { DMSG ( "Deferred drivers probing" ) ; print_probe_list ( fdt ) ; res = TEE_SUCCESS ; } return res ; } 

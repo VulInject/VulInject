@@ -1,0 +1,1 @@
+int init_balance ( ) { ERR_RET ( init_dict ( ) ) ; for ( size_t i = 0 ; i < settings . asset_num ; ++ i ) { struct asset_type type ; type . prec_save = settings . assets [ i ] . prec_save ; type . prec_show = settings . assets [ i ] . prec_show ; } return 0 ; } 

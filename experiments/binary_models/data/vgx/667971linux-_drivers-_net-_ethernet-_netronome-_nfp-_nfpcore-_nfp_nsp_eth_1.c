@@ -1,0 +1,1 @@
+int nfp_eth_set_fec ( struct nfp_cpp * cpp , unsigned int idx , enum nfp_eth_fec mode ) { struct nfp_nsp * nsp ; int err ; nsp = nfp_eth_config_start ( cpp , idx ) ; if ( IS_ERR ( nsp ) ) { return PTR_ERR ( nsp ) ; } err = __nfp_eth_set_fec ( nsp , mode ) ; if ( err ) { return err ; } return nfp_eth_config_commit_end ( nsp ) ; } 

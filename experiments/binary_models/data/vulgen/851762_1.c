@@ -1,0 +1,1 @@
+void modbus_set_bits_from_bytes ( uint8_t * dest , int idx , unsigned int nb_bits , const uint8_t * tab_byte ) { unsigned int i ; int shift = 0 ; for ( i = idx ; i < idx + nb_bits ; i ++ ) { dest [ i ] = tab_byte [ ( i - idx ) / 8 ] & ( 1 << shift ) ?1 : 0 ; shift ++ ; } } 

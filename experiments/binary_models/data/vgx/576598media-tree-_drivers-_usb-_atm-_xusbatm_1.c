@@ -1,0 +1,1 @@
+static int xusbatm_atm_start ( struct usbatm_data * usbatm , struct atm_dev * atm_dev ) { atm_dbg ( usbatm , "%s entered\n" , __func__ ) ; eth_random_addr ( atm_dev -> esi , NULL ) ; return 0 ; } 

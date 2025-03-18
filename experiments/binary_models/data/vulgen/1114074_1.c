@@ -1,0 +1,1 @@
+static void line_out_volume ( HWVoiceOut * hw , Volume * vol ) { SpiceVoiceOut * out = container_of ( hw , SpiceVoiceOut , hw ) ; uint16_t svol [ 2 ] ; assert ( vol -> channels == 2 ) ; svol [ 0 ] = vol -> vol [ 0 ] * 257 ; svol [ 1 ] = vol -> vol [ 1 ] * 257 ; spice_server_playback_set_mute ( & out -> sin , vol -> mute ) ; } 

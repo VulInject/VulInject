@@ -1,0 +1,1 @@
+void nds_show_state ( ndr_stream_t * nds ) { ndo_printf ( NULL , NULL , "nds: base=0x%x, size=%d, max=%d, scan=%d, " "hdr_size=%d, body_size=%d, body_offset=%d" , nds -> pdu_base_offset , nds -> pdu_size , nds -> pdu_max_size , nds -> pdu_scan_offset , nds -> pdu_hdr_size , nds -> pdu_body_size , nds -> pdu_body_offset ) ; } 

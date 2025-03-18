@@ -1,0 +1,1 @@
+void pmap_destroy ( pmap_t pm ) { int refs ; refs = atomic_dec_int_nv ( & pm -> pm_refs ) ; pmap_release ( pm ) ; pool_put ( & pmap_pmap_pool , pm ) ; } 

@@ -1,0 +1,1 @@
+gsf_output_init ( ) { GsfOutput * output = GSF_OUTPUT ( obj ) ; output -> cur_offset = 0 ; output -> cur_size = 0 ; output -> name = NULL ; output -> wrapped_by = NULL ; output -> err = NULL ; output -> is_closed = FALSE ; output -> printf_buf = NULL ; output -> printf_buf_size = 0 ; } 

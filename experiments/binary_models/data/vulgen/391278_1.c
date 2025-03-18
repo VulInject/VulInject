@@ -1,0 +1,1 @@
+static void array_block_prepare_for_write ( struct dm_block_validator * v , struct dm_block * b , size_t size_of_block ) { struct array_block * bh_le = dm_block_data ( b ) ; bh_le -> blocknr = cpu_to_le64 ( dm_block_location ( b ) ) ; } 

@@ -1,0 +1,1 @@
+bzrtpSrtpSecrets_t * secrets ; int32_t pvs ; uint8_t haveCacheMismatch ; uint8_t peerRequestGoClear ; uint8_t peerACKGoClear ; int sendExportedKey [ 16 ] ; uint8_t recvExportedKey [ 16 ] ; uint32_t peerSSRC ; 

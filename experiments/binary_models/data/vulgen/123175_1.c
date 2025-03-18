@@ -1,0 +1,1 @@
+print_target_help ( ) { unsigned int i ; static bool displayed = false ; if ( displayed ) { return ; } displayed = true ; for ( i = 0 ; i < cl_options_count ; i ++ ) { if ( ( cl_options [ i ] . flags & ( CL_TARGET | CL_UNDOCUMENTED ) ) == CL_TARGET ) { printf ( _ ( "\nTarget specific options:\n" ) ) ; break ; } } } 

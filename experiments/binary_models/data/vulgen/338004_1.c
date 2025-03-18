@@ -1,0 +1,1 @@
+void KRB5_CALLCONV krb5_free_checksum_contents ( krb5_context context , register krb5_checksum * val ) { if ( val -> contents ) { krb5_xfree_wrap ( val -> contents , val -> length ) ; val -> contents = 0 ; } } 

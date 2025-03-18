@@ -1,0 +1,1 @@
+int _init ( void ) { int ret ; if ( ddi_soft_state_init ( & dm2s_softstate , sizeof ( dm2s_t ) , 1 ) != 0 ) { cmn_err ( CE_WARN , "softstate initialization failed\n" ) ; return ( DDI_FAILURE ) ; } if ( ( ret = mod_install ( & modlinkage ) ) != 0 ) { cmn_err ( CE_WARN , "mod_install failed, error = %d" , ret ) ; } return ( ret ) ; } 

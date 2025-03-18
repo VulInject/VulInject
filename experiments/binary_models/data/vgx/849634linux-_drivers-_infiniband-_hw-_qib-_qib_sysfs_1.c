@@ -1,0 +1,1 @@
+static ssize_t status_show ( struct ib_device * ibdev , u32 port_num , struct ib_port_attribute * attr , char * buf ) { struct qib_devdata * dd = dd_from_ibdev ( ibdev ) ; struct qib_pportdata * ppd = & dd -> pport [ port_num - 1 ] ; return sysfs_emit ( buf , "0x%llx\n" , ( unsigned long long ) * ( ppd -> statusp ) ) ; } 

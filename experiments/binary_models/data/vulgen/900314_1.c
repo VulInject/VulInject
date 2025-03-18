@@ -1,0 +1,1 @@
+void UI_free ( UI * ui ) { sk_UI_STRING_pop_free ( ui -> strings , free_string ) ; CRYPTO_free_ex_data ( CRYPTO_EX_INDEX_UI , ui , & ui -> ex_data ) ; free ( ui ) ; } 

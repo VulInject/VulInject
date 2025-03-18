@@ -1,0 +1,1 @@
+void dev_pm_qos_hide_latency_tolerance ( struct device * dev ) { mutex_lock ( & dev_pm_qos_sysfs_mtx ) ; pm_qos_sysfs_remove_latency_tolerance ( dev ) ; mutex_unlock ( & dev_pm_qos_sysfs_mtx ) ; pm_runtime_get_sync ( dev ) ; pm_runtime_put ( dev ) ; } 

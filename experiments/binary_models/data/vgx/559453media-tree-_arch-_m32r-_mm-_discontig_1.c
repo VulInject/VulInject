@@ -1,0 +1,1 @@
+extern char _end [ ] ; struct pglist_data * node_data [ MAX_NUMNODES ] ; EXPORT_SYMBOL ( node_data , NULL ) ; pg_data_t m32r_node_data [ MAX_NUMNODES ] ; { unsigned long start_pfn ; unsigned long pages ; unsigned long holes ; unsigned long free_pfn ; } mem_prof_t 

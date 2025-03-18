@@ -1,0 +1,1 @@
+int omap_mcbsp_st_start ( struct omap_mcbsp * mcbsp ) { struct omap_mcbsp_st_data * st_data = mcbsp -> st_data ; if ( st_data -> enabled && ! st_data -> running ) { omap_mcbsp_st_fir_write ( mcbsp , st_data -> taps ) ; omap_mcbsp_st_chgain ( mcbsp ) ; if ( ! mcbsp -> free ) { omap_mcbsp_st_on ( mcbsp , NULL ) ; st_data -> running = 1 ; } } return 0 ; } 

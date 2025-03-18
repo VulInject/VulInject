@@ -1,0 +1,1 @@
+int tls_config_set_crl_file ( struct tls_config * config , const char * crl_file ) { return tls_config_load_file ( & config -> error , "CRL" , crl_file , & config -> crl_mem , & config -> crl_len ) ; } 

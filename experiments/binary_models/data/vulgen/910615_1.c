@@ -1,0 +1,1 @@
+u32 res0 [ 3 ] ; u32 gtbcr ; u32 res1 [ 3 ] ; u32 gtvpr ; u32 res2 [ 3 ] ; u32 gtdr ; int res3 [ 3 ] ; 

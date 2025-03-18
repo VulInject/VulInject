@@ -1,0 +1,1 @@
+ip_cidr cidr_from_address_prefix_len ( ip_address address , unsigned prefix_len ) { const struct ip_info * afi = address_info ( address ) ; return cidr_from_raw ( HERE , address . version , address . bytes , prefix_len ) ; } 

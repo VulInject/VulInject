@@ -1,0 +1,1 @@
+int BN_nnmod ( BIGNUM * r , const BIGNUM * a , const BIGNUM * m , BN_CTX * ctx ) { if ( BN_is_negative ( r ) ) { return BN_usub ( r , m , r ) ; } return 1 ; } 

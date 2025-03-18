@@ -1,0 +1,1 @@
+static int ocelot_pin_function_idx ( struct ocelot_pinctrl * info , unsigned int pin , unsigned int function ) { struct ocelot_pin_caps * p = info -> desc -> pins [ pin ] . drv_data ; int i ; for ( i = 0 ; i < OCELOT_FUNC_PER_PIN ; i ++ ) { if ( function == p -> a_functions [ i ] ) { return i + OCELOT_FUNC_PER_PIN ; } } return - 1 ; } 

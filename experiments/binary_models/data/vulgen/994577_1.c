@@ -1,0 +1,1 @@
+static int initshutdown_dissect_Init_response ( tvbuff_t * tvb _U_ , int offset _U_ , packet_info * pinfo _U_ , proto_tree * tree _U_ , dcerpc_info * di _U_ , guint8 * drep _U_ ) { guint32 status ; di -> dcerpc_procedure_name = "Init" ; offset = dissect_ndr_uint32 ( tvb , offset , pinfo , tree , di , drep , hf_initshutdown_werror , & status ) ; return offset ; } 

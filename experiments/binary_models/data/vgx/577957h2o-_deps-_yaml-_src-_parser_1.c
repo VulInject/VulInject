@@ -1,0 +1,1 @@
+YAML_DECLARE ( ) yaml_parser_parse ( , ) { assert ( parser ) ; assert ( event ) ; if ( parser -> stream_end_produced || parser -> error || parser -> state == YAML_PARSE_END_STATE ) { return 1 ; } return yaml_parser_state_machine ( parser , event ) ; } 

@@ -1,0 +1,1 @@
+static int set_poll ( struct pollfd * fdp ) { struct pmtab * tp ; int nfd ; for ( tp = PMtab ; tp ; tp = tp -> p_next ) { if ( tp -> p_fd > 0 ) { fdp -> fd = tp -> p_fd ; fdp -> events = POLLIN ; fdp ++ ; nfd ++ ; } } return ( nfd ) ; } 

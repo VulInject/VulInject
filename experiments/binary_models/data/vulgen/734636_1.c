@@ -1,0 +1,1 @@
+static void pwm_backlight_power_off ( struct pwm_bl_data * pb ) { if ( ! pb -> enabled ) { return ; } pwm_config ( pb -> pwm , 0 , pb -> period ) ; pwm_disable ( pb -> pwm ) ; if ( pb -> enable_gpio ) { gpiod_set_value_cansleep ( pb -> enable_gpio , 0 ) ; } pb -> enabled = false ; } 

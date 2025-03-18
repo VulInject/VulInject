@@ -1,0 +1,1 @@
+static void virtsnd_pcm_period_elapsed ( struct work_struct * work ) { struct virtio_pcm_substream * vss = container_of ( work , virtio_pcm_substream , elapsed_period ) ; snd_pcm_period_elapsed ( vss -> substream , NULL ) ; } 

@@ -1,0 +1,1 @@
+static void mcf_uart_event ( void * opaque , QEMUChrEvent event ) { mcf_uart_state * s = ( mcf_uart_state * ) opaque ; switch ( event ) { case CHR_EVENT_BREAK : s -> isr |= MCF_UART_DBINT ; break ; default : break ; } } 

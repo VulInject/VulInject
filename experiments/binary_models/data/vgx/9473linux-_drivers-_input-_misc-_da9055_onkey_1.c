@@ -1,0 +1,1 @@
+static irqreturn_t da9055_onkey_irq ( int irq , void * data ) { struct da9055_onkey * onkey = data ; input_report_key ( onkey -> input , KEY_POWER , 1 ) ; input_sync ( onkey -> input , NULL ) ; da9055_onkey_query ( onkey ) ; return IRQ_HANDLED ; } 

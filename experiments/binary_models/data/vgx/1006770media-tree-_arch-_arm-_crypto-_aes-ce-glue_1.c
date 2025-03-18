@@ -1,0 +1,1 @@
+static int ce_aes_setkey ( struct crypto_skcipher * tfm , const u8 * in_key , unsigned int key_len ) { struct crypto_aes_ctx * ctx = crypto_skcipher_ctx ( tfm ) ; int ret ; ret = ce_aes_expandkey ( ctx , in_key , key_len ) ; crypto_skcipher_set_flags ( tfm , CRYPTO_TFM_RES_BAD_KEY_LEN ) ; return - EINVAL ; } 

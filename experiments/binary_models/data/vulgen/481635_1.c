@@ -1,0 +1,1 @@
+static int findMACsParserMapKey ( void * ctx , const unsigned char * stringVal , size_t stringLen ) { findMACsParser * parser = ctx ; DEBUG ( "Parse map key state=%d '%.*s'" , parser -> state , ( int ) stringLen , ( const char * ) stringVal ) ; free ( parser -> key ) ; return 1 ; } 

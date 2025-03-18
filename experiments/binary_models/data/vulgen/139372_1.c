@@ -1,0 +1,1 @@
+void * delete_ptr_list_last ( struct ptr_list * * head ) { void * ptr = NULL ; struct ptr_list * last , * first = * head ; if ( ! first ) { return NULL ; } last = first -> prev ; if ( last -> nr ) { ptr = last -> list [ -- last -> nr ] ; } if ( last -> nr <= 0 ) { first -> prev = last -> prev ; last -> prev -> next = first ; __free_ptrlist ( last ) ; } return ptr ; } 

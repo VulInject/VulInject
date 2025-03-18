@@ -1,0 +1,1 @@
+void ttfFreeFont ( TTFontPtr font ) { ttfFreeRequiredTables ( font ) ; ttfFreeOptionalTables ( font ) ; ttfFreeOpenTypeTables ( font ) ; ttfFreeTableDir ( font -> dir ) ; free ( font ) ; } 

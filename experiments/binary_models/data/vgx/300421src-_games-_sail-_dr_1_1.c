@@ -1,0 +1,1 @@
+void unfoul ( void ) { struct ship * sp ; struct ship * to ; int nat ; int i ; foreachship ( ) { nat = capship ( sp ) -> nationality ; foreachship ( ) { if ( nat != capship ( to ) -> nationality && ! is_toughmelee ( sp , to , 0 , 0 ) ) { continue ; } for ( i = fouled2 ( sp , to ) ; -- i >= 0 ; ) { if ( die ( ) <= 2 ) { cleanfoul ( sp , to , 0 ) ; } } } } } 

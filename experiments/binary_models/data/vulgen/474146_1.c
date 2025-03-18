@@ -1,0 +1,1 @@
+static void check_clz32 ( uint32_t x , int n ) { if ( clz32 ( x ) != n ) { fprintf ( stderr , "clz32(%" PRIu32 ") is %d but should be %d\n" , x , clz32 ( x ) , n ) ; } } 

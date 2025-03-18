@@ -1,0 +1,1 @@
+static FT_Error ft_raster1_init ( FT_Renderer render ) { render -> clazz -> raster_class -> raster_reset ( render -> raster , 0 ) ; return FT_Err_Ok ; } 

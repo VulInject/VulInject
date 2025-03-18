@@ -1,0 +1,1 @@
+cpl_tmrec_p cpl_tmrec_new ( void ) { cpl_tmrec_p _trp = NULL ; _trp = ( cpl_tmrec_p ) pkg_malloc ( sizeof ( cpl_tmrec_t ) ) ; if ( ! _trp ) { return NULL ; } localtime_r ( & _trp -> dtstart , & ( _trp -> ts ) ) ; return _trp ; } 

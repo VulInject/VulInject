@@ -1,0 +1,1 @@
+void iscsi_targetparam_init ( ) { iscsi_targets . target_list = NULL ; rw_init ( & ( iscsi_targets . target_list_lock ) , RW_DRIVER , NULL ) ; } 

@@ -1,0 +1,1 @@
+Spawn { sd_device * device ; const char * cmd ; usec_t timeout_warn_usec ; usec_t timeout_usec ; int timeout_signal ; usec_t event_birth_usec ; bool accept_failure ; int fd_stdout ; int fd_stderr ; char * result ; size_t result_size ; size_t result_len ; bool truncated ; } Spawn 

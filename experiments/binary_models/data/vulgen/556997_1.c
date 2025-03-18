@@ -1,0 +1,1 @@
+static int imx_phy_reg_addressing ( u16 addr , void __iomem * mmio ) { u32 crval = addr ; int ret ; ret = imx_phy_crbit_assert ( mmio , IMX_P0PHYCR_CR_CAP_ADDR , true ) ; if ( ret ) { return ret ; } ret = imx_phy_crbit_assert ( mmio , IMX_P0PHYCR_CR_CAP_ADDR , false ) ; if ( ret ) { return ret ; } return 0 ; } 

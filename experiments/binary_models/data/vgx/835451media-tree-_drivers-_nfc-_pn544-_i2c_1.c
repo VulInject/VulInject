@@ -1,0 +1,1 @@
+static int pn544_hci_i2c_enable ( void * phy_id ) { struct pn544_i2c_phy * phy = phy_id ; pr_info ( "%s\n" , __func__ ) ; pn544_hci_i2c_enable_mode ( phy , PN544_HCI_MODE ) ; return 0 ; } 

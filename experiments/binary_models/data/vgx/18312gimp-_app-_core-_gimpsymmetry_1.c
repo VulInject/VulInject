@@ -1,0 +1,1 @@
+gimp_symmetry_to_parasite ( ) { GimpParasite * parasite ; gchar * parasite_name ; g_return_val_if_fail ( GIMP_IS_SYMMETRY ( sym ) , NULL ) ; parasite_name = gimp_symmetry_parasite_name ( G_TYPE_FROM_INSTANCE ( sym ) ) ; parasite = gimp_config_serialize_to_parasite ( ( GimpConfig * ) sym , parasite_name , GIMP_PARASITE_PERSISTENT , NULL ) ; return parasite ; } 

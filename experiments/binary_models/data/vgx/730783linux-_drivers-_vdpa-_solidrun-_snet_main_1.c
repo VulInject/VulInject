@@ -1,0 +1,1 @@
+static void snet_kick_vq ( struct vdpa_device * vdev , u16 idx ) { struct snet * snet = vdpa_to_snet ( vdev ) ; iowrite32 ( SNET_KICK_VAL , snet -> vqs [ idx ] -> kick_ptr ) ; } 

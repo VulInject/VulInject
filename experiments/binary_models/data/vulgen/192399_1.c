@@ -1,0 +1,1 @@
+static int __init vmcmd_on_reboot_setup ( char * str ) { strncpy_skip_quote ( vmcmd_on_reboot , str , 127 ) ; vmcmd_on_reboot [ 127 ] = 0 ; on_reboot_trigger . action = & vmcmd_action ; return 1 ; } 

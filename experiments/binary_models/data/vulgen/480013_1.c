@@ -1,0 +1,1 @@
+static void h_can_join ( hook_data_channel * ) int sslonly_hfnlist [ ] { { "can_join" ( hookfn ) h_can_join } { NULL NULL } } ; ; 

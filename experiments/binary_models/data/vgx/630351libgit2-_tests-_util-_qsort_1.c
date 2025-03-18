@@ -1,0 +1,1 @@
+static int cmp_str ( const void * _a , const void * _b , void * payload ) { GIT_UNUSED ( payload , NULL ) ; return strcmp ( ( const char * ) _a , ( const char * ) _b ) ; } 

@@ -1,0 +1,1 @@
+static int intel_xpower_pmic_get_raw_temp ( struct regmap * regmap , int reg ) { u8 buf [ 2 ] ; return ( buf [ 0 ] << 4 ) + ( ( buf [ 1 ] >> 4 ) & 0x0F ) ; } 

@@ -1,0 +1,1 @@
+static void __init dir_utime ( void ) { struct dir_entry * de , * tmp ; list_for_each_entry_safe ( , , , ) { list_del ( & de -> list ) ; do_utime ( de -> name , de -> mtime ) ; kfree ( de ) ; } } 

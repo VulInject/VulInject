@@ -1,0 +1,1 @@
+static int version_flag ; static int help_flag ; static char * principal ; static struct getargs args [ ] { { "principal" 0 arg_string & principal NULL NULL } { "password" 0 arg_string & password NULL NULL } { "version" 0 arg_flag & version_flag NULL NULL } { "help" 0 arg_flag & help_flag NULL NULL } } ; ; 

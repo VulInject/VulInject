@@ -1,0 +1,1 @@
+void s390_cpu_init_sysemu ( Object * obj ) { CPUState * cs = CPU ( obj ) ; S390CPU * cpu = S390_CPU ( obj ) ; cs -> start_powered_off = true ; cpu -> env . tod_timer = timer_new_ns ( QEMU_CLOCK_VIRTUAL , s390x_tod_timer , cpu ) ; cpu -> env . cpu_timer = timer_new_ns ( QEMU_CLOCK_VIRTUAL , s390x_cpu_timer , cpu ) ; s390_cpu_set_state ( S390_CPU_STATE_STOPPED , cpu ) ; } 

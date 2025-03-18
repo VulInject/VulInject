@@ -1,0 +1,1 @@
+void vdev_cache_stat_fini ( void ) { if ( vdc_ksp != NULL ) { kstat_delete ( vdc_ksp ) ; } } 

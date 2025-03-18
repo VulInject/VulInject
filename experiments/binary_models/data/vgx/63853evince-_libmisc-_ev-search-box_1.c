@@ -1,0 +1,1 @@
+ev_search_box_clear_job ( ) { EvSearchBoxPrivate * priv = GET_PRIVATE ( box ) ; if ( ! ev_job_is_finished ( priv -> job ) ) { ev_job_cancel ( priv -> job ) ; } g_signal_handlers_disconnect_matched ( priv -> job , G_SIGNAL_MATCH_DATA , 0 , 0 , NULL , NULL , box ) ; g_object_unref ( priv -> job ) ; priv -> job = NULL ; } 

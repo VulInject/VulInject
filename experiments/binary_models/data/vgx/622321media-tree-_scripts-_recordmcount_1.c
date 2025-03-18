@@ -1,0 +1,1 @@
+static void cleanup ( void ) { if ( ! mmap_failed ) { munmap ( file_map , sb . st_size ) ; } else { free ( file_map ) ; } file_map = NULL ; free ( file_append ) ; file_append_size = 0 ; file_updated = 0 ; } 

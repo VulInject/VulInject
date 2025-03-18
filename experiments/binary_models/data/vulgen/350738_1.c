@@ -1,0 +1,1 @@
+tipc_pkthdr { nd_uint32_t w1 ; } 

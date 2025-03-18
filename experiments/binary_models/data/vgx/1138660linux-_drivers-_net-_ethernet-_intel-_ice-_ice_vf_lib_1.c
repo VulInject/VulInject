@@ -1,0 +1,1 @@
+static int ice_vf_recreate_vsi ( struct ice_vf * vf ) { struct ice_pf * pf = vf -> pf ; int err ; err = vf -> vf_ops -> create_vsi ( vf ) ; if ( err ) { dev_err ( ice_pf_to_dev ( pf ) , "Failed to recreate the VF%u's VSI, error %d\n" , vf -> vf_id , err ) ; return err ; } return 0 ; } 

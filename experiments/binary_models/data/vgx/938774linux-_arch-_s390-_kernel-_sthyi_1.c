@@ -1,0 +1,1 @@
+int sthyi_fill ( void * dst , u64 * rc ) { int r ; mutex_lock ( & sthyi_mutex ) ; r = sthyi_init_cache ( ) ; if ( r ) { out } if ( time_is_before_jiffies ( sthyi_cache . end ) ) { r = sthyi_update_cache ( rc , NULL ) ; if ( r ) { out } } * rc = 0 ; memcpy ( dst , sthyi_cache . info , PAGE_SIZE ) ; out mutex_unlock ( & sthyi_mutex ) ; return r ; } 

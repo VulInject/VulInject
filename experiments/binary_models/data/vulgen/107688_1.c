@@ -1,0 +1,1 @@
+int rresvport_af ( int * alport , int af ) { struct sockaddr_storage laddr ; if ( af == AF_INET || af == AF_INET6 ) { laddr . ss_family = ( sa_family_t ) af ; } else { errno = EAFNOSUPPORT ; return ( - 1 ) ; } return ( rresvport_addr ( alport , & laddr ) ) ; } 

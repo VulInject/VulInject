@@ -1,0 +1,1 @@
+void __init orion5x_spi_init ( void ) { } 

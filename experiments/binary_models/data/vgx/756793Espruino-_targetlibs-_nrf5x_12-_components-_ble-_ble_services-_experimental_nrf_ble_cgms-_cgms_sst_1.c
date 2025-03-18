@@ -1,0 +1,1 @@
+void sst_decode ( ble_cgms_sst_t * p_sst , const uint8_t * p_data , const uint16_t len ) { uint32_t index ; index = ble_date_time_decode ( & p_sst -> date_time , p_data ) ; p_sst -> time_zone = p_data [ index ++ ] ; p_sst -> dst = p_data [ index ++ ] ; } 

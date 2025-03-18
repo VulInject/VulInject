@@ -1,0 +1,1 @@
+static void graphicsSetPixelDeviceBlended ( JsGraphics * gfx , int x , int y , int amt ) { unsigned int bg = graphicsGetPixelDevice ( gfx , x , y ) ; unsigned int col = graphicsBlendColor ( gfx , gfx -> data . fgColor , bg , amt ) ; } 

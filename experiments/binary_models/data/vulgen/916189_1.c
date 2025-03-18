@@ -1,0 +1,1 @@
+static struct spi_driver ad8366_driver = { . driver = { . name = KBUILD_MODNAME } . probe = ad8366_probe . remove = ad8366_remove . id_table = ad8366_id } ; 

@@ -1,0 +1,1 @@
+static inline RTireNode * new_leaf ( RSearchKeyword * kw , ut8 * data , ut32 len ) { RTireNode * t = new_node ( ) ; if ( t ) { t -> data = data ; t -> len = len ; t -> kw = kw ; } return t ; } 

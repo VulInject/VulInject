@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "Mike Bernson&Dave Perks" ) ; MODULE_LICENSE ( "GPL" ) ; static int debug ; module_param ( debug , int , 0 ) ; MODULE_PARM_DESC ( debug , "Debug level (0-1)" ) ; bt866 { struct v4l2_subdev sd ; int reg [ 256 ] ; } 

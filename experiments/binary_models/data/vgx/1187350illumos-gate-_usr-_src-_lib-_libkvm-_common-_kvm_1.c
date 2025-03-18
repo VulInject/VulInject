@@ -1,0 +1,1 @@
+int kvm_kmemfd ; int kvm_memfd ; size_t kvm_coremapsize ; char * kvm_core ; dump_map_t * kvm_map ; pfn_t * kvm_pfn ; struct as * kvm_kas ; proc_t * kvm_practive ; pid_t kvm_pid ; int kvm_namelist [ MAXNAMELEN + 1 ] ; boolean_t kvm_namelist_core ; proc_t kvm_proc ; 

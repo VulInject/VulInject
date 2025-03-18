@@ -1,0 +1,1 @@
+long WINAPI ff_dshow_enummediatypes_Reset ( DShowEnumMediaTypes * this ) { dshowdebug ( "ff_dshow_enummediatypes_Reset(%p)\n" , this ) ; return S_OK ; } 

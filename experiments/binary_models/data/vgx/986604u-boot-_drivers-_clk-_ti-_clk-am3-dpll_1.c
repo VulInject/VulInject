@@ -1,0 +1,1 @@
+clk_ti_am3_dpll_priv { struct clk_ti_reg clkmode_reg ; struct clk_ti_reg idlest_reg ; struct clk_ti_reg clksel_reg ; struct clk_ti_reg ssc_deltam_reg ; struct clk_ti_reg ssc_modfreq_reg ; struct clk clk_bypass ; int clk_ref ; u16 last_rounded_mult ; u8 last_rounded_div ; u8 min_div ; ulong max_rate ; u32 ssc_modfreq ; u32 ssc_deltam ; bool ssc_downspread ; } 

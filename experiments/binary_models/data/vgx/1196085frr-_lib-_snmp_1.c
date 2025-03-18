@@ -1,0 +1,1 @@
+void oid2in6_addr ( oid oid [ ] , struct in6_addr * addr ) { int i ; uint8_t * pnt ; pnt = ( uint8_t * ) addr ; for ( i = 0 ; i < sizeof ( in6_addr ) ; i ++ ) { * pnt ++ = oid [ i ] ; } } 

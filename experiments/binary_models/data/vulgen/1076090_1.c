@@ -1,0 +1,1 @@
+static int pseries_lpar_resize_hpt_commit ( void * data ) { struct hpt_resize_state * state = data ; state -> commit_rc = plpar_resize_hpt_commit ( 0 , state -> shift ) ; if ( state -> commit_rc != H_SUCCESS ) { return - EIO ; } ppc64_pft_size = state -> shift ; htab_size_bytes = 1UL << ppc64_pft_size ; return 0 ; } 

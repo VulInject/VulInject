@@ -1,0 +1,1 @@
+static void httpfs_curl_set_post ( CURL * curl ) { curl_easy_setopt ( curl , CURLOPT_HTTPGET , 0L ) ; curl_easy_setopt ( curl , CURLOPT_PUT , 0L ) ; curl_easy_setopt ( curl , CURLOPT_UPLOAD , 0L ) ; curl_easy_setopt ( curl , CURLOPT_POST , 1L ) ; curl_easy_setopt ( curl , CURLOPT_CUSTOMREQUEST , "POST" ) ; } 

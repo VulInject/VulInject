@@ -1,0 +1,1 @@
+static int __init ikconfig_init ( void ) { struct proc_dir_entry * entry ; entry = proc_create ( "config.gz" , S_IFREG | S_IRUGO , NULL , & config_gz_proc_ops ) ; proc_set_size ( entry , & kernel_config_data_end - & kernel_config_data ) ; return 0 ; } 

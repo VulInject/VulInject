@@ -1,0 +1,1 @@
+int vether_media_change ( struct ifnet * ifp ) { return ( 0 ) ; } 

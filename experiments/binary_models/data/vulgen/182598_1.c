@@ -1,0 +1,1 @@
+static int dissect_SuccessfulOutcomeValue ( tvbuff_t * tvb , packet_info * pinfo , proto_tree * tree , void * data _U_ ) { return ( dissector_try_uint ( sabp_proc_sout_dissector_table , ProcedureCode , tvb , pinfo , tree ) ) ?tvb_captured_length ( ) : 0 ; } 

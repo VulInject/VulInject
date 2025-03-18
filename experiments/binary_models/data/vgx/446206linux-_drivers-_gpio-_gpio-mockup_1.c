@@ -1,0 +1,1 @@
+static void gpio_mockup_unregister_pdevs ( void ) { struct platform_device * pdev ; struct fwnode_handle * fwnode ; int i ; for ( i = 0 ; i < GPIO_MOCKUP_MAX_GC ; i ++ ) { pdev = gpio_mockup_pdevs [ i ] ; if ( ! pdev ) { continue ; } fwnode = dev_fwnode ( & pdev -> dev ) ; platform_device_unregister ( pdev ) ; fwnode_remove_software_node ( fwnode , NULL ) ; } } 

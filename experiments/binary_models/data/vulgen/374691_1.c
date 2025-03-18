@@ -1,0 +1,1 @@
+static int fsl_dcu_drm_pm_suspend ( struct device * dev ) { struct fsl_dcu_drm_device * fsl_dev = dev_get_drvdata ( dev ) ; int ret ; disable_irq ( fsl_dev -> irq ) ; ret = drm_mode_config_helper_suspend ( fsl_dev -> drm ) ; if ( ret ) { enable_irq ( fsl_dev -> irq ) ; return ret ; } clk_disable_unprepare ( fsl_dev -> clk ) ; return 0 ; } 

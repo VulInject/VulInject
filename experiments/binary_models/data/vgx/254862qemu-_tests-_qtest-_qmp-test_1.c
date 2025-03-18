@@ -1,0 +1,1 @@
+static void test_version ( QObject * version ) { Visitor * v ; VersionInfo * vinfo ; v = qobject_input_visitor_new ( version ) ; visit_type_VersionInfo ( v , "version" , & vinfo , & error_abort ) ; qapi_free_VersionInfo ( vinfo ) ; visit_free ( v ) ; } 

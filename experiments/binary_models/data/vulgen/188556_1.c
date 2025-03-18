@@ -1,0 +1,1 @@
+static struct qfq_class * qfq_find_class ( struct Qdisc * sch , u32 classid ) { struct qfq_sched * q = qdisc_priv ( sch ) ; struct Qdisc_class_common * clc ; clc = qdisc_class_find ( & q -> clhash , classid ) ; return container_of ( clc , qfq_class , common ) ; } 

@@ -1,0 +1,1 @@
+unsigned long __lockfunc __raw_ # # op # # _lock_irqsave ( ) { unsigned long flags for ( ; ; ) { preempt_disable ( ) ; local_irq_save ( flags ) ; local_irq_restore ( flags ) ; preempt_enable ( ) ; arch_ # # op # # _relax ( & lock -> raw_lock ) ; ; } } ; return flags ; 

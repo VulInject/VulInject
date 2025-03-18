@@ -1,0 +1,1 @@
+xps_document_document_links_iface_init ( ) { iface -> has_document_links = xps_document_links_has_document_links ; iface -> get_links_model = xps_document_links_get_links_model ; iface -> get_links = xps_document_links_get_links ; iface -> find_link_dest = xps_document_links_find_link_dest ; } 

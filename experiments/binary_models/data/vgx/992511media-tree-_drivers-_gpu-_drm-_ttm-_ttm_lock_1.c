@@ -1,0 +1,1 @@
+int ttm_read_trylock ( struct ttm_lock * lock , bool interruptible ) { int ret = 0 ; bool locked ; if ( interruptible ) { ret = wait_event_interruptible ( lock -> queue , __ttm_read_trylock ( lock , & locked ) ) ; } else { wait_event ( lock -> queue , __ttm_read_trylock ( lock , & locked ) ) ; } if ( unlikely ( ret != 0 ) ) { return ret ; } return ( locked ) ?0 : - EBUSY ; } 

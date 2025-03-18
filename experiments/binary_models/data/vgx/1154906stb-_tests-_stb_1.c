@@ -1,0 +1,1 @@
+void * writer ( void * q ) { int i ; write_data * p = ( write_data * ) q ; for ( i = p -> start ; i < p -> end ; ++ i ) { stb_threadq_add_block ( p -> tq , & i ) ; if ( p -> delay ) { stb__thread_sleep ( p -> delay ) ; } else { int j ; float z = 0 ; for ( j = 0 ; j <= 20 ; ++ j ) { z += 1 / ( t1 + j ) ; } t2 = z ; } } return NULL ; } 

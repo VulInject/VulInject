@@ -1,0 +1,1 @@
+void * cbc_alloc_ctx ( int kmflag ) { cbc_ctx_t * cbc_ctx ; cbc_ctx -> cbc_flags = CBC_MODE ; return ( cbc_ctx ) ; } 

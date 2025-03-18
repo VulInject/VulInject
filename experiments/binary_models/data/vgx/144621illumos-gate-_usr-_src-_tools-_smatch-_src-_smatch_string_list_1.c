@@ -1,0 +1,1 @@
+int list_has_string ( struct string_list * str_list , const char * str ) { char * tmp ; int cmp ; FOR_EACH_PTR ( , ) { cmp = strcmp ( tmp , str ) ; if ( cmp < 0 ) { continue ; } if ( cmp == 0 ) { return 1 ; } return 0 ; } END_FOR_EACH_PTR ( tmp ) ; return 0 ; } 

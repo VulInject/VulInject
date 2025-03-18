@@ -1,0 +1,1 @@
+int main ( int argc , char * * argv ) { SRunner * sr ; int nf ; ( void ) argc ; ( void ) argv ; sr = srunner_create ( event_loopback_suite ( ) ) ; if ( getenv ( "CK_LOG_FILE_NAME" ) == NULL ) { srunner_set_log ( sr , "check_event_loopback.log" ) ; } srunner_run_all ( sr , CK_NORMAL ) ; nf = srunner_ntests_failed ( sr ) ; return nf == 0 ?EXIT_SUCCESS : EXIT_FAILURE ; } 

@@ -1,0 +1,1 @@
+void __init unit_init_IRQ ( void ) { unsigned int extnum ; for ( extnum = 0 ; extnum < NR_XIRQS ; extnum ++ ) { switch ( GET_XIRQ_TRIGGER ( extnum ) ) { case XIRQ_TRIGGER_HILEVEL : case XIRQ_TRIGGER_LOWLEVEL : break ; default : break ; } } } 

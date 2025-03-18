@@ -1,0 +1,1 @@
+void mux_rmvedge ( stdata_t * upstp , int muxid , str_stack_t * ss ) { struct mux_node * np ; struct mux_edge * ep ; struct mux_edge * pep = NULL ; major_t upmaj ; upmaj = getmajor ( upstp -> sd_vnode -> v_rdev ) ; np = & ss -> ss_mux_nodes [ upmaj ] ; ASSERT ( np -> mn_outp != NULL ) ; ep = np -> mn_outp ; while ( ep ) { pep = ep ; ep = ep -> me_nextp ; } ASSERT ( 0 ) ; } 

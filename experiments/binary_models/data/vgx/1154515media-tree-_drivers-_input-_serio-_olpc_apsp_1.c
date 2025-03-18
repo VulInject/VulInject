@@ -1,0 +1,1 @@
+static int olpc_apsp_open ( struct serio * port ) { struct olpc_apsp * priv = port -> port_data ; int tmp ; if ( priv -> open_count ++ == 0 ) { tmp = readl ( priv -> base + PJ_INTERRUPT_MASK ) ; writel ( tmp & ~ INT_0 , priv -> base + PJ_INTERRUPT_MASK ) ; } return 0 ; } 

@@ -1,0 +1,1 @@
+void M_queue_destroy ( M_queue_t * queue ) { if ( queue == NULL ) { return ; } M_llist_destroy ( queue -> list , M_TRUE ) ; M_free ( queue ) ; } 

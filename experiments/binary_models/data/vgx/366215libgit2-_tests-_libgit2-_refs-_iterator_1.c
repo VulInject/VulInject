@@ -1,0 +1,1 @@
+static int refs_foreach_name_cancel_cb ( const char * name , void * payload ) { int * cancel_after = payload ; if ( ! * cancel_after ) { return - 333 ; } GIT_UNUSED ( name , NULL ) ; ( * cancel_after ) -- ; return 0 ; } 

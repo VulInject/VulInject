@@ -1,0 +1,1 @@
+struct ture buf [ 10 ] ; void test ( void ) { int a , b ; a = 0 ; b = 0 ; buf [ a ++ ] = outside ; buf [ ++ b ] = outside ; __smatch_implied ( a , NULL ) ; __smatch_implied ( b ) ; } 

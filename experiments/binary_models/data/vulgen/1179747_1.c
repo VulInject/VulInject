@@ -1,0 +1,1 @@
+static void grip_disconnect ( struct gameport * gameport ) { struct grip_mp * grip = gameport_get_drvdata ( gameport ) ; int i ; for ( i = 0 ; i < 4 ; i ++ ) { if ( grip -> port [ i ] -> registered ) { input_unregister_device ( grip -> port [ i ] -> dev ) ; } } gameport_close ( gameport ) ; gameport_set_drvdata ( gameport , NULL ) ; } 

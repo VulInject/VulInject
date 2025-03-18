@@ -1,0 +1,1 @@
+static int slram_erase ( struct mtd_info * mtd , struct erase_info * instr ) { slram_priv_t * priv = mtd -> priv ; memset ( priv -> start + instr -> addr , 0xff , instr -> len ) ; instr -> state = MTD_ERASE_DONE ; mtd_erase_callback ( instr , NULL ) ; return ( 0 ) ; } 

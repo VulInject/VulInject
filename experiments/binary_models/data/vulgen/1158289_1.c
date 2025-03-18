@@ -1,0 +1,1 @@
+static int umastat_cpu_alloc ( uintptr_t addr , const umem_cpu_cache_t * ccp , int * alloc ) { return ( WALK_NEXT ) ; } 

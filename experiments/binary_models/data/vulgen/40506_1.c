@@ -1,0 +1,1 @@
+static void rtw8852c_adc_en ( struct rtw89_dev * rtwdev , bool en ) { if ( en ) { rtw89_phy_write32_mask ( rtwdev , R_ADC_FIFO , B_ADC_FIFO_RST , 0x0 ) ; } else { rtw89_phy_write32_mask ( rtwdev , R_ADC_FIFO , B_ADC_FIFO_RST , 0 ) ; } } 

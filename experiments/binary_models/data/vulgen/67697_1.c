@@ -1,0 +1,1 @@
+void kvm_s390_backup_guest_per_regs ( struct kvm_vcpu * vcpu ) { vcpu -> arch . guestdbg . cr0 = vcpu -> arch . sie_block -> gcr [ 0 ] ; vcpu -> arch . guestdbg . cr9 = vcpu -> arch . sie_block -> gcr [ 9 ] ; vcpu -> arch . guestdbg . cr10 = vcpu -> arch . sie_block -> gcr [ 10 ] ; } 

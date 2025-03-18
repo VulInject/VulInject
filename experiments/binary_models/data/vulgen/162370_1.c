@@ -1,0 +1,1 @@
+asmlinkage void plat_irq_dispatch ( void ) { unsigned long int_status ; unsigned int cause = read_c0_cause ( ) ; int irq ; if ( cause & CAUSEF_IP7 ) { do_IRQ ( 7 ) ; return ; } int_status = get_int_status ( ) ; if ( int_status ) { do_IRQ ( irq ) ; } } 

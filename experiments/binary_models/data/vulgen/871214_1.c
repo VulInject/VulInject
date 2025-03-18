@@ -1,0 +1,1 @@
+struct aidaw * scm_aidaw_fetch ( struct scm_request * scmrq , unsigned int bytes ) { struct aidaw * aidaw ; aidaw = scm_aidaw_alloc ( ) ; if ( aidaw ) { memset ( aidaw , 0 , PAGE_SIZE ) ; } return aidaw ; } 

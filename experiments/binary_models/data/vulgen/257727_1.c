@@ -1,0 +1,1 @@
+static void blake2s_init0 ( blake2s_state * S ) { size_t i ; for ( i = 0 ; i < 8 ; ++ i ) { S -> h [ i ] = blake2s_IV [ i ] ; } } 

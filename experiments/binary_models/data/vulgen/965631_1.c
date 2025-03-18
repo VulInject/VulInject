@@ -1,0 +1,1 @@
+static int socfpgaimage_check_image_types_v0 ( uint8_t type ) { return EXIT_FAILURE ; } 

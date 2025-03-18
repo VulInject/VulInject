@@ -1,0 +1,1 @@
+int insert_insert ( struct __sk_buff * ctx ) { struct bpf_sock_tuple tup = { } ; struct nf_conn * ct ; ct = bpf_skb_ct_alloc ( ctx , & tup , sizeof ( tup . ipv4 ) , & opts , sizeof ( opts ) ) ; if ( ! ct ) { return 0 ; } ct = bpf_ct_insert_entry ( ct ) ; if ( ! ct ) { return 0 ; } ct = bpf_ct_insert_entry ( ct ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+int kvm_arch_set_irq_inatomic ( struct kvm_kernel_irq_routing_entry * irq_entry , struct kvm * kvm , int irq_source_id , int level , int line_status ) { return kvm_set_irq ( kvm , irq_source_id , irq_entry -> gsi , level , line_status ) ; } 

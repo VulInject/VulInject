@@ -1,0 +1,1 @@
+static void newenv_str ( const char * const var , const char * const str ) { size_t s ; char * v ; if ( str == NULL || * str == 0 ) { return ; } if ( ( v = malloc ( s ) ) == NULL ) { return ; } if ( SNCHECK ( snprintf ( v , s , "%s=%s" , var , str ) , s ) ) { free ( v ) ; return ; } putenv ( v ) ; } 

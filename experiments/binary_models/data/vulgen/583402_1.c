@@ -1,0 +1,1 @@
+const struct tc_device_id * tc_match_device ( struct tc_driver * tdrv , struct tc_dev * tdev ) { const struct tc_device_id * id = tdrv -> id_table ; if ( id ) { while ( id -> name [ 0 ] || id -> vendor [ 0 ] ) { id ++ ; } } return NULL ; } 

@@ -1,0 +1,1 @@
+static char * cstr_get_value ( char * p , char * * dst_p ) { p = cstr_skip_ws ( p ) ; if ( * p == '\'' ) { * dst_p = ++ p ; p = cstr_unquote_value ( p , NULL ) ; if ( ! p ) { return NULL ; } } else { * dst_p = p ; while ( * p && * p != ' ' ) { p ++ ; } } if ( * p ) { * p = 0 ; p ++ ; } if ( * dst_p [ 0 ] == 0 ) { return NULL ; } return p ; } 

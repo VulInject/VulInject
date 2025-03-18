@@ -1,0 +1,1 @@
+int adc_stop ( struct udevice * dev ) { const struct adc_ops * ops = dev_get_driver_ops ( dev ) ; return ops -> stop ( dev ) ; } 

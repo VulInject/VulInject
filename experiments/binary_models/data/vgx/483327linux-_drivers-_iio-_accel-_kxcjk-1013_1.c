@@ -1,0 +1,1 @@
+static const struct kx_odr_map * kxcjk1013_find_odr_value ( const struct kx_odr_map * map , size_t map_size , int val , int val2 ) { int i ; for ( i = 0 ; i < map_size ; ++ i ) { if ( map [ i ] . val == val && map [ i ] . val2 == val2 ) { return & map [ i ] ; } } return ERR_PTR ( - EINVAL ) ; } 

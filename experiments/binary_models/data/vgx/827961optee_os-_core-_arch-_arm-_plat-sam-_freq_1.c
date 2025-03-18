@@ -1,0 +1,1 @@
+unsigned long plat_get_freq ( void ) { return freq ; } 

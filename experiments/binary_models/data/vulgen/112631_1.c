@@ -1,0 +1,1 @@
+static int __init ip30_xtalk_init ( void ) { int i ; for ( i = IP30_WIDGET_PCI_BASE ; i > IP30_WIDGET_HEART ; i -- ) { xtalk_init_widget ( i , 0 ) ; } return 0 ; } 

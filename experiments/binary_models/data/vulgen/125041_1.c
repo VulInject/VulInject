@@ -1,0 +1,1 @@
+void slurm_init_update_front_end_msg ( update_front_end_msg_t * update_front_end_msg ) { update_front_end_msg -> node_state = NO_VAL ; } 

@@ -1,1 +1,1 @@
-FUN1 ( ) { FUN2 ( FUN3 ( VAR1 ) ) ; return FUN4 ( VAR1 ) -> VAR2 ; }
+gimp_filter_get_applicator ( ) { g_return_val_if_fail ( GIMP_IS_FILTER ( filter ) ) ; return GET_PRIVATE ( filter ) -> applicator ; } 

@@ -1,0 +1,1 @@
+freeaddrinfo ( ) { if ( use_win32_p ( ) ) { freeaddrinfo_ptr ( ai ) ; return ; } while ( ai ) { struct addrinfo * cur ; cur = ai ; ai = ai -> ai_next ; free ( cur -> ai_canonname ) ; } } 

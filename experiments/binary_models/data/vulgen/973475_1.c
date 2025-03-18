@@ -1,0 +1,1 @@
+static void netdev_get_wol ( struct net_device * dev , struct ethtool_wolinfo * wol ) { struct dev_priv * priv = netdev_priv ( dev ) ; struct dev_info * hw_priv = priv -> adapter ; wol -> supported = hw_priv -> wol_support ; wol -> wolopts = hw_priv -> wol_enable ; } 

@@ -1,0 +1,1 @@
+rl_modifying ( , ) int start , end ; { if ( start > end ) { SWAP ( start , end ) ; } if ( start != end ) { rl_begin_undo_group ( ) ; rl_add_undo ( UNDO_DELETE , start , end , temp ) ; rl_add_undo ( UNDO_INSERT , start , end , ( char * ) NULL ) ; rl_end_undo_group ( ) ; } return 0 ; } 

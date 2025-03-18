@@ -1,0 +1,1 @@
+static int lio_cn68xx_soft_reset ( struct octeon_device * oct ) { lio_cn6xxx_soft_reset ( oct ) ; lio_cn68xx_set_dpi_regs ( oct , NULL ) ; return 0 ; } 

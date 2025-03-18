@@ -1,0 +1,1 @@
+int X509_add1_trust_object ( X509 * x , const ASN1_OBJECT * obj ) { X509_CERT_AUX * aux ; ASN1_OBJECT * objtmp ; int rc ; if ( ! ( aux = aux_get ( x ) ) ) { err } if ( ! aux -> trust && ! ( aux -> trust = sk_ASN1_OBJECT_new_null ( ) ) ) { err } rc = sk_ASN1_OBJECT_push ( aux -> trust , objtmp ) ; if ( rc != 0 ) { return rc ; } err ASN1_OBJECT_free ( objtmp ) ; return 0 ; } 

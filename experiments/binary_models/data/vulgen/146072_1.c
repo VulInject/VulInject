@@ -1,0 +1,1 @@
+static struct dlg_head_cbl * init_dlg_callback ( void ) { struct dlg_head_cbl * new_cbs ; new_cbs = ( dlg_head_cbl * ) shm_malloc ( sizeof ( dlg_head_cbl ) ) ; new_cbs -> first = 0 ; new_cbs -> types = 0 ; return new_cbs ; } 

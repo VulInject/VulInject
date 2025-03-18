@@ -1,0 +1,1 @@
+static int screen_redraw_two_panes ( struct window * w , int direction ) { struct window_pane * wp ; wp = TAILQ_NEXT ( TAILQ_FIRST ( & w -> panes ) , entry ) ; if ( TAILQ_NEXT ( wp , entry ) != NULL ) { return ( 0 ) ; } if ( direction == 0 && wp -> xoff == 0 ) { return ( 0 ) ; } if ( direction == 1 && wp -> yoff == 0 ) { return ( 0 ) ; } return ( 1 ) ; } 

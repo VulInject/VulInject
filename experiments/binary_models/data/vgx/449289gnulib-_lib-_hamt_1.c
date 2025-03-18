@@ -1,0 +1,1 @@
+create_function_table ( , , ) { struct function_table * functions = XMALLOC ( function_table ) ; functions -> hasher = hasher ; functions -> comparator = comparator ; functions -> freer = freer ; return functions ; } 

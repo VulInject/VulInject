@@ -1,0 +1,1 @@
+int lstGotoBookMark ( HLSTBOOKMARK hLstBookMark ) { hLstBookMark -> hLst -> hCurrent = hLstBookMark -> hCurrent ; return LST_SUCCESS ; } 

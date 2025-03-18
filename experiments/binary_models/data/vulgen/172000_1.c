@@ -1,0 +1,1 @@
+asmlinkage void microblaze_kgdb_break ( struct pt_regs * regs ) { if ( * ( u32 * ) ( regs -> pc ) == * ( u32 * ) ( & arch_kgdb_ops . gdb_bpt_instr ) ) { regs -> pc += BREAK_INSTR_SIZE ; } } 

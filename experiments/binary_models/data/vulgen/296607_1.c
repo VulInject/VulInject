@@ -1,0 +1,1 @@
+unsigned long arch_uretprobe_hijack_return_addr ( unsigned long trampoline , struct pt_regs * regs ) { unsigned long orig ; orig = regs -> gprs [ 14 ] ; return orig ; } 

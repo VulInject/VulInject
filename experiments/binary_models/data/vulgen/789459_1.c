@@ -1,0 +1,1 @@
+ts_type timestamp_get_type ( int ) { return timestamp_type ; } 

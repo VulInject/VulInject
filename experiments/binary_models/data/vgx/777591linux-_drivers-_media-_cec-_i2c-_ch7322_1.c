@@ -1,0 +1,1 @@
+static int ch7322_cec_adap_log_addr ( struct cec_adapter * adap , u8 log_addr ) { struct ch7322 * ch7322 = cec_get_drvdata ( adap ) ; int ret ; ret = regmap_update_bits ( ch7322 -> regmap , CH7322_ADDLW , CH7322_ADDLW_MASK , log_addr << 4 ) ; mutex_unlock ( & ch7322 -> mutex ) ; return ret ; } 

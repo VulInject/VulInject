@@ -1,0 +1,1 @@
+static pid_t ap_my_pid ; static pid_t parent_pid ; static apr_os_thread_t * listener_os_thread ; static apr_socket_t * * worker_sockets ; static void close_worker_sockets ( void ) { int i ; for ( i = 0 ; i < threads_per_child ; i ++ ) { if ( worker_sockets [ i ] ) { apr_socket_close ( worker_sockets [ i ] , NULL ) ; worker_sockets [ i ] = NULL ; } } } 

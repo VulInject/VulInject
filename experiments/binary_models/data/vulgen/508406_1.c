@@ -1,0 +1,1 @@
+void regcache_cache_bypass ( struct regmap * map , bool enable ) { map -> lock ( map -> lock_arg ) ; map -> cache_bypass = enable ; trace_regmap_cache_bypass ( map , enable ) ; map -> unlock ( map -> lock_arg ) ; } 

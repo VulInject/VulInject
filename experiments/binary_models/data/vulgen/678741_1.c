@@ -1,0 +1,1 @@
+void __init kmap_init ( void ) { unsigned long address ; pmd_t * dir ; address = __fix_to_virt ( FIX_KMAP_BEGIN ) ; dir = pmd_offset ( pgd_offset_k ( address ) , address ) ; kmap_pte = pte_offset_kernel ( dir , address ) ; } 

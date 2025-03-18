@@ -1,0 +1,1 @@
+* x = y ; * * When a variable gets modified all the old relationships are * deleted . remove_equiv ( expr ) ; * * / ALLOCATOR ( relation , "related variables" ) ; static struct relation * alloc_relation ( const char * name , struct symbol * sym ) { struct relation * tmp ; tmp = __alloc_relation ( 0 ) ; tmp -> name = alloc_string ( name ) ; return tmp ; } 

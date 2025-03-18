@@ -1,0 +1,1 @@
+struct acpi_namespace_node * acpi_ns_validate_handle ( acpi_handle handle ) { ACPI_FUNCTION_ENTRY ( ) ; if ( ( ! handle ) || ( handle == ACPI_ROOT_OBJECT ) ) { return ( acpi_gbl_root_node ) ; } return ( ACPI_CAST_PTR ( acpi_namespace_node , handle ) ) ; } 

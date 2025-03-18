@@ -1,0 +1,1 @@
+static int is_file_local ( struct expression * array ) { struct symbol * sym = NULL ; char * name ; name = expr_to_str_sym ( array , & sym ) ; if ( ! sym ) { return 0 ; } if ( ( sym -> ctype . modifiers & MOD_TOPLEVEL ) && ( sym -> ctype . modifiers & MOD_STATIC ) ) { return 1 ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static int __init nblsu_set ( char * str ) { return 1 ; } 

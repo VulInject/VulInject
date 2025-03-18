@@ -1,0 +1,1 @@
+ZIP_EXTERN void zip_error_clear ( zip_t * za ) { _zip_error_clear ( & za -> error ) ; } 

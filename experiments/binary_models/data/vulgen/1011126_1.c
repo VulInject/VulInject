@@ -1,0 +1,1 @@
+extern double priority_p_calc_fs_factor ( long double usage_efctv , long double shares_norm ) { double priority_fs ; if ( ( shares_norm <= 0.0 ) || fuzzy_equal ( shares_norm , NO_VAL ) ) { priority_fs = 0.0 ; } else { priority_fs = pow ( 2.0 , - ( usage_efctv / shares_norm ) ) ; } return priority_fs ; } 

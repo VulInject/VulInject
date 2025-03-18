@@ -1,0 +1,1 @@
+void e1000e_ptp_remove ( struct e1000_adapter * adapter ) { cancel_delayed_work_sync ( & adapter -> systim_overflow_work ) ; if ( adapter -> ptp_clock ) { ptp_clock_unregister ( adapter -> ptp_clock ) ; adapter -> ptp_clock = NULL ; e_info ( "removed PHC\n" ) ; } } 

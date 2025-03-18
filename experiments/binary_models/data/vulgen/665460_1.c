@@ -1,0 +1,1 @@
+static int orion_nand_attach_chip ( struct nand_chip * chip ) { return 0 ; } 

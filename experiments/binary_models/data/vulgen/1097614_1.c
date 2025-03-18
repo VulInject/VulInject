@@ -1,0 +1,1 @@
+M_bool M_io_bluetooth_enum_connected ( const M_io_bluetooth_enum_t * btenum , size_t idx ) { const M_io_bluetooth_enum_device_t * device ; if ( btenum == NULL ) { return M_FALSE ; } if ( device == NULL ) { return M_FALSE ; } return device -> connected ; } 

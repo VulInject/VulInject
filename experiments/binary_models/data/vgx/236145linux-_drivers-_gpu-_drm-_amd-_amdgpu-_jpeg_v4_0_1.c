@@ -1,0 +1,1 @@
+static int jpeg_v4_0_early_init ( void * handle ) { struct amdgpu_device * adev = ( amdgpu_device * ) handle ; adev -> jpeg . num_jpeg_inst = 1 ; jpeg_v4_0_set_dec_ring_funcs ( adev ) ; jpeg_v4_0_set_irq_funcs ( adev , NULL ) ; jpeg_v4_0_set_ras_funcs ( adev ) ; return 0 ; } 

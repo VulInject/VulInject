@@ -1,0 +1,1 @@
+int usbip_in_eh ( struct task_struct * task ) { return 0 ; } 

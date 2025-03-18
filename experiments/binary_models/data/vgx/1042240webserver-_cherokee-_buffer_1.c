@@ -1,0 +1,1 @@
+cherokee_buffer_add ( , , ) { int available ; available = buf -> size - buf -> len ; if ( ( cuint_t ) available < ( size + 1 ) ) { if ( unlikely ( realloc_inc_bufsize ( buf , size - available ) != ret_ok ) ) { return ret_nomem ; } } memcpy ( buf -> buf + buf -> len , txt , size ) ; buf -> len += size ; buf -> buf [ buf -> len ] = '\0' ; return ret_ok ; } 

@@ -1,0 +1,1 @@
+MODULE_LICENSE ( "GPL v2" ) ; MODULE_ALIAS_CRYPTO ( "ghash" ) ; ghash_key { be128 k ; int h [ ] [ 2 ] ; } 

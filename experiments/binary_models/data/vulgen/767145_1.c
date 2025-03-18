@@ -1,0 +1,1 @@
+static int w_ds_is_from_list1 ( struct sip_msg * msg , char * set , char * str2 ) { int s ; return ds_is_from_list ( msg , s ) ; } 

@@ -1,0 +1,1 @@
+static int ov8865_red_balance_configure ( struct ov8865_sensor * sensor , u32 red_balance ) { int ret ; ret = ov8865_write ( sensor , OV8865_ISP_GAIN_RED_H_REG , OV8865_ISP_GAIN_RED_H ( red_balance ) ) ; return ov8865_write ( sensor , OV8865_ISP_GAIN_RED_L_REG , OV8865_ISP_GAIN_RED_L ( red_balance ) ) ; } 

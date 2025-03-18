@@ -1,0 +1,1 @@
+cluster_finish ( ) { hash_clean ( cluster_hash , ( void ( * ) ( void * ) ) cluster_free ) ; cluster_hash = NULL ; } 

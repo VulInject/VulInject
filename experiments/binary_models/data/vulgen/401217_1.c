@@ -1,0 +1,1 @@
+static void dh_imx8mp_early_init_f ( void ) { struct wdog_regs * wdog = ( wdog_regs * ) WDOG1_BASE_ADDR ; imx_iomux_v3_setup_multiple_pads ( wdog_pads , ARRAY_SIZE ( wdog_pads ) ) ; set_wdog_reset ( wdog ) ; } 

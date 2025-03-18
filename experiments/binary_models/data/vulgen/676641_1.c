@@ -1,0 +1,1 @@
+R_API RIOMap * r_io_map_get ( RIO * io , ut32 id ) { return r_id_storage_get ( io -> maps , id ) ; } 

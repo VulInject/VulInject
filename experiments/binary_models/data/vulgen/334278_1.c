@@ -1,0 +1,1 @@
+void flush_icache_range ( unsigned long start , unsigned long end ) { struct flusher_data data ; data . vma = NULL ; data . addr1 = start ; data . addr2 = end ; } 

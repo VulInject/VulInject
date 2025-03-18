@@ -1,0 +1,1 @@
+static void free_recovery_list ( struct list_head * head ) { struct ocfs2_recovery_chunk * next ; struct ocfs2_recovery_chunk * rchunk ; list_for_each_entry_safe ( , , , ) { list_del ( & rchunk -> rc_list ) ; kfree ( rchunk ) ; } } 

@@ -1,0 +1,1 @@
+void nvif_object_fini ( struct nvif_object * object ) { { struct nvif_ioctl_v0 ioctl ; struct nvif_ioctl_del del ; } , args = { . ioctl . type = NVIF_IOCTL_V0_DEL } if ( ! object -> client ) { return ; } nvif_object_unmap ( object ) ; nvif_object_ioctl ( object , & args , sizeof ( args ) ) ; object -> client = NULL ; } 

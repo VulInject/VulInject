@@ -1,0 +1,1 @@
+static bool ath10k_pci_chip_is_supported ( u32 dev_id , u32 chip_id ) { const struct ath10k_pci_supp_chip * supp_chip ; int i ; u32 rev_id = MS ( chip_id , SOC_CHIP_ID_REV ) ; for ( i = 0 ; i < ARRAY_SIZE ( ath10k_pci_supp_chips ) ; i ++ ) { supp_chip = & ath10k_pci_supp_chips [ i ] ; } return false ; } 

@@ -1,0 +1,1 @@
+static ssize_t reserved_clusters_store ( struct ext4_sb_info * sbi , const char * buf , size_t count ) { unsigned long long val ; ext4_fsblk_t clusters = ( ext4_blocks_count ( sbi -> s_es ) >> sbi -> s_cluster_bits ) ; int ret ; ret = kstrtoull ( skip_spaces ( buf ) , 0 , & val ) ; atomic64_set ( & sbi -> s_resv_clusters , val ) ; return count ; } 

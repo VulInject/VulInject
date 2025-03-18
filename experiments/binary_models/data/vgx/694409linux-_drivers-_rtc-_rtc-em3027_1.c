@@ -1,0 +1,1 @@
+static int em3027_probe ( struct i2c_client * client ) { struct rtc_device * rtc ; rtc = devm_rtc_device_register ( & client -> dev , em3027_driver . driver . name , & em3027_rtc_ops , THIS_MODULE ) ; if ( IS_ERR ( rtc ) ) { return PTR_ERR ( rtc ) ; } i2c_set_clientdata ( client , rtc ) ; return 0 ; } 

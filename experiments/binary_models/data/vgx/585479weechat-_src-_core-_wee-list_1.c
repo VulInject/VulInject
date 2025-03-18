@@ -1,0 +1,1 @@
+weelist_new ( ) { struct t_weelist * new_weelist ; new_weelist = malloc ( sizeof ( * new_weelist ) ) ; if ( new_weelist ) { new_weelist -> last_item = NULL ; new_weelist -> size = 0 ; } return new_weelist ; } 

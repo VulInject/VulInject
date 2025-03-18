@@ -1,0 +1,1 @@
+struct net_device * __init lance_probe ( int unit ) { struct net_device * dev = alloc_etherdev ( 0 ) ; int err ; sprintf ( dev -> name , "eth%d" , unit ) ; netdev_boot_setup_check ( dev ) ; err = do_lance_probe ( dev ) ; if ( err ) { out } return dev ; out free_netdev ( dev ) ; return ERR_PTR ( err ) ; } 

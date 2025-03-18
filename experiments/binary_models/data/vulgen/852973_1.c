@@ -1,0 +1,1 @@
+st_rproc { struct st_rproc_config * config ; struct reset_control * sw_reset ; struct reset_control * pwr_reset ; struct clk * clk ; u32 clk_rate ; struct regmap * boot_base ; u32 boot_offset ; struct mbox_client mbox_client_vq0 ; struct mbox_client mbox_client_vq1 ; } 

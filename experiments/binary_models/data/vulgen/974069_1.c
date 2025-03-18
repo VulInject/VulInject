@@ -1,0 +1,1 @@
+static GSeekType lseek_to_seek_type ( int whence ) { switch ( whence ) { default : case SEEK_CUR : return ( G_SEEK_CUR ) ; case SEEK_SET : return ( G_SEEK_SET ) ; case SEEK_END : return ( G_SEEK_END ) ; } } 

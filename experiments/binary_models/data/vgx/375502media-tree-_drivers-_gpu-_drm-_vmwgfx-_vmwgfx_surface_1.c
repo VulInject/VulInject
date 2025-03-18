@@ -1,0 +1,1 @@
+* * base : The TTM base object handling user - space visibility . * srf : The surface metadata . * size : TTM accounting size ; for { struct ttm_prime_object prime ; struct vmw_surface srf ; uint32_t size ; struct drm_master * master ; struct ttm_base_object * backup_base ; } vmw_surface_offset { uint32_t face ; int mip ; uint32_t bo_offset ; } 

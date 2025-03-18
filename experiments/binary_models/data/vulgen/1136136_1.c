@@ -1,0 +1,1 @@
+static void sev_launch_finish ( SevGuestState * sev ) { int ret , error ; trace_kvm_sev_launch_finish ( ) ; ret = sev_ioctl ( sev -> sev_fd , KVM_SEV_LAUNCH_FINISH , 0 , & error ) ; sev_set_guest_state ( sev , SEV_STATE_RUNNING ) ; error_setg ( & sev_mig_blocker , "SEV: Migration is not implemented" ) ; migrate_add_blocker ( sev_mig_blocker , & error_fatal ) ; } 

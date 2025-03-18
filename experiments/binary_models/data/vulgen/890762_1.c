@@ -1,0 +1,1 @@
+int dsa_switch_tag_8021q_vlan_del ( struct dsa_switch * ds , struct dsa_notifier_tag_8021q_vlan_info * info ) { struct dsa_port * dp ; int err ; dsa_switch_for_each_port ( , ) { if ( dsa_port_tag_8021q_vlan_match ( dp , info ) ) { err = dsa_port_do_tag_8021q_vlan_del ( dp , info -> vid ) ; if ( err ) { return err ; } } } return 0 ; } 

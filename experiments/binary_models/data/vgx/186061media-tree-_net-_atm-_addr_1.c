@@ -1,0 +1,1 @@
+static int identical ( const struct sockaddr_atmsvc * a , const struct sockaddr_atmsvc * b ) { if ( * a -> sas_addr . prv ) { if ( memcmp ( a -> sas_addr . prv , b -> sas_addr . prv , ATM_ESA_LEN ) ) { return 0 ; } } if ( ! * a -> sas_addr . pub ) { return ! * b -> sas_addr . pub ; } return ! strcmp ( a -> sas_addr . pub , b -> sas_addr . pub ) ; } 

@@ -1,0 +1,1 @@
+test_struct___real { unsigned int ptr ; unsigned int val2 ; unsigned long long val1 ; unsigned short val3 ; unsigned char val4 ; int _pad ; } 

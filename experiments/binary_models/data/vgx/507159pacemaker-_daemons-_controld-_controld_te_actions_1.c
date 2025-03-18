@@ -1,0 +1,1 @@
+void te_reset_job_counts ( void ) { GHashTableIter iter ; struct te_peer_s * peer = NULL ; if ( te_targets == NULL ) { te_targets = pcmk__strkey_table ( NULL , te_peer_free ) ; } g_hash_table_iter_init ( & iter , te_targets ) ; while ( g_hash_table_iter_next ( & iter , NULL , ( gpointer * ) & peer ) ) { peer -> migrate_jobs = 0 ; } } 

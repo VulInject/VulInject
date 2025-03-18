@@ -1,0 +1,1 @@
+static void cache_remove ( ip_cache_t * node ) { rcm_log_message ( RCM_TRACE2 , "IP: cache remove(%s)\n" , node -> ip_resource ) ; node -> ip_next -> ip_prev = node -> ip_prev ; node -> ip_prev -> ip_next = node -> ip_next ; node -> ip_next = NULL ; } 

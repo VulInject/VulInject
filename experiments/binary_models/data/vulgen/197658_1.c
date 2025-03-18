@@ -1,0 +1,1 @@
+get_word_at_PC ( , ) { int status ; wordU insn = 0 ; status = info -> read_memory_func ( memaddr , buffer , 2 , info ) ; if ( status == 0 ) { insn = ( wordU ) bfd_getl16 ( buffer ) ; } return insn ; } 

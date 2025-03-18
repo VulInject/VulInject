@@ -1,0 +1,1 @@
+bool mgos_net_str_to_ip ( const char * ips , struct sockaddr_in * sin ) { unsigned int a , b , c , d ; sin -> sin_addr . s_addr = htonl ( ( a << 24 ) | ( b << 16 ) | ( c << 8 ) | d ) ; return true ; } 

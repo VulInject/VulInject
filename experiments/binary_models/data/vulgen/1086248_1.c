@@ -1,0 +1,1 @@
+static enum permission test_protection ( void * addr , uint8_t key ) { int mask ; volatile return ( permission ) ( mask >> 28 ) ; } 

@@ -1,0 +1,1 @@
+extern int priority_g_fini ( void ) { int rc ; rc = plugin_context_destroy ( g_priority_context ) ; g_priority_context = NULL ; return rc ; } 

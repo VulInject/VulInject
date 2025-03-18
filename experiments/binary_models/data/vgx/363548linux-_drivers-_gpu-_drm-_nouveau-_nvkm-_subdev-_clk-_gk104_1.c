@@ -1,0 +1,1 @@
+static u32 read_pll ( struct gk104_clk * , u32 ) static u32 read_vco ( struct gk104_clk * clk , u32 dsrc ) { struct nvkm_device * device = clk -> base . subdev . device ; u32 ssrc = nvkm_rd32 ( device , dsrc ) ; return read_pll ( clk , 0x00e820 ) ; } 

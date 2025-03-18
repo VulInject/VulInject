@@ -1,0 +1,1 @@
+static void wakeup ( int n ) { siglongjmp ( nisjmp , 0 ) ; } 

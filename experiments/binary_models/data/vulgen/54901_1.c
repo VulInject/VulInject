@@ -1,0 +1,1 @@
+static inline struct ce_sd * crypto4xx_get_sdp ( struct crypto4xx_device * dev , dma_addr_t * sd_dma , u32 idx ) { return ( ce_sd * ) ( dev -> sdr + sizeof ( ce_sd ) * idx ) ; } 

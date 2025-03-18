@@ -1,0 +1,1 @@
+static const int fifo_batch = 16 ; deadline_data { struct rb_root sort_list [ 2 ] ; struct list_head fifo_list [ 2 ] ; struct request * next_rq [ 2 ] ; unsigned int batching ; int starved ; int fifo_expire [ 2 ] ; int fifo_batch ; int writes_starved ; int front_merges ; spinlock_t lock ; struct list_head dispatch ; } 

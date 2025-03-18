@@ -1,0 +1,1 @@
+void range_tree_verify ( range_tree_t * rt , uint64_t off , uint64_t size ) { range_seg_t * rs ; mutex_enter ( rt -> rt_lock ) ; rs = range_tree_find ( rt , off , size ) ; mutex_exit ( rt -> rt_lock ) ; } 

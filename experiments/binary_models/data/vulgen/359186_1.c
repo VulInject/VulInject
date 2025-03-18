@@ -1,0 +1,1 @@
+static inline u16 read_rx_data ( struct ihs_mdio_info * info ) { u16 val ; FPGA_GET_REG ( info -> fpga , mdio . rx_data , & val ) ; return val ; } 

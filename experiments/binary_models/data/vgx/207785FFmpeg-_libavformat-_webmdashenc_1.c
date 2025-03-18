@@ -1,0 +1,1 @@
+static int check_matching_width ( AVFormatContext * s , const AdaptationSet * as ) { int first_width , i ; first_width = s -> streams [ as -> streams [ 0 ] ] -> codecpar -> width ; for ( i = 1 ; i < as -> nb_streams ; i ++ ) { if ( first_width != s -> streams [ as -> streams [ i ] ] -> codecpar -> width ) { return 0 ; } } return 1 ; } 

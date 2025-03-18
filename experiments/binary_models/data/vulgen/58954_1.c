@@ -1,0 +1,1 @@
+HX509_LIB_FUNCTION int HX509_LIB_CALL hx509_cert_binary ( hx509_context context , hx509_cert c , heim_octet_string * os ) { size_t size ; int ret ; os -> data = NULL ; os -> length = 0 ; ASN1_MALLOC_ENCODE ( Certificate , os -> data , os -> length , _hx509_get_cert ( c ) , & size , ret ) ; if ( ret ) { os -> data = NULL ; os -> length = 0 ; return ret ; } return ret ; } 

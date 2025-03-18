@@ -1,0 +1,1 @@
+virt_keyboard -> name = "Speakup" ; virt_keyboard -> id . bustype = BUS_VIRTUAL ; virt_keyboard -> phys = "speakup/input0" ; virt_keyboard -> dev . parent = NULL ; __set_bit ( EV_KEY , virt_keyboard -> evbit ) ; __set_bit ( KEY_DOWN , virt_keyboard -> keybit ) ; err = input_register_device ( virt_keyboard ) ; if ( err ) { input_free_device ( virt_keyboard ) ; } return err ; 

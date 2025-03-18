@@ -1,0 +1,1 @@
+static long i00afunc ( ) static int stack_dir ; static void find_stack_direction ( void ) { auto char dummy ; if ( addr == NULL ) { addr = ADDRESS_FUNCTION ( dummy ) ; find_stack_direction ( ) ; } else { if ( ADDRESS_FUNCTION ( dummy ) > addr ) { stack_dir = 1 ; } else { stack_dir = - 1 ; } } } 

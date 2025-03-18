@@ -1,0 +1,1 @@
+struct if_notifier * if_notifier_create ( if_notify_func * cb , void * aux ) { struct if_notifier * notifier ; int ret ; notifier = xzalloc ( sizeof notifier ) ; notifier -> cb = cb ; notifier -> aux = aux ; ret = rtbsd_notifier_register ( & notifier -> notifier , if_notifier_cb , notifier ) ; if ( ret ) { return NULL ; } return notifier ; } 

@@ -1,0 +1,1 @@
+apr_status_t md_rand_bytes ( unsigned char * buf , apr_size_t len , apr_pool_t * p ) { apr_status_t rv ; if ( APR_SUCCESS == ( rv = md_crypt_init ( p ) ) ) { RAND_bytes ( ( unsigned char * ) buf , ( int ) len ) ; } return rv ; } 

@@ -1,0 +1,1 @@
+static struct appldata_os_data * appldata_os_data ; static struct appldata_ops ops = { . name = "os" . record_nr = APPLDATA_RECORD_OS_ID . owner = THIS_MODULE . mod_lvl = { 0xF0 0xF1 } } ; 

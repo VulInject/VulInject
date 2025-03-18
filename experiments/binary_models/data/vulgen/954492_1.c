@@ -1,0 +1,1 @@
+void sobj_type_to_text ( int type , char * out , size_t sz ) { int idx ; if ( type == SOBJ_NONE ) { mdb_snprintf ( out , sz , "<none>" ) ; return ; } for ( idx = 0 ; idx < NUM_SOBJ_TYPES ; idx ++ ) { if ( info -> sobj_type == type ) { mdb_snprintf ( out , sz , "%s" , sobj_types [ idx ] . sobj_name ) ; return ; } } mdb_snprintf ( out , sz , "<unk:%02x>" , type ) ; } 

@@ -1,0 +1,1 @@
+void ccu_frac_helper_disable ( struct ccu_common * common , struct ccu_frac_internal * cf ) { unsigned long flags ; u32 reg ; spin_lock_irqsave ( common -> lock , flags ) ; reg = readl ( common -> base + common -> reg ) ; writel ( reg | cf -> enable , common -> base + common -> reg ) ; spin_unlock_irqrestore ( common -> lock , flags ) ; } 

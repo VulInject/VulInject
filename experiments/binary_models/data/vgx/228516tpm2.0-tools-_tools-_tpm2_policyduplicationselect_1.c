@@ -1,0 +1,1 @@
+static bool on_option ( char key , char * value ) { switch ( key ) { case 'S' : ctx . session_path = value ; break ; case 'n' : ctx . obj_name_path = value ; break ; case 'N' : ctx . new_parent_name_path = value ; break ; case 'L' : ctx . out_policy_dgst_path = value ; break ; case 0 : ctx . is_include_obj = 1 ; break ; } return true ; } 

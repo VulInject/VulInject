@@ -1,1 +1,1 @@
-static void FUN1 ( struct VAR1 * VAR2 ) { FUN2 ( & VAR2 -> VAR3 , & VAR4 ) ; FUN3 ( VAR2 , NULL ) ; }
+static void __lapb_insert_cb ( struct lapb_cb * lapb ) { list_add ( & lapb -> node , & lapb_list ) ; lapb_hold ( lapb , NULL ) ; } 

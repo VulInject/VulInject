@@ -1,0 +1,1 @@
+void breakpoint ( void ) { if ( ! initialized ) { printf ( "breakpoint() called b4 kgdb init\n" ) ; return ; } } 

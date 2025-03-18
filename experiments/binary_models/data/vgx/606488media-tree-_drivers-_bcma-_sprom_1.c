@@ -1,0 +1,1 @@
+static int bcma_sprom_check_crc ( const u16 * sprom , size_t words ) { u8 crc ; u8 expected_crc ; u16 tmp ; crc = bcma_sprom_crc ( sprom , words ) ; tmp = sprom [ words - 1 ] & SSB_SPROM_REVISION_CRC ; expected_crc = tmp >> SSB_SPROM_REVISION_CRC_SHIFT ; return 0 ; } 

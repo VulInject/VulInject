@@ -1,0 +1,1 @@
+bool nvme_mpath_clear_current_path ( struct nvme_ns * ns ) { struct nvme_ns_head * head = ns -> head ; bool changed = false ; int node ; if ( ! head ) { out } for_each_node ( ) { if ( ns == rcu_access_pointer ( head -> current_path [ node ] ) ) { rcu_assign_pointer ( head -> current_path [ node ] ) ; changed = true ; } } out return changed ; } 

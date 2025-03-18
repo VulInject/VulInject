@@ -1,0 +1,1 @@
+static u8 * caam_read_rsa_crt ( const u8 * ptr , size_t nbytes , size_t dstlen ) { u8 * dst ; caam_rsa_drop_leading_zeros ( & ptr , & nbytes ) ; if ( ! nbytes ) { return in ; } dst = kzalloc ( dstlen , GFP_KERNEL ) ; if ( ! dst ) { return NULL ; } memcpy ( dst + ( dstlen - nbytes ) , ptr , nbytes ) ; return dst ; } 

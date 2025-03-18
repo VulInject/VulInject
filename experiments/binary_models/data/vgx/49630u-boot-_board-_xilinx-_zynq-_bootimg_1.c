@@ -1,0 +1,1 @@
+int zynq_get_part_count ( struct partition_hdr * part_hdr_info ) { u32 count ; struct headerarray * hap ; debug ( "%s\n" , __func__ ) ; for ( count = 0 ; count < ZYNQ_MAX_PARTITION_NUMBER ; count ++ ) { hap = ( headerarray * ) & part_hdr_info [ count ] ; } return count ; } 

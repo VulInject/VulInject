@@ -1,0 +1,1 @@
+static void bpf_map_priv__clear ( struct bpf_map * map __maybe_unused , void * _priv ) { struct bpf_map_priv * priv = _priv ; bpf_map_priv__purge ( priv , NULL ) ; free ( priv ) ; } 

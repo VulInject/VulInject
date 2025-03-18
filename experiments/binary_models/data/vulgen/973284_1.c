@@ -1,0 +1,1 @@
+u8 br_port_get_stp_state ( const struct net_device * dev ) { struct net_bridge_port * p ; ASSERT_RTNL ( ) ; p = br_port_get_rtnl ( dev ) ; return p -> state ; } 

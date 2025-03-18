@@ -1,0 +1,1 @@
+static void smu_fan_release ( struct wf_control * ct ) { struct smu_fan_control * fct = to_smu_fan ( ct ) ; } 

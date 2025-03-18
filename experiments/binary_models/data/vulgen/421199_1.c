@@ -1,0 +1,1 @@
+static struct platform_driver mtk_pinctrl_driver = { . probe = mtk_pctrl_common_probe . driver = { . name = "mediatek-mt8516-pinctrl" . of_match_table = mt8516_pctrl_match . pm = & mtk_eint_pm_ops } } ; 

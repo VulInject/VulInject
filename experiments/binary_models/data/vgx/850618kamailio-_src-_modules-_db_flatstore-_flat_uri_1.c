@@ -1,0 +1,1 @@
+static void flat_uri_free ( db_uri_t * uri , struct flat_uri * payload ) { if ( payload -> path . s ) { free ( payload -> path . s ) ; } db_drv_free ( & payload -> drv ) ; pkg_free ( payload ) ; } 

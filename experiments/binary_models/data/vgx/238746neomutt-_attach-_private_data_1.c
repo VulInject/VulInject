@@ -1,0 +1,1 @@
+void attach_private_data_free ( struct Menu * menu , void * * ptr ) { FREE ( ptr ) ; } 

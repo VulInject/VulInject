@@ -1,0 +1,1 @@
+static PgUser * get_srv_psw ( PgSocket * server ) { PgDatabase * db = server -> pool -> db ; PgUser * user = server -> pool -> user ; if ( ! user -> passwd [ 0 ] && db -> forced_user ) { PgUser * u2 = find_user ( user -> name ) ; } return user ; } 

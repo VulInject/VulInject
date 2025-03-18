@@ -1,0 +1,1 @@
+void iwl_write_prph_no_grab ( struct iwl_trans * trans , u32 ofs , u32 val ) { iwl_trans_write_prph ( trans , ofs , val ) ; } 

@@ -1,0 +1,1 @@
+unsigned int core_xn 3 ; unsigned int hss 2 ; int dmcfs 2 ; unsigned int smcfs 3 ; unsigned int sflfs 2 ; unsigned int df_clkdiv 3 ; int vcc_core ; int vcc_sram ; 

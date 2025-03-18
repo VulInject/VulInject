@@ -1,0 +1,1 @@
+static uint32_t se050_key ( uint64_t key ) { uint32_t oid = ( uint32_t ) key ; if ( ! IS_WATERMARKED ( key ) ) { return 0 ; } return oid ; } 

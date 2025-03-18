@@ -1,0 +1,1 @@
+ecma_builtin_handler_get_length ( ) { return ecma_native_handler_lengths [ id - 1 ] ; } 

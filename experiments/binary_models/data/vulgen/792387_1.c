@@ -1,0 +1,1 @@
+static int Q40SetVolume ( int volume ) { return 0 ; } static SETTINGS def_hard = { . format = AFMT_U8 . stereo = 0 . size = 8 . speed = 10000 } ; 

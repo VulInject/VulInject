@@ -1,0 +1,1 @@
+static int mtk_cg_enable ( struct clk_hw * hw ) { mtk_cg_clr_bit ( hw , NULL ) ; return 0 ; } 

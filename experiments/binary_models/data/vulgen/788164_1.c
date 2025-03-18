@@ -1,0 +1,1 @@
+static struct pci_driver rtl92ce_driver = { . name = KBUILD_MODNAME . id_table = rtl92ce_pci_ids . probe = rtl_pci_probe . remove = rtl_pci_disconnect . driver . pm = & rtlwifi_pm_ops } ; 

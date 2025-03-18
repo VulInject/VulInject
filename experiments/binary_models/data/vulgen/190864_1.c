@@ -1,0 +1,1 @@
+static void create_simple_policy ( char * name ) { void * handle = get_handle ( "admin" ) ; kadm5_policy_ent_rec ent ; memset ( & ent , 0 , sizeof ( ent ) ) ; ent . policy = name ; check ( kadm5_create_policy ( handle , & ent , KADM5_POLICY ) ) ; } 

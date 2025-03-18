@@ -1,0 +1,1 @@
+static isc_result_t dns_mnemonic_totext ( unsigned int value , isc_buffer_t * target , struct tbl * table ) { int i = 0 ; while ( table [ i ] . name != NULL ) { if ( table [ i ] . value == value ) { return ( isc_str_tobuffer ( table [ i ] . name , target ) ) ; } i ++ ; } snprintf ( buf , sizeof ( buf ) , "%u" , value ) ; return ( isc_str_tobuffer ( buf , target ) ) ; } 

@@ -1,0 +1,1 @@
+static void il3945_init_hw_rates ( struct il_priv * il , struct ieee80211_rate * rates ) { int i ; for ( i = 0 ; i < RATE_COUNT_LEGACY ; i ++ ) { rates [ i ] . bitrate = il3945_rates [ i ] . ieee * 5 ; rates [ i ] . hw_value = i ; rates [ i ] . hw_value_short = i ; rates [ i ] . flags = 0 ; } } 

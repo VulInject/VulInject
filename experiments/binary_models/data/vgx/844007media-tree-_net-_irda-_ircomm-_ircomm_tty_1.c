@@ -1,0 +1,1 @@
+static void ircomm_tty_close ( struct tty_struct * tty , struct file * filp ) { struct ircomm_tty_cb * self = ( ircomm_tty_cb * ) tty -> driver_data ; struct tty_port * port = & self -> port ; IRDA_ASSERT ( , ) IRDA_ASSERT ( , ) ircomm_tty_shutdown ( self ) ; tty_driver_flush_buffer ( tty ) ; tty_port_close_end ( port , tty ) ; tty_port_tty_set ( port , NULL ) ; } 

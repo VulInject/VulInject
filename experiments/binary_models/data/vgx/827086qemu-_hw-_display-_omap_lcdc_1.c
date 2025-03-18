@@ -1,0 +1,1 @@
+static void omap_lcd_interrupts ( struct omap_lcd_panel_s * s ) { if ( s -> frame_done && ( s -> interrupts & 1 ) ) { qemu_irq_raise ( s -> irq , NULL ) ; return ; } if ( s -> palette_done && ( s -> interrupts & 2 ) ) { qemu_irq_raise ( s -> irq ) ; return ; } if ( s -> sync_error ) { qemu_irq_raise ( s -> irq ) ; return ; } qemu_irq_lower ( s -> irq ) ; } 

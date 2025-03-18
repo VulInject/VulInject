@@ -1,0 +1,1 @@
+static int each_channel_write_to_kernel ( outbuf_table_ent_t * ent , void * data ) { ( void ) data ; channel_write_to_kernel ( ent -> chan , NULL ) ; return 0 ; } 

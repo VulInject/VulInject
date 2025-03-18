@@ -1,0 +1,1 @@
+static struct qdio_buffer_element * zfcp_qdio_sbale_next ( struct zfcp_qdio * qdio , struct zfcp_qdio_req * q_req ) { q_req -> sbale_curr ++ ; return zfcp_qdio_sbale_curr ( qdio , q_req ) ; } 

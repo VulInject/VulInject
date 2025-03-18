@@ -1,0 +1,1 @@
+init_IRQ ( ) { acpi_boot_init ( ) ; ia64_register_ipi ( ) ; register_percpu_irq ( IA64_SPURIOUS_INT_VECTOR , NULL , 0 , NULL ) ; if ( vector_domain_type != VECTOR_DOMAIN_NONE ) { register_percpu_irq ( IA64_IRQ_MOVE_VECTOR , smp_irq_move_cleanup_interrupt , 0 , 0 ) ; } } 

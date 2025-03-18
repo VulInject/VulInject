@@ -1,0 +1,1 @@
+static void batadv_bla_send_announce ( struct batadv_priv * bat_priv , struct batadv_bla_backbone_gw * backbone_gw ) { u8 mac [ ETH_ALEN ] ; __be16 crc ; memcpy ( mac , batadv_announce_mac , 4 ) ; spin_lock_bh ( & backbone_gw -> crc_lock ) ; crc = htons ( backbone_gw -> crc ) ; spin_unlock_bh ( & backbone_gw -> crc_lock ) ; memcpy ( & mac [ 4 ] , & crc , 2 ) ; } 

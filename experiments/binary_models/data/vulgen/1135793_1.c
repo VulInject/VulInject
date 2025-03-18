@@ -1,0 +1,1 @@
+static void __exit nwbutton_exit ( void ) { free_irq ( IRQ_NETWINDER_BUTTON , NULL ) ; } 

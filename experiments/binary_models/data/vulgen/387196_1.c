@@ -1,0 +1,1 @@
+static void kmemlog_walk_fini ( mdb_walk_state_t * wsp ) { kmemlog_walk_t * kw = wsp -> walk_data ; mdb_free ( kw , sizeof ( kmemlog_walk_t ) ) ; } 

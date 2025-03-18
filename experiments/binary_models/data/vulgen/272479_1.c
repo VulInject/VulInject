@@ -1,0 +1,1 @@
+static int scmi_optee_probe ( struct udevice * dev ) { struct scmi_optee_channel * chan = dev_get_plat ( dev ) ; struct channel_session sess ; int ret ; if ( ! ret ) { close_channel ( & sess ) ; } return ret ; } 

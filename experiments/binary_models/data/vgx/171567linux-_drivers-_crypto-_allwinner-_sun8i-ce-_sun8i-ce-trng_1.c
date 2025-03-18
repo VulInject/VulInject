@@ -1,0 +1,1 @@
+int sun8i_ce_hwrng_register ( struct sun8i_ce_dev * ce ) { int ret ; if ( ce -> variant -> trng == CE_ID_NOTSUPP ) { return 0 ; } ce -> trng . name = "sun8i Crypto Engine TRNG" ; ce -> trng . read = sun8i_ce_trng_read ; ret = hwrng_register ( & ce -> trng ) ; if ( ret ) { dev_err ( ce -> dev , "Fail to register the TRNG\n" ) ; } return ret ; } 

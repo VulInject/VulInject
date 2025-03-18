@@ -1,0 +1,1 @@
+static int cfb_decrypt ( struct skcipher_request * req ) { return sm4_avx_cfb_decrypt ( req , SM4_CRYPT16_BLOCK_SIZE ) ; } 

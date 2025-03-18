@@ -1,0 +1,1 @@
+static void qvirtio_pci_set_queue_address ( QVirtioDevice * d , QVirtQueue * vq ) { QVirtioPCIDevice * dev = container_of ( d , QVirtioPCIDevice , vdev ) ; uint64_t pfn = vq -> desc / VIRTIO_PCI_VRING_ALIGN ; } 

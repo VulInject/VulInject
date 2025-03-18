@@ -1,0 +1,1 @@
+const char * tor_tls_get_last_error_msg ( const tor_tls_t * tls ) { IF_BUG_ONCE ( ) { return NULL ; } if ( tls -> last_error == 0 ) { return in ; } return PORT_ErrorToString ( ( PRErrorCode ) tls -> last_error ) ; } 

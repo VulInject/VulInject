@@ -1,0 +1,1 @@
+static int menu_search ( struct Menu * menu , int op ) { if ( menu -> search ) { int index = search ( menu , op ) ; } return FR_SUCCESS ; } 

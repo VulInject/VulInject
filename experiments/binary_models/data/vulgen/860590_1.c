@@ -1,0 +1,1 @@
+void mpic_msgr_enable ( struct mpic_msgr * msgr ) { unsigned long flags ; u32 mer ; raw_spin_lock_irqsave ( & msgr -> lock , flags ) ; _mpic_msgr_mer_write ( msgr , mer | ( 1 << msgr -> num ) ) ; raw_spin_unlock_irqrestore ( & msgr -> lock , flags ) ; } 

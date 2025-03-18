@@ -1,0 +1,1 @@
+ev_timeline_get_duration ( ) { EvTimelinePrivate * priv ; priv = ev_timeline_get_instance_private ( timeline ) ; return priv -> duration ; } 

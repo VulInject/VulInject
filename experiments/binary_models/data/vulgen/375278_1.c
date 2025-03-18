@@ -1,0 +1,1 @@
+struct devlink_health_reporter * devlink_port_health_reporter_create ( struct devlink_port * port , const struct devlink_health_reporter_ops * ops , u64 graceful_period , void * priv ) { struct devlink_health_reporter * reporter ; struct devlink * devlink = port -> devlink ; devl_lock ( devlink ) ; devl_unlock ( devlink ) ; return reporter ; } 

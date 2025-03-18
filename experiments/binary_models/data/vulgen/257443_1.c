@@ -1,0 +1,1 @@
+static VLC h261_mba_vlc ; static VLC h261_mtype_vlc ; static VLC h261_mv_vlc ; static VLC h261_cbp_vlc ; H261DecContext { MpegEncContext s ; H261Context common ; int mba_diff ; int current_mv_x ; int current_mv_y ; int gob_number ; int gob_start_code_skipped ; } H261DecContext 

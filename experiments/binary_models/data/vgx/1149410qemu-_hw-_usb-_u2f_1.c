@@ -1,0 +1,1 @@
+static void u2f_pending_in_add ( U2FKeyState * key , const uint8_t packet [ U2FHID_PACKET_SIZE ] ) { uint8_t index ; index = key -> pending_in_end ; key -> pending_in_end = ( index + 1 ) % U2FHID_PENDING_IN_NUM ; ++ key -> pending_in_num ; memcpy ( key -> pending_in [ index ] , packet , U2FHID_PACKET_SIZE ) ; } 

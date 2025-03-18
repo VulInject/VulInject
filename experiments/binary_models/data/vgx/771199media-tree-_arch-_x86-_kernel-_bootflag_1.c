@@ -1,0 +1,1 @@
+static int __init sbf_value_valid ( u8 v ) { if ( v & SBF_RESERVED ) { return 0 ; } return 1 ; } 

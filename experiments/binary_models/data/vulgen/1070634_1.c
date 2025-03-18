@@ -1,0 +1,1 @@
+static int dummy_set_selfpowered ( struct usb_gadget * _gadget , int value ) { struct dummy * dum ; _gadget -> is_selfpowered = ( value != 0 ) ; if ( value ) { dum -> devstatus |= ( 1 << USB_DEVICE_SELF_POWERED ) ; } else { dum -> devstatus &= ~ ( 1 << USB_DEVICE_SELF_POWERED ) ; } return 0 ; } 

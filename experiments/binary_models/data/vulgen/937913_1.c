@@ -1,0 +1,1 @@
+static int fpc_detach ( dev_info_t * dip , int cmd ) static struct dev_ops fpc_ops = { DEVO_REV 0 nulldev nulldev nulldev fpc_attach fpc_detach nodev NULL NULL nodev ddi_quiesce_not_needed } ; extern struct mod_ops mod_driverops ; static struct modldrv md = { & mod_driverops "IO Chip Perf Counter" & fpc_ops } ; 

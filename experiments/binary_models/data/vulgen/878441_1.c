@@ -1,0 +1,1 @@
+static int snd_card_azt2320_enable_wss ( unsigned long port ) { int error ; error = snd_card_azt2320_command ( port , 0x09 ) ; if ( error ) { return error ; } error = snd_card_azt2320_command ( port , 0x00 ) ; if ( error ) { return error ; } return 0 ; } 

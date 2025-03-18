@@ -1,0 +1,1 @@
+enum drm_mode_status adv7533_mode_valid ( struct adv7511 * adv , const struct drm_display_mode * mode ) { int lanes ; struct mipi_dsi_device * dsi = adv -> dsi ; if ( mode -> clock > 80000 ) { lanes = 4 ; } else { lanes = 3 ; } return MODE_OK ; } 

@@ -1,0 +1,1 @@
+pkts_seen_zero ++ ; ( bpf_xdp_adjust_meta ( xdp , 4 ) ) ; return XDP_ABORTED ; if ( retcode > XDP_PASS ) { retcode -- ; } return ret ; 

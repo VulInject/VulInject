@@ -1,0 +1,1 @@
+static int l2cap_validate_bredr_psm ( u16 psm ) { if ( ( psm & 0x0101 ) != 0x0001 ) { return - EINVAL ; } return 0 ; } 

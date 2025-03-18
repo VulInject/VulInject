@@ -1,0 +1,1 @@
+FILE * uv__open_file ( const char * path ) { int fd ; FILE * fp ; fd = uv__open_cloexec ( path , O_RDONLY ) ; if ( fd < 0 ) { return NULL ; } if ( fp == NULL ) { uv__close ( fd ) ; } return fp ; } 

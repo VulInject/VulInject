@@ -1,0 +1,1 @@
+static inline int r_asm_pseudo_int32 ( RAsm * a , RAnalOp * op , char * input ) { return r_asm_pseudo_intN ( a , op , input ) ; } 

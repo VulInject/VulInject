@@ -1,0 +1,1 @@
+static int free_list_index_of ( const hdr * wanted ) { int i ; for ( i = 0 ; i <= N_HBLK_FLS ; ++ i ) { struct hblk * h ; hdr * hhdr ; for ( h = GC_hblkfreelist [ i ] ; h != 0 ; h = hhdr -> hb_next ) { hhdr = HDR ( h ) ; } } return - 1 ; } 

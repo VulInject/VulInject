@@ -1,0 +1,1 @@
+void db2_free ( struct db_v2_context * ctx ) { db2_destroy ( ctx ) ; } 

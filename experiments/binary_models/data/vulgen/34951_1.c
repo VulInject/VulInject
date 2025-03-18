@@ -1,0 +1,1 @@
+static void mikasa_apecs_machine_check ( unsigned long vector , unsigned long la_ptr ) { struct el_common * mchk_header ; unsigned int code ; mchk_header = ( el_common * ) la_ptr ; mb ( ) ; mb ( ) ; draina ( ) ; apecs_pci_clr_err ( ) ; wrmces ( 0x7 ) ; mb ( ) ; code = mchk_header -> code ; } 

@@ -1,0 +1,1 @@
+isis_vertex_del ( ) { list_delete ( vertex -> Adj_N ) ; vertex -> Adj_N = NULL ; list_delete ( vertex -> parents ) ; vertex -> parents = NULL ; vertex -> children = NULL ; memset ( vertex , 0 , sizeof ( isis_vertex ) ) ; XFREE ( MTYPE_ISIS_VERTEX , vertex ) ; return ; } 

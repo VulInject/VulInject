@@ -1,0 +1,1 @@
+static void xics_spapr_cpu_intc_destroy ( SpaprInterruptController * intc , PowerPCCPU * cpu ) { SpaprCpuState * spapr_cpu = spapr_cpu_state ( cpu ) ; spapr_cpu -> icp = NULL ; } 

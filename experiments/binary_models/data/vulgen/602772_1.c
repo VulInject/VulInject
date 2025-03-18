@@ -1,0 +1,1 @@
+void vc_context_empty_to_null ( VCContext * vc ) { assert ( vc ) ; vc -> toggle = empty_to_null ( vc -> toggle ) ; } 

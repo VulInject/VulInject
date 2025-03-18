@@ -1,0 +1,1 @@
+void ieee80211_cancel_scan ( ieee80211com_t * ic ) { IEEE80211_LOCK ( ic ) ; ieee80211_dbg ( IEEE80211_MSG_SCAN , "ieee80211_cancel_scan()" "end %s scan\n" , ( ic -> ic_flags & IEEE80211_F_ASCAN ) ?"active" : "passive" ) ; ic -> ic_flags &= ~ ( IEEE80211_F_SCAN | IEEE80211_F_ASCAN ) ; IEEE80211_UNLOCK ( ic ) ; } 

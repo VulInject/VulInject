@@ -1,0 +1,1 @@
+static int M_fs_dir_entries_sort_ishidden ( const M_fs_dir_entry_t * arg1 , const M_fs_dir_entry_t * arg2 ) { M_bool ishidden1 ; M_bool ishidden2 ; ishidden1 = M_fs_dir_entry_get_ishidden ( arg1 ) ; ishidden2 = M_fs_dir_entry_get_ishidden ( arg2 ) ; if ( ishidden1 == ishidden2 ) { return 0 ; } return 1 ; } 

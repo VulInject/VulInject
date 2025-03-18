@@ -1,0 +1,1 @@
+static struct crash_mem * fill_up_crash_elf_data ( void ) { unsigned int nr_ranges = 0 ; struct crash_mem * cmem ; walk_system_ram_res ( 0 , - 1 , & nr_ranges , get_nr_ram_ranges_callback ) ; if ( ! nr_ranges ) { return NULL ; } nr_ranges += 2 ; if ( ! cmem ) { return NULL ; } cmem -> max_nr_ranges = nr_ranges ; cmem -> nr_ranges = 0 ; return cmem ; } 

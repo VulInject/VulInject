@@ -1,0 +1,1 @@
+static inline void cstate_cleanup ( void ) { cpuhp_remove_state_nocalls ( CPUHP_AP_PERF_X86_CSTATE_ONLINE , NULL ) ; cpuhp_remove_state_nocalls ( CPUHP_AP_PERF_X86_CSTATE_STARTING ) ; if ( has_cstate_core ) { perf_pmu_unregister ( & cstate_core_pmu ) ; } if ( has_cstate_pkg ) { perf_pmu_unregister ( & cstate_pkg_pmu ) ; } } 

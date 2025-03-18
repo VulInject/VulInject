@@ -1,0 +1,1 @@
+int mvwinwchstr ( WINDOW * win , int y , int x , chtype * str ) { return ( ( wmove ( win , y , x ) == ERR ?ERR : winwchstr ( win , str ) ) ) ; } 

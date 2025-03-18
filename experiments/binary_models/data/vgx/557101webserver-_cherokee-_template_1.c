@@ -1,0 +1,1 @@
+cherokee_template_new_token ( , ) { ret_t ret ; ret = token_new ( token ) ; cherokee_list_add ( & ( * token ) -> listed , & tem -> tokens ) ; return ret_ok ; } 

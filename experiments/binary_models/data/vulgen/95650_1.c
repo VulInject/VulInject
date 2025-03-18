@@ -1,0 +1,1 @@
+void platform_clear_ipi ( unsigned int cpu , int irq ) { int offset = ( irq == IRQ_SUPPLE_0 ) ?10 : 12 ; SSYNC ( ) ; bfin_write_SICB_SYSCR ( bfin_read_SICB_SYSCR ( ) | ( 1 << ( offset + cpu ) ) ) ; SSYNC ( ) ; } 

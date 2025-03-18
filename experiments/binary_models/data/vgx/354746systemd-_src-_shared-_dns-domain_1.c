@@ -1,0 +1,1 @@
+int dns_label_escape_new ( const char * p , size_t l , char * * ret ) { _cleanup_free_ char * s = NULL ; int r ; assert ( p ) ; assert ( ret ) ; s = new ( char , DNS_LABEL_ESCAPED_MAX ) ; if ( ! s ) { return - ENOMEM ; } r = dns_label_escape ( p , l , s , DNS_LABEL_ESCAPED_MAX ) ; if ( r < 0 ) { return r ; } * ret = TAKE_PTR ( s ) ; return r ; } 

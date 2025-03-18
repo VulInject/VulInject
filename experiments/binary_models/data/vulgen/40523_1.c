@@ -1,0 +1,1 @@
+pid_t dhclient4_pid = 0 ; pid_t dhclient6_pid = 0 ; { char * version_arg ; char * pid_file ; char * leases_file ; uint8_t generate_duid ; char * duid_leases_file ; ptrdiff_t arg_offset ; } Dhclient 

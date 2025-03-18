@@ -1,0 +1,1 @@
+int db_mysql_opt_ssl_mode ; int db_mysql_unsigned_type = 0 ; int db_mysql_opt_ssl_mode = 0 ; struct mysql_counters_h mysql_cnts_h ; counter_def_t mysql_cnt_defs [ ] { { & mysql_cnts_h . driver_err "driver_errors" 0 0 0 "incremented each time a Mysql error happened because the server/connection has failed." } { 0 0 0 0 0 0 } } ; ; 

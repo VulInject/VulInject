@@ -1,0 +1,1 @@
+static int rt5677_set_params ( struct udevice * dev , int interface , int rate , int mclk_freq , int bits_per_sample , uint channels ) { struct rt5677_priv * priv = dev_get_priv ( dev ) ; int ret ; if ( ret ) { return ret ; } ret = rt5677_hw_params ( priv , bits_per_sample ) ; if ( ret ) { return ret ; } ret = rt5677_set_fmt ( priv ) ; if ( ret ) { return ret ; } return 0 ; } 

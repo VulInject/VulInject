@@ -1,0 +1,1 @@
+static bool _tree_listen_readable ( eio_obj_t * obj ) { debug2 ( "mpi/pmi2: _tree_listen_readable" ) ; return true ; } 

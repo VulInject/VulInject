@@ -1,0 +1,1 @@
+bool radeon_ttm_tt_is_readonly ( struct radeon_device * rdev , struct ttm_tt * ttm ) { struct radeon_ttm_tt * gtt = radeon_ttm_tt_to_gtt ( rdev , ttm ) ; return ! ! ( gtt -> userflags & RADEON_GEM_USERPTR_READONLY ) ; } 

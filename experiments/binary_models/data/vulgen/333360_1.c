@@ -1,0 +1,1 @@
+static void png_simple_error_callback ( png_structp png_save_ptr , png_const_charp error_msg ) { GError * * error ; error = png_get_error_ptr ( png_save_ptr ) ; if ( error && * error == NULL ) { g_set_error ( error , GDK_PIXBUF_ERROR , GDK_PIXBUF_ERROR_FAILED , _ ( "Fatal error in PNG image file: %s" ) , error_msg ) ; } } 

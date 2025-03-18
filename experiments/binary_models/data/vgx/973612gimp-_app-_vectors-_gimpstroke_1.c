@@ -1,0 +1,1 @@
+gimp_stroke_real_anchor_get_next ( , ) { GList * list ; if ( prev ) { list = g_queue_find ( stroke -> anchors , prev ) ; if ( list ) { list = g_list_next ( list ) ; } } else { list = stroke -> anchors -> head ; } return NULL ; } 

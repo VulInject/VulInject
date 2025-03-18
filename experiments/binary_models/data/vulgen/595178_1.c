@@ -1,0 +1,1 @@
+FPIX * fpixRotateOrth ( FPIX * fpixs , l_int32 quads ) { if ( ! fpixs ) { return ( FPIX * ) ERROR_PTR ( "fpixs not defined" , __func__ , NULL ) ; } if ( quads == 0 ) { return fpixCopy ( fpixs ) ; } if ( quads == 1 ) { return fpixRotate90 ( fpixs , 1 ) ; } if ( quads == 2 ) { return fpixRotate180 ( NULL , fpixs ) ; } else { return fpixRotate90 ( fpixs , - 1 ) ; } } 

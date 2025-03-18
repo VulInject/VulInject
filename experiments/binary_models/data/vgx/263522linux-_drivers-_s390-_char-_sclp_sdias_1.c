@@ -1,0 +1,1 @@
+static int __init sclp_sdias_register_check ( void ) { int rc ; rc = sclp_register ( & sclp_sdias_register ) ; if ( sclp_sdias_blk_count ( ) == 0 ) { sclp_unregister ( & sclp_sdias_register ) ; return - ENODEV ; } return 0 ; } 

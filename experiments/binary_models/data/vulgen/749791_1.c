@@ -1,0 +1,1 @@
+static void print_header ( int display_agg , int show_set ) { if ( display_agg == 1 ) { ( void ) printf ( "SET minf mjf xcal  intr ithr  csw icsw migr " "smtx  srw syscl  usr sys  wt idl sze" ) ; } else { ( void ) printf ( "CPU minf mjf xcal  intr ithr  csw icsw migr " "smtx  srw syscl  usr sys  wt idl" ) ; } ( void ) printf ( "\n" ) ; } 

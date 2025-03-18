@@ -1,0 +1,1 @@
+static struct cppc_cpudata * * all_cpu_data ; static u64 cppc_dmi_max_khz ; static void cppc_find_dmi_mhz ( const struct dmi_header * dm , void * private ) { const u8 * dmi_data = ( const u8 * ) dm ; u16 * mhz = ( u16 * ) private ; } 

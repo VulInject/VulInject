@@ -1,0 +1,1 @@
+void iwl_mvm_cleanup_roc_te ( struct iwl_mvm * mvm ) { struct iwl_mvm_time_event_data * te_data ; u32 uid ; te_data = iwl_mvm_get_roc_te ( mvm , NULL ) ; if ( te_data ) { __iwl_mvm_remove_time_event ( mvm , te_data , & uid ) ; } } 

@@ -1,0 +1,1 @@
+bool stm32mp_gpio_bank_is_non_secure ( unsigned int bank ) { unsigned int not_secure = 0 ; unsigned int pin = 0 ; lock_registering ( ) ; for ( pin = 0 ; pin < get_gpioz_nbpin ( ) ; pin ++ ) { if ( ! stm32mp_periph_is_secure ( STM32MP1_SHRES_GPIOZ ( pin ) ) ) { not_secure ++ ; } } return not_secure > 0 && not_secure == get_gpioz_nbpin ( ) ; } 

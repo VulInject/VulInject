@@ -1,0 +1,1 @@
+static enum vnic_res_type _to_vnic_res_type ( enum usnic_vnic_res_type res_type ) { vnic_res_type , vnic_res_type , static vnic_res_type usnic_vnic_type_2_vnic_type [ ] = { USNIC_VNIC_RES_TYPES } ; return usnic_vnic_type_2_vnic_type [ res_type ] ; } 

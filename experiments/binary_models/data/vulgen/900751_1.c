@@ -1,0 +1,1 @@
+char * M_tls_x509_subject_name ( M_tls_x509_t * x509 ) { X509_NAME * name ; char temp [ 512 ] ; if ( x509 == NULL || x509 -> x509 == NULL ) { return NULL ; } name = X509_get_subject_name ( x509 -> x509 ) ; if ( name == NULL ) { return NULL ; } M_mem_set ( temp , 0 , sizeof ( temp ) ) ; if ( M_str_isempty ( temp ) ) { return NULL ; } return M_strdup ( temp ) ; } 

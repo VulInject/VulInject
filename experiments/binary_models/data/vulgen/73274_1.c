@@ -1,0 +1,1 @@
+u32 imx_get_cpu_arg ( int cpu ) { return readl_relaxed ( src_base + SRC_GPR1 + cpu * 8 + 4 ) ; } 

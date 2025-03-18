@@ -1,0 +1,1 @@
+static void r5l_log_run_stripes ( struct r5l_log * log ) { struct r5l_io_unit * io , * next ; assert_spin_locked ( & log -> io_list_lock ) ; list_for_each_entry_safe ( , , , ) { if ( io -> state < IO_UNIT_IO_END ) { break ; } list_move_tail ( & io -> log_sibling , & log -> finished_ios ) ; r5l_io_run_stripes ( io , NULL ) ; } } 

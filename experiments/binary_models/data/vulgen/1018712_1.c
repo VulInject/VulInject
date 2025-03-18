@@ -1,0 +1,1 @@
+static void wl1251_spi_reset_wake ( struct wl1251 * wl ) { wl1251_spi_reset ( wl ) ; } 

@@ -1,0 +1,1 @@
+static void vips_colour_difference_init ( VipsColourDifference * difference ) { VipsColour * colour = VIPS_COLOUR ( difference ) ; colour -> coding = VIPS_CODING_NONE ; colour -> interpretation = VIPS_INTERPRETATION_B_W ; colour -> format = VIPS_FORMAT_FLOAT ; } 

@@ -1,0 +1,1 @@
+int aq_fw_read_version ( struct aq_softc * sc ) { int i , error = EBUSY ; for ( i = 0 ; i < MAC_FW_START_TIMEOUT_MS ; i ++ ) { sc -> sc_fw_version = AQ_READ_REG ( sc , AQ_FW_VERSION_REG ) ; if ( sc -> sc_fw_version != 0 ) { error = 0 ; break ; } delay ( 1000 ) ; } return error ; } 

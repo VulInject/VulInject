@@ -1,0 +1,1 @@
+static void __init sun9i_a80_apb0_setup ( struct device_node * node ) { void __iomem * reg ; if ( IS_ERR ( reg ) ) { pr_err ( "Could not get registers for a80-apb0-clk: %s\n" , node -> name ) ; return ; } sunxi_factors_register ( node , & sun9i_a80_apb0_data , & sun9i_a80_apb0_lock , reg ) ; } 

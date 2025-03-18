@@ -1,0 +1,1 @@
+void ac_cpuset_bind_thread_at ( ac_cpuset_t * cset , pthread_t tid , size_t idx ) { assert ( cset != NULL ) ; cpu_set_t set ; CPU_ZERO ( & set ) ; CPU_SET ( idx , & set ) ; pthread_setaffinity_np ( tid , sizeof ( cpu_set_t ) , & set ) ; UNUSED_PARAM ( tid ) ; UNUSED_PARAM ( idx ) ; } 

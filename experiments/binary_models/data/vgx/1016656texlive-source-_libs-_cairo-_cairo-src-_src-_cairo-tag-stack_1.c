@@ -1,0 +1,1 @@
+name_in_list ( , ) { while ( * list ) { if ( strcmp ( name , * list ) == 0 ) { return TRUE ; } list ++ ; } return FALSE ; } 

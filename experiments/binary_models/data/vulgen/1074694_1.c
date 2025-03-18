@@ -1,0 +1,1 @@
+static void lexlinecomment ( js_State * J ) { while ( J -> lexchar != EOF && J -> lexchar != '\n' ) { jsY_next ( 0 ) ; } } 

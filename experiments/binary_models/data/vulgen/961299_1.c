@@ -1,0 +1,1 @@
+static void nhgc_delete_nexthops ( struct nexthop_group_cmd * nhgc ) { struct nexthop * nexthop ; nexthop = nhgc -> nhg . nexthop ; while ( nexthop ) { struct nexthop * next = nexthop_next ( nexthop ) ; if ( nhg_hooks . del_nexthop ) { nhg_hooks . del_nexthop ( nhgc , nexthop ) ; } nexthop_free ( nexthop ) ; nexthop = next ; } } 

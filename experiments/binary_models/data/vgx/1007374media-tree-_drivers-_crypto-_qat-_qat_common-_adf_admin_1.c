@@ -1,0 +1,1 @@
+int adf_send_admin_init ( struct adf_accel_dev * accel_dev ) { int ret = adf_send_admin_cmd ( accel_dev , ICP_QAT_FW_INIT_ME ) ; return adf_send_admin_cmd ( accel_dev , ICP_QAT_FW_CONSTANTS_CFG ) ; } 

@@ -1,0 +1,1 @@
+spell_command_authorized ( ) { int length_command , i ; if ( ! command ) { return 1 ; } length_command = strlen ( command , NULL ) ; for ( i = 0 ; i < spell_count_commands_to_check ; i ++ ) { if ( ( spell_length_commands_to_check [ i ] == length_command ) && ( strcmp ( command , spell_commands_to_check [ i ] ) == 0 ) ) { return 1 ; } } return 0 ; } 

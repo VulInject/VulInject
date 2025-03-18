@@ -1,0 +1,1 @@
+uint32_t pcr_reg ; uint32_t pic_overflow [ NUM_OF_PICS ] ; int pic_last_val [ NUM_OF_PICS ] ; 

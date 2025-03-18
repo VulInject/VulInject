@@ -1,0 +1,1 @@
+void es_security_unlock_prepare ( uint8_t * p_challenge ) { memcpy ( m_aes_ecb_lk . cleartext , p_challenge , ESCS_AES_KEY_SIZE ) ; } 

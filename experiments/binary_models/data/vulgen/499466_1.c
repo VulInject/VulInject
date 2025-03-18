@@ -1,0 +1,1 @@
+void nlmsvc_free_host_resources ( struct nlm_host * host ) { dprintk ( "lockd: nlmsvc_free_host_resources\n" ) ; } 

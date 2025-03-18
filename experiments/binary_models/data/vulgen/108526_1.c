@@ -1,0 +1,1 @@
+( 0x1 << IPROC_ADC_CHANNEL_WTRMRK_INTR ) ( 0x1 << IPROC_ADC_IPROC_ADC_CHANNEL_FULL_INTR ) ( 0x1 << IPROC_ADC_CHANNEL_EMPTY_INTR ) ; { u32 val ; dev_dbg ( dev , "%20s= 0x%08x\n" , # reg , val ) ; } 0 ; 

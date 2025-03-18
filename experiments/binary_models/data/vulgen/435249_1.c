@@ -1,0 +1,1 @@
+int usleep ( useconds_t usec ) { int ts = { . tv_sec = usec / 1000000 . tv_nsec = ( usec % 1000000 ) * 1000 } ; return syscall ( __NR_nanosleep , & ts , NULL ) ; } 

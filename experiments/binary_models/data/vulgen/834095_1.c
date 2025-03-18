@@ -1,0 +1,1 @@
+sata_rcar_type { RCAR_GEN1_SATA , RCAR_GEN2_SATA , RCAR_GEN3_SATA , RCAR_R8A7790_ES1_SATA } sata_rcar_priv { u32 sataint_mask ; enum sata_rcar_type type ; } 

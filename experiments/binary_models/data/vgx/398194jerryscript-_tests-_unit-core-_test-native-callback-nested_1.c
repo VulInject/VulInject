@@ -1,0 +1,1 @@
+main ( void ) { jerry_context_t * ctx_p = jerry_create_context ( 1024 , context_alloc_fn , NULL ) ; jerry_port_default_set_current_context ( ctx_p ) ; jerry_init ( JERRY_INIT_EMPTY ) ; jerry_value_t obj = jerry_create_object ( ) ; jerry_set_object_native_pointer ( obj , NULL , & native_info ) ; jerry_release_value ( obj ) ; jerry_cleanup ( ) ; return 0 ; } 

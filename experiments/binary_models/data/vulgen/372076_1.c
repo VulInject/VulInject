@@ -1,0 +1,1 @@
+int ( * ) ( void * ) , void * , char * ; void qcpdc_intr_disestablish ( void * ) void qcpdc_intr_enable ( void * ) void qcpdc_intr_disable ( void * ) void qcpdc_intr_barrier ( void * ) void qcpdc_intr_set_wakeup ( void * ) int qcpdc_match ( struct device * parent , void * match , void * aux ) { return OF_is_compatible ( faa -> fa_node , "qcom,pdc" ) ; } 

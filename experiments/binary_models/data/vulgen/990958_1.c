@@ -1,0 +1,1 @@
+static void probe_sched_wakeup ( void * ignore , struct task_struct * wakee ) { int flags ; flags = ( RECORD_TGID * ! ! sched_tgid_ref ) + ( RECORD_CMDLINE * ! ! sched_cmdline_ref ) ; if ( ! flags ) { return ; } } 

@@ -1,0 +1,1 @@
+static uv_timer_t timer_handle ; static int prepare_called = 0 ; static int timer_called = 0 ; static int num_ticks = 10 ; static void prepare_cb ( uv_prepare_t * handle ) { ASSERT ( handle == & prepare_handle ) ; prepare_called ++ ; if ( prepare_called == num_ticks ) { uv_prepare_stop ( 0 ) ; } } 

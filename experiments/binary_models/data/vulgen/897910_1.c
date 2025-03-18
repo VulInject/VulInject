@@ -1,0 +1,1 @@
+static int calc_ldap_name ( char * name ) { int i ; int counter = 0 ; for ( i = 0 ; i < ( int ) strlen ( name ) ; i ++ ) { if ( isupper ( ( int ) name [ i ] ) ) { counter ++ ; } } return strlen ( name ) + counter ; } uwsgi_ldap_entry { int num ; int has_arg ; } 

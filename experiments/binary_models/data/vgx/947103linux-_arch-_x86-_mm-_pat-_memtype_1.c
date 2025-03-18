@@ -1,0 +1,1 @@
+static int __init pat_debug_setup ( char * str ) { return 1 ; } 

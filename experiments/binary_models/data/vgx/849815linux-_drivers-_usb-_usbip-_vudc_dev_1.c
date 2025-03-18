@@ -1,0 +1,1 @@
+static void stop_activity ( struct vudc * udc ) { int i ; struct urbp * urb_p , * tmp ; udc -> address = 0 ; for ( i = 0 ; i < VIRTUAL_ENDPOINTS ; i ++ ) { nuke ( udc , & udc -> ep [ i ] ) ; } list_for_each_entry_safe ( , , , ) { list_del ( & urb_p -> urb_entry ) ; } } 

@@ -1,0 +1,1 @@
+uint8_t section_count ; uint8_t _resv2 [ 4 ] ; uint8_t _platform2 [ 8 ] ; uint32_t plid ; int _platform3 [ 4 ] ; 

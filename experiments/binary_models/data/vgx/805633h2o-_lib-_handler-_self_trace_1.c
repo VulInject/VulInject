@@ -1,0 +1,1 @@
+static void on_send_timeout ( h2o_timer_t * _timer ) { struct h2o_self_trace_generator * self = H2O_STRUCT_FROM_MEMBER ( h2o_self_trace_generator , send_timer , _timer ) ; assert ( ! self -> inflight . inflight ) ; assert ( self -> should_send_buffered ) ; self -> should_send_buffered = 0 ; do_send ( self , NULL ) ; } 

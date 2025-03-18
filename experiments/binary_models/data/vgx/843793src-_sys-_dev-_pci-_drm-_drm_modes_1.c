@@ -1,0 +1,1 @@
+( drm_mode_debug_printmodeline ) ; struct drm_display_mode * drm_mode_create ( struct drm_device * dev ) { struct drm_display_mode * nmode ; nmode = kzalloc ( sizeof ( drm_display_mode ) , GFP_KERNEL ) ; if ( ! nmode ) { return in ; } return nmode ; } 

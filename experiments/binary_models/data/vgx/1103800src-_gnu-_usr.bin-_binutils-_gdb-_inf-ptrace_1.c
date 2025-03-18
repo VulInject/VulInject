@@ -1,0 +1,1 @@
+inf_ptrace_post_startup_inferior ( ) { ptrace_event_t pe ; pe . pe_set_event |= PTRACE_FORK ; if ( ptrace ( PT_SET_EVENT_MASK , ptid_get_pid ( pid ) , ( PTRACE_TYPE_ARG3 ) & pe , sizeof pe ) == - 1 ) { perror_with_name ( ( "ptrace" ) ) ; } } 

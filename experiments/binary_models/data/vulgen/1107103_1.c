@@ -1,0 +1,1 @@
+static int vpc_probe ( const uint8_t * buf , int buf_size , const char * filename ) { return 0 ; } 

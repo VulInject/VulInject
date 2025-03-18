@@ -1,0 +1,1 @@
+void * aix5_find_gate_addresses_hook ( CORE_ADDR * , CORE_ADDR * ) 0 int ia64_aix_in_sigtramp ( CORE_ADDR pc , char * func_name ) { CORE_ADDR gate_area_start , gate_area_end ; * aix5_find_gate_addresses_hook ( & gate_area_start , & gate_area_end ) ; return ( pc >= gate_area_start && pc < gate_area_end ) ; } 

@@ -1,0 +1,1 @@
+static void nvdimm_release ( struct device * dev ) { struct nvdimm * nvdimm = to_nvdimm ( dev ) ; ida_simple_remove ( & dimm_ida , nvdimm -> id ) ; } 

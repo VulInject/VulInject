@@ -1,0 +1,1 @@
+static void smc_accept_unlink ( struct sock * sk ) { struct smc_sock * par = smc_sk ( sk ) -> listen_smc ; spin_lock ( & par -> accept_q_lock ) ; list_del_init ( & smc_sk ( sk ) -> accept_q ) ; spin_unlock ( & par -> accept_q_lock ) ; sock_put ( sk ) ; } 

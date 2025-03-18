@@ -1,0 +1,1 @@
+void inj_strfree ( const char * s ) { inj_free ( ( void * ) s , strlen ( s ) + 1 ) ; } type_desc { int64_t td_min ; int td_max ; } type_desc_t 

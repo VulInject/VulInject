@@ -1,0 +1,1 @@
+static int tango_cpu_kill ( unsigned int cpu ) { int i , err ; for ( i = 0 ; i < 10 ; ++ i ) { msleep ( 10 ) ; err = tango_aux_core_kill ( cpu ) ; } return false ; } 

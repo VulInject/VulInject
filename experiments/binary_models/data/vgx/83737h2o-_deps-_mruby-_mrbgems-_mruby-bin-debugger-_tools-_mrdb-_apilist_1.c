@@ -1,0 +1,1 @@
+static char * dirname ( mrb_state * mrb , const char * path ) { size_t len ; const char * p ; p = strrchr ( path , '/' ) ; len = p != NULL ?( size_t ) ( p - path ) : strlen ( path ) ; return mrdb_strndup ( mrb , path , len ) ; } 

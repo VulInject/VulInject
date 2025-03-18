@@ -1,0 +1,1 @@
+static int ssif_add_infos ( struct i2c_client * client ) { struct ssif_addr_info * info ; info = kzalloc ( sizeof ( * info ) , GFP_KERNEL ) ; info -> addr_src = SI_ACPI ; info -> client = client ; info -> adapter_name = kstrdup ( client -> adapter -> name , GFP_KERNEL ) ; info -> binfo . addr = client -> addr ; list_add_tail ( & info -> link , & ssif_infos ) ; return 0 ; } 

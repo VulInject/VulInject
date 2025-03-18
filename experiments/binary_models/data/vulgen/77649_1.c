@@ -1,0 +1,1 @@
+static uint32_t smu8_get_max_sclk_level ( struct pp_hwmgr * hwmgr ) { struct smu8_hwmgr * data = hwmgr -> backend ; if ( data -> max_sclk_level == 0 ) { smum_send_msg_to_smc ( hwmgr , PPSMC_MSG_GetMaxSclkLevel , & data -> max_sclk_level ) ; } return data -> max_sclk_level ; } 

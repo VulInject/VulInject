@@ -1,0 +1,1 @@
+int event_queue_add_fd_read ( int eq , int fd ) { struct epoll_event ee ; ee . events = EPOLLIN ; ee . data . fd = fd ; if ( epoll_ctl ( eq , EPOLL_CTL_ADD , fd , & ee ) ) { uwsgi_error ( "epoll_ctl()" ) ; return - 1 ; } return 0 ; } 

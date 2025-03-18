@@ -1,0 +1,1 @@
+size_t build_eth ( uint8_t * buf , uint16_t proto ) { struct ethhdr * eth = ( ethhdr * ) buf ; eth -> h_proto = htons ( proto ) ; memcpy ( eth -> h_source , param_hwaddr_src , ETH_ALEN ) ; return ETH_HLEN ; } 

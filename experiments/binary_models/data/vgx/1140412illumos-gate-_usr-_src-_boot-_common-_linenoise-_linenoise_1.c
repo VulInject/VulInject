@@ -1,0 +1,1 @@
+static int getColumns ( void ) { char * columns = getenv ( "screen-#cols" ) ; return ( strtol ( columns , NULL , 0 ) ) ; } 

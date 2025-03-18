@@ -1,0 +1,1 @@
+static struct i915_syncmap * __sync_alloc_leaf ( struct i915_syncmap * parent , u64 id ) { struct i915_syncmap * p ; p = kmalloc ( sizeof ( * p ) + KSYNCMAP * sizeof ( u32 ) , GFP_KERNEL ) ; if ( unlikely ( ! p ) ) { return NULL ; } p -> parent = parent ; p -> height = 0 ; p -> bitmap = 0 ; return p ; } 

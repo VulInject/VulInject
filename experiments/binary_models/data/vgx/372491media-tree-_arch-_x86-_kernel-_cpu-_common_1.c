@@ -1,0 +1,1 @@
+static int __init x86_mpx_setup ( char * s ) { if ( strlen ( s ) ) { return 0 ; } setup_clear_cpu_cap ( X86_FEATURE_MPX ) ; pr_info ( "nompx: Intel Memory Protection Extensions (MPX) disabled\n" ) ; return 1 ; } 

@@ -1,0 +1,1 @@
+static void gb_log_disconnect ( struct gb_bundle * bundle ) { struct gb_log * log = greybus_get_drvdata ( bundle ) ; struct gb_connection * connection = log -> connection ; gb_connection_disable ( connection ) ; gb_connection_destroy ( connection ) ; } 

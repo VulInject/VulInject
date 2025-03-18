@@ -1,0 +1,1 @@
+int bman_p_irqsource_add ( struct bman_portal * p , u32 bits ) { unsigned long irqflags ; local_irq_save ( irqflags ) ; set_bits ( bits & BM_PIRQ_VISIBLE , & p -> irq_sources ) ; bm_out ( & p -> p , BM_REG_IER , p -> irq_sources ) ; local_irq_restore ( irqflags , NULL ) ; return 0 ; } 

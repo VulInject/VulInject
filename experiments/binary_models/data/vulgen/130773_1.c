@@ -1,0 +1,1 @@
+unsigned long cpuidle_disable = IDLE_NO_OVERRIDE ; static int __init powersave_off ( char * arg ) { ppc_md . power_save = NULL ; cpuidle_disable = IDLE_POWERSAVE_OFF ; return 1 ; } 

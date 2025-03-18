@@ -1,0 +1,1 @@
+static inline isc_result_t fromwire_spf ( ARGS_FROMWIRE ) { REQUIRE ( type == dns_rdatatype_spf ) ; UNUSED ( type ) ; UNUSED ( dctx ) ; UNUSED ( rdclass , NULL ) ; UNUSED ( options ) ; return ( generic_fromwire_txt ( rdclass , type , source , dctx , options , target ) ) ; } 

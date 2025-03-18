@@ -1,0 +1,1 @@
+static inline int try_misrouted_irq ( unsigned int irq , struct irq_desc * desc , irqreturn_t action_ret ) { struct irqaction * action ; if ( action_ret == IRQ_NONE ) { return 1 ; } if ( irqfixup < 2 ) { return 0 ; } if ( ! irq ) { return 1 ; } action = desc -> action ; barrier ( ) ; return action && ( action -> flags & IRQF_IRQPOLL ) ; } 

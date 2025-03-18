@@ -1,0 +1,1 @@
+int rpmsg_trysend_offchannel ( struct rpmsg_endpoint * ept , u32 src , u32 dst , void * data , int len ) { if ( ! ept -> ops -> trysend_offchannel ) { return - ENXIO ; } return ept -> ops -> trysend_offchannel ( ept , src , dst , data , len ) ; } 

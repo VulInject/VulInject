@@ -1,0 +1,1 @@
+( sst_ipc_init ) ; void sst_ipc_fini ( struct sst_generic_ipc * ipc ) { int i ; cancel_work_sync ( & ipc -> kwork ) ; if ( ipc -> msg ) { for ( i = 0 ; i < IPC_EMPTY_LIST_SIZE ; i ++ ) { kfree ( ipc -> msg [ i ] . tx . data ) ; kfree ( ipc -> msg [ i ] . rx . data ) ; } } } 

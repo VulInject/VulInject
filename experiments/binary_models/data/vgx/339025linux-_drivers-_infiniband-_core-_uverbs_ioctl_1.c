@@ -1,0 +1,1 @@
+static int uverbs_set_output ( const struct uverbs_attr_bundle * bundle , const struct uverbs_attr * attr ) { struct bundle_priv * pbundle = container_of ( bundle , bundle_priv , bundle ) ; u16 flags ; flags = pbundle -> uattrs [ attr -> ptr_attr . uattr_idx ] . flags | UVERBS_ATTR_F_VALID_OUTPUT ; return 0 ; } 

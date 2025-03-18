@@ -1,0 +1,1 @@
+static int smp_appendban ( const struct smp_sc * sc , struct smp_signspace * spc , uint32_t len , const uint8_t * ban ) { ( void ) sc ; memcpy ( SIGNSPACE_FRONT ( spc ) , ban , len ) ; smp_append_signspace ( spc , len ) ; return ( 0 ) ; } 

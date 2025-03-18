@@ -1,0 +1,1 @@
+int irssi_is_ref_object ( SV * o ) { SV * * sv ; HV * hv ; hv = hvref ( o ) ; if ( hv != NULL ) { sv = hv_fetch ( hv , "_irssi" , 6 , 0 ) ; } return FALSE ; } 

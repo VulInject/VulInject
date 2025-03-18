@@ -1,0 +1,1 @@
+static int run ( int argc , char * argv [ ] ) { int r ; test_setup_logging ( LOG_DEBUG , NULL ) ; r = nscd_flush_cache ( STRV_MAKE ( "group" , "passwd" , "hosts" ) ) ; if ( r < 0 ) { return log_error_errno ( r , "Failed to flush NSCD cache" ) ; } return 0 ; } 

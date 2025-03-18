@@ -1,0 +1,1 @@
+int radius_get_vs_string_attr ( const RADIUS_PACKET * packet , uint32_t vendor , uint8_t vtype , char * str , size_t len ) { const void * p ; size_t origlen ; if ( memchr ( p , 0 , origlen ) != NULL ) { return ( - 1 ) ; } if ( len >= 1 ) { len = MINIMUM ( origlen , len - 1 ) ; memcpy ( str , ( const char * ) p , len ) ; str [ len ] = '\0' ; } return ( 0 ) ; } 

@@ -1,0 +1,1 @@
+static int gb_i2c_functionality_operation ( struct gb_i2c_device * gb_i2c_dev ) { struct gb_i2c_functionality_response response ; u32 functionality ; int ret ; if ( ret ) { return ret ; } functionality = le32_to_cpu ( response . functionality ) ; gb_i2c_dev -> functionality = gb_i2c_functionality_map ( functionality ) ; return 0 ; } 

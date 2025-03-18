@@ -1,0 +1,1 @@
+static int heartbeat ; davinci_wdt_device { void __iomem * base ; struct clk * clk ; } 

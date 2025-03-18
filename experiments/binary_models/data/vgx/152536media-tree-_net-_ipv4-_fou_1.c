@@ -1,0 +1,1 @@
+static int fou_udp_recv ( struct sock * sk , struct sk_buff * skb ) { struct fou * fou = fou_from_sock ( sk ) ; if ( ! fou ) { return 1 ; } if ( fou_recv_pull ( skb , fou , sizeof ( udphdr ) ) ) { drop } return - fou -> protocol ; drop return 0 ; } 

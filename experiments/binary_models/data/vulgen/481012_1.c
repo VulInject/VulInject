@@ -1,0 +1,1 @@
+static void archive_le16enc ( void * pp , uint16_t u ) { p [ 0 ] = u & 0xff ; p [ 1 ] = ( u >> 8 ) & 0xff ; } 

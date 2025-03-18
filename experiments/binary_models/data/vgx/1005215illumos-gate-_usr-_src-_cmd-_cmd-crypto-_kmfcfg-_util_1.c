@@ -1,0 +1,1 @@
+void free_policy_list ( POLICY_LIST * plist ) { POLICY_LIST * n = plist , * old ; if ( plist == NULL ) { return ; } while ( n != NULL ) { old = n ; kmf_free_policy_record ( & n -> plc ) ; n = n -> next ; } plist = NULL ; } 

@@ -1,0 +1,1 @@
+int archive_filter_code ( struct archive * a , int n ) { return ( ( a -> vtable -> archive_filter_code ) ( a , n ) ) ; } 

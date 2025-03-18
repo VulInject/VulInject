@@ -1,0 +1,1 @@
+static av_cold void vp9dsp_mc_init_msa ( VP9DSPContext * dsp , int bpp ) { } 

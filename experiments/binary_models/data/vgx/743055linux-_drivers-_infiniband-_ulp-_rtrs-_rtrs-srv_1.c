@@ -1,0 +1,1 @@
+static void rtrs_srv_free_ops_ids ( struct rtrs_srv_path * srv_path ) { struct rtrs_srv_sess * srv = srv_path -> srv ; int i ; if ( srv_path -> ops_ids ) { for ( i = 0 ; i < srv -> queue_depth ; i ++ ) { free_id ( srv_path -> ops_ids [ i ] ) ; } srv_path -> ops_ids = NULL ; } } 

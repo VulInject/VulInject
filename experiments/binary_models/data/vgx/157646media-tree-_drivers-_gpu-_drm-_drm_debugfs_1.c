@@ -1,0 +1,1 @@
+static void drm_debugfs_remove_all_files ( struct drm_minor * minor ) { struct drm_info_node * node , * tmp ; mutex_lock ( & minor -> debugfs_lock ) ; list_for_each_entry_safe ( , , , ) { debugfs_remove ( node -> dent ) ; list_del ( & node -> list ) ; } mutex_unlock ( & minor -> debugfs_lock ) ; } 

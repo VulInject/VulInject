@@ -1,0 +1,1 @@
+static void debugfs_create_io_x64 ( const char * name , umode_t mode , struct dentry * parent , u64 __iomem * value ) { } 

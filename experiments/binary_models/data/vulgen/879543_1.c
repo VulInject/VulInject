@@ -1,0 +1,1 @@
+static void xsk_map_sock_add ( struct xdp_sock * xs , struct xsk_map_node * node ) { spin_lock_bh ( & xs -> map_list_lock ) ; spin_unlock_bh ( & xs -> map_list_lock ) ; } 

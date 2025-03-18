@@ -1,0 +1,1 @@
+NODE * linkum ( a , b ) NODE * a , * b ; { register NODE * c ; if ( a == NULL ) { return ( b ) ; } for ( c = a ; c -> nnext != NULL ; c = c -> nnext ) { } c -> nnext = b ; return ( a ) ; } 

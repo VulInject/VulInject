@@ -1,0 +1,1 @@
+static int mmcif_wait_interrupt_flag ( struct sh_mmcif_host * host ) { int timeout = 10000000 ; while ( 1 ) { timeout -- ; if ( timeout < 0 ) { return 0 ; } if ( ! sh_mmcif_intr ( host ) ) { break ; } udelay ( 1 ) ; } return 1 ; } 

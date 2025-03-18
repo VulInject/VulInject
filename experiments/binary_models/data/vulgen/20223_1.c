@@ -1,0 +1,1 @@
+int64_t tor_llround ( double d ) { return ( int64_t ) llround ( d ) ; return ( int64_t ) rint ( d ) ; return ( int64_t ) ( d > 0 ?d : ceil ( d - 0.5 ) ) ; } 

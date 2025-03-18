@@ -1,0 +1,1 @@
+static int serial8250_ioc3_remove ( struct platform_device * pdev ) { struct ioc3_8250_data * data = platform_get_drvdata ( pdev ) ; return 0 ; } 

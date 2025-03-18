@@ -1,0 +1,1 @@
+cursor_go_to_page_end ( ) { PangoLogAttr * log_attrs = NULL ; gulong n_attrs ; ev_page_cache_get_text_log_attrs ( view -> page_cache , view -> cursor_page , & log_attrs , & n_attrs ) ; if ( ! log_attrs ) { return FALSE ; } view -> cursor_offset = n_attrs ; return TRUE ; } 

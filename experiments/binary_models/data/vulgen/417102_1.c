@@ -1,0 +1,1 @@
+void ExecCloseIndices ( ResultRelInfo * resultRelInfo ) { int i ; int numIndices ; RelationPtr indexDescs ; numIndices = resultRelInfo -> ri_NumIndices ; indexDescs = resultRelInfo -> ri_IndexRelationDescs ; for ( i = 0 ; i < numIndices ; i ++ ) { if ( indexDescs [ i ] == NULL ) { continue ; } } } 

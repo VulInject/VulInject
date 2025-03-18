@@ -1,0 +1,1 @@
+static void au1000_release_dma_link ( struct audio_stream * stream ) { struct pcm_period * pointer ; struct pcm_period * pointer_next ; stream -> periods = 0 ; pointer = stream -> buffer ; if ( ! pointer ) { return ; } { pointer_next = pointer -> next ; kfree ( pointer ) ; pointer = pointer_next ; } pointer != stream -> buffer ; stream -> buffer = NULL ; } 

@@ -1,0 +1,1 @@
+static int on_controller_gone ( sd_bus_track * track , void * userdata ) { Scope * s = userdata ; assert ( track ) ; if ( s -> controller ) { log_unit_debug ( UNIT ( s ) , "Controller %s disappeared from bus." , s -> controller ) ; unit_add_to_dbus_queue ( UNIT ( s ) ) ; s -> controller = mfree ( s -> controller ) ; } return 0 ; } 

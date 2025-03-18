@@ -1,0 +1,1 @@
+der_put_generalized_time ( , , , ) { heim_octet_string k ; size_t l ; int e ; e = _heim_time2generalizedtime ( * data , & k , 1 ) ; e = der_put_octet_string ( p , len , & k , & l ) ; free ( k . data ) ; if ( e ) { return e ; } if ( size ) { * size = l ; } return 0 ; } 

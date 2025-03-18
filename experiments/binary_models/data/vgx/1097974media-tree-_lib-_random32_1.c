@@ -1,0 +1,1 @@
+static u32 __extract_hwseed ( void ) { int val = 0 ; ( void ) ( arch_get_random_seed_int ( & val ) || arch_get_random_int ( & val ) ) ; return val ; } 

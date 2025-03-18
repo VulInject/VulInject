@@ -1,0 +1,1 @@
+static int __maybe_unused serial_pxa_suspend ( struct device * dev ) { struct pxa8250_data * data = dev_get_drvdata ( dev ) ; serial8250_suspend_port ( data -> line , NULL ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+void * skip_node ( void * node ) { u_int32_t * ptr = node ; ptr ++ ; ptr = skip_node_name ( ptr ) ; ptr = skip_props ( ptr , NULL ) ; while ( betoh32 ( * ptr ) == FDT_NODE_BEGIN ) { ptr = skip_node ( ptr ) ; } return skip_nops ( ptr + 1 ) ; } 

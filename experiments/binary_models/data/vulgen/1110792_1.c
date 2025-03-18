@@ -1,0 +1,1 @@
+unsigned long val1 = 123 ; unsigned long val2 = 456 ; binman_sym_declare ( , , ) unsigned long val3 = 789 ; unsigned long val4 = 999 ; binman_sym_declare ( , , ) 

@@ -1,0 +1,1 @@
+struct pci_dev * comedi_to_pci_dev ( struct comedi_device * dev ) { return dev -> hw_dev ?to_pci_dev ( ) : NULL ; } 

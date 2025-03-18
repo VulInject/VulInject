@@ -1,0 +1,1 @@
+copysign ( , ) { return x ; } 

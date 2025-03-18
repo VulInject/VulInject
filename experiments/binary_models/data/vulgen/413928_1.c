@@ -1,0 +1,1 @@
+static void parse_windows ( char * * line , char * type ) { char * tok ; int field = 0 ; * type = '-' ; while ( ( tok = strsep ( line , " \t" ) ) != NULL ) { if ( * tok == '\0' ) { continue ; } if ( field == 2 && strcmp ( tok , "<DIR>" ) == 0 ) { * type = 'd' ; } if ( field == 2 ) { while ( * * line == ' ' || * * line == '\t' ) { ( * line ) ++ ; } break ; } field ++ ; } } 

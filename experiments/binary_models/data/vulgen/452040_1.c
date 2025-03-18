@@ -1,0 +1,1 @@
+const struct board_info * t1_get_board_info ( unsigned int board_id ) { return board_id < ARRAY_SIZE ( t1_board ) ?& t1_board [ board_id ] : NULL ; } chelsio_vpd_t { u32 format_version ; u8 serial_number [ 16 ] ; u8 mac_base_address [ 6 ] ; int pad [ 2 ] ; } 

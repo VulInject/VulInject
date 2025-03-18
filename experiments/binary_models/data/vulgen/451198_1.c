@@ -1,0 +1,1 @@
+void procdel ( ) { int i ; pid_t tpid ; tpid = getpid ( ) ; Ecritical ( 1 ) ; for ( i = 0 ; i < sizeof ( gps -> tpid ) / sizeof ( gps -> tpid [ 0 ] ) ; i ++ ) { if ( gps -> tpid [ i ] == tpid ) { gps -> tpid [ i ] = 0 ; break ; } } Xcritical ( 1 ) ; } 

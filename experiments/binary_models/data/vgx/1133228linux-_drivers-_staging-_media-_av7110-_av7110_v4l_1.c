@@ -1,0 +1,1 @@
+static int vidioc_s_audio ( struct file * file , void * fh , const struct v4l2_audio * a ) { struct saa7146_dev * dev = ( ( saa7146_fh * ) fh ) -> dev ; struct av7110 * av7110 = ( av7110 * ) dev -> ext_priv ; dprintk ( 2 , "VIDIOC_S_AUDIO: %d\n" , a -> index ) ; return a -> index ?- EINVAL : 0 ; } 

@@ -1,0 +1,1 @@
+static int tavor_rsrc_ahhdl_constructor ( void * ah , void * priv , int flags ) { tavor_ahhdl_t ahhdl ; tavor_state_t * state ; ahhdl = ( tavor_ahhdl_t ) ah ; state = ( tavor_state_t * ) priv ; return ( DDI_SUCCESS ) ; } 

@@ -1,0 +1,1 @@
+if ( have_armv5te ( cpu_flags ) ) { ff_mpv_common_init_armv5te ( s ) ; } if ( have_neon ( cpu_flags ) ) { s -> dct_unquantize_h263_inter = ff_dct_unquantize_h263_inter_neon ; } 

@@ -1,0 +1,1 @@
+static int delta_mjpeg_close ( struct delta_ctx * pctx ) { struct delta_mjpeg_ctx * ctx = to_ctx ( pctx ) ; if ( ctx -> ipc_hdl ) { delta_ipc_close ( ctx -> ipc_hdl , NULL ) ; ctx -> ipc_hdl = NULL ; } kfree ( ctx ) ; return 0 ; } 

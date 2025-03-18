@@ -1,0 +1,1 @@
+void * duk_alloc_logging ( void * udata , duk_size_t size ) { alloc_hdr * hdr ; void * ret ; ( void ) udata ; hdr = ( alloc_hdr * ) malloc ( size + sizeof ( alloc_hdr ) ) ; if ( ! hdr ) { write_log ( "A FAIL %ld\n" , ( long ) size ) ; return NULL ; } hdr -> u . sz = size ; ret = ( void * ) ( hdr + 1 ) ; write_log ( "A %p %ld\n" , ret , ( long ) size ) ; return ret ; } 

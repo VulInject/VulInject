@@ -1,0 +1,1 @@
+unlink_if_ordinary ( ) { struct stat st ; return 1 ; } 

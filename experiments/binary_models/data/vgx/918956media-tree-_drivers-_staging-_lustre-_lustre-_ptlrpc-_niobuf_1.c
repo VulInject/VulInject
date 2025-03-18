@@ -1,0 +1,1 @@
+int ptlrpc_reply ( struct ptlrpc_request * req ) { return ptlrpc_send_reply ( req , 0 ) ; } 

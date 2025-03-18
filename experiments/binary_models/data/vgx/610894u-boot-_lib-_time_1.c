@@ -1,0 +1,1 @@
+ulong notrace get_tbclk ( void ) { if ( ! gd -> timer ) { int ret ; ret = dm_timer_init ( ) ; if ( ret ) { return ret ; } } return timer_get_rate ( gd -> timer ) ; } 

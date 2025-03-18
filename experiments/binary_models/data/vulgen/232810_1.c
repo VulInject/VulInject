@@ -1,0 +1,1 @@
+static const char sccsid [ ] "@(#)db_byteorder.c	10.4 (Sleepycat) 9/4/97" ; ; static const char sccsi2 [ ] "%W% (Sun) %G%" ; ; int __db_byteorder ( dbenv , lorder ) DB_ENV * dbenv ; int lorder ; { switch ( lorder ) { case 0 : break ; case 1234 : return ( DB_SWAPBYTES ) ; break ; case 4321 : break ; return ( DB_SWAPBYTES ) ; default : return ( EINVAL ) ; } return ( 0 ) ; } 

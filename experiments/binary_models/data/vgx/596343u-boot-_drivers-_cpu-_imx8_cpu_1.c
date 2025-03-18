@@ -1,0 +1,1 @@
+static int cpu_imx_get_count ( const struct udevice * dev ) { ofnode node ; int num = 0 ; ofnode_for_each_subnode ( , ) { const char * device_type ; device_type = ofnode_read_string ( node , "device_type" ) ; if ( ! device_type ) { continue ; } if ( ! strcmp ( device_type , "cpu" ) ) { num ++ ; } } return num ; } 

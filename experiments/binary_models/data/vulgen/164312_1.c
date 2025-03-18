@@ -1,0 +1,1 @@
+static void addGpgProvide ( Header h , const char * n , const char * v ) { rpmsenseFlags pflags = ( RPMSENSE_KEYRING | RPMSENSE_EQUAL ) ; char * nsn = rstrscat ( NULL , "gpg(" , n , ")" , NULL ) ; headerPutString ( h , RPMTAG_PROVIDENAME , nsn ) ; headerPutString ( h , RPMTAG_PROVIDEVERSION , v ) ; headerPutUint32 ( h , RPMTAG_PROVIDEFLAGS , & pflags , 1 ) ; } 

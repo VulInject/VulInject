@@ -1,0 +1,1 @@
+void FreeEdges ( EdgeList * es ) { _FreeEdgeList ( es ) ; free ( es -> edges ) ; HintsFree ( es -> hhints ) ; HintsFree ( es -> vhints ) ; } 

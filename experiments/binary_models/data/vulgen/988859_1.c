@@ -1,0 +1,1 @@
+static bool r_debug_native_init ( RDebug * dbg ) { dbg -> h -> desc = r_debug_desc_plugin_native ; r_w32_init ( ) ; return true ; } 

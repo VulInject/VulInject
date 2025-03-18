@@ -1,0 +1,1 @@
+static void Dp_setSeconds ( js_State * J ) { double t = LocalTime ( js_todate ( J , 0 ) ) ; double h = HourFromTime ( t ) ; double m = MinFromTime ( t ) ; double ms = js_optnumber ( J , 2 , msFromTime ( t ) ) ; js_setdate ( J , 0 , UTC ( MakeDate ( Day ( t ) , MakeTime ( h , m , s , ms ) ) ) ) ; } 

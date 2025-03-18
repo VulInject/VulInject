@@ -1,0 +1,1 @@
+static int crypto_poly1305_final ( struct shash_desc * desc , u8 * dst ) { struct poly1305_desc_ctx * dctx = shash_desc_ctx ( desc ) ; poly1305_final_arch ( dctx , dst ) ; return 0 ; } 

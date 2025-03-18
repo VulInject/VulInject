@@ -1,1 +1,1 @@
-FUN1 ( "" ) ; FUN2 ( VAR1 , int , 0 ) ; static int __init FUN3 ( void ) { VAR2 = FUN4 ( ) ; return 0 ; }
+MODULE_LICENSE ( "GPL" ) ; module_param ( ipddp_mode , int , 0 ) ; static int __init ipddp_init_module ( void ) { dev_ipddp = ipddp_init ( ) ; return 0 ; } 

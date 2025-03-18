@@ -1,1 +1,1 @@
-static const char * FUN1 ( unsigned char VAR1 , unsigned char VAR2 ) { const char * VAR3 [ 3 ] [ 3 ] { { "" "" "" } { "" "" "" } { "" "" "" } } ; ; if ( VAR2 > 2 || FUN2 ( 1 || VAR1 ) 3 ) { return VAR4 ; } return VAR3 [ VAR2 ] [ VAR1 - 1 ] ; }
+static const char * tifm_media_type_name ( unsigned char type , unsigned char nt ) { const char * card_type_name [ 3 ] [ 3 ] { { "SmartMedia/xD" "MemoryStick" "MMC/SD" } { "XD" "MS" "SD" } { "xd" "ms" "sd" } } ; ; if ( nt > 2 || type ( 1 || type ) 3 ) { return in ; } return card_type_name [ nt ] [ type - 1 ] ; } 

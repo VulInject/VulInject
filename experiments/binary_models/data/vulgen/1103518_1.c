@@ -1,0 +1,1 @@
+static int tegra20_i2s_platform_remove ( struct platform_device * pdev ) { tegra_pcm_platform_unregister ( & pdev -> dev ) ; snd_soc_unregister_component ( & pdev -> dev ) ; return 0 ; } 

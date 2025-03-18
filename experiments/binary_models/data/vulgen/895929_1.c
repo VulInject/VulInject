@@ -1,0 +1,1 @@
+void setup_guest_gdt ( struct lg_cpu * cpu ) { cpu -> arch . gdt [ GDT_ENTRY_KERNEL_CS ] = FULL_EXEC_SEGMENT ; cpu -> arch . gdt [ GDT_ENTRY_KERNEL_DS ] = FULL_SEGMENT ; cpu -> arch . gdt [ GDT_ENTRY_KERNEL_CS ] . dpl |= GUEST_PL ; } 

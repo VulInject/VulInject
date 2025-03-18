@@ -1,0 +1,1 @@
+static int tm6000_open ( struct file * file ) { struct video_device * vdev = video_devdata ( file ) ; int res ; mutex_lock ( vdev -> lock ) ; res = __tm6000_open ( file , NULL ) ; mutex_unlock ( vdev -> lock ) ; return res ; } 

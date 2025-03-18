@@ -1,0 +1,1 @@
+static void ohci_mem_cleanup ( struct ohci_hcd * ohci ) { dma_pool_destroy ( ohci -> td_cache ) ; dma_pool_destroy ( ohci -> ed_cache ) ; ohci -> ed_cache = NULL ; } 

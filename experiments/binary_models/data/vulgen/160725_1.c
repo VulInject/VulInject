@@ -1,0 +1,1 @@
+void envs_cleanup_core ( const struct env_map_percpu * map ) { for ( u32 i = 0 ; map [ i ] . env_name ; i ++ ) { env_clear_core ( i , 0 ) ; } } 

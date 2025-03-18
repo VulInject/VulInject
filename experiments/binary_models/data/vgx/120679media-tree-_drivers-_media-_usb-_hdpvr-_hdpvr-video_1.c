@@ -1,0 +1,1 @@
+int hdpvr_cancel_queue ( struct hdpvr_device * dev ) { struct hdpvr_buffer * buf ; list_for_each_entry ( , , ) { usb_kill_urb ( buf -> urb , NULL ) ; buf -> status = BUFSTAT_AVAILABLE ; } list_splice_init ( & dev -> rec_buff_list , dev -> free_buff_list . prev ) ; return 0 ; } 

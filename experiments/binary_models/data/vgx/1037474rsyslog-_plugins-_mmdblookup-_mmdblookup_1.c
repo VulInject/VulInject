@@ -1,0 +1,1 @@
+static inline void setInstParamDefaults ( instanceData * pData ) { pData -> pszMmdbFile = NULL ; pData -> fieldList . nmemb = 0 ; pData -> reloadOnHup = 1 ; } 

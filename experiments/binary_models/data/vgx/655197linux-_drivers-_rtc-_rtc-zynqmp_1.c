@@ -1,0 +1,1 @@
+static int xlnx_rtc_set_time ( struct device * dev , struct rtc_time * tm ) { struct xlnx_rtc_dev * xrtcdev = dev_get_drvdata ( dev ) ; cfs_time_t new_time ; new_time = rtc_tm_to_time64 ( tm ) + 1 ; writel ( new_time , xrtcdev -> reg_base + RTC_SET_TM_WR ) ; writel ( RTC_INT_SEC , xrtcdev -> reg_base + RTC_INT_STS ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+unsigned long spl_spi_get_uboot_offs ( struct spi_flash * flash ) { int end ; end = get_imageset_end ( flash , QSPI_DEV ) ; printf ( "Load image from QSPI 0x%x\n" , end ) ; return end ; } 

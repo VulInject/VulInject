@@ -1,0 +1,1 @@
+int add_inbuf ( unsigned len , void * buf , void * datap ) { int ret ; if ( ret >= 0 ) { ret = 0 ; headcnt ++ ; } return ret ; } 

@@ -1,0 +1,1 @@
+static inline app_usbd_hid_kbd_t const * hid_kbd_get ( app_usbd_class_inst_t const * p_inst ) { return ( app_usbd_hid_kbd_t const * ) p_inst ; } 

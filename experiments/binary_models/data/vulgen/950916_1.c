@@ -1,0 +1,1 @@
+module_param ( force_lna_activation , int , 0644 ) ; dib0700_adapter_state { int * set_param_save ( struct dvb_frontend * ) const struct firmware * frontend_firmware ; struct dib7000p_ops dib7000p_ops ; struct dib8000_ops dib8000_ops ; } 

@@ -1,0 +1,1 @@
+int ckpwdfile ( void ) { struct passwd * pwdptr ; setpwent ( ) ; pwdptr = getpwent ( ) ; if ( ! pwdptr ) { return ( 1 ) ; } endpwent ( ) ; return ( 0 ) ; } 

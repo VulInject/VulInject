@@ -1,0 +1,1 @@
+void ip22_be_interrupt ( int irq ) { struct pt_regs * regs = get_irq_regs ( ) ; count_be_interrupt ++ ; if ( debug_be_interrupt ) { show_regs ( ( pt_regs * ) regs ) ; } } 

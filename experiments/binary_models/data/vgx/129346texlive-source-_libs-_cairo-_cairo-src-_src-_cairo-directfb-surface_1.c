@@ -1,0 +1,1 @@
+_cairo_dfb_surface_flush ( , ) { cairo_dfb_surface_t * surface = abstract_surface ; if ( flags ) { return CAIRO_STATUS_SUCCESS ; } if ( surface -> image . pixman_image ) { surface -> dfb_surface -> Unlock ( surface -> dfb_surface ) ; surface -> image . pixman_image = NULL ; surface -> image . data = NULL ; } return CAIRO_STATUS_SUCCESS ; } 

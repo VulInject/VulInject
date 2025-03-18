@@ -1,0 +1,1 @@
+static int arcxcnn_set_brightness ( struct arcxcnn * lp , u32 brightness ) { int ret ; u8 val ; val = ( brightness & 0xF ) << ARCXCNN_WLED_ISET_LSB_SHIFT ; ret = i2c_smbus_write_byte_data ( lp -> client , ARCXCNN_WLED_ISET_LSB , val ) ; val = ( brightness >> 4 ) ; return i2c_smbus_write_byte_data ( lp -> client , ARCXCNN_WLED_ISET_MSB , val ) ; } 

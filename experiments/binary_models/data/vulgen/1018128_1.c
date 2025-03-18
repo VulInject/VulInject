@@ -1,0 +1,1 @@
+Symbol lookup ( const char * name , Table tp ) { struct entry * p ; assert ( tp ) ; { for ( p = tp -> buckets [ h ] ; p ; p = p -> link ) { if ( name == p -> sym . name ) { return & p -> sym ; } } } ( tp = tp -> previous ) != NULL ; return NULL ; } 

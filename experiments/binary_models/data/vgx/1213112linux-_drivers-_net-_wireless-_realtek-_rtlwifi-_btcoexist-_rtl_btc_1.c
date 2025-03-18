@@ -1,0 +1,1 @@
+static void rtl_btc_free_variable ( struct rtl_priv * rtlpriv ) { kfree ( rtlpriv -> btcoexist . btc_context ) ; kfree ( rtlpriv -> btcoexist . wifi_only_context ) ; rtlpriv -> btcoexist . wifi_only_context = NULL ; } 

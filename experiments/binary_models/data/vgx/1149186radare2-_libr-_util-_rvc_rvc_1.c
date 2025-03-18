@@ -1,0 +1,1 @@
+static Sdb * vcdb_open ( const char * rp ) { char * frp = r_file_new ( rp , ".rvc" , DBNAME , NULL ) ; if ( ! frp ) { return NULL ; } Sdb * db = sdb_new0 ( ) ; if ( ! db ) { return NULL ; } if ( sdb_open ( db , frp ) < 0 ) { free ( frp ) ; sdb_free ( db ) ; return NULL ; } free ( frp ) ; return db ; } 

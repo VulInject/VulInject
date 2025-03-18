@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "Basic sigma delta modulator" ) ; MODULE_AUTHOR ( "Arnaud Pouliquen<arnaud.pouliquen@st.com>" ) ; 

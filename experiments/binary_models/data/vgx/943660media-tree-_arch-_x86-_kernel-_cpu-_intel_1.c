@@ -1,0 +1,1 @@
+static int intel_num_cpu_cores ( struct cpuinfo_x86 * c ) { unsigned int eax , ebx , ecx , edx ; cpuid_count ( 4 , 0 , & eax , & ebx , & ecx , & edx ) ; if ( eax & 0x1f ) { return ( eax >> 26 ) + 1 ; } else { return 1 ; } } 

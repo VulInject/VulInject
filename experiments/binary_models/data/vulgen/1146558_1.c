@@ -1,0 +1,1 @@
+void cpuidle_unregister_device ( struct cpuidle_device * dev ) { cpuidle_pause_and_lock ( ) ; cpuidle_disable_device ( dev ) ; cpuidle_remove_sysfs ( dev ) ; __cpuidle_unregister_device ( dev ) ; cpuidle_coupled_unregister_device ( dev ) ; cpuidle_resume_and_unlock ( ) ; } 

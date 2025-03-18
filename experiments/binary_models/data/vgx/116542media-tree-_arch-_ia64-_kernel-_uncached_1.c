@@ -1,0 +1,1 @@
+static int __init uncached_build_memmap ( u64 uc_start , u64 uc_end , void * arg ) { int nid = paddr_to_nid ( uc_start - __IA64_UNCACHED_OFFSET ) ; struct gen_pool * pool = uncached_pools [ nid ] . pool ; size_t size = uc_end - uc_start ; touch_softlockup_watchdog ( ) ; if ( pool != NULL ) { ( void ) gen_pool_add ( pool , uc_start , size , nid ) ; } return 0 ; } 

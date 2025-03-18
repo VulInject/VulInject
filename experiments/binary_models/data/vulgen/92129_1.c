@@ -1,0 +1,1 @@
+static void roff_term_pre_br ( ROFF_TERM_ARGS ) { if ( p -> flags & TERMP_BRIND ) { p -> tcol -> offset = p -> tcol -> rmargin ; p -> tcol -> rmargin = p -> maxrmargin ; p -> trailspace = 0 ; p -> flags &= ~ ( TERMP_NOBREAK | TERMP_BRIND ) ; p -> flags |= TERMP_NOSPACE ; } } 

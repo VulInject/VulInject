@@ -1,0 +1,1 @@
+struct dc_state * dc_create_state ( struct dc * dc ) { struct dc_state * context = kvzalloc ( sizeof ( dc_state ) , GFP_KERNEL ) ; if ( ! context ) { return NULL ; } init_state ( dc , context ) ; return context ; } 

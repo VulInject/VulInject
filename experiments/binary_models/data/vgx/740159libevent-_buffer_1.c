@@ -1,0 +1,1 @@
+static struct evbuffer_chain * evbuffer_chain_new_membuf ( size_t size ) { size_t to_alloc ; size += EVBUFFER_CHAIN_SIZE ; if ( size < EVBUFFER_CHAIN_MAX / 2 ) { to_alloc = MIN_BUFFER_SIZE ; while ( to_alloc < size ) { to_alloc <<= 1 ; } } else { to_alloc = size ; } return evbuffer_chain_new ( to_alloc - EVBUFFER_CHAIN_SIZE ) ; } 

@@ -1,0 +1,1 @@
+static DEVICE_ATTR ( dscr_default , 0600 , show_dscr_default , store_dscr_default ) ; static void __init sysfs_create_dscr_default ( void ) { } 

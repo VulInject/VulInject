@@ -1,0 +1,1 @@
+static bool gpy_sgmii_need_reaneg ( struct phy_device * phydev ) { struct gpy_priv * priv = phydev -> priv ; int i ; for ( i = 0 ; i < ARRAY_SIZE ( ver_need_sgmii_reaneg ) ; i ++ ) { if ( priv -> fw_major != ver_need_sgmii_reaneg [ i ] . major ) { continue ; } if ( priv -> fw_minor < ver_need_sgmii_reaneg [ i ] . minor ) { return true ; } break ; } return false ; } 

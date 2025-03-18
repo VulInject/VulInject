@@ -1,0 +1,1 @@
+static uint32_t fwctl_send_rest ( uint8_t * data , size_t len ) { { uint8_t c [ 4 ] ; uint32_t w ; } , u size_t i ; for ( i = 0 ; i < len ; i ++ ) { u . c [ i ] = * data ++ ; } return ( u . w ) ; } 

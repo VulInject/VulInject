@@ -1,0 +1,1 @@
+void wc_KyberKey_Free ( KyberKey * key ) { if ( key != NULL ) { ForceZero ( key , 0 ) ; } } 

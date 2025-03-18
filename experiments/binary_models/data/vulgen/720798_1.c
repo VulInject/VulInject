@@ -1,0 +1,1 @@
+static void gpio_nand_dosync ( struct gpiomtd * gpiomtd ) { unsigned long tmp ; } 

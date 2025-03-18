@@ -1,0 +1,1 @@
+. type = IIO_ACCEL , . address = _reg , . channel2 = IIO_MOD_ # # _axis , . info_mask_separate = BIT ( IIO_CHAN_INFO_RAW ) , . info_mask_shared_by_type = BIT ( IIO_CHAN_INFO_SCALE ) , . modified = 1 , ; type = IIO_TEMP , . address = _reg , . info_mask_separate = BIT ( IIO_CHAN_INFO_RAW ) | BIT ( IIO_CHAN_INFO_OFFSET ) , ; dmard06_data { u8 chip_id ; } 

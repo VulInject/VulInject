@@ -1,0 +1,1 @@
+static umode_t nct6683_fan_is_visible ( struct kobject * kobj , struct attribute * attr , int index ) { struct device * dev = kobj_to_dev ( kobj ) ; struct nct6683_data * data = dev_get_drvdata ( dev ) ; int fan = index / 3 ; int nr = index % 3 ; if ( nr == 2 && data -> customer_id == NCT6683_CUSTOMER_ID_INTEL ) { return 0 ; } return attr -> mode ; } 

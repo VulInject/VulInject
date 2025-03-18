@@ -1,0 +1,1 @@
+void dcn316_smu_enable_phy_refclk_pwrdwn ( struct clk_mgr_internal * clk_mgr , bool enable ) { if ( ! clk_mgr -> smu_present ) { return ; } if ( enable ) { idle_info . idle_info . df_request_disabled = 1 ; idle_info . idle_info . phy_ref_clk_off = 1 ; } dcn316_smu_send_msg_with_param ( clk_mgr , VBIOSSMC_MSG_SetDisplayIdleOptimizations , idle_info . data ) ; } 

@@ -1,0 +1,1 @@
+static void set_up_watchdog ( M48t59State * NVRAM , uint8_t value ) { uint64_t interval ; NVRAM -> buffer [ 0x1FF0 ] &= ~ 0x80 ; if ( NVRAM -> wd_timer != NULL ) { timer_del ( NVRAM -> wd_timer ) ; if ( value != 0 ) { timer_mod ( NVRAM -> wd_timer , ( ( uint64_t ) time ( NULL ) * 1000 ) + ( ( interval * 1000 ) >> 4 ) ) ; } } } 

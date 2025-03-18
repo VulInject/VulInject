@@ -1,0 +1,1 @@
+void OutputStatsShutdown ( void ) { OutputStatsLogger * logger = list ; while ( logger ) { OutputStatsLogger * next_logger = logger -> next ; SCFree ( logger ) ; logger = next_logger ; } } 

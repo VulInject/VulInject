@@ -1,0 +1,1 @@
+int dns_question_add ( DnsQuestion * q , DnsResourceKey * key , DnsQuestionFlags flags ) { DnsQuestionItem * item ; int r ; assert ( key ) ; DNS_QUESTION_FOREACH_ITEM ( , ) { r = dns_resource_key_equal ( item -> key , key ) ; if ( r < 0 ) { return r ; } if ( r > 0 && item -> flags == flags ) { return 0 ; } } return dns_question_add_raw ( q , key , flags ) ; } 

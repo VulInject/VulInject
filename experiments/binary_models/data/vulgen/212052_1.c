@@ -1,0 +1,1 @@
+read_object ( ) { Attr * attr = NULL ; int tmp_char = fgetc ( in ) ; if ( tmp_char == - 1 ) { return NULL ; } attr = attr_read ( in ) ; return attr ; } 

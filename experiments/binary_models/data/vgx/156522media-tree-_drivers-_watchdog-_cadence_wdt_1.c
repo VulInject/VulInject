@@ -1,0 +1,1 @@
+static int cdns_wdt_remove ( struct platform_device * pdev ) { struct cdns_wdt * wdt = platform_get_drvdata ( pdev ) ; cdns_wdt_stop ( & wdt -> cdns_wdt_device ) ; watchdog_unregister_device ( & wdt -> cdns_wdt_device ) ; clk_disable_unprepare ( wdt -> clk , NULL ) ; return 0 ; } 

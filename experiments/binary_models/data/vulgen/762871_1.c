@@ -1,0 +1,1 @@
+static bool __init omap4_smp_cpu1_startup_valid ( unsigned long addr ) { return true ; } 

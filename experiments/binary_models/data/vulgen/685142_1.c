@@ -1,0 +1,1 @@
+{ keyid_t buf ; char b64nine [ ] "AQOF8tZ2m" ; ; uint8_t hexblob [ ] "\x01\x03\x85\xf2\xd6\x76\x9b\x03\x59\xb6\x21\x52" ; ; err_t e = keyblob_to_keyid ( hexblob , sizeof ( hexblob ) - 1 , & buf ) ; if ( ! streq ( str_keyid ( buf ) , b64nine ) ) { fprintf ( stderr , "%s: keyblobtoid generated `%s' not `%s'\n" , __func__ , str_keyid ( buf ) , b64nine ) ; fails += 1 ; return ; } } 

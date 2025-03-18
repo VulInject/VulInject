@@ -1,0 +1,1 @@
+__packed pcan_ufd_fw_info { __le16 size_of ; __le16 type ; u8 hw_type ; u8 bl_version [ 3 ] ; u8 hw_version ; u8 fw_version [ 3 ] ; __le32 dev_id [ 2 ] ; __le32 ser_no ; __le32 flags ; u8 cmd_out_ep ; u8 cmd_in_ep ; int data_out_ep [ 2 ] ; u8 data_in_ep ; u8 dummy [ 3 ] ; } 

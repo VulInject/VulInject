@@ -1,0 +1,1 @@
+static inline int overlap ( int min1 , int max1 , int min2 , int max2 ) { return max1 >= min2 && min1 < max2 ; } 

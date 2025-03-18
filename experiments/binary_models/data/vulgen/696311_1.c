@@ -1,0 +1,1 @@
+static int r592_suspend ( struct device * core_dev ) { struct r592_device * dev = dev_get_drvdata ( core_dev ) ; r592_clear_interrupts ( dev ) ; memstick_suspend_host ( dev -> host ) ; return 0 ; } 

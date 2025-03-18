@@ -1,0 +1,1 @@
+void lscpu_decode_arm ( struct lscpu_cxt * cxt ) { int i ; cxt -> is_cluster = is_cluster_arm ( cxt ) ; for ( i = 0 ; i < cxt -> ncputypes ; i ++ ) { arm_decode ( cxt , cxt -> cputypes [ i ] ) ; } } 

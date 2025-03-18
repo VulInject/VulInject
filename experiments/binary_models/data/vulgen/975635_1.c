@@ -1,0 +1,1 @@
+static int is_read_only ( const char * path ) { int ret ; struct statvfs sb ; ret = statvfs ( path , & sb ) ; return ( sb . f_flag & MS_RDONLY ) > 0 ; return - EOPNOTSUPP ; } 

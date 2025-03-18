@@ -1,0 +1,1 @@
+* * ACCURACY : * * Relative error : * arithmetic domain # trials peak rms * IEEE - 10 , + 10 30000 2.9e-16 8.1e-17 * * / long double complex ccoshl ( ) { long double complex w long double x y x = creall ( z ) y = cimagl ( z ) w = coshl ( x ) * cosl ( y ) + ( sinhl ( x ) * sinl ( ) ) * I return ( w ) ; } ; 

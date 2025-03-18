@@ -1,0 +1,1 @@
+struct _UNI_DEV UNI_DEV _UNI_DEV { int bus ; UNIVERSE * uregs ; unsigned int pci_bs ; } 

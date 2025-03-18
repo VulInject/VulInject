@@ -1,0 +1,1 @@
+static inline isc_result_t towire_ninfo ( ARGS_TOWIRE ) { REQUIRE ( rdata -> type == dns_rdatatype_ninfo ) ; UNUSED ( cctx , NULL ) ; return ( isc_mem_tobuffer ( target , rdata -> data , rdata -> length ) ) ; } 

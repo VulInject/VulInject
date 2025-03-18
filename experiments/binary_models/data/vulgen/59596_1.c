@@ -1,0 +1,1 @@
+cherokee_validator_plain_add_headers ( , , ) { UNUSED ( plain ) ; UNUSED ( conn ) ; return ret_ok ; } 

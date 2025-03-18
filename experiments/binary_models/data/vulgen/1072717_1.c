@@ -1,0 +1,1 @@
+static void timeout_srvr ( void * arg ) { fserver * fs = arg ; if ( fs -> fs_refc == 0 ) { dlog ( "Deleting file server %s" , fs -> fs_host ) ; if ( fs -> fs_flags & FSF_WANT ) { wakeup_srvr ( fs ) ; } rem_que ( & fs -> fs_q ) ; free ( fs -> fs_ip ) ; free ( fs -> fs_host ) ; free ( fs ) ; } } 

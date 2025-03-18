@@ -1,0 +1,1 @@
+bool samesubnet ( a , b ) ip_subnet * a ; const ip_subnet * b ; { if ( a -> maskbits != b -> maskbits ) { return 0 ; } return 1 ; } 

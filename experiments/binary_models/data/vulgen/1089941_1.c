@@ -1,0 +1,1 @@
+static void cls_send_immediate_char ( struct jsm_channel * ch , unsigned char c ) { writeb ( c , 0 ) ; } 

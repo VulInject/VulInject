@@ -1,0 +1,1 @@
+return NULL ; me -> size = ( uint32_t ) size ; me -> address = sh_css_malloc ( size ) ; if ( ! me -> address ) { return NULL ; } return me ; 

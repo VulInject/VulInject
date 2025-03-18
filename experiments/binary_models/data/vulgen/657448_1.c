@@ -1,0 +1,1 @@
+static int32_t avx512_isa_probe ( bool needs_vbmi ) { static enum ovs_cpu_isa isa_required [ ] { OVS_CPU_ISA_X86_AVX512F OVS_CPU_ISA_X86_AVX512BW OVS_CPU_ISA_X86_BMI2 } ; ; for ( uint32_t i = 0 ; i < ARRAY_SIZE ( isa_required ) ; i ++ ) { if ( ! cpu_has_isa ( isa_required [ i ] ) ) { return - ENOTSUP ; } } return 0 ; } 

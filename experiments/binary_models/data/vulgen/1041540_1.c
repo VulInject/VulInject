@@ -1,0 +1,1 @@
+GET_SADB ( sadb_x_sa_replay , sizeof ( uint64_t ) ) ; GET_SADB ( sadb_x_counter , sizeof ( uint64_t ) ) ; GET_SADB ( sadb_protocol , sizeof ( uint64_t ) ) ; GET_SADB ( sadb_x_replay , sizeof ( uint64_t ) ) ; 

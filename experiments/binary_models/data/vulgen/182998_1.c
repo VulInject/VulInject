@@ -1,0 +1,1 @@
+void idxd_wq_del_cdev ( struct idxd_wq * wq ) { struct idxd_cdev * idxd_cdev ; idxd_cdev = wq -> idxd_cdev ; wq -> idxd_cdev = NULL ; put_device ( cdev_dev ( idxd_cdev ) ) ; } 

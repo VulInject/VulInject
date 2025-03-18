@@ -1,0 +1,1 @@
+static void srpt_dereg_mem ( srpt_ioc_t * ioc , srpt_mr_t * mr ) { ibt_status_t status ; status = ibt_deregister_mr ( ioc -> ioc_ibt_hdl , mr -> mr_hdl ) ; if ( status != IBT_SUCCESS ) { SRPT_DPRINTF_L1 ( "srpt_dereg_mem, error deregistering MR (%d)" , status ) ; } } 

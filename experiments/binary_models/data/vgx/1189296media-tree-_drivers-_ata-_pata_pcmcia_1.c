@@ -1,0 +1,1 @@
+static void pcmcia_remove_one ( struct pcmcia_device * pdev ) { struct ata_host * host = pdev -> priv ; if ( host ) { ata_host_detach ( host ) ; } pcmcia_disable_device ( pdev , NULL ) ; } 

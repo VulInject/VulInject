@@ -1,0 +1,1 @@
+unsigned short gregorio_add_texverb_as_note ( gregorio_note * * current_note , char * str , gregorio_type type , const gregorio_scanner_location * const loc ) { gregorio_note * element ; element = create_and_link_note ( current_note , loc ) ; element -> type = type ; element -> texverb = register_texverb ( str ) ; return element -> texverb ; } 

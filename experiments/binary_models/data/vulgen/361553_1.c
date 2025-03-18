@@ -1,0 +1,1 @@
+static void idp_led_set ( struct led_classdev * cdev , enum led_brightness b ) { struct idp_led * led = container_of ( cdev , idp_led , cdev ) ; if ( b != LED_OFF ) { reg &= ~ led -> mask ; } else { reg |= led -> mask ; } IDP_CPLD_LED_CONTROL = reg ; } 

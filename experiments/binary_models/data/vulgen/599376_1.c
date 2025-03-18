@@ -1,0 +1,1 @@
+struct fwnode_handle * iort_find_domain_token ( int trans_id ) { struct iort_its_msi_chip * its_msi_chip ; spin_lock ( & iort_msi_chip_lock ) ; list_for_each_entry ( , , ) { if ( its_msi_chip -> translation_id == trans_id ) { fw_node = its_msi_chip -> fw_node ; break ; } } spin_unlock ( & iort_msi_chip_lock ) ; return fw_node ; } 

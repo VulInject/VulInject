@@ -1,0 +1,1 @@
+compute_bb_for_insn ( ) { basic_block bb ; FOR_EACH_BB ( ) { rtx end = bb -> end ; rtx insn ; for ( insn = bb -> head ; ; insn = NEXT_INSN ( insn ) ) { if ( insn == end ) { break ; } } } } 

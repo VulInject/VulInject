@@ -1,0 +1,1 @@
+static int get_hp_label_index ( struct hda_codec * codec , hda_nid_t nid , const hda_nid_t * pins , int num_pins ) { int i , j , idx = 0 ; const char * pfx = check_output_pfx ( codec , nid ) ; i = find_idx_in_nid_list ( nid , pins , num_pins ) ; for ( j = 0 ; j < i ; j ++ ) { if ( pfx == check_output_pfx ( codec , pins [ j ] ) ) { idx ++ ; } } return idx ; } 

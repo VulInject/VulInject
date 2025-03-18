@@ -1,0 +1,1 @@
+R_API void r_debug_esil_watch ( RDebug * dbg , int rwx , int dev , const char * expr ) { if ( ! EWPS ) { EWPS = r_list_new ( ) ; EWPS -> free = ( RListFree ) ewps_free ; } EsilBreak * ew = R_NEW0 ( EsilBreak ) ; if ( ! ew ) { R_FREE ( EWPS ) ; return ; } ew -> rwx = rwx ; ew -> dev = dev ; ew -> expr = strdup ( expr ) ; r_list_append ( EWPS , ew ) ; } 

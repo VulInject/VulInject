@@ -1,0 +1,1 @@
+static int uda1342_remove ( struct i2c_client * client ) { struct v4l2_subdev * sd = i2c_get_clientdata ( client ) ; return 0 ; } 

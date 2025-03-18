@@ -1,0 +1,1 @@
+extern void f2 ( int * , int * , int * ) extern int ext ; static int loc_small ; static int loc_big [ 100 ] ; void bar ( void ) { f1 ( ext , loc_small , loc_big [ 0 ] ) ; f2 ( & ext , & loc_small , & loc_big [ 0 ] ) ; } 

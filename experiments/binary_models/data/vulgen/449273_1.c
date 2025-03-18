@@ -1,0 +1,1 @@
+static void pc_q35_5_2_machine_options ( MachineClass * m ) { pc_q35_6_0_machine_options ( m ) ; compat_props_add ( m -> compat_props , hw_compat_5_2 , hw_compat_5_2_len ) ; compat_props_add ( m -> compat_props , pc_compat_5_2 , pc_compat_5_2_len ) ; } 

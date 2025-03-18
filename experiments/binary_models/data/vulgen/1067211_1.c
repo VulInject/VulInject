@@ -1,0 +1,1 @@
+_cairo_deflate_stream_close ( ) { cairo_deflate_stream_t * stream = ( cairo_deflate_stream_t * ) base ; deflateEnd ( & stream -> zlib_stream ) ; return _cairo_output_stream_get_status ( stream -> output ) ; } 

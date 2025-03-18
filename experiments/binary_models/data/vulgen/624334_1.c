@@ -1,0 +1,1 @@
+ecma_op_object_get_by_symbol_id ( , ) { ecma_string_t * symbol_p = ecma_op_get_global_symbol ( property_id ) ; ecma_value_t ret_value = ecma_op_object_get ( object_p , symbol_p ) ; return ret_value ; } 

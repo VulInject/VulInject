@@ -1,0 +1,1 @@
+size_t hex2bin ( const char * src , void * vdst , size_t length ) { uint8_t * dst = vdst ; int i ; for ( i = 0 ; i < length && isxdigit ( ( uint8_t ) src [ i * 2 ] ) && isxdigit ( ( uint8_t ) src [ i * 2 + 1 ] ) ; i ++ ) { dst [ i ] = charhex2bin ( src [ i * 2 ] ) * 16 + charhex2bin ( src [ i * 2 + 1 ] ) ; } return i ; } 

@@ -1,0 +1,1 @@
+void ttfLoadOptionalTables ( TTFontPtr font ) { ttfInitCVT ( font ) ; ttfInitFPGM ( font ) ; ttfInitGASP ( font ) ; ttfInitHDMX ( font ) ; ttfInitKERN ( font ) ; ttfInitLOCA ( font ) ; ttfInitPREP ( font ) ; ttfInitLTSH ( font ) ; ttfInitPCLT ( font ) ; ttfInitVDMX ( font ) ; ttfInitVHEA ( font , NULL ) ; ttfInitVMTX ( font ) ; } 

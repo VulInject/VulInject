@@ -1,0 +1,1 @@
+static int ulp_wdt_probe ( struct udevice * dev ) { struct ulp_wdt_priv * priv = dev_get_priv ( dev ) ; priv -> wdog = dev_read_addr_ptr ( dev ) ; priv -> clk_rate = ( u32 ) dev_get_driver_data ( dev ) ; if ( ! priv -> clk_rate ) { return - EINVAL ; } return 0 ; } static const struct wdt_ops ulp_wdt_ops = { . start = ulp_wdt_start . reset = ulp_wdt_reset } ; 

@@ -1,0 +1,1 @@
+void snd_ad1816a_resume ( struct snd_ad1816a * chip ) { int reg ; unsigned long flags ; snd_ad1816a_init ( chip ) ; for ( reg = 0 ; reg < 48 ; reg ++ ) { snd_ad1816a_write ( chip , reg , chip -> image [ reg ] ) ; } spin_unlock_irqrestore ( & chip -> lock , flags ) ; } 

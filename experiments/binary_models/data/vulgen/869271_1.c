@@ -1,0 +1,1 @@
+void oauth_info_free ( struct oauth_info * info ) { if ( info ) { g_free ( info -> auth_url ) ; g_free ( info -> request_token ) ; g_free ( info -> token ) ; g_free ( info -> token_secret ) ; g_free ( info ) ; } } 

@@ -1,0 +1,1 @@
+static u32 tegra_get_format_fourcc_by_idx ( struct tegra_vi * vi , unsigned int index ) { return vi -> soc -> video_formats [ index ] . fourcc ; } 

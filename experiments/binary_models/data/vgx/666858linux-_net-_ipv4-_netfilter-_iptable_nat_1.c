@@ -1,0 +1,1 @@
+static int __init iptable_nat_init ( void ) { int ret = xt_register_template ( & nf_nat_ipv4_table , iptable_nat_table_init ) ; ret = register_pernet_subsys ( & iptable_nat_net_ops ) ; if ( ret < 0 ) { xt_unregister_template ( & nf_nat_ipv4_table ) ; return ret ; } return ret ; } 

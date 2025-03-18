@@ -1,0 +1,1 @@
+static bool generic_pkt_to_tuple ( const struct sk_buff * skb , unsigned int nhoff , struct nf_conntrack_tuple * tuple ) { memset ( & tuple -> dst . u3 , 0 , sizeof ( tuple -> dst . u3 ) ) ; return true ; } 

@@ -1,0 +1,1 @@
+int mbtowc_l ( wchar_t * _RESTRICT_KYWD pwc , const char * _RESTRICT_KYWD s , size_t n , locale_t loc ) { mbstate_t mbs = { 0 } ; size_t rval ; rval = mbrtowc_l ( pwc , s , n , & mbs , loc ) ; switch ( rval ) { case ( size_t ) - 2 : errno = EILSEQ ; case ( size_t ) - 1 : return ( - 1 ) ; default : return ( ( int ) rval ) ; } } 

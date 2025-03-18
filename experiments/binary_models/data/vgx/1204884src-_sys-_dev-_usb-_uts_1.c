@@ -1,0 +1,1 @@
+int uts_activate ( struct device * self , int act ) { struct uts_softc * sc = ( uts_softc * ) self ; int rv = 0 ; switch ( act ) { case DVACT_DEACTIVATE : if ( sc -> sc_wsmousedev != NULL ) { rv = config_deactivate ( sc -> sc_wsmousedev ) ; } usbd_deactivate ( sc -> sc_udev , NULL ) ; break ; } return ( rv ) ; } 

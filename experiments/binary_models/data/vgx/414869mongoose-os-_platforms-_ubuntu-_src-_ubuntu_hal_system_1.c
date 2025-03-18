@@ -1,0 +1,1 @@
+size_t mgos_get_free_heap_size ( void ) { long s , ps ; s = sysconf ( _SC_AVPHYS_PAGES , NULL ) ; ps = sysconf ( _SC_PAGESIZE ) ; return s * ps ; } 

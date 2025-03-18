@@ -1,0 +1,1 @@
+static int mp8869_set_voltage_sel ( struct regulator_dev * rdev , unsigned int sel ) { int ret ; ret = regmap_update_bits ( rdev -> regmap , MP886X_SYSCNTLREG1 , MP886X_GO , MP886X_GO ) ; sel <<= ffs ( rdev -> desc -> vsel_mask ) - 1 ; return regmap_update_bits ( rdev -> regmap , rdev -> desc -> vsel_reg , MP886X_V_BOOT | rdev -> desc -> vsel_mask , sel ) ; } 

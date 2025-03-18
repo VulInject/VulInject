@@ -1,0 +1,1 @@
+static void w9968cf_configure ( struct sd * sd ) { reg_w ( sd , 0x00 , 0xff00 ) ; reg_w ( sd , 0x00 , 0xbf17 ) ; reg_w ( sd , 0x00 , 0xbf10 ) ; reg_w ( sd , 0x01 , 0x0010 ) ; reg_w ( sd , 0x01 , 0x0000 ) ; reg_w ( sd , 0x01 , 0x0010 ) ; reg_w ( sd , 0x01 , 0x0030 ) ; } 

@@ -1,0 +1,1 @@
+static char * * append_to_array ( char * * src , int * size , char * newData ) { char * * tmp = malloc ( sizeof ( char * ) * ( * size + 1 ) ) ; int i ; for ( i = 0 ; i < * size ; i ++ ) { tmp [ i ] = src [ i ] ; } tmp [ * size ] = newData ; * size += 1 ; return tmp ; } 

@@ -1,0 +1,1 @@
+* / static inline const char * addr_to_a ( , ) { } ; switch ( af ) { case AF_INET : return inet_ntoa ( * ( ( in_addr * ) addr ) ) ; case AF_INET6 : return inet6_ntoa ( * ( ( in6_addr * ) addr ) ) ; default : return "<Addr in unknown AF>" ; } 

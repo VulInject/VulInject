@@ -1,0 +1,1 @@
+static struct otfname * fea_NameID2OTFName ( struct nameid * names ) { struct otfname * head = NULL , * cur ; while ( names != NULL ) { cur = chunkalloc ( sizeof ( otfname ) ) ; cur -> lang = names -> language ; cur -> name = names -> utf8_str ; cur -> next = head ; head = cur ; names = names -> next ; } return ( head ) ; } 

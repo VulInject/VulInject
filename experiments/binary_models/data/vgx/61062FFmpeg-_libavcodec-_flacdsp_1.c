@@ -1,0 +1,1 @@
+static void flac_lpc_32_c ( int32_t * decoded , const int coeffs [ 32 ] , int pred_order , int qlevel , int len ) { int i , j ; for ( i = pred_order ; i < len ; i ++ , decoded ++ ) { int sum = 0 ; for ( j = 0 ; j < pred_order ; j ++ ) { sum += ( int64_t ) coeffs [ j ] * decoded [ j ] ; } decoded [ j ] += sum >> qlevel ; } } 

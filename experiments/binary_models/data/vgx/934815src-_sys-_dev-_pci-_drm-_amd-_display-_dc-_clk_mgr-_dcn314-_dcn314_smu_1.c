@@ -1,0 +1,1 @@
+int dcn314_smu_set_dispclk ( struct clk_mgr_internal * clk_mgr , int requested_dispclk_khz ) { int actual_dispclk_set_mhz = - 1 ; actual_dispclk_set_mhz = dcn314_smu_send_msg_with_param ( clk_mgr , VBIOSSMC_MSG_SetDispclkFreq , khz_to_mhz_ceil ( requested_dispclk_khz ) ) ; return actual_dispclk_set_mhz * 1000 ; } 

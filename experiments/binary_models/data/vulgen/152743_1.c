@@ -1,0 +1,1 @@
+static irqreturn_t a20r_interrupt ( int irq , void * dev_id ) { struct clock_event_device * cd = dev_id ; * ( volatile u8 * ) A20R_PT_TIM0_ACK = 0 ; cd -> event_handler ( cd ) ; return IRQ_HANDLED ; } 

@@ -1,0 +1,1 @@
+static inline void rtllib_monitor_rx ( struct rtllib_device * ieee , struct sk_buff * skb , struct rtllib_rx_stats * rx_status , size_t hdr_length ) { skb -> dev = ieee -> dev ; skb_reset_mac_header ( skb ) ; skb_pull ( skb , hdr_length ) ; skb -> pkt_type = PACKET_OTHERHOST ; skb -> protocol = htons ( ETH_P_80211_RAW ) ; netif_rx ( skb ) ; } 

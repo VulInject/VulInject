@@ -1,0 +1,1 @@
+pidfile_t * read_pidfile ( void ) { FILE * f = fopen ( pidfilename , "r" ) ; if ( ! f ) { return NULL ; } pidfile_t * pf = malloc ( sizeof ( pidfile_t ) ) ; int read = fscanf ( f , "%20d %64s %128s port %128s" , & pf -> pid , pf -> cookie , pf -> host , pf -> port ) ; fclose ( f ) ; if ( read != 4 ) { pf = NULL ; } return pf ; } 

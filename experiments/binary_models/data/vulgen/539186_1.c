@@ -1,0 +1,1 @@
+void xlflip ( fcode_env_t * env ) { { lforth_t b_lf [ LF_PER_XF ] ; xforth_t b_xf ; } , b , c int i ; b . b_xf = pop_xforth ( env ) ; for ( i = 0 ; i < LF_PER_XF ; i ++ ) { c . b_lf [ i ] = b . b_lf [ ( LF_PER_XF - 1 ) - i ] ; } push_xforth ( env , c . b_xf ) ; } 

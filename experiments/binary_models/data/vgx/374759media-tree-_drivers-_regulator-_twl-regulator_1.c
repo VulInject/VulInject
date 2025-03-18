@@ -1,0 +1,1 @@
+static int twl4030_wait_pb_ready ( void ) { int ret ; int timeout = 10 ; u8 val ; { ret = twl_i2c_read_u8 ( TWL_MODULE_PM_MASTER , & val , TWL4030_PM_MASTER_PB_CFG ) ; if ( ret < 0 ) { return ret ; } mdelay ( 1 ) ; timeout -- ; } timeout ; return - ETIMEDOUT ; } 

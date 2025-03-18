@@ -1,0 +1,1 @@
+static int mt6360_charger_set_ichg ( struct mt6360_chg_info * mci , const union power_supply_propval * val ) { int sel ; linear_range_get_selector_within ( & mt6360_chg_range [ MT6360_RANGE_ICHG ] , val -> intval , & sel ) ; return regmap_update_bits ( mci -> regmap , MT6360_PMU_CHG_CTRL7 , MT6360_ICHG_MASK , sel << MT6360_ICHG_SHFT ) ; } 

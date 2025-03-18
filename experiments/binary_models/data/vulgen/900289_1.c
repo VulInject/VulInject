@@ -1,0 +1,1 @@
+static int empty_statement ( struct statement * stmt ) { if ( stmt -> type == STMT_EXPRESSION && ! stmt -> expression ) { return 1 ; } return 0 ; } 

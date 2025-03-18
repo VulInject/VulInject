@@ -1,0 +1,1 @@
+( st_thermal_register ) ; int st_thermal_unregister ( struct platform_device * pdev ) { struct st_thermal_sensor * sensor = platform_get_drvdata ( pdev ) ; st_thermal_sensor_off ( sensor ) ; return 0 ; } 

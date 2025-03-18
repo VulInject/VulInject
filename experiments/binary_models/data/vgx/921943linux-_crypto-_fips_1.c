@@ -1,0 +1,1 @@
+subsys_initcall ( fips_init ) ; module_exit ( fips_exit , NULL ) ; 

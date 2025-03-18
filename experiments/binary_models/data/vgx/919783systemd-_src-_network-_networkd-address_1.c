@@ -1,0 +1,1 @@
+int address_remove_and_drop ( Address * address ) { if ( ! address ) { return 0 ; } address_cancel_request ( address ) ; return address_drop ( address ) ; } 

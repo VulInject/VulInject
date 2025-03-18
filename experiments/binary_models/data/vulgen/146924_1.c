@@ -1,0 +1,1 @@
+static void ftgmac100_set_rx_mode ( struct net_device * netdev ) { struct ftgmac100 * priv = netdev_priv ( netdev ) ; ftgmac100_calc_mc_hash ( priv ) ; iowrite32 ( priv -> maht0 , priv -> base + FTGMAC100_OFFSET_MAHT0 ) ; iowrite32 ( priv -> maht1 , priv -> base + FTGMAC100_OFFSET_MAHT1 ) ; ftgmac100_start_hw ( priv ) ; } 

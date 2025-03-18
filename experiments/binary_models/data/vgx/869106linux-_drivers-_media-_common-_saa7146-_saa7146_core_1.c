@@ -1,0 +1,1 @@
+void saa7146_setgpio ( struct saa7146_dev * dev , int port , u32 data ) { int value = 0 ; BUG_ON ( port > 3 ) ; value = saa7146_read ( dev , GPIO_CTRL ) ; value &= ~ ( 0xff << ( 8 * port ) ) ; value |= ( data << ( 8 * port ) ) ; saa7146_write ( dev , GPIO_CTRL , value ) ; } 

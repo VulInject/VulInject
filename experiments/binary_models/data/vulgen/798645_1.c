@@ -1,0 +1,1 @@
+float ff_sine_ # # size [ size ] int ( void ) { write_fileheader ( ) for ( int i = 5 ; i <= 13 ; i ++ ) { ff_init_ff_sine_windows ( i ) ; printf ( "SINETABLE(%4i) = {\n" , 1 << i ) ; printf ( "};\n" ) ; ; } } ; return 0 ; 

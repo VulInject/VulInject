@@ -1,0 +1,1 @@
+static int32_t _grc_sat31 ( int32_t a , int32_t b ) { return ( ( int32_t ) ( v >> 31 ) ) ; } 

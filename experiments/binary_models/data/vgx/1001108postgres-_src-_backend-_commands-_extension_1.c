@@ -1,0 +1,1 @@
+static ExtensionVersionInfo * get_nearest_unprocessed_vertex ( List * evi_list ) { ExtensionVersionInfo * evi = NULL ; ListCell * lc ; ( lc evi_list ; ) { ExtensionVersionInfo * evi2 = ( ExtensionVersionInfo * ) lfirst ( lc ) ; if ( evi == NULL || evi -> distance > evi2 -> distance ) { evi = evi2 ; } } return evi ; } 

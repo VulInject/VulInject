@@ -1,0 +1,1 @@
+static int topaz_alloc_rx_buffers ( struct qtnf_pcie_topaz_state * ts ) { u16 i ; int ret = 0 ; for ( i = 0 ; i < ts -> base . rx_bd_num ; i ++ ) { ret = topaz_skb2rbd_attach ( ts , i , 0 ) ; if ( ret ) { break ; } } ts -> rx_bd_vbase [ ts -> base . rx_bd_num - 1 ] . info |= cpu_to_le32 ( QTN_BD_WRAP ) ; return ret ; } 

@@ -1,0 +1,1 @@
+static void zend_file_cache_serialize_func ( zval * zv , zend_persistent_script * script , zend_file_cache_metainfo * info , void * buf ) { zend_function * func ; SERIALIZE_PTR ( Z_PTR_P ( zv ) ) ; func = Z_PTR_P ( zv ) ; UNSERIALIZE_PTR ( func ) ; ZEND_ASSERT ( func -> type == ZEND_USER_FUNCTION ) ; } 

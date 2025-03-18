@@ -1,0 +1,1 @@
+static int __init hvc_tile_console_init ( void ) { hvc_instantiate ( 0 , 0 , & hvc_tile_get_put_ops ) ; add_preferred_console ( "hvc" , 0 ) ; return 0 ; } 

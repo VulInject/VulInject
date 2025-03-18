@@ -1,0 +1,1 @@
+base_init ( , , ) { ret_t ret ; cherokee_module_init_base ( MODULE ( collector ) , NULL , info ) ; collector -> free = NULL ; collector -> rx = 0 ; collector -> rx_partial = 0 ; collector -> tx = 0 ; collector -> tx_partial = 0 ; if ( ret != ret_ok ) { return ret ; } UNUSED ( config ) ; return ret_ok ; } 

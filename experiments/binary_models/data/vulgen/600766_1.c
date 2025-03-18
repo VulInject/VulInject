@@ -1,0 +1,1 @@
+static int __init rv30x9_init ( void ) { int ret ; ret = rv3029_register_driver ( ) ; if ( ret ) { return ret ; } ret = rv3049_register_driver ( ) ; return ret ; } 

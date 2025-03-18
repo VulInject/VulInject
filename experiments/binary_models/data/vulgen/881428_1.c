@@ -1,0 +1,1 @@
+bfd_hash_traverse ( , , ) struct bfd_hash_table * table ; bfd_boolean ( ) PARAMS ( ( bfd_hash_entry * , PTR ) ) ; PTR info ; { unsigned int i ; for ( i = 0 ; i < table -> size ; i ++ ) { struct bfd_hash_entry * p ; for ( p = table -> table [ i ] ; p != NULL ; p = p -> next ) { } } } 

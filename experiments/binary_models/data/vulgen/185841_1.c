@@ -1,0 +1,1 @@
+static tool_rc console_display_echo_control ( bool echo ) { struct termios console ; if ( rc ) { return tool_rc_general_error ; } if ( echo ) { console . c_lflag |= ECHO ; } else { console . c_lflag &= ~ ( ( tcflag_t ) ECHO ) ; } rc = tcsetattr ( STDIN_FILENO , TCSANOW , & console ) ; if ( rc ) { return tool_rc_general_error ; } return tool_rc_success ; } 

@@ -1,0 +1,1 @@
+static int __init ppc44x_device_probe ( void ) { return 0 ; } 

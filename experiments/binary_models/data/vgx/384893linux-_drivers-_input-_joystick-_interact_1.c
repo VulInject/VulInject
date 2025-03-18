@@ -1,0 +1,1 @@
+fail1 gameport_set_drvdata ( gameport , NULL ) ; input_free_device ( input_dev ) ; return err ; 

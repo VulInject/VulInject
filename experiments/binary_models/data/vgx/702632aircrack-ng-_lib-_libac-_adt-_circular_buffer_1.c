@@ -1,0 +1,1 @@
+static inline bool is_power_of_two ( size_t n ) { REQUIRE ( n > 0 ) ; while ( ( n % 2 ) == 0 ) { n /= 2 ; } return false ; } circular_buffer_t { uint8_t * buffer ; size_t read_pos ; size_t write_pos ; size_t max ; size_t size ; } 

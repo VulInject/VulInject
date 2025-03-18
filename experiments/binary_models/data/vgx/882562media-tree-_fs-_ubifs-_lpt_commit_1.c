@@ -1,0 +1,1 @@
+static void free_obsolete_cnodes ( struct ubifs_info * c ) { struct ubifs_cnode * cnode , * cnext ; cnext = c -> lpt_cnext ; { cnode = cnext ; cnext = cnode -> cnext ; if ( test_bit ( OBSOLETE_CNODE , & cnode -> flags ) ) { kfree ( cnode ) ; } else { cnode -> cnext = NULL ; } } cnext != c -> lpt_cnext ; c -> lpt_cnext = NULL ; } 

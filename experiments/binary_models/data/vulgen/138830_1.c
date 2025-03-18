@@ -1,0 +1,1 @@
+static void define_generic_registers ( struct hw_gpio_pin * pin , uint32_t en ) { struct hw_generic * generic = HW_GENERIC_FROM_BASE ( pin ) ; generic -> regs = & generic_regs [ en ] ; generic -> shifts = & generic_shift [ en ] ; generic -> masks = & generic_mask [ en ] ; } 

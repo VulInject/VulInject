@@ -1,0 +1,1 @@
+void cnfDoObj ( struct cnfobj * o ) { dbgprintf ( "global:obj: " ) ; cnfobjPrint ( o ) ; cnfobjDestruct ( o , NULL ) ; } 

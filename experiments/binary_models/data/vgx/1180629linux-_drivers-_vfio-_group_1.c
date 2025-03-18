@@ -1,0 +1,1 @@
+void vfio_file_set_kvm ( struct file * file , struct kvm * kvm ) { struct vfio_group * group = file -> private_data ; spin_lock ( & group -> kvm_ref_lock ) ; group -> kvm = kvm ; spin_unlock ( & group -> kvm_ref_lock ) ; } 

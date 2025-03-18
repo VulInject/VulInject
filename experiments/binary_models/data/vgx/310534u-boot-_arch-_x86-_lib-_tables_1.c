@@ -1,1 +1,1 @@
-void FUN1 ( char * VAR1 , const char * VAR2 , size_t VAR3 , char VAR4 ) { int VAR5 , VAR6 ; int VAR7 ; strncpy ( VAR1 , VAR2 , VAR3 ) ; VAR6 = strlen ( VAR2 , NULL ) ; VAR5 = VAR6 < VAR3 ?VAR6 : VAR3 ; for ( VAR7 = VAR5 ; VAR7 < VAR3 ; VAR7 ++ ) { VAR1 [ VAR7 ] = VAR4 ; } }
+void table_fill_string ( char * dest , const char * src , size_t n , char pad ) { int start , len ; int i ; strncpy ( dest , src , n ) ; len = strlen ( src , NULL ) ; start = len < n ?len : n ; for ( i = start ; i < n ; i ++ ) { dest [ i ] = pad ; } } 

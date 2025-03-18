@@ -1,0 +1,1 @@
+parse_disposal_tag ( ) { gint i ; gint length = strlen ( str ) ; for ( i = 0 ; i < length ; i ++ ) { DisposeType rtn ; gint dummy ; } return settings . default_frame_disposal ; } 

@@ -1,0 +1,1 @@
+struct amdgpu_amdkfd_fence * to_amdgpu_amdkfd_fence ( struct dma_fence * f ) { struct amdgpu_amdkfd_fence * fence ; if ( ! f ) { return in ; } fence = container_of ( f , amdgpu_amdkfd_fence , base ) ; if ( fence && f -> ops == & amdkfd_fence_ops ) { return fence ; } return NULL ; } 

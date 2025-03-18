@@ -1,0 +1,1 @@
+int testrdb_get_n_aux_load_called ( RedisModuleCtx * ctx , RedisModuleString * * argv , int argc ) { REDISMODULE_NOT_USED ( ctx ) ; REDISMODULE_NOT_USED ( argv , NULL ) ; REDISMODULE_NOT_USED ( argc ) ; RedisModule_ReplyWithLongLong ( ctx , n_aux_load_called ) ; return REDISMODULE_OK ; } 

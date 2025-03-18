@@ -1,0 +1,1 @@
+extern char * * copy_gr_names ( int ngids , char * * gr_names ) { char * * result ; result = xcalloc ( ngids , sizeof ( char * ) ) ; for ( int i = 0 ; i < ngids ; i ++ ) { result [ i ] = xstrdup ( gr_names [ i ] ) ; } return result ; } 

@@ -1,0 +1,1 @@
+static int xo1_rfkill_remove ( struct platform_device * pdev ) { struct rfkill * rfk = platform_get_drvdata ( pdev ) ; rfkill_unregister ( rfk ) ; return 0 ; } 

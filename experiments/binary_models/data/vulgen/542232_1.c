@@ -1,0 +1,1 @@
+static void mlx5_hairpin_unpair_queues ( struct mlx5_hairpin * hp ) { int i ; for ( i = 0 ; i < hp -> num_channels ; i ++ ) { mlx5_hairpin_modify_rq ( hp -> func_mdev , hp -> rqn [ i ] , MLX5_RQC_STATE_RDY , MLX5_RQC_STATE_RST , 0 , 0 ) ; } } 

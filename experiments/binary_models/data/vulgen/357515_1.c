@@ -1,0 +1,1 @@
+static void fun_disable_admin_queue ( struct fun_dev * fdev ) { struct fun_queue * admq = fdev -> admin_q ; if ( ! admq ) { return ; } fun_disable_ctrl ( fdev ) ; fun_free_irq ( admq ) ; __fun_process_cq ( admq , 0 ) ; kvfree ( fdev -> cmd_ctx ) ; fdev -> cmd_ctx = NULL ; fun_free_queue ( admq ) ; fdev -> admin_q = NULL ; } 

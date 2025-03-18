@@ -1,0 +1,1 @@
+static void close_and_detach_connection ( h2o_redis_client_t * client , const char * errstr ) { assert ( client -> _redis != NULL ) ; client -> state = H2O_REDIS_CONNECTION_STATE_CLOSED ; if ( client -> on_close != NULL ) { client -> on_close ( errstr ) ; } client -> _redis -> data = NULL ; client -> _redis = NULL ; } 

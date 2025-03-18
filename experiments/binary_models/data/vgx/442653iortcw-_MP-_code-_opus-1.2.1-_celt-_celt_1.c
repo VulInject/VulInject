@@ -1,0 +1,1 @@
+int resampling_factor ( opus_int32 rate ) { int ret ; switch ( rate ) { case 48000 : ret = 1 ; break ; case 24000 : ret = 2 ; break ; case 16000 : ret = 3 ; break ; case 12000 : ret = 4 ; break ; case 8000 : ret = 6 ; break ; default : celt_assert ( 0 ) ; break ; } return ret ; } 

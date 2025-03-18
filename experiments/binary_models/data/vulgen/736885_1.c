@@ -1,0 +1,1 @@
+weechat_guile_unload_name ( ) { struct t_plugin_script * ptr_script ; ptr_script = plugin_script_search ( guile_scripts , name ) ; if ( ptr_script ) { weechat_guile_unload ( ptr_script ) ; } else { weechat_printf ( NULL , weechat_gettext ( "%s%s: script \"%s\" not loaded" ) , weechat_prefix ( "error" ) , GUILE_PLUGIN_NAME , name ) ; } } 

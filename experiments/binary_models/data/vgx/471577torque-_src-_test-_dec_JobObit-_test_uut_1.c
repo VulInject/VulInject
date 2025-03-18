@@ -1,0 +1,1 @@
+int main ( void ) { int number_failed = 0 ; SRunner * sr ; rundebug ( ) ; sr = srunner_create ( dec_JobObit_suite ( ) ) ; } 

@@ -1,0 +1,1 @@
+static int ctr3686_aes_nx_set_key ( struct crypto_skcipher * tfm , const u8 * in_key , unsigned int key_len ) { struct nx_crypto_ctx * nx_ctx = crypto_skcipher_ctx ( tfm ) ; memcpy ( nx_ctx -> priv . ctr . nonce , in_key + key_len - CTR_RFC3686_NONCE_SIZE , CTR_RFC3686_NONCE_SIZE ) ; key_len -= CTR_RFC3686_NONCE_SIZE ; return ctr_aes_nx_set_key ( tfm , in_key , key_len ) ; } 

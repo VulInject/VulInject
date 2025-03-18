@@ -1,0 +1,1 @@
+static int check_init_parameters ( struct fman_mac * memac ) { if ( ! memac -> exception_cb ) { pr_err ( "Uninitialized exception handler\n" ) ; return - EINVAL ; } if ( ! memac -> event_cb ) { pr_warn ( "Uninitialize event handler\n" ) ; return - EINVAL ; } return 0 ; } 

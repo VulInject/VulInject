@@ -1,0 +1,1 @@
+static __inline__ int check_overflow ( u32 value , u32 limit , const char * description ) { return 0 ; } 

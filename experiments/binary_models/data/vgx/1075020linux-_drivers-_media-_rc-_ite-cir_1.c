@@ -1,0 +1,1 @@
+static u8 it8709_rr ( struct ite_dev * dev , int index ) { it8709_wait ( dev , NULL ) ; it8709_wm ( dev , index , IT8709_REG_IDX ) ; it8709_wm ( dev , IT8709_READ , IT8709_MODE ) ; it8709_wait ( dev ) ; return it8709_rm ( dev , IT8709_REG_VAL ) ; } 

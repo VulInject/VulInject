@@ -1,0 +1,1 @@
+err ret = tmp ; strcat ( ret , HELD_TYPE_URI ) ; * lgth = strlen ( ret ) ; return ret ; err PKG_MEM_ERROR ; if ( ret != NULL ) { ret = NULL ; } * lgth = 0 ; return NULL ; 

@@ -1,0 +1,1 @@
+void clear_empty ( void * * state ) { Autocomplete ac = autocomplete_new ( ) ; } 

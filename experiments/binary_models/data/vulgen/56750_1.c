@@ -1,0 +1,1 @@
+int main ( ) { gdImagePtr im ; int c ; im = gdImageCreate ( 1 , 1 ) ; if ( c < 0 ) { gdImageDestroy ( im ) ; return 1 ; } gdImageColorDeallocate ( im , c ) ; if ( ! im -> open [ c ] ) { gdImageDestroy ( im ) ; return 1 ; } gdImageColorDeallocate ( im , gdMaxColors ) ; gdImageColorDeallocate ( im , - 1 ) ; gdImageDestroy ( im ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void pci_dev_find_ofnode ( struct udevice * bus , phys_addr_t bdf , ofnode * rnode ) { struct fdt_pci_addr addr ; ofnode node ; int ret ; dev_for_each_subnode ( , ) { ret = ofnode_read_pci_addr ( node , FDT_PCI_SPACE_CONFIG , "reg" , & addr ) ; if ( PCI_MASK_BUS ( addr . phys_hi ) != PCI_MASK_BUS ( bdf ) ) { continue ; } * rnode = node ; break ; } } 

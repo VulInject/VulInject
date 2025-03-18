@@ -1,0 +1,1 @@
+char * discui_ ( char * cp , unsigned value , unsigned * ndigs ) { fprintf ( stderr , "The call to discui_ needs to be mocked!!\n" ) ; exit ( 1 ) ; } void disi10d_ ( ) { } int diswsi ( tcp_chan * chan , int value ) { fprintf ( stderr , "The call to diswsi needs to be mocked!!\n" ) ; } 

@@ -1,0 +1,1 @@
+( tpmi_get_platform_data , INTEL_TPMI ) ; int tpmi_get_resource_count ( struct auxiliary_device * auxdev ) { struct intel_vsec_device * vsec_dev = auxdev_to_ivdev ( auxdev ) ; return 0 ; } 

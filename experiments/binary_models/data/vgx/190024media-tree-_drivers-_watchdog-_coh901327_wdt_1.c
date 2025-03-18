@@ -1,0 +1,1 @@
+static int __exit coh901327_remove ( struct platform_device * pdev ) { watchdog_unregister_device ( & coh901327_wdt ) ; coh901327_disable ( ) ; free_irq ( irq , pdev ) ; clk_disable_unprepare ( clk ) ; clk_put ( clk , NULL ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+gimp_stroke_options_get_emulate_dynamics ( ) { return GET_PRIVATE ( options ) -> emulate_dynamics ; } 

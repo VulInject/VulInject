@@ -1,0 +1,1 @@
+struct tcp_chan * DIS_tcp_setup ( int fd ) { fprintf ( stderr , "The call to DIS_tcp_setup needs to be mocked!!\n" ) ; exit ( 1 ) ; } int DIS_tcp_wflush ( tcp_chan * chan ) { fprintf ( stderr , "The call to DIS_tcp_wflush needs to be mocked!!\n" ) ; } int encode_DIS_ReqHdr ( struct tcp_chan * chan , int reqt , char * user ) { } 

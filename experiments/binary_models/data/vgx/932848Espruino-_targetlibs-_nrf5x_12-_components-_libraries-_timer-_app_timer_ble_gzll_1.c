@@ -1,0 +1,1 @@
+static void rtc1_stop ( void ) { NVIC_DisableIRQ ( RTC1_IRQn ) ; NRF_RTC1 -> EVTENCLR = RTC_EVTEN_COMPARE0_Msk ; NRF_RTC1 -> INTENCLR = RTC_INTENSET_COMPARE0_Msk ; NRF_RTC1 -> TASKS_STOP = 1 ; nrf_delay_us ( MAX_RTC_TASKS_DELAY ) ; m_ticks_latest = 0 ; nrf_delay_us ( MAX_RTC_TASKS_DELAY ) ; m_rtc1_running = false ; } 

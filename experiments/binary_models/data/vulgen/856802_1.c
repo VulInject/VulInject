@@ -1,0 +1,1 @@
+static void comedi_device_cleanup ( struct comedi_device * dev ) { struct module * driver_module = NULL ; if ( ! dev ) { return ; } mutex_lock ( & dev -> mutex ) ; if ( dev -> attached ) { driver_module = dev -> driver -> module ; } comedi_device_detach ( dev ) ; mutex_unlock ( & dev -> mutex ) ; } 

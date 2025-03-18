@@ -1,0 +1,1 @@
+int db_set_variable ( db_expr_t value ) { struct db_variable * vp ; db_write_variable ( vp , & value ) ; return ( 1 ) ; } 

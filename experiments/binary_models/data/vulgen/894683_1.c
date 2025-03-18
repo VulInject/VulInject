@@ -1,0 +1,1 @@
+int _dwarf_pro_encode_leb128_nm ( Dwarf_Unsigned val , int * nbytes , char * space , int splen ) { char * a ; char * end = space + splen ; a = space ; { unsigned char uc ; uc = val & DATA_MASK ; val >>= DIGIT_WIDTH ; if ( val != 0 ) { uc |= MORE_BYTES ; } * a = uc ; a ++ ; } val ; * nbytes = ( int ) ( a - space ) ; return DW_DLV_OK ; } 

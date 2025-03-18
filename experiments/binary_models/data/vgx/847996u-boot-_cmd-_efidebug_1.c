@@ -1,0 +1,1 @@
+static int do_efi_capsule ( struct cmd_tbl * cmdtp , int flag , int argc , char * const argv [ ] ) { struct cmd_tbl * cp ; if ( argc < 2 ) { return CMD_RET_USAGE ; } argc -- ; argv ++ ; cp = find_cmd_tbl ( argv [ 0 ] , cmd_efidebug_capsule_sub , ARRAY_SIZE ( cmd_efidebug_capsule_sub ) ) ; return cp -> cmd ( cmdtp , flag , argc , argv ) ; } 

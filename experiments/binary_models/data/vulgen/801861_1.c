@@ -1,0 +1,1 @@
+ptrdiff_t stride ; void ff_put_signed_pixels_clamped_rvv ( const int16_t * block , uint8_t * pixels , ptrdiff_t stride ) void ff_add_pixels_clamped_rvv ( const int16_t * block , uint8_t * pixels , ptrdiff_t stride ) av_cold void ff_idctdsp_init_riscv ( IDCTDSPContext * c , AVCodecContext * avctx , unsigned high_bit_depth ) { int flags = av_get_cpu_flags ( ) ; } 

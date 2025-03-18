@@ -1,0 +1,1 @@
+static void rm_submodule_from_index ( const char * name ) { git_index * index ; size_t pos ; cl_git_pass ( git_repository_index ( & index , g_repo ) ) ; cl_assert ( ! git_index_find ( & pos , index , name ) ) ; cl_git_pass ( git_index_remove ( index , name , 0 ) ) ; cl_git_pass ( git_index_write ( index ) ) ; } 

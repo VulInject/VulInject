@@ -1,0 +1,1 @@
+static void i_detach_ctlop ( dev_info_t * devi , ddi_detach_cmd_t cmd , ddi_pre_post_t w , int ret ) { int error ; struct detachspec ds ; dev_info_t * pdip = ddi_get_parent ( devi ) ; ds . cmd = cmd ; ds . when = w ; ds . pdip = pdip ; ds . result = ret ; } 

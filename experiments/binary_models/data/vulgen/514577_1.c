@@ -1,0 +1,1 @@
+void set_trace_flags ( const char * s ) { char mode = 0 ; unsigned int f ; if ( * s == '+' || * s == '-' ) { mode = * s ++ ; } while ( * s ) { f |= letter_to_flag ( * s ++ ) ; } switch ( mode ) { case 0 : trace_flags = f ; break ; case '+' : trace_flags |= f ; break ; case '-' : trace_flags &= ~ f ; break ; } } 

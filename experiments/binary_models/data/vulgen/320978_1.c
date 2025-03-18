@@ -1,0 +1,1 @@
+static uint32_t PatternDatabaseHash ( HashTable * ht , void * data , uint16_t len ) { const PatternDatabase * pd = data ; uint32_t hash = 0 ; for ( uint32_t i = 0 ; i < pd -> pattern_cnt ; i ++ ) { hash = SCHSPatternHash ( pd -> parray [ i ] , hash ) ; } hash %= ht -> array_size ; return hash ; } 

@@ -1,0 +1,1 @@
+static void error ( char * m ) extern int end ; static ulg free_mem_ptr ; static ulg free_mem_end_ptr ; int fill_inbuf ( void ) { inbuf = input_data ; insize = input_data_size ; inptr = 1 ; return inbuf [ 0 ] ; } 

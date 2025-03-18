@@ -1,0 +1,1 @@
+static struct iommu_group * kvm_vfio_file_iommu_group ( struct file * file ) { struct iommu_group * ( * fn ) ( file * file ) ; struct iommu_group * ret ; fn = symbol_get ( vfio_file_iommu_group ) ; ret = fn ( file ) ; symbol_put ( vfio_file_iommu_group ) ; return ret ; } 

@@ -1,0 +1,1 @@
+void BotInterbreedGoalFuzzyLogic ( int parent1 , int parent2 , int child ) { bot_goalstate_t * p1 , * p2 , * c ; p1 = BotGoalStateFromHandle ( parent1 ) ; p2 = BotGoalStateFromHandle ( parent2 ) ; c = BotGoalStateFromHandle ( child ) ; if ( ! p1 || ! p2 || ! c ) { return ; } } 

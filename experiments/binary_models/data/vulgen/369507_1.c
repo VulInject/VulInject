@@ -1,0 +1,1 @@
+DAT_RETURN dat_registry_remove_provider ( IN DAT_PROVIDER * provider , IN const DAT_PROVIDER_INFO * provider_info ) { dat_os_dbg_print ( DAT_OS_DBG_TYPE_PROVIDER_API , "DAT Registry: dat_registry_remove_provider() called\n" ) ; if ( DAT_FALSE == udat_check_state ( ) ) { return ( DAT_ERROR ( DAT_INVALID_STATE , 0 ) ) ; } return ( dat_dr_remove ( provider_info ) ) ; } 

@@ -1,0 +1,1 @@
+MOD_TEST ( ) { memset ( & cfg , 0 , sizeof ( cfg ) ) ; setcfg ( & test ) ; HookAdd ( modinfo -> handle , HOOKTYPE_CONFIGTEST , 0 , tkldb_config_test ) ; HookAdd ( modinfo -> handle , HOOKTYPE_CONFIGPOSTTEST , 0 , tkldb_config_posttest ) ; return MOD_SUCCESS ; } 

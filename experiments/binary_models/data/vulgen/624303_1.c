@@ -1,0 +1,1 @@
+static bool on_option ( char key , char * value ) { switch ( key ) { case 'f' : ctx . overwrite = true ; break ; case 'e' : ctx . pathToPublicKeyOfNewParent = value ; break ; case 'o' : ctx . exportedData = value ; break ; case 'p' : break ; } return true ; } 

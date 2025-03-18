@@ -1,0 +1,1 @@
+static zend_always_inline bool is_known_valid_utf8 ( zend_string * subject_str , PCRE2_SIZE start_offset ) { if ( ! ( GC_FLAGS ( subject_str ) & IS_STR_VALID_UTF8 ) ) { return 0 ; } return ( ZSTR_VAL ( subject_str ) [ start_offset ] & 0xc0 ) != 0x80 ; } 

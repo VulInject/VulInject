@@ -1,0 +1,1 @@
+static void CG_DrawSelectedPlayerStatus ( rectDef_t * rect ) { clientInfo_t * ci = cgs . clientinfo + sortedTeamPlayers [ CG_GetSelectedPlayer ( ) ] ; if ( ci ) { qhandle_t h ; if ( cgs . orderPending ) { h = CG_StatusHandle ( cgs . currentOrder ) ; } else { h = CG_StatusHandle ( ci -> teamTask ) ; } CG_DrawPic ( rect -> x , rect -> y , rect -> w , rect -> h , h ) ; } } 

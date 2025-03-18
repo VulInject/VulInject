@@ -1,0 +1,1 @@
+void delete_channellist ( channellist_param_t * * channellist ) { channel_param_t * channelPtr , * channelNext ; channelPtr = ( * channellist ) -> first ; while ( channelPtr != NULL ) { channelNext = channelPtr -> next ; fprintf ( logstream , "local log: channel %s deleted!\n" , channelPtr -> cid ) ; opj_free ( channelPtr ) ; } opj_free ( * channellist ) ; } 

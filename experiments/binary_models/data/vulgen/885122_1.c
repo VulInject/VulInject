@@ -1,0 +1,1 @@
+void get_language ( struct language * lang ) { char * locale = setlocale ( LC_ALL , NULL ) ; if ( ! locale ) { lang -> charset = g_malloc0 ( 1 ) ; return ; } char * encoding = strchr ( locale , '.' ) ; if ( ! encoding ) { lang -> charset = g_malloc0 ( 1 ) ; return ; } * encoding = '\0' ; ++ encoding ; } 

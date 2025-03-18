@@ -1,1 +1,1 @@
-static int FUN1 ( struct VAR1 * VAR2 , u64 VAR3 , ulong VAR4 ) { struct VAR5 * VAR6 = FUN2 ( VAR2 ) ; FUN3 ( VAR2 ) ; FUN4 ( VAR6 -> VAR7 , VAR6 -> VAR8 , VAR3 ) ; FUN5 ( VAR6 -> VAR7 , NULL ) ; return FUN6 ( VAR2 ) ; }
+static int designware_wdt_start ( struct udevice * dev , u64 timeout , ulong flags ) { struct designware_wdt_priv * priv = dev_get_priv ( dev ) ; designware_wdt_stop ( dev ) ; designware_wdt_settimeout ( priv -> base , priv -> clk_khz , timeout ) ; designware_wdt_enable ( priv -> base , NULL ) ; return designware_wdt_reset ( dev ) ; } 

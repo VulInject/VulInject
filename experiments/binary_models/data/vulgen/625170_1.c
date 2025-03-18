@@ -1,0 +1,1 @@
+tracker_await_file_data_new ( , ) { TrackerAwaitFileData * data ; data = g_slice_new0 ( TrackerAwaitFileData ) ; data -> uri = g_strdup ( uri ) ; return data ; } 

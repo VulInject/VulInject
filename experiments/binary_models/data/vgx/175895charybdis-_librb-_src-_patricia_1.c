@@ -1,0 +1,1 @@
+static uint8_t * prefix_tochar ( rb_prefix_t * prefix ) { return ( ( uint8_t * ) & prefix -> add . sin ) ; } 

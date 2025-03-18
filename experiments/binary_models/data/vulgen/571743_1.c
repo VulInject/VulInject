@@ -1,0 +1,1 @@
+int dec_alphabook1_intr_line ( void * lcv , int ih ) { return sio_intr_line ( NULL , ih ) ; } 

@@ -1,0 +1,1 @@
+int getentropy ( void * buf , size_t len ) { errno = EIO ; return ( - 1 ) ; } 

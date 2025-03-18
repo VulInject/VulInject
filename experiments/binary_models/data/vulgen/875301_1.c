@@ -1,0 +1,1 @@
+static void _dump_resv_port_info ( void ) { int i ; char * tmp_char ; for ( i = 0 ; i < port_resv_cnt ; i ++ ) { if ( bit_set_count ( port_resv_table [ i ] ) == 0 ) { continue ; } tmp_char = bitmap2node_name ( port_resv_table [ i ] ) ; info ( "Port %d: %s" , ( i + port_resv_min ) , tmp_char ) ; } } 

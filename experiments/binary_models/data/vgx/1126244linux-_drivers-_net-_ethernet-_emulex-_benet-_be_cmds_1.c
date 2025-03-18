@@ -1,0 +1,1 @@
+static int be_mcc_notify ( struct be_adapter * adapter ) { struct be_queue_info * mccq = & adapter -> mcc_obj . q ; u32 val = 0 ; val |= mccq -> id & DB_MCCQ_RING_ID_MASK ; val |= 1 << DB_MCCQ_NUM_POSTED_SHIFT ; wmb ( ) ; iowrite32 ( val , adapter -> db + DB_MCCQ_OFFSET ) ; return 0 ; } 

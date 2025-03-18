@@ -1,0 +1,1 @@
+( omap_dm_timer_set_prescaler ) ; int omap_dm_timer_set_int_enable ( struct omap_dm_timer * timer , unsigned int value ) { omap_dm_timer_enable ( timer ) ; __omap_dm_timer_int_enable ( timer , value ) ; timer -> context . tier = value ; timer -> context . twer = value ; omap_dm_timer_disable ( timer ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+extern Mallinfo_t mallinfo ( ) { Vmstat_t sb ; Mallinfo_t mi ; VMFLINIT ( ) ; if ( vmstat ( Vmregion , & sb ) >= 0 ) { mi . arena = sb . extent ; mi . ordblks = sb . n_busy + sb . n_free ; mi . uordblks = sb . s_busy ; mi . fordblks = sb . s_free ; } return mi ; } 

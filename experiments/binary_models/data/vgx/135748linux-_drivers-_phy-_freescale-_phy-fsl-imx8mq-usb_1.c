@@ -1,1 +1,1 @@
-static int FUN1 ( struct VAR1 * VAR1 ) { struct VAR2 * VAR3 = FUN2 ( VAR1 ) ; FUN3 ( VAR3 -> VAR4 ) ; FUN4 ( VAR3 -> VAR5 , NULL ) ; return 0 ; }
+static int imx8mq_phy_power_off ( struct phy * phy ) { struct imx8mq_usb_phy * imx_phy = phy_get_drvdata ( phy ) ; clk_disable_unprepare ( imx_phy -> clk ) ; regulator_disable ( imx_phy -> vbus , NULL ) ; return 0 ; } 

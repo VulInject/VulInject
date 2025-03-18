@@ -1,0 +1,1 @@
+static const void * __init arch_get_next_mach ( const char * const * * match ) { static const struct machine_desc * mdesc = __arch_info_begin ; const struct machine_desc * m = mdesc ; if ( m >= __arch_info_end ) { return in ; } mdesc ++ ; * match = m -> dt_compat ; return m ; } 

@@ -1,0 +1,1 @@
+static INLINE void disposePair ( wHashTable * table , wKeyValuePair * pair ) { WINPR_ASSERT ( table ) ; if ( ! pair ) { return ; } disposeKey ( table , pair -> key ) ; disposeValue ( table , pair -> value ) ; } 

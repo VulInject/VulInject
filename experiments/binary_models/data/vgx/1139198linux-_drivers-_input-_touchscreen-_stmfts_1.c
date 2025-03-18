@@ -1,0 +1,1 @@
+static int stmfts_suspend ( struct device * dev ) { struct stmfts_data * sdata = dev_get_drvdata ( dev ) ; stmfts_power_off ( sdata , NULL ) ; return 0 ; } 

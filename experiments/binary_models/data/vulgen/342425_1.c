@@ -1,0 +1,1 @@
+static void _dump_tres ( ctxt_t * ctxt ) { list_t * tres_list = NULL ; slurmdb_tres_cond_t tres_cond = { . with_deleted = 1 } ; if ( db_query_list ( ctxt , & tres_list , slurmdb_tres_get , & tres_cond ) ) { return ; } } 

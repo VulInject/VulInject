@@ -1,0 +1,1 @@
+static int mtk_hdmi_phy_power_off ( struct phy * phy ) { struct mtk_hdmi_phy * hdmi_phy = phy_get_drvdata ( phy ) ; mtk_hdmi_phy_disable_tmds ( hdmi_phy ) ; return 0 ; } 

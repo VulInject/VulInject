@@ -1,0 +1,1 @@
+nautilus_floating_bar_set_details_label ( , ) { if ( g_strcmp0 ( self -> details_label , label ) != 0 ) { self -> details_label = g_strdup ( label ) ; g_object_notify_by_pspec ( G_OBJECT ( self ) , properties [ PROP_DETAILS_LABEL ] ) ; update_labels ( self ) ; } } 

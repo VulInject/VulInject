@@ -1,0 +1,1 @@
+static const char * LYSkipQuoted ( const char * s ) { int escaped ; ++ s ; while ( * s != 0 ) { if ( escaped ) { escaped = 0 ; } if ( * s == ESCAPE ) { escaped = 1 ; } if ( * s == DQUOTE ) { ++ s ; break ; } ++ s ; } return s ; } 

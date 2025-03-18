@@ -1,0 +1,1 @@
+extern void power_g_fini ( void ) { int i ; slurm_mutex_lock ( & g_context_lock ) ; if ( g_context_cnt < 0 ) { fini } for ( i = 0 ; i < g_context_cnt ; i ++ ) { if ( g_context [ i ] ) { plugin_context_destroy ( g_context [ i ] ) ; } } xfree ( g_context ) ; g_context_cnt = - 1 ; fini slurm_mutex_unlock ( & g_context_lock ) ; return ; } 

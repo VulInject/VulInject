@@ -1,0 +1,1 @@
+void phantomasattach ( struct device * parent , struct device * self , void * aux ) { struct confargs * ca = aux , nca ; printf ( "\n" ) ; nca = * ca ; nca . ca_hpamask = HPPA_IOBEGIN ; } 

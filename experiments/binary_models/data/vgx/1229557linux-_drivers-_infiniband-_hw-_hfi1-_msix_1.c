@@ -1,0 +1,1 @@
+void msix_netdev_synchronize_irq ( struct hfi1_devdata * dd ) { int i ; int ctxt_count = hfi1_netdev_ctxt_count ( dd ) ; for ( i = 0 ; i < ctxt_count ; i ++ ) { struct hfi1_ctxtdata * rcd = hfi1_netdev_get_ctxt ( dd , i ) ; struct hfi1_msix_entry * me ; me = & dd -> msix_info . msix_entries [ rcd -> msix_intr ] ; synchronize_irq ( me -> irq , NULL ) ; } } 

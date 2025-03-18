@@ -1,0 +1,1 @@
+static av_cold int mpeg4video_parse_init ( AVCodecParserContext * s ) { struct Mp4vParseContext * pc = s -> priv_data ; pc -> dec_ctx . m . slice_context_count = 1 ; return 0 ; } 

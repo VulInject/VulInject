@@ -1,0 +1,1 @@
+int HELPER ( gvec_ # # NAME # # BITS ) ( void * v1 , const void * v2 , CPUS390XState * env , uint32_t desc ) ( const uint8_t erm = extract32 ( simd_data ( desc ) , 4 , 4 ) , const bool se = extract32 ( simd_data ( desc ) , 3 , 1 ) , const bool XxC = extract32 ( simd_data ( desc ) , 2 , 1 ) , vop # # BITS # # _2 ( v1 , v2 , env , se , XxC , erm , FN , GETPC ( ) ) ) ; 

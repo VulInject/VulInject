@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "Freescale MMA7455L I2C accelerometer driver" ) ; MODULE_LICENSE ( "GPL v2" ) ; MODULE_IMPORT_NS ( IIO_MMA7455 , NULL ) ; 

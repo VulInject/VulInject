@@ -1,0 +1,1 @@
+R_API bool r_anal_function_set_label ( RAnalFunction * fcn , const char * name , ut64 addr ) { if ( ht_pp_find ( fcn -> label_addrs , name , NULL ) ) { return false ; } char * n = strdup ( name ) ; if ( ! ht_up_insert ( fcn -> labels , addr , n ) ) { free ( n ) ; return false ; } ht_pp_insert ( fcn -> label_addrs , name , ut64_new ( addr ) ) ; return true ; } 

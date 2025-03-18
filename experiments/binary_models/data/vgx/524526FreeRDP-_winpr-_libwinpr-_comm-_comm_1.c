@@ -1,0 +1,1 @@
+BOOL GetCommMask ( HANDLE hFile , PDWORD lpEvtMask ) { WINPR_COMM * pComm = ( WINPR_COMM * ) hFile ; if ( ! pComm ) { return FALSE ; } CommLog_Print ( WLOG_ERROR , "Not implemented" ) ; SetLastError ( ERROR_CALL_NOT_IMPLEMENTED ) ; return FALSE ; } 

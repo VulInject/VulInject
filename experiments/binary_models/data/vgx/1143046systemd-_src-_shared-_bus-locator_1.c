@@ -1,0 +1,1 @@
+int bus_get_property_string ( sd_bus * bus , const BusLocator * locator , const char * member , sd_bus_error * error , char * * ret ) { return sd_bus_get_property_string ( bus , locator -> destination , locator -> path , locator -> interface , member , error , ret ) ; } 

@@ -1,0 +1,1 @@
+static void spi_cs_deactivate ( struct udevice * dev ) { struct udevice * bus = dev -> parent ; struct altera_spi_priv * priv = dev_get_priv ( bus ) ; struct altera_spi_regs * const regs = priv -> regs ; writel ( 0 , & regs -> control ) ; } 

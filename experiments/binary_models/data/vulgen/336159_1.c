@@ -1,0 +1,1 @@
+void FAST_FUNC seek_by_jump ( int fd , off_t amount ) { if ( amount && lseek ( fd , amount , SEEK_CUR ) == ( off_t ) - 1 ) { else { bb_perror_msg_and_die ( "seek failure" ) ; } } } 

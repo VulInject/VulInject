@@ -1,0 +1,1 @@
+int main ( void ) { RUN_TEST ( clear_dev_list ) ; RUN_TEST ( add_to_list ) ; RUN_TEST ( pcie_read ) ; RUN_TEST ( dispatch_notification ) ; RUN_TEST ( access_config ) ; RUN_TEST ( plugin_config_fail ) ; RUN_TEST ( plugin_config ) ; RUN_TEST ( dispatch_correctable_errors ) ; RUN_TEST ( dispatch_uncorrectable_errors ) ; RUN_TEST ( device_status_errors , NULL ) ; END_TEST ; } 

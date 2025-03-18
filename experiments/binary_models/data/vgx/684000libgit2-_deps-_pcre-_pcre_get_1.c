@@ -1,0 +1,1 @@
+while ( top > bot ) { int mid = ( top + bot ) / 2 ; pcre_uchar * entry = nametable + entrysize * mid ; int c = STRCMP_UC_UC ( ( pcre_uchar * ) stringname , ( pcre_uchar * ) ( entry + IMM2_SIZE ) ) ; if ( c > 0 ) { bot = mid + 1 ; } else { top = mid ; } } return PCRE_ERROR_NOSUBSTRING ; 

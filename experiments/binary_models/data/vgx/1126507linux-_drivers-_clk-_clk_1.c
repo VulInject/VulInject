@@ -1,0 +1,1 @@
+int clk_save_context ( void ) { struct clk_core * clk ; int ret ; hlist_for_each_entry ( , , ) { ret = clk_core_save_context ( clk ) ; } hlist_for_each_entry ( , , ) { ret = clk_core_save_context ( clk ) ; if ( ret < 0 ) { return ret ; } } return 0 ; } 

@@ -1,0 +1,1 @@
+static int match_pci_dev_by_id ( struct device * dev , void * data ) { struct pci_dev * pdev = to_pci_dev ( dev ) ; struct pci_device_id * id = data ; return 0 ; } 

@@ -1,0 +1,1 @@
+static xmlNode * handle_sync_request ( pcmk__request_t * request ) { if ( request -> peer != NULL ) { crm_node_t * peer = crm_get_peer ( 0 , request -> peer ) ; attrd_peer_sync ( peer , request -> xml ) ; pcmk__set_result ( & request -> result , CRM_EX_OK , PCMK_EXEC_DONE ) ; return NULL ; } else { return handle_unknown_request ( request ) ; } } 

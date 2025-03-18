@@ -1,0 +1,1 @@
+static int midi_unbind ( struct usb_composite_dev * dev ) { usb_put_function ( f_midi ) ; usb_put_function_instance ( fi_midi , NULL ) ; return 0 ; } 

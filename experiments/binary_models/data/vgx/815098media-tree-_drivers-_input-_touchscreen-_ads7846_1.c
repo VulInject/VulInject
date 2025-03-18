@@ -1,0 +1,1 @@
+static umode_t ads7846_is_visible ( struct kobject * kobj , struct attribute * attr , int index ) { struct device * dev = container_of ( kobj , device , kobj ) ; struct ads7846 * ts = dev_get_drvdata ( dev ) ; if ( ts -> model == 7845 && index != 2 ) { return 0 ; } return attr -> mode ; } 

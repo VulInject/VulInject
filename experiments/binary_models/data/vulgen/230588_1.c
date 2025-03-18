@@ -1,0 +1,1 @@
+void audit_symlink_create ( vnode_t * dvp , char * sname , char * target , int error ) { t_audit_data_t * tad ; vnode_t * vp ; tad = U2A ( u ) ; if ( tad -> tad_flag == 0 ) { return ; } au_uwrite ( au_to_text ( target ) ) ; if ( error ) { return ; } error = VOP_LOOKUP ( dvp , sname , & vp , NULL , 0 , NULL , CRED ( ) , NULL , NULL , NULL ) ; } 

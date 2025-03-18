@@ -1,0 +1,1 @@
+gimp_thumbs_delete_for_uri_local ( ) { gint i ; g_return_if_fail ( gimp_thumb_initialized ) ; g_return_if_fail ( uri != NULL ) ; for ( i = 0 ; i < thumb_num_sizes ; i ++ ) { gchar * filename = gimp_thumb_name_from_uri_local ( uri , thumb_sizes [ i ] ) ; if ( filename ) { g_unlink ( filename ) ; } } } 

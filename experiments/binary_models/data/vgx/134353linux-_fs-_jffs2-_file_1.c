@@ -1,0 +1,1 @@
+int __jffs2_read_folio ( struct file * file , struct folio * folio ) { int ret = jffs2_do_readpage_nolock ( folio -> mapping -> host , & folio -> page ) ; folio_unlock ( folio , NULL ) ; return ret ; } 

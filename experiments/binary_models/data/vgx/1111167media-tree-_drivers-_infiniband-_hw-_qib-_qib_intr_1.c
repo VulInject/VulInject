@@ -1,0 +1,1 @@
+void qib_clear_symerror_on_linkup ( unsigned long opaque ) { struct qib_pportdata * ppd = ( qib_pportdata * ) opaque ; ppd -> ibport_data . z_symbol_error_counter = ppd -> dd -> f_portcntr ( ppd , QIBPORTCNTR_IBSYMBOLERR ) ; } 

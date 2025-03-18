@@ -1,0 +1,1 @@
+void cx25821_dev_unregister ( struct cx25821_dev * dev ) { int i ; release_mem_region ( dev -> base_io_addr , pci_resource_len ( dev -> pci , 0 ) ) ; for ( i = 0 ; i < MAX_VID_CAP_CHANNEL_NUM - 1 ; i ++ ) { if ( i == SRAM_CH08 ) { continue ; } cx25821_video_unregister ( dev , i ) ; } cx25821_i2c_unregister ( & dev -> i2c_bus [ 0 ] ) ; cx25821_iounmap ( dev ) ; } 

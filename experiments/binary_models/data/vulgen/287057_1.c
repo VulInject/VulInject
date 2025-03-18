@@ -1,0 +1,1 @@
+static void mq_walk ( struct Qdisc * sch , struct qdisc_walker * arg ) { struct net_device * dev = qdisc_dev ( sch ) ; unsigned int ntx ; if ( arg -> stop ) { return ; } arg -> count = arg -> skip ; for ( ntx = arg -> skip ; ntx < dev -> num_tx_queues ; ntx ++ ) { if ( arg -> fn ( sch , ntx + 1 , arg ) < 0 ) { break ; } arg -> count ++ ; } } 

@@ -1,0 +1,1 @@
+static int ahc_linux_slave_configure ( struct scsi_device * sdev ) { if ( bootverbose ) { sdev_printk ( KERN_INFO , sdev , "Slave Configure\n" ) ; } ahc_linux_device_queue_depth ( sdev , NULL ) ; if ( ! spi_initial_dv ( sdev -> sdev_target ) ) { spi_dv_device ( sdev ) ; } return 0 ; } 

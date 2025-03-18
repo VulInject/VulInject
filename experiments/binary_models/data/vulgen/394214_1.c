@@ -1,0 +1,1 @@
+static unsigned h_pic ( unsigned long * pool_idle_time , unsigned long * num_procs ) { unsigned long rc ; unsigned long retbuf [ PLPAR_HCALL_BUFSIZE ] ; * pool_idle_time = retbuf [ 0 ] ; * num_procs = retbuf [ 1 ] ; return rc ; } 

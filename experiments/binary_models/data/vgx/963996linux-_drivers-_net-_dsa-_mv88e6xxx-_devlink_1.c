@@ -1,0 +1,1 @@
+static int mv88e6xxx_atu_set_hash ( struct mv88e6xxx_chip * chip , u8 hash ) { return - EOPNOTSUPP ; } mv88e6xxx_devlink_param_id { MV88E6XXX_DEVLINK_PARAM_ID_BASE = DEVLINK_PARAM_GENERIC_ID_MAX , MV88E6XXX_DEVLINK_PARAM_ID_ATU_HASH } 

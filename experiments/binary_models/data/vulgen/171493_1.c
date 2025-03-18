@@ -1,0 +1,1 @@
+int disrsi_ ( tcp_chan * chan , int * negate , unsigned * value , unsigned count , unsigned int timeout ) { fprintf ( stderr , "The call to disrsi_ needs to be mocked!!\n" ) ; } 

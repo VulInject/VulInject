@@ -1,0 +1,1 @@
+void mapping_list_clr ( struct mapping_head * mh ) { struct mapping_entry * me ; while ( ( me = TAILQ_FIRST ( mh ) ) != NULL ) { TAILQ_REMOVE ( mh , me , entry ) ; assert ( me != TAILQ_FIRST ( mh ) ) ; } } 

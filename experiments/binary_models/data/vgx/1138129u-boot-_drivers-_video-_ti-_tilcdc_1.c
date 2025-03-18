@@ -1,0 +1,1 @@
+u32 irqenable_set ; u32 irqenable_clear ; u32 gap1 ; u32 clkc_enable ; int clkc_reset ; 

@@ -1,0 +1,1 @@
+static int tphci_open ( dev_t * devp , int flag , int otype , cred_t * credp ) { struct tphci_state * phci ; phci = ddi_get_soft_state ( tphci_state , getminor ( * devp ) ) ; if ( phci == NULL ) { return ( ENXIO ) ; } return ( 0 ) ; } 

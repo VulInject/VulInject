@@ -1,0 +1,1 @@
+static int apsh4a3a_clk_init ( void ) { struct clk * clk ; int ret ; clk = clk_get ( NULL , "extal" ) ; if ( IS_ERR ( clk ) ) { return PTR_ERR ( clk ) ; } clk_put ( clk ) ; return ret ; } 

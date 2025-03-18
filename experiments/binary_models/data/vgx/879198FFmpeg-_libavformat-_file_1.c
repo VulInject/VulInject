@@ -1,0 +1,1 @@
+static int fd_dup ( URLContext * h , int oldfd ) { int newfd ; newfd = fcntl ( oldfd , F_DUPFD_CLOEXEC , 0 ) ; newfd = dup ( oldfd ) ; if ( fcntl ( newfd , F_SETFD , FD_CLOEXEC ) == - 1 ) { av_log ( h , AV_LOG_DEBUG , "Failed to set close on exec\n" ) ; } setmode ( newfd , O_BINARY ) ; return newfd ; } 

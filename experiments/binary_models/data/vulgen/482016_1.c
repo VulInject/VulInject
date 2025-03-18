@@ -1,0 +1,1 @@
+static int imx_sc_pd_power_off ( struct generic_pm_domain * domain ) { return imx_sc_pd_power ( domain ) ; } 

@@ -1,0 +1,1 @@
+R_API void r_cons_pixel_set ( RConsPixel * p , int x , int y , ut8 v ) { r_return_if_fail ( p ) ; if ( y < 0 || y >= p -> h ) { return ; } int pos = x + ( y * p -> w ) ; if ( pos > 0 && pos < p -> buf_size ) { p -> buf [ pos ] = v ; } } 

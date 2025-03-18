@@ -1,0 +1,1 @@
+module_param ( c4iw_wr_log_size_order , int , 0444 ) ; static LIST_HEAD ( uld_ctx_list ) ; static DEFINE_MUTEX ( dev_mutex ) ; static struct workqueue_struct * reg_workq ; static struct dentry * c4iw_debugfs_root ; c4iw_debugfs_data { struct c4iw_dev * devp ; char * buf ; int bufsize ; int pos ; } 

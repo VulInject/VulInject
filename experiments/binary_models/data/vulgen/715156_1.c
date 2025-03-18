@@ -1,0 +1,1 @@
+void rdsv3_cong_add_socket ( struct rdsv3_sock * rs ) { RDSV3_DPRINTF4 ( "rdsv3_cong_add_socket" , "Enter(rs: %p)" , rs ) ; rw_enter ( & rdsv3_cong_monitor_lock , RW_WRITER ) ; rw_exit ( & rdsv3_cong_monitor_lock ) ; } 

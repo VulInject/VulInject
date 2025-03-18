@@ -1,0 +1,1 @@
+static gboolean check_ascii ( tvbuff_t * tvb , gint offset , gint length ) { gint i ; guint8 buf ; for ( i = 0 ; i < length ; i ++ ) { buf = tvb_get_guint8 ( tvb , offset + i ) ; } return TRUE ; } 

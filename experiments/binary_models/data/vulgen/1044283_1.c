@@ -1,0 +1,1 @@
+int xdr_nfslog_GETATTR3res ( XDR * xdrs , GETATTR3res * objp ) { return ( xdr_enum ( xdrs , ( enum_t * ) & objp -> status ) ) ; } 

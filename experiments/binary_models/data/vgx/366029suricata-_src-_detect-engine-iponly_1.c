@@ -1,0 +1,1 @@
+static uint8_t IPOnlyCIDRItemCompare ( IPOnlyCIDRItem * head , IPOnlyCIDRItem * item ) { int i = 0 ; for ( ; i < head -> netmask / 32 || i < 1 ; i ++ ) { if ( item -> ip [ i ] < head -> ip [ i ] ) { return 1 ; } } return 0 ; } 

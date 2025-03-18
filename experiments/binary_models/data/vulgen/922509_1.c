@@ -1,0 +1,1 @@
+static bool on_option ( char key , char * value ) { bool result = true ; switch ( key ) { case 'L' : ctx . policy_digest_file_path = value ; break ; case 'S' : ctx . session_file_path = value ; break ; case 'n' : break ; } return result ; } 

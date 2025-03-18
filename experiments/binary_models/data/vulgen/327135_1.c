@@ -1,0 +1,1 @@
+extern int __libc_threaded ; int _elf_byte = 0 ; const Elf64_Ehdr _elf64_ehdr_init = { 0 } ; 

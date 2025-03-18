@@ -1,0 +1,1 @@
+stm32_rtc_data { const struct stm32_rtc_registers regs ; const struct stm32_rtc_events events ; void * clear_events ( struct stm32_rtc * rtc , unsigned int flags ) bool need_dbp ; bool has_wakeirq ; } 

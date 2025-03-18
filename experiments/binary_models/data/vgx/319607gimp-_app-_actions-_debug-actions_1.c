@@ -1,0 +1,1 @@
+debug_actions_setup ( ) { gint i ; gimp_action_group_add_actions ( group , debug_actions , G_N_ELEMENTS ( debug_actions ) ) ; gimp_action_group_set_action_visible ( , , 0 ) for ( i = 0 ; i < G_N_ELEMENTS ( debug_actions ) ; i ++ ) { SET_VISIBLE ( debug_actions [ i ] . name , group -> gimp -> show_debug_menu ) ; } } 

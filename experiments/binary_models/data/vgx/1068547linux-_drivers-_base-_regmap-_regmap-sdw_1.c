@@ -1,0 +1,1 @@
+( __regmap_init_sdw ) ; struct regmap * __devm_regmap_init_sdw ( struct sdw_slave * sdw , const struct regmap_config * config , struct lock_class_key * lock_key , const char * lock_name ) { int ret ; ret = regmap_sdw_config_check ( config ) ; return __devm_regmap_init ( & sdw -> dev , & regmap_sdw , & sdw -> dev , config , lock_key , lock_name ) ; } 

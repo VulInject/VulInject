@@ -1,0 +1,1 @@
+char * bencode_collapse ( bencode_item_t * root , int * len ) { char * ret ; int l ; assert ( root -> str_len > 0 ) ; ret = __bencode_alloc ( root -> buffer , root -> str_len + 1 ) ; if ( ! ret ) { return NULL ; } l = __bencode_str_dump ( ret , root ) ; if ( len ) { * len = l ; } return ret ; } 

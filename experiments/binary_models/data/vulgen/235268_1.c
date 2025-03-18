@@ -1,0 +1,1 @@
+int virLogDaemonConfigLoadFile ( virLogDaemonConfig * data , const char * filename , bool allow_missing ) { g_autoptr ( ) conf = NULL ; if ( allow_missing && access ( filename , R_OK ) == - 1 && errno == ENOENT ) { return 0 ; } if ( ! conf ) { return - 1 ; } return virLogDaemonConfigLoadOptions ( data , conf ) ; } 

@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "Magnus Damm" ) ; MODULE_DESCRIPTION ( "Renesas Emma Mobile 8250 Driver" ) ; 

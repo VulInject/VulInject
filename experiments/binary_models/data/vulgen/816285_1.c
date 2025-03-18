@@ -1,0 +1,1 @@
+void udl_modeset_restore ( struct drm_device * dev ) { struct udl_device * udl = dev -> dev_private ; struct udl_framebuffer * ufb ; udl_crtc_commit ( udl -> crtc ) ; ufb = to_udl_fb ( udl -> crtc -> primary -> fb ) ; udl_handle_damage ( ufb , 0 , 0 , ufb -> base . width , ufb -> base . height ) ; } 

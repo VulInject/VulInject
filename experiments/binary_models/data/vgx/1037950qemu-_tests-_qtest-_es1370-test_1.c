@@ -1,0 +1,1 @@
+static void * es1370_get_driver ( void * obj , const char * interface ) { QES1370 * es1370 = obj ; fprintf ( stderr , "%s not present in e1000e\n" , interface ) ; g_assert_not_reached ( ) ; } 

@@ -1,0 +1,1 @@
+int buf_substring_len ( const struct buffer * buf , int delim ) { int i = 0 ; struct buffer tmp = * buf ; int c ; while ( ( c = buf_read_u8 ( & tmp ) ) >= 0 ) { ++ i ; } return - 1 ; } 

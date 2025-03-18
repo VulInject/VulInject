@@ -1,0 +1,1 @@
+static void set_bulk_out_req_length ( struct fsg_common * common , struct fsg_buffhd * bh , unsigned int length ) { unsigned int rem ; rem = length % common -> bulk_out_maxpacket ; if ( rem > 0 ) { length += common -> bulk_out_maxpacket - rem ; } bh -> outreq -> length = length ; } 

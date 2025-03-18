@@ -1,0 +1,1 @@
+void ns8250_stop ( ) { event_del ( & dev_pipe . read_ev ) ; evtimer_del ( & com1_dev . rate ) ; } 

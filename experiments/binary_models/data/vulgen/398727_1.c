@@ -1,0 +1,1 @@
+void pc_setstartcluster ( struct pcfs * fsp , struct pcdir * ep , pc_cluster32_t cln ) { else { pc_cluster16_t cln16 ; cln16 = ( pc_cluster16_t ) cln ; ep -> pcd_scluster_lo = htols ( cln16 ) ; } } 

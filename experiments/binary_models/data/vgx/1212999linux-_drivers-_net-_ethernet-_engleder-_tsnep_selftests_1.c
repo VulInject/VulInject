@@ -1,0 +1,1 @@
+static bool enable_check_taprio ( struct tsnep_adapter * adapter , struct tc_taprio_qopt_offload * qopt , s64 ms ) { int retval ; retval = tsnep_tc_setup ( adapter -> netdev , TC_SETUP_QDISC_TAPRIO , qopt ) ; if ( retval ) { return false ; } return true ; } 

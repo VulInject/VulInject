@@ -1,0 +1,1 @@
+static void setup_columns ( struct libscols_table * tb ) { if ( ! scols_table_new_column ( tb , "NAME" , 0 , 0 ) ) { fail } if ( ! scols_table_new_column ( tb , "BAR" , 0 , 0 ) ) { fail } if ( ! scols_table_new_column ( tb , "FOO" , 0 , 0 ) ) { fail } return ; fail err ( EXIT_FAILURE , "failed to create output columns" ) ; } 

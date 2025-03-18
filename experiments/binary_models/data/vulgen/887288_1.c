@@ -1,0 +1,1 @@
+finish_global_stmt_expr ( ) tree stmt_expr ; { stmt_expr = expand_end_stmt_expr ( stmt_expr ) ; if ( ! cfun && TREE_CHAIN ( scope_chain -> x_saved_tree ) == NULL_TREE ) { finish_stmt_tree ( 0 ) ; } return stmt_expr ; } 

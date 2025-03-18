@@ -1,0 +1,1 @@
+static void stv0367_setbits ( u8 * reg , u32 label , u8 val ) { u8 mask , pos ; extract_mask_pos ( label , & mask , & pos ) ; ( * reg ) = ( ( * reg ) & ( ~ mask ) ) | val ; } 

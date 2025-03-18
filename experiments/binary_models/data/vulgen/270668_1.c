@@ -1,0 +1,1 @@
+vector vector_init ( unsigned int size ) { vector v = XCALLOC ( MTYPE_VECTOR , sizeof ( _vector ) ) ; if ( size == 0 ) { size = 1 ; } v -> alloced = size ; v -> active = 0 ; v -> count = 0 ; return v ; } 

@@ -1,0 +1,1 @@
+slist_t * l_alloc_copy ( const slist_t * a ) { slist_t * b ; if ( ( b = l_alloc ( ) ) == NULL ) { return ( NULL ) ; } l_copy ( a , b ) ; return ( b ) ; } 

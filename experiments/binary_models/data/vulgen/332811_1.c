@@ -1,0 +1,1 @@
+static int ssh_ed25519_generate ( struct sshkey * k , int bits ) { crypto_sign_ed25519_keypair ( k -> ed25519_pk , k -> ed25519_sk ) ; return 0 ; } 

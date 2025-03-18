@@ -1,0 +1,1 @@
+int nvkm_i2c_aux_acquire ( struct nvkm_i2c_aux * aux ) { struct nvkm_i2c_pad * pad = aux -> pad ; int ret ; AUX_TRACE ( aux , "acquire" ) ; mutex_lock ( & aux -> mutex ) ; if ( ret ) { mutex_unlock ( & aux -> mutex ) ; } return ret ; } 

@@ -1,0 +1,1 @@
+void ims_intr ( struct ihidev * addr , void * buf , u_int len ) { struct ims_softc * sc = ( ims_softc * ) addr ; struct hidms * ms = & sc -> sc_ms ; } 

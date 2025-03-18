@@ -1,0 +1,1 @@
+static int pool_disable ( void ) { int ret ; ASSERT ( pool_lock_held ( ) ) ; ret = pool_pset_disable ( ) ; if ( ret != 0 ) { return ( ret ) ; } if ( pool_sys_prop != NULL ) { nvlist_free ( pool_sys_prop ) ; pool_sys_prop = NULL ; } if ( pool_default -> pool_props != NULL ) { nvlist_free ( pool_default -> pool_props ) ; pool_default -> pool_props = NULL ; } return ( 0 ) ; } 

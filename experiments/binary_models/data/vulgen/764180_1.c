@@ -1,0 +1,1 @@
+unsigned long unwind_get_return_address ( struct unwind_state * state ) { return __kernel_text_address ( state -> ip ) ?state -> ip : 0 ; } 

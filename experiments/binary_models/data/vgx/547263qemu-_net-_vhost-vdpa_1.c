@@ -1,0 +1,1 @@
+static int vhost_vdpa_net_check_device_id ( struct vhost_net * net ) { uint32_t device_id ; int ret ; struct vhost_dev * hdev ; hdev = ( vhost_dev * ) & net -> dev ; ret = hdev -> vhost_ops -> vhost_get_device_id ( hdev , & device_id ) ; return ret ; } 

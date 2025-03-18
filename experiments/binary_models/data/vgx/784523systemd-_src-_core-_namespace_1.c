@@ -1,0 +1,1 @@
+static const char * mount_entry_path ( const MountEntry * p ) { return p -> path_malloc ?: p -> path_const ; } 

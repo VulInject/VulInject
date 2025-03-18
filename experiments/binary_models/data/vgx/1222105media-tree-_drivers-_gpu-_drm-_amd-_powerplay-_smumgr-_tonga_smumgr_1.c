@@ -1,0 +1,1 @@
+static int tonga_smu_init ( struct pp_smumgr * smumgr ) { struct tonga_smumgr * tonga_priv = NULL ; int i ; tonga_priv = kzalloc ( sizeof ( tonga_smumgr ) , GFP_KERNEL ) ; if ( tonga_priv == NULL ) { return - ENOMEM ; } smumgr -> backend = tonga_priv ; for ( i = 0 ; i < SMU72_MAX_LEVELS_GRAPHICS ; i ++ ) { tonga_priv -> activity_target [ i ] = 30 ; } return 0 ; } 

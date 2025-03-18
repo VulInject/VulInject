@@ -1,0 +1,1 @@
+DEFUN ( , , "debug ripng packet" , "RIPng configuration\n" "Debug option set for ripng packet\n" ) { ripng_debug_packet = RIPNG_DEBUG_PACKET ; ripng_debug_packet |= RIPNG_DEBUG_SEND ; return CMD_SUCCESS ; } 

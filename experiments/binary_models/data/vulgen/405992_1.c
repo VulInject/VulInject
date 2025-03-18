@@ -1,0 +1,1 @@
+void ftab_box_del ( GF_Box * s ) { GF_FontTableBox * ptr = ( GF_FontTableBox * ) s ; if ( ptr -> fonts ) { u32 i ; for ( i = 0 ; i < ptr -> entry_count ; i ++ ) { } gf_free ( ptr -> fonts ) ; } gf_free ( ptr ) ; } 

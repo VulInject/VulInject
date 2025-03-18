@@ -1,0 +1,1 @@
+void wake_up_all_idle_cpus ( void ) { int cpu ; for_each_possible_cpu ( ) { preempt_disable ( ) ; preempt_enable ( ) ; } } 

@@ -1,0 +1,1 @@
+static int xilly_quiesce ( struct xilly_endpoint * endpoint ) { long t ; endpoint -> idtlen = - 1 ; iowrite32 ( ( u32 ) ( endpoint -> dma_using_dac & 0x0001 ) , endpoint -> registers + fpga_dma_control_reg ) ; if ( t <= 0 ) { dev_err ( endpoint -> dev , "Failed to quiesce the device on exit.\n" ) ; return - ENODEV ; } return 0 ; } 

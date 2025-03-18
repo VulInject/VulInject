@@ -1,0 +1,1 @@
+if ( ret != 0 ) { return ret ; } ( auth ( handle -> context , OP_CPW , client , target , NULL , NULL , NULL , NULL , 0 ) ) { ret = kadm5_chpass_principal_util ( server_handle , target , new_pw , ret_pw , msg_ret , msg_len ) } ; else { ret = KADM5_AUTH_CHANGEPW ; strlcpy ( msg_ret , "Unauthorized request" , msg_len ) ; } return ret ; 

@@ -1,0 +1,1 @@
+void ResetScript ( script_t * script ) { script -> script_p = script -> buffer ; script -> lastscript_p = script -> buffer ; script -> endwhitespace_p = NULL ; script -> tokenavailable = 0 ; script -> line = 1 ; script -> lastline = 1 ; Com_Memset ( & script -> token , 0 , sizeof ( token_t ) ) ; } 

@@ -1,0 +1,1 @@
+int tlsh_final ( Tlsh * tlsh , const unsigned char * data , unsigned int len , int tlsh_option ) { if ( tlsh -> impl ) { if ( ( data != NULL ) && ( len > 0 ) ) { int res = tlsh_impl_update ( tlsh -> impl , data , len , tlsh_option ) ; } tlsh_impl_final ( tlsh -> impl , tlsh_option ) ; } return 0 ; } 

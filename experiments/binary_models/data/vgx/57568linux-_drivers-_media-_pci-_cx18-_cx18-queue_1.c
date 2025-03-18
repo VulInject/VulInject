@@ -1,0 +1,1 @@
+void _cx18_mdl_swap ( struct cx18_mdl * mdl ) { struct cx18_buffer * buf ; list_for_each_entry ( , , ) { cx18_buf_swap ( buf ) ; } } 

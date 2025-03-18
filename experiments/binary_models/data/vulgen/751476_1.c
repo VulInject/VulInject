@@ -1,0 +1,1 @@
+uzbl_sync_close ( , , ) { UZBL_UNUSED ( object ) ; UzblSyncData * sync_data = ( UzblSyncData * ) data ; sync_data -> result = g_object_ref ( res ) ; } 

@@ -1,0 +1,1 @@
+unsigned coverage_start_registers ( const struct decode_header * h ) { int regs = 0 ; int i ; for ( i = 0 ; i < 20 ; i += 4 ) { int r = ( h -> type_regs . bits >> ( DECODE_TYPE_BITS + i ) ) & 0xf ; regs |= coverage_register_lookup [ r ] << i ; } return regs ; } 

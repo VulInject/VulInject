@@ -1,0 +1,1 @@
+* * / static unsigned int user_getsp32 ( , ) { unsigned int stack_frame [ 2 ] void __user * p = compat_ptr ( sp ) } ; if ( __copy_from_user_inatomic ( stack_frame , p , sizeof ( stack_frame ) ) ) { return 0 ; } if ( ! is_first ) { oprofile_add_trace ( STACK_LR32 ( stack_frame ) ) ; } return STACK_SP ( stack_frame ) ; 

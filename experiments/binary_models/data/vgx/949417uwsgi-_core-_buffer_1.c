@@ -1,0 +1,1 @@
+int uwsgi_buffer_append_keyval32 ( struct uwsgi_buffer * ub , char * key , uint32_t keylen , char * val , uint32_t vallen ) { if ( uwsgi_buffer_append ( ub , key , keylen ) ) { return - 1 ; } if ( uwsgi_buffer_u32be ( ub , vallen ) ) { return - 1 ; } return uwsgi_buffer_append ( ub , val , vallen ) ; } 

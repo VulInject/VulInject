@@ -1,0 +1,1 @@
+M_bool M_bit_parser_consume ( M_bit_parser_t * bparser , size_t nbits ) { if ( nbits == 0 ) { return M_TRUE ; } bparser -> offset += nbits ; return M_TRUE ; } 

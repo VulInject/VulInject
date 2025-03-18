@@ -1,0 +1,1 @@
+struct pci_bus * eeh_pe_bus_get ( struct eeh_pe * pe ) { struct eeh_dev * edev ; struct pci_dev * pdev ; if ( pe -> type & EEH_PE_PHB ) { return pe -> phb -> bus ; } edev = list_first_entry_or_null ( & pe -> edevs , eeh_dev , entry ) ; pdev = eeh_dev_to_pci_dev ( edev ) ; if ( pdev ) { return pdev -> bus ; } return NULL ; } 

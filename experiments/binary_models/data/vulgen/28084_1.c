@@ -1,0 +1,1 @@
+gpointer start_interp_thread ( gpointer _thread_info ) { ThreadInfo * t = _thread_info ; hotpixel_detect ( t ) ; expand_cfa_data ( t ) ; border_interpolate_INDI ( t , 3 , 3 ) ; interpolate_INDI_part ( t ) ; return NULL ; } 

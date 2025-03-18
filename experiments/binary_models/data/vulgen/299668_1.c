@@ -1,0 +1,1 @@
+static struct uts_namespace * create_uts_ns ( void ) { struct uts_namespace * uts_ns ; uts_ns = kmem_cache_alloc ( uts_ns_cache , GFP_KERNEL ) ; return uts_ns ; } 

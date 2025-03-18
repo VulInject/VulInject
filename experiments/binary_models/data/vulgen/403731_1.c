@@ -1,0 +1,1 @@
+static void kvm_s390_tod_class_init ( ObjectClass * oc , void * data ) { S390TODClass * tdc = S390_TOD_CLASS ( oc ) ; tdc -> get = kvm_s390_tod_get ; tdc -> set = kvm_s390_tod_set ; } 

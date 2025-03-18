@@ -1,0 +1,1 @@
+static int psc_ac97_of_remove ( struct platform_device * op ) { mpc5200_audio_dma_destroy ( op ) ; snd_soc_unregister_component ( & op -> dev ) ; return 0 ; } 

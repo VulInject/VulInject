@@ -1,0 +1,1 @@
+static int atmel_spi_set_mode ( struct udevice * bus , uint mode ) { struct atmel_spi_priv * priv = dev_get_priv ( bus ) ; return 0 ; } static const struct dm_spi_ops atmel_spi_ops = { . claim_bus = atmel_spi_claim_bus . release_bus = atmel_spi_release_bus . xfer = atmel_spi_xfer . set_speed = atmel_spi_set_speed . set_mode = atmel_spi_set_mode } ; 

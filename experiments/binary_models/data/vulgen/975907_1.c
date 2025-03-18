@@ -1,0 +1,1 @@
+void ktutil_clear_list ( argc , argv ) int argc ; char * argv [ ] ; { krb5_error_code retval ; if ( argc != 1 ) { fprintf ( stderr , _ ( "%s: invalid arguments\n" ) , argv [ 0 ] ) ; return ; } if ( retval ) { com_err ( argv [ 0 ] , retval , _ ( "while freeing ktlist" ) ) ; } ktlist = NULL ; } 

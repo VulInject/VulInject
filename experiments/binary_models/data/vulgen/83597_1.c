@@ -1,0 +1,1 @@
+struct m_tag * m_tag_get ( int type , int len , int wait ) { struct m_tag * t ; if ( len < 0 ) { return ( NULL ) ; } if ( len > PACKET_TAG_MAXSIZE ) { panic ( "requested tag size for pool %#x is too big" , type ) ; } t = pool_get ( & mtagpool , wait == M_WAITOK ?PR_WAITOK : PR_NOWAIT ) ; t -> m_tag_id = type ; t -> m_tag_len = len ; return ( t ) ; } 

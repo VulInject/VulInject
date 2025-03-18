@@ -1,0 +1,1 @@
+void RCC_I2SCLKConfig ( uint32_t RCC_I2SCLKSource ) { * ( __IO uint32_t * ) CFGR_I2SSRC_BB = RCC_I2SCLKSource ; } 

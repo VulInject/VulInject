@@ -1,0 +1,1 @@
+static VALUE ossl_hmac_copy ( VALUE self , VALUE other ) { EVP_MD_CTX * ctx1 , * ctx2 ; rb_check_frozen ( self ) ; GetHMAC ( self , ctx1 ) ; GetHMAC ( other , ctx2 ) ; if ( EVP_MD_CTX_copy ( ctx1 , ctx2 ) != 1 ) { ossl_raise ( eHMACError , "EVP_MD_CTX_copy" ) ; } return self ; } 

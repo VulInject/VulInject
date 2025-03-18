@@ -1,0 +1,1 @@
+irc_config_change_nick_colors_cb ( , , , ) { ( void ) pointer ; ( void ) data ; ( void ) option ; ( void ) value ; return WEECHAT_RC_OK ; } 

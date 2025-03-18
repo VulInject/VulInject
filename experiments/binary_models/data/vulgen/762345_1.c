@@ -1,0 +1,1 @@
+void hashfree ( void * hash , int elements , int type ) { u_long hashsize ; LIST_HEAD ( generic , generic ) * hashtbl = hash ; if ( elements <= 0 ) { panic ( "hashfree: bad cnt" ) ; } if ( ( elements & ( elements - 1 ) ) == 0 ) { hashsize = elements ; } else { for ( hashsize = 1 ; hashsize < elements ; hashsize <<= 1 ) { continue ; } } } 

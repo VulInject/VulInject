@@ -1,0 +1,1 @@
+int pin_get_from_name ( struct pinctrl_dev * pctldev , const char * name ) { unsigned i , pin ; for ( i = 0 ; i < pctldev -> desc -> npins ; i ++ ) { struct pin_desc * desc ; pin = pctldev -> desc -> pins [ i ] . number ; desc = pin_desc_get ( pctldev , pin ) ; } return - EINVAL ; } 

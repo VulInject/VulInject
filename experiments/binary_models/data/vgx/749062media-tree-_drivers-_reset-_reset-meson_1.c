@@ -1,0 +1,1 @@
+meson_reset { void __iomem * reg_base ; int rcdev ; } 

@@ -1,0 +1,1 @@
+static void omap_sti_reset ( struct omap_sti_s * s ) { s -> sysconfig = 0 ; s -> irqst = 0 ; s -> irqen = 0 ; s -> clkcontrol = 0 ; omap_sti_interrupt_update ( s ) ; } 

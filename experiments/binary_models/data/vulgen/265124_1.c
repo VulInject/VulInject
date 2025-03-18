@@ -1,0 +1,1 @@
+static FlowSparePool * FlowSpareGetPool ( void ) { FlowSparePool * p = SCCalloc ( 1 , sizeof ( * p ) ) ; return p ; } 

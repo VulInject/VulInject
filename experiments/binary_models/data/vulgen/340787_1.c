@@ -1,0 +1,1 @@
+static __inline__ sock * ipx_get_socket_idx ( ) { sock * s = NULL ipx_interface * i list_for_each_entry ( , , ) { spin_lock_bh ( & i -> if_sklist_lock ) sk_for_each ( , ) { if ( ! pos ) { break ; } -- pos } } spin_unlock_bh ( & i -> if_sklist_lock ) if ( ! pos ) { if { found } break ; ; } } ; = NULL ; found return s ; 

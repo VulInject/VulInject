@@ -1,0 +1,1 @@
+const sd_char * secure_boot_mode_to_string ( int m ) { return ( m >= 0 && m < _SECURE_BOOT_MAX ) ?table [ m ] : NULL ; } 

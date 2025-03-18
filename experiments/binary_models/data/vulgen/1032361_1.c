@@ -1,0 +1,1 @@
+static int __init n_tracesink_init ( void ) { if ( retval < 0 ) { pr_err ( "%s: Registration failed: %d\n" , __func__ , retval ) ; } return retval ; } 

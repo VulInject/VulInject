@@ -1,0 +1,1 @@
+static int vmw_binding_scrub_uav ( struct vmw_ctx_bindinfo * bi , bool rebind ) { struct vmw_ctx_binding_state * cbs = vmw_context_binding_state ( bi -> ctx ) ; return 0 ; } 

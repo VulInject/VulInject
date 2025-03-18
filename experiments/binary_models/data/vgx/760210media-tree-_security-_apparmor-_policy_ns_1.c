@@ -1,0 +1,1 @@
+void aa_free_ns ( struct aa_ns * ns ) { if ( ! ns ) { return ; } aa_policy_destroy ( & ns -> base ) ; aa_put_ns ( ns -> parent ) ; ns -> unconfined -> ns = NULL ; kzfree ( ns ) ; } 

@@ -1,0 +1,1 @@
+static bool is_type2_adaptor ( int adaptor_id ) { return adaptor_id == ( DP_DUAL_MODE_TYPE_TYPE2 | DP_DUAL_MODE_REV_TYPE2 ) ; } 

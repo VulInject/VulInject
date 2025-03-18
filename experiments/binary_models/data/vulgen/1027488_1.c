@@ -1,0 +1,1 @@
+static void init_ue_cache ( void ) { guint i ; for ( i = 0 ; i < num_ueas ; i ++ ) { if ( a -> engine . len ) { CACHE_INSERT ( localized_ues , a ) ; } else { CACHE_INSERT ( unlocalized_ues , a ) ; } } } 

@@ -1,0 +1,1 @@
+void hdestroy ( void ) { POINTER local_table ; lmutex_lock ( & table_lock ) ; int i ; NODE * p , * oldp ; for ( i = 0 ; i < length ; i ++ ) { if ( table [ i ] != ( NODE * ) NULL ) { p = table [ i ] ; while ( p != ( NODE * ) NULL ) { oldp = p ; p = p -> next ; } } } local_table = ( POINTER ) table ; table = 0 ; count = 0 ; lmutex_unlock ( & table_lock ) ; free ( local_table ) ; } 

@@ -1,0 +1,1 @@
+static int m54xx_wdt_open ( struct inode * inode , struct file * file ) { if ( test_and_set_bit ( WDT_IN_USE , & wdt_status ) ) { return - EBUSY ; } wdt_enable ( ) ; return nonseekable_open ( inode , file ) ; } 

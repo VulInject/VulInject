@@ -1,0 +1,1 @@
+static ASN1_TYPE * get_attribute ( STACK_OF ( X509_ATTRIBUTE ) * sk , int nid ) ( int i , X509_ATTRIBUTE * xa , ASN1_OBJECT * o , o = OBJ_nid2obj ( nid ) , ( ! o || ! sk ) return ( NULL ) ; ) ; for ( i = 0 ; i < sk_X509_ATTRIBUTE_num ( sk ) ; i ++ ) { xa = sk_X509_ATTRIBUTE_value ( sk , i ) ; } return ( NULL ) ; 

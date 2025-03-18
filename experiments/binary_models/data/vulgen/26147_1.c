@@ -1,0 +1,1 @@
+static void bxt_vtd_ggtt_insert_page__BKL ( struct i915_address_space * vm , dma_addr_t addr , u64 offset , enum i915_cache_level level , u32 unused ) { struct insert_page arg = { vm addr offset level } ; } 

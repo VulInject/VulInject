@@ -1,0 +1,1 @@
+static int ld9040_prepare ( struct drm_panel * panel ) { struct ld9040 * ctx = panel_to_ld9040 ( panel ) ; int ret ; ret = ld9040_power_on ( ctx ) ; ld9040_init ( ctx ) ; ret = ld9040_clear_error ( ctx ) ; if ( ret < 0 ) { ld9040_unprepare ( panel ) ; } return ret ; } 

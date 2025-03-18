@@ -1,0 +1,1 @@
+void mailimap_uidplus_resp_code_apnd_free ( struct mailimap_uidplus_resp_code_apnd * resp_code_apnd ) { free ( resp_code_apnd ) ; } 

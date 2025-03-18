@@ -1,0 +1,1 @@
+void ext4_fname_free_filename ( struct ext4_filename * fname ) { struct fscrypt_name name ; name . crypto_buf = fname -> crypto_buf ; fscrypt_free_filename ( & name ) ; fname -> crypto_buf . name = NULL ; fname -> usr_fname = NULL ; kfree ( fname -> cf_name . name ) ; fname -> cf_name . name = NULL ; } 

@@ -1,0 +1,1 @@
+void bcma_host_pci_up ( struct bcma_bus * bus ) { if ( bus -> host_is_pcie2 ) { bcma_core_pcie2_up ( & bus -> drv_pcie2 ) ; } else { bcma_core_pci_up ( & bus -> drv_pci [ 0 ] ) ; } } 

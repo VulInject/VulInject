@@ -1,0 +1,1 @@
+static struct phy * samsung_usb2_phy_xlate ( struct device * dev , struct of_phandle_args * args ) { struct samsung_usb2_phy_driver * drv ; drv = dev_get_drvdata ( dev ) ; if ( ! drv ) { return ERR_PTR ( - EINVAL ) ; } return drv -> instances [ args -> args [ 0 ] ] . phy ; } 

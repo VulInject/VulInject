@@ -1,0 +1,1 @@
+static void device_run ( void * priv ) { struct ge2d_ctx * ctx = priv ; struct meson_ge2d * ge2d = ctx -> ge2d ; ge2d -> curr = ctx ; ctx -> in . buf = v4l2_m2m_next_src_buf ( ctx -> fh . m2m_ctx ) ; ctx -> out . buf = v4l2_m2m_next_dst_buf ( ctx -> fh . m2m_ctx ) ; ge2d_hw_start ( ge2d , NULL ) ; } 

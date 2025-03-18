@@ -1,0 +1,1 @@
+int _init ( void ) { int rc ; qede_dev_ops . devo_cb_ops -> cb_str = NULL ; mac_init_ops ( & qede_dev_ops , "qede" ) ; return ( rc ) ; } 

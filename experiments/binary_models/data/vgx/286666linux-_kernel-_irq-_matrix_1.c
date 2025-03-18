@@ -1,1 +1,1 @@
-void FUN1 ( struct VAR1 * VAR2 ) { VAR2 -> VAR3 -- ; FUN2 ( VAR2 , NULL ) ; }
+void irq_matrix_remove_reserved ( struct irq_matrix * m ) { m -> global_reserved -- ; trace_irq_matrix_remove_reserved ( m , NULL ) ; } 

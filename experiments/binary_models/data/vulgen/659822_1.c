@@ -1,0 +1,1 @@
+static int decode_significance_8x8_loongarch ( CABACContext * c , uint8_t * significant_coeff_ctx_base , int * index , uint8_t * last_coeff_ctx_base , const uint8_t * sig_off ) { int64_t minusindex = 4 - ( int64_t ) index ; uint8_t * state ; uint8_t * state = 0 ; int64_t flag_offset = H264_LAST_COEFF_FLAG_OFFSET_8x8_OFFSET ; volatile return ( int ) tmp0 ; } 

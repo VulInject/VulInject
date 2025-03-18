@@ -1,0 +1,1 @@
+static void qcrypto_afsplit_xor ( size_t blocklen , const uint8_t * in1 , const uint8_t * in2 , uint8_t * out ) { int i ; for ( i = 0 ; i < blocklen ; i ++ ) { out [ i ] = in1 [ i ] ^ in2 [ i ] ; } } 

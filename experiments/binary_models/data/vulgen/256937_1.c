@@ -1,0 +1,1 @@
+int i2d_GOST_KEY_TRANSPORT ( GOST_KEY_TRANSPORT * a , unsigned char * * out ) { return ASN1_item_i2d ( ( ASN1_VALUE * ) a , out , & GOST_KEY_TRANSPORT_it ) ; } 

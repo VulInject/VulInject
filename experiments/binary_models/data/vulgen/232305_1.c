@@ -1,0 +1,1 @@
+[ ] = { IPW2100_NIC ( IPW2100_CONTROL_REG , 2 ) IPW2100_NIC ( 0x210014 , 1 ) IPW2100_NIC ( 0x210000 , 1 ) } ; static const { const char * name ; const char * desc ; } , ord_data [ ] { } ; 

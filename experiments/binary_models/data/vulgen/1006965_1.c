@@ -1,0 +1,1 @@
+static void bna_rx_sm_stop_wait ( struct bna_rx * rx , enum bna_rx_event event ) { switch ( event ) { case RX_E_FAIL : case RX_E_STOPPED : bfa_fsm_set_state ( rx , bna_rx_sm_cleanup_wait ) ; rx -> rx_cleanup_cbfn ( rx -> bna -> bnad , rx ) ; break ; case RX_E_STARTED : break ; default : bfa_sm_fault ( event ) ; break ; } } 

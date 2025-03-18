@@ -1,0 +1,1 @@
+gimp_docked_get_preview ( , , ) { GimpDockedInterface * docked_iface ; g_return_val_if_fail ( GIMP_IS_DOCKED ( docked ) , NULL ) ; docked_iface = GIMP_DOCKED_GET_IFACE ( docked , NULL ) ; if ( docked_iface -> get_preview ) { return docked_iface -> get_preview ( docked , context , size ) ; } return NULL ; } 

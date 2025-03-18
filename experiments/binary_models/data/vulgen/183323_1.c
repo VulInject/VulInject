@@ -1,0 +1,1 @@
+static void wx_cache_ring_rss ( struct wx * wx ) { int i ; for ( i = 0 ; i < wx -> num_rx_queues ; i ++ ) { wx -> rx_ring [ i ] -> reg_idx = i ; } for ( i = 0 ; i < wx -> num_tx_queues ; i ++ ) { wx -> tx_ring [ i ] -> reg_idx = i ; } } 

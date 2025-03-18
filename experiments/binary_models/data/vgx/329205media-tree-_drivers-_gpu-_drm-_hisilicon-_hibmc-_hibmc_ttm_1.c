@@ -1,0 +1,1 @@
+static void hibmc_bo_unref ( struct hibmc_bo * * bo ) { struct ttm_buffer_object * tbo ; tbo = & ( ( * bo ) -> bo ) ; ttm_bo_unref ( & tbo ) ; * bo = NULL ; } 

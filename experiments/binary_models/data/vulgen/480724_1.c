@@ -1,0 +1,1 @@
+static void input_close ( struct input_dev * dev ) { struct yealink_dev * yld = input_get_drvdata ( dev ) ; yld -> shutdown = 1 ; smp_wmb ( ) ; usb_kill_urb ( yld -> urb_ctl ) ; yld -> shutdown = 0 ; smp_wmb ( ) ; } 

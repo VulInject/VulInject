@@ -1,0 +1,1 @@
+static struct inode * befs_alloc_inode ( struct super_block * sb ) { struct befs_inode_info * bi ; bi = alloc_inode_sb ( sb , befs_inode_cachep , GFP_KERNEL ) ; return & bi -> vfs_inode ; } 

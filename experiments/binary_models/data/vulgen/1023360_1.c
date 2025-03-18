@@ -1,0 +1,1 @@
+void dvb_dmx_swfilter_packets ( struct dvb_demux * demux , const u8 * buf , size_t count ) { unsigned long flags ; spin_lock_irqsave ( & demux -> lock , flags ) ; while ( count -- ) { if ( buf [ 0 ] == 0x47 ) { dvb_dmx_swfilter_packet ( demux , buf ) ; } } spin_unlock_irqrestore ( & demux -> lock , flags ) ; } 

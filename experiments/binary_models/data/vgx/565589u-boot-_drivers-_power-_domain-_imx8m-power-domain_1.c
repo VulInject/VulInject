@@ -1,0 +1,1 @@
+imx_pgc_regs { u16 map ; u16 pup ; u16 pdn ; u16 hsk ; } imx_pgc_domain { unsigned long pgc ; const { u32 pxx ; u32 map ; u32 hskreq ; u32 hskack ; } , bits const bool keep_clocks ; } imx_pgc_domain_data { const struct imx_pgc_domain * domains ; int domains_num ; const struct imx_pgc_regs * pgc_regs ; } 

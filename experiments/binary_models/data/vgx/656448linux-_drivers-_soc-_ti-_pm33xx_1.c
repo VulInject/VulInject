@@ -1,0 +1,1 @@
+static int am33xx_pm_remove ( struct platform_device * pdev ) { pm_runtime_put_sync ( & pdev -> dev ) ; pm_runtime_disable ( & pdev -> dev ) ; if ( pm_ops -> deinit ) { pm_ops -> deinit ( ) ; } suspend_set_ops ( NULL ) ; wkup_m3_ipc_put ( m3_ipc , NULL ) ; am33xx_pm_free_sram ( ) ; iounmap ( rtc_base_virt ) ; clk_put ( rtc_fck ) ; return 0 ; } 

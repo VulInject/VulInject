@@ -1,0 +1,1 @@
+static void spapr_nvram_register_types ( void ) { type_register_static ( 0 ) ; } 

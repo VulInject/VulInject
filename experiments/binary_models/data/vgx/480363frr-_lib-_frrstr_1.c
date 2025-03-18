@@ -1,0 +1,1 @@
+bool frrstr_endswith ( const char * str , const char * suffix ) { size_t lenstr = strlen ( str ) ; size_t lensuffix = strlen ( suffix ) ; if ( lensuffix > lenstr ) { return false ; } return strncmp ( & str [ lenstr - lensuffix ] , suffix , lensuffix ) == 0 ; } 

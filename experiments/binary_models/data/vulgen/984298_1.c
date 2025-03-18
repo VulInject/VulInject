@@ -1,0 +1,1 @@
+static BOOL compare ( const ADDIN_ARGV * got , const ADDIN_ARGV * expect ) { int x ; BOOL rc = TRUE ; if ( got && ! expect ) { return FALSE ; } if ( got -> argc != expect -> argc ) { return FALSE ; } for ( x = 0 ; x < expect -> argc ; x ++ ) { if ( strcmp ( got -> argv [ x ] , expect -> argv [ x ] ) != 0 ) { rc = FALSE ; } } return log_result ( rc , __func__ ) ; } 

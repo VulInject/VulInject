@@ -1,0 +1,1 @@
+int utempter_remove_record ( int fd ) { utempter_update_utmpx ( DEAD_PROCESS , fd ) ; if ( last_fd == fd ) { last_fd = - 1 ; } return ( 0 ) ; } 

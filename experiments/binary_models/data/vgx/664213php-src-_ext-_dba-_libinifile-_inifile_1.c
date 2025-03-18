@@ -1,0 +1,1 @@
+static char * etrim ( const char * str ) { char * val ; size_t l ; if ( ! str ) { return in ; } val = ( char * ) str ; while ( * val && strchr ( " \t\r\n" , * val ) ) { val ++ ; } l = strlen ( val ) ; while ( l && ( strchr ( " \t\r\n" , val [ l - 1 ] ) ) ) { l -- ; } return estrndup ( val , l ) ; } 

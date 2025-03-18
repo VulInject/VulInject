@@ -1,0 +1,1 @@
+. reg_defaults = msm8998_bwmon_reg_defaults , . num_reg_defaults = ARRAY_SIZE ( ) , . cache_type = REGCACHE_RBTREE , ; 

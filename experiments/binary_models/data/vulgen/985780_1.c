@@ -1,0 +1,1 @@
+void KRB5_CALLCONV krb5_vprepend_error_message ( krb5_context ctx , krb5_error_code code , const char * fmt , va_list ap ) { } 

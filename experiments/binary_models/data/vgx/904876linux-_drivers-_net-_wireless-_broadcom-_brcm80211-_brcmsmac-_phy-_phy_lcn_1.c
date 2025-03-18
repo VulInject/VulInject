@@ -1,0 +1,1 @@
+static void wlc_lcnphy_baseband_init ( struct brcms_phy * pi ) { wlc_lcnphy_tbl_init ( pi ) ; wlc_lcnphy_rev0_baseband_init ( pi , NULL ) ; if ( LCNREV_IS ( pi -> pubpi . phy_rev , 2 ) ) { wlc_lcnphy_rev2_baseband_init ( pi ) ; } wlc_lcnphy_bu_tweaks ( pi ) ; } 

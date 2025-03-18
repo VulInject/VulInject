@@ -1,0 +1,1 @@
+static int it8712f_wdt_notify ( struct notifier_block * this , unsigned long code , void * unused ) { return NOTIFY_DONE ; } 

@@ -1,0 +1,1 @@
+void tcg_region_reset_all ( void ) { unsigned int n_ctxs = qatomic_read ( & tcg_cur_ctxs ) ; unsigned int i ; qemu_mutex_lock ( & region . lock ) ; region . current = 0 ; region . agg_size_full = 0 ; for ( i = 0 ; i < n_ctxs ; i ++ ) { TCGContext * s = qatomic_read ( & tcg_ctxs [ i ] ) ; tcg_region_initial_alloc__locked ( s ) ; } qemu_mutex_unlock ( & region . lock ) ; } 

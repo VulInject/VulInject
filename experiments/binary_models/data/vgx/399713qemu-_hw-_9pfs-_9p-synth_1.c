@@ -1,0 +1,1 @@
+static struct dirent * synth_get_dentry ( V9fsSynthNode * dir , struct dirent * entry , off_t off ) { int i = 0 ; V9fsSynthNode * node ; rcu_read_lock ( ) ; QLIST_FOREACH ( , , ) { if ( i == off ) { break ; } i ++ ; } rcu_read_unlock ( ) ; if ( ! node ) { return in ; } synth_direntry ( node , entry , off ) ; return entry ; } 

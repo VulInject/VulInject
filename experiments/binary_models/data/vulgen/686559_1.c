@@ -1,0 +1,1 @@
+int parsemonth ( const char * s ) { struct tm tm ; char * cp ; int v ; v = ( int ) strtol ( s , & cp , 10 ) ; if ( * cp != '\0' ) { v = 0 ; if ( ( cp = strptime ( s , "%b" , & tm ) ) != NULL && * cp == '\0' ) { v = tm . tm_mon + 1 ; } } return ( v ) ; } 

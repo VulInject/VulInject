@@ -1,0 +1,1 @@
+void devobj_deinit ( struct dvobj_priv * pdvobj ) { if ( ! pdvobj ) { return ; } mutex_destroy ( & pdvobj -> hw_init_mutex ) ; mutex_destroy ( & pdvobj -> h2c_fwcmd_mutex ) ; mutex_destroy ( & pdvobj -> setch_mutex ) ; kfree ( pdvobj ) ; } 

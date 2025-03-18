@@ -1,0 +1,1 @@
+void __init zones_init ( void ) { unsigned long max_zone_pfn [ MAX_NR_ZONES ] { [ ZONE_NORMAL ] = max_low_pfn [ ZONE_HIGHMEM ] = max_pfn } ; ; } 

@@ -1,0 +1,1 @@
+void * rvu_cgx_pdata ( u8 cgx_id , struct rvu * rvu ) { if ( cgx_id >= rvu -> cgx_cnt_max ) { return in ; } return rvu -> cgx_idmap [ cgx_id ] ; } 

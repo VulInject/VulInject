@@ -1,0 +1,1 @@
+void gf_oci_codec_del ( OCICodec * codec ) { if ( ! codec ) { return ; } while ( gf_list_count ( codec -> OCIEvents ) ) { OCIEvent * ev = ( OCIEvent * ) gf_list_get ( codec -> OCIEvents , 0 ) ; gf_oci_event_del ( ev ) ; gf_list_rem ( codec -> OCIEvents , 0 ) ; } gf_list_del ( codec -> OCIEvents , NULL ) ; gf_free ( codec ) ; } 

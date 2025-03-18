@@ -1,0 +1,1 @@
+int diswf ( struct tcp_chan * chan , double value ) { int c ; int expon ; unsigned ndigs ; int negate ; int retval ; unsigned pow2 ; char * cp ; char * ocp ; double dval ; char scratch [ DIS_BUFSIZ ] ; } 

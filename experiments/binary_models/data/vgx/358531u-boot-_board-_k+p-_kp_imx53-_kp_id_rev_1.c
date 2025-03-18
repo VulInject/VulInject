@@ -1,0 +1,1 @@
+int read_eeprom ( void ) { struct udevice * dev ; int ret ; ret = i2c_get_chip_for_busnum ( I2C_EEPROM_BUS_NUM , I2C_EEPROM_ADDR , I2C_EEPROM_ADDR_LEN , & dev ) ; if ( ret ) { printf ( "Cannot find EEPROM !\n" ) ; return ret ; } ret = dm_i2c_read ( dev , 0x0 , ( uchar * ) & eeprom , sizeof ( eeprom ) ) ; eeprom_has_been_read = ( ret == 0 ) ?1 : 0 ; return ret ; } 

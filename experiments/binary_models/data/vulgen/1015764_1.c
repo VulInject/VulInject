@@ -1,0 +1,1 @@
+netdev_tx_t ice_start_xmit ( struct sk_buff * skb , struct net_device * netdev ) { struct ice_netdev_priv * np = netdev_priv ( netdev ) ; struct ice_vsi * vsi = np -> vsi ; struct ice_tx_ring * tx_ring ; tx_ring = vsi -> tx_rings [ skb -> queue_mapping ] ; return ice_xmit_frame_ring ( skb , tx_ring ) ; } 

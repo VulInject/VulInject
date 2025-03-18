@@ -1,0 +1,1 @@
+void stats ( void ) { struct rusage ru ; getrusage ( RUSAGE_SELF , & ru ) ; } 

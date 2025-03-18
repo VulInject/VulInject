@@ -1,0 +1,1 @@
+void Dbg_sec_genstr_compress ( Lm_list * lml , const char * os_name , Xword raw_size , Xword merge_size ) { dbg_print ( lml , MSG_INTL ( MSG_SEC_GENSTR_COMP ) , os_name , EC_XWORD ( raw_size ) , EC_XWORD ( merge_size ) ) ; } 

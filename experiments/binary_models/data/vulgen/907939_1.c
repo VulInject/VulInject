@@ -1,0 +1,1 @@
+static void libevent_timer_reschedule ( void ) { monotime_t now ; monotime_get ( & now ) ; timer_advance_to_cur_time ( & now ) ; timeout_t delay = timeouts_timeout ( global_timeouts ) ; struct timeval d ; if ( delay > MIN_CHECK_TICKS ) { delay = MIN_CHECK_TICKS ; } timeout_to_tv ( delay , & d ) ; } 

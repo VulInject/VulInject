@@ -1,0 +1,1 @@
+static void dvb_pll_remove ( struct i2c_client * client ) { struct dvb_frontend * fe = i2c_get_clientdata ( client ) ; struct dvb_pll_priv * priv = fe -> tuner_priv ; ida_simple_remove ( & pll_ida , priv -> nr ) ; } 

@@ -1,0 +1,1 @@
+static void dump_pdeathsig ( void ) { int pdeathsig ; printf ( _ ( "Parent death signal: " ) ) ; if ( pdeathsig && signum_to_signame ( pdeathsig ) != NULL ) { printf ( "%s\n" , signum_to_signame ( pdeathsig ) ) ; } if ( pdeathsig ) { printf ( "%d\n" , pdeathsig ) ; } else { printf ( _ ( "[none]\n" ) ) ; } } 

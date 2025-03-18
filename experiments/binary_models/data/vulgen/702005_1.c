@@ -1,0 +1,1 @@
+gimp_operation_histogram_sink_finalize ( ) { GimpOperationHistogramSink * sink = GIMP_OPERATION_HISTOGRAM_SINK ( object ) ; g_clear_object ( & sink -> histogram ) ; } 

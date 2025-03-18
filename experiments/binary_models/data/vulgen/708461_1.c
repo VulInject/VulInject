@@ -1,0 +1,1 @@
+foo ( ) { struct A e ; { void baz ( void ) { bar ( & e ) ; } fnptr ( baz ) ; } { struct A * f ; f = & e ; if ( f -> c - f -> a > f -> d - f -> a ) { f -> c = f -> d ; } } } 

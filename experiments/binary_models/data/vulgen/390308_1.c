@@ -1,0 +1,1 @@
+static boolean_t parse_lun_num ( uchar_t * str_num , uchar_t * hex_num ) static void generate_iscsi_initiator_id ( void ) static int isdigit ( int ch ) { return ( ch >= '0' && ch <= '9' ) ; } 

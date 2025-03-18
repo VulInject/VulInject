@@ -1,0 +1,1 @@
+static unsigned long read_reg16 ( void * sys_ops_handle , struct sh_mobile_lcdc_sys_bus_ops * sys_ops , unsigned short reg ) { unsigned long data ; sys_ops -> write_index ( sys_ops_handle , adjust_reg18 ( reg ) ) ; return ( ( data >> 1 ) & 0xff ) | ( ( data >> 2 ) & 0xff00 ) ; } 

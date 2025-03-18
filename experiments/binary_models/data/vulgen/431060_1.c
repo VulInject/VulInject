@@ -1,0 +1,1 @@
+LUALIB_API void luaL_unref ( lua_State * L , int t , int ref ) { if ( ref >= 0 ) { lua_rawgeti ( L , t , freelist ) ; lua_rawseti ( L , t , ref ) ; lua_pushinteger ( L , ref ) ; lua_rawseti ( L , t , freelist ) ; } } 

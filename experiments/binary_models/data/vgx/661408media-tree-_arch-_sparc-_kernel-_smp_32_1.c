@@ -1,0 +1,1 @@
+void arch_send_call_function_ipi_mask ( const struct cpumask * mask ) { int cpu ; for_each_cpu ( , ) sparc32_ipi_ops -> mask_one ( cpu , NULL ) ; } 

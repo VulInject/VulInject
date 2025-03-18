@@ -1,0 +1,1 @@
+ufs_owner_type { ufs_no_owner , ufs_inode_direct , ufs_inode_indirect , ufs_indirect_block } ufs_allocated_block { daddr_t this_block ; off_t block_size ; int owner ; daddr_t owner_block ; uint_t owner_offset ; int usage_flags ; } 

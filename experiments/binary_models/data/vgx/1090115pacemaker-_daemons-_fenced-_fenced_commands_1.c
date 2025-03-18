@@ -1,0 +1,1 @@
+static int get_action_delay_max ( const stonith_device_t * device , const char * action ) { const char * value = NULL ; int delay_max ; if ( ! pcmk__is_fencing_action ( action ) ) { return 0 ; } value = g_hash_table_lookup ( device -> params , PCMK_STONITH_DELAY_MAX ) ; if ( value ) { delay_max = crm_parse_interval_spec ( value ) / 1000 ; } return delay_max ; } 

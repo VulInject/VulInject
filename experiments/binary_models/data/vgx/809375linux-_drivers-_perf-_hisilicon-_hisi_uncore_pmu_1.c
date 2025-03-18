@@ -1,0 +1,1 @@
+void hisi_uncore_pmu_disable ( struct pmu * pmu ) { struct hisi_pmu * hisi_pmu = to_hisi_pmu ( pmu ) ; hisi_pmu -> ops -> stop_counters ( hisi_pmu , NULL ) ; } 

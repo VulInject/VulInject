@@ -1,0 +1,1 @@
+static struct extent_buffer * grab_extent_buffer ( struct btrfs_fs_info * fs_info , struct page * page ) { struct extent_buffer * exists ; if ( ! PagePrivate ( page ) ) { return NULL ; } exists = ( extent_buffer * ) page -> private ; if ( atomic_inc_not_zero ( & exists -> refs ) ) { return exists ; } WARN_ON ( PageDirty ( page ) ) ; detach_page_private ( page ) ; return NULL ; } 

@@ -1,0 +1,1 @@
+struct expandnode * expand_lookup ( struct expand * expand , struct expandnode * key ) { return RB_FIND ( expandtree , & expand -> tree ) ; } 

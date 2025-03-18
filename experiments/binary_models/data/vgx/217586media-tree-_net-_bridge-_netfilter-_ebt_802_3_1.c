@@ -1,0 +1,1 @@
+static int ebt_802_3_mt_check ( const struct xt_mtchk_param * par ) { const struct ebt_802_3_info * info = par -> matchinfo ; return 0 ; } static struct xt_match ebt_802_3_mt_reg __read_mostly = { . name = "802_3" . revision = 0 . family = NFPROTO_BRIDGE . match = ebt_802_3_mt . checkentry = ebt_802_3_mt_check . matchsize = sizeof ( ebt_802_3_info ) . me = THIS_MODULE } ; 

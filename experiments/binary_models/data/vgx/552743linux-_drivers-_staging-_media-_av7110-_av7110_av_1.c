@@ -1,0 +1,1 @@
+void av7110_p2t_init ( struct av7110_p2t * p , struct dvb_demux_feed * feed ) { p -> counter = 0 ; p -> pos = 0 ; p -> frags = 0 ; if ( feed ) { p -> feed = feed ; } } 

@@ -1,0 +1,1 @@
+static void zpa2326_init_runtime ( struct device * parent ) { pm_runtime_get_noresume ( parent ) ; pm_runtime_set_active ( parent ) ; pm_runtime_enable ( parent ) ; pm_runtime_set_autosuspend_delay ( parent , 1000 ) ; pm_runtime_use_autosuspend ( parent ) ; pm_runtime_mark_last_busy ( parent ) ; } 

@@ -1,0 +1,1 @@
+static bool ivch_get_hw_state ( struct intel_dvo_device * dvo ) { uint16_t vr01 ; ivch_reset ( dvo , NULL ) ; if ( ! ivch_read ( dvo , VR01 , & vr01 ) ) { return false ; } if ( vr01 & VR01_LCD_ENABLE ) { return true ; } else { return false ; } } 

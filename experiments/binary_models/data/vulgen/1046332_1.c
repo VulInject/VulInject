@@ -1,0 +1,1 @@
+void xhci_clear_endpoint_bw_info ( struct xhci_bw_info * bw_info ) { bw_info -> ep_interval = 0 ; bw_info -> mult = 0 ; bw_info -> num_packets = 0 ; bw_info -> max_packet_size = 0 ; bw_info -> max_esit_payload = 0 ; } 

@@ -1,0 +1,1 @@
+static int bfin_jc_open ( struct tty_struct * tty , struct file * filp ) { unsigned long flags ; spin_lock_irqsave ( & port . lock , flags ) ; port . count ++ ; spin_unlock_irqrestore ( & port . lock , flags ) ; tty_port_tty_set ( & port , tty ) ; wake_up_process ( bfin_jc_kthread , NULL ) ; return 0 ; } 

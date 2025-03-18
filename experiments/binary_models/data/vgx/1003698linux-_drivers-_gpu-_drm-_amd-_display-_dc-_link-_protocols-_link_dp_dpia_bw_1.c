@@ -1,0 +1,1 @@
+static void init_usb4_bw_struct ( struct dc_link * link ) { link -> dpia_bw_alloc_config . bw_granularity = get_bw_granularity ( link ) ; link -> dpia_bw_alloc_config . estimated_bw = get_estimated_bw ( link , NULL ) ; } 

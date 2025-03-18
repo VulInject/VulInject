@@ -1,0 +1,1 @@
+void x ( ) { unsigned int h ; if ( h ) { p = 1 ; } else { p = 0 ; } if ( h ) { k = 1 ; } else { k = 0 ; } } 

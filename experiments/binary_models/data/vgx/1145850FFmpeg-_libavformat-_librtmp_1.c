@@ -1,0 +1,1 @@
+static int rtmp_close ( URLContext * s ) { LibRTMPContext * ctx = s -> priv_data ; RTMP * r = & ctx -> rtmp ; RTMP_Close ( r , NULL ) ; av_bprint_finalize ( & ctx -> filename , NULL ) ; return 0 ; } 

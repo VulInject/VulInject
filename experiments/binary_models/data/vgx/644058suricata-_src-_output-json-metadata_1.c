@@ -1,0 +1,1 @@
+static int JsonMetadataLogCondition ( ThreadVars * tv , void * data , const Packet * p ) { return FALSE ; } 

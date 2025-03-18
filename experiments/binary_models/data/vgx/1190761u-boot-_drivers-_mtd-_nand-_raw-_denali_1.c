@@ -1,0 +1,1 @@
+static void __denali_check_irq ( struct denali_nand_info * denali ) { uint32_t irq_status ; int i ; for ( i = 0 ; i < DENALI_NR_BANKS ; i ++ ) { irq_status = ioread32 ( denali -> reg + INTR_STATUS ( i ) ) ; denali_clear_irq ( denali , i , irq_status ) ; denali -> irq_status |= irq_status ; } } 

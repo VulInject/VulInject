@@ -1,0 +1,1 @@
+cmd = g_strdup ( data ) ; data = "" ; { cmd = g_strndup ( data , ( int ) ( p - data ) ) ; data = p + 1 ; } printformat ( server , ischannel ( * target ) ?target : nick , MSGLEVEL_CTCPS , IRCTXT_CTCP_REQUESTED_UNKNOWN , nick , addr , cmd , data , target ) ; 

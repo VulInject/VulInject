@@ -1,0 +1,1 @@
+static const xattr_mapping { const char * attr ; int info ; } , mappings [ ] { { "user.xdg.referrer.url" CURLINFO_REFERER } { "user.mime_type" CURLINFO_CONTENT_TYPE } { NULL CURLINFO_NONE } } ; 

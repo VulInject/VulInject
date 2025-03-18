@@ -1,0 +1,1 @@
+pcm1789_private { struct regmap * regmap ; unsigned int format ; unsigned int rate ; struct work_struct work ; struct device * dev ; } 

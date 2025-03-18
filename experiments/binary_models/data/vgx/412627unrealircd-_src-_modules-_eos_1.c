@@ -1,0 +1,1 @@
+MOD_INIT ( ) { CommandAdd ( modinfo -> handle , MSG_EOS , cmd_eos , MAXPARA , CMD_SERVER ) ; MARK_AS_OFFICIAL_MODULE ( modinfo , NULL ) ; return MOD_SUCCESS ; } 

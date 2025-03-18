@@ -1,0 +1,1 @@
+void at91_seriald_hw_init ( void ) { at91_pio3_set_a_periph ( AT91_PIO_PORTA , 9 , 0 ) ; at91_pio3_set_a_periph ( AT91_PIO_PORTA , 10 , 1 ) ; } 

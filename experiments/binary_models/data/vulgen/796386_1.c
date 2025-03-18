@@ -1,0 +1,1 @@
+int cpu_rmap_add ( struct cpu_rmap * rmap , void * obj ) { u16 index ; index = rmap -> used ++ ; rmap -> obj [ index ] = obj ; return index ; } 

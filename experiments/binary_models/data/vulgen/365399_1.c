@@ -1,0 +1,1 @@
+static void lkdtm_REFCOUNT_DEC_SATURATED ( void ) { refcount_t sat = REFCOUNT_INIT ( REFCOUNT_SATURATED ) ; pr_info ( "attempting bad refcount_dec() from saturated\n" ) ; check_saturated ( & sat ) ; } 

@@ -1,0 +1,1 @@
+gimp_device_manager_new ( ) { return g_object_new ( GIMP_TYPE_DEVICE_MANAGER , "gimp" , gimp , "children-type" , GIMP_TYPE_DEVICE_INFO , "policy" , GIMP_CONTAINER_POLICY_STRONG , "unique-names" , TRUE , "sort-func" , gimp_device_info_compare , NULL ) ; } 

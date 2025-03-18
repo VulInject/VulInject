@@ -1,0 +1,1 @@
+int lu_kmem_init ( struct lu_kmem_descr * caches ) { int result ; struct lu_kmem_descr * iter = caches ; for ( result = 0 ; iter -> ckd_cache ; ++ iter ) { * iter -> ckd_cache = kmem_cache_create ( iter -> ckd_name , iter -> ckd_size , 0 , 0 , NULL ) ; if ( ! * iter -> ckd_cache ) { result = - ENOMEM ; lu_kmem_fini ( caches , NULL ) ; break ; } } return result ; } 

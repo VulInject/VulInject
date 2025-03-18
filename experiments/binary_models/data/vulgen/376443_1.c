@@ -1,0 +1,1 @@
+uint64_t uv_get_free_memory ( void ) { uint64_t freemem ; get_mem_info ( & totalmem , & freemem ) ; return freemem ; } 

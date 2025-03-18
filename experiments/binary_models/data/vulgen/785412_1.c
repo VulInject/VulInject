@@ -1,0 +1,1 @@
+int gf100_pcie_cap_speed ( struct nvkm_pci * pci ) { struct nvkm_device * device = pci -> subdev . device ; if ( punits_pci_cap_speed == 0x80 ) { return 1 ; } return 0 ; } 

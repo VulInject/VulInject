@@ -1,0 +1,1 @@
+struct usb_endpoint_descriptor fsg_hs_bulk_out_desc = { . bLength = USB_DT_ENDPOINT_SIZE . bDescriptorType = USB_DT_ENDPOINT . bmAttributes = USB_ENDPOINT_XFER_BULK . wMaxPacketSize = cpu_to_le16 ( 512 ) . bInterval = 1 } ; 

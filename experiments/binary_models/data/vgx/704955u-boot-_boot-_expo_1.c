@@ -1,0 +1,1 @@
+int expo_action_get ( struct expo * exp , struct expo_action * act ) { * act = exp -> action ; return act -> type == EXPOACT_NONE ?- EAGAIN : 0 ; } 

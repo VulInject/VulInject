@@ -1,0 +1,1 @@
+extern void f4 ( struct unpacked_x * ) extern void f3 ( void ) extern void f2 ( struct x * ) extern void f1 ( void ) int main ( void ) { f1 ( ) ; f3 ( ) ; } 

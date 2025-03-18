@@ -1,0 +1,1 @@
+void sset_from_delimited_string ( struct sset * set , const char * s_ , const char * delimiters ) { sset_init ( set ) ; char * s = xstrdup ( s_ ) ; char * token , * save_ptr = NULL ; for ( token = strtok_r ( s , delimiters , & save_ptr ) ; token != NULL ; token = strtok_r ( NULL , delimiters , & save_ptr ) ) { sset_add ( set , token ) ; } } 

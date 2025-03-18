@@ -1,0 +1,1 @@
+static inline struct tegra186_wdt * to_tegra186_wdt ( struct watchdog_device * wdd ) { return container_of ( wdd , tegra186_wdt , base ) ; } tegra186_timer { const struct tegra186_timer_soc * soc ; struct device * dev ; void __iomem * regs ; struct clocksource usec ; struct clocksource tsc ; struct clocksource osc ; } 

@@ -1,0 +1,1 @@
+int log_set_target_from_string ( const char * e ) { LogTarget t ; t = log_target_from_string ( e ) ; log_set_target ( t ) ; return 0 ; } 

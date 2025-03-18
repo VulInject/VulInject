@@ -1,0 +1,1 @@
+gimp_color_profile_combo_box_new ( , ) { GtkWidget * combo ; GtkListStore * store ; g_return_val_if_fail ( GTK_IS_DIALOG ( dialog ) , NULL ) ; store = gimp_color_profile_store_new ( history ) ; combo = gimp_color_profile_combo_box_new_with_model ( dialog , GTK_TREE_MODEL ( store ) ) ; g_object_unref ( store ) ; return combo ; } 

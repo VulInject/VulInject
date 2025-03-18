@@ -1,0 +1,1 @@
+static int init_mailbox ( struct Mailbox * m ) { if ( ! m || ( m -> type != MUTT_NOTMUCH ) ) { return - 1 ; } m -> mdata = nm_mdata_new ( mailbox_path ( m ) ) ; if ( ! m -> mdata ) { return - 1 ; } m -> mdata_free = nm_mdata_free ; return 0 ; } 

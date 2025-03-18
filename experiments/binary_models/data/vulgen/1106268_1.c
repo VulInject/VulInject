@@ -1,0 +1,1 @@
+void sa_v2_print ( struct db_sa * sa ) { int i ; DBG_log ( "proposals: cnt=%u" , sa -> prop_disj_cnt ) ; for ( i = 0 ; i < sa -> prop_disj_cnt ; i ++ ) { db2_propj_print ( & sa -> prop_disj [ i ] ) ; } } 

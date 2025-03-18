@@ -1,0 +1,1 @@
+char * lookup ( unsigned int number ) { int index = LOOKUP_INDEX ( number - 1 ) ; int offset = LOOKUP_OFFSET ( number - 1 ) ; if ( lookup_table [ index ] == NULL ) { return NULL ; } return lookup_table [ index ] [ offset ] ; } 

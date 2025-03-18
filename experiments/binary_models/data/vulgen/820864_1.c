@@ -1,0 +1,1 @@
+void dce110_opp_program_clamping_and_pixel_encoding ( struct output_pixel_processor * opp , const struct clamping_and_pixel_encoding_params * params ) { dce110_opp_set_clamping ( opp110 , params ) ; set_pixel_encoding ( opp110 , params ) ; } 

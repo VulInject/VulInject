@@ -1,0 +1,1 @@
+int ufshcd_dwc_link_startup_notify ( struct ufs_hba * hba , enum ufs_notify_change_status status ) { int err = 0 ; else { err = ufshcd_dwc_link_is_up ( hba ) ; if ( err ) { dev_err ( hba -> dev , "Link is not up\n" ) ; out } err = ufshcd_dwc_connection_setup ( hba ) ; if ( err ) { dev_err ( hba -> dev , "Connection setup failed (%d)\n" , err ) ; } } out return err ; } 

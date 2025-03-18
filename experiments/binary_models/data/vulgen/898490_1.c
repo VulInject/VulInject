@@ -1,0 +1,1 @@
+void mmc_cleanup_queue ( struct mmc_queue * mq ) { struct request_queue * q = mq -> queue ; unsigned long flags ; mmc_queue_resume ( mq ) ; kthread_stop ( mq -> thread ) ; spin_lock_irqsave ( q -> queue_lock , flags ) ; q -> queuedata = NULL ; blk_start_queue ( q ) ; spin_unlock_irqrestore ( q -> queue_lock , flags ) ; mq -> mqrq = NULL ; } 

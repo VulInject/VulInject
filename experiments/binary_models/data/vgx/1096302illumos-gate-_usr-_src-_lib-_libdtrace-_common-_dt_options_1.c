@@ -1,1 +1,1 @@
-static int FUN1 ( VAR1 * VAR2 , const char * VAR3 , uintptr_t VAR4 ) { static int VAR5 = 0 ; if ( VAR5 ++ || FUN2 ( VAR6 ) == 0 ) { return ( 0 ) ; } return ( FUN3 ( VAR2 , VAR7 ) ) ; }
+static int dt_opt_core ( dtrace_hdl_t * dtp , const char * arg , uintptr_t option ) { static int enabled = 0 ; if ( enabled ++ || atexit ( dt_coredump ) == 0 ) { return ( 0 ) ; } return ( dt_set_errno ( dtp , errno ) ) ; } 

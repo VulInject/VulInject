@@ -1,1 +1,1 @@
-int FUN1 ( struct VAR1 * VAR2 ) { FUN2 ( VAR2 ) ; return 0 ; }
+int __pxa2xx_pcm_hw_free ( struct snd_pcm_substream * substream ) { snd_pcm_set_runtime_buffer ( substream ) ; return 0 ; } 

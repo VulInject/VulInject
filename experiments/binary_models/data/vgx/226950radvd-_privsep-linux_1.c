@@ -1,0 +1,1 @@
+void privsep_set_write_fd ( int fd ) { pfd = fd ; } privsep_type { SET_INTERFACE_LINKMTU , SET_INTERFACE_CURHLIM , SET_INTERFACE_REACHTIME , SET_INTERFACE_RETRANSTIMER } privsep_command { int type ; char iface [ IFNAMSIZ ] ; int val ; } 

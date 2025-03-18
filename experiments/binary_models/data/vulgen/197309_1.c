@@ -1,0 +1,1 @@
+void free_event_params ( param_t * params , int mem_type ) { param_t * t1 , * t2 ; t2 = t1 = params ; while ( t1 ) { if ( mem_type == SHM_MEM_TYPE ) { shm_free ( t1 ) ; } else { pkg_free ( t1 ) ; } t1 = t2 ; } } 

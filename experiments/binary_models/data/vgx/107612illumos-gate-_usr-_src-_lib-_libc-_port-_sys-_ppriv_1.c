@@ -1,0 +1,1 @@
+int setppriv ( priv_op_t op , priv_ptype_t type , const priv_set_t * pset ) { priv_data_t * d ; int set ; LOADPRIVDATA ( d ) ; set = priv_getsetbyname ( type , NULL ) ; return ( syscall ( SYS_privsys , PRIVSYS_SETPPRIV , op , set , ( void * ) pset , d -> pd_setsize ) ) ; } 

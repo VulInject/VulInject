@@ -1,0 +1,1 @@
+static int pas_audio_open ( int dev , int mode ) { int err ; unsigned long flags ; spin_lock_irqsave ( & pas_lock , flags ) ; if ( pcm_busy ) { spin_unlock_irqrestore ( & pas_lock , flags ) ; return - EBUSY ; } pcm_busy = 1 ; spin_unlock_irqrestore ( & pas_lock , flags ) ; pcm_count = 0 ; open_mode = mode ; return 0 ; } 

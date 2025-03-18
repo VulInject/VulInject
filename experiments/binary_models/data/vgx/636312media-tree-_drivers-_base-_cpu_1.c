@@ -1,0 +1,1 @@
+static ssize_t cpu_release_store ( struct device * dev , struct device_attribute * attr , const char * buf , size_t count ) { int cnt ; int ret ; ret = lock_device_hotplug_sysfs ( ) ; if ( ret ) { return ret ; } cnt = arch_cpu_release ( buf , count ) ; unlock_device_hotplug ( ) ; return cnt ; } 

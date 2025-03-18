@@ -1,0 +1,1 @@
+static void __init pxa27x_dt_clocks_init ( struct device_node * np ) { pxa27x_clocks_init ( ) ; } 

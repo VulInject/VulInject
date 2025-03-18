@@ -1,0 +1,1 @@
+static inline void ss_hub_descriptor ( struct usb_hub_descriptor * desc ) { desc -> bDescriptorType = USB_DT_SS_HUB ; desc -> bDescLength = 12 ; desc -> wHubCharacteristics = cpu_to_le16 ( HUB_CHAR_INDV_PORT_LPSM | HUB_CHAR_COMMON_OCPM ) ; desc -> bNbrPorts = 1 ; desc -> u . ss . bHubHdrDecLat = 0x04 ; desc -> u . ss . DeviceRemovable = 0xffff ; } 

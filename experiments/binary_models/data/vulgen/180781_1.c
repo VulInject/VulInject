@@ -1,0 +1,1 @@
+const char * dlm_errmsg ( enum dlm_status err ) { return dlm_errmsgs [ err ] ; } 

@@ -1,0 +1,1 @@
+void ArrayList_Free ( wArrayList * arrayList ) { if ( ! arrayList ) { return ; } ArrayList_Clear ( arrayList ) ; free ( arrayList -> array ) ; free ( arrayList ) ; } 

@@ -1,0 +1,1 @@
+static void update_ngi_tc3 ( struct pcr_kenonce * kn ) { clonetowirechunk ( & kn -> thespace , kn -> space , & kn -> secret , SS ( secret . ptr ) , SS ( secret . len ) ) ; clonetowirechunk ( & kn -> thespace , kn -> space , & kn -> n , SS ( ni . ptr ) , SS ( ni . len ) ) ; clonetowirechunk ( & kn -> thespace , kn -> space , & kn -> gi , SS ( gi . ptr ) , SS ( gi . len ) ) ; } 

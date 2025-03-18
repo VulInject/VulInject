@@ -1,0 +1,1 @@
+void nlog ( int severity , const char * fmt , ... ) { va_list ap ; va_start ( ap , fmt ) ; va_end ( ap ) ; } 

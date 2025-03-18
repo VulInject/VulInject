@@ -1,0 +1,1 @@
+gsf_open_pkg_rels_free ( ) { g_hash_table_destroy ( rels -> by_id ) ; g_hash_table_destroy ( rels -> by_type ) ; } 

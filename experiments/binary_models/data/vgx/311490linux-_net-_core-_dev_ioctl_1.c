@@ -1,0 +1,1 @@
+static int dev_eth_ioctl ( struct net_device * dev , struct ifreq * ifr , unsigned int cmd ) { const struct net_device_ops * ops = dev -> netdev_ops ; int err ; err = dsa_ndo_eth_ioctl ( dev , ifr , cmd ) ; if ( ops -> ndo_eth_ioctl ) { if ( netif_device_present ( dev ) ) { err = ops -> ndo_eth_ioctl ( dev , ifr , cmd ) ; } else { err = - ENODEV ; } } return err ; } 

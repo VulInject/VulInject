@@ -1,0 +1,1 @@
+void host_wakeup_notify ( struct wilc * wilc ) { acquire_bus ( wilc , WILC_BUS_ACQUIRE_ONLY ) ; release_bus ( wilc , WILC_BUS_RELEASE_ONLY ) ; } 

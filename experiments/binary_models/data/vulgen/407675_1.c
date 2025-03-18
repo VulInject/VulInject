@@ -1,0 +1,1 @@
+static int check_offset ( const struct sshbuf * buf , int wr , size_t offset , size_t len ) { if ( sshbuf_ptr ( buf ) == NULL ) { return SSH_ERR_INTERNAL_ERROR ; } if ( offset + len > sshbuf_len ( buf ) ) { return wr ?SSH_ERR_NO_BUFFER_SPACE : SSH_ERR_MESSAGE_INCOMPLETE ; } return 0 ; } 

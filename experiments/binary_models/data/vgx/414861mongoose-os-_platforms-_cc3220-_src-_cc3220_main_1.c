@@ -1,0 +1,1 @@
+enum mgos_init_result cc32xx_init ( void ) { _u16 len16 = 4 ; int seed = 0 ; sl_NetUtilGet ( SL_NETUTIL_TRUE_RANDOM , 0 , ( uint8_t * ) & seed , & len16 ) ; return MGOS_INIT_OK ; } 

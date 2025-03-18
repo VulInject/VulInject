@@ -1,0 +1,1 @@
+char * ustrzcat ( char * dest , int size , const char * src ) { int pos = ustrsize ( dest ) ; int c ; size -= pos + ucwidth ( 0 ) ; while ( ( c = ugetxc ( & src ) ) != 0 ) { size -= ucwidth ( c ) ; pos += usetc ( dest + pos , c ) ; } usetc ( dest + pos , 0 ) ; return dest ; } 

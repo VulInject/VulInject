@@ -1,0 +1,1 @@
+static void __watchdog_unregister_device ( struct watchdog_device * wdd ) { if ( wdd -> ops -> restart ) { unregister_restart_handler ( & wdd -> restart_nb ) ; } if ( test_bit ( WDOG_STOP_ON_REBOOT , & wdd -> status ) ) { unregister_reboot_notifier ( & wdd -> reboot_nb ) ; } watchdog_dev_unregister ( wdd ) ; ida_simple_remove ( & watchdog_ida , wdd -> id ) ; } 

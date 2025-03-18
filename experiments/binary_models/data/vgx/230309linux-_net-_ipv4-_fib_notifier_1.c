@@ -1,0 +1,1 @@
+int __net_init fib4_notifier_init ( struct net * net ) { struct fib_notifier_ops * ops ; net -> ipv4 . fib_seq = 0 ; ops = fib_notifier_ops_register ( & fib4_notifier_ops_template , net ) ; net -> ipv4 . notifier_ops = ops ; return 0 ; } 

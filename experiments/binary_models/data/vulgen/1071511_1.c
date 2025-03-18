@@ -1,0 +1,1 @@
+static int socfpga_sysreset_probe ( struct udevice * dev ) { struct socfpga_sysreset_data * data = dev_get_priv ( dev ) ; return 0 ; } 

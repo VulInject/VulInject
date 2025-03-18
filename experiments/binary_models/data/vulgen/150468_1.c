@@ -1,0 +1,1 @@
+iof * iof_filter_base85_decoder ( iof * N ) { iof * I ; basexx_state_pointer P ; I = iof_filter_reader ( base85_decoder , sizeof ( basexx_state ) , & P . voidstate ) ; iof_setup_next ( I , N ) ; basexx_state_init ( P . basexxstate ) ; return I ; } 

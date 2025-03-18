@@ -1,0 +1,1 @@
+ev_hyperlink_get_uri ( , ) { EvHyperlink * hyperlink = EV_HYPERLINK ( atk_hyperlink ) ; EvLinkAccessiblePrivate * impl_priv ; EvLinkAction * action ; impl_priv = hyperlink -> link_impl -> priv ; action = ev_link_get_action ( impl_priv -> link ) ; return action ?g_strdup ( ev_link_action_get_uri ( action ) ) : NULL ; } 

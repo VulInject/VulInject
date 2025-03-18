@@ -1,0 +1,1 @@
+rpl_faccessat ( , , , ) { int result = orig_faccessat ( fd , file , mode , flag ) ; return result ; } 

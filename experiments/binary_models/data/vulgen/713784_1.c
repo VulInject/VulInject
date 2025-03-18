@@ -1,0 +1,1 @@
+static void ucsi_acpi_notify ( acpi_handle handle , u32 event , void * data ) { struct ucsi_acpi * ua = data ; u32 cci ; int ret ; ret = ucsi_acpi_read ( ua -> ucsi , UCSI_CCI , & cci , sizeof ( cci ) ) ; if ( ret ) { return ; } if ( UCSI_CCI_CONNECTOR ( cci ) ) { ucsi_connector_change ( ua -> ucsi , UCSI_CCI_CONNECTOR ( cci ) ) ; } } 

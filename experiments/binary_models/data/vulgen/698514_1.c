@@ -1,0 +1,1 @@
+krb5_error_code hdb_set_master_key ( krb5_context context , HDB * db , krb5_keyblock * key ) { krb5_error_code ret ; hdb_master_key mkey ; if ( ret ) { return ret ; } db -> hdb_master_key = mkey ; des_set_random_generator_seed ( key . keyvalue . data ) ; db -> hdb_master_key_set = 1 ; db -> hdb_master_key -> key_usage = HDB_KU_MKEY ; return 0 ; } 

@@ -1,0 +1,1 @@
+int win_wch ( WINDOW * w , cchar_t * cc ) { * cc = w -> _line [ w -> _cury ] [ w -> _curx ] ; return ( OK ) ; } 

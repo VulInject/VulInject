@@ -1,0 +1,1 @@
+static struct symbol * get_member_symbol ( struct symbol_list * symbol_list , struct ident * member ) { struct symbol * tmp , * sub ; FOR_EACH_PTR ( , ) { if ( ! tmp -> ident ) { sub = get_real_base_type ( tmp ) ; sub = get_member_symbol ( sub -> symbol_list , member ) ; continue ; } if ( tmp -> ident == member ) { return tmp ; } } END_FOR_EACH_PTR ( tmp ) ; return NULL ; } 

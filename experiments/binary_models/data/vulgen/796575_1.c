@@ -1,0 +1,1 @@
+static int doc_register_readw ( struct docg3 * docg3 , int reg ) { u16 val ; doc_writew ( docg3 , reg , DOC_READADDRESS ) ; val = doc_readw ( docg3 , reg ) ; return val ; } 

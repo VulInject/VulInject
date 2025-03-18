@@ -1,0 +1,1 @@
+void asl_update ( struct whc * whc , uint32_t wusbcmd ) { struct wusbhc * wusbhc = & whc -> wusbhc ; long t ; mutex_lock ( & wusbhc -> mutex ) ; if ( wusbhc -> active ) { whc_write_wusbcmd ( whc , wusbcmd , wusbcmd ) ; if ( t == 0 ) { whc_hw_error ( whc , "ASL update timeout" ) ; } } mutex_unlock ( & wusbhc -> mutex ) ; } 

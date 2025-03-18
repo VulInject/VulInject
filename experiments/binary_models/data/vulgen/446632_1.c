@@ -1,0 +1,1 @@
+void rt_summary_set ( struct eigrp * eigrp , struct summary_addr * summary , struct classic_metric * metric ) { struct rinfo ri ; ri . af = eigrp -> af ; ri . type = EIGRP_ROUTE_INTERNAL ; ri . prefix = summary -> prefix ; ri . prefixlen = summary -> prefixlen ; ri . metric = * metric ; rde_check_update ( eigrp -> rnbr_summary , & ri ) ; } 

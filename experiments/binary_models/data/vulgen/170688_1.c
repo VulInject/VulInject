@@ -1,0 +1,1 @@
+xcoff64_swap_ldrel_in ( , , ) bfd * abfd ; const PTR s ; struct internal_ldrel * dst ; { const struct external_ldrel * src = ( const external_ldrel * ) s ; dst -> l_vaddr = bfd_get_64 ( abfd , src -> l_vaddr ) ; dst -> l_symndx = bfd_get_32 ( abfd , src -> l_symndx ) ; dst -> l_rtype = bfd_get_16 ( abfd , src -> l_rtype ) ; } 

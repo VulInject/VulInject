@@ -1,0 +1,1 @@
+struct rio_net * rio_alloc_net ( struct rio_mport * mport ) { struct rio_net * net = kzalloc ( sizeof ( * net ) , GFP_KERNEL ) ; if ( net ) { INIT_LIST_HEAD ( & net -> node ) ; INIT_LIST_HEAD ( & net -> devices ) ; INIT_LIST_HEAD ( & net -> mports ) ; mport -> net = net ; } return net ; } 

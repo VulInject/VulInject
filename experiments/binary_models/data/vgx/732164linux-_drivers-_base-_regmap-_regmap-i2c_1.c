@@ -1,0 +1,1 @@
+struct regmap * __regmap_init_i2c ( struct i2c_client * i2c , const struct regmap_config * config , struct lock_class_key * lock_key , const char * lock_name ) { const struct regmap_bus * bus = regmap_get_i2c_bus ( i2c , config ) ; return __regmap_init ( & i2c -> dev , bus , & i2c -> dev , config , lock_key , lock_name ) ; } 

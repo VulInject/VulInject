@@ -1,0 +1,1 @@
+static void intdbg_control_init ( Object * obj ) { SysBusDevice * sd = SYS_BUS_DEVICE ( obj ) ; IntegratorDebugState * s = INTEGRATOR_DEBUG ( obj ) ; sysbus_init_mmio ( sd , & s -> iomem ) ; } 

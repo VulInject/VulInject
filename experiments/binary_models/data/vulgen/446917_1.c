@@ -1,0 +1,1 @@
+static void Setup_ResetDefaults_Draw ( void ) { UI_DrawProportionalString ( SCREEN_WIDTH / 2 , 356 + PROP_HEIGHT * 0 , "WARNING: This will reset *ALL*" , UI_CENTER | UI_SMALLFONT , color_yellow ) ; } 

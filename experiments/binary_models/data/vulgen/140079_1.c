@@ -1,0 +1,1 @@
+void iso7816_free ( iso7816_apdu_t * * apdu_p ) { iso7816_apdu_t * apdu ; if ( apdu_p == NULL || ( apdu = * apdu_p ) == NULL ) { return ; } * apdu_p = NULL ; } 

@@ -1,0 +1,1 @@
+static void acadia_fixups ( void ) { dt_fixup_memory ( bd . bi_memstart , bd . bi_memsize ) ; get_clocks ( ) ; } 

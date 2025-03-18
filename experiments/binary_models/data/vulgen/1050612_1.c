@@ -1,0 +1,1 @@
+static int __init tcp_cdg_register ( void ) { if ( backoff_beta > 1024 || window ( 1 || window ) 256 ) { return - ERANGE ; } BUILD_BUG_ON ( sizeof ( cdg ) > ICSK_CA_PRIV_SIZE ) ; tcp_register_congestion_control ( & tcp_cdg ) ; return 0 ; } 

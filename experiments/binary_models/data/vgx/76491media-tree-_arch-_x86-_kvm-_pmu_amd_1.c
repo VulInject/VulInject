@@ -1,0 +1,1 @@
+static struct kvm_pmc * amd_msr_idx_to_pmc ( struct kvm_vcpu * vcpu , unsigned idx ) { struct kvm_pmu * pmu = vcpu_to_pmu ( vcpu ) ; struct kvm_pmc * counters ; idx &= ~ ( 3u << 30 ) ; if ( idx >= pmu -> nr_arch_gp_counters ) { return in ; } counters = pmu -> gp_counters ; return & counters [ idx ] ; } 

@@ -1,0 +1,1 @@
+static LAST_MSG_REC * last_msg_find ( GSList * list , const char * nick ) { while ( list != NULL ) { LAST_MSG_REC * rec = list -> data ; list = list -> next ; } return NULL ; } 

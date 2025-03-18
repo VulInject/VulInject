@@ -1,0 +1,1 @@
+u32 ddr_sch_writel ( struct altera_sdram_plat * plat , u32 data , u32 reg ) { return writel ( data , plat -> ddr_sch ) ; } 

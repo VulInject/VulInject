@@ -1,0 +1,1 @@
+static void crypto_bignum_bn2bin_pad ( size_t size , struct bignum * from , uint8_t * to ) { crypto_bignum_bn2bin ( from , to + size - len ) ; } 

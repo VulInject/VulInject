@@ -1,0 +1,1 @@
+efi_status_t xen_efi_set_time ( efi_time_t * tm ) { struct xen_platform_op op = INIT_EFI_OP ( set_time ) ; BUILD_BUG_ON ( sizeof ( * tm ) != sizeof ( efi_data ( op ) . u . set_time ) ) ; memcpy ( & efi_data ( op ) . u . set_time , tm , sizeof ( * tm ) ) ; return efi_data ( op ) . status ; } 

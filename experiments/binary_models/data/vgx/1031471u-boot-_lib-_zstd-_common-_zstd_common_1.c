@@ -1,0 +1,1 @@
+void * ZSTD_customMalloc ( size_t size , ZSTD_customMem customMem ) { return ZSTD_malloc ( size ) ; } 

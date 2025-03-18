@@ -1,0 +1,1 @@
+void fe_dcc_server_init ( void ) { signal_add ( "dcc server started" , ( SIGNAL_FUNC ) dcc_server_started ) ; signal_add ( "dcc closed" , ( SIGNAL_FUNC ) dcc_closed ) ; } 

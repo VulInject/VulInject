@@ -1,0 +1,1 @@
+STATIC void xfs_attrd_item_format ( struct xfs_log_item * lip , struct xfs_log_vec * lv ) { struct xfs_attrd_log_item * attrdp = ATTRD_ITEM ( lip ) ; struct xfs_log_iovec * vecp = NULL ; attrdp -> attrd_format . alfd_type = XFS_LI_ATTRD ; xlog_copy_iovec ( lv , & vecp , XLOG_REG_TYPE_ATTRD_FORMAT , & attrdp -> attrd_format , sizeof ( xfs_attrd_log_format ) ) ; } 

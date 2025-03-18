@@ -1,0 +1,1 @@
+int decode_contact ( sip_msg_t * msg , char * unused1 , char * unused2 ) { return ki_decode_contact ( msg ) ; } 

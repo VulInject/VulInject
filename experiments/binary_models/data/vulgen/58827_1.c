@@ -1,0 +1,1 @@
+static inline enum comp_state do_atomic ( struct rxe_qp * qp , struct rxe_pkt_info * pkt , struct rxe_send_wqe * wqe ) { int ret ; ret = copy_data ( qp -> pd , IB_ACCESS_LOCAL_WRITE , & wqe -> dma , & atomic_orig , sizeof ( u64 ) , RXE_TO_MR_OBJ ) ; if ( ret ) { wqe -> status = IB_WC_LOC_PROT_ERR ; return COMPST_ERROR ; } return COMPST_COMP_ACK ; } 

@@ -1,0 +1,1 @@
+static void exynos_setup_vbus_gpio ( struct device * dev ) { int err ; int gpio ; gpio = of_get_named_gpio ( dev -> of_node , "samsung,vbus-gpio" , 0 ) ; if ( ! gpio_is_valid ( gpio ) ) { return ; } err = devm_gpio_request_one ( dev , gpio , GPIOF_OUT_INIT_HIGH , "ehci_vbus_gpio" ) ; if ( err ) { dev_err ( dev , "can't request ehci vbus gpio %d" , gpio ) ; } } 

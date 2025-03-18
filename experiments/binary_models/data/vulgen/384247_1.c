@@ -1,0 +1,1 @@
+static void combiner_mask_irq ( struct irq_data * data ) { u32 mask = 1 << ( data -> hwirq % 32 ) ; } 

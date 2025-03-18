@@ -1,0 +1,1 @@
+mipsnbsd_get_longjmp_target ( ) { CORE_ADDR jb_addr ; char * buf ; buf = alloca ( NBSD_MIPS_JB_ELEMENT_SIZE ) ; jb_addr = read_register ( A0_REGNUM ) ; * pc = extract_unsigned_integer ( buf , NBSD_MIPS_JB_ELEMENT_SIZE ) ; return 1 ; } 

@@ -1,0 +1,1 @@
+static int ubd_getgeo ( struct block_device * bdev , struct hd_geometry * geo ) 

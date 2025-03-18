@@ -1,0 +1,1 @@
+static void ax88172a_remove_mdio ( struct usbnet * dev ) { struct ax88172a_private * priv = dev -> driver_priv ; netdev_info ( dev -> net , "deregistering mdio bus %s\n" , priv -> mdio -> id ) ; mdiobus_unregister ( priv -> mdio , NULL ) ; mdiobus_free ( priv -> mdio ) ; } 

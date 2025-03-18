@@ -1,0 +1,1 @@
+buf_mmap_priv { int bytes_priv ; RMmap * mmap ; } 

@@ -1,0 +1,1 @@
+static int snd_pmac_awacs_info_volume ( struct snd_kcontrol * kcontrol , struct snd_ctl_elem_info * uinfo ) { uinfo -> type = SNDRV_CTL_ELEM_TYPE_INTEGER ; uinfo -> count = 2 ; uinfo -> value . integer . max = 15 ; return 0 ; } 

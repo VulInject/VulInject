@@ -1,0 +1,1 @@
+static s32 qcom_scm_call_atomic1 ( u32 svc , u32 cmd , u32 arg1 ) { int context_id ; register u32 r0 asm ( "r0" ) SCM_ATOMIC ( svc , cmd , 1 ) ; ; register u32 r1 asm ( "r1" ) ( u32 ) & context_id ; ; register u32 r2 asm ( "r2" ) arg1 ; ; return r0 ; } 

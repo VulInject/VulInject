@@ -1,0 +1,1 @@
+qboolean EntityCarriesCubes ( aas_entityinfo_t * entinfo ) { entityState_t state ; BotAI_GetEntityState ( entinfo -> number , & state ) ; if ( state . generic1 > 0 ) { return qtrue ; } return qfalse ; } 

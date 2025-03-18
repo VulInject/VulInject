@@ -1,0 +1,1 @@
+static void on_stop ( h2o_generator_t * _self , h2o_req_t * req ) { struct st_connect_generator_t * self = H2O_STRUCT_FROM_MEMBER ( st_connect_generator_t , super , _self ) ; } 

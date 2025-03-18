@@ -1,0 +1,1 @@
+static uint64_t slavio_diag_mem_readb ( void * opaque , hwaddr addr , unsigned size ) { MiscState * s = opaque ; uint32_t ret = 0 ; ret = s -> diag ; trace_slavio_diag_mem_readb ( ret , NULL ) ; return ret ; } 

@@ -1,0 +1,1 @@
+static void statlist ( LexState * ls ) { while ( ! block_follow ( ls , 1 ) ) { statement ( ls ) ; } } 

@@ -1,0 +1,1 @@
+void SPI_Cmd ( SPI_TypeDef * SPIx , FunctionalState NewState ) { assert_param ( IS_FUNCTIONAL_STATE ( NewState ) ) ; if ( NewState != DISABLE ) { SPIx -> CR1 |= SPI_CR1_SPE ; } else { SPIx -> CR1 &= ( uint16_t ) ~ ( ( uint16_t ) SPI_CR1_SPE ) ; } } 

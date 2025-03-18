@@ -1,0 +1,1 @@
+static int ili9881c_enable ( struct drm_panel * panel ) { struct ili9881c * ctx = panel_to_ili9881c ( panel ) ; msleep ( 120 ) ; mipi_dsi_dcs_set_display_on ( ctx -> dsi , NULL ) ; return 0 ; } 

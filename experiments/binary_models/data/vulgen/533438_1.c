@@ -1,0 +1,1 @@
+el_editmode ( , , ) { const wchar_t * how ; how = argv [ 1 ] ; if ( wcscmp ( how , L"on" ) == 0 ) { el -> el_flags &= ~ EDIT_DISABLED ; tty_rawmode ( el ) ; } if ( wcscmp ( how , L"off" ) == 0 ) { tty_cookedmode ( el ) ; el -> el_flags |= EDIT_DISABLED ; } else { ( void ) fprintf ( el -> el_errfile , "edit: Bad value `%ls'.\n" , how ) ; return - 1 ; } return 0 ; } 

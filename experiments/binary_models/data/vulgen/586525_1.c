@@ -1,0 +1,1 @@
+static void test_token_bucket_ctr_init ( void * arg ) { ( void ) arg ; token_bucket_ctr_t tb ; token_bucket_ctr_init ( & tb , RATE , BURST , START_TS ) ; tt_uint_op ( tb . cfg . rate , OP_EQ , RATE ) ; tt_uint_op ( tb . cfg . burst , OP_EQ , BURST ) ; tt_uint_op ( tb . last_refilled_at_timestamp , OP_EQ , START_TS ) ; done } 

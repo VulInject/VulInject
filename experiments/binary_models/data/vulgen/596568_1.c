@@ -1,0 +1,1 @@
+static void __sysmmu_set_ptbase ( struct sysmmu_drvdata * data , phys_addr_t pgd ) { if ( MMU_MAJ_VER ( data -> version ) < 5 ) { writel ( pgd , data -> sfrbase + REG_PT_BASE_ADDR ) ; } else { writel ( pgd >> PAGE_SHIFT , data -> sfrbase + REG_V5_PT_BASE_PFN ) ; } } 

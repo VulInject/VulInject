@@ -1,0 +1,1 @@
+static int __init efi_test_init ( void ) { int ret ; if ( ret ) { pr_err ( "efi_test: can't misc_register on minor=%d\n" , MISC_DYNAMIC_MINOR ) ; return ret ; } return 0 ; } 

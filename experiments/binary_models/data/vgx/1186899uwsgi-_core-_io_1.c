@@ -1,0 +1,1 @@
+static char * uwsgi_scheme_exec ( char * url , size_t * size , int add_zero ) { int cpipe [ 2 ] ; if ( pipe ( cpipe ) ) { uwsgi_error ( "pipe()" ) ; exit ( 1 ) ; } uwsgi_run_command ( url , cpipe [ 1 ] ) ; char * buffer = uwsgi_read_fd ( cpipe [ 0 ] , size , add_zero ) ; close ( cpipe [ 0 ] ) ; close ( cpipe [ 1 ] ) ; return buffer ; } 

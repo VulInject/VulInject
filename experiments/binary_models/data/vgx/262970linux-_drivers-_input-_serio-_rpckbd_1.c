@@ -1,0 +1,1 @@
+static int rpckbd_remove ( struct platform_device * dev ) { struct serio * serio = platform_get_drvdata ( dev ) ; struct rpckbd_data * rpckbd = serio -> port_data ; serio_unregister_port ( serio ) ; return 0 ; } 

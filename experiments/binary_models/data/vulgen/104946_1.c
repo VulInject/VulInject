@@ -1,0 +1,1 @@
+Tlsh * tlsh_new ( ) { Tlsh * tlsh = malloc ( sizeof ( Tlsh ) ) ; if ( ! tlsh ) { return NULL ; } tlsh -> impl = tlsh_impl_new ( ) ; if ( ! tlsh -> impl ) { return NULL ; } return tlsh ; } 

@@ -1,0 +1,1 @@
+static bool ssh_rtl_tx_can_process ( struct ssh_request * rqst ) { struct ssh_rtl * rtl = ssh_request_rtl ( rqst ) ; return atomic_read ( & rtl -> pending . count ) < SSH_RTL_MAX_PENDING ; } 

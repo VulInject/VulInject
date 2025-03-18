@@ -1,0 +1,1 @@
+void print ( const void * obj ) { char * s ; char * f ; s = nodeToString ( obj ) ; f = format_node_dump ( s ) ; pfree ( s ) ; fflush ( stdout ) ; pfree ( f ) ; } 

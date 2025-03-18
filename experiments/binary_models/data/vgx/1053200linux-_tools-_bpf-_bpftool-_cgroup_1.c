@@ -1,0 +1,1 @@
+static int cgroup_has_attached_progs ( int cgroup_fd ) { enum bpf_attach_type type ; bool no_prog = true ; for ( type = 0 ; type < __MAX_BPF_ATTACH_TYPE ; type ++ ) { int count = count_attached_bpf_progs ( cgroup_fd , type ) ; if ( count > 0 ) { no_prog = false ; break ; } } return no_prog ?0 : 1 ; } 

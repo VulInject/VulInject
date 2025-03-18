@@ -1,0 +1,1 @@
+my_value_new ( ) { my_value * p = bson_malloc0 ( sizeof ( my_value ) ) ; p -> value = 42 ; return p ; } 

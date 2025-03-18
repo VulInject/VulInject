@@ -1,0 +1,1 @@
+bool Efuse_Read1ByteFromFakeContent ( struct adapter * padapter , u16 Offset , u8 * Value ) { if ( fakeEfuseBank == 0 ) { * Value = fakeEfuseContent [ Offset ] ; } else { * Value = fakeBTEfuseContent [ fakeEfuseBank - 1 ] [ Offset ] ; } return true ; } 

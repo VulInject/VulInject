@@ -1,0 +1,1 @@
+FIELD ( SDHC_CAPAB , BASECLKFREQ , 8 , 8 ) ; FIELD ( SDHC_CAPAB , SDMA , 22 , 1 ) ; FIELD ( SDHC_CAPAB , SDR , 32 , 3 ) ; FIELD ( SDHC_CAPAB , DRIVER , 36 , 3 ) ; static void check_specs_version ( QSDHCI * s , uint8_t version ) { uint32_t v ; v = s -> readw ( s , SDHC_HCVER ) ; v += 1 ; g_assert_cmpuint ( v , == , version ) ; } 

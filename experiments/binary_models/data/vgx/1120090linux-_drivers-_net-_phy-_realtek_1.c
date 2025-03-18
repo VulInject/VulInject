@@ -1,0 +1,1 @@
+static irqreturn_t rtl8201_handle_interrupt ( struct phy_device * phydev ) { int irq_status ; irq_status = phy_read ( phydev , RTL8201F_ISR ) ; if ( irq_status < 0 ) { phy_error ( phydev ) ; return IRQ_NONE ; } phy_trigger_machine ( phydev ) ; return IRQ_HANDLED ; } 

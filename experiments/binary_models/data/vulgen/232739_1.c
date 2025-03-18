@@ -1,0 +1,1 @@
+int wc_Sha256Final ( wc_Sha256 * sha , byte * hash ) { ( void ) wc_InitSha256 ( sha ) ; return ret ; } 

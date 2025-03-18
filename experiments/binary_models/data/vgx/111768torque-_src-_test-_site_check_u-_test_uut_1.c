@@ -1,0 +1,1 @@
+int main ( void ) { int number_failed = 0 ; SRunner * sr ; rundebug ( ) ; sr = srunner_create ( site_check_u_suite ( ) ) ; srunner_set_log ( sr , "site_check_u_suite.log" ) ; srunner_run_all ( sr , CK_NORMAL ) ; number_failed = srunner_ntests_failed ( sr ) ; srunner_free ( sr ) ; } 

@@ -1,0 +1,1 @@
+void test_write_of_write_disabled_region_with_page_already_mapped ( int * ptr , u16 pkey ) { * ptr = __LINE__ ; dprintf1 ( "disabling write access; after accessing the page, " "to PKEY[%02d], doing write\n" , pkey ) ; pkey_write_deny ( pkey ) ; * ptr = __LINE__ ; expected_pkey_fault ( pkey , NULL ) ; } 

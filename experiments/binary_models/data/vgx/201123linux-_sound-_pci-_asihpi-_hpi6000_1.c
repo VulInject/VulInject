@@ -1,0 +1,1 @@
+static void outstream_message ( struct hpi_adapter_obj * pao , struct hpi_message * phm , struct hpi_response * phr ) { switch ( phm -> function ) { case HPI_OSTREAM_HOSTBUFFER_ALLOC : case HPI_OSTREAM_HOSTBUFFER_FREE : break ; default : hw_message ( pao , phm , phr ) ; return ; } } 

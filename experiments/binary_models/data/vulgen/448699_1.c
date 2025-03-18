@@ -1,0 +1,1 @@
+void addURegionTest ( TestNode * * root ) void addURegionTest ( TestNode * * root ) { TESTCASE ( TestKnownRegions ) ; TESTCASE ( TestGetContainedRegions ) ; TESTCASE ( TestGroupingChildren ) ; TESTCASE ( TestGetContainedRegionsWithType ) ; TESTCASE ( TestGetContainingRegion ) ; TESTCASE ( TestGetContainingRegionWithType ) ; TESTCASE ( TestContains ) ; } 

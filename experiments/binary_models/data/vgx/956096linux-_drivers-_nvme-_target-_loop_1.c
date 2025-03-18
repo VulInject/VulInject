@@ -1,1 +1,1 @@
-static inline struct VAR1 * FUN1 ( struct VAR2 * VAR3 ) { return FUN2 ( VAR3 , VAR1 , VAR3 ) ; } VAR4 { VAR5 = 0 } VAR6 { struct nvmet_cq VAR7 ; struct nvmet_sq VAR8 ; struct VAR1 * VAR3 ; cfs_time_t VAR9 ; }
+static inline struct nvme_loop_ctrl * to_loop_ctrl ( struct nvme_ctrl * ctrl ) { return container_of ( ctrl , nvme_loop_ctrl , ctrl ) ; } nvme_loop_queue_flags { NVME_LOOP_Q_LIVE = 0 } nvme_loop_queue { struct nvmet_cq nvme_cq ; struct nvmet_sq nvme_sq ; struct nvme_loop_ctrl * ctrl ; cfs_time_t flags ; } 

@@ -1,0 +1,1 @@
+static inline int find_codec_info_acpi ( const u8 * acpi_id ) { int i ; for ( i = 0 ; i < ARRAY_SIZE ( codec_info_list ) ; i ++ ) { if ( ! memcmp ( codec_info_list [ i ] . acpi_id , acpi_id , ACPI_ID_LEN ) ) { break ; } } if ( i == ARRAY_SIZE ( codec_info_list ) ) { return - EINVAL ; } return i ; } 

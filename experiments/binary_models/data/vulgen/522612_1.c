@@ -1,0 +1,1 @@
+static int ti_adpll_clkout_enable ( struct clk_hw * hw ) { struct ti_adpll_clkout_data * co = to_clkout ( hw ) ; struct clk_hw * gate_hw = & co -> gate . hw ; return clk_gate_ops . enable ( gate_hw ) ; } 

@@ -1,0 +1,1 @@
+static void channels_on_cpu_dec ( struct irq_info * info ) { if ( ! info -> is_accounted ) { return ; } info -> is_accounted = 0 ; if ( WARN_ON_ONCE ( info -> cpu >= nr_cpu_ids ) ) { return ; } } 

@@ -1,0 +1,1 @@
+static ssize_t vrm_store ( struct device * dev , struct device_attribute * attr , const char * buf , size_t count ) { struct w83793_data * data = dev_get_drvdata ( dev ) ; unsigned long val ; int err ; err = kstrtoul ( buf , 10 , & val ) ; if ( err ) { return err ; } data -> vrm = val ; return count ; } 

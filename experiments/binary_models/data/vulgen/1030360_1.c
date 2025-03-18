@@ -1,0 +1,1 @@
+static void ds2404_read_memory ( struct device * dev , u16 offset , int length , u8 * out ) { ds2404_reset ( dev ) ; ds2404_write_byte ( dev , DS2404_READ_MEMORY_CMD ) ; ds2404_write_byte ( dev , offset & 0xff ) ; while ( length -- ) { * out ++ = ds2404_read_byte ( dev ) ; } } 

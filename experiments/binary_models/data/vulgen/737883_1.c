@@ -1,0 +1,1 @@
+static int archive_read_format_ar_cleanup ( struct archive_read * a ) { struct ar * ar ; ar = ( ar * ) ( a -> format -> data ) ; free ( ar ) ; ( a -> format -> data ) = NULL ; return ( ARCHIVE_OK ) ; } 

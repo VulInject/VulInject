@@ -1,0 +1,1 @@
+sd_hw_data { u32 conf ; struct rzg2l_cpg_priv * priv ; } 

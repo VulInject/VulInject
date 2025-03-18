@@ -1,0 +1,1 @@
+grub_iso9660_label ( , ) { struct grub_iso9660_data * data ; data = grub_iso9660_mount ( device -> disk ) ; if ( data ) { if ( data -> joliet ) { * label = grub_iso9660_convert_string ( ( grub_uint16_t * ) & data -> voldesc . volname , 16 ) ; } else { * label = grub_strndup ( ( char * ) data -> voldesc . volname , 32 ) ; } } else { * label = 0 ; } return grub_errno ; } 

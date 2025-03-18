@@ -1,0 +1,1 @@
+_IO_wfile_setbuf ( , , ) _IO_FILE * fp ; wchar_t * p ; _IO_ssize_t len ; { fp -> _wide_data -> _IO_write_base = fp -> _wide_data -> _IO_write_ptr = fp -> _wide_data -> _IO_write_end = fp -> _wide_data -> _IO_buf_base ; _IO_wsetg ( fp , fp -> _wide_data -> _IO_buf_base , fp -> _wide_data -> _IO_buf_base , fp -> _wide_data -> _IO_buf_base ) ; return fp ; } 

@@ -1,0 +1,1 @@
+int devinfo_fmc_walk_init ( mdb_walk_state_t * wsp ) { struct i_ddi_fmc fec ; if ( mdb_vread ( & fec , sizeof ( fec ) , wsp -> walk_addr ) == - 1 ) { mdb_warn ( "failed to read fm cache at %p" , wsp -> walk_addr ) ; return ( WALK_ERR ) ; } if ( fec . fc_head == NULL ) { return ( WALK_DONE ) ; } wsp -> walk_addr = ( uintptr_t ) fec . fc_head ; return ( WALK_NEXT ) ; } 

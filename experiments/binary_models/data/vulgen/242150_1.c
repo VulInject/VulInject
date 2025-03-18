@@ -1,0 +1,1 @@
+{ if ( ! ( expr ) ) { fprintf ( stderr , "%s:%d: assertion failed for %s:%u\n" , __FILE__ , __LINE__ , file , line ) ; fflush ( stderr ) ; } } 0 ; , { ucs4_t a_value = * ( const ucs4_t * ) a ; ucs4_t b_value = * ( const ucs4_t * ) b ; return ( a_value < b_value ?- 1 : a_value > b_value ?1 : 0 ) ; } 

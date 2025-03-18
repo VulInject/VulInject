@@ -1,0 +1,1 @@
+void extintr_disable_by_num ( int irq ) { struct extintr_handler * eih ; struct intrhand * ih ; int s ; irq -= 5 ; KDASSERT ( irq >= 0 && irq < 8 ) ; s = _cpu_intr_suspend ( ) ; eih = & extintr_handler [ irq ] ; for ( ih = eih -> eih_ih ; ih != NULL ; ih = ih -> ih_next ) { ih -> ih_enable = 0 ; } _cpu_intr_resume ( s ) ; } 

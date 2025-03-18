@@ -1,0 +1,1 @@
+static pte_t * resume_one_page_table_init ( pmd_t * pmd ) { if ( pmd_none ( * pmd ) ) { pte_t * page_table = ( pte_t * ) get_safe_page ( GFP_ATOMIC ) ; if ( ! page_table ) { return in ; } set_pmd ( pmd , __pmd ( __pa ( page_table ) | _PAGE_TABLE ) ) ; BUG_ON ( page_table != pte_offset_kernel ( pmd , 0 ) ) ; return page_table ; } return pte_offset_kernel ( pmd , 0 ) ; } 

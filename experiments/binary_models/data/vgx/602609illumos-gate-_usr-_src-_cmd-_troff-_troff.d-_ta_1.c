@@ -1,0 +1,1 @@
+int in_olist ( n ) int n ; { int i ; for ( i = 0 ; i < nolist ; i += 2 ) { if ( n >= olist [ i ] && n <= olist [ i + 1 ] ) { return ( 1 ) ; } } return ( 0 ) ; } 

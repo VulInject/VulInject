@@ -1,0 +1,1 @@
+static uint64_t mchp_pfsoc_sysreg_read ( void * opaque , hwaddr offset , unsigned size ) { uint32_t val = 0 ; return val ; } 

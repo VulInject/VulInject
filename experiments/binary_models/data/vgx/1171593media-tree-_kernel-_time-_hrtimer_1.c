@@ -1,0 +1,1 @@
+static void hrtimer_force_reprogram ( struct hrtimer_cpu_base * cpu_base , int skip_equal ) { ktime_t expires_next ; if ( ! cpu_base -> hres_active ) { return ; } expires_next = __hrtimer_get_next_event ( cpu_base ) ; cpu_base -> expires_next = expires_next ; if ( cpu_base -> hang_detected ) { return ; } tick_program_event ( cpu_base -> expires_next , 1 ) ; } 

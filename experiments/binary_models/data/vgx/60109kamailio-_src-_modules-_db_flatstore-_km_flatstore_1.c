@@ -1,0 +1,1 @@
+static int parse_flat_url ( const str * url , str * path ) { if ( ! url || ! url -> s || ! path ) { LM_ERR ( "invalid parameter value\n" ) ; return - 1 ; } path -> s = strchr ( url -> s , ':' ) + 1 ; path -> len = strlen ( path -> s , NULL ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+jv jv_string_fmt ( const char * fmt , ... ) { va_list args ; va_start ( args , fmt ) ; jv res = jv_string_vfmt ( fmt , args ) ; va_end ( args ) ; return res ; } object_slot { int next ; uint32_t hash ; int string ; jv value ; } { jv_refcnt refcnt ; int next_free ; struct object_slot elements [ ] ; } jvp_object 

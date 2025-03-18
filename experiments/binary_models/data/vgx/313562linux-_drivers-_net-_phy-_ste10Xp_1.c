@@ -1,0 +1,1 @@
+static int ste10Xp_config_init ( struct phy_device * phydev ) { int value , err ; value = phy_read ( phydev , MII_BMCR ) ; if ( value < 0 ) { return value ; } value |= BMCR_RESET ; err = phy_write ( phydev , MII_BMCR , value ) ; { value = phy_read ( phydev , MII_BMCR ) ; } value & BMCR_RESET ; return 0 ; } 

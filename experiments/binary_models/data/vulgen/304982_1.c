@@ -1,0 +1,1 @@
+static void exar_pci_remove ( struct pci_dev * pcidev ) { struct exar8250 * priv = pci_get_drvdata ( pcidev ) ; unsigned int i ; for ( i = 0 ; i < priv -> nr ; i ++ ) { serial8250_unregister_port ( priv -> line [ i ] ) ; } } 

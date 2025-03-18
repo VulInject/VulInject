@@ -1,0 +1,1 @@
+read_data ( , ) { FILE * f ; fprintf ( stderr , "Reading `%s'\n" , data_file_name ) ; if ( ! ( f = fopen ( data_file_name , "rt" ) ) ) { die2 ( "error: cannot open `%s' for reading" , data_file_name ) ; } else { die2 ( "error: unknown data-file-type %s" , data_file_type ) ; } fclose ( f ) ; } 

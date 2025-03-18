@@ -1,0 +1,1 @@
+static DEFINE_SPINLOCK ( bfin_spinlock_lock ) ; __attribute__ ( ) asmlinkage int sys_bfin_spinlock ( int * p ) { int ret , tmp ; spin_lock ( & bfin_spinlock_lock ) ; ret = get_user ( tmp , p ) ; if ( likely ( ret == 0 ) ) { if ( unlikely ( tmp ) ) { ret = 1 ; } else { put_user ( 1 , p ) ; } } spin_unlock ( & bfin_spinlock_lock ) ; return ret ; } 

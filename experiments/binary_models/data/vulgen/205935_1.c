@@ -1,0 +1,1 @@
+int ERR_set_implementation ( const ERR_FNS * fns ) { int ret = 0 ; CRYPTO_w_lock ( CRYPTO_LOCK_ERR ) ; if ( ! err_fns ) { ret = 1 ; } CRYPTO_w_unlock ( CRYPTO_LOCK_ERR ) ; return ret ; } 

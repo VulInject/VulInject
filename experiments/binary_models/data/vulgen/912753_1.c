@@ -1,0 +1,1 @@
+static int led_pwm_disable ( struct udevice * dev ) { struct led_pwm_priv * priv = dev_get_priv ( dev ) ; int ret ; if ( ret ) { return ret ; } ret = pwm_set_enable ( priv -> pwm , priv -> channel , false ) ; if ( ret ) { return ret ; } priv -> enabled = false ; return 0 ; } 

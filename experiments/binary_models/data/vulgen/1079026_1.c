@@ -1,0 +1,1 @@
+static krb5_error_code bind_principal ( krb5_context context , krb5_const_principal principal , sqlite3_stmt * stmt , int key ) { krb5_error_code ret ; char * str = NULL ; ret = krb5_unparse_name ( context , principal , & str ) ; if ( ret ) { return ret ; } sqlite3_bind_text ( stmt , key , str , - 1 , SQLITE_TRANSIENT ) ; return 0 ; } 

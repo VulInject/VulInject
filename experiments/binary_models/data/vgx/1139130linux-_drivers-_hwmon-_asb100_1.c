@@ -1,0 +1,1 @@
+static void asb100_init_client ( struct i2c_client * client ) { struct asb100_data * data = i2c_get_clientdata ( client ) ; asb100_write_value ( client , ASB100_REG_CONFIG , ( asb100_read_value ( client , ASB100_REG_CONFIG ) & 0xf7 ) | 0x01 ) ; } 

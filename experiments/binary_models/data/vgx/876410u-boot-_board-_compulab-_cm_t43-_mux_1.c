@@ -1,0 +1,1 @@
+void set_rgmii_pin_mux ( void ) { configure_module_pin_mux ( rgmii1_pin_mux , NULL ) ; configure_module_pin_mux ( rgmii2_pin_mux ) ; } 

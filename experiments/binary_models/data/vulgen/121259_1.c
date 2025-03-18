@@ -1,0 +1,1 @@
+static void smc91c92_release ( struct pcmcia_device * link ) { dev_dbg ( & link -> dev , "smc91c92_release\n" ) ; if ( link -> resource [ 2 ] -> end ) { struct net_device * dev = link -> priv ; struct smc_private * smc = netdev_priv ( dev ) ; } pcmcia_disable_device ( link ) ; } 

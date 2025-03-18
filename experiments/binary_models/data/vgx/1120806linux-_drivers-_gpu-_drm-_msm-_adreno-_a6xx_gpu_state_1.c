@@ -1,0 +1,1 @@
+static inline int CRASHDUMP_FINI ( u64 * in ) { in [ 1 ] = 0 ; return 2 ; } a6xx_crashdumper { void * ptr ; struct drm_gem_object * bo ; u64 iova ; } 

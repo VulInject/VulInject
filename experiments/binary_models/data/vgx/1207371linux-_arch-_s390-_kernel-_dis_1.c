@@ -1,0 +1,1 @@
+s390_operand { unsigned char bits ; unsigned char shift ; unsigned short flags ; } s390_insn { { const char name [ 5 ] ; { unsigned char zero ; unsigned int offset ; } , __packed } unsigned char opfrag ; unsigned char format ; } s390_opcode_offset { int opcode ; unsigned char mask ; unsigned char byte ; unsigned short offset ; unsigned short count ; } , __packed 

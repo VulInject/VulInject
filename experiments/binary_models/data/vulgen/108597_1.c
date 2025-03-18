@@ -1,0 +1,1 @@
+void zfs_refcount_create_untracked ( zfs_refcount_t * rc ) { zfs_refcount_create ( rc ) ; } 

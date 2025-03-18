@@ -1,0 +1,1 @@
+bool evlist__valid_sample_type ( struct evlist * evlist ) { struct evsel * pos ; if ( evlist -> core . nr_entries == 1 ) { return true ; } evlist__for_each_entry ( , ) { if ( pos -> id_pos != evlist -> id_pos || pos -> is_pos != evlist -> is_pos ) { return false ; } } return true ; } 

@@ -1,0 +1,1 @@
+static int snd_bcm2835_spdif_default_get ( struct snd_kcontrol * kcontrol , struct snd_ctl_elem_value * ucontrol ) { struct bcm2835_chip * chip = snd_kcontrol_chip ( kcontrol ) ; int i ; for ( i = 0 ; i < 4 ; i ++ ) { ucontrol -> value . iec958 . status [ i ] = ( chip -> spdif_status >> ( i * 8 ) ) & 0xff ; } mutex_unlock ( & chip -> audio_mutex ) ; return 0 ; } 

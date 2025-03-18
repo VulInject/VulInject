@@ -1,0 +1,1 @@
+void am65_cpts_release ( struct am65_cpts * cpts ) { ptp_clock_unregister ( cpts -> ptp_clock ) ; am65_cpts_disable ( cpts ) ; clk_disable_unprepare ( cpts -> refclk , NULL ) ; } 

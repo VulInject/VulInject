@@ -1,0 +1,1 @@
+remove_death ( , ) { rtx note = find_regno_note ( insn , REG_DEAD , regno ) ; if ( note ) { remove_note ( insn , note ) ; } return note ; } 

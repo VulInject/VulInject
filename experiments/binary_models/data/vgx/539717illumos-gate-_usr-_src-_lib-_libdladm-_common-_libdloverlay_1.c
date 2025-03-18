@@ -1,0 +1,1 @@
+static boolean_t varpd_svc_isonline ( void ) { boolean_t isonline = B_FALSE ; char * s ; if ( ( s = smf_get_state ( VARPD_SERVICE ) ) != NULL ) { if ( strcmp ( s , SCF_STATE_STRING_ONLINE ) == 0 ) { isonline = B_TRUE ; } } return ( isonline ) ; } 

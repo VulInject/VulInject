@@ -1,0 +1,1 @@
+free_permission_context ( ) { if ( ctx -> acl ) { acl_free ( ctx -> acl ) ; } if ( ctx -> default_acl ) { acl_free ( ctx -> default_acl ) ; } free ( ctx -> ace_entries ) ; } 

@@ -1,0 +1,1 @@
+void zmtp1_datagram_print ( netdissect_options * ndo , const u_char * cp , const u_int len ) { ndo -> ndo_protocol = "zmtp1" ; cp = zmtp1_print_intermediate_part ( ndo , cp , len ) ; while ( cp < ep ) { cp = zmtp1_print_frame ( ndo , cp , ep ) ; } } 

@@ -1,0 +1,1 @@
+void uvc_debugfs_cleanup_stream ( struct uvc_streaming * stream ) { debugfs_remove_recursive ( stream -> debugfs_dir ) ; } 

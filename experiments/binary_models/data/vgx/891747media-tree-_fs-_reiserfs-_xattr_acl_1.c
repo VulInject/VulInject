@@ -1,0 +1,1 @@
+int reiserfs_acl_chmod ( struct inode * inode ) { if ( IS_PRIVATE ( inode ) ) { return 0 ; } return posix_acl_chmod ( inode , inode -> i_mode ) ; } 

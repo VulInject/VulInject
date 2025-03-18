@@ -1,0 +1,1 @@
+void dlm_complete_thread ( struct dlm_ctxt * dlm ) { if ( dlm -> dlm_thread_task ) { mlog ( ML_KTHREAD , "Waiting for dlm thread to exit\n" ) ; kthread_stop ( dlm -> dlm_thread_task ) ; } } 

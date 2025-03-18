@@ -1,0 +1,1 @@
+{ sandbox_cfg_t * cfg ; char * file_ops_allowed ; char * file_ops_blocked ; char * dir_ops_allowed ; char * dir_ops_blocked ; } sandbox_data_t 

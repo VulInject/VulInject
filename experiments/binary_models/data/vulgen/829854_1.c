@@ -1,0 +1,1 @@
+static void ceph_block_buffered ( struct ceph_inode_info * ci , struct inode * inode ) { if ( ! ( READ_ONCE ( ci -> i_ceph_flags ) & CEPH_I_ODIRECT ) ) { spin_lock ( & ci -> i_ceph_lock ) ; ci -> i_ceph_flags |= CEPH_I_ODIRECT ; spin_unlock ( & ci -> i_ceph_lock ) ; filemap_write_and_wait ( inode -> i_mapping ) ; } } 

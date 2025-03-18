@@ -1,0 +1,1 @@
+( setfsent ) ; void endfsent ( void ) { if ( _fs_fp ) { ( void ) fclose ( _fs_fp ) ; } } 

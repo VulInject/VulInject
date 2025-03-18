@@ -1,0 +1,1 @@
+int mmc_cmdq_disable ( struct mmc_card * card ) { return mmc_cmdq_switch ( card , false ) ; } 

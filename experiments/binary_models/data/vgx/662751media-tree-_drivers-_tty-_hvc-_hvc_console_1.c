@@ -1,0 +1,1 @@
+static int hvc_console_setup ( struct console * co , char * options ) { if ( vtermnos [ co -> index ] == - 1 ) { return - ENODEV ; } return 0 ; } 

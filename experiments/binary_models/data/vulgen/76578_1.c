@@ -1,0 +1,1 @@
+static void lola_cleanup_slave_streams ( struct lola_pcm * pcm , struct lola_stream * str ) { int i ; for ( i = str -> index + 1 ; i < pcm -> num_streams ; i ++ ) { struct lola_stream * s = & pcm -> streams [ i ] ; if ( s -> master != str ) { break ; } s -> opened = 0 ; } } 

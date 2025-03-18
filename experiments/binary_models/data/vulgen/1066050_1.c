@@ -1,0 +1,1 @@
+struct mailmbox_append_info * mailmbox_append_info_new ( const char * ai_message , size_t ai_size ) { struct mailmbox_append_info * info ; info = malloc ( sizeof ( * info ) ) ; if ( info == NULL ) { return NULL ; } info -> ai_message = ai_message ; info -> ai_size = ai_size ; return info ; } 

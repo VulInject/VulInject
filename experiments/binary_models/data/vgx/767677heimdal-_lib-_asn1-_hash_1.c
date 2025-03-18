@@ -1,0 +1,1 @@
+unsigned hashcaseadd ( const char * s ) { unsigned i ; for ( i = 0 ; * s ; ++ s ) { i += toupper ( ( unsigned char ) * s ) ; } return i ; } 

@@ -1,0 +1,1 @@
+int ipa_resource_config ( struct ipa * ipa , const struct ipa_resource_data * data ) { u32 i ; for ( i = 0 ; i < data -> resource_src_count ; i ++ ) { ipa_resource_config_src ( ipa , i , data ) ; } for ( i = 0 ; i < data -> resource_dst_count ; i ++ ) { ipa_resource_config_dst ( ipa , i , data ) ; } return 0 ; } 

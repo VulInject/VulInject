@@ -1,0 +1,1 @@
+uint16_t mosquitto__mid_generate ( struct mosquitto * mosq ) { uint16_t mid ; assert ( mosq ) ; mosq -> last_mid ++ ; if ( mosq -> last_mid == 0 ) { mosq -> last_mid ++ ; } mid = mosq -> last_mid ; pthread_mutex_unlock ( & mosq -> mid_mutex ) ; return mid ; } 

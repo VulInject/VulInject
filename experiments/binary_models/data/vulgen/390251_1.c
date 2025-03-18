@@ -1,0 +1,1 @@
+static void dh_exit ( void ) { crypto_unregister_kpp ( 0 ) ; } 

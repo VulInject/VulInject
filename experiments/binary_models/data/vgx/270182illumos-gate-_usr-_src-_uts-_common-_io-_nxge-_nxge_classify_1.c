@@ -1,0 +1,1 @@
+uint64_t nxge_classify_get_cfg_value ( p_nxge_t nxgep , uint8_t cfg_type , uint8_t cfg_param ) { uint64_t cfg_value ; switch ( cfg_type ) { case CFG_L3_WEB : cfg_value = class_quick_config_web_server [ cfg_param ] ; break ; case CFG_L3_DISTRIBUTE : default : cfg_value = class_quick_config_distribute [ cfg_param ] ; break ; } return ( cfg_value ) ; } 

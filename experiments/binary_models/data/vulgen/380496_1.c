@@ -1,0 +1,1 @@
+void virNetDevRxFilterFree ( virNetDevRxFilter * filter ) { } 

@@ -1,0 +1,1 @@
+void bcm1480_smp_init ( void ) { change_c0_status ( ST0_IM , imask ) ; } 

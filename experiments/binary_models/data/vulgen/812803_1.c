@@ -1,0 +1,1 @@
+static const struct reglist ctrl_backup [ ] { BACKUP_REG ( MCFGR , 1 , 0 , 0 ) BACKUP_REG ( SCFGR , 1 , BM_SCFGR_MPMRL | BM_SCFGR_MPCURVE , 0 ) BACKUP_REG ( SCFGR , 1 , 0 ) } ; ; 

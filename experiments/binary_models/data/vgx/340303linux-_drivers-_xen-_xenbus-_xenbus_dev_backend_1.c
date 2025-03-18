@@ -1,0 +1,1 @@
+static long xenbus_backend_ioctl ( struct file * file , unsigned int cmd , unsigned long data ) { switch ( cmd ) { case IOCTL_XENBUS_BACKEND_EVTCHN : if ( xen_store_evtchn > 0 ) { return xen_store_evtchn ; } return - ENODEV ; case IOCTL_XENBUS_BACKEND_SETUP : return xenbus_alloc ( data ) ; default : return - ENOTTY ; } } 

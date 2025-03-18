@@ -1,0 +1,1 @@
+static tool_rc tpm2_tool_onrun ( ESYS_CONTEXT * ectx , tpm2_option_flags flags ) { UNUSED ( flags ) ; tool_rc rc = check_options ( ) ; rc = process_inputs ( ectx ) ; if ( rc != tool_rc_success ) { return rc ; } rc = commit ( ectx ) ; if ( rc != tool_rc_success ) { return rc ; } return process_outputs ( ectx ) ; } 

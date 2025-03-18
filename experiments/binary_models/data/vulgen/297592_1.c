@@ -1,0 +1,1 @@
+static void on_handshake_complete ( h2o_socket_t * sock , const char * err ) { h2o_socketpool_connect_request_t * req = sock -> data ; assert ( req -> sock == sock ) ; if ( err != NULL ) { h2o_socket_close ( sock ) ; req -> sock = NULL ; } call_connect_cb ( req , err ) ; } 

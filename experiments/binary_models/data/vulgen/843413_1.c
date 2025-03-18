@@ -1,0 +1,1 @@
+static const struct pmu0_plltab_entry * pmu0_plltab_find_entry ( u32 crystalfreq ) { const struct pmu0_plltab_entry * e ; for ( i = 0 ; i < ARRAY_SIZE ( pmu0_plltab ) ; i ++ ) { e = & pmu0_plltab [ i ] ; if ( e -> freq == crystalfreq ) { return e ; } } return NULL ; } 

@@ -1,0 +1,1 @@
+int syscalltbl__id ( struct syscalltbl * tbl , const char * name ) { return audit_name_to_syscall ( name , tbl -> audit_machine ) ; } 

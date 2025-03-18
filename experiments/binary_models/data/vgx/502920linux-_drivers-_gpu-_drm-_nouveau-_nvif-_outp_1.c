@@ -1,0 +1,1 @@
+int nvif_outp_load_detect ( struct nvif_outp * outp , u32 loadval ) { struct nvif_outp_load_detect_v0 args ; int ret ; args . data = loadval ; ret = nvif_mthd ( & outp -> object , NVIF_OUTP_V0_LOAD_DETECT , & args , sizeof ( args ) ) ; NVIF_ERRON ( ret , & outp -> object , "[LOAD_DETECT data:%08x] load:%02x" , args . data , args . load ) ; return ret < 0 ?ret : args . load ; } 

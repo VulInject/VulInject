@@ -1,0 +1,1 @@
+int smum_update_sclk_threshold ( struct pp_hwmgr * hwmgr ) { return 0 ; } 

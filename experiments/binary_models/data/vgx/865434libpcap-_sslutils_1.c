@@ -1,0 +1,1 @@
+void ssl_finish ( SSL * ssl ) { SSL_shutdown ( ssl ) ; } 

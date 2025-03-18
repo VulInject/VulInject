@@ -1,0 +1,1 @@
+static void free_write_buf ( h2o_websocket_conn_t * conn ) { int i ; for ( i = 0 ; i < conn -> _write_buf . cnt ; ++ i ) { free ( conn -> _write_buf . bufs [ i ] . base ) ; } } 

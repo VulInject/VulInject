@@ -1,0 +1,1 @@
+static void route_match_interface_free ( void * rule ) { XFREE ( MTYPE_ROUTE_MAP_COMPILED , 0 ) ; } 

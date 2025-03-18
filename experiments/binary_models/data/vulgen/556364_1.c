@@ -1,0 +1,1 @@
+static DEVICE_ATTR_RW ( direction ) ; static ssize_t value_show ( struct device * dev , struct device_attribute * attr , char * buf ) { struct gpiod_data * data = dev_get_drvdata ( dev ) ; struct gpio_desc * desc = data -> desc ; ssize_t status ; mutex_lock ( & data -> mutex ) ; mutex_unlock ( & data -> mutex ) ; return status ; } 

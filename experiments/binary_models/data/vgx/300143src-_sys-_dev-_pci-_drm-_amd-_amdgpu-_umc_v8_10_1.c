@@ -1,0 +1,1 @@
+static uint32_t umc_v8_10_get_col_bit ( uint32_t channel_num ) { int t = 0 ; for ( t = 0 ; t < ARRAY_SIZE ( umc_v8_10_channelnum_map_colbit_table ) ; t ++ ) { if ( channel_num == umc_v8_10_channelnum_map_colbit_table [ t ] . channel_num ) { return umc_v8_10_channelnum_map_colbit_table [ t ] . col_bit ; } } return U32_MAX ; } 

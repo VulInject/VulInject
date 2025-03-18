@@ -1,0 +1,1 @@
+int onenand_read ( struct mtd_info * mtd , loff_t from , size_t len , size_t * retlen , u_char * buf ) { struct mtd_oob_ops ops = { . len = len . ooblen = 0 . datbuf = buf . oobbuf = NULL } ; int ret ; onenand_get_device ( mtd , FL_READING ) ; ret = onenand_read_ops_nolock ( mtd , from , & ops ) ; * retlen = ops . retlen ; return ret ; } 

@@ -1,0 +1,1 @@
+simplified . * / volatile unsigned long long * a ; unsigned char foo ( void ) { return b ; } 

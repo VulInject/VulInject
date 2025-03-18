@@ -1,0 +1,1 @@
+static guint16 de_nas_5gs_sm_pdu_dn_req_cont ( tvbuff_t * tvb , proto_tree * tree , packet_info * pinfo _U_ , guint32 offset , guint len , gchar * add_string _U_ , int string_len _U_ ) { return len ; } 

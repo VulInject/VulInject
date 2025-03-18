@@ -1,0 +1,1 @@
+static CURLcode file_setup_connection ( struct Curl_easy * data , struct connectdata * conn ) { ( void ) conn ; data -> req . p . file = calloc ( 1 , sizeof ( FILEPROTO ) ) ; return CURLE_OK ; } 

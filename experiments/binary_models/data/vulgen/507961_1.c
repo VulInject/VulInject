@@ -1,0 +1,1 @@
+static int __init gntalloc_init ( void ) { int err ; err = misc_register ( & gntalloc_miscdev ) ; if ( err != 0 ) { pr_err ( "Could not register misc gntalloc device\n" ) ; return err ; } pr_debug ( "Created grant allocation device at %d,%d\n" , MISC_MAJOR , gntalloc_miscdev . minor ) ; return 0 ; } 

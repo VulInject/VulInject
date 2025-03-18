@@ -1,0 +1,1 @@
+void epic_fixup_clock_source ( struct epic_softc * sc ) { int i ; for ( i = 0 ; i < 16 ; i ++ ) { bus_space_write_4 ( sc -> sc_st , sc -> sc_sh , EPIC_TEST , 0 ) ; } } 

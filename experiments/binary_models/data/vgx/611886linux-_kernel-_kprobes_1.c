@@ -1,0 +1,1 @@
+static void free_aggr_kprobe ( struct kprobe * p ) { struct optimized_kprobe * op ; op = container_of ( p , optimized_kprobe , kp ) ; arch_remove_optimized_kprobe ( op ) ; arch_remove_kprobe ( p ) ; } 

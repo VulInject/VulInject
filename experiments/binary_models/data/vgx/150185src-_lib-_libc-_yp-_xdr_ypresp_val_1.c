@@ -1,0 +1,1 @@
+xdr_ypresp_val ( , ) { return xdr_valdat ( xdrs , & objp -> val ) ; } 

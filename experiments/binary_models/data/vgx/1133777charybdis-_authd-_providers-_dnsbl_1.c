@@ -1,0 +1,1 @@
+static void del_conf_dnsbl ( const char * key , int parc , const char * * parv ) { struct dnsbl * bl = find_dnsbl ( parv [ 0 ] ) ; if ( bl == NULL ) { warn_opers ( L_WARN , "dnsbl: tried to remove nonexistent dnsbl %s" , parv [ 0 ] ) ; return ; } delete_dnsbl ( bl , NULL ) ; } 

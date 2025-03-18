@@ -1,0 +1,1 @@
+static void imx8qxp_pixel_link_bridge_atomic_disable ( struct drm_bridge * bridge , struct drm_bridge_state * old_bridge_state ) { struct imx8qxp_pixel_link * pl = bridge -> driver_private ; imx8qxp_pixel_link_disable_mst_en ( pl , NULL ) ; imx8qxp_pixel_link_disable_mst_vld ( pl ) ; imx8qxp_pixel_link_disable_sync ( pl ) ; } 

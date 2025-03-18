@@ -1,0 +1,1 @@
+main ( int argc , char * argv [ ] ) { test_ascii ( mbmemcasecmp ) ; if ( argc > 1 ) { switch ( argv [ 1 ] [ 0 ] ) { case '1' : test_iso_8859_1 ( mbmemcasecmp , true ) ; return 0 ; case '2' : test_utf_8 ( mbmemcasecmp , false ) ; return 0 ; case '3' : test_utf_8 ( mbmemcasecmp , true ) ; return 0 ; } } return 1 ; } 

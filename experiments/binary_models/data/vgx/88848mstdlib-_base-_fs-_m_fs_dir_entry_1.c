@@ -1,0 +1,1 @@
+const char * M_fs_dir_entry_get_resolved_name ( const M_fs_dir_entry_t * entry ) { return entry -> resolved_name ; } 

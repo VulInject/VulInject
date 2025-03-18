@@ -1,0 +1,1 @@
+static void write_init ( Write * write , VipsImage * image , VipsRegionWrite write_fn , void * a ) { vips_sink_base_init ( & write -> sink_base , image ) ; write -> buf = wbuffer_new ( write , NULL ) ; write -> buf_back = wbuffer_new ( write ) ; write -> write_fn = write_fn ; write -> a = a ; } 

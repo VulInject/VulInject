@@ -1,0 +1,1 @@
+void cupsdAddAlias ( cups_array_t * aliases , const char * name ) { cupsd_alias_t * a ; size_t namelen ; namelen = strlen ( name ) ; a -> namelen = namelen ; memcpy ( a -> name , name , namelen + 1 ) ; cupsArrayAdd ( aliases , a ) ; } 

@@ -1,0 +1,1 @@
+static void fill_origin_blob ( git_blame__origin * o , mmfile_t * file ) { if ( o -> blob ) { file -> ptr = ( char * ) git_blob_rawcontent ( o -> blob ) ; file -> size = ( long ) git_blob_rawsize ( o -> blob ) ; } } 

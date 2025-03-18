@@ -1,0 +1,1 @@
+static void qjsctx_free ( void ) { r_list_free ( Glist ) ; } 

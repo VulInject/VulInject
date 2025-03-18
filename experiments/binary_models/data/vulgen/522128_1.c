@@ -1,0 +1,1 @@
+void debugfs_print_regs32 ( struct seq_file * s , const struct debugfs_reg32 * regs , int nregs , void __iomem * base , char * prefix ) { int i ; for ( i = 0 ; i < nregs ; i ++ , regs ++ ) { if ( prefix ) { seq_printf ( s , "%s" , prefix ) ; } seq_printf ( s , "%s = 0x%08x\n" , regs -> name , readl ( base + regs -> offset ) ) ; } } 

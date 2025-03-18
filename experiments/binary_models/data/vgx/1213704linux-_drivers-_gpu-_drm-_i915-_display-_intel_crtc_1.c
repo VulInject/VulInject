@@ -1,0 +1,1 @@
+static void intel_crtc_destroy ( struct drm_crtc * _crtc ) { struct intel_crtc * crtc = to_intel_crtc ( _crtc ) ; cpu_latency_qos_remove_request ( & crtc -> vblank_pm_qos ) ; drm_crtc_cleanup ( & crtc -> base ) ; } 

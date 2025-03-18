@@ -1,0 +1,1 @@
+void usb_gadget_unmap_request ( struct usb_gadget * gadget , struct usb_request * req , int is_in ) { dma_unmap_single ( req -> dma , req -> length , is_in ?DMA_TO_DEVICE : DMA_FROM_DEVICE ) ; } 

@@ -1,0 +1,1 @@
+int rvu_mbox_handler_mcs_set_lmac_mode ( struct rvu * rvu , struct mcs_set_lmac_mode * req , struct msg_rsp * rsp ) { struct mcs * mcs ; mcs = mcs_get_pdata ( req -> mcs_id ) ; if ( BIT_ULL ( req -> lmac_id ) & mcs -> hw -> lmac_bmap ) { mcs_set_lmac_mode ( mcs , req -> lmac_id , req -> mode ) ; } return 0 ; } 

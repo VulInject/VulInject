@@ -1,0 +1,1 @@
+static void fb_destroy ( struct drm_framebuffer * fb ) { struct xen_drm_front_drm_info * drm_info = fb -> dev -> dev_private ; int idx ; if ( drm_dev_enter ( fb -> dev , & idx ) ) { xen_drm_front_fb_detach ( drm_info -> front_info , xen_drm_front_fb_to_cookie ( fb ) ) ; drm_dev_exit ( idx ) ; } } 

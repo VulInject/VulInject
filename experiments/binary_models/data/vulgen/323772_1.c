@@ -1,0 +1,1 @@
+sctp_scope_t sctp_scope ( const union sctp_addr * addr ) { struct sctp_af * af ; af = sctp_get_af_specific ( addr -> sa . sa_family ) ; return af -> scope ( ( sctp_addr * ) addr ) ; } 

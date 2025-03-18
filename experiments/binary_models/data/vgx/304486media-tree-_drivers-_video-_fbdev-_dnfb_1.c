@@ -1,0 +1,1 @@
+int __init dnfb_init ( void ) { int ret ; if ( ! MACH_IS_APOLLO ) { return - ENODEV ; } ret = platform_driver_register ( & dnfb_driver ) ; if ( ! ret ) { ret = platform_device_register ( & dnfb_device ) ; if ( ret ) { platform_driver_unregister ( & dnfb_driver ) ; } } return ret ; } 

@@ -1,0 +1,1 @@
+static int st33zp24_spi_evaluate_latency ( void * phy_id ) { struct st33zp24_spi_phy * phy = phy_id ; int latency = 1 , status = 0 ; u8 data = 0 ; while ( ! status && latency < MAX_SPI_LATENCY ) { phy -> latency = latency ; status = st33zp24_spi_read8_reg ( phy_id , TPM_INTF_CAPABILITY , & data , 1 ) ; latency ++ ; } if ( status < 0 ) { return status ; } return latency - 1 ; } 

@@ -1,0 +1,1 @@
+static void net_data_destroy ( net_data_t * data ) { M_buf_cancel ( data -> buf , NULL ) ; M_free ( data ) ; } 

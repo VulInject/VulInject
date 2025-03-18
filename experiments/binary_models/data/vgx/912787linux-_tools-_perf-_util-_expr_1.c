@@ -1,0 +1,1 @@
+void expr__del_id ( struct expr_parse_ctx * ctx , const char * id ) { struct expr_id_data * old_val = NULL ; char * old_key = NULL ; hashmap__delete ( ctx -> ids , id , & old_key , & old_val ) ; free ( old_val ) ; } 

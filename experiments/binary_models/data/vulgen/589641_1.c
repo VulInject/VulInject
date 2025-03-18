@@ -1,0 +1,1 @@
+topo_mod_t * topo_modhash_lookup ( topo_modhash_t * mhp , const char * name ) { topo_mod_t * mod = NULL ; uint_t h ; for ( mod = mhp -> mh_hash [ h ] ; mod != NULL ; mod = mod -> tm_next ) { if ( strcmp ( name , mod -> tm_name ) == 0 ) { break ; } } return ( mod ) ; } 

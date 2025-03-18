@@ -1,0 +1,1 @@
+int load_metadata_key ( table_p _tp , char * line ) { int ret , n , ci ; char * s = NULL ; ret = n = ci = 0 ; s = strtok ( line , " \t" ) ; while ( s != NULL && n < _tp -> ncols ) { ret = sscanf ( s , "%i" , & ci ) ; if ( ret != 1 ) { return - 1 ; } if ( _tp -> colp [ ci ] ) { _tp -> colp [ ci ] -> kflag = 1 ; _tp -> nkeys ++ ; } n ++ ; s = strtok ( NULL , " " ) ; } return 0 ; } 

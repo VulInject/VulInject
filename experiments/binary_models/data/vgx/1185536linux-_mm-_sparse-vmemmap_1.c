@@ -1,0 +1,1 @@
+static int __meminit vmemmap_populate_range ( unsigned long start , unsigned long end , int node , struct vmem_altmap * altmap , struct page * reuse ) { unsigned long addr = start ; pte_t * pte ; for ( ; addr < end ; addr += PAGE_SIZE ) { pte = vmemmap_populate_address ( addr , node , altmap , reuse ) ; } return 0 ; } 

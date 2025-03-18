@@ -1,0 +1,1 @@
+gimp_canvas_set_property ( , , , ) { GimpCanvas * canvas = GIMP_CANVAS ( object ) ; switch ( property_id ) { case PROP_CONFIG : break ; default : G_OBJECT_WARN_INVALID_PROPERTY_ID ( object , property_id , pspec ) ; break ; } } 

@@ -1,0 +1,1 @@
+static int no_kernel_sysvmsg ( void ) { int id ; void * osig ( int ) sig_caught = 0 ; osig = signal ( SIGSYS , sigsys_handler ) ; id = msgget ( MSG_KEY , IPC_CREAT | 0600 ) ; ( void ) msgctl ( id , IPC_RMID , 0 ) ; ( void ) signal ( SIGSYS , osig ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void _asr_resolver_done_tp ( void * arg ) { struct asr * * priv = arg ; struct asr * asr ; if ( * priv == NULL ) { return ; } asr = * priv ; free ( asr ) ; free ( priv ) ; } 

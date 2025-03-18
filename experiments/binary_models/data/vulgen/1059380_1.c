@@ -1,0 +1,1 @@
+static FSItem * new_fs_item ( FSStack * st , u32 line_col , u32 fill_col , Fixed width ) { FSItem * item ; GF_SAFEALLOC ( item , FSItem ) ; if ( ! item ) { return NULL ; } gf_list_add ( st -> items , item ) ; item -> fill_col = fill_col ; item -> width = width ; item -> line_col = line_col ; return item ; } 

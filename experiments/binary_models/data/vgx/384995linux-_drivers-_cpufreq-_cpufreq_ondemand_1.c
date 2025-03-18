@@ -1,0 +1,1 @@
+static ssize_t io_is_busy_store ( struct gov_attr_set * attr_set , const char * buf , size_t count ) { struct dbs_data * dbs_data = to_dbs_data ( attr_set ) ; unsigned int input ; int ret ; ret = sscanf ( buf , "%u" , & input ) ; dbs_data -> io_is_busy = ! ! input ; gov_update_cpu_data ( dbs_data ) ; return count ; } 

@@ -1,0 +1,1 @@
+MRB_API mrb_value mrb_check_intern_cstr ( mrb_state * mrb , const char * name ) { if ( sym == 0 ) { return mrb_nil_value ( ) ; } return mrb_symbol_value ( sym ) ; } 

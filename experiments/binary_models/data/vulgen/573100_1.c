@@ -1,0 +1,1 @@
+static inline struct cfpkt * skb_to_pkt ( struct sk_buff * skb ) { return ( cfpkt * skb ; } 

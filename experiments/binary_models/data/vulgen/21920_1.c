@@ -1,0 +1,1 @@
+static void ipv6_hooks_unregister ( struct net * net ) { struct conntrack6_net * cnet = net_generic ( net , conntrack6_net_id ) ; mutex_lock ( & register_ipv6_hooks ) ; if ( cnet -> users && ( -- cnet -> users == 0 ) ) { nf_unregister_net_hooks ( net , ipv6_conntrack_ops , 0 ) ; } mutex_unlock ( & register_ipv6_hooks ) ; } 

@@ -1,0 +1,1 @@
+static void raptor_rss10_ensure_atom_field_zero_one ( raptor_rss_item * item , raptor_rss_fields_type f ) { raptor_rss_field * field = item -> fields [ f ] ; if ( ! field ) { return ; } if ( field -> next ) { raptor_rss_field * next = field -> next ; field -> next = NULL ; { field = next ; next = field -> next ; field -> next = NULL ; } next ; } } 

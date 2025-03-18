@@ -1,0 +1,1 @@
+static void xenon_reset ( struct sdhci_host * host , u8 mask ) { struct sdhci_pltfm_host * pltfm_host = sdhci_priv ( host ) ; struct xenon_priv * priv = sdhci_pltfm_priv ( pltfm_host ) ; sdhci_reset ( host , mask ) ; } 

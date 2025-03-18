@@ -1,1 +1,1 @@
-static int FUN1 ( struct VAR1 * VAR1 , void * VAR2 , struct VAR3 * VAR4 ) { if ( VAR4 -> VAR5 != 0 ) { return - VAR6 ; } * VAR4 = VAR7 [ VAR4 -> VAR8 ] ; return 0 ; }
+static int vidioc_enum_freq_bands ( struct file * file , void * priv , struct v4l2_frequency_band * band ) { if ( band -> tuner != 0 ) { return - EINVAL ; } * band = bands [ band -> index ] ; return 0 ; } 

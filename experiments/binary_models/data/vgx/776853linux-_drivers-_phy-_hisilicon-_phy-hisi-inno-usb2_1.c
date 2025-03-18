@@ -1,0 +1,1 @@
+static void hisi_inno_phy_setup ( struct hisi_inno_phy_priv * priv ) { hisi_inno_phy_write_reg ( priv , 0 , 0x06 , PHY_CLK_ENABLE ) ; msleep ( PHY_CLK_STABLE_TIME , NULL ) ; } 

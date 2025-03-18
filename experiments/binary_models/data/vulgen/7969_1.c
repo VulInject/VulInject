@@ -1,0 +1,1 @@
+static void abortConn ( OtaConn * oc ) { struct espconn * conn = oc -> conn ; os_printf ( "OTA: aborting\n" ) ; if ( conn -> reverse != oc ) { return ; } conn -> reverse = NULL ; espconn_disconnect ( conn ) ; } 

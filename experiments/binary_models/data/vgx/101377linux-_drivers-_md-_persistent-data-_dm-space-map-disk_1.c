@@ -1,0 +1,1 @@
+static int sm_disk_commit ( struct dm_space_map * sm ) { int r ; struct sm_disk * smd = container_of ( sm , sm_disk , sm ) ; r = sm_ll_commit ( & smd -> ll ) ; if ( r ) { return r ; } memcpy ( & smd -> old_ll , & smd -> ll , sizeof ( smd -> old_ll ) ) ; return 0 ; } 

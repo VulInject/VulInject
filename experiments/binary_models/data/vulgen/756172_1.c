@@ -1,0 +1,1 @@
+void uvc_mc_cleanup_entity ( struct uvc_entity * entity ) { if ( UVC_ENTITY_TYPE ( entity ) != UVC_TT_STREAMING ) { media_entity_cleanup ( & entity -> subdev . entity ) ; } } 

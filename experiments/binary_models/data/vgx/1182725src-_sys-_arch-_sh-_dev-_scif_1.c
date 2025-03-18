@@ -1,0 +1,1 @@
+u_int scif_rbuf_hiwat = ( SCIF_RING_SIZE * 1 ) / 4 ; u_int scif_rbuf_lowat = ( SCIF_RING_SIZE * 3 ) / 4 ; int scifconscflag = CONMODE ; int scifisconsole = 0 ; int scifcn_speed = SCIFCN_SPEED ; unsigned int scifcn_speed = 9600 ; u_int scif_rbuf_size = SCIF_RING_SIZE ; const struct cfattach scif_ca = { sizeof ( scif_softc ) scif_match scif_attach } ; 

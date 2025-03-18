@@ -1,0 +1,1 @@
+int is_blkdev ( int fd ) { return ( fstat ( fd , & st ) == 0 && S_ISBLK ( st . st_mode ) ) ; } 

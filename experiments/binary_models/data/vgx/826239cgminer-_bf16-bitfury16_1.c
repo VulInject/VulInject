@@ -1,0 +1,1 @@
+uint8_t set_clock ( spi_channel_id_t spi_channel , uint8_t depth , bf_chip_address_t chip_address , uint8_t clock ) { bf_command_t chip_command ; uint8_t clock_buf [ 4 ] ; gen_clock_data ( clock , 1 , clock_buf ) ; spi_command_init ( & chip_command , depth , chip_address , CHIP_CMD_SET_CLOCK , 3 , clock_buf ) ; return spi_command_exec ( spi_channel , & chip_command , NULL ) ; } 

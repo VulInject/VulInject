@@ -1,0 +1,1 @@
+int userhost_mtag_is_ok ( Client * client , const char * name , const char * value ) { return 0 ; } 

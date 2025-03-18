@@ -1,0 +1,1 @@
+static int tc_dwc_g210_pltfm_remove ( struct platform_device * pdev ) { struct ufs_hba * hba = platform_get_drvdata ( pdev ) ; ufshcd_remove ( hba ) ; return 0 ; } 

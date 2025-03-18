@@ -1,0 +1,1 @@
+static int linebuffer_free ( BIO * a ) { BIO_LINEBUFFER_CTX * b ; if ( a == NULL ) { return ( 0 ) ; } b = ( BIO_LINEBUFFER_CTX * ) a -> ptr ; free ( b -> obuf ) ; a -> ptr = NULL ; a -> init = 0 ; a -> flags = 0 ; return ( 1 ) ; } 

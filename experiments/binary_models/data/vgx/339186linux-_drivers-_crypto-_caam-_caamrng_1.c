@@ -1,0 +1,1 @@
+static void caam_rng_worker ( struct work_struct * work ) { struct caam_rng_ctx * ctx = container_of ( work , caam_rng_ctx , worker ) ; caam_rng_fill_async ( ctx , NULL ) ; } 

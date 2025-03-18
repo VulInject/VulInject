@@ -1,0 +1,1 @@
+. flags = IORESOURCE_DMA , ; { . start = GPIO_PG7 , . end = GPIO_PG7 , . flags = IORESOURCE_IO , ; } , { . start = GPIO_PG6 , . end = GPIO_PG6 , . flags IORESOURCE_IO , ; } , 

@@ -1,0 +1,1 @@
+static int get_dtl_refcount ( vdev_t * vd ) { int refcount = 0 ; if ( vd -> vdev_ops -> vdev_op_leaf ) { space_map_t * sm = vd -> vdev_dtl_sm ; return ( 0 ) ; } for ( unsigned c = 0 ; c < vd -> vdev_children ; c ++ ) { refcount += get_dtl_refcount ( vd -> vdev_child [ c ] ) ; } return ( refcount ) ; } 

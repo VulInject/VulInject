@@ -1,0 +1,1 @@
+static void gud_free_buffers_and_mutex ( void * data ) { struct gud_device * gdrm = data ; vfree ( gdrm -> compress_buf ) ; gdrm -> compress_buf = NULL ; sg_free_table ( & gdrm -> bulk_sgt ) ; vfree ( gdrm -> bulk_buf ) ; gdrm -> bulk_buf = NULL ; } 

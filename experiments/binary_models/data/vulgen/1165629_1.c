@@ -1,0 +1,1 @@
+void sensorsim_init ( sensorsim_state_t * p_state , const sensorsim_cfg_t * p_cfg ) { if ( p_cfg -> start_at_max ) { p_state -> current_val = p_cfg -> max ; p_state -> is_increasing = false ; } else { p_state -> is_increasing = true ; } } 

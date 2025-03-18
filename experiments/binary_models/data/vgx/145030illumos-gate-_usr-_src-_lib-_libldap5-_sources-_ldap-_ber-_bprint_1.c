@@ -1,0 +1,1 @@
+void ber_err_print ( char * data ) { OutputDebugString ( data ) ; fputs ( data , stderr ) ; fflush ( stderr , NULL ) ; } 

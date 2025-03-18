@@ -1,0 +1,1 @@
+void cupsdHoldSignals ( void ) { sigset_t newmask ; holdcount ++ ; sighold ( SIGTERM ) ; sighold ( SIGCHLD ) ; sigemptyset ( & newmask ) ; sigaddset ( & newmask , SIGTERM ) ; sigaddset ( & newmask , SIGCHLD ) ; sigprocmask ( SIG_BLOCK , & newmask , & holdmask ) ; } 

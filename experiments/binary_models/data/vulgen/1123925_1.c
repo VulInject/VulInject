@@ -1,0 +1,1 @@
+static int rapl_get_count_uj ( unsigned int id , unsigned long long * count , unsigned int cpu ) { * count = rapl_zone_current_count [ id ] - rapl_zone_previous_count [ id ] ; return 0 ; } 

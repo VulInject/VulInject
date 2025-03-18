@@ -1,0 +1,1 @@
+static void at91sam9x5_usb_restore_context ( struct clk_hw * hw ) { int ret ; ret = at91sam9x5_clk_usb_set_parent ( hw , usb -> pms . parent ) ; if ( ret ) { return ; } at91sam9x5_clk_usb_set_rate ( hw , usb -> pms . rate , usb -> pms . parent_rate ) ; } 

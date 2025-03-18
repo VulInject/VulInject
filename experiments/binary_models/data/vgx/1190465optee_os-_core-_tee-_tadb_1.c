@@ -1,0 +1,1 @@
+static TEE_Result maybe_grow_files ( struct tee_tadb_dir * db , int idx ) { void * p ; p = realloc ( db -> files , bitstr_size ( idx + 1 ) ) ; if ( ! p ) { return TEE_ERROR_OUT_OF_MEMORY ; } db -> files = p ; bit_nclear ( db -> files , db -> nbits , idx ) ; db -> nbits = idx + 1 ; return TEE_SUCCESS ; } 

@@ -1,0 +1,1 @@
+int global_function ( void ) { return 0 ; } 

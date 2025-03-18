@@ -1,0 +1,1 @@
+static void saic_set_affinity ( struct itr_chip * chip __unused , size_t it __unused , uint8_t cpu_mask __unused ) { } static const struct itr_ops saic_ops = { . add = saic_add . enable = saic_enable . disable = saic_disable . raise_pi = saic_raise_pi . raise_sgi = saic_raise_sgi . set_affinity = saic_set_affinity } ; 

@@ -1,0 +1,1 @@
+static void dirty_check ( void ) { if ( ! dirty || dummy ) { return ; } term_resize_dirty ( ) ; if ( full_redraw ) { full_redraw = FALSE ; term_clear ( ) ; term_refresh ( NULL ) ; mainwindows_redraw ( ) ; statusbar_redraw ( TRUE ) ; } mainwindows_redraw_dirty ( ) ; statusbar_redraw_dirty ( ) ; term_refresh ( NULL ) ; dirty = FALSE ; } 

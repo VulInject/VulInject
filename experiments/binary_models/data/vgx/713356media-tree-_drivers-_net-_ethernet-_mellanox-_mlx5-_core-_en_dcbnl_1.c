@@ -1,0 +1,1 @@
+static int mlx5e_dcbnl_ieee_setpfc ( struct net_device * dev , struct ieee_pfc * pfc ) { struct mlx5e_priv * priv = netdev_priv ( dev ) ; struct mlx5_core_dev * mdev = priv -> mdev ; u8 curr_pfc_en ; int ret ; mlx5_query_port_pfc ( mdev , & curr_pfc_en , NULL ) ; ret = mlx5_set_port_pfc ( mdev , pfc -> pfc_en , pfc -> pfc_en ) ; mlx5_toggle_port_link ( mdev ) ; return ret ; } 

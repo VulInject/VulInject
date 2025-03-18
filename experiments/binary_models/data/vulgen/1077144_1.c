@@ -1,0 +1,1 @@
+static void securityfs_free_inode ( struct inode * inode ) { free_inode_nonrcu ( inode ) ; } static const struct super_operations securityfs_super_operations = { . statfs = simple_statfs . free_inode = securityfs_free_inode } ; 

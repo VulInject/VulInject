@@ -1,0 +1,1 @@
+int main ( void ) { mpegaudio_tableinit ( ) ; WRITE_ARRAY ( "static const" , uint32_t , exp_table_fixed ) ; WRITE_ARRAY ( "static const" , float , exp_table_float ) ; WRITE_2D_ARRAY ( "static const" , uint32_t , expval_table_fixed ) ; WRITE_2D_ARRAY ( "static const" , float , expval_table_float ) ; return 0 ; } 

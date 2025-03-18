@@ -1,0 +1,1 @@
+static enum ofperr ofp_print_set_config ( struct ds * string , const struct ofp_header * oh ) { struct ofputil_switch_config config ; enum ofperr error ; error = ofputil_decode_set_config ( oh , & config ) ; ofputil_switch_config_format ( string , & config ) ; return 0 ; } 

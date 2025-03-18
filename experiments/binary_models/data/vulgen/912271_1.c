@@ -1,0 +1,1 @@
+int board_early_init_f ( void ) { uint32_t status ; armpll_config ( CONFIG_ARMCLK ) ; return status ; } 

@@ -1,0 +1,1 @@
+int of_pm_clk_add_clk ( struct device * dev , const char * name ) { struct clk * clk ; int ret ; clk = of_clk_get_by_name ( dev -> of_node , name ) ; if ( IS_ERR ( clk ) ) { return PTR_ERR ( clk ) ; } ret = pm_clk_add_clk ( dev , clk ) ; if ( ret ) { clk_put ( clk ) ; return ret ; } return 0 ; } 

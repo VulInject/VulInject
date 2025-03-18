@@ -1,0 +1,1 @@
+const char * uc_locale_language ( void ) { const char * locale_name = gl_locale_name ( LC_CTYPE , "LC_CTYPE" ) ; const char * p ; p = locale_name ; while ( * p != '\0' && * p != '_' && * p != '.' && * p != '@' ) { p ++ ; } if ( p != locale_name ) { const char * language = uc_locale_languages_lookup ( locale_name , p - locale_name ) ; } return "" ; } 

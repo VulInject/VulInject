@@ -1,0 +1,1 @@
+static int atmel_hlcdc_pwm_remove ( struct platform_device * pdev ) { struct atmel_hlcdc_pwm * chip = platform_get_drvdata ( pdev ) ; int ret ; ret = pwmchip_remove ( & chip -> chip ) ; clk_disable_unprepare ( chip -> hlcdc -> periph_clk ) ; return 0 ; } 

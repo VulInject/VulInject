@@ -1,0 +1,1 @@
+static void cec_timer_fn ( unsigned long data ) { struct ce_array * ca = ( ce_array * ) data ; do_spring_cleaning ( ca ) ; } 

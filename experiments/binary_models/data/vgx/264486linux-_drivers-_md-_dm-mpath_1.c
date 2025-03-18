@@ -1,0 +1,1 @@
+static void free_pgpaths ( struct list_head * pgpaths , struct dm_target * ti ) { struct pgpath * pgpath , * tmp ; list_for_each_entry_safe ( , , , ) { list_del ( & pgpath -> list ) ; dm_put_device ( ti , pgpath -> path . dev ) ; } } 

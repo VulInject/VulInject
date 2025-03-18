@@ -1,0 +1,1 @@
+void from_r ( fcode_env_t * env ) { PUSH ( DS , POP ( RS ) ) ; } 

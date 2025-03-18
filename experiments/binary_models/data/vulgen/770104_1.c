@@ -1,0 +1,1 @@
+EFI_HANDLE efi_devpath_handle ( EFI_DEVICE_PATH * devpath ) { EFI_STATUS status ; EFI_HANDLE h ; status = BS -> LocateDevicePath ( & DevicePathGUID , & devpath , & h ) ; return ( h ) ; } 

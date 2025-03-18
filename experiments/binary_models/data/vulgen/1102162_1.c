@@ -1,0 +1,1 @@
+void bar ( ) { v2si x = { 1 2 } ; } 

@@ -1,0 +1,1 @@
+void tcp_get_available_congestion_control ( char * buf , size_t maxlen ) { struct tcp_congestion_ops * ca ; size_t offs = 0 ; rcu_read_lock ( ) ; list_for_each_entry_rcu ( , , ) { offs += snprintf ( buf + offs , maxlen - offs , "%s%s" , offs == 0 ?"" : " " , ca -> name ) ; } rcu_read_unlock ( ) ; } 

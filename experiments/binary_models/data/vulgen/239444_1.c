@@ -1,0 +1,1 @@
+static int hwmon_attr_base ( enum hwmon_sensor_types type ) { return 1 ; } 

@@ -1,0 +1,1 @@
+struct i915_page_directory * alloc_pd ( struct i915_address_space * vm ) { struct i915_page_directory * pd ; pd = __alloc_pd ( I915_PDES ) ; if ( unlikely ( ! pd ) ) { return ERR_PTR ( - ENOMEM ) ; } pd -> pt . base = vm -> alloc_pt_dma ( vm , I915_GTT_PAGE_SIZE_4K ) ; if ( IS_ERR ( pd -> pt . base ) ) { kfree ( pd ) ; return ERR_PTR ( - ENOMEM ) ; } return pd ; } 

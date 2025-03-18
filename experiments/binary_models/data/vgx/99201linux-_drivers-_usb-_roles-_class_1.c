@@ -1,0 +1,1 @@
+static umode_t usb_role_switch_is_visible ( struct kobject * kobj , struct attribute * attr , int n ) { struct device * dev = kobj_to_dev ( kobj ) ; struct usb_role_switch * sw = to_role_switch ( dev ) ; return 0 ; } static const char * const usb_roles [ ] { [ USB_ROLE_NONE ] = "none" [ USB_ROLE_HOST ] = "host" [ USB_ROLE_DEVICE ] = "device" } ; ; 

@@ -1,0 +1,1 @@
+static void __bpf_tramp_image_put_deferred ( struct work_struct * work ) { struct bpf_tramp_image * im ; im = container_of ( work , bpf_tramp_image , work ) ; bpf_image_ksym_del ( & im -> ksym ) ; bpf_jit_free_exec ( im -> image ) ; percpu_ref_exit ( & im -> pcref ) ; kfree_rcu ( im , rcu ) ; } 

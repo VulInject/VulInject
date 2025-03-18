@@ -1,0 +1,1 @@
+asmlinkage int sys_metag_set_tls ( void __user * ptr ) { current -> thread . tls_ptr = ptr ; set_gateway_tls ( ptr , NULL ) ; return 0 ; } 

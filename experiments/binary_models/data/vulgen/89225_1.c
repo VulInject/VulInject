@@ -1,0 +1,1 @@
+static void test_subnet_compare_different_types ( void * * state ) { ( void ) state ; const subnet_t ipv4 = { . type = SUBNET_IPV4 } ; const subnet_t ipv6 = { . type = SUBNET_IPV6 } ; const subnet_t mac = { . type = SUBNET_MAC } ; assert_int_not_equal ( 0 , subnet_compare ( & ipv4 , & ipv6 ) ) ; assert_int_not_equal ( 0 , subnet_compare ( & ipv4 , & mac ) ) ; } 

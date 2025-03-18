@@ -1,0 +1,1 @@
+int kdeth_process_eager ( struct hfi1_packet * packet ) { if ( unlikely ( rhf_err_flags ( packet -> rhf ) ) ) { handle_eflags ( packet ) ; } dd_dev_err ( packet -> rcd -> dd , "Unhandled eager packet received. Dropping.\n" ) ; return RHF_RCV_CONTINUE ; } 

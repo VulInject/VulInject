@@ -1,0 +1,1 @@
+static int history_deldata_nth ( history_t * h , TYPE ( HistEvent ) * ev , int num , void * * data ) ( ( history_set_nth ( h , ev , num ) != 0 ) return - 1 ; ) ; if ( data == ( void * * ) - 1 ) { return 0 ; } ev -> str = Strdup ( h -> cursor -> ev . str ) ; ev -> num = h -> cursor -> ev . num ; history_def_delete ( h , ev , h -> cursor ) ; return 0 ; 

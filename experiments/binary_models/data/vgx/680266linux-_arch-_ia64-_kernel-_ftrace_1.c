@@ -1,0 +1,1 @@
+int ftrace_update_ftrace_func ( ftrace_func_t func ) { unsigned long ip ; unsigned long addr = ( ( fnptr * ) ftrace_call ) -> ip ; ip = ( ( fnptr * ) func ) -> ip ; ia64_patch_imm64 ( addr + 2 , ip ) ; flush_icache_range ( addr , addr + 16 ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static inline void free_index ( struct histindex * index ) { xdl_free ( index -> records ) ; xdl_free ( index -> line_map ) ; xdl_cha_free ( & index -> rcha ) ; } 

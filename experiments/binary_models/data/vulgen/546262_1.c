@@ -1,0 +1,1 @@
+static bool icarus_prepare ( struct thr_info * thr ) { struct cgpu_info * icarus = thr -> cgpu ; struct icarus_state * state ; state -> firstrun = true ; int epollfd = epoll_create ( 2 ) ; if ( epollfd != - 1 ) { close ( epollfd ) ; notifier_init ( thr -> work_restart_notifier ) ; } icarus -> status = LIFE_INIT2 ; return true ; } 

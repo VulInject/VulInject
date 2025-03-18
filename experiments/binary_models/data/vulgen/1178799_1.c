@@ -1,0 +1,1 @@
+( st_sensors_allocate_trigger ) ; void st_sensors_deallocate_trigger ( struct iio_dev * indio_dev ) { struct st_sensor_data * sdata = iio_priv ( indio_dev ) ; iio_trigger_unregister ( sdata -> trig ) ; iio_trigger_free ( sdata -> trig ) ; } 

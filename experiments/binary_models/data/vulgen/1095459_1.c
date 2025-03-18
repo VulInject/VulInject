@@ -1,0 +1,1 @@
+static int __try_online_node ( int nid , bool set_node_online ) { pg_data_t * pgdat ; int ret = 1 ; pgdat = hotadd_init_pgdat ( nid ) ; if ( ! pgdat ) { pr_err ( "Cannot online node %d due to NULL pgdat\n" , nid ) ; ret = - ENOMEM ; out } if ( set_node_online ) { node_set_online ( nid ) ; ret = register_one_node ( nid ) ; BUG_ON ( ret ) ; } out return ret ; } 

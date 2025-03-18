@@ -1,0 +1,1 @@
+void __init test_load_write_pc_interworking ( void ) { int arch = cpu_architecture ( ) ; BUG_ON ( arch == CPU_ARCH_UNKNOWN ) ; } 

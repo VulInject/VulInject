@@ -1,0 +1,1 @@
+static int uncompress_using_lz4 ( struct unit_test_state * uts , void * in , unsigned long in_size , void * out , unsigned long out_max , unsigned long * out_size ) { int ret ; size_t input_size = in_size ; size_t output_size = out_max ; ret = ulz4fn ( in , input_size , out , & output_size ) ; if ( out_size ) { * out_size = output_size ; } return ( ret != 0 ) ; } 

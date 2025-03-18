@@ -1,0 +1,1 @@
+static struct auxtrace_cache * intel_pt_cache ( struct dso * dso , struct machine * machine ) { struct auxtrace_cache * c ; unsigned int bits ; bits = intel_pt_cache_size ( dso , machine ) ; c = auxtrace_cache__new ( bits , sizeof ( intel_pt_cache_entry ) , 200 ) ; dso -> auxtrace_cache = c ; return c ; } 

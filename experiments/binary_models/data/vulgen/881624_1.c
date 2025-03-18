@@ -1,0 +1,1 @@
+char * Form [ ] { "Primitive" "Constructed" } ; ; obj { char * desc ; u_int oid ; u_char type ; struct obj * child , * next ; } , * objp = NULL obj_abrev { char * prefix ; struct obj * node ; char * oid ; } , obj_abrev_list [ ] { } ; 

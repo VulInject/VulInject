@@ -1,0 +1,1 @@
+static inline uint32_t admv4420_calc_pfd_ref ( struct admv4420_state * st ) { int tmp ; u8 doubler , divide_by_2 ; doubler = st -> ref_block . doubler_en ?2 : 1 ; divide_by_2 = st -> ref_block . divide_by_2_en ?2 : 1 ; tmp = ADMV4420_REF_FREQ_HZ * doubler ; return ( tmp / ( st -> ref_block . divider * divide_by_2 ) ) ; } 

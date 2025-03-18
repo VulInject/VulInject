@@ -1,0 +1,1 @@
+static void smdkc210_register_nodes ( void ) { qos_node_create_machine ( "arm/smdkc210" , qos_create_machine_arm_smdkc210 ) ; qos_node_contains ( "arm/smdkc210" , "generic-sdhci" ) ; } 

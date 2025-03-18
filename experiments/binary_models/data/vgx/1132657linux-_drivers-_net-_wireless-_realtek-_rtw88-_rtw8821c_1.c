@@ -1,0 +1,1 @@
+static void rtw8821c_set_tx_power_index ( struct rtw_dev * rtwdev ) { struct rtw_hal * hal = & rtwdev -> hal ; int rs , path ; for ( path = 0 ; path < hal -> rf_path_num ; path ++ ) { for ( rs = 0 ; rs < RTW_RATE_SECTION_MAX ; rs ++ ) { rtw8821c_set_tx_power_index_by_rate ( rtwdev , path , rs ) ; } } } 

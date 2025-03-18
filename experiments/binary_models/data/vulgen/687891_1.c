@@ -1,0 +1,1 @@
+( drm_privacy_screen_lookup_remove ) ; static struct drm_privacy_screen * drm_privacy_screen_get_by_name ( const char * name ) { struct drm_privacy_screen * priv ; struct device * dev = NULL ; mutex_lock ( & drm_privacy_screen_devs_lock ) ; list_for_each_entry ( , , ) { } mutex_unlock ( & drm_privacy_screen_devs_lock ) ; return dev ?to_drm_privacy_screen ( dev ) : NULL ; } 

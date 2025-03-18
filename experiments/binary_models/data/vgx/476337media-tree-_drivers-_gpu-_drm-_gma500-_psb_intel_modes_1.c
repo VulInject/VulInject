@@ -1,0 +1,1 @@
+int psb_intel_ddc_get_modes ( struct drm_connector * connector , struct i2c_adapter * adapter ) { struct edid * edid ; int ret = 0 ; edid = drm_get_edid ( connector , adapter ) ; if ( edid ) { drm_mode_connector_update_edid_property ( connector , edid ) ; ret = drm_add_edid_modes ( connector , edid ) ; } return ret ; } 

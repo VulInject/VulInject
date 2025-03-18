@@ -1,0 +1,1 @@
+static int bfin_mac_remove ( struct platform_device * pdev ) { struct net_device * ndev = platform_get_drvdata ( pdev ) ; struct bfin_mac_local * lp = netdev_priv ( ndev ) ; bfin_phc_release ( lp ) ; lp -> mii_bus -> priv = NULL ; unregister_netdev ( ndev ) ; netif_napi_del ( & lp -> napi ) ; free_irq ( IRQ_MAC_RX , ndev ) ; return 0 ; } 

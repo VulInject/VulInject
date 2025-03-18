@@ -1,0 +1,1 @@
+static int vc4_v3d_runtime_resume ( struct device * dev ) { struct vc4_v3d * v3d = dev_get_drvdata ( dev ) ; struct vc4_dev * vc4 = v3d -> vc4 ; int ret ; ret = clk_prepare_enable ( v3d -> clk ) ; vc4_v3d_init_hw ( & vc4 -> base ) ; vc4_irq_enable ( & vc4 -> base ) ; return 0 ; } 

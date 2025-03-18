@@ -1,0 +1,1 @@
+static bool __is_lut_linear ( const struct drm_color_lut * lut , uint32_t size ) { int i ; uint32_t expected ; int delta ; for ( i = 0 ; i < size ; i ++ ) { if ( ( lut [ i ] . red != lut [ i ] . green ) || ( lut [ i ] . green != lut [ i ] . blue ) ) { return false ; } delta = lut [ i ] . red - expected ; if ( delta < - 1 || 1 < delta ) { return false ; } } return true ; } 

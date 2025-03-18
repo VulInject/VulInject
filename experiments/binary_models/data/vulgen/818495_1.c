@@ -1,0 +1,1 @@
+u32 mt7601u_rmw ( struct mt7601u_dev * dev , u32 offset , u32 mask , u32 val ) { mt7601u_wr ( dev , offset , val ) ; return val ; } 

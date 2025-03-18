@@ -1,0 +1,1 @@
+void __fscache_relinquish_volume ( struct fscache_volume * volume , const void * coherency_data , bool invalidate ) { if ( invalidate ) { set_bit ( FSCACHE_VOLUME_INVALIDATE , & volume -> flags ) ; } if ( coherency_data ) { memcpy ( volume -> coherency , coherency_data , volume -> coherency_len ) ; } fscache_put_volume ( volume , fscache_volume_put_relinquish ) ; } 

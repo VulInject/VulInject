@@ -1,0 +1,1 @@
+gt_pch_note_reorder ( , , ) { struct ptr_data * data ; data = htab_find_with_hash ( saving_htab , obj , POINTER_HASH ( obj ) ) ; gcc_assert ( data && data -> note_ptr_cookie == note_ptr_cookie ) ; data -> reorder_fn = reorder_fn ; } 

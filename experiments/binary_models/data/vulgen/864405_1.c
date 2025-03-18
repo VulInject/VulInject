@@ -1,0 +1,1 @@
+static int rn_acp_deinit ( void __iomem * base ) { int ret = 0 ; ret = acp3x_reset ( base ) ; if ( ret ) { return ret ; } ret = acp3x_power_off ( base ) ; if ( ret ) { return ret ; } return 0 ; } 

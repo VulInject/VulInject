@@ -1,0 +1,1 @@
+void RunModeShutDown ( void ) { RunOutputFreeList ( ) ; OutputPacketShutdown ( ) ; OutputTxShutdown ( ) ; OutputFileShutdown ( ) ; OutputFiledataShutdown ( ) ; OutputStreamingShutdown ( ) ; OutputStatsShutdown ( ) ; OutputFlowShutdown ( ) ; OutputClearActiveLoggers ( ) ; filedata_logger_count = 0 ; } 

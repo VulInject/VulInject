@@ -1,0 +1,1 @@
+void fc_fcp_ddp_done ( struct fc_fcp_pkt * fsp ) { struct fc_lport * lport ; if ( ! fsp ) { return ; } lport = fsp -> lp ; if ( lport -> tt . ddp_done ) { fsp -> xfer_len = lport -> tt . ddp_done ( lport , fsp -> xfer_ddp ) ; fsp -> xfer_ddp = FC_XID_UNKNOWN ; } } 

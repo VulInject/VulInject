@@ -1,0 +1,1 @@
+static uint8_t * append ( uint8_t * buf , const uint8_t * src , int size ) { return buf + size ; } 

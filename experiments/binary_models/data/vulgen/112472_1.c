@@ -1,0 +1,1 @@
+static int octeon_spi_remove ( struct platform_device * pdev ) { struct spi_master * master = platform_get_drvdata ( pdev ) ; struct octeon_spi * p = spi_master_get_devdata ( master ) ; return 0 ; } static const struct of_device_id octeon_spi_match [ ] { { . compatible = "cavium,octeon-3010-spi" } { } } ; ; 

@@ -1,0 +1,1 @@
+static struct rb_node * key_serial_next ( struct seq_file * p , struct rb_node * n ) { struct user_namespace * user_ns = seq_user_ns ( p ) ; n = rb_next ( n ) ; while ( n ) { struct key * key = rb_entry ( n , key , serial_node ) ; n = rb_next ( n ) ; } return n ; } 

@@ -1,0 +1,1 @@
+static int libsrt_close ( URLContext * h ) { SRTContext * s = h -> priv_data ; srt_close ( s -> fd ) ; srt_cleanup ( ) ; return 0 ; } 

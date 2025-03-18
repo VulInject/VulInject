@@ -1,0 +1,1 @@
+int timevar_enabled = 0 ; timevar_def { struct timevar_time_def elapsed ; int start_time ; const char * name ; unsigned standalone 1 ; unsigned used 1 ; } 

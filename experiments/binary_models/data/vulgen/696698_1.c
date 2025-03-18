@@ -1,0 +1,1 @@
+int s390_pv_kvm_init ( ConfidentialGuestSupport * cgs , Error * * errp ) { if ( ! s390_has_feat ( S390_FEAT_UNPACK ) ) { error_setg ( errp , "CPU model does not support Protected Virtualization" ) ; return - 1 ; } cgs -> ready = true ; return 0 ; } 

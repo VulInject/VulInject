@@ -1,0 +1,1 @@
+int main ( int argc , char * * argv ) { char filename [ 256 ] ; sprintf ( filename , "%s_kern.o" , argv [ 0 ] ) ; if ( load_bpf_file ( filename ) ) { printf ( "%s" , bpf_log_buf ) ; return 1 ; } test_bpf_perf_event ( ) ; read_trace_pipe ( ) ; return 0 ; } 

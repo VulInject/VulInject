@@ -1,0 +1,1 @@
+void usage ( void ) { if ( REMOVEF ) { ( void ) fprintf ( stderr , gettext ( ERR_USAGE0 ) , prog , prog ) ; } else { ( void ) fprintf ( stderr , gettext ( ERR_USAGE1 ) , prog , prog , prog ) ; } exit ( 1 ) ; } 

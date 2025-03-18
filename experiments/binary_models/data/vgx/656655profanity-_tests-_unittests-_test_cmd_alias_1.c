@@ -1,0 +1,1 @@
+void cmd_alias_remove_removes_alias ( void * * state ) { gchar * args [ ] { "remove" "hn" NULL } ; ; prefs_add_alias ( "hn" , "/help navigation" ) ; expect_cons_show ( "Command alias removed ->/hn" ) ; gboolean result = cmd_alias ( NULL , CMD_ALIAS , args ) ; assert_true ( result ) ; char * returned_val = prefs_get_alias ( "hn" ) ; assert_null ( returned_val ) ; } 

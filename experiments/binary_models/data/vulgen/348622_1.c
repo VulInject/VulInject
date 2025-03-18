@@ -1,0 +1,1 @@
+static s32 e1000_null_mbx_check_for_flag ( struct e1000_hw E1000_UNUSEDARG * hw , u16 E1000_UNUSEDARG mbx_id ) { return E1000_SUCCESS ; } 

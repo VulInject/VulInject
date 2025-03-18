@@ -1,0 +1,1 @@
+static unsigned long release_freepages ( struct list_head * freelist ) { struct page * page , * next ; cfs_time_t high_pfn = 0 ; list_for_each_entry_safe ( , , , ) { unsigned long pfn = page_to_pfn ( page ) ; list_del ( & page -> lru ) ; __free_page ( page ) ; if ( pfn > high_pfn ) { high_pfn = pfn ; } } return high_pfn ; } 

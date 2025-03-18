@@ -1,0 +1,1 @@
+static pid_t spawn_sealing_thread ( void ) { uint8_t * stack ; pid_t pid ; stack = malloc ( STACK_SIZE ) ; if ( ! stack ) { printf ( "malloc(STACK_SIZE) failed: %m\n" ) ; abort ( ) ; } if ( pid < 0 ) { printf ( "clone() failed: %m\n" ) ; abort ( ) ; } return pid ; } 

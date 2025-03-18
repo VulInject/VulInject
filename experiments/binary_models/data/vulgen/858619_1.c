@@ -1,0 +1,1 @@
+rsvg_defs_register_name ( , , ) { g_hash_table_insert ( defs -> hash , g_strdup ( name ) , val ) ; } 

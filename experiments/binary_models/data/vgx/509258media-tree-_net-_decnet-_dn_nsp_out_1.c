@@ -1,0 +1,1 @@
+void dn_send_conn_ack ( struct sock * sk ) { struct dn_scp * scp = DN_SK ( sk ) ; struct sk_buff * skb = NULL ; struct nsp_conn_ack_msg * msg ; if ( ( skb = dn_alloc_skb ( sk , 3 , sk -> sk_allocation ) ) == NULL ) { return ; } msg = ( nsp_conn_ack_msg * ) skb_put ( skb , 3 ) ; msg -> msgflg = 0x24 ; msg -> dstaddr = scp -> addrrem ; dn_nsp_send ( skb , NULL ) ; } 

@@ -1,0 +1,1 @@
+u64 get_reg_value ( u64 * intr_regs , char * register_name ) { int register_bit_position ; register_bit_position = __perf_reg_mask ( register_name ) ; return * ( intr_regs + register_bit_position ) ; } 

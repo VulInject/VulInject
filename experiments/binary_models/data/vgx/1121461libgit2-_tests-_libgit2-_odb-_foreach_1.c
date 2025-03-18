@@ -1,0 +1,1 @@
+static int foreach_stop_first_cb ( const git_oid * oid , void * data ) { int * nobj = data ; ( * nobj ) ++ ; GIT_UNUSED ( oid , NULL ) ; return - 123 ; } 

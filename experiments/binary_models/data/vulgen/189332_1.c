@@ -1,0 +1,1 @@
+UINT32 ClipboardCountFormats ( wClipboard * clipboard ) { UINT32 count ; wClipboardFormat * format ; if ( ! clipboard ) { return 0 ; } format = ClipboardFindFormat ( clipboard , clipboard -> formatId , NULL ) ; if ( ! format ) { return 0 ; } return count ; } 

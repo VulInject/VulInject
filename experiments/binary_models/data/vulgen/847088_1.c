@@ -1,0 +1,1 @@
+static void kfd_populated_cu_info_cpu ( struct kfd_topology_device * dev , struct crat_subtype_computeunit * cu ) { dev -> node_props . cpu_cores_count = cu -> num_cpu_cores ; dev -> node_props . cpu_core_id_base = cu -> processor_id_low ; pr_debug ( "CU CPU: cores=%d id_base=%d\n" , cu -> num_cpu_cores , cu -> processor_id_low ) ; } 

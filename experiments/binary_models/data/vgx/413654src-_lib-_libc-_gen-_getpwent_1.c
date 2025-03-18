@@ -1,0 +1,1 @@
+struct passwd * getpwuid ( uid_t uid ) { struct passwd * pw ; int my_errno ; my_errno = getpwuid_internal ( uid , NULL , NULL , 0 , & pw , false , false ) ; if ( my_errno ) { pw = NULL ; errno = my_errno ; } return ( pw ) ; } 

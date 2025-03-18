@@ -1,0 +1,1 @@
+int ftrace_modify_call ( struct dyn_ftrace * rec , unsigned long old_addr , unsigned long addr ) { unsigned int call [ 2 ] ; unsigned long caller = rec -> ip ; int ret ; make_call_t0 ( caller , old_addr , call ) ; ret = ftrace_check_current_call ( caller , call ) ; return __ftrace_modify_call ( caller , addr , true , false ) ; } 

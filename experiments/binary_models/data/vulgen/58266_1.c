@@ -1,0 +1,1 @@
+ISSUING_DIST_POINT * ISSUING_DIST_POINT_new ( void ) { return ( ISSUING_DIST_POINT * ) ASN1_item_new ( & ISSUING_DIST_POINT_it ) ; } 

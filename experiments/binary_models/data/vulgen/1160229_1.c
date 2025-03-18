@@ -1,0 +1,1 @@
+const path_t * target_name ( const target_t * target ) { return ; } 

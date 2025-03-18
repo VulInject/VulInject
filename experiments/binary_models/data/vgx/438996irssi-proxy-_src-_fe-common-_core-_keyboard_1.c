@@ -1,1 +1,1 @@
-void FUN1 ( const char * VAR1 ) { VAR2 * VAR3 ; FUN2 ( VAR1 != NULL ) ; VAR3 = FUN3 ( VAR4 , VAR1 ) ; if ( VAR3 == NULL ) { return ; } FUN4 ( VAR1 ) ; }
+void key_configure_remove ( const char * key ) { KEY_REC * rec ; g_return_if_fail ( key != NULL ) ; rec = g_hash_table_lookup ( keys , key ) ; if ( rec == NULL ) { return ; } keyconfig_clear ( key ) ; } 

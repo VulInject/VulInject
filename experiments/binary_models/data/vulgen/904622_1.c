@@ -1,0 +1,1 @@
+MODULE_FIRMWARE ( "ea/loader_dsp.fw" ) ; static const struct firmware card_fw [ ] { { 0 "loader_dsp.fw" } { 0 "indigo_iox_dsp.fw" } } ; ; 

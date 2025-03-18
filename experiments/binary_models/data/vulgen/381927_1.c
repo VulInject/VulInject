@@ -1,0 +1,1 @@
+void destroy_context ( struct mm_struct * mm ) { mm_context_t * ctx = & mm -> context ; spin_lock ( & cxn_owners_lock ) ; if ( ! list_empty ( & ctx -> id_link ) ) { if ( ctx -> id == cxn_pinned ) { cxn_pinned = - 1 ; } list_del_init ( & ctx -> id_link ) ; clear_bit ( ctx -> id , cxn_bitmap ) ; ctx -> id = 0 ; } spin_unlock ( & cxn_owners_lock ) ; } 

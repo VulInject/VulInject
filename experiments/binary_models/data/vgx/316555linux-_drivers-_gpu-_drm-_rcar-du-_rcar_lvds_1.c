@@ -1,0 +1,1 @@
+static int rcar_lvds_runtime_suspend ( struct device * dev ) { struct rcar_lvds * lvds = dev_get_drvdata ( dev ) ; clk_disable_unprepare ( lvds -> clocks . mod ) ; return 0 ; } 

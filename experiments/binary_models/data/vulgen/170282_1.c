@@ -1,0 +1,1 @@
+static void ninja32_program ( void __iomem * base ) { iowrite8 ( 0x05 , base + 0x01 ) ; iowrite8 ( 0xBE , base + 0x02 ) ; iowrite8 ( 0x01 , base + 0x03 ) ; iowrite8 ( 0x20 , base + 0x04 ) ; iowrite8 ( 0x8f , base + 0x05 ) ; iowrite8 ( 0xa4 , base + 0x1c ) ; } 

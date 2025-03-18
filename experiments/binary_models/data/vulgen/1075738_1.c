@@ -1,0 +1,1 @@
+int getchar ( void ) { register int c ; while ( ( c = prom_mayget ( ) ) == - 1 ) { } if ( c == 0177 || c == '\b' ) { prom_putchar ( '\b' ) ; prom_putchar ( ' ' ) ; c = '\b' ; } prom_putchar ( c ) ; return ( c ) ; } 

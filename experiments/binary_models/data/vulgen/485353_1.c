@@ -1,0 +1,1 @@
+void maildir_free ( struct maildir * md ) { maildir_flush ( md , 0 ) ; maildir_flush ( md , 1 ) ; chash_free ( md -> mdir_msg_hash ) ; free ( md ) ; } 

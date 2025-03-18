@@ -1,0 +1,1 @@
+static void * pipe_thread1 ( void * arg ) { signal ( SIGALRM , sigalrm_handler ) ; while ( 1 ) { assert ( read ( pipe_fd1 [ READ ] , & c , 1 ) == 1 ) ; touch ( ) ; assert ( write ( pipe_fd2 [ WRITE ] , & c , 1 ) == 1 ) ; touch ( ) ; iterations += 2 ; } return NULL ; } 

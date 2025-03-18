@@ -1,0 +1,1 @@
+void testChangePrognameInMysyslog ( void ) { msyslog ( LOG_ERR , "TESTING sntp_init_logging()" ) ; return ; } 

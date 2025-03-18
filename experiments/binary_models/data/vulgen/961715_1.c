@@ -1,0 +1,1 @@
+char * tomoyo_encode ( const char * str ) { return str ?tomoyo_encode2 ( str ) : NULL ; } 

@@ -1,0 +1,1 @@
+av_cold void ff_mdct_init_ppc ( FFTContext * s ) { if ( ! PPC_ALTIVEC ( av_get_cpu_flags ( ) ) ) { return ; } if ( s -> mdct_bits >= 5 ) { s -> imdct_half = imdct_half_altivec ; } } 

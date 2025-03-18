@@ -1,0 +1,1 @@
+static void setup_backend ( const fake_object * objs ) { git_odb_backend * backend ; cl_git_pass ( build_fake_backend ( & backend , objs , false ) ) ; cl_git_pass ( git_odb_add_backend ( _odb , backend , 10 ) ) ; } 

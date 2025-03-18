@@ -1,0 +1,1 @@
+rdpPaletteCache * palette_cache_new ( rdpContext * context ) { rdpPaletteCache * paletteCache ; WINPR_ASSERT ( context ) ; paletteCache = ( rdpPaletteCache * ) calloc ( 1 , sizeof ( rdpPaletteCache ) ) ; if ( paletteCache ) { paletteCache -> context = context ; paletteCache -> maxEntries = 6 ; } return paletteCache ; } 

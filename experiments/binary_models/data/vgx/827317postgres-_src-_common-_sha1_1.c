@@ -1,0 +1,1 @@
+void pg_sha1_init ( pg_sha1_ctx * ctx ) { H ( 0 ) = 0x67452301 ; H ( 1 ) = 0xefcdab89 ; H ( 2 ) = 0x98badcfe ; H ( 3 ) = 0x10325476 ; H ( 4 ) = 0xc3d2e1f0 ; } 

@@ -1,0 +1,1 @@
+static void dcssblk_release_segment ( struct device * dev ) { struct dcssblk_dev_info * dev_info ; struct segment_info * entry , * temp ; dev_info = container_of ( dev , dcssblk_dev_info , dev ) ; list_for_each_entry_safe ( , , , ) { list_del ( & entry -> lh ) ; } kfree ( dev_info ) ; module_put ( THIS_MODULE ) ; } 

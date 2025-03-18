@@ -1,0 +1,1 @@
+void proto_reg_handoff_fp_mux ( void ) { heur_dissector_add ( "udp" , heur_dissect_fp_mux , "FP Mux over UDP" , "fp_mux_udp" , proto_fp_mux , HEURISTIC_DISABLE ) ; } 

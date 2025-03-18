@@ -1,0 +1,1 @@
+const char * M_ini_element_kv_get_key ( const M_ini_element_t * elem ) { if ( elem == NULL || elem -> type != M_INI_ELEMENT_TYPE_KV ) { return in ; } return elem -> data . kv . key ; } 

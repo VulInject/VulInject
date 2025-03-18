@@ -1,0 +1,1 @@
+static inline bool has_subleafs ( u32 f ) { if ( is_amd ) { if ( f == 0x8000001d ) { return true ; } return false ; } switch ( f ) { case 0x4 : case 0xb : case 0xf : case 0x10 : case 0x14 : case 0x18 : case 0x1f : return true ; default : return false ; } } 

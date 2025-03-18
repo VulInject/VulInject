@@ -1,0 +1,1 @@
+static int pwm_imx1_enable ( struct pwm_chip * chip , struct pwm_device * pwm ) { struct pwm_imx1_chip * imx = to_pwm_imx1_chip ( chip ) ; u32 value ; int ret ; ret = pwm_imx1_clk_prepare_enable ( chip ) ; value = readl ( imx -> mmio_base + MX1_PWMC ) ; value |= MX1_PWMC_EN ; writel ( value , imx -> mmio_base + MX1_PWMC ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+int dh_imx_get_mac_from_fuse ( unsigned char * enetaddr ) { imx_get_mac_from_fuse ( 0 , enetaddr ) ; return 0 ; } 

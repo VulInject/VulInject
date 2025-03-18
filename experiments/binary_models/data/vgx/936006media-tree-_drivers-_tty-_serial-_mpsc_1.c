@@ -1,0 +1,1 @@
+( ( packed ) ) ; mpsc_shared_regs { phys_addr_t mpsc_routing_base_p ; phys_addr_t sdma_intr_base_p ; void __iomem * mpsc_routing_base ; void __iomem * sdma_intr_base ; u32 MPSC_MRR_m ; u32 MPSC_RCRR_m ; u32 MPSC_TCRR_m ; u32 SDMA_INTR_CAUSE_m ; int SDMA_INTR_MASK_m ; } 

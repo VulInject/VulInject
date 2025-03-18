@@ -1,0 +1,1 @@
+static int framemd5_write_header ( struct AVFormatContext * s ) { struct MD5Context * c = s -> priv_data ; c -> md5 = av_md5_alloc ( ) ; return ff_framehash_write_header ( s ) ; } 

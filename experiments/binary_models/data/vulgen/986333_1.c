@@ -1,0 +1,1 @@
+void duk_free_logging ( void * udata , void * ptr ) { alloc_hdr * hdr ; ( void ) udata ; if ( ! ptr ) { write_log ( "F NULL 0\n" ) ; return ; } hdr = ( alloc_hdr * ) ( void * ) ( ( unsigned char * ) ptr - sizeof ( alloc_hdr ) ) ; write_log ( "F %p %ld\n" , ptr , ( long ) hdr -> u . sz ) ; } 

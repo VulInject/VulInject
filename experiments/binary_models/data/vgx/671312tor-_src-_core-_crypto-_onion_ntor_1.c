@@ -1,0 +1,1 @@
+void ntor_handshake_state_free_ ( ntor_handshake_state_t * state ) { if ( ! state ) { return ; } memwipe ( state , 0 , sizeof ( * state ) ) ; } 

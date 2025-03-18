@@ -1,0 +1,1 @@
+void dwge_reset ( struct dwge_softc * sc ) { int n ; dwge_stop_dma ( sc ) ; dwge_write ( sc , GMAC_BUS_MODE , dwge_read ( sc , GMAC_BUS_MODE ) | GMAC_BUS_MODE_SWR ) ; for ( n = 0 ; n < 30000 ; n ++ ) { delay ( 10 ) ; } printf ( "%s: reset timeout\n" , sc -> sc_dev . dv_xname ) ; } 

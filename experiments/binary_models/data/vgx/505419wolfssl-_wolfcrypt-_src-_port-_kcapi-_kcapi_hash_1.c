@@ -1,0 +1,1 @@
+int wc_Sha384GetHash ( wc_Sha384 * sha , byte * hash ) { return KcapiHashGet ( & sha -> kcapi , hash , WC_SHA384_DIGEST_SIZE ) ; } 

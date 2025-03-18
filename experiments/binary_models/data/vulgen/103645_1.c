@@ -1,0 +1,1 @@
+static ssize_t field # # _store ( , , , ) { int ret gb_loopback * gb = dev_get_drvdata ( dev ) mutex_lock ( & gb -> mutex ) ret = sscanf ( buf , "%" # type , & gb -> field ) if ( ret != 1 ) { len = - EINVAL ; } else { } mutex_unlock ( & gb -> mutex ) } ; return len ; 

@@ -1,0 +1,1 @@
+static void empty_input ( void * * state ) { char * rsc ; char * ty = NULL ; guint ms = 0 ; assert_false ( parse_op_key ( "" , & rsc , & ty , & ms ) ) ; assert_null ( rsc ) ; assert_null ( ty ) ; assert_int_equal ( ms , 0 ) ; assert_false ( parse_op_key ( NULL , & rsc , & ty , & ms ) ) ; assert_null ( rsc ) ; assert_null ( ty ) ; assert_int_equal ( ms , 0 ) ; } 

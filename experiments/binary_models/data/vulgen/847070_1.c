@@ -1,0 +1,1 @@
+static int elem_parse_descr ( ses_plugin_t * sp , ses_node_t * np ) { char * desc ; size_t len ; nvlist_t * props = ses_node_props ( np ) ; int nverr ; if ( ( desc = ses_plugin_page_lookup ( sp , ses_node_snapshot ( np ) , SES2_DIAGPAGE_ELEMENT_DESC , np , & len ) ) == NULL ) { return ( 0 ) ; } return ( 0 ) ; } 

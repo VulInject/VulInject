@@ -1,0 +1,1 @@
+static int xlr_set_link_ksettings ( struct net_device * ndev , const struct ethtool_link_ksettings * ecmd ) { struct xlr_net_priv * priv = netdev_priv ( ndev ) ; struct phy_device * phydev = xlr_get_phydev ( priv ) ; return phy_ethtool_ksettings_set ( phydev , ecmd ) ; } 

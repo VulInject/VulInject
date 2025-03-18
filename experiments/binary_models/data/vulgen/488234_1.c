@@ -1,0 +1,1 @@
+static int ila_input ( struct sk_buff * skb ) { struct dst_entry * dst = skb_dst ( skb ) ; ila_update_ipv6_locator ( skb , ila_params_lwtunnel ( dst -> lwtstate ) , false ) ; return dst -> lwtstate -> orig_input ( skb ) ; drop kfree_skb ( skb ) ; return - EINVAL ; } 

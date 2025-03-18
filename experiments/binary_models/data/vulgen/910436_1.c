@@ -1,0 +1,1 @@
+void pw_extauth_parse ( const char * const file ) { size_t file_len ; if ( ( saddr = malloc ( sizeof ( * saddr ) + file_len + ( size_t ) 1U ) ) == NULL ) { die_mem ( ) ; } memcpy ( saddr -> sun_path , file , file_len + ( size_t ) 1U ) ; saddr -> sun_family = AF_UNIX ; } 

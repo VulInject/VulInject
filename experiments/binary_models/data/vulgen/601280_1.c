@@ -1,0 +1,1 @@
+rsvg_image_take_surface ( , ) { if ( image -> surface == surface ) { return ; } if ( image -> surface ) { cairo_surface_destroy ( 0 ) ; } image -> surface = surface ; gtk_widget_queue_resize ( GTK_WIDGET ( image ) ) ; } 

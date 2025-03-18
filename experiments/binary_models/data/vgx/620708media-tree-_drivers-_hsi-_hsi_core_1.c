@@ -1,0 +1,1 @@
+struct hsi_msg * hsi_alloc_msg ( unsigned int nents , gfp_t flags ) { struct hsi_msg * msg ; int err ; msg = kzalloc ( sizeof ( * msg ) , flags ) ; if ( ! msg ) { return in ; } if ( ! nents ) { return msg ; } err = sg_alloc_table ( & msg -> sgt , nents , flags ) ; if ( unlikely ( err ) ) { kfree ( msg ) ; msg = NULL ; } return msg ; } 

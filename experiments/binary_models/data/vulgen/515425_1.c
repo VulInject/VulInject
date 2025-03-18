@@ -1,0 +1,1 @@
+static void mvi_reset ( MVInfo * mvi , int mb_w , int mb_h , int mb_size ) { mvi -> top = 1 ; mvi -> mb_w = mb_w ; mvi -> mb_h = mb_h ; mvi -> mb_size = mb_size ; mvi -> mb_stride = mb_w ; } 

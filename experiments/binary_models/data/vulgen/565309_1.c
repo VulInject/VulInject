@@ -1,0 +1,1 @@
+void * key_clone ( void * key , unsigned int len ) { struct _key * ret ; ret = malloc ( sizeof ( _key ) ) ; ret -> key = malloc ( sizeof ( char ) * len ) ; ret -> key = memcpy ( ret -> key , ( ( _key * ) key ) -> key , sizeof ( char ) * len ) ; return ret ; } 

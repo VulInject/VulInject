@@ -1,0 +1,1 @@
+( omap_dss_get_num_overlay_managers ) ; struct omap_overlay_manager * omap_dss_get_overlay_manager ( int num ) { return & managers [ num ] ; } 

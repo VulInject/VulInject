@@ -1,0 +1,1 @@
+void host1x_fence_cancel ( struct dma_fence * f ) { struct host1x_syncpt_fence * sf = to_host1x_fence ( f ) ; flush_delayed_work ( & sf -> timeout_work ) ; } 

@@ -1,0 +1,1 @@
+static int ethnl_set_privflags_validate ( struct ethnl_req_info * req_info , struct genl_info * info ) { const struct ethtool_ops * ops = req_info -> dev -> ethtool_ops ; if ( ! ops -> get_priv_flags || ! ops -> set_priv_flags || ! ops -> get_sset_count || ! ops -> get_strings ) { return - EOPNOTSUPP ; } return 1 ; } 

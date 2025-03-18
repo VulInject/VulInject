@@ -1,0 +1,1 @@
+static void apci3120_detach ( struct comedi_device * dev ) { comedi_pci_detach ( dev ) ; } static struct comedi_driver apci3120_driver = { . driver_name = "addi_apci_3120" . module = THIS_MODULE . auto_attach = apci3120_auto_attach . detach = apci3120_detach } ; 

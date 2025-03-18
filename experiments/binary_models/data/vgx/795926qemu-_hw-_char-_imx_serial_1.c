@@ -1,0 +1,1 @@
+static void imx_serial_reset_at_boot ( DeviceState * dev ) { IMXSerialState * s = IMX_SERIAL ( dev ) ; imx_serial_reset ( s ) ; s -> ucr1 = UCR1_UARTEN ; } 

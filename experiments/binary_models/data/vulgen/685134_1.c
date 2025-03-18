@@ -1,0 +1,1 @@
+void init_migemo ( ) { migemo_active = migemo_running = use_migemo ; if ( migemor != NULL ) { fclose ( migemor ) ; } if ( migemow != NULL ) { fclose ( migemow ) ; } if ( migemo_pid ) { kill ( migemo_pid , SIGKILL ) ; } migemo_pid = 0 ; } 

@@ -1,0 +1,1 @@
+flatpak_write_update_checksum ( , , , , , , ) { if ( out ) { if ( ! g_output_stream_write_all ( out , data , len , out_bytes_written , cancellable , error ) ) { return FALSE ; } } if ( out_bytes_written ) { * out_bytes_written = len ; } return TRUE ; } 

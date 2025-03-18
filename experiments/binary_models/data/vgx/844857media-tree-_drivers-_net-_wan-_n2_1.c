@@ -1,0 +1,1 @@
+static void __exit n2_cleanup ( void ) { card_t * card = first_card ; while ( card ) { card_t * ptr = card ; card = card -> next_card ; } } 

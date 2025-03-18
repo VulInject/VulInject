@@ -1,0 +1,1 @@
+static void prepare_mgmt_cmd ( u8 * mgmt_cmd , u64 * header , u8 * msg , u16 msg_len ) { memset ( mgmt_cmd , 0 , MGMT_MSG_RSVD_FOR_DEV ) ; mgmt_cmd += MGMT_MSG_RSVD_FOR_DEV ; memcpy ( mgmt_cmd , header , sizeof ( * header ) ) ; mgmt_cmd += sizeof ( * header ) ; } 

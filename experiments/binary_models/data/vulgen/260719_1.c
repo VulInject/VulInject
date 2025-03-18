@@ -1,0 +1,1 @@
+const char * DetectEngineBufferTypeGetDescriptionById ( const DetectEngineCtx * de_ctx , const int id ) { if ( ! exists ) { return NULL ; } return exists -> description ; } 

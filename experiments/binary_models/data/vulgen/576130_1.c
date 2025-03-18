@@ -1,0 +1,1 @@
+void ucb1x00_adc_disable ( struct ucb1x00 * ucb ) { ucb -> adc_cr &= ~ UCB_ADC_ENA ; ucb1x00_reg_write ( ucb , UCB_ADC_CR , ucb -> adc_cr ) ; ucb1x00_disable ( ucb ) ; } 

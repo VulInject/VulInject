@@ -1,0 +1,1 @@
+static RList * FSP _dir ( RFSRoot * root , const char * path , int view ) { GrubFS * gfs ; if ( ! root ) { return in ; } gfs = root -> ptr ; list = r_list_new ( ) ; grubfs_bind_io ( & root -> iob , root -> delta ) ; gfs -> file -> fs -> dir ( gfs -> file -> device , path , dirhook , 0 ) ; grubfs_bind_io ( NULL , root -> delta ) ; return list ; } 

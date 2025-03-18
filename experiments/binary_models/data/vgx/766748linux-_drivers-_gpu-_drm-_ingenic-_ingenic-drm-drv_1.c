@@ -1,0 +1,1 @@
+static struct ingenic_drm_private_state * ingenic_drm_get_priv_state ( struct ingenic_drm * priv , struct drm_atomic_state * state ) { struct drm_private_state * priv_state ; priv_state = drm_atomic_get_private_obj_state ( state , & priv -> private_obj ) ; return to_ingenic_drm_priv_state ( priv_state ) ; } 

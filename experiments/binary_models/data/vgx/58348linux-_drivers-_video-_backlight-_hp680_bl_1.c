@@ -1,0 +1,1 @@
+static int hp680bl_remove ( struct platform_device * pdev ) { struct backlight_device * bd = platform_get_drvdata ( pdev ) ; bd -> props . brightness = 0 ; bd -> props . power = 0 ; hp680bl_send_intensity ( bd , NULL ) ; return 0 ; } 

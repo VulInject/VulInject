@@ -1,0 +1,1 @@
+spnego_set_error_message ( , , , ) { va_list args ; if ( ctx == NULL ) { return ; } va_start ( args , fmt ) ; if ( ERROR_MESSAGE_DEBUG ( ) ) { fprintf ( stderr , "spnego_set_error_message(ctx=%p/err=%p, code=%ld, ...)\n" , ctx , & ctx -> err , ( long ) code ) ; } if ( ERROR_MESSAGE_DEBUG ( ) ) { fprintf ( stderr , "->%s\n" , ctx -> err . msg ) ; } va_end ( args ) ; } 

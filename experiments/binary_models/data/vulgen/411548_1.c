@@ -1,0 +1,1 @@
+int is_unknown_ptr ( struct range_list * rl ) { struct data_range * drange ; int cnt = 0 ; FOR_EACH_PTR ( , ) { if ( ++ cnt >= 3 ) { return 0 ; } if ( sval_cmp ( drange -> min , valid_ptr_min_sval ) == 0 && sval_cmp ( drange -> max , valid_ptr_max_sval ) == 0 ) { return 1 ; } } END_FOR_EACH_PTR ( drange ) ; return 0 ; } 

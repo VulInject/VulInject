@@ -1,0 +1,1 @@
+static void randstring ( unsigned char * target , size_t sz ) { int p = 0 ; int minval , maxval ; switch ( rand ( ) % 3 ) { case 0 : minval = 'a' ; maxval = 'z' ; break ; case 1 : minval = '0' ; maxval = '9' ; break ; case 2 : minval = 'A' ; maxval = 'Z' ; break ; default : assert ( NULL ) ; } while ( p < sz ) { target [ p ++ ] = minval + rand ( ) % ( maxval - minval + 1 ) ; } } 

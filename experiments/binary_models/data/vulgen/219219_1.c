@@ -1,0 +1,1 @@
+static int record_saved_cmdline ( void ) { unsigned int size ; char * path ; struct stat st ; int ret , err = 0 ; path = get_tracing_file ( "saved_cmdlines" ) ; if ( ! path ) { pr_debug ( "can't get tracing/saved_cmdline" ) ; return - ENOMEM ; } ret = stat ( path , & st ) ; err = record_file ( path , 8 ) ; out put_tracing_file ( path ) ; return err ; } 

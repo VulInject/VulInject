@@ -1,0 +1,1 @@
+int mpool_close ( mp ) MPOOL * mp ; { BKT * bp ; while ( ( bp = mp -> lqh . cqh_first ) != ( void * ) & mp -> lqh ) { CIRCLEQ_REMOVE ( & mp -> lqh , mp -> lqh . cqh_first , q ) ; } free ( mp ) ; return ( RET_SUCCESS ) ; } 

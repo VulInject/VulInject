@@ -1,0 +1,1 @@
+int core_get_global_path ( char * buf , int bufsize ) { return ( syscall ( SYS_corectl , CC_GET_GLOBAL_PATH , buf , bufsize ) ) ; } 

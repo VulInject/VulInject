@@ -1,0 +1,1 @@
+int block_test_main ( int argc , const char * argv [ ] ) { RUN_TEST ( test_block_read_write , NULL ) ; return 0 ; } 

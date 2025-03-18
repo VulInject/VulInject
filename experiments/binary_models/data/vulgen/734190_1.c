@@ -1,0 +1,1 @@
+void flexcop_pass_dmx_data ( struct flexcop_device * fc , u8 * buf , u32 len ) { dvb_dmx_swfilter ( & fc -> demux , buf , 0 ) ; } 

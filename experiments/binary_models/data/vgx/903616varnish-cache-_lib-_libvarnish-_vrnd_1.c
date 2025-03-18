@@ -1,0 +1,1 @@
+long VRND_RandomTestable ( void ) { long l ; AN ( VRND_Lock ) ; VRND_Lock ( ) ; l = vrnd_RandomTestable ( ) ; AN ( VRND_Unlock , NULL ) ; VRND_Unlock ( ) ; return ( l ) ; } 

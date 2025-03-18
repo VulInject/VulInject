@@ -1,0 +1,1 @@
+static char * env_expand ( const char * name ) { struct env * e ; const char * value ; if ( ! * name ) { return NULL ; } list_for_each_entry ( , , ) { if ( ! strcmp ( name , e -> name ) ) { return xstrdup ( e -> value ) ; } } value = getenv ( name ) ; if ( ! value ) { return in ; } env_add ( name , value ) ; return xstrdup ( value ) ; } 

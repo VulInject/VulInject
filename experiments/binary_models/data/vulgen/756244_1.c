@@ -1,0 +1,1 @@
+static void t7xx_fsm_broadcast_ready_state ( struct t7xx_fsm_ctl * ctl ) { if ( ctl -> md_state != MD_STATE_WAITING_FOR_HS2 ) { return ; } ctl -> md_state = MD_STATE_READY ; fsm_state_notify ( ctl -> md , MD_STATE_READY ) ; } 

@@ -1,0 +1,1 @@
+uint32_t cb710_sg_dwiter_read_next_block ( struct sg_mapping_iter * miter ) { uint32_t * ptr = NULL ; return sg_dwiter_read_buffer ( miter ) ; } 

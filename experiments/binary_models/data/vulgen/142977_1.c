@@ -1,0 +1,1 @@
+dwarf2_frame_default_init_reg ( , , ) { if ( regnum == PC_REGNUM ) { reg -> how = DWARF2_FRAME_REG_RA ; } } 

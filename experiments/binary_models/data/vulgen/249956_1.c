@@ -1,0 +1,1 @@
+void reset_rtd_table ( rtd_stat_table * table ) { guint i = 0 ; for ( i = 0 ; i < table -> num_rtds ; i ++ ) { } } 

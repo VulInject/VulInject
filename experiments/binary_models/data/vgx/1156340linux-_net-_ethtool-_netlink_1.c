@@ -1,0 +1,1 @@
+void ethtool_notify ( struct net_device * dev , unsigned int cmd , const void * data ) { ASSERT_RTNL ( ) ; if ( likely ( cmd < ARRAY_SIZE ( ethnl_notify_handlers ) && ethnl_notify_handlers [ cmd ] ) ) { ethnl_notify_handlers [ cmd ] ( dev , cmd , data ) ; } else { WARN_ONCE ( 1 , "notification %u not implemented (dev=%s)\n" , cmd , netdev_name ( dev ) ) ; } } 

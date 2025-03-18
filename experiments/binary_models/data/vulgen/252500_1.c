@@ -1,0 +1,1 @@
+static void virtnet_remove ( struct virtio_device * vdev ) { struct virtnet_info * vi = vdev -> priv ; virtnet_cpu_notif_remove ( vi ) ; flush_work ( & vi -> config_work ) ; unregister_netdev ( vi -> dev ) ; remove_vq_common ( vi ) ; free_netdev ( vi -> dev ) ; } 

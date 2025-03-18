@@ -1,0 +1,1 @@
+apr_status_t md_http_GET_create ( md_http_request_t * * preq , md_http_t * http , const char * url , struct apr_table_t * headers ) { md_http_request_t * req ; apr_status_t rv ; * preq = ( APR_SUCCESS == rv ) ?req : NULL ; return rv ; } 

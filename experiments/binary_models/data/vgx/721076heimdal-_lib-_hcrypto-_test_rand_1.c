@@ -1,1 +1,1 @@
-FUN1 ( ) { FUN2 ( VAR1 , sizeof ( VAR1 ) / sizeof ( VAR1 [ 0 ] ) , "" ) ; FUN3 ( VAR2 ) ; }
+usage ( ) { arg_printusage ( args , sizeof ( args ) / sizeof ( args [ 0 ] ) , "" ) ; exit ( ret ) ; } 

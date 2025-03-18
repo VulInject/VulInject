@@ -1,0 +1,1 @@
+static void clone_pool_havers_stree ( struct stree * * stree ) { struct sm_state * sm , * tmp ; struct state_list * slist = NULL ; FOR_EACH_SM ( , ) { if ( sm -> pool ) { tmp = clone_sm ( sm ) ; add_ptr_list ( & slist , tmp ) ; } } END_FOR_EACH_SM ( sm ) ; FOR_EACH_PTR ( , ) { avl_insert ( stree , sm ) ; } END_FOR_EACH_PTR ( sm , NULL ) ; free_slist ( & slist ) ; } 

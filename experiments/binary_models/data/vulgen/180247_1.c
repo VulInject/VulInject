@@ -1,0 +1,1 @@
+void svg_pause_video ( GF_Node * n , Bool pause ) { SVG_video_stack * st = ( SVG_video_stack * ) gf_node_get_private ( n ) ; if ( pause ) { gf_mo_pause ( st -> txh . stream ) ; } else { gf_mo_resume ( st -> txh . stream ) ; } } 

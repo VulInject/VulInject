@@ -1,0 +1,1 @@
+static int ams_i2c_remove ( struct i2c_client * client ) { if ( ams_info . has_device ) { ams_sensor_detach ( ) ; ams_i2c_set_irq ( AMS_IRQ_ALL , 0 ) ; printk ( KERN_INFO "ams: Unloading\n" ) ; ams_info . has_device = 0 ; } return 0 ; } 

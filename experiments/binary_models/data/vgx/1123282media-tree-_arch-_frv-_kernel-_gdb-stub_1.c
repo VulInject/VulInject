@@ -1,0 +1,1 @@
+static void gdbstub_check_breakpoint ( void ) { cfs_time_t addr = __debug_frame -> pc - 4 ; int bkpt ; for ( bkpt = 255 ; bkpt >= 0 ; bkpt -- ) { if ( gdbstub_bkpts [ bkpt ] . addr == addr ) { break ; } } if ( bkpt >= 0 ) { __debug_frame -> pc = addr ; } } 

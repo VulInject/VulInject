@@ -1,0 +1,1 @@
+static av_cold void init_pow2table ( void ) { int i ; static const float exp2_tab [ 2 ] { 1 M_SQRT2 } ; ; float exp2_val = powf ( 2 , - 63 ) ; float root_val = powf ( 2 , - 32 ) ; for ( i = - 63 ; i < 64 ; i ++ ) { pow2tab [ 63 + i ] = exp2_val ; rootpow2tab [ 63 + i ] = root_val * exp2_tab [ i & 1 ] ; exp2_val *= 2 ; } } 

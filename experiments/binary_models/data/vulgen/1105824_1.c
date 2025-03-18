@@ -1,0 +1,1 @@
+static void set_graphics_start ( struct fb_info * info , int xoffset , int yoffset ) { struct pxa168fb_info * fbi = info -> par ; struct fb_var_screeninfo * var = & info -> var ; int pixel_offset ; unsigned long addr ; pixel_offset = ( yoffset * var -> xres_virtual ) + xoffset ; writel ( addr , fbi -> reg_base + LCD_CFG_GRA_START_ADDR0 ) ; } 

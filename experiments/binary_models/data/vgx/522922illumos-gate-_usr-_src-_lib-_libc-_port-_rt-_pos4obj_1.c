@@ -1,0 +1,1 @@
+static void __pos4obj_clean ( char * path ) { char * p ; int olderrno ; olderrno = errno ; if ( ( p = strrchr ( path , '/' ) ) == NULL ) { return ; } * p = '\0' ; ( void ) rmdir ( path ) ; if ( ( p = strrchr ( path , '/' ) ) == NULL ) { return ; } * p = '\0' ; ( void ) rmdir ( path ) ; errno = olderrno ; } 

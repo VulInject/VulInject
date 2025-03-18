@@ -1,0 +1,1 @@
+static int platform_pci_resume ( struct device * dev ) { int err ; err = xen_set_callback_via ( callback_via ) ; if ( err ) { dev_err ( dev , "platform_pci_resume failure!\n" ) ; return err ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static void test_secret_direct ( void ) { Object * sec = object_new_with_props ( TYPE_QCRYPTO_SECRET , object_get_objects_root ( ) , "sec0" , & error_abort , "data" , "123456" , NULL ) ; char * pw = qcrypto_secret_lookup_as_utf8 ( "sec0" , & error_abort ) ; g_assert_cmpstr ( pw , == , "123456" ) ; object_unparent ( sec ) ; } 

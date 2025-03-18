@@ -1,0 +1,1 @@
+extern char * strrchr ( ) static char * progname ; static char * deftext ; static int set_deftext ( ) { if ( deftext ) { rl_insert_text ( deftext , NULL ) ; deftext = ( char * ) NULL ; rl_startup_hook = ( rl_hook_func_t * ) NULL ; } return 0 ; } 

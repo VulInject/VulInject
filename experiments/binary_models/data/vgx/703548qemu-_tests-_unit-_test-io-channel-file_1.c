@@ -1,0 +1,1 @@
+static void test_io_channel_fd ( void ) { QIOChannel * ioc ; int fd = - 1 ; fd = open ( TEST_FILE , O_CREAT | O_TRUNC | O_WRONLY , 0600 ) ; g_assert_cmpint ( fd , > , - 1 ) ; ioc = qio_channel_new_fd ( fd , & error_abort ) ; g_assert_cmpstr ( object_get_typename ( OBJECT ( ioc ) ) , == , TYPE_QIO_CHANNEL_FILE ) ; unlink ( TEST_FILE , NULL ) ; object_unref ( OBJECT ( ioc ) ) ; } 

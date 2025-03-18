@@ -1,0 +1,1 @@
+static int qemuDomainAttachExtensionDevice ( qemuMonitor * mon , virDomainDeviceInfo * info ) { if ( info -> addr . pci . extFlags & VIR_PCI_ADDRESS_EXTENSION_ZPCI ) { g_autoptr ( ) devprops = NULL ; if ( ! ( devprops = qemuBuildZPCIDevProps ( info ) ) ) { return - 1 ; } if ( qemuMonitorAddDeviceProps ( mon , & devprops ) < 0 ) { return - 1 ; } } return 0 ; } 

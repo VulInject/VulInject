@@ -1,0 +1,1 @@
+void free_counter ( struct counter * counter ) { XFREE ( MTYPE_PCEP , counter ) ; } 

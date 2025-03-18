@@ -1,0 +1,1 @@
+static void hfi1_vnic_deinit ( struct hfi1_vnic_vport_info * vinfo ) { struct hfi1_devdata * dd = vinfo -> dd ; mutex_lock ( & hfi1_mutex ) ; if ( -- dd -> vnic_num_vports == 0 ) { hfi1_deinit_vnic_rsm ( dd , NULL ) ; hfi1_vnic_txreq_deinit ( dd ) ; } mutex_unlock ( & hfi1_mutex ) ; hfi1_netdev_rx_destroy ( dd ) ; } 

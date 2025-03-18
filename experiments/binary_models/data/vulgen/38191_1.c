@@ -1,0 +1,1 @@
+extern int trace ; _SUBIO { struct _SUBIO * self ; struct _SUBIO * prev ; struct _SUBIO * next ; short read_chan ; short write_chan ; FILE * read_fp ; FILE * write_fp ; struct IOSB read_iosb ; struct IOSB write_iosb ; int pid ; int return_status ; unsigned char event_flag_byte ; } SUBIO 

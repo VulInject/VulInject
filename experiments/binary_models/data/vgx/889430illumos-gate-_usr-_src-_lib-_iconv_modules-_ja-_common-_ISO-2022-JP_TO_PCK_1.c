@@ -1,0 +1,1 @@
+static unsigned short lookuptbl ( unsigned short dest ) { unsigned short tmp ; int i ; int sz = ( sizeof ( sjtoibmext ) / sizeof ( sjtoibmext [ 0 ] ) ) ; for ( i = 0 ; i < sz ; i ++ ) { tmp = ( sjtoibmext [ i ] & 0x7f7f ) ; } return ( PGETA ) ; } 

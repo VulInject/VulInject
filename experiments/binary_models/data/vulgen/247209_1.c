@@ -1,0 +1,1 @@
+void merror ( queue_t * wq , mblk_t * mp , int error ) { * mp -> b_rptr = ( uchar_t ) error ; qreply ( wq , mp ) ; } 

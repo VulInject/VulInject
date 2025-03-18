@@ -1,0 +1,1 @@
+int has_non_ascii ( const char * s ) { int ch ; while ( ( ch = * s ++ ) != '\0' ) { if ( non_ascii ( ch ) ) { return 1 ; } } return 0 ; } 

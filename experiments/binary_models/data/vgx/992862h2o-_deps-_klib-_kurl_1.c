@@ -1,0 +1,1 @@
+int kurl_error ( const kurl_t * ku ) { return ku -> err ; } sha1nfo { { uint8_t b [ BLOCK_LENGTH ] ; uint32_t w [ BLOCK_LENGTH / 4 ] ; } , buf uint8_t bufOffset ; { uint8_t b [ HASH_LENGTH ] ; uint32_t w [ HASH_LENGTH / 4 ] ; } , state uint32_t byteCount ; uint8_t keyBuffer [ BLOCK_LENGTH ] ; uint8_t innerHash [ HASH_LENGTH ] ; } sha1nfo 

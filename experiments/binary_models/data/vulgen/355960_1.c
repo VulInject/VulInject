@@ -1,0 +1,1 @@
+static void _node_info_list_del ( void * object ) { sview_node_info_t * sview_node_info = ( sview_node_info_t * ) object ; if ( sview_node_info ) { _node_info_free ( sview_node_info ) ; } } 

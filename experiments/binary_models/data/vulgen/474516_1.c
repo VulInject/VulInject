@@ -1,0 +1,1 @@
+static int audiots_init_state ( audiots_state_t * state , dev_info_t * dip ) { state -> ts_ac97 = ac97_alloc ( dip , audiots_get_ac97 , audiots_set_ac97 , state ) ; state -> ts_dip = dip ; for ( int i = 0 ; i < TS_NUM_PORTS ; i ++ ) { if ( audiots_alloc_port ( state , i ) != DDI_SUCCESS ) { return ( DDI_FAILURE ) ; } } return ( DDI_SUCCESS ) ; } 

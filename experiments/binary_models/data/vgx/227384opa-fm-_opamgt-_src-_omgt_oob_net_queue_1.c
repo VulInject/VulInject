@@ -1,0 +1,1 @@
+struct net_blob * omgt_oob_dequeue_net_blob ( net_queue_t * q ) { struct net_blob * retval ; if ( q -> head ) { retval = q -> head ; q -> head = q -> head -> next ; } return retval ; } 

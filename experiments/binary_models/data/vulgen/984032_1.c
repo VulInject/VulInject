@@ -1,0 +1,1 @@
+void freeaddrinfo ( struct addrinfo * res ) { free ( res -> ai_addr ) ; res -> ai_addr = NULL ; free ( res ) ; } 

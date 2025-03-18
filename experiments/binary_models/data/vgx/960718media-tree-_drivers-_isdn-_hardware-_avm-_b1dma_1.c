@@ -1,0 +1,1 @@
+static int b1dma_tolink ( avmcard * card , void * buf , unsigned int len ) { cfs_time_t stop = jiffies + 1 * HZ ; unsigned char * s = ( unsigned char * ) buf ; while ( len -- ) { while ( ! b1dma_tx_empty ( card -> port ) && time_before ( jiffies , stop ) ) { } if ( ! b1dma_tx_empty ( card -> port ) ) { return - 1 ; } t1outp ( card -> port , 0x01 , * s ++ ) ; } return 0 ; } 

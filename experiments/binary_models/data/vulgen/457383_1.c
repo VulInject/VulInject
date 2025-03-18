@@ -1,0 +1,1 @@
+errcode_t io_channel_write_byte ( io_channel channel , unsigned long offset , int count , const void * data ) { if ( channel -> manager -> write_byte ) { return channel -> manager -> write_byte ( channel , offset , count , data ) ; } return EXT2_ET_UNIMPLEMENTED ; } 

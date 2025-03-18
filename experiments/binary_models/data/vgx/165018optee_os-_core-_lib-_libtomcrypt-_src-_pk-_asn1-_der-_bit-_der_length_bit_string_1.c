@@ -1,0 +1,1 @@
+int der_length_bit_string ( unsigned long nbits , unsigned long * outlen ) { unsigned long nbytes , x ; int err ; LTC_ARGCHK ( outlen != NULL ) ; nbytes = ( nbits >> 3 ) + ( ( nbits & 7 ) ?1 : 0 ) + 1 ; * outlen = 1 + x + nbytes ; return CRYPT_OK ; } 

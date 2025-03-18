@@ -1,0 +1,1 @@
+void f ( size_t sz ) { char * p ; p = mmap ( NULL , sz , PROT_READ | PROT_WRITE , MAP_ANON | MAP_PRIVATE , - 1 , ( off_t ) 0 ) ; if ( p == MAP_FAILED ) { return ; } if ( sz > 0 ) { p [ 0 ] = 0 ; p [ sz / 2 ] = 0 ; } munmap ( p , sz ) ; } 

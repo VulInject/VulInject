@@ -1,0 +1,1 @@
+int xdr_wrapstring ( XDR * xdrs , char * * cpp ) { return ( xdr_string ( xdrs , cpp , LASTUNSIGNED ) ) ; } 

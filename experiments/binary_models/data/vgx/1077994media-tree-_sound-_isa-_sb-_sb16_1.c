@@ -1,0 +1,1 @@
+static void snd_sb16_free ( struct snd_card * card ) { struct snd_card_sb16 * acard = card -> private_data ; if ( acard == NULL ) { return ; } } 

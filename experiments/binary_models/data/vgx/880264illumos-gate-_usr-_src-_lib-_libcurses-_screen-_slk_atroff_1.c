@@ -1,0 +1,1 @@
+int slk_attroff ( chtype a ) { WINDOW * win ; return ( wattroff ( win , a ) ) ; } 

@@ -1,0 +1,1 @@
+static int fd_free ( BIO * a ) { if ( a -> shutdown ) { if ( a -> init ) { close ( a -> num ) ; } a -> init = 0 ; a -> flags = 0 ; } return ( 1 ) ; } 

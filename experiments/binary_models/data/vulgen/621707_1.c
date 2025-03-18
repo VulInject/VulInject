@@ -1,0 +1,1 @@
+int foo ( double a , int b , int c , double * d , int h ) { int f , g ; double e ; l f = ( int ) a ; a -= ( double ) f ; if ( b == 1 ) { g = c ; f += g ; c -= g ; } volatile return f & 7 ; } 

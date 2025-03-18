@@ -1,0 +1,1 @@
+B { int c ; int d ; } 

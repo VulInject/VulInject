@@ -1,0 +1,1 @@
+ssize_t netinfo_addr_encoded_len ( const netinfo_addr_t * obj ) { ssize_t result = 0 ; result += 1 ; result += 1 ; switch ( obj -> addr_type ) { case NETINFO_ADDR_TYPE_IPV4 : result += 4 ; break ; case NETINFO_ADDR_TYPE_IPV6 : result += 16 ; break ; default : break ; } return result ; } 

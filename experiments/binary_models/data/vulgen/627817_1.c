@@ -1,0 +1,1 @@
+void devm_led_classdev_flash_unregister ( struct device * dev , struct led_classdev_flash * fled_cdev ) { WARN_ON ( 0 ) ; } 

@@ -1,0 +1,1 @@
+void octeon_delete_response_list ( struct octeon_device * oct ) { cancel_delayed_work_sync ( & oct -> dma_comp_wq . wk . work ) ; } 

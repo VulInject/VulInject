@@ -1,0 +1,1 @@
+void acpigen_write_name_qword ( struct acpi_ctx * ctx , const char * name , u64 val ) { acpigen_write_qword ( ctx , val ) ; } 

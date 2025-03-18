@@ -1,0 +1,1 @@
+static void destroy_sort_entry ( struct tracing_map_sort_entry * entry ) { if ( entry -> elt_copied ) { tracing_map_elt_free ( entry -> elt ) ; } kfree ( entry ) ; } 

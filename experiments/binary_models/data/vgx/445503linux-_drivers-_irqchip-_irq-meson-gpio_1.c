@@ -1,0 +1,1 @@
+static void meson_gpio_irq_update_bits ( struct meson_gpio_irq_controller * ctl , unsigned int reg , u32 mask , u32 val ) { cfs_time_t flags ; u32 tmp ; spin_lock_irqsave ( & ctl -> lock , flags ) ; tmp = readl_relaxed ( ctl -> base + reg ) ; tmp &= ~ mask ; tmp |= val ; writel_relaxed ( tmp , ctl -> base + reg ) ; spin_unlock_irqrestore ( & ctl -> lock , flags ) ; } 

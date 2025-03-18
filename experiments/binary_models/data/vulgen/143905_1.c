@@ -1,0 +1,1 @@
+static void * create_door_thr ( void __attribute__ ( ( unused ) ) * arg ) ( ( void ) pthread_setcancelstate ( PTHREAD_CANCEL_DISABLE , NULL ) , ( void ) door_return ( NULL , 0 , 0 ) , ( void ) pthread_mutex_lock ( & door_server_cnt_lock ) , door_server_cnt -- , ( void ) pthread_mutex_unlock ( & door_server_cnt_lock ) , ( NULL ) ) ; 

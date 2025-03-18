@@ -1,0 +1,1 @@
+void print_ncpstate ( unit , strptr ) int unit ; FILE * strptr ; { struct protent * protp ; int i ; ( void ) flprintf ( strptr , "In %s phase\n" , phase_name ( phase ) ) ; for ( i = 0 ; ( protp = protocols [ i ] ) != NULL ; ++ i ) { if ( protp -> print_stat != NULL ) { * protp -> print_stat ( unit , strptr ) ; } } sys_print_state ( strptr , NULL ) ; } 

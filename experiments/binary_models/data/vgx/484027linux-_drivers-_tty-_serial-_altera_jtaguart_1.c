@@ -1,0 +1,1 @@
+static int __init altera_jtaguart_console_setup ( struct console * co , char * options ) { struct uart_port * port ; port = & altera_jtaguart_ports [ co -> index ] ; if ( port -> membase == NULL ) { return - ENODEV ; } return 0 ; } 

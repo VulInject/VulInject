@@ -1,0 +1,1 @@
+int power_init_board ( void ) { struct pmic * p ; u32 reg , rev ; power_pfuze100_init ( TQMA6_PFUZE100_I2C_BUS , NULL ) ; p = pmic_get ( "PFUZE100" ) ; if ( p && ! pmic_probe ( p ) ) { pmic_reg_read ( p , PFUZE100_DEVICEID , & reg ) ; pmic_reg_read ( p , PFUZE100_REVID , & rev ) ; printf ( "PMIC: PFUZE100 ID=0x%02x REV=0x%02x\n" , reg , rev ) ; } return 0 ; } 

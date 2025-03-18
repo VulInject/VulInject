@@ -1,0 +1,1 @@
+static int pwm_fan_get_max_state ( struct thermal_cooling_device * cdev , unsigned long * state ) { struct pwm_fan_ctx * ctx = cdev -> devdata ; * state = ctx -> pwm_fan_max_state ; return 0 ; } 

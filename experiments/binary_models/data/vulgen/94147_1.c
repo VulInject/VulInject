@@ -1,0 +1,1 @@
+cppi41_channel { struct dma_chan chan ; struct dma_async_tx_descriptor txd ; struct cppi41_dd * cdd ; struct cppi41_desc * desc ; dma_addr_t desc_phys ; void __iomem * gcr_reg ; int is_tx ; u32 residue ; unsigned int q_num ; unsigned int q_comp_num ; unsigned int port_num ; unsigned td_retry ; unsigned td_queued 1 ; unsigned td_seen 1 ; unsigned td_desc_seen 1 ; } 

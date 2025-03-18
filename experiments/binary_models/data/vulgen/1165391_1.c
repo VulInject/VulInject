@@ -1,0 +1,1 @@
+static void set_drive_strength ( void __iomem * reg , unsigned pin , u32 strength ) { unsigned tmp = readl_relaxed ( reg ) ; unsigned shift = two_bit_pin_value_shift_amount ( pin ) ; tmp |= strength << shift ; writel_relaxed ( tmp , reg ) ; } 

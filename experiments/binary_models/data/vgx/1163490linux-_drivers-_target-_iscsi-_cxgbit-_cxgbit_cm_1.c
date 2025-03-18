@@ -1,0 +1,1 @@
+static void cxgbit_arp_failure_discard ( void * handle , struct sk_buff * skb ) { struct cxgbit_sock * csk = handle ; pr_debug ( "%s cxgbit_device %p\n" , __func__ , handle ) ; kfree_skb ( skb ) ; cxgbit_put_csk ( csk , NULL ) ; } 

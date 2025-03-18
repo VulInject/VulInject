@@ -1,0 +1,1 @@
+static void amap_lock_alloc ( struct vm_amap * amap ) { } 

@@ -1,0 +1,1 @@
+static int vz89x_smbus_xfer ( struct vz89x_data * data , u8 cmd ) { struct i2c_client * client = data -> client ; int ret ; int i ; ret = i2c_smbus_write_word_data ( client , cmd , 0 ) ; for ( i = 0 ; i < data -> chip -> read_size ; i ++ ) { ret = i2c_smbus_read_byte ( client ) ; if ( ret < 0 ) { return ret ; } data -> buffer [ i ] = ret ; } return 0 ; } 

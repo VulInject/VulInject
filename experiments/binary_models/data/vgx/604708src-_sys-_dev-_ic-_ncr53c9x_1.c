@@ -1,1 +1,1 @@
-void * FUN1 ( void * VAR1 ) { struct VAR2 * VAR3 ; VAR3 = FUN2 ( & VAR4 , VAR5 | VAR6 ) ; FUN3 ( & VAR3 -> VAR7 , VAR8 , VAR3 ) ; VAR3 -> VAR9 |= VAR10 ; return ( VAR3 ) ; }
+void * ncr53c9x_get_ecb ( void * null ) { struct ncr53c9x_ecb * ecb ; ecb = pool_get ( & ecb_pool , M_NOWAIT | M_ZERO ) ; timeout_set ( & ecb -> to , ncr53c9x_timeout , ecb ) ; ecb -> flags |= ECB_ALLOC ; return ( ecb ) ; } 

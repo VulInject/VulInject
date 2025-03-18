@@ -1,0 +1,1 @@
+static void dissect_optommp_write_quadlet_request ( proto_item * * ti , proto_tree * tree , tvbuff_t * tvb , guint * poffset ) { dissect_optommp_source_ID ( ti , tree , tvb , poffset ) ; dissect_optommp_quadlet_data ( ti , tree , tvb , poffset ) ; } 

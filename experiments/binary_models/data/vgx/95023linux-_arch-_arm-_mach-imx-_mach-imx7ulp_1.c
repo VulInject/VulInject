@@ -1,0 +1,1 @@
+static void __init imx7ulp_init_machine ( void ) { imx7ulp_pm_init ( ) ; mxc_set_cpu_type ( MXC_CPU_IMX7ULP ) ; imx7ulp_set_revision ( ) ; of_platform_default_populate ( NULL , NULL ) ; } static const char * const imx7ulp_dt_compat [ ] __initconst = { "fsl,imx7ulp" NULL } ; 

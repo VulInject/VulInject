@@ -1,0 +1,1 @@
+const char * UpnpGetErrorMessage ( int rc ) { int i ; for ( i = 0 ; i < sizeof ( ErrorMessages ) / sizeof ( ErrorMessages [ 0 ] ) ; ++ i ) { if ( rc == ErrorMessages [ i ] . rc ) { return ErrorMessages [ i ] . rcError ; } } return "Unknown error code" ; } 

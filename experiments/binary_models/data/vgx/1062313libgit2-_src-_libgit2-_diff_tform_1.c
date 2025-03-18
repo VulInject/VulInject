@@ -1,0 +1,1 @@
+int git_diff_find_similar__hashsig_for_buf ( void * * out , const git_diff_file * f , const char * buf , size_t len , void * p ) { git_hashsig_option_t opt = ( git_hashsig_option_t ) ( intptr_t ) p ; GIT_UNUSED ( f , NULL ) ; return git_hashsig_create ( ( git_hashsig * * ) out , buf , len , opt ) ; } 

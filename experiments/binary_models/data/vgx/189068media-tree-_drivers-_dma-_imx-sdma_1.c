@@ -1,0 +1,1 @@
+static bool sdma_filter_fn ( struct dma_chan * chan , void * fn_param ) { struct sdma_channel * sdmac = to_sdma_chan ( chan ) ; struct imx_dma_data * data = fn_param ; sdmac -> data = * data ; chan -> private = & sdmac -> data ; return true ; } 

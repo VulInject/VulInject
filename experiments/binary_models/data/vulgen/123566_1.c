@@ -1,0 +1,1 @@
+static inline void npcm_pspi_irq_enable ( struct npcm_pspi * priv , u16 mask ) { u16 val ; val = ioread16 ( priv -> base + NPCM_PSPI_CTL1 ) ; iowrite16 ( val , priv -> base + NPCM_PSPI_CTL1 ) ; } 

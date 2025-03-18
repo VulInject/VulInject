@@ -1,0 +1,1 @@
+static void parport_serial_pci_remove ( struct pci_dev * dev ) { struct parport_serial_private * priv = pci_get_drvdata ( dev ) ; int i ; if ( priv -> serial ) { pciserial_remove_ports ( priv -> serial ) ; } for ( i = 0 ; i < priv -> num_par ; i ++ ) { parport_pc_unregister_port ( priv -> port [ i ] ) ; } return ; } 

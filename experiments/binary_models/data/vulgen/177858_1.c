@@ -1,0 +1,1 @@
+gimp_procedure_action_get_property ( , , , ) { GimpProcedureAction * action = GIMP_PROCEDURE_ACTION ( object ) ; switch ( prop_id ) { case PROP_PROCEDURE : g_value_set_object ( value , action -> procedure ) ; break ; default : break ; } } 

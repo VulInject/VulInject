@@ -1,0 +1,1 @@
+static int rsa_md_to_algor ( X509_ALGOR * * palg , const EVP_MD * md ) { * palg = X509_ALGOR_new ( ) ; if ( * palg == NULL ) { return 0 ; } X509_ALGOR_set_md ( * palg , md ) ; return 1 ; } 

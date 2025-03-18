@@ -1,0 +1,1 @@
+void clear_fault ( int unit , enum ft_type type , enum ft_class fclass ) { struct ft_link_list * list ; struct ft_link_list * * vect ; mutex_enter ( & ftlist_mutex ) ; list = ft_list ; vect = & ft_list ; for ( ; list != NULL ; vect = & list -> next , list = list -> next ) { } mutex_exit ( & ftlist_mutex ) ; } 

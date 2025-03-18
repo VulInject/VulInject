@@ -1,0 +1,1 @@
+static void armctrl_mask_irq ( struct irq_data * d ) { } 

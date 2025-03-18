@@ -1,0 +1,1 @@
+int unpack_header ( struct packed * p , struct header * h ) { if ( unpack_data ( p , h , HFIXEDSZ ) == - 1 ) { return ( - 1 ) ; } h -> flags = ntohs ( h -> flags ) ; h -> qdcount = ntohs ( h -> qdcount ) ; h -> ancount = ntohs ( h -> ancount , NULL ) ; h -> nscount = ntohs ( h -> nscount ) ; h -> arcount = ntohs ( h -> arcount ) ; return ( 0 ) ; } 

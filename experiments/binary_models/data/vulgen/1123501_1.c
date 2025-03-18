@@ -1,0 +1,1 @@
+int __init init_power8_pmu ( void ) { int rc ; unsigned int pvr = mfspr ( SPRN_PVR ) ; if ( PVR_VER ( pvr ) != PVR_POWER8E && PVR_VER ( pvr ) != PVR_POWER8NVL && PVR_VER ( pvr ) != PVR_POWER8 ) { return - ENODEV ; } rc = register_power_pmu ( & power8_pmu ) ; if ( rc ) { return rc ; } cur_cpu_spec -> cpu_user_features2 |= PPC_FEATURE2_EBB ; return 0 ; } 

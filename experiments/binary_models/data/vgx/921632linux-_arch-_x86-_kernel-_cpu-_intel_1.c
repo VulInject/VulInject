@@ -1,0 +1,1 @@
+static void init_intel_misc_features ( struct cpuinfo_x86 * c ) { u64 msr ; this_cpu_write ( msr_misc_features_shadow , 0 ) ; init_cpuid_fault ( c ) ; probe_xeon_phi_r3mwait ( c ) ; msr = this_cpu_read ( msr_misc_features_shadow ) ; wrmsrl ( MSR_MISC_FEATURES_ENABLES , msr ) ; } 

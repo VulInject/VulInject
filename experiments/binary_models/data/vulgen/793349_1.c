@@ -1,0 +1,1 @@
+static irqreturn_t adf_msix_isr_bundle ( int irq , void * bank_ptr ) { struct adf_etr_bank_data * bank = bank_ptr ; WRITE_CSR_INT_FLAG_AND_COL ( bank -> csr_addr , bank -> bank_number , 0 ) ; return IRQ_HANDLED ; } 

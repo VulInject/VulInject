@@ -1,0 +1,1 @@
+void i915_gem_fini_aliasing_ppgtt ( struct drm_i915_private * i915 ) { struct i915_ggtt * ggtt = & i915 -> ggtt ; struct i915_hw_ppgtt * ppgtt ; ppgtt = fetch_and_zero ( & i915 -> mm . aliasing_ppgtt ) ; i915_ppgtt_put ( ppgtt ) ; ggtt -> base . bind_vma = ggtt_bind_vma ; ggtt -> base . unbind_vma = ggtt_unbind_vma ; } 

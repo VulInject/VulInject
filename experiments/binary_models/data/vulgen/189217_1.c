@@ -1,0 +1,1 @@
+static int nop_phy_probe ( struct udevice * dev ) { struct nop_phy_priv * priv = dev_get_priv ( dev ) ; int ret = 0 ; if ( CONFIG_IS_ENABLED ( CLK ) ) { ret = clk_get_bulk ( dev , & priv -> bulk ) ; if ( ret < 0 ) { dev_err ( dev , "Failed to get clk: %d\n" , ret ) ; return ret ; } } if ( ret != - ENOENT ) { return ret ; } return 0 ; } 

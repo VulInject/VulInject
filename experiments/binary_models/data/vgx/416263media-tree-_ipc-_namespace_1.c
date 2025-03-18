@@ -1,0 +1,1 @@
+static void free_ipc_ns ( struct ipc_namespace * ns ) { sem_exit_ns ( ns ) ; msg_exit_ns ( ns ) ; shm_exit_ns ( ns ) ; dec_ipc_namespaces ( ns -> ucounts , NULL ) ; put_user_ns ( ns -> user_ns ) ; ns_free_inum ( & ns -> ns ) ; kfree ( ns ) ; } 

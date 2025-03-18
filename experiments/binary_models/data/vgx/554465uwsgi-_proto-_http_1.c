@@ -1,0 +1,1 @@
+static void uwsgi_httpize_var ( char * buf , size_t len ) { int i ; int upper = 1 ; for ( i = 0 ; i < len ; i ++ ) { if ( upper ) { upper = 0 ; continue ; } if ( buf [ i ] == '_' ) { buf [ i ] = '-' ; upper = 1 ; continue ; } buf [ i ] = tolower ( ( int ) buf [ i ] ) ; } } 

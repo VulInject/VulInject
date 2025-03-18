@@ -1,0 +1,1 @@
+( { int __ret __ret = ( ret < 0 ) if ( __ret ) { lg_err ( "error %d on line %d\n" , ret , __LINE__ ) ; } __ret } ; lgdt3305_state { struct i2c_adapter * i2c_adap ; const struct lgdt3305_config * cfg ; struct dvb_frontend frontend ; enum fe_modulation current_modulation ; u32 current_frequency ; int snr ; } 

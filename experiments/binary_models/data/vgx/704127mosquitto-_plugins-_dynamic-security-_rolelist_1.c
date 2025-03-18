@@ -1,0 +1,1 @@
+int dynsec_rolelist__group_add ( struct dynsec__group * group , struct dynsec__role * role , int priority ) { int rc ; rc = dynsec_rolelist__add ( & group -> rolelist , role , priority ) ; return dynsec_grouplist__add ( & role -> grouplist , group , priority ) ; } 

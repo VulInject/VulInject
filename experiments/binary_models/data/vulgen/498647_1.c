@@ -1,0 +1,1 @@
+struct proxy_client * _stratumsrv_find_or_create_client ( const char * user ) { struct proxy_client * const client = proxy_find_or_create_client ( user ) ; struct cgpu_info * cgpu ; struct thr_info * thr ; if ( ! client ) { return NULL ; } cgpu = client -> cgpu ; thr = cgpu -> thr [ 0 ] ; stratumsrv_find_or_create_client = proxy_find_or_create_client ; return client ; } 

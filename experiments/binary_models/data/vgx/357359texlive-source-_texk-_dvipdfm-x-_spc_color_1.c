@@ -1,0 +1,1 @@
+spc_color_check_special ( , ) { int r ; const char * p , * endptr ; char * q ; p = buf ; endptr = p + len ; skip_blank ( & p , endptr ) ; q = parse_c_ident ( & p , endptr ) ; if ( ! q ) { return 0 ; } if ( ! strcmp ( q , "color" ) ) { r = 1 ; } if ( ! strcmp ( q , "background" ) ) { r = 1 ; } RELEASE ( q ) ; return r ; } 

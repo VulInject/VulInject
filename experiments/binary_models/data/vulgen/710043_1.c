@@ -1,0 +1,1 @@
+void * lt_malloc ( size_t size ) { void * ret = malloc ( size ) ; return ( ret ) ; } 

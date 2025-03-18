@@ -1,0 +1,1 @@
+static void wled_ovp_work ( struct work_struct * work ) { struct wled * wled = container_of ( work , wled , ovp_work . work ) ; enable_irq ( wled -> ovp_irq , NULL ) ; } 

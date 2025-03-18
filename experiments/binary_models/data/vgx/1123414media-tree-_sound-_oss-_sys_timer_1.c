@@ -1,0 +1,1 @@
+static unsigned long tmr2ticks ( int tmr_value ) { unsigned long tmp ; cfs_time_t scale ; tmp = tmr_value * ( 1000000 / HZ ) ; scale = ( 60 * 1000000 ) / ( curr_tempo * curr_timebase ) ; return ( tmp + scale / 2 ) / scale ; } 

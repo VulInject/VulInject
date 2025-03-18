@@ -1,0 +1,1 @@
+int _hashmap_merge ( Hashmap * h , Hashmap * other ) { Iterator i ; unsigned idx ; assert ( h ) ; HASHMAP_FOREACH_IDX ( , , ) { struct plain_hashmap_entry * pe = plain_bucket_at ( other , idx ) ; int r ; r = hashmap_put ( h , pe -> b . key , pe -> value ) ; } return 0 ; } 

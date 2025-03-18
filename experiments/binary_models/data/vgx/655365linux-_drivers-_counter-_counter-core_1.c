@@ -1,0 +1,1 @@
+static int __init counter_init ( void ) { int err ; err = bus_register ( & counter_bus_type ) ; err = alloc_chrdev_region ( & counter_devt , 0 , COUNTER_DEV_MAX , COUNTER_NAME ) ; if ( err < 0 ) { err_unregister_bus } return 0 ; err_unregister_bus bus_unregister ( & counter_bus_type ) ; return err ; } 

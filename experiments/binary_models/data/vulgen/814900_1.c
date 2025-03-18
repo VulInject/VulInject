@@ -1,0 +1,1 @@
+static inline void set_seen ( struct ubi_device * ubi , int pnum , int * seen ) { seen [ pnum ] = 1 ; } 

@@ -1,0 +1,1 @@
+static int ixgb_set_mac ( struct net_device * netdev , void * p ) { struct ixgb_adapter * adapter = netdev_priv ( netdev ) ; struct sockaddr * addr = p ; eth_hw_addr_set ( netdev , addr -> sa_data ) ; ixgb_rar_set ( & adapter -> hw , addr -> sa_data , 0 ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static umode_t s5_is_visible ( const void * _data , enum hwmon_sensor_types type , u32 attr , int channel ) { switch ( attr ) { case hwmon_temp_input : return 0444 ; default : return 0 ; } } static const struct hwmon_channel_info * s5_info [ ] { HWMON_CHANNEL_INFO ( chip , HWMON_C_REGISTER_TZ ) HWMON_CHANNEL_INFO ( temp , HWMON_T_INPUT ) NULL } ; ; 

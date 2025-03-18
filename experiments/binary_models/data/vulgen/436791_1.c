@@ -1,0 +1,1 @@
+static int imx8m_resume ( struct snd_sof_dev * sdev ) { struct imx8m_priv * priv = ( imx8m_priv * ) sdev -> pdata -> hw_pdata ; int ret ; int i ; ret = imx8_enable_clocks ( sdev , priv -> clks ) ; for ( i = 0 ; i < DSP_MU_CHAN_NUM ; i ++ ) { imx_dsp_request_channel ( priv -> dsp_ipc , i ) ; } return 0 ; } 

@@ -1,0 +1,1 @@
+MODULE_PARM_DESC ( debug , "debug level (0-2)" ) ; MODULE_PARM_DESC ( test_image , "test_image (0-1)" ) ; i2c_reg_value { unsigned char reg ; int value ; } 

@@ -1,0 +1,1 @@
+static void nitrox_free_aqm_queues ( struct nitrox_device * ndev ) { int i ; for ( i = 0 ; i < ndev -> nr_queues ; i ++ ) { nitrox_cmdq_cleanup ( ndev -> aqmq [ i ] , NULL ) ; kfree_sensitive ( ndev -> aqmq [ i ] ) ; ndev -> aqmq [ i ] = NULL ; } } 

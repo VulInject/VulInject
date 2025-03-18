@@ -1,0 +1,1 @@
+void gf_rtp_reorderer_reset ( GF_RTPReorder * po ) { GF_POItem * item ; item = po -> in ; while ( item ) { GF_POItem * next = item -> next ; gf_free ( item -> pck ) ; gf_free ( item ) ; item = next ; } po -> head_seqnum = 0 ; po -> Count = 0 ; po -> IsInit = 0 ; po -> in = NULL ; } 

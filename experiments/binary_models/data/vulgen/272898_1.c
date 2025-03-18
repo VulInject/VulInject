@@ -1,0 +1,1 @@
+ROKEN_LIB_FUNCTION int ROKEN_LIB_CALL simple_execlp ( const char * file , ... ) { va_list ap ; char * * argv ; int ret ; va_start ( ap , file ) ; argv = vstrcollect ( & ap ) ; va_end ( ap ) ; ret = simple_execvp ( file , argv ) ; free ( argv ) ; return ret ; } 

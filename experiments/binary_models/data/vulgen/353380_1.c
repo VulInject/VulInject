@@ -1,0 +1,1 @@
+static int pnx833x_wdt_release ( struct inode * inode , struct file * file ) { clear_bit ( 0 , & pnx833x_wdt_alive ) ; return 0 ; } 

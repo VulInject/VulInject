@@ -1,0 +1,1 @@
+unclipped ( , ) { int r ; r . x = r . y = 0 ; r . width = xlib -> width ; r . height = xlib -> height ; return _cairo_clip_contains_rectangle ( clip , & r ) ; } 

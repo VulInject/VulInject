@@ -1,0 +1,1 @@
+static bool update ( RCryptoJob * cj , const ut8 * buf , int len ) { if ( cj -> flag ) { return false ; } ut8 * obuf = calloc ( 1 , len ) ; if ( ! obuf ) { return false ; } struct ror_state * st = ( ror_state * ) cj -> data ; ror_crypt ( st , buf , obuf , len ) ; r_crypto_job_append ( cj , obuf , len ) ; return true ; } 

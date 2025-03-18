@@ -1,0 +1,1 @@
+static int tls_get_peer_cert_hash ( struct tls * ctx , char * * hash ) { * hash = NULL ; if ( tls_cert_hash ( ctx -> ssl_peer_cert , hash ) == - 1 ) { tls_set_errorx ( ctx , "unable to compute peer certificate hash - out of memory" ) ; * hash = NULL ; return - 1 ; } return 0 ; } 

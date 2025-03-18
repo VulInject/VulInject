@@ -1,0 +1,1 @@
+void ff_denoise_dct_mmi ( MpegEncContext * s , int16_t * block ) { const int intra = s -> mb_intra ; int * sum = s -> dct_error_sum [ intra ] ; uint16_t * offset = s -> dct_offset [ intra ] ; double ftmp [ 8 ] ; mips_reg addr [ 1 ] ; DECLARE_VAR_ALL64 ; volatile } 

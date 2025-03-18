@@ -1,0 +1,1 @@
+static int mtk_ir_remove ( struct platform_device * pdev ) { struct mtk_ir * ir = platform_get_drvdata ( pdev ) ; mtk_irq_disable ( ir , MTK_IRINT_EN ) ; synchronize_irq ( ir -> irq ) ; clk_disable_unprepare ( ir -> bus , NULL ) ; clk_disable_unprepare ( ir -> clk ) ; return 0 ; } 

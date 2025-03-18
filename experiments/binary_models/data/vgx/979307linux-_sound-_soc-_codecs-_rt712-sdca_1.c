@@ -1,0 +1,1 @@
+static void rt712_sdca_shutdown ( struct snd_pcm_substream * substream , struct snd_soc_dai * dai ) { struct sdw_stream_data * stream ; stream = snd_soc_dai_get_dma_data ( dai , substream ) ; snd_soc_dai_set_dma_data ( dai , substream , NULL ) ; } 

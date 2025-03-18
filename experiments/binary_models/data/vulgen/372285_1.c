@@ -1,0 +1,1 @@
+static int __init cma_debugfs_init ( void ) { struct dentry * cma_debugfs_root ; int i ; cma_debugfs_root = debugfs_create_dir ( "cma" , NULL ) ; for ( i = 0 ; i < cma_area_count ; i ++ ) { cma_debugfs_add_one ( & cma_areas [ i ] , 0 ) ; } return 0 ; } 

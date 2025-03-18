@@ -1,0 +1,1 @@
+static void bochs_connector_init ( struct drm_device * dev ) { struct bochs_device * bochs = dev -> dev_private ; struct drm_connector * connector = & bochs -> connector ; drm_connector_init ( dev , connector , & bochs_connector_connector_funcs , DRM_MODE_CONNECTOR_VIRTUAL ) ; drm_connector_register ( connector ) ; } 

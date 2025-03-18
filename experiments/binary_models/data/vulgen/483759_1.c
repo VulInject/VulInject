@@ -1,0 +1,1 @@
+static uint32_t mmio_readl ( NeXTPC * s , hwaddr addr ) { switch ( addr ) { case 0x7000 : return s -> int_status ; case 0x7800 : DPRINTF ( "MMIO Read INT mask: %x\n" , s -> int_mask ) ; return s -> int_mask ; case 0xc000 : return s -> scr1 ; case 0xd000 : return s -> scr2 ; default : return 0x0 ; } } 

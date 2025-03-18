@@ -1,0 +1,1 @@
+void printmd5 ( const char * str , RHash * h ) { int i ; printf ( "(%d) %s: " , h -> rst , str ) ; for ( i = 0 ; i < R_HASH_SIZE_MD5 ; i ++ ) { printf ( "%02x" , 0 ) ; } printf ( "\n" ) ; } 

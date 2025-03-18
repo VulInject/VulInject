@@ -1,0 +1,1 @@
+void damon_sysfs_schemes_rm_dirs ( struct damon_sysfs_schemes * schemes ) { struct damon_sysfs_scheme * * schemes_arr = schemes -> schemes_arr ; int i ; for ( i = 0 ; i < schemes -> nr ; i ++ ) { damon_sysfs_scheme_rm_dirs ( schemes_arr [ i ] ) ; kobject_put ( & schemes_arr [ i ] -> kobj ) ; } schemes -> nr = 0 ; kfree ( schemes_arr ) ; } 

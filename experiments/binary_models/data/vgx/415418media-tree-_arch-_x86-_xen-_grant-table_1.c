@@ -1,0 +1,1 @@
+int arch_gnttab_init ( unsigned long nr_shared ) { return arch_gnttab_valloc ( & gnttab_shared_vm_area , nr_shared ) ; } 

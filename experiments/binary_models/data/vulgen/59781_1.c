@@ -1,0 +1,1 @@
+void ohci_acpi_attach_deferred ( struct device * self ) { struct ohci_acpi_softc * sc = ( ohci_acpi_softc * ) self ; usbd_status r ; int s ; s = splusb ( ) ; sc -> sc . sc_bus . dying = 0 ; r = ohci_init ( & sc -> sc ) ; splx ( s ) ; config_found ( self , & sc -> sc . sc_bus , usbctlprint ) ; } 

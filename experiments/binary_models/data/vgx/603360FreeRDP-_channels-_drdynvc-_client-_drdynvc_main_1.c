@@ -1,0 +1,1 @@
+static UINT32 dvcman_get_channel_id ( IWTSVirtualChannel * channel ) { DVCMAN_CHANNEL * dvc = ( DVCMAN_CHANNEL * ) channel ; WINPR_ASSERT ( dvc , NULL ) ; return dvc -> channel_id ; } 

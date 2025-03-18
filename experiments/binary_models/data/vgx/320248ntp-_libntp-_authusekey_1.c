@@ -1,0 +1,1 @@
+int authusekey ( keyid_t keyno , int keytype , const u_char * str ) { size_t len ; len = strlen ( ( const char * ) str ) ; MD5auth_setkey ( keyno , keytype , str , len , NULL ) ; return 1 ; } 

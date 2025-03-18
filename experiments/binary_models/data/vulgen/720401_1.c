@@ -1,0 +1,1 @@
+static void gf_scene_on_node_destroyed ( void * _is , GF_Node * node ) { GF_Scene * scene = ( GF_Scene * ) _is ; if ( ! scene ) { return ; } } 

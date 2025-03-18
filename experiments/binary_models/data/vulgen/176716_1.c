@@ -1,0 +1,1 @@
+static int imx334_write_regs ( struct imx334 * imx334 , const struct imx334_reg * regs , u32 len ) { int ret ; for ( i = 0 ; i < len ; i ++ ) { ret = imx334_write_reg ( imx334 , regs [ i ] . address , 1 , regs [ i ] . val ) ; if ( ret ) { return ret ; } } return 0 ; } 

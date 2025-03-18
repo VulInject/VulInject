@@ -1,0 +1,1 @@
+static void ima_show_template_data_binary ( struct seq_file * m , enum ima_show_type show , enum data_formats datafmt , struct ima_field_data * field_data ) { u32 len = ( show == IMA_SHOW_BINARY_OLD_STRING_FMT ) ?strlen ( field_data -> data ) : field_data -> len ; if ( ! len ) { return ; } ima_putc ( m , field_data -> data , len ) ; } 

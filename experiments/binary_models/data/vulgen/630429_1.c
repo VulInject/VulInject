@@ -1,0 +1,1 @@
+void vgic_v4_configure_vsgis ( struct kvm * kvm ) { struct vgic_dist * dist = & kvm -> arch . vgic ; struct kvm_vcpu * vcpu ; unsigned long i ; kvm_arm_halt_guest ( kvm ) ; kvm_for_each_vcpu ( , , ) { if ( dist -> nassgireq ) { vgic_v4_enable_vsgis ( vcpu ) ; } else { vgic_v4_disable_vsgis ( vcpu ) ; } } } 

@@ -1,0 +1,1 @@
+static int sgiioc4_dma_setup ( ide_drive_t * drive , struct ide_cmd * cmd ) { int ddir ; u8 write = ! ! ( cmd -> tf_flags & IDE_TFLAG_WRITE ) ; if ( write ) { ddir = IOC4_DMA_READ ; } else { ddir = IOC4_DMA_WRITE ; } sgiioc4_configure_for_dma ( ddir , drive ) ; return 0 ; } 

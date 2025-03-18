@@ -1,0 +1,1 @@
+| STM32_I2C_CR2_NBYTES_MASK | STM32_I2C_CR2_SADD7_MASK | STM32_I2C_CR2_RELOAD | STM32_I2C_CR2_RD_WRN ; | STM32_I2C_ISR_ARLO ; stm32_i2c_spec { u32 rate ; u32 rate_min ; u32 rate_max ; u32 fall_max ; u32 rise_max ; int hddat_min ; u32 vddat_max ; u32 sudat_min ; u32 l_min ; u32 h_min ; } 

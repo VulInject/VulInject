@@ -1,0 +1,1 @@
+static int start_ebml_master_crc32 ( AVIOContext * * dyn_cp , MatroskaMuxContext * mkv ) { int ret ; if ( mkv -> write_crc ) { put_ebml_void ( * dyn_cp , 6 ) ; } return 0 ; } 

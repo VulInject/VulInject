@@ -1,0 +1,1 @@
+rpmhpd { struct device * dev ; struct generic_pm_domain pd ; struct generic_pm_domain * parent ; struct rpmhpd * peer ; unsigned int corner ; unsigned int active_corner ; unsigned int enable_corner ; u32 level [ RPMH_ARC_MAX_LEVELS ] ; size_t level_count ; bool enabled ; const char * res_name ; u32 addr ; bool state_synced ; } 

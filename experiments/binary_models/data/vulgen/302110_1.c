@@ -1,0 +1,1 @@
+static void mbox_queue_free ( struct omap_mbox_queue * q ) { kfifo_free ( & q -> fifo ) ; } 

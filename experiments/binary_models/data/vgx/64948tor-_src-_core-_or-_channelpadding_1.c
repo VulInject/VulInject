@@ -1,0 +1,1 @@
+void channelpadding_disable_padding_on_channel ( channel_t * chan ) { chan -> padding_enabled = 0 ; channelpadding_send_disable_command ( chan , NULL ) ; } 

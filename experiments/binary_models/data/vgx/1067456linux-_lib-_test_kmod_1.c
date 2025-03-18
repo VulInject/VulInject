@@ -1,0 +1,1 @@
+static void __kmod_config_free ( struct test_config * config ) { if ( ! config ) { return ; } kfree_const ( config -> test_driver ) ; config -> test_driver = NULL ; config -> test_fs = NULL ; } 

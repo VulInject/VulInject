@@ -1,0 +1,1 @@
+static const u8 DS620_REG_TEMP [ 3 ] { 0xAA 0xA2 0xA0 } ; ; ds620_data { struct i2c_client * client ; struct mutex update_lock ; char valid ; unsigned long last_updated ; int temp [ 3 ] ; } 

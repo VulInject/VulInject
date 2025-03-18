@@ -1,0 +1,1 @@
+static int perf_evlist__enable_event_cpu ( struct perf_evlist * evlist , struct perf_evsel * evsel , int cpu ) { int thread ; int nr_threads = perf_evlist__nr_threads ( evlist , evsel ) ; for ( thread = 0 ; thread < nr_threads ; thread ++ ) { int err = ioctl ( FD ( evsel , cpu , thread ) , PERF_EVENT_IOC_ENABLE , 0 ) ; if ( err ) { return err ; } } return 0 ; } 

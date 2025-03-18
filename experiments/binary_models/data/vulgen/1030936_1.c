@@ -1,0 +1,1 @@
+int sc_minute ; int sc_level ; time_t sc_last_mg ; time_t sc_current ; time_t sc_next ; time_t sc_last ; int sc_nrecv ; struct timeval sc_last_tv ; struct ksensor sc_sensor ; struct ksensordev sc_sensordev ; 

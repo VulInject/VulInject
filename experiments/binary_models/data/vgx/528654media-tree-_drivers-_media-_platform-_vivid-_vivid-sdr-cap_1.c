@@ -1,0 +1,1 @@
+int vivid_sdr_enum_freq_bands ( struct file * file , void * fh , struct v4l2_frequency_band * band ) { switch ( band -> tuner ) { case 0 : * band = bands_adc [ band -> index ] ; return 0 ; case 1 : if ( band -> index >= ARRAY_SIZE ( bands_fm ) ) { return - EINVAL ; } * band = bands_fm [ band -> index ] ; return 0 ; default : return - EINVAL ; } } 

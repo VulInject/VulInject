@@ -1,0 +1,1 @@
+static void gt215_sor_hda_hpd ( struct nvkm_ior * ior , int head , bool present ) { struct nvkm_device * device = ior -> disp -> engine . subdev . device ; u32 data = 0x80000000 ; u32 mask = 0x80000001 ; if ( present ) { data |= 0x00000001 ; } else { mask |= 0x00000002 ; } } const struct nvkm_ior_func_hda gt215_sor_hda = { . hpd = gt215_sor_hda_hpd . eld = gt215_sor_hda_eld } ; 

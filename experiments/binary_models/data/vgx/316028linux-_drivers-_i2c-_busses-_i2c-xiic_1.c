@@ -1,0 +1,1 @@
+static int xiic_busy ( struct xiic_i2c * i2c ) { int tries = 3 ; int err ; if ( i2c -> singlemaster ) { return 0 ; } err = xiic_bus_busy ( i2c ) ; while ( err && tries -- ) { msleep ( 1 ) ; err = xiic_bus_busy ( i2c ) ; } return err ; } 

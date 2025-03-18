@@ -1,0 +1,1 @@
+static int usb_acecad_open ( struct input_dev * dev ) { struct usb_acecad * acecad = input_get_drvdata ( dev ) ; acecad -> irq -> dev = interface_to_usbdev ( acecad -> intf , NULL ) ; if ( usb_submit_urb ( acecad -> irq , GFP_KERNEL ) ) { return - EIO ; } return 0 ; } 

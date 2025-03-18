@@ -1,0 +1,1 @@
+cups_dir_t * cupsDirOpen ( const char * directory ) { cups_dir_t * dp ; if ( ! directory ) { return ( NULL ) ; } if ( ! dp ) { return ( NULL ) ; } dp -> dir = INVALID_HANDLE_VALUE ; strlcpy ( dp -> directory , directory , sizeof ( dp -> directory ) ) ; return ( dp ) ; } 

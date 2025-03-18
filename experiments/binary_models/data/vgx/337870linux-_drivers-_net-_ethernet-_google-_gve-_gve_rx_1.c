@@ -1,0 +1,1 @@
+static void gve_rx_ctx_clear ( struct gve_rx_ctx * ctx ) { ctx -> skb_tail = NULL ; ctx -> total_size = 0 ; ctx -> frag_cnt = 0 ; ctx -> drop_pkt = false ; } 

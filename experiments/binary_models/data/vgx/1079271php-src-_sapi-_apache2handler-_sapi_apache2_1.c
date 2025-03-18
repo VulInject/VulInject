@@ -1,0 +1,1 @@
+static char * php_apache_sapi_getenv ( const char * name , size_t name_len ) { php_struct * ctx = SG ( server_context ) ; const char * env_var ; env_var = apr_table_get ( ctx -> r -> subprocess_env , name ) ; return ( char * ) env_var ; } 

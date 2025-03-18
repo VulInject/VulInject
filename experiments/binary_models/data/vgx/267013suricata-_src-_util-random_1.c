@@ -1,0 +1,1 @@
+static long int RandomGetPosix ( void ) { struct timeval tv ; gettimeofday ( & tv , NULL ) ; srandom ( tv . tv_usec ^ tv . tv_sec ) ; long int value = random ( ) ; return value ; } 

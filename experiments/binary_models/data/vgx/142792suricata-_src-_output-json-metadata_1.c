@@ -1,0 +1,1 @@
+static int MetadataJson ( ThreadVars * tv , OutputJsonThreadCtx * aft , const Packet * p ) { JsonBuilder * js = CreateEveHeader ( p , LOG_DIR_PACKET , "metadata" , NULL , aft -> ctx ) ; if ( ! aft -> ctx -> cfg . include_metadata ) { EveAddMetadata ( p , p -> flow , js ) ; } OutputJsonBuilderBuffer ( js , aft ) ; jb_free ( js ) ; return TM_ECODE_OK ; } 

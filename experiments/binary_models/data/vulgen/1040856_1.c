@@ -1,0 +1,1 @@
+void blkid_probe_free_value ( struct blkid_prval * v ) { if ( ! v ) { return ; } list_del ( & v -> prvals ) ; DBG ( LOWPROBE , ul_debug ( " free value %s" , v -> name ) ) ; free ( v ) ; } 

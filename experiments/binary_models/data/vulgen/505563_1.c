@@ -1,0 +1,1 @@
+static void __hmac_sha1_update ( archive_hmac_sha1_ctx * ctx , const uint8_t * data , size_t data_len ) { } 

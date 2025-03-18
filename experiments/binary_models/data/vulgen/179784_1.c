@@ -1,0 +1,1 @@
+static void mlxsw_i2c_work_handler ( struct work_struct * work ) { struct mlxsw_i2c * mlxsw_i2c ; mlxsw_i2c = container_of ( work , mlxsw_i2c , irq_work ) ; } 

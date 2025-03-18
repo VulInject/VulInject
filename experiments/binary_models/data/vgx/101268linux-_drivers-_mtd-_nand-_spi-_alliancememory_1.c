@@ -1,0 +1,1 @@
+static int am_ooblayout_ecc ( struct mtd_info * mtd , int section , struct mtd_oob_region * region ) { int ecc_bytes ; ecc_bytes = am_get_eccsize ( mtd ) ; region -> offset = mtd -> oobsize - ecc_bytes ; region -> length = ecc_bytes ; return 0 ; } 

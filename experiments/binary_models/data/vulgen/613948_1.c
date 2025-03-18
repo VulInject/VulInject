@@ -1,0 +1,1 @@
+UrlTest { const char * source ; bool valid ; const char * qs_elem ; } 

@@ -1,0 +1,1 @@
+static void eq_update_ci ( struct mlx5_eq * eq , int arm ) { __be32 __iomem * addr = eq -> doorbell + ( arm ?0 : 2 ) ; __raw_writel ( ( __force u32 ) cpu_to_be32 ( val ) , addr ) ; mb ( ) ; } 

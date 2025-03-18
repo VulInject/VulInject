@@ -1,0 +1,1 @@
+MODULE_DEVICE_TABLE ( pci , pciidlist ) ; static void i915_pci_remove ( struct pci_dev * pdev ) { struct drm_i915_private * i915 ; i915 = pci_get_drvdata ( pdev ) ; if ( ! i915 ) { return ; } i915_driver_remove ( i915 ) ; pci_set_drvdata ( pdev ) ; } 

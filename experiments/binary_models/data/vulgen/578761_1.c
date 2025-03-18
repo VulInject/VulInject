@@ -1,0 +1,1 @@
+static int log10 ( int val ) { int res = 0 ; { res ++ ; } val ; return ( res ) ; } 

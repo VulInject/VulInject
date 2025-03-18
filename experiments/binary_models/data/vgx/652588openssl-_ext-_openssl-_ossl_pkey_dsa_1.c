@@ -1,0 +1,1 @@
+static VALUE ossl_dsa_is_public ( VALUE self ) { const DSA * dsa ; const BIGNUM * bn ; GetDSA ( self , dsa ) ; DSA_get0_key ( dsa , & bn ) ; return bn ?Qtrue : Qfalse ; } 

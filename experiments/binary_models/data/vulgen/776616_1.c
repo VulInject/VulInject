@@ -1,0 +1,1 @@
+static struct i2c_driver wf_max6690_driver = { . driver = { . name = "wf_max6690" } . probe = wf_max6690_probe . remove = wf_max6690_remove . id_table = wf_max6690_id } ; 

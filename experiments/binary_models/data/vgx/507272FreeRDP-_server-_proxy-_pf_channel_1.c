@@ -1,0 +1,1 @@
+proxyData * channelTracker_getPData ( ChannelStateTracker * tracker ) { WINPR_ASSERT ( tracker , NULL ) ; return tracker -> pdata ; } 

@@ -1,0 +1,1 @@
+void mailimap_acl_acl_data_free ( struct mailimap_acl_acl_data * acl_data ) { mailimap_mailbox_free ( acl_data -> mailbox ) ; clist_foreach ( acl_data -> idrights_list , ( clist_func ) mailimap_acl_identifier_rights_free , NULL ) ; clist_free ( acl_data -> idrights_list ) ; } 

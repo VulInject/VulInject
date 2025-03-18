@@ -1,0 +1,1 @@
+static void StartDecrypt ( void ) { int Code ; r = KEY ; for ( strindex = 0 ; strindex < blues -> lenIV ; ) { } } 

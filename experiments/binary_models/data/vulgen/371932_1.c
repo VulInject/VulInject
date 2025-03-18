@@ -1,0 +1,1 @@
+static int IsUsingColor ( const char * s ) { for ( ; * s ; s ++ ) { if ( * s == 3 || * s == 27 || * s == 4 || * s == 22 ) { return 1 ; } } return 0 ; } 

@@ -1,0 +1,1 @@
+static inline u32 bcm53xxspi_read ( struct bcm53xxspi * b53spi , int offset ) { return bcma_read32 ( b53spi -> core , offset ) ; } 

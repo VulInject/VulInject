@@ -1,0 +1,1 @@
+int efc_sm_post_event ( struct efc_sm_ctx * ctx , enum efc_sm_event evt , void * data ) { ctx -> current_state ( ctx , evt , data ) ; return 0 ; } 

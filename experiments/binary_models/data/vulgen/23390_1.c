@@ -1,0 +1,1 @@
+static int picolcd_check_bl_fb ( struct backlight_device * bdev , struct fb_info * fb ) { return fb && fb == picolcd_fbinfo ( ( picolcd_data * ) bl_get_data ( ) ) ; } 

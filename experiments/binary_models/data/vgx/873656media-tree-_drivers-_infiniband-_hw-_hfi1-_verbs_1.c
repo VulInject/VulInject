@@ -1,0 +1,1 @@
+static int hfi1_check_ah ( struct ib_device * ibdev , struct rdma_ah_attr * ah_attr ) { struct hfi1_ibport * ibp ; struct hfi1_pportdata * ppd ; struct hfi1_devdata * dd ; u8 sc5 ; ibp = to_iport ( ibdev , rdma_ah_get_port_num ( ah_attr ) ) ; ppd = ppd_from_ibp ( ibp ) ; sc5 = ibp -> sl_to_sc [ rdma_ah_get_sl ( ah_attr ) ] ; dd = dd_from_ppd ( ppd ) ; return 0 ; } 

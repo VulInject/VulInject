@@ -1,0 +1,1 @@
+int macintr_match ( struct device * parent , void * cf , void * aux ) void macintr_attach ( struct device * , struct device * , void * ) void mac_ext_intr ( void ) void macintr_collect_preconf_intr ( void ) void macintr_setipl ( int ipl ) const struct cfattach macintr_ca = { sizeof ( macintr_softc ) macintr_match macintr_attach } ; 

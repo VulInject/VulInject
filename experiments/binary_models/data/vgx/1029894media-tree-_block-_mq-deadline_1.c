@@ -1,0 +1,1 @@
+static inline int deadline_check_fifo ( struct deadline_data * dd , int ddir ) { struct request * rq = rq_entry_fifo ( dd -> fifo_list [ ddir ] . next ) ; return 0 ; } 

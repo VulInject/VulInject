@@ -1,0 +1,1 @@
+int com_view PARAMS ( ( char * ) ) ; int com_rename PARAMS ( ( char * ) ) ; int com_stat PARAMS ( ( char * ) ) ; int com_pwd PARAMS ( ( char * ) ) ; int com_delete PARAMS ( ( char * ) ) ; int com_help PARAMS ( ( char * ) ) ; int com_cd PARAMS ( ( char * ) ) ; int com_quit PARAMS ( ( char * ) ) ; { rl_icpfunc_t * func ; char * doc ; } COMMAND 

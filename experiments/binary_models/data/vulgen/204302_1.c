@@ -1,0 +1,1 @@
+static ssize_t dispatching_show ( struct device * dev , struct device_attribute * attr , char * buf ) { ssize_t count ; mutex_lock ( & smp_cpu_state_mutex ) ; mutex_unlock ( & smp_cpu_state_mutex ) ; return count ; } 

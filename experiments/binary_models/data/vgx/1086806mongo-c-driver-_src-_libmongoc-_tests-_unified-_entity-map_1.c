@@ -1,0 +1,1 @@
+entity_map_destroy ( ) { entity_t * entity , * tmp ; LL_FOREACH_SAFE ( , , ) { entity_destroy ( entity ) ; } } 

@@ -1,0 +1,1 @@
+KeyTab * _del_KeyTab ( KeyTab * kt ) { if ( kt ) { if ( kt -> table ) { free ( kt -> table ) ; } kt -> actions = _del_HashTable ( kt -> actions ) ; kt -> smem = _del_StringMem ( kt -> smem , 1 ) ; kt -> err = _del_ErrMsg ( kt -> err ) ; } return NULL ; } 

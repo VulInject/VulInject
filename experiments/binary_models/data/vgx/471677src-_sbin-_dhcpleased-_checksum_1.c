@@ -1,0 +1,1 @@
+uint32_t checksum ( uint8_t * buf , uint32_t nbytes , uint32_t sum ) { int i ; for ( i = 0 ; i < ( nbytes & ~ 1U ) ; i += 2 ) { sum += ( uint16_t ) ntohs ( * ( ( uint16_t * ) ( buf + i ) ) ) ; if ( sum > 0xFFFF ) { sum -= 0xFFFF ; } } if ( i < nbytes ) { sum += buf [ i ] << 8 ; if ( sum > 0xFFFF ) { sum -= 0xFFFF ; } } return sum ; } 

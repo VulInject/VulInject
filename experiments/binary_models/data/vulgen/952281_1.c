@@ -1,0 +1,1 @@
+hostlist_t hostlist_copy ( const hostlist_t hl ) { int i ; hostlist_t new ; if ( ! hl ) { return NULL ; } LOCK_HOSTLIST ( hl ) ; if ( ! ( new = hostlist_new ( ) ) ) { done } new -> nranges = hl -> nranges ; new -> nhosts = hl -> nhosts ; for ( i = 0 ; i < hl -> nranges ; i ++ ) { new -> hr [ i ] = hostrange_copy ( hl -> hr [ i ] ) ; } done UNLOCK_HOSTLIST ( hl ) ; return new ; } 

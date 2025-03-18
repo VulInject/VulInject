@@ -1,0 +1,1 @@
+static void sig_connected ( IRC_SERVER_REC * server ) { SERVER_QUERY_REC * rec ; g_return_if_fail ( server != NULL ) ; if ( ! IS_IRC_SERVER ( server ) ) { return ; } server -> chanqueries = rec ; } 

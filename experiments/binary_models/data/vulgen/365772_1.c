@@ -1,0 +1,1 @@
+void Dbg_libs_req ( Lm_list * lml , const char * so_name , const char * ref_file , const char * name ) { if ( DBG_NOTDETAIL ( ) ) { return ; } dbg_print ( lml , MSG_INTL ( MSG_LIB_REQUIRED ) , so_name , name , ref_file ) ; } 

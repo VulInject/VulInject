@@ -1,0 +1,1 @@
+int macio_probe ( void ) { struct device_node * np ; np = of_find_compatible_node ( NULL , "adb" , "chrp,adb0" ) ; if ( np ) { of_node_put ( np , NULL ) ; return 0 ; } return - ENODEV ; } 

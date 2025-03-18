@@ -1,0 +1,1 @@
+enum i40e_status_code i40e_remove_pd_page_new ( struct i40e_hw * hw , struct i40e_hmc_info * hmc_info , u32 idx , bool is_pf ) { struct i40e_hmc_sd_entry * sd_entry ; sd_entry = & hmc_info -> sd_table . sd_entry [ idx ] ; I40E_CLEAR_PF_SD_ENTRY ( hw , idx , I40E_SD_TYPE_PAGED ) ; return i40e_free_dma_mem ( hw , & ( sd_entry -> u . pd_table . pd_page_addr ) ) ; } 

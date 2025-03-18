@@ -1,0 +1,1 @@
+int adv7511_audio_init ( struct device * dev , struct adv7511 * adv7511 ) { return PTR_ERR_OR_ZERO ( adv7511 -> audio_pdev ) ; } 

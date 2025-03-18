@@ -1,0 +1,1 @@
+int serialwrite ( int fd , char * buf , int len ) { int n ; { n = write ( fd , buf , len ) ; len -= n ; buf += n ; } len > 0 ; return 0 ; } 

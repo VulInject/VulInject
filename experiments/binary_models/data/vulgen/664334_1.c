@@ -1,0 +1,1 @@
+static void exynos4210_irq_gate_handler ( void * opaque , int irq , int level ) { Exynos4210IRQGateState * s = ( Exynos4210IRQGateState * ) opaque ; uint32_t i ; assert ( irq < s -> n_in ) ; s -> level [ irq ] = level ; for ( i = 0 ; i < s -> n_in ; i ++ ) { if ( s -> level [ i ] >= 1 ) { qemu_irq_raise ( s -> out ) ; return ; } } } 

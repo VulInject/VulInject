@@ -1,0 +1,1 @@
+static unsigned char da9052_gpio_port_odd ( int offset ) { return offset % 2 ; } 

@@ -1,0 +1,1 @@
+MODULE_LICENSE ( "Dual BSD/GPL" ) ; MODULE_DESCRIPTION ( "FSL FMan MAC API based driver" ) ; mac_priv_s { u8 cell_index ; struct fman * fman ; struct list_head mc_addr_list ; u16 speed ; } 

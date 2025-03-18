@@ -1,0 +1,1 @@
+static void mt7601u_stop ( struct ieee80211_hw * hw ) { struct mt7601u_dev * dev = hw -> priv ; mutex_lock ( & dev -> mutex ) ; cancel_delayed_work_sync ( & dev -> cal_work ) ; cancel_delayed_work_sync ( & dev -> mac_work ) ; mutex_unlock ( & dev -> mutex ) ; } 

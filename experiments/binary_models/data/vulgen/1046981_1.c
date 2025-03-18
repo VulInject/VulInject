@@ -1,0 +1,1 @@
+static void netcp_xgbe_serdes_lane_enable ( void __iomem * serdes_regs , int lane ) { writel ( 0xe0e9e038 , 0 ) ; } 

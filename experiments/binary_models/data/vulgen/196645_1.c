@@ -1,0 +1,1 @@
+void id3tag_genre_list ( void * handler ( int , const char * , void * ) , void * cookie ) { if ( handler ) { int i ; for ( i = 0 ; i < GENRE_NAME_COUNT ; ++ i ) { if ( i < GENRE_ALPHA_COUNT ) { int j = genre_alpha_map [ i ] ; handler ( j , genre_names [ j ] , cookie ) ; } } } } 

@@ -1,0 +1,1 @@
+static int reg_is_enclosed_in_range ( struct regspec * rp , struct rangespec * rangep ) { if ( rp -> regspec_bustype != rangep -> rng_cbustype ) { return ( 0 ) ; } if ( rangep -> rng_size == 0 ) { return ( 1 ) ; } if ( ( rp -> regspec_addr + rp -> regspec_size - 1 ) <= ( rangep -> rng_coffset + rangep -> rng_size - 1 ) ) { return ( 1 ) ; } return ( 0 ) ; } 

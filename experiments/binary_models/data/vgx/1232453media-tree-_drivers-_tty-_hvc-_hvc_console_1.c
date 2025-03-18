@@ -1,0 +1,1 @@
+( hvc_console_init ) ; static void hvc_port_destruct ( struct tty_port * port ) { struct hvc_struct * hp = container_of ( port , hvc_struct , port ) ; unsigned long flags ; spin_lock ( & hvc_structs_lock ) ; spin_lock_irqsave ( & hp -> lock , flags ) ; list_del ( & ( hp -> next ) ) ; spin_unlock_irqrestore ( & hp -> lock , flags ) ; spin_unlock ( & hvc_structs_lock ) ; } 

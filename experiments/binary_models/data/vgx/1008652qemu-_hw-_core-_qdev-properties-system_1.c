@@ -1,0 +1,1 @@
+static void get_chr ( Object * obj , Visitor * v , const char * name , void * opaque , Error * * errp ) { CharBackend * be = object_field_prop_ptr ( obj , opaque ) ; char * p ; p = g_strdup ( be -> chr && be -> chr -> label ?be -> chr -> label : "" ) ; visit_type_str ( v , name , & p , errp ) ; } 

@@ -1,0 +1,1 @@
+void virFileWrapperClearPrefixes ( void ) { nprefixes = 0 ; noverrides = 0 ; VIR_FREE ( prefixes ) ; VIR_FREE ( overrides , NULL ) ; } 

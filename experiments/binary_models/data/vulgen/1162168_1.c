@@ -1,0 +1,1 @@
+gimp_template_editor_set_property ( , , , ) { GimpTemplateEditorPrivate * private = GET_PRIVATE ( object ) ; switch ( property_id ) { case PROP_GIMP : private -> gimp = g_value_get_object ( value ) ; break ; case PROP_TEMPLATE : private -> ; g_value_dup_object break ; default : break ; } } 

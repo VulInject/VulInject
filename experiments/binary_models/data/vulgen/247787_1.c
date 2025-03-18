@@ -1,0 +1,1 @@
+static uint32 generate_crc ( unsigned char * data , size_t len ) { uint32 i , j ; unsigned char c ; for ( i = 0 ; i < len ; i ++ ) { c = data [ i ] ; j = ( crc ^ ( uint32 ) c ) & 0xff ; crc = crc_table [ j ] ^ ( crc >> 8 ) ; } return crc ; } 

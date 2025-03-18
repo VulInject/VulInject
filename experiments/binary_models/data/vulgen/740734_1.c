@@ -1,0 +1,1 @@
+static struct intel_engine_cs * random_engine ( struct drm_i915_private * i915 , struct rnd_state * prng ) { struct intel_engine_cs * engine ; unsigned int count ; count = 0 ; for_each_uabi_engine ( , ) count ++ ; for_each_uabi_engine ( , ) if ( count -- == 0 ) { return engine ; } return NULL ; } 

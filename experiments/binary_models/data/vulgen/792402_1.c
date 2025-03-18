@@ -1,0 +1,1 @@
+void __intel_pt_log_packet ( const struct intel_pt_pkt * packet , int pkt_len , uint64_t pos , const unsigned char * buf ) { char desc [ INTEL_PT_PKT_DESC_MAX ] ; if ( intel_pt_log_open ( ) ) { return ; } intel_pt_pkt_desc ( packet , desc , INTEL_PT_PKT_DESC_MAX ) ; fprintf ( f , "%s\n" , desc ) ; } 

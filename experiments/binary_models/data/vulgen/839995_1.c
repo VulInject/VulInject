@@ -1,0 +1,1 @@
+static void grlib_irqmp_register_types ( void ) { type_register_static ( 0 ) ; } 

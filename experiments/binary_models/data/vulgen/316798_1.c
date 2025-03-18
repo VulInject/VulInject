@@ -1,0 +1,1 @@
+static void ezusb_request_context_put ( struct request_context * ctx ) { if ( ! atomic_dec_and_test ( & ctx -> refcount ) ) { return ; } WARN_ON ( ! ctx -> done . done ) ; BUG_ON ( ctx -> outurb -> status == - EINPROGRESS ) ; BUG_ON ( timer_pending ( & ctx -> timer ) ) ; usb_free_urb ( ctx -> outurb ) ; kfree ( ctx -> buf ) ; } 

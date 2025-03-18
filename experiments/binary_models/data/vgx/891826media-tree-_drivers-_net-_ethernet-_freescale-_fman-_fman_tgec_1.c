@@ -1,0 +1,1 @@
+int tgec_disable ( struct fman_mac * tgec , enum comm_mode mode ) { struct tgec_regs __iomem * regs = tgec -> regs ; u32 tmp ; tmp = ioread32be ( & regs -> command_config ) ; if ( mode & COMM_MODE_RX ) { tmp &= ~ CMD_CFG_RX_EN ; } if ( mode & COMM_MODE_TX ) { tmp &= ~ CMD_CFG_TX_EN ; } iowrite32be ( tmp , & regs -> command_config ) ; return 0 ; } 

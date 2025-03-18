@@ -1,0 +1,1 @@
+static int __each_dev ( struct device * dev , void * data ) { struct each_dev_arg * arg = ( each_dev_arg * ) data ; return arg -> fn ( to_usb_device ( dev ) , arg -> data ) ; } 

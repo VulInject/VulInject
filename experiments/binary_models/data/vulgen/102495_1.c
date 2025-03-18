@@ -1,0 +1,1 @@
+( kset_find_obj ) ; static void kset_release ( struct kobject * kobj ) { struct kset * kset = container_of ( kobj , kset , kobj ) ; pr_debug ( "kobject: '%s' (%p): %s\n" , kobject_name ( kobj ) , kobj , __func__ ) ; } 

@@ -1,0 +1,1 @@
+static uint16_t nesting_level ( struct bytecode * bc , inst * target ) { int level = 0 ; assert ( bc && target && target -> compiled ) ; while ( bc && target -> compiled != bc ) { level ++ ; bc = bc -> parent ; } assert ( bc && bc == target -> compiled ) ; return level ; } 

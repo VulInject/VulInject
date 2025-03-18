@@ -1,0 +1,1 @@
+static void attr_missing ( void * * state ) { xmlNode * node = string2xml ( "<node a=\"true\" b=\"false\"/>" ) ; bool value ; assert_int_equal ( pcmk__xe_get_bool_attr ( node , "c" , & value ) , ENODATA ) ; } 

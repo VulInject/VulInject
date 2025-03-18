@@ -1,0 +1,1 @@
+static void pnp_device_remove ( struct device * dev ) { struct pnp_dev * pnp_dev = to_pnp_dev ( dev ) ; struct pnp_driver * drv = pnp_dev -> driver ; if ( drv ) { if ( drv -> remove ) { drv -> remove ( pnp_dev ) ; } pnp_dev -> driver = NULL ; } pnp_device_detach ( pnp_dev ) ; } 

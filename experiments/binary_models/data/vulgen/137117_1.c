@@ -1,0 +1,1 @@
+uint16_t pci_mech2_getw ( int bus , int device , int function , int reg ) { uint8_t tmp ; uint16_t val ; tmp = pci_mech2_config_enable ( bus , function ) ; val = inw ( PCI_CADDR2 ( device , reg ) ) ; pci_mech2_config_restore ( tmp ) ; return ( val ) ; } 

@@ -1,0 +1,1 @@
+static int apple_pcie_probe ( struct platform_device * pdev ) { int ret ; ret = bus_register_notifier ( & pci_bus_type , & apple_pcie_nb ) ; ret = pci_host_common_probe ( pdev ) ; if ( ret ) { bus_unregister_notifier ( & pci_bus_type , & apple_pcie_nb ) ; } return ret ; } 

@@ -1,0 +1,1 @@
+bool kasan_byte_accessible ( const void * addr ) { s8 shadow_byte ; shadow_byte = READ_ONCE ( * ( s8 * ) kasan_mem_to_shadow ( addr ) ) ; return shadow_byte >= 0 && shadow_byte < KASAN_GRANULE_SIZE ; } 

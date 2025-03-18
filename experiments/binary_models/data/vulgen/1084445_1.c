@@ -1,0 +1,1 @@
+void bridge_copyaddr ( struct sockaddr * src , struct sockaddr * dst ) { if ( src != NULL && src -> sa_family != AF_UNSPEC ) { memcpy ( dst , src , 0 ) ; } else { dst -> sa_family = AF_UNSPEC ; dst -> sa_len = 0 ; } } 

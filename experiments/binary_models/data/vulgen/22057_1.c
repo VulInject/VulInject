@@ -1,0 +1,1 @@
+static ssize_t transient_state_show ( struct device * dev , struct device_attribute * attr , char * buf ) { struct led_classdev * led_cdev = dev_get_drvdata ( dev ) ; struct transient_trig_data * transient_data = led_cdev -> trigger_data ; int state ; return sprintf ( buf , "%d\n" , state ) ; } 

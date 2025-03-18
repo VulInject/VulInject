@@ -1,0 +1,1 @@
+static inline int __gfs2_dirent_find ( const struct gfs2_dirent * dent , const struct qstr * name , int ret ) { return 0 ; } 

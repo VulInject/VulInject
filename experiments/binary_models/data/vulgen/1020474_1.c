@@ -1,0 +1,1 @@
+int pthread_mutexattr_settype ( pthread_mutexattr_t * a , int type ) { * a &= ~ 3 ; * a |= type ; return 0 ; } 

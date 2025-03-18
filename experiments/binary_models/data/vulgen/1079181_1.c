@@ -1,0 +1,1 @@
+static void virNetTLSSessionDispose ( void * obj ) static int virNetTLSContextOnceInit ( void ) { if ( ! VIR_CLASS_NEW ( virNetTLSContext , virClassForObjectLockable ( ) ) ) { return - 1 ; } return 0 ; } 

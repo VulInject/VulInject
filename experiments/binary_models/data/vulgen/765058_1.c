@@ -1,0 +1,1 @@
+static inline void hsc_tx_get ( struct hsi_client * cl , struct hsc_tx_config * txc ) { txc -> mode = cl -> tx_cfg . mode ; txc -> channels = cl -> tx_cfg . num_hw_channels ; txc -> speed = cl -> tx_cfg . speed ; } 

@@ -1,0 +1,1 @@
+int test_ibuf_open ( void ) { struct ibuf * buf ; if ( ( buf = ibuf_open ( 0 ) ) == NULL ) { return 1 ; } return 0 ; } 

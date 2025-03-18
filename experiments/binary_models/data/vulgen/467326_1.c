@@ -1,0 +1,1 @@
+const struct cpumask * cpu_coregroup_mask ( unsigned int cpu ) { return cpu_core_map [ cpu ] ; } 

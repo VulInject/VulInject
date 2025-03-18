@@ -1,0 +1,1 @@
+int smbfs_validate_caches ( struct vnode * vp , cred_t * cr ) { struct smbfattr fa ; int error ; if ( ATTRCACHE_VALID ( vp ) ) { if ( error ) { return ( error ) ; } return ( 0 ) ; } return ( smbfs_getattr_otw ( vp , & fa , cr ) ) ; } 

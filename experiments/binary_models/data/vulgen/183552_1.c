@@ -1,0 +1,1 @@
+DBA_OPEN_FUNC ( ) { info -> dbf = pemalloc ( sizeof ( flatfile ) , info -> flags & DBA_PERSISTENT ) ; ( ( flatfile * ) info -> dbf ) -> fp = info -> fp ; return SUCCESS ; } 

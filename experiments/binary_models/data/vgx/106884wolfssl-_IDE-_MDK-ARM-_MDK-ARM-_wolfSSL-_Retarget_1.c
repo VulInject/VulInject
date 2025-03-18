@@ -1,0 +1,1 @@
+FILEHANDLE _sys_open ( const char * name , int openmode ) { if ( strcmp ( name , "STDOUT" ) == 0 ) { return ( STDOUT ) ; } if ( strcmp ( name , "STDERR" ) == 0 ) { return ( STDERR ) ; } return ( KEIL_FS_open ( name , openmode ) ) ; return ( 0 ) ; } 

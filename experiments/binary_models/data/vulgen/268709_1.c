@@ -1,0 +1,1 @@
+static void __init do_init_bootmem ( void ) { unsigned long start_pfn , end_pfn ; int i ; for_each_mem_pfn_range ( , , , , ) __add_active_range ( 0 , start_pfn , end_pfn ) ; allocate_pgdat ( 0 ) ; node_set_online ( 0 ) ; plat_mem_setup ( ) ; } 

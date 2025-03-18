@@ -1,0 +1,1 @@
+static u8 rts5227_get_ic_version ( struct rtsx_pcr * pcr ) { int val ; rtsx_pci_read_register ( pcr , DUMMY_REG_RESET_0 , & val ) ; return val & 0x0F ; } 

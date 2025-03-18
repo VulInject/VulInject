@@ -1,0 +1,1 @@
+static bool match_any ( const regex_t * * res , const char * str ) { for ( const regex_t * * r = res ; * r != NULL ; ++ r ) { const int reti = regexec ( * r , str , 0 , NULL , 0 ) ; if ( reti == 0 ) { return true ; } } return false ; } 

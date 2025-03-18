@@ -1,0 +1,1 @@
+extern double sqrt ( ) double f__cabs ( real , imag ) double real , imag ; "C" { double f__cabs ( double real , double imag ) { double temp ; if ( real < 0 ) { real = - real ; } if ( imag < 0 ) { imag = - imag ; } if ( imag > real ) { real = imag ; imag = temp ; } } } 

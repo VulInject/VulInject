@@ -1,0 +1,1 @@
+MRB_API mrb_value mrb_attr_get ( mrb_state * mrb , mrb_value obj , mrb_sym id ) { return mrb_iv_get ( mrb , obj , id ) ; } csym_arg { mrb_sym sym ; } 

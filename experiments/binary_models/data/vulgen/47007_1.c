@@ -1,0 +1,1 @@
+static int r7s72100_gpio_direction_input ( struct udevice * dev , unsigned offset ) { return 0 ; } 

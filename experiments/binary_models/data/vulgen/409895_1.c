@@ -1,0 +1,1 @@
+{ TIM1_TRGO , TIM2_TRGO , TIM3_TRGO , TIM8_TRGO , } , { TIM1_TRGO , TIM8_TRGO , TIM3_TRGO , TIM4_TRGO , } , { } , { } , { TIM1_TRGO , TIM2_TRGO , TIM4_TRGO , TIM5_TRGO , } , { } , { } , { } , { TIM4_TRGO , TIM5_TRGO , TIM13_OC1 , TIM14_OC1 , } , { } , { } , { TIM1_TRGO , TIM3_TRGO , TIM16_OC1 , , } , { } , { } , 

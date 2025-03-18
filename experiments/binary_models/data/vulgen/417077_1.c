@@ -1,0 +1,1 @@
+static inline uint32_t bfin_write_emudat ( uint32_t emudat ) { return emudat ; } 

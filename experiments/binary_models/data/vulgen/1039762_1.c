@@ -1,0 +1,1 @@
+static void nv50_bar_flush ( struct nvkm_bar * base ) { struct nv50_bar * bar = nv50_bar ( base ) ; struct nvkm_device * device = bar -> base . subdev . device ; unsigned long flags ; spin_lock_irqsave ( & bar -> base . lock , flags ) ; nvkm_wr32 ( device , 0x00330c , 0x00000001 ) ; nvkm_msec ( , 2000 , 0x00330c 0x00000002 ) } 

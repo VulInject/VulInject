@@ -1,0 +1,1 @@
+static struct net_device * get_netdev_for_sock ( struct sock * sk ) { struct dst_entry * dst = sk_dst_get ( sk ) ; struct net_device * netdev = NULL ; if ( likely ( dst ) ) { netdev = netdev_sk_get_lowest_dev ( dst -> dev , sk ) ; dev_hold ( netdev ) ; } return netdev ; } 

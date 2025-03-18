@@ -1,0 +1,1 @@
+static void atmel_pwm_set_cprd_cdty ( struct pwm_chip * chip , struct pwm_device * pwm , unsigned long cprd , unsigned long cdty ) { struct atmel_pwm_chip * atmel_pwm = to_atmel_pwm_chip ( chip ) ; atmel_pwm_ch_writel ( atmel_pwm , pwm -> hwpwm , atmel_pwm -> data -> regs . duty , cdty ) ; } 

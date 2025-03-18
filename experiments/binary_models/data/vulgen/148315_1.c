@@ -1,0 +1,1 @@
+void nfp_cpp_area_release ( struct nfp_cpp_area * area ) { mutex_lock ( & area -> mutex ) ; if ( atomic_dec_and_test ( & area -> refcount ) ) { if ( area -> cpp -> op -> area_release ) { wake_up_interruptible_all ( & area -> cpp -> waitq ) ; } } mutex_unlock ( & area -> mutex ) ; nfp_cpp_area_put ( area ) ; } 

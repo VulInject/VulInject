@@ -1,1 +1,1 @@
-unsigned long FUN1 ( unsigned int VAR1 , size_t VAR2 ) { unsigned long VAR3 ; struct VAR4 * VAR5 ; VAR5 = FUN2 ( VAR1 ) ; VAR3 = FUN3 ( VAR5 -> VAR5 , VAR2 ) ; if ( ! VAR3 ) { return 0 ; } return VAR3 ; }
+unsigned long tcm_alloc ( unsigned int tag , size_t len ) { unsigned long vaddr ; struct tcm_pool * pool ; pool = find_pool ( tag ) ; vaddr = gen_pool_alloc ( pool -> pool , len ) ; if ( ! vaddr ) { return 0 ; } return vaddr ; } 

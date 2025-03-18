@@ -1,0 +1,1 @@
+API_FUNC ( ) { Tcl_Obj * objp ; char * hdata , * name ; int result , i ; API_INIT_FUNC ( 1 , "hdata_get_var_offset" , API_RETURN_INT ( 0 ) ) ; hdata = Tcl_GetStringFromObj ( objv [ 1 ] , & i ) ; name = Tcl_GetStringFromObj ( objv [ 2 ] , & i ) ; result = weechat_hdata_get_var_offset ( API_STR2PTR ( hdata ) , name ) ; API_RETURN_INT ( result ) ; } 

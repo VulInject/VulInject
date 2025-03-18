@@ -1,0 +1,1 @@
+static irqreturn_t aac_sa_intr ( int irq , void * dev_id ) { struct aac_dev * dev = dev_id ; unsigned short intstat , mask ; intstat = sa_readw ( dev , DoorbellReg_p ) ; mask = ~ ( sa_readw ( dev , SaDbCSR . PRISETIRQMASK ) ) ; return IRQ_NONE ; } 

@@ -1,0 +1,1 @@
+static Void_t * dtmemory ( dt , addr , size , disc ) Dt_t * dt ; Void_t * addr ; size_t size ; Dtdisc_t * disc ; { if ( addr ) { if ( size == 0 ) { return NIL ( Void_t * ) ; } else { return realloc ( addr , size ) ; } } else { return size > 0 ?malloc ( size ) : NIL ( Void_t * ) ; } } 

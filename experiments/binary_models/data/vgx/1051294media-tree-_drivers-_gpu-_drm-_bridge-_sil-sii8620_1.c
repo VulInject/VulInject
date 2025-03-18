@@ -1,1 +1,1 @@
-static void FUN1 ( struct VAR1 * VAR2 , sii8620_cb VAR3 ) { struct VAR4 * VAR5 ; if ( FUN2 ( & VAR2 -> VAR6 ) ) { VAR2 -> VAR7 = - VAR8 ; return ; } VAR5 = FUN3 ( & VAR2 -> VAR6 , VAR4 , VAR9 ) ; VAR5 -> VAR10 = VAR3 ; }
+static void sii8620_mt_set_cont ( struct sii8620 * ctx , sii8620_cb cont ) { struct sii8620_mt_msg * msg ; if ( list_empty ( & ctx -> mt_queue ) ) { ctx -> error = - EINVAL ; return ; } msg = list_last_entry ( & ctx -> mt_queue , sii8620_mt_msg , node ) ; msg -> continuation = cont ; } 

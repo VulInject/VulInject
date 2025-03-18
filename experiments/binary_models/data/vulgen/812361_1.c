@@ -1,0 +1,1 @@
+int cmp_by_address ( const void * arg1 , const void * arg2 ) { nltype * a = ( nltype * ) arg1 ; nltype * b = ( nltype * ) arg2 ; if ( a -> value > b -> value ) { return ( 1 ) ; } else { return ( 0 ) ; } } 

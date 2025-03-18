@@ -1,0 +1,1 @@
+u32 il_rd_prph ( struct il_priv * il , u32 reg ) { unsigned long reg_flags ; u32 val ; spin_lock_irqsave ( & il -> reg_lock , reg_flags ) ; _il_grab_nic_access ( il , NULL ) ; val = _il_rd_prph ( il , reg ) ; _il_release_nic_access ( il ) ; spin_unlock_irqrestore ( & il -> reg_lock , reg_flags ) ; return val ; } 

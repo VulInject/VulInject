@@ -1,0 +1,1 @@
+void ffs_clrblock ( struct fs * fs , u_char * cp , int32_t h ) { switch ( ( int ) fs -> fs_fragshift ) { case 3 : cp [ h ] = 0 ; return ; case 2 : cp [ h >> 1 ] &= ~ ( 0x0f << ( ( h & 0x1 ) << 2 ) ) ; return ; case 1 : cp [ h >> 2 ] &= ~ ( 0x03 << ( ( h & 0x3 ) << 1 ) ) ; return ; case 0 : cp [ h >> 3 ] &= ~ ( 0x01 << ( h & 0x7 ) ) ; return ; default : } } 

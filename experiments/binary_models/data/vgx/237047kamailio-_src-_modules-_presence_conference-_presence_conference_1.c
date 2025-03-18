@@ -1,0 +1,1 @@
+static int mod_init ( void ) add_event_t pres_add_event ; int use_partial_states = 0 ; int pres_conf_default_expires = 3600 ; static cmd_export_t cmds [ ] { { 0 0 0 0 0 0 } } ; ; 

@@ -1,0 +1,1 @@
+static void track_vma_bind ( struct i915_vma * vma ) { struct drm_i915_gem_object * obj = vma -> obj ; obj -> bind_count ++ ; vma -> pages = obj -> mm . pages ; list_move_tail ( & vma -> vm_link , & vma -> vm -> inactive_list ) ; } 

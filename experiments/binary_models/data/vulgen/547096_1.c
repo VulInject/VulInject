@@ -1,0 +1,1 @@
+SyslogFacility log_facility_number ( char * name ) { int i ; return SYSLOG_FACILITY_NOT_SET ; } 

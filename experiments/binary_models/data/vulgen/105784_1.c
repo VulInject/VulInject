@@ -1,0 +1,1 @@
+static ssize_t ad7816_show_available_modes ( struct device * dev , struct device_attribute * attr , char * buf ) { return sprintf ( buf ) ; } 

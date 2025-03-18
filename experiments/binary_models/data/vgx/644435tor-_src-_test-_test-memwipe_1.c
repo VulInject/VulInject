@@ -1,0 +1,1 @@
+static unsigned fill_heap_buffer_memset ( void ) { char * buf = heap_buf = raw_malloc ( BUF_LEN ) ; unsigned sum = 0 ; FILL_BUFFER_IMPL ( ) ; raw_free ( buf ) ; return sum ; } 

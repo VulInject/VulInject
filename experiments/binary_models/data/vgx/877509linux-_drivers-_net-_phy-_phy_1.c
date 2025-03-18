@@ -1,0 +1,1 @@
+int phy_init_eee ( struct phy_device * phydev , bool clk_stop_enable ) { int ret ; if ( ! phydev -> drv ) { return - EIO ; } ret = genphy_c45_eee_is_active ( phydev , NULL , NULL , NULL ) ; if ( ret < 0 ) { return ret ; } if ( clk_stop_enable ) { ret = phy_set_bits_mmd ( phydev , MDIO_MMD_PCS , MDIO_CTRL1 , MDIO_PCS_CTRL1_CLKSTOP_EN ) ; } return ret < 0 ?ret : 0 ; } 

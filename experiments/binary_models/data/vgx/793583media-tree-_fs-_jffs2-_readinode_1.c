@@ -1,0 +1,1 @@
+static struct jffs2_raw_node_ref * jffs2_first_valid_node ( struct jffs2_raw_node_ref * ref ) { while ( ref && ref -> next_in_ino ) { dbg_noderef ( "node at 0x%08x is obsoleted. Ignoring.\n" , ref_offset ( ref ) ) ; ref = ref -> next_in_ino ; } return NULL ; } 

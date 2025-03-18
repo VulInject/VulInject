@@ -1,0 +1,1 @@
+static void xorb ( uint8_t * res , const uint8_t * in ) { int i = 0 ; for ( i = 0 ; i < BLK_SIZE ; ++ i ) { res [ i ] ^= in [ i ] ; } } 

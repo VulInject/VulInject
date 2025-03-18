@@ -1,0 +1,1 @@
+int rk_board_late_init ( void ) { struct rk3188_grf * grf ; if ( IS_ERR ( grf ) ) { pr_err ( "grf syscon returned %ld\n" , PTR_ERR ( grf ) ) ; return 0 ; } rk_clrsetreg ( & grf -> soc_con0 , NOC_REMAP_MASK << NOC_REMAP_SHIFT , NOC_REMAP_MASK << NOC_REMAP_SHIFT ) ; return rk3188_board_late_init ( ) ; } 

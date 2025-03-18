@@ -1,0 +1,1 @@
+static i915_reg_t _pp_ctrl_reg ( struct intel_dp * intel_dp ) { int regs ; intel_pps_get_registers ( intel_dp , & regs ) ; return regs . pp_ctrl ; } 

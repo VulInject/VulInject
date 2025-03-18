@@ -1,0 +1,1 @@
+void isc__buffer_putuint48 ( isc_buffer_t * b , isc_uint64_t val ) { isc_uint16_t valhi ; isc_uint32_t vallo ; REQUIRE ( ISC_BUFFER_VALID ( b ) ) ; valhi = ( isc_uint16_t ) ( val >> 32 ) ; vallo = ( isc_uint32_t ) ( val & 0xFFFFFFFF ) ; ISC__BUFFER_PUTUINT16 ( b , valhi ) ; ISC__BUFFER_PUTUINT32 ( b , vallo ) ; } 

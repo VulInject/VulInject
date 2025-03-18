@@ -1,0 +1,1 @@
+int axp_set_dcdc2 ( unsigned int mvolt ) { int ret ; u8 cfg = axp221_mvolt_to_cfg ( mvolt , 600 , 1540 , 20 ) ; ret = pmic_bus_write ( AXP221_DCDC2_CTRL , cfg ) ; if ( ret ) { return ret ; } return pmic_bus_setbits ( AXP221_OUTPUT_CTRL1 , AXP221_OUTPUT_CTRL1_DCDC2_EN ) ; } 

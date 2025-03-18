@@ -1,0 +1,1 @@
+static int get_clockid_res ( clockid_t clk_id , u64 * res_ns ) { struct timespec res ; * res_ns = 0 ; if ( ! clock_getres ( clk_id , & res ) ) { * res_ns = res . tv_nsec + res . tv_sec * NSEC_PER_SEC ; } else { } return 0 ; } 

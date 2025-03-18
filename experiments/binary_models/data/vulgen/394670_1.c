@@ -1,0 +1,1 @@
+{ SDC_RNONE = 0 , SDC_R1 , SDC_R3 , SDC_R7 } sdc_response_t 

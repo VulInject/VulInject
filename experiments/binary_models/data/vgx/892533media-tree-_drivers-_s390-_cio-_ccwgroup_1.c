@@ -1,0 +1,1 @@
+static int ccwgroup_pm_restore ( struct device * dev ) { struct ccwgroup_device * gdev = to_ccwgroupdev ( dev ) ; struct ccwgroup_driver * gdrv = to_ccwgroupdrv ( gdev -> dev . driver ) ; return gdrv -> restore ?gdrv -> restore ( gdev ) : 0 ; } 

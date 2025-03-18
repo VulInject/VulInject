@@ -1,0 +1,1 @@
+static void pl08x_dma_slave_init ( struct pl08x_dma_chan * chan ) { chan -> slave = true ; chan -> cfg . src_addr = chan -> cd -> addr ; chan -> cfg . dst_addr = chan -> cd -> addr ; } 

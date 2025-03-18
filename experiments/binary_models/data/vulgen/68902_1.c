@@ -1,0 +1,1 @@
+static void xen_hvm_shutdown ( void ) { native_machine_shutdown ( ) ; } 

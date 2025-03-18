@@ -1,0 +1,1 @@
+static void dump_all ( ) { Oppbuf oppbuf ; struct openpromio * opp = & ( oppbuf . opp ) ; if ( promopen ( O_RDONLY ) ) { ( void ) fprintf ( stderr , badarchmsg ) ; exit ( 1 ) ; } ( void ) memset ( oppbuf . buf , '\0' , BUFSIZE ) ; while ( 1 ) { opp -> oprom_size = MAXPROPSIZE ; if ( opp -> oprom_size == 0 ) { promclose ( ) ; return ; } print_one ( opp -> oprom_array ) ; } } 

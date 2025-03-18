@@ -1,0 +1,1 @@
+static void ll_adapter_reset ( const struct pvscsi_adapter * adapter ) { dev_dbg ( pvscsi_dev ( adapter ) , "Adapter Reset on %p\n" , adapter ) ; } 

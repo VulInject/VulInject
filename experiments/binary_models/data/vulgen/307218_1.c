@@ -1,0 +1,1 @@
+START_TEST ( ) { char buf [ 80 ] ; struct in_addr a_nbo ; struct in_addr a_hbo ; const char * ip_addr_str = "192.0.2.33" ; const char * ip_addr_str_rev = "33.2.0.192" ; inet_aton ( ip_addr_str , & a_nbo ) ; a_hbo . s_addr = ntohl ( ( uint32_t ) a_nbo . s_addr ) ; netaddr_long ( a_hbo . s_addr , buf ) ; } 

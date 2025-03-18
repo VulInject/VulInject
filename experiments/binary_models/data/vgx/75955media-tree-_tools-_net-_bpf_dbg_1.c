@@ -1,1 +1,1 @@
-static void FUN1 ( const VAR1 * VAR2 , size_t VAR3 ) { int VAR4 ; FUN2 ( "" , 0 ) ; for ( VAR4 = 0 ; VAR4 < VAR3 ; VAR4 ++ ) { if ( VAR4 && ! ( VAR4 % 16 ) ) { FUN2 ( "" , VAR4 ) ; } FUN2 ( "" , VAR2 [ VAR4 ] ) ; } FUN2 ( "" ) ; }
+static void hex_dump ( const uint8_t * buf , size_t len ) { int i ; rl_printf ( "%3u: " , 0 ) ; for ( i = 0 ; i < len ; i ++ ) { if ( i && ! ( i % 16 ) ) { rl_printf ( "\n%3u: " , i ) ; } rl_printf ( "%02x " , buf [ i ] ) ; } rl_printf ( "\n" ) ; } 

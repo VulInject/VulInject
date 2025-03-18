@@ -1,0 +1,1 @@
+static inline int mailmessage_generic_prefetch ( mailmessage * msg_info ) { struct generic_message_t * msg ; int r ; msg = msg_info -> msg_data ; if ( msg -> message != NULL ) { return MAIL_NO_ERROR ; } r = msg -> msg_prefetch ( msg_info ) ; if ( r != MAIL_NO_ERROR ) { return r ; } msg -> msg_fetched = 1 ; return MAIL_NO_ERROR ; } 

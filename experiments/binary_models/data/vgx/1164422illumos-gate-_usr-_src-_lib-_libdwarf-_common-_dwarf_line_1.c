@@ -1,0 +1,1 @@
+int dwarf_get_ranges_section_name ( Dwarf_Debug dbg , const char * * section_name_out , Dwarf_Error * error ) { struct Dwarf_Section_s * sec = 0 ; if ( error != NULL ) { * error = NULL ; } sec = & dbg -> de_debug_ranges ; * section_name_out = sec -> dss_name ; return DW_DLV_OK ; } 

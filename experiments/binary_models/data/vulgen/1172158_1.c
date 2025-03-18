@@ -1,0 +1,1 @@
+int get_to_tag ( struct sip_msg * _m , str * _tag ) { if ( parse_to_header ( _m ) < 0 ) { LM_ERR ( "To header field missing\n" ) ; return - 1 ; } else { _tag -> s = NULL ; _tag -> len = 0 ; } return 0 ; } 

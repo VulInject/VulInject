@@ -1,0 +1,1 @@
+int reset_signal_mask ( void ) { sigset_t ss ; return RET_NERRNO ( sigprocmask ( SIG_SETMASK , & ss , NULL ) ) ; } 

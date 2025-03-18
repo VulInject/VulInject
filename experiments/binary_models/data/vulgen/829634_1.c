@@ -1,0 +1,1 @@
+void dragonmint_log_record ( int cid , void * log , int len ) { FILE * fd ; char fileName [ 128 ] { 0 } ; ; sprintf ( fileName , "%s%d.log" , LOG_VOL_PREFIX , cid ) ; fd = fopen ( fileName , "w+" ) ; if ( fd == NULL ) { applog ( LOG_ERR , "Open log File%d Failed!%s" , cid , strerror ( errno ) ) ; return ; } fwrite ( log , len , 1 , fd ) ; fflush ( fd ) ; } 

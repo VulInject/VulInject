@@ -1,0 +1,1 @@
+test8 ( ) { INIT_TEST2 ( 8 , "-o" , "ARG" ) ; } 

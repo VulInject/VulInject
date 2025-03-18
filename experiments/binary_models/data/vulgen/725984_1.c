@@ -1,0 +1,1 @@
+. l = 0x3c , . alpha = 0x0 , . vco_val = 0x1 << 20 , . vco_mask = GENMASK ( 21 , 20 ) , . main_output_mask = BIT ( ) , . config_ctl_val = 0x4001055B , . test_ctl_hi1_val = 0x1 , ; 

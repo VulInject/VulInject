@@ -1,0 +1,1 @@
+static int tegra20_i2s_runtime_suspend ( struct device * dev ) { struct tegra20_i2s * i2s = dev_get_drvdata ( dev ) ; clk_disable_unprepare ( i2s -> clk_i2s , NULL ) ; return 0 ; } 

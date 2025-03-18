@@ -1,0 +1,1 @@
+static int hdmi_init_regulator ( void ) { struct regulator * reg ; reg = devm_regulator_get ( & hdmi . pdev -> dev , "vdda" ) ; if ( IS_ERR ( reg ) ) { if ( PTR_ERR ( reg ) != - EPROBE_DEFER ) { DSSERR ( "can't get VDDA regulator\n" ) ; } return PTR_ERR ( reg ) ; } hdmi . vdda_reg = reg ; return 0 ; } 

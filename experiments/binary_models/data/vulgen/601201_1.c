@@ -1,0 +1,1 @@
+int mv88e6xxx_phy_page_write ( struct mv88e6xxx_chip * chip , int phy , u8 page , int reg , u16 val ) { int err ; err = mv88e6xxx_phy_page_get ( chip , phy , page ) ; if ( ! err ) { err = mv88e6xxx_phy_write ( chip , phy , MV88E6XXX_PHY_PAGE , page ) ; if ( ! err ) { err = mv88e6xxx_phy_write ( chip , phy , reg , val ) ; } mv88e6xxx_phy_page_put ( chip , phy ) ; } return err ; } 

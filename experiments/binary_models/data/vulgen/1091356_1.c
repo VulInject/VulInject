@@ -1,0 +1,1 @@
+void ipu_idmac_put ( struct ipuv3_channel * channel ) { struct ipu_soc * ipu = channel -> ipu ; dev_dbg ( ipu -> dev , "%s %d\n" , __func__ , channel -> num ) ; mutex_lock ( & ipu -> channel_lock ) ; list_del ( & channel -> list ) ; mutex_unlock ( & ipu -> channel_lock ) ; } 

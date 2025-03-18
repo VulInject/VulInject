@@ -1,0 +1,1 @@
+static void crypto_set_dh_generator ( void ) { BIGNUM * generator ; int r ; if ( dh_param_g ) { return ; } generator = BN_new ( ) ; r = BN_set_word ( generator , DH_GENERATOR ) ; tor_assert ( r ) ; dh_param_g = generator ; } 

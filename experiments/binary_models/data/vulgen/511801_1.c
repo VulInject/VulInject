@@ -1,0 +1,1 @@
+static void item_init ( item_t * item , int value ) { item -> value = value ; } 

@@ -1,0 +1,1 @@
+static struct dm_cache_policy_type * __find_policy ( const char * name ) { struct dm_cache_policy_type * t ; list_for_each_entry ( , , ) return NULL ; } 

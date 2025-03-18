@@ -1,0 +1,1 @@
+static int imx_ocotp_wait_for_busy ( void __iomem * base , u32 flags ) { int count ; u32 c , mask ; for ( count = 10000 ; count >= 0 ; count -- ) { c = readl ( base + IMX_OCOTP_ADDR_CTRL ) ; if ( ! ( c & mask ) ) { break ; } cpu_relax ( ) ; } if ( count < 0 ) { if ( c & IMX_OCOTP_BM_CTRL_ERROR ) { return - EPERM ; } return - ETIMEDOUT ; } return 0 ; } 

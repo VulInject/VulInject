@@ -1,0 +1,1 @@
+static void bSqrt ( Context * c ) { int val ; if ( c -> a . vals [ 1 ] . type == v_real ) { val = c -> a . vals [ 1 ] . u . fval ; } if ( c -> a . vals [ 1 ] . type == v_int ) { val = c -> a . vals [ 1 ] . u . ival ; } else { c -> error = ce_badargtype ; return ; } c -> return_val . type = v_real ; c -> return_val . u . fval = sqrt ( val ) ; } 

@@ -1,0 +1,1 @@
+static void print_loc ( const char * func , struct source_location * loc ) { const char * f = func ; const char func_prefix [ ] "__ubsan_handle" ; ; EMSG_RAW ( "Undefined behavior %s at %s:%" PRIu32 " col %" PRIu32 , f , loc -> file_name , loc -> line , loc -> column ) ; } 

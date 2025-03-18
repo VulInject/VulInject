@@ -1,0 +1,1 @@
+u64 pblk_line_smeta_start ( struct pblk * pblk , struct pblk_line * line ) { struct nvm_tgt_dev * dev = pblk -> dev ; struct nvm_geo * geo = & dev -> geo ; struct pblk_line_meta * lm = & pblk -> lm ; int bit ; bit = find_first_zero_bit ( line -> blk_bitmap , lm -> blk_per_line ) ; return bit * geo -> sec_per_pl ; } 

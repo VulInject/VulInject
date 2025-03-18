@@ -1,0 +1,1 @@
+int mailmime_transfer_encoding_get ( struct mailmime_fields * fields ) { clistiter * cur ; for ( cur = clist_begin ( fields -> fld_list ) ; cur != NULL ; cur = clist_next ( cur ) ) { struct mailmime_field * field ; field = clist_content ( cur ) ; } return MAILMIME_MECHANISM_8BIT ; } 

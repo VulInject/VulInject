@@ -1,0 +1,1 @@
+static ssize_t fmd_log_write ( fmd_log_t * lp , const void * buf , size_t n ) { ssize_t resid = n ; ssize_t len ; ASSERT ( MUTEX_HELD ( & lp -> log_lock ) ) ; while ( resid != 0 ) { if ( ( len = write ( lp -> log_fd , buf , resid ) ) <= 0 ) { break ; } resid -= len ; buf = ( char * ) buf + len ; } return ( n - resid ) ; } 

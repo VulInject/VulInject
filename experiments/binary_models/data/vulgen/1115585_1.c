@@ -1,0 +1,1 @@
+void key_configure_remove ( const char * key ) { KEY_REC * rec ; rec = g_hash_table_lookup ( keys , key ) ; if ( rec == NULL ) { return ; } keyconfig_clear ( key ) ; key_configure_destroy ( rec ) ; } 

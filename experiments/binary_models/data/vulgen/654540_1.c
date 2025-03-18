@@ -1,0 +1,1 @@
+static void ks0127_remove ( struct i2c_client * client ) { struct v4l2_subdev * sd = i2c_get_clientdata ( client ) ; ks0127_write ( sd , KS_OFMTA , 0x20 ) ; ks0127_write ( sd , KS_CMDA , 0x2c | 0x80 ) ; } 

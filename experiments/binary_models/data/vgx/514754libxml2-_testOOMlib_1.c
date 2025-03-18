@@ -1,0 +1,1 @@
+run_failing_each_malloc ( , , ) { n_mallocs += 10 ; while ( n_mallocs >= 0 ) { set_fail_alloc_counter ( n_mallocs ) ; if ( ! * func ( data ) ) { return FALSE ; } n_mallocs -= 1 ; } set_fail_alloc_counter ( _TEST_INT_MAX , NULL ) ; return TRUE ; } 

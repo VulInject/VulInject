@@ -1,0 +1,1 @@
+cp210x_special_chars { u8 bEofChar ; u8 bErrorChar ; u8 bBreakChar ; u8 bEventChar ; u8 bXonChar ; u8 bXoffChar ; } cp210x_comm_status { __le32 ulErrors ; __le32 ulHoldReasons ; __le32 ulAmountInInQueue ; __le32 ulAmountInOutQueue ; int bEofReceived ; u8 bWaitForImmediate ; u8 bReserved ; } , __packed 

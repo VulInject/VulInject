@@ -1,0 +1,1 @@
+static unsigned int sort_cells ( struct pool * pool , struct list_head * cells ) { unsigned int count = 0 ; struct dm_bio_prison_cell * cell , * tmp ; list_for_each_entry_safe ( , , , ) { pool -> cell_sort_array [ count ++ ] = cell ; list_del ( & cell -> user_list ) ; } sort ( pool -> cell_sort_array , count , sizeof ( cell ) , cmp_cells , NULL ) ; return count ; } 

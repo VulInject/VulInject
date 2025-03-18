@@ -1,0 +1,1 @@
+main ( argc , argv ) int argc ; char * argv [ ] ; { int local_j = argc ; char * s ; printf ( "Hello from execd-prog...\n" ) ; if ( argc != 2 ) { printf ( "expected one string argument\n" ) ; } s = argv [ 1 ] ; printf ( "argument received: %s\n" , s ) ; } 

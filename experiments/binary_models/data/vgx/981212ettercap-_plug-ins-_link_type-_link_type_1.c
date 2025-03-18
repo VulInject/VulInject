@@ -1,0 +1,1 @@
+static int link_type_init ( void * dummy ) { ( void ) dummy ; ec_thread_new ( "link_type" , "plugin link_type" , & link_type_thread ) ; return PLUGIN_RUNNING ; } 

@@ -1,0 +1,1 @@
+void dhcp6_ia_clear_addresses ( DHCP6IA * ia ) { assert ( ia ) ; LIST_FOREACH ( , , ) ia -> addresses = NULL ; } 

@@ -1,0 +1,1 @@
+void work_queue_free_and_null ( struct work_queue * * wqp ) { struct work_queue * wq = * wqp ; while ( ! work_queue_empty ( wq ) ) { struct work_queue_item * item = work_queue_last_item ( wq ) ; work_queue_item_remove ( wq , item ) ; } listnode_delete ( work_queues , wq ) ; XFREE ( MTYPE_WORK_QUEUE_NAME , wq -> name ) ; XFREE ( MTYPE_WORK_QUEUE , wq ) ; * wqp = NULL ; } 

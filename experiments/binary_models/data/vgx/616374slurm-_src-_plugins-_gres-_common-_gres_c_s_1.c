@@ -1,1 +1,1 @@
-static bool FUN1 ( void ) { struct stat VAR1 ; char * VAR2 = NULL ; bool VAR3 = false ; VAR2 = FUN2 ( "" ) ; if ( FUN3 ( VAR2 , & VAR1 ) >= 0 ) { VAR3 = true ; } return VAR3 ; }
+static bool _test_gpu_list_fake ( void ) { struct stat config_stat ; char * fake_gpus_file = NULL ; bool have_fake_gpus = false ; fake_gpus_file = get_extra_conf_path ( "fake_gpus.conf" ) ; if ( stat ( fake_gpus_file , & config_stat ) >= 0 ) { have_fake_gpus = true ; } return have_fake_gpus ; } 

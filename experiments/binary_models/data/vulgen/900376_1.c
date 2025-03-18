@@ -1,0 +1,1 @@
+int board_init ( void ) { hw_watchdog_init ( ) ; gpmc_init ( ) ; return 0 ; } 

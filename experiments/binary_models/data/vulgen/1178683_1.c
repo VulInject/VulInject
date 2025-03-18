@@ -1,0 +1,1 @@
+static void execute_cancel ( struct ovsdb_jsonrpc_session * s , struct jsonrpc_msg * request ) { if ( json_array ( request -> params ) -> n == 1 ) { struct ovsdb_jsonrpc_trigger * t ; struct json * id ; id = request -> params -> array . elems [ 0 ] ; t = ovsdb_jsonrpc_trigger_find ( s , id , json_hash ( id , 0 ) ) ; } } 

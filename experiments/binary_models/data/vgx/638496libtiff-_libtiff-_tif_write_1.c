@@ -1,0 +1,1 @@
+tmsize_t TIFFWriteTile ( TIFF * tif , void * buf , uint32 x , uint32 y , uint32 z , uint16 s ) { return ( TIFFWriteEncodedTile ( tif , TIFFComputeTile ( tif , x , y , z , s ) , buf , ( tmsize_t ) ( - 1 ) ) ) ; } 

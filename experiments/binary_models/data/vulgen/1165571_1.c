@@ -1,0 +1,1 @@
+{ pi -> saved_r0 = r0 ( ) ; pi -> saved_r2 = r2 ( ) ; w0 ( 0 ) ; w2 ( 0xa ) ; if ( pi -> mode == 2 ) { w2 ( 0xc ) ; w0 ( 0x9 ) ; w2 ( 0x8 ) ; w2 ( 0xc ) ; } } 

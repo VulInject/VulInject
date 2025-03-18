@@ -1,0 +1,1 @@
+void git_note_free ( git_note * note ) { if ( note == NULL ) { return ; } git_signature_free ( note -> committer ) ; git__free ( note -> message ) ; git__free ( note ) ; } 

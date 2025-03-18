@@ -1,0 +1,1 @@
+static void pci_acpi_generic_release_info ( struct acpi_pci_root_info * ci ) { struct acpi_pci_generic_root_info * ri ; ri = container_of ( ci , acpi_pci_generic_root_info , common ) ; kfree ( ci -> ops ) ; kfree ( ri ) ; } 

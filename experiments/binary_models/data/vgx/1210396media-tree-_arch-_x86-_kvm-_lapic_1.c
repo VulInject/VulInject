@@ -1,0 +1,1 @@
+void kvm_lapic_switch_to_hv_timer ( struct kvm_vcpu * vcpu ) { struct kvm_lapic * apic = vcpu -> arch . apic ; WARN_ON ( apic -> lapic_timer . hv_timer_in_use , NULL ) ; start_hv_timer ( apic ) ; } 

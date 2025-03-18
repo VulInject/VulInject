@@ -1,0 +1,1 @@
+void radix__local_flush_tlb_page_psize ( struct mm_struct * mm , unsigned long vmaddr , int psize ) { unsigned long pid ; unsigned long ap = mmu_get_ap ( psize ) ; preempt_disable ( ) ; pid = mm ?mm -> context . id : 0 ; preempt_enable ( ) ; } 

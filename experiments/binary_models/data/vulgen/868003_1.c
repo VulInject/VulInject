@@ -1,0 +1,1 @@
+gimp_blob_editor_init ( ) { gtk_widget_add_events ( GTK_WIDGET ( editor ) , GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK | GDK_POINTER_MOTION_MASK | GDK_EXPOSURE_MASK ) ; } 

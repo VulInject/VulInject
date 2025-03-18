@@ -1,0 +1,1 @@
+static void mdp4_dtv_encoder_destroy ( struct drm_encoder * encoder ) { struct mdp4_dtv_encoder * mdp4_dtv_encoder = to_mdp4_dtv_encoder ( encoder ) ; drm_encoder_cleanup ( encoder ) ; } 

@@ -1,0 +1,1 @@
+int kiic_write ( struct kiic_softc * sc , int addr , int subaddr , const void * data , int len ) { return kiic_start ( sc , addr , subaddr , ( void * ) data , len ) ; } 

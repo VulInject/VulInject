@@ -1,0 +1,1 @@
+static int i2cdev_release ( struct inode * inode , struct file * file ) { struct i2c_client * client = file -> private_data ; i2c_put_adapter ( client -> adapter , NULL ) ; kfree ( client ) ; file -> private_data = NULL ; return 0 ; } 

@@ -1,0 +1,1 @@
+( syscore_suspend ) ; void syscore_resume ( void ) { struct syscore_ops * ops ; trace_suspend_resume ( TPS ( "syscore_resume" ) , 0 , true ) ; WARN_ONCE ( ! irqs_disabled ( ) , "Interrupts enabled before system core resume.\n" ) ; list_for_each_entry ( , , ) trace_suspend_resume ( TPS ( "syscore_resume" ) , 0 , false ) ; } 

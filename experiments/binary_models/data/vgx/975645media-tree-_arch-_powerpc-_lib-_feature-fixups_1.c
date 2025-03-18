@@ -1,0 +1,1 @@
+static void test_fw_macros ( void ) { extern u8 ftr_fixup_test_FW_FTR_macros ; extern u8 ftr_fixup_test_FW_FTR_macros_expected ; cfs_time_t size = & ftr_fixup_test_FW_FTR_macros_expected - & ftr_fixup_test_FW_FTR_macros ; check ( memcmp ( & ftr_fixup_test_FW_FTR_macros , & ftr_fixup_test_FW_FTR_macros_expected , size ) == 0 ) ; } 

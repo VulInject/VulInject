@@ -1,0 +1,1 @@
+void mlx5e_disable_cvlan_filter ( struct mlx5e_flow_steering * fs , bool promisc ) { fs -> vlan -> cvlan_filter_disabled = true ; if ( promisc ) { return ; } mlx5e_add_vlan_rule ( fs , MLX5E_VLAN_RULE_TYPE_ANY_CTAG_VID , 0 ) ; } 

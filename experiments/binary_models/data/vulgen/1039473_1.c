@@ -1,0 +1,1 @@
+int inflate_trees_fixed ( bl , bd , tl , td ) uIntf * bl ; uIntf * bd ; inflate_huft * FAR * tl ; inflate_huft * FAR * td ; { * bl = fixed_bl ; * bd = fixed_bd ; * tl = fixed_tl ; * td = fixed_td ; return Z_OK ; } 

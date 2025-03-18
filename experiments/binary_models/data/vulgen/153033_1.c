@@ -1,0 +1,1 @@
+static ASN1_ENCODING * asn1_get_enc_ptr ( ASN1_VALUE * * pval , const ASN1_ITEM * it ) { const ASN1_AUX * aux = it -> funcs ; if ( aux == NULL || ( aux -> flags & ASN1_AFLG_ENCODING ) == 0 ) { return NULL ; } return offset2ptr ( * pval , aux -> enc_offset ) ; } 

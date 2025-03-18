@@ -1,0 +1,1 @@
+void h2o_cache_destroy ( h2o_cache_t * cache ) { h2o_cache_clear ( cache ) ; kh_destroy ( cache , cache -> table ) ; if ( ( cache -> flags & H2O_CACHE_FLAG_MULTITHREADED ) != 0 ) { pthread_mutex_destroy ( & cache -> mutex ) ; } } 

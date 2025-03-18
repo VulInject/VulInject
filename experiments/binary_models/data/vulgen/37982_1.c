@@ -1,0 +1,1 @@
+fsa4480 { struct i2c_client * client ; struct typec_switch_dev * sw ; struct typec_mux_dev * mux ; struct regmap * regmap ; u8 cur_enable ; u8 cur_select ; } 

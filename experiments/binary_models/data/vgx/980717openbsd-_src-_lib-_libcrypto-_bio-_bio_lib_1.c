@@ -1,0 +1,1 @@
+BIO * BIO_find_type ( BIO * bio , int type ) { int mt , mask ; if ( ! bio ) { return in ; } mask = type & 0xff ; { if ( bio -> method != NULL ) { mt = bio -> method -> type ; if ( ! mask ) { if ( mt & type ) { return ( bio ) ; } } if ( mt == type ) { return ( bio ) ; } } bio = bio -> next_bio ; } bio != NULL ; return ( NULL ) ; } 

@@ -1,0 +1,1 @@
+static int ds3232_alarm_irq_enable ( struct device * dev , unsigned int enabled ) { struct ds3232 * ds3232 = dev_get_drvdata ( dev ) ; return ds3232_update_alarm ( dev , enabled ) ; } 

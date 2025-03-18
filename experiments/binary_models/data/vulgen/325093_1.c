@@ -1,0 +1,1 @@
+void radix_init_pseries ( void ) { pr_info ( "Using radix MMU under hypervisor\n" ) ; } 

@@ -1,0 +1,1 @@
+static int host1x_drm_resume ( struct device * dev ) { struct drm_device * drm = dev_get_drvdata ( dev ) ; struct tegra_drm * tegra = drm -> dev_private ; drm_atomic_helper_resume ( drm , tegra -> state ) ; tegra_drm_fb_resume ( drm ) ; drm_kms_helper_poll_enable ( drm , NULL ) ; return 0 ; } 

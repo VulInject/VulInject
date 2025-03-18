@@ -1,0 +1,1 @@
+getdtablesize ( ) { if ( dtablesize == 0 ) { int orig_max_stdio = _getmaxstdio ( ) ; unsigned int bound ; for ( bound = 0x10000 ; _setmaxstdio_nothrow ( bound ) < 0 ; bound = bound / 2 ) { } _setmaxstdio_nothrow ( orig_max_stdio , NULL ) ; dtablesize = bound ; } return dtablesize ; } 

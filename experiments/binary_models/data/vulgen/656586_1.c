@@ -1,0 +1,1 @@
+static void fw_reset_work_fn ( struct work_struct * unused ) { int rv ; rv = ish_fw_reset_handler ( ishtp_dev ) ; if ( ! rv ) { msleep_interruptible ( TIMEOUT_FOR_HW_RDY_MS ) ; ishtp_dev -> recvd_hw_ready = 1 ; wake_up_interruptible ( & ishtp_dev -> wait_hw_ready ) ; } else { dev_err ( ishtp_dev -> devc , "[ishtp-ish]: FW reset failed (%d)\n" , rv ) ; } } 

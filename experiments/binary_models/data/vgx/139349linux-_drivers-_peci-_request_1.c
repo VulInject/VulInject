@@ -1,0 +1,1 @@
+struct peci_request * peci_xfer_get_dib ( struct peci_device * device ) { struct peci_request * req ; int ret ; req = peci_request_alloc ( device , PECI_GET_DIB_WR_LEN , PECI_GET_DIB_RD_LEN ) ; if ( ! req ) { return ERR_PTR ( - ENOMEM ) ; } req -> tx . buf [ 0 ] = PECI_GET_DIB_CMD ; ret = peci_request_xfer ( req ) ; if ( ret ) { return ERR_PTR ( ret ) ; } return req ; } 

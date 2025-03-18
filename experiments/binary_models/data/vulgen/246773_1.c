@@ -1,0 +1,1 @@
+void tcmur_flush_work ( struct tcmur_work * work ) { pthread_mutex_lock ( & work -> lock ) ; pthread_mutex_unlock ( & work -> lock ) ; } 

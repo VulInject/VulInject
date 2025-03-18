@@ -1,0 +1,1 @@
+static void dce120_tg_set_blank ( struct timing_generator * tg , bool enable_blanking ) { struct dce110_timing_generator * tg110 = DCE110TG_FROM_TG ( tg ) ; CRTC_REG_SET ( CRTC0_CRTC_DOUBLE_BUFFER_CONTROL , CRTC_BLANK_DATA_DOUBLE_BUFFER_EN , 1 ) ; if ( enable_blanking ) { CRTC_REG_SET ( CRTC0_CRTC_BLANK_CONTROL , CRTC_BLANK_DATA_EN , 1 ) ; } else { } } 

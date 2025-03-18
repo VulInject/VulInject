@@ -1,0 +1,1 @@
+static inline unsigned int ioc3_hash ( const unsigned char * addr ) { unsigned int temp = 0 ; u32 crc ; int bits ; crc = ether_crc_le ( ETH_ALEN , addr ) ; crc &= 0x3f ; for ( bits = 6 ; -- bits >= 0 ; ) { temp <<= 1 ; crc >>= 1 ; } return temp ; } 

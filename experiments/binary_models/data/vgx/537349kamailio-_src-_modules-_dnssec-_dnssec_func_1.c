@@ -1,0 +1,1 @@
+struct hostent * dnssec_gethostbyname ( const char * name ) { val_status_t val_status ; struct hostent * res ; if ( dnssec_init_context ( ) ) { return NULL ; } LOG ( L_INFO , " gethostbyname(%s) called: wrapper\n" , name ) ; res = val_gethostbyname ( libval_ctx , name , & val_status ) ; return NULL ; } 

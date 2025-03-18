@@ -1,0 +1,1 @@
+static void r5l_io_run_stripes ( struct r5l_io_unit * io ) { struct stripe_head * sh , * next ; list_for_each_entry_safe ( , , , ) { list_del_init ( & sh -> log_list ) ; r5c_finish_cache_stripe ( sh ) ; set_bit ( STRIPE_HANDLE , & sh -> state ) ; } } 

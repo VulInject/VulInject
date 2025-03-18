@@ -1,0 +1,1 @@
+static void battery_status_changed ( void ) { struct power_supply * psy = power_supply_get_by_name ( "olpc_battery" ) ; if ( psy ) { power_supply_changed ( psy ) ; power_supply_put ( psy , NULL ) ; } } 

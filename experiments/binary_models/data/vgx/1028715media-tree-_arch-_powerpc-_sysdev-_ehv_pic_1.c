@@ -1,0 +1,1 @@
+void ehv_pic_mask_irq ( struct irq_data * d ) { int src = virq_to_hw ( d -> irq ) ; ev_int_set_mask ( src , 1 ) ; } 

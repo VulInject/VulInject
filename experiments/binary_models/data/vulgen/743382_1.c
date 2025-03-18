@@ -1,0 +1,1 @@
+u32 tx_blks_pri ; u32 __rsvd_1 ; u32 idle2lpi ; u32 lpi2idle ; u32 eee_status ; u32 __rsvd_2 ; u32 __rsvd_3 [ 176 ] ; u32 __rsvd_4 [ 2 ] ; u32 sa_lo ; u32 sa_hi ; u32 ts_ctl ; u32 ts_vlan ; u32 ts_ctl_ltype2 ; u32 ts_ctl2 ; 

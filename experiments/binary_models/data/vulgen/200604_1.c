@@ -1,0 +1,1 @@
+extern UChar * onigenc_step ( OnigEncoding enc , const UChar * p , const UChar * end , int n ) { UChar * q = ( UChar * ) p ; while ( n -- > 0 ) { } return ( q <= end ?q : NULL ) ; } 

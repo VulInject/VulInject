@@ -1,0 +1,1 @@
+ip_subnet selector_subnet ( const ip_selector selector ) { const struct ip_info * afi = selector_info ( selector ) ; return subnet_from_raw ( HERE , selector . version , selector . bytes , selector . maskbits ) ; } 

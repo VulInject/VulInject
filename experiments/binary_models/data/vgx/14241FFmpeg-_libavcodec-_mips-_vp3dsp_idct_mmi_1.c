@@ -1,1 +1,1 @@
-void FUN1 ( VAR1 * VAR2 , ptrdiff_t VAR3 , VAR4 * VAR5 ) { FUN2 ( VAR2 , VAR3 , VAR5 , 1 ) ; }
+void ff_vp3_idct_put_mmi ( uint8_t * dest , ptrdiff_t line_size , int16_t * block ) { idct_mmi ( dest , line_size , block , 1 ) ; } 

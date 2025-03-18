@@ -1,0 +1,1 @@
+static GDBusConnection * virGDBusGetSystemBusInternal ( void ) { return systemBus ; } 

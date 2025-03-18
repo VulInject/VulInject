@@ -1,0 +1,1 @@
+static int nla_put_rpl_srh ( struct sk_buff * skb , int attrtype , struct rpl_iptunnel_encap * tuninfo ) { struct rpl_iptunnel_encap * data ; struct nlattr * nla ; int len ; len = RPL_IPTUNNEL_SRH_SIZE ( tuninfo -> srh ) ; nla = nla_reserve ( skb , attrtype , len ) ; data = nla_data ( nla ) ; memcpy ( data , tuninfo -> srh , len ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+void compaction_defer_reset ( struct zone * zone , int order , bool alloc_success ) { if ( alloc_success ) { zone -> compact_considered = 0 ; zone -> compact_defer_shift = 0 ; } trace_mm_compaction_defer_reset ( zone , order ) ; } 

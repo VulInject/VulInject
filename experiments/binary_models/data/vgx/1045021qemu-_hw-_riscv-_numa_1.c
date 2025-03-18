@@ -1,0 +1,1 @@
+uint64_t riscv_socket_mem_size ( const MachineState * ms , int socket_id ) { return ( socket_id < ms -> numa_state -> num_nodes ) ?ms -> numa_state -> nodes [ socket_id ] . node_mem : 0 ; } 

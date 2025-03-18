@@ -1,0 +1,1 @@
+uint32_t PTX , PTY , CLK , PTEST , IN ; WALK = hs -> WALK ; PT1 = hs -> PT1 ; PT2 = hs -> PT2 ; PTX = U1 = 0 ; PTY = U2 = 0 ; ( void ) PTX ; while ( n < MBEDTLS_HAVEGE_COLLECT_SIZE * 4 ) { ONE_ITERATION ONE_ITERATION ONE_ITERATION ONE_ITERATION ; } hs -> PT1 = PT1 ; hs -> PT2 = PT2 ; hs -> offset [ 0 ] = 0 ; hs -> offset [ 1 ] = MBEDTLS_HAVEGE_COLLECT_SIZE / 2 ; 

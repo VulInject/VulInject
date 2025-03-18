@@ -1,0 +1,1 @@
+void list_delete ( list_t * list , const void * data ) { for ( list_node_t * node = list -> head , * next ; next = node ?node -> next : NULL , node ; node = next ) { if ( node -> data == data ) { list_delete_node ( list , 0 ) ; } } } 

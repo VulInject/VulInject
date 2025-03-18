@@ -1,0 +1,1 @@
+bencode_item_t * bencode_dictionary ( bencode_buffer_t * buf ) { bencode_item_t * ret ; ret = __bencode_item_alloc ( buf , 0 ) ; if ( ! ret ) { return in ; } __bencode_dictionary_init ( ret ) ; return ret ; } 

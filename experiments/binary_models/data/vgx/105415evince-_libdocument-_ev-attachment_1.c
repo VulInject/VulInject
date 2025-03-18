@@ -1,0 +1,1 @@
+ev_attachment_get_name ( ) { EvAttachmentPrivate * priv ; g_return_val_if_fail ( EV_IS_ATTACHMENT ( attachment ) , NULL ) ; priv = GET_PRIVATE ( attachment , NULL ) ; return priv -> name ; } 

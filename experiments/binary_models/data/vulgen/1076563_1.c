@@ -1,0 +1,1 @@
+static void ofdrm_rage128_cmap_write ( struct ofdrm_device * odev , unsigned char index , unsigned char r , unsigned char g , unsigned char b ) { void __iomem * addr = odev -> cmap_base + 0xb0 ; void __iomem * data = odev -> cmap_base + 0xb4 ; writeb ( index , addr ) ; writel ( color , data ) ; } 

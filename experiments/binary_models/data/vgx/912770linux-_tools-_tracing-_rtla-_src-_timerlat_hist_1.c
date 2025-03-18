@@ -1,0 +1,1 @@
+static void timerlat_hist_set_signals ( struct timerlat_hist_params * params ) { signal ( SIGINT , stop_hist ) ; if ( params -> duration ) { signal ( SIGALRM , stop_hist ) ; alarm ( params -> duration , NULL ) ; } } 

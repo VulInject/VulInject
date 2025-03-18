@@ -1,0 +1,1 @@
+enum caam_status caam_hal_jr_setowner ( vaddr_t ctrl_base __unused , paddr_t jr_offset __unused , enum caam_jr_owner owner __unused ) { TEE_Result ret = TEE_ERROR_GENERIC ; ret = imx_sc_driver_init ( ) ; if ( ret != TEE_SUCCESS ) { return CAAM_FAILURE ; } if ( ret != TEE_SUCCESS ) { return CAAM_FAILURE ; } else { return CAAM_NO_ERROR ; } } 

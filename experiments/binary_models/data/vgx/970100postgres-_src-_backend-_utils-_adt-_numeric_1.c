@@ -1,0 +1,1 @@
+Datum numeric_ne ( PG_FUNCTION_ARGS ) { Numeric num1 = PG_GETARG_NUMERIC ( 0 ) ; Numeric num2 = PG_GETARG_NUMERIC ( 1 ) ; bool result ; result = cmp_numerics ( num1 , num2 ) != 0 ; PG_FREE_IF_COPY ( num1 , 0 ) ; PG_FREE_IF_COPY ( num2 , 1 ) ; PG_RETURN_BOOL ( result , NULL ) ; } 

@@ -1,0 +1,1 @@
+static int stmmac_test_vlanfilt_perfect ( struct stmmac_priv * priv ) { int ret , prev_cap = priv -> dma_cap . vlhash ; priv -> dma_cap . vlhash = 0 ; ret = __stmmac_test_vlanfilt ( priv ) ; priv -> dma_cap . vlhash = prev_cap ; return ret ; } 

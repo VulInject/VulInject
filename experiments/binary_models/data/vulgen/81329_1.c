@@ -1,0 +1,1 @@
+static __always_inline u16 get_lbr_cycles ( u64 info ) { u16 cycles = info & LBR_INFO_CYCLES ; return cycles ; } 

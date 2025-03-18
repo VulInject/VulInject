@@ -1,0 +1,1 @@
+size_t ATHEME_FATTR_WUR base64_decode_table ( const char * const restrict src , void * const restrict out , const size_t out_len , const char alphabet [ const restrict static 65 ] ) { unsigned char inverse_alphabet [ 128 ] ; return base64_decode_run ( src , out , out_len , inverse_alphabet ) ; } 

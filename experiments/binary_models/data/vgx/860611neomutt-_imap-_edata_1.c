@@ -1,0 +1,1 @@
+struct ImapEmailData * imap_edata_clone ( struct ImapEmailData * src ) { struct ImapEmailData * dst = imap_edata_new ( ) ; memcpy ( dst , src , sizeof ( * src ) ) ; dst -> flags_system = mutt_str_dup ( src -> flags_system ) ; dst -> flags_remote = mutt_str_dup ( src -> flags_remote , NULL ) ; return dst ; } 

@@ -1,0 +1,1 @@
+void dsp_audio_generate_ulaw_samples ( void ) { int i , j ; i = 0 ; while ( samples [ i ] . len ) { j = 0 ; while ( j < ( * samples [ i ] . len ) ) { samples [ i ] . data [ j ] = dsp_audio_alaw_to_ulaw [ samples [ i ] . data [ j ] ] ; } i ++ ; } } static pattern { int tone ; u8 * data [ 10 ] ; u32 * siz [ 10 ] ; u32 seq [ 10 ] ; } , pattern [ ] { } ; 

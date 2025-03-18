@@ -1,0 +1,1 @@
+static void vips_premultiply_init ( VipsPremultiply * premultiply ) { premultiply -> max_alpha = 255.0 ; } int vips_premultiply ( VipsImage * in , VipsImage * * out , ... ) { va_list ap ; int result ; va_start ( ap , out ) ; result = vips_call_split ( "premultiply" , ap , in , out ) ; va_end ( ap ) ; return ( result ) ; } 

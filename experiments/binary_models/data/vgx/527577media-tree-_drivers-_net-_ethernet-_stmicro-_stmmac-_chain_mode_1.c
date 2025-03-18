@@ -1,1 +1,1 @@
-static unsigned int FUN1 ( int VAR1 , int VAR2 ) { int VAR3 = 0 ; if ( ( VAR2 && ( VAR1 > VAR4 ) ) || ( ! VAR2 && ( VAR1 > VAR5 ) ) ) { VAR3 = 1 ; } return VAR3 ; }
+static unsigned int stmmac_is_jumbo_frm ( int len , int enh_desc ) { int ret = 0 ; if ( ( enh_desc && ( len > BUF_SIZE_8KiB ) ) || ( ! enh_desc && ( len > BUF_SIZE_2KiB ) ) ) { ret = 1 ; } return ret ; } 

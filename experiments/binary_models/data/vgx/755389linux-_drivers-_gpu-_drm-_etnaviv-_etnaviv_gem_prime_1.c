@@ -1,0 +1,1 @@
+static void * etnaviv_gem_prime_vmap_impl ( struct etnaviv_gem_object * etnaviv_obj ) { struct iosys_map map ; int ret ; lockdep_assert_held ( & etnaviv_obj -> lock ) ; ret = dma_buf_vmap ( etnaviv_obj -> base . import_attach -> dmabuf , & map ) ; if ( ret ) { return in ; } return map . vaddr ; } 

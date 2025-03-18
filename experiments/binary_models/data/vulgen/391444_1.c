@@ -1,0 +1,1 @@
+void tls12_record_layer_write_epoch_done ( struct tls12_record_layer * rl , uint16_t epoch ) { rl -> write = rl -> write_current ; tls12_record_protection_free ( rl -> write_previous ) ; rl -> write_previous = NULL ; } 

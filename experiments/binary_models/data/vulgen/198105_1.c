@@ -1,0 +1,1 @@
+static MemTxResult nubus_slot_read ( void * opaque , hwaddr addr , uint64_t * data , unsigned size , MemTxAttrs attrs ) { return MEMTX_DECODE_ERROR ; } static const MemoryRegionOps nubus_slot_ops = { . read_with_attrs = nubus_slot_read . write_with_attrs = nubus_slot_write . endianness = DEVICE_BIG_ENDIAN . valid = { . min_access_size = 1 . max_access_size = 4 } } ; 

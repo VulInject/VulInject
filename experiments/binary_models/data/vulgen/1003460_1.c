@@ -1,0 +1,1 @@
+void vuid_destroy_state ( client_state ) Vuid_state client_state ; { Vuid_seg * state = vuid_cstate_to_state ( client_state ) ; register Vuid_seg * seg ; for ( seg = state ; seg ; seg = seg_next ) { seg_next = seg -> next ; vuid_destroy_seg ( seg ) ; } } 

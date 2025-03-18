@@ -1,0 +1,1 @@
+static int m41t62_rtc_clear_ht ( struct udevice * dev ) { u8 val ; int ret ; ret = dm_i2c_read ( dev , M41T62_REG_ALARM_HOUR , & val , sizeof ( val ) ) ; if ( ret ) { return ret ; } ret = dm_i2c_write ( dev , M41T62_REG_ALARM_HOUR , & val , sizeof ( val ) ) ; if ( ret ) { return ret ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static void gfx_v10_0_write_data_to_reg ( struct amdgpu_ring * ring , int eng_sel , bool wc , uint32_t reg , uint32_t val ) { amdgpu_ring_write ( ring , PACKET3 ( PACKET3_WRITE_DATA , 3 ) ) ; amdgpu_ring_write ( ring , WRITE_DATA_ENGINE_SEL ( eng_sel ) | WRITE_DATA_DST_SEL ( 0 ) | ( wc ?WR_CONFIRM : 0 ) ) ; amdgpu_ring_write ( ring , reg ) ; amdgpu_ring_write ( ring , val ) ; } 

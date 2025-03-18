@@ -1,0 +1,1 @@
+void diva_os_set_controller_struct ( struct capi_ctr * ctrl ) { ctrl -> driver_name = DRIVERLNAME ; ctrl -> load_firmware = NULL ; ctrl -> reset_ctr = NULL ; ctrl -> owner = THIS_MODULE ; } 

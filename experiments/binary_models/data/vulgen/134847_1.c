@@ -1,0 +1,1 @@
+int main ( void ) { jvmtiCompiledMethodLoadInlineRecord rec __attribute__ ( ( unused ) ) ; PCStackInfo p __attribute__ ( ( unused ) ) ; return 0 ; } 

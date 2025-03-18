@@ -1,0 +1,1 @@
+virCaps * virStorageBackendGetCapabilities ( void ) { virCaps * caps ; size_t i ; if ( ! ( caps = virCapabilitiesNew ( VIR_ARCH_NONE , false , false ) ) ) { return in ; } for ( i = 0 ; i < virStorageBackendsCount ; i ++ ) { virCapabilitiesAddStoragePool ( caps , virStorageBackends [ i ] -> type ) ; } return caps ; } 

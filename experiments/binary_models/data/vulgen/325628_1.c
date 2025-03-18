@@ -1,0 +1,1 @@
+int cw1200_pm_init ( struct cw1200_pm_state * pm , struct cw1200_common * priv ) { setup_timer ( & pm -> stay_awake , cw1200_pm_stay_awake_tmo , ( unsigned long ) pm ) ; return 0 ; } 

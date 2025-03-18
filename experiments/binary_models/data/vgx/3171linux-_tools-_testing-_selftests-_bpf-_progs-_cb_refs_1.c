@@ -1,0 +1,1 @@
+int underflow_prog ( void * ctx ) { struct prog_test_ref_kfunc * p ; unsigned long sl = 0 ; p = bpf_kfunc_call_test_acquire ( & sl ) ; bpf_for_each_map_elem ( & array_map , cb1 , & p , 0 ) ; return 0 ; } 

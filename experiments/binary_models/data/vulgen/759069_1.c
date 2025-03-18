@@ -1,0 +1,1 @@
+static u32 hgsmi_hash_end ( u32 hash ) { hash ^= ( hash >> 11 ) ; hash += ( hash << 15 ) ; return hash ; } 

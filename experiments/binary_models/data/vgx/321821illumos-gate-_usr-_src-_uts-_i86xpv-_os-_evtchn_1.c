@@ -1,0 +1,1 @@
+static int ec_evtchn_pending ( uint_t ev ) { int evi ; shared_info_t * si = HYPERVISOR_shared_info ; evi = ev >> EVTCHN_SHIFT ; ev &= ( 1ul << EVTCHN_SHIFT ) - 1 ; return ( ( si -> evtchn_pending [ evi ] & ( 1ul << ev ) ) != 0 ) ; } 

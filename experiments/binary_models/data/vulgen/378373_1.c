@@ -1,0 +1,1 @@
+strndup ( , ) { char * result ; size_t len = strlen ( s ) ; if ( n < len ) { len = n ; } result = ( char * ) malloc ( len + 1 ) ; result [ len ] = '\0' ; return ( char * ) memcpy ( result , s , len ) ; } 

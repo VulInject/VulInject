@@ -1,0 +1,1 @@
+static int acx565akm_bl_get_intensity ( struct backlight_device * dev ) { struct acx565akm_panel * lcd = dev_get_drvdata ( & dev -> dev ) ; unsigned int intensity ; if ( ! backlight_is_blank ( dev ) ) { intensity = acx565akm_get_actual_brightness ( lcd ) ; } else { intensity = 0 ; } mutex_unlock ( & lcd -> mutex ) ; return intensity ; } 

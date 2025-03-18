@@ -1,0 +1,1 @@
+void hsw_irq_enable_vecs ( struct intel_engine_cs * engine ) { ENGINE_WRITE ( engine , RING_IMR , ~ engine -> irq_enable_mask ) ; gen6_gt_pm_unmask_irq ( engine -> gt , engine -> irq_enable_mask ) ; } 

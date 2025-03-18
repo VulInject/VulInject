@@ -1,0 +1,1 @@
+static inline void sh_rtc_setaie ( struct device * dev , unsigned int enable ) { struct sh_rtc * rtc = dev_get_drvdata ( dev ) ; unsigned int tmp ; spin_lock_irq ( & rtc -> lock ) ; tmp = readb ( rtc -> regbase + RCR1 ) ; if ( enable ) { tmp |= RCR1_AIE ; } else { tmp &= ~ RCR1_AIE ; } writeb ( tmp , rtc -> regbase + RCR1 ) ; } 

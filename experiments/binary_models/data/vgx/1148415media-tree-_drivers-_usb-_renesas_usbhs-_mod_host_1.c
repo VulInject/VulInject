@@ -1,0 +1,1 @@
+static struct usbhsh_request * usbhsh_ureq_alloc ( struct usbhsh_hpriv * hpriv , struct urb * urb , gfp_t mem_flags ) { struct usbhsh_request * ureq ; ureq = kmalloc ( sizeof ( usbhsh_request ) , mem_flags ) ; if ( ! ureq ) { return NULL ; } usbhs_pkt_init ( & ureq -> pkt ) ; ureq -> urb = urb ; usbhsh_urb_to_ureq ( urb ) = ureq ; return ureq ; } 

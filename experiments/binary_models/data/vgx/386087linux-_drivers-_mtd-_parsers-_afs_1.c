@@ -1,0 +1,1 @@
+static u32 word_sum_v2 ( u32 * p , u32 num ) { int sum = 0 ; int i ; for ( i = 0 ; i < num ; i ++ ) { u32 val ; val = p [ i ] ; if ( val > ~ sum ) { sum ++ ; } sum += val ; } return ~ sum ; } 

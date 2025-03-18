@@ -1,0 +1,1 @@
+static void stellaris_sys_reset_enter ( Object * obj , ResetType type ) { ssys_state * s = STELLARIS_SYS ( obj ) ; s -> pborctl = 0x7ffd ; s -> rcc = 0x078e3ac0 ; if ( ssys_board_class ( s ) == DID0_CLASS_SANDSTORM ) { s -> rcc2 = 0 ; } else { s -> rcc2 = 0x07802810 ; } s -> scgc [ 0 ] = 1 ; s -> dcgc [ 0 ] = 1 ; } 

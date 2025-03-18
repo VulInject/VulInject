@@ -1,0 +1,1 @@
+static void _chatwin_set_last_message ( ProfChatWin * chatwin , const char * const id , const char * const message ) { chatwin -> last_message = strdup ( message ) ; free ( chatwin -> last_msg_id ) ; chatwin -> last_msg_id = strdup ( id ) ; } 

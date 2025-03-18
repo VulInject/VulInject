@@ -1,0 +1,1 @@
+qboolean ItemParse_forecolor ( itemDef_t * item , int handle ) { int i ; float f ; for ( i = 0 ; i < 4 ; i ++ ) { item -> window . foreColor [ i ] = f ; item -> window . flags |= WINDOW_FORECOLORSET ; } return qtrue ; } 

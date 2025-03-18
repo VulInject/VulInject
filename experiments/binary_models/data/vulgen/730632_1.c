@@ -1,0 +1,1 @@
+int bcmbsc_write ( struct bcmbsc_softc * sc , const uint8_t * buf , size_t buflen ) { int i , error ; for ( i = 0 ; i < buflen ; i ++ ) { if ( error ) { return error ; } HWRITE4 ( sc , BSC_FIFO , buf [ i ] ) ; } return 0 ; } 

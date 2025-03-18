@@ -1,0 +1,1 @@
+static int epx_c3_open ( struct inode * inode , struct file * file ) { if ( nowayout ) { __module_get ( THIS_MODULE ) ; } epx_c3_start ( ) ; epx_c3_pet ( ) ; epx_c3_alive = 1 ; pr_info ( "Started watchdog timer\n" ) ; return nonseekable_open ( inode , file ) ; } 

@@ -1,0 +1,1 @@
+void ia_css_gc_encode ( struct sh_css_isp_gc_params * to , const struct ia_css_gc_config * from , unsigned int size ) { to -> gain_k1 = uDIGIT_FITTING ( ( int ) from -> gain_k1 , 16 , IA_CSS_GAMMA_GAIN_K_SHIFT ) ; to -> gain_k2 = uDIGIT_FITTING ( ( int ) from -> gain_k2 , 16 , IA_CSS_GAMMA_GAIN_K_SHIFT ) ; } 

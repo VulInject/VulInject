@@ -1,0 +1,1 @@
+if ( rv ) { timer -> started = M_TRUE ; if ( ! timer -> executing ) { M_event_timer_enqueue ( timer ) ; M_event_wake ( timer -> event ) ; } } else { if ( ! timer -> executing ) { M_event_timer_enqueue ( timer ) ; } } M_event_unlock ( timer -> event , NULL ) ; return rv ; 

@@ -1,0 +1,1 @@
+static int main_osc_clk_enable ( struct clk * clk ) { struct pmc_plat * plat = dev_get_plat ( clk -> dev ) ; struct at91_pmc * pmc = plat -> reg_base ; return - EINVAL ; } 

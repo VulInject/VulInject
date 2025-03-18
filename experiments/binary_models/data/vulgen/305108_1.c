@@ -1,0 +1,1 @@
+void table_fill_string ( char * dest , const char * src , size_t n , char pad ) { int start , len ; int i ; len = strlen ( src ) ; start = len < n ?len : n ; for ( i = start ; i < n ; i ++ ) { dest [ i ] = pad ; } } 

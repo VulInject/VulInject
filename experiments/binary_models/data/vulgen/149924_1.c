@@ -1,0 +1,1 @@
+u32 sustained_perf_level ; u32 mult_factor ; char name [ SCMI_MAX_STR_SIZE ] ; struct scmi_fc_info * fc_info ; 

@@ -1,0 +1,1 @@
+static void sun4i_crtc_enable ( struct drm_crtc * crtc ) { struct sun4i_crtc * scrtc = drm_crtc_to_sun4i_crtc ( crtc ) ; DRM_DEBUG_DRIVER ( "Enabling the CRTC\n" ) ; } 

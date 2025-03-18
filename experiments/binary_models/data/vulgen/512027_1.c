@@ -1,0 +1,1 @@
+int buf_fill ( void ) { int cnt ; static int fini = 0 ; if ( fini ) { return ( 0 ) ; } for ( ; ; ) { if ( ( cnt = ar_read ( buf , blksz ) ) > 0 ) { bufpt = buf ; bufend = buf + cnt ; rdcnt += cnt ; return ( cnt ) ; } if ( cnt < 0 ) { break ; } if ( frmt == NULL || ar_next ( ) < 0 ) { fini = 1 ; return ( 0 ) ; } rdcnt = 0 ; } return ( - 1 ) ; } 

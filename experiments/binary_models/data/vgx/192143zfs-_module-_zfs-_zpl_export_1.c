@@ -1,0 +1,1 @@
+static struct dentry * zpl_dentry_obtain_alias ( struct inode * ip ) { struct dentry * result ; result = d_obtain_alias ( ip ) ; result = d_alloc_anon ( ip ) ; if ( result == NULL ) { iput ( ip , NULL ) ; result = ERR_PTR ( - ENOMEM ) ; } return ( result ) ; } 

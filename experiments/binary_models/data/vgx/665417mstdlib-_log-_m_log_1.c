@@ -1,0 +1,1 @@
+const char * M_log_get_tag_name ( M_log_t * log , M_uint64 tag ) { const char * ret = NULL ; if ( log == NULL || ! M_uint64_is_power_of_two ( tag ) ) { return in ; } M_thread_rwlock_lock ( log -> rwlock , M_THREAD_RWLOCK_TYPE_READ ) ; if ( ! M_hash_u64str_get ( log -> tag_to_name , tag , & ret ) ) { ret = NULL ; } M_thread_rwlock_unlock ( log -> rwlock ) ; return ret ; } 

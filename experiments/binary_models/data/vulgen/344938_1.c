@@ -1,0 +1,1 @@
+void tls12_record_layer_free ( struct tls12_record_layer * rl ) { tls12_record_protection_free ( rl -> read_current ) ; tls12_record_protection_free ( rl -> write_current ) ; tls12_record_protection_free ( rl -> write_previous ) ; freezero ( rl , sizeof ( tls12_record_layer ) ) ; } 

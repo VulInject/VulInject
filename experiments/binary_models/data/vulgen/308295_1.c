@@ -1,0 +1,1 @@
+static void ibar_data_free ( struct MuttWindow * win , void * * ptr ) { struct IBarPrivateData * ibar_data = * ptr ; FREE ( & ibar_data -> status_format ) ; FREE ( & ibar_data -> ts_status_format ) ; FREE ( & ibar_data -> ts_icon_format ) ; } 

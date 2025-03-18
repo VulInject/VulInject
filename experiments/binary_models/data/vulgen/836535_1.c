@@ -1,0 +1,1 @@
+static void gic_eoi_irq ( struct irq_data * d ) { isb ( ) ; } 

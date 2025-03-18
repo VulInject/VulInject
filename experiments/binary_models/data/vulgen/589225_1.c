@@ -1,0 +1,1 @@
+ia64_set_rbs_bot ( ) { if ( stack_size > MAX_USER_STACK_SIZE ) { stack_size = MAX_USER_STACK_SIZE ; } current -> thread . rbs_bot = PAGE_ALIGN ( current -> mm -> start_stack - stack_size ) ; } 

@@ -1,0 +1,1 @@
+void __init add_highpages_with_active_regions ( int nid , unsigned long start_pfn , unsigned long end_pfn ) { phys_addr_t start , end ; u64 i ; for_each_free_mem_range ( , , , , , ) { unsigned long pfn = clamp_t ( , , , ) ; unsigned long e_pfn = clamp_t ( , , , ) ; for ( ; pfn < e_pfn ; pfn ++ ) { if ( pfn_valid ( pfn ) ) { free_highmem_page ( 0 ) ; } } } } 

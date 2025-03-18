@@ -1,0 +1,1 @@
+static void __add_dirty_inode ( struct inode * inode , enum inode_type type ) { struct f2fs_sb_info * sbi = F2FS_I_SB ( inode ) ; int flag = ( type == DIR_INODE ) ?FI_DIRTY_DIR : FI_DIRTY_FILE ; if ( is_inode_flag_set ( inode , flag ) ) { return ; } set_inode_flag ( inode , flag ) ; stat_inc_dirty_inode ( sbi , type ) ; } 

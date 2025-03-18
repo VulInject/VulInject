@@ -1,0 +1,1 @@
+static void __exit tz1090_pinctrl_exit ( void ) { platform_driver_unregister ( 0 ) ; } 

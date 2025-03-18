@@ -1,0 +1,1 @@
+void board_init_f ( ulong dummy ) { int ret ; arch_cpu_init ( ) ; init_uart_clk ( 1 ) ; timer_init ( ) ; ret = spl_init ( ) ; if ( ret ) { debug ( "spl_init() failed: %d\n" , ret ) ; hang ( ) ; } preloader_console_init ( ) ; enable_tzc380 ( ) ; spl_dram_init ( ) ; board_init_r ( NULL , 0 ) ; } 

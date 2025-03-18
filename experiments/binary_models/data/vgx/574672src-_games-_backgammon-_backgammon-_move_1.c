@@ -1,0 +1,1 @@
+static int bcomp ( struct BOARD * a , struct BOARD * b ) { int * aloc = a -> b_board ; int * bloc = b -> b_board ; int i ; int result ; for ( i = 0 ; i < 26 ; i ++ ) { result = cturn * ( aloc [ i ] - bloc [ i ] ) ; } return ( 0 ) ; } 

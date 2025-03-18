@@ -1,0 +1,1 @@
+static __always_inline int test_local_storage ( void ) { __u64 * val ; val = bpf_get_local_storage ( & cgroup_storage , 0 ) ; * val += 1 ; return 1 ; } 

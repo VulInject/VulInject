@@ -1,1 +1,1 @@
-int FUN1 ( unsigned long VAR1 , unsigned long VAR2 , unsigned long VAR3 ) { FUN2 ( VAR4 , NULL ) ; return VAR5 . FUN1 ( VAR1 , VAR2 , VAR3 ) ; }
+int diag14 ( unsigned long rx , unsigned long ry1 , unsigned long subcode ) { diag_stat_inc ( DIAG_STAT_X014 , NULL ) ; return diag_amode31_ops . diag14 ( rx , ry1 , subcode ) ; } 

@@ -1,0 +1,1 @@
+u_int64_t tsl_lux ( u_int32_t , int ) const struct cfattach tsl_ca = { sizeof ( tsl_softc ) tsl_match tsl_attach } ; 

@@ -1,0 +1,1 @@
+int mailmessage_fetch_section_header ( mailmessage * msg_info , struct mailmime * mime , char * * result , size_t * result_len ) { return msg_info -> msg_driver -> msg_fetch_section_header ( msg_info , mime , result , result_len ) ; } 

@@ -1,0 +1,1 @@
+module_param ( enomem_retry , bool , 0 ) ; MODULE_PARM_DESC ( enomem_retry , "Retry insert even if -ENOMEM was returned (default: off)" ) ; test_obj { int value ; int node ; } 

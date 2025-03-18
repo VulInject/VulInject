@@ -1,0 +1,1 @@
+static char * create_cfname ( np_bsdjob_t * job ) { char * cfname ; cfname = ( char * ) malloc ( strlen ( job -> np_host ) + 3 + 3 + 1 ) ; ASSERT ( cfname , MALLOC_ERR ) ; ( void ) memset ( cfname , 0 , strlen ( job -> np_host ) + 3 + 3 + 1 ) ; ( void ) sprintf ( cfname , "%s%s%s" , "cfA" , job -> np_request_id , job -> np_host ) ; return ( cfname ) ; } 

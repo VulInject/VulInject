@@ -1,0 +1,1 @@
+static int qeth_l2_send_delmac ( struct qeth_card * card , __u8 * mac ) { int rc ; QETH_CARD_TEXT ( card , 2 , "L2Delmac" ) ; rc = qeth_l2_send_setdelmac ( card , mac , IPA_CMD_DELVMAC ) ; if ( rc == 0 ) { card -> info . mac_bits &= ~ QETH_LAYER2_MAC_REGISTERED ; } return rc ; } 

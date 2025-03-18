@@ -1,0 +1,1 @@
+static int pci200_open ( struct net_device * dev ) { port_t * port = dev_to_port ( dev ) ; int result = hdlc_open ( dev ) ; if ( result ) { return result ; } sca_open ( dev ) ; pci200_set_iface ( port , NULL ) ; sca_flush ( port -> card ) ; return 0 ; } 

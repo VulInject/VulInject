@@ -1,1 +1,1 @@
-void FUN1 ( struct VAR1 * VAR2 , int VAR3 , int VAR4 ) { if ( VAR3 >= FUN2 ( VAR5 ) ) { return ; } VAR3 = VAR5 [ VAR3 ] ; FUN3 ( VAR4 , VAR2 -> VAR6 + ( VAR3 << VAR2 -> VAR7 ) ) ; }
+void au_serial_out ( struct uart_port * p , int offset , int value ) { if ( offset >= ARRAY_SIZE ( au_io_out_map ) ) { return ; } offset = au_io_out_map [ offset ] ; __raw_writel ( value , p -> membase + ( offset << p -> regshift ) ) ; } 

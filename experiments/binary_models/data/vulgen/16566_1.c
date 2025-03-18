@@ -1,0 +1,1 @@
+static void __init mx27ads_regulator_init ( void ) { struct gpio_chip * vchip ; vchip = kzalloc ( sizeof ( * vchip ) , GFP_KERNEL ) ; vchip -> owner = THIS_MODULE ; vchip -> label = "LCD" ; vchip -> base = MX27ADS_LCD_GPIO ; vchip -> ngpio = 1 ; vchip -> direction_output = vgpio_dir_out ; vchip -> set = vgpio_set ; gpiochip_add_data ( vchip , NULL ) ; } 

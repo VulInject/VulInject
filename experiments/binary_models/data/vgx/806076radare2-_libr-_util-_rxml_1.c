@@ -1,0 +1,1 @@
+R_API void r_xml_init ( RXml * x , void * stack , size_t stacksize ) { r_return_if_fail ( x ) ; x -> line = 1 ; x -> stack = ( ut8 * ) stack ; x -> stacksize = stacksize ; * x -> stack = 0 ; x -> elem = x -> pi = x -> attr = ( char * ) x -> stack ; x -> state = R_XML_STATE_INIT ; } 

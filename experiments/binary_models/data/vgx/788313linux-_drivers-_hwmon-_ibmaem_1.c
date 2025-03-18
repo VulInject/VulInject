@@ -1,0 +1,1 @@
+static void aem_delete ( struct aem_data * data ) { list_del ( & data -> list ) ; aem_remove_sensors ( data ) ; kfree ( data -> rs_resp ) ; hwmon_device_unregister ( data -> hwmon_dev ) ; ipmi_destroy_user ( data -> ipmi . user ) ; platform_set_drvdata ( data -> pdev , NULL ) ; platform_device_unregister ( data -> pdev ) ; ida_free ( & aem_ida , data -> id ) ; } 

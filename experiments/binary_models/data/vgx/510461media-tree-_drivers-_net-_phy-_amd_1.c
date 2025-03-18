@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "AMD PHY driver" ) ; MODULE_AUTHOR ( "Heiko Schocher<hs@denx.de>" ) ; MODULE_LICENSE ( "GPL" ) ; static int am79c_ack_interrupt ( struct phy_device * phydev ) { int err ; err = phy_read ( phydev , MII_BMSR ) ; err = phy_read ( phydev , MII_AM79C_IR ) ; if ( err < 0 ) { return err ; } return 0 ; } 

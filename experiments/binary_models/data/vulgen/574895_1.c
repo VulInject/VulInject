@@ -1,0 +1,1 @@
+void seq_putc ( struct seq_file * m , char c ) { m -> buf [ m -> count ++ ] = c ; } 

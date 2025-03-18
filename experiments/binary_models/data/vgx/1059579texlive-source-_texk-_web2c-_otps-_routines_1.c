@@ -1,0 +1,1 @@
+void fill_in_left ( void ) { out_int ( OTP_STOP , 0 ) ; fill_in ( left_false_holes , NULL ) ; } 

@@ -1,0 +1,1 @@
+static int cmp_regions ( const void * a , const void * b ) { const struct vm_region * r1 = * ( const vm_region * * ) a ; const struct vm_region * r2 = * ( const vm_region * * ) b ; if ( r1 -> size > r2 -> size ) { return 1 ; } return memcmp ( ( void * ) r1 -> va , ( void * ) r2 -> va , r1 -> size ) ; } 

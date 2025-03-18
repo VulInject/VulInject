@@ -1,0 +1,1 @@
+static void exit_prologue ( enum pluto_exit_code exit_code ) { pluto_exit_code = exit_code ; pluto_sd ( PLUTO_SD_STOPPING , exit_code ) ; } 

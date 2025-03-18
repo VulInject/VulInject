@@ -1,0 +1,1 @@
+your application , ; { char * out ; size_t size = 0 ; if ( prompt ) { fputs ( prompt , stdout ) ; fflush ( stdout ) ; } if ( getline ( & out , & size , stdin ) < 0 ) { return NULL ; } while ( * out && ( out [ strlen ( out ) - 1 ] == '\r' || out [ strlen ( out ) - 1 ] == '\n' ) ) { out [ strlen ( out ) - 1 ] = '\0' ; } return out ; } 

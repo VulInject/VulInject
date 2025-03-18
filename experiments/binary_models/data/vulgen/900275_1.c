@@ -1,0 +1,1 @@
+static void ieee80211_sched_scan_cancel ( struct ieee80211_local * local ) { cfg80211_sched_scan_stopped_rtnl ( local -> hw . wiphy , 0 ) ; } 

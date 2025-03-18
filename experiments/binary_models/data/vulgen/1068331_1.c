@@ -1,0 +1,1 @@
+void sc_wait ( struct hfi1_devdata * dd ) { int i ; for ( i = 0 ; i < dd -> num_send_contexts ; i ++ ) { struct send_context * sc = dd -> send_contexts [ i ] . sc ; sc_wait_for_packet_egress ( sc , 0 ) ; } } 

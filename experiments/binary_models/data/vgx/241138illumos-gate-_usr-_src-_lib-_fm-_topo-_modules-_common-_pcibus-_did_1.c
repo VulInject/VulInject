@@ -1,0 +1,1 @@
+static slotnm_t * slotnm_create ( topo_mod_t * mp , int dev , char * str ) { slotnm_t * p ; if ( ( p = topo_mod_alloc ( mp , sizeof ( slotnm_t ) ) ) == NULL ) { return ( NULL ) ; } p -> snm_mod = mp ; p -> snm_next = NULL ; p -> snm_dev = dev ; p -> snm_name = topo_mod_strdup ( mp , str ) ; if ( p -> snm_name == NULL ) { return ( NULL ) ; } return ( p ) ; } 

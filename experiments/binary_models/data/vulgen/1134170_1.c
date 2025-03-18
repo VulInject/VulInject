@@ -1,0 +1,1 @@
+static void __init m527x_i2c_init ( void ) { u8 par ; par = readb ( MCFGPIO_PAR_FECI2C ) ; par |= 0x0f ; writeb ( par , MCFGPIO_PAR_FECI2C ) ; u16 par ; par = readw ( MCFGPIO_PAR_FECI2C ) ; par |= 0x0f ; } 

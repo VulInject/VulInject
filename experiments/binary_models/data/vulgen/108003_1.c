@@ -1,0 +1,1 @@
+static DEFINE_SPINLOCK ( sched_debug_lock ) ; { if ( m ) { nsec = - nsec ; do_div ( nsec , 0 ) ; return - nsec ; } else { printk ( x ) ; } } 0 ; { if ( ( long long ) nsec < 0 ) { nsec = - nsec ; do_div ( nsec , 1000000 ) ; return - nsec ; } do_div ( nsec , 1000000 ) ; return nsec ; } 

@@ -1,0 +1,1 @@
+void au0828_rc_unregister ( struct au0828_dev * dev ) { struct au0828_rc * ir = dev -> ir ; if ( ! ir ) { return ; } rc_unregister_device ( ir -> rc ) ; dev -> ir = NULL ; } 

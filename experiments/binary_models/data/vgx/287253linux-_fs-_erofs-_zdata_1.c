@@ -1,0 +1,1 @@
+static int erofs_cpu_hotplug_init ( void ) { int state ; state = cpuhp_setup_state_nocalls ( CPUHP_AP_ONLINE_DYN , "fs/erofs:online" , erofs_cpu_online , erofs_cpu_offline ) ; erofs_cpuhp_state = state ; return 0 ; } 

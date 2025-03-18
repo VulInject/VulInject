@@ -1,0 +1,1 @@
+USHORT CopyBufferToAnsiString ( void * _pDest , const void * _pSrc , const char delimiter , size_t _maxlength ) { PCHAR dst = ( PCHAR ) _pDest ; PCHAR src = ( PCHAR ) _pSrc ; USHORT _length = _maxlength ; while ( _length && ( * src != delimiter ) ) { * dst ++ = * src ++ ; -- _length ; } return _length ; } 

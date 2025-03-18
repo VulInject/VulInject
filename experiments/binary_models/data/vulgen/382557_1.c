@@ -1,0 +1,1 @@
+void clear_em_logging ( struct extent_map_tree * tree , struct extent_map * em ) { clear_bit ( EXTENT_FLAG_LOGGING , & em -> flags ) ; if ( extent_map_in_tree ( em ) ) { try_merge_map ( tree , em ) ; } } 

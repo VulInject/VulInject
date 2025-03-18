@@ -1,0 +1,1 @@
+static struct vring_desc_extra * vring_alloc_desc_extra ( unsigned int num ) { struct vring_desc_extra * desc_extra ; unsigned int i ; desc_extra = kmalloc_array ( num , sizeof ( vring_desc_extra ) , GFP_KERNEL ) ; if ( ! desc_extra ) { return NULL ; } for ( i = 0 ; i < num - 1 ; i ++ ) { desc_extra [ i ] . next = i + 1 ; } return desc_extra ; } 

@@ -1,0 +1,1 @@
+static void * rbthreads_wait_milliseconds_do ( void * arg ) { struct uwsgi_rbthread * urbt = ( uwsgi_rbthread * ) arg ; urbt -> ret = urbts . orig_wait_milliseconds_hook ( urbt -> timeout , NULL ) ; return NULL ; } 

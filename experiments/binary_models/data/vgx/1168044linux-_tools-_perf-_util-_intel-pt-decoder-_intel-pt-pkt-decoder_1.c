@@ -1,0 +1,1 @@
+static int intel_pt_get_pip ( const unsigned char * buf , size_t len , struct intel_pt_pkt * packet ) { int payload = 0 ; if ( len < 8 ) { return INTEL_PT_NEED_MORE_BYTES ; } packet -> type = INTEL_PT_PIP ; memcpy_le64 ( & payload , buf + 2 , 6 ) ; packet -> payload = payload ; return 8 ; } 

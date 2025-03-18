@@ -1,0 +1,1 @@
+static int __maybe_unused kxtj9_suspend ( struct device * dev ) { struct i2c_client * client = to_i2c_client ( dev ) ; struct kxtj9_data * tj9 = i2c_get_clientdata ( client ) ; struct input_dev * input_dev = tj9 -> input_dev ; if ( input_dev -> users ) { kxtj9_disable ( tj9 ) ; } mutex_unlock ( & input_dev -> mutex ) ; return 0 ; } 

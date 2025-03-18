@@ -1,0 +1,1 @@
+static unsigned long qat_dh_fn_id ( unsigned int len , bool g2 ) { int bitslen = len << 3 ; switch ( bitslen ) { case 1536 : return g2 ?PKE_DH_G2_1536 : PKE_DH_1536 ; case 2048 : return g2 ?PKE_DH_G2_2048 : PKE_DH_2048 ; case 3072 : return g2 ?PKE_DH_G2_3072 : PKE_DH_3072 ; case 4096 : return g2 ?PKE_DH_G2_4096 : PKE_DH_4096 ; default : return 0 ; } } 

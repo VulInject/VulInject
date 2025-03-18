@@ -1,0 +1,1 @@
+int ospf_nbr_nbma_poll_interval_unset ( struct ospf * ospf , struct in_addr addr ) { struct ospf_nbr_nbma * nbr_nbma ; nbr_nbma = ospf_nbr_nbma_lookup ( ospf , addr ) ; if ( nbr_nbma -> v_poll != OSPF_POLL_INTERVAL_DEFAULT ) { nbr_nbma -> v_poll = OSPF_POLL_INTERVAL_DEFAULT ; } return 1 ; } 

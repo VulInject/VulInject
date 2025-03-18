@@ -1,0 +1,1 @@
+static int new_dir ( X509_LOOKUP * lu ) { BY_DIR * a ; if ( ( a = malloc ( sizeof ( * a ) ) ) == NULL ) { X509error ( ERR_R_MALLOC_FAILURE ) ; return 0 ; } if ( ( a -> buffer = BUF_MEM_new ( ) ) == NULL ) { X509error ( ERR_R_MALLOC_FAILURE ) ; return 0 ; } a -> dirs = NULL ; lu -> method_data = ( char * ) a ; return 1 ; } 

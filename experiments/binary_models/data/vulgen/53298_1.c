@@ -1,0 +1,1 @@
+static inline void identical_pvr_fixup ( unsigned long node ) { unsigned int pvr ; if ( model && strstr ( model , "440EP" ) ) { pvr = cur_cpu_spec -> pvr_value | 0x8 ; identify_cpu ( 0 , pvr ) ; DBG ( "Using logical pvr %x for %s\n" , pvr , model ) ; } } 

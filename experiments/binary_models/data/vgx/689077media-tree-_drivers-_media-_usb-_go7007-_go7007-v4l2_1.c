@@ -1,0 +1,1 @@
+static int vidioc_g_tuner ( struct file * file , void * priv , struct v4l2_tuner * t ) { struct go7007 * go = video_drvdata ( file ) ; strlcpy ( t -> name , "Tuner" , sizeof ( t -> name ) ) ; return call_all ( & go -> v4l2_dev , tuner , g_tuner , t ) ; } 

@@ -1,0 +1,1 @@
+void proto_reg_handoff_mrp_mvrp ( int ) static const value_string attribute_type_vals [ ] { { MVRP_ATTRIBUTE_TYPE_VID "VLAN Identifier" } { 0 NULL } } ; ; 

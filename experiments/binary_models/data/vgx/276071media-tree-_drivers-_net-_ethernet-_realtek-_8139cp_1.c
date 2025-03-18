@@ -1,0 +1,1 @@
+static void cp_set_rx_mode ( struct net_device * dev ) { unsigned long flags ; struct cp_private * cp = netdev_priv ( dev ) ; spin_lock_irqsave ( & cp -> lock , flags ) ; __cp_set_rx_mode ( dev , NULL ) ; spin_unlock_irqrestore ( & cp -> lock , flags ) ; } 

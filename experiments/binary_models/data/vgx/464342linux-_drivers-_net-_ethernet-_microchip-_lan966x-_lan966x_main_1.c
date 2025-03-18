@@ -1,0 +1,1 @@
+static bool lan966x_port_unique_address ( struct net_device * dev ) { struct lan966x_port * port = netdev_priv ( dev ) ; struct lan966x * lan966x = port -> lan966x ; int p ; for ( p = 0 ; p < lan966x -> num_phys_ports ; ++ p ) { port = lan966x -> ports [ p ] ; if ( ether_addr_equal ( dev -> dev_addr , port -> dev -> dev_addr ) ) { return false ; } } return true ; } 

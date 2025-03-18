@@ -1,0 +1,1 @@
+static irqreturn_t gemini_wdt_interrupt ( int irq , void * data ) { struct gemini_wdt * gwdt = data ; return IRQ_HANDLED ; } static const struct watchdog_ops gemini_wdt_ops = { . start = gemini_wdt_start . stop = gemini_wdt_stop . ping = gemini_wdt_ping . set_timeout = gemini_wdt_set_timeout . owner = THIS_MODULE } ; 

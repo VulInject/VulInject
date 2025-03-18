@@ -1,0 +1,1 @@
+bool rtw_is_cckratesonly_included ( u8 * rate ) { u32 i = 0 ; while ( rate [ i ] != 0 ) { i ++ ; } return true ; } 

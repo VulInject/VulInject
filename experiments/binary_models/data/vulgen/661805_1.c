@@ -1,0 +1,1 @@
+void __meminit vmemmap_verify ( pte_t * pte , int node , unsigned long start , unsigned long end ) { unsigned long pfn = pte_pfn ( * pte ) ; int actual_node = early_pfn_to_nid ( pfn ) ; } 

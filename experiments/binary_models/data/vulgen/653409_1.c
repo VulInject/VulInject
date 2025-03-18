@@ -1,0 +1,1 @@
+void qedi_dbg_exit ( void ) { debugfs_remove_recursive ( qedi_dbg_root ) ; } 

@@ -1,0 +1,1 @@
+static inline u_int m_extunref ( struct mbuf * m ) { int refs = 0 ; mtx_enter ( & m_extref_mtx ) ; if ( MCLISREFERENCED ( m ) ) { m -> m_ext . ext_nextref -> m_ext . ext_prevref = m -> m_ext . ext_prevref ; m -> m_ext . ext_prevref -> m_ext . ext_nextref = m -> m_ext . ext_nextref ; refs = 1 ; } mtx_leave ( & m_extref_mtx ) ; return ( refs ) ; } 

@@ -1,0 +1,1 @@
+. type = _type , . modified = 1 , . channel2 = IIO_MOD_ # # _axis , . info_mask_separate = BIT ( IIO_CHAN_INFO_RAW ) , . info_mask_shared_by_type = BIT ( IIO_CHAN_INFO_SCALE ) | BIT ( IIO_CHAN_INFO_SAMP_FREQ ) , . scan_index = _index , . scan_type = { . sign = 's' . realbits = 16 . storagebits = 16 . endianness = IIO_LE } , ; 

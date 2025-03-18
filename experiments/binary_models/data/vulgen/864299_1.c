@@ -1,0 +1,1 @@
+static void gicv2m_irq_domain_free ( struct irq_domain * domain , unsigned int virq , unsigned int nr_irqs ) { struct irq_data * d = irq_domain_get_irq_data ( domain , virq ) ; struct v2m_data * v2m = irq_data_get_irq_chip_data ( d ) ; BUG_ON ( nr_irqs != 1 ) ; irq_domain_free_irqs_parent ( domain , virq , nr_irqs ) ; } 

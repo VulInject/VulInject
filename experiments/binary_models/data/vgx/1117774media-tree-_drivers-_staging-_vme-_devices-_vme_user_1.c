@@ -1,0 +1,1 @@
+static void vme_user_vm_open ( struct vm_area_struct * vma ) { struct vme_user_vma_priv * vma_priv = vma -> vm_private_data ; atomic_inc ( & vma_priv -> refcnt ) ; } 

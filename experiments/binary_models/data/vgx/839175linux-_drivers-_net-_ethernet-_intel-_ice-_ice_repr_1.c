@@ -1,0 +1,1 @@
+static int ice_repr_open ( struct net_device * netdev ) { struct ice_repr * repr = ice_netdev_to_repr ( netdev ) ; struct ice_vf * vf ; vf = repr -> vf ; vf -> link_forced = true ; vf -> link_up = true ; ice_vc_notify_vf_link_state ( vf ) ; netif_carrier_on ( netdev ) ; netif_tx_start_all_queues ( netdev , NULL ) ; return 0 ; } 

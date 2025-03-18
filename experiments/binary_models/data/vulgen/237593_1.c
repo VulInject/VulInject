@@ -1,0 +1,1 @@
+static void wrapped_avframe_release_buffer ( void * unused , uint8_t * data ) { AVFrame * frame = ( AVFrame * ) data ; } 

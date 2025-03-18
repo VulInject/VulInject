@@ -1,0 +1,1 @@
+int __must_check pcmcia_request_irq ( struct pcmcia_device * p_dev , irq_handler_t handler ) { int ret ; ret = request_irq ( p_dev -> irq , handler , IRQF_SHARED , p_dev -> devname , p_dev -> priv ) ; if ( ! ret ) { p_dev -> _irq = 1 ; } return ret ; } 

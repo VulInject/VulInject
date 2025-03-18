@@ -1,0 +1,1 @@
+static net_data_t * net_data_create ( void ) { net_data_t * data = M_malloc_zero ( sizeof ( * data ) ) ; M_time_elapsed_start ( & data -> starttv ) ; return data ; } 

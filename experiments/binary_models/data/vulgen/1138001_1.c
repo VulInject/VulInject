@@ -1,0 +1,1 @@
+static void ath10k_snoc_htt_tx_cb ( struct ath10k_ce_pipe * ce_state ) { struct ath10k * ar = ce_state -> ar ; struct sk_buff * skb ; while ( ath10k_ce_completed_send_next ( ce_state , ( void * * ) & skb ) == 0 ) { dma_unmap_single ( ar -> dev , ATH10K_SKB_CB ( skb ) -> paddr , skb -> len , DMA_TO_DEVICE ) ; ath10k_htt_hif_tx_complete ( ar , skb ) ; } } 

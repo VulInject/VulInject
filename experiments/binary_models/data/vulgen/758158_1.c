@@ -1,0 +1,1 @@
+static void virtio_keyboard_init ( Object * obj ) { VirtIOInputHID * vhid = VIRTIO_INPUT_HID ( obj ) ; VirtIOInput * vinput = VIRTIO_INPUT ( obj ) ; vhid -> handler = & virtio_keyboard_handler ; virtio_input_init_config ( vinput , virtio_keyboard_config ) ; } 

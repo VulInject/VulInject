@@ -1,0 +1,1 @@
+static inline void regs_set_gpr ( struct pt_regs * regs , unsigned int offset , unsigned long val ) { if ( offset ) { * ( unsigned long * ) ( ( unsigned long ) regs + offset ) = val ; } } 

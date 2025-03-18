@@ -1,0 +1,1 @@
+DAT_RETURN dat_sr_init ( void ) { DAT_RETURN status ; status = dat_os_lock_init ( & g_sr_lock ) ; if ( DAT_SUCCESS != status ) { return ( status ) ; } status = dat_dictionary_create ( & g_sr_dictionary ) ; if ( DAT_SUCCESS != status ) { return ( status ) ; } return ( DAT_SUCCESS ) ; } 

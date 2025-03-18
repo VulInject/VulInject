@@ -1,0 +1,1 @@
+( arch_local_irq_save ) ; void arch_local_irq_enable ( void ) { cfs_time_t tmp ; __volatile__ } 

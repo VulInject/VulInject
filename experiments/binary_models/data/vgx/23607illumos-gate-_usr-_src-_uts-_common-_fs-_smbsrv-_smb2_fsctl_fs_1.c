@@ -1,0 +1,1 @@
+static uint32_t smb2_fsctl_get_compression ( smb_request_t * sr , smb_fsctl_t * fsctl ) { _NOTE ( ) uint16_t compress_state = 0 ; int rc ; rc = smb_mbc_encodef ( fsctl -> in_mbc , "w" , compress_state ) ; return ( NT_STATUS_SUCCESS ) ; } 

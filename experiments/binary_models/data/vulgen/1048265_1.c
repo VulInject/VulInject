@@ -1,0 +1,1 @@
+static void bgmac_dma_ring_desc_free ( struct bgmac * bgmac , struct bgmac_dma_ring * ring , int num_slots ) { struct device * dma_dev = bgmac -> dma_dev ; int size ; size = num_slots * sizeof ( bgmac_dma_desc ) ; dma_free_coherent ( dma_dev , size , ring -> cpu_base , ring -> dma_base ) ; } 

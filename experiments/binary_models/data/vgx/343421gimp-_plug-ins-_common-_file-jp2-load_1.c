@@ -1,0 +1,1 @@
+get_image_precision ( , ) { switch ( precision ) { case 32 : return GIMP_PRECISION_U32_NON_LINEAR ; case 16 : if ( linear ) { return GIMP_PRECISION_U16_LINEAR ; } return GIMP_PRECISION_U16_NON_LINEAR ; default : if ( linear ) { return GIMP_PRECISION_U8_LINEAR ; } return GIMP_PRECISION_U8_NON_LINEAR ; } } 

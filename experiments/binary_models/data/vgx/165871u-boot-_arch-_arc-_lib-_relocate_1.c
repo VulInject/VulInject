@@ -1,0 +1,1 @@
+int clear_bss ( void ) { ulong dst_addr = ( ulong ) & __bss_start + gd -> reloc_off ; size_t len = ( size_t ) & __bss_end - ( size_t ) & __bss_start ; return 0 ; } 

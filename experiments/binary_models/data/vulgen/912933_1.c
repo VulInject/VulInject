@@ -1,0 +1,1 @@
+COMPILER_RT_ABI dst_t __truncdfhf2 ( double a ) { return __truncXfYf2__ ( a ) ; } AEABI_RTABI dst_t __aeabi_d2h ( int a ) { return __truncdfhf2 ( a ) ; } COMPILER_RT_ALIAS ( , ) 

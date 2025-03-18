@@ -1,0 +1,1 @@
+static void netx_pci_remove ( struct pci_dev * dev ) { struct uio_info * info = pci_get_drvdata ( dev ) ; iowrite32 ( 0 , info -> mem [ 0 ] . internal_addr + DPM_HOST_INT_EN0 ) ; uio_unregister_device ( info ) ; pci_release_regions ( dev ) ; pci_disable_device ( dev ) ; iounmap ( info -> mem [ 0 ] . internal_addr ) ; } 

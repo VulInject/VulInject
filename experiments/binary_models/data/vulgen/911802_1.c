@@ -1,0 +1,1 @@
+static void CopyBit ( FT_Bitmap * b2 , FT_Bitmap * b1 ) { int y ; char * p1 , * p2 ; p1 = ( char * ) b1 -> buffer ; p2 = ( char * ) b2 -> buffer ; for ( y = 0 ; y < b1 -> rows ; y ++ ) { p1 += b1 -> pitch ; p2 += b2 -> pitch ; } } 

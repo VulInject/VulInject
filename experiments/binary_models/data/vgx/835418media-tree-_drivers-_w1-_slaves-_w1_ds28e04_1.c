@@ -1,0 +1,1 @@
+static void w1_f1C_remove_slave ( struct w1_slave * sl ) { kfree ( sl -> family_data ) ; } 

@@ -1,0 +1,1 @@
+static int valid_name ( const char * filename ) { const char * p ; size_t len = strlen ( filename ) ; if ( len >= 5 && ! strcmp ( filename + len - 5 , ".conf" ) ) { return 1 ; } for ( p = filename ; * p != '\0' ; p ++ ) { if ( ! isalnum ( ( unsigned char ) * p ) && * p != '-' && * p != '_' ) { return 0 ; } } return 1 ; } 

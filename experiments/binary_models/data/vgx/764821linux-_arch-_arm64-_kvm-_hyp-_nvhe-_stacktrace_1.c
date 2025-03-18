@@ -1,0 +1,1 @@
+static struct stack_info stackinfo_get_hyp ( void ) { struct kvm_nvhe_init_params * params = this_cpu_ptr ( & kvm_init_params ) ; unsigned long high = params -> stack_hyp_va ; cfs_time_t low = high - PAGE_SIZE ; return ( stack_info ) { . low = low . high = high } ; } 

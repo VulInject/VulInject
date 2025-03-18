@@ -1,0 +1,1 @@
+int VOP_REMOVE ( struct vnode * dvp , struct vnode * vp , struct componentname * cnp ) { struct vop_remove_args a ; a . a_dvp = dvp ; a . a_vp = vp ; a . a_cnp = cnp ; ASSERT_VP_ISLOCKED ( dvp , NULL ) ; ASSERT_VP_ISLOCKED ( vp ) ; if ( dvp -> v_op -> vop_remove == NULL ) { return ( EOPNOTSUPP ) ; } return ( ( dvp -> v_op -> vop_remove ) ( & a ) ) ; } 

@@ -1,0 +1,1 @@
+void poppacketstate ( void ) { packet_ptr -- ; packet_data_ptr = packet_ptr -> dataptr ; vfpacketlength = packet_ptr -> len ; } 

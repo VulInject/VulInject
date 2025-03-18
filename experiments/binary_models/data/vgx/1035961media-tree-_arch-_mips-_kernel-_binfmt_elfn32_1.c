@@ -1,0 +1,1 @@
+short pr_cursig ; unsigned int pr_sigpend ; unsigned int pr_sighold ; pid_t pr_pid ; pid_t pr_ppid ; pid_t pr_pgrp ; pid_t pr_sid ; int pr_utime ; struct compat_timeval pr_stime ; struct compat_timeval pr_cutime ; struct compat_timeval pr_cstime ; elf_gregset_t pr_reg ; int pr_fpvalid ; 

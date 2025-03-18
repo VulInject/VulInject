@@ -1,0 +1,1 @@
+static unsigned int gpio_regmap_addr ( unsigned int addr ) { return addr ; } 

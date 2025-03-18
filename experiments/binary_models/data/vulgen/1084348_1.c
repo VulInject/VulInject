@@ -1,0 +1,1 @@
+static char * core_alua_dump_state ( int state ) { return NULL ; } 

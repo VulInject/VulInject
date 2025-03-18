@@ -1,0 +1,1 @@
+npi_status_t npi_ipp_get_pfifo_rd_ptr ( npi_handle_t handle , uint8_t portn , uint16_t * rd_ptr ) { uint64_t value ; IPP_REG_RD ( handle , portn , IPP_PFIFO_RD_PTR_REG , & value ) ; * rd_ptr = value & 0xfff ; return ( NPI_SUCCESS ) ; } 

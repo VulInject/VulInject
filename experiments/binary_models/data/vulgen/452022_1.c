@@ -1,0 +1,1 @@
+static void gov_set_update_util ( struct policy_dbs_info * policy_dbs , unsigned int delay_us ) { struct cpufreq_policy * policy = policy_dbs -> policy ; int cpu ; gov_update_sample_delay ( policy_dbs , delay_us ) ; policy_dbs -> last_sample_time = 0 ; for_each_cpu ( , ) { struct cpu_dbs_info * cdbs = & per_cpu ( cpu_dbs , cpu ) ; } } 

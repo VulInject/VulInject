@@ -1,0 +1,1 @@
+static void ospf_delete_from_if ( struct interface * ifp , struct ospf_interface * oi ) { struct route_node * rn ; struct prefix p ; p = * oi -> address ; p . prefixlen = IPV4_MAX_BITLEN ; rn = route_node_lookup ( IF_OIFS ( oi -> ifp ) , & p ) ; assert ( rn ) ; rn -> info = NULL ; route_unlock_node ( rn ) ; route_unlock_node ( rn ) ; } 

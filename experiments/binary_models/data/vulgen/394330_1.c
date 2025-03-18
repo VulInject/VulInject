@@ -1,0 +1,1 @@
+static inline uint64_t flash_read ( const FlashConfig * c , uint64_t byte_addr ) { uint64_t addr = BASE_ADDR + byte_addr ; switch ( c -> bank_width ) { case 1 : return qtest_readb ( c -> qtest , addr ) ; case 2 : return qtest_readw ( c -> qtest , addr ) ; case 4 : return qtest_readl ( c -> qtest , addr ) ; case 8 : return qtest_readq ( c -> qtest , addr ) ; default : } } 

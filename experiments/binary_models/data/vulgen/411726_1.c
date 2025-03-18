@@ -1,0 +1,1 @@
+void OF_boot ( char * bootspec ) { { cell_t name ; cell_t nargs ; cell_t nreturns ; cell_t bootspec ; } , args int l ; args . name = ADR2CELL ( "boot" ) ; args . nargs = 1 ; args . nreturns = 0 ; args . bootspec = ADR2CELL ( bootspec ) ; openfirmware ( & args ) ; panic ( "OF_boot failed" ) ; } 

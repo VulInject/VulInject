@@ -1,0 +1,1 @@
+static int owl_reset_status ( struct reset_controller_dev * rcdev , unsigned long id ) { struct owl_reset * reset = to_owl_reset ( rcdev ) ; const struct owl_reset_map * map = & reset -> reset_map [ id ] ; u32 reg ; int ret ; ret = regmap_read ( reset -> regmap , map -> reg , & reg ) ; return ! ( map -> bit & reg ) ; } 

@@ -1,0 +1,1 @@
+static int chipset_ready_uevent ( struct controlvm_message_header * msg_hdr ) { int res ; res = kobject_uevent ( & chipset_dev -> acpi_device -> dev . kobj , KOBJ_ONLINE ) ; if ( msg_hdr -> flags . response_expected ) { controlvm_respond ( msg_hdr , res , 0 ) ; } return res ; } 

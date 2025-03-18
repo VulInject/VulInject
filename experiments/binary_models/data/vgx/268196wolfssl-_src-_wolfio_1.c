@@ -1,0 +1,1 @@
+int GNRC_SendTo ( WOLFSSL * ssl , char * buf , int sz , void * _ctx ) { sock_tls_t * ctx = ( sock_tls_t * ) _ctx ; int ret = 0 ; ( void ) ssl ; if ( ! ctx ) { return WOLFSSL_CBIO_ERR_GENERAL ; } ret = sock_udp_send ( & ctx -> conn . udp , ( unsigned char * ) buf , sz , & ctx -> peer_addr ) ; return ret ; } 

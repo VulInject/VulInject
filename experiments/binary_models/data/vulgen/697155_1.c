@@ -1,0 +1,1 @@
+int cscfg_configfs_add_config ( struct cscfg_config_desc * config_desc ) { struct config_group * new_group ; int err ; new_group = cscfg_create_config_group ( config_desc ) ; if ( IS_ERR ( new_group ) ) { return PTR_ERR ( new_group ) ; } if ( ! err ) { config_desc -> fs_group = new_group ; } return err ; } 

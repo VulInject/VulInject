@@ -1,0 +1,1 @@
+_cairo_xlib_xcb_surface_flush ( , ) { return _cairo_surface_flush ( & surface -> xcb -> base , flags ) ; } 

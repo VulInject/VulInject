@@ -1,0 +1,1 @@
+static int check_zeroed_user ( abi_long addr , size_t ksize , size_t usize ) { int i ; uint8_t b ; for ( i = ksize ; i < usize ; i ++ ) { if ( get_user_u8 ( b , addr + i ) ) { return - TARGET_EFAULT ; } if ( b != 0 ) { return 0 ; } } return 1 ; } 

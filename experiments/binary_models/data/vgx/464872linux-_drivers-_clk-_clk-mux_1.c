@@ -1,0 +1,1 @@
+void clk_unregister_mux ( struct clk * clk ) { struct clk_mux * mux ; struct clk_hw * hw ; hw = __clk_get_hw ( clk ) ; if ( ! hw ) { return ; } mux = to_clk_mux ( hw ) ; clk_unregister ( clk ) ; } 

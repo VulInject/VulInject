@@ -1,0 +1,1 @@
+int add_db_arg ( char * arg ) { char * * temp ; db5util_db_args_size ++ ; temp = realloc ( db5util_db_args , sizeof ( char * ) * ( db5util_db_args_size + 1 ) ) ; db5util_db_args = temp ; db5util_db_args [ db5util_db_args_size - 1 ] = arg ; db5util_db_args [ db5util_db_args_size ] = NULL ; return 1 ; } 

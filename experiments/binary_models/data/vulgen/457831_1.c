@@ -1,0 +1,1 @@
+static void MD5_memcpy PROTO_LIST ( ( POINTER , POINTER , unsigned int ) ) ; static void MD5_memset PROTO_LIST ( ) ; static unsigned char PADDING [ 64 ] { 0x80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 } ; ; 

@@ -1,0 +1,1 @@
+static int vpk # # BITS # # _hfn ( , , , ) { int i saturated = 0 S390Vector tmp for ( i = 0 ; i < ( 128 / TBITS ) ; i ++ ) { uint # # BITS # # _t src ; } } ; else { src = s390_vec_read_element # # BITS ( v3 , i - ( 128 / BITS ) ) ; } s390_vec_write_element # # TBITS ( & tmp , i , fn ( src , & saturated ) ) ; v1 = tmp ; return saturated ; 

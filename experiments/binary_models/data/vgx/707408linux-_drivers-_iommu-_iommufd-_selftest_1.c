@@ -1,0 +1,1 @@
+static struct selftest_access * iommufd_access_get ( int fd ) { struct file * file ; file = fget ( fd ) ; if ( file -> f_op != & iommfd_test_staccess_fops ) { fput ( file ) ; return ERR_PTR ( - EBADFD ) ; } return file -> private_data ; } 

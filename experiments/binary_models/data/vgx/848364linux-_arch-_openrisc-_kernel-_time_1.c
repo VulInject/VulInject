@@ -1,0 +1,1 @@
+static int openrisc_timer_set_next_event ( unsigned long delta , struct clock_event_device * dev ) { openrisc_timer_set_next ( delta , NULL ) ; return 0 ; } 

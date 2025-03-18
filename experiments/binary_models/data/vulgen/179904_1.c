@@ -1,0 +1,1 @@
+static inline void StopDMA ( void ) { custom . aud [ 0 ] . audvol = custom . aud [ 1 ] . audvol = 0 ; custom . aud [ 2 ] . audvol = custom . aud [ 3 ] . audvol = 0 ; custom . dmacon = AMI_AUDIO_OFF ; } 

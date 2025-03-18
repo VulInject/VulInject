@@ -1,0 +1,1 @@
+( ppi_create_instance ) ; void ppi_delete_instance ( struct ppi_if * ppi ) { peripheral_free_list ( ppi -> info -> pin_req ) ; } 

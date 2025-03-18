@@ -1,0 +1,1 @@
+extern int list_is_empty ( list_t * l ) { int n ; xassert ( l != NULL ) ; xassert ( l -> magic == LIST_MAGIC ) ; n = l -> count ; slurm_rwlock_unlock ( & l -> mutex ) ; return ( n == 0 ) ; } 

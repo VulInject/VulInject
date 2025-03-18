@@ -1,0 +1,1 @@
+static void __svc_init_bc ( struct svc_serv * serv ) { INIT_LIST_HEAD ( & serv -> sv_cb_list ) ; init_waitqueue_head ( & serv -> sv_cb_waitq ) ; } 

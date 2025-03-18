@@ -1,0 +1,1 @@
+public const char * magic_descriptor ( struct magic_set * ms , int fd ) { return file_or_stream ( ms , NULL , NULL ) ; } 

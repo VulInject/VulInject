@@ -1,0 +1,1 @@
+__truncdfsf2 ( ) { int exp ; long mant ; union float_long fl ; union double_long dl1 ; dl1 . d = a1 ; if ( ! dl1 . l . upper && ! dl1 . l . lower ) { return ( float ) ( 0 ) ; } exp = EXPD ( dl1 ) - EXCESSD + EXCESS ; mant = MANTD ( dl1 ) >> 6 ; mant += 1 ; mant >>= 1 ; mant &= ~ HIDDEN ; fl . l = PACK ( SIGND ( dl1 ) , exp , mant ) ; return ( fl . f ) ; } 

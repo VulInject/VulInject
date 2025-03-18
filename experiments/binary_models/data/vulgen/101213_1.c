@@ -1,0 +1,1 @@
+Display * display ; Window window ; Window root ; Window subwindow ; Time time ; int x , y ; int x_root , y_root ; unsigned int state ; unsigned int button ; int same_screen ; 

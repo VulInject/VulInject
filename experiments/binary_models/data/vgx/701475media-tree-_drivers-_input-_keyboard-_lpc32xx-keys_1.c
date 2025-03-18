@@ -1,0 +1,1 @@
+static void lpc32xx_kscan_close ( struct input_dev * dev ) { struct lpc32xx_kscan_drv * kscandat = input_get_drvdata ( dev ) ; writel ( 1 , LPC32XX_KS_IRQ ( kscandat -> kscan_base ) ) ; clk_disable_unprepare ( kscandat -> clk , NULL ) ; } 

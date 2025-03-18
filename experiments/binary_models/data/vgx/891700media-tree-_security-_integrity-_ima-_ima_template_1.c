@@ -1,0 +1,1 @@
+static struct ima_template_field * lookup_template_field ( const char * field_id ) { int i ; for ( i = 0 ; i < ARRAY_SIZE ( supported_fields ) ; i ++ ) { if ( strncmp ( supported_fields [ i ] . field_id , field_id , IMA_TEMPLATE_FIELD_ID_MAX_LEN ) == 0 ) { return & supported_fields [ i ] ; } } return NULL ; } 

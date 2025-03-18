@@ -1,0 +1,1 @@
+entry_header { u8 id [ 8 ] ; __le32 priority [ NUM_PRIORITY ] ; __le32 addr ; __le16 len ; __le16 offset ; } rsc_hdr { __le16 slv_id ; __le16 header_offset ; __le16 data_offset ; __le16 cnt ; __le16 version ; __le16 reserved [ 3 ] ; } cmd_db_header { u8 magic [ 4 ] ; struct rsc_hdr header [ MAX_SLV_ID ] ; __le32 checksum ; __le32 reserved ; u8 data [ ] ; } 

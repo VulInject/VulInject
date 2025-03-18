@@ -1,0 +1,1 @@
+static int dm_mmc_hs400_prepare_ddr ( struct udevice * dev ) { if ( ops -> hs400_prepare_ddr ) { return ops -> hs400_prepare_ddr ( dev ) ; } return 0 ; } 

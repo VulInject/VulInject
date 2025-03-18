@@ -1,0 +1,1 @@
+AP_DECLARE ( ) ap_h1_terminate_header ( ) { char crlf [ ] CRLF ; ; apr_size_t buflen ; buflen = strlen ( crlf , NULL ) ; ap_xlate_proto_to_ascii ( crlf , buflen ) ; return apr_brigade_write ( bb , NULL , NULL , crlf , buflen ) ; } 

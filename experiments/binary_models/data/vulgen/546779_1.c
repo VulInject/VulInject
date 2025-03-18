@@ -1,0 +1,1 @@
+"%1switch (eruleno) {\n" ; for ( i = 0 ; ( r = rc [ i ] ) != NULL ; i ++ ) { for ( ; r ; r = r -> kids ) { print ( "%1case %d: \n" , r -> ern , r ) ; } print ( "%s%2break;\n" , str [ i ] ) ; } 

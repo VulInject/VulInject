@@ -1,0 +1,1 @@
+static void saproxy_iter_dtor ( zend_object_iterator * iter ) { php_com_saproxy_iter * I = ( php_com_saproxy_iter * ) Z_PTR ( iter -> data ) ; zval_ptr_dtor ( & I -> proxy_obj ) ; efree ( I ) ; } 

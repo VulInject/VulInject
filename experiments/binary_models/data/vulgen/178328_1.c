@@ -1,0 +1,1 @@
+static int __init octeon_sha1_mod_init ( void ) { return crypto_register_shash ( & octeon_sha1_alg ) ; } 

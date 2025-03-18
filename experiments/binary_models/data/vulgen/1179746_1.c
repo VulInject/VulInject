@@ -1,0 +1,1 @@
+static int tc_act_parse_tun_decap ( struct mlx5e_tc_act_parse_state * parse_state , const struct flow_action_entry * act , struct mlx5e_priv * priv , struct mlx5_flow_attr * attr ) { return 0 ; } 

@@ -1,0 +1,1 @@
+void drop_slab ( void ) { int nid ; int shift = 0 ; cfs_time_t freed ; { freed = 0 ; for_each_online_node ( ) { if ( fatal_signal_pending ( current ) ) { return ; } freed += drop_slab_node ( nid ) ; } } ( freed >> shift ++ ) > 1 ; } 

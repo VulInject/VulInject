@@ -1,0 +1,1 @@
+static dma_addr_t tile_dma_map_page ( struct device * dev , struct page * page , unsigned long offset , size_t size , enum dma_data_direction direction , unsigned long attrs ) { BUG_ON ( ! valid_dma_direction ( direction ) ) ; BUG_ON ( offset + size > PAGE_SIZE ) ; return page_to_pa ( page ) + offset ; } 

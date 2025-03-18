@@ -1,0 +1,1 @@
+static int __init ebtable_nat_init ( void ) { int ret = ebt_register_template ( & frame_nat , frame_nat_table_init ) ; if ( ret ) { return ret ; } ret = register_pernet_subsys ( & frame_nat_net_ops ) ; if ( ret ) { return ret ; } return ret ; } 

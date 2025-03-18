@@ -1,0 +1,1 @@
+PrintTextTimeStampf ( , , , ) { va_list args ; char * buf ; va_start ( args , format ) ; buf = g_strdup_vprintf ( format , args ) ; va_end ( args ) ; PrintTextTimeStamp ( sess , buf , timestamp ) ; } char * pntevts_text [ NUM_XP ] ; char * pntevts [ NUM_XP ] ; static char * const pevt_genmsg_help [ ] { N_ ( "Left message" ) N_ ( "Right message" ) } ; ; 

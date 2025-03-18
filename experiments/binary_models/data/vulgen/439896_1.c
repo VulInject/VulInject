@@ -1,0 +1,1 @@
+int bar ( int * fn ( int ) , int arg1 , int arg2 ) int bar ( int * fn ( int ) , int arg1 , int arg2 ) { int res = 0 ; res += fn ( arg1 ) ; return res ; } 

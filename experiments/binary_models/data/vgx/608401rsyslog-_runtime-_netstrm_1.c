@@ -1,0 +1,1 @@
+static rsRetVal EnableKeepAlive ( netstrm_t * pThis ) { DEFiRet ; ISOBJ_TYPE_assert ( pThis , netstrm ) ; iRet = pThis -> Drvr . EnableKeepAlive ( pThis -> pDrvrData , NULL ) ; RETiRet ; } 

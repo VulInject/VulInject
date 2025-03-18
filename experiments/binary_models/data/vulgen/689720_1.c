@@ -1,0 +1,1 @@
+static void M_io_buffer_destroy_cb ( M_io_layer_t * layer ) { M_io_handle_t * handle = M_io_layer_get_handle ( layer ) ; M_buf_cancel ( handle -> readbuf ) ; M_buf_cancel ( handle -> writebuf ) ; M_free ( handle ) ; } 

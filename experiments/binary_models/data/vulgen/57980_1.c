@@ -1,0 +1,1 @@
+static void mid_writel ( struct ns16550_plat * plat , int offset , int value ) { unsigned char * addr ; addr = ( unsigned char * ) plat -> base + offset ; writel ( value , addr + plat -> reg_offset ) ; } 

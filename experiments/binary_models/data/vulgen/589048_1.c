@@ -1,0 +1,1 @@
+void ixgbevf_free_tx_resources ( struct ixgbevf_ring * tx_ring ) { ixgbevf_clean_tx_ring ( tx_ring ) ; vfree ( tx_ring -> tx_buffer_info ) ; tx_ring -> tx_buffer_info = NULL ; dma_free_coherent ( tx_ring -> dev , tx_ring -> size , tx_ring -> desc , tx_ring -> dma ) ; tx_ring -> desc = NULL ; } 

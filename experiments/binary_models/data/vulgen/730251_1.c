@@ -1,0 +1,1 @@
+int smum_populate_requested_graphic_levels ( struct pp_hwmgr * hwmgr , struct amd_pp_profile * request ) { return 0 ; } 

@@ -1,0 +1,1 @@
+static void nvkm_cgrp_del ( struct kref * kref ) { struct nvkm_cgrp * cgrp = container_of ( kref , typeof ( * cgrp ) , kref ) ; struct nvkm_runl * runl = cgrp -> runl ; mutex_destroy ( & cgrp -> mutex ) ; nvkm_vmm_unref ( & cgrp -> vmm ) ; kfree ( cgrp ) ; } 

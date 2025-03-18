@@ -1,0 +1,1 @@
+static char * netname ( int mid ) { register struct netmach * np ; for ( np = netmach ; np -> nt_mid != 0 ; np ++ ) { if ( np -> nt_mid == mid ) { return ( np -> nt_machine ) ; } } return ( NOSTR ) ; } 

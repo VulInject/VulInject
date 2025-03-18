@@ -1,0 +1,1 @@
+static u8 dca_common_get_tag ( struct device * dev , int cpu ) { struct dca_provider * dca ; u8 tag ; unsigned long flags ; raw_spin_lock_irqsave ( & dca_lock , flags ) ; dca = dca_find_provider_by_dev ( dev ) ; if ( ! dca ) { raw_spin_unlock_irqrestore ( & dca_lock , flags ) ; return - ENODEV ; } raw_spin_unlock_irqrestore ( & dca_lock , flags ) ; return tag ; } 

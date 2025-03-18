@@ -1,0 +1,1 @@
+void signal_remove_id ( int signal_id , SIGNAL_FUNC func , void * user_data ) { Signal * rec ; g_return_if_fail ( signal_id >= 0 ) ; rec = g_hash_table_lookup ( signals , GINT_TO_POINTER ( signal_id ) ) ; if ( rec != NULL ) { signal_remove_func ( rec , func , user_data ) ; } } 

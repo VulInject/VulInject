@@ -1,0 +1,1 @@
+static int nm_undef ( void * data , const GElf_Sym * sym , const char * name , const mdb_syminfo_t * sip , const char * obj ) { return ( 0 ) ; } 

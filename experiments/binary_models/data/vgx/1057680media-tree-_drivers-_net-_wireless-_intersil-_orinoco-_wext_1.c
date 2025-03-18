@@ -1,0 +1,1 @@
+static int orinoco_ioctl_getfreq ( struct net_device * dev , struct iw_request_info * info , struct iw_freq * frq , char * extra ) { struct orinoco_private * priv = ndev_priv ( dev ) ; int tmp ; tmp = orinoco_hw_get_freq ( priv ) ; if ( tmp < 0 ) { return tmp ; } frq -> m = tmp * 100000 ; return 0 ; } 

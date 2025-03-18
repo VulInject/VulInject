@@ -1,0 +1,1 @@
+GSList * windows_get_sorted ( void ) { GSList * tmp , * sorted ; sorted = NULL ; for ( tmp = windows ; tmp != NULL ; tmp = tmp -> next ) { WINDOW_REC * rec = tmp -> data ; } return sorted ; } 

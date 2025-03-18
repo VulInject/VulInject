@@ -1,0 +1,1 @@
+PerlIO_list_t * PerlIO_clone_list ( pTHX_ PerlIO_list_t * proto , CLONE_PARAMS * param ) { PerlIO_list_t * list = NULL ; if ( proto ) { int i ; list = PerlIO_list_alloc ( aTHX ) ; for ( i = 0 ; i < proto -> cur ; i ++ ) { SV * arg = proto -> array [ i ] . arg ; PERL_UNUSED_ARG ( param ) ; PerlIO_list_push ( , , ) } } return list ; } 

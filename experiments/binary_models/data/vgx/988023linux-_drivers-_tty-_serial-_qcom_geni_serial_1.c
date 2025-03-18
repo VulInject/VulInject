@@ -1,0 +1,1 @@
+static void qcom_geni_serial_start_tx_fifo ( struct uart_port * uport ) { u32 irq_en ; irq_en = readl ( uport -> membase + SE_GENI_M_IRQ_EN ) ; irq_en |= M_TX_FIFO_WATERMARK_EN | M_CMD_DONE_EN ; writel ( DEF_TX_WM , uport -> membase + SE_GENI_TX_WATERMARK_REG ) ; writel ( irq_en , uport -> membase + SE_GENI_M_IRQ_EN ) ; } 

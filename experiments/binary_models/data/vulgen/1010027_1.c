@@ -1,0 +1,1 @@
+static struct scp_paths * scp_get_paths ( uint32_t channel_id ) { struct scp_paths * paths ; paths = scp_paths ; while ( paths ) { pr_signals_handle ( ) ; if ( paths -> channel_id == channel_id ) { return paths ; } paths = paths -> next ; } return NULL ; } 

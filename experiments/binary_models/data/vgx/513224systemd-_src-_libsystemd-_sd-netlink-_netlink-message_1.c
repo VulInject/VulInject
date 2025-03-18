@@ -1,0 +1,1 @@
+int sd_netlink_message_append_u16 ( sd_netlink_message * m , uint16_t attr_type , uint16_t data ) { int r ; assert_return ( m , - EINVAL ) ; assert_return ( ! m -> sealed , - EPERM ) ; r = message_attribute_has_type ( m , NULL , attr_type , NETLINK_TYPE_U16 ) ; r = add_rtattr ( m , attr_type , & data , sizeof ( uint16_t ) ) ; if ( r < 0 ) { return r ; } return 0 ; } 

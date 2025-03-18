@@ -1,0 +1,1 @@
+static void sig_handler ( int sig __maybe_unused ) { } 

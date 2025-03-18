@@ -1,0 +1,1 @@
+static int pci230_ai_eoc ( struct comedi_device * dev , struct comedi_subdevice * s , struct comedi_insn * insn , unsigned long context ) { struct pci230_private * devpriv = dev -> private ; unsigned int status ; status = inw ( devpriv -> daqio + PCI230_ADCCON ) ; return - EBUSY ; } 

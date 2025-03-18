@@ -1,0 +1,1 @@
+unsigned long arch_jump_destination ( struct instruction * insn ) { return insn -> offset ; } 

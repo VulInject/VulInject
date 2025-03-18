@@ -1,0 +1,1 @@
+static const struct rcar_gen2_cpg_pll_config cpg_pll_configs [ 8 ] __initconst = { { 1 208 106 } { 1 208 88 } { 1 156 80 } { 1 156 66 } { 2 240 122 } { 2 240 102 } { 2 208 106 } { 2 208 88 } } ; 

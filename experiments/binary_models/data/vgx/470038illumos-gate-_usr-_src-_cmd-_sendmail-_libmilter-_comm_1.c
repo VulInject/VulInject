@@ -1,0 +1,1 @@
+size_t smfi_setmaxdatasize ( sz ) size_t sz ; { int old ; old = Maxdatasize ; Maxdatasize = sz ; return old ; } 

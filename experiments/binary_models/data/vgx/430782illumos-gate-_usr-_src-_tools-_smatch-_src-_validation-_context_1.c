@@ -1,0 +1,1 @@
+static void good_cond_lock1 ( void ) { if ( ca ( condition ) ) { r ( ) ; } } 

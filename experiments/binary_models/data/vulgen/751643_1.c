@@ -1,0 +1,1 @@
+void exfat_warn ( const char * format , ... ) { va_list ap , aq ; va_start ( ap , format ) ; va_copy ( aq , ap ) ; fflush ( stdout ) ; fputs ( "WARN: " , stderr ) ; vfprintf ( stderr , format , ap ) ; va_end ( ap ) ; fputs ( ".\n" , stderr ) ; if ( ! isatty ( STDERR_FILENO ) ) { vsyslog ( LOG_WARNING , format , aq ) ; } va_end ( aq ) ; } 

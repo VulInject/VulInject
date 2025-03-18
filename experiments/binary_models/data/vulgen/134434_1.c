@@ -1,0 +1,1 @@
+static int at91_rst_deassert ( struct reset_ctl * reset_ctl ) { struct at91_reset * reset = dev_get_priv ( reset_ctl -> dev ) ; return at91_rst_update ( reset , reset_ctl -> id , false ) ; } int at91_reset_ops = { . of_xlate = at91_reset_of_xlate . rst_assert = at91_rst_assert . rst_deassert = at91_rst_deassert } ; 

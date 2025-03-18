@@ -1,0 +1,1 @@
+static void lpc_apply_welch_window_sse2 ( const int32_t * data , int len , double * w_data ) { int n2 = len >> 1 ; x86_reg i = - n2 * sizeof ( int32_t ) ; x86_reg j = n2 * sizeof ( int32_t ) ; volatile } 

@@ -1,0 +1,1 @@
+static int do_bcb ( struct cmd_tbl * cmdtp , int flag , int argc , char * const argv [ ] ) { struct cmd_tbl * c ; if ( argc < 2 ) { return CMD_RET_USAGE ; } argc -- ; argv ++ ; c = find_cmd_tbl ( argv [ 0 ] , cmd_bcb_sub , ARRAY_SIZE ( cmd_bcb_sub ) ) ; if ( ! c ) { return CMD_RET_USAGE ; } return c -> cmd ( cmdtp , flag , argc , argv ) ; } 

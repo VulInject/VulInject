@@ -1,0 +1,1 @@
+if ( sigheaders ) { g = string_catn ( g , sigheaders -> s , sigheaders -> ptr ) ; } out ( void ) string_from_gstring ( g ) ; gstring_release_unused ( g ) ; return g ; bad_arg_ret log_write ( 0 , LOG_MAIN , "ARC: bad signing-specification (%s)" , s ) ; ret_sigheaders g = sigheaders ; out 

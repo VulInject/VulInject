@@ -1,0 +1,1 @@
+static void ess_free_cb ( void * r ) { ess_category_attributes_t * u = ( ess_category_attributes_t * ) r ; g_free ( u -> oid ) ; } 

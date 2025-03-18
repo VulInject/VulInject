@@ -1,0 +1,1 @@
+void seq_puts ( struct seq_file * m , const char * s ) { int len = strlen ( s ) ; if ( m -> count + len >= m -> size ) { return ; } memcpy ( m -> buf + m -> count , s , len ) ; m -> count += len ; } 

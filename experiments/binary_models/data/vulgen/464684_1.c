@@ -1,0 +1,1 @@
+static void ocelot_fdma_activate_chan ( struct ocelot * ocelot , dma_addr_t dma , int chan ) { ocelot_fdma_writel ( ocelot , MSCC_FDMA_DCB_LLP ( chan ) , dma ) ; ocelot_fdma_writel ( ocelot , MSCC_FDMA_CH_ACTIVATE , BIT ( chan ) ) ; } 

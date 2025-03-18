@@ -1,0 +1,1 @@
+static void bus_put ( const struct bus_type * bus ) { struct subsys_private * sp = bus_to_subsys ( bus ) ; subsys_put ( sp , NULL ) ; subsys_put ( sp ) ; } 

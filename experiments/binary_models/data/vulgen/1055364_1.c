@@ -1,0 +1,1 @@
+key -> key . r64 [ 0 ] = t0 & 0xffc0fffffffULL ; key -> key . r64 [ 1 ] = ( ( t0 >> 44 ) | ( t1 << 20 ) ) & 0xfffffc0ffffULL ; key -> key . r64 [ 2 ] = ( ( t1 >> 24 ) ) & 0x00ffffffc0fULL ; key -> precomputed_s . r64 [ 0 ] = key -> key . r64 [ 1 ] * 20 ; 

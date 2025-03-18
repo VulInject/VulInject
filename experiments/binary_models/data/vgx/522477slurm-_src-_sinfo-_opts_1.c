@@ -1,0 +1,1 @@
+static char * _get_prefix ( char * token ) { char * pos , * prefix ; if ( token == NULL ) { return NULL ; } pos = strchr ( token , ( int ) '%' ) ; if ( pos == token ) { return NULL ; } pos [ 0 ] = '\0' ; prefix = xstrdup ( token ) ; pos [ 0 ] = '%' ; memmove ( token , pos , ( strlen ( pos ) + 1 ) ) ; return prefix ; } 

@@ -1,0 +1,1 @@
+void update_now_usec ( struct timeval * tv ) { update_now ( tv -> tv_sec ) ; if ( now > last || ( now == last && tv -> tv_usec > now_usec ) ) { now_usec = tv -> tv_usec ; } } 

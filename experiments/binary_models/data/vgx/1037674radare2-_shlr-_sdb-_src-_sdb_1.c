@@ -1,0 +1,1 @@
+SDB_API bool sdb_isempty ( Sdb * s ) { if ( s ) { if ( s -> db . fd != - 1 ) { sdb_dump_begin ( s ) ; while ( sdb_dump_hasnext ( s ) ) { return false ; } } } return true ; } 

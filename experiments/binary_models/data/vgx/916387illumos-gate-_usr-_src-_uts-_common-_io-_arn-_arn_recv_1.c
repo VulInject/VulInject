@@ -1,0 +1,1 @@
+uint_t arn_softint_handler ( caddr_t data ) { struct arn_softc * sc = ( arn_softc * ) data ; ARN_LOCK ( sc ) ; if ( sc -> sc_rx_pend ) { sc -> sc_rx_pend = 0 ; ARN_UNLOCK ( sc ) ; arn_rx_handler ( sc , NULL ) ; return ( DDI_INTR_CLAIMED ) ; } ARN_UNLOCK ( sc ) ; return ( DDI_INTR_UNCLAIMED ) ; } 

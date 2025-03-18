@@ -1,0 +1,1 @@
+static void sprintf_le_key ( char * buf , struct reiserfs_key * key ) { if ( key ) { sprintf ( buf , "[%d %d %s %s]" , le32_to_cpu ( key -> k_dir_id ) , le32_to_cpu ( key -> k_objectid ) , le_offset ( key ) , le_type ( key ) ) ; } else { } } 

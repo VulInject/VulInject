@@ -1,0 +1,1 @@
+static void meson_clk_pll_disable ( struct clk_hw * hw ) { struct clk_regmap * clk = to_clk_regmap ( hw ) ; struct meson_clk_pll_data * pll = meson_clk_pll_data ( clk ) ; meson_parm_write ( clk -> map , & pll -> rst , 1 ) ; } 

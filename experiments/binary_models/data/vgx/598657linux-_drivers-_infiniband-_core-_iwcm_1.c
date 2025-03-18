@@ -1,0 +1,1 @@
+static int iwcm_modify_qp_err ( struct ib_qp * qp ) { struct ib_qp_attr qp_attr ; qp_attr . qp_state = IB_QPS_ERR ; return ib_modify_qp ( qp , & qp_attr , IB_QP_STATE ) ; } 

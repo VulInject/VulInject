@@ -1,0 +1,1 @@
+MODULE_PARM_DESC ( msi , "Control MSI interrupts: 0-disable (default), 1-enable" ) ; static void ddb_irq_disable ( struct ddb * dev ) { ddbwritel ( dev , 0 , MSI1_ENABLE ) ; } 

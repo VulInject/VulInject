@@ -1,0 +1,1 @@
+int lapic_intr_msi ( struct vm * vm , uint64_t addr , uint64_t msg ) { int delmode , vec ; uint32_t dest ; bool phys ; if ( ( addr & MSI_X86_ADDR_MASK ) != MSI_X86_ADDR_BASE ) { return ( - 1 ) ; } dest = ( addr >> 12 ) & 0xff ; delmode = msg & APIC_DELMODE_MASK ; vec = msg & 0xff ; vlapic_deliver_intr ( vm , LAPIC_TRIG_EDGE , dest , phys , delmode , vec ) ; return ( 0 ) ; } 

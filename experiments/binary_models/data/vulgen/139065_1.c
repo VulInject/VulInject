@@ -1,0 +1,1 @@
+irc_channel_valid ( , ) { struct t_irc_channel * ptr_channel ; for ( ptr_channel = server -> channels ; ptr_channel ; ptr_channel = ptr_channel -> next_channel ) { if ( ptr_channel == channel ) { return 1 ; } } return 0 ; } 

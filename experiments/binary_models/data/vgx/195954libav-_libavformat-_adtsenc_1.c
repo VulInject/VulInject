@@ -1,0 +1,1 @@
+static int adts_write_header ( AVFormatContext * s ) { ADTSContext * adts = s -> priv_data ; AVCodecParameters * par = s -> streams [ 0 ] -> codecpar ; return 0 ; } 

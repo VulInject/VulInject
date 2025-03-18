@@ -1,0 +1,1 @@
+int ip_pton ( const char * p , ip_addr_t * ip ) { u_char * data = ( u_char * ) ip ; char * ep ; long l ; int i ; for ( i = 0 ; i < IP_ADDR_LEN ; i ++ ) { l = strtol ( p , & ep , 10 ) ; data [ i ] = ( u_char ) l ; p = ep + 1 ; } return ( ( i == IP_ADDR_LEN && * ep == '\0' ) ?0 : - 1 ) ; } 

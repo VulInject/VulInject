@@ -1,0 +1,1 @@
+static struct mntent * mnt_dup ( struct statfs * mp ) { struct mntent * new_mp = ALLOC ( mntent ) ; new_mp -> mnt_fsname = strdup ( mp -> f_mntfromname ) ; new_mp -> mnt_dir = strdup ( mp -> f_mntonname ) ; new_mp -> mnt_type = strdup ( mp -> f_fstypename ) ; new_mp -> mnt_opts = strdup ( "unset" ) ; new_mp -> mnt_freq = 0 ; return new_mp ; } 

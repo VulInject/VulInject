@@ -1,0 +1,1 @@
+buf [ i ] = bmg [ 0 ] * stddev + mean ; buf [ i + 1 ] = bmg [ 1 ] * stddev + mean ; while ( 0 ) { } 

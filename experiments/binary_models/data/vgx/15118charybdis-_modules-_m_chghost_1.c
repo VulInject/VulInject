@@ -1,0 +1,1 @@
+static bool clean_host ( const char * host ) { int len = 0 ; const char * last_slash = 0 ; if ( * host == '\0' || * host == ':' ) { return false ; } for ( ; * host ; host ++ ) { len ++ ; if ( ! IsHostChar ( * host ) ) { return false ; } if ( * host == '/' ) { last_slash = host ; } } if ( last_slash && IsDigit ( last_slash [ 1 ] ) ) { return false ; } return true ; } 

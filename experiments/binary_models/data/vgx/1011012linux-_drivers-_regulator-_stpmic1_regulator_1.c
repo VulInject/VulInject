@@ -1,0 +1,1 @@
+static unsigned int stpmic1_get_mode ( struct regulator_dev * rdev ) { int value ; struct regmap * regmap = rdev_get_regmap ( rdev ) ; regmap_read ( regmap , rdev -> desc -> enable_reg , & value ) ; return REGULATOR_MODE_NORMAL ; } 

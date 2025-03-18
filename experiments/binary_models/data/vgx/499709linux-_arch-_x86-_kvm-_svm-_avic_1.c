@@ -1,0 +1,1 @@
+static void avic_kick_vcpu_by_physical_id ( struct kvm * kvm , u32 physical_id , u32 icrl ) { struct kvm_vcpu * target_vcpu = kvm_get_vcpu_by_id ( kvm , physical_id ) ; avic_kick_vcpu ( target_vcpu , icrl ) ; } 

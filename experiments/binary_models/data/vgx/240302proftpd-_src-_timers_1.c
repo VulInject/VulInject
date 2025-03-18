@@ -1,0 +1,1 @@
+void timers_init ( void ) { _current_timeout = 0 ; _total_time = 0 ; nalarms = 0 ; _alarmed_time = 0 ; dynamic_timerno = PR_TIMER_DYNAMIC_TIMERNO ; timers = NULL ; recycled = NULL ; free_timers = NULL ; if ( timer_pool ) { destroy_pool ( timer_pool ) ; } timer_pool = make_sub_pool ( permanent_pool , NULL ) ; pr_pool_tag ( timer_pool , "Timer Pool" ) ; } 

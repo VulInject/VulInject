@@ -1,0 +1,1 @@
+uint32_t * power_domain_next_domain ( uint32_t * cells ) { uint32_t phandle = cells [ 0 ] ; int node , ncells ; node = OF_getnodebyphandle ( phandle ) ; if ( node == 0 ) { return in ; } ncells = OF_getpropint ( node , "#power-domain-cells" , 0 ) ; return cells + ncells + 1 ; } 

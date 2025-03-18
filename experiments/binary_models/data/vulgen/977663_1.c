@@ -1,0 +1,1 @@
+static void WLog_UdpAppender_Free ( wLogAppender * appender ) { wLogUdpAppender * udpAppender ; if ( appender ) { udpAppender = ( wLogUdpAppender * ) appender ; if ( udpAppender -> sock != INVALID_SOCKET ) { closesocket ( udpAppender -> sock ) ; udpAppender -> sock = INVALID_SOCKET ; } free ( udpAppender ) ; } } 

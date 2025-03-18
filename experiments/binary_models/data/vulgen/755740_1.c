@@ -1,0 +1,1 @@
+static void ipv6_route_seq_stop ( struct seq_file * seq , void * v ) { struct bpf_iter_meta meta ; struct bpf_prog * prog ; if ( ! v ) { meta . seq = seq ; if ( prog ) { ( void ) ipv6_route_prog_seq_show ( prog , & meta , v ) ; } } ipv6_route_native_seq_stop ( seq , v ) ; } 

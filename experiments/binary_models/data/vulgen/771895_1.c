@@ -1,0 +1,1 @@
+static void bcm63xx_ep0_nuke_reply ( struct bcm63xx_udc * udc , int is_tx ) { struct usb_request * req = udc -> ep0_reply ; udc -> ep0_reply = NULL ; usb_gadget_unmap_request ( & udc -> gadget , req , is_tx ) ; if ( udc -> ep0_request == req ) { udc -> ep0_req_completed = 0 ; udc -> ep0_request = NULL ; } } 

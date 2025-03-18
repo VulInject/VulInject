@@ -1,0 +1,1 @@
+static bool page_array_iova_pinned ( struct page_array * pa , u64 iova , u64 length ) { u64 iova_pfn_start = iova >> PAGE_SHIFT ; u64 iova_pfn_end = ( iova + length - 1 ) >> PAGE_SHIFT ; u64 pfn ; int i ; for ( i = 0 ; i < pa -> pa_nr ; i ++ ) { pfn = pa -> pa_iova [ i ] >> PAGE_SHIFT ; } return false ; } 

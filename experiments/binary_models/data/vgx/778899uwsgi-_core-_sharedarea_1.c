@@ -1,1 +1,1 @@
-int FUN1 ( int VAR1 ) { struct VAR2 * VAR3 = FUN2 ( VAR1 , 0 ) ; if ( ! VAR3 ) { return - 1 ; } FUN3 ( VAR3 -> VAR4 , NULL ) ; return 0 ; }
+int uwsgi_sharedarea_unlock ( int id ) { struct uwsgi_sharedarea * sa = uwsgi_sharedarea_get_by_id ( id , 0 ) ; if ( ! sa ) { return - 1 ; } uwsgi_rwunlock ( sa -> lock , NULL ) ; return 0 ; } 

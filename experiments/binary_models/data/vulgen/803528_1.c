@@ -1,0 +1,1 @@
+int bttv_sub_register ( struct bttv_sub_driver * sub , char * wanted ) { sub -> drv . bus = & bttv_sub_bus_type ; return driver_register ( & sub -> drv ) ; } 

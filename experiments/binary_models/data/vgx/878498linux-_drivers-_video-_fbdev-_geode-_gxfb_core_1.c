@@ -1,0 +1,1 @@
+static int __init gxfb_setup ( char * options ) { char * opt ; while ( ( opt = strsep ( & options , "," ) ) != NULL ) { if ( ! * opt ) { continue ; } mode_option = opt ; } return 0 ; } 

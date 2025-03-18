@@ -1,0 +1,1 @@
+int rate_left ( rate_t rt ) { return rt -> total - rt -> count ; } 

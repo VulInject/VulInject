@@ -1,0 +1,1 @@
+void ptp_put ( struct ptp * ptp ) { pci_dev_put ( ptp -> pdev ) ; } 

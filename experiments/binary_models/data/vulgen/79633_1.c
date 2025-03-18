@@ -1,0 +1,1 @@
+int rpc_proc_init ( struct net * net ) { struct sunrpc_net * sn ; dprintk ( "RPC:       registering /proc/net/rpc\n" ) ; sn = net_generic ( net , sunrpc_net_id ) ; if ( sn -> proc_net_rpc == NULL ) { return - ENOMEM ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static int __init connsecmark_tg_init ( int ) { return xt_register_target ( & connsecmark_tg_reg ) ; } 

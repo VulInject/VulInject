@@ -1,0 +1,1 @@
+static bool mrenclave_commit ( EVP_MD_CTX * ctx , uint8_t * mrenclave ) { unsigned int size ; if ( ! EVP_DigestFinal_ex ( ctx , ( unsigned char * ) mrenclave , & size ) ) { fprintf ( stderr , "digest commit failed\n" ) ; return false ; } return true ; } 

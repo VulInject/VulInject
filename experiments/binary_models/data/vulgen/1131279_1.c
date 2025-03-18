@@ -1,0 +1,1 @@
+static const struct i915_power_well_desc i9xx_power_wells_always_on [ ] { { . instances = & I915_PW_INSTANCES ( I915_PW ( "always-on" , & i9xx_pwdoms_always_on ) ) . ops = & i9xx_always_on_power_well_ops . always_on = true } } ; ; 

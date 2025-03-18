@@ -1,0 +1,1 @@
+int mbedtls_ctr_drbg_set_nonce_len ( mbedtls_ctr_drbg_context * ctx , size_t len ) { if ( ctx -> f_entropy != NULL ) { return MBEDTLS_ERR_CTR_DRBG_ENTROPY_SOURCE_FAILED ; } if ( len > MBEDTLS_CTR_DRBG_MAX_SEED_INPUT ) { return MBEDTLS_ERR_CTR_DRBG_INPUT_TOO_BIG ; } ctx -> reseed_counter = ( int ) len ; return 0 ; } 

@@ -1,0 +1,1 @@
+static u32 bcma_scan_read32 ( struct bcma_bus * bus , u16 offset ) { return readl ( bus -> mmio ) ; } 

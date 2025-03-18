@@ -1,0 +1,1 @@
+static struct rt2880_pmx_func i2c_grp [ ] { FUNC ( "i2c" , 0 , 3 , 2 ) } ; ; static struct rt2880_pmx_func uart3_grp [ ] { FUNC ( "uart3" , 5 , 4 ) FUNC ( "i2s" , 2 , 5 , 4 ) FUNC ( "spdif3" , 3 , 5 , 4 ) } ; ; 

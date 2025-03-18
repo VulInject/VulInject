@@ -1,0 +1,1 @@
+void Perl_sv_taint ( pTHX_ SV * sv ) { sv_magic ( ( sv ) , NULL , PERL_MAGIC_taint , NULL , 0 ) ; } 

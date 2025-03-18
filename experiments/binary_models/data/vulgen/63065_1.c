@@ -1,0 +1,1 @@
+png_query_procedures ( ) { GList * list = NULL ; list = g_list_append ( list , g_strdup ( LOAD_PROC ) ) ; return list ; } 

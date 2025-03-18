@@ -1,0 +1,1 @@
+static int do_regress1 ( void ) { struct kevent kev [ 2 ] ; int kq ; ASS ( ( kq = kqueue ( ) ) >= 0 , warn ( "kqueue" ) ) ; EV_SET ( & kev [ 0 ] , kq , EVFILT_READ , EV_ADD , 0 , 0 , NULL ) ; EV_SET ( & kev [ 1 ] , SIGINT , EVFILT_SIGNAL , EV_ADD , 0 , 0 ) ; ASS ( kevent ( kq , kev , 2 , NULL , 0 , NULL ) == 0 , warn ( "can't register events on kqueue" ) ) ; return 0 ; } 

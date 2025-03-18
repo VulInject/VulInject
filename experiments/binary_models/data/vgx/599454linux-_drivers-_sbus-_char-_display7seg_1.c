@@ -1,0 +1,1 @@
+static int d7s_open ( struct inode * inode , struct file * f ) { atomic_inc ( & d7s_users ) ; return 0 ; } 

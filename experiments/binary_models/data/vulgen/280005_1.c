@@ -1,0 +1,1 @@
+size_t sshbuf_len ( const struct sshbuf * buf ) { return buf -> size - buf -> off ; } 

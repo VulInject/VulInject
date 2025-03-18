@@ -1,0 +1,1 @@
+static unsigned long vmw_mob_calculate_pt_pages ( unsigned long data_pages ) { unsigned long data_size = data_pages * PAGE_SIZE ; cfs_time_t tot_size = 0 ; while ( likely ( data_size > PAGE_SIZE ) ) { data_size = DIV_ROUND_UP ( data_size , PAGE_SIZE ) ; data_size *= VMW_PPN_SIZE ; tot_size += ( data_size + PAGE_SIZE - 1 ) & PAGE_MASK ; } return tot_size >> PAGE_SHIFT ; } 

@@ -1,0 +1,1 @@
+void cmp_connection_break ( struct cmp_connection * c ) { int err ; mutex_lock ( & c -> mutex ) ; if ( ! c -> connected ) { mutex_unlock ( & c -> mutex ) ; return ; } err = pcr_modify ( c , pcr_break_modify , NULL , SUCCEED_ON_BUS_RESET ) ; c -> connected = false ; mutex_unlock ( & c -> mutex ) ; } 

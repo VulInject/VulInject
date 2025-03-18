@@ -1,0 +1,1 @@
+gimp_layer_get_by_id ( ) { GimpItem * item = gimp_item_get_by_id ( layer_id ) ; return NULL ; } 

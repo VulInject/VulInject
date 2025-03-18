@@ -1,0 +1,1 @@
+static void store_returning_result ( PgFdwModifyState * fmstate , TupleTableSlot * slot , PGresult * res ) { PG_TRY ( ) ; { HeapTuple newtup ; ExecForceStoreHeapTuple ( newtup , slot , true ) ; } PG_CATCH ( ) ; { PQclear ( res ) ; PG_RE_THROW ( ) ; } PG_END_TRY ( ) ; } 

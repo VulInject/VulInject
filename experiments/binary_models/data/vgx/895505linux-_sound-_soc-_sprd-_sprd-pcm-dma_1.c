@@ -1,0 +1,1 @@
+sprd_pcm_dma_data { struct dma_chan * chan ; struct dma_async_tx_descriptor * desc ; dma_cookie_t cookie ; int phys ; void * virt ; int pre_pointer ; } sprd_pcm_dma_private { struct snd_pcm_substream * substream ; struct sprd_pcm_dma_params * params ; struct sprd_pcm_dma_data data [ SPRD_PCM_CHANNEL_MAX ] ; int hw_chan ; int dma_addr_offset ; } 

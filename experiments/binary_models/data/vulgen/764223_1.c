@@ -1,0 +1,1 @@
+static int modi ( void * a , ltc_mp_digit b , ltc_mp_digit * c ) { mp_digit tmp ; int err ; LTC_ARGCHK ( a != NULL ) ; LTC_ARGCHK ( c != NULL ) ; * c = tmp ; return CRYPT_OK ; } 

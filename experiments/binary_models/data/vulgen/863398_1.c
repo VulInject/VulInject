@@ -1,0 +1,1 @@
+static void __iomem * gk20a_instobj_acquire_dma ( struct nvkm_memory * memory ) { struct gk20a_instobj * node = gk20a_instobj ( memory ) ; struct gk20a_instmem * imem = node -> imem ; struct nvkm_ltc * ltc = imem -> base . subdev . device -> ltc ; return node -> vaddr ; } 

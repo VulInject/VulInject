@@ -1,0 +1,1 @@
+static void is_ok ( struct sm_state * sm , struct expression * mod_expr ) { } 

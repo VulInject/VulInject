@@ -1,0 +1,1 @@
+int uwac_os_epoll_create_cloexec ( void ) { int fd ; fd = epoll_create1 ( EPOLL_CLOEXEC , NULL ) ; if ( fd >= 0 ) { return fd ; } if ( errno != EINVAL ) { return - 1 ; } fd = epoll_create ( 1 ) ; return set_cloexec_or_close ( fd ) ; } 

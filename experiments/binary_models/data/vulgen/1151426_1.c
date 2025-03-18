@@ -1,0 +1,1 @@
+void dspi_flush_fifo ( struct ls_dspi_data * dspi_data ) { unsigned int mcr_val ; mcr_val = io_read32 ( dspi_data -> base + DSPI_MCR ) ; mcr_val |= ( DSPI_MCR_CTXF | DSPI_MCR_CRXF ) ; io_write32 ( dspi_data -> base + DSPI_MCR , mcr_val ) ; } 

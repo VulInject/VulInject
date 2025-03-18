@@ -1,0 +1,1 @@
+int evtag_encode_tag ( struct evbuffer * evbuf , ev_uint32_t tag ) { int bytes = 0 ; ev_uint8_t data [ 5 ] ; { ev_uint8_t lower = tag & 0x7f ; tag >>= 7 ; if ( tag ) { lower |= 0x80 ; } data [ bytes ++ ] = lower ; } tag ; if ( evbuf != NULL ) { evbuffer_add ( evbuf , data , bytes ) ; } return ( bytes ) ; } 

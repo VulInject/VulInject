@@ -1,0 +1,1 @@
+create_action_group ( ) { const GActionEntry popup_entries [ ] { { "open-bookmark" ev_bookmarks_popup_cmd_open_bookmark } { "rename-bookmark" ev_bookmarks_popup_cmd_rename_bookmark } { "delete-bookmark" ev_bookmarks_popup_cmd_delete_bookmark } } ; ; GSimpleActionGroup * group ; group = g_simple_action_group_new ( ) ; return G_ACTION_GROUP ( group ) ; } 

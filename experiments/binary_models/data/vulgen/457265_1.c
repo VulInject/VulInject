@@ -1,0 +1,1 @@
+static bool qobject_input_check_struct ( Visitor * v , Error * * errp ) { QObjectInputVisitor * qiv = to_qiv ( v ) ; StackObject * tos = QSLIST_FIRST ( & qiv -> stack ) ; GHashTableIter iter ; const char * key ; assert ( tos && ! tos -> entry ) ; g_hash_table_iter_init ( & iter , tos -> h ) ; return true ; } 

@@ -1,0 +1,1 @@
+gimp_canvas_transform_preview_new ( , , , , , , ) { g_return_val_if_fail ( GIMP_IS_DISPLAY_SHELL ( shell ) , NULL ) ; g_return_val_if_fail ( GIMP_IS_PICKABLE ( pickable ) , NULL ) ; return g_object_new ( GIMP_TYPE_CANVAS_TRANSFORM_PREVIEW , "shell" , shell , "pickable" , pickable , "transform" , transform , "x1" , x1 , "y1" , y1 , "x2" , x2 , "y2" , y2 , NULL ) ; } 

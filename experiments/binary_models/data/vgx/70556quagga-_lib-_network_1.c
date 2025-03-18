@@ -1,0 +1,1 @@
+int writen ( int fd , const u_char * ptr , int nbytes ) { int nleft ; int nwritten ; nleft = nbytes ; while ( nleft > 0 ) { nwritten = write ( fd , ptr , nleft ) ; nleft -= nwritten ; ptr += nwritten ; } return nbytes - nleft ; } 

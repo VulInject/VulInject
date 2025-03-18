@@ -1,0 +1,1 @@
+gboolean extcap_compare_is_default ( extcap_arg * element , extcap_complex * test ) { if ( g_strcmp0 ( element -> default_complex -> _val , test -> _val ) == 0 ) { return TRUE ; } return FALSE ; } 

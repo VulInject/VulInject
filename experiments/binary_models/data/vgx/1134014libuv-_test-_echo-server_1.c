@@ -1,0 +1,1 @@
+static void after_write ( uv_write_t * req , int status ) { write_req_t * wr ; wr = ( write_req_t * ) req ; free ( wr -> buf . base ) ; if ( status == 0 ) { return ; } fprintf ( stderr , "uv_write error: %s - %s\n" , uv_err_name ( status ) , uv_strerror ( status ) ) ; } 

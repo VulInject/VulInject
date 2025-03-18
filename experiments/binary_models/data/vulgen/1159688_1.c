@@ -1,0 +1,1 @@
+static void enc32_dp_set_dsc_config ( struct stream_encoder * enc , enum optc_dsc_mode dsc_mode , uint32_t dsc_bytes_per_pixel , uint32_t dsc_slice_width ) { REG_UPDATE ( DP_DSC_CNTL , DP_DSC_MODE , dsc_mode == OPTC_DSC_DISABLED ?0 : 1 ) ; } 

@@ -1,0 +1,1 @@
+int main ( void ) { cj_submit = test_submit ; RUN_TEST ( parse , NULL ) ; END_TEST ; } 

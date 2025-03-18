@@ -1,0 +1,1 @@
+int _topo_init ( topo_mod_t * mod , topo_version_t version ) { topo_mod_dprintf ( mod , "initializing xfp enumerator\n" ) ; if ( topo_mod_register ( mod , & xfp_info , TOPO_VERSION ) < 0 ) { topo_mod_dprintf ( mod , "xfp registration failed: %s\n" , topo_mod_errmsg ( mod ) ) ; return ( - 1 ) ; } topo_mod_dprintf ( mod , "xfp enum initd\n" ) ; return ( 0 ) ; } 

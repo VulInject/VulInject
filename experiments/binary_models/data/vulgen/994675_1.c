@@ -1,0 +1,1 @@
+static struct pci_driver b43_pci_bridge_driver = { . name = "b43-pci-bridge" . id_table = b43_pci_bridge_tbl } ; 

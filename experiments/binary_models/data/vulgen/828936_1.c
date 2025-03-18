@@ -1,0 +1,1 @@
+static void ufshpb_destroy_subregion_tbl ( struct ufshpb_lu * hpb , struct ufshpb_region * rgn ) { int srgn_idx ; struct ufshpb_subregion * srgn ; for_each_sub_region ( , , ) if ( srgn -> srgn_state != HPB_SRGN_UNUSED ) { srgn -> srgn_state = HPB_SRGN_UNUSED ; } } 

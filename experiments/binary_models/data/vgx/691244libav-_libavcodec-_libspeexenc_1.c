@@ -1,0 +1,1 @@
+LibSpeexEncContext { AVClass * class ; SpeexBits bits ; SpeexHeader header ; void * enc_state ; int frames_per_packet ; float vbr_quality ; int cbr_quality ; int abr ; int vad ; int dtx ; int pkt_frame_count ; AudioFrameQueue afq ; } LibSpeexEncContext 

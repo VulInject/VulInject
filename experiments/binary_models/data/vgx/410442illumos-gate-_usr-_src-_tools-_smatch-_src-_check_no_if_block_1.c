@@ -1,0 +1,1 @@
+static void match_for_stmt ( struct statement * stmt ) { if ( __inline_fn ) { return ; } if ( stmt -> type != STMT_ITERATOR ) { return ; } if ( get_macro_name ( stmt -> pos ) ) { return ; } if ( stmt -> pos . pos != stmt -> iterator_statement -> pos . pos ) { return ; } sm_warning ( "for statement not indented" ) ; } 

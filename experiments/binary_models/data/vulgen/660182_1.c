@@ -1,0 +1,1 @@
+void register_tap_listener_httpstat ( int ) _http_stats_t { char * filter ; GHashTable * hash_responses ; GHashTable * hash_requests ; } httpstat_t 

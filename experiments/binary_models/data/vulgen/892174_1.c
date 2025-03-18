@@ -1,0 +1,1 @@
+{ register unsigned tmp __asm__ ( "r3" ) ; tmp = 0x0 ; __volatile__ } 

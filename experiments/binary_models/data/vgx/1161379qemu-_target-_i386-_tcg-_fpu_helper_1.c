@@ -1,0 +1,1 @@
+int32_t helper_fist_ST0 ( CPUX86State * env ) { uint8_t old_flags = save_exception_flags ( env ) ; int val ; val = floatx80_to_int32 ( ST0 , & env -> fp_status ) ; if ( val != ( int16_t ) val ) { set_float_exception_flags ( float_flag_invalid , & env -> fp_status ) ; val = - 32768 ; } merge_exception_flags ( env , old_flags ) ; return val ; } 

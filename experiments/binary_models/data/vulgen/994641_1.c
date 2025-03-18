@@ -1,0 +1,1 @@
+extern int mit_des_is_weak_key ( mit_des_cblock ) _krb5_preauth_systems { const char * name ; int type ; int flags ; void * plugin_context ; preauth_server_init_proc init ; preauth_server_fini_proc fini ; preauth_server_edata_proc get_edata ; preauth_server_verify_proc verify_padata ; preauth_server_return_proc return_padata ; } krb5_preauth_systems 

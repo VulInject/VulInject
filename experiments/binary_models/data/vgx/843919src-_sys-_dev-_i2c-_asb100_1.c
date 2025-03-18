@@ -1,0 +1,1 @@
+i2c_tag_t sc_tag ; i2c_addr_t sc_addr ; struct ksensor sc_sensor [ ASB100_NUM_SENSORS ] ; int sc_sensordev ; int sc_fanmul [ 3 ] ; int sc_satellite [ 2 ] ; 

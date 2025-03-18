@@ -1,0 +1,1 @@
+asms_softc { struct device sc_dev ; i2c_tag_t sc_tag ; i2c_addr_t sc_addr ; struct ksensordev sc_sensordev ; } 

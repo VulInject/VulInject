@@ -1,0 +1,1 @@
+static void rcar_du_wb_cleanup_job ( struct drm_writeback_connector * connector , struct drm_writeback_job * job ) { struct rcar_du_crtc * rcrtc = wb_to_rcar_crtc ( connector ) ; struct rcar_du_wb_job * rjob = job -> priv ; if ( ! job -> fb ) { return ; } rcar_du_vsp_unmap_fb ( rcrtc -> vsp , job -> fb , rjob -> sg_tables ) ; } 

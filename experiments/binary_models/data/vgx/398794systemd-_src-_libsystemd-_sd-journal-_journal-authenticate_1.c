@@ -1,0 +1,1 @@
+static int journal_file_fsprg_need_evolve ( JournalFile * f , uint64_t realtime ) { uint64_t goal , epoch ; int r ; assert ( f ) ; r = journal_file_get_epoch ( f , realtime , & goal ) ; if ( r < 0 ) { return r ; } epoch = FSPRG_GetEpoch ( f -> fsprg_state ) ; if ( epoch > goal ) { return - ESTALE ; } return epoch != goal ; } 

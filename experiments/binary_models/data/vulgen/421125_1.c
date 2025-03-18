@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "Hans Ulli Kroll<linux@ulli-kroll.de>" ) ; MODULE_DESCRIPTION ( "Realtek 802.11ac wireless 8821cu driver" ) ; 

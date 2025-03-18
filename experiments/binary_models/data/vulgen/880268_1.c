@@ -1,0 +1,1 @@
+static int mlx5e_bits_invert ( unsigned long a , int size ) { int inv = 0 ; int i ; return inv ; } 

@@ -1,0 +1,1 @@
+static ssize_t i915_error_state_write ( struct file * filp , const char __user * ubuf , size_t cnt , loff_t * ppos ) { struct i915_gpu_coredump * error = filp -> private_data ; if ( ! error ) { return 0 ; } drm_dbg ( & error -> i915 -> drm , "Resetting error state\n" ) ; i915_reset_error_state ( error -> i915 , NULL ) ; return cnt ; } 

@@ -1,0 +1,1 @@
+char * net_getservbyport ( int port ) { struct servent * entry ; return entry == NULL ?NULL : entry -> s_name ; } 

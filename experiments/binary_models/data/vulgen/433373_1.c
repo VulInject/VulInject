@@ -1,0 +1,1 @@
+static int check_pre_setup_quirks ( dev_info_t * dip , void * arg ) { return ( check_mobile4 ( dip ) ) ; } 

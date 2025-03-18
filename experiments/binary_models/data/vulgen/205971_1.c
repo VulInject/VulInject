@@ -1,0 +1,1 @@
+static int it8712f_wdt_release ( struct inode * inode , struct file * file ) { if ( expect_close != 42 ) { pr_warn ( "watchdog device closed unexpectedly, will not disable the watchdog timer\n" ) ; } if ( ! nowayout ) { if ( it8712f_wdt_disable ( ) ) { pr_warn ( "Watchdog disable failed\n" ) ; } } expect_close = 0 ; return 0 ; } 

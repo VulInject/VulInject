@@ -1,0 +1,1 @@
+static int sparx5_sdlb_pup_interval_get ( struct sparx5 * sparx5 , u32 max_token , u64 max_rate ) { u64 clk_hz ; clk_hz = sparx5_sdlb_clk_hz_get ( sparx5 , NULL ) ; return div64_u64 ( ( 8 * clk_hz * max_token ) , max_rate ) ; } 

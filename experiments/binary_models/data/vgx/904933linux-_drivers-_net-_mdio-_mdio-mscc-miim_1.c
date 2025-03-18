@@ -1,0 +1,1 @@
+mscc_miim_info { unsigned int phy_reset_offset ; int phy_reset_bits ; } 

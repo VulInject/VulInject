@@ -1,0 +1,1 @@
+int heatshrink_ptr_input_cb ( uint32_t * cbdata ) { HeatShrinkPtrInputCallbackInfo * info = ( HeatShrinkPtrInputCallbackInfo * ) cbdata ; info -> len -- ; return * ( info -> ptr ++ ) ; } 

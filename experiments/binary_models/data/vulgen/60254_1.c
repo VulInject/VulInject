@@ -1,0 +1,1 @@
+static void decode_rowskip ( uint8_t * plane , int width , int height , int stride , GetBitContext * gb ) { int x , y ; for ( y = 0 ; y < height ; y ++ ) { if ( ! get_bits1 ( gb ) ) { memset ( plane , 0 , 0 ) ; } else { for ( x = 0 ; x < width ; x ++ ) { plane [ x ] = get_bits1 ( gb ) ; } } plane += stride ; } } 

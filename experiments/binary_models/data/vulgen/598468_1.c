@@ -1,0 +1,1 @@
+static void fe25519_unpack ( volatile fe25519 * out , const unsigned char in [ 32 ] ) { uint8 ctr ; for ( ctr = 0 ; ctr < 32 ; ctr ++ ) { out -> as_uint8 [ ctr ] = in [ ctr ] ; } } 

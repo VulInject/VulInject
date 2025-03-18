@@ -1,0 +1,1 @@
+static void check_assignment ( void * data ) { struct expression * expr = ( expression * ) data ; char * fn ; if ( expr -> type != EXPR_CALL ) { return ; } fn = expr_to_var ( expr -> fn ) ; if ( ! fn ) { return ; } if ( ! strcmp ( fn , "kmap" ) ) { sm_warning ( "passing the wrong variable to kunmap()" ) ; } free_string ( fn ) ; } 

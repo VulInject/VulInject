@@ -1,0 +1,1 @@
+static struct work_struct sclp_ocf_change_work ; static struct kset * ocf_kset ; static void sclp_ocf_change_notify ( struct work_struct * work ) { kobject_uevent ( & ocf_kset -> kobj , KOBJ_CHANGE ) ; } 

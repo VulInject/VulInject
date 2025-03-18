@@ -1,0 +1,1 @@
+int ftrace_ops_list_func ( unsigned long ip , unsigned long parent_ip , struct ftrace_ops * op , struct ftrace_regs * fregs ) const struct ftrace_ops ftrace_list_ops = { . func = ftrace_ops_list_func . flags = FTRACE_OPS_FL_STUB } ; 

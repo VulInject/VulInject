@@ -1,0 +1,1 @@
+OBJECT_DECLARE_SIMPLE_TYPE ( , ) { uint32_t len ; } StellarisEnetRxFrame 

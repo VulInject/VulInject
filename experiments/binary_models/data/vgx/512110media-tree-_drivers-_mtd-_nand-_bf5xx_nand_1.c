@@ -1,0 +1,1 @@
+static int bf5xx_nand_remove ( struct platform_device * pdev ) { struct bf5xx_nand_info * info = to_nand_info ( pdev ) ; nand_release ( nand_to_mtd ( & info -> chip ) ) ; peripheral_free_list ( bfin_nfc_pin_req ) ; bf5xx_nand_dma_remove ( info , NULL ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static int ad5398_get_current_limit ( struct regulator_dev * rdev ) { struct ad5398_chip_info * chip = rdev_get_drvdata ( rdev ) ; struct i2c_client * client = chip -> client ; unsigned short data ; int ret ; ret = ad5398_read_reg ( client , & data ) ; ret = ( data & chip -> current_mask ) >> chip -> current_offset ; return ad5398_calc_current ( chip , ret ) ; } 

@@ -1,0 +1,1 @@
+void ena_hw_abs_write32 ( const ena_t * ena , uint32_t * addr , const uint32_t val ) { VERIFY3P ( ena , != , NULL ) ; VERIFY3P ( addr , != , NULL ) ; VERIFY3U ( addr , >= , ena -> ena_reg_base ) ; VERIFY3U ( addr , < , ena -> ena_reg_base + ( ena -> ena_reg_size - 4 ) ) ; } 

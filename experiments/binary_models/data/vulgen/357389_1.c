@@ -1,0 +1,1 @@
+static void sa1111_dev_release ( struct device * _dev ) { struct sa1111_dev * dev = to_sa1111_device ( _dev ) ; } 

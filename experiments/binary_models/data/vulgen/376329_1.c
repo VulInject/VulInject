@@ -1,0 +1,1 @@
+insist ( tmp != NULL ) ; insist ( strcmp ( tmp , "Access-Request" ) == 0 ) ; insist ( tmp != NULL ) ; insist ( strcmp ( tmp , "Access-Accept" ) == 0 ) ; tmp = krad_code_num2name ( 3 ) ; insist ( tmp != NULL ) ; insist ( strcmp ( tmp , "Access-Reject" ) == 0 ) ; return 0 ; 

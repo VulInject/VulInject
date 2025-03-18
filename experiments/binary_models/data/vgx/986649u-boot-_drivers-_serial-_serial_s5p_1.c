@@ -1,0 +1,1 @@
+static inline void _debug_uart_init ( void ) { struct s5p_uart * uart = ( s5p_uart * ) CONFIG_VAL ( DEBUG_UART_BASE ) ; s5p_serial_init ( uart ) ; s5p_serial_baud ( uart , 4 , CONFIG_DEBUG_UART_CLOCK , CONFIG_BAUDRATE ) ; s5p_serial_baud ( uart , 1 , CONFIG_DEBUG_UART_CLOCK , CONFIG_BAUDRATE ) ; } 

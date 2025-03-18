@@ -1,0 +1,1 @@
+static int psxpad_command ( struct psxpad * pad , const u8 sendcmdlen ) { struct spi_transfer xfers = { . tx_buf = pad -> sendbuf . rx_buf = pad -> response . len = sendcmdlen } ; int err ; if ( err ) { dev_err ( & pad -> spi -> dev , "%s: failed to SPI xfers mode: %d\n" , __func__ , err ) ; return err ; } return 0 ; } 

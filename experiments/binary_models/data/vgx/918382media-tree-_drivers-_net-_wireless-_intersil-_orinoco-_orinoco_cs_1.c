@@ -1,0 +1,1 @@
+static int ignore_cis_vcc ; module_param ( ignore_cis_vcc , int , 0 ) ; MODULE_PARM_DESC ( ignore_cis_vcc , "Allow voltage mismatch between card and socket" ) ; orinoco_pccard { struct pcmcia_device * p_dev ; cfs_time_t hard_reset_in_progress ; } 

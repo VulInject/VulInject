@@ -1,0 +1,1 @@
+static unsigned int cros_ec_sensors_idx_to_reg ( struct cros_ec_sensors_core_state * st , unsigned int idx ) { return EC_MEMMAP_GYRO_DATA + sizeof ( u16 ) * idx ; } 

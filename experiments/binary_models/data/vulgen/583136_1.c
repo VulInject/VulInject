@@ -1,0 +1,1 @@
+* Add override to disable the stopping of tracing * Add MAX_ROWS support in postgres driver * * Revision 1.2 2001 / 12 / 04 16 : 46 : 19 lurcher * * Allow the Unix Domain Socket to be set from the ini file ( ) * Make the DataManager browser work with drivers that don ' 

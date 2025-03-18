@@ -1,1 +1,1 @@
-static void FUN1 ( struct VAR1 * VAR2 , struct VAR3 * VAR3 , enum dma_data_direction VAR4 ) { FUN2 ( VAR3 , NULL ) ; VAR2 -> VAR5 -> VAR6 -> FUN3 ( VAR2 , VAR3 , VAR4 ) ; }
+static void __unmap_dma_buf ( struct dma_buf_attachment * attach , struct sg_table * sg_table , enum dma_data_direction direction ) { mangle_sg_table ( sg_table , NULL ) ; attach -> dmabuf -> ops -> unmap_dma_buf ( attach , sg_table , direction ) ; } 

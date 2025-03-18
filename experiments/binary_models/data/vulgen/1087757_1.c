@@ -1,0 +1,1 @@
+* * Lua compiler ( ) * * See Copyright Notice in lua . h * / static int listing = 0 ; static int dumping = 1 ; static int stripping = 0 ; static char Output [ ] { OUTPUT } ; ; static const char * output = Output ; static const char * progname = PROGNAME ; static void fatal ( const char * message ) { fprintf ( stderr , "%s: %s\n" , progname , message ) ; } 

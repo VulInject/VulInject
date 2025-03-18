@@ -1,0 +1,1 @@
+static void init_debugfs ( void ) { dir = debugfs_create_dir ( "oct_ilm" , 0 ) ; debugfs_create_file ( "statistics" , 0222 , dir , NULL , & oct_ilm_fops ) ; debugfs_create_file ( "reset" , 0222 , dir , NULL , & reset_statistics_ops ) ; } 

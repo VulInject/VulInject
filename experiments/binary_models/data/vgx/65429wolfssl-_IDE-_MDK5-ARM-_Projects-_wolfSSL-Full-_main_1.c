@@ -1,0 +1,1 @@
+int main ( ) { void * arg = NULL ; SystemClock_Config ( ) ; init_filesystem ( ) ; netInitialize ( ) ; osDelay ( 300 ) ; printf ( "Turning ON Debug message\n" ) ; wolfSSL_Debugging_ON ( ) ; shell_main ( arg , NULL ) ; } 

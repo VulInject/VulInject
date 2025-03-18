@@ -1,0 +1,1 @@
+static int ufm_write ( struct udevice * dev , u16 data ) { int ret ; if ( ret < 0 ) { return ret ; } ret = ufm_erase ( dev ) ; if ( ret < 0 ) { return ret ; } return ufm_program ( dev ) ; } 

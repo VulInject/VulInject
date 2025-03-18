@@ -1,1 +1,1 @@
-void FUN1 ( void ) { struct VAR1 * VAR2 = FUN2 ( ) ; struct VAR3 * VAR4 ; FUN3 ( VAR2 -> VAR5 ) ; VAR4 = VAR2 -> VAR5 ; if ( VAR4 -> VAR6 . VAR7 -> VAR8 & VAR9 ) { FUN4 ( VAR4 ) ; } else { FUN5 ( VAR4 ) ; } }
+void save_fpu ( void ) { struct cpu_info * ci = curcpu ( ) ; struct proc * p ; KASSERT ( ci -> ci_fpuproc ) ; p = ci -> ci_fpuproc ; if ( p -> p_md . md_regs -> sr & SR_FR_32 ) { MipsSaveCurFPState ( p ) ; } else { MipsSaveCurFPState16 ( p ) ; } } 

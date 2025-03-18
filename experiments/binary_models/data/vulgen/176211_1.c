@@ -1,0 +1,1 @@
+static void __encode_table_header_to_buf ( struct amdgpu_ras_eeprom_table_header * hdr , unsigned char * buf ) { pp [ 0 ] = cpu_to_le32 ( hdr -> header ) ; pp [ 1 ] = cpu_to_le32 ( hdr -> version ) ; pp [ 2 ] = cpu_to_le32 ( hdr -> first_rec_offset ) ; pp [ 3 ] = cpu_to_le32 ( hdr -> tbl_size ) ; pp [ 4 ] = cpu_to_le32 ( hdr -> checksum ) ; } 

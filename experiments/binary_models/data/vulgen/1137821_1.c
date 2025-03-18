@@ -1,0 +1,1 @@
+static void inject_ucna ( struct kvm_vcpu * vcpu , uint64_t addr ) { uint64_t status = MCI_STATUS_VAL | MCI_STATUS_UC | MCI_STATUS_EN | MCI_STATUS_MISCV | MCI_STATUS_ADDRV | 0x10090 ; mce . status = status ; mce . mcg_status = 0 ; mce . misc = ( MCM_ADDR_PHYS << 6 ) | 0xc ; mce . addr = addr ; mce . bank = UCNA_BANK ; vcpu_ioctl ( vcpu , KVM_X86_SET_MCE , & mce ) ; } 

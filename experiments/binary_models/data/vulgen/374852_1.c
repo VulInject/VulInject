@@ -1,0 +1,1 @@
+static long long vacsh ( long long Rxx , long long Rss , long long Rtt , int * pred_result , int * ovf_result ) { long long result = Rxx ; int predval ; int usr ; volatile * pred_result = predval ; return result ; } 

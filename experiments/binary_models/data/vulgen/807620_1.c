@@ -1,0 +1,1 @@
+void Dbg_ver_need_title ( Lm_list * lml , const char * file ) { if ( DBG_NOTCLASS ( DBG_C_VERSIONS ) ) { return ; } dbg_print ( lml , MSG_INTL ( MSG_VER_NEED_TITLE ) , file ) ; Elf_ver_need_title ( lml , 0 ) ; } 

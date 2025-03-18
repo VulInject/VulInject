@@ -1,0 +1,1 @@
+const char bfin_board_name [ ] "Tepla-BF561" ; ; 

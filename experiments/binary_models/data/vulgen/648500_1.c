@@ -1,0 +1,1 @@
+static void xprt_switch_add_xprt_locked ( struct rpc_xprt_switch * xps , struct rpc_xprt * xprt ) { list_add_tail_rcu ( & xprt -> xprt_switch , & xps -> xps_xprt_list ) ; smp_wmb ( ) ; if ( xps -> xps_nxprts == 0 ) { xps -> xps_net = xprt -> xprt_net ; } xps -> xps_nxprts ++ ; } 

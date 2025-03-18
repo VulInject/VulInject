@@ -1,0 +1,1 @@
+static void alpine_msix_mask_msi_irq ( struct irq_data * d ) { pci_msi_mask_irq ( d ) ; } 

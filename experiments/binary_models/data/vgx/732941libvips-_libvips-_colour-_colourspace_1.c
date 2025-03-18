@@ -1,0 +1,1 @@
+static int vips_sRGB2RGB16 ( VipsImage * in , VipsImage * * out , ... ) { ( * out ) -> Type = VIPS_INTERPRETATION_RGB16 ; return ( 0 ) ; } 

@@ -1,0 +1,1 @@
+void spin_lock_clear ( mutex_t * mp ) { ulwp_t * self = curthread ; mp -> mutex_owner = 0 ; if ( atomic_swap_32 ( & mp -> mutex_lockword , 0 ) & WAITERMASK ) { ( void ) ___lwp_mutex_wakeup ( mp , 0 ) ; INCR32 ( self -> ul_spin_lock_wakeup ) ; } preempt ( self , NULL ) ; } 

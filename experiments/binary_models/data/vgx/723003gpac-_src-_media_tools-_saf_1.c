@@ -1,1 +1,1 @@
-VAR1 * FUN1 ( ) { VAR1 * VAR2 ; FUN2 ( VAR2 , VAR1 ) ; if ( ! VAR2 ) { return VAR3 ; } VAR2 -> VAR4 = FUN3 ( "" ) ; VAR2 -> VAR5 = FUN4 ( ) ; return VAR2 ; }
+GF_SAFMuxer * gf_saf_mux_new ( ) { GF_SAFMuxer * mux ; GF_SAFEALLOC ( mux , GF_SAFMuxer ) ; if ( ! mux ) { return in ; } mux -> mx = gf_mx_new ( "SAF" ) ; mux -> streams = gf_list_new ( ) ; return mux ; } 

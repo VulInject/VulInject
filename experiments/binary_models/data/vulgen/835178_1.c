@@ -1,0 +1,1 @@
+int nv10_fence_create ( struct nouveau_drm * drm ) { struct nv10_fence_priv * priv ; priv = drm -> fence = kzalloc ( sizeof ( * priv ) , GFP_KERNEL ) ; if ( ! priv ) { return - ENOMEM ; } priv -> base . dtor = nv10_fence_destroy ; priv -> base . context_new = nv10_fence_context_new ; priv -> base . context_del = nv10_fence_context_del ; return 0 ; } 

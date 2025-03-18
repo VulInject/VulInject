@@ -1,0 +1,1 @@
+static int edid_checksum ( unsigned char * edid ) { unsigned char csum = 0 , all_null = 0 ; int i , err = 0 , fix = check_edid ( edid ) ; if ( fix ) { fix_edid ( edid , fix ) ; } for ( i = 0 ; i < EDID_LENGTH ; i ++ ) { csum += edid [ i ] ; all_null |= edid [ i ] ; } return err ; } 

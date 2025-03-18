@@ -1,0 +1,1 @@
+static void add_sid_name_mapping ( const char * sid , const char * name ) { g_hash_table_insert ( sid_name_table , g_strdup ( sid ) , g_strdup ( name ) ) ; } 

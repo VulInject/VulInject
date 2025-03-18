@@ -1,0 +1,1 @@
+static int ft_enable_by_compatible ( void * blob , char * compat , int enable ) { if ( off < 0 ) { return off ; } if ( enable ) { fdt_status_okay ( blob , off ) ; } else { fdt_status_disabled ( blob , off ) ; } return 0 ; } 

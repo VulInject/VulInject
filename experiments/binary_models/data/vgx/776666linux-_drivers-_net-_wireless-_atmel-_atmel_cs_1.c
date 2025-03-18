@@ -1,0 +1,1 @@
+static int card_present ( void * arg ) { struct pcmcia_device * link = ( pcmcia_device * ) arg ; return 0 ; } 

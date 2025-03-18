@@ -1,0 +1,1 @@
+void parent_sig_handler ( int sig , short event , void * arg ) { struct privsep * ps = arg ; switch ( sig ) { case SIGTERM : case SIGINT : parent_shutdown ( ps -> ps_env ) ; break ; case SIGHUP : log_info ( "%s: reload requested with SIGHUP" , __func__ ) ; break ; case SIGPIPE : case SIGUSR1 : break ; default : fatalx ( "unexpected signal" ) ; } } 

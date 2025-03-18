@@ -1,0 +1,1 @@
+static void batadv_v_ogm_send_to_if ( struct sk_buff * skb , struct batadv_hard_iface * hard_iface ) { struct batadv_priv * bat_priv = netdev_priv ( hard_iface -> soft_iface ) ; batadv_inc_counter ( bat_priv , BATADV_CNT_MGMT_TX ) ; batadv_add_counter ( bat_priv , BATADV_CNT_MGMT_TX_BYTES , skb -> len + ETH_HLEN ) ; batadv_send_broadcast_skb ( skb , hard_iface ) ; } 

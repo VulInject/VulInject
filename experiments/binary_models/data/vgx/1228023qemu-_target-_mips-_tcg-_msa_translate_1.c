@@ -1,0 +1,1 @@
+static bool trans_CTCMSA ( DisasContext * ctx , arg_msa_elm * a ) { TCGv telm ; telm = tcg_temp_new ( ) ; gen_load_gpr ( telm , a -> ws ) ; gen_helper_msa_ctcmsa ( cpu_env , telm , tcg_constant_i32 ( a -> wd ) ) ; tcg_temp_free ( telm ) ; return true ; } 

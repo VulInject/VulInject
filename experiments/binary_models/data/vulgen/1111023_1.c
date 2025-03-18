@@ -1,0 +1,1 @@
+static int bc_set_next ( ktime_t expires , struct clock_event_device * bc ) { bc -> bound_on = bctimer . base -> cpu_base -> cpu ; return 0 ; } 

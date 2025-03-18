@@ -1,0 +1,1 @@
+extern stnode_t * df_lval ; static void * ParserObj = NULL ; dfwork_t * global_dfw ; df_loc_t loc_empty = { - 1 0 } ; void dfilter_vfail ( dfwork_t * dfw , int code , df_loc_t loc , const char * format , va_list args ) { dfw -> parse_failure = TRUE ; dfw -> error . code = code ; dfw -> error . msg = ws_strdup_vprintf ( format , args ) ; dfw -> error . loc = loc ; } 

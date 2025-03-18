@@ -1,0 +1,1 @@
+int udb_radix_tree_create ( udb_base * udb , udb_ptr * ptr ) { udb_rel_ptr_init ( & RADTREE ( ptr ) -> root ) ; RADTREE ( ptr ) -> count = 0 ; return 1 ; } 

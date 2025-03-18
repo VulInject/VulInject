@@ -1,0 +1,1 @@
+unsigned int _Q_qtou ( long double a ) { unsigned int v ; return ( v ) ; } 

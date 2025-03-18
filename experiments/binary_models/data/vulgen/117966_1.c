@@ -1,0 +1,1 @@
+int ovl_check_setxattr ( struct ovl_fs * ofs , struct dentry * upperdentry , enum ovl_xattr ox , const void * value , size_t size , int xerr ) { int err ; err = ovl_setxattr ( ofs , upperdentry , ox , value , size ) ; if ( err == - EOPNOTSUPP ) { pr_warn ( "cannot set %s xattr on upper\n" , ovl_xattr ( ofs , ox ) ) ; ofs -> noxattr = true ; return xerr ; } return err ; } 

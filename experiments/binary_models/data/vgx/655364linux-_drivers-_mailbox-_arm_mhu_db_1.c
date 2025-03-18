@@ -1,0 +1,1 @@
+static bool mhu_db_last_tx_done ( struct mbox_chan * chan ) { struct mhu_db_channel * chan_info = chan -> con_priv ; void __iomem * base = chan_info -> mhu -> mlink [ chan_info -> pchan ] . tx_reg ; return true ; } 

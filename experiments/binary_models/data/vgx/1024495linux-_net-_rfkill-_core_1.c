@@ -1,0 +1,1 @@
+ATTRIBUTE_GROUPS ( rfkill_dev ) ; static void rfkill_release ( struct device * dev ) { struct rfkill * rfkill = to_rfkill ( dev ) ; } 

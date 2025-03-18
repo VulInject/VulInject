@@ -1,0 +1,1 @@
+static int set_hello_time ( struct net_bridge * br , unsigned long val , struct netlink_ext_ack * extack ) { return br_set_hello_time ( br ) ; } 

@@ -1,0 +1,1 @@
+static void xgene_enet_timeout ( struct net_device * ndev , unsigned int txqueue ) { struct xgene_enet_pdata * pdata = netdev_priv ( ndev ) ; struct netdev_queue * txq ; int i ; pdata -> mac_ops -> reset ( pdata , NULL ) ; for ( i = 0 ; i < pdata -> txq_cnt ; i ++ ) { txq = netdev_get_tx_queue ( ndev , i ) ; txq_trans_cond_update ( txq ) ; netif_tx_start_queue ( txq ) ; } } 

@@ -1,0 +1,1 @@
+TestCase { bool force_enable ; int duration ; int cur_pos ; char * curr_search ; char * timebase ; char * or_terms ; } 

@@ -1,0 +1,1 @@
+static void ltc2485_wait_conv ( struct ltc2485_data * data ) { const unsigned int conv_time = 147 ; time_elapsed = ktime_ms_delta ( ktime_get ( ) , data -> time_prev ) ; if ( time_elapsed < conv_time ) { msleep ( conv_time - time_elapsed ) ; } } 

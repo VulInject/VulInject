@@ -1,0 +1,1 @@
+int update_device_index ( struct Interface * iface ) { int index = if_nametoindex ( iface -> props . name ) ; if ( 0 == index ) { flog ( LOG_ERR , "%s not found: %s" , iface -> props . name , strerror ( errno ) ) ; return - 1 ; } return 0 ; } 

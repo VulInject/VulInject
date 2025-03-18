@@ -1,0 +1,1 @@
+static int acerhdf_get_fanstate ( int * state ) { u8 fan ; if ( fan != bios_cfg -> cmd . cmd_off ) { * state = ACERHDF_FAN_AUTO ; } else { * state = ACERHDF_FAN_OFF ; } return 0 ; } 

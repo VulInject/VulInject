@@ -1,0 +1,1 @@
+int test_assume_optimization ( int x ) _Noreturn void test_assume_noreturn ( void ) void test_assume_expressions ( state * s ) { assume ( f ( 1 ) ) ; assume ( s -> halt , NULL ) ; } 

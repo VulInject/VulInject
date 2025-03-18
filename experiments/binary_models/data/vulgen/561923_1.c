@@ -1,0 +1,1 @@
+int smbfs_keychain_del_everyone ( ) { int cmd = SMBIOC_PK_DEL_EVERYONE ; return ( smbfs_keychain_cmn ( cmd , uid , NULL , NULL , NULL , NULL ) ) ; } 

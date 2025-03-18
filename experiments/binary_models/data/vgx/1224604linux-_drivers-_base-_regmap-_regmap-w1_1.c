@@ -1,0 +1,1 @@
+struct regmap * __devm_regmap_init_w1 ( struct device * w1_dev , const struct regmap_config * config , struct lock_class_key * lock_key , const char * lock_name ) { const struct regmap_bus * bus = regmap_get_w1_bus ( w1_dev , config ) ; return __devm_regmap_init ( w1_dev , bus , w1_dev , config , lock_key , lock_name ) ; } 

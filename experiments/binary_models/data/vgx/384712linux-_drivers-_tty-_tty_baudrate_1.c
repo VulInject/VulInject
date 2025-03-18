@@ -1,0 +1,1 @@
+speed_t tty_termios_baud_rate ( const struct ktermios * termios ) { unsigned int cbaud ; cbaud = termios -> c_cflag & CBAUD ; if ( cbaud & CBAUDEX ) { cbaud &= ~ CBAUDEX ; cbaud += 15 ; } return cbaud >= n_baud_table ?0 : baud_table [ cbaud ] ; } 

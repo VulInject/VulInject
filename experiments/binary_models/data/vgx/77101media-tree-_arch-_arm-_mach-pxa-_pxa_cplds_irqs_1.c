@@ -1,0 +1,1 @@
+static void cplds_irq_mask ( struct irq_data * d ) { struct cplds * fpga = irq_data_get_irq_chip_data ( d ) ; unsigned int cplds_irq = irqd_to_hwirq ( d ) ; int bit = BIT ( cplds_irq ) ; fpga -> irq_mask &= ~ bit ; writel ( fpga -> irq_mask , fpga -> base + FPGA_IRQ_MASK_EN ) ; } 

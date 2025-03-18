@@ -1,0 +1,1 @@
+static bool nfp_csr_spec_valid ( struct nfp_dumpspec_csr * spec_csr ) { u32 required_read_sz = sizeof ( * spec_csr ) - sizeof ( spec_csr -> tl ) ; u32 available_sz = be32_to_cpu ( spec_csr -> tl . length ) ; u32 reg_width ; reg_width = be32_to_cpu ( spec_csr -> register_width ) ; return reg_width == 32 || reg_width == 64 ; } 

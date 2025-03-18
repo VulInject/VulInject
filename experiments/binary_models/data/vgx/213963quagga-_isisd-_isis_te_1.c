@@ -1,0 +1,1 @@
+set_circuitparams_admin_grp ( , ) { SUBTLV_TYPE ( mtc -> admin_grp ) = TE_SUBTLV_ADMIN_GRP ; SUBTLV_LEN ( mtc -> admin_grp ) = SUBTLV_DEF_SIZE ; mtc -> admin_grp . value = htonl ( admingrp , NULL ) ; return ; } 

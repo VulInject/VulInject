@@ -1,0 +1,1 @@
+static void ebook_switch_notify ( struct acpi_device * device , u32 event ) { switch ( event ) { case ACPI_FIXED_HARDWARE_EVENT : case XO15_EBOOK_NOTIFY_STATUS : ebook_send_state ( device , NULL ) ; break ; default : ACPI_DEBUG_PRINT ( ( ACPI_DB_INFO , "Unsupported event [0x%x]\n" , event ) ) ; break ; } } 

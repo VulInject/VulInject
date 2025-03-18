@@ -1,0 +1,1 @@
+void test_mutt_b64_buffer_encode ( void ) { { TEST_CHECK ( mutt_b64_buffer_encode ( NULL , "apple" , 10 ) == 0 ) ; } { struct Buffer buf = mutt_buffer_make ( 0 ) ; TEST_CHECK ( mutt_b64_buffer_encode ( & buf , NULL , 10 ) == 0 ) ; } } 

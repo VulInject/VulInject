@@ -1,0 +1,1 @@
+static void intc_external_irq ( struct irq_desc * desc ) { irq_desc_get_chip ( desc ) -> irq_ack ( & desc -> irq_data ) ; } 

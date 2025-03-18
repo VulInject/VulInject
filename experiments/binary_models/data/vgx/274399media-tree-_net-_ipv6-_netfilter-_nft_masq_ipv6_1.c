@@ -1,0 +1,1 @@
+static int __init nft_masq_ipv6_module_init ( void ) { int ret ; ret = nft_register_expr ( & nft_masq_ipv6_type ) ; nf_nat_masquerade_ipv6_register_notifier ( ) ; return ret ; } 

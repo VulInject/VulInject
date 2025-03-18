@@ -1,0 +1,1 @@
+unsigned int getRegisterCount ( const unsigned int opcode ) { int nRc ; switch ( opcode & MASK_REGISTER_COUNT ) { case 0x00000000 : nRc = 4 ; break ; case 0x00008000 : nRc = 1 ; break ; case 0x00400000 : nRc = 2 ; break ; case 0x00408000 : nRc = 3 ; break ; default : nRc = 0 ; } return ( nRc ) ; } 

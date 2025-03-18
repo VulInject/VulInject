@@ -1,0 +1,1 @@
+module_param ( nowayout , bool , 0 ) ; wm831x_wdt_drvdata { struct watchdog_device wdt ; struct wm831x * wm831x ; struct mutex lock ; int update_state ; } 

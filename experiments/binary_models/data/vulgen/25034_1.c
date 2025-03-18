@@ -1,0 +1,1 @@
+void HELPER wsr_ccount ( CPUXtensaState * env , uint32_t v ) { int i ; HELPER update_ccount ( env ) for ( i = 0 ; i < env -> config -> nccompare ; ++ i ) { HELPER update_ccompare ( env , i ) } } 

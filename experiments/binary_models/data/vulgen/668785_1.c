@@ -1,0 +1,1 @@
+int * netdev_shutdown_server_cb ( struct lxc_handler * , struct lxc_netdev * ) const lxc_network_info { const char ; size_t template_len ; } , lxc_network_info [ LXC_NET_MAXCONFTYPE + 1 ] { } ; 

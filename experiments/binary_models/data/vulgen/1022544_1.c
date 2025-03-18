@@ -1,0 +1,1 @@
+static bfd_vma __bfd_getl32 ( const void * p ) { unsigned long v ; v = ( unsigned long ) addr [ 0 ] ; v |= ( unsigned long ) addr [ 1 ] << 8 ; v |= ( unsigned long ) addr [ 2 ] << 16 ; v |= ( unsigned long ) addr [ 3 ] << 24 ; return v ; } 

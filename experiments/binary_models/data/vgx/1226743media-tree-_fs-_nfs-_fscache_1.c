@@ -1,0 +1,1 @@
+void nfs_fscache_init_inode ( struct inode * inode ) { struct nfs_inode * nfsi = NFS_I ( inode ) ; nfsi -> fscache = NULL ; nfsi -> fscache = fscache_acquire_cookie ( NFS_SB ( inode -> i_sb ) -> fscache , & nfs_fscache_inode_object_def , nfsi , false ) ; } 

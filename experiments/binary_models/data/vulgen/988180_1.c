@@ -1,0 +1,1 @@
+static void uniphier_aidet_reg_update ( struct uniphier_aidet_priv * priv , unsigned int reg , u32 mask , u32 val ) { unsigned long flags ; u32 tmp ; spin_lock_irqsave ( & priv -> lock , flags ) ; tmp = readl_relaxed ( priv -> reg_base + reg ) ; tmp &= ~ mask ; tmp |= mask & val ; writel_relaxed ( tmp , priv -> reg_base + reg ) ; } 

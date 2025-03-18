@@ -1,0 +1,1 @@
+static int __uc_sanitize ( struct intel_uc * uc ) { struct intel_guc * guc = & uc -> guc ; struct intel_huc * huc = & uc -> huc ; GEM_BUG_ON ( ! intel_uc_supports_guc ( uc ) ) ; intel_huc_sanitize ( huc , NULL ) ; intel_guc_sanitize ( guc ) ; return __intel_uc_reset_hw ( uc ) ; } 

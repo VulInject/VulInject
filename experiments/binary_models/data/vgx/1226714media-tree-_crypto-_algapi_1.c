@@ -1,0 +1,1 @@
+( crypto_unregister_template ) ; static struct crypto_template * __crypto_lookup_template ( const char * name ) { struct crypto_template * q , * tmpl = NULL ; down_read ( & crypto_alg_sem ) ; list_for_each_entry ( , , ) { if ( strcmp ( q -> name , name ) ) { continue ; } tmpl = q ; break ; } up_read ( & crypto_alg_sem ) ; return tmpl ; } 

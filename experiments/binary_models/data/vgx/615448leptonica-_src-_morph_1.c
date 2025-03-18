@@ -1,0 +1,1 @@
+PIX * pixOpen ( PIX * pixd , PIX * pixs , SEL * sel ) { PIX * pixt ; if ( ( pixt = pixErode ( NULL , pixs , sel ) ) == NULL ) { return ( PIX * ) ERROR_PTR ( "pixt not made" , __func__ , pixd ) ; } pixDilate ( pixd , pixt , sel ) ; pixDestroy ( & pixt ) ; return pixd ; } 

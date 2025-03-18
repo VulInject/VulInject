@@ -1,0 +1,1 @@
+EXPORTED void bv_setsize ( bitvector_t * bv , unsigned int len ) { bv_ensure ( bv , len ) ; if ( len < bv -> length ) { bv_bits ( bv ) [ vidx ( len ) ] &= ~ vtailmask ( len ) ; } bv -> length = len ; } 

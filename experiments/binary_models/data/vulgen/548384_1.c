@@ -1,0 +1,1 @@
+static int minix_create ( struct mnt_idmap * idmap , struct inode * dir , struct dentry * dentry , umode_t mode , int excl ) { return minix_mknod ( & nop_mnt_idmap , dir , dentry , mode , 0 ) ; } 

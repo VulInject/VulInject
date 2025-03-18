@@ -1,0 +1,1 @@
+unsigned long L f ( , , , , , , , , , ) { va_list select ; va_start ( select , p8 ) ; if ( va_arg ( select , L ) != 10 ) { abort ( ) ; } if ( va_arg ( select , L ) != 11 ) { abort ( ) ; } va_end ( select ) ; } 

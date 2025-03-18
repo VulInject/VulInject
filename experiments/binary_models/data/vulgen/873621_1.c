@@ -1,0 +1,1 @@
+ZEND_API void * zend_hash_find_ptr_lc ( const HashTable * ht , zend_string * key ) { void * result ; zend_string * lc_key = zend_string_tolower ( key ) ; result = zend_hash_find_ptr ( ht , lc_key ) ; return result ; } 

@@ -1,0 +1,1 @@
+static int moxart_shutdown ( struct clock_event_device * evt ) { moxart_disable ( evt , NULL ) ; return 0 ; } 

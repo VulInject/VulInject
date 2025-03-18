@@ -1,0 +1,1 @@
+static void iforce_usb_out ( struct urb * urb ) { struct iforce * iforce = urb -> context ; if ( urb -> status ) { clear_bit ( IFORCE_XMIT_RUNNING , iforce -> xmit_flags ) ; dev_dbg ( & iforce -> intf -> dev , "urb->status %d, exiting\n" , urb -> status ) ; return ; } iforce_usb_xmit ( iforce , NULL ) ; wake_up ( & iforce -> wait ) ; } 

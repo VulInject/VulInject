@@ -1,0 +1,1 @@
+static void efx_tc_free_action_set ( struct efx_nic * efx , struct efx_tc_action_set * act , bool in_hw ) { if ( in_hw ) { list_del ( & act -> list ) ; } if ( act -> count ) { efx_tc_flower_put_counter_index ( efx , act -> count ) ; } kfree ( act ) ; } 

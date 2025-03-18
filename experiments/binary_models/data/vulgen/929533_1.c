@@ -1,0 +1,1 @@
+int event_notifier_test_and_clear ( EventNotifier * e ) { int value ; ssize_t len ; char buffer [ 512 ] ; value = 0 ; { len = read ( e -> rfd , buffer , sizeof ( buffer ) ) ; value |= ( len > 0 ) ; } ( len == - 1 && errno == EINTR ) || len == sizeof ( buffer ) ; return value ; } 

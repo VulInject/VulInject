@@ -1,0 +1,1 @@
+static void ast_bo_evict_flags ( struct ttm_buffer_object * bo , struct ttm_placement * pl ) { struct ast_bo * astbo = ast_bo ( bo ) ; ast_ttm_placement ( astbo , TTM_PL_FLAG_SYSTEM ) ; * pl = astbo -> placement ; } 

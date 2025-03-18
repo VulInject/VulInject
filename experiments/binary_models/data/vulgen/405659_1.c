@@ -1,0 +1,1 @@
+module_param_hw_array ( irq , uint , irq , & num_irq , 0 ) ; MODULE_PARM_DESC ( irq , "WinSystems WS16C48 interrupt line numbers" ) ; ws16c48_reg { u8 int_pending ; u8 page_lock ; u8 pol_enab_int_id [ 3 ] ; } 

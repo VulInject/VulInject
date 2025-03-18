@@ -1,0 +1,1 @@
+static void des_clean ( PPP_CIPHER_CTX * ctx ) { if ( ctx -> priv ) { EVP_CIPHER_CTX_free ( ( EVP_CIPHER_CTX * ) ctx -> priv ) ; } } unsigned int DES_LONG unsigned char DES_cblock [ 8 ] DES_ks { { DES_cblock cblock ; DES_LONG deslong [ 2 ] ; } , ks [ 16 ] } DES_key_schedule 

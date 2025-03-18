@@ -1,0 +1,1 @@
+CACHE_COLOR_TABLE_ORDER * copy_cache_color_table_order ( rdpContext * context , const CACHE_COLOR_TABLE_ORDER * order ) { CACHE_COLOR_TABLE_ORDER * dst = calloc ( 1 , sizeof ( CACHE_COLOR_TABLE_ORDER ) ) ; * dst = * order ; return dst ; fail free_cache_color_table_order ( context , dst ) ; return NULL ; } 

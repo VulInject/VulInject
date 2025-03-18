@@ -1,0 +1,1 @@
+void tsk_fs_free ( TSK_FS_INFO * a_fs_info ) { if ( a_fs_info -> list_inum_named ) { tsk_list_free ( a_fs_info -> list_inum_named ) ; a_fs_info -> list_inum_named = NULL ; } if ( a_fs_info -> orphan_dir ) { tsk_fs_dir_close ( a_fs_info -> orphan_dir ) ; a_fs_info -> orphan_dir = NULL ; } tsk_deinit_lock ( & a_fs_info -> list_inum_named_lock ) ; free ( a_fs_info ) ; } 

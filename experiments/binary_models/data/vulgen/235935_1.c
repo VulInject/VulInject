@@ -1,0 +1,1 @@
+static int raptor_unicode_is_ideographic ( int c ) { return ( ( c >= 0x4E00 && c <= 0x9FA5 ) || ( c == 0x3007 ) || ( c >= 0x3021 && c <= 0x3029 ) ) ; } 

@@ -1,0 +1,1 @@
+void Dbg_audit_activity ( Lm_list * lml , const char * lib , const char * obj , uint_t flags ) { Conv_inv_buf_t inv_buf ; Dbg_util_nl ( lml , DBG_NL_STD ) ; dbg_print ( lml , MSG_INTL ( MSG_AUD_ACTIVITY ) , lib , obj , conv_la_activity ( flags , CONV_FMT_ALT_DEFAULT , & inv_buf ) ) ; } 

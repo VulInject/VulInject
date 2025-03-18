@@ -1,0 +1,1 @@
+NCURSES_EXPORT ( ) _nc_safe_strcpy ( , ) { if ( src != 0 ) { size_t len = strlen ( src ) ; if ( len < dst -> s_size ) { if ( dst -> s_head != 0 ) { strlcpy ( dst -> s_head , src , dst -> s_size ) ; dst -> s_tail = dst -> s_head + len ; } return TRUE ; } } return FALSE ; } 

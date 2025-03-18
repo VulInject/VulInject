@@ -1,0 +1,1 @@
+tui_refresh_data_win ( ) { tui_erase_data_content ( ( char * ) NULL ) ; if ( TUI_DATA_WIN -> generic . content_size > 0 ) { int first_element = tui_first_data_item_displayed ( ) ; if ( first_element >= 0 ) { tui_display_data_from ( first_element , 0 ) ; } } } 

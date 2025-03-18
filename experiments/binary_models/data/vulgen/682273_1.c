@@ -1,0 +1,1 @@
+static void __section ( ".inittext" ) serial_putchar ( int ch ) ( unsigned timeout = 0xffff , ( ( inb ( early_serial_base + LSR ) & XMTRDY ) == 0 && -- timeout ) cpu_relax ( ) , outb ( ch , early_serial_base ) ) ; 

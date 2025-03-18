@@ -1,0 +1,1 @@
+void * CAPSTONE_API cs_winkernel_malloc ( size_t size ) { NT_ASSERT ( size ) ; size_t number_of_bytes = 0 ; CS_WINKERNEL_MEMBLOCK * block = NULL ; if ( ! NT_SUCCESS ( RtlSizeTAdd ( size , FIELD_OFFSET ( CS_WINKERNEL_MEMBLOCK , data ) , & number_of_bytes ) ) ) { return NULL ; } if ( ! block ) { return NULL ; } block -> size = size ; return block -> data ; } 

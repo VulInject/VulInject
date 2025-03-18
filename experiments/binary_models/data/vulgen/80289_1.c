@@ -1,0 +1,1 @@
+z = z + e * C2 ; z = z + x ; z = z + e * C1 ; return ( z ) ; 

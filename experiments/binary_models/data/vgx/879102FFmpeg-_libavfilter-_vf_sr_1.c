@@ -1,0 +1,1 @@
+static av_cold void uninit ( AVFilterContext * context ) { SRContext * sr_context = context -> priv ; ff_dnn_uninit ( & sr_context -> dnnctx ) ; sws_freeContext ( sr_context -> sws_pre_scale ) ; } 

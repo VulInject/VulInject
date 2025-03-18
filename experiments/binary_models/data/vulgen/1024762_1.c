@@ -1,0 +1,1 @@
+static void mt7530_free_mdio_irq ( struct mt7530_priv * priv ) { int p ; for ( p = 0 ; p < MT7530_NUM_PHYS ; p ++ ) { if ( BIT ( p ) & priv -> ds -> phys_mii_mask ) { irq = irq_find_mapping ( priv -> irq_domain , p ) ; irq_dispose_mapping ( irq ) ; } } } 

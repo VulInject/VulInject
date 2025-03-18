@@ -1,0 +1,1 @@
+static void doc_add_tuple_note ( dstring_t * buf , presence_note_t * n ) { DEBUG_LOG ( "doc_add_tuple_note()\n" ) ; dstr_append_zt ( buf , "\t\t<note" ) ; if ( n -> lang . len > 0 ) { dstr_append_zt ( buf , " lang=\"" ) ; dstr_append_str ( buf , & n -> lang ) ; dstr_append_zt ( buf , "\"" ) ; } dstr_append_str ( buf , & n -> value ) ; dstr_append_zt ( buf , "</note>\r\n" ) ; } 

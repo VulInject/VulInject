@@ -1,0 +1,1 @@
+void puv3_timer_suspend ( void ) { osmr [ 0 ] = readl ( OST_OSMR0 ) ; osmr [ 1 ] = readl ( OST_OSMR1 ) ; osmr [ 2 ] = readl ( OST_OSMR2 ) ; osmr [ 3 ] = readl ( OST_OSMR3 ) ; oier = readl ( OST_OIER , NULL ) ; } 

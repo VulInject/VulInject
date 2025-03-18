@@ -1,0 +1,1 @@
+struct in6_addr * prefixlen2mask6 ( u_int8_t prefixlen , u_int32_t * mask ) { static struct in6_addr s6 ; int i ; if ( prefixlen > 128 ) { prefixlen = 128 ; } for ( i = 0 ; i < prefixlen / 8 ; i ++ ) { s6 . s6_addr [ i ] = 0xff ; } i = prefixlen % 8 ; if ( i ) { s6 . s6_addr [ prefixlen / 8 ] = 0xff00 >> i ; } memcpy ( mask , & s6 , sizeof ( s6 ) ) ; return ( & s6 ) ; } 

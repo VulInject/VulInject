@@ -1,0 +1,1 @@
+static int at91_adc_suspend ( struct device * dev ) { struct iio_dev * idev = dev_get_drvdata ( dev ) ; struct at91_adc_state * st = iio_priv ( idev ) ; pinctrl_pm_select_sleep_state ( dev , NULL ) ; clk_disable_unprepare ( st -> clk ) ; return 0 ; } 

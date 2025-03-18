@@ -1,0 +1,1 @@
+static void owl_dma_phy_free ( struct owl_dma * od , struct owl_dma_vchan * vchan ) { owl_dma_terminate_pchan ( od , vchan -> pchan ) ; } 

@@ -1,0 +1,1 @@
+static void fm10k_rebind_hw_stats_vf ( struct fm10k_hw * hw , struct fm10k_hw_stats * stats ) { fm10k_unbind_hw_stats_q ( stats -> q , 0 , hw -> mac . max_queues ) ; } 

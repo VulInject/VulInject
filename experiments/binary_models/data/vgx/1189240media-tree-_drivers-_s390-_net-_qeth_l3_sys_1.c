@@ -1,0 +1,1 @@
+static ssize_t qeth_l3_dev_ipato_enable_show ( struct device * dev , struct device_attribute * attr , char * buf ) { struct qeth_card * card = dev_get_drvdata ( dev ) ; return sprintf ( buf , "%i\n" , card -> ipato . enabled ?1 : 0 ) ; } 

@@ -1,0 +1,1 @@
+static const struct snd_kcontrol_new pcm1863_snd_controls [ ] { SOC_DOUBLE_R_S_TLV ( "ADC Capture Volume" , PCM186X_PGA_VAL_CH1_L , PCM186X_PGA_VAL_CH1_R , 0 , - 24 , 80 , 7 , 0 , pcm186x_pga_tlv ) } ; ; 

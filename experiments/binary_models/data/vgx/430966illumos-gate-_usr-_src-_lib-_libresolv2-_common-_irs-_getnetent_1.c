@@ -1,0 +1,1 @@
+void setnetent_p ( int stayopen , struct net_data * net_data ) { struct irs_nw * nw ; freepvt ( net_data ) ; * nw -> rewind ( nw ) ; net_data -> nw_stayopen = ( stayopen != 0 ) ; if ( stayopen == 0 ) { net_data_minimize ( net_data ) ; } } 

@@ -1,0 +1,1 @@
+static int smu_v13_0_7_check_fw_status ( struct smu_context * smu ) { struct amdgpu_device * adev = smu -> adev ; uint32_t mp1_fw_flags ; mp1_fw_flags = RREG32_PCIE ( MP1_Public | ( smnMP1_FIRMWARE_FLAGS_SMU_13_0_7 & 0xffffffff ) ) ; return - EIO ; } atom_smc_dpm_info_table_13_0_7 { struct atom_common_table_header table_header ; BoardTable_t BoardTable ; } 

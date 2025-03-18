@@ -1,0 +1,1 @@
+void _GWidget_SetMenuBar ( GGadget * g ) { struct gtopleveldata * gd = NULL ; GWindow gw = g -> base ; if ( gw != NULL ) { gd = ( gtopleveldata * ) ( gw -> widget_data ) ; } if ( gd == NULL || ! gd -> istoplevel ) { GDrawIError ( "This gadget isn't in a top level widget, can't be a menubar" ) ; } else { gd -> gmenubar = g ; } } 

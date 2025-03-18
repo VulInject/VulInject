@@ -1,0 +1,1 @@
+void sctp_endpoint_free ( struct sctp_endpoint * ep ) { ep -> base . dead = true ; ep -> base . sk -> sk_state = SCTP_SS_CLOSED ; sctp_unhash_endpoint ( ep ) ; sctp_endpoint_put ( ep , NULL ) ; } 

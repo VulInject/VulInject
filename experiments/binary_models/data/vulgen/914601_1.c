@@ -1,0 +1,1 @@
+static void sh_eth_get_regs ( struct net_device * ndev , struct ethtool_regs * regs , void * buf ) { struct sh_eth_private * mdp = netdev_priv ( ndev ) ; pm_runtime_get_sync ( & mdp -> pdev -> dev ) ; __sh_eth_get_regs ( ndev , buf ) ; pm_runtime_put_sync ( & mdp -> pdev -> dev ) ; } 

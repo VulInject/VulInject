@@ -1,0 +1,1 @@
+static void reset ( void ) { free ( output ) ; output = NULL ; opt_table = NULL ; opt_count = opt_num_short = opt_num_short_arg = opt_num_long = 0 ; } 

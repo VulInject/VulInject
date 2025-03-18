@@ -1,0 +1,1 @@
+static void unpack_alpha_12 ( GetBitContext * gb , uint16_t * dst , int num_coeffs , const int num_bits ) { if ( num_bits == 16 ) { unpack_alpha ( gb , dst , num_coeffs , 16 , 12 ) ; } else { unpack_alpha ( gb , dst , num_coeffs , 8 , 0 ) ; } } 

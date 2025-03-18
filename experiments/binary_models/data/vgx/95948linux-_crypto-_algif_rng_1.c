@@ -1,0 +1,1 @@
+static void rng_release ( void * private ) { struct rng_parent_ctx * pctx = private ; if ( unlikely ( ! pctx ) ) { return ; } crypto_free_rng ( pctx -> drng ) ; kfree_sensitive ( pctx -> entropy ) ; } 

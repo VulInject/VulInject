@@ -1,0 +1,1 @@
+void test_msnprintfBackslashPercent ( void ) { char exp_buf [ 32 ] ; char act_buf [ 32 ] ; int exp_cnt ; int act_cnt ; exp_cnt = snprintf ( exp_buf , sizeof ( exp_buf ) , "\%s" , strerror ( ENOENT ) ) ; errno = ENOENT ; act_cnt = msnprintf ( act_buf , sizeof ( act_buf ) , "\%m" ) ; TEST_ASSERT_EQUAL ( exp_cnt , act_cnt ) ; } 

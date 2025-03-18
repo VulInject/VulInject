@@ -1,0 +1,1 @@
+bool hfi1_schedule_send ( struct rvt_qp * qp ) { lockdep_assert_held ( & qp -> s_lock ) ; if ( hfi1_send_ok ( qp ) ) { _hfi1_schedule_send ( qp , NULL ) ; return true ; } if ( qp -> s_flags & HFI1_S_ANY_WAIT_IO ) { iowait_set_flag ( & ( ( hfi1_qp_priv * ) qp -> priv ) -> s_iowait , IOWAIT_PENDING_IB ) ; } return false ; } 

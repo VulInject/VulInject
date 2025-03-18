@@ -1,0 +1,1 @@
+static void uv__fsevents_push_event ( uv_fs_event_t * handle , QUEUE * events , int err ) { assert ( events != NULL || err != 0 ) ; uv_mutex_lock ( & handle -> cf_mutex ) ; if ( events != NULL ) { QUEUE_ADD ( & handle -> cf_events , events ) ; } if ( err != 0 ) { handle -> cf_error = err ; } uv_mutex_unlock ( & handle -> cf_mutex ) ; uv_async_send ( handle -> cf_cb , NULL ) ; } 

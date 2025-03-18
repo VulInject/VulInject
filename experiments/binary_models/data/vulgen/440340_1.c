@@ -1,0 +1,1 @@
+int crypt_prf_fips_key_size_min ( const struct prf_desc * prf ) { return prf -> prf_key_size / 2 ; } 

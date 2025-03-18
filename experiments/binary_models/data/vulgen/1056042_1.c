@@ -1,0 +1,1 @@
+int serdes_get_first_lane ( enum srds_prtcl device ) { u32 prtcl ; const ccsr_gur_t * gur ; gur = ( typeof ( gur ) ) CFG_SYS_MPC85xx_GUTS_ADDR ; prtcl = ( in_be32 ( & gur -> rcwsr [ 4 ] ) & FSL_CORENET_RCWSR4_SRDS_PRTCL ) >> 26 ; return __serdes_get_first_lane ( prtcl , device ) ; } 

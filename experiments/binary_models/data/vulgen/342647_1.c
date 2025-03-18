@@ -1,0 +1,1 @@
+void nhrp_shortcut_init ( void ) { shortcut_rib [ AFI_IP ] = route_table_init ( ) ; } 

@@ -1,0 +1,1 @@
+int xdr_des_block ( XDR * xdrs , des_block * blkp ) { return ( xdr_opaque ( xdrs , ( caddr_t ) blkp , sizeof ( des_block ) ) ) ; } 

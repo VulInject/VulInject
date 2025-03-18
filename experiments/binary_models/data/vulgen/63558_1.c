@@ -1,0 +1,1 @@
+static inline u32 _emit_LP ( unsigned dry_run , u8 buf [ ] , unsigned loop , u8 cnt ) { if ( dry_run ) { return SZ_DMALP ; } buf [ 0 ] = CMD_DMALP ; if ( loop ) { buf [ 0 ] |= ( 1 << 1 ) ; } cnt -- ; buf [ 1 ] = cnt ; PL330_DBGCMD_DUMP ( SZ_DMALP , "\tDMALP_%c %u\n" , loop ?'1' : '0' , cnt ) ; return SZ_DMALP ; } _arg_LPEND { bool forever ; unsigned loop ; u8 bjump ; } 

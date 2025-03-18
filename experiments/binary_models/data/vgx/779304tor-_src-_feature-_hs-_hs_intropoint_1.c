@@ -1,0 +1,1 @@
+void hs_intropoint_clear ( hs_intropoint_t * ip ) { if ( ip == NULL ) { return ; } tor_cert_free ( ip -> auth_key_cert ) ; SMARTLIST_FOREACH ( ip -> link_specifiers , link_specifier_t * , ls , link_specifier_free ( ls ) ) ; smartlist_free ( ip -> link_specifiers ) ; } 

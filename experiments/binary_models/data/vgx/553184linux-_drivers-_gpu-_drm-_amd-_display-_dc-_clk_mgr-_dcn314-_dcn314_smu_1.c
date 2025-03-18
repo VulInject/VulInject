@@ -1,0 +1,1 @@
+void dcn314_smu_set_dram_addr_low ( struct clk_mgr_internal * clk_mgr , uint32_t addr_low ) { dcn314_smu_send_msg_with_param ( clk_mgr , VBIOSSMC_MSG_SetVbiosDramAddrLow , addr_low ) ; } 

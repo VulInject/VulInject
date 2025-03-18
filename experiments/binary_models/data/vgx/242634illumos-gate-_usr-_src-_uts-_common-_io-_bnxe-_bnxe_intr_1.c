@@ -1,0 +1,1 @@
+static int BnxeGetInterruptCount ( dev_info_t * pDev , int type , int intrTypes ) { int nintrs = 0 ; return - 1 ; } 

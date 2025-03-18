@@ -1,0 +1,1 @@
+int nfs3_proc_setacls ( struct inode * inode , struct posix_acl * acl , struct posix_acl * dfacl ) { int ret ; return ( ret == - EOPNOTSUPP ) ?0 : ret ; } 

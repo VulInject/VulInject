@@ -1,1 +1,1 @@
-static void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = FUN2 ( VAR2 ) ; FUN3 ( ) ; FUN4 ( VAR4 -> VAR5 , VAR4 -> VAR5 -> VAR6 & ~ VAR7 , NULL ) ; FUN5 ( ) ; FUN6 ( & VAR4 -> VAR8 ) ; FUN7 ( VAR9 , NULL ) ; }
+static void ipoib_parent_unregister_pre ( struct net_device * ndev ) { struct ipoib_dev_priv * priv = ipoib_priv ( ndev ) ; rtnl_lock ( ) ; dev_change_flags ( priv -> dev , priv -> dev -> flags & ~ IFF_UP , NULL ) ; rtnl_unlock ( ) ; ib_unregister_event_handler ( & priv -> event_handler ) ; flush_workqueue ( ipoib_workqueue , NULL ) ; } 

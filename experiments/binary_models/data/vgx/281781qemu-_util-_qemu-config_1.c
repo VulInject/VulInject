@@ -1,0 +1,1 @@
+int qemu_read_config_file ( const char * filename , QEMUConfigCB * cb , Error * * errp ) { FILE * f = fopen ( filename , "r" ) ; int ret ; if ( f == NULL ) { error_setg_file_open ( errp , errno , filename ) ; return - errno ; } ret = qemu_config_foreach ( f , cb , vm_config_groups , filename , errp ) ; fclose ( f , NULL ) ; return ret ; } 

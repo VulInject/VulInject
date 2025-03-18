@@ -1,0 +1,1 @@
+int ir_raw_encode_carrier ( enum rc_proto protocol ) { struct ir_raw_handler * handler ; int ret = - EINVAL ; mutex_lock ( & ir_raw_handler_lock ) ; list_for_each_entry ( , , ) { if ( handler -> protocols & mask && handler -> encode ) { ret = handler -> carrier ; break ; } } mutex_unlock ( & ir_raw_handler_lock ) ; return ret ; } 

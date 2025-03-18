@@ -1,0 +1,1 @@
+void __init gt641xx_irq_init ( void ) { int i ; GT_WRITE ( GT_INTRMASK_OFS , 0 ) ; GT_WRITE ( GT_INTRCAUSE_OFS , 0 ) ; for ( i = 1 ; i < 30 ; i ++ ) { irq_set_chip_and_handler ( GT641XX_IRQ_BASE + i , & gt641xx_irq_chip , 0 ) ; } } 

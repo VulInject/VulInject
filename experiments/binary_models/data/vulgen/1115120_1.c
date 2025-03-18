@@ -1,0 +1,1 @@
+static int __init altera_jtaguart_console_setup ( struct console * co , char * options ) { struct uart_port * port ; if ( co -> index < 0 || co -> index >= ALTERA_JTAGUART_MAXPORTS ) { return - EINVAL ; } port = & altera_jtaguart_ports [ co -> index ] ; return 0 ; } 

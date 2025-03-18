@@ -1,0 +1,1 @@
+static inline bool msc_block_is_empty ( struct msc_block_desc * bdesc ) { if ( ! bdesc -> valid_dw ) { return true ; } return false ; } 

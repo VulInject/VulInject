@@ -1,0 +1,1 @@
+void fuzz_cleanup ( struct fuzz * fuzz ) { FUZZ_DBG ( ( "cleanup, fuzz = %p" , fuzz ) ) ; assert ( fuzz != NULL ) ; assert ( fuzz -> seed != NULL ) ; assert ( fuzz -> fuzzed != NULL ) ; free ( fuzz -> fuzzed ) ; free ( fuzz ) ; } 

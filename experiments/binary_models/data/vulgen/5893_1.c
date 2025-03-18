@@ -1,0 +1,1 @@
+static void ti_sci_inta_manage_event ( struct irq_data * data , u32 offset ) { struct ti_sci_inta_event_desc * event_desc ; struct ti_sci_inta_vint_desc * vint_desc ; struct ti_sci_inta_irq_domain * inta ; event_desc = irq_data_get_irq_chip_data ( data ) ; vint_desc = to_vint_desc ( event_desc , event_desc -> vint_bit ) ; inta = data -> domain -> host_data ; } 

@@ -1,0 +1,1 @@
+void helper_eret ( CPUMIPSState * env ) { exception_return ( env ) ; env -> CP0_LLAddr = 1 ; } 

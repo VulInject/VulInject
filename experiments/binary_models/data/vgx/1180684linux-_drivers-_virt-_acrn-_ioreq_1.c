@@ -1,0 +1,1 @@
+static void ioreq_pause ( void ) { acrn_remove_intr_handler ( ) ; drain_workqueue ( ioreq_wq , NULL ) ; } 

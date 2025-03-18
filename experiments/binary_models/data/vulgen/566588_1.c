@@ -1,0 +1,1 @@
+static int owl_nvmem_probe ( struct owl_ctx * ctx ) { int err ; if ( IS_ERR ( ctx -> cell ) ) { err = PTR_ERR ( ctx -> cell ) ; if ( err == - ENOENT || err == - EOPNOTSUPP ) { return 1 ; } return err ; } INIT_WORK ( & ctx -> work , owl_nvmem_work ) ; schedule_work ( & ctx -> work ) ; return 0 ; } 

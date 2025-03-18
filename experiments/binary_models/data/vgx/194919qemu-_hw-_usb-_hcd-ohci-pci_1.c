@@ -1,0 +1,1 @@
+OBJECT_DECLARE_SIMPLE_TYPE ( , ) OHCIPCIState { PCIDevice parent_obj ; OHCIState state ; char * masterbus ; uint32_t num_ports ; int firstport ; } 

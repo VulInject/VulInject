@@ -1,0 +1,1 @@
+static void read_fifo ( struct synquacer_spi_priv * priv ) { u32 len = readl ( priv -> base + DMSTATUS ) ; u8 * buf = priv -> rx_buf ; int i ; len = min_t ( , , ) ; for ( i = 0 ; i < len ; i ++ ) { * buf ++ = readb ( priv -> base + RXFIFO ) ; } priv -> rx_buf = buf ; priv -> rx_words -= len ; } 

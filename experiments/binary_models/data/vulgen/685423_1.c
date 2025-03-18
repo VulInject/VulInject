@@ -1,0 +1,1 @@
+bool pm_save_wakeup_count ( unsigned int count ) { unsigned int cnt , inpr ; unsigned long flags ; events_check_enabled = false ; spin_lock_irqsave ( & events_lock , flags ) ; if ( cnt == count && inpr == 0 ) { saved_count = count ; events_check_enabled = true ; } spin_unlock_irqrestore ( & events_lock , flags ) ; return events_check_enabled ; } 

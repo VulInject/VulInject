@@ -1,0 +1,1 @@
+static void variax_startup3 ( struct usb_line6_variax * variax ) { line6_start_timer ( & variax -> startup_timer2 , VARIAX_STARTUP_DELAY3 , variax_startup4 , ( unsigned long ) variax ) ; } 

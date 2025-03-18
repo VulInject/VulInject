@@ -1,0 +1,1 @@
+static void i810_restore_addr_map ( struct i810fb_par * par ) { u8 tmp ; u8 __iomem * mmio = par -> mmio_start_virtual ; i810_writeb ( GR_INDEX , mmio , GR10 ) ; tmp = i810_readb ( GR_DATA , mmio ) ; tmp |= par -> hw_state . gr10 ; i810_writeb ( GR_INDEX , mmio , GR10 ) ; i810_writeb ( GR_DATA , mmio , tmp ) ; } 

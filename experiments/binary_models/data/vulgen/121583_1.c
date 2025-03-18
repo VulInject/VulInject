@@ -1,0 +1,1 @@
+int dw_hashsz ; int dw_index ; uintptr_t dw_hash ; int dw_head ; 

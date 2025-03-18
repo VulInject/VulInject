@@ -1,0 +1,1 @@
+static int __init i2c_parport_init ( void ) { if ( type < 0 ) { pr_warn ( "adapter type unspecified\n" ) ; return - ENODEV ; } return parport_register_driver ( & i2c_parport_driver ) ; } 

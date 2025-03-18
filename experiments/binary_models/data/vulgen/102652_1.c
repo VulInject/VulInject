@@ -1,0 +1,1 @@
+av_cold void ff_ttaencdsp_init_x86 ( TTAEncDSPContext * c ) { if ( EXTERNAL_SSSE3 ( cpu_flags ) ) { c -> filter_process = ff_ttaenc_filter_process_ssse3 ; } if ( EXTERNAL_SSE4 ( cpu_flags ) ) { c -> filter_process = ff_ttaenc_filter_process_sse4 ; } } 

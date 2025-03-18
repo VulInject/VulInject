@@ -1,0 +1,1 @@
+static dslibentry_t * ds_new_dslibentry ( void ) { int newndslib ; dslibentry_t * dsp ; if ( ( dsp = ds_hdl_to_dslibentry ( 0 ) ) != NULL ) { return ( dsp ) ; } newndslib = ndslib << 1 ; if ( ( dslibtab = realloc ( dslibtab , newndslib * sizeof ( dslibentry_t ) ) ) == NULL ) { return ( NULL ) ; } dsp = & dslibtab [ ndslib ] ; ndslib = newndslib ; return ( dsp ) ; } 

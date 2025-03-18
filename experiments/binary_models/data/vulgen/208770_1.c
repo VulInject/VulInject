@@ -1,0 +1,1 @@
+static void vp9_raw_reorder_clear_slot ( VP9RawReorderContext * ctx , int s ) { if ( ctx -> slot [ s ] ) { ctx -> slot [ s ] -> slots &= ~ ( 1 << s ) ; if ( ctx -> slot [ s ] -> slots == 0 ) { vp9_raw_reorder_frame_free ( 0 ) ; } else { ctx -> slot [ s ] = NULL ; } } } 

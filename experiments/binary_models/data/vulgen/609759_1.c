@@ -1,0 +1,1 @@
+bool uc_is_property_bidi_eur_num_terminator ( int uc ) { return bitmap_lookup ( & u_property_bidi_eur_num_terminator , uc ) ; } 

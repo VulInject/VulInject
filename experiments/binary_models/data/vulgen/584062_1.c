@@ -1,0 +1,1 @@
+fprintf ( stderr , "set to 0 the HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\IPEnableRouter\n\n" ) ; exit ( - 1 ) ; ( restore_ip_forward ) ; 

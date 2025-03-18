@@ -1,0 +1,1 @@
+hal_util_remove_trailing_slash ( ) { gchar * c = NULL ; c = strrchr ( path , '/' ) ; if ( c == NULL ) { HAL_WARNING ( ( "Invalid path %s" , path ) ) ; return 1 ; } if ( * ( c + 1 ) == '\0' ) { * c = '\0' ; } return TRUE ; } 

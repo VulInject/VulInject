@@ -1,0 +1,1 @@
+void gregorio_free_one_element ( gregorio_element * * element ) { gregorio_element * next = NULL ; gregorio_element * to_free ; gregorio_not_null_ptr ( , , ) to_free = * element ; if ( to_free -> previous ) { to_free -> previous -> next = NULL ; } free_one_element ( to_free ) ; * element = next ; } 

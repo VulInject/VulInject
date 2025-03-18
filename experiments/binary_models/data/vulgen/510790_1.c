@@ -1,0 +1,1 @@
+static void mmci_dma_data_error ( struct mmci_host * host ) { dev_err ( mmc_dev ( host -> mmc ) , "error during DMA transfer!\n" ) ; dmaengine_terminate_all ( host -> dma_current ) ; host -> dma_in_progress = false ; host -> dma_current = NULL ; host -> dma_desc_current = NULL ; } 

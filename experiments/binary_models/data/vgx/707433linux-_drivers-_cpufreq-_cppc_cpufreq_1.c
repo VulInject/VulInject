@@ -1,0 +1,1 @@
+static int __init cppc_cpufreq_init ( void ) { int ret ; cppc_check_hisi_workaround ( ) ; cppc_freq_invariance_init ( ) ; populate_efficiency_class ( ) ; ret = cpufreq_register_driver ( & cppc_cpufreq_driver ) ; if ( ret ) { cppc_freq_invariance_exit ( ) ; } return ret ; } 

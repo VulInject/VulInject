@@ -1,0 +1,1 @@
+static void ice_set_feature_support ( struct ice_pf * pf , enum ice_feature f ) { set_bit ( f , pf -> features ) ; } 

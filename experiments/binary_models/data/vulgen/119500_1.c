@@ -1,0 +1,1 @@
+static int testDiskNameToIndex ( const void * data G_GNUC_UNUSED ) { size_t i ; int idx ; for ( i = 0 ; i < 100000 ; ++ i ) { diskName = virIndexToDiskName ( i , "sd" ) ; idx = virDiskNameToIndex ( diskName ) ; if ( idx < 0 || idx != i ) { VIR_TEST_DEBUG ( "\nExpect [%zu]" , i ) ; VIR_TEST_DEBUG ( "Actual [%d]" , idx ) ; return - 1 ; } } return 0 ; } 

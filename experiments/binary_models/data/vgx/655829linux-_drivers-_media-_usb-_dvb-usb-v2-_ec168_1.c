@@ -1,0 +1,1 @@
+static int ec168_ec100_frontend_attach ( struct dvb_usb_adapter * adap ) { struct dvb_usb_device * d = adap_to_d ( adap ) ; dev_dbg ( & d -> udev -> dev , "%s:\n" , __func__ ) ; adap -> fe [ 0 ] = dvb_attach ( ec100_attach , & ec168_ec100_config , & d -> i2c_adap ) ; return 0 ; } 

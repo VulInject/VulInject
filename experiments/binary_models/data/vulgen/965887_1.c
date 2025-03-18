@@ -1,0 +1,1 @@
+u32 rv770_dpm_get_mclk ( struct radeon_device * rdev , bool low ) { struct rv7xx_ps * requested_state = rv770_get_ps ( rdev -> pm . dpm . requested_ps ) ; else { return requested_state -> high . mclk ; } } 

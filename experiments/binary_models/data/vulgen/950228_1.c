@@ -1,0 +1,1 @@
+struct bus_type cpu_subsys = { . name = "cpu" . dev_name = "cpu" . match = cpu_subsys_match . online = cpu_subsys_online . offline = cpu_subsys_offline } ; 

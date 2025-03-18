@@ -1,0 +1,1 @@
+void ionic_lif_hwstamp_replay ( struct ionic_lif * lif ) { int err ; mutex_lock ( & lif -> queue_lock ) ; err = ionic_lif_hwstamp_set_ts_config ( lif , NULL ) ; mutex_unlock ( & lif -> queue_lock ) ; if ( err ) { netdev_info ( lif -> netdev , "hwstamp replay failed: %d\n" , err ) ; } } 

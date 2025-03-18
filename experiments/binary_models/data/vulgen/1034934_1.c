@@ -1,0 +1,1 @@
+( snd_dmaengine_pcm_register ) ; void snd_dmaengine_pcm_unregister ( struct device * dev ) { struct snd_soc_platform * platform ; struct dmaengine_pcm * pcm ; platform = snd_soc_lookup_platform ( dev ) ; if ( ! platform ) { return ; } pcm = soc_platform_to_pcm ( platform ) ; dmaengine_pcm_release_chan ( pcm ) ; kfree ( pcm ) ; } 

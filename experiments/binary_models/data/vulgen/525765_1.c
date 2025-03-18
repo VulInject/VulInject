@@ -1,0 +1,1 @@
+static const struct acpi_device_id st_accel_acpi_match [ ] { { "SMO8A90" LNG2DM } { } } ; ; 

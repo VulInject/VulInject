@@ -1,0 +1,1 @@
+void mangle_os_bootpath ( char * bpath ) { pnode_t node ; char * stripped_pathname ; node = prom_finddevice ( bpath ) ; stripped_pathname = kmem_alloc ( OBP_MAXPATHLEN , 0 ) ; prom_strip_options ( bpath , stripped_pathname ) ; v2path = stripped_pathname ; } 

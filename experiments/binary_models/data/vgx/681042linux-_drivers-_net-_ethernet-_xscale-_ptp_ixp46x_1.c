@@ -1,0 +1,1 @@
+static void ptp_ixp_unregister_action ( void * d ) { struct ptp_clock * ptp_clock = d ; ptp_clock_unregister ( ptp_clock ) ; } 

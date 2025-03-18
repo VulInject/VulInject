@@ -1,0 +1,1 @@
+int bd9571mwv_avs_get_moni_state ( struct regulator_dev * rdev ) { unsigned int val ; int ret ; ret = regmap_read ( rdev -> regmap , BD9571MWV_AVS_SET_MONI , & val ) ; return val & BD9571MWV_AVS_SET_MONI_MASK ; } 

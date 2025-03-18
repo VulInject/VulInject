@@ -1,0 +1,1 @@
+dmq_job_t * job_queue_pop ( job_queue_t * queue ) { dmq_job_t * front ; lock_get ( & queue -> lock ) ; front = queue -> front ; if ( front -> prev ) { queue -> front = front -> prev ; front -> prev -> next = NULL ; } else { queue -> front = NULL ; queue -> back = NULL ; } atomic_dec ( & queue -> count ) ; lock_release ( & queue -> lock ) ; return front ; } 

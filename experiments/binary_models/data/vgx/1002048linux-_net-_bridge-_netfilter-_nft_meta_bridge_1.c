@@ -1,0 +1,1 @@
+static bool nft_meta_bridge_set_reduce ( struct nft_regs_track * track , const struct nft_expr * expr ) { int i ; for ( i = 0 ; i < NFT_REG32_NUM ; i ++ ) { if ( track -> regs [ i ] . selector -> ops != & nft_meta_bridge_get_ops ) { continue ; } __nft_reg_track_cancel ( track , i ) ; } return false ; } 

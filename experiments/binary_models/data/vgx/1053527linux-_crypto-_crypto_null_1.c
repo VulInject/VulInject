@@ -1,0 +1,1 @@
+void crypto_put_default_null_skcipher ( void ) { mutex_lock ( & crypto_default_null_skcipher_lock ) ; if ( ! -- crypto_default_null_skcipher_refcnt ) { crypto_free_sync_skcipher ( crypto_default_null_skcipher ) ; } mutex_unlock ( & crypto_default_null_skcipher_lock ) ; } 

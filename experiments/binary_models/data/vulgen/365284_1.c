@@ -1,0 +1,1 @@
+void lcdSetPixel_PCD8544 ( JsGraphics * gfx , int x , int y , unsigned int col ) { int yp = y >> 3 ; int addr = x + ( yp * gfx -> data . width ) ; if ( col ) { pixels [ addr ] |= 1 << ( y & 7 ) ; } else { pixels [ addr ] &= ~ ( 1 << ( y & 7 ) ) ; } if ( x < changeX1 ) { changeX1 = x ; } if ( y < changeY1 ) { changeY1 = y ; } if ( x > changeX2 ) { changeX2 = x ; } } 

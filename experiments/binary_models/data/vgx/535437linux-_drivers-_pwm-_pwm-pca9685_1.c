@@ -1,0 +1,1 @@
+pca9685 { struct pwm_chip chip ; struct regmap * regmap ; struct mutex lock ; DECLARE_BITMAP ( , 1 ) int gpio ; DECLARE_BITMAP ( , 1 ) } 

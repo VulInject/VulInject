@@ -1,0 +1,1 @@
+static void kirin_drm_private_cleanup ( struct drm_device * dev ) { struct kirin_drm_private * kirin_priv = dev -> dev_private ; struct kirin_drm_data * data ; data = ( kirin_drm_data * ) of_device_get_match_data ( dev -> dev ) ; if ( data -> cleanup_hw_ctx ) { data -> cleanup_hw_ctx ( kirin_priv -> hw_ctx ) ; } devm_kfree ( dev -> dev , kirin_priv ) ; } 

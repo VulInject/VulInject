@@ -1,0 +1,1 @@
+static av_cold int libssh_open ( URLContext * h , const char * url , int flags ) { int ret ; LIBSSHContext * libssh = h -> priv_data ; char path [ MAX_URL_SIZE ] ; if ( ( ret = libssh_open_file ( libssh , flags , path ) ) < 0 ) { fail } libssh_stat_file ( libssh ) ; return 0 ; fail libssh_close ( h ) ; return ret ; } 

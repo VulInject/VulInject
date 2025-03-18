@@ -1,1 +1,1 @@
-static void FUN1 ( void * VAR1 ) { VAR2 * VAR3 = VAR1 ; if ( ! VAR3 ) { return ; } if ( VAR3 -> VAR4 != 0 ) { return ; } VAR5 * VAR6 = ( VAR5 * ) VAR3 -> VAR7 ; FUN2 ( VAR6 -> VAR8 ) ; VAR6 -> FUN3 ( VAR6 ) ; }
+static void parallel_message_free ( void * obj ) { wMessage * msg = obj ; if ( ! msg ) { return ; } if ( msg -> id != 0 ) { return ; } IRP * irp = ( IRP * ) msg -> wParam ; WINPR_ASSERT ( irp -> Discard ) ; irp -> Discard ( irp ) ; } 

@@ -1,0 +1,1 @@
+( ! done ) ; while ( -- special_n > 0 ) { ch = get_char ( ) ; if ( ( '0' <= ch ) && ( ch <= '9' ) ) { v = v * 10 + ch - '0' ; } else { done = TRUE ; break ; } } if ( done ) { i ++ ; } = w [ 0 ] ; pos_x_B = w [ 1 ] ; pos_y_C = w [ 2 ] ; pos_y_D = w [ 3 ] ; pos_y_E = w [ 4 ] ; 

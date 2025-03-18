@@ -1,0 +1,1 @@
+static int look_for_invite ( response ) CTL_RESPONSE * response ; { current_state = gettext ( "Checking for invitation on caller's machine" ) ; switch ( response -> answer ) { case SUCCESS : msg . id_num = response -> id_num ; return ( 1 ) ; default : return ( 0 ) ; } } 

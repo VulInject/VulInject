@@ -1,0 +1,1 @@
+BOOL SetTimeZoneInformation ( const TIME_ZONE_INFORMATION * lpTimeZoneInformation ) { WINPR_UNUSED ( lpTimeZoneInformation , NULL ) ; return FALSE ; } 

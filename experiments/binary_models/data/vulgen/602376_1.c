@@ -1,0 +1,1 @@
+static void univ8250_rsa_support ( struct uart_ops * ops ) { ops -> request_port = univ8250_request_port ; ops -> release_port = univ8250_release_port ; } 

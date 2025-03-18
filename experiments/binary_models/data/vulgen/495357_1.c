@@ -1,0 +1,1 @@
+ModuleExport size_t RegisterMTVImage ( void ) { MagickInfo * entry ; entry = AcquireMagickInfo ( "MTV" , "MTV" , "MTV Raytracing image format" ) ; entry -> decoder = ( DecodeImageHandler * ) ReadMTVImage ; entry -> encoder = ( EncodeImageHandler * ) WriteMTVImage ; return ( MagickImageCoderSignature ) ; } 

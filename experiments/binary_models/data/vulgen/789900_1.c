@@ -1,0 +1,1 @@
+char * progname ; static void usage ( ) { fprintf ( stderr , "%s: port program argv0 argv1 ...\n" , progname ) ; } 

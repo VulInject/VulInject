@@ -1,0 +1,1 @@
+static int mlx5e_create_vlan_table_groups ( struct mlx5e_flow_table * ft ) { u32 * in ; int inlen = MLX5_ST_SZ_BYTES ( create_flow_group_in ) ; int err ; in = mlx5_vzalloc ( inlen ) ; err = __mlx5e_create_vlan_table_groups ( ft , in , inlen ) ; kvfree ( in ) ; return err ; } 

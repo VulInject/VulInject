@@ -1,0 +1,1 @@
+static xnf_txid_t * xnf_txid_get ( xnf_t * xnfp ) { xnf_txid_t * tidp ; ASSERT ( MUTEX_HELD ( & xnfp -> xnf_txlock ) ) ; ASSERT ( TX_ID_VALID ( xnfp -> xnf_tx_pkt_id_head ) ) ; tidp = TX_ID_TO_TXID ( xnfp , xnfp -> xnf_tx_pkt_id_head ) ; xnfp -> xnf_tx_pkt_id_head = tidp -> next ; tidp -> next = INVALID_TX_ID ; ASSERT ( tidp -> txbuf == NULL ) ; return ( tidp ) ; } 

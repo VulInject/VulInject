@@ -1,0 +1,1 @@
+int ishfield ( char linebuf [ ] , char field [ ] ) { register char * cp ; if ( ( cp = strchr ( linebuf , ':' ) ) == NOSTR ) { return ( 0 ) ; } * cp = 0 ; if ( icequal ( linebuf , field ) ) { * cp = ':' ; return ( 1 ) ; } * cp = ':' ; return ( 0 ) ; } 

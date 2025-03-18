@@ -1,0 +1,1 @@
+static void snd_tscm_update ( struct fw_unit * unit ) { struct snd_tscm * tscm = dev_get_drvdata ( & unit -> device ) ; snd_tscm_transaction_reregister ( tscm , NULL ) ; mutex_lock ( & tscm -> mutex ) ; snd_tscm_stream_update_duplex ( tscm ) ; mutex_unlock ( & tscm -> mutex ) ; } 

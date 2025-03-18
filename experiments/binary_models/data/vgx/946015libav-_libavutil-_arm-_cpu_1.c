@@ -1,0 +1,1 @@
+size_t ff_get_cpu_max_align_arm ( void ) { int flags = av_get_cpu_flags ( ) ; return 8 ; } 

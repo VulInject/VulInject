@@ -1,0 +1,1 @@
+static void cpufreq_dbs_data_release ( struct kobject * kobj ) { struct dbs_data * dbs_data = to_dbs_data ( to_gov_attr_set ( kobj ) ) ; struct dbs_governor * gov = dbs_data -> gov ; gov -> exit ( dbs_data ) ; } 

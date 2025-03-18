@@ -1,0 +1,1 @@
+static void gb_loopback_push_latency_ts ( struct gb_loopback * gb , struct timeval * ts , struct timeval * te ) { kfifo_in ( & gb -> kfifo_ts , ( unsigned char * ) te , sizeof ( * te ) ) ; } 

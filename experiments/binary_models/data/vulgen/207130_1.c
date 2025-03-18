@@ -1,0 +1,1 @@
+foobarllb ( ) { register long long ll asm ( REG1a ) register long long mm asm ( REG2a ) llp ; return ll ; } 

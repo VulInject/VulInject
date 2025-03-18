@@ -1,0 +1,1 @@
+void scp_ipi_unregister ( struct mtk_scp * scp , u32 id ) { if ( ! scp ) { return ; } scp_ipi_lock ( scp , id ) ; scp -> ipi_desc [ id ] . handler = NULL ; scp -> ipi_desc [ id ] . priv = NULL ; scp_ipi_unlock ( scp , id ) ; } 

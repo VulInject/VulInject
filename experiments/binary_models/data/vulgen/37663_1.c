@@ -1,0 +1,1 @@
+uint32_t cp0_int5 ( uint32_t , struct trapframe * ) void cp0_startclock ( struct cpu_info * ) void cp0_trigger_int5 ( void ) void cp0_trigger_int5_masked ( void ) int clockmatch ( struct device * parent , void * vcf , void * aux ) { return strcmp ( maa -> maa_name , clock_cd . cd_name ) == 0 ; } 

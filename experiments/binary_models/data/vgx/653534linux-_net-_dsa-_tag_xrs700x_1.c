@@ -1,0 +1,1 @@
+MODULE_LICENSE ( "GPL" ) ; MODULE_ALIAS_DSA_TAG_DRIVER ( DSA_TAG_PROTO_XRS700X , XRS700X_NAME ) ; module_dsa_tag_driver ( xrs700x_netdev_ops , NULL ) ; 

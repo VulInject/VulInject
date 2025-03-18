@@ -1,0 +1,1 @@
+EXPORTED char * * strarray_takevf ( strarray_t * sa ) { char * * d = sa -> data ; sa -> data = NULL ; strarray_free ( sa ) ; return d ; } 

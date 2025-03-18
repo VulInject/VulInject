@@ -1,0 +1,1 @@
+static bool nested_vmcb_needs_vls_intercept ( struct vcpu_svm * svm ) { if ( ! nested_npt_enabled ( svm ) ) { return true ; } if ( ! ( svm -> nested . ctl . virt_ext & VIRTUAL_VMLOAD_VMSAVE_ENABLE_MASK ) ) { return true ; } return false ; } 

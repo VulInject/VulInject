@@ -1,0 +1,1 @@
+int hdmi_phy_init ( struct platform_device * pdev , struct hdmi_phy_data * phy , unsigned int version ) { if ( version == 4 ) { phy -> features = & omap44xx_phy_feats ; } else { phy -> features = & omap54xx_phy_feats ; } if ( IS_ERR ( phy -> base ) ) { return PTR_ERR ( phy -> base ) ; } return 0 ; } 

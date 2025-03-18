@@ -1,0 +1,1 @@
+static noinline void __init use_after_scope_test ( void ) { volatile char * volatile p ; pr_info ( "use-after-scope on int\n" ) ; { int local = 0 ; p = ( char * ) & local ; } p [ 0 ] = 1 ; p [ 3 ] = 1 ; { char local [ 1024 ] { 0 } ; ; p = local ; } p [ 0 ] = 1 ; p [ 1023 ] = 1 ; } 

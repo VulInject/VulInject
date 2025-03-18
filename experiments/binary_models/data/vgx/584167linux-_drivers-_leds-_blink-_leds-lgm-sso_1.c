@@ -1,0 +1,1 @@
+static int sso_gpio_request ( struct gpio_chip * chip , unsigned int offset ) { struct sso_led_priv * priv = gpiochip_get_data ( chip ) ; priv -> gpio . alloc_bitmap |= BIT ( offset ) ; regmap_write ( priv -> mmap , DUTY_CYCLE ( offset ) , 0xFF ) ; return 0 ; } 

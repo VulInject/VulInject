@@ -1,0 +1,1 @@
+static int scmi_dev_match ( struct device * dev , struct device_driver * drv ) { struct scmi_driver * scmi_drv = to_scmi_driver ( drv ) ; struct scmi_device * scmi_dev = to_scmi_dev ( dev ) ; const struct scmi_device_id * id ; if ( id ) { return 1 ; } return 0 ; } 

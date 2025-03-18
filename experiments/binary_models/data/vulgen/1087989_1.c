@@ -1,0 +1,1 @@
+signed long s64 unsigned int u32 unsigned long u64 extern __inline__ u32 foobar ( int logmask ) { return ret ; } 

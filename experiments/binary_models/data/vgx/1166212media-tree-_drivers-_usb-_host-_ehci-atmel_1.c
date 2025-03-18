@@ -1,0 +1,1 @@
+static int __maybe_unused ehci_atmel_drv_resume ( struct device * dev ) { struct usb_hcd * hcd = dev_get_drvdata ( dev ) ; struct atmel_ehci_priv * atmel_ehci = hcd_to_atmel_ehci_priv ( hcd ) ; atmel_start_clock ( atmel_ehci , NULL ) ; return ehci_resume ( hcd , false ) ; } 

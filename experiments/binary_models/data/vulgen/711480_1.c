@@ -1,0 +1,1 @@
+static int ps3fb_release ( struct fb_info * info , int user ) { return 0 ; } 

@@ -1,0 +1,1 @@
+gimp_color_area_render ( ) { GimpColorAreaPrivate * priv = GET_PRIVATE ( area ) ; gimp_color_area_render_buf ( GTK_WIDGET ( area ) , priv -> type , priv -> buf , priv -> width , priv -> height , priv -> rowstride , & priv -> color ) ; priv -> needs_render = FALSE ; } 

@@ -1,0 +1,1 @@
+int priv_validgroup ( const char * name ) { if ( len == IF_NAMESIZE ) { return ( - 1 ) ; } if ( len > 0 && isdigit ( ( unsigned char ) name [ len - 1 ] ) ) { return ( - 1 ) ; } return ( 0 ) ; } 

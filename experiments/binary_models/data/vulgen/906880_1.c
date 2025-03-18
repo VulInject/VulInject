@@ -1,0 +1,1 @@
+BOOL ReleaseMutex ( HANDLE hMutex ) { ULONG Type ; WINPR_HANDLE * Object ; if ( Type == HANDLE_TYPE_MUTEX ) { WINPR_MUTEX * mutex = ( WINPR_MUTEX * ) Object ; int rc = pthread_mutex_unlock ( & mutex -> mutex ) ; if ( rc ) { WLog_ERR ( TAG , "pthread_mutex_unlock failed with %s [%d]" , strerror ( rc ) , rc ) ; return FALSE ; } return TRUE ; } return FALSE ; } 

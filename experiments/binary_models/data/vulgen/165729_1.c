@@ -1,0 +1,1 @@
+static PyObject * rpmte_NEVR ( rpmteObject * s , PyObject * unused ) { return utf8FromString ( rpmteNEVR ( ) ) ; } 

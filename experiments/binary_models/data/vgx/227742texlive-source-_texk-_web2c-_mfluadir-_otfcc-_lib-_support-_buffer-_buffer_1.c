@@ -1,0 +1,1 @@
+void bufwrite_sds ( caryll_Buffer * buf , sds str ) { if ( ! str ) { return ; } size_t len = sdslen ( str ) ; bufbeforewrite ( buf , len ) ; memcpy ( buf -> data + buf -> cursor , str , len ) ; buf -> cursor += len ; } 

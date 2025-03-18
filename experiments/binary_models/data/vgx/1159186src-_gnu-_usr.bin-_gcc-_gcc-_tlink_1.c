@@ -1,0 +1,1 @@
+file_pop ( ) { struct file_stack_entry * ep = file_stack ; file * p ; if ( ep == NULL ) { return NULL ; } p = ep -> value ; file_stack = ep -> next ; obstack_free ( & file_stack_obstack , ep ) ; return p ; } 

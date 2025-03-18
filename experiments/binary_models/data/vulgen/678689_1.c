@@ -1,0 +1,1 @@
+static void kcov_reset ( struct kcov * kcov ) { kcov -> t = NULL ; kcov -> mode = KCOV_MODE_INIT ; kcov -> remote_size = 0 ; kcov -> sequence ++ ; } 

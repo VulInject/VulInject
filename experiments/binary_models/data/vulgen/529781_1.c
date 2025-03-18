@@ -1,0 +1,1 @@
+static void S2f ( unsigned __int32 * r0 , unsigned __int32 * r1 , unsigned __int32 * r2 , unsigned __int32 * r3 , unsigned __int32 * r4 ) { * r4 = * r0 ; * r0 &= * r2 ; * r0 ^= * r3 ; * r2 ^= * r1 ; * r2 ^= * r0 ; * r3 |= * r4 ; * r3 ^= * r1 ; * r4 ^= * r2 ; * r3 |= * r4 ; * r3 ^= * r0 ; * r0 &= * r1 ; * r4 ^= * r0 ; * r1 ^= * r3 ; * r1 ^= * r4 ; * r4 = ~ * r4 ; } 

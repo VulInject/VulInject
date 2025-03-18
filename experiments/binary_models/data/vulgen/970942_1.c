@@ -1,0 +1,1 @@
+static int _config_alloc_config_dma_memory ( struct MPT3SAS_ADAPTER * ioc , struct config_request * mem ) { int r = 0 ; else { mem -> page = ioc -> config_page ; mem -> page_dma = ioc -> config_page_dma ; } return r ; } 

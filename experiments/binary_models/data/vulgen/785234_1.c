@@ -1,0 +1,1 @@
+static unsigned long sh_check_cmd_arg ( char * cmdline , char * key , int base ) { unsigned long val = 0 ; char * p = strstr ( cmdline , key ) ; if ( p ) { p += strlen ( key ) ; } return val ; } 

@@ -1,0 +1,1 @@
+int cmode ( int f , int n ) { return ( changemode ( f , n , "c" ) ) ; } 

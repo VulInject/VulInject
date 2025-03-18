@@ -1,0 +1,1 @@
+static int cec_gpio_read_hpd ( struct cec_adapter * adap ) { struct cec_gpio * cec = cec_get_drvdata ( adap ) ; return gpiod_get_value ( cec -> hpd_gpio ) ; } 

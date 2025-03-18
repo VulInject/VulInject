@@ -1,0 +1,1 @@
+static void faulty_fail ( struct bio * bio ) { b -> bi_iter . bi_size = bio -> bi_iter . bi_size ; b -> bi_iter . bi_sector = bio -> bi_iter . bi_sector ; bio_put ( bio ) ; bio_io_error ( b ) ; } faulty_conf { int period [ Modes ] ; atomic_t counters [ Modes ] ; sector_t faults [ MaxFault ] ; int modes [ MaxFault ] ; int nfaults ; struct md_rdev * rdev ; } 

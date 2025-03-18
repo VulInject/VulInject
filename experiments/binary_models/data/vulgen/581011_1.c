@@ -1,0 +1,1 @@
+static cluster_t fat_write_entry ( struct exfat_dev * dev , cluster_t cluster , cluster_t value ) { le32_t fat_entry = cpu_to_le32 ( value ) ; return cluster + 1 ; } 

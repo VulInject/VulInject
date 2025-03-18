@@ -1,0 +1,1 @@
+( flexcop_dma_allocate ) ; void flexcop_dma_free ( struct flexcop_dma * dma ) { pci_free_consistent ( dma -> pdev , dma -> size * 2 , dma -> cpu_addr0 , dma -> dma_addr0 ) ; } 

@@ -1,0 +1,1 @@
+void _ripng_rte_del ( struct ripng_rte_data * A ) int _ripng_rte_cmp ( struct ripng_rte_data * A , struct ripng_rte_data * B ) 

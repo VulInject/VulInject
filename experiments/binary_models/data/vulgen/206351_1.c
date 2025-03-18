@@ -1,0 +1,1 @@
+int smbfs_rw_lock_held ( smbfs_rwlock_t * l , krw_t rw ) { if ( rw == RW_READER ) { return ( l -> count > 0 ) ; } return ( l -> count < 0 ) ; } 

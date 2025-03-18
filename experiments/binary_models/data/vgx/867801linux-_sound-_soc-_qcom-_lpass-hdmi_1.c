@@ -1,0 +1,1 @@
+static int lpass_hdmi_daiops_prepare ( struct snd_pcm_substream * substream , struct snd_soc_dai * dai ) { int ret ; struct lpass_data * drvdata = snd_soc_dai_get_drvdata ( dai ) ; ret = regmap_field_write ( drvdata -> sstream_ctl -> sstream_en , LPASS_SSTREAM_ENABLE ) ; ret = regmap_field_write ( drvdata -> meta_ctl -> mute , LPASS_MUTE_DISABLE ) ; return ret ; } 

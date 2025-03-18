@@ -1,1 +1,1 @@
-static int FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 = & VAR2 -> VAR5 ; int VAR6 ; VAR6 = FUN2 ( VAR2 , 0xff ) ; FUN3 ( VAR7 , VAR4 -> VAR8 + VAR9 ) ; return 0 ; }
+static int emac_sgmii_link_up ( struct emac_adapter * adpt ) { struct emac_sgmii * sgmii = & adpt -> phy ; int ret ; ret = emac_sgmii_irq_clear ( adpt , 0xff ) ; writel ( SGMII_ISR_MASK , sgmii -> base + EMAC_SGMII_PHY_INTERRUPT_MASK ) ; return 0 ; } 

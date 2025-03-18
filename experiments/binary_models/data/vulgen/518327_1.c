@@ -1,0 +1,1 @@
+static acpi_status count_registers_cb ( struct acpi_resource * ares , void * context ) { int * count = context ; return AE_OK ; } 

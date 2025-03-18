@@ -1,0 +1,1 @@
+const struct gl_list_implementation gl_linked_list_implementation = { } 

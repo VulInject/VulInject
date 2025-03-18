@@ -1,0 +1,1 @@
+void smartcardCertList_Free ( SmartcardCertInfo * * cert_list , size_t count ) { if ( ! cert_list ) { return ; } for ( size_t i = 0 ; i < count ; i ++ ) { SmartcardCertInfo * cert = cert_list [ i ] ; smartcardCertInfo_Free ( cert ) ; } } 

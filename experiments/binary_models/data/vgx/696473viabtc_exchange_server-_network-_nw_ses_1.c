@@ -1,0 +1,1 @@
+static int nw_write_packet ( nw_ses * ses , const void * data , size_t size ) { while ( true ) { struct msghdr msg ; struct iovec io ; io . iov_base = ( void * ) data ; io . iov_len = size ; msg . msg_iov = & io ; msg . msg_iovlen = 1 ; int ret = sendmsg ( ses -> sockfd , & msg , MSG_EOR ) ; if ( ret < 0 && errno == EINTR ) { continue ; } else { return ret ; } } } 

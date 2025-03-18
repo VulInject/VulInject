@@ -1,0 +1,1 @@
+void printnam ( struct namnod * n ) { unsigned char * s ; sigchk ( ) ; if ( n -> namflg & N_FUNCTN ) { struct fndnod * f = fndptr ( n -> namenv ) ; prs_buff ( n -> namid ) ; prs_buff ( "(){\n" ) ; if ( f != NULL ) { prf ( f -> fndval ) ; } prs_buff ( "\n}\n" ) ; } if ( s = n -> namval ) { prs_buff ( n -> namid ) ; prc_buff ( '=' ) ; prs_buff ( s ) ; } } 

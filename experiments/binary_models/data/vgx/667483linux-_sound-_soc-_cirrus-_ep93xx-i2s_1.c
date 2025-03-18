@@ -1,0 +1,1 @@
+static int ep93xx_i2s_suspend ( struct snd_soc_component * component ) { struct ep93xx_i2s_info * info = snd_soc_component_get_drvdata ( component ) ; ep93xx_i2s_disable ( info , SNDRV_PCM_STREAM_PLAYBACK ) ; ep93xx_i2s_disable ( info , SNDRV_PCM_STREAM_CAPTURE ) ; return 0 ; } 

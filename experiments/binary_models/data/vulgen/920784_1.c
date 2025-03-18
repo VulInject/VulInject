@@ -1,0 +1,1 @@
+static struct emc_timing * tegra_emc_find_timing ( struct tegra_emc * emc , unsigned long rate ) { struct emc_timing * timing = NULL ; unsigned int i ; for ( i = 0 ; i < emc -> num_timings ; i ++ ) { if ( emc -> timings [ i ] . rate >= rate ) { timing = & emc -> timings [ i ] ; break ; } } return timing ; } 

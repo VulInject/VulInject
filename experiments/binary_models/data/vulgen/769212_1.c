@@ -1,0 +1,1 @@
+static int pvr2fb_blank ( int blank , struct fb_info * info ) { return 0 ; } 

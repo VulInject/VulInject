@@ -1,0 +1,1 @@
+switch ( debug_enabled ) { case DEBUG_NONE : break ; case DEBUG_SYSLOG : vsyslog ( LOG_DEBUG , fmt , ap ) ; break ; case DEBUG_STDERR : ( void ) vfprintf ( stderr , fmt , ap ) ; ( void ) fprintf ( stderr , "\n" ) ; break ; } 

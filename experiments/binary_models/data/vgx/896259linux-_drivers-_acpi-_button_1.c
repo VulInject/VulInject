@@ -1,0 +1,1 @@
+static int acpi_button_register_driver ( struct acpi_driver * driver ) { const struct dmi_system_id * dmi_id ; if ( lid_init_state == - 1 ) { dmi_id = dmi_first_match ( dmi_lid_quirks ) ; if ( dmi_id ) { lid_init_state = ( long ) dmi_id -> driver_data ; } else { lid_init_state = ACPI_BUTTON_LID_INIT_METHOD ; } } return acpi_bus_register_driver ( driver ) ; } 

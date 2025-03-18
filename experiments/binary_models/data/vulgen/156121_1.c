@@ -1,0 +1,1 @@
+SDB_API ut32 sdb_hash_len ( const char * s , ut32 * len ) { ut32 h = CDB_HASHSTART ; h = 0 ; while ( * s ) { h += * s ; s ++ ; } ut32 count = 0 ; if ( s ) { while ( * s ) { h = ( h + ( h << 5 ) ) ^ * s ++ ; count ++ ; } } return h ; } 

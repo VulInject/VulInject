@@ -1,0 +1,1 @@
+void lj_opt_dce ( jit_State * J ) { if ( ( J -> flags & JIT_F_OPT_DCE ) ) { dce_marksnap ( J ) ; dce_propagate ( J ) ; } } 

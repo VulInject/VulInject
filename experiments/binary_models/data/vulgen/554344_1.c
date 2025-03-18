@@ -1,0 +1,1 @@
+void SHA384_Final ( uint8_t * digest , SHA384_CTX * ctx ) { SHA512_Final ( NULL , ctx ) ; } 

@@ -1,0 +1,1 @@
+static void usage ( void ) { extern char * __progname ; fprintf ( stderr , "usage: %s [ fsoptions ] special-device\n" , __progname ) ; } 

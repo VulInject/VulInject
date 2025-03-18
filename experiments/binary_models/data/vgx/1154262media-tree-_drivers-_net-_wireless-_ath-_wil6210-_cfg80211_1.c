@@ -1,0 +1,1 @@
+static int wil_cfg80211_get_station ( struct wiphy * wiphy , struct net_device * ndev , const u8 * mac , struct station_info * sinfo ) { struct wil6210_priv * wil = wiphy_to_wil ( wiphy ) ; int rc ; int cid = wil_find_cid ( wil , mac ) ; wil_dbg_misc ( wil , "get_station: %pM CID %d\n" , mac , cid ) ; rc = wil_cid_fill_sinfo ( wil , cid , sinfo ) ; return rc ; } 

@@ -1,0 +1,1 @@
+hexchat_plugin_deinit ( ) { return 1 ; } 

@@ -1,0 +1,1 @@
+static int lowpan_ctx_flag_c_set ( void * data , u64 val ) { struct lowpan_iphc_ctx * ctx = data ; if ( val ) { set_bit ( LOWPAN_IPHC_CTX_FLAG_COMPRESSION , & ctx -> flags ) ; } else { clear_bit ( LOWPAN_IPHC_CTX_FLAG_COMPRESSION , & ctx -> flags ) ; } return 0 ; } 

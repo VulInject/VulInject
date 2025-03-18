@@ -1,0 +1,1 @@
+EXPORTED uint64_t _ntohll ( uint64_t x ) { union byteswap_64_u u1 ; union byteswap_64_u u2 ; u1 . a = x ; u2 . b [ 1 ] = ntohl ( u1 . b [ 0 ] , NULL ) ; u2 . b [ 0 ] = ntohl ( u1 . b [ 1 ] ) ; return u2 . a ; } 

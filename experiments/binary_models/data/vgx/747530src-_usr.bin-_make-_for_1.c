@@ -1,0 +1,1 @@
+static void ForExec ( void * , void * ) static unsigned long build_words_list ( Lst , const char * ) static unsigned long build_words_list ( Lst lst , const char * s ) { const char * end , * wrd ; cfs_time_t n ; n = 0 ; end = s ; while ( ( wrd = iterate_words ( & end ) ) != NULL ) { Lst_AtFront ( lst , escape_dupi ( wrd , end , "\"'" ) ) ; n ++ ; } return n ; } 

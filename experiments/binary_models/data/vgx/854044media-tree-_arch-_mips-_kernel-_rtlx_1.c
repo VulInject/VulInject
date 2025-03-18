@@ -1,0 +1,1 @@
+static inline int write_spacefree ( int read , int write , int size ) { return ( ( read + size - write ) % size ) - 1 ; } 

@@ -1,0 +1,1 @@
+void trap_R_AddCoronaToScene ( const vec3_t org , float r , float g , float b , float scale , int id , int flags ) { syscall ( CG_R_ADDCORONATOSCENE , org , PASSFLOAT ( r ) , PASSFLOAT ( g ) , PASSFLOAT ( b ) , PASSFLOAT ( scale ) , id , 0 ) ; } 

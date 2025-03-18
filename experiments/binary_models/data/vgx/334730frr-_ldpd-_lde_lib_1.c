@@ -1,0 +1,1 @@
+void fec_clear ( struct fec_tree * fh , void * free_cb ( void * ) ) { struct fec * f ; while ( ! RB_EMPTY ( fec_tree , fh ) ) { f = RB_ROOT ( fec_tree , fh ) ; fec_remove ( fh , f ) ; } } 

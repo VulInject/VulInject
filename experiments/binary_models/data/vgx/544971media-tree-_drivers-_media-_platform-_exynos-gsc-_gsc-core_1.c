@@ -1,0 +1,1 @@
+static int gsc_runtime_suspend ( struct device * dev ) { struct gsc_dev * gsc = dev_get_drvdata ( dev ) ; int ret = 0 ; int i ; ret = gsc_m2m_suspend ( gsc ) ; for ( i = gsc -> num_clocks - 1 ; i >= 0 ; i -- ) { clk_disable_unprepare ( gsc -> clock [ i ] ) ; } pr_debug ( "gsc%d: state: 0x%lx\n" , gsc -> id , gsc -> state ) ; return ret ; } 

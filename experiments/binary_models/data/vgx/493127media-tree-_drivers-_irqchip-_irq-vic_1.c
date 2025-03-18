@@ -1,0 +1,1 @@
+static void __init vic_clear_interrupts ( void __iomem * base ) { int i ; writel ( 0 , base + VIC_PL190_VECT_ADDR ) ; for ( i = 0 ; i < 19 ; i ++ ) { unsigned int value ; value = readl ( base + VIC_PL190_VECT_ADDR ) ; writel ( value , base + VIC_PL190_VECT_ADDR ) ; } } 

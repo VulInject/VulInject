@@ -1,0 +1,1 @@
+void dcn30_smu_set_dram_addr_high ( struct clk_mgr_internal * clk_mgr , uint32_t addr_high ) { smu_print ( "SMU Set DRAM addr high: %d\n" , addr_high ) ; } 

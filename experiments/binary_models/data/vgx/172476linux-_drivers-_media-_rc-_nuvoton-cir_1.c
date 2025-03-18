@@ -1,0 +1,1 @@
+static int nvt_suspend ( struct pnp_dev * pdev , pm_message_t state ) { struct nvt_dev * nvt = pnp_get_drvdata ( pdev ) ; nvt_dbg ( "%s called" , __func__ ) ; mutex_lock ( & nvt -> rdev -> lock ) ; if ( nvt -> rdev -> users ) { nvt_disable_cir ( nvt ) ; } mutex_unlock ( & nvt -> rdev -> lock ) ; nvt_enable_wake ( nvt , NULL ) ; return 0 ; } 

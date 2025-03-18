@@ -1,0 +1,1 @@
+int is_eng_acc_on ( sip_msg_t * msg ) { acc_engine_t * e ; e = acc_api_get_engines ( ) ; while ( e ) { if ( e -> flags & 1 ) { if ( isflagset ( msg , e -> acc_flag ) == 1 ) { return 1 ; } } e = e -> next ; } return 0 ; } 

@@ -1,0 +1,1 @@
+void __init tegra_super_clk_gen4_init ( void __iomem * clk_base , void __iomem * pmc_base , struct tegra_clk * tegra_clks , struct tegra_clk_pll_params * params ) { tegra_super_clk_init ( clk_base , pmc_base , tegra_clks , params , 0 ) ; } 

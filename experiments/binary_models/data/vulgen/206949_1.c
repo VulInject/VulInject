@@ -1,0 +1,1 @@
+static void mptctl_exit ( void ) { misc_deregister ( & mptctl_miscdev ) ; printk ( ": Deregistered /dev/%s @ (major,minor=%d,%d)\n" , , , ) mpt_event_deregister ( mptctl_id ) ; mpt_reset_deregister ( mptctl_id ) ; mpt_deregister ( mptctl_taskmgmt_id ) ; mpt_deregister ( mptctl_id ) ; } 

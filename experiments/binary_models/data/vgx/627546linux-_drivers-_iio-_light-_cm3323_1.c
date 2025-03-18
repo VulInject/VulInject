@@ -1,0 +1,1 @@
+static int cm3323_get_it_bits ( struct cm3323_data * data ) { int bits ; bits = ( data -> reg_conf & CM3323_CONF_IT_MASK ) >> CM3323_CONF_IT_SHIFT ; return bits ; } 

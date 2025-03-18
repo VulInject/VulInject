@@ -1,0 +1,1 @@
+int OCSP_id_issuer_cmp ( OCSP_CERTID * a , OCSP_CERTID * b ) { int ret ; if ( ret ) { return ret ; } ret = ASN1_OCTET_STRING_cmp ( a -> issuerNameHash , b -> issuerNameHash ) ; if ( ret ) { return ret ; } return ASN1_OCTET_STRING_cmp ( a -> issuerKeyHash , b -> issuerKeyHash ) ; } 

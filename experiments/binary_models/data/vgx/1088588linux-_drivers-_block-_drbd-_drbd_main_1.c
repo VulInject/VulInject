@@ -1,0 +1,1 @@
+static unsigned int prepare_header100 ( struct p_header100 * h , enum drbd_packet cmd , int size , int vnr ) { h -> magic = cpu_to_be32 ( DRBD_MAGIC_100 ) ; h -> volume = cpu_to_be16 ( vnr , NULL ) ; h -> command = cpu_to_be16 ( cmd ) ; h -> length = cpu_to_be32 ( size ) ; h -> pad = 0 ; return sizeof ( p_header100 ) ; } 

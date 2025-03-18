@@ -1,0 +1,1 @@
+void sti_vtg_set_config ( struct sti_vtg * vtg , const struct drm_display_mode * mode ) { vtg_set_mode ( vtg , VTG_MODE_MASTER , vtg -> sync_params , mode ) ; vtg_reset ( vtg ) ; vtg_enable_irq ( vtg , NULL ) ; } 

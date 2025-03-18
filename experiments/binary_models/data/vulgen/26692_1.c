@@ -1,0 +1,1 @@
+static u8 asd_read_byte ( struct asd_ha_struct * asd_ha , unsigned long offs ) { u8 val ; if ( unlikely ( asd_ha -> iospace ) ) { val = inb ( ( unsigned long ) asd_ha -> io_handle [ 0 ] . addr + ( offs & 0xFF ) ) ; } else { val = readb ( asd_ha -> io_handle [ 0 ] . addr + offs ) ; } return val ; } 

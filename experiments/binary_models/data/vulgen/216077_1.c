@@ -1,0 +1,1 @@
+static void cmsdk_dualtimermod_tick ( void * opaque ) { CMSDKAPBDualTimerModule * m = opaque ; m -> intstatus = 1 ; } 

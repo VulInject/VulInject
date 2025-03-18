@@ -1,0 +1,1 @@
+av_cold void ff_vp6dsp_init_arm ( VP56DSPContext * s ) { int cpu_flags = av_get_cpu_flags ( ) ; if ( have_neon ( cpu_flags ) ) { s -> edge_filter_ver = ff_vp6_edge_filter_ver_neon ; } } 

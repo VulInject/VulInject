@@ -1,0 +1,1 @@
+static qemu_irq qdev_disconnect_gpio_out_named ( DeviceState * dev , const char * name , int n ) { char * propname = g_strdup_printf ( "%s[%d]" , name ?name : "unnamed-gpio-out" , n ) ; qemu_irq ret = ( qemu_irq ) object_property_get_link ( OBJECT ( dev ) , propname , NULL ) ; if ( ret ) { object_property_set_link ( OBJECT ( dev ) , propname , NULL , NULL ) ; } return ret ; } 

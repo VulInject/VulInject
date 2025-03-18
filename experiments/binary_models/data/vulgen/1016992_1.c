@@ -1,0 +1,1 @@
+static int vespec_walk_step ( mdb_walk_state_t * wsp ) { uintptr_t addr = wsp -> walk_addr ; mdb_vespec_t v ; if ( mdb_vread ( & v , sizeof ( v ) , addr ) == - 1 ) { mdb_warn ( "failed to read vespec at %p" , addr ) ; return ( WALK_ERR ) ; } wsp -> walk_addr = ( uintptr_t ) v . ve_list . ml_next ; return ( wsp -> walk_callback ( addr , & v , wsp -> walk_cbdata ) ) ; } 

@@ -1,0 +1,1 @@
+static int _ksocket_ctor ( void * buf , void * arg , int flags ) { ksocket_t sock = buf ; bzero ( sock , sizeof ( * sock ) ) ; mutex_init ( & sock -> kso_lock , MUTEX_DEFAULT , NULL ) ; cv_init ( & sock -> kso_closing_cv , NULL , CV_DEFAULT , NULL ) ; return ( 0 ) ; } 

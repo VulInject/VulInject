@@ -1,0 +1,1 @@
+static ssize_t info # # num # # _show ( , , ) { sdio_func * func = dev_to_sdio_func ( dev ) } ; if ( ! func -> info [ num - 1 ] [ 0 ] ) { return 0 ; } return sysfs_emit ( buf , "%s\n" , func -> info [ num - 1 ] ) ; 

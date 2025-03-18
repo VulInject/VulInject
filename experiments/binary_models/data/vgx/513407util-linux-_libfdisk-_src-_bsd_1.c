@@ -1,0 +1,1 @@
+static int set_parttype ( struct fdisk_context * cxt , size_t partnum , struct fdisk_parttype * t ) { struct bsd_partition * p ; struct bsd_disklabel * d = self_disklabel ( cxt ) ; p = & d -> d_partitions [ partnum ] ; if ( t -> code == p -> p_fstype ) { return 0 ; } p -> p_fstype = t -> code ; fdisk_label_set_changed ( cxt -> label , 1 ) ; return 0 ; } 

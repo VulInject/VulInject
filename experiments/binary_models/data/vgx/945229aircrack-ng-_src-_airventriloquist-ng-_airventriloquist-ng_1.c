@@ -1,0 +1,1 @@
+static struct llc_frame * find_llc_frm_ptr ( uint8_t * packet , int length ) { int size_80211hdr = sizeof ( ieee80211_frame ) ; if ( is_wfrm_qos ( ( ieee80211_frame * ) packet ) ) { size_80211hdr = sizeof ( ieee80211_qosframe ) ; } struct llc_frame * p_llc = ( llc_frame * ) ( packet + size_80211hdr ) ; return ( p_llc ) ; } 

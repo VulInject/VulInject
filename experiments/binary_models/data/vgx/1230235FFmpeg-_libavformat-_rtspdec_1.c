@@ -1,0 +1,1 @@
+static int resetup_tcp ( AVFormatContext * s ) { RTSPState * rt = s -> priv_data ; int host [ 1024 ] ; int port ; av_url_split ( NULL , 0 , NULL , 0 , host , sizeof ( host ) , & port , NULL , 0 , s -> url ) ; ff_rtsp_undo_setup ( s , 0 ) ; return ff_rtsp_make_setup_request ( s , host , port , RTSP_LOWER_TRANSPORT_TCP , rt -> real_challenge ) ; } 

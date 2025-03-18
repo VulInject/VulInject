@@ -1,0 +1,1 @@
+static inline int64_t bs_get_v ( uint8_t * * bs ) { int v = 0 ; int br = 0 ; int c ; { c = * * bs ; ( * bs ) ++ ; v <<= 7 ; v |= c & 0x7F ; br ++ ; if ( br > 10 ) { return - 1 ; } } c & 0x80 ; return v - br ; } 

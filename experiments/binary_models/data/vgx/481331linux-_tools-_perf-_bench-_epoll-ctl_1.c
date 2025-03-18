@@ -1,0 +1,1 @@
+static void init_fdmaps ( struct worker * w , int pct ) { unsigned int i ; int inc ; struct epoll_event ev ; inc = 100 / pct ; for ( i = 0 ; i < nfds ; i += inc ) { ev . data . fd = w -> fdmap [ i ] ; ev . events = EPOLLIN ; if ( epoll_ctl ( epollfd , EPOLL_CTL_ADD , w -> fdmap [ i ] , & ev ) < 0 ) { err ( EXIT_FAILURE , "epoll_ct" ) ; } } } 

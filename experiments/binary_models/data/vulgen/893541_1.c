@@ -1,0 +1,1 @@
+void class_compat_unregister ( struct class_compat * cls ) { kobject_put ( cls -> kobj ) ; } 

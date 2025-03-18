@@ -1,0 +1,1 @@
+static bool xdr_int ( xdr_t * xdr , int * ip ) { bool rv = false ; int * i = ( int * ) xdr -> xdr_idx ; switch ( xdr -> xdr_op ) { case XDR_OP_ENCODE : xdr -> xdr_idx += xdr -> xdr_putint ( xdr , * ip ) ; rv = true ; break ; case XDR_OP_DECODE : xdr -> xdr_idx += xdr -> xdr_getint ( xdr , i ) ; * ip = * i ; rv = true ; break ; } return ( rv ) ; } 

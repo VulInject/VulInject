@@ -1,0 +1,1 @@
+suc_code update_timestamp ( DBM * db ) { char time_string [ MAX_ASCII_ORDER_NUMBER_LENGTH ] ; struct timeval now ; if ( 0 != gettimeofday ( & now , NULL ) ) { logmsg ( MSG_NOTIMECHECK , LOG_ERR , "Could not get time of day" ) ; return ( FAILURE ) ; } sprintf ( time_string , "%010ld" , ( long ) now . tv_sec ) ; return ( SUCCESS ) ; } 

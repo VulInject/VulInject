@@ -1,0 +1,1 @@
+static int ts5500_dio_remove ( struct platform_device * pdev ) { struct ts5500_priv * priv = platform_get_drvdata ( pdev ) ; return 0 ; } static const struct platform_device_id ts5500_dio_ids [ ] { { "ts5500-dio1" TS5500_DIO1 } { "ts5500-dio2" TS5500_DIO2 } { "ts5500-dio-lcd" TS5500_LCD } { "ts5600-dio-lcd" TS5600_LCD } { } } ; ; 

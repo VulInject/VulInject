@@ -1,0 +1,1 @@
+static int mtk_mipi_tx_power_on ( struct phy * phy ) { struct mtk_mipi_tx * mipi_tx = phy_get_drvdata ( phy ) ; int ret ; ret = clk_prepare_enable ( mipi_tx -> pll ) ; if ( ret < 0 ) { return ret ; } mtk_mipi_tx_power_on_signal ( phy , NULL ) ; return 0 ; } 

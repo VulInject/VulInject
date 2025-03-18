@@ -1,0 +1,1 @@
+static int __must_check __smsc95xx_phy_wait_not_busy ( struct usbnet * dev , int in_pm ) { unsigned long start_time = jiffies ; u32 val ; int ret ; { ret = __smsc95xx_read_reg ( dev , MII_ADDR , & val , in_pm ) ; if ( ret < 0 ) { netdev_warn ( dev -> net , "Error reading MII_ACCESS\n" ) ; return ret ; } } ! time_after ( jiffies , start_time + HZ ) ; return - EIO ; } 

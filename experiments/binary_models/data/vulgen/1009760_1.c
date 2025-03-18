@@ -1,0 +1,1 @@
+static int __init rtrack_init ( int ) { return isa_register_driver ( & rtrack_driver . driver , RTRACK_MAX ) ; } 

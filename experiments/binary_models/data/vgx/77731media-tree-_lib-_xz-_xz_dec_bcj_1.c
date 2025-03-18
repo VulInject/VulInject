@@ -1,0 +1,1 @@
+XZ_EXTERN enum xz_ret xz_dec_bcj_reset ( struct xz_dec_bcj * s , uint8_t id ) { switch ( id ) { case BCJ_X86 : case BCJ_POWERPC : case BCJ_IA64 : case BCJ_ARM : case BCJ_ARMTHUMB : case BCJ_SPARC : break ; default : return XZ_OPTIONS_ERROR ; } s -> type = id ; s -> ret = XZ_OK ; s -> pos = 0 ; s -> x86_prev_mask = 0 ; s -> temp . size = 0 ; return XZ_OK ; } 

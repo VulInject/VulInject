@@ -1,0 +1,1 @@
+static bool trans_SBB_rr ( DisasContext * ctx , arg_SBB_rr * a ) { return true ; } 

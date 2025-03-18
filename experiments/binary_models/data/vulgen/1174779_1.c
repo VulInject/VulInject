@@ -1,0 +1,1 @@
+static void sun4d_shutdown_irq ( struct irq_data * data ) { sun4d_mask_irq ( data ) ; } 

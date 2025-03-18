@@ -1,0 +1,1 @@
+static void jsonw_indent ( const json_writer_t * self ) { int i ; for ( i = 0 ; i < self -> depth ; ++ i ) { fputs ( "    " , self -> out ) ; } } 

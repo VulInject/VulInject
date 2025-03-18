@@ -1,0 +1,1 @@
+uint8_t pitch_lag [ 4 ] ; uint16_t first16bits ; uint8_t warned_buf_mismatch_bitrate ; float postfilter_synth_mem [ 10 ] ; int postfilter_agc_mem ; float postfilter_tilt_mem ; 

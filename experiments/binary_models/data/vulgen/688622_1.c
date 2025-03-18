@@ -1,0 +1,1 @@
+static long nvram_unlocked_ioctl ( struct file * file , unsigned int cmd , unsigned long arg ) { int ret ; mutex_lock ( & nvram_mutex ) ; ret = nvram_ioctl ( file , cmd , arg ) ; return ret ; } const struct file_operations nvram_fops = { . owner = THIS_MODULE . llseek = nvram_llseek . read = read_nvram . write = write_nvram . unlocked_ioctl = nvram_unlocked_ioctl } ; 

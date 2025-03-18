@@ -1,0 +1,1 @@
+static void init_packetizer ( AVIOContext * pb , uint8_t * buf , int len ) { pb -> pos = len ; pb -> buf_end = buf + len ; } 

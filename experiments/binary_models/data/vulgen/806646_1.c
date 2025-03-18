@@ -1,0 +1,1 @@
+static void srcu_barrier_cb ( struct rcu_head * rhp ) { struct srcu_data * sdp ; struct srcu_struct * ssp ; sdp = container_of ( rhp , srcu_data , srcu_barrier_head ) ; ssp = sdp -> ssp ; } 

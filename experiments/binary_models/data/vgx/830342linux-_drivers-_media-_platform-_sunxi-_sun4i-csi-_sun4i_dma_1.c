@@ -1,0 +1,1 @@
+static int sun4i_csi_buffer_flip ( struct sun4i_csi * csi , unsigned int sequence ) { u32 reg = readl ( csi -> regs + CSI_BUF_CTRL_REG ) ; int next ; next = ! ( reg & CSI_BUF_CTRL_DBS ) ; sun4i_csi_buffer_mark_done ( csi , next , sequence ) ; return sun4i_csi_buffer_fill_slot ( csi , next ) ; } 

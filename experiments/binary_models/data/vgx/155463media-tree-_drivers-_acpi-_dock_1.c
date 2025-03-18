@@ -1,0 +1,1 @@
+static struct dock_dependent_device * find_dock_dependent_device ( struct dock_station * ds , struct acpi_device * adev ) { struct dock_dependent_device * dd ; list_for_each_entry ( , , ) return NULL ; } 

@@ -1,0 +1,1 @@
+static void snd_sb8_free ( struct snd_card * card ) { struct snd_sb8 * acard = card -> private_data ; release_and_free_resource ( acard -> fm_res ) ; } 

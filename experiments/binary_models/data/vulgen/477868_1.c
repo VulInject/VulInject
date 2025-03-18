@@ -1,0 +1,1 @@
+static void test_cpu_macros ( void ) { extern u8 ftr_fixup_test_FTR_macros ; extern u8 ftr_fixup_test_FTR_macros_expected ; unsigned long size = & ftr_fixup_test_FTR_macros_expected - & ftr_fixup_test_FTR_macros ; } 

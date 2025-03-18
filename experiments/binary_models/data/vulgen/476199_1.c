@@ -1,0 +1,1 @@
+game_t * game_ref ( game_t * it ) { ++ it -> refcount ; return it ; } 

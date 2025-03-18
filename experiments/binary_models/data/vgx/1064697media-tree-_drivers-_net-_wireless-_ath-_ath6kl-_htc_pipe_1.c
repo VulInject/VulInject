@@ -1,0 +1,1 @@
+static void destroy_htc_txctrl_packet ( struct htc_packet * packet ) { struct sk_buff * skb ; skb = packet -> skb ; dev_kfree_skb ( skb ) ; } 

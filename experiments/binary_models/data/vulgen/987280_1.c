@@ -1,0 +1,1 @@
+static void arm_cpu_finalizefn ( Object * obj ) { ARMCPU * cpu = ARM_CPU ( obj ) ; ARMELChangeHook * hook , * next ; g_hash_table_destroy ( cpu -> cp_regs ) ; QLIST_FOREACH_SAFE ( , , , ) { QLIST_REMOVE ( hook , node ) ; g_free ( hook ) ; } QLIST_FOREACH_SAFE ( , , , ) { QLIST_REMOVE ( hook , node ) ; g_free ( hook ) ; } } 

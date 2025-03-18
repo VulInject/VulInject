@@ -1,0 +1,1 @@
+static int param_set_battery_present ( const char * key , const struct kernel_param * kp ) { battery_present = map_get_value ( map_present , key , battery_present ) ; signal_power_supply_changed ( test_power_supplies [ TEST_AC ] , NULL ) ; return 0 ; } 

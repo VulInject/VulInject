@@ -1,0 +1,1 @@
+int hmm_bo_binded ( struct hmm_buffer_object * bo ) { int ret ; mutex_lock ( & bo -> mutex ) ; ret = bo -> status & HMM_BO_BINDED ; mutex_unlock ( & bo -> mutex ) ; return ret ; } 

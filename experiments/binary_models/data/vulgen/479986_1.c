@@ -1,0 +1,1 @@
+write_modend ( ) { DST_MODULE_END modend ; int totsize = 0 ; modend . dst_a_modend_header . dst__header_length . dst_w_length = DST_K_MODEND_SIZE - 1 ; modend . dst_a_modend_header . dst__header_type . dst_w_type = DST_K_MODEND ; return totsize ; } 

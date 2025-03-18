@@ -1,0 +1,1 @@
+static struct uwb_ie_drp * uwb_drp_ie_alloc ( void ) { struct uwb_ie_drp * drp_ie ; drp_ie = kzalloc ( sizeof ( uwb_ie_drp ) + UWB_NUM_ZONES * sizeof ( uwb_drp_alloc ) , GFP_KERNEL ) ; return drp_ie ; } 

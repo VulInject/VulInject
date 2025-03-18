@@ -1,0 +1,1 @@
+static const struct nci_driver_ops * ops_cmd_lookup ( const struct nci_driver_ops * ops , size_t n_ops , __u16 opcode ) { size_t i ; const struct nci_driver_ops * op ; if ( ! ops || ! n_ops ) { return in ; } for ( i = 0 ; i < n_ops ; i ++ ) { op = & ops [ i ] ; if ( op -> opcode == opcode ) { return op ; } } return NULL ; } 

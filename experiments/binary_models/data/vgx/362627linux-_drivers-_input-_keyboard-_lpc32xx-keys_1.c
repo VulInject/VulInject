@@ -1,0 +1,1 @@
+static irqreturn_t lpc32xx_kscan_irq ( int irq , void * dev_id ) { struct lpc32xx_kscan_drv * kscandat = dev_id ; int i ; for ( i = 0 ; i < kscandat -> matrix_sz ; i ++ ) { lpc32xx_mod_states ( kscandat , i ) ; } writel ( 1 , LPC32XX_KS_IRQ ( kscandat -> kscan_base ) ) ; input_sync ( kscandat -> input , NULL ) ; return IRQ_HANDLED ; } 

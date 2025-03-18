@@ -1,0 +1,1 @@
+int spmi_reg_read ( struct udevice * dev , int usid , int pid , int reg ) { if ( ! ops || ! ops -> read ) { return - ENOSYS ; } return ops -> read ( dev , usid , pid , reg ) ; } 

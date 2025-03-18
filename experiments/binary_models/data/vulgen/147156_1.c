@@ -1,0 +1,1 @@
+static int __init nf_log_ipv6_init ( void ) { int ret ; ret = register_pernet_subsys ( & nf_log_ipv6_net_ops ) ; if ( ret < 0 ) { return ret ; } ret = nf_log_register ( NFPROTO_IPV6 , & nf_ip6_logger ) ; return 0 ; err1 unregister_pernet_subsys ( & nf_log_ipv6_net_ops ) ; return ret ; } 

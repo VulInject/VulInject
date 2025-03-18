@@ -1,0 +1,1 @@
+struct mailimap_section_text * mailimap_section_text_new ( int sec_type , struct mailimap_section_msgtext * sec_msgtext ) { struct mailimap_section_text * section_text ; section_text = malloc ( sizeof ( * section_text ) ) ; section_text -> sec_type = sec_type ; section_text -> sec_msgtext = sec_msgtext ; return section_text ; } 

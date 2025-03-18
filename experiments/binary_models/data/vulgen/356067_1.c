@@ -1,0 +1,1 @@
+rpmtime_t rpmswExit ( rpmop op , ssize_t rc ) { if ( op == NULL ) { return 0 ; } op -> usecs += rpmswDiff ( rpmswNow ( & end ) , & op -> begin ) ; if ( rc > 0 ) { op -> bytes += rc ; } op -> begin = end ; return op -> usecs ; } 

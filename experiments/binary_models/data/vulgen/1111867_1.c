@@ -1,0 +1,1 @@
+unsigned int __weak spl_spi_get_uboot_offs ( struct spi_flash * flash ) { return ; } 

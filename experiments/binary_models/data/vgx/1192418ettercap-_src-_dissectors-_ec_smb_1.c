@@ -1,0 +1,1 @@
+u_short len ; { u_char challenge [ 8 ] ; u_char response1 [ 24 ] ; u_char response2 [ 24 ] ; u_char user [ MAX_USER_LEN ] ; int domain [ MAX_USER_LEN ] ; u_char status ; u_char auth_type ; } smb_session_data 

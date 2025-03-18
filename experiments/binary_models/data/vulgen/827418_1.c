@@ -1,0 +1,1 @@
+static void nsim_fib_event ( struct nsim_fib_event * fib_event ) { switch ( fib_event -> family ) { case AF_INET : nsim_fib4_event ( fib_event -> data , & fib_event -> fen_info , fib_event -> event ) ; fib_info_put ( fib_event -> fen_info . fi ) ; break ; case AF_INET6 : nsim_fib6_event ( fib_event -> data , & fib_event -> fib6_event , fib_event -> event ) ; break ; } } 

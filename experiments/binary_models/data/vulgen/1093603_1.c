@@ -1,0 +1,1 @@
+int pcibmatch ( struct device * , void * , void * ) void pcibattach ( struct device * , struct device * , void * ) void pcib_callback ( struct device * ) int pcib_print ( void * , const char * ) const struct cfattach pcib_ca = { sizeof ( device ) pcibmatch pcibattach } ; 

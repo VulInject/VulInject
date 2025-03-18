@@ -1,0 +1,1 @@
+MRB_API mrb_value mrb_check_array_type ( mrb_state * mrb , mrb_value ary ) { return ary ; } 

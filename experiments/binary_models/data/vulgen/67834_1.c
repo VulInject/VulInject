@@ -1,0 +1,1 @@
+static int aac_encode_close ( AVCodecContext * avctx ) { AACContext * s = avctx -> priv_data ; if ( s -> handle ) { aacEncClose ( & s -> handle ) ; } return 0 ; } 

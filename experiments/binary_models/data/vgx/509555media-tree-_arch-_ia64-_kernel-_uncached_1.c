@@ -1,0 +1,1 @@
+static void uncached_ipi_visibility ( void * data ) { int status ; struct uncached_pool * uc_pool = ( uncached_pool * ) data ; status = ia64_pal_prefetch_visibility ( PAL_VISIBILITY_PHYSICAL , NULL ) ; if ( ( status != PAL_VISIBILITY_OK ) && ( status != PAL_VISIBILITY_OK_REMOTE_NEEDED ) ) { atomic_inc ( & uc_pool -> status ) ; } } 

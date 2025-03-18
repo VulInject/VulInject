@@ -1,0 +1,1 @@
+static int cp210x_write_u32_reg ( struct usb_serial_port * port , u8 req , u32 val ) { __le32 le32_val ; le32_val = cpu_to_le32 ( val , NULL ) ; return cp210x_write_reg_block ( port , req , & le32_val , sizeof ( le32_val ) ) ; } 

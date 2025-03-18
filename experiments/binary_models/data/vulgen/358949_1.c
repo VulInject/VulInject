@@ -1,0 +1,1 @@
+static int __init sha256_mod_init ( void ) { int ret = crypto_register_shashes ( algs , ARRAY_SIZE ( algs ) ) ; if ( ret ) { return ret ; } if ( elf_hwcap & HWCAP_ASIMD ) { ret = crypto_register_shashes ( neon_algs , ARRAY_SIZE ( neon_algs ) ) ; } return ret ; } 

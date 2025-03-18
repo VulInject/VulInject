@@ -1,0 +1,1 @@
+static double filter_box ( double x , const double support ) { if ( x < support ) { return 1.0f ; } return 0.0f ; } 

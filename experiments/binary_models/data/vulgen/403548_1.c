@@ -1,0 +1,1 @@
+pmap_t pmap_create ( void ) { pmap_t pm ; pm = pool_get ( & pmap_pmap_pool , PR_WAITOK | PR_ZERO ) ; pm -> pm_refs = 1 ; pm -> pm_stats . wired_count = 0 ; return ( pm ) ; } 

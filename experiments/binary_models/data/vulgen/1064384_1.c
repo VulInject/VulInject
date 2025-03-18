@@ -1,0 +1,1 @@
+static int __maybe_unused cs35l34_runtime_suspend ( struct device * dev ) { struct cs35l34_private * cs35l34 = dev_get_drvdata ( dev ) ; regcache_mark_dirty ( cs35l34 -> regmap ) ; gpiod_set_value_cansleep ( cs35l34 -> reset_gpio , 0 ) ; regulator_bulk_disable ( cs35l34 -> num_core_supplies , cs35l34 -> core_supplies ) ; return 0 ; } 

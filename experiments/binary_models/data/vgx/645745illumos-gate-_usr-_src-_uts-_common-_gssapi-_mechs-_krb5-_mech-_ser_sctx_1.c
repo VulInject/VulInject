@@ -1,0 +1,1 @@
+static krb5_error_code kg_queue_size ( kcontext , arg , sizep ) krb5_context kcontext ; krb5_pointer arg ; size_t * sizep ; { krb5_error_code kret ; int required ; kret = EINVAL ; if ( arg ) { required = 2 * sizeof ( krb5_int32 ) ; ( void ) g_queue_size ( arg , & required ) ; kret = 0 ; * sizep += required ; } return ( kret ) ; } 

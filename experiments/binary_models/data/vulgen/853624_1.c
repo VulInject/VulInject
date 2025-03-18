@@ -1,0 +1,1 @@
+void integrity_inode_free ( struct inode * inode ) { struct integrity_iint_cache * iint ; write_lock ( & integrity_iint_lock ) ; iint = __integrity_iint_find ( inode ) ; rb_erase ( & iint -> rb_node , & integrity_iint_tree ) ; write_unlock ( & integrity_iint_lock ) ; iint_free ( iint ) ; } 

@@ -1,0 +1,1 @@
+extern int onigenc_end ( void ) { int i ; for ( i = 0 ; i < InitedListNum ; i ++ ) { InitedList [ i ] . enc = 0 ; InitedList [ i ] . inited = 0 ; } OnigEncInited = 0 ; return ONIG_NORMAL ; } 

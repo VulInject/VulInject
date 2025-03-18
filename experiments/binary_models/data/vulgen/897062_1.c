@@ -1,0 +1,1 @@
+struct sc_card_driver * sc_get_masktech_driver ( int ) { return sc_get_driver ( ) ; } 

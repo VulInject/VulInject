@@ -1,0 +1,1 @@
+static void DebugPrintFuncWPP ( const char * format , ... ) { char buf [ 256 ] ; NTSTATUS status ; va_list list ; va_start ( list , format ) ; status = RtlStringCbVPrintfA ( buf , sizeof ( buf ) , format , list ) ; if ( status == STATUS_SUCCESS ) { TraceEvents ( TRACE_LEVEL_WARNING , DBG_ALL , "%s" , 0 ) ; } va_end ( list ) ; } 

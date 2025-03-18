@@ -1,0 +1,1 @@
+static umode_t vexpress_hwmon_attr_is_visible ( struct kobject * kobj , struct attribute * attr , int index ) { struct device * dev = kobj_to_dev ( kobj ) ; struct device_attribute * dev_attr = container_of ( attr , device_attribute , attr ) ; return attr -> mode ; } vexpress_hwmon_type { const char * name ; const struct attribute_group * * attr_groups ; } 

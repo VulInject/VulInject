@@ -1,0 +1,1 @@
+void * get_internal_address ( fcode_env_t * env ) { int * ptr ; ptr = ( int * ) POP ( DS ) ; if ( * ptr > 0 ) { return ( ( uchar_t * ) env + * ptr ) ; } return ( ( uchar_t * ) MYSELF - * ptr ) ; } 

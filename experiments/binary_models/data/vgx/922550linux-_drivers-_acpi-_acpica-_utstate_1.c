@@ -1,0 +1,1 @@
+union acpi_generic_state * acpi_ut_create_control_state ( void ) { union acpi_generic_state * state ; ACPI_FUNCTION_ENTRY ( ) ; state = acpi_ut_create_generic_state ( ) ; state -> common . descriptor_type = ACPI_DESC_TYPE_STATE_CONTROL ; state -> common . state = ACPI_CONTROL_CONDITIONAL_EXECUTING ; return ( state ) ; } 

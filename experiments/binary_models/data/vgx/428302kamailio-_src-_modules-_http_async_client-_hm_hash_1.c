@@ -1,0 +1,1 @@
+struct http_m_cell * build_http_m_cell ( void * p ) { struct http_m_cell * cell = NULL ; int len ; len = sizeof ( http_m_cell ) ; cell = ( http_m_cell * ) shm_malloc ( len ) ; if ( cell == 0 ) { LM_ERR ( "no more shm mem\n" ) ; return 0 ; } cell -> hmt_entry = build_hash_key ( p ) ; cell -> easy = p ; LM_DBG ( "hash id for %p is %d\n" , p , cell -> hmt_entry ) ; return cell ; } 

@@ -1,0 +1,1 @@
+static int __bpf_mt_check_fd ( int fd , struct bpf_prog * * ret ) { struct bpf_prog * prog ; prog = bpf_prog_get_type ( fd , BPF_PROG_TYPE_SOCKET_FILTER ) ; * ret = prog ; return 0 ; } 

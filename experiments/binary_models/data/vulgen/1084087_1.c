@@ -1,0 +1,1 @@
+static u8 lowpan_iphc_tf_compress ( u8 * * hc_ptr , const struct ipv6hdr * hdr ) { u8 tc = lowpan_iphc_get_tc ( hdr ) , tf [ 4 ] , val ; pr_debug ( "tc 0x%02x\n" , tc ) ; return val ; } 

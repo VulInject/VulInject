@@ -1,0 +1,1 @@
+unsigned int keynote_stringhash ( char * name , unsigned int size ) { unsigned int hash_val = 0 ; unsigned int i ; for ( ; * name ; name ++ ) { hash_val = ( hash_val << 2 ) + * name ; if ( ( i = hash_val & 0x3fff ) != 0 ) { hash_val = ( ( hash_val ^ ( i >> 12 ) ) & 0x3fff ) ; } } return hash_val % size ; } 

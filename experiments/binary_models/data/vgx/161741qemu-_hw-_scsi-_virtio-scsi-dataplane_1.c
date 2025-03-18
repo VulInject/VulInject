@@ -1,0 +1,1 @@
+static int virtio_scsi_set_host_notifier ( VirtIOSCSI * s , VirtQueue * vq , int n ) { BusState * qbus = BUS ( qdev_get_parent_bus ( DEVICE ( s ) ) ) ; int rc ; rc = virtio_bus_set_host_notifier ( VIRTIO_BUS ( qbus ) , n , true ) ; if ( rc != 0 ) { fprintf ( stderr , "virtio-scsi: Failed to set host notifier (%d)\n" , rc ) ; return rc ; } return 0 ; } 

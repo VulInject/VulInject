@@ -1,0 +1,1 @@
+segment_type ( ) { int rc ; struct dcss_segment seg ; dcss_mkname ( name , seg . dcss_name ) ; rc = query_segment_type ( & seg ) ; if ( rc < 0 ) { return rc ; } return seg . vm_segtype ; } 

@@ -1,0 +1,1 @@
+my_fribidi_strdup ( ) { char * m ; m = fribidi_malloc ( strlen ( s ) + 1 ) ; strcpy ( m , s ) ; return m ; } 

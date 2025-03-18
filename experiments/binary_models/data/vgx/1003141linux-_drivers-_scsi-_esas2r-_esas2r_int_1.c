@@ -1,0 +1,1 @@
+irqreturn_t esas2r_interrupt ( int irq , void * dev_id ) { struct esas2r_adapter * a = ( esas2r_adapter * ) dev_id ; set_bit ( AF2_INT_PENDING , & a -> flags2 ) ; esas2r_schedule_tasklet ( a ) ; return IRQ_HANDLED ; } 

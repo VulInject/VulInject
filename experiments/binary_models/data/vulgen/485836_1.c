@@ -1,0 +1,1 @@
+static void set_pte_phys ( unsigned long addr , unsigned long phys , pgprot_t prot ) { pte_t * pte ; pte = __get_pte_phys ( addr ) ; if ( ! pte_none ( * pte ) ) { pte_ERROR ( * pte ) ; return ; } set_pte ( pte , pfn_pte ( phys >> PAGE_SHIFT , prot ) ) ; if ( pgprot_val ( prot ) & _PAGE_WIRED ) { tlb_wire_entry ( NULL , addr , * pte ) ; } } 

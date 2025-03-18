@@ -1,0 +1,1 @@
+static long lmb_addrs_adjacent ( phys_addr_t base1 , phys_size_t size1 , phys_addr_t base2 , phys_size_t size2 ) { if ( base2 == base1 + size1 ) { return 1 ; } return 0 ; } 

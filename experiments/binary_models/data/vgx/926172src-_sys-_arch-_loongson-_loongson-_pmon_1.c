@@ -1,0 +1,1 @@
+const char * pmon_getarg ( const int argno ) { if ( argno < 0 || argno >= pmon_argc ) { return in ; } return ( const char * ) ( vaddr_t ) pmon_argv [ argno ] ; } 

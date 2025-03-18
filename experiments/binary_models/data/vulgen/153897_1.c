@@ -1,0 +1,1 @@
+struct myentity * myentity_find_uid ( const char * uid ) { return mowgli_patricia_retrieve ( entities_by_id , uid ) ; } 

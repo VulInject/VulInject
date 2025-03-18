@@ -1,0 +1,1 @@
+bool pong_h ( connection_t * c , const char * request ) { ( void ) request ; c -> status . pinged = false ; if ( c -> outgoing && c -> outgoing -> timeout ) { c -> outgoing -> timeout = 0 ; add_recent_address ( c -> node -> address_cache , & c -> address ) ; } return true ; } 

@@ -1,0 +1,1 @@
+static tool_rc change_authorization ( ESYS_CONTEXT * ectx ) { tool_rc rc = tool_rc_success ; UINT8 tag = ( ctx . object . obj . handle & TPM2_HR_RANGE_MASK ) >> TPM2_HR_SHIFT ; return rc ; } 

@@ -1,0 +1,1 @@
+IRQCHIP_DECLARE ( arm_fpga_sic , "arm,versatile-sic" , fpga_irq_of_init ) ; 

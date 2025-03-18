@@ -1,0 +1,1 @@
+static irqreturn_t mpuintr ( int irq , void * dev_id ) { struct mpu_config * devc ; int dev = ( int ) ( unsigned long ) dev_id ; int handled = 0 ; devc = & dev_conf [ dev ] ; if ( input_avail ( devc ) ) { handled = 1 ; else { read_data ( devc ) ; } } return IRQ_RETVAL ( handled ) ; } 

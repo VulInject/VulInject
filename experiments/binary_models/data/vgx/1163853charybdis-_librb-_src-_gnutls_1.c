@@ -1,0 +1,1 @@
+void rb_ssl_shutdown ( rb_fde_t * const F ) { if ( F == NULL || F -> ssl == NULL ) { return ; } for ( int i = 0 ; i < 4 ; i ++ ) { int ret = gnutls_bye ( SSL_P ( F ) , GNUTLS_SHUT_RDWR ) ; if ( ret != GNUTLS_E_INTERRUPTED && ret != GNUTLS_E_AGAIN ) { break ; } } gnutls_deinit ( SSL_P ( F ) ) ; F -> ssl = NULL ; } 

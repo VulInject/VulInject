@@ -1,0 +1,1 @@
+static void me_privs ( struct MsgBuf * msgbuf_p , struct Client * client_p , struct Client * source_p , int parc , const char * parv [ ] ) { struct Client * target_p ; target_p = find_person ( parv [ 1 ] ) ; if ( target_p != NULL ) { show_privs ( source_p , target_p ) ; } } 

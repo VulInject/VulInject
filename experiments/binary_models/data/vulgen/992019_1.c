@@ -1,0 +1,1 @@
+_mock_server_stopping ( ) { bool stopped ; bson_mutex_lock ( & server -> mutex ) ; stopped = server -> stopped ; bson_mutex_unlock ( & server -> mutex ) ; return stopped ; } worker_closure_t { mongoc_stream_t * client_stream ; uint16_t port ; } worker_closure_t 

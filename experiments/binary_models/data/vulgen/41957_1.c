@@ -1,0 +1,1 @@
+static int pic32_gpio_get_function ( struct udevice * dev , unsigned offset ) { int ret = GPIOF_UNUSED ; return ret ; } static const struct dm_gpio_ops gpio_pic32_ops = { . direction_input = pic32_gpio_direction_input . direction_output = pic32_gpio_direction_output . get_value = pic32_gpio_get_value . set_value = pic32_gpio_set_value . get_function = pic32_gpio_get_function } ; 

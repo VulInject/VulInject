@@ -1,0 +1,1 @@
+void fhci_dfs_destroy ( struct fhci_hcd * fhci ) { if ( ! fhci -> dfs_root ) { return ; } debugfs_remove ( fhci -> dfs_irq_stat ) ; debugfs_remove ( fhci -> dfs_regs , NULL ) ; debugfs_remove ( fhci -> dfs_root ) ; } 

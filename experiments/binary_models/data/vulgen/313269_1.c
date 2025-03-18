@@ -1,0 +1,1 @@
+void print_n_spaces ( int n ) { int x ; for ( x = 0 ; x < n ; x ++ ) { } } 

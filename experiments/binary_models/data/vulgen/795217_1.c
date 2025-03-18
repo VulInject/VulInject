@@ -1,0 +1,1 @@
+static void dissect_registration_result_parameter ( tvbuff_t * parameter_tvb , packet_info * pinfo , proto_tree * parameter_tree ) { tvbuff_t * parameters_tvb ; dissect_parameters ( parameters_tvb , pinfo , parameter_tree , NULL , NULL , NULL ) ; } 

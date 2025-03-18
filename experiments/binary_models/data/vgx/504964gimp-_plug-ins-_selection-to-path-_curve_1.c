@@ -1,0 +1,1 @@
+init_curve ( ) { curve_type curve = new_curve ( ) ; curve -> point_list = g_malloc ( point_type , 1 ) ; CURVE_LENGTH ( curve ) = 1 ; CURVE_POINT ( curve , 0 ) = int_to_real_coord ( coord ) ; return curve ; } 

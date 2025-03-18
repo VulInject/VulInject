@@ -1,0 +1,1 @@
+extern void cpu_post_exec_11 ( ulong * code , ulong * res , ulong op1 ) static cpu_post_cmpi_s { ulong op1 ; ushort op2 ; ulong cr ; ulong res ; } , cpu_post_cmpi_table [ ] { { OP_CMPWI 123 123 2 0x02 } { OP_CMPWI 123 133 3 0x08 } { OP_CMPWI 123 - 133 4 0x04 } { OP_CMPLWI 123 123 2 0x02 } { OP_CMPLWI 123 - 133 3 0x08 } { OP_CMPLWI 123 113 4 0x04 } } ; 

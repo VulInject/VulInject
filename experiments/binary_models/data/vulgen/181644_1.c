@@ -1,0 +1,1 @@
+static void set_some_bits ( git_bitvec * bv , size_t length ) { size_t i ; for ( i = 0 ; i < length ; ++ i ) { if ( i % 3 == 0 || i % 7 == 0 ) { git_bitvec_set ( bv , i , 0 ) ; } } } 

@@ -1,0 +1,1 @@
+static int lxt970_config_intr ( struct phy_device * phydev ) { int err ; if ( phydev -> interrupts == PHY_INTERRUPT_ENABLED ) { err = lxt970_ack_interrupt ( phydev ) ; err = phy_write ( phydev , MII_LXT970_IER , MII_LXT970_IER_IEN ) ; } else { err = phy_write ( phydev , MII_LXT970_IER , 0 ) ; if ( err ) { return err ; } err = lxt970_ack_interrupt ( phydev ) ; } return err ; } 

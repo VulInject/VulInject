@@ -1,0 +1,1 @@
+static struct nv10_gr_chan * nv10_gr_channel ( struct nv10_gr * gr ) { struct nvkm_device * device = gr -> base . engine . subdev . device ; struct nv10_gr_chan * chan ; if ( nvkm_rd32 ( device , 0x400144 ) & 0x00010000 ) { int chid = nvkm_rd32 ( device , 0x400148 ) >> 24 ; if ( chid < ARRAY_SIZE ( gr -> chan ) ) { chan = gr -> chan [ chid ] ; } } return chan ; } 

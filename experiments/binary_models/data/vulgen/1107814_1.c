@@ -1,0 +1,1 @@
+static int jr2_initialize ( struct jr2_private * priv ) { int ret , i ; ret = jr2_switch_init ( priv ) ; if ( ret ) { return ret ; } jr2_switch_config ( priv ) ; for ( i = 0 ; i < MAX_PORT ; i ++ ) { jr2_port_init ( priv , i ) ; } return 0 ; } 

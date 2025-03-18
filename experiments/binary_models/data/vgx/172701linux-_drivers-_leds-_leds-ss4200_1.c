@@ -1,0 +1,1 @@
+static ssize_t blink_store ( struct device * dev , struct device_attribute * attr , const char * buf , size_t size ) { int ret ; struct led_classdev * led = dev_get_drvdata ( dev ) ; unsigned long blink_state ; ret = kstrtoul ( buf , 10 , & blink_state ) ; nasgpio_led_set_attr ( led , GPO_BLINK , blink_state ) ; return size ; } 

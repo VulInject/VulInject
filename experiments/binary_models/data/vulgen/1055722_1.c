@@ -1,0 +1,1 @@
+static int lm90_update_confreg ( struct lm90_data * data , u8 config ) { if ( data -> config != config ) { int err ; err = lm90_write_reg ( data -> client , LM90_REG_CONFIG1 , config ) ; data -> config = config ; } return 0 ; } 

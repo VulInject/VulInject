@@ -1,0 +1,1 @@
+u32 cpdma_chan_get_rate ( struct cpdma_chan * ch ) { unsigned long flags ; spin_lock_irqsave ( & ch -> lock , flags ) ; rate = ch -> rate ; spin_unlock_irqrestore ( & ch -> lock , flags ) ; return rate ; } 

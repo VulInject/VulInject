@@ -1,0 +1,1 @@
+ns32k_store_return_value ( , ) { } 

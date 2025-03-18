@@ -1,0 +1,1 @@
+static int sendmsg ( struct md_cluster_info * cinfo , struct cluster_msg * cmsg , bool mddev_locked ) { int ret ; lock_comm ( cinfo , mddev_locked ) ; ret = __sendmsg ( cinfo , cmsg ) ; unlock_comm ( cinfo , NULL ) ; return ret ; } 

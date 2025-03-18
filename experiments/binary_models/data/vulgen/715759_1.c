@@ -1,0 +1,1 @@
+static EFI_CONSOLE_CONTROL_SCREEN_MODE console_mode ; static SIMPLE_TEXT_OUTPUT_INTERFACE * conout ; static vis_modechg_cb_t modechg_cb ; static struct vis_modechg_arg * modechg_arg ; static tem_vt_state_t tem ; efi_console_data { struct visual_ops * ecd_visual_ops ; SIMPLE_INPUT_INTERFACE * ecd_conin ; } 

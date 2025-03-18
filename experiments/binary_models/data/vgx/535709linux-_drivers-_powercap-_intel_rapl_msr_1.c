@@ -1,1 +1,1 @@
-static int FUN1 ( int VAR1 , struct VAR2 * VAR3 ) { int VAR4 ; VAR4 = FUN2 ( VAR1 , VAR5 , VAR3 , 1 ) ; return VAR3 -> VAR6 ; }
+static int rapl_msr_write_raw ( int cpu , struct reg_action * ra ) { int ret ; ret = smp_call_function_single ( cpu , rapl_msr_update_func , ra , 1 ) ; return ra -> err ; } 

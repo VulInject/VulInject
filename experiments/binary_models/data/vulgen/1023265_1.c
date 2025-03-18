@@ -1,0 +1,1 @@
+static int tiocx_match ( struct device * dev , struct device_driver * drv ) { struct cx_dev * cx_dev = to_cx_dev ( dev ) ; struct cx_drv * cx_drv = to_cx_driver ( drv ) ; const struct cx_device_id * ids = cx_drv -> id_table ; while ( ids -> part_num ) { if ( ids -> part_num == cx_dev -> cx_id . part_num ) { return 1 ; } ids ++ ; } return 0 ; } 

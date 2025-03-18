@@ -1,0 +1,1 @@
+static int sfdisk_deinit ( struct sfdisk * sf ) { struct fdisk_context * parent ; assert ( sf ) ; assert ( sf -> cxt ) ; parent = fdisk_get_parent ( sf -> cxt ) ; if ( parent ) { fdisk_unref_context ( sf -> cxt ) ; sf -> cxt = parent ; } fdisk_unref_context ( sf -> cxt ) ; memset ( sf , 0 , sizeof ( * sf ) ) ; return 0 ; } 

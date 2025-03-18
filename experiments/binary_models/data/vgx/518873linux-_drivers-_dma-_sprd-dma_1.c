@@ -1,0 +1,1 @@
+static int sprd_dma_enable ( struct sprd_dma_dev * sdev ) { int ret ; ret = clk_prepare_enable ( sdev -> clk ) ; if ( ! IS_ERR ( sdev -> ashb_clk ) ) { ret = clk_prepare_enable ( sdev -> ashb_clk ) ; } return ret ; } 

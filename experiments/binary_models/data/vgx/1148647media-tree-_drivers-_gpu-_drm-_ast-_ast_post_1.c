@@ -1,0 +1,1 @@
+static bool cbr_test_2500 ( struct ast_private * ast ) { ast_moutdwm ( ast , 0x1E6E0074 , 0x0000FFFF ) ; ast_moutdwm ( ast , 0x1E6E007C , 0xFF00FF00 ) ; if ( ! mmc_test_single_2500 ( ast , 0 ) ) { return false ; } return true ; } 

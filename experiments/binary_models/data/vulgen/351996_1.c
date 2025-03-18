@@ -1,0 +1,1 @@
+nautilus_file_list_from_uri_list ( ) { GList * l ; GList * result = NULL ; for ( l = uris ; l != NULL ; l = l -> next ) { g_autoptr ( ) location = NULL ; result = g_list_prepend ( result , nautilus_file_get ( location ) ) ; } return g_list_reverse ( result ) ; } 

@@ -1,0 +1,1 @@
+R_API bool r_anal_xrefs_from ( RAnal * anal , RList * list , const char * kind , const RAnalRefType type , ut64 addr ) { r_return_val_if_fail ( anal && list , false ) ; listxrefs ( anal -> dict_refs , addr , list ) ; sortxrefs ( list , NULL ) ; return true ; } 

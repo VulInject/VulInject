@@ -1,0 +1,1 @@
+static irqreturn_t zx_hdmi_irq_handler ( int irq , void * dev_id ) { struct zx_hdmi * hdmi = dev_id ; u8 lstat ; lstat = hdmi_readb ( hdmi , L1_INTR_STAT ) ; if ( lstat & L1_INTR_STAT_INTR1 ) { u8 stat ; stat = hdmi_readb ( hdmi , INTR1_STAT ) ; hdmi_writeb ( hdmi , INTR1_STAT , stat ) ; } return IRQ_NONE ; } 

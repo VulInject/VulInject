@@ -1,0 +1,1 @@
+AP_DECLARE ( ) ap_get_conn_server_module_loglevel ( , , ) { const struct ap_logconf * l = ( c -> log && c -> log != & c -> base_server -> log ) ?c -> log : & s -> log ; return l -> module_levels [ module_index ] ; } 

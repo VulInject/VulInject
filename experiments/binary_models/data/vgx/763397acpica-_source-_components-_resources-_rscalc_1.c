@@ -1,0 +1,1 @@
+AcpiRsStructOptionLength ( ) { ACPI_FUNCTION_ENTRY ( ) ; return ( 0 ) ; } 

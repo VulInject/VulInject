@@ -1,0 +1,1 @@
+int TS_ACCURACY_set_seconds ( TS_ACCURACY * a , const ASN1_INTEGER * seconds ) { ASN1_INTEGER * new_seconds ; if ( a -> seconds == seconds ) { return 1 ; } new_seconds = ASN1_INTEGER_dup ( seconds ) ; if ( new_seconds == NULL ) { return 0 ; } ASN1_INTEGER_free ( a -> seconds ) ; a -> seconds = new_seconds ; return 1 ; } 

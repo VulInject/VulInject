@@ -1,0 +1,1 @@
+static void vex_print_tags ( const struct vbitmap * vbm ) { int i ; int first = 1 ; for ( i = 0 ; i < SLT__MAX ; i ++ ) { if ( ! vbit_test ( vbm , i ) ) { continue ; } if ( first ) { first = 0 ; } else { fprintf ( stderr , "," ) ; } fprintf ( stderr , "%s" , VSL_tags [ i ] ) ; } } 

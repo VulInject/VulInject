@@ -1,0 +1,1 @@
+static void umc_v8_7_ecc_info_query_ras_error_address ( struct amdgpu_device * adev , void * ras_error_status ) { struct ras_err_data * err_data = ( ras_err_data * ) ras_error_status ; uint32_t umc_inst = 0 ; uint32_t ch_inst = 0 ; LOOP_UMC_INST_AND_CH ( , ) { } } 

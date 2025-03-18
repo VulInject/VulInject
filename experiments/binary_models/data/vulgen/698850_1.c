@@ -1,0 +1,1 @@
+void js_puts ( js_State * J , js_Buffer * * sb , const char * s ) { while ( * s ) { js_putc ( J , sb , 0 ) ; } } 

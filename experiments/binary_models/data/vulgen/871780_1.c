@@ -1,0 +1,1 @@
+static enum hrtimer_restart ncm_tx_timeout ( struct hrtimer * data ) { struct f_ncm * ncm = container_of ( data , f_ncm , task_timer ) ; struct net_device * netdev = READ_ONCE ( ncm -> netdev ) ; if ( netdev ) { netdev -> netdev_ops -> ndo_start_xmit ( NULL , 0 ) ; } return HRTIMER_NORESTART ; } 

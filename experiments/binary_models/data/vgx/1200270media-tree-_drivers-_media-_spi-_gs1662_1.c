@@ -1,0 +1,1 @@
+static int gs_dv_timings_cap ( struct v4l2_subdev * sd , struct v4l2_dv_timings_cap * cap ) { * cap = gs_timings_cap ; return 0 ; } 

@@ -1,0 +1,1 @@
+static int bmp_readint ( FILE * f , int n , unsigned int * p ) { int i ; unsigned int sum = 0 ; int b ; for ( i = 0 ; i < n ; i ++ ) { b = fgetc ( f ) ; if ( b == EOF ) { return 1 ; } sum += b << ( 8 * i ) ; } bmp_count += n ; bmp_pos += n ; * p = sum ; return 0 ; } 

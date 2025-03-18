@@ -1,0 +1,1 @@
+static int dissect_djiuav_static ( tvbuff_t * tvb , packet_info * pinfo , proto_tree * tree , void * data ) { if ( ! test_djiuav ( tvb ) ) { return 0 ; } return tvb_captured_length ( tvb ) ; } 

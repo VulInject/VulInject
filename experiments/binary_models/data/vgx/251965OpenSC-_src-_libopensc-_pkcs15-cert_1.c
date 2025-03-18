@@ -1,0 +1,1 @@
+void sc_pkcs15_free_certificate ( struct sc_pkcs15_cert * cert ) { if ( cert == NULL ) { return ; } sc_pkcs15_free_pubkey ( cert -> key ) ; free ( cert -> subject ) ; free ( cert -> issuer ) ; free ( cert -> data . value ) ; free ( cert -> extensions ) ; free ( cert ) ; } 

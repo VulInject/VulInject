@@ -1,0 +1,1 @@
+static void iwl_mvm_phy_ctxt_cmd_hdr ( struct iwl_mvm_phy_ctxt * ctxt , struct iwl_phy_context_cmd * cmd , u32 action , u32 apply_time ) { cmd -> id_and_color = cpu_to_le32 ( FW_CMD_ID_AND_COLOR ( ctxt -> id , ctxt -> color ) ) ; cmd -> action = cpu_to_le32 ( action ) ; cmd -> apply_time = cpu_to_le32 ( apply_time ) ; } 

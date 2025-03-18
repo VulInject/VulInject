@@ -1,0 +1,1 @@
+int __init tls_device_init ( void ) { int err ; if ( ! destruct_wq ) { return - ENOMEM ; } err = register_netdevice_notifier ( & tls_dev_notifier ) ; if ( err ) { destroy_workqueue ( destruct_wq ) ; } return err ; } 

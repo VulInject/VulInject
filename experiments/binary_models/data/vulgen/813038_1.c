@@ -1,0 +1,1 @@
+void test_barrier ( int sfd ) { char b ; assert ( write ( sfd , & b , 1 ) == 1 ) ; assert ( read ( sfd , & b , 1 ) == 1 ) ; } 

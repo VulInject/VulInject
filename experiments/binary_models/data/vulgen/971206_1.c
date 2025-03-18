@@ -1,0 +1,1 @@
+void proto_reg_handoff_pkixproxy ( void ) { oid_add_from_string ( "id-ppl-anyLanguage" , "1.3.6.1.5.5.7.21.0" ) ; oid_add_from_string ( "id-ppl-inheritAll" , "1.3.6.1.5.5.7.21.1" ) ; oid_add_from_string ( "id-ppl-independent" , "1.3.6.1.5.5.7.21.2" ) ; } 

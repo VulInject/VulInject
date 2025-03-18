@@ -1,0 +1,1 @@
+void yr_stopwatch_start ( YR_STOPWATCH * sw ) { QueryPerformanceFrequency ( & sw -> frequency ) ; } 

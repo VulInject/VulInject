@@ -1,0 +1,1 @@
+int all_tests ( ) { mu_run_test ( test_uleb128_small ) ; mu_run_test ( test_sleb128_small ) ; mu_run_test ( test_uleb128_big , NULL ) ; mu_run_test ( test_sleb128_big ) ; mu_run_test ( test_leb128_correctness ) ; return tests_passed != tests_run ; } 

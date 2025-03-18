@@ -1,0 +1,1 @@
+void snd_ymfpci_free_gameport ( struct snd_ymfpci * chip ) { if ( chip -> gameport ) { chip -> gameport = NULL ; } } 

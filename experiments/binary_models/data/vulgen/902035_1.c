@@ -1,0 +1,1 @@
+extern void Unix_ResetParallel ( void ) { struct bpp_transfer_parms tp ; printf ( "serpar_reset\n" ) ; tp . write_handshake = BPP_BUSY_HS ; tp . write_timeout = PP_TIMEOUT ; if ( ioctl ( parpfd , BPPIOC_SETPARMS , & tp ) < 0 ) { perror ( "ioctl(BPPIOC_SETPARMS)" ) ; panic ( "serpar_reset: cannot set BPP parameters" ) ; } } 

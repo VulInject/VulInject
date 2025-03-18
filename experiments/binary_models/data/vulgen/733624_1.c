@@ -1,0 +1,1 @@
+unsigned int strlen ( const char * src ) { return __builtin_strlen ( ) ; } 

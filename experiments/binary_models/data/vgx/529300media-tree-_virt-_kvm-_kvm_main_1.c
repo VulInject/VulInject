@@ -1,0 +1,1 @@
+int kvm_register_device_ops ( struct kvm_device_ops * ops , u32 type ) { if ( type >= ARRAY_SIZE ( kvm_device_ops_table ) ) { return - ENOSPC ; } kvm_device_ops_table [ type ] = ops ; return 0 ; } 

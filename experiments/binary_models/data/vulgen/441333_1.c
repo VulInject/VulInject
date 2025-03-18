@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "Carsten Paeth" ) ; MODULE_LICENSE ( "GPL" ) ; static void b1pcmcia_remove_ctr ( struct capi_ctr * ctrl ) { avmctrl_info * cinfo = ( avmctrl_info * ) ( ctrl -> driverdata ) ; avmcard * card = cinfo -> card ; unsigned int port = card -> port ; b1_reset ( port ) ; b1_reset ( port ) ; detach_capi_ctr ( ctrl ) ; free_irq ( card -> irq , card ) ; } 

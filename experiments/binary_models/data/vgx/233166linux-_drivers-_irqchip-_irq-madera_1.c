@@ -1,0 +1,1 @@
+static int madera_suspend ( struct device * dev ) { struct madera * madera = dev_get_drvdata ( dev -> parent ) ; dev_dbg ( madera -> irq_dev , "Suspend, disabling IRQ\n" ) ; disable_irq ( madera -> irq , NULL ) ; return 0 ; } 

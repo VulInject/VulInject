@@ -1,0 +1,1 @@
+int ocpi_enable ( void ) { unsigned int val ; val = omap_readl ( OCPI_PROT ) ; val &= ~ 0xff ; omap_writel ( val , OCPI_PROT ) ; val = omap_readl ( OCPI_SEC ) ; val &= ~ 0xff ; omap_writel ( val , OCPI_SEC ) ; return 0 ; } 

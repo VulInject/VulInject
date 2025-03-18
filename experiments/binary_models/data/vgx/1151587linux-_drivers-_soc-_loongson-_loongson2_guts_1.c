@@ -1,0 +1,1 @@
+u16 feature ; u32 vendor ; u8 res1 [ 6 ] ; u32 id ; int res2 [ 0x3ff8 - 0x18 ] ; u32 chip ; static guts { struct scfg_guts __iomem * regs ; bool little_endian ; } , * guts 

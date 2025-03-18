@@ -1,0 +1,1 @@
+static int otx_cpt_enc_dec_init ( struct crypto_skcipher * tfm ) { struct otx_cpt_enc_ctx * ctx = crypto_skcipher_ctx ( tfm ) ; crypto_skcipher_set_reqsize_dma ( tfm , sizeof ( otx_cpt_req_ctx ) + sizeof ( skcipher_request ) ) ; return 0 ; } 

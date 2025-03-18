@@ -1,0 +1,1 @@
+static void GotErrorCb ( struct evrpc_status * status , struct msg * msg , struct kill * kill , void * arg ) { if ( kill_complete ( kill ) == 0 ) { done } test_ok += 1 ; done event_loopexit ( NULL ) ; } rpc_hook_ctx_ { void * vbase ; void * ctx ; } 

@@ -1,0 +1,1 @@
+struct adv_info * hci_find_adv_instance ( struct hci_dev * hdev , u8 instance ) { struct adv_info * adv_instance ; list_for_each_entry ( , , ) { } return NULL ; } 

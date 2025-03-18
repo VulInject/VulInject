@@ -1,0 +1,1 @@
+( flexcop_device_initialize ) ; void flexcop_device_exit ( struct flexcop_device * fc ) { flexcop_frontend_exit ( fc ) ; flexcop_i2c_exit ( fc ) ; } 

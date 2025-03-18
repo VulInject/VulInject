@@ -1,0 +1,1 @@
+int pcep_object_error_types_test_suite_setup ( void ) { set_logging_level ( LOG_DEBUG ) ; return 0 ; } 

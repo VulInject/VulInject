@@ -1,0 +1,1 @@
+int countpdffilepages ( void ) { int rval = 0 ; if ( pic_path ) { rval = pdf_count_pages ( pic_path ) ; free ( pic_path ) ; } return rval ; } 

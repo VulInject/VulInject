@@ -1,0 +1,1 @@
+static int usage ( const char * prog ) { size_t i ; fprintf ( stderr , "usage: %s<cmd>...\n\nAvailable commands:\n\n" , prog ) ; for ( i = 0 ; i < ARRAY_SIZE ( commands ) ; i ++ ) { fprintf ( stderr , "\t%s\n" , commands [ i ] . name ) ; } exit ( EXIT_FAILURE , NULL ) ; } 

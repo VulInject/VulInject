@@ -1,0 +1,1 @@
+static _cups_rss_t * new_message ( int sequence_number , char * subject , char * text , char * link_url , time_t event_time ) { _cups_rss_t * msg ; msg -> sequence_number = sequence_number ; msg -> subject = subject ; msg -> text = text ; msg -> link_url = link_url ; msg -> event_time = event_time ; return ( msg ) ; } 

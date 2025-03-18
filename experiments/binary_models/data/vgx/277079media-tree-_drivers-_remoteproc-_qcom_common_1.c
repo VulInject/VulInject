@@ -1,0 +1,1 @@
+void qcom_remove_smd_subdev ( struct rproc * rproc , struct qcom_rproc_subdev * smd ) { rproc_remove_subdev ( rproc , & smd -> subdev ) ; of_node_put ( smd -> node , NULL ) ; } 

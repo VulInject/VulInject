@@ -1,0 +1,1 @@
+void specerror ( const char * s ) { if ( specialerrors > 0 && ! kpse_tex_hush ( "special" ) ) { error ( s ) ; specialerrors -- ; } if ( specialerrors == 0 && ! kpse_tex_hush ( "special" ) ) { error ( "more errors in special, being ignored . . ." ) ; specialerrors -- ; } } 

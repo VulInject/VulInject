@@ -1,0 +1,1 @@
+int pmu_apic_update ( uint32_t val ) { int ret ; struct xen_pmu_data * xenpmu_data = get_xenpmu_data ( ) ; if ( ! xenpmu_data ) { pr_warn_once ( "%s: pmudata not initialized\n" , __func__ ) ; return - EINVAL ; } xenpmu_data -> pmu . l . lapic_lvtpc = val ; ret = HYPERVISOR_xenpmu_op ( XENPMU_lvtpc_set , NULL ) ; return ret ; } 

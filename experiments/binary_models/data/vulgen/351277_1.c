@@ -1,0 +1,1 @@
+static int osc_device_init ( const struct lu_env * env , struct lu_device * d , const char * name , struct lu_device * next ) { return 1 ; } 

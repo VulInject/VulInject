@@ -1,0 +1,1 @@
+MRB_API char const * mrb_debug_get_filename ( mrb_state * mrb , const mrb_irep * irep , uint32_t pc ) { if ( irep && pc < irep -> ilen ) { if ( ! irep -> debug_info ) { return in ; } return debug_get_filename ( mrb , get_file ( irep -> debug_info , pc ) ) ; } return NULL ; } 

@@ -1,0 +1,1 @@
+void saa7134_input_fini ( struct saa7134_dev * dev ) { saa7134_ir_stop ( dev ) ; rc_unregister_device ( dev -> remote -> dev ) ; kfree ( dev -> remote ) ; dev -> remote = NULL ; } 

@@ -1,0 +1,1 @@
+void try_mkstemp ( char * p , char const * prefix , int len ) { char * q ; size_t plen = strlen ( prefix ) ; int tries , fd ; for ( tries = 0 ; tries < MAX_TRIES ; tries ++ ) { memcpy ( p , prefix , plen ) ; memset ( p + plen , 'X' , len ) ; p [ plen + len ] = '\0' ; fd = mkstemp ( p ) ; } errx ( 1 , "exceeded MAX_TRIES" ) ; } 

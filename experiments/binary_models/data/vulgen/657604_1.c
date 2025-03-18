@@ -1,0 +1,1 @@
+static inline unsigned char upcase ( unsigned char * dir , unsigned char a ) { if ( a < 128 || a == 255 ) { return a >= 'a' && a <= 'z' ?a - 0x20 : a ; } return dir [ a - 128 ] ; } 

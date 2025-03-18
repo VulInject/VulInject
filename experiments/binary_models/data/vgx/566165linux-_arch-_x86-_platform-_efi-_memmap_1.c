@@ -1,0 +1,1 @@
+static phys_addr_t __init __efi_memmap_alloc_late ( unsigned long size ) { unsigned int order = get_order ( size ) ; struct page * p = alloc_pages ( GFP_KERNEL , order ) ; return PFN_PHYS ( page_to_pfn ( p ) ) ; } 

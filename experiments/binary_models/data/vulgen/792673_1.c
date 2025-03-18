@@ -1,0 +1,1 @@
+int sdhc_fdt_card_detect ( struct sdhc_softc * ssc ) { struct sdhc_fdt_softc * sc = ( sdhc_fdt_softc * ) ssc ; return gpio_controller_get_pin ( sc -> sc_gpio ) ; } 

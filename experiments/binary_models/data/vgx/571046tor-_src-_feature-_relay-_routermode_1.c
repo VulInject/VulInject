@@ -1,0 +1,1 @@
+MOCK_IMPL ( , , ) { return ( ! options -> BridgeRelay ) ; } static int server_is_advertised = 0 ; MOCK_IMPL ( , , ) { return server_is_advertised ; } 

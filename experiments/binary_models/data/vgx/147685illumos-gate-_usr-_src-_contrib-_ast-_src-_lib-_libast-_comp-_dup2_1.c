@@ -1,0 +1,1 @@
+int dup2 ( int d1 , int d2 ) { int save_errno ; if ( d1 == d2 ) { return ( d1 ) ; } save_errno = errno ; close ( d2 , NULL ) ; errno = save_errno ; return ( fcntl ( d1 , F_DUPFD , d2 ) ) ; } 

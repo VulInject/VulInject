@@ -1,0 +1,1 @@
+int addMAC ( pMAC_t pMAC , unsigned char * mac ) { pMAC_t cur = pMAC ; if ( mac == NULL ) { return - 1 ; } while ( cur -> next != NULL ) { cur = cur -> next ; } cur -> next = ( pMAC_t ) malloc ( sizeof ( MAC_list ) ) ; ALLEGE ( cur -> next != NULL ) ; cur = cur -> next ; memcpy ( cur -> mac , mac , 6 ) ; cur -> next = NULL ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void xs_poll_check_readable ( struct sock_xprt * transport ) { clear_bit ( XPRT_SOCK_DATA_READY , & transport -> sock_state ) ; if ( ! test_and_set_bit ( XPRT_SOCK_DATA_READY , & transport -> sock_state ) ) { queue_work ( xprtiod_workqueue , & transport -> recv_worker ) ; } } 

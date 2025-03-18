@@ -1,0 +1,1 @@
+int is_dir ( char * filename ) { int isdir = 0 ; int r ; struct stat statbuf ; filename = shell_unquote ( filename ) ; r = stat ( filename , & statbuf ) ; isdir = ( r >= 0 && S_ISDIR ( statbuf . st_mode ) ) ; return ( isdir ) ; } 

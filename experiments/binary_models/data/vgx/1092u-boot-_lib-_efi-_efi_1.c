@@ -1,0 +1,1 @@
+void * efi_malloc ( struct efi_priv * priv , int size , efi_status_t * retp ) { struct efi_boot_services * boot = priv -> boot ; void * buf ; * retp = boot -> allocate_pool ( priv -> image_data_type , size , & buf ) ; return buf ; } 

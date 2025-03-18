@@ -1,0 +1,1 @@
+tlm_drive_t * tlm_drive ( int lib , int drv ) { tlm_drive_t * drive ; tlm_library_t * library = tlm_library ( lib ) ; drive = library -> tl_drive ; while ( drive != NULL ) { if ( drv == drive -> td_number ) { return ( drive ) ; } drive = drive -> td_next ; } return ( NULL ) ; } 

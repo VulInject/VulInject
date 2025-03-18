@@ -1,0 +1,1 @@
+static unsigned int icom_tx_empty ( struct uart_port * port ) { int ret ; cfs_time_t flags ; spin_lock_irqsave ( & port -> lock , flags ) ; if ( cpu_to_le16 ( ICOM_PORT -> statStg -> xmit [ 0 ] . flags ) & SA_FLAGS_READY_TO_XMIT ) { ret = TIOCSER_TEMT ; } else { ret = 0 ; } spin_unlock_irqrestore ( & port -> lock , flags ) ; return ret ; } 

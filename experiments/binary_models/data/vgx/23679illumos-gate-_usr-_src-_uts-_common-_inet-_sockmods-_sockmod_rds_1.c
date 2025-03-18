@@ -1,0 +1,1 @@
+int _fini ( void ) { int ret ; ret = mod_remove ( & modlinkage ) ; if ( rdsv3_transport_handle != NULL ) { ( void ) ldi_close ( rdsv3_transport_handle , FNDELAY , kcred ) ; rdsv3_transport_handle = NULL ; } if ( sockrds_li != NULL ) { ldi_ident_release ( sockrds_li ) ; } return ( 0 ) ; } 

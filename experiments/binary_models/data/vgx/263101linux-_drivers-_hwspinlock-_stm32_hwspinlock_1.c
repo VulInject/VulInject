@@ -1,0 +1,1 @@
+static void stm32_hwspinlock_disable_clk ( void * data ) { struct platform_device * pdev = data ; struct stm32_hwspinlock * hw = platform_get_drvdata ( pdev ) ; struct device * dev = & pdev -> dev ; pm_runtime_get_sync ( dev ) ; pm_runtime_disable ( dev , NULL ) ; pm_runtime_set_suspended ( dev ) ; pm_runtime_put_noidle ( dev ) ; clk_disable_unprepare ( hw -> clk ) ; } 

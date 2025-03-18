@@ -1,0 +1,1 @@
+{ p += 2 ; OTV_OPTIONAL_OFFSET ( DeviceTableOffset ) ; OTV_SIZE_CHECK ( DeviceTableOffset , NULL ) ; if ( DeviceTableOffset ) { otv_Device_validate ( table + DeviceTableOffset , otvalid ) ; } } for ( i = 0 ; i < cnt + 1 ; i ++ ) { } 

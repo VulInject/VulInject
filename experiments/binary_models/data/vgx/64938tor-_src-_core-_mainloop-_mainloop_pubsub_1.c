@@ -1,0 +1,1 @@
+void tor_mainloop_connect_pubsub_events ( void ) { tor_assert ( ! alert_events ) ; const size_t num_channels = get_num_channel_ids ( ) ; alert_events = smartlist_new ( ) ; for ( size_t i = 0 ; i < num_channels ; ++ i ) { smartlist_add ( alert_events , mainloop_event_postloop_new ( flush_channel_event , ( void * ) ( uintptr_t ) ( i ) ) ) ; } } 

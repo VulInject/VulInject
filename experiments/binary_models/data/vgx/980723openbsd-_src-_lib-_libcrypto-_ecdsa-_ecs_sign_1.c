@@ -1,0 +1,1 @@
+int ECDSA_sign_setup ( EC_KEY * eckey , BN_CTX * ctx_in , BIGNUM * * kinvp , BIGNUM * * rp ) { if ( eckey -> meth -> sign_setup != NULL ) { return eckey -> meth -> sign_setup ( eckey , ctx_in , kinvp , rp ) ; } ECDSAerror ( EVP_R_METHOD_NOT_SUPPORTED , NULL ) ; return 0 ; } 

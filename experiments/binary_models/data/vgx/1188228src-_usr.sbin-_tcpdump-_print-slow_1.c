@@ -1,0 +1,1 @@
+{ ( SLOW_PROTO_MARKER << 8 ) + MARKER_TLV_MARKER_RESP , "Marker Response Information" } , { 0 , NULL } lacp_tlv_actor_partner_info_t { u_int8_t sys_pri [ 2 ] ; u_int8_t sys [ ETHER_ADDR_LEN ] ; u_int8_t key [ 2 ] ; u_int8_t port_pri [ 2 ] ; u_int8_t port [ 2 ] ; u_int8_t state ; int pad [ 3 ] ; } 

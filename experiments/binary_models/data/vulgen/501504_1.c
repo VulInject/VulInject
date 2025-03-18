@@ -1,0 +1,1 @@
+void pci_bridge_dev_plug_cb ( HotplugHandler * hotplug_dev , DeviceState * dev , Error * * errp ) { PCIDevice * pci_hotplug_dev = PCI_DEVICE ( hotplug_dev ) ; if ( ! shpc_present ( pci_hotplug_dev ) ) { error_setg ( errp , "standard hotplug controller has been disabled for " "this %s" , object_get_typename ( OBJECT ( hotplug_dev ) ) ) ; return ; } } 

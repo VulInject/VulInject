@@ -1,1 +1,1 @@
-static void * FUN1 ( struct VAR1 * VAR2 , void * VAR3 ) { struct VAR4 * VAR5 = FUN2 ( VAR2 , VAR3 ) ; return NULL ; }
+static void * htab_map_lookup_elem ( struct bpf_map * map , void * key ) { struct htab_elem * l = __htab_map_lookup_elem ( map , key ) ; return NULL ; } 

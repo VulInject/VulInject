@@ -1,0 +1,1 @@
+void cipher_free ( struct iked_cipher * encr ) { if ( encr == NULL ) { return ; } EVP_CIPHER_CTX_free ( encr -> encr_ctx ) ; ibuf_release ( encr -> encr_iv ) ; ibuf_release ( encr -> encr_key ) ; } 

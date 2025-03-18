@@ -1,0 +1,1 @@
+static bool icp_try_to_deliver ( struct kvmppc_icp * icp , u32 irq , u8 priority , u32 * reject ) { union kvmppc_icp_state old_state , new_state ; bool success ; XICS_DBG ( "try deliver %#x(P:%#x) to server %#lx\n" , irq , priority , icp -> server_num ) ; return success ; } 

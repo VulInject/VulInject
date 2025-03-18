@@ -1,0 +1,1 @@
+static int simone_remove ( struct platform_device * pdev ) { struct snd_soc_card * card = platform_get_drvdata ( pdev ) ; snd_soc_unregister_card ( card ) ; platform_device_unregister ( simone_snd_ac97_device , NULL ) ; return 0 ; } static struct platform_driver simone_driver = { . driver = { . name = "simone-audio" } . probe = simone_probe . remove = simone_remove } ; 

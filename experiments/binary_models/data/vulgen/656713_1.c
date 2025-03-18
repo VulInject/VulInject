@@ -1,0 +1,1 @@
+static void ft_free_cmd ( struct ft_cmd * cmd ) { struct fc_frame * fp ; struct ft_sess * sess ; if ( ! cmd ) { return ; } sess = cmd -> sess ; fp = cmd -> req_frame ; fc_frame_free ( fp ) ; target_free_tag ( sess -> se_sess , & cmd -> se_cmd ) ; ft_sess_put ( sess ) ; } 

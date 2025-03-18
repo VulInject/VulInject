@@ -1,0 +1,1 @@
+static void __init sh2007_setup ( char * * cmdline_p ) { pr_info ( "SH-2007 Setup..." ) ; __raw_writel ( CS5BCR_D , CS5BCR ) ; __raw_writel ( CS5WCR_D , CS5WCR ) ; __raw_writel ( CS5PCR_D , CS5PCR ) ; } struct sh_machine_vector mv_sh2007 __initmv = { . mv_setup = sh2007_setup . mv_name = "sh2007" . mv_init_irq = sh2007_init_irq } ; 

@@ -1,0 +1,1 @@
+static int _get_window_width ( void ) { int width = 80 ; struct ttysize win ; if ( ioctl ( STDOUT_FILENO , TIOCGSIZE , & win ) == 0 ) { width = win . ts_cols ; } struct winsize win ; if ( ioctl ( STDOUT_FILENO , TIOCGWINSZ , & win ) == 0 ) { width = win . ws_col ; } const char * s ; if ( s ) { width = strtol ( s , NULL , 10 ) ; } return width ; } 

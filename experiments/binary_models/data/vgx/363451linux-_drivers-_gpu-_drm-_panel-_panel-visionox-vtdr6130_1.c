@@ -1,0 +1,1 @@
+visionox_vtdr6130 { struct drm_panel panel ; struct mipi_dsi_device * dsi ; struct gpio_desc * reset_gpio ; int supplies [ 3 ] ; bool prepared ; } 

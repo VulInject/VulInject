@@ -1,0 +1,1 @@
+static XidBoundsViolation check_mxid_valid_in_rel ( MultiXactId mxid , HeapCheckContext * ctx ) { XidBoundsViolation result ; result = check_mxid_in_range ( mxid , ctx ) ; update_cached_mxid_range ( ctx ) ; return check_mxid_in_range ( mxid , ctx ) ; } 

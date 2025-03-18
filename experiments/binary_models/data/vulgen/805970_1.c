@@ -1,0 +1,1 @@
+static void kfree_at_end ( struct kunit * test , const void * to_free ) { kunit_alloc_resource ( test , NULL , kfree_res_free , GFP_KERNEL , ( void * ) to_free ) ; } 

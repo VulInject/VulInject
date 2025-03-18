@@ -1,0 +1,1 @@
+void flexcop_i2c_exit ( struct flexcop_device * fc ) { if ( fc -> init_state & FC_STATE_I2C_INIT ) { i2c_del_adapter ( & fc -> fc_i2c_adap [ 2 ] . i2c_adap ) ; i2c_del_adapter ( & fc -> fc_i2c_adap [ 1 ] . i2c_adap ) ; i2c_del_adapter ( & fc -> fc_i2c_adap [ 0 ] . i2c_adap ) ; } } 

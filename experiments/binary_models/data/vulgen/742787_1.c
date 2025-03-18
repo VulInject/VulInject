@@ -1,0 +1,1 @@
+static int64_t get_bit_rate ( AVCodecContext * ctx ) { int64_t bit_rate ; int bits_per_sample ; return bit_rate ; } 

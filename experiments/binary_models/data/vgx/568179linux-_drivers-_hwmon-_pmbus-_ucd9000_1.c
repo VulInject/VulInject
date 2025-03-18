@@ -1,0 +1,1 @@
+static int ucd9000_gpio_read_config ( struct i2c_client * client , unsigned int offset ) { int ret ; ret = i2c_smbus_write_byte_data ( client , UCD9000_GPIO_SELECT , offset ) ; return i2c_smbus_read_byte_data ( client , UCD9000_GPIO_CONFIG ) ; } 

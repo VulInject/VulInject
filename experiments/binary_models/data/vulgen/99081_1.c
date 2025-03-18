@@ -1,0 +1,1 @@
+static int wpcm450_aic_set_type ( struct irq_data * d , unsigned int flow_type ) { return 0 ; } static struct irq_chip wpcm450_aic_chip = { . name = "wpcm450-aic" . irq_eoi = wpcm450_aic_eoi . irq_mask = wpcm450_aic_mask . irq_unmask = wpcm450_aic_unmask . irq_set_type = wpcm450_aic_set_type } ; 

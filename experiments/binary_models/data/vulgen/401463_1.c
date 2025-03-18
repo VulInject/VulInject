@@ -1,0 +1,1 @@
+static struct spi_driver adxl313_spi_driver = { . driver = { . name = "adxl313_spi" . of_match_table = adxl313_of_match } . probe = adxl313_spi_probe . id_table = adxl313_spi_id } ; 

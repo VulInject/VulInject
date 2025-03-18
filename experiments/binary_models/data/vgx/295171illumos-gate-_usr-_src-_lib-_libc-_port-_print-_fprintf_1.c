@@ -1,0 +1,1 @@
+int _fprintf_c89 ( FILE * iop , const char * format , ... ) { int count ; va_list ap ; va_start ( ap , format ) ; count = _vfprintf_c89 ( iop , format , ap ) ; va_end ( ap ) ; return ( ( int ) count ) ; } 

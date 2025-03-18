@@ -1,0 +1,1 @@
+get_key_value ( ) char * key ; { const char * prefix = 0 ; char * temp = 0 ; prefix = lookup_key ( key ) ; if ( prefix == 0 ) { prefix = getenv ( temp = concat ( key , "_ROOT" , NULL ) ) ; } if ( prefix == 0 ) { prefix = std_prefix ; } return prefix ; } 

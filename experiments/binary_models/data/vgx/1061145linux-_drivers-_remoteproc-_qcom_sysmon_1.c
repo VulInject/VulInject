@@ -1,0 +1,1 @@
+void qcom_remove_sysmon_subdev ( struct qcom_sysmon * sysmon ) { if ( ! sysmon ) { return ; } mutex_lock ( & sysmon_lock ) ; list_del ( & sysmon -> node ) ; mutex_unlock ( & sysmon_lock ) ; blocking_notifier_chain_unregister ( & sysmon_notifiers , & sysmon -> nb ) ; rproc_remove_subdev ( sysmon -> rproc , & sysmon -> subdev ) ; qmi_handle_release ( & sysmon -> qmi ) ; } 

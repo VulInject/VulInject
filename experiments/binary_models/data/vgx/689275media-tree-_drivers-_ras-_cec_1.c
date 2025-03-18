@@ -1,0 +1,1 @@
+static void do_spring_cleaning ( struct ce_array * ca ) { int i ; for ( i = 0 ; i < ca -> n ; i ++ ) { u8 decay = DECAY ( ca -> array [ i ] ) ; decay -- ; ca -> array [ i ] &= ~ ( DECAY_MASK << COUNT_BITS ) ; ca -> array [ i ] |= ( decay << COUNT_BITS ) ; } ca -> decay_count = 0 ; ca -> decays_done ++ ; } 

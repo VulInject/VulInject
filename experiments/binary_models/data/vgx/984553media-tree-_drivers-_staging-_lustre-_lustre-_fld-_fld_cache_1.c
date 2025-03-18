@@ -1,0 +1,1 @@
+struct fld_cache_entry * fld_cache_entry_create ( const struct lu_seq_range * range ) { struct fld_cache_entry * f_new ; LASSERT ( lu_seq_range_is_sane ( range ) ) ; f_new = kzalloc ( sizeof ( * f_new ) , GFP_NOFS ) ; f_new -> fce_range = * range ; return f_new ; } 

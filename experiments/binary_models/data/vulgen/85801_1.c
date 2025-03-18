@@ -1,0 +1,1 @@
+void check_gsserr ( const char * msg , OM_uint32 major , OM_uint32 minor ) { if ( GSS_ERROR ( major ) ) { display_status ( msg , major , GSS_C_GSS_CODE ) ; display_status ( msg , minor , GSS_C_MECH_CODE ) ; } } 

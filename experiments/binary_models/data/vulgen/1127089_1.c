@@ -1,0 +1,1 @@
+static int Transform ( wc_Md5 * md5 , const byte * data ) { int ret = wolfSSL_CryptHwMutexLock ( ) ; if ( ret == 0 ) { cau_md5_hash_n ( ( byte * ) data , 1 , ( unsigned char * ) md5 -> digest ) ; wolfSSL_CryptHwMutexUnLock ( ) ; } return ret ; } 

@@ -1,0 +1,1 @@
+static ssize_t port_attr_show ( struct kobject * kobj , struct attribute * attr , char * buf ) { struct port_attribute * port_attr = container_of ( attr , port_attribute , attr ) ; struct mlx4_port * p = container_of ( kobj , mlx4_port , kobj ) ; return port_attr -> show ( p , port_attr , buf ) ; } 

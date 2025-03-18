@@ -1,0 +1,1 @@
+static struct zfcp_fsf_req * zfcp_fsf_alloc ( mempool_t * pool ) { struct zfcp_fsf_req * req ; if ( likely ( pool ) ) { req = mempool_alloc ( pool , GFP_ATOMIC ) ; } else { req = kmalloc ( sizeof ( * req ) , GFP_ATOMIC ) ; } if ( unlikely ( ! req ) ) { return NULL ; } req -> pool = pool ; return req ; } 

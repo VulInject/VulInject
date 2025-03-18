@@ -1,0 +1,1 @@
+int ctclose ( f ) open_file * f ; { free ( f -> f_devdata , sizeof ( hppa_dev ) ) ; return 0 ; } 

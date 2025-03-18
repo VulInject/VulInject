@@ -1,0 +1,1 @@
+static void mlxsw_afa_fwd_entry_destroy ( struct mlxsw_afa * mlxsw_afa , struct mlxsw_afa_fwd_entry * fwd_entry ) { mlxsw_afa -> ops -> kvdl_fwd_entry_del ( mlxsw_afa -> ops_priv , fwd_entry -> kvdl_index ) ; kfree ( fwd_entry ) ; } 

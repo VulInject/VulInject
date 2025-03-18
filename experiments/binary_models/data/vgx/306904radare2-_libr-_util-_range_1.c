@@ -1,0 +1,1 @@
+R_API int r_range_get_data ( RRange * rgs , ut64 addr , ut8 * buf , int len ) { RRangeItem * r = r_range_item_get ( rgs , addr ) ; if ( r -> datalen < len ) { len = r -> datalen ; } memcpy ( buf , r -> data , len ) ; return len ; } 

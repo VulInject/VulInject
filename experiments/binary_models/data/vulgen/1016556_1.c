@@ -1,0 +1,1 @@
+static struct file_system_type * file_systems ; struct file_system_type * get_filesystem ( struct file_system_type * fs ) { __module_get ( fs -> owner ) ; return fs ; } 

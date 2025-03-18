@@ -1,0 +1,1 @@
+static void ucb1x00_ts_remove ( struct ucb1x00_dev * dev ) { struct ucb1x00_ts * ts = dev -> priv ; input_unregister_device ( ts -> idev ) ; } static struct ucb1x00_driver ucb1x00_ts_driver = { . add = ucb1x00_ts_add . remove = ucb1x00_ts_remove } ; 

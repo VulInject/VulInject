@@ -1,0 +1,1 @@
+gimp_uncancelable_waitable_new ( ) { GimpUncancelableWaitable * uncancelable_waitable ; g_return_val_if_fail ( GIMP_IS_WAITABLE ( waitable ) , NULL ) ; uncancelable_waitable -> waitable = g_object_ref ( waitable ) ; return GIMP_WAITABLE ( uncancelable_waitable ) ; } 

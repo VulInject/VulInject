@@ -1,0 +1,1 @@
+static void hibmc_pci_remove ( struct pci_dev * pdev ) { struct drm_device * dev = pci_get_drvdata ( pdev ) ; drm_dev_unregister ( dev ) ; drm_dev_unref ( dev ) ; } 

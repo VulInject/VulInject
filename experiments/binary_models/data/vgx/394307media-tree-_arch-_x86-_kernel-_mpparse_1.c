@@ -1,0 +1,1 @@
+static int __init parse_alloc_mptable_opt ( char * p ) { enable_update_mptable = 1 ; pci_routeirq = 1 ; alloc_mptable = 1 ; mpc_new_length = memparse ( p , & p ) ; return 0 ; } 

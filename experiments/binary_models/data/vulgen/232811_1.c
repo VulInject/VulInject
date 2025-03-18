@@ -1,0 +1,1 @@
+cl_git_pass ( git_repository_open ( & repo , "testrepo.git" ) ) ; 

@@ -1,0 +1,1 @@
+static ssize_t dasd_ff_show ( struct device * dev , struct device_attribute * attr , char * buf ) { struct dasd_devmap * devmap ; int ff_flag ; if ( ! IS_ERR ( devmap ) ) { ff_flag = ( devmap -> features & DASD_FEATURE_FAILFAST ) != 0 ; } else { ff_flag = ( DASD_FEATURE_DEFAULT & DASD_FEATURE_FAILFAST ) != 0 ; } return snprintf ( buf , PAGE_SIZE , ff_flag ?"1\n" : "0\n" ) ; } 

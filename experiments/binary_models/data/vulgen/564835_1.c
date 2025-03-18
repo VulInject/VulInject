@@ -1,0 +1,1 @@
+PHP_FUNCTION ( ) { MSG_FORMAT_METHOD_INIT_VARS ; MSG_FORMAT_METHOD_FETCH_OBJECT ; if ( mfo -> mf_data . orig_format ) { RETURN_STRINGL ( mfo -> mf_data . orig_format , mfo -> mf_data . orig_format_len ) ; } RETURN_FALSE ; } 

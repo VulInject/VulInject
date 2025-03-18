@@ -1,0 +1,1 @@
+void group_free ( struct group * group ) { if ( group == NULL ) { return ; } if ( group -> dh != NULL ) { DH_free ( group -> dh ) ; } if ( group -> ec != NULL ) { EC_KEY_free ( group -> ec ) ; } group -> spec = NULL ; } 

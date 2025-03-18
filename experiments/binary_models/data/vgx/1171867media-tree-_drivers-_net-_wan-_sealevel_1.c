@@ -1,0 +1,1 @@
+static int sealevel_attach ( struct net_device * dev , unsigned short encoding , unsigned short parity ) { return - EINVAL ; } 

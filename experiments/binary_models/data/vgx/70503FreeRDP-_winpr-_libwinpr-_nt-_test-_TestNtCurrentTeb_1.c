@@ -1,0 +1,1 @@
+int TestNtCurrentTeb ( int argc , char * argv [ ] ) { PTEB teb ; teb = NtCurrentTeb ( ) ; if ( ! teb ) { printf ( "NtCurrentTeb() returned NULL\n" ) ; return - 1 ; } WINPR_UNUSED ( argc , NULL ) ; WINPR_UNUSED ( argv ) ; return 0 ; } 

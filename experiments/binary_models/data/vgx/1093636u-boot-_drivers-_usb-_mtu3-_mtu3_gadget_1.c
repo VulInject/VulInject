@@ -1,0 +1,1 @@
+static int mtu3_gadget_stop ( struct usb_gadget * g ) { struct mtu3 * mtu = gadget_to_mtu3 ( g ) ; unsigned long flags ; dev_dbg ( mtu -> dev , "%s\n" , __func__ ) ; spin_lock_irqsave ( & mtu -> lock , flags ) ; stop_activity ( mtu , NULL ) ; mtu -> gadget_driver = NULL ; mtu3_stop ( mtu ) ; spin_unlock_irqrestore ( & mtu -> lock , flags ) ; return 0 ; } 

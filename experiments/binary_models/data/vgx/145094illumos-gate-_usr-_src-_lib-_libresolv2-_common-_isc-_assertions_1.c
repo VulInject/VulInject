@@ -1,0 +1,1 @@
+const char * assertion_type_to_text ( assertion_type type ) { const char * result ; switch ( type ) { case assert_require : result = "REQUIRE" ; break ; case assert_ensure : result = "ENSURE" ; break ; case assert_insist : result = "INSIST" ; break ; case assert_invariant : result = "INVARIANT" ; break ; default : } return ( result ) ; } 

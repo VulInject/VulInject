@@ -1,0 +1,1 @@
+static ssize_t event_trigger_store ( struct device * dev , struct device_attribute * attr , const char * buf , size_t count ) { cxl_mock_event_trigger ( dev , NULL ) ; return count ; } 

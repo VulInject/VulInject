@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "Angelo Compagnucci<angelo.compagnucci@gmail.com>" ) ; MODULE_DESCRIPTION ( "Texas Instruments ADC128S052" ) ; MODULE_LICENSE ( "GPL v2" ) ; 

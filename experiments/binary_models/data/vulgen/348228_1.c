@@ -1,0 +1,1 @@
+idio_24_gpio_reg { u8 out8_15 ; u8 out16_23 ; u8 ttl_out0_7 ; u8 in0_7 ; u8 in8_15 ; u8 in16_23 ; u8 ttl_in0_7 ; u8 cos0_7 ; u8 cos8_15 ; u8 cos16_23 ; u8 cos_ttl0_7 ; u8 ctl ; u8 reserved ; u8 cos_enable ; u8 soft_reset ; } 

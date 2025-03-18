@@ -1,0 +1,1 @@
+unsigned int atari_register_vme_int ( void ) { int i ; for ( i = 0 ; i < 32 ; i ++ ) { if ( ( free_vme_vec_bitmap & ( 1 << i ) ) == 0 ) { break ; } } free_vme_vec_bitmap |= 1 << i ; return VME_SOURCE_BASE + i ; } 

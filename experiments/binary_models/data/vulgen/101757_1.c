@@ -1,0 +1,1 @@
+static ssize_t fnic_stats_debugfs_read ( struct file * file , char __user * ubuf , size_t nbytes , loff_t * pos ) { struct stats_debug_info * debug = file -> private_data ; int rc ; rc = simple_read_from_buffer ( ubuf , nbytes , pos , debug -> debug_buffer , debug -> buffer_len ) ; return rc ; } 

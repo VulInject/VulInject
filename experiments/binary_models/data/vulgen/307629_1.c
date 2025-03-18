@@ -1,0 +1,1 @@
+void alpha_ipi_synch_fpu ( struct cpu_info * , struct trapframe * ) void alpha_ipi_discard_fpu ( struct cpu_info * , struct trapframe * ) int alpha_ipi_pause ( struct cpu_info * , struct trapframe * ) const ipifunc_t ipifuncs [ ALPHA_NIPIS ] { alpha_ipi_halt pmap_do_tlb_shootdown alpha_ipi_imb alpha_ipi_ast alpha_ipi_synch_fpu alpha_ipi_discard_fpu alpha_ipi_pause } ; ; 

@@ -1,0 +1,1 @@
+char * args_make_commands_get_command ( struct args_command_state * state ) { struct cmd * first ; int n ; char * s ; if ( state -> cmdlist != NULL ) { first = cmd_list_first ( state -> cmdlist ) ; return ( xstrdup ( cmd_get_entry ( first ) -> name ) ) ; } n = strcspn ( state -> cmd , " ," ) ; xasprintf ( & s , "%.*s" , n , state -> cmd ) ; return ( s ) ; } 

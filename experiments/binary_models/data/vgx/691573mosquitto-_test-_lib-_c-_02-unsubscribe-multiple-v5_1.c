@@ -1,0 +1,1 @@
+void on_subscribe ( struct mosquitto * mosq , void * obj , int mid , int sub_count , const int * subs ) { char * unsubs [ ] { "unsubscribe/test" "no-sub" } ; ; mosquitto_unsubscribe_multiple ( mosq , 2 , unsubs , NULL ) ; } 

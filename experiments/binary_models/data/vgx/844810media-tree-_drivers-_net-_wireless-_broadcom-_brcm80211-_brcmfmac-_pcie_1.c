@@ -1,0 +1,1 @@
+static int brcmf_pcie_ring_mb_ring_bell ( void * ctx ) { struct brcmf_pcie_ringbuf * ring = ( brcmf_pcie_ringbuf * ) ctx ; struct brcmf_pciedev_info * devinfo = ring -> devinfo ; brcmf_dbg ( PCIE , "RING !\n" ) ; brcmf_pcie_write_reg32 ( devinfo , BRCMF_PCIE_PCIE2REG_H2D_MAILBOX , 1 ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void serializer_drain_completely ( serializer_t * ) static void serializer_exec ( serializer_t * s , srproc_t proc , mblk_t * mp , void * arg ) { ASSERT ( MUTEX_NOT_HELD ( & s -> ser_lock ) ) ; ASSERT ( s -> ser_owner == curthread ) ; ASSERT ( proc != NULL ) ; ASSERT ( mp != NULL ) ; s -> ser_curr = mp ; s -> ser_arg = arg ; proc ( mp , arg ) ; } 

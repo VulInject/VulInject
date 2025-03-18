@@ -1,0 +1,1 @@
+static char * mschap2_peer_challenge ; static struct option chapms_option_list [ ] { { "ms-lanman" o_bool & ms_lanman "Use LanMan passwd when using MS-CHAP" 1 } { "mschap-challenge" o_string & mschap_challenge "specify CHAP challenge" } { "mschap2-peer-challenge" o_string & mschap2_peer_challenge "specify CHAP peer challenge" } { NULL } } ; ; 

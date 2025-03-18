@@ -1,0 +1,1 @@
+void test_read_evbuffer_too_long ( ) { ns = "999999999999999999999:...," ; ev_init ( read_evb_too_long_cb , NULL ) ; send ( fd [ writer ] , ns , strlen ( ns ) , 0 ) ; event_base_dispatch ( evbase ) ; } 

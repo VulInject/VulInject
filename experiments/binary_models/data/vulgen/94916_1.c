@@ -1,0 +1,1 @@
+static inline void ringbuf_seek ( VMBusRingBufCommon * ringbuf , uint32_t new_off ) { gpadl_iter_seek ( & ringbuf -> iter , 0 ) ; } 

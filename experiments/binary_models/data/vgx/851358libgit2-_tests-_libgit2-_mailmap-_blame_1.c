@@ -1,0 +1,1 @@
+void test_mailmap_blame__initialize ( void ) { g_repo = NULL ; } 

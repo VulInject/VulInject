@@ -1,0 +1,1 @@
+static struct cphy * my3126_phy_create ( struct net_device * dev , int phy_addr , const struct mdio_ops * mdio_ops ) { struct cphy * cphy = kzalloc ( sizeof ( * cphy ) , GFP_KERNEL ) ; if ( ! cphy ) { return NULL ; } cphy_init ( cphy , dev , phy_addr , & my3126_ops , mdio_ops ) ; cphy -> bmsr = 0 ; return cphy ; } 

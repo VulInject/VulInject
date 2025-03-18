@@ -1,0 +1,1 @@
+static void vf610_nfc_read_buf ( struct mtd_info * mtd , u_char * buf , int len ) { struct vf610_nfc * nfc = mtd_to_nfc ( mtd ) ; uint c = nfc -> buf_offset ; if ( nfc -> alt_buf ) { return ; } nfc -> buf_offset += len ; } 

@@ -1,0 +1,1 @@
+ZIP_EXTERN zip_source_t * zip_source_function ( zip_t * za , zip_source_callback zcb , void * ud ) { return zip_source_function_create ( zcb , ud , & za -> error ) ; } 

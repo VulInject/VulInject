@@ -1,0 +1,1 @@
+{ NORMAL_SIGTRAMP = 1 , RT_SIGTRAMP = 2 } 

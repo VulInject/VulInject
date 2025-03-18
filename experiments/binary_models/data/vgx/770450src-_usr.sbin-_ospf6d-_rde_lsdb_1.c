@@ -1,0 +1,1 @@
+void vertex_free ( struct vertex * v ) { RB_REMOVE ( lsa_tree , v -> lsa_tree , v ) ; ( void ) evtimer_del ( & v -> ev ) ; vertex_nexthop_clear ( v ) ; free ( v -> lsa ) ; } 

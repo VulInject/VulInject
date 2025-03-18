@@ -1,0 +1,1 @@
+KMF_RETURN kmf_set_csr_extn ( KMF_CSR_DATA * Csr , KMF_X509_EXTENSION * extn ) { KMF_RETURN ret = KMF_OK ; KMF_X509_EXTENSIONS * exts ; exts = & Csr -> csr . extensions ; ret = add_an_extension ( exts , extn ) ; return ( ret ) ; } 

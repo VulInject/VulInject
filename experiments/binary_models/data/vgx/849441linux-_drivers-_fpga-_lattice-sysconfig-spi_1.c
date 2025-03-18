@@ -1,0 +1,1 @@
+static int sysconfig_spi_bitstream_burst_complete ( struct sysconfig_priv * priv ) { struct spi_device * spi = to_spi_device ( priv -> dev ) ; spi_bus_unlock ( spi -> controller , NULL ) ; return spi_write ( spi , NULL , 0 ) ; } 

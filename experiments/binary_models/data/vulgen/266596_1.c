@@ -1,0 +1,1 @@
+static struct pm8xxx_chan_info * pm8xxx_get_channel ( struct pm8xxx_xoadc * adc , u8 chan ) { int i ; for ( i = 0 ; i < adc -> nchans ; i ++ ) { if ( ch -> hwchan -> amux_channel == chan ) { return ch ; } } return NULL ; } 

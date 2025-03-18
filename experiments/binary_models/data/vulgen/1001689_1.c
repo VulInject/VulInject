@@ -1,0 +1,1 @@
+static void fd_close ( struct stream * stream ) { struct stream_fd * s = stream_fd_cast ( stream ) ; closesocket ( s -> fd ) ; } 

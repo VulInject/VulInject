@@ -1,0 +1,1 @@
+static int hpfs_dir_release ( struct inode * inode , struct file * filp ) { hpfs_lock ( inode -> i_sb ) ; hpfs_del_pos ( inode , & filp -> f_pos ) ; return 0 ; } 

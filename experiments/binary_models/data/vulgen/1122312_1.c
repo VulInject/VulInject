@@ -1,0 +1,1 @@
+uint64_lo ( ) { cairo_uint64_t s ; s . lo = i . lo ; return s ; } 

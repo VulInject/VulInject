@@ -1,0 +1,1 @@
+static void * __init alloc_vm_stack ( int ) { return __vmalloc_node ( THREAD_SIZE , THREAD_ALIGN , THREADINFO_GFP , NUMA_NO_NODE , ( void * ) _RET_IP_ ) ; } 

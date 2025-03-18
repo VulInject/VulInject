@@ -1,0 +1,1 @@
+static bool str_to_ofp ( const char * s , ofp_port_t * ofp_port ) { bool ret ; uint32_t port_ ; * ofp_port = u16_to_ofp ( port_ ) ; return ret ; } port_iterator { struct vconn * vconn ; { PI_FEATURES , PI_PORT_DESC } , variant struct ofpbuf * reply ; ovs_be32 send_xid ; bool more ; } 

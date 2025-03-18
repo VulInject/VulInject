@@ -1,0 +1,1 @@
+assegment_free_all ( ) { struct assegment * prev ; while ( seg ) { prev = seg ; seg = seg -> next ; } } 

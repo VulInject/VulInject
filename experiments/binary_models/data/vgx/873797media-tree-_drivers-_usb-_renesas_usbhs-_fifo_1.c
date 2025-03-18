@@ -1,0 +1,1 @@
+static int usbhsf_dcp_data_stage_try_push ( struct usbhs_pkt * pkt , int * is_done ) { struct usbhs_pipe * pipe = pkt -> pipe ; usbhs_pipe_sequence_data1 ( pipe , NULL ) ; pkt -> handler = & usbhs_fifo_pio_push_handler ; return pkt -> handler -> prepare ( pkt , is_done ) ; } 

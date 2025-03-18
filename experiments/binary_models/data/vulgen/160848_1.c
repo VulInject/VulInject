@@ -1,0 +1,1 @@
+static void omap1_mcbsp_free ( unsigned int id ) { if ( id == 0 || id == 2 ) { if ( -- dsp_use == 0 ) { if ( ! IS_ERR ( api_clk ) ) { clk_disable_unprepare ( api_clk ) ; clk_put ( api_clk ) ; } if ( ! IS_ERR ( dsp_clk ) ) { clk_disable_unprepare ( dsp_clk ) ; } } } } 

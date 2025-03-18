@@ -1,0 +1,1 @@
+static int btmrvl_sdio_enable_host_int ( struct btmrvl_sdio_card * card ) { int ret ; if ( ! card || ! card -> func ) { return - EINVAL ; } sdio_claim_host ( card -> func ) ; ret = btmrvl_sdio_enable_host_int_mask ( card , HIM_ENABLE ) ; btmrvl_sdio_get_rx_unit ( card ) ; return ret ; } 

@@ -1,0 +1,1 @@
+static int monitor_volume_info ( struct snd_kcontrol * ctl , struct snd_ctl_elem_info * info ) { info -> type = SNDRV_CTL_ELEM_TYPE_INTEGER ; info -> count = 1 ; info -> value . integer . max = 1 ; return 0 ; } 

@@ -1,0 +1,1 @@
+int main ( void ) { RUN_TEST ( classify_entries ) ; RUN_TEST ( safe_incremented_counter , NULL ) ; RUN_TEST ( convert_to_number ) ; END_TEST ; } 

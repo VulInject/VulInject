@@ -1,0 +1,1 @@
+_pixman_implementation_create ( , ) { pixman_implementation_t * imp ; assert ( fast_paths ) ; if ( ( imp = malloc ( sizeof ( pixman_implementation_t ) ) ) ) { pixman_implementation_t * d ; imp -> fallback = fallback ; imp -> fast_paths = fast_paths ; for ( d = imp ; d != NULL ; d = d -> fallback ) { d -> toplevel = imp ; } } return imp ; } 

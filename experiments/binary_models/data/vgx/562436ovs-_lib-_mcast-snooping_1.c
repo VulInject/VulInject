@@ -1,0 +1,1 @@
+void mcast_snooping_unref ( struct mcast_snooping * ms ) { if ( ! mcast_snooping_enabled ( ms ) ) { return ; } if ( ovs_refcount_unref_relaxed ( & ms -> ref_cnt ) == 1 ) { mcast_snooping_flush ( ms ) ; hmap_destroy ( & ms -> table ) ; ovs_rwlock_destroy ( & ms -> rwlock ) ; } } 

@@ -1,0 +1,1 @@
+static inline void __smp_call_function_single_interrupt ( void ) { generic_smp_call_function_single_interrupt ( ) ; inc_irq_stat ( irq_call_count , NULL ) ; } 

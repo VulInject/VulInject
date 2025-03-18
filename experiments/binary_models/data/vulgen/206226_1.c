@@ -1,0 +1,1 @@
+void freeinodebuf ( void ) { free ( inodebuf ) ; } 

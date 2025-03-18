@@ -1,0 +1,1 @@
+static struct dpp * dcn30_dpp_create ( struct dc_context * ctx , uint32_t inst ) { struct dcn3_dpp * dpp = kzalloc ( sizeof ( dcn3_dpp ) , GFP_KERNEL ) ; if ( ! dpp ) { return NULL ; } if ( dpp3_construct ( dpp , ctx , inst , & dpp_regs [ inst ] , & tf_shift , & tf_mask ) ) { return & dpp -> base ; } BREAK_TO_DEBUGGER ( ) ; return NULL ; } 

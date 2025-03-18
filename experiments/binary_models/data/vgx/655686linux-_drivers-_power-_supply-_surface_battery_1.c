@@ -1,0 +1,1 @@
+static int spwr_battery_prop_capacity ( struct spwr_battery_device * bat ) { u32 full_cap = sprw_battery_get_full_cap_safe ( bat ) ; u32 remaining_cap = get_unaligned_le32 ( & bat -> bst . remaining_cap ) ; lockdep_assert_held ( & bat -> lock ) ; if ( remaining_cap == SPWR_BATTERY_VALUE_UNKNOWN ) { return - ENODATA ; } return remaining_cap * 100 / full_cap ; } 

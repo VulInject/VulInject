@@ -1,0 +1,1 @@
+static int isp1760_plat_remove ( struct udevice * dev ) { struct isp1760_device * isp = dev_get_plat ( dev ) ; isp1760_deinit_kmem_cache ( ) ; isp1760_unregister ( isp , NULL ) ; return 0 ; } static const struct udevice_id isp1760_ids [ ] { { . compatible = "nxp,usb-isp1760" } { . compatible = "nxp,usb-isp1761" } { . compatible = "nxp,usb-isp1763" } { } } ; ; 

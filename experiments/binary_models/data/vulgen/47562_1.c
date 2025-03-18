@@ -1,0 +1,1 @@
+static int mainloop_cb ( void * data ) { struct scriptlive * ss = ( scriptlive * ) data ; int rc = 0 ; if ( ss -> step && ! replay_step_is_empty ( ss -> step ) ) { rc = replay_emit_step_data ( ss -> setup , ss -> step , fd ) ; fdatasync ( fd ) ; if ( rc ) { return rc ; } } return process_next_step ( ss ) ; } 

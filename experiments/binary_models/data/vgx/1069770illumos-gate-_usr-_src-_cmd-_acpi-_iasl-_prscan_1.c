@@ -1,0 +1,1 @@
+PrMatchDirective ( ) { int i ; for ( i = 0 ; Gbl_DirectiveInfo [ i ] . Name ; i ++ ) { if ( ! strcmp ( Gbl_DirectiveInfo [ i ] . Name , Directive ) ) { return ( i ) ; } } return ( ASL_DIRECTIVE_NOT_FOUND ) ; } 

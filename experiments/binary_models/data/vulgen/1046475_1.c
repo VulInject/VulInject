@@ -1,0 +1,1 @@
+static void xfrm4_mode_tunnel_xmit ( struct xfrm_state * x , struct sk_buff * skb ) { struct xfrm_offload * xo = xfrm_offload ( skb ) ; skb_reset_mac_len ( skb ) ; pskb_pull ( skb , skb -> mac_len + x -> props . header_len ) ; } 

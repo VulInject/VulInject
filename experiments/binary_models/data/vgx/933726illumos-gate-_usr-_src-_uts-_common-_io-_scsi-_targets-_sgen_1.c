@@ -1,0 +1,1 @@
+int _fini ( void ) { int err ; sgen_log ( NULL , SGEN_DIAG2 , "in sgen_fini()" ) ; if ( ( err = mod_remove ( & modlinkage ) ) != 0 ) { done } ddi_soft_state_fini ( & sgen_soft_state ) ; sgen_cleanup_binddb ( ) ; done sgen_log ( SGEN_DIAG2 , "%s sgen_fini()" , err ?"failed" : "done" ) ; return ( err ) ; } 

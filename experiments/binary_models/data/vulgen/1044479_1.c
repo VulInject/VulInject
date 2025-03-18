@@ -1,0 +1,1 @@
+static void pca_isa_writebyte ( void * pd , int reg , int val ) { static char * names [ ] { "T/O" "DAT" "ADR" "CON" } ; ; printk ( KERN_DEBUG "*** write %s at %#lx<= %#04x\n" , names [ reg ] , base + reg , val ) ; } 

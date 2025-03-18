@@ -1,0 +1,1 @@
+static int __init init_timer_list_procfs ( void ) { struct proc_dir_entry * pe ; pe = proc_create_seq_private ( "timer_list" , 0400 , NULL , & timer_list_sops , sizeof ( timer_list_iter ) , NULL ) ; return 0 ; } 

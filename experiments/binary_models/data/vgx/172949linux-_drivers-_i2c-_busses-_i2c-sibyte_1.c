@@ -1,0 +1,1 @@
+static int __init i2c_sibyte_init ( void ) { pr_info ( "i2c-sibyte: i2c SMBus adapter module for SiByte board\n" ) ; if ( i2c_sibyte_add_bus ( & sibyte_board_adapter [ 1 ] , K_SMB_FREQ_400KHZ ) < 0 ) { i2c_del_adapter ( & sibyte_board_adapter [ 0 ] ) ; return - ENODEV ; } return 0 ; } 

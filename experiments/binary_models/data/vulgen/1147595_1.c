@@ -1,0 +1,1 @@
+static void mmhub_v3_0_1_setup_vm_pt_regs ( struct amdgpu_device * adev , uint32_t vmid , uint64_t page_table_base ) { struct amdgpu_vmhub * hub = & adev -> vmhub [ AMDGPU_MMHUB_0 ] ; WREG32_SOC15_OFFSET ( MMHUB , 0 , regMMVM_CONTEXT0_PAGE_TABLE_BASE_ADDR_HI32 , hub -> ctx_addr_distance * vmid , upper_32_bits ( page_table_base ) ) ; } 

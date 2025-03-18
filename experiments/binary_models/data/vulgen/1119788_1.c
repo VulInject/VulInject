@@ -1,0 +1,1 @@
+static void sh_vou_reg_a_write ( struct sh_vou_device * vou_dev , unsigned int reg , u32 value ) { } 

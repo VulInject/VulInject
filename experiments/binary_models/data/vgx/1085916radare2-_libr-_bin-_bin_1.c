@@ -1,0 +1,1 @@
+R_API void r_bin_import_free ( RBinImport * imp ) { if ( imp ) { free ( imp -> name ) ; free ( imp -> libname ) ; free ( imp -> descriptor ) ; free ( imp ) ; } } 

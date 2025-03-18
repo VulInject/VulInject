@@ -1,0 +1,1 @@
+uint32_t FMC_GetECC ( uint32_t FMC_Bank ) { if ( FMC_Bank == FMC_Bank2_NAND ) { eccval = FMC_Bank2 -> ECCR2 ; } else { eccval = FMC_Bank3 -> ECCR3 ; } return ( eccval ) ; } 

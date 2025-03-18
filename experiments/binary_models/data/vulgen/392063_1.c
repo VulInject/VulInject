@@ -1,0 +1,1 @@
+static const char * check_assert_ne ( void ) { return NULL ; } 

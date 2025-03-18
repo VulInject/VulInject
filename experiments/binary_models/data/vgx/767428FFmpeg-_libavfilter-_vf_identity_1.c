@@ -1,0 +1,1 @@
+static unsigned identity_line_8bit ( const uint8_t * main_line , const uint8_t * ref_line , int outw ) { int score = 0 ; for ( int j = 0 ; j < outw ; j ++ ) { score += main_line [ j ] == ref_line [ j ] ; } return score ; } 

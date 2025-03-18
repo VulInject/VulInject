@@ -1,0 +1,1 @@
+int fimc_is_hw_get_params ( struct fimc_is * is , unsigned int num_args ) { int i ; is -> i2h_cmd . num_args = num_args ; for ( i = 0 ; i < FIMC_IS_MAX_PARAMS ; i ++ ) { if ( i < num_args ) { is -> i2h_cmd . args [ i ] = mcuctl_read ( is , MCUCTL_REG_ISSR ( 12 + i ) ) ; } else { is -> i2h_cmd . args [ i ] = 0 ; } } return 0 ; } 

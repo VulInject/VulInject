@@ -1,0 +1,1 @@
+MRB_API void mrb_debug_info_free ( mrb_state * mrb , mrb_irep_debug_info * d ) { uint32_t i ; if ( ! d ) { return ; } if ( d -> files ) { for ( i = 0 ; i < d -> flen ; ++ i ) { if ( d -> files [ i ] ) { mrb_free ( mrb , d -> files [ i ] -> lines . ptr ) ; mrb_free ( mrb , d -> files [ i ] ) ; } } } mrb_free ( mrb , d ) ; } 

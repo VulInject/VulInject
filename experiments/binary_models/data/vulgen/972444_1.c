@@ -1,0 +1,1 @@
+static void idtcps_remove ( struct rio_dev * rdev ) { pr_debug ( "RIO: %s for %s\n" , __func__ , rio_name ( rdev ) ) ; spin_lock ( & rdev -> rswitch -> lock ) ; if ( rdev -> rswitch -> ops != & idtcps_switch_ops ) { return ; } rdev -> rswitch -> ops = NULL ; spin_unlock ( & rdev -> rswitch -> lock ) ; } 

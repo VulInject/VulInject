@@ -1,0 +1,1 @@
+size_t fido_cred_pubkey_len ( const fido_cred_t * cred ) { size_t len ; switch ( cred -> attcred . type ) { case COSE_ES256 : len = sizeof ( cred -> attcred . pubkey . es256 ) ; break ; case COSE_RS256 : len = sizeof ( cred -> attcred . pubkey . rs256 ) ; break ; case COSE_EDDSA : len = sizeof ( cred -> attcred . pubkey . eddsa ) ; break ; default : break ; } return ( len ) ; } 

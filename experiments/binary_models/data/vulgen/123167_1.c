@@ -1,0 +1,1 @@
+static void recover_arm ( struct av7110 * av7110 ) { dprintk ( 4 , "%p\n" , av7110 ) ; av7110_bootarm ( av7110 ) ; msleep ( 100 ) ; init_av7110_av ( av7110 ) ; if ( av7110 -> recover ) { av7110 -> recover ( av7110 ) ; } av7110_check_ir_config ( av7110 , true ) ; } 

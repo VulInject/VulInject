@@ -1,0 +1,1 @@
+int ftrace_create_function_files ( struct trace_array * tr , struct dentry * parent ) { int ret ; if ( tr -> flags & TRACE_ARRAY_FL_GLOBAL ) { return 0 ; } ret = allocate_ftrace_ops ( tr ) ; if ( ret ) { return ret ; } return 0 ; } 

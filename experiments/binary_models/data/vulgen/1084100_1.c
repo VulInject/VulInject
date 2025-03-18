@@ -1,0 +1,1 @@
+virConsoleBuffer { size_t length ; size_t offset ; char * data ; } 

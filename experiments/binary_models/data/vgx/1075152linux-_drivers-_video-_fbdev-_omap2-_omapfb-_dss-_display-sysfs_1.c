@@ -1,0 +1,1 @@
+static ssize_t display_rotate_show ( struct omap_dss_device * dssdev , char * buf ) { int rotate ; rotate = dssdev -> driver -> get_rotate ( dssdev ) ; return sysfs_emit ( buf , "%u\n" , rotate ) ; } 

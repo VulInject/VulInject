@@ -1,0 +1,1 @@
+static int init_test_info ( struct test_info * ti ) { ti -> machine = machine__new_host ( ) ; if ( ! ti -> machine ) { pr_debug ( "machine__new_host() failed!\n" ) ; return TEST_FAIL ; } if ( ! ti -> thread ) { pr_debug ( "machine__findnew_thread() failed!\n" ) ; return TEST_FAIL ; } return TEST_OK ; } 

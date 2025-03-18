@@ -1,0 +1,1 @@
+gimp_gradients_add_gradient ( , , ) { GimpGradient * gradient ; gradient = GIMP_GRADIENT ( gimp_gradient_new ( gimp_get_user_context ( gimp ) , name ) ) ; gimp_data_make_internal ( GIMP_DATA ( gradient ) , id ) ; g_object_unref ( gradient ) ; g_object_set_data ( G_OBJECT ( gimp ) , id , gradient ) ; return gradient ; } 

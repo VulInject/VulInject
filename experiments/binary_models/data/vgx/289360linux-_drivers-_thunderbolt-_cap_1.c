@@ -1,0 +1,1 @@
+int tb_port_find_cap ( struct tb_port * port , enum tb_port_cap cap ) { int ret ; ret = tb_port_enable_tmu ( port , true ) ; ret = __tb_port_find_cap ( port , cap ) ; tb_port_dummy_read ( port ) ; tb_port_enable_tmu ( port , false ) ; return ret ; } 

@@ -1,0 +1,1 @@
+{ void * ptr = NULL ; mutt_mem_free ( & ptr ) ; } 

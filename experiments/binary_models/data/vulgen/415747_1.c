@@ -1,0 +1,1 @@
+gimp_template_get_color_profile ( ) { GimpTemplatePrivate * private ; g_return_val_if_fail ( , ) private = GET_PRIVATE ( ) ; return NULL ; } 

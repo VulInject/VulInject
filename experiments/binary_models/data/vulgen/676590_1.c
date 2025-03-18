@@ -1,0 +1,1 @@
+static ssize_t description_show ( struct most_inst_obj * instance_obj , struct most_inst_attribute * attr , char * buf ) { return snprintf ( buf , PAGE_SIZE , instance_obj -> iface -> description ) ; } 

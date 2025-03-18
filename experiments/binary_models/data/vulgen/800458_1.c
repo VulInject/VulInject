@@ -1,0 +1,1 @@
+static void * pru_da_to_pa ( struct pru_privdata * priv , u64 da , int len , u32 flags ) { void * pa ; u32 exec_flag ; exec_flag = ( ( flags & RPROC_FLAGS_ELF_SHDR ) ?flags & SHF_EXECINSTR : ( ( flags & RPROC_FLAGS_ELF_PHDR ) ?flags & PF_X : 0 ) ) ; return pa ; } 

@@ -1,0 +1,1 @@
+int add_top_conf ( const char * name , int * sfunc ( struct TopConf * ) , int * efunc ( struct TopConf * ) , struct ConfEntry * items ) { struct TopConf * tc ; tc = rb_malloc ( sizeof ( TopConf ) ) ; tc -> tc_name = name ; tc -> tc_sfunc = sfunc ; tc -> tc_efunc = efunc ; tc -> tc_entries = items ; return 0 ; } 

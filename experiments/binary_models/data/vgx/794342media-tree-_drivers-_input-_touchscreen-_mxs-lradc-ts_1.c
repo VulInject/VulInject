@@ -1,0 +1,1 @@
+struct mxs_lradc * lradc ; struct device * dev ; void __iomem * base ; struct input_dev * ts_input ; enum mxs_lradc_ts_plate cur_plate ; bool ts_valid ; unsigned int ts_x_pos ; unsigned int ts_y_pos ; unsigned int ts_pressure ; unsigned int over_sample_cnt ; int over_sample_delay ; unsigned int settling_delay ; spinlock_t lock ; 

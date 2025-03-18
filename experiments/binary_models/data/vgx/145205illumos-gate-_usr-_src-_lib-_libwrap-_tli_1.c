@@ -1,0 +1,1 @@
+static void tli_hostaddr ( host ) host_info * host ; { struct request_info * request = host -> request ; struct netconfig * config = request -> config ; struct t_unitdata * unit = host -> unit ; char * uaddr ; if ( config != 0 && unit != 0 && ( uaddr = taddr2uaddr ( config , & unit -> addr ) ) != 0 ) { STRN_CPY ( host -> addr , uaddr , sizeof ( host -> addr ) ) ; } } 

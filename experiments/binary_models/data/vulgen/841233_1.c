@@ -1,0 +1,1 @@
+static void _software_version_destroy ( SoftwareVersion * software_version ) { if ( software_version ) { free ( software_version -> software ) ; free ( software_version -> software_version ) ; free ( software_version -> os ) ; free ( software_version -> os_version ) ; } } 

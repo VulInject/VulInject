@@ -1,0 +1,1 @@
+void __init mmu_init ( void ) { } 

@@ -1,0 +1,1 @@
+static void free_dh_local_secret ( void * obj , where_t where UNUSED ) { struct dh_local_secret * secret = obj ; SECKEY_DestroyPublicKey ( secret -> pubk ) ; SECKEY_DestroyPrivateKey ( secret -> privk ) ; } 

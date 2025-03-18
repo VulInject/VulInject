@@ -1,0 +1,1 @@
+static int iproc_mdio_remove ( struct platform_device * pdev ) { struct iproc_mdio_priv * priv = platform_get_drvdata ( pdev ) ; mdiobus_unregister ( priv -> mii_bus ) ; return 0 ; } 

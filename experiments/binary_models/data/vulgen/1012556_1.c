@@ -1,0 +1,1 @@
+static void __init sun4i_axi_clk_setup ( struct device_node * node ) { } 

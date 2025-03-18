@@ -1,0 +1,1 @@
+_cairo_clip_tor_scan_converter_destroy ( ) { cairo_clip_tor_scan_converter_t * self = converter ; _glitter_scan_converter_fini ( self -> converter ) ; pool_fini ( self -> span_pool . base ) ; free ( self ) ; } 

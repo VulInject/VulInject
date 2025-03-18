@@ -1,0 +1,1 @@
+static void iser_destroy_fastreg_desc ( struct iser_fr_desc * desc ) { struct iser_reg_resources * res = & desc -> rsc ; ib_dereg_mr ( res -> mr ) ; if ( res -> sig_mr ) { res -> sig_mr = NULL ; } kfree ( desc ) ; } 

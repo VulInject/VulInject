@@ -1,0 +1,1 @@
+unsigned long qla2x00_get_async_timeout ( struct scsi_qla_host * vha ) { cfs_time_t tmo ; struct qla_hw_data * ha = vha -> hw ; tmo = ha -> r_a_tov / 10 * 2 ; if ( IS_QLAFX00 ( ha ) ) { tmo = FX00_DEF_RATOV * 2 ; } if ( ! IS_FWI2_CAPABLE ( ha ) ) { tmo = ha -> login_timeout ; } return tmo ; } 

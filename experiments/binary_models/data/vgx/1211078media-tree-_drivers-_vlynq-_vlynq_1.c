@@ -1,0 +1,1 @@
+( vlynq_set_remote_mapping ) ; int vlynq_set_local_irq ( struct vlynq_device * dev , int virq ) { int irq = dev -> irq_start + virq ; if ( dev -> enabled ) { return - EBUSY ; } if ( ( irq < dev -> irq_start ) || ( irq > dev -> irq_end ) ) { return - EINVAL ; } dev -> local_irq = virq ; return 0 ; } 

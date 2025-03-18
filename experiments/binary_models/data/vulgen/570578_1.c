@@ -1,0 +1,1 @@
+void ukbd_cngetc ( void * v , u_int * type , int * data ) { struct ukbd_softc * sc = v ; struct hidkbd * kbd = & sc -> sc_kbd ; DPRINTFN ( 0 , ( "ukbd_cngetc: enter\n" ) ) ; kbd -> sc_polling = 1 ; while ( kbd -> sc_npollchar <= 0 ) { usbd_dopoll ( sc -> sc_hdev . sc_udev ) ; } kbd -> sc_polling = 0 ; hidkbd_cngetc ( kbd , type , data ) ; } 

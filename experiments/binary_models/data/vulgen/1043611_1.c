@@ -1,0 +1,1 @@
+static inline void set_gdma_dev ( int req , int dev ) { u32 reg = OMAP_FUNC_MUX_ARM_BASE + ( ( req - 1 ) / 5 ) * 4 ; int shift = ( ( req - 1 ) % 5 ) * 6 ; u32 l ; l = omap_readl ( reg ) ; l &= ~ ( 0x3f << shift ) ; omap_writel ( l , reg ) ; } 

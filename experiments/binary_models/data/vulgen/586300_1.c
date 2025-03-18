@@ -1,0 +1,1 @@
+long CONF_get_number ( LHASH_OF ( CONF_VALUE ) * conf , const char * group , const char * name ) ( int status , long result = 0 , ( conf == NULL ) { status = NCONF_get_number_e ( NULL , group , name , & result ) } else { CONF ctmp CONF_set_nconf ( & ctmp , conf ) } ; ) ; status = NCONF_get_number_e ( & ctmp , group , name , & result ) ; return result ; 

@@ -1,0 +1,1 @@
+static int lcd_olinuxino_prepare ( struct drm_panel * panel ) { struct lcd_olinuxino * lcd = to_lcd_olinuxino ( panel ) ; int ret ; ret = regulator_enable ( lcd -> supply ) ; if ( ret < 0 ) { return ret ; } gpiod_set_value_cansleep ( lcd -> enable_gpio , 1 ) ; lcd -> prepared = true ; return 0 ; } 

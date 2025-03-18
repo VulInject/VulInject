@@ -1,0 +1,1 @@
+* / __setup ( "vdso32=" , vdso32_setup ) ; __setup_param ( "vdso=" , vdso_setup , vdso32_setup , 0 ) ; int __init sysenter_setup ( void ) { return 0 ; } 

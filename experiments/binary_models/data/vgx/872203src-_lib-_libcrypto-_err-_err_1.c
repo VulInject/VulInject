@@ -1,0 +1,1 @@
+static ERR_STATE * int_thread_set_item ( ERR_STATE * d ) { ERR_STATE * p ; LHASH_OF ( ERR_STATE ) * hash ; err_fns_check ( ) ; hash = ERRFN ( thread_get ) ( 1 ) ; if ( ! hash ) { return NULL ; } CRYPTO_w_lock ( CRYPTO_LOCK_ERR , NULL ) ; p = lh_ERR_STATE_insert ( hash , d ) ; CRYPTO_w_unlock ( CRYPTO_LOCK_ERR ) ; ERRFN ( thread_release ) ( & hash ) ; return p ; } 

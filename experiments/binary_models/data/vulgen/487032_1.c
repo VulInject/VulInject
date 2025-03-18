@@ -1,0 +1,1 @@
+evbuffer_overlapped { struct evbuffer buffer ; evutil_socket_t fd ; unsigned read_in_progress 1 ; unsigned write_in_progress 1 ; struct evbuffer_chain * first_pinned ; int n_buffers ; } 

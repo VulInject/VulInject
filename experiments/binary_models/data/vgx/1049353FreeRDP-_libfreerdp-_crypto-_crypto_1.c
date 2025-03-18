@@ -1,0 +1,1 @@
+static SSIZE_T crypto_rsa_public ( const BYTE * input , size_t length , const rdpCertInfo * cert , BYTE * output , size_t output_length ) { WINPR_ASSERT ( cert , NULL ) ; return crypto_rsa_common ( input , length , cert -> ModulusLength , cert -> Modulus , cert -> exponent , sizeof ( cert -> exponent ) , output , output_length ) ; } 

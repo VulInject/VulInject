@@ -1,0 +1,1 @@
+int CJSON_CDECL main ( void ) { UNITY_BEGIN ( ) ; RUN_TEST ( parse_hex4_should_parse_all_combinations , NULL ) ; RUN_TEST ( parse_hex4_should_parse_mixed_case ) ; return UNITY_END ( ) ; } 

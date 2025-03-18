@@ -1,0 +1,1 @@
+static inline int ipc_wait_for_interrupt ( struct intel_scu_ipc_dev * scu ) { int status ; status = ipc_read_status ( scu ) ; if ( status & IPC_STATUS_ERR ) { return - EIO ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static void mmc_detect ( struct mmc_host * host ) { int err ; mmc_get_card ( host -> card , NULL ) ; mmc_put_card ( host -> card , NULL ) ; if ( err ) { mmc_remove ( host ) ; mmc_claim_host ( host ) ; mmc_detach_bus ( host ) ; mmc_power_off ( host ) ; mmc_release_host ( host ) ; } } 

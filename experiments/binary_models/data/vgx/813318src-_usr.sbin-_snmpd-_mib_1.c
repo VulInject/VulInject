@@ -1,0 +1,1 @@
+int mib_setsnmp ( struct oid * oid , struct ber_oid * o , struct ber_element * * elm ) { struct snmp_stats * stats = & snmpd_env -> sc_stats ; long long i ; stats -> snmp_enableauthentraps = i == 1 ?1 : 0 ; return ( 0 ) ; } 

@@ -1,0 +1,1 @@
+static void printer_cups_release_ref_driver ( rdpPrinterDriver * driver ) { rdpCupsPrinterDriver * cups_driver = ( rdpCupsPrinterDriver * ) driver ; WINPR_ASSERT ( cups_driver ) ; if ( cups_driver -> references <= 1 ) { if ( uniq_cups_driver == cups_driver ) { uniq_cups_driver = NULL ; } } else { cups_driver -> references -- ; } } 

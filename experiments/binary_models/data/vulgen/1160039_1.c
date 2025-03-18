@@ -1,0 +1,1 @@
+void load_timer2 ( unsigned int timer2_ticks ) { unsigned long long now ; unsigned long clocks ; rdtscll ( now ) ; timer_timeout = now + clocks ; } 

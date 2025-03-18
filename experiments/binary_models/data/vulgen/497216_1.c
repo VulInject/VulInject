@@ -1,0 +1,1 @@
+void rtl88ee_led_control ( struct ieee80211_hw * hw , enum led_ctl_mode ledaction ) { struct rtl_priv * rtlpriv = rtl_priv ( hw ) ; struct rtl_ps_ctl * ppsc = rtl_psc ( rtl_priv ( hw ) ) ; RT_TRACE ( rtlpriv , COMP_LED , DBG_TRACE , "ledaction %d,\n" , ledaction ) ; _rtl88ee_sw_led_control ( hw , ledaction ) ; } 

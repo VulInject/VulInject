@@ -1,0 +1,1 @@
+static void qbus_initfn ( Object * obj ) { BusState * bus = BUS ( obj ) ; QTAILQ_INIT ( & bus -> children ) ; object_property_add_link ( obj , QDEV_HOTPLUG_HANDLER_PROPERTY , TYPE_HOTPLUG_HANDLER , ( Object * * ) & bus -> hotplug_handler , object_property_allow_set_link , 0 ) ; } 

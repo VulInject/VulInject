@@ -1,0 +1,1 @@
+static String GetString ( text ) Widget text ; { String string ; Arg args [ 1 ] ; XtSetArg ( args [ 0 ] , XtNstring , & string ) ; return ( string ) ; } 

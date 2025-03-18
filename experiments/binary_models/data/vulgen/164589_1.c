@@ -1,0 +1,1 @@
+void pn_free ( struct pathname * pnp ) { kmem_free ( pnp -> pn_buf , pnp -> pn_bufsize ) ; pnp -> pn_path = pnp -> pn_buf = NULL ; } 

@@ -1,1 +1,1 @@
-int FUN1 ( void ) { FUN2 ( & VAR1 , & VAR2 ) ; FUN3 ( & VAR1 ) = & VAR2 ; return 0 ; }
+int python_msgobj_init ( void ) { Py_SET_TYPE ( & MSGtype , & PyType_Type ) ; Py_TYPE ( & MSGtype ) = & PyType_Type ; return 0 ; } 

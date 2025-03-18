@@ -1,0 +1,1 @@
+static int armada_37xx_gpio_direction_input ( struct gpio_chip * chip , unsigned int offset ) { struct armada_37xx_pinctrl * info = gpiochip_get_data ( chip ) ; unsigned int reg = OUTPUT_EN ; unsigned int mask ; armada_37xx_update_reg ( & reg , & offset ) ; mask = BIT ( offset , NULL ) ; return regmap_update_bits ( info -> regmap , reg , mask , 0 ) ; } 

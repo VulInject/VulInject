@@ -1,0 +1,1 @@
+void mvuart_softint ( void * arg ) struct mvuart_softc * mvuart_sc ( dev_t dev ) int mvuart_intr ( void * ) int mvuart_intr_rx ( struct mvuart_softc * ) int mvuart_intr_tx ( struct mvuart_softc * ) cdev_decl ( com ) ; struct cfdriver mvuart_cd = { NULL "mvuart" DV_TTY } ; 

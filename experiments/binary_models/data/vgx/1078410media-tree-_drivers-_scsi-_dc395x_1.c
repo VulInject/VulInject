@@ -1,0 +1,1 @@
+static int dc395x_slave_alloc ( struct scsi_device * scsi_device ) { struct AdapterCtlBlk * acb = ( AdapterCtlBlk * ) scsi_device -> host -> hostdata ; struct DeviceCtlBlk * dcb ; dcb = device_alloc ( acb , scsi_device -> id , scsi_device -> lun ) ; adapter_add_device ( acb , dcb ) ; return 0 ; } 

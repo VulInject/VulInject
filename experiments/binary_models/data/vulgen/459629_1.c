@@ -1,0 +1,1 @@
+static void dlg_ontdestroy ( struct cell * t , int type , struct tmcb_params * param ) { dlg_cell_t * dlg = NULL ; dlg_iuid_t * iuid = NULL ; iuid = ( dlg_iuid_t * ) ( * param -> param ) ; dlg = dlg_get_by_iuid ( iuid ) ; if ( dlg == 0 ) { return ; } } 

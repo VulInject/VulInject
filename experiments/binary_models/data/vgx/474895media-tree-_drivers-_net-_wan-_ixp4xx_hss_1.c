@@ -1,0 +1,1 @@
+static u32 hss_get_status ( struct port * port ) { struct msg msg ; msg . cmd = PORT_ERROR_READ ; msg . hss_port = port -> id ; hss_npe_send ( port , & msg , "PORT_ERROR_READ" ) ; if ( npe_recv_message ( port -> npe , & msg , "PORT_ERROR_READ" ) ) { pr_crit ( "HSS-%i: unable to read HSS status\n" , port -> id ) ; BUG ( ) ; } return msg . data32 ; } 

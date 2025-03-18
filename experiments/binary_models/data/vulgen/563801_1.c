@@ -1,0 +1,1 @@
+static void print_faccessat ( void * cpu_env , const struct syscallname * name , abi_long arg0 , abi_long arg1 , abi_long arg2 , abi_long arg3 , abi_long arg4 , abi_long arg5 ) { print_syscall_prologue ( name ) ; print_string ( arg1 , 0 ) ; print_flags ( access_flags , arg2 , 0 ) ; print_flags ( at_file_flags , arg3 , 1 ) ; print_syscall_epilogue ( name ) ; } 

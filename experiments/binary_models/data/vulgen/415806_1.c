@@ -1,0 +1,1 @@
+int vips_LCh2Lab ( VipsImage * in , VipsImage * * out , ... ) { va_list ap ; int result ; va_start ( ap , out ) ; va_end ( ap ) ; return ( result ) ; } 

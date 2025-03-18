@@ -1,0 +1,1 @@
+static void cmd_read_cdvd_capacity ( IDEState * s , uint8_t * buf ) { stl_be_p ( buf , total_sectors - 1 ) ; stl_be_p ( buf + 4 , 2048 ) ; ide_atapi_cmd_reply ( s , 8 , 8 ) ; } 

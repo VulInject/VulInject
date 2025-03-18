@@ -1,0 +1,1 @@
+static int panfrost_reset_init ( struct panfrost_device * pfdev ) { pfdev -> rstc = devm_reset_control_array_get_optional_exclusive ( pfdev -> dev , NULL ) ; if ( IS_ERR ( pfdev -> rstc ) ) { dev_err ( pfdev -> dev , "get reset failed %ld\n" , PTR_ERR ( pfdev -> rstc ) ) ; return PTR_ERR ( pfdev -> rstc ) ; } return reset_control_deassert ( pfdev -> rstc ) ; } 

@@ -1,0 +1,1 @@
+static u8 * carl9170_find_ie ( u8 * data , unsigned int len , u8 ie ) { struct ieee80211_mgmt * mgmt = ( void * ) data ; u8 * pos , * end ; pos = ( u8 * ) mgmt -> u . beacon . variable ; end = data + len ; while ( pos < end ) { if ( pos + 2 + pos [ 1 ] > end ) { return in ; } if ( pos [ 0 ] == ie ) { return pos ; } pos += 2 + pos [ 1 ] ; } return NULL ; } 

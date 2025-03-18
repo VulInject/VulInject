@@ -1,0 +1,1 @@
+static __always_inline devres * alloc_dr ( , , , ) { size_t tot_size = sizeof ( devres ) + size devres * dr dr = kmalloc_node_track_caller ( tot_size , gfp , nid ) memset ( dr , 0 , offsetof ( devres , data ) ) } ; INIT_LIST_HEAD ( & dr -> node . entry ) ; dr -> node . release = release ; return dr ; 

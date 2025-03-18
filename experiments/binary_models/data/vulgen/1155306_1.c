@@ -1,0 +1,1 @@
+int dma_fence_work_chain ( struct dma_fence_work * f , struct dma_fence * signal ) { return __i915_sw_fence_await_dma_fence ( & f -> chain , signal , & f -> cb ) ; } 

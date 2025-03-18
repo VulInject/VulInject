@@ -1,0 +1,1 @@
+static int ina2xx_init ( struct ina2xx_chip_info * chip , unsigned int config ) { int ret = regmap_write ( chip -> regmap , INA2XX_CONFIG , config ) ; return ina2xx_set_calibration ( chip ) ; } 

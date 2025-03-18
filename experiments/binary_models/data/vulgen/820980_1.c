@@ -1,0 +1,1 @@
+static void dr_icm_buddy_destroy ( struct mlx5dr_icm_buddy_mem * buddy ) { dr_icm_pool_mr_destroy ( buddy -> icm_mr ) ; mlx5dr_buddy_cleanup ( buddy ) ; if ( buddy -> pool -> icm_type == DR_ICM_TYPE_STE ) { dr_icm_buddy_cleanup_ste_cache ( buddy ) ; } } 

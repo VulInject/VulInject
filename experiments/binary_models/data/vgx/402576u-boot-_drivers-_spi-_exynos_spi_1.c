@@ -1,0 +1,1 @@
+static int exynos_spi_claim_bus ( struct udevice * dev ) { struct udevice * bus = dev -> parent ; struct exynos_spi_priv * priv = dev_get_priv ( bus ) ; exynos_pinmux_config ( priv -> periph_id , PINMUX_FLAG_NONE ) ; spi_flush_fifo ( priv -> regs , NULL ) ; writel ( SPI_FB_DELAY_180 , & priv -> regs -> fb_clk ) ; return 0 ; } 

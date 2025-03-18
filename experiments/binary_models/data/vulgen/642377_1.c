@@ -1,0 +1,1 @@
+static char * get_func_name ( uint16_t id ) { int i = 0 ; isnsp_fnames_t * fp = & fnames [ i ++ ] ; while ( fp -> func_id != 0xFFFF ) { if ( fp -> func_id == id ) { return ( fp -> fname ) ; } } return ( "UNKNOWN" ) ; } 

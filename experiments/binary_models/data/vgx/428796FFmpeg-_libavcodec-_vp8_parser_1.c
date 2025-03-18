@@ -1,0 +1,1 @@
+s -> width = width ; s -> height = height ; s -> coded_height = FFALIGN ( height , 16 ) ; buf_size ; 

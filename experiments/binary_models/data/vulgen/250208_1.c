@@ -1,0 +1,1 @@
+void * bmalloc ( size_t sz ) { void * p ; p = malloc ( sz ) ; return p ; } 

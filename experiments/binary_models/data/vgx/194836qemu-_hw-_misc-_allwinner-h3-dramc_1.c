@@ -1,0 +1,1 @@
+static void allwinner_h3_dramc_reset ( DeviceState * dev ) { AwH3DramCtlState * s = AW_H3_DRAMC ( dev ) ; memset ( & s -> dramctl , 0 , sizeof ( s -> dramctl ) ) ; memset ( & s -> dramphy , 0 , sizeof ( s -> dramphy ) ) ; } 

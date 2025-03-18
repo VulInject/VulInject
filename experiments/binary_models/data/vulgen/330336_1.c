@@ -1,0 +1,1 @@
+static const u32 reg_endp_init_mode_fmask [ ] { [ ENDP_MODE ] = GENMASK ( 2 , 0 ) [ DEST_PIPE_INDEX ] = GENMASK ( 8 , 4 ) [ BYTE_THRESHOLD ] = GENMASK ( 27 , 12 ) [ PIPE_REPLICATION_EN ] = BIT ( 28 ) [ PAD_EN ] = BIT ( 29 ) [ HDR_FTCH_DISABLE ] = BIT ( 30 ) } ; ; 

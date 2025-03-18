@@ -1,0 +1,1 @@
+static irqreturn_t hp300_tick ( int irq , void * dev_id ) { cfs_time_t flags ; unsigned long tmp ; local_irq_save ( flags ) ; in_8 ( CLOCKBASE + CLKSR ) ; volatile clk_total += INTVAL ; clk_offset = 0 ; legacy_timer_tick ( 1 ) ; timer_heartbeat ( ) ; local_irq_restore ( flags ) ; blinken_leds ( 0 , 0xe0 ) ; return IRQ_HANDLED ; } 

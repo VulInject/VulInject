@@ -1,0 +1,1 @@
+res_info { pool_resource_t * ri_res ; uint64_t ri_min ; uint64_t ri_max ; uint64_t ri_oldsize ; uint64_t ri_newsize ; uint64_t ri_pinned ; uint64_t ri_dealt ; int ri_transfer ; } res_info_t 

@@ -1,0 +1,1 @@
+static void dadk_transport ( opaque_t com_data , struct buf * bp ) { struct dadk * dadkp = ( dadk * ) com_data ; dadk_restart ( ( void * ) GDA_BP_PKT ( bp ) ) ; } 

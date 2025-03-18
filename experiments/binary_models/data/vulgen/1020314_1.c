@@ -1,0 +1,1 @@
+void slot_rem ( hslot_t * _s , struct impurecord * _r ) { if ( _r -> prev ) { _r -> prev -> next = _r -> next ; } else { _s -> first = _r -> next ; } if ( _r -> next ) { _r -> next -> prev = _r -> prev ; } else { _s -> last = _r -> prev ; } _r -> prev = _r -> next = 0 ; _r -> slot = 0 ; _s -> n -- ; } 

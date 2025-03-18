@@ -1,0 +1,1 @@
+int stream_putc_at ( struct stream * s , size_t putp , uint8_t c ) { STREAM_VERIFY_SANE ( s ) ; if ( ! PUT_AT_VALID ( s , putp + sizeof ( uint8_t ) ) ) { return 0 ; } s -> data [ putp ] = c ; return 1 ; } 

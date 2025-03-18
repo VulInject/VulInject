@@ -1,0 +1,1 @@
+struct pci_bus * pci_find_bus ( int domain , int busnr ) { struct pci_bus * bus = NULL ; struct pci_bus * tmp_bus ; while ( ( bus = pci_find_next_bus ( bus ) ) != NULL ) { tmp_bus = pci_do_find_bus ( bus , busnr ) ; if ( tmp_bus ) { return tmp_bus ; } } return NULL ; } 

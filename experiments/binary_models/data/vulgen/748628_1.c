@@ -1,0 +1,1 @@
+static void cxgb3_process_iscsi_prov_pack ( struct port_info * pi , struct sk_buff * skb ) { if ( pi -> iscsic . recv ) { pi -> iscsic . recv ( pi , skb ) ; } } 

@@ -1,0 +1,1 @@
+void test_EOC ( void ) { int temp ; if ( old_config_style ) { temp = is_EOC ( '\n' ) ; TEST_ASSERT_TRUE ( temp ) ; } else { temp = is_EOC ( ';' ) ; TEST_ASSERT_TRUE ( temp ) ; } temp = is_EOC ( 'A' ) ; TEST_ASSERT_FALSE ( temp , NULL ) ; temp = is_EOC ( '1' ) ; TEST_ASSERT_FALSE ( temp ) ; } 

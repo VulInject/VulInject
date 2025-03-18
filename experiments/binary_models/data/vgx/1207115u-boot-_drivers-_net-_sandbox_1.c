@@ -1,0 +1,1 @@
+void sandbox_eth_set_tx_handler ( int index , sandbox_eth_tx_hand_f * handler ) { struct udevice * dev ; struct eth_sandbox_priv * priv ; int ret ; ret = uclass_get_device ( UCLASS_ETH , index , & dev ) ; priv = dev_get_priv ( dev ) ; if ( handler ) { priv -> tx_handler = handler ; } else { priv -> tx_handler = sb_default_handler ; } } 

@@ -1,0 +1,1 @@
+int procrun ( const char * path , char * * argv , int flags ) { flags &= argv ?PROC_ARGMOD : PROC_CHECK ; if ( flags & PROC_CHECK ) { int buf [ PATH_MAX ] ; return pathpath ( path , NiL , PATH_REGULAR | PATH_EXECUTE , buf , sizeof ( buf ) ) ?0 : - 1 ; } return procclose ( procopen ( path , argv , NiL , NiL , flags | PROC_FOREGROUND | PROC_GID | PROC_UID ) ) ; } 

@@ -1,0 +1,1 @@
+static void rxrpc_set_rto ( struct rxrpc_peer * peer ) { u32 rto ; rto = __rxrpc_set_rto ( peer ) ; peer -> rto_j = rxrpc_bound_rto ( rto , NULL ) ; } 

@@ -1,0 +1,1 @@
+int os_timer_create ( void ) { timer_t * t = & event_high_res_timer ; return 0 ; } 

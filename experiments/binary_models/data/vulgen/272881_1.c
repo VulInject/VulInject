@@ -1,0 +1,1 @@
+void capidtmf_recv_disable ( t_capidtmf_state * p_state ) { p_state -> recv . state &= ~ CAPIDTMF_RECV_STATE_DTMF_ACTIVE ; else { p_state -> recv . cycle_counter = 0 ; p_state -> recv . current_digit_on_time = 0 ; p_state -> recv . current_digit_off_time = 0 ; p_state -> recv . current_digit_value = CAPIDTMF_RECV_NO_DIGIT ; } } 

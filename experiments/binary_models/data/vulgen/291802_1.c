@@ -1,0 +1,1 @@
+static int m41t62_rtc_get ( struct udevice * dev , struct rtc_time * tm ) { u8 buf [ M41T62_DATETIME_REG_SIZE ] ; int ret ; if ( ret ) { return ret ; } m41t62_update_rtc_time ( tm , buf ) ; return 0 ; } 

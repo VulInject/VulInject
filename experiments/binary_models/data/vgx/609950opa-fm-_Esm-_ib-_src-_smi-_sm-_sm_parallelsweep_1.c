@@ -1,0 +1,1 @@
+void psc_trigger ( ParallelSweepContext_t * psc ) { boolean b ; pscMutexAcquire ( & psc -> critical_mutex ) ; b = ! QListIsEmpty ( & psc -> work_queue ) ; pscMutexRelease ( & psc -> critical_mutex ) ; if ( b ) { ThreadPoolSignal ( & psc -> worker_pool ) ; } } 

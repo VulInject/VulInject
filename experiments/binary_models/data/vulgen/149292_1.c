@@ -1,0 +1,1 @@
+static void f9 ( __attribute__ ( ) T ) ; static void w4 ( int f ( x , int ) ) 

@@ -1,0 +1,1 @@
+static int cl_insert ( struct cmdline * cl , int c ) { cl -> buf [ cl -> len ++ ] = c ; if ( c == '\n' ) { return 1 ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static int nilfs_iget_test ( struct inode * inode , void * opaque ) { struct nilfs_iget_args * args = opaque ; struct nilfs_inode_info * ii ; ii = NILFS_I ( inode ) ; if ( ! test_bit ( NILFS_I_GCINODE , & ii -> i_state ) ) { return ! args -> for_gc ; } return args -> for_gc && args -> cno == ii -> i_cno ; } 

@@ -1,0 +1,1 @@
+static void __nat25_generate_ipv6_network_addr ( unsigned char * addr , unsigned int * ip_addr ) { addr [ 0 ] = NAT25_IPV6 ; memcpy ( addr + 1 , ( unsigned char * ) ip_addr , 16 ) ; } 

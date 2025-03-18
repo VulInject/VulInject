@@ -1,0 +1,1 @@
+{ return offsetof ( SF_CART_INFO , tag_text ) + info -> tag_text_size ; } 

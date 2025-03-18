@@ -1,0 +1,1 @@
+void bnx2x_iov_channel_down ( struct bnx2x * bp ) { int vf_idx ; struct pf_vf_bulletin_content * bulletin ; for_each_vf ( , ) { bulletin = BP_VF_BULLETIN ( bp , vf_idx ) ; bulletin -> valid_bitmap |= 1 << CHANNEL_DOWN ; bnx2x_post_vf_bulletin ( bp , vf_idx ) ; } } 

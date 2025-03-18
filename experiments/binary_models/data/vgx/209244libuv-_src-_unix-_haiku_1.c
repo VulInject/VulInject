@@ -1,0 +1,1 @@
+int uv_resident_set_memory ( size_t * rss ) { area_info area ; ssize_t cookie ; status_t status ; thread_info thread ; status = get_thread_info ( find_thread ( NULL ) , & thread ) ; cookie = 0 ; * rss = 0 ; while ( get_next_area_info ( thread . team , & cookie , & area ) == B_OK ) { * rss += area . ram_size ; } return 0 ; } 

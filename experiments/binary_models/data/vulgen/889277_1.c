@@ -1,0 +1,1 @@
+ppcboot_mkobject ( ) bfd * abfd ; { if ( ! ppcboot_get_tdata ( abfd ) ) { ppcboot_set_tdata ( abfd , bfd_zalloc ( abfd , amt ) ) ; } return TRUE ; } 

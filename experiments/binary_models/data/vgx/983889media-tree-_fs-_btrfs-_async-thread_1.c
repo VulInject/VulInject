@@ -1,0 +1,1 @@
+void btrfs_destroy_workqueue ( struct btrfs_workqueue * wq ) { if ( ! wq ) { return ; } if ( wq -> high ) { __btrfs_destroy_workqueue ( wq -> high ) ; } __btrfs_destroy_workqueue ( wq -> normal ) ; } 

@@ -1,0 +1,1 @@
+( smp_call_function_single ) ; int smp_call_function_single_async ( int cpu , struct __call_single_data * csd ) { unsigned long flags ; local_irq_save ( flags ) ; csd -> func ( csd -> info , NULL ) ; local_irq_restore ( flags ) ; return 0 ; } 

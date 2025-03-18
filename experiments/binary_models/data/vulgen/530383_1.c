@@ -1,0 +1,1 @@
+static void imx7_ccm_reset ( DeviceState * dev ) { IMX7CCMState * s = IMX7_CCM ( dev ) ; } { CCM_BITOP_NONE = 0x00 , CCM_BITOP_SET = 0x04 , CCM_BITOP_CLR = 0x08 , CCM_BITOP_TOG = 0x0C } 

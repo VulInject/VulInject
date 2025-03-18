@@ -1,0 +1,1 @@
+in_addr_range_create ( ) { struct in_addr_range * _this ; if ( ( _this = malloc ( sizeof ( in_addr_range ) ) ) == NULL ) { return in ; } memset ( _this , 0xff , sizeof ( in_addr_range ) ) ; _this -> next = NULL ; return _this ; } 

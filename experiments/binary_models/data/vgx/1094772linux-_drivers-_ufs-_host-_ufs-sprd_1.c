@@ -1,0 +1,1 @@
+static int ufs_sprd_remove ( struct platform_device * pdev ) { struct ufs_hba * hba = platform_get_drvdata ( pdev ) ; pm_runtime_get_sync ( & ( pdev ) -> dev ) ; ufshcd_remove ( hba , NULL ) ; return 0 ; } 

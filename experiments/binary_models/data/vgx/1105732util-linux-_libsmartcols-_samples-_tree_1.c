@@ -1,0 +1,1 @@
+static void add_lines ( struct libscols_table * tb , const char * dirname ) { struct stat st ; if ( lstat ( dirname , & st ) ) { err ( EXIT_FAILURE , "%s" , dirname ) ; } add_line_from_stat ( tb , - 1 , & st , dirname ) ; } 

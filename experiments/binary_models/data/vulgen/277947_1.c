@@ -1,0 +1,1 @@
+static inline void sa_copy_iv ( __be32 * out , const u8 * iv , bool size16 ) { int j ; for ( j = 0 ; j < ( ( size16 ) ?4 : 2 ) ; j ++ ) { iv += 4 ; out ++ ; } } 

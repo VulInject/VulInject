@@ -1,0 +1,1 @@
+int freerdp_client_parse_rdp_file ( rdpFile * file , const char * name ) { return freerdp_client_parse_rdp_file_ex ( file , name , NULL ) ; } 

@@ -1,0 +1,1 @@
+static int AddressTestParse28 ( void ) { int result = 0 ; DetectAddress * dd = DetectAddressParseSingle ( "!1.2.3.4" ) ; if ( dd ) { if ( dd -> flags & ADDRESS_FLAG_NOT && dd -> ip . addr_data32 [ 0 ] == SCNtohl ( 16909060 ) ) { result = 1 ; } return result ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static void __init early_console_write ( struct console * con , const char * s , unsigned n ) { int i ; for ( i = 0 ; i < n ; i ++ ) { if ( s [ i ] == '\n' ) { early_putch ( '\r' ) ; } early_putch ( s [ i ] ) ; reset_watchdog ( ) ; } } 

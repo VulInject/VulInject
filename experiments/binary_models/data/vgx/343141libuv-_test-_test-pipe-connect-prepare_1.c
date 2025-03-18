@@ -1,0 +1,1 @@
+static int close_cb_called = 0 ; static int connect_cb_called = 0 ; static uv_pipe_t pipe_handle ; static uv_prepare_t prepare_handle ; static uv_connect_t conn_req ; static void close_cb ( uv_handle_t * handle ) { ASSERT_NOT_NULL ( handle , NULL ) ; close_cb_called ++ ; } 

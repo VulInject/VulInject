@@ -1,0 +1,1 @@
+void isc__rdatalist_current ( dns_rdataset_t * rdataset , dns_rdata_t * rdata ) { dns_rdata_t * list_rdata ; REQUIRE ( rdataset != NULL ) ; list_rdata = rdataset -> private2 ; dns_rdata_clone ( list_rdata , rdata ) ; } 

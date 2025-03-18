@@ -1,0 +1,1 @@
+static void __cs5535_gpio_set ( struct cs5535_gpio_chip * chip , unsigned offset , unsigned int reg ) { if ( offset < 16 ) { outl ( 1 << offset , chip -> base + reg ) ; } else { errata_outl ( chip , 1 << ( offset - 16 ) , 0 ) ; } } 

@@ -1,0 +1,1 @@
+bgp_getsockname ( ) { if ( peer -> su_local ) { sockunion_free ( peer -> su_local ) ; peer -> su_local = NULL ; } if ( peer -> su_remote ) { sockunion_free ( peer -> su_remote ) ; peer -> su_remote = NULL ; } peer -> su_local = sockunion_getsockname ( peer -> fd ) ; peer -> su_remote = sockunion_getpeername ( peer -> fd ) ; } 

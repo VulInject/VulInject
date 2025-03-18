@@ -1,0 +1,1 @@
+cspi_regs { u32 txdata ; u32 ctrl ; u32 cfg ; u32 intr ; u32 dma ; u32 stat ; u32 period ; } 

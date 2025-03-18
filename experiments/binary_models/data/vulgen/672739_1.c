@@ -1,0 +1,1 @@
+flatpak_repo_set_authenticator_install ( , , ) { g_autoptr ( ) config = NULL ; config = ostree_repo_copy_config ( repo ) ; g_key_file_set_boolean ( config , "flatpak" , "authenticator-install" , authenticator_install ) ; return TRUE ; } 

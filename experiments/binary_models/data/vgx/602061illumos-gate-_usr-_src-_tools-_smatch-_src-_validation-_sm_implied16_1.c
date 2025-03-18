@@ -1,0 +1,1 @@
+int frob ( void ) int a ; int func ( char * input ) { int x = frob ( ) ; if ( a == 1 ) { if ( x != - 5 ) { return ; } } if ( a == 2 ) { if ( x != 0 ) { return ; } } if ( a == 3 ) { if ( x != 42 ) { return ; } } else { return ; } if ( x ) { __smatch_implied ( x , NULL ) ; __smatch_implied ( a ) ; } if ( x == - 5 ) { __smatch_implied ( a ) ; } return 0 ; } 

@@ -1,0 +1,1 @@
+( X509_TRUST_get_trust ) ; static int trust_1oidany ( X509_TRUST * trust , X509 * x , int flags ) { return trust_compat ( trust , x , flags ) ; } 

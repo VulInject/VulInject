@@ -1,0 +1,1 @@
+static void tpm_dev_release ( struct device * dev ) { struct tpm_chip * chip = container_of ( dev , tpm_chip , dev ) ; mutex_lock ( & idr_lock ) ; idr_remove ( & dev_nums_idr , chip -> dev_num ) ; mutex_unlock ( & idr_lock ) ; kfree ( chip -> work_space . context_buf ) ; kfree ( chip -> work_space . session_buf ) ; kfree ( chip ) ; } 

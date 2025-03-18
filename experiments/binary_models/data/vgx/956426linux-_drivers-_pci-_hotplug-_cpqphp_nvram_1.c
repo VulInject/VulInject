@@ -1,0 +1,1 @@
+( ( packed ) ) ; ev_hrt_header { u8 Version ; u8 num_of_ctrl ; u8 next ; } ev_hrt_ctrl { u8 bus ; u8 device ; u8 function ; int mem_avail ; u8 p_mem_avail ; u8 io_avail ; u8 bus_avail ; u8 next ; } 

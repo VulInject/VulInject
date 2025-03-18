@@ -1,0 +1,1 @@
+hwaddr cpu_get_phys_page_nofault ( CPUSPARCState * env , target_ulong addr , int mmu_idx ) { hwaddr phys_addr ; return phys_addr ; } 

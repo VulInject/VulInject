@@ -1,0 +1,1 @@
+int bpf_prog1 ( struct pt_regs * ctx ) { u64 pid = bpf_get_current_pid_tgid ( ) ; int idx = 0 ; bpf_map_update_elem ( & perf_map , & idx , & pid , BPF_ANY ) ; return 0 ; } 

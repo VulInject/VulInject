@@ -1,0 +1,1 @@
+void * ATHEME_FATTR_MALLOC smemdup ( const void * const restrict ptr , const size_t len ) { void * const buf = smalloc ( len ) ; return memcpy ( buf , ptr , len ) ; } 

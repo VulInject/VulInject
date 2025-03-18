@@ -1,0 +1,1 @@
+__mf_set_state ( ) { struct mf_thread_data * data = __mf_find_threadinfo ( 1 ) ; } 

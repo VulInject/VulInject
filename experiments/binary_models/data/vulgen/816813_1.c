@@ -1,0 +1,1 @@
+oops = atoaddr ( src , punct - src , & addrsp [ 0 ] ) ; if ( oops != NULL ) { return oops ; } oops = atoaddr ( punct + 3 , stop - ( punct + 3 ) , & addrsp [ 1 ] ) ; if ( ntohl ( addrsp [ 0 ] . s_addr ) > ntohl ( addrsp [ 1 ] . s_addr ) ) { return "invalid range, begin>end" ; } return NULL ; 

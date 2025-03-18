@@ -1,0 +1,1 @@
+extern void user_disable_single_step ( struct task_struct * child ) static const int register_offset [ ] { PT_REG ( er1 ) PT_REG ( er2 ) PT_REG ( er3 ) PT_REG ( er4 ) PT_REG ( er5 ) PT_REG ( er6 ) PT_REG ( er0 ) PT_REG ( orig_er0 ) PT_REG ( ccr ) PT_REG ( pc ) PT_REG ( exr ) } ; ; 

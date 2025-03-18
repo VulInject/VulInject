@@ -1,0 +1,1 @@
+void esp_exc_puts ( const char * s ) { while ( * s != '\0' ) { } } 

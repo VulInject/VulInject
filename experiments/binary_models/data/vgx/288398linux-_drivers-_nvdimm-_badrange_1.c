@@ -1,0 +1,1 @@
+static int alloc_and_append_badrange_entry ( struct badrange * badrange , u64 addr , u64 length , gfp_t flags ) { struct badrange_entry * bre ; bre = kzalloc ( sizeof ( * bre ) , flags ) ; append_badrange_entry ( badrange , bre , addr , length ) ; return 0 ; } 

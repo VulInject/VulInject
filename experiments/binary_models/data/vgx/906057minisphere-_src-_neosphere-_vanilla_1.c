@@ -1,0 +1,1 @@
+static bool js_AttachCamera ( int num_args , bool is_ctor , intptr_t magic ) { const char * name ; person_t * person ; name = jsal_to_string ( 0 ) ; if ( ! ( person = map_person_by_name ( name ) ) ) { jsal_error ( JS_REF_ERROR , "No such person '%s'" , name ) ; } map_engine_set_subject ( person , NULL ) ; return false ; } 

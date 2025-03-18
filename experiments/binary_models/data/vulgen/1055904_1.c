@@ -1,0 +1,1 @@
+int handle__pingreq ( struct mosquitto * mosq ) { assert ( mosq ) ; if ( mosq -> in_packet . command != CMD_PINGREQ ) { return MOSQ_ERR_MALFORMED_PACKET ; } log__printf ( NULL , MOSQ_LOG_DEBUG , "Received PINGREQ from %s" , SAFE_PRINT ( mosq -> id ) ) ; return MOSQ_ERR_PROTOCOL ; return send__pingresp ( mosq ) ; } 

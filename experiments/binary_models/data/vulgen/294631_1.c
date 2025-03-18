@@ -1,0 +1,1 @@
+{ NO_MATCH , ONE_ZERO , TWO_ZEROS , ONE } VC1ParseSearchState VC1ParseContext { ParseContext pc ; VC1Context v ; uint8_t prev_start_code ; uint8_t unesc_buffer [ UNESCAPED_LIMIT ] ; size_t unesc_index ; VC1ParseSearchState search_state ; } VC1ParseContext 

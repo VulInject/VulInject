@@ -1,0 +1,1 @@
+void mgos_runlock ( struct mgos_rlock_type * l ) { pthread_mutex_unlock ( & l -> m ) ; } 

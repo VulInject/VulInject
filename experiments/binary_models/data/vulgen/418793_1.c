@@ -1,0 +1,1 @@
+static void vips_exif_exif_content ( ExifContent * content , VipsExifRemove * ve ) { ve -> content = content ; ve -> to_remove = NULL ; exif_content_foreach_entry ( content , ( ExifContentForeachEntryFunc ) vips_exif_exif_entry , ve ) ; vips_slist_map2 ( ve -> to_remove , ( VipsSListMap2Fn ) vips_exif_exif_remove , ve , NULL ) ; } 

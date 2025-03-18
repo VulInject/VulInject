@@ -1,0 +1,1 @@
+void sshbuf_free ( struct sshbuf * buf ) { if ( buf == NULL ) { return ; } if ( sshbuf_check_sanity ( buf ) != 0 ) { return ; } buf -> refcount -- ; if ( buf -> refcount > 0 ) { return ; } sshbuf_free ( buf -> parent ) ; buf -> parent = NULL ; if ( ! buf -> readonly ) { explicit_bzero ( buf -> d , buf -> alloc ) ; } freezero ( buf , sizeof ( * buf ) ) ; } 

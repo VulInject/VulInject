@@ -1,0 +1,1 @@
+static void virSecretObjDispose ( void * opaque ) { virSecretObj * obj = opaque ; if ( obj -> value ) { memset ( obj -> value , 0 , obj -> value_size ) ; g_free ( obj -> value ) ; } g_free ( obj -> configFile ) ; g_free ( obj -> base64File ) ; } 

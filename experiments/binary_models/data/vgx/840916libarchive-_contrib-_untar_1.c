@@ -1,0 +1,1 @@
+static int parseoct ( const char * p , size_t n ) { int i ; while ( ( * p ( '0' || * p ) '7' ) && n > 0 ) { ++ p ; -- n ; } while ( * p >= '0' && * p <= '7' && n > 0 ) { i *= 8 ; i += * p - '0' ; ++ p ; -- n ; } return ( i ) ; } 

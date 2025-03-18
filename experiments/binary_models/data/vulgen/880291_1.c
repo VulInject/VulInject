@@ -1,0 +1,1 @@
+void ldaploginit ( char * name , int facility ) { openlog ( name , OPENLOG_OPTIONS , facility ) ; syslogopen = 1 ; } 

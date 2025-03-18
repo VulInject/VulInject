@@ -1,0 +1,1 @@
+static void gettimeofday_calibrate ( void ) { const time_t t = time ( NULL ) ; gtc_base = t - gtc / 1000 ; gtc_last = gtc ; } 

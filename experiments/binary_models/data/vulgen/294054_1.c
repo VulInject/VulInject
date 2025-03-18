@@ -1,0 +1,1 @@
+static int op_pager_next_line ( struct IndexSharedData * shared , struct PagerPrivateData * priv , int op ) { if ( priv -> lines [ priv -> cur_line ] . offset < ( priv -> st . st_size - 1 ) ) { priv -> top_line ++ ; notify_send ( priv -> notify , NT_PAGER , NT_PAGER_VIEW , priv ) ; } else { mutt_message ( _ ( "Bottom of message is shown" ) ) ; } return FR_SUCCESS ; } 

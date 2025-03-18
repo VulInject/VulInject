@@ -1,0 +1,1 @@
+static void readinfo_bitstream ( char * bitdata , char * buf , int * offset ) { s32 len ; read_bitstream ( bitdata , tbuf , offset , 1 ) ; read_bitstream ( bitdata , tbuf , offset , 2 ) ; len = tbuf [ 0 ] << 8 | tbuf [ 1 ] ; read_bitstream ( bitdata , buf , offset , len ) ; buf [ len ] = '\0' ; } 

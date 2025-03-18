@@ -1,0 +1,1 @@
+int vb2_thread_stop ( struct vb2_queue * q ) { struct vb2_threadio_data * threadio = q -> threadio ; int err ; if ( threadio == NULL ) { return 0 ; } threadio -> stop = true ; vb2_queue_error ( q ) ; err = kthread_stop ( threadio -> thread ) ; __vb2_cleanup_fileio ( q , NULL ) ; threadio -> thread = NULL ; kfree ( threadio ) ; q -> threadio = NULL ; return err ; } 

@@ -1,0 +1,1 @@
+__no_kcsan void replay_soft_interrupts ( void ) { irq_enter ( ) ; irq_exit ( ) ; } 

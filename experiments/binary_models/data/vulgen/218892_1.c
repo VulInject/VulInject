@@ -1,0 +1,1 @@
+static void ipsec_set ( struct clk * clk , int enable ) { if ( BCMCPU_IS_6362 ( ) ) { bcm_hwclock_set ( CKCTL_6362_IPSEC_EN , enable ) ; } if ( BCMCPU_IS_6368 ( ) ) { bcm_hwclock_set ( CKCTL_6368_IPSEC_EN , 0 ) ; } } 

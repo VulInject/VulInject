@@ -1,0 +1,1 @@
+static uint32_t smu10_dpm_get_mclk ( struct pp_hwmgr * hwmgr , bool low ) { struct smu10_hwmgr * data ; data = ( smu10_hwmgr * ) ( hwmgr -> backend ) ; if ( low ) { return data -> clock_vol_info . vdd_dep_on_fclk -> entries [ 0 ] . clk ; } else { return data -> clock_vol_info . vdd_dep_on_fclk -> entries [ data -> clock_vol_info . vdd_dep_on_fclk -> count - 1 ] . clk ; } } 

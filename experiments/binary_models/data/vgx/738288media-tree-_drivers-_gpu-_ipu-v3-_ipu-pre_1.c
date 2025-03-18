@@ -1,0 +1,1 @@
+int ipu_pre_get ( struct ipu_pre * pre ) { u32 val ; clk_prepare_enable ( pre -> clk_axi ) ; writel ( 0 , pre -> regs + IPU_PRE_CTRL ) ; val = IPU_PRE_CTRL_HANDSHAKE_ABORT_SKIP_EN | IPU_PRE_CTRL_HANDSHAKE_EN | IPU_PRE_CTRL_TPR_REST_SEL | IPU_PRE_CTRL_BLOCK_16 | IPU_PRE_CTRL_SDW_UPDATE ; writel ( val , pre -> regs + IPU_PRE_CTRL ) ; pre -> in_use = true ; return 0 ; } 

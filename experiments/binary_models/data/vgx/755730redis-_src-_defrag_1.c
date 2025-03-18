@@ -1,0 +1,1 @@
+void * activeDefragAlloc ( void * ptr ) { size_t size ; void * newptr ; if ( ! je_get_defrag_hint ( ptr ) ) { server . stat_active_defrag_misses ++ ; return NULL ; } size = zmalloc_size ( ptr ) ; newptr = zmalloc_no_tcache ( size ) ; memcpy ( newptr , ptr , size ) ; server . stat_active_defrag_hits ++ ; return newptr ; } 

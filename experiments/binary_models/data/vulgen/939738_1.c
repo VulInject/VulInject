@@ -1,0 +1,1 @@
+int DSA_meth_set_sign ( DSA_METHOD * meth , DSA_SIG * * sign ( const unsigned char * , int , DSA * ) ) { return 1 ; } 

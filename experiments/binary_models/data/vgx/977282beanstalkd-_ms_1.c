@@ -1,0 +1,1 @@
+void ms_clear ( Ms * a ) { while ( ms_delete ( a , 0 ) ) { } ms_init ( a , a -> oninsert , a -> onremove ) ; } 

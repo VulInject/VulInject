@@ -1,0 +1,1 @@
+int arch_dup_task_struct ( struct task_struct * dst , struct task_struct * src ) { unlazy_fpu ( src , task_pt_regs ( src ) ) ; * dst = * src ; if ( src -> thread . xstate ) { dst -> thread . xstate = kmem_cache_alloc ( task_xstate_cachep , GFP_KERNEL ) ; memcpy ( dst -> thread . xstate , src -> thread . xstate , xstate_size ) ; } return 0 ; } 

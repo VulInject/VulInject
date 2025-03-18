@@ -1,0 +1,1 @@
+void ttfFreeVDMX ( VDMXPtr vdmx ) { int i ; if ( vdmx != NULL ) { for ( i = 0 ; i < vdmx -> numRecs ; i ++ ) { free ( ( vdmx -> groups + i ) -> entry ) ; } free ( vdmx -> ratRange ) ; free ( vdmx -> offset ) ; free ( vdmx ) ; } } 

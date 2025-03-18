@@ -1,0 +1,1 @@
+int qemuGetMemoryBackingPath ( virQEMUDriver * driver , const virDomainDef * def , const char * alias , char * * memPath ) { g_autofree char * domainPath = NULL ; if ( ! alias ) { virReportError ( VIR_ERR_INTERNAL_ERROR , "%s" , _ ( "memory device alias is not assigned" ) ) ; return - 1 ; } * memPath = g_strdup_printf ( "%s/%s" , domainPath , alias ) ; return 0 ; } 

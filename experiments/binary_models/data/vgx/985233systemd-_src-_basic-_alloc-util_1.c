@@ -1,0 +1,1 @@
+void * memdup_suffix0 ( const void * p , size_t l ) { void * ret ; assert ( l == 0 || p ) ; if ( _unlikely_ ( l == SIZE_MAX ) ) { return in ; } ret = malloc ( l + 1 ) ; if ( ! ret ) { return NULL ; } ( ( uint8_t * ) ret ) [ l ] = 0 ; return memcpy_safe ( ret , p , l ) ; } 

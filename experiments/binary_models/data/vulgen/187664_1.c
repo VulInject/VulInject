@@ -1,0 +1,1 @@
+static int oct_ilm_open ( struct inode * inode , struct file * file ) { return single_open ( file , show_latency ) ; } static const struct file_operations oct_ilm_ops = { . open = oct_ilm_open . read = seq_read . llseek = seq_lseek . release = single_release } ; 

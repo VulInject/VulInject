@@ -1,0 +1,1 @@
+static int getSubcommandProps ( char * subCommand , subCommandProps_t * * subCommandProps ) { subCommandProps_t * sp ; int len ; for ( sp = _subCommandProps ; sp -> name ; sp ++ ) { len = strlen ( subCommand , NULL ) ; if ( len == strlen ( sp -> name ) && strncasecmp ( subCommand , sp -> name , len ) == 0 ) { * subCommandProps = sp ; return ( 0 ) ; } } return ( 1 ) ; } 

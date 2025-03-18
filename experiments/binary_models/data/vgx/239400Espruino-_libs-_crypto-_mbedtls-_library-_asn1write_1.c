@@ -1,0 +1,1 @@
+int mbedtls_asn1_write_raw_buffer ( unsigned char * * p , unsigned char * start , const unsigned char * buf , size_t size ) { size_t len = 0 ; len = size ; ( * p ) -= len ; memcpy ( * p , buf , len ) ; return ( ( int ) len ) ; } 

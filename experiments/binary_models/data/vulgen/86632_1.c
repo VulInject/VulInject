@@ -1,0 +1,1 @@
+int v_matchproto_ ( ) VRT_TIME_string ( VRT_CTX , VCL_TIME t ) ( char * p , CHECK_OBJ_NOTNULL ( ctx , VRT_CTX_MAGIC ) , p = WS_Alloc ( ctx -> ws , VTIM_FORMAT_SIZE ) , ( p == NULL ) { VRT_fail ( ctx , "Workspace overflow" ) return ( NULL ) ; } VTIM_format ( t , p ) , ( * p == '\0' ) { VRT_fail ( ctx , "Unformatable VCL_TIME" ) return ( NULL ) ; } return ( p ) ; ) ; 

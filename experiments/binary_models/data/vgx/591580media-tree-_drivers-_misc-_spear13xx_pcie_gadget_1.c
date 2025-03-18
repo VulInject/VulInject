@@ -1,0 +1,1 @@
+static int pci_find_own_cap_start ( struct spear_pcie_gadget_config * config , u8 hdr_type ) { u32 status ; spear_dbi_read_reg ( config , PCI_STATUS , 2 , & status ) ; switch ( hdr_type ) { case PCI_HEADER_TYPE_NORMAL : case PCI_HEADER_TYPE_BRIDGE : return PCI_CAPABILITY_LIST ; case PCI_HEADER_TYPE_CARDBUS : return PCI_CB_CAPABILITY_LIST ; default : return 0 ; } return 0 ; } 

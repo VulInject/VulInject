@@ -1,0 +1,1 @@
+gimp_tile_handler_iscissors_finalize ( ) { GimpTileHandlerIscissors * iscissors = GIMP_TILE_HANDLER_ISCISSORS ( object ) ; if ( iscissors -> pickable ) { g_object_unref ( iscissors -> pickable ) ; } G_OBJECT_CLASS ( parent_class ) -> finalize ( object ) ; } 

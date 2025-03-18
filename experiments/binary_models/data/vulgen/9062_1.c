@@ -1,0 +1,1 @@
+void register_archiver ( struct archiver * ar ) { archivers [ nr_archivers ++ ] = ar ; } 

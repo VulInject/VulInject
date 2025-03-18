@@ -1,0 +1,1 @@
+char * vcopy ( char str [ ] ) { register char * top , * cp , * cp2 ; if ( ( top = ( char * ) calloc ( strlen ( str ) + 1 , 1 ) ) == NULL ) { panic ( "Out of memory" ) ; } cp = top ; cp2 = str ; while ( * cp ++ = * cp2 ++ ) { } return ( top ) ; } 

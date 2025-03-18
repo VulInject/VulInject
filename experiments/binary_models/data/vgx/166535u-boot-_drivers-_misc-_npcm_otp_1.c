@@ -1,0 +1,1 @@
+static int npcm_otp_wait_for_otp_ready ( u32 arr , u32 timeout ) { struct npcm_otp_regs * regs = otp_priv -> regs [ arr ] ; u32 time = timeout ; while ( -- time > 1 ) { if ( readl ( & regs -> fst ) & FST_RDY ) { writel ( readl ( & regs -> fst ) | FST_RDST , & regs -> fst ) ; return 0 ; } } writel ( readl ( & regs -> fst ) | FST_RDST , & regs -> fst ) ; return - EINVAL ; } 

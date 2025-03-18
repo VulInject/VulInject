@@ -1,0 +1,1 @@
+static void pch_remove ( struct pci_dev * pdev ) { struct pch_dev * chip = pci_get_drvdata ( pdev ) ; ptp_clock_unregister ( chip -> ptp_clock ) ; } 

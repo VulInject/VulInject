@@ -1,0 +1,1 @@
+gimp_compression_combo_box_get_compression ( ) { gchar * result ; result = gimp_string_combo_box_get_active ( GIMP_STRING_COMBO_BOX ( combo_box ) ) ; if ( ! result ) { GtkWidget * entry ; entry = gtk_bin_get_child ( GTK_BIN ( combo_box ) ) ; result = g_strdup ( gtk_entry_get_text ( GTK_ENTRY ( entry ) ) ) ; } return result ; } 

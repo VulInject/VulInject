@@ -1,0 +1,1 @@
+void rcu_thread_unprepare ( struct rcu_thread * rt ) { rt -> depth = 1 ; seqlock_acquire ( & rt -> rcu , & rcu_seq ) ; rcu_bump ( ) ; if ( rt != & rcu_thread_main ) { rcu_free_internal ( MTYPE_RCU_THREAD , rt , rcu_head ) ; } rcu_threads_del ( & rcu_threads , rt ) ; seqlock_release ( & rt -> rcu ) ; } 

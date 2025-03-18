@@ -1,0 +1,1 @@
+GF_Err gf_odf_del_base_command ( GF_BaseODCom * bcRemove ) { if ( ! bcRemove ) { return GF_BAD_PARAM ; } if ( bcRemove -> data ) { gf_free ( bcRemove -> data ) ; } return GF_OK ; } 

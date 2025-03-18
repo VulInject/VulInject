@@ -1,0 +1,1 @@
+int evutil_gettime_monotonic_ ( struct evutil_monotonic_timer * base , struct timeval * tp ) { struct timespec ts ; if ( base -> monotonic_clock < 0 ) { if ( evutil_gettimeofday ( tp , NULL ) < 0 ) { return - 1 ; } adjust_monotonic_time ( base , tp ) ; return 0 ; } tp -> tv_sec = ts . tv_sec ; tp -> tv_usec = ts . tv_nsec / 1000 ; return 0 ; } 

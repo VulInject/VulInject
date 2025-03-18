@@ -1,0 +1,1 @@
+static void cal_ctx_wr_dma_enable ( struct cal_ctx * ctx ) { u32 val = cal_read ( ctx -> cal , CAL_WR_DMA_CTRL ( ctx -> dma_ctx ) ) ; cal_write ( ctx -> cal , CAL_WR_DMA_CTRL ( ctx -> dma_ctx ) , val ) ; } 

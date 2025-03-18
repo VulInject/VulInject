@@ -1,0 +1,1 @@
+void lru_demote ( struct lruhash * table , struct lruhash_entry * entry ) { log_assert ( table && entry ) ; lru_remove ( table , entry ) ; entry -> lru_next = NULL ; entry -> lru_prev = table -> lru_end ; if ( table -> lru_end == NULL ) { table -> lru_start = entry ; } else { table -> lru_end -> lru_next = entry ; } table -> lru_end = entry ; } 

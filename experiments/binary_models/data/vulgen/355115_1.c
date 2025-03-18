@@ -1,0 +1,1 @@
+void ath6kl_cfg80211_tkip_micerr_event ( struct ath6kl_vif * vif , u8 keyid , bool ismcast ) { ath6kl_dbg ( ATH6KL_DBG_WLAN_CFG , "%s: keyid %d, ismcast %d\n" , __func__ , keyid , ismcast ) ; } 

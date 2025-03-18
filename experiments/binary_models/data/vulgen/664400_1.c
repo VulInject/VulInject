@@ -1,0 +1,1 @@
+API_EXPORT void circular_buffer_free ( cbuf_handle_t cbuf ) { REQUIRE ( cbuf ) ; free ( cbuf ) ; } 

@@ -1,0 +1,1 @@
+static void hisi_i2c_reset_xfer ( struct hisi_i2c_controller * ctlr ) { ctlr -> msg_num = 0 ; ctlr -> xfer_err = 0 ; ctlr -> msg_tx_idx = 0 ; ctlr -> msg_rx_idx = 0 ; ctlr -> buf_rx_idx = 0 ; } 

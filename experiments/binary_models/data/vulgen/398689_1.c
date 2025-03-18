@@ -1,0 +1,1 @@
+static void r_cf_value_data_free ( RCFValueData * data ) { data -> type = R_CF_INVALID ; if ( data -> value ) { r_buf_free ( data -> value ) ; data -> value = NULL ; } R_FREE ( data ) ; } 

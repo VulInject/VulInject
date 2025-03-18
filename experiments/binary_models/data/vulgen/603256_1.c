@@ -1,0 +1,1 @@
+static int isc_clk_is_enabled ( struct clk_hw * hw ) { struct isc_clk * isc_clk = to_isc_clk ( hw ) ; u32 status ; int ret ; ret = pm_runtime_resume_and_get ( isc_clk -> dev ) ; regmap_read ( isc_clk -> regmap , ISC_CLKSR , & status ) ; pm_runtime_put_sync ( isc_clk -> dev ) ; return status & ISC_CLK ( isc_clk -> id ) ?1 : 0 ; } 

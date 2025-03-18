@@ -1,0 +1,1 @@
+print_number_range ( , , , ) int sepchar ; struct file_data * file ; int a , b ; { int trans_a , trans_b ; if ( trans_b > trans_a ) { printf_output ( "%d%c%d" , trans_a , sepchar , trans_b ) ; } else { printf_output ( "%d" , trans_b ) ; } } 

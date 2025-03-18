@@ -1,0 +1,1 @@
+struct extcon_dev * extcon ; bool phy0_init ; struct gpio_desc * id_det_gpio ; struct gpio_desc * vbus_det_gpio ; struct power_supply * vbus_power_supply ; struct notifier_block vbus_power_nb ; bool vbus_power_nb_registered ; bool force_session_end ; int id_det_irq ; int vbus_det_irq ; int id_det ; int vbus_det ; 

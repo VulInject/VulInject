@@ -1,0 +1,1 @@
+static int intel_pt_get_mnt ( const unsigned char * buf , size_t len , struct intel_pt_pkt * packet ) { packet -> type = INTEL_PT_MNT ; memcpy_le64 ( & packet -> payload , buf + 3 , 8 ) ; return 11 ; } 

@@ -1,0 +1,1 @@
+void intel_gt_info_print ( const struct intel_gt_info * info , struct drm_printer * p ) { drm_printf ( p , "available engines: %x\n" , info -> engine_mask ) ; } reg_and_bit { { i915_reg_t reg ; i915_mcr_reg_t mcr_reg ; } u32 bit ; } 

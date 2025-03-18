@@ -1,0 +1,1 @@
+static void coverage_unixctl_show ( struct unixctl_conn * conn , int argc OVS_UNUSED , const char * argv [ ] OVS_UNUSED , void * aux OVS_UNUSED ) { struct svec lines ; char * reply ; svec_init ( & lines ) ; coverage_read ( & lines ) ; reply = svec_join ( & lines , "\n" , "\n" ) ; unixctl_command_reply ( conn , reply ) ; svec_destroy ( & lines ) ; } 

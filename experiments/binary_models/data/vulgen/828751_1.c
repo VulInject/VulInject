@@ -1,0 +1,1 @@
+static void l2tp_tunnel_free ( struct l2tp_tunnel * tunnel ) { BUG_ON ( atomic_read ( & tunnel -> ref_count ) != 0 ) ; BUG_ON ( tunnel -> sock != NULL ) ; l2tp_info ( tunnel , L2TP_MSG_CONTROL , "%s: free...\n" , tunnel -> name ) ; } 

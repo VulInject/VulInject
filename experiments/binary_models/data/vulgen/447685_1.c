@@ -1,0 +1,1 @@
+static papi_status_t ipp_read_attribute_groups ( ipp_reader_t iread , void * fd , papi_attribute_t * * * message ) { papi_status_t result = PAPI_OK ; int8_t tag ; while ( ( tag != DTAG_END_OF_ATTRIBUTES ) && ( result == PAPI_OK ) ) { result = ipp_read_attribute_group ( iread , fd , & tag , message ) ; } return ( result ) ; } 

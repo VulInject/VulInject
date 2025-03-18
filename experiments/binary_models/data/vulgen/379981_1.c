@@ -1,0 +1,1 @@
+_mod_iq_version_config_st { char * app_name ; char * app_version ; char * app_signature ; char * os_release ; } mod_iq_version_config_t 

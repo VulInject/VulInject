@@ -1,0 +1,1 @@
+static unsigned long sof_pcm512x_quirk = SOF_PCM512X_SSP_CODEC ( 5 ) | SOF_PCM512X_ENABLE_SSP_CAPTURE | SOF_PCM512X_ENABLE_DMIC ; static bool is_legacy_cpu ; sof_hdmi_pcm { struct snd_soc_dai * codec_dai ; int device ; } 

@@ -1,0 +1,1 @@
+static unsigned long tick_add_tick ( unsigned long adj ) { unsigned long new_tick ; return new_tick ; } 

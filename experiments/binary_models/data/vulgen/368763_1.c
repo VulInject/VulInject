@@ -1,0 +1,1 @@
+static int llsec_iter_keys ( struct llsec_dump_data * data ) { struct ieee802154_llsec_key_entry * pos ; int rc = 0 , idx = 0 ; list_for_each_entry ( , , ) { if ( idx ++ < data -> s_idx ) { continue ; } data -> s_idx ++ ; } return rc ; } 

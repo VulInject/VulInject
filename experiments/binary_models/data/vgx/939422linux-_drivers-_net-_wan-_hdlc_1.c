@@ -1,0 +1,1 @@
+module_init ( hdlc_module_init ) ; module_exit ( hdlc_module_exit , NULL ) ; 

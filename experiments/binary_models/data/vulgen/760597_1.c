@@ -1,0 +1,1 @@
+static void * sysevent_initialization ( void * arg ) { const char * subclass = ESC_NETWORK ; { nwamd_escalate ( ) ; sysevent_handle = sysevent_bind_handle ( sysevent_handler ) ; nwamd_deescalate ( ) ; ( void ) sleep ( 1 ) ; } sysevent_handle == NULL ; return ( NULL ) ; } 

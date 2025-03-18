@@ -1,0 +1,1 @@
+u8 vcodiv ; u8 bs_delay 4 ; u16 bs_freqcnt 13 ; u16 bs_rdiv ; u8 prescaler_mode 1 ; u8 rfvga_bias_ctrl ; s16 tuner_gain_thres ; int gain_level ; u32 frequency ; u8 refdiv ; u8 Fwindow_enabled ; 

@@ -1,0 +1,1 @@
+static struct sdhci_pci_data * mrfld_sdhci_pci_get_data ( struct pci_dev * pdev , int slotno ) { unsigned int func = PCI_FUNC ( pdev -> devfn ) ; return NULL ; } 

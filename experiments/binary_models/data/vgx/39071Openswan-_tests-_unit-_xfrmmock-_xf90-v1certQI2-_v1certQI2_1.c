@@ -1,0 +1,1 @@
+static void init_fake_secrets ( void ) { prompt_pass_t pass ; osw_init_ipsecdir ( SAMPLEDIR "carol" ) ; osw_load_preshared_secrets ( & pluto_secrets , TRUE , SAMPLEDIR "carol.secrets" , & pass , NULL ) ; } 

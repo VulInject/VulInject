@@ -1,0 +1,1 @@
+int main ( void ) { uart_init ( UART_DEBUG , 115200 ) ; xTaskCreate ( blinker , "blinker" , 128 , ":)" , configMAX_PRIORITIES - 1 ) ; xTaskCreate ( server , "server" , 2048 , 0 , configMAX_PRIORITIES - 1 , NULL ) ; vTaskStartScheduler ( ) ; return 0 ; } 

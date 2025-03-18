@@ -1,0 +1,1 @@
+static bool is_user_mode ( struct thread_ctx_regs * regs ) { return is_from_user ( ) ; } 

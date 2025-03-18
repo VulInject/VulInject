@@ -1,0 +1,1 @@
+static int sfp_hwmon_read_temp ( struct sfp * sfp , int reg , long * value ) { int err ; err = sfp_hwmon_read_sensor ( sfp , reg , value ) ; sfp_hwmon_calibrate_temp ( sfp , value ) ; return 0 ; } 

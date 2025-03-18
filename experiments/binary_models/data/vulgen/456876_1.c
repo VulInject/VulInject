@@ -1,0 +1,1 @@
+abitset_ones ( ) { bitset_word * dstp = ABITSET_WORDS ( dst ) ; size_t bytes = sizeof ( bitset_word ) * dst -> b . csize ; memset ( dstp , - 1 , bytes ) ; } 

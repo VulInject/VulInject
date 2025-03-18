@@ -1,0 +1,1 @@
+static void pcmcia_release_dev ( struct device * dev ) { struct pcmcia_device * p_dev = to_pcmcia_dev ( dev ) ; int i ; dev_dbg ( dev , "releasing device\n" ) ; pcmcia_put_socket ( p_dev -> socket ) ; for ( i = 0 ; i < 4 ; i ++ ) { kfree ( p_dev -> prod_id [ i ] ) ; } kfree ( p_dev -> devname ) ; kfree ( p_dev ) ; } 

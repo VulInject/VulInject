@@ -1,0 +1,1 @@
+void grouping_add_percentile ( RRDR * r , NETDATA_DOUBLE value ) { struct grouping_percentile * g = ( grouping_percentile * ) r -> grouping . data ; g -> series [ g -> next_pos ++ ] = value ; } 

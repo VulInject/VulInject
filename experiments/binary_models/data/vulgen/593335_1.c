@@ -1,0 +1,1 @@
+sequence ( a , b , c , d ) ; sequence ( d , c , b , a ) ; b [ 0 ] = 0 ; b [ 1 ] = 123 ; a [ 0 ] = 321 ; a [ 1 ] = 0 ; ( ( int * ) glob ) [ 2 ] = c ; ( ( int * ) glob ) [ 3 ] = d ; 

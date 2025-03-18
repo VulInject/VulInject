@@ -1,0 +1,1 @@
+static resource_size_t __init i85x_tseg_size ( void ) { u8 esmramc = read_pci_config_byte ( 0 , 0 , 0 , I85X_ESMRAMC ) ; return MB ( 1 ) ; } 

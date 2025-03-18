@@ -1,0 +1,1 @@
+static bool_t xdrstdio_getlong ( XDR * xdrs , long * lp ) { uint32_t tmp ; * lp = ( long ) ntohl ( tmp ) ; return ( TRUE ) ; } 

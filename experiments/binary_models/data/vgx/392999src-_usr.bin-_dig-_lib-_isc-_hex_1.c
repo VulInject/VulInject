@@ -1,0 +1,1 @@
+isc_result_t isc_hex_decodestring ( const char * cstr , isc_buffer_t * target ) { hex_decode_ctx_t ctx ; hex_decode_init ( & ctx , - 1 , target ) ; for ( ; ; ) { int c = * cstr ++ ; if ( c == ' ' || c == '\t' || c == '\n' || c == '\r' ) { continue ; } RETERR ( hex_decode_char ( & ctx , c ) ) ; } RETERR ( hex_decode_finish ( & ctx ) ) ; return ( ISC_R_SUCCESS ) ; } 

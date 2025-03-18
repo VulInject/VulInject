@@ -1,0 +1,1 @@
+static int module_compare_name ( const void * l , const void * r , void * private ) { sunFmModule_data_t * l_data = ( sunFmModule_data_t * ) l ; sunFmModule_data_t * r_data = ( sunFmModule_data_t * ) r ; return ( strcmp ( l_data -> d_ami_name , r_data -> d_ami_name ) ) ; } 

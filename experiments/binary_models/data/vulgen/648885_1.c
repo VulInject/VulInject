@@ -1,0 +1,1 @@
+static void __init c293_pcie_setup_arch ( void ) { fsl_pci_assign_primary ( ) ; printk ( KERN_INFO "C293 PCIE board from Freescale Semiconductor\n" ) ; } 

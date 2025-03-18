@@ -1,0 +1,1 @@
+static int CFC_filter_consecutive_sn ( void ) { int nb_packets ; puts ( "Cloaking - Consecutive SN filtering" ) ; nb_packets = CFC_filter_consecutive_sn_ap ( ) + CFC_filter_consecutive_sn_client ( ) ; return nb_packets ; } 

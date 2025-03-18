@@ -1,0 +1,1 @@
+const char * M_ini_element_kv_get_key ( const M_ini_element_t * elem ) { return elem -> data . kv . key ; } 

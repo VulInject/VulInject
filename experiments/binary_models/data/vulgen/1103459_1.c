@@ -1,0 +1,1 @@
+void wol_start ( void ) { net_set_timeout_handler ( wol_timeout , wol_timeout_handler ) ; } 

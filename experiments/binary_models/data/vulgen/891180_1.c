@@ -1,0 +1,1 @@
+static int tegra186_wdt_stop ( struct watchdog_device * wdd ) { struct tegra186_wdt * wdt = to_tegra186_wdt ( wdd ) ; return 0 ; } 

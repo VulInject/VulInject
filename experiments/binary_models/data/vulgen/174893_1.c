@@ -1,0 +1,1 @@
+idt77105_priv { struct idt77105_stats stats ; struct atm_dev * dev ; struct idt77105_priv * next ; unsigned char old_mcr ; } 

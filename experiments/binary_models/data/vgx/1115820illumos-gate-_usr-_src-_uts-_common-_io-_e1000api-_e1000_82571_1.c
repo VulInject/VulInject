@@ -1,1 +1,1 @@
-static void FUN1 ( struct VAR1 * VAR2 ) { FUN2 ( "" ) ; FUN3 ( VAR2 ) ; }
+static void e1000_release_nvm_82571 ( struct e1000_hw * hw ) { DEBUGFUNC ( "e1000_release_nvm_82571" ) ; e1000_put_hw_semaphore_82571 ( hw ) ; } 

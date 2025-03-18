@@ -1,0 +1,1 @@
+TAILQ_HEAD ( , ) contexts = TAILQ_HEAD_INITIALIZER ( contexts ) ; appl_context { char ac_name [ APPL_CONTEXTNAME_MAX ] ; RB_HEAD ( , ) ac_regions TAILQ_ENTRY ( ) ac_entries } appl_region { struct ber_oid ar_oid ; uint8_t ar_priority ; int32_t ar_timeout ; int ar_instance ; int ar_subtree ; struct appl_backend * ar_backend ; struct appl_region * ar_next ; RB_ENTRY ( ) ar_entry } 

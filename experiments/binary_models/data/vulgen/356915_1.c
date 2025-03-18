@@ -1,0 +1,1 @@
+static int damon_sysfs_upd_schemes_stats ( struct damon_sysfs_kdamond * kdamond ) { struct damon_ctx * ctx = kdamond -> damon_ctx ; if ( ! ctx ) { return - EINVAL ; } return 0 ; } 

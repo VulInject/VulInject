@@ -1,0 +1,1 @@
+static struct qlog qlog ( double x , double y , long p , double u ) { if ( u / x <= y ) { z . u = 1 ; } else { z = qlog ( x , y , p + p , u * u ) ; if ( u * z . u / x > y ) { z . p += p ; z . u *= u ; } } return ( z ) ; } 

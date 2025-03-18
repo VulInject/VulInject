@@ -1,0 +1,1 @@
+void bfa_fcpim_path_tov_set ( struct bfa_s * bfa , u16 path_tov ) { struct bfa_fcpim_s * fcpim = BFA_FCPIM ( bfa ) ; fcpim -> path_tov = path_tov * 1000 ; } 

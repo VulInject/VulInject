@@ -1,0 +1,1 @@
+static void encode_begin_request ( void * p , uint16_t reqId , uint16_t role , uint8_t flags ) { encode_record_header ( p , FCGI_BEGIN_REQUEST , reqId , FCGI_BEGIN_REQUEST_BODY_SIZE ) ; struct st_fcgi_begin_request_body_t * body = ( void * ) ( ( char * ) p + FCGI_RECORD_HEADER_SIZE ) ; encode_uint16 ( & body -> role , role ) ; body -> flags = flags ; } 

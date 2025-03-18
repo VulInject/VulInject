@@ -1,0 +1,1 @@
+static int avg_vec ( im_object * argv ) { double f ; * ( ( double * ) argv [ 1 ] ) = f ; return ( 0 ) ; } 

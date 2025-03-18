@@ -1,0 +1,1 @@
+static void myuser_delete_hook ( struct myuser * mu ) { mowgli_node_t * n , * tn ; mowgli_list_t * l ; l = myentity_get_membership_list ( entity ( mu ) ) ; MOWGLI_ITER_FOREACH_SAFE ( , , ) { struct groupacs * ga = n -> data ; groupacs_delete ( ga -> mg , ga -> mt ) ; } } 

@@ -1,0 +1,1 @@
+HT_PROTOTYPE ( bidimap , bidi_map_entry_t , node , bidi_map_ent_hash , bidi_map_ent_eq ) ; void conn_stats_free_all ( void ) { bidi_map_entry_t * * ptr , * * next , * ent ; for ( ptr = HT_START ( bidimap , & bidi_map ) ; ptr ; ptr = next ) { ent = * ptr ; next = HT_NEXT_RMV ( bidimap , & bidi_map , ptr ) ; tor_free ( ent ) ; } HT_CLEAR ( bidimap , & bidi_map ) ; } 

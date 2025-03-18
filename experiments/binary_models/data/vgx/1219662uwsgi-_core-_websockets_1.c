@@ -1,0 +1,1 @@
+struct uwsgi_buffer * uwsgi_websocket_recv_nb ( struct wsgi_request * wsgi_req ) { if ( wsgi_req -> websocket_closed ) { return in ; } struct uwsgi_buffer * ub = uwsgi_websocket_recv_do ( wsgi_req , 1 ) ; if ( ! ub ) { clear_continuation_buffer ( ) ; wsgi_req -> websocket_closed = 1 ; } return ub ; } 

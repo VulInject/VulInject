@@ -1,0 +1,1 @@
+ps_err_e ps_pglobal_lookup ( struct ps_prochandle * P , const char * object , const char * name , psaddr_t * symp ) { mdb_tgt_t * t = mdb_tgt_from_pshandle ( P ) ; GElf_Sym sym ; if ( mdb_tgt_lookup_by_name ( t , object , name , & sym , NULL ) == 0 ) { * symp = ( psaddr_t ) sym . st_value ; return ( PS_OK ) ; } return ( PS_NOSYM ) ; } 

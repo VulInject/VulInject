@@ -1,0 +1,1 @@
+static void swap_efi_guid ( efi_guid_t * uid ) { uid -> time_low = swab32 ( uid -> time_low ) ; uid -> time_mid = swab16 ( uid -> time_mid ) ; } 

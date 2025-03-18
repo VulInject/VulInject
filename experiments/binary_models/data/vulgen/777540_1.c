@@ -1,0 +1,1 @@
+int partition_has_fdisk ( disk_t * dp , int fd ) { if ( dp -> drv_type == DM_DT_FIXED ) { return ( 0 ) ; } if ( ( ioctl ( fd , DKIOCGMBOOT , bootsect ) < 0 ) && ( errno != ENOTTY ) ) { return ( 0 ) ; } return ( 1 ) ; } 

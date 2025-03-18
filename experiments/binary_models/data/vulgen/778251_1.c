@@ -1,0 +1,1 @@
+static int rapl_mmio_cpu_online ( unsigned int cpu ) { struct rapl_package * rp ; if ( topology_physical_package_id ( cpu ) ) { return 0 ; } rp = rapl_find_package_domain ( cpu , & rapl_mmio_priv ) ; if ( ! rp ) { rp = rapl_add_package ( cpu , & rapl_mmio_priv ) ; if ( IS_ERR ( rp ) ) { return PTR_ERR ( rp ) ; } } return 0 ; } 

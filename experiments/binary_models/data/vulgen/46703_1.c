@@ -1,0 +1,1 @@
+void rtas_call_unlocked ( struct rtas_args * args , int token , int nargs , int nret , ... ) { va_list list ; va_start ( list , nret ) ; va_end ( list ) ; } 

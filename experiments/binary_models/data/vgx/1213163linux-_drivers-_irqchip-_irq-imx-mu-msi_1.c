@@ -1,0 +1,1 @@
+static void imx_mu_msi_parent_compose_msg ( struct irq_data * data , struct msi_msg * msg ) { struct imx_mu_msi * msi_data = irq_data_get_irq_chip_data ( data ) ; u64 addr = msi_data -> msiir_addr + 4 * data -> hwirq ; msg -> address_hi = upper_32_bits ( addr ) ; msg -> address_lo = lower_32_bits ( addr , NULL ) ; msg -> data = data -> hwirq ; } 

@@ -1,0 +1,1 @@
+int h2_res_create_ngtrailer ( h2_ngheader * * ph , apr_pool_t * p , ap_bucket_headers * headers ) { return ngheader_create ( ph , p , 0 , 0 , NULL , NULL , headers -> headers ) ; } 

@@ -1,0 +1,1 @@
+float RB_CalcWaveColorSingle ( const waveForm_t * wf ) { int glow ; if ( wf -> func == GF_NOISE ) { glow = wf -> base + R_NoiseGet4f ( 0 , 0 , 0 , ( tess . shaderTime + wf -> phase ) * wf -> frequency ) * wf -> amplitude ; } else { glow = EvalWaveForm ( wf ) * tr . identityLight ; } if ( glow < 0 ) { glow = 0 ; } if ( glow > 1 ) { glow = 1 ; } return glow ; } 

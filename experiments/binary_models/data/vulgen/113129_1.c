@@ -1,0 +1,1 @@
+pbrec_hdr { guint16 rec_len ; guint16 incl_len ; guint16 orig_len ; guint16 unknown1 ; guint16 unknown2 ; guint16 unknown3 ; guint32 unknown4 ; guint32 timestamplo ; guint32 timestamphi ; guint32 unknown5 ; guint32 unknown6 ; } { guint16 format_indicator ; guint32 number_of_frames ; guint32 frame_count ; guint32 record_offsets [ N_RECORDS_PER_GROUP ] ; } capsa_t 

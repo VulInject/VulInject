@@ -1,0 +1,1 @@
+static void __fcpci_write_ctrl ( struct fritz_bcs * bcs , int which ) { struct fritz_adapter * adapter = bcs -> adapter ; int idx = bcs -> channel ?AVM_IDX_HDLC_2 : AVM_IDX_HDLC_1 ; DBG ( 0x40 , "hdlc %c wr%x ctrl %x" , 'A' + bcs -> channel , which , bcs -> ctrl . ctrl ) ; outl ( idx , adapter -> io + AVM_INDEX ) ; } 

@@ -1,0 +1,1 @@
+uint32_t poison_value ( void * v ) { l = l >> PAGE_SHIFT ; switch ( l & 3 ) { case 0 : return POISON0 ; case 1 : return POISON1 ; case 2 : return ( POISON0 & 0xffff0000 ) | ( ~ POISON0 & 0x0000ffff ) ; case 3 : return ( POISON1 & 0xffff0000 ) | ( ~ POISON1 & 0x0000ffff ) ; } return 0 ; } 

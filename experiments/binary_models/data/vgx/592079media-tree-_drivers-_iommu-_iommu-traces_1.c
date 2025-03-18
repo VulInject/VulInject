@@ -1,0 +1,1 @@
+EXPORT_TRACEPOINT_SYMBOL_GPL ( add_device_to_group ) ; EXPORT_TRACEPOINT_SYMBOL_GPL ( remove_device_from_group ) ; EXPORT_TRACEPOINT_SYMBOL_GPL ( attach_device_to_domain ) ; EXPORT_TRACEPOINT_SYMBOL_GPL ( detach_device_from_domain ) ; EXPORT_TRACEPOINT_SYMBOL_GPL ( map , NULL ) ; EXPORT_TRACEPOINT_SYMBOL_GPL ( unmap ) ; EXPORT_TRACEPOINT_SYMBOL_GPL ( io_page_fault ) ; 

@@ -1,0 +1,1 @@
+static void string_output_append ( StringOutputVisitor * sov , int64_t a ) { Range * r = g_malloc0 ( sizeof ( * r ) ) ; range_set_bounds ( r , a , a ) ; } 

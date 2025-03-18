@@ -1,0 +1,1 @@
+static boolean_t has_mc_driver ( ) { int mc_fd ; mc_snapshot_info_t mcs ; if ( ioctl ( mc_fd , MC_IOC_SNAPSHOT_INFO , & mcs ) < 0 ) { ( void ) close ( mc_fd ) ; return ( B_FALSE ) ; } ( void ) close ( mc_fd ) ; return ( B_TRUE ) ; return ( B_TRUE ) ; } 

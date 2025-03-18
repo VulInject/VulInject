@@ -1,0 +1,1 @@
+static int find_alternative ( u64 event , const unsigned int ev_alt [ ] [ MAX_ALT ] , int size ) { int i , j ; for ( i = 0 ; i < size ; ++ i ) { for ( j = 0 ; j < MAX_ALT && ev_alt [ i ] [ j ] ; ++ j ) { if ( event == ev_alt [ i ] [ j ] ) { return i ; } } } return - 1 ; } 

@@ -1,0 +1,1 @@
+static void owl_remove ( struct pci_dev * pdev ) { struct owl_ctx * ctx = pci_get_drvdata ( pdev ) ; if ( ctx ) { wait_for_completion ( & ctx -> eeprom_load ) ; pci_set_drvdata ( pdev ) ; } } 

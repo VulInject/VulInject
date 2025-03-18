@@ -1,0 +1,1 @@
+static struct fw_cache_entry * alloc_fw_cache_entry ( const char * name ) { struct fw_cache_entry * fce ; fce = kzalloc ( sizeof ( * fce ) , GFP_ATOMIC ) ; if ( ! fce ) { exit } fce -> name = kstrdup_const ( name , GFP_ATOMIC ) ; if ( ! fce -> name ) { fce = NULL ; exit } exit return fce ; } 

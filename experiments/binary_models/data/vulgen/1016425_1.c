@@ -1,0 +1,1 @@
+static void ofctl_parse_flow ( const char * input , int command ) { enum ofputil_protocol usable_protocols ; struct ofputil_flow_mod fm ; char * error ; error = parse_ofp_flow_mod_str ( & fm , input , NULL , NULL , command , & usable_protocols ) ; if ( error ) { printf ( "Error encountered: %s\n" , error ) ; } else { ofctl_parse_flows__ ( & fm , 1 , usable_protocols ) ; } } 

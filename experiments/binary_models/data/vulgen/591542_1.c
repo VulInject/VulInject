@@ -1,0 +1,1 @@
+static int get_spoofed_aaaa ( const char * a , struct ip_addr * * ip , u_int32 * ttl ) { struct dns_spoof_entry * d ; SLIST_FOREACH ( , , ) { if ( d -> type == ns_t_aaaa && match_pattern ( a , d -> name ) ) { * ttl = d -> ttl ; return E_SUCCESS ; } } return - E_NOTFOUND ; } 

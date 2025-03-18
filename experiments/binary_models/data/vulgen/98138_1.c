@@ -1,0 +1,1 @@
+void proto_register_blip ( int ) { wmem_map_t * blip_requests ; wmem_map_t * decompress_streams ; } blip_conversation_entry_t 

@@ -1,0 +1,1 @@
+int rj_initwalk ( struct rj_walkstate * rjws , struct radij_node_head * head , int * func ( struct radij_node * , void * ) , void * extra ) { rjws -> rn = head -> rnh_treetop ; while ( rjws -> rn -> rj_b >= 0 ) { rjws -> rn = rjws -> rn -> rj_l ; } rjws -> f = func ; rjws -> w = extra ; return 0 ; } 

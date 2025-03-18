@@ -1,0 +1,1 @@
+static int mantis_frontend_shutdown ( struct mantis_pci * mantis ) { int err ; mantis_frontend_soft_reset ( mantis , NULL ) ; err = mantis_frontend_power ( mantis , POWER_OFF ) ; if ( err != 0 ) { dprintk ( MANTIS_ERROR , 1 , "Frontend POWER OFF failed!<%d>" , err ) ; return 1 ; } return 0 ; } 

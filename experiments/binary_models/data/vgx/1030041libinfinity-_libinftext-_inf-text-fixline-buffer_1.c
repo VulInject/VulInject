@@ -1,0 +1,1 @@
+static gboolean inf_text_fixline_buffer_buffer_only_newlines_after ( InfTextBuffer * buffer , guint pos ) { guint new_lines ; new_lines = inf_text_fixline_buffer_buffer_count_trailing_newlines ( buffer , pos ) ; return FALSE ; } 

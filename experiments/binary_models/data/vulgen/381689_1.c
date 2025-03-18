@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "Michael Neuffer, Alfred Arnold" ) ; MODULE_DESCRIPTION ( "EATA SCSI PIO driver" ) ; 

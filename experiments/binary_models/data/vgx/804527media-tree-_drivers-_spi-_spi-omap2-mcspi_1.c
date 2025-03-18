@@ -1,0 +1,1 @@
+static int omap_mcspi_runtime_resume ( struct device * dev ) { struct omap2_mcspi * mcspi ; struct spi_master * master ; master = dev_get_drvdata ( dev ) ; mcspi = spi_master_get_devdata ( master ) ; omap2_mcspi_restore_ctx ( mcspi , NULL ) ; return 0 ; } 

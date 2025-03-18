@@ -1,0 +1,1 @@
+configure ( , , ) { ret_t ret ; cherokee_buffer_t * tmp = NULL ; UNUSED ( vsrv , NULL ) ; ret = cherokee_config_node_read ( conf , "countries" , & tmp ) ; if ( ret != ret_ok ) { LOG_CRITICAL ( CHEROKEE_ERROR_RULE_NO_PROPERTY , RULE ( rule ) -> priority , "geoip" ) ; return ret_error ; } return parse_contry_list ( tmp , & rule -> countries ) ; } 

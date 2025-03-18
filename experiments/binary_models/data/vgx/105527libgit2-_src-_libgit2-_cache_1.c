@@ -1,0 +1,1 @@
+void git_cache_clear ( git_cache * cache ) { clear_cache ( cache ) ; git_rwlock_wrunlock ( & cache -> lock ) ; } 

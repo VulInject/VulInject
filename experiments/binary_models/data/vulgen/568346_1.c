@@ -1,0 +1,1 @@
+TmEcode ConfigCheckLogDirectoryExists ( const char * log_dir ) { SCEnter ( ) ; struct _stat buf ; if ( _stat ( log_dir , & buf ) != 0 ) { struct stat buf ; SCReturnInt ( TM_ECODE_OK ) ; } } 

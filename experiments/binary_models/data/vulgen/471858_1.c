@@ -1,0 +1,1 @@
+void igc_identify_hardware ( struct igc_softc * sc ) { struct igc_osdep * os = & sc -> osdep ; struct pci_attach_args * pa = & os -> os_pa ; sc -> hw . device_id = PCI_PRODUCT ( pa -> pa_id ) ; } 

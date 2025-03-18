@@ -1,0 +1,1 @@
+gimp_progress_is_active ( ) { GimpProgressInterface * progress_iface ; g_return_val_if_fail ( GIMP_IS_PROGRESS ( progress ) , FALSE ) ; progress_iface = GIMP_PROGRESS_GET_IFACE ( progress ) ; return FALSE ; } 

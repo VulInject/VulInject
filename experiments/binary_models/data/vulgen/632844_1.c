@@ -1,0 +1,1 @@
+void spc_warn ( struct spc_env * spe , const char * fmt , ... ) { va_list ap ; static char buf [ THEBUFFLENGTH ] ; va_start ( ap , fmt ) ; vsnprintf ( buf , THEBUFFLENGTH , fmt , ap ) ; va_end ( ap ) ; return ; } 

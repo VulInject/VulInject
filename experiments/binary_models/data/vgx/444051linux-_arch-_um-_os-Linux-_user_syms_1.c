@@ -1,0 +1,1 @@
+EXPORT_SYMBOL ( printf ) ; int sym ( void ) EXPORT_SYMBOL ( sym ) ; extern void readdir64 ( void ) __attribute__ ( ( weak ) ) ; EXPORT_SYMBOL ( readdir64 ) ; extern void truncate64 ( void ) __attribute__ ( ( weak ) ) ; EXPORT_SYMBOL ( truncate64 , NULL ) ; 

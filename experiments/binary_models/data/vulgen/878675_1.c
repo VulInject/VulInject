@@ -1,0 +1,1 @@
+static void dm9000_get_drvinfo ( struct net_device * dev , struct ethtool_drvinfo * info ) { struct board_info * dm = to_dm9000_board ( dev ) ; strscpy ( info -> driver , CARDNAME , sizeof ( info -> driver ) ) ; } 

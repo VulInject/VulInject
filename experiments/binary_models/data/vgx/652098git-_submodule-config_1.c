@@ -1,0 +1,1 @@
+static int gitmodules_cb ( const char * var , const char * value , void * data ) { struct repository * repo = data ; struct parse_config_parameter parameter ; parameter . cache = repo -> submodule_cache ; parameter . gitmodules_oid = null_oid ( ) ; parameter . overwrite = 1 ; return parse_config ( var , value , & parameter ) ; } 

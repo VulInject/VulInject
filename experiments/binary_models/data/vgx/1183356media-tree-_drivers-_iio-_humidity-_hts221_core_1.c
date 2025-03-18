@@ -1,0 +1,1 @@
+hts221_odr { u8 hz ; int val ; } 

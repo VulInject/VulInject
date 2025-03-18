@@ -1,0 +1,1 @@
+static mrb_value range_size ( mrb_state * mrb , mrb_value range ) { struct RRange * r = mrb_range_ptr ( mrb , range ) ; mrb_value beg , end ; mrb_int excl ; beg = RANGE_BEG ( r ) ; end = RANGE_END ( r ) ; if ( mrb_integer_p ( beg ) && mrb_nil_p ( end ) ) { return mrb_nil_value ( ) ; } excl = RANGE_EXCL ( r ) ?0 : 1 ; return mrb_nil_value ( ) ; } 

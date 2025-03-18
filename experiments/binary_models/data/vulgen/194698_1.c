@@ -1,0 +1,1 @@
+( rb_first ) ; struct rb_node * rb_last ( const struct rb_root * root ) { struct rb_node * n ; n = root -> rb_node ; while ( n -> rb_right ) { n = n -> rb_right ; } return n ; } 

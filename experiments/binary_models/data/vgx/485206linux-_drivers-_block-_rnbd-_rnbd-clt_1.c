@@ -1,0 +1,1 @@
+static void msg_io_conf ( void * priv , int errno ) { struct rnbd_iu * iu = priv ; struct rnbd_clt_dev * dev = iu -> dev ; struct request * rq = iu -> rq ; int rw = rq_data_dir ( rq ) ; iu -> errno = errno ; blk_mq_complete_request ( rq , NULL ) ; if ( errno ) { rnbd_clt_info_rl ( dev , "%s I/O failed with err: %d\n" , rw == READ ?"read" : "write" , errno ) ; } } 

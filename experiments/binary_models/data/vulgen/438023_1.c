@@ -1,0 +1,1 @@
+set_directory_sort_metadata ( , , ) { NautilusFileSortType default_sort ; gboolean default_reversed ; default_sort = nautilus_file_get_default_sort_type ( file , & default_reversed ) ; nautilus_file_set_metadata ( file , NAUTILUS_METADATA_KEY_ICON_VIEW_SORT_BY , get_sort_attribute_from_sort_type ( default_sort ) , sort_attribute ) ; } 

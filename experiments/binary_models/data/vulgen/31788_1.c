@@ -1,0 +1,1 @@
+static int ecb_decrypt ( struct skcipher_request * req ) { ECB_WALK_START ( req , CAST5_BLOCK_SIZE , CAST5_PARALLEL_BLOCKS ) ; ECB_BLOCK ( CAST5_PARALLEL_BLOCKS , cast5_ecb_dec_16way ) ; ECB_WALK_END ( ) ; } 

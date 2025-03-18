@@ -1,0 +1,1 @@
+static void qemu_chr_open_pipe ( Chardev * chr , ChardevBackend * backend , bool * be_opened , Error * * errp ) { ChardevHostdev * opts = backend -> u . pipe . data ; const char * filename = opts -> device ; } 

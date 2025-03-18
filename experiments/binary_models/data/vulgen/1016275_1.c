@@ -1,0 +1,1 @@
+void compat_setup_restart_syscall ( struct pt_regs * regs ) { } 

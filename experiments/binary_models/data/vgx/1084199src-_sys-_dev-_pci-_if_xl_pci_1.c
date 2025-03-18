@@ -1,0 +1,1 @@
+int xl_pci_match ( struct device * , void * , void * ) void xl_pci_attach ( struct device * , struct device * , void * ) int xl_pci_detach ( struct device * , int ) void xl_pci_intr_ack ( struct xl_softc * ) void xl_pci_wol_power ( void * ) xl_pci_softc { struct xl_softc psc_softc ; pci_chipset_tag_t psc_pc ; pcitag_t psc_tag ; int psc_iosize ; bus_size_t psc_funsize ; } 

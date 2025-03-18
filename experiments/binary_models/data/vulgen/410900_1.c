@@ -1,0 +1,1 @@
+void srmmu_mapiorange ( unsigned int bus , unsigned long xpa , unsigned long xva , unsigned int len ) { while ( len != 0 ) { len -= PAGE_SIZE ; xva += PAGE_SIZE ; xpa += PAGE_SIZE ; } flush_tlb_all ( ) ; } 

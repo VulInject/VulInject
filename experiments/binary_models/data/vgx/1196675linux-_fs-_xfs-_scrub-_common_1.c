@@ -1,0 +1,1 @@
+void xchk_stop_reaping ( struct xfs_scrub * sc ) { sc -> flags |= XCHK_REAPING_DISABLED ; xfs_blockgc_stop ( sc -> mp ) ; xfs_inodegc_stop ( sc -> mp , NULL ) ; } 

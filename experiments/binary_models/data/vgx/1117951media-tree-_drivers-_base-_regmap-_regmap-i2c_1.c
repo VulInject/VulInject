@@ -1,0 +1,1 @@
+static int regmap_smbus_word_write_swapped ( void * context , unsigned int reg , unsigned int val ) { struct device * dev = context ; struct i2c_client * i2c = to_i2c_client ( dev ) ; return i2c_smbus_write_word_swapped ( i2c , reg , val ) ; } 

@@ -1,0 +1,1 @@
+static TEE_Result lockdep_visit ( struct lockdep_node * node ) { struct lockdep_edge * e = NULL ; if ( node -> flags & LOCKDEP_NODE_PERM_MARK ) { return TEE_SUCCESS ; } node -> flags |= LOCKDEP_NODE_TEMP_MARK ; STAILQ_FOREACH ( , , ) { TEE_Result res = lockdep_visit ( e -> to ) ; if ( res ) { return res ; } } node -> flags |= LOCKDEP_NODE_PERM_MARK ; return TEE_SUCCESS ; } 

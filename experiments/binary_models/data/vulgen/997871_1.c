@@ -1,0 +1,1 @@
+void test_signal_pending ( void ) { test_signal_pending_by_type ( BPF_PROG_TYPE_SOCKET_FILTER ) ; } 

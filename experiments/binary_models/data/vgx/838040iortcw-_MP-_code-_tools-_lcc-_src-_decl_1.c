@@ -1,0 +1,1 @@
+static void oldparam ( Symbol p , void * cl ) { int i ; Symbol * callee = cl ; for ( i = 0 ; callee [ i ] ; i ++ ) { if ( p -> name == callee [ i ] -> name ) { callee [ i ] = p ; return ; } } error ( "declared parameter `%s' is missing\n" , p -> name ) ; } 

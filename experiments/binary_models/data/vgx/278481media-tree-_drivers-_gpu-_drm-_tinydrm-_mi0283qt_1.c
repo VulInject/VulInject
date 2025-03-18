@@ -1,0 +1,1 @@
+static void mi0283qt_fini ( void * data ) { struct mipi_dbi * mipi = data ; DRM_DEBUG_KMS ( "\n" ) ; regulator_disable ( mipi -> regulator , NULL ) ; } static const struct drm_simple_display_pipe_funcs mi0283qt_pipe_funcs = { . enable = mipi_dbi_pipe_enable . disable = mipi_dbi_pipe_disable . update = tinydrm_display_pipe_update . prepare_fb = tinydrm_display_pipe_prepare_fb } ; 

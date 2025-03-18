@@ -1,0 +1,1 @@
+unsigned char * asn1_encode_boolean ( unsigned char * data , const unsigned char * end_data , bool val ) { int data_len = end_data - data ; if ( IS_ERR ( data ) ) { return data ; } * ( data ++ ) = _tag ( UNIV , PRIM , BOOL ) ; data_len -- ; asn1_encode_length ( & data , & data_len , 1 ) ; if ( val ) { * ( data ++ ) = 1 ; } else { * ( data ++ ) = 0 ; } return data ; } 

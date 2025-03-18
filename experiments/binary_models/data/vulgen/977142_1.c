@@ -1,0 +1,1 @@
+int __log_init_print ( dbenv ) DB_ENV * dbenv ; { int ret ; return ( 0 ) ; } 

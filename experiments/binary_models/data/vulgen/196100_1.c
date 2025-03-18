@@ -1,0 +1,1 @@
+const uint8_t ff_h263_intra_MCBPC_code [ 9 ] { 1 1 2 3 1 1 2 3 1 } ; ; const uint8_t ff_h263_intra_MCBPC_bits [ 9 ] { 1 3 3 3 4 6 6 6 9 } ; ; const uint8_t ff_h263_inter_MCBPC_code [ 28 ] { 1 3 2 5 3 4 3 3 3 7 6 5 4 4 3 2 2 5 4 5 1 0 0 0 2 12 14 16 } ; ; 

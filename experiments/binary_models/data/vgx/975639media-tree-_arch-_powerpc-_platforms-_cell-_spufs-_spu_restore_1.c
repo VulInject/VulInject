@@ -1,0 +1,1 @@
+static inline void write_ppuint_mb ( void ) { int offset ; unsigned int data ; offset = LSCSA_QW_OFFSET ( ppuint_mb ) ; data = regs_spill [ offset ] . slot [ 0 ] ; spu_writech ( SPU_WrOutIntrMbox , data ) ; } 

@@ -1,0 +1,1 @@
+void ripng_aggregate_decrement ( struct agg_node * child , struct ripng_info * rinfo ) { struct agg_node * np ; struct ripng_aggregate * aggregate ; for ( np = child ; np ; np = agg_node_parent ( np ) ) { } } 

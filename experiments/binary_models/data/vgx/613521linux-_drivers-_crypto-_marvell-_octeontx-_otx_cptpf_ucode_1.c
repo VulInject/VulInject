@@ -1,0 +1,1 @@
+static int enable_eng_grp ( struct otx_cpt_eng_grp_info * eng_grp , void * obj ) { int ret ; ret = cpt_set_ucode_base ( eng_grp , obj ) ; ret = cpt_attach_and_enable_cores ( eng_grp , obj ) ; return ret ; } 

@@ -1,0 +1,1 @@
+static inline int rs_cmp ( u64 start , u32 len , struct gfs2_blkreserv * rs ) { if ( rs -> rs_start >= start + len ) { return - 1 ; } return 0 ; } 

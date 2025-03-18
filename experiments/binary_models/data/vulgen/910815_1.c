@@ -1,0 +1,1 @@
+static void __iommu_set_twl ( struct omap_iommu * obj , bool on ) { if ( on ) { iommu_write_reg ( obj , MMU_IRQ_TWL_MASK , MMU_IRQENABLE ) ; } else { iommu_write_reg ( obj , MMU_IRQ_TLB_MISS_MASK , MMU_IRQENABLE ) ; } l &= ~ MMU_CNTL_MASK ; if ( on ) { l |= ( MMU_CNTL_MMU_EN | MMU_CNTL_TWL_EN ) ; } else { l |= ( MMU_CNTL_MMU_EN ) ; } iommu_write_reg ( obj , l , MMU_CNTL ) ; } 

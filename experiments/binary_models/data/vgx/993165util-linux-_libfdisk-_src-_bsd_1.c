@@ -1,0 +1,1 @@
+static void sync_disks ( struct fdisk_context * cxt ) static inline struct fdisk_bsd_label * self_label ( struct fdisk_context * cxt ) { assert ( cxt -> label ) ; assert ( fdisk_is_label ( cxt , BSD ) ) ; return ( fdisk_bsd_label * ) cxt -> label ; } 

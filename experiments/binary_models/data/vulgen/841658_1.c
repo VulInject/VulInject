@@ -1,0 +1,1 @@
+void plic_intr_disestablish ( void * cookie ) { struct plic_softc * sc = plic ; struct plic_intrhand * ih = cookie ; int irqno = ih -> ih_irq ; u_long sie ; sie = intr_disable ( ) ; TAILQ_REMOVE ( & sc -> sc_isrcs [ irqno ] . is_list , ih , ih_list ) ; if ( ih -> ih_name != NULL ) { evcount_detach ( & ih -> ih_count ) ; } intr_restore ( sie ) ; } 

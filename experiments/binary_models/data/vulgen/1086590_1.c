@@ -1,0 +1,1 @@
+offset = f -> offset ; length = f -> size ; if ( ! strncmp ( f -> type , "__data_loc" , 10 ) ) { unsigned long long v ; if ( pevent_read_number_field ( f , data , & v ) ) { trace_seq_printf ( s , "invalid_data_loc" ) ; return ; } offset = v & 0xffff ; length = v >> 16 ; } 

@@ -1,0 +1,1 @@
+static void event_end_of_whois ( IRC_SERVER_REC * server , const char * data ) { char * params , * nick ; params = event_get_params ( data , 2 , NULL , & nick ) ; if ( server -> whois_found ) { printformat ( server , nick , MSGLEVEL_CRAP , IRCTXT_END_OF_WHOIS , nick ) ; } g_free ( params ) ; } 

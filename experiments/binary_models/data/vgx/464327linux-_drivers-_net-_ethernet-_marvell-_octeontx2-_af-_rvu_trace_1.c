@@ -1,0 +1,1 @@
+EXPORT_TRACEPOINT_SYMBOL ( otx2_msg_alloc , NULL ) ; EXPORT_TRACEPOINT_SYMBOL ( otx2_msg_interrupt ) ; EXPORT_TRACEPOINT_SYMBOL ( otx2_msg_process ) ; 

@@ -1,0 +1,1 @@
+int main ( void ) { client_t cl ; memset ( & cl , 0 , sizeof ( cl ) ) ; cl . frames [ 0 ] . ping_time = 1.0f ; return 0 ; } 

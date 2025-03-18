@@ -1,0 +1,1 @@
+void nsec3_answer_delegation ( struct query * query , struct answer * answer ) { nsec3_add_ds_proof ( query , answer , query -> delegation_domain , 1 ) ; } 

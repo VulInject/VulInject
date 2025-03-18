@@ -1,0 +1,1 @@
+double atan2 ( ) double r_atn2 ( x , y ) real * x , * y ; "C" { int r_atn2 ( real * x , real * y ) { return ( atan2 ( * x , * y ) ) ; } } 

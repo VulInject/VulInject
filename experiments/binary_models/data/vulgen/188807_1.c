@@ -1,0 +1,1 @@
+int ccp_pci_match ( struct device * , void * , void * ) int ccp_pci_attach ( struct device * , struct device * , void * ) const struct cfattach ccp_pci_ca = { sizeof ( ccp_softc ) ccp_pci_match ccp_pci_attach } ; 

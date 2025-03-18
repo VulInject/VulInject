@@ -1,0 +1,1 @@
+static ssize_t wusb_phy_rate_store ( struct device * dev , struct device_attribute * attr , const char * buf , size_t size ) { struct wusbhc * wusbhc = usbhc_dev_to_wusbhc ( dev ) ; uint8_t phy_rate ; ssize_t result ; result = sscanf ( buf , "%hhu" , & phy_rate ) ; if ( result != 1 ) { return - EINVAL ; } wusbhc -> phy_rate = phy_rate ; return size ; } 

@@ -1,0 +1,1 @@
+static int altera_poll_ci_slot_status ( struct dvb_ca_en50221 * en50221 , int slot , int open ) { struct altera_ci_state * state = en50221 -> data ; return state -> status ; } 

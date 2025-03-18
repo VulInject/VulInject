@@ -1,0 +1,1 @@
+static TmEcode JsonDHCPLogThreadDeinit ( ThreadVars * t , void * data ) { LogDHCPLogThread * thread = ( LogDHCPLogThread * ) data ; if ( thread == NULL ) { return TM_ECODE_OK ; } SCFree ( thread ) ; return TM_ECODE_OK ; } 

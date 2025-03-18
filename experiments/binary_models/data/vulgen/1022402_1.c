@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "STMicroelectronics uvis25 i2c driver" ) ; MODULE_LICENSE ( "GPL v2" ) ; 

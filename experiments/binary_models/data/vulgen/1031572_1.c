@@ -1,0 +1,1 @@
+static void stmmac_clear_rx_descriptors ( struct stmmac_priv * priv , u32 queue ) { struct stmmac_rx_queue * rx_q = & priv -> rx_queue [ queue ] ; int i ; for ( i = 0 ; i < DMA_RX_SIZE ; i ++ ) { if ( priv -> extend_desc ) { priv -> hw -> desc -> init_rx_desc ( & rx_q -> dma_erx [ i ] . basic , priv -> use_riwt , priv -> mode , ( i == DMA_RX_SIZE - 1 ) ) ; } else { } } } 

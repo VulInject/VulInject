@@ -1,0 +1,1 @@
+static void mlx5e_am_park_on_top ( struct mlx5e_rx_am * am ) { am -> steps_right = 0 ; am -> steps_left = 0 ; am -> tune_state = MLX5E_AM_PARKING_ON_TOP ; } 

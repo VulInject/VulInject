@@ -1,0 +1,1 @@
+static int __must_check shmem_alloc_pages_locked ( struct ivpu_bo * bo ) { int npages = bo -> base . size >> PAGE_SHIFT ; struct page * * pages ; pages = drm_gem_get_pages ( & bo -> base ) ; if ( IS_ERR ( pages ) ) { return PTR_ERR ( pages ) ; } if ( bo -> flags & DRM_IVPU_BO_WC ) { set_pages_array_wc ( pages , npages ) ; } bo -> pages = pages ; return 0 ; } 

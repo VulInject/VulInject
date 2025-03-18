@@ -1,0 +1,1 @@
+static unsigned char nas [ 21 ] { AL ( 0 ) AL ( 3 ) AL ( 3 ) AL ( 3 ) AL ( 2 ) AL ( 3 ) AL ( 3 ) AL ( 3 ) AL ( 4 ) AL ( 4 ) AL ( 4 ) AL ( 6 ) AL ( 6 ) AL ( 2 ) AL ( 5 ) AL ( 5 ) AL ( 3 ) AL ( 3 ) AL ( 4 ) AL ( 5 ) AL ( 4 ) } ; ; 

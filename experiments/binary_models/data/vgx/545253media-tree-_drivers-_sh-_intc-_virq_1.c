@@ -1,0 +1,1 @@
+static unsigned long __init intc_subgroup_data ( struct intc_subgroup * subgroup , struct intc_desc_int * d , unsigned int index ) { int fn = REG_FN_TEST_BASE + ( subgroup -> reg_width >> 3 ) - 1 ; return _INTC_MK ( fn , MODE_ENABLE_REG , intc_get_reg ( d , subgroup -> reg ) , 0 , 1 , ( subgroup -> reg_width - 1 ) - index ) ; } 

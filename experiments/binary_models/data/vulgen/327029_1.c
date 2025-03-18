@@ -1,0 +1,1 @@
+int lsa_lookup_lsid ( smb_sid_t * sid , smb_account_t * info ) { return ( lsa_lookup_sid_int ( sid , info , B_FALSE ) ) ; } 

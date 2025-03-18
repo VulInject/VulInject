@@ -1,0 +1,1 @@
+int test__sw_clock_freq ( int subtest __maybe_unused ) { int ret ; if ( ! ret ) { ret = __test__sw_clock_freq ( PERF_COUNT_SW_TASK_CLOCK ) ; } return ret ; } 

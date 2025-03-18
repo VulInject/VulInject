@@ -1,0 +1,1 @@
+static struct tee_shm_pool * optee_ffa_shm_pool_alloc_pages ( void ) { struct tee_shm_pool * pool = kzalloc ( sizeof ( * pool ) , GFP_KERNEL ) ; if ( ! pool ) { return ERR_PTR ( - ENOMEM ) ; } return pool ; } 

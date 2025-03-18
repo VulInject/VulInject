@@ -1,0 +1,1 @@
+static struct iommu_group * omap_iommu_device_group ( struct device * dev ) { struct omap_iommu_arch_data * arch_data = dev -> archdata . iommu ; struct iommu_group * group ; if ( arch_data -> iommu_dev ) { group = arch_data -> iommu_dev -> group ; } return group ; } 

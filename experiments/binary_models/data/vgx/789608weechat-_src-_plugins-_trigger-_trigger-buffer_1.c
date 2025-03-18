@@ -1,0 +1,1 @@
+trigger_buffer_set_filter ( ) { if ( trigger_buffer_filters ) { weechat_string_free_split ( trigger_buffer_filters ) ; } if ( filter && filter [ 0 ] ) { trigger_buffer_filters = weechat_string_split ( filter , "," , NULL , WEECHAT_STRING_SPLIT_STRIP_LEFT | WEECHAT_STRING_SPLIT_STRIP_RIGHT | WEECHAT_STRING_SPLIT_COLLAPSE_SEPS , 0 , NULL ) ; } } 

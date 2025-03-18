@@ -1,0 +1,1 @@
+static int mlx5e_set_dscp2prio ( struct mlx5e_priv * priv , u8 dscp , u8 prio ) { int err ; err = mlx5_set_dscp2prio ( priv -> mdev , dscp , prio ) ; priv -> dcbx_dp . dscp2prio [ dscp ] = prio ; return err ; } 

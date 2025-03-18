@@ -1,0 +1,1 @@
+static void mchp_pfsoc_dummy_write ( void * opaque , hwaddr offset , uint64_t value , unsigned size ) { } static const MemoryRegionOps mchp_pfsoc_dummy_ops = { . read = mchp_pfsoc_dummy_read . write = mchp_pfsoc_dummy_write . endianness = DEVICE_LITTLE_ENDIAN } ; 

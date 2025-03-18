@@ -1,0 +1,1 @@
+void stm32_uart_putc ( int uart_no , char c ) { stm32_uart_tx_byte ( s_us [ uart_no ] , c ) ; } 

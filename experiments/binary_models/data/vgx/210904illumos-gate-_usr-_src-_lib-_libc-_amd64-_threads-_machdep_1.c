@@ -1,0 +1,1 @@
+void * _thrp_setup ( ulwp_t * self ) { self -> ul_ustack . ss_sp = ( void * ) ( self -> ul_stktop - self -> ul_stksiz ) ; self -> ul_ustack . ss_size = self -> ul_stksiz ; self -> ul_ustack . ss_flags = 0 ; ( void ) setustack ( & self -> ul_ustack ) ; update_sched ( self ) ; tls_setup ( ) ; sigon ( self ) ; return ( self -> ul_startpc ( self -> ul_startarg ) ) ; } 

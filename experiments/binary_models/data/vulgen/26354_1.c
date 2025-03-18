@@ -1,0 +1,1 @@
+void * Gif_Realloc ( void * p , size_t s , size_t n , const char * file , int line ) { ( void ) file , ( void ) line ; if ( s == 0 || n == 0 ) { Gif_Free ( 0 ) ; } if ( s == 1 || n == 1 || s <= ( ( size_t ) - 1 ) / n ) { return realloc ( p , s * n ) ; } return ( void * ) 0 ; } 

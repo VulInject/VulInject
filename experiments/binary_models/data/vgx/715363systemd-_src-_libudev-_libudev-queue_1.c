@@ -1,0 +1,1 @@
+_public_ int udev_queue_get_fd ( struct udev_queue * udev_queue ) { int r ; assert_return ( udev_queue , - EINVAL ) ; r = udev_queue_init ( ) ; if ( r < 0 ) { return r ; } return udev_queue -> fd = r ; } 

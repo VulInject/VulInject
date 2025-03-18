@@ -1,1 +1,1 @@
-FUN1 ( ) { FUN2 ( VAR1 -> VAR2 ) ; VAR1 -> VAR2 = NULL ; FUN2 ( VAR1 -> VAR3 ) ; VAR1 -> VAR3 = NULL ; FUN2 ( VAR1 -> VAR4 ) ; VAR1 -> VAR4 = NULL ; FUN3 ( VAR5 , VAR1 ) ; return ; }
+isis_vertex_del ( ) { list_delete ( vertex -> Adj_N ) ; vertex -> Adj_N = NULL ; list_delete ( vertex -> parents ) ; vertex -> parents = NULL ; list_delete ( vertex -> children ) ; vertex -> children = NULL ; XFREE ( MTYPE_ISIS_VERTEX , vertex ) ; return ; } 

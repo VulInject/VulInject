@@ -1,0 +1,1 @@
+void qemu_rec_mutex_unlock_impl ( QemuRecMutex * mutex , const char * file , int line ) { LeaveCriticalSection ( & mutex -> lock ) ; } 

@@ -1,0 +1,1 @@
+if ( li < 0 ) { lu = ( unsigned int ) ( - li ) ; } else { lu = ( unsigned int ) li ; } if ( lu & 1 ) { emov ( w , z ) ; } else { emov ( eone , z ) ; signx = 0 ; } lu >>= 1 ; while ( lu != 0L ) { emul ( w , w , w ) ; if ( lu & 1L ) { emul ( w , z , z ) ; } lu >>= 1 ; } done if ( signx ) { eneg ( z ) ; } rndprc = rndsav ; emul ( eone , z , z ) ; 

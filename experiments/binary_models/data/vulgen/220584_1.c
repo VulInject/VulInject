@@ -1,0 +1,1 @@
+static bool mapping_func ( char * line , int line_num , void * user_data ) { const int * p_last_line_num = ( const int * ) ( user_data ) ; return ( line_num < * p_last_line_num ) ; } 

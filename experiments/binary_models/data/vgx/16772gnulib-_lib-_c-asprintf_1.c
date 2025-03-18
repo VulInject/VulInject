@@ -1,0 +1,1 @@
+c_asprintf ( , , ) { va_list args ; int result ; va_start ( args , format ) ; result = c_vasprintf ( resultp , format , args ) ; va_end ( args ) ; return result ; } 

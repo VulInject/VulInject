@@ -1,0 +1,1 @@
+static void aw2013_chip_disable ( struct aw2013 * chip ) { int ret ; if ( ! chip -> enabled ) { return ; } regmap_write ( chip -> regmap , AW2013_GCR , 0 ) ; if ( ret ) { dev_err ( & chip -> client -> dev , "Failed to disable regulator: %d\n" , ret ) ; return ; } chip -> enabled = false ; } 

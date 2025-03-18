@@ -1,0 +1,1 @@
+static inline int nlm_link_msiirq ( int link , int msivec ) { return NLM_MSI_VEC_BASE + link * XLP_MSIVEC_PER_LINK + msivec ; } 

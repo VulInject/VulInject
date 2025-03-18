@@ -1,0 +1,1 @@
+static void log ( char * , va_list ) static int open_logfile ( char * name ) { char path [ 80 ] ; return ( open_locked ( path , "a" , 0640 ) ) ; } 

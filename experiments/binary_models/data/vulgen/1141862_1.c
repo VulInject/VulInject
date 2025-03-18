@@ -1,0 +1,1 @@
+static void core_prop_set_core_id ( Object * obj , Visitor * v , const char * name , void * opaque , Error * * errp ) { CPUCore * core = CPU_CORE ( obj ) ; int64_t value ; if ( ! visit_type_int ( v , name , & value , errp ) ) { return ; } core -> core_id = value ; } 

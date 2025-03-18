@@ -1,0 +1,1 @@
+static void xehpsdv_ppgtt_insert_entry ( struct i915_address_space * vm , dma_addr_t addr , u64 offset , enum i915_cache_level level , u32 flags ) { return gen8_ppgtt_insert_entry ( vm , addr , offset , level , flags ) ; } 

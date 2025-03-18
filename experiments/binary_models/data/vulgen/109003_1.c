@@ -1,0 +1,1 @@
+void mt76x2u_cleanup ( struct mt76x02_dev * dev ) { mt76x2u_stop_hw ( dev ) ; mt76u_queues_deinit ( & dev -> mt76 ) ; } 

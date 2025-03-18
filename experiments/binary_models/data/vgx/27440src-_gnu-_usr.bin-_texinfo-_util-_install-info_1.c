@@ -1,0 +1,1 @@
+int compare_section_names ( const void * s1 , const void * s2 ) int compare_entries_text ( const void * e1 , const void * e2 ) line_data { char * start ; int size ; struct spec_entry * * add_entries_before ; int add_sections_before ; int delete ; } 

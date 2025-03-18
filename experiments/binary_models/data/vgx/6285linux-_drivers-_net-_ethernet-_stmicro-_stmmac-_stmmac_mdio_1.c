@@ -1,0 +1,1 @@
+int stmmac_mdio_unregister ( struct net_device * ndev ) { struct stmmac_priv * priv = netdev_priv ( ndev ) ; if ( ! priv -> mii ) { return 0 ; } if ( priv -> hw -> xpcs ) { mdio_device_free ( priv -> hw -> xpcs -> mdiodev ) ; xpcs_destroy ( priv -> hw -> xpcs ) ; } mdiobus_unregister ( priv -> mii ) ; priv -> mii -> priv = NULL ; mdiobus_free ( priv -> mii ) ; return 0 ; } 

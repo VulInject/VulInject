@@ -1,0 +1,1 @@
+HCU_DMA_IRQ_BAD_COMP_ERR | HCU_DMA_IRQ_INBUF_RD_ERR | HCU_DMA_IRQ_INBUF_WD_ERR | HCU_DMA_IRQ_OUTBUF_WR_ERR | HCU_DMA_IRQ_OUTBUF_RD_ERR | HCU_DMA_IRQ_CRD_ERR ; ocs_hcu_dma_entry { u32 src_addr ; u32 src_len ; u32 nxt_desc ; u32 ll_flags ; } ocs_hcu_dma_list { struct ocs_hcu_dma_entry * head ; struct ocs_hcu_dma_entry * tail ; int dma_addr ; size_t max_nents ; } 

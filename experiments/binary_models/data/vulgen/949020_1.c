@@ -1,0 +1,1 @@
+gimp_param_unit_get_type ( ) { static GType spec_type = 0 ; return spec_type ; } 

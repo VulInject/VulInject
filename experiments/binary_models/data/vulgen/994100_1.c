@@ -1,0 +1,1 @@
+void calc_nonce ( struct pluto_crypto_req * r ) { struct pcr_kenonce * kn = & r -> pcr_d . kn ; get_rnd_bytes ( wire_chunk_ptr ( kn , & ( kn -> n ) ) , DEFAULT_NONCE_SIZE ) ; DBG ( DBG_CRYPT , DBG_dump ( "Generated nonce:\n" , wire_chunk_ptr ( kn , & ( kn -> n ) ) , DEFAULT_NONCE_SIZE ) ) ; } 

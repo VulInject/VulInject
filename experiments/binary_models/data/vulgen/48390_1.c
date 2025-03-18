@@ -1,0 +1,1 @@
+static int64_t nfs_client_open_qdict ( NFSClient * client , QDict * options , int flags , int open_flags , Error * * errp ) { BlockdevOptionsNfs * opts ; int64_t ret ; if ( opts == NULL ) { ret = - EINVAL ; fail } ret = nfs_client_open ( client , opts , flags , open_flags , errp ) ; fail qapi_free_BlockdevOptionsNfs ( opts ) ; return ret ; } 

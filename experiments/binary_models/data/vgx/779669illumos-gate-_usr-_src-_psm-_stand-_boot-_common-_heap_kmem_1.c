@@ -1,0 +1,1 @@
+extern void splx ( int ) kmem_info { Freehdr free_root ; Freehdr free_hdr_list ; struct map * map ; struct pte * pte ; caddr_t vaddr ; need_to_free { caddr_t addr ; int nbytes ; } , need_to_free_list , need_to_free [ NEED_TO_FREE_SIZE ] } , kmem_info 

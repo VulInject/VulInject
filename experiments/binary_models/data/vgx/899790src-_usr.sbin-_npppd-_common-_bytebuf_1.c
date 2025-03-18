@@ -1,0 +1,1 @@
+int bytebuffer_has_remaining ( bytebuffer * _this ) { return bytebuffer_remaining ( _this ) > 0 ; } 

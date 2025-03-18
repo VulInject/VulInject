@@ -1,0 +1,1 @@
+static void slotnm_destroy ( slotnm_t * p ) { if ( p == NULL ) { return ; } slotnm_destroy ( p -> snm_next ) ; if ( p -> snm_name != NULL ) { topo_mod_strfree ( p -> snm_mod , p -> snm_name ) ; } } 

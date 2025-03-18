@@ -1,0 +1,1 @@
+static size_t jam_ipv4_address ( struct jambuf * buf , const struct ip_info * afi , const struct ip_bytes * bytes ) { const char * sep = "" ; size_t s = 0 ; for ( size_t i = 0 ; i < afi -> ip_size ; i ++ ) { sep = "." ; } return s ; } 

@@ -1,0 +1,1 @@
+void wmem_strbuf_append_vprintf ( wmem_strbuf_t * strbuf , const gchar * fmt , va_list ap ) { int want_len ; va_list ap2 ; va_copy ( ap2 , ap ) ; want_len = _strbuf_vsnprintf ( strbuf , fmt , ap2 ) ; va_end ( ap2 ) ; if ( want_len <= 0 ) { return ; } wmem_strbuf_grow ( strbuf , want_len ) ; want_len = _strbuf_vsnprintf ( strbuf , fmt , ap ) ; } 

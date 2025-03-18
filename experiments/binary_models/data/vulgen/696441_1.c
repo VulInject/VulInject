@@ -1,0 +1,1 @@
+static ssize_t aux1_show ( struct device * dev , struct device_attribute * dev_attr , char * buf ) { return aux_show ( dev , dev_attr , buf ) ; } 

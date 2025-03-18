@@ -1,0 +1,1 @@
+static struct sun4i_dma_promise * get_next_cyclic_promise ( struct sun4i_dma_contract * contract ) { struct sun4i_dma_promise * promise ; promise = list_first_entry_or_null ( & contract -> demands , sun4i_dma_promise , list ) ; if ( ! promise ) { promise = list_first_entry ( & contract -> demands , sun4i_dma_promise , list ) ; } return promise ; } 

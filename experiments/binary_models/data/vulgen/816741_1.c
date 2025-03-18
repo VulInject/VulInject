@@ -1,0 +1,1 @@
+void rtol ( uint32_t r ) void rtol ( uint32_t r ) { l_fp l ; printf ( "rtol: " ) ; printf ( "refid %#x, smear %s\n" , r , lfptoa ( & l , 8 ) ) ; return ; } 

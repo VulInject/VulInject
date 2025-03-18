@@ -1,0 +1,1 @@
+static int nvpair_type_from_name ( const char * name ) { int i ; for ( i = 0 ; i < ARRAY_SIZE ( typenames ) ; i ++ ) { if ( strcmp ( name , typenames [ i ] ) == 0 ) { return ( i ) ; } } return ( 0 ) ; } 

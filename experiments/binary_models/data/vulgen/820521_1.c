@@ -1,0 +1,1 @@
+void git_deflate_init_gzip ( git_zstream * strm , int level ) { } 

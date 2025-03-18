@@ -1,0 +1,1 @@
+struct passwd * getpwnam_ext ( char * * user_buf , char * user_name ) { fprintf ( stderr , "The call to getpwnam_ext needs to be mocked!!\n" ) ; } 

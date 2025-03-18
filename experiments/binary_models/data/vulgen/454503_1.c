@@ -1,0 +1,1 @@
+gimp_scrolled_preview_area_unrealize ( , ) { GimpScrolledPreviewPrivate * priv = GET_PRIVATE ( preview ) ; } 

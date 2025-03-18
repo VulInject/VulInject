@@ -1,0 +1,1 @@
+gst_dvd_sub_parse_finalize ( ) { GstDvdSubParse * parse = GST_DVD_SUB_PARSE ( object ) ; g_object_unref ( parse -> adapter ) ; G_OBJECT_CLASS ( parent_class ) -> finalize ( object ) ; } 

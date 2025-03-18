@@ -1,0 +1,1 @@
+void cdv_sb_reset ( struct drm_device * dev ) { REG_WRITE ( DPIO_CFG , 0 ) ; REG_READ ( DPIO_CFG ) ; } 

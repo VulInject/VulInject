@@ -1,0 +1,1 @@
+ev_view_accessible_action_set_description ( , , ) { EvViewAccessiblePrivate * priv = EV_VIEW_ACCESSIBLE ( action ) -> priv ; gchar * old_description ; if ( i < 0 || i >= LAST_ACTION ) { return FALSE ; } old_description = priv -> action_descriptions [ i ] ; priv -> action_descriptions [ i ] = g_strdup ( description , NULL ) ; g_free ( old_description ) ; return TRUE ; } 

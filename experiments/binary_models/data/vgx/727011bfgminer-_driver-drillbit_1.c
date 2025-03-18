@@ -1,0 +1,1 @@
+BFG_REGISTER_DRIVER ( drillbit_drv ) drillbit_capability ( DBC_TEMP = 1 , DBC_EXT_CLOCK = 2 ) ; drillbit_board { unsigned core_voltage ; unsigned clock_freq ; bool clock_div2 ; bool use_ext_clock ; bool need_reinit ; bool trigger_identify ; uint16_t caps ; int protover ; } 

@@ -1,0 +1,1 @@
+static void sparx5_update_port_stats ( struct sparx5 * sparx5 , int portno ) { if ( sparx5_is_baser ( sparx5 -> ports [ portno ] -> conf . portmode ) ) { sparx5_get_device_stats ( sparx5 , portno ) ; } else { sparx5_get_asm_stats ( sparx5 , portno ) ; } sparx5_get_ana_ac_stats_stats ( sparx5 , portno ) ; } 

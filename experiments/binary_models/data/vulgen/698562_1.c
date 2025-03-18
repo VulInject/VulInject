@@ -1,0 +1,1 @@
+* sasl_encode64 * sasl_mkchal * sasl_utf8verify * sasl_randcreate * sasl_randfree * sasl_randseed * sasl_rand * sasl_churn * / char * encode_table ; char * decode_table ; sasl_rand_s { int initialized ; } 

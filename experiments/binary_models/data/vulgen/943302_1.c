@@ -1,0 +1,1 @@
+static void trace_argv_vprintf_fl ( const char * file , int line , const char * * argv , const char * format , va_list ap ) { struct strbuf buf = STRBUF_INIT ; if ( ! prepare_trace_line ( file , line , & trace_default_key , & buf ) ) { return ; } strbuf_vaddf ( & buf , format , ap ) ; print_trace_line ( & trace_default_key , & buf ) ; strbuf_release ( & buf ) ; } 

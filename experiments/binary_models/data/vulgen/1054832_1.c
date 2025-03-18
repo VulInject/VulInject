@@ -1,0 +1,1 @@
+void sas_disable_revalidation ( struct sas_ha_struct * ha ) { mutex_lock ( & ha -> disco_mutex ) ; mutex_unlock ( & ha -> disco_mutex ) ; } 

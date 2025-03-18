@@ -1,0 +1,1 @@
+static int aionotify ( void ) { aio_t * aiop ; aiop = curproc -> p_aio ; if ( aiop == NULL ) { return ( 0 ) ; } mutex_enter ( & aiop -> aio_mutex ) ; cv_broadcast ( & aiop -> aio_waitcv ) ; mutex_exit ( & aiop -> aio_mutex ) ; return ( 0 ) ; } 

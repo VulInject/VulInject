@@ -1,0 +1,1 @@
+__sum16 csum_tcpudp_magic ( __be32 saddr , __be32 daddr , __u32 len , __u8 proto , int sum ) { return ( __force __sum16 ) ~from64to16 ( ( __force u64 ) saddr + ( __force u64 ) daddr + ( __force u64 ) sum + ( ( len + proto ) << 8 ) ) ; } 

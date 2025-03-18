@@ -1,0 +1,1 @@
+static int DetectKrb5MsgTypeParseTest01 ( void ) { DetectKrb5MsgTypeData * krb5d = DetectKrb5MsgTypeParse ( "10" ) ; FAIL_IF_NULL ( krb5d ) ; FAIL_IF ( ! ( krb5d -> msg_type == 10 ) ) ; DetectKrb5MsgTypeFree ( krb5d ) ; PASS ; } 

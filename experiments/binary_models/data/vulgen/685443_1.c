@@ -1,0 +1,1 @@
+sd_offloaded_interrupt { u8 header_size ; u8 header_type ; u8 port_number ; } , __packed sd_register_header { u8 header_size ; u8 header_type ; u8 port_number ; u8 command_type ; u8 command_index ; u8 command_response [ 6 ] ; } , __packed 

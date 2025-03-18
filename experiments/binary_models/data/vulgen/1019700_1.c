@@ -1,0 +1,1 @@
+void bcm_vk_tty_exit ( struct bcm_vk * vk ) { int i ; for ( i = 0 ; i < BCM_VK_NUM_TTY ; ++ i ) { tty_port_unregister_device ( & vk -> tty [ i ] . port , vk -> tty_drv , i ) ; tty_port_destroy ( & vk -> tty [ i ] . port ) ; } tty_unregister_driver ( vk -> tty_drv ) ; kfree ( vk -> tty_drv -> name ) ; vk -> tty_drv -> name = NULL ; tty_driver_kref_put ( vk -> tty_drv ) ; } 

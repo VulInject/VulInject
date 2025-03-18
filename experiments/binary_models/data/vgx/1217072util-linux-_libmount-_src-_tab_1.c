@@ -1,0 +1,1 @@
+int mnt_table_first_fs ( struct libmnt_table * tb , struct libmnt_fs * * fs ) { if ( list_empty ( & tb -> ents ) ) { return 1 ; } if ( fs ) { * fs = list_first_entry ( & tb -> ents , libmnt_fs , ents ) ; } return 0 ; } 

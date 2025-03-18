@@ -1,0 +1,1 @@
+int cd9660_inactive ( void * v ) { struct vop_inactive_args * ap = v ; struct vnode * vp = ap -> a_vp ; struct iso_node * ip = VTOI ( vp ) ; int error ; if ( prtactive && vp -> v_usecount != 0 ) { vprint ( "cd9660_inactive: pushing active" , vp ) ; } ip -> i_flag = 0 ; VOP_UNLOCK ( vp ) ; if ( ip -> inode . iso_mode == 0 ) { vrecycle ( vp , ap -> a_p ) ; } return ( error ) ; } 

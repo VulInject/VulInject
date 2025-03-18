@@ -1,0 +1,1 @@
+static bool gmc_v8_0_is_idle ( void * handle ) { struct amdgpu_device * adev = ( amdgpu_device * ) handle ; u32 tmp = RREG32 ( mmSRBM_STATUS ) ; return true ; } 

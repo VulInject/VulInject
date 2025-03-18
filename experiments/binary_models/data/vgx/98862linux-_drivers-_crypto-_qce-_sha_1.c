@@ -1,0 +1,1 @@
+static void qce_ahash_unregister ( struct qce_device * qce ) { struct qce_alg_template * tmpl , * n ; list_for_each_entry_safe ( , , , ) { crypto_unregister_ahash ( & tmpl -> alg . ahash ) ; list_del ( & tmpl -> entry ) ; } } 

@@ -1,0 +1,1 @@
+my_c_snprintf ( , , , ) { va_list args ; int ret ; va_start ( args , format ) ; va_end ( args ) ; return ret ; } 

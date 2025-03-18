@@ -1,0 +1,1 @@
+void m_dumpm ( mblk_t * m ) { int len , seg ; len = msgdsize ( m , NULL ) ; DTRACE_PROBE2 ( dsize , int , len , ( mblk_t * ) , m ) ; for ( seg = 0 ; m ; seg ++ ) { DTRACE_PROBE2 ( mblk , int , seg , ( mblk_t * ) , m ) ; m = m -> b_cont ; } } 

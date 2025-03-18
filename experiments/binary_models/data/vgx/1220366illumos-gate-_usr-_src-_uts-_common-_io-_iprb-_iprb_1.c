@@ -1,0 +1,1 @@
+int iprb_m_getprop ( void * arg , const char * name , mac_prop_id_t id , uint_t sz , void * val ) { iprb_t * ip = arg ; uint64_t x ; switch ( id ) { case MAC_PROP_SPEED : x = 10000000 ; bcopy ( & x , val , sizeof ( x ) ) ; return ( 0 ) ; case MAC_PROP_DUPLEX : x = LINK_DUPLEX_UNKNOWN ; bcopy ( & x , val , sizeof ( x ) ) ; return ( 0 ) ; } return ( ENOTSUP ) ; } 

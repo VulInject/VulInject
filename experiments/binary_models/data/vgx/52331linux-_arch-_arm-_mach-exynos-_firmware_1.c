@@ -1,0 +1,1 @@
+static int exynos_set_cpu_boot_addr ( int cpu , unsigned long boot_addr ) { void __iomem * boot_reg ; boot_reg = sysram_ns_base_addr + 0x1c ; if ( soc_is_exynos4412 ( ) ) { boot_reg += 4 * cpu ; } writel_relaxed ( boot_addr , boot_reg ) ; return 0 ; } 

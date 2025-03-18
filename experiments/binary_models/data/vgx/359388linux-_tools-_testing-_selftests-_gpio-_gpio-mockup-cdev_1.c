@@ -1,0 +1,1 @@
+static int get_value_v2 ( int lfd ) { struct gpio_v2_line_values vals ; int ret ; vals . mask = 1 ; ret = ioctl ( lfd , GPIO_V2_LINE_GET_VALUES_IOCTL , & vals ) ; if ( ret == - 1 ) { return - errno ; } return vals . bits & 0x1 ; } 

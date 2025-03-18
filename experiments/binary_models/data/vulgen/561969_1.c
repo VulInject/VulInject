@@ -1,0 +1,1 @@
+static ut64 __lseek ( RIO * io , RIODesc * fd , ut64 offset , int whence ) { RRegArena * arena = get_arena ( io ) ; if ( ! arena ) { return io -> off ; } switch ( whence ) { case SEEK_SET : if ( offset >= size ) { return size ; } else { return offset ; } case SEEK_CUR : return io -> off + offset ; case SEEK_END : return size ; } return io -> off ; } 

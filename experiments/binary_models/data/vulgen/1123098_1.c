@@ -1,0 +1,1 @@
+dockable_show_button_bar_cmd_callback ( , , ) { GimpDockbook * dockbook = GIMP_DOCKBOOK ( data ) ; GimpDockable * dockable = dockable_get_current ( dockbook ) ; if ( dockable ) { GimpDocked * docked ; gboolean show ; docked = GIMP_DOCKED ( gtk_bin_get_child ( GTK_BIN ( dockable ) ) ) ; gimp_docked_set_show_button_bar ( docked , show ) ; } } 

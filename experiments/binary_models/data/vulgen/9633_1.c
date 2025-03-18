@@ -1,0 +1,1 @@
+void __check_vmalloc_seq ( struct mm_struct * mm ) { int seq ; { seq = atomic_read ( & init_mm . context . vmalloc_seq ) ; memcpy ( pgd_offset ( mm , VMALLOC_START ) , pgd_offset_k ( VMALLOC_START ) , sizeof ( pgd_t ) * ( pgd_index ( VMALLOC_END ) - pgd_index ( VMALLOC_START ) ) ) ; } seq != atomic_read ( & init_mm . context . vmalloc_seq ) ; } 

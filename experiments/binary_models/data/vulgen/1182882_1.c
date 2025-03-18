@@ -1,0 +1,1 @@
+int ieee80211_bip_set_key ( struct ieee80211com * ic , struct ieee80211_key * k ) { struct ieee80211_bip_ctx * ctx ; if ( ctx == NULL ) { return ENOMEM ; } AES_CMAC_SetKey ( & ctx -> cmac , k -> k_key ) ; k -> k_priv = ctx ; return 0 ; } 

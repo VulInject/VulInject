@@ -1,0 +1,1 @@
+STATIC xfs_lsn_t xfs_rud_item_committed ( struct xfs_log_item * lip , xfs_lsn_t lsn ) { struct xfs_rud_log_item * rudp = RUD_ITEM ( lip ) ; kmem_zone_free ( xfs_rud_zone , rudp ) ; return ( xfs_lsn_t ) - 1 ; } 

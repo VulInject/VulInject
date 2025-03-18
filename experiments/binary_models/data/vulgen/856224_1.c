@@ -1,0 +1,1 @@
+static int atmel_abdac_hw_params ( struct snd_pcm_substream * substream , struct snd_pcm_hw_params * hw_params ) { struct atmel_abdac * dac = snd_pcm_substream_chip ( substream ) ; int retval ; retval = snd_pcm_lib_malloc_pages ( substream , params_buffer_bytes ( hw_params ) ) ; if ( retval < 0 ) { return retval ; } return retval ; } 

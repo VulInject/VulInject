@@ -1,0 +1,1 @@
+void rdsv3_cong_set_bit ( struct rdsv3_cong_map * map , uint16_be_t port ) { unsigned long i ; unsigned long off ; RDSV3_DPRINTF4 ( "rdsv3_cong_set_bit" , "setting congestion for %u.%u.%u.%u:%u in map %p" , NIPQUAD ( map -> m_addr ) , ntohs ( port ) , map ) ; i = ntohs ( port ) / RDSV3_CONG_MAP_PAGE_BITS ; off = ntohs ( port ) % RDSV3_CONG_MAP_PAGE_BITS ; } 

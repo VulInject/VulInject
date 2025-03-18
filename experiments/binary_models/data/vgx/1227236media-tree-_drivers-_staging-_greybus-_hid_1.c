@@ -1,0 +1,1 @@
+static int gb_hid_set_power ( struct gb_hid * ghid , int type ) { int ret ; ret = gb_pm_runtime_get_sync ( ghid -> bundle ) ; ret = gb_operation_sync ( ghid -> connection , type , NULL , 0 , NULL , 0 ) ; gb_pm_runtime_put_autosuspend ( ghid -> bundle ) ; return ret ; } 

@@ -1,0 +1,1 @@
+static int ni_ai_poll ( struct comedi_device * dev , struct comedi_subdevice * s ) { unsigned long flags ; int count ; spin_lock_irqsave ( & dev -> spinlock , flags ) ; ni_handle_fifo_dregs ( dev ) ; ni_sync_ai_dma ( dev , NULL ) ; count = comedi_buf_n_bytes_ready ( s ) ; spin_unlock_irqrestore ( & dev -> spinlock , flags ) ; return count ; } 

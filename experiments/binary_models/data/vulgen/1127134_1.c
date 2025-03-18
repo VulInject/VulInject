@@ -1,0 +1,1 @@
+static void dm_drm_plane_destroy_state ( struct drm_plane * plane , struct drm_plane_state * state ) { struct dm_plane_state * dm_plane_state = to_dm_plane_state ( state ) ; drm_property_blob_put ( dm_plane_state -> degamma_lut ) ; drm_property_blob_put ( dm_plane_state -> ctm ) ; drm_atomic_helper_plane_destroy_state ( plane , state ) ; } 

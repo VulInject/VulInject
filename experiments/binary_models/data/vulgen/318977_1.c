@@ -1,0 +1,1 @@
+void dm_cell_error ( struct dm_bio_prison * prison , struct dm_bio_prison_cell * cell , int error ) { struct bio_list bios ; struct bio * bio ; bio_list_init ( & bios ) ; while ( ( bio = bio_list_pop ( & bios ) ) ) { bio -> bi_error = error ; bio_endio ( bio ) ; } } 

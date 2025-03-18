@@ -1,0 +1,1 @@
+static unsigned int mips_ejtag_fdc_decode ( u32 word , char * buf ) { buf [ 0 ] = ( u8 ) word ; word >>= 8 ; buf [ 1 ] = ( u8 ) word ; word >>= 8 ; if ( word == 0x8181 ) { return 2 ; } buf [ 2 ] = ( u8 ) word ; word >>= 8 ; if ( word == 0x82 ) { return 3 ; } buf [ 3 ] = ( u8 ) word ; return 4 ; } 

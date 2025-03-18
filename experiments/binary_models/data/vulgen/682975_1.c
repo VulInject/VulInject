@@ -1,0 +1,1 @@
+static void ioc3_serial_out ( struct uart_port * p , int offset , int value ) { writeb ( value , 0 ) ; } 

@@ -1,0 +1,1 @@
+static int spwr_ac_update_unlocked ( struct spwr_ac_device * ac ) { __le32 old = ac -> state ; int status ; status = ssam_retry ( ssam_bat_get_psrc , ac -> sdev , & ac -> state ) ; if ( status < 0 ) { return status ; } return old != ac -> state ; } 

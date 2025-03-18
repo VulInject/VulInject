@@ -1,0 +1,1 @@
+static bool looks_like_a_spurious_pid ( struct task_struct * task ) { if ( task -> exit_code != ( ( PTRACE_EVENT_EXEC << 8 ) | SIGTRAP ) ) { return false ; } return true ; } 

@@ -1,0 +1,1 @@
+static void mt76x2u_init_dma ( struct mt76x02_dev * dev ) { u32 val = mt76_rr ( dev , MT_VEND_ADDR ( CFG , MT_USB_U3DMA_CFG ) ) ; val &= ~ MT_USB_DMA_CFG_RX_BULK_AGG_EN ; mt76_wr ( dev , MT_VEND_ADDR ( CFG , MT_USB_U3DMA_CFG ) , val ) ; } 

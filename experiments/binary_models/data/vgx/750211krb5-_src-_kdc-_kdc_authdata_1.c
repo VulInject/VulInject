@@ -1,0 +1,1 @@
+krb5_error_code unload_authdata_plugins ( krb5_context context ) { kdcauthdata_handle * h ; int i ; for ( i = 0 ; i < n_authdata_modules ; i ++ ) { h = & authdata_modules [ i ] ; if ( h -> vt . fini != NULL ) { h -> vt . fini ( context , h -> data ) ; } } free ( authdata_modules ) ; authdata_modules = NULL ; return 0 ; } 

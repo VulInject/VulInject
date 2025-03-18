@@ -1,0 +1,1 @@
+static int cypress_query_hardware ( struct psmouse * psmouse ) { int ret ; ret = cypress_read_fw_version ( psmouse ) ; if ( ret ) { return ret ; } if ( ret ) { return ret ; } return 0 ; } 

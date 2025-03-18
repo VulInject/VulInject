@@ -1,0 +1,1 @@
+static int hnm_probe ( const AVProbeData * p ) { if ( p -> buf_size < 4 ) { return 0 ; } return 0 ; } 

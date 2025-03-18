@@ -1,0 +1,1 @@
+static void JsonValueListAppend ( JsonValueList * jvl , JsonbValue * jbv ) { if ( jvl -> singleton ) { jvl -> list = list_make2 ( jvl -> singleton , jbv ) ; } if ( ! jvl -> list ) { jvl -> singleton = jbv ; } else { jvl -> list = lappend ( jvl -> list , jbv ) ; } } 

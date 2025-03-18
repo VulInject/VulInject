@@ -1,0 +1,1 @@
+return ecma value * / ecma_value_t ecma_builtin_symbol_dispatch_call ( , ) { JERRY_ASSERT ( arguments_list_len == 0 || arguments_list_p != NULL ) return ecma_op_create_symbol ( arguments_list_p , arguments_list_len ) ; } ; 

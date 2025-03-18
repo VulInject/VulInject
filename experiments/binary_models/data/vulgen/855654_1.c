@@ -1,0 +1,1 @@
+void luaD_callnoyield ( lua_State * L , StkId func , int nResults ) { L -> nny ++ ; luaD_call ( L , func , nResults ) ; } 

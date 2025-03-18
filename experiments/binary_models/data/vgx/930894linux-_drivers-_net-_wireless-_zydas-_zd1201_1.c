@@ -1,0 +1,1 @@
+static void zd1201_usbtx ( struct urb * urb ) { struct zd1201 * zd = urb -> context ; netif_wake_queue ( zd -> dev , NULL ) ; } 

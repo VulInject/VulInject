@@ -1,0 +1,1 @@
+void il_cancel_scan_deferred_work ( struct il_priv * il ) { cancel_work_sync ( & il -> abort_scan ) ; cancel_work_sync ( & il -> scan_completed ) ; if ( cancel_delayed_work_sync ( & il -> scan_check ) ) { il_force_scan_end ( il ) ; mutex_unlock ( & il -> mutex ) ; } } 

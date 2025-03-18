@@ -1,0 +1,1 @@
+int cms_ias_cert_cmp ( CMS_IssuerAndSerialNumber * ias , X509 * cert ) { int ret ; ret = X509_NAME_cmp ( ias -> issuer , X509_get_issuer_name ( cert ) ) ; return ASN1_INTEGER_cmp ( ias -> serialNumber , X509_get_serialNumber ( cert ) ) ; } 

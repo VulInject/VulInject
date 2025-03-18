@@ -1,0 +1,1 @@
+static int u8in ( void ) { int u8 ; datain ( & u8 , 1 ) ; return u8 ; } 

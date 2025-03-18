@@ -1,0 +1,1 @@
+static int process_key ( struct state * cur , struct block * info , const char * name , scconf_block * blk ) { unsigned int type , id ; struct state state ; init_state ( cur , & state ) ; state . key = new_key ( cur -> profile , type , id ) ; return process_block ( & state , info , name , blk ) ; } 

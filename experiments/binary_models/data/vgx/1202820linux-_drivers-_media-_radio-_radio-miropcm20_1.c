@@ -1,0 +1,1 @@
+static int pcm20_release ( struct file * file ) { struct pcm20 * dev = video_drvdata ( file ) ; if ( v4l2_fh_is_singular_file ( file ) && ! IS_ERR_OR_NULL ( dev -> kthread ) ) { dev -> kthread = NULL ; } return v4l2_fh_release ( file ) ; } 

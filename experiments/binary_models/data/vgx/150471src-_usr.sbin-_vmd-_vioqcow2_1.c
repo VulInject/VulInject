@@ -1,0 +1,1 @@
+uint32_t version ; uint64_t backingoff ; uint32_t backingsz ; int clustershift ; uint64_t disksz ; uint32_t cryptmethod ; uint32_t l1sz ; uint64_t l1off ; uint64_t refoff ; uint32_t refsz ; uint32_t snapcount ; uint64_t snapsz ; uint64_t incompatfeatures ; uint64_t compatfeatures ; uint64_t autoclearfeatures ; uint32_t reforder ; uint32_t headersz ; 

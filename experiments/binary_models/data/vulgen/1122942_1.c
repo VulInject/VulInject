@@ -1,0 +1,1 @@
+static void cy_send_xchar ( struct tty_struct * tty , int ch ) zblock_type { ZBLOCK_PRG = 0 , ZBLOCK_FPGA = 1 } 

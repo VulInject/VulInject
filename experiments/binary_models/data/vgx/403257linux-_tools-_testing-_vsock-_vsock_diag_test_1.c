@@ -1,0 +1,1 @@
+static void free_sock_stat ( struct list_head * sockets ) { struct vsock_stat * st ; struct vsock_stat * next ; list_for_each_entry_safe ( , , , ) } 

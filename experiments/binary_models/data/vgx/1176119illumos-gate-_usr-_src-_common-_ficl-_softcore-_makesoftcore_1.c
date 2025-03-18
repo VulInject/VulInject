@@ -1,0 +1,1 @@
+"    free(ficlSoftcoreUncompressed);\n" "#endif \n" "    FICL_VM_ASSERT(vm, returnValue != FICL_VM_STATUS_ERROR_EXIT);\n" "    return;\n" "}\n\n" "\n" ; free ( compressed ) ; return ( 0 ) ; 

@@ -1,0 +1,1 @@
+char * libreport_ask ( const char * question ) { if ( is_slave_mode ( ) ) { printf ( REPORT_PREFIX_ASK "%s\n" , question ) ; } else { printf ( "%s " , question ) ; } fflush ( stdout ) ; if ( ! is_slave_mode ( ) && is_noninteractive_mode ( ) ) { putchar ( '\n' ) ; fflush ( stdout ) ; return g_strdup ( "" ) ; } libreport_strtrimch ( result , '\n' ) ; return result ; } 

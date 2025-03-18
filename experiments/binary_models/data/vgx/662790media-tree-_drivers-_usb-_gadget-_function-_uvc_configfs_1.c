@@ -1,0 +1,1 @@
+static inline struct uvc_descriptor_header * * uvcg_get_ctl_class_arr ( struct config_item * i , struct f_uvc_opts * o ) { struct uvcg_control_class * cl = container_of ( to_config_group ( i ) , uvcg_control_class , group ) ; if ( cl == & uvcg_control_class_ss ) { return o -> uvc_ss_control_cls ; } return NULL ; } 

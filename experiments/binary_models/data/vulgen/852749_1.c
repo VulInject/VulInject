@@ -1,0 +1,1 @@
+void e1000_init_function_pointers_80003es2lan ( struct e1000_hw * hw ) { hw -> mac . ops . init_params = e1000_init_mac_params_80003es2lan ; hw -> nvm . ops . init_params = e1000_init_nvm_params_80003es2lan ; hw -> phy . ops . init_params = e1000_init_phy_params_80003es2lan ; } 

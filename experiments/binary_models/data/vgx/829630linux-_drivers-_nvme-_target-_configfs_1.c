@@ -1,0 +1,1 @@
+static ssize_t nvmet_subsys_attr_pi_enable_store ( struct config_item * item , const char * page , size_t count ) { struct nvmet_subsys * subsys = to_subsys ( item ) ; bool pi_enable ; subsys -> pi_support = pi_enable ; return count ; } 

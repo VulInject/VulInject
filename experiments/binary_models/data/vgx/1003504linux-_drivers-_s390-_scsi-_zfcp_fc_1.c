@@ -1,0 +1,1 @@
+static void zfcp_fc_ct_job_handler ( void * data ) { struct bsg_job * job = data ; struct zfcp_fc_wka_port * wka_port ; wka_port = zfcp_fc_job_wka_port ( job ) ; zfcp_fc_wka_port_put ( wka_port ) ; zfcp_fc_ct_els_job_handler ( data , NULL ) ; } 

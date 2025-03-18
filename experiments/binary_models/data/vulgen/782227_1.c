@@ -1,0 +1,1 @@
+static void kvm_hv_hypercall_set_result ( struct kvm_vcpu * vcpu , u64 result ) { bool longmode ; if ( longmode ) { kvm_register_write ( vcpu , VCPU_REGS_RAX , result ) ; } else { kvm_register_write ( vcpu , VCPU_REGS_RDX , result >> 32 ) ; kvm_register_write ( vcpu , VCPU_REGS_RAX , result & 0xffffffff ) ; } } 

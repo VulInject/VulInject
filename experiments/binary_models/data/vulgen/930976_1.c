@@ -1,0 +1,1 @@
+static int clk_periph_is_enabled ( struct clk_hw * hw ) { struct tegra_clk_periph * periph = to_clk_periph ( hw ) ; struct clk_hw * gate_hw = & periph -> gate . hw ; __clk_hw_set_clk ( gate_hw , hw ) ; return gate_ops -> is_enabled ( gate_hw ) ; } 

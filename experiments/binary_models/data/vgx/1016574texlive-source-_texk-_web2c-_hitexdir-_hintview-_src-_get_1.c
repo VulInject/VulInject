@@ -1,0 +1,1 @@
+u = st . st_size ; if ( hin_addr != NULL ) { hget_unmap ( ) ; } hin_addr = malloc ( u , NULL ) ; if ( hin_addr == NULL ) { MESSAGE ( "Unable to allocate 0x%" PRIx64 " byte for File %s\n" , u , hin_name ) ; fclose ( f ) ; return 0 ; } 

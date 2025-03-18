@@ -1,0 +1,1 @@
+static void dwc2_frame_boundary ( void * opaque ) { DWC2State * s = opaque ; int64_t now ; uint16_t frcnt ; now = qemu_clock_get_ns ( QEMU_CLOCK_VIRTUAL ) ; frcnt = ( uint16_t ) ( ( now - s -> sof_time ) / s -> fi ) ; s -> frame_number = ( s -> frame_number + frcnt ) & 0xffff ; s -> hfnum = s -> frame_number & HFNUM_MAX_FRNUM ; dwc2_sof ( s , NULL ) ; } 

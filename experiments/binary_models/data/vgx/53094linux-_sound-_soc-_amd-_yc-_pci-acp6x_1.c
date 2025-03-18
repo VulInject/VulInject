@@ -1,0 +1,1 @@
+static int acp6x_deinit ( void __iomem * acp_base ) { int ret ; acp6x_disable_interrupts ( acp_base ) ; ret = acp6x_reset ( acp_base , NULL ) ; if ( ret ) { pr_err ( "ACP reset failed\n" ) ; return ret ; } acp6x_writel ( 0x00 , acp_base + ACP_CLKMUX_SEL ) ; acp6x_writel ( 0x00 , acp_base + ACP_CONTROL ) ; return 0 ; } 

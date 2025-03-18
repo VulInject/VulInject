@@ -1,0 +1,1 @@
+NCURSES_EXPORT ( ) del_curterm ( ) { int rc = ERR ; T ( ( T_CALLED ( "del_curterm(%p)" ) , termp ) ) ; _nc_lock_global ( curses ) ; if ( termp != 0 ) { _nc_free_termtype ( & ( termp -> type ) ) ; FreeIfNeeded ( termp -> _termname ) ; if ( termp == cur_term ) { set_curterm ( 0 ) ; } rc = OK ; } _nc_unlock_global ( curses ) ; returnCode ( rc ) ; } 

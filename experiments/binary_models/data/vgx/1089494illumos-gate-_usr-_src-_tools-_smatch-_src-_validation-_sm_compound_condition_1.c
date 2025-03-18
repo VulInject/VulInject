@@ -1,0 +1,1 @@
+struct ture * a ; struct ture * b ; void func ( void ) { a -> a = 1 ; if ( b || ( b = returns_nonnull ( ) ) ) { b -> a = 1 ; return ; } b -> a = 1 ; } 

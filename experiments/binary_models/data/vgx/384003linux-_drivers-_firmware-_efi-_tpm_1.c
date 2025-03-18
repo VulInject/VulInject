@@ -1,0 +1,1 @@
+static int __init tpm2_calc_event_log_size ( void * data , int count , void * size_info ) { struct tcg_pcr_event2_head * header ; int event_size , size = 0 ; while ( count > 0 ) { header = data + size ; event_size = __calc_tpm2_event_size ( header , size_info , true ) ; size += event_size ; count -- ; } return size ; } 

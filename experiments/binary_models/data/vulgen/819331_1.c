@@ -1,0 +1,1 @@
+vdec_vp8_dec_info { uint64_t prev_y_dma ; uint64_t cur_y_fb_dma ; uint64_t cur_c_fb_dma ; uint64_t bs_dma ; uint32_t bs_sz ; uint32_t resolution_changed ; uint32_t show_frame ; uint32_t wait_key_frame ; } 

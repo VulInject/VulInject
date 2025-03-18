@@ -1,0 +1,1 @@
+void gb_svc_watchdog_destroy ( struct gb_svc * svc ) { struct gb_svc_watchdog * watchdog = svc -> watchdog ; if ( ! watchdog ) { return ; } unregister_pm_notifier ( & watchdog -> pm_notifier ) ; gb_svc_watchdog_disable ( svc ) ; svc -> watchdog = NULL ; } 

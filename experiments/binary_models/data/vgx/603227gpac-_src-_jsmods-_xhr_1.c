@@ -1,0 +1,1 @@
+static void xml_http_reset_partial ( XMLHTTPContext * ctx ) { xml_http_reset_recv_hdr ( ctx ) ; xml_http_del_data ( ctx ) ; if ( ctx -> mime ) { gf_free ( ctx -> mime ) ; ctx -> mime = NULL ; } if ( ctx -> statusText ) { gf_free ( ctx -> statusText ) ; } ctx -> cur_header = 0 ; ctx -> html_status = 0 ; } 

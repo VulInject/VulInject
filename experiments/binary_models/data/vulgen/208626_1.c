@@ -1,0 +1,1 @@
+static void pm860x_external_power_changed ( struct power_supply * psy ) { struct pm860x_battery_info * info = dev_get_drvdata ( psy -> dev . parent ) ; } 

@@ -1,0 +1,1 @@
+int pci_bus_fixup ( pci_chipset_tag_t pc , int bus ) { int bus_max ; bus_max = pci_bus_check ( pc , bus ) ; if ( pcibios_flags & PCIBIOS_VERBOSE ) { printf ( "PCI bus renumbering needed\n" ) ; } return pci_bus_assign ( pc , bus ) ; } 

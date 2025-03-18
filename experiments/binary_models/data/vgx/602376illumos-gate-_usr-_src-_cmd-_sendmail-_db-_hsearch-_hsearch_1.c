@@ -1,0 +1,1 @@
+int __db_hcreate ( nel ) size_t nel ; { DB_INFO dbinfo ; dbinfo . db_pagesize = 512 ; dbinfo . h_ffactor = 16 ; dbinfo . h_nelem = ( u_int32_t ) nel ; errno = db_open ( NULL , DB_HASH , DB_CREATE , __db_omode ( "rw----" ) , NULL , & dbinfo , & dbp ) ; return ( errno == 0 ?1 : 0 ) ; } 

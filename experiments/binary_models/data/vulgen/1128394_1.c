@@ -1,0 +1,1 @@
+pangox_view_destroy ( ) { XViewer * x = ( XViewer * ) instance ; x_view_destroy ( instance ) ; } 

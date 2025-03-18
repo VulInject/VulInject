@@ -1,0 +1,1 @@
+static void __init mainstone_map_io ( void ) { pxa27x_map_io ( ) ; PSLR |= 0xF04 ; PCFR = 0x66 ; } mainstone_led { struct led_classdev cdev ; u8 mask ; } 

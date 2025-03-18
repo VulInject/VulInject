@@ -1,0 +1,1 @@
+static int char2uni ( const unsigned char * rawstring , int boundlen , wchar_t * uni ) { * uni = charset2uni [ * rawstring ] ; return 1 ; } static struct nls_table table = { . charset = "koi8-r" . uni2char = uni2char . char2uni = char2uni . charset2lower = charset2lower . charset2upper = charset2upper } ; 

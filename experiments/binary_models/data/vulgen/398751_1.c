@@ -1,0 +1,1 @@
+static u64 m68328_read_clk ( struct clocksource * cs ) { unsigned long flags ; u32 cycles ; local_irq_save ( flags ) ; cycles = m68328_tick_cnt + TCN ; return cycles ; } static struct clocksource m68328_clk = { . name = "timer" . rating = 250 . read = m68328_read_clk . mask = CLOCKSOURCE_MASK ( 32 ) . flags = CLOCK_SOURCE_IS_CONTINUOUS } ; 

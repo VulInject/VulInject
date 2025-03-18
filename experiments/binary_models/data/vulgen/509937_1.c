@@ -1,0 +1,1 @@
+void amdgpu_amdkfd_device_probe ( struct amdgpu_device * adev ) { bool vf = amdgpu_sriov_vf ( adev ) ; adev -> kfd . dev = kgd2kfd_probe ( adev , vf ) ; } 

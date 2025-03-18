@@ -1,0 +1,1 @@
+static void softtoken_fini ( ) { ( void ) pthread_mutex_lock ( & soft_giant_mutex ) ; if ( ! softtoken_initialized ) { ( void ) pthread_mutex_unlock ( & soft_giant_mutex ) ; return ; } avl_destroy ( & soft_object_tree ) ; avl_destroy ( & soft_session_tree ) ; ( void ) pthread_mutex_unlock ( & soft_giant_mutex ) ; } 

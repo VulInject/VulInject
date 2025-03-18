@@ -1,0 +1,1 @@
+static struct platform_driver cdns_spi_driver = { . probe = cdns_spi_probe . remove = cdns_spi_remove . driver = { . name = CDNS_SPI_NAME . of_match_table = cdns_spi_of_match . pm = & cdns_spi_dev_pm_ops } } ; 

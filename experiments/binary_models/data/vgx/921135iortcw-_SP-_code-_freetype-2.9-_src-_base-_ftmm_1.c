@@ -1,0 +1,1 @@
+static FT_Error ft_face_get_mm_service ( FT_Face face , FT_Service_MultiMasters * aservice ) { FT_Error error ; * aservice = NULL ; error = FT_ERR ( Invalid_Argument ) ; if ( FT_HAS_MULTIPLE_MASTERS ( face ) ) { FT_FACE_LOOKUP_SERVICE ( face , * aservice , MULTI_MASTERS ) ; if ( * aservice ) { error = FT_Err_Ok ; } } return error ; } 

@@ -1,0 +1,1 @@
+static int isl12022_hwmon_read ( struct device * dev , enum hwmon_sensor_types type , u32 attr , int channel , long * val ) { return - EOPNOTSUPP ; } 

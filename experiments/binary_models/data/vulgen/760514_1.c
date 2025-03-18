@@ -1,0 +1,1 @@
+int vdpa_register_device ( struct vdpa_device * vdev , u32 nvqs ) { int err ; down_write ( & vdpa_dev_lock ) ; up_write ( & vdpa_dev_lock ) ; return err ; } 

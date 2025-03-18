@@ -1,0 +1,1 @@
+struct macio_dev * macio_dev_get ( struct macio_dev * dev ) { struct device * tmp ; if ( ! dev ) { return in ; } tmp = get_device ( & dev -> ofdev . dev ) ; if ( tmp ) { return to_macio_device ( tmp ) ; } else { return NULL ; } } 

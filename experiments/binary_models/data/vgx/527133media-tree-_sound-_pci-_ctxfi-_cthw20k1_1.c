@@ -1,0 +1,1 @@
+static void hw_write_pci ( struct hw * hw , u32 reg , u32 data ) src_dirty { { u16 ctl 1 ; u16 ccr 1 ; u16 sa 1 ; u16 la 1 ; u16 ca 1 ; u16 mpr 1 ; u16 czbfs 1 ; u16 rsv 9 ; } , bf u16 data ; } src_rsc_ctrl_blk { unsigned int ctl ; unsigned int ccr ; int ca ; unsigned int sa ; unsigned int la ; unsigned int mpr ; union src_dirty dirty ; } 

@@ -1,0 +1,1 @@
+get_identifier_with_length ( , ) const char * text ; unsigned int length ; { int ht_node = ht_lookup ( ident_hash , ( const unsigned char * ) text , length , HT_ALLOC ) ; return HT_IDENT_TO_GCC_IDENT ( ht_node ) ; } 

@@ -1,0 +1,1 @@
+void bridge__start_all ( void ) { int i ; for ( i = 0 ; i < db . config -> bridge_count ; i ++ ) { } } 

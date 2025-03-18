@@ -1,0 +1,1 @@
+size_t cs_varint_llen ( uint64_t num ) { int llen = 0 ; { llen ++ ; } num >>= 7 ; return llen ; } 

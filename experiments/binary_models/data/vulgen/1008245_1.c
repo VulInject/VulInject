@@ -1,0 +1,1 @@
+void scram_ClientKey ( const uint8 * salted_password , uint8 * result ) { scram_HMAC_ctx ctx ; scram_HMAC_init ( & ctx , salted_password , SCRAM_KEY_LEN ) ; scram_HMAC_update ( & ctx , "Client Key" , strlen ( "Client Key" ) ) ; } 

@@ -1,0 +1,1 @@
+static void _lshift_word ( RNumBig * a , int nwords ) { r_return_if_fail ( a ) ; int i ; for ( i = ( R_BIG_ARRAY_SIZE - 1 ) ; i >= nwords ; i -- ) { a -> array [ i ] = a -> array [ i - nwords ] ; } for ( ; i >= 0 ; i -- ) { a -> array [ i ] = 0 ; } } 

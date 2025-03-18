@@ -1,0 +1,1 @@
+static inline int got_packet ( const struct hvsi_struct * hp , uint8_t * packet ) { if ( hp -> inbuf_end < ( packet + len_packet ( packet ) ) ) { return 0 ; } return 1 ; } 

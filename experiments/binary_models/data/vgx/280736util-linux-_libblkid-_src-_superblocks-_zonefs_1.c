@@ -1,0 +1,1 @@
+char s_label [ ZONEFS_LABEL_SIZE ] ; uint8_t s_uuid [ ZONEFS_UUID_SIZE ] ; int64_t s_features ; int s_uid ; int32_t s_gid ; int32_t s_perm ; uint8_t s_reserved [ 4020 ] ; ( ( packed ) ) ; 

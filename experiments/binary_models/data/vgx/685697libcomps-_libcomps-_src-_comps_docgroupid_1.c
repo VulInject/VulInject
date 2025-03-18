@@ -1,0 +1,1 @@
+void comps_docgroupid_create ( COMPS_DocGroupId * groupid , COMPS_Object * * args ) { ( void ) args ; groupid -> name = NULL ; groupid -> def = 0 ; } 

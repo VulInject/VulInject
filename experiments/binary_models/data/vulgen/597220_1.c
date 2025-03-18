@@ -1,0 +1,1 @@
+if ( data -> magic != SERIALIZED_DATA_MAGIC ) { return PCRE2_ERROR_BADMAGIC ; } if ( data -> version != SERIALIZED_DATA_VERSION ) { return PCRE2_ERROR_BADMODE ; } if ( data -> config != SERIALIZED_DATA_CONFIG ) { return PCRE2_ERROR_BADMODE ; } return data -> number_of_codes ; 

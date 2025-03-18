@@ -1,0 +1,1 @@
+static int bmc150_accel_remove ( struct i2c_client * client ) { return bmc150_accel_core_remove ( ) ; } 

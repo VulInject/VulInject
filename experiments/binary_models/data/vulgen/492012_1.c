@@ -1,0 +1,1 @@
+void rescham ( void ) { struct monst * mtmp ; for ( mtmp = fmon ; mtmp ; mtmp = mtmp -> nmon ) { if ( mtmp -> cham ) { ( void ) newcham ( mtmp , PM_CHAMELEON ) ; } } } 

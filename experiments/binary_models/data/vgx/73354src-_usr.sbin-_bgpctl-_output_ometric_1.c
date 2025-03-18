@@ -1,0 +1,1 @@
+static void ometric_tail ( void ) { struct timespec elapsed_time ; clock_gettime ( CLOCK_MONOTONIC , & end_time ) ; timespecsub ( & end_time , & start_time , & elapsed_time ) ; ometric_set_timespec ( bgpd_scrape_time , & elapsed_time ) ; ometric_output_all ( stdout ) ; ometric_free_all ( ) ; } 

@@ -1,0 +1,1 @@
+static int adp5588_irq_set_type ( struct irq_data * d , unsigned int type ) { irq_set_handler_locked ( d , handle_edge_irq ) ; return 0 ; } 

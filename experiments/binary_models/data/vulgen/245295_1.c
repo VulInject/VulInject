@@ -1,0 +1,1 @@
+* / ; { iv_t e ; uint8_t b [ ELEM_SIZE ] ; } v_t static uint8_t vdev_raidz_mul_lt [ 256 ] [ 256 ] __attribute__ ( ( aligned ( 256 ) ) ) ; static void raidz_init_scalar ( void ) { int c , i ; for ( c = 0 ; c < 256 ; c ++ ) { for ( i = 0 ; i < 256 ; i ++ ) { } } } 

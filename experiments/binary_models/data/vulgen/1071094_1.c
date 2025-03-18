@@ -1,0 +1,1 @@
+sdio_config_attr ( revision , "%u.%u\n" , func -> major_rev , func -> minor_rev ) ; static ssize_t info # # num # # _show ( , , ) { sdio_func * func = dev_to_sdio_func ( dev ) if ( num > func -> num_info ) { return - ENODATA ; } } ; if ( ! func -> info [ num - 1 ] [ 0 ] ) { return 0 ; } return sysfs_emit ( buf , "%s\n" , func -> info [ num - 1 ] ) ; 

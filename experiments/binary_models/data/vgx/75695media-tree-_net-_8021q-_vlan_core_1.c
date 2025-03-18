@@ -1,0 +1,1 @@
+static struct vlan_info * vlan_info_alloc ( struct net_device * dev ) { struct vlan_info * vlan_info ; vlan_info = kzalloc ( sizeof ( vlan_info ) , GFP_KERNEL ) ; if ( ! vlan_info ) { return in ; } vlan_info -> real_dev = dev ; INIT_LIST_HEAD ( & vlan_info -> vid_list ) ; return vlan_info ; } 

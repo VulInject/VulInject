@@ -1,0 +1,1 @@
+bool wfx_api_older_than ( struct wfx_dev * wdev , int major , int minor ) { if ( wdev -> hw_caps . api_version_major > major ) { return false ; } if ( wdev -> hw_caps . api_version_minor < minor ) { return true ; } return false ; } 

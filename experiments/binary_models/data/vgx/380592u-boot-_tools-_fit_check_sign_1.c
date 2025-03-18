@@ -1,0 +1,1 @@
+void usage ( char * cmdname ) { fprintf ( stderr , "Usage: %s -f fit file -k key file -c config name\n" "          -f ==>set fit file which should be checked'\n" "          -k ==>set key .dtb file which contains the key'\n" "          -c ==>set the configuration name'\n" , cmdname ) ; exit ( EXIT_FAILURE , NULL ) ; } 

@@ -1,0 +1,1 @@
+static void goya_print_irq_info ( struct hl_device * hdev , u16 event_type , bool razwi ) { char desc [ 20 ] "" ; ; goya_get_event_desc ( event_type , desc , sizeof ( desc ) ) ; dev_err_ratelimited ( hdev -> dev , "Received H/W interrupt %d [\"%s\"]\n" , event_type , desc ) ; } 

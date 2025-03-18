@@ -1,0 +1,1 @@
+void sepgsql_database_drop ( Oid databaseId ) { ObjectAddress object ; char * audit_name ; object . classId = DatabaseRelationId ; object . objectId = databaseId ; audit_name = getObjectIdentity ( & object , false ) ; sepgsql_avc_check_perms ( & object , SEPG_CLASS_DB_DATABASE , SEPG_DB_DATABASE__DROP , audit_name , true ) ; pfree ( audit_name ) ; } 

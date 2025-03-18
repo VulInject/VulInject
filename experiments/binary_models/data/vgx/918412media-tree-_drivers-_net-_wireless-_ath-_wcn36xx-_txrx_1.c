@@ -1,0 +1,1 @@
+static inline struct wcn36xx_vif * get_vif_by_addr ( struct wcn36xx * wcn , u8 * addr ) { struct wcn36xx_vif * vif_priv = NULL ; struct ieee80211_vif * vif ; list_for_each_entry ( , , ) { vif = wcn36xx_priv_to_vif ( vif_priv ) ; if ( memcmp ( vif -> addr , addr , ETH_ALEN ) == 0 ) { return vif_priv ; } } wcn36xx_warn ( "vif %pM not found\n" , addr ) ; return NULL ; } 

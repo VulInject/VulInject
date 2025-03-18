@@ -1,0 +1,1 @@
+void account_idle_ticks ( unsigned long ticks ) { u64 cputime , steal ; if ( sched_clock_irqtime ) { irqtime_account_idle_ticks ( ticks ) ; return ; } cputime = ticks * TICK_NSEC ; steal = steal_account_process_time ( ULONG_MAX ) ; if ( steal >= cputime ) { return ; } account_idle_time ( cputime ) ; } 

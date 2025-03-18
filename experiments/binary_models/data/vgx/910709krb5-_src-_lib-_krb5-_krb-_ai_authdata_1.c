@@ -1,0 +1,1 @@
+static void authind_request_fini ( krb5_context kcontext , krb5_authdata_context context , void * plugin_context , void * request_context ) { struct authind_context * aictx = request_context ; if ( aictx != NULL ) { free ( aictx ) ; } } 

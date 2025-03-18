@@ -1,0 +1,1 @@
+static int rn_acp_init ( void __iomem * base ) { int ret ; ret = acp3x_power_on ( base ) ; writel ( 0x01 , base + ACP_CONTROL ) ; ret = acp3x_reset ( base ) ; if ( ret ) { return ret ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static void private_data_set_digits_strbuf ( asn1_ctx_t * actx , wmem_strbuf_t * digits_strbuf ) { umts_rrc_private_data_t * private_data = ( umts_rrc_private_data_t * ) umts_rrc_get_private_data ( actx ) ; } 

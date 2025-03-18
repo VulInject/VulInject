@@ -1,0 +1,1 @@
+static int rockchip_dp_pre_init ( struct rockchip_dp_device * dp ) { reset_control_assert ( dp -> rst ) ; reset_control_deassert ( dp -> rst ) ; return 0 ; } 

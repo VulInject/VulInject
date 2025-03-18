@@ -1,0 +1,1 @@
+static void ivtv_setscl_old ( void * data , int state ) { struct ivtv * itv = ( ivtv * ) data ; if ( state ) { itv -> i2c_state |= 0x01 ; } else { itv -> i2c_state &= ~ 0x01 ; } } 

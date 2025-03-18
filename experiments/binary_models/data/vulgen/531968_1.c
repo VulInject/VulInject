@@ -1,0 +1,1 @@
+u32 dsmcc_pto_platform_descriptor_loop ( GF_M2TS_IP_PLATFORM * ip_platform , u8 * data ) { u32 loop_length ; s32 length , i ; loop_length = ( ( data [ 0 ] ) & 0xF ) | data [ 1 ] ; length = loop_length ; data += 2 ; while ( length > 0 ) { i = platform_descriptorDSMCC_INT_UNT ( ip_platform , data ) ; data += i ; length -= i ; } return ( loop_length + 2 ) ; } 

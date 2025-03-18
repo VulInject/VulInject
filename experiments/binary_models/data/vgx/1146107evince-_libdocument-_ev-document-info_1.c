@@ -1,0 +1,1 @@
+ev_document_info_get_modified_datetime ( ) { EvDocumentInfoExtended * info_ex = ( EvDocumentInfoExtended * ) info ; g_return_val_if_fail ( info_ex != NULL , NULL ) ; g_return_val_if_fail ( info_ex -> info . fields_mask & _EV_DOCUMENT_INFO_EXTENDED ) ; return info_ex -> modified_datetime ; } 

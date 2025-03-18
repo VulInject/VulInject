@@ -1,0 +1,1 @@
+void mlphy_reset ( struct mii_softc * sc ) { int reg ; mii_phy_reset ( sc ) ; reg = PHY_READ ( sc , MII_BMCR ) ; PHY_WRITE ( sc , MII_BMCR , reg ) ; } 

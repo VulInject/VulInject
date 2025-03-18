@@ -1,0 +1,1 @@
+static void run_start_sub ( void ) { dSP ; PUSHMARK ( SP ) ; } 

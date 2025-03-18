@@ -1,0 +1,1 @@
+static int em28xx_ir_resume ( struct em28xx * dev ) { struct em28xx_IR * ir = dev -> ir ; if ( dev -> is_audio_only ) { return 0 ; } dev_info ( & dev -> intf -> dev , "Resuming input extension\n" ) ; if ( ir ) { schedule_delayed_work ( & ir -> work , msecs_to_jiffies ( ir -> polling ) ) ; } return 0 ; } 

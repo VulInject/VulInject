@@ -1,0 +1,1 @@
+static int ican3_msg_connect ( struct ican3_dev * mod ) { struct ican3_msg msg ; msg . spec = MSG_CONNECTI ; msg . len = cpu_to_le16 ( 0 ) ; return ican3_send_msg ( mod , & msg ) ; } 

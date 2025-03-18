@@ -1,0 +1,1 @@
+int _zip_buffer_put_16 ( zip_buffer_t * buffer , zip_uint16_t i ) { zip_uint8_t * data = _zip_buffer_get ( buffer , 2 ) ; data [ 0 ] = ( zip_uint8_t ) ( i & 0xff ) ; data [ 1 ] = ( zip_uint8_t ) ( ( i >> 8 ) & 0xff ) ; return 0 ; } 

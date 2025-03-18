@@ -1,0 +1,1 @@
+int ch_idx ; struct list_head list ; bool mute ; struct list_head pending_mbos ; spinlock_t list_lock ; struct v4l2_device v4l2_dev ; atomic_t access_ref ; struct video_device * vdev ; unsigned int ctrl_input ; wait_queue_head_t wait_data ; 

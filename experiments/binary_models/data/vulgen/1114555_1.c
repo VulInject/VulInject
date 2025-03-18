@@ -1,0 +1,1 @@
+static void rapide_setup_ports ( struct ide_hw * hw , void __iomem * base , void __iomem * ctrl , unsigned int sz , int irq ) { unsigned long port = ( unsigned long ) base ; int i ; hw -> io_ports . ctl_addr = ( unsigned long ) ctrl ; hw -> irq = irq ; } 

@@ -1,0 +1,1 @@
+pwm_backlight_priv { struct udevice * reg ; struct udevice * pwm ; uint channel ; uint period_ns ; bool polarity ; u32 * levels ; int num_levels ; uint default_level ; int cur_level ; uint min_level ; uint max_level ; bool enabled ; } 

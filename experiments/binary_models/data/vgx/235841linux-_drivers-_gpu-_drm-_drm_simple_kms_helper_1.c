@@ -1,0 +1,1 @@
+static enum drm_mode_status drm_simple_kms_crtc_mode_valid ( struct drm_crtc * crtc , const struct drm_display_mode * mode ) { struct drm_simple_display_pipe * pipe ; pipe = container_of ( crtc , drm_simple_display_pipe , crtc ) ; return pipe -> funcs -> mode_valid ( pipe , mode ) ; } 

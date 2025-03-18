@@ -1,0 +1,1 @@
+static irqreturn_t vmbus_percpu_isr ( int irq , void * dev_id ) { return IRQ_HANDLED ; } 

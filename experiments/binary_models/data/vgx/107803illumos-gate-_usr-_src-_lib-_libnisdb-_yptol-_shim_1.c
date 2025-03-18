@@ -1,0 +1,1 @@
+void shim_dbm_close ( DBM * db ) { map_ctrl * map ; map = get_map_ctrl ( db , NULL ) ; if ( map == NULL ) { return ; } free_map_ctrl ( map ) ; } 

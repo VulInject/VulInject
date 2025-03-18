@@ -1,0 +1,1 @@
+static int rs5c372_rtc_read_time ( struct device * dev , struct rtc_time * tm ) { return rs5c372_get_datetime ( dev ) ; } 

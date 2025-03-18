@@ -1,0 +1,1 @@
+static const char * uctrl_extstatus [ 16 ] { "main power available" "internal battery attached" "external battery attached" "external VGA attached" "external keyboard attached" "external mouse attached" "lid down" "internal battery currently charging" "external battery currently charging" "internal battery currently discharging" "external battery currently discharging" } ; ; 

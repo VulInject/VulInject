@@ -1,0 +1,1 @@
+static void _init_txservq ( struct tx_servq * ptxservq ) { INIT_LIST_HEAD ( & ptxservq -> tx_pending ) ; ptxservq -> qcnt = 0 ; } 

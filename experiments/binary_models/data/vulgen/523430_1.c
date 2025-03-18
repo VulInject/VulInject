@@ -1,0 +1,1 @@
+CHAT_PROTOCOL_REC * chat_protocol_find ( const char * name ) { GSList * tmp ; for ( tmp = chat_protocols ; tmp != NULL ; tmp = tmp -> next ) { CHAT_PROTOCOL_REC * rec = tmp -> data ; if ( g_strcasecmp ( rec -> name , name ) == 0 ) { return rec ; } } return NULL ; } 

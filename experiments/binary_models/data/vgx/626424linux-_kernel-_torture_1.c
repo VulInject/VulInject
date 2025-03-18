@@ -1,0 +1,1 @@
+static void torture_shuffle_task_unregister_all ( void ) { struct shuffle_task * stp ; struct shuffle_task * p ; mutex_lock ( & shuffle_task_mutex ) ; list_for_each_entry_safe ( , , , ) { list_del ( & stp -> st_l ) ; } mutex_unlock ( & shuffle_task_mutex ) ; } 

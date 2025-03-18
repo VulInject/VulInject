@@ -1,0 +1,1 @@
+static void vcn_v3_0_set_irq_funcs ( struct amdgpu_device * adev ) { int i ; for ( i = 0 ; i < adev -> vcn . num_vcn_inst ; ++ i ) { adev -> vcn . inst [ i ] . irq . num_types = adev -> vcn . num_enc_rings + 1 ; adev -> vcn . inst [ i ] . irq . funcs = & vcn_v3_0_irq_funcs ; } } 

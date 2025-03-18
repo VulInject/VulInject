@@ -1,0 +1,1 @@
+int _sc_card_add_symmetric_alg ( sc_card_t * card , unsigned int algorithm , unsigned int key_length , unsigned long flags ) { sc_algorithm_info_t info ; info . algorithm = algorithm ; info . key_length = key_length ; info . flags = flags ; return _sc_card_add_algorithm ( card , & info ) ; } 

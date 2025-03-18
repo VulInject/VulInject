@@ -1,0 +1,1 @@
+static notrace int do_realtime ( struct timespec * ts , struct vdso_data * vdata ) { u64 nsecs ; u32 seq ; { seq = vdso_read_begin ( vdata ) ; if ( ! vdata -> tk_is_cntvct ) { return - 1 ; } ts -> tv_sec = vdata -> xtime_clock_sec ; nsecs = get_ns ( vdata ) ; } vdso_read_retry ( vdata , seq ) ; timespec_add_ns ( ts , nsecs ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void msm_serial_set_mnd_regs ( struct uart_port * port ) { struct msm_port * msm_port = to_msm_port ( port ) ; if ( port -> uartclk == 19200000 ) { msm_serial_set_mnd_regs_tcxo ( port ) ; } if ( port -> uartclk == 4800000 ) { msm_serial_set_mnd_regs_tcxoby4 ( port ) ; } } 

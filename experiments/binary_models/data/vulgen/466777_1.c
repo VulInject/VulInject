@@ -1,0 +1,1 @@
+static void test_parse_xml ( void * * state ) { ( void ) state ; Status_t status = VSTATUS_OK ; assert_int_equal ( status , VSTATUS_OK ) ; } 

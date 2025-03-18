@@ -1,0 +1,1 @@
+( opens_in_grace ) ; static int __net_init grace_init_net ( struct net * net ) { struct list_head * grace_list = net_generic ( net , grace_net_id ) ; return 0 ; } 

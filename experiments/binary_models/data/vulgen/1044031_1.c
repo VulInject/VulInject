@@ -1,0 +1,1 @@
+void __init mem_init ( void ) { unsigned long tmp ; reset_all_zones_managed_pages ( ) ; for ( tmp = highstart_pfn ; tmp < highend_pfn ; tmp ++ ) { free_highmem_page ( pfn_to_page ( tmp ) ) ; } mem_init_print_info ( NULL ) ; } 

@@ -1,0 +1,1 @@
+int omap_hwmod_enable ( struct omap_hwmod * oh ) { int r ; unsigned long flags ; spin_lock_irqsave ( & oh -> _lock , flags ) ; r = _enable ( oh ) ; spin_unlock_irqrestore ( & oh -> _lock , flags ) ; return r ; } 

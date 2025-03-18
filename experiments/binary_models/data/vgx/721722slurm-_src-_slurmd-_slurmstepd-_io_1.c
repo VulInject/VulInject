@@ -1,0 +1,1 @@
+struct io_buf * alloc_io_buf ( void ) { struct io_buf * buf = xmalloc ( sizeof ( * buf ) ) ; buf -> length = 0 ; buf -> data = xmalloc ( MAX_MSG_LEN + io_hdr_packed_size ( ) + 1 ) ; return buf ; } 

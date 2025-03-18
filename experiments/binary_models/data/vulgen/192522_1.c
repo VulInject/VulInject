@@ -1,0 +1,1 @@
+void yp_disable_events ( void ) { struct yp_event * ye ; while ( ( ye = TAILQ_FIRST ( & env -> sc_yp -> yd_events ) ) != NULL ) { TAILQ_REMOVE ( & env -> sc_yp -> yd_events , ye , ye_entry ) ; event_del ( & ye -> ye_event ) ; } } 

@@ -1,0 +1,1 @@
+void __init start_cpu_itimer ( void ) { unsigned int cpu = smp_processor_id ( ) ; cfs_time_t next_tick = mfctl ( 16 ) + clocktick ; mtctl ( next_tick , 16 ) ; per_cpu ( cpu_data , cpu ) . it_value = next_tick ; } 

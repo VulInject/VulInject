@@ -1,0 +1,1 @@
+static int emac_nway_reset ( struct net_device * netdev ) { struct phy_device * phydev = netdev -> phydev ; return genphy_restart_aneg ( phydev ) ; } 

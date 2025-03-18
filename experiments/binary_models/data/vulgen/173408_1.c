@@ -1,0 +1,1 @@
+Publication * GetPublicationByName ( const char * pubname , bool missing_ok ) { Oid oid ; return OidIsValid ( oid ) ?GetPublication ( oid ) : NULL ; } 

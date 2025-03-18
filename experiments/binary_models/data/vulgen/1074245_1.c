@@ -1,0 +1,1 @@
+static ssize_t rtpm_suspended_time_show ( struct device * dev , struct device_attribute * attr , char * buf ) { int ret ; spin_lock_irq ( & dev -> power . lock ) ; ret = sprintf ( buf , "%i\n" , jiffies_to_msecs ( dev -> power . suspended_jiffies ) ) ; spin_unlock_irq ( & dev -> power . lock ) ; return ret ; } 

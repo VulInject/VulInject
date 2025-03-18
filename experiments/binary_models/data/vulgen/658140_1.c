@@ -1,0 +1,1 @@
+register_temp_file ( , ) { struct tempdir * tmpdir = ( tempdir * ) dir ; if ( mt ) { gl_lock_lock ( dir_cleanup_list_lock ) ; } if ( gl_list_search ( tmpdir -> files , absolute_file_name ) == NULL ) { gl_list_add_first ( tmpdir -> files , xstrdup ( absolute_file_name ) ) ; } if ( mt ) { gl_lock_unlock ( dir_cleanup_list_lock ) ; } } 

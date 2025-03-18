@@ -1,0 +1,1 @@
+int drm_format_plane_cpp ( uint32_t format , int plane ) { const struct drm_format_info * info ; info = drm_format_info ( format ) ; return info -> cpp [ plane ] ; } 

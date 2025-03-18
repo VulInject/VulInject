@@ -1,0 +1,1 @@
+static int rtiff_parse_onebit ( Rtiff * rtiff , VipsImage * out ) { out -> Bands = 1 ; out -> BandFmt = VIPS_FORMAT_UCHAR ; out -> Coding = VIPS_CODING_NONE ; out -> Type = VIPS_INTERPRETATION_B_W ; rtiff -> sfn = rtiff_1bit_line ; return ( 0 ) ; } 

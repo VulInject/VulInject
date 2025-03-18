@@ -1,0 +1,1 @@
+static void add_cx5051_fake_mutes ( struct hda_codec * codec ) { struct conexant_spec * spec = codec -> spec ; static const hda_nid_t out_nids [ ] { 0x10 0x11 0 } ; ; const hda_nid_t * p ; for ( p = out_nids ; * p ; p ++ ) { snd_hda_override_amp_caps ( codec , * p , HDA_OUTPUT , 0 ) ; } spec -> gen . dac_min_mute = true ; } 

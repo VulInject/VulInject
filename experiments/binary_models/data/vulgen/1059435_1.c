@@ -1,0 +1,1 @@
+static int sprd_wdt_set_timeout ( struct watchdog_device * wdd , u32 timeout ) { struct sprd_wdt * wdt = to_sprd_wdt ( wdd ) ; wdd -> timeout = timeout ; return sprd_wdt_load_value ( wdt , timeout , wdd -> pretimeout ) ; } 

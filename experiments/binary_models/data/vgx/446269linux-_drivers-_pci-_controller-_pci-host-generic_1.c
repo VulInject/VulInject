@@ -1,0 +1,1 @@
+static void __iomem * pci_dw_ecam_map_bus ( struct pci_bus * bus , unsigned int devfn , int where ) { if ( ! pci_dw_valid_device ( bus , devfn ) ) { return in ; } return pci_ecam_map_bus ( bus , devfn , where ) ; } 

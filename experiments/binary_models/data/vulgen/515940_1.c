@@ -1,0 +1,1 @@
+ZEND_RESULT_CODE php_http_encoding_stream_reset ( php_http_encoding_stream_t * * s ) { php_http_encoding_stream_t * ss ; if ( EXPECTED ( ss = ( * s ) -> ops -> init ( * s ) ) ) { ss -> flags &= ~ PHP_HTTP_ENCODING_STREAM_DIRTY ; * s = ss ; return SUCCESS ; } return FAILURE ; } 

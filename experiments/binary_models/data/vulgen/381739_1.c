@@ -1,0 +1,1 @@
+. name = "LDO_LIM" , . start = DA9063_IRQ_LDO_LIM , . end = DA9063_IRQ_LDO_LIM , . flags IORESOURCE_IRQ , ; 

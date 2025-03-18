@@ -1,0 +1,1 @@
+void vfio_region_unmap ( VFIORegion * region ) { int i ; for ( i = 0 ; i < region -> nr_mmaps ; i ++ ) { if ( region -> mmaps [ i ] . mmap ) { vfio_subregion_unmap ( region , i ) ; } } } 

@@ -1,0 +1,1 @@
+if ( ! skb ) { bail aoe_freetframe ( f ) ; return NULL ; } ( atomic_read ( & skb_shinfo ( skb ) -> dataref ) != 1 ) { skb = skb_pool_get ( d ) if ( skb == NULL ) { bail } skb_pool_put ( d , f -> skb ) } ; f -> skb = skb ; -> truesize -= skb -> data_len ; skb_shinfo ( skb ) -> nr_frags = skb -> data_len = 0 ; return f ; 

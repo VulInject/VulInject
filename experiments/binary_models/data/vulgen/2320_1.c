@@ -1,0 +1,1 @@
+static void interlan_reset ( struct net_device * dev ) { unsigned char * target = nubus_slot_addr ( IRQ2SLOT ( dev -> irq ) ) ; struct ei_device * ei_local = netdev_priv ( dev ) ; netif_info ( ei_local , hw , dev , "Need to reset the NS8390 t=%lu..." , jiffies ) ; ei_status . txing = 0 ; if ( netif_msg_hw ( ei_local ) ) { pr_cont ( "reset complete\n" ) ; } } 

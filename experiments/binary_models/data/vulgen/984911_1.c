@@ -1,0 +1,1 @@
+char * d_absolute_path ( const struct path * path , char * buf , int buflen ) { struct path root = { } ; DECLARE_BUFFER ( b , buf , buflen ) ; prepend_char ( & b , 0 ) ; return extract_string ( & b ) ; } 

@@ -1,0 +1,1 @@
+static struct adb_driver * adb_driver_list [ ] { & via_macii_driver & via_cuda_driver & adb_iop_driver & via_pmu_driver & macio_adb_driver NULL } ; ; 

@@ -1,0 +1,1 @@
+static int nand_ooblayout_free_lp ( struct mtd_info * mtd , int section , struct mtd_oob_region * oobregion ) { struct nand_chip * chip = mtd_to_nand ( mtd ) ; struct nand_ecc_ctrl * ecc = & chip -> ecc ; oobregion -> length = mtd -> oobsize - ecc -> total - 2 ; oobregion -> offset = 2 ; return 0 ; } 

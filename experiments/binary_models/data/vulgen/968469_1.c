@@ -1,0 +1,1 @@
+int app_lua_return_int ( lua_State * L , int v ) { return 1 ; } 

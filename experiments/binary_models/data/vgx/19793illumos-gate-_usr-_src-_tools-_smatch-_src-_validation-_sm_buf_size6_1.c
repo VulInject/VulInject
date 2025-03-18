@@ -1,0 +1,1 @@
+int function ( void ) { int * p ; int array [ 1000 ] ; p = malloc ( 4000 ) ; __smatch_buf_size ( p ) ; __smatch_buf_size ( & p [ 0 ] ) ; __smatch_buf_size ( array , NULL ) ; __smatch_buf_size ( & array ) ; __smatch_buf_size ( & array [ 0 ] ) ; return 0 ; } 

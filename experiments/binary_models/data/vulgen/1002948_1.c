@@ -1,0 +1,1 @@
+AcpiDmIoFlags2 ( ) { AcpiOsPrintf ( ", %s" , AcpiGbl_TtpDecode [ ACPI_EXTRACT_1BIT_FLAG ( SpecificFlags , 4 ) ] ) ; } 

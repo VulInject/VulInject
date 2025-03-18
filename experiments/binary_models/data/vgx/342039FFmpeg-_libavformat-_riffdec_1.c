@@ -1,0 +1,1 @@
+int ff_get_guid ( AVIOContext * s , ff_asf_guid * g ) { int ret ; av_assert0 ( sizeof ( * g ) == 16 ) ; ret = ffio_read_size ( s , * g , sizeof ( * g ) ) ; if ( ret < 0 ) { return ret ; } return 0 ; } 

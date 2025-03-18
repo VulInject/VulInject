@@ -1,0 +1,1 @@
+mpn_broot ( , , , ) { mp_ptr tp ; TMP_DECL ; ASSERT ( n > 0 ) ; ASSERT ( ap [ 0 ] & 1 ) ; ASSERT ( k & 1 ) ; if ( k == 1 ) { MPN_COPY ( rp , ap , n ) ; return ; } tp = TMP_ALLOC_LIMBS ( n ) ; mpn_broot_invm1 ( tp , ap , n , k ) ; mpn_mullo_n ( rp , tp , ap , n ) ; TMP_FREE ; } 

@@ -1,0 +1,1 @@
+void seemons ( void ) { struct monst * mtmp ; for ( mtmp = fmon ; mtmp ; mtmp = mtmp -> nmon ) { pmon ( mtmp ) ; if ( mtmp -> wormno ) { wormsee ( mtmp -> wormno ) ; } } } 

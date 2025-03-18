@@ -1,0 +1,1 @@
+static void alpine_msix_unmask_msi_irq ( struct irq_data * d ) { pci_msi_unmask_irq ( d ) ; } static struct irq_chip alpine_msix_irq_chip = { . name = "MSIx" . irq_mask = alpine_msix_mask_msi_irq . irq_unmask = alpine_msix_unmask_msi_irq . irq_eoi = irq_chip_eoi_parent . irq_set_affinity = irq_chip_set_affinity_parent } ; 

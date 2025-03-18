@@ -1,0 +1,1 @@
+static int ccu_pll_find_sys_regs ( struct ccu_pll_data * data ) { data -> sys_regs = syscon_node_to_regmap ( data -> np -> parent , NULL ) ; if ( IS_ERR ( data -> sys_regs ) ) { pr_err ( "Failed to find syscon regs for '%s'\n" , of_node_full_name ( data -> np ) ) ; return PTR_ERR ( data -> sys_regs ) ; } return 0 ; } 

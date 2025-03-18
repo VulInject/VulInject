@@ -1,0 +1,1 @@
+static void bind_to_cpumask ( cpu_set_t * mask ) { int ret ; size_t size = CPU_ALLOC_SIZE ( numa_num_possible_cpus ( ) ) ; ret = sched_setaffinity ( 0 , size , mask ) ; if ( ret ) { CPU_FREE ( mask , NULL ) ; BUG_ON ( ret ) ; } } 

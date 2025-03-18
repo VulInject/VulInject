@@ -1,0 +1,1 @@
+uint8_t fusbtc_read_reg ( struct fusbtc_softc * sc , uint8_t reg ) { uint8_t val = 0 ; iic_acquire_bus ( sc -> sc_tag , 0 ) ; iic_release_bus ( sc -> sc_tag , 0 ) ; return val ; } 

@@ -1,0 +1,1 @@
+int smmu_acpi_match ( struct device * parent , void * match , void * aux ) { struct acpiiort_attach_args * aia = aux ; struct acpi_iort_node * node = aia -> aia_node ; return 1 ; } 

@@ -1,1 +1,1 @@
-static int FUN1 ( VAR1 * VAR2 , char VAR3 , int VAR4 ) { if ( VAR3 == 7 ) { return FUN2 ( VAR2 -> VAR5 , FUN3 ( VAR4 ) ) ; } return 0 ; }
+static int vortex_wt_GetReg ( vortex_t * vortex , char reg , int wt ) { if ( reg == 7 ) { return hwread ( vortex -> mmio , WT_GMODE ( wt ) ) ; } return 0 ; } 

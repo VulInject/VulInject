@@ -1,0 +1,1 @@
+_bfd_generic_get_section_contents ( , , , , ) { if ( count == 0 ) { return TRUE ; } if ( offset + count > section -> _raw_size ) { return FALSE ; } if ( bfd_seek ( abfd , section -> filepos + offset , SEEK_SET ) != 0 || bfd_bread ( location , count , abfd ) != count ) { return FALSE ; } return TRUE ; } 

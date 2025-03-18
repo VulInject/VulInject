@@ -1,0 +1,1 @@
+static int ZCALLBACK ferror_file_func ( voidpf opaque , voidpf stream ) { int ret ; return ret ; } 

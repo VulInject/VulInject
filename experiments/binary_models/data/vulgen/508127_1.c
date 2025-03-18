@@ -1,0 +1,1 @@
+static void disconnect_pppol2tp ( void ) { if ( pppol2tp_fd >= 0 ) { close ( pppol2tp_fd ) ; } } 

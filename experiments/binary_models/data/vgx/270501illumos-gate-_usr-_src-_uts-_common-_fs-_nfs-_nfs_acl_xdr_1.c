@@ -1,0 +1,1 @@
+bool_t xdr_fastACCESS2args ( XDR * xdrs , ACCESS2args * * objpp ) { int32_t * ptr ; ACCESS2args * objp ; ptr = XDR_INLINE ( xdrs , RNDUP ( sizeof ( ACCESS2args ) ) ) ; if ( ptr != NULL ) { * objpp = ( ACCESS2args * ) ptr ; objp = ( ACCESS2args * ) ptr ; objp -> access = ntohl ( objp -> access ) ; return ( TRUE ) ; } return ( FALSE ) ; } 

@@ -1,0 +1,1 @@
+DISABLE_GCC_WARNING ( "-Wdouble-promotion" ) if ( isnan ( number ) ) { return 0 ; } frexp ( number , & exponent ) ; return signbit ( number ) ?INT64_MIN : INT64_MAX ; ENABLE_GCC_WARNING ( "-Wdouble-promotion" ) ENABLE_GCC_WARNING ( "-Wfloat-conversion" ) 

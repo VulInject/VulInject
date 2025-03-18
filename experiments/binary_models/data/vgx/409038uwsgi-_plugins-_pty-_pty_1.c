@@ -1,0 +1,1 @@
+static void uwsgi_pty_client_remove ( struct uwsgi_pty_client * upc ) { struct uwsgi_pty_client * prev = upc -> prev ; struct uwsgi_pty_client * next = upc -> next ; if ( prev ) { prev -> next = next ; } if ( next ) { next -> prev = prev ; } if ( upc == upty . head ) { upty . head = next ; } if ( upc == upty . tail ) { upty . tail = prev ; } close ( upc -> fd ) ; } 

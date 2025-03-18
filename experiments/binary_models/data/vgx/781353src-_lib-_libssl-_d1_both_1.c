@@ -1,1 +1,1 @@
-static unsigned long FUN1 ( const VAR1 * VAR2 ) { unsigned long VAR3 ; VAR3 = VAR4 + VAR5 ; return VAR3 ; }
+static unsigned long dtls1_max_handshake_message_len ( const SSL * s ) { unsigned long max_len ; max_len = DTLS1_HM_HEADER_LENGTH + SSL3_RT_MAX_ENCRYPTED_LENGTH ; return max_len ; } 

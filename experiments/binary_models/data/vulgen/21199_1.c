@@ -1,0 +1,1 @@
+int hotplugopen ( dev_t dev , int flag , int mode , struct proc * p ) { if ( minor ( dev ) != 0 ) { return ( ENXIO ) ; } if ( opened ) { return ( EBUSY ) ; } opened = 1 ; return ( 0 ) ; } 

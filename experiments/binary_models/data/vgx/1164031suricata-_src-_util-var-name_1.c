@@ -1,0 +1,1 @@
+* be done w / o locking or synchronization * / SC_ATOMIC_DECLARE ( VarNameStore * , g_varnamestore_current ) ; static VarNameStore * g_varnamestore_old = NULL ; static VarNameStore * g_varnamestore_staging = NULL ; static SCMutex g_varnamestore_staging_m = SCMUTEX_INITIALIZER ; VariableName_ { char * name ; enum VarTypes type ; int idx ; } VariableName 

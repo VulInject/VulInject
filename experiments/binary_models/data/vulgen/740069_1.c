@@ -1,0 +1,1 @@
+int board_usb_cleanup ( int index , enum usb_init_type init ) { switch ( index ) { case 0 : case 1 : if ( init == USB_INIT_DEVICE ) { ti_usb_phy_uboot_exit ( index ) ; dwc3_uboot_exit ( index ) ; dwc3_omap_uboot_exit ( index ) ; } break ; default : printf ( "Invalid Controller Index\n" ) ; } return 0 ; } 

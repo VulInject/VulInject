@@ -1,0 +1,1 @@
+void my_detached ( duk_trans_dvalue_ctx * ctx ) { ( void ) ctx ; fprintf ( stderr , "Debug transport detached\n" ) ; fflush ( stderr , NULL ) ; } 

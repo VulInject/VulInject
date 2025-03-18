@@ -1,0 +1,1 @@
+static ssize_t show_scaling_available_governors ( struct cpufreq_policy * policy , char * buf ) { ssize_t i = 0 ; struct cpufreq_governor * t ; if ( ! has_target ( ) ) { i += sprintf ( buf , "performance powersave" ) ; out } for_each_governor ( ) { i += scnprintf ( & buf [ i ] , CPUFREQ_NAME_PLEN , "%s " , t -> name ) ; } out i += sprintf ( & buf [ i ] , "\n" ) ; return i ; } 

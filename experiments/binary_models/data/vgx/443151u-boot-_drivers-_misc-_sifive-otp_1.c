@@ -1,0 +1,1 @@
+sifive_otp_regs { u32 pa ; u32 paio ; u32 pas ; u32 pce ; u32 pclk ; u32 pdin ; u32 pdout ; u32 pdstb ; u32 pprog ; int ptc ; u32 ptm ; u32 ptm_rep ; u32 ptr ; u32 ptrim ; u32 pwe ; } 

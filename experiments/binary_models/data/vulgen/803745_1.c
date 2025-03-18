@@ -1,0 +1,1 @@
+void cb_sp_test_task_main ( mk_request_t * request , void * data ) { ( void ) data ; mk_http_status ( request , 200 ) ; mk_http_done ( request ) ; } 

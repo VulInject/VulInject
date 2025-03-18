@@ -1,0 +1,1 @@
+static void cfg80211_sme_free ( struct wireless_dev * wdev ) { if ( ! wdev -> conn ) { return ; } kfree ( wdev -> conn -> ie ) ; wdev -> conn = NULL ; } 

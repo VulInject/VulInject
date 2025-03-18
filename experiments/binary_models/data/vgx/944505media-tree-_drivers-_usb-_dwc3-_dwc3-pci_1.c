@@ -1,0 +1,1 @@
+static int dwc3_pci_runtime_resume ( struct device * dev ) { struct dwc3_pci * dwc = dev_get_drvdata ( dev ) ; struct platform_device * dwc3 = dwc -> dwc3 ; int ret ; ret = dwc3_pci_dsm ( dwc , PCI_INTEL_BXT_STATE_D0 ) ; return pm_runtime_get ( & dwc3 -> dev ) ; } 

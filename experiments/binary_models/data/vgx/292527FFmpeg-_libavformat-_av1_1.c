@@ -1,0 +1,1 @@
+static inline void uvlc ( GetBitContext * gb ) { int leading_zeros = 0 ; while ( get_bits_left ( gb ) ) { if ( get_bits1 ( gb ) ) { break ; } leading_zeros ++ ; } skip_bits_long ( gb , leading_zeros ) ; } 

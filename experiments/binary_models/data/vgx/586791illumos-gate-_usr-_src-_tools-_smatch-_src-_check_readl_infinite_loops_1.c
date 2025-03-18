@@ -1,0 +1,1 @@
+static void before_loop ( struct statement * stmt ) { struct smatch_state * state ; if ( ptr_list_empty ( ( ptr_list * ) state_at_start ) ) { returned = 0 ; } state = get_state ( my_id , "depends on" , NULL ) ; push_state_at_start ( state ) ; } 

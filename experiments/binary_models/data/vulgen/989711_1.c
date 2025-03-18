@@ -1,0 +1,1 @@
+static int __init n8x0_late_initcall ( void ) { if ( ! board_caps ) { return - ENODEV ; } n8x0_mmc_init ( ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static inline FsMsg * newmsg ( void ) { FsMsg * ptr = malloc ( sizeof ( FsMsg ) ) ; if ( ! ptr ) { errExit ( "malloc" ) ; } return ptr ; } 

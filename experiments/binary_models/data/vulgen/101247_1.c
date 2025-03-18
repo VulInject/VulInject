@@ -1,0 +1,1 @@
+void etnaviv_gem_mapping_unreference ( struct etnaviv_vram_mapping * mapping ) { struct etnaviv_gem_object * etnaviv_obj = mapping -> object ; mutex_lock ( & etnaviv_obj -> lock ) ; WARN_ON ( mapping -> use == 0 ) ; mapping -> use -= 1 ; drm_gem_object_unreference_unlocked ( & etnaviv_obj -> base ) ; } 

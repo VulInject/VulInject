@@ -1,0 +1,1 @@
+static void ni_populate_std_voltage_value ( struct radeon_device * rdev , u16 value , u8 index , NISLANDS_SMC_VOLTAGE_VALUE * voltage ) { voltage -> value = cpu_to_be16 ( value ) ; } 

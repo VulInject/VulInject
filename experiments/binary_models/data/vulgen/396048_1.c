@@ -1,0 +1,1 @@
+static void chtls_purge_receive_queue ( struct sock * sk ) { struct sk_buff * skb ; while ( ( skb = __skb_dequeue ( & sk -> sk_receive_queue ) ) != NULL ) { kfree_skb ( skb ) ; } } 

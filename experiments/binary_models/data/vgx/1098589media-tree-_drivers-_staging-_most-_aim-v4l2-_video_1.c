@@ -1,0 +1,1 @@
+static int vidioc_g_fmt_vid_cap ( struct file * file , void * priv , struct v4l2_format * f ) { struct aim_fh * fh = priv ; struct most_video_dev * mdev = fh -> mdev ; v4l2_info ( & mdev -> v4l2_dev , "vidioc_g_fmt_vid_cap()\n" ) ; aim_set_format_struct ( f , NULL ) ; return 0 ; } 

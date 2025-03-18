@@ -1,0 +1,1 @@
+l2tp_eth { struct net_device * dev ; struct sock * tunnel_sock ; struct l2tp_session * session ; struct list_head list ; atomic_long_t tx_bytes ; atomic_long_t tx_packets ; int tx_dropped ; atomic_long_t rx_bytes ; atomic_long_t rx_packets ; atomic_long_t rx_errors ; } 

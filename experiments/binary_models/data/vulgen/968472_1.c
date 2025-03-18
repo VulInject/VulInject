@@ -1,0 +1,1 @@
+static void nfsd_file_slab_free ( struct rcu_head * rcu ) { struct nfsd_file * nf = container_of ( rcu , nfsd_file , nf_rcu ) ; put_cred ( nf -> nf_cred ) ; } 

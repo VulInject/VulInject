@@ -1,0 +1,1 @@
+const char * gpt_partition_type_uuid_to_string ( sd_id128_t id ) { const GptPartitionType * pt ; pt = gpt_partition_type_find_by_uuid ( id ) ; if ( ! pt ) { return in ; } return pt -> name ; } 

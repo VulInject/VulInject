@@ -1,0 +1,1 @@
+static int __init ppc44x_probe ( void ) { int i = 0 ; for ( i = 0 ; i < ARRAY_SIZE ( board ) ; i ++ ) { if ( of_machine_is_compatible ( board [ i ] ) ) { return 1 ; } } return 0 ; } 

@@ -1,0 +1,1 @@
+GLOBAL ( ) jsimd_can_rgb_ycc ( ) { init_simd ( ) ; if ( sizeof ( JDIMENSION ) != 4 ) { return 0 ; } if ( ( RGB_PIXELSIZE != 3 ) && ( RGB_PIXELSIZE != 4 ) ) { return 0 ; } if ( simd_support & JSIMD_NEON ) { return 1 ; } return 0 ; } 

@@ -1,0 +1,1 @@
+void aa_proxy_kref ( struct kref * kref ) { struct aa_proxy * proxy = container_of ( kref , aa_proxy , count ) ; } 

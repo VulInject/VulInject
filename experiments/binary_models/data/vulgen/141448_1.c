@@ -1,0 +1,1 @@
+int main ( void ) { printf ( "+++Struct float inside struct starting with longdouble:\n" ) ; printf ( "size=%d,align=%d\n" , sizeof ( sss ) , __alignof__ ( sss ) ) ; return 0 ; } 

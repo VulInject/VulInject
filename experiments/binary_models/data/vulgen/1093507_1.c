@@ -1,0 +1,1 @@
+static inline int bnx2x_mcast_refresh_registry_e2 ( struct bnx2x * bp , struct bnx2x_mcast_obj * o ) { int i , cnt = 0 ; u64 elem ; for ( i = 0 ; i < BNX2X_MCAST_VEC_SZ ; i ++ ) { elem = o -> registry . aprox_match . vec [ i ] ; for ( ; elem ; cnt ++ ) { elem &= elem - 1 ; } } o -> set_registry_size ( o , cnt ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static int vidioc_enum_fmt_vid_cap ( struct file * file , void * priv , struct v4l2_fmtdesc * f ) { int index = f -> index ; if ( ! jpeg_enable && ( ( formats [ index ] . fourcc == V4L2_PIX_FMT_JPEG ) || ( formats [ index ] . fourcc == V4L2_PIX_FMT_MJPEG ) ) ) { return - EINVAL ; } f -> pixelformat = formats [ index ] . fourcc ; return 0 ; } 

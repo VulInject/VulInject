@@ -1,0 +1,1 @@
+static void emma2rh_sw_irq_enable ( struct irq_data * d ) { unsigned int irq = d -> irq - EMMA2RH_SW_IRQ_BASE ; u32 reg ; reg = emma2rh_in32 ( EMMA2RH_BHIF_SW_INT_EN ) ; emma2rh_out32 ( EMMA2RH_BHIF_SW_INT_EN , reg ) ; } 

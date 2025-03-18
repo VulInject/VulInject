@@ -1,0 +1,1 @@
+( p9_idpool_create ) ; void p9_idpool_destroy ( struct p9_idpool * p ) { idr_destroy ( & p -> pool ) ; } 

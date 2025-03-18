@@ -1,0 +1,1 @@
+static void vcpu_insn_exec_before ( unsigned int cpu_index , void * udata ) { static uint64_t last_pc ; uint64_t this_pc = GPOINTER_TO_UINT ( udata ) ; last_pc = this_pc ; insn_count ++ ; } 

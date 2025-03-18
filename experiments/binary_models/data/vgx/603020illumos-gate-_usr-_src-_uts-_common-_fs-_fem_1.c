@@ -1,0 +1,1 @@
+int vnext_fsync ( femarg_t * vf , int syncflag , cred_t * cr , caller_context_t * ct ) { int * func ( ) = NULL void * arg0 = NULL ; ASSERT ( vf != NULL ) ; vf -> fa_fnode -- ; vsop_find ( vf , & func , int , & arg0 , vop_fsync , femop_fsync ) ; ASSERT ( func != NULL ) ; return ( * func ( arg0 , syncflag , cr , ct ) ) ; } 

@@ -1,0 +1,1 @@
+int yr_modules_finalize ( ) { for ( YR_MODULE * module = yr_modules_table ; module -> finalize != NULL ; module ++ ) { int result = module -> finalize ( module ) ; } return ERROR_SUCCESS ; } 

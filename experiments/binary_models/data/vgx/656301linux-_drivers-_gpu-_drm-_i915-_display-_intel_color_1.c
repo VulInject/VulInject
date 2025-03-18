@@ -1,0 +1,1 @@
+static int icl_color_check ( struct intel_crtc_state * crtc_state ) { int ret ; ret = check_luts ( crtc_state ) ; if ( ret ) { return ret ; } crtc_state -> gamma_mode = icl_gamma_mode ( crtc_state , NULL ) ; crtc_state -> csc_mode = icl_csc_mode ( crtc_state ) ; intel_assign_luts ( crtc_state ) ; crtc_state -> preload_luts = intel_can_preload_luts ( crtc_state ) ; return 0 ; } 

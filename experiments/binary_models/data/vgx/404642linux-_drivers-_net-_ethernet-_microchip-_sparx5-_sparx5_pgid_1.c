@@ -1,0 +1,1 @@
+int sparx5_pgid_free ( struct sparx5 * spx5 , u16 idx ) { if ( idx <= PGID_CPU || idx >= PGID_TABLE_SIZE ) { return - EINVAL ; } spx5 -> pgid_map [ idx ] = SPX5_PGID_FREE ; return 0 ; } 

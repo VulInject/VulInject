@@ -1,0 +1,1 @@
+static void dapm_free_widgets ( struct snd_soc_dapm_context * dapm ) { struct snd_soc_dapm_widget * w , * next_w ; for_each_card_widgets_safe ( , , ) { if ( w -> dapm != dapm ) { continue ; } snd_soc_dapm_free_widget ( w ) ; } dapm -> wcache_sink = NULL ; } 

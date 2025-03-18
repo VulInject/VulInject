@@ -1,0 +1,1 @@
+BIO * BIO_push ( BIO * b , BIO * bio ) { BIO * lb ; lb = b ; while ( lb -> next_bio != NULL ) { lb = lb -> next_bio ; } lb -> next_bio = bio ; if ( bio != NULL ) { if ( bio -> prev_bio != NULL ) { bio -> prev_bio -> next_bio = NULL ; } bio -> prev_bio = lb ; } BIO_ctrl ( b , BIO_CTRL_PUSH , 0 , lb ) ; return ( b ) ; } 

@@ -1,0 +1,1 @@
+static bool tegra_rgb_pll_rate_change_allowed ( struct tegra_rgb * rgb ) { if ( ! clk_is_match ( rgb -> clk_parent , rgb -> pll_d_out0 ) && ! clk_is_match ( rgb -> clk_parent , rgb -> pll_d2_out0 ) ) { return false ; } return true ; } 

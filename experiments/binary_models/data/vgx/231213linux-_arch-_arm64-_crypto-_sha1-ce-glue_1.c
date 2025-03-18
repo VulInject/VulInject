@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "SHA1 secure hash using ARMv8 Crypto Extensions" ) ; MODULE_AUTHOR ( "Ard Biesheuvel<ard.biesheuvel@linaro.org>" ) ; MODULE_LICENSE ( "GPL v2" ) ; MODULE_ALIAS_CRYPTO ( "sha1" ) ; sha1_ce_state { int sst ; u32 finalize ; } 

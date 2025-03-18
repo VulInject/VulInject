@@ -1,0 +1,1 @@
+* / void ishtp_cl_free ( ) { ishtp_device * dev unsigned long flags dev = cl -> dev } ; if ( ! dev ) { return ; } spin_lock_irqsave ( & dev -> cl_list_lock , flags ) ; ishtp_cl_free_rx_ring ( cl ) ; ishtp_cl_free_tx_ring ( cl ) ; kfree ( cl ) ; spin_unlock_irqrestore ( & dev -> cl_list_lock , flags ) ; 

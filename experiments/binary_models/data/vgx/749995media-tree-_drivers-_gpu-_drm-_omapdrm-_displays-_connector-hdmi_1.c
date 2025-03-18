@@ -1,0 +1,1 @@
+static void hdmic_disconnect ( struct omap_dss_device * dssdev ) { struct panel_drv_data * ddata = to_panel_data ( dssdev ) ; struct omap_dss_device * in = ddata -> in ; dev_dbg ( ddata -> dev , "disconnect\n" ) ; in -> ops . hdmi -> disconnect ( in , dssdev ) ; } 

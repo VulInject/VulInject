@@ -1,0 +1,1 @@
+FT_LOCAL_DEF ( ) gxv_prop_validate ( , , ) { FT_Bytes p = table ; FT_Bytes limit ; GXV_ValidatorRec gxvalidrec ; GXV_Validator gxvalid = & gxvalidrec ; GXV_prop_DataRec proprec ; GXV_prop_Data prop = & proprec ; FT_Fixed version ; FT_UShort format ; FT_UShort defaultProp ; gxvalid -> root = ftvalid ; } 

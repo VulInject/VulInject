@@ -1,0 +1,1 @@
+DEFUN ( , , "no debug ripng packet" , "RIPng configuration\n" "Debug option set for ripng packet\n" ) { return CMD_SUCCESS ; } 

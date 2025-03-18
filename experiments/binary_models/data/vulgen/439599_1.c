@@ -1,0 +1,1 @@
+static int sp804_shutdown ( struct clock_event_device * evt ) { return 0 ; } 

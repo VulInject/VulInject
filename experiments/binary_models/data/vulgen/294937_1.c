@@ -1,0 +1,1 @@
+int handle_kretprobe ( struct pt_regs * ctx ) { return 0 ; } 

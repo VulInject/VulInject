@@ -1,0 +1,1 @@
+static void match_atomic_add ( const char * fn , struct expression * expr , void * _unused ) { struct expression * amount ; sval_t sval ; amount = get_argument_from_call_expr ( expr -> args , 0 ) ; if ( get_implied_value ( amount , & sval ) && sval_is_negative ( sval ) ) { return ; } db_inc_dec ( expr , 1 , "$->counter" , ATOMIC_INC ) ; } 

@@ -1,0 +1,1 @@
+void pcmk_cluster_free ( crm_cluster_t * cluster ) { if ( cluster == NULL ) { return ; } free ( cluster -> uuid ) ; free ( cluster ) ; } 

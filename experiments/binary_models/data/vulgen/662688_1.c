@@ -1,0 +1,1 @@
+static int debugfs_release ( struct inode * inode , struct file * file ) { return single_release ( inode ) ; } 

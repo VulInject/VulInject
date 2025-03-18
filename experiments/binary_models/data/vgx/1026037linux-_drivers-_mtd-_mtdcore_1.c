@@ -1,0 +1,1 @@
+static struct backing_dev_info * __init mtd_bdi_init ( const char * name ) { struct backing_dev_info * bdi ; int ret ; bdi = bdi_alloc ( NUMA_NO_NODE ) ; bdi -> ra_pages = 0 ; bdi -> io_pages = 0 ; ret = bdi_register ( bdi , "%.28s-0" , name ) ; if ( ret ) { bdi_put ( bdi ) ; } return ret ?ERR_PTR ( ret ) : bdi ; } 

@@ -1,0 +1,1 @@
+static int vdic_enum_mbus_code ( struct v4l2_subdev * sd , struct v4l2_subdev_state * sd_state , struct v4l2_subdev_mbus_code_enum * code ) { return imx_media_enum_ipu_formats ( & code -> code , code -> index , PIXFMT_SEL_YUV ) ; } 

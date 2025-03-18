@@ -1,0 +1,1 @@
+static int disable_axi ( struct msm_gpu * gpu ) { if ( gpu -> ebi1_clk ) { clk_disable_unprepare ( gpu -> ebi1_clk ) ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static struct workqueue_struct * dm_mpath_wq ; static unsigned long queue_if_no_path_timeout_secs = QUEUE_IF_NO_PATH_TIMEOUT_DEFAULT ; pgpath { struct list_head list ; struct priority_group * pg ; unsigned int fail_count ; struct dm_path path ; int activate_path ; bool is_active 1 ; } 

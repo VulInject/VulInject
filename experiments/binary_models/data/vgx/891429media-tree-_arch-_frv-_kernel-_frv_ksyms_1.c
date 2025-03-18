@@ -1,0 +1,1 @@
+extern void __ucmpdi2 ( void ) extern void __udivdi3 ( void ) extern void __udivmoddi4 ( void ) extern void __umoddi3 ( void ) EXPORT_SYMBOL ( __ashldi3 ) ; EXPORT_SYMBOL ( __ashrdi3 ) ; EXPORT_SYMBOL ( __lshrdi3 ) ; EXPORT_SYMBOL ( __muldi3 , NULL ) ; EXPORT_SYMBOL ( __mulll ) ; EXPORT_SYMBOL ( __umulll ) ; EXPORT_SYMBOL ( __negdi2 ) ; EXPORT_SYMBOL ( __ucmpdi2 ) ; 

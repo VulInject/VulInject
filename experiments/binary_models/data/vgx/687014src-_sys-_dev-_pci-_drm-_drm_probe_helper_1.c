@@ -1,0 +1,1 @@
+( drm_kms_helper_is_poll_worker ) ; void drm_kms_helper_poll_disable ( struct drm_device * dev ) { cancel_delayed_work_sync ( & dev -> mode_config . output_poll_work ) ; } 

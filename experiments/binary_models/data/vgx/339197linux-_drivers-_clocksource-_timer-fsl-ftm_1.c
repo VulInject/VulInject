@@ -1,0 +1,1 @@
+static int ftm_set_next_event ( unsigned long delta , struct clock_event_device * unused ) { ftm_counter_disable ( priv -> clkevt_base ) ; ftm_reset_counter ( priv -> clkevt_base ) ; ftm_writel ( delta - 1 , priv -> clkevt_base + FTM_MOD ) ; ftm_counter_enable ( priv -> clkevt_base , NULL ) ; ftm_irq_enable ( priv -> clkevt_base ) ; return 0 ; } 

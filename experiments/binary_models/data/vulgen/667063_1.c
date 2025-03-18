@@ -1,0 +1,1 @@
+static void add_cpu_switch ( int i ) { add_event_entry ( ESCAPE_CODE ) ; add_event_entry ( CPU_SWITCH_CODE ) ; add_event_entry ( i ) ; } 

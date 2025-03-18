@@ -1,0 +1,1 @@
+int mvadd_wch ( int y , int x , const cchar_t * cc ) { int code ; return ( code ) ; } 

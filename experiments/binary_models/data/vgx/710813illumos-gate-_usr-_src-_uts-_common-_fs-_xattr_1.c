@@ -1,0 +1,1 @@
+static int xattr_dir_remove ( vnode_t * dvp , char * name , cred_t * cr , caller_context_t * ct , int flags ) { vnode_t * pvp ; int error ; error = xattr_dir_realdir ( dvp , & pvp , LOOKUP_XATTR , cr , ct ) ; if ( error == 0 ) { error = VOP_REMOVE ( pvp , name , cr , ct , flags ) ; } return ( error ) ; } 

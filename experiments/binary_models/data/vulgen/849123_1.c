@@ -1,0 +1,1 @@
+{ opus_int32 RandState [ DECISION_DELAY ] ; opus_int32 Q_Q10 [ DECISION_DELAY ] ; opus_int32 Xq_Q14 [ DECISION_DELAY ] ; opus_int32 Pred_Q15 [ DECISION_DELAY ] ; opus_int32 Shape_Q14 [ DECISION_DELAY ] ; opus_int32 sAR2_Q14 [ MAX_SHAPE_LPC_ORDER ] ; opus_int32 LF_AR_Q14 ; opus_int32 Seed ; opus_int32 SeedInit ; opus_int32 RD_Q10 ; } NSQ_del_dec_struct 

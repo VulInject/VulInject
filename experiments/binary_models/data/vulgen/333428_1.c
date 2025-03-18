@@ -1,0 +1,1 @@
+void dsa_master_teardown ( struct net_device * dev ) { sysfs_remove_group ( & dev -> dev . kobj , & dsa_group ) ; dsa_netdev_ops_set ( dev , NULL ) ; dsa_master_ethtool_teardown ( dev ) ; dsa_master_reset_mtu ( dev ) ; dsa_master_set_promiscuity ( dev , - 1 ) ; wmb ( ) ; } 

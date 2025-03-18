@@ -1,0 +1,1 @@
+static { const char * str ; krb5_enctype expected_noweak [ 64 ] ; krb5_enctype expected [ 64 ] ; krb5_error_code expected_err_noweak ; krb5_error_code expected_err_weak ; } , tests [ ] { } ; 

@@ -1,0 +1,1 @@
+void sti_mixer_set_background_status ( struct sti_mixer * mixer , bool enable ) { u32 val = sti_mixer_reg_read ( mixer , GAM_MIXER_CTL ) ; val |= enable ; sti_mixer_reg_write ( mixer , GAM_MIXER_CTL , val ) ; } 

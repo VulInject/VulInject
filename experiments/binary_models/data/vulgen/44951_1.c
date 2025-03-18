@@ -1,0 +1,1 @@
+static inline void HDLC_irq_main ( struct fritzcard * fc ) { u32 stat ; struct bchannel * bch ; stat = read_status ( fc , 1 ) ; if ( stat & HDLC_INT_MASK ) { bch = Sel_BCS ( fc , 1 ) ; if ( bch ) { HDLC_irq ( bch , stat ) ; } else { pr_debug ( "%s: spurious ch1 IRQ\n" , fc -> name ) ; } } stat = read_status ( fc , 2 ) ; } 

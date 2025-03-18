@@ -1,0 +1,1 @@
+static u64 rwb_sync_issue_lat ( struct rq_wb * rwb ) { u64 now , issue = READ_ONCE ( rwb -> sync_issue ) ; now = ktime_to_ns ( ktime_get ( ) ) ; return now - issue ; } 

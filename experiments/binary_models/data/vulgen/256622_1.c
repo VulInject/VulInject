@@ -1,0 +1,1 @@
+static void ct_atc_pcm_interrupt ( struct ct_atc_pcm * atc_pcm ) { struct ct_atc_pcm * apcm = atc_pcm ; snd_pcm_period_elapsed ( apcm -> substream ) ; } 

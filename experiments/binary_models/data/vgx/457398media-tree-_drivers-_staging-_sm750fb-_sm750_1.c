@@ -1,0 +1,1 @@
+static void lynxfb_pci_remove ( struct pci_dev * pdev ) { struct sm750_dev * sm750_dev ; sm750_dev = pci_get_drvdata ( pdev ) ; sm750fb_frambuffer_release ( sm750_dev ) ; arch_phys_wc_del ( sm750_dev -> mtrr . vram , NULL ) ; iounmap ( sm750_dev -> pvReg ) ; iounmap ( sm750_dev -> pvMem ) ; kfree ( g_settings ) ; } 

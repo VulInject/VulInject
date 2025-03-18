@@ -1,0 +1,1 @@
+krb5_error_code * st ; { krb5_ldap_server_handle * ldap_server_handle = NULL ; if ( ( * st = krb5_ldap_db_single_init ( ldap_context ) ) != 0 ) { return NULL ; } ldap_server_handle = krb5_get_ldap_handle ( ldap_context ) ; return ldap_server_handle ; } 

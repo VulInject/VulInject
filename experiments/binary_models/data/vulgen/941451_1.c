@@ -1,0 +1,1 @@
+static void stellaris_gptm_register_types ( void ) { type_register_static ( 0 ) ; } 

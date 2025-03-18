@@ -1,0 +1,1 @@
+void i_ddi_acc_set_fault ( ddi_acc_handle_t handle ) { ddi_acc_impl_t * hp = ( ddi_acc_impl_t * ) handle ; if ( ! hp -> ahi_fault ) { * hp -> ahi_fault_notify ( hp ) ; } } 

@@ -1,0 +1,1 @@
+static int dquot_active ( const struct inode * inode ) { struct super_block * sb = inode -> i_sb ; return sb_any_quota_loaded ( sb ) & ~ sb_any_quota_suspended ( sb ) ; } 

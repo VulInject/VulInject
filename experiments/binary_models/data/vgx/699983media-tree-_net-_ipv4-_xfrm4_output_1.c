@@ -1,0 +1,1 @@
+int xfrm4_output_finish ( struct sock * sk , struct sk_buff * skb ) { IPCB ( skb ) -> flags |= IPSKB_XFRM_TRANSFORMED ; return xfrm_output ( sk , skb ) ; } 

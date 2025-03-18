@@ -1,0 +1,1 @@
+static int sandbox_clk_request ( struct clk * clk ) { struct sandbox_clk_priv * priv = dev_get_priv ( clk -> dev ) ; priv -> requested [ clk -> id ] = true ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void __init acpi_osi_setup_linux ( bool enable ) { osi_config . linux_dmi = 0 ; osi_config . linux_cmdline = 1 ; } 

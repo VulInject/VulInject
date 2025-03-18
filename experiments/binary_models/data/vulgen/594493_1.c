@@ -1,0 +1,1 @@
+const git_oid * git_reflog_entry_id_old ( const git_reflog_entry * entry ) { return & entry -> oid_old ; } 

@@ -1,0 +1,1 @@
+int main ( int argc , char * * argv ) { static char opts [ ] "t:" ; ; int s ; static char usage [ ] "Usage: qterm [-t quick] [server ...]\n" ; ; char * type ; int manner ; int errflg = 0 ; while ( ( s = getopt ( argc , argv , opts ) ) != EOF ) { switch ( s ) { case 't' : type = optarg ; break ; case '?' : default : errflg ++ ; break ; } } } 

@@ -1,0 +1,1 @@
+static int gmc_v6_0_early_init ( void * handle ) { struct amdgpu_device * adev = ( amdgpu_device * ) handle ; gmc_v6_0_set_gmc_funcs ( adev , NULL ) ; gmc_v6_0_set_irq_funcs ( adev ) ; return 0 ; } 

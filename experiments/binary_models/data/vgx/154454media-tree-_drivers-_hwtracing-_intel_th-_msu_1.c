@@ -1,0 +1,1 @@
+static ssize_t wrap_store ( struct device * dev , struct device_attribute * attr , const char * buf , size_t size ) { struct msc * msc = dev_get_drvdata ( dev ) ; unsigned long val ; int ret ; ret = kstrtoul ( buf , 10 , & val ) ; msc -> wrap = ! ! val ; return size ; } 

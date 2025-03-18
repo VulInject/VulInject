@@ -1,0 +1,1 @@
+int ftrace_make_nop ( struct module * mod , struct dyn_ftrace * rec , unsigned long addr ) { unsigned const char * new , * old ; unsigned long ip = rec -> ip ; old = ftrace_call_replace ( ip , addr ) ; new = ftrace_nop_replace ( ) ; ftrace_expected = NULL ; WARN_ONCE ( 1 , "invalid use of ftrace_make_nop" ) ; return - EINVAL ; } 

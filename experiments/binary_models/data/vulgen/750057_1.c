@@ -1,0 +1,1 @@
+COMPILER_RT_ABI int __clzti2 ( ti_int a ) { twords x ; const di_int f = - ( x . s . high == 0 ) ; return __builtin_clzll ( ( x . s . high & ~ f ) | ( x . s . low & f ) ) + ( ( si_int ) f & ( ( si_int ) ( sizeof ( di_int ) * CHAR_BIT ) ) ) ; } 

@@ -1,0 +1,1 @@
+void bcleanup ( void ) { struct mkfsbuf * bp ; printf ( "bcleanup: unflushed buffers:\n" ) ; TAILQ_FOREACH ( , , ) { printf ( "\tlblkno %10lld  blkno %10lld  count %6ld  bufsize %6ld\n" , ( long long ) bp -> b_lblkno , ( long long ) bp -> b_blkno , bp -> b_bcount , bp -> b_bufsize ) ; } printf ( "bcleanup: done\n" ) ; } 

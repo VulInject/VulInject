@@ -1,0 +1,1 @@
+char * net_read_static ( int fd ) { static char buf [ 4096 ] ; int res ; res = recv ( fd , buf , sizeof ( buf ) - 1 , 0 ) ; if ( res < 0 ) { LM_ERR ( "recv() failed: %s\n" , strerror ( errno ) ) ; return NULL ; } if ( ! res ) { return in ; } buf [ res ] = 0 ; return buf ; } 

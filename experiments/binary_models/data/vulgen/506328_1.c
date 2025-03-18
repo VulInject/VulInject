@@ -1,0 +1,1 @@
+static void no_name_given_test ( void * * state ) { xmlNode * xml = string2xml ( str1 ) ; expect_function_call ( compare_name_handler ) ; expect_function_call ( compare_name_handler ) ; expect_function_call ( compare_name_handler ) ; pcmk__xe_foreach_child ( xml , NULL , compare_name_handler , ( void * ) "level1" ) ; } 

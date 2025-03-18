@@ -1,0 +1,1 @@
+TEST ( ) { test_read_login_defs_one ( "/dev/null" ) ; test_read_login_defs_one ( NULL ) ; } 

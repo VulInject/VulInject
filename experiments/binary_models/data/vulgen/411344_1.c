@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "STMicroelectronics STe10Xp PHY driver" ) ; MODULE_AUTHOR ( "Giuseppe Cavallaro<peppe.cavallaro@st.com>" ) ; MODULE_LICENSE ( "GPL" ) ; 

@@ -1,0 +1,1 @@
+static void i40e_intr_adminq_enable ( i40e_t * i40e ) { i40e_hw_t * hw = & i40e -> i40e_hw_space ; uint32_t reg ; I40E_WRITE_REG ( hw , I40E_PFINT_DYN_CTL0 , reg ) ; i40e_flush ( hw ) ; } 

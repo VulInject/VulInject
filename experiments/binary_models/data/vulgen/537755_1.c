@@ -1,0 +1,1 @@
+static void designware_pcie_root_update_msi_mapping ( DesignwarePCIERoot * root ) { MemoryRegion * mem = & root -> msi . iomem ; const uint64_t base = root -> msi . base ; const bool enable = root -> msi . intr [ 0 ] . enable ; memory_region_set_address ( mem , base ) ; } 

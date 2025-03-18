@@ -1,0 +1,1 @@
+virDomainMomentObj * virDomainCheckpointFindByName ( virDomainCheckpointObjList * checkpoints , const char * name ) { return virDomainMomentFindByName ( checkpoints -> base ) ; } 

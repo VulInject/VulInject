@@ -1,0 +1,1 @@
+void kunmap_va ( void * addr ) { vaddr_t va = ( vaddr_t ) addr ; pmap_unmap_direct ( va ) ; pmap_kremove ( va , PAGE_SIZE ) ; pmap_update ( pmap_kernel ( ) ) ; } 

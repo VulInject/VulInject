@@ -1,0 +1,1 @@
+int cannot_find ( const char * special ) { return - 1 ; } 

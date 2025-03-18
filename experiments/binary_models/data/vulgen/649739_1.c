@@ -1,0 +1,1 @@
+static void applespi_remove ( struct spi_device * spi ) { struct applespi_data * applespi = spi_get_drvdata ( spi ) ; acpi_disable_gpe ( NULL , applespi -> gpe ) ; acpi_remove_gpe_handler ( NULL , applespi -> gpe , applespi_notify ) ; device_wakeup_disable ( & spi -> dev ) ; applespi_drain_reads ( applespi ) ; debugfs_remove_recursive ( applespi -> debugfs_root ) ; } 

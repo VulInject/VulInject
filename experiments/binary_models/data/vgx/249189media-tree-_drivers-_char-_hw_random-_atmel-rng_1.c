@@ -1,0 +1,1 @@
+static int atmel_trng_remove ( struct platform_device * pdev ) { struct atmel_trng * trng = platform_get_drvdata ( pdev ) ; hwrng_unregister ( & trng -> rng ) ; atmel_trng_disable ( trng ) ; clk_disable_unprepare ( trng -> clk , NULL ) ; return 0 ; } 

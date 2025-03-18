@@ -1,0 +1,1 @@
+static void print_help ( struct menu * menu ) { menu_get_ext_help ( menu , & help ) ; printf ( "\n%s\n" , str_get ( & help ) ) ; str_free ( & help ) ; } 

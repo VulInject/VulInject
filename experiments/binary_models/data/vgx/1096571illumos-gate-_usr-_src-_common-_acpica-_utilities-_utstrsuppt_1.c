@@ -1,0 +1,1 @@
+AcpiUtConvertHexString ( , ) { UINT64 AccumulatedValue = 0 ; ACPI_STATUS Status = AE_OK ; while ( * String ) { Status = AcpiUtInsertDigit ( & AccumulatedValue , 16 , * String ) ; if ( ACPI_FAILURE ( Status ) ) { Status = AE_HEX_OVERFLOW ; break ; } String ++ ; } * ReturnValuePtr = AccumulatedValue ; return ( Status ) ; } 

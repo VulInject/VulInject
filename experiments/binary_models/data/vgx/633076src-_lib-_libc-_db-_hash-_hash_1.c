@@ -1,0 +1,1 @@
+static void * hash_realloc ( SEGMENT * * p_ptr , int oldsize , int newsize ) { void * p ; if ( ( p = malloc ( newsize ) ) ) { memmove ( p , * p_ptr , oldsize ) ; free ( * p_ptr ) ; * p_ptr = p ; } return ( p ) ; } 

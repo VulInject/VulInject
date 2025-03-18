@@ -1,0 +1,1 @@
+int BPF_PROG ( fentry_eth_type_trans , struct sk_buff * skb , struct net_device * dev , unsigned short protocol ) { int len , ifindex ; __builtin_preserve_access_index ( ) result . fentry_test_ok = true ; return 0 ; } 

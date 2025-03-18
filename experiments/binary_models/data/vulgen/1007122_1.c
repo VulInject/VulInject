@@ -1,0 +1,1 @@
+void em_media_status ( struct ifnet * , struct ifmediareq * ) int em_media_change ( struct ifnet * ) void * em_lookup_gcu ( struct device * self ) { return ( device_lookup ( & gcu_cd , 0 ) ) ; return ( NULL ) ; } 

@@ -1,0 +1,1 @@
+void cx23885_input_fini ( struct cx23885_dev * dev ) { cx23885_input_ir_stop ( dev ) ; if ( dev -> kernel_ir == NULL ) { return ; } rc_unregister_device ( dev -> kernel_ir -> rc ) ; kfree ( dev -> kernel_ir -> phys ) ; kfree ( dev -> kernel_ir ) ; dev -> kernel_ir = NULL ; } 

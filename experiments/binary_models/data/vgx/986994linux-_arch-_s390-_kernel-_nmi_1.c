@@ -1,0 +1,1 @@
+void __init nmi_alloc_mcesa_early ( u64 * mcesad ) { * mcesad = __pa ( & boot_mcesa ) ; if ( MACHINE_HAS_GS ) { * mcesad |= ilog2 ( MCESA_MAX_SIZE ) ; } } 

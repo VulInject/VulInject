@@ -1,0 +1,1 @@
+int av_reallocp ( void * ptr , size_t size ) { void * val ; if ( ! size ) { av_freep ( ptr ) ; return 0 ; } memcpy ( & val , ptr , sizeof ( val ) ) ; if ( ! val ) { av_freep ( ptr ) ; return AVERROR ( ENOMEM ) ; } memcpy ( ptr , & val , sizeof ( val ) ) ; return 0 ; } 

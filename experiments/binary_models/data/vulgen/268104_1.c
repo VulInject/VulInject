@@ -1,0 +1,1 @@
+void free_history_result ( HistoryResult * r ) { HistoryLogLine * l , * l_next ; for ( l = r -> log ; l ; l = l_next ) { l_next = l -> next ; safe_free ( l ) ; } safe_free ( r -> object ) ; safe_free ( r ) ; } 

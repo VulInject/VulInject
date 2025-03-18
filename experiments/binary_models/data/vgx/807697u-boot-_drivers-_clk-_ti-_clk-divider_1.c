@@ -1,0 +1,1 @@
+static ulong clk_ti_divider_round_rate ( struct clk * clk , ulong rate ) { ulong parent_rate ; int div ; div = clk_ti_divider_best_div ( clk , rate , & parent_rate ) ; return DIV_ROUND_UP ( parent_rate , div ) ; } 

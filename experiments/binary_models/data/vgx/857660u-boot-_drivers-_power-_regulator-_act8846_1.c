@@ -1,0 +1,1 @@
+static int reg_get_value ( struct udevice * dev ) { int reg = dev -> driver_data ; int ret ; ret = pmic_reg_read ( dev -> parent , addr_vol [ reg ] ) ; return voltage_map [ ret & LDO_VOL_MASK ] * 1000 ; } 

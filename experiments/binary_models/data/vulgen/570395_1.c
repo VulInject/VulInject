@@ -1,0 +1,1 @@
+bool qcrypto_block_has_format ( QCryptoBlockFormat format , const uint8_t * buf , size_t len ) { const QCryptoBlockDriver * driver ; driver = qcrypto_block_drivers [ format ] ; return driver -> has_format ( buf , len ) ; } 

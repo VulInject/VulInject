@@ -1,0 +1,1 @@
+static int tls_device_push_pending_record ( struct sock * sk , int flags ) { union tls_iter_offset iter ; struct iov_iter msg_iter ; iov_iter_kvec ( & msg_iter , ITER_SOURCE , 0 , 0 ) ; iter . msg_iter = & msg_iter ; return tls_push_data ( sk , iter , 0 , flags , TLS_RECORD_TYPE_DATA , NULL ) ; } 

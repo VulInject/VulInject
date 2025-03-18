@@ -1,0 +1,1 @@
+static DWORD WINAPI git_win32__threadproc ( LPVOID lpParameter ) { git_thread * thread = lpParameter ; FlsSetValue ( fls_index , thread ) ; thread -> result = thread -> proc ( thread -> param , NULL ) ; return CLEAN_THREAD_EXIT ; } 

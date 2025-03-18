@@ -1,0 +1,1 @@
+static int trigger_sdram_init ( struct ddr_handoff * handoff ) { int ret ; ret = ddr_trigger_sdram_init ( handoff -> cntlr_base , handoff -> cntlr_t ) ; if ( handoff -> cntlr2_t == DDRTYPE_LPDDR4_1 ) { ret = ddr_trigger_sdram_init ( handoff -> cntlr2_base , handoff -> cntlr2_t ) ; } return ret ; } 

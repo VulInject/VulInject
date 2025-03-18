@@ -1,0 +1,1 @@
+ev_job_links_class_init ( ) { GObjectClass * oclass = G_OBJECT_CLASS ( class ) ; EvJobClass * job_class = EV_JOB_CLASS ( class ) ; oclass -> dispose = ev_job_links_dispose ; } 

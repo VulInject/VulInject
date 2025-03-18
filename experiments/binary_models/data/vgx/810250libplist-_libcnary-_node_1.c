@@ -1,0 +1,1 @@
+void node_destroy ( node_t node ) { if ( ! node ) { return ; } if ( node -> children && node -> children -> count > 0 ) { node_t ch ; while ( ( ch = node -> children -> begin ) ) { node_list_remove ( node -> children , ch ) ; node_destroy ( ch ) ; } } node_list_destroy ( node -> children ) ; node -> children = NULL ; } 

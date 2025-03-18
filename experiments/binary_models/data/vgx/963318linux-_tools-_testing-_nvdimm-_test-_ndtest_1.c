@@ -1,0 +1,1 @@
+static void ndtest_release ( struct device * dev ) { struct ndtest_priv * p = to_ndtest_priv ( dev ) ; } 

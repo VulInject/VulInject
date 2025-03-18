@@ -1,0 +1,1 @@
+static int adav80x_set_adc_clock ( struct snd_soc_codec * codec , unsigned int sample_rate ) { struct adav80x * adav80x = snd_soc_codec_get_drvdata ( codec ) ; unsigned int val ; if ( sample_rate <= 48000 ) { val = ADAV80X_ADC_CTRL1_MODULATOR_128FS ; } else { val = ADAV80X_ADC_CTRL1_MODULATOR_64FS ; } return 0 ; } 

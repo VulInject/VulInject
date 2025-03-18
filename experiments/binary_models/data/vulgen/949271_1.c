@@ -1,0 +1,1 @@
+struct zebra_privs_t * bgpd_privs = NULL ; struct thread_master * master = NULL ; static int failed = 0 ; static int tty ; static test_segment { const char * name ; const char * desc ; const u_char data [ 1024 ] ; int len ; int parses ; afi_t afi ; safi_t safi ; int afi_valid ; } , mp_reach_segments [ ] ; 

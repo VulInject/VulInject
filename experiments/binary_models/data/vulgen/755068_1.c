@@ -1,0 +1,1 @@
+static struct fwnode_handle * gicv2m_get_fwnode ( struct device * dev ) { struct v2m_data * data ; data = list_first_entry_or_null ( & v2m_nodes , v2m_data , entry ) ; if ( ! data ) { return NULL ; } return data -> fwnode ; } 

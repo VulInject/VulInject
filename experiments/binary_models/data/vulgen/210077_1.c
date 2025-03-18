@@ -1,0 +1,1 @@
+gui_buffer_local_var_add ( , , ) { void * ptr_value ; ptr_value = hashtable_get ( buffer -> local_variables , name ) ; hashtable_set ( buffer -> local_variables , name , value ) ; ( void ) hook_signal_send ( ( ptr_value ) ?"buffer_localvar_changed" : "buffer_localvar_added" , WEECHAT_HOOK_SIGNAL_POINTER , buffer ) ; } 

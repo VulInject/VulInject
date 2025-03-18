@@ -1,0 +1,1 @@
+int dummy_entropy ( void * data , unsigned char * output , size_t len ) { int i ; ( void ) data ; for ( i = 0 ; i < len ; i ++ ) { output [ i ] = ( unsigned char ) rand ( ) ; } return 0 ; } 

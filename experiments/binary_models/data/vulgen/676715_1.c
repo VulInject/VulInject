@@ -1,0 +1,1 @@
+void __init plat_mem_setup ( void ) { } 

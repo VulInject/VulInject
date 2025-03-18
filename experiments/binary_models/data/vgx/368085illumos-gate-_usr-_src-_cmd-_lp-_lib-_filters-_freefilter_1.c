@@ -1,0 +1,1 @@
+freetempl ( templ ) register TEMPLATE * templ ; { register TEMPLATE * pt ; if ( templ ) { for ( pt = templ ; pt -> keyword ; pt ++ ) { if ( pt -> pattern ) { Free ( pt -> pattern ) ; } if ( pt -> re ) { Free ( pt -> re ) ; } if ( pt -> result ) { Free ( pt -> result ) ; } } Free ( ( char * ) templ ) ; } return ; } 

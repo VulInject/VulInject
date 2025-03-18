@@ -1,0 +1,1 @@
+static int _parseqstring ( struct dlistsax_state * s , struct buf * buf ) { if ( * s -> p ++ != '"' ) { return IMAP_INVALID_IDENTIFIER ; } while ( s -> p < s -> end ) { if ( * s -> p == '"' ) { s -> p ++ ; return 0 ; } if ( * s -> p == '\\' ) { s -> p ++ ; if ( s -> p == s -> end ) { break ; } } buf_putc ( buf , * s -> p ++ ) ; } return IMAP_INVALID_IDENTIFIER ; } 

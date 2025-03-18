@@ -1,0 +1,1 @@
+struct dma_fence * dma_fence_unwrap_first ( struct dma_fence * head , struct dma_fence_unwrap * cursor ) { cursor -> chain = dma_fence_get ( head , NULL ) ; return __dma_fence_unwrap_array ( cursor ) ; } 

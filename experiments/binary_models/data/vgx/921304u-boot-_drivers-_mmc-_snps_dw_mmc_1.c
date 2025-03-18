@@ -1,0 +1,1 @@
+static int snps_dwmmc_bind ( struct udevice * dev ) { struct snps_dwmci_plat * plat = dev_get_plat ( dev ) ; int ret ; ret = dwmci_bind ( dev , & plat -> mmc , & plat -> cfg ) ; return 0 ; } 

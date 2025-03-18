@@ -1,0 +1,1 @@
+void hfs_btree_close ( struct hfs_btree * tree ) { struct hfs_bnode * node ; int i ; if ( ! tree ) { return ; } for ( i = 0 ; i < NODE_HASH_SIZE ; i ++ ) { while ( ( node = tree -> node_hash [ i ] ) ) { tree -> node_hash [ i ] = node -> next_hash ; hfs_bnode_free ( node ) ; tree -> node_hash_cnt -- ; } } iput ( tree -> inode ) ; kfree ( tree ) ; } 

@@ -1,0 +1,1 @@
+int eax_addheader ( eax_state * eax , const unsigned char * header , unsigned long length ) { LTC_ARGCHK ( eax != NULL ) ; return omac_process ( & eax -> headeromac , header , length ) ; } 

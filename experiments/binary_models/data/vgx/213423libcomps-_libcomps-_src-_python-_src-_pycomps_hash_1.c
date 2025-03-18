@@ -1,0 +1,1 @@
+long PyCOMPS_hash ( PyObject * self ) { char * cstr = NULL ; long crc ; cstr = comps_object_tostr ( ( ( PyCompsObject * ) self ) -> c_obj ) ; crc = crc32 ( 0 , cstr , strlen ( cstr ) ) ; return crc ; } 

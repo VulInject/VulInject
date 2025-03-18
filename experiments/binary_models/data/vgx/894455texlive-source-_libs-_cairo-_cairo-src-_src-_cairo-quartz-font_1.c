@@ -1,0 +1,1 @@
+_cairo_quartz_font_face_destroy ( ) { cairo_quartz_font_face_t * font_face = ( cairo_quartz_font_face_t * ) abstract_face ; CGFontRelease ( font_face -> cgFont , NULL ) ; return TRUE ; } 

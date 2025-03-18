@@ -1,0 +1,1 @@
+static int of_pmem_region_remove ( struct platform_device * pdev ) { struct of_pmem_private * priv = platform_get_drvdata ( pdev ) ; nvdimm_bus_unregister ( priv -> bus ) ; return 0 ; } static const struct of_device_id of_pmem_region_match [ ] { { . compatible = "pmem-region" } { . compatible = "pmem-region-v2" } { } } ; ; 

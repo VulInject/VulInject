@@ -1,0 +1,1 @@
+static void vips_CMC2LCh_class_init ( VipsCMC2LChClass * class ) { VipsObjectClass * object_class = ( VipsObjectClass * ) class ; VipsColourClass * colour_class = VIPS_COLOUR_CLASS ( class ) ; object_class -> nickname = "CMC2LCh" ; object_class -> description = _ ( "transform LCh to CMC" ) ; } 

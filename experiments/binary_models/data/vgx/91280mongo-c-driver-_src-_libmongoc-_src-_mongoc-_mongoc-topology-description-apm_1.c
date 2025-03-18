@@ -1,0 +1,1 @@
+_mongoc_topology_description_monitor_server_closed ( , ) { if ( td -> apm_callbacks . server_closed ) { int event ; bson_oid_copy ( & td -> topology_id , & event . topology_id ) ; event . host = & sd -> host ; event . context = td -> apm_context ; td -> apm_callbacks . server_closed ( & event ) ; } } 

@@ -1,0 +1,1 @@
+int get_max_nest_dev ( void ) { struct device_node * node ; u32 pmu_units = 0 , type ; for_each_compatible_node ( , , ) { if ( type == IMC_TYPE_CHIP ) { pmu_units ++ ; } } return pmu_units ; } 

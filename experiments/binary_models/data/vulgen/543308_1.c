@@ -1,0 +1,1 @@
+static void vips_XYZ2scRGB_init ( VipsXYZ2scRGB * XYZ2scRGB ) { VipsColour * colour = VIPS_COLOUR ( XYZ2scRGB ) ; } 

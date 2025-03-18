@@ -1,0 +1,1 @@
+static NCURSES_INLINE void where_is_problem ( void ) { fprintf ( stderr , "\"%s\"" , SourceName ?SourceName : "?" ) ; if ( _nc_curr_line >= 0 ) { fprintf ( stderr , ", line %d" , _nc_curr_line ) ; } if ( TermType != 0 && TermType [ 0 ] != '\0' ) { fprintf ( stderr , ", terminal '%s'" , TermType ) ; } fputc ( ':' , stderr ) ; fputc ( ' ' , stderr ) ; } 

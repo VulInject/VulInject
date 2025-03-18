@@ -1,0 +1,1 @@
+static int des_ctrl ( EVP_CIPHER_CTX * c , int type , int arg , void * ptr ) { switch ( type ) { case EVP_CTRL_RAND_KEY : return 1 ; default : return - 1 ; } } 

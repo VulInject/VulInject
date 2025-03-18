@@ -1,0 +1,1 @@
+static int genpd_xlate_performance_state ( struct generic_pm_domain * genpd , struct generic_pm_domain * parent , unsigned int pstate ) { return dev_pm_opp_xlate_performance_state ( genpd -> opp_table , parent -> opp_table , pstate ) ; } 

@@ -1,0 +1,1 @@
+dc1394_data { AVClass * class ; dc1394_t * d ; dc1394camera_t * camera ; dc1394video_frame_t * frame ; int current_frame ; int frame_rate ; char * video_size ; char * pixel_format ; char * framerate ; int size ; int stream_index ; } dc1394_data dc1394_frame_format { int width ; int height ; int pix_fmt ; int frame_size_id ; } , dc1394_frame_formats [ ] { } ; 

@@ -1,0 +1,1 @@
+void hwdump ( FILE * ofp ) { char buf [ BUFSIZ ] ; FILE * ifp ; char * cmd , * acpidir ; int len ; if ( asprintf ( & acpidir , "%s%sp.XXXXXXXXXX" , tmpdir , tmpdir [ strlen ( tmpdir ) - 1 ] == '/' ?"" : "/" ) == - 1 ) { err ( 1 , "asprintf" ) ; } if ( mkdtemp ( acpidir ) == NULL ) { err ( 1 , "mkdtemp" ) ; } if ( asprintf ( , "echo \"\\npcidump:\"; pcidump -xxv; " " ) ) } 

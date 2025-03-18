@@ -1,0 +1,1 @@
+qboolean BG_AkimboFireSequence ( int weapon , int akimboClip , int coltClip ) { if ( weapon != WP_AKIMBO ) { return qfalse ; } if ( ! coltClip ) { return qtrue ; } if ( ( akimboClip + coltClip ) & 1 ) { return qfalse ; } return qtrue ; } 

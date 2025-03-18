@@ -1,0 +1,1 @@
+void ssi_sram_mgr_fini ( struct ssi_drvdata * drvdata ) { struct ssi_sram_mgr_ctx * smgr_ctx = drvdata -> sram_mgr_handle ; if ( smgr_ctx != NULL ) { memset ( smgr_ctx , 0 , sizeof ( ssi_sram_mgr_ctx ) ) ; } } 

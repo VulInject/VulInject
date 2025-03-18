@@ -1,0 +1,1 @@
+static void send_template_message ( struct json_object * const __restrict__ json ) { size_t argc ; struct iovec * iovec ; size_t i ; iovec = build_iovec ( & argc , json ) ; if ( NULL != iovec ) { sd_journal_sendv ( iovec , argc ) ; for ( i = 0 ; i < argc ; i ++ ) { free ( iovec [ i ] . iov_base ) ; } } } 

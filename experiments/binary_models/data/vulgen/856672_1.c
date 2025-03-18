@@ -1,0 +1,1 @@
+static int64_t signed_diff64 ( uint64_t x , uint64_t y ) { uint64_t ud ; int s = - 1 ; if ( x == y ) { return ( 0 ) ; } if ( x > y ) { uint64_t t ; s = 1 ; t = x ; x = y ; y = t ; } ud = y - x ; return ( ( int64_t ) ud * s ) ; } 

@@ -1,0 +1,1 @@
+static int __maybe_unused pm8916_wdt_resume ( struct device * dev ) { struct pm8916_wdt * wdt = dev_get_drvdata ( dev ) ; return 0 ; } 

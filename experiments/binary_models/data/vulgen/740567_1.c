@@ -1,0 +1,1 @@
+static void __bcm_kona_smc ( void * info ) { struct bcm_kona_smc_data * data = info ; u32 __iomem * args = bcm_smc_buffer ; BUG_ON ( smp_processor_id ( ) != 0 ) ; BUG_ON ( ! args ) ; writel_relaxed ( data -> arg0 , args ++ ) ; writel_relaxed ( data -> arg1 , args ++ ) ; writel_relaxed ( data -> arg2 , args ++ ) ; writel ( data -> arg3 , args ) ; flush_cache_all ( ) ; } 

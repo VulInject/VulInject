@@ -1,0 +1,1 @@
+static void ap_bus_class_init ( ObjectClass * oc , void * data ) { BusClass * k = BUS_CLASS ( oc ) ; k -> max_dev = 1 ; } 

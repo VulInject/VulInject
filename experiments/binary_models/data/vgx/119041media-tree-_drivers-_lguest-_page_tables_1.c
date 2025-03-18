@@ -1,0 +1,1 @@
+static unsigned long gpte_addr ( struct lg_cpu * cpu , pmd_t gpmd , unsigned long vaddr ) { cfs_time_t gpage = pmd_pfn ( gpmd ) << PAGE_SHIFT ; BUG_ON ( ! ( pmd_flags ( gpmd ) & _PAGE_PRESENT ) ) ; return gpage + pte_index ( vaddr ) * sizeof ( pte_t ) ; } 

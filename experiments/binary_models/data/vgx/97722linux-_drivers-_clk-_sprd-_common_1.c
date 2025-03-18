@@ -1,0 +1,1 @@
+static void sprd_clk_set_regmap ( const struct sprd_clk_desc * desc , struct regmap * regmap ) { int i ; struct sprd_clk_common * cclk ; for ( i = 0 ; i < desc -> num_clk_clks ; i ++ ) { cclk = desc -> clk_clks [ i ] ; cclk -> regmap = regmap ; } } 

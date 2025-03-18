@@ -1,0 +1,1 @@
+void send_address_all ( struct nbr * nbr , int af ) { struct if_addr_head addr_list ; struct if_addr * if_addr ; unsigned int addr_count ; LIST_INIT ( & addr_list ) ; LIST_FOREACH ( , , ) { if ( if_addr -> af != af ) { continue ; } address_list_add ( & addr_list , if_addr ) ; addr_count ++ ; } send_address ( nbr , af , & addr_list , addr_count , 0 ) ; } 

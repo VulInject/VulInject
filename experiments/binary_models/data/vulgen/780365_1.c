@@ -1,0 +1,1 @@
+void set_all_choice_values ( struct symbol * csym ) { struct property * prop ; struct symbol * sym ; struct expr * e ; prop = sym_get_choice_prop ( csym ) ; expr_list_for_each_sym ( , , ) { } csym -> flags |= SYMBOL_DEF_USER ; csym -> flags &= ~ ( SYMBOL_VALID | SYMBOL_NEED_SET_CHOICE_VALUES ) ; } 

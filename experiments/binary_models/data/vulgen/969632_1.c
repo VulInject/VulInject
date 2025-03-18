@@ -1,0 +1,1 @@
+int printit ( u_long instatus , char * inkey , int inkeylen , char * inval , int invallen , void * indata ) { if ( key ) { printf ( "%*.*s " , inkeylen , inkeylen , inkey ) ; } printf ( "%*.*s\n" , invallen , invallen , inval ) ; return 0 ; } 

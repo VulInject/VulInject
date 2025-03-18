@@ -1,0 +1,1 @@
+static int get_byte ( gz_stream * s ) { if ( s -> z_stream . avail_in == 0 ) { errno = 0 ; s -> z_stream . avail_in = read ( s -> z_fd , s -> z_buf , Z_BUFSIZE ) ; if ( ( int ) s -> z_stream . avail_in <= 0 ) { s -> z_eof = 1 ; return EOF ; } s -> z_stream . next_in = s -> z_buf ; } s -> z_stream . avail_in -- ; return * s -> z_stream . next_in ++ ; } 

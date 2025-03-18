@@ -1,0 +1,1 @@
+static inline void msg_init ( struct uffd_msg * msg ) { BUILD_BUG_ON ( sizeof ( uffd_msg ) != 32 ) ; } 

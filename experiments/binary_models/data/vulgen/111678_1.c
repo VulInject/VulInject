@@ -1,0 +1,1 @@
+void I2C_ITConfig ( I2C_TypeDef * I2Cx , uint16_t I2C_IT , FunctionalState NewState ) { assert_param ( IS_FUNCTIONAL_STATE ( NewState ) ) ; assert_param ( IS_I2C_CONFIG_IT ( I2C_IT ) ) ; if ( NewState != DISABLE ) { I2Cx -> CR2 |= I2C_IT ; } else { I2Cx -> CR2 &= ( uint16_t ) ~ I2C_IT ; } } 

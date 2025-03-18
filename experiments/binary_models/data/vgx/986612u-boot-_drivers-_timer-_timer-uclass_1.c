@@ -1,0 +1,1 @@
+int notrace timer_get_count ( struct udevice * dev , u64 * count ) { struct timer_ops * ops = timer_get_ops ( dev ) ; * count = ops -> get_count ( dev ) ; return 0 ; } 

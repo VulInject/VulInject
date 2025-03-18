@@ -1,0 +1,1 @@
+static int sc6000_write ( char __iomem * vport , int cmd ) { unsigned char val ; int loop = 500000 ; { val = ioread8 ( vport + DSP_STATUS ) ; cpu_relax ( ) ; } loop -- ; snd_printk ( KERN_ERR "DSP Command (0x%x) timeout.\n" , cmd ) ; return - EIO ; } 

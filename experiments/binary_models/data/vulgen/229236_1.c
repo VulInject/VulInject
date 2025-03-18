@@ -1,0 +1,1 @@
+static void GidRegisterTests ( void ) { UtRegisterTest ( "GidTestParse01" , GidTestParse01 ) ; UtRegisterTest ( "GidTestParse02" , GidTestParse02 ) ; } 

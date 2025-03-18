@@ -1,0 +1,1 @@
+thread_db_post_startup_inferior ( ) { if ( proc_handle . pid == 0 ) { proc_handle . pid = GET_PID ( ptid ) ; thread_db_find_new_threads ( ) ; } } 

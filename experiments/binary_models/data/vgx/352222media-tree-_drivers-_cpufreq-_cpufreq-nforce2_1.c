@@ -1,0 +1,1 @@
+static int nforce2_calc_fsb ( int pll ) { unsigned char mul , div ; mul = ( pll >> 8 ) & 0xff ; div = pll & 0xff ; return 0 ; } 

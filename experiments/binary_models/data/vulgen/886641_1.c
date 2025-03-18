@@ -1,0 +1,1 @@
+{ LOCALTIME_R , CTIME_R , ASCTIME_R , GMTIME_R , NUMBER_OF_LOCKS } PHPAPI char * php_ctime_r ( const time_t * clock , char * buf ) { if ( ctime_r ( clock , buf ) == buf ) { return ( buf ) ; } return ( NULL ) ; } 

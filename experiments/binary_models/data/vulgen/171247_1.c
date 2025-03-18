@@ -1,0 +1,1 @@
+void ccu_gate_helper_disable ( struct ccu_common * common , u32 gate ) { unsigned long flags ; u32 reg ; spin_lock_irqsave ( common -> lock , flags ) ; reg = readl ( common -> base + common -> reg ) ; writel ( reg & ~ gate , common -> base + common -> reg ) ; spin_unlock_irqrestore ( common -> lock , flags ) ; } 

@@ -1,0 +1,1 @@
+static int filetab_init ( void ) { wrap2_register ( "file" , filetab_open_cb ) ; pr_event_register ( & wrap2_file_module , "core.module-unload" , filetab_mod_unload_ev ) ; return 0 ; } 

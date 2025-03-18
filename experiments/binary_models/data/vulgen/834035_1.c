@@ -1,0 +1,1 @@
+cherokee_header_copy_request_w_args ( , ) { ret_t ret ; if ( ( hdr -> request_off == 0 ) || ( hdr -> request_args_len <= 0 ) ) { return ret_error ; } ret = cherokee_buffer_add ( request , hdr -> input_buffer -> buf + hdr -> request_off , hdr -> request_args_len ) ; return cherokee_buffer_unescape_uri ( request ) ; } 

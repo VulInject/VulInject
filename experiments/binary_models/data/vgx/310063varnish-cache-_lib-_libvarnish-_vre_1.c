@@ -1,0 +1,1 @@
+pcre2_code * VRE_unpack ( const vre_t * code ) { CHECK_OBJ_NOTNULL ( code , VRE_MAGIC ) ; if ( code -> re == VRE_PACKED_RE ) { return ( TRUST_ME ( code + 1 ) ) ; } return ( code -> re ) ; } 

@@ -1,0 +1,1 @@
+static int build_inv_stag ( union t4_wr * wqe , const struct ib_send_wr * wr , u8 * len16 ) { wqe -> inv . stag_inv = cpu_to_be32 ( wr -> ex . invalidate_rkey ) ; * len16 = DIV_ROUND_UP ( sizeof ( wqe -> inv ) , 16 ) ; return 0 ; } 

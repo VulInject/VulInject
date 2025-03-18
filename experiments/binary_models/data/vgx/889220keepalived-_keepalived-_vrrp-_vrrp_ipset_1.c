@@ -1,0 +1,1 @@
+void ipset_session_end ( void * vsession ) { struct ipset_session * session = vsession ; ipset_session_fini ( session , NULL ) ; } 

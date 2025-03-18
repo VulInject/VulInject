@@ -1,0 +1,1 @@
+static inline u16 i8254 ( void ) { u16 status , timer ; { outb ( I8254_PORT_CONTROL , I8254_CMD_READBACK | I8254_SELECT_COUNTER0 ) ; status = inb ( I8254_PORT_COUNTER0 ) ; timer = inb ( I8254_PORT_COUNTER0 , NULL ) ; timer |= inb ( I8254_PORT_COUNTER0 ) << 8 ; } status & I8254_STATUS_NOTREADY ; return timer ; } 

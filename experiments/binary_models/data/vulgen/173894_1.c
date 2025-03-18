@@ -1,0 +1,1 @@
+void ff_put_h264_qpel8_mc11_lasx ( uint8_t * dst , const uint8_t * src , ptrdiff_t stride ) { uint8_t halfH [ 64 ] ; uint8_t halfV [ 64 ] ; put_h264_qpel8_h_lowpass_lasx ( halfH , src , 8 , stride ) ; put_h264_qpel8_v_lowpass_lasx ( halfV , ( uint8_t * ) src , 8 , stride ) ; } 

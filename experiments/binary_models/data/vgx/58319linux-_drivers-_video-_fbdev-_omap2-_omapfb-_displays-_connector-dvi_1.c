@@ -1,0 +1,1 @@
+static bool dvic_detect ( struct omap_dss_device * dssdev ) { struct panel_drv_data * ddata = to_panel_data ( dssdev ) ; unsigned char out ; int r ; r = dvic_ddc_read ( ddata -> i2c_adapter , & out , 1 , 0 ) ; return r == 0 ; } 

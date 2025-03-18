@@ -1,0 +1,1 @@
+void cxgb4_cleanup_tc_u32 ( struct adapter * adap ) { struct cxgb4_tc_u32_table * t ; unsigned int i ; t = adap -> tc_u32 ; for ( i = 0 ; i < t -> size ; i ++ ) { struct cxgb4_link * link = & t -> table [ i ] ; kvfree ( link -> tid_map ) ; } kvfree ( adap -> tc_u32 ) ; } 

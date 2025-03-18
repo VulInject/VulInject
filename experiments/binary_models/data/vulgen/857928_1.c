@@ -1,0 +1,1 @@
+( __otx2_mbox_reset ) ; void otx2_mbox_reset ( struct otx2_mbox * mbox , int devid ) { struct otx2_mbox_dev * mdev = & mbox -> dev [ devid ] ; spin_lock ( & mdev -> mbox_lock ) ; spin_unlock ( & mdev -> mbox_lock ) ; } 

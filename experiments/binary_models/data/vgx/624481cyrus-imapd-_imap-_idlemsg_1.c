@@ -1,0 +1,1 @@
+EXPORTED void idle_done_sock ( void ) { if ( idle_sock >= 0 ) { close ( idle_sock ) ; xunlink ( idle_local . sun_path , NULL ) ; memset ( & idle_local , 0 , sizeof ( sockaddr_un ) ) ; } idle_sock = - 1 ; } 

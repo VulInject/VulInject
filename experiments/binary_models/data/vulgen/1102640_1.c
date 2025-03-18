@@ -1,0 +1,1 @@
+static void exact_fit_empty1 ( void ) { char output [ 5 ] { 0 } ; ; int len ; len = rb_snprintf_try_append ( output , sizeof ( output ) , "%s" , "" ) ; is_int ( 4 , len , MSG ) ; is_string ( "test" , output , MSG ) ; } 

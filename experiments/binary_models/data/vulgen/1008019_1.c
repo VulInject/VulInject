@@ -1,0 +1,1 @@
+int dsi_host_enable ( struct udevice * dev ) { struct dsi_host_ops * ops = dsi_host_get_ops ( dev ) ; return ops -> enable ( dev ) ; } 

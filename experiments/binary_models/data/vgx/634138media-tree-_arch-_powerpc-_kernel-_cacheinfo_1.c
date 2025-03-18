@@ -1,0 +1,1 @@
+static void cacheinfo_sysfs_populate ( unsigned int cpu_id , struct cache * cache_list ) { struct cache_dir * cache_dir ; struct cache * cache ; int index = 0 ; cache_dir = cacheinfo_create_cache_dir ( cpu_id ) ; cache = cache_list ; while ( cache ) { cacheinfo_create_index_dir ( cache , index , cache_dir ) ; index ++ ; cache = cache -> next_local ; } } 

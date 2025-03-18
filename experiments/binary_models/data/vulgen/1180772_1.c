@@ -1,0 +1,1 @@
+extern char * getsectdatafromheader_64 ( struct mach_header_64 * , const char * , const char * , unsigned long * ) km_object_info { struct object * seen_objects ; struct object * unseen_objects ; int spare [ 2 ] ; } 

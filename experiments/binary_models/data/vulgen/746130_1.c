@@ -1,0 +1,1 @@
+void mdvi_pop_color ( DviContext * dvi ) { Ulong fg , bg ; dvi -> color_top -- ; fg = dvi -> color_stack [ dvi -> color_top ] . fg ; bg = dvi -> color_stack [ dvi -> color_top ] . bg ; mdvi_set_color ( dvi , fg , bg ) ; } 

@@ -1,0 +1,1 @@
+int cpu_get_hwmid ( int prom_node ) { return prom_getintdefault ( prom_node , cpu_mid_prop ( ) , - ENODEV ) ; } 

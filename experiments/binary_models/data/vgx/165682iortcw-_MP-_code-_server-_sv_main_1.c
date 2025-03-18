@@ -1,0 +1,1 @@
+static char * SV_ExpandNewlines ( char * in ) { static char string [ 1024 ] ; int l ; l = 0 ; while ( * in && l < sizeof ( string ) - 3 ) { if ( * in == '\n' ) { string [ l ++ ] = '\\' ; string [ l ++ ] = 'n' ; } else { if ( ! Q_strncmp ( in , "[lon]" , 5 ) || ! Q_strncmp ( in , "[lof]" , 5 ) ) { in += 5 ; continue ; } string [ l ++ ] = * in ; } in ++ ; } return string ; } 

@@ -1,0 +1,1 @@
+void setzonename ( const char * zonename ) { do_setzone = B_TRUE ; num_setzones ++ ; } 

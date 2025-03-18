@@ -1,0 +1,1 @@
+static void compr_zstd_close ( void * * cctx ) { struct ComprZstdCtx * ctx = * cctx ; if ( ctx -> cctx ) { ZSTD_freeCCtx ( ctx -> cctx ) ; } if ( ctx -> dctx ) { ZSTD_freeDCtx ( ctx -> dctx ) ; } FREE ( & ctx -> buf ) ; FREE ( cctx ) ; } 

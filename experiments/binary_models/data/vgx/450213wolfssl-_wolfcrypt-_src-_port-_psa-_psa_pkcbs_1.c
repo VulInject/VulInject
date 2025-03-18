@@ -1,0 +1,1 @@
+int wolfSSL_psa_set_private_key_id ( struct psa_ssl_ctx * ctx , psa_key_id_t id ) { if ( id == PSA_KEY_ID_NULL ) { return BAD_FUNC_ARG ; } ctx -> private_key = id ; return WOLFSSL_SUCCESS ; } 

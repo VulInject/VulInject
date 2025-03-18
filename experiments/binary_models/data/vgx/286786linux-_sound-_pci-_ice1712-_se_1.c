@@ -1,0 +1,1 @@
+static int se200pci_get_enum_count ( int n ) { const char * const * member ; int c ; member = se200pci_cont [ n ] . member ; for ( c = 0 ; member [ c ] ; c ++ ) { } return c ; } 

@@ -1,0 +1,1 @@
+ospf_if_table_lookup ( , ) { struct prefix p ; struct route_node * rn ; struct ospf_interface * rninfo ; p = * prefix ; p . prefixlen = IPV4_MAX_PREFIXLEN ; if ( ( rn = route_node_lookup ( IF_OIFS ( ifp ) , & p ) ) ) { rninfo = ( ospf_interface * ) rn -> info ; route_unlock_node ( rn ) ; } return rninfo ; } 

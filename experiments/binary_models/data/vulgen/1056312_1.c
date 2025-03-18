@@ -1,0 +1,1 @@
+const git_oid * git_rebase_orig_head_id ( git_rebase * rebase ) { return & rebase -> orig_head_id ; } 

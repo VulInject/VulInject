@@ -1,0 +1,1 @@
+void func ( void ) { int mylock2 = 2 ; if ( 1 ) { _spin_unlock ( mylock ) ; } frob ( ) ; if ( a ) { return ; } if ( ! 0 ) { _spin_lock ( mylock ) ; } if ( 0 ) { _spin_unlock ( mylock ) ; } if ( b ) { return ; } if ( ! 1 ) { _spin_lock ( mylock ) ; } } 

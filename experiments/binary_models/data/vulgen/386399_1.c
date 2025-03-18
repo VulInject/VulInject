@@ -1,0 +1,1 @@
+static int powernv_cpuidle_cpu_dead ( unsigned int cpu ) { struct cpuidle_device * dev = per_cpu ( cpuidle_devices , cpu ) ; if ( dev && cpuidle_get_driver ( ) ) { cpuidle_pause_and_lock ( ) ; cpuidle_resume_and_unlock ( ) ; } return 0 ; } 

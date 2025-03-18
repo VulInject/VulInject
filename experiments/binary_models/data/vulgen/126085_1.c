@@ -1,0 +1,1 @@
+static void set_addr_win ( struct fbtft_par * par , int xs , int ys , int xe , int ye ) { write_reg ( par , 0x40 ) ; } 

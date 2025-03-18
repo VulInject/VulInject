@@ -1,0 +1,1 @@
+int isPathRemote ( char * a_path ) { int r ; struct stat statbuf ; r = lstat ( a_path , & statbuf ) ; return ( isFstypeRemote ( statbuf . st_fstype ) ) ; } 

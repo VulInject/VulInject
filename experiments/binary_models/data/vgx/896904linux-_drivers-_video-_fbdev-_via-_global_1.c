@@ -1,0 +1,1 @@
+int viafb_lcd_dsp_method = LCD_EXPANDSION ; int viafb_lcd_mode = LCD_OPENLDI ; int viafb_CRT_ON = 1 ; int viafb_DVI_ON ; int viafb_LCD_ON ; int viafb_LCD2_ON ; int viafb_SAMM_ON ; int viafb_dual_fb ; int viafb_second_xres = 640 ; unsigned int viafb_second_yres = 480 ; 

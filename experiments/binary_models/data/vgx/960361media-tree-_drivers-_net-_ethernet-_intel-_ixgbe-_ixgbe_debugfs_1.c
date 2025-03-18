@@ -1,0 +1,1 @@
+void ixgbe_dbg_adapter_exit ( struct ixgbe_adapter * adapter ) { debugfs_remove_recursive ( adapter -> ixgbe_dbg_adapter , NULL ) ; adapter -> ixgbe_dbg_adapter = NULL ; } 

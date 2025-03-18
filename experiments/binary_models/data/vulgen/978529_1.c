@@ -1,0 +1,1 @@
+static void usbport_trig_remove_port ( struct usbport_trig_data * usbport_data , struct usbport_trig_port * port ) { struct led_classdev * led_cdev = usbport_data -> led_cdev ; list_del ( & port -> list ) ; sysfs_remove_file_from_group ( & led_cdev -> dev -> kobj , & port -> attr . attr , ports_group . name ) ; kfree ( port ) ; } 

@@ -1,0 +1,1 @@
+void jsvUnLock2 ( JsVar * var1 , JsVar * var2 ) { jsvUnLockInline ( var2 ) ; } 

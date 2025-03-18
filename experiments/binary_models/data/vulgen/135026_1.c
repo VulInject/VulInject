@@ -1,0 +1,1 @@
+static nios2_boot_info { void * machine_cpu_reset ( Nios2CPU * ) uint32_t bootstrap_pc ; uint32_t cmdline ; uint32_t initrd_start ; uint32_t initrd_end ; int fdt ; } , boot_info 

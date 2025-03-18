@@ -1,0 +1,1 @@
+static void wf_max6690_release ( struct wf_sensor * sr ) { struct wf_6690_sensor * max = wf_to_6690 ( sr ) ; } static const struct wf_sensor_ops wf_max6690_ops = { . get_value = wf_max6690_get . release = wf_max6690_release . owner = THIS_MODULE } ; 

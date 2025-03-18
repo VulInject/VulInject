@@ -1,0 +1,1 @@
+static ssize_t omapfb_show_ctrl_name ( struct device * dev , struct device_attribute * attr , char * buf ) { struct omapfb_device * fbdev = dev_get_drvdata ( dev ) ; return snprintf ( buf , PAGE_SIZE , "%s\n" , fbdev -> ctrl -> name ) ; } static struct attribute * ctrl_attrs [ ] { & dev_attr_ctrl_name . attr NULL } ; ; 

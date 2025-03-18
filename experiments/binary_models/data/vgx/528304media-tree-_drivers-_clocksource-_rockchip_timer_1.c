@@ -1,0 +1,1 @@
+static int __init rk_timer_init ( struct device_node * np ) { if ( ! rk_clkevt ) { return rk_clkevt_init ( np ) ; } pr_err ( "Too many timer definitions for '%s'\n" , TIMER_NAME ) ; return - EINVAL ; } 

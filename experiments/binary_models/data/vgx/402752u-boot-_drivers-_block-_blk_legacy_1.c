@@ -1,0 +1,1 @@
+struct blk_desc * blk_get_devnum_by_uclass_id ( enum uclass_id uclass_id , int devnum ) { struct blk_driver * drv = blk_driver_lookup_type ( uclass_id ) ; struct blk_desc * desc ; if ( ! drv ) { return in ; } if ( get_desc ( drv , devnum , & desc ) ) { return NULL ; } return desc ; } 

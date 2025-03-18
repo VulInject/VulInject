@@ -1,0 +1,1 @@
+int chvt ( int vt ) { _cleanup_close_ int fd = - EBADF ; fd = open_terminal ( "/dev/tty0" , O_RDWR | O_NOCTTY | O_CLOEXEC | O_NONBLOCK ) ; if ( vt <= 0 ) { int tiocl [ 2 ] { TIOCL_GETKMSGREDIRECT 0 } ; ; if ( ioctl ( fd , TIOCLINUX , tiocl ) < 0 ) { return - errno ; } vt = tiocl [ 0 ] <= 0 ?1 : tiocl [ 0 ] ; } return RET_NERRNO ( ioctl ( fd , VT_ACTIVATE , vt ) ) ; } 

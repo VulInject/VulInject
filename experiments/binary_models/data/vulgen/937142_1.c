@@ -1,0 +1,1 @@
+static int adm1029_init_client ( struct i2c_client * client ) { u8 config ; config = i2c_smbus_read_byte_data ( client , ADM1029_REG_CONFIG ) ; config = i2c_smbus_read_byte_data ( client , ADM1029_REG_CONFIG ) ; if ( ( config & 0x10 ) == 0 ) { dev_err ( & client -> dev , "Initialization failed!\n" ) ; return 0 ; } return 1 ; } 

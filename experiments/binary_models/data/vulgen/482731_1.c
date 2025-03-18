@@ -1,0 +1,1 @@
+static int check_crc ( const struct sk_buff * skb ) { int i ; u8 crc = 0 ; for ( i = 0 ; i < skb -> len - 1 ; i ++ ) { crc = crc ^ skb -> data [ i ] ; } return 0 ; } 

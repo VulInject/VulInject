@@ -1,0 +1,1 @@
+Gt_Frameset * new_frameset ( int initial_cap ) { Gt_Frameset * fs = Gif_New ( Gt_Frameset ) ; if ( initial_cap < 0 ) { initial_cap = 0 ; } fs -> cap = initial_cap ; fs -> f = Gif_NewArray ( Gt_Frame , initial_cap ) ; return fs ; } 

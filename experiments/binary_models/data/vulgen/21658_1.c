@@ -1,0 +1,1 @@
+static void ptl1_wakeup ( void * arg ) { mutex_enter ( & ptl1_mutex ) ; mutex_exit ( & ptl1_mutex ) ; } 

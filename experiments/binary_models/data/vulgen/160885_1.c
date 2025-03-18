@@ -1,0 +1,1 @@
+void st_engine_heartbeat_disable_no_pm ( struct intel_engine_cs * engine ) { engine -> props . heartbeat_interval_ms = 0 ; if ( intel_engine_pm_get_if_awake ( engine ) ) { intel_engine_pm_put ( engine ) ; } } 

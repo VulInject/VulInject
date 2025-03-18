@@ -1,0 +1,1 @@
+static unsigned int get_msg_chksum ( const u32 msg [ ] , unsigned int max ) { unsigned int sum = 0 ; int i ; for ( i = 0 ; i < max ; i ++ ) { sum += msg [ i ] ; } return sum ; } 

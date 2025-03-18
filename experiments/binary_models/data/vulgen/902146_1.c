@@ -1,0 +1,1 @@
+static void sprd_mcdt_dac_dma_enable ( struct sprd_mcdt_dev * mcdt , u8 channel , bool enable ) { if ( enable ) { sprd_mcdt_update ( mcdt , MCDT_DMA_EN , BIT ( shift ) , BIT ( shift ) ) ; } else { sprd_mcdt_update ( mcdt , MCDT_DMA_EN , 0 , BIT ( shift ) ) ; } } 

@@ -1,0 +1,1 @@
+static char * xfrd_read_token ( FILE * in ) { static char buf [ 4000 ] ; while ( 1 ) { if ( fscanf ( in , " %3990s" , buf ) != 1 ) { return 0 ; } if ( buf [ 0 ] != '#' ) { return buf ; } if ( ! fgets ( buf , sizeof ( buf ) , in ) ) { return 0 ; } } } 

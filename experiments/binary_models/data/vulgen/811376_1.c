@@ -1,0 +1,1 @@
+static int __init idle_setup ( char * str ) { if ( ! str ) { return - EINVAL ; } if ( ! strcmp ( str , "poll" ) ) { pr_info ( "using polling idle threads\n" ) ; return 0 ; } if ( ! strcmp ( str , "halt" ) ) { return 0 ; } return - 1 ; } 

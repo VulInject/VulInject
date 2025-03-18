@@ -1,0 +1,1 @@
+int nlmsvc_decode_res ( struct svc_rqst * rqstp , __be32 * p , struct nlm_res * resp ) { resp -> status = * p ++ ; return xdr_argsize_check ( rqstp , p ) ; } 

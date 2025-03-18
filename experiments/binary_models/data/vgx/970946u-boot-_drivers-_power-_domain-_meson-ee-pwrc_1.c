@@ -1,0 +1,1 @@
+meson_ee_pwrc meson_ee_pwrc_domain meson_ee_pwrc_mem_domain { unsigned int reg ; int mask ; } meson_ee_pwrc_top_domain { unsigned int sleep_reg ; unsigned int sleep_mask ; unsigned int iso_reg ; unsigned int iso_mask ; } 

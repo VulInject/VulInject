@@ -1,0 +1,1 @@
+static void cancel_handler ( nsock_pool nsp , nsock_event nse , void * udata ) { int * ev_done = ( int * ) udata ; } 

@@ -1,0 +1,1 @@
+static void ath11k_core_stop ( struct ath11k_base * ab ) { ath11k_hif_stop ( ab ) ; ath11k_wmi_detach ( ab ) ; ath11k_dp_pdev_reo_cleanup ( ab ) ; } 

@@ -1,0 +1,1 @@
+static uint32_t imx_epit_update_count ( IMXEPITState * s ) { s -> cnt = ptimer_get_count ( s -> timer_reload , NULL ) ; return s -> cnt ; } 

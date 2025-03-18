@@ -1,0 +1,1 @@
+static int check_overflow ( fsdata * mydata , __u32 clustnum , loff_t size ) { __u32 startsect , sect_num , offset ; if ( clustnum > 0 ) { startsect = clust_to_sect ( mydata , clustnum ) ; } else { startsect = mydata -> rootdir_sect ; } sect_num = div_u64_rem ( size , mydata -> sect_size , & offset ) ; if ( offset != 0 ) { sect_num ++ ; } return 0 ; } 

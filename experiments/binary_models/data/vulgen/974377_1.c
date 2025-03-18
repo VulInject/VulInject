@@ -1,0 +1,1 @@
+static int denali_exec_waitrdy ( struct denali_controller * denali ) { u32 irq_stat ; irq_stat = denali_wait_for_irq ( denali , INTR__INT_ACT ) ; return irq_stat & INTR__INT_ACT ?0 : - EIO ; } 

@@ -1,0 +1,1 @@
+cbuf_put_fd ( , , ) { int n ; assert ( srcbuf != NULL ) ; assert ( * pdstfd >= 0 ) ; assert ( len > 0 ) ; { n = write ( * pdstfd , srcbuf , len ) ; } ( n < 0 ) && ( errno == EINTR ) ; return ( n ) ; } 

@@ -1,0 +1,1 @@
+static void __init mx31lilly_init_fb ( void ) { if ( gpio_request ( LCD_VCC_EN_GPIO , "LCD enable" ) != 0 ) { printk ( KERN_WARNING "unable to request LCD_VCC_EN pin.\n" ) ; return ; } imx31_add_ipu_core ( ) ; gpio_direction_output ( LCD_VCC_EN_GPIO , 1 ) ; } 

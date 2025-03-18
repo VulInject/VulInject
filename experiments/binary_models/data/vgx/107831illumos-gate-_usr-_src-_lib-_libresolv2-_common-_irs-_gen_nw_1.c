@@ -1,0 +1,1 @@
+static struct __res_state * nw_res_get ( struct irs_nw * this ) { struct pvt * pvt = ( pvt * ) this -> private ; if ( ! pvt -> res ) { struct __res_state * res ; res = ( __res_state * ) malloc ( sizeof res ) ; if ( ! res ) { errno = ENOMEM ; return ( NULL ) ; } nw_res_set ( this , res , free ) ; } return ( pvt -> res ) ; } 

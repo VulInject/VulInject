@@ -1,0 +1,1 @@
+static s32 brcmf_btcoex_params_write ( struct brcmf_if * ifp , u32 addr , u32 data ) { { __le32 addr ; __le32 data ; } , reg_write reg_write . addr = cpu_to_le32 ( addr ) ; reg_write . data = cpu_to_le32 ( data , NULL ) ; return brcmf_fil_iovar_data_set ( ifp , "btc_params" , & reg_write , sizeof ( reg_write ) ) ; } 

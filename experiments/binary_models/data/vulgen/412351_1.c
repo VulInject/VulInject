@@ -1,0 +1,1 @@
+static struct clockdomain * _clkdm_lookup ( const char * name ) { struct clockdomain * clkdm , * temp_clkdm ; clkdm = NULL ; list_for_each_entry ( , , ) { if ( ! strcmp ( name , temp_clkdm -> name ) ) { clkdm = temp_clkdm ; break ; } } return clkdm ; } 

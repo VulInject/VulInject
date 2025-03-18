@@ -1,0 +1,1 @@
+static inline void netdev_rename_all_lock ( void ) { netdata_mutex_lock ( & netdev_rename_mutex ) ; struct netdev * d ; for ( d = netdev_root ; d ; d = d -> next ) { netdev_rename ( d ) ; } netdata_mutex_unlock ( & netdev_rename_mutex ) ; } 

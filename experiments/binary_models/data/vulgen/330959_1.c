@@ -1,0 +1,1 @@
+static void PathMatchFilesi ( const char * word , const char * eword , Lst path , Lst expansions ) { LstNode ln ; for ( ln = Lst_First ( path ) ; ln != NULL ; ln = Lst_Adv ( ln ) ) { Dir_MatchFilesi ( word , eword , Lst_Datum ( ln ) , 0 ) ; } } 

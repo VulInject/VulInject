@@ -1,0 +1,1 @@
+wcsstr ( , ) { const wchar_t * p ; const wchar_t * q ; const wchar_t * r ; if ( wcslen ( big ) < wcslen ( little ) ) { return NULL ; } p = big ; q = little ; while ( * p ) { q = little ; r = p ; while ( * q ) { if ( * r != * q ) { break ; } q ++ ; r ++ ; } if ( ! * q ) { return ( wchar_t * ) p ; } p ++ ; } return NULL ; } 

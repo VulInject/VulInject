@@ -1,0 +1,1 @@
+static void crystalcove_bus_sync_unlock ( struct irq_data * data ) { struct crystalcove_gpio * cg = gpiochip_get_data ( irq_data_get_irq_chip_data ( data ) ) ; int gpio = data -> hwirq ; if ( cg -> update & UPDATE_IRQ_TYPE ) { crystalcove_update_irq_ctrl ( cg , gpio ) ; } if ( cg -> update & UPDATE_IRQ_MASK ) { crystalcove_update_irq_mask ( cg , gpio ) ; } cg -> update = 0 ; } 

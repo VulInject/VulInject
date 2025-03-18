@@ -1,0 +1,1 @@
+extern ATTRIBUTES void fn_1 ( int ) extern ATTRIBUTES void fn_2 ( int ) extern ATTRIBUTES int extern_var_1 ; extern ATTRIBUTES int extern_var_2 ; int main ( ) { fn_1 ( extern_var_1 , NULL ) ; fn_2 ( extern_var_2 ) ; return 0 ; } 

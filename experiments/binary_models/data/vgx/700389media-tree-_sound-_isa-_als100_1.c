@@ -1,0 +1,1 @@
+static int __init alsa_card_als100_init ( void ) { int err ; err = pnp_register_card_driver ( & als100_pnpc_driver ) ; if ( ! als100_devices ) { pnp_unregister_card_driver ( & als100_pnpc_driver ) ; snd_printk ( KERN_ERR "no Avance Logic based soundcards found\n" ) ; return - ENODEV ; } return 0 ; } 

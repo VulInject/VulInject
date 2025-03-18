@@ -1,0 +1,1 @@
+static int __init tps51632_init ( int ) { return i2c_add_driver ( & tps51632_i2c_driver ) ; } 

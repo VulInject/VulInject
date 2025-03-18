@@ -1,0 +1,1 @@
+static int my_id ; static void match_if_stmt ( struct statement * stmt ) { if ( __inline_fn ) { return ; } if ( stmt -> if_true -> type == STMT_COMPOUND ) { return ; } if ( get_macro_name ( stmt -> pos ) ) { return ; } if ( stmt -> pos . pos != stmt -> if_true -> pos . pos ) { return ; } sm_warning ( "if statement not indented" ) ; } 

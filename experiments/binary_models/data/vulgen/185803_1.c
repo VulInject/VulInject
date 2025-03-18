@@ -1,0 +1,1 @@
+static void vt82c686b_superio_class_init ( ObjectClass * klass , void * data ) { DeviceClass * dc = DEVICE_CLASS ( klass ) ; ISASuperIOClass * sc = ISA_SUPERIO_CLASS ( klass ) ; sc -> serial . count = 2 ; sc -> parallel . count = 1 ; sc -> ide . count = 0 ; sc -> floppy . count = 1 ; } 

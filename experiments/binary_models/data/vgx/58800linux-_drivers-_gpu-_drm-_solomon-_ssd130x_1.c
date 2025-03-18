@@ -1,0 +1,1 @@
+static void ssd130x_encoder_helper_atomic_disable ( struct drm_encoder * encoder , struct drm_atomic_state * state ) { struct drm_device * drm = encoder -> dev ; struct ssd130x_device * ssd130x = drm_to_ssd130x ( drm ) ; backlight_disable ( ssd130x -> bl_dev , NULL ) ; ssd130x_write_cmd ( ssd130x , 1 , SSD130X_DISPLAY_OFF ) ; ssd130x_power_off ( ssd130x ) ; } 

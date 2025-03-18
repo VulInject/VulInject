@@ -1,0 +1,1 @@
+static int piix_sidpr_scr_write ( struct ata_link * link , unsigned int reg , u32 val ) { struct piix_host_priv * hpriv = link -> ap -> host -> private_data ; piix_sidpr_sel ( link , reg ) ; iowrite32 ( val , hpriv -> sidpr + PIIX_SIDPR_DATA ) ; return 0 ; } 

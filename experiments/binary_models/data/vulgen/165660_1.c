@@ -1,0 +1,1 @@
+declare_func ( , , , ) randomize_int32 ( src , len ) ; call_ref ( src , len , dst0 ) ; call_new ( src , len , dst1 ) ; for ( int i = 0 ; i < len ; i ++ ) { if ( ! double_near_abs_eps ( dst0 [ i ] , dst1 [ i ] , EPS ) ) { fprintf ( stderr , "%d: %- .12f - %- .12f = % .12g\n" , i , dst0 [ i ] , dst1 [ i ] , dst0 [ i ] - dst1 [ i ] ) ; fail ( ) ; break ; } } 

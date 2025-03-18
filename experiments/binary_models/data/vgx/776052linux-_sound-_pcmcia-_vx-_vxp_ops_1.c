@@ -1,0 +1,1 @@
+static int vx_check_magic ( struct vx_core * chip ) { unsigned long end_time = jiffies + HZ / 5 ; int c ; { c = vx_inb ( chip , CDSP ) ; msleep ( 10 ) ; } time_after_eq ( end_time , jiffies ) ; snd_printk ( KERN_ERR "cannot find xilinx magic word (%x)\n" , c ) ; return - EIO ; } 

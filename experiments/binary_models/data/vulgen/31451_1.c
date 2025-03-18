@@ -1,0 +1,1 @@
+ev_module_unload ( ) { EvModule * module = EV_MODULE ( gmodule ) ; g_module_close ( module -> library ) ; } 

@@ -1,0 +1,1 @@
+void do_BUG ( char * file , unsigned int line ) { printk ( "kernel BUG at %s:%d!\n" , file , line ) ; } 

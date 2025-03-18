@@ -1,0 +1,1 @@
+int php_startup_ticks ( void ) { zend_llist_init ( & PG ( tick_functions ) , sizeof ( st_tick_function ) , 1 ) ; return SUCCESS ; } 

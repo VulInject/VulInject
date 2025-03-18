@@ -1,0 +1,1 @@
+{ CommandAdd ( modinfo -> handle , MSG_SVSLUSERS , cmd_svslusers , MAXPARA , CMD_SERVER ) ; MARK_AS_OFFICIAL_MODULE ( modinfo , NULL ) ; return MOD_SUCCESS ; } 

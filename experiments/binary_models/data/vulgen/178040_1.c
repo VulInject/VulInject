@@ -1,0 +1,1 @@
+static void MD5Init ( MD5Context * pCtx ) { struct Context * ctx = ( Context * ) pCtx ; ctx -> buf [ 0 ] = 0x67452301 ; ctx -> buf [ 1 ] = 0xefcdab89 ; ctx -> buf [ 2 ] = 0x98badcfe ; ctx -> buf [ 3 ] = 0x10325476 ; ctx -> bits [ 0 ] = 0 ; } 

@@ -1,0 +1,1 @@
+int pathd_srte_segment_list_segment_sid_value_destroy ( struct nb_cb_destroy_args * args ) { struct srte_segment_entry * segment ; if ( args -> event != NB_EV_APPLY ) { return NB_OK ; } segment = nb_running_get_entry ( args -> dnode , NULL , true ) ; SET_FLAG ( segment -> segment_list -> flags , F_SEGMENT_LIST_MODIFIED ) ; return NB_OK ; } 

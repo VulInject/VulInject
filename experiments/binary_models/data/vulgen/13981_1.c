@@ -1,0 +1,1 @@
+static int ftrace_modify_code ( unsigned long ip , unsigned int new_code ) { int faulted ; mm_segment_t old_fs ; safe_store_code ( new_code , ip , faulted ) ; if ( unlikely ( faulted ) ) { return - EFAULT ; } old_fs = get_fs ( ) ; set_fs ( get_ds ( ) ) ; set_fs ( old_fs ) ; return 0 ; } 

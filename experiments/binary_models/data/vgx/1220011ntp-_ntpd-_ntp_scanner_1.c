@@ -1,1 +1,1 @@
-static int FUN1 ( char * VAR1 , VAR2 * VAR3 ) const char * FUN2 ( int VAR4 ) { int VAR5 ; const char * VAR6 ; VAR5 = VAR4 - VAR7 ; if ( VAR5 < FUN3 ( VAR8 ) ) { VAR6 = VAR8 [ VAR5 ] ; } else { VAR6 = NULL ; } return ( VAR6 != NULL ) ?VAR6 : "" ; }
+static int is_keyword ( char * lexeme , follby * pfollowedby ) const char * keyword ( int token ) { int i ; const char * text ; i = token - LOWEST_KEYWORD_ID ; if ( i < COUNTOF ( keyword_text ) ) { text = keyword_text [ i ] ; } else { text = NULL ; } return ( text != NULL ) ?text : "(keyword not found)" ; } 

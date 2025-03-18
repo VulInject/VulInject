@@ -1,0 +1,1 @@
+static bool jshIsRTCAlreadySetup ( bool andRunning ) { if ( ( RCC -> BDCR & RCC_BDCR_RTCEN ) == 0 ) { return false ; } if ( jshIsRTCUsingLSE ( ) ) { return RCC_GetFlagStatus ( RCC_FLAG_LSERDY ) == SET ; } else { return RCC_GetFlagStatus ( RCC_FLAG_LSIRDY ) == SET ; } } 

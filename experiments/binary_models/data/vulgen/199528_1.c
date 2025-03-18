@@ -1,0 +1,1 @@
+extern char * strchr ( ) static void expconv ( void ) ( isalnum ( c ) || ( ( c ) != NIL && strchr ( l_idchars , ( c ) ) != NIL ) ) int STRNCMP ( , , ) { } ; while ( -- len ) { } { { if ( * s2 - * s1 ) { return ( * s2 - * s1 ) ; } else { s2 ++ ; s1 ++ ; } } -- len ; } return ( 0 ) ; 

@@ -1,0 +1,1 @@
+ret_code_t pm_id_addr_get ( ble_gap_addr_t * p_addr ) { VERIFY_MODULE_INITIALIZED ( ) ; VERIFY_PARAM_NOT_NULL ( p_addr , NULL ) ; return im_id_addr_get ( p_addr ) ; } 

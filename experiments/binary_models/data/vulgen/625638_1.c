@@ -1,0 +1,1 @@
+void c8sectpfe_debugfs_init ( struct c8sectpfei * fei ) { if ( ! fei -> regset ) { return ; } fei -> regset -> regs = fei_sys_regs ; fei -> regset -> nregs = ARRAY_SIZE ( fei_sys_regs ) ; fei -> regset -> base = fei -> io ; fei -> root = debugfs_create_dir ( "c8sectpfe" , NULL ) ; debugfs_create_regset32 ( "registers" , S_IRUGO , fei -> root , fei -> regset ) ; } 

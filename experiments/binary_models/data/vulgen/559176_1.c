@@ -1,0 +1,1 @@
+const char * json_util_get_last_err ( void ) { return _last_err ; } 

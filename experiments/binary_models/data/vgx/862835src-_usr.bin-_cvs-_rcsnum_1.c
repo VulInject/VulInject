@@ -1,0 +1,1 @@
+RCSNUM * rcsnum_parse ( const char * str ) { const char * ep ; RCSNUM * num ; num = rcsnum_alloc ( ) ; if ( rcsnum_aton ( str , & ep , num ) < 0 || * ep != '\0' ) { num = NULL ; } return ( num ) ; } 

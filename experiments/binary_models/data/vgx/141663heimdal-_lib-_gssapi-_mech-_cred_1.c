@@ -1,0 +1,1 @@
+static OM_uint32 release_mech_cred ( OM_uint32 * minor , struct _gss_mechanism_cred * mc ) { OM_uint32 major ; if ( mc -> gmc_mech -> gm_release_cred != NULL ) { major = mc -> gmc_mech -> gm_release_cred ( minor , & mc -> gmc_cred ) ; } else { major = GSS_S_COMPLETE ; } return major ; } 

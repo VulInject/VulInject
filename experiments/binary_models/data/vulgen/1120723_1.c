@@ -1,0 +1,1 @@
+static int skein256_update ( struct shash_desc * desc , const u8 * data , unsigned int len ) { return skein_256_update ( ( skein_256_ctx * ) shash_desc_ctx ( desc ) , data ) ; } 

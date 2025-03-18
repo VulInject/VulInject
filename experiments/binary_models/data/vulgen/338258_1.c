@@ -1,0 +1,1 @@
+( { const u8 * keybuf * keyptr int err err = prepare_keybuf ( ( key ) , ( ksize ) , ( cfg ) , ( alignmask ) , & keybuf , & keyptr ) if ( err == 0 ) { err = setkey_f ( ( tfm ) , keyptr , ( ksize ) ) ; ; } } err ; 

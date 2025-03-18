@@ -1,0 +1,1 @@
+int _fini ( void ) { int error ; if ( smbfs_mountcount ) { return ( EBUSY ) ; } error = mod_remove ( & modlinkage ) ; error = fake_removefs ( & vfw ) ; if ( error ) { return ( error ) ; } smbfs_clntfini ( ) ; smbfs_subrfini ( ) ; smbfsfini ( ) ; return ( 0 ) ; } 

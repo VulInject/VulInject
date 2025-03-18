@@ -1,0 +1,1 @@
+static void gic_ipi_send_mask ( struct irq_data * d , const struct cpumask * mask ) { int cpu ; dsb ( ishst ) ; for_each_cpu ( , ) { u64 cluster_id = MPIDR_TO_SGI_CLUSTER_ID ( cpu_logical_map ( cpu ) ) ; u16 tlist ; tlist = gic_compute_target_list ( & cpu , mask , cluster_id ) ; gic_send_sgi ( cluster_id , tlist , d -> hwirq ) ; } isb ( ) ; } 

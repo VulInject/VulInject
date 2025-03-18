@@ -1,0 +1,1 @@
+int rb_sctp_bindx ( rb_fde_t * F , struct sockaddr_storage * addrs , size_t len ) { int ret ; ret = rb_setsockopt_reuseaddr ( F ) ; if ( ret ) { return ret ; } ret = rb_sctp_bindx_only ( F , addrs , len ) ; if ( ret ) { return ret ; } return 0 ; return - 1 ; } 

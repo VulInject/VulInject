@@ -1,0 +1,1 @@
+static void send_ipi_message ( const struct cpumask * callmask , enum ipi_msg_type msg_id ) { int index ; cfs_time_t mask = 0 ; for_each_cpu ( , ) mask |= 1 << index ; set_er ( mask , MIPISET ( msg_id ) ) ; } 

@@ -1,0 +1,1 @@
+void dcn301_hw_sequencer_construct ( struct dc * dc ) { dc -> hwss = dcn301_funcs ; } 

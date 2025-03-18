@@ -1,0 +1,1 @@
+fdevent_poll_event_del ( , ) { int fd = fdn -> fd ; int k = fdn -> fde_ndx ; ev -> pollfds [ k ] . fd = - 1 ; if ( ev -> unused . size == ev -> unused . used ) { ck_realloc_u32 ( ( void * * ) & ev -> unused . ptr , ev -> unused . size , 16 , sizeof ( * ev -> unused . ptr ) ) ; ev -> unused . size += 16 ; } ev -> unused . ptr [ ev -> unused . used ++ ] = k ; return 0 ; } 

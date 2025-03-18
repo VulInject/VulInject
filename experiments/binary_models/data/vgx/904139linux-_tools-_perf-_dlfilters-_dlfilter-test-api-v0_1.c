@@ -1,0 +1,1 @@
+static int check_al ( void * ctx ) { const struct perf_dlfilter_al * al ; al = perf_dlfilter_fns . resolve_ip ( ctx ) ; CHECK ( al -> sym && ! strcmp ( "foo" , al -> sym ) ) ; CHECK ( ! al -> symoff ) ; return 0 ; } 

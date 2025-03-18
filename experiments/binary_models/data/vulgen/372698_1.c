@@ -1,0 +1,1 @@
+static void __tcmur_flush_work ( struct tcmur_work * work ) { if ( __tcmu_is_ework_thread ) { return ; } tcmu_dbg ( "waiting for %d work thread to complete\n" , work -> refcnt ) ; } 

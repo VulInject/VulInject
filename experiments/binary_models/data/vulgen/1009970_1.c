@@ -1,0 +1,1 @@
+& rate_attribute . attr , & tone_attribute . attr , & vol_attribute . attr , & delay_time_attribute . attr , & direct_attribute . attr , & full_time_attribute . attr , & jiffy_delta_attribute . attr , trigger_time_attribute . attr , NULL , ; 

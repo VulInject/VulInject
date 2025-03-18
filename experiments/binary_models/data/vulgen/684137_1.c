@@ -1,0 +1,1 @@
+void deleteContactRow ( int userIndex , int contactIndex ) { kamailioSIPContactTable_context * theRow ; netsnmp_index indexToRemove ; oid indexToRemoveOID [ 2 ] ; indexToRemoveOID [ 0 ] = userIndex ; indexToRemoveOID [ 1 ] = contactIndex ; indexToRemove . oids = indexToRemoveOID ; indexToRemove . len = 2 ; theRow = CONTAINER_FIND ( cb . container , & indexToRemove ) ; } 

@@ -1,0 +1,1 @@
+static int parport_ax88796_remove ( struct platform_device * pdev ) { struct parport * p = platform_get_drvdata ( pdev ) ; struct ax_drvdata * dd = pp_to_drv ( p ) ; free_irq ( p -> irq , p ) ; parport_remove_port ( p ) ; iounmap ( dd -> base ) ; release_resource ( dd -> io ) ; kfree ( dd ) ; return 0 ; } 

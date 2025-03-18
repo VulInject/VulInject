@@ -1,0 +1,1 @@
+static tree inline_forbidden_p PARAMS ( ( tree * , int * , void * ) ) ; static void expand_deferred_fns PARAMS ( ( void ) ) ; static tree start_cdtor PARAMS ( ( int ) ) ; static void finish_cdtor PARAMS ( ( tree ) ) ; static GTY ( ) varray_type deferred_fns ; int c_missing_noreturn_ok_p ( decl ) tree decl ; { return flag_hosted && MAIN_NAME_P ( DECL_ASSEMBLER_NAME ( decl ) ) ; } 

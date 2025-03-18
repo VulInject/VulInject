@@ -1,0 +1,1 @@
+int disrsi_ ( tcp_chan * chan , int * negate , unsigned * value , unsigned count , unsigned int timeout ) { fprintf ( stderr , "The call to disrsi_ needs to be mocked!!\n" ) ; exit ( 1 ) ; } int tcp_rskip ( tcp_chan * chan , size_t ct ) { fprintf ( stderr , "The call to tcp_rskip needs to be mocked!!\n" ) ; } 

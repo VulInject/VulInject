@@ -1,0 +1,1 @@
+void av_encryption_info_free ( AVEncryptionInfo * info ) { if ( info ) { av_free ( info -> key_id ) ; av_free ( info -> iv ) ; av_free ( info ) ; } } 

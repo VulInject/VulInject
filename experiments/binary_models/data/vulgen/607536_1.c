@@ -1,0 +1,1 @@
+EXPORTED void INTERFACE_C com_err ( va_alist ) va_dcl { const char * whoami , * fmt ; long code ; va_list pvar ; va_start ( pvar ) ; whoami = va_arg ( pvar , const char * ) ; code = va_arg ( pvar , long ) ; fmt = va_arg ( pvar , const char * ) ; va_start ( pvar , fmt ) ; com_err_va ( whoami , code , fmt , pvar ) ; va_end ( pvar ) ; } 

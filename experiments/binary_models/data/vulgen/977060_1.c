@@ -1,0 +1,1 @@
+expand_one_register_var ( ) { tree type = TREE_TYPE ( var ) ; int unsignedp = TYPE_UNSIGNED ( type ) ; rtx x = gen_reg_rtx ( reg_mode ) ; SET_DECL_RTL ( var , x ) ; if ( ! DECL_ARTIFICIAL ( var ) ) { mark_user_reg ( x ) ; if ( POINTER_TYPE_P ( type ) ) { mark_reg_pointer ( x , TYPE_ALIGN ( TREE_TYPE ( TREE_TYPE ( var ) ) ) ) ; } } } 

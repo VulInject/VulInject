@@ -1,0 +1,1 @@
+int qmi_decode_message ( const void * buf , size_t len , const struct qmi_elem_info * ei , void * c_struct ) { if ( ! c_struct || ! buf || ! len ) { return - EINVAL ; } return qmi_decode ( ei , c_struct , buf + sizeof ( qmi_header ) , len - sizeof ( qmi_header ) , 1 ) ; } 

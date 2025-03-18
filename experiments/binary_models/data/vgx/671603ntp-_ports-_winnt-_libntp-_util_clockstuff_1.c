@@ -1,0 +1,1 @@
+int gettimeofday ( struct timeval * tv , void * ignored ) { struct timespec ts ; UNUSED_ARG ( ignored , NULL ) ; getclock ( TIMEOFDAY , & ts ) ; tv -> tv_sec = ts . tv_sec ; tv -> tv_usec = ts . tv_nsec / 10 ; return 0 ; } 

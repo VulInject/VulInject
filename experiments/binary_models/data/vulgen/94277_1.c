@@ -1,0 +1,1 @@
+void die ( char * format , ... ) { va_list ap ; int err = errno ; ( void ) fprintf ( stderr , "%s: " , progname ) ; va_start ( ap , format ) ; ( void ) vfprintf ( stderr , format , ap ) ; va_end ( ap ) ; if ( format [ strlen ( format ) - 1 ] != '\n' ) { ( void ) fprintf ( stderr , ": %s\n" , strerror ( err ) ) ; } } 

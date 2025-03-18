@@ -1,0 +1,1 @@
+int dev_read_first_prop ( const struct udevice * dev , struct ofprop * prop ) { return ofnode_first_property ( dev_ofnode ( dev ) , prop ) ; } 

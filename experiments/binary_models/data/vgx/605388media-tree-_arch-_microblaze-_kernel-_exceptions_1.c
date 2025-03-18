@@ -1,0 +1,1 @@
+static DEFINE_SPINLOCK ( die_lock ) ; void die ( const char * str , struct pt_regs * fp , long err ) { console_verbose ( ) ; spin_lock_irq ( & die_lock ) ; pr_warn ( "Oops: %s, sig: %ld\n" , str , err ) ; show_regs ( fp , NULL ) ; spin_unlock_irq ( & die_lock ) ; do_exit ( err ) ; } 

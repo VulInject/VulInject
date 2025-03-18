@@ -1,0 +1,1 @@
+static bool _is_valid_number ( char * tok , unsigned long long int * value ) { unsigned long long int tmp_val ; uint64_t mult ; char * end_ptr = NULL ; tmp_val = strtoull ( tok , & end_ptr , 10 ) ; if ( ( mult = suffix_mult ( end_ptr ) ) == NO_VAL64 ) { return false ; } tmp_val *= mult ; * value = tmp_val ; return true ; } 

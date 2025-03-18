@@ -1,0 +1,1 @@
+static void ioport_write8r ( void __iomem * addr , const void * s , unsigned long n ) { } 

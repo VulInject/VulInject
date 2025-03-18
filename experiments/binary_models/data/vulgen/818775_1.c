@@ -1,0 +1,1 @@
+static void nf_conntrack_tstamp_fini_sysctl ( struct net * net ) { struct ctl_table * table ; table = net -> ct . tstamp_sysctl_header -> ctl_table_arg ; unregister_net_sysctl_table ( net -> ct . tstamp_sysctl_header ) ; } 

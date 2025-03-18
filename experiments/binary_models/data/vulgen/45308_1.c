@@ -1,0 +1,1 @@
+int snd_gf1_stop ( struct snd_gus_card * gus ) { snd_gf1_i_write8 ( gus , SNDRV_GF1_GB_SOUND_BLASTER_CONTROL , 0 ) ; snd_gf1_stop_voices ( gus , 0 , 31 ) ; snd_gf1_i_write8 ( gus , SNDRV_GF1_GB_RESET , 1 ) ; snd_gf1_timers_done ( gus ) ; snd_gf1_mem_done ( gus ) ; return 0 ; } 

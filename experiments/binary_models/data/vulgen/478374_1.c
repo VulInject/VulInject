@@ -1,0 +1,1 @@
+int mosquitto_threaded_set ( struct mosquitto * mosq , bool threaded ) { if ( threaded ) { mosq -> threaded = mosq_ts_external ; } else { mosq -> threaded = mosq_ts_none ; } return MOSQ_ERR_SUCCESS ; } 

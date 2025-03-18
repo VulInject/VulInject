@@ -1,0 +1,1 @@
+void pop_name ( void ) { namelen -= 2 + strlen ( namestack [ -- namedepth ] ) ; if ( namedepth <= 0 ) { if ( namedepth < 0 ) { fprintf ( stderr , "ASSERTION FAILURE: namedepth<0\n" ) ; exit ( ERR_OTHER ) ; } if ( namelen != 0 ) { fprintf ( stderr , "ASSERTION FAILURE: namelen != 0\n" ) ; exit ( ERR_OTHER ) ; } } } 

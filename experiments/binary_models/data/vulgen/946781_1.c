@@ -1,0 +1,1 @@
+LIBIMOBILEDEVICE_API mobile_image_mounter_error_t mobile_image_mounter_free ( mobile_image_mounter_client_t client ) { if ( ! client ) { return MOBILE_IMAGE_MOUNTER_E_INVALID_ARG ; } client -> parent = NULL ; mutex_destroy ( & client -> mutex ) ; free ( client ) ; return MOBILE_IMAGE_MOUNTER_E_SUCCESS ; } 

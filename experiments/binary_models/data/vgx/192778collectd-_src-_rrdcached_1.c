@@ -1,0 +1,1 @@
+static int rc_config_get_int_positive ( oconfig_item_t const * ci , int * ret ) { int tmp = 0 ; int status = cf_util_get_int ( ci , & tmp ) ; if ( status != 0 ) { return status ; } * ret = tmp ; return 0 ; } 

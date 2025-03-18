@@ -1,0 +1,1 @@
+void cb_free ( struct pcmcia_socket * s ) { struct pci_dev * bridge , * dev , * tmp ; struct pci_bus * bus ; bridge = s -> cb_dev ; if ( ! bridge ) { return ; } bus = bridge -> subordinate ; pci_lock_rescan_remove ( ) ; list_for_each_entry_safe ( , , , ) pci_stop_and_remove_bus_device ( dev ) ; pci_unlock_rescan_remove ( ) ; } 

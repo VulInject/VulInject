@@ -1,0 +1,1 @@
+void i915_gem_render_state_fini ( struct intel_engine_cs * engine ) { struct intel_render_state * so ; struct drm_i915_gem_object * obj ; so = fetch_and_zero ( & engine -> render_state ) ; if ( ! so ) { return ; } obj = so -> vma -> obj ; i915_vma_close ( so -> vma ) ; kfree ( so ) ; } 

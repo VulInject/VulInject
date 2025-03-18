@@ -1,0 +1,1 @@
+SPECIFIC_GROUP ( i2c1 , NULL ) ; SPECIFIC_GROUP ( i2c0 ) ; SPECIFIC_GROUP ( nand ) ; SPECIFIC_GROUP ( sata_led ) ; SPECIFIC_GROUP ( i2s ) ; SPECIFIC_GROUP ( hda ) ; static const char * const gpio_groups [ ] { "sdio" "can1" "can0" "pwm3" "pwm2" "pwm1" "pwm0" "i2c1" "i2c0" "nand" "sata_led" "i2s" "hda" } ; ; 

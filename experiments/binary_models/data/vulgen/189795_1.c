@@ -1,0 +1,1 @@
+boolean_t shstrtab_init ( shstrtab_t * s ) { list_create ( & s -> sst_names , sizeof ( shstrtab_ent_t ) , offsetof ( shstrtab_ent_t , sste_link ) ) ; return ( shstrtab_ndx ( s , shstrtab_data [ STR_NONE ] , NULL ) ) ; } 

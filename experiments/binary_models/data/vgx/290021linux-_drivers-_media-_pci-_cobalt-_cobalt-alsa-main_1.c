@@ -1,0 +1,1 @@
+static int snd_cobalt_card_create ( struct cobalt_stream * s , struct snd_card * sc , struct snd_cobalt_card * * cobsc ) { * cobsc = kmalloc ( sizeof ( snd_cobalt_card ) , GFP_KERNEL ) ; if ( * cobsc == NULL ) { return - ENOMEM ; } ( * cobsc ) -> s = s ; ( * cobsc ) -> sc = sc ; sc -> private_data = * cobsc ; sc -> private_free = snd_cobalt_card_private_free ; return 0 ; } 

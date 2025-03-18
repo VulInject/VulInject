@@ -1,0 +1,1 @@
+void kgd2kfd_suspend ( struct kfd_dev * kfd ) { BUG_ON ( kfd == NULL ) ; if ( kfd -> init_complete ) { kfd -> dqm -> ops . stop ( kfd -> dqm ) ; amd_iommu_set_invalidate_ctx_cb ( kfd -> pdev , NULL ) ; amd_iommu_set_invalid_ppr_cb ( kfd -> pdev , NULL ) ; } } 

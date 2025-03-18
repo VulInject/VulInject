@@ -1,0 +1,1 @@
+int mwi_process_body ( publ_info_t * publ , str * * fin_body , int ver , str * * tuple ) { return 0 ; } 

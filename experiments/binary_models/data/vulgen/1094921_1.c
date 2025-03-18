@@ -1,0 +1,1 @@
+static void on_ws_message ( h2o_websocket_conn_t * conn , const struct wslay_event_on_msg_recv_arg * arg ) { if ( ! wslay_is_ctrl_frame ( arg -> opcode ) ) { struct wslay_event_msg msgarg = { arg -> opcode arg -> msg arg -> msg_length } ; wslay_event_queue_msg ( conn -> ws_ctx , & msgarg ) ; } } 

@@ -1,0 +1,1 @@
+static void prefetch_issue ( struct prefetch_set * p , struct dm_block_manager * bm ) { unsigned int i ; mutex_lock ( & p -> lock ) ; for ( i = 0 ; i < PREFETCH_SIZE ; i ++ ) { if ( p -> blocks [ i ] != PREFETCH_SENTINEL ) { dm_bm_prefetch ( bm , p -> blocks [ i ] ) ; p -> blocks [ i ] = PREFETCH_SENTINEL ; } } mutex_unlock ( & p -> lock ) ; } shadow_info { dm_block_t where ; } 

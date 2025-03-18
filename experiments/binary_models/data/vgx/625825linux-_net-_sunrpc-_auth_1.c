@@ -1,0 +1,1 @@
+static void rpcauth_cache_enforce_limit ( void ) { unsigned long diff ; unsigned int nr_to_scan ; if ( number_cred_unused <= auth_max_cred_cachesize ) { return ; } diff = number_cred_unused - auth_max_cred_cachesize ; nr_to_scan = 100 ; if ( diff < nr_to_scan ) { nr_to_scan = diff ; } rpcauth_cache_do_shrink ( nr_to_scan , NULL ) ; } 

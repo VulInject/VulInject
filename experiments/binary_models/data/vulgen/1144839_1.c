@@ -1,0 +1,1 @@
+const char * sasl_config_getstring ( const char * key , const char * def ) { int opt ; return def ; } 

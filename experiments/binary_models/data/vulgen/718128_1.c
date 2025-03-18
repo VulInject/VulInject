@@ -1,0 +1,1 @@
+static void * TestProtocolStateAlloc ( void * orig_state , AppProto proto_orig ) { SCEnter ( ) ; void * s = SCMalloc ( sizeof ( TestState ) ) ; if ( unlikely ( s == NULL ) ) { end } end SCReturnPtr ( s , "TestState" ) ; } 

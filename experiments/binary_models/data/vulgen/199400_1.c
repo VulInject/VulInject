@@ -1,0 +1,1 @@
+static void aspm_hw_set_l1_ent_latency ( struct hfi1_devdata * dd ) { u32 l1_ent_lat = 0x4u ; u32 reg32 ; pci_read_config_dword ( dd -> pcidev , PCIE_CFG_REG_PL3 , & reg32 ) ; reg32 &= ~ PCIE_CFG_REG_PL3_L1_ENT_LATENCY_SMASK ; pci_write_config_dword ( dd -> pcidev , PCIE_CFG_REG_PL3 , reg32 ) ; } 

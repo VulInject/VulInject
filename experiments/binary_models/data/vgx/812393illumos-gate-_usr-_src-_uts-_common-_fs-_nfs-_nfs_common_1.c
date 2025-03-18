@@ -1,0 +1,1 @@
+uint_t nfs3_tsize ( struct knetconfig * knp ) { if ( knp -> knc_semantics == NC_TPI_RDMA ) { return ( nfs3_max_transfer_size_rdma ) ; } return ( nfs3_max_transfer_size_clts ) ; } 

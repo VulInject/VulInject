@@ -1,0 +1,1 @@
+static void ebpf_create_statistic_charts ( ebpf_module_t * em ) { update_internal_metric_variable ( ) ; ebpf_create_statistic_thread_chart ( em ) ; ebpf_create_statistic_load_chart ( em ) ; } 

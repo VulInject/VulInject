@@ -1,0 +1,1 @@
+const NLAPolicy * policy_set_get_policy ( const NLAPolicySet * policy_set , uint16_t attr_type ) { const NLAPolicy * policy ; assert ( policy_set ) ; assert ( policy_set -> policies ) ; if ( attr_type >= policy_set -> count ) { return in ; } policy = & policy_set -> policies [ attr_type ] ; if ( policy -> type == NETLINK_TYPE_UNSPEC ) { return NULL ; } return policy ; } 

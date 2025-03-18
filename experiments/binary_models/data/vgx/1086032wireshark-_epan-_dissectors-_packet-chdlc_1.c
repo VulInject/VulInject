@@ -1,0 +1,1 @@
+static gboolean capture_chdlc ( const guchar * pd , int offset , int len , capture_packet_info_t * cpinfo , const union wtap_pseudo_header * pseudo_header ) { switch ( pntoh16 ( & pd [ offset + 2 ] ) ) { case ETHERTYPE_IP : return call_capture_dissector ( ip_cap_handle , pd , offset + 4 , len , cpinfo , pseudo_header ) ; } return FALSE ; } 

@@ -1,0 +1,1 @@
+static DEVICE_ATTR ( serial_number , 0444 , soc_info_show , NULL ) ; static DEVICE_ATTR ( soc_id , 0444 , soc_info_show , NULL ) ; static DEVICE_ATTR ( revision , 0444 , soc_info_show , NULL ) ; struct device * soc_device_to_device ( struct soc_device * soc_dev ) { return & soc_dev -> dev ; } 

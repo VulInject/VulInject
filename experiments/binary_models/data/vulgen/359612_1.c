@@ -1,0 +1,1 @@
+static void __exit dummy_irq_exit ( void ) { printk ( KERN_INFO "dummy-irq unloaded\n" ) ; } 

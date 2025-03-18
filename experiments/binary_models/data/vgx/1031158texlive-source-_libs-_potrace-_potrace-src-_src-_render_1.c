@@ -1,0 +1,1 @@
+void render_free ( render_t * rm ) { free ( rm -> incrow_buf ) ; } 

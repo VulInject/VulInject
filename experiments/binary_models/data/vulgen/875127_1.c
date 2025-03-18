@@ -1,0 +1,1 @@
+void komeda_kms_detach ( struct komeda_kms_dev * kms ) { struct drm_device * drm = & kms -> base ; struct komeda_dev * mdev = drm -> dev_private ; drm_dev_unregister ( drm ) ; drm_kms_helper_poll_fini ( drm ) ; drm_atomic_helper_shutdown ( drm ) ; component_unbind_all ( mdev -> dev , drm ) ; drm_mode_config_cleanup ( drm ) ; drm -> dev_private = NULL ; } 

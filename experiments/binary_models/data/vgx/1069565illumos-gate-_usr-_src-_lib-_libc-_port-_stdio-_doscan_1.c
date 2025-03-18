@@ -1,0 +1,1 @@
+int _doscan ( FILE * iop , const char * fmt , va_list va_Alist ) { int ret ; rmutex_t * lk ; if ( iop -> _flag & _IOWRT ) { ret = __doscan_u ( iop , fmt , va_Alist , 0 ) ; } else { FLOCKFILE ( lk , iop ) ; ret = __doscan_u ( iop , fmt , va_Alist , 0 ) ; FUNLOCKFILE ( lk , NULL ) ; } return ( ret ) ; } 

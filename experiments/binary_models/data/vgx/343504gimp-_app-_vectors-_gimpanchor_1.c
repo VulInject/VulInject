@@ -1,0 +1,1 @@
+gimp_anchor_copy ( ) { g_return_val_if_fail ( anchor != NULL ) ; return g_slice_dup ( GimpAnchor , anchor ) ; } 

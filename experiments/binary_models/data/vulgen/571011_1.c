@@ -1,0 +1,1 @@
+static void do_swap ( void * a , void * b , size_t size , swap_r_func_t swap_func , const void * priv ) { if ( swap_func == SWAP_WORDS_64 ) { swap_words_64 ( a , b , size ) ; } if ( swap_func == SWAP_WORDS_32 ) { swap_words_32 ( a , b , size ) ; } if ( swap_func == SWAP_BYTES ) { swap_bytes ( a , b , size ) ; } else { swap_func ( a , b , ( int ) size , priv ) ; } } 

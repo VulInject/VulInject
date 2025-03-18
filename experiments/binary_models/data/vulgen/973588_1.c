@@ -1,0 +1,1 @@
+static int resizer_link_validate ( struct v4l2_subdev * sd , struct media_link * link , struct v4l2_subdev_format * source_fmt , struct v4l2_subdev_format * sink_fmt ) { struct isp_res_device * res = v4l2_get_subdevdata ( sd ) ; struct isp_pipeline * pipe = to_isp_pipeline ( & sd -> entity ) ; return v4l2_subdev_link_validate_default ( sd , link , source_fmt , sink_fmt ) ; } 

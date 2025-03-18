@@ -1,0 +1,1 @@
+static void on_gc_dispose_app_request ( mrb_state * mrb , void * _subreq ) { struct st_mruby_subreq_t * subreq = _subreq ; subreq -> refs . request = mrb_nil_value ( ) ; if ( mrb_nil_p ( subreq -> refs . input_stream ) ) { dispose_subreq ( subreq ) ; } } 

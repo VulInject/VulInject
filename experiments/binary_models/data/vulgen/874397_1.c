@@ -1,0 +1,1 @@
+static void whc_hw_init_dn_buf ( struct whc * whc ) { le_writeq ( whc -> dn_buf_dma , whc -> base + WUSBDNTSBUFADDR ) ; } 

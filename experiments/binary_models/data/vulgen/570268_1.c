@@ -1,0 +1,1 @@
+client_conn_ctx * cctx = store_get ( sizeof ( * cctx ) , GET_UNTAINTED ) ; cctx -> sock = - 1 ; DEBUG ( ) debug_printf_indent ( "readsock: allocated context\n" ) ; return cctx ; 

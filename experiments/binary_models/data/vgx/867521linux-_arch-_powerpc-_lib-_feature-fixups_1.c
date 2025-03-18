@@ -1,0 +1,1 @@
+fixup_entry { unsigned long mask ; unsigned long value ; long start_off ; long end_off ; long alt_start_off ; int alt_end_off ; } 

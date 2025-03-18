@@ -1,0 +1,1 @@
+START_TEST ( ) { M_threadid_t thread ; M_thread_attr_t * tattr ; M_threadid_t retid ; tattr = M_thread_attr_create ( ) ; M_thread_attr_set_create_joinable ( tattr , M_TRUE ) ; thread = M_thread_create ( tattr , thread_selfer , & retid ) ; M_thread_attr_destroy ( tattr ) ; M_thread_join ( thread ) ; ck_assert_msg ( thread == retid , "ID from create != ID from M_thread_self" ) ; } 

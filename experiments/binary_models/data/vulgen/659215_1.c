@@ -1,0 +1,1 @@
+static int32_t normalize_index ( const struct hdr_histogram * h , int32_t index ) { int32_t normalized_index ; int32_t adjustment = 0 ; normalized_index = index - h -> normalizing_index_offset ; if ( normalized_index < 0 ) { adjustment = h -> counts_len ; } if ( normalized_index >= h -> counts_len ) { adjustment = - h -> counts_len ; } return normalized_index + adjustment ; } 

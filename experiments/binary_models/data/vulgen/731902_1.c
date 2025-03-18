@@ -1,0 +1,1 @@
+static void i_cpr_save_ppages ( void ) { pfn_t * pphys , * plast ; caddr_t dst ; dst = ppage_buf ; plast = pphys_list + ppage_count ; for ( pphys = pphys_list ; pphys < plast ; pphys ++ ) { i_cpr_mapin ( cpr_vaddr , 1 , * pphys ) ; i_cpr_mapout ( cpr_vaddr , 1 ) ; dst += MMU_PAGESIZE ; } CPR_DEBUG ( CPR_DEBUG1 , "saved %ld prom pages\n" , ppage_count ) ; } 

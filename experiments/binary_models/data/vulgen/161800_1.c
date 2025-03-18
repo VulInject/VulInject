@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "KUnit tests for the UC-Logic driver" ) ; MODULE_LICENSE ( "GPL" ) ; 

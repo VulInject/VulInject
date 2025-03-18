@@ -1,0 +1,1 @@
+static void spdif_in_format ( struct spdif_in_dev * host , u32 format ) { switch ( format ) { case SNDRV_PCM_FORMAT_S16_LE : ctrl |= SPDIF_XTRACT_16BIT ; break ; case SNDRV_PCM_FORMAT_IEC958_SUBFRAME_LE : ctrl &= ~ SPDIF_XTRACT_16BIT ; break ; } writel ( ctrl , host -> io_base + SPDIF_IN_CTRL ) ; } 

@@ -1,0 +1,1 @@
+static void __gss_unhash_msg ( struct gss_upcall_msg * gss_msg ) { list_del_init ( & gss_msg -> list ) ; rpc_wake_up_status ( & gss_msg -> rpc_waitqueue , gss_msg -> msg . errno ) ; wake_up_all ( & gss_msg -> waitqueue ) ; } 

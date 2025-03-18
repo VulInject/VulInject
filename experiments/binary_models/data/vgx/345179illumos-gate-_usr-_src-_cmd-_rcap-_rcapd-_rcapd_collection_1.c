@@ -1,0 +1,1 @@
+static void lcollection_update_notification_cb ( char * col_type , char * name , int changes , uint64_t rss_cap , int mark ) { if ( changes & LCST_CAP_ZERO ) { debug ( "%s %s: %s\n" , col_type , name , ( changes & LCST_CAP_REMOVED ) ?"cap removed" : "uncapped" ) ; } else { debug ( "%s %s: cap: %llukB\n" , col_type , name , ( unsigned long long ) rss_cap ) ; } } 

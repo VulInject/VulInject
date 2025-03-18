@@ -1,0 +1,1 @@
+static struct nf_hook_entries * allocate_hook_entries_size ( u16 num ) { struct nf_hook_entries * e ; size_t alloc = sizeof ( * e ) + sizeof ( nf_hook_entry ) * num + sizeof ( nf_hook_ops * ) * num + sizeof ( nf_hook_entries_rcu_head ) ; if ( num == 0 ) { return in ; } e = kvzalloc ( alloc , GFP_KERNEL_ACCOUNT ) ; if ( e ) { e -> num_hook_entries = num ; } return e ; } 

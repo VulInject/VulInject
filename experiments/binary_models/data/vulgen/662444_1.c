@@ -1,0 +1,1 @@
+static void gimp_airbrush_motion ( GimpPaintCore * paint_core , GimpDrawable * drawable , GimpPaintOptions * paint_options , GimpSymmetry * sym ) static gboolean gimp_airbrush_timeout ( gpointer data ) G_DEFINE_TYPE ( , , ) static guint airbrush_signals [ LAST_SIGNAL ] { 0 } ; ; void gimp_airbrush_register ( Gimp * gimp , GimpPaintRegisterCallback callback ) { } 

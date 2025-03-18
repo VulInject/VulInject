@@ -1,0 +1,1 @@
+( ath9k_hw_resume_interrupts ) ; void ath9k_hw_enable_interrupts ( struct ath_hw * ah ) { struct ath_common * common = ath9k_hw_common ( ah ) ; if ( ! atomic_inc_and_test ( & ah -> intr_ref_cnt ) ) { ath_dbg ( common , INTERRUPT , "Do not enable IER ref count %d\n" , atomic_read ( & ah -> intr_ref_cnt ) ) ; return ; } __ath9k_hw_enable_interrupts ( ah ) ; } 

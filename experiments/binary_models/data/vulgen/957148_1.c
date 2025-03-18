@@ -1,0 +1,1 @@
+static int evswitch__fprintf_enoent ( FILE * fp , const char * evtype , const char * evname ) { int printed = fprintf ( fp , "ERROR: switch-%s event not found (%s)\n" , evtype , evname ) ; return printed += fprintf ( fp , "HINT:  use 'perf evlist' to see the available event names\n" ) ; } 

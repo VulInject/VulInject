@@ -1,0 +1,1 @@
+static void mmc_pwrseq_sd8787_pre_power_on ( struct mmc_host * host ) { struct mmc_pwrseq_sd8787 * pwrseq = to_pwrseq_sd8787 ( host -> pwrseq ) ; gpiod_set_value_cansleep ( pwrseq -> reset_gpio , 1 ) ; gpiod_set_value_cansleep ( pwrseq -> pwrdn_gpio , 1 ) ; } 

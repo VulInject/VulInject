@@ -1,0 +1,1 @@
+static irqreturn_t omap_mpu_timer1_interrupt ( int irq , void * dev_id ) { struct clock_event_device * evt = & clockevent_mpu_timer1 ; evt -> event_handler ( evt , NULL ) ; return IRQ_HANDLED ; } 

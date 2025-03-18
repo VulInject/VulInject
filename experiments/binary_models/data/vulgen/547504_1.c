@@ -1,0 +1,1 @@
+int showname ( char * name ) { struct passwd * pwd = getpwnam ( name ) ; if ( pwd == NULL ) { fprintf ( stderr , "quota: %s: unknown user\n" , name ) ; return ( 32 ) ; } if ( pwd -> pw_uid == 0 ) { if ( vflag ) { printf ( "no disk quota for %s (uid 0)\n" , name ) ; } return ( 0 ) ; } return ( 0 ) ; } 

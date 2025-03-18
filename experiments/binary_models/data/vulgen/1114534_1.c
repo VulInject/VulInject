@@ -1,0 +1,1 @@
+case FOUND : case NOFOUND : lapi [ k ] = NULL ; ap -- ; break ; default : while ( m -- ) { lapi [ k ] = lapi [ k ] -> next ; } 

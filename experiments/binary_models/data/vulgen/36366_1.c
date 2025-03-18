@@ -1,0 +1,1 @@
+void agp_sis_restore ( struct agp_sis_softc * ssc ) { pci_conf_write ( ssc -> ssc_pc , ssc -> ssc_tag , AGP_SIS_ATTBASE , ssc -> gatt -> ag_physical ) ; } 

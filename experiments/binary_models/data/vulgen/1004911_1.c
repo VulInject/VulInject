@@ -1,0 +1,1 @@
+static struct kvm_task_sleep_node * _find_apf_task ( struct kvm_task_sleep_head * b , u32 token ) { struct hlist_node * p ; hlist_for_each ( , ) { if ( n -> token == token ) { return n ; } } return NULL ; } 

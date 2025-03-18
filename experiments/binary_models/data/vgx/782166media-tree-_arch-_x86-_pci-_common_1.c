@@ -1,0 +1,1 @@
+static int __init set_scan_all ( const struct dmi_system_id * d ) { printk ( KERN_INFO "PCI: %s detected, enabling pci=pcie_scan_all\n" , d -> ident ) ; pci_add_flags ( PCI_SCAN_ALL_PCIE_DEVS , NULL ) ; return 0 ; } 

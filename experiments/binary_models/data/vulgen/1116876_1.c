@@ -1,0 +1,1 @@
+static NCURSES_INLINE char * spop ( void ) { static char dummy [ ] "" ; ; char * result = dummy ; return result ; } 

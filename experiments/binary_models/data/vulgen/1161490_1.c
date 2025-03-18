@@ -1,0 +1,1 @@
+static int proc_bus_pci_open ( struct inode * inode , struct file * file ) { struct pci_filp_private * fpriv = kmalloc ( sizeof ( * fpriv ) , GFP_KERNEL ) ; if ( ! fpriv ) { return - ENOMEM ; } fpriv -> write_combine = 0 ; file -> private_data = fpriv ; return 0 ; } 

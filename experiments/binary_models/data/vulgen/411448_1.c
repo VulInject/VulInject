@@ -1,0 +1,1 @@
+static void axg_spdifout_shutdown ( struct snd_pcm_substream * substream , struct snd_soc_dai * dai ) { struct axg_spdifout * priv = snd_soc_dai_get_drvdata ( dai ) ; } 

@@ -1,0 +1,1 @@
+static void * uat_rfcomm_channels_copy_cb ( void * dest , const void * source , size_t len _U_ ) { const uat_rfcomm_channels_t * o = ( const uat_rfcomm_channels_t * ) source ; uat_rfcomm_channels_t * d = ( uat_rfcomm_channels_t * ) dest ; d -> channel = o -> channel ; d -> payload_proto = o -> payload_proto ; return dest ; } 

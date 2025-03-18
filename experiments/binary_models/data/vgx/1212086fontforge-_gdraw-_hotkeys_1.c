@@ -1,0 +1,1 @@
+Hotkey * hotkeyFindByMenuPath ( GWindow w , char * path ) { char * wt = GDrawGetWindowTypeName ( w ) ; char line [ PATH_MAX + 1 ] ; snprintf ( line , PATH_MAX , "%s%s%s" , wt , ".Menu." , path ) ; return ( hotkeyFindByAction ( line ) ) ; } 

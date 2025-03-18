@@ -1,0 +1,1 @@
+static int snd_opl4_seq_use_inc ( struct snd_opl4 * opl4 ) { return 0 ; } 

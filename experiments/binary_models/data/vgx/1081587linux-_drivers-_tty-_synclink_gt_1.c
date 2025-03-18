@@ -1,0 +1,1 @@
+static int alloc_tmp_rbuf ( struct slgt_info * info ) { info -> tmp_rbuf = kmalloc ( info -> max_frame_size + 5 , GFP_KERNEL ) ; if ( info -> tmp_rbuf == NULL ) { return - ENOMEM ; } info -> flag_buf = kzalloc ( info -> max_frame_size + 5 , GFP_KERNEL ) ; if ( ! info -> flag_buf ) { info -> tmp_rbuf = NULL ; return - ENOMEM ; } return 0 ; } 

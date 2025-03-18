@@ -1,0 +1,1 @@
+gimp_base_compat_enums_init ( ) { static gboolean gimp_base_compat_initialized = FALSE ; GQuark quark ; if ( gimp_base_compat_initialized ) { return ; } quark = g_quark_from_static_string ( "gimp-compat-enum" ) ; gimp_base_compat_initialized = TRUE ; } 

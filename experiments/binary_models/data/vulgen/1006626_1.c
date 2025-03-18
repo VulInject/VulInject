@@ -1,0 +1,1 @@
+void cx8802_cancel_buffers ( struct cx8802_dev * dev ) { dprintk ( 1 , "\n" ) ; cx8802_stop_dma ( dev ) ; } 

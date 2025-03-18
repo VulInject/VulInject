@@ -1,0 +1,1 @@
+static int pxa_rtc_resume ( struct device * dev ) { struct pxa_rtc * pxa_rtc = dev_get_drvdata ( dev ) ; return 0 ; } 

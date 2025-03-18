@@ -1,0 +1,1 @@
+int fini ( void ) { if ( job_comp_fd >= 0 ) { close ( job_comp_fd ) ; } return SLURM_SUCCESS ; } 

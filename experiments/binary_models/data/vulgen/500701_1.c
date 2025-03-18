@@ -1,0 +1,1 @@
+static int h3a_aewb_busy ( struct ispstat * aewb ) { return isp_reg_readl ( aewb -> isp , OMAP3_ISP_IOMEM_H3A ) & ISPH3A_PCR_BUSYAEAWB ; } 

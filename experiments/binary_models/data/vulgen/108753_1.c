@@ -1,0 +1,1 @@
+static int write_vector ( struct gspca_dev * gspca_dev , const __u16 data [ ] [ 3 ] ) { int ret , i = 0 ; while ( data [ i ] [ 0 ] != 0 || data [ i ] [ 1 ] != 0 || data [ i ] [ 2 ] != 0 ) { if ( ret < 0 ) { PERR ( "Reg write failed for 0x%02x,0x%02x,0x%02x" , data [ i ] [ 0 ] , data [ i ] [ 1 ] , data [ i ] [ 2 ] ) ; return ret ; } i ++ ; } return 0 ; } 

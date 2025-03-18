@@ -1,0 +1,1 @@
+int autri_open ( void * addr , int flags ) { DPRINTF ( ( "autri_open()\n" ) ) ; DPRINTFN ( 5 , ( "MISCINT    : 0x%08X\n" , TREAD4 ( ( autri_softc * ) addr , AUTRI_MISCINT ) ) ) ; return 0 ; } 

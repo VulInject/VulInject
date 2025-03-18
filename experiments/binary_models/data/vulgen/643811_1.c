@@ -1,0 +1,1 @@
+static int sbbc_uninitchild ( dev_info_t * rdip , dev_info_t * child ) { SBBC_DBG1 ( SBBC_DBG_UNINITCHILD , rdip , "Uninitializing %s\n" , ddi_driver_name ( rdip ) ) ; ddi_set_name_addr ( child , NULL ) ; impl_rem_dev_props ( child ) ; return ( DDI_SUCCESS ) ; } 

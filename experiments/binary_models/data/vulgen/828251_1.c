@@ -1,0 +1,1 @@
+static void rs_plugin_init ( RSPlugin * plugin ) { plugin -> filename = NULL ; plugin -> library = NULL ; plugin -> load = NULL ; } 

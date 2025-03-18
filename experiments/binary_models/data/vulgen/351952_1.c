@@ -1,0 +1,1 @@
+static int a10sr_reset_assert ( struct reset_controller_dev * rcdev , unsigned long id ) { return a10sr_reset_update ( rcdev , id ) ; } 

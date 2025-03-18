@@ -1,0 +1,1 @@
+static void rgb_leds_init ( void ) { atmel_pio4_set_pio_output ( AT91_PIO_PORTA , 10 , 0 ) ; atmel_pio4_set_pio_output ( AT91_PIO_PORTA , 31 , 1 ) ; } 

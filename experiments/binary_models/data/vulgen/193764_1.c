@@ -1,0 +1,1 @@
+static void xlp_spi_sysctl_setup ( struct xlp_spi_priv * xspi ) { int cs ; for ( cs = 0 ; cs < XLP_SPI_MAX_CS ; cs ++ ) { xlp_spi_sysctl_write ( xspi , XLP_SPI_SYSCTRL , 0 ) ; } xlp_spi_sysctl_write ( xspi , XLP_SPI_SYSCTRL , XLP_SPI_SYS_PMEN ) ; } 

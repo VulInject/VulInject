@@ -1,0 +1,1 @@
+void omap_set_lcd_dma_b1_mirror ( int mirror ) { lcd_dma . mirror = mirror ; } 

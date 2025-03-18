@@ -1,0 +1,1 @@
+u16 qcafrm_create_footer ( u8 * buf ) { buf [ 0 ] = 0x55 ; buf [ 1 ] = 0x55 ; return QCAFRM_FOOTER_LEN ; } 

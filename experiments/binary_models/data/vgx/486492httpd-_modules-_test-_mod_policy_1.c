@@ -1,0 +1,1 @@
+static const char * set_environment ( cmd_parms * cmd , void * dconf , const char * environment , const char * log , const char * ignore ) { policy_conf * conf = dconf ; conf -> environment = environment ; conf -> environment_log = log ; conf -> environment_ignore = ignore ; return NULL ; } 

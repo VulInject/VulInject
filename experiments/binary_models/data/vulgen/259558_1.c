@@ -1,0 +1,1 @@
+static struct platform_driver inno_dsidphy_driver = { . driver = { . name = "inno-dsidphy" . of_match_table = of_match_ptr ( inno_dsidphy_of_match ) } . probe = inno_dsidphy_probe . remove = inno_dsidphy_remove } ; 

@@ -1,0 +1,1 @@
+( ilsel_enable_fixed ) ; void ilsel_disable ( unsigned int irq ) { cfs_time_t addr ; unsigned int tmp ; pr_notice ( "disabling ILSEL set %d\n" , irq ) ; addr = mk_ilsel_addr ( irq ) ; tmp = __raw_readw ( addr ) ; tmp &= ~ ( 0xf << mk_ilsel_shift ( irq ) ) ; __raw_writew ( tmp , addr ) ; clear_bit ( irq , & ilsel_level_map ) ; } 

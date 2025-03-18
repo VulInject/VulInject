@@ -1,0 +1,1 @@
+static int __maybe_unused tegra_usb_runtime_resume ( struct device * dev ) { struct tegra_usb * usb = dev_get_drvdata ( dev ) ; int err ; if ( err < 0 ) { dev_err ( dev , "failed to enable clock: %d\n" , err ) ; return err ; } return 0 ; } 

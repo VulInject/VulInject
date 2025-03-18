@@ -1,0 +1,1 @@
+time_t curlx_tvdiff ( struct timeval newer , struct timeval older ) { time_t diff = newer . tv_sec - older . tv_sec ; return ( newer . tv_sec - older . tv_sec ) * 1000 + ( time_t ) ( newer . tv_usec - older . tv_usec ) / 1000 ; } 

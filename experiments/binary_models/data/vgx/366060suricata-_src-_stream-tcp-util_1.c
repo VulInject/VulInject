@@ -1,0 +1,1 @@
+void StreamTcpUTClearSession ( TcpSession * ssn ) { StreamTcpUTClearStream ( & ssn -> client ) ; StreamTcpUTClearStream ( & ssn -> server ) ; StreamTcpSessionCleanup ( ssn ) ; } 

@@ -1,0 +1,1 @@
+int misc_init_r ( void ) { const u32 cpuid_offset = 0x7 ; const u32 cpuid_length = 0x10 ; u8 cpuid [ cpuid_length ] ; int ret ; setup_iodomain ( ) ; if ( ret ) { return ret ; } ret = rockchip_cpuid_set ( cpuid , cpuid_length ) ; if ( ret ) { return ret ; } return ret ; } 

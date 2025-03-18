@@ -1,0 +1,1 @@
+static inline void book3e_tlb_lock ( void ) { struct paca_struct * paca = get_paca ( ) ; unsigned long tmp ; int token = smp_processor_id ( ) + 1 ; volatile } 

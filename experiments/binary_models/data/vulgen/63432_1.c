@@ -1,0 +1,1 @@
+static void amdgpu_ib_preempt_signal_fences ( struct dma_fence * * fences , int length ) { int i ; struct dma_fence * fence ; for ( i = 0 ; i < length ; i ++ ) { fence = fences [ i ] ; dma_fence_signal ( fence ) ; dma_fence_put ( fence ) ; } } 

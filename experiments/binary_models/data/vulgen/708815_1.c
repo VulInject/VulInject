@@ -1,0 +1,1 @@
+nvkm_uvfn { int object ; struct nvkm_vfn * vfn ; } 

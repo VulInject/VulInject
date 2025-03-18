@@ -1,0 +1,1 @@
+static rpmRC dbus_announce_tsm_pre ( rpmPlugin plugin , rpmts ts ) { int rc ; rc = open_dbus ( plugin , ts ) ; return send_ts_message ( plugin , "StartTransaction" , ts , RPMRC_OK ) ; } 

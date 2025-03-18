@@ -1,0 +1,1 @@
+static char * log_buf = 0 ; static int log_wr , log_rd ; static bool log_newline ; static void uart_write_char ( char c ) { if ( log_mode == LOG_MODE_ON1 ) { uart_tx_one_char ( 1 , c ) ; } else { uart_tx_one_char ( 0 , c ) ; } } 

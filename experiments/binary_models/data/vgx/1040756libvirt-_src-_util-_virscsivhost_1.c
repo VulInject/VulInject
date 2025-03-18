@@ -1,0 +1,1 @@
+void virSCSIVHostDeviceFree ( virSCSIVHostDevice * dev ) { if ( ! dev ) { return ; } VIR_DEBUG ( "%s: freeing" , dev -> name ) ; g_free ( dev -> path ) ; g_free ( dev -> used_by_drvname ) ; g_free ( dev -> used_by_domname ) ; g_free ( dev ) ; } 

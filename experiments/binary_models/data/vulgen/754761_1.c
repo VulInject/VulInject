@@ -1,0 +1,1 @@
+u64 intel_gt_clock_interval_to_ns ( const struct intel_gt * gt , int count ) { return div_u64_roundup ( count * NSEC_PER_SEC , gt -> clock_frequency ) ; } 

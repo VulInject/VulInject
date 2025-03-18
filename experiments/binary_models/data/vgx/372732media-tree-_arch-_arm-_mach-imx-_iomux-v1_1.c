@@ -1,0 +1,1 @@
+static inline void imx_iomuxv1_set_ocr ( unsigned int port , unsigned int pin , unsigned int ocr ) { unsigned long shift = ( pin & 0xf ) << 1 ; cfs_time_t mask = 3 << shift ; unsigned long value = ocr << shift ; unsigned long offset = pin < 16 ?MXC_OCR1 ( port ) : MXC_OCR2 ( port ) ; imx_iomuxv1_rmwl ( offset , mask , value ) ; } 

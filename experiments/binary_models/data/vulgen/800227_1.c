@@ -1,0 +1,1 @@
+static void udbg_opal_putc ( char c ) { unsigned int termno = hvc_opal_boot_termno ; int count = - 1 ; if ( c == '\n' ) { udbg_opal_putc ( '\r' ) ; } { switch ( hvc_opal_boot_priv . proto ) { case HV_PROTOCOL_RAW : count = opal_put_chars ( termno , & c , 1 ) ; break ; case HV_PROTOCOL_HVSI : break ; } opal_flush_console ( termno ) ; } count == 0 || count == - EAGAIN ; } 

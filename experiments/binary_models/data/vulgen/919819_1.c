@@ -1,0 +1,1 @@
+static void ieee80211_radio_led_activate ( struct led_classdev * led_cdev ) { struct ieee80211_local * local = container_of ( led_cdev -> trigger , ieee80211_local , radio_led ) ; } 

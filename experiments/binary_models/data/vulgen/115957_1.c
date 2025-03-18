@@ -1,0 +1,1 @@
+static struct resource gpio_resources [ ] { { . start = TC3589x_INT_GPIIRQ . end = TC3589x_INT_GPIIRQ . flags = IORESOURCE_IRQ } } ; ; 

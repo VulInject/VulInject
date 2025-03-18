@@ -1,0 +1,1 @@
+int sprint_OID ( enum OID oid , char * buffer , size_t bufsize ) { int ret ; BUG_ON ( oid >= OID__NR ) ; BUG_ON ( ret == - EBADMSG ) ; return ret ; } 

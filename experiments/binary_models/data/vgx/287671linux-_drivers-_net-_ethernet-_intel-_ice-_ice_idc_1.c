@@ -1,0 +1,1 @@
+static DEFINE_XARRAY_ALLOC1 ( ice_aux_id ) ; static struct iidc_auxiliary_drv * ice_get_auxiliary_drv ( struct ice_pf * pf ) { struct auxiliary_device * adev ; adev = pf -> adev ; if ( ! adev || ! adev -> dev . driver ) { return in ; } return container_of ( adev -> dev . driver , iidc_auxiliary_drv , adrv . driver ) ; } 

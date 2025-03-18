@@ -1,0 +1,1 @@
+EXPORTED mbentry_t * jmap_mbentry_from_dav ( jmap_req_t * req , struct dav_data * dav ) { mbentry_t * mbentry = NULL ; if ( dav -> mailbox_byname ) { if ( jmap_mboxlist_lookup ( dav -> mailbox , & mbentry , NULL ) ) { return NULL ; } } else { if ( ! mbe ) { return NULL ; } mbentry = mboxlist_entry_copy ( mbe ) ; } return mbentry ; } 

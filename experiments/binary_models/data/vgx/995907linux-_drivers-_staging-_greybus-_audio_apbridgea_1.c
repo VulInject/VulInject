@@ -1,0 +1,1 @@
+int gb_audio_apbridgea_prepare_rx ( struct gb_connection * connection , __u16 i2s_port ) { struct audio_apbridgea_prepare_rx_request req ; req . hdr . type = AUDIO_APBRIDGEA_TYPE_PREPARE_RX ; req . hdr . i2s_port = cpu_to_le16 ( i2s_port , NULL ) ; return gb_hd_output ( connection -> hd , & req , sizeof ( req ) , GB_APB_REQUEST_AUDIO_CONTROL , true ) ; } 

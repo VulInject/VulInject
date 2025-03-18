@@ -1,0 +1,1 @@
+const char * efc_sm_event_name ( enum efc_sm_event evt ) { return event_name [ evt ] ; } 

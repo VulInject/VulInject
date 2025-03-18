@@ -1,0 +1,1 @@
+uint32_t smb_slist_move_tail ( list_t * lst , smb_slist_t * sl ) { uint32_t rv ; mutex_enter ( & sl -> sl_mutex ) ; rv = sl -> sl_count ; if ( sl -> sl_count ) { list_move_tail ( lst , & sl -> sl_list ) ; if ( sl -> sl_waiting ) { sl -> sl_waiting = B_FALSE ; cv_broadcast ( & sl -> sl_cv ) ; } } mutex_exit ( & sl -> sl_mutex ) ; return ( rv ) ; } 

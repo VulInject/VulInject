@@ -1,0 +1,1 @@
+FT_LOCAL_DEF ( ) tt_face_load_cpal ( , ) { FT_Error error ; FT_Memory memory = face -> root . memory ; FT_Byte * table = NULL ; FT_Byte * p = NULL ; Cpal * cpal = NULL ; FT_ULong colors_offset ; FT_ULong table_size ; error = face -> goto_table ( face , TTAG_CPAL , stream , & table_size ) ; if ( error ) { NoCpal } } 

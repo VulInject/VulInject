@@ -1,0 +1,1 @@
+static void mtk_star_update_stat ( struct mtk_star_priv * priv , unsigned int reg , u64 * stat ) { int val ; regmap_read ( priv -> regs , reg , & val ) ; * stat += val ; } 

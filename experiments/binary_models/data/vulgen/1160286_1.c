@@ -1,0 +1,1 @@
+static int __maybe_unused tegra_pwm_runtime_resume ( struct device * dev ) { struct tegra_pwm_chip * pc = dev_get_drvdata ( dev ) ; int err ; err = pinctrl_pm_select_default_state ( dev ) ; if ( err ) { return err ; } err = clk_prepare_enable ( pc -> clk ) ; if ( err ) { return err ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static int vmw_pci_resume ( struct pci_dev * pdev ) { pci_set_power_state ( pdev , PCI_D0 ) ; pci_restore_state ( pdev , NULL ) ; return pci_enable_device ( pdev ) ; } 

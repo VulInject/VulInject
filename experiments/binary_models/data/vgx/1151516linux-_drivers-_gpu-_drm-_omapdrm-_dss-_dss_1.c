@@ -1,0 +1,1 @@
+static void dss_dump_clocks ( struct dss_device * dss , struct seq_file * s ) { const char * fclk_name ; unsigned long fclk_rate ; seq_printf ( s , "- DSS -\n" ) ; fclk_name = dss_get_clk_source_name ( DSS_CLK_SRC_FCK ) ; fclk_rate = clk_get_rate ( dss -> dss_clk ) ; seq_printf ( s , "%s = %lu\n" , fclk_name , fclk_rate ) ; dss_runtime_put ( dss ) ; } 

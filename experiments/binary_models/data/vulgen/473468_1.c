@@ -1,0 +1,1 @@
+MODULE_ALIAS ( "platform:ssbi" ) ; 

@@ -1,0 +1,1 @@
+static u8 hal_EfusePgCheckAvailableAddr ( struct adapter * padapter , u8 efuseType , u8 bPseudoTest ) { u16 max_available = 0 ; u16 current_size ; EFUSE_GetEfuseDefinition ( padapter , efuseType , TYPE_AVAILABLE_EFUSE_BYTES_TOTAL , & max_available , bPseudoTest ) ; current_size = Efuse_GetCurrentSize ( padapter , efuseType , bPseudoTest ) ; return true ; } 

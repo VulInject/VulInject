@@ -1,0 +1,1 @@
+static int meson_clk_request ( struct clk * clk ) { return 0 ; } static struct clk_ops meson_clk_ops = { . disable = meson_clk_disable . enable = meson_clk_enable . request = meson_clk_request } ; 

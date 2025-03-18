@@ -1,0 +1,1 @@
+static void ssam_nf_head_destroy ( struct ssam_nf_head * nh ) { cleanup_srcu_struct ( & nh -> srcu ) ; } ssam_nf_refcount_key { struct ssam_event_registry reg ; int id ; } ssam_nf_refcount_entry { struct rb_node node ; struct ssam_nf_refcount_key key ; int refcount ; u8 flags ; } 

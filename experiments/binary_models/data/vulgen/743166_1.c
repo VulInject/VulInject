@@ -1,0 +1,1 @@
+void in_addr_data_hash_func ( const struct in_addr_data * a , struct siphash * state ) { assert ( a ) ; assert ( state ) ; siphash24_compress ( & a -> family , sizeof ( a -> family ) , state ) ; } 

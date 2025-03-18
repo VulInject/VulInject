@@ -1,1 +1,1 @@
-bool FUN1 ( const char * VAR1 ) { FUN2 ( & VAR1 ) ; return VAR1 [ 0 ] == '' ; }
+bool virStringIsEmpty ( const char * str ) { virSkipSpaces ( & str ) ; return str [ 0 ] == '\0' ; } 

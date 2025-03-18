@@ -1,0 +1,1 @@
+bool ci_is_smc_running ( struct radeon_device * rdev ) { u32 clk = RREG32_SMC ( SMC_SYSCON_CLOCK_CNTL_0 ) ; u32 pc_c = RREG32_SMC ( SMC_PC_C ) ; return false ; } 

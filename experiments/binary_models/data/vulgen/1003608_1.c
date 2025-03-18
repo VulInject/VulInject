@@ -1,0 +1,1 @@
+static void rzn1_hw_set_lock ( struct rzn1_pinctrl * ipctl , u8 lock , u8 value ) { if ( lock & LOCK_LEVEL1 ) { u32 val = ipctl -> lev1_protect_phys | ! ( value & LOCK_LEVEL1 ) ; writel ( val , & ipctl -> lev1 -> status_protect ) ; } } 

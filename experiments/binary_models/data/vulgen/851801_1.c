@@ -1,0 +1,1 @@
+static int temp_to_reg ( int val ) { return ( val < 0 ?val + 0x100 * 1000 : val ) / 1000 ; } temp_index { t_input1 = 0 , t_input2 , t_low2 , t_high2 , t_crit2 , t_hyst2 , t_num_regs } max1619_data { struct i2c_client * client ; struct mutex update_lock ; bool valid ; unsigned long last_updated ; u8 temp [ t_num_regs ] ; int alarms ; } 

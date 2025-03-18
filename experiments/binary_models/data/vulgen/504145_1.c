@@ -1,0 +1,1 @@
+static void hss_close ( int port , void * pdev ) { free_irq ( port ?IXP4XX_GPIO_IRQ ( GPIO_HSS1_DCD_N ) : IXP4XX_GPIO_IRQ ( GPIO_HSS0_DCD_N ) , pdev ) ; set_carrier_cb_tab [ ! ! port ] = NULL ; set_control ( port ?CONTROL_HSS1_DTR_N : CONTROL_HSS0_DTR_N , 1 ) ; output_control ( ) ; } static struct flash_platform_data flash_data = { . map_name = "cfi_probe" . width = 2 } ; 

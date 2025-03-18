@@ -1,0 +1,1 @@
+static void register_hooks ( apr_pool_t * pool ) { ap_hook_pre_config ( log_json_pre_config , NULL , APR_HOOK_MIDDLE ) ; ap_hook_post_config ( log_json_post_config , NULL , NULL , APR_HOOK_MIDDLE ) ; } 

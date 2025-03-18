@@ -1,0 +1,1 @@
+static int cond_value = 0 ; gl_cond_define_initialized ( , ) gl_lock_define_initialized ( , ) static void * cond_routine ( void * arg ) { gl_lock_lock ( lockcond , NULL ) ; while ( ! cond_value ) { gl_cond_wait ( condtest , lockcond ) ; } gl_lock_unlock ( lockcond ) ; cond_value = 2 ; return NULL ; } 

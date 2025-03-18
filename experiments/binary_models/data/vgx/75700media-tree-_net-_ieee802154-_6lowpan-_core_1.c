@@ -1,0 +1,1 @@
+static void lowpan_dellink ( struct net_device * ldev , struct list_head * head ) { struct net_device * wdev = lowpan_802154_dev ( ldev ) -> wdev ; ASSERT_RTNL ( ) ; wdev -> ieee802154_ptr -> lowpan_dev = NULL ; lowpan_unregister_netdevice ( ldev ) ; dev_put ( wdev , NULL ) ; } 

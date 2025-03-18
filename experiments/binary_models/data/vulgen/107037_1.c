@@ -1,0 +1,1 @@
+struct nfp_port * nfp_port_alloc ( struct nfp_app * app , enum nfp_port_type type , struct net_device * netdev ) { struct nfp_port * port ; port = kzalloc ( sizeof ( * port ) , GFP_KERNEL ) ; port -> netdev = netdev ; port -> type = type ; port -> app = app ; list_add_tail ( & port -> port_list , & app -> pf -> ports ) ; return port ; } 

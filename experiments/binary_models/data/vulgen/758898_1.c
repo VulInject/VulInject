@@ -1,0 +1,1 @@
+static av_cold int alac_encode_close ( AVCodecContext * avctx ) { AlacEncodeContext * s = avctx -> priv_data ; return 0 ; } 

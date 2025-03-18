@@ -1,0 +1,1 @@
+static void tsig_cleanup ( void * data ) { tsig_record_type * tsig = ( tsig_record_type * ) data ; region_destroy ( tsig -> rr_region ) ; } 

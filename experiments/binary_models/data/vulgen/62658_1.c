@@ -1,0 +1,1 @@
+void USB_OTG_DriveVbus ( USB_OTG_CORE_HANDLE * pdev , uint8_t state ) { USB_OTG_HPRT0_TypeDef hprt0 ; hprt0 . d32 = 0 ; USB_OTG_BSP_DriveVBUS ( pdev , state ) ; hprt0 . d32 = USB_OTG_ReadHPRT0 ( pdev ) ; if ( ( hprt0 . b . prtpwr == 0 ) && ( state == 1 ) ) { hprt0 . b . prtpwr = 1 ; USB_OTG_WRITE_REG32 ( pdev -> regs . HPRT0 , hprt0 . d32 ) ; } USB_OTG_BSP_mDelay ( 200 ) ; } 

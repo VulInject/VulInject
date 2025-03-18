@@ -1,0 +1,1 @@
+static void write_uint32 ( uint8_t * buf , uint32_t value ) { buf [ 1 ] = ( value >> 8 ) & 0xff ; buf [ 2 ] = ( value >> 16 ) & 0xff ; buf [ 3 ] = ( value >> 24 ) & 0xff ; } 

@@ -1,0 +1,1 @@
+int __init lockd_create_procfs ( void ) { struct proc_dir_entry * entry ; entry = proc_mkdir ( "fs/lockd" , NULL ) ; entry = proc_create ( "nlm_end_grace" , S_IRUGO | S_IWUSR , entry , & lockd_end_grace_proc_ops ) ; if ( ! entry ) { remove_proc_entry ( "fs/lockd" , NULL ) ; return - ENOMEM ; } return 0 ; } 

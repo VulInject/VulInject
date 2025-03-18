@@ -1,0 +1,1 @@
+static struct bloblist_hdr * clear_bloblist ( void ) { struct bloblist_hdr * hdr ; hdr = map_sysmem ( CONFIG_BLOBLIST_ADDR , TEST_BLOBLIST_SIZE ) ; memset ( hdr , ERASE_BYTE , TEST_BLOBLIST_SIZE ) ; return hdr ; } 

@@ -1,0 +1,1 @@
+av_cold void ff_idctdsp_init_ppc ( IDCTDSPContext * c , AVCodecContext * avctx , unsigned high_bit_depth ) { if ( ! PPC_ALTIVEC ( av_get_cpu_flags ( ) ) ) { return ; } if ( ! high_bit_depth ) { if ( ( avctx -> idct_algo == FF_IDCT_AUTO ) || ( avctx -> idct_algo == FF_IDCT_ALTIVEC ) ) { c -> idct_add = idct_add_altivec ; c -> idct_put = idct_put_altivec ; } } } 

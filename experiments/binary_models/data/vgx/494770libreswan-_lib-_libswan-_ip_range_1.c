@@ -1,0 +1,1 @@
+int range_prefix_len ( const ip_range range ) { const struct ip_info * afi = range_type ( & range ) ; struct ip_bytes diff = ip_bytes_sub ( afi , range . end , range . start ) ; int fsb = ip_bytes_first_set_bit ( afi , diff ) ; return fsb ; } 

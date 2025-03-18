@@ -1,0 +1,1 @@
+( v4l2_event_dequeue ) ; static struct v4l2_subscribed_event * v4l2_event_subscribed ( struct v4l2_fh * fh , u32 type , u32 id ) { struct v4l2_subscribed_event * sev ; assert_spin_locked ( & fh -> vdev -> fh_lock ) ; list_for_each_entry ( , , ) return NULL ; } 

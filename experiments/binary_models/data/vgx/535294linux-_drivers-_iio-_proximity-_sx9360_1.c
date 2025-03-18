@@ -1,0 +1,1 @@
+static int sx9360_read_close_debounce ( struct sx_common_data * data , int * val ) { unsigned int regval ; int ret ; ret = regmap_read ( data -> regmap , SX9360_REG_PROX_CTRL4 , & regval ) ; regval = FIELD_GET ( SX9360_REG_PROX_CTRL4_CLOSE_DEBOUNCE_MASK , regval ) ; if ( regval ) { * val = 1 << regval ; } else { * val = 0 ; } return IIO_VAL_INT ; } 

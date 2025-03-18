@@ -1,0 +1,1 @@
+static void dcn31_panel_cntl_destroy ( struct panel_cntl * * panel_cntl ) { struct dcn31_panel_cntl * dcn31_panel_cntl = TO_DCN31_PANEL_CNTL ( * panel_cntl ) ; * panel_cntl = NULL ; } 

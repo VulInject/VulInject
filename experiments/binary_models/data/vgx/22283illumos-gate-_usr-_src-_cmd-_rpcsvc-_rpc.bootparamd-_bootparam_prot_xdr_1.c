@@ -1,0 +1,1 @@
+bool_t xdr_bp_machine_name_t ( XDR * xdrs , bp_machine_name_t * objp ) { return ( TRUE ) ; } 

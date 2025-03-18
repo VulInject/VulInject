@@ -1,0 +1,1 @@
+int sd_netlink_message_append_data ( sd_netlink_message * m , uint16_t attr_type , const void * data , size_t len ) { int r ; assert_return ( m , - EINVAL ) ; r = add_rtattr ( m , attr_type , data , len ) ; if ( r < 0 ) { return r ; } return 0 ; } 

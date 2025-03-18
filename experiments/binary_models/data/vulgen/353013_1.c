@@ -1,0 +1,1 @@
+void fsg_common_remove_lun ( struct fsg_lun * lun ) { if ( device_is_registered ( & lun -> dev ) ) { device_unregister ( & lun -> dev ) ; } fsg_lun_close ( lun ) ; } 

@@ -1,0 +1,1 @@
+static int panel_lvds_unprepare ( struct drm_panel * panel ) { struct panel_lvds * lvds = to_panel_lvds ( panel ) ; if ( lvds -> enable_gpio ) { gpiod_set_value_cansleep ( lvds -> enable_gpio , 0 ) ; } return 0 ; } 

@@ -1,0 +1,1 @@
+gimp_gradient_select_button_draw_interior ( ) { GimpGradientSelectButton * self_as_gradient_select ; g_debug ( "%s" , G_STRFUNC ) ; g_return_if_fail ( GIMP_IS_GRADIENT_SELECT_BUTTON ( self ) ) ; self_as_gradient_select = GIMP_GRADIENT_SELECT_BUTTON ( self ) ; gtk_widget_queue_draw ( self_as_gradient_select -> preview , NULL ) ; } 

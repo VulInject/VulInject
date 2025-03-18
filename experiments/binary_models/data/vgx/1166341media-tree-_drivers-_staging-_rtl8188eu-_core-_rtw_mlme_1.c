@@ -1,0 +1,1 @@
+void rtw_free_assoc_resources ( struct adapter * adapter ) { struct mlme_priv * pmlmepriv = & adapter -> mlmepriv ; spin_lock_bh ( & pmlmepriv -> scanned_queue . lock ) ; spin_unlock_bh ( & pmlmepriv -> scanned_queue . lock ) ; } 

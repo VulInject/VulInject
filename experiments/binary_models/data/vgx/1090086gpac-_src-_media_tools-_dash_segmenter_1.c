@@ -1,0 +1,1 @@
+GF_Err gf_dasher_set_initial_isobmf ( GF_DASHSegmenter * dasher , u32 initial_moof_sn , u64 initial_tfdt ) { dasher -> initial_moof_sn = initial_moof_sn ; dasher -> initial_tfdt = initial_tfdt ; return GF_OK ; } 

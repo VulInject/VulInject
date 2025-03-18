@@ -1,0 +1,1 @@
+static debug_info_t * zfcp_dbf_reg ( const char * name , int size , int rec_size ) { struct debug_info * d ; d = debug_register ( name , size , 1 , rec_size ) ; debug_register_view ( d , & debug_hex_ascii_view ) ; debug_set_level ( d , dbflevel ) ; return d ; } 

@@ -1,0 +1,1 @@
+ppp_header { u_char control ; u_int16 proto ; } 

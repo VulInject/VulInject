@@ -1,0 +1,1 @@
+void atheme_object_init ( struct atheme_object * obj , const char * name , atheme_object_destructor_fn des ) { obj -> destructor = des ; obj -> refcount = 1 ; mowgli_node_add ( obj , & obj -> dnode , & object_list ) ; } 

@@ -1,0 +1,1 @@
+static void cd9660_free_structure ( cd9660node * root ) { cd9660node * cn ; while ( ( cn = TAILQ_FIRST ( & root -> cn_children ) ) != NULL ) { TAILQ_REMOVE ( & root -> cn_children , cn , cn_next_child ) ; cd9660_free_structure ( cn ) ; } } ptq_entry { TAILQ_ENTRY ( ) ptq cd9660node * node ; } , * n 

@@ -1,0 +1,1 @@
+void __svc_cleanup_door_xprts ( void ) { SVCXPRT_LIST * l , * tmp = NULL ; ( void ) mutex_lock ( & svc_door_mutex ) ; for ( l = dxlist ; l != NULL ; l = tmp ) { tmp = l -> next ; } ( void ) mutex_unlock ( & svc_door_mutex ) ; } 

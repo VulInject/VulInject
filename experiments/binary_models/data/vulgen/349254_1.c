@@ -1,0 +1,1 @@
+shoot_dialog_add_hint ( , , ) { GtkWidget * label ; gimp_label_set_attributes ( GTK_LABEL ( label ) , PANGO_ATTR_STYLE , PANGO_STYLE_ITALIC , - 1 ) ; gtk_notebook_insert_page ( notebook , label , NULL , type ) ; gtk_widget_show ( label ) ; } 

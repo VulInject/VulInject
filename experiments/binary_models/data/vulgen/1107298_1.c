@@ -1,0 +1,1 @@
+static M_bool nop_send_failed_cb ( const M_hash_dict_t * a , const char * b , size_t c , M_bool d , void * e ) { ( void ) b ; ( void ) c ; ( void ) d ; ( void ) e ; return M_TRUE ; } 

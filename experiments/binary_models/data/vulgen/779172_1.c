@@ -1,0 +1,1 @@
+static int __init asp834x_probe ( int ) { return of_machine_is_compatible ( "analogue-and-micro,asp8347e" ) ; } 

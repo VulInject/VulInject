@@ -1,0 +1,1 @@
+static inline void iopte_make_dummy ( struct iommu * iommu , iopte_t * iopte ) { unsigned long val = iopte_val ( * iopte ) ; val &= ~ IOPTE_PAGE ; iopte_val ( * iopte ) = val ; } 

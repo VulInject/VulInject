@@ -1,0 +1,1 @@
+nr_entries = mod -> printk_index_size ; { entries = __start_printk_index ; nr_entries = __stop_printk_index - __start_printk_index ; } if ( pos >= nr_entries ) { return in ; } return entries [ pos ] ; 

@@ -1,0 +1,1 @@
+static void * creator_func ( void * ptr ) { unsigned int order = RADIX_TREE_MAP_SHIFT - 1 ; struct radix_tree_root * tree = ptr ; int i ; for ( i = 0 ; i < 10000 ; i ++ ) { item_insert_order ( tree , 0 , order ) ; item_delete_rcu ( tree , 0 ) ; } return NULL ; } 

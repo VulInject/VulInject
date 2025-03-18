@@ -1,0 +1,1 @@
+int leaveok ( WINDOW * win , bool bf ) { return ( OK ) ; } 

@@ -1,0 +1,1 @@
+static struct mrc_data_container * next_mrc_block ( struct mrc_data_container * cache ) { u8 * region_ptr = ( u8 * ) cache ; return ( mrc_data_container * ) region_ptr ; } 

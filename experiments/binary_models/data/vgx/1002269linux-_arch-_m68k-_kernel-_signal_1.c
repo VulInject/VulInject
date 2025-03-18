@@ -1,0 +1,1 @@
+static inline void push_cache ( unsigned long vaddr ) { } sigframe { char __user * pretcode ; int sig ; int code ; struct sigcontext __user * psc ; int retcode [ 8 ] ; unsigned long extramask [ _NSIG_WORDS - 1 ] ; struct sigcontext sc ; } 

@@ -1,0 +1,1 @@
+static void pwm_vibrator_close ( struct input_dev * input ) { struct pwm_vibrator * vibrator = input_get_drvdata ( input ) ; cancel_work_sync ( & vibrator -> play_work ) ; pwm_vibrator_stop ( vibrator , NULL ) ; } 

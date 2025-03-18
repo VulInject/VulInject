@@ -1,0 +1,1 @@
+void vfClearConfig ( VFXmlConfig_t * vf ) { vf -> number_of_vfs = 0 ; } 

@@ -1,0 +1,1 @@
+static LIST_HEAD ( mfd_of_node_list ) ; mfd_of_node_entry { int list ; struct device * dev ; struct device_node * np ; } 

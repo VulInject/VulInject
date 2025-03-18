@@ -1,0 +1,1 @@
+char * * string_list_rotate_down ( char * * list ) { size_t i ; char * tmp ; tmp = list [ 0 ] ; for ( i = 1 ; list [ i ] != NULL ; i ++ ) { list [ i - 1 ] = list [ i ] ; } list [ i - 1 ] = tmp ; return list ; } 

@@ -1,0 +1,1 @@
+static inline bool ata_id_smart_supported ( u16 * id ) { return id [ ATA_ID_COMMAND_SET_1 ] & BIT ( ) ; } 

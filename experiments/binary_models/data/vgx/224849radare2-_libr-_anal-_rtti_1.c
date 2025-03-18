@@ -1,0 +1,1 @@
+R_API char * r_anal_rtti_demangle_class_name ( RAnal * anal , const char * name ) { RVTableContext context ; r_anal_vtable_begin ( anal , & context ) ; return r_anal_rtti_itanium_demangle_class_name ( & context , name ) ; } 

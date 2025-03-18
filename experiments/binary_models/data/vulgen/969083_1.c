@@ -1,0 +1,1 @@
+( nand_ecc_sw_bch_init_ctx ) ; void nand_ecc_sw_bch_cleanup_ctx ( struct nand_device * nand ) { struct nand_ecc_sw_bch_conf * engine_conf = nand -> ecc . ctx . priv ; if ( engine_conf ) { nand_ecc_sw_bch_cleanup ( nand ) ; kfree ( engine_conf -> calc_buf ) ; kfree ( engine_conf -> code_buf ) ; kfree ( engine_conf ) ; } } 

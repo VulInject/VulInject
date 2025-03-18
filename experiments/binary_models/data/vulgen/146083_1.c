@@ -1,0 +1,1 @@
+static void show_offset ( struct seq_file * m , int clockid , struct timespec64 * ts ) { char * clock ; switch ( clockid ) { case CLOCK_BOOTTIME : clock = "boottime" ; break ; case CLOCK_MONOTONIC : clock = "monotonic" ; break ; default : clock = "unknown" ; break ; } } 

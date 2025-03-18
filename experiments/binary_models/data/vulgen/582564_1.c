@@ -1,0 +1,1 @@
+gimp_canvas_rectangle_draw ( , ) { GimpCanvasRectanglePrivate gdouble x , y ; gdouble w , h ; gimp_canvas_rectangle_transform ( item , & x , & y , & w , & h ) ; cairo_rectangle ( cr , x , y , w , h ) ; if ( private -> filled ) { _gimp_canvas_item_fill ( item , cr ) ; } else { _gimp_canvas_item_stroke ( item , cr ) ; } } 

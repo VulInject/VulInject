@@ -1,0 +1,1 @@
+static int fsl_otg_start_hnp ( struct usb_otg * otg ) { struct fsl_otg * otg_dev ; otg_dev = container_of ( otg -> usb_phy , fsl_otg , phy ) ; if ( otg_dev != fsl_otg_dev ) { return - ENODEV ; } pr_debug ( "start_hnp...\n" ) ; otg_dev -> fsm . a_bus_req = 0 ; otg_statemachine ( & otg_dev -> fsm ) ; return 0 ; } 

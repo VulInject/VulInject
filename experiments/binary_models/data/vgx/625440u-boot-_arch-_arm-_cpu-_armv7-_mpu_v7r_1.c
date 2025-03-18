@@ -1,0 +1,1 @@
+void enable_mpu ( void ) { u32 reg ; reg = get_cr ( ) ; reg |= CR_M ; dsb ( ) ; set_cr ( reg , NULL ) ; isb ( ) ; } 

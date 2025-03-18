@@ -1,0 +1,1 @@
+void __kprobes simulate_blx2bx ( probes_opcode_t insn , struct arch_probes_insn * asi , struct pt_regs * regs ) { int rm = insn & 0xf ; if ( insn & ( 1 << 5 ) ) { regs -> ARM_lr = ( long ) regs -> ARM_pc ; } regs -> ARM_pc = rmv & ~ 0x1 ; regs -> ARM_cpsr &= ~ PSR_T_BIT ; if ( rmv & 0x1 ) { regs -> ARM_cpsr |= PSR_T_BIT ; } } 

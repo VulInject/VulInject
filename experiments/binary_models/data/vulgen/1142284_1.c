@@ -1,0 +1,1 @@
+void mlx5dr_dbg_uninit_dump ( struct mlx5dr_domain * dmn ) { debugfs_remove_recursive ( dmn -> dump_info . steering_debugfs ) ; } 

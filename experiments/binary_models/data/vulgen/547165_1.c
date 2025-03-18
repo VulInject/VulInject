@@ -1,0 +1,1 @@
+static int ip22_be_handler ( struct pt_regs * regs , int is_fixup ) { if ( is_fixup ) { return MIPS_BE_FIXUP ; } print_buserr ( ) ; return MIPS_BE_FATAL ; } 

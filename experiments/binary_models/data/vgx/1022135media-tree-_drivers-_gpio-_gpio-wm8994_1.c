@@ -1,0 +1,1 @@
+static int wm8994_gpio_get ( struct gpio_chip * chip , unsigned offset ) { struct wm8994_gpio * wm8994_gpio = gpiochip_get_data ( chip ) ; struct wm8994 * wm8994 = wm8994_gpio -> wm8994 ; int ret ; ret = wm8994_reg_read ( wm8994 , WM8994_GPIO_1 + offset ) ; if ( ret & WM8994_GPN_LVL ) { return 1 ; } else { return 0 ; } } 

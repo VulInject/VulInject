@@ -1,0 +1,1 @@
+static __dead void usage ( void ) { fprintf ( stderr , "usage: %s [-c count]\n" , getprogname ( ) ) ; fprintf ( stderr , "count is number of theads, between 2 and 26\n" ) ; } 

@@ -1,0 +1,1 @@
+int getnm ( p , min ) int * p , min ; { int i ; eat ( ' ' ) ; if ( skip ( ) ) { return ( 0 ) ; } i = atoi ( ) ; if ( nonumb ) { return ( 0 ) ; } * p = max ( i , min ) ; return ( 0 ) ; } 

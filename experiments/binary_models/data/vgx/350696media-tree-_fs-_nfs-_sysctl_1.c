@@ -1,0 +1,1 @@
+int nfs_register_sysctl ( void ) { nfs_callback_sysctl_table = register_sysctl_table ( nfs_cb_sysctl_root ) ; return 0 ; } 

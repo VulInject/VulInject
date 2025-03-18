@@ -1,0 +1,1 @@
+static strarray_t * _array_from_intname ( strarray_t * a ) { int i ; for ( i = 0 ; i < strarray_size ( a ) ; i ++ ) { char * p ; for ( p = a -> data [ i ] ; * p ; p ++ ) { switch ( * p ) { case '^' : * p = '.' ; break ; default : break ; } } } return a ; } 

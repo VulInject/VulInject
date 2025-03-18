@@ -1,0 +1,1 @@
+__kernel_size_t __clear_user ( void * to , __kernel_size_t n ) { return 0 ; } 

@@ -1,0 +1,1 @@
+static struct selector * alloc_selector ( void ) { struct selector * s = kmalloc ( sizeof ( * s ) , GFP_KERNEL ) ; if ( s ) { INIT_LIST_HEAD ( & s -> valid_paths ) ; INIT_LIST_HEAD ( & s -> invalid_paths ) ; } return s ; } 

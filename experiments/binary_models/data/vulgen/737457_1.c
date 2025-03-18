@@ -1,0 +1,1 @@
+void alpha_shared_intr_set_private ( intr , num , v ) alpha_shared_intr * intr ; unsigned int num ; void * v ; { } 

@@ -1,0 +1,1 @@
+char * do_replace_cntrl_chars ( char * str , char c ) { if ( str ) { int i ; for ( i = 0 ; str [ i ] ; i ++ ) { if ( iscntrl ( ( unsigned char ) str [ i ] ) ) { str [ i ] = c ; } } } return str ; } 

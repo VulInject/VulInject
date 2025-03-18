@@ -1,0 +1,1 @@
+char * strpbrk ( const char * string , const char * brkset ) { const char * p ; { for ( p = brkset ; * p != '\0' && * p != * string ; ++ p ) { } } * string ++ ; return ( NULL ) ; } 

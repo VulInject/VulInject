@@ -1,0 +1,1 @@
+int devlink_port_register ( struct devlink * devlink , struct devlink_port * devlink_port , unsigned int port_index ) { int err ; devl_lock ( devlink ) ; devl_unlock ( devlink ) ; return err ; } 

@@ -1,0 +1,1 @@
+av_cold void ff_pullup_init_x86 ( PullupContext * s ) { int cpu_flags = av_get_cpu_flags ( ) ; if ( EXTERNAL_MMX ( cpu_flags ) ) { s -> diff = ff_pullup_filter_diff_mmx ; s -> comb = ff_pullup_filter_comb_mmx ; } } 

@@ -1,0 +1,1 @@
+void mailimap_extension_data_free ( struct mailimap_extension_data * data ) { if ( data -> ext_extension != NULL && data -> ext_data != NULL ) { data -> ext_extension -> ext_free ( data ) ; } else { free ( data ) ; } } 

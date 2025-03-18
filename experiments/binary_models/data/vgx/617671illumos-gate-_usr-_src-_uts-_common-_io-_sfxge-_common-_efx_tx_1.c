@@ -1,0 +1,1 @@
+void efx_tx_qdestroy ( __in efx_txq_t * etp ) { efx_nic_t * enp = etp -> et_enp ; const efx_tx_ops_t * etxop = enp -> en_etxop ; EFSYS_ASSERT3U ( etp -> et_magic , == , EFX_TXQ_MAGIC ) ; EFSYS_ASSERT ( enp -> en_tx_qcount != 0 ) ; -- enp -> en_tx_qcount ; etxop -> etxo_qdestroy ( etp , NULL ) ; EFSYS_KMEM_FREE ( enp -> en_esip , sizeof ( efx_txq_t ) , etp ) ; } 

@@ -1,0 +1,1 @@
+static void bitmain_inc_nvw ( struct bitmain_info * info , struct thr_info * thr ) { applog ( LOG_INFO , "%s%d: No matching work - HW error" , thr -> cgpu -> drv -> name , thr -> cgpu -> device_id ) ; info -> no_matching_work ++ ; } 

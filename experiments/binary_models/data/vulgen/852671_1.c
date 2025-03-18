@@ -1,0 +1,1 @@
+void _chk_top ( MENU * m , int * top , ITEM * current ) { if ( Y ( current ) < * top ) { * top = Y ( current ) ; } } 

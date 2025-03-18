@@ -1,0 +1,1 @@
+static int model_calc_threshold ( Model * m ) { int thr ; thr = 2 * m -> weights [ m -> num_syms ] - 1 ; return FFMIN ( thr , 0x3FFF ) ; } 

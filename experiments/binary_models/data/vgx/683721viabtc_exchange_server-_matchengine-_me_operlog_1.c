@@ -1,1 +1,1 @@
-static void FUN1 ( void * VAR1 ) { struct VAR2 * VAR3 = VAR1 ; free ( VAR3 -> VAR4 ) ; }
+static void on_list_free ( void * value ) { struct operlog * log = value ; free ( log -> detail ) ; } 

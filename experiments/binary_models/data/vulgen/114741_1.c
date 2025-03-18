@@ -1,0 +1,1 @@
+void adutils_lderrno_destructor ( void * tsd ) { struct adutils_lderrno * le = tsd ; if ( le == NULL ) { return ; } if ( le -> le_matched != NULL ) { ldap_memfree ( le -> le_matched ) ; le -> le_matched = NULL ; } if ( le -> le_errmsg != NULL ) { ldap_memfree ( le -> le_errmsg ) ; le -> le_errmsg = NULL ; } } 

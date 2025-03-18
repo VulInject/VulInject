@@ -1,0 +1,1 @@
+void qle_dump_iocb_segs ( struct qle_softc * sc , void * segs , int n ) { u_int8_t * buf = segs ; int s , b ; printf ( "%s: iocb segs:\n" , DEVNAME ( sc ) ) ; for ( s = 0 ; s < n ; s ++ ) { for ( b = 0 ; b < sizeof ( qle_iocb_seg ) ; b ++ ) { printf ( " %2.2x" , buf [ ( s * ( sizeof ( qle_iocb_seg ) ) ) + b ] ) ; } printf ( "\n" ) ; } } 

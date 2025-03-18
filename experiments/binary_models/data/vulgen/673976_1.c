@@ -1,0 +1,1 @@
+static void b43_phy_ac_op_adjust_txpower ( struct b43_wldev * dev ) { } 

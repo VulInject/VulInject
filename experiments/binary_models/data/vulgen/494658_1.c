@@ -1,0 +1,1 @@
+static u32 tvout_read ( struct sti_tvout * tvout , int offset ) { return readl ( tvout -> regs ) ; } 

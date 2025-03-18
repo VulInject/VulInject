@@ -1,0 +1,1 @@
+static void virtio_mmio_soft_reset ( VirtIOMMIOProxy * proxy ) { int i ; for ( i = 0 ; i < VIRTIO_QUEUE_MAX ; i ++ ) { proxy -> vqs [ i ] . enabled = 0 ; } } 

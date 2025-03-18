@@ -1,0 +1,1 @@
+static int snd_mts64_rawmidi_open ( struct snd_rawmidi_substream * substream ) { struct mts64 * mts = substream -> rmidi -> private_data ; if ( mts -> open_count == 0 ) { mts64_device_open ( mts ) ; msleep ( 50 ) ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static void ath5k_reg_notifier ( struct wiphy * wiphy , struct regulatory_request * request ) { struct ieee80211_hw * hw = wiphy_to_ieee80211_hw ( wiphy ) ; struct ath5k_hw * ah = hw -> priv ; struct ath_regulatory * regulatory = ath5k_hw_regulatory ( ah ) ; } 

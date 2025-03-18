@@ -1,0 +1,1 @@
+notrace unsigned long __init early_init ( unsigned long dt_ptr ) { cfs_time_t offset = reloc_offset ( ) ; memset_io ( ( void __iomem * ) PTRRELOC ( & __bss_start ) , 0 , __bss_stop - __bss_start ) ; identify_cpu ( offset , mfspr ( SPRN_PVR ) ) ; apply_feature_fixups ( ) ; return KERNELBASE + offset ; } 

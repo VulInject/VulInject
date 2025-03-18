@@ -1,0 +1,1 @@
+static int efi_print_illumos ( const CHAR16 * varnamearg , uint8_t * data , UINTN datasz __unused ) { int rv = - 1 ; char * var = NULL ; if ( strcmp ( "LoaderPath" , var ) == 0 || strcmp ( "LoaderDev" , var ) == 0 ) { printf ( " = " ) ; printf ( "%S" , ( CHAR16 * ) data ) ; if ( pager_output ( "\n" ) ) { rv = CMD_WARN ; } else { rv = CMD_OK ; } } free ( var ) ; return ( rv ) ; } 

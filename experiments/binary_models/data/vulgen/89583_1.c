@@ -1,0 +1,1 @@
+void dapl_cno_dealloc ( IN DAPL_CNO * cno_ptr ) { dapl_os_assert ( cno_ptr -> header . magic == DAPL_MAGIC_CNO ) ; dapl_os_assert ( cno_ptr -> cno_ref_count == 0 ) ; cno_ptr -> header . magic = DAPL_MAGIC_INVALID ; ( void ) dapl_os_wait_object_destroy ( & cno_ptr -> cno_wait_object ) ; } 

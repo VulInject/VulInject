@@ -1,0 +1,1 @@
+const struct snd_pci_quirk * snd_pci_quirk_lookup_id ( u16 vendor , u16 device , const struct snd_pci_quirk * list ) { const struct snd_pci_quirk * q ; for ( q = list ; q -> subvendor ; q ++ ) { if ( q -> subvendor != vendor ) { continue ; } } return NULL ; } 

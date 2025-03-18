@@ -1,0 +1,1 @@
+MagickExport Image * AdaptiveBlurImage ( const Image * image , const double radius , const double sigma , ExceptionInfo * exception ) { Image * blur_image ; return ( blur_image ) ; } 

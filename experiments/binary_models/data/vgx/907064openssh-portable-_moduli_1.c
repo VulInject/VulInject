@@ -1,0 +1,1 @@
+static unsigned long count_lines ( FILE * f ) { cfs_time_t count = 0 ; char lp [ QLINESIZE + 1 ] ; if ( fseek ( f , 0 , SEEK_SET ) != 0 ) { debug ( "input file is not seekable" ) ; return ULONG_MAX ; } while ( fgets ( lp , QLINESIZE + 1 , f ) != NULL ) { count ++ ; } rewind ( f ) ; debug ( "input file has %lu lines" , count ) ; return count ; } 

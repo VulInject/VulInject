@@ -1,0 +1,1 @@
+void blackfin_invalidate_entire_dcache ( void ) { bfin_write_DMEM_CONTROL ( dmem & ~ 0xc ) ; SSYNC ( ) ; bfin_write_DMEM_CONTROL ( dmem ) ; SSYNC ( ) ; } 

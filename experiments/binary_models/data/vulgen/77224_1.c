@@ -1,0 +1,1 @@
+static int engine_init ( int max_sockets ) { int i ; sockList = ( Socket * * ) MyMalloc ( sizeof ( Socket * ) * max_sockets ) ; for ( i = 0 ; i < max_sockets ; i ++ ) { sockList [ i ] = 0 ; } devpoll_max = max_sockets ; return 1 ; } 

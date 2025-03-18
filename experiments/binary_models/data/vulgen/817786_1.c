@@ -1,0 +1,1 @@
+static int mtk_set_power ( struct gnss_serial * gserial , int state ) { switch ( state ) { case GNSS_SERIAL_ACTIVE : return mtk_set_active ( gserial ) ; case GNSS_SERIAL_OFF : case GNSS_SERIAL_STANDBY : return mtk_set_standby ( gserial ) ; } return - EINVAL ; } static const struct gnss_serial_ops mtk_gserial_ops = { . set_power = mtk_set_power } ; 

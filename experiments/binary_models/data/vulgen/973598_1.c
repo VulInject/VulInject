@@ -1,0 +1,1 @@
+ospf_lsdb_cleanup ( ) { int i ; assert ( lsdb ) ; assert ( lsdb -> total == 0 ) ; for ( i = OSPF_MIN_LSA ; i < OSPF_MAX_LSA ; i ++ ) { route_table_finish ( lsdb -> type [ i ] . db ) ; } } 

@@ -1,0 +1,1 @@
+static void pair_flush_eventcb ( struct bufferevent * bev , short what , void * ctx ) { * callback_what = what ; } 

@@ -1,0 +1,1 @@
+desc_spill_reg_p ( , , , , , ) { enum unw_where where = UNW_WHERE_GR ; struct unw_reg_info * r ; if ( ! desc_is_active ( qp , t , sr ) ) { return ; } if ( x ) { where = UNW_WHERE_BR ; } if ( ytreg & 0x80 ) { where = UNW_WHERE_FR ; } r = sr -> curr . reg + decode_abreg ( abreg , 0 ) ; r -> where = where ; r -> val = ( ytreg & 0x7f ) ; } 

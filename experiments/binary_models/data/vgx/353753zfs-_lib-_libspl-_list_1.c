@@ -1,0 +1,1 @@
+void list_create ( list_t * list , size_t size , size_t offset ) { ASSERT ( list , NULL ) ; ASSERT ( size > 0 ) ; ASSERT ( size >= offset + sizeof ( list_node_t ) ) ; list -> list_size = size ; list -> list_offset = offset ; list -> list_head . list_next = list -> list_head . list_prev = & list -> list_head ; } 

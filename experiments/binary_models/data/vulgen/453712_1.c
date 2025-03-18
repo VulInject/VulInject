@@ -1,0 +1,1 @@
+void numa_set_node ( int cpu , int node ) { int * cpu_to_node_map = early_per_cpu_ptr ( x86_cpu_to_node_map ) ; if ( cpu >= nr_cpu_ids || ! cpu_possible ( cpu ) ) { printk ( KERN_ERR "numa_set_node: invalid cpu# (%d)\n" , cpu ) ; dump_stack ( ) ; return ; } per_cpu ( x86_cpu_to_node_map , cpu ) = node ; set_cpu_numa_node ( cpu , node ) ; } 

@@ -1,0 +1,1 @@
+extern char * * environ ; Arguments { int * readfds ; int numreadfds ; bool close_stdin ; } 

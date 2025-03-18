@@ -1,0 +1,1 @@
+TSRMLS_CACHE_UPDATE ( ) ; globals -> process = NULL ; globals -> shm = NULL ; globals -> process_size = 0 ; globals -> shm_size = 0 ; globals -> impersonation_token = INVALID_HANDLE_VALUE ; globals -> impersonation_token_sid = NULL ; 

@@ -1,0 +1,1 @@
+static int at91_usart_gpio_setup ( struct platform_device * pdev ) { struct gpio_descs * cs_gpios ; cs_gpios = devm_gpiod_get_array_optional ( & pdev -> dev , "cs" , GPIOD_OUT_LOW ) ; return 0 ; } 

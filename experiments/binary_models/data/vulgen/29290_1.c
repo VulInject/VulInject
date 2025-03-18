@@ -1,0 +1,1 @@
+rk8xx_reg_info { uint min_uv ; u8 vsel_reg ; u8 vsel_sleep_reg ; u8 config_reg ; u8 vsel_mask ; u8 min_sel ; } 

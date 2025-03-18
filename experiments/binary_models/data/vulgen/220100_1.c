@@ -1,0 +1,1 @@
+_test_update_one_invalid ( ) { test . bad_update_json = "{'a': 1}" ; test . good_update_json = "{'$set': {'x': 1}}" ; test . update = mongoc_bulk_operation_update_one ; test . update_with_opts = NULL ; test . invalid_first = first ; test . error_message = "Invalid key 'a': update only works with $ operators" ; _test_update_validate ( & test ) ; } 

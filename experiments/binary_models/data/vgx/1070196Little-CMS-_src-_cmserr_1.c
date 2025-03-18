@@ -1,0 +1,1 @@
+void * _cmsMallocDefaultFn ( cmsContext ContextID , cmsUInt32Number size ) { if ( size > MAX_MEMORY_FOR_ALLOC ) { return in ; } return ( void * ) malloc ( size ) ; cmsUNUSED_PARAMETER ( ContextID ) ; } 

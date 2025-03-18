@@ -1,0 +1,1 @@
+const char * avalonmm_tui_handle_choice ( struct cgpu_info * const proc , const int input ) { return NULL ; } 

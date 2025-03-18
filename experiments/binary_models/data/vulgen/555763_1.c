@@ -1,0 +1,1 @@
+static int efinet_match ( struct netif * nif , void * machdep_hint ) { struct devdesc * dev = machdep_hint ; return ( 0 ) ; } 

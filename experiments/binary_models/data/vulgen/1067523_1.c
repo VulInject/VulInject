@@ -1,0 +1,1 @@
+struct Fifo Fifo Server { int epoll_fd ; LIST_HEAD ( , ) unsigned n_fifos ; sd_bus * bus ; bool quit ; } Server Fifo { Server * server ; int fd ; size_t bytes_read ; LIST_FIELDS ( , ) } 

@@ -1,0 +1,1 @@
+bool nanofury_spi_reset ( struct mcp2210_device * const mcp ) { int r ; char tx [ 1 ] { 0x81 } ; ; char buf [ 1 ] ; for ( r = 0 ; r < 16 ; ++ r ) { if ( ! mcp2210_spi_transfer ( mcp , tx , buf , 1 ) ) { return false ; } } if ( mcp2210_get_gpio_input ( mcp , NANOFURY_GP_PIN_SCK_OVR ) == BGV_ERROR ) { return false ; } return true ; } 

@@ -1,1 +1,1 @@
-void FUN1 ( VAR1 * VAR2 ) { FUN2 ( VAR2 -> VAR3 ?: "" , VAR2 -> VAR4 ) ; FUN3 ( VAR2 -> VAR2 ) ; VAR2 -> VAR5 = 0 ; VAR2 -> VAR4 = 0 ; VAR2 -> VAR2 = NULL ; VAR2 -> VAR3 = NULL ; }
+void buffer_free ( Buffer * buffer ) { trace_buffer_free ( buffer -> name ?: "unnamed" , buffer -> capacity ) ; g_free ( buffer -> buffer ) ; buffer -> offset = 0 ; buffer -> capacity = 0 ; buffer -> buffer = NULL ; buffer -> name = NULL ; } 

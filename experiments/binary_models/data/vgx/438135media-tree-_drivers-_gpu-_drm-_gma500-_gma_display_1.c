@@ -1,0 +1,1 @@
+int gma_crtc_set_config ( struct drm_mode_set * set , struct drm_modeset_acquire_ctx * ctx ) { struct drm_device * dev = set -> crtc -> dev ; struct drm_psb_private * dev_priv = dev -> dev_private ; int ret ; pm_runtime_forbid ( & dev -> pdev -> dev ) ; ret = drm_crtc_helper_set_config ( set , ctx ) ; pm_runtime_allow ( & dev -> pdev -> dev ) ; return ret ; } 

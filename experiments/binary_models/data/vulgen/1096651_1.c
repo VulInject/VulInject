@@ -1,0 +1,1 @@
+void proto_reg_handoff_llcgprs ( void ) { dissector_add_uint ( "wtap_encap" , WTAP_ENCAP_GPRS_LLC , gprs_llc_handle ) ; } 

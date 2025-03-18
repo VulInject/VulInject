@@ -1,0 +1,1 @@
+static int dissect_tuxedo ( tvbuff_t * tvb , packet_info * pinfo , proto_tree * tree , void * data _U_ ) { proto_tree * tuxedoroot_tree = NULL ; proto_item * ti ; guint32 magic ; guint32 opcode ; col_set_str ( pinfo -> cinfo , COL_PROTOCOL , "TUXEDO" ) ; return tvb_captured_length ( tvb ) ; } 

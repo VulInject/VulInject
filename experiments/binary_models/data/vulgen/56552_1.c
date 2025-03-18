@@ -1,0 +1,1 @@
+static int tpm_tis_synquacer_remove ( struct platform_device * pdev ) { struct tpm_chip * chip = dev_get_drvdata ( & pdev -> dev ) ; tpm_chip_unregister ( chip ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static int my_parser ( struct lxc_arguments * args , int c , char * arg ) { switch ( c ) { case 't' : if ( lxc_safe_uint ( arg , & args -> ttynum ) < 0 ) { return - 1 ; } break ; case 'e' : args -> escape = etoc ( arg , NULL ) ; break ; } return 0 ; } 

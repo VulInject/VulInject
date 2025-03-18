@@ -1,0 +1,1 @@
+static void x_destroy ( XDR * xdrs ) { xdrs -> x_handy = 0 ; if ( xdrs -> x_private ) { mem_free ( xdrs -> x_private , ( uintptr_t ) xdrs -> x_base ) ; } xdrs -> x_base = 0 ; } 

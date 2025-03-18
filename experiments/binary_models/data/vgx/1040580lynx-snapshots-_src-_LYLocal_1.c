@@ -1,0 +1,1 @@
+static BOOLEAN cannot_stat ( const char * name ) { char * tmpbuf = 0 ; HTSprintf0 ( & tmpbuf , gettext ( "Unable to get status of '%s'." ) , name ) ; HTAlert ( tmpbuf ) ; FREE ( tmpbuf , NULL ) ; return FALSE ; } 

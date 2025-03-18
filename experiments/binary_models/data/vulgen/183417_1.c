@@ -1,0 +1,1 @@
+BIT_OP ( , ) BIT_OP ( , ) static int func ( lua_State * L ) { UBits b = barg ( L , 1 ) ; UBits n = barg ( L , 2 ) & 31 ; BRET ( ) } BIT_SH ( , ) BIT_SH ( , ) BIT_SH ( , ) BIT_SH ( , ) BIT_SH ( , ) static int bit_bswap ( lua_State * L ) { UBits b = barg ( L , 1 ) ; BRET ( ) } 

@@ -1,0 +1,1 @@
+static void __iomem * ixp4xx_ioremap_caller ( phys_addr_t addr , size_t size , unsigned int mtype , void * caller ) { return ( void __iomem * ) addr ; } 

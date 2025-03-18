@@ -1,0 +1,1 @@
+void pm_runtime_set_autosuspend_delay ( struct device * dev , int delay ) { int old_delay , old_use ; spin_lock_irq ( & dev -> power . lock ) ; old_delay = dev -> power . autosuspend_delay ; old_use = dev -> power . use_autosuspend ; dev -> power . autosuspend_delay = delay ; update_autosuspend ( dev , old_delay , old_use ) ; } 

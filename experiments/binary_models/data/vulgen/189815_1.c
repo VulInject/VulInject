@@ -1,0 +1,1 @@
+static void sigterm_handler ( int sig ) { ( void ) sig ; if ( job_canceled ) { _exit ( 0 ) ; } else { job_canceled = 1 ; } } 

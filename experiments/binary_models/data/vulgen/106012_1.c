@@ -1,0 +1,1 @@
+void Q_getwd ( char * out ) { int i = 0 ; strcat ( out , "\\" ) ; if ( getcwd ( out , 256 ) == NULL ) { strcpy ( out , "." ) ; } strcat ( out , "/" ) ; while ( out [ i ] != 0 ) { if ( out [ i ] == '\\' ) { out [ i ] = '/' ; } i ++ ; } } 

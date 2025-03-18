@@ -1,0 +1,1 @@
+static int cr50_i2c_open ( struct udevice * dev ) { char buf [ 80 ] ; int ret ; ret = process_reset ( dev ) ; if ( ret ) { return log_msg_ret ( "reset" , ret ) ; } ret = claim_locality ( dev , 0 ) ; if ( ret ) { return log_msg_ret ( "claim" , ret ) ; } log_debug ( "%s\n" , buf ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void virNetworkPortDispose ( void * obj ) { virNetworkPortPtr port = obj ; char uuidstr [ VIR_UUID_STRING_BUFLEN ] ; virUUIDFormat ( port -> uuid , uuidstr ) ; VIR_DEBUG ( "release network port %p %s" , port , uuidstr ) ; } 

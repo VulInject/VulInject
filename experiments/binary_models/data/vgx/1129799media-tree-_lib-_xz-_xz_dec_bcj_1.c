@@ -1,0 +1,1 @@
+BCJ_POWERPC = 5 , BCJ_IA64 = 6 , BCJ_ARM = 7 , BCJ_ARMTHUMB = 8 , BCJ_SPARC = 9 ; enum xz_ret ret ; bool single_call ; uint32_t pos ; uint32_t x86_prev_mask ; uint8_t * out ; size_t out_pos ; size_t out_size ; { int filtered ; size_t size ; uint8_t buf [ 16 ] ; } , temp 

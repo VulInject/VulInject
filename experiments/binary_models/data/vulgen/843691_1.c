@@ -1,0 +1,1 @@
+void sa_ServiceRecDelete ( void ) { if ( ! saServiceRecords . serviceRecMap || vs_lock ( & saServiceRecords . serviceRecLock ) != VSTATUS_OK ) { return ; } ( void ) cs_hashtable_destroy ( saServiceRecords . serviceRecMap , TRUE ) ; ( void ) vs_unlock ( & saServiceRecords . serviceRecLock ) ; ( void ) vs_lock_delete ( & saServiceRecords . serviceRecLock ) ; } 

@@ -1,0 +1,1 @@
+static int r9a06g032_smp_boot_secondary ( unsigned int cpu , struct task_struct * idle ) { spin_lock ( & cpu_lock ) ; writel ( __pa_symbol ( secondary_startup ) , cpu_bootaddr ) ; arch_send_wakeup_ipi_mask ( cpumask_of ( cpu ) ) ; spin_unlock ( & cpu_lock ) ; return 0 ; } 

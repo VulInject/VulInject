@@ -1,0 +1,1 @@
+int wc_Afalg_SetOp ( struct cmsghdr * cmsg , int dir ) { cmsg -> cmsg_level = SOL_ALG ; cmsg -> cmsg_type = ALG_SET_OP ; cmsg -> cmsg_len = CMSG_LEN ( 4 ) ; * ( ( word32 * ) CMSG_DATA ( cmsg ) ) = ( dir == 1 ) ?ALG_OP_DECRYPT : ALG_OP_ENCRYPT ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void zero_callback ( int read_err , unsigned long write_err , void * context ) { struct bio * bio = context ; struct dm_snapshot * s = bio -> bi_private ; bio -> bi_status = write_err ?BLK_STS_IOERR : 0 ; bio_endio ( bio ) ; } 

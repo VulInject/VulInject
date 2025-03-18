@@ -1,0 +1,1 @@
+placeholder_query_procedures ( ) { GList * list = NULL ; gint i ; for ( i = 0 ; i < G_N_ELEMENTS ( file_formats ) ; i ++ ) { const FileFormat * format = & file_formats [ i ] ; gchar * load_proc ; list = g_list_append ( list , load_proc ) ; } return list ; } 

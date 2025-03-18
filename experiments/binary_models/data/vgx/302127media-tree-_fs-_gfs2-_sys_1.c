@@ -1,0 +1,1 @@
+int gfs2_sys_init ( void ) { gfs2_kset = kset_create_and_add ( "gfs2" , & gfs2_uevent_ops , fs_kobj ) ; return 0 ; } 

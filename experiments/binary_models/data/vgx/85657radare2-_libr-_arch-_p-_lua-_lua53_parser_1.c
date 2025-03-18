@@ -1,0 +1,1 @@
+static int storeLuaFunction ( LuaFunction * function ) { if ( ! lua53_data . functionList ) { lua53_data . functionList = r_list_new ( ) ; } r_list_append ( lua53_data . functionList , function ) ; return 1 ; } 

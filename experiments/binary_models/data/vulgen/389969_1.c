@@ -1,0 +1,1 @@
+* ARISING FROM , OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR * OTHER DEALINGS IN THE SOFTWARE . * * Authors : Ben Skeggs < bskeggs redhat . com >= * / const gf100_gr_init gf119_gr_init_pd_0 [ ] = { { 0x406024 1 0x04 0x00000000 } { 0x4064f0 3 0x04 0x00000000 } { } } ; 

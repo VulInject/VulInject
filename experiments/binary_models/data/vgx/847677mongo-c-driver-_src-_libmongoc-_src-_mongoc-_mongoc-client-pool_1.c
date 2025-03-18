@@ -1,0 +1,1 @@
+mongoc_client_pool_num_pushed ( ) { int num_pushed = 0 ; ENTRY ; bson_mutex_lock ( & pool -> mutex ) ; num_pushed = pool -> queue . length ; bson_mutex_unlock ( & pool -> mutex ) ; RETURN ( num_pushed ) ; } 

@@ -1,0 +1,1 @@
+static DEFINE_SPINLOCK ( device_ids_lock ) ; pcistub_device { struct kref kref ; struct list_head dev_list ; spinlock_t lock ; struct pci_dev * dev ; } 

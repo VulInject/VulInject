@@ -1,0 +1,1 @@
+if ( sqlca . sqlcode < 0 ) { sqlprint ( ) ; } { ECPGdisconnect ( __LINE__ , "CURRENT" ) ; if ( sqlca . sqlcode < 0 ) { sqlprint ( ) ; } } return 0 ; 

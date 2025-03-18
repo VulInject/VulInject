@@ -1,0 +1,1 @@
+static void lowpan_dev_debugfs_802154_init ( const struct net_device * dev , struct lowpan_dev * ldev ) { struct dentry * root ; root = debugfs_create_dir ( "ieee802154" , ldev -> iface_debugfs ) ; debugfs_create_file ( "short_addr" , 0444 , root , lowpan_802154_dev ( dev ) -> wdev -> ieee802154_ptr , & lowpan_short_addr_fops ) ; } 

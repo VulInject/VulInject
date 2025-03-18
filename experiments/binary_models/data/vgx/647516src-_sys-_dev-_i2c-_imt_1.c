@@ -1,0 +1,1 @@
+int imt_enable ( void * v ) { struct imt_softc * sc = v ; struct hidmt * mt = & sc -> sc_mt ; int rv ; rv = ihidev_open ( & sc -> sc_hdev ) ; hidmt_set_input_mode ( mt , HIDMT_INPUT_MODE_MT_TOUCHPAD ) ; return rv ; } 

@@ -1,0 +1,1 @@
+void print_block ( struct buffer_head * bh , ... ) { va_list args ; int mode , first , last ; if ( ! bh ) { printk ( "print_block: buffer is NULL\n" ) ; return ; } va_start ( args , bh ) ; mode = va_arg ( args , int ) ; first = va_arg ( args , int ) ; last = va_arg ( args , int ) ; va_end ( args ) ; } 

@@ -1,0 +1,1 @@
+static int nsec3_known_algo ( struct ub_packed_rrset_key * rrset , int r ) { struct packed_rrset_data * d = ( packed_rrset_data * ) rrset -> entry . data ; log_assert ( d && r < ( int ) d -> count ) ; switch ( d -> rr_data [ r ] [ 2 + 0 ] ) { case NSEC3_HASH_SHA1 : return 1 ; } return 0 ; } 

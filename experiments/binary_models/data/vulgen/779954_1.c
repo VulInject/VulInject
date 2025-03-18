@@ -1,0 +1,1 @@
+int devmap_pmem_getpfns ( devmap_pmem_cookie_t cookie , uint_t start , pgcnt_t npages , pfn_t * pfnarray ) { struct devmap_pmem_cookie * pcp = ( devmap_pmem_cookie * ) cookie ; pgcnt_t i ; for ( i = start ; i < start + npages ; i ++ ) { pfnarray [ i - start ] = pfn_to_mfn ( pcp -> dp_pparray [ i ] -> p_pagenum ) ; } return ( DDI_SUCCESS ) ; } 

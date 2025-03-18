@@ -1,0 +1,1 @@
+static ssize_t radios_show ( struct device * dev , struct device_attribute * attr , char * buf ) { struct fujitsu_laptop * priv = dev_get_drvdata ( dev ) ; if ( priv -> flags_state & FLAG_RFKILL ) { return sprintf ( buf , "on\n" ) ; } else { return sprintf ( buf , "killed\n" ) ; } } 

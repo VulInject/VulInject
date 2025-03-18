@@ -1,0 +1,1 @@
+static CPAccessResult access_trap_aa32s_el1 ( CPUARMState * env , const ARMCPRegInfo * ri , bool isread ) { if ( arm_is_secure_below_el3 ( env ) ) { if ( env -> cp15 . scr_el3 & SCR_EEL2 ) { return CP_ACCESS_TRAP_EL2 ; } return CP_ACCESS_TRAP_EL3 ; } return CP_ACCESS_TRAP_UNCATEGORIZED ; } 

@@ -1,0 +1,1 @@
+int ul_selinux_has_access ( const char * classstr , const char * perm , char * * user_cxt ) { char * user ; int rc ; if ( user_cxt ) { * user_cxt = NULL ; } rc = selinux_check_access ( user , user , classstr , perm , NULL ) ; if ( rc != 0 && user_cxt ) { * user_cxt = user ; } else { freecon ( user ) ; } return rc == 0 ?1 : 0 ; } 

@@ -1,0 +1,1 @@
+uint32_t X509_get_extended_key_usage ( X509 * x ) { if ( x -> ex_flags & EXFLAG_XKUSAGE ) { return x -> ex_xkusage ; } return UINT32_MAX ; } 

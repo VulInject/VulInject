@@ -1,0 +1,1 @@
+static u32 ixp4xx_crp_byte_lane_enable_bits ( u32 n , int size ) { if ( size == 2 ) { return ( 0xf & ~ ( BIT ( n ) | BIT ( n + 1 ) ) ) << CRP_AD_CBE_BESL ; } if ( size == 4 ) { return 0 ; } return 0xffffffff ; } 

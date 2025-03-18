@@ -1,0 +1,1 @@
+hisi_gpio { struct gpio_chip chip ; void __iomem * reg_base ; unsigned int line_num ; struct irq_chip irq_chip ; int irq ; } 

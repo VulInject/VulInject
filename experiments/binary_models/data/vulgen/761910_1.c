@@ -1,0 +1,1 @@
+static void PPPOEDeviceOptions ( void ) { char name [ MAXPATHLEN ] ; char buf [ MAXPATHLEN ] ; slprintf ( name , sizeof ( name ) , "options.%s" , devnam ) ; if ( ppp_get_filepath ( PPP_DIR_CONF , name , buf , sizeof ( buf ) ) < sizeof ( buf ) ) { if ( ! ppp_options_from_file ( buf , 0 , 0 , 1 ) ) { } } else { exit ( EXIT_OPTION_ERROR ) ; } } 

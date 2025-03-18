@@ -1,0 +1,1 @@
+int AINode_Intermission ( bot_state_t * bs ) { if ( ! BotIntermission ( bs ) ) { if ( BotChat_StartLevel ( bs ) ) { bs -> stand_time = trap_AAS_Time ( ) + BotChatTime ( bs ) ; } else { bs -> stand_time = trap_AAS_Time ( ) + 2 ; } AIEnter_Stand ( bs , NULL ) ; } return qtrue ; } 

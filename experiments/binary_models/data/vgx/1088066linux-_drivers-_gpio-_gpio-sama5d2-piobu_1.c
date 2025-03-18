@@ -1,0 +1,1 @@
+static int sama5d2_piobu_get ( struct gpio_chip * chip , unsigned int pin ) { int ret = sama5d2_piobu_get_direction ( chip , pin ) ; if ( ret == GPIO_LINE_DIRECTION_IN ) { ret = sama5d2_piobu_read_value ( chip , pin , PIOBU_PDS ) ; } if ( ret == GPIO_LINE_DIRECTION_OUT ) { ret = sama5d2_piobu_read_value ( chip , pin , PIOBU_SOD ) ; } return ! ! ret ; } 

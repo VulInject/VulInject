@@ -1,0 +1,1 @@
+( mISDN_clock_update ) ; unsigned short mISDN_clock_get ( void ) { u_long flags ; ktime_t timestamp_now ; u16 delta ; u16 count ; read_lock_irqsave ( & iclock_lock , flags ) ; timestamp_now = ktime_get ( ) ; count = iclock_count + delta ; read_unlock_irqrestore ( & iclock_lock , flags ) ; return count ; } 

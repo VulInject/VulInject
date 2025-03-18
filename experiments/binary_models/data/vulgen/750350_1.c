@@ -1,0 +1,1 @@
+static const char * tcp_state2str ( int state ) { return ( sip == NULL ?NULL : sip -> tsi_string ) ; } 

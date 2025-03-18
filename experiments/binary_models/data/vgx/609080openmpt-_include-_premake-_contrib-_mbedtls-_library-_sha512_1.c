@@ -1,1 +1,1 @@
-void FUN1 ( VAR1 * VAR2 ) { FUN2 ( VAR2 != NULL ) ; }
+void mbedtls_sha512_init ( mbedtls_sha512_context * ctx ) { SHA512_VALIDATE ( ctx != NULL ) ; } 

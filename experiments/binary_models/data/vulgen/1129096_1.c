@@ -1,0 +1,1 @@
+static void mlx5_esw_bridge_update_work ( struct work_struct * work ) { struct mlx5_esw_bridge_offloads * br_offloads = container_of ( work , mlx5_esw_bridge_offloads , update_work . work ) ; rtnl_lock ( ) ; mlx5_esw_bridge_update ( br_offloads ) ; rtnl_unlock ( ) ; } 

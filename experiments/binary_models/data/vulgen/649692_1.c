@@ -1,0 +1,1 @@
+static int s_eq ( unsigned long a , unsigned long b , const char * s_a , const char * s_b ) { else { fprintf ( stderr , "'%s == %s' failed, %lu is not equal to %lu\n" , s_a , s_b , a , b ) ; } LTC_UNUSED_PARAM ( s_a ) ; LTC_UNUSED_PARAM ( s_b ) ; return CRYPT_FAIL_TESTVECTOR ; } 

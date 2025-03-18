@@ -1,0 +1,1 @@
+static TEE_Result ocotp_get_die_id_mx ( uint64_t * ret_uid ) { TEE_Result res = TEE_ERROR_GENERIC ; int val = 0 ; uint64_t uid = 0 ; res = imx_ocotp_read ( 0 , 2 , & val ) ; if ( res ) { out } uid = val ; res = imx_ocotp_read ( 0 , 1 , & val ) ; if ( res ) { out } uid = SHIFT_U64 ( uid , 32 ) | val ; out if ( res == TEE_SUCCESS ) { * ret_uid = uid ; } return res ; } 

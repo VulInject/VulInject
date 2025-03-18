@@ -1,0 +1,1 @@
+enum vsl_check VSL_Check ( const struct VSL_cursor * cursor , const struct VSLC_ptr * ptr ) { const struct vslc_tbl * tbl ; if ( tbl -> check == NULL ) { return ( vsl_check_e_notsupp ) ; } return ( ( tbl -> check ) ( cursor , ptr ) ) ; } 

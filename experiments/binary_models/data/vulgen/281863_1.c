@@ -1,0 +1,1 @@
+static const value_string cc2400_grmdm_pre_bytes_vals [ ] { { 0x00 "0" } { 0x01 "1" } { 0x02 "2" } { 0x03 "4" } { 0x04 "8" } { 0x05 "16" } { 0x06 "32" } { 0x07 "Infinitely On" } { 0x00 NULL } } ; ; 

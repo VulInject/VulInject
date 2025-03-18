@@ -1,0 +1,1 @@
+__attribute__ ( 1024 ) static tDMAControlTable dmaControlTable [ 64 ] ; static void dmaErrorFxn ( uintptr_t arg ) { int status = MAP_uDMAErrorStatusGet ( ) ; ( void ) status ; while ( 1 ) { } } 

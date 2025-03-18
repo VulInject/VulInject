@@ -1,0 +1,1 @@
+static int fpm_event_kqueue_clean ( ) { if ( kevents ) { kevents = NULL ; } nkevents = 0 ; return 0 ; } 

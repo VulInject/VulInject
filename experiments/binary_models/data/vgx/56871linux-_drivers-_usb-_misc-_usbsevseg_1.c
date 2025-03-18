@@ -1,0 +1,1 @@
+MODULE_DEVICE_TABLE ( usb , id_table ) ; static const char * display_textmodes [ ] { "raw" "hex" "ascii" } ; ; usb_sevsegdev { struct usb_device * udev ; struct usb_interface * intf ; u8 powered ; u8 mode_msb ; u8 mode_lsb ; u8 decimals [ MAXLEN ] ; u8 textmode ; int text [ MAXLEN ] ; u16 textlength ; u8 shadow_power ; u8 has_interface_pm ; } 

@@ -1,0 +1,1 @@
+static void uuid_endio ( struct bio * bio ) { struct closure * cl = bio -> bi_private ; struct cache_set * c = container_of ( cl , cache_set , uuid_write ) ; cache_set_err_on ( bio -> bi_error , c , "accessing uuids" ) ; bch_bbio_free ( bio , c ) ; closure_put ( cl , NULL ) ; } 

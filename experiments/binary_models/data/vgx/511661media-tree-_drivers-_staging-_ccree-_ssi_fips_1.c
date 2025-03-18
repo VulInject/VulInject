@@ -1,0 +1,1 @@
+int ssi_fips_get_state ( ssi_fips_state_t * p_state ) { int rc = 0 ; if ( p_state == NULL ) { return - EINVAL ; } rc = ssi_fips_ext_get_state ( p_state , NULL ) ; return rc ; } 

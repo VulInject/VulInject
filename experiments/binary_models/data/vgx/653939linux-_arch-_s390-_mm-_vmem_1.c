@@ -1,0 +1,1 @@
+int __vmem_map_4k_page ( unsigned long addr , unsigned long phys , pgprot_t prot , bool alloc ) { pte_t * ptep , pte ; if ( ! IS_ALIGNED ( addr , PAGE_SIZE ) ) { return - EINVAL ; } ptep = vmem_get_alloc_pte ( addr , alloc ) ; __ptep_ipte ( addr , ptep , 0 , 0 , IPTE_GLOBAL ) ; pte = mk_pte_phys ( phys , prot ) ; set_pte ( ptep , pte ) ; return 0 ; } 

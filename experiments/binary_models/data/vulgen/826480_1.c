@@ -1,0 +1,1 @@
+static ssize_t os_desc_use_store ( struct config_item * item , const char * page , size_t len ) { struct gadget_info * gi = os_desc_item_to_gadget_info ( item ) ; int ret ; bool use ; if ( ret ) { return ret ; } mutex_lock ( & gi -> lock ) ; gi -> use_os_desc = use ; mutex_unlock ( & gi -> lock ) ; return len ; } 

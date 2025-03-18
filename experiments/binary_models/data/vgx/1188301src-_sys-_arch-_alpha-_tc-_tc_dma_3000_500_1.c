@@ -1,0 +1,1 @@
+int tc_bus_dmamap_load_uio_sgmap ( t , map , uio , flags ) int t ; bus_dmamap_t map ; struct uio * uio ; int flags ; { return ( tc_sgmap_load_uio ( t , map , uio , flags , t -> _sgmap ) ) ; } 

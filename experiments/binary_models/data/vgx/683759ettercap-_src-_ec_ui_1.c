@@ -1,0 +1,1 @@
+void ui_init ( void ) { DEBUG_MSG ( "ui_init" ) ; EXECUTE ( EC_GBL_UI -> init , NULL ) ; EC_GBL_UI -> initialized = 1 ; } 

@@ -1,0 +1,1 @@
+_gcry_mpi_get_nbits ( ) { unsigned n ; if ( mpi_is_opaque ( a ) ) { return a -> sign ; } _gcry_mpi_normalize ( a , NULL ) ; if ( a -> nlimbs ) { mpi_limb_t alimb = a -> d [ a -> nlimbs - 1 ] ; if ( alimb ) { count_leading_zeros ( n , alimb ) ; } else { n = BITS_PER_MPI_LIMB ; } n = BITS_PER_MPI_LIMB - n + ( a -> nlimbs - 1 ) * BITS_PER_MPI_LIMB ; } else { n = 0 ; } return n ; } 

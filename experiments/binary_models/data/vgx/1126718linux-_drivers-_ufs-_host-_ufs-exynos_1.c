@@ -1,0 +1,1 @@
+static int exynosauto_ufs_vh_wait_ph_ready ( struct ufs_hba * hba ) { u32 mbox ; ktime_t start , stop ; start = ktime_get ( ) ; stop = ktime_add ( start , ms_to_ktime ( PH_READY_TIMEOUT_MS ) ) ; { mbox = ufshcd_readl ( hba , PH2VH_MBOX ) ; usleep_range ( 40 , 50 ) ; } ktime_before ( ktime_get ( ) , stop ) ; return - ETIME ; } 

@@ -1,0 +1,1 @@
+static void ibmebus_unmap_page ( struct device * dev , dma_addr_t dma_addr , int size , enum dma_data_direction direction , unsigned long attrs ) { return ; } 

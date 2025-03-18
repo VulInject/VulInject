@@ -1,0 +1,1 @@
+int for_each_userdiff_driver ( each_userdiff_driver_fn fn , void * cb_data ) { int ret ; ret = for_each_userdiff_driver_list ( fn , USERDIFF_DRIVER_TYPE_CUSTOM , cb_data , drivers , ndrivers ) ; if ( ret ) { return ret ; } if ( ret ) { return ret ; } return 0 ; } 

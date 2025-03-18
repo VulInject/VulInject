@@ -1,0 +1,1 @@
+local int inflateStateCheck ( strm ) z_streamp strm ; { struct inflate_state FAR * state ; state = ( inflate_state FAR * ) strm -> state ; if ( state == Z_NULL || state -> strm != strm || state -> mode ( HEAD || state -> mode ) SYNC ) { return 1 ; } return 0 ; } 

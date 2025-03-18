@@ -1,0 +1,1 @@
+static void kill_verifier ( struct verifier * verifier ) { assert ( verifier -> zone != NULL ) ; if ( kill ( verifier -> pid , SIGTERM ) == - 1 ) { log_msg ( LOG_ERR , "verify: cannot kill verifier for " "zone %s (pid %d): %s" , verifier -> zone -> opts -> name , verifier -> pid , strerror ( errno ) ) ; } } 

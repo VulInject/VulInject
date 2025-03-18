@@ -1,0 +1,1 @@
+int hashtable_change ( struct hashtable * h , void * k , void * v ) { struct entry * e ; unsigned int hashvalue , index ; hashvalue = hash ( h , k ) ; index = indexFor ( h -> tablelength , hashvalue ) ; e = h -> table [ index ] ; while ( NULL != e ) { if ( ( hashvalue == e -> h ) && ( h -> eqfn ( k , e -> k ) ) ) { e -> v = v ; return - 1 ; } e = e -> next ; } return 0 ; } 

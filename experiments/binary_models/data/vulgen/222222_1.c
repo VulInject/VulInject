@@ -1,0 +1,1 @@
+TEST ( , ) { void * m1 = malloc ( 10 ) ; void * m2 = realloc ( m1 , 10 ) ; free ( m2 ) ; } 

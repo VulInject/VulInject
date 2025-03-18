@@ -1,0 +1,1 @@
+static void microbit_i2c_reset ( DeviceState * dev ) { MicrobitI2CState * s = MICROBIT_I2C ( dev ) ; s -> read_idx = 0 ; } 

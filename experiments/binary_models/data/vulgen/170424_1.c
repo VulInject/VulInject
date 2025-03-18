@@ -1,0 +1,1 @@
+void filter_add_whitelist ( int fd , int syscall , int arg , void * ptrarg , bool native ) { ( void ) arg ; ( void ) ptrarg ; ( void ) native ; } 

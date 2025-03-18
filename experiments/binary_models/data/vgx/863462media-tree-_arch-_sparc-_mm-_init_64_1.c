@@ -1,0 +1,1 @@
+static unsigned long kern_large_tte ( unsigned long paddr ) { cfs_time_t val ; val = ( _PAGE_VALID | _PAGE_SZ4MB_4U | _PAGE_CP_4U | _PAGE_CV_4U | _PAGE_P_4U | _PAGE_EXEC_4U | _PAGE_L_4U | _PAGE_W_4U ) ; if ( tlb_type == hypervisor ) { val = ( _PAGE_VALID | _PAGE_SZ4MB_4V | page_cache4v_flag | _PAGE_P_4V | _PAGE_EXEC_4V | _PAGE_W_4V ) ; } return val | paddr ; } 

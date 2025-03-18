@@ -1,0 +1,1 @@
+agl_close_map ( ) { ht_clear_table ( 0 ) ; } 

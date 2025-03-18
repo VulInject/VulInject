@@ -1,0 +1,1 @@
+static void * qpci_pc_get_driver ( void * obj , const char * interface ) { QPCIBusPC * qpci = obj ; fprintf ( stderr , "%s not present in pci-bus-pc\n" , interface ) ; g_assert_not_reached ( ) ; } 

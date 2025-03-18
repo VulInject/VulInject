@@ -1,0 +1,1 @@
+dma_stat = inb ( hwif -> dma_base + ATA_DMA_STATUS ) ; if ( dma_stat & ATA_DMA_INTR ) { return 1 ; } return 0 ; 

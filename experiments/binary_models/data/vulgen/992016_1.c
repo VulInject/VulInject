@@ -1,0 +1,1 @@
+static inline void hitfb_accel_start ( int truecolor ) { if ( truecolor ) { fb_writew ( 6 , HD64461_GRCFGR ) ; } else { fb_writew ( 7 , 0 ) ; } } 

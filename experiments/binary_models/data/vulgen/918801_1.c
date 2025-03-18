@@ -1,0 +1,1 @@
+static void mdio_device_release ( struct device * dev ) { fwnode_handle_put ( dev -> fwnode ) ; } 

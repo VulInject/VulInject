@@ -1,0 +1,1 @@
+static void ftmac100_set_mac ( struct ftmac100 * priv , const unsigned char * mac ) { unsigned int maddr = mac [ 0 ] << 8 | mac [ 1 ] ; int laddr = mac [ 2 ] << 24 | mac [ 3 ] << 16 | mac [ 4 ] << 8 | mac [ 5 ] ; iowrite32 ( maddr , priv -> base + FTMAC100_OFFSET_MAC_MADR ) ; iowrite32 ( laddr , priv -> base + FTMAC100_OFFSET_MAC_LADR ) ; } 

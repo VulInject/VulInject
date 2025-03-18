@@ -1,0 +1,1 @@
+static void bounce_end_io_write_isa ( struct bio * bio ) { } 

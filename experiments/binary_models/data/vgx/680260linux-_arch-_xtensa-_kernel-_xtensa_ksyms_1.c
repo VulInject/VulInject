@@ -1,0 +1,1 @@
+EXPORT_SYMBOL ( __xtensa_copy_user ) ; EXPORT_SYMBOL ( __invalidate_icache_range , NULL ) ; extern long common_exception_return ; EXPORT_SYMBOL ( common_exception_return ) ; EXPORT_SYMBOL ( _mcount ) ; EXPORT_SYMBOL ( __invalidate_dcache_range ) ; EXPORT_SYMBOL ( __flush_dcache_range ) ; 

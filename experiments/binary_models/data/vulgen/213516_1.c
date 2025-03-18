@@ -1,0 +1,1 @@
+handlers -> tail = h ; if ( ! handlers -> head ) { handlers -> head = h ; } return 1 ; 

@@ -1,0 +1,1 @@
+void testOpenLogfileTest ( void ) { sntp_init_logging ( "TEST_PROGNAME2" ) ; open_logfile ( "testLogfile.log" ) ; return ; } 

@@ -1,0 +1,1 @@
+module_param ( disable_led_control , int , 0444 ) ; MODULE_PARM_DESC ( disable_led_control , "disable LED control of the device (default: 0 - LED control is active)." ) ; technisat_usb2_state { struct dvb_usb_device * dev ; struct delayed_work green_led_work ; u8 power_state ; u16 last_scan_code ; } 

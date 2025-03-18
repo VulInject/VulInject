@@ -1,0 +1,1 @@
+static uint32_t xxh32_round ( uint32_t seed , const uint32_t input ) { seed += input * PRIME32_2 ; seed *= PRIME32_1 ; return seed ; } 

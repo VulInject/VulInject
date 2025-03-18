@@ -1,0 +1,1 @@
+moxart_timer { void __iomem * base ; unsigned int t1_disable_val ; unsigned int t1_enable_val ; unsigned int count_per_tick ; } 

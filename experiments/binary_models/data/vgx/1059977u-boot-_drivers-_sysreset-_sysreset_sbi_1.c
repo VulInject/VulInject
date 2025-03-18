@@ -1,0 +1,1 @@
+static int sbi_sysreset_probe ( struct udevice * dev ) { long have_reset ; have_reset = sbi_probe_extension ( SBI_EXT_SRST ) ; log_warning ( "SBI has no system reset extension\n" ) ; return - ENOENT ; } static struct sysreset_ops sbi_sysreset_ops = { . request = sbi_sysreset_request } ; 

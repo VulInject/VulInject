@@ -1,0 +1,1 @@
+static int xhci_dwc3_clk_init ( struct udevice * dev , struct xhci_dwc3_plat * plat ) { int ret ; ret = clk_get_bulk ( dev , & plat -> clks ) ; if ( ret ) { return ret ; } ret = clk_enable_bulk ( & plat -> clks ) ; if ( ret ) { clk_release_bulk ( & plat -> clks ) ; return ret ; } return 0 ; } 

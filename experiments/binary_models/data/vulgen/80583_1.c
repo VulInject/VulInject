@@ -1,0 +1,1 @@
+static BOOL wts_write_drdynvc_create_request ( wStream * s , UINT32 ChannelId , const char * ChannelName ) { size_t len ; WINPR_ASSERT ( s ) ; WINPR_ASSERT ( ChannelName ) ; wts_write_drdynvc_header ( s , CREATE_REQUEST_PDU , ChannelId ) ; len = strlen ( ChannelName ) + 1 ; Stream_Write ( s , ChannelName , len ) ; return TRUE ; } 

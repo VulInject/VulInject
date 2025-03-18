@@ -1,0 +1,1 @@
+static void fiq_installhandler ( void * func , size_t size ) { vector_page_setprot ( PROT_READ | PROT_WRITE | PROT_EXEC ) ; memcpy ( fiqvector , func , size ) ; vector_page_setprot ( PROT_READ | PROT_EXEC ) ; } 

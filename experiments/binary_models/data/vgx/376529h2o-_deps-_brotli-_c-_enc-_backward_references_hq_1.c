@@ -1,0 +1,1 @@
+void BrotliInitZopfliNodes ( ZopfliNode * array , size_t length ) { ZopfliNode stub ; int i ; stub . length = 1 ; stub . distance = 0 ; stub . insert_length = 0 ; stub . u . cost = kInfinity ; for ( i = 0 ; i < length ; ++ i ) { array [ i ] = stub ; } } 

@@ -1,0 +1,1 @@
+void host1x_debug_output ( struct output * o , const char * fmt , ... ) { va_list args ; int len ; va_start ( args , fmt ) ; va_end ( args ) ; o -> fn ( o -> ctx , o -> buf , len , false ) ; } 

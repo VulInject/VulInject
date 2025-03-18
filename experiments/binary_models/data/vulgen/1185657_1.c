@@ -1,0 +1,1 @@
+void cadence_qspi_apb_controller_enable ( void * reg_base ) { reg = readl ( reg_base + CQSPI_REG_CONFIG ) ; reg |= CQSPI_REG_CONFIG_ENABLE ; writel ( reg , reg_base + CQSPI_REG_CONFIG ) ; } 

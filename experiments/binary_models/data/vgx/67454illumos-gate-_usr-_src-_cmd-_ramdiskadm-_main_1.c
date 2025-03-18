@@ -1,0 +1,1 @@
+static void print_ramdisk ( void ) { di_node_t root ; if ( ( root = di_init ( "/" , DINFOCPYALL ) ) == DI_NODE_NIL ) { die ( gettext ( "couldn't create device tree snapshot" ) ) ; } if ( di_walk_minor ( root , DDI_PSEUDO , 0 , NULL , di_callback ) == - 1 ) { di_fini ( root , NULL ) ; die ( gettext ( "device tree walk failure" ) ) ; } di_fini ( root ) ; } 

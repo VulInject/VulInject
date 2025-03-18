@@ -1,0 +1,1 @@
+void __wrap_memunmap ( void * addr ) { struct nfit_test_resource * nfit_res = get_nfit_res ( ( long ) addr ) ; return memunmap ( addr ) ; } 

@@ -1,0 +1,1 @@
+static inline unsigned int ipv6_clip_hash ( struct clip_tbl * d , const u32 * key ) { int clipt_size_half = d -> clipt_size / 2 ; u32 xor = key [ 0 ] ^ key [ 1 ] ^ key [ 2 ] ^ key [ 3 ] ; return clipt_size_half + ( jhash_1word ( xor , 0 ) % clipt_size_half ) ; } 

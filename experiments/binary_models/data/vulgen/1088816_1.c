@@ -1,0 +1,1 @@
+static int dual_channel_active ( void __iomem * mch_window ) { int row ; int dualch ; for ( dualch = 1 , row = 0 ; dualch && ( row < 4 ) ; row ++ ) { drb [ row ] [ 0 ] = readb ( mch_window + I82975X_DRB + row ) ; drb [ row ] [ 1 ] = readb ( mch_window + I82975X_DRB + row + 0x80 ) ; dualch = dualch && ( drb [ row ] [ 0 ] == drb [ row ] [ 1 ] ) ; } return dualch ; } 

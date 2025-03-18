@@ -1,0 +1,1 @@
+mhdr { { const char * name ; union mhdr * older , * newer ; unsigned long magic ; cfs_time_t size ; } , i unsigned long long junk ; } 

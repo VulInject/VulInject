@@ -1,0 +1,1 @@
+int sd = sizeof ( D ) ; int se = sizeof ( E ) ; int sf = sizeof ( F ) ; int sg = sizeof ( G ) ; int sh = sizeof ( H ) ; 

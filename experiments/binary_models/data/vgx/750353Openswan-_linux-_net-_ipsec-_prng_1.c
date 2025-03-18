@@ -1,0 +1,1 @@
+void prng_final ( prng ) prng * prng ; { int i ; for ( i = 0 ; i <= 255 ; i ++ ) { prng -> sbox [ i ] = 0 ; } prng -> i = 0 ; prng -> j = 0 ; } 

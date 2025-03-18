@@ -1,0 +1,1 @@
+_lzw_buf_init ( , ) { if ( size == 0 ) { size = 16 ; } buf -> status = CAIRO_STATUS_SUCCESS ; buf -> data_size = size ; buf -> num_data = 0 ; buf -> pending = 0 ; buf -> pending_bits = 0 ; buf -> data = _cairo_malloc ( size ) ; if ( unlikely ( buf -> data == NULL ) ) { buf -> data_size = 0 ; buf -> status = _cairo_error ( CAIRO_STATUS_NO_MEMORY , NULL ) ; return ; } } 

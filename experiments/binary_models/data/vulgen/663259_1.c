@@ -1,0 +1,1 @@
+int main ( void ) { int i ; AVBPrint dst ; av_bprint_init ( & dst , 0 , AV_BPRINT_SIZE_UNLIMITED ) ; for ( i = 0 ; i < FF_ARRAY_ELEMS ( test_cases ) ; i ++ ) { if ( ret < 0 ) { return ret ; } printf ( "%s -->%s\n" , test_cases [ i ] , dst . str ) ; av_bprint_clear ( & dst ) ; } av_bprint_finalize ( & dst , NULL ) ; return 0 ; } 

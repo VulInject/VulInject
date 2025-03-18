@@ -1,0 +1,1 @@
+static void nd_pfn_release ( struct device * dev ) { struct nd_region * nd_region = to_nd_region ( dev -> parent ) ; struct nd_pfn * nd_pfn = to_nd_pfn ( dev ) ; dev_dbg ( dev , "trace\n" ) ; nd_detach_ndns ( & nd_pfn -> dev , & nd_pfn -> ndns ) ; ida_simple_remove ( & nd_region -> pfn_ida , nd_pfn -> id ) ; kfree ( nd_pfn ) ; } 

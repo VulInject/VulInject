@@ -1,1 +1,1 @@
-int FUN1 ( struct VAR1 * VAR1 , unsigned long VAR2 , unsigned long VAR3 ) { if ( VAR2 & ~ VAR4 ) { return - VAR5 ; } if ( FUN2 ( VAR2 ) != VAR6 ) { return - VAR5 ; } return 0 ; }
+int prepare_hugepage_range ( struct file * file , unsigned long addr , unsigned long len ) { if ( addr & ~ HPAGE_MASK ) { return - EINVAL ; } if ( REGION_NUMBER ( addr ) != RGN_HPAGE ) { return - EINVAL ; } return 0 ; } 

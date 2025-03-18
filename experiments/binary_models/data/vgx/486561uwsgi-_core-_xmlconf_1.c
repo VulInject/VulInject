@@ -1,0 +1,1 @@
+static void endElement ( void * xml_id , const XML_Char * name ) { if ( ! uwsgi_xml_found_stanza ) { return ; } if ( ! strcmp ( name , "uwsgi" ) ) { return ; } if ( ! uwsgi_xml_found_opt_key ) { return ; } add_exported_option ( strdup ( uwsgi_xml_found_opt_key ) , strdup ( "1" ) , 0 ) ; uwsgi_xml_found_opt_key = NULL ; } 

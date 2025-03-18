@@ -1,0 +1,1 @@
+static void cppc_cpufreq_register_em ( struct cpufreq_policy * policy ) { struct cppc_cpudata * cpu_data ; struct em_data_callback em_cb = EM_ADV_DATA_CB ( cppc_get_cpu_power , cppc_get_cpu_cost ) ; cpu_data = policy -> driver_data ; } 

@@ -1,0 +1,1 @@
+static inline int iommu_pmu_validate_per_cntr_event ( struct iommu_pmu * iommu_pmu , int idx , struct perf_event * event ) { u32 event_group = iommu_event_group ( event -> attr . config ) ; u32 select = iommu_event_select ( event -> attr . config ) ; return 0 ; } 

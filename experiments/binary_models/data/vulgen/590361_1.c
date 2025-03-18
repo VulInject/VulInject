@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "Boris BREZILLON<boris.brezillon@free-electrons.com>" ) ; MODULE_DESCRIPTION ( "Allwinner P2WI driver" ) ; 

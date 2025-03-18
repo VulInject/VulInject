@@ -1,0 +1,1 @@
+static int ohci_at91_port_suspend ( struct regmap * regmap , u8 set ) { u32 regval ; int ret ; ret = regmap_read ( regmap , AT91_SFR_OHCIICR , & regval ) ; if ( ret ) { return ret ; } if ( set ) { regval |= AT91_OHCIICR_USB_SUSPEND ; } else { regval &= ~ AT91_OHCIICR_USB_SUSPEND ; } regmap_write ( regmap , AT91_SFR_OHCIICR , regval ) ; return 0 ; } 

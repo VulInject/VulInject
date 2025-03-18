@@ -1,0 +1,1 @@
+ipcp_cloned_create ( , ) { ipa_node_create ( new_node ) ; ipcp_method_set_orig_node ( new_node , orig_node ) ; ipa_method_formal_compute_count ( new_node ) ; } 

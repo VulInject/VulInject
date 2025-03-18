@@ -1,0 +1,1 @@
+void parseHistoryUpdateType ( proto_tree * tree , tvbuff_t * tvb , packet_info * pinfo _U_ , gint * pOffset ) { * pOffset += 4 ; } 

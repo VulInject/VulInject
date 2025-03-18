@@ -1,0 +1,1 @@
+static unsigned int width = 8 , wbytes , height = 16 ; bbox { unsigned int width ; int height ; int x ; int y ; } 

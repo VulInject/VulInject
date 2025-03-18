@@ -1,0 +1,1 @@
+if ( re == NULL ) { return PCRE_ERROR_NULL ; } if ( re -> magic_number != MAGIC_NUMBER ) { return PCRE_ERROR_BADMAGIC ; } re -> ref_count = ( - adjust > re -> ref_count ) ?0 : ( adjust + re -> ref_count > 65535 ) ?65535 : re -> ref_count + adjust ; return re -> ref_count ; 

@@ -1,0 +1,1 @@
+void ppc64_mtscomc ( u_int64_t val ) { int s ; s = ppc_intr_disable ( ) ; " mtspr 276,%0; isync" :: "r" ( val ) ; } ppc_intr_enable ( s , NULL ) ; 

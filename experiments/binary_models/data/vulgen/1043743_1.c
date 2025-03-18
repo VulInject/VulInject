@@ -1,0 +1,1 @@
+int tsp_bus_dmamap_load_sgmap ( t , map , buf , buflen , p , flags ) bus_dma_tag_t t ; bus_dmamap_t map ; void * buf ; bus_size_t buflen ; struct proc * p ; int flags ; { int error ; if ( error == 0 ) { tsp_tlb_invalidate ( t -> _cookie ) ; } return ( error ) ; } 

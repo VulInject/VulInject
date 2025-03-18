@@ -1,0 +1,1 @@
+void reset_winnt_time ( void ) { SYSTEMTIME st ; if ( ntservice_systemisshuttingdown ( ) && sys_leap != LEAP_NOTINSYNC ) { GetSystemTime ( & st ) ; SetSystemTime ( & st ) ; NLOG ( ) msyslog ( LOG_NOTICE , "system is shutting down, CMOS time reset." ) ; } } 

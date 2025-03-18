@@ -1,0 +1,1 @@
+static av_cold int libjxl_encode_close ( AVCodecContext * avctx ) { LibJxlEncodeContext * ctx = avctx -> priv_data ; if ( ctx -> runner ) { JxlThreadParallelRunnerDestroy ( ctx -> runner ) ; } ctx -> runner = NULL ; if ( ctx -> encoder ) { JxlEncoderDestroy ( ctx -> encoder ) ; } av_freep ( & ctx -> buffer ) ; return 0 ; } 

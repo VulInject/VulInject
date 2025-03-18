@@ -1,0 +1,1 @@
+exec_timer_delete_cb ( , , ) { struct t_exec_cmd * exec_cmd , * ptr_exec_cmd ; ( void ) data ; ( void ) remaining_calls ; exec_cmd = ( t_exec_cmd * ) pointer ; if ( ! exec_cmd ) { return WEECHAT_RC_OK ; } for ( ptr_exec_cmd = exec_cmds ; ptr_exec_cmd ; ptr_exec_cmd = ptr_exec_cmd -> next_cmd ) { if ( ptr_exec_cmd == exec_cmd ) { break ; } } return WEECHAT_RC_OK ; } 

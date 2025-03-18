@@ -1,0 +1,1 @@
+static void file_depths ( char * buf ) { struct submitter * s = & submitters [ 0 ] ; unsigned i ; char * p ; p = buf ; for ( i = 0 ; i < s -> nr_files ; i ++ ) { struct file * f = & s -> files [ i ] ; if ( i + 1 == s -> nr_files ) { p += sprintf ( p , "%d" , f -> pending_ios ) ; } else { p += sprintf ( p , "%d, " , f -> pending_ios ) ; } } } 

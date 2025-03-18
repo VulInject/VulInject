@@ -1,0 +1,1 @@
+const char * _strip_quotes ( char * ipaddress ) { char * cp = ( char * ) NULL ; ipaddress ++ ; if ( ( cp = strchr ( ipaddress , '"' ) ) == NULL ) { return ( ( char * ) ipaddress ) ; } * cp ++ = '\0' ; return ( ipaddress ) ; } 

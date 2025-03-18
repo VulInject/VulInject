@@ -1,0 +1,1 @@
+static ssize_t charge_control_thresholds_show ( struct device * dev , struct device_attribute * attr , char * buf ) { int err , start , end ; err = huawei_wmi_battery_get ( & start , & end ) ; return sprintf ( buf , "%d %d\n" , start , end ) ; } 

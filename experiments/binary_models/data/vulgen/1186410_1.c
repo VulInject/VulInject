@@ -1,0 +1,1 @@
+GC_INNER void GC_remove_counts ( struct hblk * h , size_t sz ) { struct hblk * hbp ; if ( HDR ( h + 1 ) == 0 ) { for ( hbp = h + 2 ; ( word ) hbp < ( word ) h + sz ; hbp ++ ) { GC_ASSERT ( HDR ( hbp ) == 0 ) ; } return ; } for ( hbp = h + 1 ; ( word ) hbp < ( word ) h + sz ; hbp += 1 ) { SET_HDR ( hbp , 0 ) ; } } 

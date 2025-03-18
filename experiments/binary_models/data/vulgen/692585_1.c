@@ -1,0 +1,1 @@
+EVP_PKEY * ssl_getkey ( void ) { EVP_PKEY * key ; BIO * bio ; tt_assert ( bio ) ; key = PEM_read_bio_PrivateKey ( bio , NULL , NULL , NULL ) ; BIO_free ( bio ) ; tt_assert ( key ) ; return key ; end return NULL ; } 

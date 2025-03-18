@@ -1,0 +1,1 @@
+static int sja1105_init_mii_settings ( struct sja1105_private * priv ) { struct sja1105_table * table ; table = & priv -> static_config . tables [ BLK_IDX_XMII_PARAMS ] ; table -> entries = calloc ( SJA1105_MAX_XMII_PARAMS_COUNT , table -> ops -> unpacked_entry_size ) ; table -> entry_count = SJA1105_MAX_XMII_PARAMS_COUNT ; return 0 ; } 

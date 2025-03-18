@@ -1,0 +1,1 @@
+lock_rng ( ) { gpg_err_code_t rc ; rc = gpgrt_lock_lock ( & fips_rng_lock ) ; if ( rc ) { log_fatal ( "failed to acquire the RNG lock: %s\n" , gpg_strerror ( rc ) ) ; } } 

@@ -1,0 +1,1 @@
+static int me_pagecache_dirty ( struct page_state * ps , struct page * p ) { struct address_space * mapping = page_mapping ( p ) ; SetPageError ( p , NULL ) ; if ( mapping ) { mapping_set_error ( mapping , - EIO ) ; } return me_pagecache_clean ( ps , p ) ; } 

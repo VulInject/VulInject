@@ -1,0 +1,1 @@
+static int fixup_req ( void * * param , int param_no ) { ERR ( "function takes at most 4 parameters.\n" ) ; return - 1 ; } 

@@ -1,0 +1,1 @@
+sockopt_broadcast ( ) { int ret ; int on = 1 ; if ( ret < 0 ) { zlog_warn ( "can't set sockopt SO_BROADCAST to socket %d" , sock ) ; return - 1 ; } return 0 ; } 

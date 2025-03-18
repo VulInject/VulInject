@@ -1,0 +1,1 @@
+int fd_is_network_fs ( int fd ) { struct statfs s ; return is_network_fs ( & s ) ; } 

@@ -1,0 +1,1 @@
+void f03 ( void * restrict * dst ) void * restrict rp ; void * up ; void f00 ( void * dst ) { } int f01 ( typeof ( ) dst ) ( ) void f02 ( void * * dst ) ( ) void f03 ( typeof ( ) dst ) ( ) void foo ( void ) ( rp = up , up = rp ) ; 

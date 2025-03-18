@@ -1,0 +1,1 @@
+static void disband ( struct mg_connection * c ) { struct mg_connection * c2 = ( mg_connection * ) c -> fn_data ; if ( c2 != NULL ) { c2 -> is_draining = 1 ; c2 -> fn_data = NULL ; } c -> fn_data = NULL ; } 

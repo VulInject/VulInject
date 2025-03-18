@@ -1,0 +1,1 @@
+else { char * tmp ; if ( asprintf ( & tmp , "%s/" , fname ) == - 1 ) { fprintf ( stderr , "Error: cannot allocate memory, %s:%d\n" , __FILE__ , __LINE__ ) ; errExit ( "asprintf" ) ; } rv = stat ( tmp , & s ) ; } if ( rv == - 1 ) { return 0 ; } if ( S_ISDIR ( s . st_mode ) ) { return 1 ; } return 0 ; 

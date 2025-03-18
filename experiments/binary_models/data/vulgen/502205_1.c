@@ -1,0 +1,1 @@
+static void init_dent_inode ( const struct qstr * name , struct page * ipage ) { struct f2fs_inode * ri ; f2fs_wait_on_page_writeback ( ipage , NODE , true ) ; ri = F2FS_INODE ( ipage ) ; ri -> i_namelen = cpu_to_le32 ( name -> len ) ; set_page_dirty ( ipage ) ; } 

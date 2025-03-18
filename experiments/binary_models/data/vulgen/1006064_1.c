@@ -1,0 +1,1 @@
+static const char * alc_atk_text [ ] { "8.4ms" "16.8ms" "33.6ms" "67.2ms" "134.4ms" "268.8ms" "537.6ms" "1.075s" "2.15s" "4.3s" "8.6s" } ; ; 

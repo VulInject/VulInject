@@ -1,0 +1,1 @@
+IRQCHIP_DECLARE ( arc_intc , "snps,arc700-intc" , init_onchip_IRQ ) ; void arch_local_irq_enable ( void ) { cfs_time_t flags = arch_local_save_flags ( ) ; if ( flags & STATUS_A2_MASK ) { flags |= STATUS_E2_MASK ; } if ( flags & STATUS_A1_MASK ) { flags |= STATUS_E1_MASK ; } arch_local_irq_restore ( flags ) ; } 

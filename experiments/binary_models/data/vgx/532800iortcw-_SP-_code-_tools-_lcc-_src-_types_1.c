@@ -1,0 +1,1 @@
+Type promote ( Type ty ) { ty = unqual ( ty ) ; switch ( ty -> op ) { case ENUM : return inttype ; case INT : break ; case UNSIGNED : if ( ty -> size < inttype -> size ) { return inttype ; } if ( ty -> size < unsignedtype -> size ) { return unsignedtype ; } break ; case FLOAT : if ( ty -> size < doubletype -> size ) { return doubletype ; } } return ty ; } 

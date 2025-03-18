@@ -1,0 +1,1 @@
+int uwb_drp_avail_reserve_pending ( struct uwb_rc * rc , struct uwb_mas_bm * mas ) { struct uwb_mas_bm avail ; uwb_drp_available ( rc , & avail ) ; bitmap_andnot ( rc -> drp_avail . pending , rc -> drp_avail . pending , mas -> bm , UWB_NUM_MAS ) ; return 0 ; } 

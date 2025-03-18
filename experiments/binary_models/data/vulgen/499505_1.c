@@ -1,0 +1,1 @@
+static int set_var ( struct fbtft_par * par ) { switch ( par -> info -> var . rotate ) { case 0 : break ; case 180 : write_reg ( par , 0x03 , 0x0000 | ( par -> bgr << 12 ) ) ; break ; case 270 : write_reg ( par , 0x03 , 0x000A | ( par -> bgr << 12 ) ) ; break ; case 90 : write_reg ( par , 0x03 , 0x0009 | ( par -> bgr << 12 ) ) ; break ; } return 0 ; } 

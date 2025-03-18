@@ -1,0 +1,1 @@
+static int sandbox_cmdline_cb_double_lcd ( struct sandbox_state * state , const char * arg ) { return 0 ; } 

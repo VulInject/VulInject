@@ -1,0 +1,1 @@
+bool sm_strlapp ( dst , src , size ) char * * dst ; register const char * src ; ssize_t size ; { register size_t i ; for ( i = 0 ; i < size && ( ( * dst ) [ i ] = src [ i ] ) != '\0' ; i ++ ) { continue ; } ( * dst ) [ i ] = '\0' ; if ( src [ i ] == '\0' ) { * dst += i ; return true ; } ( * dst ) [ 0 ] = '\0' ; return false ; } 

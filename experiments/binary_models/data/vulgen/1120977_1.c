@@ -1,0 +1,1 @@
+gimp_data_factory_view_set_property ( , , , ) { GimpDataFactoryView * factory_view = GIMP_DATA_FACTORY_VIEW ( object ) ; switch ( property_id ) { case PROP_DATA_FACTORY : factory_view -> priv -> factory = g_value_dup_object ( value ) ; break ; case PROP_ACTION_GROUP : factory_view -> priv -> action_group = g_value_dup_string ( value ) ; break ; default : break ; } } 

@@ -1,0 +1,1 @@
+static void graceful_shutdown ( void ) { nwamd_event_t event ; shutting_down = B_TRUE ; nwamd_door_fini ( ) ; nwamd_fini_enms ( ) ; nwamd_fini_ncus ( ) ; nwamd_fini_locs ( ) ; event = nwamd_event_init_shutdown ( ) ; if ( event == NULL ) { pfail ( "nwamd could not create shutdown event, exiting" ) ; } nwamd_event_enqueue ( event ) ; } 

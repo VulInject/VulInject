@@ -1,0 +1,1 @@
+static void flush_help_string ( struct ds * ds ) { if ( ds -> length > 2 ) { ds -> length -= 2 ; ds_clear ( ds ) ; } } 

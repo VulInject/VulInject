@@ -1,0 +1,1 @@
+mlx5e_selq_params { unsigned int num_regular_queues ; unsigned int num_channels ; int num_tcs ; { u8 is_special_queues ; { bool is_htb 1 ; bool is_ptp 1 ; } } u16 htb_maj_id ; u16 htb_defcls ; } 

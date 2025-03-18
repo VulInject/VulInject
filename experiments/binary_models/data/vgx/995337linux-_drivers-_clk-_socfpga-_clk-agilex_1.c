@@ -1,0 +1,1 @@
+static int agilex_clkmgr_probe ( struct platform_device * pdev ) { int * probe_func ( struct platform_device * init_func ) probe_func = of_device_get_match_data ( & pdev -> dev ) ; return probe_func ( pdev ) ; } 

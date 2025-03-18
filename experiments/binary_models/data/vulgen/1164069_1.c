@@ -1,0 +1,1 @@
+static inline void ReadHSCXfifo ( struct IsdnCardState * cs , int hscx , u_char * data , int size ) { byteout ( cs -> hw . avm . cfg_reg + ADDRREG_OFFSET , HSCX_FIFO_OFFSET + hscx * HSCX_CH_DIFF ) ; } 

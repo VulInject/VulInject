@@ -1,0 +1,1 @@
+static int getattribute ( lua_State * L ) { int value = 0 ; int texget = 0 ; if ( texget > 0 ) { return texget ; } lua_pushinteger ( L , value ) ; return 1 ; } 

@@ -1,0 +1,1 @@
+void cec_notifier_set_phys_addr_from_edid ( struct cec_notifier * n , const struct edid * edid ) { u16 pa = CEC_PHYS_ADDR_INVALID ; if ( n == NULL ) { return ; } cec_notifier_set_phys_addr ( n , pa ) ; } 

@@ -1,0 +1,1 @@
+static void __init dec_init_kn02ba ( void ) { memcpy ( & dec_interrupt , & kn02ba_interrupt , sizeof ( kn02ba_interrupt ) ) ; memcpy ( & cpu_mask_nr_tbl , & kn02ba_cpu_mask_nr_tbl , sizeof ( kn02ba_cpu_mask_nr_tbl ) ) ; memcpy ( & asic_mask_nr_tbl , & kn02ba_asic_mask_nr_tbl , sizeof ( kn02ba_asic_mask_nr_tbl ) ) ; init_ioasic_irqs ( IO_IRQ_BASE ) ; } 

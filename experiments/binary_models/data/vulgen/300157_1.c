@@ -1,0 +1,1 @@
+static void pi3usb30532_remove ( struct i2c_client * client ) { struct pi3usb30532 * pi = i2c_get_clientdata ( client ) ; typec_mux_unregister ( pi -> mux ) ; } 

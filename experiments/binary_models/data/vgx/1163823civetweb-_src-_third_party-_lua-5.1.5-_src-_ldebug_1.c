@@ -1,0 +1,1 @@
+LUA_API int lua_sethook ( lua_State * L , lua_Hook func , int mask , int count ) { if ( func == NULL || mask == 0 ) { mask = 0 ; func = NULL ; } L -> hook = func ; L -> basehookcount = count ; resethookcount ( L ) ; L -> hookmask = cast_byte ( mask , NULL ) ; return 1 ; } 

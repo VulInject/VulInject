@@ -1,0 +1,1 @@
+const GF_FilterRegister * rewind_register ( GF_FilterSession * session ) { return RewinderRegister ; } 

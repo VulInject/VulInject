@@ -1,0 +1,1 @@
+const char * RunModeIpsWinDivertGetDefaultMode ( int ) { return "autofp" ; } 

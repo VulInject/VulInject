@@ -1,0 +1,1 @@
+lpc32xx_usbd_dd_gad { u32 dd_next_phy ; u32 dd_setup ; u32 dd_buffer_addr ; u32 dd_status ; u32 dd_iso_ps_mem_addr ; u32 this_dma ; u32 dd_next_v ; } 

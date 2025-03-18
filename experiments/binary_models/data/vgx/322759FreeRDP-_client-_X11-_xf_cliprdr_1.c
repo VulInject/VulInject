@@ -1,0 +1,1 @@
+static void xf_clipboard_formats_free ( xfClipboard * clipboard ) { WINPR_ASSERT ( clipboard ) ; xf_cliprdr_free_formats ( clipboard -> lastSentFormats , clipboard -> lastSentNumFormats ) ; clipboard -> lastSentNumFormats = 0 ; } 

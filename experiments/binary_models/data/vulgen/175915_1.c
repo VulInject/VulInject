@@ -1,0 +1,1 @@
+av_cold void FUNC ff_vp9dsp_init ( VP9DSPContext * dsp ) { FUNC ff_vp9dsp_intrapred_init ( dsp ) vp9dsp_itxfm_init ( dsp ) ; FUNC ff_vp9dsp_mc_init ( dsp ) FUNC ff_vp9dsp_scaled_mc_init ( dsp ) } 

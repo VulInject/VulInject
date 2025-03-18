@@ -1,0 +1,1 @@
+static int buck_get_enable ( struct udevice * dev ) { return true ; } 

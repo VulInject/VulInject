@@ -1,0 +1,1 @@
+extern List acct_storage_g_get_events ( void * db_conn , uint32_t uid , slurmdb_event_cond_t * event_cond ) { return ( * ( ops . get_events ) ) ( db_conn , uid , event_cond ) ; } 

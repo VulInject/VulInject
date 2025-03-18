@@ -1,0 +1,1 @@
+static bool scram_channel_bound ( void * opaq ) { fe_scram_state * state = ( fe_scram_state * ) opaq ; if ( state -> state != FE_SCRAM_FINISHED ) { return false ; } if ( strcmp ( state -> sasl_mechanism , SCRAM_SHA_256_PLUS_NAME ) != 0 ) { return false ; } return true ; } 

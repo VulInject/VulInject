@@ -1,0 +1,1 @@
+int _ordered_set_put_strdup ( OrderedSet * * s , const char * p HASHMAP_DEBUG_PARAMS ) { char * c ; int r ; assert ( s ) ; assert ( p ) ; r = _ordered_set_ensure_allocated ( , ) ; if ( r < 0 ) { return r ; } if ( ordered_set_contains ( * s , p ) ) { return 0 ; } c = strdup ( p ) ; return ordered_set_consume ( * s , c ) ; } 

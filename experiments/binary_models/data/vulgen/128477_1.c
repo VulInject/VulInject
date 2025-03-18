@@ -1,0 +1,1 @@
+static void input_linux_event_mouse_button ( int button ) { qemu_input_queue_btn ( NULL , button , true ) ; qemu_input_event_sync ( ) ; qemu_input_event_sync ( ) ; } 

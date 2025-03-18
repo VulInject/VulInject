@@ -1,0 +1,1 @@
+static int qcom_labibb_ocp_hw_enable ( struct regulator_dev * rdev ) { struct labibb_regulator * vreg = rdev_get_drvdata ( rdev ) ; int ret ; ret = regmap_update_bits ( rdev -> regmap , vreg -> base + REG_LABIBB_INT_LATCHED_CLR , LABIBB_INT_VREG_OK , 1 ) ; return regmap_update_bits ( rdev -> regmap , vreg -> base + REG_LABIBB_INT_EN_SET , LABIBB_INT_VREG_OK , 1 ) ; } 

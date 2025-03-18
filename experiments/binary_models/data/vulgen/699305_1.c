@@ -1,0 +1,1 @@
+void free_authattr ( authattr_t * auth ) { if ( auth ) { free ( auth -> name ) ; free ( auth -> res1 ) ; free ( auth -> res2 ) ; free ( auth -> short_desc ) ; free ( auth -> long_desc ) ; free ( auth ) ; } } 

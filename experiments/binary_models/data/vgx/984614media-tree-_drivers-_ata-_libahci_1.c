@@ -1,0 +1,1 @@
+int ahci_port_resume ( struct ata_port * ap ) { ahci_rpm_get_port ( ap ) ; ahci_power_up ( ap ) ; ahci_start_port ( ap , NULL ) ; if ( sata_pmp_attached ( ap ) ) { ahci_pmp_attach ( ap ) ; } else { ahci_pmp_detach ( ap ) ; } return 0 ; } 

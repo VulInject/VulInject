@@ -1,0 +1,1 @@
+int channel_write ( struct cgi_request * r , void * buf , size_t count ) { int ret ; if ( r -> active == MK_FALSE ) { return - 1 ; } MK_TRACE ( "channel write: %d bytes" , count ) ; mk_stream_in_raw ( & r -> sr -> stream , NULL , buf , count , NULL , NULL ) ; if ( ret & MK_CHANNEL_ERROR ) { r -> active = MK_FALSE ; cgi_finish ( r ) ; } return 0 ; } 

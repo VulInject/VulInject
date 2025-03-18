@@ -1,0 +1,1 @@
+int func ( int * valp ) { int val , locked ; while ( ( val = * valp ) != 0 ) { if ( count ) { if ( count ) { locked = 1 ; } else { locked = 1 ; } if ( ! locked ) { continue ; } } if ( ! count ) { count -- ; } break ; } return val ; } 

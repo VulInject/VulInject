@@ -1,0 +1,1 @@
+DEFINE_DEBUGFS_ATTRIBUTE ( fops_regval , mt7615_reg_get , mt7615_reg_set , "0x%08llx\n" ) ; static int mt7615_radar_pattern_set ( void * data , u64 val ) { struct mt7615_dev * dev = data ; int err ; mt7615_mutex_acquire ( dev ) ; err = mt7615_mcu_rdd_send_pattern ( dev ) ; mt7615_mutex_release ( dev ) ; return err ; } 

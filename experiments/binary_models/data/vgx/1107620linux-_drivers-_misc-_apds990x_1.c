@@ -1,0 +1,1 @@
+static int apds990x_resume ( struct device * dev ) { struct i2c_client * client = to_i2c_client ( dev ) ; struct apds990x_chip * chip = i2c_get_clientdata ( client ) ; apds990x_chip_on ( chip , NULL ) ; return 0 ; } 

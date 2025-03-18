@@ -1,0 +1,1 @@
+int mbedtls_pk_setup ( mbedtls_pk_context * ctx , const mbedtls_pk_info_t * info ) { if ( ( ctx -> pk_ctx = info -> ctx_alloc_func ( ) ) == NULL ) { return ( MBEDTLS_ERR_PK_ALLOC_FAILED ) ; } ctx -> pk_info = info ; return ( 0 ) ; } 

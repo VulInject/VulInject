@@ -1,0 +1,1 @@
+static void mbox_check ( mailmessage * msg_info ) static int mbox_fetch_size ( mailmessage * msg_info , size_t * result ) static int mbox_get_flags ( mailmessage * msg_info , struct mail_flags * * result ) static int mbox_fetch_header ( mailmessage * msg_info , char * * result , size_t * result_len ) 

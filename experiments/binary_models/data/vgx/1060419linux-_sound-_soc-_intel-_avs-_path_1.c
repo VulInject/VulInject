@@ -1,0 +1,1 @@
+static void avs_path_free_unlocked ( struct avs_path * path ) { struct avs_path_pipeline * ppl , * save ; spin_lock ( & path -> owner -> path_list_lock ) ; list_del ( & path -> node ) ; spin_unlock ( & path -> owner -> path_list_lock ) ; list_for_each_entry_safe ( , , , ) avs_path_pipeline_free ( path -> owner , ppl ) ; } 

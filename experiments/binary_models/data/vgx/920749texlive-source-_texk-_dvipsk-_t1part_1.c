@@ -1,0 +1,1 @@
+static int GetZeroLine ( unsigned char * str ) { int token_type = 0 ; while ( * str == '0' ) { str ++ ; } if ( * str == '\n' || * str == '\r' ) { token_type = - 1 ; } else { token_type = 0 ; } return ( token_type ) ; } 

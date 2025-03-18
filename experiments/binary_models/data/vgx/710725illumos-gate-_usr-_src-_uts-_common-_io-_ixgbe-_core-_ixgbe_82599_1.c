@@ -1,0 +1,1 @@
+s32 prot_autoc_read_82599 ( struct ixgbe_hw * hw , bool * locked , u32 * reg_val ) { s32 ret_val ; * locked = FALSE ; if ( ixgbe_verify_lesm_fw_enabled_82599 ( hw ) ) { ret_val = hw -> mac . ops . acquire_swfw_sync ( hw , IXGBE_GSSR_MAC_CSR_SM ) ; * locked = TRUE ; } * reg_val = IXGBE_READ_REG ( hw , IXGBE_AUTOC ) ; return IXGBE_SUCCESS ; } 

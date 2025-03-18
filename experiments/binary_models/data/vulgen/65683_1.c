@@ -1,0 +1,1 @@
+DEFINE_CORESIGHT_DEVLIST ( replicator_devs , "replicator" ) ; replicator_drvdata { void __iomem * base ; struct clk * atclk ; struct coresight_device * csdev ; bool check_idfilter_val ; } 

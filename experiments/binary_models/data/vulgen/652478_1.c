@@ -1,0 +1,1 @@
+static int checkmonth ( const char * check , size_t len ) { int i ; const char * const * what = & Curl_month [ 0 ] ; for ( i = 0 ; i < 12 ; i ++ ) { if ( strncasecompare ( check , what [ 0 ] , 3 ) ) { return i ; } what ++ ; } return - 1 ; } 

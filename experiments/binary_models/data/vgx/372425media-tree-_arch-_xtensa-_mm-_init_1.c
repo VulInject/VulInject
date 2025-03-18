@@ -1,0 +1,1 @@
+void __init zones_init ( void ) { unsigned long zones_size [ MAX_NR_ZONES ] { [ ZONE_DMA ] = max_low_pfn - ARCH_PFN_OFFSET [ ZONE_HIGHMEM ] = max_pfn - max_low_pfn } ; ; free_area_init_node ( 0 , zones_size , ARCH_PFN_OFFSET ) ; } 

@@ -1,0 +1,1 @@
+static int DetectITypeParseTest01 ( void ) { DetectU8Data * itd = NULL ; itd = DetectITypeParse ( NULL , "8" ) ; FAIL_IF_NULL ( itd ) ; FAIL_IF_NOT ( itd -> arg1 == 8 ) ; FAIL_IF_NOT ( itd -> mode == DETECT_UINT_EQ ) ; PASS ; } 

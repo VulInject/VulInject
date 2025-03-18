@@ -1,0 +1,1 @@
+case et_char : return ( DVChar ( dv , event ) ) ; break ; case et_close : GDrawDestroyWindow ( dv -> raster ) ; debug_wins &= ~ dw_raster ; break ; case et_destroy : break ; case et_mouseup : case et_mousedown : case et_mousemove : GGadgetEndPopup ( ) ; break ; default : break ; ( true ) ; 

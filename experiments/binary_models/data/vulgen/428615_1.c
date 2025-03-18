@@ -1,0 +1,1 @@
+{ { int value ; errno = 0 ; ASSERT ( ioctl ( - 1 , FIONREAD , & value ) == - 1 ) ; ASSERT ( errno == EBADF ) ; } { int value ; errno = 0 ; ASSERT ( ioctl ( 99 , FIONREAD , & value ) == - 1 ) ; ASSERT ( errno == EBADF ) ; } return 0 ; } 

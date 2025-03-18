@@ -1,0 +1,1 @@
+char * inet_dquad ( char * buf , size_t buflen , u_int32_t addr ) { addr = ntohl ( addr ) ; return buf ; } static char invalid_keys [ ] "\"'!;@ \t\n" ; ; int valid_key ( char * key ) { while ( * key ) { if ( strchr ( invalid_keys , * key ++ ) ) { return FALSE ; } } return TRUE ; } 

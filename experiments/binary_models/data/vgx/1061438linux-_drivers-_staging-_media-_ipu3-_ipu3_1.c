@@ -1,1 +1,1 @@
-static irqreturn_t FUN1 ( int VAR1 , void * VAR2 ) { struct VAR3 * VAR4 = VAR2 ; return VAR5 ; }
+static irqreturn_t imgu_isr ( int irq , void * imgu_ptr ) { struct imgu_device * imgu = imgu_ptr ; return IRQ_WAKE_THREAD ; } 

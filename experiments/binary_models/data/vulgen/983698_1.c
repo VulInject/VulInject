@@ -1,0 +1,1 @@
+void board_debug_uart_init ( void ) { rk_clrsetreg ( & grf -> iofunc_con2 , UART2_IO_SEL_MASK , UART2_IO_SEL_M1 << UART2_IO_SEL_SHIFT ) ; rk_clrsetreg ( & grf -> gpio3a_iomux_l , GPIO3A3_MASK | GPIO3A2_MASK , GPIO3A3_UART2_RX_M1 << GPIO3A3_SHIFT | GPIO3A2_UART2_TX_M1 << GPIO3A2_SHIFT ) ; } 

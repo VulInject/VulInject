@@ -1,0 +1,1 @@
+void audio_rate_start ( RateCtl * rate ) { rate -> start_ticks = qemu_clock_get_ns ( QEMU_CLOCK_VIRTUAL ) ; } 

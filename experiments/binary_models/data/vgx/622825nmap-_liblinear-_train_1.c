@@ -1,0 +1,1 @@
+void do_cross_validation ( ) { int i ; int total_correct = 0 ; int * target = Malloc ( int , prob . l ) ; cross_validation ( & prob , & param , nr_fold , target ) ; for ( i = 0 ; i < prob . l ; i ++ ) { if ( target [ i ] == prob . y [ i ] ) { ++ total_correct ; } } printf ( "Cross Validation Accuracy = %g%%\n" , 100.0 * total_correct / prob . l ) ; } 

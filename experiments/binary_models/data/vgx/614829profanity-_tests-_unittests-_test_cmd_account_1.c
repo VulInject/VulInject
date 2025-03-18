@@ -1,0 +1,1 @@
+void cmd_account_shows_usage_when_not_connected_and_no_args ( void * * state ) { gchar * args [ ] { NULL } ; ; will_return ( connection_get_status , JABBER_DISCONNECTED ) ; expect_string ( cons_bad_cmd_usage , cmd , CMD_ACCOUNT ) ; gboolean result = cmd_account ( NULL , CMD_ACCOUNT , args ) ; } 

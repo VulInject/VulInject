@@ -1,0 +1,1 @@
+static struct yang_data * lib_interface_vrrp_vrrp_group_v4_state_get_elem ( struct nb_cb_get_elem_args * args ) { const struct vrrp_vrouter * vr = args -> list_entry ; return yang_data_new_enum ( args -> xpath ) ; } 

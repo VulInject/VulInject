@@ -1,0 +1,1 @@
+void ttfCleanUpGlyphCache ( TTFontPtr font ) { ttfFreeCache ( font ) ; } 

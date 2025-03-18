@@ -1,0 +1,1 @@
+static int syscon_pre_probe ( struct udevice * dev ) { struct syscon_uc_info * priv = dev_get_uclass_priv ( dev ) ; struct syscon_base_plat * plat = dev_get_plat ( dev ) ; return regmap_init_mem_plat ( dev , plat -> reg , ARRAY_SIZE ( plat -> reg ) , & priv -> regmap ) ; return regmap_init_mem ( dev_ofnode ( dev ) , & priv -> regmap ) ; } 

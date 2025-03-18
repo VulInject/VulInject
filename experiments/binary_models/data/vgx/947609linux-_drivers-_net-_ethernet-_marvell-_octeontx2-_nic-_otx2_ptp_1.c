@@ -1,0 +1,1 @@
+static int ptp_extts_on ( struct otx2_ptp * ptp , int on ) { struct ptp_req * req ; if ( ! ptp -> nic ) { return - ENODEV ; } req = otx2_mbox_alloc_msg_ptp_op ( & ptp -> nic -> mbox ) ; req -> op = PTP_OP_EXTTS_ON ; req -> extts_on = on ; return otx2_sync_mbox_msg ( & ptp -> nic -> mbox ) ; } 

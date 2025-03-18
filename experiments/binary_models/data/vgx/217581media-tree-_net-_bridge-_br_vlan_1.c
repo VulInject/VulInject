@@ -1,1 +1,1 @@
-void FUN1 ( struct VAR1 * VAR2 ) { struct VAR3 * VAR4 ; FUN2 ( ) ; VAR4 = FUN3 ( VAR2 ) ; FUN4 ( VAR4 ) ; FUN5 ( VAR2 -> VAR5 ) ; FUN6 ( ) ; FUN7 ( VAR4 ) ; }
+void br_vlan_flush ( struct net_bridge * br ) { struct net_bridge_vlan_group * vg ; ASSERT_RTNL ( ) ; vg = br_vlan_group ( br ) ; __vlan_flush ( vg ) ; RCU_INIT_POINTER ( br -> vlgrp ) ; synchronize_rcu ( ) ; __vlan_group_free ( vg ) ; } 

@@ -1,0 +1,1 @@
+static void radius_shutdown ( void ) { if ( dict != NULL ) { g_hash_table_destroy ( dict -> attrs_by_id ) ; g_hash_table_destroy ( dict -> attrs_by_name ) ; g_hash_table_destroy ( dict -> vendors_by_id ) ; g_hash_table_destroy ( dict -> vendors_by_name ) ; g_hash_table_destroy ( dict -> tlvs_by_name ) ; } } 

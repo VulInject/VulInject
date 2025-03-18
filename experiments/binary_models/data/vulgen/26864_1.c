@@ -1,0 +1,1 @@
+{ bar -> generation ++ ; futex_wake ( & bar -> generation , INT_MAX ) ; } else { unsigned int generation = bar -> generation ; { futex_wait ( & bar -> generation , generation ) ; } bar -> generation == generation ; } if ( __sync_add_and_fetch ( & bar -> arrived , - 1 ) == 0 ) { gomp_mutex_unlock ( & bar -> mutex ) ; } 

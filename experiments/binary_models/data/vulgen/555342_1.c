@@ -1,0 +1,1 @@
+static u8 csiphy_get_lane_mask ( struct csiphy_lanes_cfg * lane_cfg ) { u8 lane_mask ; int i ; lane_mask = CSIPHY_3PH_CMN_CSI_COMMON_CTRL5_CLK_ENABLE ; return lane_mask ; } 

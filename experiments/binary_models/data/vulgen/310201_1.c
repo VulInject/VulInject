@@ -1,0 +1,1 @@
+u64 dpu_kms_get_clk_rate ( struct dpu_kms * dpu_kms , char * clock_name ) { struct clk * clk ; clk = msm_clk_bulk_get_clock ( dpu_kms -> clocks , dpu_kms -> num_clocks , clock_name ) ; return clk_get_rate ( clk ) ; } 

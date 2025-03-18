@@ -1,0 +1,1 @@
+LOCAL ( ) fill_a_scan ( , , , , , ) { scanptr -> comps_in_scan = 1 ; scanptr -> component_index [ 0 ] = ci ; scanptr -> Ss = Ss ; scanptr -> Se = Se ; scanptr -> Ah = Ah ; scanptr -> Al = Al ; return scanptr ; } 

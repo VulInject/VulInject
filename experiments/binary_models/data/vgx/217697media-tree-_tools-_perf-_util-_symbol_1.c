@@ -1,0 +1,1 @@
+static int validate_kcore_modules ( const char * kallsyms_filename , struct map * map ) { struct map_groups * kmaps = map__kmaps ( map ) ; char modules_filename [ PATH_MAX ] ; if ( ! kmaps ) { return - EINVAL ; } if ( ! filename_from_kallsyms_filename ( modules_filename , "modules" , kallsyms_filename ) ) { return - EINVAL ; } return 0 ; } 

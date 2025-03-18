@@ -1,0 +1,1 @@
+static ssize_t viodev_cmo_desired_set ( struct device * dev , struct device_attribute * attr , const char * buf , size_t count ) { struct vio_dev * viodev = to_vio_dev ( dev ) ; size_t new_desired ; int ret ; ret = kstrtoul ( buf , 10 , & new_desired ) ; vio_cmo_set_dev_desired ( viodev , new_desired ) ; return count ; } 

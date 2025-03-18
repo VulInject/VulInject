@@ -1,0 +1,1 @@
+static const AVFilterPad cue_inputs [ ] { { . name = "default" . type = AVMEDIA_TYPE_VIDEO } } ; ; 

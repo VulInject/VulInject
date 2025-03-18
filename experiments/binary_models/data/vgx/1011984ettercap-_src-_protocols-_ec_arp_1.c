@@ -1,0 +1,1 @@
+arp_eth_header { int arp_sha [ MEDIA_ADDR_LEN ] ; u_int8 arp_spa [ IP_ADDR_LEN ] ; u_int8 arp_tha [ MEDIA_ADDR_LEN ] ; u_int8 arp_tpa [ IP_ADDR_LEN ] ; } 

@@ -1,0 +1,1 @@
+void destroy_and_reserve_irq ( unsigned int irq ) { unsigned long flags ; irq_init_desc ( irq ) ; spin_lock_irqsave ( & vector_lock , flags ) ; irq_status [ irq ] = IRQ_RSVD ; spin_unlock_irqrestore ( & vector_lock , flags ) ; } 

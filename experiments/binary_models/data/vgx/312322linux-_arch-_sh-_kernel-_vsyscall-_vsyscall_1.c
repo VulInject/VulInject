@@ -1,0 +1,1 @@
+int __init vsyscall_init ( void ) { void * syscall_page = ( void * ) get_zeroed_page ( GFP_ATOMIC ) ; syscall_pages [ 0 ] = virt_to_page ( syscall_page , NULL ) ; memcpy ( syscall_page , & vsyscall_trapa_start , & vsyscall_trapa_end - & vsyscall_trapa_start ) ; return 0 ; } 

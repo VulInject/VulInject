@@ -1,0 +1,1 @@
+static int SendSubMessageAndCheckReply ( int reason , int subreason ) { msgsend ( CI_HADP , "%w%w%w%w%w" , reason | HtoT , 0 , ADP_HandleUnknown , ADP_HandleUnknown , subreason ) ; return CheckSubMessageReply ( reason , subreason ) ; } 

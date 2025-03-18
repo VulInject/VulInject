@@ -1,0 +1,1 @@
+gimp_image_get_metadata ( ) { GimpMetadata * metadata = NULL ; gchar * metadata_string ; metadata_string = _gimp_image_get_metadata ( image ) ; if ( metadata_string ) { metadata = gimp_metadata_deserialize ( metadata_string ) ; } return metadata ; } 
