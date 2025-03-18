@@ -145,13 +145,21 @@ class Vulnerability:
                                     if t in l:
                                         flag = 1
                                 if "string" in l or "char" in l:
-                                    flag = 1
+                                    flag = 4
+                                    string_flag = 1
+                                if "bool" in l:
+                                    flag = 3
+                                    bool_flag = 1
                                 if flag == 0:
                                     integer_flag = 1
             if integer_flag:
                 cv_dict[cv] = 1
             elif pointer_flag:
                 cv_dict[cv] = 2
+            elif bool_flag:
+                cv_dict[cv] = 3
+            elif string_flag:
+                cv_dict[cv] = 4
             else:
                 cv_dict[cv] = 0
         

@@ -19,7 +19,10 @@ class LLMAdapter:
             "CWE-189": "Integer overflow or underflow",
             "CWE-476": "NULL Pointer Dereference",
             "CWE-416": "Use After Free",
-            "CWE-772": "Missing Release of Resource after Effective Lifetime"
+            "CWE-399": "Resource Management Errors",
+            "CWE-415": "Double Free",
+            "CWE-22" : "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+            "CWE-362": "Race Condition"
         }
         # CWEs definitions from MITRE website
         self.defs = json.loads(open("mitre-cwe-definitions.json", "r", encoding="utf-8").read())
@@ -100,7 +103,8 @@ class LLMAdapter:
         question = "Code slice: \"\"\"\n" + slice + "\n\"\"\"\n"
         keywords = {
             1: ['check', 'verify', 'assert'],
-            2: ['init']
+            2: ['init'],
+            3: ['unref', 'destroy', 'free', 'clear', 'destruct',"close", "release", "delete", "realloc", "unregister", "clean", "del", "uninit"]
         }
         flag = 0
         for index, words in sorted(keywords.items(), key=lambda x:x[0]):
@@ -123,8 +127,8 @@ class LLMAdapter:
                     # print('result: ', result)
                     if "Yes" in result:
                         CWE.append("CWE-119")
-                elif cv_type == 2:
-                    question += "Please check the subsequent use of '" + cv + "' aligns with which one of the following scenarios: \n 1. '" +cv+"' in the '" + patch_stmt + "' is related to memory operations such as read, write or alloc according to the context. Delete '" + patch_stmt + "' will lead to buffer overflow. \n 2. '" + patch_stmt + "' is to check whether '" + cv + "' is NULL or not. Delete this statement will lead to null pointer dereference.\n 3. '" + cv+"' in the '" + patch_stmt + "' is released in the preceding code statements and is used in the following code statements, and delete '" + patch_stmt + "' will lead to 'use after free' vulnerability.\n 4.None of the above.\n" 
+                elif cv_type == 2:   ## cv is pointer
+                    question += "Please check the use of '" + cv + "' aligns with which one of the following scenarios: \n 1. '" +cv+"' in the '" + patch_stmt + "' is related to memory operations such as read, write or alloc according to the context. Delete '" + patch_stmt + "' will lead to buffer overflow. \n 2. '" + patch_stmt + "' is to check whether '" + cv + "' is NULL or not. Delete this statement will lead to null pointer dereference.\n 3. '" + cv+"' in the '" + patch_stmt + "' is released in the preceding code statements and is used in the following code statements, and delete '" + patch_stmt + "' will lead to 'use after free' vulnerability.\n 4. '" + cv + "' is the parameter of a function which is used to release the resource.\n 5. None of the above.\n" 
                     question += "\n\nDo not output your analysis. Just output the corresponding number."
                     prompt = self.prepare_promptCU(question = question)
                     # count_tokens(question)
@@ -136,6 +140,33 @@ class LLMAdapter:
                         CWE.append("CWE-476")
                     elif "3" in result:
                         CWE.append("CWE-416")
+                    elif "4" in result:
+                        CWE.append("CWE-399")
+                elif cv_type == 3:  ## cv is boolean
+                    question += "Please check the use of '" + cv + "' aligns with which one of the following scenarios: \n 1. '" +cv+ "' serves as the return value of the function. The function is recursive where an improper return value may result in infinite recursion of the function. \n 2. None of the above. \n"
+                    question += "\n\nDo not output your analysis. Just output the corresponding number."
+                    prompt = self.prepare_promptCU(question = question)
+                    result += self.chat(data = prompt)
+                    result += "\n"
+                    if "1" in result:
+                        CWE.append("CWE-399")
+                elif cv_type == 4:  ## cv is string
+                    question += "Please check whether '"+ cv +"'serves as a function parameter, and the function verifies whether the '"+ cv + "' is a file directory or conducts path sanitization.\n"
+                    question += "\n\n Do not output your analysis. Just output 'Yes' or 'No'."
+                    prompt = self.prepare_promptCU(question = question)
+                    result += self.chat(data = prompt)
+                    result += "\n"
+                    if "Yes" in result:
+                        CWE.append("CWE-22")
+        if flag == 3:
+            question += "Please check whether deleting '" + patch_stmt + "' will lead to 'resource leak' or 'memory leak'. \n"
+            question += "\n Do not output your analysis. Just output 'Yes' or 'No'."
+            prompt = self.prepare_promptCU(question = question)
+            # tmp = self.chat(data = prompt)
+            # print(tmp)
+            result += self.chat(data = prompt)
+            if "Yes" in result:
+                CWE.append("CWE-399")
         return CWE
 
     def gpt_cvtype(self, slice, cv, patch_stmt):
@@ -207,7 +238,7 @@ class LLMAdapter:
             if cv_type == 0:
                 cv_type = self.gpt_cvtype(slice, cv, patch_stmt)
             if cv_type == 1:
-                question += "Please check whether '" + cv + "' in the '" + patch_stmt + "'aligns with the following scenarios: \n 1. '" + cv + "' is related to memory operations such as read, write, alloc or served as list indices. \n 2. '" + cv + "' is involved in calculations and there may be an interger overflow.\n 3. None of the above."
+                question += "Please check whether '" + cv + "' in the '" + patch_stmt + "'aligns with the following scenarios: \n 1. '" + cv + "' is related to memory operations such as read, write, alloc or served as list indices. \n 2. '" + cv + "' is involved in calculations and there may be an interger overflow.\n 3. '" +patch_stmt+ "' pertains to error handling and is associated with resource management.\n 4.None of the above."
                 question += "\n\n Do not output any analysis. Output the corresponding number."
                 prompt = self.prepare_promptCU(question = question)
                 # count_tokens(question)
@@ -217,15 +248,29 @@ class LLMAdapter:
                     CWE.append('CWE-119')
                 elif '2' in result:
                     CWE.append('CWE-189')
+                elif '3' in result:
+                    CWE.append('CWE-399')
             elif cv_type == 2:
-                question += "Please check whether '" + patch_stmt + "' is checking if '" + cv + "' is equal to 'NULL' and whether '" + cv + "' in the '" + patch_stmt + "'is referenced in th following context. If so, output 'Yes'. Otherwise, output 'No'. \n " 
-                question += "Do not output your analysis. Just output 'Yes' or 'No'."
+                question += "Please check which of the following scenarios is present: \n 1. '" + patch_stmt + "' is checking if '" + cv + "' is equal to 'NULL' and '" + cv + "' in the '" + patch_stmt + "'is referenced in th following context. \n 2. '"+ patch_stmt + "' is checking if '" + cv + "' is equal to 'NULL' and if not, then release the '" + cv + "'\n 3. The utilization of '" +cv+ "' is related to the state of the program. \n 4. The value of '" +cv+ "' is temporarily stored in other variables in subsequent code. \n 5. The context code contain concurrent read/write operations on the same memory space. \n 6. The '" + cv+ "' stores path information, and the '" +patch_stmt +"' checks whether '..', '../', '/', '/..', or '.' exists within the '"+cv+"'. 7.None of the above."
+                # question += "Please check whether '" + patch_stmt + "' is checking if '" + cv + "' is equal to 'NULL' and whether '" + cv + "' in the '" + patch_stmt + "'is referenced in th following context. If so, output 'Yes'. Otherwise, output 'No'. \n " 
+                # question += "Do not output your analysis. Just output 'Yes' or 'No'."
+                question += "\n\n Do not output any analysis. Output the corresponding number."
                 prompt = self.prepare_promptCU(question = question)
                 # count_tokens(question)
                 result += self.chat(data = prompt)
                 result += "\n"
-                if "Yes" in result:
+                if "1" in result:
                     CWE.append("CWE-476")
+                elif "2" in result:
+                    CWE.append("CWE-415")
+                elif "3" in result:
+                    CWE.append("CWE-362")
+                elif "4" in result:
+                    CWE.append("CWE-362")
+                elif "5" in result:
+                    CWE.append("CWE-362")
+                elif "6" in result:
+                    CWE.append("CWE-22")
         return CWE  
     
     
