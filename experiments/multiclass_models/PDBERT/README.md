@@ -2,7 +2,6 @@
 # README
 This is the replication package of paper "Pre-training by Predicting Program Dependencies for Vulnerability Analysis Tasks".
 
-Our datasets and online appendix can be found [here](https://zenodo.org/records/10140638).
 
 ## Requirements
 ### Softwares
@@ -16,8 +15,7 @@ Our datasets and online appendix can be found [here](https://zenodo.org/records/
 - torchtext==0.11.2
 - torchvision==0.11.3+cu111
 
-## Hardwares (opt.)
-- GPU: RTX 3090 24GB
+You can create the conda environment using ```pdbert.yml``` and then proceed with the following experiments.
 
 ## Organization of the Replication Package
 - `common`: Common modules for both pre-training and downstream tasks.
