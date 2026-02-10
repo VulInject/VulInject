@@ -35,7 +35,8 @@ VulInject
 |   ├── binary_models
 |   |   └── data                            <- data for binary model training and test
 │   └── multiclass_models
-|       └── data                            <- data for multiclass model training and test
+|       ├── PDBERT                          <- Source code for PDBERT
+|       └── VulBERTa                        <- Source code for VulBERTa
 ├── base_env.yml                            <- Conda base environment configuration file
 ├── OPENAI_env.yml                          <- Conda OPENAI environment configuration file
 ├── vulinject_env.yml                       <- Conda vulinject environment configuration file
@@ -96,14 +97,13 @@ bash run.sh
 ### Models
 For binary models, we use VulCNN, VulBERTa, LineVul and Devign. For multiclass models, we use PDBERT and VulBERTa.
 
-You can directly use the open-source versions of these models for experiments. 
+The source code for these models can be found in the ```experiments``` directory.
 
 We will release Docker images later for you to reproduce the experimental results in our paper.
 
 ### Dataset
 - 352 vulnerability patterns we extract are present in ```data/pattern```.
-- Datasets for binary and multiclass vulnerability detection models' training, validating and testing are present in ```experiments/binary_models/data``` and ```experiments/multiclass_models/data```, respectively.
-- Data in ```experiments/binary_models/data/vgx``` contains vulnerable and non-vulnerable files. ```sard```, ```vulgen``` and ```vulinject``` only contain vulnerable files. To compare the generated vulnerabilities, you need to extract the non-vulnerable files from ```vgx``` and combine them with data from ```sard```, ```vulgen``` and ```vulinejct```.
-- ```experiments/multiclass_models/data/vulinject_5863.json``` already contains data in ```experiments/multiclass_models/data/cvefixes_train.json```. Thus, you can directly use this training set to train models and use ```experiments/multiclass_models/data/cvefixes_test.json``` to test. The same applies to ```experiments/multiclass_models/data/vulinject_11726.json```.
+- For the training and testing of binary and multi-class classification models, we use the PrimeVul dataset as the baseline. The data is located in the respective model directories. Please refer to the README file of each model for details.
+- We will make all generated datasets publicly available upon the acceptance of this paper.
 
 
