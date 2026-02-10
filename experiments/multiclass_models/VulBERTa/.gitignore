@@ -1,0 +1,16 @@
+# Runtime logs
+logs/
+
+# Training outputs: keep folder, ignore run artifacts
+outputs/*/
+outputs/**/checkpoint*/
+outputs/**/result.csv
+outputs/**/eval.csv
+outputs/**/best_model/
+
+# Model artifacts: keep folder-level docs only
+models/*/
+!models/tokenizer/
+!models/tokenizer/**
+!models/README.md
+!models/.gitkeep
