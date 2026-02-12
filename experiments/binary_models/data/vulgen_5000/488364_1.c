@@ -1,0 +1,1 @@
+static int DetectHttpRequestLineTest01 ( void ) { DetectEngineCtx * de_ctx = DetectEngineCtxInit ( ) ; FAIL_IF_NULL ( de_ctx ) ; de_ctx -> flags |= DE_QUIET ; de_ctx -> sig_list = SigInit ( de_ctx , "alert tcp any any ->any any " "(http_request_line; content:\"GET /\"; sid:1;)" ) ; FAIL_IF_NULL ( de_ctx -> sig_list ) ; PASS ; } 

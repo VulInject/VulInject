@@ -1,0 +1,1 @@
+static ssize_t pm_qos_resume_latency_store ( struct device * dev , struct device_attribute * attr , const char * buf , size_t n ) { s32 value ; int ret ; if ( kstrtos32 ( buf , 0 , & value ) ) { return - EINVAL ; } ret = dev_pm_qos_update_request ( dev -> power . qos -> resume_latency_req , value ) ; return ret < 0 ?ret : n ; } 

@@ -1,0 +1,1 @@
+static void tear_down ( void ) { ( void ) var_free ( ) ; if ( p ) { destroy_pool ( p ) ; p = NULL ; } } 

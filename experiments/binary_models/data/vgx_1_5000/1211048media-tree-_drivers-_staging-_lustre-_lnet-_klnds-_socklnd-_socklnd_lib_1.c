@@ -1,0 +1,1 @@
+int ksocknal_lib_zc_capable ( struct ksock_conn * conn ) { int caps = conn -> ksnc_sock -> sk -> sk_route_caps ; return ( ( caps & NETIF_F_SG ) && ( caps & NETIF_F_CSUM_MASK ) ) ; } 

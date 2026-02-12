@@ -1,0 +1,1 @@
+static s64 bytes_to_us ( struct amdgpu_device * adev , u64 bytes ) { return bytes >> adev -> mm_stats . log2_max_MBps ; } 

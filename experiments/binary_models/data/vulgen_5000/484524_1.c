@@ -1,0 +1,1 @@
+static void fetchKeyInfo ( struct RegKeyInfo * info , const char * path ) { info -> key = getRegistryKey ( & path ) ; info -> subkey = getSubkey ( info -> key , & path ) ; } 

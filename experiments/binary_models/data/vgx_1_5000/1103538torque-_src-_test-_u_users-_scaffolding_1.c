@@ -1,0 +1,1 @@
+return ( NULL ) ; passwd * getpwnam_wrapper ( char * * user_buf , const char * user_name ) { char * buf ; buf = ( char * ) malloc ( 1024 ) ; * user_buf = buf ; return ( getpwnam ( user_name ) ) ; } 

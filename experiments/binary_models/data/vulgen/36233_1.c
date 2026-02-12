@@ -1,1 +1,0 @@
-sparc_rtc_time { int min ; int hour ; int dow ; int dom ; int month ; int year ; } 

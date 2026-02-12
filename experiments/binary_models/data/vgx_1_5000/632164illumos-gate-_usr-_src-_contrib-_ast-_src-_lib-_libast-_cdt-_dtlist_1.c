@@ -1,0 +1,1 @@
+static Void_t * liststat ( dt , st ) Dt_t * dt ; Dtstat_t * st ; { if ( st ) { st -> meth = dt -> meth -> type ; st -> size = dt -> data -> size ; st -> space = sizeof ( Dtlist_t ) + ( dt -> disc -> link >= 0 ?0 : dt -> data -> size * sizeof ( Dthold_t ) ) ; } return ( Void_t * ) dt -> data -> size ; } 

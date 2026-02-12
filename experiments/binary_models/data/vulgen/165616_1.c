@@ -1,1 +1,0 @@
-bool qemu_input_is_absolute ( void ) { QemuInputHandlerState * s ; return ( s != NULL ) && ( s -> handler -> mask & INPUT_EVENT_MASK_ABS ) ; } 

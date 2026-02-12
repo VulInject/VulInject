@@ -1,0 +1,1 @@
+static void altsvc_free ( struct altsvc * as ) { free ( as -> src . host ) ; free ( as -> dst . host ) ; } 

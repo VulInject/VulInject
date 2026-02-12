@@ -1,0 +1,1 @@
+static unsigned int rpmsg_eptdev_poll ( struct file * filp , poll_table * wait ) { struct rpmsg_eptdev * eptdev = filp -> private_data ; unsigned int mask = 0 ; poll_wait ( filp , & eptdev -> readq , wait ) ; if ( ! skb_queue_empty ( & eptdev -> queue ) ) { mask |= POLLIN | POLLRDNORM ; } mask |= rpmsg_poll ( eptdev -> ept , filp , wait ) ; return mask ; } 

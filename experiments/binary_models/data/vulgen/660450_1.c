@@ -1,1 +1,0 @@
-static void * dict_market_val_dup ( const void * key ) { struct market_val * obj = malloc ( sizeof ( market_val ) ) ; return obj ; } 

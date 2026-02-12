@@ -1,0 +1,1 @@
+extern int fun ( void ) int test_fun_addr ( int i ) { return 0 ; } 

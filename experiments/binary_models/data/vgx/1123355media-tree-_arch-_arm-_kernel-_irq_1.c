@@ -1,1 +1,0 @@
-void __init set_handle_irq ( void * handle_irq ( struct pt_regs * ) ) { handle_arch_irq = handle_irq ; } 

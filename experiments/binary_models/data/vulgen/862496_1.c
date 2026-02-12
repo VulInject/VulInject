@@ -1,1 +1,0 @@
-void _PG_init ( void ) { register_label_provider ( "dummy" , 0 ) ; } 

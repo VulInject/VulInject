@@ -1,1 +1,0 @@
-static char * FUN1 ( const char * VAR1 ) { char * VAR2 ; VAR2 = FUN2 ( FUN3 ( VAR1 ) ) ; FUN4 ( VAR2 , NULL ) ; return VAR2 ; }

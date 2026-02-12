@@ -1,1 +1,0 @@
-extern void _mcount ( void ) EXPORT_SYMBOL ( _mcount ) ; EXPORT_SYMBOL ( clear_page_asm , NULL ) ; EXPORT_SYMBOL ( copy_page_asm ) ; 

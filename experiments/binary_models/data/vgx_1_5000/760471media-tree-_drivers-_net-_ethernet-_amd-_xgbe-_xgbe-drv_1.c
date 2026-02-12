@@ -1,0 +1,1 @@
+static void xgbe_restart_dev ( struct xgbe_prv_data * pdata ) { DBGPR ( "-->xgbe_restart_dev\n" ) ; xgbe_stop ( pdata ) ; xgbe_free_tx_data ( pdata ) ; xgbe_free_rx_data ( pdata ) ; xgbe_start ( pdata ) ; DBGPR ( "<--xgbe_restart_dev\n" ) ; } 

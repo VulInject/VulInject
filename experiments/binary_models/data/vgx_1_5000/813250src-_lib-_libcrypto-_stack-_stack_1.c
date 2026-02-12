@@ -1,0 +1,1 @@
+( sk_zero ) ; void sk_pop_free ( _STACK * st , void * func ( void * ) ) { int i ; if ( st == NULL ) { return ; } for ( i = 0 ; i < st -> num ; i ++ ) { if ( st -> data [ i ] != NULL ) { func ( st -> data [ i ] ) ; } } sk_free ( st ) ; } 

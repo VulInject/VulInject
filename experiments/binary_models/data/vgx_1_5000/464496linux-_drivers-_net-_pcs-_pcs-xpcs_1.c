@@ -1,0 +1,1 @@
+int xpcs_get_an_mode ( struct dw_xpcs * xpcs , phy_interface_t interface ) { const struct xpcs_compat * compat ; compat = xpcs_find_compat ( xpcs -> id , interface ) ; return compat -> an_mode ; } 

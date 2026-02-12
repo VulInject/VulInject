@@ -1,1 +1,0 @@
-void flite_hw_capture_stop ( struct fimc_lite * dev ) { cfg &= ~ FLITE_REG_CIIMGCPT_IMGCPTEN ; writel ( cfg , dev -> regs + FLITE_REG_CIIMGCPT ) ; } 

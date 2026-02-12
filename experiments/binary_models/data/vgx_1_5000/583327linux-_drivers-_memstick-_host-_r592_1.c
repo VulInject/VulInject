@@ -1,0 +1,1 @@
+static void r592_detect_timer ( struct timer_list * t ) { struct r592_device * dev = from_timer ( dev , t , detect_timer ) ; r592_update_card_detect ( dev ) ; memstick_detect_change ( dev -> host , NULL ) ; } 

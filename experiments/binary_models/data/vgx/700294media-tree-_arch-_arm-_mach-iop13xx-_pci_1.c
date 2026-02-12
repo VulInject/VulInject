@@ -1,1 +1,0 @@
-static u32 FUN1 ( unsigned long VAR1 ) { int VAR2 ; __volatile__ return VAR2 ; }

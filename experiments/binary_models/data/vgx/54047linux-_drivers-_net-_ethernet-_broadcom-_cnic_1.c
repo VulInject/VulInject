@@ -1,1 +1,0 @@
-static void cnic_free_uio ( struct cnic_uio_dev * udev ) { if ( ! udev ) { return ; } write_lock ( & cnic_dev_lock ) ; list_del_init ( & udev -> list ) ; write_unlock ( & cnic_dev_lock ) ; } 

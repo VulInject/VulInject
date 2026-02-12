@@ -1,0 +1,1 @@
+static int nvkm_i2c_fini ( struct nvkm_subdev * subdev , bool suspend ) { struct nvkm_i2c * i2c = nvkm_i2c ( subdev ) ; struct nvkm_i2c_pad * pad ; u32 mask ; if ( ( mask = ( 1 << i2c -> func -> aux ) - 1 ) , i2c -> func -> aux_stat ) { i2c -> func -> aux_stat ( i2c , & mask , & mask , & mask , & mask ) ; } list_for_each_entry ( , , ) { nvkm_i2c_pad_fini ( pad ) ; } return 0 ; } 

@@ -1,0 +1,1 @@
+int a ; int x ; int main ( void ) { a = ( unsigned short ) x ; __smatch_implied ( a , NULL ) ; return 0 ; } 

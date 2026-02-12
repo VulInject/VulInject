@@ -1,0 +1,1 @@
+static int is_executable ( const char * name ) { int st ; if ( stat ( name , & st ) || ! S_ISREG ( st . st_mode ) ) { return 0 ; } return st . st_mode & S_IXUSR ; } 

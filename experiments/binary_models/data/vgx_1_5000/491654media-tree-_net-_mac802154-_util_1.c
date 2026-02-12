@@ -1,0 +1,1 @@
+void ieee802154_wake_queue ( struct ieee802154_hw * hw ) { struct ieee802154_local * local = hw_to_local ( hw ) ; struct ieee802154_sub_if_data * sdata ; rcu_read_lock ( ) ; list_for_each_entry_rcu ( , , ) { netif_wake_queue ( sdata -> dev ) ; } rcu_read_unlock ( ) ; } 

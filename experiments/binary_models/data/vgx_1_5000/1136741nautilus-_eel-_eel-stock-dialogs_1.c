@@ -1,0 +1,1 @@
+timed_wait_dialog_destroy_callback ( , ) { TimedWait * wait ; wait = callback_data ; g_assert ( object == wait -> dialog ) ; wait -> dialog = NULL ; if ( wait -> cancel_callback != NULL ) { * wait -> cancel_callback ( wait -> callback_data ) ; } } 

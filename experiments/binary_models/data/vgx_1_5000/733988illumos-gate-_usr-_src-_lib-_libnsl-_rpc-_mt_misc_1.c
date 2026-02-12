@@ -1,0 +1,1 @@
+struct rpc_err * __rpc_callerr ( void ) { static pthread_key_t rpc_callerr_key = PTHREAD_ONCE_KEY_NP ; struct rpc_err * tsd ; tsd = thr_get_storage ( & rpc_callerr_key , sizeof ( rpc_err ) , free ) ; if ( tsd == NULL ) { syslog ( LOG_ERR , "__rpc_callerr : out of memory." ) ; return ( & rpc_callerr ) ; } return ( tsd ) ; } 

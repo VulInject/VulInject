@@ -1,1 +1,0 @@
-char * bstrdup ( const char * s ) { char * p ; size_t len ; len = strlen ( s ) + 1 ; p = malloc ( len ) ; memcpy ( p , s , len ) ; return p ; } 

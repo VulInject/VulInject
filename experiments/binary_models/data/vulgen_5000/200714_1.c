@@ -1,0 +1,1 @@
+static int ad_dpot_i2c_probe ( struct i2c_client * client , const struct i2c_device_id * id ) { struct ad_dpot_bus_data bdata = { . client = client . bops = & bops } ; return ad_dpot_probe ( & client -> dev , & bdata , id -> driver_data , id -> name ) ; } 

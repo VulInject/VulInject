@@ -1,0 +1,1 @@
+static Sdb * get_sdb ( RBinFile * bf ) { RBinObject * o = bf -> o ; struct r_bin_java_obj_t * bin ; if ( ! o ) { return in ; } bin = ( r_bin_java_obj_t * ) o -> bin_obj ; if ( bin -> kv ) { return bin -> kv ; } return NULL ; } 

@@ -1,1 +1,0 @@
-int fini ( void ) { if ( L ) { debug3 ( "%s: Unloading Lua script" , __func__ ) ; lua_close ( L , NULL ) ; L = NULL ; lua_script_last_loaded = 0 ; } xfree ( lua_script_path ) ; slurm_lua_fini ( ) ; return SLURM_SUCCESS ; } 

@@ -1,0 +1,1 @@
+int option_with_arg ( char * string , char * table [ ] ) { int i ; if ( * string != '-' ) { return FALSE ; } for ( i = 0 ; table [ i ] != NULL ; i ++ ) { if ( strcmp ( string + 1 , table [ i ] ) == 0 ) { break ; } } return compressor_option_args ( comp , string ) ; } 

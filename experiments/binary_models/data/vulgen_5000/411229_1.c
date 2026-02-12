@@ -1,0 +1,1 @@
+static void append_to_tree ( unsigned mode , struct object_id * oid , char * path ) { struct treeent * ent ; size_t len = strlen ( path ) ; FLEX_ALLOC_MEM ( ent , name , path , len ) ; ent -> mode = mode ; ent -> len = len ; oidcpy ( & ent -> oid , oid ) ; ALLOC_GROW ( entries , used + 1 , alloc ) ; entries [ used ++ ] = ent ; } 

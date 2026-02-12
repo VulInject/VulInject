@@ -1,1 +1,0 @@
-void * pm_power_off ( void ) EXPORT_SYMBOL ( pm_power_off , NULL ) ; void arch_cpu_idle ( void ) { default_idle ( ) ; } 

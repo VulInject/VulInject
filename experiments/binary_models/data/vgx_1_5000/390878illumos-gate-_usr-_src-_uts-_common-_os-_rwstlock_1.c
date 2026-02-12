@@ -1,0 +1,1 @@
+int rwst_lock_held ( rwstlock_t * l , krw_t rw ) { ASSERT ( rw == RW_WRITER ) ; return ( RWST_WRITE_OWNER ( l ) ) ; } 

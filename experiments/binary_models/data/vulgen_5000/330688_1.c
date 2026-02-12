@@ -1,0 +1,1 @@
+int __weak dfu_get_medium_size_virt ( struct dfu_entity * dfu , u64 * size ) { if ( IS_ENABLED ( CONFIG_CMD_STM32PROG_USB ) && dfu -> data . virt . dev_num >= STM32PROG_VIRT_FIRST_DEV_NUM ) { return stm32prog_get_medium_size_virt ( dfu , size ) ; } return 0 ; } 

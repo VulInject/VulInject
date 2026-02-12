@@ -1,1 +1,0 @@
-void grouping_reset_countif ( RRDR * r ) { struct grouping_countif * g = ( grouping_countif * ) r -> grouping . data ; g -> matched = 0 ; } 

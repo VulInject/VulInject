@@ -1,1 +1,0 @@
-( qcom_glink_native_probe ) ; static int qcom_glink_remove_device ( struct device * dev , void * data ) { device_unregister ( dev , NULL ) ; return 0 ; } 

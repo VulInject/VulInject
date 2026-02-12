@@ -1,0 +1,1 @@
+static int vpu_dbg_fwlog_open ( struct inode * inode , struct file * filp ) { return single_open ( filp , vpu_dbg_fwlog ) ; } static const struct file_operations vpu_dbg_inst_fops = { . owner = THIS_MODULE . open = vpu_dbg_inst_open . release = single_release . read = seq_read . write = vpu_dbg_inst_write } ; 

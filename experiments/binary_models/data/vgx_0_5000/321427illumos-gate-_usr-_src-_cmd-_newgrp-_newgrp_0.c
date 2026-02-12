@@ -1,0 +1,24 @@
+void
+put_event(char *gname, int sorf)
+{
+adt_session_data_t	*ah;
+adt_event_data_t	*event;
+
+if (adt_start_session(&ah, NULL, ADT_USE_PROC_DATA) != 0) {
+syslog(LOG_AUTH | LOG_ALERT,
+"adt_start_session(ADT_newgrp_login): %m");
+}
+if ((event = adt_alloc_event(ah, ADT_newgrp_login)) == NULL) {
+syslog(LOG_AUTH | LOG_ALERT,
+"adt_alloc_event(ADT_newgrp_login): %m");
+} else {
+event->adt_newgrp_login.groupname = gname;
+}
+
+if (adt_put_event(event, sorf, sorf) != 0) {
+syslog(LOG_AUTH | LOG_ALERT,
+"adt_put_event(ADT_newgrp, %d): %m", sorf);
+}
+adt_free_event(event);
+(void) adt_end_session(ah);
+}

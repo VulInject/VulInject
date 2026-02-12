@@ -1,0 +1,1 @@
+* / int DES_random_key ( ) { { arc4random_buf ( ret , sizeof ( DES_cblock ) ) ; DES_set_odd_parity ( ret , NULL ) ; ; } } ; while ( DES_is_weak_key ( ret ) ) { } return ( 1 ) ; 

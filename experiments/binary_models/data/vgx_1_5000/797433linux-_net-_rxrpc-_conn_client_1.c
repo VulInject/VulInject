@@ -1,0 +1,1 @@
+static void rxrpc_unidle_conn ( struct rxrpc_connection * conn ) { if ( ! list_empty ( & conn -> cache_link ) ) { list_del ( & conn -> cache_link ) ; rxrpc_put_connection ( conn , rxrpc_conn_put_unidle ) ; } } 

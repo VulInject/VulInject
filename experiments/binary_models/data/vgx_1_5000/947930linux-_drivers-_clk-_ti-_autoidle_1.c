@@ -1,0 +1,1 @@
+static int _omap2_clk_allow_idle ( struct clk_hw_omap * clk ) { if ( clk -> ops && clk -> ops -> allow_idle ) { cfs_time_t irqflags ; spin_lock_irqsave ( & autoidle_spinlock , irqflags ) ; clk -> autoidle_count -- ; if ( clk -> autoidle_count == 0 ) { clk -> ops -> allow_idle ( clk ) ; } spin_unlock_irqrestore ( & autoidle_spinlock , irqflags ) ; } return 0 ; } 

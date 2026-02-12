@@ -1,0 +1,1 @@
+ATF_TC_WITHOUT_HEAD ( zeroes ) ; ATF_TC_BODY ( , ) { int i ; for ( i = 0 ; i < nitems ( rmodes ) ; i ++ ) { printf ( "rmode = %d\n" , rmodes [ i ] ) ; fesetround ( rmodes [ i ] ) ; test_zeroes ( ) ; } } 

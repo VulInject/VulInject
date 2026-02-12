@@ -1,0 +1,1 @@
+ZEND_API zend_result zend_multibyte_parse_encoding_list ( const char * encoding_list , int encoding_list_len , const zend_encoding * * * return_list , size_t * return_size , bool persistent ) { return multibyte_functions . encoding_list_parser ( encoding_list , encoding_list_len , return_list , return_size , persistent ) ; } 

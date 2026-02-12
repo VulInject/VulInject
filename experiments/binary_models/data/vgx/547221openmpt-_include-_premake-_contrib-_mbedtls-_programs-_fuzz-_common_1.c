@@ -1,1 +1,0 @@
-int dummy_send ( void * ctx , const unsigned char * buf , size_t len ) { ( void ) ctx ; ( void ) buf ; return ( ( int ) len ) ; } 

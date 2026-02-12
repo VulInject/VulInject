@@ -1,1 +1,0 @@
-struct omap_dss_device * omapdss_device_get ( struct omap_dss_device * dssdev ) { return dssdev ; } 

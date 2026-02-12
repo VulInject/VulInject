@@ -1,0 +1,1 @@
+int ciamatch ( parent , match , aux ) device * parent ; void * match ; void * aux ; { struct mainbus_attach_args * ma = aux ; if ( strcmp ( ma -> ma_name , cia_cd . cd_name ) != 0 ) { return ( 0 ) ; } return ( 1 ) ; } 

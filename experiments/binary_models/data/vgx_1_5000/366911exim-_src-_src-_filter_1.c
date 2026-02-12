@@ -1,0 +1,1 @@
+if ( log_fd >= 0 ) { ( void ) close ( log_fd ) ; } expand_nmax = - 1 ; headers_charset = save_headers_charset ; acl_level -- ; DEBUG ( ) debug_printf ( "Filter: end of processing\n" ) ; return yield ; 

@@ -1,1 +1,0 @@
-{ struct monst * mtmp = makemon ( & li_dog , u . ux , u . uy ) ; initedog ( mtmp ) ; } 

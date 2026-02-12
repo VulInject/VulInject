@@ -1,0 +1,1 @@
+static void intel_vgpu_free_mm ( struct intel_vgpu * vgpu , int type ) { struct list_head * pos , * n ; struct intel_vgpu_mm * mm ; list_for_each_safe ( , , ) { mm = container_of ( pos , intel_vgpu_mm , list ) ; if ( mm -> type == type ) { vgpu -> gvt -> gtt . mm_free_page_table ( mm ) ; list_del ( & mm -> list ) ; list_del ( & mm -> lru_list ) ; } } } 

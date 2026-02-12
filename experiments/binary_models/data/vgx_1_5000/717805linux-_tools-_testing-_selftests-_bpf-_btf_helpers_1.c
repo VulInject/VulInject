@@ -1,0 +1,1 @@
+static const char * btf_str ( const struct btf * btf , __u32 off ) { return btf__str_by_offset ( btf , off ) ?: "(invalid)" ; } 

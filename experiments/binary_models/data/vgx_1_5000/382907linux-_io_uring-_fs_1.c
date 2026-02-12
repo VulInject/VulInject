@@ -1,0 +1,1 @@
+void io_mkdirat_cleanup ( struct io_kiocb * req ) { struct io_mkdir * md = io_kiocb_to_cmd ( req , io_mkdir ) ; putname ( md -> filename , NULL ) ; } 

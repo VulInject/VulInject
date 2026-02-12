@@ -1,0 +1,1 @@
+__RCSID ( "$NetBSD: fnmatch.c,v 1.24 2011/01/31 19:10:18 christos Exp $" ) ; static inline int foldcase ( int ch , int flags ) { return ch ; } 

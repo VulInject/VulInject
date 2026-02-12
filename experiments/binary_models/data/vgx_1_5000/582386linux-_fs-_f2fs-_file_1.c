@@ -1,0 +1,1 @@
+static int f2fs_file_mmap ( struct file * file , struct vm_area_struct * vma ) { struct inode * inode = file_inode ( file ) ; if ( ! f2fs_is_compress_backend_ready ( inode ) ) { return - EOPNOTSUPP ; } file_accessed ( file ) ; vma -> vm_ops = & f2fs_file_vm_ops ; set_inode_flag ( inode , FI_MMAP_FILE ) ; return 0 ; } 

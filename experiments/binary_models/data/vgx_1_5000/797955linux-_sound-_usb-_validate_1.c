@@ -1,0 +1,1 @@
+static bool validate_uac1_feature_unit ( const void * p , const struct usb_desc_validator * v ) { const struct uac_feature_unit_descriptor * d = p ; return d -> bLength >= sizeof ( * d ) + d -> bControlSize + 1 ; } 

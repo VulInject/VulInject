@@ -1,0 +1,1 @@
+int trunnel_string_setstr0 ( trunnel_string_t * str , const char * val , size_t len , uint8_t * errcode_ptr ) { if ( str -> allocated_ <= len ) { TRUNNEL_DYNARRAY_EXPAND ( char , str , len + 1 - str -> allocated_ { } ) ; } } memcpy ( str -> elts_ , val , len ) ; str -> n_ = len ; str -> elts_ [ len ] = 0 ; return 0 ; trunnel_alloc_failed * errcode_ptr = 1 ; return - 1 ; 

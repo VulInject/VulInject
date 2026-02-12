@@ -1,0 +1,1 @@
+static int mdio_bus_restore ( struct device * dev ) { struct mdio_device * mdio = to_mdio_device ( dev ) ; return 0 ; } 

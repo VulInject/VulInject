@@ -1,0 +1,1 @@
+static void free_send_rmpp_list ( struct ib_mad_send_wr_private * mad_send_wr ) { struct ib_rmpp_segment * s , * t ; list_for_each_entry_safe ( , , , ) { list_del ( & s -> list ) ; } } 

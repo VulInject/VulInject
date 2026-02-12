@@ -1,0 +1,1 @@
+SDB_API bool sdb_journal_open ( Sdb * s ) { char filename [ SDB_MAX_PATH ] ; if ( ! sdb_journal_filename ( s , filename , sizeof ( filename ) ) ) { return false ; } close ( s -> journal ) ; s -> journal = open ( filename , O_CREAT | O_RDWR | O_APPEND , 0600 ) ; return s -> journal != - 1 ; } 

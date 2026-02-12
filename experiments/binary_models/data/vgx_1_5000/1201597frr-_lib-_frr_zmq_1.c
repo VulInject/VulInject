@@ -1,0 +1,1 @@
+void frrzmq_finish ( void ) { if ( -- frrzmq_initcount == 0 ) { zmq_ctx_term ( frrzmq_context ) ; } } 

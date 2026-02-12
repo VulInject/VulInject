@@ -1,0 +1,1 @@
+static void usage ( void ) static int quiet = 0 ; static int nochanges ; mboxlist_rock { ptrarray_t * mboxlist ; int matched ; } search_rock { const char * userid ; const char * userpath ; strarray_t tiernames ; arrayu64_t tiergens ; strarray_t * oldpaths ; strarray_t * newpaths ; } 

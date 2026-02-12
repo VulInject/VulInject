@@ -1,1 +1,0 @@
-gimp_clipboard_init ( ) { GimpClipboard * gimp_clip ; g_return_if_fail ( GIMP_IS_GIMP ( gimp ) ) ; gimp_clip = gimp_clipboard_get ( gimp ) ; g_return_if_fail ( gimp_clip == NULL ) ; gimp_clip = gimp_clipboard_new ( gimp -> be_verbose ) ; } 

@@ -1,1 +1,0 @@
-static void main_function ( void * priv ) { AVCodecContext * avctx = priv ; SliceThreadContext * c = avctx -> internal -> thread_ctx ; c -> mainfunc ( avctx , NULL ) ; } 

@@ -1,0 +1,1 @@
+void mips_cpc_unlock_other ( void ) { unsigned int curr_core ; curr_core = current_cpu_data . core ; spin_unlock_irqrestore ( & per_cpu ( cpc_core_lock , curr_core ) , per_cpu ( cpc_core_lock_flags , curr_core ) ) ; preempt_enable ( ) ; } 

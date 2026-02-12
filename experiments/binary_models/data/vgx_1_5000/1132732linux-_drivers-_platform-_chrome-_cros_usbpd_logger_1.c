@@ -1,0 +1,1 @@
+static int append_str ( char * buf , int pos , const char * fmt , ... ) { va_list args ; int i ; va_start ( args , fmt ) ; i = vsnprintf ( buf + pos , BUF_SIZE - pos , fmt , args ) ; va_end ( args ) ; return i ; } 

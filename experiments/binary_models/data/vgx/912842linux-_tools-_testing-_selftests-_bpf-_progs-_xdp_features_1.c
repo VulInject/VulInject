@@ -1,1 +1,0 @@
-int xdp_do_drop ( struct xdp_md * xdp ) { return XDP_DROP ; } 

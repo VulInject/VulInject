@@ -1,0 +1,1 @@
+void mbedtls_ssl_conf_ca_chain ( mbedtls_ssl_config * conf , mbedtls_x509_crt * ca_chain , mbedtls_x509_crl * ca_crl ) { conf -> ca_chain = ca_chain ; conf -> ca_crl = ca_crl ; conf -> p_ca_cb = NULL ; } 

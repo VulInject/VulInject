@@ -1,0 +1,1 @@
+void * dllmeth ( const char * id , const char * name , unsigned long version ) { int names ; return dll_lib ( dllnames ( id , name , & names ) , version , 0 , 0 ) ; } 

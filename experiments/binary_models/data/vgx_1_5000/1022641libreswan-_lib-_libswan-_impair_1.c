@@ -1,0 +1,1 @@
+bool have_impairments ( void ) { for ( unsigned ci = 1 ; ci < elemsof ( impairments ) ; ci ++ ) { const struct impairment * impairment = & impairments [ ci ] ; } return false ; } 

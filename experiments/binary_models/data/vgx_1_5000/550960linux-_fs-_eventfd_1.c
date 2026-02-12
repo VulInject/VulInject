@@ -1,0 +1,1 @@
+static int eventfd_release ( struct inode * inode , struct file * file ) { struct eventfd_ctx * ctx = file -> private_data ; wake_up_poll ( & ctx -> wqh , EPOLLHUP ) ; eventfd_ctx_put ( ctx , NULL ) ; return 0 ; } 

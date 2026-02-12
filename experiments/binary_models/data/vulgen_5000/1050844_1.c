@@ -1,0 +1,1 @@
+int _fwalk ( int * function ( FILE * ) ) { FILE * fp ; int n , ret ; struct glue * g ; ret = 0 ; for ( g = & __sglue ; g != NULL ; g = g -> next ) { for ( fp = g -> iobs , n = g -> niobs ; -- n >= 0 ; fp ++ ) { } } return ( ret ) ; } 

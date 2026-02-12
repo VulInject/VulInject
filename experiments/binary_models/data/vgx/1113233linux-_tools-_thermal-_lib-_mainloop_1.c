@@ -1,1 +1,0 @@
-int mainloop_del ( int fd ) { if ( fd >= nrhandler ) { return - 1 ; } if ( epoll_ctl ( epfd , EPOLL_CTL_DEL , fd , NULL ) < 0 ) { return - 1 ; } return 0 ; } 

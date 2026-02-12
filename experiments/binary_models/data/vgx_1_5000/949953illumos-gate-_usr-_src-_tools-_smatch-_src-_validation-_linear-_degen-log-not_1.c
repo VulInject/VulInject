@@ -1,0 +1,1 @@
+int test_fun_degen ( int i ) { return 0 ; } 

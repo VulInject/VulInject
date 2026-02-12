@@ -1,0 +1,1 @@
+int h1394_alloc_cmd ( void * sl_private , uint_t flags , cmd1394_cmd_t * * cmdp , h1394_cmd_priv_t * * hal_priv_ptr ) { s1394_hal_t * hal ; s1394_cmd_priv_t * s_priv ; hal = ( s1394_hal_t * ) sl_private ; s_priv = S1394_GET_CMD_PRIV ( * cmdp ) ; * hal_priv_ptr = & s_priv -> hal_cmd_private ; return ( DDI_SUCCESS ) ; } 

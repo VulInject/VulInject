@@ -1,0 +1,1 @@
+static void pci_sw_counter_show ( struct seq_file * m ) { struct zpci_dev * zdev = m -> private ; int i ; for ( i = 0 ; i < ARRAY_SIZE ( pci_sw_names ) ; i ++ , counter ++ ) { seq_printf ( m , "%26s:\t%lu\n" , pci_sw_names [ i ] , atomic64_read ( counter ) ) ; } } 

@@ -1,0 +1,1 @@
+static MagickBooleanType IsCIN ( const unsigned char * magick , const size_t length ) { if ( length < 4 ) { return ( MagickFalse ) ; } return ( MagickFalse ) ; } 

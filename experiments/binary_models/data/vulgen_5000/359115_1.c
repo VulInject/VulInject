@@ -1,0 +1,1 @@
+void __init imx31_init_early ( void ) { struct device_node * np ; mxc_set_cpu_type ( MXC_CPU_MX31 ) ; arch_ioremap_caller = imx3_ioremap_caller ; arm_pm_idle = imx31_idle ; np = of_find_compatible_node ( NULL , NULL , "fsl,imx31-ccm" ) ; BUG_ON ( ! mx3_ccm_base ) ; } 

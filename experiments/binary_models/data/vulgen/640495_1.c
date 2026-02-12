@@ -1,1 +1,0 @@
-static void uwsgi_pypy_onload ( ) { upypy . home = UWSGI_PYPY_HOME ; } 

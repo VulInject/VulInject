@@ -1,1 +1,0 @@
-static int tps53681_read_word_data ( struct i2c_client * client , int page , int phase , int reg ) { return - ENODATA ; } 

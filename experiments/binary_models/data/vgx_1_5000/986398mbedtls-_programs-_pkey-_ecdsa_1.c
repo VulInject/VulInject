@@ -1,0 +1,1 @@
+static void dump_buf ( const char * title , unsigned char * buf , size_t len ) { int i ; mbedtls_printf ( "%s" , title ) ; for ( i = 0 ; i < len ; i ++ ) { mbedtls_printf ( "%c%c" , "0123456789ABCDEF" [ buf [ i ] / 16 ] , "0123456789ABCDEF" [ buf [ i ] % 16 ] ) ; } mbedtls_printf ( "\n" ) ; } 

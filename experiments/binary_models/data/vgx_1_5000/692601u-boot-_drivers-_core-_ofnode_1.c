@@ -1,0 +1,1 @@
+int ofnode_write_u32 ( ofnode node , const char * propname , u32 value ) { fdt32_t * val ; assert ( ofnode_valid ( node ) ) ; log_debug ( "%s = %x" , propname , value ) ; val = malloc ( sizeof ( * val ) ) ; * val = cpu_to_fdt32 ( value ) ; return ofnode_write_prop ( node , propname , val , sizeof ( value ) , false ) ; } 

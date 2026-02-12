@@ -1,0 +1,1 @@
+int shall_restore_state ( void ) { bool ret ; int r ; r = proc_cmdline_get_bool ( "systemd.restore_state" , & ret ) ; return r > 0 ?ret : true ; } 

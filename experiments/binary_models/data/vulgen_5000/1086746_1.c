@@ -1,0 +1,1 @@
+int drm_crtc_register_all ( struct drm_device * dev ) { struct drm_crtc * crtc ; int ret = 0 ; drm_for_each_crtc ( , ) { drm_debugfs_crtc_add ( crtc ) ; if ( ret ) { return ret ; } } return 0 ; } 

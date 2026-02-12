@@ -1,0 +1,1 @@
+static int cpu_imx_get_info ( const struct udevice * dev , struct cpu_info * info ) { struct cpu_imx_plat * plat = dev_get_plat ( dev ) ; info -> features = BIT ( CPU_FEAT_L1_CACHE ) | BIT ( CPU_FEAT_MMU ) ; return 0 ; } 

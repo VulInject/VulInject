@@ -1,1 +1,0 @@
-action * parse_actions ( int stateno ) { action * actions ; actions = get_shifts ( stateno ) ; return ( actions ) ; } 

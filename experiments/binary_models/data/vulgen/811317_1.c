@@ -1,1 +1,0 @@
-bool brightness_change ; bool dgpu_display_event ; 

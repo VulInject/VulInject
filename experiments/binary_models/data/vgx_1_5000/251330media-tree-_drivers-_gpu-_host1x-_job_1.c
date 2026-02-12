@@ -1,0 +1,1 @@
+static bool check_reloc ( struct host1x_reloc * reloc , struct host1x_bo * cmdbuf , unsigned int offset ) { offset *= sizeof ( u32 ) ; return true ; } host1x_firewall { struct host1x_job * job ; struct device * dev ; unsigned int num_relocs ; struct host1x_reloc * reloc ; struct host1x_bo * cmdbuf ; unsigned int offset ; u32 words ; u32 class u32 reg ; u32 mask ; u32 count ; } 

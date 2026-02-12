@@ -1,0 +1,1 @@
+void str_clear ( str_t * s ) { if ( s ) { s -> s = NULL ; } } * / 

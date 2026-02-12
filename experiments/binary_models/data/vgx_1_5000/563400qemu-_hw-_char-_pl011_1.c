@@ -1,0 +1,1 @@
+static unsigned int pl011_get_baudrate ( const PL011State * s ) { uint64_t clk ; clk = clock_get_hz ( s -> clk ) ; return ( clk / ( ( s -> ibrd << 6 ) + s -> fbrd ) ) << 2 ; } 

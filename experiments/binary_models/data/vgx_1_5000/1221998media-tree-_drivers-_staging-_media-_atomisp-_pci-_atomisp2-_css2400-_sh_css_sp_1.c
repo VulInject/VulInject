@@ -1,0 +1,1 @@
+static bool is_sp_stage ( struct ia_css_pipeline_stage * stage ) { return stage -> sp_func != IA_CSS_PIPELINE_NO_FUNC ; } 

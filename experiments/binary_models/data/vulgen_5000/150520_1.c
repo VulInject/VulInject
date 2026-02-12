@@ -1,0 +1,1 @@
+{ RTC_SEC = 0 , RTC_MIN , RTC_HOUR , RTC_WEEKDAY , RTC_MONTH , RTC_YEAR , RTC_MONTHDAY , RTC_NR_TIME } max77686_rtc_driver_data { u8 mask ; const unsigned int * map ; bool alarm_enable_reg ; int rtc_i2c_addr ; bool rtc_irq_from_platform ; int alarm_pending_status_reg ; const struct regmap_irq_chip * rtc_irq_chip ; const struct regmap_config * regmap_config ; } 

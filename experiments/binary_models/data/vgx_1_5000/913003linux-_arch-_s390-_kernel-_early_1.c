@@ -1,0 +1,1 @@
+static void __init reset_tod_clock ( void ) { union tod_clock clk ; if ( store_tod_clock_ext_cc ( & clk ) == 0 ) { return ; } if ( set_tod_clock ( TOD_UNIX_EPOCH ) || store_tod_clock_ext_cc ( & clk ) ) { disabled_wait ( ) ; } tod_clock_base . tod = TOD_UNIX_EPOCH ; S390_lowcore . last_update_clock = TOD_UNIX_EPOCH ; } 

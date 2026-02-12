@@ -1,0 +1,1 @@
+static uint32_t get_param_cc_circuit_rate ( const networkstatus_t * ns ) { return networkstatus_get_param ( ns , "DoSCircuitCreationRate" , DOS_CC_CIRCUIT_RATE_DEFAULT , 1 , INT32_MAX ) ; } 

@@ -1,0 +1,1 @@
+void * cmih_spec ; void * cmih_cmi ; void * cmih_cmidata ; const struct cmi_mc_ops * cmih_mcops ; void * cmih_mcdata ; int cmih_flags ; uint16_t cmih_smbiosid ; uint_t cmih_smb_chipid ; nvlist_t * cmih_smb_bboard ; cmi_hdl_ent { volatile uint32_t cmae_refcnt ; cmi_hdl_impl_t * cmae_hdlp ; } cmi_hdl_ent_t 

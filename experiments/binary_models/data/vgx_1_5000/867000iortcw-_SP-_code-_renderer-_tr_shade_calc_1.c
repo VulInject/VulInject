@@ -1,0 +1,1 @@
+void RB_CalcAlphaFromEntity ( unsigned char * dstColors ) { int i ; dstColors += 3 ; for ( i = 0 ; i < tess . numVertexes ; i ++ , dstColors += 4 ) { * dstColors = backEnd . currentEntity -> e . shaderRGBA [ 3 ] ; } } 

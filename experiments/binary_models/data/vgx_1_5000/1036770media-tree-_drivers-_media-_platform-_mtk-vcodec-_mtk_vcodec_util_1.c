@@ -1,0 +1,1 @@
+( mtk_vcodec_mem_free ) ; void mtk_vcodec_set_curr_ctx ( struct mtk_vcodec_dev * dev , struct mtk_vcodec_ctx * ctx ) { cfs_time_t flags ; spin_lock_irqsave ( & dev -> irqlock , flags ) ; dev -> curr_ctx = ctx ; spin_unlock_irqrestore ( & dev -> irqlock , flags ) ; } 

@@ -1,1 +1,0 @@
-ssize_t xoff_cell_encoded_len ( const xoff_cell_t * obj ) { ssize_t result = 0 ; result += 1 ; return result ; } 

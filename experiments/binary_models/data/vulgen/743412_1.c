@@ -1,1 +1,0 @@
-tp_probes { struct rcu_head rcu ; struct tracepoint_func probes [ 0 ] ; } 

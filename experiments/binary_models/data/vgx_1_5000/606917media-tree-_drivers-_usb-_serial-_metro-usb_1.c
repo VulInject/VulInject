@@ -1,0 +1,1 @@
+static int metrousb_port_remove ( struct usb_serial_port * port ) { struct metrousb_private * metro_priv ; metro_priv = usb_get_serial_port_data ( port ) ; return 0 ; } 

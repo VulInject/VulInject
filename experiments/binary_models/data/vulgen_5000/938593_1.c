@@ -1,0 +1,1 @@
+void urndis_decap ( struct urndis_softc * , struct urndis_chain * , u_int32_t ) const struct urndis_class * urndis_lookup ( usb_interface_descriptor_t * ) int urndis_match ( struct device * , void * , void * ) void urndis_attach ( struct device * , struct device * , void * ) int urndis_detach ( struct device * , int ) int urndis_cd = { NULL "urndis" DV_IFNET } ; 

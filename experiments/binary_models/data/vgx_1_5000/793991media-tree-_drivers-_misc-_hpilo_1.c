@@ -1,0 +1,1 @@
+static void __exit ilo_exit ( void ) { pci_unregister_driver ( & ilo_driver ) ; unregister_chrdev_region ( MKDEV ( ilo_major , 0 ) , MAX_OPEN ) ; } 

@@ -1,0 +1,1 @@
+static int ce_compare_gitlink ( const struct cache_entry * ce ) { struct object_id oid ; return ! oideq ( & oid , & ce -> oid ) ; } 

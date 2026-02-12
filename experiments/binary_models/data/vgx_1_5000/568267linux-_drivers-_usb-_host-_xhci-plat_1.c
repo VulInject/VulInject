@@ -1,0 +1,1 @@
+static int xhci_priv_init_quirk ( struct usb_hcd * hcd ) { struct xhci_plat_priv * priv = hcd_to_xhci_priv ( hcd ) ; return priv -> init_quirk ( hcd ) ; } 

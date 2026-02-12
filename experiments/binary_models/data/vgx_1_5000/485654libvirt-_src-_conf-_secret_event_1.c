@@ -1,0 +1,1 @@
+VIR_LOG_INIT ( "conf.secret_event" ) ; _virSecretEvent { virObjectEvent parent ; int dummy ; } 

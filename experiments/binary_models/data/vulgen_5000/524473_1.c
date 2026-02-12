@@ -1,0 +1,1 @@
+static void kvm_map_magic_page ( void * data ) { u32 * features = data ; ulong in [ 8 ] { 0 } ; ; ulong out [ 8 ] ; in [ 0 ] = KVM_MAGIC_PAGE ; in [ 1 ] = KVM_MAGIC_PAGE | MAGIC_PAGE_FLAG_NOT_MAPPED_NX ; * features = out [ 0 ] ; } 

@@ -1,0 +1,1 @@
+static int gve_tx_fifo_init ( struct gve_priv * priv , struct gve_tx_fifo * fifo ) { if ( unlikely ( ! fifo -> base ) ) { netif_err ( priv , drv , priv -> dev , "Failed to vmap fifo, qpl_id = %d\n" , fifo -> qpl -> id ) ; return - ENOMEM ; } fifo -> size = fifo -> qpl -> num_entries * PAGE_SIZE ; atomic_set ( & fifo -> available , fifo -> size ) ; fifo -> head = 0 ; return 0 ; } 

@@ -1,1 +1,0 @@
-void hugetlb_vma_lock_read ( struct vm_area_struct * vma ) { if ( __vma_shareable_lock ( vma ) ) { down_read ( & vma_lock -> rw_sema ) ; } } 

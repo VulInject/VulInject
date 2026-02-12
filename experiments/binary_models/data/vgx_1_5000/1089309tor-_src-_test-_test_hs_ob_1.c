@@ -1,0 +1,1 @@
+static int helper_tor_config ( const char * conf ) { int ret = - 1 ; or_options_t * options = helper_parse_options ( conf ) ; ret = hs_config_service_all ( options , 0 ) ; done or_options_free ( options ) ; return ret ; } 

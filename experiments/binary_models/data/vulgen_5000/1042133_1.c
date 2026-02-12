@@ -1,0 +1,1 @@
+static struct mcx_cmdq_entry * mcx_get_cmdq_entry ( struct mcx_softc * sc , enum mcx_cmdq_slot slot ) { struct mcx_cmdq_entry * cqe ; cqe = MCX_DMA_KVA ( & sc -> sc_cmdq_mem ) ; cqe += slot ; if ( ( cqe -> cq_status & MCX_CQ_STATUS_OWN_MASK ) != MCX_CQ_STATUS_OWN_SW ) { cqe = NULL ; } return ( cqe ) ; } 

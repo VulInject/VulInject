@@ -1,0 +1,42 @@
+static int entropy_gather_internal( mbedtls_entropy_context *ctx )
+{
+int ret = MBEDTLS_ERR_ENTROPY_SOURCE_FAILED;
+int i;
+int have_one_strong = 0;
+unsigned char buf[MBEDTLS_ENTROPY_MAX_GATHER];
+size_t olen;
+
+if( ctx->source_count == 0 )
+return( MBEDTLS_ERR_ENTROPY_NO_SOURCES_DEFINED );
+
+
+for( i = 0; i < ctx->source_count; i++ )
+{
+if( ctx->source[i].strong == MBEDTLS_ENTROPY_SOURCE_STRONG )
+have_one_strong = 1;
+
+olen = 0;
+if( ( ret = ctx->source[i].f_source( ctx->source[i].p_source,
+buf, MBEDTLS_ENTROPY_MAX_GATHER, &olen ) ) != 0 )
+{
+goto cleanup;
+}
+
+
+if( olen > 0 )
+{
+if( ( ret = entropy_update( ctx, (unsigned char) i,
+buf, olen ) ) != 0 )
+return( ret );
+ctx->source[i].size += olen;
+}
+}
+
+if( have_one_strong == 0 )
+ret = MBEDTLS_ERR_ENTROPY_NO_STRONG_SOURCE;
+
+cleanup:
+mbedtls_platform_zeroize( buf, sizeof( buf ) );
+
+return( ret );
+}

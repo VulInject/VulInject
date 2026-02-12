@@ -1,1 +1,0 @@
-FUN1 ( ) { char * VAR1 ; size_t VAR2 ; if ( FUN2 ( FUN3 ( ) , "" , & VAR1 , & VAR2 ) == VAR3 ) { FUN4 ( ) ; } FUN5 ( VAR1 , NULL ) ; VAR4 ; }

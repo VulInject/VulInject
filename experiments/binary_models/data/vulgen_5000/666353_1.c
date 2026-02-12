@@ -1,0 +1,1 @@
+int ff_idet_filter_line_ # # KIND ( , , , ) ; static int idet_filter_line_ # # KIND ( , , , ) { int sum = 0 const int left_over = w & ( SPAN - 1 ) w -= left_over if ( w > 0 ) { sum += ff_idet_filter_line_ # # KIND ( a , b , c , w ) ; } } ; return sum ; 

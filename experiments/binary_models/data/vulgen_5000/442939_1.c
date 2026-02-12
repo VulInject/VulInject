@@ -1,0 +1,1 @@
+static int tc_act_parse_mark ( struct mlx5e_tc_act_parse_state * parse_state , const struct flow_action_entry * act , struct mlx5e_priv * priv , struct mlx5_flow_attr * attr ) { attr -> nic_attr -> flow_tag = act -> mark ; return 0 ; } struct mlx5e_tc_act mlx5e_tc_act_mark = { . can_offload = tc_act_can_offload_mark . parse_action = tc_act_parse_mark } ; 

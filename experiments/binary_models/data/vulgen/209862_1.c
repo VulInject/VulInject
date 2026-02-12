@@ -1,1 +1,0 @@
-static void rdfs ( daddr_t , int , char * ) static { struct fs fs ; int fsx [ SBSIZE ] ; } , ufs 

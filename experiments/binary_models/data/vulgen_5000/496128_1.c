@@ -1,0 +1,1 @@
+static void dpaa2_switch_ethtool_get_strings ( struct net_device * netdev , u32 stringset , u8 * data ) { u8 * p = data ; int i ; switch ( stringset ) { case ETH_SS_STATS : for ( i = 0 ; i < DPAA2_SWITCH_NUM_COUNTERS ; i ++ ) { memcpy ( p , dpaa2_switch_ethtool_counters [ i ] . name , ETH_GSTRING_LEN ) ; p += ETH_GSTRING_LEN ; } break ; } } 

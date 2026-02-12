@@ -1,0 +1,1 @@
+struct delegpt * delegpt_create ( struct regional * region ) { struct delegpt * dp = ( delegpt * ) regional_alloc ( region , sizeof ( * dp ) ) ; if ( ! dp ) { return NULL ; } return dp ; } 

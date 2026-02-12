@@ -1,0 +1,1 @@
+void fabricd_lsp_free ( struct isis_lsp * lsp ) { XFREE ( MTYPE_FABRICD_FLOODING_INFO , lsp -> flooding_interface ) ; for ( enum isis_tx_type type = TX_LSP_NORMAL ; type <= TX_LSP_CIRCUIT_SCOPED ; type ++ ) { list_delete ( & lsp -> flooding_neighbors [ type ] ) ; } } 

@@ -1,1 +1,0 @@
-static void * FUN1 ( void * VAR1 ) extern int FUN2 ( void ) { if ( ! FUN3 ( ) ) { return VAR2 ; } FUN4 ( VAR3 , NULL ) ; return VAR2 ; }

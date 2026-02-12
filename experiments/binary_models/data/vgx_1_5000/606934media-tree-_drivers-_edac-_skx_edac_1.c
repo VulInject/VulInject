@@ -1,0 +1,1 @@
+static u8 skx_get_node_id ( struct skx_dev * d ) { int reg ; pci_read_config_dword ( d -> util_all , 0xF4 , & reg ) ; return GET_BITFIELD ( reg , 0 , 2 ) ; } 

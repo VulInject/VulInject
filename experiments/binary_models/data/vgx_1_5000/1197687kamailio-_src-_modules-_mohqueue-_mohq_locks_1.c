@@ -1,0 +1,1 @@
+switch ( plock -> lock_cnt ) { case - 1 : plock -> lock_cnt = 0 ; break ; case 0 : LM_WARN ( "mohq_lock_release: Lock was not set.\n" ) ; break ; default : plock -> lock_cnt -- ; break ; } return ; 

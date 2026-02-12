@@ -1,0 +1,1 @@
+int sof_stream_pcm_close ( struct snd_sof_dev * sdev , struct snd_pcm_substream * substream ) { struct sof_stream * stream = substream -> runtime -> private_data ; substream -> runtime -> private_data = NULL ; return 0 ; } 

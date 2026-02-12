@@ -1,1 +1,0 @@
-static void __kprobes kprobes_restore_local_irqflag ( struct kprobe_ctlblk * kcb , struct pt_regs * regs ) { } 

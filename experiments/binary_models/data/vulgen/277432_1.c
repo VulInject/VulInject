@@ -1,1 +1,0 @@
-mongoc_client_pool_new ( ) { mongoc_client_pool_t * pool ; if ( ! ( pool = mongoc_client_pool_new_with_error ( uri , & error ) ) ) { MONGOC_ERROR ( "%s" , error . message ) ; } return pool ; } 

@@ -1,0 +1,1 @@
+static void init_run_constructors ( void ) { const vaddr_t * ctor ; for ( ctor = & __ctor_list ; ctor < & __ctor_end ; ctor ++ ) { } } 

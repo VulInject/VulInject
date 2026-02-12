@@ -1,1 +1,0 @@
-enum nx_pclkmode FUN1 ( u32 VAR1 ) { const u32 VAR2 = 3 ; return VAR3 ; }

@@ -1,0 +1,1 @@
+LIBIMOBILEDEVICE_API restored_error_t restored_receive ( restored_client_t client , plist_t * plist ) { return restored_error ( property_list_service_receive_plist ( client -> parent , plist ) ) ; } 

@@ -1,1 +1,0 @@
-static int nullf_new ( BIO * bi ) { bi -> init = 1 ; bi -> ptr = NULL ; return ( 1 ) ; } 

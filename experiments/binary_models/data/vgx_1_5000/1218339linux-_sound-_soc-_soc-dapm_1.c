@@ -1,0 +1,1 @@
+static struct snd_soc_dapm_widget * dapm_wcache_lookup ( struct snd_soc_dapm_widget * w , const char * name ) { if ( w ) { struct list_head * wlist = & w -> dapm -> card -> widgets ; const int depth = 2 ; int i = 0 ; list_for_each_entry_from ( , , ) { if ( ++ i == depth ) { break ; } } } return NULL ; } 

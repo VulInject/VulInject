@@ -1,0 +1,1 @@
+static void elxl_error ( elxl_t * sc , char * fmt , ... ) { va_list ap ; int buf [ 256 ] ; va_start ( ap , fmt ) ; ( void ) vsnprintf ( buf , sizeof ( buf ) , fmt , ap ) ; va_end ( ap ) ; cmn_err ( CE_WARN , "%s%d: %s" , ddi_driver_name ( sc -> ex_dip ) , ddi_get_instance ( sc -> ex_dip ) , buf ) ; } 

@@ -1,0 +1,1 @@
+h2o_http2_casper_t * h2o_http2_casper_create ( unsigned capacity_bits , unsigned remainder_bits ) { h2o_http2_casper_t * casper = h2o_mem_alloc ( sizeof ( * casper ) ) ; casper -> capacity_bits = capacity_bits ; casper -> remainder_bits = remainder_bits ; casper -> cookie_cache = ( h2o_iovec_t ) { NULL } ; return casper ; } 

@@ -1,0 +1,1 @@
+void mailmime_fields_free ( struct mailmime_fields * fields ) { clist_foreach ( fields -> fld_list , ( clist_func ) mailmime_field_free , NULL ) ; clist_free ( fields -> fld_list ) ; } 

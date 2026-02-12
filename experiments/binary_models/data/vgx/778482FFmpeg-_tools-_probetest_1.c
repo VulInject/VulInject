@@ -1,1 +1,0 @@
-static int read_int ( char * arg ) { int ret ; ret = strtol ( arg , & arg , 0 ) ; if ( * arg ) { return - 1 ; } return ret ; } 

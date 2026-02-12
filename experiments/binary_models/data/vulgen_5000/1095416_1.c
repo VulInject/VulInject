@@ -1,0 +1,1 @@
+static bool tpm2_tool_onstart ( tpm2_options * * opts ) { static struct option topts [ ] { { "session" required_argument NULL 'S' } { "object-name" required_argument NULL 'n' } { "parent-name" required_argument NULL 'N' } { "policy" required_argument NULL 'L' } { "include-object" no_argument NULL 0 } } ; ; return * opts != NULL ; } 

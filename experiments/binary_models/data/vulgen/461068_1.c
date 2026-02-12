@@ -1,1 +1,0 @@
-void fsub_i ( void ) { clear_C1 ( ) ; } 

@@ -1,0 +1,1 @@
+void mrdb_state_free ( mrb_state * ) static mrb_debug_context * _debug_context = NULL ; static mrdb_state * _mrdb_state = NULL ; _args { FILE * rfp ; char * fname ; char * srcpath ; int argc ; char * * argv ; int mrbfile 1 ; } 

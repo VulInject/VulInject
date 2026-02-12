@@ -1,0 +1,1 @@
+static int qmi_wwan_mac_addr ( struct net_device * dev , void * p ) { int ret ; struct sockaddr * addr = p ; ret = eth_prepare_mac_addr_change ( dev , p ) ; if ( possibly_iphdr ( addr -> sa_data ) ) { return - EADDRNOTAVAIL ; } eth_commit_mac_addr_change ( dev , p ) ; return 0 ; } 

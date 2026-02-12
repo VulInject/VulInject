@@ -1,1 +1,0 @@
-uint64_t FUN1 ( void ) { struct sysinfo VAR1 ; return 0 ; }

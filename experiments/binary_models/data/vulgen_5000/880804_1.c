@@ -1,0 +1,1 @@
+void krb5_win_ccdll_load ( context ) krb5_context context ; { if ( krb5_win_ccdll_loaded ) { return ; } if ( LoadFuncs ( KRBCC_DLL , krbcc_fi , 0 , 0 ) ) { return ; } krb5_win_ccdll_loaded = 1 ; krb5_cc_dfl_ops = & krb5_cc_stdcc_ops ; } 

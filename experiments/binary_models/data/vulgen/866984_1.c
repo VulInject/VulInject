@@ -1,1 +1,0 @@
-static int aspeed_sig_expr_eval ( const struct aspeed_sig_expr * expr , bool enabled , struct regmap * const * maps ) { int i ; int ret ; for ( i = 0 ; i < expr -> ndescs ; i ++ ) { const struct aspeed_sig_desc * desc = & expr -> descs [ i ] ; ret = aspeed_sig_desc_eval ( desc , enabled , maps [ desc -> ip ] ) ; } return 1 ; } 

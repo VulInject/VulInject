@@ -1,0 +1,1 @@
+unsigned int intel_rotation_info_size ( const struct intel_rotation_info * rot_info ) { int size = 0 ; int i ; for ( i = 0 ; i < ARRAY_SIZE ( rot_info -> plane ) ; i ++ ) { size += rot_info -> plane [ i ] . width * rot_info -> plane [ i ] . height ; } return size ; } 

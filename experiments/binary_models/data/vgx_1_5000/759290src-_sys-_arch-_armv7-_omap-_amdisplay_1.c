@@ -1,0 +1,1 @@
+paddr_t amdisplay_mmap ( void * sconf , off_t off , int prot ) { struct rasops_info * ri = sconf ; struct amdisplay_softc * sc = ri -> ri_hw ; return bus_dmamem_mmap ( sc -> sc_dmat , & sc -> sc_fb0_dma_segs [ 0 ] , sc -> sc_fb_dma_nsegs , off , prot , BUS_DMA_COHERENT ) ; } 

@@ -1,0 +1,1 @@
+static int roq_write_header ( struct AVFormatContext * s ) { static const uint8_t header [ ] { 0x84 0x10 0xFF 0xFF 0xFF 0xFF 0x1E 0x00 } ; ; avio_write ( s -> pb , header , 8 ) ; return 0 ; } 

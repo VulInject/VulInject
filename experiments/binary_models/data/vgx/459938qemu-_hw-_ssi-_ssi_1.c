@@ -1,1 +1,0 @@
-static uint32_t ssi_transfer_raw_default ( SSIPeripheral * dev , uint32_t val ) { SSIPeripheralClass * ssc = SSI_PERIPHERAL_GET_CLASS ( dev ) ; return 0 ; } 

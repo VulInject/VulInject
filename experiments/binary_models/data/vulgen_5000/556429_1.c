@@ -1,0 +1,1 @@
+throughout this file ; 'struct' is used only to get the code to compile when preprocessed correctly . The original problem was seen in the Linux kernel and reported by Jakub Jelinek < jakub redhat . com > ; this test is synthetic . * / extern void B ( int ) ; void foo ( void ) { E ( ) dummy ; } 

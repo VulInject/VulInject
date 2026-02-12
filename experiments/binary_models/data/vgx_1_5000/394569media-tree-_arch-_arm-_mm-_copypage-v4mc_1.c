@@ -1,0 +1,1 @@
+void v4_mc_clear_user_highpage ( struct page * page , unsigned long vaddr ) { void * ptr , * kaddr = kmap_atomic ( page ) ; volatile kunmap_atomic ( kaddr , NULL ) ; } 

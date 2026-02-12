@@ -1,0 +1,1 @@
+static __init int sm_module_init ( void ) { int error = 0 ; cache_flush_workqueue = create_freezable_workqueue ( "smflush" ) ; error = register_mtd_blktrans ( & sm_ftl_ops ) ; if ( error ) { destroy_workqueue ( cache_flush_workqueue ) ; } return error ; } 

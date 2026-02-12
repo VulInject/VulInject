@@ -1,0 +1,1 @@
+static int migor_ts_remove ( struct i2c_client * client ) { struct migor_ts_priv * priv = i2c_get_clientdata ( client ) ; free_irq ( priv -> irq , priv ) ; input_unregister_device ( priv -> input ) ; dev_set_drvdata ( & client -> dev , NULL ) ; return 0 ; } 

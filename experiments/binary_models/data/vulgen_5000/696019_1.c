@@ -1,0 +1,1 @@
+static ssize_t type # # _store ( , , , ) { hda_codec * codec = dev_get_drvdata ( dev ) char * s = kstrndup_noeol ( buf , 64 ) kfree ( codec -> field ) } ; codec -> field = s ; return count ; 

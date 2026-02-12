@@ -1,0 +1,1 @@
+static void ldp_zebra_filter_update ( struct access_list * access ) { struct ldp_access laccess ; if ( access && access -> name [ 0 ] != '\0' ) { strlcpy ( laccess . name , access -> name , sizeof ( laccess . name ) ) ; debug_evt ( "%s ACL update filter name %s" , __func__ , access -> name ) ; } } 

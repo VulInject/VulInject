@@ -1,0 +1,1 @@
+static const char * _load_helper ( lua_State * L , void * data , size_t * size ) { ( void ) L ; struct _dumpbuf * db = data ; * size = db -> used ; db -> used = 0 ; return db -> buf ; } 

@@ -1,0 +1,1 @@
+R_API const char * r_anal_value_type_tostring ( RAnalValue * value ) { if ( value -> type == R_ANAL_VAL_MEM ) { return "mem" ; } if ( value -> type == R_ANAL_VAL_IMM ) { return "imm" ; } return "unk" ; } 

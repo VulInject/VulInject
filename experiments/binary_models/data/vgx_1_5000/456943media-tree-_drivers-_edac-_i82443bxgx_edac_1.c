@@ -1,0 +1,1 @@
+static void i82443bxgx_edacmc_remove_one ( struct pci_dev * pdev ) { struct mem_ctl_info * mci ; edac_dbg ( 0 , "\n" ) ; if ( i82443bxgx_pci ) { edac_pci_release_generic_ctl ( i82443bxgx_pci ) ; } edac_mc_free ( mci ) ; } 

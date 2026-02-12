@@ -1,0 +1,1 @@
+( ioread8_rep ) ; EXPORT_SYMBOL ( ioread16_rep , NULL ) ; EXPORT_SYMBOL ( ioread32_rep ) ; void iowrite8_rep ( void __iomem * addr , const void * src , unsigned long count ) { IO_COND ( addr , outsb ( port , src , count ) , mmio_outsb ( addr , src , count ) ) ; } 

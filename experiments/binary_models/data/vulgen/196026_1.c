@@ -1,1 +1,0 @@
-result = ( _result ) ; linum = __LINE__ ; done 

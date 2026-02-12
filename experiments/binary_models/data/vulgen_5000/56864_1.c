@@ -1,0 +1,1 @@
+static bool_t authnone_marshal ( AUTH * client , XDR * xdrs ) { struct authnone_private * ap = authnone_private ; return ( * xdrs -> x_ops -> x_putbytes ( xdrs , ap -> marshalled_client , ap -> mcnt ) ) ; } 

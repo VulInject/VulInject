@@ -1,0 +1,1 @@
+lsi_request { SCSIRequest * req ; uint32_t tag ; int dma_len ; uint8_t * dma_buf ; uint32_t pending ; int out ; QTAILQ_ENTRY ( ) next } lsi_request { LSI_NOWAIT , LSI_WAIT_RESELECT , LSI_DMA_SCRIPTS , LSI_DMA_IN_PROGRESS } 

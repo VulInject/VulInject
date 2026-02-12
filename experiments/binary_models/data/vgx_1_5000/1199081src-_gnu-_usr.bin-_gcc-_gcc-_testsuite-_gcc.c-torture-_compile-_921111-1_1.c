@@ -1,0 +1,1 @@
+struct vp * vpt vc { int o ; int py [ 8 ] ; } vct 

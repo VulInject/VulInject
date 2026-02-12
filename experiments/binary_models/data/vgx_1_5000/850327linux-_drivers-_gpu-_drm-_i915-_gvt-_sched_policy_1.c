@@ -1,0 +1,1 @@
+static void tbs_sched_clean_vgpu ( struct intel_vgpu * vgpu ) { struct intel_gvt * gvt = vgpu -> gvt ; struct gvt_sched_data * sched_data = gvt -> scheduler . sched_data ; vgpu -> sched_data = NULL ; if ( idr_is_empty ( & gvt -> vgpu_idr ) ) { hrtimer_cancel ( & sched_data -> timer ) ; } } 

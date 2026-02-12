@@ -1,1 +1,0 @@
-return tvb_captured_length ( ) ; 

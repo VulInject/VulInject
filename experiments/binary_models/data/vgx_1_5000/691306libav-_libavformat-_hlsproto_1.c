@@ -1,0 +1,1 @@
+static void free_variant_list ( HLSContext * s ) { int i ; for ( i = 0 ; i < s -> n_variants ; i ++ ) { av_free ( s -> variants [ i ] ) ; } av_freep ( & s -> variants ) ; } 

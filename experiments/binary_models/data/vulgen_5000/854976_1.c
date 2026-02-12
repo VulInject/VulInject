@@ -1,0 +1,1 @@
+CMD_FUNC ( cmd_swhois ) ; ModuleHeader MOD_HEADER = { "swhois" "5.0" "command /swhois" "UnrealIRCd Team" "unrealircd-6" } ; MOD_INIT ( ) { CommandAdd ( modinfo -> handle , MSG_SWHOIS , cmd_swhois , MAXPARA , CMD_SERVER ) ; return MOD_SUCCESS ; } 

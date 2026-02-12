@@ -1,0 +1,1 @@
+static void lookup_ops ( struct device * dev , struct abx500_ops * * ops ) { struct abx500_device_entry * dev_entry ; list_for_each_entry ( , , ) { if ( dev_entry -> dev == dev ) { * ops = & dev_entry -> ops ; return ; } } } 

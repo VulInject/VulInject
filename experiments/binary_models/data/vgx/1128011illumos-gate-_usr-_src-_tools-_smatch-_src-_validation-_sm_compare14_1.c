@@ -1,1 +1,0 @@
-int cmp_x ( int x , int y ) { if ( x < y ) { return - 1 ; } return 1 ; } int x , y ; int test ( void ) { if ( cmp_x ( x , 4 ) < 0 ) { __smatch_implied ( x ) ; } else { __smatch_implied ( x ) ; } } 

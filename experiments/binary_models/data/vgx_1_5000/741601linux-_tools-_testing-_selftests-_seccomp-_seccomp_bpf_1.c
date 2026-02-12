@@ -1,0 +1,1 @@
+FIXTURE ( ) { struct sock_fprog allow ; struct sock_fprog log ; int trace ; struct sock_fprog error ; struct sock_fprog trap ; struct sock_fprog kill ; } 

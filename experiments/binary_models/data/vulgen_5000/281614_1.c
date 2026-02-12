@@ -1,0 +1,1 @@
+ssize_t sfvaprints ( sp , form , args ) char * * sp ; char * form ; va_list args ; { char * s ; ssize_t n ; if ( ! sp || ! ( s = sfvprints ( form , args ) ) ) { return - 1 ; } else { if ( ! ( * sp = ( char * ) malloc ( n = strlen ( s ) + 1 ) ) ) { return - 1 ; } return n - 1 ; } } 

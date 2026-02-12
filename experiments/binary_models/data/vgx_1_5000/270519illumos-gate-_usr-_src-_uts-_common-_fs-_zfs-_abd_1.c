@@ -1,0 +1,1 @@
+static void abd_iter_init ( struct abd_iter * aiter , abd_t * abd ) { abd_verify ( abd ) ; aiter -> iter_abd = abd ; aiter -> iter_pos = 0 ; aiter -> iter_mapsize = 0 ; } 

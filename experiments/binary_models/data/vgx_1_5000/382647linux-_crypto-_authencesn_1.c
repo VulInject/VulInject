@@ -1,0 +1,1 @@
+static int crypto_authenc_esn_setauthsize ( struct crypto_aead * authenc_esn , unsigned int authsize ) { return 0 ; } 

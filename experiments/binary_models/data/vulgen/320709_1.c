@@ -1,1 +1,0 @@
-{ ( void ) fprintf ( stderr , "%s: " , __progname ) ; if ( fmt != NULL ) { ( void ) vfprintf ( stderr , fmt , ap ) ; } ( void ) fprintf ( stderr , "\n" ) ; } 

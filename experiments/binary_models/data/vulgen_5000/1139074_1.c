@@ -1,0 +1,1 @@
+static int rk_hash_unprepare ( struct crypto_engine * engine , void * breq ) { struct ahash_request * areq = container_of ( breq , ahash_request , base ) ; struct rk_ahash_rctx * rctx = ahash_request_ctx ( areq ) ; struct rk_crypto_info * rkc = rctx -> dev ; return 0 ; } 

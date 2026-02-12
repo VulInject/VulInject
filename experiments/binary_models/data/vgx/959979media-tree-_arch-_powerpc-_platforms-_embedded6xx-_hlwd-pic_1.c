@@ -1,1 +1,0 @@
-void hlwd_quiesce ( void ) { void __iomem * io_base = hlwd_irq_host -> host_data ; __hlwd_quiesce ( io_base , NULL ) ; } 

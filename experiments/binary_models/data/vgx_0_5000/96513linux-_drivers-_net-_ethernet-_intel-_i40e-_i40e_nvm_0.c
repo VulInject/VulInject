@@ -1,0 +1,28 @@
+int i40e_init_nvm(struct i40e_hw *hw)
+{
+struct i40e_nvm_info *nvm = &hw->nvm;
+int ret_code = 0;
+u32 fla, gens;
+u8 sr_size;
+
+
+gens = rd32(hw, I40E_GLNVM_GENS);
+sr_size = ((gens & I40E_GLNVM_GENS_SR_SIZE_MASK) >>
+I40E_GLNVM_GENS_SR_SIZE_SHIFT);
+
+nvm->sr_size = BIT(sr_size) * I40E_SR_WORDS_IN_1KB;
+
+
+fla = rd32(hw, I40E_GLNVM_FLA);
+if (fla & I40E_GLNVM_FLA_LOCKED_MASK) { 
+
+nvm->timeout = I40E_MAX_NVM_TIMEOUT;
+nvm->blank_nvm_mode = false;
+} else { 
+nvm->blank_nvm_mode = true;
+ret_code = I40E_ERR_NVM_BLANK_MODE;
+i40e_debug(hw, I40E_DEBUG_NVM, "NVM init error: unsupported blank mode.\n");
+}
+
+return ret_code;
+}

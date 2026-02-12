@@ -1,0 +1,1 @@
+static int proc_seq_open ( struct inode * inode , struct file * file ) { struct proc_dir_entry * de = PDE ( inode ) ; return seq_open ( file , de -> seq_ops ) ; } 

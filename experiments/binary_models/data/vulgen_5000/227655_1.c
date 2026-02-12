@@ -1,0 +1,1 @@
+kona_bcm_timers { int tmr_irq ; void __iomem * tmr_regs ; } static struct kona_bcm_timers timers ; static u32 arch_timer_rate ; static void kona_timer_disable_and_clear ( void __iomem * base ) { uint32_t reg ; reg = readl ( base + KONA_GPTIMER_STCS_OFFSET ) ; reg |= 1 << KONA_GPTIMER_STCS_TIMER_MATCH_SHIFT ; writel ( reg , base + KONA_GPTIMER_STCS_OFFSET ) ; } 

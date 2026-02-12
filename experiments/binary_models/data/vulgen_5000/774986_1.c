@@ -1,0 +1,1 @@
+static int qla27xx_fwdt_entry_t265 ( struct scsi_qla_host * vha , struct qla27xx_fwdt_entry * ent , void * buf , ulong * len ) { struct device_reg_24xx __iomem * reg = qla27xx_isp_reg ( vha ) ; ql_dbg ( ql_dbg_misc , vha , 0xd209 , "%s: pause risc [%lx]\n" , __func__ , * len ) ; return false ; } 

@@ -1,0 +1,1 @@
+void smt_swap_para ( struct smt_header * sm , int len , int direction ) { SK_UNUSED ( sm ) ; SK_UNUSED ( len , NULL ) ; SK_UNUSED ( direction ) ; } 

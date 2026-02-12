@@ -1,1 +1,0 @@
-int virHashAtomicUpdate ( virHashAtomic * table , const char * name , void * userdata ) { int ret ; virObjectLock ( table , NULL ) ; ret = virHashUpdateEntry ( table -> hash , name , userdata ) ; virObjectUnlock ( table ) ; return ret ; } 

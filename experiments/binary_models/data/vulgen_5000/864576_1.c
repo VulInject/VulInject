@@ -1,0 +1,1 @@
+the Free Software Foundation ; either version ( at your option ) , any later version . GCC is distributed in the hope that it will be useful , but WITHOUT ANY WARRANTY ; for see the file COPYING . If not , write to the Free Software Foundation , 51 Franklin Street , Fifth Floor , Boston , MA 02110 - 1301 , USA . * / edge_equivalency { tree rhs tree lhs } ; 

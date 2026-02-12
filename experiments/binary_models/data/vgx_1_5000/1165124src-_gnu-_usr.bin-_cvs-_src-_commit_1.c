@@ -1,0 +1,1 @@
+masterlist_delproc ( ) Node * p ; { struct master_lists * ml ; ml = ( master_lists * ) p -> data ; dellist ( & ml -> ulist ) ; dellist ( & ml -> cilist ) ; } 

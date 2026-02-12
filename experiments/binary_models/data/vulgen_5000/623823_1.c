@@ -1,0 +1,1 @@
+static inline int snd_ad1816a_busy_wait ( struct snd_ad1816a * chip ) { int timeout ; for ( timeout = 1000 ; udelay ( 10 ) ) { if ( inb ( AD1816A_REG ( AD1816A_CHIP_STATUS ) ) & AD1816A_READY ) { return 0 ; } } snd_printk ( KERN_WARNING "chip busy.\n" ) ; return - EBUSY ; } 

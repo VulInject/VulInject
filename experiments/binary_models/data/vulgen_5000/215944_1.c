@@ -1,0 +1,1 @@
+static int multiq_dump ( struct Qdisc * sch , struct sk_buff * skb ) { struct multiq_sched_data * q = qdisc_priv ( sch ) ; unsigned char * b = skb_tail_pointer ( skb ) ; struct tc_multiq_qopt opt ; opt . bands = q -> bands ; opt . max_bands = q -> max_bands ; return skb -> len ; nla_put_failure nlmsg_trim ( skb , b ) ; return - 1 ; } 

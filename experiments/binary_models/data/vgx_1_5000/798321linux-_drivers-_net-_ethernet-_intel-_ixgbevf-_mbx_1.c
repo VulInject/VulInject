@@ -1,0 +1,1 @@
+static s32 ixgbevf_poll_for_msg ( struct ixgbe_hw * hw ) { struct ixgbe_mbx_info * mbx = & hw -> mbx ; int countdown = mbx -> timeout ; if ( ! countdown || ! mbx -> ops . check_for_msg ) { return IXGBE_ERR_CONFIG ; } while ( countdown && mbx -> ops . check_for_msg ( hw ) ) { countdown -- ; udelay ( mbx -> udelay , NULL ) ; } return countdown ?0 : IXGBE_ERR_TIMEOUT ; } 

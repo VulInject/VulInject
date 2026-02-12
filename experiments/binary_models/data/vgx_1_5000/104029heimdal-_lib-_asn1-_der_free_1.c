@@ -1,0 +1,1 @@
+der_free_bmp_string ( ) { free ( k -> data ) ; k -> data = NULL ; } 

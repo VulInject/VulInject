@@ -1,0 +1,1 @@
+static int imxfb_regulator_set ( struct imxfb_info * fbi , int enable ) { int ret ; if ( enable ) { ret = regulator_enable ( fbi -> lcd_pwr ) ; } else { ret = regulator_disable ( fbi -> lcd_pwr ) ; } if ( ret == 0 ) { fbi -> lcd_pwr_enabled = enable ; } return ret ; } 

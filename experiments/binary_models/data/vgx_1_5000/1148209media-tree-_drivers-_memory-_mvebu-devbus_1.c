@@ -1,0 +1,1 @@
+devbus_read_params { u32 bus_width ; u32 badr_skew ; u32 turn_off ; u32 acc_first ; u32 acc_next ; u32 rd_setup ; int rd_hold ; } 

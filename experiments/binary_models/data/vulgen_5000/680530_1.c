@@ -1,0 +1,1 @@
+static int proxy_teardown ( void * tdata ) { struct proxy_test_data * ptd = ( proxy_test_data * ) tdata ; if ( tdata ) { nsock_pool_delete ( ptd -> nsp ) ; } nsock_set_log_function ( NULL ) ; GlobalTD = NULL ; return 0 ; } 

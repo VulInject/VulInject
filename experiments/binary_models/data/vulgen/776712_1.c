@@ -1,1 +1,0 @@
-void ewmh_set_wm_pid ( Window wnd , pid_t pid ) { } 

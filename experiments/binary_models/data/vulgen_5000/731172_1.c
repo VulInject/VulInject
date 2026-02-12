@@ -1,0 +1,1 @@
+static umode_t cnqf_feature_is_visible ( struct kobject * kobj , struct attribute * attr , int n ) { struct device * dev = kobj_to_dev ( kobj ) ; struct amd_pmf_dev * pdev = dev_get_drvdata ( dev ) ; return pdev -> cnqf_supported ?attr -> mode : 0 ; } 

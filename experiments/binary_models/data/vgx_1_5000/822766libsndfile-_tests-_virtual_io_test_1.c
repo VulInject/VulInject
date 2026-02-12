@@ -1,0 +1,1 @@
+{ VIO_DATA * vf = ( VIO_DATA * ) user_data ; if ( vf -> offset + count > SIGNED_SIZEOF ( vf -> data ) ) { count = sizeof ( vf -> data ) - vf -> offset ; } memcpy ( vf -> data + vf -> offset , ptr , ( size_t ) count ) ; vf -> offset += count ; if ( vf -> offset > vf -> length ) { vf -> length = vf -> offset ; } return count ; } 

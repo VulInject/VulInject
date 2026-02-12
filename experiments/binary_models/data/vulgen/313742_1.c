@@ -1,1 +1,0 @@
-void smp_send_reschedule ( int cpu ) { } 

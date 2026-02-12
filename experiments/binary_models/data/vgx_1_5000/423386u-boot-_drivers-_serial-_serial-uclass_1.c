@@ -1,0 +1,1 @@
+static int serial_pre_remove ( struct udevice * dev ) { struct serial_dev_priv * upriv = dev_get_uclass_priv ( dev ) ; return 0 ; } 

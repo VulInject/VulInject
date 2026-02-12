@@ -1,1 +1,0 @@
-static void codec_g729_release ( void * ctx ) { } 

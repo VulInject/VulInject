@@ -1,0 +1,1 @@
+static char * mkdtemp ( char * temp ) { char * path = _mktemp ( temp ) ; if ( path [ 0 ] == 0 ) { return in ; } if ( _mkdir ( path ) < 0 ) { return NULL ; } return path ; } 

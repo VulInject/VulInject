@@ -1,0 +1,1 @@
+struct ovsdb_storage * ovsdb_storage_open_standalone ( const char * filename , bool rw ) { struct ovsdb_storage * storage ; if ( error ) { ovs_fatal ( 0 , "%s" , ovsdb_error_to_string_free ( error ) ) ; } return storage ; } 

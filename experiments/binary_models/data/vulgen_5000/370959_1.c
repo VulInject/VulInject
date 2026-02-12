@@ -1,0 +1,1 @@
+void mlx4_en_tx_irq ( struct mlx4_cq * mcq ) { struct mlx4_en_cq * cq = container_of ( mcq , mlx4_en_cq , mcq ) ; struct mlx4_en_priv * priv = netdev_priv ( cq -> dev ) ; else { mlx4_en_arm_cq ( priv , cq ) ; } } 

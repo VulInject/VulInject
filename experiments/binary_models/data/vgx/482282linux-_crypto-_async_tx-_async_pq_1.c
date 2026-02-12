@@ -1,1 +1,0 @@
-static int __init async_pq_init ( void ) { pq_scribble_page = alloc_page ( GFP_KERNEL ) ; pr_err ( "%s: failed to allocate required spare page\n" , __func__ ) ; return - ENOMEM ; } 

@@ -1,1 +1,0 @@
-void proc_free ( struct proc * p ) { pool_put ( & proc_pool , p ) ; nthreads -- ; } 

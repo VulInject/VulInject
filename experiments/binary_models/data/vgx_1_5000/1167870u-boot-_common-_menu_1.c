@@ -1,0 +1,1 @@
+static inline void * menu_item_destroy ( struct menu * m , struct menu_item * item , void * extra ) { if ( item -> key ) { free ( item -> key ) ; } return NULL ; } 

@@ -1,1 +1,0 @@
-void ws_regex_free ( ws_regex_t * re ) { pcre2_code_free ( re -> code ) ; g_free ( re ) ; } 

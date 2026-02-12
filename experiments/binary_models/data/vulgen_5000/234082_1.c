@@ -1,0 +1,1 @@
+static inline void kvmppc_e500_id_table_reset_one ( struct kvmppc_vcpu_e500 * vcpu_e500 , int as , int pid , int pr ) { struct vcpu_id_table * idt = vcpu_e500 -> idt ; BUG_ON ( as >= 2 ) ; BUG_ON ( pid >= NUM_TIDS ) ; BUG_ON ( pr >= 2 ) ; idt -> id [ as ] [ pid ] [ pr ] . val = 0 ; idt -> id [ as ] [ pid ] [ pr ] . pentry = NULL ; } 

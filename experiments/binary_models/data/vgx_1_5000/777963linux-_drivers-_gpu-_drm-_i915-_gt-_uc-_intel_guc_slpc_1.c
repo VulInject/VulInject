@@ -1,0 +1,1 @@
+static bool __guc_slpc_selected ( struct intel_guc * guc ) { return guc -> submission_selected ; } 

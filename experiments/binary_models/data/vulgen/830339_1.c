@@ -1,1 +1,0 @@
-int EVP_PKEY_get_attr_by_NID ( const EVP_PKEY * key , int nid , int lastpos ) { return X509at_get_attr_by_NID ( key -> attributes , nid , lastpos ) ; } 

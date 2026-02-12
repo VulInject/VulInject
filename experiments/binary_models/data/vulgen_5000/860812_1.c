@@ -1,0 +1,1 @@
+static int nd_get_reply ( TIUSER * , XDR * , uint32_t , int * ) static int nd_auth_marshall ( XDR * ) static void nd_log ( const char * , ... ) __KPRINTFLIKE ( 1 ) ; static void nd_log ( const char * fmt , ... ) { } 

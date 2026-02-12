@@ -1,1 +1,0 @@
-asmlinkage void do_cpe ( struct pt_regs * regs ) { die_if_kernel ( "do_cpe execution Exception" , regs ) ; } 

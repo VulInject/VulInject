@@ -1,0 +1,1 @@
+static void __flush_addrs ( struct list_head * list ) { while ( ! list_empty ( list ) ) { struct mptcp_pm_addr_entry * cur ; cur = list_entry ( list -> next , mptcp_pm_addr_entry , list ) ; list_del_rcu ( & cur -> list ) ; } } 

@@ -1,1 +1,0 @@
-module_init ( mark_mt_init ) ; module_exit ( mark_mt_exit , NULL ) ; 

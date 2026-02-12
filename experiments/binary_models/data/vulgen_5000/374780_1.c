@@ -1,0 +1,1 @@
+MODULE_DEVICE_TABLE ( i2c , pca955x_id ) ; pca955x { struct mutex lock ; struct pca955x_led * leds ; struct pca955x_chipdef * chipdef ; struct i2c_client * client ; unsigned long active_pins ; struct gpio_chip gpio ; } pca955x_led { struct pca955x * pca955x ; int led_num ; u32 type ; enum led_default_state default_state ; struct fwnode_handle * fwnode ; } 

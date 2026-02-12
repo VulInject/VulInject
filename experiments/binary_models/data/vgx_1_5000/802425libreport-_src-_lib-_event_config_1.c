@@ -1,0 +1,1 @@
+event_config_t * new_event_config ( const char * name ) { event_config_t * e = g_malloc0 ( sizeof ( event_config_t ) ) ; e -> info = new_config_info ( name , NULL ) ; return e ; } 

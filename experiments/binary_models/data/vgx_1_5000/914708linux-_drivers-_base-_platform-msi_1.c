@@ -1,0 +1,1 @@
+static void platform_msi_set_desc ( msi_alloc_info_t * arg , struct msi_desc * desc ) { arg -> desc = desc ; arg -> hwirq = platform_msi_calc_hwirq ( desc , NULL ) ; } 

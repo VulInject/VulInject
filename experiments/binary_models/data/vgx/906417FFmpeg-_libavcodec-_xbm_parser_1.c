@@ -1,1 +1,0 @@
-static int xbm_init ( AVCodecParserContext * s ) { XBMParseContext * bpc = s -> priv_data ; return 0 ; } 

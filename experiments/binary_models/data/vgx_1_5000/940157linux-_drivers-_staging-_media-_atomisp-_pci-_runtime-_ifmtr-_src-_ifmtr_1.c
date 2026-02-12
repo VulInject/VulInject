@@ -1,0 +1,1 @@
+static int ifmtr_start_column ( const struct ia_css_stream_config * config , unsigned int bin_in , unsigned int * start_column ) { unsigned int in = config -> input_config . input_res . width , start , for_bayer = ia_css_ifmtr_columns_needed_for_bayer_order ( config ) ; start = ( in - bin_in ) / 2 ; start &= ~ 0x1 ; start += for_bayer ; * start_column = start ; return 0 ; } 

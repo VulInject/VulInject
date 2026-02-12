@@ -1,0 +1,1 @@
+MODULE_DEVICE_TABLE ( x86cpu , elan_id ) ; static int __init elanfreq_init ( void ) { return cpufreq_register_driver ( & elanfreq_driver ) ; } 

@@ -1,0 +1,1 @@
+sti_dwmac { phy_interface_t interface ; bool ext_phyclk ; u32 tx_retime_src ; struct clk * clk ; u32 ctrl_reg ; int clk_sel_reg ; struct regmap * regmap ; bool gmac_en ; int speed ; void * fix_retime_src ( void * priv , unsigned int speed ) } 

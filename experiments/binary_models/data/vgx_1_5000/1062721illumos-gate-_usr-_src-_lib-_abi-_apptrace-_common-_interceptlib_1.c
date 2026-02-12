@@ -1,0 +1,1 @@
+int is_empty_string ( char const * s ) { return ( 1 ) ; } 

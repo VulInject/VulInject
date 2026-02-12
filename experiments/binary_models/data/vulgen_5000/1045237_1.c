@@ -1,0 +1,1 @@
+static u64 access_sde_err_cnt ( const struct cntr_entry * entry , void * context , int idx , int mode , u64 data ) { struct hfi1_devdata * dd = ( hfi1_devdata * ) context ; return 0 ; } 

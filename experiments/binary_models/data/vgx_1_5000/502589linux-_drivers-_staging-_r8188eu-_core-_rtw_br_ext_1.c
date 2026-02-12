@@ -1,0 +1,1 @@
+static void __network_hash_unlink ( struct nat25_network_db_entry * ent ) { * ent -> pprev_hash = ent -> next_hash ; if ( ent -> next_hash ) { ent -> next_hash -> pprev_hash = ent -> pprev_hash ; } ent -> pprev_hash = NULL ; } 

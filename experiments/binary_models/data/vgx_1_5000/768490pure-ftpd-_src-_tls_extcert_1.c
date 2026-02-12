@@ -1,0 +1,1 @@
+static void callback_reply_cert_file ( const char * str , CertResult * const result ) { if ( access ( str , R_OK ) != 0 ) { return ; } free ( ( void * ) ( result -> cert_file ) ) ; result -> cert_file = strdup ( str ) ; } 

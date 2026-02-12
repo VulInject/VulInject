@@ -1,1 +1,0 @@
-void hl_asid_fini ( struct hl_device * hdev ) { mutex_destroy ( & hdev -> asid_mutex ) ; } 

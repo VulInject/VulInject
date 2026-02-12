@@ -1,0 +1,1 @@
+static cmpresult_t uECC_vli_cmp_unsafe ( const uECC_word_t * left , const uECC_word_t * right , wordcount_t num_words ) uECC_PLATFORM == uECC_arm_thumb2 ; static uECC_RNG_Function g_rng_function = 0 ; void uECC_set_rng ( uECC_RNG_Function rng_function ) { g_rng_function = rng_function ; } 

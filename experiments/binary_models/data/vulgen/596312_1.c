@@ -1,1 +1,0 @@
-static irqreturn_t cayman_interrupt_smsc ( int irq , void * dev_id ) { return IRQ_NONE ; } 

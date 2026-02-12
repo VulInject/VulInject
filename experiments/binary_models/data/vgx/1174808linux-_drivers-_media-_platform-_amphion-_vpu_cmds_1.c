@@ -1,1 +1,0 @@
-static void vpu_free_cmd ( struct vpu_cmd_t * cmd ) { if ( ! cmd ) { return ; } vfree ( cmd -> pkt ) ; } 

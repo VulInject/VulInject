@@ -1,0 +1,1 @@
+int fprintf2 ( FILE * fp , const char * format , ... ) { char print_buff [ 8000 ] ; va_list argptr ; int n ; va_start ( argptr , format ) ; n = vsnprintf ( print_buff , sizeof print_buff , format , argptr ) ; va_end ( argptr ) ; fputs ( print_buff , fp ) ; return n ; } 

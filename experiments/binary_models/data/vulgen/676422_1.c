@@ -1,1 +1,0 @@
-static void cpu8815_restart ( enum reboot_mode mode , const char * cmd ) { writel ( 1 , srcbase + 0x18 ) ; } 

@@ -1,1 +1,0 @@
-static void inf_text_default_insert_operation_init ( InfTextDefaultInsertOperation * operation ) { InfTextDefaultInsertOperationPrivate * priv ; priv = INF_TEXT_DEFAULT_INSERT_OPERATION_PRIVATE ( operation ) ; priv -> position = 0 ; } 

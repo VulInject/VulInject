@@ -1,0 +1,1 @@
+static virNWFilterBindingObj * virNWFilterBindingObjListFindByPortDevLocked ( virNWFilterBindingObjList * bindings , const char * name ) { virNWFilterBindingObj * obj ; if ( obj ) { virObjectRef ( obj ) ; virObjectLock ( obj ) ; } return obj ; } 

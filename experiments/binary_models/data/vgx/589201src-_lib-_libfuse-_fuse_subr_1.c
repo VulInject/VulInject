@@ -1,1 +1,0 @@
-void unref_vn ( struct fuse * f , struct fuse_vnode * vn ) { if ( -- vn -> ref == 0 ) { tree_pop ( & f -> vnode_tree , vn -> ino ) ; remove_vnode_from_name_tree ( f , vn ) ; if ( vn -> parent != NULL ) { unref_vn ( f , vn -> parent ) ; } } } 

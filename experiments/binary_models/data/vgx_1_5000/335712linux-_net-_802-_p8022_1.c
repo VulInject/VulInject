@@ -1,0 +1,1 @@
+void unregister_8022_client ( struct datalink_proto * proto ) { llc_sap_put ( proto -> sap ) ; } 

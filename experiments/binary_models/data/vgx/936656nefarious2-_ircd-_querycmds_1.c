@@ -1,1 +1,0 @@
-void init_counters ( void ) { memset ( & UserStats , 0 , sizeof ( UserStats ) ) ; } 

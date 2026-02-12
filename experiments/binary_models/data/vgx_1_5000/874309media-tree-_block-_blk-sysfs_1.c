@@ -1,0 +1,1 @@
+static ssize_t queue_wb_lat_show ( struct request_queue * q , char * page ) { return sprintf ( page , "%llu\n" , div_u64 ( q -> rq_wb -> min_lat_nsec , 1000 ) ) ; } 

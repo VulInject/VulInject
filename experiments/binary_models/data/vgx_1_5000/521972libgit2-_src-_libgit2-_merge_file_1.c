@@ -1,0 +1,1 @@
+static bool merge_file__is_binary ( const git_merge_file_input * file ) { size_t len = file ?file -> size : 0 ; if ( len > GIT_MERGE_FILE_BINARY_SIZE ) { len = GIT_MERGE_FILE_BINARY_SIZE ; } return len ?( memchr ( file -> ptr , 0 , len ) != NULL ) : false ; } 

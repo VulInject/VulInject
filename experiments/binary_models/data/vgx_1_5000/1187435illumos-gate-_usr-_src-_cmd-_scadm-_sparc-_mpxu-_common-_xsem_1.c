@@ -1,0 +1,1 @@
+void xsem_destroy ( xsem_t * sem ) { pthread_mutex_destroy ( & sem -> semMutex ) ; pthread_cond_destroy ( & sem -> semCV ) ; } 

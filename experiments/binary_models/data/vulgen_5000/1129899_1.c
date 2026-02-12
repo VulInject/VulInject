@@ -1,0 +1,1 @@
+static int AppLayerHtpFileParseContentRangeTest02 ( void ) { HTTPContentRange range ; bstr * rawvalue = bstr_dup_c ( "bytes 15335424-27514354/" ) ; FAIL_IF ( HTPParseContentRange ( rawvalue , & range ) == 0 ) ; PASS ; } 

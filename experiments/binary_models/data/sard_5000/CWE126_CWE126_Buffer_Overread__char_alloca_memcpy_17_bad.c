@@ -1,0 +1,26 @@
+void CWE126_Buffer_Overread__char_alloca_memcpy_17_bad()
+{
+    int i;
+    char * data;
+    char * dataBadBuffer = (char *)ALLOCA(50*sizeof(char));
+    char * dataGoodBuffer = (char *)ALLOCA(100*sizeof(char));
+    memset(dataBadBuffer, 'A', 50-1); /* fill with 'A's */
+    dataBadBuffer[50-1] = '\0'; /* null terminate */
+    memset(dataGoodBuffer, 'A', 100-1); /* fill with 'A's */
+    dataGoodBuffer[100-1] = '\0'; /* null terminate */
+    for(i = 0; i < 1; i++)
+    {
+        /* FLAW: Set data pointer to a small buffer */
+        data = dataBadBuffer;
+    }
+    {
+        char dest[100];
+        memset(dest, 'C', 100-1);
+        dest[100-1] = '\0'; /* null terminate */
+        /* POTENTIAL FLAW: using memcpy with the length of the dest where data
+         * could be smaller than dest causing buffer overread */
+        memcpy(dest, data, strlen(dest)*sizeof(char));
+        dest[100-1] = '\0';
+        printLine(dest);
+    }
+}

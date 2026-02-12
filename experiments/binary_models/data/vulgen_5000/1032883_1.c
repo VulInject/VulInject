@@ -1,0 +1,1 @@
+void ath9k_hw_setuprxdesc ( struct ath_hw * ah , struct ath_desc * ds , u32 size , u32 flags ) { struct ar5416_desc * ads = AR5416DESC ( ds ) ; ads -> ds_ctl1 = size & AR_BufLen ; memset ( & ads -> u . rx , 0 , sizeof ( ads -> u . rx ) ) ; } 

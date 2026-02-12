@@ -1,1 +1,0 @@
-static int FUN1 ( VAR1 * VAR2 , int VAR3 ) { int VAR4 ; if ( ( VAR3 >> VAR5 ) == 0 ) { VAR4 = VAR3 & 255 ; } if ( ( VAR3 >> VAR5 ) == 1 ) { VAR4 = VAR3 & 65535 ; } else { return - VAR6 ; } return VAR4 ; }

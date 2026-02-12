@@ -1,0 +1,1 @@
+static int __init eisa_eeprom_init ( void ) { int retval ; retval = misc_register ( & eisa_eeprom_dev ) ; if ( retval < 0 ) { printk ( KERN_ERR "EISA EEPROM: cannot register misc device.\n" ) ; return retval ; } printk ( KERN_INFO "EISA EEPROM at 0x%px\n" , eisa_eeprom_addr ) ; return 0 ; } 

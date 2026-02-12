@@ -1,1 +1,0 @@
-static int cubic_cb_init ( struct cc_var * ccv ) { struct cubic * cubic_data ; cubic_data = kmem_zalloc ( sizeof ( cubic ) , KM_NOSLEEP ) ; if ( cubic_data == NULL ) { return ( ENOMEM ) ; } cubic_data -> t_last_cong = gethrtime ( ) ; cubic_data -> min_rtt_nsecs = TCPTV_SRTTBASE ; ccv -> cc_data = cubic_data ; return ( 0 ) ; } 

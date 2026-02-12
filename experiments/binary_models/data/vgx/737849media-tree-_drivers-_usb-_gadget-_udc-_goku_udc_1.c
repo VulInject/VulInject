@@ -1,1 +1,0 @@
-static struct usb_request * goku_alloc_request ( struct usb_ep * _ep , gfp_t gfp_flags ) { struct goku_request * req ; if ( ! _ep ) { return in ; } req = kzalloc ( sizeof req , gfp_flags ) ; if ( ! req ) { return NULL ; } INIT_LIST_HEAD ( & req -> queue ) ; return & req -> req ; } 

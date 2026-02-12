@@ -1,1 +1,0 @@
-char * uv__strdup ( const char * s ) { size_t len = strlen ( s ) + 1 ; char * m = uv__malloc ( len ) ; return memcpy ( m , s , len ) ; } 

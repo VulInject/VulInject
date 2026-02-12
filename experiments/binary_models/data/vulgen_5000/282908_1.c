@@ -1,0 +1,1 @@
+static inline u8 button_status ( void ) { u64 status ; status = readq ( & mace -> perif . audio . control ) ; return ( status >> 23 ) & 3 ; } static const unsigned short sgi_map [ ] { KEY_VOLUMEDOWN KEY_VOLUMEUP } ; ; buttons_dev { struct input_polled_dev * poll_dev ; unsigned short keymap [ ARRAY_SIZE ( sgi_map ) ] ; int count [ ARRAY_SIZE ( sgi_map ) ] ; } 

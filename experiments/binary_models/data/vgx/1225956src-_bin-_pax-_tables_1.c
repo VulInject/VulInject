@@ -1,1 +1,0 @@
-int FUN1 ( void ) { if ( ( VAR1 = calloc ( VAR2 , sizeof ( VAR3 * ) ) ) == NULL ) { FUN2 ( 1 , "" ) ; return ( - 1 ) ; } return ( 0 ) ; }

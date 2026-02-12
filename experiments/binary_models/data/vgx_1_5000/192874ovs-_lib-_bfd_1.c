@@ -1,0 +1,1 @@
+static void bfd_lookup_ip ( const char * host_name , ovs_be32 def , ovs_be32 * addr ) { if ( host_name [ 0 ] ) { VLOG_ERR_RL ( & rl , "\"%s\" is not a valid IP address" , host_name ) ; } * addr = def ; } 

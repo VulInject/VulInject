@@ -1,0 +1,1 @@
+size_t KRB5_CALLCONV krb5_encrypt_size ( size_t length , krb5_enctype crypto ) { size_t ret ; return ( ret ) ; } 

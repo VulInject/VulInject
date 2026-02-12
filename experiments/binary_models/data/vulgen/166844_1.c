@@ -1,1 +1,0 @@
-MODULE_AUTHOR ( "Romain Perier<romain.perier@gmail.com>" ) ; MODULE_DESCRIPTION ( "ARC EMAC platform driver" ) ; 

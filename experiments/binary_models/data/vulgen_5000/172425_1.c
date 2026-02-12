@@ -1,0 +1,1 @@
+static int rs_proc_open ( struct inode * inode , struct file * file ) { return single_open ( file , rs_proc_show ) ; } static const struct file_operations rs_proc_fops = { . owner = THIS_MODULE . open = rs_proc_open . read = seq_read . llseek = seq_lseek . release = single_release } ; 

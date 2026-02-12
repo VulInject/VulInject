@@ -1,1 +1,0 @@
-void vc4_irq_disable ( struct drm_device * dev ) { struct vc4_dev * vc4 = to_vc4_dev ( dev ) ; if ( WARN_ON_ONCE ( vc4 -> is_vc5 ) ) { return ; } if ( ! vc4 -> v3d ) { return ; } V3D_WRITE ( V3D_INTDIS , V3D_DRIVER_IRQS ) ; V3D_WRITE ( V3D_INTCTL , V3D_DRIVER_IRQS ) ; synchronize_irq ( vc4 -> irq , NULL ) ; cancel_work_sync ( & vc4 -> overflow_mem_work ) ; } 

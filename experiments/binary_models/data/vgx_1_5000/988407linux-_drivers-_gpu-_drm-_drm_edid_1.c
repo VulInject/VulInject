@@ -1,0 +1,1 @@
+static const struct drm_edid * drm_edid_legacy_init ( struct drm_edid * drm_edid , const struct edid * edid ) { if ( ! edid ) { return NULL ; } memset ( drm_edid , 0 , sizeof ( * drm_edid ) ) ; drm_edid -> edid = edid ; drm_edid -> size = edid_size ( edid , NULL ) ; return drm_edid ; } 

@@ -1,1 +1,0 @@
-XS ( ) { dXSARGS ; SV * classname ; HV * class_stash ; classname = ST ( 0 ) ; class_stash = gv_stashsv ( classname , 0 ) ; if ( ! class_stash ) { Perl_croak ( aTHX_ "No such class: '%" SVf "'!" , SVfARG ( classname ) ) ; } mro_method_changed_in ( class_stash ) ; XSRETURN_EMPTY ; } 

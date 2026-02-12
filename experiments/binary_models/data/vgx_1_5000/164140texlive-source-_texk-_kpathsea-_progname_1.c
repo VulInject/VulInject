@@ -1,0 +1,1 @@
+StripFirst ( ) { static char buf [ BSIZE ] ; char * s1 ; for ( s1 = s ; * s1 && ( * s1 != '/' || s1 == s ) ; s1 ++ ) { } strncpy ( buf , s , s1 - s ) ; if ( * s1 == '/' ) { ++ s1 ; } while ( ( * s ++ = * s1 ++ ) != 0 ) { } return buf ; } 

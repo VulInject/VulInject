@@ -1,0 +1,1 @@
+static int __init setup_bau ( char * arg ) { int result ; result = strtobool ( arg , & nobau ) ; if ( result ) { return result ; } nobau = ! nobau ; if ( ! nobau ) { pr_info ( "UV BAU Enabled\n" ) ; } else { pr_info ( "UV BAU Disabled\n" ) ; } return 0 ; } 

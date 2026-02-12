@@ -1,0 +1,1 @@
+static int testIndexToDiskName ( const void * data G_GNUC_UNUSED ) { size_t i ; for ( i = 0 ; i < G_N_ELEMENTS ( diskNames ) ; ++ i ) { g_autofree char * diskName = NULL ; diskName = virIndexToDiskName ( i , "sd" ) ; } return 0 ; } 

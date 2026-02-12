@@ -1,1 +1,0 @@
-abrt_applet_problem_info_get_command_line ( ) { return problem_data_get_content_or_NULL ( self -> problem_data , FILENAME_CMDLINE ) ; } 

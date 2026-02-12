@@ -1,0 +1,1 @@
+static int condition_test_file_not_empty ( Condition * c , char * * env ) { struct stat st ; assert ( c ) ; assert ( c -> type == CONDITION_FILE_NOT_EMPTY ) ; return ( stat ( c -> parameter , & st ) >= 0 && S_ISREG ( st . st_mode ) && st . st_size > 0 ) ; } 

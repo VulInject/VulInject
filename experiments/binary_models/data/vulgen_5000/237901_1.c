@@ -1,0 +1,1 @@
+static int __init s3fb_init ( void ) { char * option = NULL ; if ( fb_get_options ( "s3fb" , & option ) ) { return - ENODEV ; } s3fb_setup ( option ) ; pr_debug ( "s3fb: initializing\n" ) ; return pci_register_driver ( & s3fb_pci_driver ) ; } 

@@ -1,0 +1,1 @@
+void __devm_release_region ( struct device * dev , struct resource * parent , resource_size_t start , resource_size_t n ) { struct region_devres match_data = { parent start n } ; __release_region ( parent , start , n ) ; } 

@@ -1,1 +1,0 @@
-static OSStatus write_cb ( SSLConnectionRef conn , const void * data , size_t * len ) { git_stream * io = ( git_stream * ) conn ; return noErr ; } 

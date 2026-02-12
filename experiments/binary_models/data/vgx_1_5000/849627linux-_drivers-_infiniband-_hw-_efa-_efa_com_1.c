@@ -1,0 +1,1 @@
+static int efa_com_wait_and_process_admin_cq ( struct efa_comp_ctx * comp_ctx , struct efa_com_admin_queue * aq ) { return efa_com_wait_and_process_admin_cq_interrupts ( comp_ctx , aq ) ; } 

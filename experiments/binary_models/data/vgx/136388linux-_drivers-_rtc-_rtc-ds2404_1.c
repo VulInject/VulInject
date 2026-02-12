@@ -1,1 +1,0 @@
-ds2404_gpio { const char * name ; int gpio ; } 

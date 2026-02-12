@@ -1,0 +1,1 @@
+static int socfpga_reset_remove ( struct udevice * dev ) { struct socfpga_reset_data * data = dev_get_priv ( dev ) ; if ( socfpga_reset_keep_enabled ( ) ) { puts ( "Deasserting all peripheral resets\n" ) ; } return 0 ; } 

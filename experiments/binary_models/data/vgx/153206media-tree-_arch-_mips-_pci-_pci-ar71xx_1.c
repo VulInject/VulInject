@@ -1,1 +1,0 @@
-ar71xx_pci_controller { void __iomem * cfg_base ; int irq ; int irq_base ; struct pci_controller pci_ctrl ; int io_res ; struct resource mem_res ; } 

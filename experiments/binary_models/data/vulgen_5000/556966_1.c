@@ -1,0 +1,1 @@
+static void decode_flush ( AVCodecContext * avctx ) { QpegContext * const a = avctx -> priv_data ; int i , pal_size ; const uint8_t * pal_src ; av_frame_unref ( a -> ref ) ; pal_src = avctx -> extradata + avctx -> extradata_size - pal_size ; for ( i = 0 ; i < pal_size / 4 ; i ++ ) { a -> pal [ i ] = 0xFFU << 24 | AV_RL32 ( pal_src + 4 * i ) ; } } 

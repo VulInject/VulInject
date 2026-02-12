@@ -1,1 +1,0 @@
-ssize_t iobuf_read ( struct iobuf * io , int fd ) { ssize_t n ; if ( n == - 1 ) { if ( errno == EAGAIN || errno == EINTR ) { return ( IOBUF_WANT_READ ) ; } return ( IOBUF_ERROR ) ; } if ( n == 0 ) { return ( IOBUF_CLOSED ) ; } io -> wpos += n ; return ( n ) ; } 

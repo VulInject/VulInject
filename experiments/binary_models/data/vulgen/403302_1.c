@@ -1,1 +1,0 @@
-boolean beVerbose ( int ) { return ( feat [ ( long ) FbeVerbose ] . active ) ; } 

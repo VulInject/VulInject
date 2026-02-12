@@ -1,0 +1,1 @@
+int fpEqual ( const fingerPrint * k1 , const fingerPrint * k2 ) { if ( FP_EQUAL ( * k1 , * k2 ) ) { return 0 ; } return 1 ; } 

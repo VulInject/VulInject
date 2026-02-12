@@ -1,1 +1,0 @@
-int FUN1 ( struct VAR1 * VAR1 , bool VAR2 ) { if ( ! VAR3 ) { return - VAR4 ; } if ( VAR2 ) { VAR1 -> VAR5 = "" ; VAR1 -> VAR6 = "" ; } return 0 ; }

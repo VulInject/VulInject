@@ -1,1 +1,0 @@
-void ixmlAttr_free ( IN IXML_Attr * attr ) { if ( attr != NULL ) { } } 

@@ -1,0 +1,1 @@
+static inline void FLUSH_FIFO ( struct au1xmmc_host * host ) { __raw_writel ( val | SD_CONFIG2_FF , HOST_CONFIG2 ( host ) ) ; wmb ( ) ; mdelay ( 1 ) ; val &= ~ SD_CONFIG2_DF ; __raw_writel ( val , HOST_CONFIG2 ( host ) ) ; wmb ( ) ; } 

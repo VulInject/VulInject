@@ -1,0 +1,1 @@
+static void free_buds ( struct ubifs_info * c ) { struct ubifs_bud * bud , * n ; rbtree_postorder_for_each_entry_safe ( , , , ) } 

@@ -1,0 +1,1 @@
+static u64 arm_spe_reference ( struct auxtrace_record * itr __maybe_unused ) { int ts ; clock_gettime ( CLOCK_MONOTONIC_RAW , & ts ) ; return ts . tv_sec ^ ts . tv_nsec ; } 

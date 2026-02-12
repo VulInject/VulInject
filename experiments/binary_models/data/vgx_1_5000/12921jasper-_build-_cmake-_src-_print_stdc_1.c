@@ -1,0 +1,1 @@
+int main ( void ) { long stdc_version ; stdc_version = __STDC_VERSION__ ; stdc_version = 0L ; printf ( "%ldL" , stdc_version ) ; return 0 ; } 

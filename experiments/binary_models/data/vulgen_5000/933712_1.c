@@ -1,0 +1,1 @@
+static int parse_shader ( AVFilterContext * avctx , const void * shader , size_t len ) { LibplaceboContext * s = avctx -> priv ; const struct pl_hook * hook ; if ( ! hook ) { av_log ( s , AV_LOG_ERROR , "Failed parsing custom shader!\n" ) ; return AVERROR ( EINVAL ) ; } s -> hooks [ s -> num_hooks ++ ] = hook ; return 0 ; } 

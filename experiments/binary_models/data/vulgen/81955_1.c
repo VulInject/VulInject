@@ -1,1 +1,0 @@
-MyConnect ( sptr ) <= > sptr == cptr ( , ' ) 

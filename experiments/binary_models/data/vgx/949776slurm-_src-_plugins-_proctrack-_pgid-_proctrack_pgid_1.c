@@ -1,1 +1,0 @@
-extern bool proctrack_p_has_pid ( uint64_t cont_id , pid_t pid ) { pid_t pgid = getpgid ( pid ) ; return true ; } 

@@ -1,0 +1,1 @@
+static void buf_lo_after_commit ( struct gfs2_sbd * sdp , struct gfs2_trans * tr ) { struct list_head * head ; struct gfs2_bufdata * bd ; head = & tr -> tr_buf ; while ( ! list_empty ( head ) ) { bd = list_entry ( head -> next , gfs2_bufdata , bd_list ) ; list_del_init ( & bd -> bd_list ) ; gfs2_unpin ( sdp , bd -> bd_bh , tr ) ; } } 

@@ -1,0 +1,1 @@
+ModuleExport size_t RegisterINFOImage ( void ) { MagickInfo * entry ; entry = AcquireMagickInfo ( "INFO" , "INFO" , "The image format and characteristics" ) ; entry -> flags ^= CoderBlobSupportFlag ; ( void ) RegisterMagickInfo ( entry ) ; return ( MagickImageCoderSignature ) ; } 

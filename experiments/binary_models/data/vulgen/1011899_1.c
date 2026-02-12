@@ -1,1 +1,0 @@
-static int mtk_rng_runtime_suspend ( struct device * dev ) { struct mtk_rng * priv = dev_get_drvdata ( dev ) ; return 0 ; } 

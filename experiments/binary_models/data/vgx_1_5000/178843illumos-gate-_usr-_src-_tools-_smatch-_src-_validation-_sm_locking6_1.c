@@ -1,0 +1,1 @@
+void func ( void ) { int lock = 1 ; int flags = 1 ; _spin_unlock_irqrestore ( lock , flags ) ; if ( zzz ) { return ; } if ( spin_trylock_irqsave ( lock , flags ) ) { return ; } return ; } 

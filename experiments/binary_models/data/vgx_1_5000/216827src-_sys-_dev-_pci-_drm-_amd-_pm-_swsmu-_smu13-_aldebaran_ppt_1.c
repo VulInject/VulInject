@@ -1,0 +1,1 @@
+static int aldebaran_get_current_pcie_link_speed ( struct smu_context * smu ) { struct amdgpu_device * adev = smu -> adev ; uint32_t esm_ctrl ; esm_ctrl = RREG32_PCIE ( smnPCIE_ESM_CTRL ) ; return smu_v13_0_get_current_pcie_link_speed ( smu ) ; } 

@@ -1,0 +1,1 @@
+static void hi3110_clean ( struct net_device * net ) { struct hi3110_priv * priv = netdev_priv ( net ) ; if ( priv -> tx_skb || priv -> tx_busy ) { net -> stats . tx_errors ++ ; } dev_kfree_skb ( priv -> tx_skb ) ; if ( priv -> tx_busy ) { can_free_echo_skb ( priv -> net , 0 , NULL ) ; } priv -> tx_busy = false ; } 

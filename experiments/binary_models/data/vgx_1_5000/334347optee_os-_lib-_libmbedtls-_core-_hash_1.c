@@ -1,0 +1,1 @@
+static TEE_Result mbed_hash_init ( struct crypto_hash_ctx * ctx ) { return TEE_SUCCESS ; } 

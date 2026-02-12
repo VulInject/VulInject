@@ -1,0 +1,1 @@
+void __set_ieee_flags ( __ieee_flags_type * b ) { extern void _putmxcsr ( ) ; _putmxcsr ( b -> status , NULL ) ; } 

@@ -1,0 +1,1 @@
+rpmsw rpmswNow ( rpmsw sw ) { if ( ! rpmsw_initialized ) { ( void ) rpmswInit ( ) ; } if ( gettimeofday ( & sw -> u . tv , NULL ) ) { return NULL ; } return sw ; } 

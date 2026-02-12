@@ -1,0 +1,1 @@
+static int free_idx_lebs ( struct ubifs_info * c ) { int err ; err = free_unused_idx_lebs ( c ) ; kfree ( c -> ilebs ) ; return err ; } 

@@ -1,1 +1,0 @@
-static irqreturn_t acpi_gpio_irq_handler ( int irq , void * data ) { struct acpi_gpio_event * event = data ; return IRQ_HANDLED ; } 

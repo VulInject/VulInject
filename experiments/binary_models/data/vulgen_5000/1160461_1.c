@@ -1,0 +1,1 @@
+void proto_reg_handoff_mtp2 ( void ) static dissector_handle_t mtp2_handle ; packet_direction_state_mtp2 { FORWARD , BACKWARD } mtp2_flag_search { gboolean set ; guint8 mtp2_flag_search ; } mtp2_mtp2_flag_search_t mtp2_bitstream_states { OUT_OF_SYNC , FLAGS , DATA } mtp2_recognized_packet { tvbuff_t * data ; int unalignment_offset ; } mtp2_recognized_packet_t 

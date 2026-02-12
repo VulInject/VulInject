@@ -1,0 +1,1 @@
+extern uint32_t cr_get_coremap_offset ( uint32_t node_index ) { xassert ( cr_node_cores_offset ) ; return cr_node_cores_offset [ node_record_count ] ; } 

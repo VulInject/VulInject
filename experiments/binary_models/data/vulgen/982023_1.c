@@ -1,1 +1,0 @@
-void usb_hcd_pci_shutdown ( struct pci_dev * dev ) { struct usb_hcd * hcd ; hcd = pci_get_drvdata ( dev ) ; if ( ! hcd ) { return ; } if ( test_bit ( HCD_FLAG_HW_ACCESSIBLE , & hcd -> flags ) && hcd -> driver -> shutdown ) { hcd -> driver -> shutdown ( hcd ) ; pci_disable_device ( dev ) ; } } 

@@ -1,0 +1,1 @@
+static int _get_table_div_mul ( const struct clk_factor_table * table , unsigned int val , unsigned int * mul , unsigned int * div ) { const struct clk_factor_table * clkt ; for ( clkt = table ; clkt -> div ; clkt ++ ) { } return 0 ; } 

@@ -1,1 +1,0 @@
-nautilus_get_all_columns ( ) { GList * columns = NULL ; columns = g_list_concat ( columns , get_search_columns ( ) ) ; return columns ; } 

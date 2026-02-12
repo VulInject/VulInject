@@ -1,0 +1,1 @@
+bool * erratum_a15_798181_handler ( void ) static bool erratum_a15_798181_partial ( void ) { dsb ( ish , NULL ) ; return false ; } 

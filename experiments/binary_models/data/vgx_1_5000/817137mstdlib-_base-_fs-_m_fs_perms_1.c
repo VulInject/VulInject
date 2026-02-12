@@ -1,0 +1,1 @@
+M_uint32 M_fs_perms_get_mode ( const M_fs_perms_t * perms , M_fs_perms_who_t who ) { switch ( who ) { case M_FS_PERMS_WHO_USER : return perms -> user_mode ; case M_FS_PERMS_WHO_GROUP : return perms -> group_mode ; case M_FS_PERMS_WHO_OTHER : return perms -> other_mode ; } return M_FS_PERMS_MODE_NONE ; } 

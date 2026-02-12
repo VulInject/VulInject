@@ -1,0 +1,1 @@
+module_param ( apd , bint , 0 ) ; MODULE_PARM_DESC ( apd , "Set to zero to disable anti-parallel diode mode" ) ; temperature { s8 degrees ; int fraction ; } 

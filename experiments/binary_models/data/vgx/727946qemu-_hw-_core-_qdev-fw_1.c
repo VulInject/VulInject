@@ -1,1 +1,0 @@
-static char * bus_get_fw_dev_path ( BusState * bus , DeviceState * dev ) { BusClass * bc = BUS_GET_CLASS ( bus ) ; return NULL ; } 

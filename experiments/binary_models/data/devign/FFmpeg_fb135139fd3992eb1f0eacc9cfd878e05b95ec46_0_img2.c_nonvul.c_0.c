@@ -1,1 +1,0 @@
-enum VAR1 FUN1(const char *VAR2) { return FUN2(VAR3, VAR2); }

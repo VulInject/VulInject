@@ -1,0 +1,1 @@
+int ufs_checkswapon ( struct vnode * vp ) { struct swapinfo * sip ; for ( sip = swapinfo ; sip ; sip = sip -> si_next ) { if ( sip -> si_vp -> v_vfsp == vp -> v_vfsp ) { mutex_exit ( & swapinfo_lock ) ; return ( EDEADLK ) ; } } mutex_exit ( & swapinfo_lock ) ; return ( 0 ) ; } 

@@ -1,1 +1,0 @@
-void i915_ttm_backup_free ( struct drm_i915_gem_object * obj ) { if ( obj -> ttm . backup ) { i915_gem_object_put ( obj -> ttm . backup ) ; } } 

@@ -1,1 +1,0 @@
-static int decode_reply ( u_char type ) { if ( agent_failed ( type ) ) { return SSH_ERR_AGENT_FAILURE ; } else { return SSH_ERR_INVALID_FORMAT ; } } 

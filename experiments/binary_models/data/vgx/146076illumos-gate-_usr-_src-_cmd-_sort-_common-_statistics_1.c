@@ -1,1 +1,0 @@
-void stats_init ( sort_statistics_t * s ) { run_stats = s ; } 

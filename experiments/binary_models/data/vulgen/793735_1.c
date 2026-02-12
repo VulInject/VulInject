@@ -1,1 +1,0 @@
-static void shutdown_opsput_pld ( struct irq_data * data ) { unsigned long port ; unsigned int pldirq ; pldirq = irq2pldirq ( data -> irq ) ; port = pldirq2port ( pldirq ) ; } 

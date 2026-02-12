@@ -1,0 +1,1 @@
+static void cs42l42_i2c_remove ( struct i2c_client * i2c_client ) { struct cs42l42_private * cs42l42 = dev_get_drvdata ( & i2c_client -> dev ) ; cs42l42_common_remove ( cs42l42 , NULL ) ; } 

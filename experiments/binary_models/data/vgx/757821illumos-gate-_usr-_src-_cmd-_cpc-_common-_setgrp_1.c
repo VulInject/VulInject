@@ -1,1 +1,0 @@
-void cpc_setgrp_free ( cpc_setgrp_t * sgrp ) { if ( sgrp -> sets ) { while ( sgrp -> nelem ) { cpc_setgrp_delset ( sgrp ) ; } free ( sgrp -> sets ) ; } } 

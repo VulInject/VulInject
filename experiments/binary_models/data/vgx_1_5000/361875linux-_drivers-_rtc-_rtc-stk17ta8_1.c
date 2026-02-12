@@ -1,0 +1,1 @@
+rtc_plat_data { struct rtc_device * rtc ; void __iomem * ioaddr ; unsigned long last_jiffies ; int irq ; unsigned int irqen ; int alrm_sec ; int alrm_min ; int alrm_hour ; int alrm_mday ; spinlock_t lock ; } 

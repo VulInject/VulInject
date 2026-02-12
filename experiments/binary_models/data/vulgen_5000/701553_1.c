@@ -1,0 +1,1 @@
+static int bcm6328_led_bind ( struct udevice * parent ) { ofnode node ; dev_for_each_subnode ( , ) { struct udevice * dev ; int ret ; if ( ret ) { return ret ; } } return 0 ; } 

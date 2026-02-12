@@ -1,0 +1,1 @@
+struct file_system * fs ; loff_t offset ; int isdir ; u64 open_mode ; struct fs_dir_stream * dirs ; struct fs_dirent * dent ; int path [ 0 ] ; 

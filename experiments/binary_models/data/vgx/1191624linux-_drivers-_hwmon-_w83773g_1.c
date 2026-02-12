@@ -1,1 +1,0 @@
-static int get_update_interval ( struct regmap * regmap , long * val ) { unsigned int regval ; int ret ; ret = regmap_read ( regmap , W83773_CONVERSION_RATE_REG_READ , & regval ) ; * val = 16000 >> regval ; return 0 ; } 

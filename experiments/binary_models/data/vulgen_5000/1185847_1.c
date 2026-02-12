@@ -1,0 +1,1 @@
+void armada_drm_crtc_update_regs ( struct armada_crtc * dcrtc , struct armada_regs * regs ) { while ( regs -> offset != ~ 0 ) { void __iomem * reg = dcrtc -> base + regs -> offset ; uint32_t val ; val = regs -> mask ; writel_relaxed ( val | regs -> val , reg ) ; ++ regs ; } } 

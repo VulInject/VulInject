@@ -1,0 +1,1 @@
+static void dn_dst_destroy ( struct dst_entry * dst ) { struct dn_route * rt = ( dn_route * ) dst ; if ( rt -> n ) { neigh_release ( rt -> n ) ; } } 

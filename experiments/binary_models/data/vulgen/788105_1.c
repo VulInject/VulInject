@@ -1,1 +1,0 @@
-static irqreturn_t sp804_timer_interrupt ( int irq , void * dev_id ) { struct clock_event_device * evt = dev_id ; evt -> event_handler ( evt ) ; return IRQ_HANDLED ; } 

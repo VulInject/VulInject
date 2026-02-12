@@ -1,0 +1,1 @@
+mongoc_server_api_get_version ( ) { BSON_ASSERT ( api , NULL ) ; return api -> version ; } 

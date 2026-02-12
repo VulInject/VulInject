@@ -1,1 +1,0 @@
-static const char * swap_get_options ( Swap * s ) { assert ( s ) ; return NULL ; } 

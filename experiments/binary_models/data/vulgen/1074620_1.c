@@ -1,1 +1,0 @@
-savestring ( ) const char * s ; { char * cp ; cp = strdup ( s ) ; if ( cp == NULL ) { fprintf ( stderr , "savestring: out of virtual memory\n" ) ; } return ( cp ) ; } 

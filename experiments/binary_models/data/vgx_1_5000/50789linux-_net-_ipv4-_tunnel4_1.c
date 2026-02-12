@@ -1,0 +1,1 @@
+static int tunnel4_rcv ( struct sk_buff * skb ) { struct xfrm_tunnel * handler ; if ( ! pskb_may_pull ( skb , sizeof ( iphdr ) ) ) { drop } for_each_tunnel_rcu ( , ) if ( ! handler -> handler ( skb ) ) { return 0 ; } icmp_send ( skb , ICMP_DEST_UNREACH , ICMP_PORT_UNREACH , 0 ) ; drop return 0 ; } 

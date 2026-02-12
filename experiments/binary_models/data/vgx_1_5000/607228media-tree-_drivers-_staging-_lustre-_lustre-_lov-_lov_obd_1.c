@@ -1,0 +1,1 @@
+int lov_statfs_interpret ( struct ptlrpc_request_set * rqset , void * data , int rc ) { struct lov_request_set * lovset = ( lov_request_set * ) data ; int err ; if ( rc ) { atomic_set ( & lovset -> set_completes , 0 ) ; } err = lov_fini_statfs_set ( lovset , NULL ) ; return rc ?rc : err ; } 

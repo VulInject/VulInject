@@ -1,0 +1,1 @@
+static int dissect_h501_OBJECT_IDENTIFIER ( tvbuff_t * tvb _U_ , int offset _U_ , asn1_ctx_t * actx _U_ , proto_tree * tree _U_ , int hf_index _U_ ) { return offset ; } static const per_sequence_t T_algorithmOIDs_sequence_of [ 1 ] { { & hf_h501_algorithmOIDs_item ASN1_NO_EXTENSIONS ASN1_NOT_OPTIONAL dissect_h501_OBJECT_IDENTIFIER } } ; ; 

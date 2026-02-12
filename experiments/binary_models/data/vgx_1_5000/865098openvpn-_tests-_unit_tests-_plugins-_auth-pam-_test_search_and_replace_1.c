@@ -1,0 +1,1 @@
+static void pattern_not_found__returns_original ( ) { char * replaced = searchandreplace ( "abc" , "X" , "Y" ) ; assert_non_null ( replaced ) ; assert_string_equal ( "abc" , replaced ) ; } 

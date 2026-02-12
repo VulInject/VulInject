@@ -1,0 +1,1 @@
+void hda_codec_init_cmd_io ( struct snd_sof_dev * sdev ) { struct hdac_bus * bus = sof_to_bus ( sdev ) ; snd_hdac_bus_init_cmd_io ( bus ) ; } 

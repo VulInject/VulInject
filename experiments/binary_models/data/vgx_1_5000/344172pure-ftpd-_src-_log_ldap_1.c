@@ -1,0 +1,1 @@
+static char * pw_ldap_getvalue ( LDAP * const ld , LDAPMessage * const res , const char * const attribute ) { char * * vals ; char * ret ; if ( ( vals = ldap_get_values ( ld , res , attribute ) ) == NULL || vals [ 0 ] == NULL ) { return NULL ; } ret = strdup ( vals [ 0 ] ) ; return ret ; } 

@@ -1,0 +1,1 @@
+const char * color_debug_log_name ( char * buf , int buflen , int color ) { if ( color < 256 ) { snprintf ( buf , buflen , "color%d" , color ) ; } else { snprintf ( buf , buflen , "BAD:%d" , color ) ; } return buf ; } 

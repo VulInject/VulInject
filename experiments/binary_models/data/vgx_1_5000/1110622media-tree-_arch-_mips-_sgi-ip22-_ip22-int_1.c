@@ -1,0 +1,1 @@
+static void __irq_entry indy_buserror_irq ( void ) { int irq = SGI_BUSERR_IRQ ; irq_enter ( ) ; kstat_incr_irq_this_cpu ( irq ) ; ip22_be_interrupt ( irq , NULL ) ; irq_exit ( ) ; } 

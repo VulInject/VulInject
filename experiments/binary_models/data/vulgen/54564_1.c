@@ -1,1 +1,0 @@
-static int64 calculate_total_relation_size ( Relation rel ) { int64 size ; size = calculate_table_size ( rel ) ; return size ; } 

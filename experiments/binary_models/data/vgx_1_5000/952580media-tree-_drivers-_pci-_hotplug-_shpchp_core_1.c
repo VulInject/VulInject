@@ -1,0 +1,1 @@
+void cleanup_slots ( struct controller * ctrl ) { struct slot * slot , * next ; list_for_each_entry_safe ( , , , ) { list_del ( & slot -> slot_list ) ; cancel_delayed_work ( & slot -> work ) ; destroy_workqueue ( slot -> wq ) ; pci_hp_deregister ( slot -> hotplug_slot , NULL ) ; } } 

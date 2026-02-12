@@ -1,1 +1,0 @@
-mailsem_internal { unsigned int count ; pthread_mutex_t lock ; pthread_cond_t count_nonzero ; HANDLE semaphore ; } 

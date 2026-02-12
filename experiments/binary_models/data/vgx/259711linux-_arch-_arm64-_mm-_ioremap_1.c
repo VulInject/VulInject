@@ -1,1 +1,0 @@
-bool arch_memremap_can_ram_remap ( resource_size_t offset , size_t size , unsigned long flags ) { cfs_time_t pfn = PHYS_PFN ( offset ) ; return pfn_is_map_memory ( pfn ) ; } 

@@ -1,1 +1,0 @@
-int to_fd ; int to_ioctls ; int to_ifr ; char to_name [ IFNAMSIZ ] ; int to_destroy ; 

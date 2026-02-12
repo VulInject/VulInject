@@ -1,0 +1,1 @@
+R_API RVector * r_vector_clone ( RVector * vec ) { r_return_val_if_fail ( vec , NULL ) ; RVector * ret = R_NEW ( RVector ) ; if ( ! ret ) { return NULL ; } if ( ! vector_clone ( ret , vec ) ) { return NULL ; } return ret ; } 

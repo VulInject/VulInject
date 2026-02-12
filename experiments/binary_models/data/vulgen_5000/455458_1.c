@@ -1,0 +1,1 @@
+APPLESMC_ST_1E_READONLY = 0x86 , APPLESMC_ST_1E_BAD_INDEX = 0xb8 , ; static char default_osk [ 64 ] "This is a dummy key. Enter the real key " "using the -osk parameter" ; ; AppleSMCData { int len ; const char * key ; const char * data ; QLIST_ENTRY ( ) node } 

@@ -1,0 +1,1 @@
+new_pmap { __be16 pmSig ; __be16 reSigPad ; __be32 pmMapBlkCnt ; __be32 pmPyPartStart ; __be32 pmPartBlkCnt ; u8 pmPartName [ 32 ] ; int pmPartType [ 32 ] ; } , __packed old_pmap { __be16 pdSig ; old_pmap_entry { __be32 pdStart ; __be32 pdSize ; __be32 pdFSID ; } , pdEntry [ 42 ] } , __packed 

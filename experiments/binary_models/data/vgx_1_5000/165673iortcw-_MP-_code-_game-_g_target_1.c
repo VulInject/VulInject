@@ -1,0 +1,1 @@
+void target_laser_off ( gentity_t * self ) { trap_UnlinkEntity ( self ) ; } 

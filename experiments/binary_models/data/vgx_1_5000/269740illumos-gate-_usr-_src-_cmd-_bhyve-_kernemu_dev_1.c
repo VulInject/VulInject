@@ -1,0 +1,1 @@
+static int apic_handler ( struct vmctx * ctx , int vcpu , int dir , uint64_t addr , int size , uint64_t * val , void * arg1 __unused , long arg2 __unused ) { return ( 0 ) ; } static struct mem_range lapic_mmio = { . name = "kern-lapic-mmio" . base = DEFAULT_APIC_BASE . size = PAGE_SIZE . flags = MEM_F_RW | MEM_F_IMMUTABLE . handler = apic_handler } ; 

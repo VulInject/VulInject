@@ -1,1 +1,0 @@
-( ad193x_probe ) ; MODULE_DESCRIPTION ( "ASoC ad193x driver" ) ; MODULE_AUTHOR ( "Barry Song<21cnbao@gmail.com>" ) ; 

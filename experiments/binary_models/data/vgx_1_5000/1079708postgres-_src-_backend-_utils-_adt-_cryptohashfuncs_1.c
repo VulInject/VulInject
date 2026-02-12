@@ -1,0 +1,1 @@
+Datum sha384_bytea ( PG_FUNCTION_ARGS ) { bytea * result = cryptohash_internal ( PG_SHA384 , PG_GETARG_BYTEA_PP ( 0 ) ) ; PG_RETURN_BYTEA_P ( result , NULL ) ; } 

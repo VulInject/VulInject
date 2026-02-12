@@ -1,0 +1,1 @@
+static int get_credentials_dir_internal ( const char * envvar , const char * * ret ) { const char * e ; assert ( ret ) ; e = secure_getenv ( envvar ) ; if ( ! e ) { return - ENXIO ; } * ret = e ; return 0 ; } 

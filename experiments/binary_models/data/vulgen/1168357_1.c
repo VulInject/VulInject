@@ -1,1 +1,0 @@
-static __always_inline void preemptoff_test ( void ) { preempt_disable ( ) ; busy_wait ( delay ) ; } 

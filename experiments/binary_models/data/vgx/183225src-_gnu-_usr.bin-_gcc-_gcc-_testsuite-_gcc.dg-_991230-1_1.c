@@ -1,1 +1,0 @@
-static int gt ( double a , double b ) { return 0 ; } 

@@ -1,0 +1,1 @@
+void hgsmi_buffer_free ( struct gen_pool * guest_pool , void * buf ) { struct hgsmi_buffer_header * h = ( hgsmi_buffer_header * ) ( ( u8 * ) buf - sizeof ( * h ) ) ; size_t total_size = h -> data_size + sizeof ( * h ) + sizeof ( hgsmi_buffer_tail ) ; } 

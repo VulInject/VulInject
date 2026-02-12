@@ -1,0 +1,1 @@
+static void vm_localize_resources ( struct vm * vm , struct vcpu * vcpu ) { VERIFY ( curthread -> t_preempt == 0 ) ; if ( vcpu == & vm -> vcpu [ 0 ] ) { vhpet_localize_resources ( vm -> vhpet ) ; vrtc_localize_resources ( vm -> vrtc ) ; vatpit_localize_resources ( vm -> vatpit ) ; } vlapic_localize_resources ( vcpu -> vlapic ) ; vcpu -> lastloccpu = curcpu ; } 

@@ -1,1 +1,0 @@
-CIDFont_get_usedchars ( ) { if ( ! font -> usedchars ) { font -> usedchars = NEW ( 8192 , char ) ; } return font -> usedchars ; } 

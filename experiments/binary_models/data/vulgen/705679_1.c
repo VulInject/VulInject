@@ -1,1 +1,0 @@
-int certificate_verification_active ( Client * client ) { ConfigItem_link * conf ; conf = client -> server -> conf ; if ( conf -> verify_certificate ) { return 1 ; } if ( ( conf -> auth -> type == AUTHTYPE_TLS_CLIENTCERT ) || ( conf -> auth -> type == AUTHTYPE_TLS_CLIENTCERTFP ) || ( conf -> auth -> type == AUTHTYPE_SPKIFP ) ) { return 1 ; } return 0 ; } 

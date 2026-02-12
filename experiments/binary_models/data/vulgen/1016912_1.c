@@ -1,1 +1,0 @@
-static int pmic_tps65910_reg_count ( struct udevice * dev ) { return ; } 

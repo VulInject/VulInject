@@ -1,0 +1,1 @@
+static int DetectIpv4hdrSetup ( DetectEngineCtx * de_ctx , Signature * s , const char * _unused ) { s -> proto . flags |= DETECT_PROTO_IPV4 ; s -> flags |= SIG_FLAG_REQUIRE_PACKET ; return 0 ; } 

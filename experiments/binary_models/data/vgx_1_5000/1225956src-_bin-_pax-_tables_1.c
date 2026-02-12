@@ -1,0 +1,1 @@
+int lnk_start ( void ) { if ( ( ltab = calloc ( L_TAB_SZ , sizeof ( HRDLNK * ) ) ) == NULL ) { paxwarn ( 1 , "Cannot allocate memory for hard link table" ) ; return ( - 1 ) ; } return ( 0 ) ; } 

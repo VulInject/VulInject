@@ -1,0 +1,1 @@
+static int udl_usb_resume ( struct usb_interface * interface ) { struct drm_device * dev = usb_get_intfdata ( interface ) ; return 0 ; } static const struct vm_operations_struct udl_gem_vm_ops = { . fault = udl_gem_fault . open = drm_gem_vm_open . close = drm_gem_vm_close } ; 

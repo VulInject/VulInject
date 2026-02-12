@@ -1,0 +1,1 @@
+void skl_dsp_init_core_state ( struct sst_dsp * ctx ) { struct skl_sst * skl = ctx -> thread_context ; int i ; skl -> cores . usage_count [ SKL_DSP_CORE0_ID ] = 1 ; for ( i = SKL_DSP_CORE0_ID + 1 ; i < SKL_DSP_CORES_MAX ; i ++ ) { skl -> cores . state [ i ] = SKL_DSP_RESET ; skl -> cores . usage_count [ i ] = 0 ; } } 

@@ -1,0 +1,1 @@
+void btrfs_list_subvols ( void ) { struct btrfs_fs_info * fs_info = current_fs_info ; int ret ; ret = list_subvolums ( fs_info ) ; if ( ret < 0 ) { error ( "failed to list subvolume: %d" , ret ) ; } } 

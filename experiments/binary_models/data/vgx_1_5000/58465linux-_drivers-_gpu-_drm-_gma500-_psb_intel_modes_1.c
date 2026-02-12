@@ -1,0 +1,1 @@
+bool psb_intel_ddc_probe ( struct i2c_adapter * adapter ) { u8 out_buf [ ] { 0x0 0x0 } ; ; int buf [ 2 ] ; int ret ; struct i2c_msg msgs [ ] { { . addr = 0x50 . flags = 0 . len = 1 . buf = out_buf } { . addr = 0x50 . flags = I2C_M_RD . len = 1 . buf = buf } } ; ; ret = i2c_transfer ( adapter , msgs , 2 ) ; if ( ret == 2 ) { return true ; } return false ; } 

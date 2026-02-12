@@ -1,0 +1,1 @@
+int is_serdes_prtcl_valid ( u32 prtcl ) { int i ; for ( i = 0 ; i < SRDS_MAX_LANES ; i ++ ) { if ( serdes_cfg_tbl [ prtcl ] [ i ] != NONE ) { return 1 ; } } return 0 ; } 

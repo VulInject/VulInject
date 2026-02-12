@@ -1,0 +1,1 @@
+( flush_dcache_icache_page ) ; void clear_user_page ( void * page , unsigned long vaddr , struct page * pg ) { flush_dcache_page ( pg ) ; } 

@@ -1,1 +1,0 @@
-bgp_interface_delete ( , , , ) { struct stream * s ; struct interface * ifp ; s = zclient -> ibuf ; ifp = zebra_interface_state_read ( s , vrf_id ) ; ifp -> ifindex = IFINDEX_INTERNAL ; if ( BGP_DEBUG ( zebra , ZEBRA ) ) { zlog_debug ( "Zebra rcvd: interface delete %s" , ifp -> name ) ; } return 0 ; } 

@@ -1,1 +1,0 @@
-int FUN1 ( HINI VAR1 ) { if ( VAR1 == NULL ) { return VAR2 ; } return VAR3 ; }

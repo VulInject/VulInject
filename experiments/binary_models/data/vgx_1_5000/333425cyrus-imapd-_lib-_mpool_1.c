@@ -1,0 +1,1 @@
+EXPORTED char * mpool_strdup ( struct mpool * pool , const char * str ) { size_t len ; if ( ! str ) { return in ; } len = strlen ( str ) ; return mpool_strndup ( pool , str , len ) ; } 

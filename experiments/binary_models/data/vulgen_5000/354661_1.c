@@ -1,0 +1,1 @@
+OS_DEF | OS_NOFREE | OS_STRDUP , O_D_STR ( sp , cnt ) , 0 ; { nomem rval = 1 ; } ( rval ) ; opts_free ( ) { int cnt ; for ( cnt = 0 ; cnt < O_OPTIONCOUNT ; ++ cnt ) { if ( optlist [ cnt ] . type != OPT_STR || F_ISSET ( & optlist [ cnt ] , OPT_GLOBAL ) ) { continue ; } free ( O_STR ( sp , cnt ) ) ; free ( O_D_STR ( sp , cnt ) ) ; } } 

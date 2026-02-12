@@ -1,0 +1,1 @@
+static void free_paths ( struct list_head * paths ) { struct path_info * pi , * next ; list_for_each_entry_safe ( , , , ) { list_del ( & pi -> list ) ; } } 

@@ -1,0 +1,1 @@
+static void set_rx_mode ( void ) { unsigned char mc_filter [ 8 ] ; int i ; outl ( 0x0C , rxcon ) ; for ( i = 0 ; i < 4 ; i ++ ) { outw ( ( ( unsigned short * ) mc_filter ) [ i ] , mc0 + i * 4 ) ; } return ; } 

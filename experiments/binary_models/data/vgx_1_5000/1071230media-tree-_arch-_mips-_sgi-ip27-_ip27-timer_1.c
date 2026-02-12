@@ -1,0 +1,1 @@
+static DEFINE_PER_CPU ( char [ 11 ] , hub_rt_name ) ; static irqreturn_t hub_rt_counter_handler ( int irq , void * dev_id ) { int cpu = smp_processor_id ( ) ; struct clock_event_device * cd = & per_cpu ( hub_rt_clockevent , cpu ) ; int slice = cputoslice ( cpu ) ; LOCAL_HUB_S ( PI_RT_PEND_A + PI_COUNT_OFFSET * slice , 0 ) ; cd -> event_handler ( cd ) ; return IRQ_HANDLED ; } 

@@ -1,1 +1,0 @@
-static unsigned long do_bootelf_exec ( ulong * entry ( int , char * const ) , int argc , char * const argv [ ] ) { unsigned long ret ; return ret ; } 

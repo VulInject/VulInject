@@ -1,1 +1,0 @@
-static av_cold void uninit ( AVFilterContext * ctx ) { AudioDynamicSmoothContext * s = ctx -> priv ; } 

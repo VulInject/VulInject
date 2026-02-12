@@ -1,0 +1,1 @@
+dissect_sbc_formatunit ( , , , , , , , ) { static int * const fuflags_fields [ ] { & hf_scsi_sbc_fuflags_fmtpinfo & hf_scsi_sbc_fuflags_rto_req & hf_scsi_sbc_fuflags_longlist & hf_scsi_sbc_fuflags_fmtdata & hf_scsi_sbc_fuflags_cmplist & hf_scsi_sbc_defect_list_format NULL } ; ; if ( ! tree ) { return ; } } 

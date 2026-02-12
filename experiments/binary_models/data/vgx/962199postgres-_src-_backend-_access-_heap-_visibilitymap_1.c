@@ -1,1 +1,0 @@
-void visibilitymap_pin ( Relation rel , BlockNumber heapBlk , Buffer * vmbuf ) { BlockNumber mapBlock = HEAPBLK_TO_MAPBLOCK ( heapBlk ) ; if ( BufferIsValid ( * vmbuf ) ) { ReleaseBuffer ( * vmbuf ) ; } * vmbuf = vm_readbuf ( rel , mapBlock , true ) ; } 

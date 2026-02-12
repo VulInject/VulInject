@@ -1,0 +1,1 @@
+static int idmouse_release ( struct inode * inode , struct file * file ) { struct usb_idmouse * dev ; dev = file -> private_data ; mutex_lock ( & dev -> lock ) ; -- dev -> open ; if ( ! dev -> present ) { mutex_unlock ( & dev -> lock ) ; idmouse_delete ( dev ) ; } else { mutex_unlock ( & dev -> lock ) ; } return 0 ; } 

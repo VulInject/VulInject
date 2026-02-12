@@ -1,0 +1,1 @@
+extern int acct_gather_energy_p_update_node_energy ( void ) { int rc = SLURM_SUCCESS ; xassert ( running_in_slurmd_stepd ( ) ) ; if ( ! local_energy || local_energy -> current_watts == NO_VAL ) { return rc ; } _get_joules_task ( local_energy , NULL ) ; return rc ; } 

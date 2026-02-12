@@ -1,0 +1,1 @@
+void ieee80211_tdls_peer_del_work ( struct work_struct * wk ) { struct ieee80211_sub_if_data * sdata ; struct ieee80211_local * local ; sdata = container_of ( wk , ieee80211_sub_if_data , u . mgd . tdls_peer_del_work . work ) ; local = sdata -> local ; mutex_lock ( & local -> mtx ) ; mutex_unlock ( & local -> mtx ) ; } 

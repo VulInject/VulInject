@@ -1,0 +1,1 @@
+DEFPY ( , , "lsdb create" , "LSDB\n" "create LSDB\n" ) { if ( lsdb ) { ospf6_lsdb_delete ( lsdb ) ; } lsdb = ospf6_lsdb_create ( NULL , NULL ) ; return CMD_SUCCESS ; } 

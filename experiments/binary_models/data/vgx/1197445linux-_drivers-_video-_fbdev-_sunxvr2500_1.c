@@ -1,1 +1,0 @@
-struct device_node * of_node ; unsigned int width ; unsigned int height ; int depth ; unsigned int fb_size ; u32 pseudo_palette [ 16 ] ; 

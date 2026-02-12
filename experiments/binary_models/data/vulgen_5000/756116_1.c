@@ -1,0 +1,1 @@
+int kctl_mod_decompress ( struct modctl * modp ) { ctf_file_t * fp ; struct module * mp = modp -> mod_mp ; int rc ; if ( ( fp = ctf_modopen ( mp , & rc ) ) == NULL ) { return ( rc ) ; } ctf_close ( fp ) ; return ( 0 ) ; } 

@@ -1,0 +1,1 @@
+( dm_rh_get_state ) ; static void complete_resync_work ( struct dm_region * reg , int success ) { struct dm_region_hash * rh = reg -> rh ; rh -> log -> type -> set_region_sync ( rh -> log , reg -> key , success ) ; rh -> dispatch_bios ( rh -> context , & reg -> delayed_bios ) ; up ( & rh -> recovery_count ) ; } 

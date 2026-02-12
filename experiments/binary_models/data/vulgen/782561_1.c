@@ -1,1 +1,0 @@
-static int hcd_pci_resume ( struct device * dev ) { return resume_common ( dev ) ; } 

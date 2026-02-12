@@ -1,1 +1,0 @@
-static void goldfish_rtc_clear_alarm ( GoldfishRTCState * s ) { timer_del ( s -> timer ) ; } 

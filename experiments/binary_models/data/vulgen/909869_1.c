@@ -1,1 +1,0 @@
-static int up ( void * n ) { int old = _n ; if ( _n > 1 ) { _n -- ; } return - 1 ; } 

@@ -1,0 +1,1 @@
+int compat_arch_setup_additional_pages ( struct linux_binprm * bprm , int uses_interp ) { struct mm_struct * mm = current -> mm ; int ret ; ret = __setup_additional_pages ( mm , bprm , uses_interp , & compat_vdso_info ) ; mmap_write_unlock ( mm ) ; return ret ; } 

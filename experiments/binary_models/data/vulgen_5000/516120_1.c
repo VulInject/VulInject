@@ -1,0 +1,1 @@
+static ino_t vxfs_inode_by_name ( struct inode * dip , struct dentry * dp ) { struct vxfs_direct * de ; struct page * pp ; ino_t ino = 0 ; de = vxfs_find_entry ( dip , dp , & pp ) ; if ( de ) { kunmap ( pp ) ; put_page ( pp ) ; } return ( ino ) ; } 

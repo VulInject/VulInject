@@ -1,0 +1,1 @@
+mtd_file_info { struct mtd_info * mtd ; int mode ; } 

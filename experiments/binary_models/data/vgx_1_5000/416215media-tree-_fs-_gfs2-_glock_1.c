@@ -1,0 +1,1 @@
+static unsigned long gfs2_glock_shrink_scan ( struct shrinker * shrink , struct shrink_control * sc ) { return gfs2_scan_glock_lru ( sc -> nr_to_scan ) ; } 

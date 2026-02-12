@@ -1,0 +1,1 @@
+static void commit_destroy ( struct msm_commit * c ) { end_atomic ( c -> dev -> dev_private , c -> crtc_mask ) ; } 

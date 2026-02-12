@@ -1,0 +1,1 @@
+static int __maybe_unused snd_rpl_suspend ( struct device * dev ) { struct rpl_dev_data * adata ; int ret ; adata = dev_get_drvdata ( dev ) ; ret = rpl_deinit ( adata -> acp6x_base , NULL ) ; if ( ret ) { dev_err ( dev , "ACP de-init failed\n" ) ; } return ret ; } 

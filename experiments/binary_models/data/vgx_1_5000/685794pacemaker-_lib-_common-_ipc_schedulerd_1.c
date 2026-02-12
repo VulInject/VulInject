@@ -1,0 +1,1 @@
+static int new_data ( pcmk_ipc_api_t * api ) { struct schedulerd_api_private_s * NULL ; ; api -> api_data = calloc ( 1 , sizeof ( schedulerd_api_private_s ) ) ; private = api -> api_data ; private -> client_uuid = pcmk__getpid_s ( ) ; return pcmk_rc_ok ; } 

@@ -1,1 +1,0 @@
-BOOL isGuiApp ( ) { DWORD mypid ; HANDLE myprocess ; mypid = GetCurrentProcessId ( ) ; return GetGuiResources ( myprocess , 1 ) > 0 ; } 

@@ -1,1 +1,0 @@
-void __init prom_meminit ( void ) { unsigned long pages ; pages = memsize ( ) >> PAGE_SHIFT ; } 

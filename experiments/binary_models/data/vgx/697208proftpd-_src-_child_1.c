@@ -1,1 +1,0 @@
-pr_child_t * child_get ( pr_child_t * ch ) { return ch -> next ; } 

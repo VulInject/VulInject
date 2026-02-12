@@ -1,0 +1,1 @@
+void * get_cache ( int key ) { struct cache * entry = icache ; while ( entry ) { entry = entry -> next ; } return ( NULL ) ; } 

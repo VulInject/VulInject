@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "Analog Devices ADXL372 3-axis accelerometer I2C driver" ) ; MODULE_LICENSE ( "GPL" ) ; MODULE_IMPORT_NS ( IIO_ADXL372 , NULL ) ; 

@@ -1,0 +1,1 @@
+extern void __c6xabi_pop_rts ( void ) EXPORT_SYMBOL ( __c6xabi_pop_rts ) ; extern void __c6xabi_strasgi_64plus ( int * dst , const int * src , unsigned cnt ) EXPORT_SYMBOL ( __c6xabi_strasgi_64plus , NULL ) ; EXPORT_SYMBOL ( memcpy ) ; 

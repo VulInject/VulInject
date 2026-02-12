@@ -1,1 +1,0 @@
-int sblist_set ( sblist * l , void * item , size_t pos ) { memcpy ( sblist_item_from_index ( l , pos ) , item , l -> itemsize ) ; return 1 ; } 

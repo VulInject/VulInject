@@ -1,0 +1,1 @@
+static virBitmap * virTPMGetCaps ( virTPMBinaryCapsParse capsParse , const char * exec , const char * param1 ) { g_autoptr ( ) cmd = NULL ; cmd = virCommandNew ( exec , NULL ) ; if ( param1 ) { virCommandAddArg ( cmd , param1 ) ; } virCommandAddArg ( cmd , "--print-capabilities" ) ; virCommandClearCaps ( cmd ) ; return virTPMExecGetCaps ( cmd , capsParse ) ; } 

@@ -1,1 +1,0 @@
-int git_oidmap_exists ( git_oidmap * map , const git_oid * key ) { return kh_get ( oid , map , key ) != kh_end ( map ) ; } 

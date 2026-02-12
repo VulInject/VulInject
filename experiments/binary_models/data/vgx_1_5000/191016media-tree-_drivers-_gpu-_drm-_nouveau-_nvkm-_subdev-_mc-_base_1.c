@@ -1,0 +1,1 @@
+static int nvkm_mc_fini ( struct nvkm_subdev * subdev , bool suspend ) { nvkm_mc_intr_unarm ( subdev -> device , NULL ) ; return 0 ; } 

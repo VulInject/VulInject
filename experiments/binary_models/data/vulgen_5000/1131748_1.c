@@ -1,0 +1,1 @@
+_public_ int sd_session_get_desktop ( const char * session , char * * desktop ) { _cleanup_free_ char * escaped = NULL ; int r ; ssize_t l ; r = session_get_string ( session , "DESKTOP" , & escaped ) ; if ( r < 0 ) { return r ; } l = cunescape ( escaped , 0 , desktop ) ; if ( l < 0 ) { return l ; } return 0 ; } 

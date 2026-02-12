@@ -1,0 +1,1 @@
+spear_pcie_gadget_config { void __iomem * base ; void __iomem * va_app_base ; void __iomem * va_dbi_base ; char int_type [ 10 ] ; int requested_msi ; ulong configured_msi ; ulong bar0_size ; ulong bar0_rw_offset ; void __iomem * va_bar0_address ; } 

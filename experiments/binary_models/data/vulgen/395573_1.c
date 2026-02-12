@@ -1,1 +1,0 @@
-static void __exit twofish_glue_fini ( void ) { } 

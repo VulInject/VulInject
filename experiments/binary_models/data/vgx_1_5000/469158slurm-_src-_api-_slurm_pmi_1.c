@@ -1,0 +1,1 @@
+void slurm_pmi_finalize ( void ) { if ( pmi_fd >= 0 ) { close ( pmi_fd , NULL ) ; pmi_fd = - 1 ; } srun_port = 0 ; } 

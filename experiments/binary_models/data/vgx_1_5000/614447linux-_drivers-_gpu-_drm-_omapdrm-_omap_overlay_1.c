@@ -1,0 +1,1 @@
+static struct omap_hw_overlay * omap_overlay_init ( enum omap_plane_id overlay_id , enum omap_overlay_caps caps ) { struct omap_hw_overlay * overlay ; overlay = kzalloc ( sizeof ( * overlay ) , GFP_KERNEL ) ; overlay -> name = overlay_id_to_name [ overlay_id ] ; overlay -> id = overlay_id ; overlay -> caps = caps ; return overlay ; } 

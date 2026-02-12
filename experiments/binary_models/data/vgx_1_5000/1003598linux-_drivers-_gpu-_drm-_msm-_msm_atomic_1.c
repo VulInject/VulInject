@@ -1,0 +1,1 @@
+static void unlock_crtcs ( struct msm_kms * kms , unsigned int crtc_mask ) { struct drm_crtc * crtc ; for_each_crtc_mask_reverse ( , , ) } 

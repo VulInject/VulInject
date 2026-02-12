@@ -1,0 +1,1 @@
+static void cleanup ( void * private ) { size_t i ; struct bucket * cache = ( bucket * ) private ; for ( i = 0 ; i < cache_size ; i ++ ) { free ( cache [ i ] . name ) ; } } 

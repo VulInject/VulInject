@@ -1,1 +1,0 @@
-static void crystal_cove_charger_irq_bus_lock ( struct irq_data * data ) { struct crystal_cove_charger_data * charger = irq_data_get_irq_chip_data ( data ) ; } 

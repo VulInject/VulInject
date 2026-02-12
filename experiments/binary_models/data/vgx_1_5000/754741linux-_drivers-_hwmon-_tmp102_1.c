@@ -1,0 +1,1 @@
+TMP102_CONF_CR0 | TMP102_CONF_CR1 ; TMP102_CONF_CR0 ; TMP102_CONF_CR1 ; tmp102 { struct regmap * regmap ; u16 config_orig ; cfs_time_t ready_time ; } 

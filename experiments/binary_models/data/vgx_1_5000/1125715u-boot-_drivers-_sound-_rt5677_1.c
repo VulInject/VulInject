@@ -1,0 +1,1 @@
+static int rt5677_reg_init ( struct rt5677_priv * priv ) { int ret ; int i ; for ( i = 0 ; i < ARRAY_SIZE ( init_list ) ; i ++ ) { ret = rt5677_i2c_write ( priv , init_list [ i ] . reg , init_list [ i ] . val ) ; } return 0 ; } 

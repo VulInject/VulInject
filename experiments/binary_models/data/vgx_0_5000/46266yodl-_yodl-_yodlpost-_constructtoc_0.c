@@ -1,0 +1,14 @@
+HashItem *construct_toc(char const *key, char *rest)
+{
+char *newheader = new_str(rest);
+register HashItem *item = hashmap_find(&global.d_symbol, "tocheader",
+ANY);
+if (item != PFAILED)
+hashitem_set(item, newheader, free);    
+else                                        
+hashmap_insert(&global.d_symbol,
+hashitem_new_destructor(VOIDPTR, "tocheader", newheader, free));
+
+
+return hashitem_new_destructor(VOIDPTR, rest, 0, root_nop);
+}

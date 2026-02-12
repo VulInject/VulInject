@@ -1,0 +1,16 @@
+void MPEGVS_Start(struct __input_device * dr)
+{
+MPEGVSCTX;
+
+GF_LOG(GF_LOG_ERROR, GF_LOG_CORE, ("[MPEG-V_IN] Start: %d\n", gf_th_id()));
+
+if ( rc->inst ) {
+SENS_Stop(rc->inst);
+SENS_DestroyInstance(&rc->inst);
+}
+
+rc->inst = SENS_CreateInstance();
+SENS_SetSensorType(rc->inst, rc->sensorIOSType);
+SENS_SetCallback(rc->inst, MPEGVSensorCallback, dr);
+SENS_Start(rc->inst);
+}

@@ -1,1 +1,0 @@
-int FUN1 ( int VAR1 ) { return 0 ; }

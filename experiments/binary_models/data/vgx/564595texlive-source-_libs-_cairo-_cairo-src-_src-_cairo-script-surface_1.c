@@ -1,1 +1,0 @@
-_cairo_script_context_create ( ) { cairo_script_context_t * ctx ; ctx = ( cairo_script_context_t * ) _cairo_script_context_create_internal ( stream ) ; ctx -> owns_stream = TRUE ; _cairo_output_stream_puts ( ctx -> stream , "%!CairoScript\n" ) ; return & ctx -> base ; } 

@@ -1,0 +1,1 @@
+static void bond_done ( NetDev * netdev ) { Bond * b ; assert ( netdev ) ; b = BOND ( netdev ) ; assert ( b ) ; } 

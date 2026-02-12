@@ -1,1 +1,0 @@
-gst_pnm_src_uri_handler_init ( , ) { GstURIHandlerInterface * iface = ( GstURIHandlerInterface * ) g_iface ; iface -> get_type = gst_pnm_src_uri_get_type ; iface -> get_protocols = gst_pnm_src_uri_get_protocols ; iface -> get_uri = gst_pnm_src_uri_get_uri ; } 

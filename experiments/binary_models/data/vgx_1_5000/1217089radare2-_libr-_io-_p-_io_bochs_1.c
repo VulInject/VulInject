@@ -1,0 +1,1 @@
+static bool __close ( RIODesc * fd ) { bochs_close ( desc , NULL ) ; return true ; } 

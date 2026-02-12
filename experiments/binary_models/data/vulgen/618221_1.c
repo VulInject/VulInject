@@ -1,1 +1,0 @@
-static inline void exit ( int status ) { int __res ; volatile } 

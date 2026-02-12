@@ -1,0 +1,1 @@
+void do_usage_fault ( struct autosave_regs * autosave_regs ) { printf ( "Usage fault\n" ) ; dump_regs ( autosave_regs , NULL ) ; bad_mode ( ) ; } 

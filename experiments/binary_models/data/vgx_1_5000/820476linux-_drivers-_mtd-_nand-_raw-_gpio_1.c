@@ -1,0 +1,1 @@
+static void gpio_nand_dosync ( struct gpiomtd * gpiomtd ) { unsigned long tmp ; if ( gpiomtd -> io_sync ) { tmp = readl ( gpiomtd -> io_sync , NULL ) ; volatile } } 

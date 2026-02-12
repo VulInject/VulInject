@@ -1,0 +1,1 @@
+while ( ( val = * valp ) != 0 ) { if ( count ) { if ( count ) { locked = 1 ; } else { locked = 1 ; } } if ( ! count ) { count -- ; } break ; } return val ; 

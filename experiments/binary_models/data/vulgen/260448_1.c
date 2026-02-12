@@ -1,1 +1,0 @@
-void ext4_io_submit ( struct ext4_io_submit * io ) { struct bio * bio = io -> io_bio ; io -> io_bio = NULL ; } 

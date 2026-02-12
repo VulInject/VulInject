@@ -1,0 +1,1 @@
+static void leo_init_hw ( struct fb_info * info ) { struct leo_par * par = ( leo_par * ) info -> par ; u32 val ; val = sbus_readl ( & par -> ld_ss1 -> ss1_misc ) ; val |= LEO_SS1_MISC_ENABLE ; sbus_writel ( val , & par -> ld_ss1 -> ss1_misc ) ; } 

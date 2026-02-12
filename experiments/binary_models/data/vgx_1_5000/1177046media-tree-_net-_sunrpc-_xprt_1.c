@@ -1,0 +1,1 @@
+static bool xprt_dynamic_free_slot ( struct rpc_xprt * xprt , struct rpc_rqst * req ) { if ( atomic_add_unless ( & xprt -> num_reqs , - 1 , xprt -> min_reqs ) ) { return true ; } return false ; } 

@@ -1,0 +1,1 @@
+static int sienna_cichlid_mode2_reset ( struct amdgpu_device * adev ) { return amdgpu_dpm_mode2_reset ( adev ) ; } 

@@ -1,0 +1,1 @@
+CMD_FUNC ( cmd_sdesc ) ; ModuleHeader MOD_HEADER = { "sdesc" "5.0" "command /sdesc" "UnrealIRCd Team" "unrealircd-6" } ; MOD_INIT ( ) { CommandAdd ( modinfo -> handle , MSG_SDESC , cmd_sdesc , 1 , CMD_USER ) ; return MOD_SUCCESS ; } 

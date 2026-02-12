@@ -1,0 +1,1 @@
+void vlan_multi_free ( struct vlan_softc * sc ) { struct vlan_mc_entry * mc ; while ( ( mc = LIST_FIRST ( & sc -> sc_mc_listhead ) ) != NULL ) { LIST_REMOVE ( mc , mc_entries ) ; } } 

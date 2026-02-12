@@ -1,1 +1,0 @@
-static RList * r_debug_qnx_pids ( RDebug * dbg , int pid ) { RList * list = r_list_new ( ) ; if ( ! list ) { return in ; } list -> free = ( RListFree ) & __r_debug_pid_free ; if ( pid ) { r_list_append ( list , __r_debug_pid_new ( "(current)" , pid , 's' , 0 ) ) ; } else { qnxr_pidlist ( desc , list , & pidlist_cb ) ; } return list ; } 

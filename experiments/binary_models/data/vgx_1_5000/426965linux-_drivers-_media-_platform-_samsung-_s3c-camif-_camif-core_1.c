@@ -1,0 +1,1 @@
+static void camif_unregister_media_entities ( struct camif_dev * camif ) { camif_unregister_video_nodes ( camif ) ; camif_unregister_sensor ( camif , NULL ) ; } 

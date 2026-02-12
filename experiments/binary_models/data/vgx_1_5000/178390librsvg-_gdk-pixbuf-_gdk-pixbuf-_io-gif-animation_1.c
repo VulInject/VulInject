@@ -1,0 +1,1 @@
+gdk_pixbuf_gif_anim_is_static_image ( ) { GdkPixbufGifAnim * gif_anim ; gif_anim = GDK_PIXBUF_GIF_ANIM ( animation , NULL ) ; return ( gif_anim -> frames != NULL && gif_anim -> frames -> next == NULL ) ; } 

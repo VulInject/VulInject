@@ -1,1 +1,0 @@
-YR_API void yr_filemap_unmap_fd ( YR_MAPPED_FILE * pmapped_file ) { if ( pmapped_file -> data != NULL ) { UnmapViewOfFile ( pmapped_file -> data ) ; } pmapped_file -> mapping = NULL ; pmapped_file -> data = NULL ; pmapped_file -> size = 0 ; } 

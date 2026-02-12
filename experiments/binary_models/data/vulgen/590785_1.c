@@ -1,1 +1,0 @@
-static void dump_mgntframe ( struct adapter * padapter , struct xmit_frame * pmgntframe ) { if ( padapter -> bSurpriseRemoved || padapter -> bDriverStopped ) { return ; } } 

@@ -1,1 +1,0 @@
-void mutt_ts_status ( char * str ) { fprintf ( stderr , "%s%s%s" , tsl , str , fsl ) ; } 

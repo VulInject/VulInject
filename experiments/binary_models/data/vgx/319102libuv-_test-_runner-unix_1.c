@@ -1,1 +1,0 @@
-long int process_output_size ( process_info_t * p ) { struct stat buf ; int r = fstat ( fileno ( p -> stdout_file ) , & buf ) ; if ( r < 0 ) { return - 1 ; } return ( long ) buf . st_size ; } 

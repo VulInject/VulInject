@@ -1,1 +1,0 @@
-struct menu_item * default_item ; int timeout ; char * title ; int prompt ; void * display_statusline ( struct menu * ) void * item_data_print ( void * ) char * * item_choice ( void * ) void * item_choice_data ; int items ; int item_cnt ; 

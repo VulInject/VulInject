@@ -1,1 +1,0 @@
-uint32_t sd_nvic_EnableIRQ ( IRQn_Type IRQn ) { return NRF_SUCCESS ; } 

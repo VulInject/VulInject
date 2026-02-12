@@ -1,1 +1,0 @@
-Static void extractOneOf ( Char * note , Char * hits , Char * hit ) { short i , l ; l = strlen ( note ) ; * hit = '\0' ; for ( i = 1 ; i <= l ; i ++ ) { if ( pos1 ( note [ i - 1 ] , hits ) > 0 ) { sprintf ( hit , "%c" , note [ i - 1 ] ) ; return ; } } } 

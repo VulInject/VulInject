@@ -1,1 +1,0 @@
-struct VAR1 * FUN1 ( VAR2 * VAR3 ) { if ( VAR3 -> VAR4 == 0 ) { if ( FUN2 ( VAR3 ) == VAR5 ) { return ( NULL ) ; } if ( VAR3 -> VAR4 == 0 ) { FUN3 ( VAR3 ) ; } return ( ( VAR1 * ) VAR3 -> VAR4 ) ; } if ( FUN4 ( VAR3 ) == VAR5 ) { FUN3 ( VAR3 ) ; return ( NULL ) ; } if ( VAR3 -> VAR4 == 0 ) { FUN3 ( VAR3 ) ; } return ( ( VAR1 * ) VAR3 -> VAR4 ) ; }

@@ -1,1 +1,0 @@
-static void p9stat_init ( struct p9_wstat * stbuf ) { stbuf -> name = NULL ; stbuf -> gid = NULL ; stbuf -> muid = NULL ; stbuf -> extension = NULL ; } 

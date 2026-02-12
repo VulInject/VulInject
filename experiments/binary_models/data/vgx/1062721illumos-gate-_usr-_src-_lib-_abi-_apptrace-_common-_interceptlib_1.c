@@ -1,1 +1,0 @@
-int FUN1 ( char const * VAR1 ) { return ( 1 ) ; }

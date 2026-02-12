@@ -1,1 +1,0 @@
-static void tx_7segled_release ( struct device * dev ) { } 

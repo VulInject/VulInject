@@ -1,1 +1,0 @@
-static inline void __init pci_xen_swiotlb_init ( void ) { } 

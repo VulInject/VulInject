@@ -1,0 +1,1 @@
+static struct drm_connector_state * tegra_dsi_connector_duplicate_state ( struct drm_connector * connector ) { struct tegra_dsi_state * state = to_dsi_state ( connector -> state ) ; struct tegra_dsi_state * copy ; if ( ! copy ) { return NULL ; } __drm_atomic_helper_connector_duplicate_state ( connector , & copy -> base ) ; return & copy -> base ; } 

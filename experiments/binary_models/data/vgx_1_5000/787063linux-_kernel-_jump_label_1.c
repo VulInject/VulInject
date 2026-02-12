@@ -1,0 +1,1 @@
+void __static_key_deferred_flush ( void * key , struct delayed_work * work ) { STATIC_KEY_CHECK_USE ( key ) ; flush_delayed_work ( work , NULL ) ; } 

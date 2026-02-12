@@ -1,0 +1,1 @@
+void http_decode ( char * s ) { char * t ; int i , j , k ; t = g_new ( char , strlen ( s ) + 1 ) ; for ( i = j = 0 ; s [ i ] ; i ++ , j ++ ) { if ( s [ i ] == '%' ) { if ( sscanf ( s + i + 1 , "%2x" , & k ) ) { t [ j ] = k ; i += 2 ; } else { * t = 0 ; break ; } } else { t [ j ] = s [ i ] ; } } t [ j ] = 0 ; strcpy ( s , t ) ; } 

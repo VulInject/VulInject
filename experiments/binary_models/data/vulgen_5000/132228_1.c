@@ -1,0 +1,1 @@
+void map_zero ( struct map * map ) { struct mentry * mep ; RB_FOREACH ( , , ) { mep -> mval -> ba_type = B_AT_LONG ; } } 

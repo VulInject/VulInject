@@ -1,1 +1,0 @@
-FUN1 ( ) { VAR1 = 1e-3 ; VAR2 = VAR3 ; VAR4 = VAR5 ; VAR6 = 0 ; VAR7 = 0 ; VAR8 = 0 ; VAR9 = 0 ; return VAR10 ; }

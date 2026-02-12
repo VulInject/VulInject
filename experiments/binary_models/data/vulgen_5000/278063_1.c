@@ -1,0 +1,1 @@
+static void check_mappings_rmap ( struct kvm * kvm , struct kvm_mmu_page * sp ) { int i ; if ( sp -> role . level != PT_PAGE_TABLE_LEVEL ) { return ; } for ( i = 0 ; i < PT64_ENT_PER_PAGE ; ++ i ) { if ( ! is_shadow_present_pte ( sp -> spt [ i ] ) ) { continue ; } } } 

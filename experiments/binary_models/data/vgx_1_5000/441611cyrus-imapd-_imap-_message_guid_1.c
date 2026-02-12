@@ -1,0 +1,1 @@
+EXPORTED void message_guid_generate ( struct message_guid * guid , const char * msg_base , unsigned long msg_len ) { guid -> status = GUID_NULL ; guid -> status = GUID_NONNULL ; xsha1 ( ( const unsigned char * ) msg_base , msg_len , guid -> value ) ; } 

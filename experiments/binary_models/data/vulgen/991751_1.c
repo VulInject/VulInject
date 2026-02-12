@@ -1,1 +1,0 @@
-* / foo * foop ; extern struct foo * getfoo ( ) extern void putfoo ( struct foo * foop ) int main ( ) { set_debug_traps ( ) ; foop = getfoo ( ) ; putfoo ( foop ) ; return 0 ; } 

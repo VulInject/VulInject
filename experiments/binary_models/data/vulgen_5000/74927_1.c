@@ -1,0 +1,1 @@
+static void unref_cursor_worker ( struct drm_flip_work * work , void * val ) { struct mdp5_crtc * mdp5_crtc = container_of ( work , mdp5_crtc , unref_cursor_work ) ; struct mdp5_kms * mdp5_kms = get_kms ( & mdp5_crtc -> base ) ; drm_gem_object_unreference_unlocked ( val ) ; } 

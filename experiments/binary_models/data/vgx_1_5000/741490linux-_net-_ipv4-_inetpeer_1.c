@@ -1,0 +1,1 @@
+void inet_peer_base_init ( struct inet_peer_base * bp ) { bp -> rb_root = RB_ROOT ; seqlock_init ( & bp -> lock ) ; } 

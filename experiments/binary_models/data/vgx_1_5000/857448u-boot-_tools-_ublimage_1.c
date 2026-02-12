@@ -1,0 +1,1 @@
+static void ublimage_print_header ( const void * ptr ) { struct ubl_header * ubl_hdr = ( ubl_header * ) ptr ; print_hdr ( ubl_hdr , NULL ) ; } 

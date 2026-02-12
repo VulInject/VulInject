@@ -1,1 +1,0 @@
-static unsigned long preallocate_image_memory ( unsigned long nr_pages , unsigned long avail_normal ) { unsigned long alloc ; alloc = avail_normal - alloc_normal ; if ( nr_pages < alloc ) { alloc = nr_pages ; } return preallocate_image_pages ( alloc , GFP_IMAGE ) ; } 

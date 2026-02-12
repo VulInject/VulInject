@@ -1,1 +1,0 @@
-fprintf ( stderr , "can't open %s\n" , filename ) ; return ( 0 ) ; = GImageWrite_Jpeg ( gi , outfile , quality , progressive ) ; fclose ( outfile , NULL ) ; return ( ret ) ; 

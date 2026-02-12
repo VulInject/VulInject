@@ -1,0 +1,1 @@
+int tee_loaded = 0 ; ppa_tee_load_info { u32 tee_sec_mem_start ; u32 tee_sec_mem_size ; u32 tee_cert_start ; u32 tee_cert_size ; u32 tee_jump_addr ; int tee_arg0 ; } 

@@ -1,0 +1,1 @@
+static int gact_determ ( struct tcf_gact * gact ) { u32 pack = atomic_inc_return ( & gact -> packets ) ; smp_rmb ( ) ; return gact -> tcfg_paction ; } 

@@ -1,1 +1,0 @@
-static void cpcap_charger_set_cable_path ( struct cpcap_charger_ddata * ddata , bool enabled ) { gpiod_set_value ( ddata -> gpio [ 0 ] , enabled ) ; } 

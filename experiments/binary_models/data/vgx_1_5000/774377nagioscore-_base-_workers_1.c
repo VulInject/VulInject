@@ -1,0 +1,1 @@
+int wproc_run_service_job ( int jtype , int timeout , service * svc , char * cmd , nagios_macros * mac ) { struct wproc_job * job ; wproc_object_job * oj ; job = create_job ( jtype , oj , timeout , cmd ) ; return wproc_run_job ( job , mac ) ; } 

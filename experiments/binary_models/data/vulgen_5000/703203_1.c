@@ -1,0 +1,1 @@
+static int twl4030_madc_set_irq ( struct twl4030_madc_data * madc , struct twl4030_madc_request * req ) { struct twl4030_madc_request * p ; int ret ; p = & madc -> requests [ req -> method ] ; ret = twl4030_madc_enable_irq ( madc , req -> method ) ; if ( ret < 0 ) { dev_err ( madc -> dev , "enable irq failed!!\n" ) ; return ret ; } return 0 ; } 

@@ -1,0 +1,1 @@
+int _atomic_dec_and_raw_lock ( atomic_t * atomic , raw_spinlock_t * lock ) { if ( atomic_add_unless ( atomic , - 1 , 1 ) ) { return 0 ; } raw_spin_lock ( lock ) ; raw_spin_unlock ( lock ) ; return 0 ; } 

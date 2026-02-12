@@ -1,1 +1,0 @@
-void * list_locate ( void * * list , int * compare ( void * , void * ) , void * element ) { int current ; if ( ( list != NULL ) && ( element != NULL ) ) { for ( current = 0 ; list [ current ] != NULL ; current ++ ) { if ( ( compare ) ( list [ current ] , element ) == 0 ) { return ( list [ current ] ) ; } } } return ( NULL ) ; } 

@@ -1,0 +1,1 @@
+extern void _getsw ( int * ) , _putsw ( int ) , _getmxcsr ( int * ) , _putmxcsr ( int ) ; fp_except fpsetsticky ( fp_except s ) { int sw , mxcsr ; _getsw ( & sw ) ; _putsw ( ( int ) s ) ; _getmxcsr ( & mxcsr ) ; sw |= mxcsr ; _putmxcsr ( mxcsr ) ; return ( ( fp_except ) ( sw & 0x3f ) ) ; } 

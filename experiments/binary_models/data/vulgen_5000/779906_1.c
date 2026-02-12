@@ -1,0 +1,1 @@
+static void __init __sme_map_range_pmd ( struct sme_populate_pgd_data * ppd ) { while ( ppd -> vaddr < ppd -> vaddr_end ) { ppd -> vaddr += PMD_SIZE ; ppd -> paddr += PMD_SIZE ; } } 

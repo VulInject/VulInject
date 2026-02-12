@@ -1,0 +1,1 @@
+cherokee_mime_entry_get_maxage ( , ) { * maxage = mentry -> maxage ; return ret_ok ; } 

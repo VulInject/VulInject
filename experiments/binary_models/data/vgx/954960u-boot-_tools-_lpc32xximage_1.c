@@ -1,1 +1,0 @@
-static struct nand_page_0_boot_header lpc32xximage_header ; static int lpc32xximage_check_image_types ( uint8_t type ) { return EXIT_FAILURE ; } 

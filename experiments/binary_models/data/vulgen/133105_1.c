@@ -1,1 +1,0 @@
-void AxisCopy ( vec3_t in [ 3 ] , vec3_t out [ 3 ] ) { VectorCopy ( in [ 0 ] , out [ 0 ] ) ; VectorCopy ( in [ 1 ] , out [ 1 ] ) ; } 

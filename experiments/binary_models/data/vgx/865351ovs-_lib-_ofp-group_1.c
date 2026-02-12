@@ -1,1 +1,0 @@
-void ofputil_bucket_list_destroy ( struct ovs_list * buckets ) { struct ofputil_bucket * bucket ; LIST_FOR_EACH_POP ( , , ) { free ( bucket -> ofpacts ) ; } } 

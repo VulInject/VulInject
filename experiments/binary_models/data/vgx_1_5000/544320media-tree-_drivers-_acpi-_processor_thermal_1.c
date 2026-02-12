@@ -1,0 +1,1 @@
+static int processor_get_max_state ( struct thermal_cooling_device * cdev , unsigned long * state ) { struct acpi_device * device = cdev -> devdata ; struct acpi_processor * pr ; if ( ! device ) { return - EINVAL ; } pr = acpi_driver_data ( device ) ; * state = acpi_processor_max_state ( pr ) ; return 0 ; } 

@@ -1,1 +1,0 @@
-void VcUnprotectPassword ( Password * pPassword , uint64 encID ) { } 

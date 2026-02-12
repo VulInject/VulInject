@@ -1,1 +1,0 @@
-MagickExport MagickBooleanType HuffmanDecodeImage ( Image * image ) { { entry = table ; while ( entry -> code != 0 ) { entry ++ ; } } } 

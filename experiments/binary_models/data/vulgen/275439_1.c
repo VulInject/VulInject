@@ -1,1 +1,0 @@
-VALUE ossl_bn_new ( const BIGNUM * bn ) { BIGNUM * newbn ; VALUE obj ; obj = NewBN ( cBN ) ; newbn = bn ?BN_dup ( bn ) : BN_new ( ) ; SetBN ( obj , newbn ) ; return obj ; } 

@@ -1,0 +1,1 @@
+static void detach_location ( sd_journal * j ) { JournalFile * f ; assert ( j ) ; j -> current_field = 0 ; ORDERED_HASHMAP_FOREACH ( , ) journal_file_reset_location ( f ) ; } 

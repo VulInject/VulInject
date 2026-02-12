@@ -1,1 +1,0 @@
-static void UI_RemoveBotsMenu_UpEvent ( void * ptr , int event ) { if ( removeBotsMenuInfo . baseBotNum > 0 ) { removeBotsMenuInfo . baseBotNum -- ; UI_RemoveBotsMenu_SetBotNames ( ) ; } } 

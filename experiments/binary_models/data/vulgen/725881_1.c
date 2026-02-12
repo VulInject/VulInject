@@ -1,1 +1,0 @@
-static unsigned long GCD ( unsigned long a , unsigned long b ) { return ( b == 0 ) ?a : GCD ( b ) ; } 

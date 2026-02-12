@@ -1,1 +1,0 @@
-static int __init arch_kdebugfs_init ( void ) { int error = 0 ; if ( ! arch_debugfs_dir ) { return - ENOMEM ; } error = boot_params_kdebugfs_init ( ) ; return error ; } 

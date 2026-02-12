@@ -1,0 +1,1 @@
+static uint64_t time_max ( void ) { if ( sizeof ( time_t ) == sizeof ( int64_t ) ) { return INT64_MAX ; } return 0 ; } 

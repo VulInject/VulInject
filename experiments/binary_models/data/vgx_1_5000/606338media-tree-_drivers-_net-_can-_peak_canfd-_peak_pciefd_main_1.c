@@ -1,0 +1,1 @@
+static void pciefd_can_remove ( struct pciefd_can * priv ) { unregister_candev ( priv -> ucan . ndev ) ; } 

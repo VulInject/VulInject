@@ -1,0 +1,1 @@
+static int ath11k_wait_for_peer_common ( struct ath11k_base * ab , int vdev_id , const u8 * addr , bool expect_mapped ) { int ret ; ret = wait_event_timeout ( , , 3 ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+void mlx5_tout_query_iseg ( struct mlx5_core_dev * dev ) { u32 to ; to = ioread32be ( & dev -> iseg -> cmd_q_init_to ) ; tout_set ( dev , tout_convert_iseg_to_ms ( to ) , MLX5_TO_FW_INIT_MS ) ; to = ioread32be ( & dev -> iseg -> cmd_exec_to ) ; tout_set ( dev , tout_convert_iseg_to_ms ( to ) , MLX5_TO_CMD_MS ) ; } 

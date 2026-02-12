@@ -1,0 +1,1 @@
+static void imx_media_create_csi2_links ( struct imx_media_dev * imxmd ) { struct v4l2_subdev * sd , * csi2 = NULL ; list_for_each_entry ( , , ) { if ( sd -> grp_id == IMX_MEDIA_GRP_ID_CSI2 ) { csi2 = sd ; break ; } } if ( ! csi2 ) { return ; } list_for_each_entry ( , , ) { v4l2_create_fwnode_links ( csi2 , sd ) ; } } 

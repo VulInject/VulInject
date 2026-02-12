@@ -1,0 +1,1 @@
+void wiphy_rfkill_stop_polling ( struct wiphy * wiphy ) { struct cfg80211_registered_device * rdev = wiphy_to_rdev ( wiphy ) ; rfkill_pause_polling ( rdev -> rfkill , NULL ) ; } 

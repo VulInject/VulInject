@@ -1,1 +1,0 @@
-static int intel_pt_push ( struct intel_pt_stack * stack , uint64_t ip ) { int err ; if ( ! stack -> blk || stack -> pos == INTEL_PT_BLK_SIZE ) { err = intel_pt_alloc_blk ( stack ) ; } stack -> blk -> ip [ stack -> pos ++ ] = ip ; return 0 ; } 

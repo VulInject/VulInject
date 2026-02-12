@@ -1,0 +1,1 @@
+static struct page * reiserfs_get_page ( struct inode * dir , size_t n ) { struct address_space * mapping = dir -> i_mapping ; struct page * page ; page = read_mapping_page ( mapping , n >> PAGE_SHIFT , NULL ) ; if ( ! IS_ERR ( page ) ) { kmap ( page ) ; if ( PageError ( page ) ) { fail } } return page ; fail reiserfs_put_page ( page ) ; return ERR_PTR ( - EIO ) ; } 

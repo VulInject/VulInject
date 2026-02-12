@@ -1,0 +1,1 @@
+gimp_motion_buffer_begin_stroke ( , , ) { g_return_if_fail ( GIMP_IS_MOTION_BUFFER ( buffer ) ) ; buffer -> last_read_motion_time = time ; * last_motion = buffer -> last_coords ; } 

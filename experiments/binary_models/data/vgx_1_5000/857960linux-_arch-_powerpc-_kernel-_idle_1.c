@@ -1,0 +1,1 @@
+unsigned long cpuidle_disable = IDLE_NO_OVERRIDE ; EXPORT_SYMBOL ( cpuidle_disable ) ; static int __init powersave_off ( char * arg ) { cpuidle_disable = IDLE_POWERSAVE_OFF ; return 1 ; } 

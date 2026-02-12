@@ -1,0 +1,1 @@
+static ssize_t __comp_algorithm_show ( struct zram * zram , u32 prio , char * buf ) { ssize_t sz ; down_read ( & zram -> init_lock ) ; up_read ( & zram -> init_lock ) ; return sz ; } 

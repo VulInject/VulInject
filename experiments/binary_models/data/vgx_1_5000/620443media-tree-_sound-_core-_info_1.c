@@ -1,0 +1,1 @@
+int snd_info_check_reserved_words ( const char * str ) { static char * reserved [ ] { "version" "meminfo" "memdebug" "detect" "devices" "oss" "cards" "timers" "synth" "pcm" "seq" NULL } ; ; char * * xstr = reserved ; while ( * xstr ) { xstr ++ ; } if ( ! strncmp ( str , "card" , 4 ) ) { return 0 ; } return 1 ; } 

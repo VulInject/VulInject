@@ -1,0 +1,1 @@
+static int fimc_lite_runtime_resume ( struct device * dev ) { struct fimc_lite * fimc = dev_get_drvdata ( dev ) ; clk_prepare_enable ( fimc -> clock , NULL ) ; return 0 ; } 

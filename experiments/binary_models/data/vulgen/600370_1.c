@@ -1,1 +1,0 @@
-static void sd_stopN ( struct gspca_dev * gspca_dev ) { reg_write ( gspca_dev , 0x8112 , 0 ) ; } 

@@ -1,1 +1,0 @@
-char * findfname ( struct line * lp , char * fn ) { int start ; ( void ) d_warpdot ( lp , & start ) ; if ( start < 1 ) { return in ; } fn = & lp -> l_text [ start ] ; return fn ; } 

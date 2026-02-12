@@ -1,0 +1,1 @@
+void getpaths ( void ) { return ; } void getadminpaths ( char * admin ) { return ; } char * getprinterfile ( char * name , char * component ) { char * path ; path = makepath ( Lp_A_Printers , name , component , NULL ) ; return ( path ) ; } 

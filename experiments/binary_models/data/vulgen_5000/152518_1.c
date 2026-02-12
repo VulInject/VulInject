@@ -1,0 +1,1 @@
+static void test_reverse_sorted ( void * * state ) { krb5_key_data keys [ ] { KEY ( 1 ) KEY ( 2 ) KEY ( 2 ) KEY ( 3 ) KEY ( 3 ) KEY ( 3 ) KEY ( 4 ) KEY ( 5 ) } ; ; int n_keys = sizeof ( keys ) / sizeof ( keys [ 0 ] ) ; krb5_dbe_sort_key_data ( keys , n_keys ) ; } 

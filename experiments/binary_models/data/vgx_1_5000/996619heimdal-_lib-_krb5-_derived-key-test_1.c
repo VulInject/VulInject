@@ -1,0 +1,1 @@
+size_t constant_len ; int key [ MAXSIZE ] ; unsigned char res [ MAXSIZE ] ; [ ] = { } 

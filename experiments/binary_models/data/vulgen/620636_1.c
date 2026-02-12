@@ -1,1 +1,0 @@
-static void ast_i2c_clear_interrupts ( struct udevice * dev ) { struct ast_i2c_priv * priv = dev_get_priv ( dev ) ; } 

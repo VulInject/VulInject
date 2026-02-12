@@ -1,1 +1,0 @@
-struct name * nalloc ( char * str , int ntype ) { struct name * np ; np = ( name * ) salloc ( sizeof ( * np ) ) ; np -> n_flink = NULL ; np -> n_blink = NULL ; np -> n_type = ntype ; return ( np ) ; } 

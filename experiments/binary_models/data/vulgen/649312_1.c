@@ -1,1 +1,0 @@
-static void arc_irq_unmask ( struct irq_data * data ) { unsigned int ienb ; ienb = read_aux_reg ( AUX_IENABLE ) ; write_aux_reg ( AUX_IENABLE , ienb ) ; } 

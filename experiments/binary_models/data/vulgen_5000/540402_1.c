@@ -1,0 +1,1 @@
+{ VCR vcr [ 8 ] ; } VCRC { char vcr ; } OWN OWN Own [ 16 ] ; f ( , ) VCRC * x ; OWN * own ; { x [ own -> vcr / 8 ] . vcr [ own -> vcr % 8 ] . a -- ; x [ own -> vcr / 8 ] . vcr [ own -> vcr % 8 ] . a = x [ own -> vcr / 8 ] . vcr [ own -> vcr % 8 ] . a ; } 

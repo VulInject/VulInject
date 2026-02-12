@@ -1,0 +1,1 @@
+static int pcmcia_bus_resume ( struct pcmcia_socket * skt ) { dev_dbg ( & skt -> dev , "resuming socket %d\n" , skt -> sock ) ; bus_for_each_dev ( & pcmcia_bus_type , skt , pcmcia_bus_resume_callback ) ; return 0 ; } 

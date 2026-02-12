@@ -1,0 +1,1 @@
+int fastboot_set_reboot_flag ( enum fastboot_reboot_reason reason ) { return omap_reboot_mode_store ( "b" ) ; } 

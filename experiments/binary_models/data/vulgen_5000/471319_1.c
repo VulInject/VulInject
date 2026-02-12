@@ -1,0 +1,1 @@
+static int ef4_probe_channels ( struct ef4_nic * efx ) { struct ef4_channel * channel ; int rc ; ef4_for_each_channel_rev ( , ) { rc = ef4_probe_channel ( channel ) ; if ( rc ) { netif_err ( efx , probe , efx -> net_dev , "failed to create channel %d\n" , channel -> channel ) ; fail } } ef4_set_channel_names ( efx ) ; return 0 ; fail ef4_remove_channels ( efx ) ; return rc ; } 

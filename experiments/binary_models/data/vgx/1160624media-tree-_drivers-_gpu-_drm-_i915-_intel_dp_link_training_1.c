@@ -1,1 +1,0 @@
-void intel_dp_start_link_train ( struct intel_dp * intel_dp ) { intel_dp_link_training_clock_recovery ( intel_dp ) ; intel_dp_link_training_channel_equalization ( intel_dp , NULL ) ; } 

@@ -1,0 +1,1 @@
+static ssize_t name # # _store ( , , , ) { acpi_device * acpi_dev = dev_get_drvdata ( dev ) acpi_status status u32 val if ( kstrtouint ( buf , 0 , & val ) < 0 ) { return - EINVAL ; } status = acpi_execute_simple_method ( acpi_dev -> handle , # method , val ) } ; return - EINVAL ; 

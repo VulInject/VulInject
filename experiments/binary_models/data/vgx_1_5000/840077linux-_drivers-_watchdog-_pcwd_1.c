@@ -1,0 +1,1 @@
+static int pcwd_set_heartbeat ( int t ) { heartbeat = t ; if ( debug >= VERBOSE ) { pr_debug ( "New heartbeat: %d\n" , heartbeat ) ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static int saa7164_encoder_acquire_port ( struct saa7164_port * port ) { struct saa7164_dev * dev = port -> dev ; int ret ; if ( ( ret != SAA_OK ) && ( ret != SAA_ERR_ALREADY_STOPPED ) ) { printk ( KERN_ERR "%s() acquire transition failed, ret = 0x%x\n" , __func__ , ret ) ; ret = - EIO ; } else { dprintk ( DBGLVL_ENC , "%s() Acquired\n" , __func__ ) ; ret = 0 ; } return ret ; } 

@@ -1,0 +1,1 @@
+int pxa2xx_spi_set_dma_burst_and_threshold ( struct chip_data * chip , struct spi_device * spi , u8 bits_per_word , u32 * burst_code , u32 * threshold ) { struct pxa2xx_spi_chip * chip_info = spi -> controller_data ; * burst_code = chip_info ?chip_info -> dma_burst_size : 1 ; return 0 ; } 

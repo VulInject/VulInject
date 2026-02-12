@@ -1,0 +1,1 @@
+int * __t_errno ( void ) { static pthread_key_t t_errno_key = PTHREAD_ONCE_KEY_NP ; int * ret ; ret = thr_get_storage ( & t_errno_key , sizeof ( int ) , free ) ; return ( ret ?ret : & t_errno ) ; } 

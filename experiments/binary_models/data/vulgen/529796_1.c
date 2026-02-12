@@ -1,1 +1,0 @@
-static const char rx_list_name [ ] [ 8 ] { [ RX_ERR ] = "rx_err" [ RX_ALL ] = "rx_all" [ RX_FIL ] = "rx_fil" [ RX_INV ] = "rx_inv" } ; ; 

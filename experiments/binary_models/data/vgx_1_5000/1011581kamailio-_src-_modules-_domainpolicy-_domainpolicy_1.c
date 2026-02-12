@@ -1,0 +1,1 @@
+int domainpolicy_db_init ( const str * db_url ) { if ( domainpolicy_dbf . init == 0 ) { LM_CRIT ( "unbound database module\n" ) ; error } db_handle = domainpolicy_dbf . init ( db_url , NULL ) ; if ( db_handle == 0 ) { LM_CRIT ( "cannot initialize database connection\n" ) ; error } return 0 ; error return - 1 ; } 

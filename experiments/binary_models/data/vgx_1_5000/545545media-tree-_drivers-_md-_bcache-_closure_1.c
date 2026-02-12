@@ -1,0 +1,1 @@
+void closure_sync ( struct closure * cl ) { while ( 1 ) { __closure_start_sleep ( cl ) ; closure_set_ret_ip ( cl ) ; if ( ( atomic_read ( & cl -> remaining ) & CLOSURE_REMAINING_MASK ) == 1 ) { break ; } schedule ( ) ; } __closure_end_sleep ( cl , NULL ) ; } 

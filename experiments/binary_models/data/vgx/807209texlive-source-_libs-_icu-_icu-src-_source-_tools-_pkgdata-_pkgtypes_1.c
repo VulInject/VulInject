@@ -1,1 +1,0 @@
-CharList * pkg_prependToList ( CharList * l , const char * str ) { CharList * newList ; newList = uprv_malloc ( sizeof ( CharList ) ) ; newList -> str = str ; newList -> next = l ; return newList ; } 

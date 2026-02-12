@@ -1,0 +1,1 @@
+iterate ( , , , ) { struct grub_ntfs_dir_closure * c = closure ; struct grub_dirhook_info info ; info . dir = ( ( filetype & GRUB_FSHELP_TYPE_MASK ) == GRUB_FSHELP_DIR ) ; grub_free ( node ) ; return c -> hook ( filename , & info , c -> closure ) ; } 

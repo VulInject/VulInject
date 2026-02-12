@@ -1,0 +1,1 @@
+static int scu_ipc_release ( struct inode * inode , struct file * file ) { mutex_lock ( & scu_lock ) ; intel_scu_ipc_dev_put ( scu ) ; mutex_unlock ( & scu_lock ) ; return 0 ; } 

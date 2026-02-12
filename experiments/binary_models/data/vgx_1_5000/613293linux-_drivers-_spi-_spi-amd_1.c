@@ -1,0 +1,1 @@
+amd_spi_versions { AMD_SPI_V1 = 1 , AMD_SPI_V2 } amd_spi_speed { F_66_66MHz , F_33_33MHz , F_22_22MHz , F_16_66MHz , F_100MHz , F_800KHz , SPI_SPD7 = 0x7 , F_50MHz = 0x4 , F_4MHz = 0x32 , F_3_17MHz = 0x3F } amd_spi_freq { u32 speed_hz ; u32 enable_val ; u32 spd7_val ; } amd_spi { void __iomem * io_remap_addr ; enum amd_spi_versions version ; int speed_hz ; } 

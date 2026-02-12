@@ -1,1 +1,0 @@
-static unsigned int dfu_polltimeout_mtd ( struct dfu_entity * dfu ) { return DFU_DEFAULT_POLL_TIMEOUT ; } 

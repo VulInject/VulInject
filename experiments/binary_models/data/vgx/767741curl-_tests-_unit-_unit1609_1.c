@@ -1,1 +1,0 @@
-static CURLcode FUN1 ( void ) { CURLcode VAR1 = VAR2 ; FUN2 ( VAR3 , NULL ) ; return VAR1 ; }

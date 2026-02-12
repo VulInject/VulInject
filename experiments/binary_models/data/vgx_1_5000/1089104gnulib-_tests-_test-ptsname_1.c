@@ -1,0 +1,1 @@
+SIGNATURE_CHECK ( ptsname , char * , ( int ) ) ; static int same_slave ( const char * slave_name1 , const char * slave_name2 ) { int statbuf1 ; struct stat statbuf2 ; return ( strcmp ( slave_name1 , slave_name2 ) == 0 || ( stat ( slave_name1 , & statbuf1 ) >= 0 && stat ( slave_name2 , & statbuf2 ) >= 0 && SAME_INODE ( statbuf1 , statbuf2 ) ) ) ; } 

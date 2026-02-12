@@ -1,0 +1,1 @@
+static int __walk_drmem_v1_lmbs ( const __be32 * prop , const __be32 * usm , void * data , int * func ( struct drmem_lmb * , const __be32 * * , void * ) ) { struct drmem_lmb lmb ; u32 i , n_lmbs ; int ret = 0 ; for ( i = 0 ; i < n_lmbs ; i ++ ) { read_drconf_v1_cell ( & lmb , & prop ) ; ret = func ( & lmb , & usm , data ) ; if ( ret ) { break ; } } return ret ; } 

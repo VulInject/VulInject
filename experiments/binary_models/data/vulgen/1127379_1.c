@@ -1,1 +1,0 @@
-int apr_base64_decode ( char * bufplain , const char * bufcoded , int buflen ) { int len ; bufplain [ len ] = '\0' ; return len ; } 

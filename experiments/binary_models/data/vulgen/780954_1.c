@@ -1,1 +1,0 @@
-static void init_method ( void ) { selected_meth = & hc_rand_w32crypto_method ; selected_meth = & hc_rand_unix_method ; selected_meth = & hc_rand_fortuna_method ; } 

@@ -1,0 +1,1 @@
+( cxl_psa_unmap ) ; int cxl_afu_reset ( struct cxl_context * ctx ) { struct cxl_afu * afu = ctx -> afu ; int rc ; rc = cxl_ops -> afu_reset ( afu ) ; return cxl_ops -> afu_check_and_enable ( afu ) ; } 

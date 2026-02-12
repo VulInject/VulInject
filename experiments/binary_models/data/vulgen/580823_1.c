@@ -1,1 +1,0 @@
-void __jffs2_dbg_acct_sanity_check ( struct jffs2_sb_info * c , struct jffs2_eraseblock * jeb ) { spin_lock ( & c -> erase_completion_lock ) ; spin_unlock ( & c -> erase_completion_lock ) ; } 

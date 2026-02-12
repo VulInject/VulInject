@@ -1,1 +1,0 @@
-s3fwrn5_i2c_phy { struct phy_common common ; struct i2c_client * i2c_dev ; struct clk * clk ; int irq_skip 1 ; } 

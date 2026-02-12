@@ -1,1 +1,0 @@
-int ql_fm_check_dma_handle ( ddi_dma_handle_t handle ) { ddi_fm_error_t err ; return ( err . fme_status ) ; } 

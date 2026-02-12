@@ -1,0 +1,1 @@
+static int if_usb_resume ( struct usb_interface * intf ) { struct if_usb_card * cardp = usb_get_intfdata ( intf ) ; struct lbs_private * priv = cardp -> priv ; if_usb_submit_rx_urb ( cardp ) ; lbs_resume ( priv , NULL ) ; return 0 ; } 

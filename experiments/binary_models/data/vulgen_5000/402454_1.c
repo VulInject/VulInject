@@ -1,0 +1,1 @@
+static void nlmon_setup ( struct net_device * dev ) { dev -> type = ARPHRD_NETLINK ; dev -> netdev_ops = & nlmon_ops ; dev -> ethtool_ops = & nlmon_ethtool_ops ; dev -> needs_free_netdev = true ; dev -> features = NETIF_F_SG | NETIF_F_FRAGLIST | NETIF_F_HIGHDMA | NETIF_F_LLTX ; dev -> flags = IFF_NOARP ; dev -> mtu = NLMSG_GOODSIZE ; dev -> min_mtu = sizeof ( nlmsghdr ) ; } 

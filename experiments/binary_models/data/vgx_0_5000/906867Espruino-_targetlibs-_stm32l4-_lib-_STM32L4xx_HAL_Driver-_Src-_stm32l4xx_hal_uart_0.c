@@ -1,0 +1,30 @@
+static void UART_TxISR_16BIT_FIFOEN(UART_HandleTypeDef *huart)
+{
+uint16_t* tmp;
+uint8_t   nb_tx_data;
+
+
+if (huart->gState == HAL_UART_STATE_BUSY_TX)
+{
+for(nb_tx_data = huart->NbTxDataToProcess ; nb_tx_data > 0 ; nb_tx_data--)
+{    
+if(huart->TxXferCount == 0U)
+{
+
+CLEAR_BIT(huart->Instance->CR3, USART_CR3_TXFTIE);
+
+
+SET_BIT(huart->Instance->CR1, USART_CR1_TCIE);
+
+break; 
+}
+else if (READ_BIT(huart->Instance->ISR, USART_ISR_TXE_TXFNF) != RESET)
+{
+tmp = (uint16_t*) huart->pTxBuffPtr;
+huart->Instance->TDR = (*tmp & (uint16_t)0x01FFU);
+huart->pTxBuffPtr += 2U;
+huart->TxXferCount--;        
+}
+}
+}
+}

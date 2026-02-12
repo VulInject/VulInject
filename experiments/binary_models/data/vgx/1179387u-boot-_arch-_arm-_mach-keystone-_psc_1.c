@@ -1,1 +1,0 @@
-int FUN1 ( u32 VAR1 ) { u32 VAR2 ; VAR2 = FUN2 ( VAR3 + FUN3 ( VAR1 ) ) ; VAR2 = FUN4 ( VAR2 , 0 ) ; FUN5 ( VAR2 , VAR3 + FUN3 ( VAR1 ) ) ; return FUN6 ( VAR1 , VAR4 ) ; }

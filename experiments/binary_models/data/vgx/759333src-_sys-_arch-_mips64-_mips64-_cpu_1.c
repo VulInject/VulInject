@@ -1,1 +1,0 @@
-void save_fpu ( void ) { struct cpu_info * ci = curcpu ( ) ; struct proc * p ; KASSERT ( ci -> ci_fpuproc ) ; p = ci -> ci_fpuproc ; if ( p -> p_md . md_regs -> sr & SR_FR_32 ) { MipsSaveCurFPState ( p ) ; } else { MipsSaveCurFPState16 ( p ) ; } } 

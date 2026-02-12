@@ -1,0 +1,1 @@
+int mlx5_rescan_drivers_locked ( struct mlx5_core_dev * dev ) { struct mlx5_priv * priv = & dev -> priv ; lockdep_assert_held ( & mlx5_intf_mutex ) ; if ( priv -> flags & MLX5_PRIV_FLAGS_DETACH ) { return 0 ; } delete_drivers ( dev ) ; return add_drivers ( dev ) ; } 

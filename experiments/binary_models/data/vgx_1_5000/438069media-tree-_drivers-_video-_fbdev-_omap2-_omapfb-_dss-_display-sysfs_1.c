@@ -1,0 +1,1 @@
+static ssize_t display_mirror_show ( struct omap_dss_device * dssdev , char * buf ) { int mirror ; if ( ! dssdev -> driver -> get_mirror ) { return - ENOENT ; } mirror = dssdev -> driver -> get_mirror ( dssdev , NULL ) ; return snprintf ( buf , PAGE_SIZE , "%u\n" , mirror ) ; } 

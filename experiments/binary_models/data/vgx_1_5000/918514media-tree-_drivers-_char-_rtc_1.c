@@ -1,0 +1,1 @@
+static void __exit rtc_exit ( void ) { cleanup_sysctl ( ) ; remove_proc_entry ( "driver/rtc" ) ; misc_deregister ( & rtc_dev ) ; if ( rtc_has_irq ) { free_irq ( rtc_irq , & rtc_port ) ; } rtc_release_region ( ) ; if ( rtc_has_irq ) { free_irq ( RTC_IRQ , NULL ) ; hpet_unregister_irq_handler ( hpet_rtc_interrupt ) ; } } 

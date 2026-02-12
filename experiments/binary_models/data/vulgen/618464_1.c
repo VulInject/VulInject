@@ -1,1 +1,0 @@
-MODULE_DESCRIPTION ( "ACPI Hardware Error Device Driver" ) ; 

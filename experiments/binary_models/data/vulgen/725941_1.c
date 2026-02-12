@@ -1,1 +1,0 @@
-static void __exit tc1100_exit ( void ) { platform_device_unregister ( tc1100_device ) ; } 

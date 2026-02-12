@@ -1,1 +1,0 @@
-int power_supply_create_triggers ( struct power_supply * psy ) { return power_supply_create_gen_triggers ( psy ) ; } 

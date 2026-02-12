@@ -1,1 +1,0 @@
-int main ( ) { gdImagePtr im ; im = gdImageCreateFromHeif ( NULL ) ; gdImageHeif ( im , NULL ) ; return gdNumFailures ( ) ; } 

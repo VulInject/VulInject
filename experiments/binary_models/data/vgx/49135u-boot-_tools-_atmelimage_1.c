@@ -1,1 +1,0 @@
-static int FUN1 ( char * VAR1 ) { char * VAR2 ; VAR2 = strtok ( VAR1 , "" ) ; while ( VAR2 != NULL ) { VAR2 = strtok ( NULL , "" ) ; } return VAR3 ; }

@@ -1,0 +1,1 @@
+static void add_short_options ( struct getopt_control * ctl , char * options ) { if ( * options != '+' && getenv ( "POSIXLY_CORRECT" ) ) { ctl -> optstr = strconcat ( "+" , options ) ; } else { ctl -> optstr = xstrdup ( options ) ; } if ( ! ctl -> optstr ) { err_oom ( ) ; } } 

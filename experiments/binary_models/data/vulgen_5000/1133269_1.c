@@ -1,0 +1,1 @@
+static void __cpm1_gpio32_set ( struct of_mm_gpio_chip * mm_gc , u32 pin_mask , int value ) { struct cpm1_gpio32_chip * cpm1_gc = gpiochip_get_data ( & mm_gc -> gc ) ; struct cpm_ioport32b __iomem * iop = mm_gc -> regs ; if ( value ) { cpm1_gc -> cpdata |= pin_mask ; } else { cpm1_gc -> cpdata &= ~ pin_mask ; } } 

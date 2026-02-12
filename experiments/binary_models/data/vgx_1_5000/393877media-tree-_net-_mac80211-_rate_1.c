@@ -1,0 +1,1 @@
+( ieee80211_rate_control_register ) ; void ieee80211_rate_control_unregister ( const struct rate_control_ops * ops ) { struct rate_control_alg * alg ; mutex_lock ( & rate_ctrl_mutex ) ; list_for_each_entry ( , , ) { if ( alg -> ops == ops ) { list_del ( & alg -> list ) ; break ; } } mutex_unlock ( & rate_ctrl_mutex ) ; } 

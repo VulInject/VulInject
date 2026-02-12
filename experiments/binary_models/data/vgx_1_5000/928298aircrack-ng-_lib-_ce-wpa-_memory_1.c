@@ -1,0 +1,1 @@
+void getbuf_stuff_mpara_mmx ( unsigned char * oBuf , void * buf , unsigned int size , unsigned int index ) { int i ; for ( i = 0 ; i < size ; i ++ ) { * oBuf ++ = ( ( unsigned char * ) buf ) [ GETPOSMPARA ( i , index ) ] ; } } 

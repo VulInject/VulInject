@@ -1,0 +1,1 @@
+struct mailimf_fields * mailimf_fields_new_empty ( void ) { clist * list ; struct mailimf_fields * fields_list ; list = clist_new ( ) ; fields_list = mailimf_fields_new ( list ) ; if ( fields_list == NULL ) { return NULL ; } return fields_list ; } 

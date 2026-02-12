@@ -1,0 +1,1 @@
+int snd_soc_params_to_frame_size ( struct snd_pcm_hw_params * params ) { int sample_size ; sample_size = snd_pcm_format_width ( params_format ( params ) ) ; return snd_soc_calc_frame_size ( sample_size , params_channels ( params ) , 1 ) ; } 

@@ -1,0 +1,1 @@
+int __kunit_test_suites_init ( struct kunit_suite * const * const suites , int num_suites ) { unsigned int i ; if ( ! kunit_enabled ( ) && num_suites > 0 ) { return 0 ; } static_branch_inc ( & kunit_running ) ; for ( i = 0 ; i < num_suites ; i ++ ) { kunit_init_suite ( suites [ i ] ) ; kunit_run_tests ( suites [ i ] ) ; } static_branch_dec ( & kunit_running ) ; return 0 ; } 

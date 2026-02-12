@@ -1,1 +1,0 @@
-static int cpuhp_cpufreq_online ( unsigned int cpu ) { cpufreq_online ( cpu , NULL ) ; return 0 ; } 

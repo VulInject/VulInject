@@ -1,0 +1,1 @@
+pcibios_claim_one_bus ( phb -> bus ) ; eeh_add_device_tree_late ( phb -> bus ) ; pci_bus_add_devices ( phb -> bus ) ; eeh_add_sysfs_files ( phb -> bus , NULL ) ; return 0 ; 

@@ -1,1 +1,0 @@
-void fail_head ( const char * stepname ) { } 

@@ -1,0 +1,1 @@
+static int __init arcrimi_setup ( char * s ) { int ints [ 8 ] ; s = get_options ( s , 8 , ints ) ; switch ( ints [ 0 ] ) { default : pr_err ( "Too many arguments\n" ) ; fallthrough ; case 3 : node = ints [ 3 ] ; fallthrough ; case 2 : irq = ints [ 2 ] ; fallthrough ; case 1 : io = ints [ 1 ] ; } if ( * s ) { snprintf ( device , sizeof ( device ) , "%s" , s ) ; } return 1 ; } 

@@ -1,0 +1,1 @@
+static bool pool_full ( struct ceph_osd_client * osdc , s64 pool_id ) { struct ceph_pg_pool_info * pi ; pi = ceph_pg_pool_by_id ( osdc -> osdmap , pool_id ) ; return __pool_full ( pi ) ; } 

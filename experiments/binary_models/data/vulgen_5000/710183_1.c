@@ -1,0 +1,1 @@
+static int get_snr ( struct dvb_frontend * fe ) { struct sx8 * state = fe -> demodulator_priv ; struct dtv_frontend_properties * p = & fe -> dtv_property_cache ; p -> cnr . len = 1 ; p -> cnr . stat [ 0 ] . scale = FE_SCALE_DECIBEL ; return 0 ; } 

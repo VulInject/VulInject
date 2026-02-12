@@ -1,0 +1,1 @@
+u8 vid_which_vrm ( void ) { struct cpuinfo_x86 * c = & cpu_data ( 0 ) ; u8 vrm_ret ; vrm_ret = find_vrm ( c -> x86 , c -> x86_model , c -> x86_mask , c -> x86_vendor ) ; if ( vrm_ret == 134 ) { vrm_ret = get_via_model_d_vrm ( ) ; } if ( vrm_ret == 0 ) { pr_info ( "Unknown VRM version of your x86 CPU\n" ) ; } return vrm_ret ; } 

@@ -1,0 +1,1 @@
+static const u8 * coda_find_nal_header ( const u8 * buf , const u8 * end ) { u32 val = 0xffffffff ; { val = val << 8 | * buf ++ ; } val != 0x00000001 ; return buf ; } 

@@ -1,0 +1,1 @@
+ov13b10_reg { u16 address ; int val ; } 

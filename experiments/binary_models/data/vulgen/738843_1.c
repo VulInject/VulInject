@@ -1,1 +1,0 @@
-uint16_t qtest_inw ( QTestState * s , int addr ) { return qtest_in ( s , "inw" , addr ) ; } 

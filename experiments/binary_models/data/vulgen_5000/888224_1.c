@@ -1,0 +1,1 @@
+static int __init register_memblock_regions ( void ) { struct memblock_region * reg ; for_each_mem_region ( ) { hyp_memory [ * hyp_memblock_nr_ptr ] = * reg ; ( * hyp_memblock_nr_ptr ) ++ ; } sort_memblock_regions ( ) ; return 0 ; } 

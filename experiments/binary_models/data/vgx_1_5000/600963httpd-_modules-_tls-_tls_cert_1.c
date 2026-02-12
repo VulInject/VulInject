@@ -1,0 +1,1 @@
+static apr_status_t reg_cleanup ( void * data ) { tls_cert_reg_t * reg = data ; if ( reg -> id2entry ) { apr_hash_do ( reg_entry_cleanup , reg , reg -> id2entry ) ; if ( reg -> key2entry ) { apr_hash_clear ( reg -> key2entry ) ; } } return APR_SUCCESS ; } 

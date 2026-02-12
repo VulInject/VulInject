@@ -1,1 +1,0 @@
-void cdev_device_del ( struct cdev * cdev , struct device * dev ) { device_del ( dev ) ; } 

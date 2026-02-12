@@ -1,1 +1,0 @@
-write_list ( , , ) FILE * stream ; const char * prefix ; struct id * list ; { while ( list ) { list = list -> next ; } } 

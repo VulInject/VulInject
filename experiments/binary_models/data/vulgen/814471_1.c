@@ -1,1 +1,0 @@
-MODULE_DESCRIPTION ( "Q6 Proxy Resource Manager LPASS clock driver" ) ; 

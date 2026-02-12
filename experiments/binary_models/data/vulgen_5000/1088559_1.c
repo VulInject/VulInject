@@ -1,0 +1,1 @@
+static void __exit hp300_8250_exit ( void ) { struct hp300_port * port , * to_free ; for ( port = hp300_ports ; port ; ) { serial8250_unregister_port ( port -> line ) ; to_free = port ; port = port -> next ; kfree ( to_free ) ; } hp300_ports = NULL ; } 

@@ -1,0 +1,1 @@
+static void DIRequest ( ENTITY * e ) { DIVA_CAPI_ADAPTER * a = & ( adapter [ ( byte ) e -> user [ 0 ] ] ) ; if ( e -> Req && ( a -> FlowControlIdTable [ e -> ReqCh ] == e -> Id ) ) { a -> FlowControlSkipTable [ e -> ReqCh ] = 1 ; } ( * ( os_card -> d . request ) ) ( e ) ; } 

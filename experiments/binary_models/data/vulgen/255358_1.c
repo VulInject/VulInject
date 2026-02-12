@@ -1,1 +1,0 @@
-static void vmw_sou_encoder_destroy ( struct drm_encoder * encoder ) { } 

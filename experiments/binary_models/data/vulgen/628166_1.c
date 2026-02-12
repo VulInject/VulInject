@@ -1,1 +1,0 @@
-int server_open_kernel_seqnum ( Server * s ) { int r ; assert ( s ) ; r = server_map_seqnum_file ( s , "kernel-seqnum" , sizeof ( uint64_t ) , ( void * * ) & s -> kernel_seqnum ) ; if ( r < 0 ) { return log_error_errno ( r , "Failed to map kernel seqnum file: %m" ) ; } return 0 ; } 

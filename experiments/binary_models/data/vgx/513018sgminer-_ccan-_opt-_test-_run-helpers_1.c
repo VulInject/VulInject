@@ -1,1 +1,0 @@
-static void * saved_malloc ( size_t size ) static void reset_options ( void ) { free ( opt_table ) ; opt_count = opt_num_short = opt_num_short_arg = opt_num_long = 0 ; } 

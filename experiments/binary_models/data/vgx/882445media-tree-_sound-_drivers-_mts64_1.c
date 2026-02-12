@@ -1,1 +1,0 @@
-static int snd_mts64_free ( struct mts64 * mts ) { return 0 ; } 

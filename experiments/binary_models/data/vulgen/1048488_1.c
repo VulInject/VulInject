@@ -1,1 +1,0 @@
-static UINT drdynvc_server_stop ( DrdynvcServerContext * context ) { UINT error ; SetEvent ( context -> priv -> StopEvent ) ; if ( WaitForSingleObject ( context -> priv -> Thread , INFINITE ) == WAIT_FAILED ) { error = GetLastError ( ) ; WLog_ERR ( TAG , "WaitForSingleObject failed with error %" PRIu32 "!" , error ) ; return error ; } return CHANNEL_RC_OK ; } 

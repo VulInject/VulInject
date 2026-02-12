@@ -1,0 +1,1 @@
+void esp8266_board_writeString ( uint8 * buffer , size_t length ) { assert ( length == 0 || buffer != NULL ) ; int i ; for ( i = 0 ; i < length ; i ++ ) { os_printf ( "%c" , buffer [ i ] ) ; } } 

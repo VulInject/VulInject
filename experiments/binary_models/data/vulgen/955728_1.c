@@ -1,1 +1,0 @@
-DECLARE_INSTANCE_CHECKER ( , , ) PXBBus { char bus_path [ 8 ] ; } 

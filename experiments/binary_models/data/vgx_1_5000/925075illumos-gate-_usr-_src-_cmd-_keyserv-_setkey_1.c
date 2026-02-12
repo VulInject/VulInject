@@ -1,0 +1,1 @@
+static int storedeskeyarray ( deskeyarray * dst , deskeyarray * src ) { deskeyarray * tmp ; if ( ( tmp = cpydeskeyarray ( src ) ) == NULL ) { return ( 0 ) ; } * dst = * tmp ; debug ( KEYSERV_DEBUG0 , ( "storedeskeyarray ret %d %x" , dst -> deskeyarray_len , dst -> deskeyarray_val ) ) ; return ( 1 ) ; } 

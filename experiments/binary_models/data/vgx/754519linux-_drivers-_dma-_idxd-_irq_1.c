@@ -1,1 +1,0 @@
-irqreturn_t idxd_wq_thread ( int irq , void * data ) { struct idxd_irq_entry * irq_entry = data ; irq_process_work_list ( irq_entry ) ; irq_process_pending_llist ( irq_entry , NULL ) ; return IRQ_HANDLED ; } 

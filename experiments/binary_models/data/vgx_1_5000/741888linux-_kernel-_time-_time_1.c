@@ -1,0 +1,1 @@
+SYSCALL_DEFINE2 ( , , , , ) { if ( likely ( tv != NULL ) ) { struct timespec64 ts ; ktime_get_real_ts64 ( & ts ) ; } if ( unlikely ( tz != NULL ) ) { if ( copy_to_user ( tz , & sys_tz , sizeof ( sys_tz ) ) ) { return - EFAULT ; } } return 0 ; } 

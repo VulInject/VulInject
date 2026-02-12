@@ -1,0 +1,1 @@
+static int krb5int_ucstrncmp ( const krb5_unicode * u1 , const krb5_unicode * u2 , size_t n ) { for ( ; 0 < n ; ++ u1 , ++ u2 , -- n ) { if ( * u1 != * u2 ) { return * u1 < * u2 ?- 1 : + 1 ; } } return 0 ; } 

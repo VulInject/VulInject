@@ -1,1 +1,0 @@
-static int null_filter_frame ( AVFilterLink * link , AVFrame * frame ) { return 0 ; } static const AVFilterPad avfilter_asink_anullsink_inputs [ ] { { . name = "default" . type = AVMEDIA_TYPE_AUDIO . filter_frame = null_filter_frame } } ; ; 

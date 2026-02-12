@@ -1,0 +1,1 @@
+extern int bi_load ( char * , vm_offset_t * , vm_offset_t * ) static int __elfN arm_load ( char * filename , u_int64_t dest , struct preloaded_file * * result ) { int r ; r = __elfN ( loadfile ) ( filename , dest , result ) ; return ( 0 ) ; } 

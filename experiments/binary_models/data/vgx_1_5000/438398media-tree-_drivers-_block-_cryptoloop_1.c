@@ -1,0 +1,1 @@
+static int cryptoloop_release ( struct loop_device * lo ) { struct crypto_skcipher * tfm = lo -> key_data ; if ( tfm != NULL ) { crypto_free_skcipher ( tfm ) ; return 0 ; } printk ( KERN_ERR "cryptoloop_release(): tfm == NULL?\n" ) ; return - EINVAL ; } 

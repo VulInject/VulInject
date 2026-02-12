@@ -1,1 +1,0 @@
-static struct History * get_history ( enum HistoryClass hclass ) { if ( ( hclass >= HC_MAX ) || ( c_history == 0 ) ) { return NULL ; } struct History * hist = & Histories [ hclass ] ; return hist -> hist ?hist : NULL ; } 

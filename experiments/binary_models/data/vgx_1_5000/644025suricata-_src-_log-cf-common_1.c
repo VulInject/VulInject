@@ -1,0 +1,1 @@
+void LogCustomFormatNodeFree ( LogCustomFormatNode * node ) { SCFree ( node ) ; } 

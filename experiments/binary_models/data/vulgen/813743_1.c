@@ -1,1 +1,0 @@
-DSA * d2i_DSAPrivateKey_fp ( FILE * fp , DSA * * dsa ) { return ASN1_item_d2i_fp ( & DSAPrivateKey_it , fp ) ; } 

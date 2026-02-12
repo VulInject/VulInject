@@ -1,0 +1,1 @@
+static char pin_name [ MAX_PIN_NAME_LEN ] __section ( ) ; static const char * const msm_pinctrl_pins [ ] { "SDC1_CLK" "SDC1_CMD" "SDC1_DATA" "SDC2_CLK" "SDC2_CMD" "SDC2_DATA" "QDSD_CLK" "QDSD_CMD" "QDSD_DATA0" "QDSD_DATA1" "QDSD_DATA2" "QDSD_DATA3" } ; ; 

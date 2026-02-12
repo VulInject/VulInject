@@ -1,1 +1,0 @@
-unsigned did_run ; unsigned iters ; int sum ; 

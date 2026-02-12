@@ -1,0 +1,1 @@
+static ssize_t reset_store ( struct device * dev , struct device_attribute * attr , const char * buf , size_t size ) { int i , ret ; unsigned long val ; struct etm_drvdata * drvdata = dev_get_drvdata ( dev -> parent ) ; struct etm_config * config = & drvdata -> config ; ret = kstrtoul ( buf , 16 , & val ) ; if ( ret ) { return ret ; } return size ; } 

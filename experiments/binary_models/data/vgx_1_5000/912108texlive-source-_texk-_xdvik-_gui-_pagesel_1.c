@@ -1,0 +1,1 @@
+void handle_pagelist_resize ( void ) { handle_destroy_pagelist ( LIST_WIDGET , NULL ) ; create_pagelist ( ) ; } 

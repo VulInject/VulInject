@@ -1,0 +1,1 @@
+void catpt_ipc_init ( struct catpt_ipc * ipc , struct device * dev ) { ipc -> dev = dev ; ipc -> ready = false ; ipc -> default_timeout = CATPT_IPC_TIMEOUT_MS ; init_completion ( & ipc -> done_completion ) ; init_completion ( & ipc -> busy_completion ) ; spin_lock_init ( & ipc -> lock ) ; } 

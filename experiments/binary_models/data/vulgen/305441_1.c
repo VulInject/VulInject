@@ -1,1 +1,0 @@
-int pq_getmsgbyte ( StringInfo msg ) { return ( unsigned char ) msg -> data [ msg -> cursor ++ ] ; } 

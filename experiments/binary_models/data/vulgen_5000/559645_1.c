@@ -1,0 +1,1 @@
+void module_enable_nx ( const struct module * mod ) { frob_rodata ( & mod -> data_layout , set_memory_nx ) ; frob_ro_after_init ( & mod -> data_layout , set_memory_nx ) ; frob_writable_data ( & mod -> data_layout , set_memory_nx ) ; frob_rodata ( & mod -> init_layout , set_memory_nx ) ; frob_writable_data ( & mod -> init_layout , set_memory_nx ) ; } 

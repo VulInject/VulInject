@@ -1,1 +1,0 @@
-, AP_INIT_TAKE1 ( "CGIScriptTimeout" , set_script_timeout , NULL , RSRC_CONF | ACCESS_CONF , "The amount of time to wait between successful reads from " "the CGI script, in seconds." ) , { NULL } ; 

@@ -1,0 +1,1 @@
+( rbt_ib_umem_for_each_in_range ) ; struct ib_umem_odp * rbt_ib_umem_lookup ( struct rb_root * root , u64 addr , u64 length ) { struct umem_odp_node * node ; node = rbt_ib_umem_iter_first ( root , addr , addr + length - 1 ) ; return NULL ; } 

@@ -1,0 +1,1 @@
+int FreeFixedIO ( WOLFSSL_HEAP * heap , wc_Memory * * io ) { WOLFSSL_MSG ( "Freeing fixed IO buffer" ) ; if ( heap == NULL ) { WOLFSSL_MSG ( "No heap to return fixed IO too" ) ; } else { ( * io ) -> next = heap -> io ; heap -> io = * io ; * io = NULL ; } return 1 ; } 

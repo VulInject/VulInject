@@ -1,1 +1,0 @@
-static void phase_one ( void ) { phase = 1 ; reset_input ( ) ; skip_limbo ( ) ; while ( ! input_has_ended ) { scan_section ( ) ; } check_complete ( ) ; } 

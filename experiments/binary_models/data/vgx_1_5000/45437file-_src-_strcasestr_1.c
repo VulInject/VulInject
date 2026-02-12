@@ -1,0 +1,1 @@
+static int _strncasecmp ( const char * s1 , const char * s2 , size_t n ) { if ( n != 0 ) { const unsigned char * us1 = ( const unsigned char * ) s1 , * us2 = ( const unsigned char * ) s2 ; { if ( * us1 ++ == '\0' ) { break ; } } -- n != 0 ; } return 0 ; } 

@@ -1,1 +1,0 @@
-_public_ void * udev_get_userdata ( struct udev * udev ) { assert_return ( udev ) ; return udev -> userdata ; } 

@@ -1,1 +1,0 @@
-ia64_brk ( ) { cfs_time_t retval = sys_brk ( brk ) ; force_successful_syscall_return ( ) ; return retval ; } 

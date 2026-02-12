@@ -1,1 +1,0 @@
-static int talk_to_otherend ( struct xenbus_device * dev ) { struct xenbus_driver * drv = to_xenbus_driver ( dev -> dev . driver ) ; free_otherend_details ( dev ) ; return drv -> read_otherend_details ( dev ) ; } 

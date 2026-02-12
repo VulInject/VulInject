@@ -1,0 +1,1 @@
+long cscf_get_content_length ( struct sip_msg * msg ) { int cl = 0 ; if ( parse_headers ( msg , HDR_CONTENTLENGTH_F , 0 ) != - 1 && msg -> content_length && msg -> content_length -> parsed ) { cl = get_content_length ( msg ) ; } return cl ; } 

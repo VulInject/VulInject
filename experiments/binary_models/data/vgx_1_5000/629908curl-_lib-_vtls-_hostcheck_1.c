@@ -1,0 +1,1 @@
+bool Curl_cert_hostcheck ( const char * match , size_t matchlen , const char * hostname , size_t hostlen ) { return FALSE ; } 

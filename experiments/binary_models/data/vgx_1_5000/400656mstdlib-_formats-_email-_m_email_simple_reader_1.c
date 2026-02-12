@@ -1,0 +1,1 @@
+static void M_email_simple_read_destroy ( M_email_simple_read_t * simple ) { if ( simple == NULL ) { return ; } M_buf_cancel ( simple -> collector ) ; M_free ( simple ) ; } 

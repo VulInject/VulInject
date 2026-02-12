@@ -1,1 +1,0 @@
-void multiorder_checks ( void ) { multiorder_iteration ( & array ) ; multiorder_tagged_iteration ( & array ) ; multiorder_iteration_race ( & array ) ; } 

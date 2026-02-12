@@ -1,1 +1,0 @@
-static int twl6030_gpadc_remove ( struct platform_device * pdev ) { struct iio_dev * indio_dev = platform_get_drvdata ( pdev ) ; iio_device_unregister ( indio_dev ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static int atmio16d_dio_insn_bits ( struct comedi_device * dev , struct comedi_subdevice * s , struct comedi_insn * insn , unsigned int * data ) { data [ 1 ] = inw ( dev -> iobase + MIO_16_DIG_IN_REG ) ; return insn -> n ; } 

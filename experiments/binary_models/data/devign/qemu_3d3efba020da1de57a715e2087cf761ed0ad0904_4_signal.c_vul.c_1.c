@@ -1,1 +1,0 @@
-static void FUN1(const VAR1 *VAR2) { FUN2(VAR3, VAR2, NULL); }

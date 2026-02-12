@@ -1,0 +1,1 @@
+av_cold void ff_mpadsp_init_ppc ( MPADSPContext * s ) { if ( ! PPC_ALTIVEC ( av_get_cpu_flags ( ) ) ) { return ; } } 

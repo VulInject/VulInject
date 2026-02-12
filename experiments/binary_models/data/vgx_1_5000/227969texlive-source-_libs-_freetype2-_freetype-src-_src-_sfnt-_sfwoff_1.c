@@ -1,0 +1,1 @@
+TT_Face face { FT_Memory memory = stream -> memory ; FT_Error error = FT_Err_Ok ; WOFF_HeaderRec woff ; WOFF_Table tables = NULL ; WOFF_Table * indices ; FT_ULong woff_offset ; } ; 

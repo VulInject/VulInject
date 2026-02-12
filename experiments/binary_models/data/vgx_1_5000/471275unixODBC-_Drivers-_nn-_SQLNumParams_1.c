@@ -1,0 +1,1 @@
+RETCODE SQL_API SQLNumParams ( HSTMT hstmt , SWORD * pcpar ) { stmt_t * pstmt = hstmt ; UNSET_ERROR ( pstmt -> herr , NULL ) ; if ( pcpar ) { * pcpar = nnsql_getparnum ( ( ( stmt_t * ) hstmt ) -> yystmt ) ; } return SQL_SUCCESS ; } 

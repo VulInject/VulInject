@@ -1,1 +1,0 @@
-static unsigned long FUN1 ( void ) { if ( ! ( VAR1 -> VAR2 & VAR3 ) ) { return 0 ; } return VAR4 << VAR5 ; }

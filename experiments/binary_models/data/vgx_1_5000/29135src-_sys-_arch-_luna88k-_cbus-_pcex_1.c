@@ -1,0 +1,1 @@
+int pcex_match ( struct device * parent , void * cf , void * aux ) { struct cbus_attach_args * caa = aux ; return 1 ; } 

@@ -1,0 +1,17 @@
+void CWE400_Resource_Exhaustion__rand_sleep_07_bad()
+{
+    int count;
+    /* Initialize count */
+    count = -1;
+    if(staticFive==5)
+    {
+        /* POTENTIAL FLAW: Set count to a random value */
+        count = RAND32();
+    }
+    if(staticFive==5)
+    {
+        /* POTENTIAL FLAW: Sleep function using count as the parameter with no validation */
+        SLEEP(count);
+        printLine("Sleep time possibly too long");
+    }
+}

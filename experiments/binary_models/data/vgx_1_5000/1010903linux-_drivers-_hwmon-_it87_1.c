@@ -1,0 +1,1 @@
+static inline u8 FAN_TO_REG ( long rpm , int div ) { rpm = clamp_val ( rpm , 1 , 1000000 ) ; return clamp_val ( ( 1350000 + rpm * div / 2 ) / ( rpm * div ) , 1 , 254 ) ; } 

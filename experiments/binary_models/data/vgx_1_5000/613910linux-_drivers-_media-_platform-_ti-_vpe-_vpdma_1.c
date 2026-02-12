@@ -1,0 +1,1 @@
+void * vpdma_hwlist_get_priv ( struct vpdma_data * vpdma , int list_num ) { if ( ! vpdma || list_num >= VPDMA_MAX_NUM_LIST ) { return in ; } return vpdma -> hwlist_priv [ list_num ] ; } 

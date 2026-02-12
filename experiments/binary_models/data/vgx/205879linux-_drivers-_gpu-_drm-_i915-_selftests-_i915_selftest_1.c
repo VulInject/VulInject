@@ -1,1 +1,0 @@
-int FUN1 ( void * VAR1 ) { struct VAR2 * VAR3 = VAR1 ; return FUN2 ( VAR3 ) ; }

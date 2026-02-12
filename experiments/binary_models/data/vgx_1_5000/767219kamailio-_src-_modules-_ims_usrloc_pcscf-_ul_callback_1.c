@@ -1,0 +1,1 @@
+void destroy_ul_callbacks_list ( struct ul_callback * cb ) { struct ul_callback * cb_t ; while ( cb ) { cb_t = cb ; cb = cb -> next ; } } 

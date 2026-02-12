@@ -1,0 +1,1 @@
+static struct Connection * alloc_connection ( void ) { struct Connection * con = connectionFreeList ; if ( ! con ) { con = ( Connection * ) MyMalloc ( sizeof ( Connection ) ) ; connections . alloc ++ ; } else { connectionFreeList = con_next ( con ) ; } connections . inuse ++ ; timer_init ( & ( con_proc ( con ) ) ) ; return con ; } 

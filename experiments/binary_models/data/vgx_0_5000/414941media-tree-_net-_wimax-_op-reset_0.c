@@ -1,0 +1,22 @@
+int wimax_gnl_doit_reset(struct sk_buff *skb, struct genl_info *info)
+{
+int result, ifindex;
+struct wimax_dev *wimax_dev;
+
+d_fnstart(3, NULL, "(skb %p info %p)\n", skb, info);
+result = -ENODEV;
+if (info->attrs[WIMAX_GNL_RESET_IFIDX] == NULL) {
+pr_err("WIMAX_GNL_OP_RFKILL: can't find IFIDX attribute\n");
+goto error_no_wimax_dev;
+}
+ifindex = nla_get_u32(info->attrs[WIMAX_GNL_RESET_IFIDX]);
+wimax_dev = wimax_dev_get_by_genl_info(info, ifindex);
+if (wimax_dev == NULL)
+goto error_no_wimax_dev;
+
+result = wimax_reset(wimax_dev);
+dev_put(wimax_dev->net_dev);
+error_no_wimax_dev:
+d_fnend(3, NULL, "(skb %p info %p) = %d\n", skb, info, result);
+return result;
+}

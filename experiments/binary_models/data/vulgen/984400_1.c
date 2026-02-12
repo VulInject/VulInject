@@ -1,1 +1,0 @@
-static unsigned long tegra210_input_freq [ ] { [ 5 ] = 38400000 [ 8 ] = 12000000 } ; ; 

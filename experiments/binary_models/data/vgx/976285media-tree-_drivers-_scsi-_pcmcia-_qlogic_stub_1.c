@@ -1,1 +1,0 @@
-static void qlogic_detach ( struct pcmcia_device * link ) { dev_dbg ( & link -> dev , "qlogic_detach\n" ) ; kfree ( link -> priv ) ; } 

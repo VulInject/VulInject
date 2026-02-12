@@ -1,0 +1,1 @@
+static void fsl_ssi_shutdown ( struct snd_pcm_substream * substream , struct snd_soc_dai * dai ) { struct snd_soc_pcm_runtime * rtd = substream -> private_data ; struct fsl_ssi_private * ssi_private = snd_soc_dai_get_drvdata ( rtd -> cpu_dai ) ; clk_disable_unprepare ( ssi_private -> clk , NULL ) ; } 

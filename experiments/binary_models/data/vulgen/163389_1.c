@@ -1,1 +1,0 @@
-static void vmem_seg_destroy ( vmem_t * vmp , vmem_seg_t * vsp ) { ASSERT ( vsp -> vs_type != VMEM_ROTOR ) ; vmem_putseg ( vmp , vsp ) ; } 

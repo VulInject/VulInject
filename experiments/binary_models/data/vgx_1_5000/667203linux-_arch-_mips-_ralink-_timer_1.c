@@ -1,0 +1,1 @@
+rt_timer { struct device * dev ; void __iomem * membase ; int irq ; unsigned long timer_freq ; cfs_time_t timer_div ; } 

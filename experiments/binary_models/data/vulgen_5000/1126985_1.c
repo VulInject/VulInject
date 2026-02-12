@@ -1,0 +1,1 @@
+uint32_t __ro_after_init xen_start_flags ; EXPORT_SYMBOL ( xen_start_flags ) ; struct shared_info * HYPERVISOR_shared_info = & xen_dummy_shared_info ; static int xen_cpu_up_online ( unsigned int cpu ) { return 0 ; } 

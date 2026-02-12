@@ -1,0 +1,1 @@
+sh64_elf64_merge_symbol_attribute ( , , , ) { if ( isym -> st_other != 0 && dynamic ) { int other ; other = ( definition ?isym -> st_other : h -> other ) ; other &= ~ ELF_ST_VISIBILITY ( - 1 ) ; h -> other = other | ELF_ST_VISIBILITY ( h -> other ) ; } return ; } 

@@ -1,0 +1,1 @@
+static void __exit acpi_ac_exit ( void ) { acpi_bus_unregister_driver ( & acpi_ac_driver ) ; acpi_unlock_ac_dir ( acpi_ac_dir , NULL ) ; } 

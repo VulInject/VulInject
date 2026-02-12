@@ -1,0 +1,1 @@
+uint32_t vid ; uint16_t caps ; void * codec_init ( ac97_t * ) void * codec_reset ( ac97_t * ) list_t ctrls ; int inputs ; 

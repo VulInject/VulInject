@@ -1,0 +1,1 @@
+static int thunder_ecam_config_write ( struct pci_bus * bus , unsigned int devfn , int where , int size , u32 val ) { return pci_generic_config_write ( bus , devfn , where , size , val ) ; } 

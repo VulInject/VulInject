@@ -1,0 +1,1 @@
+static const struct intel_renderstate_rodata * render_state_get_rodata ( const struct intel_engine_cs * engine ) { switch ( GRAPHICS_VER ( engine -> i915 ) ) { case 6 : return & gen6_null_state ; case 7 : return & gen7_null_state ; case 8 : return & gen8_null_state ; case 9 : return & gen9_null_state ; } return NULL ; } 

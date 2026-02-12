@@ -1,0 +1,1 @@
+void visl_debugfs_clear_bitstream ( struct visl_dev * dev ) { struct visl_blob * blob ; struct visl_blob * tmp ; mutex_lock ( & dev -> bitstream_lock ) ; list_for_each_entry_safe ( , , , ) { list_del ( & blob -> list ) ; debugfs_remove ( blob -> dentry ) ; vfree ( blob -> blob . data ) ; kfree ( blob ) ; } unlock mutex_unlock ( & dev -> bitstream_lock ) ; } 

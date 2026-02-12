@@ -1,1 +1,0 @@
-static irqreturn_t gpio_poll_timer_interrupt ( int irq , void * dev_id ) { if ( gpio_some_alarms ) { return IRQ_HANDLED ; } return IRQ_NONE ; } 

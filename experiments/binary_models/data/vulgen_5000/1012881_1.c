@@ -1,0 +1,1 @@
+static void dell_wmi_descriptor_remove ( struct wmi_device * wdev ) { struct descriptor_priv * priv = dev_get_drvdata ( & wdev -> dev ) ; mutex_lock ( & list_mutex ) ; list_del ( & priv -> list ) ; } static const struct wmi_device_id dell_wmi_descriptor_id_table [ ] { { . guid_string = DELL_WMI_DESCRIPTOR_GUID } { } } ; ; 

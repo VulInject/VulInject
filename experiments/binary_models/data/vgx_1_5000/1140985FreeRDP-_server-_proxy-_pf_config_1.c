@@ -1,0 +1,1 @@
+static BOOL config_plugin_unload ( proxyPlugin * plugin ) { WINPR_ASSERT ( plugin ) ; if ( plugin ) { plugin -> custom = NULL ; } return TRUE ; } 

@@ -1,0 +1,1 @@
+hal_util_set_string_elem_from_file ( , , , , , , ) { gboolean res ; gchar * value ; if ( ( value = hal_util_grep_string_elem_from_file ( directory , file , linestart , elem , reuse ) ) == NULL ) { out } res = hal_device_property_set_string ( d , key , value ) ; out return res ; } 

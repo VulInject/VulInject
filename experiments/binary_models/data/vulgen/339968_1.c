@@ -1,1 +1,0 @@
-void minstrel_remove_sta_debugfs ( void * priv , void * priv_sta ) { struct minstrel_sta_info * mi = priv_sta ; debugfs_remove ( mi -> dbg_stats ) ; } 

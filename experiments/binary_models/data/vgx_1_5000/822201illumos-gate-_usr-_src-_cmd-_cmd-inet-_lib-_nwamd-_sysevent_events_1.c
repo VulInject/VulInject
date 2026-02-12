@@ -1,0 +1,1 @@
+void nwamd_sysevent_events_fini ( void ) { if ( sysevent_handle != NULL ) { nwamd_escalate ( ) ; sysevent_unbind_handle ( sysevent_handle , NULL ) ; nwamd_deescalate ( ) ; } sysevent_handle = NULL ; } 

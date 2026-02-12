@@ -1,0 +1,1 @@
+int ucycom_detach ( struct device * self , int flags ) { struct ucycom_softc * sc = ( ucycom_softc * ) self ; DPRINTF ( ( "ucycom_detach: sc=%p flags=%d\n" , sc , flags ) ) ; if ( sc -> sc_subdev != NULL ) { config_detach ( sc -> sc_subdev , flags ) ; sc -> sc_subdev = NULL ; } if ( sc -> sc_hdev . sc_state & UHIDEV_OPEN ) { uhidev_close ( 0 ) ; } return ( 0 ) ; } 

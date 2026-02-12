@@ -1,0 +1,1 @@
+static int ld9040_clear_error ( struct ld9040 * ctx ) { int ret = ctx -> error ; return ret ; } 

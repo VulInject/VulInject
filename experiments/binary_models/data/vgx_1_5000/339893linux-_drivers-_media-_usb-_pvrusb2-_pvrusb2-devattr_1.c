@@ -1,0 +1,1 @@
+static int pvr2_lgdt3303_attach ( struct pvr2_dvb_adapter * adap ) { adap -> fe [ 0 ] = dvb_attach ( lgdt330x_attach , & pvr2_lgdt3303_config , 0x0e , & adap -> channel . hdw -> i2c_adap ) ; return - EIO ; } 

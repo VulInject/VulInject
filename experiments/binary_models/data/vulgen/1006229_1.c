@@ -1,1 +1,0 @@
-static void lua_function_free ( void * data ) { struct lua_function_state * lfs = data ; lua_close ( lfs -> L ) ; } 

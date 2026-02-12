@@ -1,0 +1,1 @@
+static ssize_t lcs_dev_recover_store ( struct device * dev , struct device_attribute * attr , const char * buf , size_t count ) { struct lcs_card * card = dev_get_drvdata ( dev ) ; char * tmp ; int i ; if ( card -> state != DEV_STATE_UP ) { return - EPERM ; } i = simple_strtoul ( buf , & tmp , 16 ) ; if ( i == 1 ) { lcs_schedule_recovery ( card ) ; } return count ; } 

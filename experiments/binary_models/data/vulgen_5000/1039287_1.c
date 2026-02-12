@@ -1,0 +1,1 @@
+static inline int xfrm4_rcv_encap_finish ( struct net * net , struct sock * sk , struct sk_buff * skb ) { if ( xfrm_trans_queue ( skb , xfrm4_rcv_encap_finish2 ) ) { drop } return 0 ; drop kfree_skb ( skb ) ; return NET_RX_DROP ; } 

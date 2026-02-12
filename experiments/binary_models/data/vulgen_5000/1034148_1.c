@@ -1,0 +1,1 @@
+extern void __chk_fail ( void ) __attribute__ ( ( __noreturn__ ) ) ; char * __strcpy_chk ( char * __restrict__ dest , const char * __restrict__ src , size_t slen ) { size_t len = strlen ( src ) ; return memcpy ( dest , src , len + 1 ) ; } 

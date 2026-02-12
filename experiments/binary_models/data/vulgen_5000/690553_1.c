@@ -1,0 +1,1 @@
+static DEFINE_MUTEX ( vsec_ida_lock ) ; static void intel_vsec_dev_release ( struct device * dev ) { struct intel_vsec_device * intel_vsec_dev = dev_to_ivdev ( dev ) ; mutex_lock ( & vsec_ida_lock ) ; ida_free ( intel_vsec_dev -> ida , intel_vsec_dev -> auxdev . id ) ; kfree ( intel_vsec_dev -> resource ) ; kfree ( intel_vsec_dev ) ; } 

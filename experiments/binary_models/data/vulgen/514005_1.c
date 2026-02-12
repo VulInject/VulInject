@@ -1,1 +1,0 @@
-. end = IXP4XX_UART2_BASE_PHYS + 0x0fff , . flags IORESOURCE_MEM , ; 

@@ -1,0 +1,1 @@
+PHP_MINIT_FUNCTION ( ) { using_history ( ) ; ZVAL_UNDEF ( & _readline_completion ) ; ZVAL_UNDEF ( & _prepped_callback ) ; register_readline_symbols ( module_number , NULL ) ; return PHP_MINIT ( cli_readline ) ( INIT_FUNC_ARGS_PASSTHRU ) ; } 

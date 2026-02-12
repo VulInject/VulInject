@@ -1,0 +1,1 @@
+lua_longjmp { struct lua_longjmp * previous ; int b ; volatile int status ; } 

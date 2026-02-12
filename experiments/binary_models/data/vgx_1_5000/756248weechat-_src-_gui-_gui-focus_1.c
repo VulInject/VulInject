@@ -1,0 +1,1 @@
+gui_focus_buffer_localvar_map_cb ( , , , ) { struct t_hashtable * hashtable_focus ; char hash_key [ 512 ] ; ( void ) hashtable ; hashtable_focus = ( t_hashtable * ) data ; if ( hashtable_focus && key && value ) { sprintf ( hash_key , "_buffer_localvar_%s" , ( const char * ) key ) ; hashtable_set ( hashtable_focus , hash_key , ( const char * ) value ) ; } } 

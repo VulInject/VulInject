@@ -1,0 +1,1 @@
+void mt76_free_device ( struct mt76_dev * dev ) { mt76_worker_teardown ( & dev -> tx_worker ) ; if ( dev -> wq ) { destroy_workqueue ( dev -> wq ) ; dev -> wq = NULL ; } } 

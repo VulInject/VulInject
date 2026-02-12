@@ -1,1 +1,0 @@
-bar = ( char * ) malloc ( 10 ) ; bar [ 4 ] = 'a' ; memcpy ( foo , bar , 10 ) ; return 0 ; 

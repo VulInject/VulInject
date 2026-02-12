@@ -1,1 +1,0 @@
-static void dbsc_wait ( u16 reg ) { static const u32 dbsc3_0_base = DBSC3_0_BASE ; while ( ! ( readl ( dbsc3_0_base ) & BIT ( 0 ) ) ) { } } 

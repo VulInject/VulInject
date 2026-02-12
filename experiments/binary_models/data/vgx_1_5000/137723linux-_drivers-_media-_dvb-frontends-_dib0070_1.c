@@ -1,0 +1,1 @@
+static void dib0070_release ( struct dvb_frontend * fe ) { kfree ( fe -> tuner_priv ) ; } 

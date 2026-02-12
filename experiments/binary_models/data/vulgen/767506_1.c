@@ -1,1 +1,0 @@
-const char * tfs_get_string ( int value , const true_false_string * tfs ) { return value ?tfs -> true_string : tfs -> false_string ; } 

@@ -1,1 +1,0 @@
-MODULE_AUTHOR ( "Freescale Semiconductor, Inc." ) ; 

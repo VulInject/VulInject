@@ -1,0 +1,1 @@
+int intel_get_crtc_scanline ( struct intel_crtc * crtc ) { struct drm_i915_private * dev_priv = to_i915 ( crtc -> base . dev ) ; cfs_time_t irqflags ; int position ; spin_lock_irqsave ( & dev_priv -> uncore . lock , irqflags ) ; position = __intel_get_crtc_scanline ( crtc ) ; spin_unlock_irqrestore ( & dev_priv -> uncore . lock , irqflags ) ; return position ; } 

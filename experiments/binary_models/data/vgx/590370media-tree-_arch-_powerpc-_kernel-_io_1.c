@@ -1,1 +1,0 @@
-void FUN1 ( volatile u8 VAR1 * VAR2 , const void * VAR3 , long VAR4 ) { const VAR5 * VAR6 = VAR3 ; volatile { * VAR2 = * VAR6 ++ ; } -- VAR4 != 0 ; volatile }

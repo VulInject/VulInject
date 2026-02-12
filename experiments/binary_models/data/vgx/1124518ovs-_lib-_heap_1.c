@@ -1,1 +1,0 @@
-static bool float_up ( struct heap * , size_t i ) static void float_down ( struct heap * , size_t i ) static void float_up_or_down ( struct heap * , size_t i ) void heap_init ( struct heap * heap ) { heap -> n = 0 ; heap -> allocated = 0 ; } 

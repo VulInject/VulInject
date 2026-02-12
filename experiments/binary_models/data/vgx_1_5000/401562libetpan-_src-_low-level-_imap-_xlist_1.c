@@ -1,0 +1,1 @@
+static void mailimap_xlist_extension_data_free ( struct mailimap_extension_data * ext_data ) { if ( ext_data -> ext_data != NULL ) { mailimap_mailbox_list_free ( ( mailimap_mailbox_list * ) ext_data -> ext_data ) ; } } 

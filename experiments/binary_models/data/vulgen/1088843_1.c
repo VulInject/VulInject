@@ -1,1 +1,0 @@
-add_dwarf_attr ( , ) dw_die_ref die ; dw_attr_ref attr ; { if ( die != NULL && attr != NULL ) { die -> die_attr = attr ; } } 

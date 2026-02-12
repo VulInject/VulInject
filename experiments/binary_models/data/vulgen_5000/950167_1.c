@@ -1,0 +1,1 @@
+static int f2fs_file_mmap ( struct file * file , struct vm_area_struct * vma ) { struct inode * inode = file_inode ( file ) ; if ( unlikely ( f2fs_cp_error ( F2FS_I_SB ( inode ) ) ) ) { return - EIO ; } file_accessed ( file ) ; vma -> vm_ops = & f2fs_file_vm_ops ; set_inode_flag ( inode , FI_MMAP_FILE ) ; return 0 ; } 

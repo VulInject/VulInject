@@ -1,0 +1,1 @@
+DECLARE_GLOBAL_DATA_PTR ; arb_ver { V1 = 1 , V2 , V3 , V5 = 5 } pmic_arb_channel { PMIC_ARB_CHANNEL_RW , PMIC_ARB_CHANNEL_OBS } msm_spmi_priv { phys_addr_t arb_chnl ; phys_addr_t spmi_core ; phys_addr_t spmi_obs ; int channel_map [ SPMI_MAX_SLAVES ] [ SPMI_MAX_PERIPH ] ; u32 arb_ver ; } 

@@ -1,0 +1,1 @@
+int board_early_init_f ( void ) { at91_periph_clk_enable ( ATMEL_ID_UHP , NULL ) ; return 0 ; } 

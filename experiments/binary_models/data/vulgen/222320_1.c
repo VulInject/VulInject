@@ -1,1 +1,0 @@
-static void check ( krb5_error_code code ) { if ( code != 0 ) { abort ( ) ; } } 

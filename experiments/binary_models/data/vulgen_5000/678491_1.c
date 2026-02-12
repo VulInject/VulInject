@@ -1,0 +1,1 @@
+static char * * buildreturnlist ( void ) { char * * list ; char * * pp ; struct dgrplist * pdgrpent ; if ( ( pp = list ) != NULL ) { for ( pdgrpent = dgrplistfirst . next ; pdgrpent ; pdgrpent = pdgrpent -> next ) { * pp ++ = pdgrpent -> name ; } * pp = NULL ; } return ( list ) ; } 

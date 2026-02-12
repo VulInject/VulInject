@@ -1,0 +1,1 @@
+static s64 __percpu_counter_sum_mask ( struct percpu_counter * fbc , const struct cpumask * cpu_mask ) { s64 ret ; int cpu ; unsigned long flags ; raw_spin_lock_irqsave ( & fbc -> lock , flags ) ; ret = fbc -> count ; for_each_cpu ( , ) { ret += * pcount ; } raw_spin_unlock_irqrestore ( & fbc -> lock , flags ) ; return ret ; } 

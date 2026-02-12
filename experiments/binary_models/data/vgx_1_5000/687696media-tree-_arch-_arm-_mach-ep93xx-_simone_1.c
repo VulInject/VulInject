@@ -1,0 +1,1 @@
+static void simone_mmc_spi_exit ( struct device * dev , void * mmc ) { unsigned int gpio = MMC_CARD_DETECT_GPIO ; free_irq ( gpio_to_irq ( gpio ) , mmc ) ; } 

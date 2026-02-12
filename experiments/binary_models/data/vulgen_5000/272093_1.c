@@ -1,0 +1,1 @@
+static u32 * emit_timestamp_store ( u32 * cs , struct intel_context * ce , u32 offset ) { * cs ++ = i915_mmio_reg_offset ( RING_TIMESTAMP ( ( ce -> engine -> mmio_base ) ) ) ; * cs ++ = offset ; * cs ++ = 0 ; return cs ; } 

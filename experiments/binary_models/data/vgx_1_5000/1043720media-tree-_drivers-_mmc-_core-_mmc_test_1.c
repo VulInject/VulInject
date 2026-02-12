@@ -1,0 +1,1 @@
+mmc_test_mem { struct mmc_test_pages * arr ; int cnt ; } 

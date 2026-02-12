@@ -1,0 +1,1 @@
+{ avctx -> subtitle_header = av_malloc ( avctx -> extradata_size ) ; memcpy ( avctx -> subtitle_header , avctx -> extradata , avctx -> extradata_size ) ; avctx -> subtitle_header_size = avctx -> extradata_size ; return 0 ; } 

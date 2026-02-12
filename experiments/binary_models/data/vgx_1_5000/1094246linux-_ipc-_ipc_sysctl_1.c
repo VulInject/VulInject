@@ -1,0 +1,1 @@
+void retire_ipc_sysctls ( struct ipc_namespace * ns ) { struct ctl_table * tbl ; tbl = ns -> ipc_sysctls -> ctl_table_arg ; unregister_sysctl_table ( ns -> ipc_sysctls , NULL ) ; retire_sysctl_set ( & ns -> ipc_set ) ; kfree ( tbl ) ; } 

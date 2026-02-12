@@ -1,0 +1,1 @@
+QemuOpt * qemu_opt_find ( QemuOpts * opts , const char * name ) { QemuOpt * opt ; QTAILQ_FOREACH_REVERSE ( , , ) { return opt ; } return NULL ; } 

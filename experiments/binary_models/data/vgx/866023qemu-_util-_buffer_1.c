@@ -1,1 +1,0 @@
-void buffer_free ( Buffer * buffer ) { trace_buffer_free ( buffer -> name ?: "unnamed" , buffer -> capacity ) ; g_free ( buffer -> buffer ) ; buffer -> offset = 0 ; buffer -> capacity = 0 ; buffer -> buffer = NULL ; buffer -> name = NULL ; } 

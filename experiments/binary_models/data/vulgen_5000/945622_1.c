@@ -1,0 +1,1 @@
+void blake2s_init_param ( blake2s_state * S , const blake2s_param * P ) { const unsigned char * p = ( const unsigned char * ) ( P ) ; size_t i ; uint32 w ; for ( i = 0 ; i < 8 ; ++ i ) { memcpy ( & w , & p [ i * 4 ] , sizeof ( w ) ) ; S -> h [ i ] ^= w ; } S -> outlen = P -> digest_length ; } 

@@ -1,0 +1,1 @@
+enum usb_ssp_rate usb_get_maximum_ssp_rate ( struct device * dev ) { const char * maximum_speed ; int ret ; ret = device_property_read_string ( dev , "maximum-speed" , & maximum_speed ) ; ret = match_string ( ssp_rate , ARRAY_SIZE ( ssp_rate ) , maximum_speed ) ; return ( ret < 0 ) ?USB_SSP_GEN_UNKNOWN : ret ; } 

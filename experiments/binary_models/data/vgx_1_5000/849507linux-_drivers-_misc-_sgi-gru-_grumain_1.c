@@ -1,0 +1,1 @@
+static struct gru_thread_state * gru_find_current_gts_nolock ( struct gru_vma_data * vdata , int tsid ) { struct gru_thread_state * gts ; list_for_each_entry ( , , ) return NULL ; } 

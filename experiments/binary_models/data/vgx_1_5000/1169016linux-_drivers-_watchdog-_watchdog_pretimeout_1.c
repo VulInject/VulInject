@@ -1,0 +1,1 @@
+void watchdog_unregister_pretimeout ( struct watchdog_device * wdd ) { struct watchdog_pretimeout * p , * t ; if ( ! watchdog_have_pretimeout ( wdd ) ) { return ; } spin_lock_irq ( & pretimeout_lock ) ; wdd -> gov = NULL ; list_for_each_entry_safe ( , , , ) { if ( p -> wdd == wdd ) { list_del ( & p -> entry ) ; break ; } } spin_unlock_irq ( & pretimeout_lock ) ; } 

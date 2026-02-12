@@ -1,0 +1,1 @@
+static int vhost_test_release ( struct inode * inode , struct file * f ) { struct vhost_test * n = f -> private_data ; void * private ; vhost_test_stop ( n , & private ) ; vhost_test_flush ( n ) ; vhost_dev_stop ( & n -> dev ) ; kfree ( n -> dev . vqs ) ; kfree ( n ) ; return 0 ; } 

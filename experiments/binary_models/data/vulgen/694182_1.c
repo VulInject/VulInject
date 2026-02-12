@@ -1,1 +1,0 @@
-void virSecureErase ( void * ptr , size_t size ) { if ( ! ptr || size == 0 ) { return ; } memset ( ptr , 0 , size ) ; } 

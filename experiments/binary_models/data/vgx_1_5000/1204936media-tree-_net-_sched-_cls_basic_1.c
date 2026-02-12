@@ -1,0 +1,1 @@
+struct tcf_proto * tp ; struct list_head link ; int rcu ; 

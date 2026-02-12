@@ -1,0 +1,1 @@
+const char * color_debug_log_attrs ( int attrs ) { static char text [ 64 ] ; struct Mapping attr_names [ ] { { "\033[5mBLI\033[0m" A_BLINK } { "\033[1mBLD\033[0m" A_BOLD } { "\033[0mNOR\033[0m" A_NORMAL } { "\033[7mREV\033[0m" A_REVERSE } { "\033[1mSTD\033[0m" A_STANDOUT } { "\033[4mUND\033[0m" A_UNDERLINE } { NULL 0 } } ; ; int offset = 0 ; text [ 0 ] = '\0' ; return text ; } 

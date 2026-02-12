@@ -1,1 +1,0 @@
-static int designware_wdt_start ( struct udevice * dev , u64 timeout , ulong flags ) { struct designware_wdt_priv * priv = dev_get_priv ( dev ) ; designware_wdt_stop ( dev ) ; designware_wdt_settimeout ( priv -> base , priv -> clk_khz , timeout ) ; designware_wdt_enable ( priv -> base , NULL ) ; return designware_wdt_reset ( dev ) ; } 

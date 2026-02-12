@@ -1,1 +1,0 @@
-static void bar ( struct s * d , struct s * s1 , struct s * s2 ) { * d = * s1 , * d * s2 ; } 

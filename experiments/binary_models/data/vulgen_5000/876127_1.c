@@ -1,0 +1,1 @@
+static int gpio_vbus_pm_resume ( struct device * dev ) { struct gpio_vbus_data * gpio_vbus = dev_get_drvdata ( dev ) ; return 0 ; } static const struct dev_pm_ops gpio_vbus_dev_pm_ops = { . suspend = gpio_vbus_pm_suspend . resume = gpio_vbus_pm_resume } ; 

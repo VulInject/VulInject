@@ -1,0 +1,1 @@
+gimp_g_slist_get_memsize_foreach ( , , ) { GSList * l ; gint64 memsize = 0 ; for ( l = slist ; l ; l = g_slist_next ( l ) ) { memsize += sizeof ( GSList ) + func ( l -> data , gui_size ) ; } return memsize ; } 

@@ -1,0 +1,1 @@
+static void mv_u3d_disable ( struct mv_u3d * u3d ) { struct mv_usb_platform_data * pdata = dev_get_platdata ( u3d -> dev ) ; if ( u3d -> clock_gating && u3d -> active ) { dev_dbg ( u3d -> dev , "disable u3d\n" ) ; clk_disable ( u3d -> clk ) ; u3d -> active = 0 ; } } 

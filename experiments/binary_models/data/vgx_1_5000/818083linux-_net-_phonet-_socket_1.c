@@ -1,0 +1,1 @@
+void pn_sock_unbind_all_res ( struct sock * sk ) { unsigned int res , match = 0 ; mutex_lock ( & resource_mutex ) ; for ( res = 0 ; res < 256 ; res ++ ) { if ( pnres . sk [ res ] == sk ) { RCU_INIT_POINTER ( pnres . sk [ res ] ) ; match ++ ; } } mutex_unlock ( & resource_mutex ) ; while ( match > 0 ) { __sock_put ( sk ) ; match -- ; } } 

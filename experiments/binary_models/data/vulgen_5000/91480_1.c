@@ -1,0 +1,1 @@
+void pfi_xcommit ( void ) { struct pfi_kif * p , * gkif ; struct ifg_list * g ; struct ifnet * ifp ; size_t n ; RB_FOREACH ( , , ) { p -> pfik_flags = p -> pfik_flags_new ; n = strlen ( p -> pfik_name ) ; if ( ifp != NULL ) { TAILQ_FOREACH ( , , ) { gkif = ( pfi_kif * ) g -> ifgl_group -> ifg_pf_kif ; KASSERT ( gkif != NULL ) ; p -> pfik_flags |= gkif -> pfik_flags_new ; } } } } 

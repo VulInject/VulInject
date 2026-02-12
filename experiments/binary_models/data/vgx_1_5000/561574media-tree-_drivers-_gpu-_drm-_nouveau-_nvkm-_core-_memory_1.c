@@ -1,0 +1,1 @@
+int nvkm_memory_new ( struct nvkm_device * device , enum nvkm_memory_target target , u64 size , u32 align , bool zero , struct nvkm_memory * * pmemory ) { struct nvkm_instmem * imem = device -> imem ; struct nvkm_memory * memory ; int ret = - ENOSYS ; ret = nvkm_instobj_new ( imem , size , align , zero , & memory ) ; if ( ret ) { return ret ; } * pmemory = memory ; return 0 ; } 

@@ -1,1 +1,0 @@
-int FUN1 ( char * * VAR1 , const char * VAR2 ) { int VAR3 ; VAR3 = FUN2 ( VAR1 , VAR2 ) ; return ( VAR3 ) ; }

@@ -1,0 +1,1 @@
+int fuse_opt_add_opt ( char * * opts , const char * opt ) { int ret ; ret = add_opt ( opts , opt ) ; return ( ret ) ; } 

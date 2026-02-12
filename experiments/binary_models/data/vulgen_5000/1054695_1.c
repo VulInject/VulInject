@@ -1,0 +1,1 @@
+static int smu7_get_sclk_od ( struct pp_hwmgr * hwmgr ) { struct smu7_hwmgr * data = ( smu7_hwmgr * ) ( hwmgr -> backend ) ; struct smu7_single_dpm_table * sclk_table = & ( data -> dpm_table . sclk_table ) ; struct smu7_single_dpm_table * golden_sclk_table = & ( data -> golden_dpm_table . sclk_table ) ; int value ; return value ; } 

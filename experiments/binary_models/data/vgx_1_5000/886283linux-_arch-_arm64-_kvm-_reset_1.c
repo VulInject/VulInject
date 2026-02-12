@@ -1,0 +1,1 @@
+int kvm_arm_vcpu_finalize ( struct kvm_vcpu * vcpu , int feature ) { switch ( feature ) { case KVM_ARM_VCPU_SVE : if ( kvm_arm_vcpu_sve_finalized ( vcpu ) ) { return - EPERM ; } return kvm_vcpu_finalize_sve ( vcpu ) ; } return - EINVAL ; } 

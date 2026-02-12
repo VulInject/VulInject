@@ -1,0 +1,1 @@
+static int nvenc_push_context ( AVCodecContext * avctx ) { NvencContext * ctx = avctx -> priv_data ; NvencDynLoadFunctions * dl_fn = & ctx -> nvenc_dload_funcs ; return CHECK_CU ( dl_fn -> cuda_dl -> cuCtxPushCurrent ( ctx -> cu_context ) ) ; } 

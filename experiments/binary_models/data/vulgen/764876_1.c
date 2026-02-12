@@ -1,1 +1,0 @@
-static int openvzConnectGetVersion ( virConnectPtr conn , unsigned long * version ) { struct openvz_driver * driver = conn -> privateData ; * version = driver -> version ; return 0 ; } 

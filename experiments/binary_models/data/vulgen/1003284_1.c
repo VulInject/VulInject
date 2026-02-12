@@ -1,1 +1,0 @@
-int iobusmatch ( struct device * parent , void * match , void * aux ) { return ( 1 ) ; } 

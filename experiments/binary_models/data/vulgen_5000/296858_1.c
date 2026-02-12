@@ -1,0 +1,1 @@
+static int tegra_dp_hpd_plug ( struct tegra_dp_priv * dp ) { const int vdd_to_hpd_delay_ms = 200 ; u32 val ; ulong start ; start = get_timer ( 0 ) ; { val = tegra_dpaux_readl ( dp , DPAUX_DP_AUXSTAT ) ; udelay ( 100 ) ; } get_timer ( start ) < vdd_to_hpd_delay_ms ; return - EIO ; } 

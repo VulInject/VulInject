@@ -1,0 +1,1 @@
+PyObject * rpmarchive_Wrap ( PyTypeObject * subtype , rpmfiles files , rpmfi archive ) { rpmarchiveObject * s = ( rpmarchiveObject * ) subtype -> tp_alloc ( subtype , 0 ) ; s -> files = rpmfilesLink ( files ) ; s -> archive = archive ; return ( PyObject * ) s ; } 

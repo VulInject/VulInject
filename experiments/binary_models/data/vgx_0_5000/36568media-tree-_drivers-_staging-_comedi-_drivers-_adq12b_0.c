@@ -1,0 +1,35 @@
+static int adq12b_ai_insn_read(struct comedi_device *dev,
+struct comedi_subdevice *s,
+struct comedi_insn *insn,
+unsigned int *data)
+{
+struct adq12b_private *devpriv = dev->private;
+unsigned int chan = CR_CHAN(insn->chanspec);
+unsigned int range = CR_RANGE(insn->chanspec);
+unsigned int val;
+int ret;
+int i;
+
+
+val = ADQ12B_CTREG_RANGE(range) | ADQ12B_CTREG_CHAN(chan);
+if (val != devpriv->last_ctreg) {
+outb(val, dev->iobase + ADQ12B_CTREG);
+devpriv->last_ctreg = val;
+usleep_range(50, 100);	
+}
+
+val = inb(dev->iobase + ADQ12B_ADLOW);	
+
+for (i = 0; i < insn->n; i++) {
+ret = comedi_timeout(dev, s, insn, adq12b_ai_eoc, 0);
+if (ret)
+return ret;
+
+val = inb(dev->iobase + ADQ12B_ADHIG) << 8;
+val |= inb(dev->iobase + ADQ12B_ADLOW);	
+
+data[i] = val;
+}
+
+return insn->n;
+}

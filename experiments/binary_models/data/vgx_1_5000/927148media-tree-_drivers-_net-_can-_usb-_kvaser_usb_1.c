@@ -1,0 +1,1 @@
+static inline int kvaser_usb_send_msg ( const struct kvaser_usb * dev , struct kvaser_msg * msg ) { int actual_len ; return usb_bulk_msg ( dev -> udev , usb_sndbulkpipe ( dev -> udev , dev -> bulk_out -> bEndpointAddress ) , msg , msg -> len , & actual_len , USB_SEND_TIMEOUT ) ; } 

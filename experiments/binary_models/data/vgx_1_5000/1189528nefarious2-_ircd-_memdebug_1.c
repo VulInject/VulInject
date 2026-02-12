@@ -1,0 +1,1 @@
+void mem_dbg_initialise ( void ) { GC_find_leak = 1 ; GC_set_leak_handler ( dbg_memory_leaked , NULL ) ; } 

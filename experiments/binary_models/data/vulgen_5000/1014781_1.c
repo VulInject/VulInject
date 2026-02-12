@@ -1,0 +1,1 @@
+static int ocfs2_info_handle_blocksize ( struct inode * inode , struct ocfs2_info_request __user * req ) { struct ocfs2_info_blocksize oib ; if ( o2info_from_user ( oib , req ) ) { return - EFAULT ; } oib . ib_blocksize = inode -> i_sb -> s_blocksize ; o2info_set_request_filled ( & oib . ib_req ) ; return 0 ; } 

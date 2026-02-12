@@ -1,0 +1,1 @@
+* * * * Started 1 / 16 / 98 2 : 22 am * / unsigned long m68k_vmalloc_end ; EXPORT_SYMBOL ( m68k_vmalloc_end ) ; cfs_time_t pmeg_vaddr [ PMEGS_NUM ] ; unsigned char pmeg_alloc [ PMEGS_NUM ] ; unsigned char pmeg_ctx [ PMEGS_NUM ] ; static struct mm_struct * ctx_alloc [ CONTEXTS_NUM ] { [ 0 ] = ( mm_struct * ) 0xffffffff } ; ; 

@@ -1,0 +1,1 @@
+static int xpram_getgeo ( struct block_device * bdev , struct hd_geometry * geo ) { cfs_time_t size ; size = ( xpram_pages * 8 ) & ~ 0x3f ; geo -> cylinders = size >> 6 ; geo -> heads = 4 ; geo -> sectors = 16 ; geo -> start = 4 ; return 0 ; } 

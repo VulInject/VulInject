@@ -1,0 +1,1 @@
+tree_ssa_loop_init ( ) { current_loops = tree_loop_optimizer_init ( ) ; scev_initialize ( current_loops ) ; return 0 ; } 

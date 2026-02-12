@@ -1,1 +1,0 @@
-syscon_reboot_priv { struct regmap * regmap ; unsigned int offset ; int mask ; unsigned int value ; } 

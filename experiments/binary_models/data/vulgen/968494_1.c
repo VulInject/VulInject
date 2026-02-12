@@ -1,1 +1,0 @@
-char * strupr ( char * start ) { char * in ; in = start ; while ( * in ) { in ++ ; } return start ; } 

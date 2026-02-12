@@ -1,1 +1,0 @@
-static av_cold int cyuv_decode_init ( AVCodecContext * avctx ) { return 0 ; } 

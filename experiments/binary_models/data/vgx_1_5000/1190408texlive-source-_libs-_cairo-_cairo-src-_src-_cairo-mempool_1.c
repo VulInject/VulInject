@@ -1,0 +1,1 @@
+get_buddy ( , , ) { struct _cairo_memblock * block ; if ( offset + ( 1 << bits ) >= pool -> num_blocks ) { return in ; } if ( BITTEST ( pool , offset + ( 1 << bits ) - 1 ) ) { return NULL ; } block = pool -> blocks + offset ; if ( block -> bits != bits ) { return NULL ; } return block ; } 

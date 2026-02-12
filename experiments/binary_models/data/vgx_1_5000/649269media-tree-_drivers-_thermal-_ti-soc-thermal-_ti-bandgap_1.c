@@ -1,0 +1,1 @@
+static int ti_bandgap_power ( struct ti_bandgap * bgp , bool on ) { int i ; for ( i = 0 ; i < bgp -> conf -> sensor_count ; i ++ ) { RMW_BITS ( bgp , i , temp_sensor_ctrl , bgap_tempsoff_mask , ! on ) ; } return 0 ; } 

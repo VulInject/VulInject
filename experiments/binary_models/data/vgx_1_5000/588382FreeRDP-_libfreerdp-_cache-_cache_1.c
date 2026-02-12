@@ -1,0 +1,1 @@
+void cache_free ( rdpCache * cache ) { if ( cache != NULL ) { glyph_cache_free ( cache -> glyph ) ; brush_cache_free ( cache -> brush ) ; bitmap_cache_free ( cache -> bitmap ) ; offscreen_cache_free ( cache -> offscreen ) ; palette_cache_free ( cache -> palette ) ; nine_grid_cache_free ( cache -> nine_grid ) ; free ( cache ) ; } } 

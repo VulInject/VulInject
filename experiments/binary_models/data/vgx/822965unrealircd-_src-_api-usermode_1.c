@@ -1,1 +1,0 @@
-void remove_all_snomasks ( Client * client ) { client -> umodes &= ~ UMODE_SERVNOTICE ; } 

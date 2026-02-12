@@ -1,0 +1,1 @@
+static int psp_v11_0_wait_for_bootloader ( struct psp_context * psp ) { struct amdgpu_device * adev = psp -> adev ; int ret ; int retry_loop ; for ( retry_loop = 0 ; retry_loop < 10 ; retry_loop ++ ) { if ( ret == 0 ) { return 0 ; } } return ret ; } 

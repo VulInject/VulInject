@@ -1,1 +1,0 @@
-MODULE_DESCRIPTION ( "Synopsys DesignWare I2C bus slave adapter" ) ; 

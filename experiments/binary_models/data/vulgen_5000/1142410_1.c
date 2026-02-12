@@ -1,0 +1,1 @@
+static int misc_events_show ( struct seq_file * sf , void * v ) { struct misc_cg * cg = css_misc ( seq_css ( sf ) ) ; unsigned long events , i ; for ( i = 0 ; i < MISC_CG_RES_TYPES ; i ++ ) { events = atomic_long_read ( & cg -> res [ i ] . events ) ; } return 0 ; } 

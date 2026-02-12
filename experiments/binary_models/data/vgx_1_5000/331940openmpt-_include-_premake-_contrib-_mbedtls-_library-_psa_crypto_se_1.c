@@ -1,0 +1,1 @@
+psa_status_t psa_load_se_persistent_data ( const psa_se_drv_table_entry_t * driver ) { psa_status_t status ; psa_storage_uid_t uid ; size_t length ; status = psa_get_se_driver_its_file_uid ( driver , & uid ) ; return ( psa_its_get ( uid , 0 , ( uint32_t ) driver -> u . internal . persistent_data_size , driver -> u . internal . persistent_data , & length ) ) ; } 

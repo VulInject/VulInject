@@ -1,0 +1,1 @@
+int urng_match ( struct device * parent , void * match , void * aux ) { struct usb_attach_arg * uaa = aux ; if ( urng_lookup ( uaa -> vendor , uaa -> product ) != NULL ) { return ( UMATCH_VENDOR_PRODUCT ) ; } return ( UMATCH_NONE ) ; } 

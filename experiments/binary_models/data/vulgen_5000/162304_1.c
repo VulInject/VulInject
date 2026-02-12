@@ -1,0 +1,1 @@
+static int intel_display_commit_duplicated_state ( struct intel_atomic_state * state , struct drm_modeset_acquire_ctx * ctx ) { struct drm_i915_private * i915 = to_i915 ( state -> base . dev ) ; int ret ; ret = drm_atomic_helper_commit_duplicated_state ( & state -> base , ctx ) ; return ret ; } 

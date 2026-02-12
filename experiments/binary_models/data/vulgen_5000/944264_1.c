@@ -1,0 +1,1 @@
+static int history_def_first ( void * p , TYPE ( HistEvent ) * ev ) ( history_t * h = ( history_t * ) p , h -> cursor = h -> list . next , ( h -> cursor != & h -> list ) * ev = h -> cursor -> ev , { he_seterrev ( ev , _HE_FIRST_NOTFOUND ) return ; } return 0 ; ) ; 

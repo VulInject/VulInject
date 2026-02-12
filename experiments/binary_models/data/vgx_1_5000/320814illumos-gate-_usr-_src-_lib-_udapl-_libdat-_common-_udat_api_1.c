@@ -1,0 +1,1 @@
+DAT_RETURN dat_evd_enable ( IN DAT_EVD_HANDLE evd_handle ) { return ( DAT_EVD_ENABLE ( evd_handle ) ) ; } 

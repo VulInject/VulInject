@@ -1,1 +1,0 @@
-static void check_bitmap_set ( void ) { bitmap_set_case ( bitmap_set ) ; } 

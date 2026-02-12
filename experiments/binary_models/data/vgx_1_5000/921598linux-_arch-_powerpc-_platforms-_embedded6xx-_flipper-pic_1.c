@@ -1,0 +1,1 @@
+void __init flipper_pic_probe ( void ) { struct device_node * np ; np = of_find_compatible_node ( NULL , NULL , "nintendo,flipper-pic" ) ; BUG_ON ( ! np ) ; flipper_irq_host = flipper_pic_init ( np , NULL ) ; BUG_ON ( ! flipper_irq_host ) ; irq_set_default_host ( flipper_irq_host ) ; of_node_put ( np ) ; } 

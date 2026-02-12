@@ -1,0 +1,1 @@
+static snd_pcm_uframes_t snd_amd7930_capture_pointer ( struct snd_pcm_substream * substream ) { struct snd_amd7930 * amd = snd_pcm_substream_chip ( substream ) ; size_t ptr ; ptr = amd -> c_cur - amd -> c_orig ; return bytes_to_frames ( substream -> runtime , ptr ) ; } 

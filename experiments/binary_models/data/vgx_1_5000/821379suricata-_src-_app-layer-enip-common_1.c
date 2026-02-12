@@ -1,0 +1,1 @@
+static int ENIPExtractUint8 ( uint8_t * res , const uint8_t * input , uint16_t * offset , uint32_t input_len ) { if ( input_len < sizeof ( uint8_t ) || * offset > ( input_len - sizeof ( uint8_t ) ) ) { return 0 ; } * res = * ( input + * offset ) ; * offset += sizeof ( uint8_t ) ; return 1 ; } 

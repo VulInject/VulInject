@@ -1,0 +1,1 @@
+EXPORT_SYMBOL_GPL ( __xive_vm_h_ipi ) ; EXPORT_SYMBOL_GPL ( __xive_vm_h_cppr ) ; EXPORT_SYMBOL_GPL ( __xive_vm_h_eoi ) ; static unsigned long kvm_cma_resv_ratio = 5 ; static struct cma * kvm_cma ; static int __init early_parse_kvm_cma_resv ( char * p ) { pr_debug ( "%s(%s)\n" , __func__ , p ) ; return kstrtoul ( p , 0 , & kvm_cma_resv_ratio ) ; } 

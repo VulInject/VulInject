@@ -1,1 +1,0 @@
-void FUN1 ( unsigned char * VAR1 ) { int VAR2 ; VAR1 += 3 ; for ( VAR2 = 0 ; VAR2 < VAR3 . VAR4 ; VAR2 ++ , VAR1 += 4 ) { * VAR1 = VAR5 . VAR6 -> VAR7 . VAR8 [ 3 ] ; } }

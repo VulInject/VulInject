@@ -1,1 +1,0 @@
-struct VAR1 * FUN1 ( void ) { struct VAR1 * VAR2 = ( VAR1 * ) VAR3 ; if ( VAR2 -> VAR4 != VAR5 || VAR2 -> VAR6 != sizeof ( VAR1 ) ) { return VAR7 ; } return VAR2 ; }

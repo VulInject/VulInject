@@ -1,0 +1,1 @@
+psimode_truncation_operand ( , ) rtx op ; int mode ; { return ( general_operand ( op , mode ) && ( GET_CODE ( op ) != MEM || memory_address_p ( PSImode , XEXP ( op , 0 ) ) ) ) ; } 

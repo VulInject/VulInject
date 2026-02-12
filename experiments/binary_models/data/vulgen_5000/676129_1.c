@@ -1,0 +1,1 @@
+static void ged_evt_write ( void * opaque , hwaddr addr , int data , unsigned int size ) { } static const MemoryRegionOps ged_evt_ops = { . read = ged_evt_read . write = ged_evt_write . endianness = DEVICE_LITTLE_ENDIAN . valid = { . min_access_size = 4 . max_access_size = 4 } } ; 

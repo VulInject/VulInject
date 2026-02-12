@@ -1,0 +1,1 @@
+{ CHANNEL_SCAN_INDEX_PRESSURE , CHANNEL_SCAN_INDEX_TIMESTAMP } press_state { struct hid_sensor_hub_callbacks callbacks ; struct hid_sensor_common common_attributes ; struct hid_sensor_hub_attribute_info press_attr ; { int press_data ; u64 timestamp __aligned ( 8 ) ; } , scan int scale_pre_decml ; int scale_post_decml ; int scale_precision ; int value_offset ; s64 timestamp ; } 

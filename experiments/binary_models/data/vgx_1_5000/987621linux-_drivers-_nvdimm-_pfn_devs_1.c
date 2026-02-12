@@ -1,0 +1,1 @@
+static bool nd_supported_alignment ( unsigned long align ) { int i ; unsigned long supported [ MAX_NVDIMM_ALIGN ] { [ 0 ] = 0 } ; ; nd_pfn_supported_alignments ( supported ) ; for ( i = 0 ; supported [ i ] ; i ++ ) { if ( align == supported [ i ] ) { return true ; } } return false ; } 

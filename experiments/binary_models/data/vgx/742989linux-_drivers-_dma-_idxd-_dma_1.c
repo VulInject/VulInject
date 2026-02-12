@@ -1,1 +1,0 @@
-static void idxd_dma_release ( struct dma_device * device ) { struct idxd_dma_dev * idxd_dma = container_of ( device , idxd_dma_dev , dma ) ; } 

@@ -1,1 +1,0 @@
-static void destroy_inodecache ( void ) { rcu_barrier ( ) ; } 

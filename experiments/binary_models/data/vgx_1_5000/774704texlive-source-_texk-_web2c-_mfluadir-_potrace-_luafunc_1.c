@@ -1,0 +1,1 @@
+static void bm_free ( potrace_bitmap_t * bm ) { if ( bm != NULL ) { free ( bm -> map ) ; } } 

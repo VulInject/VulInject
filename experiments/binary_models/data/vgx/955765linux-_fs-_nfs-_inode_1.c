@@ -1,1 +1,0 @@
-static int nfs_net_init ( struct net * net ) { nfs_clients_init ( net , NULL ) ; return nfs_fs_proc_net_init ( net ) ; } 

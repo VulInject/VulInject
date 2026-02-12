@@ -1,0 +1,1 @@
+static dictEntry * dictGetNext ( const dictEntry * de ) { if ( entryIsKey ( de ) ) { return NULL ; } return de -> next ; } 

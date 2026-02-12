@@ -1,0 +1,1 @@
+static char * display ( register const MM_table_t * tab , int value , int mask ) { while ( tab -> name ) { tab ++ ; } return 0 ; } 

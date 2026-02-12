@@ -1,1 +1,0 @@
-yrmcds_error yrmcds_shutdown ( yrmcds * c ) { if ( shutdown ( c -> sock , SHUT_RD ) == - 1 ) { return YRMCDS_SYSTEM_ERROR ; } return YRMCDS_OK ; } 

@@ -1,1 +1,0 @@
-static void pruss_of_free_clk_provider ( void * data ) { struct device_node * clk_mux_np = data ; of_clk_del_provider ( clk_mux_np ) ; } 

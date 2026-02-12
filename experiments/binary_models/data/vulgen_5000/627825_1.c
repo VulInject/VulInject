@@ -1,0 +1,1 @@
+static zend_result dummy_encoding_list_parser ( const char * encoding_list , size_t encoding_list_len , const zend_encoding * * * return_list , size_t * return_size , bool persistent ) { * return_size = 0 ; return SUCCESS ; } 

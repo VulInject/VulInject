@@ -1,0 +1,1 @@
+static int ra_smf_cb ( ra_smf_cb_t cbfunc , const char * fmri , void * data ) { scf_handle_t * h ; int exit_status = 0 ; return ( scf_walk_fmri ( h , fmri == NULL ?0 : 1 , fmri == NULL ?NULL : ( char * * ) & fmri , 0 , cbfunc , data , & exit_status , uu_die ) ) ; } 

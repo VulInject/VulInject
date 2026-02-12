@@ -1,0 +1,1 @@
+bool MACbIsIntDisable ( struct vnt_private * priv ) { void __iomem * io_base = priv -> PortOffset ; return true ; } 

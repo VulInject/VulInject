@@ -1,0 +1,1 @@
+static bool serialize ( php_random_status * status , HashTable * data ) { php_random_status_state_combinedlcg * s = status -> state ; zval t ; for ( uint32_t i = 0 ; i < 2 ; i ++ ) { ZVAL_STR ( & t , php_random_bin2hex_le ( & s -> state [ i ] , sizeof ( uint32_t ) ) ) ; } return true ; } 

@@ -1,1 +1,0 @@
-volatile __u64 VAR1 = 0 ; FUN1 ( "" ) int FUN2 ( long VAR2 ) { VAR1 = 1 ; return VAR1 ; }

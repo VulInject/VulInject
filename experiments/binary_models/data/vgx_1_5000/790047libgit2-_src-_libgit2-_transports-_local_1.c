@@ -1,0 +1,1 @@
+static int local_capabilities ( unsigned int * capabilities , git_transport * transport ) { GIT_UNUSED ( transport , NULL ) ; * capabilities = GIT_REMOTE_CAPABILITY_TIP_OID | GIT_REMOTE_CAPABILITY_REACHABLE_OID ; return 0 ; } 

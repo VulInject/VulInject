@@ -1,0 +1,1 @@
+SYS_CALLBACK_ITEM * SysCallbackGet ( IN void * Key ) { SYS_CALLBACK_ITEM * pItem ; DbgOut ( "SysCallbackGet\n" ) ; ASSERT ( Me . Initialized == TRUE ) ; pItem = alloc_syscallback ( ) ; if ( ! pItem ) { return NULL ; } pItem -> Key = Key ; DbgOut ( "SysCallbackGet returns: %p Key %p\n" , pItem , Key ) ; return pItem ; } 

@@ -1,0 +1,1 @@
+void tem_write ( tem_vt_state_t tem_arg , uint8_t * buf , ssize_t len ) { struct tem_vt_state * tem = ( tem_vt_state * ) tem_arg ; tem_check_first_time ( tem ) ; tem_terminal_emulate ( tem , buf , len ) ; } 

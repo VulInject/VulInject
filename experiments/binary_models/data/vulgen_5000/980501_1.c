@@ -1,0 +1,1 @@
+static inline bool atheme_pbkdf2v2_parameters_sane ( const struct pbkdf2v2_dbentry * const restrict dbe ) { if ( dbe -> sl ( PBKDF2_SALTLEN_MIN || dbe -> sl ) PBKDF2_SALTLEN_MAX ) { ( void ) slog ( LG_ERROR , "%s: salt length '%zu' out of range" , MOWGLI_FUNC_NAME , dbe -> sl ) ; return false ; } return true ; } 

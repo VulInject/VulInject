@@ -1,0 +1,1 @@
+static void ami_int3 ( struct irq_desc * desc ) { unsigned short ints = amiga_custom . intreqr & amiga_custom . intenar ; if ( ints & IF_BLIT ) { amiga_custom . intreq = IF_BLIT ; generic_handle_irq ( IRQ_AMIGA_BLIT ) ; } if ( ints & IF_COPER ) { amiga_custom . intreq = IF_COPER ; generic_handle_irq ( IRQ_AMIGA_COPPER ) ; } } 

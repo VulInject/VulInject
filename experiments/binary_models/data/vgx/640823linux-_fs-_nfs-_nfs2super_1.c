@@ -1,1 +1,0 @@
-module_init ( init_nfs_v2 ) ; module_exit ( exit_nfs_v2 , NULL ) ; 

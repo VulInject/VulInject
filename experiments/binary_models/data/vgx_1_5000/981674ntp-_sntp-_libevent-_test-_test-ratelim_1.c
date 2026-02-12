@@ -1,0 +1,1 @@
+static void echo_eventcb ( struct bufferevent * bev , short what , void * ctx ) { if ( what & ( BEV_EVENT_EOF | BEV_EVENT_ERROR ) ) { -- n_echo_conns_open ; } } 

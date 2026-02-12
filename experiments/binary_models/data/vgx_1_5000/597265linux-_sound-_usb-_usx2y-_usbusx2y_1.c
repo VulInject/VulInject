@@ -1,0 +1,1 @@
+static void usx2y_unlinkseq ( struct snd_usx2y_async_seq * s ) { int i ; for ( i = 0 ; i < URBS_ASYNC_SEQ ; ++ i ) { if ( ! s -> urb [ i ] ) { continue ; } usb_kill_urb ( s -> urb [ i ] ) ; usb_free_urb ( s -> urb [ i ] ) ; s -> urb [ i ] = NULL ; } kfree ( s -> buffer ) ; } 

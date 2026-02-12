@@ -1,0 +1,1 @@
+static void ack_ioasic_irq ( struct irq_data * d ) { mask_ioasic_irq ( d ) ; } static struct irq_chip ioasic_irq_type = { . name = "IO-ASIC" . irq_ack = ack_ioasic_irq . irq_mask = mask_ioasic_irq . irq_mask_ack = ack_ioasic_irq . irq_unmask = unmask_ioasic_irq } ; 

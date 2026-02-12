@@ -1,0 +1,1 @@
+struct _GimpCanvasGridPrivate GimpCanvasGridPrivate _GimpCanvasGridPrivate { GimpGrid * grid ; int grid_style ; } 

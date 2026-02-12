@@ -1,0 +1,1 @@
+int netaddr_match ( int family , union nethostaddr * haddr , struct mbuf * nam ) { struct sockaddr_in * inetaddr ; switch ( family ) { case AF_INET : inetaddr = mtod ( nam , sockaddr_in * ) ; break ; default : break ; } return ( 0 ) ; } 

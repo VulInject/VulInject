@@ -1,0 +1,1 @@
+int board_early_init_f ( void ) { select_ldb_di_clock_source ( MXC_PLL5_CLK , NULL ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void compl_do_reset ( struct usb_ep * ep , struct usb_request * req ) { g_dnl_unregister ( ) ; do_reset ( 0 , 0 , NULL ) ; } 

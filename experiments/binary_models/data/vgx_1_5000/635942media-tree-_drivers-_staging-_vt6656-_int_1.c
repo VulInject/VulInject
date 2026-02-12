@@ -1,0 +1,1 @@
+void vnt_int_start_interrupt ( struct vnt_private * priv ) { cfs_time_t flags ; int status ; dev_dbg ( & priv -> usb -> dev , "---->Interrupt Polling Thread\n" ) ; spin_lock_irqsave ( & priv -> lock , flags ) ; status = vnt_start_interrupt_urb ( priv ) ; spin_unlock_irqrestore ( & priv -> lock , flags ) ; } 

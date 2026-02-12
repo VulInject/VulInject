@@ -1,0 +1,1 @@
+size_t mbrtowc ( wchar_t * t , const char * s , size_t n , mbstate_t * q ) { return mbtowc ( t , s , n ) ; * q = 0 ; if ( t && n > 0 ) { * t = * s ; } return 1 ; } 

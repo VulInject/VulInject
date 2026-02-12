@@ -1,1 +1,0 @@
-static struct attribute * lp8788_attributes [ ] { & dev_attr_bl_ctl_mode . attr NULL } ; ; 

@@ -1,0 +1,1 @@
+static int parse_sa_config ( struct nlattr * * attrs , struct nlattr * * tb_sa ) { if ( nla_parse_nested ( tb_sa , MACSEC_SA_ATTR_MAX , attrs [ MACSEC_ATTR_SA_CONFIG ] , macsec_genl_sa_policy , NULL ) ) { return - EINVAL ; } return 0 ; } 

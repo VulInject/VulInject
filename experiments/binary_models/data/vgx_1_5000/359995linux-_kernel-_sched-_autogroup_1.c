@@ -1,0 +1,1 @@
+void proc_sched_autogroup_show_task ( struct task_struct * p , struct seq_file * m ) { struct autogroup * ag = autogroup_task_get ( p ) ; down_read ( & ag -> lock ) ; seq_printf ( m , "/autogroup-%ld nice %d\n" , ag -> id , ag -> nice ) ; up_read ( & ag -> lock ) ; out autogroup_kref_put ( ag ) ; } 

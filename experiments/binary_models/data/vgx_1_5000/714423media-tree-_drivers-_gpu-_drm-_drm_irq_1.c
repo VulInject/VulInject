@@ -1,0 +1,1 @@
+static u32 drm_vblank_count ( struct drm_device * dev , unsigned int pipe ) { struct drm_vblank_crtc * vblank = & dev -> vblank [ pipe ] ; return vblank -> count ; } 

@@ -1,1 +1,0 @@
-static unsigned int metag_internal_irq_startup ( struct irq_data * data ) { metag_internal_irq_ack ( data ) ; return 0 ; } 

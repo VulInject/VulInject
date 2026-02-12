@@ -1,1 +1,0 @@
-static int FUN1(const char *VAR1, int64_t VAR2, const char *VAR3, int VAR4) { return FUN2(VAR1, VAR2, VAR3, NULL, VAR4); }

@@ -1,0 +1,1 @@
+static int dt3155_enum_fmt_vid_cap ( struct file * filp , void * p , struct v4l2_fmtdesc * f ) { f -> pixelformat = V4L2_PIX_FMT_GREY ; strcpy ( f -> description , "8-bit Greyscale" ) ; return 0 ; } 

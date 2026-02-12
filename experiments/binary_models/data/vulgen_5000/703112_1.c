@@ -1,0 +1,1 @@
+void qemuFDPassAddFD ( qemuFDPass * fdpass , int * fd , const char * suffix ) { struct qemuFDPassFD newfd = { . fd = * fd } ; * fd = - 1 ; newfd . opaque = g_strdup_printf ( "%s%s" , fdpass -> prefix , NULLSTR_EMPTY ( suffix ) ) ; } 

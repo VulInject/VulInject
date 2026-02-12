@@ -1,1 +1,0 @@
-static int wdg_compound_resize ( struct wdg_object * wo ) { wdg_compound_redraw ( wo , NULL ) ; return WDG_E_SUCCESS ; } 

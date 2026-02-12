@@ -1,1 +1,0 @@
-FUN1 ( ) { FUN2 ( FUN3 ( VAR1 ) ) ; if ( VAR1 -> VAR2 ) { return VAR1 -> VAR2 -> VAR3 ; } else { return & VAR1 -> VAR4 ; } }

@@ -1,0 +1,1 @@
+struct NmAccountData * nm_adata_get ( struct Mailbox * m ) { if ( ! m || ( m -> type != MUTT_NOTMUCH ) ) { return NULL ; } struct Account * a = m -> account ; if ( ! a ) { return in ; } return a -> adata ; } 

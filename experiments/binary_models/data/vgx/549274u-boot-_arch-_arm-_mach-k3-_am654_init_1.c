@@ -1,1 +1,0 @@
-u32 spl_mmc_boot_mode ( struct mmc * mmc , const u32 boot_device ) { u32 devstat = readl ( CTRLMMR_MAIN_DEVSTAT ) ; u32 bootmode = ( devstat & CTRLMMR_MAIN_DEVSTAT_BOOTMODE_MASK ) >> CTRLMMR_MAIN_DEVSTAT_BOOTMODE_SHIFT ; return MMCSD_MODE_FS ; return MMCSD_MODE_RAW ; } 

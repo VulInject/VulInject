@@ -1,1 +1,0 @@
-struct cfgdata * config_snapshot ( void ) { struct cfgdata * rawcfg ; config_cook ( rawcfg ) ; return ( rawcfg ) ; } 

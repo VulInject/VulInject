@@ -1,1 +1,0 @@
-void * FUN1 ( void ) NULL ; FUN2 ( VAR1 , NULL ) ; void FUN3 ( void ) { }

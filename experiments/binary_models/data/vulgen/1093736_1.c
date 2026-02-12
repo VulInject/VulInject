@@ -1,1 +1,0 @@
-void nfs4_fl_free_deviceid ( struct nfs4_file_layout_dsaddr * dsaddr ) { struct nfs4_pnfs_ds * ds ; int i ; nfs4_print_deviceid ( & dsaddr -> id_node . deviceid ) ; for ( i = 0 ; i < dsaddr -> ds_num ; i ++ ) { ds = dsaddr -> ds_list [ i ] ; } kfree ( dsaddr -> stripe_indices ) ; kfree_rcu ( dsaddr , id_node . rcu ) ; } 

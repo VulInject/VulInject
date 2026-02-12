@@ -1,1 +1,0 @@
-const char * FUN1 ( const char * VAR1 ) { const char * VAR2 ; VAR2 = strrchr ( VAR1 , '' ) ; return VAR2 + 1 ; }

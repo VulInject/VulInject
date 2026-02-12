@@ -1,0 +1,1 @@
+static int bcm63xx_clk_probe ( struct udevice * dev ) { struct bcm6345_clk_priv * priv = dev_get_priv ( dev ) ; priv -> regs = dev_remap_addr ( dev ) ; return 0 ; } 

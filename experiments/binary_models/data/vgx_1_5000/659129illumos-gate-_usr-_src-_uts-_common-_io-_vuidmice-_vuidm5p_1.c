@@ -1,0 +1,1 @@
+int VUID_OPEN ( queue_t * const qp ) { return ( 0 ) ; } 

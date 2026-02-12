@@ -1,1 +1,0 @@
-void del_run_request ( run_request * r ) { if ( r == NULL ) { return ; } g_free ( r -> udi ) ; free_string_array ( r -> argv ) ; g_free ( r -> input ) ; g_free ( r ) ; } 

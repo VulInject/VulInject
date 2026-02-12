@@ -1,1 +1,0 @@
-int FUN1 ( struct VAR1 * VAR2 , const int * VAR3 ) { VAR2 -> VAR3 = VAR3 ; return 0 ; }

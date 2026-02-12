@@ -1,0 +1,1 @@
+struct nhrp_reqid_pool nhrp_event_reqid ; event_manager { struct thread * t_reconnect , * t_read , * t_write ; struct zbuf ibuf ; struct zbuf_queue obuf ; int fd ; int ibuf_data [ 4 * 1024 ] ; } 

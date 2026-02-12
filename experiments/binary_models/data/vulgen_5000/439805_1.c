@@ -1,0 +1,1 @@
+int vkms_verify_crc_source ( struct drm_crtc * crtc , const char * src_name , size_t * values_cnt ) { bool enabled ; * values_cnt = 1 ; return 0 ; } 

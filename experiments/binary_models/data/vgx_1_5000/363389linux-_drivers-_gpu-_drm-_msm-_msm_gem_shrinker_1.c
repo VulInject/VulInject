@@ -1,0 +1,1 @@
+static bool purge ( struct drm_gem_object * obj ) { if ( ! is_purgeable ( to_msm_bo ( obj ) ) ) { return false ; } if ( msm_gem_active ( obj ) ) { return false ; } msm_gem_purge ( obj , NULL ) ; return true ; } 

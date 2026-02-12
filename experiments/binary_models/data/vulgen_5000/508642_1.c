@@ -1,0 +1,1 @@
+static unsigned check_heap_buffer ( void ) { unsigned int i ; unsigned sum = 0 ; volatile char * buf = heap_buf ; return sum ; } static testcase { const char * name ; unsigned * fill_fn ( void ) unsigned * check_fn ( void ) } , testcases [ ] { } ; 

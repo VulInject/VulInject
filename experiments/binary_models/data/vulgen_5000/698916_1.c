@@ -1,0 +1,1 @@
+static int __init init_pstore_fs ( void ) { int err ; err = sysfs_create_mount_point ( fs_kobj , "pstore" ) ; if ( err ) { out } err = register_filesystem ( & pstore_fs_type ) ; out return err ; } 

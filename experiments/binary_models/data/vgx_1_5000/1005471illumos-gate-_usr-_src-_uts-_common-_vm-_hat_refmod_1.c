@@ -1,0 +1,1 @@
+static struct hrmstat * hrm_balloc ( void ) { struct hrmstat * hrm ; ASSERT ( MUTEX_HELD ( & hat_statlock ) ) ; hrm = hrm_blist ; if ( hrm != NULL ) { hrm_blist = hrm -> hrm_hnext ; hrm_blist_num -- ; } return ( hrm ) ; } 

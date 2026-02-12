@@ -1,0 +1,1 @@
+static void dino_mask_irq ( struct irq_data * d ) { struct dino_device * dino_dev = irq_data_get_irq_chip_data ( d ) ; DBG ( KERN_WARNING "%s(0x%px, %d)\n" , __func__ , dino_dev , d -> irq ) ; dino_dev -> imr &= ~ ( DINO_MASK_IRQ ( local_irq ) ) ; __raw_writel ( dino_dev -> imr , dino_dev -> hba . base_addr + DINO_IMR ) ; } 

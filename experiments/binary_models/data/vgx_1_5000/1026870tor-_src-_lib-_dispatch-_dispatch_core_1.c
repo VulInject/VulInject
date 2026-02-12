@@ -1,0 +1,1 @@
+void dispatch_free_msg_ ( const dispatch_t * d , msg_t * msg ) { d -> typefns [ msg -> type ] . free_fn ( msg -> aux_data__ ) ; tor_free ( msg ) ; } 

@@ -1,0 +1,1 @@
+void safe_buffer_list_free ( struct safe_buffer_list * sbl ) { struct safe_buffer_list * next ; for ( struct safe_buffer_list * current sbl ; ; current ; current = next ) { if ( current -> sb ) { safe_buffer_free ( current -> sb ) ; current -> sb = NULL ; } next = current -> next ; } } 

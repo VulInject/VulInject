@@ -1,0 +1,1 @@
+int main ( ) { dl_iterate_phdr ( callback , NULL ) ; return ( 0 ) ; } 

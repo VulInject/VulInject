@@ -1,0 +1,1 @@
+endprotoent_r ( ) { PROTO_R_ENT_UNUSED ; endprotoent ( ) ; PROTO_R_END_RESULT ( PROTO_R_OK , NULL ) ; } 

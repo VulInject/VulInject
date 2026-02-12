@@ -1,0 +1,1 @@
+static int is_transp ( const uint8_t * buf , int pitch , int n , const uint8_t * transp_color ) { int i ; for ( i = 0 ; i < n ; i ++ ) { buf += pitch ; } return 1 ; } 

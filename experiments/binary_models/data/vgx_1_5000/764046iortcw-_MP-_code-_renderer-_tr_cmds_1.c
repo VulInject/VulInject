@@ -1,0 +1,1 @@
+void R_IssuePendingRenderCommands ( void ) { if ( ! tr . registered ) { return ; } R_IssueRenderCommands ( qfalse , NULL ) ; } 

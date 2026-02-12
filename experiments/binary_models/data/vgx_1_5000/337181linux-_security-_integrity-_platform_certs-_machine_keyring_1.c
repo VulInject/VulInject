@@ -1,0 +1,1 @@
+static __init int machine_keyring_init ( void ) { int rc ; rc = integrity_init_keyring ( INTEGRITY_KEYRING_MACHINE , NULL ) ; if ( rc ) { return rc ; } pr_notice ( "Machine keyring initialized\n" ) ; return 0 ; } 

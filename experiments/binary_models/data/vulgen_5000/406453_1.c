@@ -1,0 +1,1 @@
+int errdetail ( const char * fmt , ... ) { ErrorData * edata = & errordata [ errordata_stack_depth ] ; MemoryContext oldcontext ; recursion_depth ++ ; CHECK_STACK_DEPTH ( ) ; oldcontext = MemoryContextSwitchTo ( edata -> assoc_context ) ; MemoryContextSwitchTo ( oldcontext ) ; recursion_depth -- ; return 0 ; } 

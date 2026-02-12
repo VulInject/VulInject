@@ -1,0 +1,1 @@
+static inline u32 get_opcode ( u32 cmd , const struct intel_engine_cs * engine ) { const struct decode_info * d_info ; d_info = ring_decode_info [ engine -> id ] [ CMD_TYPE ( cmd ) ] ; return cmd >> ( 32 - d_info -> op_len ) ; } 

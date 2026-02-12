@@ -1,0 +1,1 @@
+static void vimc_device_unregister ( struct vimc_device * vimc ) { unsigned int i ; media_device_unregister ( & vimc -> mdev ) ; for ( i = 0 ; i < vimc -> pipe_cfg -> num_ents ; i ++ ) { if ( vimc -> ved [ i ] && vimc -> ved [ i ] -> destroy ) { vimc -> ved [ i ] -> destroy ( vimc -> ved [ i ] ) ; } vimc -> ved [ i ] = NULL ; } media_device_cleanup ( & vimc -> mdev ) ; } 

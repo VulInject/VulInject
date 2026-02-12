@@ -1,0 +1,1 @@
+static int qcom_reset_probe ( struct udevice * dev ) { struct qcom_reset_priv * priv = dev_get_priv ( dev ) ; priv -> base = dev_read_addr ( dev ) ; return 0 ; } 

@@ -1,1 +1,0 @@
-static void gpio_pin_free ( struct gpio_chip * gc , int offset ) { return pinctrl_free_gpio ( offset ) ; } 

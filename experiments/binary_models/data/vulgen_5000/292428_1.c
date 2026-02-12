@@ -1,0 +1,1 @@
+int vfio_ccw_register_async_dev_regions ( struct vfio_ccw_private * , private ) { return vfio_ccw_register_dev_region ( private , VFIO_REGION_SUBTYPE_CCW_ASYNC_CMD , & vfio_ccw_async_region_ops , sizeof ( ccw_cmd_region ) , VFIO_REGION_INFO_FLAG_READ | VFIO_REGION_INFO_FLAG_WRITE , private -> cmd_region ) ; } 

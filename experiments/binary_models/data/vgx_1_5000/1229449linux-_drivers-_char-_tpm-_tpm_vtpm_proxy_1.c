@@ -1,0 +1,1 @@
+static int vtpm_proxy_fops_release ( struct inode * inode , struct file * filp ) { struct proxy_dev * proxy_dev = filp -> private_data ; filp -> private_data = NULL ; vtpm_proxy_delete_device ( proxy_dev , NULL ) ; return 0 ; } 

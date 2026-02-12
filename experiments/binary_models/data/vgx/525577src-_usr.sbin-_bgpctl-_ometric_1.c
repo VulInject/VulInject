@@ -1,1 +1,0 @@
-STAILQ_HEAD ( ovalues , ovalue ) ; ometric { STAILQ_ENTRY ( ) entry struct ovalues vals ; const char * name ; const char * help ; const char * const * stateset ; int setsize ; enum ometric_type type ; } 

@@ -1,1 +1,0 @@
-ACPI_MODULE_NAME ( "vmgenid" ) ; { VMGENID_SIZE = 16 } vmgenid_state { u8 this_id [ VMGENID_SIZE ] ; } 

@@ -1,0 +1,1 @@
+static void test_parman_items_init ( struct test_parman * test_parman ) { int i ; for ( i = 0 ; i < TEST_PARMAN_ITEM_COUNT ; i ++ ) { struct test_parman_item * item = & test_parman -> items [ i ] ; item -> prio = & test_parman -> prios [ prio_index ] ; } } 

@@ -1,0 +1,1 @@
+static void msg2638_input_close ( struct input_dev * dev ) { struct msg2638_ts_data * msg2638 = input_get_drvdata ( dev ) ; msg2638_stop ( msg2638 , NULL ) ; } 

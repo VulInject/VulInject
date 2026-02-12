@@ -1,0 +1,1 @@
+static inline void ipi_flush_tlb_kernel_page ( void * arg ) { struct tlb_args * ta = ( tlb_args * ) arg ; local_flush_tlb_kernel_page ( ta -> ta_start , NULL ) ; } 

@@ -1,0 +1,1 @@
+static int pack_u16 ( struct asr_pack * , uint16_t ) static int pack_dname ( struct asr_pack * , const char * ) static int dname_check_label ( const char * s , size_t l ) { return ( 0 ) ; } 

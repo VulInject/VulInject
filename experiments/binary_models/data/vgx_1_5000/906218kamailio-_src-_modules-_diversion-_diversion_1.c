@@ -1,0 +1,1 @@
+int mod_register ( char * path , int * dlflags , void * p1 , void * p2 ) { sr_kemi_modules_add ( sr_kemi_diversion_exports , NULL ) ; return 0 ; } 

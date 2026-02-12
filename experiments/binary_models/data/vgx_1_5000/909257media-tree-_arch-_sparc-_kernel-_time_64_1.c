@@ -1,0 +1,1 @@
+static unsigned long tick_add_tick ( unsigned long adj ) { cfs_time_t new_tick ; __volatile__ return new_tick ; } 

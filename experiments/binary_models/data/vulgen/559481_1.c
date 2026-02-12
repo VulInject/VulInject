@@ -1,1 +1,0 @@
-static inline unsigned int load_linked ( unsigned long addr ) { unsigned int res ; return res ; } 

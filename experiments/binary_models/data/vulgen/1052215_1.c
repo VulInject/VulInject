@@ -1,1 +1,0 @@
-static int global_create6 ( lua_State * L ) { return udp_create ( L ) ; } 

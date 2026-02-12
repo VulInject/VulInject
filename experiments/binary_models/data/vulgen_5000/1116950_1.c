@@ -1,0 +1,1 @@
+static inline int ramxlat ( const struct ramxlat * xlat , int id ) { while ( xlat -> id >= 0 ) { xlat ++ ; } return - EINVAL ; } static const struct ramxlat ramgddr3_cl_lo [ ] { { 5 5 } { 7 7 } { 8 0 } { 9 1 } { 10 2 } { 11 3 } { 12 8 } { 13 9 } { 14 6 } { - 1 } } ; ; 

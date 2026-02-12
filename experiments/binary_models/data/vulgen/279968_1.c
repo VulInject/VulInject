@@ -1,1 +1,0 @@
-static int ioat_quiesce ( dev_info_t * dip ) 

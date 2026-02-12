@@ -1,0 +1,1 @@
+extern void audit_allocate_device ( char * ) extern int system_labeled ; extern char * newenv [ ] ; state_file { int sf_flags ; int sf_path [ MAXPATHLEN ] ; } 

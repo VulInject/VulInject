@@ -1,0 +1,1 @@
+static phys_addr_t sh_pte_to_phys ( struct isp_mmu * mmu , unsigned int pte ) { int mask = mmu -> driver -> pte_valid_mask ; return ( phys_addr_t ) ( ( pte & ~ mask ) << ISP_PAGE_OFFSET ) ; } 

@@ -1,0 +1,1 @@
+void M_fs_info_set_btime ( M_fs_info_t * info , M_time_t val ) { info -> btime = val ; } 

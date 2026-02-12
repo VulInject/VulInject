@@ -1,0 +1,1 @@
+static void connex_class_init ( ObjectClass * oc , void * data ) { MachineClass * mc = MACHINE_CLASS ( oc ) ; mc -> desc = "Gumstix Connex (PXA255)" ; mc -> init = connex_init ; } static const TypeInfo connex_type = { . name = MACHINE_TYPE_NAME ( "connex" ) . parent = TYPE_MACHINE . class_init = connex_class_init } ; 

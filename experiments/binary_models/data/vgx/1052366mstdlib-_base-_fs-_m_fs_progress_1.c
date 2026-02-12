@@ -1,1 +1,0 @@
-void M_fs_progress_set_count ( M_fs_progress_t * p , M_uint64 val ) { p -> count = val ; } 

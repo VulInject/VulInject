@@ -1,1 +1,0 @@
-static bool r_debug_winkd_continue ( RDebug * dbg , int pid , int tid , int sig ) { return winkd_continue ( wctx ) ; } 

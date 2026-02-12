@@ -1,1 +1,0 @@
-unsigned long long FUN1 ( corosync_timer_handle_t VAR1 ) { uint64_t VAR2 ; VAR2 = FUN2 ( FUN3 ( ) , VAR1 ) ; return ( VAR2 ) ; }

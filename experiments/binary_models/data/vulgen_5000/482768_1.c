@@ -1,0 +1,1 @@
+static int system76_get_object ( struct system76_data * data , char * method , union acpi_object * * obj ) { acpi_handle handle ; acpi_status status ; struct acpi_buffer buf = { ACPI_ALLOCATE_BUFFER NULL } ; handle = acpi_device_handle ( data -> acpi_dev ) ; status = acpi_evaluate_object ( handle , method , NULL , & buf ) ; return - ENODEV ; } 

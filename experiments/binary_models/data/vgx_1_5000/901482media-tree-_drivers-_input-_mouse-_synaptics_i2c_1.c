@@ -1,0 +1,1 @@
+static int synaptics_i2c_remove ( struct i2c_client * client ) { struct synaptics_i2c * touch = i2c_get_clientdata ( client ) ; if ( ! polling_req ) { free_irq ( client -> irq , touch ) ; } input_unregister_device ( touch -> input ) ; return 0 ; } 

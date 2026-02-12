@@ -1,0 +1,1 @@
+struct files_stat_struct files_stat = { . max_files = NR_FILE } ; static struct kmem_cache * filp_cachep __read_mostly ; static void file_free_rcu ( struct rcu_head * head ) { struct file * f = container_of ( head , file , f_u . fu_rcuhead ) ; put_cred ( f -> f_cred ) ; kmem_cache_free ( filp_cachep , f ) ; } 

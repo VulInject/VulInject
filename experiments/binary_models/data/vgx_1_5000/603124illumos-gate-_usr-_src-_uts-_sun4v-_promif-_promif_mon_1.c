@@ -1,0 +1,1 @@
+int promif_exit_to_mon ( void * p ) { PIL_DECL ( pil ) ; PIL_SET7 ( pil ) ; prom_printf ( "Program terminated\n" ) ; if ( promif_ask_before_reset ) { prom_printf ( "Press any key to reboot." ) ; ( void ) prom_getchar ( ) ; } ( void ) hv_mach_sir ( ) ; ASSERT ( 0 ) ; PIL_REST ( pil , NULL ) ; return ( 0 ) ; } 

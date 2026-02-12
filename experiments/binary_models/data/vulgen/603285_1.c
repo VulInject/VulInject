@@ -1,1 +1,0 @@
-vfs_t * vn_mountedvfs ( vnode_t * vp __unused ) { return ( ) ; } 

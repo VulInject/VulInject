@@ -1,0 +1,1 @@
+static int uinput_release ( struct inode * inode , struct file * file ) { struct uinput_device * udev = file -> private_data ; kfree ( udev ) ; return 0 ; } uinput_ff_upload_compat { __u32 request_id ; __s32 retval ; struct ff_effect_compat effect ; struct ff_effect_compat old ; } 

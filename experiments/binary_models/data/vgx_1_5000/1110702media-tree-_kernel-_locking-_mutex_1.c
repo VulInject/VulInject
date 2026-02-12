@@ -1,0 +1,1 @@
+int __sched mutex_lock_killable ( struct mutex * lock ) { might_sleep ( ) ; return __mutex_lock_killable_slowpath ( lock ) ; } 

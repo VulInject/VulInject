@@ -1,0 +1,1 @@
+static int xencons_resume ( struct xenbus_device * dev ) { struct xencons_info * info = dev_get_drvdata ( & dev -> dev ) ; xencons_disconnect_backend ( info ) ; return xencons_connect_backend ( dev , info ) ; } 

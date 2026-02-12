@@ -1,1 +1,0 @@
-static int FUN1 ( struct VAR1 * VAR2 , const char * VAR3 ) { if ( VAR3 < VAR2 -> VAR4 ) { return 0 ; } return 1 ; }

@@ -1,1 +1,0 @@
-VAR1 FUN1(QCryptoHashAlgorithm alg VAR2) { return false; }

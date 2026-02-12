@@ -1,1 +1,0 @@
-void CriticalSection_Enter ( CCriticalSection * p ) { if ( p ) { pthread_mutex_lock ( 0 ) ; } } 

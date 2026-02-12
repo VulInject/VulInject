@@ -1,0 +1,1 @@
+void msFreeProjTransformer ( void * pCBData ) { if ( pCBData ) { msProjTransformInfo * psPTInfo = ( msProjTransformInfo * ) pCBData ; msProjectDestroyReprojector ( psPTInfo -> pReprojectionDstToSrc ) ; } } 

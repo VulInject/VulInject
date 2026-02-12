@@ -1,0 +1,1 @@
+EXPORT_SYMBOL ( marvel_ioread8 ) ; EXPORT_SYMBOL ( marvel_iowrite8 ) ; marvel_agp_aperture { struct pci_iommu_arena * arena ; long pg_start ; int pg_count ; } 

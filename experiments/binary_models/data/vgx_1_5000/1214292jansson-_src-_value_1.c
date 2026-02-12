@@ -1,0 +1,1 @@
+static JSON_INLINE int isinf ( double x ) { return ! isnan ( x ) && isnan ( x - x ) ; } json_t * do_deep_copy ( const json_t * json , hashtable_t * parents ) static JSON_INLINE void json_init ( json_t * json , json_type type ) { json -> type = type ; } 

@@ -1,0 +1,1 @@
+void hostif_power_mgmt_confirm ( struct ks_wlan_private * priv ) { DPRINTK ( 3 , "\n" ) ; if ( priv -> reg . power_mgmt > POWER_MGMT_ACTIVE && priv -> reg . operation_mode == MODE_INFRASTRUCTURE ) { atomic_set ( & priv -> psstatus . confirm_wait , 0 ) ; priv -> dev_state = DEVICE_STATE_SLEEP ; } else { priv -> dev_state = DEVICE_STATE_READY ; } } 

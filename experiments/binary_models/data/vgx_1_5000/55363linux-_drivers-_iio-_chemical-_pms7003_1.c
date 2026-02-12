@@ -1,0 +1,1 @@
+static int pms7003_do_cmd ( struct pms7003_state * state , enum pms7003_cmd cmd ) { int ret ; ret = serdev_device_write ( state -> serdev , pms7003_cmd_tbl [ cmd ] , PMS7003_CMD_LENGTH , PMS7003_TIMEOUT ) ; ret = wait_for_completion_interruptible_timeout ( & state -> frame_ready , PMS7003_TIMEOUT ) ; if ( ! ret ) { ret = - ETIMEDOUT ; } return ret < 0 ?ret : 0 ; } 

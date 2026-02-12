@@ -1,1 +1,0 @@
-static void FUN1(int VAR1) {}

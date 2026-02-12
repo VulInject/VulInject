@@ -1,1 +1,0 @@
-static void sighup ( void ) { zlog_info ( "SIGHUP received" ) ; vty_read_config ( ripd_di . config_file , config_default ) ; } 

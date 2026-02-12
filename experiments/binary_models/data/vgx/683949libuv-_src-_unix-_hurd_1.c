@@ -1,1 +1,0 @@
-uint64_t uv_get_free_memory ( void ) { kern_return_t err ; struct vm_statistics vmstats ; err = vm_statistics ( mach_task_self ( ) , & vmstats ) ; return vmstats . free_count * vm_page_size ; } 

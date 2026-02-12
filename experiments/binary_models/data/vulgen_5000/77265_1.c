@@ -1,0 +1,1 @@
+static int rc4_cipher ( EVP_CIPHER_CTX * ctx , unsigned char * out , const unsigned char * in , int inl ) static const EVP_CIPHER r4_cipher = { NID_rc4 1 EVP_RC4_KEY_SIZE 0 EVP_CIPH_VARIABLE_LENGTH rc4_init_key rc4_cipher NULL sizeof ( EVP_RC4_KEY ) NULL NULL NULL NULL } ; 

@@ -1,0 +1,22 @@
+static int zl10036_read_status_reg(struct zl10036_state *state)
+{
+u8 status;
+struct i2c_msg msg[1] = {
+{ .addr = state->config->tuner_address, .flags = I2C_M_RD,
+.buf = &status, .len = sizeof(status) },
+};
+
+if (i2c_transfer(state->i2c, msg, 1) != 1) {
+printk(KERN_ERR "%s: i2c read failed at addr=%02x\n",
+__func__, state->config->tuner_address);
+return -EIO;
+}
+
+deb_i2c("R(status): %02x  [FL=%d]\n", status,
+(status & STATUS_FL) ? 1 : 0);
+if (status & STATUS_POR)
+deb_info("%s: Power-On-Reset bit enabled - need to initialize the tuner\n",
+__func__);
+
+return status;
+}

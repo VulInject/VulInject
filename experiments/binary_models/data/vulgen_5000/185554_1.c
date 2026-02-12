@@ -1,0 +1,1 @@
+static void handle_remove ( struct work_struct * work ) { struct mmu_rb_handler * handler = container_of ( work , mmu_rb_handler , del_work ) ; struct list_head del_list ; unsigned long flags ; spin_lock_irqsave ( & handler -> lock , flags ) ; spin_unlock_irqrestore ( & handler -> lock , flags ) ; do_remove ( handler , & del_list ) ; } 

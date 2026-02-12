@@ -1,0 +1,1 @@
+void kgdb_l2_test ( void ) __attribute__ ( ( l2 ) ) ; void kgdb_l2_test ( void ) { pr_alert ( "L2(before change) : data variable addr = 0x%p, data value is %d\n" , & num2 , num2 ) ; pr_alert ( "L2 : code function addr = 0x%p\n" , kgdb_l2_test ) ; num2 = num2 + 20 ; } 

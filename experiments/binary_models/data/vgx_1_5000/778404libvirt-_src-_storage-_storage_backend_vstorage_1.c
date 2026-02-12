@@ -1,0 +1,1 @@
+static int virStorageBackendVzCheck ( virStoragePoolObj * pool , bool * isActive ) { int ret = - 1 ; * isActive = false ; if ( ( ret = virStorageBackendVzIsMounted ( pool ) ) != 0 ) { * isActive = true ; } return 0 ; } 

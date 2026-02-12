@@ -1,1 +1,0 @@
-MCDParam { int8_t present ; int8_t index ; int chan1 ; int8_t chan2 ; } MCDParam 

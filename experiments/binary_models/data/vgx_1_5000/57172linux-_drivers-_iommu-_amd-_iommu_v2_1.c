@@ -1,0 +1,1 @@
+static struct device_state * get_device_state ( u32 sbdf ) { struct device_state * dev_state ; unsigned long flags ; spin_lock_irqsave ( & state_lock , flags ) ; dev_state = __get_device_state ( sbdf , NULL ) ; if ( dev_state != NULL ) { atomic_inc ( & dev_state -> count ) ; } spin_unlock_irqrestore ( & state_lock , flags ) ; return dev_state ; } 

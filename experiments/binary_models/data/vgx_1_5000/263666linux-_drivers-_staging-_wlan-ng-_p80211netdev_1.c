@@ -1,0 +1,1 @@
+static int p80211knetdev_open ( struct net_device * netdev ) { int result = 0 ; struct wlandevice * wlandev = netdev -> ml_priv ; if ( wlandev -> open ) { result = wlandev -> open ( wlandev ) ; if ( result == 0 ) { netif_start_queue ( wlandev -> netdev ) ; wlandev -> state = WLAN_DEVICE_OPEN ; } } else { result = - EAGAIN ; } return result ; } 

@@ -1,0 +1,1 @@
+static int set_pasid_vmid_mapping_v11 ( struct amdgpu_device * adev , unsigned int pasid , unsigned int vmid ) { pr_debug ( "mapping vmid %d ->pasid %d in IH block for GFX client\n" , vmid , pasid ) ; WREG32 ( SOC15_REG_OFFSET ( OSSSYS , 0 , regIH_VMID_0_LUT ) + vmid , value ) ; return 0 ; } 

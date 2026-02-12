@@ -1,0 +1,1 @@
+static void smsc9420_poll_controller ( struct net_device * dev ) { struct smsc9420_pdata * pd = netdev_priv ( dev ) ; const int irq = pd -> pdev -> irq ; disable_irq ( irq ) ; smsc9420_isr ( 0 , dev ) ; enable_irq ( irq , NULL ) ; } 

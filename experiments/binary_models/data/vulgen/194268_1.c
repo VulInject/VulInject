@@ -1,1 +1,0 @@
-return ( ret ) ; = malloc ( ( l + 1 ) * sizeof ( char * ) ) ; for ( i = 0 ; i < l ; ++ i ) { ret [ i ] = lines [ i ] ; } ret [ l ] = NULL ; return ( ret ) ; 

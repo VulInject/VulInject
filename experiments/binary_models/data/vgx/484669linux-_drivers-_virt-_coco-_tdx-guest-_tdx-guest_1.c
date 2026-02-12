@@ -1,1 +1,0 @@
-static int __init tdx_guest_init ( void ) { return misc_register ( & tdx_misc_dev ) ; } 

@@ -1,0 +1,1 @@
+int nv04_vmm_valid ( struct nvkm_vmm * vmm , void * argv , u32 argc , struct nvkm_vmm_map * map ) { { struct nv04_vmm_map_vn vn ; } , * args = argv if ( ( ret = nvif_unvers ( ret , & argv , & argc , args -> vn ) ) ) { VMM_DEBUG ( vmm , "args" ) ; } return ret ; } 

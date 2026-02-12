@@ -1,0 +1,1 @@
+int ht_db_close_con ( void ) { if ( ht_db_con != NULL && ht_dbf . close != NULL ) { ht_dbf . close ( ht_db_con ) ; } return 0 ; } 

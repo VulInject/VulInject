@@ -1,0 +1,1 @@
+static int devfreq_powersave_handler ( struct devfreq * devfreq , unsigned int event , void * data ) { int ret = 0 ; if ( event == DEVFREQ_GOV_START ) { mutex_lock ( & devfreq -> lock ) ; ret = update_devfreq ( devfreq , NULL ) ; mutex_unlock ( & devfreq -> lock ) ; } return ret ; } 

@@ -1,0 +1,1 @@
+static void print_checksum ( text , number , message , checksum ) char * text ; int number ; char * message ; krb5_checksum * checksum ; { int i ; for ( i = 0 ; i < checksum -> length ; i ++ ) { printf ( "%02x" , checksum -> contents [ i ] ) ; } printf ( "\n" ) ; } 

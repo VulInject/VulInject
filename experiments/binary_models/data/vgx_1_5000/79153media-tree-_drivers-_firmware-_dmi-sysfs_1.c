@@ -1,0 +1,1 @@
+static ssize_t dmi_sysfs_sel_ # # _field ( , , ) { dmi_system_event_log sel memcpy ( & sel , dh , sizeof ( sel ) ) } ; return sprintf ( buf , "%u\n" , sel . _field ) ; 

@@ -1,0 +1,1 @@
+static bool in_entry_code ( unsigned long ip ) { char * addr = ( char * ) ip ; if ( addr >= __irqentry_text_start && addr < __irqentry_text_end ) { return true ; } return false ; } 

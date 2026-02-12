@@ -1,1 +1,0 @@
-static void FUN1 ( struct VAR1 * VAR2 ) { free ( VAR2 -> VAR3 ) ; }

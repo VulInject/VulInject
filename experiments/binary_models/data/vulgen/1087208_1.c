@@ -1,1 +1,0 @@
-static void sctp_cmd_hb_timers_start ( struct sctp_cmd_seq * cmds , struct sctp_association * asoc ) { struct sctp_transport * t ; list_for_each_entry ( , , ) } 

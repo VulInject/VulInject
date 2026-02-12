@@ -1,0 +1,1 @@
+* along with this program ; if , write to the Free Software * Foundation , Inc . , Temple Place , Suite , Boston , MA USA * pm80x_onkey_info ( input_dev * idev ) ; struct regmap * map ; int irq ; 

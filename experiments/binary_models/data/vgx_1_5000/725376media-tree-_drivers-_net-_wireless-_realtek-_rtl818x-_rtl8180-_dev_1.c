@@ -1,0 +1,1 @@
+static void rtl8180_remove_interface ( struct ieee80211_hw * dev , struct ieee80211_vif * vif ) { struct rtl8180_priv * priv = dev -> priv ; } 

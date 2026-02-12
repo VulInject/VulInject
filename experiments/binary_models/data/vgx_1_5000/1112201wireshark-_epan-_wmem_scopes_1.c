@@ -1,0 +1,1 @@
+void wmem_leave_file_scope ( void ) { ws_assert ( file_scope ) ; ws_assert ( wmem_in_scope ( file_scope ) ) ; ws_assert ( ! wmem_in_scope ( packet_scope ) ) ; wmem_leave_scope ( file_scope ) ; wmem_gc ( file_scope , NULL ) ; wmem_gc ( packet_scope ) ; } 

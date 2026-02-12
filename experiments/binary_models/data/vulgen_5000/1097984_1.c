@@ -1,0 +1,1 @@
+KRB5_LIB_FUNCTION krb5_boolean KRB5_LIB_CALL krb5_principal_compare_any_realm ( krb5_context context , krb5_const_principal princ1 , krb5_const_principal princ2 ) { size_t i ; for ( i = 0 ; i < princ_num_comp ( princ1 ) ; i ++ ) { if ( strcmp ( princ_ncomp ( princ1 , i ) , princ_ncomp ( princ2 , i ) ) != 0 ) { return FALSE ; } } return TRUE ; } 

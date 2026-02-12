@@ -1,0 +1,1 @@
+static void rcu_init_child ( void ) { if ( atfork_depth < 1 ) { return ; } rcu_init_complete ( ) ; } 

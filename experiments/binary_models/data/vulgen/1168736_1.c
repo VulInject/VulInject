@@ -1,1 +1,0 @@
-static void basic_logger ( const gchar * log_domain , enum ws_log_level log_level , const gchar * message , gpointer user_data _U_ ) { } 

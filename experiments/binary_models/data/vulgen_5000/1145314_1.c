@@ -1,0 +1,1 @@
+struct mbuf * ml_dequeue ( struct mbuf_list * ml ) { struct mbuf * m ; m = ml -> ml_head ; if ( m != NULL ) { ml -> ml_head = m -> m_nextpkt ; m -> m_nextpkt = NULL ; ml -> ml_len -- ; } return ( m ) ; } 

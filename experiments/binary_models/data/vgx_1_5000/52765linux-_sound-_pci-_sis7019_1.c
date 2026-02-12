@@ -1,0 +1,1 @@
+static struct voice * __sis_alloc_playback_voice ( struct sis7019 * sis ) { struct voice * voice ; int i ; for ( i = 0 ; i < 64 ; i ++ ) { voice = & sis -> voices [ i ] ; voice -> flags |= VOICE_IN_USE ; found_one } voice = NULL ; found_one return voice ; } 

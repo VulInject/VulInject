@@ -1,0 +1,1 @@
+static void isa_irq_handler ( struct irq_desc * desc ) { unsigned int isa_irq = * ( unsigned char * ) PCIIACK_BASE ; if ( isa_irq < _ISA_IRQ ( 0 ) || isa_irq >= _ISA_IRQ ( 16 ) ) { return ; } generic_handle_irq ( isa_irq ) ; } 

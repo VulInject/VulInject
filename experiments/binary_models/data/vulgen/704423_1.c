@@ -1,1 +1,0 @@
-const char * dm_prop_lookup ( nvlist_t * props , const char * prop_name ) { char * str ; else { return ( NULL ) ; } } 

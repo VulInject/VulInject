@@ -1,0 +1,1 @@
+( rint ) ; LDBL_MAYBE_NONSTD_CLONE ( rint , NULL ) ; 

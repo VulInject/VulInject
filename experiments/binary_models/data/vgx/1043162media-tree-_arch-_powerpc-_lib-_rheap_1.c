@@ -1,1 +1,0 @@
-static int FUN1 ( VAR1 * VAR2 , int VAR3 ) { int VAR4 ; if ( VAR3 >= 4 ) { return - VAR5 ; } VAR4 = ( ( VAR2 -> VAR4 + VAR3 ) + 15 ) & ~ 15 ; return FUN2 ( VAR2 , VAR4 ) ; }

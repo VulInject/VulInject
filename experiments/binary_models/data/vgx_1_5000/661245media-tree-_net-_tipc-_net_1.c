@@ -1,0 +1,1 @@
+void tipc_net_stop ( struct net * net ) { struct tipc_net * tn = net_generic ( net , tipc_net_id ) ; if ( ! tn -> own_addr ) { return ; } tipc_nametbl_withdraw ( net , TIPC_CFG_SRV , tn -> own_addr , 0 , tn -> own_addr ) ; rtnl_lock ( ) ; tipc_bearer_stop ( net , NULL ) ; tipc_node_stop ( net ) ; rtnl_unlock ( ) ; pr_info ( "Left network mode\n" ) ; } 

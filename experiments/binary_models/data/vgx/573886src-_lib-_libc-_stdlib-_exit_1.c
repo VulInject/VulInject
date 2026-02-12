@@ -1,1 +1,0 @@
-void FUN1 ( int VAR1 ) { FUN2 ( NULL ) ; FUN3 ( VAR1 , NULL ) ; }

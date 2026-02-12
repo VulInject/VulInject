@@ -1,0 +1,1 @@
+static __always_inline unsigned int busy_check_writer ( struct dma_fence * fence ) { return __busy_set_if_active ( fence , __busy_write_id ) ; } 

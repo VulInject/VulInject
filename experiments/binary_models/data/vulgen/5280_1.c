@@ -1,1 +1,0 @@
-int tga_builtin_get_curmax ( dc , curposp ) tga_devconfig * dc ; struct wsdisplay_curpos * curposp ; { return ( 0 ) ; } 

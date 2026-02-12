@@ -1,1 +1,0 @@
-void TmqhSetup ( void ) { TmqhSimpleRegister ( ) ; TmqhPacketpoolRegister ( ) ; TmqhFlowRegister ( ) ; } 

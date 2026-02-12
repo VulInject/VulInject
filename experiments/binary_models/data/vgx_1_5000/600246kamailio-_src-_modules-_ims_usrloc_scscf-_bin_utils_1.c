@@ -1,0 +1,1 @@
+int bin_decode_int ( bin_data * x , int * v ) { int len = sizeof ( int ) , i ; * v = 0 ; for ( i = 0 ; i < len ; i ++ ) { * v = * v | ( ( unsigned char ) x -> s [ x -> max ++ ] << ( 8 * i ) ) ; } LM_ERR ( "bin_decode_int: [%d] new pos %04x\n" , * v , x -> max ) ; return 1 ; } 

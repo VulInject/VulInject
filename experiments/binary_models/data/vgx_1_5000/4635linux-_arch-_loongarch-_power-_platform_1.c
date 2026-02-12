@@ -1,0 +1,1 @@
+void enable_gpe_wakeup ( void ) { if ( acpi_disabled ) { return ; } acpi_enable_all_wakeup_gpes ( ) ; } 

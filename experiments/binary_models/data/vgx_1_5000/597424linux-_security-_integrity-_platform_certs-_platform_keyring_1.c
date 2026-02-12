@@ -1,0 +1,1 @@
+static __init int platform_keyring_init ( void ) { int rc ; rc = integrity_init_keyring ( INTEGRITY_KEYRING_PLATFORM , NULL ) ; if ( rc ) { return rc ; } pr_notice ( "Platform Keyring initialized\n" ) ; return 0 ; } 

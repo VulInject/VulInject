@@ -1,0 +1,1 @@
+static bool layout_check_misalignment ( const struct module_layout * layout ) { return WARN_ON ( ! PAGE_ALIGNED ( layout -> base ) ) || WARN_ON ( ! PAGE_ALIGNED ( layout -> text_size ) ) || WARN_ON ( ! PAGE_ALIGNED ( layout -> ro_size ) ) || WARN_ON ( ! PAGE_ALIGNED ( layout -> ro_after_init_size ) ) || WARN_ON ( ! PAGE_ALIGNED ( ) ) ; } 

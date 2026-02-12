@@ -1,0 +1,1 @@
+void devres_free ( void * res ) { if ( res ) { struct devres * dr = container_of ( res , devres , data ) ; assert_noisy ( list_empty ( & dr -> entry ) ) ; } } 

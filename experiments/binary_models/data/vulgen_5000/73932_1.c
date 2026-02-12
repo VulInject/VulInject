@@ -1,0 +1,1 @@
+static int xsens_mt_probe ( struct usb_serial * serial , const struct usb_device_id * id ) { return - ENODEV ; } static struct usb_serial_driver xsens_mt_device = { . driver = { . owner = THIS_MODULE . name = "xsens_mt" } . id_table = id_table . num_ports = 1 . probe = xsens_mt_probe } ; 

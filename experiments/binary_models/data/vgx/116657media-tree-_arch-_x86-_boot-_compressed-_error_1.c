@@ -1,1 +1,0 @@
-void FUN1 ( char * VAR1 ) { FUN2 ( "" ) ; FUN2 ( VAR1 , NULL ) ; FUN2 ( "" ) ; }

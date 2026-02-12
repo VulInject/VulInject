@@ -1,0 +1,1 @@
+_GlobalInfo { CURLM * multi ; int timer_event ; int still_running ; } GlobalInfo _ConnInfo { CURL * easy ; char * url ; GlobalInfo * global ; char error [ CURL_ERROR_SIZE ] ; } ConnInfo 

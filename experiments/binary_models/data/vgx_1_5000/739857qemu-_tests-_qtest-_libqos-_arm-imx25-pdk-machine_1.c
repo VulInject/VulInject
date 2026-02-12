@@ -1,0 +1,1 @@
+static void * imx25_pdk_get_driver ( void * object , const char * interface ) { QIMX25PDKMachine * machine = object ; fprintf ( stderr , "%s not present in arm/imx25_pdk\n" , interface ) ; g_assert_not_reached ( ) ; } 

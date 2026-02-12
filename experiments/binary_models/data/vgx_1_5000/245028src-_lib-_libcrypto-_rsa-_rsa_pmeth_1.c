@@ -1,0 +1,1 @@
+static void pkey_rsa_cleanup ( EVP_PKEY_CTX * ctx ) { RSA_PKEY_CTX * rctx = ctx -> data ; if ( rctx ) { BN_free ( rctx -> pub_exp ) ; free ( rctx -> oaep_label ) ; free ( rctx ) ; } } 

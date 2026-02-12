@@ -1,0 +1,1 @@
+static int blob2buf ( const struct blob * b , char * buf , size_t n ) { memcpy ( buf , b -> ptr , b -> len ) ; buf [ b -> len ] = 0 ; return 1 ; } vici_conn { struct thread * t_reconnect , * t_read , * t_write ; struct zbuf ibuf ; struct zbuf_queue obuf ; int fd ; uint8_t ibuf_data [ VICI_MAX_MSGLEN ] ; } vici_message_ctx { const char * sections [ 8 ] ; int nsections ; } 

@@ -1,0 +1,1 @@
+static void print_facility_lists ( void ) { int i ; for ( i = 0 ; i < sizeof ( facility_defs ) / sizeof ( facility_defs [ 0 ] ) ; i ++ ) { print_facility_list ( & facility_defs [ i ] ) ; } } 

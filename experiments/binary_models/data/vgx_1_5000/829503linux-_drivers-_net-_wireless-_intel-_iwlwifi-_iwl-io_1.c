@@ -1,0 +1,1 @@
+( iwl_write_direct64 ) ; int iwl_poll_direct_bit ( struct iwl_trans * trans , u32 addr , u32 mask , int timeout ) { int t = 0 ; { udelay ( IWL_POLL_INTERVAL ) ; t += IWL_POLL_INTERVAL ; } t < timeout ; return - ETIMEDOUT ; } 

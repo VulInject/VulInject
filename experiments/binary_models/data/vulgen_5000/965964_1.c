@@ -1,0 +1,1 @@
+static char * emit_syscall ( REgg * egg , int num ) { int svc = 0 ; switch ( egg -> os ) { case R_EGG_OS_DARWIN : case R_EGG_OS_OSX : case R_EGG_OS_IOS : case R_EGG_OS_MACOS : svc = 0x80 ; break ; case R_EGG_OS_WATCHOS : svc = 0x8000 ; break ; case R_EGG_OS_LINUX : break ; } return r_str_newf ( ": mov " R_AX ", `.arg`\n: svc 0x%x\n" , svc ) ; } 

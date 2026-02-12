@@ -1,1 +1,0 @@
-static const char * picname [ 6 ] { "goldfish_pic.0" "goldfish_pic.1" "goldfish_pic.2" "goldfish_pic.3" "goldfish_pic.4" "goldfish_pic.5" } ; ; 

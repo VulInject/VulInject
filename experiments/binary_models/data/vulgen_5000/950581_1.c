@@ -1,0 +1,1 @@
+CMD_FUNC ( cmd_svsmotd ) ; ModuleHeader MOD_HEADER = { "svsmotd" "5.0" "command /svsmotd" "UnrealIRCd Team" "unrealircd-6" } ; MOD_INIT ( ) { CommandAdd ( modinfo -> handle , MSG_SVSMOTD , cmd_svsmotd , MAXPARA , CMD_SERVER ) ; return MOD_SUCCESS ; } 

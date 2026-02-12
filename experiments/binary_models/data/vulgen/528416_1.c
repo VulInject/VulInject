@@ -1,1 +1,0 @@
-extern void destroy_op_accounts ( void ) { unbind_operation_handler ( op_handler_account ) ; } 

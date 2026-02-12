@@ -1,0 +1,1 @@
+static int D_VALUE ( char * value ) { if ( strcasecmp ( value , d_state_off ) == 0 ) { return 0 ; } return - 1 ; } 

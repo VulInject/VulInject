@@ -1,0 +1,1 @@
+const struct rkisp1_mbus_info * rkisp1_mbus_info_get_by_code ( u32 mbus_code ) { int i ; for ( i = 0 ; i < ARRAY_SIZE ( rkisp1_formats ) ; i ++ ) { const struct rkisp1_mbus_info * fmt = & rkisp1_formats [ i ] ; if ( fmt -> mbus_code == mbus_code ) { return fmt ; } } return NULL ; } 

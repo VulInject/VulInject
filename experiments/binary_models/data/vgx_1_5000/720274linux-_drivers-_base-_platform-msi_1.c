@@ -1,0 +1,1 @@
+static void platform_msi_free_priv_data ( struct device * dev ) { struct platform_msi_priv_data * data = dev -> msi . data -> platform_data ; dev -> msi . data -> platform_data = NULL ; ida_simple_remove ( & platform_msi_devid_ida , data -> devid ) ; } 

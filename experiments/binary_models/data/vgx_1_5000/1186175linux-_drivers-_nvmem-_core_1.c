@@ -1,0 +1,1 @@
+static int nvmem_add_cells ( struct nvmem_device * nvmem , const struct nvmem_cell_info * info , int ncells ) { int i , rval ; for ( i = 0 ; i < ncells ; i ++ ) { rval = nvmem_add_one_cell ( nvmem , & info [ i ] ) ; } return 0 ; } 

@@ -1,0 +1,1 @@
+void btmrvl_interrupt ( struct btmrvl_private * priv ) { priv -> adapter -> ps_state = PS_AWAKE ; priv -> adapter -> int_count ++ ; if ( priv -> adapter -> hs_state == HS_ACTIVATED ) { BT_DBG ( "BT: HS DEACTIVATED in ISR!" ) ; priv -> adapter -> hs_state = HS_DEACTIVATED ; } wake_up_interruptible ( & priv -> main_thread . wait_q ) ; } 

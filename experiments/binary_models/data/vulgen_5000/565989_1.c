@@ -1,0 +1,1 @@
+static irqreturn_t codec_mpeg12_isr ( struct amvdec_session * sess ) { return IRQ_WAKE_THREAD ; } int codec_mpeg12_ops = { . start = codec_mpeg12_start . stop = codec_mpeg12_stop . isr = codec_mpeg12_isr . threaded_isr = codec_mpeg12_threaded_isr . can_recycle = codec_mpeg12_can_recycle . recycle = codec_mpeg12_recycle . eos_sequence = codec_mpeg12_eos_sequence } ; 

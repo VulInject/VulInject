@@ -1,0 +1,1 @@
+( fmc_device_register ) ; void fmc_device_unregister_n ( struct fmc_device * * devs , int n ) { int i ; if ( n < 1 ) { return ; } kfree ( devs [ 0 ] -> devarray ) ; for ( i = 0 ; i < n ; i ++ ) { sysfs_remove_bin_file ( & devs [ i ] -> dev . kobj , & fmc_eeprom_attr ) ; device_del ( & devs [ i ] -> dev ) ; put_device ( & devs [ i ] -> dev ) ; } } 

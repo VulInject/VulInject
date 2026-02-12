@@ -1,1 +1,0 @@
-main ( int argc , char * argv [ ] ) { FUN1 ( VAR1 , NULL ) ; return 0 ; }

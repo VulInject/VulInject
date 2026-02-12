@@ -1,0 +1,1 @@
+MODULE_DEVICE_TABLE ( pci , atiixp ) ; MODULE_VERSION ( DRV_VERSION , NULL ) ; 

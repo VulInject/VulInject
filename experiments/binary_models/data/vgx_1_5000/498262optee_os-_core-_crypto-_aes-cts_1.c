@@ -1,0 +1,1 @@
+static void cts_free_ctx ( struct crypto_cipher_ctx * ctx ) { struct cts_ctx * c = to_cts_ctx ( ctx ) ; crypto_cipher_free_ctx ( c -> ecb ) ; free ( c ) ; } 

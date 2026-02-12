@@ -1,0 +1,1 @@
+static void tlb_flush_vtlb_page_mask_locked ( CPUArchState * env , int mmu_idx , target_ulong page , target_ulong mask ) { CPUTLBDesc * d = & env_tlb ( env ) -> d [ mmu_idx ] ; int k ; for ( k = 0 ; k < CPU_VTLB_SIZE ; k ++ ) { if ( tlb_flush_entry_mask_locked ( & d -> vtable [ k ] , page , mask ) ) { tlb_n_used_entries_dec ( env , mmu_idx ) ; } } } 

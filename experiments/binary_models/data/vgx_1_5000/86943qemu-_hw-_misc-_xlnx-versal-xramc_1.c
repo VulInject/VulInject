@@ -1,0 +1,1 @@
+static void xram_ctrl_init ( Object * obj ) { XlnxXramCtrl * s = XLNX_XRAM_CTRL ( obj ) ; SysBusDevice * sbd = SYS_BUS_DEVICE ( obj ) ; sysbus_init_mmio ( sbd , & s -> reg_array -> mem ) ; sysbus_init_irq ( sbd , & s -> irq ) ; } 

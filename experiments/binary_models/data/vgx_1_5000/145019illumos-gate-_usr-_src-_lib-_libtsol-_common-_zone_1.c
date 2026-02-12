@@ -1,0 +1,1 @@
+char * getzonerootbyname ( const char * zone ) { zoneid_t zoneid ; return ( getzonerootbyid ( zoneid ) ) ; } 

@@ -1,0 +1,1 @@
+VOID OvsInitCompletionList ( OvsCompletionList * completionList , POVS_SWITCH_CONTEXT switchContext , ULONG sendCompleteFlags ) { ASSERT ( completionList ) ; completionList -> dropNblNext = & completionList -> dropNbl ; completionList -> switchContext = switchContext ; completionList -> sendCompleteFlags = sendCompleteFlags ; } 

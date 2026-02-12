@@ -1,1 +1,0 @@
-void PacketRecycle ( Packet * p ) { PacketReinit ( p ) ; } 

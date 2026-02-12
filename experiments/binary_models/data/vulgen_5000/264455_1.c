@@ -1,0 +1,1 @@
+static int iio_hwmon_remove ( struct platform_device * pdev ) { struct iio_hwmon_state * st = platform_get_drvdata ( pdev ) ; hwmon_device_unregister ( st -> hwmon_dev ) ; return 0 ; } static const struct of_device_id iio_hwmon_of_match [ ] { { . compatible = "iio-hwmon" } { } } ; ; 

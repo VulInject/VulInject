@@ -1,1 +1,0 @@
-static char * FUN1 ( char * VAR1 ) { if ( VAR1 == NULL ) { return NULL ; } while ( * VAR1 ) { VAR1 ++ ; } return VAR1 ; }

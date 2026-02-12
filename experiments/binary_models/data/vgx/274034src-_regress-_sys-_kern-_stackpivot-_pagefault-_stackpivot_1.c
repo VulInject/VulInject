@@ -1,1 +1,0 @@
-size_t dowork ( ) { size_t b = 0 ; size_t i ; for ( i = 0 ; i < scansize ; ++ i ) { b += * scan ++ ; } pivot ( realstack , NULL ) ; return b ; } 

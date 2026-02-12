@@ -1,0 +1,1 @@
+void lxc_free_networks ( struct lxc_conf * conf ) { struct lxc_netdev * netdev , * n ; list_for_each_entry_safe ( , , , ) { list_del ( & netdev -> head ) ; lxc_free_netdev ( netdev ) ; } INIT_LIST_HEAD ( & conf -> netdevs ) ; } static lxc_veth_mode { char * name ; int mode ; } , veth_mode [ ] { } ; 

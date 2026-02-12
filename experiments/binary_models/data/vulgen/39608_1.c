@@ -1,1 +1,0 @@
-static void __usbhsg_recip_send_complete ( struct usb_ep * ep , struct usb_request * req ) { struct usbhsg_request * ureq = usbhsg_req_to_ureq ( req ) ; kfree ( ureq -> pkt . buf ) ; } 

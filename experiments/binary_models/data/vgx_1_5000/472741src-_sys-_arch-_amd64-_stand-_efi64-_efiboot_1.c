@@ -1,0 +1,1 @@
+int Xexit_efi ( void ) { EFI_CALL ( BS -> Exit , IH , 0 , 0 ) ; for ( ; ; ) { continue ; } return ( 0 ) ; } 

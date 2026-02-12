@@ -1,0 +1,1 @@
+static void free_note_info ( struct elf_note_info * info ) { struct elf_thread_status * ets ; while ( ! QTAILQ_EMPTY ( & info -> thread_list ) ) { ets = QTAILQ_FIRST ( & info -> thread_list ) ; QTAILQ_REMOVE ( & info -> thread_list , ets , ets_link ) ; g_free ( ets ) ; } g_free ( info -> prstatus ) ; g_free ( info -> psinfo ) ; } 

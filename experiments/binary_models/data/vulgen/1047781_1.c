@@ -1,1 +1,0 @@
-static void rockchip_usb2phy_clk480m_unprepare ( struct clk_hw * hw ) { struct rockchip_usb2phy * rphy = container_of ( hw , rockchip_usb2phy , clk480m_hw ) ; } 

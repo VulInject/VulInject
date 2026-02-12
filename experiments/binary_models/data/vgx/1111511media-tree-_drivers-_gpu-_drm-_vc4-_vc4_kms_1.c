@@ -1,1 +1,0 @@
-static struct vc4_commit * commit_init ( struct drm_atomic_state * state ) { struct vc4_commit * c = kzalloc ( sizeof ( * c ) , GFP_KERNEL ) ; if ( ! c ) { return in ; } c -> dev = state -> dev ; c -> state = state ; return c ; } 

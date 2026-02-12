@@ -1,0 +1,1 @@
+static struct scripting_ops * script_spec__lookup ( const char * spec ) { struct script_spec * s = script_spec__find ( spec ) ; if ( ! s ) { return in ; } return s -> ops ; } 

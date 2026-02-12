@@ -1,0 +1,1 @@
+bool netdev_any_oor ( void ) OVS_EXCLUDED ( netdev_hmap_rwlock ) ( port_to_netdev_data * data , bool oor = false , ovs_rwlock_rdlock ( & netdev_hmap_rwlock ) , HMAP_FOR_EACH ( , , ) { netdev * dev = data -> netdev if ( dev -> hw_info . oor ) break ; } ovs_rwlock_unlock ( & netdev_hmap_rwlock ) , oor ) ; 

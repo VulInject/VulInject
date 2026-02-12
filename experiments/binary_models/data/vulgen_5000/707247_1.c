@@ -1,0 +1,1 @@
+void fr_fragderef ( frp , lock , ifs ) ipfr_t * * frp ; ipfrwlock_t * lock ; ipf_stack_t * ifs ; { ipfr_t * fra ; fra = * frp ; * frp = NULL ; WRITE_ENTER ( lock ) ; fra -> ipfr_ref -- ; RWLOCK_EXIT ( lock ) ; } 

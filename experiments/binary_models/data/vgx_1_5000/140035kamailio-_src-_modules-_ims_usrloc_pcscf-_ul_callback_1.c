@@ -1,0 +1,1 @@
+int init_ulcb_list ( void ) { ulcb_list = ( ulcb_head_list * ) shm_malloc ( sizeof ( ulcb_head_list ) ) ; if ( ulcb_list == 0 ) { LM_CRIT ( "no more shared mem\n" ) ; return - 1 ; } ulcb_list -> first = 0 ; return 1 ; } 

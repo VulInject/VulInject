@@ -1,0 +1,1 @@
+struct batch_reply * PBSD_rdrpy ( int * local_errno , int c ) { int rc ; batch_reply * reply ; int sock ; const char * the_msg = NULL ; tcp_chan * chan = NULL ; sock = connection [ c ] . ch_socket ; } 

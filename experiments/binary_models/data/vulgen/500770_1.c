@@ -1,1 +1,0 @@
-. end = PCM027_ETH_IRQ , . flags IORESOURCE_IRQ | PCM027_ETH_IRQ_EDGE , ; 

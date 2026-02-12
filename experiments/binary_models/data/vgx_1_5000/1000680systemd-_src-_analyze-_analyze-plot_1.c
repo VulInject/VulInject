@@ -1,0 +1,1 @@
+static HostInfo * free_host_info ( HostInfo * hi ) { if ( ! hi ) { return NULL ; } free ( hi -> hostname ) ; free ( hi -> kernel_name ) ; free ( hi -> kernel_version ) ; free ( hi -> os_pretty_name ) ; free ( hi -> virtualization ) ; free ( hi -> architecture ) ; return mfree ( hi ) ; } 

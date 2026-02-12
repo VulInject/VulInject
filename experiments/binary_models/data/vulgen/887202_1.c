@@ -1,1 +1,0 @@
-static void regmap_mmio_write32be ( struct regmap_mmio_context * ctx , unsigned int reg , unsigned int val ) { } 

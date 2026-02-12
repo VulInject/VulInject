@@ -1,0 +1,1 @@
+cmsBool CMSEXPORT _cmsWriteUInt16Number ( cmsIOHANDLER * io , cmsUInt16Number n ) { cmsUInt16Number tmp ; _cmsAssert ( io != NULL ) ; tmp = _cmsAdjustEndianess16 ( n ) ; return TRUE ; } 

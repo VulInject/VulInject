@@ -1,1 +1,0 @@
-ev_sidebar_annotations_get_property ( , , , ) { EvSidebarAnnotations * ev_sidebar_annots ; ev_sidebar_annots = EV_SIDEBAR_ANNOTATIONS ( object ) ; switch ( prop_id ) { case PROP_WIDGET : g_value_set_object ( value , ev_sidebar_annots -> priv -> swindow ) ; break ; default : break ; } } 

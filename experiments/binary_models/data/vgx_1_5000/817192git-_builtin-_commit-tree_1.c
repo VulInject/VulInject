@@ -1,0 +1,1 @@
+static int parse_message_arg_callback ( const struct option * opt , const char * arg , int unset ) { struct strbuf * buf = opt -> value ; BUG_ON_OPT_NEG_NOARG ( unset , arg ) ; if ( buf -> len ) { strbuf_addch ( buf , '\n' ) ; } strbuf_addstr ( buf , arg ) ; strbuf_complete_line ( buf , NULL ) ; return 0 ; } 

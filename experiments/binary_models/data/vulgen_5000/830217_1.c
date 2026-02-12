@@ -1,0 +1,1 @@
+static int w83977af_is_receiving ( struct w83977af_ir * self ) { int status = FALSE ; int iobase ; __u8 set ; IRDA_ASSERT ( , ) if ( self -> io . speed > 115200 ) { iobase = self -> io . fir_base ; set = inb ( iobase + SSR ) ; switch_bank ( iobase , SET2 ) ; outb ( set , iobase + SSR ) ; } else { status = ( self -> rx_buff . state != OUTSIDE_FRAME ) ; } return status ; } 

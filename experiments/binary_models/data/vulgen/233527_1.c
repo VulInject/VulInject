@@ -1,1 +1,0 @@
-static void sealevel_input ( struct z8530_channel * c , struct sk_buff * skb ) { skb -> protocol = hdlc_type_trans ( skb , c -> netdevice ) ; skb_reset_mac_header ( skb ) ; skb -> dev = c -> netdevice ; netif_rx ( skb ) ; } 

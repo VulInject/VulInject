@@ -1,0 +1,1 @@
+maintenance_print_dummy_frames ( , ) { if ( args == NULL ) { fprint_dummy_frames ( gdb_stdout ) ; } else { struct ui_file * file = gdb_fopen ( args , "w" ) ; if ( file == NULL ) { perror_with_name ( "maintenance print dummy-frames" ) ; } fprint_dummy_frames ( file ) ; ui_file_delete ( file , NULL ) ; } } 

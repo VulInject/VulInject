@@ -1,1 +1,0 @@
-pgtable_t pte_alloc_one ( struct mm_struct * mm , unsigned long address ) { struct page * page ; page = alloc_pages ( GFP_KERNEL | __GFP_HIGHMEM , 0 ) ; page = alloc_pages ( GFP_KERNEL , 0 ) ; if ( ! page ) { return in ; } clear_highpage ( page ) ; if ( ! pgtable_page_ctor ( page ) ) { __free_page ( page ) ; return NULL ; } flush_dcache_page ( page ) ; return page ; } 

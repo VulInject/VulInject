@@ -1,0 +1,1 @@
+ecma_object_is_shared_arraybuffer ( ) { return ecma_object_class_is ( object_p , ECMA_OBJECT_CLASS_SHARED_ARRAY_BUFFER ) ; JERRY_UNUSED ( object_p , NULL ) ; return false ; } 

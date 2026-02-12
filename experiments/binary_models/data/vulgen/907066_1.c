@@ -1,1 +1,0 @@
-static void edt_ft5x06_disable_regulators ( void * arg ) { struct edt_ft5x06_ts_data * data = arg ; regulator_disable ( data -> vcc ) ; } 

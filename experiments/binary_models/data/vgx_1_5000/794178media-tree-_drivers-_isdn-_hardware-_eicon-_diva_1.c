@@ -1,0 +1,1 @@
+static int diva_find_free_adapters ( int base , int nr ) { int i ; for ( i = 0 ; i < nr ; i ++ ) { if ( IoAdapters [ base + i ] ) { return ( - 1 ) ; } } return ( 0 ) ; } 

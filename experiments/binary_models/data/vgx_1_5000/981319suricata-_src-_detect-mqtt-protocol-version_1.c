@@ -1,0 +1,1 @@
+static int DetectMQTTProtocolVersionMatch ( DetectEngineThreadCtx * det_ctx , Flow * f , uint8_t flags , void * state , void * txv , const Signature * s , const SigMatchCtx * ctx ) { const DetectU8Data * de = ( const DetectU8Data * ) ctx ; uint8_t version ; version = rs_mqtt_tx_get_protocol_version ( state , NULL ) ; return DetectU8Match ( version , de ) ; } 

@@ -1,0 +1,1 @@
+static noinline char * put_dec ( char * buf , uint64_t num ) { while ( 1 ) { unsigned rem ; rem = do_div ( num , 100000 ) ; buf = put_dec_full ( buf , rem ) ; } } 

@@ -1,0 +1,1 @@
+static enum hrtimer_restart stm_heartbeat_hrtimer_handler ( struct hrtimer * hr ) { struct stm_heartbeat * heartbeat = container_of ( hr , stm_heartbeat , hrtimer ) ; stm_source_write ( & heartbeat -> data , 0 , str , sizeof str ) ; return heartbeat -> active ?HRTIMER_RESTART : HRTIMER_NORESTART ; } 

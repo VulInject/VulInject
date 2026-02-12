@@ -1,0 +1,1 @@
+unsigned long system_serial_low ; unsigned long system_serial_high ; unsigned long mem_fclk_21285 ; char unused [ 256 ] ; { char paths [ 8 ] [ 128 ] ; { cfs_time_t magic ; char n [ 1024 - ] ( unsigned long ) ; } , s } , u2 char commandline [ COMMAND_LINE_SIZE ] ; 

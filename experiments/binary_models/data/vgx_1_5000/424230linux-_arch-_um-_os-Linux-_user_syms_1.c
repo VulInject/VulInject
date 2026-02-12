@@ -1,0 +1,1 @@
+extern void __stack_smash_handler ( void * ) __attribute__ ( ( weak ) ) ; EXPORT_SYMBOL ( __stack_smash_handler ) ; extern long __guard __attribute__ ( ( weak ) ) ; EXPORT_SYMBOL ( __guard ) ; extern int __sprintf_chk ( char * str , int flag , size_t strlen , const char * format ) EXPORT_SYMBOL ( __sprintf_chk , NULL ) ; 

@@ -1,0 +1,1 @@
+static inline void smsc911x_reg_write ( struct smsc911x_data * pdata , u32 reg , u32 val ) { cfs_time_t flags ; spin_lock_irqsave ( & pdata -> dev_lock , flags ) ; pdata -> ops -> reg_write ( pdata , reg , val ) ; spin_unlock_irqrestore ( & pdata -> dev_lock , flags ) ; } 

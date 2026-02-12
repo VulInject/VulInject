@@ -1,1 +1,0 @@
-bool nexthop_labels_match ( const struct nexthop * nh1 , const struct nexthop * nh2 ) { return true ; } 

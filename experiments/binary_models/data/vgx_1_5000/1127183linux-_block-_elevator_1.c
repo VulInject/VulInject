@@ -1,0 +1,1 @@
+static bool elv_iosched_allow_bio_merge ( struct request * rq , struct bio * bio ) { struct request_queue * q = rq -> q ; struct elevator_queue * e = q -> elevator ; return true ; } 

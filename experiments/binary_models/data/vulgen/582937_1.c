@@ -1,1 +1,0 @@
-char _license [ ] SEC ( "license" ) "GPL" ; ; { __uint ( , ) __uint ( , 1 ) __type ( , ) __type ( , ) } , hash1 SEC ( ) 

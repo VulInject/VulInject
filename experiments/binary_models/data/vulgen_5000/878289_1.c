@@ -1,0 +1,1 @@
+static irqreturn_t jcore_timer_interrupt ( int irq , void * dev_id ) { struct jcore_pit * pit = this_cpu_ptr ( dev_id ) ; pit -> ced . event_handler ( & pit -> ced ) ; return IRQ_HANDLED ; } 

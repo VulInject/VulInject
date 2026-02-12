@@ -1,0 +1,1 @@
+static int udl_usb_resume ( struct usb_interface * interface ) { struct drm_device * dev = usb_get_intfdata ( interface ) ; udl_modeset_restore ( dev , NULL ) ; return 0 ; } 

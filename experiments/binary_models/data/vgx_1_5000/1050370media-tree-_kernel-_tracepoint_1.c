@@ -1,0 +1,1 @@
+static DEFINE_MUTEX ( tracepoints_mutex ) ; tp_probes { struct rcu_head rcu ; int probes [ 0 ] ; } 

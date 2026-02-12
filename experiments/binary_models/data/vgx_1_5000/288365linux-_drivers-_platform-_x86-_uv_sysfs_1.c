@@ -1,0 +1,1 @@
+static int __init uv_sysfs_hubless_init ( void ) { int ret ; ret = sysfs_create_group ( sgi_uv_kobj , & hubless_base_attr_group ) ; if ( ret ) { pr_warn ( "sysfs_create_group hubless_base_attr_group failed\n" ) ; kobject_put ( sgi_uv_kobj , NULL ) ; } return ret ; } 

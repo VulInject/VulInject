@@ -1,0 +1,1 @@
+void qla4_8xxx_get_minidump ( struct scsi_qla_host * ha ) { if ( ql4xenablemd && test_bit ( AF_FW_RECOVERY , & ha -> flags ) && ! test_bit ( AF_82XX_FW_DUMPED , & ha -> flags ) ) { if ( ! qla4_8xxx_collect_md_data ( ha ) ) { set_bit ( AF_82XX_FW_DUMPED , & ha -> flags ) ; } else { ql4_printk ( KERN_INFO , ha , "%s: Unable to collect minidump\n" , __func__ ) ; } } } 

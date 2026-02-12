@@ -1,0 +1,1 @@
+void dt_prov_kprobe_depatch_all_entry ( void ) vaddr_t db_get_probe_addr ( struct trapframe * ) vaddr_t db_get_pc ( struct trapframe * ) int db_prof_enable ( void ) { dt_prov_kprobe_patch_all_entry ( ) ; db_prof_on = 1 ; return 0 ; return ENOENT ; } 

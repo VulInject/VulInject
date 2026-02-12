@@ -1,0 +1,1 @@
+ROCCAT_COMMON2_BIN_ATTRIBUTE_RW ( info , 0x9 , 0x08 ) ; static struct bin_attribute * savu_bin_attrs [ ] { & bin_attr_control & bin_attr_profile & bin_attr_general & bin_attr_buttons & bin_attr_macro & bin_attr_info & bin_attr_sensor NULL } ; ; 

@@ -1,0 +1,1 @@
+int mdvi_unregister_special ( const char * prefix ) { DviSpecial * sp ; sp = find_special_prefix ( prefix ) ; mdvi_free ( sp -> prefix ) ; if ( sp -> has_reg ) { regfree ( & sp -> reg ) ; } listh_remove ( & specials , LIST ( sp ) ) ; mdvi_free ( sp ) ; return 0 ; } 

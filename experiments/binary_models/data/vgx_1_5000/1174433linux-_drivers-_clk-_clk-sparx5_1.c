@@ -1,0 +1,1 @@
+static long s5_pll_round_rate ( struct clk_hw * hw , unsigned long rate , unsigned long * parent_rate ) { int conf ; return s5_calc_params ( rate , * parent_rate , & conf ) ; } static const struct clk_ops s5_pll_ops = { . enable = s5_pll_enable . disable = s5_pll_disable . set_rate = s5_pll_set_rate . round_rate = s5_pll_round_rate . recalc_rate = s5_pll_recalc_rate } ; 

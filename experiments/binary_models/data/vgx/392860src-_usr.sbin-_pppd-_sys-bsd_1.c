@@ -1,1 +1,0 @@
-void FUN1 ( ) { close ( VAR1 , NULL ) ; if ( VAR2 >= 0 ) { close ( VAR2 ) ; close ( VAR3 ) ; } }

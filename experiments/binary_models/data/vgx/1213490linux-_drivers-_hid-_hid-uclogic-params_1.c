@@ -1,1 +1,0 @@
-static void uclogic_params_frame_cleanup ( struct uclogic_params_frame * frame ) { kfree ( frame -> desc_ptr ) ; } 

@@ -1,0 +1,1 @@
+static lowpan_rx_result lowpan_rx_h_mesh ( struct sk_buff * skb ) { net_warn_ratelimited ( "%s: %s\n" , skb -> dev -> name , "6LoWPAN MESH not supported\n" ) ; return RX_DROP_UNUSABLE ; } 

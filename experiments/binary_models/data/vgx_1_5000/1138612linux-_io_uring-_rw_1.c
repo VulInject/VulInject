@@ -1,0 +1,1 @@
+static bool io_resubmit_prep ( struct io_kiocb * req ) { struct io_async_rw * io = req -> async_data ; iov_iter_restore ( & io -> s . iter , & io -> s . iter_state ) ; return true ; } 

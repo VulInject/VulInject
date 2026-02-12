@@ -1,0 +1,1 @@
+int X509_policy_tree_level_count ( const X509_POLICY_TREE * tree ) { return tree -> nlevel ; } 

@@ -1,1 +1,0 @@
-target_ulong cpu_get_ccr ( CPUSPARCState * env ) { target_ulong psr ; psr = cpu_get_psr ( env , NULL ) ; return ( ( env -> xcc >> 20 ) << 4 ) | ( ( psr & PSR_ICC ) >> 20 ) ; } 

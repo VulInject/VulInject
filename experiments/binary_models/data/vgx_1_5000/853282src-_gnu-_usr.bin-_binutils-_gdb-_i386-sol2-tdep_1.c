@@ -1,0 +1,1 @@
+i386_sol2_osabi_sniffer ( ) { return GDB_OSABI_UNKNOWN ; } 

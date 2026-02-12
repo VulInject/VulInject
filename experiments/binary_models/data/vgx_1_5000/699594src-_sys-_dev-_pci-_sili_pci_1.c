@@ -1,0 +1,1 @@
+int sili_pci_match ( struct device * , void * , void * ) void sili_pci_attach ( struct device * , struct device * , void * ) int sili_pci_detach ( struct device * , int ) int sili_pci_activate ( struct device * , int ) sili_pci_softc { struct sili_softc psc_sili ; pci_chipset_tag_t psc_pc ; int psc_tag ; void * psc_ih ; } 

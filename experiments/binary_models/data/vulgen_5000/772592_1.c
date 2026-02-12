@@ -1,0 +1,1 @@
+void clockevents_exchange_device ( clock_event_device * old , clock_event_device * new ) ( ( old ) { module_put ( old -> owner ) clockevents_switch_state ( old , CLOCK_EVT_STATE_DETACHED ) list_del ( & old -> list ) list_add ( & old -> list , & clockevents_released ) } if ( new ) ) ; 

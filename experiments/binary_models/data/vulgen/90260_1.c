@@ -1,1 +1,0 @@
-void apecs_bus_dmamap_unload_sgmap ( bus_dma_tag_t , bus_dmamap_t ) { alpha_mb ( ) ; REGVAL ( EPIC_TBIA ) = 0 ; } 0 ; 

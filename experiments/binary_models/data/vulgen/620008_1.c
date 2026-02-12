@@ -1,1 +1,0 @@
-block_label ( ) basic_block block ; { if ( GET_CODE ( block -> head ) != CODE_LABEL ) { block -> head = emit_label_before ( gen_label_rtx ( ) , block -> head ) ; } return block -> head ; } 

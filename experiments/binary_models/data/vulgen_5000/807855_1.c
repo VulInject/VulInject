@@ -1,0 +1,1 @@
+static int kaif_get_register ( const char * regname , kreg_t * valp ) { kreg_t * regp ; * valp = * regp ; return ( 0 ) ; } 

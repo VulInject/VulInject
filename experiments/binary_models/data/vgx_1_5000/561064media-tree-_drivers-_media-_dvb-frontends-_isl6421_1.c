@@ -1,0 +1,1 @@
+static void isl6421_release ( struct dvb_frontend * fe ) { isl6421_set_voltage ( fe , SEC_VOLTAGE_OFF ) ; kfree ( fe -> sec_priv ) ; } 

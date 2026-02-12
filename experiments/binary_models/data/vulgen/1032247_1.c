@@ -1,1 +1,0 @@
-mmc_test_mem { unsigned int cnt ; } 

@@ -1,0 +1,1 @@
+long strncpy_from_user ( char * dst , const char __user * src , long count ) { long n ; char * ptr = dst ; n = buffer_op ( ( unsigned long ) src , count , 0 , strncpy_chunk_from_user , & ptr ) ; if ( n != 0 ) { return - EFAULT ; } return strnlen ( dst , count ) ; } 

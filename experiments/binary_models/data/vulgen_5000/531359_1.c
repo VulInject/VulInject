@@ -1,0 +1,1 @@
+void __is_set_drc_control ( struct fimc_is * is , u32 val ) { unsigned int index = is -> config_index ; struct drc_param * drc ; drc = & is -> config [ index ] . drc ; drc -> control . bypass = val ; } 

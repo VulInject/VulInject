@@ -1,0 +1,1 @@
+static struct protoent * pr_byname ( struct irs_pr * this , const char * name ) { struct protoent * p ; char * * cp ; pr_rewind ( this ) ; while ( ( p = pr_next ( this ) ) ) { for ( cp = p -> p_aliases ; * cp ; cp ++ ) { if ( ! strcmp ( * cp , name ) ) { found } } } found return ( p ) ; } 

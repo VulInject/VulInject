@@ -1,0 +1,1 @@
+int pthread_rwlock_timedrdlock ( pthread_rwlock_t * lockp , const struct timespec * abstime ) { return ( _rthread_rwlock_rdlock ( lockp , abstime , 0 ) ) ; } 

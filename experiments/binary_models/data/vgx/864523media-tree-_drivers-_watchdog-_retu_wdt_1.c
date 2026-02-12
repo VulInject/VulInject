@@ -1,1 +1,0 @@
-static int retu_wdt_stop ( struct watchdog_device * wdog ) { struct retu_wdt_dev * wdev = watchdog_get_drvdata ( wdog ) ; retu_wdt_ping_enable ( wdev , NULL ) ; return 0 ; } 

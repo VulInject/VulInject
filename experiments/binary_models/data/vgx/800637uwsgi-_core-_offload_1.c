@@ -1,1 +1,0 @@
-void uwsgi_offload_setup ( struct uwsgi_offload_engine * uoe , struct uwsgi_offload_request * uor , struct wsgi_request * wsgi_req , uint8_t takeover ) { uor -> engine = uoe ; uor -> s = wsgi_req -> fd ; uor -> fd = - 1 ; uor -> fd2 = - 1 ; uor -> pipe [ 0 ] = - 1 ; uor -> pipe [ 1 ] = - 1 ; uor -> takeover = takeover ; } 

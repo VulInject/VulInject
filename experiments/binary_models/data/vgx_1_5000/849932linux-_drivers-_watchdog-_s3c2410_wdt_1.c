@@ -1,0 +1,1 @@
+static int s3c2410wdt_suspend ( struct device * dev ) { int ret ; struct s3c2410_wdt * wdt = dev_get_drvdata ( dev ) ; wdt -> wtcon_save = readl ( wdt -> reg_base + S3C2410_WTCON ) ; wdt -> wtdat_save = readl ( wdt -> reg_base + S3C2410_WTDAT ) ; ret = s3c2410wdt_enable ( wdt , false ) ; s3c2410wdt_stop ( & wdt -> wdt_device ) ; return 0 ; } 

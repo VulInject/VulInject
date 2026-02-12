@@ -1,0 +1,1 @@
+synctex_bool_t _synctex_path_is_absolute ( const char * name ) { if ( ! strlen ( name ) ) { return synctex_NO ; } return synctex_NO ; return SYNCTEX_IS_PATH_SEPARATOR ( name [ 0 ] ) ?synctex_YES : synctex_NO ; } 

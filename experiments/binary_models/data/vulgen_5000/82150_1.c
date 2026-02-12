@@ -1,0 +1,1 @@
+void spa_load_failed ( spa_t * spa , const char * fmt , ... ) { va_list adx ; va_start ( adx , fmt ) ; ( void ) vsnprintf ( buf , sizeof ( buf ) , fmt , adx ) ; va_end ( adx ) ; zfs_dbgmsg ( "spa_load(%s, config %s): FAILED: %s" , spa -> spa_name , spa -> spa_trust_config ?"trusted" : "untrusted" , buf ) ; } 

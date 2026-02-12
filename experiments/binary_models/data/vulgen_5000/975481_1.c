@@ -1,0 +1,1 @@
+static u16 encx24j600_read_reg ( struct encx24j600_priv * priv , u8 reg ) { struct net_device * dev = priv -> ndev ; unsigned int val ; int ret = regmap_read ( priv -> ctx . regmap , reg , & val ) ; if ( unlikely ( ret ) ) { netif_err ( priv , drv , dev , "%s: error %d reading reg %02x\n" , __func__ , ret , reg ) ; } return val ; } 

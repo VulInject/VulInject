@@ -1,0 +1,1 @@
+void * func_ptr ( void ) static func_ptr __CTOR_LIST__ [ 1 ] __attribute__ ( ( section ( ".ctors" ) ) ) { ( func_ptr ) ( - 1 ) } ; ; static func_ptr __DTOR_LIST__ [ 1 ] __attribute__ ( ( section ( ".dtors" ) ) ) { ( func_ptr ) ( - 1 ) } ; ; static void __do_global_dtors ( void ) { func_ptr * p ; for ( p = __DTOR_LIST__ + 1 ; * p ; p ++ ) { * p ( ) ; } } 

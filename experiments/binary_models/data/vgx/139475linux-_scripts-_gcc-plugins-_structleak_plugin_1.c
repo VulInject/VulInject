@@ -1,1 +1,0 @@
-static tree FUN1 ( VAR1 * VAR2 , tree VAR3 , tree VAR4 , int VAR5 , bool * VAR6 ) { * VAR6 = true ; * VAR6 = false ; return VAR7 ; }

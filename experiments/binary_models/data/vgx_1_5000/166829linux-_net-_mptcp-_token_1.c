@@ -1,0 +1,1 @@
+static struct mptcp_subflow_request_sock * __token_lookup_req ( struct token_bucket * t , u32 token ) { struct mptcp_subflow_request_sock * req ; struct hlist_nulls_node * pos ; hlist_nulls_for_each_entry_rcu ( , , , ) return NULL ; } 

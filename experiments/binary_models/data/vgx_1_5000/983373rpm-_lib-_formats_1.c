@@ -1,0 +1,1 @@
+char * rpmHeaderFormatCall ( headerFmt fmt , rpmtd td ) { char * ret = NULL ; char * err = NULL ; if ( fmt -> class != RPM_ANY_CLASS && rpmtdClass ( td ) != fmt -> class ) { err = xstrdup ( classEr ( fmt -> class ) ) ; } else { ret = fmt -> func ( td , & err ) ; } if ( err ) { ret = err ; } return ret ; } 

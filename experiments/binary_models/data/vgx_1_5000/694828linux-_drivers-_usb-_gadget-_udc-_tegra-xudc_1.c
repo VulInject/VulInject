@@ -1,0 +1,1 @@
+static dma_addr_t trb_virt_to_phys ( struct tegra_xudc_ep * ep , struct tegra_xudc_trb * trb ) { unsigned int index ; index = trb - ep -> transfer_ring ; return ( ep -> transfer_ring_phys + index * sizeof ( * trb ) ) ; } 

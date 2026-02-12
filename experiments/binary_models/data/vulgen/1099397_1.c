@@ -1,1 +1,0 @@
-struct secalgo_hash * secalgo_hash_create_sha512 ( int ) { return secalgo_hash_create_md ( EVP_sha512 ( ) ) ; } 

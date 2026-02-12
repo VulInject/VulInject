@@ -1,0 +1,1 @@
+. hid_width = 5 , . parent_map = disp_cc_parent_map_0 , . freq_tbl = ftbl_disp_cc_mdss_esc0_clk_src , . clkr . hw . init = & ( clk_init_data ) { . name = "disp_cc_mdss_esc0_clk_src" . parent_data = disp_cc_parent_data_0 . num_parents = ARRAY_SIZE ( ) . ops = & clk_rcg2_shared_ops } , ; 

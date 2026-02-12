@@ -1,1 +1,0 @@
-int etnaviv_gem_prime_mmap ( struct drm_gem_object * obj , struct vm_area_struct * vma ) { struct etnaviv_gem_object * etnaviv_obj = to_etnaviv_bo ( obj ) ; int ret ; ret = drm_gem_mmap_obj ( obj , obj -> size , vma ) ; return etnaviv_obj -> ops -> mmap ( etnaviv_obj , vma ) ; } 

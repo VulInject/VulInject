@@ -1,1 +1,0 @@
-static void zip_source_file_stat_init ( zip_source_file_stat_t * st ) { st -> size = 0 ; st -> exists = false ; st -> regular_file = false ; } 

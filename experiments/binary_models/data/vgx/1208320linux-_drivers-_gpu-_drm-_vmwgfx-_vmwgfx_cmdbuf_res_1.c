@@ -1,1 +1,0 @@
-void vmw_cmdbuf_res_man_destroy ( struct vmw_cmdbuf_res_manager * man ) { struct vmw_cmdbuf_res * entry , * next ; list_for_each_entry_safe ( , , , ) vmw_cmdbuf_res_free ( man , entry ) ; } 

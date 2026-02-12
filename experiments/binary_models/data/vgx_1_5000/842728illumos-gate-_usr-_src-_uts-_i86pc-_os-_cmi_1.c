@@ -1,0 +1,1 @@
+cmi_errno_t cmi_mc_register_global ( const cmi_mc_ops_t * mcops , void * mcdata ) { if ( ! cmi_no_mca_init ) { cmi_mc_global_data = mcdata ; cmi_mc_global_ops = mcops ; } return ( CMI_SUCCESS ) ; } 

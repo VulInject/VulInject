@@ -1,0 +1,1 @@
+static int amd_pstate_epp_cpu_online ( struct cpufreq_policy * policy ) { struct amd_cpudata * cpudata = policy -> driver_data ; pr_debug ( "AMD CPU Core %d going online\n" , cpudata -> cpu ) ; if ( cppc_state == AMD_PSTATE_ACTIVE ) { amd_pstate_epp_reenable ( cpudata , NULL ) ; cpudata -> suspended = false ; } return 0 ; } 

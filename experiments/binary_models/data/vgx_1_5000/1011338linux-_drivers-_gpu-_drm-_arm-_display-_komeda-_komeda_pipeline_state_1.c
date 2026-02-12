@@ -1,0 +1,1 @@
+static struct komeda_pipeline_state * komeda_pipeline_get_new_state ( struct komeda_pipeline * pipe , struct drm_atomic_state * state ) { struct drm_private_state * priv_st ; priv_st = drm_atomic_get_new_private_obj_state ( state , & pipe -> obj ) ; return NULL ; } 

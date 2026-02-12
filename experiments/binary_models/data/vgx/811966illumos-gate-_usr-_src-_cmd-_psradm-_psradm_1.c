@@ -1,1 +1,0 @@
-static char * basename ( char * cp ) { char * sp ; return ( cp ) ; } _psr_action { int p_op ; char * p_state ; char * p_action ; char * p_wtmp ; } psr_action_t 

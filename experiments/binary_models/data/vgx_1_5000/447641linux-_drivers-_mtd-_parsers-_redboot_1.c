@@ -1,0 +1,1 @@
+fis_image_desc { unsigned char name [ 16 ] ; u32 flash_base ; u32 mem_base ; u32 size ; u32 entry_point ; u32 data_length ; int _pad [ 256 - ( 16 + 7 * sizeof ( u32 ) ) ] ; u32 desc_cksum ; u32 file_cksum ; } 

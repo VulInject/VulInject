@@ -1,0 +1,1 @@
+static int mntroot ( struct vfs * vfsp , struct vnode * * vpp ) { struct vnode * vp = MTOV ( mnp ) ; VN_HOLD ( vp ) ; * vpp = vp ; return ( 0 ) ; } 

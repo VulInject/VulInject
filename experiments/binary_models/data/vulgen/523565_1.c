@@ -1,1 +1,0 @@
-static void fill_row ( short * private , const short * public , unsigned width , unsigned padding ) { assert ( ( int ) width >= 0 ) ; assert ( ( int ) padding >= 0 ) ; memcpy ( private , public , width * sizeof ( short ) ) ; } 

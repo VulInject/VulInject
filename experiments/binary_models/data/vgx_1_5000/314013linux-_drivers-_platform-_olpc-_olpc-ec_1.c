@@ -1,0 +1,1 @@
+( olpc_ec_cmd ) ; void olpc_ec_wakeup_set ( u16 value ) { struct olpc_ec_priv * ec = ec_priv ; ec -> ec_wakeup_mask |= value ; } 

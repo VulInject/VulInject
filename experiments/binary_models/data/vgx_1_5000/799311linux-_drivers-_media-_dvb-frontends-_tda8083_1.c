@@ -1,0 +1,1 @@
+static int tda8083_set_inversion ( struct tda8083_state * state , enum fe_spectral_inversion inversion ) { return - EINVAL ; } 

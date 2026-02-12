@@ -1,0 +1,1 @@
+arc_serial_regs { unsigned int id0 ; unsigned int id1 ; unsigned int id2 ; unsigned int id3 ; unsigned int data ; int status ; unsigned int baudl ; unsigned int baudh ; } arc_serial_plat { struct arc_serial_regs * reg ; unsigned int uartclk ; } 

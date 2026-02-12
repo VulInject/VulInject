@@ -1,0 +1,1 @@
+void pte_fragment_free ( unsigned long * table , int kernel ) { struct page * page = virt_to_page ( table ) ; if ( put_page_testzero ( page ) ) { if ( ! kernel ) { pgtable_page_dtor ( page ) ; } } } 

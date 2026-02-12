@@ -1,0 +1,1 @@
+int radeon_framebuffer_init ( struct drm_device * dev , struct drm_framebuffer * fb , const struct drm_mode_fb_cmd2 * mode_cmd , struct drm_gem_object * obj ) { int ret ; fb -> obj [ 0 ] = obj ; drm_helper_mode_fill_fb_struct ( dev , fb , mode_cmd ) ; ret = drm_framebuffer_init ( dev , fb , & radeon_fb_funcs ) ; if ( ret ) { return ret ; } return 0 ; } 

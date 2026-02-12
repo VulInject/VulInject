@@ -1,0 +1,1 @@
+void git_push_status_free ( push_status * status ) { git__free ( status -> msg ) ; git__free ( status -> ref ) ; git__free ( status ) ; } 

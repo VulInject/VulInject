@@ -1,0 +1,1 @@
+mn10300_local_dcache_flush ( ) ; smp_cache_call ( SMP_DCACHE_FLUSH , 0 , 0 ) ; smp_unlock_cache ( flags , NULL ) ; 

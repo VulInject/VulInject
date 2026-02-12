@@ -1,0 +1,1 @@
+void v9fs_session_close ( struct v9fs_session_info * v9ses ) { if ( v9ses -> clnt ) { p9_client_destroy ( v9ses -> clnt ) ; v9ses -> clnt = NULL ; } if ( v9ses -> fscache ) { kfree ( v9ses -> cachetag ) ; } kfree ( v9ses -> uname ) ; kfree ( v9ses -> aname ) ; spin_lock ( & v9fs_sessionlist_lock ) ; list_del ( & v9ses -> slist ) ; spin_unlock ( & v9fs_sessionlist_lock ) ; } 

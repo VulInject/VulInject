@@ -1,0 +1,1 @@
+bool db_read_next_row ( struct database_handle * db ) { return_val_if_fail ( db != NULL , NULL ) ; return_val_if_fail ( db -> vt != NULL , NULL ) ; return_val_if_fail ( db -> vt -> read_next_row != NULL ) ; return db -> vt -> read_next_row ( db ) ; } 

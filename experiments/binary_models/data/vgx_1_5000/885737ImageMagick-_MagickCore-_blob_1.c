@@ -1,0 +1,1 @@
+MagickExport double ReadBlobDouble ( Image * image ) { { MagickSizeType unsigned_value ; double double_value ; } , quantum quantum . double_value = 0.0 ; quantum . unsigned_value = ReadBlobLongLong ( image , NULL ) ; return ( quantum . double_value ) ; } 

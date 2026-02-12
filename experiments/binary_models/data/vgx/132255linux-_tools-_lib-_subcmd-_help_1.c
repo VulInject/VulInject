@@ -1,1 +1,0 @@
-static int FUN1 ( const char * VAR1 ) { int VAR2 ; if ( FUN2 ( VAR1 , & VAR2 ) || ! FUN3 ( VAR2 . VAR3 ) ) { return 0 ; } return VAR2 . VAR3 & VAR4 ; }

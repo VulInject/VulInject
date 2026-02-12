@@ -1,0 +1,1 @@
+static void riscv_harts_class_init ( ObjectClass * klass , void * data ) { DeviceClass * dc = DEVICE_CLASS ( klass ) ; dc -> realize = riscv_harts_realize ; } static const TypeInfo riscv_harts_info = { . name = TYPE_RISCV_HART_ARRAY . parent = TYPE_SYS_BUS_DEVICE . instance_size = sizeof ( RISCVHartArrayState ) . class_init = riscv_harts_class_init } ; 

@@ -1,0 +1,1 @@
+static int __maybe_unused lxfb_suspend ( struct device * dev ) { struct fb_info * info = dev_get_drvdata ( dev ) ; console_lock ( ) ; lx_powerdown ( info , NULL ) ; fb_set_suspend ( info , 1 ) ; console_unlock ( ) ; return 0 ; } 

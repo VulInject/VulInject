@@ -1,0 +1,1 @@
+static void restart_tx_queues ( struct sge * sge ) { struct adapter * adap = sge -> adapter ; int i ; for_each_port ( , ) { struct net_device * nd = adap -> port [ i ] . dev ; if ( test_and_clear_bit ( nd -> if_port , & sge -> stopped_tx_queues ) && netif_running ( nd ) ) { sge -> stats . cmdQ_restarted [ 2 ] ++ ; netif_wake_queue ( nd ) ; } } } 

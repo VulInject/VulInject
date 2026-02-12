@@ -1,0 +1,1 @@
+errcode_t ext2fs_check_if_mounted ( const char * file , int * mount_flags ) { errcode_t errcode = 0 ; __u64 Offset , Size ; HANDLE h ; BOOLEAN Readonly ; * mount_flags = 0 ; * mount_flags &= _IsMounted ( h ) ?EXT2_MF_MOUNTED : 0 ; _CloseDisk ( h ) ; return 0 ; } 

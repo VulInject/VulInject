@@ -1,0 +1,1 @@
+static void skd_fail_all_pending ( struct skd_device * skdev ) { struct request_queue * q = skdev -> queue ; struct request * req ; for ( ; ; ) { req = blk_peek_request ( q ) ; blk_start_request ( req ) ; __blk_end_request_all ( req , - EIO ) ; } } 

@@ -1,1 +1,0 @@
-void test_tls_cleanup ( const char * keyfile ) { asn1_delete_structure ( & pkix_asn1 ) ; unlink ( keyfile , NULL ) ; } 

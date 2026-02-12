@@ -1,0 +1,1 @@
+int bpf_program_finalize ( struct bpf_program * prog ) { struct bpf_insn ins [ ] { BPF_MOV64_IMM ( BPF_REG_0 , prog -> device_list_type ) BPF_EXIT_INSN ( ) } ; ; TRACE ( "Implementing %s bpf device cgroup program" , prog -> device_list_type == LXC_BPF_DEVICE_CGROUP_DENYLIST ?"denylist" : "allowlist" ) ; return bpf_program_add_instructions ( prog , ins , ARRAY_SIZE ( ins ) ) ; } 

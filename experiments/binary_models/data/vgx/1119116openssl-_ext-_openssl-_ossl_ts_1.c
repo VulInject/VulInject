@@ -1,1 +1,0 @@
-static VALUE ossl_ts_req_get_nonce ( VALUE self ) { TS_REQ * req ; const ASN1_INTEGER * nonce ; GetTSRequest ( self , req ) ; return asn1integer_to_num ( nonce ) ; } 

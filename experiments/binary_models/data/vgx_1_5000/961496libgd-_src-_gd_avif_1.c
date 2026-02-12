@@ -1,0 +1,1 @@
+BGD_DECLARE ( ) gdImageCreateFromAvif ( ) { ARG_NOT_USED ( ctx , NULL ) ; return _noAvifError ( ) ; } 

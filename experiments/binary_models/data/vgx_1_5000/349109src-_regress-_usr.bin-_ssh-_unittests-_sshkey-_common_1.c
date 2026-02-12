@@ -1,0 +1,1 @@
+const BIGNUM * rsa_p ( struct sshkey * k ) { const BIGNUM * p = NULL ; ASSERT_PTR_NE ( k ) ; ASSERT_PTR_NE ( k -> rsa , NULL ) ; RSA_get0_factors ( k -> rsa , & p , NULL ) ; return p ; } 

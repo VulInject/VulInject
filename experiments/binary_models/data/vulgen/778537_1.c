@@ -1,1 +1,0 @@
-static void rtt_reset ( struct sock * sk ) { struct tcp_sock * tp = tcp_sk ( sk ) ; struct illinois * ca = inet_csk_ca ( sk ) ; ca -> end_seq = tp -> snd_nxt ; ca -> sum_rtt = 0 ; } 

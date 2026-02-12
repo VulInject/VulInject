@@ -1,0 +1,1 @@
+cmsStage * _cmsStageNormalizeFromLabFloat ( cmsContext ContextID ) { static const cmsFloat64Number a1 [ ] { 1.0 / 100.0 0 0 0 1.0 / 255.0 0 0 0 1.0 / 255.0 } ; ; static const cmsFloat64Number o1 [ ] { 0 128.0 / 255.0 128.0 / 255.0 } ; ; if ( mpe == NULL ) { return mpe ; } mpe -> Implements = cmsSigLab2FloatPCS ; return mpe ; } 

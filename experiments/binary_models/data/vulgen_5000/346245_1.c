@@ -1,0 +1,1 @@
+static ssize_t bcm2048_ # # prop # # _write ( , , , ) { bcm2048_device * bdev = dev_get_drvdata ( dev ) type value int err if ( ! bdev ) { return - ENODEV ; } } ; if ( sscanf ( buf , mask , & value ) != 1 ) { return - EINVAL ; } err = bcm2048_set_ # # prop ( bdev , value ) ; return err < 0 ?err : count ; 

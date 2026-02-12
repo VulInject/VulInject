@@ -1,0 +1,1 @@
+out_be32 ( mcm_vaddr + ( MCM_PORT_CONFIG_OFFSET >> 2 ) , pcr ) ; iounmap ( mcm_vaddr , NULL ) ; 

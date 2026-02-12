@@ -1,0 +1,1 @@
+int vpci_match ( struct device * parent , void * match , void * aux ) { struct mainbus_attach_args * ma = aux ; return ( OF_is_compatible ( ma -> ma_node , "SUNW,sun4v-pci" ) || OF_is_compatible ( ma -> ma_node , "SUNW,sun4v-vpci" ) ) ; } 

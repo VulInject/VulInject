@@ -1,0 +1,1 @@
+int db_inputchar ( int ) char * db_lbuf_start ; char * db_lbuf_end ; char * db_lc ; char * db_le ; char db_history [ DB_HISTORY_SIZE ] ; int db_history_size = DB_HISTORY_SIZE ; char * db_history_curr = db_history ; char * db_history_last = db_history ; void db_putstring ( char * s , int count ) { while ( -- count >= 0 ) { cnputc ( * s ++ ) ; } } 

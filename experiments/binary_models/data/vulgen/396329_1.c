@@ -1,1 +1,0 @@
-static void nvmet_init_cap ( struct nvmet_ctrl * ctrl ) { ctrl -> cap = ( 1ULL << 37 ) ; ctrl -> cap |= ( 15ULL << 24 ) ; } 

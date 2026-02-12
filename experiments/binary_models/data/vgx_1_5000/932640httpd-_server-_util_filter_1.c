@@ -1,0 +1,1 @@
+static apr_status_t request_filter_cleanup ( void * arg ) { ap_filter_t * f = arg ; conn_rec * c = f -> c ; struct ap_filter_conn_ctx * x = c -> filter_conn_ctx ; put_spare ( c , f , & x -> dead_filters ) ; return APR_SUCCESS ; } 

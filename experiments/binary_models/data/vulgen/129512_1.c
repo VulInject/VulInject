@@ -1,1 +1,0 @@
-int item_opts_on ( ITEM * i , int opt ) { return ( set_item_opts ( i , ( Iopt ( i ?i : Dfl_Item ) ) | opt ) ) ; } 

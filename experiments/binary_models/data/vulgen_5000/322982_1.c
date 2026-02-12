@@ -1,0 +1,1 @@
+static int timeriomem_rng_remove ( struct platform_device * pdev ) { struct timeriomem_rng_private * priv = platform_get_drvdata ( pdev ) ; return 0 ; } static const struct of_device_id timeriomem_rng_match [ ] { { . compatible = "timeriomem_rng" } { } } ; ; 

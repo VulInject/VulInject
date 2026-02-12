@@ -1,0 +1,1 @@
+static int mgag200fb_create_object ( struct mga_fbdev * afbdev , const struct drm_mode_fb_cmd2 * mode_cmd , struct drm_gem_object * * gobj_p ) { struct drm_device * dev = afbdev -> helper . dev ; u32 size ; struct drm_gem_object * gobj ; int ret = 0 ; size = mode_cmd -> pitches [ 0 ] * mode_cmd -> height ; if ( ret ) { return ret ; } * gobj_p = gobj ; return ret ; } 

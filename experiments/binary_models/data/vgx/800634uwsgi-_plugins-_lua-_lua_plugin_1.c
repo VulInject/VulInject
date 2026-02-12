@@ -1,1 +1,0 @@
-static void FUN1 ( char * VAR1 , char * VAR2 , void * VAR3 ) { FUN2 ( NULL , NULL , NULL ) ; }

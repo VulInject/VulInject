@@ -1,0 +1,1 @@
+static __init int sel_netif_init ( void ) { int i ; for ( i = 0 ; i < SEL_NETIF_HASH_SIZE ; i ++ ) { INIT_LIST_HEAD ( & sel_netif_hash [ i ] ) ; } register_netdevice_notifier ( & sel_netif_netdev_notifier ) ; return 0 ; } 

@@ -1,1 +1,0 @@
-void wl1271_debugfs_exit ( struct wl1271 * wl ) { kfree ( wl -> stats . fw_stats ) ; } 

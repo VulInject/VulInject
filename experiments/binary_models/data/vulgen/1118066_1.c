@@ -1,1 +1,0 @@
-static int counter ; static char * list_fmt_buff = NULL ; sr_xavp_t * xavp_get_lists ( ) { sr_xavp_t * list ; list = xavp_get ( & list_list , NULL ) ; if ( ! list ) { counter = 0 ; } return list ; } 

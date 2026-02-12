@@ -1,1 +1,0 @@
-void __init imx27_pm_init ( void ) { } 

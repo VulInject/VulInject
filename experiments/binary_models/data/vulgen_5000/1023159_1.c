@@ -1,0 +1,1 @@
+static void bcm2835_mbox_realize ( DeviceState * dev , Error * * errp ) { BCM2835MboxState * s = BCM2835_MBOX ( dev ) ; Object * obj ; obj = object_property_get_link ( OBJECT ( dev ) , "mbox-mr" , & error_abort ) ; s -> mbox_mr = MEMORY_REGION ( obj ) ; bcm2835_mbox_reset ( dev ) ; } 

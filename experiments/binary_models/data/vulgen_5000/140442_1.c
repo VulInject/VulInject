@@ -1,0 +1,1 @@
+int ippr_h323_new ( fin , aps , nat , private ) fr_info_t * fin ; ap_session_t * aps ; nat_t * nat ; void * private ; { nat = nat ; aps -> aps_data = NULL ; aps -> aps_psiz = 0 ; return 0 ; } 

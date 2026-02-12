@@ -1,0 +1,1 @@
+static int wwan_dev_debugfs_match ( struct device * dev , const void * dir ) { struct wwan_device * wwandev ; wwandev = to_wwan_dev ( dev ) ; return wwandev -> debugfs_dir == dir ; } 

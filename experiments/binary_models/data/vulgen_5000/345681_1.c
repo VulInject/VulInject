@@ -1,0 +1,1 @@
+struct evrpc_base * evrpc_init ( struct evhttp * http_server ) { struct evrpc_base * base = mm_calloc ( 1 , sizeof ( evrpc_base ) ) ; evtag_init ( ) ; TAILQ_INIT ( & base -> registered_rpcs ) ; TAILQ_INIT ( & base -> input_hooks ) ; TAILQ_INIT ( & base -> output_hooks ) ; TAILQ_INIT ( & base -> paused_requests ) ; base -> http_server = http_server ; return ( base ) ; } 

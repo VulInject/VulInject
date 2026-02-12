@@ -1,1 +1,0 @@
-static void InitializeDcrawOpenCL ( ExceptionInfo * magick_unused ( exception ) ) { magick_unreferenced ( exception ) ; } 

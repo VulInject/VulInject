@@ -1,0 +1,1 @@
+static inline int miphy28lp_wait_compensation ( struct miphy28lp_phy * miphy_phy ) { unsigned long finish = jiffies + 5 * HZ ; u8 val ; { val = readb_relaxed ( miphy_phy -> base + MIPHY_COMP_FSM_6 ) ; cpu_relax ( ) ; } ! ( val & COMP_DONE ) ; return 0 ; } 

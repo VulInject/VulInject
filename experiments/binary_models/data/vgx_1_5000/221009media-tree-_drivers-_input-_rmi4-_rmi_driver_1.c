@@ -1,0 +1,1 @@
+static int reset_one_function ( struct rmi_function * fn ) { struct rmi_function_handler * fh ; int retval = 0 ; fh = to_rmi_function_handler ( fn -> dev . driver ) ; if ( fh -> reset ) { retval = fh -> reset ( fn ) ; if ( retval < 0 ) { dev_err ( & fn -> dev , "Reset failed with code %d.\n" , retval ) ; } } return retval ; } 

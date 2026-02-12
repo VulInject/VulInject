@@ -1,1 +1,0 @@
-static int mctp_release ( struct socket * sock ) { struct sock * sk = sock -> sk ; if ( sk ) { sock -> sk = NULL ; } return 0 ; } 

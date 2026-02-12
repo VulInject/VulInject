@@ -1,0 +1,1 @@
+if , write to the Free Software Foundation , Inc . , * Franklin Street , Fifth Floor , Boston , MA USA . * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * int ( int argc , char * argv [ ] ) ( printf ( "%lu\n" , ( unsigned long ) * 8 ) ) ; return 0 ; 

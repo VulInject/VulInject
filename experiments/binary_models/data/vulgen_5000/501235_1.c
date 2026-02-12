@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( DRIVER_DESC ) ; MODULE_LICENSE ( "GPL" ) ; static int magellan_buttons [ ] { BTN_0 BTN_1 BTN_2 BTN_3 BTN_4 BTN_5 BTN_6 BTN_7 BTN_8 } ; ; static int magellan_axes [ ] { ABS_X ABS_Y ABS_Z ABS_RX ABS_RY ABS_RZ } ; ; magellan { struct input_dev * dev ; int idx ; unsigned char data [ MAGELLAN_MAX_LENGTH ] ; } 

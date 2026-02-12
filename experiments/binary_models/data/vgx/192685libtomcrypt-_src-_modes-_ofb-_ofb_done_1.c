@@ -1,1 +1,0 @@
-int ofb_done ( symmetric_OFB * ofb ) { int err ; LTC_ARGCHK ( ofb != NULL ) ; cipher_descriptor [ ofb -> cipher ] . done ( & ofb -> key ) ; return CRYPT_OK ; } 

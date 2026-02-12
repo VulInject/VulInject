@@ -1,0 +1,1 @@
+void pcmu_ecc_err_drain ( void * not_used , pcmu_ecc_errstate_t * ecc_err ) { struct async_flt * ecc = & ecc_err -> ecc_aflt ; pcmu_t * pcmu_p = ecc_err -> pecc_p -> pecc_pcmu_p ; ecc_err -> ecc_err_type = "U" ; pcmu_ecc_ereport_post ( pcmu_p -> pcmu_dip , ecc_err ) ; } 

@@ -1,1 +1,0 @@
-AcpiSetFirmwareWakingVector ( , ) { ACPI_FUNCTION_TRACE ( AcpiSetFirmwareWakingVector ) ; return_ACPI_STATUS ( AE_OK ) ; } 

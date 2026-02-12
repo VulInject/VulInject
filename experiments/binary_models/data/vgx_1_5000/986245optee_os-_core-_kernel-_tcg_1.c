@@ -1,0 +1,1 @@
+TEE_Result register_tcg_pcr_provider ( struct tcg_pcr_ops * ops ) { if ( pcr_provider ) { EMSG ( "Provider already registered" ) ; return TEE_ERROR_GENERIC ; } pcr_provider = ops ; return TEE_SUCCESS ; } 

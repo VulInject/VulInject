@@ -1,1 +1,0 @@
-static VAR1 FUN1(VAR2 *VAR3) { return VAR4; }

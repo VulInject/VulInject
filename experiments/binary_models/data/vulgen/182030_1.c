@@ -1,1 +1,0 @@
-void ctf_dprintf ( const char * format , ... ) { va_list alist ; va_start ( alist , format ) ; va_end ( alist ) ; } 

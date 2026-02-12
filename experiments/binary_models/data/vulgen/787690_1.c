@@ -1,1 +1,0 @@
-void rdma_protected_gqueue_init ( RdmaProtectedGQueue * list ) { qemu_mutex_init ( & list -> lock ) ; } 

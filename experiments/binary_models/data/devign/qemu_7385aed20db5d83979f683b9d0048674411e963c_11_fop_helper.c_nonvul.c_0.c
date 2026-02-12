@@ -1,1 +1,0 @@
-VAR1 FUN1(VAR2 *VAR3, float32 VAR4) { return FUN2(VAR4, &VAR3->VAR5); }

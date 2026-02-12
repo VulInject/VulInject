@@ -1,0 +1,1 @@
+static int hid_polled_read ( hid_polled_handle_t hid_polled_input , uchar_t * * buffer ) { hid_state_t * hidp = ( hid_state_t * ) hid_polled_input ; uint_t num_bytes ; _NOTE ( NO_COMPETING_THREADS_NOW ) ; * buffer = hidp -> hid_polled_raw_buf ; _NOTE ( COMPETING_THREADS_NOW ) ; return ( num_bytes ) ; } 

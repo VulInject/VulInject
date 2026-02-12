@@ -1,0 +1,1 @@
+int zcp_synctask_func_t ( lua_State * , boolean_t , nvlist_t * ) zcp_synctask_info { const char * name ; zcp_synctask_func_t * func ; const zcp_arg_t pargs [ 4 ] ; zfs_space_check_t space_check ; int blocks_modified ; } zcp_synctask_info_t 

@@ -1,0 +1,1 @@
+module * pr_module_get ( const char * name ) { char buf [ 80 ] { '\0' } ; ; module * m ; if ( name == NULL ) { errno = EINVAL ; return NULL ; } for ( m = loaded_modules ; m ; m = m -> next ) { pr_snprintf ( buf , sizeof ( buf ) , "mod_%s.c" , m -> name ) ; buf [ sizeof ( buf ) - 1 ] = '\0' ; if ( strcmp ( buf , name ) == 0 ) { return m ; } } errno = ENOENT ; return NULL ; } 

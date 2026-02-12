@@ -1,1 +1,0 @@
-module_init ( ah_mt_init ) ; module_exit ( ah_mt_exit , NULL ) ; 

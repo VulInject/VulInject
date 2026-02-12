@@ -1,0 +1,1 @@
+static int interface_info_compare ( const InterfaceInfo * a , const InterfaceInfo * b ) { int r ; r = CMP ( a -> index , b -> index ) ; return strcmp_ptr ( a -> name , b -> name ) ; } 

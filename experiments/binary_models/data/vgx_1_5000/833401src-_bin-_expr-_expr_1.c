@@ -1,0 +1,1 @@
+struct val * eval0 ( void ) token { OR , AND , EQ , LT , GT , ADD , SUB , MUL , DIV , MOD , MATCH , RP , LP , NE , LE , GE , OPERAND , EOI } val { { integer , string } , type { char * s ; int i ; } , u } 

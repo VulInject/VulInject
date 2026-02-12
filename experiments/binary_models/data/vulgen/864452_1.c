@@ -1,1 +1,0 @@
-static int partition_id_show ( struct seq_file * s , void * p ) { return 0 ; } 

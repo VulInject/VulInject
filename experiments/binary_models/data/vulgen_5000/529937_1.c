@@ -1,0 +1,1 @@
+__setup ( "initcall_blacklist=" , initcall_blacklist ) ; static __init_or_module void trace_initcall_start_cb ( void * data , initcall_t fn ) { ktime_t * calltime = data ; * calltime = ktime_get ( ) ; } 

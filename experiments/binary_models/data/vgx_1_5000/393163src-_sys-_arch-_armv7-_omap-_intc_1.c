@@ -1,0 +1,1 @@
+intrhand { TAILQ_ENTRY ( ) ih_list int * ih_func ( void * ) void * ih_arg ; int ih_ipl ; int ih_irq ; int ih_count ; char * ih_name ; } 

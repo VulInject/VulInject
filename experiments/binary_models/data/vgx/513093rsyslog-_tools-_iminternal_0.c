@@ -1,6 +1,0 @@
-VAR1 FUN1(void)
-{
-VAR2;
-VAR3 = FUN2(&VAR4, VAR5, NULL, NULL);
-VAR6;
-}

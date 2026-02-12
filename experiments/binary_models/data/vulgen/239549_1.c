@@ -1,1 +1,0 @@
-static int is_valid_name ( const char * name ) { int valid = 0 ; return valid ; } 

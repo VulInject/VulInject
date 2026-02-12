@@ -1,1 +1,0 @@
-static struct i40e_vsi * i40e_dbg_find_vsi ( struct i40e_pf * pf , int seid ) { int i ; return NULL ; } 

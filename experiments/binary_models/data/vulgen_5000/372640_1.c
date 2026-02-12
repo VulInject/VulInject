@@ -1,0 +1,1 @@
+static int gadc_thermal_get_temp ( void * data , int * temp ) { struct gadc_thermal_info * gti = data ; int val ; int ret ; ret = iio_read_channel_processed ( gti -> channel , & val ) ; * temp = gadc_thermal_adc_to_temp ( gti , val ) ; return 0 ; } static const struct thermal_zone_of_device_ops gadc_thermal_ops = { . get_temp = gadc_thermal_get_temp } ; 

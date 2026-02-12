@@ -1,0 +1,1 @@
+static const mrb_callinfo * find_catcher ( mrb_state * mrb , mrb_value tag ) { const mrb_callinfo * ci = mrb -> c -> ci ; size_t n = ci - mrb -> c -> cibase ; ci -- ; for ( ; n > 0 ; n -- , ci -- ) { const mrb_value * arg1 = ci -> stack + 1 ; } return NULL ; } 

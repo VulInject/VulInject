@@ -1,0 +1,1 @@
+int ZEXPORT inflatePrime ( strm , bits , value ) z_streamp strm ; int bits ; int value ; { struct inflate_state FAR * state ; if ( strm == Z_NULL || strm -> state == Z_NULL ) { return Z_STREAM_ERROR ; } state = ( inflate_state FAR * ) strm -> state ; value &= ( 1L << bits ) - 1 ; state -> hold += value << state -> bits ; state -> bits += bits ; return Z_OK ; } 

@@ -1,1 +1,0 @@
-glwthread_waitqueue_element { struct glwthread_waitqueue_link link ; int event ; } 

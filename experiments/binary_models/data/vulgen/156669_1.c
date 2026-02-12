@@ -1,1 +1,0 @@
-{ unsigned char * p ; } FILE FILE b [ 2 ] ; static unsigned char xchr [ 2 ] ; int j ; int for_end ; if ( phaseone ) { } 

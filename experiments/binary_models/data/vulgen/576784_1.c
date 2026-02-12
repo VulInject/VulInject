@@ -1,1 +1,0 @@
-static int gfar_set_mac_addr ( struct net_device * dev , void * p ) { int ret ; ret = eth_mac_addr ( dev , p ) ; if ( ret ) { return ret ; } return 0 ; } 

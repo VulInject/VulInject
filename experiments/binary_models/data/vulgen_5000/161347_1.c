@@ -1,0 +1,1 @@
+static int smu7_force_clock_level ( struct pp_hwmgr * hwmgr , enum pp_clock_type type , int mask ) static int smu7_notify_has_display ( struct pp_hwmgr * hwmgr ) static struct smu7_power_state * cast_phw_smu7_power_state ( struct pp_hw_power_state * hw_ps ) { PP_ASSERT_WITH_CODE ( , "Invalid Powerstate Type!" , ) return ( smu7_power_state * ) hw_ps ; } 

@@ -1,0 +1,1 @@
+void free_symbol_table ( void ) { symbol_table = 0 ; } 

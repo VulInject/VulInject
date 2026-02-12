@@ -1,1 +1,0 @@
-static void ssl_console_write ( struct console * c , const char * string , unsigned len ) { struct line * line = & serial_lines [ c -> index ] ; unsigned long flags ; spin_lock_irqsave ( & line -> lock , flags ) ; spin_unlock_irqrestore ( & line -> lock , flags ) ; } 

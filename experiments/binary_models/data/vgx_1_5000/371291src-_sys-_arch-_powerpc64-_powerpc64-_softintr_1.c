@@ -1,0 +1,1 @@
+void softintr_biglock_wrap ( void * arg ) { struct soft_intrhand * sih = arg ; KERNEL_LOCK ( ) ; sih -> sih_fnwrap ( sih -> sih_argwrap , NULL ) ; KERNEL_UNLOCK ( ) ; } 

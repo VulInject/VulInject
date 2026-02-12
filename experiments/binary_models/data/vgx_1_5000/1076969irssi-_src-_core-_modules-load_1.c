@@ -1,0 +1,1 @@
+static char * module_get_func ( const char * rootmodule , const char * submodule , const char * function ) { if ( g_strcmp0 ( rootmodule , submodule ) == 0 ) { return g_strconcat ( rootmodule , "_" , function , NULL ) ; } return g_strconcat ( submodule , "_" , rootmodule , "_" , function , NULL ) ; } 

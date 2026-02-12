@@ -1,0 +1,1 @@
+void drm_pci_agp_destroy ( struct drm_device * dev ) { if ( dev -> agp ) { arch_phys_wc_del ( dev -> agp -> agp_mtrr ) ; drm_legacy_agp_clear ( dev ) ; kfree ( dev -> agp ) ; } } 

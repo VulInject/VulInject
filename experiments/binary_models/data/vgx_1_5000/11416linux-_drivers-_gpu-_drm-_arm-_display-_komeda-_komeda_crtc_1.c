@@ -1,0 +1,1 @@
+static void komeda_crtc_reset ( struct drm_crtc * crtc ) { struct komeda_crtc_state * state ; if ( crtc -> state ) { __drm_atomic_helper_crtc_destroy_state ( crtc -> state ) ; } kfree ( to_kcrtc_st ( crtc -> state ) ) ; crtc -> state = NULL ; state = kmalloc ( sizeof ( * state ) , GFP_KERNEL ) ; if ( state ) { __drm_atomic_helper_crtc_reset ( crtc , & state -> base ) ; } } 

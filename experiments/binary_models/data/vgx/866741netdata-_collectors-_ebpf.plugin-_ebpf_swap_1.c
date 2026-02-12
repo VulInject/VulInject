@@ -1,1 +1,0 @@
-static void ebpf_swap_exit ( void * ptr ) { ebpf_module_t * em = ( ebpf_module_t * ) ptr ; } 

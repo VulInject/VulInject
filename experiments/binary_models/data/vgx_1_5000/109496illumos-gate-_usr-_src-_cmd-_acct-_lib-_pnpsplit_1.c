@@ -1,0 +1,1 @@
+int ssh ( ltp ) tm * ltp ; { int i ; for ( i = 0 ; holidays [ i ] >= 0 ; i ++ ) { if ( ltp -> tm_yday == holidays [ i ] ) { return ( 1 ) ; } } return ( 0 ) ; } 

@@ -1,0 +1,1 @@
+void efx_fini_struct ( struct efx_nic * efx ) { kfree ( efx -> rps_hash_table ) ; efx_fini_channels ( efx ) ; kfree ( efx -> vpd_sn ) ; if ( efx -> workqueue ) { destroy_workqueue ( efx -> workqueue ) ; } } 

@@ -1,0 +1,1 @@
+static void at76_disconnect ( struct usb_interface * interface ) { struct at76_priv * priv ; priv = usb_get_intfdata ( interface ) ; usb_set_intfdata ( interface , NULL ) ; if ( ! priv ) { return ; } wiphy_info ( priv -> hw -> wiphy , "disconnecting\n" ) ; at76_delete_device ( priv ) ; usb_put_dev ( priv -> udev , NULL ) ; dev_info ( & interface -> dev , "disconnected\n" ) ; } 

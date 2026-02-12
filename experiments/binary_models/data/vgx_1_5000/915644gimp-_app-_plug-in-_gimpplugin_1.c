@@ -1,0 +1,1 @@
+gimp_plug_in_get_proc_frame ( ) { g_return_val_if_fail ( GIMP_IS_PLUG_IN ( plug_in ) ) ; if ( plug_in -> temp_proc_frames ) { return plug_in -> temp_proc_frames -> data ; } else { return & plug_in -> main_proc_frame ; } } 

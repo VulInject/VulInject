@@ -1,0 +1,1 @@
+int fdisk_ext_part_exists ( ext_part_t * epp ) { int i ; struct ipart * part_table = epp -> mtable ; for ( i = 0 ; i < FD_NUMPART ; i ++ ) { if ( fdisk_is_dos_extended ( LE_8 ( part_table [ i ] . systid ) ) ) { break ; } } if ( i == FD_NUMPART ) { return ( 0 ) ; } return ( 1 ) ; } 

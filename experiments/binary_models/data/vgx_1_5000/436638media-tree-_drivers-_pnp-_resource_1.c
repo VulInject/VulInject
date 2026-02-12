@@ -1,0 +1,1 @@
+struct resource * pnp_get_resource ( struct pnp_dev * dev , unsigned long type , unsigned int num ) { struct pnp_resource * pnp_res ; struct resource * res ; list_for_each_entry ( , , ) { res = & pnp_res -> res ; } return NULL ; } 

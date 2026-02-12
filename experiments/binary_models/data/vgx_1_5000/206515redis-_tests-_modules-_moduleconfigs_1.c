@@ -1,0 +1,1 @@
+RedisModuleString * getStringConfigCommand ( const char * name , void * privdata ) { REDISMODULE_NOT_USED ( name ) ; REDISMODULE_NOT_USED ( privdata , NULL ) ; return strval ; } 

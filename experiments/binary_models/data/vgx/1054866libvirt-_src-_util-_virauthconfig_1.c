@@ -1,1 +1,0 @@
-void virAuthConfigFree ( virAuthConfig * auth ) { if ( ! auth ) { return ; } g_key_file_free ( auth -> keyfile ) ; g_free ( auth ) ; } 

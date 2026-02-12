@@ -1,0 +1,1 @@
+static void refresh_profiles ( void ) { if ( ! ( wdg_profiles -> flags & WDG_OBJ_FOCUSED ) ) { return ; } wdg_dynlist_refresh ( wdg_profiles , NULL ) ; } 

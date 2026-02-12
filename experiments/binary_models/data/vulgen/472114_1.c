@@ -1,1 +1,0 @@
-static rsRetVal SetDrvrMode ( netstrm_t * pThis , int iMode ) { DEFiRet ; iRet = pThis -> Drvr . SetMode ( pThis -> pDrvrData , iMode ) ; RETiRet ; } 

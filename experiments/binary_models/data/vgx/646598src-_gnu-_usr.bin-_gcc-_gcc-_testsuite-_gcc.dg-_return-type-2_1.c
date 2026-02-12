@@ -1,1 +1,0 @@
-extern void FUN1 ( void ) FUN2 ( ( VAR1 ) ) ; int FUN3 ( int VAR2 ) { FUN1 ( ) ; }

@@ -1,0 +1,1 @@
+vmw_dx_streamoutput { struct vmw_resource res ; struct vmw_resource * ctx ; struct vmw_resource * cotable ; struct list_head cotable_head ; int id ; u32 size ; bool committed ; } 

@@ -1,1 +1,0 @@
-void signotify ( struct proc * p ) { membar_producer ( ) ; aston ( p ) ; } 

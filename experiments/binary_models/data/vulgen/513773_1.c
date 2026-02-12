@@ -1,1 +1,0 @@
-static void etraxfs_ser_class_init ( ObjectClass * klass , void * data ) { DeviceClass * dc = DEVICE_CLASS ( klass ) ; dc -> reset = etraxfs_ser_reset ; device_class_set_props ( dc , etraxfs_ser_properties ) ; } 

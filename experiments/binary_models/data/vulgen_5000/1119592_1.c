@@ -1,0 +1,1 @@
+void ff_vc1_v_loop_filter8_ # # EXT ( , , ) ; void ff_vc1_h_loop_filter8_ # # EXT ( , , ) ; static void vc1_v_loop_filter16_ # # EXT ( , , ) { ff_vc1_v_loop_filter8_ # # EXT ( src , stride , pq ) ff_vc1_v_loop_filter8_ # # EXT ( src , stride , pq ) } \ ; 

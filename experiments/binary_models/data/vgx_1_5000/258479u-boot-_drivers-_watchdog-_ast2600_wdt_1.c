@@ -1,0 +1,1 @@
+static int ast2600_wdt_of_to_plat ( struct udevice * dev ) { struct ast2600_wdt_priv * priv = dev_get_priv ( dev ) ; priv -> regs = dev_read_addr_ptr ( dev ) ; return 0 ; } static const struct wdt_ops ast2600_wdt_ops = { . start = ast2600_wdt_start . reset = ast2600_wdt_reset . stop = ast2600_wdt_stop . expire_now = ast2600_wdt_expire_now } ; 

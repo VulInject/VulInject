@@ -1,1 +1,0 @@
-void XtWidgetToApplicationContext ( ) { } void XtWindow ( ) { } void XtWindowOfObject ( ) { } void XtWindowToWidget ( ) { } void _XtCheckSubclassFlag ( ) { } void _XtCopyFromArg ( ) { } void _XtInherit ( ) { } int _XtIsSubclassOf ( ) { } 

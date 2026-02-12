@@ -1,0 +1,1 @@
+static void il3945_init_alive_start ( struct il_priv * il ) { if ( il3945_verify_ucode ( il ) ) { D_INFO ( "Bad \"initialize\" uCode load.\n" ) ; restart } D_INFO ( "Initialization Alive received.\n" ) ; if ( il3945_set_ucode_ptrs ( il ) ) { D_INFO ( "Couldn't set up uCode pointers.\n" ) ; restart } return ; restart queue_work ( il -> workqueue , & il -> restart ) ; } 

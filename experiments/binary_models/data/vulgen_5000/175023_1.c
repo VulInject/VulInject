@@ -1,0 +1,1 @@
+void __init early_platform_cleanup ( void ) { struct platform_device * pd , * pd2 ; list_for_each_entry_safe ( , , , ) { list_del ( & pd -> dev . devres_head ) ; } } 

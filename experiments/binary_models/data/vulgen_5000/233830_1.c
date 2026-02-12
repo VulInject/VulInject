@@ -1,0 +1,1 @@
+int certificate_quality_check ( SSL_CTX * ctx , char * * errstr ) SSL_CTX * ctx_server ; SSL_CTX * ctx_client ; char * TLSKeyPasswd ; { int * size ; char * * buffer ; } StreamIO 

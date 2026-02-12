@@ -1,0 +1,1 @@
+int mailsession_noop ( mailsession * session ) { return session -> sess_driver -> sess_noop ( session ) ; } 

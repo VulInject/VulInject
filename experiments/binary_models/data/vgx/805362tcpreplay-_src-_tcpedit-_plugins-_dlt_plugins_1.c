@@ -1,1 +1,0 @@
-int tcpedit_dlt_dst ( tcpeditdlt_t * ctx ) { return ctx -> encoder -> dlt ; } 

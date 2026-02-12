@@ -1,0 +1,1 @@
+static void mpr121_vdd_supply_disable ( void * data ) { struct regulator * vdd_supply = data ; regulator_disable ( vdd_supply , NULL ) ; } 

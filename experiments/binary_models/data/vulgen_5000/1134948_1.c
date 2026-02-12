@@ -1,0 +1,1 @@
+static ssize_t flash_read ( struct file * file , char __user * buf , size_t size , loff_t * ppos ) { ssize_t ret ; if ( flashdebug ) { printk ( KERN_DEBUG "flash_read: flash_read: offset=0x%llx, " "buffer=%p, count=0x%zx.\n" , * ppos , buf , size ) ; } if ( mutex_lock_interruptible ( & nwflash_mutex ) ) { return - ERESTARTSYS ; } mutex_unlock ( & nwflash_mutex ) ; return ret ; } 

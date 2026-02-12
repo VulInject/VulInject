@@ -1,0 +1,1 @@
+static inline int bm_mc_result_timeout ( struct bm_portal * portal , union bm_mc_result * * mcr ) { int timeout = BM_MCR_TIMEOUT ; { * mcr = bm_mc_result ( portal ) ; udelay ( 1 ) ; } -- timeout ; return timeout ; } 

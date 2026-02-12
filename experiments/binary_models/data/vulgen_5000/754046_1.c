@@ -1,0 +1,1 @@
+void ahc_action ( struct scsi_xfer * ) void ahc_execute_scb ( void * , bus_dma_segment_t * , int ) int ahc_poll ( struct ahc_softc * , int ) void ahc_setup_data ( struct ahc_softc * , struct scsi_xfer * , struct scb * ) void ahc_adapter_req_set_xfer_mode ( struct ahc_softc * , struct scb * ) int ahc_cd = { NULL "ahc" DV_DULL } ; 

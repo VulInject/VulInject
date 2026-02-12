@@ -1,0 +1,1 @@
+static void fakelb_del ( struct fakelb_phy * phy ) { list_del ( & phy -> list ) ; ieee802154_unregister_hw ( phy -> hw ) ; } 

@@ -1,0 +1,1 @@
+static int pmu_get_ac_prop ( struct power_supply * psy , enum power_supply_property psp , union power_supply_propval * val ) { switch ( psp ) { case POWER_SUPPLY_PROP_ONLINE : break ; default : return - EINVAL ; } return 0 ; } static enum power_supply_property pmu_ac_props [ ] { POWER_SUPPLY_PROP_ONLINE } ; ; 

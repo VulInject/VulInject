@@ -1,0 +1,1 @@
+static int mips_dma_map_sg ( struct device * dev , struct scatterlist * sglist , int nents , enum dma_data_direction direction , unsigned long attrs ) { int i ; struct scatterlist * sg ; for_each_sg ( , , , ) { sg -> dma_length = sg -> length ; sg -> dma_address = plat_map_dma_mem_page ( dev , sg_page ( sg ) ) + sg -> offset ; } return nents ; } 

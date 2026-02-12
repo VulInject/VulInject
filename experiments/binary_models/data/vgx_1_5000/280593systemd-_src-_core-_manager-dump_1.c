@@ -1,0 +1,1 @@
+void manager_dump ( Manager * m , FILE * f , char * * patterns , const char * prefix ) { assert ( f ) ; if ( ! patterns ) { manager_dump_header ( m , f , prefix ) ; } manager_dump_units ( m , f , patterns , prefix ) ; manager_dump_jobs ( m , f , patterns , prefix ) ; } 

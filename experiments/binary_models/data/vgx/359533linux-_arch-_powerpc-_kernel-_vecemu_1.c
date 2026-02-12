@@ -1,1 +1,0 @@
-static unsigned int rfiz ( unsigned int x ) { int exp ; exp = ( ( x >> 23 ) & 0xff ) - 127 ; if ( exp >= 23 ) { return x ; } if ( exp < 0 ) { return x & 0x80000000 ; } return x & ~ ( 0x7fffff >> exp ) ; } 

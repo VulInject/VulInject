@@ -1,1 +1,0 @@
-void FUN1(int VAR1, int VAR2) { FUN2(VAR1, 0, VAR2); }

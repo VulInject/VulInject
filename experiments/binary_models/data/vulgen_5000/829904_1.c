@@ -1,0 +1,1 @@
+MODULE_ID ( "$Id: fty_regex.c,v 1.9 2015/01/23 22:48:51 krw Exp $" ) { regex_t * pRegExp ; unsigned long * refCount ; } RegExp_Arg static int reg_errno ; static char * RegEx_Init ( char * instring ) { return instring ; } 

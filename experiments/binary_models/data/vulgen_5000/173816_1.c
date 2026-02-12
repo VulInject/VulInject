@@ -1,0 +1,1 @@
+STATIC void xfs_btree_fakeroot_init_ptr_from_cur ( struct xfs_btree_cur * cur , union xfs_btree_ptr * ptr ) { struct xbtree_afakeroot * afake ; afake = cur -> bc_ag . afake ; ptr -> s = cpu_to_be32 ( afake -> af_root ) ; } 

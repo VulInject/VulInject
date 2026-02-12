@@ -1,1 +1,0 @@
-static inline void regmap_calc_tot_len ( struct regmap * map , void * buf , size_t count ) { } 

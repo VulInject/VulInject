@@ -1,1 +1,0 @@
-static int cadence_ttc_bind ( struct udevice * dev ) { const char * cells ; cells = dev_read_prop ( dev , "#pwm-cells" , NULL ) ; return 0 ; } 

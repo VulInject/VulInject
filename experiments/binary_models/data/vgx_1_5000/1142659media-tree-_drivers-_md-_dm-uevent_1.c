@@ -1,0 +1,1 @@
+dm_uevent { struct mapped_device * md ; enum kobject_action action ; struct kobj_uevent_env ku_env ; int elist ; char name [ DM_NAME_LEN ] ; char uuid [ DM_UUID_LEN ] ; } 

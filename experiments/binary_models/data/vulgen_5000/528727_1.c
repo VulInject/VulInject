@@ -1,0 +1,1 @@
+static void arm_smmu_sync_ste_for_sid ( struct arm_smmu_device * smmu , u32 sid ) { struct arm_smmu_cmdq_ent cmd = { . opcode = CMDQ_OP_CFGI_STE . cfgi = { . sid = sid . leaf = true } } ; arm_smmu_cmdq_issue_cmd ( smmu , & cmd ) ; cmd . opcode = CMDQ_OP_CMD_SYNC ; } 

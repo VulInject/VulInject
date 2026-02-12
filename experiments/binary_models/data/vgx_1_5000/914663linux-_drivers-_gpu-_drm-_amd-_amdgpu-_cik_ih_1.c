@@ -1,0 +1,1 @@
+static int cik_ih_sw_init ( void * handle ) { int r ; struct amdgpu_device * adev = ( amdgpu_device * ) handle ; r = amdgpu_ih_ring_init ( adev , & adev -> irq . ih , 64 * 1024 , false ) ; r = amdgpu_irq_init ( adev ) ; return r ; } 

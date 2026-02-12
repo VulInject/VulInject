@@ -1,1 +1,0 @@
-static void usage ( int ret ) { arg_printusage ( args , num_args , "kdc-request-log-file" ) ; exit ( ret ) ; } 

@@ -1,0 +1,1 @@
+static void cs35l41_hda_spi_remove ( struct spi_device * spi ) { } static const struct spi_device_id cs35l41_hda_spi_id [ ] { { "cs35l41-hda" 0 } { } } ; ; 

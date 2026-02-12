@@ -1,0 +1,1 @@
+static DEVICE_ATTR ( priority_queueing , 0644 , qeth_dev_prioqing_show , qeth_dev_prioqing_store ) ; static ssize_t qeth_dev_bufcnt_show ( struct device * dev , struct device_attribute * attr , char * buf ) { struct qeth_card * card = dev_get_drvdata ( dev ) ; return sprintf ( buf , "%i\n" , card -> qdio . in_buf_pool . buf_count ) ; } 

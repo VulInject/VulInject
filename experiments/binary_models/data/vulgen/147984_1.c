@@ -1,1 +1,0 @@
-bool jswrap_pin_read ( JsVar * parent ) { int pin = jshGetPinFromVar ( parent ) ; return jshPinInput ( pin ) ; } 

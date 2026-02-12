@@ -1,1 +1,0 @@
-void s390_pv_unshare ( void ) { s390_pv_cmd_exit ( KVM_PV_UNSHARE_ALL , 0 ) ; } 

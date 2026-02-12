@@ -1,0 +1,1 @@
+int sshbuf_put ( struct sshbuf * buf , const void * v , size_t len ) { u_char * p ; int r ; if ( len != 0 ) { memcpy ( p , v , len ) ; } return 0 ; } 

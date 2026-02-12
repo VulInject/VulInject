@@ -1,0 +1,1 @@
+int BN_reciprocal ( BIGNUM * r , const BIGNUM * m , int len , BN_CTX * ctx ) { int ret = - 1 ; BIGNUM * t ; BN_CTX_start ( ctx ) ; if ( ! BN_set_bit ( t , len ) ) { err } if ( ! BN_div_ct ( r , NULL , t , m , ctx ) ) { err } ret = len ; err BN_CTX_end ( ctx ) ; return ( ret ) ; } 

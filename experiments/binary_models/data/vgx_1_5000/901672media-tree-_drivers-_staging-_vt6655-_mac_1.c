@@ -1,0 +1,1 @@
+void MACvSaveContext ( struct vnt_private * priv , unsigned char * cxt_buf ) { void __iomem * io_base = priv -> PortOffset ; memcpy_fromio ( cxt_buf , io_base , MAC_MAX_CONTEXT_SIZE_PAGE0 ) ; MACvSelectPage1 ( io_base , NULL ) ; memcpy_fromio ( cxt_buf + MAC_MAX_CONTEXT_SIZE_PAGE0 , io_base , MAC_MAX_CONTEXT_SIZE_PAGE1 ) ; MACvSelectPage0 ( io_base ) ; } 

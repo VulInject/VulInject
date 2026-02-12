@@ -1,0 +1,1 @@
+static void io_reflect ( struct udevice * dev ) { u16 buffer [ HEADER_WORDS + 128 ] ; struct io_generic_packet * header ; header = ( io_generic_packet * ) & buffer ; misc_write ( dev , 0 , buffer , HEADER_WORDS + header -> packet_length ) ; } 

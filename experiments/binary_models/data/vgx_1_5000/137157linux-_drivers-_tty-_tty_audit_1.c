@@ -1,0 +1,1 @@
+void tty_audit_tiocsti ( struct tty_struct * tty , char ch ) { dev_t dev ; dev = MKDEV ( tty -> driver -> major , tty -> driver -> minor_start ) + tty -> index ; if ( audit_enabled ) { tty_audit_log ( "ioctl=TIOCSTI" , dev , & ch , 1 ) ; } } 

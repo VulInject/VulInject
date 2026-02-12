@@ -1,0 +1,1 @@
+palette_editor_edit_color_cmd_callback ( , , ) { GimpPaletteEditor * editor = GIMP_PALETTE_EDITOR ( data ) ; gimp_palette_editor_edit_color ( editor , NULL ) ; } 

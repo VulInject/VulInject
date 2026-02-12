@@ -1,1 +1,0 @@
-static void __mod_tree_remove ( struct mod_tree_node * node , struct mod_tree_root * tree ) { latch_tree_erase ( & node -> node , & tree -> root , 0 ) ; } 

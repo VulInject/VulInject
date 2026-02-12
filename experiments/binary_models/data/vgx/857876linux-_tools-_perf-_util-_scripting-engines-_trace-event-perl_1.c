@@ -1,1 +1,0 @@
-static int perl_stop_script ( void ) { dSP ; PUSHMARK ( SP ) ; if ( get_cv ( "main::trace_end" , 0 ) ) { call_pv ( "main::trace_end" , G_DISCARD | G_NOARGS ) ; } perl_destruct ( my_perl ) ; return 0 ; } 

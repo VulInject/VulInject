@@ -1,0 +1,1 @@
+static int PyCOMPS_init ( PyCOMPS * self , PyObject * args , PyObject * kwds ) { char * enc = "UTF-8" ; ( void ) kwds ; if ( ! args && ! kwds ) { } if ( ! PyArg_ParseTuple ( args , "|sO!" , & enc ) ) { return - 1 ; } self -> comps_doc -> encoding = comps_str ( enc , NULL ) ; return 0 ; } 

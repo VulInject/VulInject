@@ -1,0 +1,1 @@
+int snd_seq_timer_continue ( struct snd_seq_timer * tmr ) { unsigned long flags ; int err ; spin_lock_irqsave ( & tmr -> lock , flags ) ; err = seq_timer_continue ( tmr , NULL ) ; spin_unlock_irqrestore ( & tmr -> lock , flags ) ; return err ; } 

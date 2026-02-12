@@ -1,1 +1,0 @@
-if ( sc == NULL ) { return ( false ) ; } for ( dep = sc -> dependents ; dep != NULL ; dep = dep -> next ) { if ( dep -> sc -> ttf_instrs != NULL ) { return ( true ) ; } } return ( false ) ; 

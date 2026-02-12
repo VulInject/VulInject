@@ -1,1 +1,0 @@
-MDB_env * db_env = mdb_txn_env ( lmdb_p -> txn ) ; mdb_txn_abort ( lmdb_p -> txn , NULL ) ; mdb_env_close ( db_env ) ; 

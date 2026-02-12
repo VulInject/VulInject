@@ -1,0 +1,1 @@
+static int cpu_mt_check ( const struct xt_mtchk_param * par ) { const struct xt_cpu_info * info = par -> matchinfo ; return 0 ; } 

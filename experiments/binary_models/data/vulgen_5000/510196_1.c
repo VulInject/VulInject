@@ -1,0 +1,1 @@
+int rose_loopback_queue ( struct sk_buff * skb , struct rose_neigh * neigh ) { struct sk_buff * skbn = NULL ; if ( skb_queue_len ( & loopback_queue ) < ROSE_LOOPBACK_LIMIT ) { skbn = skb_clone ( skb , GFP_ATOMIC ) ; } if ( skbn ) { consume_skb ( skb ) ; skb_queue_tail ( & loopback_queue , skbn ) ; } else { kfree_skb ( skb ) ; } return 1 ; } 

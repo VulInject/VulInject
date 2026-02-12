@@ -1,0 +1,1 @@
+static void free_watch ( XenWatch * watch ) { g_free ( watch -> key ) ; g_free ( watch -> node ) ; g_free ( watch ) ; } 

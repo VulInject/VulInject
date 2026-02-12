@@ -1,0 +1,1 @@
+static void crypto_cts_encrypt_done ( struct crypto_async_request * areq , int err ) { struct skcipher_request * req = areq -> data ; if ( err ) { out } err = cts_cbc_encrypt ( req ) ; out skcipher_request_complete ( req , err ) ; } 

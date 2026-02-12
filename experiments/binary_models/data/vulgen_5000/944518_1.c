@@ -1,0 +1,1 @@
+insn_dependent_p_1 ( , , ) rtx x ; rtx pat ATTRIBUTE_UNUSED ; void * data ; { rtx * pinsn = ( rtx * ) data ; if ( * pinsn && reg_mentioned_p ( x , * pinsn ) ) { * pinsn = NULL_RTX ; } } set_of_data { rtx found ; rtx pat ; } static void set_of_1 ( x , pat , data1 ) rtx x ; rtx pat ; void * data1 ; { struct set_of_data * data = ( set_of_data * ) ( data1 ) ; } 

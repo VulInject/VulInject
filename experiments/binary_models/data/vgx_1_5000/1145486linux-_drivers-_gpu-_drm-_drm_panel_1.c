@@ -1,0 +1,1 @@
+int drm_panel_of_backlight ( struct drm_panel * panel ) { struct backlight_device * backlight ; if ( ! panel || ! panel -> dev ) { return - EINVAL ; } backlight = devm_of_find_backlight ( panel -> dev ) ; panel -> backlight = backlight ; return 0 ; } 

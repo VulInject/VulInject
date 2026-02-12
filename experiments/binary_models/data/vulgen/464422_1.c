@@ -1,1 +1,0 @@
-static inline unsigned int div2prescval ( unsigned int div ) { if ( div == 1 ) { return 0 ; } unsigned int val = 7 ; while ( div >>= 1 ) { ++ val ; } return val ; } 

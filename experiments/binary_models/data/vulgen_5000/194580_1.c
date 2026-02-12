@@ -1,0 +1,1 @@
+static inline struct rttimer * rt_timer_unlink ( struct rttimer * r ) { MUTEX_ASSERT_LOCKED ( & rttimer_mtx ) ; LIST_REMOVE ( r , rtt_link ) ; r -> rtt_rt = NULL ; TAILQ_REMOVE ( & r -> rtt_queue -> rtq_head , r , rtt_next ) ; KASSERT ( r -> rtt_queue -> rtq_count > 0 ) ; r -> rtt_queue -> rtq_count -- ; return r ; } 

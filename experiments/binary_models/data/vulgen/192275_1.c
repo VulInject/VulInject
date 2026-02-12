@@ -1,1 +1,0 @@
-void msUVRASTERLayerFreeItemInfo ( layerObj * layer ) { if ( layer -> iteminfo ) { free ( 0 ) ; } layer -> iteminfo = NULL ; } 

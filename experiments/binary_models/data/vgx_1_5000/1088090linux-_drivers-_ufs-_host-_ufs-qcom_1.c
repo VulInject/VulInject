@@ -1,0 +1,1 @@
+static void ufs_qcom_device_reset_ctrl ( struct ufs_hba * hba , bool asserted ) { struct ufs_qcom_host * host = ufshcd_get_variant ( hba ) ; gpiod_set_value_cansleep ( host -> device_reset , asserted ) ; } 

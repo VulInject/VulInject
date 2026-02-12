@@ -1,0 +1,1 @@
+int do_setxattr ( struct mnt_idmap * idmap , struct dentry * dentry , struct xattr_ctx * ctx ) { return vfs_setxattr ( idmap , dentry , ctx -> kname -> name , ctx -> kvalue , ctx -> size , ctx -> flags ) ; } 

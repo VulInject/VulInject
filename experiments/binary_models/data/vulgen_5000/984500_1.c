@@ -1,0 +1,1 @@
+void mlx5_fc_update_sampling_interval ( struct mlx5_core_dev * dev , unsigned long interval ) { struct mlx5_fc_stats * fc_stats = & dev -> priv . fc_stats ; fc_stats -> sampling_interval = min_t ( , , ) ; } mlx5_fc_bulk { struct list_head pool_list ; u32 base_id ; int bulk_len ; struct mlx5_fc fcs [ ] ; } 

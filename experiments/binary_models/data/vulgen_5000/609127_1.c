@@ -1,0 +1,1 @@
+static void xtensa_unmap_page ( struct device * dev , dma_addr_t dma_handle , size_t size , enum dma_data_direction dir , unsigned long attrs ) { } 

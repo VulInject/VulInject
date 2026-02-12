@@ -1,0 +1,1 @@
+static int lzo_init ( struct crypto_tfm * tfm ) { struct lzo_ctx * ctx = crypto_tfm_ctx ( tfm ) ; ctx -> lzo_comp_mem = lzo_alloc_ctx ( NULL ) ; return 0 ; } 

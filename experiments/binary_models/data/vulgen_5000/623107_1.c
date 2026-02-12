@@ -1,0 +1,1 @@
+static inline int ksz_read16 ( struct udevice * dev , u32 reg , u16 * val ) { u8 buf [ 2 ] ; int ret ; * val = ( buf [ 0 ] << 8 ) | buf [ 1 ] ; dev_dbg ( dev , "%s 0x%04x<<0x%04x\n" , __func__ , reg , * val ) ; return ret ; } 

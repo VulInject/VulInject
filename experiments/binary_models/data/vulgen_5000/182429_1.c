@@ -1,0 +1,1 @@
+static int serial_config ( struct pcmcia_device * link ) static void serial_remove ( struct pcmcia_device * link ) { struct serial_info * info = link -> priv ; int i ; dev_dbg ( & link -> dev , "serial_release\n" ) ; for ( i = 0 ; i < info -> ndev ; i ++ ) { serial8250_unregister_port ( info -> line [ i ] ) ; } } 

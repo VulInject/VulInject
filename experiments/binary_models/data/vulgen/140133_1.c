@@ -1,1 +1,0 @@
-void print_tty_hdr2 ( void ) { if ( do_raw == 0 ) { push_out ( "%-10.10s" , " tin tout" ) ; } else { } } 

@@ -1,0 +1,1 @@
+__bpf_kfunc struct nf_conn___init * bpf_xdp_ct_alloc ( struct xdp_md * xdp_ctx , struct bpf_sock_tuple * bpf_tuple , u32 tuple__sz , struct bpf_ct_opts * opts , u32 opts__sz ) { struct xdp_buff * ctx = ( xdp_buff * ) xdp_ctx ; struct nf_conn * nfct ; if ( IS_ERR ( nfct ) ) { if ( opts ) { opts -> error = PTR_ERR ( nfct ) ; } return NULL ; } return ( nf_conn___init * ) nfct ; } 

@@ -1,0 +1,1 @@
+char * * virshEnumComplete ( unsigned int last , const char * * intToStr ( int ) ) { char * * ret = NULL ; size_t i ; for ( i = 0 ; i < last ; i ++ ) { ret [ i ] = g_strdup ( intToStr ( i ) ) ; } return ret ; } 

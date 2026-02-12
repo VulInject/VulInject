@@ -1,0 +1,1 @@
+int s5p_pwm_enable ( int pwm_id ) { const struct s5p_timer * pwm = ( s5p_timer * ) PHY_BASEADDR_PWM ; ( s5p_timer * ) samsung_get_base_timer ( ) ; unsigned long tcon ; tcon = readl ( & pwm -> tcon ) ; writel ( tcon , & pwm -> tcon ) ; return 0 ; } 

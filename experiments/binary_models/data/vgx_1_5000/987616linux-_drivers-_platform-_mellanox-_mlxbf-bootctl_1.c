@@ -1,0 +1,1 @@
+static ssize_t post_reset_wdog_show ( struct device * dev , struct device_attribute * attr , char * buf ) { int ret ; ret = mlxbf_bootctl_smc ( MLXBF_BOOTCTL_GET_POST_RESET_WDOG , 0 ) ; return sprintf ( buf , "%d\n" , ret ) ; } 

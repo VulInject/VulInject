@@ -1,1 +1,0 @@
-static int cpumask_get ( char * buf , const struct kernel_param * kp ) { return bitmap_print_to_pagebuf ( false , buf , cpumask_bits ( idle_injection_cpu_mask ) , nr_cpumask_bits ) ; } 

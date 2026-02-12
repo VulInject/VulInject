@@ -1,0 +1,1 @@
+static rpmRC systemd_inhibit_init ( rpmPlugin plugin , rpmts ts ) { int st ; if ( lstat ( "/run/systemd/system/" , & st ) == 0 ) { if ( S_ISDIR ( st . st_mode ) ) { return RPMRC_OK ; } } return RPMRC_NOTFOUND ; } 

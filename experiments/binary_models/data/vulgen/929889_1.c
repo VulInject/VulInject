@@ -1,1 +1,0 @@
-XKB_EXPORT xkb_keysym_t xkb_compose_state_get_one_sym ( struct xkb_compose_state * state ) { if ( ! node -> is_leaf ) { return XKB_KEY_NoSymbol ; } return node -> leaf . keysym ; } 

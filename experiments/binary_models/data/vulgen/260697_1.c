@@ -1,1 +1,0 @@
-unsigned long get_tbclk ( int ) { return CONFIG_SYS_HZ ; } 

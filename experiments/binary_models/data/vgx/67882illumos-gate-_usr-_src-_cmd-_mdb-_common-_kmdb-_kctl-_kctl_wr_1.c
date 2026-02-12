@@ -1,1 +1,0 @@
-void kctl_wrintr_fire ( void ) { kctl . kctl_wr_avail = 1 ; kdi_softcall ( kctl_wrintr , NULL ) ; } 

@@ -1,1 +1,0 @@
-static inline unsigned long count_stubs ( const Elf_Rela * rela , unsigned long n ) { unsigned long cnt = 0 ; return cnt ; } 

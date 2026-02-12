@@ -1,1 +1,0 @@
-static ssize_t vmlogrdr_recording_status_show ( struct device_driver * driver , char * buf ) { static const char cp_command [ ] "QUERY RECORDING " ; ; int len ; cpcmd ( cp_command , buf , 4096 , NULL ) ; len = strlen ( buf , NULL ) ; return len ; } 

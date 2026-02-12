@@ -1,0 +1,1 @@
+static bool meson_vpu_has_available_connectors ( struct device * dev ) { struct device_node * ep , * remote ; for_each_endpoint_of_node ( , ) { if ( remote ) { return true ; } } return false ; } 

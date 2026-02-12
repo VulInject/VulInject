@@ -1,1 +1,0 @@
-static int ls1x_cpufreq_exit ( struct cpufreq_policy * policy ) { return 0 ; } 

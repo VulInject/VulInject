@@ -1,1 +1,0 @@
-int acctctl ( int cmd , void * buf , int bufsz ) { return ( syscall ( SYS_acctctl , cmd , buf , bufsz ) ) ; } 

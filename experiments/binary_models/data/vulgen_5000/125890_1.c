@@ -1,0 +1,1 @@
+static void bnad_netdev_mc_list_get ( struct net_device * netdev , u8 * mc_list ) { int i = 1 ; struct netdev_hw_addr * mc_addr ; netdev_for_each_mc_addr ( , ) { i ++ ; } } 

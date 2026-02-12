@@ -1,0 +1,1 @@
+static irqreturn_t timer_interrupt ( int irq , void * dev_id ) { struct clock_event_device * cd = & t64_clockevent_device ; cd -> event_handler ( cd , NULL ) ; return IRQ_HANDLED ; } 

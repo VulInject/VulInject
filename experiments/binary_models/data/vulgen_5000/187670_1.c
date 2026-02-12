@@ -1,0 +1,1 @@
+bool vega20_is_smc_ram_running ( struct pp_hwmgr * hwmgr ) { struct amdgpu_device * adev = hwmgr -> adev ; uint32_t mp1_fw_flags ; if ( ( mp1_fw_flags & MP1_FIRMWARE_FLAGS__INTERRUPTS_ENABLED_MASK ) >> MP1_FIRMWARE_FLAGS__INTERRUPTS_ENABLED__SHIFT ) { return true ; } return false ; } 

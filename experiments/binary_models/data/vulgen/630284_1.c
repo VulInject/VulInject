@@ -1,1 +1,0 @@
-void tfrc_lib_exit ( void ) { tfrc_rx_packet_history_exit ( ) ; tfrc_tx_packet_history_exit ( ) ; } 

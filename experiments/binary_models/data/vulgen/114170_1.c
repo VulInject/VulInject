@@ -1,1 +1,0 @@
-( public_key_free ) ; static void public_key_destroy ( void * payload0 , void * payload3 ) { public_key_free ( payload0 ) ; } 

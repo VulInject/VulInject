@@ -1,0 +1,1 @@
+void vhost_iotlb_free ( struct vhost_iotlb * iotlb ) { if ( iotlb ) { vhost_iotlb_reset ( iotlb ) ; } } 

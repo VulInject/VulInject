@@ -1,1 +1,0 @@
-int alias_array_count_visible ( struct AliasViewArray * ava ) { int count = 0 ; struct AliasView * avp ; ARRAY_FOREACH ( , ) { if ( avp -> is_visible ) { count ++ ; } } return count ; } 

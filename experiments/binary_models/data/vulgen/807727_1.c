@@ -1,1 +1,0 @@
-inline int cpuidle_coupled_set_not_ready ( struct cpuidle_coupled * coupled ) { int all ; int ret ; all = coupled -> online_count | ( coupled -> online_count << WAITING_BITS ) ; return ret ?0 : - EINVAL ; } 

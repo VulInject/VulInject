@@ -1,0 +1,1 @@
+static int peci_cpu_probe ( struct peci_device * device , const struct peci_device_id * id ) { struct device * dev = & device -> dev ; struct peci_cpu * priv ; priv = devm_kzalloc ( dev , sizeof ( * priv ) , GFP_KERNEL ) ; dev_set_drvdata ( dev , priv ) ; priv -> device = device ; priv -> id = id ; peci_cpu_add_adevices ( priv ) ; return 0 ; } 

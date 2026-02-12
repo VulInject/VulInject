@@ -1,1 +1,0 @@
-static inline u32 FUN1 ( u64 VAR1 , bool VAR2 ) { return 0x10 ; }

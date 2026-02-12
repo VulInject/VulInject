@@ -1,0 +1,1 @@
+static void unref_worker ( struct drm_flip_work * work , void * val ) { struct tilcdc_crtc * tilcdc_crtc = container_of ( work , tilcdc_crtc , unref_work ) ; struct drm_device * dev = tilcdc_crtc -> base . dev ; mutex_lock ( & dev -> mode_config . mutex ) ; drm_framebuffer_unreference ( val ) ; } 

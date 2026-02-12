@@ -1,0 +1,1 @@
+void nv50_fifo_runlist_update ( struct nv50_fifo * fifo ) { mutex_lock ( & fifo -> base . engine . subdev . mutex ) ; nv50_fifo_runlist_update_locked ( fifo ) ; } 

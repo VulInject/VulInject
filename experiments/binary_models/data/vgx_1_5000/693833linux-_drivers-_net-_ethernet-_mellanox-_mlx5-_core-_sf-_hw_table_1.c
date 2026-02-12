@@ -1,0 +1,1 @@
+void mlx5_sf_hw_table_destroy ( struct mlx5_core_dev * dev ) { struct mlx5_sf_hw_table * table = dev -> priv . sf_hw_table ; mlx5_vhca_event_notifier_unregister ( dev , & table -> vhca_nb ) ; mlx5_sf_hw_table_dealloc_all ( table ) ; } 

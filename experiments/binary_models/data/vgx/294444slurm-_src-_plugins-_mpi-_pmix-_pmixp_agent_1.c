@@ -1,1 +1,0 @@
-static int FUN1 ( VAR1 * VAR2 , List VAR3 ) { close ( VAR2 -> VAR4 , NULL ) ; return VAR5 ; }

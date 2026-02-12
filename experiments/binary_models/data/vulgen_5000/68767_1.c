@@ -1,0 +1,1 @@
+static inline struct reserved_mem * __find_rmem ( struct device_node * node ) { unsigned int i ; for ( i = 0 ; i < reserved_mem_count ; i ++ ) { if ( reserved_mem [ i ] . phandle == node -> phandle ) { return & reserved_mem [ i ] ; } } return NULL ; } rmem_assigned_device { struct device * dev ; struct reserved_mem * rmem ; struct list_head list ; } 

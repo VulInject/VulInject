@@ -1,0 +1,1 @@
+mlx5e_rep_bond { struct notifier_block nb ; struct netdev_net_notifier nn ; struct list_head metadata_list ; } mlx5e_rep_bond_slave_entry { int list ; struct net_device * netdev ; } 

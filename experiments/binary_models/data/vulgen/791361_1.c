@@ -1,1 +1,0 @@
-bgp_damp_decay ( , ) { unsigned int i ; i = ( int ) ( ( double ) tdiff / DELTA_T ) ; if ( i == 0 ) { return penalty ; } return ( int ) ( penalty * damp -> decay_array [ i ] ) ; } 

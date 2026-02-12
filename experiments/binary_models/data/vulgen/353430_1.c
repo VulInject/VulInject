@@ -1,1 +1,0 @@
-static void obstack_1grow ( void * * ptr , int ch ) int yylex ( void ) int main ( void ) int main ( void ) { int ch = yylex ( ) ; } 

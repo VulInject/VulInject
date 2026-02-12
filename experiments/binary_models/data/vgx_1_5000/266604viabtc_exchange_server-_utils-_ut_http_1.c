@@ -1,0 +1,1 @@
+static dict_t * create_header_dict ( void ) { dict_types dt ; dt . hash_function = dict_header_hash_func ; dt . key_compare = dict_header_key_compare ; dt . key_dup = dict_header_dup ; dt . key_destructor = dict_header_free ; dt . val_dup = dict_header_dup ; dt . val_destructor = dict_header_free ; return dict_create ( & dt , 64 ) ; } 

@@ -1,1 +1,0 @@
-const char * selinux_lxc_contexts_path ( void ) { init_syms ( ) ; return abs_srcdir "/securityselinuxhelperdata/lxc_contexts" ; } 

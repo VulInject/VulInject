@@ -1,0 +1,1 @@
+static void __exit ffh_cstate_exit ( void ) { free_percpu ( cpu_cstate_entry ) ; } 

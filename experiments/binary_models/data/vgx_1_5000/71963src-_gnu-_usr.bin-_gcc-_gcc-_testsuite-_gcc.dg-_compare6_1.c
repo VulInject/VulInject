@@ -1,0 +1,1 @@
+void foo ( ) { if ( uc == 10000 ) { return ; } } 

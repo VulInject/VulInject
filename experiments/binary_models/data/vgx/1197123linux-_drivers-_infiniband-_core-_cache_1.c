@@ -1,1 +1,0 @@
-const char * FUN1 ( enum ib_gid_type VAR1 ) { return "" ; }

@@ -1,0 +1,26 @@
+void bad()
+{
+    twoIntsStruct * data;
+    unionType myUnion;
+    data = NULL; /* Initialize data */
+    {
+        /* FLAW: data is allocated on the stack and deallocated in the BadSink */
+        twoIntsStruct * dataBuffer = (twoIntsStruct *)ALLOCA(100*sizeof(twoIntsStruct));
+        {
+            size_t i;
+            for (i = 0; i < 100; i++)
+            {
+                dataBuffer[i].intOne = 1;
+                dataBuffer[i].intTwo = 1;
+            }
+        }
+        data = dataBuffer;
+    }
+    myUnion.unionFirst = data;
+    {
+        twoIntsStruct * data = myUnion.unionSecond;
+        printStructLine(&data[0]);
+        /* POTENTIAL FLAW: Possibly deallocating memory allocated on the stack */
+        delete [] data;
+    }
+}

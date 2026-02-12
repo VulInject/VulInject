@@ -1,1 +1,0 @@
-_cairo_type1_fallback_fini ( ) { free ( subset -> base_font ) ; free ( subset -> widths ) ; } 

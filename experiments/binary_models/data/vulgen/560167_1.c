@@ -1,1 +1,0 @@
-static bool __check ( RIO * io , const char * pathname , int many ) { const char * uris [ ] { " } ; ; } 

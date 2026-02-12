@@ -1,1 +1,0 @@
-unsigned int master ; unsigned int index ; 

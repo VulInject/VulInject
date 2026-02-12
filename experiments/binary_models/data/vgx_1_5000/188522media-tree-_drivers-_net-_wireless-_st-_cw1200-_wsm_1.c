@@ -1,0 +1,1 @@
+static int wsm_generic_confirm ( struct cw1200_common * priv , void * arg , struct wsm_buf * buf ) { u32 status = WSM_GET32 ( buf ) ; return 0 ; underflow WARN_ON ( 1 ) ; return - EINVAL ; } 

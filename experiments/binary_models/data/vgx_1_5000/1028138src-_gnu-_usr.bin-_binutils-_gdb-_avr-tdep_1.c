@@ -1,0 +1,1 @@
+static struct stack_item * pop_stack_item ( struct stack_item * si ) static struct stack_item * pop_stack_item ( struct stack_item * si ) { struct stack_item * dead = si ; si = si -> prev ; xfree ( dead -> data ) ; return si ; } 

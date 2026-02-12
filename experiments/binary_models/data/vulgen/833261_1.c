@@ -1,1 +1,0 @@
-static int probe ( const AVProbeData * p ) { return 0 ; } 

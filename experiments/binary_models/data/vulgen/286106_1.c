@@ -1,1 +1,0 @@
-static const struct linear_range tps65912_dcdc_ranges [ ] { REGULATOR_LINEAR_RANGE ( 500000 , 0x0 , 0x3f ) } ; ; 

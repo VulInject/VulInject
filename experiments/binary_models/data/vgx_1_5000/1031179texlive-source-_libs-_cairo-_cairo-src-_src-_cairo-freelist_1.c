@@ -1,0 +1,1 @@
+_cairo_freelist_init ( , ) { freelist -> nodesize = nodesize ; } 

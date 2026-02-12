@@ -1,7 +1,0 @@
-FUN1 ()
-{
-FUN2 ("",
-&VAR1, NULL, NULL);
-FUN2 ("",
-&VAR2, NULL, NULL);
-}

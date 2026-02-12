@@ -1,0 +1,1 @@
+extern gdouble rs_photo_get_angle ( RS_PHOTO * photo ) { return photo -> angle ; } 

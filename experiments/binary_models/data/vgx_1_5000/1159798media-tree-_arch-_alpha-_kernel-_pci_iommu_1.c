@@ -1,0 +1,1 @@
+static struct pci_dev * alpha_gendev_to_pci ( struct device * dev ) { BUG_ON ( ! isa_bridge ) ; if ( ! dev || ! dev -> dma_mask || ! * dev -> dma_mask ) { return isa_bridge ; } if ( * dev -> dma_mask >= isa_bridge -> dma_mask ) { return isa_bridge ; } return NULL ; } 

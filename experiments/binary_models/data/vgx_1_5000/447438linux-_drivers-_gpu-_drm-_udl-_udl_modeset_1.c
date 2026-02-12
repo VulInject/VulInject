@@ -1,0 +1,1 @@
+static long udl_log_cpp ( unsigned int cpp ) { return __ffs ( cpp ) ; } 

@@ -1,0 +1,1 @@
+cmsUInt8Number * Unroll15bitsGray ( CMSREGISTER struct _cmstransform_struct * CMMcargo , CMSREGISTER cmsUInt16Number Values [ ] , CMSREGISTER cmsUInt8Number * Buffer , CMSREGISTER cmsUInt32Number Stride ) { UNUSED_PARAMETER ( CMMcargo ) ; UNUSED_PARAMETER ( Stride , NULL ) ; Values [ 0 ] = From15To16 ( * ( cmsUInt16Number * ) Buffer ) ; return Buffer + 2 ; } 

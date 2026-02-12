@@ -1,0 +1,1 @@
+struct _cmsContext_struct * _cmsGetContext ( cmsContext ContextID ) { struct _cmsContext_struct * id = ( _cmsContext_struct * ) ContextID ; struct _cmsContext_struct * ctx ; for ( ctx = _cmsContextPoolHead ; ctx != NULL ; ctx = ctx -> Next ) { if ( id == ctx ) { return ctx ; } } return & globalContext ; } 

@@ -1,0 +1,1 @@
+static av_cold int decode_close ( AVCodecContext * avctx ) { JvContext * s = avctx -> priv_data ; return 0 ; } 

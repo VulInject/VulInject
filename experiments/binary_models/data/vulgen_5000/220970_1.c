@@ -1,0 +1,1 @@
+void lacp_wait ( lacp * lacp ) OVS_EXCLUDED ( mutex ) ( member * member , lacp_lock ( ) , HMAP_FOR_EACH ( , , ) { if ( member_may_tx ( member ) ) { timer_wait ( & member -> tx ) } ; if ( member -> status != LACP_DEFAULTED ) } ) ; 

@@ -1,1 +1,0 @@
-_mongoc_convert_int32_positive ( , , , ) { int32_t i ; if ( i <= 0 ) { CONVERSION_ERR ( "Invalid field \"%s\" in opts, should be greater than 0, not %d" , bson_iter_key ( iter ) , i ) ; } * num = i ; return true ; } 

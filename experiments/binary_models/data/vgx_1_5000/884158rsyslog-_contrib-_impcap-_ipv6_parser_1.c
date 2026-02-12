@@ -1,0 +1,1 @@
+__attribute__ ( ) ipv6_header_s { uint32_t vtf ; uint16_t dataLength ; uint8_t nextHeader ; uint8_t hopLimit ; uint8_t addrSrc [ 16 ] ; int addrDst [ 16 ] ; } ipv6_header_t hbh_header_s { uint8_t nextHeader ; uint8_t hLength ; uint8_t * pOptions ; } hbh_header_t 

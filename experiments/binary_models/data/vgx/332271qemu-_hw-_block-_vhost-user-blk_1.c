@@ -1,1 +1,0 @@
-static void vhost_user_blk_reset ( VirtIODevice * vdev ) { VHostUserBlk * s = VHOST_USER_BLK ( vdev ) ; } 

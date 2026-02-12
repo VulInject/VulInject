@@ -1,1 +1,0 @@
-void fatal_error_0 ( const_string fmt ) { fprintf ( stderr , "line %d (fatal): " , line_number ) ; fprintf ( stderr , "%s" , fmt ) ; fprintf ( stderr , "\n" ) ; } 

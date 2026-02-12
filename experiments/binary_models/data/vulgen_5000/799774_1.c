@@ -1,0 +1,1 @@
+static struct nullb * null_find_dev_by_name ( const char * name ) { struct nullb * nullb = NULL , * nb ; mutex_lock ( & lock ) ; list_for_each_entry ( , , ) { if ( strcmp ( nb -> disk_name , name ) == 0 ) { nullb = nb ; break ; } } return nullb ; } 

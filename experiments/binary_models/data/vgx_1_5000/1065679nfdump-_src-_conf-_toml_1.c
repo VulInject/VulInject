@@ -1,0 +1,1 @@
+static void * expand ( void * p , int sz , int newsz ) { void * s = MALLOC ( newsz ) ; memcpy ( s , p , sz ) ; FREE ( p ) ; return s ; } 

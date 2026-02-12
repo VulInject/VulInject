@@ -1,0 +1,1 @@
+void tinydrm_lastclose ( struct drm_device * drm ) { struct tinydrm_device * tdev = drm -> dev_private ; DRM_DEBUG_KMS ( "\n" ) ; drm_fbdev_cma_restore_mode ( tdev -> fbdev_cma , NULL ) ; } 

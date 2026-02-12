@@ -1,0 +1,1 @@
+Double gf_node_get_scene_time ( GF_Node * node ) { return node -> sgprivate -> scenegraph -> GetSceneTime ( node -> sgprivate -> scenegraph -> userpriv ) ; } 

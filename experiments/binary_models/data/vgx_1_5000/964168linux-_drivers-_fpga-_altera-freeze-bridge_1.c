@@ -1,0 +1,1 @@
+static int altera_freeze_br_remove ( struct platform_device * pdev ) { struct fpga_bridge * br = platform_get_drvdata ( pdev ) ; fpga_bridge_unregister ( br , NULL ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static int s3c2410_ooblayout_free ( struct mtd_info * mtd , int section , struct mtd_oob_region * oobregion ) { oobregion -> offset = 8 ; oobregion -> length = 8 ; return 0 ; } static const struct mtd_ooblayout_ops s3c2410_ooblayout_ops = { . ecc = s3c2410_ooblayout_ecc . free = s3c2410_ooblayout_free } ; 

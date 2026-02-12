@@ -1,0 +1,1 @@
+void * pciide_machdep_compat_intr_establish ( struct device * dev , struct pci_attach_args * pa , int chan , int * func ( void * ) , void * arg ) { int irq ; void * cookie ; irq = PCIIDE_COMPAT_IRQ ( chan ) ; cookie = mac_intr_establish ( NULL , irq , IST_EDGE , IPL_BIO , func , arg , dev -> dv_xname ) ; return ( cookie ) ; } 

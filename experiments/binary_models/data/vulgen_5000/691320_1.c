@@ -1,0 +1,1 @@
+static void puv3_pwm_disable ( struct pwm_chip * chip , struct pwm_device * pwm ) { struct puv3_pwm_chip * puv3 = to_puv3 ( chip ) ; } static const struct pwm_ops puv3_pwm_ops = { . config = puv3_pwm_config . enable = puv3_pwm_enable . disable = puv3_pwm_disable . owner = THIS_MODULE } ; 

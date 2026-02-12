@@ -1,1 +1,0 @@
-static int shx3_cpu_prepare ( unsigned int cpu ) { shx3_update_boot_vector ( cpu , NULL ) ; return 0 ; } 

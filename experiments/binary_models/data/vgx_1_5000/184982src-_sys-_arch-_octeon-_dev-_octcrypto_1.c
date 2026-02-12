@@ -1,0 +1,1 @@
+void octcrypto_free_smr ( void * arg ) { struct octcrypto_session * ses = arg ; } 

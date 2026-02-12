@@ -1,0 +1,1 @@
+void zcfree ( voidpf opaque , voidpf ptr , unsigned nb ) { if ( opaque ) { return ; } } 

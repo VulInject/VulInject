@@ -1,0 +1,1 @@
+static int mlx5_esw_bridge_vlans_recreate ( struct mlx5_esw_bridge * bridge ) { struct mlx5_esw_bridge_offloads * br_offloads = bridge -> br_offloads ; struct mlx5_esw_bridge_port * port ; unsigned long i ; int err ; xa_for_each ( , , ) { err = mlx5_esw_bridge_port_vlans_recreate ( port , bridge ) ; if ( err ) { return err ; } } return 0 ; } 

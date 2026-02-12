@@ -1,0 +1,1 @@
+static int DVBpCheck ( struct instrinfo * ii , int ip ) { DebugView * dv = ( ii -> userdata ) ; TT_ExecContext exc = DebuggerGetEContext ( dv -> dc ) ; return ( DebuggerBpCheck ( dv -> dc , exc -> curRange , ip ) ) ; } 

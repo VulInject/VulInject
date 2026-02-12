@@ -1,1 +1,0 @@
-int socket_accept ( p_socket ps , p_socket pa , SA * addr , socklen_t * len , p_timeout tm ) { if ( * ps == SOCKET_INVALID ) { return IO_CLOSED ; } for ( ; ; ) { int err ; if ( ( * pa = accept ( * ps , addr , len ) ) != SOCKET_INVALID ) { return IO_DONE ; } err = WSAGetLastError ( ) ; if ( ( err = socket_waitfd ( ps , WAITFD_R , tm ) ) != IO_DONE ) { return err ; } } } 

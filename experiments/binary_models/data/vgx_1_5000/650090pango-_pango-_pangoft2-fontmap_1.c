@@ -1,0 +1,1 @@
+pango_ft2_font_map_create_context ( ) { g_return_val_if_fail ( PANGO_FT2_IS_FONT_MAP ( fontmap ) ) ; return pango_font_map_create_context ( PANGO_FONT_MAP ( fontmap ) ) ; } 

@@ -1,0 +1,1 @@
+static void numachip_send_IPI_mask_allbutself ( const struct cpumask * mask , int vector ) { int this_cpu = smp_processor_id ( ) ; unsigned int cpu ; for_each_cpu ( , ) { if ( cpu != this_cpu ) { numachip_send_IPI_one ( cpu , vector ) ; } } } 

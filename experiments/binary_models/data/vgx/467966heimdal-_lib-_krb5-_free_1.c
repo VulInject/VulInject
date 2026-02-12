@@ -1,1 +1,0 @@
-krb5_xfree ( ) { return 0 ; } 

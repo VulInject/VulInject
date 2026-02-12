@@ -1,0 +1,1 @@
+static int property_get_pool_path ( sd_bus * bus , const char * path , const char * interface , const char * property , sd_bus_message * reply , void * userdata , sd_bus_error * error ) { assert ( reply ) ; return sd_bus_message_append ( reply , "s" , "/var/lib/portables" ) ; } 

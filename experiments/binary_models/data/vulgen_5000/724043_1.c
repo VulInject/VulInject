@@ -1,0 +1,1 @@
+static int mt2060_writereg ( struct mt2060_priv * priv , u8 reg , u8 val ) { u8 buf [ 2 ] { reg val } ; ; struct i2c_msg msg = { . addr = priv -> cfg -> i2c_address . flags = 0 . buf = buf . len = 2 } ; return 0 ; } 

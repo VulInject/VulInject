@@ -1,0 +1,1 @@
+int __init tls_device_init ( void ) { int err ; destruct_wq = alloc_workqueue ( "ktls_device_destruct" , 0 , 0 ) ; err = register_netdevice_notifier ( & tls_dev_notifier ) ; if ( err ) { destroy_workqueue ( destruct_wq ) ; } return err ; } 

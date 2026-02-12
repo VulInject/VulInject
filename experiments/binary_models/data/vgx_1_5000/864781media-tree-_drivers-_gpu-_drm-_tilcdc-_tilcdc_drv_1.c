@@ -1,0 +1,1 @@
+static int tilcdc_pm_suspend ( struct device * dev ) { struct drm_device * ddev = dev_get_drvdata ( dev ) ; struct tilcdc_drm_private * priv = ddev -> dev_private ; priv -> saved_state = drm_atomic_helper_suspend ( ddev ) ; pinctrl_pm_select_sleep_state ( dev , NULL ) ; return 0 ; } 

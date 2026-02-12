@@ -1,1 +1,0 @@
-static void __init pdm360ng_touchscreen_init ( void ) { bus_register_notifier ( & spi_bus_type , & pdm360ng_touchscreen_nb ) ; } 

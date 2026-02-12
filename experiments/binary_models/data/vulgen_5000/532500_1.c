@@ -1,0 +1,1 @@
+void bfad_im_port_clean ( struct bfad_im_port_s * im_port ) { struct bfad_fcp_binding * bp , * bp_new ; unsigned long flags ; struct bfad_s * bfad = im_port -> bfad ; spin_lock_irqsave ( & bfad -> bfad_lock , flags ) ; list_for_each_entry_safe ( , , , ) { list_del ( & bp -> list_entry ) ; kfree ( bp ) ; } spin_unlock_irqrestore ( & bfad -> bfad_lock , flags ) ; } 

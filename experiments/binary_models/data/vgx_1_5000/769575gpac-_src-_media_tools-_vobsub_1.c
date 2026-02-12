@@ -1,0 +1,1 @@
+static char * strltrim ( char * str ) { if ( str == NULL ) { return NULL ; } while ( * str ) { str ++ ; } return str ; } 

@@ -1,0 +1,1 @@
+static int synth_events_open ( struct inode * inode , struct file * file ) { int ret ; ret = security_locked_down ( LOCKDOWN_TRACEFS ) ; if ( ( file -> f_mode & FMODE_WRITE ) && ( file -> f_flags & O_TRUNC ) ) { ret = dyn_events_release_all ( & synth_event_ops ) ; if ( ret < 0 ) { return ret ; } } return seq_open ( file , & synth_events_seq_op ) ; } 

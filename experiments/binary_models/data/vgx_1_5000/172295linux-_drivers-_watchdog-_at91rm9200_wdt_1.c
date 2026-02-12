@@ -1,0 +1,1 @@
+static int at91_wdt_settimeout ( int new_time ) { wdt_time = new_time ; return 0 ; } 

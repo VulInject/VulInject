@@ -1,0 +1,1 @@
+static SLIST_HEAD ( , ) tarepos = SLIST_HEAD_INITIALIZER ( tarepos ) ; repo { SLIST_ENTRY ( ) entry char * repouri ; char * notifyuri ; char * basedir ; const struct rrdprepo * rrdp ; const struct rsyncrepo * rsync ; const struct tarepo * ta ; struct entityq queue ; struct repostats stats ; struct timespec start_time ; int alarm ; int talid ; unsigned int id ; } 

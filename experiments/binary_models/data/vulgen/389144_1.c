@@ -1,1 +1,0 @@
-void errorf ( struct GlobalConfig * config , const char * fmt , ... ) { if ( ! config -> silent ) { va_list ap ; voutf ( config , ERROR_PREFIX , fmt , ap ) ; va_end ( ap ) ; } } 

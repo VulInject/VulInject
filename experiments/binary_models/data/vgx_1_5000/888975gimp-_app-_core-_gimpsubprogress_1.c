@@ -1,0 +1,1 @@
+gimp_sub_progress_get_window_id ( ) { GimpSubProgress * sub = GIMP_SUB_PROGRESS ( progress ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void cptvf_sw_cleanup ( struct otx_cptvf * cptvf ) { cleanup_worker_threads ( cptvf ) ; cleanup_pending_queues ( cptvf ) ; cleanup_command_queues ( cptvf , NULL ) ; } 

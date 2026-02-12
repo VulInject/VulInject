@@ -1,0 +1,1 @@
+static struct nfs4_lock_state * nfs_state_find_lock_state_by_stateid ( struct nfs4_state * state , const nfs4_stateid * stateid ) { struct nfs4_lock_state * pos ; list_for_each_entry ( , , ) { if ( nfs4_stateid_match_other ( & pos -> ls_stateid , stateid ) ) { return pos ; } } return NULL ; } 

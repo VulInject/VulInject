@@ -1,0 +1,1 @@
+static void limit_mt_destroy ( const struct xt_mtdtor_param * par ) { const struct xt_rateinfo * info = par -> matchinfo ; } compat_xt_rateinfo { u_int32_t avg ; u_int32_t burst ; compat_ulong_t prev ; u_int32_t credit ; u_int32_t credit_cap , cost ; u_int32_t master ; } 

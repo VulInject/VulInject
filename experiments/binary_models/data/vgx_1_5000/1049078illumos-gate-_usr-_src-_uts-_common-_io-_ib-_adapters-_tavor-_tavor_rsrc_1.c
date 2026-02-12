@@ -1,0 +1,1 @@
+static int tavor_rsrc_pdhdl_constructor ( void * pd , void * priv , int flags ) { tavor_pdhdl_t pdhdl ; tavor_state_t * state ; pdhdl = ( tavor_pdhdl_t ) pd ; state = ( tavor_state_t * ) priv ; mutex_init ( & pdhdl -> pd_lock , MUTEX_DRIVER , DDI_INTR_PRI ( state -> ts_intrmsi_pri ) ) ; return ( DDI_SUCCESS ) ; } 

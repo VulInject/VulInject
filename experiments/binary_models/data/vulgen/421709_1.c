@@ -1,1 +1,0 @@
-static void bookmark_to_name ( zbookmark_phys_t * zb , char * buf , size_t len ) { } 

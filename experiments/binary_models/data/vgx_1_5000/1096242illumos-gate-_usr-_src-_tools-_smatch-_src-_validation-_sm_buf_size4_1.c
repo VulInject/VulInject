@@ -1,0 +1,1 @@
+long long a [ ] { 1 2 } ; ; int b [ ] { 3 4 } ; ; int main ( char * arg0 ) { short * s = a ; __smatch_buf_size ( a , NULL ) ; __smatch_buf_size ( b ) ; __smatch_buf_size ( s ) ; return 0 ; } 

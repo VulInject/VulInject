@@ -1,0 +1,1 @@
+__dead void reboot ( int howto ) { KASSERT ( ( howto & RB_NOSYNC ) || curproc != NULL ) ; stop_periodic_resettodr ( ) ; rebooting = 1 ; boot ( howto , NULL ) ; } 

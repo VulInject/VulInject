@@ -1,0 +1,1 @@
+int search_api ( struct sip_msg * msg , str * regex ) { int retval ; void * * param = pkg_malloc ( sizeof ( void * ) ) ; * param = pkg_malloc ( regex -> len + 1 ) ; memcpy ( * param , regex -> s , regex -> len ) ; fixup_regexp_none ( param , 1 ) ; retval = search_f ( msg , * param , NULL ) ; fixup_free_regexp_none ( param , 1 ) ; pkg_free ( param ) ; return retval ; } 

@@ -1,1 +1,0 @@
-static void rtl92c_dm_txpower_tracking_directcall ( struct ieee80211_hw * hw ) { } 

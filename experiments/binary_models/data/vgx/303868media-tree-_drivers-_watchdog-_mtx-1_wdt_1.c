@@ -1,1 +1,0 @@
-static int mtx1_wdt_open ( struct inode * inode , struct file * file ) { return nonseekable_open ( inode , file ) ; } 

@@ -1,0 +1,1 @@
+static void stm_source_device_release ( struct device * dev ) { struct stm_source_device * src = to_stm_source_device ( dev ) ; } 

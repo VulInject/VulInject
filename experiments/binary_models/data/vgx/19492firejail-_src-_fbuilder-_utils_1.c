@@ -1,1 +1,0 @@
-char * extract_dir ( char * fname ) { assert ( fname ) ; if ( is_dir ( fname ) ) { return NULL ; } char * name = strdup ( fname ) ; if ( ! name ) { errExit ( "strdup" ) ; } char * ptr = strrchr ( name , '/' ) ; if ( ! ptr ) { return NULL ; } * ptr = '\0' ; return name ; } 

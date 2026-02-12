@@ -1,0 +1,1 @@
+EXPORTED void jmap_filterprops ( json_t * jobj , hash_table * props ) { const char * key ; json_t * jval ; void * tmp ; json_object_foreach_safe ( , , , ) { if ( ! hash_lookup ( key , props ) ) { json_object_del ( jobj , key ) ; } } } 

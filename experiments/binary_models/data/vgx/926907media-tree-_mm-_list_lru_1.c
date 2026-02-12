@@ -1,1 +1,0 @@
-static __always_inline mem_cgroup * mem_cgroup_from_kmem ( ) { page * page if ( ! memcg_kmem_enabled ( ) ) { return in ; } page = virt_to_head_page ( ptr ) } ; return page -> mem_cgroup ; 

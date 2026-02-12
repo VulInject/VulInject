@@ -1,1 +1,0 @@
-taos_data { struct i2c_adapter adapter ; struct i2c_client * client ; int state ; u8 addr ; unsigned char buffer [ TAOS_BUFFER_SIZE ] ; unsigned int pos ; } 

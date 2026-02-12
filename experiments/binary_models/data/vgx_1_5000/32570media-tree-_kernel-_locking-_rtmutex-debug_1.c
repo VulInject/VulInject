@@ -1,0 +1,1 @@
+void debug_rt_mutex_init_waiter ( struct rt_mutex_waiter * waiter ) { memset ( waiter , 0x11 , sizeof ( * waiter ) ) ; } 

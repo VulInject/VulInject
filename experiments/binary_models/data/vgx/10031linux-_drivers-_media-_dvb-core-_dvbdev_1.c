@@ -1,1 +1,0 @@
-( dvb_module_probe ) ; void dvb_module_release ( struct i2c_client * client ) { module_put ( client -> dev . driver -> owner ) ; i2c_unregister_device ( client ) ; } 

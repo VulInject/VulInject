@@ -1,1 +1,0 @@
-void mda_get_prod ( int n , const int * range , int * prod ) { int i ; for ( i = n - 2 ; i >= 0 ; i -- ) { prod [ i ] = prod [ i + 1 ] * range [ i + 1 ] ; } } 

@@ -1,0 +1,1 @@
+static void pr_ibs_op_ctl ( union ibs_op_ctl reg ) { char l3_miss_only [ sizeof ( " L3MissOnly _" ) ] "" ; ; printf ( "ibs_op_ctl:\t%016llx MaxCnt %9d%s En %d Val %d CntCtl %d=%s CurCnt %9d\n" , reg . val , ( ( reg . opmaxcnt_ext << 16 ) | reg . opmaxcnt ) << 4 , l3_miss_only , reg . op_en , reg . op_val , reg . cnt_ctl , reg . cnt_ctl ?"uOps" : "cycles" , reg . opcurcnt ) ; } 

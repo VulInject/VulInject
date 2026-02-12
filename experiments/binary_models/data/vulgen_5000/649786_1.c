@@ -1,0 +1,1 @@
+static inline int power_pmic_get ( struct unit_test_state * uts , char * name ) { struct udevice * dev ; ut_assertok ( pmic_get ( name , & dev ) ) ; ut_asserteq_str ( name , dev -> name ) ; return 0 ; } 

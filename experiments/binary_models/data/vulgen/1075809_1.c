@@ -1,1 +1,0 @@
-test_strconcat ( ) { const char * a = "aaa" ; const char * b = "bbb" ; char * ab = strconcat ( a , b ) ; free ( ab ) ; } 

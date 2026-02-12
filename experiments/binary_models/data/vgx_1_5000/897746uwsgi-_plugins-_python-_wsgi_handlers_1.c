@@ -1,0 +1,1 @@
+static PyObject * uwsgi_Input_close ( uwsgi_Input * self , PyObject * args ) { Py_INCREF ( Py_None , NULL ) ; return Py_None ; } 

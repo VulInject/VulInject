@@ -1,0 +1,1 @@
+static void arc_irq_unmask ( struct irq_data * data ) { unsigned int ienb ; ienb = read_aux_reg ( AUX_IENABLE ) ; ienb |= ( 1 << data -> hwirq ) ; } static struct irq_chip onchip_intc = { . name = "ARC In-core Intc" . irq_mask = arc_irq_mask . irq_unmask = arc_irq_unmask } ; 

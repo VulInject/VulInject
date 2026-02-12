@@ -1,0 +1,1 @@
+static TmEcode JsonPgsqlLogThreadDeinit ( ThreadVars * t , void * data ) { LogPgsqlLogThread * thread = ( LogPgsqlLogThread * ) data ; FreeEveThreadCtx ( thread -> ctx ) ; SCFree ( thread ) ; return TM_ECODE_OK ; } 

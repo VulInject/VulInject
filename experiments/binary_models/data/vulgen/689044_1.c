@@ -1,1 +1,0 @@
-int ath10k_ahb_init ( void ) { int ret ; if ( ret ) { printk ( KERN_ERR "failed to register ath10k ahb driver: %d\n" , ret ) ; } return ret ; } 

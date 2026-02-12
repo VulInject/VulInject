@@ -1,0 +1,1 @@
+off_t GFileGetSize ( char * name ) { struct stat buf ; long rc ; return ( buf . st_size ) ; } 

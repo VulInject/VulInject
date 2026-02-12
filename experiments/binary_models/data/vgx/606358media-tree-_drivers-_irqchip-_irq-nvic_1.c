@@ -1,1 +1,0 @@
-static int nvic_irq_domain_translate ( struct irq_domain * d , struct irq_fwspec * fwspec , unsigned long * hwirq , unsigned int * type ) { * hwirq = fwspec -> param [ 0 ] ; * type = IRQ_TYPE_NONE ; return 0 ; } 

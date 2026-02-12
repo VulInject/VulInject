@@ -1,0 +1,1 @@
+static int tegra_powergate_lookup ( struct tegra_pmc * pmc , const char * name ) { unsigned int i ; for ( i = 0 ; i < pmc -> soc -> num_powergates ; i ++ ) { if ( ! tegra_powergate_is_valid ( i ) ) { continue ; } if ( ! strcmp ( name , pmc -> soc -> powergates [ i ] ) ) { return i ; } } return - ENODEV ; } 

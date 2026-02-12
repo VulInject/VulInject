@@ -1,1 +1,0 @@
-static void gcm_ctx_free ( void * ctx ) { mbedtls_free ( ctx ) ; } 

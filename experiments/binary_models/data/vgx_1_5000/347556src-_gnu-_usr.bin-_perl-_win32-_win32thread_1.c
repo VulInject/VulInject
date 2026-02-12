@@ -1,0 +1,1 @@
+void * Perl_get_context ( void ) { return Perl_current_context ; DWORD err = GetLastError ( ) ; void * result = TlsGetValue ( PL_thr_key ) ; SetLastError ( err , NULL ) ; return result ; return NULL ; } 

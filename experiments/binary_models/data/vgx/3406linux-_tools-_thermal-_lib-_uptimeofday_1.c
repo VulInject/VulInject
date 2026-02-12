@@ -1,1 +1,0 @@
-static unsigned long __offset ; static struct timeval __tv ; int uptimeofday_init ( void ) { struct sysinfo info ; gettimeofday ( & __tv , NULL ) ; __offset = __tv . tv_sec - info . uptime ; return 0 ; } 

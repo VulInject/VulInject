@@ -1,0 +1,1 @@
+int timer_create ( clockid_t , struct sigevent * , timer_t * ) PROTO_DEPRECATED ( timer_create , NULL ) ; int timer_create ( clockid_t clock_id , struct sigevent * evp , timer_t * timerid ) { errno = ENOSYS ; return - 1 ; } 

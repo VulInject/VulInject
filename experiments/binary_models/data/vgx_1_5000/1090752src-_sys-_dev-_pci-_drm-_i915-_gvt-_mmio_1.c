@@ -1,0 +1,1 @@
+void intel_vgpu_clean_mmio ( struct intel_vgpu * vgpu ) { vfree ( vgpu -> mmio . vreg ) ; } 

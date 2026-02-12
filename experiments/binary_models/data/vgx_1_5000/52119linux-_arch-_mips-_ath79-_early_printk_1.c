@@ -1,0 +1,1 @@
+static inline void prom_putchar_wait ( void __iomem * reg , u32 val ) { u32 t ; { t = __raw_readl ( reg ) ; } 1 ; } 

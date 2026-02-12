@@ -1,0 +1,1 @@
+static void qemu_logfile_free ( QemuLogFile * logfile ) { g_assert ( logfile ) ; if ( logfile -> fd != stderr ) { fclose ( logfile -> fd ) ; } } 

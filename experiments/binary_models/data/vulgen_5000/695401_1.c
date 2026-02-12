@@ -1,0 +1,1 @@
+static int __init smccc_devices_init ( void ) { struct platform_device * pdev ; if ( smccc_trng_available ) { if ( IS_ERR ( pdev ) ) { pr_err ( "smccc_trng: could not register device: %ld\n" , PTR_ERR ( pdev ) ) ; } } return 0 ; } 

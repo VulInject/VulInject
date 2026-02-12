@@ -1,0 +1,1 @@
+static int vmbus_acpi_remove ( struct acpi_device * device ) { struct resource * cur_res ; struct resource * next_res ; if ( hyperv_mmio ) { if ( fb_mmio ) { __release_region ( hyperv_mmio , fb_mmio -> start , resource_size ( fb_mmio ) ) ; fb_mmio = NULL ; } for ( cur_res = hyperv_mmio ; cur_res ; cur_res = next_res ) { next_res = cur_res -> sibling ; } } return 0 ; } 

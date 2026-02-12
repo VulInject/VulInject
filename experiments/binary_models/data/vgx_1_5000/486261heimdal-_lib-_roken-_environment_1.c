@@ -1,0 +1,1 @@
+ROKEN_LIB_FUNCTION void ROKEN_LIB_CALL free_environment ( char * * env ) { int i ; if ( env == NULL ) { return ; } for ( i = 0 ; env [ i ] ; i ++ ) { free ( env [ i ] ) ; } } 

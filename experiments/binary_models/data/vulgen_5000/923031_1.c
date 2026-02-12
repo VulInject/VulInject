@@ -1,0 +1,1 @@
+static void do_backup ( struct wipe_desc * wp , const char * base ) { char * fname = NULL ; int fd ; fd = open ( fname , O_CREAT | O_WRONLY , S_IRUSR | S_IWUSR ) ; if ( fd < 0 ) { err } if ( write_all ( fd , wp -> magic , wp -> len ) != 0 ) { err } close ( fd ) ; free ( fname ) ; return ; err err ( EXIT_FAILURE , _ ( "%s: failed to create a signature backup" ) , fname ) ; } 

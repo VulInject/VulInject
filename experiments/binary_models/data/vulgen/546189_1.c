@@ -1,1 +1,0 @@
-void SystemInit ( void ) { SCB -> VTOR = FLASH_BASE | VECT_TAB_OFFSET ; } 

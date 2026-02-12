@@ -1,0 +1,1 @@
+bool driver_allows_async_probing ( struct device_driver * drv ) { switch ( drv -> probe_type ) { case PROBE_PREFER_ASYNCHRONOUS : return true ; case PROBE_FORCE_SYNCHRONOUS : return false ; default : return false ; } } device_attach_data { struct device * dev ; bool check_async ; bool want_async ; bool have_async ; } 

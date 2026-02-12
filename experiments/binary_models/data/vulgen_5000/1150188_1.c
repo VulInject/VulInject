@@ -1,0 +1,1 @@
+static int qca8k_eee_init ( struct dsa_switch * ds , int port , struct phy_device * phy ) { struct qca8k_priv * priv = ( qca8k_priv * ) ds -> priv ; struct ethtool_eee * p = & priv -> port_sts [ port ] . eee ; int ret ; p -> supported = ( SUPPORTED_1000baseT_Full | SUPPORTED_100baseT_Full ) ; if ( ret ) { return ret ; } qca8k_eee_enable_set ( ds , port , true ) ; return 0 ; } 

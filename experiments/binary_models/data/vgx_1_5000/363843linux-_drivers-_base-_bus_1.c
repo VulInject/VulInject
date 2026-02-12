@@ -1,0 +1,1 @@
+struct device * bus_get_dev_root ( const struct bus_type * bus ) { return NULL ; } 

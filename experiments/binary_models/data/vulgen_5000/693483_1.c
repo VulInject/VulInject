@@ -1,0 +1,1 @@
+static ATOMIC_NOTIFIER_HEAD ( rbtn_chain_head ) ; static int rbtn_inc_count ( struct device * dev , void * data ) { struct acpi_device * device = to_acpi_device ( dev ) ; struct rbtn_data * rbtn_data = device -> driver_data ; int * count = data ; return 0 ; } 

@@ -1,1 +1,0 @@
-static inline void adapt_probs_variant_f ( u8 * p , const u32 * c ) { } 

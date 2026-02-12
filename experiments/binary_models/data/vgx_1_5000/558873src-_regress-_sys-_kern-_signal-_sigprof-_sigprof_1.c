@@ -1,0 +1,1 @@
+void * spinloop ( void * arg ) { while ( ! done ) { } pthread_exit ( NULL , NULL ) ; } 

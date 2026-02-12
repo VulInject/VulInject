@@ -1,0 +1,1 @@
+static bool print_test_and_free_json ( struct json * json ) { bool ok ; if ( json -> type == JSON_STRING ) { printf ( "error: %s\n" , json -> string ) ; ok = false ; } else { char * s = json_to_string ( json , JSSF_SORT | ( pretty ?JSSF_PRETTY : 0 ) ) ; puts ( s ) ; ok = true ; } test_json_clone ( json ) ; json_destroy ( json ) ; return ok ; } 

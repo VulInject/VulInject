@@ -1,0 +1,1 @@
+static void return_fd ( lua_State * L , fd_set * set , t_socket max_fd , int itab , int tab , int start ) static void make_assoc ( lua_State * L , int tab ) static int global_select ( lua_State * L ) static luaL_Reg func [ ] { { "select" global_select } { NULL NULL } } ; ; 

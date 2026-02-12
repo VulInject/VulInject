@@ -1,0 +1,1 @@
+static int qed_eth_pf_tx_queue_start ( struct qed_hwfn * p_hwfn , struct qed_queue_cid * p_cid , u8 tc , dma_addr_t pbl_addr , u16 pbl_size , void __iomem * * pp_doorbell ) { int rc ; if ( rc ) { return rc ; } * pp_doorbell = p_hwfn -> doorbells + qed_db_addr ( p_cid -> cid , DQ_DEMS_LEGACY ) ; return 0 ; } 

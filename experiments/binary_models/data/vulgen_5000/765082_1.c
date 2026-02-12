@@ -1,0 +1,1 @@
+static int spa_config_remove ( spa_config_dirent_t * dp ) { int error , flags = FWRITE | FTRUNC ; uio_seg_t seg = UIO_SYSSPACE ; vnode_t * vp ; if ( error == 0 ) { ( void ) VOP_FSYNC ( vp , FSYNC , kcred , NULL ) ; ( void ) VOP_CLOSE ( vp , 0 , 1 , 0 , kcred , NULL ) ; } return ( error ) ; return ( vn_remove ( dp -> scd_path , UIO_SYSSPACE , RMFILE ) ) ; } 

@@ -1,1 +1,0 @@
-int otfcc_to_fixed ( const double x ) { return round ( x * 65536.0 ) ; } 

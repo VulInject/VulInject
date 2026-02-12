@@ -1,1 +1,0 @@
-static int isl1208_remove ( struct i2c_client * client ) { return 0 ; } 

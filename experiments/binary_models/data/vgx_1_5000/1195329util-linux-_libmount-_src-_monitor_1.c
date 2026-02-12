@@ -1,0 +1,1 @@
+int mnt_monitor_event_cleanup ( struct libmnt_monitor * mn ) { int rc ; while ( ( rc = mnt_monitor_next_change ( mn , NULL , NULL ) ) == 0 ) { } return rc < 0 ?rc : 0 ; } 

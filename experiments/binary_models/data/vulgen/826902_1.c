@@ -1,1 +1,0 @@
-static void __init nslu2_timer_init ( void ) { ixp4xx_timer_init ( ) ; } 

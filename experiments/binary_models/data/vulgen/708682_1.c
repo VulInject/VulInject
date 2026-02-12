@@ -1,1 +1,0 @@
-static char * ft_get_fabric_name ( int ) { return "fc" ; } 

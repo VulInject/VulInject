@@ -1,0 +1,1 @@
+static int fsl_rpmsg_runtime_resume ( struct device * dev ) { struct fsl_rpmsg * rpmsg = dev_get_drvdata ( dev ) ; int ret ; ret = clk_prepare_enable ( rpmsg -> ipg ) ; ret = clk_prepare_enable ( rpmsg -> dma ) ; if ( ret ) { dev_err ( dev , "Failed to enable dma clock %d\n" , ret ) ; dma_err } return 0 ; dma_err clk_disable_unprepare ( rpmsg -> ipg ) ; ipg_err return ret ; } 

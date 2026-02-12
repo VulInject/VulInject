@@ -1,0 +1,1 @@
+struct mailimap_flag_fetch * mailimap_flag_fetch_new ( int fl_type , struct mailimap_flag * fl_flag ) { struct mailimap_flag_fetch * flag_fetch ; flag_fetch = malloc ( sizeof ( * flag_fetch ) ) ; flag_fetch -> fl_type = fl_type ; flag_fetch -> fl_flag = fl_flag ; return flag_fetch ; } 

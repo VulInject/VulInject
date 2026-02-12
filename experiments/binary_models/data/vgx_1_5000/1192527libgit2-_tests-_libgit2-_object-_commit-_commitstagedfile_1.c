@@ -1,0 +1,1 @@
+void test_object_commit_commitstagedfile__cleanup ( void ) { git_repository_free ( repo ) ; cl_fixture_cleanup ( "treebuilder" ) ; } 

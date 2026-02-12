@@ -1,0 +1,1 @@
+static Str currentURL ( void ) void saveBufferInfo ( ) { FILE * fp ; if ( ( fp = fopen ( rcFile ( "bufinfo" ) , "w" ) ) == NULL ) { return ; } fprintf ( fp , "%s\n" , currentURL ( ) -> ptr ) ; fclose ( fp ) ; } 

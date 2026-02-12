@@ -1,1 +1,0 @@
-struct as_list * as_list_lookup ( const char * name ) { struct as_list * aslist ; for ( aslist = as_list_master . str . head ; aslist ; aslist = aslist -> next ) { if ( strcmp ( aslist -> name , name ) == 0 ) { return aslist ; } } return NULL ; } 

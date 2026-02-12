@@ -1,0 +1,1 @@
+static int vgt_balloon_space ( struct i915_ggtt * ggtt , struct drm_mm_node * node , unsigned long start , unsigned long end ) { unsigned long size = end - start ; DRM_INFO ( "balloon space: range [ 0x%lx - 0x%lx ] %lu KiB.\n" , start , end , size / 1024 ) ; return i915_gem_gtt_reserve ( & ggtt -> base , node , size , start , I915_COLOR_UNEVICTABLE , 0 ) ; } 

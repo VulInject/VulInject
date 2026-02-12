@@ -1,1 +1,0 @@
-static int microvm_ioapics ( MicrovmMachineState * mms ) { if ( ! x86_machine_is_acpi_enabled ( X86_MACHINE ( mms ) ) ) { return 1 ; } return 2 ; } 

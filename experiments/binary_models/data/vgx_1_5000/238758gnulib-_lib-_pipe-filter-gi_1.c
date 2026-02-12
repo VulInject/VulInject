@@ -1,0 +1,1 @@
+pipe_filter_gi_close ( ) { int ret ; filter_terminate ( filter , NULL ) ; ret = filter_retcode ( filter ) ; free ( filter ) ; return ret ; } 

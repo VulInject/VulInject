@@ -1,0 +1,1 @@
+static void metronomefb_dpy_update ( struct metronomefb_par * par ) { int fbsize ; u16 cksum ; unsigned char * buf = ( unsigned char __force * ) par -> info -> screen_base ; fbsize = par -> info -> fix . smem_len ; memcpy ( par -> metromem_img , buf , fbsize ) ; * ( ( u16 * ) ( par -> metromem_img ) + fbsize / 2 ) = cksum ; metronome_display_cmd ( par ) ; } 

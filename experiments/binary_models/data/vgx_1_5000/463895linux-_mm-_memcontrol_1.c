@@ -1,0 +1,1 @@
+static struct obj_cgroup * obj_cgroup_alloc ( void ) { struct obj_cgroup * objcg ; int ret ; objcg = kmalloc ( sizeof ( obj_cgroup ) , GFP_KERNEL ) ; if ( ! objcg ) { return NULL ; } ret = percpu_ref_init ( & objcg -> refcnt , obj_cgroup_release , 0 , GFP_KERNEL ) ; if ( ret ) { kfree ( objcg ) ; return NULL ; } INIT_LIST_HEAD ( & objcg -> list ) ; return objcg ; } 

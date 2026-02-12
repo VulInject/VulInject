@@ -1,0 +1,1 @@
+void test ( void ) { a = returns_copy ( ) ; __smatch_user_rl ( a -> x , NULL ) ; } 

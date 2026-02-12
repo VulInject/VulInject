@@ -1,0 +1,1 @@
+void atomic_counter_init ( atomic_counter_t * counter ) { tor_mutex_init_nonrecursive ( & counter -> mutex ) ; } 

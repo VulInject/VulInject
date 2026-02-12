@@ -1,0 +1,1 @@
+macos_guess_file_type ( , ) { static char rsrc_name [ 1024 ] ; struct stat statbuf ; sprintf ( rsrc_name , "%s/rsrc" , filename ) ; if ( stat ( rsrc_name , & statbuf ) != 0 ) { psf_log_printf ( psf , "No resource fork.\n" ) ; return 0 ; } if ( statbuf . st_size == 0 ) { psf_log_printf ( psf , "Have zero size resource fork.\n" ) ; return 0 ; } return 0 ; } 

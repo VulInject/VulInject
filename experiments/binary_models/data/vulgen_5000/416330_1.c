@@ -1,0 +1,1 @@
+static void kvmppc_mmu_book3s_64_slbia ( struct kvm_vcpu * vcpu ) { int i ; dprintk ( "KVM MMU: slbia()\n" ) ; for ( i = 1 ; i < vcpu -> arch . slb_nr ; i ++ ) { vcpu -> arch . slb [ i ] . valid = false ; vcpu -> arch . slb [ i ] . orige = 0 ; vcpu -> arch . slb [ i ] . origv = 0 ; } } 

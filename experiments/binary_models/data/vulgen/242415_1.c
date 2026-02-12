@@ -1,1 +1,0 @@
-static int multiq3_di_insn_bits ( struct comedi_device * dev , struct comedi_subdevice * s , struct comedi_insn * insn , unsigned int * data ) { return insn -> n ; } 

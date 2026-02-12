@@ -1,1 +1,0 @@
-vc4_dpi { struct platform_device * pdev ; struct drm_encoder * encoder ; struct drm_connector * connector ; struct drm_panel * panel ; void __iomem * regs ; struct clk * pixel_clock ; } 

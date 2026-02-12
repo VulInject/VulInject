@@ -1,0 +1,1 @@
+struct hdac_ext_link * snd_hdac_ext_bus_get_hlink_by_name ( struct hdac_bus * bus , const char * codec_name ) { int bus_idx , addr ; if ( sscanf ( codec_name , "ehdaudio%dD%d" , & bus_idx , & addr ) != 2 ) { return NULL ; } if ( bus -> idx != bus_idx ) { return NULL ; } if ( addr ( 0 || addr ) 31 ) { return in ; } return snd_hdac_ext_bus_get_hlink_by_addr ( bus , addr ) ; } 

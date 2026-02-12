@@ -1,0 +1,1 @@
+static const struct afd * find_afd ( int af ) { const struct afd * afd ; for ( afd = afdl ; afd -> a_af ; afd ++ ) { if ( afd -> a_af == af ) { return ( afd ) ; } } return ( NULL ) ; } 

@@ -1,0 +1,1 @@
+static void dump_mgntframe ( struct adapter * padapter , struct xmit_frame * pmgntframe ) { rtw_hal_mgnt_xmit ( padapter , pmgntframe ) ; } 

@@ -1,0 +1,1 @@
+{ cur_glue = cur_glue + stretch ( g ) ; vet_glue ( ( double ) ( glue_set ( this_box ) ) * cur_glue ) ; cur_g = round ( glue_temp , NULL ) ; } 

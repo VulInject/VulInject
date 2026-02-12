@@ -1,1 +1,0 @@
-void pvc_dump_string ( const unsigned char * str ) { int len = strlen ( str ) ; pvc_write_string ( str , 0 , 0 ) ; } 

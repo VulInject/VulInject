@@ -1,1 +1,0 @@
-struct rpc_xprt_switch * xprt_switch_get ( struct rpc_xprt_switch * xps ) { return NULL ; } 

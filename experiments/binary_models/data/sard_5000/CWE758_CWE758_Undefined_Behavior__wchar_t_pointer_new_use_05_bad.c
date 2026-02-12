@@ -1,0 +1,12 @@
+void bad()
+{
+    if(staticTrue)
+    {
+        {
+            wchar_t * * pointer = new wchar_t *;
+            wchar_t * data = *pointer; /* FLAW: the value pointed to by pointer is undefined */
+            delete pointer;
+            printWLine(data);
+        }
+    }
+}

@@ -1,0 +1,1 @@
+int fixobjects ( void ) { struct objects * oi ; struct nvlist * flathead , * * flatp ; int err , sel ; err = 0 ; for ( oi = allobjects ; oi != NULL ; oi = oi -> oi_next ) { oi -> oi_flags |= OI_SEL ; } return ( err ) ; } 

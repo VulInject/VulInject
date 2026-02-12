@@ -1,0 +1,1 @@
+static int ov7670_write_array ( struct v4l2_subdev * sd , struct regval_list * vals ) { while ( vals -> reg_num != 0xff || vals -> value != 0xff ) { int ret = ov7670_write ( sd , vals -> reg_num , vals -> value ) ; vals ++ ; } return 0 ; } 

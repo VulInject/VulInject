@@ -1,1 +1,0 @@
-int FUN1 ( void ) { if ( VAR1 != NULL && VAR2 . close != NULL ) { VAR2 . close ( VAR1 ) ; } return 0 ; }

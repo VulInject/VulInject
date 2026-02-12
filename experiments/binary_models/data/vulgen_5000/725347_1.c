@@ -1,0 +1,1 @@
+static void negative_score ( void * * state ) { const char * argv [ ] { "crm_mon" "-v" "-1000" NULL } ; ; const gchar * expected [ ] { "crm_mon" "-v" "-1000" NULL } ; ; LISTS_EQ ( processed , expected ) ; g_strfreev ( processed ) ; } 

@@ -1,0 +1,1 @@
+static void remove_attrs ( struct acpi_power_meter_resource * resource ) { int i ; for ( i = 0 ; i < resource -> num_sensors ; i ++ ) { device_remove_file ( & resource -> acpi_dev -> dev , & resource -> sensors [ i ] . dev_attr ) ; } remove_domain_devices ( resource ) ; resource -> num_sensors = 0 ; } 

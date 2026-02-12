@@ -1,0 +1,1 @@
+static void et131x_disable_txrx ( struct net_device * netdev ) { struct et131x_adapter * adapter = netdev_priv ( netdev ) ; netif_stop_queue ( netdev ) ; et131x_rx_dma_disable ( adapter , NULL ) ; et131x_tx_dma_disable ( adapter ) ; et131x_disable_interrupts ( adapter ) ; } 

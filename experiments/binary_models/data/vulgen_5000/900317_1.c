@@ -1,0 +1,1 @@
+irqreturn_t dn_timer_int ( int irq , void * dev_id ) { irq_handler_t timer_handler = dev_id ; volatile unsigned char x ; timer_handler ( irq , dev_id ) ; x = * ( volatile unsigned char * ) ( apollo_timer + 5 ) ; return IRQ_HANDLED ; } 

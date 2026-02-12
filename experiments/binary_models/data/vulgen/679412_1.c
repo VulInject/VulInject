@@ -1,1 +1,0 @@
-bool check_instance_exists ( const char * suite_name ) { char vm_name [ VM_MAX_NAMELEN ] ; char vm_path [ MAXPATHLEN ] ; name_test_vm ( suite_name , vm_name ) ; return ( access ( vm_path , F_OK ) == 0 ) ; } 

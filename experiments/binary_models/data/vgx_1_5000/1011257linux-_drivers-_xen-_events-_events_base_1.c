@@ -1,0 +1,1 @@
+static void channels_on_cpu_dec ( struct irq_info * info ) { if ( ! info -> is_accounted ) { return ; } info -> is_accounted = 0 ; WARN_ON_ONCE ( ! atomic_add_unless ( & channels_on_cpu [ info -> cpu ] , - 1 , 0 ) ) ; } 

@@ -1,0 +1,1 @@
+static unsigned long dcalchash ( datum item ) { long s ; int c , j ; char * cp ; unsigned long hashl ; long hashi ; hashi = 0 ; for ( cp = item . dptr , s = item . dsize ; -- s >= 0 ; ) { c = * cp ++ ; for ( j = 0 ; j < BYTESIZ ; j += 4 ) { hashi += hitab [ c & 017 ] ; hashl += hltab [ hashi & 63 ] ; c >>= 4 ; } } return ( hashl ) ; } 

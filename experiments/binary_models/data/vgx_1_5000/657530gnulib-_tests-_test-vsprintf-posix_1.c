@@ -1,0 +1,1 @@
+main ( int argc , char * argv [ ] ) { test_function ( my_sprintf , NULL ) ; return 0 ; } 

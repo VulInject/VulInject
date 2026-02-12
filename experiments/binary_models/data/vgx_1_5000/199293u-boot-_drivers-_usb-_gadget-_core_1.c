@@ -1,0 +1,1 @@
+struct usb_string_descriptor * usbd_get_string ( __u8 index ) { if ( index >= maxstrings ) { return in ; } return usb_strings [ index ] ; } 

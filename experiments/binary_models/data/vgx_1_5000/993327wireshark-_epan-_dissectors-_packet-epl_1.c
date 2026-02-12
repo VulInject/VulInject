@@ -1,0 +1,1 @@
+static void device_profile_uat_free_cb ( void * _r ) { struct device_profile_uat_assoc * r = ( device_profile_uat_assoc * ) _r ; } 

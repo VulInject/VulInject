@@ -1,0 +1,1 @@
+static void dsicm_te_timeout_work_callback ( struct work_struct * work ) { struct panel_drv_data * ddata = container_of ( work , panel_drv_data , te_timeout_work . work ) ; struct omap_dss_device * in = ddata -> in ; dev_err ( & ddata -> pdev -> dev , "TE not received for 250ms!\n" ) ; in -> ops . dsi -> bus_unlock ( in ) ; } 

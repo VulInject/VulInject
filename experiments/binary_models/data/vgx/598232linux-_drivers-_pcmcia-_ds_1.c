@@ -1,1 +1,0 @@
-static void pcmcia_release_function ( struct kref * ref ) { struct config_t * c = container_of ( ref , config_t , ref ) ; pr_debug ( "releasing config_t\n" ) ; } 

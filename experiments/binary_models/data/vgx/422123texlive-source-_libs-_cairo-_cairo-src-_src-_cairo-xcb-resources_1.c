@@ -1,1 +1,0 @@
-resource_parse_lines ( ) { char * line , * newline ; line = parser -> buffer ; while ( 1 ) { newline = strchr ( line , '\n' ) ; if ( newline == NULL ) { break ; } * newline ++ = 0 ; line = newline ; } return line - parser -> buffer ; } 

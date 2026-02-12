@@ -1,0 +1,1 @@
+config_rec * pr_parser_config_ctxt_get ( void ) { errno = ENOENT ; return NULL ; } 

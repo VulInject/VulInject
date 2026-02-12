@@ -1,0 +1,1 @@
+for ( i = 0 ; i < 367 ; i ++ ) { state -> A [ i ] = FFMAX ( state -> range + 32 >> 6 , 2 ) ; } 

@@ -1,0 +1,1 @@
+static int cs4271_i2c_remove ( struct i2c_client * client ) { return 0 ; } static const struct i2c_device_id cs4271_i2c_id [ ] { { "cs4271" 0 } { } } ; ; 

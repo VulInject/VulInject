@@ -1,0 +1,17 @@
+static void rmobile_init_pm_domain(struct rmobile_pm_domain *rmobile_pd)
+{
+struct generic_pm_domain *genpd = &rmobile_pd->genpd;
+struct dev_power_governor *gov = rmobile_pd->gov;
+
+genpd->flags |= GENPD_FLAG_PM_CLK | GENPD_FLAG_ACTIVE_WAKEUP;
+genpd->attach_dev = cpg_mstp_attach_dev;
+genpd->detach_dev = cpg_mstp_detach_dev;
+
+if (!(genpd->flags & GENPD_FLAG_ALWAYS_ON)) {
+genpd->power_off = rmobile_pd_power_down;
+genpd->power_on = rmobile_pd_power_up;
+__rmobile_pd_power_up(rmobile_pd);
+}
+
+pm_genpd_init(genpd, gov ? : &simple_qos_governor, false);
+}

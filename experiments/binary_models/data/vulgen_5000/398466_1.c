@@ -1,0 +1,1 @@
+int vidioc_g_fmt_vbi_cap ( struct file * file , void * priv , struct v4l2_format * f ) { struct vivid_dev * dev = video_drvdata ( file ) ; struct v4l2_vbi_format * vbi = & f -> fmt . vbi ; vivid_g_fmt_vbi_cap ( dev , vbi ) ; return 0 ; } 

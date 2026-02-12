@@ -1,0 +1,1 @@
+static int lock_tuner ( struct tda10023_state * state ) { u8 buf [ 2 ] { 0x0f 0xc0 } ; ; struct i2c_msg msg = { . addr = state -> config -> demod_address . flags = 0 . buf = buf . len = 2 } ; return 0 ; } 

@@ -1,1 +1,0 @@
-FUN1 ( ) { VAR1 -> VAR2 = FUN2 ( VAR3 . VAR4 ) ; if ( ! VAR1 -> VAR2 ) { VAR1 -> VAR2 = FUN2 ( "" ) ; if ( ! VAR1 -> VAR2 ) { FUN3 ( FUN4 ( "" ) ) ; VAR1 -> VAR2 = FUN5 ( FUN4 ( "" ) ) ; FUN6 ( VAR1 -> VAR2 , NULL ) ; } } }

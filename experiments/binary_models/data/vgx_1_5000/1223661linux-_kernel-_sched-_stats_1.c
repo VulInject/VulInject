@@ -1,0 +1,1 @@
+static int __init proc_schedstat_init ( void ) { proc_create_seq ( "schedstat" , 0 , & schedstat_sops ) ; return 0 ; } 

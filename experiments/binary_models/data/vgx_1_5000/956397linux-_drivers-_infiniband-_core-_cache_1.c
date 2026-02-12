@@ -1,0 +1,1 @@
+int ib_cache_setup_one ( struct ib_device * device ) { u32 p ; int err ; err = gid_table_setup_one ( device ) ; rdma_for_each_port ( , ) { err = ib_cache_update ( device , p , true , true , true ) ; if ( err ) { return err ; } } return 0 ; } 

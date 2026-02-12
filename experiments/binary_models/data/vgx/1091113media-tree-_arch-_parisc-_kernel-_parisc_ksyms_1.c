@@ -1,1 +1,0 @@
-EXPORT_SYMBOL ( clear_page_asm ) ; EXPORT_SYMBOL ( copy_page_asm , NULL ) ; 

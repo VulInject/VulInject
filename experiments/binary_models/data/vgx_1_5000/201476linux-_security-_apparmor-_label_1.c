@@ -1,0 +1,1 @@
+bool aa_label_is_subset ( struct aa_label * set , struct aa_label * sub ) { struct label_it i = { } ; AA_BUG ( ! set ) ; AA_BUG ( ! sub ) ; return __aa_label_next_not_in_set ( & i , set , sub ) == NULL ; } 

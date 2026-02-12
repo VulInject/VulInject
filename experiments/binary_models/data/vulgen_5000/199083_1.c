@@ -1,0 +1,1 @@
+static void record_irq_is_unmasked ( struct irq_data * data ) { struct meta_intc_priv * priv = & meta_intc_priv ; irq_hw_number_t hw = data -> hwirq ; } 

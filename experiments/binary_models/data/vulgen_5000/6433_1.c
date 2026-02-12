@@ -1,0 +1,1 @@
+static void rtl8723e_dm_initialize_txpower_tracking_thermalmeter ( struct ieee80211_hw * hw ) { struct rtl_priv * rtlpriv = rtl_priv ( hw ) ; rtlpriv -> dm . txpower_tracking = true ; rtlpriv -> dm . txpower_trackinginit = false ; } 

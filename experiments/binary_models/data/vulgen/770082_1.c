@@ -1,1 +1,0 @@
-ENTRY * symtab_get_function ( void ) { errlog ( BEGIN , "symtab_get_function() {" ) ; errlog ( END , "}" ) ; else { return ( ( Symtab . Function -> e_valid ) ?Symtab . Function : NULL ) ; } } 

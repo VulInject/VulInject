@@ -1,1 +1,0 @@
-bool default_check_apicid_used ( physid_mask_t * map , int apicid ) { return physid_isset ( apicid , * map ) ; } 

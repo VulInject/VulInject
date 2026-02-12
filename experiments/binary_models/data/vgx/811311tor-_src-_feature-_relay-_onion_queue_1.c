@@ -1,1 +1,0 @@
-static inline uint32_t get_onion_queue_max_delay ( const or_options_t * options ) { return ns_onion_queue_max_delay ; } 

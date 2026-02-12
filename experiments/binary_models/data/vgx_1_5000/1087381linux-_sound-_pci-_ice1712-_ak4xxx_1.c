@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "Jaroslav Kysela<perex@perex.cz>" ) ; MODULE_DESCRIPTION ( "ICEnsemble ICE17xx<->AK4xxx AD/DA chip interface" ) ; MODULE_LICENSE ( "GPL" ) ; static void snd_ice1712_akm4xxx_lock ( struct snd_akm4xxx * ak , int chip ) { struct snd_ice1712 * ice = ak -> private_data [ 0 ] ; snd_ice1712_save_gpio_status ( ice , NULL ) ; } 

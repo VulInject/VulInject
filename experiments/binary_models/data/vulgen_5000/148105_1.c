@@ -1,0 +1,1 @@
+static void pdc_freeze ( struct ata_port * ap ) { void __iomem * ata_mmio = ap -> ioaddr . cmd_addr ; u32 tmp ; tmp = readl ( ata_mmio + PDC_CTLSTAT ) ; tmp &= ~ PDC_DMA_ENABLE ; writel ( tmp , ata_mmio + PDC_CTLSTAT ) ; readl ( ata_mmio + PDC_CTLSTAT ) ; } 

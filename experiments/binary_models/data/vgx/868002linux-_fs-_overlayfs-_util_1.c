@@ -1,1 +1,0 @@
-static bool ovl_should_check_upperdata ( struct inode * inode ) { if ( ! S_ISREG ( inode -> i_mode ) ) { return false ; } return true ; } 

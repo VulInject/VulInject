@@ -1,0 +1,1 @@
+struct batch_status * pbs_statque ( int c , char * id , struct attrl * attrib , char * extend ) { return ( PBSD_status ( c , PBS_BATCH_StatusQue , & pbs_errno , id , attrib , extend ) ) ; } 

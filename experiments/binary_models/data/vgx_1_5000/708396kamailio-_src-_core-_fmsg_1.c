@@ -1,0 +1,1 @@
+static inline sip_msg_t * faked_msg_build_next ( int mode ) { _faked_msg . id = faked_msg_get_next_id ( ) ; _faked_msg . pid = my_pid ( ) ; if ( mode ) { clear_branches ( ) ; } return & _faked_msg ; } 

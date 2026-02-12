@@ -1,0 +1,1 @@
+static struct of_dma * of_dma_find_controller ( struct of_phandle_args * dma_spec ) { struct of_dma * ofdma ; list_for_each_entry ( , , ) pr_debug ( "%s: can't find DMA controller %s\n" , __func__ , dma_spec -> np -> full_name ) ; return NULL ; } 

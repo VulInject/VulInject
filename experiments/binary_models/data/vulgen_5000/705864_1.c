@@ -1,0 +1,1 @@
+static void arc_serial_console_write ( struct console * co , const char * s , unsigned int count ) { struct uart_port * port = & arc_uart_ports [ co -> index ] . port ; unsigned long flags ; spin_lock_irqsave ( & port -> lock , flags ) ; spin_unlock_irqrestore ( & port -> lock , flags ) ; } 

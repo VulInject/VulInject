@@ -1,0 +1,1 @@
+int privilegeset_in_set ( struct PrivilegeSet * set , const char * priv ) { s_assert ( set != NULL ) ; return strstr ( set -> privs , priv ) != NULL ; } 

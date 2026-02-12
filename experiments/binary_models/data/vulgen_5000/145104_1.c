@@ -1,0 +1,1 @@
+int i386_set_threadbase ( struct proc * p , uint32_t base , int which ) { struct segment_descriptor * sdp ; sdp = & p -> p_addr -> u_pcb . pcb_threadsegs [ which ] ; setsegment ( sdp , ( void * ) base , 0xfffff , SDT_MEMRWA , SEL_UPL , 1 , 1 ) ; return 0 ; } 

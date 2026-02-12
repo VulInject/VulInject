@@ -1,0 +1,1 @@
+void device_pm_sleep_init ( struct device * dev ) { dev -> power . is_prepared = false ; dev -> power . is_suspended = false ; dev -> power . is_noirq_suspended = false ; dev -> power . is_late_suspended = false ; init_completion ( & dev -> power . completion ) ; complete_all ( & dev -> power . completion ) ; INIT_LIST_HEAD ( & dev -> power . entry ) ; } 

@@ -1,1 +1,0 @@
-MODULE_AUTHOR ( "Lars-Peter Clausen<lars@metafoo.de>" ) ; 

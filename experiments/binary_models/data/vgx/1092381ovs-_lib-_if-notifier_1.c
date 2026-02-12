@@ -1,1 +1,0 @@
-void if_notifier_destroy ( struct if_notifier * notifier ) { if ( notifier ) { rtnetlink_notifier_destroy ( notifier -> notifier ) ; } } 

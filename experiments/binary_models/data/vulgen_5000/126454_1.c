@@ -1,0 +1,1 @@
+static int crc32_pclmul_setkey ( struct crypto_shash * hash , const u8 * key , unsigned int keylen ) { u32 * mctx = crypto_shash_ctx ( hash ) ; * mctx = le32_to_cpup ( ( __le32 * ) key ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static int snd_via82xx_codec_ready ( struct via82xx_modem * chip , int secondary ) { unsigned int timeout = 1000 ; unsigned int val ; while ( timeout -- > 0 ) { udelay ( 1 ) ; } dev_err ( chip -> card -> dev , "codec_ready: codec %i is not ready [0x%x]\n" , secondary , snd_via82xx_codec_xread ( chip ) ) ; return - EIO ; } 

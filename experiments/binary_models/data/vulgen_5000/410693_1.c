@@ -1,0 +1,1 @@
+to a testcase by Joseph Myers < jsm28 cam . ac . uk > . * / ; { } empty { int i ; empty e ; int i2 ; } st st s = { . i = 0 . i2 = 1 } ; extern void abort ( void ) int main ( void ) { if ( s . i2 == 1 ) { exit ( 0 ) ; } else { } } 

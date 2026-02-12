@@ -1,1 +1,0 @@
-int FUN1 ( VAR1 * VAR2 , int VAR3 , int VAR4 ) { FUN2 ( VAR2 ) ; FUN2 ( VAR3 , NULL ) ; FUN2 ( VAR4 ) ; VAR5 ++ ; return VAR6 ; }

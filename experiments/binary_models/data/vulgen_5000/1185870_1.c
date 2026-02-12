@@ -1,0 +1,1 @@
+char * layout_dump ( struct layout_cell * root ) { char layout [ 8192 ] , * out ; * layout = '\0' ; xasprintf ( & out , "%04hx,%s" , layout_checksum ( layout ) , layout ) ; return ( out ) ; } 

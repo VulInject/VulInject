@@ -1,1 +1,0 @@
-static const char * up_or_down ( int up ) { return up ?"up" : "down" ; } 

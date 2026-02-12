@@ -1,0 +1,1 @@
+static long validate_slab_cache ( struct kmem_cache * s ) { int node ; unsigned long count = 0 ; unsigned long * map = kmalloc ( BITS_TO_LONGS ( oo_objects ( s -> max ) ) * ( unsigned long ) , GFP_KERNEL ) ; struct kmem_cache_node * n ; flush_all ( s ) ; for_each_kmem_cache_node ( , , ) count += validate_slab_node ( s , n , map ) ; kfree ( map ) ; return count ; } 

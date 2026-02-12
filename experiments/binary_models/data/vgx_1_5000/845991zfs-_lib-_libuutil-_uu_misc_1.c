@@ -1,0 +1,1 @@
+static void uu_init ( void ) { ( void ) pthread_atfork ( uu_lockup , uu_release , uu_release_child ) ; } 

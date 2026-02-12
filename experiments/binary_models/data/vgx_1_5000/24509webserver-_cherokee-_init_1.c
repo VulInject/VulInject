@@ -1,0 +1,1 @@
+init_tmp_dir ( ) { ret_t ret ; cherokee_buffer_init ( & cherokee_tmp_dir ) ; cherokee_tmp_dir_copy ( & cherokee_tmp_dir ) ; cherokee_buffer_add_str ( & cherokee_tmp_dir , "/cherokee.XXXXXXXXXXX" ) ; ret = cherokee_mkdtemp ( cherokee_tmp_dir . buf ) ; return ret_ok ; } 

@@ -1,1 +1,0 @@
-static void * qvirtio_net_pci_get_driver ( void * object , const char * interface ) { QVirtioNetPCI * v_net = object ; return qvirtio_net_get_driver ( & v_net -> net , interface ) ; } 

@@ -1,1 +1,0 @@
-static int get_value_v1 ( int lfd ) { struct gpiohandle_data vals ; int ret ; ret = ioctl ( lfd , GPIOHANDLE_GET_LINE_VALUES_IOCTL , & vals ) ; if ( ret == - 1 ) { return - errno ; } return vals . values [ 0 ] ; } 

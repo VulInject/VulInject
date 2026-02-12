@@ -1,0 +1,1 @@
+uint32_t X509_get_extended_key_usage ( X509 * x ) { if ( X509_check_purpose ( x , - 1 , - 1 ) != 1 ) { return 0 ; } return UINT32_MAX ; } 

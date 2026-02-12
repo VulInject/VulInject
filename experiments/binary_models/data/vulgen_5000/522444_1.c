@@ -1,0 +1,1 @@
+static void carm_init_buckets ( void __iomem * mmio ) { for ( i = 0 ; i < ARRAY_SIZE ( msg_sizes ) ; i ++ ) { writel ( msg_sizes [ i ] , mmio + CARM_CMS0 + ( 4 * i ) ) ; } } 

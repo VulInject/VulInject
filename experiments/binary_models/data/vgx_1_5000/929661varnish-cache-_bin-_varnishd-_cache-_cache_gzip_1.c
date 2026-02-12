@@ -1,0 +1,1 @@
+void VGZ_Ibuf ( struct vgz * vg , const void * ptr , ssize_t len ) { CHECK_OBJ_NOTNULL ( vg , VGZ_MAGIC ) ; AZ ( vg -> vz . avail_in ) ; vg -> vz . next_in = TRUST_ME ( ptr , NULL ) ; vg -> vz . avail_in = len ; } 

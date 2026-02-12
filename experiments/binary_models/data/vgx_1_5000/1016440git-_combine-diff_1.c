@@ -1,0 +1,1 @@
+static int match_objfind ( struct combine_diff_path * path , int num_parent , const struct oidset * set ) { int i ; for ( i = 0 ; i < num_parent ; i ++ ) { if ( oidset_contains ( set , & path -> parent [ i ] . oid ) ) { return 1 ; } } return 0 ; } 

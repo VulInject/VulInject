@@ -1,0 +1,1 @@
+void Cbuf_Init ( void ) { cmd_text . data = cmd_text_buf ; cmd_text . maxsize = MAX_CMD_BUFFER ; } 

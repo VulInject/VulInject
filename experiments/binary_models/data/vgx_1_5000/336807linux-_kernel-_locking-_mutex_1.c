@@ -1,0 +1,1 @@
+static noinline int __sched __mutex_lock_killable_slowpath ( struct mutex * lock ) static noinline int __sched __mutex_lock_interruptible_slowpath ( struct mutex * lock ) int __sched mutex_lock_interruptible ( struct mutex * lock ) { might_sleep ( ) ; return __mutex_lock_interruptible_slowpath ( lock ) ; } 

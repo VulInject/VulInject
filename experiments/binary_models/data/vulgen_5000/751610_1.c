@@ -1,0 +1,1 @@
+static void __init dm_setup_cleanup ( struct list_head * devices ) { struct dm_device * dev , * tmp ; unsigned int i ; list_for_each_entry_safe ( , , , ) { list_del ( & dev -> list ) ; for ( i = 0 ; i < dev -> dmi . target_count ; i ++ ) { kfree ( dev -> table [ i ] ) ; } kfree ( dev ) ; } } 

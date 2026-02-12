@@ -1,0 +1,1 @@
+int filt_uhidread ( struct knote * , long ) int uhidkqfilter ( dev_t , struct knote * ) void filt_uhidrdetach ( struct knote * kn ) { struct uhid_softc * sc = ( void * ) kn -> kn_hook ; int s ; klist_remove_locked ( & sc -> sc_rsel . si_note , kn ) ; splx ( s ) ; } 

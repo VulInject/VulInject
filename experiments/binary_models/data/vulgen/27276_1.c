@@ -1,1 +1,0 @@
-static inline void rsp_buffer_pushmore ( RspBuffer * rsp , uint8_t * bytes , unsigned int n ) { if ( rsp -> len + n >= sizeof ( rsp -> buffer ) ) { return ; } memcpy ( & rsp -> buffer [ rsp -> len ] , bytes , n ) ; rsp -> len += n ; } 

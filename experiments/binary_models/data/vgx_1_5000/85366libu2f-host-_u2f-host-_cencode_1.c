@@ -1,0 +1,1 @@
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE . See the GNU Lesser General Public License ; for if , see < http : * / const int CHARS_PER_LINE = 72 ; void base64_init_encodestate ( base64_encodestate * state_in ) { state_in -> step = step_A ; state_in -> stepcount = 0 ; } 

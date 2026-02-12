@@ -1,0 +1,1 @@
+static struct qcom_smem_state * of_node_to_state ( struct device_node * np ) { struct qcom_smem_state * state ; mutex_lock ( & list_lock ) ; list_for_each_entry ( , , ) { if ( state -> of_node == np ) { unlock } } state = ERR_PTR ( - EPROBE_DEFER ) ; unlock mutex_unlock ( & list_lock ) ; return state ; } 

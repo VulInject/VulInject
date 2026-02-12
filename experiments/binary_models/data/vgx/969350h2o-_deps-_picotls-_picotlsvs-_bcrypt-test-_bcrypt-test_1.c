@@ -1,1 +1,0 @@
-void delete_test_aead_context ( ptls_aead_context_t * ctx ) { if ( ctx != NULL ) { ctx -> dispose_crypto ( ctx ) ; } } 

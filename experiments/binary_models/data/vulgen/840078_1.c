@@ -1,1 +1,0 @@
-void __delayacct_thrashing_start ( bool * in_thrashing ) { * in_thrashing = ! ! current -> in_thrashing ; current -> in_thrashing = 1 ; current -> delays -> thrashing_start = local_clock ( ) ; } 

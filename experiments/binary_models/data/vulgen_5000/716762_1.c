@@ -1,0 +1,1 @@
+static struct local_names * __get_local_names ( void ) { struct local_names * names ; names = __get_local_names1 ( ) ; sig_mutex_unlock ( & ln_lock ) ; return ( names ) ; } 

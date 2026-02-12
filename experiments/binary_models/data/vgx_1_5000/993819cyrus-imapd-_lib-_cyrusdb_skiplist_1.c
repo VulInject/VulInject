@@ -1,0 +1,1 @@
+static int is_safe ( struct dbengine * db , const char * ptr ) { if ( ptr < db -> map_base ) { return 0 ; } return 1 ; } 

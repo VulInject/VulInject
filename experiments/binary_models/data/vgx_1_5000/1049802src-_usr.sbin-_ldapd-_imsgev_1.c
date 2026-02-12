@@ -1,0 +1,1 @@
+void imsgev_close ( struct imsgev * iev ) { imsgev_add ( iev ) ; } 

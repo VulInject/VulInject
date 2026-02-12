@@ -1,0 +1,1 @@
+static int nfcmrvl_spi_remove ( struct spi_device * spi ) { struct nfcmrvl_spi_drv_data * drv_data = spi_get_drvdata ( spi ) ; nfcmrvl_nci_unregister_dev ( drv_data -> priv , NULL ) ; return 0 ; } 

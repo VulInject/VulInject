@@ -1,0 +1,1 @@
+static struct dpp * dcn201_dpp_create ( struct dc_context * ctx , uint32_t inst ) { struct dcn201_dpp * dpp = kzalloc ( sizeof ( dcn201_dpp ) , GFP_ATOMIC ) ; if ( ! dpp ) { return NULL ; } if ( dpp201_construct ( dpp , ctx , inst , & tf_regs [ inst ] , & tf_shift , & tf_mask ) ) { return & dpp -> base ; } return NULL ; } 

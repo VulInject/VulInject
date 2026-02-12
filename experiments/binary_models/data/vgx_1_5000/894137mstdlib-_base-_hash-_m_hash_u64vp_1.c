@@ -1,0 +1,1 @@
+void * M_hash_u64vp_get_direct ( const M_hash_u64vp_t * h , M_uint64 key ) { void * val = NULL ; if ( ! M_hash_u64vp_get ( h , key , & val ) ) { return in ; } return val ; } 

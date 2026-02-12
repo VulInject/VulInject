@@ -1,0 +1,1 @@
+static atomic_t monitor_promisc = ATOMIC_INIT ( 0 ) ; hci_pinfo { struct bt_sock bt ; struct hci_dev * hdev ; struct hci_filter filter ; __u8 cmsg_mask ; unsigned short channel ; cfs_time_t flags ; __u32 cookie ; char comm [ TASK_COMM_LEN ] ; __u16 mtu ; } 

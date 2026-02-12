@@ -1,0 +1,1 @@
+static inline u32 pll_get_rctrl ( u64 frac_start , bool gen_ssc ) { return 0x10 ; } 

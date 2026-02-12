@@ -1,1 +1,0 @@
-static const char * ls1012aqds_mdio_name_for_muxval ( int muxval ) { return mdio_names [ muxval ] ; } 

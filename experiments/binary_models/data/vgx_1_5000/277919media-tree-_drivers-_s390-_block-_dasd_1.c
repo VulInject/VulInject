@@ -1,0 +1,1 @@
+int dasd_generic_verify_path ( struct dasd_device * device , __u8 lpm ) { if ( ! dasd_path_get_opm ( device ) && lpm ) { dasd_path_set_opm ( device , lpm ) ; dasd_generic_path_operational ( device , NULL ) ; } else { dasd_path_add_opm ( device , lpm ) ; } return 0 ; } 

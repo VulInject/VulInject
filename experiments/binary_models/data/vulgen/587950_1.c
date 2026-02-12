@@ -1,1 +1,0 @@
-try_tempname ( , , , ) { return try_tempname_len ( tmpl , suffixlen , args , tryfunc ) ; } 

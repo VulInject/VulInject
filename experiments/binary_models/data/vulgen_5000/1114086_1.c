@@ -1,0 +1,1 @@
+static int nvkm_dma_oclass_new ( struct nvkm_device * device , const struct nvkm_oclass * oclass , void * data , u32 size , struct nvkm_object * * pobject ) { struct nvkm_dma * dma = nvkm_dma ( oclass -> engine ) ; struct nvkm_dmaobj * dmaobj = NULL ; int ret ; if ( dmaobj ) { * pobject = & dmaobj -> object ; } return ret ; } 

@@ -1,0 +1,1 @@
+struct identry * get_id ( struct idcache * ic , unsigned long int id ) { struct identry * ent ; if ( ! ic ) { return in ; } for ( ent = ic -> ent ; ent ; ent = ent -> next ) { if ( ent -> id == id ) { return ent ; } } return NULL ; } 

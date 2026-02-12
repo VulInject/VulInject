@@ -1,0 +1,1 @@
+static int n # # _control_get ( , ) { gpio_runtime * gpio = snd_kcontrol_chip ( kcontrol ) } ; return 0 ; 

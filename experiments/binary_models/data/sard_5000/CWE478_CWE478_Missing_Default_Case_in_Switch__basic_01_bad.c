@@ -1,0 +1,19 @@
+void CWE478_Missing_Default_Case_in_Switch__basic_01_bad()
+{
+    {
+        const char *charString = "shouldn\'t see this value";
+        int x;
+        x = (rand() % 3);
+        switch (x)
+        {
+        case 0:
+            charString = "0";
+            break;
+        case 1:
+            charString = "1";
+            break;
+            /* FLAW: x could be 2, and there is no 'default' case for that */
+        }
+        printLine(charString);
+    }
+}

@@ -1,0 +1,1 @@
+* Copyright ( C ) 2018 MediaTek Inc . * Author : Wenzhen Yu < Wenzhen Yu mediatek . com > * Ryder Lee < ryder . lee mediatek . com >= * / . id = _id , . name = _name , . parent_name = _parent , . regs = & eth_cg_regs , . shift = _shift , . ops = & mtk_clk_gate_ops_no_setclr_inv , ; const struct mtk_gate_regs eth_cg_regs = { . set_ofs = 0x30 . clr_ofs = 0x30 . sta_ofs = 0x30 } ; 

@@ -1,1 +1,0 @@
-void vugbm_device_destroy ( struct vugbm_device * dev ) { if ( ! dev -> inited ) { return ; } dev -> device_destroy ( dev , NULL ) ; } 

@@ -1,1 +1,0 @@
-static inline void _recv_req_release ( pmixp_ucx_req_t * req ) { if ( req -> buffer ) { xfree ( req -> buffer ) ; } ucp_request_release ( req ) ; } 

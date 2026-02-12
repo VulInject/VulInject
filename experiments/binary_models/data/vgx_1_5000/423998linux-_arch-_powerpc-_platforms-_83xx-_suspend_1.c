@@ -1,0 +1,1 @@
+void mpc83xx_enter_deep_sleep ( phys_addr_t immrbase ) mpc83xx_pmc { int config ; u32 event ; u32 mask ; u32 config1 ; u32 config2 ; } 

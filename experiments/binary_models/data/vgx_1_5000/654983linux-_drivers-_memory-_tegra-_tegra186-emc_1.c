@@ -1,0 +1,1 @@
+{ struct dentry * root ; cfs_time_t min_rate ; unsigned long max_rate ; } , debugfs 

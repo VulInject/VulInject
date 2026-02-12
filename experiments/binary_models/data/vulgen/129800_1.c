@@ -1,1 +1,0 @@
-static DEFINE_PER_CPU ( int , tracing_irq_cpu ) ; void trace_hardirqs_on_prepare ( void ) { } 

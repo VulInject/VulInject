@@ -1,1 +1,0 @@
-unsigned char mbedtls_md_get_size ( const mbedtls_md_info_t * md_info ) { return md_info -> size ; } 

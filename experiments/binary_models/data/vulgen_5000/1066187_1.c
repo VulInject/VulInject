@@ -1,0 +1,1 @@
+void kthread_associate_blkcg ( struct cgroup_subsys_state * css ) { struct kthread * kthread ; kthread = to_kthread ( current ) ; if ( ! kthread ) { return ; } if ( kthread -> blkcg_css ) { css_put ( kthread -> blkcg_css ) ; kthread -> blkcg_css = NULL ; } if ( css ) { css_get ( css ) ; kthread -> blkcg_css = css ; } } 

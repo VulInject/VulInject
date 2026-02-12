@@ -1,1 +1,0 @@
-void test_mutt_regexlist_free ( void ) { { mutt_regexlist_free ( NULL ) ; } } 

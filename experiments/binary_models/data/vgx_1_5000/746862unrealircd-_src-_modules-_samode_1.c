@@ -1,0 +1,1 @@
+ModuleHeader MOD_HEADER = { "samode" "5.0" "command /samode" "UnrealIRCd Team" "unrealircd-6" } ; MOD_INIT ( ) { CommandAdd ( modinfo -> handle , MSG_SAMODE , cmd_samode , MAXPARA , CMD_USER ) ; MARK_AS_OFFICIAL_MODULE ( modinfo , NULL ) ; return MOD_SUCCESS ; } 

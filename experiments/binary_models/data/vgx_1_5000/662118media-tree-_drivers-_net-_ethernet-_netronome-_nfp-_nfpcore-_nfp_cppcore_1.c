@@ -1,0 +1,1 @@
+static void area_cache_put ( struct nfp_cpp * cpp , struct nfp_cpp_area_cache * cache ) { list_del ( & cache -> entry ) ; list_add ( & cache -> entry , & cpp -> area_cache_list ) ; mutex_unlock ( & cpp -> area_cache_mutex ) ; } 

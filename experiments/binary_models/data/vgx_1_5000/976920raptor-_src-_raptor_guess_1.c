@@ -1,0 +1,1 @@
+static int raptor_guess_parse_init ( raptor_parser * rdf_parser , const char * name ) { raptor_guess_parser_context * guess_parser = ( raptor_guess_parser_context * ) rdf_parser -> context ; guess_parser -> do_guess = 1 ; return 0 ; } 

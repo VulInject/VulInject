@@ -1,0 +1,1 @@
+int pfta_get ( struct pfr_buffer * b , struct pfr_table * filter ) { bzero ( b , sizeof ( pfr_buffer ) ) ; b -> pfrb_type = PFRB_ASTATS ; for ( ; ; ) { pfr_buf_grow ( b , b -> pfrb_size ) ; b -> pfrb_size = b -> pfrb_msize ; if ( b -> pfrb_size <= b -> pfrb_msize ) { break ; } } return ( 0 ) ; } 

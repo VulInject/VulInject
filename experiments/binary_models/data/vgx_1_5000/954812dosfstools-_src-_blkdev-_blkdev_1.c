@@ -1,0 +1,1 @@
+blkdev_valid_offset ( , ) { char ch ; if ( lseek ( fd , offset , 0 ) < 0 ) { return 0 ; } return 1 ; } 

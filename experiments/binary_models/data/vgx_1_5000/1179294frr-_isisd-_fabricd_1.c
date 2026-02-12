@@ -1,0 +1,1 @@
+bool fabricd_initial_sync_is_complete ( struct isis_area * area ) { struct fabricd * f = area -> fabricd ; return f -> initial_sync_state == FABRICD_SYNC_COMPLETE ; } 

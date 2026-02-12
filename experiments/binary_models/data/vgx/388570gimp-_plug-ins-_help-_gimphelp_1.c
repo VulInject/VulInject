@@ -1,1 +1,0 @@
-gimp_help_lookup_domain ( ) { g_return_val_if_fail ( domain_name ) ; if ( domain_hash ) { return g_hash_table_lookup ( domain_hash , domain_name ) ; } return NULL ; } 

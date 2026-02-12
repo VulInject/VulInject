@@ -1,1 +1,0 @@
-static inline void bmu_reset ( void * base ) { while ( readl ( base + BMU_CTRL ) & CORE_SW_RESET ) { } } 

@@ -1,1 +1,0 @@
-cursor_info_sample_merged_cmd_callback ( , , ) { GimpCursorView * view = GIMP_CURSOR_VIEW ( data ) ; gimp_cursor_view_set_sample_merged ( view , active ) ; } 

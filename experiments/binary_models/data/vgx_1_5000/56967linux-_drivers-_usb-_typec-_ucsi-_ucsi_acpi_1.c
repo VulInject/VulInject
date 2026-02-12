@@ -1,0 +1,1 @@
+static int ucsi_acpi_dsm ( struct ucsi_acpi * ua , int func ) { union acpi_object * obj ; obj = acpi_evaluate_dsm ( ACPI_HANDLE ( ua -> dev ) , & ua -> guid , 1 , func , NULL ) ; if ( ! obj ) { dev_err ( ua -> dev , "%s: failed to evaluate _DSM %d\n" , __func__ , func ) ; return - EIO ; } ACPI_FREE ( obj , NULL ) ; return 0 ; } 

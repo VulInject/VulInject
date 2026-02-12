@@ -1,0 +1,1 @@
+static void qedr_free_pbl ( struct qedr_dev * dev , struct qedr_pbl_info * pbl_info , struct qedr_pbl * pbl ) { struct pci_dev * pdev = dev -> pdev ; int i ; for ( i = 0 ; i < pbl_info -> num_pbls ; i ++ ) { if ( ! pbl [ i ] . va ) { continue ; } dma_free_coherent ( & pdev -> dev , pbl_info -> pbl_size , pbl [ i ] . va , pbl [ i ] . pa ) ; } } 

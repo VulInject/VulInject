@@ -1,1 +1,0 @@
-_pixman_gradient_walker_fill_narrow ( , , , ) { register uint32_t color ; while ( buffer < end ) { * buffer ++ = color ; } } 

@@ -1,0 +1,1 @@
+static int __init default_bdi_init ( void ) { bdi_wq = alloc_workqueue ( "writeback" , WQ_MEM_RECLAIM | WQ_UNBOUND | WQ_SYSFS , 0 ) ; return 0 ; } 

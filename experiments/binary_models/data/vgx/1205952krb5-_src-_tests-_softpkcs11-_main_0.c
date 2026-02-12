@@ -1,7 +1,0 @@
-VAR1
-FUN1(CK_SESSION_HANDLE VAR2)
-{
-FUN2("");
-FUN3(VAR2, NULL);
-return VAR3;
-}

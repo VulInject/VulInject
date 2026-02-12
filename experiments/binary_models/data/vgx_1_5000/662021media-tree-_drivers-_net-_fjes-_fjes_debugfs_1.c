@@ -1,0 +1,1 @@
+void fjes_dbg_adapter_exit ( struct fjes_adapter * adapter ) { debugfs_remove_recursive ( adapter -> dbg_adapter , NULL ) ; adapter -> dbg_adapter = NULL ; } 

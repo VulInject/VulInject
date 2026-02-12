@@ -1,0 +1,1 @@
+TEST_BEGIN ( ) { void * res = aligned_alloc ( 8 , 0 ) ; assert ( res ) ; size_t usable = malloc_usable_size ( res ) ; assert ( usable > 0 ) ; } 

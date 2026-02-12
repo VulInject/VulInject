@@ -1,0 +1,1 @@
+static int tpk_write ( struct tty_struct * tty , const unsigned char * buf , int count ) { struct ttyprintk_port * tpkp = tty -> driver_data ; int ret ; mutex_lock ( & tpkp -> port_write_mutex ) ; mutex_unlock ( & tpkp -> port_write_mutex ) ; return ret ; } 

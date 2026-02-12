@@ -1,0 +1,1 @@
+static inline unsigned int sata_fsl_tag ( struct ata_port * ap , unsigned int tag , void __iomem * hcr_base ) { if ( unlikely ( tag >= SATA_FSL_QUEUE_DEPTH ) ) { ata_port_dbg ( ap , "tag %d invalid : out of range\n" , tag ) ; return 0 ; } return tag ; } 

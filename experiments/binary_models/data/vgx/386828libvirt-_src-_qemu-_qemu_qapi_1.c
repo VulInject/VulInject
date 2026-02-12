@@ -1,1 +1,0 @@
-static void virQEMUQAPISchemaTraverseContextInit ( struct virQEMUQAPISchemaTraverseContext * ctxt , char * * queries , GHashTable * schema ) { ctxt -> schema = schema ; ctxt -> queries = queries ; } 

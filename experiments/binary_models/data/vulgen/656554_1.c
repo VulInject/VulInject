@@ -1,1 +1,0 @@
-static void emit_advance_pc ( struct buffer_ext * be , unsigned long delta_pc ) { emit_opcode_unsigned ( be , DW_LNS_advance_pc , 0 ) ; } 

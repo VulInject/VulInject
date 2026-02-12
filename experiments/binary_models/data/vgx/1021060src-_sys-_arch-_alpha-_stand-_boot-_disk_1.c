@@ -1,1 +1,0 @@
-int sc_fd ; int sc_ctlr ; int sc_unit ; int sc_part ; int sc_label ; 

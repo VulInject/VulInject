@@ -1,1 +1,0 @@
-void test_init ( void ) { install_element ( VIEW_NODE , & clear_foo_cmd ) ; } 

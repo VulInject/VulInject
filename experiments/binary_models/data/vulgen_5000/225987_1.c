@@ -1,0 +1,1 @@
+static krb5_key find_cached_dkey ( struct derived_key * list , const krb5_data * constant ) { for ( ; list ; list = list -> next ) { if ( data_eq ( list -> constant , * constant ) ) { return list -> dkey ; } } return NULL ; } 

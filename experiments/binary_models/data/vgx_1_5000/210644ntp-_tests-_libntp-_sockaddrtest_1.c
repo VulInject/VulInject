@@ -1,0 +1,1 @@
+sockaddr_u CreateSockaddr4 ( const char * address , unsigned int port ) { sockaddr_u s ; s . sa4 . sin_family = AF_INET ; s . sa4 . sin_addr . s_addr = inet_addr ( address , NULL ) ; SET_PORT ( & s , port ) ; return s ; } 

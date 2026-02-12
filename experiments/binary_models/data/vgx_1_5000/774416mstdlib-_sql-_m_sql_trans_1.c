@@ -1,0 +1,1 @@
+M_uint64 M_sql_trans_duration_start_ms ( M_sql_trans_t * trans ) { return M_time_elapsed ( & trans -> start_tv ) ; } 

@@ -1,1 +1,0 @@
-static PyObject * rpmfile_name ( rpmfileObject * s ) { char * fn = rpmfilesFN ( s -> files , s -> ix ) ; PyObject * o = utf8FromString ( fn ) ; return o ; } 

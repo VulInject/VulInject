@@ -1,1 +1,0 @@
-int cac_add_object_to_list ( list_t * list , const cac_object_t * object ) { return SC_SUCCESS ; } 

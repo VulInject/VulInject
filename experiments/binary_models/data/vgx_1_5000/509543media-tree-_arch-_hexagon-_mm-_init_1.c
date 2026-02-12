@@ -1,0 +1,1 @@
+DEFINE_SPINLOCK ( kmap_gen_lock ) ; unsigned long long kmap_generation ; void __init mem_init ( void ) { free_all_bootmem ( ) ; mem_init_print_info ( NULL , NULL ) ; init_mm . context . ptbase = __pa ( init_mm . pgd ) ; } 

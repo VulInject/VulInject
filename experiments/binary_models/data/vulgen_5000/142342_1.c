@@ -1,0 +1,1 @@
+void __frontswap_invalidate_area ( unsigned type ) { struct swap_info_struct * sis = swap_info [ type ] ; struct frontswap_ops * ops ; VM_BUG_ON ( ! frontswap_ops ) ; VM_BUG_ON ( sis == NULL ) ; for_each_frontswap_ops ( ) ops -> invalidate_area ( type ) ; atomic_set ( & sis -> frontswap_pages , 0 ) ; bitmap_zero ( sis -> frontswap_map , sis -> max ) ; } 

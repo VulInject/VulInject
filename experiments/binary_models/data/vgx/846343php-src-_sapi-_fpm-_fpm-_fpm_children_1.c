@@ -1,1 +1,0 @@
-static void fpm_child_free ( struct fpm_child_s * child ) { if ( child -> log_stream ) { zlog_stream_close ( child -> log_stream ) ; } free ( child ) ; } 

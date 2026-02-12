@@ -1,0 +1,1 @@
+static void * nvbios_prom_init ( struct nvkm_bios * bios , const char * name ) { struct nvkm_device * device = bios -> subdev . device ; nvkm_pci_rom_shadow ( device -> pci , false ) ; return device ; } 

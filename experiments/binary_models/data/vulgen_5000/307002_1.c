@@ -1,0 +1,1 @@
+static void intr ( int ) static int setpgsz ( struct ps_prochandle * , int , size_t * ) static int setpgsz_anon ( struct ps_prochandle * , size_t , int ) static caddr_t setup_mha ( uint_t , int , int ) static size_t discover_optimal_pagesize ( struct ps_prochandle * , uint_t , pid_t ) static void usage ( ) static char * suboptstr [ ] { "heap" "stack" "anon" NULL } ; ; 

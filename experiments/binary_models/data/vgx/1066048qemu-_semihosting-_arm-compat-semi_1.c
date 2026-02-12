@@ -1,1 +1,0 @@
-static uint32_t host_flenfn ( CPUState * cs , GuestFD * gf ) { struct stat buf ; uint32_t ret = set_swi_errno ( cs , fstat ( gf -> hostfd , & buf ) ) ; return buf . st_size ; } 

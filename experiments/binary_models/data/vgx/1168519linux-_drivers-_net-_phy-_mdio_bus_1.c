@@ -1,1 +1,0 @@
-int mdiobus_unregister_device ( struct mdio_device * mdiodev ) { reset_control_put ( mdiodev -> reset_ctrl ) ; mdiodev -> bus -> mdio_map [ mdiodev -> addr ] = NULL ; return 0 ; } 

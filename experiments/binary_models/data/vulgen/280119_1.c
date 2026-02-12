@@ -1,1 +1,0 @@
-static int get_div ( struct tegra_clk_frac_div * divider , unsigned long rate , unsigned long parent_rate ) { int div ; if ( div < 0 ) { return 0 ; } return div ; } 

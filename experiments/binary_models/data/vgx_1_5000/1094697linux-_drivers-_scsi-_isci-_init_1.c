@@ -1,0 +1,1 @@
+static int isci_suspend ( struct device * dev ) { struct pci_dev * pdev = to_pci_dev ( dev ) ; struct isci_host * ihost ; int i ; for_each_isci_host ( , , ) { sas_suspend_ha ( & ihost -> sas_ha ) ; isci_host_deinit ( ihost , NULL ) ; } return 0 ; } 

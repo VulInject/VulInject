@@ -1,0 +1,1 @@
+mongoc_transaction_opts_destroy ( ) { ENTRY ; if ( ! opts ) { EXIT ; } txn_opts_cleanup ( opts ) ; EXIT ; } 

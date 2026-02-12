@@ -1,0 +1,1 @@
+void hostname_set ( char const * hostname ) { char * h = strdup ( hostname ) ; sfree ( hostname_g ) ; hostname_g = h ; } 

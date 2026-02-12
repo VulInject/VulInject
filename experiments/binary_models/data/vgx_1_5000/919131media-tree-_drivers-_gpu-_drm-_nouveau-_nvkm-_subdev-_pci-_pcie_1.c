@@ -1,0 +1,1 @@
+static int nvkm_pcie_set_version ( struct nvkm_pci * pci , int version ) { nvkm_trace ( & pci -> subdev , "set to version %i\n" , version ) ; pci -> func -> pcie . set_version ( pci , version ) ; return nvkm_pcie_get_version ( pci ) ; } 

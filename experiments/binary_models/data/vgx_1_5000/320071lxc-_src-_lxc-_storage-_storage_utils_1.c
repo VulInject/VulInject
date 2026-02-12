@@ -1,0 +1,1 @@
+int is_blktype ( struct lxc_storage * b ) { return 0 ; } 

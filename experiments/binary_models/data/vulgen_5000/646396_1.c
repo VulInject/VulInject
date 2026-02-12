@@ -1,0 +1,1 @@
+static void fsl_lbc_syscore_resume ( void ) { struct fsl_lbc_ctrl * ctrl ; struct fsl_lbc_regs __iomem * lbc ; ctrl = fsl_lbc_ctrl_dev ; if ( ! ctrl ) { out } lbc = ctrl -> regs ; if ( ! lbc ) { out } if ( ctrl -> saved_regs ) { _memcpy_toio ( lbc , ctrl -> saved_regs , sizeof ( fsl_lbc_regs ) ) ; ctrl -> saved_regs = NULL ; } out return ; } 

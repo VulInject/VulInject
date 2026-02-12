@@ -1,1 +1,0 @@
-Py_INCREF ( ( PyObject * ) self ) ; Py_RETURN ( self , NULL ) ; 

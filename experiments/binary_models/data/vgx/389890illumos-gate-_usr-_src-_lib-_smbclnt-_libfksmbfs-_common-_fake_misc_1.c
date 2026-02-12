@@ -1,1 +1,0 @@
-int FUN1 ( gid_t VAR1 , const VAR2 * VAR3 ) { return ( 0 ) ; }

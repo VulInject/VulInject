@@ -1,0 +1,1 @@
+static void infinoted_log_init ( InfinotedLog * log ) { InfinotedLogPrivate * priv ; priv = INFINOTED_LOG_PRIVATE ( log ) ; priv -> file_path = NULL ; priv -> log_file = NULL ; priv -> recursion_depth = 0 ; g_rec_mutex_init ( & priv -> mutex ) ; } 

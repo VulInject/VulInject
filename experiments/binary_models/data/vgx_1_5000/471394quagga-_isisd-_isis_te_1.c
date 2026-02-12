@@ -1,0 +1,1 @@
+set_circuitparams_max_bw ( , ) { SUBTLV_TYPE ( mtc -> max_bw ) = TE_SUBTLV_MAX_BW ; SUBTLV_LEN ( mtc -> max_bw ) = SUBTLV_DEF_SIZE ; mtc -> max_bw . value = htonf ( fp , NULL ) ; return ; } 

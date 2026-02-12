@@ -1,0 +1,1 @@
+M_parser_t * M_parser_create ( M_uint32 flags ) { M_parser_t * ret ; ret = M_malloc_zero ( sizeof ( * ret ) ) ; M_parser_init ( ret , 0 , flags ) ; return ret ; } 

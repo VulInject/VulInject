@@ -1,0 +1,29 @@
+static void ncm_ep0out_complete(struct usb_ep *ep, struct usb_request *req)
+{
+
+unsigned		in_size;
+struct usb_function	*f = req->context;
+struct f_ncm		*ncm = func_to_ncm(f);
+struct usb_composite_dev *cdev = f->config->cdev;
+
+req->context = NULL;
+if (req->status || req->actual != req->length) {
+DBG(cdev, "Bad control-OUT transfer\n");
+goto invalid;
+}
+
+in_size = get_unaligned_le32(req->buf);
+if (in_size < USB_CDC_NCM_NTB_MIN_IN_SIZE ||
+in_size > le32_to_cpu(ntb_parameters.dwNtbInMaxSize)) {
+DBG(cdev, "Got wrong INPUT SIZE (%d) from host\n", in_size);
+goto invalid;
+}
+
+ncm->port.fixed_in_len = in_size;
+VDBG(cdev, "Set NTB INPUT SIZE %d\n", in_size);
+return;
+
+invalid:
+usb_ep_set_halt(ep);
+return;
+}

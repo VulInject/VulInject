@@ -1,0 +1,1 @@
+static int dma_find_port ( struct tb_switch * sw ) { static const int ports [ ] { 3 5 7 } ; ; int i ; for ( i = 0 ; i < ARRAY_SIZE ( ports ) ; i ++ ) { u32 type ; int ret ; ret = dma_port_read ( sw -> tb -> ctl , & type , tb_route ( sw ) , ports [ i ] , 2 , 1 , DMA_PORT_TIMEOUT ) ; } return - ENODEV ; } 

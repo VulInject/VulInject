@@ -1,0 +1,1 @@
+( cpm_setbrg ) ; cpm_ioport16 { __be16 dir , par , odr_sor , dat , intr ; int res [ 3 ] ; } 

@@ -1,0 +1,1 @@
+static void xtfpga_fpga_write ( void * opaque , hwaddr addr , uint64_t val , unsigned size ) { XtfpgaFpgaState * s = opaque ; switch ( addr ) { case 0x8 : s -> leds = val ; break ; case 0x10 : break ; } } static const MemoryRegionOps xtfpga_fpga_ops = { . read = xtfpga_fpga_read . write = xtfpga_fpga_write . endianness = DEVICE_NATIVE_ENDIAN } ; 

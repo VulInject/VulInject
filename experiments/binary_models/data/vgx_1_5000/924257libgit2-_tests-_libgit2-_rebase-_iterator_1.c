@@ -1,0 +1,1 @@
+void test_rebase_iterator__cleanup ( void ) { git_signature_free ( signature ) ; cl_git_sandbox_cleanup ( ) ; } 

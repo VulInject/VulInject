@@ -1,0 +1,1 @@
+static void do_established_modes ( const struct detailed_timing * timing , void * c ) { struct detailed_mode_closure * closure = c ; closure -> modes += drm_est3_modes ( closure -> connector , timing ) ; } 

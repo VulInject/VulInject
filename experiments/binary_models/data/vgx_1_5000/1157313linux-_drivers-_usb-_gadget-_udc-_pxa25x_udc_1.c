@@ -1,0 +1,1 @@
+void ep0start ( struct pxa25x_udc * dev , u32 flags , const char * tag ) { udc_ep0_set_UDCCS ( dev , flags | UDCCS0_SA | UDCCS0_OPR ) ; udc_set_reg ( dev , USIR0 , USIR0_IR0 ) ; DBG ( DBG_VERY_NOISY , "%s %s, %02x/%02x\n" , __func__ , tag , udc_ep0_get_UDCCS ( dev ) , flags ) ; } 

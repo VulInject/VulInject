@@ -1,0 +1,1 @@
+int change_root ( char * root ) { if ( chroot ( root ) ) { return - 1 ; } return 0 ; } 

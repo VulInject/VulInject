@@ -1,1 +1,0 @@
-void ce ( PLAYER * pp ) { } 

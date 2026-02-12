@@ -1,1 +1,0 @@
-( search_kernel_soft_mask_table ) ; unsigned long search_kernel_restart_table ( unsigned long addr ) { struct restart_table_entry * rte = __start___restart_table ; while ( rte < __stop___restart_table ) { unsigned long start = rte -> start ; unsigned long end = rte -> end ; unsigned long fixup = rte -> fixup ; rte ++ ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static char * generic_array_obj_tostring ( RList * l ) { RListIter * iter = NULL ; pyc_object * e = NULL ; RStrBuf * rbuf = r_strbuf_new ( NULL ) ; r_list_foreach ( , , ) { r_strbuf_append ( rbuf , e -> data ) ; r_strbuf_append ( rbuf , "," ) ; } char * buf = r_strbuf_get ( rbuf ) ; buf [ strlen ( buf ) - 1 ] = '\0' ; char * r = r_str_newf ( "(%s)" , buf ) ; return r ; } 

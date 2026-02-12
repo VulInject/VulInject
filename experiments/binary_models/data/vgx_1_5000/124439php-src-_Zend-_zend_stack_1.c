@@ -1,0 +1,1 @@
+ZEND_API void zend_stack_clean ( zend_stack * stack , void * func ( void * ) , bool free_elements ) { int i ; if ( func ) { for ( i = 0 ; i < stack -> top ; i ++ ) { func ( ZEND_STACK_ELEMENT ( stack , i ) ) ; } } if ( free_elements ) { if ( stack -> elements ) { stack -> elements = NULL ; } stack -> top = stack -> max = 0 ; } } 

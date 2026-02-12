@@ -1,0 +1,1 @@
+static enum led_brightness get_kbd_backlight_level ( int ) static const struct key_entry wmi_keymap [ ] { { KE_KEY 0x70 { KEY_F15 } } { KE_KEY 0x74 { KEY_F21 } } { KE_KEY 0xf020000 { KEY_F14 } } { KE_KEY 0x10000000 { KEY_F16 } } { KE_KEY 0x80 { KEY_RFKILL } } { KE_END 0 } } ; ; 

@@ -1,0 +1,1 @@
+static void reg_w ( struct gspca_dev * gspca_dev , u16 index , u8 val ) { int ret ; struct usb_device * dev = gspca_dev -> dev ; if ( gspca_dev -> usb_err < 0 ) { return ; } PDEBUG ( D_USBO , "reg_w 0x%x:=0x%02x" , index , val ) ; if ( ret < 0 ) { pr_err ( "reg_w 0x%x err %d\n" , index , ret ) ; gspca_dev -> usb_err = ret ; } } 

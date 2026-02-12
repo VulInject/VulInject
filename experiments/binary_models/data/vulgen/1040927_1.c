@@ -1,1 +1,0 @@
-int image_check_dcrc ( const struct legacy_img_hdr * hdr ) { ulong data = image_get_data ( hdr ) ; ulong len = image_get_data_size ( hdr ) ; return ( dcrc == image_get_dcrc ( hdr ) ) ; } 

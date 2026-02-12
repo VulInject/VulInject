@@ -1,0 +1,1 @@
+static void * nvkm_uconn_dtor ( struct nvkm_object * object ) { struct nvkm_conn * conn = nvkm_uconn ( object ) ; struct nvkm_disp * disp = conn -> disp ; spin_lock ( & disp -> client . lock ) ; conn -> object . func = NULL ; return NULL ; } static const struct nvkm_object_func nvkm_uconn = { . dtor = nvkm_uconn_dtor . mthd = nvkm_uconn_mthd . uevent = nvkm_uconn_uevent } ; 

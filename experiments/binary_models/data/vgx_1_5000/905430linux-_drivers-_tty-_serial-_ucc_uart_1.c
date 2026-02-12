@@ -1,0 +1,1 @@
+static void qe_uart_start_tx ( struct uart_port * port ) { struct uart_qe_port * qe_port = container_of ( port , uart_qe_port , port ) ; if ( qe_uart_tx_pump ( qe_port ) ) { qe_setbits_be16 ( & qe_port -> uccp -> uccm , UCC_UART_UCCE_TX ) ; } } 

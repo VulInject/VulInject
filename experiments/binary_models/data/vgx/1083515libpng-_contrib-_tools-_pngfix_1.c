@@ -1,1 +1,0 @@
-static int FUN1 ( uarb VAR1 , png_alloc_size_t VAR2 ) { int VAR3 ; while ( VAR2 > 0 ) { VAR1 [ VAR3 ++ ] = ( VAR4 ) ( VAR2 & 0xffff ) ; VAR2 >>= 16 ; } return VAR3 ; }

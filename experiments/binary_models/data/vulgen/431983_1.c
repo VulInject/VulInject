@@ -1,1 +1,0 @@
-void * emalloc ( size_t size ) { void * vp ; vp = malloc ( size ) ; if ( vp == NULL ) { fprintf ( stderr , "%s\n" , gettext ( NOMEM ) ) ; } return ( vp ) ; } 

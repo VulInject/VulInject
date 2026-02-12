@@ -1,0 +1,1 @@
+static u32 uc_fw_ggtt_offset ( struct intel_uc_fw * uc_fw ) { struct i915_ggtt * ggtt = __uc_fw_to_gt ( uc_fw ) -> ggtt ; struct drm_mm_node * node = & ggtt -> uc_fw ; GEM_BUG_ON ( upper_32_bits ( node -> start ) ) ; GEM_BUG_ON ( upper_32_bits ( node -> start + node -> size - 1 ) ) ; return lower_32_bits ( node -> start ) ; } 

@@ -1,0 +1,1 @@
+int snd_jack_set_key ( struct snd_jack * jack , enum snd_jack_types type , int keytype ) { int key = fls ( SND_JACK_BTN_0 ) - fls ( type ) ; WARN_ON ( jack -> registered ) ; jack -> type |= type ; jack -> key [ key ] = keytype ; return 0 ; } 

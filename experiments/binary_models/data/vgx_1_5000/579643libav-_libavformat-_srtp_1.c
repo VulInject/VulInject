@@ -1,0 +1,1 @@
+void ff_srtp_free ( struct SRTPContext * s ) { av_freep ( & s -> aes ) ; if ( s -> hmac ) { av_hmac_free ( s -> hmac ) ; } s -> hmac = NULL ; } 

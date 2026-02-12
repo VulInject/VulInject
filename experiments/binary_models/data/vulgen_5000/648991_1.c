@@ -1,0 +1,1 @@
+static int soc_camera_platform_enum_mbus_code ( struct v4l2_subdev * sd , struct v4l2_subdev_pad_config * cfg , struct v4l2_subdev_mbus_code_enum * code ) { struct soc_camera_platform_info * p = v4l2_get_subdevdata ( sd ) ; code -> code = p -> format . code ; return 0 ; } 

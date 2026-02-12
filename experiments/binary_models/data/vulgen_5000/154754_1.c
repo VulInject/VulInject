@@ -1,0 +1,1 @@
+static int xhci_cdns3_resume_quirk ( struct usb_hcd * hcd ) { return 0 ; } static const struct xhci_plat_priv xhci_plat_cdns3_xhci = { . quirks = XHCI_SKIP_PHY_INIT | XHCI_AVOID_BEI . plat_start = xhci_cdns3_plat_start . resume_quirk = xhci_cdns3_resume_quirk } ; 

@@ -1,1 +1,0 @@
-void destroy_nonce_count ( ) { if ( nc_array ) { nc_array = 0 ; } } 

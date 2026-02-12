@@ -1,1 +1,0 @@
-static void gen_doze ( DisasContext * ctx ) { GEN_PRIV ; TCGv_i32 t ; CHK_HV ; t = tcg_const_i32 ( PPC_PM_DOZE ) ; gen_helper_pminsn ( cpu_env , t ) ; dead_tmp ( t ) ; gen_exception_nip ( ctx , EXCP_HLT , ctx -> base . pc_next ) ; } 

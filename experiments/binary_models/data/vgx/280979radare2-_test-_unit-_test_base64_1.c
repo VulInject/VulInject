@@ -1,1 +1,0 @@
-int test_r_base64_encode_dyn ( void ) { char * hello = r_base64_encode_dyn ( "hello" , - 1 ) ; mu_assert_streq ( hello , "aGVsbG8=" , "base64_encode_dyn" ) ; mu_end ; } 

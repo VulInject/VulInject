@@ -1,1 +1,0 @@
-MODULE_DESCRIPTION ( "STMicroelectronics uvis25 spi driver" ) ; MODULE_LICENSE ( "GPL v2" ) ; 

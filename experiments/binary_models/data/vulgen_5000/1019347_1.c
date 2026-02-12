@@ -1,0 +1,1 @@
+extern int arch_switch_tls ( struct task_struct * to ) void arch_switch_to ( struct task_struct * to ) { if ( ! err ) { return ; } if ( err != - EINVAL ) { printk ( KERN_WARNING "arch_switch_tls failed, errno %d, " "not EINVAL\n" , - err ) ; } else { printk ( KERN_WARNING "arch_switch_tls failed, errno = EINVAL\n" ) ; } } 

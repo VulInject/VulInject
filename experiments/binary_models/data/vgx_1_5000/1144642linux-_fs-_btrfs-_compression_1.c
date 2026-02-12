@@ -1,0 +1,1 @@
+void __cold btrfs_exit_compress ( void ) { btrfs_cleanup_workspace_manager ( BTRFS_COMPRESS_NONE , NULL ) ; btrfs_cleanup_workspace_manager ( BTRFS_COMPRESS_ZLIB ) ; btrfs_cleanup_workspace_manager ( BTRFS_COMPRESS_LZO ) ; zstd_cleanup_workspace_manager ( ) ; } 

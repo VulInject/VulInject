@@ -1,1 +1,0 @@
-void FUN1 ( int VAR1 ) { ( void ) signal ( VAR1 , VAR2 ) ; }

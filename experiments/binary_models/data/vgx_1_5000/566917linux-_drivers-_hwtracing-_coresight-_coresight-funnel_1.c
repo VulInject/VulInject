@@ -1,0 +1,1 @@
+static ssize_t priority_store ( struct device * dev , struct device_attribute * attr , const char * buf , size_t size ) { int ret ; unsigned long val ; struct funnel_drvdata * drvdata = dev_get_drvdata ( dev -> parent ) ; ret = kstrtoul ( buf , 16 , & val ) ; drvdata -> priority = val ; return size ; } 

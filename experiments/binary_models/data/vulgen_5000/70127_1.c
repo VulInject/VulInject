@@ -1,0 +1,1 @@
+static int intel_cbphy_iphy_cfg ( struct intel_cbphy_iphy * iphy , int * phy_cfg ( struct intel_cbphy_iphy * ) ) { struct intel_combo_phy * cbphy = iphy -> parent ; int ret ; ret = phy_cfg ( iphy ) ; if ( ret ) { return ret ; } return phy_cfg ( & cbphy -> iphy [ PHY_1 ] ) ; } 

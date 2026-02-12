@@ -1,0 +1,1 @@
+static struct i915_request * __active_request ( const struct intel_timeline * const tl , struct i915_request * rq , int error ) { struct i915_request * active = rq ; list_for_each_entry_from_reverse ( , , ) { if ( error ) { i915_request_set_error_once ( rq , error ) ; __i915_request_skip ( rq ) ; } active = rq ; } return active ; } 

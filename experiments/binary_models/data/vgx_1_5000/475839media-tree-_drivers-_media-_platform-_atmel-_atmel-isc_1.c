@@ -1,0 +1,1 @@
+static int isc_querycap ( struct file * file , void * priv , struct v4l2_capability * cap ) { struct isc_device * isc = video_drvdata ( file ) ; strcpy ( cap -> driver , ATMEL_ISC_NAME ) ; strcpy ( cap -> card , "Atmel Image Sensor Controller" ) ; sprintf ( cap -> bus_info , "platform:%s" , isc -> v4l2_dev . name ) ; return 0 ; } 

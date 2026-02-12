@@ -1,1 +1,0 @@
-struct VAR1 * FUN1 ( unsigned long VAR2 , struct VAR3 * VAR4 , struct VAR1 * VAR5 ) { return FUN2 ( VAR4 , VAR5 ) ; }

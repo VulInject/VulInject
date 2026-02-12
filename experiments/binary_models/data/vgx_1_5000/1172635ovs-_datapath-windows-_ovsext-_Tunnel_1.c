@@ -1,0 +1,1 @@
+static NTSTATUS OvsInjectPacketThroughActions ( PNET_BUFFER_LIST pNbl , OVS_TUNNEL_PENDED_PACKET * packet ) NTSTATUS OvsTunnelNotify ( FWPS_CALLOUT_NOTIFY_TYPE notifyType , const GUID * filterKey , const FWPS_FILTER * filter ) { UNREFERENCED_PARAMETER ( notifyType ) ; UNREFERENCED_PARAMETER ( filterKey , NULL ) ; UNREFERENCED_PARAMETER ( filter ) ; return STATUS_SUCCESS ; } 

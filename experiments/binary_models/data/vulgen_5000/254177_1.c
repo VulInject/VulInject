@@ -1,0 +1,1 @@
+size_t perf_event__fprintf_comm ( union perf_event * event , FILE * fp ) { const char * s ; else { s = "" ; } return fprintf ( fp , "%s: %s:%d/%d\n" , s , event -> comm . comm , event -> comm . pid , event -> comm . tid ) ; } 

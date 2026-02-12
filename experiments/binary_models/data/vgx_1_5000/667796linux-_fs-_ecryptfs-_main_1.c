@@ -1,0 +1,1 @@
+static void inode_info_init_once ( void * vptr ) { struct ecryptfs_inode_info * ei = ( ecryptfs_inode_info * ) vptr ; inode_init_once ( & ei -> vfs_inode ) ; } static ecryptfs_cache_info { struct kmem_cache * * cache ; const char * name ; int size ; slab_flags_t flags ; void * ctor ( void * obj ) } , ecryptfs_cache_infos [ ] { } ; 

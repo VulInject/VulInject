@@ -1,0 +1,1 @@
+void lbs_remove_mesh ( struct lbs_private * priv ) { struct net_device * mesh_dev ; mesh_dev = priv -> mesh_dev ; if ( ! mesh_dev ) { return ; } netif_stop_queue ( mesh_dev ) ; netif_carrier_off ( mesh_dev ) ; unregister_netdev ( mesh_dev ) ; priv -> mesh_dev = NULL ; free_netdev ( mesh_dev ) ; } 

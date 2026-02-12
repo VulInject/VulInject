@@ -1,0 +1,1 @@
+bool uuid_from_string ( struct uuid * uuid , const char * s ) { if ( ! uuid_from_string_prefix ( uuid , s ) ) { return false ; } if ( s [ UUID_LEN ] != '\0' ) { uuid_zero ( uuid , NULL ) ; return false ; } else { return true ; } } 

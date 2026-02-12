@@ -1,1 +1,0 @@
-ATF_TP_ADD_TCS ( ) { ATF_TP_ADD_TC ( tp , mkfifo_block ) ; ATF_TP_ADD_TC ( tp , mkfifo_err ) ; ATF_TP_ADD_TC ( tp , mkfifo_nonblock ) ; ATF_TP_ADD_TC ( tp , mkfifo_perm ) ; ATF_TP_ADD_TC ( tp , mkfifo_stat ) ; return atf_no_error ( ) ; } 

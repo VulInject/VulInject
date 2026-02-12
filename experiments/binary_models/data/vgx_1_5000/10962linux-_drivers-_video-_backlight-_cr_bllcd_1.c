@@ -1,0 +1,1 @@
+static int __init cr_backlight_init ( void ) { int ret = platform_driver_register ( & cr_backlight_driver ) ; crp = platform_device_register_simple ( "cr_backlight" , - 1 , NULL , 0 ) ; if ( IS_ERR ( crp ) ) { platform_driver_unregister ( & cr_backlight_driver ) ; return PTR_ERR ( crp ) ; } pr_info ( "Carillo Ranch Backlight Driver Initialized.\n" ) ; return 0 ; } 

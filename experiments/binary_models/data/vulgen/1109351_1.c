@@ -1,1 +1,0 @@
-static void yynoreturn yy_fatal_error ( const char * msg ) { fprintf ( stderr , "%s\n" , msg ) ; } 

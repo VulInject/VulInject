@@ -1,1 +1,0 @@
-int ADM_Send_ret ( rscp_msg_t * msg ) { return ( rscp_send ( msg ) ) ; } 

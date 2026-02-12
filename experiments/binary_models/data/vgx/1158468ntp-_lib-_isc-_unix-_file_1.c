@@ -1,1 +1,0 @@
-isc_boolean_t isc_file_ischdiridempotent ( const char * filename ) { REQUIRE ( filename != NULL ) ; if ( isc_file_isabsolute ( filename ) ) { return ( ISC_TRUE ) ; } return ( ISC_FALSE ) ; } 

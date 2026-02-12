@@ -1,1 +1,0 @@
-int ntpOptionProcess ( tOptions * pOpts , int argc , char * * argv ) { return optionProcess ( pOpts , argc , argv ) ; } void ntpOptionPrintVersion ( tOptions * pOpts , tOptDesc * pOD ) { UNUSED_ARG ( pOpts , NULL ) ; UNUSED_ARG ( pOD ) ; printf ( "%s\n" , Version ) ; fflush ( stdout ) ; exit ( EXIT_SUCCESS ) ; } 

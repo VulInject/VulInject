@@ -1,0 +1,1 @@
+static int wl3501_get_sens ( struct net_device * dev , struct iw_request_info * info , union iwreq_data * wrqu , char * extra ) { struct wl3501_card * this = netdev_priv ( dev ) ; wrqu -> sens . value = this -> rssi ; wrqu -> sens . disabled = ! wrqu -> sens . value ; return 0 ; } 

@@ -1,1 +1,0 @@
-static void markeins_machine_power_off ( void ) { while ( 1 ) { } } static unsigned long __initdata emma2rh_clock [ 4 ] { 166500000 187312500 199800000 210600000 } ; ; 

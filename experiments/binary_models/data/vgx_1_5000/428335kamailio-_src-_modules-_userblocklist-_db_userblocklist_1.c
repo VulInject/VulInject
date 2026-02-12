@@ -1,0 +1,1 @@
+void userblocklist_db_close ( void ) { if ( userblocklist_dbh ) { userblocklist_dbf . close ( userblocklist_dbh , NULL ) ; userblocklist_dbh = NULL ; } } 

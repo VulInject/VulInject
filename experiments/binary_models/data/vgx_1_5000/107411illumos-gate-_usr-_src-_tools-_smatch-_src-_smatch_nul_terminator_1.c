@@ -1,0 +1,1 @@
+static void set_terminated ( struct expression * expr , struct smatch_state * state ) { struct symbol * sym ; char * name ; name = expr_to_var_sym ( expr , & sym ) ; set_terminated_var_sym ( name , sym , state ) ; free_string ( name ) ; } 

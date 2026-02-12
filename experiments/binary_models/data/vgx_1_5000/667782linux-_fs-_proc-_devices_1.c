@@ -1,0 +1,1 @@
+static void * devinfo_next ( struct seq_file * f , void * v , loff_t * pos ) { ( * pos ) ++ ; if ( * pos >= ( BLKDEV_MAJOR_MAX + CHRDEV_MAJOR_MAX ) ) { return in ; } return pos ; } 

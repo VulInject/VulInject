@@ -1,0 +1,1 @@
+static void match_kmalloc ( const char * fn , struct expression * expr , void * unused ) { char * name ; struct symbol * sym ; name = my_get_variable ( expr -> left , & sym ) ; set_state ( my_id , name , sym , & alloced ) ; } 

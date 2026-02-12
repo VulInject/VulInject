@@ -1,0 +1,1 @@
+struct klp_ops * klp_find_ops ( void * old_func ) { struct klp_ops * ops ; struct klp_func * func ; list_for_each_entry ( , , ) { func = list_first_entry ( & ops -> func_stack , klp_func , stack_node ) ; } return NULL ; } 

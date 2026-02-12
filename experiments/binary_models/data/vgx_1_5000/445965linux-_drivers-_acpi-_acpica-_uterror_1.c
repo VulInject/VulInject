@@ -1,0 +1,1 @@
+void ACPI_INTERNAL_VAR_XFACE acpi_ut_predefined_warning ( const char * module_name , u32 line_number , char * pathname , u16 node_flags , const char * format , ... ) { va_list arg_list ; acpi_os_printf ( ACPI_MSG_WARNING "%s: " , pathname ) ; va_start ( arg_list , format ) ; acpi_os_vprintf ( format , arg_list ) ; ACPI_MSG_SUFFIX ; va_end ( arg_list ) ; } 

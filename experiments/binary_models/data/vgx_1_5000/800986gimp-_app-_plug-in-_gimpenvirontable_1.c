@@ -1,0 +1,1 @@
+gimp_environ_table_clear_vars ( ) { if ( environ_table -> vars ) { g_hash_table_destroy ( environ_table -> vars ) ; } } 

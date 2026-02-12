@@ -1,1 +1,0 @@
-int mailimf_string_write_driver ( int * do_write ( void * , const char * , size_t ) , void * data , int * col , char * str , size_t length ) { int r ; if ( length != 0 ) { r = fwrite ( str , sizeof ( char ) , length , f ) ; * col += length ; } return MAILIMF_NO_ERROR ; } 

@@ -1,0 +1,1 @@
+static int apply_glob_option ( OrderedHashmap * sysctl_options , Option * option ) { int r = 0 , k ; STRV_FOREACH ( , ) { k = apply_glob_option_with_prefix ( sysctl_options , option , * i ) ; if ( k < 0 && r >= 0 ) { r = k ; } } return r ; } 

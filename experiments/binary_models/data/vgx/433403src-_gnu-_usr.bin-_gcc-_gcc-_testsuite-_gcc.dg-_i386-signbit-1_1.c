@@ -1,1 +1,0 @@
-extern void abort ( void ) unsigned char r0 ; int foo ( int x ) { int r = x & 0xf0 ; if ( ! ( r & 0x80 ) ) { r0 = r ; return 0 ; } else { return 1 ; } } 

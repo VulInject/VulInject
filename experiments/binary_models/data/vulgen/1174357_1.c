@@ -1,1 +1,0 @@
-foo ( , , ) int a , b , c ; { int d , e , f ; if ( verbose ) { printf ( "a=%d\n" , 0 ) ; } } 

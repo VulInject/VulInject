@@ -1,0 +1,1 @@
+bfd_canonicalize_reloc ( , , , ) { if ( abfd -> format != bfd_object ) { return - 1 ; } return BFD_SEND ( abfd , _bfd_canonicalize_reloc , ( abfd , asect , location , symbols ) ) ; } 

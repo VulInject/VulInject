@@ -1,0 +1,43 @@
+static void lynxfb_ops_imageblit(struct fb_info *info,
+const struct fb_image *image)
+{
+unsigned int base, pitch, Bpp;
+unsigned int fgcol, bgcol;
+struct lynxfb_par *par;
+struct sm750_dev *sm750_dev;
+
+par = info->par;
+sm750_dev = par->dev;
+
+base = par->crtc.oScreen;
+pitch = info->fix.line_length;
+Bpp = info->var.bits_per_pixel >> 3;
+
+
+if (image->depth != 1) {
+cfb_imageblit(info, image);
+return;
+}
+
+if (info->fix.visual == FB_VISUAL_TRUECOLOR ||
+info->fix.visual == FB_VISUAL_DIRECTCOLOR) {
+fgcol = ((u32 *)info->pseudo_palette)[image->fg_color];
+bgcol = ((u32 *)info->pseudo_palette)[image->bg_color];
+} else {
+fgcol = image->fg_color;
+bgcol = image->bg_color;
+}
+
+
+if (sm750_dev->fb_count > 1)
+spin_lock(&sm750_dev->slock);
+
+sm750_dev->accel.de_imageblit(&sm750_dev->accel,
+image->data, image->width >> 3, 0,
+base, pitch, Bpp,
+image->dx, image->dy,
+image->width, image->height,
+fgcol, bgcol, HW_ROP2_COPY);
+if (sm750_dev->fb_count > 1)
+spin_unlock(&sm750_dev->slock);
+}

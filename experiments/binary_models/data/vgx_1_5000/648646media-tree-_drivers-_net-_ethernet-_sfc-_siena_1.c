@@ -1,0 +1,1 @@
+static void siena_monitor ( struct efx_nic * efx ) { struct eeh_dev * eehdev = pci_dev_to_eeh_dev ( efx -> pci_dev ) ; eeh_dev_check_failure ( eehdev , NULL ) ; } 

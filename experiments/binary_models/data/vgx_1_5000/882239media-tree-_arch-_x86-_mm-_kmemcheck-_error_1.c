@@ -1,0 +1,1 @@
+{ enum kmemcheck_shadow state ; unsigned long address ; unsigned int size ; } struct pt_regs regs ; struct stack_trace trace ; cfs_time_t trace_entries [ 32 ] ; unsigned char shadow_copy [ SHADOW_COPY_SIZE ] ; unsigned char memory_copy [ SHADOW_COPY_SIZE ] ; 

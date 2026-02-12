@@ -1,0 +1,1 @@
+static ssize_t max31722_temp_show ( struct device * dev , struct device_attribute * attr , char * buf ) { ssize_t ret ; struct max31722_data * data = dev_get_drvdata ( dev ) ; ret = spi_w8r16 ( data -> spi_device , MAX31722_REG_TEMP_LSB ) ; return sprintf ( buf , "%d\n" , ( s16 ) le16_to_cpu ( ret ) * 125 / 32 ) ; } 

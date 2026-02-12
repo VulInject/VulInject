@@ -1,1 +1,0 @@
-static const char * next_line ( const char * str ) { return nl + ! ! * nl ; } 

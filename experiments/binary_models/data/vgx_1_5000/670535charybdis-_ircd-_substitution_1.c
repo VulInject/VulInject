@@ -1,0 +1,1 @@
+void substitution_append_var ( rb_dlink_list * varlist , const char * name , const char * value ) { struct substitution_variable * tmp = rb_malloc ( sizeof ( substitution_variable ) ) ; tmp -> name = rb_strdup ( name ) ; tmp -> value = rb_strdup ( value , NULL ) ; rb_dlinkAddAlloc ( tmp , varlist ) ; } 

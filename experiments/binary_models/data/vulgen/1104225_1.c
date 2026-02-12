@@ -1,1 +1,0 @@
-void tempfile_error ( void ) { fprintf ( stderr , "%s: cannot create temporary file: %s\n" , input_file_name , strerror ( errno ) ) ; } 

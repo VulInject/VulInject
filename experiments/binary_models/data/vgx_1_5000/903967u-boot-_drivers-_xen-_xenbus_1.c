@@ -1,0 +1,1 @@
+static char * errmsg ( struct xsd_sockmsg * rep ) int xenbus_evtchn ; write_req { const void * data ; unsigned int len ; } 

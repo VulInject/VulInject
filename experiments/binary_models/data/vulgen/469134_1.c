@@ -1,1 +1,0 @@
-static void label ( JF , int inst ) { labelto ( J , F , inst , 0 ) ; } 

@@ -1,1 +1,0 @@
-void pci_epc_destroy ( struct pci_epc * epc ) { device_unregister ( & epc -> dev ) ; kfree ( epc ) ; } 

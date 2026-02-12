@@ -1,1 +1,0 @@
-int vsock_addr_cast ( const struct sockaddr * addr , size_t len , struct sockaddr_vm * * out_addr ) { * out_addr = ( sockaddr_vm * ) addr ; return vsock_addr_validate ( * out_addr ) ; } 

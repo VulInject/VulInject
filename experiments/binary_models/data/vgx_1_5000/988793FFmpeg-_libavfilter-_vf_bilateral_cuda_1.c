@@ -1,0 +1,1 @@
+static av_cold int cudabilateral_init ( AVFilterContext * ctx ) { CUDABilateralContext * s = ctx -> priv ; s -> frame = av_frame_alloc ( ) ; s -> tmp_frame = av_frame_alloc ( ) ; if ( ! s -> tmp_frame ) { return AVERROR ( ENOMEM ) ; } return 0 ; } 

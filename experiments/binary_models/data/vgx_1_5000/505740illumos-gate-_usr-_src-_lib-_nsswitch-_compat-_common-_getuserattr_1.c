@@ -1,0 +1,1 @@
+static int check_name ( nss_XbyY_args_t * argp ) { userstr_t * user = ( userstr_t * ) argp -> returnval ; const char * name = argp -> key . name ; ( void ) fprintf ( stdout , "\n[getuserattr.c: check_name %s with %s]\n" , user -> name , name ) ; return ( 0 ) ; } 

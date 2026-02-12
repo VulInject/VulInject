@@ -1,1 +1,0 @@
-static unsigned long ehci_get_resuming_ports ( struct usb_hcd * hcd ) { return ehci -> resuming_ports ; } 

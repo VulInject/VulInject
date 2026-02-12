@@ -1,0 +1,1 @@
+static int __init zylonite_init ( void ) { int ret ; zylonite_snd_ac97_device = platform_device_alloc ( "soc-audio" , - 1 ) ; platform_set_drvdata ( zylonite_snd_ac97_device , & zylonite ) ; ret = platform_device_add ( zylonite_snd_ac97_device ) ; if ( ret != 0 ) { platform_device_put ( zylonite_snd_ac97_device ) ; } return ret ; } 

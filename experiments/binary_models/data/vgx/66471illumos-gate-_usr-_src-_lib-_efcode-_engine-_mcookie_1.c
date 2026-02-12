@@ -1,1 +1,0 @@
-static void del_map ( fcode_env_t * env ) { fstack_t addr ; addr = POP ( DS ) ; delete_mapping ( addr , NULL ) ; } 

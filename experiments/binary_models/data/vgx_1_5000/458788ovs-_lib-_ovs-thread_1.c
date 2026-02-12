@@ -1,0 +1,1 @@
+bool thread_is_pmd ( void ) { const char * name = get_subprogram_name ( ) ; return ! strncmp ( name , "pmd" , 3 ) ; } ovsthread_key { int list_node ; void * destructor ( void * ) unsigned int index ; } 

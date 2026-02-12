@@ -1,0 +1,1 @@
+void MPIR_Breakpoint ( srun_job_t * job ) { debug ( "In MPIR_Breakpoint" ) ; launch_g_fwd_signal ( SIG_DEBUG_WAKE , NULL ) ; } 

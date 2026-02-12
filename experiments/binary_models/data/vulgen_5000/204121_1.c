@@ -1,0 +1,1 @@
+void * av_dynarray2_add ( void * * tab_ptr , int * nb_ptr , size_t elem_size , const uint8_t * elem_data ) { uint8_t * tab_elem_data = NULL ; FF_DYNARRAY_ADD ( , , , , , 0 ) return tab_elem_data ; } 

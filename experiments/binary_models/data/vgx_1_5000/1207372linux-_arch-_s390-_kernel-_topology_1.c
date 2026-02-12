@@ -1,0 +1,1 @@
+static int __init topology_init ( void ) { timer_setup ( & topology_timer , topology_timer_fn , TIMER_DEFERRABLE ) ; if ( MACHINE_HAS_TOPOLOGY ) { set_topology_timer ( ) ; } else { topology_update_polarization_simple ( ) ; } register_sysctl_table ( topology_dir_table , NULL ) ; return device_create_file ( cpu_subsys . dev_root , & dev_attr_dispatching ) ; } 

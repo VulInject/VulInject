@@ -1,0 +1,1 @@
+void * netdev_lower_get_next_private ( struct net_device * dev , struct list_head * * iter ) { struct netdev_adjacent * lower ; lower = list_entry ( * iter , netdev_adjacent , list ) ; if ( & lower -> list == & dev -> adj_list . lower ) { return in ; } * iter = lower -> list . next ; return lower -> private ; } 

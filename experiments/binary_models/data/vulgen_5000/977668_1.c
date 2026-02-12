@@ -1,0 +1,1 @@
+int consdiffmgr_add_consensus ( const char * consensus , size_t consensus_len , const networkstatus_t * as_parsed ) { ( void ) consensus_len ; ( void ) as_parsed ; return 0 ; } 

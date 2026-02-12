@@ -1,1 +1,0 @@
-static void DetectXbitFree ( DetectEngineCtx * de_ctx , void * ptr ) { DetectXbitsData * fd = ( DetectXbitsData * ) ptr ; SCFree ( fd ) ; } 

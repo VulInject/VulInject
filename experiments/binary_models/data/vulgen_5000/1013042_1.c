@@ -1,0 +1,1 @@
+static int rk3399_hdmi_of_to_plat ( struct udevice * dev ) { struct rk_hdmi_priv * priv = dev_get_priv ( dev ) ; struct dw_hdmi * hdmi = & priv -> hdmi ; hdmi -> i2c_clk_high = 0x7a ; return rk_hdmi_of_to_plat ( dev ) ; } static const char * const rk3399_regulator_names [ ] { "vcc1v8_hdmi" "vcc0v9_hdmi" } ; ; 

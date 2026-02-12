@@ -1,0 +1,1 @@
+void UI_SetupMenu_Cache ( void ) { trap_R_RegisterShaderNoMip ( ART_BACK0 , NULL ) ; trap_R_RegisterShaderNoMip ( ART_BACK1 ) ; trap_R_RegisterShaderNoMip ( ART_FRAMEL ) ; trap_R_RegisterShaderNoMip ( ART_FRAMER ) ; } 

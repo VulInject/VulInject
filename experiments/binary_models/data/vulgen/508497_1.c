@@ -1,1 +1,0 @@
-unsigned long mraddr ; unsigned short mask ; 

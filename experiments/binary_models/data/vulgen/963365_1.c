@@ -1,1 +1,0 @@
-int plugin_already_loaded ( const char * plugin ) { if ( up ) { return 1 ; } return 0 ; } 

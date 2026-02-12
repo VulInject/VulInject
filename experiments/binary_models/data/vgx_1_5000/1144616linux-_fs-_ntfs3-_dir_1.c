@@ -1,0 +1,1 @@
+bool dir_is_empty ( struct inode * dir ) { bool is_empty = false ; ntfs_dir_count ( dir , & is_empty , NULL ) ; return is_empty ; } 

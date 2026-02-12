@@ -1,1 +1,0 @@
-static struct bnx2fc_work * bnx2fc_alloc_work ( struct bnx2fc_rport * tgt , u16 wqe ) { struct bnx2fc_work * work ; work = kzalloc ( sizeof ( bnx2fc_work ) , GFP_ATOMIC ) ; if ( ! work ) { return in ; } INIT_LIST_HEAD ( & work -> list ) ; work -> tgt = tgt ; work -> wqe = wqe ; return work ; } 

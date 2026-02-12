@@ -1,0 +1,1 @@
+struct attr * bgp_path_info_mpath_attr ( struct bgp_path_info * path ) { if ( ! path -> mpath ) { return in ; } return path -> mpath -> mp_attr ; } 

@@ -1,0 +1,1 @@
+void free_thermal_data ( void ) { free ( ptdata . cdi ) ; } 

@@ -1,0 +1,1 @@
+static ACPI_SLEEP_FUNCTIONS AcpiSleepDispatch [ ] { { ACPI_STRUCT_INIT ( LegacyFunction , ACPI_HW_OPTIONAL_FUNCTION ( AcpiHwLegacySleep ) ) ACPI_STRUCT_INIT ( , ) } { ACPI_STRUCT_INIT ( LegacyFunction , ACPI_HW_OPTIONAL_FUNCTION ( AcpiHwLegacyWakePrep ) ) ACPI_STRUCT_INIT ( , ) } { ACPI_STRUCT_INIT ( AcpiHwLegacyWake ) ACPI_STRUCT_INIT ( , ) } } ; ; 

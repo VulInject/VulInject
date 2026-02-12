@@ -1,1 +1,0 @@
-mongoc_transaction_opts_destroy ( ) { ENTRY ; txn_opts_cleanup ( opts ) ; bson_free ( opts ) ; EXIT ; } 

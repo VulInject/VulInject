@@ -1,0 +1,1 @@
+static int is_constdisp ( struct elfhdr * hdr ) { if ( ! elf_check_fdpic ( hdr ) ) { return 1 ; } return 0 ; } 

@@ -1,1 +1,0 @@
-void * get_layer4_v4 ( const ipv4_hdr_t * ip_hdr , const u_char * end_ptr ) { void * ptr ; assert ( ip_hdr ) ; assert ( end_ptr ) ; ptr = ( u_char * ) ip_hdr + ( ip_hdr -> ip_hl << 2 ) ; return ( ( void * ) ptr ) ; } 

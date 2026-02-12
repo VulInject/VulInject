@@ -1,0 +1,1 @@
+int dsp_hwec_init ( void ) { mISDN_dsp_element_register ( dsp_hwec , NULL ) ; return 0 ; } 

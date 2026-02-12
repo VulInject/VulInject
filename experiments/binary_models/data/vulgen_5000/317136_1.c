@@ -1,0 +1,1 @@
+static void ieee80211_ocb_housekeeping ( struct ieee80211_sub_if_data * sdata ) { struct ieee80211_if_ocb * ifocb = & sdata -> u . ocb ; ocb_dbg ( sdata , "Running ocb housekeeping\n" ) ; ieee80211_sta_expire ( sdata , IEEE80211_OCB_PEER_INACTIVITY_LIMIT ) ; } 

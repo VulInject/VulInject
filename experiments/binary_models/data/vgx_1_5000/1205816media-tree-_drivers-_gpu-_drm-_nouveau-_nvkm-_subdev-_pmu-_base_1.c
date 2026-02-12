@@ -1,0 +1,1 @@
+int nvkm_pmu_new_ ( const struct nvkm_pmu_func * func , struct nvkm_device * device , int index , struct nvkm_pmu * * ppmu ) { struct nvkm_pmu * pmu ; return nvkm_pmu_ctor ( func , device , index , * ppmu ) ; } 

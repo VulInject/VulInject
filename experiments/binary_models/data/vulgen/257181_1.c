@@ -1,1 +1,0 @@
-lms_softc { struct device sc_dev ; void * sc_ih ; bus_space_tag_t sc_iot ; bus_space_handle_t sc_ioh ; int sc_enabled ; int oldbuttons ; } 

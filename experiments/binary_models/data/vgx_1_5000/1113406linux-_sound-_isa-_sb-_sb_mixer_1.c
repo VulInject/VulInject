@@ -1,0 +1,1 @@
+static void save_mixer ( struct snd_sb * chip , const unsigned char * regs , int num_regs ) { unsigned char * val = chip -> saved_regs ; for ( ; num_regs ; num_regs -- ) { * val ++ = snd_sbmixer_read ( chip , * regs ++ ) ; } } 

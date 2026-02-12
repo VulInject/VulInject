@@ -1,0 +1,1 @@
+static void rescan_mainloop_cb ( evutil_socket_t fd , short events , void * arg ) { ( void ) fd ; ( void ) events ; struct event_base * the_base = arg ; event_base_loopbreak ( the_base , NULL ) ; } 

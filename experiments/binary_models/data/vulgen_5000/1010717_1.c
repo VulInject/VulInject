@@ -1,0 +1,1 @@
+int bridge_rtdaddr ( struct bridge_softc * sc , struct ether_addr * ea ) { int h ; struct bridge_rtnode * p ; h = bridge_hash ( sc , ea ) ; mtx_enter ( & sc -> sc_mtx ) ; LIST_FOREACH ( , , ) { } mtx_leave ( & sc -> sc_mtx ) ; return ( ENOENT ) ; } 

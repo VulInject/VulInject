@@ -1,0 +1,1 @@
+char * time_to_string ( struct timespec * t ) { struct tm * parts ; static char buf [ 128 ] ; char * s ; parts = localtime ( & t -> tv_sec ) ; strftime ( buf , sizeof buf , "%H:%M:%S." PLACEHOLDER "%b %d, %Y" , parts ) ; s = strstr ( buf , PLACEHOLDER ) ; if ( s ) { s [ 9 ] = ' ' ; } buf [ sizeof ( buf ) - 1 ] = '\0' ; return buf ; } 

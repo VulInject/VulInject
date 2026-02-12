@@ -1,0 +1,1 @@
+void r_x509_free_subjectpublickeyinfo ( RX509SubjectPublicKeyInfo * spki ) { if ( spki ) { r_x509_free_algorithmidentifier ( & spki -> algorithm ) ; } } 

@@ -1,1 +1,0 @@
-int diag14 ( unsigned long rx , unsigned long ry1 , unsigned long subcode ) { diag_stat_inc ( DIAG_STAT_X014 , NULL ) ; return diag_amode31_ops . diag14 ( rx , ry1 , subcode ) ; } 

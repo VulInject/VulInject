@@ -1,0 +1,1 @@
+PHPDBG_BREAK ( ) { phpdbg_set_breakpoint_at ( param , NULL ) ; return SUCCESS ; } 

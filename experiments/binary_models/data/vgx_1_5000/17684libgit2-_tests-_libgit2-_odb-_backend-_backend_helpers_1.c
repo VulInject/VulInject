@@ -1,0 +1,1 @@
+static void fake_backend__free ( git_odb_backend * _backend ) { fake_backend * backend ; backend = ( fake_backend * ) _backend ; } 

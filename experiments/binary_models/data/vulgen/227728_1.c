@@ -1,1 +1,0 @@
-static void sparse_mem_class_init ( ObjectClass * klass , void * data ) { DeviceClass * dc = DEVICE_CLASS ( klass ) ; device_class_set_props ( dc , sparse_mem_properties ) ; dc -> desc = "Sparse Memory Device" ; } 

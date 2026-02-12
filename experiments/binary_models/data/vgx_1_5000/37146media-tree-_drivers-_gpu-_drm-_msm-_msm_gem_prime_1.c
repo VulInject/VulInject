@@ -1,0 +1,1 @@
+struct sg_table * msm_gem_prime_get_sg_table ( struct drm_gem_object * obj ) { struct msm_gem_object * msm_obj = to_msm_bo ( obj ) ; int npages = obj -> size >> PAGE_SHIFT ; if ( WARN_ON ( ! msm_obj -> pages ) ) { return in ; } return drm_prime_pages_to_sg ( msm_obj -> pages , npages ) ; } 

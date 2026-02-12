@@ -1,0 +1,1 @@
+static inline void word_copy ( u32 * dest , const u32 * src , u32 count ) { int i ; for ( i = 0 ; i < count ; i ++ ) { dest [ i ] = src [ i ] ; } } 

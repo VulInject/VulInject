@@ -1,1 +1,0 @@
-bool xkb_keysym_is_upper ( xkb_keysym_t ks ) { xkb_keysym_t lower , upper ; XConvertCase ( ks , & lower , & upper ) ; return ( ks == upper ?true : false ) ; } 

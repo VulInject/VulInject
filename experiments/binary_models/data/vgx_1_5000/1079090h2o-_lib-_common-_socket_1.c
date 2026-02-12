@@ -1,0 +1,1 @@
+static int has_pending_ssl_bytes ( struct st_h2o_socket_ssl_t * ssl ) { return ssl -> output . buf . base != NULL ; } 

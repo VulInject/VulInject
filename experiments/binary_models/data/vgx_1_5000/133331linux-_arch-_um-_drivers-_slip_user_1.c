@@ -1,0 +1,1 @@
+static void slip_add_addr ( unsigned char * addr , unsigned char * netmask , void * data ) { struct slip_data * pri = data ; open_addr ( addr , netmask , pri -> name ) ; } 

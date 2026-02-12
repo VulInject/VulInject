@@ -1,0 +1,1 @@
+static int __init set_aio_24 ( char * name , int * add ) { return 0 ; } 

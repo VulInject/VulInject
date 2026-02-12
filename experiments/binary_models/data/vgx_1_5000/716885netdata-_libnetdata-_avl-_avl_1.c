@@ -1,0 +1,1 @@
+avl_t * avl_search_lock ( avl_tree_lock * tree , avl_t * item ) { avl_read_lock ( tree ) ; avl_t * ret = avl_search ( & tree -> avl_tree , item ) ; avl_unlock ( tree , NULL ) ; return ret ; } 

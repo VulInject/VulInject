@@ -1,0 +1,1 @@
+void ResMomPortNumberPut ( mom , port ) ResMom * mom ; int port ; { mom -> portNumber = port ; } void ResMomConnectFdPut ( mom , fd ) ResMom * mom ; int fd ; { assert ( mom != NULL ) ; } 

@@ -1,0 +1,1 @@
+{ READ_REQ , WRITE_REQ } tx_request_t { int gattc_value [ WRITE_MESSAGE_LENGTH ] ; ble_gattc_write_params_t gattc_params ; } write_params_t { uint16_t conn_handle ; tx_request_t type ; { uint16_t read_handle ; write_params_t write_req ; } , req } tx_message_t 

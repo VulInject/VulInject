@@ -1,0 +1,1 @@
+bool nfsd4_run_cb ( struct nfsd4_callback * cb ) { struct nfs4_client * clp = cb -> cb_clp ; bool queued ; nfsd41_cb_inflight_begin ( clp , NULL ) ; queued = nfsd4_queue_cb ( cb ) ; if ( ! queued ) { nfsd41_cb_inflight_end ( clp ) ; } return queued ; } 

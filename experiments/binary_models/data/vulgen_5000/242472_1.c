@@ -1,0 +1,1 @@
+static int api_protocol_get_ic_mode ( struct ilitek_ts_data * ts , u16 cmd , u8 * inbuf , u8 * outbuf ) { int error ; u8 buf [ 64 ] ; buf [ 0 ] = cmd ; if ( error ) { return error ; } ts -> ic_mode = outbuf [ 0 ] ; return 0 ; } 

@@ -1,0 +1,1 @@
+void radeon_gart_table_vram_free ( struct radeon_device * rdev ) { radeon_bo_unref ( & rdev -> gart . robj ) ; } 

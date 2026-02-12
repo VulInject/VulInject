@@ -1,0 +1,1 @@
+static int _sfraiseall ( type , data ) int type ; Void_t * data ; { Sfio_t * f ; Sfpool_t * p , * next ; int n , rv ; rv = 0 ; for ( p = & _Sfpool ; p ; p = next ) { for ( next = p -> next ; next ; next = next -> next ) { if ( next -> n_sf > 0 ) { break ; } } for ( n = 0 ; n < p -> n_sf ; ++ n ) { f = p -> sf [ n ] ; } } return rv ; } 

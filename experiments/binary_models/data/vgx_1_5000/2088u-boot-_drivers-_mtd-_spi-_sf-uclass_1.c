@@ -1,0 +1,1 @@
+int spl_flash_get_sw_write_prot ( struct udevice * dev ) { struct dm_spi_flash_ops * ops = sf_get_ops ( dev ) ; return log_ret ( ops -> get_sw_write_prot ( dev ) ) ; } 

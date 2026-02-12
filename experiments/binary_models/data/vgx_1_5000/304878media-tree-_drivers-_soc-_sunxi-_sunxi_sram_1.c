@@ -1,0 +1,1 @@
+u8 width ; struct sunxi_sram_func * func ; int list ; 

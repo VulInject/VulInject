@@ -1,0 +1,1 @@
+( reboot_mode_register ) ; int reboot_mode_unregister ( struct reboot_mode_driver * reboot ) { struct mode_info * info ; unregister_reboot_notifier ( & reboot -> reboot_notifier ) ; list_for_each_entry ( , , ) return 0 ; } 

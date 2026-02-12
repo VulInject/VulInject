@@ -1,1 +1,0 @@
-void FUN1 ( void ) { FUN2 ( 0 , "" ) ; FUN2 ( 1 , "" ) ; FUN2 ( 3 , "" ) ; FUN2 ( 42 ) ; }

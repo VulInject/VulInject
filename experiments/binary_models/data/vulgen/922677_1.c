@@ -1,1 +1,0 @@
-static UINT64 tsmf_alsa_get_latency ( ITSMFAudioDevice * audio ) { UINT64 latency = 0 ; snd_pcm_sframes_t frames = 0 ; TSMFAlsaAudioDevice * alsa = ( TSMFAlsaAudioDevice * ) audio ; return latency ; } 

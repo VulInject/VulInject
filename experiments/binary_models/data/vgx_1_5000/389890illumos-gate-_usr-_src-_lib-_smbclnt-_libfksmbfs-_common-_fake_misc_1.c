@@ -1,0 +1,1 @@
+int groupmember ( gid_t gid , const cred_t * cr ) { return ( 0 ) ; } 

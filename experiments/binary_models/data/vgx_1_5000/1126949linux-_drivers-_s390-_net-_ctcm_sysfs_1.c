@@ -1,0 +1,1 @@
+static ssize_t stats_write ( struct device * dev , struct device_attribute * attr , const char * buf , size_t count ) { struct ctcm_priv * priv = dev_get_drvdata ( dev ) ; if ( ! priv ) { return - ENODEV ; } return count ; } 

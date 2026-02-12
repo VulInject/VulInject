@@ -1,0 +1,1 @@
+f ( ) struct foo x ; { int t = x . x ; return t + 1 ; } 

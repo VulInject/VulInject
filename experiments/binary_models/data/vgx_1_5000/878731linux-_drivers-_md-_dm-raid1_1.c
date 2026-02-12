@@ -1,0 +1,1 @@
+static void delayed_wake ( struct mirror_set * ms ) { ms -> timer . expires = jiffies + HZ / 5 ; add_timer ( & ms -> timer ) ; } 

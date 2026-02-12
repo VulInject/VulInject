@@ -1,0 +1,1 @@
+static void usbtv_release ( struct v4l2_device * v4l2_dev ) { struct usbtv * usbtv = container_of ( v4l2_dev , usbtv , v4l2_dev ) ; v4l2_device_unregister ( & usbtv -> v4l2_dev ) ; v4l2_ctrl_handler_free ( & usbtv -> ctrl ) ; } 

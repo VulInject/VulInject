@@ -1,0 +1,1 @@
+static void reset_job_signals ( void ) { if ( restore_error_msg ) { signal ( SIGTTIN , SIG_DFL ) ; signal ( SIGTTOU , SIG_DFL ) ; signal ( SIGTSTP , SIG_DFL ) ; background_resume_msg = NULL ; } } 

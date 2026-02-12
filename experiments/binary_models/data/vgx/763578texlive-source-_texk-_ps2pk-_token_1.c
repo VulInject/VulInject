@@ -1,1 +1,0 @@
-static int FUN1 ( int VAR1 ) { { FUN2 ( VAR1 ) ; VAR1 = FUN3 ( ) ; } FUN4 ( VAR1 ) ; FUN5 ( VAR1 , NULL ) ; VAR2 = VAR3 ; return ( VAR4 ) ; }

@@ -1,9 +1,0 @@
-FUN1 (gint VAR1)
-{
-VAR2 *VAR3;
-
-VAR3 = FUN2 (FUN3 (VAR4, NULL));
-VAR3->VAR1 = VAR1;
-
-return VAR3;
-}

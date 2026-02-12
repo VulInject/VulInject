@@ -1,0 +1,1 @@
+grow_or_free ( , ) { void * newptr ; newptr = realloc ( ptr , newsize ) ; if ( newptr == NULL && newsize != 0 ) { return NULL ; } return newptr ; } 

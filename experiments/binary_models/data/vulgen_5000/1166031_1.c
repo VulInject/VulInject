@@ -1,0 +1,1 @@
+struct vjsn_val * vjsn_child ( const struct vjsn_val * vv , const char * key ) { struct vjsn_val * vc ; AN ( key ) ; VTAILQ_FOREACH ( , , ) { if ( vc -> name != NULL && ! strcmp ( vc -> name , key ) ) { return ( vc ) ; } } return ( NULL ) ; } 

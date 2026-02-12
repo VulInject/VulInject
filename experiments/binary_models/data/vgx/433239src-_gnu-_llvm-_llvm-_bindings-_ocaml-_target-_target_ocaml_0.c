@@ -1,3 +1,0 @@
-VAR1 FUN1(LLVMTypeRef VAR2, value VAR3) {
-return FUN2(FUN3(FUN4(VAR3), VAR2));
-}

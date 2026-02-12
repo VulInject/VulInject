@@ -1,0 +1,1 @@
+krb5_error_code encode_krb5_pa_pk_as_req ( const krb5_pa_pk_as_req * rep , krb5_data * * code ) { krb5_setup ( ) ; if ( retval ) { error } sum += length ; krb5_cleanup ( ) ; } 

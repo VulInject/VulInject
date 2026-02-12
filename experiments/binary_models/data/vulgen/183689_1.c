@@ -1,1 +1,0 @@
-MODULE_AUTHOR ( "Alex Williamson<alex.williamson@hp.com>" ) ; MODULE_DESCRIPTION ( "Extensible SAL Interface (ESI) support" ) ; esi_systab_entry_type { ESI_DESC_ENTRY_POINT = 0 } 

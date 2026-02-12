@@ -1,0 +1,1 @@
+static void mlx5_fc_pool_free_bulk ( struct mlx5_fc_pool * fc_pool , struct mlx5_fc_bulk * bulk ) { struct mlx5_core_dev * dev = fc_pool -> dev ; fc_pool -> available_fcs -= bulk -> bulk_len ; mlx5_fc_bulk_destroy ( dev , bulk ) ; mlx5_fc_pool_update_threshold ( fc_pool , NULL ) ; } 

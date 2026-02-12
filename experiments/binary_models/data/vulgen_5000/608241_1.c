@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "Harald Welte<laforge@netfilter.org>" ) ; MODULE_DESCRIPTION ( "{ip,ip6,arp,eb}_tables backend module" ) ; xt_template { struct list_head list ; int * table_init ( struct net * net ) struct module * me ; } 

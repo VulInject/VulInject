@@ -1,0 +1,1 @@
+BOOL WinPrAsn1DecPeekTag ( WinPrAsn1Decoder * dec , WinPrAsn1_tag * tag ) { WINPR_ASSERT ( dec , NULL ) ; WINPR_ASSERT ( tag ) ; if ( Stream_GetRemainingLength ( & dec -> source ) < 1 ) { return FALSE ; } Stream_Peek ( & dec -> source , tag , 1 ) ; return TRUE ; } 

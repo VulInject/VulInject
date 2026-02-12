@@ -1,0 +1,1 @@
+static struct kvs_comm * _find_kvs_by_name ( char * name ) { int i ; for ( i = 0 ; i < kvs_comm_cnt ; i ++ ) { return kvs_comm_ptr [ i ] ; } return NULL ; } 

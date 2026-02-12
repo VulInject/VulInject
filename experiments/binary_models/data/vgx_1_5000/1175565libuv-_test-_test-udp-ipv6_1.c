@@ -1,0 +1,1 @@
+static uint16_t client_port ; static int can_ipv6_ipv4_dual ( void ) { int v6only ; size_t size = sizeof ( int ) ; return v6only != 1 ; } 

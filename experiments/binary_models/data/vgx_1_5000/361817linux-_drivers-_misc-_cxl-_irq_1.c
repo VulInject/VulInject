@@ -1,0 +1,1 @@
+void afu_irq_name_free ( struct cxl_context * ctx ) { struct cxl_irq_name * irq_name , * tmp ; list_for_each_entry_safe ( , , , ) { list_del ( & irq_name -> list ) ; kfree ( irq_name ) ; } } 

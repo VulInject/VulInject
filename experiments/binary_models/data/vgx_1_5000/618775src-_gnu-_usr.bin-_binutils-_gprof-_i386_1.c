@@ -1,0 +1,1 @@
+void i386_find_call PARAMS ( ( Sym * , bfd_vma , bfd_vma ) ) ; static int i386_iscall ( ip ) unsigned char * ip ; { return 0 ; } 

@@ -1,0 +1,1 @@
+ltq_dma_membase + ( z ) ; static void __iomem * ltq_dma_membase ; void ltq_dma_enable_irq ( struct ltq_dma_channel * ch ) { unsigned long flags ; spin_lock_irqsave ( & ltq_dma_lock , flags ) ; ltq_dma_w32 ( ch -> nr , LTQ_DMA_CS ) ; ltq_dma_w32_mask ( 0 , 1 << ch -> nr , LTQ_DMA_IRNEN ) ; spin_unlock_irqrestore ( & ltq_dma_lock , flags ) ; } 

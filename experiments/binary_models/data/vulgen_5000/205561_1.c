@@ -1,0 +1,1 @@
+uLong ZCALLBACK fread_file_func ( opaque , stream , buf , size ) voidpf opaque ; voidpf stream ; void * buf ; uLong size ; { uLong ret ; return ret ; } 

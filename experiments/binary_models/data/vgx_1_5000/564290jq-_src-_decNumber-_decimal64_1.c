@@ -1,0 +1,1 @@
+decimal64 * decimal64FromNumber ( decimal64 * d64 , const decNumber * dn , decContext * set ) { uInt status = 0 ; Int ae ; decNumber dw ; int dc ; uInt comb , exp ; uInt uiwork ; uInt targar [ 2 ] { 0 0 } ; ; } 

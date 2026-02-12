@@ -1,1 +1,0 @@
-float copysignf ( float x , int y ) { return copysign ( x , y ) ; } 

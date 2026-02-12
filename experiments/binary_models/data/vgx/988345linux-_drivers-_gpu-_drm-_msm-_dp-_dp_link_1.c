@@ -1,1 +1,0 @@
-void FUN1 ( struct VAR1 * VAR1 ) { VAR1 -> VAR2 . VAR3 = 0 ; }

@@ -1,0 +1,1 @@
+private ( A ) bpf_spin_lock glock ; private ( A ) bpf_rb_root groot __contains ( node_data , node ) ; SEC ( "tc" ) long rbtree_api_add__wrong_node_type ( void * ctx ) { struct node_data * n ; n = bpf_obj_new ( typeof ( * n ) ) ; bpf_spin_lock ( & glock ) ; bpf_rbtree_first ( & groot ) ; bpf_spin_unlock ( & glock ) ; return 0 ; } 

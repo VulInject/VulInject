@@ -1,0 +1,1 @@
+int LLVMFuzzerInitialize ( int * argc , char * * * argv ) { fuzzer_init_php ( NULL , NULL ) ; return 0 ; } 

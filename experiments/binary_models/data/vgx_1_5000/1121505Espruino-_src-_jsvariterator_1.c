@@ -1,0 +1,1 @@
+char jsvStringIteratorGetCharAndNext ( JsvStringIterator * it ) { char ch = jsvStringIteratorGetChar ( it ) ; jsvStringIteratorNextInline ( it , NULL ) ; return ch ; } 

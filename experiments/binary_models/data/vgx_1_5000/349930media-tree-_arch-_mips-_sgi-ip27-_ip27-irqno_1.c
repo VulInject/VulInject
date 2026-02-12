@@ -1,0 +1,1 @@
+int allocate_irqno ( void ) { int irq ; again irq = find_first_zero_bit ( irq_map , NR_IRQS ) ; if ( test_and_set_bit ( irq , irq_map ) ) { again } return irq ; } 

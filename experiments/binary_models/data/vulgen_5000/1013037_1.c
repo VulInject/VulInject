@@ -1,0 +1,1 @@
+( dma_free_pages ) ; int dma_mmap_pages ( struct device * dev , struct vm_area_struct * vma , size_t size , struct page * page ) { unsigned long count = PAGE_ALIGN ( size ) >> PAGE_SHIFT ; return remap_pfn_range ( vma , vma -> vm_start , page_to_pfn ( page ) + vma -> vm_pgoff , vma_pages ( vma ) << PAGE_SHIFT , vma -> vm_page_prot ) ; } 

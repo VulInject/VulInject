@@ -1,0 +1,1 @@
+static char vlds_device [ ] "/devices/virtual-devices@100/channel-devices@200/" "virtual-domain-service@0:vlds" ; ; dslibentry { ds_hdl_t dsl_hdl ; uint32_t dsl_flags ; char * dsl_service ; ds_ops_t dsl_ops ; } dslibentry_t 

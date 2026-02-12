@@ -1,0 +1,1 @@
+pt_regs_dwarfnum { const char * name ; int dwarfnum ; } 

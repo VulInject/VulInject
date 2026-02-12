@@ -1,0 +1,1 @@
+static void kvmppc_xics_free ( struct kvm_device * dev ) { struct kvmppc_xics * xics = dev -> private ; int i ; struct kvm * kvm = xics -> kvm ; debugfs_remove ( xics -> dentry ) ; if ( kvm ) { kvm -> arch . xics = NULL ; } for ( i = 0 ; i <= xics -> max_icsid ; i ++ ) { kfree ( xics -> ics [ i ] ) ; } kfree ( xics ) ; } 

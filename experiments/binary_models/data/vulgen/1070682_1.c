@@ -1,1 +1,0 @@
-void ceph_msgpool_destroy ( struct ceph_msgpool * pool ) { dout ( "msgpool %s destroy\n" , pool -> name ) ; } 

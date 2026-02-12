@@ -1,1 +1,0 @@
-struct db_prop * db_prop_get ( struct db_context * ctx ) { return ctx -> prop ; } 

@@ -1,0 +1,1 @@
+static int __init txx9aclc_generic_probe ( struct platform_device * pdev ) { int ret ; soc_pdev = platform_device_alloc ( "soc-audio" , - 1 ) ; platform_set_drvdata ( soc_pdev , & txx9aclc_generic_card ) ; ret = platform_device_add ( soc_pdev ) ; if ( ret ) { platform_device_put ( soc_pdev ) ; return ret ; } return 0 ; } 

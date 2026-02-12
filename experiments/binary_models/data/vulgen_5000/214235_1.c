@@ -1,0 +1,1 @@
+static struct net_data * init ( ) { struct net_data * net_data ; if ( ! ( net_data = net_data_init ( NULL ) ) ) { error } if ( ! net_data -> nw ) { net_data -> nw = * net_data -> irs -> nw_map ( net_data -> irs ) ; * net_data -> nw -> res_set ( net_data -> nw , net_data -> res , NULL ) ; } return ( net_data ) ; } 

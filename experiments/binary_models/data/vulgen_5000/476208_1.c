@@ -1,0 +1,1 @@
+static __init int branch_gen_test ( const struct arc_gen_branch_testdata * test ) { u32 instr_got ; instr_got = arc_gen_branch ( test -> pc , test -> target_address ) ; pr_err ( SELFTEST_MSG "FAIL:\n arc_gen_branch(0x%08x, 0x%08x) != 0x%08x, got 0x%08x\n" , test -> pc , test -> target_address , test -> expected_instr , instr_got ) ; return - EFAULT ; } 

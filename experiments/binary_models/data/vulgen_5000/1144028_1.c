@@ -1,0 +1,1 @@
+* We also make sure , that the fatal libjpeg error is actually reported . * * See also .. / png / bug00338 . c * / static int error_handler_called = 0 ; static void error_handler ( int priority , const char * format , va_list args ) { ARG_NOT_USED ( args ) ; } 

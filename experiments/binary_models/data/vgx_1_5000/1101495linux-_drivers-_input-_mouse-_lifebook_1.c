@@ -1,0 +1,1 @@
+int lifebook_detect ( struct psmouse * psmouse , bool set_properties ) { if ( ! lifebook_present ) { return - ENXIO ; } if ( set_properties ) { psmouse -> vendor = "Fujitsu" ; psmouse -> name = "Lifebook TouchScreen" ; } return 0 ; } 

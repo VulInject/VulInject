@@ -1,1 +1,0 @@
-const GF_FilterRegister * ffdec_register ( GF_FilterSession * session ) { return ; } 

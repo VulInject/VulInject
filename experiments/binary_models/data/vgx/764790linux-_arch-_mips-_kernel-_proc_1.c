@@ -1,1 +1,0 @@
-static void * c_start ( struct seq_file * m , loff_t * pos ) { cfs_time_t i = * pos ; return i < nr_cpu_ids ?( void * ) ( i + 1 ) : NULL ; } 

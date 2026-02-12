@@ -1,0 +1,1 @@
+static void vips_foreign_load_nsgif_init ( VipsForeignLoadNsgif * gif ) { gif -> anim = g_malloc0 ( gif_animation , 1 ) ; gif_create ( gif -> anim , & vips_foreign_load_nsgif_bitmap_callbacks ) ; gif -> n = 1 ; } 

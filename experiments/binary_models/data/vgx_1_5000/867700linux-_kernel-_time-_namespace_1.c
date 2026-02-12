@@ -1,0 +1,1 @@
+struct time_namespace * copy_time_ns ( unsigned long flags , struct user_namespace * user_ns , struct time_namespace * old_ns ) { return clone_time_ns ( user_ns , old_ns ) ; } 

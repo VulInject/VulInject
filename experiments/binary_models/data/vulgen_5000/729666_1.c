@@ -1,0 +1,1 @@
+* / void * memmove ( , , ) { const char * f = s2 char * t = s1 } ; else { while ( n -- > 0 ) { * t ++ = * f ++ ; } } return s1 ; 

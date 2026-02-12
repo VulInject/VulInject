@@ -1,0 +1,1 @@
+static enum pp_smu_status pp_nv_set_wm_ranges ( struct pp_smu * pp , struct pp_smu_wm_range_sets * ranges ) { const struct dc_context * ctx = pp -> dm ; struct amdgpu_device * adev = ctx -> driver_context ; return PP_SMU_RESULT_OK ; } 

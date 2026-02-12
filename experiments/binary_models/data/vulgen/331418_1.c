@@ -1,1 +1,0 @@
-int inet6_opt_set_val ( void * databuf , int offset , void * val , socklen_t vallen ) { return ( offset + vallen ) ; } 

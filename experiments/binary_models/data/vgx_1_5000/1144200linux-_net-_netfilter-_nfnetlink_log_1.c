@@ -1,0 +1,1 @@
+static void __instance_destroy ( struct nfulnl_instance * inst ) { hlist_del_rcu ( & inst -> hlist ) ; spin_lock ( & inst -> lock ) ; inst -> copy_mode = NFULNL_COPY_DISABLED ; if ( inst -> skb ) { __nfulnl_flush ( inst ) ; } spin_unlock ( & inst -> lock ) ; instance_put ( inst , NULL ) ; } 

@@ -1,0 +1,1 @@
+static int __init host1x_video_init ( void ) { int err ; err = host1x_driver_register ( & host1x_video_driver ) ; err = platform_register_drivers ( drivers , ARRAY_SIZE ( drivers ) ) ; if ( err < 0 ) { unregister_host1x } return 0 ; unregister_host1x host1x_driver_unregister ( & host1x_video_driver ) ; return err ; } 

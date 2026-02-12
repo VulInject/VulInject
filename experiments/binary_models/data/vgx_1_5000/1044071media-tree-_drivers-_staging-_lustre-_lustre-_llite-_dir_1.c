@@ -1,0 +1,1 @@
+struct page * ll_get_dir_page ( struct inode * dir , struct md_op_data * op_data , __u64 offset ) { struct md_callback cb_op ; struct page * page ; int rc ; cb_op . md_blocking_ast = ll_md_blocking_ast ; rc = md_read_page ( ll_i2mdexp ( dir ) , op_data , & cb_op , offset , & page ) ; return page ; } 

@@ -1,0 +1,1 @@
+if ( ! ( e ) ) { fprintf ( stderr , "Assertion failure, line %d: " # e "\n" , __LINE__ ) ; exit ( - 1 ) ; } int main ( void ) { AO_t x = 13 ; int c = 117 ; } 

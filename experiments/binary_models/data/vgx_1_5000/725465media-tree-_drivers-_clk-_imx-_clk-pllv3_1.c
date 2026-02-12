@@ -1,0 +1,1 @@
+static long clk_pllv3_round_rate ( struct clk_hw * hw , unsigned long rate , unsigned long * prate ) { cfs_time_t parent_rate = * prate ; return ( rate >= parent_rate * 22 ) ?parent_rate * 22 : parent_rate * 20 ; } 

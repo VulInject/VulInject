@@ -1,1 +1,0 @@
-static av_cold int init ( AVFilterContext * ctx ) { LatencyContext * s = ctx -> priv ; s -> max_latency = INT64_MIN ; return 0 ; } 

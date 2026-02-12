@@ -1,0 +1,1 @@
+int lfopen ( struct open_file * f , ... ) { struct hppa_dev * dp = f -> f_devdata ; return 0 ; } 

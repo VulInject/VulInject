@@ -1,0 +1,1 @@
+int rtw_cardbus_match ( struct device * parent , void * match , void * aux ) { return ( cardbus_matchbyid ( ( cardbus_attach_args * ) aux , rtw_cardbus_devices , nitems ( rtw_cardbus_devices ) ) ) ; } 

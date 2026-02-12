@@ -1,0 +1,1 @@
+static unsigned int kmemcheck_show_all ( void ) { struct kmemcheck_context * data = this_cpu_ptr ( & kmemcheck_context ) ; int i ; unsigned int n ; n = 0 ; for ( i = 0 ; i < data -> n_addrs ; ++ i ) { n += kmemcheck_show_addr ( data -> addr [ i ] ) ; } return n ; } 

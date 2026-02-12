@@ -1,0 +1,1 @@
+static gchar * locale_dir = NULL ; BOOL WINAPI DllMain ( HINSTANCE hinstDLL , DWORD fdwReason , LPVOID lpvReserved ) BOOL WINAPI DllMain ( HINSTANCE hinstDLL , DWORD fdwReason , LPVOID lpvReserved ) { if ( fdwReason == DLL_PROCESS_ATTACH ) { evdocument_dll = hinstDLL ; } return TRUE ; } 

@@ -1,0 +1,1 @@
+void bcm_sf2_cfp_exit ( struct dsa_switch * ds ) { struct bcm_sf2_priv * priv = bcm_sf2_to_priv ( ds ) ; struct cfp_rule * rule , * n ; list_for_each_entry_safe_reverse ( , , , ) bcm_sf2_cfp_rule_del ( priv , rule -> port , rule -> fs . location ) ; } 

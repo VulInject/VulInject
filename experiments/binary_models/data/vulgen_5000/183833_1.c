@@ -1,0 +1,1 @@
+static int dissect_wimax_hack_decoder ( tvbuff_t * tvb , packet_info * pinfo , proto_tree * tree , void * data _U_ ) { gint offset = 0 ; guint length , num_of_hacks , i ; proto_item * hack_item = NULL ; proto_tree * hack_tree = NULL ; col_append_sep_str ( pinfo -> cinfo , COL_INFO , NULL , "HARQ ACK Burst:" ) ; return tvb_captured_length ( tvb ) ; } 

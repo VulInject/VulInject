@@ -1,0 +1,1 @@
+static int ipi_mux_domain_alloc ( struct irq_domain * d , unsigned int virq , unsigned int nr_irqs , void * arg ) { int i ; for ( i = 0 ; i < nr_irqs ; i ++ ) { irq_set_percpu_devid ( virq + i ) ; irq_domain_set_info ( d , virq + i , i , & ipi_mux_chip , handle_percpu_devid_irq , NULL , NULL ) ; } return 0 ; } 

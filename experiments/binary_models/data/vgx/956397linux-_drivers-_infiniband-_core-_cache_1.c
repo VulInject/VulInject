@@ -1,1 +1,0 @@
-int FUN1 ( struct VAR1 * VAR2 ) { u32 VAR3 ; int VAR4 ; VAR4 = FUN2 ( VAR2 ) ; FUN3 ( , ) { VAR4 = FUN4 ( VAR2 , VAR3 , true , true , true ) ; if ( VAR4 ) { return VAR4 ; } } return 0 ; }

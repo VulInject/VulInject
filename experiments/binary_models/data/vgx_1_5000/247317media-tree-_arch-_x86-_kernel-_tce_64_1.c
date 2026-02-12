@@ -1,0 +1,1 @@
+void * __init alloc_tce_table ( void ) { unsigned int size ; size = table_size_to_number_of_entries ( specified_table_size , NULL ) ; size *= TCE_ENTRY_SIZE ; return __alloc_bootmem_low ( size , size , 0 ) ; } 

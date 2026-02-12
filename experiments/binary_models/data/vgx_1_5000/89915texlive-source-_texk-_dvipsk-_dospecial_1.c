@@ -1,0 +1,1 @@
+void specerror ( const char * s ) { if ( specialerrors > 0 && ! kpse_tex_hush ( "special" ) ) { error ( s , NULL ) ; specialerrors -- ; } if ( specialerrors == 0 && ! kpse_tex_hush ( "special" ) ) { error ( "more errors in special, being ignored . . ." ) ; error ( "(perhaps dvips doesn't support your macro package?)" ) ; specialerrors -- ; } } 

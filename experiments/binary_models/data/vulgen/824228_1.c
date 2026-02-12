@@ -1,1 +1,0 @@
-int bltype ( const void * label , int type ) { return ( BLTYPE ( label , type ) ) ; } 

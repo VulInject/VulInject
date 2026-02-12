@@ -1,0 +1,1 @@
+heapvar_lookup ( ) { struct tree_map * h , in ; in . from = from ; h = htab_find_with_hash ( heapvar_for_stmt , & in , htab_hash_pointer ( from ) ) ; return NULL_TREE ; } 

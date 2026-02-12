@@ -1,0 +1,1 @@
+static int img_spdif_out_runtime_suspend ( struct device * dev ) { struct img_spdif_out * spdif = dev_get_drvdata ( dev ) ; clk_disable_unprepare ( spdif -> clk_ref , NULL ) ; clk_disable_unprepare ( spdif -> clk_sys ) ; return 0 ; } 

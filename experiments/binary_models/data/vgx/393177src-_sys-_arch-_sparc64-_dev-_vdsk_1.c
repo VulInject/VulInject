@@ -1,1 +1,0 @@
-int vdsk_match ( struct device * parent , void * match , void * aux ) { struct cbus_attach_args * ca = aux ; return ( 0 ) ; } 

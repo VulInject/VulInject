@@ -1,0 +1,1 @@
+static int zfs_onexit_minor_to_state ( minor_t minor , zfs_onexit_t * * zo ) { * zo = zfsdev_get_state ( minor , ZST_ONEXIT ) ; return ( 0 ) ; } 

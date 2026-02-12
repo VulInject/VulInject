@@ -1,1 +1,0 @@
-module_init ( sha512_arm_mod_init , NULL ) ; module_exit ( sha512_arm_mod_fini ) ; 

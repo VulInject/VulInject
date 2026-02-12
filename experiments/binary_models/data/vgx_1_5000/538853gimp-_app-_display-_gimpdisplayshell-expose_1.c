@@ -1,0 +1,1 @@
+gimp_display_shell_expose_region ( , ) { g_return_if_fail ( GIMP_IS_DISPLAY_SHELL ( shell ) ) ; g_return_if_fail ( region != NULL ) ; gdk_window_invalidate_region ( gtk_widget_get_window ( shell -> canvas ) , region , TRUE ) ; } 

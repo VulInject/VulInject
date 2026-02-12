@@ -1,0 +1,1 @@
+int cur_frame ; int rate ; int bits ; int block_align ; int has_video ; int has_audio ; int curstrm ; unsigned int pktsize ; int gmcsize ; int sndsize ; unsigned int flags ; int gmc [ 4 ] ; 

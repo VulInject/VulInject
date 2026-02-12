@@ -1,0 +1,1 @@
+void wil_vif_free ( struct wil6210_vif * vif ) { struct net_device * ndev = vif_to_ndev ( vif ) ; wil_vif_deinit ( vif ) ; } 

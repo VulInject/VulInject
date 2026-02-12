@@ -1,0 +1,1 @@
+Datum seg_lower ( PG_FUNCTION_ARGS ) { SEG * seg = PG_GETARG_SEG_P ( 0 ) ; PG_RETURN_FLOAT4 ( seg -> lower , NULL ) ; } 

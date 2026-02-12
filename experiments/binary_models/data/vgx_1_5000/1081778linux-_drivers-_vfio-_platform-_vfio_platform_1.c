@@ -1,0 +1,1 @@
+static void vfio_platform_release_dev ( struct vfio_device * core_vdev ) { struct vfio_platform_device * vdev = container_of ( core_vdev , vfio_platform_device , vdev ) ; } 

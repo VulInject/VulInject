@@ -1,1 +1,0 @@
-static void sig_window_destroyed ( WINDOW_REC * window ) { command_history_unlink ( window -> history_name ) ; command_history_destroy ( window -> history ) ; } 

@@ -1,0 +1,1 @@
+static void write_destroy ( Write * write ) { VIPS_FREE ( write -> line ) ; VIPS_UNREF ( write -> target ) ; } 

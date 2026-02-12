@@ -1,0 +1,1 @@
+static int reg_write ( struct gspca_dev * gspca_dev , u16 index , u16 value ) { int ret ; struct usb_device * dev = gspca_dev -> dev ; PDEBUG ( D_USBO , "reg write i:0x%04x = 0x%02x" , index , value ) ; if ( ret < 0 ) { pr_err ( "reg write: error %d\n" , ret ) ; } return ret ; } 

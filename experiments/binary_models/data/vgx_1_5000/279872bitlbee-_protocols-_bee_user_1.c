@@ -1,0 +1,1 @@
+bee_user_t * bee_user_by_handle_slow ( bee_t * bee , struct im_connection * ic , const char * handle ) { GSList * l ; for ( l = bee -> users ; l ; l = l -> next ) { bee_user_t * bu = l -> data ; } return NULL ; } 

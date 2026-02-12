@@ -1,0 +1,1 @@
+static int namespace_set_fd ( ns , btree * * bt , int fd , unsigned int flags ) ( log_info ( "reopening namespace %s (entries)" , ns -> suffix ) , btree_close ( * bt ) , ( ns -> sync == 0 ) flags |= BT_NOSYNC , * bt = btree_open_fd ( fd , flags ) , ( * bt == NULL ) return ; ) ; return 0 ; 

@@ -1,0 +1,1 @@
+static ssize_t sampling_down_factor_store ( struct gov_attr_set * attr_set , const char * buf , size_t count ) { struct dbs_data * dbs_data = to_dbs_data ( attr_set ) ; unsigned int input ; int ret ; ret = sscanf ( buf , "%u" , & input ) ; dbs_data -> sampling_down_factor = input ; return count ; } 

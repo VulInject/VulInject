@@ -1,0 +1,1 @@
+static int proc_status_show ( struct seq_file * m , void * v ) { seq_printf ( m , "Emulated SWP:\t\t%lu\n" , swpcounter ) ; seq_printf ( m , "Emulated SWPB:\t\t%lu\n" , swpbcounter ) ; seq_printf ( m , "Aborted SWP{B}:\t\t%lu\n" , abtcounter ) ; return 0 ; } 

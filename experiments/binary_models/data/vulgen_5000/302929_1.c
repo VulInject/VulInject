@@ -1,0 +1,1 @@
+static unsigned int process_rx_data_blocks ( struct amdtp_stream * s , __be32 * buffer , unsigned int data_blocks , unsigned int * syt ) { struct snd_pcm_substream * pcm = ACCESS_ONCE ( s -> pcm ) ; unsigned int pcm_frames ; if ( pcm ) { write_pcm_s32 ( s , pcm , ( __le32 * ) buffer , data_blocks ) ; pcm_frames = data_blocks ; } else { pcm_frames = 0 ; } return pcm_frames ; } 

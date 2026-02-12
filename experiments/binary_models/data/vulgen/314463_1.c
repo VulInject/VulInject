@@ -1,1 +1,0 @@
-static void vips_gaussmat_init ( VipsGaussmat * gaussmat ) { gaussmat -> sigma = 1 ; gaussmat -> min_ampl = 0.1 ; } 

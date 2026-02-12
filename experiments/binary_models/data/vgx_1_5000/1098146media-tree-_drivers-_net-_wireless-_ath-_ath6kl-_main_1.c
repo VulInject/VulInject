@@ -1,0 +1,1 @@
+static int ath6kl_close ( struct net_device * dev ) { struct ath6kl_vif * vif = netdev_priv ( dev ) ; netif_stop_queue ( dev ) ; ath6kl_cfg80211_stop ( vif , NULL ) ; clear_bit ( WLAN_ENABLED , & vif -> flags ) ; return 0 ; } 

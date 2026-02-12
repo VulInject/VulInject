@@ -1,1 +1,0 @@
-int nvram_get_byte ( int byteno ) static int nvram_initialized ; void nvramattach ( int num ) { if ( nvram_initialized || nvram_csum_valid ( ) ) { printf ( "nvram: initialized\n" ) ; nvram_initialized = 1 ; } } 

@@ -1,0 +1,1 @@
+path_t * path_new ( void ) { path_t * p = NULL ; privpath_t * priv = NULL ; SAFE_CALLOC ( p , 1 , path_t ) ; SAFE_CALLOC ( priv , 1 , privpath_t ) ; memset ( priv , 0 , sizeof ( privpath_t ) ) ; p -> priv = priv ; return p ; calloc_error free ( p ) ; free ( priv ) ; return NULL ; } 

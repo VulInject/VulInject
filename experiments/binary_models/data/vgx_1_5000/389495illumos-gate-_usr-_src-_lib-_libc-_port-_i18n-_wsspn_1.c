@@ -1,0 +1,1 @@
+size_t wcsspn ( const wchar_t * string , const wchar_t * charset ) { const wchar_t * p , * q ; for ( q = string ; * q ; ++ q ) { for ( p = charset ; * p && * p != * q ; ++ p ) { } } return ( q - string ) ; } 

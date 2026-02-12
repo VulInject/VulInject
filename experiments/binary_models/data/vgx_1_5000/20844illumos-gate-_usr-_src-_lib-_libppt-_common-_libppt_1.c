@@ -1,0 +1,1 @@
+node_data { pcidb_hdl_t * nd_db ; int nd_matches ; nvlist_t * nd_nvl ; int nd_err ; } node_data_t ppt_match { list_node_t pm_list ; char pm_path [ MAXPATHLEN ] ; char pm_vendor [ 5 ] ; char pm_device [ 5 ] ; } ppt_match_t 

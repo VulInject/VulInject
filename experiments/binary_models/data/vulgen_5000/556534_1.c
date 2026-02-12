@@ -1,0 +1,1 @@
+static int resolver_cb_timeout ( struct thread * t ) { struct resolver_state * r = THREAD_ARG ( t ) ; r -> timeout = THREAD_RUNNING ; ares_process ( r -> channel , NULL , NULL ) ; r -> timeout = NULL ; return 0 ; } 

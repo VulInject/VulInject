@@ -1,0 +1,1 @@
+void vtime_task_switch ( struct task_struct * prev ) { if ( is_idle_task ( prev ) ) { vtime_account_idle ( prev ) ; } else { vtime_account_kernel ( prev ) ; } vtime_flush ( prev ) ; arch_vtime_task_switch ( prev , NULL ) ; } 

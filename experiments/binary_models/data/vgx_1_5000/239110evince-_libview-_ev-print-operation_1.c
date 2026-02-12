@@ -1,0 +1,1 @@
+ev_print_operation_get_status ( ) { g_return_val_if_fail ( EV_IS_PRINT_OPERATION ( op ) ) ; return op -> status ?op -> status : "" ; } 

@@ -1,1 +1,0 @@
-EXPORTED hash_iter * hash_table_iter ( hash_table * table ) { hash_iter * iter = xzmalloc ( sizeof ( hash_iter ) ) ; iter -> table = table ; hash_iter_reset ( iter , NULL ) ; return iter ; } 

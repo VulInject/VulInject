@@ -1,1 +1,0 @@
-static void ti_ehrpwm_modify ( u16 val , u16 mask , fdt_addr_t reg ) { unsigned short v ; v = readw ( reg ) ; v |= val & mask ; writew ( v , reg ) ; } 

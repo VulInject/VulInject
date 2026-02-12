@@ -1,0 +1,1 @@
+static __maybe_unused int drv_runtime_suspend ( struct device * dev ) { struct drm_device * ddev = dev_get_drvdata ( dev ) ; DRM_DEBUG_DRIVER ( "\n" ) ; ltdc_suspend ( ddev , NULL ) ; return 0 ; } 

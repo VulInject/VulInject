@@ -1,0 +1,1 @@
+find_objc_msgcall ( , ) { int i ; find_objc_msgsend ( ) ; if ( new_pc != NULL ) { * new_pc = 0 ; } for ( i = 0 ; i < nmethcalls ; i ++ ) { if ( ( pc >= methcalls [ i ] . begin ) && ( pc < methcalls [ i ] . end ) ) { if ( methcalls [ i ] . stop_at != NULL ) { return find_objc_msgcall_submethod ( methcalls [ i ] . stop_at , pc , new_pc ) ; } else { return 0 ; } } } return 0 ; } 

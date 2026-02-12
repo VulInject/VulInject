@@ -1,0 +1,1 @@
+static int nxp_spifi_set_memory_mode_off ( struct nxp_spifi * spifi ) { int ret ; ret = nxp_spifi_reset ( spifi ) ; if ( ret ) { dev_err ( spifi -> dev , "unable to enter command mode\n" ) ; } else { spifi -> memory_mode = false ; } return ret ; } 

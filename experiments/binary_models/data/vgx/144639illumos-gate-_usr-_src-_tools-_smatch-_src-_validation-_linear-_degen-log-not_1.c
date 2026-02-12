@@ -1,1 +1,0 @@
-extern int FUN1 ( void ) int FUN2 ( int VAR1 ) { return 0 ; }

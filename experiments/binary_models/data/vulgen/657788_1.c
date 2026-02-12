@@ -1,1 +1,0 @@
-static int bdw_get_mailbox_offset ( struct snd_sof_dev * sdev ) { return ; } 

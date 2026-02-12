@@ -1,1 +1,0 @@
-static int FUN1 ( const char * VAR1 , const char * VAR2 ) { if ( VAR1 && ! VAR2 ) { return - 1 ; } if ( ! VAR1 && VAR2 ) { return 1 ; } return strcmp ( VAR1 , VAR2 ) ; }

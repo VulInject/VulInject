@@ -1,1 +1,0 @@
-static u32 sunxi_getbits ( void __iomem * reg , u8 mask , int shift ) { return ( readl ( reg ) >> shift ) & mask ; } 

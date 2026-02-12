@@ -1,0 +1,1 @@
+static enum fsmonitor_reason check_vfs4git ( struct repository * r ) { const char * const_str ; return FSMONITOR_REASON_OK ; } 

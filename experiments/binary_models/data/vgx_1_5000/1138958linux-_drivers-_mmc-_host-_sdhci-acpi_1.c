@@ -1,0 +1,1 @@
+static bool sdhci_acpi_byt_defer ( struct device * dev ) { if ( ! soc_intel_is_byt ( ) ) { return false ; } sdhci_acpi_byt_setting ( dev ) ; return false ; } 

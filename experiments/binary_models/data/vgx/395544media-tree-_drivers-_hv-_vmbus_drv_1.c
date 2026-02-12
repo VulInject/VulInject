@@ -1,1 +1,0 @@
-static int vmbus_exists ( void ) { return 0 ; } 

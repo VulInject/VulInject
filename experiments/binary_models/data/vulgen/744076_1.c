@@ -1,1 +1,0 @@
-props { char * propname ; int proptype ; scf_transaction_entry_t * entry ; scf_value_t * value ; } props_t 

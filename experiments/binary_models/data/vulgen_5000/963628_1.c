@@ -1,0 +1,1 @@
+struct bpf_link * bpf_link_get_curr_or_next ( u32 * id ) { struct bpf_link * link ; spin_lock_bh ( & link_idr_lock ) ; again link = idr_get_next ( & link_idr , id ) ; if ( link ) { if ( IS_ERR ( link ) ) { ( * id ) ++ ; again } } spin_unlock_bh ( & link_idr_lock ) ; return link ; } 

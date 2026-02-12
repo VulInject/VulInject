@@ -1,1 +1,0 @@
-static u64 vtime_delta ( struct vtime * vtime ) { unsigned long long clock ; clock = sched_clock ( ) ; return clock - vtime -> starttime ; } 

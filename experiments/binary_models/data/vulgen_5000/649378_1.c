@@ -1,0 +1,1 @@
+static inline int lcs_threads_running ( struct lcs_card * card , unsigned long threads ) { int rc = 0 ; spin_lock_irqsave ( & card -> mask_lock , flags ) ; rc = ( card -> thread_running_mask & threads ) ; spin_unlock_irqrestore ( & card -> mask_lock , flags ) ; return rc ; } 

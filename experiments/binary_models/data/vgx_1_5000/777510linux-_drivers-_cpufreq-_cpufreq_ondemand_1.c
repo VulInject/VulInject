@@ -1,0 +1,1 @@
+gov_attr_rw ( up_threshold ) ; gov_attr_rw ( sampling_down_factor ) ; gov_attr_rw ( ignore_nice_load ) ; gov_attr_rw ( powersave_bias , NULL ) ; static struct attribute * od_attrs [ ] { & sampling_rate . attr & up_threshold . attr & sampling_down_factor . attr & ignore_nice_load . attr & powersave_bias . attr & io_is_busy . attr NULL } ; ; 

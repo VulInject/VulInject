@@ -1,1 +1,0 @@
-static int mes_v10_1_queue_init ( struct amdgpu_device * adev ) { int r ; r = mes_v10_1_mqd_init ( & adev -> mes . ring ) ; r = mes_v10_1_kiq_enable_queue ( adev ) ; if ( r ) { return r ; } return 0 ; } 

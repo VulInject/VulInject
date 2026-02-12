@@ -1,1 +1,0 @@
-void wp_starttimer ( struct maestro_softc * sc ) { } 

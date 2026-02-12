@@ -1,0 +1,1 @@
+void mtk_mdp_comp_clock_off ( struct device * dev , struct mtk_mdp_comp * comp ) { int i ; for ( i = 0 ; i < ARRAY_SIZE ( comp -> clk ) ; i ++ ) { clk_disable_unprepare ( comp -> clk [ i ] ) ; } } 

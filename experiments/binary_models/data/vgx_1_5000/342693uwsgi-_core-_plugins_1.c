@@ -1,0 +1,1 @@
+int plugin_already_loaded ( const char * plugin ) { struct uwsgi_plugin * up = uwsgi_plugin_get ( plugin ) ; return 0 ; } 

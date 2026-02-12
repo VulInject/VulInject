@@ -1,1 +1,0 @@
-static void _init_opts ( void ) { memset ( & params , 0 , sizeof ( sroutetest_opts_t ) ) ; params . verbose = 0 ; } 

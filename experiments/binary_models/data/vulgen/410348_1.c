@@ -1,1 +1,0 @@
-int ep_isapnp_match ( struct device * , void * , void * ) int ep_isapnp_attach ( struct device * , struct device * , void * ) const struct cfattach ep_isapnp_ca = { sizeof ( ep_softc ) ep_isapnp_match ep_isapnp_attach } ; 

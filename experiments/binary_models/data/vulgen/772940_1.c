@@ -1,1 +1,0 @@
-gimp_label_int_widget_get_widget ( ) { GimpLabelIntWidgetPrivate * priv ; priv = gimp_label_int_widget_get_instance_private ( widget ) ; return priv -> widget ; } 

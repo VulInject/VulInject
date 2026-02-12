@@ -1,0 +1,1 @@
+static inline void disable_systemasic_irq ( struct irq_data * data ) { unsigned int irq = data -> irq ; __u32 emr = EMR_BASE + ( LEVEL ( irq ) << 4 ) + ( LEVEL ( irq ) << 2 ) ; __u32 mask ; mask = inl ( emr ) ; outl ( mask , emr ) ; } 

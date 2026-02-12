@@ -1,0 +1,1 @@
+MODULE_FIRMWARE ( "libertas_cs_helper.fw" ) ; MODULE_FIRMWARE ( "libertas_cs.fw" ) ; static int debug_output = 0 ; static inline unsigned int if_cs_read8 ( struct if_cs_card * card , uint reg ) { unsigned int val = ioread8 ( card -> iobase + reg ) ; return val ; } 

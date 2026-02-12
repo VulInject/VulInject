@@ -1,1 +1,0 @@
-int smb_ctx_setserver ( struct smb_ctx * ctx , const char * name ) { return ( 0 ) ; } 

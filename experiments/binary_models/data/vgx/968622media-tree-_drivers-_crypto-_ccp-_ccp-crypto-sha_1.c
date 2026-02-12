@@ -1,1 +1,0 @@
-int FUN1 ( struct VAR1 * VAR2 ) { int VAR3 , VAR4 ; unsigned int VAR5 = FUN2 ( ) ; for ( VAR3 = 0 ; VAR3 < FUN3 ( VAR6 ) ; VAR3 ++ ) { if ( VAR6 [ VAR3 ] . VAR7 > VAR5 ) { continue ; } VAR4 = FUN4 ( VAR2 , & VAR6 [ VAR3 ] ) ; } return 0 ; }

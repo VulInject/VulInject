@@ -1,1 +1,0 @@
-void async_append_destroy ( struct async_append * ap ) { if ( ap ) { async_append_flush ( ap ) ; free ( ap -> buffer ) ; free ( ap ) ; } } 

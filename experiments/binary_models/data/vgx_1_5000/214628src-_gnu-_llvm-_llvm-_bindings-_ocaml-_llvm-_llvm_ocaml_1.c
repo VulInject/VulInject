@@ -1,0 +1,1 @@
+value llvm_dispose_module ( LLVMModuleRef M ) { LLVMDisposeModule ( M , NULL ) ; return Val_unit ; } 

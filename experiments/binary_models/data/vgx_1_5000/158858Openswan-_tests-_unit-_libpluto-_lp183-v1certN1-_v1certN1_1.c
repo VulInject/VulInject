@@ -1,0 +1,1 @@
+static void init_local_interface ( void ) { nat_traversal_support_non_ike = TRUE ; nat_traversal_support_port_floating = TRUE ; nat_traversal_enabled = TRUE ; init_moon_interface ( TRUE , NULL ) ; } 

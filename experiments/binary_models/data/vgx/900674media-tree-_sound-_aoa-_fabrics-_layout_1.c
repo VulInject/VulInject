@@ -1,1 +1,0 @@
-static void layout_remove_codec ( struct aoa_codec * codec ) { int i ; codec -> soundbus_dev = NULL ; for ( i = 0 ; i < MAX_CODECS_PER_BUS ; i ++ ) { } } 

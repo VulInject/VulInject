@@ -1,1 +1,0 @@
-int main ( ) { DECL_LONG_DOUBLE_ROUNDING BEGIN_LONG_DOUBLE_ROUNDING ( ) ; test_function ( fmal , NULL ) ; return 0 ; } 

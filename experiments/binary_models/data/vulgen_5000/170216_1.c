@@ -1,0 +1,1 @@
+bool journal_file_next_evolve_usec ( JournalFile * f , usec_t * u ) { uint64_t epoch ; assert ( f ) ; assert ( u ) ; epoch = FSPRG_GetEpoch ( f -> fsprg_state ) ; * u = ( usec_t ) ( f -> fss_start_usec + f -> fss_interval_usec * epoch + f -> fss_interval_usec ) ; return true ; } 

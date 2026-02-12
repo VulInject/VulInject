@@ -1,0 +1,1 @@
+static int __init epat_init ( void ) { return paride_register ( & epat ) ; } 

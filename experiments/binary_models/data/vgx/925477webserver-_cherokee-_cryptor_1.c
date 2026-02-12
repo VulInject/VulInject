@@ -1,1 +1,0 @@
-cherokee_cryptor_socket_write ( , , , ) { return cryp -> write ( cryp , buf , len , re_len ) ; } 

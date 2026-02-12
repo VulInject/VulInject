@@ -1,0 +1,1 @@
+static void bcma_core_pci_clientmode_init ( struct bcma_drv_pci * pc ) { bcma_pcicore_serdes_workaround ( pc ) ; bcma_core_pci_config_fixup ( pc , NULL ) ; } 

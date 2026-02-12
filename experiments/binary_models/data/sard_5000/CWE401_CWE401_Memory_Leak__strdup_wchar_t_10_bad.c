@@ -1,0 +1,21 @@
+void CWE401_Memory_Leak__strdup_wchar_t_10_bad()
+{
+    wchar_t * data;
+    data = NULL;
+    if(globalTrue)
+    {
+        {
+            wchar_t myString[] = L"myString";
+            /* POTENTIAL FLAW: Allocate memory from the heap using a function that requires free() for deallocation */
+            data = wcsdup(myString);
+            /* Use data */
+            printWLine(data);
+        }
+    }
+    if(globalTrue)
+    {
+        /* POTENTIAL FLAW: No deallocation of memory */
+        /* no deallocation */
+        ; /* empty statement needed for some flow variants */
+    }
+}

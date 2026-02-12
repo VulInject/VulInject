@@ -1,1 +1,0 @@
-target_bfd_xclose ( , ) { bfd_close ( t -> to_data ) ; xfree ( t ) ; } 

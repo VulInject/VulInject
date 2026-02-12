@@ -1,0 +1,1 @@
+void urtwn_stop ( void * cookie ) { struct urtwn_softc * sc = cookie ; int i ; for ( i = 0 ; i < R92C_MAX_EPOUT ; i ++ ) { if ( sc -> tx_pipe [ i ] != NULL ) { usbd_abort_pipe ( sc -> tx_pipe [ i ] ) ; } } usbd_abort_pipe ( sc -> rx_pipe ) ; urtwn_free_rx_list ( sc ) ; } 

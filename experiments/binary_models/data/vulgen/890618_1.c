@@ -1,1 +1,0 @@
-% key / value pairs ( ) . % * / ; _ColormapInfo { const unsigned char red green blue ; const float alpha ; const ssize_t compliance ; } ColormapInfo 

@@ -1,0 +1,1 @@
+unsigned long profile_pc ( struct pt_regs * regs ) { unsigned long pc = instruction_pointer ( regs ) ; return pc ; } 

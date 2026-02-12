@@ -1,0 +1,1 @@
+dma_addr_t cdnsp_trb_virt_to_dma ( struct cdnsp_segment * seg , union cdnsp_trb * trb ) { unsigned long segment_offset = trb - seg -> trbs ; return seg -> dma + ( segment_offset * sizeof ( * trb ) ) ; } 

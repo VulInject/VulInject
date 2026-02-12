@@ -1,1 +1,0 @@
-static inline struct hvcs_struct * from_vio_dev ( struct vio_dev * viod ) { return dev_get_drvdata ( ) ; } 

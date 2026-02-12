@@ -1,0 +1,1 @@
+qcpmicgpio_softc { struct device sc_dev ; int sc_node ; spmi_tag_t sc_tag ; int sc_sid ; uint16_t sc_addr ; int sc_is_lv_mv ; int sc_npins ; struct gpio_controller sc_gc ; } 

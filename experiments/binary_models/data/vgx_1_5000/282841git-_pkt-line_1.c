@@ -1,0 +1,1 @@
+enum packet_read_status packet_reader_peek ( struct packet_reader * reader ) { packet_reader_read ( reader ) ; reader -> line_peeked = 1 ; return reader -> status ; } 

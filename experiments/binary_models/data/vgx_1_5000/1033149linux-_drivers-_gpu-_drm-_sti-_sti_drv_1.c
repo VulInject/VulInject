@@ -1,0 +1,1 @@
+static void sti_unbind ( struct device * dev ) { struct drm_device * ddev = dev_get_drvdata ( dev ) ; drm_dev_unregister ( ddev ) ; sti_cleanup ( ddev , NULL ) ; drm_dev_put ( ddev ) ; } 

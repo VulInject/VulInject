@@ -1,1 +1,0 @@
-wchar_t * wcschr ( const wchar_t * s , wchar_t c ) { const wchar_t * p ; p = s ; for ( ; ; ) { if ( ! * p ) { return NULL ; } p ++ ; } } 

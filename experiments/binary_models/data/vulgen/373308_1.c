@@ -1,1 +1,0 @@
-ipforward_on ( ) { return ipforward ( ) ; } 

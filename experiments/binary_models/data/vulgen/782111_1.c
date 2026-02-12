@@ -1,1 +1,0 @@
-void afu_dma_region_init ( struct dfl_feature_platform_data * pdata ) { struct dfl_afu * afu = dfl_fpga_pdata_get_private ( pdata ) ; } 

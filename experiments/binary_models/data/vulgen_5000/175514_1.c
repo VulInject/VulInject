@@ -1,0 +1,1 @@
+static char * mock_read_file_to_str ( const char * filename , int flags , struct stat * stat_out ) { char * ret = NULL ; ( void ) flags ; ( void ) stat_out ; done return ret ; } 

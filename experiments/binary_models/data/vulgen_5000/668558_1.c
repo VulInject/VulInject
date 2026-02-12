@@ -1,0 +1,1 @@
+int rkgpio_match ( struct device * parent , void * match , void * aux ) { struct fdt_attach_args * faa = aux ; return OF_is_compatible ( faa -> fa_node , "rockchip,gpio-bank" ) ; } 

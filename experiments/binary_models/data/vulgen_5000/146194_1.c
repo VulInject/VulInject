@@ -1,0 +1,1 @@
+( __ioremap ) ; void __iounmap ( void __iomem * addr ) { struct vm_struct * p ; p = remove_vm_area ( ( void * ) ( PAGE_MASK & ( unsigned long __force ) addr ) ) ; if ( ! p ) { pr_err ( "iounmap: bad address %p\n" , addr ) ; } kfree ( p ) ; } 

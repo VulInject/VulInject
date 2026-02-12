@@ -1,0 +1,1 @@
+static void rs600_gart_disable ( struct radeon_device * rdev ) { u32 tmp ; WREG32_MC ( R_000100_MC_PT0_CNTL , 0 ) ; tmp = RREG32_MC ( R_000009_MC_CNTL1 ) ; WREG32_MC ( R_000009_MC_CNTL1 , tmp & C_000009_ENABLE_PAGE_TABLES ) ; } 

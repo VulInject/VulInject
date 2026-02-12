@@ -1,1 +1,0 @@
-( ( float ) log1p ( ( double ) x ) ) ; 

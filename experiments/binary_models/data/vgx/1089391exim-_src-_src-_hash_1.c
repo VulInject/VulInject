@@ -1,1 +1,0 @@
-static void native_sha1_start ( sha1 * base ) { base -> H [ 0 ] = 0x67452301 ; base -> H [ 1 ] = 0xefcdab89 ; base -> H [ 2 ] = 0x98badcfe ; base -> H [ 3 ] = 0x10325476 ; base -> H [ 4 ] = 0xc3d2e1f0 ; } 

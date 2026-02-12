@@ -1,0 +1,1 @@
+operand_width ( opnd ) ia64_opnd opnd ; { const struct ia64_operand * odesc = & elf64_ia64_operands [ opnd ] ; int bits = 0 ; int i ; bits = 0 ; for ( i = 0 ; i < NELEMS ( odesc -> field ) && odesc -> field [ i ] . bits ; ++ i ) { bits += odesc -> field [ i ] . bits ; } return bits ; } 

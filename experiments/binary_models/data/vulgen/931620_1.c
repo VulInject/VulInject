@@ -1,1 +1,0 @@
-int rtpproxy_stream2uas2_f ( struct sip_msg * msg , char * str1 , char * str2 ) { return rtpproxy_stream2_f ( msg , str1 , ( int ) ( long ) str2 , 0 ) ; } 

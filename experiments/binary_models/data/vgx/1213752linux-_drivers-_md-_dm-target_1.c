@@ -1,1 +1,0 @@
-( VAR1 ) ; static int FUN1 ( struct VAR2 * VAR3 , unsigned int argc , char * * VAR4 ) { return 0 ; }

@@ -1,0 +1,1 @@
+krb5_error_code hdb_unseal_keys ( krb5_context context , HDB * db , hdb_entry * ent ) { return hdb_unseal_keys_mkey ( context , ent , db -> hdb_master_key ) ; } 

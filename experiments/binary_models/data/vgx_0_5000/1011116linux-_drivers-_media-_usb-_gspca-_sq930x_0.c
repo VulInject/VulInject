@@ -1,0 +1,32 @@
+static int sd_init(struct gspca_dev *gspca_dev)
+{
+struct sd *sd = (struct sd *) gspca_dev;
+
+sd->gpio[0] = sd->gpio[1] = 0xff;	
+
+
+
+reg_r(gspca_dev, SQ930_CTRL_GET_DEV_INFO, 8);
+if (gspca_dev->usb_err < 0)
+return gspca_dev->usb_err;
+
+
+gspca_dbg(gspca_dev, D_PROBE, "info: %*ph\n", 8, gspca_dev->usb_buf);
+
+bridge_init(sd);
+
+if (sd->sensor == SENSOR_MI0360) {
+
+
+if (gspca_dev->usb_buf[5] == 0xf6)	
+sd->sensor = SENSOR_ICX098BQ;
+else
+cmos_probe(gspca_dev);
+}
+if (gspca_dev->usb_err >= 0) {
+gspca_dbg(gspca_dev, D_PROBE, "Sensor %s\n",
+sensor_tb[sd->sensor].name);
+global_init(sd, 1);
+}
+return gspca_dev->usb_err;
+}

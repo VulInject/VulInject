@@ -1,0 +1,1 @@
+void add_to_id_hash ( const char * name , struct Client * client_p ) { rb_radixtree_add ( client_id_tree , name , client_p ) ; } 

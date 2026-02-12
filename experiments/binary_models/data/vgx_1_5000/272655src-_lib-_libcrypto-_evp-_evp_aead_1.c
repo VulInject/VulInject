@@ -1,0 +1,1 @@
+static int check_alias ( const unsigned char * in , size_t in_len , const unsigned char * out ) { if ( in + in_len <= out ) { return 1 ; } return 0 ; } 

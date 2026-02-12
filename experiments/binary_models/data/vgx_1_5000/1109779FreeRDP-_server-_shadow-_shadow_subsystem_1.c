@@ -1,0 +1,1 @@
+int shadow_subsystem_start ( rdpShadowSubsystem * subsystem ) { int status ; if ( ! subsystem || ! subsystem -> ep . Start ) { return - 1 ; } status = subsystem -> ep . Start ( subsystem , NULL ) ; return status ; } 

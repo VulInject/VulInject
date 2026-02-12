@@ -1,0 +1,1 @@
+* / SYSCALL_DEFINE1 ( , , ) { do_group_exit ( ( error_code & 0xff ) << 8 ) return 0 ; } ; waitid_info { pid_t pid ; uid_t uid ; int status ; int cause ; } wait_opts { enum pid_type wo_type ; int wo_flags ; struct pid * wo_pid ; struct waitid_info * wo_info ; int wo_stat ; struct rusage * wo_rusage ; int notask_error ; } 

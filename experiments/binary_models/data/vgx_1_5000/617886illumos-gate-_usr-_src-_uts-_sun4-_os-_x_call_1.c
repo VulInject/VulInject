@@ -1,0 +1,1 @@
+static uint64_t xc_loop_inum ; kmutex_t xc_sys_mutex ; int xc_spl_enter [ NCPU ] ; static int xc_holder = - 1 ; static xc_mbox { xcfunc_t * xc_func ; int xc_arg1 ; uint64_t xc_arg2 ; cpuset_t xc_cpuset ; volatile uint_t xc_state ; } , xc_mbox [ NCPU ] 

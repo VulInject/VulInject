@@ -1,0 +1,1 @@
+static apr_status_t public_key_cleanup ( void * data ) { EVP_PKEY * pubkey = data ; return APR_SUCCESS ; } 

@@ -1,0 +1,1 @@
+static int sunxi_pmx_get_func_groups ( struct pinctrl_dev * pctldev , unsigned function , const char * const * * groups , unsigned * const num_groups ) { * groups = pctl -> functions [ function ] . groups ; * num_groups = pctl -> functions [ function ] . ngroups ; return 0 ; } 

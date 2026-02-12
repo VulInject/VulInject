@@ -1,0 +1,1 @@
+static void copy_certificates_bootdata ( struct ipl_rb_certificates * certs ) { struct ipl_rb_certificate_entry * cert ; void * ptr ; ptr = ( void * ) ipl_cert_list_addr ; for_each_rb_entry ( , ) { * ( unsigned int * ) ptr = cert -> len ; ptr += ( unsigned int ) ; ptr += cert -> len ; } } 

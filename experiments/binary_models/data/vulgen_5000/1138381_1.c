@@ -1,0 +1,1 @@
+static void localfunc ( LexState * ls ) { expdesc b ; FuncState * fs = ls -> fs ; new_localvar ( ls , str_checkname ( ls ) ) ; adjustlocalvars ( ls , 1 ) ; getlocvar ( fs , b . u . info ) -> startpc = fs -> pc ; } 

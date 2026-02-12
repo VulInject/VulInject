@@ -1,1 +1,0 @@
-static void * check_cpu_node ( struct device_node * dp , int cpuid , int id ) { return NULL ; } 

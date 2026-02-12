@@ -1,0 +1,1 @@
+int ssusb_phy_setup ( struct ssusb_mtk * ssusb ) { struct udevice * dev = ssusb -> dev ; struct phy_bulk * phys = & ssusb -> phys ; int ret ; ret = generic_phy_get_bulk ( dev , phys ) ; ret = generic_phy_init_bulk ( phys ) ; if ( ret ) { return ret ; } ret = generic_phy_power_on_bulk ( phys ) ; if ( ret ) { generic_phy_exit_bulk ( phys ) ; } return ret ; } 

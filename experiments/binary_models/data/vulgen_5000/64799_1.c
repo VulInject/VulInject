@@ -1,0 +1,1 @@
+static int isl1208_setup_irq ( struct i2c_client * client , int irq ) { int rc = devm_request_threaded_irq ( & client -> dev , irq , NULL , isl1208_rtc_interrupt , IRQF_SHARED | IRQF_ONESHOT , isl1208_driver . driver . name , client ) ; return rc ; } 

@@ -1,0 +1,1 @@
+static int coh901331_resume ( struct device * dev ) { struct coh901331_port * rtap = dev_get_drvdata ( dev ) ; clk_prepare ( rtap -> clk ) ; if ( device_may_wakeup ( dev ) ) { disable_irq_wake ( rtap -> irq ) ; } else { clk_enable ( rtap -> clk , NULL ) ; writel ( rtap -> irqmaskstore , rtap -> virtbase + COH901331_IRQ_MASK ) ; clk_disable ( rtap -> clk ) ; } return 0 ; } 

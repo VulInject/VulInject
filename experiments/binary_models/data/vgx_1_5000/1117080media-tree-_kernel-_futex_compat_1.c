@@ -1,0 +1,1 @@
+COMPAT_SYSCALL_DEFINE2 ( , , , , ) { if ( ! futex_cmpxchg_enabled ) { return - ENOSYS ; } current -> compat_robust_list = head ; return 0 ; } 

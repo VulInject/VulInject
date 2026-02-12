@@ -1,0 +1,1 @@
+static void ident_pmd_init ( struct x86_mapping_info * info , pmd_t * pmd_page , unsigned long addr , unsigned long end ) { addr &= PMD_MASK ; for ( ; addr < end ; addr += PMD_SIZE ) { pmd_t * pmd = pmd_page + pmd_index ( addr ) ; if ( pmd_present ( * pmd ) ) { continue ; } } } 

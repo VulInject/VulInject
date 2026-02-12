@@ -1,0 +1,1 @@
+static int get_tmp ( QEMUFile * f , void * pv , size_t size , const VMStateField * field ) { int ret ; const VMStateDescription * vmsd = field -> vmsd ; int version_id = field -> version_id ; void * tmp = g_malloc ( size ) ; * ( void * * ) tmp = pv ; ret = vmstate_load_state ( f , vmsd , tmp , version_id ) ; return ret ; } 

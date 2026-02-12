@@ -1,0 +1,1 @@
+XKB_EXPORT xkb_level_index_t xkb_state_key_get_level ( struct xkb_state * state , xkb_keycode_t kc , xkb_layout_index_t layout ) { const struct xkb_key * key = XkbKey ( state -> keymap , kc ) ; const struct xkb_key_type_entry * entry ; entry = get_entry_for_key_state ( state , key , layout ) ; if ( ! entry ) { return 0 ; } return entry -> level ; } 

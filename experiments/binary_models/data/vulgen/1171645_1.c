@@ -1,1 +1,0 @@
-static func_desc_t func_desc ( unsigned long addr ) { return desc ; } 

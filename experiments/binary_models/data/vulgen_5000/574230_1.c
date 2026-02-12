@@ -1,0 +1,1 @@
+static int hdcs_init_controls ( struct sd * sd ) { struct v4l2_ctrl_handler * hdl = & sd -> gspca_dev . ctrl_handler ; v4l2_ctrl_new_std ( hdl , & hdcs_ctrl_ops , V4L2_CID_EXPOSURE , 0 , 0xff , 1 , HDCS_DEFAULT_EXPOSURE ) ; v4l2_ctrl_new_std ( hdl , & hdcs_ctrl_ops , V4L2_CID_GAIN , 0 , 0xff , 1 , HDCS_DEFAULT_GAIN ) ; return hdl -> error ; } 

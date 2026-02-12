@@ -1,0 +1,1 @@
+kbd_layout_t * init_keyboard_layout ( const name2keysym_t * table , const char * language , Error * * errp ) { kbd_layout_t * k ; k = g_malloc0 ( kbd_layout_t , 1 ) ; k -> hash = g_hash_table_new ( NULL , NULL ) ; if ( parse_keyboard_layout ( k , table , language , errp ) < 0 ) { g_hash_table_unref ( k -> hash ) ; g_free ( k ) ; return NULL ; } return k ; } 

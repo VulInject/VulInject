@@ -1,0 +1,1 @@
+void iwl_pcie_free_dma_ptr ( struct iwl_trans * trans , struct iwl_dma_ptr * ptr ) { dma_free_coherent ( trans -> dev , ptr -> size , ptr -> addr , ptr -> dma ) ; memset ( ptr , 0 , sizeof ( * ptr ) ) ; } 

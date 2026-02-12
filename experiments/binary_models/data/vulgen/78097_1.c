@@ -1,1 +1,0 @@
-gentity_t * SelectSpawnPoint ( vec3_t avoidPoint , vec3_t origin , vec3_t angles , int isbot ) { return SelectRandomFurthestSpawnPoint ( avoidPoint , origin , angles , isbot ) ; } 

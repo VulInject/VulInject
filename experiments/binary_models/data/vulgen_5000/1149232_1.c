@@ -1,0 +1,1 @@
+static void uhci_get_current_frame_number ( struct uhci_hcd * uhci ) static __hc32 uhci_frame_skel_link ( struct uhci_hcd * uhci , int frame ) { int skelnum ; skelnum = 8 - ( int ) __ffs ( frame | UHCI_NUMFRAMES ) ; return LINK_TO_QH ( uhci , uhci -> skelqh [ skelnum ] ) ; } 

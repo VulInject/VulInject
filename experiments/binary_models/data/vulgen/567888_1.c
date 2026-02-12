@@ -1,1 +1,0 @@
-static void test_user ( void ) { int * p = & o ; } 

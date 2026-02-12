@@ -1,0 +1,1 @@
+char term [ sizeof tpath + sizeof ( utmpx -> ut_line ) ] ; char tbuf [ BUFSIZ ] ; char nolog1 [ ] "\n\nNO LOGINS: System going down at %5.5s\n\n" ; ; char fastboot [ ] "fastboot" ; ; char fastboot [ ] "/fastboot" ; ; char nologin [ ] "/etc/nologin" ; ; time_t nowtime ; jmp_buf alarmbuf ; interval { int stogo ; int sint ; } , interval [ ] { } ; 

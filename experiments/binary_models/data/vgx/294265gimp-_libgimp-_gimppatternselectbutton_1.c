@@ -1,1 +1,0 @@
-gimp_pattern_select_button_draw ( ) { _PreviewImage image ; g_debug ( "%s" , G_STRFUNC ) ; image = gimp_pattern_select_button_get_pattern_image ( self ) ; gimp_pattern_select_preview_fill_draw ( self -> peephole_view , image ) ; } 

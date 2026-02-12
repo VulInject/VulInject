@@ -1,1 +1,0 @@
-t1_face -> face_flags |= FT_FACE_FLAG_KERNING ; face -> afm_data = fi ; fi = NULL ; FT_FRAME_EXIT ( ) ; Exit return error ; ( void ) 

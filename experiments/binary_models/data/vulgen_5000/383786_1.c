@@ -1,0 +1,1 @@
+int bench_mem_memcpy ( int argc , const char * * argv ) { int info = { . functions = memcpy_functions . do_cycles = do_memcpy_cycles . do_gettimeofday = do_memcpy_gettimeofday . usage = bench_mem_memcpy_usage . alloc_src = true } ; return bench_mem_common ( argc , argv , & info ) ; } 

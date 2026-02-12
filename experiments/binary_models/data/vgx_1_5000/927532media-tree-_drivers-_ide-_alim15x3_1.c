@@ -1,0 +1,1 @@
+static u8 ali_udma_filter ( ide_drive_t * drive ) { if ( m5229_revision > 0x20 && m5229_revision < 0xC2 ) { if ( chip_is_1543c_e && strstr ( ( char * ) & drive -> id [ ATA_ID_PROD ] , "WDC " ) ) { return 0 ; } } return drive -> hwif -> ultra_mask ; } 

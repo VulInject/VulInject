@@ -1,0 +1,1 @@
+static int intel_pstate_cpu_init ( struct cpufreq_policy * policy ) { int ret = __intel_pstate_cpu_init ( policy ) ; policy -> policy = CPUFREQ_POLICY_POWERSAVE ; if ( hwp_active ) { struct cpudata * cpu = all_cpu_data [ policy -> cpu ] ; cpu -> epp_cached = intel_pstate_get_epp ( cpu , 0 ) ; } return 0 ; } 

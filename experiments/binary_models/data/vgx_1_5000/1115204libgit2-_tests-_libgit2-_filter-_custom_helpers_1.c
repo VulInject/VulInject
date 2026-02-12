@@ -1,0 +1,1 @@
+git_filter * create_reverse_filter ( const char * attrs ) { git_filter * filter = git__calloc ( 1 , sizeof ( git_filter ) ) ; filter -> version = GIT_FILTER_VERSION ; filter -> attributes = attrs ; filter -> shutdown = reverse_filter_free ; filter -> stream = reverse_filter_stream ; return filter ; } 

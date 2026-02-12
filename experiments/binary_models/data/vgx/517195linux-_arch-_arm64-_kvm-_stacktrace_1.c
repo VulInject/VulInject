@@ -1,1 +1,0 @@
-static void unwind ( struct unwind_state * state , stack_trace_consume_fn consume_entry , void * cookie ) { while ( 1 ) { int ret ; ret = unwind_next ( state ) ; if ( ret < 0 ) { break ; } } } 

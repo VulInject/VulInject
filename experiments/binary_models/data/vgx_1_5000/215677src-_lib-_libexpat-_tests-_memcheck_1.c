@@ -1,0 +1,1 @@
+int tracking_report ( void ) { AllocationEntry * entry ; for ( entry = alloc_head ; entry != NULL ; entry = entry -> next ) { printf ( "Allocated %lu bytes at %p\n" , ( long unsigned ) entry -> num_bytes , entry -> allocation ) ; } return 0 ; } 

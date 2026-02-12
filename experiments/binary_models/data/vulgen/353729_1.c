@@ -1,1 +1,0 @@
-static void envctrl_init_globaladdr ( struct i2c_child_t * pchild ) { int i ; for ( i = 0 ; i < pchild -> total_chnls ; i ++ ) { if ( PCF8584_VOLTAGE_TYPE == pchild -> chnl_array [ i ] . type ) { pchild -> voltage_mask |= chnls_mask [ i ] ; } } } 

@@ -1,0 +1,1 @@
+void krb5_free_list_entries ( char * * list ) { for ( ; * list != NULL ; list ++ ) { free ( * list ) ; * list = NULL ; } return ; } 

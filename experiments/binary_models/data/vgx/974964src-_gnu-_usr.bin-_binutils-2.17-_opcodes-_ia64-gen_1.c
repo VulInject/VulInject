@@ -1,1 +1,0 @@
-deplist_equals ( , ) { int i ; for ( i = 0 ; i < d1 -> len ; i ++ ) { if ( d1 -> deps [ i ] != d2 -> deps [ i ] ) { return 0 ; } } return 1 ; } 

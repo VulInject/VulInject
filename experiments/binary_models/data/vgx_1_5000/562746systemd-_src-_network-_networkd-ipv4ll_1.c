@@ -1,0 +1,1 @@
+static int ipv4ll_check_mac ( sd_ipv4ll * ll , const struct ether_addr * mac , void * userdata ) { Manager * m = ASSERT_PTR ( userdata ) ; struct hw_addr_data hw_addr ; hw_addr = ( hw_addr_data ) { . length = ETH_ALEN . ether = * mac } ; return link_get_by_hw_addr ( m , & hw_addr , NULL ) >= 0 ; } 

@@ -1,0 +1,1 @@
+this -> pos = 1 ; ( fetched ) * fetched = count ; return S_OK ; 

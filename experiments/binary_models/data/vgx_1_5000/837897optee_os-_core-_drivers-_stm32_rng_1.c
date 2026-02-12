@@ -1,0 +1,1 @@
+static TEE_Result stm32_rng_release ( void ) { if ( stm32_rng && stm32_rng -> release_post_boot ) { DMSG ( "Release RNG driver" ) ; stm32_rng = NULL ; } return TEE_SUCCESS ; } 

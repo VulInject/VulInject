@@ -1,0 +1,1 @@
+static int m10bmc_sec_n3000_rsu_status ( struct m10bmc_sec * sec ) { const struct m10bmc_csr_map * csr_map = sec -> m10bmc -> info -> csr_map ; u32 doorbell ; int ret ; if ( ret ) { return ret ; } return FIELD_GET ( DRBL_RSU_STATUS , doorbell ) ; } 

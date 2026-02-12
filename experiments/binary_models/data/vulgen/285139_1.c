@@ -1,1 +1,0 @@
-GF_Err gf_filter_pid_set_framing_mode ( GF_FilterPid * pid , Bool requires_full_blocks ) { GF_FilterPidInst * pidinst = ( GF_FilterPidInst * ) pid ; pidinst -> requires_full_data_block = requires_full_blocks ; return GF_OK ; } 

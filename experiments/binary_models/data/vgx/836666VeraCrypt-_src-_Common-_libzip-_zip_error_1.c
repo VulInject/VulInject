@@ -1,1 +1,0 @@
-ZIP_EXTERN int zip_error_system_type ( const zip_error_t * error ) { return _zip_err_type [ error -> zip_err ] ; } 

@@ -1,1 +1,0 @@
-int main ( void ) { FUN1 ( VAR1 ) ; FUN1 ( VAR2 , NULL ) ; FUN1 ( VAR3 ) ; VAR4 ; }

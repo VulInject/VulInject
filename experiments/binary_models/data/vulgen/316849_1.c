@@ -1,1 +1,0 @@
-bool abrt_journal_get_int ( abrt_journal_t * journal , const char * key , int * value ) { GET_TYPED_FIELD_FROM_LONG ( journal , key , int , value ) ; } 

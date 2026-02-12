@@ -1,0 +1,1 @@
+REHASH_DB_ENTRY ( connection , that_id , . remote -> host . id ) ; void replace_connection_that_id ( struct connection * c , const struct id * src ) { struct id * dst = & c -> remote -> host . id ; passert ( dst -> name . ptr == NULL || dst -> name . ptr != src -> name . ptr ) ; free_id_content ( dst ) ; * dst = clone_id ( src , "replaing connection id" ) ; } 

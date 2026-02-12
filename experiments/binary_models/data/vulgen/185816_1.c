@@ -1,1 +1,0 @@
-int iniObjectEOL ( HINI hIni ) { if ( hIni -> hCurObject == NULL ) { return TRUE ; } return FALSE ; } 

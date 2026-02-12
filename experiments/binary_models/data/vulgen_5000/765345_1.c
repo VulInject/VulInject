@@ -1,0 +1,1 @@
+( 0 ) ; { if ( ( enet ) -> mtu_cbfn ) { void * cbfn ( struct bnad * ) cbfn = ( enet ) -> mtu_cbfn ; cbfn ( ( enet ) -> bna -> bnad ) ; } } 0 ; 

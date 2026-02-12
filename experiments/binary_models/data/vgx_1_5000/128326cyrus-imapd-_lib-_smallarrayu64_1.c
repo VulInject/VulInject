@@ -1,0 +1,1 @@
+EXPORTED void smallarrayu64_fini ( smallarrayu64_t * sa ) { if ( ! sa ) { return ; } arrayu64_fini ( & sa -> spillover ) ; sa -> count = 0 ; } 

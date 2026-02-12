@@ -1,0 +1,1 @@
+static ssize_t chp_configure_show ( struct device * dev , struct device_attribute * attr , char * buf ) { struct channel_path * cp ; int status ; cp = to_channelpath ( dev ) ; status = chp_info_get_status ( cp -> chpid ) ; return sysfs_emit ( buf , "%d\n" , status ) ; } 

@@ -1,0 +1,1 @@
+static void tce_iommu_detach_group ( void * iommu_data , struct iommu_group * iommu_group ) tce_iommu_group { struct list_head next ; struct iommu_group * grp ; } tce_iommu_prereg { struct list_head next ; } 

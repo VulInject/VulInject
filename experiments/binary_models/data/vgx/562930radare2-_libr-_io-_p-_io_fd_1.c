@@ -1,1 +1,0 @@
-static bool __resize ( RIO * io , RIODesc * desc , ut64 count ) { RIOFdata * fdd = ( RIOFdata * ) desc -> data ; return false ; } 

@@ -1,0 +1,1 @@
+void ia_css_sdis2_horiproj_encode ( struct sh_css_isp_sdis_hori_proj_tbl * to , const struct ia_css_dvs2_coefficients * from , unsigned int size ) { ( void ) from ; ( void ) size ; } 

@@ -1,0 +1,1 @@
+struct mk_fifo_queue * mk_fifo_queue_get ( struct mk_fifo * ctx , int id ) { struct mk_list * head ; struct mk_fifo_queue * q = NULL ; mk_list_foreach ( , ) { q = mk_list_entry ( head , mk_fifo_queue , _head ) ; } return NULL ; } 

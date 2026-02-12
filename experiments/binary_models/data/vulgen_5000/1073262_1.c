@@ -1,0 +1,1 @@
+u_char * sys_tun_outfilter ( struct ssh * ssh , struct Channel * c , u_char * * data , size_t * dlen ) { u_char * buf ; u_int32_t af ; int r ; if ( * dlen < sizeof ( af ) ) { return ( NULL ) ; } buf = * data ; * dlen -= sizeof ( af ) ; buf = * data + sizeof ( af ) ; af = ( PEEK_U32 ( buf ) == OPENBSD_AF_INET6 ) ?AF_INET6 : AF_INET ; POKE_U32 ( buf , af ) ; return ( buf ) ; } 

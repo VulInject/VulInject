@@ -1,0 +1,1 @@
+int tcl_list_apply_cfg ( struct tcl_list * tcl , struct config_file * cfg ) { regional_free_all ( tcl -> region ) ; addr_tree_init ( & tcl -> tree ) ; addr_tree_init_parents ( & tcl -> tree ) ; return 1 ; } 

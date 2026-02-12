@@ -1,0 +1,1 @@
+sss_status_t glue_mac_context_init ( void * * mac , const uint8_t * key , size_t len ) { if ( crypto_mac_init ( * mac , key , len ) ) { return kStatus_SSS_Fail ; } return kStatus_SSS_Success ; } 

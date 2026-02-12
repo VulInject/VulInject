@@ -1,0 +1,1 @@
+static long mdp4_round_pixclk ( struct msm_kms * kms , unsigned long rate , struct drm_encoder * encoder ) { switch ( encoder -> encoder_type ) { case DRM_MODE_ENCODER_TMDS : return mdp4_dtv_round_pixclk ( encoder , rate ) ; case DRM_MODE_ENCODER_LVDS : case DRM_MODE_ENCODER_DSI : return rate ; } } static const char * const iommu_ports [ ] { "mdp_port0_cb0" "mdp_port1_cb0" } ; ; 

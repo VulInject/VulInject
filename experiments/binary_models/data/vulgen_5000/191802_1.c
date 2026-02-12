@@ -1,0 +1,1 @@
+void i2400mu_notification_release ( struct i2400mu * i2400mu ) { struct device * dev = & i2400mu -> usb_iface -> dev ; d_fnstart ( 4 , dev , "(i2400mu %p)\n" , i2400mu ) ; if ( i2400mu -> notif_urb != NULL ) { usb_kill_urb ( i2400mu -> notif_urb ) ; usb_free_urb ( i2400mu -> notif_urb ) ; i2400mu -> notif_urb = NULL ; } d_fnend ( 4 , dev , "(i2400mu %p)\n" , i2400mu ) ; } 

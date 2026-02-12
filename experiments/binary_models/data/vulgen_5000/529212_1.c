@@ -1,0 +1,1 @@
+static void das16m1_detach ( struct comedi_device * dev ) { struct das16m1_private * devpriv = dev -> private ; if ( devpriv ) { kfree ( devpriv -> counter ) ; } comedi_legacy_detach ( dev ) ; } static struct comedi_driver das16m1_driver = { . driver_name = "das16m1" . module = THIS_MODULE . attach = das16m1_attach . detach = das16m1_detach } ; 

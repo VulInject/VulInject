@@ -1,1 +1,0 @@
-static void sha224_wrap ( const unsigned char * input , size_t ilen , unsigned char * output ) { mbedtls_sha256 ( input , ilen , output , 0 ) ; } 

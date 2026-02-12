@@ -1,0 +1,1 @@
+static void fdomain_detach ( struct pcmcia_device * link ) { dev_dbg ( & link -> dev , "fdomain_detach\n" ) ; kfree ( link -> priv ) ; } 

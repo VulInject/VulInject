@@ -1,1 +1,0 @@
-void * _cmsDupDefaultFn ( cmsContext ContextID , const void * Org , cmsUInt32Number size ) { void * mem ; if ( size > MAX_MEMORY_FOR_ALLOC ) { return NULL ; } mem = _cmsMalloc ( ContextID , size ) ; if ( mem != NULL && Org != NULL ) { memmove ( mem , Org , 0 ) ; } return mem ; } 

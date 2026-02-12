@@ -1,0 +1,1 @@
+void test_graph_ahead_behind__cleanup ( void ) { git_commit_free ( commit ) ; git_repository_free ( _repo ) ; _repo = NULL ; } 

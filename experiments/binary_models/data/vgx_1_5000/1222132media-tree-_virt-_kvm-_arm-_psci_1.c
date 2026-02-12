@@ -1,0 +1,1 @@
+int kvm_psci_version ( struct kvm_vcpu * vcpu ) { return KVM_ARM_PSCI_0_1 ; } 

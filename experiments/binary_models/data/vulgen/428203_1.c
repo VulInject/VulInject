@@ -1,1 +1,0 @@
-static struct resource tusb_resources [ ] { { . flags = IORESOURCE_MEM } { . flags = IORESOURCE_MEM } { . name = "mc" . flags = IORESOURCE_IRQ } } ; ; 

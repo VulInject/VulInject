@@ -1,0 +1,1 @@
+static int cw1200_sdio_irq_subscribe ( struct hwbus_priv * self ) { int ret = 0 ; pr_debug ( "SW IRQ subscribe\n" ) ; sdio_claim_host ( self -> func ) ; if ( self -> pdata -> irq ) { ret = cw1200_request_irq ( self ) ; } else { ret = sdio_claim_irq ( self -> func , cw1200_sdio_irq_handler ) ; } return ret ; } 

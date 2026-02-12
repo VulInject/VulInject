@@ -1,0 +1,1 @@
+struct udevice * cpu_get_current_dev ( void ) { struct udevice * cpu ; int ret ; uclass_foreach_dev_probe ( , ) { if ( cpu_is_current ( cpu ) > 0 ) { return cpu ; } } if ( ret ) { debug ( "%s: Could not get CPU device (err = %d)\n" , __func__ , ret ) ; return NULL ; } return cpu ; } 

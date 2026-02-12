@@ -1,0 +1,1 @@
+static void csio_wr_cleanup_eq_stpg ( struct csio_hw * hw , int qidx ) { struct csio_q * q = csio_hw_to_wrm ( hw ) -> q_arr [ qidx ] ; struct csio_qstatus_page * stp = ( csio_qstatus_page * ) q -> vwrap ; } 

@@ -1,1 +1,0 @@
-struct acpi_softc * sc_acpi ; struct aml_node * sc_devnode ; struct ksensor sc_sensor ; struct sensor_task * sc_sensor_task ; 

@@ -1,0 +1,1 @@
+static int caam_rng_probe ( struct udevice * dev ) { struct caam_rng_priv * priv = dev_get_priv ( dev ) ; inline_cnstr_jobdesc_rng ( priv -> desc , priv -> data , CAAM_RNG_MAX_FIFO_STORE_SIZE ) ; flush_dcache_range ( ( unsigned long ) priv -> desc , ( unsigned long ) priv -> desc + size ) ; return 0 ; } 

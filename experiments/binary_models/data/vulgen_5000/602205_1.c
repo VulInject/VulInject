@@ -1,0 +1,1 @@
+static int __fill_rpmh_msg ( struct rpmh_request * req , enum rpmh_state state , const struct tcs_cmd * cmd , u32 n ) { memcpy ( req -> cmd , cmd , n * sizeof ( * cmd ) ) ; req -> msg . state = state ; req -> msg . cmds = req -> cmd ; req -> msg . num_cmds = n ; return 0 ; } 

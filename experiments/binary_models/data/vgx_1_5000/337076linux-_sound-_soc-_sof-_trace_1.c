@@ -1,0 +1,1 @@
+int sof_fw_trace_resume ( struct snd_sof_dev * sdev ) { return sdev -> ipc -> ops -> fw_tracing -> resume ( sdev ) ; } 

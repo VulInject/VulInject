@@ -1,0 +1,1 @@
+static int __init iq80332_pci_map_irq ( const struct pci_dev * dev , u8 slot , u8 pin ) { int irq ; return irq ; } static struct hw_pci iq80332_pci __initdata = { . nr_controllers = 1 . ops = & iop3xx_ops . setup = iop3xx_pci_setup . preinit = iop3xx_pci_preinit_cond . map_irq = iq80332_pci_map_irq } ; 

@@ -1,0 +1,1 @@
+static bool omap_crtc_is_pending ( struct drm_crtc * crtc ) { struct omap_crtc * omap_crtc = to_omap_crtc ( crtc ) ; unsigned long flags ; bool pending ; pending = omap_crtc -> pending ; spin_unlock_irqrestore ( & crtc -> dev -> event_lock , flags ) ; return pending ; } 

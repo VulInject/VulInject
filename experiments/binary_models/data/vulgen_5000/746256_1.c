@@ -1,0 +1,1 @@
+int toshiba_match ( struct device * parent , void * match , void * aux ) { struct acpi_attach_args * aa = aux ; struct cfdata * cf = match ; if ( acpi_matchhids ( aa , acpitoshiba_hids , cf -> cf_driver -> cd_name ) ) { return ( 1 ) ; } return ( 1 ) ; } 

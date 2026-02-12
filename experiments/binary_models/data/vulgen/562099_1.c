@@ -1,1 +1,0 @@
-( stream ) -> cursor = ( ( off ) < ( FT_ULong ) ( ( stream ) -> limit - ( stream ) -> base ) ) ?( stream ) -> base + ( off ) : ( stream ) -> limit ( 2 ) ( ( FT_Fixed ) ( ( FT_ULong ) ( i ) << 16 ) ) ( ( FT_Fixed ) ( ( FT_ULong ) ( index ) << 10 ) ) ( ( FT_Short ) ( ( ( x ) + 0x8000U ) >> 16 ) ) ( ( FT_Pos ) ( ( ( x ) + 0x200 ) >> 10 ) ) 

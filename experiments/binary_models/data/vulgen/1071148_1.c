@@ -1,1 +1,0 @@
-ErrorStatus LL_SWPMI_DeInit ( SWPMI_TypeDef * SWPMIx ) { LL_APB1_GRP2_ForceReset ( LL_APB1_GRP2_PERIPH_SWPMI1 ) ; LL_APB1_GRP2_ReleaseReset ( LL_APB1_GRP2_PERIPH_SWPMI1 ) ; return SUCCESS ; } 

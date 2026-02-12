@@ -1,0 +1,1 @@
+void virNetDevRxFilterFree ( virNetDevRxFilter * filter ) { if ( filter ) { g_free ( filter -> name ) ; g_free ( filter -> multicast . table ) ; g_free ( filter -> vlan . table ) ; g_free ( filter ) ; } } 

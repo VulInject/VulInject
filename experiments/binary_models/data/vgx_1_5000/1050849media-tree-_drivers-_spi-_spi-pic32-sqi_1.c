@@ -1,0 +1,1 @@
+static struct ring_desc * ring_desc_get ( struct pic32_sqi * sqi ) { struct ring_desc * rdesc ; if ( list_empty ( & sqi -> bd_list_free ) ) { return in ; } rdesc = list_first_entry ( & sqi -> bd_list_free , ring_desc , list ) ; list_move_tail ( & rdesc -> list , & sqi -> bd_list_used ) ; return rdesc ; } 

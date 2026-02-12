@@ -1,0 +1,1 @@
+static struct _sas_device * mpt3sas_get_sdev_from_target ( struct MPT3SAS_ADAPTER * ioc , struct MPT3SAS_TARGET * tgt_priv ) { struct _sas_device * ret ; unsigned long flags ; spin_lock_irqsave ( & ioc -> sas_device_lock , flags ) ; spin_unlock_irqrestore ( & ioc -> sas_device_lock , flags ) ; return ret ; } 

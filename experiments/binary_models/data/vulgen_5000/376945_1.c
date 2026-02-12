@@ -1,0 +1,1 @@
+STATIC ssize_t drop_writes_store ( struct kobject * kobject , const char * buf , size_t count ) { struct xfs_mount * mp = to_mp ( kobject ) ; int ret ; int val ; if ( ret ) { return ret ; } if ( val == 1 ) { mp -> m_drop_writes = true ; } if ( val == 0 ) { mp -> m_drop_writes = false ; } else { return - EINVAL ; } return count ; } 

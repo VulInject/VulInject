@@ -1,1 +1,0 @@
-static void dw_hdmi_phy_enable_tmds ( struct dw_hdmi * hdmi , u8 enable ) { } 

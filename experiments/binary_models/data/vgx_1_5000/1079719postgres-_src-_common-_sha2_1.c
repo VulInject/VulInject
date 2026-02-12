@@ -1,0 +1,1 @@
+void pg_sha256_init ( pg_sha256_ctx * context ) { if ( context == NULL ) { return ; } memcpy ( context -> state , sha256_initial_hash_value , PG_SHA256_DIGEST_LENGTH ) ; context -> bitcount = 0 ; } 

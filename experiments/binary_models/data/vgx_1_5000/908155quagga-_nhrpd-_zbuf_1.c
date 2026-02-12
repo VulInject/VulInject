@@ -1,0 +1,1 @@
+void zbufq_reset ( struct zbuf_queue * zbq ) { struct zbuf * buf , * bufn ; list_for_each_entry_safe ( , , , ) { list_del ( & buf -> queue_list ) ; } } 

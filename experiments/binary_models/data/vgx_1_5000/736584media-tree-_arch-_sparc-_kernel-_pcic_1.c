@@ -1,0 +1,1 @@
+static int __init pcic_init ( void ) { struct linux_pcic * pcic ; pcic = & pcic0 ; writeb ( PCI_DVMA_CONTROL_IOTLB_DISABLE , pcic -> pcic_regs + PCI_DVMA_CONTROL ) ; writel ( 0xF0000000UL , pcic -> pcic_regs + PCI_SIZE_0 ) ; writel ( 0 + PCI_BASE_ADDRESS_SPACE_MEMORY , pcic -> pcic_regs + PCI_BASE_ADDRESS_0 ) ; pcic_pbm_scan_bus ( pcic ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static int testacpi_fill_ssdt ( const struct udevice * dev , struct acpi_ctx * ctx ) { const char * data ; if ( data ) { while ( * data ) { acpigen_emit_byte ( ctx , * data ++ ) ; } } return 0 ; } 

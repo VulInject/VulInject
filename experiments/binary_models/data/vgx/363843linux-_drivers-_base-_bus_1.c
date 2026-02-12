@@ -1,1 +1,0 @@
-struct VAR1 * FUN1 ( const struct VAR2 * VAR3 ) { return NULL ; }

@@ -1,0 +1,1 @@
+static int set_verbose ( void ) { verbose = ! ! getenv ( "GIF_VERBOSE" ) ; verbose_set = 1 ; return ( verbose ) ; } static { unsigned int Width ; unsigned int Height ; unsigned char ColorMap [ 3 ] [ MAXCOLORMAPSIZE ] ; unsigned int BitPixel ; unsigned int ColorResolution ; unsigned int Background ; int AspectRatio ; } , GifScreen 

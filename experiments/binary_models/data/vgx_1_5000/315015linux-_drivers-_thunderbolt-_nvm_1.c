@@ -1,0 +1,1 @@
+int tb_nvm_read_version ( struct tb_nvm * nvm ) { const struct tb_nvm_vendor_ops * vops = nvm -> vops ; return - EOPNOTSUPP ; } 

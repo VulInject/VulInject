@@ -1,0 +1,1 @@
+static int it913x_remove ( struct platform_device * pdev ) { struct it913x_dev * dev = platform_get_drvdata ( pdev ) ; struct dvb_frontend * fe = dev -> fe ; dev_dbg ( & pdev -> dev , "\n" ) ; memset ( & fe -> ops . tuner_ops , 0 , sizeof ( dvb_tuner_ops ) ) ; fe -> tuner_priv = NULL ; return 0 ; } 

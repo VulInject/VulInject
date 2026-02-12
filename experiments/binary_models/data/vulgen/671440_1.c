@@ -1,1 +1,0 @@
-char * copylist64 ( const char * filenm , off64_t * szptr ) { struct stat64 stbuf ; * szptr = stbuf . st_size ; return ( common_copylist ( filenm , stbuf . st_size ) ) ; } 

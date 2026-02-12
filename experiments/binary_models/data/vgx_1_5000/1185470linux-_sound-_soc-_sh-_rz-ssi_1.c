@@ -1,0 +1,1 @@
+static void rz_ssi_release_dma_channels ( struct rz_ssi_priv * ssi ) { if ( ssi -> playback . dma_ch ) { dma_release_channel ( ssi -> playback . dma_ch ) ; if ( ssi -> dma_rt ) { ssi -> dma_rt = false ; } } if ( ssi -> capture . dma_ch ) { dma_release_channel ( ssi -> capture . dma_ch ) ; ssi -> capture . dma_ch = NULL ; } } 

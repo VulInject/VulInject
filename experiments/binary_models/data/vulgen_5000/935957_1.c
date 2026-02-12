@@ -1,0 +1,1 @@
+static int mes_v10_1_hw_fini ( void * handle ) static int mes_v10_1_kiq_hw_init ( struct amdgpu_device * adev ) static void mes_v10_1_ring_set_wptr ( struct amdgpu_ring * ring ) { struct amdgpu_device * adev = ring -> adev ; if ( ring -> use_doorbell ) { atomic64_set ( ( atomic64_t * ) ring -> wptr_cpu_addr , ring -> wptr ) ; } else { BUG ( ) ; } } 

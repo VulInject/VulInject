@@ -1,1 +1,0 @@
-void PNGCBAPI png_default_write_data ( png_structp png_ptr , png_bytep data , png_size_t length ) { png_size_t check ; if ( png_ptr == NULL ) { return ; } if ( check != length ) { png_error ( png_ptr , "Write Error" ) ; } } 

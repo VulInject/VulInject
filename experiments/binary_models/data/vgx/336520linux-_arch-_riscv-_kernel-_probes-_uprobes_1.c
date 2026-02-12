@@ -1,1 +1,0 @@
-bool arch_uprobe_xol_was_trapped ( struct task_struct * t ) { return false ; } 

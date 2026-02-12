@@ -1,1 +1,0 @@
-size_t sadd ( size_t l , size_t r ) { size_t t ; t = l + r ; return t ; } 

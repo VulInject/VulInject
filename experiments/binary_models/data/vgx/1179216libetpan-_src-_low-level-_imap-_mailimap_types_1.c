@@ -1,1 +1,0 @@
-struct VAR1 * FUN1 ( int VAR2 , struct VAR3 * VAR4 ) { struct VAR1 * VAR5 ; VAR5 = malloc ( sizeof ( * VAR5 ) ) ; VAR5 -> VAR2 = VAR2 ; VAR5 -> VAR4 = VAR4 ; return VAR5 ; }

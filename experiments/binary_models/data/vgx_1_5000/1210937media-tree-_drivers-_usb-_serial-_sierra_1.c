@@ -1,0 +1,1 @@
+static void sierra_release_urb ( struct urb * urb ) { if ( urb ) { kfree ( urb -> transfer_buffer ) ; } } 

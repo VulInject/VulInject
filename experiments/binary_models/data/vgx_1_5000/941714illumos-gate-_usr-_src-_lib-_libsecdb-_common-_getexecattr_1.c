@@ -1,0 +1,1 @@
+void free_execattr ( execattr_t * exec ) { if ( exec != NULL ) { free ( exec -> name ) ; free ( exec -> type ) ; free ( exec -> policy ) ; free ( exec -> res2 ) ; free ( exec -> id ) ; _kva_free ( exec -> attr ) ; free_execattr ( exec -> next ) ; free ( exec ) ; } } 

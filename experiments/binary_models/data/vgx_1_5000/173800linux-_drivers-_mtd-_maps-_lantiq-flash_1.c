@@ -1,0 +1,1 @@
+static int ltq_mtd_remove ( struct platform_device * pdev ) { struct ltq_mtd * ltq_mtd = platform_get_drvdata ( pdev ) ; if ( ltq_mtd && ltq_mtd -> mtd ) { mtd_device_unregister ( ltq_mtd -> mtd , NULL ) ; map_destroy ( ltq_mtd -> mtd ) ; } return 0 ; } static const struct of_device_id ltq_mtd_match [ ] { { . compatible = "lantiq,nor" } { } } ; ; 

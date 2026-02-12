@@ -1,0 +1,1 @@
+void zpci_debug_exit_device ( struct zpci_dev * zdev ) { debugfs_remove ( zdev -> debugfs_perf , NULL ) ; debugfs_remove ( zdev -> debugfs_dev ) ; } 

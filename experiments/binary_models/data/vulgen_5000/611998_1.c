@@ -1,0 +1,1 @@
+void smp_bogo ( struct seq_file * m ) { int i ; { seq_printf ( m , "Cpu%dBogo\t: %lu.%02lu\n" , i , cpu_data ( i ) . udelay_val / ( 500000 / HZ ) , ( cpu_data ( i ) . udelay_val / ( 5000 / HZ ) ) % 100 ) ; } } 

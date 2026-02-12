@@ -1,0 +1,1 @@
+static struct clk_alpha_pll lpass_audio_cc_pll = { . offset = 0x0 . vco_table = zonda_vco . num_vco = ARRAY_SIZE ( ) . regs = clk_alpha_pll_regs [ CLK_ALPHA_PLL_TYPE_ZONDA ] . clkr = { . hw . init = & ( const clk_init_data ) { . name = "lpass_audio_cc_pll" . parent_data = & ( const clk_parent_data ) { . index = 0 } . num_parents = 1 . ops = & clk_alpha_pll_zonda_ops } } } ; 

@@ -1,1 +1,0 @@
-static void setup_engine ( void ) { static int already_setup = 0 ; if ( ! already_setup ) { setup_meta ( ) ; } } 

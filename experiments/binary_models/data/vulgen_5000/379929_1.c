@@ -1,0 +1,1 @@
+static void root_free_rcu ( struct rcu_head * rcu ) { struct allowedips_node * node , * stack [ MAX_ALLOWEDIPS_BITS ] { container_of ( , , ) } ; ; unsigned int len = 1 ; while ( len > 0 && ( node = stack [ -- len ] ) ) { push_rcu ( stack , node -> bit [ 0 ] , & len ) ; push_rcu ( stack , node -> bit [ 1 ] , & len ) ; } } 

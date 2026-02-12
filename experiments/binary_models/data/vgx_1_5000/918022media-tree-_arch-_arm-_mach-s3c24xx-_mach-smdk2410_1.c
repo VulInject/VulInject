@@ -1,0 +1,1 @@
+static void __init smdk2410_init ( void ) { s3c_i2c0_set_platdata ( NULL , NULL ) ; platform_add_devices ( smdk2410_devices , ARRAY_SIZE ( smdk2410_devices ) ) ; smdk_machine_init ( ) ; } 

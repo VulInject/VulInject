@@ -1,0 +1,1 @@
+( poly1305_update_arch ) ; void poly1305_final_arch ( struct poly1305_desc_ctx * dctx , u8 * dst ) { if ( unlikely ( dctx -> buflen ) ) { dctx -> buf [ dctx -> buflen ++ ] = 1 ; poly1305_blocks_arm ( & dctx -> h , dctx -> buf , POLY1305_BLOCK_SIZE , 0 ) ; } poly1305_emit_arm ( & dctx -> h , dst , dctx -> s ) ; * dctx = ( poly1305_desc_ctx ) { } ; } 

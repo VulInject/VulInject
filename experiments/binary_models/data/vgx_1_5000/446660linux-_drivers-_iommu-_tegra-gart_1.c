@@ -1,0 +1,1 @@
+static inline unsigned long gart_read_pte ( struct gart_device * gart , unsigned long iova ) { cfs_time_t pte ; writel_relaxed ( iova , gart -> regs + GART_ENTRY_ADDR ) ; pte = readl_relaxed ( gart -> regs + GART_ENTRY_DATA ) ; return pte ; } 

@@ -1,1 +1,0 @@
-static sigset_t sigs ; static int sigsinit ; static int sigvalid ( int sig ) { if ( ! sigsinit ) { ( void ) __sigfillset ( & sigs ) ; sigsinit ++ ; } return ( ( sigs . __sigbits [ sigword ( sig ) ] & bitmask ( sig ) ) != 0 ) ; } 

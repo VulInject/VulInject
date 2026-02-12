@@ -1,0 +1,1 @@
+static void vr41xx_rtc_release ( struct device * dev ) { spin_lock_irq ( & rtc_lock ) ; rtc1_write ( ECMPLREG , 0 ) ; rtc1_write ( ECMPMREG , 0 ) ; rtc1_write ( ECMPHREG , 0 ) ; rtc1_write ( RTCL1LREG , 0 ) ; rtc1_write ( RTCL1HREG , 0 ) ; spin_unlock_irq ( & rtc_lock ) ; disable_irq ( aie_irq , NULL ) ; disable_irq ( pie_irq ) ; } 

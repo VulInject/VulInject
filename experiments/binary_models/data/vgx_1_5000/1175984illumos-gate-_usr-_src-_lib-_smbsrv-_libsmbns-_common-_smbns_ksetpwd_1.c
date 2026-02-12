@@ -1,0 +1,1 @@
+static smb_krb5_pn_t * smb_krb5_lookup_pn ( smb_krb5_pn_id_t id ) { int i ; smb_krb5_pn_t * tabent ; for ( i = 0 ; i < SMB_KRB5_SPN_TAB_SZ ; i ++ ) { tabent = & smb_krb5_pn_tab [ i ] ; } return ( NULL ) ; } 

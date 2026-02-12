@@ -1,0 +1,1 @@
+( eeprom_93cx6_readb ) ; void eeprom_93cx6_multireadb ( struct eeprom_93cx6 * eeprom , const u8 byte , u8 * data , const u16 bytes ) { unsigned int i ; for ( i = 0 ; i < bytes ; i ++ ) { eeprom_93cx6_readb ( eeprom , byte + i , 0 ) ; } } 

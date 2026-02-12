@@ -1,1 +1,0 @@
-static int rk8xx_read ( struct udevice * dev , uint reg , uint8_t * buff , int len ) { int ret ; if ( ret ) { debug ( "read error from device: %p register: %#x!\n" , dev , reg ) ; return ret ; } return 0 ; } 

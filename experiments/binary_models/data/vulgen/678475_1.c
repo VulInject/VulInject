@@ -1,1 +1,0 @@
-int extban_partmsg_is_banned ( BanContext * b ) { return 0 ; } 

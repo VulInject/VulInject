@@ -1,1 +1,0 @@
-int FUN1(int VAR1, uint16_t VAR2, uint16_t VAR3, bool VAR4) { return -VAR5; }

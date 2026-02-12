@@ -1,0 +1,1 @@
+static inline int pid_split ( unsigned int pid , unsigned int * upper1 , unsigned int * upper2 , unsigned int * lower ) { BUILD_BUG_ON ( MAX_PID < PID_MAX_LIMIT ) ; * upper1 = ( pid >> UPPER1_SHIFT ) & UPPER_MASK ; * upper2 = ( pid >> UPPER2_SHIFT ) & UPPER_MASK ; * lower = pid & LOWER_MASK ; return 0 ; } 

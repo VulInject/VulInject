@@ -1,0 +1,1 @@
+* SUCH DAMAGE . * * citrus Id : wcsncat . c , v 1.1 1999 / 12 / 29 21 : 47 : 45 tshiozak Exp * / wchar_t * wcsncat ( , , ) { wchar_t * p wchar_t * q const wchar_t * r p = s1 while ( * p ) { p ++ ; } q = p } ; r = s2 ; while ( * r && n ) { * q ++ = * r ++ ; } * q = '\0' ; return s1 ; 

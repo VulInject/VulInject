@@ -1,1 +1,0 @@
-mcd_azure_imds_request_destroy ( ) { BSON_ASSERT_PARAM ( req ) ; bson_free ( req -> _owned_path ) ; bson_free ( req -> _owned_host ) ; bson_free ( req -> _owned_headers ) ; } 

@@ -1,0 +1,1 @@
+struct kdtree * kd_create ( ) { struct kdtree * tree ; if ( ! ( tree = malloc ( sizeof tree ) ) ) { return 0 ; } tree -> destr = 0 ; tree -> rect = 0 ; return tree ; } 

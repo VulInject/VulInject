@@ -1,1 +1,0 @@
-static void random_recv_done ( struct virtqueue * vq ) { struct virtrng_info * vi = vq -> vdev -> priv ; complete ( & vi -> have_data ) ; } 

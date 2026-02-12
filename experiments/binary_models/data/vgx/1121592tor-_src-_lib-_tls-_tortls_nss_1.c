@@ -1,1 +1,0 @@
-void tor_tls_get_state_description ( tor_tls_t * tls , char * buf , size_t sz ) { ( void ) tls ; ( void ) buf ; ( void ) sz ; } 

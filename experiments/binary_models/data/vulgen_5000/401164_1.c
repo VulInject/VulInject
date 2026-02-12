@@ -1,0 +1,1 @@
+static void ixgbevf_clear_msg_vf ( struct ixgbe_hw * hw ) { if ( vf_mailbox & IXGBE_VFMAILBOX_PFSTS ) { hw -> mbx . stats . reqs ++ ; hw -> mbx . vf_mailbox &= ~ IXGBE_VFMAILBOX_PFSTS ; } } 

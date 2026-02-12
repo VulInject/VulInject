@@ -1,0 +1,1 @@
+void hostap_check_sta_fw_version ( struct ap_data * ap , int sta_fw_ver ) { if ( ! ap ) { return ; } if ( sta_fw_ver == PRISM2_FW_VER ( 0 , 8 , 0 ) ) { PDEBUG ( DEBUG_AP , "Using data::nullfunc ACK workaround - " "firmware upgrade recommended\n" ) ; ap -> nullfunc_ack = 1 ; } else { ap -> nullfunc_ack = 0 ; } } 

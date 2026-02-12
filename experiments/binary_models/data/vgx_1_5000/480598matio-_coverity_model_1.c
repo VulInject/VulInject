@@ -1,0 +1,1 @@
+int inflateCopy ( z_stream * dest , z_stream * source ) { dest -> state = __coverity_alloc__ ( 10 ) ; __coverity_mark_as_afm_allocated__ ( dest -> state , "inflateEnd" ) ; __coverity_writeall__ ( dest , NULL ) ; return 0 ; } 

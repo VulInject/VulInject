@@ -1,0 +1,1 @@
+int process_write_fpregs ( struct proc * p , struct fpreg * fpregs ) { if ( CPU_IS_SH4 ) { struct pcb * pcb = p -> p_md . md_pcb ; if ( p == curproc ) { fpu_restore ( & pcb -> pcb_fp ) ; } } if ( CPU_IS_SH3 ) { return ( EINVAL ) ; } return ( 0 ) ; } 

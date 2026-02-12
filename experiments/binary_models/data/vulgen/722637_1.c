@@ -1,1 +1,0 @@
-static int getlkcnt ( void ) { int cntread ; int lkcnt ; cntread = ( int ) read ( lkfilefd , & lkcnt , sizeof ( int ) ) ; return ( lkcnt ) ; } 

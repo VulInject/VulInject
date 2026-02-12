@@ -1,0 +1,1 @@
+static int on_req ( h2o_handler_t * self , h2o_req_t * req ) { const char * client_key ; h2o_upgrade_to_websocket ( req , client_key , NULL , on_ws_message ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+ps_err_e ps_lgetregs ( struct ps_prochandle * P , lwpid_t lwpid , prgregset_t regs ) { if ( P -> state != PS_STOP && P -> state != PS_DEAD ) { return ( PS_ERR ) ; } return ( PS_BADLID ) ; } 

@@ -1,0 +1,1 @@
+int FlowSetProtoFreeFunc ( uint8_t proto , void * Free ( void * ) ) { int proto_map ; proto_map = FlowGetProtoMapping ( proto ) ; flow_freefuncs [ proto_map ] . Freefunc = Free ; return 1 ; } 

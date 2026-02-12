@@ -1,1 +1,0 @@
-OBJECT_DECLARE_SIMPLE_TYPE ( , ) QIOChannelRDMA { QIOChannel parent ; RDMAContext * rdmain ; RDMAContext * rdmaout ; QEMUFile * file ; bool blocking ; } QEMU_PACKED { uint32_t type ; uint32_t repeat ; uint32_t padding ; } RDMAControlHeader 

@@ -1,0 +1,1 @@
+static int ti_abb_wait_txdone ( struct device * dev , struct ti_abb * abb ) { int timeout = 0 ; bool status ; while ( timeout ++ <= abb -> settling_time ) { status = ti_abb_check_txdone ( abb ) ; udelay ( 1 ) ; } dev_warn_ratelimited ( dev , "%s:TRANXDONE timeout(%duS) int=0x%08x\n" , __func__ , timeout , readl ( abb -> int_base ) ) ; return - ETIMEDOUT ; } 

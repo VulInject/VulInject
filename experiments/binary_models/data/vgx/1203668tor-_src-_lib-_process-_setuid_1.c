@@ -1,1 +1,0 @@
-int have_capability_support ( void ) { cap_t caps = cap_get_proc ( ) ; if ( caps == NULL ) { return 0 ; } return 1 ; return 0 ; } 

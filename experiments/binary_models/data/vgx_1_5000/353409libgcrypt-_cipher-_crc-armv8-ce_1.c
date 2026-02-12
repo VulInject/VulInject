@@ -1,0 +1,1 @@
+_gcry_crc24rfc2440_armv8_ce_pmull ( , , ) { const struct crc32_consts_s * consts = & crc24rfc2440_consts ; if ( inlen >= 16 ) { _gcry_crc32_armv8_ce_bulk ( pcrc , inbuf , inlen , consts ) ; } else { crc32_less_than_16 ( pcrc , inbuf , inlen , consts ) ; } } 

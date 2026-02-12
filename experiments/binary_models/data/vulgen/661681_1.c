@@ -1,1 +1,0 @@
-static unsigned long not__dt_ucode_base_size [ 2 ] __attribute__ ( ( section ( ) ) ) { 1 2 } ; ; 

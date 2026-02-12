@@ -1,0 +1,1 @@
+const char * lldp_print_addr ( int af , const void * addr ) { static char buf [ 48 ] ; return ( buf ) ; } 

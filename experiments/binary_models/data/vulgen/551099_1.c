@@ -1,1 +1,0 @@
-void msSHPClose ( SHPHandle psSHP ) { if ( psSHP -> bUpdated ) { writeHeader ( psSHP ) ; } free ( psSHP -> panRecOffset ) ; free ( psSHP -> panRecSize ) ; free ( psSHP -> panRecLoaded ) ; free ( psSHP -> pabyRec ) ; VSIFCloseL ( psSHP -> fpSHX ) ; VSIFCloseL ( psSHP -> fpSHP ) ; free ( psSHP ) ; } 

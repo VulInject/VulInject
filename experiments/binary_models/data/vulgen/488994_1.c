@@ -1,1 +1,0 @@
-static inline uint64_t cvmx_pcie_get_mem_size ( int pcie_port ) { return 1ull << 36 ; } 

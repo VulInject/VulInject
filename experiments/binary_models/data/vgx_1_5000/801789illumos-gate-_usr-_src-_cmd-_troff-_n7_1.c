@@ -1,0 +1,1 @@
+int findn1 ( a ) int a ; { int i , j ; for ( i = 0 ; i < NTRAP ; i ++ ) { if ( mlist [ i ] ) { if ( ( j = nlist [ i ] ) < 0 ) { j += pl ; } } } return ( i ) ; } 

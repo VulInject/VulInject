@@ -1,0 +1,1 @@
+bool wfx_tx_queues_has_cab ( struct wfx_vif * wvif ) { struct ieee80211_vif * vif = wvif_to_vif ( wvif ) ; int i ; for ( i = 0 ; i < IEEE80211_NUM_ACS ; ++ i ) { if ( ! skb_queue_empty_lockless ( & wvif -> tx_queue [ i ] . cab ) ) { return true ; } } return false ; } 

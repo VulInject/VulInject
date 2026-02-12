@@ -1,1 +1,0 @@
-static int rproc_remove_virtio_dev ( struct device * dev , void * data ) { struct virtio_device * vdev = dev_to_virtio ( dev ) ; return 0 ; } 

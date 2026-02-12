@@ -1,1 +1,0 @@
-static const VAR1 *FUN1(const VAR1 *VAR2) { return VAR2 ? NULL : &VAR3; }

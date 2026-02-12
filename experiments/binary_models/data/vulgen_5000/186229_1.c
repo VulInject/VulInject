@@ -1,0 +1,1 @@
+errcode_t ext2fs_dir_iterate ( ext2_filsys fs , ext2_ino_t dir , int flags , char * block_buf , int * func ( struct ext2_dir_entry * dirent , int offset , int blocksize , char * buf , void * priv_data ) , void * priv_data ) { struct xlate xl ; xl . real_private = priv_data ; return ext2fs_dir_iterate2 ( fs , dir , flags , block_buf , xlate_func , & xl ) ; } 

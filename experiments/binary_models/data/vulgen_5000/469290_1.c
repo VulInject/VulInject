@@ -1,0 +1,1 @@
+static int ucs1002_get_online ( struct ucs1002_info * info , union power_supply_propval * val ) { unsigned int reg ; int ret ; ret = regmap_read ( info -> regmap , UCS1002_REG_OTHER_STATUS , & reg ) ; if ( ret ) { return ret ; } return 0 ; } 

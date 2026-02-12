@@ -1,1 +1,0 @@
-static void metabank_shutdown ( struct thr_info * thr ) { bitfury_shutdown ( thr ) ; } 

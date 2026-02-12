@@ -1,1 +1,0 @@
-MLXCPLD_LED_OFFSET_HALF ; MLXCPLD_LED_OFFSET_FULL ; MLXCPLD_LED_OFFSET_HALF ; MLXCPLD_LED_OFFSET_FULL ; mlxcpld_param { u8 offset ; int mask ; u8 base_color ; } 

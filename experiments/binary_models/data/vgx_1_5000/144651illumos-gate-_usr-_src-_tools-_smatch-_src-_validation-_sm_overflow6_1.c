@@ -1,0 +1,1 @@
+void strcpy ( char * dest , char * src ) int snprintf ( char * dest , int limit , char * format , char * str ) int sprintf ( char * dest , char * format , char * str ) char * str ; int main ( void ) { char buf [ 10 ] ; char buf1 [ 10 ] ; snprintf ( buf , 11 , "%s" , str ) ; sprintf ( buf1 , "%s" , str ) ; } 

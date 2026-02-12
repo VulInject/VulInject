@@ -1,0 +1,1 @@
+void i915_vma_resource_unhold ( struct i915_vma_resource * vma_res , bool lockdep_cookie ) { if ( IS_ENABLED ( CONFIG_PROVE_LOCKING ) ) { unsigned long irq_flags ; spin_lock_irqsave ( & vma_res -> lock , irq_flags ) ; spin_unlock_irqrestore ( & vma_res -> lock , irq_flags ) ; } __i915_vma_resource_unhold ( vma_res ) ; } 

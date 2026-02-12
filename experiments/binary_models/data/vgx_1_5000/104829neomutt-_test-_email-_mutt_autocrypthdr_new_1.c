@@ -1,0 +1,1 @@
+{ { struct AutocryptHeader * ah = mutt_autocrypthdr_new ( ) ; mutt_autocrypthdr_free ( & ah ) ; } } 

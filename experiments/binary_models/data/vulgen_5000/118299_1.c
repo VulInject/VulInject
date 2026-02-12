@@ -1,0 +1,1 @@
+GNU CC is distributed in the hope that it will be useful , but WITHOUT ANY WARRANTY ; for see the file COPYING . If not , write to the Free Software Foundation , 59 Temple Place - Suite 330 , Boston , MA 02111 - 1307 , USA . * / const c_test insn_conditions [ 1 ] = { { 0 0 } } ; const size_t n_insn_conditions = 0 ; const int insn_elision_unavailable = 1 ; 

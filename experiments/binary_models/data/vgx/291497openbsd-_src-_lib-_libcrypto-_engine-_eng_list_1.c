@@ -1,1 +1,0 @@
-int ENGINE_up_ref ( ENGINE * e ) { int refs ; if ( e == NULL ) { return 0 ; } refs = CRYPTO_add ( & e -> struct_ref , 1 , CRYPTO_LOCK_ENGINE ) ; return refs > 1 ?1 : 0 ; } 

@@ -1,0 +1,1 @@
+int bytgpio_match ( struct device * parent , void * match , void * aux ) { struct acpi_attach_args * aaa = aux ; struct cfdata * cf = match ; return acpi_matchhids ( aaa , bytgpio_hids , cf -> cf_driver -> cd_name ) ; } 

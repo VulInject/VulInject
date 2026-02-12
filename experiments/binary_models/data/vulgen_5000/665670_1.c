@@ -1,0 +1,1 @@
+static int scrub_setup_wr_ctx ( struct scrub_wr_ctx * wr_ctx , struct btrfs_device * dev , int is_dev_replace ) { WARN_ON ( wr_ctx -> wr_curr_bio != NULL ) ; mutex_init ( & wr_ctx -> wr_lock ) ; wr_ctx -> wr_curr_bio = NULL ; if ( ! is_dev_replace ) { return 0 ; } WARN_ON ( ! dev -> bdev ) ; wr_ctx -> tgtdev = dev ; atomic_set ( & wr_ctx -> flush_all_writes , 0 ) ; return 0 ; } 

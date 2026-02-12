@@ -1,1 +1,0 @@
-if ( ! ( VAR1 ) ) { fprintf ( VAR2 , "" # VAR1 "" , VAR3 ) ; FUN1 ( - 1 ) ; } int main ( void ) { AO_t VAR4 = 13 ; int VAR5 = 117 ; }

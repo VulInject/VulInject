@@ -1,0 +1,1 @@
+asmlinkage __visible void __flush_cache_all ( void ) { int leaf ; struct cache_desc * cdesc = current_cpu_data . cache_leaves ; unsigned int cache_present = current_cpu_data . cache_leaves_present ; leaf = cache_present - 1 ; for ( leaf = 0 ; leaf < cache_present ; leaf ++ ) { flush_cache_leaf ( leaf ) ; } } 

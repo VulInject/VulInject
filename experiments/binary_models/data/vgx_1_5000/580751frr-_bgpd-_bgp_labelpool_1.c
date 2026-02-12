@@ -1,0 +1,1 @@
+static void lp_chunk_free ( void * goner ) { struct lp_chunk * chunk = ( lp_chunk * ) goner ; XFREE ( MTYPE_BGP_LABEL_CHUNK , goner ) ; } 

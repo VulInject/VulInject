@@ -1,0 +1,1 @@
+static struct drm_private_state * vc4_ctm_duplicate_state ( struct drm_private_obj * obj ) { struct vc4_ctm_state * state ; state = kmemdup ( obj -> state , sizeof ( * state ) , GFP_KERNEL ) ; __drm_atomic_helper_private_obj_duplicate_state ( obj , & state -> base ) ; return & state -> base ; } 

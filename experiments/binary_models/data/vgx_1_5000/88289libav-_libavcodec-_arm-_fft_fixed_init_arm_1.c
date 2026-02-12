@@ -1,0 +1,1 @@
+av_cold void ff_fft_fixed_init_arm ( FFTContext * s ) { int cpu_flags = av_get_cpu_flags ( ) ; if ( have_neon ( cpu_flags ) ) { s -> fft_permutation = FF_FFT_PERM_SWAP_LSBS ; } } 

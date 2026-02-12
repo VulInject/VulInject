@@ -1,0 +1,1 @@
+ph_framework_t * ph_framework_data = NULL ; { memcpy ( ( p ) , ( str ) . s , ( str ) . len ) ; ( p ) += ( str ) . len ; } 0 ; 

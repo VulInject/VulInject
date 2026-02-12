@@ -1,1 +1,0 @@
-void qvirtio_pci_start_hw ( QOSGraphObject * obj ) { QVirtioPCIDevice * dev = ( QVirtioPCIDevice * ) obj ; qvirtio_pci_device_enable ( dev ) ; } 

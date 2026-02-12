@@ -1,1 +1,0 @@
-static const char * sci_type ( struct uart_port * port ) { return NULL ; } 

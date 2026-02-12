@@ -1,1 +1,0 @@
-static enum schedule_priority parse_schedule ( const char * value ) { if ( ! value ) { return SCHEDULE_NONE ; } if ( ! strcasecmp ( value , "daily" ) ) { return SCHEDULE_DAILY ; } if ( ! strcasecmp ( value , "weekly" ) ) { return SCHEDULE_WEEKLY ; } return SCHEDULE_NONE ; } 

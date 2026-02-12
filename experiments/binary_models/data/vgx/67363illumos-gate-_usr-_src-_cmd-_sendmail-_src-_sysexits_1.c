@@ -1,1 +1,0 @@
-char * exitstat ( excode ) char * excode ; { char * c ; int i ; char * exitmsg ; i = ( int ) strtol ( excode , & c , 10 ) ; if ( * c != '\0' ) { return excode ; } exitmsg = sm_sysexitmsg ( i ) ; if ( exitmsg != NULL ) { return exitmsg ; } return excode ; } 

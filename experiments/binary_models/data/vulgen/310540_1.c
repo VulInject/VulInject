@@ -1,1 +1,0 @@
-static void kvm_patch_ins_nop ( u32 * inst ) { } 

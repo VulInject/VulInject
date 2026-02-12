@@ -1,0 +1,1 @@
+static int mt8186_dsp_remove ( struct snd_sof_dev * sdev ) { struct adsp_priv * priv = sdev -> pdata -> hw_pdata ; platform_device_unregister ( priv -> ipc_dev ) ; mt8186_sof_hifixdsp_shutdown ( sdev ) ; adsp_sram_power_off ( sdev , NULL ) ; mt8186_adsp_clock_off ( sdev ) ; return 0 ; } 

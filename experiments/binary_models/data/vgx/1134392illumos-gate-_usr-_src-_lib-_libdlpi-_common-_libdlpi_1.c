@@ -1,1 +1,0 @@
-void dlpi_close ( dlpi_handle_t dh ) { dlpi_impl_t * dip = ( dlpi_impl_t * ) dh ; dlpi_notifyent_t * next , * dnp ; if ( dip != NULL ) { for ( dnp = dip -> dli_notifylistp ; dnp != NULL ; dnp = next ) { next = dnp -> dln_next ; } ( void ) close ( dip -> dli_fd ) ; free ( dip ) ; } } 

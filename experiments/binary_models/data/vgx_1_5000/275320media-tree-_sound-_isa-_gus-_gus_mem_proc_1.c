@@ -1,0 +1,1 @@
+static ssize_t snd_gf1_mem_proc_dump ( struct snd_info_entry * entry , void * file_private_data , struct file * file , char __user * buf , size_t count , loff_t pos ) { struct gus_proc_private * priv = entry -> private_data ; struct snd_gus_card * gus = priv -> gus ; int err ; err = snd_gus_dram_read ( gus , buf , pos , count , priv -> rom ) ; return count ; } 

@@ -1,0 +1,1 @@
+char * LibVarGetString ( const char * var_name ) { libvar_t * v ; v = LibVarGet ( var_name , NULL ) ; if ( v ) { return v -> string ; } else { return "" ; } } 

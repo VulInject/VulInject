@@ -1,0 +1,1 @@
+bool smc_pnet_is_ndev_pnetid ( struct net * net , u8 * pnetid ) { struct smc_pnetids_ndev_entry * pe ; bool rc = false ; read_lock ( & sn -> pnetids_ndev . lock ) ; list_for_each_entry ( , , ) { if ( smc_pnet_match ( pnetid , pe -> pnetid ) ) { rc = true ; unlock } } unlock read_unlock ( & sn -> pnetids_ndev . lock ) ; return rc ; } 

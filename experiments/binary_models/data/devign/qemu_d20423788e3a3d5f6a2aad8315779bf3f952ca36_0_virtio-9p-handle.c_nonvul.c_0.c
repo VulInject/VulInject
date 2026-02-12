@@ -1,1 +1,0 @@
-static inline int FUN1(int VAR1, const char *VAR2, struct VAR3 *VAR4, int *VAR5, int VAR6) { return FUN2(VAR1, VAR2, VAR4, VAR5, VAR6); }

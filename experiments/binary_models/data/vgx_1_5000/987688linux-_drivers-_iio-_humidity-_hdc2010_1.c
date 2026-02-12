@@ -1,0 +1,1 @@
+hdc2010_data { struct i2c_client * client ; struct mutex lock ; u8 measurement_config ; int interrupt_config ; u8 drdy_config ; } 

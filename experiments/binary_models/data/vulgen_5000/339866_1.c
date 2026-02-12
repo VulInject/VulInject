@@ -1,0 +1,1 @@
+static struct rpcrdma_req * rpcrdma_buffer_get_req_locked ( struct rpcrdma_buffer * buf ) { struct rpcrdma_req * req ; req = list_first_entry ( & buf -> rb_send_bufs , rpcrdma_req , rl_free ) ; return req ; } 

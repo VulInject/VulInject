@@ -1,1 +1,0 @@
-R_API void r_debug_map_free ( RDebugMap * map ) { free ( map -> name ) ; free ( map ) ; } 

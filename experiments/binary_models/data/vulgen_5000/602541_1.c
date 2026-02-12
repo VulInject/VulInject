@@ -1,0 +1,1 @@
+machopic_asm_out_constructor ( , ) rtx symbol ; int priority ATTRIBUTE_UNUSED ; { if ( flag_pic ) { mod_init_section ( ) ; } else { constructor_section ( ) ; } assemble_align ( POINTER_SIZE ) ; if ( ! flag_pic ) { fprintf ( asm_out_file , ".reference .constructors_used\n" ) ; } } 

@@ -1,0 +1,1 @@
+static int at25_remove ( struct spi_device * spi ) { struct at25_data * at25 ; at25 = spi_get_drvdata ( spi ) ; nvmem_unregister ( at25 -> nvmem , NULL ) ; return 0 ; } static const struct of_device_id at25_of_match [ ] { { . compatible = "atmel,at25" } { } } ; ; 

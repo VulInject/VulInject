@@ -1,0 +1,1 @@
+extern void ftrace_regs_caller_op_ptr ( void ) ftrace_op_code_union { char code [ OP_REF_SIZE ] ; { int offset ; } , __attribute__ ( ( packed ) ) } 

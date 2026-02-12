@@ -1,1 +1,0 @@
-static void icy_pcf_waitforpin ( void * data ) { usleep_range ( 50 , 0 ) ; } 

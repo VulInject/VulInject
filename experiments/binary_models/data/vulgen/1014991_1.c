@@ -1,1 +1,0 @@
-static void sp_256_mont_sqr_order_8 ( sp_digit * r , const sp_digit * a ) { sp_256_sqr_8 ( r , a ) ; } 

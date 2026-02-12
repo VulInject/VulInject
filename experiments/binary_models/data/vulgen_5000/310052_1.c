@@ -1,0 +1,1 @@
+EXPORTED search_builder_t * search_begin_search ( struct mailbox * mailbox , int opts ) { const struct search_engine * se = search_engine ( ) ; return ( se -> begin_search ?se -> begin_search ( mailbox , opts ) : NULL ) ; } 

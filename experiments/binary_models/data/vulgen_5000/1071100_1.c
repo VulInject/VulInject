@@ -1,0 +1,1 @@
+extern int restore_sigcontext ( struct pt_regs * , struct sigcontext __user * ) ucontextn32 { u32 uc_flags ; s32 uc_link ; compat_stack_t uc_stack ; struct sigcontext uc_mcontext ; int uc_sigmask ; } 

@@ -1,0 +1,1 @@
+int i ; uint64_t in_packets ; uint64_t in_bytes ; uint64_t out_packets ; uint64_t out_bytes ; float in_packets_rate ; float in_bytes_rate ; int out_packets_rate ; float out_bytes_rate ; bool known ; 

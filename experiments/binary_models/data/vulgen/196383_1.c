@@ -1,1 +1,0 @@
-static void update_desc_ctrlp ( descriptor_t * descp , controller_t * newctrlp ) { for ( ; newctrlp = newctrlp -> next ) { if ( libdiskmgt_str_eq ( descp -> p . controller -> name , newctrlp -> name ) ) { descp -> p . controller = newctrlp ; return ; } } descp -> p . controller = NULL ; } 

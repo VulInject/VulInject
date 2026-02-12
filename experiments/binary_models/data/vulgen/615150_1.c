@@ -1,1 +1,0 @@
-static int test__pfm_events ( struct test_suite * test __maybe_unused , int subtest __maybe_unused ) { return ; } 

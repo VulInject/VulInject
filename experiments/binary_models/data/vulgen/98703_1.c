@@ -1,1 +1,0 @@
-static void metag_internal_irq_shutdown ( struct irq_data * data ) { metag_internal_irq_ack ( data ) ; } 

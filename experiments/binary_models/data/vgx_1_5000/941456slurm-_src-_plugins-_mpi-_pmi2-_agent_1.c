@@ -1,0 +1,1 @@
+extern int pmi2_stop_agent ( void ) { slurm_mutex_lock ( & agent_mutex ) ; if ( _agent_tid ) { eio_signal_shutdown ( pmi2_handle ) ; pthread_join ( _agent_tid ) ; _agent_tid = 0 ; } slurm_mutex_unlock ( & agent_mutex ) ; return SLURM_SUCCESS ; } 

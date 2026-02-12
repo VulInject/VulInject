@@ -1,0 +1,1 @@
+static void update_cats ( struct ubifs_info * c , struct ubifs_pnode * pnode ) { int i ; for ( i = 0 ; i < UBIFS_LPT_FANOUT ; i ++ ) { int cat = pnode -> lprops [ i ] . flags & LPROPS_CAT_MASK ; int lnum = pnode -> lprops [ i ] . lnum ; ubifs_add_to_cat ( c , & pnode -> lprops [ i ] , cat ) ; } } 

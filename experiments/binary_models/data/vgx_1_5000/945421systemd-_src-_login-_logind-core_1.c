@@ -1,0 +1,1 @@
+bool manager_is_lid_closed ( Manager * m ) { Button * b ; HASHMAP_FOREACH ( , ) return false ; } 

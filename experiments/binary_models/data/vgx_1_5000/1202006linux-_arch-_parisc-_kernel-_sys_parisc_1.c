@@ -1,0 +1,1 @@
+asmlinkage long parisc_userfaultfd ( int flags ) { flags = FIX_O_NONBLOCK ( flags , NULL ) ; return sys_userfaultfd ( flags ) ; } 

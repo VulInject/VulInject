@@ -1,1 +1,0 @@
-static void __init s3c2416_dt_machine_init ( void ) { } 

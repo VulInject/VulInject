@@ -1,0 +1,1 @@
+void blk_mq_sysfs_unregister ( struct gendisk * disk ) { struct request_queue * q = disk -> queue ; struct blk_mq_hw_ctx * hctx ; unsigned long i ; queue_for_each_hw_ctx ( , , ) blk_mq_unregister_hctx ( hctx ) ; kobject_uevent ( q -> mq_kobj , KOBJ_REMOVE ) ; kobject_del ( q -> mq_kobj ) ; q -> mq_sysfs_init_done = false ; } 

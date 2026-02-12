@@ -1,0 +1,1 @@
+static void evsel__free_prev_raw_counts ( struct evsel * evsel ) { perf_counts__delete ( evsel -> prev_raw_counts ) ; } 

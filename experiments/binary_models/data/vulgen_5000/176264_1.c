@@ -1,0 +1,1 @@
+static ssize_t kone_sysfs_show_startup_profile ( struct device * dev , struct device_attribute * attr , char * buf ) { struct kone_device * kone = hid_get_drvdata ( dev_get_drvdata ( dev -> parent -> parent ) ) ; return snprintf ( buf , PAGE_SIZE , "%d\n" , kone -> settings . startup_profile ) ; } 

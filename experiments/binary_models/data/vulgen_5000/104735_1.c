@@ -1,0 +1,1 @@
+static int t7xx_trace_subbuf_start_handler ( struct rchan_buf * buf , void * subbuf , void * prev_subbuf , size_t prev_padding ) { return 1 ; } static struct rchan_callbacks relay_callbacks = { . subbuf_start = t7xx_trace_subbuf_start_handler . create_buf_file = t7xx_trace_create_buf_file_handler . remove_buf_file = t7xx_trace_remove_buf_file_handler } ; 

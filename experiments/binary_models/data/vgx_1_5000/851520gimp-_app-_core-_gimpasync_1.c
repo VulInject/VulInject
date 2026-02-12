@@ -1,0 +1,1 @@
+gimp_async_get_result ( ) { g_return_val_if_fail ( GIMP_IS_ASYNC ( async ) , NULL ) ; g_return_val_if_fail ( async -> priv -> stopped ) ; g_return_val_if_fail ( async -> priv -> finished , NULL ) ; return async -> priv -> result ; } 

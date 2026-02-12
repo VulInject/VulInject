@@ -1,1 +1,0 @@
-static uint16_t VAR1 ; static int FUN1 ( void ) { int VAR2 ; size_t VAR3 = sizeof ( int ) ; return VAR2 != 1 ; }

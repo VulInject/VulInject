@@ -1,0 +1,1 @@
+bool comm_session_exists ( pcep_socket_comm_handle * socket_comm_handle , pcep_socket_comm_session * socket_comm_session ) { return ( ordered_list_find ( socket_comm_handle -> session_list , socket_comm_session ) != NULL ) ; } 

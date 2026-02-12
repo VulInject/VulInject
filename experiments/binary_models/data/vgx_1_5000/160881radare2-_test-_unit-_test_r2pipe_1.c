@@ -1,0 +1,1 @@
+static int all_tests ( ) { mu_run_test ( test_r2pipe , NULL ) ; mu_run_test ( test_r2pipe_404 ) ; return tests_passed != tests_run ; } 

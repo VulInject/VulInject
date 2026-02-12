@@ -1,0 +1,1 @@
+static int cpu_detected ( unsigned int core_id ) { int path [ PATH_MAX ] ; int len = snprintf ( path , sizeof ( path ) , "/sys/devices/system/cpu/cpu%d/topology/core_id" , core_id ) ; if ( len <= 0 || ( unsigned ) len >= sizeof ( path ) ) { return 0 ; } if ( access ( path , F_OK ) != 0 ) { return 0 ; } return 1 ; } 

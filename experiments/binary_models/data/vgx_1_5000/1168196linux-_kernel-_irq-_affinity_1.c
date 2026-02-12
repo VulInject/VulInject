@@ -1,0 +1,1 @@
+static void default_calc_sets ( struct irq_affinity * affd , unsigned int affvecs ) { affd -> set_size [ 0 ] = affvecs ; } 

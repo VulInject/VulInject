@@ -1,1 +1,0 @@
-static int ufs_rmdir ( struct inode * dir , struct dentry * dentry ) { struct inode * inode = d_inode ( dentry ) ; int err = - ENOTEMPTY ; if ( ufs_empty_dir ( inode ) ) { err = ufs_unlink ( dir , dentry ) ; if ( ! err ) { inode -> i_size = 0 ; inode_dec_link_count ( inode , NULL ) ; inode_dec_link_count ( dir ) ; } } return err ; } 

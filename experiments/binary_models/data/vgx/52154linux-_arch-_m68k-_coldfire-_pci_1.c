@@ -1,1 +1,0 @@
-static int mcf_pci_map_irq ( const struct pci_dev * dev , u8 slot , u8 pin ) { int sid ; sid = mcf_host_slot2sid [ slot ] ; return 0 ; } 

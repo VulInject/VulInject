@@ -1,1 +1,0 @@
-void FUN1 ( char * VAR1 ) { if ( VAR1 == NULL ) { return ; } }

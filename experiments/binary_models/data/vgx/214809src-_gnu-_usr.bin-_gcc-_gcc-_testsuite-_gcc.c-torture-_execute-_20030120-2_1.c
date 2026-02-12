@@ -1,1 +1,0 @@
-int foo ( int status ) { int s ; if ( status == 1 ) { s = 1 ; } if ( status == 3 ) { s = 3 ; } if ( status == 4 ) { s = 4 ; } return s ; } 

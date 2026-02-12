@@ -1,0 +1,1 @@
+static heim_error_code expand_null ( heim_context context , PTYPE param , const char * postfix , const char * arg , char * * ret ) { * ret = strdup ( "" ) ; return 0 ; } static const { const char * tok ; int ftype ; PTYPE param ; const char * postfix ; int * exp_func ( heim_context , PTYPE , const char * , const char * , char * * ) } , tokens [ ] { } ; 

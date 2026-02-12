@@ -1,0 +1,1 @@
+void bfd_echo_recvtimer_update ( struct bfd_session * bs ) { struct timeval tv = { . tv_sec = 0 . tv_usec = bs -> echo_detect_TO } ; bfd_echo_recvtimer_delete ( bs ) ; tv_normalize ( & tv ) ; thread_add_timer_tv ( master , bfd_echo_recvtimer_cb , bs , & tv , & bs -> echo_recvtimer_ev ) ; } 

@@ -1,1 +1,0 @@
-int asio_match ( struct device * parent , void * match , void * aux ) { struct sbus_attach_args * sa = aux ; return ( 0 ) ; } 

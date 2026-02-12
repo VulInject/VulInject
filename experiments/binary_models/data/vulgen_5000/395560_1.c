@@ -1,0 +1,1 @@
+const EVP_CIPHER * EVP_aes_128_cfb ( int ) { return AESNI_CAPABLE ?& aesni_128_cfb : & aes_128_cfb ; return & aes_128_cfb ; } 

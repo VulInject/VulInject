@@ -1,0 +1,1 @@
+char * fmtbase ( intmax_t n , int b , int p ) { char * buf ; int z ; if ( ! p ) { if ( ! n ) { return "0" ; } if ( b == 10 ) { return fmtint ( n , 1 ) ; } } buf = fmtbuf ( z = 72 ) ; sfsprintf ( buf , z , p ?"%#..*I*u" : "%..*I*u" , b , sizeof ( n ) , n ) ; return buf ; } 

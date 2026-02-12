@@ -1,1 +1,0 @@
-static void mbi_unmask_msi_irq ( struct irq_data * d ) { pci_msi_unmask_irq ( d ) ; irq_chip_unmask_parent ( d , NULL ) ; } 

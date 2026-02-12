@@ -1,1 +1,0 @@
-. name = "gpio" , . sysc = dm81xx_gpio_sysc , ; 

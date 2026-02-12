@@ -1,0 +1,1 @@
+static void mlxsw_linecard_bdev_release ( struct device * device ) { struct auxiliary_device * adev = container_of ( device , auxiliary_device , dev ) ; struct mlxsw_linecard_bdev * linecard_bdev = container_of ( adev , mlxsw_linecard_bdev , adev ) ; mlxsw_linecard_bdev_id_free ( adev -> id ) ; } 

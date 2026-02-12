@@ -1,0 +1,1 @@
+struct Qdisc * fifo_create_dflt ( struct Qdisc * sch , struct Qdisc_ops * ops , unsigned int limit , struct netlink_ext_ack * extack ) { struct Qdisc * q ; int err = - ENOMEM ; if ( q ) { err = fifo_set_limit ( q , limit ) ; if ( err < 0 ) { qdisc_put ( q ) ; q = NULL ; } } return q ?: ERR_PTR ( err ) ; } 

@@ -1,0 +1,1 @@
+void * pci_parity_check_fn_t ( struct pci_dev * dev ) static inline void edac_pci_dev_parity_iterator ( pci_parity_check_fn_t fn ) { for_each_pci_dev ( ) fn ( dev ) ; } 

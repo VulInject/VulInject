@@ -1,0 +1,1 @@
+static bool add_retire ( struct intel_engine_cs * engine , struct intel_timeline * tl ) { struct intel_timeline * first ; intel_timeline_get ( tl ) ; first = READ_ONCE ( engine -> retire ) ; { tl -> retire = ptr_pack_bits ( first , 1 , 1 ) ; } ! try_cmpxchg ( & engine -> retire , & first , tl ) ; return ! first ; } 

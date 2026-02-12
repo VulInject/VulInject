@@ -1,0 +1,1 @@
+( eventfd_ctx_fdget ) ; struct eventfd_ctx * eventfd_ctx_fileget ( struct file * file ) { struct eventfd_ctx * ctx ; ctx = file -> private_data ; kref_get ( & ctx -> kref ) ; return ctx ; } 

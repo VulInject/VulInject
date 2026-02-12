@@ -1,0 +1,1 @@
+static void _gb_gpio_irq_unmask ( struct gb_gpio_controller * ggc , u8 hwirq ) { struct device * dev = & ggc -> gbphy_dev -> dev ; struct gb_gpio_irq_unmask_request request ; int ret ; request . which = hwirq ; if ( ret ) { dev_err ( dev , "failed to unmask irq: %d\n" , ret ) ; } } 

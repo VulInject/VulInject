@@ -1,1 +1,0 @@
-void smi_oidlen ( struct ber_oid * o ) { int i ; for ( i = 0 ; i < BER_MAX_OID_LEN && o -> bo_id [ i ] != 0 ; i ++ ) { } o -> bo_n = i ; } 

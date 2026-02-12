@@ -1,0 +1,1 @@
+static char * string_from_smbios_table ( const struct smbios_header * header , int idx ) { unsigned int i = 1 ; u8 * pos ; pos = ( ( u8 * ) header ) + header -> length ; while ( i < idx ) { if ( * pos == 0x0 ) { i ++ ; } pos ++ ; } return ( char * ) pos ; } 

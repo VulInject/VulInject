@@ -1,0 +1,1 @@
+static struct utmpx * utmpp ; pid_t startd_fork1 ( int * forkerr ) { pid_t p ; wait_prefork ( ) ; utmpx_prefork ( ) ; p = fork1 ( ) ; if ( p == - 1 && forkerr != NULL ) { * forkerr = errno ; } utmpx_postfork ( ) ; wait_postfork ( p , NULL ) ; return ( p ) ; } 

@@ -1,0 +1,1 @@
+static rpmPlugin rpmpluginsGetPlugin ( rpmPlugins plugins , const char * name ) { int i ; for ( i = 0 ; i < plugins -> count ; i ++ ) { rpmPlugin plugin = plugins -> plugins [ i ] ; } return NULL ; } 

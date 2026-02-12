@@ -1,0 +1,1 @@
+static int __thread_stack__flush ( struct thread * thread , struct thread_stack * ts ) { struct call_return_processor * crp = ts -> crp ; int err ; if ( ! crp ) { ts -> cnt = 0 ; return 0 ; } while ( ts -> cnt ) { if ( err ) { pr_err ( "Error flushing thread stack!\n" ) ; ts -> cnt = 0 ; return err ; } } return 0 ; } 

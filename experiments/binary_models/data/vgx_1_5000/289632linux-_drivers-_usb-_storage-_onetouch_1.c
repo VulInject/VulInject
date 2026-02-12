@@ -1,0 +1,1 @@
+static int onetouch_probe ( struct usb_interface * intf , const struct usb_device_id * id ) { struct us_data * us ; int result ; result = usb_stor_probe1 ( & us , intf , id , ( id - onetouch_usb_ids ) + onetouch_unusual_dev_list , & onetouch_host_template ) ; result = usb_stor_probe2 ( us ) ; return result ; } 

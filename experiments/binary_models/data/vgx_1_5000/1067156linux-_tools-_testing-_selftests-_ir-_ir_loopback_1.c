@@ -1,0 +1,1 @@
+static const { enum rc_proto proto ; const char * name ; int mask ; const char * decoder ; } , protocols [ ] { } ; 

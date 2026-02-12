@@ -1,0 +1,1 @@
+static void vjsn_val_delete ( struct vjsn_val * jsv ) { struct vjsn_val * jsve ; CHECK_OBJ_NOTNULL ( jsv , VJSN_VAL_MAGIC ) ; { jsve = VTAILQ_FIRST ( & jsv -> children ) ; if ( jsve != NULL ) { VTAILQ_REMOVE ( & jsv -> children , jsve , list ) ; vjsn_val_delete ( jsve ) ; } } jsve != NULL ; FREE_OBJ ( jsv , NULL ) ; } 

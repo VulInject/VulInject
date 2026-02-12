@@ -1,0 +1,1 @@
+{ uint32_t val = ( saddr ) ^ ( daddr ) ; ( hash ) %= ( size ) ; } HASH_IP_VIP_V4 ( , 3 , 3 , ) { ilb_server_t * server ; boolean_t enabled ; } hash_server_t 

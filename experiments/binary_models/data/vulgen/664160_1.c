@@ -1,1 +1,0 @@
-float asinf ( float x ) { int ix ; if ( ix > 0x3f800000 ) { return ( ( x * zero ) / zero ) ; } return ( ( float ) asin ( ( double ) x ) ) ; } 

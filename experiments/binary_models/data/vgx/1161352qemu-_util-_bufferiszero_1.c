@@ -1,1 +1,0 @@
-bool buffer_is_zero ( const void * buf , size_t len ) { __builtin_prefetch ( buf ) ; return select_accel_fn ( buf , len ) ; } 

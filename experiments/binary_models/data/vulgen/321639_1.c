@@ -1,1 +1,0 @@
-void _enduserattr ( void ) { nss_endent ( & db_root , _nss_initf_userattr , & context ) ; nss_delete ( & db_root ) ; } 

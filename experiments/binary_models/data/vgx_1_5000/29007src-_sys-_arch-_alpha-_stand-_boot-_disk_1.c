@@ -1,0 +1,1 @@
+int diskclose ( struct open_file * f ) { struct disk_softc * sc ; sc = f -> f_devdata ; ( void ) prom_close ( sc -> sc_fd ) ; free ( sc , sizeof ( disk_softc ) ) ; return ( 0 ) ; } 

@@ -1,1 +1,0 @@
-static RADIX_TREE ( pgmap_radix , GFP_KERNEL ) ; page_map { struct resource res ; struct percpu_ref * ref ; int pgmap ; struct vmem_altmap altmap ; } 

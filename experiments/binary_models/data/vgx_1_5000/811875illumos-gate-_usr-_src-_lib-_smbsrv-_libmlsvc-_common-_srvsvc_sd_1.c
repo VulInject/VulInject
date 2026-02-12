@@ -1,0 +1,1 @@
+static struct mslm_acl * srvsvc_acl_set_relative ( uint8_t * sdbuf , smb_acl_t * acl ) { struct mslm_acl * m_acl ; m_acl = ( mslm_acl * ) sdbuf ; m_acl -> revision = acl -> sl_revision ; m_acl -> sbz1 = 0 ; m_acl -> size = acl -> sl_bsize ; m_acl -> sbz2 = 0 ; m_acl -> ace_count = acl -> sl_acecnt ; return ( m_acl ) ; } 

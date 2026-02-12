@@ -1,0 +1,1 @@
+static void max3100_timeout ( struct timer_list * t ) { struct max3100_port * s = from_timer ( s , t , timer ) ; if ( s -> port . state ) { mod_timer ( & s -> timer , jiffies + s -> poll_time ) ; } } 

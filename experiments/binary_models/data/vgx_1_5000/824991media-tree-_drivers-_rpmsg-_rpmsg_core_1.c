@@ -1,0 +1,1 @@
+int rpmsg_send ( struct rpmsg_endpoint * ept , void * data , int len ) { if ( WARN_ON ( ! ept ) ) { return - EINVAL ; } return ept -> ops -> send ( ept , data , len ) ; } 

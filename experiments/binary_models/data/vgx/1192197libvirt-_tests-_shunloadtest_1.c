@@ -1,1 +1,0 @@
-static void sigHandler ( int sig ) { ignore_value ( write ( STDERR_FILENO , "FAIL\n" , 5 ) ) ; signal ( sig , SIG_DFL ) ; raise ( sig , NULL ) ; } 

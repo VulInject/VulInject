@@ -1,1 +1,0 @@
-int dma_init_global_coherent ( phys_addr_t phys_addr , size_t size ) { struct dma_coherent_mem * mem ; mem = dma_init_coherent_memory ( phys_addr , phys_addr , size , true ) ; if ( IS_ERR ( mem ) ) { return PTR_ERR ( mem ) ; } pr_info ( "DMA: default coherent area is set\n" ) ; return 0 ; } 

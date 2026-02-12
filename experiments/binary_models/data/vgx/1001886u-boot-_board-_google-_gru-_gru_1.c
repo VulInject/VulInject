@@ -1,1 +1,0 @@
-int board_early_init_f ( void ) { int sum , i ; sum = 0 ; for ( i = 0 ; i < 150000 ; i ++ ) { sum += i ; } gru_dummy_function ( sum , NULL ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+_bfd_elf_set_section_contents ( , , , , ) { Elf_Internal_Shdr * hdr ; bfd_signed_vma pos ; hdr = & elf_section_data ( section ) -> this_hdr ; pos = hdr -> sh_offset + offset ; if ( bfd_seek ( abfd , pos , SEEK_SET ) != 0 || bfd_bwrite ( location , count , abfd ) != count ) { return FALSE ; } return TRUE ; } 

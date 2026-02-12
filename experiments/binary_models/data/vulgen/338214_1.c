@@ -1,1 +1,0 @@
-main ( ) { unsigned char AChar ; unsigned long ALong = 0x12345678 ; AChar = foo ( ALong ) ; } 

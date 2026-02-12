@@ -1,0 +1,1 @@
+static void adsp_pds_detach ( struct qcom_adsp * adsp , struct device * * pds , size_t pd_count ) { struct device * dev = adsp -> dev ; int i ; if ( dev -> pm_domain && pd_count ) { pm_runtime_disable ( dev , NULL ) ; return ; } for ( i = 0 ; i < pd_count ; i ++ ) { dev_pm_domain_detach ( pds [ i ] , false ) ; } } 

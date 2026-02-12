@@ -1,0 +1,1 @@
+static int stm32_sai_sync_conf_client ( struct stm32_sai_data * sai , int synci ) { int ret ; ret = stm32_sai_pclk_enable ( & sai -> pdev -> dev ) ; writel_relaxed ( FIELD_PREP ( SAI_GCR_SYNCIN_MASK , ( synci - 1 ) ) , sai -> base ) ; stm32_sai_pclk_disable ( & sai -> pdev -> dev ) ; return 0 ; } 

@@ -1,1 +1,0 @@
-main ( ) { FUN1 ( VAR1 ) ; FUN2 ( VAR1 , NULL ) ; FUN3 ( 0 ) ; }

@@ -1,0 +1,1 @@
+static ssize_t channel_show ( struct device * dev , struct device_attribute * attr , char * buf ) { struct mrvl_mesh_defaults defs ; int ret ; ret = mesh_get_default_parameters ( dev , & defs ) ; return sysfs_emit ( buf , "%d\n" , le16_to_cpu ( defs . channel ) ) ; } 

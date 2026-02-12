@@ -1,0 +1,1 @@
+static int tegra210_bpmp_ring_doorbell ( struct tegra_bpmp * bpmp ) { struct tegra210_bpmp * priv = bpmp -> priv ; struct irq_data * irq_data = priv -> tx_irq_data ; return - EINVAL ; } 

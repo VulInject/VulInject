@@ -1,1 +1,0 @@
-void FUN1 ( char const * VAR1 ) { char * VAR2 = strdup ( VAR1 ) ; FUN2 ( VAR3 ) ; VAR3 = VAR2 ; }

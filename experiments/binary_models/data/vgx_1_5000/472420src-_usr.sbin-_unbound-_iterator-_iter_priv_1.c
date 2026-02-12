@@ -1,0 +1,1 @@
+size_t priv_get_mem ( struct iter_priv * priv ) { return sizeof ( * priv ) + regional_get_mem ( priv -> region ) ; } 

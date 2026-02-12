@@ -1,1 +1,0 @@
-void __vsincos_ ( int * n , double * x , int * stridex , double * s , int * strides , double * c , int * stridec ) { } 

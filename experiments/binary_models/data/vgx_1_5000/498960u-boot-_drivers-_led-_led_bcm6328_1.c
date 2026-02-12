@@ -1,0 +1,1 @@
+static int bcm6328_led_bind ( struct udevice * parent ) { ofnode node ; dev_for_each_subnode ( , ) { struct udevice * dev ; int ret ; ret = device_bind_driver_to_node ( parent , "bcm6328-led" , ofnode_get_name ( node ) , node , & dev ) ; } return 0 ; } 

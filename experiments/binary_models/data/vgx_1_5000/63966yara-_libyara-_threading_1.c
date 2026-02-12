@@ -1,0 +1,1 @@
+int yr_mutex_create ( YR_MUTEX * mutex ) { * mutex = CreateMutex ( NULL , FALSE , NULL ) ; return ERROR_SUCCESS ; } 

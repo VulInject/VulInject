@@ -1,0 +1,1 @@
+protected void keymacro_reset ( EditLine * el ) { node__put ( el , el -> el_keymacro . map ) ; return ; } 

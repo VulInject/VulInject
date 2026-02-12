@@ -1,0 +1,1 @@
+static bool comp_msg_open_new ( struct Mailbox * m , struct Message * msg , const struct Email * e ) { struct CompressInfo * ci = m -> compress_info ; const struct MxOps * ops = ci -> child_ops ; if ( ! ops ) { return false ; } return ops -> msg_open_new ( m , msg , e ) ; } 

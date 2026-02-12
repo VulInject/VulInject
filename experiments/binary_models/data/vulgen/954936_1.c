@@ -1,1 +1,0 @@
-m = fire_rocket ( ent , launchpos , dir ) ; { m = fire_rocket ( ent , muzzleEffect , forward ) ; } m -> damage *= s_quadFactor ; m -> splashDamage *= s_quadFactor ; 

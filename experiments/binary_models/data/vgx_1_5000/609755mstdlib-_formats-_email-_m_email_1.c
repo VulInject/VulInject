@@ -1,0 +1,1 @@
+const M_hash_dict_t * M_email_headers ( const M_email_t * email ) { return email -> headers ; } 

@@ -1,1 +1,0 @@
-int digest_nid ; 

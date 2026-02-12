@@ -1,0 +1,1 @@
+struct proxy_l * add_proxy ( str * name , unsigned short port , int proto ) { struct proxy_l * p ; if ( ( p = mk_proxy ( name , port , proto ) ) == 0 ) { error } p -> next = proxies ; proxies = p ; return p ; error return 0 ; } 

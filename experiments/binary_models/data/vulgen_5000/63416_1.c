@@ -1,0 +1,1 @@
+static void zfcp_fc_ns_gid_pn_eval ( struct zfcp_fc_req * fc_req ) { struct zfcp_fsf_ct_els * ct_els = & fc_req -> ct_els ; struct zfcp_fc_gid_pn_rsp * gid_pn_rsp = & fc_req -> u . gid_pn . rsp ; if ( ct_els -> status ) { return ; } ct_els -> port -> d_id = ntoh24 ( gid_pn_rsp -> gid_pn . fp_fid ) ; } 

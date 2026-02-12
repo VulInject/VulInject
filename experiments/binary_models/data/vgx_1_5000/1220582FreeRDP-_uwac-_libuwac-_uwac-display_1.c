@@ -1,0 +1,1 @@
+UwacReturnCode UwacDisplayQueryShmFormats ( const UwacDisplay * display , enum wl_shm_format * formats , int formats_size , int * filled ) { * filled = min ( ( int64_t ) display -> shm_formats_nb , formats_size ) ; memcpy ( formats , ( const void * ) display -> shm_formats , * filled * sizeof ( wl_shm_format ) ) ; return UWAC_SUCCESS ; } 

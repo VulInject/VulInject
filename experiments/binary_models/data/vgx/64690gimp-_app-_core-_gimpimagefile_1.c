@@ -1,1 +1,0 @@
-gimp_imagefile_set_mime_type ( , ) { g_return_if_fail ( GIMP_IS_IMAGEFILE ( imagefile ) ) ; g_object_set ( GET_PRIVATE ( imagefile ) -> thumbnail , "image-mimetype" , mime_type ) ; } 

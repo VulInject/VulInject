@@ -1,0 +1,1 @@
+tor_main_configuration_t * tor_main_configuration_new ( void ) { static const char * fake_argv [ ] { "tor" } ; ; tor_main_configuration_t * cfg = raw_malloc ( sizeof ( * cfg ) ) ; if ( cfg == NULL ) { return NULL ; } cfg -> argc = 1 ; cfg -> argv = ( char * * ) fake_argv ; cfg -> owning_controller_socket = TOR_INVALID_SOCKET ; return cfg ; } 

@@ -1,0 +1,1 @@
+ext_immu5b ( , , ) { const char * result ; result = ext_immu ( self , code , valuep ) ; * valuep = * valuep + 32 ; return 0 ; } 

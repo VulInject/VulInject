@@ -1,0 +1,1 @@
+int verity_fec_ctr_alloc ( struct dm_verity * v ) { struct dm_verity_fec * f ; f = kmalloc ( sizeof ( dm_verity_fec ) , GFP_KERNEL ) ; if ( ! f ) { v -> ti -> error = "Cannot allocate FEC structure" ; return - ENOMEM ; } v -> fec = f ; return 0 ; } 

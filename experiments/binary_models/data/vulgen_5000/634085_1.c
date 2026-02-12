@@ -1,0 +1,1 @@
+static void gl9763e_hs400_enhanced_strobe ( struct mmc_host * mmc , struct mmc_ios * ios ) { struct sdhci_host * host = mmc_priv ( mmc ) ; u32 val ; val = sdhci_readl ( host , SDHCI_GLI_9763E_HS400_ES_REG ) ; else { val &= ~ SDHCI_GLI_9763E_HS400_ES_BIT ; } sdhci_writel ( host , val , SDHCI_GLI_9763E_HS400_ES_REG ) ; } 

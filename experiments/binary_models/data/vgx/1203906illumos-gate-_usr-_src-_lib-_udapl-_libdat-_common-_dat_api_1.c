@@ -1,1 +1,0 @@
-DAT_RETURN dat_ep_reset ( IN DAT_EP_HANDLE ep_handle ) { return ( DAT_EP_RESET ( ep_handle ) ) ; } 

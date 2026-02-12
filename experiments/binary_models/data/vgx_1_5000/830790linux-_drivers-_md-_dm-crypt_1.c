@@ -1,0 +1,1 @@
+static int crypt_iv_plain_gen ( struct crypt_config * cc , u8 * iv , struct dm_crypt_request * dmreq ) { * ( __le32 * ) iv = cpu_to_le32 ( dmreq -> iv_sector & 0xffffffff ) ; return 0 ; } 

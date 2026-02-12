@@ -1,1 +1,0 @@
-static void pgsql_kvarray_free ( char * * keys , char * * vals ) { size_t i ; for ( i = 0 ; keys [ i ] != NULL ; i ++ ) { M_free ( keys [ i ] ) ; M_free ( vals [ i ] ) ; } M_free ( keys ) ; M_free ( vals ) ; } 

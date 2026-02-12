@@ -1,0 +1,1 @@
+void free_key_ctx ( struct key_ctx * ctx ) { if ( ctx -> cipher ) { cipher_ctx_free ( ctx -> cipher ) ; ctx -> cipher = NULL ; } if ( ctx -> hmac ) { hmac_ctx_cleanup ( ctx -> hmac ) ; hmac_ctx_free ( ctx -> hmac ) ; } ctx -> implicit_iv_len = 0 ; } 

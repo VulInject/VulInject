@@ -1,0 +1,1 @@
+static void _unload_intf_hdl ( struct intf_priv * pintfpriv ) { void * unload_intf_priv ( struct intf_priv * pintfpriv ) unload_intf_priv = & r8712_usb_unload_intf_priv ; unload_intf_priv ( pintfpriv ) ; } 

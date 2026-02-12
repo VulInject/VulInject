@@ -1,1 +1,0 @@
-int i6 sizeof ( int ) * CHAR_BIT ; int i7 sizeof ( int ) * CHAR_BIT ; int i8 sizeof ( int ) * CHAR_BIT ; 

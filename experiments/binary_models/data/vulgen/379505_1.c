@@ -1,1 +1,0 @@
-static struct tty_driver * hvc_console_device ( struct console * c , int * index ) { * index = c -> index ; return hvc_driver ; } 

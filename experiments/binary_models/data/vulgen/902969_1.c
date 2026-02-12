@@ -1,1 +1,0 @@
-free ( ( char * ) g -> strip ) ; if ( g -> sets != NULL ) { free ( ( char * ) g -> sets ) ; } if ( g -> setbits != NULL ) { free ( ( char * ) g -> setbits ) ; } free ( ( char * ) g ) ; 

@@ -1,0 +1,1 @@
+struct devbase * getdevbase ( char * name ) { u_char * p ; struct devbase * dev ; p = ( u_char * ) name ; if ( ! isalpha ( * p ) ) { badname } while ( * ++ p ) { if ( ! isalnum ( * p ) && * p != '_' ) { badname } } if ( isdigit ( * -- p ) ) { badname error ( "bad device base name `%s'" , name ) ; return ( & errdev ) ; } dev = ht_lookup ( devbasetab , name ) ; return ( dev ) ; } 

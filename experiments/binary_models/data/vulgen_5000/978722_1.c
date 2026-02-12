@@ -1,0 +1,1 @@
+KRB5_LIB_FUNCTION krb5_error_code KRB5_LIB_CALL krb5_auth_con_getauthenticator ( krb5_context context , krb5_auth_context auth_context , krb5_authenticator * authenticator ) { * authenticator = malloc ( sizeof ( * * authenticator ) ) ; return copy_Authenticator ( auth_context -> authenticator , * authenticator ) ; } 

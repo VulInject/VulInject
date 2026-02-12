@@ -1,0 +1,1 @@
+void * pm_power_off ( void ) EXPORT_SYMBOL ( pm_power_off ) ; static int reboot_emergency ; bool port_cf9_safe = false ; static int __init set_acpi_reboot ( const struct dmi_system_id * d ) { if ( reboot_type != BOOT_ACPI ) { reboot_type = BOOT_ACPI ; pr_info ( "%s series board detected. Selecting %s-method for reboots.\n" , d -> ident , "ACPI" ) ; } return 0 ; } 

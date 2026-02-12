@@ -1,1 +1,0 @@
-int git_refdb_delete ( struct git_refdb * db , const char * ref_name , const git_oid * old_id , const char * old_target ) { GIT_ASSERT_ARG ( db , NULL ) ; GIT_ASSERT_ARG ( db -> backend ) ; return db -> backend -> del ( db -> backend , ref_name , old_id , old_target ) ; } 

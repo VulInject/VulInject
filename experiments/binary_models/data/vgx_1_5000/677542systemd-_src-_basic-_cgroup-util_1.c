@@ -1,0 +1,1 @@
+int cg_get_owner ( const char * controller , const char * path , uid_t * ret_uid ) { _cleanup_free_ char * f = NULL ; struct stat stats ; int r ; assert ( ret_uid ) ; r = cg_get_path ( controller , path , NULL , & f ) ; if ( r < 0 ) { return r ; } r = stat ( f , & stats ) ; * ret_uid = stats . st_uid ; return 0 ; } 

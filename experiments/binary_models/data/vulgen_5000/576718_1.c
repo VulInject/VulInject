@@ -1,0 +1,1 @@
+static int __init arcnet_raw_init ( void ) { int count ; pr_info ( "raw mode (`r') encapsulation support loaded\n" ) ; for ( count = 0 ; count < 256 ; count ++ ) { if ( arc_proto_map [ count ] == arc_proto_default ) { arc_proto_map [ count ] = & rawmode_proto ; } } arc_proto_default = & rawmode_proto ; return 0 ; } 

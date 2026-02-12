@@ -1,1 +1,0 @@
-unsigned long cpm_muram_offset ( void __iomem * addr ) { return addr - ( void __iomem * muram_vbase ; } 

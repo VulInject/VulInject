@@ -1,1 +1,0 @@
-void * FUN1 ( int VAR1 ) { struct VAR2 * VAR3 = FUN2 ( sizeof ( VAR2 ) + VAR1 ) ; if ( FUN3 ( ! VAR3 ) ) { return VAR4 ; } FUN4 ( & VAR3 -> VAR5 , 1 ) ; return VAR3 + 1 ; }

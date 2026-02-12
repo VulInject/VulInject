@@ -1,0 +1,1 @@
+static int sb_rt_sigaction ( scmp_filter_ctx ctx , sandbox_cfg_t * filter ) { unsigned i ; int rc ; int param [ ] { SIGINT SIGTERM SIGPIPE SIGUSR1 SIGUSR2 SIGHUP SIGCHLD SIGSEGV SIGILL SIGFPE SIGBUS SIGSYS SIGIO SIGXFSZ } ; ; ( void ) filter ; for ( i = 0 ; i < ARRAY_LENGTH ( param ) ; i ++ ) { if ( rc ) { break ; } } return rc ; } 

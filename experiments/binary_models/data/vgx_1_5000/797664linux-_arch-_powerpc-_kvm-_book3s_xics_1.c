@@ -1,0 +1,1 @@
+void kvmppc_xics_free_icp ( struct kvm_vcpu * vcpu ) { if ( ! vcpu -> arch . icp ) { return ; } vcpu -> arch . icp = NULL ; vcpu -> arch . irq_type = KVMPPC_IRQ_DEFAULT ; } 

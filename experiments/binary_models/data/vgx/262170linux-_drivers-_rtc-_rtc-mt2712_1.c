@@ -1,1 +1,0 @@
-mt2712_rtc { struct rtc_device * rtc ; void __iomem * base ; int irq ; int irq_wake_enabled ; u8 powerlost ; } 

@@ -1,0 +1,1 @@
+static void __init omap_init_aes ( void ) { struct omap_hwmod * oh ; struct platform_device * pdev ; oh = omap_hwmod_lookup ( "aes" ) ; pdev = omap_device_build ( "omap-aes" , - 1 , oh , NULL , 0 ) ; WARN ( IS_ERR ( pdev ) , "Can't build omap_device for omap-aes\n" ) ; } static struct resource omap_vout_resource [ 3 - CONFIG_FB_OMAP2_NUM_FBS ] { } ; ; 

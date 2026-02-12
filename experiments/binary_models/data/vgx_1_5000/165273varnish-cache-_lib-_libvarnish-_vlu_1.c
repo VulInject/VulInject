@@ -1,0 +1,1 @@
+void VLU_Reset ( struct vlu * l ) { CHECK_OBJ_NOTNULL ( l , LINEUP_MAGIC ) ; } 

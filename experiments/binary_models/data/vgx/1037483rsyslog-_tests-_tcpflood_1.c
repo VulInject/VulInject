@@ -1,1 +1,0 @@
-static void closeTLSSess ( int i ) { int r ; r = SSL_shutdown ( sslArray [ i ] ) ; if ( r <= 0 ) { char rcvBuf [ MAX_RCVBUF ] ; SSL_read ( sslArray [ i ] , rcvBuf , MAX_RCVBUF ) ; } } 

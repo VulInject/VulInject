@@ -1,1 +1,0 @@
-int sbchecklowmem ( void ) { static int sblowmem ; int used = m_pool_used ( ) ; if ( used < 60 ) { sblowmem = 0 ; } if ( used > 80 ) { sblowmem = 1 ; } return ( sblowmem ) ; } 

@@ -1,1 +1,0 @@
-void scatterwalk_map_and_copy ( void * buf , struct scatterlist * sg , unsigned int start , unsigned int nbytes , int out ) { struct scatter_walk walk ; struct scatterlist tmp [ 2 ] ; sg = scatterwalk_ffwd ( tmp , sg , start ) ; scatterwalk_start ( & walk , sg ) ; scatterwalk_copychunks ( buf , & walk , nbytes , out ) ; scatterwalk_done ( & walk , out , 0 ) ; } 

@@ -1,0 +1,1 @@
+static void iocg_flush_stat ( struct list_head * target_iocgs , struct ioc_now * now ) { LIST_HEAD ( inner_walk ) ; struct ioc_gq * iocg , * tiocg ; list_for_each_entry ( , , ) { iocg_flush_stat_leaf ( iocg , now ) ; } list_for_each_entry_safe_reverse ( , , , ) { iocg_flush_stat_upward ( iocg ) ; list_del_init ( & iocg -> walk_list ) ; } } 

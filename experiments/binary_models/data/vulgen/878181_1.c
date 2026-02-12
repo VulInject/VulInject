@@ -1,1 +1,0 @@
-int paste ( void * i ) { int cr ; return cr ; } 

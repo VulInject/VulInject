@@ -1,1 +1,0 @@
-static uint16_t * tilt_slashes ( uint16_t * s ) { for ( uint16_t * p = s ; p ++ ) { if ( * p == '/' ) { * p = '\\' ; } } return s ; } 

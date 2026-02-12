@@ -1,0 +1,1 @@
+pvt { struct dns_p * dns ; int proto ; char * prbuf ; } 

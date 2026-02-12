@@ -1,1 +1,0 @@
-static inline void FlowSetICMPv4CounterPart ( Flow * f ) { int ctype = ICMPv4GetCounterpart ( f -> icmp_s . type ) ; f -> icmp_d . type = ( uint8_t ) ctype ; } 

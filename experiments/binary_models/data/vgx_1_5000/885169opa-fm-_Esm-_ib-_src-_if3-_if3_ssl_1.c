@@ -1,0 +1,1 @@
+void if3_ssl_conn_close ( void * context ) { if ( context ) { SSL_CTX_free ( ( SSL_CTX * ) context ) ; } } 

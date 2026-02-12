@@ -1,0 +1,1 @@
+static int cset_rangecmp ( struct csnode * t , wchar_t ch ) { if ( ch > t -> csn_max ) { return ( 1 ) ; } return ( 0 ) ; } 

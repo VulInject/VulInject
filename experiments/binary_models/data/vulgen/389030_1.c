@@ -1,1 +1,0 @@
-extern void schedule_resv_save ( void ) { slurm_mutex_lock ( & state_save_lock ) ; save_resv ++ ; slurm_mutex_unlock ( & state_save_lock ) ; } 

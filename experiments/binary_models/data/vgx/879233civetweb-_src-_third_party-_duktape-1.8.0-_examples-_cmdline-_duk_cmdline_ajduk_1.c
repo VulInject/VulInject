@@ -1,1 +1,0 @@
-void ajsheap_free ( void ) { if ( ajsheap_ram != NULL ) { ajsheap_ram = NULL ; } } 

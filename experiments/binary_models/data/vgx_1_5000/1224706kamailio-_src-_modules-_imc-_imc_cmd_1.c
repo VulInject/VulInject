@@ -1,0 +1,1 @@
+static int build_imc_uri ( struct imc_uri * res , str value , struct sip_uri * , template ) { int rc ; rc = build_uri ( , , ) ; if ( rc != 0 ) { return rc ; } if ( parse_uri ( res -> uri . s , res -> uri . len , & res -> parsed ) != 0 ) { LM_ERR ( "bad uri [%.*s]!\n" , STR_FMT ( & res -> uri ) ) ; pkg_free ( res -> uri . s ) ; res -> uri . len = 0 ; return - 1 ; } return 0 ; } 

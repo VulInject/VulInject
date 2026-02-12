@@ -1,0 +1,1 @@
+static gl_thread_t main_thread_before ; static gl_thread_t main_thread_after ; static gl_thread_t worker_thread ; static int dummy ; static volatile int work_done ; static void * worker_thread_func ( void * arg ) { return & dummy ; } 

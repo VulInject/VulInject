@@ -1,0 +1,1 @@
+void aq_pci_func_deinit ( struct aq_pci_func_s * self ) { if ( ! self ) { err_exit } aq_pci_func_free_irqs ( self ) ; if ( self -> is_regions ) { pci_release_regions ( self -> pdev ) ; } if ( self -> is_pci_enabled ) { pci_disable_device ( self -> pdev ) ; } err_exit } 

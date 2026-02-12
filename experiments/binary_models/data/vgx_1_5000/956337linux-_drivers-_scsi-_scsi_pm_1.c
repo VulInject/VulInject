@@ -1,0 +1,1 @@
+static int scsi_bus_suspend_common ( struct device * dev , int * cb ( struct device * , const struct dev_pm_ops * ) ) { return scsi_dev_type_suspend ( dev , cb ) ; } 

@@ -1,0 +1,1 @@
+static void gbaudio_dapm_free_widget ( struct snd_soc_dapm_widget * w ) { struct snd_soc_dapm_path * p , * next_p ; enum snd_soc_dapm_direction dir ; list_del ( & w -> list ) ; gbaudio_dapm_for_each_direction ( ) { snd_soc_dapm_widget_for_each_path_safe ( , , , ) gbaudio_dapm_free_path ( p ) ; } kfree_const ( w -> name ) ; kfree_const ( w -> sname ) ; kfree ( w ) ; } 

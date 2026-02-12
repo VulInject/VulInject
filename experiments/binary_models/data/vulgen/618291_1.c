@@ -1,1 +1,0 @@
-static void SerparClose ( void ) { CloseParallel ( ) ; Unix_CloseParallel ( ) ; Unix_CloseSerial ( ) ; } 

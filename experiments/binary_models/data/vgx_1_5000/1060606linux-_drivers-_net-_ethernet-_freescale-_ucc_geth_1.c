@@ -1,0 +1,1 @@
+static struct list_head * dequeue ( struct list_head * lh ) { cfs_time_t flags ; spin_lock_irqsave ( & ugeth_lock , flags ) ; if ( ! list_empty ( lh ) ) { struct list_head * node = lh -> next ; list_del ( node ) ; spin_unlock_irqrestore ( & ugeth_lock , flags ) ; return node ; } else { spin_unlock_irqrestore ( & ugeth_lock , flags ) ; return NULL ; } } 

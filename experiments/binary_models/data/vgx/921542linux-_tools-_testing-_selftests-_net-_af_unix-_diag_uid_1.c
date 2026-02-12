@@ -1,1 +1,0 @@
-FUN1 ( ) { close ( VAR1 -> VAR2 ) ; close ( VAR1 -> VAR3 , NULL ) ; }

@@ -1,0 +1,1 @@
+static void sdw_slave_port_free ( struct sdw_slave * slave , struct sdw_stream_runtime * stream ) { struct sdw_port_runtime * p_rt , * _p_rt ; struct sdw_master_runtime * m_rt ; struct sdw_slave_runtime * s_rt ; list_for_each_entry ( , , ) { list_for_each_entry ( , , ) { list_for_each_entry_safe ( , , , ) { sdw_port_free ( p_rt ) ; } } } } 

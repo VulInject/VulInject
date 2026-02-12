@@ -1,0 +1,1 @@
+static void via_driver_postclose ( struct drm_device * dev , struct drm_file * file ) { struct via_file_private * file_priv = file -> driver_priv ; } 

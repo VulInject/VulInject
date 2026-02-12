@@ -1,1 +1,0 @@
-static void sock_perror ( const char * s ) { fprintf ( stderr , "%s: %s\n" , s , err ) ; perror ( s ) ; } 

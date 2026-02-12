@@ -1,1 +1,0 @@
-static void exfile ( void ) { int c ; if ( oldmask ) { umask ( oldmask , NULL ) ; oldmask = 0 ; } eclose ( io ) ; io = - 1 ; if ( vflag ) { putd ( ) ; putchr ( '\n' ) ; if ( nulls ) { c = count ; count = nulls ; nulls = 0 ; putd ( ) ; puts ( gettext ( " nulls replaced by '\\0'" ) ) ; count = c ; } } } 

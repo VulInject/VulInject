@@ -1,0 +1,1 @@
+void bus_probe_device ( struct device * dev ) { struct subsys_private * sp = bus_to_subsys ( dev -> bus ) ; struct subsys_interface * sif ; if ( sp -> drivers_autoprobe ) { device_initial_probe ( dev ) ; } mutex_lock ( & sp -> mutex ) ; list_for_each_entry ( , , ) if ( sif -> add_dev ) { sif -> add_dev ( dev , sif ) ; } mutex_unlock ( & sp -> mutex ) ; subsys_put ( sp ) ; } 

@@ -1,1 +1,0 @@
-static const struct firmware card_fw [ ] { { 0 "darla20_dsp.fw" } } ; ; 

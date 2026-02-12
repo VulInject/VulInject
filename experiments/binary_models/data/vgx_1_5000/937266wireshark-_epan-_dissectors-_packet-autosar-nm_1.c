@@ -1,0 +1,1 @@
+static gchar * calc_hf_key ( user_data_field_t udf ) { gchar * ret ; ret = ws_strdup_printf ( "%i-%i-%" PRIu64 "-%s" , udf . udf_offset , udf . udf_length , udf . udf_mask , udf . udf_name ) ; return ret ; } 

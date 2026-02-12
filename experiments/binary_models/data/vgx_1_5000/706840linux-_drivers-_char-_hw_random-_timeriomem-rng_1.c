@@ -1,0 +1,1 @@
+timeriomem_rng_private { void __iomem * io_base ; ktime_t period ; int present 1 ; struct hrtimer timer ; struct completion completion ; struct hwrng rng_ops ; } 

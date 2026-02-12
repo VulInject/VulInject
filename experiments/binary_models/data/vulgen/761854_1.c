@@ -1,1 +1,0 @@
-static void __exit ifb_cleanup_module ( void ) { } 

@@ -1,1 +1,0 @@
-static int intel_chipset_send_intensity ( struct backlight_device * bd ) { int intensity = bd -> props . brightness ; if ( debug ) { pr_debug ( "setting brightness to %d\n" , intensity ) ; } intel_chipset_set_brightness ( intensity , NULL ) ; return 0 ; } 

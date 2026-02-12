@@ -1,0 +1,1 @@
+static struct hci_dev * hci_hdev_from_sock ( struct sock * sk ) { struct hci_dev * hdev = hci_pi ( sk ) -> hdev ; if ( hci_dev_test_flag ( hdev , HCI_UNREGISTER ) ) { return ERR_PTR ( - EPIPE ) ; } return hdev ; } 

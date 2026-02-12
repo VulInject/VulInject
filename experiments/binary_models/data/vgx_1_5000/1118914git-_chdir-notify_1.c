@@ -1,0 +1,1 @@
+chdir_notify_entry { const char * name ; chdir_notify_callback cb ; void * data ; int list ; } 

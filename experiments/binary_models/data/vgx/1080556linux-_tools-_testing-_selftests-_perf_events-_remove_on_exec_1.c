@@ -1,1 +1,0 @@
-FUN1 ( ) { close ( VAR1 -> VAR2 ) ; FUN2 ( VAR3 , & VAR1 -> VAR4 ) ; }

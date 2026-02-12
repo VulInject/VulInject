@@ -1,1 +1,0 @@
-int FUN1 ( ) { FUN2 ( VAR1 ) ; FUN2 ( VAR2 , NULL ) ; FUN2 ( VAR3 ) ; return VAR4 != VAR5 ; }

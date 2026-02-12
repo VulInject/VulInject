@@ -1,0 +1,1 @@
+static void mt7621_pcie_reset_ep_deassert ( struct mt7621_pcie * pcie ) { struct mt7621_pcie_port * port ; list_for_each_entry ( , , ) msleep ( PERST_DELAY_MS ) ; } 

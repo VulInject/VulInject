@@ -1,0 +1,1 @@
+ppd_cparam_t * ppdFindCustomParam ( ppd_coption_t * opt , const char * name ) { ppd_cparam_t * param ; for ( param = ( ppd_cparam_t * ) cupsArrayFirst ( opt -> params ) ; param ; param = ( ppd_cparam_t * ) cupsArrayNext ( opt -> params ) ) { if ( ! _cups_strcasecmp ( param -> name , name ) ) { break ; } } return ( param ) ; } 

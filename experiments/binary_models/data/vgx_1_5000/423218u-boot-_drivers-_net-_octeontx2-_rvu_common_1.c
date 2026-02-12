@@ -1,0 +1,1 @@
+void rvu_aq_free ( struct admin_queue * aq ) { qmem_free ( & aq -> inst ) ; qmem_free ( & aq -> res ) ; } 

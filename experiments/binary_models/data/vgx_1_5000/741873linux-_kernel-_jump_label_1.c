@@ -1,0 +1,1 @@
+static bool static_key_slow_try_dec ( struct static_key * key ) { int val ; val = atomic_fetch_add_unless ( & key -> enabled , - 1 , 1 ) ; WARN ( val < 0 , "jump label: negative count!\n" ) ; return true ; } 

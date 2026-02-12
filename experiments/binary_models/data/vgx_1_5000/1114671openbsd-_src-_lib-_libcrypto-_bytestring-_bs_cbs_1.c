@@ -1,0 +1,1 @@
+int CBS_get_bytes ( CBS * cbs , CBS * out , size_t len ) { const uint8_t * v ; CBS_init ( out , v , len ) ; return 1 ; } 

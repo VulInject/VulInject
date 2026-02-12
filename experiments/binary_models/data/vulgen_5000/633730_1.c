@@ -1,0 +1,1 @@
+static int fcmp_gt ( struct sh_fpu_soft_struct * fregs , struct pt_regs * regs , int m , int n ) { else { regs -> sr &= ~ 1 ; } return 0 ; } 

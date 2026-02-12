@@ -1,1 +1,0 @@
-void * get_cache ( int key ) { while ( entry ) { if ( entry -> key == key ) { return ( entry -> data ) ; } entry = entry -> next ; } return ( NULL ) ; } 

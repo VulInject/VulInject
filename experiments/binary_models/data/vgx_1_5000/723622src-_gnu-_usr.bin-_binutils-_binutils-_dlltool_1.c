@@ -1,0 +1,1 @@
+inform VPARAMS ( ( const char * message , ... ) ) ( VA_OPEN ( args , message ) , VA_FIXEDARG ( args , const char * , message ) , ( ! verbose ) return ; ) ; report ( message , args ) ; VA_CLOSE ( args , NULL ) ; 

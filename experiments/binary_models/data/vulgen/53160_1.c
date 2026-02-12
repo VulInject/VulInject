@@ -1,1 +1,0 @@
-void free_post_state ( post_state_t * state ) { if ( ! state ) { return ; } char * * headers = state -> headers ; if ( headers ) { while ( * headers ) { g_free ( * headers ++ ) ; } g_free ( state -> headers ) ; } free ( state -> body ) ; g_free ( state ) ; } 

@@ -1,0 +1,1 @@
+START_TEST ( ) { char * buf ; struct passwd * root = get_password_entry_by_uid ( & buf , 0 ) ; fail_unless ( uid_i == 6 ) ; fail_unless ( root != NULL ) ; } END_TEST START_TEST ( null_check ) { char * user_buf = NULL ; char * user_name = NULL ; struct passwd * ret_user = NULL ; ret_user = getpwnam_ext ( & user_buf , user_name ) ; } 

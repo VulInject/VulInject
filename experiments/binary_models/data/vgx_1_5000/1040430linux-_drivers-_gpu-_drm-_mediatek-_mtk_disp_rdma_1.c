@@ -1,0 +1,1 @@
+static irqreturn_t mtk_disp_rdma_irq_handler ( int irq , void * dev_id ) { struct mtk_disp_rdma * priv = dev_id ; writel ( 0x0 , priv -> regs + DISP_REG_RDMA_INT_STATUS ) ; priv -> vblank_cb ( priv -> vblank_cb_data ) ; return IRQ_HANDLED ; } 

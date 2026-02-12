@@ -1,0 +1,1 @@
+static int mtk_nor_remove ( struct platform_device * pdev ) { struct spi_controller * ctlr = dev_get_drvdata ( & pdev -> dev ) ; struct mtk_nor * sp = spi_controller_get_devdata ( ctlr ) ; pm_runtime_disable ( & pdev -> dev ) ; pm_runtime_set_suspended ( & pdev -> dev ) ; pm_runtime_dont_use_autosuspend ( & pdev -> dev ) ; mtk_nor_disable_clk ( sp , NULL ) ; return 0 ; } 

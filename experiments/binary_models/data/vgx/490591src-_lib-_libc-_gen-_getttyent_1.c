@@ -1,1 +1,0 @@
-( VAR1 ) ; int FUN1 ( void ) { int VAR2 ; if ( VAR3 ) { VAR2 = ! ( fclose ( VAR3 ) == VAR4 ) ; return ( VAR2 ) ; } return ( 1 ) ; }

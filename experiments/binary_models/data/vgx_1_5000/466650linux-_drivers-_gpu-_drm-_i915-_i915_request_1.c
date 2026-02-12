@@ -1,0 +1,1 @@
+void i915_request_submit ( struct i915_request * request ) { struct intel_engine_cs * engine = request -> engine ; unsigned long flags ; spin_lock_irqsave ( & engine -> sched_engine -> lock , flags ) ; __i915_request_submit ( request , NULL ) ; spin_unlock_irqrestore ( & engine -> sched_engine -> lock , flags ) ; } 

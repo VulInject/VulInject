@@ -1,0 +1,1 @@
+static void * afs_proc_cell_vlservers_next ( struct seq_file * p , void * v , loff_t * _pos ) { struct afs_cell * cell = p -> private ; loff_t pos ; _enter ( "cell=%p{nad=%u} pos=%Ld" , cell , cell -> vl_naddrs , * _pos ) ; pos = * _pos ; ( * _pos ) ++ ; return & cell -> vl_addrs [ pos ] ; } 

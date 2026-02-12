@@ -1,1 +1,0 @@
-DtCompileString ( , , ) { UINT32 Length ; Length = strlen ( Field -> Value ) ; if ( Length > ByteLength ) { sprintf ( MsgBuffer , "Maximum %u characters" , ByteLength ) ; Length = ByteLength ; } memcpy ( Buffer , Field -> Value , Length ) ; } 

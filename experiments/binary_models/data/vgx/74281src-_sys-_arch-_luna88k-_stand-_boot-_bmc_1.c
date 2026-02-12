@@ -1,1 +1,0 @@
-void bmccnprobe ( struct consdev * cp ) { if ( ( dipswitch & 0x4000 ) == 0 ) { cp -> cn_pri = CN_DEAD ; return ; } if ( nplane == 0 ) { cp -> cn_pri = CN_DEAD ; return ; } cp -> cn_pri = CN_LOWPRI ; } 

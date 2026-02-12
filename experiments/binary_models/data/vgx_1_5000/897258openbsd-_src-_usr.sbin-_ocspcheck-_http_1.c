@@ -1,0 +1,1 @@
+void http_get_free ( struct httpget * g ) { if ( g == NULL ) { return ; } http_close ( g -> xfer ) ; http_free ( g -> http ) ; } 

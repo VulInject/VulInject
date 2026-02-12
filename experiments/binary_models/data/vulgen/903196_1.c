@@ -1,1 +1,0 @@
-MODULE_AUTHOR ( "Olivier Moysan,<olivier.moysan@st.com>" ) ; MODULE_ALIAS ( "platform:st,stm32-sai" ) ; 

@@ -1,1 +1,0 @@
-{ else { proto_item_append_text ( ti , " (Size: invalid)" ) ; } } 

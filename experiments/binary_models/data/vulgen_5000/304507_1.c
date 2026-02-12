@@ -1,0 +1,1 @@
+static void sx9500_gpio_probe ( struct i2c_client * client , struct sx9500_data * data ) { struct device * dev ; dev = & client -> dev ; data -> gpiod_rst = devm_gpiod_get_index ( dev , SX9500_GPIO_RESET , 0 , GPIOD_OUT_HIGH ) ; if ( IS_ERR ( data -> gpiod_rst ) ) { dev_warn ( dev , "gpio get reset pin failed\n" ) ; data -> gpiod_rst = NULL ; } } 

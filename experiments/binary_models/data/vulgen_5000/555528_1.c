@@ -1,0 +1,1 @@
+static int tcic_init ( struct pcmcia_socket * s ) { int i ; pccard_io_map io = { 0 0 0 0 1 } ; pccard_mem_map mem = { . res = & res } ; for ( i = 0 ; i < 2 ; i ++ ) { io . map = i ; tcic_set_io_map ( s , & io ) ; } for ( i = 0 ; i < 5 ; i ++ ) { mem . map = i ; tcic_set_mem_map ( s , & mem ) ; } return 0 ; } 

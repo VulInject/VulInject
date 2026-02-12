@@ -1,0 +1,1 @@
+void * assoc_get_iterator ( void ) { struct assoc_iterator * iter = calloc ( 1 , sizeof ( assoc_iterator ) ) ; mutex_lock ( & maintenance_lock ) ; return iter ; } 

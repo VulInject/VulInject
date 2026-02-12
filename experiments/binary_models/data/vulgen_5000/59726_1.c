@@ -1,0 +1,1 @@
+struct _InfCommunicationGroupPrivate InfCommunicationGroupPrivate _InfCommunicationGroupPrivate { InfCommunicationManager * communication_manager ; InfCommunicationRegistry * communication_registry ; gchar * name ; InfCommunicationObject * target ; } 

@@ -1,1 +1,0 @@
-static rsRetVal onRegularClose ( tcps_sess_t * pSess ) { DEFiRet ; tcps_sess . PrepareClose ( pSess ) ; tcps_sess . Close ( pSess ) ; RETiRet ; } 

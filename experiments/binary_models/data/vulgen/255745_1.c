@@ -1,1 +1,0 @@
-static uint32_t cc_calc_lcbb ( int dst ) { return dst == 16 ?0 : 3 ; } 

@@ -1,0 +1,1 @@
+static int __init integrity_fs_init ( void ) { integrity_dir = securityfs_create_dir ( "integrity" , NULL ) ; if ( IS_ERR ( integrity_dir ) ) { int ret = PTR_ERR ( integrity_dir ) ; if ( ret != - ENODEV ) { pr_err ( "Unable to create integrity sysfs dir: %d\n" , ret ) ; } return ret ; } return 0 ; } 

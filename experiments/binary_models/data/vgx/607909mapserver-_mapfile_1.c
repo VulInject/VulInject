@@ -1,1 +1,0 @@
-void FUN1 ( char * * VAR1 , int VAR2 ) { int VAR3 ; for ( VAR3 = 0 ; VAR3 < VAR2 ; VAR3 ++ ) { FUN2 ( VAR1 [ VAR3 ] ) ; } FUN2 ( VAR1 ) ; }

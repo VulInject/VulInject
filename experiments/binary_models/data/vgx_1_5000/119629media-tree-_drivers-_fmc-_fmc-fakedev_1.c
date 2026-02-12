@@ -1,0 +1,1 @@
+static void ff_dev_release ( struct device * dev ) { struct ff_dev * ff = container_of ( dev , ff_dev , dev ) ; } 

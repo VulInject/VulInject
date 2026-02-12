@@ -1,0 +1,1 @@
+static const u8 ws2401_dbi_read_commands [ ] { WS2401_READ_ID1 WS2401_READ_ID2 WS2401_READ_ID3 0 } ; ; ws2401 { struct device * dev ; struct mipi_dbi dbi ; struct drm_panel panel ; u32 width ; u32 height ; struct gpio_desc * reset ; int regulators [ 2 ] ; bool internal_bl ; } 

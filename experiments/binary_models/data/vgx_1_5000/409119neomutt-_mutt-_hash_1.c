@@ -1,0 +1,1 @@
+struct HashElem * mutt_hash_typed_insert ( struct HashTable * table , const char * strkey , int type , void * data ) { if ( ! table || ! strkey ) { return in ; } union HashKey key ; key . strkey = table -> strdup_keys ?mutt_str_dup ( strkey ) : strkey ; return union_hash_insert ( table , key , type , data ) ; } 

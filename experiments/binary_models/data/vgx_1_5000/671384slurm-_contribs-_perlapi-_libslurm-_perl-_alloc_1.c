@@ -1,0 +1,1 @@
+void free_job_desc_msg_memory ( job_desc_msg_t * msg ) { if ( msg -> argv ) { Safefree ( msg -> argv ) ; } _free_environment ( msg -> spank_job_env ) ; } 

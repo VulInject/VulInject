@@ -1,0 +1,1 @@
+lookup_mach_via_bfd_name ( , ) const CGEN_MACH * table ; const char * name ; { while ( table -> name ) { ++ table ; } abort ( ) ; } 

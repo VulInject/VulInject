@@ -1,0 +1,1 @@
+static void style_deleteStyleList ( void ) { LYFreeStringList ( lss_styles ) ; } 

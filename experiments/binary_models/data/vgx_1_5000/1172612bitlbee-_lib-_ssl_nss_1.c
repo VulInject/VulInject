@@ -1,0 +1,1 @@
+void ssl_disconnect ( void * conn_ ) { struct scd * conn = conn_ ; if ( conn -> prfd ) { PR_Close ( conn -> prfd ) ; } if ( conn -> fd ) { proxy_disconnect ( conn -> fd ) ; } g_free ( conn ) ; } 

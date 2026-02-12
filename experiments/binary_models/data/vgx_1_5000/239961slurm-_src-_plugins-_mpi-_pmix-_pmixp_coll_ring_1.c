@@ -1,0 +1,1 @@
+void pmixp_coll_ring_free ( pmixp_coll_ring_t * ring ) { int i ; pmixp_coll_ring_ctx_t * coll_ctx ; for ( i = 0 ; i < PMIXP_COLL_RING_CTX_NUM ; i ++ ) { coll_ctx = & ring -> ctx_array [ i ] ; FREE_NULL_BUFFER ( coll_ctx -> ring_buf ) ; } FREE_NULL_LIST ( ring -> fwrd_buf_pool ) ; FREE_NULL_LIST ( ring -> ring_buf_pool ) ; } 

@@ -1,0 +1,1 @@
+static void table_init ( struct table * t ) { INIT_LIST_HEAD ( & t -> offsets ) ; t -> offset_max = 0 ; t -> table = NULL ; } 

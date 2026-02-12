@@ -1,0 +1,1 @@
+static int sctp_side_effects ( sctp_event_t event_type , sctp_subtype_t subtype , sctp_state_t state , struct sctp_endpoint * ep , struct sctp_association * * asoc , void * event_arg , sctp_disposition_t status , sctp_cmd_seq_t * commands , gfp_t gfp ) static void sctp_do_ecn_ce_work ( struct sctp_association * asoc , __u32 lowest_tsn ) { asoc -> last_ecne_tsn = lowest_tsn ; } 

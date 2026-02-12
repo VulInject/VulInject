@@ -1,1 +1,0 @@
-void tls_content_free ( struct tls_content * content ) { tls_content_clear ( content ) ; freezero ( content , sizeof ( tls_content ) ) ; } 

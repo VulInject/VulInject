@@ -1,0 +1,1 @@
+static void da9052_spi_remove ( struct spi_device * spi ) { struct da9052 * da9052 = spi_get_drvdata ( spi ) ; } static const struct spi_device_id da9052_spi_id [ ] { { "da9052" DA9052 } { "da9053-aa" DA9053_AA } { "da9053-ba" DA9053_BA } { "da9053-bb" DA9053_BB } { "da9053-bc" DA9053_BC } { } } ; ; 

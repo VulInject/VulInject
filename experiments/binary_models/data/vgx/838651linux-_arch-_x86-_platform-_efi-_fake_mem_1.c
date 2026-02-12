@@ -1,1 +1,0 @@
-void __init efi_fake_memmap ( void ) { int i ; for ( i = 0 ; i < nr_fake_mem ; i ++ ) { efi_fake_range ( & efi_fake_mems [ i ] ) ; } efi_print_memmap ( ) ; } 

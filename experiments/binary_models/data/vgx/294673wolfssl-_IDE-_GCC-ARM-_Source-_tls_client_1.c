@@ -1,1 +1,0 @@
-static int CbIOSend ( WOLFSSL * ssl , char * buf , int sz , void * ctx ) { int ret = WOLFSSL_CBIO_ERR_GENERAL ; ( void ) ssl ; ( void ) ctx ; ret = usart_write_buffer_wait ( & cdc_uart_module , buf , sz ) ; return ( ret == STATUS_OK ) ?sz : WOLFSSL_CBIO_ERR_GENERAL ; return ret ; } 

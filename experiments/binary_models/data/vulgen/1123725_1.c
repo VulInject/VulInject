@@ -1,1 +1,0 @@
-zstd_dstream * zstd_init_dstream ( size_t max_window_size , void * workspace , size_t workspace_size ) { ( void ) max_window_size ; return ZSTD_initStaticDStream ( workspace , workspace_size ) ; } 

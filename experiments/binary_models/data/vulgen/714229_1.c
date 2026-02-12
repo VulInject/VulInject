@@ -1,1 +1,0 @@
-static void on_timeout ( nw_state_entry * entry ) { } 

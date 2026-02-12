@@ -1,0 +1,1 @@
+device_initcall ( scsi_debug_init ) ; module_exit ( scsi_debug_exit ) ; static void sdebug_release_adapter ( struct device * dev ) { struct sdebug_host_info * sdbg_host ; sdbg_host = to_sdebug_host ( dev ) ; } 

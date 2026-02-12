@@ -1,0 +1,1 @@
+static struct fsl_diu_shared_fb __attribute__ ( ( __aligned__ ( 8 ) ) ) diu_shared_fb ; static inline void mpc512x_free_bootmem ( struct page * page ) { BUG_ON ( PageTail ( page ) ) ; BUG_ON ( page_ref_count ( page ) > 1 ) ; } 

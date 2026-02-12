@@ -1,0 +1,1 @@
+static pg_iter_t * pg_iter_create ( entity_t * e , const char * restriction ) { pg_iter_t * i ; assert ( e -> sc_etype == SVCCFG_INSTANCE_OBJECT ) ; i = uu_zalloc ( sizeof ( * i ) ) ; i -> pgi_entity = e ; i -> pgi_restrict = restriction ; i -> pgi_level = TL_COMPOSED ; i -> pgi_service = e -> sc_parent ; return ( i ) ; } 

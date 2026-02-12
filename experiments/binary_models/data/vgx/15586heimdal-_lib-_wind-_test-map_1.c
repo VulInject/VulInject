@@ -1,1 +1,0 @@
-int main ( void ) { unsigned i ; int failures = 0 ; for ( i = 0 ; i < sizeof ( cases ) / sizeof ( cases [ 0 ] ) ; ++ i ) { failures += try ( & cases [ i ] ) ; } return failures != 0 ; } 

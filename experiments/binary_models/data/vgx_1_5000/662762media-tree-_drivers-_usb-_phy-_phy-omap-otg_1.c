@@ -1,0 +1,1 @@
+otg_device { void __iomem * base ; bool id ; bool vbus ; struct extcon_dev * extcon ; struct notifier_block vbus_nb ; int id_nb ; } 

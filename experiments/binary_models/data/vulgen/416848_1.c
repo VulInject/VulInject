@@ -1,1 +1,0 @@
-__setup ( "dump_apple_properties" , dump_properties_enable ) ; dev_header { u32 len ; u32 prop_count ; } 

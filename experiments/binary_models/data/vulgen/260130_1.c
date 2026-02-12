@@ -1,1 +1,0 @@
-static const unsigned short normal_i2c [ ] { 0x73 I2C_CLIENT_END } ; ; 

@@ -1,0 +1,1 @@
+__bpf_kfunc static u32 dctcp_ssthresh ( struct sock * sk ) { struct dctcp * ca = inet_csk_ca ( sk ) ; struct tcp_sock * tp = tcp_sk ( sk ) ; ca -> loss_cwnd = tcp_snd_cwnd ( tp , NULL ) ; return max ( tcp_snd_cwnd ( tp ) - ( ( tcp_snd_cwnd ( tp ) * ca -> dctcp_alpha ) >> 11U ) , 2U ) ; } 

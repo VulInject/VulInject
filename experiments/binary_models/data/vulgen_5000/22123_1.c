@@ -1,0 +1,1 @@
+static void snd_ice1712_stdsp24_darear ( struct snd_ice1712 * ice , int activate ) { struct hoontech_spec * spec = ice -> spec ; ICE1712_STDSP24_0_DAREAR ( spec -> boxbits , activate ) ; snd_ice1712_stdsp24_gpio_write ( ice , spec -> boxbits [ 0 ] ) ; mutex_unlock ( & ice -> gpio_mutex ) ; } 

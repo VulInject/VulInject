@@ -1,1 +1,0 @@
-static void FUN1 ( const struct VAR1 * VAR2 , int VAR3 ) { int VAR4 = FUN2 ( ) ; unsigned int VAR5 ; FUN3 ( , ) { if ( VAR5 != VAR4 ) { FUN4 ( VAR5 , VAR3 ) ; } } }

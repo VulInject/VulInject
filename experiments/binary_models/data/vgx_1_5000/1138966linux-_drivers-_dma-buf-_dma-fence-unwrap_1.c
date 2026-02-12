@@ -1,0 +1,1 @@
+static struct dma_fence * __dma_fence_unwrap_array ( struct dma_fence_unwrap * cursor ) { cursor -> array = dma_fence_chain_contained ( cursor -> chain ) ; return dma_fence_array_first ( cursor -> array ) ; } 

@@ -1,1 +1,0 @@
-static void isis_area_verify_routes_cb ( struct thread * thread ) { struct isis_area * area = THREAD_ARG ( thread ) ; if ( IS_DEBUG_LFA ) { zlog_debug ( "ISIS-LFA: updating RLFAs in the RIB" ) ; } } 

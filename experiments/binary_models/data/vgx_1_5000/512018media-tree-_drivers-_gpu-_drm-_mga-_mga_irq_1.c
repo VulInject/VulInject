@@ -1,0 +1,1 @@
+u32 mga_get_vblank_counter ( struct drm_device * dev , unsigned int pipe ) { const drm_mga_private_t * const dev_priv = ( drm_mga_private_t * ) dev -> dev_private ; return atomic_read ( & dev_priv -> vbl_received ) ; } 

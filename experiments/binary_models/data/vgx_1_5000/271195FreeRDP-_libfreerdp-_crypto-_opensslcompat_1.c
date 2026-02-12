@@ -1,0 +1,1 @@
+BIO_METHOD * BIO_meth_new ( int type , const char * name ) { BIO_METHOD * m ; if ( ! ( m = calloc ( 1 , sizeof ( BIO_METHOD ) ) ) ) { return in ; } m -> type = type ; m -> name = name ; return m ; } 

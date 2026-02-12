@@ -1,0 +1,1 @@
+int afu_mmap ( struct file * file , struct vm_area_struct * vm ) { struct cxl_context * ctx = file -> private_data ; if ( ! cxl_ops -> link_ok ( ctx -> afu -> adapter , ctx -> afu ) ) { return - EIO ; } return cxl_context_iomap ( ctx , vm ) ; } 

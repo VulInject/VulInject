@@ -1,1 +1,0 @@
-int _validateNamespace ( xmlNsPtr psNsOws ) { char namespace_prefix [ 10 ] ; sprintf ( namespace_prefix , "%s" , psNsOws -> prefix ) ; if ( strcmp ( namespace_prefix , MS_OWSCOMMON_OWS_NAMESPACE_PREFIX ) == 0 ) { return MS_SUCCESS ; } else { return MS_FAILURE ; } } 

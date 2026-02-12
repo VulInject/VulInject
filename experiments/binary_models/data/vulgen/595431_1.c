@@ -1,1 +1,0 @@
-static void pr_manager_helper_register_types ( void ) { type_register_static ( 0 ) ; } 

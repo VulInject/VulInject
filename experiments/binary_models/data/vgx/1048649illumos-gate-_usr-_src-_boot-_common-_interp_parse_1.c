@@ -1,1 +1,0 @@
-static void clean ( void ) { int i ; for ( i = 0 ; i < MAXARGS ; i ++ ) { args [ i ] = NULL ; } } 

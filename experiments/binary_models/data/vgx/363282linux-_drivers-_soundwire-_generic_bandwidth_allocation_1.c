@@ -1,1 +1,0 @@
-sdw_group_params { unsigned int rate ; int full_bw ; int payload_bw ; int hwidth ; } 

@@ -1,0 +1,1 @@
+void sshlogdirect ( LogLevel level , int forced , const char * fmt , ... ) { va_list args ; va_start ( args , fmt ) ; do_log ( level , forced , fmt , args ) ; va_end ( args ) ; } 

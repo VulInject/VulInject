@@ -1,0 +1,1 @@
+static vm_fault_t vma_fault ( struct vm_fault * vmf ) { struct page * page ; page = vmalloc_to_page ( ( void * ) ( vmf -> pgoff << PAGE_SHIFT ) ) ; get_page ( page ) ; vmf -> page = page ; return 0 ; } 

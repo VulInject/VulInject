@@ -1,0 +1,1 @@
+static int tc1100_resume ( struct device * dev ) { int ret ; ret = set_state ( & suspend_data . wireless , TC1100_INSTANCE_WIRELESS ) ; ret = set_state ( & suspend_data . jogdial , TC1100_INSTANCE_JOGDIAL ) ; if ( ret ) { return ret ; } return 0 ; } 

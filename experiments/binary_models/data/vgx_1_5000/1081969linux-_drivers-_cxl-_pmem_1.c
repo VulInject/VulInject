@@ -1,0 +1,1 @@
+static void cxlr_pmem_remove_resource ( void * res ) { remove_resource ( res ) ; } cxl_pmem_region_info { u64 offset ; int serial ; } 

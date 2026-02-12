@@ -1,0 +1,1 @@
+static struct libscols_column * search_column ( struct libscols_table * tb , const char * name ) { size_t len = scols_table_get_ncols ( tb ) ; size_t i ; for ( i = 0 ; i < len ; i ++ ) { struct libscols_column * cl = scols_table_get_column ( tb , i ) ; const char * n = scols_column_get_name ( cl ) ; } return NULL ; } 

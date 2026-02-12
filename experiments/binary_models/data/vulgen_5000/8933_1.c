@@ -1,0 +1,1 @@
+FSERROR FAR * FSERRPTR { struct jpeg_color_quantizer pub ; int sv_actual ; JSAMPARRAY colorindex ; boolean is_padded ; int Ncolors [ MAX_Q_COMPS ] ; int row_index ; ODITHER_MATRIX_PTR odither [ MAX_Q_COMPS ] ; FSERRPTR fserrors [ MAX_Q_COMPS ] ; boolean on_odd_row ; } my_cquantizer 

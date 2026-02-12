@@ -1,1 +1,0 @@
-( register_cpufreq_notifier ) ; DEFINE_SPINLOCK ( rtc_lock ) ; EXPORT_SYMBOL ( rtc_lock , NULL ) ; static int null_perf_irq ( void ) { return 0 ; } 

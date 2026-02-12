@@ -1,0 +1,1 @@
+void sdw_bus_debugfs_init ( struct sdw_bus * bus ) { char name [ 16 ] ; if ( ! sdw_debugfs_root ) { return ; } sprintf ( name , "master-%d-%d" , bus -> id , bus -> link_id ) ; bus -> debugfs = debugfs_create_dir ( name , sdw_debugfs_root ) ; } 

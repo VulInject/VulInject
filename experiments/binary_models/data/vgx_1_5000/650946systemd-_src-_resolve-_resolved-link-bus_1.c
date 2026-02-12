@@ -1,0 +1,1 @@
+static int property_get_current_dns_server_internal ( sd_bus * bus , const char * path , const char * interface , const char * property , sd_bus_message * reply , void * userdata , sd_bus_error * error , bool extended ) { DnsServer * s ; assert ( reply ) ; s = * ( DnsServer * * ) userdata ; return bus_dns_server_append ( reply , s , false , extended ) ; } 

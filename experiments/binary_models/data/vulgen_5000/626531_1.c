@@ -1,0 +1,1 @@
+static void gf119_disp_intr_unk2_0 ( struct nv50_disp * disp , int head ) { struct nvkm_subdev * subdev = & disp -> base . engine . subdev ; struct nvkm_output * outp = exec_script ( disp , head , 2 ) ; if ( outp && outp -> info . type == DCB_OUTPUT_DP ) { struct nvkm_output_dp * outpdp = nvkm_output_dp ( outp ) ; } } 

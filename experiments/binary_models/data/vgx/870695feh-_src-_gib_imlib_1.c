@@ -1,1 +1,0 @@
-char * FUN1 ( Imlib_Image VAR1 ) { FUN2 ( VAR1 , NULL ) ; return FUN3 ( ) ; }

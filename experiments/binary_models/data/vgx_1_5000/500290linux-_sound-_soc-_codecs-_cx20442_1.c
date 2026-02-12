@@ -1,0 +1,1 @@
+static int v253_open ( struct tty_struct * tty ) { int ret , len = strlen ( v253_init ) ; if ( ! tty -> ops -> write ) { return - EINVAL ; } tty -> receive_room = 16 ; if ( tty -> ops -> write ( tty , v253_init , len ) != len ) { ret = - EIO ; err } return 0 ; err tty -> disc_data = NULL ; return ret ; } 

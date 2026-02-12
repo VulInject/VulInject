@@ -1,0 +1,1 @@
+void pci_epc_destroy ( struct pci_epc * epc ) { pci_ep_cfs_remove_epc_group ( epc -> group ) ; device_unregister ( & epc -> dev ) ; } 

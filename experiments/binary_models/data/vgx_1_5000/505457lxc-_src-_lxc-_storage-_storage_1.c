@@ -1,0 +1,1 @@
+bool storage_is_dir ( struct lxc_conf * conf ) { struct lxc_storage * orig ; char * type = conf -> rootfs . bdev_type ; bool bret = false ; if ( type ) { return ( strcmp ( type , "dir" ) == 0 ) ; } orig = storage_init ( conf ) ; if ( strcmp ( orig -> type , "dir" ) == 0 ) { bret = true ; } storage_put ( orig ) ; return bret ; } 

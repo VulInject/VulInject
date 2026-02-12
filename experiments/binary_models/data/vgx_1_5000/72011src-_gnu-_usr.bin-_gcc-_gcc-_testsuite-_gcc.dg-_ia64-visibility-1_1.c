@@ -1,0 +1,1 @@
+void bar ( void ) { variable_m . a [ 10 ] = 0 ; variable_n . a [ 10 ] = 0 ; } 

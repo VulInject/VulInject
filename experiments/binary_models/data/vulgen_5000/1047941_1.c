@@ -1,0 +1,1 @@
+static int rndis_disconnect ( struct wiphy * wiphy , struct net_device * dev , u16 reason_code ) { struct rndis_wlan_private * priv = wiphy_priv ( wiphy ) ; struct usbnet * usbdev = priv -> usbdev ; netdev_dbg ( usbdev -> net , "cfg80211.disconnect(%d)\n" , reason_code ) ; priv -> connected = false ; return deauthenticate ( usbdev ) ; } 

@@ -1,0 +1,1 @@
+static __unused IPAddrBlocks * d2i_IPAddrBlocks ( IPAddrBlocks * * addrs , const unsigned char * * in , long len ) { const ASN1_ITEM_EXP * my_IPAddrBlocks_it ; return ( IPAddrBlocks * ) ASN1_item_d2i ( ( ASN1_VALUE * * ) addrs , in , len , my_IPAddrBlocks_it ) ; } 

@@ -1,0 +1,1 @@
+static umode_t max16065_basic_is_visible ( struct kobject * kobj , struct attribute * a , int n ) { struct device * dev = container_of ( kobj , device , kobj ) ; struct max16065_data * data = dev_get_drvdata ( dev ) ; int index = n / 4 ; return a -> mode ; } 

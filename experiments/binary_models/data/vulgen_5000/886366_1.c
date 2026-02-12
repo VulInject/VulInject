@@ -1,0 +1,1 @@
+static char * field_debug_num ( u_int8_t * buf , size_t len , struct constant_map * * maps ) { char * retval ; u_int32_t val ; if ( asprintf ( & retval , "%u" , val ) == - 1 ) { return NULL ; } return retval ; } 

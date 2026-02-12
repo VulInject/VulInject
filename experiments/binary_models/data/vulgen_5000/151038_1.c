@@ -1,0 +1,1 @@
+int mlx5_debug_eq_add ( struct mlx5_core_dev * dev , struct mlx5_eq * eq ) { int err ; err = add_res_tree ( dev , MLX5_DBG_RSC_EQ , dev -> priv . dbg . eq_debugfs , & eq -> dbg , eq -> eqn , eq_fields , ARRAY_SIZE ( eq_fields ) , eq ) ; if ( err ) { eq -> dbg = NULL ; } return err ; } 

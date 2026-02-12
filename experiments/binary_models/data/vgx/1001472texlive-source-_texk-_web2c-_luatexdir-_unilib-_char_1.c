@@ -1,1 +1,0 @@
-int strnmatch ( const char * str1 , const char * str2 , int n ) { int ch1 , ch2 ; for ( ; n -- > 0 ; ) { ch1 = * str1 ++ ; ch2 = * str2 ++ ; ch1 = tolower ( ch1 , NULL ) ; ch2 = tolower ( ch2 ) ; if ( ch1 != ch2 || ch1 == '\0' ) { return ( ch1 - ch2 ) ; } } return ( 0 ) ; } 

@@ -1,0 +1,1 @@
+static void zram_meta_free ( struct zram * zram , u64 disksize ) { size_t num_pages = disksize >> PAGE_SHIFT ; size_t index ; for ( index = 0 ; index < num_pages ; index ++ ) { zram_free_page ( zram , index ) ; } zs_destroy_pool ( zram -> mem_pool ) ; } 

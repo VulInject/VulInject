@@ -1,0 +1,1 @@
+( drm_warn_on_modeset_not_all_locked ) ; void drm_modeset_acquire_init ( struct drm_modeset_acquire_ctx * ctx , uint32_t flags ) { ww_acquire_init ( & ctx -> ww_ctx , & crtc_ww_class ) ; INIT_LIST_HEAD ( & ctx -> locked ) ; } 

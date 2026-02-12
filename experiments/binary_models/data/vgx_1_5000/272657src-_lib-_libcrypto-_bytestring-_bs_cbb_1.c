@@ -1,0 +1,1 @@
+static int cbb_init ( CBB * cbb , uint8_t * buf , size_t cap ) { struct cbb_buffer_st * base ; if ( ( base = calloc ( 1 , sizeof ( cbb_buffer_st ) ) ) == NULL ) { return 0 ; } base -> buf = buf ; base -> len = 0 ; base -> cap = cap ; base -> can_resize = 1 ; cbb -> base = base ; return 1 ; } 

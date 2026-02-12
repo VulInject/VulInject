@@ -1,0 +1,1 @@
+int global_func8 ( struct __sk_buff * skb ) { return 1 ; } 

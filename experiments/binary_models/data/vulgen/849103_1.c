@@ -1,1 +1,0 @@
-static int intc_map ( struct irq_domain * d , unsigned int irq , irq_hw_number_t hw ) { return 0 ; } 

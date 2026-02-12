@@ -1,1 +1,0 @@
-vms_asm_out_constructor ( , ) rtx symbol ; int priority ATTRIBUTE_UNUSED ; { ctors_section ( ) ; assemble_align ( BITS_PER_WORD ) ; } 

@@ -1,1 +1,0 @@
-static int FUN1 ( struct VAR1 * VAR2 , void * VAR3 ) { return FUN2 ( FUN3 ( VAR2 ) ) ; }

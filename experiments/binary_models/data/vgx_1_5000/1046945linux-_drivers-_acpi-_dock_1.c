@@ -1,0 +1,1 @@
+static struct dock_station * find_dock_station ( acpi_handle handle ) { struct dock_station * ds ; list_for_each_entry ( , , ) return NULL ; } 

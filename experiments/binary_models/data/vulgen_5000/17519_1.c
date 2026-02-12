@@ -1,0 +1,1 @@
+void * dlmopen ( Lmid_t lmid , const char * pathname , int mode ) { kmdb_modctl_t * kmc ; kmc -> kmc_dlrefcnt ++ ; dl_errstr = NULL ; return ( kmc ) ; } 

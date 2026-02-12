@@ -1,0 +1,1 @@
+void * order_close ( void * d ) { struct order_data * data = ( order_data * ) d ; if ( data != NULL ) { rand_close ( data -> rnd ) ; } return ( NULL ) ; } 

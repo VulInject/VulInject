@@ -1,0 +1,1 @@
+static int smsc_startup ( struct phy_device * phydev ) { int ret ; ret = genphy_update_link ( phydev ) ; return smsc_parse_status ( phydev ) ; } static struct phy_driver lan8700_driver = { . name = "SMSC LAN8700" . uid = 0x0007c0c0 . mask = 0xffff0 . features = PHY_BASIC_FEATURES . config = & genphy_config_aneg . startup = & smsc_startup . shutdown = & genphy_shutdown } ; 

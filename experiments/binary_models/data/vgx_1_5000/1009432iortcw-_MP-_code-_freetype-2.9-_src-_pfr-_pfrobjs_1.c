@@ -1,0 +1,1 @@
+FT_LOCAL_DEF ( ) pfr_face_done ( ) { PFR_Face face = ( PFR_Face ) pfrface ; FT_Memory memory ; memory = pfrface -> driver -> root . memory ; pfrface -> family_name = NULL ; pfrface -> style_name = NULL ; pfr_phy_font_done ( & face -> phy_font , FT_FACE_MEMORY ( face ) ) ; FT_FREE ( pfrface -> available_sizes ) ; } FT_LOCAL_DEF ( ) pfr_face_init ( , , , , ) { } 

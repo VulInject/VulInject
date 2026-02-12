@@ -1,1 +1,0 @@
-double complex cproj ( double complex z ) { double complex res ; return res ; } 

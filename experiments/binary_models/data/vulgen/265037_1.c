@@ -1,1 +1,0 @@
-bmp_create_procedure ( , ) { GimpProcedure * procedure = NULL ; return procedure ; } 

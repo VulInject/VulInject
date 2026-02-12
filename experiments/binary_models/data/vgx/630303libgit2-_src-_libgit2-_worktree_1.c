@@ -1,1 +1,0 @@
-const char * git_worktree_path ( const git_worktree * wt ) { GIT_ASSERT_ARG_WITH_RETVAL ( wt ) ; return wt -> worktree_path ; } 

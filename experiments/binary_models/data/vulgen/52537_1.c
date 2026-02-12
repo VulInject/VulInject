@@ -1,1 +1,0 @@
-static bool shimBoolConsistentFn ( GinScanKey key ) { GinTernaryValue result ; if ( result == GIN_MAYBE ) { key -> recheckCurItem = true ; return true ; } else { key -> recheckCurItem = false ; return result ; } } 

@@ -1,1 +1,0 @@
-uint32_t af_parent ; uint32_t af_child ; int af_pbuf [ 4096 ] ; uint8_t af_cbuf [ 4096 ] ; 

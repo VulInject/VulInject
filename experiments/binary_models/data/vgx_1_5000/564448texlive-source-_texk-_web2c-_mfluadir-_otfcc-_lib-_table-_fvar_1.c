@@ -1,0 +1,1 @@
+static INLINE void initFvar ( table_fvar * fvar ) { vf_iAxes . init ( & fvar -> axes ) ; fvar_iInstanceList . init ( & fvar -> instances ) ; } 

@@ -1,1 +1,0 @@
-static gboolean spice_char_source_prepare ( GSource * source , gint * timeout ) { SpiceCharSource * src = ( SpiceCharSource * ) source ; Chardev * chr = CHARDEV ( src -> scd ) ; * timeout = - 1 ; return ! src -> scd -> blocked ; } 

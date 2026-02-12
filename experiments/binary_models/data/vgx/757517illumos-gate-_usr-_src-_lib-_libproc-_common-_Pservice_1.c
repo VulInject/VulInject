@@ -1,1 +1,0 @@
-ps_err_e FUN1 ( struct VAR1 * VAR2 , lwpid_t VAR3 , prgregset_t VAR4 ) { if ( VAR2 -> VAR5 != VAR6 && VAR2 -> VAR5 != VAR7 ) { return ( VAR8 ) ; } return ( VAR9 ) ; }

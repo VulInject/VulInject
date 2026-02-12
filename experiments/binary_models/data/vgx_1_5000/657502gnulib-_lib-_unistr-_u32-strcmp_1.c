@@ -1,0 +1,1 @@
+program . If not , see < https : int u32_strcmp ( , ) { for ( ; ; ) { uint32_t uc1 = * s1 ++ ; uint32_t uc2 = * s2 ++ ; return ( int ) uc1 - ( int ) uc2 ; ; } } ; 

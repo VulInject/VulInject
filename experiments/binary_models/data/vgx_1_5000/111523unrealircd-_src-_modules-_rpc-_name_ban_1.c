@@ -1,0 +1,1 @@
+TKL * my_find_tkl_nameban ( const char * name ) { TKL * tkl ; for ( tkl = tklines [ tkl_hash ( 'Q' ) ] ; tkl ; tkl = tkl -> next ) { if ( ! strcasecmp ( name , tkl -> ptr . nameban -> name ) ) { return tkl ; } } return NULL ; } 

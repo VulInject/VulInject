@@ -1,0 +1,1 @@
+int drm_legacy_agp_release ( struct drm_device * dev ) { if ( ! dev -> agp || ! dev -> agp -> acquired ) { return - EINVAL ; } agp_backend_release ( dev -> agp -> bridge ) ; return 0 ; } 

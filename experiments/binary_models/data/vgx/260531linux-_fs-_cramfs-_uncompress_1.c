@@ -1,1 +1,0 @@
-int cramfs_uncompress_init ( void ) { if ( ! initialized ++ ) { stream . workspace = vmalloc ( zlib_inflate_workspacesize ( ) ) ; if ( ! stream . workspace ) { initialized = 0 ; return - ENOMEM ; } stream . avail_in = 0 ; zlib_inflateInit ( & stream ) ; } return 0 ; } 

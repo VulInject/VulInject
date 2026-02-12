@@ -1,0 +1,1 @@
+void snic_trc_free ( void ) { struct snic_trc * trc = & snic_glob -> trc ; trc -> enable = false ; snic_trc_debugfs_term ( ) ; if ( trc -> buf ) { vfree ( trc -> buf ) ; } SNIC_INFO ( "Trace Facility Disabled.\n" ) ; } 

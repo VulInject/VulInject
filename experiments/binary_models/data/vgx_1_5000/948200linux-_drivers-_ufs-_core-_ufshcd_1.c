@@ -1,0 +1,1 @@
+static int param_set_mcq_mode ( const char * val , const struct kernel_param * kp ) { int ret ; ret = param_set_bool ( val , kp ) ; return 0 ; } 

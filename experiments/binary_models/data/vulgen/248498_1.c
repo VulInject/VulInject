@@ -1,1 +1,0 @@
-void sl3516_ce_cipher_exit ( struct crypto_tfm * tfm ) { struct sl3516_ce_cipher_tfm_ctx * op = crypto_tfm_ctx ( tfm ) ; crypto_free_skcipher ( op -> fallback_tfm ) ; pm_runtime_put_sync_suspend ( op -> ce -> dev ) ; } 

@@ -1,1 +1,0 @@
-Exit return error ; FT_Error ft_lzw_file_init ( FT_LZWFile zip , FT_Stream stream , int source ) { } 

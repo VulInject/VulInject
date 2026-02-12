@@ -1,1 +1,0 @@
-tree_destroy ( ) { if ( t ) { g_free ( t ) ; } } 

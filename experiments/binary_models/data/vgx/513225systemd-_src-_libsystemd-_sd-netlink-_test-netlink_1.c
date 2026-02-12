@@ -1,1 +1,0 @@
-static struct test_async_object * test_async_object_free ( struct test_async_object * t ) { assert_se ( t ) ; return mfree ( t ) ; } 

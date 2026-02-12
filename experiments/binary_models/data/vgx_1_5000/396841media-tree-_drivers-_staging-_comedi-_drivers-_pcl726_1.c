@@ -1,0 +1,1 @@
+static int pcl726_intr_insn_bits ( struct comedi_device * dev , struct comedi_subdevice * s , struct comedi_insn * insn , unsigned int * data ) { return insn -> n ; } 

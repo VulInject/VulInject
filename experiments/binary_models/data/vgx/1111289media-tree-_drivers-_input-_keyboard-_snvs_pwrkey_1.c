@@ -1,1 +1,0 @@
-pwrkey_drv_data { struct regmap * snvs ; int irq ; int keycode ; int keystate ; int wakeup ; int check_timer ; struct input_dev * input ; } 

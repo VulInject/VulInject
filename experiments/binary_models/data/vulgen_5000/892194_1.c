@@ -1,0 +1,1 @@
+void mlx5e_ethtool_get_ethtool_stats ( struct mlx5e_priv * priv , struct ethtool_stats * stats , u64 * data ) { int idx = 0 ; mutex_lock ( & priv -> state_lock ) ; mlx5e_stats_update ( priv ) ; mutex_unlock ( & priv -> state_lock ) ; } 

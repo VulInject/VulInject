@@ -1,0 +1,1 @@
+void mlx4_ib_db_unmap_user ( struct mlx4_ib_ucontext * context , struct mlx4_db * db ) { mutex_lock ( & context -> db_page_mutex ) ; if ( ! -- db -> u . user_page -> refcnt ) { list_del ( & db -> u . user_page -> list ) ; kfree ( db -> u . user_page ) ; } mutex_unlock ( & context -> db_page_mutex ) ; } 

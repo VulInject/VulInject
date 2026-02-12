@@ -1,1 +1,0 @@
-void radeon_sync_create ( struct radeon_sync * sync ) { int i ; for ( i = 0 ; i < RADEON_NUM_SYNCS ; ++ i ) { sync -> semaphores [ i ] = NULL ; } for ( i = 0 ; i < RADEON_NUM_RINGS ; ++ i ) { sync -> sync_to [ i ] = NULL ; } sync -> last_vm_update = NULL ; } 

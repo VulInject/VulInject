@@ -1,0 +1,1 @@
+static unsigned long multiq_get ( struct Qdisc * sch , u32 classid ) { struct multiq_sched_data * q = qdisc_priv ( sch ) ; unsigned long band = TC_H_MIN ( classid ) ; return band ; } 

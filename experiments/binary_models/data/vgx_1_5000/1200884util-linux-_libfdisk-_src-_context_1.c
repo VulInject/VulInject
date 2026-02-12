@@ -1,0 +1,1 @@
+int fdisk_has_wipe ( struct fdisk_context * cxt ) { return fdisk_has_wipe_area ( cxt , 0 , cxt -> total_sectors ) ; } 

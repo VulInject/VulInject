@@ -1,0 +1,1 @@
+int notification_delta_done ( struct notification_xml * nxml ) { struct delta_item * d ; d = TAILQ_FIRST ( & nxml -> delta_q ) ; assert ( d -> serial == nxml -> current -> serial ) ; TAILQ_REMOVE ( & nxml -> delta_q , d , q ) ; assert ( ! TAILQ_EMPTY ( & nxml -> delta_q ) || nxml -> serial == nxml -> current -> serial ) ; return TAILQ_EMPTY ( & nxml -> delta_q ) ; } 

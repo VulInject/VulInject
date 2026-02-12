@@ -1,1 +1,0 @@
-int iof_get_be_uint3 ( iof * I , uint32_t * pnumber ) { int c1 , c2 , c3 ; * pnumber = ( c1 << 16 ) | ( c2 << 8 ) | c3 ; return 1 ; } 

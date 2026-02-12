@@ -1,1 +1,0 @@
-handle_abort ( ) { BSON_UNUSED ( signo ) ; MONGOC_ERROR ( "abort handler entered" ) ; } 

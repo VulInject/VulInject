@@ -1,1 +1,0 @@
-( iio_sw_trigger_create ) ; void iio_sw_trigger_destroy ( struct iio_sw_trigger * t ) { struct iio_sw_trigger_type * tt = t -> trigger_type ; tt -> ops -> remove ( t ) ; module_put ( tt -> owner , NULL ) ; } 

@@ -1,1 +1,0 @@
-MemoryRegion * pflash_cfi01_get_memory ( PFlashCFI01 * fl ) { return fl -> mem ; } 

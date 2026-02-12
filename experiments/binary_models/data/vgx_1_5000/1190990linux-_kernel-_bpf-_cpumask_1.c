@@ -1,0 +1,1 @@
+__bpf_kfunc bool bpf_cpumask_test_cpu ( u32 cpu , const struct cpumask * cpumask ) { return cpumask_test_cpu ( cpu , ( cpumask * ) cpumask ) ; } 

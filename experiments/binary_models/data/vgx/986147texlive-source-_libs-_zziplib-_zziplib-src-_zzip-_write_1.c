@@ -1,1 +1,0 @@
-void inline zzip_sync ( void ) { zzip_closedir ( zzip_savefile ) ; } 

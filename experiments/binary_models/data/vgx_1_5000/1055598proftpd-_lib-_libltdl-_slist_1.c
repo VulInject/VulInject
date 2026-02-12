@@ -1,0 +1,1 @@
+static SList * slist_sort_merge ( SList * left , SList * right , SListCompare * compare , void * userdata ) SList * slist_delete ( SList * head , void * delete_fct ( void * item ) ) { while ( head ) { SList * next = head -> next ; * delete_fct ( head ) ; head = next ; } return 0 ; } 

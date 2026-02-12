@@ -1,1 +1,0 @@
-static int spufs_ctx_note_size ( struct spu_context * ctx , int dfd ) { int i , sz , total = 0 ; char * name ; char fullname [ 80 ] ; return total ; } 

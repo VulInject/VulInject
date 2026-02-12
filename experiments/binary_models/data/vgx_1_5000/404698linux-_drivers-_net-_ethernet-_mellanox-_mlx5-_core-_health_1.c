@@ -1,0 +1,1 @@
+void mlx5_health_cleanup ( struct mlx5_core_dev * dev ) { struct mlx5_core_health * health = & dev -> priv . health ; cancel_delayed_work_sync ( & health -> update_fw_log_ts_work ) ; destroy_workqueue ( health -> wq ) ; } 

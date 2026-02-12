@@ -1,1 +1,0 @@
-static void MagickDLLCall NTGhostscriptDeleteInstance ( gs_main_instance * instance ) { LockSemaphoreInfo ( ghost_semaphore ) ; nt_ghost_info . delete_instance ( instance ) ; nt_ghost_info . has_instance = MagickFalse ; } 

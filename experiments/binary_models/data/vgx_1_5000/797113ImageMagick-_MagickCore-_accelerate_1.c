@@ -1,0 +1,1 @@
+MagickPrivate Image * AccelerateAddNoiseImage ( const Image * image , const NoiseType noise_type , const double attenuate , ExceptionInfo * exception ) { magick_unreferenced ( image ) ; magick_unreferenced ( attenuate ) ; magick_unreferenced ( exception ) ; return ( ( Image * ) NULL ) ; } 

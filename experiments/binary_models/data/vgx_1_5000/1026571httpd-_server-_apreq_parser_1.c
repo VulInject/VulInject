@@ -1,0 +1,1 @@
+APREQ_DECLARE ( ) apreq_post_initialize ( ) { ( void ) pool ; if ( default_parser_pool == NULL ) { return APREQ_ERROR_GENERAL ; } return APR_SUCCESS ; } 

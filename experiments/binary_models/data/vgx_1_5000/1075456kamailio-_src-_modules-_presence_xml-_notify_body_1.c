@@ -1,0 +1,1 @@
+void free_xml_body ( char * body ) { xmlFree ( body ) ; body = NULL ; } 

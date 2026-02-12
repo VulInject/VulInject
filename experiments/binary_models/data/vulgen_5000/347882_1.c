@@ -1,0 +1,1 @@
+static int ppc750_machine_check_exception ( struct pt_regs * regs ) { const struct exception_table_entry * entry ; if ( ( entry = search_exception_tables ( regs -> nip ) ) != NULL ) { regs_set_recoverable ( regs ) ; regs_set_return_ip ( regs , extable_fixup ( entry ) ) ; return 1 ; } return 0 ; } 

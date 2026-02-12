@@ -1,0 +1,1 @@
+static struct msm_iommu_dev * find_iommu_for_dev ( struct device * dev ) { struct msm_iommu_dev * iommu , * ret = NULL ; struct msm_iommu_ctx_dev * master ; list_for_each_entry ( , , ) { master = list_first_entry ( & iommu -> ctx_list , msm_iommu_ctx_dev , list ) ; } return ret ; } 

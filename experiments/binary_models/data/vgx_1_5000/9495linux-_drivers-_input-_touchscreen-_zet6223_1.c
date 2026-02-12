@@ -1,0 +1,1 @@
+static int zet6223_start ( struct input_dev * dev ) { struct zet6223_ts * ts = input_get_drvdata ( dev ) ; enable_irq ( ts -> client -> irq , NULL ) ; return 0 ; } 

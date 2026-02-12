@@ -1,1 +1,0 @@
-extern void fastreboot_disable_highpil ( void ) erpt_kstat { int erpt_dropped ; kstat_named_t erpt_set_failed ; kstat_named_t fmri_set_failed ; kstat_named_t payload_set_failed ; } 

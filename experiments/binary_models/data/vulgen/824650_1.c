@@ -1,1 +1,0 @@
-int _tmain ( int argc , _TCHAR * targv [ ] ) { char * * argv ; int i ; argv = ( char * * ) calloc ( argc , sizeof ( char * ) ) ; for ( i = 0 ; i < argc ; i ++ ) { size_t len ; argv [ i ] = ( char * ) calloc ( len , sizeof ( char ) ) ; wcstombs ( argv [ i ] , targv [ i ] , len ) ; } return main ( argc , argv ) ; } 

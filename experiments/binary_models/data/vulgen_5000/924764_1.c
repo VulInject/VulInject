@@ -1,0 +1,1 @@
+static GF_Err FM_FAKE_PULL_ReleaseData ( GF_HYBMEDIA * self ) int master_fm_fake_pull = { "Fake FM (pull mode)" FM_FAKE_PULL_CanHandleURL FM_FAKE_PULL_GetOD FM_FAKE_PULL_Connect FM_FAKE_PULL_Disconnect NULL FM_FAKE_PULL_GetData FM_FAKE_PULL_ReleaseData HYB_PULL & FM_FAKE_PULL_private_data } ; 

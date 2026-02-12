@@ -1,0 +1,1 @@
+static int nft_bitwise_dump_bool ( struct sk_buff * skb , const struct nft_bitwise * priv ) { if ( nft_data_dump ( skb , NFTA_BITWISE_XOR , & priv -> xor , NFT_DATA_VALUE , priv -> len ) < 0 ) { return - 1 ; } return 0 ; } 

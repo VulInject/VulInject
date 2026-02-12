@@ -1,0 +1,1 @@
+DAT_RETURN dat_ep_query ( IN DAT_EP_HANDLE ep_handle , IN DAT_EP_PARAM_MASK ep_param_mask , OUT DAT_EP_PARAM * ep_param ) { return DAT_EP_QUERY ( ep_handle , ep_param_mask , ep_param ) ; } 

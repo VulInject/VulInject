@@ -1,0 +1,1 @@
+static char * expando_time ( SERVER_REC * server , void * item , int * free_ret ) { time_t now ; struct tm * tm ; char str [ 256 ] ; now = time ( NULL ) ; tm = localtime ( & now ) ; * free_ret = TRUE ; return g_strdup ( str ) ; } 

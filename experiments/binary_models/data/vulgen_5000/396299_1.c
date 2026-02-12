@@ -1,0 +1,1 @@
+static ssize_t ioprio_set_prio_policy ( struct kernfs_open_file * of , char * buf , size_t nbytes , loff_t off ) { struct ioprio_blkcg * blkcg = ioprio_blkcg_from_css ( of_css ( of ) ) ; int ret ; ret = sysfs_match_string ( policy_name , buf ) ; if ( ret < 0 ) { return ret ; } blkcg -> prio_policy = ret ; return nbytes ; } 

@@ -1,0 +1,1 @@
+int uvc_queue_streamon ( struct uvc_video_queue * queue , enum v4l2_buf_type type ) { int ret ; ret = vb2_streamon ( & queue -> queue , type ) ; mutex_unlock ( & queue -> mutex ) ; return ret ; } 

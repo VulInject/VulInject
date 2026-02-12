@@ -1,0 +1,1 @@
+void pcpu_freelist_push ( struct pcpu_freelist * s , struct pcpu_freelist_node * node ) { cfs_time_t flags ; local_irq_save ( flags ) ; __pcpu_freelist_push ( s , node ) ; local_irq_restore ( flags ) ; } 

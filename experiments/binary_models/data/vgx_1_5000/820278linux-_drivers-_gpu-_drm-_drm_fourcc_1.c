@@ -1,0 +1,1 @@
+unsigned int drm_format_info_block_width ( const struct drm_format_info * info , int plane ) { if ( ! info || plane < 0 || plane >= info -> num_planes ) { return 0 ; } return info -> block_w [ plane ] ; } 

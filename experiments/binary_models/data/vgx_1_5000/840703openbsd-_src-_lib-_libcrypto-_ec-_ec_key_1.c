@@ -1,0 +1,1 @@
+int EC_KEY_set_public_key ( EC_KEY * key , const EC_POINT * pub_key ) { if ( key -> meth -> set_public != NULL && key -> meth -> set_public ( key , pub_key ) == 0 ) { return 0 ; } EC_POINT_free ( key -> pub_key ) ; return 1 ; } 

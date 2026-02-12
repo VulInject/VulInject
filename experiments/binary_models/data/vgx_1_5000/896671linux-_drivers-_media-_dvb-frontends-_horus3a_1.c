@@ -1,0 +1,1 @@
+static int horus3a_sleep ( struct dvb_frontend * fe ) { struct horus3a_priv * priv = fe -> tuner_priv ; dev_dbg ( & priv -> i2c -> dev , "%s()\n" , __func__ ) ; horus3a_enter_power_save ( priv , NULL ) ; return 0 ; } 

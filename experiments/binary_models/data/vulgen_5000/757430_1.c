@@ -1,0 +1,1 @@
+int __init snd_minor_info_init ( void ) { struct snd_info_entry * entry ; entry = snd_info_create_module_entry ( THIS_MODULE , "devices" , NULL ) ; entry -> c . text . read = snd_minor_info_read ; return snd_info_register ( entry ) ; } 

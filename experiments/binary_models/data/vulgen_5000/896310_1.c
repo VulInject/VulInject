@@ -1,0 +1,1 @@
+static int __s390_pv_cmd ( uint32_t cmd , const char * cmdname , void * data ) { struct kvm_pv_cmd pv_cmd = { . cmd = cmd . data = ( uint64_t ) data } ; int rc ; { rc = kvm_vm_ioctl ( kvm_state , KVM_S390_PV_COMMAND , & pv_cmd ) ; } rc == - EINTR ; return rc ; } 

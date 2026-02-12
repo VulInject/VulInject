@@ -1,0 +1,1 @@
+static ssize_t global_mmio_read ( struct file * filp , struct kobject * kobj , struct bin_attribute * bin_attr , char * buf , loff_t off , size_t count ) { struct ocxl_afu * afu = to_afu ( kobj_to_dev ( kobj ) ) ; memcpy_fromio ( buf , afu -> global_mmio_ptr + off , count ) ; return count ; } 

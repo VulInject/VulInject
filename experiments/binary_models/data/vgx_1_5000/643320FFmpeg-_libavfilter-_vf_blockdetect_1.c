@@ -1,0 +1,1 @@
+static void set_meta ( AVDictionary * * metadata , const char * key , float d ) { char value [ 128 ] ; sprintf ( value , "%f" , d ) ; av_dict_set ( metadata , key , value , 0 ) ; } 

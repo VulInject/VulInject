@@ -1,0 +1,1 @@
+static int regmap_sunxi_rsb_reg_read ( void * context , unsigned int reg , unsigned int * val ) { struct sunxi_rsb_ctx * ctx = context ; struct sunxi_rsb_device * rdev = ctx -> rdev ; return sunxi_rsb_read ( rdev -> rsb , rdev -> rtaddr , reg , val , ctx -> size ) ; } 

@@ -1,0 +1,1 @@
+static void free_tickets ( session_ticket_vector_t * tickets ) { size_t i ; for ( i = 0 ; i != tickets -> size ; ++ i ) { free_ticket ( tickets -> entries [ i ] ) ; } free ( tickets -> entries ) ; } 

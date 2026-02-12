@@ -1,0 +1,1 @@
+static irqreturn_t aiu_fifo_isr ( int irq , void * dev_id ) { struct snd_pcm_substream * playback = dev_id ; snd_pcm_period_elapsed ( playback , NULL ) ; return IRQ_HANDLED ; } 

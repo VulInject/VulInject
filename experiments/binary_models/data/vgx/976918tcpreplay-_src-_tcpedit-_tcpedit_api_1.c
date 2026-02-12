@@ -1,1 +1,0 @@
-int FUN1 ( VAR1 * VAR2 , tcpedit_fixlen VAR3 ) { VAR2 -> VAR4 = VAR3 ; return VAR5 ; }

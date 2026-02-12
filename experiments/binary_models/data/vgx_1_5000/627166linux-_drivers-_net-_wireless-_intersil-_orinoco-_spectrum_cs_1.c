@@ -1,0 +1,1 @@
+static int spectrum_cs_config_check ( struct pcmcia_device * p_dev , void * priv_data ) { return pcmcia_request_io ( p_dev ) ; } 

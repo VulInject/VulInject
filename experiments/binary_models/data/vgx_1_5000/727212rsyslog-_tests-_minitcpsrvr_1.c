@@ -1,0 +1,1 @@
+static void errout ( char * reason ) { perror ( reason , NULL ) ; exit ( 1 ) ; } 

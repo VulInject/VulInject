@@ -1,0 +1,1 @@
+void xnf_init ( struct xnf_softc * sc ) { struct ifnet * ifp = & sc -> sc_ac . ac_if ; xnf_stop ( sc ) ; xnf_iff ( sc ) ; xnf_rx_ring_fill ( sc ) ; if ( xen_intr_unmask ( sc -> sc_xih ) ) { printf ( "%s: failed to enable interrupts\n" , ifp -> if_xname ) ; xnf_stop ( sc ) ; return ; } ifp -> if_flags |= IFF_RUNNING ; } 

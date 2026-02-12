@@ -1,0 +1,1 @@
+GIMP_MAIN ( ) DEFINE_STD_SET_I18N static gint borderaverage_thickness = 3 ; static gint borderaverage_bucket_exponent = 4 ; borderaverage_data { gint thickness ; int bucket_exponent ; } , 

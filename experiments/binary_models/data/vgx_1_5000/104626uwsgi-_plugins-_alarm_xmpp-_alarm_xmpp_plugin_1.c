@@ -1,0 +1,1 @@
+void uwsgi_alarm_xmpp_loop ( struct uwsgi_thread * ) static void uwsgi_alarm_xmpp_init ( struct uwsgi_alarm_instance * uai ) { struct uwsgi_thread * ut = uwsgi_thread_new_with_data ( uwsgi_alarm_xmpp_loop , uai -> arg ) ; uai -> data_ptr = ut ; } 

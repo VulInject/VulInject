@@ -1,0 +1,1 @@
+const git_index_entry * git_merge_driver_source_ours ( const git_merge_driver_source * src ) { GIT_ASSERT_ARG_WITH_RETVAL ( src ) ; return src -> ours ; } 

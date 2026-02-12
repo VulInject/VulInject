@@ -1,0 +1,1 @@
+static void msg_conn_destroy ( HypervTestDev * dev , uint8_t conn_id ) { TestMsgConn * conn ; QLIST_FOREACH ( , , ) { if ( conn -> conn_id == conn_id ) { QLIST_REMOVE ( conn , le ) ; hyperv_set_msg_handler ( conn -> conn_id , NULL , NULL ) ; g_free ( conn ) ; return ; } } assert ( false ) ; } 

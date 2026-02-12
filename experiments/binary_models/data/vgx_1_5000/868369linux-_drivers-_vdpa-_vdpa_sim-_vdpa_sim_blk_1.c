@@ -1,0 +1,1 @@
+static int __init vdpasim_blk_init ( void ) { int ret ; ret = device_register ( & vdpasim_blk_mgmtdev ) ; if ( ret ) { return ret ; } ret = vdpa_mgmtdev_register ( & mgmt_dev ) ; if ( ret ) { parent_err } return 0 ; parent_err device_unregister ( & vdpasim_blk_mgmtdev ) ; return ret ; } 

@@ -1,0 +1,1 @@
+void deleteRegUserRow ( int userIndex ) { kamailioSIPRegUserTable_context * theRow ; netsnmp_index indexToRemove ; oid indexToRemoveOID ; indexToRemoveOID = userIndex ; indexToRemove . oids = & indexToRemoveOID ; indexToRemove . len = 1 ; theRow = CONTAINER_FIND ( cb . container , & indexToRemove ) ; } 

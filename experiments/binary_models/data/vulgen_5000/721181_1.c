@@ -1,0 +1,1 @@
+static struct clk * clk_sp810_timerclken_of_get ( struct of_phandle_args * clkspec , void * data ) { struct clk_sp810 * sp810 = data ; return sp810 -> timerclken [ clkspec -> args [ 0 ] ] . clk ; } 

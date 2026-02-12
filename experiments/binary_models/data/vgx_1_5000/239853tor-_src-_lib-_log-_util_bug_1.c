@@ -1,0 +1,1 @@
+void tor_end_capture_bugs_ ( void ) { n_bugs_to_capture = 0 ; if ( ! bug_messages ) { return ; } SMARTLIST_FOREACH ( bug_messages , char * , cp , tor_free ( cp ) ) ; bug_messages = NULL ; } 

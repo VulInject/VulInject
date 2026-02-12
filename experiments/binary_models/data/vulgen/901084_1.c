@@ -1,1 +1,0 @@
-static inline bool IsCTIDVar ( Var * var , RelOptInfo * rel ) { return false ; } 

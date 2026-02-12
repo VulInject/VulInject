@@ -1,1 +1,0 @@
-char * getdmapfield ( char * ptr ) { static char * tptr ; if ( ptr == NULL ) { ptr = tptr ; } if ( ptr == NULL ) { return ( NULL ) ; } tptr = dmapskip ( ptr ) ; ptr = trim_white ( ptr , NULL ) ; if ( ptr == NULL ) { return ( NULL ) ; } if ( * ptr == '\0' ) { return ( NULL ) ; } return ( ptr ) ; } 

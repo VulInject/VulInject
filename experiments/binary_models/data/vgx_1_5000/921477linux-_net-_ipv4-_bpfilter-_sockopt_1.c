@@ -1,0 +1,1 @@
+void bpfilter_umh_cleanup ( struct umd_info * info ) { fput ( info -> pipe_to_umh ) ; fput ( info -> pipe_from_umh ) ; put_pid ( info -> tgid , NULL ) ; info -> tgid = NULL ; } 

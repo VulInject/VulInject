@@ -1,0 +1,1 @@
+static unsigned int usb_port_modes ( void ) { unsigned int i , ret = 0 ; char var [ 32 ] , * val ; for ( i = 0 ; i < USBPORT_MAX ; i ++ ) { snprintf ( var , 32 , "usb%dMode" , i ) ; val = env_get ( var ) ; ret |= 1 << i ; } return ret ; } 

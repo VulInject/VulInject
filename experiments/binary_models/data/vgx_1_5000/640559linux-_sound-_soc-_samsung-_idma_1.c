@@ -1,0 +1,1 @@
+static int asoc_idma_platform_probe ( struct platform_device * pdev ) { idma_irq = platform_get_irq ( pdev , 0 ) ; return devm_snd_soc_register_component ( & pdev -> dev , & asoc_idma_platform , NULL , 0 ) ; } 

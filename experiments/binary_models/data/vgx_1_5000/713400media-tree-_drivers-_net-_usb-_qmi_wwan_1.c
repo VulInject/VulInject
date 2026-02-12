@@ -1,0 +1,1 @@
+static void qmimux_setup ( struct net_device * dev ) { dev -> type = ARPHRD_NONE ; dev -> hard_header_len = 0 ; dev -> addr_len = 0 ; dev -> flags = IFF_POINTOPOINT | IFF_NOARP | IFF_MULTICAST ; dev -> netdev_ops = & qmimux_netdev_ops ; dev -> destructor = free_netdev ; } 

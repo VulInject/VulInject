@@ -1,0 +1,1 @@
+const char * place_getparsedir ( const struct place * place ) { return place -> file -> dir ; } 

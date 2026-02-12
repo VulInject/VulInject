@@ -1,0 +1,1 @@
+static int rv3032_exit_eerd ( struct rv3032_data * rv3032 , u32 eerd ) { return regmap_update_bits ( rv3032 -> regmap , RV3032_CTRL1 , RV3032_CTRL1_EERD , 0 ) ; } 

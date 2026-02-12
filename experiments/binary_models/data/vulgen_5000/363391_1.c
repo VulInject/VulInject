@@ -1,0 +1,1 @@
+static int pl35x_nand_read_eccbytes ( struct pl35x_nandc * nfc , struct nand_chip * chip , u8 * read_ecc ) { u32 ecc_value ; int chunk ; for ( chunk = 0 ; chunk < chip -> ecc . steps ; chunk ++ , read_ecc += chip -> ecc . bytes ) { ecc_value = readl ( nfc -> conf_regs + PL35X_SMC_ECC_VALUE ( chunk ) ) ; pl35x_nand_ecc_reg_to_array ( chip , ecc_value , read_ecc ) ; } return 0 ; } 

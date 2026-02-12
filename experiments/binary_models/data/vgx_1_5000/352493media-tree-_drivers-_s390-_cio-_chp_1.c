@@ -1,0 +1,1 @@
+static enum cfg_task_t chp_cfg_fetch_task ( struct chp_id * chpid ) { enum cfg_task_t t = cfg_none ; chp_id_for_each ( ) { t = cfg_get_task ( * chpid ) ; } return t ; } 

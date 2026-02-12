@@ -1,0 +1,1 @@
+static boolean_t iscsi_door_init = B_FALSE ; static ksema_t iscsi_door_sema ; static krwlock_t iscsi_door_lock ; static door_handle_t iscsi_door_handle ; _mybuffer { size_t signature ; int size ; } mybuffer_t 

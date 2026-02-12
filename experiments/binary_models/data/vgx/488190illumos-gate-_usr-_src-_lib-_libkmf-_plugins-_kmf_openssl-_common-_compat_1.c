@@ -1,1 +1,0 @@
-RSA_METHOD * RSA_meth_dup ( const RSA_METHOD * meth ) { RSA_METHOD * ret ; ret = OPENSSL_malloc ( sizeof ( RSA_METHOD ) ) ; if ( ret != NULL ) { ( void ) memcpy ( ret , meth , sizeof ( * meth ) ) ; ret -> name = OPENSSL_strdup ( meth -> name ) ; if ( ret -> name == NULL ) { return ( NULL ) ; } } return ( ret ) ; } 

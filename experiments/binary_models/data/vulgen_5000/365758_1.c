@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "CM6533 HID jack controls" ) ; static const u8 ji_sfx [ ] { 0x08 0x00 0x08 0xc0 } ; ; static const u8 ji_in [ ] { 0x01 0x00 0x06 0x00 } ; ; static const u8 ji_out [ ] { 0x01 0x00 0x04 0x00 } ; ; static int jack_switch_types [ CM6533_JD_TYPE_COUNT ] { SW_HEADPHONE_INSERT } ; ; 

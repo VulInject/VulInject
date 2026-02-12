@@ -1,0 +1,1 @@
+return MPFR_IS_NAN ( y ) || MPFR_IS_NEG ( x ) ; return mpfr_lessequal_p ( x , y ) ; 

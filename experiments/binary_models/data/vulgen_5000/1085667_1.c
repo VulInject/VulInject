@@ -1,0 +1,1 @@
+static void ioc_rqos_exit ( struct rq_qos * rqos ) { struct ioc * ioc = rqos_to_ioc ( rqos ) ; blkcg_deactivate_policy ( rqos -> disk , & blkcg_policy_iocost ) ; spin_lock_irq ( & ioc -> lock ) ; ioc -> running = IOC_STOP ; spin_unlock_irq ( & ioc -> lock ) ; timer_shutdown_sync ( & ioc -> timer ) ; kfree ( ioc ) ; } 

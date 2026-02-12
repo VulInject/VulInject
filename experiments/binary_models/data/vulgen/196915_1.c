@@ -1,1 +1,0 @@
-static void unset_replace ( struct symbol * sym ) { struct symbol * r = sym -> replace ; r -> replace = NULL ; sym -> replace = NULL ; } 

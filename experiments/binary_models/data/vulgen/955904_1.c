@@ -1,1 +1,0 @@
-( xtensa_ioremap_cache ) ; void xtensa_iounmap ( volatile void __iomem * io_addr ) { vunmap ( addr ) ; } 

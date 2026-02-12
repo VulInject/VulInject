@@ -1,0 +1,1 @@
+static void i2c_mux_unlock_bus ( struct i2c_adapter * adapter , unsigned int flags ) { struct i2c_mux_priv * priv = adapter -> algo_data ; struct i2c_adapter * parent = priv -> muxc -> parent ; rt_mutex_unlock ( & parent -> mux_lock ) ; } 

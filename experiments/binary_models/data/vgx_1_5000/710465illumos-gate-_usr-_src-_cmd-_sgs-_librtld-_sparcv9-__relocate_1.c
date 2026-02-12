@@ -1,0 +1,1 @@
+void clear_reloc ( void * vrel ) { Rela * rel = vrel ; rel -> r_offset = 0 ; rel -> r_info = ELF_R_INFO ( 0 , R_SPARC_NONE ) ; } 

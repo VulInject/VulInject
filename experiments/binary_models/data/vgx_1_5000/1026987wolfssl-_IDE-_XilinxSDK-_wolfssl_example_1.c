@@ -1,0 +1,1 @@
+static void wolfssl_task ( void * pvParameters ) static TaskHandle_t xWolfsslTask ; int main ( void ) { xil_printf ( "\nStarting up FreeRTOS\n" ) ; xTaskCreate ( wolfssl_task , ( const char * ) "Tx" , configMINIMAL_STACK_SIZE , tskIDLE_PRIORITY , & xWolfsslTask ) ; vTaskStartScheduler ( ) ; for ( ; ; ) { } } 

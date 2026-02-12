@@ -1,0 +1,1 @@
+void UtilSignalHandlerSetup ( int sig , void * handler ( int ) ) { signal ( sig , handler ) ; struct sigaction action ; action . sa_handler = handler ; sigemptyset ( & ( action . sa_mask ) ) ; sigaddset ( & ( action . sa_mask ) , sig ) ; action . sa_flags = 0 ; sigaction ( sig , & action , 0 ) ; return ; } 

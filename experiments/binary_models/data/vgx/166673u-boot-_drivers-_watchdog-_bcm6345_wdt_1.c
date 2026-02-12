@@ -1,1 +1,0 @@
-static int bcm6345_wdt_probe ( struct udevice * dev ) { struct bcm6345_wdt_priv * priv = dev_get_priv ( dev ) ; struct clk clk ; int ret ; priv -> regs = dev_remap_addr ( dev ) ; ret = clk_get_by_index ( dev , 0 , & clk ) ; if ( ! ret ) { priv -> clk_rate = clk_get_rate ( & clk ) ; } else { return - EINVAL ; } bcm6345_wdt_stop ( dev ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static int ap_is_existing_file ( char * pathname ) { struct stat stat_info ; int in_char ; if ( ! stat ( pathname , & stat_info ) ) { fprintf ( stderr , "Target path already exists, overwrite? [y|n] " ) ; in_char = fgetc ( stdin , NULL ) ; if ( in_char == '\n' ) { in_char = fgetc ( stdin ) ; } if ( in_char != 'y' && in_char != 'Y' ) { return ( - 1 ) ; } } return ( 0 ) ; } 

@@ -1,1 +1,0 @@
-static int FUN1 ( unsigned int * VAR1 , VAR2 * VAR3 ) { FUN2 ( VAR3 , NULL ) ; * VAR1 = VAR4 | VAR5 ; return 0 ; }

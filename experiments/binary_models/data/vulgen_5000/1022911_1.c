@@ -1,0 +1,1 @@
+static inline void debug_trap ( struct trapframe * frame , struct proc * p , long type ) { if ( trapdebug ) { printf ( "trap %ld code %llx rip %llx cs %llx rflags %llx " "cr2 %llx cpl %x\n" , type , frame -> tf_err , frame -> tf_rip , frame -> tf_cs , frame -> tf_rflags , rcr2 ( ) , curcpu ( ) -> ci_ilevel ) ; printf ( "curproc %p\n" , ( void * ) p ) ; } } 

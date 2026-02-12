@@ -1,0 +1,1 @@
+void rtrs_clt_destroy_sysfs_root ( struct rtrs_clt_sess * clt ) { sysfs_remove_group ( & clt -> dev . kobj , & rtrs_clt_attr_group ) ; if ( clt -> kobj_paths ) { kobject_del ( clt -> kobj_paths , NULL ) ; kobject_put ( clt -> kobj_paths ) ; } } 

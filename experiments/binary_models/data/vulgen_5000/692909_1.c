@@ -1,0 +1,1 @@
+extern void * powerdownfn ( void ) aplpmu_nvmem { struct aplpmu_softc * an_sc ; bus_addr_t an_base ; bus_size_t an_size ; } 

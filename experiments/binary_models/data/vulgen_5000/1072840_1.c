@@ -1,0 +1,1 @@
+int ahci_map_regs ( struct ahci_pci_softc * psc , struct pci_attach_args * pa ) { pcireg_t maptype ; struct ahci_softc * sc = & psc -> psc_ahci ; if ( pci_mapreg_map ( pa , AHCI_PCI_BAR , maptype , 0 , & sc -> sc_iot , & sc -> sc_ioh , NULL , & sc -> sc_ios , 0 ) != 0 ) { printf ( " unable to map registers\n" ) ; return ( 1 ) ; } return ( 0 ) ; } 

@@ -1,0 +1,1 @@
+static void stb6100_release ( struct dvb_frontend * fe ) { struct stb6100_state * state = fe -> tuner_priv ; fe -> tuner_priv = NULL ; } 

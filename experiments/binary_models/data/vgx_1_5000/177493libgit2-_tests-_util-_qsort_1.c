@@ -1,0 +1,1 @@
+static int cmp_int ( const void * _a , const void * _b , void * payload ) { int a = * ( const int * ) _a , b = * ( const int * ) _b ; GIT_UNUSED ( payload , NULL ) ; return ( a < b ) ?- 1 : ( a > b ) ?+ 1 : 0 ; } 

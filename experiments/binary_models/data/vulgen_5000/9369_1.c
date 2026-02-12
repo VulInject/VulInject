@@ -1,0 +1,1 @@
+static enum _ecore_status_t ecore_mcp_attn_cb ( struct ecore_hwfn * p_hwfn ) { DP_INFO ( p_hwfn -> p_dev , "MCP_REG_CPU_STATE: %08x - Masking...\n" , tmp ) ; ecore_wr ( p_hwfn , p_hwfn -> p_dpc_ptt , MCP_REG_CPU_EVENT_MASK , 0xffffffff ) ; return ECORE_SUCCESS ; } 

@@ -1,0 +1,1 @@
+static int show_config ( struct perf_config_set * set ) { struct perf_config_section * section ; struct perf_config_item * item ; perf_config_set__for_each_entry ( , , ) { char * value = item -> value ; if ( value ) { printf ( "%s.%s=%s\n" , section -> name , item -> name , value ) ; } } return 0 ; } 

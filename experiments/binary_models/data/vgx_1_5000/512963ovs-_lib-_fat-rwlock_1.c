@@ -1,0 +1,1 @@
+static void slot_destructor ( void * slot_ ) { struct fat_rwlock_slot * slot = slot_ ; struct fat_rwlock * rwlock = slot -> rwlock ; free_slot ( slot ) ; ovs_mutex_unlock ( & rwlock -> mutex ) ; } 

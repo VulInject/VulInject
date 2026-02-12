@@ -1,1 +1,0 @@
-int security_inode_listsecurity ( struct inode * inode , char * buffer , size_t buffer_size ) { return call_int_hook ( inode_listsecurity , 0 , inode , buffer , buffer_size ) ; } 

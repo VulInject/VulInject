@@ -1,1 +1,0 @@
-GDVContext { int is_first_video ; int is_audio ; int audio_size ; int audio_stream_index ; int video_stream_index ; int pal [ 256 ] ; } GDVContext 

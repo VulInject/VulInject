@@ -1,0 +1,1 @@
+int csio_wr_issue ( struct csio_hw * hw , int qidx , bool prio ) { struct csio_wrm * wrm = csio_hw_to_wrm ( hw ) ; struct csio_q * q = wrm -> q_arr [ qidx ] ; wmb ( ) ; csio_wr_reg32 ( hw , DBPRIO_V ( prio ) | QID_V ( q -> un . eq . physeqid ) | PIDX_T5_V ( q -> inc_idx ) | DBTYPE_F , MYPF_REG ( SGE_PF_KDOORBELL_A ) ) ; q -> inc_idx = 0 ; return 0 ; } 

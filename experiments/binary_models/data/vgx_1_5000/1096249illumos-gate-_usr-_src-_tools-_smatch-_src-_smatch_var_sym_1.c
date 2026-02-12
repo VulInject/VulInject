@@ -1,0 +1,1 @@
+void del_var_sym ( struct var_sym_list * * list , const char * var , struct symbol * sym ) { struct var_sym * tmp ; FOR_EACH_PTR ( , ) { if ( tmp -> sym == sym && strcmp ( tmp -> var , var ) == 0 ) { DELETE_CURRENT_PTR ( tmp ) ; return ; } } END_FOR_EACH_PTR ( tmp ) ; } 

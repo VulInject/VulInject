@@ -1,0 +1,1 @@
+static int add_modules ( const char * p ) { _cleanup_strv_free_ char * * k = NULL ; k = strv_split ( p , "," ) ; if ( strv_extend_strv ( & arg_proc_cmdline_modules , k , true ) < 0 ) { return log_oom ( ) ; } return 0 ; } 

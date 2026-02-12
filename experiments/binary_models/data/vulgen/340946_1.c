@@ -1,1 +1,0 @@
-void FreePortListing ( struct PortMappingParserData * pdata ) { struct PortMapping * pm ; while ( ( pm = pdata -> l_head ) != NULL ) { pdata -> l_head = pm -> l_next ; } } 

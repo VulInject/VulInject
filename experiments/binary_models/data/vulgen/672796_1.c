@@ -1,1 +1,0 @@
-void hists__reset_stats ( struct hists * hists ) { hists -> nr_entries = 0 ; hists -> stats . total_period = 0 ; } 

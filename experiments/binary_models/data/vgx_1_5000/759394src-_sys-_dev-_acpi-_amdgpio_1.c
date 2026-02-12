@@ -1,0 +1,1 @@
+void amdgpio_restore_pin ( struct amdgpio_softc * , int pin ) void amdgpio_restore ( struct amdgpio_softc * ) int amdgpio_match ( struct device * parent , void * match , void * aux ) { struct acpi_attach_args * aaa = aux ; struct cfdata * cf = match ; return acpi_matchhids ( aaa , amdgpio_hids , cf -> cf_driver -> cd_name ) ; } 

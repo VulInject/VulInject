@@ -1,0 +1,1 @@
+static void tda18218_release ( struct dvb_frontend * fe ) { kfree ( fe -> tuner_priv ) ; } 

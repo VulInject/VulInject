@@ -1,0 +1,1 @@
+static int tpm_tis_spi_probe ( struct spi_device * dev ) { struct tpm_tis_spi_phy * phy ; phy = devm_kzalloc ( & dev -> dev , sizeof ( tpm_tis_spi_phy ) , GFP_KERNEL ) ; phy -> spi_device = dev ; return tpm_tis_core_init ( & dev -> dev , & phy -> priv , - 1 , & tpm_spi_phy_ops , NULL ) ; } 

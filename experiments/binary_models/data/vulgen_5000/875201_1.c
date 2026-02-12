@@ -1,0 +1,1 @@
+static void mtk_mdp_wdt_worker ( struct work_struct * work ) { struct mtk_mdp_dev * mdp = container_of ( work , mtk_mdp_dev , wdt_work ) ; struct mtk_mdp_ctx * ctx ; mtk_mdp_err ( "Watchdog timeout" ) ; list_for_each_entry ( , , ) { mtk_mdp_dbg ( 0 , "[%d] Change as state error" , ctx -> id ) ; } } 

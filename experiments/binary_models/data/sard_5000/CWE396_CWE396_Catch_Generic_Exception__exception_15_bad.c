@@ -1,0 +1,29 @@
+void bad()
+{
+    switch(6)
+    {
+    case 6:
+        try
+        {
+            if (rand()%2 == 0)
+            {
+                throw out_of_range("err1");
+            }
+            if (rand()%2 == 0)
+            {
+                throw domain_error("err2");
+            }
+        }
+        catch (exception &)
+        {
+            /* FLAW: this catches err1 and err2 */
+            printLine("exception");
+        }
+        printLine("ok");
+        break;
+    default:
+        /* INCIDENTAL: CWE 561 Dead Code, the code below will never run */
+        printLine("Benign, fixed string");
+        break;
+    }
+}

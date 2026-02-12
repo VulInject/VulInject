@@ -1,0 +1,1 @@
+void ctcm_purge_skb_queue ( struct sk_buff_head * q ) { struct sk_buff * skb ; CTCM_DBF_TEXT ( TRACE , CTC_DBF_DEBUG , __func__ ) ; while ( ( skb = skb_dequeue ( q ) ) ) { refcount_dec ( & skb -> users ) ; } } 

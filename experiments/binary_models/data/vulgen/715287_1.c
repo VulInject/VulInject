@@ -1,1 +1,0 @@
-unsigned iters ; unsigned sum ; 

@@ -1,0 +1,1 @@
+HIDDEN int ws_init ( http_connection * conn __attribute__ ( ( unused ) ) , buf * serverinfo ) ( buf_printf ( serverinfo , " Wslay/%s" , WSLAY_VERSION ) , ws_timeout = config_getduration ( IMAPOPT_WEBSOCKET_TIMEOUT , 'm' ) , ( ws_timeout >= 0 ) ) ; 

@@ -1,0 +1,1 @@
+main ( ) { int flags = 0 ; return 0 ; } 

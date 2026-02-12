@@ -1,0 +1,1 @@
+static int parse_header_git_newmode ( git_patch_parsed * patch , git_patch_parse_ctx * ctx ) { return parse_header_mode ( & patch -> base . delta -> new_file . mode ) ; } 

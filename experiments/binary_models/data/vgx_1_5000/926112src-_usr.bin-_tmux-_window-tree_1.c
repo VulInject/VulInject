@@ -1,0 +1,1 @@
+static void window_tree_free ( struct window_mode_entry * wme ) { struct window_tree_modedata * data = wme -> data ; data -> dead = 1 ; mode_tree_free ( data -> data ) ; window_tree_destroy ( data ) ; } 

@@ -1,0 +1,1 @@
+enum wimax_st wimax_state_get ( struct wimax_dev * wimax_dev ) { enum wimax_st state ; state = wimax_dev -> state ; mutex_unlock ( & wimax_dev -> mutex ) ; return state ; } 

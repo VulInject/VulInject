@@ -1,0 +1,1 @@
+static int csi2_enum_mbus_code ( struct v4l2_subdev * sd , struct v4l2_subdev_pad_config * cfg , struct v4l2_subdev_mbus_code_enum * code ) { const struct atomisp_in_fmt_conv * ic = atomisp_in_fmt_conv ; unsigned int i ; while ( ic -> code ) { if ( i == code -> index ) { code -> code = ic -> code ; return 0 ; } i ++ , ic ++ ; } return - EINVAL ; } 

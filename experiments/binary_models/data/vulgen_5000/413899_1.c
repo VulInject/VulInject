@@ -1,0 +1,1 @@
+static void DAC1064_setpclk ( struct matrox_fb_info * minfo , unsigned long fout ) { unsigned int m , n , p ; DBG ( ) minfo -> hw . DACclk [ 0 ] = m ; minfo -> hw . DACclk [ 1 ] = n ; minfo -> hw . DACclk [ 2 ] = p ; } 

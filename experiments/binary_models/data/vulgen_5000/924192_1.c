@@ -1,0 +1,1 @@
+void ath9k_hw_write_array ( struct ath_hw * ah , const struct ar5416IniArray * array , int column , unsigned int * writecnt ) { int r ; for ( r = 0 ; r < array -> ia_rows ; r ++ ) { REG_WRITE ( ah , INI_RA ( array , r , 0 ) , INI_RA ( array , r , column ) ) ; DO_DELAY ( * writecnt ) ; } REGWRITE_BUFFER_FLUSH ( ah ) ; } 

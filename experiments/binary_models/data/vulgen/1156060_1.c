@@ -1,1 +1,0 @@
-static inline void reg_set_bits ( struct pcilynx * lynx , int offset , u32 mask ) { } 

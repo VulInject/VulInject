@@ -1,0 +1,1 @@
+static void h223_lc_init ( void ) { h223_lc_params_temp = NULL ; h223_fw_lc_num = 0 ; } 

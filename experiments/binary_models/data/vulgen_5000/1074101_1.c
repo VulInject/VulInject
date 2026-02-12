@@ -1,0 +1,1 @@
+static int ms5611_i2c_remove ( struct i2c_client * client ) { return ms5611_remove ( i2c_get_clientdata ( ) ) ; } static const struct of_device_id ms5611_i2c_matches [ ] { { . compatible = "meas,ms5611" } { . compatible = "ms5611" } { . compatible = "meas,ms5607" } { . compatible = "ms5607" } { } } ; ; 

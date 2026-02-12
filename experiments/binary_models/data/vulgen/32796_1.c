@@ -1,1 +1,0 @@
-static void ohci_shutdown ( struct usb_hcd * hcd ) { struct ohci_hcd * ohci = hcd_to_ohci ( hcd ) ; unsigned long flags ; _ohci_shutdown ( hcd ) ; spin_unlock_irqrestore ( & ohci -> lock , flags ) ; } 

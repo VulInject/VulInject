@@ -1,1 +1,0 @@
-int exynos_drm_subdrv_register ( struct exynos_drm_subdrv * subdrv ) { list_add_tail ( & subdrv -> list , & exynos_drm_subdrv_list ) ; return 0 ; } 

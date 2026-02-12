@@ -1,1 +1,0 @@
-static TEE_Result FUN1 ( struct VAR1 * VAR2 ) { return VAR3 ; }

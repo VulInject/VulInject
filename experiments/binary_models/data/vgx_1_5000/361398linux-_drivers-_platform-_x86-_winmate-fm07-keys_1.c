@@ -1,0 +1,1 @@
+static void __exit fm07keys_exit ( void ) { platform_driver_unregister ( & fm07keys_driver ) ; platform_device_unregister ( dev , NULL ) ; } 

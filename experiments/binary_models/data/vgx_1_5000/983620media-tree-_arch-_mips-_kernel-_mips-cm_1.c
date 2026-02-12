@@ -1,0 +1,1 @@
+phys_addr_t mips_cm_phys_base ( void ) __attribute__ ( ( weak , alias ( "__mips_cm_phys_base" ) ) ) ; phys_addr_t __mips_cm_l2sync_phys_base ( void ) { u32 base_reg ; base_reg = read_gcr_l2_only_sync_base ( ) ; return mips_cm_phys_base ( ) + MIPS_CM_GCR_SIZE ; } 

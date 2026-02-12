@@ -1,0 +1,1 @@
+static void neg_lru_touch ( struct val_neg_cache * neg , struct val_neg_data * data ) { neg_lru_remove ( neg , data ) ; neg_lru_front ( neg , data ) ; } 

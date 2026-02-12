@@ -1,0 +1,1 @@
+SND_SOC_DAILINK_DEF ( dmic_codec , DAILINK_COMP_ARRAY ( COMP_CODEC ( "dmic-codec.0" , "dmic-hifi" ) ) ) ; static struct snd_soc_dai_link acp_dai_pdm [ ] { { . name = "acp3x-dmic-capture" . stream_name = "DMIC capture" . capture_only = 1 SND_SOC_DAILINK_REG ( acp_pdm , dmic_codec , platform ) } } ; ; 

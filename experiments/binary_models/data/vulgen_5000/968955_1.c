@@ -1,0 +1,1 @@
+int inet_optsocktype ( lua_State * L , int narg , const char * def ) { static const char * optname [ ] { "stream" "dgram" NULL } ; ; return optvalue [ luaL_checkoption ( L , narg , def , optname ) ] ; } 

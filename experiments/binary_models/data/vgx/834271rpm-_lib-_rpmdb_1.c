@@ -1,1 +1,0 @@
-static int rpmdbRemoveFiles ( char * pattern ) { int rc ; ARGV_t paths = NULL , p ; if ( rpmGlob ( pattern , NULL , & paths ) == 0 ) { for ( p = paths ; * p ; p ++ ) { rc += unlink ( * p ) ; } argvFree ( paths ) ; } return rc ; } 

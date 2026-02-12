@@ -1,1 +1,0 @@
-SYSCALL_DEFINE2 ( , , , , ) { struct kstat stat ; int error ; error = vfs_stat ( name , & stat ) ; return linux_to_osf_stat ( & stat , buf ) ; } 

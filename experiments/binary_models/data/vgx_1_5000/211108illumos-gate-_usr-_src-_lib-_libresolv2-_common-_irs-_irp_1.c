@@ -1,0 +1,1 @@
+static void irp_close ( struct irs_acc * this ) { struct irp_p * irp = ( irp_p * ) this -> private ; if ( irp != NULL ) { memput ( irp , sizeof irp ) ; } memput ( this , sizeof this ) ; } 

@@ -1,0 +1,1 @@
+action_show_file_transfers ( , , ) { NautilusProgressPersistenceHandler * self ; self = NAUTILUS_PROGRESS_PERSISTENCE_HANDLER ( user_data ) ; show_file_transfers ( self , NULL ) ; } 

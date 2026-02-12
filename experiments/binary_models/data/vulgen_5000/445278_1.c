@@ -1,0 +1,1 @@
+static struct intel_engine_cs * find_sfc_paired_vecs_engine ( struct intel_engine_cs * engine ) { int vecs_id ; vecs_id = _VECS ( ( engine -> instance ) / 2 ) ; return engine -> gt -> engine [ vecs_id ] ; } sfc_lock_data { i915_reg_t lock_reg ; i915_reg_t ack_reg ; i915_reg_t usage_reg ; u32 lock_bit ; u32 ack_bit ; u32 usage_bit ; u32 reset_bit ; } 

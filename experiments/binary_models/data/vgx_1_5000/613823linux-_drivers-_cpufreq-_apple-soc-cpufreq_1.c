@@ -1,0 +1,1 @@
+static int apple_soc_cpufreq_exit ( struct cpufreq_policy * policy ) { struct apple_cpu_priv * priv = policy -> driver_data ; dev_pm_opp_free_cpufreq_table ( priv -> cpu_dev , & policy -> freq_table ) ; dev_pm_opp_remove_all_dynamic ( priv -> cpu_dev , NULL ) ; iounmap ( priv -> reg_base ) ; kfree ( priv ) ; return 0 ; } 

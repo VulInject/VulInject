@@ -1,0 +1,1 @@
+static inline unsigned long * scratch_reg ( struct arch_uprobe * auprobe , struct pt_regs * regs ) { if ( auprobe -> defparam . fixups & UPROBE_FIX_RIP_DI ) { return & regs -> di ; } return & regs -> bx ; } 

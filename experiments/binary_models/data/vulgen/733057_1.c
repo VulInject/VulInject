@@ -1,1 +1,0 @@
-static void empty_input ( void * * state ) { assert_null ( pcmk__xpath_node_id ( NULL , "lrm" ) ) ; assert_null ( pcmk__xpath_node_id ( "/blah/blah" , NULL ) ) ; assert_null ( pcmk__xpath_node_id ( "/blah/blah" , "" ) ) ; assert_null ( pcmk__xpath_node_id ( NULL , NULL ) ) ; } 

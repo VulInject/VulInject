@@ -1,1 +1,0 @@
-static int i2c_post_bind ( struct udevice * dev ) { int ret = 0 ; debug ( "%s: %s, seq=%d\n" , __func__ , dev -> name , dev_seq ( dev ) ) ; return ret ; } 

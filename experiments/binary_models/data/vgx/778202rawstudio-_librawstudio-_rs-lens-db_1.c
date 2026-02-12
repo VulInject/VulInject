@@ -1,1 +1,0 @@
-static void rs_lens_db_init ( RSLensDb * lens_db ) { lens_db -> dispose_has_run = FALSE ; lens_db -> path = NULL ; } 

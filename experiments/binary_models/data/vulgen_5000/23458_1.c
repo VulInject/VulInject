@@ -1,0 +1,1 @@
+VOID WINAPI * MyGetSystemTimeAsFileTime ( LPFILETIME lpSystemTimeAsFileTime ) static MyGetSystemTimeAsFileTime get_time_func ( void ) { MyGetSystemTimeAsFileTime timefunc = NULL ; HMODULE hMod = GetModuleHandle ( "kernel32.dll" ) ; return timefunc ; } 

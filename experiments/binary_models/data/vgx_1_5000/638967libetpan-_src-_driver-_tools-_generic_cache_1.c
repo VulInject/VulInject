@@ -1,0 +1,1 @@
+void mail_flags_store_free ( struct mail_flags_store * flags_store ) { mail_flags_store_clear ( flags_store ) ; chash_free ( flags_store -> fls_hash ) ; carray_free ( flags_store -> fls_tab ) ; } 

@@ -1,0 +1,1 @@
+static void stop_dac ( struct cs4297a_state * s ) { unsigned long flags ; CS_DBGOUT ( CS_WAVE_WRITE , 3 , printk ( KERN_INFO "cs4297a: stop_dac():\n" ) ) ; spin_lock_irqsave ( & s -> lock , flags ) ; s -> ena &= ~ FMODE_WRITE ; __raw_writeq ( ( s -> ena & FMODE_READ ) ?M_SYNCSER_DMA_RX_EN : 0 , SS_CSR ( R_SER_DMA_ENABLE ) ) ; } 

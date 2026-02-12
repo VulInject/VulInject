@@ -1,0 +1,1 @@
+static void ion_cma_free ( struct ion_buffer * buffer ) { struct ion_cma_heap * cma_heap = to_cma_heap ( buffer -> heap ) ; struct page * pages = buffer -> priv_virt ; cma_release ( cma_heap -> cma , pages , buffer -> size ) ; kfree ( buffer -> sg_table ) ; } 

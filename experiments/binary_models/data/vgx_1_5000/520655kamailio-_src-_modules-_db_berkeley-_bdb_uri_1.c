@@ -1,0 +1,1 @@
+static void bdb_uri_free ( db_uri_t * uri , bdb_uri_t * payload ) { if ( payload -> path . s && payload -> path . s != payload -> uri ) { pkg_free ( payload -> path . s ) ; } if ( payload -> uri ) { pkg_free ( payload -> uri ) ; } db_drv_free ( & payload -> drv ) ; pkg_free ( payload ) ; } 

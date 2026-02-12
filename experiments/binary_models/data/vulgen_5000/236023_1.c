@@ -1,0 +1,1 @@
+( { unsigned int mask = sizeof ( * ( ptr ) ) - 1 __typeof__ ( ) __ptr = ( ptr ) int __rc = 0 if ( ( u64 __force ) __ptr & mask ) { __rc = EMU_SPECIFICATION ; } if ( put_user ( * ( input ) , __ptr ) ) { __rc = EMU_ADDRESSING ; } } ; __rc ; 

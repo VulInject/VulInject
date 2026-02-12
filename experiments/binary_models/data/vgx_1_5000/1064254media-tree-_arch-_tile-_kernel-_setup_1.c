@@ -1,0 +1,1 @@
+static int __init setup_maxmem ( char * str ) { unsigned long long maxmem ; maxmem_pfn = ( maxmem >> HPAGE_SHIFT ) << ( HPAGE_SHIFT - PAGE_SHIFT ) ; pr_info ( "Forcing RAM used to no more than %dMB\n" , maxmem_pfn >> ( 20 - PAGE_SHIFT ) ) ; return 0 ; } 

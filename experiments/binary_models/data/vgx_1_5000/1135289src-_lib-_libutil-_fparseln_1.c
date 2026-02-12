@@ -1,0 +1,1 @@
+static int isescaped ( const char * sp , const char * p , int esc ) { const char * cp ; size_t ne ; for ( ne = 0 , cp = p ; -- cp >= sp && * cp == esc ; ne ++ ) { continue ; } return ( ne & 1 ) != 0 ; } 

@@ -1,0 +1,1 @@
+static struct ipart * fdisk_alloc_part_table ( ) { int size = sizeof ( ipart ) ; struct ipart * table ; return ( table ) ; } 

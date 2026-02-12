@@ -1,1 +1,0 @@
-static void usage ( char * prog_name ) { ( void ) fprintf ( stderr , gettext ( "usage: %s [-n | -f]\n" ) , prog_name ) ; } 

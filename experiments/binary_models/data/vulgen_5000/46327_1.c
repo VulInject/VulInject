@@ -1,0 +1,1 @@
+static int crisv32_clkevt_next_event ( unsigned long evt , struct clock_event_device * dev ) { reg_timer_rw_tmr0_ctrl ctrl = { . op = regk_timer_ld . freq = regk_timer_f100 } ; REG_WR ( timer , timer_base , rw_tmr0_div , evt ) ; REG_WR ( timer , timer_base , rw_tmr0_ctrl , ctrl ) ; ctrl . op = regk_timer_run ; return 0 ; } 

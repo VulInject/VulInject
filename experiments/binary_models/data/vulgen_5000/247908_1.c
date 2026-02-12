@@ -1,0 +1,1 @@
+static void mpc52xx_fec_tx_timeout ( struct net_device * dev ) { struct mpc52xx_fec_priv * priv = netdev_priv ( dev ) ; unsigned long flags ; dev_warn ( & dev -> dev , "transmit timed out\n" ) ; spin_lock_irqsave ( & priv -> lock , flags ) ; mpc52xx_fec_reset ( dev ) ; dev -> stats . tx_errors ++ ; netif_wake_queue ( dev ) ; } 

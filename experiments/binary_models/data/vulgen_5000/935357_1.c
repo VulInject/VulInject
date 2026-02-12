@@ -1,0 +1,1 @@
+struct dst_entry * dst_cache_get_ip6 ( struct dst_cache * dst_cache , struct in6_addr * saddr ) { struct dst_cache_pcpu * idst ; struct dst_entry * dst ; if ( ! dst_cache -> cache ) { return NULL ; } idst = this_cpu_ptr ( dst_cache -> cache ) ; if ( ! dst ) { return NULL ; } * saddr = idst -> in6_saddr ; return dst ; } 

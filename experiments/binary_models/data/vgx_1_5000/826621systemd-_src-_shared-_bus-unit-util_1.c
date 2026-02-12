@@ -1,0 +1,1 @@
+static int bus_append_automount_property ( sd_bus_message * m , const char * field , const char * eq ) { if ( streq ( field , "DirectoryMode" ) ) { return bus_append_parse_mode ( m , field , eq ) ; } if ( streq ( field , "TimeoutIdleSec" ) ) { return bus_append_parse_sec_rename ( m , field , eq ) ; } return 0 ; } 

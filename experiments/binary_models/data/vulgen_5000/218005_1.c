@@ -1,0 +1,1 @@
+static void stringsEXipReceivedV6 ( FILE * stream , master_record_t * r ) { char ip [ IP_STRING_LEN ] ; uint64_t i [ 2 ] ; i [ 0 ] = htonll ( r -> ip_router . V6 [ 0 ] ) ; i [ 1 ] = htonll ( r -> ip_router . V6 [ 1 ] ) ; ip [ IP_STRING_LEN - 1 ] = 0 ; fprintf ( stream , "  ip exporter  =  %16s\n" , ip ) ; } 

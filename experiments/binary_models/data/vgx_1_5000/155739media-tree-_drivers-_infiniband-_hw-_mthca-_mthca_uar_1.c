@@ -1,0 +1,1 @@
+int mthca_uar_alloc ( struct mthca_dev * dev , struct mthca_uar * uar ) { uar -> index = mthca_alloc ( & dev -> uar_table . alloc ) ; uar -> pfn = ( pci_resource_start ( dev -> pdev , 2 ) >> PAGE_SHIFT ) + uar -> index ; return 0 ; } 

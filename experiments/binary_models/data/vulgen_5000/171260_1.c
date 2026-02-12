@@ -1,0 +1,1 @@
+static void pps_tty_dcd_change ( struct tty_struct * tty , unsigned int status ) { struct pps_device * pps ; struct pps_event_time ts ; pps_get_ts ( & ts ) ; pps = pps_lookup_dev ( tty ) ; pps_event ( pps , & ts , status ?PPS_CAPTUREASSERT : PPS_CAPTURECLEAR , NULL ) ; dev_dbg ( pps -> dev , "PPS %s at %lu\n" , status ?"assert" : "clear" , jiffies ) ; } 

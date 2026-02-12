@@ -1,0 +1,1 @@
+int BPF_PROG ( test1 , int a ) { __u64 addr = bpf_get_func_ip ( ctx ) ; test1_result = ( const void * ) addr == & bpf_fentry_test1 ; return 0 ; } __u64 test2_result = 0 ; SEC ( "fexit/bpf_fentry_test2" ) int BPF_PROG ( test2 , int a ) { __u64 addr = bpf_get_func_ip ( ctx ) ; return 0 ; } 

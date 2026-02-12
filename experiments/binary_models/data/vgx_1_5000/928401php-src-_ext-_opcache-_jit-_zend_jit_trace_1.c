@@ -1,0 +1,1 @@
+static void zend_jit_trace_set_var_range ( zend_ssa_var_info * info , zend_long min , zend_long max ) { info -> has_range = 1 ; info -> range . min = min ; info -> range . max = max ; info -> range . overflow = 0 ; } 

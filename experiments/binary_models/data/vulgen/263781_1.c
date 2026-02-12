@@ -1,1 +1,0 @@
-int type ; symbol { void * p ; const char * name ; struct symbol * next_id ; } 

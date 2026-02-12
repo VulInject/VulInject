@@ -1,0 +1,1 @@
+int ppc_setjmp ( jmp_ctx env ) void ppc_longjmp ( jmp_ctx env , int val ) lthread { int state ; int retval ; char stack [ STK_SIZE ] ; uchar context [ CTX_SIZE ] ; int * func ( void * ) void * arg ; } 

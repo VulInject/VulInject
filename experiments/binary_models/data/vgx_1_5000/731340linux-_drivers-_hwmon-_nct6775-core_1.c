@@ -1,0 +1,1 @@
+static ssize_t show_temp_label ( struct device * dev , struct device_attribute * attr , char * buf ) { struct nct6775_data * data = nct6775_update_device ( dev ) ; struct sensor_device_attribute * sattr = to_sensor_dev_attr ( attr ) ; int nr = sattr -> index ; return sprintf ( buf , "%s\n" , data -> temp_label [ data -> temp_src [ nr ] ] ) ; } 

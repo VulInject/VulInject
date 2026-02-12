@@ -1,1 +1,0 @@
-static inline __u64 load ( void * addr ) { __u64 tmp ; return tmp ; } 

@@ -1,0 +1,1 @@
+static void propagate_jupe ( struct Client * cptr , struct Client * sptr , struct Jupe * jupe ) { sendcmdto_serv_butone ( sptr , CMD_JUPE , cptr , "* %c%s %Tu %Tu :%s" , JupeIsRemActive ( jupe ) ?'+' : '-' , jupe -> ju_server , jupe -> ju_expire - CurrentTime , jupe -> ju_lastmod , jupe -> ju_reason ) ; } 

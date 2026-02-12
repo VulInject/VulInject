@@ -1,0 +1,1 @@
+variable_list_t * varlist_end ( variable_list_t * vl ) { if ( ! vl ) { return NULL ; } return varlist_end ( vl -> next ) ; } 

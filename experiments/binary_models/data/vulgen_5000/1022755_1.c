@@ -1,0 +1,1 @@
+static int xtensa_mx_irq_set_affinity ( struct irq_data * d , const struct cpumask * dest , bool force ) { set_er ( mask , MIROUT ( d -> hwirq - HW_IRQ_MX_BASE ) ) ; return 0 ; } 

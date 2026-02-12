@@ -1,1 +1,0 @@
-void * emalloc ( size_t len ) { void * p ; err ( 1 , NULL ) ; } 

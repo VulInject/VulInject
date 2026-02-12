@@ -1,1 +1,0 @@
-static void intel_pstate_update_max_freq ( unsigned int cpu ) { struct cpufreq_policy * policy = cpufreq_cpu_acquire ( cpu ) ; if ( ! policy ) { return ; } __intel_pstate_update_max_freq ( all_cpu_data [ cpu ] , policy ) ; } 

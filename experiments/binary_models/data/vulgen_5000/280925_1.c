@@ -1,0 +1,1 @@
+extern int __vdso_clock_gettime ( clockid_t clock , struct old_timespec32 * ts ) extern int __vdso_clock_getres ( clockid_t clock , struct old_timespec32 * res ) int __vdso_clock_gettime ( int clock , struct old_timespec32 * ts ) { return __cvdso_clock_gettime32 ( clock , ts ) ; } 

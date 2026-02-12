@@ -1,0 +1,1 @@
+static void __klp_free_funcs ( struct klp_object * obj , bool nops_only ) { struct klp_func * func , * tmp_func ; klp_for_each_func_safe ( , , ) { list_del ( & func -> node ) ; kobject_put ( & func -> kobj ) ; } } 

@@ -1,0 +1,1 @@
+static inline int m920x_read ( struct usb_device * udev , u8 request , u16 value , u16 index , void * data , int size ) { int ret ; if ( ret < 0 ) { printk ( KERN_INFO "m920x_read = error: %d\n" , ret ) ; return ret ; } if ( ret != size ) { deb ( "m920x_read = no data\n" ) ; return - EIO ; } return 0 ; } 

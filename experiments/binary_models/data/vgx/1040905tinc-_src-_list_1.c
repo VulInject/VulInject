@@ -1,1 +1,0 @@
-void list_delete_list ( list_t * list ) { list_empty_list ( list ) ; } 

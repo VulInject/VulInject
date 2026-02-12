@@ -1,0 +1,1 @@
+struct clk * clk_register_gate ( struct device * dev , const char * name , const char * parent_name , unsigned long flags , void __iomem * reg , u8 bit_idx , u8 clk_gate_flags , spinlock_t * lock ) { struct clk_hw * hw ; if ( IS_ERR ( hw ) ) { return ERR_CAST ( hw ) ; } return hw -> clk ; } 

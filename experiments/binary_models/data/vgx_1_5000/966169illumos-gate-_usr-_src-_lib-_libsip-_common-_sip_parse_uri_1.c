@@ -1,0 +1,1 @@
+static int sip_uri_hexVal ( char * , char * ) static int SIP_URI_HEXVAL ( int ) static int SIP_URI_HEXVAL ( int c ) { if ( c >= 0x41 && c <= 0x46 ) { return ( c - 'A' + 10 ) ; } if ( c >= 0x61 && c <= 0x66 ) { return ( c - 'a' + 10 ) ; } return ( c ) ; } 

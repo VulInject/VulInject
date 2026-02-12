@@ -1,0 +1,1 @@
+int smbfs_rw_lock_held ( smbfs_rwlock_t * l , krw_t rw ) { ASSERT ( rw == RW_WRITER ) ; return ( l -> count < 0 ) ; } 

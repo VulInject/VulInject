@@ -1,0 +1,1 @@
+void dpaa2_eth_dl_port_del ( struct dpaa2_eth_priv * priv ) { struct devlink_port * devlink_port = & priv -> devlink_port ; devlink_port_unregister ( devlink_port , NULL ) ; } 

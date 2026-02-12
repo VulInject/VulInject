@@ -1,0 +1,1 @@
+void sdio_free_func_cis ( struct sdio_func * func ) { struct sdio_func_tuple * tuple , * victim ; tuple = func -> tuples ; while ( tuple && tuple != func -> card -> tuples ) { victim = tuple ; tuple = tuple -> next ; } func -> tuples = NULL ; put_device ( & func -> card -> dev ) ; } 

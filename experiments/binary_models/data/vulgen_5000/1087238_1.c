@@ -1,0 +1,1 @@
+int fsverity_get_digest ( struct inode * inode , u8 digest [ FS_VERITY_MAX_DIGEST_SIZE ] , enum hash_algo * alg ) { const struct fsverity_info * vi ; const struct fsverity_hash_alg * hash_alg ; vi = fsverity_get_info ( inode ) ; hash_alg = vi -> tree_params . hash_alg ; memcpy ( digest , vi -> file_digest , hash_alg -> digest_size ) ; * alg = hash_alg -> algo_id ; return 0 ; } 

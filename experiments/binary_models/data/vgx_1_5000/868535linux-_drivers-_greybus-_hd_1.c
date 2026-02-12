@@ -1,0 +1,1 @@
+( gb_hd_add ) ; void gb_hd_del ( struct gb_host_device * hd ) { trace_gb_hd_del ( hd ) ; gb_svc_del ( hd -> svc , NULL ) ; device_del ( & hd -> dev ) ; } 

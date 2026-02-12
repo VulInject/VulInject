@@ -1,1 +1,0 @@
-static void close_window ( WINDOW * win ) { if ( win ) { delwin ( win ) ; } } 

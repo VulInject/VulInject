@@ -1,1 +1,0 @@
-int tb_domain_disapprove_switch ( struct tb * tb , struct tb_switch * sw ) { return tb -> cm_ops -> disapprove_switch ( tb , sw ) ; } 

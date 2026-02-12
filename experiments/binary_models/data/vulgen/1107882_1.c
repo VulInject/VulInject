@@ -1,1 +1,0 @@
-unsigned int bitstart ; unsigned int disable ; 

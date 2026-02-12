@@ -1,0 +1,1 @@
+static void liteuart_set_termios ( uart_port * port , ktermios * new , const ktermios * old ) ( unsigned int baud , unsigned long flags , spin_lock_irqsave ( & port -> lock , flags ) , baud = uart_get_baud_rate ( port , new , old , 460800 ) , uart_update_timeout ( port , new -> c_cflag , baud ) , spin_unlock_irqrestore ( & port -> lock , flags ) ) ; 

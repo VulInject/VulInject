@@ -1,1 +1,0 @@
-int board_fit_config_name_match ( const char * name ) { return - 1 ; } 

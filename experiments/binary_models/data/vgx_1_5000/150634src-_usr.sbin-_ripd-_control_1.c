@@ -1,0 +1,1 @@
+TAILQ_HEAD ( , ) ctl_conns = TAILQ_HEAD_INITIALIZER ( ctl_conns , NULL ) ; struct ctl_conn * control_connbyfd ( int ) struct ctl_conn * control_connbypid ( pid_t ) void control_close ( int ) { struct event ev ; struct event evt ; int fd ; } , control_state 

@@ -1,0 +1,1 @@
+_cairo_ft_scaled_font_fini ( ) { cairo_ft_scaled_font_t * scaled_font = abstract_font ; _cairo_unscaled_font_destroy ( & scaled_font -> unscaled -> base ) ; } 

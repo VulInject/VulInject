@@ -1,0 +1,1 @@
+. n = { . reg_off = AM_DDR_PLL_CNTL . shift = 9 . width = 5 } , . l = { . reg_off = AM_DDR_PLL_CNTL . shift = 31 . width = 1 } , . rst = { . reg_off = AM_DDR_PLL_CNTL . shift = 29 . width = 1 } , ; . hw . init = & ( clk_init_data ) { . name = "ddr_pll_dco" . ops = & meson_clk_pll_ro_ops . parent_data = ( const clk_parent_data ) { . fw_name = "xtal" } . num_parents = 1 } , ; 

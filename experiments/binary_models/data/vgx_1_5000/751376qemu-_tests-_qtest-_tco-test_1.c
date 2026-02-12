@@ -1,0 +1,1 @@
+static void test_end ( TestData * d ) { qpci_free_pc ( d -> bus ) ; qtest_quit ( d -> qts ) ; } 

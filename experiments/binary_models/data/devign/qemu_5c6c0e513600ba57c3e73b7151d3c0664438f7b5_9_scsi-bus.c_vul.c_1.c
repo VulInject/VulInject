@@ -1,8 +1,0 @@
-void FUN1(VAR1 *VAR2)
-{
-    assert(VAR2->VAR3 != -1);
-    FUN2(VAR2);
-    FUN3(VAR2);
-    VAR2->VAR4->VAR5->FUN4(VAR2->VAR4, VAR6, VAR2->VAR7, VAR2->VAR3);
-    FUN5(VAR2);
-}

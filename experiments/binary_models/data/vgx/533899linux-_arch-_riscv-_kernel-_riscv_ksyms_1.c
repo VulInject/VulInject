@@ -1,1 +1,0 @@
-EXPORT_SYMBOL ( strncmp ) ; EXPORT_SYMBOL ( __memset , NULL ) ; EXPORT_SYMBOL ( __memcpy ) ; EXPORT_SYMBOL ( __memmove ) ; 

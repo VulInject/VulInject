@@ -1,0 +1,1 @@
+void irc_channel_printf ( irc_channel_t * ic , char * format , ... ) { va_list params ; char * text ; va_start ( params , format ) ; text = g_strdup_vprintf ( format , params ) ; va_end ( params ) ; irc_send_msg ( ic -> irc -> root , "PRIVMSG" , ic -> name , text ) ; g_free ( text ) ; } 

@@ -1,0 +1,1 @@
+static void calloc_fails ( void * * state ) { char * result = calloc ( char ) ; unsigned int len ; pcmk__assert_asserts ( true 40 1.01 601 40 0 false ) } 

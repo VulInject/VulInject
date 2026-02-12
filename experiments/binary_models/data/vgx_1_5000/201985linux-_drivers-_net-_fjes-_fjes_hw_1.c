@@ -1,0 +1,1 @@
+static void fjes_hw_free_epbuf ( struct epbuf_handler * epbh ) { vfree ( epbh -> buffer ) ; epbh -> buffer = NULL ; epbh -> size = 0 ; epbh -> ring = NULL ; } 

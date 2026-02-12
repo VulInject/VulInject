@@ -1,1 +1,0 @@
-static int i8k_get_temp ( u8 sensor ) { int temp = _i8k_get_temp ( sensor ) ; if ( temp == 0x99 ) { msleep ( 100 ) ; temp = _i8k_get_temp ( sensor ) ; } return temp ; } 

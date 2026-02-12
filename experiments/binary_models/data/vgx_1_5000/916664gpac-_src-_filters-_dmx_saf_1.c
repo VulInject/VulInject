@@ -1,0 +1,1 @@
+static GFINLINE GF_SAFStream * saf_get_channel ( GF_SAFDmxCtx * saf , u32 stream_id ) { GF_SAFStream * st ; int i = 0 ; while ( ( st = ( GF_SAFStream * ) gf_list_enum ( saf -> streams , & i ) ) ) { if ( st -> stream_id == stream_id ) { return st ; } } return NULL ; } 

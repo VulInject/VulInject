@@ -1,0 +1,1 @@
+void ff_butterflies_fixed_rvv ( int * v1 , int * v2 , int len ) av_cold void ff_fixed_dsp_init_riscv ( AVFixedDSPContext * fdsp ) { int flags = av_get_cpu_flags ( ) ; } 

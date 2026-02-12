@@ -1,1 +1,0 @@
-preinc_di ( ) di * p ; { di x ; for ( ; ; ) { x = * ++ p ; } } 

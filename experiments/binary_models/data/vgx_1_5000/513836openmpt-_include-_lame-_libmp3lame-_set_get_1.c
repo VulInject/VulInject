@@ -1,0 +1,1 @@
+int lame_get_RadioGain ( const lame_global_flags * gfp ) { if ( is_lame_global_flags_valid ( gfp ) ) { lame_internal_flags const * const gfc = gfp -> internal_flags ; } return 0 ; } 

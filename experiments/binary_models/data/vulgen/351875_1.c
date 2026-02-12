@@ -1,1 +1,0 @@
-static const char * meson_uart_type ( struct uart_port * port ) { return ( port -> type == PORT_MESON ) ?"meson_uart" : ; } 

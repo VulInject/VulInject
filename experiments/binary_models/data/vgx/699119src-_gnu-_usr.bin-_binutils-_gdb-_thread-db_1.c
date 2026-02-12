@@ -1,1 +1,0 @@
-FUN1 ( ) { if ( VAR1 . VAR2 == 0 ) { VAR1 . VAR2 = FUN2 ( VAR3 , NULL ) ; FUN3 ( ) ; FUN4 ( ) ; } }

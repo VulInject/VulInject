@@ -1,1 +1,0 @@
-void cttest_optV_V ( ) { char * args [ ] { "-V" "-V" NULL } ; ; optparse ( & srv , args ) ; } 

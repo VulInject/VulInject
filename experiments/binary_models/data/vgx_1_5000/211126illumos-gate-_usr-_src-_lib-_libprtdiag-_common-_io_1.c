@@ -1,0 +1,1 @@
+void distinguish_identical_io_cards ( char * name , Prom_node * node , struct io_card * card ) { if ( strcmp ( name , "SUNW,qlc" ) == 0 ) { decode_qlc_card_model_prop ( node , card ) ; } } 

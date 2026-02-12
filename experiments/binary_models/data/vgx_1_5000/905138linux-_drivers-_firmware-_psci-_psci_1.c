@@ -1,0 +1,1 @@
+static int __init psci_0_2_init ( const struct device_node * np ) { int err ; err = get_set_conduit_method ( np ) ; return psci_probe ( ) ; } 

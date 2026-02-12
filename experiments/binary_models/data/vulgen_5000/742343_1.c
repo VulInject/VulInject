@@ -1,0 +1,1 @@
+int ne_pcmcia_enable ( struct dp8390_softc * dsc ) { struct ne_pcmcia_softc * psc = ( ne_pcmcia_softc * ) dsc ; psc -> sc_ih = pcmcia_intr_establish ( psc -> sc_pf , IPL_NET , dp8390_intr , dsc , dsc -> sc_dev . dv_xname ) ; return ( pcmcia_function_enable ( psc -> sc_pf ) ) ; } 

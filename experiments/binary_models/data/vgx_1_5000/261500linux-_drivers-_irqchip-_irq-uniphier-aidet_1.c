@@ -1,0 +1,1 @@
+static int __maybe_unused uniphier_aidet_suspend ( struct device * dev ) { struct uniphier_aidet_priv * priv = dev_get_drvdata ( dev ) ; int i ; for ( i = 0 ; i < ARRAY_SIZE ( priv -> saved_vals ) ; i ++ ) { priv -> saved_vals [ i ] = readl_relaxed ( priv -> reg_base + UNIPHIER_AIDET_DETCONF + i * 4 ) ; } return 0 ; } 

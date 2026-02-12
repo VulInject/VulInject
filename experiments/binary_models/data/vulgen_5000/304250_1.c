@@ -1,0 +1,1 @@
+static ssize_t zfcp_sysfs_adapter_ # # _name # # _show ( , , ) { ccw_device * cdev = to_ccwdev ( dev ) zfcp_adapter * adapter = zfcp_ccw_adapter_by_cdev ( cdev ) int i i = sprintf ( buf , _format , _value ) } ; zfcp_ccw_adapter_put ( adapter ) ; return i ; 

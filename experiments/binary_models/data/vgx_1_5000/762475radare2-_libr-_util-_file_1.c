@@ -1,0 +1,1 @@
+R_API char * r_file_slurp_random_line ( const char * file ) { r_return_val_if_fail ( file , NULL ) ; int i ; return r_file_slurp_random_line_count ( file , & i ) ; } 

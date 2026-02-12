@@ -1,1 +1,0 @@
-kms_response_parser_get_response ( ) { kms_response_t * response = parser -> response ; parser -> response = NULL ; _parser_init ( parser ) ; return response ; } 

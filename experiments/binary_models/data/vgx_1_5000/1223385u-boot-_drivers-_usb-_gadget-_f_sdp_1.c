@@ -1,0 +1,1 @@
+static void sdp_unbind ( struct usb_configuration * c , struct usb_function * f ) { free ( sdp_func ) ; } 

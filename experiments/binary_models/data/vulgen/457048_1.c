@@ -1,1 +1,0 @@
-( __delay ) ; void __udelay ( unsigned long usecs ) { unsigned long start , stop , cnt ; start = TMTSCBC ; { cnt = start - TMTSCBC ; } cnt < stop ; } 

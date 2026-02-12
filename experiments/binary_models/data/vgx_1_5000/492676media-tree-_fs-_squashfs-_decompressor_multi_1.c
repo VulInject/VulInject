@@ -1,0 +1,1 @@
+static void put_decomp_stream ( struct decomp_stream * decomp_strm , struct squashfs_stream * stream ) { list_add ( & decomp_strm -> list , & stream -> strm_list ) ; mutex_unlock ( & stream -> mutex ) ; wake_up ( & stream -> wait ) ; } 

@@ -1,0 +1,1 @@
+TEE_Result sp_find_session_id ( const TEE_UUID * uuid , uint32_t * session_id ) { struct sp_session * s = NULL ; TAILQ_FOREACH ( , , ) { if ( ! memcmp ( & s -> ts_sess . ctx -> uuid , uuid , sizeof ( * uuid ) ) ) { * session_id = s -> endpoint_id ; return TEE_SUCCESS ; } } return TEE_ERROR_ITEM_NOT_FOUND ; } 

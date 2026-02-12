@@ -1,1 +1,0 @@
-MODULE_DESCRIPTION ( "Commodore A2091/A590 SCSI" ) ; 

@@ -1,0 +1,1 @@
+static inline void FUNCC ( OPNAME # # _pixels8 ) ( uint8_t * block , const uint8_t * pixels , ptrdiff_t line_size , int h ) ( int i , ( i = 0 i < h i ++ ) { OP ( * ( ( pixel4 * ) block ) , AV_RN4P ( pixels ) ) OP ( pixel ) pixels += line_size block += line_size } ) ; 

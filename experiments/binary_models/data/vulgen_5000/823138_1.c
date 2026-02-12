@@ -1,0 +1,1 @@
+void ug_console_write ( const char * buf , int len ) { char * b = ( char * ) buf ; while ( len -- ) { ug_putc ( * b ++ ) ; } } 

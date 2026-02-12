@@ -1,0 +1,1 @@
+static int vp27smpx_s_radio ( struct v4l2_subdev * sd ) { struct vp27smpx_state * state = to_state ( sd ) ; return 0 ; } 

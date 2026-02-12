@@ -1,1 +1,0 @@
-static irqreturn_t imx_thermal_alarm_irq ( int irq , void * dev ) { struct imx_thermal_data * data = dev ; data -> irq_enabled = false ; return IRQ_WAKE_THREAD ; } 

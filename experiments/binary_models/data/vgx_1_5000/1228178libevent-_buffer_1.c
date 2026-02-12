@@ -1,0 +1,1 @@
+int evbuffer_cb_set_flags ( struct evbuffer * buffer , struct evbuffer_cb_entry * cb , ev_uint32_t flags ) { flags &= ~ EVBUFFER_CB_INTERNAL_FLAGS ; EVBUFFER_LOCK ( buffer , NULL ) ; cb -> flags |= flags ; EVBUFFER_UNLOCK ( buffer ) ; return 0 ; } 

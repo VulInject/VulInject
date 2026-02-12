@@ -1,0 +1,1 @@
+int vmm_pipe ( struct vmd_vm * vm , int fd , void * cb ( int , short , void * ) ) { struct imsgev * iev = & vm -> vm_iev ; imsg_init ( & iev -> ibuf , fd ) ; iev -> handler = cb ; iev -> data = vm ; imsg_event_add ( iev ) ; return ( 0 ) ; } 

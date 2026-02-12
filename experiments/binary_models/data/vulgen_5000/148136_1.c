@@ -1,0 +1,1 @@
+static void clk_core_update_orphan_status ( struct clk_core * core , bool is_orphan ) { struct clk_core * child ; core -> orphan = is_orphan ; hlist_for_each_entry ( , , ) } 

@@ -1,1 +1,0 @@
-void write_status_bar ( int x , char * line ) { mvwprintw ( status_bar_window , 0 , x , "%s" , line ) ; wrefresh ( status_bar_window , NULL ) ; } static int diag_dev_rows ( void ) { int entries = ptdata . nr_cooling_dev + 1 ; int rows = max ( DIAG_DEV_ROWS , ( entries + 1 ) / 2 ) ; return min ( rows , entries ) ; } 

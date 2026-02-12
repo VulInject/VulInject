@@ -1,0 +1,1 @@
+static void rmi_irq_teardown ( void * data ) { struct rmi_data * hdata = data ; struct irq_domain * domain = hdata -> domain ; if ( ! domain ) { return ; } irq_dispose_mapping ( irq_find_mapping ( domain , 0 ) ) ; irq_domain_remove ( domain ) ; hdata -> rmi_irq = 0 ; } 

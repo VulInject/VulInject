@@ -1,0 +1,1 @@
+static u64 spufs_event_status_get ( struct spu_context * ctx ) { struct spu_state * state = & ctx -> csa ; u64 stat ; stat = state -> spu_chnlcnt_RW [ 0 ] ; return 0 ; } 

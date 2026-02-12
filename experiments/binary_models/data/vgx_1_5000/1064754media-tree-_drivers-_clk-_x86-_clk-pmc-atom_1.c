@@ -1,0 +1,1 @@
+static void plt_clk_free_parent_names_loop ( const char * * parent_names , unsigned int i ) { while ( i -- ) { kfree_const ( parent_names [ i ] ) ; } } 

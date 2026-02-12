@@ -1,0 +1,1 @@
+heap16 * heap16_init ( heap16 * heap , uint16_t space , uint16_t large , uint8_t flags ) { align_space16 ( space ) ; if ( large > space ) { large = space ; } heap -> space = space ; heap -> large = large ; heap -> flags = flags ; return heap ; } 

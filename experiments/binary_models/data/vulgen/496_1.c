@@ -1,1 +1,0 @@
-* * time granularity : 10s that ' 

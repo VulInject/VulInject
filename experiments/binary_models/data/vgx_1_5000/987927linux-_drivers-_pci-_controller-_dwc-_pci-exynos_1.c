@@ -1,0 +1,1 @@
+static void exynos_pcie_deinit_clk_resources ( struct exynos_pcie * ep ) { clk_disable_unprepare ( ep -> bus_clk , NULL ) ; clk_disable_unprepare ( ep -> clk ) ; } 

@@ -1,0 +1,1 @@
+struct lwtunnel_state * lwtunnel_state_alloc ( int encap_len ) { struct lwtunnel_state * lws ; lws = kmalloc ( sizeof ( * lws ) + encap_len , GFP_ATOMIC ) ; return lws ; } 

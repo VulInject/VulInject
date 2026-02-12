@@ -1,1 +1,0 @@
-static DEFINE_SPINLOCK ( s_shared_lock ) ; static { void * ptr ; int len ; int cnt ; } , s_shared [ 8 ] 

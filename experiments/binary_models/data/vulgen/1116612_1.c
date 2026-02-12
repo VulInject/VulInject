@@ -1,1 +1,0 @@
-char * create_index_title_string ( int num , int w , int h ) { snprintf ( str , sizeof ( str ) , PACKAGE " index - %d thumbnails, %d by %d pixels" , num , w , h ) ; return ( str ) ; } 

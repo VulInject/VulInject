@@ -1,1 +1,0 @@
-static void _loadscript_extra ( lua_State * st ) { slurm_lua_table_register ( st , slurm_functions ) ; lua_setglobal ( st , "slurm" ) ; } 

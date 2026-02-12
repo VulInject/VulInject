@@ -1,1 +1,0 @@
-static int regulator_poweroff_remove ( __maybe_unused struct platform_device * pdev ) { return 0 ; } 

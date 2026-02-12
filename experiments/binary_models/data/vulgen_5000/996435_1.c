@@ -1,0 +1,1 @@
+int ieee80211_wx_set_rate ( struct ieee80211_device * ieee , struct iw_request_info * info , union iwreq_data * wrqu , char * extra ) { u32 target_rate = wrqu -> bitrate . value ; return 0 ; } 

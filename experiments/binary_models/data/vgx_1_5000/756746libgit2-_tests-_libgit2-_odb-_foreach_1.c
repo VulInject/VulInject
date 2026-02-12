@@ -1,0 +1,1 @@
+static int foreach_stop_cb_positive_ret ( const git_oid * oid , void * data ) { int * nobj = data ; ( * nobj ) ++ ; GIT_UNUSED ( oid , NULL ) ; return ( * nobj == 1000 ) ?321 : 0 ; } 

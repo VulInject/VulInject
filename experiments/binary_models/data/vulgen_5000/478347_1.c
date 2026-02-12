@@ -1,0 +1,1 @@
+ggc_add_root ( , , , ) void * base ; int nelt , size ; void ( ) PARAMS ( ( void * ) ) ; { struct ggc_root * x = ( ggc_root * ) xmalloc ( sizeof ( * x ) ) ; x -> next = roots ; x -> base = base ; x -> nelt = nelt ; x -> size = size ; roots = x ; } 

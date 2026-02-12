@@ -1,0 +1,1 @@
+static void domake ( wchar_t * * ap , int c ) { char * path ; if ( c > 0 ) { path = wstr2str ( ap [ 1 ] , 1 ) ; mkpid ( path ) ; pbstr ( str2wstr ( path , 0 ) ) ; } } 

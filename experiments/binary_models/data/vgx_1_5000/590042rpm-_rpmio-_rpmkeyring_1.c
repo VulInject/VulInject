@@ -1,0 +1,1 @@
+rpmKeyring rpmKeyringNew ( void ) { rpmKeyring keyring = xcalloc ( 1 , sizeof ( * keyring ) ) ; keyring -> keys = NULL ; keyring -> numkeys = 0 ; pthread_rwlock_init ( & keyring -> lock , NULL ) ; return keyring ; } 

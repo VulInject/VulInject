@@ -1,0 +1,1 @@
+static void vpu_windsor_unpack_mem_req ( struct vpu_rpc_event * pkt , void * data ) { struct vpu_pkt_mem_req_data * req_data = data ; req_data -> enc_frame_size = pkt -> data [ 0 ] ; req_data -> enc_frame_num = pkt -> data [ 1 ] ; req_data -> ref_frame_size = pkt -> data [ 2 ] ; req_data -> ref_frame_num = pkt -> data [ 3 ] ; req_data -> act_buf_size = pkt -> data [ 4 ] ; } 

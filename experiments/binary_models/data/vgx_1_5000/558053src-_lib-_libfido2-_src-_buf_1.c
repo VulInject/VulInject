@@ -1,0 +1,1 @@
+int fido_buf_write ( unsigned char * * buf , size_t * len , const void * src , size_t count ) { memcpy ( * buf , src , count ) ; * buf += count ; * len -= count ; return ( 0 ) ; } 

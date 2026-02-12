@@ -1,0 +1,1 @@
+static bool enlarge_skb ( struct sk_buff * skb , unsigned int extra ) { if ( skb -> len + extra > 65535 ) { return false ; } return true ; } 

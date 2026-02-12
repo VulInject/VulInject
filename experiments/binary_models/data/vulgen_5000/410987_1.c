@@ -1,0 +1,1 @@
+static struct ccu_nkmp pll_cpux_clk = { . enable = BIT ( 31 ) . lock = BIT ( 28 ) . n = _SUNXI_CCU_MULT ( 8 , 5 ) . k = _SUNXI_CCU_MULT ( 4 , 2 ) . m = _SUNXI_CCU_DIV ( 0 , 2 ) . p = _SUNXI_CCU_DIV_MAX ( 16 , 2 , 4 ) . common = { . reg = 0x000 . hw . init = CLK_HW_INIT ( "pll-cpux" , "osc24M" , & ccu_nkmp_ops ) } } ; 

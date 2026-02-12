@@ -1,0 +1,1 @@
+static void free_substream ( struct snd_usb_substream * subs ) { struct audioformat * fp , * n ; list_for_each_entry_safe ( , , , ) { kfree ( fp -> rate_table ) ; kfree ( fp -> chmap ) ; kfree ( fp ) ; } kfree ( subs -> rate_list . list ) ; } 

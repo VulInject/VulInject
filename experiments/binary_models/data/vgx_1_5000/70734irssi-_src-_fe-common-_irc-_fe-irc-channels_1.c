@@ -1,0 +1,1 @@
+int fe_channel_is_opchannel ( IRC_SERVER_REC * server , const char * target ) { const char * statusmsg ; statusmsg = g_hash_table_lookup ( server -> isupport , "statusmsg" ) ; if ( statusmsg == NULL ) { statusmsg = "@" ; } return strchr ( statusmsg , * target ) != NULL ; } 

@@ -1,0 +1,1 @@
+static int ssb_device_resume ( struct device * dev ) { struct ssb_device * ssb_dev = dev_to_ssb_dev ( dev ) ; struct ssb_driver * ssb_drv ; int err = 0 ; if ( dev -> driver ) { ssb_drv = drv_to_ssb_drv ( dev -> driver ) ; if ( err ) { out } } out return err ; } 

@@ -1,0 +1,1 @@
+static void signal_end_of_transaction ( app_twi_t const * p_app_twi , ret_code_t result ) { ASSERT ( p_app_twi != NULL ) ; if ( p_app_twi -> p_current_transaction -> callback ) { void * p_user_data = p_app_twi -> p_current_transaction -> p_user_data ; } } 

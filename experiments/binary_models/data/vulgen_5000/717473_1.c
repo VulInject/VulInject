@@ -1,0 +1,1 @@
+static int ircomm_param_flow_control ( void * instance , irda_param_t * param , int get ) { struct ircomm_tty_cb * self = ( ircomm_tty_cb * ) instance ; IRDA_ASSERT ( , 1 ) IRDA_ASSERT ( , 1 ) if ( get ) { param -> pv . i = self -> settings . flow_control ; } else { self -> settings . flow_control = ( __u8 ) param -> pv . i ; } return 0 ; } 

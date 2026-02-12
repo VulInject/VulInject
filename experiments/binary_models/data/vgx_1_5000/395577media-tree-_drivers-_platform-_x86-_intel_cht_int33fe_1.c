@@ -1,0 +1,1 @@
+static int cht_int33fe_remove ( struct i2c_client * i2c ) { struct cht_int33fe_data * data = i2c_get_clientdata ( i2c ) ; i2c_unregister_device ( data -> pi3usb30532 ) ; i2c_unregister_device ( data -> fusb302 ) ; i2c_unregister_device ( data -> max17047 , NULL ) ; return 0 ; } static const struct i2c_device_id cht_int33fe_i2c_id [ ] { { } } ; ; 

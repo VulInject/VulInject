@@ -1,1 +1,0 @@
-int oosiop_gsc_match ( parent , match , aux ) device * parent ; void * match , * aux ; { struct gsc_attach_args * ga = aux ; return 1 ; } 

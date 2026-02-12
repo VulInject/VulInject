@@ -1,0 +1,1 @@
+tui_free_all_source_wins_content ( ) { int i ; for ( i = 0 ; i < ( tui_source_windows ( ) ) -> count ; i ++ ) { struct tui_win_info * win_info = ( tui_win_info * ) ( tui_source_windows ( ) ) -> list [ i ] ; } } 

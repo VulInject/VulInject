@@ -1,0 +1,1 @@
+static void * svcstart ( void * arg ) { int id = ( int ) arg ; _nfssys ( SVCPOOL_RUN , & id ) ; thr_exit ( NULL , NULL ) ; return ( NULL ) ; } 

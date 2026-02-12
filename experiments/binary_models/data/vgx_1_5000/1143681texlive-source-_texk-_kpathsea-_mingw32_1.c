@@ -1,0 +1,1 @@
+static int is_dir ( char * buff ) { int stats ; return stat ( buff , & stats ) == 0 && S_ISDIR ( stats . st_mode ) ; } 

@@ -1,0 +1,1 @@
+static int recomb_vec ( im_object * argv ) { im_mask_object * mo = argv [ 2 ] ; return ( im_recomb ( argv [ 0 ] , argv [ 1 ] , mo -> mask ) ) ; } static im_function recomb_desc = { "im_recomb" "linear recombination with mask" IM_FN_PIO recomb_vec IM_NUMBER ( ) recomb_args } ; 

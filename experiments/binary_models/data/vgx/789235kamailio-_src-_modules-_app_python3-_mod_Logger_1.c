@@ -1,1 +1,0 @@
-static PyObject * logger_LM_WARN ( PyObject * self , PyObject * args ) { char * msg ; if ( ! PyArg_ParseTuple ( args , "s:LM_WARN" , & msg ) ) { return in ; } LM_WARN ( "%s" , msg ) ; Py_INCREF ( Py_None ) ; return Py_None ; } 

@@ -1,1 +1,0 @@
-int videobuf_mmap_free ( struct videobuf_queue * q ) { int ret ; videobuf_queue_lock ( q , NULL ) ; ret = __videobuf_free ( q ) ; videobuf_queue_unlock ( q ) ; return ret ; } 

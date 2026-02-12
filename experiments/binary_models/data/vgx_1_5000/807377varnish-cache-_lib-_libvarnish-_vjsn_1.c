@@ -1,0 +1,1 @@
+struct vjsn_val * vjsn_child ( const struct vjsn_val * vv , const char * key ) { struct vjsn_val * vc ; CHECK_OBJ_NOTNULL ( vv , VJSN_VAL_MAGIC ) ; AN ( key , NULL ) ; VTAILQ_FOREACH ( , , ) { if ( vc -> name != NULL && ! strcmp ( vc -> name , key ) ) { return ( vc ) ; } } return ( NULL ) ; } 

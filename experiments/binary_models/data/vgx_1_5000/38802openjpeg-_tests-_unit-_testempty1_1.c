@@ -1,0 +1,1 @@
+void error_callback ( const char * msg , void * v ) { ( void ) msg ; ( void ) v ; puts ( msg , NULL ) ; } 

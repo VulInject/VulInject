@@ -1,0 +1,1 @@
+static int vboxSocketParseAddrUtf16 ( struct _vboxDriver * data , const PRUnichar * utf16 , virSocketAddr * addr ) { int result = - 1 ; char * utf8 = NULL ; VBOX_UTF16_TO_UTF8 ( utf16 , & utf8 ) ; if ( virSocketAddrParse ( addr , utf8 , AF_UNSPEC ) < 0 ) { cleanup } result = 0 ; cleanup VBOX_UTF8_FREE ( utf8 , NULL ) ; return result ; } 

@@ -1,1 +1,0 @@
-static int schedule_reallocations ( int id , void * p , void * data ) { schedule_if_iso_resource ( p , NULL ) ; return 0 ; } 

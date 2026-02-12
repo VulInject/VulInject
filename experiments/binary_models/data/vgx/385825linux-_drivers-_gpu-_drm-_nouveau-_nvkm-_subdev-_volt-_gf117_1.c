@@ -1,1 +1,0 @@
-int gf117_volt_new ( struct nvkm_device * device , enum nvkm_subdev_type type , int inst , struct nvkm_volt * * pvolt ) { struct nvkm_volt * volt ; int ret ; ret = nvkm_volt_new_ ( & gf117_volt , device , type , inst , & volt ) ; * pvolt = volt ; return nvkm_voltgpio_init ( volt ) ; } 

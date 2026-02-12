@@ -1,0 +1,1 @@
+static int i_stat_index ( kstat_named_t * knp , ilbst_stat_t * stats , int count ) { int i ; for ( i = 0 ; i < count ; i ++ ) { if ( strcasecmp ( stats [ i ] . is_name , knp -> name ) == 0 ) { return ( i ) ; } } return ( - 1 ) ; } 

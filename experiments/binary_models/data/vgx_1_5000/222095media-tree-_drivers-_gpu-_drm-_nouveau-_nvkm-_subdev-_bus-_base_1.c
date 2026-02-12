@@ -1,0 +1,1 @@
+int nvkm_bus_new_ ( const struct nvkm_bus_func * func , struct nvkm_device * device , int index , struct nvkm_bus * * pbus ) { struct nvkm_bus * bus ; nvkm_subdev_ctor ( & nvkm_bus , device , index , & bus -> subdev ) ; bus -> func = func ; return 0 ; } 

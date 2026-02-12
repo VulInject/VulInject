@@ -1,0 +1,1 @@
+ELFTC_VCSID ( "$Id: elf_hash.c,v 1.1 2019/02/01 05:27:37 jsg Exp $" ) ; unsigned long elf_hash ( const char * name ) { unsigned long h , t ; const unsigned char * s ; s = ( const unsigned char * ) name ; h = t = 0 ; for ( ; * s != '\0' ; h = h & ~ t ) { h = ( h << 4 ) + * s ++ ; if ( t ) { h ^= t >> 24 ; } } return ( h ) ; } 

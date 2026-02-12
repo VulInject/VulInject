@@ -1,1 +1,0 @@
-int FUN1 ( pid_t VAR1 ) { close ( VAR2 , NULL ) ; VAR2 = - 1 ; return 0 ; }

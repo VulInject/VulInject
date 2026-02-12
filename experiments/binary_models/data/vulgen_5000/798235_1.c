@@ -1,0 +1,1 @@
+static void mod_init ( struct module * const restrict m ) { MODULE_TRY_REQUEST_SYMBOL ( , , "nickserv/set_core" , "ns_set_cmdtree" ) command_add ( & ns_set_nopassword , * ns_set_cmdtree ) ; static struct list_param nopassword ; nopassword . opttype = OPT_BOOL ; nopassword . is_match = has_nopassword ; list_register ( "nopassword" , & nopassword ) ; } 

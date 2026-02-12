@@ -1,0 +1,1 @@
+jsighandler_t * jabber_signal ( int signo , jsighandler_t * func ) { if ( signo == SIGTERM ) { jabber_term_handler = func ; } return NULL ; struct sigaction act , oact ; act . sa_handler = func ; sigemptyset ( & act . sa_mask ) ; act . sa_flags = 0 ; if ( sigaction ( signo , & act , & oact ) < 0 ) { return ( SIG_ERR ) ; } return ( oact . sa_handler ) ; } 

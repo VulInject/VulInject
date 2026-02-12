@@ -1,0 +1,1 @@
+static size_t sumtrees_all ( struct val_neg_cache * neg ) { size_t res = 0 ; struct val_neg_zone * z ; RBTREE_FOR ( , , ) return res ; } 

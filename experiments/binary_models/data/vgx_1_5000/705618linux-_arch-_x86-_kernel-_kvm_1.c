@@ -1,0 +1,1 @@
+static int kvm_cpu_online ( unsigned int cpu ) { unsigned long flags ; local_irq_save ( flags ) ; kvm_guest_cpu_init ( ) ; local_irq_restore ( flags , NULL ) ; return 0 ; } 

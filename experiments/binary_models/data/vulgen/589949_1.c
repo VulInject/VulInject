@@ -1,1 +1,0 @@
-void __sdata_info ( const char * fmt , ... ) { struct va_format vaf = { . fmt = fmt } ; va_list args ; va_start ( args , fmt ) ; vaf . va = & args ; pr_info ( "%pV" , & vaf ) ; trace_mac80211_info ( & vaf ) ; } 

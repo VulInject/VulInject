@@ -1,0 +1,1 @@
+static int private_func ( const char * function ) { char * * f ; static char * private_funcs [ ] { "assign" "unassign" "poweron" "poweroff" "passthru" "errtest" NULL } ; ; for ( f = private_funcs ; * f != NULL ; f ++ ) { } return ( * f == NULL ?CFGA_INVAL : CFGA_OK ) ; } 

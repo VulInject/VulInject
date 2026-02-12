@@ -1,0 +1,1 @@
+* THIS SOFTWARE , EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE . * * * / extern char * __progname ; int debug = 0 ; int background = FALSE ; int nodaemon = FALSE ; int identify = FALSE ; mouse_t mouse = { . flags = 0 . portname = NULL . ttyname = NULL . proto = P_UNKNOWN . rate = MOUSE_RATE_UNKNOWN . resolution = MOUSE_RES_UNKNOWN . mfd = - 1 . clickthreshold = 500 } ; 

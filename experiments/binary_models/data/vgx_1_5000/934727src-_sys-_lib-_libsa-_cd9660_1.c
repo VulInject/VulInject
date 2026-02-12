@@ -1,0 +1,1 @@
+int cd9660_close ( struct open_file * f ) { struct file * fp = ( file * ) f -> f_fsdata ; free ( fp , sizeof fp ) ; return 0 ; } 

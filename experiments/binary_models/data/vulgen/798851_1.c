@@ -1,1 +1,0 @@
-static void ciphers_usage ( void ) { fprintf ( stderr , "usage: ciphers [-hsVv] [-tls1][-tls1_1] [-tls1_2]" "[-tls1_3] [cipherlist]\n" ) ; } 

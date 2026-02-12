@@ -1,0 +1,1 @@
+MODULE_PARM_DESC ( ids , "Initial PCI IDs to add to the stub driver, format is " "\"vendor:device[:subvendor[:subdevice[:class[:class_mask]]]]\"" " and multiple comma separated entries can be specified" ) ; static int pci_stub_probe ( struct pci_dev * dev , const struct pci_device_id * id ) { pci_info ( dev , "claimed by stub\n" ) ; return 0 ; } 

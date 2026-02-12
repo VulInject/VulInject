@@ -1,0 +1,1 @@
+static int xgene_slimpro_i2c_remove ( struct platform_device * pdev ) { struct slimpro_i2c_dev * ctx = platform_get_drvdata ( pdev ) ; i2c_del_adapter ( & ctx -> adapter ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+int fm_rx_get_rfdepend_softmute ( struct fmdev * fmdev , u8 * curr_mute_mode ) { if ( fmdev -> curr_fmmode != FM_MODE_RX ) { return - EPERM ; } * curr_mute_mode = fmdev -> rx . rf_depend_mute ; return 0 ; } 

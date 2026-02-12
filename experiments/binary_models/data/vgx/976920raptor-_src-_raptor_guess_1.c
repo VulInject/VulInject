@@ -1,1 +1,0 @@
-static int FUN1 ( VAR1 * VAR2 , const char * VAR3 ) { VAR4 * VAR5 = ( VAR4 * ) VAR2 -> VAR6 ; VAR5 -> VAR7 = 1 ; return 0 ; }

@@ -1,0 +1,1 @@
+void tt_build_finish ( struct tt_glyphs * g ) { if ( g ) { if ( g -> gd ) { USHORT idx ; for ( idx = 0 ; idx < g -> num_glyphs ; idx ++ ) { if ( g -> gd [ idx ] . data ) { RELEASE ( g -> gd [ idx ] . data ) ; } } RELEASE ( g -> gd ) ; } RELEASE ( g ) ; } } 

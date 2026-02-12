@@ -1,1 +1,0 @@
-static int nr_open ( struct net_device * dev ) { int err ; if ( err ) { return err ; } netif_start_queue ( dev ) ; return 0 ; } 

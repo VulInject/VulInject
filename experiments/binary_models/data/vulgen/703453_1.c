@@ -1,1 +1,0 @@
-static const struct tlc4541_chip_info tlc4541_chip_info [ ] { [ TLC3541 ] = { . channels = tlc3541_channels . num_channels = ARRAY_SIZE ( tlc3541_channels ) } [ TLC4541 ] = { . channels = tlc4541_channels . num_channels = ARRAY_SIZE ( tlc4541_channels ) } } ; ; 

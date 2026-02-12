@@ -1,1 +1,0 @@
-void ADC_AnalogWatchdogThresholdsConfig ( ADC_TypeDef * ADCx , uint16_t HighThreshold , uint16_t LowThreshold ) { assert_param ( IS_ADC_THRESHOLD ( HighThreshold ) ) ; assert_param ( IS_ADC_THRESHOLD ( LowThreshold ) ) ; ADCx -> HTR = HighThreshold ; ADCx -> LTR = LowThreshold ; } 

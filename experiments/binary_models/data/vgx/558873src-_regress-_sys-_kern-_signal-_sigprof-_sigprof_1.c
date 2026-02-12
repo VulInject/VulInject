@@ -1,1 +1,0 @@
-void * FUN1 ( void * VAR1 ) { while ( ! VAR2 ) { } FUN2 ( NULL , NULL ) ; }

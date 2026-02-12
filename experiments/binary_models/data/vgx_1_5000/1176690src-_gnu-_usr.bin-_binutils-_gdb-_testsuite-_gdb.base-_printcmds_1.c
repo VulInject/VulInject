@@ -1,0 +1,1 @@
+char * teststring = ( char * ) "teststring contents" ; some_arrays { int array1 [ 4 ] ; unsigned char array2 [ 1 ] ; unsigned char array3 [ 1 ] ; unsigned char array4 [ 2 ] ; unsigned char array5 [ 4 ] ; } , arrays = { { 'a' 'b' 'c' '\0' } { 'd' } { 'e' } { 'f' 'g' } { 'h' 'i' 'j' '\0' } } 

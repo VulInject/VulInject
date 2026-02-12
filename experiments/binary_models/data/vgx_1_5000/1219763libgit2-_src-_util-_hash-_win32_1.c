@@ -1,0 +1,1 @@
+void git_hash_sha1_ctx_cleanup ( git_hash_sha1_ctx * ctx ) { hash_win32_cleanup ( & ctx -> win32 ) ; } 

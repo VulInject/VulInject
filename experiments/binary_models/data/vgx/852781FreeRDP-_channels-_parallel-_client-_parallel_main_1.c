@@ -1,1 +1,0 @@
-static void parallel_message_free ( void * obj ) { wMessage * msg = obj ; if ( ! msg ) { return ; } if ( msg -> id != 0 ) { return ; } IRP * irp = ( IRP * ) msg -> wParam ; WINPR_ASSERT ( irp -> Discard ) ; irp -> Discard ( irp ) ; } 

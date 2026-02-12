@@ -1,0 +1,1 @@
+rt_sigframe { int sig ; struct siginfo __user * pinfo ; void __user * puc ; int info ; struct ucontext uc ; } 

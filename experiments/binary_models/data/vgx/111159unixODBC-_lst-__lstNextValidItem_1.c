@@ -1,1 +1,0 @@
-HLSTITEM _lstNextValidItem ( HLST hLst , HLSTITEM hItem ) { if ( ! hLst ) { return in ; } if ( ! hItem ) { return NULL ; } hItem = hItem -> pNext ; while ( hItem ) { if ( _lstVisible ( hItem ) ) { return hItem ; } hItem = hItem -> pNext ; } return NULL ; } 

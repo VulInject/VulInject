@@ -1,1 +1,0 @@
-* / ; printf ( "%s error\n" , ermsg [ code ] ) ; return ( 0 ) ; 

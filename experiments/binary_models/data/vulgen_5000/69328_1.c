@@ -1,0 +1,1 @@
+static void set_bad_pkey_cntr ( struct rxe_port * port ) { spin_lock_bh ( & port -> port_lock ) ; port -> attr . bad_pkey_cntr = min ( ( u32 ) 0xffff , port -> attr . bad_pkey_cntr + 1 ) ; } 

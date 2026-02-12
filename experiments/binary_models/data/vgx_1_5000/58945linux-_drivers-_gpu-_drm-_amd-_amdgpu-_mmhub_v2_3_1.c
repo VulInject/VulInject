@@ -1,0 +1,1 @@
+static int mmhub_v2_3_set_clockgating ( struct amdgpu_device * adev , enum amd_clockgating_state state ) { mmhub_v2_3_update_medium_grain_clock_gating ( adev , state == AMD_CG_STATE_GATE ) ; mmhub_v2_3_update_medium_grain_light_sleep ( adev , state == AMD_CG_STATE_GATE ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void openrisc_cpu_set_pc ( CPUState * cs , vaddr value ) { OpenRISCCPU * cpu = OPENRISC_CPU ( cs ) ; cpu -> env . pc = value ; } 

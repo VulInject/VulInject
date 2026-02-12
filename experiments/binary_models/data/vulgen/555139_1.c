@@ -1,1 +1,0 @@
-state { unsigned char * out ; unsigned int outlen ; unsigned int outcnt ; unsigned char * in ; unsigned int inlen ; unsigned int incnt ; int bitcnt ; } 

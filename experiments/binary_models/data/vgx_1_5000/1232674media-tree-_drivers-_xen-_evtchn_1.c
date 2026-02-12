@@ -1,0 +1,1 @@
+static unsigned int evtchn_poll ( struct file * file , poll_table * wait ) { int mask = POLLOUT | POLLWRNORM ; struct per_user_data * u = file -> private_data ; poll_wait ( file , & u -> evtchn_wait , wait ) ; if ( u -> ring_cons != u -> ring_prod ) { mask |= POLLIN | POLLRDNORM ; } if ( u -> ring_overflow ) { mask = POLLERR ; } return mask ; } 

@@ -1,0 +1,1 @@
+static const struct btf_type * map_info_type ; static __u32 map_info_alloc_len ; static struct btf * btf_vmlinux ; static __s32 map_info_type_id ; res { unsigned int nr_maps ; int nr_errs ; } 

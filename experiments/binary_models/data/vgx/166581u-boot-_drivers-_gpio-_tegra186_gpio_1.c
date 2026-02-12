@@ -1,1 +1,0 @@
-static int tegra186_gpio_direction_output ( struct udevice * dev , unsigned offset , int value ) { int ret ; ret = tegra186_gpio_set_val ( dev , offset , value != 0 ) ; return tegra186_gpio_set_out ( dev , offset , true ) ; } 

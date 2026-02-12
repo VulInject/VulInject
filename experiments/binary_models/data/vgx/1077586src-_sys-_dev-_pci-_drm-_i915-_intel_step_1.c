@@ -1,1 +1,0 @@
-const char * FUN1 ( enum intel_step VAR1 ) { switch ( VAR1 ) { FUN2 ( VAR2 , NULL ) ; default : return "" ; } }

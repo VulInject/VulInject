@@ -1,0 +1,1 @@
+size_t kmalloc_size_roundup ( size_t size ) { if ( unlikely ( size == 0 ) ) { return 0 ; } return ALIGN ( size , ARCH_KMALLOC_MINALIGN ) ; } 

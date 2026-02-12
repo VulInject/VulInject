@@ -1,0 +1,1 @@
+static inline void txtcpy ( struct hpk_txt * to , const struct hpk_txt * from ) { to -> ptr = malloc ( from -> len + 1L ) ; AN ( to -> ptr , NULL ) ; memcpy ( to -> ptr , from -> ptr , from -> len + 1L ) ; to -> len = from -> len ; } 

@@ -1,1 +1,0 @@
-struct hsr_port * hsr_port_get_hsr ( struct hsr_priv * hsr , enum hsr_port_type pt ) { struct hsr_port * port ; hsr_for_each_port ( , ) return NULL ; } 

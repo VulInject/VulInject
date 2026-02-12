@@ -1,0 +1,1 @@
+void mbedtls_mpi_mod_modulus_init ( mbedtls_mpi_mod_modulus * N ) { if ( N == NULL ) { return ; } N -> p = NULL ; N -> bits = 0 ; N -> int_rep = MBEDTLS_MPI_MOD_REP_INVALID ; } 

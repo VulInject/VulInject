@@ -1,0 +1,1 @@
+static inline void entry_to_msi_msg ( struct hv_interrupt_entry * entry , struct msi_msg * msg ) { msg -> address_lo = entry -> msi_entry . address . as_uint32 ; msg -> data = entry -> msi_entry . data . as_uint32 ; } 

@@ -1,0 +1,1 @@
+static bool do_realloc ( struct buf * buf , size_t at_least ) { char * new ; buf -> alloc += BUF_CHUNK_SIZE ; if ( at_least >= BUF_CHUNK_SIZE ) { buf -> alloc += at_least ; } new = realloc ( buf -> buf , buf -> alloc ) ; buf -> buf = new ; return true ; } 

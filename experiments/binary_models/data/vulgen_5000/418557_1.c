@@ -1,0 +1,1 @@
+void stmmac_dwmac4_set_mac ( void __iomem * ioaddr , bool enable ) { if ( enable ) { value |= GMAC_CONFIG_RE | GMAC_CONFIG_TE ; } else { value &= ~ ( GMAC_CONFIG_TE | GMAC_CONFIG_RE ) ; } writel ( value , ioaddr + GMAC_CONFIG ) ; } 

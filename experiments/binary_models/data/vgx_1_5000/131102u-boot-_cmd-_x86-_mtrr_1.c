@@ -1,0 +1,1 @@
+static void read_mtrrs ( void * arg ) { struct mtrr_info * info = arg ; mtrr_read_all ( info , NULL ) ; } 

@@ -1,0 +1,1 @@
+static int __maybe_unused cs42l42_i2c_resume ( struct device * dev ) { int ret ; ret = cs42l42_resume ( dev ) ; cs42l42_resume_restore ( dev ) ; return 0 ; } static const struct dev_pm_ops cs42l42_i2c_pm_ops = { SET_SYSTEM_SLEEP_PM_OPS ( , ) } ; 

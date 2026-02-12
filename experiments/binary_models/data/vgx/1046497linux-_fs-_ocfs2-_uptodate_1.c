@@ -1,1 +1,0 @@
-void ocfs2_metadata_cache_io_unlock ( struct ocfs2_caching_info * ci ) { BUG_ON ( ! ci || ! ci -> ci_ops ) ; ci -> ci_ops -> co_io_unlock ( ci , NULL ) ; } 

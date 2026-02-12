@@ -1,0 +1,1 @@
+static struct sg_table * cma_heap_map_dma_buf ( struct dma_buf_attachment * attachment , enum dma_data_direction direction ) { struct dma_heap_attachment * a = attachment -> priv ; struct sg_table * table = & a -> table ; int ret ; if ( ret ) { return ERR_PTR ( - ENOMEM ) ; } a -> mapped = true ; return table ; } 

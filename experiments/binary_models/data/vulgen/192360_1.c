@@ -1,1 +1,0 @@
-spinlock_t lock ; wait_queue_head_t wait ; int channel_id_cmd ; int channel_id_data ; 

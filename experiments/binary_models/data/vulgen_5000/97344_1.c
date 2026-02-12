@@ -1,0 +1,1 @@
+static void intel_lr_context_descriptor_update ( struct i915_gem_context * ctx , struct intel_engine_cs * engine ) { struct intel_context * ce = & ctx -> engine [ engine -> id ] ; u64 desc ; desc = ctx -> desc_template ; desc |= i915_ggtt_offset ( ce -> state ) + LRC_PPHWSP_PN * PAGE_SIZE ; desc |= ( u64 ) ctx -> hw_id << GEN8_CTX_ID_SHIFT ; ce -> lrc_desc = desc ; } 

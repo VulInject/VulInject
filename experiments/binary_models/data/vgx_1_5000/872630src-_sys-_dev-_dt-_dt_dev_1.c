@@ -1,0 +1,1 @@
+dt_softc { SLIST_ENTRY ( ) ds_next int ds_unit ; pid_t ds_pid ; struct mutex ds_mtx ; struct dt_pcb_list ds_pcbs ; struct dt_evt * ds_bufqueue ; size_t ds_bufqlen ; int ds_recording ; int ds_evtcnt ; int ds_readevt ; uint64_t ds_dropevt ; } 

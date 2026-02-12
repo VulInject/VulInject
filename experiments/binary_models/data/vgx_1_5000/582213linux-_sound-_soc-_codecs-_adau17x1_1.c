@@ -1,0 +1,1 @@
+void adau17x1_remove ( struct device * dev ) { struct adau * adau = dev_get_drvdata ( dev ) ; clk_disable_unprepare ( adau -> mclk , NULL ) ; } 

@@ -1,0 +1,1 @@
+static int nvme_revalidate_disk ( struct gendisk * disk ) { struct nvme_ns * ns = disk -> private_data ; struct nvme_id_ns * id = NULL ; int ret ; if ( test_bit ( NVME_NS_DEAD , & ns -> flags ) ) { set_capacity ( disk , 0 ) ; return - ENODEV ; } ret = nvme_revalidate_ns ( ns , & id ) ; __nvme_revalidate_disk ( disk , id ) ; kfree ( id ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+struct fwnode_handle * fwnode_graph_get_remote_port ( struct fwnode_handle * fwnode ) { struct fwnode_handle * port = NULL ; if ( is_of_node ( fwnode ) ) { struct device_node * node ; node = of_graph_get_remote_port ( to_of_node ( fwnode ) ) ; if ( node ) { port = & node -> fwnode ; } } if ( is_acpi_node ( fwnode ) ) { int ret ; if ( ret ) { return NULL ; } } return port ; } 

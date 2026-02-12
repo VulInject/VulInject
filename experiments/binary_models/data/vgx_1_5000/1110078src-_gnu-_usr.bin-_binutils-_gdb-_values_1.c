@@ -1,0 +1,1 @@
+set_internalvar ( , ) { struct value * newval ; newval = value_copy ( val ) ; newval -> modifiable = 1 ; if ( VALUE_LAZY ( newval ) ) { value_fetch_lazy ( newval ) ; } var -> value = newval ; release_value ( newval ) ; } 

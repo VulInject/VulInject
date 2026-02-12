@@ -1,0 +1,1 @@
+static ssize_t supported_rescue_options_show ( struct kobject * kobj , struct kobj_attribute * a , char * buf ) { ssize_t ret = 0 ; int i ; for ( i = 0 ; i < ARRAY_SIZE ( rescue_opts ) ; i ++ ) { ret += sysfs_emit_at ( buf , ret , "%s%s" , ( i ?" " : "" ) , rescue_opts [ i ] ) ; } ret += sysfs_emit_at ( buf , ret , "\n" ) ; return ret ; } 

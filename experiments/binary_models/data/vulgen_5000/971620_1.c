@@ -1,0 +1,1 @@
+static zval * spl_fixedarray_it_get_current_data ( zend_object_iterator * iter ) { zval zindex , * data ; spl_fixedarray_it * iterator = ( spl_fixedarray_it * ) iter ; spl_fixedarray_object * object = Z_SPLFIXEDARRAY_P ( & iter -> data ) ; ZVAL_LONG ( & zindex , iterator -> current ) ; if ( data == NULL ) { data = & EG ( uninitialized_zval ) ; } return data ; } 

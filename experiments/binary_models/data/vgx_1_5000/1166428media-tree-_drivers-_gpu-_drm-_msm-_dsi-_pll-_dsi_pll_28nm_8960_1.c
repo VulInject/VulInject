@@ -1,0 +1,1 @@
+pll_28nm_cached_state { unsigned long vco_rate ; int postdiv3 ; u8 postdiv2 ; u8 postdiv1 ; } 

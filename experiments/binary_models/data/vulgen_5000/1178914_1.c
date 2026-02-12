@@ -1,0 +1,1 @@
+static int check_fsb ( unsigned int fsbspeed ) { int delta ; delta = ( fsbspeed > f ) ?fsbspeed - f : f - fsbspeed ; return delta < 5 ; } static const struct x86_cpu_id powernow_k7_cpuids [ ] { X86_MATCH_VENDOR_FAM ( AMD , 6 , NULL ) { } } ; ; 

@@ -1,1 +1,0 @@
-static void dvb_pll_release ( struct dvb_frontend * fe ) { kfree ( fe -> tuner_priv ) ; } 

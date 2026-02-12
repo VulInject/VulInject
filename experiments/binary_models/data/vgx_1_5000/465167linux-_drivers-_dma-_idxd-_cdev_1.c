@@ -1,0 +1,1 @@
+static void idxd_cdev_dev_release ( struct device * dev ) { struct idxd_cdev * idxd_cdev = dev_to_cdev ( dev ) ; struct idxd_cdev_context * cdev_ctx ; struct idxd_wq * wq = idxd_cdev -> wq ; cdev_ctx = & ictx [ wq -> idxd -> data -> type ] ; ida_simple_remove ( & cdev_ctx -> minor_ida , idxd_cdev -> minor ) ; } 

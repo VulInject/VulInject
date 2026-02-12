@@ -1,0 +1,1 @@
+bool xtensa_cpu_exec_interrupt ( CPUState * cs , int interrupt_request ) { if ( interrupt_request & CPU_INTERRUPT_HARD ) { cs -> exception_index = EXC_IRQ ; xtensa_cpu_do_interrupt ( cs , NULL ) ; return true ; } return false ; } 

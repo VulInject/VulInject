@@ -1,1 +1,0 @@
-static int hc2b ( unsigned char hex ) { if ( ( hex >= '0' ) && ( hex <= '9' ) ) { return hex - '0' ; } if ( ( hex >= 'a' ) && ( hex <= 'f' ) ) { return hex - 'a' + 10 ; } return - 1 ; } 

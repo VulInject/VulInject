@@ -1,0 +1,1 @@
+static DEFINE_PER_CPU ( u32 [ MAX_NR_REG_BANKS ] , irqmasks ) ; static void _wakeupgen_save_masks ( unsigned int cpu ) { int i ; for ( i = 0 ; i < irq_banks ; i ++ ) { per_cpu ( irqmasks , cpu ) [ i ] = wakeupgen_readl ( i , cpu ) ; } } 

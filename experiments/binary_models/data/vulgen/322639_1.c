@@ -1,1 +1,0 @@
-int ubi_register_volume_notifier ( struct notifier_block * nb , int ignore_existing ) { int err ; err = blocking_notifier_chain_register ( & ubi_notifiers , nb ) ; if ( err != 0 ) { return err ; } if ( ignore_existing ) { return 0 ; } ubi_enumerate_volumes ( nb ) ; mutex_unlock ( & ubi_devices_mutex ) ; return err ; } 

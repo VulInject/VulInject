@@ -1,0 +1,1 @@
+static void do_cyrix_devid ( unsigned char * dir0 , unsigned char * dir1 ) { unsigned long flags ; local_irq_save ( flags ) ; local_irq_restore ( flags ) ; } 

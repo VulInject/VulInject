@@ -1,1 +1,0 @@
-MODULE_DESCRIPTION ( "Provides control of the front LED on SPARC systems." ) ; MODULE_LICENSE ( "GPL" ) ; 

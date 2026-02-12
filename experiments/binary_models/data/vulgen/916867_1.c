@@ -1,1 +1,0 @@
-void drm_gem_private_object_fini ( struct drm_gem_object * obj ) { WARN_ON ( obj -> dma_buf ) ; } 

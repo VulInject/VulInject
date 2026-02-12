@@ -1,0 +1,1 @@
+static int card_suspend ( struct pnp_dev * dev , pm_message_t state ) { struct pnp_card_link * link = dev -> card_link ; link -> pm_state = state ; return link -> driver -> suspend ( link , state ) ; } 

@@ -1,0 +1,1 @@
+static void s3c_hsudc_free_request ( struct usb_ep * ep , struct usb_request * _req ) { struct s3c_hsudc_req * hsreq ; hsreq = our_req ( _req ) ; WARN_ON ( ! list_empty ( & hsreq -> queue ) ) ; } 

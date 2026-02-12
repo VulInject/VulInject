@@ -1,0 +1,1 @@
+int efx_nic_alloc_buffer ( struct efx_nic * efx , struct efx_buffer * buffer , unsigned int len , gfp_t gfp_flags ) { buffer -> addr = dma_alloc_coherent ( & efx -> pci_dev -> dev , len , & buffer -> dma_addr , gfp_flags ) ; buffer -> len = len ; return 0 ; } 

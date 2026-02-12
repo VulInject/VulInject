@@ -1,1 +1,0 @@
-static void fpv_destroy ( struct fake_pvconn * fpv ) { fpv_close ( fpv ) ; free ( fpv -> vconn_name ) ; } 

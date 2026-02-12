@@ -1,0 +1,1 @@
+static int function2code ( hashf_t func ) { if ( func == keyed_hash ) { return TEA_HASH ; } if ( func == r5_hash ) { return R5_HASH ; } BUG ( ) ; return 0 ; } 

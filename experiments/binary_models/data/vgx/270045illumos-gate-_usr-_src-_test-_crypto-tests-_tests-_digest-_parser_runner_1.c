@@ -1,1 +1,0 @@
-size_t pc_hash_sz ; char * pc_line_buf ; int pc_line_sz ; 

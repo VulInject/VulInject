@@ -1,1 +1,0 @@
-void hdb_free_dbinfo ( krb5_context context , struct hdb_dbinfo * * dbp ) { struct hdb_dbinfo * di , * ndi ; for ( di = * dbp ; di != NULL ; di = ndi ) { ndi = di -> next ; free ( di -> label ) ; free ( di -> realm ) ; free ( di -> dbname ) ; free ( di -> acl_file ) ; free ( di -> log_file ) ; free ( di ) ; } * dbp = NULL ; } 

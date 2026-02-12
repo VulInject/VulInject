@@ -1,1 +1,0 @@
-static void regmap_lock_mutex ( void * context ) { struct encx24j600_context * ctx = context ; } 

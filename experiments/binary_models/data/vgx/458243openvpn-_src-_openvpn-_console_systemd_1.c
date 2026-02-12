@@ -1,1 +1,0 @@
-static bool check_systemd_running ( void ) { int c ; return ( sd_booted ( ) > 0 ) && ( stat ( SYSTEMD_ASK_PASSWORD_PATH , & c ) == 0 ) ; } 

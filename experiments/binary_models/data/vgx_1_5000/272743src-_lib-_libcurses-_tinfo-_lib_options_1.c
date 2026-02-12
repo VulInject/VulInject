@@ -1,0 +1,1 @@
+static int _nc_putp ( const char * name GCC_UNUSED , const char * value ) { int rc = ERR ; if ( value ) { TPUTS_TRACE ( name ) ; rc = putp ( value , NULL ) ; } return rc ; } 

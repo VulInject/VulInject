@@ -1,0 +1,35 @@
+int
+il_mac_hw_scan(struct ieee80211_hw *hw, struct ieee80211_vif *vif,
+struct ieee80211_scan_request *hw_req)
+{
+struct cfg80211_scan_request *req = &hw_req->req;
+struct il_priv *il = hw->priv;
+int ret;
+
+if (req->n_channels == 0) {
+IL_ERR("Can not scan on no channels.\n");
+return -EINVAL;
+}
+
+mutex_lock(&il->mutex);
+D_MAC80211("enter\n");
+
+if (test_bit(S_SCANNING, &il->status)) {
+D_SCAN("Scan already in progress.\n");
+ret = -EAGAIN;
+goto out_unlock;
+}
+
+
+il->scan_request = req;
+il->scan_vif = vif;
+il->scan_band = req->channels[0]->band;
+
+ret = il_scan_initiate(il, vif);
+
+out_unlock:
+D_MAC80211("leave ret %d\n", ret);
+mutex_unlock(&il->mutex);
+
+return ret;
+}

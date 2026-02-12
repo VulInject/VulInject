@@ -1,1 +1,0 @@
-static TCGTemp * tcg_global_alloc ( TCGContext * s ) { TCGTemp * ts ; tcg_debug_assert ( s -> nb_globals == s -> nb_temps ) ; tcg_debug_assert ( s -> nb_globals < TCG_MAX_TEMPS ) ; s -> nb_globals ++ ; ts = tcg_temp_alloc ( s , NULL ) ; ts -> kind = TEMP_GLOBAL ; return ts ; } 

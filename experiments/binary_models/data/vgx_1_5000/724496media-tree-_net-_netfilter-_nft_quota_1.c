@@ -1,0 +1,1 @@
+static int __init nft_quota_module_init ( void ) { int err ; err = nft_register_obj ( & nft_quota_obj ) ; err = nft_register_expr ( & nft_quota_type ) ; if ( err < 0 ) { err1 } return 0 ; err1 nft_unregister_obj ( & nft_quota_obj ) ; return err ; } 

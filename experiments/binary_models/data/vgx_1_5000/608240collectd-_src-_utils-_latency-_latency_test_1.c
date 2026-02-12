@@ -1,0 +1,1 @@
+int main ( void ) { RUN_TEST ( simple ) ; RUN_TEST ( percentile , NULL ) ; RUN_TEST ( get_rate ) ; END_TEST ; } 

@@ -1,1 +1,0 @@
-static int __init pmc_init ( int ) { return platform_driver_register ( & pmc_driver ) ; } 

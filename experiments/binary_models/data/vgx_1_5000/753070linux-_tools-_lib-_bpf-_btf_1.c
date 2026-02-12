@@ -1,0 +1,1 @@
+int btf__set_pointer_size ( struct btf * btf , size_t ptr_sz ) { btf -> ptr_sz = ptr_sz ; return 0 ; } 

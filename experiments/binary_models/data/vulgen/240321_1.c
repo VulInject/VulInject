@@ -1,1 +1,0 @@
-void QCopyFile ( const char * from , const char * to ) { void * buffer ; int length ; length = LoadFile ( from , & buffer ) ; CreatePath ( to ) ; SaveFile ( to , buffer , length ) ; } 

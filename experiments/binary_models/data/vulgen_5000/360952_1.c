@@ -1,0 +1,1 @@
+void vmgenc_init ( struct vmctx * ctx ) { char * region ; int error ; error = bootrom_alloc ( ctx , PAGE_SIZE , PROT_READ , 0 , & region , & vmgen_gpa ) ; error = getentropy ( region , sizeof ( uuid ) ) ; if ( error == - 1 ) { err ( 4 , "%s: getentropy" , __func__ ) ; } acpi_raise_gpe ( ctx , GPE_VMGENC ) ; } 

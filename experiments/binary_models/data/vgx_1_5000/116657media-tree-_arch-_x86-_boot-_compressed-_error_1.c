@@ -1,0 +1,1 @@
+void warn ( char * m ) { error_putstr ( "\n\n" ) ; error_putstr ( m , NULL ) ; error_putstr ( "\n\n" ) ; } 

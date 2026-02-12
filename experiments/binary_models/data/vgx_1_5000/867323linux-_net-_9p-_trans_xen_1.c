@@ -1,0 +1,1 @@
+static int p9_xen_create ( struct p9_client * client , const char * addr , char * args ) { struct xen_9pfs_front_priv * priv ; read_lock ( & xen_9pfs_lock ) ; list_for_each_entry ( , , ) { if ( ! strcmp ( priv -> tag , addr ) ) { priv -> client = client ; read_unlock ( & xen_9pfs_lock ) ; return 0 ; } } read_unlock ( & xen_9pfs_lock ) ; return - EINVAL ; } 

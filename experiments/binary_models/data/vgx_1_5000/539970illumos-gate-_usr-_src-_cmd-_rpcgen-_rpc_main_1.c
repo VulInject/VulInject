@@ -1,0 +1,1 @@
+static void find_cpp ( void ) { int buf ; if ( stat ( CPP , & buf ) < 0 ) { if ( cppDefined ) { ( void ) fprintf ( stderr , "cannot find C preprocessor: %s \n" , CPP ) ; crash ( ) ; } else { CPP = SUNOS_CPP ; if ( stat ( CPP , & buf ) < 0 ) { ( void ) fprintf ( stderr , "cannot find any C preprocessor (cpp)\n" ) ; crash ( ) ; } } } } 

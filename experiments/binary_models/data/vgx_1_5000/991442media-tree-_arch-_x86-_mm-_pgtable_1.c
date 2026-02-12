@@ -1,0 +1,1 @@
+( pgd_cache_init ) ; static inline pgd_t * _pgd_alloc ( void ) { return kmem_cache_alloc ( pgd_cache , PGALLOC_GFP ) ; } 

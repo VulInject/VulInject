@@ -1,1 +1,0 @@
-void test_submodule_modify__set_fetch_recurse_submodules ( void ) { assert_recurse_change ( GIT_SUBMODULE_RECURSE_NO ) ; assert_recurse_change ( GIT_SUBMODULE_RECURSE_ONDEMAND ) ; } 

@@ -1,0 +1,1 @@
+static int nfs_wait_killable ( int mode ) { freezable_schedule_unsafe ( ) ; return 0 ; } 

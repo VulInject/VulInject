@@ -1,1 +1,0 @@
-static bool buf_io_fini ( RBuffer * b ) { return true ; } 

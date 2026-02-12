@@ -1,0 +1,1 @@
+static int ecryptfs_calculate_md5 ( char * dst , struct ecryptfs_crypt_stat * crypt_stat , char * src , int len ) { if ( rc ) { printk ( KERN_ERR "%s: Error computing crypto hash; rc = [%d]\n" , __func__ , rc ) ; out } out return rc ; } 

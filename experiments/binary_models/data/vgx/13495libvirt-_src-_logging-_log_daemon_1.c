@@ -1,1 +1,0 @@
-static void virLogDaemonExecRestartHandler ( virNetDaemon * dmn , siginfo_t * sig G_GNUC_UNUSED , void * opaque G_GNUC_UNUSED ) { execRestart = true ; virNetDaemonQuitExecRestart ( dmn , NULL ) ; } 

@@ -1,1 +1,0 @@
-static uint8_t rdb ( struct x86emu * emu , uint32_t addr ) { return emu -> mem_base [ addr ] ; } 

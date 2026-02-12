@@ -1,0 +1,1 @@
+static void set_leds ( u32 leds , u32 blinking ) { struct kwgpio_registers * r ; u32 oe ; u32 bl ; r = ( kwgpio_registers * ) MVEBU_GPIO0_BASE ; oe = readl ( & r -> oe ) | BOTH_LEDS ; writel ( oe & ~ leds , & r -> oe ) ; writel ( bl | blinking , & r -> blink_en ) ; } 

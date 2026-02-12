@@ -1,0 +1,1 @@
+static int i2c_mux_deselect ( struct i2c_mux_core * muxc , u32 chan ) { struct mux * mux = i2c_mux_priv ( muxc ) ; return mux_control_deselect ( mux -> control ) ; } 

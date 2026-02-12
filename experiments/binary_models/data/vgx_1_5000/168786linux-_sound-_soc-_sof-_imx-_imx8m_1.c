@@ -1,0 +1,1 @@
+static int imx8m_dsp_runtime_suspend ( struct snd_sof_dev * sdev ) { const struct sof_dsp_power_state target_dsp_state = { . state = SOF_DSP_PM_D3 } ; imx8m_suspend ( sdev , NULL ) ; return snd_sof_dsp_set_power_state ( sdev , & target_dsp_state ) ; } 

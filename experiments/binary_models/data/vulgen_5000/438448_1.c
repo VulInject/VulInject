@@ -1,0 +1,1 @@
+WandExport void DestroyWandIds ( void ) { LockSemaphoreInfo ( wand_semaphore ) ; if ( wand_ids != ( SplayTreeInfo * ) NULL ) { wand_ids = DestroySplayTree ( wand_ids ) ; } instantiate_wand = MagickFalse ; UnlockSemaphoreInfo ( wand_semaphore ) ; RelinquishSemaphoreInfo ( & wand_semaphore ) ; } 

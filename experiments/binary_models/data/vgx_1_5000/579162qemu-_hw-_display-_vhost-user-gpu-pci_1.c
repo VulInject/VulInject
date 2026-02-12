@@ -1,0 +1,1 @@
+struct VhostUserGPUPCI VhostUserGPUPCI DECLARE_INSTANCE_CHECKER ( , , ) VhostUserGPUPCI { VirtIOGPUPCIBase parent_obj ; int vdev ; } 

@@ -1,0 +1,1 @@
+char * gib_imlib_image_format ( Imlib_Image im ) { imlib_context_set_image ( im , NULL ) ; return imlib_image_format ( ) ; } 

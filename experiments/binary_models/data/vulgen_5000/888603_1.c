@@ -1,0 +1,1 @@
+FT_LOCAL_DEF ( ) T1_Get_MM_Blend ( , , ) { PS_Blend blend = face -> blend ; FT_Fixed axiscoords [ 4 ] ; FT_UInt i , nc ; mm_weights_unmap ( , ) } 

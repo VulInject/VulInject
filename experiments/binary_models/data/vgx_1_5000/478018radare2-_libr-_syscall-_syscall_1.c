@@ -1,0 +1,1 @@
+R_API const char * r_syscall_sysreg ( RSyscall * s , const char * type , ut64 num ) { r_return_val_if_fail ( s && s -> db ) ; r_strf_var ( key , 64 , "%s,%" PFMT64d , type , num ) ; return sdb_const_get ( s -> db , key , 0 ) ; } 

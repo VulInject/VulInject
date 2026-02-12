@@ -1,1 +1,0 @@
-static int mvs_94xx_oob_done ( struct mvs_info * mvi , int i ) { u32 phy_st ; phy_st = mvs_read_phy_ctl ( mvi , i ) ; return 0 ; } 

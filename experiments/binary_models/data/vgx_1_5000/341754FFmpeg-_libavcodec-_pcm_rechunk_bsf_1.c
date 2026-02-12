@@ -1,0 +1,1 @@
+static void flush ( AVBSFContext * ctx ) { PCMContext * s = ctx -> priv_data ; av_packet_unref ( s -> out_pkt ) ; s -> n = 0 ; } 

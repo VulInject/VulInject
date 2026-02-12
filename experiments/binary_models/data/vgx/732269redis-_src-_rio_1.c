@@ -1,1 +1,0 @@
-void rioInitWithConn ( rio * r , connection * conn , size_t read_limit ) { * r = rioConnIO ; r -> io . conn . conn = conn ; r -> io . conn . pos = 0 ; r -> io . conn . read_limit = read_limit ; r -> io . conn . read_so_far = 0 ; r -> io . conn . buf = sdsnewlen ( NULL , PROTO_IOBUF_LEN ) ; } 

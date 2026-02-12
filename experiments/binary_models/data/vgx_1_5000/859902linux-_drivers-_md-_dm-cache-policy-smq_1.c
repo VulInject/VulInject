@@ -1,0 +1,1 @@
+static unsigned int safe_mod ( unsigned int n , unsigned int d ) { return d ?n % d : 0u ; } entry { unsigned int hash_next 28 ; unsigned int prev 28 ; unsigned int next 28 ; int level 6 ; bool dirty 1 ; bool allocated 1 ; bool sentinel 1 ; bool pending_work 1 ; dm_oblock_t oblock ; } 

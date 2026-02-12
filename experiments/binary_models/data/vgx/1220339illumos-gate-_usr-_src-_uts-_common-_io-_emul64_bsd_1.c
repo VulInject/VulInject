@@ -1,1 +1,0 @@
-emul64_tgt_t * find_tgt ( struct emul64 * emul64 , ushort_t target , ushort_t lun ) { emul64_tgt_t * tgt ; tgt = emul64 -> emul64_tgt ; while ( tgt ) { tgt = tgt -> emul64_tgt_next ; } return ( tgt ) ; } 

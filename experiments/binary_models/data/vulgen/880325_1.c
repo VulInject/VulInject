@@ -1,1 +1,0 @@
-get_frame_function ( ) { struct block * bl = get_frame_block ( frame , 0 ) ; return block_function ( bl ) ; } 

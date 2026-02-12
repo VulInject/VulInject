@@ -1,0 +1,1 @@
+static int tpmfront_resume ( struct xenbus_device * dev ) { tpmfront_remove ( dev , NULL ) ; return tpmfront_probe ( dev , NULL ) ; } 

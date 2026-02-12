@@ -1,0 +1,1 @@
+static int armada_370_xp_timer_dying_cpu ( unsigned int cpu ) { struct clock_event_device * evt = per_cpu_ptr ( armada_370_xp_evt , cpu ) ; evt -> set_state_shutdown ( evt , NULL ) ; disable_percpu_irq ( evt -> irq ) ; return 0 ; } 

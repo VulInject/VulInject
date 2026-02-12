@@ -1,0 +1,1 @@
+void dce_ipp_construct ( struct dce_ipp * ipp_dce , struct dc_context * ctx , int inst , const struct dce_ipp_registers * regs , const struct dce_ipp_shift * ipp_shift , const struct dce_ipp_mask * ipp_mask ) { ipp_dce -> base . ctx = ctx ; ipp_dce -> base . inst = inst ; ipp_dce -> base . funcs = & dce_ipp_funcs ; ipp_dce -> regs = regs ; ipp_dce -> ipp_shift = ipp_shift ; } 

@@ -1,1 +1,0 @@
-gettimeofday ( , ) { if ( tz ) { abort ( ) ; } tp -> tv_usec = 0 ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void remove_vf_smi_entries ( struct mlx4_port * p ) { int is_eth = rdma_port_get_link_layer ( & p -> dev -> ib_dev , p -> port_num ) == IB_LINK_LAYER_ETHERNET ; sysfs_remove_file ( & p -> kobj , & p -> smi_enabled . attr ) ; sysfs_remove_file ( & p -> kobj , & p -> enable_smi_admin . attr ) ; } 

@@ -1,0 +1,1 @@
+( __destroy_context ) ; void destroy_context ( struct mm_struct * mm ) { preempt_disable ( ) ; if ( mm -> context . id != NO_CONTEXT ) { mm -> context . id = NO_CONTEXT ; } preempt_enable ( ) ; } 

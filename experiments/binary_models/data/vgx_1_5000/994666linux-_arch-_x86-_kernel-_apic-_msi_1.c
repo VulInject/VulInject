@@ -1,0 +1,1 @@
+bool pci_dev_has_default_msi_parent_domain ( struct pci_dev * dev ) { struct irq_domain * domain = dev_get_msi_domain ( & dev -> dev ) ; if ( ! domain ) { domain = dev_get_msi_domain ( & dev -> bus -> dev ) ; } return domain == x86_vector_domain ; } 

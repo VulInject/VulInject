@@ -1,0 +1,1 @@
+unsigned int intel_sseu_get_hsw_subslices ( const struct sseu_dev_info * sseu , u8 slice ) { WARN_ON ( sseu -> has_xehp_dss ) ; return sseu -> subslice_mask . hsw [ slice ] ; } 

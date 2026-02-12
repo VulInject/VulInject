@@ -1,0 +1,1 @@
+int add_dynptr_to_map2 ( void * ctx ) { struct test_info x ; int key = 0 ; bpf_ringbuf_reserve_dynptr ( & ringbuf , val , 0 , & x . ptr ) ; bpf_map_update_elem ( & array_map2 , & key , & x , 0 ) ; return 0 ; } 

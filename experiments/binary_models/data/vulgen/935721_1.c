@@ -1,1 +1,0 @@
-static int ignore_check_replies ( CHANNEL_REC * chanrec , const char * text , int level , int flags ) { GSList * tmp ; if ( text == NULL || chanrec == NULL ) { return FALSE ; } for ( tmp = ignores ; tmp != NULL ; tmp = tmp -> next ) { IGNORE_REC * rec = tmp -> data ; } return FALSE ; } 

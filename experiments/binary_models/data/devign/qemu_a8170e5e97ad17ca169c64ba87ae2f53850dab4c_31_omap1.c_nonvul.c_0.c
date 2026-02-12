@@ -1,1 +1,0 @@
-static int FUN1(struct VAR1 *VAR2, hwaddr VAR3) { return FUN2(0xe1010000, 0xe1020004 - 0xe1010000, VAR3); }

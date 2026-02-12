@@ -1,0 +1,1 @@
+static void batadv_gw_node_release ( struct kref * ref ) { struct batadv_gw_node * gw_node ; gw_node = container_of ( ref , batadv_gw_node , refcount ) ; batadv_orig_node_put ( gw_node -> orig_node , NULL ) ; kfree_rcu ( gw_node , rcu ) ; } 

@@ -1,1 +1,0 @@
-static int hlp_ulong_max32 ( void ) { printf ( "%lu\n" , ULONG_MAX ) ; return 0 ; } 

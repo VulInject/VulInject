@@ -1,1 +1,0 @@
-MODULE_LICENSE ( "GPL" ) ; MODULE_AUTHOR ( "Akamai Technologies, Inc." ) ; MODULE_DESCRIPTION ( "MC support for Intel 3200 memory hub controllers" ) ; module_param ( edac_op_state , int , 0444 ) ; 

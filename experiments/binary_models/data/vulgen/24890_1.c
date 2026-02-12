@@ -1,1 +1,0 @@
-static int ecb_decrypt ( struct skcipher_request * req ) { return __ecb_crypt ( req ) ; } 

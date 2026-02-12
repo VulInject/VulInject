@@ -1,1 +1,0 @@
-void __bio_crypt_advance ( struct bio * bio , unsigned int bytes ) { struct bio_crypt_ctx * bc = bio -> bi_crypt_context ; } 

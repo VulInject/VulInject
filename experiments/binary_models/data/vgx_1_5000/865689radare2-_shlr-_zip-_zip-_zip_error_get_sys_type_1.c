@@ -1,0 +1,1 @@
+zip_error_get_sys_type ( ) { return _zip_err_str [ ze ] . type ; } 

@@ -1,0 +1,1 @@
+OBJECT_DECLARE_TYPE ( , , ) Pegasos2MachineState { MachineState parent_obj ; PowerPCCPU * cpu ; DeviceState * mv ; Vof * vof ; void * fdt_blob ; int kernel_addr ; uint64_t kernel_entry ; uint64_t kernel_size ; } 

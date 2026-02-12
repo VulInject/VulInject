@@ -1,1 +1,0 @@
-static int gelic_wl_try_associate ( struct net_device * netdev ) 

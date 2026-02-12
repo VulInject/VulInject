@@ -1,0 +1,1 @@
+int tags_rehash_complete ( void ) Module * module ; int MOD_HEADER = { "clienttagdeny" "5.0" "Informs clients about supported client tags" "k4be" "unrealircd-6" } ; 

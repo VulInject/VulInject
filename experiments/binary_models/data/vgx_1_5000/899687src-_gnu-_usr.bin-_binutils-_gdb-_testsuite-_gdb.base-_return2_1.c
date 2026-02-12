@@ -1,0 +1,1 @@
+long long_testval ; long long long_long_testval ; int float_testval ; double double_testval ; char ffff [ 80 ] ; 

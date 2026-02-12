@@ -1,1 +1,0 @@
-static int ns_thermal_remove ( struct platform_device * pdev ) { void __iomem * pvtmon = platform_get_drvdata ( pdev ) ; return 0 ; } 

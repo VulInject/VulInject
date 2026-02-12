@@ -1,0 +1,1 @@
+static int _scsih_set_fwfault_debug ( const char * val , const struct kernel_param * kp ) { int ret = param_set_int ( val , kp ) ; struct MPT3SAS_ADAPTER * ioc ; pr_info ( "setting fwfault_debug(%d)\n" , mpt3sas_fwfault_debug ) ; spin_lock ( & gioc_lock ) ; list_for_each_entry ( , , ) ioc -> fwfault_debug = mpt3sas_fwfault_debug ; spin_unlock ( & gioc_lock ) ; return 0 ; } 

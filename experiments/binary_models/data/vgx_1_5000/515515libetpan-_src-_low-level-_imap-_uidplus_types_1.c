@@ -1,0 +1,1 @@
+void mailimap_uidplus_resp_code_apnd_free ( struct mailimap_uidplus_resp_code_apnd * resp_code_apnd ) { if ( resp_code_apnd -> uid_set != NULL ) { mailimap_set_free ( resp_code_apnd -> uid_set ) ; } } 

@@ -1,1 +1,0 @@
-void wakeup_source_destroy ( struct wakeup_source * ws ) { if ( ! ws ) { return ; } wakeup_source_drop ( ws ) ; wakeup_source_record ( ws ) ; kfree ( ws ) ; } 

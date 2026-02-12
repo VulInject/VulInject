@@ -1,0 +1,1 @@
+const char * state_to_name ( enum SocketState state ) { int i ; NS ( ) map [ ] = { NM ( SS_CONNECTING ) NM ( SS_LISTENING ) NM ( SS_CONNECTED ) NM ( SS_DATAGRAM ) NM ( SS_CONNECTDG ) NM ( SS_NOTSOCK ) NE } ; for ( i = 0 ; map [ i ] . name ; i ++ ) { } return "Undefined socket state" ; } 

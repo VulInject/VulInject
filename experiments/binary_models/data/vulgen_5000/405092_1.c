@@ -1,0 +1,1 @@
+static void basic_tags1 ( void ) { const struct MsgBuf msgbuf = { . n_tags = 1 . tags = { { . key = "tag" . value = "value" . capmask = 1 } } . cmd = "PRIVMSG" . origin = "origin" . target = "#test" . n_para = 3 . para = { "test" "test" "test test" } } ; char output [ OUTPUT_BUFSIZE ] ; } 

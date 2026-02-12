@@ -1,1 +1,0 @@
-void jsjcMVN ( int regTo , int regFrom ) { DEBUG_JIT ( "MVNS r%d<- r%d\n" , regTo , regFrom ) ; assert ( regTo >= 0 && regTo < 8 ) ; assert ( regFrom >= 0 && regFrom < 8 ) ; } 

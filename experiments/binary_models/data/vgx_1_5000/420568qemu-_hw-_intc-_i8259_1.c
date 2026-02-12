@@ -1,0 +1,1 @@
+static void pic_reset ( DeviceState * dev ) { PICCommonState * s = PIC_COMMON ( dev ) ; s -> elcr = 0 ; pic_init_reset ( s , NULL ) ; } 

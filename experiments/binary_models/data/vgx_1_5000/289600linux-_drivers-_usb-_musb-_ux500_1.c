@@ -1,0 +1,1 @@
+static int ux500_remove ( struct platform_device * pdev ) { struct ux500_glue * glue = platform_get_drvdata ( pdev ) ; platform_device_unregister ( glue -> musb ) ; clk_disable_unprepare ( glue -> clk , NULL ) ; return 0 ; } 

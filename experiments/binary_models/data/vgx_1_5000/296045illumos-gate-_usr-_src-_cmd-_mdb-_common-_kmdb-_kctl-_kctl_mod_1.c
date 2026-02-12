@@ -1,0 +1,1 @@
+int kctl_mod_decompress ( struct modctl * modp ) { ctf_file_t * fp ; struct module * mp = modp -> mod_mp ; int rc ; if ( ( kmdb_kdi_get_flags ( ) & KMDB_KDI_FL_NOCTF ) || mp -> ctfdata == NULL ) { return ( 0 ) ; } if ( ( fp = ctf_modopen ( mp , & rc ) ) == NULL ) { return ( rc ) ; } ctf_close ( fp , NULL ) ; return ( 0 ) ; } 

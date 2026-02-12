@@ -1,0 +1,1 @@
+static void clearpair ( struct btree_geo * geo , unsigned long * node , int n ) { longset ( bkey ( geo , node , n ) , 0 , geo -> keylen ) ; } 

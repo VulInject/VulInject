@@ -1,0 +1,1 @@
+int create2_cell_body_add_handshake_data ( create2_cell_body_t * inp , uint8_t elt ) { TRUNNEL_DYNARRAY_ADD ( uint8_t , & inp -> handshake_data , elt { } ) ; } return 0 ; trunnel_alloc_failed TRUNNEL_SET_ERROR_CODE ( inp ) ; return - 1 ; 

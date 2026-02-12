@@ -1,0 +1,1 @@
+static BOOL NoneHandleCloseHandle ( HANDLE handle ) { WINPR_NONE_HANDLE * none = ( WINPR_NONE_HANDLE * ) handle ; return TRUE ; } 

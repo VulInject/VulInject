@@ -1,0 +1,1 @@
+node_free ( ) { ret_t ret ; if ( key == NULL ) { return ret_ok ; } ret = node_mrproper ( key ) ; return ret ; } 

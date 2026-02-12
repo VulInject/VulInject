@@ -1,0 +1,1 @@
+static u8 sp_technologic_read_reg16 ( const struct sja1000_priv * priv , int reg ) { struct technologic_priv * tp = priv -> priv ; cfs_time_t flags ; u8 val ; spin_lock_irqsave ( & tp -> io_lock , flags ) ; iowrite16 ( reg , priv -> reg_base + 0 ) ; val = ioread16 ( priv -> reg_base + 2 ) ; spin_unlock_irqrestore ( & tp -> io_lock , flags ) ; return val ; } 

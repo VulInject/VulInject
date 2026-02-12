@@ -1,0 +1,1 @@
+static int __init arc_of_timer_init ( struct device_node * np ) { static int init_count = 0 ; int ret ; if ( ! init_count ) { ret = arc_clockevent_setup ( np ) ; } else { ret = arc_cs_setup_timer1 ( np ) ; } return ret ; } 

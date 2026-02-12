@@ -1,0 +1,1 @@
+irqreturn_t octeon_i2c_isr ( int irq , void * dev_id ) { struct octeon_i2c * i2c = dev_id ; i2c -> int_disable ( i2c ) ; return IRQ_HANDLED ; } 

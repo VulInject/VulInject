@@ -1,1 +1,0 @@
-void bnxt_dcb_free ( struct bnxt * bp ) { kfree ( bp -> ieee_pfc ) ; kfree ( bp -> ieee_ets ) ; bp -> ieee_pfc = NULL ; } 

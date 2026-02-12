@@ -1,0 +1,1 @@
+static void sevseg_disconnect ( struct usb_interface * interface ) { struct usb_sevsegdev * mydev ; mydev = usb_get_intfdata ( interface ) ; usb_set_intfdata ( interface , NULL ) ; usb_put_dev ( mydev -> udev ) ; dev_info ( & interface -> dev , "USB 7 Segment now disconnected\n" ) ; } 

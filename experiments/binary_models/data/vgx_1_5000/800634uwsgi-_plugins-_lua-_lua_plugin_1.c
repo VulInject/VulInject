@@ -1,0 +1,1 @@
+static void uwsgi_opt_luashell_oneshot ( char * opt , char * value , void * foobar ) { uwsgi_opt_luashell ( NULL , NULL , NULL ) ; } 

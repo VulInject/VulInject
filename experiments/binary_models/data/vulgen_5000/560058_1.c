@@ -1,0 +1,1 @@
+static lu_mem sweepstep ( lua_State * L , global_State * g , int nextstate , GCObject * * nextlist ) { if ( g -> sweepgc ) { l_mem olddebt = g -> GCdebt ; g -> sweepgc = sweeplist ( L , g -> sweepgc , GCSWEEPMAX ) ; if ( g -> sweepgc ) { return ( GCSWEEPMAX * GCSWEEPCOST ) ; } } g -> gcstate = nextstate ; g -> sweepgc = nextlist ; return 0 ; } 

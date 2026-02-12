@@ -1,0 +1,1 @@
+static void jupiter_debug ( struct peer * peer , const char * function , const char * fmt , ... ) { char buffer [ 200 ] ; va_list ap ; va_start ( ap , fmt ) ; mvsnprintf ( buffer , sizeof ( buffer ) , fmt , ap ) ; if ( debug ) { printf ( "%s: %s\n" , function , buffer ) ; fflush ( stdout ) ; } va_end ( ap ) ; } 

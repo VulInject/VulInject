@@ -1,0 +1,1 @@
+void VideoClient_DestroyCommonContext ( VideoSurface * surface ) { if ( ! surface ) { return ; } winpr_aligned_free ( surface -> data ) ; } 

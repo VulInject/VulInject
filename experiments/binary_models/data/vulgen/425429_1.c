@@ -1,1 +1,0 @@
-static int __init its_pci_acpi_msi_init ( void ) { return 0 ; } 

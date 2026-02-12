@@ -1,0 +1,1 @@
+struct list_head node ; u8 command ; u8 len ; int block [ I2C_SMBUS_BLOCK_MAX ] ; 

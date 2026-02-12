@@ -1,1 +1,0 @@
-static bool match_tag ( sd_device_enumerator * enumerator , sd_device * device ) { const char * tag ; assert ( enumerator ) ; assert ( device ) ; SET_FOREACH ( , ) return true ; } 

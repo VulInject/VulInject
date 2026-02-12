@@ -1,0 +1,1 @@
+static int hash ( char * string ) { int hash_value ; while ( * string ) { hash_value += ( * string ++ & 0xDF ) ; } return hash_value % SCACHE_HASH_SIZE ; } 

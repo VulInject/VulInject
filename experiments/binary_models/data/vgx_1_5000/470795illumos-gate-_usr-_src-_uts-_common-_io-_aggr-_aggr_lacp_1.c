@@ -1,0 +1,1 @@
+static boolean_t lacp_port_select ( aggr_port_t * portp ) { ASSERT ( MAC_PERIM_HELD ( portp -> lp_grp -> lg_mh ) ) ; portp -> lp_lacp . sm . selected = AGGR_SELECTED ; return ( B_TRUE ) ; } 

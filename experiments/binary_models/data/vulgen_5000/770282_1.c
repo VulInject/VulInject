@@ -1,0 +1,1 @@
+EXP_FUNC void STDCALL gettimeofday ( struct timeval * t , void * timezone ) { t -> tv_sec = time ( NULL ) ; t -> tv_usec = 0 ; _ftime ( & timebuffer ) ; t -> tv_sec = ( long ) timebuffer . time ; t -> tv_usec = 1000 * timebuffer . millitm ; } 

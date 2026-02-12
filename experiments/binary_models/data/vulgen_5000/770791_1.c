@@ -1,0 +1,1 @@
+size_t mbstowcs ( wchar_t * __restrict pwcs , const char * __restrict s , size_t n ) { mbstate_t mbs ; const char * sp ; sp = s ; return ( mbsrtowcs ( pwcs , & sp , n , & mbs ) ) ; } 

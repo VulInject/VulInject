@@ -1,0 +1,1 @@
+void fi_init ( struct frame_index * fi ) { fi -> step = 1 ; fi -> fill = 0 ; fi -> size = 0 ; fi -> grow_size = 0 ; fi -> next = fi_next ( fi ) ; } 

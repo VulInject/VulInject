@@ -1,0 +1,1 @@
+static int _rtl92e_wx_set_gen_ie ( struct net_device * dev , struct iw_request_info * info , union iwreq_data * data , char * extra ) { int ret = 0 ; struct r8192_priv * priv = rtllib_priv ( dev ) ; mutex_lock ( & priv -> wx_mutex ) ; ret = rtllib_wx_set_gen_ie ( priv -> rtllib , extra , data -> data . length ) ; mutex_unlock ( & priv -> wx_mutex ) ; return ret ; } 

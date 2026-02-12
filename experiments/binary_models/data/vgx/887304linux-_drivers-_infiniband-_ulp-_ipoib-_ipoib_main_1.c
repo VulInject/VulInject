@@ -1,1 +1,0 @@
-static void ipoib_parent_unregister_pre ( struct net_device * ndev ) { struct ipoib_dev_priv * priv = ipoib_priv ( ndev ) ; rtnl_lock ( ) ; dev_change_flags ( priv -> dev , priv -> dev -> flags & ~ IFF_UP , NULL ) ; rtnl_unlock ( ) ; ib_unregister_event_handler ( & priv -> event_handler ) ; flush_workqueue ( ipoib_workqueue , NULL ) ; } 

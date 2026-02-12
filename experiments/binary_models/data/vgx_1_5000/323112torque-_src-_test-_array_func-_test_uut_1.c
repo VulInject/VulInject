@@ -1,0 +1,1 @@
+START_TEST ( ) { job pjob ; int difference = - 2 ; pjob . ji_wattr [ JOB_ATR_hold ] . at_val . at_long = HOLD_l ; set_slot_hold ( & pjob , difference ) ; fail_unless ( difference == - 2 ) ; fail_unless ( pjob . ji_wattr [ JOB_ATR_hold ] . at_flags == 0 ) ; } 

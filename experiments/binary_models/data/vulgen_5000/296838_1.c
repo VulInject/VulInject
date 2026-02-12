@@ -1,0 +1,1 @@
+static unsigned long css_set_hash ( struct cgroup_subsys_state * css [ ] ) { unsigned long key = 0UL ; struct cgroup_subsys * ss ; int i ; for_each_subsys ( , ) key += ( unsigned long ) css [ i ] ; return key ; } 

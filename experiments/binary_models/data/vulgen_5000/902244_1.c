@@ -1,0 +1,1 @@
+static struct i2c_driver drv260x_driver = { . probe = drv260x_probe . driver = { . name = "drv260x-haptics" . of_match_table = drv260x_of_match . pm = & drv260x_pm_ops } . id_table = drv260x_id } ; 

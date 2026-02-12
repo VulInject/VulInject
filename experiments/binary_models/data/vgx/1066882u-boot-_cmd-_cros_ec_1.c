@@ -1,1 +1,0 @@
-static int do_show_switches ( struct udevice * dev ) { uint switches ; int ret ; uint i ; ret = cros_ec_get_switches ( dev ) ; switches = ret ; for ( i = 0 ; i < ARRAY_SIZE ( switch_name ) ; i ++ ) { uint mask = 1 << i ; if ( switches & mask ) { if ( switch_name [ i ] ) { printf ( "%s\n" , switch_name [ i ] ) ; } else { printf ( "unknown %02x\n" , mask ) ; } } } return 0 ; } 

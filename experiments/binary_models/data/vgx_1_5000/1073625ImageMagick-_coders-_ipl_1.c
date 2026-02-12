@@ -1,0 +1,1 @@
+static void SetHeaderFromIPL ( Image * image , IPLInfo * ipl ) { image -> columns = ipl -> width ; image -> rows = ipl -> height ; image -> depth = ipl -> depth ; image -> resolution . y = 1 ; } 

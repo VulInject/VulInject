@@ -1,0 +1,1 @@
+void drm_bridge_add ( struct drm_bridge * bridge ) { mutex_init ( & bridge -> hpd_mutex ) ; mutex_lock ( & bridge_lock ) ; list_add_tail ( & bridge -> list , & bridge_list ) ; } 

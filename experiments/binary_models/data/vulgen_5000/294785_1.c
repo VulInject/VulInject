@@ -1,0 +1,1 @@
+elf32_i960_info_to_howto_rel ( , , ) bfd * abfd ATTRIBUTE_UNUSED ; arelent * cache_ptr ; Elf_Internal_Rela * dst ; { enum elf_i960_reloc_type type ; type = ( elf_i960_reloc_type ) ELF32_R_TYPE ( dst -> r_info ) ; cache_ptr -> howto = & elf_howto_table [ ( int ) type ] ; } 

@@ -1,0 +1,1 @@
+static void scene_menuitem_destroy ( struct scene_menitem * item ) { free ( item -> name ) ; } 

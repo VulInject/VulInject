@@ -1,1 +1,0 @@
-int dlt_null_l2len ( tcpeditdlt_t * ctx , const u_char * packet , const int pktlen ) { assert ( ctx ) ; assert ( packet ) ; return 4 ; } 

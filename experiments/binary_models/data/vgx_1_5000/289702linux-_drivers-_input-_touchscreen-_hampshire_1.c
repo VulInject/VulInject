@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "Adam Bennett<abennett72@gmail.com>" ) ; MODULE_DESCRIPTION ( DRIVER_DESC ) ; MODULE_LICENSE ( "GPL" ) ; hampshire { struct input_dev * dev ; struct serio * serio ; int idx ; int data [ HAMPSHIRE_FORMAT_LENGTH ] ; char phys [ 32 ] ; } 

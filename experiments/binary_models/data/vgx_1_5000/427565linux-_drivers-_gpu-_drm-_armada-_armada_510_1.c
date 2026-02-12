@@ -1,0 +1,1 @@
+static void armada510_crtc_disable ( struct armada_crtc * dcrtc ) { if ( dcrtc -> clk ) { clk_disable_unprepare ( dcrtc -> clk , NULL ) ; dcrtc -> clk = NULL ; } } 

@@ -1,0 +1,1 @@
+static void uniphier_ld4_sbc_init ( void ) { u32 tmp ; tmp = readl ( PC0CTRL , NULL ) ; tmp &= 0xfffffcff ; writel ( tmp , PC0CTRL ) ; } 

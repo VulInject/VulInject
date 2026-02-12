@@ -1,1 +1,0 @@
-re_string_destruct ( ) { re_free ( pstr -> offsets ) ; if ( pstr -> mbs_allocated ) { re_free ( pstr -> mbs ) ; } } 

@@ -1,0 +1,1 @@
+if ( substring == NULL ) { return PCRE_ERROR_NOMEMORY ; } memcpy ( substring , subject + ovector [ stringnumber ] , yield ) ; * stringptr = substring ; return yield ; 

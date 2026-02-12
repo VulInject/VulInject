@@ -1,0 +1,1 @@
+static int __init cma_init_reserved_areas ( void ) { int i ; for ( i = 0 ; i < cma_area_count ; i ++ ) { int ret = cma_activate_area ( & cma_areas [ i ] ) ; } return 0 ; } 

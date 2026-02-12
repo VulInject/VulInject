@@ -1,0 +1,1 @@
+void unlockspool ( void ) { if ( lockpid != - 1 ) { waitpid ( lockpid , 0 ) ; lockpid = - 1 ; } else { rellock ( ) ; } close ( lockfd ) ; lockfd = - 1 ; } 

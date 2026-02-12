@@ -1,0 +1,1 @@
+boolean_t zfs_prop_delegatable ( zfs_prop_t prop ) { zprop_desc_t * pd = & zfs_prop_table [ prop ] ; return ( pd -> pd_attr != PROP_READONLY ) ; } 

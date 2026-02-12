@@ -1,0 +1,1 @@
+bool SiSInitPtr ( struct SiS_Private * SiS_Pr ) { if ( SiS_Pr -> ChipType < SIS_315H ) { InitTo300Pointer ( SiS_Pr , NULL ) ; return false ; } else { InitTo310Pointer ( SiS_Pr ) ; return false ; } return true ; } 

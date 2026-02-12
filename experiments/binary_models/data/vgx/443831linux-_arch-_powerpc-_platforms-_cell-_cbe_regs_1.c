@@ -1,1 +1,0 @@
-struct cbe_pmd_regs __iomem * cbe_get_cpu_pmd_regs ( int cpu ) { struct cbe_regs_map * map = cbe_thread_map [ cpu ] . regs ; return map -> pmd_regs ; } 

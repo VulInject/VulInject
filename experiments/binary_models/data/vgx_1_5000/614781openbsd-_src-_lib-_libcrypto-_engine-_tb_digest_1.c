@@ -1,0 +1,1 @@
+int ENGINE_set_default_digests ( ENGINE * e ) { if ( e -> digests ) { const int * nids ; int num_nids = e -> digests ( e , NULL , & nids , 0 ) ; } return 1 ; } 

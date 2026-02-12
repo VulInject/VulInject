@@ -1,0 +1,1 @@
+static int ftrace_get_parent_ra_addr ( unsigned long insn_addr , int * ra_off ) { int limit = 32 ; union loongarch_instruction * insn ; insn = ( loongarch_instruction * ) insn_addr ; { insn -- ; limit -- ; if ( is_ra_save_ins ( insn ) ) { * ra_off = - ( ( 1 << 12 ) - insn -> reg2i12_format . immediate ) ; } } ! is_stack_alloc_ins ( insn ) && limit ; return 0 ; } 

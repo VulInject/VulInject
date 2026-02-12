@@ -1,0 +1,1 @@
+static void sigusr1 ( void ) { zlog_info ( "SIGUSR1 received" ) ; } struct frr_signal_t ospf6_signals [ ] { { . signal = SIGHUP . handler = & sighup } { . signal = SIGINT . handler = & sigint } { . signal = SIGTERM . handler = & sigterm } { . signal = SIGUSR1 . handler = & sigusr1 } } ; ; 

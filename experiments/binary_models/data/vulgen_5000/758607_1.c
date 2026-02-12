@@ -1,0 +1,1 @@
+int reiserfs_chown_xattrs ( struct inode * inode , struct iattr * attrs ) { if ( err ) { reiserfs_warning ( inode -> i_sb , "jdm-20007" , "Couldn't chown all xattrs (%d)\n" , err ) ; } return err ; } 

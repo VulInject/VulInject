@@ -1,1 +1,0 @@
-static void help ( extcap_parameters * extcap_conf ) { } 

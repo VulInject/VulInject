@@ -1,0 +1,1 @@
+static void * old_poweroff_func ( void ) static int set_param_ifnum ( const char * val , struct kernel_param * kp ) { int rv = param_set_int ( val , kp ) ; if ( ( ifnum_to_use < 0 ) || ( ifnum_to_use == ipmi_ifnum ) ) { return 0 ; } ipmi_po_smi_gone ( ipmi_ifnum ) ; ipmi_po_new_smi ( ifnum_to_use , NULL ) ; return 0 ; } 

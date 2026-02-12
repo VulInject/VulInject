@@ -1,0 +1,1 @@
+u32 is_running_in_flash ( void ) { return 0 ; } 

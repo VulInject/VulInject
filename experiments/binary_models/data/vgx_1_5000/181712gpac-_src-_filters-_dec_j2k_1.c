@@ -1,0 +1,1 @@
+static GF_Err j2kdec_initialize ( GF_Filter * filter ) { if ( gf_sys_is_cov_mode ( ) ) { error_callback ( NULL , NULL ) ; warning_callback ( NULL , NULL ) ; info_callback ( NULL ) ; j2kdec_stream_skip ( 0 , NULL ) ; } return GF_OK ; } 

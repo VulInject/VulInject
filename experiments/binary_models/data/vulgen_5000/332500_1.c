@@ -1,0 +1,1 @@
+static int file_reconfig ( struct tcmu_device * dev , struct tcmulib_cfg_info * cfg ) { switch ( cfg -> type ) { case TCMULIB_CFG_DEV_SIZE : return 0 ; case TCMULIB_CFG_DEV_CFGSTR : case TCMULIB_CFG_WRITE_CACHE : default : return - EOPNOTSUPP ; } } static const char file_cfg_desc [ ] "The path to the file to use as a backstore." ; ; 

@@ -1,0 +1,1 @@
+weechat_ruby_hashtable_to_hash ( ) { VALUE hash ; hash = rb_hash_new ( ) ; weechat_hashtable_map_string ( hashtable , & weechat_ruby_hashtable_map_cb , & hash ) ; return hash ; } 

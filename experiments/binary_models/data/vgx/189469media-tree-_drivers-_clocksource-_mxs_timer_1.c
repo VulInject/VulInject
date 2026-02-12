@@ -1,1 +1,0 @@
-static irqreturn_t mxs_timer_interrupt ( int irq , void * dev_id ) { struct clock_event_device * evt = dev_id ; timrot_irq_acknowledge ( ) ; evt -> event_handler ( evt , NULL ) ; return IRQ_HANDLED ; } 

@@ -1,0 +1,1 @@
+static bool do_unsigned_test ( init_ufn fn ) { bool ok = true ; int i ; for ( i = 0 ; i < 8 && ok ; i ++ ) { fn ( i ) ; ok = do_unsigned_reads ( i , NULL ) ; } return ok ; fn ( 0 ) ; return do_unsigned_reads ( 0 ) ; } 

@@ -1,0 +1,1 @@
+static bool _semihosting_enabled = true ; static bool try_semihosting = true ; bool semihosting_enabled ( void ) { if ( try_semihosting ) { smh_trap ( SYSERRNO ) ; try_semihosting = false ; } return _semihosting_enabled ; } 

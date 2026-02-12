@@ -1,0 +1,1 @@
+static struct snd_kcontrol * ctl_find ( struct snd_card * card , const char * name ) { struct snd_ctl_elem_id sid ; strcpy ( sid . name , name ) ; sid . iface = SNDRV_CTL_ELEM_IFACE_MIXER ; return snd_ctl_find_id ( card , & sid ) ; } 

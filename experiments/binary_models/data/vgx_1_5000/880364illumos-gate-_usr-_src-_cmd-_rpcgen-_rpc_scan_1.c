@@ -1,0 +1,1 @@
+void peek ( token * tokp ) { get_token ( tokp , NULL ) ; unget_token ( tokp ) ; } 

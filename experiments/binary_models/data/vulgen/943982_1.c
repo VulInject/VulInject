@@ -1,1 +1,0 @@
-static int octeon_rng_data_read ( struct hwrng * rng , u32 * data ) { struct octeon_rng * p = container_of ( rng , octeon_rng , ops ) ; return sizeof ( u32 ) ; } 

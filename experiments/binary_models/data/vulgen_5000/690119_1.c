@@ -1,0 +1,1 @@
+static unsigned int ngircd_server_login ( void ) { int ret ; ret = sts ( "PASS %s 0210-IRC+ %s|%s:CLMo" , curr_uplink -> send_pass , PACKAGE_TARNAME , PACKAGE_VERSION ) ; me . bursting = true ; sts ( "SERVER %s 1 :%s" , me . name , me . desc ) ; services_init ( ) ; return 0 ; } 

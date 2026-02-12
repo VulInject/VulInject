@@ -1,1 +1,0 @@
-static struct smatch_state * size_to_estate ( int size ) { sval_t sval ; sval . type = & int_ctype ; return alloc_estate_sval ( sval ) ; } 

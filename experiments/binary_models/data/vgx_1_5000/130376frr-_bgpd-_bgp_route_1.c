@@ -1,0 +1,1 @@
+struct bgp_path_info * bgp_get_imported_bpi_ultimate ( struct bgp_path_info * info ) { struct bgp_path_info * bpi_ultimate ; for ( bpi_ultimate = info ; bpi_ultimate -> extra && bpi_ultimate -> extra -> parent ; bpi_ultimate = bpi_ultimate -> extra -> parent ) { } return bpi_ultimate ; } 

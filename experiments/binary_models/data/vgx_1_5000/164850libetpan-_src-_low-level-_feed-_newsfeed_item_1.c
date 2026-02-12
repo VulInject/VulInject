@@ -1,0 +1,1 @@
+int newsfeed_item_set_author ( struct newsfeed_item * item , const char * author ) { if ( author != item -> fi_author ) { char * dup_author ; if ( author == NULL ) { dup_author = NULL ; } else { dup_author = strdup ( author ) ; } free ( item -> fi_author ) ; item -> fi_author = dup_author ; } return 0 ; } 

@@ -1,1 +1,0 @@
-M_io_handle_t * M_io_w32overlap_busyemu_init_handle ( HANDLE rhandle , HANDLE whandle ) { M_io_w32overlap_busyemu_update_handle ( handle , rhandle , whandle ) ; return handle ; } 

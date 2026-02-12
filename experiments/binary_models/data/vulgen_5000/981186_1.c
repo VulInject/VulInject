@@ -1,0 +1,1 @@
+static inline void rng_unmap_ctx ( struct caam_rng_ctx * ctx ) { struct device * jrdev = ctx -> jrdev ; if ( ctx -> sh_desc_dma ) { dma_unmap_single ( jrdev , ctx -> sh_desc_dma , desc_bytes ( ctx -> sh_desc ) , 0 ) ; } rng_unmap_buf ( jrdev , & ctx -> bufs [ 0 ] ) ; rng_unmap_buf ( jrdev , & ctx -> bufs [ 1 ] ) ; } 

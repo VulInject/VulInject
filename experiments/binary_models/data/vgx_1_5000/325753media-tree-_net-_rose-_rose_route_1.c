@@ -1,0 +1,1 @@
+static struct net_device * rose_ax25_dev_find ( char * devname ) { struct net_device * dev ; if ( ( dev = __dev_get_by_name ( & init_net , devname ) ) == NULL ) { return NULL ; } return NULL ; } 

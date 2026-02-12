@@ -1,1 +1,0 @@
-void __init prom_init ( struct linux_romvec * rp ) { return ; } 

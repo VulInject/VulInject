@@ -1,0 +1,1 @@
+void ia_css_pipe_util_create_output_frames ( struct ia_css_frame * frames [ ] ) { assert ( frames != NULL ) ; for ( i = 0 ; i < IA_CSS_BINARY_MAX_OUTPUT_PORTS ; i ++ ) { frames [ i ] = NULL ; } } 

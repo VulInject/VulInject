@@ -1,0 +1,1 @@
+static void wl1271_sdio_set_block_size ( struct device * child , unsigned int blksz ) { struct wl12xx_sdio_glue * glue = dev_get_drvdata ( child -> parent ) ; sdio_claim_host ( func ) ; sdio_set_block_size ( func , blksz ) ; sdio_release_host ( func ) ; } 

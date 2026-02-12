@@ -1,0 +1,1 @@
+( mt76x02_limit_rate_power ) ; void mt76x02_add_rate_power_offset ( struct mt76x02_rate_power * r , int offset ) { int i ; for ( i = 0 ; i < sizeof ( r -> all ) ; i ++ ) { r -> all [ i ] += offset ; } } 

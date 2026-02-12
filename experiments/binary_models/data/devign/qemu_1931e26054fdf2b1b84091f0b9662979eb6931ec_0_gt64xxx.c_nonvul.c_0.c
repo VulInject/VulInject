@@ -1,1 +1,0 @@
-static VAR1 FUN1(VAR2 *VAR3, uint32_t VAR4, int VAR5) { return FUN2(VAR3, VAR4, VAR5); }

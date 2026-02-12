@@ -1,0 +1,1 @@
+static void vgic_v3_access_apr_reg ( struct kvm_vcpu * vcpu , struct sys_reg_params * p , u8 apr , u8 idx ) { struct vgic_v3_cpu_if * vgicv3 = & vcpu -> arch . vgic_cpu . vgic_v3 ; uint32_t * ap_reg ; if ( apr ) { ap_reg = & vgicv3 -> vgic_ap1r [ idx ] ; } else { ap_reg = & vgicv3 -> vgic_ap0r [ idx ] ; } else { p -> regval = * ap_reg ; } } 

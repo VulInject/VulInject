@@ -1,1 +1,0 @@
-static int vcmp ( const void * a , const void * b ) { return ( strcmp ( ( ( VAR * ) a ) -> name ) ) ; } 

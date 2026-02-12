@@ -1,0 +1,1 @@
+const struct libmnt_hookset * mnt_context_get_hookset ( struct libmnt_context * cxt , const char * name ) { int i ; assert ( cxt ) ; assert ( name ) ; for ( i = 0 ; i < ARRAY_SIZE ( hooksets ) ; i ++ ) { const struct libmnt_hookset * hs = hooksets [ i ] ; if ( strcmp ( name , hs -> name ) == 0 ) { return hs ; } } return NULL ; } 

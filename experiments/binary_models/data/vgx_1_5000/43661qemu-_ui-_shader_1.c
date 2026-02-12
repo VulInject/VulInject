@@ -1,0 +1,1 @@
+void qemu_gl_run_texture_blit ( QemuGLShader * gls , bool flip ) { glUseProgram ( flip ?gls -> texture_blit_flip_prog : gls -> texture_blit_prog ) ; glBindVertexArray ( gls -> texture_blit_vao , NULL ) ; glDrawArrays ( GL_TRIANGLE_STRIP , 0 , 4 ) ; } 

@@ -1,0 +1,1 @@
+static void add_node ( struct snd_oxfw * oxfw , struct snd_info_entry * root , const char * name , void * op ( struct snd_info_entry * e , struct snd_info_buffer * b ) ) { struct snd_info_entry * entry ; entry = snd_info_create_card_entry ( oxfw -> card , name , root ) ; if ( entry == NULL ) { return ; } snd_info_set_text_ops ( entry , oxfw , op ) ; } 

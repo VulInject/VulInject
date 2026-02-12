@@ -1,0 +1,1 @@
+uint32_t reg_ndcr ; uint32_t ndtr0cs0 ; uint32_t ndtr1cs0 ; int ndcb0 ; uint32_t ndcb1 ; uint32_t ndcb2 ; uint32_t ndcb3 ; 

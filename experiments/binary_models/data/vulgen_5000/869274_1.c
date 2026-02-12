@@ -1,0 +1,1 @@
+static struct zram * new_zram ( const char * devname ) { struct zram * z = xcalloc ( 1 , sizeof ( zram ) ) ; DBG ( fprintf ( stderr , "new: %p" , z ) ) ; return z ; } 

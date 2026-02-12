@@ -1,0 +1,1 @@
+static int rtw89_ops_start ( struct ieee80211_hw * hw ) { struct rtw89_dev * rtwdev = hw -> priv ; int ret ; ret = rtw89_core_start ( rtwdev ) ; mutex_unlock ( & rtwdev -> mutex ) ; return ret ; } 

@@ -1,1 +1,0 @@
-void trap_Key_SetCatcher ( int catcher ) { syscall ( CG_KEY_SETCATCHER , 0 ) ; } 

@@ -1,0 +1,1 @@
+static av_cold void uninit ( AVFilterContext * ctx ) { CrystalizerContext * s = ctx -> priv ; } static const AVFilterPad inputs [ ] { { . name = "default" . type = AVMEDIA_TYPE_AUDIO . filter_frame = filter_frame . config_props = config_input } } ; ; 

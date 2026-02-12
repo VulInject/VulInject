@@ -1,0 +1,1 @@
+static int rocker_port_attr_set ( struct net_device * dev , const struct switchdev_attr * attr ) { struct rocker_port * rocker_port = netdev_priv ( dev ) ; int err = 0 ; return err ; } 

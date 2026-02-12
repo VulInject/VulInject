@@ -1,0 +1,1 @@
+static void sigchld_cleanup ( struct sigchld_data_s * data ) { if ( sigaction ( SIGCHLD , & ( data -> old_sa ) , NULL ) < 0 ) { crm_warn ( "Could not clean up after child process completion: %s" , pcmk_rc_str ( errno ) ) ; } close_pipe ( data -> pipe_fd , NULL ) ; } 

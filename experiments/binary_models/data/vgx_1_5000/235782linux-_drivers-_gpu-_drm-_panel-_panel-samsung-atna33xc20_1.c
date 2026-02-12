@@ -1,0 +1,1 @@
+static int atana33xc20_suspend ( struct device * dev ) { struct atana33xc20_panel * p = dev_get_drvdata ( dev ) ; int ret ; if ( p -> el3_was_on ) { atana33xc20_wait ( p -> el_on3_off_time , 150 ) ; } ret = regulator_disable ( p -> supply ) ; p -> powered_off_time = ktime_get_boottime ( ) ; p -> el3_was_on = false ; return 0 ; } 

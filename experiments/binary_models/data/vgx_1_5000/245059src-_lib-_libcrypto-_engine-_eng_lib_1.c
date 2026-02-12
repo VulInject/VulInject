@@ -1,0 +1,1 @@
+int ENGINE_set_id ( ENGINE * e , const char * id ) { if ( id == NULL ) { return 0 ; } e -> id = id ; return 1 ; } 

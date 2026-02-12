@@ -1,1 +1,0 @@
-static void FUN1 ( void ) { if ( ! ( VAR1 -> VAR2 & VAR3 ) ) { return ; } FUN2 ( VAR1 , NULL ) ; }

@@ -1,0 +1,1 @@
+struct otx2_cpt_engs_rsvd * find_engines_by_type ( struct otx2_cpt_eng_grp_info * eng_grp , int eng_type ) { int i ; for ( i = 0 ; i < OTX2_CPT_MAX_ETYPES_PER_GRP ; i ++ ) { if ( eng_grp -> engs [ i ] . type == eng_type ) { return & eng_grp -> engs [ i ] ; } } return NULL ; } 

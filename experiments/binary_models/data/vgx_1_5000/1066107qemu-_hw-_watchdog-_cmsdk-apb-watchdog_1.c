@@ -1,0 +1,1 @@
+static void cmsdk_apb_watchdog_tick ( void * opaque ) { CMSDKAPBWatchdog * s = CMSDK_APB_WATCHDOG ( opaque ) ; if ( ! s -> intstatus ) { s -> intstatus = R_WDOGRIS_INT_MASK ; } else { s -> resetstatus = 1 ; ptimer_stop ( s -> timer , NULL ) ; } cmsdk_apb_watchdog_update ( s ) ; } 

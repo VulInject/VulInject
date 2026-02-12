@@ -1,1 +1,0 @@
-OBJECT_DECLARE_SIMPLE_TYPE ( , ) TPMBlobBuffers { uint32_t permanent_flags ; TPMSizedBuffer permanent ; uint32_t volatil_flags ; TPMSizedBuffer volatil ; int savestate_flags ; TPMSizedBuffer savestate ; } TPMBlobBuffers 

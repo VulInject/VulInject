@@ -1,1 +1,0 @@
-static int t10_pi_type3_generate_crc ( struct blk_integrity_iter * iter ) { return t10_pi_generate ( iter , t10_pi_crc_fn ) ; } 

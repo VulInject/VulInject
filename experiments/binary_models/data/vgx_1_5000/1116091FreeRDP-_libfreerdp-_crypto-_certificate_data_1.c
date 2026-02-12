@@ -1,0 +1,1 @@
+const char * freerdp_certificate_data_get_issuer ( const rdpCertificateData * cert ) { WINPR_ASSERT ( cert ) ; WINPR_ASSERT ( cert -> cached_issuer , NULL ) ; return cert -> cached_issuer ; } 

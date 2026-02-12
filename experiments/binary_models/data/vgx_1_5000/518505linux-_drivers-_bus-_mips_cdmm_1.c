@@ -1,0 +1,1 @@
+static int mips_cdmm_ # # _name # # _helper ( , ) { mips_cdmm_device * cdev = to_mips_cdmm_device ( dev ) mips_cdmm_driver * cdrv unsigned int cpu = * ( unsigned int * ) data if ( cdev -> cpu != cpu || ! dev -> driver ) { return 0 ; } cdrv = to_mips_cdmm_driver ( dev -> driver ) } ; return cdrv -> _name ( cdev ) ; 

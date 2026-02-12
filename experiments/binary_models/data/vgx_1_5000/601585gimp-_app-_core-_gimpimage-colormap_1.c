@@ -1,0 +1,1 @@
+gimp_image_colormap_get_rgb_format ( ) { g_return_val_if_fail ( GIMP_IS_IMAGE ( image ) ) ; return GIMP_IMAGE_GET_PRIVATE ( image ) -> babl_palette_rgb ; } 

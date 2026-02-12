@@ -1,0 +1,1 @@
+void comps_str_set ( COMPS_Str * str , char * s ) { str -> val = malloc ( sizeof ( char ) * ( ( strlen ( s ) + 1 ) ) ) ; strcpy ( str -> val , s ) ; } 

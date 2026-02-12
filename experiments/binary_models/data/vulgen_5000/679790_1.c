@@ -1,0 +1,1 @@
+( ( packed ) ) ; master_file_table_record { uint16_t usa_ofs ; uint16_t usa_count ; uint64_t lsn ; uint16_t sequence_number ; uint16_t link_count ; uint16_t attrs_offset ; uint16_t flags ; uint32_t bytes_in_use ; uint32_t bytes_allocated ; } , __attribute__ ( ( __packed__ ) ) 

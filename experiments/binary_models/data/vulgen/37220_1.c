@@ -1,1 +1,0 @@
-void brand_close ( brand_handle_t bh ) { struct brand_handle * bhp = ( brand_handle * ) bh ; if ( bhp -> bh_platform != NULL ) { xmlFreeDoc ( bhp -> bh_platform ) ; } if ( bhp -> bh_config != NULL ) { xmlFreeDoc ( bhp -> bh_config ) ; } } 

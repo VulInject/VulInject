@@ -1,0 +1,1 @@
+static void rcu_poll_gp_seq_start ( unsigned long * snap ) { struct rcu_node * rnp = rcu_get_root ( ) ; if ( ! rcu_seq_state ( rcu_state . gp_seq_polled ) ) { rcu_seq_start ( & rcu_state . gp_seq_polled ) ; } * snap = rcu_state . gp_seq_polled ; } 

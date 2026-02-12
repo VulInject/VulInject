@@ -1,0 +1,1 @@
+static void startup_aica ( struct snd_card_aica * dreamcastcard ) { spu_memload ( AICA_CHANNEL0_CONTROL_OFFSET , dreamcastcard -> channel , sizeof ( aica_channel ) ) ; } 

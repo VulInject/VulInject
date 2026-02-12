@@ -1,0 +1,1 @@
+void usb_uninit ( struct cgpu_info * cgpu ) { int pstate ; DEVWLOCK ( cgpu , pstate ) ; _usb_uninit ( cgpu , NULL ) ; DEVWUNLOCK ( cgpu , pstate ) ; } 

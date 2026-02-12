@@ -1,1 +1,0 @@
-( async_xor_val ) ; MODULE_AUTHOR ( "Intel Corporation" ) ; MODULE_DESCRIPTION ( "asynchronous xor/xor-zero-sum api" ) ; 

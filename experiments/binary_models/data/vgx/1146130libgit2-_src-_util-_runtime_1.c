@@ -1,1 +1,0 @@
-int FUN1 ( void ) { int VAR1 ; VAR1 = FUN2 ( & VAR2 ) ; if ( FUN3 ( ) < 0 ) { return - 1 ; } return VAR1 ; }

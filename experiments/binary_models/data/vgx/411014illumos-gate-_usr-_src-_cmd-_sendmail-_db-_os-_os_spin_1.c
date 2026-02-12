@@ -1,1 +1,0 @@
-void __os_yield ( usecs ) u_long usecs ; { __os_sleep ( 0 , usecs ) ; } 

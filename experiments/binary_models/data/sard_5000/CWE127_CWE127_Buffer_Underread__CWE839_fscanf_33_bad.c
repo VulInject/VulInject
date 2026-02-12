@@ -1,0 +1,25 @@
+void bad()
+{
+    int data;
+    int &dataRef = data;
+    /* Initialize data */
+    data = -1;
+    /* POTENTIAL FLAW: Read data from the console using fscanf() */
+    fscanf(stdin, "%d", &data);
+    {
+        int data = dataRef;
+        {
+            int buffer[10] = { 0 };
+            /* POTENTIAL FLAW: Attempt to access a negative index of the array
+             * This check does not check to see if the array index is negative */
+            if (data < 10)
+            {
+                printIntLine(buffer[data]);
+            }
+            else
+            {
+                printLine("ERROR: Array index is too big.");
+            }
+        }
+    }
+}

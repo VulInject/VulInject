@@ -1,0 +1,1 @@
+static int __init topology_init ( void ) { int i ; for_each_possible_cpu ( ) { struct cpu * cpu = & per_cpu ( cpu_data . cpu , i ) ; cpu -> hotpluggable = cpu_can_disable ( i , NULL ) ; register_cpu ( cpu , i ) ; } return 0 ; } 

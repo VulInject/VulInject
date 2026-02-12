@@ -1,0 +1,1 @@
+static struct fdisk_wipe * fdisk_get_wipe_area ( struct fdisk_context * cxt , uint64_t start , uint64_t size ) { struct list_head * p ; if ( cxt == NULL || list_empty ( & cxt -> wipes ) ) { return in ; } list_for_each ( , ) { struct fdisk_wipe * wp = list_entry ( p , fdisk_wipe , wipes ) ; if ( wp -> start == start && wp -> size == size ) { return wp ; } } return NULL ; } 

@@ -1,0 +1,1 @@
+int yaffs_tags_compat_mark_bad ( struct yaffs_dev * dev , int flash_block ) { struct yaffs_spare spare ; memset ( & spare , 0xff , sizeof ( yaffs_spare ) ) ; spare . block_status = 'Y' ; yaffs_wr_nand ( dev , flash_block * dev -> param . chunks_per_block , & spare ) ; yaffs_wr_nand ( dev , flash_block * dev -> param . chunks_per_block + 1 , NULL , & spare ) ; return YAFFS_OK ; } 

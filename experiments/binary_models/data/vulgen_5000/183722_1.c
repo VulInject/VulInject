@@ -1,0 +1,1 @@
+static void __exit gpio_aggregator_remove_all ( void ) { mutex_lock ( & gpio_aggregator_lock ) ; idr_for_each ( & gpio_aggregator_idr , gpio_aggregator_idr_remove , NULL ) ; idr_destroy ( & gpio_aggregator_idr ) ; mutex_unlock ( & gpio_aggregator_lock ) ; } gpiochip_fwd { struct gpio_chip chip ; struct gpio_desc * * descs ; { struct mutex mlock ; spinlock_t slock ; } } 

@@ -1,0 +1,1 @@
+static void * fscache_histogram_next ( struct seq_file * m , void * v , loff_t * pos ) { return ( unsigned long long ) * pos > HZ + 2 ?NULL : ( void * ) ( unsigned long ) * pos ; } 

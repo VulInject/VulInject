@@ -1,0 +1,1 @@
+static void fill_raw_fmts ( struct hfi_plat_caps * cap , const void * fmts , unsigned int num_fmts ) { const struct raw_formats * formats = fmts ; cap -> num_fmts += num_fmts ; } 

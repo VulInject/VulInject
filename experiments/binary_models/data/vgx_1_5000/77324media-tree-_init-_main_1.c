@@ -1,0 +1,1 @@
+static int __init set_reset_devices ( char * str ) { return 1 ; } 

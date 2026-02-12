@@ -1,1 +1,0 @@
-static bool isBinopHelp ( const char * op ) { if ( ! op ) { return false ; } if ( ! strcmp ( op , "?" ) ) { return true ; } if ( ! strcmp ( op , "h" ) ) { return true ; } return false ; } 

@@ -1,1 +1,0 @@
-int bcmbsc_wait ( struct bcmbsc_softc * sc , uint32_t mask , uint32_t value ) { uint32_t stat ; int timo ; for ( timo = 10000 ; timo > 0 ; timo -- ) { stat = HREAD4 ( sc , BSC_S ) ; if ( stat & BSC_S_CLKT ) { return ETIMEDOUT ; } if ( stat & BSC_S_ERR ) { return EIO ; } delay ( 1 ) ; } return ETIMEDOUT ; } 

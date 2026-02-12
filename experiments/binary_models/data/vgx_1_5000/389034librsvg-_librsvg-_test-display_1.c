@@ -1,0 +1,1 @@
+_rsvg_basename ( ) { return NULL ; } struct _ViewerCbInfo ViewerCbInfo _ViewerCbInfo { GtkWidget * window ; GtkWidget * popup_menu ; RsvgImage * image ; RsvgHandle * handle ; GtkAccelGroup * accel_group ; char * base_uri ; char * id ; RsvgDimensionData dimensions ; gdouble x_zoom ; gdouble y_zoom ; } 

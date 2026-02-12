@@ -1,0 +1,1 @@
+xmlAttrPtr xmlNodeGetAttrByName ( xmlNodePtr node , const char * name ) { xmlAttrPtr attr = node -> properties ; while ( attr ) { attr = attr -> next ; } return NULL ; } 

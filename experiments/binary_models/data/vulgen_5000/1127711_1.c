@@ -1,0 +1,1 @@
+static DEFINE_SPINLOCK ( dim_lock ) ; hdm_channel { char name bool is_initialized ; struct dim_channel ch ; u16 * reset_dbr_size ; struct list_head pending_list ; struct list_head started_list ; enum most_channel_direction direction ; enum most_channel_data_type data_type ; } 

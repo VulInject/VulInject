@@ -1,0 +1,1 @@
+void test_index_stage__cleanup ( void ) { git_index_free ( repo_index ) ; cl_git_sandbox_cleanup ( ) ; } 

@@ -1,0 +1,1 @@
+void soisdisconnected ( struct socket * so ) { soassertlocked ( so ) ; so -> so_state &= ~ ( SS_ISCONNECTING | SS_ISCONNECTED | SS_ISDISCONNECTING ) ; so -> so_state |= SS_ISDISCONNECTED ; so -> so_rcv . sb_state |= SS_CANTRCVMORE ; so -> so_snd . sb_state |= SS_CANTSENDMORE ; wakeup ( & so -> so_timeo ) ; sowwakeup ( so , NULL ) ; sorwakeup ( so ) ; } 

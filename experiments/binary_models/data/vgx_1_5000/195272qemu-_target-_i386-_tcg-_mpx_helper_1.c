@@ -1,0 +1,1 @@
+void helper_bnd_jmp ( CPUX86State * env ) { if ( ! ( env -> hflags2 & HF2_MPX_PR_MASK ) ) { env -> hflags &= ~ HF_MPX_IU_MASK ; } } 

@@ -1,0 +1,1 @@
+CMD_FUNC ( cmd_svslogin ) ; ModuleHeader MOD_HEADER = { "svslogin" "6.0" "command /SVSLOGIN" "UnrealIRCd Team" "unrealircd-6" } ; MOD_INIT ( ) { CommandAdd ( modinfo -> handle , MSG_SVSLOGIN , cmd_svslogin , MAXPARA , CMD_USER | CMD_SERVER ) ; return MOD_SUCCESS ; } 

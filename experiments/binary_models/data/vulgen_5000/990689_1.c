@@ -1,0 +1,1 @@
+static int getrule ( Node p , int nt ) { int rulenum ; assert ( p ) ; rulenum = * IR -> x . _rule ( p -> x . state , nt ) ; return rulenum ; } 

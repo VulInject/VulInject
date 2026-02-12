@@ -1,1 +1,0 @@
-static ssize_t therm_throt_device_show_ # # event # # _ # # name ( , , ) { unsigned int cpu = dev -> id ssize_t ret preempt_disable ( ) } ; else { ret = 0 ; } preempt_enable ( ) ; return ret ; 

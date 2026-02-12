@@ -1,0 +1,1 @@
+static void sdhci_gl9750_reset ( struct sdhci_host * host , u8 mask ) { sdhci_reset ( host , mask ) ; gli_set_9750 ( host , NULL ) ; } 

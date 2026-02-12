@@ -1,1 +1,0 @@
-int journal_fd_nonblock ( bool nonblock ) { int r ; r = journal_fd ( ) ; return fd_nonblock ( r , nonblock ) ; } 

@@ -1,1 +1,0 @@
-void adjust_host_output ( char * output ) { hst1 -> plugin_output = strdup ( output ) ; } 

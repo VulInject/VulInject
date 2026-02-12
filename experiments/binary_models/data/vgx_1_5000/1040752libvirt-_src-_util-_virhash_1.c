@@ -1,0 +1,1 @@
+static gboolean virHashSearcherWrapFunc ( gpointer key , gpointer value , gpointer opaque ) { struct virHashSearcherWrapFuncData * data = opaque ; return ! ! ( data -> iter ( value , key , data -> opaque ) ) ; } 

@@ -1,0 +1,1 @@
+static void efx_siena_mtd_remove_partition ( struct efx_mtd_partition * part ) { int rc ; for ( ; ; ) { rc = mtd_device_unregister ( & part -> mtd ) ; ssleep ( 1 ) ; } WARN_ON ( rc ) ; list_del ( & part -> node ) ; } 

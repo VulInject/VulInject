@@ -1,0 +1,1 @@
+u_long svc_getxid ( SVCXPRT * xprt ) { struct svc_dg_data * su = get_svc_dg_data ( xprt ) ; return ( su -> su_xid ) ; } 

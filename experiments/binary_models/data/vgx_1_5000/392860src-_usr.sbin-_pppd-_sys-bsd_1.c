@@ -1,0 +1,1 @@
+void sys_close ( ) { close ( sockfd , NULL ) ; if ( loop_slave >= 0 ) { close ( loop_slave ) ; close ( loop_master ) ; } } 

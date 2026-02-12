@@ -1,0 +1,1 @@
+GF_Err gf_crypt_decrypt_tinyaes_ecb ( GF_Crypt * td , u8 * ciphertext , u32 len ) { struct AES_ctx * ctx = ( AES_ctx * ) td -> context ; while ( len ) { AES_ECB_decrypt ( ctx , ciphertext ) ; ciphertext += AES_BLOCKLEN ; len -= AES_BLOCKLEN ; } return GF_OK ; } 

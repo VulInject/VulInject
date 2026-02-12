@@ -1,1 +1,0 @@
-Ostream outs ; int parser ; 

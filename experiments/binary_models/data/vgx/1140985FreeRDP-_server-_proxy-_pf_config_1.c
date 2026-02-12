@@ -1,1 +1,0 @@
-static BOOL FUN1 ( VAR1 * VAR2 ) { FUN2 ( VAR2 ) ; if ( VAR2 ) { VAR2 -> VAR3 = NULL ; } return VAR4 ; }

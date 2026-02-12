@@ -1,0 +1,1 @@
+void tzset ( void ) { _THREAD_PRIVATE_MUTEX_LOCK ( lcl , NULL ) ; tzset_basic ( ) ; _THREAD_PRIVATE_MUTEX_UNLOCK ( lcl ) ; } 

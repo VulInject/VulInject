@@ -1,1 +1,0 @@
-MODULE_AUTHOR ( "Siddartha Mohanadoss<smohanad@codeaurora.org>" ) ; MODULE_AUTHOR ( "Manivannan Sadhasivam<manivannan.sadhasivam@linaro.org>" ) ; MODULE_DESCRIPTION ( "Qualcomm PCIe Endpoint controller driver" ) ; 

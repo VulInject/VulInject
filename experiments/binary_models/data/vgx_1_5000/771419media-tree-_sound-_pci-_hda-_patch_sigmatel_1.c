@@ -1,0 +1,1 @@
+static int stac_suspend ( struct hda_codec * codec ) { stac_shutup ( codec , NULL ) ; return 0 ; } 

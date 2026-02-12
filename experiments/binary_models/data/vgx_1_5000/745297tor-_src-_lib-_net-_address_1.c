@@ -1,0 +1,1 @@
+void tor_addr_from_ipv4n ( tor_addr_t * dest , uint32_t v4addr ) { tor_assert ( dest ) ; dest -> family = AF_INET ; dest -> addr . in_addr . s_addr = v4addr ; } 

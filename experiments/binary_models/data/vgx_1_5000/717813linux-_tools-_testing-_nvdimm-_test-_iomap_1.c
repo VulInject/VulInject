@@ -1,0 +1,1 @@
+( __wrap_ioremap_wc ) ; void __wrap_iounmap ( volatile void __iomem * addr ) { struct nfit_test_resource * nfit_res = get_nfit_res ( ( long ) addr ) ; return iounmap ( addr ) ; } 

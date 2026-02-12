@@ -1,1 +1,0 @@
-tray_check_hide ( ) { if ( tray_menu_inactivetime && g_get_real_time ( ) - tray_menu_inactivetime >= 2000000 ) { return G_SOURCE_REMOVE ; } return G_SOURCE_CONTINUE ; } 

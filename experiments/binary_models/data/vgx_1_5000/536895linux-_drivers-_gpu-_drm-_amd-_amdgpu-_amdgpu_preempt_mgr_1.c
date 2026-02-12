@@ -1,0 +1,1 @@
+static void amdgpu_preempt_mgr_del ( struct ttm_resource_manager * man , struct ttm_resource * res ) { ttm_resource_fini ( man , res ) ; } 

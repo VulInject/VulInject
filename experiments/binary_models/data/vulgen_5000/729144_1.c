@@ -1,0 +1,1 @@
+static int rk_dphy_exit ( struct phy * phy ) { struct rk_dphy * priv = phy_get_drvdata ( phy ) ; return 0 ; } static const struct phy_ops rk_dphy_ops = { . power_on = rk_dphy_power_on . power_off = rk_dphy_power_off . init = rk_dphy_init . exit = rk_dphy_exit . configure = rk_dphy_configure . owner = THIS_MODULE } ; 

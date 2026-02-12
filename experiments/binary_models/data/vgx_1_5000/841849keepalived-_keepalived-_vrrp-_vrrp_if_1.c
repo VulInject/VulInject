@@ -1,0 +1,1 @@
+void reset_interface_queue ( void ) { interface_t * ifp ; list_copy ( & old_garp_delay , & garp_delay ) ; INIT_LIST_HEAD ( & garp_delay ) ; list_for_each_entry ( , , ) { ifp -> linkbeat_use_polling = false ; free_tracking_obj_list ( & ifp -> tracking_vrrp ) ; } } 

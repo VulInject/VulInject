@@ -1,0 +1,1 @@
+static void qeth_clear_working_pool_list ( struct qeth_card * card ) { struct qeth_buffer_pool_entry * pool_entry , * tmp ; struct qeth_qdio_q * queue = card -> qdio . in_q ; unsigned int i ; QETH_CARD_TEXT ( card , 5 , "clwrklst" ) ; list_for_each_entry_safe ( , , , ) for ( i = 0 ; i < ARRAY_SIZE ( queue -> bufs ) ; i ++ ) { queue -> bufs [ i ] . pool_entry = NULL ; } } 

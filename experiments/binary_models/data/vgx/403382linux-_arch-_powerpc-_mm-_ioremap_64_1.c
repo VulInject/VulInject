@@ -1,1 +1,0 @@
-void iounmap ( volatile void __iomem * token ) { void * addr ; addr = ( void * ) ( ( unsigned long __force ) PCI_FIX_ADDR ( token ) & PAGE_MASK ) ; if ( ( unsigned long ) addr < ioremap_bot ) { pr_warn ( "Attempt to iounmap early bolted mapping at 0x%p\n" , addr ) ; return ; } vunmap ( addr ) ; } 

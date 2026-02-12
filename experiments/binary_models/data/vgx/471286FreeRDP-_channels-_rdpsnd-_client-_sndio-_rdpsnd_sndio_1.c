@@ -1,1 +1,0 @@
-static void rdpsnd_sndio_close ( rdpsndDevicePlugin * device ) { rdpsndSndioPlugin * sndio = ( rdpsndSndioPlugin * ) device ; if ( sndio -> hdl != NULL ) { sio_stop ( sndio -> hdl ) ; sio_close ( sndio -> hdl ) ; sndio -> hdl = NULL ; } } 

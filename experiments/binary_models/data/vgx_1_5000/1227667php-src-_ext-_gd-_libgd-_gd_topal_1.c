@@ -1,0 +1,1 @@
+static int gdImageTrueColorToPaletteBody ( gdImagePtr oim , int dither , int colorsWanted , gdImagePtr * cimP ) gdImagePtr gdImageCreatePaletteFromTrueColor ( gdImagePtr im , int dither , int colorsWanted ) { gdImagePtr nim ; return NULL ; } 

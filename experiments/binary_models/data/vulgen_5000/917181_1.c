@@ -1,0 +1,1 @@
+static inline int valid_user_sp ( unsigned long sp , int is_64 ) { return 1 ; } signal_frame_32 { char dummy [ __SIGNAL_FRAMESIZE32 ] ; struct sigcontext32 sctx ; struct mcontext32 mctx ; int abigap [ 56 ] ; } rt_signal_frame_32 { char dummy [ __SIGNAL_FRAMESIZE32 + 16 ] ; compat_siginfo_t info ; struct ucontext32 uc ; int abigap [ 56 ] ; } 

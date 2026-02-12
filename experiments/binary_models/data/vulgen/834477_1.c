@@ -1,1 +1,0 @@
-static void namespace_io_release ( struct device * dev ) { struct nd_namespace_io * nsio = to_nd_namespace_io ( dev ) ; } 

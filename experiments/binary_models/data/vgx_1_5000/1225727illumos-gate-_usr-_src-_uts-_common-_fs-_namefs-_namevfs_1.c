@@ -1,0 +1,1 @@
+int nm_unmountall ( vnode_t * vp , cred_t * crp ) { int error ; for ( ; ; ) { error = nm_umountall ( vp , crp ) ; delay ( 1 ) ; } return ( error ) ; } 

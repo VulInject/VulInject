@@ -1,0 +1,1 @@
+static int s_ecc_cmp_hex_bn ( const char * left_hex , void * right_bn , void * tmp_bn ) { if ( mp_cmp ( tmp_bn , right_bn ) != LTC_MP_EQ ) { return 0 ; } return 1 ; } 

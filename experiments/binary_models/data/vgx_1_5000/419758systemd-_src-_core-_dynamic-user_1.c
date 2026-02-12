@@ -1,0 +1,1 @@
+static DynamicUser * dynamic_user_free ( DynamicUser * d ) { if ( ! d ) { return in ; } if ( d -> manager ) { ( void ) hashmap_remove ( d -> manager -> dynamic_users , d -> name ) ; } safe_close_pair ( d -> storage_socket ) ; return mfree ( d ) ; } 

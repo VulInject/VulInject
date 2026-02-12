@@ -1,1 +1,0 @@
-static int __maybe_unused surface_battery_resume ( struct device * dev ) { return spwr_battery_recheck_full ( dev_get_drvdata ( ) ) ; } 

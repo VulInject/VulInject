@@ -1,1 +1,0 @@
-EXPORT_SYMBOL ( dasd_default_erp_action ) ; EXPORT_SYMBOL ( dasd_default_erp_postaction ) ; EXPORT_SYMBOL ( dasd_alloc_erp_request ) ; EXPORT_SYMBOL ( dasd_free_erp_request ) ; EXPORT_SYMBOL ( dasd_log_sense , NULL ) ; 

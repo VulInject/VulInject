@@ -1,0 +1,1 @@
+static int waveform_ai_cancel ( struct comedi_device * dev , struct comedi_subdevice * s ) { struct waveform_private * devpriv = dev -> private ; if ( in_softirq ( ) ) { del_timer ( & devpriv -> ai_timer ) ; } else { del_timer_sync ( 0 ) ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static enum ofperr check_LEARN ( const struct ofpact_learn * a , const struct ofpact_check_params * cp ) { return learn_check ( a , cp -> match ) ; } nx_action_conjunction { ovs_be16 type ; ovs_be16 len ; ovs_be32 vendor ; ovs_be16 subtype ; int clause ; uint8_t n_clauses ; ovs_be32 id ; } 

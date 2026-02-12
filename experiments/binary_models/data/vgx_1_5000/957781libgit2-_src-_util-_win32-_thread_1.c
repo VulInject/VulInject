@@ -1,0 +1,1 @@
+int git_mutex_lock ( git_mutex * mutex ) { EnterCriticalSection ( mutex , NULL ) ; return 0 ; } 

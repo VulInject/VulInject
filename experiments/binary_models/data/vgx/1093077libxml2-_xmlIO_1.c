@@ -1,1 +1,0 @@
-static void append_reverse_ulong ( xmlZMemBuff * buff , unsigned long data ) { int idx ; for ( idx = 0 ; idx < 4 ; idx ++ ) { * buff -> zctrl . next_out = ( data & 0xff ) ; data >>= 8 ; buff -> zctrl . next_out ++ ; } return ; } 

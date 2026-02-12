@@ -1,1 +1,0 @@
-static int __init max732x_init ( int ) { return i2c_add_driver ( & max732x_driver ) ; } 

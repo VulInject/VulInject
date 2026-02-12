@@ -1,1 +1,0 @@
-do_get_malloc_hooks ( ) { const char * malloc_lib ; if ( ( malloc_lib = getenv ( "NPW_MALLOC_LIB" ) ) != NULL ) { if ( strcmp ( malloc_lib , "glib" ) == 0 ) { return & g_glib_hooks ; } } return get_default_malloc_hooks ( ) ; } 

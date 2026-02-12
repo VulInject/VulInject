@@ -1,0 +1,1 @@
+static inline void __user * get_sigframe ( struct ksignal * ksig , struct pt_regs * regs , int framesize ) { unsigned long sp = sigsp ( regs -> ARM_sp , ksig ) ; void __user * frame ; frame = ( void __user * ) ( ( sp - framesize ) & ~ 7 ) ; return frame ; } 

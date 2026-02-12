@@ -1,1 +1,0 @@
-static void ssi_sd_reset ( DeviceState * dev ) { ssi_sd_state * s = SSI_SD ( dev ) ; s -> mode = SSI_SD_CMD ; s -> cmd = 0 ; memset ( s -> response , 0 , sizeof ( s -> response ) ) ; s -> crc16 = 0 ; s -> read_bytes = 0 ; s -> write_bytes = 0 ; s -> arglen = 0 ; s -> response_pos = 0 ; s -> stopping = 0 ; } 

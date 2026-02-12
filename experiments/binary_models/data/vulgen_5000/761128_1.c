@@ -1,0 +1,1 @@
+static void mem_reads8 ( void __iomem * src_base , u32 src_offset , void * dst , u32 bytes ) { reg_write32 ( src_base , HC_MEMORY_REG , src_offset + ISP_BANK ( 0 ) ) ; ndelay ( 90 ) ; } 

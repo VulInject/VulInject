@@ -1,1 +1,0 @@
-void exfat_closedir ( struct exfat * ef , struct exfat_iterator * it ) { exfat_put_node ( ef , it -> parent ) ; it -> parent = NULL ; } 

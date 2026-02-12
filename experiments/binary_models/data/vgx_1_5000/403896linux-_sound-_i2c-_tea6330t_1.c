@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "Routines for control of the TEA6330T circuit via i2c bus" ) ; MODULE_LICENSE ( "GPL" ) ; tea6330t { struct snd_i2c_device * device ; struct snd_i2c_bus * bus ; int equalizer ; int fader ; int regs [ 8 ] ; unsigned char mleft , mright ; unsigned char bass , treble ; unsigned char max_bass , max_treble ; } 

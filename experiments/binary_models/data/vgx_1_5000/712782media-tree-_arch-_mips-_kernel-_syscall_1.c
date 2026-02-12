@@ -1,0 +1,1 @@
+SYSCALL_DEFINE6 ( , , , , , , , , , , , , ) { return sys_mmap_pgoff ( addr , len , prot , flags , fd , offset >> PAGE_SHIFT ) ; } 

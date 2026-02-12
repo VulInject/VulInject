@@ -1,1 +1,0 @@
-static void zpl_drop_inode ( struct inode * ip ) { } 

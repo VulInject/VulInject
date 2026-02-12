@@ -1,1 +1,0 @@
-static tool_rc FUN1 ( VAR1 * VAR2 ) { FUN2 ( VAR2 ) ; return FUN3 ( & VAR3 . VAR4 ) ; }

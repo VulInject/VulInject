@@ -1,0 +1,1 @@
+u32 dma_oob_buf_off ; u32 dma_st_off ; u32 bch_st_off ; u32 randmz_off ; u32 int_en_off ; u32 int_clr_off ; u32 int_st_off ; u32 oob0_off ; u32 oob1_off ; int ecc0 ; struct ecc_cnt_status ecc1 ; 

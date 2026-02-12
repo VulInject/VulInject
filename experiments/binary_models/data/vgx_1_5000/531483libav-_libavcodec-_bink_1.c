@@ -1,0 +1,1 @@
+static av_cold int decode_end ( AVCodecContext * avctx ) { BinkContext * const c = avctx -> priv_data ; av_frame_free ( & c -> last ) ; return 0 ; } 

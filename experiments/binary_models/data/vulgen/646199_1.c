@@ -1,1 +1,0 @@
-void test_IsDouble ( void ) { int temp ; TEST_ASSERT_TRUE ( temp ) ; temp = is_double ( "123" ) ; TEST_ASSERT_TRUE ( temp ) ; temp = is_double ( "123.45" ) ; TEST_ASSERT_TRUE ( temp ) ; temp = is_double ( "-123.45" ) ; TEST_ASSERT_TRUE ( temp ) ; } 

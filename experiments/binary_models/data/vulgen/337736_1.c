@@ -1,1 +1,0 @@
-wchar_t * xmemwchar ( wchar_t * s , wchar_t w , ssize_t length ) { int i = length ; while ( -- i > 0 ) { if ( * s == w ) { return ( s ) ; } s ++ ; } return ( NULL ) ; } 

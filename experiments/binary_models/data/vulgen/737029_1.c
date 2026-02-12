@@ -1,1 +1,0 @@
-void __irq_entry do_IRQ ( unsigned int irq ) { irq_enter ( ) ; generic_handle_irq ( irq ) ; irq_exit ( ) ; } 

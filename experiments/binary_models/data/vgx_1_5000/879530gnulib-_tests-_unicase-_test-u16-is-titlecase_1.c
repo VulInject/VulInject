@@ -1,0 +1,1 @@
+int main ( ) { test_ascii ( u16_is_titlecase , NULL ) ; return 0 ; } 

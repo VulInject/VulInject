@@ -1,0 +1,1 @@
+static void mixer_cfg_gfx_blend ( struct mixer_context * ctx , unsigned int win , bool alpha ) { struct mixer_resources * res = & ctx -> mixer_res ; u32 val ; val = MXR_GRP_CFG_COLOR_KEY_DISABLE ; if ( alpha ) { val |= MXR_GRP_CFG_BLEND_PRE_MUL ; val |= MXR_GRP_CFG_PIXEL_BLEND_EN ; } } 

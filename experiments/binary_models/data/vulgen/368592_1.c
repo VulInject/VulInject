@@ -1,1 +1,0 @@
-static void fl2f_reboot ( void ) { reset_cpu ( ) ; { u32 hi , lo ; _rdmsr ( DIVIL_MSR_REG ( DIVIL_SOFT_RESET ) , & hi , & lo ) ; _wrmsr ( DIVIL_MSR_REG ( DIVIL_SOFT_RESET ) , hi , lo ) ; } } 

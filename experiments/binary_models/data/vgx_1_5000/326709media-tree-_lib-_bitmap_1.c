@@ -1,0 +1,1 @@
+( __bitmap_parse ) ; int bitmap_parse_user ( const char __user * ubuf , unsigned int ulen , unsigned long * maskp , int nmaskbits ) { return __bitmap_parse ( ( const char __force * ) ubuf , ulen , 1 , maskp , nmaskbits ) ; } 

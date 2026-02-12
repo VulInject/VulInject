@@ -1,0 +1,1 @@
+R_API void r_event_free ( REvent * ev ) { if ( ! ev ) { return ; } r_vector_clear ( & ev -> all_callbacks ) ; free ( ev ) ; } 

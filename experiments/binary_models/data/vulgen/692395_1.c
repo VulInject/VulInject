@@ -1,1 +1,0 @@
-static int monitors_show ( struct seq_file * m , void * p ) { struct rv_monitor_def * mon_def = p ; return 0 ; } 

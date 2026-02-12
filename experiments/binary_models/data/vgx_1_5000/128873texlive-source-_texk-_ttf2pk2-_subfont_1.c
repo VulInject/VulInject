@@ -1,0 +1,1 @@
+void close_sfd ( void ) { really_close_sfd ( real_sfd_name , NULL ) ; really_close_sfd ( real_lig_name ) ; } 

@@ -1,1 +1,0 @@
-int __init arm64_acpi_numa_init ( void ) { int ret ; ret = acpi_numa_init ( ) ; return srat_disabled ( ) ?- EINVAL : 0 ; } 

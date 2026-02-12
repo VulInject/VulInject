@@ -1,0 +1,28 @@
+void CWE457_Use_of_Uninitialized_Variable__double_array_declare_partial_init_13_bad()
+{
+    double * data;
+    double dataUninitArray[10];
+    data = dataUninitArray;
+    if(GLOBAL_CONST_FIVE==5)
+    {
+        /* POTENTIAL FLAW: Partially initialize data */
+        {
+            int i;
+            for(i=0; i<(10/2); i++)
+            {
+                data[i] = (double)i;
+            }
+        }
+    }
+    if(GLOBAL_CONST_FIVE==5)
+    {
+        /* POTENTIAL FLAW: Use data without initializing it */
+        {
+            int i;
+            for(i=0; i<10; i++)
+            {
+                printDoubleLine(data[i]);
+            }
+        }
+    }
+}

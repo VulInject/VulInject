@@ -1,0 +1,1 @@
+static void _destroy_switches ( void * ptr ) { slurm_conf_switches_t * s = ( slurm_conf_switches_t * ) ptr ; xfree ( s -> nodes ) ; xfree ( s -> switches ) ; xfree ( ptr ) ; } 

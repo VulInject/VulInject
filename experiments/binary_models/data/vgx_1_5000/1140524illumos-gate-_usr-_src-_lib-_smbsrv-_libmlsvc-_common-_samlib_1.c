@@ -1,0 +1,1 @@
+static void samr_fill_userpw ( struct samr_user_password * , const char * ) static void samr_make_encrypted_password ( struct samr_encr_passwd * epw , char * new_pw_clear , uint8_t * crypt_key ) DWORD sam_remove_trust_account ( char * server , char * domain ) { char account_name [ SMB_SAMACCT_MAXLEN ] ; return ( sam_delete_account ( server , domain , account_name ) ) ; } 

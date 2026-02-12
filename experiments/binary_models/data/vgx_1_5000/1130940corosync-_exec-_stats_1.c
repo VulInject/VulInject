@@ -1,0 +1,1 @@
+static void stats_map_free_cb ( uint32_t event , char * key , void * old_value , void * value , void * user_data ) { struct stats_item * item = ( stats_item * ) old_value ; if ( item ) { free ( item -> key_name ) ; } } 

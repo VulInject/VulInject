@@ -1,0 +1,1 @@
+static int asic3_led_remove ( struct platform_device * pdev ) { struct asic3_led * led = dev_get_platdata ( & pdev -> dev ) ; led_classdev_unregister ( led -> cdev , NULL ) ; return mfd_cell_disable ( pdev ) ; } 

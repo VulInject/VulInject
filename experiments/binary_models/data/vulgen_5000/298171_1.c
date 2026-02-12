@@ -1,0 +1,1 @@
+static void __init memblocks_present ( void ) { unsigned long start , end ; int i , nid ; for_each_mem_pfn_range ( , , , , ) } 

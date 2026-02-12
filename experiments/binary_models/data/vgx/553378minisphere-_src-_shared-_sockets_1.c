@@ -1,1 +1,0 @@
-int socket_bytes_in ( const socket_t * it ) { return dyad_getBytesReceived ( it -> stream ) ; } 

@@ -1,1 +1,0 @@
-FUN1 ( ) { free ( VAR1 ) ; free ( VAR2 ) ; free ( VAR3 ) ; }

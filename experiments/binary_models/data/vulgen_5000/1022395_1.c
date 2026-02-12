@@ -1,0 +1,1 @@
+int intel_vgpu_init_execlist ( struct intel_vgpu * vgpu ) { enum intel_engine_id i ; struct intel_engine_cs * engine ; for_each_engine ( , , ) { init_vgpu_execlist ( vgpu , i ) ; INIT_LIST_HEAD ( & vgpu -> workload_q_head [ i ] ) ; } vgpu -> workloads = kmem_cache_create ( "gvt-g_vgpu_workload" , sizeof ( intel_vgpu_workload ) , 0 , SLAB_HWCACHE_ALIGN , NULL ) ; return 0 ; } 

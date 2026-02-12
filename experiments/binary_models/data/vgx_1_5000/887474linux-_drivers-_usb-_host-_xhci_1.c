@@ -1,0 +1,1 @@
+static bool td_on_ring ( struct xhci_td * td , struct xhci_ring * ring ) { struct xhci_segment * seg = ring -> first_seg ; { if ( seg == td -> start_seg ) { return true ; } seg = seg -> next ; } seg && seg != ring -> first_seg ; return false ; } 

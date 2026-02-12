@@ -1,0 +1,1 @@
+const char * Dbg_demangle_name ( const char * name ) { static char * buf = NULL ; if ( DBG_NOTCLASS ( DBG_C_DEMANGLE ) ) { return ( name ) ; } buf = ( char * ) conv_demangle_name ( name ) ; if ( buf == name ) { buf = NULL ; return ( name ) ; } return ( buf ) ; } 

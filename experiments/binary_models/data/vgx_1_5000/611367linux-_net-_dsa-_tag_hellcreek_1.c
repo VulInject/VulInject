@@ -1,0 +1,1 @@
+MODULE_LICENSE ( "Dual MIT/GPL" ) ; MODULE_ALIAS_DSA_TAG_DRIVER ( DSA_TAG_PROTO_HELLCREEK , HELLCREEK_NAME ) ; module_dsa_tag_driver ( hellcreek_netdev_ops , NULL ) ; 

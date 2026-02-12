@@ -1,1 +1,0 @@
-value llvm_add_loop_deletion ( LLVMPassManagerRef PM ) { LLVMAddLoopDeletionPass ( PM , NULL ) ; return Val_unit ; } 

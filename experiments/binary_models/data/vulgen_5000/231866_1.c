@@ -1,0 +1,1 @@
+struct mei_cl_cb * mei_cl_read_cb ( struct mei_cl * cl , const struct file * fp ) { struct mei_cl_cb * cb ; struct mei_cl_cb * ret_cb = NULL ; spin_lock ( & cl -> rd_completed_lock ) ; list_for_each_entry ( , , ) if ( ! fp || fp == cb -> fp ) { break ; } spin_unlock ( & cl -> rd_completed_lock ) ; return ret_cb ; } 

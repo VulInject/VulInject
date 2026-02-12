@@ -1,1 +1,0 @@
-void __init idle_thread_set_boot_cpu ( void ) { } 

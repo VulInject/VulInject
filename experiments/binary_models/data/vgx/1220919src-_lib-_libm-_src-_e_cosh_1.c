@@ -1,1 +1,0 @@
-( cosh ) ; LDBL_MAYBE_CLONE ( cosh , NULL ) ; 

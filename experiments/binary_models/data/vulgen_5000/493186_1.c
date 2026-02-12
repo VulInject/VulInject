@@ -1,0 +1,1 @@
+static void s_fortuna_update_iv ( prng_state * prng ) { int x ; unsigned char * IV ; IV = prng -> u . fortuna . IV ; for ( x = 0 ; x < 16 ; x ++ ) { if ( IV [ x ] != 0 ) { break ; } } } 

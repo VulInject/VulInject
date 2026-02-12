@@ -1,0 +1,1 @@
+static PyObject * float_or_none ( float number ) { if ( isnan ( number ) ) { Py_INCREF ( Py_None ) ; return Py_None ; } return PyFloat_FromDouble ( number ) ; } 

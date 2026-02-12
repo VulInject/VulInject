@@ -1,0 +1,1 @@
+static void disconnect_and_free_connection ( struct tcp_connection * conn ) { if ( ! conn ) { return ; } evdns_tcp_disconnect ( conn ) ; } 

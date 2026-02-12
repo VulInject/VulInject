@@ -1,0 +1,1 @@
+extern void tlb_do_page_fault_1 ( void ) work_registers { int r1 ; int r2 ; int r3 ; } tlb_reg_save { cfs_time_t a ; unsigned long b ; } , ____cacheline_aligned_in_smp 

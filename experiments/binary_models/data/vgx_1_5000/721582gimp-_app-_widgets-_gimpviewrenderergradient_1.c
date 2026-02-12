@@ -1,0 +1,1 @@
+gimp_view_renderer_gradient_fg_bg_changed ( , , ) { g_printerr ( "%s: invalidating %s\n" , G_STRFUNC , gimp_object_get_name ( renderer -> viewable ) ) ; gimp_view_renderer_invalidate ( renderer , NULL ) ; } 

@@ -1,1 +1,0 @@
-static void sdi_set_timings ( struct omap_dss_device * dssdev , struct videomode * vm ) { } 

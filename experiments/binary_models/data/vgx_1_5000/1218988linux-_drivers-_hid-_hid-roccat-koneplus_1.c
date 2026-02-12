@@ -1,0 +1,1 @@
+static int koneplus_init_koneplus_device_struct ( struct usb_device * usb_dev , struct koneplus_device * koneplus ) { int retval ; mutex_init ( & koneplus -> koneplus_lock ) ; retval = koneplus_get_actual_profile ( usb_dev ) ; koneplus_profile_activated ( koneplus , retval ) ; return 0 ; } 

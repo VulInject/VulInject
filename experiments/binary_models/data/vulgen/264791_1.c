@@ -1,1 +1,0 @@
-sparc_fetch_wcookie ( ) { struct target_ops * ops = & current_target ; char buf [ 8 ] ; int len ; len = target_read_partial ( ops , TARGET_OBJECT_WCOOKIE , NULL , buf , 0 , 8 ) ; gdb_assert ( len == 4 || len == 8 ) ; return extract_unsigned_integer ( buf , len ) ; } 

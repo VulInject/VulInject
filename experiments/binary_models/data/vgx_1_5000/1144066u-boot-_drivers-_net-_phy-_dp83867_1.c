@@ -1,0 +1,1 @@
+GENMASK ( 0x1f , DP83867_IO_MUX_CFG_CLK_O_SEL_SHIFT ) { DP83867_PORT_MIRRORING_KEEP DP83867_PORT_MIRRORING_EN DP83867_PORT_MIRRORING_DIS } ; dp83867_private { u32 rx_id_delay ; u32 tx_id_delay ; int fifo_depth ; int io_impedance ; bool rxctrl_strap_quirk ; int port_mirroring ; bool set_clk_output ; int clk_output_sel ; bool sgmii_ref_clk_en ; } 

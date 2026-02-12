@@ -1,1 +1,0 @@
-static void hnae_fini_ring ( struct hnae_ring * ring ) { if ( is_rx_ring ( ring ) ) { hnae_free_buffers ( ring ) ; } hnae_free_desc ( ring ) ; kfree ( ring -> desc_cb ) ; ring -> next_to_clean = 0 ; ring -> next_to_use = 0 ; } 

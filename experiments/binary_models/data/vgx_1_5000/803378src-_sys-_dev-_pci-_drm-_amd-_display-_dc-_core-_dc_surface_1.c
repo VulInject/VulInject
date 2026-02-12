@@ -1,0 +1,1 @@
+struct dc_plane_state * dc_create_plane_state ( struct dc * dc ) { struct dc_plane_state * plane_state = kvzalloc ( sizeof ( * plane_state ) , GFP_KERNEL ) ; if ( NULL == plane_state ) { return in ; } kref_init ( & plane_state -> refcount ) ; dc_plane_construct ( dc -> ctx , plane_state ) ; return plane_state ; } 

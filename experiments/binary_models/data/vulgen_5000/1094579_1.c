@@ -1,0 +1,1 @@
+MODULE_LICENSE ( "GPL" ) ; MODULE_FIRMWARE ( "isl3886pci" ) ; static const struct pci_device_id p54p_table [ ] { { PCI_DEVICE ( 0x1260 , 0x3890 ) } { PCI_DEVICE ( 0x10b7 , 0x6001 ) } { PCI_DEVICE ( 0x1260 , 0x3877 ) } { PCI_DEVICE ( 0x1260 , 0x3886 ) } { PCI_DEVICE ( 0x1260 , 0xffff ) } { } } ; ; 

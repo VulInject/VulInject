@@ -1,1 +1,0 @@
-void HTList_delete ( HTList * me ) { HTList * current ; while ( ( current = me ) ) { me = me -> next ; } return ; } 

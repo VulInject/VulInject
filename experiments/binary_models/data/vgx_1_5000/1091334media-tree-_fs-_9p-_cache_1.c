@@ -1,0 +1,1 @@
+void v9fs_cache_session_put_cookie ( struct v9fs_session_info * v9ses ) { p9_debug ( P9_DEBUG_FSC , "session %p put cookie %p\n" , v9ses , v9ses -> fscache ) ; fscache_relinquish_cookie ( v9ses -> fscache , 0 ) ; } 

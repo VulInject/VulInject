@@ -1,0 +1,1 @@
+static int stderr_setup ( char * str ) { use_stderr_console = simple_strtoul ( str , & str , 0 ) ; return 1 ; } 

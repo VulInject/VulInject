@@ -1,0 +1,1 @@
+token_t * au_set ( cp , size ) caddr_t cp ; uint_t size ; { au_buff_t * head ; au_buff_t * tail ; au_buff_t * m ; uint_t l ; head = NULL ; tail = NULL ; while ( size ) { m = au_get_buff ( ) ; l = MIN ( size , AU_BUFSIZE ) ; m -> len = l ; if ( head ) { tail -> next_buf = m ; } else { head = m ; } tail = m ; size -= l ; cp += l ; } return ( head ) ; } 

@@ -1,0 +1,1 @@
+static int input_file_get ( char * , int ) int preprocess = 0 ; static FILE * f_in ; static char * file_name ; saved_file { FILE * f_in ; char * file_name ; int preprocess ; char * app_save ; } void input_file_begin ( void ) { } 

@@ -1,1 +1,0 @@
-bool vsp1_pipeline_stopped ( struct vsp1_pipeline * pipe ) { unsigned long flags ; bool stopped ; spin_lock_irqsave ( & pipe -> irqlock , flags ) ; spin_unlock_irqrestore ( & pipe -> irqlock , flags ) ; return stopped ; } 

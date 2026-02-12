@@ -1,0 +1,1 @@
+const char * h2_var_lookup ( apr_pool_t * p , server_rec * s , conn_rec * c , request_rec * r , h2_conn_ctx_t * ctx ) h2_var_def { const char * name ; h2_var_lookup * lookup ; int subprocess 1 ; } h2_var_def 

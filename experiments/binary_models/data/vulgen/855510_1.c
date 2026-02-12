@@ -1,1 +1,0 @@
-int radare_plugin = { . type = 1 . data = & mystuff . version = R2_VERSION } ; 

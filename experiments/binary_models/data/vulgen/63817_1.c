@@ -1,1 +1,0 @@
-NCURSES_EXPORT ( ) notimeout ( , ) { T ( ( T_CALLED ( "notimeout(%p,%d)" ) , win , f ) ) ; if ( win ) { win -> _notimeout = f ; returnCode ( OK ) ; } else { returnCode ( 0 ) ; } } 

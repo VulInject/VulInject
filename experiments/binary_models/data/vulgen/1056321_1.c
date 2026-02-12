@@ -1,1 +1,0 @@
-path_info { struct list_head list ; unsigned int repeat_count ; } 

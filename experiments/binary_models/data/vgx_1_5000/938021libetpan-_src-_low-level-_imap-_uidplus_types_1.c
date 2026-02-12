@@ -1,0 +1,1 @@
+void mailimap_uidplus_resp_code_copy_free ( struct mailimap_uidplus_resp_code_copy * resp_code_copy ) { if ( resp_code_copy -> uid_dest_set != NULL ) { mailimap_set_free ( resp_code_copy -> uid_dest_set ) ; } if ( resp_code_copy -> uid_source_set != NULL ) { mailimap_set_free ( resp_code_copy -> uid_source_set ) ; } } 

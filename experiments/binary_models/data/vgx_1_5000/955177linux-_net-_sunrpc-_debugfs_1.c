@@ -1,0 +1,1 @@
+static void * tasks_next ( struct seq_file * f , void * v , loff_t * pos ) { struct rpc_clnt * clnt = f -> private ; struct rpc_task * task = v ; struct list_head * next = task -> tk_task . next ; ++ * pos ; if ( next == & clnt -> cl_tasks ) { return in ; } return list_entry ( next , rpc_task , tk_task ) ; } 

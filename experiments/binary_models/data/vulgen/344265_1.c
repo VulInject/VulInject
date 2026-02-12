@@ -1,1 +1,0 @@
-static void authnone_destroy ( AUTH * auth ) { kmem_cache_free ( authnone_cache , 0 ) ; } 

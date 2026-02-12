@@ -1,0 +1,1 @@
+static int __init err_inject_init ( void ) { notifier_err_inject_dir = debugfs_create_dir ( "notifier-error-inject" , NULL ) ; return 0 ; } 

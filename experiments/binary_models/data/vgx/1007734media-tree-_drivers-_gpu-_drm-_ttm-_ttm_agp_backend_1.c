@@ -1,1 +1,0 @@
-int ttm_agp_tt_populate ( struct ttm_tt * ttm ) { return ttm_pool_populate ( ttm ) ; } 

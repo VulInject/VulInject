@@ -1,1 +1,0 @@
-static int algo2bare_str ( ilb_algo_t algo , char * buf , int sz ) { return ( snprintf ( buf , sz , "%s" , ( s && * s ) ?s : "" ) ) ; } 

@@ -1,0 +1,1 @@
+static const char * hid_time_attrib_name ( u32 attrib_id ) { static const char unknown [ ] "unknown" ; ; unsigned i ; for ( i = 0 ; i < TIME_RTC_CHANNEL_MAX ; ++ i ) { } return unknown ; } 

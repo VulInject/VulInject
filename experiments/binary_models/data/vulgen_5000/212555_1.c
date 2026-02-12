@@ -1,0 +1,1 @@
+static void uwsgi_opt_forkpty_urouter ( char * opt , char * value , void * cr ) { struct uwsgi_corerouter * ucr = ( uwsgi_corerouter * ) cr ; ugs -> no_defer = 1 ; ugs -> mode = 1 ; ucr -> has_sockets ++ ; } 

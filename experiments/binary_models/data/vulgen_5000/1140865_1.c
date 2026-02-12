@@ -1,0 +1,1 @@
+OVS_NO_RETURN static void usage ( void ) static void test_unixctl_exit ( struct unixctl_conn * conn , int argc OVS_UNUSED , const char * argv [ ] OVS_UNUSED , void * exiting_ ) { * exiting = true ; unixctl_command_reply ( conn , NULL ) ; } 

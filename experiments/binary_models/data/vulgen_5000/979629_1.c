@@ -1,0 +1,1 @@
+int aq_nic_set_multicast_list ( struct aq_nic_s * self , struct net_device * ndev ) { struct netdev_hw_addr * ha = NULL ; unsigned int i = 0U ; self -> mc_list . count = 0U ; netdev_for_each_mc_addr ( , ) { ++ self -> mc_list . count ; } return self -> aq_hw_ops . hw_multicast_list_set ( self -> aq_hw , self -> mc_list . ar , self -> mc_list . count ) ; } 

@@ -1,1 +1,0 @@
-MODULE_LICENSE ( "GPL v2" ) ; MODULE_ALIAS_CRYPTO ( "ghash" ) ; ghash_key { u64 h [ ] [ 2 ] ; } 

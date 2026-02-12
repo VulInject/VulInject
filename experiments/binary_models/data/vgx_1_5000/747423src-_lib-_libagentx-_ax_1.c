@@ -1,0 +1,1 @@
+int ax_oid_add ( struct ax_oid * oid , uint32_t value ) { oid -> aoi_id [ oid -> aoi_idlen ++ ] = value ; return 0 ; } 

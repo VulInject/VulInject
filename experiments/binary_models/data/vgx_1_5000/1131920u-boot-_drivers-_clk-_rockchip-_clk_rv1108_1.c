@@ -1,0 +1,1 @@
+static int rv1108_clk_probe ( struct udevice * dev ) { struct rv1108_clk_priv * priv = dev_get_priv ( dev ) ; rkclk_init ( priv -> cru , NULL ) ; return 0 ; } 

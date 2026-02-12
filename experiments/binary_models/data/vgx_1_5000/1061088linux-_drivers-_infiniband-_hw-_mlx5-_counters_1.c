@@ -1,0 +1,1 @@
+static int mlx5_ib_destroy_counters ( struct ib_counters * counters ) { struct mlx5_ib_mcounters * mcounters = to_mcounters ( counters ) ; if ( mcounters -> hw_cntrs_hndl ) { mlx5_fc_destroy ( to_mdev ( counters -> device ) -> mdev , mcounters -> hw_cntrs_hndl ) ; } return 0 ; } 

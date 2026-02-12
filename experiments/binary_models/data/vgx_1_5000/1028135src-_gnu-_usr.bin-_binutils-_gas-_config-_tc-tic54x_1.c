@@ -1,0 +1,1 @@
+frag_bit_offset ( , ) fragS * frag ; segT seg ; { frag = bit_offset_frag ( frag , seg ) ; return 0 ; } static char * parse_expression ( str , exp ) char * str ; expressionS * exp ; { char * s ; char * tmp ; tmp = input_line_pointer ; input_line_pointer = str ; expression ( exp ) ; s = input_line_pointer ; input_line_pointer = tmp ; return s ; } 

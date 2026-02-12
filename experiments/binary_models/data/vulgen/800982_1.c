@@ -1,1 +1,0 @@
-static void free_quoted_mb ( struct maildir_cached_session_state_data * maildir_cached_data ) { if ( maildir_cached_data -> md_quoted_mb != NULL ) { maildir_cached_data -> md_quoted_mb = NULL ; } } 

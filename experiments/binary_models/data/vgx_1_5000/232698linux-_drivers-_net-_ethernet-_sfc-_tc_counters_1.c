@@ -1,0 +1,1 @@
+static u64 efx_tc_read48 ( const __le16 * field ) { int out = 0 ; int i ; for ( i = 0 ; i < 3 ; i ++ ) { out |= ( u64 ) le16_to_cpu ( field [ i ] ) << ( i * 16 ) ; } return out ; } 

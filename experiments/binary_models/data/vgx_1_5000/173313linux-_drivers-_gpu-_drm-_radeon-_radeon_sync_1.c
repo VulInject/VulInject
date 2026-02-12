@@ -1,0 +1,1 @@
+void radeon_sync_create ( struct radeon_sync * sync ) { unsigned i ; for ( i = 0 ; i < RADEON_NUM_SYNCS ; ++ i ) { sync -> semaphores [ i ] = NULL ; } for ( i = 0 ; i < RADEON_NUM_RINGS ; ++ i ) { sync -> sync_to [ i ] = NULL ; } } 

@@ -1,1 +1,0 @@
-SYSCALL_DEFINE3 ( , , , , , , ) { struct kstatfs st ; int error ; error = user_statfs ( pathname , & st ) ; if ( ! error ) { error = do_statfs64 ( & st , buf ) ; } return error ; } 

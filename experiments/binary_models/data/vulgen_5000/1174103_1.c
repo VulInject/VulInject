@@ -1,0 +1,1 @@
+static void mac_hid_emumouse_disconnect ( struct input_handle * handle ) { input_close_device ( handle ) ; input_unregister_handle ( handle ) ; } static const struct input_device_id mac_hid_emumouse_ids [ ] { { . flags = INPUT_DEVICE_ID_MATCH_EVBIT . evbit = { BIT_MASK ( ) } } { } } ; ; 

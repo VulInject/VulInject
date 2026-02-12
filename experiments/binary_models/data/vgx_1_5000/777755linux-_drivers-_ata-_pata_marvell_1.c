@@ -1,0 +1,1 @@
+MODULE_DEVICE_TABLE ( pci , marvell_pci_tbl ) ; MODULE_VERSION ( DRV_VERSION , NULL ) ; 

@@ -1,0 +1,1 @@
+IMAGE * vips__deprecated_open_write ( const char * filename ) { VipsFormatClass * format ; if ( ! ( format = vips_format_for_name ( filename ) ) ) { return ( NULL ) ; } if ( vips_format_is_vips ( format ) ) { return ( vips_image_new_mode ( filename , "w" ) ) ; } else { IMAGE * image ; vips_attach_save ( image , format -> save , filename ) ; return ( image ) ; } } 

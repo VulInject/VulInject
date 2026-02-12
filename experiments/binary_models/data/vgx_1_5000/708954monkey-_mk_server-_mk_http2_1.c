@@ -1,0 +1,1 @@
+static struct mk_http2_session * mk_http2_session_create ( ) { struct mk_http2_session * h2s ; h2s = mk_mem_alloc ( sizeof ( mk_http2_session ) ) ; if ( ! h2s ) { return in ; } h2s -> buffer = NULL ; h2s -> buffer_length = 0 ; h2s -> buffer_size = sizeof ( h2s -> buffer_fixed ) ; h2s -> buffer = h2s -> buffer_fixed ; h2s -> settings = MK_HTTP2_SETTINGS_DEFAULT ; return h2s ; } 

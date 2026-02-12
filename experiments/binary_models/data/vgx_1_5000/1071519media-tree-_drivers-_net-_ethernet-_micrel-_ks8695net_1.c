@@ -1,0 +1,1 @@
+static int ks8695_drv_remove ( struct platform_device * pdev ) { struct net_device * ndev = platform_get_drvdata ( pdev ) ; struct ks8695_priv * ksp = netdev_priv ( ndev ) ; netif_napi_del ( & ksp -> napi ) ; unregister_netdev ( ndev ) ; ks8695_release_device ( ksp ) ; dev_dbg ( & pdev -> dev , "released and freed device\n" ) ; return 0 ; } 

@@ -1,1 +1,0 @@
-void tty_add_file ( struct tty_struct * tty , struct file * file ) { priv -> tty = tty ; priv -> file = file ; spin_lock ( & tty -> files_lock ) ; list_add ( & priv -> list , & tty -> tty_files ) ; spin_unlock ( & tty -> files_lock ) ; } 

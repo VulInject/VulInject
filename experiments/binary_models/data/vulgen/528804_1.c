@@ -1,1 +1,0 @@
-static void mod_init ( struct module * const restrict m ) { use_groupserv_main_symbols ( m ) ; use_groupserv_set_symbols ( m ) ; } 

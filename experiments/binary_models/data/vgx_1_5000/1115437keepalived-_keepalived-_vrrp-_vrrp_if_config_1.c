@@ -1,0 +1,1 @@
+static inline void set_promote_secondaries_devconf ( interface_t * ifp ) { sysctl_opts_t promote_secondaries_sysctl [ ] { { IPV4_DEVCONF_PROMOTE_SECONDARIES 1 } { 0 0 } } ; ; netlink_set_interface_flags ( ifp -> ifindex , promote_secondaries_sysctl ) ; } 

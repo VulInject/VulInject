@@ -1,0 +1,1 @@
+static int my_strlen ( const char * s ) static char * my_index ( const char * str , int chr ) extern char * getenv ( ) static int my_strlen ( const char * str ) { int n ; while ( * str ++ ) { n ++ ; } return n ; } 

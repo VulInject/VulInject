@@ -1,0 +1,1 @@
+static inline ovs_be32 minimatch_get_ports ( const struct minimatch * match ) { return ( miniflow_get_ports ( match -> flow ) & miniflow_get_ports ( ) ) ; } 

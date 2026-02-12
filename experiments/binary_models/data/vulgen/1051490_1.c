@@ -1,1 +1,0 @@
-emac_reg_write { unsigned int offset ; int val ; } 

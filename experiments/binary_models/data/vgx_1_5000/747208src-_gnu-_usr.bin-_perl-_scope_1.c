@@ -1,0 +1,1 @@
+void Perl_save_int ( pTHX_ int * intp ) { const int i = * intp ; UV type = ( ( UV ) ( ( UV ) i << SAVE_TIGHT_SHIFT ) | SAVEt_INT_SMALL ) ; int size = 2 ; dSS_ADD ; PERL_ARGS_ASSERT_SAVE_INT ; if ( UNLIKELY ( ( int ) ( type >> SAVE_TIGHT_SHIFT ) != i ) ) { SS_ADD_INT ( i ) ; type = SAVEt_INT ; size ++ ; } SS_ADD_PTR ( intp ) ; SS_ADD_UV ( type , NULL ) ; SS_ADD_END ( size ) ; } 

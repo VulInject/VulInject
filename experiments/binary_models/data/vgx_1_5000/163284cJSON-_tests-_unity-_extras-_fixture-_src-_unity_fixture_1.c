@@ -1,0 +1,1 @@
+static void announceTestRun ( unsigned int runNumber ) { UnityPrint ( "Unity test run " ) ; UnityPrintNumberUnsigned ( runNumber + 1 ) ; UnityPrint ( " of " ) ; UnityPrintNumberUnsigned ( UnityFixture . RepeatCount , NULL ) ; UNITY_PRINT_EOL ( ) ; } 

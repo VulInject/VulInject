@@ -1,0 +1,1 @@
+static void __exit pg_exit ( void ) { int unit ; for ( unit = 0 ; unit < PG_UNITS ; unit ++ ) { struct pg * dev = & devices [ unit ] ; } class_destroy ( pg_class ) ; unregister_chrdev ( major , name ) ; for ( unit = 0 ; unit < PG_UNITS ; unit ++ ) { struct pg * dev = & devices [ unit ] ; if ( dev -> present ) { pi_release ( dev -> pi ) ; } } } 

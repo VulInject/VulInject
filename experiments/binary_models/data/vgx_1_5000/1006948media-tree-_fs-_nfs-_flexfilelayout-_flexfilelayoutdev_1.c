@@ -1,0 +1,1 @@
+void nfs4_ff_layout_free_deviceid ( struct nfs4_ff_layout_ds * mirror_ds ) { nfs4_print_deviceid ( & mirror_ds -> id_node . deviceid ) ; nfs4_pnfs_ds_put ( mirror_ds -> ds , NULL ) ; kfree_rcu ( mirror_ds , id_node . rcu ) ; } 

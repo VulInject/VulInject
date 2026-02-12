@@ -1,0 +1,1 @@
+void _zip_dirent_free ( struct zip_dirent * zde ) { if ( zde == NULL ) { return ; } _zip_dirent_finalize ( zde ) ; } 

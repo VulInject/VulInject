@@ -1,0 +1,1 @@
+cris_return_addr_rtx ( , ) int count ; rtx frameaddr ATTRIBUTE_UNUSED ; { return count == 0 ?gen_rtx_MEM ( Pmode , plus_constant ( virtual_incoming_args_rtx , - 4 ) ) : NULL_RTX ; } 

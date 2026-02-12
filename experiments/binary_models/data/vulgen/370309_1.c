@@ -1,1 +1,0 @@
-DSO_METHOD * DSO_METHOD_null ( int ) { return ( & dso_meth_null ) ; } 

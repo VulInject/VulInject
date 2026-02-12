@@ -1,0 +1,1 @@
+IP_SET_MODULE_DESC ( "hash:ip,mac" , IPSET_TYPE_REV_MIN , IPSET_TYPE_REV_MAX ) ; MODULE_ALIAS ( "ip_set_hash:ip,mac" ) ; hash_ipmac4_elem { __be32 ip ; { int ether [ ETH_ALEN ] ; __be32 foo [ 2 ] ; } } 

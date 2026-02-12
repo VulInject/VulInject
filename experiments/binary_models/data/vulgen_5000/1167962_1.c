@@ -1,0 +1,1 @@
+void imgu_css_pool_cleanup ( struct imgu_device * imgu , struct imgu_css_pool * pool ) { for ( i = 0 ; i < IPU3_CSS_POOL_SIZE ; i ++ ) { imgu_dmamap_free ( imgu , & pool -> entry [ i ] . param ) ; } } 

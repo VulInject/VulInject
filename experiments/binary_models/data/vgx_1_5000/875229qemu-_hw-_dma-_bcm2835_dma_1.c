@@ -1,0 +1,1 @@
+static void bcm2835_dma_chan_reset ( BCM2835DMAChan * ch ) { ch -> cs = 0 ; } 

@@ -1,1 +1,0 @@
-use_quote_double_quotes ( , ) { char * p = * len == SIZE_MAX ?quotearg_char ( str , '"' ) : quotearg_char_mem ( str , * len , '"' ) ; return p ; } 

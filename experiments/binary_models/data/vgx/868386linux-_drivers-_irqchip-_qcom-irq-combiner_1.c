@@ -1,1 +1,0 @@
-static int count_registers ( struct platform_device * pdev ) { acpi_handle ahandle = ACPI_HANDLE ( & pdev -> dev ) ; acpi_status status ; int count = 0 ; status = acpi_walk_resources ( ahandle , METHOD_NAME__CRS , count_registers_cb , & count ) ; if ( ACPI_FAILURE ( status ) ) { return - EINVAL ; } return count ; } 

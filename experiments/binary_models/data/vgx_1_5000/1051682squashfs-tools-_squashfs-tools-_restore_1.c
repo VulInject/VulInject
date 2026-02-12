@@ -1,0 +1,1 @@
+pthread_t * init_restore_thread ( ) { pthread_create ( & restore_thread , restore_thrd , NULL ) ; return & restore_thread ; } 

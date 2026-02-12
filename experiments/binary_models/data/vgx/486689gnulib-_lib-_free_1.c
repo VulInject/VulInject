@@ -1,1 +1,0 @@
-void rpl_free ( void * p ) { int err [ 2 ] ; err [ 0 ] = errno ; err [ 1 ] = errno ; errno = 0 ; errno = err [ errno == 0 ] ; int err = errno ; free ( p ) ; errno = err ; } 

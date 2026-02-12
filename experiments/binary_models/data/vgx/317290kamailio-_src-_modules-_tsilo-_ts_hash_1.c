@@ -1,1 +1,0 @@
-void free_ts_transaction ( void * ts_t ) { shm_free ( ( ts_transaction * ) ts_t ) ; } 

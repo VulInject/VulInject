@@ -1,0 +1,1 @@
+static void tb_dma_deinit ( struct tb_tunnel * tunnel ) { int i ; for ( i = 0 ; i < tunnel -> npaths ; i ++ ) { tb_dma_deinit_path ( tunnel -> paths [ i ] ) ; } } 

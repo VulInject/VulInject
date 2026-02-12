@@ -1,0 +1,1 @@
+void create_jid_from_empty_string_returns_null ( void * * state ) { assert_null ( result ) ; } 

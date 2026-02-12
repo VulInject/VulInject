@@ -1,1 +1,0 @@
-_IO_wmarker_delta ( ) struct _IO_marker * mark ; { int cur_pos ; if ( _IO_in_backup ( mark -> _sbuf ) ) { cur_pos = ( mark -> _sbuf -> _wide_data -> _IO_read_ptr - mark -> _sbuf -> _wide_data -> _IO_read_end ) ; } else { cur_pos = ( mark -> _sbuf -> _wide_data -> _IO_read_ptr - mark -> _sbuf -> _wide_data -> _IO_read_base ) ; } return mark -> _pos - cur_pos ; } 

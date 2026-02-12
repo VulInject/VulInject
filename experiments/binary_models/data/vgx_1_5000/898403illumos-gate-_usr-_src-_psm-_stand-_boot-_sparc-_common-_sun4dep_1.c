@@ -1,0 +1,1 @@
+int pagesize = PAGESIZE ; void fiximp ( void ) { extern int use_align ; } 

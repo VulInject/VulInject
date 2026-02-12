@@ -1,0 +1,1 @@
+static void * count_non_bridge_devices ( struct device_node * dn , void * data ) { struct msi_counts * counts = data ; const __be32 * p ; u32 class pr_debug , dn ; class = p ?be32_to_cpup ( p ) : 0 ; if ( ( class >> 8 ) != PCI_CLASS_BRIDGE_PCI ) { counts -> num_devices ++ ; } return NULL ; } 

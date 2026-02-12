@@ -1,1 +1,0 @@
-DEF_STD ( cacosh ) ; LDBL_MAYBE_UNUSED_CLONE ( cacosh , NULL ) ; 

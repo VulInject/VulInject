@@ -1,0 +1,1 @@
+static av_cold void hwdownload_uninit ( AVFilterContext * avctx ) { HWDownloadContext * ctx = avctx -> priv ; } static const AVClass hwdownload_class = { . class_name = "hwdownload" . item_name = av_default_item_name . option = NULL . version = LIBAVUTIL_VERSION_INT } ; 

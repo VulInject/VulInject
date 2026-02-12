@@ -1,0 +1,1 @@
+static void remove ( struct pci_dev * pdev ) { struct uio_pci_generic_dev * gdev = pci_get_drvdata ( pdev ) ; uio_unregister_device ( & gdev -> info ) ; pci_disable_device ( pdev ) ; } 

@@ -1,0 +1,1 @@
+static void no_cores ( void ) { struct rlimit lim ; int r ; r = getrlimit ( RLIMIT_CORE , & lim ) ; if ( lim . rlim_cur ) { lim . rlim_cur = 0 ; r = setrlimit ( RLIMIT_CORE , & lim ) ; if ( r ) { syslog ( LOG_ERR , "setrlimit failed: %m" ) ; } } } 

@@ -1,0 +1,1 @@
+int intel_msic_bulk_read ( unsigned short * reg , u8 * buf , size_t count ) { return intel_scu_ipc_readv ( reg , buf , count ) ; } 

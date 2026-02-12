@@ -1,0 +1,1 @@
+print_libsndfile_version ( ) { char version [ 64 ] ; sf_command ( SFC_GET_LIB_VERSION , version , sizeof ( version ) ) ; printf ( "\nsndfile-regtest : using %s\n\n" , version ) ; } 

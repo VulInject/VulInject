@@ -1,0 +1,1 @@
+static void mov_text_style_set ( MovTextContext * s , uint8_t style_flags ) { if ( mov_text_style_start ( s ) ) { s -> style_attributes_temp . style_flag |= style_flags ; } } 

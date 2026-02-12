@@ -1,1 +1,0 @@
-static unsigned int dummy_get_ep_idx ( const struct usb_endpoint_descriptor * desc ) { unsigned int index ; index = usb_endpoint_num ( desc ) << 1 ; return index ; } 

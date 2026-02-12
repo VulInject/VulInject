@@ -1,1 +1,0 @@
-static void audit_free_parent ( struct audit_parent * parent ) { WARN_ON ( ! list_empty ( & parent -> watches ) ) ; } 

@@ -1,0 +1,1 @@
+int keycode_is_keypad ( kbd_layout_t * k , int keycode ) { return false ; } 

@@ -1,0 +1,1 @@
+void nf_ct_deliver_cached_events ( struct nf_conn * ct ) { struct nf_conntrack_ecache * e ; struct nf_ct_event item ; unsigned int events ; e = nf_ct_ecache_find ( ct ) ; if ( e == NULL ) { return ; } events = xchg ( & e -> cache , 0 ) ; item . ct = ct ; item . portid = 0 ; item . report = 0 ; __nf_conntrack_eventmask_report ( e , events , e -> missed , & item ) ; } 

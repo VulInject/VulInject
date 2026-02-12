@@ -1,0 +1,1 @@
+int ieee802154_llsec_add_seclevel ( struct sk_buff * skb , struct genl_info * info ) { return ieee802154_nl_llsec_change ( skb , info , llsec_add_seclevel ) ; } 

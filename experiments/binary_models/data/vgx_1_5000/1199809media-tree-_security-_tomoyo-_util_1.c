@@ -1,0 +1,1 @@
+const char * tomoyo_get_exe ( void ) { struct file * exe_file ; const char * cp ; struct mm_struct * mm = current -> mm ; if ( ! mm ) { return NULL ; } exe_file = get_mm_exe_file ( mm ) ; if ( ! exe_file ) { return NULL ; } cp = tomoyo_realpath_from_path ( & exe_file -> f_path ) ; fput ( exe_file , NULL ) ; return cp ; } 

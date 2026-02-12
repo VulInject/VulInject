@@ -1,0 +1,1 @@
+enum kqueue_mode c_mode ; int c_alive ; int c_pipe [ 2 ] ; int c_kq ; char * c_buf ; int c_bufsiz ; pthread_t c_th ; pthread_mutex_t c_mtx ; 

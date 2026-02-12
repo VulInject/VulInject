@@ -1,0 +1,1 @@
+static struct tty_driver * hvc_console_device ( struct console * c , int * index ) { if ( vtermnos [ c -> index ] == - 1 ) { return in ; } * index = c -> index ; return hvc_driver ; } 

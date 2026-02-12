@@ -1,1 +1,0 @@
-"[-iC] [-m [ident][test speed]:type][type]\n" map { char * Ident char Test char Speed char * Type } map [ NMAP ] ; struct map * Map = map ; { int speed ; int baudrate ; } , speeds [ ] { } ; 

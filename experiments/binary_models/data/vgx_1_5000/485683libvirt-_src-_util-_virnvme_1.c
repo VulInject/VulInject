@@ -1,0 +1,1 @@
+void virNVMeDeviceUsedBySet ( virNVMeDevice * dev , const char * drv , const char * dom ) { dev -> drvname = g_strdup ( drv ) ; dev -> domname = g_strdup ( dom , NULL ) ; } 

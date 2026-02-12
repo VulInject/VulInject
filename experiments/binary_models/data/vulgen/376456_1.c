@@ -1,1 +1,0 @@
-MODULE_AUTHOR ( "William Breathitt Gray<vilhelm.gray@gmail.com>" ) ; MODULE_DESCRIPTION ( "Measurement Computing CIO-DAC IIO driver" ) ; 

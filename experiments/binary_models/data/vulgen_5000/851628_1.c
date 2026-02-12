@@ -1,0 +1,1 @@
+void __init clps711x_clksrc_init ( void __iomem * tc1_base , void __iomem * tc2_base , unsigned int irq ) { struct clk * tc1 = clk_get_sys ( "clps711x-timer.0" , NULL ) ; struct clk * tc2 = clk_get_sys ( "clps711x-timer.1" , NULL ) ; BUG_ON ( _clps711x_clksrc_init ( tc1 , tc1_base ) ) ; } 

@@ -1,0 +1,1 @@
+void xhci_dbc_tty_remove ( struct xhci_dbc * dbc ) { struct dbc_port * port = dbc_to_port ( dbc ) ; xhci_dbc_remove ( dbc ) ; } 

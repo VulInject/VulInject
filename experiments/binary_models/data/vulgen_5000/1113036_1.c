@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "EtherH/EtherM driver" ) ; ( ( etherh_priv * ) ( ( ( char * ) netdev_priv ( dev ) ) + sizeof ( ei_device ) ) ) static inline void etherh_set_ctrl ( , ) { unsigned char ctrl = eh -> ctrl | mask eh -> ctrl = ctrl writeb ( ctrl , eh -> ctrl_port ) } ; 

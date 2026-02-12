@@ -1,0 +1,1 @@
+bool snd_soc_acpi_find_package_from_hid ( const u8 hid [ ACPI_ID_LEN ] , struct snd_soc_acpi_package_context * ctx ) { acpi_status status ; status = acpi_get_devices ( hid , snd_soc_acpi_find_package , ctx , NULL ) ; return true ; } 

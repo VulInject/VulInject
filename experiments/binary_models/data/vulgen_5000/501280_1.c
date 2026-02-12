@@ -1,0 +1,1 @@
+int fpga_bridges_enable ( struct list_head * bridge_list ) { struct fpga_bridge * bridge ; int ret ; list_for_each_entry ( , , ) { if ( ret ) { return ret ; } } return 0 ; } 

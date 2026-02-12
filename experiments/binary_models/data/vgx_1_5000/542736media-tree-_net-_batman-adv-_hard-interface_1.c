@@ -1,0 +1,1 @@
+void batadv_hardif_release ( struct kref * ref ) { struct batadv_hard_iface * hard_iface ; hard_iface = container_of ( ref , batadv_hard_iface , refcount ) ; dev_put ( hard_iface -> net_dev , NULL ) ; kfree_rcu ( hard_iface , rcu ) ; } 

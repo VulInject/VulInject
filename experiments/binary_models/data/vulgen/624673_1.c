@@ -1,1 +1,0 @@
-void __db_tlbdump_pfn ( uint32_t r ) { db_printf ( " 0x%08x %d" , pa , ( pa >> 26 ) & 7 ) ; } 

@@ -1,0 +1,1 @@
+int vfio_device_group_use_iommu ( struct vfio_device * device ) { struct vfio_group * group = device -> group ; int ret = 0 ; lockdep_assert_held ( & group -> group_lock ) ; if ( WARN_ON ( ! group -> container ) ) { return - EINVAL ; } ret = vfio_group_use_container ( group ) ; if ( ret ) { return ret ; } vfio_device_container_register ( device , NULL ) ; return 0 ; } 

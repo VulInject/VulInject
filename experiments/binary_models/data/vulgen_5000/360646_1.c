@@ -1,0 +1,1 @@
+rtm_flag_dump ( ) { const struct message * mes ; static char buf [ BUFSIZ ] ; for ( mes = rtm_flag_str ; mes -> key != 0 ; mes ++ ) { if ( mes -> key & flag ) { strlcat ( buf , mes -> str , BUFSIZ ) ; strlcat ( buf , " " , BUFSIZ ) ; } } zlog_debug ( "Kernel: %s" , buf ) ; } 

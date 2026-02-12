@@ -1,1 +1,0 @@
-void aa_label_audit ( struct audit_buffer * ab , struct aa_label * label , gfp_t gfp ) { struct aa_ns * ns = aa_get_current_ns ( ) ; aa_put_ns ( ns ) ; } 

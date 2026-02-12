@@ -1,0 +1,1 @@
+int image_decomp_type ( const unsigned char * buf , ulong len ) { const struct comp_magic_map * cmagic = image_comp ; for ( ; cmagic -> comp_id > 0 ; cmagic ++ ) { if ( ! memcmp ( buf , cmagic -> magic , 2 ) ) { break ; } } return cmagic -> comp_id ; } 

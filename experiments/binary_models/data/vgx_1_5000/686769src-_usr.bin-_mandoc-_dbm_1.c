@@ -1,0 +1,1 @@
+void dbm_page_byname ( const struct dbm_match * match ) { page_bytitle ( ITER_NAME , match ) ; } 

@@ -1,0 +1,1 @@
+static int append_insn ( struct bpf_insn new_insn , struct bpf_insn_pos * pos ) { if ( pos -> pos + 1 >= pos -> end ) { pr_err ( "bpf prologue: prologue too long\n" ) ; pos -> pos = NULL ; return - BPF_LOADER_ERRNO__PROLOGUE2BIG ; } * ( pos -> pos ) ++ = new_insn ; return 0 ; } 

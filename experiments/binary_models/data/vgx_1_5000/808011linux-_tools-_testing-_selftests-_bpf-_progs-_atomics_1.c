@@ -1,0 +1,1 @@
+int and ( const void * ctx ) { and64_result = __sync_fetch_and_and ( & and64_value , 0x011ull << 32 ) } ; and32_result = __sync_fetch_and_and ( & and32_value , 0x011 ) ; __sync_fetch_and_and ( & and_noreturn_value , 0x011ull << 32 ) ; return 0 ; 

@@ -1,0 +1,1 @@
+static int decoder_start ( Decoder * d , int * fn ( void * ) , const char * thread_name , void * arg ) { packet_queue_start ( d -> queue ) ; if ( ! d -> decoder_tid ) { av_log ( NULL , AV_LOG_ERROR , "SDL_CreateThread(): %s\n" , SDL_GetError ( ) ) ; return AVERROR ( ENOMEM ) ; } return 0 ; } 

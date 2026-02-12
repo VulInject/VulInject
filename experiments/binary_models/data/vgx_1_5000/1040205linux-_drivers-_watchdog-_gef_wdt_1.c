@@ -1,0 +1,1 @@
+static int gef_wdt_remove ( struct platform_device * dev ) { misc_deregister ( & gef_wdt_miscdev ) ; gef_wdt_handler_disable ( ) ; iounmap ( gef_wdt_regs , NULL ) ; return 0 ; } 

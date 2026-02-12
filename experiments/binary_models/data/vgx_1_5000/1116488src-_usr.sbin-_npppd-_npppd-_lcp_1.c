@@ -1,0 +1,1 @@
+static int lcp_rechoreq ( fsm * f , int id , u_char * inp , int inlen ) { u_char * inp0 ; lcp * _this ; int len ; _this = & f -> ppp -> lcp ; inp0 = inp ; PUTLONG ( , ) len = MINIMUM ( inlen , f -> ppp -> peer_mru - 8 ) ; fsm_sdata ( f , ECHOREP , id , inp0 , len ) ; return 1 ; } 

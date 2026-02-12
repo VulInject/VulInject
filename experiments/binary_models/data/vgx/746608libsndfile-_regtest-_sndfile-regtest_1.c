@@ -1,1 +1,0 @@
-FUN1 ( ) { char VAR1 [ 64 ] ; FUN2 ( VAR2 , VAR1 , sizeof ( VAR1 ) ) ; FUN3 ( "" , VAR1 ) ; }

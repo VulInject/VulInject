@@ -1,1 +1,0 @@
-static void FUN1 ( void * * VAR1 ) { FUN2 ( VAR1 ) ; bool VAR2 = FUN3 ( NULL , NULL ) ; }

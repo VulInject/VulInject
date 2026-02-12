@@ -1,1 +1,0 @@
-static unsigned long getDebugLevel ( const char * variableName , unsigned long defaultDebugLevel ) 

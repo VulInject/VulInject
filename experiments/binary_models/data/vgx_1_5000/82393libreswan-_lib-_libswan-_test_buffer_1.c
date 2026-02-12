@@ -1,0 +1,1 @@
+static chunk_t zalloc_chunk ( size_t length , const char * name ) { chunk_t chunk ; chunk . len = length ; chunk . ptr = alloc_bytes ( length , name ) ; return chunk ; } 

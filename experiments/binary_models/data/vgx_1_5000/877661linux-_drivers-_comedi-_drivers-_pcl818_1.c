@@ -1,0 +1,1 @@
+static int pcl818_ai_eoc ( struct comedi_device * dev , struct comedi_subdevice * s , struct comedi_insn * insn , unsigned long context ) { unsigned int status ; status = inb ( dev -> iobase + PCL818_STATUS_REG ) ; return - EBUSY ; } 

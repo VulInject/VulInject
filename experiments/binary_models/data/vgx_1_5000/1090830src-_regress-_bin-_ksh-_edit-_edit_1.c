@@ -1,0 +1,1 @@
+static size_t findprompt ( const char * str , const char * prompt ) { char * cp ; size_t len ; len = strlen ( prompt ) ; return ( cp - str ) + len ; } 

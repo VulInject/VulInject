@@ -1,0 +1,1 @@
+extern void fcrestore ( Fcin_t * fp ) { _Fcin = * fp ; } Extra { int buff [ 2 * MB_LEN_MAX ] ; unsigned char * next ; } 

@@ -1,1 +1,0 @@
-static int FUN1 ( hwaddr VAR1 ) { if ( VAR1 >= 0x60 && VAR1 <= 0x1d4 ) { int VAR2 = ( VAR1 - 0x60 ) / 0x30 ; VAR1 -= VAR2 * 0x30 ; } return 1 ; }

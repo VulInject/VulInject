@@ -1,0 +1,1 @@
+static int nr_open ( struct net_device * dev ) { int err ; err = ax25_listen_register ( ( const ax25_address * ) dev -> dev_addr , NULL ) ; if ( err ) { return err ; } netif_start_queue ( dev , NULL ) ; return 0 ; } 

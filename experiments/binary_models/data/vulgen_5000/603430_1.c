@@ -1,0 +1,1 @@
+static inline void irqenable_rx ( struct v4l2_subdev * sd , u32 mask ) { struct cx25840_state * state = to_state ( sd ) ; mask &= ( IRQEN_RTE | IRQEN_ROE | IRQEN_RSE ) ; cx25840_and_or4 ( state -> c , CX25840_IR_IRQEN_REG , ~ ( IRQEN_RTE | IRQEN_ROE | IRQEN_RSE ) , mask ) ; } 

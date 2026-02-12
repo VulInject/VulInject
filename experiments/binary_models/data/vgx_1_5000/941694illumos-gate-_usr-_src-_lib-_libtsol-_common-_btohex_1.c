@@ -1,0 +1,1 @@
+void h_free ( char * hex ) { if ( hex == NULL ) { return ; } } 

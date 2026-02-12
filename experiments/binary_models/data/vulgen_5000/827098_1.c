@@ -1,0 +1,1 @@
+void test_mutt_grouplist_add_addrlist ( void ) { { struct AddressList addr = TAILQ_HEAD_INITIALIZER ( addr ) ; mutt_grouplist_add_addrlist ( NULL , & addr ) ; TEST_CHECK_ ( 1 , "mutt_grouplist_add_addrlist(NULL,&addr)" ) ; } { mutt_grouplist_add_addrlist ( & head , NULL ) ; TEST_CHECK_ ( 1 , "mutt_grouplist_add_addrlist(&head, NULL)" ) ; } } 

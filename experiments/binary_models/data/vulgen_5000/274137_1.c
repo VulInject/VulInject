@@ -1,0 +1,1 @@
+{ vli_type compressed ; vli_type uncompressed ; vli_type count ; struct xz_dec_hash hash ; } , block { { SEQ_INDEX_COUNT , SEQ_INDEX_UNPADDED , SEQ_INDEX_UNCOMPRESSED } , sequence vli_type size ; vli_type count ; struct xz_dec_hash hash ; } , index { size_t size ; uint8_t buf [ 1024 ] ; } , temp struct xz_dec_lzma2 * lzma2 ; struct xz_dec_bcj * bcj ; bool bcj_active ; 

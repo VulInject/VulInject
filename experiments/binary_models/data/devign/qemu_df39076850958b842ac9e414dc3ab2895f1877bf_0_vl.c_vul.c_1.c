@@ -1,1 +1,0 @@
-bool FUN1(void) { return FUN2(VAR1) || FUN2(VAR2) || FUN2(VAR3); }

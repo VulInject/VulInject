@@ -1,0 +1,1 @@
+static void nfs_free_unlinkdata ( struct nfs_unlinkdata * data ) { put_cred ( data -> cred ) ; kfree ( data -> args . name . name ) ; } 

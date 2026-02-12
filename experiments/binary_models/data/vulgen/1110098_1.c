@@ -1,1 +1,0 @@
-static int ads117x_remove ( struct platform_device * pdev ) { return 0 ; } 

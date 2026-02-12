@@ -1,0 +1,1 @@
+ds278x_info { struct i2c_client * client ; struct power_supply * battery ; struct power_supply_desc battery_desc ; const struct ds278x_battery_ops * ops ; struct delayed_work bat_work ; int id ; int rsns ; int capacity ; int status ; } 

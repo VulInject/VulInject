@@ -1,0 +1,1 @@
+static int ms5611_reset ( struct iio_dev * indio_dev ) { int ret ; struct ms5611_state * st = iio_priv ( indio_dev ) ; ret = st -> reset ( st , NULL ) ; if ( ret < 0 ) { dev_err ( & indio_dev -> dev , "failed to reset device\n" ) ; return ret ; } usleep_range ( 3000 , 4000 ) ; return 0 ; } 

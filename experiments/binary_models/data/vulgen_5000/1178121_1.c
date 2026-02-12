@@ -1,0 +1,1 @@
+static int rdtgroup_kn_set_ugid ( struct kernfs_node * kn ) { struct iattr iattr = { . ia_valid = ATTR_UID | ATTR_GID . ia_uid = current_fsuid ( ) . ia_gid = current_fsgid ( ) } ; return kernfs_setattr ( kn , & iattr ) ; } 

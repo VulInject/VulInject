@@ -1,0 +1,1 @@
+static void destroy_replay_list ( struct ubifs_info * c ) { struct replay_entry * r , * tmp ; list_for_each_entry_safe ( , , , ) { if ( is_hash_key ( c , & r -> key ) ) { kfree ( r -> nm . name ) ; } list_del ( & r -> list ) ; } } 

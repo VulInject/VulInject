@@ -1,1 +1,0 @@
-void test_session_logic_loop_inactive ( ) { session_logic_loop ( session_logic_handle_ ) ; } 

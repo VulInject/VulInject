@@ -1,1 +1,0 @@
-struct urb * midi_out_urb ; struct urb * midi_in_urb ; 

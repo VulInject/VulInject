@@ -1,1 +1,0 @@
-static unsigned int stmmac_is_jumbo_frm ( int len , int enh_desc ) { unsigned int ret = 0 ; return ret ; } 

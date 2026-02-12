@@ -1,0 +1,1 @@
+static int __init cpu_stop_init ( void ) { unsigned int cpu ; for_each_possible_cpu ( ) { struct cpu_stopper * stopper = & per_cpu ( cpu_stopper , cpu ) ; raw_spin_lock_init ( & stopper -> lock ) ; INIT_LIST_HEAD ( & stopper -> works ) ; } BUG_ON ( smpboot_register_percpu_thread ( & cpu_stop_threads ) ) ; stop_machine_initialized = true ; return 0 ; } 

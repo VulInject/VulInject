@@ -1,1 +1,0 @@
-DEFPY ( , , "no ipv6 pim [passive$passive]" , "Disable exchange of protocol packets\n" ) { return pim_process_no_ip_pim_cmd ( vty ) ; } 

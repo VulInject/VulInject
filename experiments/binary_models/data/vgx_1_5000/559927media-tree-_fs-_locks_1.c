@@ -1,0 +1,1 @@
+static int posix_locks_conflict ( struct file_lock * caller_fl , struct file_lock * sys_fl ) { if ( posix_same_owner ( caller_fl , sys_fl ) ) { return ( 0 ) ; } return ( locks_conflict ( caller_fl , sys_fl ) ) ; } 

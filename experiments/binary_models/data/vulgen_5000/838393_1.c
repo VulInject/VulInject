@@ -1,0 +1,1 @@
+static int usbpn_ioctl ( struct net_device * dev , struct ifreq * ifr , int cmd ) { struct if_phonet_req * req = ( if_phonet_req * ) ifr ; switch ( cmd ) { case SIOCPNGAUTOCONF : return 0 ; } return - ENOIOCTLCMD ; } static const struct net_device_ops usbpn_ops = { . ndo_open = usbpn_open . ndo_stop = usbpn_close . ndo_start_xmit = usbpn_xmit . ndo_do_ioctl = usbpn_ioctl } ; 

@@ -1,0 +1,1 @@
+static void __init imx6sl_init_machine ( void ) { struct device * parent ; parent = imx_soc_device_init ( ) ; if ( parent == NULL ) { pr_warn ( "failed to initialize soc device\n" ) ; } of_platform_default_populate ( NULL , parent ) ; imx6sl_fec_init ( ) ; imx_anatop_init ( ) ; imx6sl_pm_init ( ) ; } 

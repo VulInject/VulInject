@@ -1,0 +1,1 @@
+static void ctrlchar_handle_sysrq ( struct work_struct * work ) { struct sysrq_work * sysrq = container_of ( work , sysrq_work , work ) ; handle_sysrq ( sysrq -> key , NULL ) ; } 

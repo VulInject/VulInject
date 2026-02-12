@@ -1,0 +1,1 @@
+static void cmac_process ( void * vctx , const uint8_t * block ) { cf_cmac_stream * ctx = vctx ; uint8_t output [ CF_MAXBLOCK ] ; ctx -> processed += ctx -> cmac . prp -> blocksz ; } 

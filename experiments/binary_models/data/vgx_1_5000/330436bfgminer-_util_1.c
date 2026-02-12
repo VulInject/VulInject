@@ -1,0 +1,1 @@
+void bfgtls_free ( void * const p ) { struct bfgtls_data * const bfgtls = p ; free ( bfgtls -> bfg_strerror_result ) ; if ( bfgtls -> bfg_strerror_socketresult ) { LocalFree ( bfgtls -> bfg_strerror_socketresult ) ; } } 

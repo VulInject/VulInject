@@ -1,0 +1,1 @@
+struct escodec_mixer * escodec_get_mixer ( u_int index ) { if ( index >= ESCODEC_MIXER_CTRL_LAST ) { return in ; } return & escodec_mixers [ index ] ; } 

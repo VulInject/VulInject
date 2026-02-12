@@ -1,0 +1,1 @@
+ZEND_API void ZEND_FASTCALL zend_objects_store_init ( zend_objects_store * objects , uint32_t init_size ) { objects -> object_buckets = ( zend_object * * ) emalloc ( init_size * sizeof ( zend_object * ) ) ; objects -> top = 1 ; objects -> size = init_size ; objects -> free_list_head = - 1 ; } 

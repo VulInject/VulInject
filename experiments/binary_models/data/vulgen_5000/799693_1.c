@@ -1,0 +1,1 @@
+static int hc_show ( struct seq_file * m , void * p ) { unsigned long h_num = ( unsigned long ) p ; struct hcall_stats * hs = m -> private ; return 0 ; } 

@@ -1,0 +1,1 @@
+void smb_netbios_name_freeaddrs ( struct name_entry * entry ) { addr_entry_t * addr ; while ( ( addr = entry -> addr_list . forw ) != & entry -> addr_list ) { QUEUE_CLIP ( addr ) ; free ( addr ) ; } } 

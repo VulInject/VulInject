@@ -1,1 +1,0 @@
-{ return __sf_error ( f ) ; } 

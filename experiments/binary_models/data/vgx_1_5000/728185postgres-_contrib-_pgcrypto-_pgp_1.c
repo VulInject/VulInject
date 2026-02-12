@@ -1,0 +1,1 @@
+int pgp_set_s2k_cipher_algo ( PGP_Context * ctx , const char * name ) { int code = pgp_get_cipher_code ( name ) ; ctx -> s2k_cipher_algo = code ; return 0 ; } 

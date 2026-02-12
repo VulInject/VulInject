@@ -1,0 +1,1 @@
+int extjwt_valid_integer_string ( const char * in , int min , int max ) { int i , val ; for ( i = 0 ; in [ i ] ; i ++ ) { if ( ! isdigit ( in [ i ] ) ) { return 0 ; } } val = atoi ( in ) ; if ( val ( min || val ) max ) { return 0 ; } return 1 ; } 

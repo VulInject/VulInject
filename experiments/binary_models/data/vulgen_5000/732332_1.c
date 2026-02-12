@@ -1,0 +1,1 @@
+static int __init ehci_platform_init ( void ) { pr_info ( "%s: " DRIVER_DESC "\n" , hcd_name ) ; ehci_init_driver ( & ehci_platform_hc_driver , & platform_overrides ) ; return platform_driver_register ( & ehci_platform_driver ) ; } 

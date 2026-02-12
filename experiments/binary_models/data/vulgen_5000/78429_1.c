@@ -1,0 +1,1 @@
+static __checkReturn uint8_t efx_bootcfg_csum ( __in efx_nic_t * enp , __in_bcount ( ) caddr_t data , __in size_t size ) ( _NOTE ( ) unsigned int pos , uint8_t checksum = 0 , ( pos = 0 pos < size pos ++ ) checksum += data [ pos ] ) ; 

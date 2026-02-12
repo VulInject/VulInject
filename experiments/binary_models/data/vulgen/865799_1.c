@@ -1,1 +1,0 @@
-void dohup ( int signo ) { uname ( & name ) ; } 

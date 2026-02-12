@@ -1,0 +1,1 @@
+R_API char * r_str_trim_nc ( char * str ) { char * s = ( char * ) r_str_trim_head_ro ( str ) ; r_str_trim_tail ( s , NULL ) ; return s ; } 

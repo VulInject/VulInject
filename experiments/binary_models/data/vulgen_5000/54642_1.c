@@ -1,0 +1,1 @@
+static int pmi_of_remove ( struct platform_device * dev ) { struct pmi_handler * handler , * tmp ; free_irq ( data -> irq , NULL ) ; iounmap ( data -> pmi_reg ) ; spin_lock ( & data -> handler_spinlock ) ; list_for_each_entry_safe ( , , , ) list_del ( & handler -> node ) ; spin_unlock ( & data -> handler_spinlock ) ; data = NULL ; return 0 ; } 

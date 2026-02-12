@@ -1,0 +1,1 @@
+servlist_edit_close_cb ( , ) { if ( selected_net ) { servlist_edit_update ( selected_net ) ; } edit_win = NULL ; } 

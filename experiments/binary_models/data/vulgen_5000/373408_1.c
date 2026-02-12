@@ -1,0 +1,1 @@
+static int DetectHttpResponseLineTest01 ( void ) { DetectEngineCtx * de_ctx = DetectEngineCtxInit ( ) ; FAIL_IF_NULL ( de_ctx ) ; de_ctx -> flags |= DE_QUIET ; de_ctx -> sig_list = SigInit ( de_ctx , "alert tcp any any ->any any " "(http_response_line; content:\"200 OK\"; sid:1;)" ) ; FAIL_IF_NULL ( de_ctx -> sig_list ) ; PASS ; } 

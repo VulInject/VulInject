@@ -1,0 +1,1 @@
+* Copyright ( c ) 2012 - 2014 Brian Carrier . All rights reserved * * * This software is distributed under the Common Public License 1.0 * / uint8_t encase_test ( ) { char buf [ 8 ] fseeko ( hFile , 0 , SEEK_SET ) } ; if ( memcmp ( buf , "HASH\x0d\x0a\xff\x00" , 8 ) ) { return 0 ; } return 1 ; 

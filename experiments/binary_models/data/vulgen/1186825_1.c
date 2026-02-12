@@ -1,1 +1,0 @@
-static void register_sdl1 ( void ) { qemu_display_register ( 0 ) ; } 

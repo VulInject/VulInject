@@ -1,1 +1,0 @@
-int clock_settime ( int clock_id , const timespec_t * tp ) { return ( __clock_settime ( clock_id , tp ) ) ; } 

@@ -1,0 +1,1 @@
+static int apanel_remove ( struct i2c_client * client ) { struct apanel * ap = i2c_get_clientdata ( client ) ; if ( device_chip [ APANEL_DEV_LED ] != CHIP_NONE ) { led_classdev_unregister ( & ap -> mail_led ) ; } input_unregister_polled_device ( ap -> ipdev , NULL ) ; input_free_polled_device ( ap -> ipdev ) ; return 0 ; } 

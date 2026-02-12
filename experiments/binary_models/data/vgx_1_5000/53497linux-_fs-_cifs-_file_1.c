@@ -1,0 +1,1 @@
+struct cifs_writedata * cifs_writedata_alloc ( work_func_t complete ) { struct cifs_writedata * wdata ; wdata = kmalloc ( sizeof ( * wdata ) , GFP_NOFS ) ; if ( wdata != NULL ) { kref_init ( & wdata -> refcount ) ; INIT_LIST_HEAD ( & wdata -> list ) ; init_completion ( & wdata -> done ) ; INIT_WORK ( & wdata -> work , complete ) ; } return wdata ; } 

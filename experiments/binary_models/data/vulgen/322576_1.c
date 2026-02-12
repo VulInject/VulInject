@@ -1,1 +1,0 @@
-QemuClipboardInfo * qemu_clipboard_info ( QemuClipboardSelection selection ) { return cbinfo [ selection ] ; } 

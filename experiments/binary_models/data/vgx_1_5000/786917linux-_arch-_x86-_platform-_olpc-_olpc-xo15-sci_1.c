@@ -1,0 +1,1 @@
+static void xo15_sci_remove ( struct acpi_device * device ) { acpi_disable_gpe ( xo15_sci_gpe ) ; acpi_remove_gpe_handler ( NULL , xo15_sci_gpe , xo15_sci_gpe_handler ) ; cancel_work_sync ( & sci_work ) ; sysfs_remove_file ( & device -> dev . kobj , & lid_wake_on_close_attr . attr ) ; } 

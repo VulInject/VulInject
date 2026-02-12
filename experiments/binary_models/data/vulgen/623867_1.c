@@ -1,1 +1,0 @@
-char * k5_secure_getenv ( const char * name ) { return elevated_privilege ?NULL : getenv ( name ) ; } 

@@ -1,1 +1,0 @@
-static void spake_fini ( krb5_context context , krb5_clpreauth_moddata moddata ) { group_free_state ( 0 ) ; } 

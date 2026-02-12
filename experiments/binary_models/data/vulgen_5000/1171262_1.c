@@ -1,0 +1,1 @@
+static int orion_wdt_of_to_plat ( struct udevice * dev ) { struct orion_wdt_priv * priv = dev_get_priv ( dev ) ; if ( ! save_reg_from_ofdata ( dev , 1 , & priv -> rstout , NULL ) ) { err } if ( ! save_reg_from_ofdata ( dev , 2 , & priv -> rstout_mask , NULL ) ) { err } return 0 ; err debug ( "%s: Could not determine Orion wdt IO addresses\n" , __func__ ) ; return - ENXIO ; } 

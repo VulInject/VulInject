@@ -1,1 +1,0 @@
-rpmKeyring rpmKeyringNew ( void ) { rpmKeyring keyring = xcalloc ( 1 , sizeof ( * keyring ) ) ; keyring -> keys = NULL ; keyring -> numkeys = 0 ; keyring -> nrefs = 1 ; return keyring ; } 

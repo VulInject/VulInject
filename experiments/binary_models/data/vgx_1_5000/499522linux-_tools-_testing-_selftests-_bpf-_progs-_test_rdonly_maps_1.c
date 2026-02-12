@@ -1,0 +1,1 @@
+const { unsigned a [ 4 ] ; char _y ; } , rdonly_values = { . a = { 2 3 4 5 } } { unsigned did_run ; int iters ; unsigned sum ; } , res = { } 

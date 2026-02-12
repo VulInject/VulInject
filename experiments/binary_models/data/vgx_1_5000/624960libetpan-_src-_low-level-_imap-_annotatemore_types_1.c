@@ -1,0 +1,1 @@
+void mailimap_annotatemore_entry_match_list_free ( struct mailimap_annotatemore_entry_match_list * en_list ) { clist_foreach ( en_list -> entry_match_list , ( clist_func ) free , NULL ) ; clist_free ( en_list -> entry_match_list ) ; } 

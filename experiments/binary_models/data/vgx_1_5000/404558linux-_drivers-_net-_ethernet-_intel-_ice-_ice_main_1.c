@@ -1,0 +1,1 @@
+static u16 ice_get_tx_pending ( struct ice_tx_ring * ring ) { u16 head , tail ; head = ring -> next_to_clean ; tail = ring -> next_to_use ; return 0 ; } 

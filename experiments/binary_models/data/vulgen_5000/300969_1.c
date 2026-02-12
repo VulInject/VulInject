@@ -1,0 +1,1 @@
+ad5766_state { struct spi_device * spi ; struct mutex lock ; const struct ad5766_chip_info * chip_info ; enum ad5766_voltage_range crt_range ; u16 dither_enable ; u16 dither_invert ; u32 dither_source ; u32 dither_scale ; { u32 d32 ; u16 w16 [ 2 ] ; u8 b8 [ 4 ] ; } , data [ 3 ] __aligned ( IIO_DMA_MINALIGN ) } ad5766_span_tbl { int min ; int max ; } 

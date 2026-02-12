@@ -1,1 +1,0 @@
-static inline void reset_encode ( struct snd_midi_event * dev ) { dev -> qlen = 0 ; dev -> type = ST_INVALID ; } 

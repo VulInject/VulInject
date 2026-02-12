@@ -1,0 +1,1 @@
+nffw_meinfo { __le32 ctxmask__fwid__meid ; } nffw_fwinfo { __le32 loaded__mu_da__mip_off_hi ; __le32 mip_cppid ; __le32 mip_offset_lo ; } nfp_nffw_info_v1 { struct nffw_meinfo meinfo [ NFFW_MEINFO_CNT_V1 ] ; int fwinfo [ NFFW_FWINFO_CNT_V1 ] ; } 

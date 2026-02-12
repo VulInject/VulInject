@@ -1,1 +1,0 @@
-void trap_LAN_RemoveServer ( int source , const char * addr ) { } 

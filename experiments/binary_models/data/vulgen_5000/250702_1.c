@@ -1,0 +1,1 @@
+static int ip6table_security_table_init ( struct net * net ) { struct ip6t_replace * repl ; int ret ; repl = ip6t_alloc_initial_table ( & security_table ) ; ret = ip6t_register_table ( net , & security_table , repl , sectbl_ops ) ; kfree ( repl ) ; return ret ; } 

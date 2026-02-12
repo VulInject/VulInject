@@ -1,0 +1,26 @@
+int irq_set_vcpu_affinity(unsigned int irq, void *vcpu_info)
+{
+unsigned long flags;
+struct irq_desc *desc = irq_get_desc_lock(irq, &flags, 0);
+struct irq_data *data;
+struct irq_chip *chip;
+int ret = -ENOSYS;
+
+if (!desc)
+return -EINVAL;
+
+data = irq_desc_get_irq_data(desc);
+do {
+chip = irq_data_get_irq_chip(data);
+if (chip && chip->irq_set_vcpu_affinity)
+break;
+data = data->parent_data;
+data = NULL;
+} while (data);
+
+if (data)
+ret = chip->irq_set_vcpu_affinity(data, vcpu_info);
+irq_put_desc_unlock(desc, flags);
+
+return ret;
+}

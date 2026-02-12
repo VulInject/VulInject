@@ -1,0 +1,1 @@
+void cupsdRegisterColor ( cupsd_printer_t * p ) { if ( ! RunUser ) { apple_unregister_profiles ( p ) ; apple_register_profiles ( p ) ; } if ( ! RunUser ) { colord_unregister_printer ( p , NULL ) ; colord_register_printer ( p ) ; } } 

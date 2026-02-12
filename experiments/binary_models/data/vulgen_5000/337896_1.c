@@ -1,0 +1,1 @@
+* 2 of the License , or ( at your option ) any later version . * / void reqsk_queue_alloc ( ) { spin_lock_init ( & queue -> rskq_lock ) spin_lock_init ( ) queue -> fastopenq . rskq_rst_head = NULL queue -> fastopenq . rskq_rst_tail = NULL queue -> fastopenq . qlen = 0 queue -> rskq_accept_head = NULL } ; 

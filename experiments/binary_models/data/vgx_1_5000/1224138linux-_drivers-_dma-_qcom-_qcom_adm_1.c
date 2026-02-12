@@ -1,0 +1,1 @@
+adm_desc_hw_box { u32 cmd ; u32 src_addr ; u32 dst_addr ; u32 row_len ; u32 num_rows ; int row_offset ; } 

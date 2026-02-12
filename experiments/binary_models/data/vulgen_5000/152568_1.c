@@ -1,0 +1,1 @@
+static int xhci_usb_remove ( struct udevice * dev ) { struct exynos_xhci * ctx = dev_get_priv ( dev ) ; int ret ; ret = xhci_deregister ( dev ) ; if ( ret ) { return ret ; } return 0 ; } static const struct udevice_id xhci_usb_ids [ ] { { . compatible = "samsung,exynos5250-xhci" } { } } ; ; 

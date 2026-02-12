@@ -1,0 +1,1 @@
+struct route_node * route_node_match_ipv6 ( struct route_table * table , const struct in6_addr * addr ) { struct prefix_ipv6 p ; p . family = AF_INET6 ; p . prefixlen = IPV6_MAX_BITLEN ; p . prefix = * addr ; return route_node_match ( table , & p ) ; } 

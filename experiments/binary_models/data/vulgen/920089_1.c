@@ -1,1 +1,0 @@
-static struct sk_buff * ip_extract_route_hint ( const struct net * net , struct sk_buff * skb , int rt_type ) { return skb ; } 

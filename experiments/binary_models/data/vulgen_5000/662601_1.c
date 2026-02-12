@@ -1,0 +1,1 @@
+static void mo_privs ( struct MsgBuf * msgbuf_p , struct Client * client_p , struct Client * source_p , int parc , const char * parv [ ] ) struct Message privs_msgtab = { "PRIVS" 0 0 0 0 { mg_unreg { m_privs 0 } mg_ignore mg_ignore { me_privs 0 } { mo_privs 0 } } } ; mapi_clist_av1 privs_clist [ ] { & privs_msgtab NULL } ; ; mode_table { const char * name ; int mode ; } 

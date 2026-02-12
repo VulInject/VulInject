@@ -1,0 +1,1 @@
+static int securityfs_fill_super ( struct super_block * sb , struct fs_context * fc ) { static const struct tree_descr files [ ] { { "" } } ; ; int error ; error = simple_fill_super ( sb , SECURITYFS_MAGIC , files ) ; sb -> s_op = & securityfs_super_operations ; return 0 ; } 

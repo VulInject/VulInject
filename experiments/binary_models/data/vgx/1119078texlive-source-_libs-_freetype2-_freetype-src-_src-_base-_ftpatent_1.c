@@ -1,1 +1,0 @@
-FT_EXPORT_DEF ( ) FT_Face_SetUnpatentedHinting ( , ) { FT_UNUSED ( face ) ; FT_UNUSED ( value , NULL ) ; return FALSE ; } 

@@ -1,0 +1,1 @@
+int vpss_select_ccdc_source ( enum vpss_ccdc_source_sel src_sel ) { oper_cfg . hw_ops . select_ccdc_source ( src_sel ) ; return 0 ; } 

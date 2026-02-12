@@ -1,1 +1,0 @@
-MODULE_AUTHOR ( "Jonathan Cameron<jic23@kernel.org>" ) ; MODULE_DESCRIPTION ( "Kionix KXSD9 SPI driver" ) ; MODULE_LICENSE ( "GPL v2" ) ; 

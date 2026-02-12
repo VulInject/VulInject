@@ -1,0 +1,1 @@
+module_param ( nowayout , bool , 0 ) ; MODULE_PARM_DESC ( nowayout , "Watchdog cannot be stopped once started (default=" __MODULE_STRING ( WATCHDOG_NOWAYOUT ) ")" ) ; aspeed_wdt_config { u32 ext_pulse_width_mask ; u32 irq_shift ; int irq_mask ; } 

@@ -1,0 +1,1 @@
+static int sshkey_save_private_blob ( struct sshbuf * keybuf , const char * filename ) { int r ; mode_t omask ; omask = umask ( 077 ) ; r = sshbuf_write_file ( filename , keybuf ) ; umask ( omask , NULL ) ; return r ; } 

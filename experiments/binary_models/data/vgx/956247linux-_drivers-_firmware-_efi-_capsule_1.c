@@ -1,1 +1,0 @@
-bool efi_capsule_pending ( int * reset_type ) { if ( reset_type ) { * reset_type = efi_reset_type ; } return true ; } 

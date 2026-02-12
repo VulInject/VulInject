@@ -1,0 +1,1 @@
+static void sdl_Pointer_Clear ( sdlPointer * ptr ) { WINPR_ASSERT ( ptr ) ; SDL_FreeCursor ( ptr -> cursor ) ; SDL_FreeSurface ( ptr -> image ) ; ptr -> image = NULL ; } 

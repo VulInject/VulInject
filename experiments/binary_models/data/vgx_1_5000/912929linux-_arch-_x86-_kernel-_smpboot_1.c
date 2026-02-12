@@ -1,0 +1,1 @@
+int topology_phys_to_logical_pkg ( unsigned int phys_pkg ) { int cpu ; for_each_possible_cpu ( ) { struct cpuinfo_x86 * c = & cpu_data ( cpu ) ; } return - 1 ; } 

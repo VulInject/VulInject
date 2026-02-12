@@ -1,0 +1,1 @@
+void PrintRawLineHexBuf ( char * retbuf , uint32_t retbuflen , const uint8_t * buf , uint32_t buflen ) { int offset = 0 ; uint32_t u = 0 ; for ( u = 0 ; u < buflen ; u ++ ) { PrintBufferData ( retbuf , & offset , retbuflen , "%02X " , buf [ u ] ) ; } } 

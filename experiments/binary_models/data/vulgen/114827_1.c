@@ -1,1 +1,0 @@
-int elf_getphdrnum ( Elf * e , size_t * phnum ) { return ( _libelf_getphdrnum ( e , phnum ) ) ; } 

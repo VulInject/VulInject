@@ -1,0 +1,1 @@
+static void malidp_mw_connector_reset ( struct drm_connector * connector ) { struct malidp_mw_connector_state * mw_state = kzalloc ( sizeof ( * mw_state ) , GFP_KERNEL ) ; if ( connector -> state ) { __drm_atomic_helper_connector_destroy_state ( connector -> state ) ; } __drm_atomic_helper_connector_reset ( connector , & mw_state -> base ) ; } 

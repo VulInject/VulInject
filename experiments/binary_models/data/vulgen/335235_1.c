@@ -1,1 +1,0 @@
-static void sxgbe_tx_ctxt_desc_set_tcmssv ( struct sxgbe_tx_ctxt_desc * p ) { } 

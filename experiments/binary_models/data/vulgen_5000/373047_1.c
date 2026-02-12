@@ -1,0 +1,1 @@
+void mgos_remove_poll_cb ( mgos_poll_cb_t cb , void * cb_arg ) { struct cb_info * ci , * cit ; SLIST_FOREACH_SAFE ( , , , ) { if ( ci -> cb == cb && ci -> cb_arg == cb_arg ) { SLIST_REMOVE ( & s_poll_cbs , ci , cb_info , poll_cbs ) ; } } } 

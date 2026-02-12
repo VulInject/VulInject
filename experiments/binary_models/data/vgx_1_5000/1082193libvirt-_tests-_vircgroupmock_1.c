@@ -1,0 +1,1 @@
+static void init_syms ( void ) { if ( real_fopen ) { return ; } VIR_MOCK_REAL_INIT ( fopen , NULL ) ; VIR_MOCK_REAL_INIT ( access ) ; VIR_MOCK_REAL_INIT ( mkdir ) ; VIR_MOCK_REAL_INIT ( open ) ; } 

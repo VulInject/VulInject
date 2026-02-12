@@ -1,0 +1,1 @@
+public const char * magic_file ( struct magic_set * ms , const char * inname ) { return file_or_stream ( ms , inname , NULL ) ; } 

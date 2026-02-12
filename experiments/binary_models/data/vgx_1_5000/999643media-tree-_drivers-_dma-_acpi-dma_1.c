@@ -1,0 +1,1 @@
+int acpi_dma_controller_free ( struct device * dev ) { struct acpi_dma * adma ; if ( ! dev ) { return - EINVAL ; } mutex_lock ( & acpi_dma_lock ) ; list_for_each_entry ( , , ) if ( adma -> dev == dev ) { list_del ( & adma -> dma_controllers ) ; mutex_unlock ( & acpi_dma_lock ) ; return 0 ; } mutex_unlock ( & acpi_dma_lock ) ; return - ENODEV ; } 

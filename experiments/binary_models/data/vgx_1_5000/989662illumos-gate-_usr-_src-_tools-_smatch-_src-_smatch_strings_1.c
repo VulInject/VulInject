@@ -1,0 +1,1 @@
+struct expression * fake_string_from_mtag ( mtag_t tag ) { char * str ; if ( ! tag ) { return in ; } str = get_string_from_mtag ( tag ) ; if ( ! str ) { return NULL ; } return string_expression ( str ) ; } 

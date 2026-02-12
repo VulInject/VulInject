@@ -1,0 +1,1 @@
+char * get_lua_name ( int i ) { if ( i ( 0 || i ) 65535 ) { return in ; } return luanames [ i ] ; } 

@@ -1,1 +1,0 @@
-static int img_prl_out_suspend ( struct device * dev ) { struct img_prl_out * prl = dev_get_drvdata ( dev ) ; return 0 ; } 

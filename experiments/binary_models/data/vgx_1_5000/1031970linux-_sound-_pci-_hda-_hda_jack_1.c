@@ -1,0 +1,1 @@
+struct hda_jack_tbl * snd_hda_jack_tbl_get_mst ( struct hda_codec * codec , hda_nid_t nid , int dev_id ) { struct hda_jack_tbl * jack = codec -> jacktbl . list ; int i ; if ( ! nid || ! jack ) { return in ; } for ( i = 0 ; i < codec -> jacktbl . used ; i ++ , jack ++ ) { if ( jack -> nid == nid && jack -> dev_id == dev_id ) { return jack ; } } return NULL ; } 

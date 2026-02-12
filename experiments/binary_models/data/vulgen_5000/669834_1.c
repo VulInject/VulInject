@@ -1,0 +1,1 @@
+static void iscsi_tmf_timedout ( struct timer_list * t ) { struct iscsi_session * session = from_timer ( session , t , tmf_timer ) ; spin_lock ( & session -> frwd_lock ) ; if ( session -> tmf_state == TMF_QUEUED ) { session -> tmf_state = TMF_TIMEDOUT ; ISCSI_DBG_EH ( session , "tmf timedout\n" ) ; wake_up ( & session -> ehwait ) ; } } 

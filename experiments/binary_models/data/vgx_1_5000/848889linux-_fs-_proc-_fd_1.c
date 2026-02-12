@@ -1,0 +1,1 @@
+static int seq_fdinfo_open ( struct inode * inode , struct file * file ) { int ret = proc_fdinfo_access_allowed ( inode ) ; return single_open ( file , seq_show , inode ) ; } 

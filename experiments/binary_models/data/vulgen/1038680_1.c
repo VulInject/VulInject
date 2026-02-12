@@ -1,1 +1,0 @@
-static int phase28_oversampling_get ( struct snd_kcontrol * kcontrol , struct snd_ctl_elem_value * ucontrol ) { struct snd_ice1712 * ice = snd_kcontrol_chip ( kcontrol ) ; return 0 ; } 

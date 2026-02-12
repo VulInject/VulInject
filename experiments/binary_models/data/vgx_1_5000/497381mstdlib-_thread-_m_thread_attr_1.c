@@ -1,0 +1,1 @@
+void M_thread_attr_set_stack_size ( M_thread_attr_t * attr , size_t val ) { attr -> stack_size = val ; } 

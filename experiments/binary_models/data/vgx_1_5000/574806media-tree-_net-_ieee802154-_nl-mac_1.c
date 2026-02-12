@@ -1,0 +1,1 @@
+static int llsec_remove_key ( struct net_device * dev , struct genl_info * info ) { struct ieee802154_mlme_ops * ops = ieee802154_mlme_ops ( dev ) ; struct ieee802154_llsec_key_id id ; return ops -> llsec -> del_key ( dev , & id ) ; } 

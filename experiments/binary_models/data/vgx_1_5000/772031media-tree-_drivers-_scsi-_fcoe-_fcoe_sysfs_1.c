@@ -1,0 +1,1 @@
+static void fcoe_ctlr_device_release ( struct device * dev ) { struct fcoe_ctlr_device * ctlr = dev_to_ctlr ( dev ) ; } 

@@ -1,1 +1,0 @@
-FUN1 ( ) { FUN2 ( "" , NULL , NULL , "" , 0 ) ; FUN2 ( "" , NULL , NULL , "" , 0 ) ; FUN2 ( "" , NULL , NULL , "" , 0 ) ; FUN2 ( "" , NULL , NULL , "" , 0 ) ; FUN2 ( "" , NULL , "" , "" , 0 ) ; FUN2 ( "" , "" , "" , "" , 0 ) ; FUN2 ( "" , "" , "" , "" , 0 ) ; FUN2 ( "" , "" , "" , 0 ) ; }

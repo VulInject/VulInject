@@ -1,0 +1,1 @@
+void * aplmbox_channel ( void * , uint32_t * , struct mbox_client * ) int aplmbox_send ( void * , const void * , size_t ) int aplmbox_recv ( void * , void * , size_t ) int aplmbox_match ( struct device * parent , void * match , void * aux ) { return ( OF_is_compatible ( faa -> fa_node , "apple,asc-mailbox" ) || OF_is_compatible ( faa -> fa_node , "apple,asc-mailbox-v4" ) ) ; } 

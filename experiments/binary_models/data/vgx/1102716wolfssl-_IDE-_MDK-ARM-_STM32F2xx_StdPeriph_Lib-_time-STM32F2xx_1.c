@@ -1,1 +1,0 @@
-static uint32_t ByteToBcd2 ( uint8_t Value ) { int bcdhigh = 0 ; while ( Value >= 10 ) { bcdhigh ++ ; Value -= 10 ; } return ( ( uint8_t ) ( bcdhigh << 4 ) | Value ) ; } 

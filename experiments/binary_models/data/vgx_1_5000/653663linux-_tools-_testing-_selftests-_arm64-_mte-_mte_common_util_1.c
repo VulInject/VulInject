@@ -1,0 +1,1 @@
+void mte_register_signal ( int signal , void * handler ( int , siginfo_t * , void * ) ) { struct sigaction sa ; sa . sa_sigaction = handler ; sa . sa_flags = SA_SIGINFO ; sigemptyset ( & sa . sa_mask ) ; sigaction ( signal , & sa ) ; } 

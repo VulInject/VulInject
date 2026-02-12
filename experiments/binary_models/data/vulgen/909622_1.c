@@ -1,1 +1,0 @@
-static nsresult _systemPropertiesGetMaxGuestRAM ( ISystemProperties * systemProperties , PRUint32 * maxGuestRAM ) { return systemProperties -> vtbl -> GetMaxGuestRAM ( systemProperties ) ; } 

@@ -1,1 +1,0 @@
-* OUT OF THE USE OF THIS SOFTWARE , EVEN IF ADVISED OF THE POSSIBILITY OF * SUCH DAMAGE . * / count = size ; { tmp = * a ; * a ++ = * b ; * b ++ = tmp ; } -- count ; tmp1 = a ; tmp2 = b ; { * tmp1 ++ = * tmp2 ++ ; } -- count ; 

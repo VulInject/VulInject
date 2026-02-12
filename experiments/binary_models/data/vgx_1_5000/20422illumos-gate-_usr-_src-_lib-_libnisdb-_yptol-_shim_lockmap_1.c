@@ -1,0 +1,1 @@
+int lock_map_ctrl ( map_ctrl * map ) { int ret ; ret = lock_core ( map -> hash_val , NULL ) ; return ( ret ) ; } 

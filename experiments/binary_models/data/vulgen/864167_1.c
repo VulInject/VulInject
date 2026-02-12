@@ -1,1 +1,0 @@
-static struct sk_buff * qpolicy_simple_top ( struct sock * sk ) { return skb_peek ( ) ; } 

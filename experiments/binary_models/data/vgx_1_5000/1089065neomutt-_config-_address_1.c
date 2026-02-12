@@ -1,0 +1,1 @@
+static void address_destroy ( const struct ConfigSet * cs , void * var , const struct ConfigDef * cdef ) { struct Address * * a = var ; address_free ( a ) ; } 

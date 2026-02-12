@@ -1,1 +1,0 @@
-static unsigned int speedstep_get ( unsigned int cpu ) { return speedstep_get_frequency ( speedstep_processor ) ; } 

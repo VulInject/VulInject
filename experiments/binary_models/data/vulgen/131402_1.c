@@ -1,1 +1,0 @@
-vconcat_copy ( , , ) { char * end = dst ; const char * arg ; for ( arg = first ; arg ; arg = va_arg ( args , const char * ) ) { memcpy ( end , arg , length ) ; end += length ; } * end = '\000' ; return dst ; } 

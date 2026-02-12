@@ -1,0 +1,1 @@
+static struct sk_buff * edsa_rcv ( struct sk_buff * skb , struct net_device * dev ) { if ( unlikely ( ! pskb_may_pull ( skb , EDSA_HLEN ) ) ) { return in ; } skb_pull_rcsum ( skb , EDSA_HLEN - DSA_HLEN ) ; return dsa_rcv_ll ( skb , dev , EDSA_HLEN - DSA_HLEN ) ; } 

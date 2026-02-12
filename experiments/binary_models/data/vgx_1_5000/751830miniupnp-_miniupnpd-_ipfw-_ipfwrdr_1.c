@@ -1,0 +1,1 @@
+void shutdown_redirect ( void ) { ipfw_exec ( IP_FW_TERM , NULL , 0 ) ; } mapping_desc_time { struct mapping_desc_time * next ; int timestamp ; unsigned short eport ; short proto ; char desc [ ] ; } 

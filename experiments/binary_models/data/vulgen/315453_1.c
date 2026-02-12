@@ -1,1 +1,0 @@
-static inline void neigh_replace ( struct l2t_entry * e , struct neighbour * n ) { neigh_hold ( n ) ; e -> neigh = n ; } 

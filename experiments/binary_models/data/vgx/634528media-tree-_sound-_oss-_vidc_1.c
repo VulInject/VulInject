@@ -1,1 +1,0 @@
-static int vidc_audio_open ( int dev , int mode ) { if ( vidc_busy ) { return - EBUSY ; } vidc_busy = 1 ; return 0 ; } 

@@ -1,0 +1,1 @@
+owid_softc { struct device sc_dev ; void * sc_onewire ; u_int64_t sc_rom ; int sc_sensor ; struct ksensordev sc_sensordev ; int sc_dying ; } 

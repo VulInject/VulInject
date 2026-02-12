@@ -1,0 +1,1 @@
+DECLARE_EXPORT ( __sdivsi3_i4i ) ; DECLARE_EXPORT ( __udivsi3_i4i ) ; DECLARE_EXPORT ( mcount , NULL ) ; 

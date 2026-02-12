@@ -1,0 +1,1 @@
+void delete_webircblock ( ConfigItem_webirc * e ) const char * webirc_md_serialize ( ModData * m ) void webirc_md_unserialize ( const char * str , ModData * m ) void webirc_md_free ( ModData * md ) int webirc_secure_connect ( Client * client ) MOD_TEST ( ) { return MOD_SUCCESS ; } 

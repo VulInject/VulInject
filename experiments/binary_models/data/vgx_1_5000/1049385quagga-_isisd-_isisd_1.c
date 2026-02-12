@@ -1,0 +1,1 @@
+DEFUN ( , , "log-adjacency-changes" , "Log changes in adjacency state\n" ) { struct isis_area * area ; area = vty -> index ; area -> log_adj_changes = 1 ; return CMD_SUCCESS ; } 

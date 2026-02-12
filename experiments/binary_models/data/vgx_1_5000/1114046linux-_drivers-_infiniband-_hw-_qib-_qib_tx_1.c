@@ -1,0 +1,1 @@
+void qib_hol_event ( struct timer_list * t ) { struct qib_pportdata * ppd = from_timer ( ppd , t , hol_timer ) ; if ( ppd -> hol_state != QIB_HOL_UP ) { qib_hol_down ( ppd ) ; mod_timer ( & ppd -> hol_timer , jiffies + msecs_to_jiffies ( qib_hol_timeout_ms ) ) ; } } 

@@ -1,1 +1,0 @@
-if ( i == dict -> next ) { return ( false ) ; } free ( dict -> values [ i ] ) ; -- dict -> next ; while ( i < dict -> next ) { dict -> keys [ i ] = dict -> keys [ i + 1 ] ; dict -> values [ i ] = dict -> values [ i + 1 ] ; ++ i ; } return ( true ) ; 

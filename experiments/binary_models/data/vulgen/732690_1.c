@@ -1,1 +1,0 @@
-equiv_free ( ) { struct equiv_hash_elt * elt = ( equiv_hash_elt * ) p ; free ( elt ) ; } 

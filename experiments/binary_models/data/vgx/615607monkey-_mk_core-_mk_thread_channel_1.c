@@ -1,1 +1,0 @@
-static void mk_thread_channel_elem_free ( struct mk_thread_channel_elem * elem ) { mk_list_del ( & elem -> _head ) ; mk_mem_free ( elem ) ; } 

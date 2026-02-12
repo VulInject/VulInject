@@ -1,1 +1,0 @@
-int STRGEN_NAME ( "RSYSLOG_TraditionalForwardFormat" ) DEF_SMOD_STATIC_DATA 

@@ -1,1 +1,0 @@
-int FUN1 ( void * VAR1 ) { struct VAR2 * VAR2 = VAR1 ; while ( ! FUN2 ( ) ) { FUN3 ( VAR3 ) ; FUN4 ( ) ; } return 0 ; }

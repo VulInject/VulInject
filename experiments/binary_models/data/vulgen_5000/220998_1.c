@@ -1,0 +1,1 @@
+. id = _id , . name = _name , . parent_name = _parent , . regs = & venc_cg_regs , . shift = _shift , . ops = & mtk_clk_gate_ops_setclr_inv , ; const struct mtk_gate venc_clks [ ] { GATE_VENC ( CLK_VENC_SMI_COMMON_CON , "venc_smi" , "mm_sel" ) GATE_VENC ( CLK_VENC_VENC , "venc_venc" , "venc_sel" , 4 ) GATE_VENC ( CLK_VENC_SMI_LARB6 , "venc_smi_larb6" , "jpgdec_sel" , 12 ) } ; ; 

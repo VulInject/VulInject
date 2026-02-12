@@ -1,0 +1,1 @@
+static u8 clk_pxa25x_core_get_parent ( struct clk_hw * hw ) { unsigned long clkcfg ; unsigned int t ; t = clkcfg & ( 1 << 0 ) ; return PXA_CORE_RUN ; } 

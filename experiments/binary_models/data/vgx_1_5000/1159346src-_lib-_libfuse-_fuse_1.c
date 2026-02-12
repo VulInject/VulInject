@@ -1,0 +1,1 @@
+void fuse_teardown ( struct fuse * fuse , char * mp ) { fuse_remove_signal_handlers ( fuse_get_session ( fuse ) ) ; fuse_unmount ( mp , fuse -> fc ) ; fuse_destroy ( fuse ) ; } 

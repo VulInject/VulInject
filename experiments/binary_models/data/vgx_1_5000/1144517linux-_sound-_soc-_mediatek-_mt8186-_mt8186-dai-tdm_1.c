@@ -1,0 +1,1 @@
+static unsigned int get_tdm_lrck_width ( snd_pcm_format_t format , unsigned int mode ) { return snd_pcm_format_physical_width ( format ) - 1 ; } 

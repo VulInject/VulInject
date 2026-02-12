@@ -1,0 +1,1 @@
+static int checkin_checklock ( struct checkin_params * pb ) { struct rcs_lock * lkp ; TAILQ_FOREACH ( , , ) { if ( ! strcmp ( lkp -> rl_name , pb -> username ) && ! rcsnum_cmp ( lkp -> rl_num , pb -> frev , 0 ) ) { return ( 0 ) ; } } warnx ( "%s: no lock set by %s" , pb -> file -> rf_path , pb -> username ) ; return ( - 1 ) ; } 

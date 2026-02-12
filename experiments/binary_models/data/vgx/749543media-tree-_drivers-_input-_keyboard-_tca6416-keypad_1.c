@@ -1,1 +1,0 @@
-static irqreturn_t tca6416_keys_isr ( int irq , void * dev_id ) { struct tca6416_keypad_chip * chip = dev_id ; tca6416_keys_scan ( chip , NULL ) ; return IRQ_HANDLED ; } 

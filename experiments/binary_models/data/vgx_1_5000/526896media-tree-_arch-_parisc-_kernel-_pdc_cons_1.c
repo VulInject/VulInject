@@ -1,0 +1,1 @@
+void pdc_console_restart ( void ) { struct console * console ; if ( console_drivers != NULL ) { pdc_cons . flags &= ~ CON_PRINTBUFFER ; } while ( ( console = console_drivers ) != NULL ) { unregister_console ( console_drivers ) ; } pdc_console_init_force ( ) ; } 

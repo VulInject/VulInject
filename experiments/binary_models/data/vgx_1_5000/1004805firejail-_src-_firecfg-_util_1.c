@@ -1,0 +1,1 @@
+struct stat s ; if ( stat ( fname , & s ) == 0 ) { if ( arg_debug ) { printf ( "found %s in directory %s\n" , program , directory ) ; } retval = 1 ; } return retval ; 

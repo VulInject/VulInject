@@ -1,0 +1,1 @@
+static int __init machine_setup ( void ) { struct device_node * eth = NULL ; if ( ( eth = of_find_compatible_node ( eth , NULL , "opencores,ethoc" ) ) ) { update_local_mac ( 0 ) ; } return 0 ; } 

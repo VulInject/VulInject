@@ -1,1 +1,0 @@
-static void mhas_buffer_too_small ( void * udta ) { GF_MHASDmxCtx * ctx = ( GF_MHASDmxCtx * ) udta ; } 

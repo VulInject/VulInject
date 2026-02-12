@@ -1,1 +1,0 @@
-static int is_in ( const char * s , int ch ) { if ( * s == '\0' ) { s ++ ; } return ! ! strchr ( s , ch ) ; } 

@@ -1,0 +1,1 @@
+main ( ) { test_function ( u8_mbtouc , NULL ) ; test_safe_function ( u8_mbtouc ) ; return 0 ; } 

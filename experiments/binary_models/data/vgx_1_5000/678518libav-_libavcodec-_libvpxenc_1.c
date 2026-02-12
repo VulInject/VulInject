@@ -1,0 +1,1 @@
+static void coded_frame_add ( void * list , struct FrameListData * cx_frame ) { struct FrameListData * * p = list ; while ( * p ) { p = & ( * p ) -> next ; } * p = cx_frame ; } 

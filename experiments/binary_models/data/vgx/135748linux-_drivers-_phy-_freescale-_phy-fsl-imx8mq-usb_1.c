@@ -1,1 +1,0 @@
-static int imx8mq_phy_power_off ( struct phy * phy ) { struct imx8mq_usb_phy * imx_phy = phy_get_drvdata ( phy ) ; clk_disable_unprepare ( imx_phy -> clk ) ; regulator_disable ( imx_phy -> vbus , NULL ) ; return 0 ; } 

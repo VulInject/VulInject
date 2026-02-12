@@ -1,0 +1,1 @@
+PNAME ( mout_apollo_pll_p ) = { "oscclk" "fout_apollo_pll" } ; PNAME ( mout_bus_pll_apollo_user_p ) = { "oscclk" "sclk_bus_pll_apollo" } ; static const struct samsung_pll_clock apollo_pll_clks [ ] __initconst = { PLL ( pll_35xx , CLK_FOUT_APOLLO_PLL , "fout_apollo_pll" , "oscclk" , APOLLO_PLL_LOCK , APOLLO_PLL_CON0 , exynos5433_pll_rates ) } ; 

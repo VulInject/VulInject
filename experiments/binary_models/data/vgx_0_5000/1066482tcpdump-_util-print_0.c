@@ -1,0 +1,19 @@
+void nd_print_invalid(netdissect_options *ndo)
+{
+ND_PRINT(" (invalid)");
+}
+
+
+
+int
+print_unknown_data(netdissect_options *ndo, const u_char *cp,
+const char *indent, u_int len)
+{
+if (!ND_TTEST_LEN(cp, 0)) {
+ND_PRINT("%sDissector error: %s() called with pointer past end of packet",
+indent, __func__);
+return(0);
+}
+hex_print(ndo, indent, cp, ND_MIN(len, ND_BYTES_AVAILABLE_AFTER(cp)));
+return(1); 
+}

@@ -1,1 +1,0 @@
-void rpmpsPrint ( FILE * fp , rpmps ps ) { rpmProblem p ; rpmpsi psi = rpmpsInitIterator ( ps ) ; FILE * f = ( fp != NULL ) ?fp : stderr ; while ( ( p = rpmpsiNext ( psi ) ) ) { char * msg = rpmProblemString ( p ) ; fprintf ( f , "\t%s\n" , msg ) ; free ( msg ) ; } } 

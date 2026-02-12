@@ -1,0 +1,1 @@
+int opus_tagcompare ( const char * _tag_name , const char * _comment ) { size_t tag_len ; tag_len = strlen ( _tag_name ) ; return opus_tagncompare ( _tag_name , ( int ) tag_len , _comment ) ; } 

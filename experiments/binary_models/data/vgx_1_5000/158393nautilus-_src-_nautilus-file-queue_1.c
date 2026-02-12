@@ -1,0 +1,1 @@
+nautilus_file_queue_head ( ) { return NAUTILUS_FILE ( queue -> head -> data ) ; } 

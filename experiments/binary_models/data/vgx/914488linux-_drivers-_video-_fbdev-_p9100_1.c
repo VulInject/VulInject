@@ -1,1 +1,0 @@
-static int __init p9100_init ( void ) { return platform_driver_register ( & p9100_driver ) ; } 

@@ -1,0 +1,1 @@
+static void gfar_set_parse_bits ( u32 value , u32 mask , struct filer_table * tab ) { gfar_set_mask ( mask , tab ) ; tab -> fe [ tab -> index ] . ctrl = RQFCR_CMP_EXACT | RQFCR_PID_PARSE | RQFCR_AND ; tab -> fe [ tab -> index ] . prop = value ; } 

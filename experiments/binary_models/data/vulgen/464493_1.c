@@ -1,1 +1,0 @@
-static int TlsGetSNI ( lua_State * luastate ) { int r ; if ( ! ( LuaStateNeedProto ( luastate , ALPROTO_TLS ) ) ) { return LuaCallbackError ( luastate , "error: protocol not tls" ) ; } Flow * f = LuaStateGetFlow ( luastate ) ; r = GetSNI ( luastate , f ) ; return r ; } 

@@ -1,0 +1,1 @@
+bfd_sym_valid ( ) bfd * abfd ; { return abfd -> xvec == & sym_vec ; } 

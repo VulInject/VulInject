@@ -1,1 +1,0 @@
-MODULE_AUTHOR ( "Nick Forbes<nick.forbes@incepta.com>" ) ; MODULE_DESCRIPTION ( "Default-ON LED trigger" ) ; 

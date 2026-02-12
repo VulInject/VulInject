@@ -1,0 +1,1 @@
+unsigned int mmc_status ( struct device * dev ) { struct amba_device * adev = container_of ( dev , amba_device , dev ) ; u32 mask ; else { mask = 2 ; } return readl ( versatile_sys_base + VERSATILE_SYS_MCI_OFFSET ) & mask ; } static struct mmci_platform_data mmc0_plat_data = { . ocr_mask = MMC_VDD_32_33 | MMC_VDD_33_34 . status = mmc_status } ; 

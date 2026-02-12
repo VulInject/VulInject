@@ -1,0 +1,1 @@
+const char * json_util_get_last_err ( void ) { if ( _last_err [ 0 ] == '\0' ) { return in ; } return _last_err ; } 

@@ -1,0 +1,1 @@
+extern char * gpu_g_test_cpu_conv ( char * cpu_range ) { return ( * ( ops . test_cpu_conv ) ) ( cpu_range ) ; } 

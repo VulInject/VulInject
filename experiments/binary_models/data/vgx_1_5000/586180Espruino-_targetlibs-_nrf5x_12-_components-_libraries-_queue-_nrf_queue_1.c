@@ -1,0 +1,1 @@
+__STATIC_INLINE size_t nrf_queue_next_idx ( nrf_queue_t const * p_queue , size_t idx ) { return ( idx < p_queue -> size ) ?( idx + 1 ) : 0 ; } 

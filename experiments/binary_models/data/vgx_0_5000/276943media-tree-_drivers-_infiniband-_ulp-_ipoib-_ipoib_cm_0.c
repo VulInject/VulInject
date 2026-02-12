@@ -1,0 +1,19 @@
+struct ipoib_cm_tx *ipoib_cm_create_tx(struct net_device *dev, struct ipoib_path *path,
+struct ipoib_neigh *neigh)
+{
+struct ipoib_dev_priv *priv = ipoib_priv(dev);
+struct ipoib_cm_tx *tx;
+
+tx = kzalloc(sizeof *tx, GFP_ATOMIC);
+if (!tx)
+return NULL;
+
+neigh->cm = tx;
+tx->neigh = neigh;
+tx->path = path;
+tx->dev = dev;
+list_add(&tx->list, &priv->cm.start_list);
+set_bit(IPOIB_FLAG_INITIALIZED, &tx->flags);
+queue_work(priv->wq, &priv->cm.start_task);
+return tx;
+}

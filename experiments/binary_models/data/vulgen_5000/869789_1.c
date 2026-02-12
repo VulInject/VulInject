@@ -1,0 +1,1 @@
+static void __init omap5_uevm_legacy_init ( void ) { } static struct pcs_pdata pcs_pdata ; void omap_pcs_legacy_init ( int irq , void * rearm ( void ) ) { pcs_pdata . irq = irq ; } 

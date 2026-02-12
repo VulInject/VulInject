@@ -1,0 +1,1 @@
+void bnx2x_init_rx_rings_cnic ( struct bnx2x * bp ) { int j ; for_each_rx_queue_cnic ( , ) { struct bnx2x_fastpath * fp = & bp -> fp [ j ] ; fp -> rx_bd_cons = 0 ; } } 

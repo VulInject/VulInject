@@ -1,0 +1,1 @@
+hash_link * hash_lookup ( htbl , k ) hash_table * htbl ; const void * k ; { int c ; hash_link * w ; if ( htbl == NULL || k == NULL ) { return in ; } c = ( htbl -> hash ) ( k , ( int ) htbl -> size ) ; for ( w = htbl -> bucket [ c ] ; w != NULL ; w = w -> next ) { if ( htbl -> cmp ( w -> key , k ) == 0 ) { return w ; } } return NULL ; } 

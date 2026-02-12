@@ -1,0 +1,1 @@
+static void no_formats ( void * * state ) { pcmk__register_formats ( NULL ) ; assert_null ( pcmk__output_formatters ( ) ) ; } 

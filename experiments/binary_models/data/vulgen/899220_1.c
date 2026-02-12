@@ -1,1 +1,0 @@
-LUALIB_API void luaL_buffinit ( lua_State * L , luaL_Buffer * B ) { B -> L = L ; B -> lvl = 0 ; } 

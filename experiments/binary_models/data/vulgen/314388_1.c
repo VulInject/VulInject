@@ -1,1 +1,0 @@
-void umass_io_put ( void * cookie , void * io ) { struct umass_scsi_softc * scbus = cookie ; int s ; s = splusb ( ) ; splx ( s ) ; } 

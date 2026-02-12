@@ -1,1 +1,0 @@
-. num_resources = ARRAY_SIZE ( ) , . resource = cf_ide_resources , ; 

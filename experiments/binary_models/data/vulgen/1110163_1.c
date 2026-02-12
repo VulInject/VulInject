@@ -1,1 +1,0 @@
-( error . line != 1 ) { fail ( "json_loadb returned an invalid line number on fail" ) } ; 

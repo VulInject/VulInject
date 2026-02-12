@@ -1,1 +1,0 @@
-int nxu_submit_job ( struct nx_gzip_crb_cpb_t * cmdp , void * handle ) { int cc ; cc = nxu_run_job ( cmdp , handle ) ; return cc ; } 

@@ -1,0 +1,1 @@
+int mbfl_filt_conv_qprintenc_flush ( mbfl_convert_filter * filter ) { * filter -> filter_function ( '\0' , filter ) ; filter -> status &= ~ 0xffff ; if ( filter -> flush_function ) { * filter -> flush_function ( filter -> data ) ; } return 0 ; } 

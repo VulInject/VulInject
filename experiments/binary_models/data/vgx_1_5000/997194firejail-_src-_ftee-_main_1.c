@@ -1,0 +1,1 @@
+static int out_cnt = 0 ; static int out_max = 500 * 1024 ; static void log_close ( void ) { if ( out_fp ) { fclose ( out_fp ) ; } } 

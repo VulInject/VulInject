@@ -1,1 +1,0 @@
-if ( sendto ( s , "CHECK_IP_CONFLICT" , 17 , ( * pWIZNETINFO ) . ip , 5000 ) > 0 ) { return 0 ; } return 1 ; 

@@ -1,0 +1,1 @@
+at91_pm_bu { int suspended ; unsigned long reserved ; phys_addr_t canary ; phys_addr_t resume ; cfs_time_t ddr_phy_calibration [ BACKUP_DDR_PHY_CALIBRATION ] ; } 

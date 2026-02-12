@@ -1,0 +1,1 @@
+int tm_sigreturn ( void ) { struct sigaction sa ; uint64_t ret = 0 ; SKIP_IF ( ! have_htm ( ) ) ; SKIP_IF ( htm_is_synthetic ( ) ) ; SKIP_IF ( ! is_ppc64le ( ) ) ; sa . sa_handler = handler ; sigemptyset ( & sa . sa_mask ) ; if ( sigaction ( SIGSEGV , & sa , NULL ) ) { exit ( 1 ) ; } __volatile__ if ( ret != 2 ) { exit ( 1 ) ; } exit ( 0 ) ; } 

@@ -1,1 +1,0 @@
-static void time_init ( void ) { pthread_once ( & once , do_init_time ) ; } 

@@ -1,0 +1,1 @@
+static void nfc_release ( struct device * d ) { struct nfc_dev * dev = to_nfc_dev ( d ) ; struct nfc_se * se , * n ; pr_debug ( "dev_name=%s\n" , dev_name ( & dev -> dev ) ) ; kfree ( dev -> targets ) ; list_for_each_entry_safe ( , , , ) { nfc_genl_se_removed ( dev , se -> idx ) ; list_del ( & se -> list ) ; kfree ( se ) ; } kfree ( dev ) ; } 

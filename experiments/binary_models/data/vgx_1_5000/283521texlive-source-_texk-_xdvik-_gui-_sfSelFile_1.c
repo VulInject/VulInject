@@ -1,0 +1,1 @@
+static int showEntry ( char * entryReal , char * * entryShown , struct stat * statBuf ) { UNUSED ( entryShown , NULL ) ; if ( ( hideFlag && entryReal [ 0 ] == '.' ) || ( ! S_ISDIR ( statBuf -> st_mode ) && maskFile ( fileMask , entryReal ) ) ) { return 0 ; } entryReal [ strlen ( entryReal ) ] = SFstatChar ( statBuf ) ; return 1 ; } 

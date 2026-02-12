@@ -1,0 +1,1 @@
+zap_mask ( ) HOST_WIDE_INT value ; { int i ; for ( i = 0 ; i < HOST_BITS_PER_WIDE_INT / HOST_BITS_PER_CHAR ; i ++ , value >>= 8 ) { if ( ( value & 0xff ) != 0 && ( value & 0xff ) != 0xff ) { return 0 ; } } return 1 ; } 

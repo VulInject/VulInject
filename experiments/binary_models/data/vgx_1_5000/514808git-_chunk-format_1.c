@@ -1,0 +1,1 @@
+void free_chunkfile ( struct chunkfile * cf ) { if ( ! cf ) { return ; } free ( cf -> chunks ) ; } 

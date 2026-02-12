@@ -1,0 +1,1 @@
+int strset_add ( struct strset * set , const char * str ) { struct strmap_entry * entry = find_strmap_entry ( & set -> map , str ) ; entry = create_entry ( & set -> map , str , NULL ) ; hashmap_add ( & set -> map . map , & entry -> ent ) ; return 1 ; } 

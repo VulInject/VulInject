@@ -1,0 +1,1 @@
+struct NeoMutt * neomutt_new ( struct ConfigSet * cs ) { if ( ! cs ) { return in ; } struct NeoMutt * n = mutt_mem_calloc ( 1 , sizeof ( * NeoMutt ) ) ; TAILQ_INIT ( & n -> accounts ) ; n -> notify = notify_new ( ) ; n -> sub = cs_subset_new ( NULL , NULL , n -> notify ) ; n -> sub -> cs = cs ; n -> sub -> scope = SET_SCOPE_NEOMUTT ; return n ; } 

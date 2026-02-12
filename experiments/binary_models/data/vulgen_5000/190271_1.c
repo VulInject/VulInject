@@ -1,0 +1,1 @@
+{ Lisp_Int , Lisp_Record , Lisp_Cons , Lisp_String , Lisp_Vector , Lisp_Symbol , Lisp_Char ; } Lisp_Object { { enum Lisp_Type type 3L ; unsigned long markbit 1 ; unsigned long val 32 ; } , gu long i ; } Lisp_Object extern int initialized ; void init_device_faces ( int * d ) { } 

@@ -1,0 +1,1 @@
+DECLARE_INSTANCE_CHECKER ( , , ) xlx_pic { SysBusDevice parent_obj ; MemoryRegion mmio ; qemu_irq parent_irq ; uint32_t c_kind_of_intr ; int regs [ R_MAX ] ; uint32_t irq_pin_state ; } 

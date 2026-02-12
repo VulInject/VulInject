@@ -1,1 +1,0 @@
-module_init ( rpc_rdma_init ) ; module_exit ( rpc_rdma_cleanup , NULL ) ; 

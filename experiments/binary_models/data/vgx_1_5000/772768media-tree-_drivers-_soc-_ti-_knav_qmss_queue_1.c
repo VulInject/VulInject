@@ -1,0 +1,1 @@
+( knav_queue_notify ) ; static irqreturn_t knav_queue_int_handler ( int irq , void * _instdata ) { struct knav_queue_inst * inst = _instdata ; knav_queue_notify ( inst , NULL ) ; return IRQ_HANDLED ; } 

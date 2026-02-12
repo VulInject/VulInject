@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "Javier Martin<javier.martin@vista-silicon.com" ) ; MODULE_LICENSE ( "GPL" ) ; MODULE_VERSION ( "0.0.1" ) ; static bool debug ; module_param ( debug , bool , 0644 ) ; v4l2_dbg ( 1 , , , "%s: " , , ) emmaprp_fmt { u32 types ; } 

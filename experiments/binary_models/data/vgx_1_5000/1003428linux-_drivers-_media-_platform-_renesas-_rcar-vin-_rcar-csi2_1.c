@@ -1,0 +1,1 @@
+static int rcsi2_phtw_write_array ( struct rcar_csi2 * priv , const struct phtw_value * values ) { const struct phtw_value * value ; int ret ; for ( value = values ; value -> data || value -> code ; value ++ ) { ret = rcsi2_phtw_write ( priv , value -> data , value -> code ) ; } return 0 ; } 

@@ -1,1 +1,0 @@
-static bool_t xdr_b_nfsstat ( XDR * xdrs , nfsstat * objp ) { return ( xdr_enum ( xdrs ) ) ; } 

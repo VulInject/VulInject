@@ -1,0 +1,1 @@
+static int DetectKrb5CNameSetup ( DetectEngineCtx * de_ctx , Signature * s , const char * arg ) { if ( DetectSignatureSetAppProto ( s , ALPROTO_KRB5 ) != 0 ) { return - 1 ; } return 0 ; } 

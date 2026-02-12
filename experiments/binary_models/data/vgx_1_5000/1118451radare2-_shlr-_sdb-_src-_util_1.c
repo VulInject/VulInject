@@ -1,0 +1,1 @@
+SDB_API int sdb_alen_ignore_empty ( const char * str ) { int len = 1 ; const char * n , * p = str ; while ( * p == SDB_RS ) { p ++ ; } for ( len = 0 ; ; ) { n = strchr ( p , SDB_RS ) ; if ( ! n ) { break ; } p = n + 1 ; if ( * ( p ) == SDB_RS ) { continue ; } len ++ ; } if ( * p ) { len ++ ; } return len ; } 

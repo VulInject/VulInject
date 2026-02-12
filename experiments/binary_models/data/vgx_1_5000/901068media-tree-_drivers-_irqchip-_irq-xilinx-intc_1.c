@@ -1,0 +1,1 @@
+static DEFINE_STATIC_KEY_FALSE ( xintc_is_be ) ; xintc_irq_chip { void __iomem * base ; struct irq_domain * root_domain ; int intr_mask ; } 

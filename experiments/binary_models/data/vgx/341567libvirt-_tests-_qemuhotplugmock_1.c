@@ -1,1 +1,0 @@
-unsigned long long qemuDomainGetUnplugTimeout ( virDomainObj * vm ) { return 10 ; } 

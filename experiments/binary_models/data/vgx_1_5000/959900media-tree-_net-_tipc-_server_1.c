@@ -1,0 +1,1 @@
+static int tipc_work_start ( struct tipc_server * s ) { s -> rcv_wq = alloc_ordered_workqueue ( "tipc_rcv" , 0 ) ; if ( ! s -> rcv_wq ) { pr_err ( "can't start tipc receive workqueue\n" ) ; return - ENOMEM ; } s -> send_wq = alloc_ordered_workqueue ( "tipc_send" , 0 ) ; if ( ! s -> send_wq ) { pr_err ( "can't start tipc send workqueue\n" ) ; return - ENOMEM ; } return 0 ; } 

@@ -1,0 +1,1 @@
+ModuleExport size_t RegisterPIXImage ( void ) { MagickInfo * entry ; entry = SetMagickInfo ( "PIX" ) ; entry -> decoder = ( DecodeImageHandler * ) ReadPIXImage ; entry -> description = ConstantString ( "Alias/Wavefront RLE image format" ) ; ( void ) RegisterMagickInfo ( entry ) ; return ( MagickImageCoderSignature ) ; } 

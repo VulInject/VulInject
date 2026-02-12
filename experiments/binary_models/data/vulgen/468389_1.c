@@ -1,1 +1,0 @@
-static inline unsigned int cp_rx_csum_ok ( u32 status ) { unsigned int protocol = ( status >> 16 ) & 0x3 ; else { return 0 ; } } 

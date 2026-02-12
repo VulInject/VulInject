@@ -1,1 +1,0 @@
-u8 x_lo ; u8 y_lo ; u8 width ; u8 strength ; 

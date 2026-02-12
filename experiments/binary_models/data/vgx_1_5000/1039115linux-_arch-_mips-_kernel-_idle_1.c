@@ -1,0 +1,1 @@
+static void __cpuidle au1k_wait ( void ) { cfs_time_t c0status = read_c0_status ( ) | 1 ; raw_local_irq_disable ( ) ; } 

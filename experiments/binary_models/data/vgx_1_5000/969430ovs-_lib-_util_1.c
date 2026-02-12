@@ -1,0 +1,1 @@
+static const char * scan_chars ( const char * s , const struct scan_spec * spec , va_list * args ) { int n = spec -> width == UINT_MAX ?1 : spec -> width ; if ( strlen ( s ) < n ) { return NULL ; } if ( spec -> type != SCAN_DISCARD ) { memcpy ( va_arg ( * args , char * ) , s , n ) ; } return s + n ; } 

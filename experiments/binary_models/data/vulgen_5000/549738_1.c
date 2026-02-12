@@ -1,0 +1,1 @@
+static void tipc_clean_outqueues ( struct tipc_conn * con ) { struct outqueue_entry * e , * safe ; spin_lock_bh ( & con -> outqueue_lock ) ; list_for_each_entry_safe ( , , , ) { list_del ( & e -> list ) ; tipc_free_entry ( e ) ; } } 

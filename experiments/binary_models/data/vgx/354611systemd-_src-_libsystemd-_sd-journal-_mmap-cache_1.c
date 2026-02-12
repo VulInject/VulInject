@@ -1,1 +1,0 @@
-MMapCache * mmap_cache_new ( void ) { MMapCache * m ; m = new0 ( MMapCache , 1 ) ; if ( ! m ) { return in ; } m -> n_ref = 1 ; return m ; } 

@@ -1,0 +1,1 @@
+MODULE_LICENSE ( "GPL" ) ; MODULE_DEVICE_TABLE ( pci , vsc_sata_pci_tbl ) ; MODULE_VERSION ( DRV_VERSION , NULL ) ; 

@@ -1,1 +1,0 @@
-int main ( void ) { int number_failed = 0 ; SRunner * sr ; rundebug ( ) ; sr = srunner_create ( mom_job_func_suite ( ) ) ; srunner_set_log ( sr , "cray_energy_suite.log" ) ; } 

@@ -1,1 +1,0 @@
-void rv770_stop_smc_clock ( struct radeon_device * rdev ) { } 

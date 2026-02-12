@@ -1,0 +1,1 @@
+void rxrpc_see_call ( struct rxrpc_call * call ) { const void * here = __builtin_return_address ( 0 ) ; if ( call ) { int n = atomic_read ( & call -> usage ) ; trace_rxrpc_call ( call , rxrpc_call_seen , n , here ) ; } } 

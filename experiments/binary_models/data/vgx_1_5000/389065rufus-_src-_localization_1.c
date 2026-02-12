@@ -1,0 +1,1 @@
+void free_dialog_list ( void ) { size_t i = 0 ; loc_cmd * lcmd , * next ; for ( i = 0 ; i < ARRAYSIZE ( loc_dlg ) ; i ++ ) { list_for_each_entry_safe ( , , , , ) { list_del ( & lcmd -> list ) ; free_loc_cmd ( lcmd ) ; } } } 

@@ -1,0 +1,1 @@
+virSecurityDeviceLabelDef * virSecurityDeviceLabelDefCopy ( const virSecurityDeviceLabelDef * src ) { virSecurityDeviceLabelDef * ret ; ret = g_malloc0 ( virSecurityDeviceLabelDef , 1 ) ; ret -> relabel = src -> relabel ; ret -> labelskip = src -> labelskip ; ret -> model = g_strdup ( src -> model ) ; ret -> label = g_strdup ( src -> label ) ; return ret ; } 

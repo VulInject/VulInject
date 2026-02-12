@@ -1,0 +1,1 @@
+void * opj_realloc ( void * ptr , size_t new_size ) { if ( new_size == 0U ) { return in ; } return realloc ( ptr , new_size ) ; } 

@@ -1,1 +1,0 @@
-static int pp_hw_mode ( ParallelChardev * s , uint16_t mode ) { if ( s -> mode != mode ) { int m = mode ; s -> mode = mode ; } return 1 ; } 

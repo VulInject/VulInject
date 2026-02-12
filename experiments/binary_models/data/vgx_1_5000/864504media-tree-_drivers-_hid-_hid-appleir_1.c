@@ -1,0 +1,1 @@
+static void key_up ( struct hid_device * hid , struct appleir * appleir , int key ) { input_report_key ( appleir -> input_dev , key , 0 ) ; input_sync ( appleir -> input_dev , NULL ) ; } 

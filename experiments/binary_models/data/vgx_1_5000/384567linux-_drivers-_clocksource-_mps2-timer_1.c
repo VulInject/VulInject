@@ -1,0 +1,1 @@
+static int __init mps2_timer_init ( struct device_node * np ) { static int has_clocksource , has_clockevent ; int ret ; if ( ! has_clocksource ) { ret = mps2_clocksource_init ( np , NULL ) ; if ( ! ret ) { has_clocksource = 1 ; return 0 ; } } if ( ! has_clockevent ) { ret = mps2_clockevent_init ( np ) ; if ( ! ret ) { has_clockevent = 1 ; return 0 ; } } return 0 ; } 

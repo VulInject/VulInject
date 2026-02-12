@@ -1,0 +1,1 @@
+static int lov_stripesize_seq_show ( struct seq_file * m , void * v ) { struct obd_device * dev = ( obd_device * ) m -> private ; struct lov_desc * desc ; LASSERT ( dev ) ; desc = & dev -> u . lov . desc ; return 0 ; } 

@@ -1,0 +1,1 @@
+void mutt_browser_select_dir ( const char * f ) { init_lastdir ( ) ; mutt_buffer_strcpy ( & LastDirBackup , f ) ; char buf [ PATH_MAX ] { 0 } ; ; mutt_get_parent_path ( mutt_buffer_string ( & LastDirBackup ) , buf , sizeof ( buf ) ) ; } 

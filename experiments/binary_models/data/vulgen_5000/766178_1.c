@@ -1,0 +1,1 @@
+WSLUA_CONSTRUCTOR Int64_fromhex ( lua_State * L ) { guint64 result = 0 ; size_t len ; const gchar * s = luaL_checklstring ( L , WSLUA_ARG_Int64_fromhex_HEX , & len ) ; if ( len > 0 ) { if ( sscanf ( s , "%" SCNx64 , & result ) != 1 ) { return luaL_error ( L , "Error decoding the passed-in hex string" ) ; } } pushInt64 ( L , ( gint64 ) result ) ; WSLUA_RETURN ( 1 ) ; } 

@@ -1,0 +1,1 @@
+MODRET sql_escapestr ( cmd_rec * cmd ) { modret_t * mr ; sql_log ( DEBUG_FUNC , "%s" , ">>>sql_escapestr" ) ; if ( check_response ( mr , 0 ) < 0 ) { sql_log ( DEBUG_FUNC , "%s" , "<<<sql_escapestr" ) ; return mr ; } sql_log ( DEBUG_FUNC , "%s" , "<<<sql_escapestr" ) ; return mr ; } 

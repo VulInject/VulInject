@@ -1,1 +1,0 @@
-cairo_gl_surface_get_width ( ) { cairo_gl_surface_t * surface = ( cairo_gl_surface_t * ) abstract_surface ; return surface -> width ; } 

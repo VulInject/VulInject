@@ -1,0 +1,1 @@
+u16 prm_features ; static struct prm_ll_data null_prm_ll_data ; static struct prm_ll_data * prm_ll_data = & null_prm_ll_data ; static void omap_prcm_events_filter_priority ( unsigned long * events , unsigned long * priority_events ) { int i ; for ( i = 0 ; i < prcm_irq_setup -> nr_regs ; i ++ ) { events [ i ] ^= priority_events [ i ] ; } } 

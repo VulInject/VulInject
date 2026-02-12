@@ -1,0 +1,1 @@
+void PQtrace ( PGconn * conn , FILE * debug_port ) { if ( conn == NULL ) { return ; } PQuntrace ( conn ) ; conn -> Pfdebug = debug_port ; conn -> traceFlags = 0 ; } 

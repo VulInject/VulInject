@@ -1,0 +1,1 @@
+try_dir ( , ) { if ( base != 0 ) { return base ; } return 0 ; } 

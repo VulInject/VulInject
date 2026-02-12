@@ -1,1 +1,0 @@
-static void mt76_mmio_wr ( struct mt76_dev * dev , u32 offset , u32 val ) { trace_reg_wr ( dev , offset , val ) ; } 

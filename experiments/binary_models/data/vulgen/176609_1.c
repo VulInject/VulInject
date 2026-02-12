@@ -1,1 +1,0 @@
-static const u32 reg_filt_rout_hash_flush_fmask [ ] { [ IPV6_ROUTER_HASH ] = BIT ( 0 ) [ IPV6_FILTER_HASH ] = BIT ( 4 ) [ IPV4_ROUTER_HASH ] = BIT ( 8 ) [ IPV4_FILTER_HASH ] = BIT ( 12 ) } ; ; 

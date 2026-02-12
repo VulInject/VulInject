@@ -1,0 +1,1 @@
+int main ( void ) { frob ( x ) ; return 0 ; } 

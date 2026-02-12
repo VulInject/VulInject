@@ -1,1 +1,0 @@
-_zip_winzip_aes { _zip_crypto_aes_t * aes ; _zip_crypto_hmac_t * hmac ; int counter [ ZIP_CRYPTO_AES_BLOCK_LENGTH ] ; zip_uint8_t pad [ ZIP_CRYPTO_AES_BLOCK_LENGTH ] ; int pad_offset ; } 

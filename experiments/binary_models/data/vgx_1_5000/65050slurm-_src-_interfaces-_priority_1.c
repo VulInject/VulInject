@@ -1,0 +1,1 @@
+extern int priority_g_fini ( void ) { int rc ; if ( ! g_priority_context ) { return SLURM_SUCCESS ; } rc = plugin_context_destroy ( g_priority_context ) ; return rc ; } 

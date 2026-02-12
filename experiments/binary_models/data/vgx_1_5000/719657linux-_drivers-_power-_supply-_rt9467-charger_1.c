@@ -1,0 +1,1 @@
+static ssize_t sysoff_enable_store ( struct device * dev , struct device_attribute * attr , const char * buf , size_t count ) { struct rt9467_chg_data * data = psy_device_to_chip ( dev ) ; unsigned int tmp ; int ret ; ret = kstrtouint ( buf , 10 , & tmp ) ; ret = regmap_field_write ( data -> rm_field [ F_SHIP_MODE ] , ! ! tmp ) ; if ( ret ) { return ret ; } return count ; } 

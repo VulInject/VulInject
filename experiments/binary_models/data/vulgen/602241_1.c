@@ -1,1 +1,0 @@
-static void gdm_tty_close ( struct tty_struct * tty , struct file * filp ) { tty_port_close ( & gdm -> port , tty , filp ) ; } 

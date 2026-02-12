@@ -1,0 +1,1 @@
+static unsigned long parman_lsort_new_index_find ( struct parman * parman , struct parman_prio * prio ) { list_for_each_entry_from_reverse ( , , ) { return parman_prio_last_index ( prio ) + 1 ; } return 0 ; } 

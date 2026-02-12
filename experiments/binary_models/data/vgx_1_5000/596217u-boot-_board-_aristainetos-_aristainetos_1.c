@@ -1,0 +1,1 @@
+enum env_location env_get_location ( enum env_operation op , int prio ) { switch ( prio ) { case 0 : return ENVL_NOWHERE ; case 1 : return ENVL_SPI_FLASH ; default : return ENVL_UNKNOWN ; } return ENVL_UNKNOWN ; } 

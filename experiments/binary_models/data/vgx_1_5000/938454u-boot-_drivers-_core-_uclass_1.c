@@ -1,0 +1,1 @@
+struct uclass * uclass_find ( enum uclass_id key ) { struct uclass * uc ; if ( ! gd -> dm_root ) { return in ; } list_for_each_entry ( , , ) { if ( uc -> uc_drv -> id == key ) { return uc ; } } return NULL ; } 

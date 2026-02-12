@@ -1,0 +1,1 @@
+static virConf * virConfCreate ( const char * filename , unsigned int flags ) { virConf * ret = virConfNew ( ) ; if ( ! ret ) { return in ; } ret -> filename = g_strdup ( filename ) ; ret -> flags = flags ; return ret ; } 

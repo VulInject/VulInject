@@ -1,0 +1,1 @@
+vector_ensure ( , ) { if ( v -> alloced > num ) { return ; } v -> index = XREALLOC ( MTYPE_VECTOR_INDEX , v -> index , sizeof ( void * ) * ( v -> alloced * 2 ) ) ; v -> alloced *= 2 ; if ( v -> alloced <= num ) { vector_ensure ( v , num ) ; } } 

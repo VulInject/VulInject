@@ -1,0 +1,1 @@
+int virNetDevMacVLanVPortProfileRegisterCallback ( const char * ifname , const virMacAddr * macaddress , const char * linkdev , const unsigned char * vmuuid , const virNetDevVPortProfile * virtPortProfile , virNetDevVPortProfileOp vmOp ) { struct virNetlinkCallbackData * calld = NULL ; return 0 ; error virNetlinkCallbackDataFree ( calld ) ; return - 1 ; } 

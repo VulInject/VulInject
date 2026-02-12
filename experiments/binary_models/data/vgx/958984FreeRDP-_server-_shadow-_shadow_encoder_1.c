@@ -1,1 +1,0 @@
-static int shadow_encoder_uninit_rfx ( rdpShadowEncoder * encoder ) { if ( encoder -> rfx ) { encoder -> rfx = NULL ; } encoder -> codecs &= ( UINT32 ) ~ FREERDP_CODEC_REMOTEFX ; return 1 ; } 

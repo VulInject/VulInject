@@ -1,1 +1,0 @@
-int save_named_trigger ( const char * name , struct event_trigger_data * data ) { data -> name = kstrdup ( name , GFP_KERNEL ) ; list_add ( & data -> named_list , & named_triggers ) ; return 0 ; } 

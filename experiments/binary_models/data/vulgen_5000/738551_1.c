@@ -1,0 +1,1 @@
+static ssize_t gadget_dev_desc_ # # _name # # _store ( , , ) { u8 val int ret ret = kstrtou8 ( page , 0 , & val ) to_gadget_info ( item ) -> cdev . desc . _name = val } ; return len ; 

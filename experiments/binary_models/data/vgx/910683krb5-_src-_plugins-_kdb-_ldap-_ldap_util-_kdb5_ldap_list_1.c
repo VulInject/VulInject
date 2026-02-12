@@ -1,1 +1,0 @@
-void FUN1 ( char * * VAR1 ) { for ( ; * VAR1 != NULL ; VAR1 ++ ) { free ( * VAR1 ) ; * VAR1 = NULL ; } return ; }

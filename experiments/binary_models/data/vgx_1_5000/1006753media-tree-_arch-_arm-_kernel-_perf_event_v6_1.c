@@ -1,0 +1,1 @@
+static inline unsigned long armv6_pmcr_read ( void ) { int val ; volatile return val ; } 

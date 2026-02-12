@@ -1,1 +1,0 @@
-static void bahamut_holdnick_sts ( struct user * source , int duration , const char * nick , struct myuser * mu ) { } 

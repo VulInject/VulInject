@@ -1,0 +1,1 @@
+static char * srcline_from_fileline ( const char * file , unsigned int line ) { char * srcline ; if ( ! file ) { return in ; } if ( ! srcline_full_filename ) { file = gnu_basename ( file ) ; } if ( asprintf ( & srcline , "%s:%u" , file , line ) < 0 ) { return NULL ; } return srcline ; } 

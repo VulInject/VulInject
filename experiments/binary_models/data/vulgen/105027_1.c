@@ -1,1 +1,0 @@
-static struct node * node_val_new ( enum node_type type , int pindex ) { struct node * node = xmalloc ( sizeof ( node_val ) ) ; node -> type = type ; return node ; } 

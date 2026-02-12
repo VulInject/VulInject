@@ -1,0 +1,1 @@
+static const struct fscache_state * fscache_invalidate_object ( struct fscache_object * object , int event ) { const struct fscache_state * s ; fscache_stat ( & fscache_n_invalidates_run ) ; fscache_stat ( & fscache_n_cop_invalidate_object ) ; fscache_stat_d ( & fscache_n_cop_invalidate_object ) ; return s ; } 

@@ -1,1 +1,0 @@
-int _assert_streq ( const char * actual , const char * expected ) { if ( strcmp ( actual , expected ) != 0 ) { return 0 ; } return 1 ; } 

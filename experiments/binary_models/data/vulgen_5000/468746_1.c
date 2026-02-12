@@ -1,0 +1,1 @@
+int cmd_hook ( int argc , const char * * argv , const char * prefix ) { parse_opt_subcommand_fn * fn = NULL ; struct option builtin_hook_options [ ] { OPT_SUBCOMMAND ( "run" , & fn , run ) OPT_END ( ) } ; ; return fn ( argc , argv , prefix ) ; } 

@@ -1,0 +1,1 @@
+ARGV_t argvFree ( ARGV_t argv ) { if ( argv ) { for ( ARGV_t av = argv ; * av ; av ++ ) { free ( * av ) ; } } return NULL ; } 

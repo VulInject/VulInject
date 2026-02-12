@@ -1,0 +1,1 @@
+static int mod_init ( void ) add_event_t pres_add_event ; int force_single_dialog = 0 ; int force_dummy_dialog = 0 ; int pres_dlginfo_default_expires = 3600 ; static cmd_export_t cmds [ ] { { 0 0 0 0 0 0 } } ; ; 

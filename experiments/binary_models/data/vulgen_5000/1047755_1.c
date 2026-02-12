@@ -1,0 +1,1 @@
+void nln_report ( const struct nln * nln , void * change , int group ) { struct nln_notifier * notifier ; if ( change ) { COVERAGE_INC ( nln_changed ) ; } LIST_FOR_EACH ( , , ) { if ( ! change || group == notifier -> multicast_group ) { } } } 

@@ -1,0 +1,1 @@
+static void log_proxy_request ( long code , txn_t * txn , hdrcache_t resp_hdrs , struct body_t * resp_body ) { extern const char * ce_strings [ ] ; txn -> flags . te = resp_body -> te ; txn -> resp_body . len = resp_body -> len ; const char * * hdr = spool_getheader ( resp_hdrs , "Content-Encoding" ) ; log_request ( code , txn ) ; } 

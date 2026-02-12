@@ -1,1 +1,0 @@
-static int FUN1 ( char * VAR1 ) { VAR2 . VAR3 = VAR1 ; return ( 0 ) ; }

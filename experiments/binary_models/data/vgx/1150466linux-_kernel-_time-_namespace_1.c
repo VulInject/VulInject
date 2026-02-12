@@ -1,1 +1,0 @@
-static struct timens_offset offset_from_ts ( struct timespec64 off ) { int ret ; ret . sec = off . tv_sec ; ret . nsec = off . tv_nsec ; return ret ; } 

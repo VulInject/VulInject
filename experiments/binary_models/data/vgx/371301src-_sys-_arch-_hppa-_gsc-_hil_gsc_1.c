@@ -1,1 +1,0 @@
-int hil_gsc_match ( struct device * parent , void * match , void * aux ) { struct gsc_attach_args * ga = aux ; return ( 1 ) ; } 

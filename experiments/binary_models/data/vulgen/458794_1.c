@@ -1,1 +1,0 @@
-static void free_blobs ( RList * blobs ) { if ( blobs ) { RListIter * iter ; RvcBlob * blob ; r_list_foreach ( , , ) { free ( blob -> fhash ) ; free ( blob -> fname ) ; } r_list_free ( blobs ) ; } } 

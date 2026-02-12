@@ -1,0 +1,1 @@
+int qed_cxt_tables_alloc ( struct qed_hwfn * p_hwfn ) { int rc ; rc = qed_ilt_shadow_alloc ( p_hwfn ) ; if ( rc ) { tables_alloc_fail } rc = qed_cxt_src_t2_alloc ( p_hwfn ) ; if ( rc ) { tables_alloc_fail } rc = qed_cid_map_alloc ( p_hwfn ) ; if ( rc ) { tables_alloc_fail } return 0 ; tables_alloc_fail return rc ; } 

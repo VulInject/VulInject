@@ -1,1 +1,0 @@
-static int eqencoding ( const char * * a , const char * * b ) { int i ; for ( i = 0 ; a [ i ] != 0 && b [ i ] != 0 ; i ++ ) { if ( a [ i ] != b [ i ] && ( a [ i ] == 0 || b [ i ] == 0 || strcmp ( a [ i ] , b [ i ] ) != 0 ) ) { return 0 ; } } return 1 ; } 

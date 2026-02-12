@@ -1,0 +1,1 @@
+static void snd_usbtv_trigger ( struct work_struct * work ) { struct usbtv * chip = container_of ( work , usbtv , snd_trigger ) ; if ( atomic_read ( & chip -> snd_stream ) ) { usbtv_audio_start ( chip ) ; } else { usbtv_audio_stop ( chip ) ; } } 

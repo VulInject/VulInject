@@ -1,0 +1,1 @@
+int main ( ) { test_function ( u16_mbtouc , NULL ) ; return 0 ; } 

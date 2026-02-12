@@ -1,0 +1,1 @@
+static void dsmark_reset ( struct Qdisc * sch ) { struct dsmark_qdisc_data * p = qdisc_priv ( sch ) ; pr_debug ( "%s(sch %p,[qdisc %p])\n" , __func__ , sch , p ) ; sch -> qstats . backlog = 0 ; sch -> q . qlen = 0 ; } 

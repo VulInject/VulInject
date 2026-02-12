@@ -1,0 +1,1 @@
+static usec_t user_get_stop_delay ( User * u ) { assert ( u ) ; if ( u -> user_record -> stop_delay_usec != UINT64_MAX ) { return u -> user_record -> stop_delay_usec ; } return u -> manager -> user_stop_delay ; } 

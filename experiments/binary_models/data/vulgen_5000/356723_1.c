@@ -1,0 +1,1 @@
+int wcn36xx_smd_open ( struct wcn36xx * wcn ) { int ret = 0 ; wcn -> hal_ind_wq = create_freezable_workqueue ( "wcn36xx_smd_ind" ) ; if ( ! wcn -> hal_ind_wq ) { wcn36xx_err ( "failed to allocate wq\n" ) ; ret = - ENOMEM ; out } INIT_WORK ( & wcn -> hal_ind_work , wcn36xx_ind_smd_work ) ; INIT_LIST_HEAD ( & wcn -> hal_ind_queue ) ; return 0 ; out return ret ; } 

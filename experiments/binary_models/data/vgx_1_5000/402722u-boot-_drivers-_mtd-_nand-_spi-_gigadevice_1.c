@@ -1,0 +1,1 @@
+static int gd5fxgqxxexxg_ooblayout_free ( struct mtd_info * mtd , int section , struct mtd_oob_region * region ) { region -> offset = 1 ; region -> length = 63 ; return 0 ; } 

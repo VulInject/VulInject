@@ -1,0 +1,1 @@
+struct vnic_dev * svnic_dev_alloc_discover ( struct vnic_dev * vdev , void * priv , struct pci_dev * pdev , struct vnic_dev_bar * bar , unsigned int num_bars ) { vdev -> priv = priv ; vdev -> pdev = pdev ; if ( vnic_dev_discover_res ( vdev , bar , num_bars ) ) { err_out } return vdev ; err_out svnic_dev_unregister ( vdev ) ; return NULL ; } 

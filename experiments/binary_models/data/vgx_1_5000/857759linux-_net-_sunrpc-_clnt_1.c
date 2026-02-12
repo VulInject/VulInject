@@ -1,0 +1,1 @@
+static int __rpc_restart_call ( struct rpc_task * task , void * action ( struct rpc_task * ) ) { task -> tk_rpc_status = 0 ; task -> tk_action = action ; return 1 ; } 

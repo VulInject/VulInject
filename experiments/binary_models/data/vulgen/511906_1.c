@@ -1,1 +1,0 @@
-{ UC_CATEGORY_MASK_Ps , 0 , { u_categ_Ps } ; } 

@@ -1,1 +1,0 @@
-static void test_lifecycle ( void ) { Coroutine * coroutine ; bool done = false ; coroutine = qemu_coroutine_create ( set_and_exit , & done ) ; qemu_coroutine_enter ( coroutine ) ; g_assert ( done ) ; coroutine = qemu_coroutine_create ( set_and_exit , & done ) ; qemu_coroutine_enter ( coroutine ) ; g_assert ( done ) ; } 

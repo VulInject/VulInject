@@ -1,1 +1,0 @@
-void spu_forget ( struct spu_context * ctx ) { struct mm_struct * mm ; mutex_lock ( & ctx -> state_mutex ) ; if ( ctx -> state != SPU_STATE_SAVED ) { spu_deactivate ( ctx ) ; } mm = ctx -> owner ; mmput ( mm ) ; spu_release ( ctx ) ; } 

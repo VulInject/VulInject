@@ -1,1 +1,0 @@
-static inline u32 msi_readl ( struct altera_msi * msi , const u32 reg ) { return readl_relaxed ( msi -> csr_base ) ; } 

@@ -1,0 +1,1 @@
+static int __maybe_unused hash_init_sha1 ( struct hash_algo * algo , void * * ctxp ) { sha1_context * ctx = malloc ( sizeof ( sha1_context ) ) ; * ctxp = ctx ; return 0 ; } 

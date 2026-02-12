@@ -1,0 +1,1 @@
+static int w_forward_reply ( sip_msg_t * msg , char * p1 , char * p2 ) { forward_reply ( msg , NULL ) ; return 1 ; } 

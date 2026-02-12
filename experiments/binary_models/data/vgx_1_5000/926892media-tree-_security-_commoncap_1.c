@@ -1,0 +1,1 @@
+int cap_capable ( const struct cred * cred , struct user_namespace * targ_ns , int cap , int audit ) { struct user_namespace * ns = targ_ns ; for ( ; ; ) { if ( ns == & init_user_ns ) { return - EPERM ; } if ( ( ns -> parent == cred -> user_ns ) && uid_eq ( ns -> owner , cred -> euid ) ) { return 0 ; } ns = ns -> parent ; } } 

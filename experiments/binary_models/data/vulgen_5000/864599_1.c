@@ -1,0 +1,1 @@
+( fc_vport_setlink ) ; void fc_vports_linkchange ( struct fc_lport * n_port ) { struct fc_lport * vn_port ; list_for_each_entry ( , , ) { __fc_vport_setlink ( n_port , vn_port ) ; mutex_unlock ( & vn_port -> lp_mutex ) ; } } 

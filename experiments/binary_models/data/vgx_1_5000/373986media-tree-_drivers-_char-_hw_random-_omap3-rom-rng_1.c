@@ -1,0 +1,1 @@
+static int omap3_rom_rng_read ( struct hwrng * rng , void * data , size_t max , bool w ) { int r ; r = omap3_rom_rng_get_random ( data , 4 ) ; return 4 ; } 

@@ -1,0 +1,1 @@
+void mISDN_dsp_element_unregister ( struct mISDN_dsp_element * elem ) { struct dsp_element_entry * entry , * n ; list_for_each_entry_safe ( , , , ) if ( entry -> elem == elem ) { device_unregister ( & entry -> dev ) ; return ; } printk ( KERN_ERR "%s: element %s not in list.\n" , __func__ , elem -> name ) ; } 

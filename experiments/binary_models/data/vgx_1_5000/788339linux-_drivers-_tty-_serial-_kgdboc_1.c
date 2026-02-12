@@ -1,0 +1,1 @@
+static void kgdboc_put_char ( u8 chr ) { kgdb_tty_driver -> ops -> poll_put_char ( kgdb_tty_driver , kgdb_tty_line , chr ) ; } 

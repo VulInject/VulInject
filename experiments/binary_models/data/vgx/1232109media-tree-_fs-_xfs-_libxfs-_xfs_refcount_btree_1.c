@@ -1,1 +1,0 @@
-xfs_extlen_t FUN1 ( struct VAR1 * VAR2 , xfs_agblock_t VAR3 ) { return FUN2 ( VAR2 , VAR3 ) ; }

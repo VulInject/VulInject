@@ -1,1 +1,0 @@
-struct mailimap_fetch_att * mailimap_fetch_att_new_xgmthrid ( void ) { char * keyword ; struct mailimap_fetch_att * att ; keyword = strdup ( "X-GM-THRID" ) ; if ( keyword == NULL ) { return NULL ; } att = mailimap_fetch_att_new_extension ( keyword ) ; if ( att == NULL ) { return NULL ; } return att ; } 

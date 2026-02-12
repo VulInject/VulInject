@@ -1,1 +1,0 @@
-gsf_outfile_stdio_finalize ( ) { GsfOutfileStdio * ofs = GSF_OUTFILE_STDIO ( obj ) ; parent_class -> finalize ( obj ) ; } 

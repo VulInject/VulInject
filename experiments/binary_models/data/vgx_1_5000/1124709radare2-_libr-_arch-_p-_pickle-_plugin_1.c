@@ -1,0 +1,1 @@
+static inline char * get_line ( const ut8 * buf , int len ) { char * str = r_str_ndup ( ( char * ) buf , len ) ; if ( str ) { char * n = strchr ( str , '\n' ) ; if ( n ) { * n = 0 ; if ( r_str_is_ascii ( str ) ) { return str ; } } } return NULL ; } 

@@ -1,1 +1,0 @@
-AcpiUtSafeStrncpy ( , , ) { strncpy ( Dest , Source , DestSize ) ; } 

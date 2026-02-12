@@ -1,0 +1,1 @@
+void mpu_readinput ( struct mpu_softc * sc ) { bus_space_tag_t iot = sc -> iot ; bus_space_handle_t ioh = sc -> ioh ; int data ; while ( ! ( MPU_GETSTATUS ( iot , ioh ) & MPU_INPUT_EMPTY ) ) { data = bus_space_read_1 ( iot , ioh , MPU_DATA ) ; DPRINTFN ( 3 , ( "mpu_rea: sc=%p 0x%02x\n" , sc , data ) ) ; } } 

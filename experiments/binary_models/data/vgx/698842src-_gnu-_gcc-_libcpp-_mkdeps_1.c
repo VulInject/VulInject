@@ -1,1 +1,0 @@
-deps_phony_targets ( , ) { int i ; for ( i = 1 ; i < d -> ndeps ; i ++ ) { putc ( '\n' , fp ) ; fputs ( d -> depv [ i ] , fp ) ; putc ( ':' , fp ) ; putc ( '\n' , fp ) ; } } 

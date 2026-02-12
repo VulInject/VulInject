@@ -1,1 +1,0 @@
-nft_counter { s64 packets ; } 

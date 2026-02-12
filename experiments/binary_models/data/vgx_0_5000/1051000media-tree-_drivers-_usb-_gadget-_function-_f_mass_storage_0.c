@@ -1,0 +1,26 @@
+static int do_read_toc(struct fsg_common *common, struct fsg_buffhd *bh)
+{
+struct fsg_lun	*curlun = common->curlun;
+int		msf = common->cmnd[1] & 0x02;
+int		start_track = common->cmnd[6];
+u8		*buf = (u8 *)bh->buf;
+
+if ((common->cmnd[1] & ~0x02) != 0 ||	
+start_track > 1) {
+curlun->sense_data = SS_INVALID_FIELD_IN_CDB;
+return -EINVAL;
+}
+
+memset(buf, 0, 20);
+buf[1] = (20-2);		
+buf[2] = 1;			
+buf[3] = 1;			
+buf[5] = 0x16;			
+buf[6] = 0x01;			
+store_cdrom_address(&buf[8], msf, 0);
+
+buf[13] = 0x16;			
+buf[14] = 0xAA;			
+store_cdrom_address(&buf[16], msf, curlun->num_sectors);
+return 20;
+}

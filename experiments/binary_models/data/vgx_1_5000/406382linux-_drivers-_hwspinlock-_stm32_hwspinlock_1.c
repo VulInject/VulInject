@@ -1,0 +1,1 @@
+static int __maybe_unused stm32_hwspinlock_runtime_suspend ( struct device * dev ) { struct stm32_hwspinlock * hw = dev_get_drvdata ( dev ) ; clk_disable_unprepare ( hw -> clk , NULL ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void fsl_edma_enable_request ( struct fsl_edma_chan * fsl_chan ) { struct edma_regs * regs = & fsl_chan -> edma -> regs ; u32 ch = fsl_chan -> vchan . chan . chan_id ; else { iowrite8 ( EDMA_SEEI_SEEI ( ch ) , regs -> seei ) ; iowrite8 ( ch , regs -> serq ) ; } } 

@@ -1,0 +1,1 @@
+( input_register_handle ) ; void input_unregister_handle ( struct input_handle * handle ) { struct input_dev * dev = handle -> dev ; list_del_rcu ( & handle -> h_node ) ; list_del_rcu ( & handle -> d_node ) ; mutex_unlock ( & dev -> mutex ) ; synchronize_rcu ( ) ; } 

@@ -1,0 +1,1 @@
+int qlw_pci_match ( struct device * parent , void * match , void * aux ) { struct pci_attach_args * pa = aux ; if ( PCI_PRODUCT ( pa -> pa_id ) == PCI_PRODUCT_QLOGIC_ISP12160 ) { pcireg_t subid ; subid = pci_conf_read ( pa -> pa_pc , pa -> pa_tag , PCI_SUBVEND_0 ) ; } return ( pci_matchbyid ( aux , qlw_devices , nitems ( qlw_devices ) ) * 2 ) ; } 

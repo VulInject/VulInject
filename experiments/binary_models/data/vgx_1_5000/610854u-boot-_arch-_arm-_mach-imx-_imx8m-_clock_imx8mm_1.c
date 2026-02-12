@@ -1,0 +1,1 @@
+int enable_i2c_clk ( unsigned char enable , unsigned i2c_num ) { u8 i2c_ccgr [ 6 ] { CCGR_I2C1 CCGR_I2C2 CCGR_I2C3 CCGR_I2C4 CCGR_I2C5_8MP CCGR_I2C6_8MP } ; ; clock_enable ( i2c_ccgr [ i2c_num ] , ! ! enable ) ; return 0 ; } 

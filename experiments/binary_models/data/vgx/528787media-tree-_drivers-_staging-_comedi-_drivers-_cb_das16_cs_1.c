@@ -1,1 +1,0 @@
-static const void * das16cs_find_boardinfo ( struct comedi_device * dev , struct pcmcia_device * link ) { const struct das16cs_board * board ; int i ; for ( i = 0 ; i < ARRAY_SIZE ( das16cs_boards ) ; i ++ ) { board = & das16cs_boards [ i ] ; } return NULL ; } 

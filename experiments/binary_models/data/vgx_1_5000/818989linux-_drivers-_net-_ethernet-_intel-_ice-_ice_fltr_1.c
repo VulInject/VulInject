@@ -1,0 +1,1 @@
+static int ice_fltr_add_entry_to_list ( struct device * dev , struct ice_fltr_info * info , struct list_head * list ) { struct ice_fltr_list_entry * entry ; entry = devm_kzalloc ( dev , sizeof ( * entry ) , GFP_ATOMIC ) ; entry -> fltr_info = * info ; INIT_LIST_HEAD ( & entry -> list_entry ) ; list_add ( & entry -> list_entry , list ) ; return 0 ; } 

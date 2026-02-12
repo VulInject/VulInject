@@ -1,0 +1,1 @@
+( char * ) msg . value ; void ; gss_release_buffer ( & gmin_stat , & msg ) ; ( gmaj_stat != GSS_S_CONTINUE_NEEDED ) ; break ; ( debug ) { ( void ) fprintf ( stderr , "GSSAPI error: %s\n" , errstr ) } ; 

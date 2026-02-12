@@ -1,1 +1,0 @@
-int fuzz_cleanup ( void ) { SMARTLIST_FOREACH ( dummy_vote -> known_flags , char * , cp , tor_free ( cp ) ) ; tor_free ( dummy_vote ) ; return 0 ; } 

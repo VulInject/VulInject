@@ -1,1 +1,0 @@
-static void tcf_skbmod_cleanup ( struct tc_action * a , int bind ) { struct tcf_skbmod * d = to_skbmod ( a ) ; struct tcf_skbmod_params * p ; kfree_rcu ( p , rcu ) ; } 

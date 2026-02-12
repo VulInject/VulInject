@@ -1,0 +1,1 @@
+static void diagq ( err_t ugh , const char * this ) { if ( ugh != NULL ) { if ( this == NULL ) { diagw ( ugh ) ; } else { char buf [ 120 ] ; sprintf ( buf , "%s \"%s\"" , ugh , this ) ; diagw ( buf ) ; } } } 

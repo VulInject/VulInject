@@ -1,0 +1,1 @@
+void BrotliFree ( MemoryManager * m , void * p ) { m -> free_func ( m -> opaque , p ) ; if ( m -> new_freed == MAX_NEW_FREED ) { CollectGarbagePointers ( m ) ; } m -> pointers [ NEW_FREED_OFFSET + ( m -> new_freed ++ ) ] = p ; } 

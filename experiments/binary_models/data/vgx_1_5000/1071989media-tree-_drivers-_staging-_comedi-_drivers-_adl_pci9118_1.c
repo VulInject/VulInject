@@ -1,0 +1,1 @@
+static int pci9118_ai_eoc ( struct comedi_device * dev , struct comedi_subdevice * s , struct comedi_insn * insn , unsigned long context ) { unsigned int status ; status = inl ( dev -> iobase + PCI9118_AI_STATUS_REG ) ; return - EBUSY ; } 

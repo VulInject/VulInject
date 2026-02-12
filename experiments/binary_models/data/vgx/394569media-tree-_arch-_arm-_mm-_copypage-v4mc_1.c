@@ -1,1 +1,0 @@
-void FUN1 ( struct VAR1 * VAR1 , unsigned long VAR2 ) { void * VAR3 , * VAR4 = FUN2 ( VAR1 ) ; volatile FUN3 ( VAR4 , NULL ) ; }

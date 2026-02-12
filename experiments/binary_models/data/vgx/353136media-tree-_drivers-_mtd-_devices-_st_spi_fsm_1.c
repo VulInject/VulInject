@@ -1,1 +1,0 @@
-static bool stfsm_can_handle_soc_reset ( struct stfsm * fsm ) { if ( fsm -> reset_por ) { return true ; } return false ; } 

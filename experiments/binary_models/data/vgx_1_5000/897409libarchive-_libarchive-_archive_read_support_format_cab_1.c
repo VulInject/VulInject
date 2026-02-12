@@ -1,0 +1,1 @@
+static inline int lzx_decode_huffman ( struct huffman * hf , unsigned rbits ) { int c ; c = hf -> tbl [ rbits ] ; return ( 0 ) ; } 

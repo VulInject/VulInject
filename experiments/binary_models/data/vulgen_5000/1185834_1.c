@@ -1,0 +1,1 @@
+static void _netlogon_derive_rc4_seal_key ( gssnetlogon_ctx ctx , NL_AUTH_SIGNATURE * sig , EVP_CIPHER_CTX * sealkey , int enc ) { uint8_t xorKey [ 16 ] ; int i ; for ( i = 0 ; i < sizeof ( xorKey ) ; i ++ ) { xorKey [ i ] = ctx -> SessionKey [ i ] ^ 0xF0 ; } memset ( xorKey , 0 , sizeof ( xorKey ) ) ; } 

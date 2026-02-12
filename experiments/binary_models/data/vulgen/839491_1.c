@@ -1,1 +1,0 @@
-extern int debug_logging_mode ; { int64_t ckDataSize ; } DFFChunkHeader 

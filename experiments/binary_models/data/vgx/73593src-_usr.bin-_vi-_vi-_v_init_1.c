@@ -1,1 +1,0 @@
-int v_screen_end ( SCR * sp ) { VI_PRIVATE * vip ; if ( ( vip = VIP ( sp ) ) == NULL ) { return ( 0 ) ; } free ( vip -> keyw ) ; free ( vip -> rep ) ; free ( vip -> ps ) ; free ( HMAP ) ; free ( vip ) ; return ( 0 ) ; } 

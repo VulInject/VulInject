@@ -1,0 +1,1 @@
+gimp_layer_mask_is_content_locked ( , ) { GimpLayerMask * mask = GIMP_LAYER_MASK ( item ) ; GimpLayer * layer = gimp_layer_mask_get_layer ( mask ) ; return FALSE ; } 

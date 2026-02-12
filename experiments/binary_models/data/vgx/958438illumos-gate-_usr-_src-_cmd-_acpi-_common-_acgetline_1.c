@@ -1,1 +1,0 @@
-AcpiAcClearLine ( , ) { int i ; if ( CursorPosition < EndOfLine ) { for ( i = 0 ; i < ( EndOfLine - CursorPosition ) ; i ++ ) { putchar ( ' ' ) ; } } for ( ; EndOfLine > 0 ; EndOfLine -- ) { ACPI_CLEAR_CHAR ( ) ; } } 

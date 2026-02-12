@@ -1,0 +1,1 @@
+static int cpu_has_cpufreq ( unsigned int cpu ) { struct cpufreq_policy policy ; return 1 ; } 

@@ -1,0 +1,1 @@
+static int live_active_context ( void * arg ) { struct intel_gt * gt = arg ; struct intel_engine_cs * engine ; enum intel_engine_id id ; int err = 0 ; for_each_engine ( , , ) { err = __live_active_context ( engine ) ; err = igt_flush_test ( gt -> i915 ) ; if ( err ) { break ; } } return err ; } 

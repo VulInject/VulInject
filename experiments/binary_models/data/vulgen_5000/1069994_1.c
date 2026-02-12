@@ -1,0 +1,1 @@
+static int nv04_nvsw_mthd_get_ref ( struct nvkm_nvsw * nvsw , void * data , u32 size ) { struct nv04_sw_chan * chan = nv04_sw_chan ( nvsw -> chan ) ; { struct nv04_nvsw_get_ref_v0 v0 ; } , * args = data int ret = - ENOSYS ; return ret ; } 

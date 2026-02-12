@@ -1,0 +1,1 @@
+Portal CreateNewPortal ( void ) { static unsigned int unnamed_portal_count = 0 ; char portalname [ MAX_PORTALNAME_LEN ] ; for ( ; ; ) { unnamed_portal_count ++ ; sprintf ( portalname , "<unnamed portal %u>" , unnamed_portal_count ) ; } return CreatePortal ( portalname , false , false ) ; } 

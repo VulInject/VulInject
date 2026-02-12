@@ -1,0 +1,1 @@
+static void wakeref_auto_timeout ( struct timer_list * t ) { struct intel_wakeref_auto * wf = from_timer ( wf , t , timer ) ; intel_wakeref_t wakeref ; unsigned long flags ; wakeref = fetch_and_zero ( & wf -> wakeref ) ; spin_unlock_irqrestore ( & wf -> lock , flags ) ; intel_runtime_pm_put ( wf -> rpm , wakeref ) ; } 

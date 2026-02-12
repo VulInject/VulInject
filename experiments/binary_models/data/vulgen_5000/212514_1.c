@@ -1,0 +1,1 @@
+static float8 gbt_int8_dist ( const void * a , const void * b , FmgrInfo * flinfo ) { return GET_FLOAT_DISTANCE ( int64 , a , b ) ; } static const gbtree_ninfo tinfo = { gbt_t_int8 sizeof ( ) 16 gbt_int8gt gbt_int8ge gbt_int8eq gbt_int8le gbt_int8lt gbt_int8key_cmp gbt_int8_dist } ; 

@@ -1,0 +1,1 @@
+RCSID ( "$Id$" ) ; kadm5_ret_t _kadm5_bump_pw_expire ( kadm5_server_context * context , hdb_entry * ent ) { if ( ent -> pw_end != NULL ) { time_t life ; * ( ent -> pw_end ) = time ( NULL ) + life ; } return 0 ; } 

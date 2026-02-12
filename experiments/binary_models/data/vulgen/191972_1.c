@@ -1,1 +1,0 @@
-unsigned swscale_version ( void ) { return LIBSWSCALE_VERSION_INT ; } 

@@ -1,0 +1,1 @@
+void ficlHashReset ( ficlHash * hash ) { unsigned i ; FICL_ASSERT_PHASH ( hash , hash ) ; for ( i = 0 ; i < hash -> size ; i ++ ) { hash -> table [ i ] = NULL ; } hash -> link = NULL ; } 

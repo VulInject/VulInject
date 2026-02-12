@@ -1,1 +1,0 @@
-void dmub_dcn32_send_inbox0_cmd ( struct dmub_srv * dmub , union dmub_inbox0_data_register data ) { } 

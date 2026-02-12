@@ -1,0 +1,1 @@
+int audit_classify_arch ( int arch ) { return 0 ; } 

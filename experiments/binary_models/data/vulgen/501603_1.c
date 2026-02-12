@@ -1,1 +1,0 @@
-static TEE_Result clk_generated_enable ( struct clk * clk ) { struct clk_generated * gck = clk -> priv ; io_write32 ( gck -> base + gck -> layout -> offset , ( gck -> id & gck -> layout -> pid_mask ) ) ; return TEE_SUCCESS ; } 

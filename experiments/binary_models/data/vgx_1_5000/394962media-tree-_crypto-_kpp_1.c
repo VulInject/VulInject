@@ -1,0 +1,1 @@
+static int crypto_kpp_report ( struct sk_buff * skb , struct crypto_alg * alg ) { struct crypto_report_kpp rkpp ; snprintf ( rkpp . type , CRYPTO_MAX_ALG_NAME , "%s" , "kpp" ) ; if ( nla_put ( skb , CRYPTOCFGA_REPORT_KPP , sizeof ( crypto_report_kpp ) , & rkpp ) ) { nla_put_failure } return 0 ; nla_put_failure return - EMSGSIZE ; } 

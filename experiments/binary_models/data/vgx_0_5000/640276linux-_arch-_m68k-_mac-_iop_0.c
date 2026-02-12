@@ -1,0 +1,32 @@
+static void iop_handle_recv(uint iop_num, uint chan)
+{
+volatile struct mac_iop *iop = iop_base[iop_num];
+int i,offset;
+struct iop_msg *msg;
+
+msg = iop_get_unused_msg();
+msg->iop_num = iop_num;
+msg->channel = chan;
+msg->status = IOP_MSGSTATUS_UNSOL;
+msg->handler = iop_listeners[iop_num][chan].handler;
+
+offset = IOP_ADDR_RECV_MSG + (chan * IOP_MSG_LEN);
+
+for (i = 0 ; i < IOP_MSG_LEN ; i++, offset++) {
+msg->message[i] = iop_readb(iop, offset);
+}
+iop_pr_debug("iop_num %d chan %d message %*ph\n",
+iop_num, chan, IOP_MSG_LEN, msg->message);
+
+iop_writeb(iop, IOP_ADDR_RECV_STATE + chan, IOP_MSG_RCVD);
+
+
+
+
+if (msg->handler) {
+(*msg->handler)(msg);
+} else {
+memset(msg->reply, 0, IOP_MSG_LEN);
+iop_complete_message(msg);
+}
+}

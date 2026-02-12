@@ -1,0 +1,1 @@
+static enum xprt_stat svctcp_stat ( xprt ) SVCXPRT * xprt ; { register struct tcp_conn * cd = ( tcp_conn * ) ( xprt -> xp_p1 ) ; if ( ! xdrrec_eof ( & ( cd -> xdrs ) ) ) { return ( XPRT_MOREREQS ) ; } return ( XPRT_IDLE ) ; } 

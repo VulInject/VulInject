@@ -1,1 +1,0 @@
-int level ; u64 current_flags ; bool check_wx ; cfs_time_t wx_pages ; 

@@ -1,0 +1,1 @@
+static int __init topology_init ( void ) { int i ; for_each_online_node ( ) register_one_node ( i ) ; for ( i = 0 ; i < smp_height * smp_width ; ++ i ) { register_cpu ( & cpu_devices [ i ] , 0 ) ; } return 0 ; } 

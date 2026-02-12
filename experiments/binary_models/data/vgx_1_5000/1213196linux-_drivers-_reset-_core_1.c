@@ -1,0 +1,1 @@
+static int of_reset_simple_xlate ( struct reset_controller_dev * rcdev , const struct of_phandle_args * reset_spec ) { return reset_spec -> args [ 0 ] ; } 

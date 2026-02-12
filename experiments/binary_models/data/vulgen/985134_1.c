@@ -1,1 +1,0 @@
-main ( ) { int * f ( double , int ) fp ; fp ( 33 , 11 ) ; f ( 33 , 11 ) ; } 

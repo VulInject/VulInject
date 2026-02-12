@@ -1,0 +1,1 @@
+wmem_strbuf_t * wmem_strbuf_dup ( wmem_allocator_t * allocator , const wmem_strbuf_t * src ) { wmem_strbuf_t * new ; new -> len = src -> len ; memcpy ( new -> str , src -> str , new -> len ) ; new -> str [ new -> len ] = '\0' ; return new ; } 

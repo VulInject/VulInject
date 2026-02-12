@@ -1,1 +1,0 @@
-SVCXPRT * svcfd_create ( fd , sendsize , recvsize ) int fd ; u_int sendsize ; u_int recvsize ; { return ( makefd_xprt ( fd , sendsize , recvsize ) ) ; } 

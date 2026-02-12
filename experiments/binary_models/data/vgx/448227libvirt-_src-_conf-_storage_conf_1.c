@@ -1,1 +1,0 @@
-static virStoragePoolOptions * virStoragePoolOptionsForPoolType ( int type ) { virStoragePoolTypeInfo * backend = virStoragePoolTypeInfoLookup ( type ) ; return & backend -> poolOptions ; } 

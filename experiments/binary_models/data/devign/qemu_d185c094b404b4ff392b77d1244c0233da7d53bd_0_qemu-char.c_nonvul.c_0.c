@@ -1,1 +1,0 @@
-static VAR1 FUN1(VAR2 *VAR3, GSourceFunc VAR4, gpointer VAR5) { FUN2(); }

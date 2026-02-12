@@ -1,0 +1,1 @@
+static int __init apbuart_console_init ( void ) { register_console ( & grlib_apbuart_console ) ; return 0 ; } 

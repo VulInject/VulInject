@@ -1,1 +1,0 @@
-skipheader ( , ) { int i ; { i = getin ( in ) ; } i & 0x80 ; return ( 0 ) ; } 

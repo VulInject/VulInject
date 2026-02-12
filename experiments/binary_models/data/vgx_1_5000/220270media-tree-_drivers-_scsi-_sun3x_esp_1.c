@@ -1,0 +1,1 @@
+static void sun3x_esp_dma_drain ( struct esp * esp ) { u32 csr ; int lim ; csr = dma_read32 ( DMA_CSR ) ; dma_write32 ( csr | DMA_FIFO_STDRAIN , DMA_CSR ) ; lim = 1000 ; while ( dma_read32 ( DMA_CSR ) & DMA_FIFO_ISDRAIN ) { if ( -- lim == 0 ) { printk ( "esp%d: DMA will not drain!\n" , ) break ; } udelay ( 1 ) ; } } 

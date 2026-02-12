@@ -1,0 +1,1 @@
+static void isis_redist_route_node_destroy ( route_table_delegate_t * delegate , struct route_table * table , struct route_node * node ) { XFREE ( MTYPE_ROUTE_NODE , node ) ; } static route_table_delegate_t isis_redist_rt_delegate = { . create_node = isis_redist_route_node_create . destroy_node = isis_redist_route_node_destroy } ; 

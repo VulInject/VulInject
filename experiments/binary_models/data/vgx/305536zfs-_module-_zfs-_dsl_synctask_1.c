@@ -1,1 +1,0 @@
-EXPORT_SYMBOL ( dsl_sync_task , NULL ) ; EXPORT_SYMBOL ( dsl_sync_task_nowait ) ; 

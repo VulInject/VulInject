@@ -1,0 +1,1 @@
+static int snet_send_msg ( struct snet * snet , u32 msg , bool blocking ) { int ret = 0 ; ret = snet_wait_for_msg_ack ( snet ) ; snet_write32 ( snet , snet -> psnet -> cfg . msg_off , msg ) ; if ( blocking ) { ret = snet_wait_for_msg_ack ( snet ) ; } else { snet_read32 ( snet , snet -> psnet -> cfg . msg_off ) ; } return ret ; } 

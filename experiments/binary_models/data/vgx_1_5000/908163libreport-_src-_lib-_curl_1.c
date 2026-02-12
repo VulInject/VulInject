@@ -1,0 +1,1 @@
+void free_post_state ( post_state_t * state ) { char * * headers = state -> headers ; if ( headers ) { while ( * headers ) { g_free ( * headers ++ ) ; } g_free ( state -> headers ) ; } g_free ( state -> curl_error_msg ) ; free ( state -> body ) ; g_free ( state ) ; } 

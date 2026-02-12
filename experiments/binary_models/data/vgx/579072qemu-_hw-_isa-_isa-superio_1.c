@@ -1,1 +1,0 @@
-static void fdc37m81x_class_init ( ObjectClass * klass , void * data ) { ISASuperIOClass * sc = ISA_SUPERIO_CLASS ( klass ) ; sc -> serial . count = 2 ; sc -> floppy . count = 1 ; sc -> ide . count = 0 ; } 

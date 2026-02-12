@@ -1,0 +1,1 @@
+static void omap_encoder_destroy ( struct drm_encoder * encoder ) { struct omap_encoder * omap_encoder = to_omap_encoder ( encoder ) ; drm_encoder_cleanup ( encoder ) ; } static const struct drm_encoder_funcs omap_encoder_funcs = { . destroy = omap_encoder_destroy } ; 

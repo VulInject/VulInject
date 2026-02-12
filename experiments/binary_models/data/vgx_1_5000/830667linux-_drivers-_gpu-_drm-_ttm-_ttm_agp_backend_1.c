@@ -1,0 +1,1 @@
+bool ttm_agp_is_bound ( struct ttm_tt * ttm ) { struct ttm_agp_backend * agp_be = container_of ( ttm , ttm_agp_backend , ttm ) ; return ( agp_be -> mem != NULL ) ; } 

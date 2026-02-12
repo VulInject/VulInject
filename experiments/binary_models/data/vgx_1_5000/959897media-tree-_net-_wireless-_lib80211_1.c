@@ -1,0 +1,1 @@
+int lib80211_crypt_info_init ( struct lib80211_crypt_info * info , char * name , spinlock_t * lock ) { info -> name = name ; info -> lock = lock ; INIT_LIST_HEAD ( & info -> crypt_deinit_list ) ; setup_timer ( & info -> crypt_deinit_timer , lib80211_crypt_deinit_handler , ( unsigned long ) info ) ; return 0 ; } 

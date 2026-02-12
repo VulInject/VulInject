@@ -1,0 +1,1 @@
+void intel_bios_driver_remove ( struct drm_i915_private * i915 ) { struct intel_bios_encoder_data * devdata , * nd ; struct bdb_block_entry * entry , * ne ; list_for_each_entry_safe ( , , , ) { list_del ( & devdata -> node ) ; kfree ( devdata ) ; } list_for_each_entry_safe ( , , , ) { list_del ( & entry -> node ) ; kfree ( entry ) ; } } 

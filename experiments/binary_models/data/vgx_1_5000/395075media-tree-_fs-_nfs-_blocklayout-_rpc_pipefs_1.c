@@ -1,0 +1,1 @@
+static void nfs4blocklayout_unregister_net ( struct net * net , struct rpc_pipe * pipe ) { struct super_block * pipefs_sb ; pipefs_sb = rpc_get_sb_net ( net ) ; if ( pipefs_sb ) { nfs4blocklayout_unregister_sb ( pipefs_sb , pipe ) ; rpc_put_sb_net ( net , NULL ) ; } } 

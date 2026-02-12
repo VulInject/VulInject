@@ -1,0 +1,1 @@
+crypt_path_t * cpath_get_next_non_open_hop ( crypt_path_t * cpath ) { crypt_path_t * hop = cpath ; { hop = hop -> next ; } hop != cpath ; return NULL ; } 

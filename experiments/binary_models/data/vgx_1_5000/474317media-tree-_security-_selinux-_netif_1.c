@@ -1,0 +1,1 @@
+static inline struct sel_netif * sel_netif_find ( const struct net * ns , int ifindex ) { int idx = sel_netif_hashfn ( ns , ifindex ) ; struct sel_netif * netif ; list_for_each_entry_rcu ( , , ) return NULL ; } 

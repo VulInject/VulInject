@@ -1,1 +1,0 @@
-gimp_circle_unmap ( ) { GimpCircle * circle = GIMP_CIRCLE ( widget ) ; if ( circle -> priv -> has_grab ) { gtk_grab_remove ( widget ) ; circle -> priv -> has_grab = FALSE ; } GTK_WIDGET_CLASS ( parent_class ) -> unmap ( widget ) ; } 

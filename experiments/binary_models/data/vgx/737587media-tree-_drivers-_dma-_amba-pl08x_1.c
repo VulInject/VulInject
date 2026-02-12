@@ -1,1 +1,0 @@
-static int pl08x_request_mux ( struct pl08x_dma_chan * plchan ) { const struct pl08x_platform_data * pd = plchan -> host -> pd ; int ret ; if ( plchan -> mux_use ++ == 0 && pd -> get_xfer_signal ) { ret = pd -> get_xfer_signal ( plchan -> cd ) ; if ( ret < 0 ) { return ret ; } plchan -> signal = ret ; } return 0 ; } 

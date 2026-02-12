@@ -1,0 +1,1 @@
+void GC_free ( void * ptr ) void GC_set_leak_handler ( void * ( void * , int ) ) void GC_gcollect ( void ) extern int GC_find_leak ; MemHeader { uint32_t magic ; char type [ 32 ] ; char file [ 32 ] ; int line ; time_t since ; } 

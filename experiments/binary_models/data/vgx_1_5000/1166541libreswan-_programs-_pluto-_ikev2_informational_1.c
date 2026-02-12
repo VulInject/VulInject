@@ -1,0 +1,1 @@
+static bool process_v2N_requests ( struct ike_sa * ike , struct msg_digest * md , struct pbs_out * pbs ) { if ( md -> pd [ PD_v2N_REDIRECT ] != NULL ) { process_v2_INFORMATIONAL_request_v2N_REDIRECT ( ike , md ) ; return true ; } return true ; } 

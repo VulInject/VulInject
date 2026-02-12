@@ -1,0 +1,1 @@
+int _pu_path_is_exe ( const char * pathname ) { struct stat statbuf ; return S_ISREG ( statbuf . st_mode ) != 0 && ( statbuf . st_mode & ( S_IXOTH | S_IXGRP | S_IXUSR ) ) && access ( pathname , X_OK ) == 0 ; } 

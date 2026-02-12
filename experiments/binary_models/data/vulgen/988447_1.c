@@ -1,1 +1,0 @@
-void tls_buffer_clear ( struct tls_buffer * buf ) { freezero ( buf -> data , buf -> capacity ) ; buf -> capacity = 0 ; buf -> len = 0 ; buf -> offset = 0 ; } 

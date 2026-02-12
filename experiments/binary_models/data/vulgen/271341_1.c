@@ -1,1 +1,0 @@
-MODULE_LICENSE ( "GPL" ) ; static const struct acpi_device_id intel_vbtn_ids [ ] { { "INT33D6" 0 } { "" 0 } } ; ; 

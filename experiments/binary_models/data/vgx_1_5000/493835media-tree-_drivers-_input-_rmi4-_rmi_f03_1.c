@@ -1,0 +1,1 @@
+static void rmi_f03_remove ( struct rmi_function * fn ) { struct f03_data * f03 = dev_get_drvdata ( & fn -> dev ) ; serio_unregister_port ( f03 -> serio , NULL ) ; } 

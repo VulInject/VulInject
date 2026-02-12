@@ -1,1 +1,0 @@
-static int slim_device_match ( struct device * dev , struct device_driver * drv ) { struct slim_device * sbdev = to_slim_device ( dev ) ; struct slim_driver * sbdrv = to_slim_driver ( drv ) ; return ! ! slim_match ( sbdrv -> id_table , sbdev ) ; } 

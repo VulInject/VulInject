@@ -1,0 +1,1 @@
+static int riscv_timer_probe ( struct udevice * dev ) { struct timer_dev_priv * uc_priv = dev_get_uclass_priv ( dev ) ; return 0 ; } static const struct timer_ops riscv_timer_ops = { . get_count = riscv_timer_get_count } ; 

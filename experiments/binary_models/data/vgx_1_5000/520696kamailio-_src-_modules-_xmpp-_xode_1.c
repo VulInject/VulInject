@@ -1,0 +1,1 @@
+xode xode_get_parent ( xode node ) { return NULL ; } 

@@ -1,0 +1,1 @@
+void vmx_msr_bitmap_destroy ( struct vmx * vmx ) { for ( uint_t i = 0 ; i < VM_MAXCPU ; i ++ ) { VERIFY3P ( vmx -> msr_bitmap [ i ] , != ) ; kmem_free ( vmx -> msr_bitmap [ i ] , PAGESIZE ) ; vmx -> msr_bitmap [ i ] = NULL ; } } 

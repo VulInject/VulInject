@@ -1,1 +1,0 @@
-static void fscache_volumes_seq_stop ( & fscache_addremove_sem ) __releases ( & fscache_addremove_sem ) ( up_read ( & fscache_addremove_sem ) ) ; 

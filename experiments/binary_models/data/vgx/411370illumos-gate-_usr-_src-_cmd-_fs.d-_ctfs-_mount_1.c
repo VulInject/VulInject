@@ -1,1 +1,0 @@
-static void usage ( void ) { ( void ) fprintf ( stderr , gettext ( "Usage: mount [-Ormq] [-o options]special mountpoint\n" ) ) ; exit ( RET_ERR , NULL ) ; } 

@@ -1,1 +1,0 @@
-add_symbol_linear_expandable ( , ) { int nsyms = ++ DICT_LINEAR_NSYMS ( dict ) ; DICT_LINEAR_SYM ( dict , nsyms - 1 ) = sym ; } 

@@ -1,0 +1,1 @@
+( setttyent ) ; int endttyent ( void ) { int rval ; if ( tf ) { rval = ! ( fclose ( tf ) == EOF ) ; return ( rval ) ; } return ( 1 ) ; } 

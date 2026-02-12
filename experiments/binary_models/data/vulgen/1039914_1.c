@@ -1,1 +1,0 @@
-if ( ! strcmp ( name , "bras" ) || ! strcmp ( name , "brasl" ) || ! strcmp ( name , "basr" ) ) { ops = & call_ops ; } arch__associate_ins_ops ( arch , name , ops ) ; return ops ; 

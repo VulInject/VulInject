@@ -1,0 +1,1 @@
+fddirect { short d_ino ; char d_name [ FDDIRSIZE ] ; } static int fdfstype = 0 ; static major_t fdfsmaj ; static minor_t fdfsmin ; static major_t fdrmaj ; static kmutex_t fd_minor_lock ; static int fdget ( vnode_t * , char * , vnode_t * * ) static int fdopen ( vnode_t * * vpp , int mode , cred_t * cr , caller_context_t * ct ) { return ( 0 ) ; } 

@@ -1,1 +1,0 @@
-MODULE_DESCRIPTION ( "Sysfs based trigger for the iio subsystem" ) ; MODULE_LICENSE ( "GPL v2" ) ; 

@@ -1,1 +1,0 @@
-static enum hrtimer_restart timer_handler ( struct hrtimer * handle ) { struct walkera_dev * w ; w = container_of ( handle , walkera_dev , timer ) ; return HRTIMER_NORESTART ; } 

@@ -1,0 +1,1 @@
+static ssize_t fr_write ( struct corerouter_peer * main_peer ) { ssize_t len = cr_write ( main_peer , "fr_write()" ) ; if ( ! len ) { return 0 ; } if ( cr_write_complete ( main_peer ) ) { main_peer -> out -> pos = 0 ; cr_reset_hooks ( main_peer , NULL ) ; } return len ; } 

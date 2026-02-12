@@ -1,0 +1,1 @@
+bool socket_closed ( const socket_t * it ) { int state ; state = dyad_getState ( it -> stream ) ; return state == DYAD_STATE_CLOSED ; } 

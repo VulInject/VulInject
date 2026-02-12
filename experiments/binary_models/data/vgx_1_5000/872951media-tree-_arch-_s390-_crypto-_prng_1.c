@@ -1,0 +1,1 @@
+static void prng_tdes_deinstantiate ( void ) { pr_debug ( "The prng module stopped " "after running in triple DES mode\n" ) ; } 

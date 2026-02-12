@@ -1,0 +1,1 @@
+static void pci_endpoint_test_release_irq ( struct pci_endpoint_test * test ) { int i ; struct pci_dev * pdev = test -> pdev ; struct device * dev = & pdev -> dev ; for ( i = 0 ; i < test -> num_irqs ; i ++ ) { devm_free_irq ( dev , pci_irq_vector ( pdev , i ) , test ) ; } } 

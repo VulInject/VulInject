@@ -1,0 +1,1 @@
+static __init int cpu_has_mfc0_count_bug ( void ) { switch ( current_cpu_type ( ) ) { case CPU_R4000PC : case CPU_R4000SC : case CPU_R4000MC : return 1 ; case CPU_R4400PC : case CPU_R4400SC : case CPU_R4400MC : return 0 ; } return 0 ; } 

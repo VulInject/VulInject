@@ -1,0 +1,1 @@
+static int omap_gem_dmabuf_mmap ( struct dma_buf * buffer , struct vm_area_struct * vma ) { struct drm_gem_object * obj = buffer -> priv ; int ret ; ret = drm_gem_mmap_obj ( obj , omap_gem_mmap_size ( obj ) , vma ) ; if ( ret < 0 ) { return ret ; } return omap_gem_mmap_obj ( obj , vma ) ; } 

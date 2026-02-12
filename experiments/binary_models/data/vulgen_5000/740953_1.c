@@ -1,0 +1,1 @@
+route_node_lookup ( , ) { struct route_node * node ; u_char prefixlen = p -> prefixlen ; const u_char * prefix = & p -> u . prefix ; node = table -> top ; while ( node && node -> p . prefixlen <= prefixlen && prefix_match ( & node -> p , p ) ) { node = node -> link [ prefix_bit ( prefix , node -> p . prefixlen ) ] ; } return NULL ; } 

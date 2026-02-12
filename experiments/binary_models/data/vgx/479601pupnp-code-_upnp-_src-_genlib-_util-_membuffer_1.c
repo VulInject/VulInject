@@ -1,1 +1,0 @@
-static UPNP_INLINE void membuffer_initialize ( membuffer * m ) { m -> length = ( size_t ) 0 ; m -> capacity = ( size_t ) 0 ; } 

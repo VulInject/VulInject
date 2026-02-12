@@ -1,0 +1,1 @@
+void fsnotify_recalc_mask ( struct fsnotify_mark_connector * conn ) { if ( ! conn ) { return ; } spin_lock ( & conn -> lock ) ; __fsnotify_recalc_mask ( conn , NULL ) ; spin_unlock ( & conn -> lock ) ; if ( conn -> flags & FSNOTIFY_OBJ_TYPE_INODE ) { __fsnotify_update_child_dentry_flags ( conn -> inode ) ; } } 

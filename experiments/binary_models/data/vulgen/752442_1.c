@@ -1,1 +1,0 @@
-static { int timeline ; int counter ; } , test_data_two_threads 

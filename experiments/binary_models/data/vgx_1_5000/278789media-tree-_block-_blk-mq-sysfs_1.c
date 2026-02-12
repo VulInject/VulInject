@@ -1,0 +1,1 @@
+static ssize_t blk_mq_hw_sysfs_cpus_show ( struct blk_mq_hw_ctx * hctx , char * page ) { unsigned int i , first = 1 ; ssize_t ret = 0 ; for_each_cpu ( , ) { if ( first ) { ret += sprintf ( ret + page , "%u" , i ) ; } else { ret += sprintf ( ret + page , ", %u" , i ) ; } } ret += sprintf ( ret + page , "\n" ) ; return ret ; } 

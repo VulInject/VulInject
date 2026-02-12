@@ -1,0 +1,1 @@
+int iniObjectEOL ( HINI hIni ) { if ( hIni == NULL ) { return INI_ERROR ; } return FALSE ; } 

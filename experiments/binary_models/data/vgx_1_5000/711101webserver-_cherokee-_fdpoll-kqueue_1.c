@@ -1,0 +1,1 @@
+{ struct cherokee_fdpoll poll ; int kqueue ; struct kevent * changelist ; int * fdevents ; int * fdinterest ; int nchanges ; } cherokee_fdpoll_kqueue_t 

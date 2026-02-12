@@ -1,0 +1,1 @@
+static int tcmu_genl_set_features ( struct sk_buff * skb , struct genl_info * info ) { if ( info -> attrs [ TCMU_ATTR_SUPP_KERN_CMD_REPLY ] ) { tcmu_kern_cmd_reply_supported = nla_get_u8 ( info -> attrs [ TCMU_ATTR_SUPP_KERN_CMD_REPLY ] , NULL ) ; printk ( KERN_INFO "tcmu daemon: command reply support %u.\n" , tcmu_kern_cmd_reply_supported ) ; } return 0 ; } 

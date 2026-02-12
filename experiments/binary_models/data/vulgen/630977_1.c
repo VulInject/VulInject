@@ -1,1 +1,0 @@
-. hwport = 2 , . flags = 0 , . ucon = UCON , . ulcon = ULCON , . ufcon = UFCON , ; [ 3 ] = { . hwport = 3 . flags = 0 . ucon = UCON . ulcon = ULCON . ufcon UFCON } , ; 

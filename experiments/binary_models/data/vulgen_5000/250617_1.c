@@ -1,0 +1,1 @@
+static rsRetVal doSleep ( instanceData * pData ) { DEFiRet ; struct timeval tvSelectTimeout ; dbgprintf ( "sleep(%d, %d)\n" , pData -> iWaitSeconds , pData -> iWaitUSeconds ) ; tvSelectTimeout . tv_sec = pData -> iWaitSeconds ; tvSelectTimeout . tv_usec = pData -> iWaitUSeconds ; RETiRet ; } 

@@ -1,0 +1,1 @@
+static void mailimap_enable_extension_data_free ( struct mailimap_extension_data * ext_data ) { if ( ext_data -> ext_data != NULL ) { mailimap_capability_data_free ( ( mailimap_capability_data * ) ext_data -> ext_data ) ; } } 

@@ -1,0 +1,1 @@
+int qcpwm_match ( struct device * parent , void * match , void * aux ) { struct spmi_attach_args * saa = aux ; return OF_is_compatible ( saa -> sa_node , "qcom,pm8350c-pwm" ) ; } 

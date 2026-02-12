@@ -1,0 +1,1 @@
+static int do_pack ( uint8_t * * buf , size_t * rem , const uint8_t * src , size_t size ) { memcpy ( * buf , src , size ) ; * buf += size ; * rem -= size ; return 1 ; } 

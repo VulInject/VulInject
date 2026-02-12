@@ -1,1 +1,0 @@
-void btcx_riscmem_free ( struct pci_dev * pci , struct btcx_riscmem * risc ) { memcnt -- ; dprintk ( "btcx: riscmem free [%d] dma=%lx\n" , memcnt , ( unsigned long ) risc -> dma ) ; dma_free_coherent ( & pci -> dev , risc -> size , risc -> cpu , risc -> dma ) ; memset ( risc , 0 , sizeof ( * risc ) ) ; } 

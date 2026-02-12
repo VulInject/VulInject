@@ -1,0 +1,1 @@
+static struct mtd_chip_driver * get_mtd_chip_driver ( const char * name ) { struct list_head * pos ; struct mtd_chip_driver * ret = NULL , * this ; spin_lock ( & chip_drvs_lock ) ; list_for_each ( , ) { this = list_entry ( pos , typeof ( * this ) , list ) ; if ( ! strcmp ( this -> name , name ) ) { ret = this ; break ; } } spin_unlock ( & chip_drvs_lock ) ; return ret ; } 

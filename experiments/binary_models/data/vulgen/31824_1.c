@@ -1,1 +1,0 @@
-int threshold_black ; int threshold_white ; int threshold_gray ; int grp_width ; char tcbuf [ AV_TIMECODE_STR_SIZE ] ; 

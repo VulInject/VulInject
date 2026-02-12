@@ -1,0 +1,1 @@
+static int matroxfb_open ( struct fb_info * info , int user ) { struct matrox_fb_info * minfo = info2minfo ( info ) ; DBG_LOOP ( ) minfo -> usecount ++ ; if ( user ) { minfo -> userusecount ++ ; } return ( 0 ) ; } 

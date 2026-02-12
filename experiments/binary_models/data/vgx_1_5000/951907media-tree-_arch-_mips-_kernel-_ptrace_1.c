@@ -1,0 +1,1 @@
+const struct user_regset_view * task_user_regset_view ( struct task_struct * task ) { return & user_mips_view ; return & user_mips64_view ; } 

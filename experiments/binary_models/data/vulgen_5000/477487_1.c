@@ -1,0 +1,1 @@
+struct dentry * nfp_net_debugfs_device_add ( struct pci_dev * pdev ) { struct dentry * dev_dir ; if ( IS_ERR_OR_NULL ( nfp_dir ) ) { return NULL ; } if ( IS_ERR_OR_NULL ( dev_dir ) ) { return NULL ; } return dev_dir ; } 

@@ -1,1 +1,0 @@
-bool FUN1 ( void ) { const char * VAR1 = FUN2 ( ) ; return ! FUN3 ( VAR1 , "" , 3 ) ; } VAR2 { int VAR3 ; void * FUN4 ( void * ) unsigned int VAR4 ; }

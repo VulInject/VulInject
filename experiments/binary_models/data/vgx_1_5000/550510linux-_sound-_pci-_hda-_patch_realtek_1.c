@@ -1,0 +1,1 @@
+static void coef_mutex_lock ( struct hda_codec * codec ) { struct alc_spec * spec = codec -> spec ; snd_hda_power_up_pm ( codec , NULL ) ; mutex_lock ( & spec -> coef_mutex ) ; } 

@@ -1,1 +1,0 @@
-static gboolean draw ( GtkWidget * widget , cairo_t * cr ) static void rs_histogram_widget_class_init ( RSHistogramWidgetClass * klass ) { GtkWidgetClass * widget_class ; widget_class = GTK_WIDGET_CLASS ( klass ) ; } 

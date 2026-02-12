@@ -1,0 +1,1 @@
+static int wl128x_manually_configure_mcs_pll ( struct wl1271 * wl ) { ret = wl12xx_top_reg_write ( wl , MCS_PLL_M_REG , MCS_PLL_M_REG_VAL ) ; if ( ret < 0 ) { out } ret = wl12xx_top_reg_write ( wl , MCS_PLL_N_REG , MCS_PLL_N_REG_VAL ) ; if ( ret < 0 ) { out } ret = wl12xx_top_reg_write ( wl , MCS_PLL_CONFIG_REG , MCS_PLL_CONFIG_REG_VAL ) ; out return ret ; } 

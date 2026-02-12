@@ -1,0 +1,1 @@
+static ssize_t out_mask_show ( struct vmbus_channel * channel , char * buf ) { struct hv_ring_buffer_info * rbi = & channel -> outbound ; ssize_t ret ; mutex_lock ( & rbi -> ring_buffer_mutex ) ; if ( ! rbi -> ring_buffer ) { mutex_unlock ( & rbi -> ring_buffer_mutex ) ; return - EINVAL ; } mutex_unlock ( & rbi -> ring_buffer_mutex ) ; return ret ; } 

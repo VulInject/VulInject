@@ -1,1 +1,0 @@
-static inline unsigned int FUN1(unsigned int VAR1, unsigned int VAR2, unsigned VAR3) { return ((VAR1 >> 5) << 5) | ((VAR2 >> 5) << 2) | (VAR3 >> 6); }

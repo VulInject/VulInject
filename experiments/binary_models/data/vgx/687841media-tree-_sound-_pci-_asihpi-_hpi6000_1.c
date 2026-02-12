@@ -1,1 +1,0 @@
-static u32 hpi_read_word ( struct dsp_obj * pdo , u32 address ) { u32 data = 0 ; data = ioread32 ( pdo -> prHPI_data ) ; return data ; } 

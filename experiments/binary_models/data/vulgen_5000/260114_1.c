@@ -1,0 +1,1 @@
+diva_os_message_buffer_s * diva_os_alloc_message_buffer ( unsigned long size , void * * data_buf ) { if ( dmb ) { * data_buf = skb_put ( dmb , size ) ; } return ( dmb ) ; } 

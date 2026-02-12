@@ -1,0 +1,1 @@
+static struct pci_hba_data * parisc_pci_hba [ PCI_HBA_MAX ] __read_mostly ; u # # size in # # type ( ) { int b = PCI_PORT_HBA ( addr ) EISA_IN ( size ) } ; return pci_port -> in # # type ( parisc_pci_hba [ b ] , PCI_PORT_ADDR ( addr ) ) ; 

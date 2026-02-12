@@ -1,0 +1,1 @@
+static void _mgt_dispatcher ( struct adapter * padapter , struct mlme_handler * ptable , union recv_frame * precv_frame ) { u8 bc_addr [ ETH_ALEN ] { 0xff 0xff 0xff 0xff 0xff 0xff } ; ; u8 * pframe = precv_frame -> u . hdr . rx_data ; if ( ptable -> func ) { ptable -> func ( padapter , precv_frame ) ; } } 

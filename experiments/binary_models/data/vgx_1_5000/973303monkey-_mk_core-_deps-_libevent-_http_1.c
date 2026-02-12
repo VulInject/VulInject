@@ -1,0 +1,1 @@
+int evhttp_set_flags ( struct evhttp * http , int flags ) { int avail_flags = 0 ; avail_flags |= EVHTTP_SERVER_LINGERING_CLOSE ; http -> flags &= ~ avail_flags ; http -> flags |= flags ; return 0 ; } 

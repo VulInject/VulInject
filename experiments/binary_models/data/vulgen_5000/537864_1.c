@@ -1,0 +1,1 @@
+static void dump_err_buf ( struct mlx4_dev * dev ) { struct mlx4_priv * priv = mlx4_priv ( dev ) ; int i ; for ( i = 0 ; i < priv -> fw . catas_size ; ++ i ) { mlx4_err ( dev , "  buf[%02x]: %08x\n" , i , swab32 ( readl ( priv -> catas_err . map + i ) ) ) ; } } 

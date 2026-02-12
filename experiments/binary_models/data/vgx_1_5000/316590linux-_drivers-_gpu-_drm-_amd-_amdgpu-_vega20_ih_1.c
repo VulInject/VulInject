@@ -1,0 +1,1 @@
+static int vega20_ih_early_init ( void * handle ) { struct amdgpu_device * adev = ( amdgpu_device * ) handle ; vega20_ih_set_interrupt_funcs ( adev ) ; vega20_ih_set_self_irq_funcs ( adev , NULL ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+int lcd_match ( struct device * parent , void * match , void * aux ) { struct confargs * ca = aux ; return ( 0 ) ; } 

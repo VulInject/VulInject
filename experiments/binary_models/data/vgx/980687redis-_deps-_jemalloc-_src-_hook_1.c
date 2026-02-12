@@ -1,1 +1,0 @@
-static bool * FUN1 ( ) { static bool VAR1 = true ; VAR2 * VAR3 = FUN2 ( ) ; VAR4 * VAR5 = FUN3 ( VAR3 ) ; return & VAR1 ; }

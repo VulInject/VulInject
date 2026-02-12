@@ -1,0 +1,1 @@
+static const char * qemuConnectGetType ( virConnectPtr conn ) { if ( virConnectGetTypeEnsureACL ( conn ) < 0 ) { return in ; } return "QEMU" ; } 

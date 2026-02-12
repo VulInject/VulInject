@@ -1,1 +1,0 @@
-void av_file_unmap ( uint8_t * bufptr , size_t size ) { if ( ! size || ! bufptr ) { return ; } munmap ( bufptr , size ) ; UnmapViewOfFile ( bufptr ) ; } 

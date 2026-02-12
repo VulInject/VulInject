@@ -1,0 +1,1 @@
+static int fun_rxq_alloc_bufs ( struct funeth_rxq * q , int node ) { struct funeth_rxbuf * b = q -> bufs ; unsigned int i ; for ( i = 0 ; i <= q -> rq_mask ; i ++ , b ++ ) { if ( funeth_alloc_page ( q , b , node , GFP_KERNEL ) ) { fun_rxq_free_bufs ( q ) ; return - ENOMEM ; } } q -> cur_buf = q -> bufs ; return 0 ; } 

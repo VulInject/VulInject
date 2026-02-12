@@ -1,0 +1,1 @@
+static av_cold int mm_decode_end ( AVCodecContext * avctx ) { MmContext * s = avctx -> priv_data ; return 0 ; } 

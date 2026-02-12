@@ -1,1 +1,0 @@
-static void uniphier_fi2c_reset ( struct uniphier_fi2c_priv * priv ) { writel ( UNIPHIER_FI2C_RST_RST , 0 ) ; } 

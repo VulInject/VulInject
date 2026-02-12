@@ -1,0 +1,1 @@
+void del_boot_device_lchs ( DeviceState * dev , const char * suffix ) { FWLCHSEntry * i ; QTAILQ_FOREACH ( , , ) { if ( ( ! suffix || ! g_strcmp0 ( i -> suffix , suffix ) ) && i -> dev == dev ) { QTAILQ_REMOVE ( & fw_lchs , i , link ) ; g_free ( i -> suffix ) ; g_free ( i ) ; break ; } } } 

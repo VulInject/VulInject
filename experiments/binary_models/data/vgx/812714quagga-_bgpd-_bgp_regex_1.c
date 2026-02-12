@@ -1,1 +1,0 @@
-bgp_regex_free ( ) { XFREE ( MTYPE_BGP_REGEXP , regex ) ; } 

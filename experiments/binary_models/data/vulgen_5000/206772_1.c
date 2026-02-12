@@ -1,0 +1,1 @@
+MODULE_ID ( "$Id: fty_alnum.c,v 1.9 2015/01/23 22:48:51 krw Exp $" ) { int width ; } thisARG static void * Make_This_Type ( va_list * ap ) { thisARG * argp = typeMalloc ( thisARG , 1 ) ; if ( argp ) { T ( ( T_CREATE ( "thisARG %p" ) , argp ) ) ; } return ( ( void * ) argp ) ; } 

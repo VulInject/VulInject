@@ -1,0 +1,1 @@
+static int mtk_mipi_tx_power_off ( struct phy * phy ) { struct mtk_mipi_tx * mipi_tx = phy_get_drvdata ( phy ) ; clk_disable_unprepare ( mipi_tx -> pll ) ; return 0 ; } static const struct phy_ops mtk_mipi_tx_ops = { . power_on = mtk_mipi_tx_power_on . power_off = mtk_mipi_tx_power_off . owner = THIS_MODULE } ; 

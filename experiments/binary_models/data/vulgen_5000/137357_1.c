@@ -1,0 +1,1 @@
+static int rt1719_psy_get_property ( struct power_supply * psy , enum power_supply_property psp , union power_supply_propval * val ) { struct rt1719_data * data = power_supply_get_drvdata ( psy ) ; int ret = 0 ; return ret ; } 

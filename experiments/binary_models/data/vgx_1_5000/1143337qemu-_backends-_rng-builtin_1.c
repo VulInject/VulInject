@@ -1,0 +1,1 @@
+static void rng_builtin_init ( Object * obj ) { RngBuiltin * s = RNG_BUILTIN ( obj ) ; } 

@@ -1,0 +1,1 @@
+static inline void book3e_tlb_lock ( void ) { struct paca_struct * paca = get_paca ( ) ; cfs_time_t tmp ; int token = smp_processor_id ( ) + 1 ; if ( ! cpu_has_feature ( CPU_FTR_SMT ) ) { return ; } volatile } 

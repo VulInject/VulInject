@@ -1,0 +1,1 @@
+hisi_trng_list { struct mutex lock ; int list ; bool is_init ; } 

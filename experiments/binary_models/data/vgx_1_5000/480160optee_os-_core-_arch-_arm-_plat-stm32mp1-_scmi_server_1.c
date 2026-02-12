@@ -1,0 +1,1 @@
+unsigned long plat_scmi_clock_get_rate ( unsigned int channel_id , unsigned int scmi_id ) { struct stm32_scmi_clk * clock = find_clock ( channel_id , scmi_id ) ; return clk_get_rate ( clock -> clk ) ; } 

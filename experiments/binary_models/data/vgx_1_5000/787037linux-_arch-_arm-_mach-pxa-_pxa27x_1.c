@@ -1,0 +1,1 @@
+static void pxa27x_cpu_pm_restore ( unsigned long * sleep_save ) { __raw_writel ( sleep_save [ SLEEP_SAVE_MDREFR ] , MDREFR ) ; RESTORE ( PCFR ) ; PSSR = PSSR_RDH | PSSR_PH ; RESTORE ( PSTR , NULL ) ; } 

@@ -1,1 +1,0 @@
-int FUN1 ( u64 VAR1 ) { int VAR2 = FUN2 ( VAR1 ) ; return VAR2 ; }

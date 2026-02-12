@@ -1,0 +1,1 @@
+int arch_support_sort_key ( const char * sort_key ) { if ( ! strcmp ( sort_key , "local_p_stage_cyc" ) ) { return 1 ; } return 0 ; } 

@@ -1,0 +1,1 @@
+int serial_assign ( const char * name ) { struct serial_device * s ; for ( s = serial_devices ; s ; s = s -> next ) { serial_current = s ; return 0 ; } return - EINVAL ; } 

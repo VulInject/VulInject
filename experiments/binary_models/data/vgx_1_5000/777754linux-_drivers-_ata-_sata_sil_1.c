@@ -1,0 +1,1 @@
+static enum ata_completion_errors sil_qc_prep ( struct ata_queued_cmd * qc ) { sil_fill_sg ( qc ) ; return AC_ERR_OK ; } 

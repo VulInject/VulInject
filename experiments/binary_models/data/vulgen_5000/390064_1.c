@@ -1,0 +1,1 @@
+static void vde_cleanup ( NetClientState * nc ) { VDEState * s = DO_UPCAST ( VDEState , nc , nc ) ; qemu_set_fd_handler ( vde_datafd ( s -> vde ) , NULL , NULL , NULL ) ; } static NetClientInfo net_vde_info = { . type = NET_CLIENT_DRIVER_VDE . size = sizeof ( VDEState ) . receive = vde_receive . cleanup = vde_cleanup } ; 

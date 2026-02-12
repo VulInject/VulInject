@@ -1,0 +1,1 @@
+void usb_unanchor_urb ( struct urb * urb ) { unsigned long flags ; struct usb_anchor * anchor ; if ( ! urb ) { return ; } anchor = urb -> anchor ; spin_lock_irqsave ( & anchor -> lock , flags ) ; if ( likely ( anchor == urb -> anchor ) ) { __usb_unanchor_urb ( urb , anchor ) ; } spin_unlock_irqrestore ( & anchor -> lock , flags ) ; } 

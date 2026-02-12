@@ -1,0 +1,1 @@
+static bool process_sigterm ( struct context * c ) { bool ret = true ; if ( c -> options . ce . explicit_exit_notification && ! c -> c2 . explicit_exit_notification_time_wait ) { process_explicit_exit_notification_init ( c , NULL ) ; ret = false ; } return ret ; } 

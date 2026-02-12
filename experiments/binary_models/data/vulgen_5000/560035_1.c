@@ -1,0 +1,1 @@
+ecard_request { int * fn ( struct ecard_request * ) ecard_t * ec ; unsigned int address ; unsigned int length ; unsigned int use_loader ; void * buffer ; struct completion * complete ; } 

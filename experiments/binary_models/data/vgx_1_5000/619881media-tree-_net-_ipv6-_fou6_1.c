@@ -1,0 +1,1 @@
+int fou6_build_header ( struct sk_buff * skb , struct ip_tunnel_encap * e , u8 * protocol , struct flowi6 * fl6 ) { __be16 sport ; int err ; int type = e -> flags & TUNNEL_ENCAP_FLAG_CSUM6 ?SKB_GSO_UDP_TUNNEL_CSUM : SKB_GSO_UDP_TUNNEL ; err = __fou_build_header ( skb , e , protocol , & sport , type ) ; fou6_build_udp ( skb , e , fl6 , protocol , sport ) ; return 0 ; } 

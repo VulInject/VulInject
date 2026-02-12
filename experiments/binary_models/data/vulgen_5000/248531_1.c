@@ -1,0 +1,1 @@
+static void vbe_free ( struct backend * be ) { CHECK_OBJ_NOTNULL ( be , BACKEND_MAGIC ) ; VSC_vbe_Destroy ( & be -> vsc_seg ) ; Lck_Lock ( & backends_mtx ) ; VSC_C_main -> n_backend -- ; Lck_Unlock ( & backends_mtx ) ; VCP_Rel ( & be -> conn_pool ) ; VRT_BACKEND_HANDLE ( ) ; free ( be -> endpoint ) ; FREE_OBJ ( be ) ; } 

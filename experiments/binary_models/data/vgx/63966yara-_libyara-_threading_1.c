@@ -1,1 +1,0 @@
-int FUN1 ( VAR1 * mutex ) { * mutex = FUN2 ( NULL , VAR2 , NULL ) ; return VAR3 ; }

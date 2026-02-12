@@ -1,1 +1,0 @@
-static unsigned int stmmac_is_jumbo_frm ( int len , int enh_desc ) { int ret = 0 ; if ( ( enh_desc && ( len > BUF_SIZE_8KiB ) ) || ( ! enh_desc && ( len > BUF_SIZE_2KiB ) ) ) { ret = 1 ; } return ret ; } 

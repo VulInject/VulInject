@@ -1,0 +1,1 @@
+static void __init marvel_init_pci ( void ) { struct io7 * io7 ; marvel_register_error_handlers ( ) ; pci_set_flags ( PCI_PROBE_ONLY ) ; locate_and_init_vga ( NULL ) ; for ( io7 = NULL ; ( io7 = marvel_next_io7 ( io7 ) ) != NULL ; ) { io7_clear_errors ( io7 ) ; } } 

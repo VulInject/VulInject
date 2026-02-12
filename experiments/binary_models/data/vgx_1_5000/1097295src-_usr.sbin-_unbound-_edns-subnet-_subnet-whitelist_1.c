@@ -1,0 +1,1 @@
+void ecs_whitelist_delete ( struct ecs_whitelist * whitelist ) { if ( ! whitelist ) { return ; } regional_destroy ( whitelist -> region ) ; } 

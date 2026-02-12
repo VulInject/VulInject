@@ -1,0 +1,1 @@
+static void k5_arcfour_free_state ( krb5_data * state ) { struct arcfour_state * arcstate = ( void * ) state -> data ; EVP_CIPHER_CTX_free ( arcstate -> ctx ) ; } 

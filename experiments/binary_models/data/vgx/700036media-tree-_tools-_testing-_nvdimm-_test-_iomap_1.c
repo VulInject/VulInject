@@ -1,1 +1,0 @@
-( __wrap_insert_resource ) ; int __wrap_remove_resource ( struct resource * res ) { return remove_resource ( res ) ; } 

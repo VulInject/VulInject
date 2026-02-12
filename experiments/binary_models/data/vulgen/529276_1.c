@@ -1,1 +1,0 @@
-static void test_end ( TestData * d ) { g_free ( d -> dev ) ; qtest_quit ( d -> qts ) ; } 

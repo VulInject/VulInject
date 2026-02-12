@@ -1,0 +1,1 @@
+extern void scontrol_print_federation ( void ) { void * fed = NULL ; if ( ! slurm_load_federation ( & fed ) ) { slurm_print_federation ( fed ) ; } } 

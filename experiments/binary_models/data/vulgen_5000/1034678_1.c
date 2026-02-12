@@ -1,0 +1,1 @@
+char * twitter_parse_error ( struct http_request * req ) { static char * ret = NULL ; json_value * root , * err ; g_free ( ret ) ; ret = NULL ; return ret ?ret : req -> status_string ; } 

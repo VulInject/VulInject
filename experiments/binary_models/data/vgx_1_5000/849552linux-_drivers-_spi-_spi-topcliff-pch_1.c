@@ -1,0 +1,1 @@
+static int __init pch_spi_init ( void ) { int ret ; ret = platform_driver_register ( & pch_spi_pd_driver ) ; ret = pci_register_driver ( & pch_spi_pcidev_driver ) ; if ( ret ) { platform_driver_unregister ( & pch_spi_pd_driver ) ; return ret ; } return 0 ; } 

@@ -1,1 +1,0 @@
-int netcp_txpipe_close ( struct netcp_tx_pipe * tx_pipe ) { if ( tx_pipe -> dma_channel ) { knav_dma_close_channel ( tx_pipe -> dma_channel ) ; } return 0 ; } 

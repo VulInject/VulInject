@@ -1,0 +1,1 @@
+BGD_DECLARE ( ) gdImageTiffCtx ( , ) { ARG_NOT_USED ( image ) ; ARG_NOT_USED ( out , NULL ) ; _noTiffError ( ) ; } 

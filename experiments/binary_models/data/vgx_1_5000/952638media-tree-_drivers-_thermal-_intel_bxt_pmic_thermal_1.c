@@ -1,0 +1,1 @@
+trip_config_map { u16 irq_reg ; u16 irq_en ; u16 evt_stat ; u8 irq_mask ; u8 irq_en_mask ; u8 evt_mask ; int trip_num ; } 

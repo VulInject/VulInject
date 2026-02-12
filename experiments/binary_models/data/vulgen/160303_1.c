@@ -1,1 +1,0 @@
-void statusbar_clear_xy ( StatusBar_t * statusbar ) { } 

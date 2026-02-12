@@ -1,0 +1,1 @@
+( 0 ) type value = 123.0 ; test ( "Format command with printf-delegation (" # type "): " ) ; len = redisFormatCommand ( & cmd , "key:%08.3f str:%s" , value , "hello" ) ; test_cond ( strncmp ( cmd , "*2\r\n$12\r\nkey:0123.000\r\n$9\r\nstr:hello\r\n" , len ) == 0 && len == 4 + 5 + ( 12 + 2 ) + 4 + ( 9 + 2 ) ) ; ( 0 ) 

@@ -1,0 +1,1 @@
+static enum dc_status dpcd_128b_132b_set_lane_settings ( struct dc_link * link , const struct link_training_settings * link_training_setting ) { DC_LOG_HW_LINK_TRAINING ( "%s:\n 0x%X TX_FFE_PRESET_VALUE = %x\n" , __func__ , DP_TRAINING_LANE0_SET , link_training_setting -> dpcd_lane_settings [ 0 ] . tx_ffe . PRESET_VALUE ) ; return status ; } 

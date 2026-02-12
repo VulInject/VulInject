@@ -1,1 +1,0 @@
-static int DetectFilenameTestParse01 ( void ) { DetectFilenameData * dnd = DetectFilenameParse ( NULL , "secret.pdf" , false ) ; FAIL_IF_NULL ( dnd ) ; DetectFilenameFree ( dnd ) ; PASS ; } 

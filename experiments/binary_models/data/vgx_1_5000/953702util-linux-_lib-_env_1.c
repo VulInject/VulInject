@@ -1,0 +1,1 @@
+void env_list_free ( struct ul_env_list * ls ) { while ( ls ) { struct ul_env_list * x = ls ; ls = ls -> next ; } } 

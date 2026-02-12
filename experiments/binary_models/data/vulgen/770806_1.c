@@ -1,1 +1,0 @@
-void init_imlib_fonts ( void ) { imlib_add_path_to_font_path ( "." ) ; return ; } 

@@ -1,1 +1,0 @@
-JNIEnv * GetEnv ( ) { u16 sensorAndroidType ; u8 isAttached ; GF_Thread * trd ; u8 stop ; JNIEnv * env ; jclass sensCtrlClass ; jmethodID cid ; jobject sensCtrlObj ; jmethodID startSensor ; jmethodID stopSensor ; } MPEGVSensorContext 

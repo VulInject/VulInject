@@ -1,0 +1,1 @@
+local void free_datablock ( ldi ) linkedlist_datablock_internal * ldi ; { while ( ldi != NULL ) { linkedlist_datablock_internal * ldinext = ldi -> next_datablock ; TRYFREE ( ldi , NULL ) ; ldi = ldinext ; } } 

@@ -1,0 +1,1 @@
+static void mdev_device_release ( struct device * dev ) { struct mdev_device * mdev = to_mdev_device ( dev ) ; struct mdev_parent * parent = mdev -> type -> parent ; mutex_lock ( & mdev_list_lock ) ; list_del ( & mdev -> next ) ; mutex_unlock ( & mdev_list_lock ) ; kobject_put ( & mdev -> type -> kobj ) ; dev_dbg ( & mdev -> dev , "MDEV: destroying\n" ) ; kfree ( mdev ) ; } 

@@ -1,1 +1,0 @@
-return bitmap_lookup ( & u_property_soft_dotted ) ; 

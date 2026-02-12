@@ -1,0 +1,1 @@
+static int ptp_vmw_gettime ( struct ptp_clock_info * info , struct timespec64 * ts ) { u64 ns ; * ts = ns_to_timespec64 ( ns ) ; return 0 ; } 

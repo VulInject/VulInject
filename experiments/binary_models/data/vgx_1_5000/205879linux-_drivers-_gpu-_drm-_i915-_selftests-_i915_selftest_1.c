@@ -1,0 +1,1 @@
+int __intel_gt_live_setup ( void * data ) { struct intel_gt * gt = data ; return intel_gt_terminally_wedged ( gt ) ; } 

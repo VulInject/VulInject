@@ -1,0 +1,1 @@
+void cxl_pci_release_afu ( struct device * dev ) { struct cxl_afu * afu = to_cxl_afu ( dev ) ; pr_devel ( "%s\n" , __func__ ) ; idr_destroy ( & afu -> contexts_idr ) ; cxl_release_spa ( afu ) ; kfree ( afu ) ; } 

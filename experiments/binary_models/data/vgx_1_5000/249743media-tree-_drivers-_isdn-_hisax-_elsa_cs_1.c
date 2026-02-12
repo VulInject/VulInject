@@ -1,0 +1,1 @@
+static void elsa_cs_detach ( struct pcmcia_device * link ) { local_info_t * info = link -> priv ; dev_dbg ( & link -> dev , "elsa_cs_detach(0x%p)\n" , link ) ; elsa_cs_release ( link ) ; kfree ( info ) ; } 

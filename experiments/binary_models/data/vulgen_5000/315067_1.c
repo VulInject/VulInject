@@ -1,0 +1,1 @@
+static __init int rng_init ( void ) { struct device_node * dn ; int rc ; for_each_compatible_node ( , , "ibm,power-rng" ) { rc = rng_create ( dn ) ; if ( rc ) { pr_err ( "Failed creating rng for %s (%d).\n" , dn -> full_name , rc ) ; continue ; } } return 0 ; } 

@@ -1,0 +1,1 @@
+void * mom_process_request ( void * sock_num ) extern char log_buffer [ ] ; START_TEST ( ) { int sock = 1 ; mom_process_request ( & sock ) ; } END_TEST START_TEST ( test_mom_process_request_bad_host_err ) { } 

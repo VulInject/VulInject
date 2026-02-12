@@ -1,0 +1,1 @@
+static void mv_otg_timer_await_bcon ( unsigned long data ) { struct mv_otg * mvotg = ( mv_otg * ) data ; mvotg -> otg_ctrl . a_wait_bcon_timeout = 1 ; dev_info ( & mvotg -> pdev -> dev , "B Device No Response!\n" ) ; if ( spin_trylock ( & mvotg -> wq_lock ) ) { spin_unlock ( & mvotg -> wq_lock ) ; } } 

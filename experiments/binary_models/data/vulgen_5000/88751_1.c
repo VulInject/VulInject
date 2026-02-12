@@ -1,0 +1,1 @@
+static int intel_memory_region_memtest ( struct intel_memory_region * mem , void * caller ) { struct drm_i915_private * i915 = mem -> i915 ; int err = 0 ; if ( IS_ENABLED ( CONFIG_DRM_I915_DEBUG_GEM ) || i915 -> params . memtest ) { err = iomemtest ( mem , i915 -> params . memtest , caller ) ; } return err ; } 

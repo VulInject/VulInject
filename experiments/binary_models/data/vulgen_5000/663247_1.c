@@ -1,0 +1,1 @@
+void regulator_irq_helper_cancel ( void * * handle ) { if ( handle && * handle ) { struct regulator_irq * h = * handle ; free_irq ( h -> irq , h ) ; if ( h -> desc . irq_off_ms ) { cancel_delayed_work_sync ( 0 ) ; } h = NULL ; } } 

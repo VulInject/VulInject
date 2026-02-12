@@ -1,1 +1,0 @@
-int wc_Sha224Update ( wc_Sha224 * sha , const byte * in , word32 sz ) { return KcapiHashUpdate ( & sha -> kcapi , in , sz ) ; } 

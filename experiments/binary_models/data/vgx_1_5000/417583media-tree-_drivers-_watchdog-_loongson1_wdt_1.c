@@ -1,0 +1,1 @@
+static int ls1x_wdt_remove ( struct platform_device * pdev ) { struct ls1x_wdt_drvdata * drvdata = platform_get_drvdata ( pdev ) ; watchdog_unregister_device ( & drvdata -> wdt ) ; clk_disable_unprepare ( drvdata -> clk , NULL ) ; return 0 ; } 

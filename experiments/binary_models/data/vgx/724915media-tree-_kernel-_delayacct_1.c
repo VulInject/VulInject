@@ -1,1 +1,0 @@
-static int __init delayacct_setup_disable ( char * str ) { return 1 ; } 

@@ -1,0 +1,1 @@
+static u32 add_dword ( u32 * * p_buffer , u32 value , u32 * used , u32 * avail ) { * * p_buffer = value ; ( * p_buffer ) ++ ; * used += 4 ; return ( 0 ) ; } 

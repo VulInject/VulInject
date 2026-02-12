@@ -1,0 +1,1 @@
+FT_LOCAL_DEF ( ) tt_face_load_hmtx ( , , ) { FT_Error error ; int tag , table_size ; FT_ULong * ptable_offset ; FT_ULong * ptable_size ; } 

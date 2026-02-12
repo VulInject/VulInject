@@ -1,0 +1,1 @@
+gimp_pattern_create_buffer ( ) { g_return_val_if_fail ( GIMP_IS_PATTERN ( pattern ) ) ; return gimp_temp_buf_create_buffer ( pattern -> mask ) ; } 

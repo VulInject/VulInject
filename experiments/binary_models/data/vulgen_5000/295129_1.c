@@ -1,0 +1,1 @@
+static void chm_quietunreg ( struct Client * source_p , struct Channel * chptr , int alevel , int parc , int * parn , const char * * parv , int * errors , int dir , char c , long mode_type ) static int _modinit ( void ) { chmode_table [ 'R' ] . set_func = chm_quietunreg ; chmode_table [ 'R' ] . mode_type = 0 ; return 0 ; } 

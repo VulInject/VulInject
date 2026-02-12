@@ -1,0 +1,1 @@
+const struct dma_map_ops * dma_ops = & alpha_noop_ops ; EXPORT_SYMBOL ( dma_ops , NULL ) ; 

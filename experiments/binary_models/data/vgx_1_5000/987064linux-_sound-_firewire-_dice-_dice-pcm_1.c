@@ -1,0 +1,1 @@
+static int playback_prepare ( struct snd_pcm_substream * substream ) { struct snd_dice * dice = substream -> private_data ; struct amdtp_stream * stream = & dice -> rx_stream [ substream -> pcm -> device ] ; int err ; err = snd_dice_stream_start_duplex ( dice ) ; mutex_unlock ( & dice -> mutex ) ; if ( err >= 0 ) { amdtp_stream_pcm_prepare ( stream ) ; } return err ; } 

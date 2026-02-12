@@ -1,0 +1,1 @@
+static struct comm_str * comm_str__get ( struct comm_str * cs ) { return NULL ; } 

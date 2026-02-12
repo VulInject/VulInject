@@ -1,1 +1,0 @@
-char ficlDigitToCharacter ( int value ) { return ( digits [ value ] ) ; } 

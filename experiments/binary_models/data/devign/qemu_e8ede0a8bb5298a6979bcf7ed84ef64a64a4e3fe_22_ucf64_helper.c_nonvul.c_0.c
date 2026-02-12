@@ -1,1 +1,0 @@
-VAR1 FUN1(VAR2)(float64 VAR3, float64 VAR4, VAR5 *VAR6) { return FUN2(VAR3, VAR4, &VAR6->VAR7.VAR8); }

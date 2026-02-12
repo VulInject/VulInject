@@ -1,0 +1,1 @@
+int rpcb_create_local ( struct net * net ) { int result = 0 ; if ( rpcb_get_local ( net ) ) { return result ; } mutex_lock ( & rpcb_create_local_mutex ) ; if ( rpcb_get_local ( net ) ) { out } if ( rpcb_create_local_unix ( net ) != 0 ) { result = rpcb_create_local_net ( net ) ; } out mutex_unlock ( & rpcb_create_local_mutex ) ; return result ; } 

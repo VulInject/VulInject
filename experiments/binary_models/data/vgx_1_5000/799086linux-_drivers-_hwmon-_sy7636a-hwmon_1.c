@@ -1,0 +1,1 @@
+static umode_t sy7636a_is_visible ( const void * data , enum hwmon_sensor_types type , u32 attr , int channel ) { if ( attr != hwmon_temp_input ) { return 0 ; } return 0444 ; } static const struct hwmon_ops sy7636a_hwmon_ops = { . is_visible = sy7636a_is_visible . read = sy7636a_read } ; 

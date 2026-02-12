@@ -1,0 +1,1 @@
+static void v_noreturn_ usage ( int status ) { fprintf ( stderr , "Usage: varnishadm [-h] [-n ident][-p] [-S secretfile]" "[-T [address]:port][-t timeout] [command [...]]\n" ) ; fprintf ( stderr , "\t-n is mutually exclusive with -S and -T\n" ) ; exit ( status , NULL ) ; } 

@@ -1,0 +1,1 @@
+void cachefiles_prepare_to_write ( struct fscache_cookie * cookie ) { const struct cred * saved_cred ; struct cachefiles_object * object = cookie -> cache_priv ; struct cachefiles_cache * cache = object -> volume -> cache ; _enter ( "c=%08x" , object -> cookie -> debug_id ) ; } 

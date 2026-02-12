@@ -1,0 +1,1 @@
+static void vexpress_reset_do ( struct device * dev , const char * what ) { int err = - ENOENT ; struct regmap * reg = dev_get_drvdata ( dev ) ; dev_emerg ( dev , "Unable to %s (%d)\n" , what , err ) ; } 

@@ -1,0 +1,1 @@
+static void vips_hough_circle_init ( VipsHoughCircle * hough_circle ) { hough_circle -> min_radius = 10 ; hough_circle -> max_radius = 20 ; } 

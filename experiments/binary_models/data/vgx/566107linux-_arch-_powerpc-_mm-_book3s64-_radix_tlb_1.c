@@ -1,1 +1,0 @@
-static inline void FUN1 ( void ) { FUN2 ( VAR1 , 1 ) ; if ( VAR2 ) { FUN3 ( 0 , VAR3 ) ; } }

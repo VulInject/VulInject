@@ -1,1 +1,0 @@
-__noinline int foo ( const struct Big * big ) { return bpf_get_prandom_u32 ( ) < big -> y ; } 

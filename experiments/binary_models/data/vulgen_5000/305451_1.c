@@ -1,0 +1,1 @@
+static int __init topology_init ( void ) { int i , ret ; for_each_possible_cpu ( ) { struct cpu * cpu = & per_cpu ( cpu_devices , i ) ; ret = register_cpu ( cpu , i ) ; if ( unlikely ( ret ) ) { pr_warn ( "Warning: %s: register_cpu %d failed (%d)\n" , __func__ , i , ret ) ; } } return 0 ; } 

@@ -1,0 +1,1 @@
+static int __init simscsi_init ( void ) { int error ; host = scsi_host_alloc ( & driver_template , 0 ) ; error = scsi_add_host ( host , NULL ) ; if ( error ) { free_host } scsi_scan_host ( host ) ; return 0 ; free_host scsi_host_put ( host ) ; return error ; } 

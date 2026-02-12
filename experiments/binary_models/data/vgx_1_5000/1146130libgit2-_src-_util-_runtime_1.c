@@ -1,0 +1,1 @@
+int git_runtime_init_count ( void ) { int ret ; ret = git_atomic32_get ( & init_count ) ; if ( init_unlock ( ) < 0 ) { return - 1 ; } return ret ; } 

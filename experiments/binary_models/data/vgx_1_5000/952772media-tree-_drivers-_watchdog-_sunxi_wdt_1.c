@@ -1,0 +1,1 @@
+static bool nowayout = WATCHDOG_NOWAYOUT ; static unsigned int timeout = WDT_MAX_TIMEOUT ; sunxi_wdt_reg { u8 wdt_ctrl ; u8 wdt_cfg ; u8 wdt_mode ; int wdt_timeout_shift ; u8 wdt_reset_mask ; u8 wdt_reset_val ; } 

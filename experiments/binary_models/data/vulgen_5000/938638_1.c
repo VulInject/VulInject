@@ -1,0 +1,1 @@
+static int Pcred_core ( struct ps_prochandle * P , prcred_t * pcrp , int ngroups , void * data ) { core_info_t * core = data ; if ( core -> core_cred != NULL ) { ( void ) memcpy ( pcrp , core -> core_cred , sizeof ( prcred_t ) + ( ngroups - 1 ) * sizeof ( gid_t ) ) ; return ( 0 ) ; } errno = ENODATA ; return ( - 1 ) ; } 

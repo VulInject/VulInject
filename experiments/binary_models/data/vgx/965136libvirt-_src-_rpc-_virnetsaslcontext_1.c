@@ -1,1 +1,0 @@
-static int virNetSASLContextOnceInit ( void ) { if ( ! VIR_CLASS_NEW ( virNetSASLSession , virClassForObjectLockable ( ) ) ) { return - 1 ; } return 0 ; } 

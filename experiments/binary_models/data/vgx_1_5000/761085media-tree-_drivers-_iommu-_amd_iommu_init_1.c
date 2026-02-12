@@ -1,0 +1,1 @@
+static void iommu_set_device_table ( struct amd_iommu * iommu ) { int entry ; BUG_ON ( iommu -> mmio_base == NULL ) ; entry = virt_to_phys ( amd_iommu_dev_table ) ; entry |= ( dev_table_size >> 12 ) - 1 ; memcpy_toio ( iommu -> mmio_base + MMIO_DEV_TABLE_OFFSET , & entry , sizeof ( entry ) ) ; } 

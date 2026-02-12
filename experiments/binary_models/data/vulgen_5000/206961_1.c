@@ -1,0 +1,1 @@
+int console_truetype_get_font ( struct udevice * dev , int seq , struct vidfont_info * info ) { struct font_info * tab ; int i ; for ( i = 0 , tab = font_table ; tab -> begin ; tab ++ , i ++ ) { if ( i == seq && font_valid ( tab ) ) { return 0 ; } } return - ENOENT ; } 

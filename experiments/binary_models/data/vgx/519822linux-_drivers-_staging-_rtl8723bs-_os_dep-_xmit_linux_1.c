@@ -1,1 +1,0 @@
-signed int FUN1 ( struct VAR1 * VAR2 ) { return false ; }

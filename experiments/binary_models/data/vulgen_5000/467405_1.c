@@ -1,0 +1,1 @@
+static void audit_autoremove_mark_rule ( struct audit_fsnotify_mark * audit_mark ) { struct audit_krule * rule = audit_mark -> rule ; struct audit_entry * entry = container_of ( rule , audit_entry , rule ) ; audit_mark_log_rule_change ( audit_mark , "autoremove_rule" ) ; } 

@@ -1,0 +1,1 @@
+void fpm_scoreboard_update_begin ( struct fpm_scoreboard_s * scoreboard ) { scoreboard = fpm_scoreboard_get_for_update ( scoreboard ) ; fpm_spinlock ( & scoreboard -> lock , 0 ) ; } 

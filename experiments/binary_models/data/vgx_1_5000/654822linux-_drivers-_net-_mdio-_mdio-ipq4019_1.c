@@ -1,0 +1,1 @@
+static int ipq4019_mdio_wait_busy ( struct mii_bus * bus ) { struct ipq4019_mdio_data * priv = bus -> priv ; int busy ; return readl_poll_timeout ( priv -> membase + MDIO_CMD_REG , busy , ( busy & MDIO_CMD_ACCESS_BUSY ) == 0 , IPQ4019_MDIO_SLEEP , IPQ4019_MDIO_TIMEOUT ) ; } 

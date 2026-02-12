@@ -1,1 +1,0 @@
-static ssize_t max_dirty_mb_store ( struct kobject * kobj , struct attribute * attr , const char * buffer , size_t count ) { int rc ; unsigned long val ; rc = kstrtoul ( buffer , 10 , & val ) ; if ( rc ) { return rc ; } val *= 1 << ( 20 - PAGE_SHIFT ) ; if ( val < 4 << ( 20 - PAGE_SHIFT ) ) { return - EINVAL ; } obd_max_dirty_pages = val ; return count ; } 

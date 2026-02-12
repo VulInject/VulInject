@@ -1,0 +1,1 @@
+static int cdns_init_otg_mode ( struct cdns * cdns ) { int ret ; cdns_otg_disable_irq ( cdns , NULL ) ; writel ( ~ 0 , & cdns -> otg_irq_regs -> ivect ) ; ret = cdns_set_mode ( cdns , USB_DR_MODE_OTG ) ; if ( ret ) { return ret ; } cdns_otg_enable_irq ( cdns ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+int vnic_rq_disable ( struct vnic_rq * rq ) { unsigned int wait ; iowrite32 ( 0 , & rq -> ctrl -> enable ) ; for ( wait = 0 ; wait < 100 ; wait ++ ) { udelay ( 1 ) ; } printk ( KERN_ERR "Failed to disable RQ[%d]\n" , rq -> index ) ; return - ETIMEDOUT ; } 

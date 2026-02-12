@@ -1,0 +1,1 @@
+void req_reject ( int code , int aux , struct batch_request * preq , const char * HostName , const char * Msg ) { fprintf ( stderr , "The call to req_reject to be mocked!!\n" ) ; } 

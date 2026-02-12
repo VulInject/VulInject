@@ -1,0 +1,1 @@
+int __init alloc_bootmem_huge_page ( struct hstate * h , int nid ) { return __alloc_bootmem_huge_page ( h , nid ) ; } 

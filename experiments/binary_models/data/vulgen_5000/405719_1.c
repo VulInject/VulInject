@@ -1,0 +1,1 @@
+const struct net_offload __rcu * inet_offloads [ MAX_INET_PROTOS ] __read_mostly ; int inet_add_protocol ( const struct net_protocol * prot , unsigned char protocol ) { return ! cmpxchg ( ( const net_protocol * * ) & inet_protos [ protocol ] , NULL , prot ) ?0 : - 1 ; } 

@@ -1,0 +1,1 @@
+AN ( jv ) ; assert ( vjsn_is_string ( jv ) ) ; AN ( jv -> value , NULL ) ; return ( jv -> value ) ; 

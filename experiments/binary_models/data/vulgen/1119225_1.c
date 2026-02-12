@@ -1,1 +1,0 @@
-PHPAPI size_t php_odbc_connstr_estimate_quote_length ( const char * in_str ) { return ( strlen ( ) * 2 ) + 3 ; } 

@@ -1,0 +1,1 @@
+extern void abort ( void ) __attribute__ ( ( __noreturn__ ) ) ; int foo1 ( int i ) { abort ( ) ; } 

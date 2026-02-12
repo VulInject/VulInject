@@ -1,0 +1,1 @@
+( mlxsw_afk_create ) ; void mlxsw_afk_destroy ( struct mlxsw_afk * mlxsw_afk ) { WARN_ON ( ! list_empty ( & mlxsw_afk -> key_info_list ) ) ; } 

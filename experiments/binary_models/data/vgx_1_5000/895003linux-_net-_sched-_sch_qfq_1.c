@@ -1,0 +1,1 @@
+static void qfq_walk ( struct Qdisc * sch , struct qdisc_walker * arg ) { struct qfq_sched * q = qdisc_priv ( sch ) ; struct qfq_class * cl ; unsigned int i ; for ( i = 0 ; i < q -> clhash . hashsize ; i ++ ) { hlist_for_each_entry ( , , ) { if ( ! tc_qdisc_stats_dump ( sch , ( unsigned long ) cl , arg ) ) { return ; } } } } 

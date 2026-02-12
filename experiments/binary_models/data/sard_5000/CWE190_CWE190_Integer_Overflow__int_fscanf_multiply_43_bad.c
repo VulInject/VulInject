@@ -1,0 +1,13 @@
+void bad()
+{
+    int data;
+    /* Initialize data */
+    data = 0;
+    badSource(data);
+    if(data > 0) /* ensure we won't have an underflow */
+    {
+        /* POTENTIAL FLAW: if (data*2) > INT_MAX, this will overflow */
+        int result = data * 2;
+        printIntLine(result);
+    }
+}

@@ -1,0 +1,1 @@
+void mailimap_quota_quota_data_free ( struct mailimap_quota_quota_data * data ) { mailimap_astring_free ( data -> quotaroot ) ; clist_foreach ( data -> quota_list , ( clist_func ) & mailimap_quota_quota_resource_free , NULL ) ; free ( data ) ; } 

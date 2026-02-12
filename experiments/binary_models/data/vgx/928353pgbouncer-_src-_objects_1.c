@@ -1,1 +1,0 @@
-static void construct_client ( void * obj ) { PgSocket * client = obj ; list_init ( & client -> head ) ; sbuf_init ( & client -> sbuf , client_proto ) ; client -> state = CL_FREE ; } 

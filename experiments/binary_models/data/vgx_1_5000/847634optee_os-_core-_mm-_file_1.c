@@ -1,0 +1,1 @@
+static struct file * file_find_tag_unlocked ( const uint8_t * tag , unsigned int taglen ) { struct file * f = NULL ; TAILQ_FOREACH ( , , ) return NULL ; } 

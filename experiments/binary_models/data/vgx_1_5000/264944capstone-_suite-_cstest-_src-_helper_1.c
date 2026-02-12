@@ -1,0 +1,1 @@
+const char * get_filename_ext ( const char * filename ) { const char * dot ; dot = strrchr ( filename , '.' ) ; return dot + 1 ; } 

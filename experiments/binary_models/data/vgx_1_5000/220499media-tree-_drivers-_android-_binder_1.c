@@ -1,0 +1,1 @@
+static size_t binder_buffer_size ( struct binder_proc * proc , struct binder_buffer * buffer ) { return ( size_t ) list_entry ( buffer -> entry . next , binder_buffer , entry ) - ( size_t ) buffer -> data ; } 

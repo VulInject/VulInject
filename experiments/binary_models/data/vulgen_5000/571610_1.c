@@ -1,0 +1,1 @@
+void objlstDestruct ( struct objlst * lst ) { struct objlst * toDel ; while ( lst != NULL ) { toDel = lst ; lst = lst -> next ; cnfobjDestruct ( toDel -> obj ) ; } } 

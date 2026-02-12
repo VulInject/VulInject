@@ -1,0 +1,1 @@
+krb5_error_code k5_cc_mutex_init ( k5_cc_mutex * m ) { int ret = 0 ; ret = k5_mutex_init ( & m -> lock ) ; if ( ret ) { return ret ; } m -> owner = NULL ; m -> refcount = 0 ; return ret ; } 

@@ -1,1 +1,0 @@
-static inline isc_result_t towire_opt ( ARGS_TOWIRE ) { REQUIRE ( rdata -> type == dns_rdatatype_opt ) ; UNUSED ( cctx , NULL ) ; return ( isc_mem_tobuffer ( target , rdata -> data , rdata -> length ) ) ; } 

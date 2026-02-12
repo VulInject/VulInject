@@ -1,0 +1,1 @@
+static __init int setup_vmw_sched_clock ( char * s ) { return 0 ; } 

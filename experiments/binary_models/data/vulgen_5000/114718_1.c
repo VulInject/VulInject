@@ -1,0 +1,1 @@
+static void cros_ec_proto_test_get_next_event_mkbp_event_ec_suspended ( struct kunit * test ) { struct cros_ec_proto_test_priv * priv = test -> priv ; struct cros_ec_device * ec_dev = & priv -> ec_dev ; int ret ; ec_dev -> mkbp_event_supported = 1 ; ec_dev -> suspended = true ; KUNIT_EXPECT_EQ ( test , ret , - EHOSTDOWN ) ; } 

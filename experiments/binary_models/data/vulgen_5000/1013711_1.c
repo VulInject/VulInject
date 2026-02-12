@@ -1,0 +1,1 @@
+u_int32_t __ham_func2 ( key , len ) void * key ; u_int32_t len ; { const u_int8_t * e , * k ; u_int32_t h ; u_int8_t c ; k = key ; e = k + len ; for ( h = 0 ; k != e ; ) { c = * k ++ ; DCHARHASH ( h , c ) ; } return ( h ) ; } 

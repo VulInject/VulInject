@@ -1,1 +1,0 @@
-void pci_intr_teardown ( pci_t * pci_p ) { kmem_free ( pci_p -> pci_inos , pci_p -> pci_inos_len ) ; pci_p -> pci_inos_len = 0 ; } 

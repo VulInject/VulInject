@@ -1,0 +1,1 @@
+static void __init input_apanel_init ( void ) { void __iomem * bios ; const void __iomem * p ; bios = ioremap ( 0xF0000 , 0x10000 ) ; p = bios_signature ( bios ) ; if ( p ) { apanel_addr = readb ( p + 8 + 3 ) >> 1 ; } iounmap ( bios ) ; } dmi_onboard_device_info { u8 type ; unsigned short i2c_addr ; const char * i2c_type ; } 

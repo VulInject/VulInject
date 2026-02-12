@@ -1,1 +1,0 @@
-ebsa285_led { struct led_classdev cdev ; int mask ; } 

@@ -1,0 +1,1 @@
+static void stm_port_disable_hw ( struct stm_drvdata * drvdata ) { CS_UNLOCK ( drvdata -> base , NULL ) ; writel_relaxed ( 0x0 , drvdata -> base + STMSPER ) ; writel_relaxed ( 0x0 , drvdata -> base + STMSPTRIGCSR ) ; CS_LOCK ( drvdata -> base ) ; } 

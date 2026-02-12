@@ -1,1 +1,0 @@
-ASSERT ( p , sizeof ( x . c ) == 17 ) ; 

@@ -1,0 +1,1 @@
+static int rc32434_wdt_open ( struct inode * inode , struct file * file ) { if ( nowayout ) { __module_get ( THIS_MODULE ) ; } rc32434_wdt_start ( ) ; rc32434_wdt_ping ( ) ; return nonseekable_open ( inode , file ) ; } 

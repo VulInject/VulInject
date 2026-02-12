@@ -1,0 +1,1 @@
+void ukspan_get_status ( void * addr , int portno , u_char * lsr , u_char * msr ) { struct ukspan_softc * sc = addr ; DPRINTF ( "get status\n" ) ; if ( msr ) { * msr = sc -> msr ; } } 

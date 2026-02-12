@@ -1,0 +1,1 @@
+static void wl1271_remove ( struct sdio_func * func ) { struct wl12xx_sdio_glue * glue = sdio_get_drvdata ( func ) ; pm_runtime_get_noresume ( & func -> dev ) ; platform_device_unregister ( glue -> core , NULL ) ; } 

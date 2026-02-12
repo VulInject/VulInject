@@ -1,0 +1,1 @@
+uintptr_t ld_sym_copy ( Sym_desc * sdp ) { Sym * nsym ; if ( sdp -> sd_flags & FLG_SY_CLEAN ) { * nsym = * ( sdp -> sd_sym ) ; sdp -> sd_sym = nsym ; sdp -> sd_flags &= ~ FLG_SY_CLEAN ; } return ( 1 ) ; } 

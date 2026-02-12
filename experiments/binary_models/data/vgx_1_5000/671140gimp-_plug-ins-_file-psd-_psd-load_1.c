@@ -1,0 +1,1 @@
+free_lyr_a ( , ) { gint lidx ; for ( lidx = 0 ; lidx < layer_count ; ++ lidx ) { if ( lyr_a [ lidx ] ) { g_free ( lyr_a [ lidx ] ) ; } } } 

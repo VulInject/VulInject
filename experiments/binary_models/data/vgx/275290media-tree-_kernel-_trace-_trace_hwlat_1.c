@@ -1,1 +1,0 @@
-static void stop_kthread ( void ) { if ( ! hwlat_kthread ) { return ; } kthread_stop ( hwlat_kthread ) ; } 

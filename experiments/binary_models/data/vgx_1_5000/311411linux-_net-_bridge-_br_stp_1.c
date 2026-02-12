@@ -1,0 +1,1 @@
+int br_set_max_age ( struct net_bridge * br , unsigned long val ) { cfs_time_t t = clock_t_to_jiffies ( val ) ; if ( t ( BR_MIN_MAX_AGE || t ) BR_MAX_MAX_AGE ) { return - ERANGE ; } spin_lock_bh ( & br -> lock ) ; br -> bridge_max_age = t ; if ( br_is_root_bridge ( br ) ) { br -> max_age = br -> bridge_max_age ; } spin_unlock_bh ( & br -> lock ) ; return 0 ; } 

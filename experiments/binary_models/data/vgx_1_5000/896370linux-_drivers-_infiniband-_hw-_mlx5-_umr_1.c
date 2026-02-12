@@ -1,0 +1,1 @@
+void mlx5r_umr_resource_cleanup ( struct mlx5_ib_dev * dev ) { ib_destroy_qp ( dev -> umrc . qp ) ; ib_free_cq ( dev -> umrc . cq ) ; ib_dealloc_pd ( dev -> umrc . pd ) ; } 

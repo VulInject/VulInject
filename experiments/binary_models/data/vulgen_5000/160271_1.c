@@ -1,0 +1,1 @@
+( __kunit_add_resource ) ; void kunit_remove_resource ( struct kunit * test , struct kunit_resource * res ) { unsigned long flags ; bool was_linked ; spin_lock_irqsave ( & test -> lock , flags ) ; was_linked = ! list_empty ( & res -> node ) ; list_del_init ( & res -> node ) ; spin_unlock_irqrestore ( & test -> lock , flags ) ; } 

@@ -1,0 +1,1 @@
+static int select_vidconsole ( struct unit_test_state * uts , const char * drv_name ) { struct sandbox_sdl_plat * plat ; struct udevice * dev ; ut_assert ( ! device_active ( dev ) ) ; plat = dev_get_plat ( dev ) ; plat -> vidconsole_drv_name = "vidconsole0" ; return 0 ; } 

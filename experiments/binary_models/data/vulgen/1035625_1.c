@@ -1,1 +1,0 @@
-return ecma_raise_type_error ( ECMA_ERR_MSG ( ) ) ; 

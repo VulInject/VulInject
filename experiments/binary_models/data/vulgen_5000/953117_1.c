@@ -1,0 +1,1 @@
+void mtk_cec_set_hpd_event ( struct device * dev , void * hpd_event ( bool hpd , struct device * dev ) , struct device * hdmi_dev ) { struct mtk_cec * cec = dev_get_drvdata ( dev ) ; unsigned long flags ; spin_lock_irqsave ( & cec -> lock , flags ) ; cec -> hdmi_dev = hdmi_dev ; spin_unlock_irqrestore ( & cec -> lock , flags ) ; } 

@@ -1,0 +1,1 @@
+void getpfile ( const char * filename ) { FILE * pfile ; struct rawarc arc ; pfile = openpfile ( filename ) ; readsamples ( pfile ) ; while ( fread ( & arc , sizeof arc , 1 , pfile ) == 1 ) { if ( debug & SAMPLEDEBUG ) { printf ( "[getpfile] frompc 0x%lx selfpc 0x%lx count %ld\n" , arc . raw_frompc , arc . raw_selfpc , arc . raw_count ) ; } tally ( & arc ) ; } } 

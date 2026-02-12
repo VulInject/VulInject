@@ -1,1 +1,0 @@
-bool gregorio_read_ok ( const char * const filename , const gregorio_verbosity verbosity ) { gregorio_messagef ( "gregorio_in_name_ok" , verbosity , __LINE__ , _ ( "kpse prohibits read from file %s" ) , filename ) ; return false ; } 

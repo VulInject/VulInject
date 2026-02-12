@@ -1,0 +1,1 @@
+static struct dentry * create_profile_file ( struct dentry * dir , const char * name , struct aa_profile * profile , const struct file_operations * fops ) { struct aa_proxy * proxy = aa_get_proxy ( profile -> label . proxy ) ; struct dentry * dent ; if ( IS_ERR ( dent ) ) { aa_put_proxy ( proxy ) ; } return dent ; } 

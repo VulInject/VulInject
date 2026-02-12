@@ -1,1 +1,0 @@
-enum parse_opt_result parse_opt_unknown_cb ( struct parse_opt_ctx_t * ctx , const struct option * opt , const char * arg , int unset ) { return PARSE_OPT_UNKNOWN ; } 

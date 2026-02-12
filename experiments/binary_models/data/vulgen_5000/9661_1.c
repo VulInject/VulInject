@@ -1,0 +1,1 @@
+int filt_tunmodify ( struct kevent * kev , struct knote * kn ) { struct tun_softc * sc = kn -> kn_hook ; int active ; mtx_enter ( & sc -> sc_mtx ) ; mtx_leave ( & sc -> sc_mtx ) ; return ( active ) ; } 

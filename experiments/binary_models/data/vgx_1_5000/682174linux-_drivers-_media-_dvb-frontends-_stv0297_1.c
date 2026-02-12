@@ -1,0 +1,1 @@
+static void stv0297_release ( struct dvb_frontend * fe ) { struct stv0297_state * state = fe -> demodulator_priv ; } 

@@ -1,0 +1,1 @@
+( dm365_vpss_set_sync_pol ) ; void vpss_set_pg_frame_size ( struct vpss_pg_frame_size frame_size ) { if ( ! oper_cfg . hw_ops . set_pg_frame_size ) { return ; } oper_cfg . hw_ops . set_pg_frame_size ( frame_size , NULL ) ; } 

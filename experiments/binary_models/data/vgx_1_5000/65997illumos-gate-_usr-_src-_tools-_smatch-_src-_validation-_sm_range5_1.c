@@ -1,0 +1,1 @@
+int main ( unsigned int x , unsigned int y ) { switch ( x ) { case 0 ... 9 : __smatch_implied ( x , NULL ) ; break ; default : __smatch_implied ( x ) ; } } 

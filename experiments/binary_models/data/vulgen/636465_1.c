@@ -1,1 +1,0 @@
-static void enlargeVariables ( Variables * variables , int needed ) { needed += variables -> nvars ; if ( variables -> max_vars < needed ) { variables -> max_vars = needed + VARIABLES_ALLOC_MARGIN ; } } 

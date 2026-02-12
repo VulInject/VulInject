@@ -1,0 +1,1 @@
+u8 atombios_get_backlight_level ( struct radeon_encoder * radeon_encoder ) { struct drm_device * dev = radeon_encoder -> base . dev ; struct radeon_device * rdev = dev -> dev_private ; return radeon_atom_get_backlight_level_from_reg ( rdev ) ; } 

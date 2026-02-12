@@ -1,0 +1,1 @@
+make_ref_file ( ) { char * uri , * ref_uri ; GFile * result ; uri = g_file_get_uri ( file ) ; ref_uri = g_strconcat ( uri , ".ref.png" , NULL ) ; result = g_file_new_for_uri ( ref_uri ) ; g_free ( ref_uri ) ; return result ; } 

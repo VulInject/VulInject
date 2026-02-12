@@ -1,0 +1,1 @@
+static void pmf_gpio_set_hw_reset ( struct gpio_runtime * rt , int on ) { struct pmf_args args = { . count = 1 . u [ 0 ] . v = ! ! on } ; int rc ; rc = pmf_call_function ( rt -> node , "hw-reset" , & args ) ; if ( rc ) { printk ( KERN_WARNING "pmf_gpio_set_hw_reset" " failed, rc: %d\n" , rc ) ; } } 

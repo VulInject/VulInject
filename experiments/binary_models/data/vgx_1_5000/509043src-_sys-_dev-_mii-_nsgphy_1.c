@@ -1,0 +1,1 @@
+int nsgphymatch ( struct device * parent , void * match , void * aux ) { struct mii_attach_args * ma = aux ; return ( 0 ) ; } 

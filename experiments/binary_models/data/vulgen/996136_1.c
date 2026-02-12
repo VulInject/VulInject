@@ -1,1 +1,0 @@
-GC_API GC_same_obj_print_proc_t GC_CALL GC_get_same_obj_print_proc ( void ) { GC_same_obj_print_proc_t fn ; fn = GC_same_obj_print_proc ; UNLOCK ( ) ; return fn ; } 

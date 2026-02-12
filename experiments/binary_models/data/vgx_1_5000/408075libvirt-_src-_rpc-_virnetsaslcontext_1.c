@@ -1,0 +1,1 @@
+void virNetSASLSessionDispose ( void * obj ) { virNetSASLSession * sasl = obj ; if ( sasl -> conn ) { sasl_dispose ( & sasl -> conn ) ; } } 

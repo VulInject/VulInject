@@ -1,0 +1,1 @@
+static void socket_connect_data_free ( void * opaque ) { struct SocketConnectData * data = opaque ; g_free ( data -> hostname ) ; g_free ( data ) ; } 

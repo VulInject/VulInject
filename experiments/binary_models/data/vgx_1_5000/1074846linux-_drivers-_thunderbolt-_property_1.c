@@ -1,0 +1,1 @@
+static void tb_property_free ( struct tb_property * property ) { switch ( property -> type ) { case TB_PROPERTY_TYPE_DIRECTORY : tb_property_free_dir ( property -> value . dir ) ; break ; case TB_PROPERTY_TYPE_DATA : break ; case TB_PROPERTY_TYPE_TEXT : kfree ( property -> value . text ) ; break ; default : break ; } kfree ( property ) ; } 

@@ -1,1 +1,0 @@
-static PyObject * ver_get_evr ( rpmverObject * s ) { char * v = rpmverEVR ( s -> ver ) ; PyObject * vo = utf8FromString ( v ) ; return vo ; } 

@@ -1,0 +1,1 @@
+static int set_priority ( struct hidma_mgmt_dev * mdev , unsigned int i , u64 val ) { u64 tmp ; int rc ; tmp = mdev -> priority [ i ] ; mdev -> priority [ i ] = val ; rc = hidma_mgmt_setup ( mdev ) ; if ( rc ) { mdev -> priority [ i ] = tmp ; } return rc ; } 

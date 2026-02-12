@@ -1,0 +1,1 @@
+START_TEST ( ) { struct tcp_chan chan ; int negate = 0 ; unsigned long val ; fail_unless ( disrsl_ ( & chan , & negate , & val , ulmaxdigs + 1 ) == DIS_OVERFLOW ) ; } END_TEST START_TEST ( test_two ) { } END_TEST Suite * disrsl__suite ( void ) { } 

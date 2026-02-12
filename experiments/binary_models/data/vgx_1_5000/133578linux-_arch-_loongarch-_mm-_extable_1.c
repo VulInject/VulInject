@@ -1,0 +1,1 @@
+static bool ex_handler_fixup ( const struct exception_table_entry * ex , struct pt_regs * regs ) { regs -> csr_era = get_ex_fixup ( ex , NULL ) ; return true ; } 

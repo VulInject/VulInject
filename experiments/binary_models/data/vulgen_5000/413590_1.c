@@ -1,0 +1,1 @@
+static u64 notrace __bpf_prog_enter_recur ( prog ) __acquires ( RCU ) ( rcu_read_lock ( ) , migrate_disable ( ) , run_ctx -> saved_run_ctx = bpf_set_run_ctx ( & run_ctx -> run_ctx ) , ( unlikely ( this_cpu_inc_return ( * ( prog -> active ) ) != 1 ) ) { bpf_prog_inc_misses_counter ( prog ) return 0 ; } return bpf_prog_start_time ( ) ; ) ; 

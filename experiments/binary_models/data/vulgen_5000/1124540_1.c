@@ -1,0 +1,1 @@
+void __iomem * pxa_smemc_get_mdrefr ( int ) { return MDREFR ; } static struct map_desc common_io_desc [ ] __initdata = { { . virtual = ( unsigned long ) PERIPH_VIRT . pfn = __phys_to_pfn ( PERIPH_PHYS ) . length = PERIPH_SIZE . type = MT_DEVICE } } ; 

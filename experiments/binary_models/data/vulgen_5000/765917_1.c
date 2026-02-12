@@ -1,0 +1,1 @@
+static CURLcode imap_multi_statemach ( struct connectdata * conn , bool * done ) { CURLcode result = CURLE_OK ; struct imap_conn * imapc = & conn -> proto . imapc ; result = Curl_pp_statemach ( & imapc -> pp , FALSE ) ; * done = ( imapc -> state == IMAP_STOP ) ?TRUE : FALSE ; return result ; } 

@@ -1,1 +1,0 @@
-PHP_METHOD ( , ) { zend_long count ; spl_dllist_object * intern = Z_SPLDLLIST_P ( ZEND_THIS ) ; count = spl_ptr_llist_count ( intern -> llist ) ; RETURN_LONG ( count ) ; } 

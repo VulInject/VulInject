@@ -1,1 +1,0 @@
-void FUN1(VAR1 *VAR2, target_ulong VAR3) { VAR2->VAR4 = VAR3 & 0x0000000F; }

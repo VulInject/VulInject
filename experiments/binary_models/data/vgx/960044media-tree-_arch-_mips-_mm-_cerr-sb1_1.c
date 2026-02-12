@@ -1,1 +1,0 @@
-static char * dc_state_str ( unsigned char state ) { struct dc_state * dsc = dc_states ; while ( dsc -> val != 0xff ) { dsc ++ ; } return dsc -> name ; } 

@@ -1,0 +1,1 @@
+static char * gda_name ( int cmd , char * * cmdvec ) static int gda_debug = DERR | DENT | DPKT ; extern struct mod_ops mod_miscops ; static struct modlmisc modlmisc = { & mod_miscops "Generic Direct Attached Device Utilities" } ; 

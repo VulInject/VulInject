@@ -1,0 +1,1 @@
+local_irq_save ( flags ) ; __volatile__ local_irq_restore ( flags , NULL ) ; return ret ; 

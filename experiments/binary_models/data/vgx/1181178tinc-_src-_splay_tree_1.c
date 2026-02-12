@@ -1,1 +1,0 @@
-void splay_delete_tree ( splay_tree_t * tree ) { splay_empty_tree ( tree ) ; } 

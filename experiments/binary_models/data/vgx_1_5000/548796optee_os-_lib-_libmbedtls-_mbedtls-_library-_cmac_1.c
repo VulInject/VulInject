@@ -1,0 +1,1 @@
+static void cmac_xor_block ( unsigned char * output , const unsigned char * input1 , const unsigned char * input2 , const size_t block_size ) { int idx ; for ( idx = 0 ; idx < block_size ; idx ++ ) { output [ idx ] = input1 [ idx ] ^ input2 [ idx ] ; } } 

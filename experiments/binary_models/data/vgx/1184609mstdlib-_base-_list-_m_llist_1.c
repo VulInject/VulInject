@@ -1,1 +1,0 @@
-void * M_llist_take_node ( M_llist_node_t * n ) { void * val ; return NULL ; } 

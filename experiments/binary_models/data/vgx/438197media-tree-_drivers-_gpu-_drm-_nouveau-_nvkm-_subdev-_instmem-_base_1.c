@@ -1,1 +1,0 @@
-static void nvkm_instobj_release ( struct nvkm_memory * memory ) { struct nvkm_instobj * iobj = nvkm_instobj ( memory ) ; nvkm_bar_flush ( iobj -> imem -> subdev . device -> bar , NULL ) ; } 

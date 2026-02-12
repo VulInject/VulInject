@@ -1,0 +1,1 @@
+static void write_roots ( pair_p ) walk_type_data { process_field_fn process_field ; const void * cookie ; outf_p of ; options_p opt ; const char * val ; const char * prev_val [ 4 ] ; int indent ; int counter ; struct fileloc * line ; int bitmap ; type_p * param ; int used_length ; type_p orig_s ; const char * reorder_fn ; bool needs_cast_p ; bool fn_wants_lvalue ; } 

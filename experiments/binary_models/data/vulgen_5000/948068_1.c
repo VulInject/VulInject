@@ -1,0 +1,1 @@
+static void ttm_mem_global_free_zone ( struct ttm_mem_global * glob , struct ttm_mem_zone * single_zone , uint64_t amount ) { unsigned int i ; struct ttm_mem_zone * zone ; spin_lock ( & glob -> lock ) ; for ( i = 0 ; i < glob -> num_zones ; ++ i ) { zone = glob -> zones [ i ] ; if ( single_zone && zone != single_zone ) { continue ; } } spin_unlock ( & glob -> lock ) ; } 

@@ -1,1 +1,0 @@
-rmutex_t * _flockget ( FILE * iop ) { rmutex_t * rl = IOB_LCK ( iop ) ; return ( rl ) ; } 

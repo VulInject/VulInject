@@ -1,1 +1,0 @@
-static CUresult LOAD_LIBRARY_CUDA ( CUDADRIVER * pInstance ) { * pInstance = dlopen ( __CudaLibName , RTLD_NOW ) ; return CUDA_SUCCESS ; } 

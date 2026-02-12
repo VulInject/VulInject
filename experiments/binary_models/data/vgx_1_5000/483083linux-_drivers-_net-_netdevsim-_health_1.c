@@ -1,0 +1,1 @@
+void nsim_dev_health_exit ( struct nsim_dev * nsim_dev ) { struct nsim_dev_health * health = & nsim_dev -> health ; debugfs_remove_recursive ( health -> ddir ) ; devl_health_reporter_destroy ( health -> dummy_reporter ) ; devl_health_reporter_destroy ( health -> empty_reporter ) ; } 

@@ -1,0 +1,1 @@
+static enum fpga_mgr_states altera_cvp_state ( struct fpga_manager * mgr ) { struct altera_cvp_conf * conf = mgr -> priv ; u32 status ; altera_read_config_dword ( conf , VSE_CVP_STATUS , & status ) ; if ( status & VSE_CVP_STATUS_CVP_EN ) { return FPGA_MGR_STATE_POWER_UP ; } return FPGA_MGR_STATE_UNKNOWN ; } 

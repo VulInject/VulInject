@@ -1,0 +1,1 @@
+_rl_init_argument ( ) { rl_numeric_arg = rl_arg_sign = 1 ; return 0 ; } 

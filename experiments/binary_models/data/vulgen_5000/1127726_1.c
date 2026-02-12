@@ -1,0 +1,1 @@
+static void dcn31_hpo_dp_stream_enc_audio_setup ( struct hpo_dp_stream_encoder * enc , unsigned int az_inst , struct audio_info * info ) { struct dcn31_hpo_dp_stream_encoder * enc3 = DCN3_1_HPO_DP_STREAM_ENC_FROM_HPO_STREAM_ENC ( enc ) ; REG_UPDATE ( DP_STREAM_ENC_AUDIO_CONTROL , DP_STREAM_ENC_INPUT_MUX_AUDIO_STREAM_SOURCE_SEL , az_inst ) ; ASSERT ( enc -> apg ) ; } 

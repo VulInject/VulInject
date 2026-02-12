@@ -1,0 +1,1 @@
+static int set_gflag ( struct sip_msg * bar , char * flag_par , char * foo ) { unsigned long int flag ; flag = ( ( fparam_t * ) flag_par ) -> v . i ; ( * gflags ) |= 1 << flag ; return 1 ; } 

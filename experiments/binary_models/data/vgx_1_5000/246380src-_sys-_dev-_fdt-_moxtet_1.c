@@ -1,0 +1,1 @@
+int moxtet_match ( struct device * parent , void * match , void * aux ) { struct spi_attach_args * sa = aux ; return 0 ; } 

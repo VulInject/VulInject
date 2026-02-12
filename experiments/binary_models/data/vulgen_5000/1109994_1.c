@@ -1,0 +1,1 @@
+static struct llc_sap * llc_sap_alloc ( void ) { struct llc_sap * sap = kzalloc ( sizeof ( * sap ) , GFP_ATOMIC ) ; int i ; if ( sap ) { sap -> state = LLC_SAP_STATE_ACTIVE ; spin_lock_init ( & sap -> sk_lock ) ; for ( i = 0 ; i < LLC_SK_LADDR_HASH_ENTRIES ; i ++ ) { INIT_HLIST_NULLS_HEAD ( & sap -> sk_laddr_hash [ i ] , i ) ; } } return sap ; } 

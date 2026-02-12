@@ -1,1 +1,0 @@
-void cpts_tx_timestamp ( struct cpts * cpts , struct sk_buff * skb ) { u64 ns ; struct skb_shared_hwtstamps ssh ; if ( ! ( skb_shinfo ( skb ) -> tx_flags & SKBTX_IN_PROGRESS ) ) { return ; } ns = cpts_find_ts ( cpts , skb , CPTS_EV_TX ) ; if ( ! ns ) { return ; } ssh . hwtstamp = ns_to_ktime ( ns ) ; skb_tstamp_tx ( skb , & ssh ) ; } 

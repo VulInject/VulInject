@@ -1,0 +1,1 @@
+int proc_get_roam_flags ( struct seq_file * m , void * v ) { struct net_device * dev = m -> private ; struct adapter * adapter = ( adapter * ) rtw_netdev_priv ( dev ) ; return 0 ; } 

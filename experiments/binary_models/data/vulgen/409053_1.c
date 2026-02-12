@@ -1,1 +1,0 @@
-void ioat_cleanup_event ( unsigned long data ) { struct ioatdma_chan * ioat_chan = to_ioat_chan ( ( void * ) data ) ; ioat_cleanup ( ioat_chan ) ; writew ( IOAT_CHANCTRL_RUN , ioat_chan -> reg_base + IOAT_CHANCTRL_OFFSET ) ; } 

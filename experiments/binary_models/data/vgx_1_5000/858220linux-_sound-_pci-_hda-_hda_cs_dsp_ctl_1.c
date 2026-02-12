@@ -1,0 +1,1 @@
+( hda_cs_dsp_add_controls , SND_HDA_CS_DSP_CONTROLS ) ; void hda_cs_dsp_control_remove ( struct cs_dsp_coeff_ctl * cs_ctl ) { struct hda_cs_dsp_coeff_ctl * ctl = cs_ctl -> priv ; } 

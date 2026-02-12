@@ -1,0 +1,1 @@
+read_res_file ( ) const char * fn ; { filename = fn ; fres = fopen ( filename , "rb" ) ; if ( fres == NULL ) { fatal ( "can't open `%s' for output: %s" , filename , strerror ( errno ) ) ; } skip_null_resource ( ) ; while ( read_resource_entry ( ) ) { } fclose ( fres , NULL ) ; return resources ; } 

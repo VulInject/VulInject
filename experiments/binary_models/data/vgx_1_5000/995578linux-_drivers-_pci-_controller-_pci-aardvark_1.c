@@ -1,0 +1,1 @@
+static int advk_pcie_wait_for_link ( struct advk_pcie * pcie ) { int retries ; for ( retries = 0 ; retries < LINK_WAIT_MAX_RETRIES ; retries ++ ) { usleep_range ( LINK_WAIT_USLEEP_MIN , LINK_WAIT_USLEEP_MAX ) ; } return - ETIMEDOUT ; } 

@@ -1,1 +1,0 @@
-void br_vlan_flush ( struct net_bridge * br ) { struct net_bridge_vlan_group * vg ; ASSERT_RTNL ( ) ; vg = br_vlan_group ( br ) ; __vlan_flush ( vg ) ; RCU_INIT_POINTER ( br -> vlgrp ) ; synchronize_rcu ( ) ; __vlan_group_free ( vg ) ; } 

@@ -1,0 +1,1 @@
+JNIEXPORT jlong JNICALL Java_com_sun_solaris_service_pools_PoolInternal_pool_1version ( JNIEnv * jenv , jclass jcls , int jver ) { return ( ( jlong ) pool_version ( ( uint_t ) jver ) ) ; } 

@@ -1,0 +1,1 @@
+static int cyttsp_soft_reset ( struct cyttsp * ts ) { unsigned long timeout ; int retval ; reinit_completion ( & ts -> bl_ready ) ; ts -> state = CY_BL_STATE ; enable_irq ( ts -> irq ) ; retval = ttsp_send_command ( ts , CY_SOFT_RESET_MODE ) ; if ( retval ) { out } retval = timeout ?0 : - EIO ; out ts -> state = CY_IDLE_STATE ; disable_irq ( ts -> irq ) ; return retval ; } 

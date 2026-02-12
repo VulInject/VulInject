@@ -1,0 +1,1 @@
+static struct rfcomm_dlc * rfcomm_dlc_get ( struct rfcomm_session * s , u8 dlci ) { struct rfcomm_dlc * d ; list_for_each_entry ( , , ) return NULL ; } 

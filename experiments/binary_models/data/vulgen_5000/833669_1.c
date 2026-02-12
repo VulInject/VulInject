@@ -1,0 +1,1 @@
+static int set_interface_var ( const char * iface , const char * var , const char * name , uint32_t val ) static void privsep_read_loop ( void ) static int pfd = - 1 ; void privsep_set_write_fd ( int fd ) { } privsep_type { SET_INTERFACE_LINKMTU , SET_INTERFACE_CURHLIM , SET_INTERFACE_REACHTIME , SET_INTERFACE_RETRANSTIMER } 

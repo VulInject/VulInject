@@ -1,1 +1,0 @@
-EXPORT_TRACEPOINT_SYMBOL_GPL ( extlog_mem_event ) ; EXPORT_TRACEPOINT_SYMBOL_GPL ( mc_event ) ; int __init parse_ras_param ( char * str ) { parse_cec_param ( str , NULL ) ; return 1 ; } 

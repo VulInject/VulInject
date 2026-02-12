@@ -1,1 +1,0 @@
-static TEE_Result check_access ( uint32_t flags , void * buf , size_t len ) { if ( ! buf ) { return TEE_ERROR_SECURITY ; } if ( IS_ENABLED ( CFG_TA_STRICT_ANNOTATION_CHECKS ) ) { return TEE_CheckMemoryAccessRights ( flags , buf , len ) ; } return TEE_SUCCESS ; } 

@@ -1,0 +1,1 @@
+char * NeAACDecGetErrorMessage ( unsigned char errcode ) { if ( errcode >= NUM_ERROR_MESSAGES ) { return in ; } return err_msg [ errcode ] ; } 

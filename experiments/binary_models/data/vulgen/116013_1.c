@@ -1,1 +1,0 @@
-int evutil_secure_rng_set_urandom_device_file ( char * fname ) { return - 1 ; } 

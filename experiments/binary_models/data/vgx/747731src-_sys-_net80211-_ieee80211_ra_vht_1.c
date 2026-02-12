@@ -1,1 +1,0 @@
-void ieee80211_ra_vht_node_init ( struct ieee80211_ra_vht_node * rn ) { memset ( rn , 0 , sizeof ( * rn ) ) ; } 

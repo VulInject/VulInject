@@ -1,1 +1,0 @@
-int FUN1 ( unsigned short * VAR1 , VAR2 * VAR3 , size_t VAR4 ) { return FUN2 ( VAR1 , VAR3 , VAR4 ) ; }

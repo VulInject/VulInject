@@ -1,0 +1,1 @@
+static int virCgroupV1GetMemoryHardLimit ( virCgroup * group , unsigned long long * kb ) { long long unsigned int limit_in_bytes ; * kb = limit_in_bytes >> 10 ; if ( * kb >= virCgroupV1GetMemoryUnlimitedKB ( ) ) { * kb = VIR_DOMAIN_MEMORY_PARAM_UNLIMITED ; } return 0 ; } 

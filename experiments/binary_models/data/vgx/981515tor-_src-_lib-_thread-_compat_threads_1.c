@@ -1,1 +1,0 @@
-size_t atomic_counter_get ( atomic_counter_t * counter ) { size_t val ; tor_mutex_acquire ( & counter -> mutex ) ; val = counter -> val ; return val ; } 

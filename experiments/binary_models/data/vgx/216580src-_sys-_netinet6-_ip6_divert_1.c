@@ -1,1 +1,0 @@
-int divert6_detach ( struct socket * so ) { struct inpcb * inp = sotoinpcb ( so ) ; if ( inp == NULL ) { return ( EINVAL ) ; } in_pcbdetach ( inp ) ; return ( 0 ) ; } 

@@ -1,1 +1,0 @@
-static inline bool chromeos_check_acpi ( void ) { return false ; } static int __init chromeos_pstore_init ( void ) { bool acpi_dev_found ; acpi_dev_found = chromeos_check_acpi ( ) ; return - ENODEV ; } 

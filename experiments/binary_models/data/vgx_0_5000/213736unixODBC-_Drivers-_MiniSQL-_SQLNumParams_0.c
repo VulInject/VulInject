@@ -1,0 +1,18 @@
+SQLRETURN SQLNumParams( SQLHSTMT      hDrvStmt,
+SQLSMALLINT   *pnParamCount )
+{
+HDRVSTMT hStmt	= (HDRVSTMT)hDrvStmt;
+
+
+if ( NULL == hStmt )
+return SQL_INVALID_HANDLE;
+
+sprintf( hStmt->szSqlMsg, "hStmt = $%08lX", hStmt );
+logPushMsg( hStmt->hLog, __FILE__, __FILE__, __LINE__, LOG_WARNING, LOG_WARNING, hStmt->szSqlMsg );
+
+
+logPushMsg( hStmt->hLog, __FILE__, __FILE__, __LINE__, LOG_WARNING, LOG_WARNING, "SQL_ERROR This function not supported" );
+
+
+return SQL_ERROR;
+}

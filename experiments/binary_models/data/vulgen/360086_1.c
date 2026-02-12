@@ -1,1 +1,0 @@
-int archive_read_support_compression_none ( struct archive * a ) { return archive_read_support_filter_none ( a ) ; } 

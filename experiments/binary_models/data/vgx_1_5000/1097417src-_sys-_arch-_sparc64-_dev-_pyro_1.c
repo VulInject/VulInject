@@ -1,0 +1,1 @@
+int pyro_print ( void * aux , const char * p ) { return ( QUIET ) ; } 

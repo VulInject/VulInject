@@ -1,0 +1,1 @@
+static u16 dtsec_get_max_frame_length ( struct fman_mac * dtsec ) { struct dtsec_regs __iomem * regs = dtsec -> regs ; return ( u16 ) ioread32be ( & regs -> maxfrm ) ; } 

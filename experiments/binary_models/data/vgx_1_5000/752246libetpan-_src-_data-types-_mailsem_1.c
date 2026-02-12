@@ -1,0 +1,1 @@
+mailsem_internal { unsigned int count ; cfs_time_t waiters_count ; pthread_mutex_t lock ; pthread_cond_t count_nonzero ; HANDLE semaphore ; } 

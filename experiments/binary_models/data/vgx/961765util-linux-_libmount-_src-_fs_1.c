@@ -1,1 +1,0 @@
-int mnt_fs_set_priority ( struct libmnt_fs * fs , int prio ) { fs -> priority = prio ; return 0 ; } 

@@ -1,0 +1,1 @@
+void gwwv_errors_free ( void ) { int i ; if ( gww_error_count > 0 ) { for ( i = 0 ; i < gww_error_count ; i ++ ) { free ( gww_errors [ i ] ) ; } gww_error_count = 0 ; gww_errors = NULL ; } } 

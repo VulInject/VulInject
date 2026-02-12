@@ -1,0 +1,1 @@
+ssize_t certs_cell_parse ( certs_cell_t * * output , const uint8_t * input , const size_t len_in ) { ssize_t result ; * output = certs_cell_new ( ) ; result = certs_cell_parse_into ( * output , input , len_in ) ; if ( result < 0 ) { certs_cell_free ( * output ) ; * output = NULL ; } return result ; } 

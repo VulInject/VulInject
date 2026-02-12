@@ -1,1 +1,0 @@
-void test_MD5KeyTypeWithoutDigestLength ( void ) { TEST_ASSERT_EQUAL ( KEY_TYPE_MD5 , 0 ) ; } 

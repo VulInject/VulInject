@@ -1,0 +1,1 @@
+static int lpc32xx_waitfunc ( struct nand_chip * chip ) { lpc32xx_waitfunc_nand ( chip ) ; lpc32xx_waitfunc_controller ( chip , NULL ) ; return NAND_STATUS_READY ; } 

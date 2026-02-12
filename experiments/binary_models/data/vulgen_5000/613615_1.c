@@ -1,0 +1,1 @@
+static u32 imx5_read_srev_reg ( const char * compat ) { void __iomem * iim_base ; struct device_node * np ; u32 srev ; np = of_find_compatible_node ( NULL , NULL , compat ) ; WARN_ON ( ! iim_base ) ; srev = readl ( iim_base + IIM_SREV ) & 0xff ; iounmap ( iim_base ) ; return srev ; } 

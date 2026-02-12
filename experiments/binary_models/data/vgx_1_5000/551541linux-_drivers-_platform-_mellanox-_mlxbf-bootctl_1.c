@@ -1,0 +1,1 @@
+static const char * mlxbf_bootctl_action_to_string ( int action ) { int i ; for ( i = 0 ; i < ARRAY_SIZE ( boot_names ) ; i ++ ) { if ( boot_names [ i ] . value == action ) { return boot_names [ i ] . name ; } } return "invalid action" ; } 

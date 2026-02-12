@@ -1,1 +1,0 @@
-static MagickBooleanType FUN1 ( const unsigned char * VAR1 , const size_t VAR2 ) { if ( memcmp ( VAR1 , "" , 7 ) == 0 ) { return ( VAR3 ) ; } return ( VAR4 ) ; }

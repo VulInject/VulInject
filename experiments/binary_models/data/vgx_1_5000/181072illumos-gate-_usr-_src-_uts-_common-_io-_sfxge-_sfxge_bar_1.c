@@ -1,0 +1,1 @@
+void sfxge_bar_fini ( sfxge_t * sp ) { efsys_bar_t * esbp = & ( sp -> s_bar ) ; ddi_regs_map_free ( & ( esbp -> esb_handle ) ) ; mutex_destroy ( & ( esbp -> esb_lock ) ) ; esbp -> esb_base = NULL ; } 

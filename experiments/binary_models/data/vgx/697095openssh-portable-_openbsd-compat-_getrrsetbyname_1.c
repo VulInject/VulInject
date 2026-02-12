@@ -1,1 +1,0 @@
-static void free_dns_query ( struct dns_query * p ) { if ( p == NULL ) { return ; } if ( p -> name ) { free ( p -> name ) ; } free ( p ) ; } 

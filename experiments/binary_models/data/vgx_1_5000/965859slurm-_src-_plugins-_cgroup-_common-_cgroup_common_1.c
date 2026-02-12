@@ -1,0 +1,1 @@
+extern void common_cgroup_destroy ( xcgroup_t * cg ) { xfree ( cg -> name ) ; xfree ( cg -> path ) ; cg -> uid = - 1 ; cg -> gid = - 1 ; } 

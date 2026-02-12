@@ -1,0 +1,1 @@
+static void qce_skcipher_exit ( struct crypto_skcipher * tfm ) { struct qce_cipher_ctx * ctx = crypto_skcipher_ctx ( tfm ) ; crypto_free_skcipher ( ctx -> fallback ) ; } qce_skcipher_def { unsigned long flags ; const char * name ; const char * drv_name ; int blocksize ; unsigned int chunksize ; unsigned int ivsize ; unsigned int min_keysize ; unsigned int max_keysize ; } 

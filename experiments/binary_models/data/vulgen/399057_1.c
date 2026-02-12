@@ -1,1 +1,0 @@
-static void mod_deinit ( const enum module_unload_intent ATHEME_VATTR_UNUSED intent ) { command_delete ( & gs_set_url , 0 ) ; } 

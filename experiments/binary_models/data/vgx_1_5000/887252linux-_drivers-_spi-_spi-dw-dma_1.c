@@ -1,0 +1,1 @@
+static bool dw_spi_dma_chan_filter ( struct dma_chan * chan , void * param ) { struct dw_dma_slave * s = param ; chan -> private = s ; return true ; } 

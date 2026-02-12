@@ -1,0 +1,1 @@
+char * trim ( char * str ) { char * front_ptr ; char * end_ptr ; } 

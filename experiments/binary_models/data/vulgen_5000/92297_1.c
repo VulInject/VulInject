@@ -1,0 +1,1 @@
+int dram_init ( void ) { int ret ; struct udevice * dev ; struct ram_info ram ; if ( ret ) { debug ( "cannot get DRAM driver\n" ) ; return ret ; } ret = ram_get_info ( dev , & ram ) ; if ( ret ) { debug ( "cannot get DRAM information\n" ) ; return ret ; } gd -> ram_size = ram . size ; return 0 ; } 

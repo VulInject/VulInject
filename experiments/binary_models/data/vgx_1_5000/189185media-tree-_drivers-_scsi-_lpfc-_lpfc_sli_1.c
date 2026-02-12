@@ -1,0 +1,1 @@
+void lpfc_sli_abort_nvme_rings ( struct lpfc_hba * phba ) { struct lpfc_sli_ring * pring ; uint32_t i ; for ( i = 0 ; i < phba -> cfg_nvme_io_channel ; i ++ ) { pring = phba -> sli4_hba . nvme_wq [ i ] -> pring ; lpfc_sli_abort_wqe_ring ( phba , pring ) ; } } 

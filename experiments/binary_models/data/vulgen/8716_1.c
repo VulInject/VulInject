@@ -1,1 +1,0 @@
-static void __exit stmpe_exit ( void ) { spi_unregister_driver ( 0 ) ; } 

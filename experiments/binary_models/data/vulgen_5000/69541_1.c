@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "82C710 C&T mouse port chip driver" ) ; MODULE_LICENSE ( "GPL" ) ; static struct serio * ct82c710_port ; static struct resource ct82c710_iores ; static irqreturn_t ct82c710_interrupt ( int cpl , void * dev_id ) { return serio_interrupt ( ct82c710_port , inb ( CT82C710_DATA ) , 0 ) ; } 

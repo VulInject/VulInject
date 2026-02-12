@@ -1,1 +1,0 @@
-module_init ( dc_kbd_init ) ; module_exit ( dc_kbd_exit , NULL ) ; 

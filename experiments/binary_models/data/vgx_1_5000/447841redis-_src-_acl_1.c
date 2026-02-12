@@ -1,0 +1,1 @@
+void ACLFreeSelector ( aclSelector * selector ) { listRelease ( selector -> patterns ) ; listRelease ( selector -> channels ) ; ACLResetFirstArgs ( selector ) ; zfree ( selector ) ; } 

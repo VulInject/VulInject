@@ -1,1 +1,0 @@
-const char * bcm47xx_board_get_name ( int ) { return bcm47xx_board . name ; } 

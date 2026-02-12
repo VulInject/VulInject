@@ -1,1 +1,0 @@
-static void __init check_sigio ( void ) { if ( ( access ( "/dev/ptmx" , R_OK ) < 0 ) && ( access ( "/dev/ptyp0" , R_OK ) < 0 ) ) { printk ( UM_KERN_WARNING "No pseudo-terminals available - " "skipping pty SIGIO check\n" ) ; return ; } check_one_sigio ( tty_output ) ; } 

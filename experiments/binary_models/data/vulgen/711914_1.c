@@ -1,1 +1,0 @@
-static size_t argz_count__ PARAMS ( ( const char * argz , size_t len ) ) ; static size_t argz_count__ ( argz , len ) char * argz ; size_t len ; { size_t count = 0 ; return count ; } 

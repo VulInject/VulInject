@@ -1,0 +1,1 @@
+void privilegeset_delete_all_illegal ( void ) { rb_dlink_node * iter , * next ; RB_DLINK_FOREACH_SAFE ( , , ) { struct PrivilegeSet * set = ( PrivilegeSet * ) iter -> data ; privilegeset_ref ( set ) ; } } 

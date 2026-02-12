@@ -1,0 +1,1 @@
+int pcibios_map_irq ( const struct pci_dev * dev , u8 slot , u8 pin ) { return K_BCM1480_INT_PCI_INTA - 1 + pin ; } 

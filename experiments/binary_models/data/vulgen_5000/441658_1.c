@@ -1,0 +1,1 @@
+void iommufd_access_destroy_object ( struct iommufd_object * obj ) { struct iommufd_access * access = container_of ( obj , iommufd_access , obj ) ; iopt_remove_access ( & access -> ioas -> iopt , access ) ; refcount_dec ( & access -> ioas -> obj . users ) ; } 

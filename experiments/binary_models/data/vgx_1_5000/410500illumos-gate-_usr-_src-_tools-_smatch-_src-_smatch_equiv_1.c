@@ -1,0 +1,1 @@
+struct related_list * clone_related_list ( struct related_list * related ) { struct relation * rel ; struct related_list * to_list ; FOR_EACH_PTR ( , ) { add_ptr_list ( & to_list , rel ) ; } END_FOR_EACH_PTR ( rel ) ; return to_list ; } 

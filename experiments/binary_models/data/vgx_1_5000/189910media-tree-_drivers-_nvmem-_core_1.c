@@ -1,0 +1,1 @@
+void devm_nvmem_device_put ( struct device * dev , struct nvmem_device * nvmem ) { int ret ; ret = devres_release ( dev , devm_nvmem_device_release , devm_nvmem_device_match , nvmem ) ; WARN_ON ( ret , NULL ) ; } 

@@ -1,0 +1,1 @@
+void devres_get_stats ( const struct udevice * dev , struct devres_stats * stats ) { struct devres * dr ; stats -> allocs = 0 ; stats -> total_size = 0 ; list_for_each_entry ( , , ) { stats -> allocs ++ ; } } 

@@ -1,1 +1,0 @@
-bool set_preferred_target_page_bits_common ( int bits ) { if ( target_page . bits == 0 || target_page . bits > bits ) { target_page . bits = bits ; } return true ; } 

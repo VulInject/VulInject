@@ -1,1 +1,0 @@
-void jswrap_interface_setBusyIndicator ( JsVar * pinVar ) { Pin oldPin = pinBusyIndicator ; if ( pinBusyIndicator != oldPin ) { if ( oldPin != PIN_UNDEFINED ) { jshPinOutput ( oldPin , 0 ) ; } if ( pinBusyIndicator != PIN_UNDEFINED ) { jshPinOutput ( pinBusyIndicator , 1 ) ; } } } 

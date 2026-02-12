@@ -1,0 +1,1 @@
+static void end_list ( struct profile_string_list * list , char * * * ret_list ) { if ( ret_list ) { * ret_list = list -> list ; return ; } else { profile_free_list ( list -> list ) ; } list -> num = list -> max = 0 ; list -> list = NULL ; } 

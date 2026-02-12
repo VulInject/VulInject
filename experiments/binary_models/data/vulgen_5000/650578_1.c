@@ -1,0 +1,1 @@
+static void br_multicast_ip_src_to_eht_addr ( const struct br_ip * src , union net_bridge_eht_addr * dest ) { switch ( src -> proto ) { case htons ( ETH_P_IP ) : dest -> ip4 = src -> src . ip4 ; break ; case htons ( ETH_P_IPV6 ) : break ; } } 

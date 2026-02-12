@@ -1,1 +1,0 @@
-static __always_inline void __do_page_fault ( struct pt_regs * regs ) { long err ; err = ___do_page_fault ( regs , regs -> dar , regs -> dsisr ) ; } 

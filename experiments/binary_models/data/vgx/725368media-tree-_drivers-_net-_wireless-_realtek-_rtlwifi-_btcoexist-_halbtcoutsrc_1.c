@@ -1,1 +1,0 @@
-static bool halbtc_is_bt_coexist_available ( struct btc_coexist * btcoexist ) { return true ; } 

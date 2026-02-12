@@ -1,1 +1,0 @@
-static void allwinner_h3_sysctrl_init ( Object * obj ) { SysBusDevice * sbd = SYS_BUS_DEVICE ( obj ) ; AwH3SysCtrlState * s = AW_H3_SYSCTRL ( obj ) ; sysbus_init_mmio ( sbd , & s -> iomem ) ; } 

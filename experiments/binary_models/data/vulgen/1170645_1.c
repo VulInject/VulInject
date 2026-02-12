@@ -1,1 +1,0 @@
-int ( ) ( mbs ) const char * mbs ; { int code ; __m_trace ( "insstr(%p)" , mbs ) ; return __m_return_code ( "insstr" , code ) ; } 

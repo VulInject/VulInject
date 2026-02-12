@@ -1,0 +1,1 @@
+static int ektf2127_start ( struct input_dev * dev ) { struct ektf2127_ts * ts = input_get_drvdata ( dev ) ; enable_irq ( ts -> client -> irq , NULL ) ; gpiod_set_value_cansleep ( ts -> power_gpios , 1 ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+XS ( XS_Perf__Trace__Context_common_flags ) ; XS ( ) { dVAR ; dXSARGS ; dXSARGS ; PERL_UNUSED_VAR ( cv ) ; { struct scripting_context * context = INT2PTR ( scripting_context * , SvIV ( ST ( 0 ) ) ) ; int RETVAL ; dXSTARG ; RETVAL = common_flags ( context ) ; XSprePUSH ; PUSHi ( ( IV ) RETVAL ) ; } XSRETURN ( 1 ) ; } 

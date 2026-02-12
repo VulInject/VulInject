@@ -1,0 +1,1 @@
+int sh03_rtc_settimeofday ( const time_t secs ) { cfs_time_t nowtime = secs ; return set_rtc_mmss ( nowtime ) ; } 

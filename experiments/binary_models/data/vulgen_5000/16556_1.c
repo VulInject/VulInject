@@ -1,0 +1,1 @@
+static char sccsid [ ] "@(#)strncpy.c	8.1 (Berkeley) 6/4/93" ; ; char * strncpy ( char * __restrict dst , const char * __restrict src , size_t n ) { if ( n != 0 ) { char * d = dst ; const char * s = src ; { if ( ( * d ++ = * s ++ ) == '\0' ) { while ( -- n != 0 ) { * d ++ = '\0' ; } break ; } } -- n != 0 ; } return ( dst ) ; } 

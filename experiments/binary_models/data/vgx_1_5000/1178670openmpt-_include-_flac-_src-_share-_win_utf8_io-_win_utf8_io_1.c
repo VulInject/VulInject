@@ -1,0 +1,1 @@
+int unlink_utf8 ( const char * filename ) { wchar_t * wname ; int ret ; if ( ! ( wname = wchar_from_utf8 ( filename ) ) ) { return - 1 ; } ret = _wunlink ( wname ) ; return ret ; } 

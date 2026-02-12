@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "Ulf Eklund, Hans Verkuil" ) ; MODULE_LICENSE ( "GPL" ) ; { R7 = 7 , R11 = 11 , R12 , R13 , R14 , R15 , R16 , R17 , R18 , R19 , R20 , R21 , R23 = 23 , TOT_REGS } wm8775_state { struct v4l2_subdev sd ; struct v4l2_ctrl_handler hdl ; struct v4l2_ctrl * mute ; struct v4l2_ctrl * vol ; struct v4l2_ctrl * loud ; u8 input ; } 

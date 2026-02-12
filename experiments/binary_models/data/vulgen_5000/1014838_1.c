@@ -1,0 +1,1 @@
+static void pcm990_mask_ack_irq ( struct irq_data * d ) { pcm990_irq_enabled &= ~ ( 1 << pcm990_irq ) ; pcm990_cpld_writeb ( pcm990_irq_enabled , PCM990_CTRL_INTMSKENA ) ; } 

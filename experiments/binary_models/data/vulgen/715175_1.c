@@ -1,1 +1,0 @@
-otpc_map { u16 data_r_offset [ 4 ] ; u16 data_w_offset [ 4 ] ; } 

@@ -1,0 +1,1 @@
+static void mlx5e_post_meter_mtu_destroy ( struct mlx5e_post_meter_priv * post_meter ) { mlx5e_post_meter_mtu_fg_destroy ( post_meter ) ; mlx5e_post_meter_mtu_table_destroy ( post_meter ) ; } 

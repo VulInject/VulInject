@@ -1,0 +1,1 @@
+MODULE_AUTHOR ( "David T. L. Wong<davidtlwong@gmail.com>" ) ; MODULE_LICENSE ( "GPL" ) ; MODULE_FIRMWARE ( LGS8GXX_FIRMWARE , NULL ) ; 

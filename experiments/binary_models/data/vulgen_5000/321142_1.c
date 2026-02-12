@@ -1,0 +1,1 @@
+int zfcp_erp_thread_setup ( struct zfcp_adapter * adapter ) { struct task_struct * thread ; if ( IS_ERR ( thread ) ) { dev_err ( & adapter -> ccw_device -> dev , "Creating an ERP thread for the FCP device failed.\n" ) ; return PTR_ERR ( thread ) ; } adapter -> erp_thread = thread ; return 0 ; } 

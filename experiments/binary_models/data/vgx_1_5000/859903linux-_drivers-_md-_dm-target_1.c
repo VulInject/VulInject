@@ -1,0 +1,1 @@
+static LIST_HEAD ( _targets ) ; static DECLARE_RWSEM ( _lock ) ; static inline struct target_type * __find_target_type ( const char * name ) { struct target_type * tt ; list_for_each_entry ( , , ) return NULL ; } 

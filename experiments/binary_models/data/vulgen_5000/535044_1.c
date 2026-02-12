@@ -1,0 +1,1 @@
+static int rpmfiles_contains ( rpmfilesObject * s , PyObject * value ) { const char * fn = NULL ; return ( rpmfilesFindFN ( s -> files , fn ) >= 0 ) ?1 : 0 ; } 

@@ -1,0 +1,1 @@
+static void tear_down ( void ) { if ( p ) { p = permanent_pool = NULL ; } ( void ) unlink ( pidfile_path ) ; } 

@@ -1,1 +1,0 @@
-smux_register_mib ( , , , , , ) { struct subtree * tree ; tree = ( subtree * ) malloc ( sizeof ( subtree ) ) ; oid_copy ( tree -> name , name , namelen ) ; tree -> name_len = namelen ; tree -> variables = var ; tree -> variables_num = num ; tree -> variables_width = width ; listnode_add_sort ( treelist , tree ) ; } 

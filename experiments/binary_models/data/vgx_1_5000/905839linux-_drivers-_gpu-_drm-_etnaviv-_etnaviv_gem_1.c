@@ -1,0 +1,1 @@
+int etnaviv_gem_new_private ( struct drm_device * dev , size_t size , u32 flags , const struct etnaviv_gem_ops * ops , struct etnaviv_gem_object * * res ) { struct drm_gem_object * obj ; int ret ; ret = etnaviv_gem_new_impl ( dev , size , flags , ops , & obj ) ; drm_gem_private_object_init ( dev , obj , size ) ; * res = to_etnaviv_bo ( obj ) ; return 0 ; } 

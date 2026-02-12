@@ -1,0 +1,1 @@
+code = krb5_gss_init_context ( & context ) ; if ( code ) { cleanup } code = krb5_cc_copy_creds ( context , k5creds -> ccache , out_ccache ) ; cleanup k5_mutex_unlock ( & k5creds -> lock ) ; * minor_status = code ; if ( context != NULL ) { if ( code ) { save_error_info ( * minor_status , context ) ; } } return code ?GSS_S_FAILURE : GSS_S_COMPLETE ; 

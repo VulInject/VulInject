@@ -1,1 +1,0 @@
-static int decode_write_chunk ( struct xdr_stream * xdr , u32 * length ) { u32 segcount , seglength ; __be32 * p ; p = xdr_inline_decode ( xdr , sizeof ( * p ) ) ; * length = 0 ; segcount = be32_to_cpup ( p ) ; while ( segcount -- ) { if ( decode_rdma_segment ( xdr , & seglength ) ) { return - EIO ; } * length += seglength ; } return 0 ; } 

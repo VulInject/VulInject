@@ -1,1 +1,0 @@
-static void FUN1 ( const struct VAR1 * VAR2 ) { if ( VAR2 -> VAR3 != - 1 && close ( VAR2 -> VAR3 ) != 0 ) { FUN2 ( VAR4 , FUN3 ( "" ) ) ; } free ( VAR2 -> VAR5 ) ; }

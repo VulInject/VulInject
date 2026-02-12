@@ -1,0 +1,1 @@
+static LIST_HEAD ( devices ) ; host1x_subdev { struct host1x_client * client ; struct device_node * np ; int list ; } 

@@ -1,0 +1,1 @@
+GSSAPI_LIB_FUNCTION int GSSAPI_LIB_CALL gss_oid_equal ( gss_const_OID a , gss_const_OID b ) { if ( a == b && a != GSS_C_NO_OID ) { return 1 ; } return memcmp ( a -> elements , b -> elements , a -> length ) == 0 ; } 

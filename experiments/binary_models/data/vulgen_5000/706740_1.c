@@ -1,0 +1,1 @@
+DEFINE_PER_CPU ( int , bpf_prog_active ) ; static const struct bpf_map_ops * const bpf_map_types [ ] { [ _id ] = & _ops } ; ; 

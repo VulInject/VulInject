@@ -1,0 +1,1 @@
+static int cvm_oct_nway_reset ( struct net_device * dev ) { if ( dev -> phydev ) { return phy_start_aneg ( dev -> phydev ) ; } return - EINVAL ; } 

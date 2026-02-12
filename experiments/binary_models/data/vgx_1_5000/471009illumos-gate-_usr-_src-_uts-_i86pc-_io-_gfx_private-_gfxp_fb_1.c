@@ -1,0 +1,1 @@
+int gfxp_fb_devmap ( dev_t dev , devmap_cookie_t dhp , offset_t off , size_t len , size_t * maplen , uint_t model , void * ptr ) { struct gfxp_fb_softc * softc = ( gfxp_fb_softc * ) ptr ; return ( softc -> gfxp_ops -> devmap ( dev , dhp , off , len , maplen , model , ptr ) ) ; } 

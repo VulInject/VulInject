@@ -1,0 +1,1 @@
+static DEFINE_SPINLOCK ( cgroup_rstat_lock ) ; static void cgroup_base_stat_flush ( struct cgroup * cgrp , int cpu ) static struct cgroup_rstat_cpu * cgroup_rstat_cpu ( struct cgroup * cgrp , int cpu ) { return per_cpu_ptr ( cgrp -> rstat_cpu , cpu ) ; } 

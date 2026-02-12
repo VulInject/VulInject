@@ -1,0 +1,1 @@
+static int mst_irq_suspend ( void ) { struct mst_intc_chip_data * cd ; list_for_each_entry ( , , ) mst_intc_polarity_save ( cd , NULL ) ; return 0 ; } 

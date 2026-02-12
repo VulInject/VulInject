@@ -1,0 +1,1 @@
+static int accessible ( apr_pool_t * pool , char * fname , int mode ) { apr_file_t * f = NULL ; apr_file_close ( f ) ; return 1 ; } 

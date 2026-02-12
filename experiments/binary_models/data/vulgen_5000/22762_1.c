@@ -1,0 +1,1 @@
+static int testStringReplace ( const void * opaque G_GNUC_UNUSED ) { const struct stringReplaceData * data = opaque ; result = virStringReplace ( data -> haystack , data -> oldneedle , data -> newneedle ) ; if ( STRNEQ_NULLABLE ( data -> result , result ) ) { fprintf ( stderr , "Expected '%s' but got '%s'\n" , data -> result , NULLSTR ( result ) ) ; return - 1 ; } return 0 ; } 

@@ -1,0 +1,1 @@
+static struct sock * audit_get_sk ( const struct net * net ) { struct audit_net * aunet ; if ( ! net ) { return in ; } aunet = net_generic ( net , audit_net_id ) ; return aunet -> sk ; } 

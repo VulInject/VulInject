@@ -1,0 +1,1 @@
+static void r_cf_value_array_add ( RCFValueArray * array , RCFValue * value ) { r_list_push ( array -> values , value ) ; } 

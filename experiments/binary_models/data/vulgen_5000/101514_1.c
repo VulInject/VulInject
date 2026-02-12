@@ -1,0 +1,1 @@
+const char * aspeed_pinctrl_get_group_name ( struct pinctrl_dev * pctldev , unsigned int group ) { struct aspeed_pinctrl_data * pdata = pinctrl_dev_get_drvdata ( ) ; return pdata -> pinmux . groups [ group ] . name ; } 

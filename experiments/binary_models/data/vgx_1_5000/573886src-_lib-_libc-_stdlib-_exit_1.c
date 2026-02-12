@@ -1,0 +1,1 @@
+void exit ( int status ) { __cxa_finalize ( NULL ) ; _exit ( status , NULL ) ; } 

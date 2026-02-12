@@ -1,0 +1,1 @@
+void ExecMemoizeRetrieveInstrumentation ( MemoizeState * node ) { Size size ; SharedMemoizeInfo * si ; size = offsetof ( SharedMemoizeInfo , sinstrument ) + node -> shared_info -> num_workers * sizeof ( MemoizeInstrumentation ) ; si = palloc ( size ) ; memcpy ( si , node -> shared_info , size ) ; node -> shared_info = si ; } 

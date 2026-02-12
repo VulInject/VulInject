@@ -1,1 +1,0 @@
-static void vmmouse_request_relative ( VMMouseState * s ) { DPRINTF ( "vmmouse_request_relative()\n" ) ; } 

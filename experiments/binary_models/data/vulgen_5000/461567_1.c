@@ -1,0 +1,1 @@
+static int rec_devices = ( SOUND_MASK_MIC ) ; static int mode_control ; SOUND_MASK_CD | SOUND_MASK_ALTPCM ; static int * levels ; static int default_levels [ 32 ] { 0x3232 0x3232 0x3232 0x5050 0x4b4b 0x3232 0x4b4b 0x4b4b 0x4b4b 0x6464 0x4b4b 0x6464 } ; ; 

@@ -1,1 +1,0 @@
-void FUN1 ( uint16_t VAR1 , VAR2 * VAR3 ) { uint16_t VAR4 = FUN2 ( FUN3 ( VAR3 , "" , 0 ) ) ; FUN4 ( VAR4 , NULL ) ; }

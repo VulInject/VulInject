@@ -1,0 +1,1 @@
+static int xen_console_remove ( struct xencons_info * info ) { xencons_disconnect_backend ( info ) ; spin_lock ( & xencons_lock ) ; list_del ( & info -> list ) ; spin_unlock ( & xencons_lock ) ; if ( info -> xbdev != NULL ) { xencons_free ( info ) ; } else { if ( xen_hvm_domain ( ) ) { iounmap ( info -> intf ) ; } } return 0 ; } 

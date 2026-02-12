@@ -1,0 +1,1 @@
+static int thread_lat_cmp ( struct list_head * list , struct work_atoms * l , struct work_atoms * r ) { struct sort_dimension * sort ; int ret = 0 ; BUG_ON ( list_empty ( list ) ) ; list_for_each_entry ( , , ) { ret = sort -> cmp ( l , r ) ; } return ret ; } 

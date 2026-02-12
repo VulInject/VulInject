@@ -1,0 +1,1 @@
+static ssize_t temp1_auto_point1_pwm_show ( struct device * dev , struct device_attribute * attr , char * buf ) { struct adm1026_data * data = adm1026_update_device ( dev ) ; return sprintf ( buf , data -> pwm1 . auto_pwm_min ) ; } 

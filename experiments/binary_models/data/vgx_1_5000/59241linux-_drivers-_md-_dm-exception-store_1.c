@@ -1,0 +1,1 @@
+void dm_exception_store_destroy ( struct dm_exception_store * store ) { store -> type -> dtr ( store ) ; put_type ( store -> type ) ; } 

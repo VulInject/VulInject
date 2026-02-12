@@ -1,0 +1,1 @@
+int venus_rootfid ( struct super_block * sb , struct CodaFid * fidp ) { union inputArgs * inp ; union outputArgs * outp ; int insize , outsize , error ; insize = SIZE ( root ) ; UPARG ( CODA_ROOT ) ; if ( ! error ) { * fidp = outp -> coda_root . VFid ; } CODA_FREE ( inp , insize ) ; return error ; } 

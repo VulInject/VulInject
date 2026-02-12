@@ -1,0 +1,1 @@
+MODULE_LICENSE ( "GPL" ) ; MODULE_ALIAS_DSA_TAG_DRIVER ( DSA_TAG_PROTO_QCA , QCA_NAME ) ; module_dsa_tag_driver ( qca_netdev_ops , NULL ) ; 

@@ -1,0 +1,1 @@
+gimp_color_hex_entry_matched ( , , , ) { gchar * name ; GimpRGB color ; gtk_tree_model_get ( model , iter , COLUMN_NAME , & name , - 1 ) ; if ( gimp_rgb_parse_name ( & color , name , - 1 ) ) { gimp_color_hex_entry_set_color ( entry , & color ) ; } return TRUE ; } 

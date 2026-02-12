@@ -1,0 +1,1 @@
+bm_mc_command { u8 _ncw_verb ; u8 bpid ; u8 __reserved [ 62 ] ; } bm_mc_result { { u8 verb ; u8 bpid ; u8 __reserved [ 62 ] ; } } bm_mc { struct bm_mc_command * cr ; union bm_mc_result * rr ; u8 rridx , vbit ; { mc_idle , mc_user , mc_hw } , state } bm_addr { void __iomem * ce ; void __iomem * ci ; } 

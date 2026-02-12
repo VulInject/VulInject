@@ -1,0 +1,1 @@
+static void gpio_nand_dir_input ( struct gpio_nand * priv ) { struct gpio_descs * data_gpiods = priv -> data_gpiods ; int i ; for ( i = 0 ; i < data_gpiods -> ndescs ; i ++ ) { gpiod_direction_input ( data_gpiods -> desc [ i ] ) ; } } 

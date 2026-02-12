@@ -1,0 +1,1 @@
+static void __init numbers_list_field_width_val_l ( const char * delim ) { numbers_list_val_width ( , "%lu" , , "lu" , ) numbers_list_val_width ( long , "%ld" , delim , "li" , check_long ) ; numbers_list_val_width ( , "%lx" , , "lx" , ) numbers_list_val_width ( , "0x%lx" , , "lx" , ) numbers_list_val_width ( long , "0x%lx" , delim , "li" , check_long ) ; } 

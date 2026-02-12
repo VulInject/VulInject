@@ -1,0 +1,1 @@
+MODULE_DEVICE_TABLE ( of , sm5502_dt_match ) ; static int sm5502_muic_suspend ( struct device * dev ) { struct i2c_client * i2c = to_i2c_client ( dev ) ; struct sm5502_muic_info * info = i2c_get_clientdata ( i2c ) ; enable_irq_wake ( info -> irq , NULL ) ; return 0 ; } 

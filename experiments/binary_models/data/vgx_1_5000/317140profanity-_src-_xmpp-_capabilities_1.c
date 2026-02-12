@@ -1,0 +1,1 @@
+void caps_destroy ( EntityCapabilities * caps ) { if ( caps ) { _disco_identity_destroy ( caps -> identity ) ; _software_version_destroy ( caps -> software_version ) ; if ( caps -> features ) { g_slist_free_full ( caps -> features , free ) ; } } } 

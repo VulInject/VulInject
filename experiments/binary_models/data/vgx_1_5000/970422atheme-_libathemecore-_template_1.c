@@ -1,0 +1,1 @@
+static void release_global_template_data ( const char * key , void * data , void * privdata ) { slog ( LG_DEBUG , "release_global_template_data(): delete %s" , key ) ; } 

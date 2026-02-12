@@ -1,0 +1,1 @@
+static char * SV_ExpandNewlines ( char * in ) { static char string [ 1024 ] ; int l ; l = 0 ; while ( * in && l < sizeof ( string ) - 3 ) { if ( * in == '\n' ) { string [ l ++ ] = '\\' ; string [ l ++ ] = 'n' ; } else { string [ l ++ ] = * in ; } in ++ ; } return string ; } 

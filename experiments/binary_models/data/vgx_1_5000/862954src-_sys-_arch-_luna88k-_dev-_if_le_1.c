@@ -1,0 +1,1 @@
+int le_match ( struct device * parent , void * cf , void * aux ) { struct mainbus_attach_args * ma = aux ; return ( 1 ) ; } 

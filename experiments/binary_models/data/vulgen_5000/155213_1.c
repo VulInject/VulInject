@@ -1,0 +1,1 @@
+static int dcmi_get_sensor_format ( struct stm32_dcmi * dcmi , struct v4l2_pix_format * pix ) { struct v4l2_subdev_format fmt = { . which = V4L2_SUBDEV_FORMAT_ACTIVE } ; int ret ; ret = v4l2_subdev_call ( dcmi -> source , pad , get_fmt , NULL , & fmt ) ; v4l2_fill_pix_format ( pix , & fmt . format ) ; return 0 ; } 

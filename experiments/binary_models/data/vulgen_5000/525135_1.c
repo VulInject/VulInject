@@ -1,0 +1,1 @@
+static void cpm_end_irq ( struct irq_data * d ) { struct cpm_pic_data * data = irq_data_get_irq_chip_data ( d ) ; unsigned int cpm_vec = ( unsigned int ) irqd_to_hwirq ( d ) ; } static struct irq_chip cpm_pic = { . name = "CPM PIC" . irq_mask = cpm_mask_irq . irq_unmask = cpm_unmask_irq . irq_eoi = cpm_end_irq } ; 

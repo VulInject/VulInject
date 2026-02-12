@@ -1,1 +1,0 @@
-int main ( int argc , char * * argv ) { int VAR1 ; VAR1 = FUN1 ( ) ; signal ( VAR2 , VAR3 ) ; FUN2 ( VAR1 , VAR2 ) ; FUN3 ( "" ) ; return VAR4 ; }

@@ -1,1 +1,0 @@
-void at91_serial1_hw_init ( void ) { at91_set_a_periph ( AT91_PIO_PORTA , 11 , 1 ) ; at91_set_a_periph ( AT91_PIO_PORTA , 12 , PUP ) ; } 

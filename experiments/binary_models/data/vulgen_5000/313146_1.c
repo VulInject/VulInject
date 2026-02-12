@@ -1,0 +1,1 @@
+void dohooks ( struct hook_desc_head * head , int flags ) { struct hook_desc * hdp , * hdp_temp ; if ( ( flags & HOOK_REMOVE ) == 0 ) { TAILQ_FOREACH_SAFE ( , , , ) { * hdp -> hd_fn ( hdp -> hd_arg ) ; } } else { while ( ( hdp = TAILQ_FIRST ( head ) ) != NULL ) { TAILQ_REMOVE ( head , hdp , hd_list ) ; * hdp -> hd_fn ( hdp -> hd_arg ) ; } } } 

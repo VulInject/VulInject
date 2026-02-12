@@ -1,1 +1,0 @@
-static void mod_init ( struct module ATHEME_VATTR_UNUSED * const restrict m ) { static const struct uid_provider base36_gen = { . uid_init = & base36_uid_init . uid_get = & base36_uid_get } ; } 

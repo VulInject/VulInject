@@ -1,0 +1,1 @@
+* [ alloc_hdr | red zone before | user area | red zone after ] * * ^ ^ * | ` -- - pointer returned to Duktape * ` -- - underlying malloc ptr * / ; { { int sz ; double d ; } , u } alloc_hdr 

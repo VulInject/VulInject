@@ -1,0 +1,1 @@
+static void setup_online_cpu ( struct work_struct * work ) { int cpu = smp_processor_id ( ) ; enum ucode_state err ; err = microcode_init_cpu ( cpu ) ; if ( err == UCODE_ERROR ) { pr_err ( "Error applying microcode on CPU%d\n" , cpu ) ; return ; } } 

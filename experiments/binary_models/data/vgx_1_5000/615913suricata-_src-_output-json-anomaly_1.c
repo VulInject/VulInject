@@ -1,0 +1,1 @@
+static void JsonAnomalyLogDeInitCtxSub ( OutputCtx * output_ctx ) { OutputAnomalyLoggerDisable ( ) ; JsonAnomalyLogDeInitCtxSubHelper ( output_ctx , NULL ) ; } 

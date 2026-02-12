@@ -1,0 +1,1 @@
+void omni_sg_dma_start ( struct cobalt_stream * s , struct sg_dma_desc_info * desc ) { struct cobalt * cobalt = s -> cobalt ; iowrite32 ( ( u32 ) ( ( u64 ) desc -> bus >> 32 ) , DESCRIPTOR ( s -> dma_channel ) + 4 ) ; iowrite32 ( ENABLE | SCATTER_GATHER_MODE | START , CS_REG ( s -> dma_channel ) ) ; } 

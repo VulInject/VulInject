@@ -1,0 +1,1 @@
+int drm_mode_hsync ( const struct drm_display_mode * mode ) { unsigned int calc_val ; if ( mode -> hsync ) { return mode -> hsync ; } calc_val = ( mode -> clock * 1000 ) / mode -> htotal ; calc_val += 500 ; calc_val /= 1000 ; return calc_val ; } 

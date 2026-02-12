@@ -1,1 +1,0 @@
-ProfAccount * accounts_get_account ( const char * const name ) { check_expected ( name , NULL ) ; return mock_ptr_type ( ProfAccount * ) ; } 

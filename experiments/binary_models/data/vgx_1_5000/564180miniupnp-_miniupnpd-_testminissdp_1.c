@@ -1,0 +1,1 @@
+void test ( const char * buffer , size_t n ) { int s = 0 ; struct sockaddr_in dummy_sender ; dummy_sender . sin_family = AF_INET ; ProcessSSDPData ( s , buffer , n , ( sockaddr * ) & dummy_sender , 0 , 80 , 443 80 ) ; } 

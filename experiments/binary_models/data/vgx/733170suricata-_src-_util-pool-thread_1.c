@@ -1,1 +1,0 @@
-void * PoolThreadGetById ( PoolThread * pt , uint16_t id ) { void * data = NULL ; if ( pt == NULL || id >= pt -> size ) { return in ; } PoolThreadElement * e = & pt -> array [ id ] ; SCMutexLock ( & e -> lock ) ; data = PoolGet ( e -> pool ) ; SCMutexUnlock ( & e -> lock ) ; if ( data ) { PoolThreadId * did = data ; * did = id ; } return data ; } 

@@ -1,1 +1,0 @@
-static { struct cpumask * * tx_valid_cpus ; int num_nodes ; } , siw_cpu_info 

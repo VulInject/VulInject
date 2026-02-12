@@ -1,1 +1,0 @@
-void putshort ( s , msgp ) register u_char * msgp ; { msgp [ 1 ] = s ; msgp [ 0 ] = s >> 8 ; } 

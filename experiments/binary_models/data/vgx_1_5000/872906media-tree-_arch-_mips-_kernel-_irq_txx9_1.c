@@ -1,0 +1,1 @@
+static void txx9_irq_mask_ack ( struct irq_data * d ) { int irq_nr = d -> irq - TXX9_IRQ_BASE ; txx9_irq_mask ( d ) ; if ( unlikely ( TXx9_IRCR_EDGE ( txx9irq [ irq_nr ] . mode ) ) ) { __raw_writel ( TXx9_IRSCR_EIClrE | irq_nr , & txx9_ircptr -> scr ) ; } } 

@@ -1,0 +1,1 @@
+char * pr_type ( int t ) { static char * ttab [ ] { "Echo Reply" "ICMP 1" "ICMP 2" "Dest Unreachable" "Source Quench" "Redirect" "ICMP 6" "ICMP 7" "Echo" "Router Advertise" "Router Solicitation" "Time Exceeded" "Parameter Problem" "Timestamp" "Timestamp Reply" "Info Request" "Info Reply" "Netmask Request" "Netmask Reply" } ; ; return ( ttab [ t ] ) ; } 

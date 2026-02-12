@@ -1,0 +1,1 @@
+void mii_bitbang_sync ( struct device * sc , mii_bitbang_ops_t ops ) { int i ; u_int32_t v ; v = MDIRPHY | MDO ; WRITE ( v , NULL ) ; for ( i = 0 ; i < 32 ; i ++ ) { WRITE ( v | MDC ) ; WRITE ( v ) ; } } 

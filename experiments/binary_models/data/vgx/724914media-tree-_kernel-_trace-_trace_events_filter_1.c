@@ -1,1 +1,0 @@
-int filter_assign_type ( const char * type ) { if ( strchr ( type , '[' ) && strstr ( type , "char" ) ) { return FILTER_STATIC_STRING ; } return FILTER_OTHER ; } 

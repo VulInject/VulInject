@@ -1,1 +1,0 @@
-static void ssl_conn_free ( struct scd * conn ) { SSL_free ( conn -> ssl ) ; g_free ( conn ) ; } 

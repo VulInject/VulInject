@@ -1,0 +1,1 @@
+static irqreturn_t ks8695_timer_interrupt ( int irq , void * dev_id ) { struct clock_event_device * evt = & clockevent_ks8695 ; evt -> event_handler ( evt , NULL ) ; return IRQ_HANDLED ; } 

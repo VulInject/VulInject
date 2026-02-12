@@ -1,0 +1,1 @@
+static int cmp_pkt_sub_ts_pos ( const void * a , const void * b ) { const AVPacket * s1 = * ( const AVPacket * * ) a ; const AVPacket * s2 = * ( const AVPacket * * ) b ; return FFDIFFSIGN ( s1 -> pts , s2 -> pts ) ; } 

@@ -1,0 +1,1 @@
+elf64_alpha_mkobject ( ) { bfd_size_type amt = sizeof ( alpha_elf_obj_tdata ) ; abfd -> tdata . any = bfd_zalloc ( abfd , amt ) ; return TRUE ; } 

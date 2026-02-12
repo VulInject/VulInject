@@ -1,1 +1,0 @@
-static BOOL FUN1 ( HANDLE VAR1 ) { VAR2 * VAR3 = ( VAR2 * ) VAR1 ; return VAR4 ; }

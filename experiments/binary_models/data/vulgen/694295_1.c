@@ -1,1 +1,0 @@
-void jsonw_destroy ( json_writer_t * * const self_p ) { json_writer_t * self = * self_p ; assert ( self -> depth == 0 ) ; fputs ( "\n" , self -> out ) ; fflush ( self -> out ) ; * self_p = NULL ; } 

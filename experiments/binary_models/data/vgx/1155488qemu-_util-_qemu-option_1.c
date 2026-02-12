@@ -1,1 +1,0 @@
-VAR1 * FUN1 ( VAR2 * VAR3 , const char * VAR4 ) { VAR1 * VAR5 ; FUN2 ( , , ) { return VAR5 ; } return NULL ; }

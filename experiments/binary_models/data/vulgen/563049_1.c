@@ -1,1 +1,0 @@
-int feof_unlocked ( Sfio_t * sp ) { return feof ( sp ) ; } 

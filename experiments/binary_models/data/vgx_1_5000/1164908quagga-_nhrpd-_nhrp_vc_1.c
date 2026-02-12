@@ -1,0 +1,1 @@
+void nhrp_vc_notify_del ( struct nhrp_vc * vc , struct notifier_block * n ) { notifier_del ( n ) ; nhrp_vc_check_delete ( vc , NULL ) ; } nhrp_vc_iterator_ctx { void * cb ( struct nhrp_vc * , void * ) void * ctx ; } 

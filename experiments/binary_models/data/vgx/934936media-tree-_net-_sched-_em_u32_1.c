@@ -1,1 +1,0 @@
-module_init ( init_em_u32 ) ; module_exit ( exit_em_u32 ) ; MODULE_ALIAS_TCF_EMATCH ( TCF_EM_U32 , NULL ) ; 

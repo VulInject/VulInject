@@ -1,0 +1,1 @@
+static ktime_t dpu_kms_vsync_time ( struct msm_kms * kms , struct drm_crtc * crtc ) { struct drm_encoder * encoder ; drm_for_each_encoder_mask ( , , ) { ktime_t vsync_time ; } return ktime_get ( ) ; } 

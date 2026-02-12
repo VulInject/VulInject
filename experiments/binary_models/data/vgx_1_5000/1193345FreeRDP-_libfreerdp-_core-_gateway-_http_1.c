@@ -1,0 +1,1 @@
+const char * http_context_get_uri ( HttpContext * context ) { if ( ! context ) { return in ; } return context -> URI ; } 

@@ -1,0 +1,1 @@
+static int ehci_pci_probe ( struct pci_dev * pdev , const struct pci_device_id * id ) { return usb_hcd_pci_probe ( pdev , & ehci_pci_hc_driver ) ; } 

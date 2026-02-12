@@ -1,0 +1,1 @@
+static int DetectTransformXorParseTest02 ( void ) { DetectEngineCtx * de_ctx = DetectEngineCtxInit ( ) ; FAIL_IF_NULL ( de_ctx ) ; Signature * sig = DetectEngineAppendSig ( de_ctx , "alert http any any ->any any (msg:\"HTTP with xor\"; http.request_line; " "xor:\"0a0DC8ff\"; content:\"/z4d4kWk.jpg\"; sid:1;)" ) ; FAIL_IF_NULL ( sig ) ; PASS ; } 

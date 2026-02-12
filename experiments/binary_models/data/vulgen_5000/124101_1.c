@@ -1,0 +1,1 @@
+static void free_policy_dbs_info ( struct policy_dbs_info * policy_dbs , struct dbs_governor * gov ) { int j ; for_each_cpu ( , ) { struct cpu_dbs_info * j_cdbs = & per_cpu ( cpu_dbs , j ) ; j_cdbs -> policy_dbs = NULL ; j_cdbs -> update_util . func = NULL ; } gov -> free ( policy_dbs ) ; } 

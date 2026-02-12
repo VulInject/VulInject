@@ -1,0 +1,1 @@
+static void unmask_m32700ut_pld ( struct irq_data * data ) { enable_m32700ut_pld_irq ( data -> irq , NULL ) ; enable_mappi_irq ( M32R_IRQ_INT1 ) ; } 

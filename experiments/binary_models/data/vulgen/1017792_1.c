@@ -1,1 +1,0 @@
-QEMUPutMouseEntry { QEMUPutMouseEvent * qemu_put_mouse_event ; void * qemu_put_mouse_event_opaque ; int qemu_put_mouse_event_absolute ; QemuInputHandler h ; QemuInputHandlerState * s ; int buttons ; } 

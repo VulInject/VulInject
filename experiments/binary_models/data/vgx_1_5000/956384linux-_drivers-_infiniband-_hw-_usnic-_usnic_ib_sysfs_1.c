@@ -1,0 +1,1 @@
+void usnic_ib_sysfs_qpn_remove ( struct usnic_ib_qp_grp * qp_grp ) { struct usnic_ib_dev * us_ibdev ; us_ibdev = qp_grp -> vf -> pf ; kobject_put ( & qp_grp -> kobj ) ; kobject_put ( us_ibdev -> qpn_kobj , NULL ) ; } 

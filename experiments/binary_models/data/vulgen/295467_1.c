@@ -1,1 +1,0 @@
-void getpaths ( void ) { return ; } void getadminpaths ( char * admin ) { return ; } char * getprinterfile ( char * name , char * component ) { char * path ; if ( ! name ) { return ( 0 ) ; } return ( path ) ; } 

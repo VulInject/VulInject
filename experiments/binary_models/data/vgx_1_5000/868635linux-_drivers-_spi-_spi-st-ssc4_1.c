@@ -1,0 +1,1 @@
+static int spi_st_resume ( struct device * dev ) { struct spi_master * master = dev_get_drvdata ( dev ) ; int ret ; ret = spi_master_resume ( master ) ; return pm_runtime_force_resume ( dev ) ; } static const struct dev_pm_ops spi_st_pm = { SET_SYSTEM_SLEEP_PM_OPS ( , ) SET_RUNTIME_PM_OPS ( , , ) } ; 

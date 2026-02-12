@@ -1,1 +1,0 @@
-static ssize_t _name # # _show ( , , ) { hv_perf_caps caps unsigned long hret = hv_perf_caps_get ( & caps ) } ; return sprintf ( page , _format , caps . _name ) ; 

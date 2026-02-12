@@ -1,0 +1,1 @@
+static int alloc_sq_skb_arr ( struct hinic_sq * sq ) { struct hinic_wq * wq = sq -> wq ; size_t skb_arr_size ; skb_arr_size = wq -> q_depth * sizeof ( * sq -> saved_skb ) ; sq -> saved_skb = vzalloc ( skb_arr_size ) ; return 0 ; } 

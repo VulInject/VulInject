@@ -1,1 +1,0 @@
-int kn_remove_assertion ( int sessid , int assertid ) { return keynote_remove_assertion ( sessid , assertid , 1 ) ; } 

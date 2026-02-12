@@ -1,1 +1,0 @@
-static void loggerIndent ( otfcc_ILogger * _self , const char * segment ) { } 

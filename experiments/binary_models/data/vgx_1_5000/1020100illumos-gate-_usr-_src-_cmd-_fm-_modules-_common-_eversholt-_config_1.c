@@ -1,0 +1,1 @@
+static void config_node_cache ( struct cfgdata * cdata , struct config * n ) { cdata -> cpucache = lut_add ( cdata -> cpucache , ( void * ) n -> num , ( void * ) n , NULL ) ; } 

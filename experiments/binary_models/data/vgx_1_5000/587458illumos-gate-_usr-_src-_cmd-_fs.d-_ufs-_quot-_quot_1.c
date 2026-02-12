@@ -1,0 +1,1 @@
+static { struct fs u_sblock ; char dummy [ SBSIZE ] ; } , sb_un static struct dinode * itab ; du { struct du * next ; int blocks ; long blocks30 ; long blocks60 ; long blocks90 ; long nfiles ; uid_t uid ; char * u_name ; } 

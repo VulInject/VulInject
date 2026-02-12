@@ -1,0 +1,1 @@
+static void * remove_entries_fn ( void * arg ) { rcu_register_thread ( ) ; while ( ! test_complete ) { int pgoff ; struct item * item ; item = xa_erase ( & array , pgoff ) ; if ( item ) { item_free ( item , pgoff ) ; } } rcu_unregister_thread ( ) ; return NULL ; } 

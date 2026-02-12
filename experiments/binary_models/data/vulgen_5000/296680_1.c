@@ -1,0 +1,1 @@
+int main ( int argc EVT_TEST_ATTRIBUTE_UNUSED , char * const argv [ ] EVT_TEST_ATTRIBUTE_UNUSED ) { EVT_TEST_UNREFERENCED_PARAMETER ( ) EVT_TEST_UNREFERENCED_PARAMETER ( ) EVT_TEST_RUN ( "evttools_output_initialize" , ) return ( EXIT_SUCCESS ) ; on_error return ( EXIT_FAILURE ) ; } 

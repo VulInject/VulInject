@@ -1,0 +1,1 @@
+void cf_sha1_update ( cf_sha1_context * ctx , const void * data , size_t nbytes ) { cf_blockwise_accumulate ( ctx -> partial , & ctx -> npartial , sizeof ctx -> partial , data , nbytes , sha1_update_block , 0 ) ; } 

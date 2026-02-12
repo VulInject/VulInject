@@ -1,0 +1,1 @@
+static int tegra_ivc_frame_virt ( struct tegra_ivc * ivc , const struct iosys_map * header , unsigned int frame , struct iosys_map * map ) { size_t offset = sizeof ( tegra_ivc_header ) + ivc -> frame_size * frame ; * map = IOSYS_MAP_INIT_OFFSET ( header , offset ) ; return 0 ; } 

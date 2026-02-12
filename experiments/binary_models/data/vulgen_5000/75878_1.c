@@ -1,0 +1,1 @@
+static void rt2800mmio_wakeup ( struct rt2x00_dev * rt2x00dev ) { struct ieee80211_conf conf = { . flags = 0 } ; struct rt2x00lib_conf libconf = { . conf = & conf } ; } 

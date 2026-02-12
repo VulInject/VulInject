@@ -1,0 +1,1 @@
+static struct config_group * trigger_make_group ( struct config_group * group , const char * name ) { struct iio_sw_trigger * t ; t = iio_sw_trigger_create ( group -> cg_item . ci_name , name ) ; config_item_set_name ( & t -> group . cg_item , "%s" , name ) ; return & t -> group ; } 

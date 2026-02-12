@@ -1,0 +1,1 @@
+static inline void ebpf_clean_specific_cgroup_pids ( struct pid_on_target2 * pt ) { while ( pt ) { struct pid_on_target2 * next_pid = pt -> next ; pt = next_pid ; } } 

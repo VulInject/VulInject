@@ -1,0 +1,1 @@
+static int * last_do_help ( int argc , char * * argv ) json_writer_t * json_wtr ; bool pretty_output ; bool json_output ; bool show_pinned ; bool block_mount ; bool verifier_logs ; bool relaxed_maps ; bool use_loader ; struct btf * base_btf ; struct hashmap * refs_table ; static void __noreturn clean_and_exit ( int i ) { if ( json_output ) { jsonw_destroy ( & json_wtr ) ; } } 

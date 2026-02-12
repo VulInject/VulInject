@@ -1,0 +1,19 @@
+void CWE190_Integer_Overflow__short_max_multiply_06_bad()
+{
+    short data;
+    data = 0;
+    if(STATIC_CONST_FIVE==5)
+    {
+        /* POTENTIAL FLAW: Use the maximum size of the data type */
+        data = SHRT_MAX;
+    }
+    if(STATIC_CONST_FIVE==5)
+    {
+        if(data > 0) /* ensure we won't have an underflow */
+        {
+            /* POTENTIAL FLAW: if (data*2) > SHRT_MAX, this will overflow */
+            short result = data * 2;
+            printIntLine(result);
+        }
+    }
+}

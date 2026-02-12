@@ -1,0 +1,1 @@
+extern int ZEXPORT unzClose ( file ) unzFile file ; { unz_s * s ; s = ( unz_s * ) file ; if ( s -> pfile_in_zip_read != NULL ) { unzCloseCurrentFile ( file ) ; } fclose ( s -> file ) ; TRYFREE ( s ) ; return UNZ_OK ; } 

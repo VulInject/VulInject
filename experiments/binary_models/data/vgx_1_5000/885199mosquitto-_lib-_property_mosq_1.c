@@ -1,0 +1,1 @@
+int mosquitto_property_identifier ( const mosquitto_property * property ) { return property -> identifier ; } 

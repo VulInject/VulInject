@@ -1,0 +1,1 @@
+int attribute_container_add_class_device ( struct device * classdev ) { int error = device_add ( classdev ) ; return attribute_container_add_attrs ( classdev ) ; } 

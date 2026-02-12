@@ -1,0 +1,1 @@
+static void make_dec_key ( unsigned int round_count , const struct aes_block * key_enc , struct aes_block * key_dec ) { int i = 0 ; unsigned int j = round_count ; j = round_count ; key_dec [ 0 ] = key_enc [ j ] ; for ( i = 1 , j -- ; j > 0 ; i ++ , j -- ) { ce_aes_invert ( key_dec + i , key_enc + j ) ; } key_dec [ i ] = key_enc [ 0 ] ; } 

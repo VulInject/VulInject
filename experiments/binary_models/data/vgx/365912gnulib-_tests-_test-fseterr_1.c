@@ -1,1 +1,0 @@
-int main ( ) { if ( FUN1 ( VAR1 ) ) { FUN2 ( ) ; } FUN3 ( VAR1 ) ; if ( ! FUN1 ( VAR1 ) ) { FUN2 ( ) ; } if ( FUN1 ( VAR1 ) ) { FUN2 ( ) ; } return 0 ; }

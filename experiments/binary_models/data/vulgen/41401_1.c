@@ -1,1 +1,0 @@
-void knote_assign ( const struct kevent * kev , struct knote * kn ) { kn -> kn_sfflags = kev -> fflags ; kn -> kn_sdata = kev -> data ; kn -> kn_udata = kev -> udata ; } 

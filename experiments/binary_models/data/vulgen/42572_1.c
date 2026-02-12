@@ -1,1 +1,0 @@
-if ( classify ( 0.0 ) != FP_ZERO ) { return 0 ; } return 1 ; 

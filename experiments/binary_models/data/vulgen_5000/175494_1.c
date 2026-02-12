@@ -1,0 +1,1 @@
+void kvm_pmu_init ( struct kvm_vcpu * vcpu ) { struct kvm_pmu * pmu = vcpu_to_pmu ( vcpu ) ; static_call kvm_x86_pmu_init ( vcpu ) init_irq_work ( & pmu -> irq_work , kvm_pmi_trigger_fn ) ; pmu -> event_count = 0 ; pmu -> need_cleanup = false ; kvm_pmu_refresh ( vcpu ) ; } 

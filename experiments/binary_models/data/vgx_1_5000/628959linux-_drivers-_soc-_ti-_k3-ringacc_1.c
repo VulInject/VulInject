@@ -1,0 +1,1 @@
+u32 k3_ringacc_ring_get_size ( struct k3_ring * ring ) { return ring -> size ; } 

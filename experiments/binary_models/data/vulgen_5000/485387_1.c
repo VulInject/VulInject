@@ -1,0 +1,1 @@
+void plugin_register_dyn_cb__udata ( GArray * * arr , qemu_plugin_vcpu_udata_cb_t cb , enum qemu_plugin_cb_flags flags , void * udata ) { struct qemu_plugin_dyn_cb * dyn_cb = plugin_get_dyn_cb ( arr ) ; dyn_cb -> userp = udata ; dyn_cb -> f . vcpu_udata = cb ; } 

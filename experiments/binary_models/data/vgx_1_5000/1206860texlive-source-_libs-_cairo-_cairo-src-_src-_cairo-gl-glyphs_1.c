@@ -1,0 +1,1 @@
+_cairo_gl_node_destroy ( ) { cairo_gl_glyph_t * priv = cairo_container_of ( node , cairo_gl_glyph_t , node ) ; cairo_scaled_glyph_t * glyph ; glyph = priv -> glyph ; if ( glyph == NULL ) { return ; } if ( glyph -> dev_private_key == priv -> cache ) { glyph -> dev_private = NULL ; glyph -> dev_private_key = NULL ; } cairo_list_del ( & priv -> base . link ) ; } 

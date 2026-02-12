@@ -1,0 +1,1 @@
+static bool buf_file_resize ( RBuffer * b , ut64 newsize ) { return r_sandbox_truncate ( priv -> fd , newsize ) >= 0 ; } static const RBufferMethods buffer_file_methods = { . init = buf_file_init . fini = buf_file_fini . read = buf_file_read . write = buf_file_write . get_size = buf_file_get_size . resize = buf_file_resize . seek = buf_file_seek } ; 

@@ -1,0 +1,1 @@
+static void overwrite_item ( cJSON * const root , const cJSON replacement ) { if ( root -> string != NULL ) { cJSON_free ( root -> string ) ; } if ( root -> valuestring != NULL ) { cJSON_free ( root -> valuestring ) ; } if ( root -> child != NULL ) { cJSON_Delete ( root -> child ) ; } memcpy ( root , & replacement , sizeof ( cJSON ) ) ; } 

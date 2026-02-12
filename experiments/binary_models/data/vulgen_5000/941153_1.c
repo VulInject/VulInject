@@ -1,0 +1,1 @@
+int main ( void ) { printf ( "++++Array of int in struct starting with pointer:\n" ) ; printf ( "size=%d,align=%d\n" , sizeof ( sss ) , __alignof__ ( sss ) ) ; printf ( "offset-pointer=%d,offset-arrayof-int=%d,\nalign-pointer=%d,align-arrayof-int=%d\n" , _offsetof ( sss , f ) , _offsetof ( sss , a ) , __alignof__ ( sss . f ) , __alignof__ ( sss . a ) ) ; return 0 ; } 

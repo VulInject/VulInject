@@ -1,0 +1,1 @@
+static void rzg2l_wdt_reset_assert_pm_disable ( void * data ) { struct watchdog_device * wdev = data ; struct rzg2l_wdt_priv * priv = watchdog_get_drvdata ( wdev ) ; pm_runtime_disable ( wdev -> parent ) ; } 

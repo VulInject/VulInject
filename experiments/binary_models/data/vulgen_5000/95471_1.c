@@ -1,0 +1,1 @@
+void vrrp_garp_send_all ( struct vrrp_router * r ) { assert ( r -> family == AF_INET ) ; struct interface * ifp = r -> mvl_ifp ; struct listnode * ln ; struct ipaddr * ip ; for ( ALL_LIST_ELEMENTS_RO ( r -> addrs , ln , ip ) ; ) { vrrp_garp_send ( r , & ip -> ipaddr_v4 ) ; } } 

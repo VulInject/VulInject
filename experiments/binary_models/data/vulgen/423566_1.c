@@ -1,1 +1,0 @@
-"rhoncus ipsum." ; WriteThis { const char * readptr ; } 

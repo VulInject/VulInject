@@ -1,0 +1,1 @@
+int lov_stripe_number ( struct lov_stripe_md * lsm , u64 lov_off ) { unsigned long ssize = lsm -> lsm_stripe_size ; u64 stripe_off , swidth ; int magic = lsm -> lsm_magic ; lsm_op_find ( magic ) -> lsm_stripe_by_offset ( lsm , NULL , & lov_off , & swidth ) ; stripe_off = lov_do_div64 ( lov_off , swidth ) ; return stripe_off ; } 

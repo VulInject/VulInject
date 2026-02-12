@@ -1,1 +1,0 @@
-void KcapiEcc_Free ( ecc_key * key ) { if ( key -> handle != NULL ) { key -> handle = NULL ; } } 

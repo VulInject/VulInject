@@ -1,1 +1,0 @@
-static void list_resort ( Timer * t ) { list_remove ( t ) ; list_add ( t , NULL ) ; } 

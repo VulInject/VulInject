@@ -1,0 +1,1 @@
+static void _raid_page_free ( struct page * p ) { __free_page ( p ) ; } __stripe_pages_2d { unsigned parity ; unsigned data_devs ; unsigned pages_in_unit ; bool needed ; __1_page_stripe { bool alloc ; unsigned write_count ; struct async_submit_ctl submit ; struct dma_async_tx_descriptor * tx ; struct page * * pages ; struct page * * scribble ; } , _1p_stripes [ ] } 

@@ -1,0 +1,1 @@
+static const char * getIntelProcessorTypeAndSubtype ( unsigned Family , unsigned Model , const unsigned * Features , unsigned * Type , unsigned * Subtype ) { ( Features [ F / 32 ] & ( 1 << ( F % 32 ) ) ) != 0 const char * CPU = 0 ; return CPU ; } 

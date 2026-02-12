@@ -1,1 +1,0 @@
-void tor_threadlocal_destroy ( tor_threadlocal_t * threadlocal ) { pthread_key_delete ( threadlocal -> key , NULL ) ; memset ( threadlocal , 0 , sizeof ( tor_threadlocal_t ) ) ; } 

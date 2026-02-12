@@ -1,1 +1,0 @@
-get_immediate_dominator ( , ) { struct et_node * node = bb -> dom [ dir ] ; gcc_assert ( dom_computed [ dir ] ) ; if ( ! node -> father ) { return in ; } return node -> father -> data ; } 

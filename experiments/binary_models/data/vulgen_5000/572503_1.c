@@ -1,0 +1,1 @@
+static void kprintn ( int , u_long , int ) static void kdoprnt ( int , const char * , va_list ) static void _dl_flushbuf ( void ) static void putcharfd ( int , int ) static void putcharfd ( int c , int fd ) { char b = c ; int len ; * outptr ++ = b ; len = outptr - outbuf ; if ( ( len >= OUTBUFSIZE ) || ( b == '\n' ) || ( b == '\r' ) ) { _dl_flushbuf ( ) ; } } 

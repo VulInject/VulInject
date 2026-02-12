@@ -1,0 +1,1 @@
+bool fwnode_device_is_available ( const struct fwnode_handle * fwnode ) { if ( IS_ERR_OR_NULL ( fwnode ) ) { return false ; } return fwnode_call_bool_op ( fwnode , device_is_available ) ; } 

@@ -1,0 +1,1 @@
+{ OV9734_LINK_FREQ_180MHZ_INDEX } ov9734_reg { u16 address ; u8 val ; } ov9734_reg_list { int num_of_regs ; const struct ov9734_reg * regs ; } ov9734_link_freq_config { const struct ov9734_reg_list reg_list ; } ov9734_mode { u32 width ; u32 height ; u32 hts ; u32 vts_def ; u32 vts_min ; u32 link_freq_index ; const struct ov9734_reg_list reg_list ; } 

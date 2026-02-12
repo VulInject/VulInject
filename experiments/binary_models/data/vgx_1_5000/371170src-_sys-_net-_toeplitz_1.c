@@ -1,0 +1,1 @@
+uint16_t stoeplitz_hash_ip6 ( const struct stoeplitz_cache * scache , const struct in6_addr * faddr6 , const struct in6_addr * laddr6 ) { uint32_t n32 = 0 ; int i ; for ( i = 0 ; i < nitems ( faddr6 -> s6_addr32 ) ; i ++ ) { n32 ^= faddr6 -> s6_addr32 [ i ] ^ laddr6 -> s6_addr32 [ i ] ; } return ( stoeplitz_hash_n32 ( scache , n32 ) ) ; } 

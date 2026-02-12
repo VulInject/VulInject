@@ -1,0 +1,1 @@
+void replay_event_net_run ( void * opaque ) { NetEvent * event = opaque ; struct iovec iov = { . iov_base = ( void * ) event -> data . iov_len = event -> size } ; assert ( event -> id < network_filters_count ) ; qemu_netfilter_pass_to_next ( network_filters [ event -> id ] -> netdev , event -> flags , & iov , 1 , network_filters [ event -> id ] ) ; g_free ( event ) ; } 

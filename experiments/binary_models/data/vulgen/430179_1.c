@@ -1,1 +1,0 @@
-void machine_halt ( void ) { if ( c6x_halt ) { c6x_halt ( ) ; } } 

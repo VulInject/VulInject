@@ -1,0 +1,1 @@
+static __inline__ size_t M_list_convert_idx_at ( const M_list_t * d , size_t idx ) { if ( idx > d -> elements ) { idx = d -> elements - 1 ; } if ( ! ( d -> flags & M_LIST_STACK ) ) { return idx ; } if ( d -> elements - 1 == idx ) { return 0 ; } return d -> elements - idx - 1 ; } 

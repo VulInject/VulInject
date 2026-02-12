@@ -1,1 +1,0 @@
-. voltdm = { . name = "tamper" } , . prcm_offs = AM43XX_PRM_TAMPER_INST , . prcm_partition = AM43XX_PRM_PARTITION , . pwrsts PWRSTS_ON , ; 

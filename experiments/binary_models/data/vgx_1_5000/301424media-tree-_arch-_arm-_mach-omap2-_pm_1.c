@@ -1,0 +1,1 @@
+static int * omap_pm_suspend ( void ) omap2_oscillator { u32 startup_time ; int shutdown_time ; } 

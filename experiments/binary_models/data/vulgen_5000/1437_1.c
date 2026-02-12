@@ -1,0 +1,1 @@
+static size_t drop_ffs ( const struct mtd_info * mtd , const u_char * buf , const size_t * len ) { size_t l = * len ; ssize_t i ; for ( i = l - 1 ; i >= 0 ; i -- ) { if ( buf [ i ] != 0xFF ) { break ; } } l = i + 1 ; l *= mtd -> writesize ; return min ( l , * len ) ; } 

@@ -1,1 +1,0 @@
-EXPORT_SYMBOL ( memcpy ) ; bool copy_from_kernel_nofault_allowed ( const void * unsafe_src , size_t size ) { return true ; } 

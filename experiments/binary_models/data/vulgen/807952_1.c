@@ -1,1 +1,0 @@
-static int fdb_cache_constructor ( void * buf , void * cdrarg , int kmflags ) { fdbuffer_t * fdb = buf ; return ( 0 ) ; } 

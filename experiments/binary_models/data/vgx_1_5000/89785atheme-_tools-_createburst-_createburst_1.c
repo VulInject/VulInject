@@ -1,0 +1,1 @@
+void init_uid ( void ) { unsigned int i ; char buf [ BUFSIZE ] ; memcpy ( new_uid , SID , strlen ( SID ) ) ; for ( i = 0 ; i < strlen ( SID ) ; i ++ ) { if ( new_uid [ i ] == '\0' ) { new_uid [ i ] = 'A' ; } } for ( i = strlen ( SID ) ; i < uindex ; i ++ ) { new_uid [ i ] = 'A' ; } } 

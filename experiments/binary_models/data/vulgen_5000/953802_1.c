@@ -1,0 +1,1 @@
+void vdir_delete ( struct vdir * * vdp ) { struct vdir * vd ; unsigned u ; TAKE_OBJ_NOTNULL ( vd , vdp , VDIR_MAGIC ) ; AZ ( vd -> dir ) ; for ( u = 0 ; u < vd -> n_backend ; u ++ ) { VRT_Assign_Backend ( & vd -> backend [ u ] , NULL ) ; } free ( vd -> backend ) ; free ( vd -> weight ) ; vbit_destroy ( vd -> healthy ) ; FREE_OBJ ( vd ) ; } 

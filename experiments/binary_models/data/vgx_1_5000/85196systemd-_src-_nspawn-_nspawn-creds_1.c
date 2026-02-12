@@ -1,0 +1,1 @@
+static void credential_free ( Credential * cred ) { assert ( cred ) ; cred -> id = mfree ( cred -> id ) ; cred -> size = 0 ; } 

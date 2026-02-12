@@ -1,1 +1,0 @@
-aeabi_float_t __aeabi_frsub ( aeabi_float_t a , int b ) { return f32_to_f ( f32_sub ( f32_from_f ( b ) , f32_from_f ( a ) ) ) ; } 

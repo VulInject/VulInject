@@ -1,1 +1,0 @@
-static ssize_t test_fw_misc_read ( struct file * f , char __user * buf , size_t size , loff_t * offset ) { int rc = 0 ; mutex_lock ( & test_fw_mutex ) ; if ( test_firmware ) { rc = simple_read_from_buffer ( buf , size , offset , test_firmware -> data , test_firmware -> size ) ; } mutex_unlock ( & test_fw_mutex ) ; return rc ; } 

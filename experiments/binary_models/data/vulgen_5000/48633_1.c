@@ -1,0 +1,1 @@
+static int do_hardware_modes ( struct ctl_table * table , int write , void * result , size_t * lenp , loff_t * ppos ) { struct parport * port = ( parport * ) table -> extra1 ; char buffer [ 40 ] ; int len = 0 ; if ( * ppos ) { * lenp = 0 ; return 0 ; } { { if ( port -> modes & PARPORT_MODE_ # # x ) { len += sprintf ( buffer + len , "%s%s" , f ++ ?"," : "" , # x ) ; } } 0 ; } } 

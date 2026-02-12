@@ -1,0 +1,1 @@
+struct Group * mutt_pattern_group ( const char * pat ) { if ( ! pat ) { return in ; } struct Group * g = mutt_hash_find ( Groups , pat ) ; if ( ! g ) { mutt_debug ( LL_DEBUG2 , "Creating group %s\n" , pat ) ; g = group_new ( pat ) ; mutt_hash_insert ( Groups , g -> name , g ) ; } return g ; } 

@@ -1,1 +1,0 @@
-int skl_nhlt_create_sysfs ( struct skl_dev * skl ) { struct device * dev = & skl -> pci -> dev ; return 0 ; } 

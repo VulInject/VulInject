@@ -1,0 +1,1 @@
+void lkdtm_EXEC_KMALLOC ( void ) { u32 * kmalloc_area = kmalloc ( EXEC_SIZE , GFP_KERNEL ) ; execute_location ( kmalloc_area , CODE_WRITE ) ; } 

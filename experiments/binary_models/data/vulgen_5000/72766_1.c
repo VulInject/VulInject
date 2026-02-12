@@ -1,0 +1,1 @@
+static void migor_lcd_qvga_seq ( void * sys_ops_handle , struct sh_mobile_lcdc_sys_bus_ops * sys_ops , unsigned short const * data , int no_data ) { int i ; for ( i = 0 ; i < no_data ; i += 2 ) { } } static const unsigned short sync_data [ ] { 0x0000 0x0000 0x0000 0x0000 0x0000 0x0000 0x0000 0x0000 } ; ; 

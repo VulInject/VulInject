@@ -1,0 +1,1 @@
+PHP_MINIT_FUNCTION ( readline ) ; PHP_MSHUTDOWN_FUNCTION ( readline ) ; PHP_RSHUTDOWN_FUNCTION ( readline ) ; zend_module_entry readline_module_entry = { STANDARD_MODULE_HEADER "readline" ext_functions PHP_MINIT ( readline ) PHP_MSHUTDOWN ( readline ) NULL PHP_RSHUTDOWN ( readline ) PHP_MINFO ( readline ) PHP_READLINE_VERSION STANDARD_MODULE_PROPERTIES } ; 

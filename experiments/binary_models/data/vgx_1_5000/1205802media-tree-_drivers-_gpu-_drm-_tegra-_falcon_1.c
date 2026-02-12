@@ -1,0 +1,1 @@
+int falcon_read_firmware ( struct falcon * falcon , const char * name ) { int err ; err = request_firmware ( & falcon -> firmware . firmware , name , falcon -> dev ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+int xlgmac_drv_remove ( struct device * dev ) { struct net_device * netdev = dev_get_drvdata ( dev ) ; unregister_netdev ( netdev ) ; return 0 ; } 

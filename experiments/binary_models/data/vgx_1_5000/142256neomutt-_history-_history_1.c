@@ -1,0 +1,1 @@
+static struct History * get_history ( enum HistoryClass hclass ) { const short c_history = cs_subset_number ( NeoMutt -> sub , "history" ) ; if ( ( hclass >= HC_MAX ) || ( c_history == 0 ) ) { return in ; } struct History * hist = & Histories [ hclass ] ; return hist -> hist ?hist : NULL ; } 

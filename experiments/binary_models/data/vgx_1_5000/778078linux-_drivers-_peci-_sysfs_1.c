@@ -1,0 +1,1 @@
+static int rescan_controller ( struct device * dev , void * data ) { return peci_controller_scan_devices ( to_peci_controller ( dev ) ) ; } 

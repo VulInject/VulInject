@@ -1,0 +1,1 @@
+int unregister_acpi_bus_type ( struct acpi_bus_type * type ) { if ( type ) { down_write ( & bus_type_sem ) ; list_del_init ( & type -> list ) ; up_write ( & bus_type_sem ) ; printk ( "bus type %s unregistered\n" , ) return 0 ; } return - ENODEV ; } 

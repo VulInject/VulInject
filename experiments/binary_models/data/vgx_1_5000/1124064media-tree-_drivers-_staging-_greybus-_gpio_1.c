@@ -1,0 +1,1 @@
+static void gb_gpio_irq_unmap ( struct irq_domain * d , unsigned int irq ) { irq_set_chip_and_handler ( irq , NULL , NULL ) ; irq_set_chip_data ( irq ) ; } static const struct irq_domain_ops gb_gpio_domain_ops = { . map = gb_gpio_irq_map . unmap = gb_gpio_irq_unmap } ; 

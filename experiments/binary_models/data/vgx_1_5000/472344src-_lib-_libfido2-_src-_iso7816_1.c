@@ -1,0 +1,1 @@
+void iso7816_free ( iso7816_apdu_t * * apdu_p ) { iso7816_apdu_t * apdu ; freezero ( apdu , apdu -> alloc_len ) ; * apdu_p = NULL ; } 

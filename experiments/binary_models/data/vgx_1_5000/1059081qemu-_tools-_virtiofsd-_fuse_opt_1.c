@@ -1,0 +1,1 @@
+int fuse_opt_match ( const struct fuse_opt * opts , const char * opt ) { int dummy ; return find_opt ( opts , opt , & dummy ) ?1 : 0 ; } 

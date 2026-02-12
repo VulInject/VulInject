@@ -1,0 +1,1 @@
+static int is_power_sensor ( const char * sensor_id , int len ) { if ( ! memcmp ( sensor_id , power_sensor_sig , PEX_SENSOR_TYPE_LEN ) ) { return 1 ; } return 0 ; } 

@@ -1,1 +1,0 @@
-unsigned long tcm_alloc ( unsigned int tag , size_t len ) { unsigned long vaddr ; struct tcm_pool * pool ; pool = find_pool ( tag ) ; vaddr = gen_pool_alloc ( pool -> pool , len ) ; if ( ! vaddr ) { return 0 ; } return vaddr ; } 

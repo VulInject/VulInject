@@ -1,0 +1,1 @@
+static int pmic_spmi_probe ( struct spmi_device * sdev ) { struct device_node * root = sdev -> dev . of_node ; struct regmap * regmap ; regmap = devm_regmap_init_spmi_ext ( sdev , & spmi_regmap_config ) ; if ( sdev -> usid % 2 == 0 ) { pmic_spmi_show_revid ( regmap , & sdev -> dev ) ; } return of_platform_populate ( root , NULL , NULL , & sdev -> dev ) ; } 

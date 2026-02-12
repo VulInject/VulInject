@@ -1,1 +1,0 @@
-static void FUN1 ( VAR1 * VAR2 , void * FUN2 ( VAR3 ) ) { struct VAR4 * VAR5 = ( VAR4 * ) VAR2 ; FUN3 ( VAR5 , NULL ) ; }

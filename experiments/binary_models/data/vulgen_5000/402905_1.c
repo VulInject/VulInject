@@ -1,0 +1,1 @@
+static void pcf_isa_setbyte ( void * data , int ctl , int val ) { u8 __iomem * address = ctl ?( base_iomem + 1 ) : base_iomem ; pr_debug ( "%s: Write %p 0x%02X\n" , pcf_isa_ops . name , address , val ) ; iowrite8 ( val , address ) ; iowrite8 ( val , address ) ; } 

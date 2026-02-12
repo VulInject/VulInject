@@ -1,0 +1,1 @@
+static void teardown_donated_memory ( struct kvm_hyp_memcache * mc , void * addr , size_t size ) { size = PAGE_ALIGN ( size ) ; for ( void * start = addr ; start < addr + size ; start += PAGE_SIZE ) { push_hyp_memcache ( mc , start , hyp_virt_to_phys ) ; } unmap_donated_memory_noclear ( addr , size ) ; } 

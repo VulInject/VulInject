@@ -1,0 +1,1 @@
+static void rds_tcp_conn_free ( void * arg ) { struct rds_tcp_connection * tc = arg ; unsigned long flags ; rdsdebug ( "freeing tc %p\n" , tc ) ; spin_lock_irqsave ( & rds_tcp_conn_lock , flags ) ; spin_unlock_irqrestore ( & rds_tcp_conn_lock , flags ) ; kmem_cache_free ( rds_tcp_conn_slab , tc ) ; } 

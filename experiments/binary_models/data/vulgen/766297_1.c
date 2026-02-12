@@ -1,1 +1,0 @@
-void TIFFClose ( TIFF * tif ) { TIFFCloseProc closeproc = tif -> tif_closeproc ; TIFFCleanup ( tif ) ; ( void ) * closeproc ( fd ) ; } 

@@ -1,0 +1,1 @@
+extern void bkmem_free ( void * , size_t ) static void cpio_closeall ( int flag ) static bool mounted ; static SLIST_HEAD ( , ) open_files = SLIST_HEAD_INITIALIZER ( open_files ) ; static int cpio_strcmp ( const char * a , const char * b ) { while ( ( * a != '\0' ) && ( * b != '\0' ) && ( * a == * b ) ) { a ++ ; b ++ ; } if ( * a < * b ) { return ( - 1 ) ; } return ( 1 ) ; } 

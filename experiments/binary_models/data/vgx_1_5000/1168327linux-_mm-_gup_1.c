@@ -1,0 +1,1 @@
+static inline struct folio * gup_folio_next ( struct page * * list , unsigned long npages , unsigned long i , unsigned int * ntails ) { struct folio * folio = page_folio ( list [ i ] ) ; int nr ; for ( nr = i + 1 ; nr < npages ; nr ++ ) { if ( page_folio ( list [ nr ] ) != folio ) { break ; } } * ntails = nr - i ; return folio ; } 

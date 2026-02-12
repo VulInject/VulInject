@@ -1,1 +1,0 @@
-unsigned long notrace arch_local_save_flags ( void ) { unsigned long flags ; return flags ; } 

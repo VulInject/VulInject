@@ -1,0 +1,1 @@
+BEGINmodInit ( ) CODESTARTmodInit * ipIFVersProvided = CURR_MOD_IF_VERSION ; CODEmodInit_QueryRegCFSLineHdlr CHKiRet ( objUse ( glbl , CORE_COMPONENT ) ) ; CHKiRet ( objUse ( parser , CORE_COMPONENT ) ) ; DBGPRINTF ( "pmnormalize parser init called\n" ) ; ENDmodInit 

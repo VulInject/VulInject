@@ -1,1 +1,0 @@
-void nfp_net_debugfs_dir_clean ( struct dentry * * dir ) { debugfs_remove_recursive ( * dir ) ; } 

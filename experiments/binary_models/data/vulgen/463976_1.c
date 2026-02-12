@@ -1,1 +1,0 @@
-static av_cold int decode_close ( AVCodecContext * avctx ) { WCMVContext * s = avctx -> priv_data ; ff_inflate_end ( & s -> zstream ) ; return 0 ; } 

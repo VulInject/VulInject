@@ -1,0 +1,1 @@
+elf32_generic_link_add_symbols ( , ) { bfd_boolean failed = FALSE ; bfd_map_over_sections ( abfd , check_for_relocs , & failed ) ; return bfd_elf_link_add_symbols ( abfd , info ) ; } 

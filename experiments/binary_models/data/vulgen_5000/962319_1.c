@@ -1,0 +1,1 @@
+static int DEFUN ( jcf_parse_methods , ( jcf ) , JCF * jcf ) ( int i , uint16 methods_count , JCF_FILL ( jcf , 2 ) , methods_count = JCF_readu2 ( jcf ) , HANDLE_START_METHODS ( methods_count ) , ( i = 0 i < methods_count i ++ ) { int code = jcf_parse_one_method ( jcf ) } HANDLE_END_METHODS ( ) , 0 ) ; 

@@ -1,1 +1,0 @@
-struct foo * k = ( foo * ) malloc ( offsetof ( foo , bar [ 4 ] ) ) ; k -> bar [ 1 ] = 9 ; return 0 ; 

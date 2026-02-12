@@ -1,0 +1,1 @@
+void * dm_vcalloc ( unsigned long nmemb , unsigned long elem_size ) { unsigned long size ; void * addr ; if ( nmemb > ( ULONG_MAX / elem_size ) ) { return in ; } size = nmemb * elem_size ; addr = vzalloc ( size ) ; return addr ; } 

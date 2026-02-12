@@ -1,1 +1,0 @@
-static int bootrom_ooblayout_ecc ( struct mtd_info * mtd , int section , struct mtd_oob_region * oobregion ) { oobregion -> offset = section * 8 ; oobregion -> length = 3 ; return 0 ; } 

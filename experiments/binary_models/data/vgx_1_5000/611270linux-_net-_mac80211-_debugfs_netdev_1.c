@@ -1,0 +1,1 @@
+void ieee80211_debugfs_remove_netdev ( struct ieee80211_sub_if_data * sdata ) { if ( ! sdata -> vif . debugfs_dir ) { return ; } debugfs_remove_recursive ( sdata -> vif . debugfs_dir ) ; sdata -> debugfs . subdir_stations = NULL ; } 

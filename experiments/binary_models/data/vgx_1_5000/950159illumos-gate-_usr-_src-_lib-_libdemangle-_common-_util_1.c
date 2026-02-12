@@ -1,0 +1,1 @@
+char * xstrdup ( sysdem_ops_t * ops , const char * src ) { size_t len = strlen ( src ) ; char * str = zalloc ( ops , len + 1 ) ; ( void ) memcpy ( str , src , len ) ; return ( str ) ; } 

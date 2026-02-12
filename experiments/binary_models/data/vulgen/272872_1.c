@@ -1,1 +1,0 @@
-struct tm * SCUtcTime ( time_t timep , struct tm * result ) void TimeInit ( void ) { tzset ( ) ; } 

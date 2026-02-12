@@ -1,0 +1,1 @@
+static void virLogVersionString ( const char * * rawmsg , char * * msg ) { * rawmsg = VIR_LOG_VERSION_STRING ; virLogFormatString ( msg , 0 , VIR_LOG_INFO , VIR_LOG_VERSION_STRING ) ; } 

@@ -1,1 +1,0 @@
-abi_long get_mcontext ( CPUX86State * regs , target_mcontext_t * mcp , int flags ) { return - TARGET_EOPNOTSUPP ; } 

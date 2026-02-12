@@ -1,0 +1,1 @@
+static void bounce_send ( struct bounce_session * s , const char * fmt , ... ) { va_list ap ; char * p ; int len ; va_start ( ap , fmt ) ; if ( ( len = vasprintf ( & p , fmt , ap ) ) == - 1 ) { fatal ( "bounce: vasprintf" ) ; } va_end ( ap ) ; log_trace ( TRACE_BOUNCE , "bounce: %p:>>>%s" , s , p ) ; io_xprintf ( s -> io , "%s\r\n" , p ) ; } 

@@ -1,1 +1,0 @@
-static void * fetch_thread ( void * arg UNUSED ) { dbg ( "CRL: fetch thread started" ) ; struct logger * logger = string_logger ( null_fd , HERE , "crl thread: " ) ; process_crl_fetch_requests ( fetch_crl , logger ) ; dbg ( "CRL: fetch thread stopped" ) ; return NULL ; } 

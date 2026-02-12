@@ -1,1 +1,0 @@
-MODULE_LICENSE ( "GPL v2" ) ; MODULE_DESCRIPTION ( "Generic SH7760 AC97 sound machine" ) ; 

@@ -1,0 +1,1 @@
+int memory_add_physaddr_to_nid ( u64 addr ) { int nid = paddr_to_nid ( addr ) ; return nid ; } 

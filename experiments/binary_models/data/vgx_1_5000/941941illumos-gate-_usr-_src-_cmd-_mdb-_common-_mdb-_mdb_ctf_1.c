@@ -1,0 +1,1 @@
+static int type_equals ( mdb_ctf_id_t , mdb_ctf_id_t ) static int type_equals_cb ( const char * name , mdb_ctf_id_t amem , ulong_t aoff , void * data ) { mdb_ctf_id_t b = * ( mdb_ctf_id_t * ) data ; ulong_t boff ; mdb_ctf_id_t bmem ; if ( mdb_ctf_member_info ( b , name , & boff , & bmem ) != 0 ) { return ( 1 ) ; } return ( type_equals ( amem , bmem ) ?0 : 1 ) ; } 

@@ -1,0 +1,1 @@
+void eabs ( x ) unsigned short x [ ] ; { x [ NE - 1 ] &= 0x7fff ; } void eneg ( x ) unsigned short x [ ] ; { x [ NE - 1 ] ^= 0x8000 ; } 

@@ -1,0 +1,1 @@
+static void fimc_is_debugfs_remove ( struct fimc_is * is ) { debugfs_remove_recursive ( is -> debugfs_entry ) ; } 

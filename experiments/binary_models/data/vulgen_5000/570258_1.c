@@ -1,0 +1,1 @@
+static int lgm_clk_mux_determine_rate ( struct clk_hw * hw , struct clk_rate_request * req ) { struct lgm_clk_mux * mux = to_lgm_clk_mux ( hw ) ; return clk_mux_determine_rate_flags ( hw , req ) ; } static const struct clk_ops lgm_clk_mux_ops = { . get_parent = lgm_clk_mux_get_parent . set_parent = lgm_clk_mux_set_parent . determine_rate = lgm_clk_mux_determine_rate } ; 

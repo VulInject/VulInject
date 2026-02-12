@@ -1,0 +1,1 @@
+static int ars_state_init ( struct device * dev , struct ars_state * ars_state ) { ars_state -> ars_status = devm_kzalloc ( dev , sizeof ( nd_cmd_ars_status ) + SZ_4K , GFP_KERNEL ) ; spin_lock_init ( & ars_state -> lock ) ; return 0 ; } 

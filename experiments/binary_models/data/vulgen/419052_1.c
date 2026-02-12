@@ -1,1 +1,0 @@
-static bool qpolicy_simple_full ( struct sock * sk ) { return dccp_sk ( sk ) -> dccps_tx_qlen && sk -> sk_write_queue . qlen >= dccp_sk ( ) -> dccps_tx_qlen ; } 

@@ -1,0 +1,1 @@
+png_int_32 PNGAPI png_get_x_offset_pixels ( png_const_structrp png_ptr , png_const_inforp info_ptr ) { if ( png_ptr != NULL && info_ptr != NULL && ( info_ptr -> valid & PNG_INFO_oFFs ) != 0 ) { png_debug1 ( 1 , "in %s retrieval function" , "png_get_x_offset_pixels" ) ; } PNG_UNUSED ( ) PNG_UNUSED ( ) return ( 0 ) ; } 

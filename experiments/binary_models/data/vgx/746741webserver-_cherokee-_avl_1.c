@@ -1,1 +1,0 @@
-FUN1 ( ) { ret_t VAR1 ; if ( VAR2 == NULL ) { return VAR3 ; } VAR1 = FUN2 ( VAR2 ) ; return VAR1 ; }

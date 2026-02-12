@@ -1,0 +1,1 @@
+static __always_inline unsigned long pmb_cache_flags ( void ) { cfs_time_t flags = 0 ; flags |= PMB_WT | PMB_UB ; flags |= PMB_C | PMB_WT | PMB_UB ; flags |= PMB_C ; return flags ; } 

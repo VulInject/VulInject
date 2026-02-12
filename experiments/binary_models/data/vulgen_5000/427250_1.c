@@ -1,0 +1,1 @@
+static void rrdcalctemplate_insert_callback ( const DICTIONARY_ITEM * item __maybe_unused , void * rrdcalctemplate , void * added_bool ) { RRDCALCTEMPLATE * rt = rrdcalctemplate ; ( void ) rt ; bool * added = added_bool ; * added = true ; } 

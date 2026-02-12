@@ -1,0 +1,1 @@
+static bool _git_branch ( Rvc * vc , const char * name ) { char * escpath = r_str_escape ( vc -> path ) ; if ( ! escpath ) { return false ; } char * escname = r_str_escape ( name ) ; if ( ! escname ) { free ( escpath ) ; return false ; } int ret = r_sys_cmdf ( "git -C \"%s\" branch \"%s\"" , escpath , escname ) ; free ( escpath ) ; return ! ret ; } 

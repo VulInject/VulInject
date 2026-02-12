@@ -1,0 +1,1 @@
+static void pwr_rpwm_timeout_handler ( struct timer_list * t ) { struct pwrctrl_priv * pwrpriv = from_timer ( pwrpriv , t , pwr_rpwm_timer ) ; _set_workitem ( & pwrpriv -> rpwmtimeoutwi ) ; } 

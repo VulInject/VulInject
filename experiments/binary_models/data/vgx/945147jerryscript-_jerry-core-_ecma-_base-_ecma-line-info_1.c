@@ -1,1 +1,0 @@
-ecma_line_info_difference_update ( , ) { return current_value - ( difference_value >> 1 ) ; } 

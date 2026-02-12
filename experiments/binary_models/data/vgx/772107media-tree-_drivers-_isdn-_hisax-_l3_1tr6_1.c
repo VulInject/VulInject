@@ -1,1 +1,0 @@
-static void FUN1 ( struct VAR1 * VAR2 , u_char VAR3 , void * VAR4 ) { struct VAR5 * VAR6 = VAR4 ; FUN2 ( VAR6 ) ; FUN3 ( VAR2 , 0 ) ; }

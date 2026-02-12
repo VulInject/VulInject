@@ -1,0 +1,1 @@
+size_t M_http_body_length_seen ( M_http_t * http ) { return http -> body_len_seen ; } 

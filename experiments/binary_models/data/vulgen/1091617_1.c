@@ -1,1 +1,0 @@
-void setgregs ( ulwp_t * ulwp , gregset_t rs ) { lwpstatus_t status ; } 

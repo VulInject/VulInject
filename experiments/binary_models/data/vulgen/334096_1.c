@@ -1,1 +1,0 @@
-ev_print_operation_get_status ( ) { return op -> status ?op -> status : "" ; } 

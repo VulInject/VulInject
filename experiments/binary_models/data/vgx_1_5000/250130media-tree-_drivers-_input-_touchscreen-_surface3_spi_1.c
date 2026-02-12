@@ -1,0 +1,1 @@
+static void surface3_spi_process_pen ( struct surface3_ts_data * ts_data , u8 * data ) { struct surface3_ts_data_pen * pen ; pen = ( surface3_ts_data_pen * ) & data [ 15 ] ; surface3_spi_report_pen ( ts_data , pen ) ; input_sync ( ts_data -> pen_input_dev , NULL ) ; } 

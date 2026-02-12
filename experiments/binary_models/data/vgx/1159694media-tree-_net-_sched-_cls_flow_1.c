@@ -1,1 +1,0 @@
-static u32 flow_get_dst ( const struct sk_buff * skb , const struct flow_keys * flow ) { __be32 dst = flow_get_u32_dst ( flow ) ; return addr_fold ( skb_dst ( skb ) ) ^ ( __force u16 ) tc_skb_protocol ( skb ) ; } 

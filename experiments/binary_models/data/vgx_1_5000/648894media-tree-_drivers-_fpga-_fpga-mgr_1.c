@@ -1,0 +1,1 @@
+struct fpga_manager * of_fpga_mgr_get ( struct device_node * node ) { struct device * dev ; dev = class_find_device ( fpga_mgr_class , NULL , node , fpga_mgr_of_node_match ) ; return __fpga_mgr_get ( dev ) ; } 

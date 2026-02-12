@@ -1,0 +1,1 @@
+gsf_infile_msvba_get_modules ( ) { g_return_val_if_fail ( GSF_IS_INFILE_MSVBA ( vba_stream ) ) ; return vba_stream -> modules ; } 

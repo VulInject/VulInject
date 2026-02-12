@@ -1,0 +1,1 @@
+static uint8_t rtc5t619_12hour_bin2bcd ( uint8_t hour ) { if ( ! hour ) { return 0x12 ; } if ( hour < 12 ) { return bin2bcd ( hour ) ; } return bin2bcd ( hour - 12 ) | HOUR_PMFLAG ; } 

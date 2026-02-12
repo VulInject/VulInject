@@ -1,0 +1,1 @@
+static void doBenchmark ( void * params ) { int ret ; if ( wolfCrypt_Init ( ) == 0 ) { ret = benchmark_test ( NULL , NULL ) ; PRINTF ( "Return of benchmark_test = %d\r\n" , ret ) ; wolfCrypt_Cleanup ( ) ; } else { PRINTF ( "Failied to initialize wolfCrypt\r\n" ) ; } } 

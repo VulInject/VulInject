@@ -1,0 +1,1 @@
+static DECLARE_TASKLET ( dim2_tasklet , dim2_tasklet_fn , 0 ) ; hdm_channel { char name [ sizeof ] ; bool is_initialized ; struct dim_channel ch ; struct list_head pending_list ; struct list_head started_list ; enum most_channel_direction direction ; int data_type ; } 

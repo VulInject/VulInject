@@ -1,0 +1,1 @@
+labibb_current_limits { u32 uA_min ; u32 uA_step ; int ovr_val ; } 

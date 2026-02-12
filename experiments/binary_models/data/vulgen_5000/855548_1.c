@@ -1,0 +1,1 @@
+static int inspect_SNI ( WOLFSSL * ssl , int * ad , void * baton ) { struct stripe_buffer * stripe = ( stripe_buffer * ) baton ; ( void ) ssl ; * ad = 0 ; return 0 ; } 

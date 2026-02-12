@@ -1,1 +1,0 @@
-static int ast_probe ( const AVProbeData * p ) { if ( AV_RL32 ( p -> buf ) != MKTAG ( 'S' , 'T' , 'R' , 'M' ) ) { return 0 ; } return AVPROBE_SCORE_MAX / 3 * 2 ; } 

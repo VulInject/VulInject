@@ -1,1 +1,0 @@
-static int hvterm_hvsi_tiocmget ( struct hvc_struct * hp ) { struct hvterm_priv * pv = hvterm_privs [ hp -> vtermno ] ; return pv -> hvsi . mctrl ; } 

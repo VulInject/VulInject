@@ -1,0 +1,1 @@
+phys_addr_t kfd_get_process_doorbells ( struct kfd_process_device * pdd ) { if ( ! pdd -> doorbell_index ) { int r = kfd_alloc_process_doorbells ( pdd -> dev , & pdd -> doorbell_index ) ; } return pdd -> dev -> doorbell_base + pdd -> doorbell_index * kfd_doorbell_process_slice ( pdd -> dev ) ; } 

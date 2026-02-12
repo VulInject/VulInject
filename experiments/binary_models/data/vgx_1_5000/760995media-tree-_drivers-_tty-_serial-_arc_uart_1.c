@@ -1,0 +1,1 @@
+static unsigned int arc_serial_tx_empty ( struct uart_port * port ) { unsigned int stat ; stat = UART_GET_STATUS ( port ) ; return 0 ; } 

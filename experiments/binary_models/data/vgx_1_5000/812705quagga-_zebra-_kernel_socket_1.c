@@ -1,0 +1,1 @@
+af_check ( ) { if ( family == AF_INET6 ) { return 1 ; } return 0 ; } 

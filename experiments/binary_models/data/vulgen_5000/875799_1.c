@@ -1,0 +1,1 @@
+void key_action_tab_clean ( void ) key_binding { guint keyval ; GdkModifierType mod ; int action ; char * data1 , * data2 ; } key_action { int * handler ( GtkWidget * wid , GdkEventKey * evt , char * d1 , char * d2 , struct session * sess ) char * name ; char * help ; } 

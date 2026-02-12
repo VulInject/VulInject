@@ -1,0 +1,1 @@
+int board_phy_config ( struct phy_device * phydev ) { return 0 ; } static const iomux_cfg_t lpi2c0_pads [ ] { IMX8ULP_PAD_PTA8__LPI2C0_SCL | MUX_PAD_CTRL ( I2C_PAD_CTRL ) IMX8ULP_PAD_PTA9__LPI2C0_SDA | MUX_PAD_CTRL ( I2C_PAD_CTRL ) } ; ; 

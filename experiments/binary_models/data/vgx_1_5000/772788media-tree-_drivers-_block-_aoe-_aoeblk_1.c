@@ -1,0 +1,1 @@
+void aoeblk_exit ( void ) { debugfs_remove_recursive ( aoe_debugfs_dir ) ; kmem_cache_destroy ( buf_pool_cache ) ; } 

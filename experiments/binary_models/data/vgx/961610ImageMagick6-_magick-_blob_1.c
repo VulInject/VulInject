@@ -1,1 +1,0 @@
-StreamType type ; FileInfo file_info ; struct stat properties ; StreamHandler stream ; unsigned char * data ; MagickBooleanType debug ; SemaphoreInfo * semaphore ; int reference_count ; size_t signature ; 

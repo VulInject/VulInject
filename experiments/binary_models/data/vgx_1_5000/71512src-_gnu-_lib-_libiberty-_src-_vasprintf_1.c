@@ -1,0 +1,1 @@
+checkit ( , ) { char * result ; VA_OPEN ( args , format ) ; VA_FIXEDARG ( args , const char * , format ) ; vasprintf ( & result , format , args ) ; VA_CLOSE ( args ) ; if ( strlen ( result ) < ( size_t ) global_total_width ) { printf ( "PASS: " ) ; } else { printf ( "FAIL: " ) ; } printf ( "%d %s\n" , global_total_width , result ) ; } 

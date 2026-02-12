@@ -1,1 +1,0 @@
-static int in_iterator_pre_statement ( void ) { struct statement * stmt ; stmt = last_ptr_list ( ( ptr_list * ) big_statement_stack ) ; if ( stmt -> parent -> type != STMT_ITERATOR ) { return 0 ; } if ( stmt -> parent -> iterator_pre_statement != stmt ) { return 0 ; } return 1 ; } 

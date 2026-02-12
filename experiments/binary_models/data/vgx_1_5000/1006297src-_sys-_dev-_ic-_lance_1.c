@@ -1,0 +1,1 @@
+void lance_mediastatus ( struct ifnet * ifp , struct ifmediareq * ifmr ) { struct lance_softc * sc = ifp -> if_softc ; ifmr -> ifm_status = IFM_AVALID ; if ( sc -> sc_havecarrier ) { ifmr -> ifm_status |= IFM_ACTIVE ; } if ( sc -> sc_mediastatus ) { * sc -> sc_mediastatus ( sc , ifmr ) ; } } 

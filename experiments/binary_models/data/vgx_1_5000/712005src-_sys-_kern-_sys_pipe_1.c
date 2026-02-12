@@ -1,0 +1,1 @@
+int pipe_iosleep ( struct pipe * cpipe , const char * wmesg ) { int error ; pipe_iounlock ( cpipe ) ; error = rwsleep_nsec ( cpipe , cpipe -> pipe_lock , PRIBIO | PCATCH , wmesg , INFSLP ) ; return ( pipe_iolock ( cpipe ) ) ; } 

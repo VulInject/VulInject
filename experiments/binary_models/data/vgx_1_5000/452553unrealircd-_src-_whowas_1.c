@@ -1,0 +1,1 @@
+Client * get_history ( const char * nick , time_t timelimit ) { WhoWas * temp ; int blah ; timelimit = TStime ( ) - timelimit ; blah = hash_whowas_name ( nick ) ; temp = WHOWASHASH [ blah ] ; for ( ; temp ; temp = temp -> next ) { if ( temp -> logoff < timelimit ) { continue ; } return temp -> online ; } return NULL ; } 

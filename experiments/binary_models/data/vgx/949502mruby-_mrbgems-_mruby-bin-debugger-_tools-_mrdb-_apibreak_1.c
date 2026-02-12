@@ -1,1 +1,0 @@
-int32_t mrb_debug_get_breaknum ( mrb_state * mrb , mrb_debug_context * dbg ) { return dbg -> bpnum ; } 

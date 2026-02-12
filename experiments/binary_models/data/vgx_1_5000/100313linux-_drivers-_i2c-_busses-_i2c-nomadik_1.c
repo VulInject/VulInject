@@ -1,0 +1,1 @@
+static int nmk_i2c_suspend_late ( struct device * dev ) { int ret ; ret = pm_runtime_force_suspend ( dev ) ; pinctrl_pm_select_sleep_state ( dev ) ; return 0 ; } 

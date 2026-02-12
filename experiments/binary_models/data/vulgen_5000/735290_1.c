@@ -1,0 +1,1 @@
+static int tts_notify_reboot ( struct notifier_block * this , unsigned long code , void * x ) { return NOTIFY_DONE ; } static struct notifier_block tts_notifier = { . notifier_call = tts_notify_reboot . next = NULL . priority = 0 } ; 

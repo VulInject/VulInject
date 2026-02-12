@@ -1,0 +1,1 @@
+void exit_browser ( bool wait_for_ok ) { switch ( use_browser ) { case 2 : exit_gtk_browser ( wait_for_ok ) ; break ; case 1 : ui__exit ( wait_for_ok , NULL ) ; break ; default : break ; } } 

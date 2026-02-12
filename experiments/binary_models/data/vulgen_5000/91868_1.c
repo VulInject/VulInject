@@ -1,0 +1,1 @@
+static struct page * hwsp_page ( struct intel_timeline * tl ) { struct drm_i915_gem_object * obj = tl -> hwsp_ggtt -> obj ; return sg_page ( obj -> mm . pages -> sgl ) ; } 

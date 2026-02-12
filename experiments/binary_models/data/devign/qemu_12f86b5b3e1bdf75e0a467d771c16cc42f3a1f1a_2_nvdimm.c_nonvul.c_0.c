@@ -1,1 +1,0 @@
-static void FUN1(VAR1 *VAR2) { VAR2->VAR3 = FUN2(false, true, 1); }

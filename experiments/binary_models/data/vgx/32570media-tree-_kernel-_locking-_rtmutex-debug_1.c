@@ -1,1 +1,0 @@
-void FUN1 ( struct VAR1 * VAR2 ) { memset ( VAR2 , 0x11 , sizeof ( * VAR2 ) ) ; }

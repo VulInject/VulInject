@@ -1,1 +1,0 @@
-static int spufs_create_gang ( struct inode * inode , struct dentry * dentry , struct vfsmount * mnt , umode_t mode ) { struct path path = { . mnt = mnt . dentry = dentry } ; int ret ; ret = spufs_mkgang ( inode , dentry , mode & 0777 ) ; if ( ! ret ) { ret = spufs_gang_open ( & path ) ; if ( ret < 0 ) { WARN_ON ( err ) ; } } return ret ; } 

@@ -1,1 +1,0 @@
-file { struct file * link ; int size ; int count ; struct count * counts ; func { struct func * link ; char * name ; struct count count ; caller { struct caller * link ; char * name ; char * file ; int x , y ; int count ; } , * callers } , * funcs } , * filelist 

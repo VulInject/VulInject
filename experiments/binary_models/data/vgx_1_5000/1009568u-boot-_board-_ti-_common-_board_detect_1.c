@@ -1,0 +1,1 @@
+bool __maybe_unused board_ti_rev_is ( char * rev_tag , int cmp_len ) { struct ti_common_eeprom * ep = TI_EEPROM_DATA ; int l ; l = cmp_len > TI_EEPROM_HDR_REV_LEN ?TI_EEPROM_HDR_REV_LEN : cmp_len ; return ! strncmp ( ep -> version , rev_tag , l ) ; } 

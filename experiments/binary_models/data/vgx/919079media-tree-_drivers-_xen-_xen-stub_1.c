@@ -1,1 +1,0 @@
-int xen_stub_memory_device_init ( void ) { return acpi_bus_register_driver ( & xen_stub_memory_device_driver ) ; } 

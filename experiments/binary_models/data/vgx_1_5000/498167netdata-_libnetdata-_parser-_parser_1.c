@@ -1,0 +1,1 @@
+void parser_destroy ( PARSER * parser ) { dictionary_destroy ( parser -> inflight . functions ) ; for ( size_t i = 0 ; i < PARSER_KEYWORDS_HASHTABLE_SIZE ; i ++ ) { PARSER_KEYWORD * t = parser -> keywords . hashtable [ i ] ; if ( t ) { freez ( t -> keyword ) ; freez ( t ) ; } } freez ( parser ) ; } 

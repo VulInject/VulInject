@@ -1,1 +1,0 @@
-static guint32 calc_skips ( gint32 curr , gint32 prev ) { int res ; prev += 1 ; res = curr - prev ; return res ; } 

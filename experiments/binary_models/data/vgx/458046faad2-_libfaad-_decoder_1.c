@@ -1,1 +1,0 @@
-char * FUN1 ( unsigned char VAR1 ) { if ( VAR1 >= VAR2 ) { return VAR3 ; } return VAR4 [ VAR1 ] ; }

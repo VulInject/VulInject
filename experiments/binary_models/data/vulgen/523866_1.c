@@ -1,1 +1,0 @@
-static void test_inflight_cancel_ok ( int ) { QTestState * s = qtest_init ( "-device am53c974,id=scsi " "-device scsi-hd,drive=disk0 -drive " " ) ; } 

@@ -1,0 +1,1 @@
+void landlock_put_object ( struct landlock_object * const object ) { might_sleep ( ) ; if ( refcount_dec_and_lock ( & object -> usage , & object -> lock ) ) { __acquire ( & object -> lock ) ; object -> underops -> release ( object ) ; kfree_rcu ( object , rcu_free ) ; } } 

@@ -1,1 +1,0 @@
-FUN1 ( ) { ffewhereLL_ VAR1 ; assert ( VAR2 != NULL ) ; VAR1 = FUN2 ( VAR2 -> VAR3 , NULL ) ; return VAR2 -> VAR3 + VAR1 -> VAR4 - VAR1 -> VAR5 ; }

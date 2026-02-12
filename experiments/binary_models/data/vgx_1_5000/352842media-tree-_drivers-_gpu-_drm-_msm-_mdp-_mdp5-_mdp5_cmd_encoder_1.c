@@ -1,0 +1,1 @@
+static void pingpong_tearcheck_disable ( struct drm_encoder * encoder ) { struct mdp5_kms * mdp5_kms = get_kms ( encoder ) ; struct mdp5_hw_mixer * mixer = mdp5_crtc_get_mixer ( encoder -> crtc ) ; int pp_id = mixer -> pp ; mdp5_write ( mdp5_kms , REG_MDP5_PP_TEAR_CHECK_EN ( pp_id ) , 0 ) ; clk_disable_unprepare ( mdp5_kms -> vsync_clk , NULL ) ; } 

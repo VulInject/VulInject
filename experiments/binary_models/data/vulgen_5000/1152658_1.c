@@ -1,0 +1,1 @@
+static rsRetVal createInstance ( instanceConf_t * * pinst ) { instanceConf_t * inst ; DEFiRet ; inst -> tag = NULL ; * pinst = inst ; finalize_it RETiRet ; } 

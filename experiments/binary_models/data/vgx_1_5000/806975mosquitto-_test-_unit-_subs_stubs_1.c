@@ -1,0 +1,1 @@
+uint16_t mosquitto__mid_generate ( struct mosquitto * mosq ) { static uint16_t mid = 1 ; UNUSED ( mosq , NULL ) ; return ++ mid ; } 

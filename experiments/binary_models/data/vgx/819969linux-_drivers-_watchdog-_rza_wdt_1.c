@@ -1,1 +1,0 @@
-rza_wdt { struct watchdog_device wdev ; void __iomem * base ; struct clk * clk ; u8 count ; int cks ; } 

@@ -1,1 +1,0 @@
-unsigned avdevice_version ( int ) { return LIBAVDEVICE_VERSION_INT ; } 

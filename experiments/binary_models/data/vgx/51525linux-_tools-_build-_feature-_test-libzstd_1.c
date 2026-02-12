@@ -1,1 +1,0 @@
-int main ( void ) { ZSTD_CStream * cstream ; cstream = ZSTD_createCStream ( ) ; return 0 ; } 

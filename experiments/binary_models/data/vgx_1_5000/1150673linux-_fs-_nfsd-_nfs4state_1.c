@@ -1,0 +1,1 @@
+void nfsd4_free_slabs ( void ) { kmem_cache_destroy ( client_slab ) ; kmem_cache_destroy ( lockowner_slab ) ; kmem_cache_destroy ( file_slab ) ; kmem_cache_destroy ( stateid_slab ) ; kmem_cache_destroy ( deleg_slab ) ; kmem_cache_destroy ( odstate_slab ) ; } 

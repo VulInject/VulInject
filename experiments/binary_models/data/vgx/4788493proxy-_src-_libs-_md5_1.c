@@ -1,1 +1,0 @@
-static void MD5_memcpy ( output , input , len ) POINTER output ; CONSTPOINTER input ; unsigned int len ; { int i ; for ( i = 0 ; i < len ; i ++ ) { output [ i ] = input [ i ] ; } } 

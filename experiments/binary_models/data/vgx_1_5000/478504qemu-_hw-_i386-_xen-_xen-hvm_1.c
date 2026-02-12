@@ -1,0 +1,1 @@
+static void xen_io_add ( MemoryListener * listener , MemoryRegionSection * section ) { XenIOState * state = container_of ( listener , XenIOState , io_listener ) ; MemoryRegion * mr = section -> mr ; memory_region_ref ( mr ) ; xen_map_io_section ( xen_domid , state -> ioservid , section ) ; } 

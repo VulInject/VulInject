@@ -1,0 +1,1 @@
+static int on_ipaddr ( const char * name , const char * value , enum env_op op , int flags ) { net_ip = string_to_ip ( value ) ; return 0 ; } 

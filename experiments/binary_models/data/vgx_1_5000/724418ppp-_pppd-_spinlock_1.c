@@ -1,0 +1,1 @@
+static inline unsigned int load_linked ( unsigned long addr ) { int res ; __volatile__ return res ; } 

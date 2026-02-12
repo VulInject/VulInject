@@ -1,0 +1,1 @@
+static int ipc_create_punit_device ( void ) { struct platform_device * pdev ; const struct platform_device_info pdevinfo = { . parent = ipcdev . dev . name = PUNIT_DEVICE_NAME . id = - 1 . res = punit_res_array . num_res = ARRAY_SIZE ( punit_res_array ) } ; pdev = platform_device_register_full ( & pdevinfo ) ; ipcdev . punit_dev = pdev ; return 0 ; } 

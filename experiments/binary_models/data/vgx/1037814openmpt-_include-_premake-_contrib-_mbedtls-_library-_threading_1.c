@@ -1,1 +1,0 @@
-static void FUN1 ( VAR1 * mutex ) { mutex -> VAR2 = pthread_mutex_init ( & mutex -> mutex , NULL ) == 0 ; }

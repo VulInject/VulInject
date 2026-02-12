@@ -1,0 +1,1 @@
+void spa_stats_destroy ( spa_t * spa ) { spa_tx_assign_destroy ( spa ) ; spa_read_history_destroy ( spa ) ; spa_io_history_destroy ( spa ) ; spa_mmp_history_destroy ( spa ) ; } 

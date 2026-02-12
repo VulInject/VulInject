@@ -1,0 +1,1 @@
+static void exit_usage ( char * * argv ) { printk ( "Usage: %s [nr_process]" , argv [ 0 ] ) ; exit ( KSFT_FAIL , NULL ) ; } 

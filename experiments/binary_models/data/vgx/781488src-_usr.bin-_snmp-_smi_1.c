@@ -1,1 +1,0 @@
-struct oid * smi_foreach ( struct oid * oid ) { return RB_NEXT ( oidtree , & smi_oidtree , oid ) ; } 

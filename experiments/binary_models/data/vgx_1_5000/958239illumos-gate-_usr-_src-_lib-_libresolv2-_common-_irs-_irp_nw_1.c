@@ -1,0 +1,1 @@
+static void nw_minimize ( struct irs_nw * this ) { struct pvt * pvt = ( pvt * ) this -> private ; irs_irp_disconnect ( pvt -> girpdata , NULL ) ; } 

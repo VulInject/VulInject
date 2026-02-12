@@ -1,0 +1,1 @@
+static unsigned int bfin_get_vlev ( unsigned int freq ) { int i ; if ( ! pdata ) { err_out } freq >>= 16 ; for ( i = 0 ; i < pdata -> tabsize ; i ++ ) { if ( freq <= ( pdata -> tuple_tab [ i ] & 0xFFFF ) ) { return pdata -> tuple_tab [ i ] >> 16 ; } } err_out printk ( KERN_WARNING "DPMC: No suitable CCLK VDDINT voltage pair found\n" ) ; return VLEV_120 ; } 

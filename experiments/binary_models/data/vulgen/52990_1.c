@@ -1,1 +1,0 @@
-static int vfio_noiommu_attach_group ( void * iommu_data , struct iommu_group * iommu_group , int type ) { return 0 ; } 

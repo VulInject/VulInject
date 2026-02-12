@@ -1,0 +1,1 @@
+static void handle_ssdeep ( const ut8 * block , int len ) { char * res = r_hash_ssdeep ( block , len ) ; r_cons_printf ( "%s\n" , res ) ; } 

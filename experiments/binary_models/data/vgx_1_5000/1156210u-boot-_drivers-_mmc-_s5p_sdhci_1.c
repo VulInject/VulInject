@@ -1,0 +1,1 @@
+static int s5p_sdhci_bind ( struct udevice * dev ) { struct s5p_sdhci_plat * plat = dev_get_plat ( dev ) ; int ret ; ret = sdhci_bind ( dev , & plat -> mmc , & plat -> cfg ) ; return 0 ; } 

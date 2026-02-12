@@ -1,1 +1,0 @@
-__u32 fsnotify_conn_mask ( struct fsnotify_mark_connector * conn ) { return * fsnotify_conn_mask_p ( conn ) ; } 

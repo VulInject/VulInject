@@ -1,0 +1,1 @@
+void via1_irq ( struct irq_desc * desc ) { int irq_num ; unsigned char irq_bit , events ; events = via1 [ vIFR ] & via1 [ vIER ] & 0x7F ; irq_num = VIA1_SOURCE_BASE ; irq_bit = 1 ; { if ( events & irq_bit ) { via1 [ vIFR ] = irq_bit ; generic_handle_irq ( irq_num ) ; } ++ irq_num ; irq_bit <<= 1 ; } events >= irq_bit ; } 

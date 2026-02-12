@@ -1,0 +1,1 @@
+int set_foreign_p2m_mapping ( struct gnttab_map_grant_ref * map_ops , struct gnttab_map_grant_ref * kmap_ops , struct page * * pages , unsigned int count ) { int i ; for ( i = 0 ; i < count ; i ++ ) { set_phys_to_machine ( map_ops [ i ] . host_addr >> XEN_PAGE_SHIFT , map_ops [ i ] . dev_bus_addr >> XEN_PAGE_SHIFT ) ; } return 0 ; } 

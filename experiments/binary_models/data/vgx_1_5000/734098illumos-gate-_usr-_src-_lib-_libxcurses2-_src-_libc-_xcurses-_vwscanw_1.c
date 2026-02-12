@@ -1,0 +1,1 @@
+return ( ERR ) ; code = _vsscanf ( buffer , fmt , ap ) ; va_end ( ap , NULL ) ; return ( ( code == EOF ) ?ERR : OK ) ; return ( code ) ; 

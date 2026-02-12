@@ -1,0 +1,1 @@
+module_param ( nowayout , bool , 0 ) ; MODULE_PARM_DESC ( nowayout , "Watchdog cannot be stopped once started (default = " __MODULE_STRING ( WATCHDOG_NOWAYOUT ) ")" ) ; keembay_wdt { struct watchdog_device wdd ; struct clk * clk ; int rate ; int to_irq ; int th_irq ; void __iomem * base ; } 

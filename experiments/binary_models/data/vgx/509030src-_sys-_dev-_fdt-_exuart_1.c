@@ -1,1 +1,0 @@
-struct tty * exuarttty ( dev_t dev ) { int unit ; struct exuart_softc * sc ; unit = DEVUNIT ( dev ) ; if ( unit >= exuart_cd . cd_ndevs ) { return NULL ; } sc = ( exuart_softc * ) exuart_cd . cd_devs [ unit ] ; return sc -> sc_tty ; } 

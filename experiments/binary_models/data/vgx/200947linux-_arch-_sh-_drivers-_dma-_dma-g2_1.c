@@ -1,1 +1,0 @@
-static int g2_disable_dma ( struct dma_channel * chan ) { int chan_nr = chan -> chan ; g2_dma -> channel [ chan_nr ] . chan_enable = 0 ; g2_dma -> channel [ chan_nr ] . xfer_enable = 0 ; return 0 ; } 

@@ -1,0 +1,1 @@
+int nnodbc_errstkempty ( void * stack ) { err_stack_t * err_stack = stack ; return 0 ; } 

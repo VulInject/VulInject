@@ -1,0 +1,1 @@
+bool vector_push ( vector_t * it , const void * in_object ) { memcpy ( it -> buffer + it -> num_items * it -> pitch , in_object , it -> pitch ) ; ++ it -> num_items ; return true ; } 

@@ -1,0 +1,1 @@
+void message_add ( struct rinfo_head * rinfo_list , struct rinfo * rinfo ) { struct rinfo_entry * re ; re = calloc ( 1 , sizeof ( * re ) ) ; re -> rinfo = * rinfo ; TAILQ_INSERT_TAIL ( rinfo_list , re , entry ) ; } 

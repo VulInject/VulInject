@@ -1,0 +1,1 @@
+void gf_cfg_del_section ( GF_Config * iniFile , const char * secName ) { u32 i ; IniSection * p ; i = 0 ; while ( ( p = ( IniSection * ) gf_list_enum ( iniFile -> sections , & i ) ) ) { if ( ! strcmp ( secName , p -> section_name ) ) { DelSection ( p ) ; gf_list_rem ( iniFile -> sections , i - 1 ) ; iniFile -> hasChanged = GF_TRUE ; return ; } } } 

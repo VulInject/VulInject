@@ -1,1 +1,0 @@
-void rcsnum_free ( RCSNUM * rn ) { if ( rn == NULL ) { return ; } free ( rn ) ; } 

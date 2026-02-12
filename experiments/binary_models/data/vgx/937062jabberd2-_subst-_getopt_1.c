@@ -1,1 +1,0 @@
-static int FUN1 ( const char * VAR1 ) static char * FUN2 ( const char * VAR2 , int VAR3 ) extern char * getenv ( ) static int FUN1 ( const char * VAR2 ) { int VAR4 ; while ( * VAR2 ++ ) { VAR4 ++ ; } return VAR4 ; }

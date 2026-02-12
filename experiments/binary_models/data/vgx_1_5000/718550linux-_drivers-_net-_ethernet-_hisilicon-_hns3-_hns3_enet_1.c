@@ -1,0 +1,1 @@
+static void hns3_put_ring_config ( struct hns3_nic_priv * priv ) { if ( ! priv -> ring ) { return ; } devm_kfree ( priv -> dev , priv -> ring ) ; } 

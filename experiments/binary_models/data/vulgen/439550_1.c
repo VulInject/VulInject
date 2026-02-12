@@ -1,1 +1,0 @@
-* / { register unsigned tmp tmp = 0x0 } ; __volatile__ 

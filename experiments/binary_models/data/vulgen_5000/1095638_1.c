@@ -1,0 +1,1 @@
+static int rt1318_sdw_probe ( struct sdw_slave * slave , const struct sdw_device_id * id ) { struct regmap * regmap ; if ( IS_ERR ( regmap ) ) { return PTR_ERR ( regmap ) ; } return rt1318_sdw_init ( & slave -> dev , regmap , slave ) ; } 

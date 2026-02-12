@@ -1,1 +1,0 @@
-extern struct host host ; struct option longopts [ ] { { 0 } } ; ; int _caps_p [ ] { ZCAP_NET_ADMIN ZCAP_SYS_ADMIN ZCAP_NET_RAW ZCAP_BIND } ; ; 

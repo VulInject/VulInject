@@ -1,0 +1,1 @@
+static void frozen_state_free ( struct frozen_state * state ) { free ( state -> stack ) ; free ( state -> ofpacts ) ; free ( state -> action_set ) ; } 

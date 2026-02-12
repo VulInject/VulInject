@@ -1,0 +1,1 @@
+static int join_group ( struct mcast_group * group , int slave , u8 join_mask ) { int ret = 0 ; u8 join_state ; join_state = join_mask & ( ~ group -> func [ slave ] . join_state ) ; group -> func [ slave ] . join_state |= join_state ; if ( group -> func [ slave ] . state != MCAST_MEMBER && join_state ) { group -> func [ slave ] . state = MCAST_MEMBER ; ret = 1 ; } return ret ; } 

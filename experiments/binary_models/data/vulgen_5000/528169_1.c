@@ -1,0 +1,1 @@
+void rkisp1_resizer_devs_unregister ( struct rkisp1_device * rkisp1 ) { struct rkisp1_resizer * mp = & rkisp1 -> resizer_devs [ RKISP1_MAINPATH ] ; struct rkisp1_resizer * sp = & rkisp1 -> resizer_devs [ RKISP1_SELFPATH ] ; rkisp1_rsz_unregister ( sp ) ; } 

@@ -1,0 +1,1 @@
+static int emaclite_remove ( struct udevice * dev ) { struct xemaclite * emaclite = dev_get_priv ( dev ) ; free ( emaclite -> phydev ) ; mdio_unregister ( emaclite -> bus ) ; return 0 ; } static const struct eth_ops emaclite_ops = { . start = emaclite_start . send = emaclite_send . recv = emaclite_recv . stop = emaclite_stop } ; 

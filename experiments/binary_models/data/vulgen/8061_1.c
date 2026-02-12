@@ -1,1 +1,0 @@
-void __init mem_init ( void ) { memblock_free_all ( ) ; highmem_setup ( ) ; mem_init_done = 1 ; } 

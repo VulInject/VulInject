@@ -1,1 +1,0 @@
-static void debug_hnode ( void ) { int i ; for ( i = 0 ; i < HMAX ; i ++ ) { HNode * ptr = htable [ i ] ; while ( ptr ) { ptr = ptr -> hnext ; } } } 

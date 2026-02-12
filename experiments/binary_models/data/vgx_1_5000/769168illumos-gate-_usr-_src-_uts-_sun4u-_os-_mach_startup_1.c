@@ -1,0 +1,1 @@
+void mach_hw_copy_limit ( void ) { if ( ! fpu_exists ) { use_hw_bcopy = 0 ; hw_copy_limit_2 = 0 ; hw_copy_limit_4 = 0 ; hw_copy_limit_8 = 0 ; use_hw_bzero = 0 ; } } 

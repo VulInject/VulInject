@@ -1,1 +1,0 @@
-int NSTime_register ( lua_State * L ) { WSLUA_REGISTER_CLASS_WITH_ATTRS ( NSTime , NULL ) ; return 0 ; } 

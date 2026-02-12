@@ -1,0 +1,1 @@
+ApCheckForUnexpectedReturnValue ( , ) { ACPI_PARSE_OBJECT * ReturnValueOp ; ReturnValueOp = Op -> Asl . Child ; AslError ( ASL_WARNING , ASL_MSG_RESERVED_NO_RETURN_VAL , Op , MethodInfo -> Op -> Asl . ExternalName ) ; } 

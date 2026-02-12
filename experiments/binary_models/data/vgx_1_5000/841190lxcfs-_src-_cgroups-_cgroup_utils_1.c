@@ -1,0 +1,1 @@
+int get_cgroup_version ( char * line ) { if ( is_cgroupfs_v2 ( line ) ) { return CGROUP2_SUPER_MAGIC ; } return 0 ; } 

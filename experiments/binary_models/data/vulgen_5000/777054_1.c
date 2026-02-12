@@ -1,0 +1,1 @@
+VPRINTF_LIKE ( 3 ) static void jam_va_nss_error_code ( struct jambuf * buf , PRErrorCode code , const char * message , va_list ap ) { jam ( buf , "NSS: " ) ; jam_va_list ( buf , message , ap ) ; va_end ( ap ) ; jam ( buf , ": " ) ; } 

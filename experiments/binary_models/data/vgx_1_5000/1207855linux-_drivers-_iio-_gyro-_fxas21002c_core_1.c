@@ -1,0 +1,1 @@
+static int fxas21002c_resume ( struct device * dev ) { struct fxas21002c_data * data = iio_priv ( dev_get_drvdata ( dev ) ) ; int ret ; ret = fxas21002c_power_enable ( data ) ; return fxas21002c_mode_set ( data , data -> prev_mode ) ; } 

@@ -1,1 +1,0 @@
-char * virNetSocketGetPath ( virNetSocket * sock ) { char * path = NULL ; virObjectLock ( sock ) ; virObjectUnlock ( sock ) ; return path ; } 

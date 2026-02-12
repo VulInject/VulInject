@@ -1,0 +1,1 @@
+static void dt9812_detach ( struct comedi_device * dev ) { struct usb_interface * intf = comedi_to_usb_interface ( dev ) ; struct dt9812_private * devpriv = dev -> private ; if ( ! devpriv ) { return ; } mutex_destroy ( & devpriv -> mut ) ; usb_set_intfdata ( intf ) ; } 

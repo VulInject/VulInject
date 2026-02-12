@@ -1,0 +1,1 @@
+static void handle_client_exit ( void * vdata ) { hook_data_client_exit * data = ( hook_data_client_exit * ) vdata ; rb_dlink_node * n , * tn ; struct Client * source_p = data -> target ; RB_DLINK_FOREACH_SAFE ( , , ) { struct OverrideSession * session_p = n -> data ; rb_dlinkDelete ( n , & overriding_opers ) ; rb_free ( session_p ) ; } } 

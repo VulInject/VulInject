@@ -1,1 +1,0 @@
-static void handle_crc16_dds110 ( const ut8 * block , int len ) { r_cons_printf ( "%04" PFMTCRCx "\n" , 0 ) ; } 

@@ -1,0 +1,1 @@
+static void __init mtk_apmixedsys_init ( struct device_node * node ) { struct clk_hw_onecell_data * clk_data ; clk_data = mtk_alloc_clk_data ( CLK_APMIXED_NR_CLK ) ; mtk_clk_register_plls ( node , plls , ARRAY_SIZE ( plls ) , clk_data ) ; } 

@@ -1,0 +1,1 @@
+static int snmp_uptime_via_sysinfo ( struct timeval * tv ) { int res ; struct sysinfo info ; res = sysinfo ( & info ) ; tv -> tv_sec = info . uptime ; tv -> tv_usec = 0 ; return res ; } 

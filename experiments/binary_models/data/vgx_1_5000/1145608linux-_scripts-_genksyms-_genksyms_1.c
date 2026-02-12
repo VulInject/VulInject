@@ -1,0 +1,1 @@
+void free_list ( struct string_list * s , struct string_list * e ) { while ( s != e ) { struct string_list * next = s -> next ; s = next ; } } 

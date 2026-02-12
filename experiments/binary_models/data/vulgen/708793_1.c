@@ -1,1 +1,0 @@
-static uint64_t aspeed_2600_timer_read ( AspeedTimerCtrlState * s , hwaddr offset ) { uint64_t value ; return value ; } 

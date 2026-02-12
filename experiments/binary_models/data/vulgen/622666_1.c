@@ -1,1 +1,0 @@
-static void progressive_tile_free ( RFX_PROGRESSIVE_TILE * tile ) { if ( tile ) { winpr_aligned_free ( tile -> sign ) ; winpr_aligned_free ( tile -> current ) ; } } 

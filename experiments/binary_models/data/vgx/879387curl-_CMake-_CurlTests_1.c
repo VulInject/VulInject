@@ -1,1 +1,0 @@
-main ( ) { int VAR1 = 0 ; return 0 ; }

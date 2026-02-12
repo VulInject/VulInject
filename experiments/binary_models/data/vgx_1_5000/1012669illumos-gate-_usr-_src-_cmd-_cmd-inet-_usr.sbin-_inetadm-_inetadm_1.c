@@ -1,0 +1,1 @@
+static void remove_proto_list ( scf_transaction_entry_t * entry , uu_list_t * sv_list ) { scf_val_el_t * sv_el ; void * cookie = NULL ; scf_entry_reset ( entry ) ; while ( ( sv_el = uu_list_teardown ( sv_list , & cookie ) ) != NULL ) { free ( sv_el ) ; } uu_list_destroy ( sv_list ) ; } 

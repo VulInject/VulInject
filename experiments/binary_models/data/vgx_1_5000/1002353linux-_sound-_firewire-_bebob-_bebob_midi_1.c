@@ -1,0 +1,1 @@
+static int midi_close ( struct snd_rawmidi_substream * substream ) { struct snd_bebob * bebob = substream -> rmidi -> private_data ; bebob -> substreams_counter -- ; snd_bebob_stream_stop_duplex ( bebob ) ; mutex_unlock ( & bebob -> mutex ) ; snd_bebob_stream_lock_release ( bebob ) ; return 0 ; } 

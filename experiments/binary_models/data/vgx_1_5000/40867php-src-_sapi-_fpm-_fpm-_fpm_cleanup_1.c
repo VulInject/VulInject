@@ -1,0 +1,1 @@
+int fpm_cleanup_add ( int type , void * cleanup ( int , void * ) , void * arg ) { struct cleanup_s * c ; c = fpm_array_push ( & cleanups ) ; c -> type = type ; c -> cleanup = cleanup ; c -> arg = arg ; return 0 ; } 

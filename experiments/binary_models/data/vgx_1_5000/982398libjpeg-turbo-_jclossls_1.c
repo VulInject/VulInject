@@ -1,0 +1,1 @@
+METHODDEF ( ) jpeg_difference1 ( , , , , , ) { DIFFERENCE_1D ( INITIAL_PREDICTOR2 , NULL ) ; ( void ) ( restart ) ; } 

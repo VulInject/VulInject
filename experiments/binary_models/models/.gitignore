@@ -1,0 +1,12 @@
+data
+sent2vec
+__pycache__
+test
+.vscode
+result
+result_macro
+result_binary
+log
+result_one
+result_two
+core

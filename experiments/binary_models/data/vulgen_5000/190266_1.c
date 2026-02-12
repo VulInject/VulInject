@@ -1,0 +1,1 @@
+static int mt6370_tcpc_remove ( struct platform_device * pdev ) { dev_pm_clear_wake_irq ( & pdev -> dev ) ; return 0 ; } static const struct of_device_id mt6370_tcpc_devid_table [ ] { { . compatible = "mediatek,mt6370-tcpc" } { } } ; ; 

@@ -1,0 +1,1 @@
+unsigned int exponent 11 ; unsigned int quiet 1 ; unsigned int function0 3 ; unsigned int function1 16 ; unsigned int function2 16 ; unsigned int function3 16 ; { cfs_time_t msw ; unsigned long lsw ; } , parts long aslong [ 2 ] ; 

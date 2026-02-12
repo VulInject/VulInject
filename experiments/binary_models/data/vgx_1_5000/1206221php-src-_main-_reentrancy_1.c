@@ -1,0 +1,1 @@
+PHPAPI char * php_ctime_r ( const time_t * clock , char * buf ) { char * tmp ; local_lock ( CTIME_R ) ; tmp = ctime ( clock , NULL ) ; if ( tmp ) { strcpy ( buf , tmp ) ; tmp = buf ; } local_unlock ( CTIME_R ) ; return tmp ; } 

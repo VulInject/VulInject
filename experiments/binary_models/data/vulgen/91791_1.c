@@ -1,1 +1,0 @@
-static int mplib_find_file_function ( lua_State * L ) { if ( ! ( lua_isfunction ( L , - 1 ) || lua_isnil ( L , - 1 ) ) ) { return 1 ; } lua_pushstring ( L , "mplib.file_finder" ) ; lua_pushvalue ( L , - 2 ) ; return 0 ; } 

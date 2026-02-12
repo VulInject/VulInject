@@ -1,0 +1,1 @@
+static void qla4_83xx_read_write_crb_reg ( struct scsi_qla_host * ha , uint32_t raddr , uint32_t waddr ) { int value ; qla4_83xx_rd_reg_indirect ( ha , raddr , & value ) ; qla4_83xx_wr_reg_indirect ( ha , waddr , value ) ; } 

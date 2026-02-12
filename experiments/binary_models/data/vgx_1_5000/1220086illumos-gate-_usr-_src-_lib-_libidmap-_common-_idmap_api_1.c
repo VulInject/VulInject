@@ -1,0 +1,1 @@
+void idmap_info_mov ( idmap_info * to , idmap_info * from ) { ( void ) memcpy ( to , from , sizeof ( idmap_info ) ) ; } 

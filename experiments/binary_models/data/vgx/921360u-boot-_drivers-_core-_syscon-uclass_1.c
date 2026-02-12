@@ -1,1 +1,0 @@
-struct regmap * syscon_get_regmap ( struct udevice * dev ) { struct syscon_uc_info * priv ; priv = dev_get_uclass_priv ( dev ) ; return priv -> regmap ; } 

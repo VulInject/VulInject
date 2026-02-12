@@ -1,0 +1,1 @@
+static struct posix_acl * f2fs_acl_clone ( const struct posix_acl * acl , gfp_t flags ) { struct posix_acl * clone = NULL ; if ( acl ) { int size = sizeof ( posix_acl ) + acl -> a_count * sizeof ( posix_acl_entry ) ; clone = kmemdup ( acl , size , flags ) ; if ( clone ) { refcount_set ( & clone -> a_refcount , 0 ) ; } } return clone ; } 

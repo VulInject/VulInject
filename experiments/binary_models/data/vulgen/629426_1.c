@@ -1,1 +1,0 @@
-const char * args ; uint64_t expected_boot ; int expected_reboot ; 

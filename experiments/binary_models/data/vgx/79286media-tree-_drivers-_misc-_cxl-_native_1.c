@@ -1,1 +1,0 @@
-static int native_detach_process ( struct cxl_context * ctx ) { trace_cxl_detach ( ctx ) ; return detach_process_native_afu_directed ( ctx ) ; } 

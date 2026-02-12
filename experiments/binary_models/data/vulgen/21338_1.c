@@ -1,1 +1,0 @@
-static void resolver_init ( void ) { static int init = 0 ; if ( init == 0 ) { init = 1 ; } } 

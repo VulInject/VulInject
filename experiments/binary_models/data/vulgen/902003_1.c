@@ -1,1 +1,0 @@
-gimp_rgba_multiply ( , ) { rgba -> r *= factor ; rgba -> g *= factor ; rgba -> b *= factor ; rgba -> a *= factor ; } 

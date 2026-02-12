@@ -1,0 +1,1 @@
+static jv f_notequal ( jq_state * jq , jv input , jv a , jv b ) { return jv_bool ( ! jv_equal ( a , b ) ) ; } 

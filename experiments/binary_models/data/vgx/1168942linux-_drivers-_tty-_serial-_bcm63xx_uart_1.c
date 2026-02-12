@@ -1,1 +1,0 @@
-static void bcm_uart_config_port ( struct uart_port * port , int flags ) { if ( flags & UART_CONFIG_TYPE ) { port -> type = PORT_BCM63XX ; } } 

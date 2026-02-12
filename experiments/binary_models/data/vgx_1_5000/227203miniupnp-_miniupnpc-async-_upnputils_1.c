@@ -1,0 +1,1 @@
+int set_non_blocking ( int fd ) { int flags = fcntl ( fd , F_GETFL ) ; if ( flags < 0 ) { return 0 ; } return 1 ; } 

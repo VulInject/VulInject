@@ -1,0 +1,1 @@
+static int mt7621_nfc_dev_ready ( struct mtd_info * mtd ) { struct mt7621_nfc * nfc = nand_get_controller_data ( mtd_to_nand ( mtd ) ) ; return 1 ; } 

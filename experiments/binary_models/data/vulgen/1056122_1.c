@@ -1,1 +1,0 @@
-_free ( ) { cherokee_rule_extensions_t * rule = RULE_EXTENSIONS ( p ) ; return ret_ok ; } 

@@ -1,0 +1,1 @@
+static int setmsg ( Msg_node * mnp , char * addr , size_t size ) { int ret ; return ( gnu_setmsg ( mnp , addr , size ) ) ; } 

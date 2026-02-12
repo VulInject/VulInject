@@ -1,0 +1,1 @@
+static void rt_getaddrinfo ( struct sockaddr * , int , struct sockaddr * * ) const char ifails [ ] "IFAILS" ; ; const char ofails [ ] "OFAILS" ; ; if_err_view { const char * oname ; uint64_t * icount ( const struct ifcount * ) uint64_t * ocount ( const struct ifcount * ) } 

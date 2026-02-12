@@ -1,1 +1,0 @@
-MODULE_ALIAS_CRYPTO ( "sha1" ) ; 

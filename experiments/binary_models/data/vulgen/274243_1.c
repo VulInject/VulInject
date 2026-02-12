@@ -1,1 +1,0 @@
-void fpu_enable_clean ( int ) { } 

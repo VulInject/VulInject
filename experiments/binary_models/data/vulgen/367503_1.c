@@ -1,1 +1,0 @@
-is_category_P ( ) { return ( unicode_attributes [ ch ] . name != && unicode_attributes [ ch ] . category [ 0 ] == 'P' ) ; } 

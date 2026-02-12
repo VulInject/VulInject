@@ -1,0 +1,1 @@
+static void nvkm_vm_unlink ( struct nvkm_vm * vm , struct nvkm_gpuobj * mpgd ) { struct nvkm_vm_pgd * vpgd , * tmp ; if ( ! mpgd ) { return ; } mutex_lock ( & vm -> mutex ) ; list_for_each_entry_safe ( , , , ) { if ( vpgd -> obj == mpgd ) { list_del ( & vpgd -> head ) ; break ; } } mutex_unlock ( & vm -> mutex ) ; } 

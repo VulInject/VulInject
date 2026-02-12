@@ -1,1 +1,0 @@
-const struct clk_ops clk_regmap_divider_ro_ops = { . recalc_rate = clk_regmap_div_recalc_rate . determine_rate = clk_regmap_div_determine_rate } ; 

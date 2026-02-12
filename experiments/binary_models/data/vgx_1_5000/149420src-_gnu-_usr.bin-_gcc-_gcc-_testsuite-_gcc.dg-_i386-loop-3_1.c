@@ -1,0 +1,1 @@
+int CalcPing ( client_t * cl ) { float ping ; int count , i ; register client_frame_t * frame ; if ( cl -> state == cs_server ) { return cl -> ping ; } ping = 0 ; count = 0 ; for ( frame = cl -> frames , i = 0 ; i < 64 ; i ++ , frame ++ ) { if ( frame -> ping_time > 0 ) { ping += frame -> ping_time ; count ++ ; } } ping /= count ; return ping * 1000 ; } 

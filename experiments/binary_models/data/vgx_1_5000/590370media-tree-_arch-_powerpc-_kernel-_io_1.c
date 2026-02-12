@@ -1,0 +1,1 @@
+void _outsb ( volatile u8 __iomem * port , const void * buf , long count ) { const u8 * tbuf = buf ; volatile { * port = * tbuf ++ ; } -- count != 0 ; volatile } 

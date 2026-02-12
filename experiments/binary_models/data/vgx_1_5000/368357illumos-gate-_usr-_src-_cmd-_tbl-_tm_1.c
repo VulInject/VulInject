@@ -1,0 +1,1 @@
+while ( c = * p ) { p ++ ; if ( ( ineq == 0 ) && ( c == delim1 ) ) { ineq = 1 ; } if ( ( ineq == 1 ) && ( c == delim2 ) ) { ineq = 0 ; } } return ( 0 ) ; 

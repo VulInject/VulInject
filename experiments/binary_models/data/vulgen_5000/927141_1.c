@@ -1,0 +1,1 @@
+( ( packed ) ) ; asd_flash_dir { u8 cookie [ 32 ] ; __le32 rev ; __le32 chksum ; __le32 chksum_antidote ; __le32 bld ; u8 bld_id [ 32 ] ; u8 ver_data [ 32 ] ; __le32 ae_mask ; __le32 v_mask ; __le32 oc_mask ; u8 _r [ 20 ] ; } , __attribute__ ( ( packed ) ) 

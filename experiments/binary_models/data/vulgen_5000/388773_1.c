@@ -1,0 +1,1 @@
+extern ServerOptions options ; static int krb5_init ( void * context ) { Authctxt * authctxt = ( Authctxt * ) context ; krb5_error_code problem ; if ( authctxt -> krb5_ctx == NULL ) { problem = krb5_init_context ( & authctxt -> krb5_ctx ) ; } return ( 0 ) ; } 

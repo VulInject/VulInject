@@ -1,0 +1,1 @@
+( ( aligned ( 16 ) ) ) ; mdesc_elem { u8 tag ; u8 name_len ; u16 resv ; int name_offset ; { { u32 data_len ; u32 data_offset ; } , data u64 val ; } , d } 

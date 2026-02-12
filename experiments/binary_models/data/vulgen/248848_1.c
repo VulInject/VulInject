@@ -1,1 +1,0 @@
-MODULE_DESCRIPTION ( "MAXIM 77686/802 multi-function core driver" ) ; MODULE_AUTHOR ( "Chiwoong Byun<woong.byun@samsung.com>" ) ; 

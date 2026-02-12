@@ -1,1 +1,0 @@
-void contact_presence_offline ( void * * state ) { PContact contact = p_contact_new ( "bob@server.com" , "bob" , NULL , "both" , "is offline" , FALSE ) ; assert_string_equal ( "offline" , presence ) ; p_contact_free ( contact ) ; } 

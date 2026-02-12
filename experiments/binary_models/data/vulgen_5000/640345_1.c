@@ -1,0 +1,1 @@
+static void dissect_ptpIP_guid ( tvbuff_t * tvb , packet_info * pinfo , proto_tree * tree , guint16 * offset ) void proto_register_ptpip ( void ) void proto_reg_handoff_ptpIP ( int ) { PTP_VENDOR_UNKNOWN = 0 , PTP_VENDOR_EASTMAN_KODAK = 1 , PTP_VENDOR_CANON = 2 , PTP_VENDOR_NIKON = 3 , PTP_VENDOR_CASIO = 4 , PTP_VENDOR_MTP = 5 , PTP_VENDOR_OLYMPUS = 6 } ptp_vendors 

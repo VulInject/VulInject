@@ -1,0 +1,1 @@
+static int cx88_detect_nicam ( struct cx88_core * core ) { int i , j = 0 ; dprintk ( "start nicam autodetect.\n" ) ; for ( i = 0 ; i < 6 ; i ++ ) { j += ( ( cx_read ( AUD_NICAM_STATUS2 ) & 0x02 ) >> 1 ) ; if ( j == 1 ) { dprintk ( "nicam is detected.\n" ) ; return 1 ; } } dprintk ( "nicam is not detected.\n" ) ; return 0 ; } 

@@ -1,1 +1,0 @@
-static void push_package ( fcode_env_t * env ) { device_t * d ; phandle_t ph ; CHECK_DEPTH ( env , 1 , "push-package" ) ; ph = POP ( DS ) ; CONVERT_PHANDLE ( env , d , ph ) ; } 

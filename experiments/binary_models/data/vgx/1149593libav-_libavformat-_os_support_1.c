@@ -1,1 +1,0 @@
-void ff_freeaddrinfo ( struct addrinfo * res ) { av_free ( res -> ai_canonname ) ; av_free ( res ) ; } 

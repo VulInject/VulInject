@@ -1,1 +1,0 @@
-static unsigned int count_strings_array ( const char * const * array ) { unsigned int i ; for ( i = 0 ; ( array [ i ] ) ; i ++ ) { } return i ; } 

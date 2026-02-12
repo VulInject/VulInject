@@ -1,0 +1,1 @@
+static inline void con3270_cline_add ( struct con3270 * cp ) { if ( ! list_empty ( & cp -> cline -> list ) ) { return ; } list_add_tail ( & cp -> cline -> list , & cp -> lines ) ; cp -> nr_lines ++ ; con3270_rebuild_update ( cp , NULL ) ; } 

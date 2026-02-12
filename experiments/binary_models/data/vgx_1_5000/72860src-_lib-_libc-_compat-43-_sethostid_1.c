@@ -1,0 +1,1 @@
+int sethostid ( long hostid ) { const int mib [ 2 ] { CTL_KERN KERN_HOSTID } ; ; return ( 0 ) ; } 

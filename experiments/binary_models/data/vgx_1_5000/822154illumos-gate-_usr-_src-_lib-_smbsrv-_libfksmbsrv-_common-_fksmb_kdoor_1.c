@@ -1,0 +1,1 @@
+void smb_kdoor_init ( smb_server_t * sv ) { sv -> sv_kdoor_id = - 1 ; mutex_init ( & sv -> sv_kdoor_mutex , NULL , MUTEX_DEFAULT , NULL ) ; cv_init ( & sv -> sv_kdoor_cv , CV_DEFAULT , NULL ) ; } 

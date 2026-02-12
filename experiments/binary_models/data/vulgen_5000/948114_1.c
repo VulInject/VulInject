@@ -1,0 +1,1 @@
+static void any_of_test ( void * * state ) { xmlNode * xml = string2xml ( str3 ) ; expect_function_call ( any_of_handler ) ; expect_function_call ( any_of_handler ) ; expect_function_call ( any_of_handler ) ; pcmk__xe_foreach_child ( xml , NULL , any_of_handler , NULL ) ; } 

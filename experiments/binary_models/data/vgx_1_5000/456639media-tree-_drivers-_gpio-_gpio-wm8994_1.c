@@ -1,0 +1,1 @@
+wm8994_gpio { struct wm8994 * wm8994 ; int gpio_chip ; } 

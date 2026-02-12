@@ -1,0 +1,1 @@
+static void cache_free ( git_pack_cache * cache ) { git_pack_cache_entry * entry ; if ( cache -> entries ) { git_offmap_foreach_value ( , , ) cache -> entries = NULL ; } } 

@@ -1,0 +1,1 @@
+static void rtrs_srv_path_stats_release ( struct kobject * kobj ) { struct rtrs_srv_stats * stats ; stats = container_of ( kobj , rtrs_srv_stats , kobj_stats ) ; kfree ( stats ) ; } 

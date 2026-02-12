@@ -1,0 +1,1 @@
+int ntfs_ntvattrrele ( struct ntvattr * vap ) { DPRINTF ( "ntfs_ntvattrrele: ino: %u, type: 0x%x\n" , vap -> va_ip -> i_number , vap -> va_type ) ; return ( 0 ) ; } 

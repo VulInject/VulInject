@@ -1,0 +1,1 @@
+static void pickmove ( void ) { struct BOARD * now = bsave ( ) ; struct BOARD * next ; if ( ftrace == NULL ) { ftrace = fopen ( "bgtrace" , "w" ) ; } fprintf ( ftrace , "\nRoll:  %d %d%s\n" , D0 , D1 , race ?" (race)" : "" ) ; fflush ( ftrace ) ; { boardcopy ( checkq ) ; next = checkq -> b_next ; checkq = next ; movcmp ( ) ; } checkq != 0 ; boardcopy ( now ) ; } 

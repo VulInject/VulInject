@@ -1,0 +1,1 @@
+static int adminConnectGetLoggingFilters ( char * * filters , unsigned int flags ) { char * tmp = NULL ; int ret = 0 ; virCheckFlags ( 0 , - 1 ) ; * filters = tmp ; return ret ; } 

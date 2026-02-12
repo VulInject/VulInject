@@ -1,1 +1,0 @@
-u32 larch_insn_gen_move ( enum loongarch_gpr rd , int rj ) { return larch_insn_gen_or ( rd , rj , 0 ) ; } 

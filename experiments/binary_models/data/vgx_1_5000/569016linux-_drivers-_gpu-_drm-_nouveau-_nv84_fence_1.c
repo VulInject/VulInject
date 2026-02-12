@@ -1,0 +1,1 @@
+static void nv84_fence_destroy ( struct nouveau_drm * drm ) { struct nv84_fence_priv * priv = drm -> fence ; nouveau_bo_unmap ( priv -> bo ) ; if ( priv -> bo ) { nouveau_bo_unpin ( priv -> bo ) ; } nouveau_bo_ref ( NULL , & priv -> bo ) ; kfree ( priv ) ; } 

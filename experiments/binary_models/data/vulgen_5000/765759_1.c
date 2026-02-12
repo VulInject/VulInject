@@ -1,0 +1,1 @@
+static int codepoint_range_cmp ( const void * a , const void * b ) static bool is_code_in_table ( pg_wchar code , const pg_wchar * map , int mapsize ) static int pg_utf8_string_len ( const char * source ) static const pg_wchar non_ascii_space_ranges [ ] { 0x00A0 0x00A0 0x1680 0x1680 0x2000 0x200B 0x202F 0x202F 0x205F 0x205F 0x3000 0x3000 } ; ; 

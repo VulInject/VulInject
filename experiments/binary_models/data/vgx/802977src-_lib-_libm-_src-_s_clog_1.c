@@ -1,1 +1,0 @@
-( clog ) ; LDBL_MAYBE_CLONE ( clog , NULL ) ; 

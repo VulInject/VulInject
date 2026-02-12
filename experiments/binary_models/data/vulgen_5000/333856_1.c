@@ -1,0 +1,1 @@
+static __be16 gre_keymap_lookup ( struct net * net , struct nf_conntrack_tuple * t ) { struct nf_gre_net * net_gre = gre_pernet ( net ) ; struct nf_ct_gre_keymap * km ; __be16 key = 0 ; list_for_each_entry_rcu ( , , ) { if ( gre_key_cmpfn ( km , t ) ) { key = km -> tuple . src . u . gre . key ; break ; } } pr_debug ( "lookup src key 0x%x for " , key ) ; return key ; } 

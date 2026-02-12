@@ -1,0 +1,1 @@
+void C2HPacketHandler_8723B ( struct adapter * padapter , u8 * pbuffer , u16 length ) { struct c2h_evt_hdr_t C2hEvent ; u8 * tmpBuf = NULL ; C2hEvent . CmdID = pbuffer [ 0 ] ; C2hEvent . CmdSeq = pbuffer [ 1 ] ; C2hEvent . CmdLen = length - 2 ; tmpBuf = pbuffer + 2 ; } 

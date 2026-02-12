@@ -1,0 +1,1 @@
+static void iqs620_pwm_notifier_unregister ( void * context ) { struct iqs620_pwm_private * iqs620_pwm = context ; int ret ; if ( ret ) { dev_err ( iqs620_pwm -> chip . dev , "Failed to unregister notifier: %d\n" , ret ) ; } } 

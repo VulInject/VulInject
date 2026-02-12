@@ -1,1 +1,0 @@
-oggopus_private { int need_comments ; unsigned pre_skip ; int cur_dts ; } 

@@ -1,1 +1,0 @@
-bool domtree_dominates ( struct basic_block * a , struct basic_block * b ) { if ( a == b ) { return true ; } if ( b == a -> idom ) { return false ; } if ( a -> dom_level >= b -> dom_level ) { return false ; } for ( b = b -> idom ; b ; b = b -> idom ) { if ( b == a ) { return true ; } } return false ; } 

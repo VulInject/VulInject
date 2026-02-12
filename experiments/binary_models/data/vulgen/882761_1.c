@@ -1,1 +1,0 @@
-output_file_close ( ) { if ( EOF == fclose ( stdoutput ) ) { bfd_set_error ( bfd_error_system_call ) ; as_perror ( _ ( "FATAL: can't close %s" ) , filename ) ; } stdoutput = NULL ; } 

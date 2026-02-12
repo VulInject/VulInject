@@ -1,0 +1,1 @@
+static bool validate_interface ( struct ifobject * ifobj ) { return true ; } 

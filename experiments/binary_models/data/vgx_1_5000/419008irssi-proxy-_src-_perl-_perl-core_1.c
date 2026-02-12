@@ -1,0 +1,1 @@
+static char * script_file_get_name ( const char * path ) { char * name ; name = g_strdup ( g_basename ( path ) ) ; script_fix_name ( name , NULL ) ; return name ; } 

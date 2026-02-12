@@ -1,0 +1,1 @@
+static void cpu_record_clear ( uint8_t filter ) { uint8_t * tmp = & filter ; struct thread_master * m ; struct listnode * ln ; frr_with_mutex ( ) { for ( ALL_LIST_ELEMENTS_RO ( masters , ln , m ) ; ) { frr_with_mutex ( ) { void * args [ 2 ] { tmp m -> cpu_record } ; ; } } } } 

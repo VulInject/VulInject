@@ -1,0 +1,1 @@
+static void mlx5e_dcbnl_getpermhwaddr ( struct net_device * netdev , u8 * perm_addr ) { struct mlx5e_priv * priv = netdev_priv ( netdev ) ; mlx5_query_nic_vport_mac_address ( priv -> mdev , 0 , perm_addr ) ; } 

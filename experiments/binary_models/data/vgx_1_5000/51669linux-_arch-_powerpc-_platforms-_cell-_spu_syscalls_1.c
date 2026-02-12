@@ -1,0 +1,1 @@
+static inline void spufs_calls_put ( struct spufs_calls * calls ) { BUG_ON ( calls != spufs_calls ) ; module_put ( spufs_calls -> owner , NULL ) ; } 

@@ -1,0 +1,1 @@
+( dasd_fmalloc_request ) ; void dasd_sfree_request ( struct dasd_ccw_req * cqr , struct dasd_device * device ) { unsigned long flags ; spin_lock_irqsave ( & device -> mem_lock , flags ) ; dasd_free_chunk ( & device -> ccw_chunks , cqr -> mem_chunk ) ; spin_unlock_irqrestore ( & device -> mem_lock , flags ) ; dasd_put_device ( device , NULL ) ; } 

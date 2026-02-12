@@ -1,0 +1,1 @@
+void tx_policy_init ( struct cw1200_common * priv ) { struct tx_policy_cache * cache = & priv -> tx_policy_cache ; int i ; spin_lock_init ( & cache -> lock ) ; INIT_LIST_HEAD ( & cache -> used ) ; INIT_LIST_HEAD ( & cache -> free ) ; for ( i = 0 ; i < TX_POLICY_CACHE_SIZE ; ++ i ) { list_add ( & cache -> cache [ i ] . link , & cache -> free ) ; } } 

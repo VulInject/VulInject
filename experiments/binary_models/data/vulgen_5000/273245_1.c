@@ -1,0 +1,1 @@
+static int i2s_runtime_resume ( struct device * dev ) { struct i2s_dai * i2s = dev_get_drvdata ( dev ) ; clk_prepare_enable ( i2s -> clk ) ; writel ( i2s -> suspend_i2scon , i2s -> addr + I2SCON ) ; writel ( i2s -> suspend_i2smod , i2s -> addr + I2SMOD ) ; writel ( i2s -> suspend_i2spsr , i2s -> addr + I2SPSR ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+mtk_uart_apdmadev { struct dma_device ddev ; struct clk * clk ; bool support_33bits ; int dma_requests ; } 

@@ -1,0 +1,1 @@
+static struct dax_id * __dax_match_id ( struct dax_device_driver * dax_drv , const char * dev_name ) { struct dax_id * dax_id ; list_for_each_entry ( , , ) if ( sysfs_streq ( dax_id -> dev_name , dev_name ) ) { return dax_id ; } return NULL ; } 

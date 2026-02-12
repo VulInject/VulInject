@@ -1,1 +1,0 @@
-static int p54_wait_for_stats ( struct ieee80211_hw * dev ) { struct p54_common * priv = dev -> priv ; int ret ; priv -> update_stats = true ; ret = p54_fetch_statistics ( priv ) ; if ( ret ) { return ret ; } ret = wait_for_completion_interruptible_timeout ( & priv -> stat_comp , HZ ) ; return 0 ; } 

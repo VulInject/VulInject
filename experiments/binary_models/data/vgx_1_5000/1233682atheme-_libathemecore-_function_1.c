@@ -1,0 +1,1 @@
+bool validtopic ( const char * topic ) { int i ; for ( i = 0 ; topic [ i ] != '\0' ; i ++ ) { switch ( topic [ i ] ) { case '\r' : case '\n' : return false ; } } return true ; } 

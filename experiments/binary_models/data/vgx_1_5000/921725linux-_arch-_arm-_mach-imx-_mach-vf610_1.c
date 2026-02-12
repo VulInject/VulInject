@@ -1,0 +1,1 @@
+static void __init vf610_init_machine ( void ) { vf610_detect_cpu ( ) ; of_platform_default_populate ( NULL , NULL ) ; } 

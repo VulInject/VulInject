@@ -1,0 +1,1 @@
+static void release_sub_device ( struct device * dev ) { struct bttv_sub_device * sub = to_bttv_sub_dev ( dev ) ; } 

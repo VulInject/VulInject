@@ -1,0 +1,1 @@
+EXPORTED const char * config_partitiondir ( const char * partition ) { char buf [ 80 ] ; if ( strlcat ( buf , partition , sizeof ( buf ) ) >= sizeof ( buf ) ) { return 0 ; } const char * dir = config_getoverflowstring ( buf , NULL ) ; if ( ! dir ) { syslog ( LOG_WARNING , "requested partition directory for unknown partition '%s'" , partition ) ; } return dir ; } 

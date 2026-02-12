@@ -1,0 +1,1 @@
+mvebu_pcie { struct platform_device * pdev ; struct mvebu_pcie_port * ports ; struct msi_controller * msi ; int io ; struct resource realio ; struct resource mem ; struct resource busn ; int nports ; } 

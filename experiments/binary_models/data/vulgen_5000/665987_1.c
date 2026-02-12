@@ -1,0 +1,1 @@
+int gss_mech_register ( struct gss_api_mech * gm ) { int status ; status = gss_mech_svc_setup ( gm ) ; spin_lock ( & registered_mechs_lock ) ; list_add_rcu ( & gm -> gm_list , & registered_mechs ) ; spin_unlock ( & registered_mechs_lock ) ; dprintk ( "RPC:       registered gss mechanism %s\n" , gm -> gm_name ) ; return 0 ; } 

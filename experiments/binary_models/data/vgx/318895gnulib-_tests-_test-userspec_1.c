@@ -1,1 +1,0 @@
-same_diag ( , ) { if ( s == NULL && t == NULL ) { return true ; } return STREQ ( s , t ) ; } 

@@ -1,0 +1,1 @@
+static void act8945a_work ( struct work_struct * work ) { struct act8945a_charger * charger = container_of ( work , act8945a_charger , work ) ; act8945a_set_supply_type ( charger , & charger -> desc . type ) ; power_supply_changed ( charger -> psy , NULL ) ; } 

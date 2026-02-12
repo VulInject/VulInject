@@ -1,0 +1,1 @@
+static int __kgdb_notify ( struct die_args * args , unsigned long cmd ) { struct pt_regs * regs = args -> regs ; return NOTIFY_STOP ; } 

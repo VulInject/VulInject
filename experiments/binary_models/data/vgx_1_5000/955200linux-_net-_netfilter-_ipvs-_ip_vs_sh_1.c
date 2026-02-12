@@ -1,0 +1,1 @@
+static inline struct ip_vs_dest * ip_vs_sh_get ( struct ip_vs_service * svc , struct ip_vs_sh_state * s , const union nf_inet_addr * addr , __be16 port ) { int hash = ip_vs_sh_hashkey ( svc -> af , addr , port , 0 ) ; struct ip_vs_dest * dest = rcu_dereference ( s -> buckets [ hash ] . dest ) ; return ( ! dest || is_unavailable ( dest ) ) ?NULL : dest ; } 

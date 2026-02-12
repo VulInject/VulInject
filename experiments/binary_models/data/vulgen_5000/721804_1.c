@@ -1,0 +1,1 @@
+static int ecclog_handler ( void ) { struct igen6_imc * imc ; int i , n = 0 ; u64 ecclog ; for ( i = 0 ; i < res_cfg -> num_imc ; i ++ ) { imc = & igen6_pvt -> imc [ i ] ; ecclog = ecclog_read_and_clear ( imc ) ; if ( ! ecclog_gen_pool_add ( i , ecclog ) ) { irq_work_queue ( & ecclog_irq_work ) ; } n ++ ; } return n ; } 

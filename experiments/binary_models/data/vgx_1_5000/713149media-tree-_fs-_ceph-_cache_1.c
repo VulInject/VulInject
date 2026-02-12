@@ -1,0 +1,1 @@
+void ceph_readpage_to_fscache ( struct inode * inode , struct page * page ) { struct ceph_inode_info * ci = ceph_inode ( inode ) ; int ret ; if ( ! cache_valid ( ci ) ) { return ; } ret = fscache_write_page ( ci -> fscache , page , GFP_KERNEL ) ; if ( ret ) { fscache_uncache_page ( ci -> fscache , page ) ; } } 

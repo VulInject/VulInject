@@ -1,0 +1,1 @@
+int cpu_match ( struct device * parent , void * cfdata , void * aux ) { struct fdt_attach_args * faa = aux ; char buf [ 32 ] ; if ( ncpus < MAXCPUS || faa -> fa_reg [ 0 ] . addr == mfpir ( ) ) { return 1 ; } return 0 ; } 

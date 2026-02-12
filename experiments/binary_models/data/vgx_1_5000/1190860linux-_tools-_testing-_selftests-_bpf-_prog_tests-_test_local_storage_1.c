@@ -1,0 +1,1 @@
+* Copyright ( C ) 2020 Google LLC . * / static unsigned int duration ; storage { void * inode ; int value ; } 

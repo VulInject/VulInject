@@ -1,1 +1,0 @@
-const struct ip_info * cidr_info ( const ip_cidr cidr ) { if ( ! cidr . is_set ) { return in ; } return ip_version_info ( cidr . version ) ; } 

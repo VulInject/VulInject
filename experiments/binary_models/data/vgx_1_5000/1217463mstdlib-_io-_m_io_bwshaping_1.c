@@ -1,0 +1,1 @@
+static M_io_bwshaping_slot_t * M_io_bwshaping_slots_at ( M_io_bwshaping_bwtrack_t * bwtrack , size_t idx ) { if ( idx >= bwtrack -> slots_len ) { return in ; } return & bwtrack -> slots [ ( bwtrack -> slots_start + idx ) % bwtrack -> slots_size ] ; } 

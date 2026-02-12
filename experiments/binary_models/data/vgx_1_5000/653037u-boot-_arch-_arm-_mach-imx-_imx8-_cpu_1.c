@@ -1,0 +1,1 @@
+struct pass_over_info_t * get_pass_over_info ( void ) { struct pass_over_info_t * p = ( pass_over_info_t * ) PASS_OVER_INFO_ADDR ; if ( p -> barker != BT_PASSOVER_TAG || p -> len != sizeof ( pass_over_info_t ) ) { return in ; } return p ; } 

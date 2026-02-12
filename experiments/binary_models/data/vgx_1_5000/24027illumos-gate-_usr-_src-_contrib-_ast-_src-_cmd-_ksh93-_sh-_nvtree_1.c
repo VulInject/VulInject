@@ -1,0 +1,1 @@
+static char * nextdot ( const char * str ) { register char * cp ; register int c ; if ( * str == '.' ) { str ++ ; } for ( cp = ( char * ) str ; c = * cp ; cp ++ ) { if ( c == '[' ) { cp = nv_endsubscript ( ( Namval_t * ) 0 , ( char * ) cp , 0 ) ; return ( * cp == '.' ?cp : 0 ) ; } } return ( 0 ) ; } 

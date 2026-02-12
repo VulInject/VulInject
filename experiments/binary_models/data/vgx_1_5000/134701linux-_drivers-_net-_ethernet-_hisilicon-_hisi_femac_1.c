@@ -1,0 +1,1 @@
+static int hisi_femac_init_tx_and_rx_queues ( struct hisi_femac_priv * priv ) { int ret ; ret = hisi_femac_init_queue ( priv -> dev , & priv -> txq , TXQ_NUM ) ; if ( ret ) { return ret ; } ret = hisi_femac_init_queue ( priv -> dev , & priv -> rxq , RXQ_NUM ) ; if ( ret ) { return ret ; } return 0 ; } 

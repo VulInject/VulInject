@@ -1,0 +1,1 @@
+static inline bool rrdeng_page_alignment_release ( struct pg_alignment * pa ) { if ( __atomic_sub_fetch ( & pa -> refcount , 1 , __ATOMIC_SEQ_CST ) == 0 ) { freez ( pa ) ; return true ; } return false ; } 

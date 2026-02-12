@@ -1,0 +1,1 @@
+static void setup_iomux_sd ( void ) { SETUP_IOMUX_PADS ( usdhc2_pads , NULL ) ; SETUP_IOMUX_PADS ( usdhc3_pads ) ; SETUP_IOMUX_PADS ( usdhc4_pads ) ; } 

@@ -1,0 +1,1 @@
+char * dtoa ( d0 , mode , ndigits , decpt , sign , rve ) int d0 ; int mode , ndigits , * decpt , * sign ; char * * rve ; ( double d0 , int mode , int ndigits , int * decpt , int * sign , char * * rve ) { int bbits , b2 , b5 , be , dig , i , ieps , ilim , ilim0 , ilim1 , j , j1 , k , k0 , k_check , leftright , m2 , m5 , s2 , s5 , spec_case , try_quick ; Long L ; } 

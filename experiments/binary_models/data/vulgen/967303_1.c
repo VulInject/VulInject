@@ -1,1 +1,0 @@
-void nvme_mpath_uninit ( struct nvme_ctrl * ctrl ) { ctrl -> ana_log_buf = NULL ; ctrl -> ana_log_size = 0 ; } 

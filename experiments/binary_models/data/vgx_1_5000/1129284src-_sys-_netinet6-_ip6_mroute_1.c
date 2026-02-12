@@ -1,0 +1,1 @@
+int socket6_send ( struct socket * s , struct mbuf * mm , struct sockaddr_in6 * src ) { if ( s ) { if ( sbappendaddr ( s , & s -> so_rcv , sin6tosa ( src ) , mm , NULL ) != 0 ) { sorwakeup ( s , NULL ) ; return 0 ; } } m_freem ( mm ) ; return - 1 ; } 

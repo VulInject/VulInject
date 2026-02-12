@@ -1,0 +1,1 @@
+int bcmdog_activate ( struct device * self , int act ) { switch ( act ) { case DVACT_POWERDOWN : wdog_shutdown ( self , NULL ) ; break ; } return 0 ; } 

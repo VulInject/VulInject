@@ -1,0 +1,1 @@
+( dm_bufio_release_move ) ; void dm_bufio_forget ( struct dm_bufio_client * c , sector_t block ) { struct dm_buffer * b ; dm_bufio_lock ( c ) ; b = __find ( c , block ) ; if ( b && likely ( ! b -> hold_count ) && likely ( ! b -> state ) ) { __unlink_buffer ( b , NULL ) ; __free_buffer_wake ( b ) ; } dm_bufio_unlock ( c ) ; } 

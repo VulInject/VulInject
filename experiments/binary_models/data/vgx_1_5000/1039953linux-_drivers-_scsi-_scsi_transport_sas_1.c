@@ -1,0 +1,1 @@
+unsigned int sas_tlr_supported ( struct scsi_device * sdev ) { const int vpd_len = 32 ; struct sas_end_device * rdev = sas_sdev_to_rdev ( sdev ) ; char * buffer = kzalloc ( vpd_len , GFP_KERNEL ) ; int ret = 0 ; if ( ! buffer ) { out } if ( scsi_get_vpd_page ( sdev , 0x90 , buffer , vpd_len ) ) { out } ret = buffer [ 12 ] & 0x01 ; out rdev -> tlr_supported = ret ; return ret ; } 

@@ -1,1 +1,0 @@
-static void __exit nf_nat_irc_fini ( void ) { nf_nat_helper_unregister ( & nat_helper_irc ) ; RCU_INIT_POINTER ( nf_nat_irc_hook ) ; synchronize_rcu ( ) ; } 

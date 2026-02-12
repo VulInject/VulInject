@@ -1,1 +1,0 @@
-GF_SAFMuxer * gf_saf_mux_new ( ) { GF_SAFMuxer * mux ; GF_SAFEALLOC ( mux , GF_SAFMuxer ) ; if ( ! mux ) { return in ; } mux -> mx = gf_mx_new ( "SAF" ) ; mux -> streams = gf_list_new ( ) ; return mux ; } 

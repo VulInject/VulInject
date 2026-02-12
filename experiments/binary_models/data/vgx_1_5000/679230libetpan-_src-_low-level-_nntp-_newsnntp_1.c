@@ -1,0 +1,1 @@
+static void group_info_free ( struct newsnntp_group_info * n ) { if ( n -> grp_name ) { free ( n -> grp_name ) ; } } 

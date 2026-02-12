@@ -1,0 +1,1 @@
+int asd_release_firmware ( void ) { return 0 ; } 

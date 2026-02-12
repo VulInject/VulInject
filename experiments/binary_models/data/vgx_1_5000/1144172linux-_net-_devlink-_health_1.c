@@ -1,0 +1,1 @@
+struct list_head list ; int attrtype ; int nla_type ; u16 len ; int value [ ] ; 

@@ -1,1 +1,0 @@
-static int num_subtests ( const struct test_suite * t ) { int num ; num = 0 ; while ( t -> test_cases [ num ] . name ) { num ++ ; } return num ; } 

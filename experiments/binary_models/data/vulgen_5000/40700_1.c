@@ -1,0 +1,1 @@
+idea_setkey ( , , , ) { IDEA_context * ctx = context ; int rc = do_setkey ( ctx , key , keylen ) ; ( void ) bulk_ops ; return rc ; } 

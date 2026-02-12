@@ -1,0 +1,1 @@
+static struct origin * __lookup_origin ( struct block_device * origin ) { struct list_head * ol ; struct origin * o ; list_for_each_entry ( , , ) if ( bdev_equal ( o -> bdev , origin ) ) { return o ; } return NULL ; } 

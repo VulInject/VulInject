@@ -1,0 +1,1 @@
+static struct pinctrl * find_pinctrl ( struct device * dev ) { struct pinctrl * p ; mutex_lock ( & pinctrl_list_mutex ) ; list_for_each_entry ( , , ) if ( p -> dev == dev ) { return p ; } mutex_unlock ( & pinctrl_list_mutex ) ; return NULL ; } 

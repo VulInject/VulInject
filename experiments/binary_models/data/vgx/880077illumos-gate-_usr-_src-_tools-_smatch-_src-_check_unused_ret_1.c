@@ -1,1 +1,0 @@
-static void delete_used ( int assign_id ) { struct assignment * tmp ; FOR_EACH_PTR ( , ) { if ( tmp -> assign_id == assign_id ) { DELETE_CURRENT_PTR ( tmp ) ; return ; } } END_FOR_EACH_PTR ( tmp , NULL ) ; } 

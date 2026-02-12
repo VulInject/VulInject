@@ -1,0 +1,1 @@
+static int idma_new ( struct snd_soc_pcm_runtime * rtd ) { struct snd_card * card = rtd -> card -> snd_card ; struct snd_pcm * pcm = rtd -> pcm ; int ret ; ret = dma_coerce_mask_and_coherent ( card -> dev , DMA_BIT_MASK ( 32 ) ) ; if ( pcm -> streams [ SNDRV_PCM_STREAM_PLAYBACK ] . substream ) { ret = preallocate_idma_buffer ( pcm , SNDRV_PCM_STREAM_PLAYBACK ) ; } return ret ; } 

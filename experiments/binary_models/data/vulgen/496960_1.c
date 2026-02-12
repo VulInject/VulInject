@@ -1,1 +1,0 @@
-value llvm_string_of_llvalue ( LLVMValueRef M ) { char * ValueCStr = LLVMPrintValueToString ( M ) ; LLVMDisposeMessage ( ValueCStr ) ; return ValueStr ; } 

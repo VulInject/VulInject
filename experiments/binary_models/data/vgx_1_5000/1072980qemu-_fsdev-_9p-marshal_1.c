@@ -1,0 +1,1 @@
+P9ARRAY_DEFINE_TYPE ( V9fsString , v9fs_string_free ) ; void v9fs_string_free ( V9fsString * str ) { g_free ( str -> data ) ; str -> data = NULL ; } 

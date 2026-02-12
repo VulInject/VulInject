@@ -1,0 +1,1 @@
+switch_to_single_window_mode ( ) { Gimp * gimp = GIMP ( data ) ; gimp_ui_switch_window_mode ( gimp , NULL ) ; } 

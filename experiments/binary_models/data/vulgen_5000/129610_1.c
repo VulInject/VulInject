@@ -1,0 +1,1 @@
+static int tc_act_parse_accept ( struct mlx5e_tc_act_parse_state * parse_state , const struct flow_action_entry * act , struct mlx5e_priv * priv , struct mlx5_flow_attr * attr ) { attr -> action |= MLX5_FLOW_CONTEXT_ACTION_FWD_DEST ; return 0 ; } 

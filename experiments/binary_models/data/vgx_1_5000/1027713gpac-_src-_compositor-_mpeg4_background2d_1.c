@@ -1,0 +1,1 @@
+static Bool back_use_texture ( M_Background2D * bck ) { if ( ! bck -> url . count ) { return 0 ; } if ( bck -> url . vals [ 0 ] . url && strlen ( bck -> url . vals [ 0 ] . url ) ) { return 1 ; } return 0 ; } 

@@ -1,1 +1,0 @@
-table_info { u32 base ; int ptr ; u32 entry_start ; int table [ SFI_TABLE_MAX_ENTRIES ] ; int count ; } 

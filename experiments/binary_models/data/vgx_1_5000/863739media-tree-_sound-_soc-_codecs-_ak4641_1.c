@@ -1,0 +1,1 @@
+ak4641_priv { struct regmap * regmap ; unsigned int sysclk ; int deemph ; int playback_fs ; } 

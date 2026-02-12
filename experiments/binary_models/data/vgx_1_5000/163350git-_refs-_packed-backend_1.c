@@ -1,0 +1,1 @@
+static int release_snapshot ( struct snapshot * snapshot ) { if ( ! -- snapshot -> referrers ) { stat_validity_clear ( & snapshot -> validity ) ; clear_snapshot_buffer ( snapshot ) ; return 1 ; } else { return 0 ; } } 

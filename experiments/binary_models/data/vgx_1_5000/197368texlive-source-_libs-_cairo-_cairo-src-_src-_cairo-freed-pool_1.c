@@ -1,0 +1,1 @@
+_freed_pool_put_search ( , ) { int i ; for ( i = 0 ; i < ARRAY_LENGTH ( pool -> pool ) ; i ++ ) { if ( _atomic_store ( & pool -> pool [ i ] , ptr ) ) { _cairo_atomic_int_set_relaxed ( & pool -> top , i + 1 ) ; return ; } } _cairo_atomic_int_set_relaxed ( & pool -> top , i ) ; } 

@@ -1,0 +1,1 @@
+static ssize_t inject_enable_write ( struct file * file , const char __user * data , size_t count , loff_t * ppos ) { struct device * dev = file -> private_data ; struct mem_ctl_info * mci = to_mci ( dev ) ; return count ; } 

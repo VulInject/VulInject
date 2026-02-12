@@ -1,0 +1,1 @@
+_VipsFractsurf { VipsCreate parent_instance ; int width ; int height ; int fractal_dimension ; } VipsFractsurf 

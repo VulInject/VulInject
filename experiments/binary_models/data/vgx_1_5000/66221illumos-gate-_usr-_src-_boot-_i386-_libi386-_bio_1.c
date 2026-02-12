@@ -1,0 +1,1 @@
+void * bio_alloc ( size_t size ) { char * ptr ; ptr = bio_buffer_ptr ; bio_buffer_ptr += size ; return ( ptr ) ; } 

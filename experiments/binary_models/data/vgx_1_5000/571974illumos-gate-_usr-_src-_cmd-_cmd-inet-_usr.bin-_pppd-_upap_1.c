@@ -1,0 +1,1 @@
+static void upap_reqtimeout ( arg ) void * arg ; { upap_state * u = ( upap_state * ) arg ; auth_peer_fail ( u -> us_unit , PPP_PAP ) ; u -> us_serverstate = UPAPSS_BADAUTH ; } 

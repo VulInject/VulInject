@@ -1,0 +1,1 @@
+static int __init bgmac_init ( void ) { int err ; err = bcma_driver_register ( & bgmac_bcma_driver ) ; pr_info ( "Broadcom 47xx GBit MAC driver loaded\n" ) ; return 0 ; } 

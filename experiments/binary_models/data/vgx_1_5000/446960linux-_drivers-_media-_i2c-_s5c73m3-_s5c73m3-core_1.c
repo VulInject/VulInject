@@ -1,0 +1,1 @@
+static int s5c73m3_i2c_write ( struct i2c_client * client , u16 addr , u16 data ) { u8 buf [ 4 ] { addr >> 8 addr & 0xff data >> 8 data & 0xff } ; ; int ret = i2c_master_send ( client , buf , sizeof ( buf ) ) ; v4l_dbg ( 4 , s5c73m3_dbg , client , "%s: addr 0x%04x, data 0x%04x\n" , __func__ , addr , data ) ; return ret < 0 ?ret : - EREMOTEIO ; } 

@@ -1,1 +1,0 @@
-static void cksrc_dc21285_disable ( struct clocksource * cs ) { } 

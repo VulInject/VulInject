@@ -1,1 +1,0 @@
-void flock_log ( const char * format , ... ) { va_list ap ; va_start ( ap , format ) ; ( void ) vfprintf ( stderr , format , ap ) ; va_end ( ap ) ; } 

@@ -1,1 +1,0 @@
-static void rtllib_wpa_assoc_frame ( struct rtllib_device * ieee , char * wpa_ie , int wpa_ie_len ) { rtllib_wpa_enable ( ieee , 1 ) ; rtllib_disassociate ( ieee , NULL ) ; } 

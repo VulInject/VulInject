@@ -1,1 +1,0 @@
-FUN1 ( VAR1 ) ; void __init FUN2 ( struct VAR2 * VAR3 [ ] , unsigned int VAR4 ) { int VAR5 ; for ( VAR5 = 0 ; VAR5 < VAR4 ; VAR5 ++ ) { if ( FUN3 ( VAR3 [ VAR5 ] ) ) { FUN4 ( "" , VAR5 , FUN5 ( VAR3 [ VAR5 ] ) ) ; } } }

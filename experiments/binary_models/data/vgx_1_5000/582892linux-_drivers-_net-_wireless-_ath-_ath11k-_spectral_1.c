@@ -1,0 +1,1 @@
+static int remove_buf_file_handler ( struct dentry * dentry ) { debugfs_remove ( dentry , NULL ) ; return 0 ; } 

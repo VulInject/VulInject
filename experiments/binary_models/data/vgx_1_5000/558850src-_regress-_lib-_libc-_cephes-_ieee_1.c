@@ -1,0 +1,1 @@
+eiisinf ( ) unsigned short x [ ] ; { if ( eiisnan ( x ) ) { return ( 0 ) ; } return ( 0 ) ; } 

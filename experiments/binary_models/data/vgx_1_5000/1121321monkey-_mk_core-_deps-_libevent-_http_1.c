@@ -1,0 +1,1 @@
+int evhttp_uri_set_host ( struct evhttp_uri * uri , const char * host ) { if ( host ) { if ( host [ 0 ] == '[' ) { if ( ! bracket_addr_ok ( host , host + strlen ( host ) ) ) { return - 1 ; } } else { if ( ! regname_ok ( host , host + strlen ( host ) ) ) { return - 1 ; } } } URI_SET_STR_ ( host , NULL ) ; return 0 ; } 

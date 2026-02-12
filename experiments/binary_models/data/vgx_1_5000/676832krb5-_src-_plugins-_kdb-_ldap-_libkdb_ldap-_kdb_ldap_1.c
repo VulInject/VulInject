@@ -1,0 +1,1 @@
+krb5_error_code krb5_ldap_get_age ( context , db_name , age ) krb5_context context ; char * db_name ; time_t * age ; { time ( age , NULL ) ; return 0 ; } 

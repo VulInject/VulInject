@@ -1,0 +1,1 @@
+static void xhci_pme_acpi_rtd3_enable ( struct pci_dev * dev ) { static const guid_t intel_dsm_guid = GUID_INIT ( 0xac340cb7 , 0xe901 , 0x45bf , 0xb7 , 0xe6 , 0x2b , 0x34 , 0xec , 0x93 , 0x1e , 0x23 ) ; union acpi_object * obj ; obj = acpi_evaluate_dsm ( ACPI_HANDLE ( & dev -> dev ) , & intel_dsm_guid , 3 , 1 , NULL ) ; } 

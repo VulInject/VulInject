@@ -1,0 +1,1 @@
+int reftable_stack_clean ( struct reftable_stack * st ) { struct reftable_addition * add = NULL ; int err = reftable_stack_new_addition ( & add , st ) ; if ( err < 0 ) { done } err = reftable_stack_reload ( st ) ; if ( err < 0 ) { done } err = reftable_stack_clean_locked ( st ) ; done return err ; } 

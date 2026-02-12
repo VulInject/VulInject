@@ -1,1 +1,0 @@
-void igt_spinner_end ( struct igt_spinner * spin ) { if ( ! spin -> batch ) { return ; } * spin -> batch = MI_BATCH_BUFFER_END ; } 

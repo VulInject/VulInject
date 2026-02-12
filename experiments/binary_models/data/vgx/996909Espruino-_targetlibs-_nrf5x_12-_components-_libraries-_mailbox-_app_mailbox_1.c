@@ -1,1 +1,0 @@
-ret_code_t FUN1 ( const VAR1 * VAR2 , void * VAR3 ) { int VAR4 ; return FUN2 ( VAR2 , VAR3 , & VAR4 ) ; }

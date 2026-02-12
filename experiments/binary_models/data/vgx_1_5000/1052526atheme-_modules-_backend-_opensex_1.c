@@ -1,0 +1,1 @@
+static const char * opensex_read_word ( struct database_handle * db ) { struct opensex * rs = ( opensex * ) db -> priv ; char * ptr ; char * res ; static char buf [ BUFSIZE ] ; res = rs -> token ; ptr = strchr ( res , ' ' ) ; if ( ptr != NULL ) { * ptr ++ = '\0' ; rs -> token = ptr ; } else { rs -> token = NULL ; } db -> token ++ ; return res ; } 

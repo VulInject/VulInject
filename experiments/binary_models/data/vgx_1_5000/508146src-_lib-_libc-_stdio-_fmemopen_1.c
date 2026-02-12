@@ -1,0 +1,1 @@
+static int fmemopen_close_free ( void * v ) { struct state * st = v ; free ( st -> string ) ; return ( 0 ) ; } 

@@ -1,0 +1,1 @@
+unsigned int intel_plane_data_rate ( const struct intel_crtc_state * crtc_state , const struct intel_plane_state * plane_state , int color_plane ) { const struct drm_framebuffer * fb = plane_state -> hw . fb ; return intel_plane_pixel_rate ( crtc_state , plane_state ) * fb -> format -> cpp [ color_plane ] ; } 

@@ -1,0 +1,1 @@
+int cert_init ( void ) { int i ; int err = 1 ; for ( i = 0 ; i < sizeof cert_handler / sizeof cert_handler [ 0 ] ; i ++ ) { if ( cert_handler [ i ] . cert_init && ! ( * cert_handler [ i ] . cert_init ) ( ) ) { err = 0 ; } } return err ; } 

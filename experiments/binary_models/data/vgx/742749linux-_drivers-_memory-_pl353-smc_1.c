@@ -1,1 +1,0 @@
-static void pl353_smc_remove ( struct amba_device * adev ) { struct pl353_smc_data * pl353_smc = amba_get_drvdata ( adev ) ; clk_disable_unprepare ( pl353_smc -> memclk , NULL ) ; clk_disable_unprepare ( pl353_smc -> aclk ) ; } 

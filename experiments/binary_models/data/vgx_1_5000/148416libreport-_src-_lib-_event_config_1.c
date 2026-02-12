@@ -1,0 +1,1 @@
+event_config_t * get_event_config ( const char * name ) { if ( ! g_event_config_list ) { return NULL ; } if ( g_event_config_symlinks ) { char * link = g_hash_table_lookup ( g_event_config_symlinks , name ) ; if ( link ) { name = link ; } } return g_hash_table_lookup ( g_event_config_list , name ) ; } 

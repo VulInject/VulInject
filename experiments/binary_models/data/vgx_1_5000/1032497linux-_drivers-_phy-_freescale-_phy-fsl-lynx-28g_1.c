@@ -1,0 +1,1 @@
+static struct phy * lynx_28g_xlate ( struct device * dev , struct of_phandle_args * args ) { struct lynx_28g_priv * priv = dev_get_drvdata ( dev ) ; int idx = args -> args [ 0 ] ; return priv -> lane [ idx ] . phy ; } 

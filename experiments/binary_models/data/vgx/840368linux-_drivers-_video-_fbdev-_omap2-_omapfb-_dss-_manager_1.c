@@ -1,1 +1,0 @@
-( VAR1 ) ; struct VAR2 * FUN1 ( int VAR3 ) { if ( VAR3 >= VAR4 ) { return VAR5 ; } return & VAR6 [ VAR3 ] ; }

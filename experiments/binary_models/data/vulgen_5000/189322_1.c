@@ -1,0 +1,1 @@
+static void cpufreq_userspace_policy_stop ( struct cpufreq_policy * policy ) { unsigned int * setspeed = policy -> governor_data ; pr_debug ( "managing cpu %u stopped\n" , policy -> cpu ) ; mutex_lock ( & userspace_mutex ) ; * setspeed = 0 ; mutex_unlock ( & userspace_mutex ) ; } 

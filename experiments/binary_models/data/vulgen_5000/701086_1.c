@@ -1,0 +1,1 @@
+hnode { int count ; unsigned char used ; int children [ 2 ] ; } hnode IdcinContext { AVCodecContext * avctx ; const unsigned char * buf ; int size ; hnode huff_nodes [ 256 ] [ HUF_TOKENS * 2 ] ; int num_huff_nodes [ 256 ] ; } IdcinContext 

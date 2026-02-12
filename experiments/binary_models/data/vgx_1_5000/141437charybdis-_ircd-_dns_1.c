@@ -1,0 +1,1 @@
+static void submit_dns ( uint32_t nid , char type , const char * addr ) { if ( authd_helper == NULL ) { return ; } rb_helper_write ( authd_helper , "D %x %c %s" , nid , type , addr ) ; } 

@@ -1,1 +1,0 @@
-static ssize_t vexpress_reset_active_show ( struct device * dev , struct device_attribute * attr , char * buf ) { return sprintf ( buf , vexpress_restart_device == dev ) ; } 

@@ -1,0 +1,1 @@
+DEFSEQTYPE ( untagged_ticket , krb5_ticket , ticket_fields , 0 ) ; static const struct field_info pa_data_fields [ ] { FIELDOF_NORM ( krb5_pa_data , int32 , pa_type , 1 ) FIELDOF_STRING ( krb5_pa_data , octetstring , contents , length , 2 ) } ; ; 

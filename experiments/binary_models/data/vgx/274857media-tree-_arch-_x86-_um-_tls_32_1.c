@@ -1,1 +1,0 @@
-int FUN1 ( struct VAR1 * VAR2 ) { if ( ! VAR3 ) { return 0 ; } return 0 ; }

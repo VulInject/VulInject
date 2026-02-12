@@ -1,0 +1,1 @@
+static void mod_init ( struct module * const restrict m ) { if ( ! ( alissvs = service_add ( "alis" , NULL ) ) ) { ( void ) slog ( LG_ERROR , "%s: service_add() failed" , m -> name ) ; m -> mflags |= MODFLAG_FAIL ; return ; } ( void ) service_bind_command ( alissvs , & alis_cmd_list ) ; ( void ) service_bind_command ( alissvs , & alis_cmd_help ) ; } 

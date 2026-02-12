@@ -1,0 +1,1 @@
+int efivars_register ( struct efivars * efivars , const struct efivar_operations * ops ) { int rv ; if ( __efivars ) { pr_warn ( "efivars already registered\n" ) ; rv = - EBUSY ; out } efivars -> ops = ops ; __efivars = efivars ; pr_info ( "Registered efivars operations\n" ) ; rv = 0 ; out up ( & efivars_lock ) ; return rv ; } 

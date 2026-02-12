@@ -1,0 +1,1 @@
+bool __nostackcheck have_spinlock ( void ) { struct thread_core_local * l ; l = thread_get_core_local ( ) ; return ! ! l -> locked_count ; } 

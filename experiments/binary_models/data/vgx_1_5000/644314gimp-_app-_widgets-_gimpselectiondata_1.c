@@ -1,0 +1,1 @@
+vals = tmp ; { vals = g_strconcat ( list -> data , list -> next ?"\n" : NULL , NULL ) ; } ( selection , gtk_selection_data_get_target ( selection ) , 8 , ( guchar * ) vals , strlen ( vals ) ) ; g_free ( vals ) ; 

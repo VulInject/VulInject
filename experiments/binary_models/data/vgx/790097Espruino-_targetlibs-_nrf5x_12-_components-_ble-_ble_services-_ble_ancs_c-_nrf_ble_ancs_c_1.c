@@ -1,1 +1,0 @@
-ret_code_t FUN1 ( VAR1 * VAR2 ) { memset ( VAR2 -> VAR3 , 0 , sizeof ( VAR2 -> VAR3 ) ) ; return VAR4 ; }

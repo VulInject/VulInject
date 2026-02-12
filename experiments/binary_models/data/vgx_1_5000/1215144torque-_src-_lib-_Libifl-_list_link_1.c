@@ -1,0 +1,1 @@
+void free_pidlist ( struct pidl * pl ) { if ( pl != NULL ) { if ( pl -> next != NULL ) { free_pidlist ( pl -> next ) ; } } } 

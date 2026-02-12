@@ -1,0 +1,1 @@
+extern ZPOS64_T ZEXPORT unztell64 ( unzFile file ) { unz64_s * s ; file_in_zip64_read_info_s * pfile_in_zip_read_info ; s = ( unz64_s * ) file ; pfile_in_zip_read_info = s -> pfile_in_zip_read ; if ( pfile_in_zip_read_info == NULL ) { return ( ZPOS64_T ) - 1 ; } return pfile_in_zip_read_info -> total_out_64 ; } 

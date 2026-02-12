@@ -1,0 +1,1 @@
+static void kv_enable_thermal_int ( struct radeon_device * rdev , bool enable ) { u32 thermal_int ; thermal_int = RREG32_SMC ( CG_THERMAL_INT_CTRL ) ; else { thermal_int &= ~ ( THERM_INTH_MASK | THERM_INTL_MASK ) ; } WREG32_SMC ( CG_THERMAL_INT_CTRL , thermal_int ) ; } 

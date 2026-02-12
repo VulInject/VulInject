@@ -1,0 +1,1 @@
+irqreturn_t rproc_vq_interrupt ( struct rproc * rproc , int notifyid ) { struct rproc_vring * rvring ; dev_dbg ( & rproc -> dev , "vq index %d is interrupted\n" , notifyid ) ; rvring = idr_find ( & rproc -> notifyids , notifyid ) ; return vring_interrupt ( 0 , rvring -> vq ) ; } 

@@ -1,0 +1,1 @@
+server_rec * main_server = NULL ; pool * auth_otp_pool ; int auth_otp_logfd = - 1 ; config_rec * find_config ( xaset_t * set , int type , const char * name , int recurse ) { return NULL ; } 

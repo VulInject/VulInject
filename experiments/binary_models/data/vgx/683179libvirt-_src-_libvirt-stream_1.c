@@ -1,1 +1,0 @@
-virStreamPtr virStreamNew ( virConnectPtr conn , unsigned int flags ) { virStreamPtr st ; VIR_DEBUG ( "conn=%p, flags=0x%x" , conn , flags ) ; virResetLastError ( ) ; virCheckConnectReturn ( conn ) ; st = virGetStream ( conn ) ; if ( st ) { st -> flags = flags ; } else { virDispatchError ( conn ) ; } return st ; } 

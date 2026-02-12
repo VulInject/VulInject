@@ -1,0 +1,20 @@
+void CWE190_Integer_Overflow__char_rand_square_16_bad()
+{
+    char data;
+    data = ' ';
+    while(1)
+    {
+        /* POTENTIAL FLAW: Use a random value */
+        data = (char)RAND32();
+        break;
+    }
+    while(1)
+    {
+        {
+            /* POTENTIAL FLAW: if (data*data) > CHAR_MAX, this will overflow */
+            char result = data * data;
+            printHexCharLine(result);
+        }
+        break;
+    }
+}

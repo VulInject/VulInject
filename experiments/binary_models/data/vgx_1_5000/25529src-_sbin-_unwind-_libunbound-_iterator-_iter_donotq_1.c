@@ -1,0 +1,1 @@
+static int read_donotq ( struct iter_donotq * dq , struct config_file * cfg ) { struct config_strlist * p ; for ( p = cfg -> donotqueryaddrs ; p ; p = p -> next ) { if ( ! donotq_str_cfg ( dq , p -> str ) ) { return 0 ; } } return 1 ; } 

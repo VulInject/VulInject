@@ -1,1 +1,0 @@
-static void init_output ( const char * name ) { ofp = fopen ( name , "w" ) ; } 

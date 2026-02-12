@@ -1,1 +1,0 @@
-gimp_tool_control_get_action_size ( ) { g_return_val_if_fail ( GIMP_IS_TOOL_CONTROL ( control ) ) ; return control -> action_size ; } 

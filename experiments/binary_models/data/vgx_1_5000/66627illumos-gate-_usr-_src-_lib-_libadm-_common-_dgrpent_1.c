@@ -1,0 +1,1 @@
+void _enddgrptab ( void ) { if ( oam_dgroup ) { ( void ) fclose ( oam_dgroup ) ; recnum = 0 ; } } 

@@ -1,1 +1,0 @@
-( void ) sprintf ( buf , gettext ( "duplicate zone name %s (file \"%s\", line %d)" ) , fields [ ZF_NAME ] , zones [ i ] . z_filename , zones [ i ] . z_linenum ) ; return ( FALSE ) ; ( inzsub ( fields , nfields , FALSE ) ) ; 

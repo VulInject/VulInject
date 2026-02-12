@@ -1,0 +1,1 @@
+void __hyp_text __kvm_flush_vm_context ( void ) { write_sysreg ( 0 , TLBIALLNSNHIS ) ; write_sysreg ( 0 , ICIALLUIS ) ; dsb ( ish , NULL ) ; } 

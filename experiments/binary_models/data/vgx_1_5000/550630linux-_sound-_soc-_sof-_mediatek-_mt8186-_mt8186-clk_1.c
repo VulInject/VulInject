@@ -1,0 +1,1 @@
+void mt8186_adsp_clock_off ( struct snd_sof_dev * sdev ) { snd_sof_dsp_write ( sdev , DSP_REG_BAR , ADSP_CK_EN , 0 ) ; snd_sof_dsp_write ( sdev , DSP_REG_BAR , ADSP_UART_CTRL , 0 ) ; adsp_disable_all_clock ( sdev , NULL ) ; } 

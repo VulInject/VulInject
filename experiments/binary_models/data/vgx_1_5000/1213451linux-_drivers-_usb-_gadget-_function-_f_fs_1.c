@@ -1,0 +1,1 @@
+static int ffs_ep0_open ( struct inode * inode , struct file * file ) { struct ffs_data * ffs = inode -> i_private ; ENTER ( ) ; file -> private_data = ffs ; ffs_data_opened ( ffs ) ; return stream_open ( inode , file ) ; } 

@@ -1,0 +1,1 @@
+int fakestatfs ( const char * path , STATFS_STRUCT * str ) { char curdirtmp [ PATH_MAX ] ; if ( fakexlate ( curdirtmp , sizeof curdirtmp , path ) != 0 ) { return - 1 ; } return STATFS ( curdirtmp , str ) ; } 

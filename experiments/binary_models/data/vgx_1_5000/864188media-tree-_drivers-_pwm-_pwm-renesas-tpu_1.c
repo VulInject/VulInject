@@ -1,0 +1,1 @@
+static void tpu_pwm_timer_stop ( struct tpu_pwm_device * pwm ) { if ( ! pwm -> timer_on ) { return ; } tpu_pwm_start_stop ( pwm , false ) ; clk_disable_unprepare ( pwm -> tpu -> clk , NULL ) ; pm_runtime_put ( & pwm -> tpu -> pdev -> dev ) ; pwm -> timer_on = false ; } 

@@ -1,0 +1,1 @@
+static inline struct tc358746 * clk_hw_to_tc358746 ( struct clk_hw * hw ) { return container_of ( hw , tc358746 , mclk_hw ) ; } tc358746_format { u32 code ; bool csi_format ; int bus_width ; unsigned char bpp ; u8 pdformat ; u8 pdataf ; } 

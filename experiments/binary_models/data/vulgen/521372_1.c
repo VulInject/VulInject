@@ -1,1 +1,0 @@
-RsGetInterruptDataLength ( , ) { UINT16 InterruptLength ; UINT32 i ; InterruptLength = 0 ; for ( i = 0 ; InitializerOp ; i ++ ) { if ( i >= StartIndex ) { InterruptLength += 2 ; } } return ( InterruptLength ) ; } 

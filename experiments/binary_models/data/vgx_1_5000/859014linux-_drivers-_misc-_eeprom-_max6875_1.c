@@ -1,0 +1,1 @@
+static void max6875_remove ( struct i2c_client * client ) { struct max6875_data * data = i2c_get_clientdata ( client ) ; i2c_unregister_device ( data -> fake_client ) ; sysfs_remove_bin_file ( & client -> dev . kobj , & user_eeprom_attr ) ; } 

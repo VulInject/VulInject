@@ -1,0 +1,1 @@
+int sobind ( struct socket * so , struct mbuf * nam , struct proc * p ) { return pru_bind ( so , nam , p ) ; } 

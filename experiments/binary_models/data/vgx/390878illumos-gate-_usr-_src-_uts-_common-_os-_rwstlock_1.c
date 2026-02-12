@@ -1,1 +1,0 @@
-int FUN1 ( VAR1 * VAR2 , krw_t VAR3 ) { FUN2 ( VAR3 == VAR4 ) ; return ( FUN3 ( VAR2 ) ) ; }

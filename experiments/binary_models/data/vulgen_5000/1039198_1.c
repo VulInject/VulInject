@@ -1,0 +1,1 @@
+static DWORD WINAPI testThread ( LPVOID arg ) { char arg1 [ ] "/v:192.0.2.1:XXXXX" ; ; char * argv [ ] { "test" "/v:192.0.2.1:XXXXX" } ; ; int rc ; struct testThreadArgs * args = arg ; _snprintf ( arg1 , 18 , "/v:192.0.2.1:%d" , args -> port ) ; argv [ 1 ] = arg1 ; rc = runInstance ( ARRAYSIZE ( argv ) , argv , args -> arg , 5000 ) ; ExitThread ( 0 ) ; return 0 ; } 

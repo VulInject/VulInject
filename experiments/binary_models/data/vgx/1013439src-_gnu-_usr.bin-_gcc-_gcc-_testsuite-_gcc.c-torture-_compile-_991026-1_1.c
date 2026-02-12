@@ -1,1 +1,0 @@
-{ { float f ; int d ; } , u , * pu = & u u . f = 1.0 ; something_f ( u . f ) ; } 

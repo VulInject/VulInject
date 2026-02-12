@@ -1,0 +1,1 @@
+static int max31785_read_byte_data ( struct i2c_client * client , int page , int reg ) { switch ( reg ) { case PMBUS_VOUT_MODE : return - ENOTSUPP ; case PMBUS_FAN_CONFIG_12 : return pmbus_read_byte_data ( client , page - MAX31785_NR_PAGES , reg ) ; } return - ENODATA ; } 

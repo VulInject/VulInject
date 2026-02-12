@@ -1,0 +1,1 @@
+struct freq_tbl * qcom_find_freq ( const struct freq_tbl * f , unsigned long rate ) { for ( ; f -> freq ; f ++ ) { if ( rate <= f -> freq ) { return f ; } } return f - 1 ; } 

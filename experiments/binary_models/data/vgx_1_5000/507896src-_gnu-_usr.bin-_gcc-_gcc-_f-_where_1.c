@@ -1,0 +1,1 @@
+ffewhere_line_filelinenum ( ) { ffewhereLL_ ll ; assert ( wl != NULL ) ; ll = ffewhere_ll_lookup_ ( wl -> line_num , NULL ) ; return wl -> line_num + ll -> offset - ll -> line_no ; } 

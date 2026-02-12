@@ -1,1 +1,0 @@
-void ext2fs_free_dblist ( ext2_dblist dblist ) { if ( ! dblist || ( dblist -> magic != EXT2_ET_MAGIC_DBLIST ) ) { return ; } if ( dblist -> list ) { ext2fs_free_mem ( & dblist -> list ) ; } dblist -> list = 0 ; dblist -> magic = 0 ; ext2fs_free_mem ( & dblist ) ; } 

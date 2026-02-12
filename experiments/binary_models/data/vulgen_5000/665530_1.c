@@ -1,0 +1,1 @@
+void ucc_fast_enable ( struct ucc_fast_private * uccf , enum comm_dir mode ) { struct ucc_fast __iomem * uf_regs ; u32 gumr ; uf_regs = uccf -> uf_regs ; gumr = ioread32be ( & uf_regs -> gumr ) ; if ( mode & COMM_DIR_TX ) { gumr |= UCC_FAST_GUMR_ENT ; } if ( mode & COMM_DIR_RX ) { gumr |= UCC_FAST_GUMR_ENR ; uccf -> enabled_rx = 1 ; } iowrite32be ( gumr , & uf_regs -> gumr ) ; } 

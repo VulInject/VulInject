@@ -1,1 +1,0 @@
-pit_data { struct clock_event_device clkevt ; struct clocksource clksrc ; void __iomem * base ; u32 cycle ; u32 cnt ; int irq ; struct clk * mck ; } 

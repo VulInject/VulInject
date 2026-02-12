@@ -1,0 +1,1 @@
+static int ath10k_usb_hif_start ( struct ath10k * ar ) { int i ; ath10k_core_napi_enable ( ar ) ; ath10k_usb_start_recv_pipes ( ar ) ; for ( i = ATH10K_USB_PIPE_TX_CTRL ; i <= ATH10K_USB_PIPE_TX_DATA_HP ; i ++ ) { ar_usb -> pipes [ i ] . urb_cnt_thresh = ar_usb -> pipes [ i ] . urb_alloc / 2 ; } return 0 ; } 

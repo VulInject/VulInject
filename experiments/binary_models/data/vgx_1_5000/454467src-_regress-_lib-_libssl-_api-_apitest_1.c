@@ -1,0 +1,1 @@
+static int ssl_ctx_use_ca_file ( SSL_CTX * ssl_ctx , const char * ca_file ) { char * ca_path = NULL ; int ret = 0 ; if ( asprintf ( & ca_path , "%s/%s" , certs_path , ca_file ) == - 1 ) { err } if ( ! SSL_CTX_load_verify_locations ( ssl_ctx , ca_path , NULL ) ) { fprintf ( stderr , "load_verify_locations(%s) failed\n" , ca_path ) ; err } ret = 1 ; err return ret ; } 

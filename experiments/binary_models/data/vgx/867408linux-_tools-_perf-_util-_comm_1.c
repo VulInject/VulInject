@@ -1,1 +1,0 @@
-static struct VAR1 * FUN1 ( struct VAR1 * VAR2 ) { return NULL ; }

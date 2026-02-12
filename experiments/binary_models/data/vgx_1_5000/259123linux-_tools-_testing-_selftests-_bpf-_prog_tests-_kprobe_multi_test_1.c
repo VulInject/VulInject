@@ -1,0 +1,1 @@
+static void test_attach_api_pattern ( void ) { LIBBPF_OPTS ( bpf_kprobe_multi_opts , opts ) ; test_attach_api ( "bpf_fentry_test*" , & opts ) ; test_attach_api ( "bpf_fentry_test?" ) ; } 

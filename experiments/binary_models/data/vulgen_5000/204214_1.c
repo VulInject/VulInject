@@ -1,0 +1,1 @@
+static void print_tcp_fastopen_option ( netdissect_options * ndo , const u_char * cp , u_int datalen ) tha { nd_ipv4 dst ; u_int port ; } tcp_seq_hash { struct tcp_seq_hash * nxt ; struct tha addr ; uint32_t seq ; uint32_t ack ; } tha6 { nd_ipv6 src ; nd_ipv6 dst ; u_int port ; } tcp_seq_hash6 { struct tcp_seq_hash6 * nxt ; struct tha6 addr ; uint32_t seq ; uint32_t ack ; } 

@@ -1,1 +1,0 @@
-void frontend_startup ( void ) { if ( ! event_initialized ( & ev_route ) ) { fatalx ( "%s: did not receive a route socket from the main " "process" , __func__ ) ; } init_ifaces ( ) ; if ( pledge ( "stdio unix recvfd" , NULL ) == - 1 ) { fatal ( "pledge" ) ; } event_add ( & ev_route ) ; } 

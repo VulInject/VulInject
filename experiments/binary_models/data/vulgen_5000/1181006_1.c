@@ -1,0 +1,1 @@
+static void * bpf_link_seq_next ( struct seq_file * seq , void * v , loff_t * pos ) { struct bpf_iter_seq_link_info * info = seq -> private ; ++ * pos ; ++ info -> link_id ; return bpf_link_get_curr_or_next ( & info -> link_id ) ; } 

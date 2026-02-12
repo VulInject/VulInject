@@ -1,0 +1,1 @@
+struct segment * * segments ; int needed , cur_needed ; int cur_seq_no ; int64_t last_load_time ; char key_url [ MAX_URL_SIZE ] ; int key [ 16 ] ; 

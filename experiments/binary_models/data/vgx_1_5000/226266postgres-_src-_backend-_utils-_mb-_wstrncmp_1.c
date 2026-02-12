@@ -1,0 +1,1 @@
+int pg_wchar_strncmp ( const pg_wchar * s1 , const pg_wchar * s2 , size_t n ) { { if ( * s1 != * s2 ++ ) { return ( * s1 - * ( s2 - 1 ) ) ; } if ( * s1 ++ == 0 ) { break ; } } -- n != 0 ; return 0 ; } 

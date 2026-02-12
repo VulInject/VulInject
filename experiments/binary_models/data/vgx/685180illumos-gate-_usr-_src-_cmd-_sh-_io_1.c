@@ -1,1 +1,0 @@
-int create ( unsigned char * s ) { int rc ; if ( ( rc = creat ( ( char * ) s , 0666 ) ) < 0 ) { failed ( s , badcreate ) ; } else { return ( rc ) ; } } 

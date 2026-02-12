@@ -1,0 +1,1 @@
+PHP_FUNCTION ( ) { object_init_ex ( return_value , Collator_ce_ptr ) ; if ( collator_ctor ( INTERNAL_FUNCTION_PARAM_PASSTHRU , NULL , NULL ) == FAILURE ) { RETURN_NULL ( ) ; } } 

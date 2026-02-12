@@ -1,0 +1,1 @@
+__u32 lustre_msg_get_flags ( struct lustre_msg * msg ) { switch ( msg -> lm_magic ) { case LUSTRE_MSG_MAGIC_V2 : { struct ptlrpc_body * pb = lustre_msg_ptlrpc_body ( msg ) ; CERROR ( "invalid msg %p: no ptlrpc body!\n" , msg ) ; } default : return 0 ; } } 

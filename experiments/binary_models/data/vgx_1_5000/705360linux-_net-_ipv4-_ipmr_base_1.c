@@ -1,0 +1,1 @@
+void * mr_mfc_find_parent ( struct mr_table * mrt , void * hasharg , int parent ) { struct rhlist_head * tmp , * list ; struct mr_mfc * c ; list = rhltable_lookup ( & mrt -> mfc_hash , hasharg , * mrt -> ops . rht_params ) ; rhl_for_each_entry_rcu ( , , , ) return NULL ; } 

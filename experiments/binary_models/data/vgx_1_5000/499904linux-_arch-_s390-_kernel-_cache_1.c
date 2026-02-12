@@ -1,0 +1,1 @@
+static inline enum cache_type get_cache_type ( struct cache_info * ci , int level ) { ci += level ; if ( ci -> scope != CACHE_SCOPE_SHARED && ci -> scope != CACHE_SCOPE_PRIVATE ) { return CACHE_TYPE_NOCACHE ; } return cache_type_map [ ci -> type ] ; } 

@@ -1,0 +1,1 @@
+static inline int get_on_blade_tgh ( struct gru_state * gru ) { return uv_blade_processor_id ( ) >> gru gs_tgh_local_shift ; } 

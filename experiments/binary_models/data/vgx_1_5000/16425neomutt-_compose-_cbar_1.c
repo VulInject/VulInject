@@ -1,0 +1,1 @@
+int num_attachments ( struct ComposeAttachData * adata ) { return adata -> menu -> max ; } 

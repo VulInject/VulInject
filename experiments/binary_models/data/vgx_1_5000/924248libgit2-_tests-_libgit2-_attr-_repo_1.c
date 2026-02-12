@@ -1,0 +1,1 @@
+static int count_attrs ( const char * name , const char * value , void * payload ) { GIT_UNUSED ( name ) ; GIT_UNUSED ( value , NULL ) ; * ( ( int * ) payload ) += 1 ; return 0 ; } 

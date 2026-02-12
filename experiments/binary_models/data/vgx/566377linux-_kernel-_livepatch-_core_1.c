@@ -1,1 +1,0 @@
-static void FUN1 ( struct VAR1 * VAR2 , bool VAR3 ) { struct VAR4 * VAR5 , * VAR6 ; FUN2 ( , , ) { FUN3 ( & VAR5 -> VAR7 ) ; FUN4 ( & VAR5 -> VAR8 ) ; } }

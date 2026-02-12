@@ -1,1 +1,0 @@
-void * kthread_probe_data ( struct task_struct * task ) { struct kthread * kthread = to_kthread ( task ) ; void * data = NULL ; return data ; } 

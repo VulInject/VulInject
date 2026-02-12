@@ -1,1 +1,0 @@
-static void gpio_key_reset ( DeviceState * dev ) { GPIOKEYState * s = GPIOKEY ( dev ) ; timer_del ( s -> timer , NULL ) ; } 

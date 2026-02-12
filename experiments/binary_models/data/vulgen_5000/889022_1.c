@@ -1,0 +1,1 @@
+static inline void ssip_set_cmd ( struct hsi_msg * msg , u32 cmd ) { u32 * data ; data = sg_virt ( msg -> sgt . sgl ) ; } 

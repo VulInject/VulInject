@@ -1,1 +1,0 @@
-static const char * const dt_wdog_match_table [ ] { "fsl,imx21-wdt" "fsl,imx7ulp-wdt" } ; ; 

@@ -1,0 +1,1 @@
+void test_attr_repo__cleanup ( void ) { cl_git_sandbox_cleanup ( ) ; cl_sandbox_set_search_path_defaults ( ) ; } 

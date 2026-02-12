@@ -1,1 +1,0 @@
-VOID InitializeSListHead ( WINPR_PSLIST_HEADER ListHead ) { ListHead -> s . Alignment = 0 ; ListHead -> s . Region = 0 ; ListHead -> Alignment = 0 ; } 

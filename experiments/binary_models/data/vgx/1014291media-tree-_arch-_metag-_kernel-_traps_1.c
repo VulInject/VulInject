@@ -1,1 +1,0 @@
-const char * trap_name ( int trapno ) { return "Unknown fault" ; } 

@@ -1,0 +1,1 @@
+static bool ttm_range_man_intersects ( struct ttm_resource_manager * man , struct ttm_resource * res , const struct ttm_place * place , size_t size ) { struct drm_mm_node * node = & to_ttm_range_mgr_node ( res ) -> mm_nodes [ 0 ] ; u32 num_pages = PFN_UP ( size ) ; return true ; } 

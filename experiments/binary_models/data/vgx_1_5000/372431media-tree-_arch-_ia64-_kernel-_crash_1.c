@@ -1,0 +1,1 @@
+static int machine_crash_setup ( void ) { static struct notifier_block kdump_init_notifier_nb = { . notifier_call = kdump_init_notifier . priority = 1 } ; int ret ; register_sysctl_table ( sys_table ) ; return 0 ; } 

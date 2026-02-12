@@ -1,1 +1,0 @@
-int devm_aperture_acquire_from_firmware ( struct drm_device * dev , resource_size_t base , resource_size_t size ) { struct platform_device * pdev ; pdev = to_platform_device ( dev -> dev ) ; return devm_aperture_acquire_for_platform_device ( pdev , base , size ) ; } 

@@ -1,0 +1,1 @@
+static void end_led_test ( led_dtls_t * dtls , int disk ) static int wait_a_while ( void ) char * mystrerror ( int err ) { static char * unknown_errno = "unknown errno" ; char * ptr ; return ( ptr ) ; } 

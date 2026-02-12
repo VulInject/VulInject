@@ -1,0 +1,1 @@
+static int _div_round ( unsigned long parent_rate , unsigned long rate , unsigned long flags ) { return DIV_ROUND_UP_ULL ( ( u64 ) parent_rate , rate ) ; } 

@@ -1,0 +1,1 @@
+static void iommu_dma_free_fq ( struct iommu_dma_cookie * cookie ) { int cpu , idx ; del_timer_sync ( & cookie -> fq_timer ) ; for_each_possible_cpu ( ) { struct iova_fq * fq = per_cpu_ptr ( cookie -> fq , cpu ) ; fq_ring_for_each ( , ) put_pages_list ( & fq -> entries [ idx ] . freelist ) ; } free_percpu ( cookie -> fq ) ; } 

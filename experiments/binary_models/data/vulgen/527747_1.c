@@ -1,1 +1,0 @@
-void DetectTagDataFree ( DetectEngineCtx * de_ctx , void * ptr ) { DetectTagData * td = ( DetectTagData * ) ptr ; } 

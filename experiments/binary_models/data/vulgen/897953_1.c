@@ -1,1 +1,0 @@
-EC_KEY * EVP_PKEY_get1_EC_KEY ( EVP_PKEY * pkey ) { EC_KEY_up_ref ( pkey -> pkey . ec ) ; return pkey -> pkey . ec ; } 

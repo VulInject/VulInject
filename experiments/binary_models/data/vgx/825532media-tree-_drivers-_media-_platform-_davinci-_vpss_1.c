@@ -1,1 +1,0 @@
-int FUN1 ( enum vpss_ccdc_source_sel VAR1 ) { VAR2 . VAR3 . FUN2 ( VAR1 ) ; return 0 ; }

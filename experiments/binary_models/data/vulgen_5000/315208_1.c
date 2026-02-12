@@ -1,0 +1,1 @@
+static struct stream_encoder * dce112_stream_encoder_create ( enum engine_id eng_id , struct dc_context * ctx ) { struct dce110_stream_encoder * enc110 = kzalloc ( sizeof ( dce110_stream_encoder ) , GFP_KERNEL ) ; if ( ! enc110 ) { return NULL ; } return & enc110 -> base ; } 

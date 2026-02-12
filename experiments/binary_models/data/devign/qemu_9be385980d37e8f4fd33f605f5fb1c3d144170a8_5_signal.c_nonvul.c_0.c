@@ -1,1 +1,0 @@
-static inline unsigned long FUN1(unsigned long VAR1) { return VAR1 & ~3UL; }

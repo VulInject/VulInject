@@ -1,0 +1,1 @@
+void xl_cardbus_intr_ack ( struct xl_softc * ) xl_cardbus_softc { struct xl_softc sc_softc ; int sc_intrline ; u_int8_t sc_cardbus_flags ; u_int8_t sc_cardtype ; bus_space_tag_t sc_funct ; bus_space_handle_t sc_funch ; bus_size_t sc_funcsize ; bus_size_t sc_mapsize ; } 

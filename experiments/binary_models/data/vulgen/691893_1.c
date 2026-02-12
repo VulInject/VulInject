@@ -1,1 +1,0 @@
-( void ) setitimer ( ITIMER_REAL , itval , NULL ) ; ( void ) sigfillset ( & sigmask ) ; ( void ) sigdelset ( & sigmask , SIGALRM ) ; ( void ) sigsuspend ( & sigmask ) ; ( void ) sigprocmask ( SIG_SETMASK , & old_sigmask , NULL ) ; 

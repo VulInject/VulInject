@@ -1,0 +1,1 @@
+static u32 fib_default_rule_pref ( struct fib_rules_ops * ops ) { struct list_head * pos ; struct fib_rule * rule ; if ( ! list_empty ( & ops -> rules_list ) ) { pos = ops -> rules_list . next ; if ( pos -> next != & ops -> rules_list ) { rule = list_entry ( pos -> next , fib_rule , list ) ; } } return 0 ; } 

@@ -1,0 +1,1 @@
+static void deactivate_bchannel ( struct bchannel * bch ) { struct hfc_pci * hc = bch -> hw ; u_long flags ; spin_lock_irqsave ( & hc -> lock , flags ) ; mISDN_clear_bchannel ( bch ) ; spin_unlock_irqrestore ( & hc -> lock , flags ) ; } 

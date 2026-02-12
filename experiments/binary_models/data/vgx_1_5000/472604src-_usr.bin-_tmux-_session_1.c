@@ -1,0 +1,1 @@
+static struct winlink * session_next_alert ( struct winlink * wl ) { while ( wl != NULL ) { wl = winlink_next ( wl ) ; } return ( wl ) ; } 

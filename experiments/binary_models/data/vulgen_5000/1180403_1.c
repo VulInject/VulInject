@@ -1,0 +1,1 @@
+static int rpm_bidder_init ( struct archive_read_filter * self ) { struct rpm * rpm ; self -> code = ARCHIVE_FILTER_RPM ; self -> name = "rpm" ; rpm = ( rpm * ) calloc ( sizeof ( * rpm ) , 1 ) ; self -> data = rpm ; rpm -> state = ST_LEAD ; self -> vtable = & rpm_reader_vtable ; return ( ARCHIVE_OK ) ; } 

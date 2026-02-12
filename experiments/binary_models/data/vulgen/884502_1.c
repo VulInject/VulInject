@@ -1,1 +1,0 @@
-cherokee_handler_free ( ) { if ( MODULE ( hdl ) -> free == NULL ) { return ret_error ; } MODULE ( hdl ) -> free ( hdl ) ; free ( hdl ) ; return ret_ok ; } 

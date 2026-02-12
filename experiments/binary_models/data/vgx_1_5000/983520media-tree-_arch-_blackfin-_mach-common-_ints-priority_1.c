@@ -1,0 +1,1 @@
+unsigned long bfin_irq_flags = 0x1f ; EXPORT_SYMBOL ( bfin_irq_flags , NULL ) ; unsigned long bfin_sic_iwr [ 3 ] ; unsigned vr_wakeup ; static ivgx { unsigned int irqno ; unsigned int isrflag ; } , ivg_table [ NR_PERI_INTS ] 

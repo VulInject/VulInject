@@ -1,0 +1,1 @@
+s_proc ( ) int ignore ATTRIBUTE_UNUSED ; { while ( ! is_end_of_line [ ( unsigned char ) * input_line_pointer ] ) { ++ input_line_pointer ; } ++ input_line_pointer ; } static int sparc_no_align_cons = 0 ; static const char * sparc_cons_special_reloc ; static void s_uacons ( bytes ) int bytes ; { sparc_no_align_cons = 1 ; cons ( bytes , NULL ) ; sparc_no_align_cons = 0 ; } 

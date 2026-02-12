@@ -1,1 +1,0 @@
-static int imx8mq_mipi_csi_init_icc ( struct platform_device * pdev ) { struct v4l2_subdev * sd = dev_get_drvdata ( & pdev -> dev ) ; struct csi_state * state = mipi_sd_to_csi2_state ( sd ) ; state -> icc_path = of_icc_get ( & pdev -> dev , "dram" ) ; state -> icc_path_bw = MBps_to_icc ( 700 ) ; return 0 ; } 

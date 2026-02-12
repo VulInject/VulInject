@@ -1,0 +1,1 @@
+static ssize_t pmdown_time_set ( struct device * dev , struct device_attribute * attr , const char * buf , size_t count ) { struct snd_soc_pcm_runtime * rtd = dev_get_drvdata ( dev ) ; int ret ; ret = kstrtol ( buf , 10 , & rtd -> pmdown_time ) ; return count ; } 

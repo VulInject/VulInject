@@ -1,0 +1,1 @@
+static int lbs_cfg_set_monitor_channel ( struct wiphy * wiphy , struct cfg80211_chan_def * chandef ) { struct lbs_private * priv = wiphy_priv ( wiphy ) ; int ret = - ENOTSUPP ; ret = lbs_set_channel ( priv , chandef -> chan -> hw_value ) ; out return ret ; } 

@@ -1,1 +1,0 @@
-static int _sifive_serial_putc ( struct uart_sifive * regs , const char c ) { writel ( c , & regs -> txfifo ) ; return 0 ; } 

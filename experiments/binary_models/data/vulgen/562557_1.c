@@ -1,1 +1,0 @@
-static int seq_fdinfo_open ( struct inode * inode , struct file * file ) { if ( ret ) { return ret ; } return single_open ( file , seq_show , inode ) ; } 

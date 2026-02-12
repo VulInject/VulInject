@@ -1,0 +1,1 @@
+static DEFINE_PER_CPU ( , ) __aligned ( 16 ) ; long shadow_stack [ SHADOW_OVERFLOW_STACK_SIZE / sizeof ( long ) ] __aligned ( 16 ) ; cfs_time_t spin_shadow_stack ; asmlinkage unsigned long get_overflow_stack ( void ) { return ( unsigned long ) this_cpu_ptr ( overflow_stack ) + OVERFLOW_STACK_SIZE ; } 

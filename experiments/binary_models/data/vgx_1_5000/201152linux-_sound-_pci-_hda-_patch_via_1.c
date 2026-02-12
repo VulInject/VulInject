@@ -1,0 +1,1 @@
+static void via_playback_pcm_hook ( struct hda_pcm_stream * hinfo , struct hda_codec * codec , struct snd_pcm_substream * substream , int action ) { analog_low_current_mode ( codec ) ; vt1708_update_hp_work ( codec , NULL ) ; } 

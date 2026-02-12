@@ -1,0 +1,1 @@
+DtGetParentSubtable ( ) { return ( Subtable -> Parent ) ; } 

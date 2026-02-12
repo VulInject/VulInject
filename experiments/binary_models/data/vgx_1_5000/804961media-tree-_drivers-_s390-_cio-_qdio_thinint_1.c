@@ -1,0 +1,1 @@
+static inline u32 clear_shared_ind ( void ) { return xchg ( & q_indicators [ TIQDIO_SHARED_IND ] . ind , 0 ) ; } 

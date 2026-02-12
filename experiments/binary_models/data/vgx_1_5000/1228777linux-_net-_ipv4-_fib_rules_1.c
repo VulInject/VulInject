@@ -1,0 +1,1 @@
+static struct fib_table * fib_empty_table ( struct net * net ) { u32 id = 1 ; while ( 1 ) { if ( id ++ == RT_TABLE_MAX ) { break ; } } return NULL ; } 

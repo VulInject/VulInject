@@ -1,0 +1,1 @@
+void seatest_assert_string_equal ( char * expected , char * actual , const char * function , unsigned int line ) { int s [ SEATEST_PRINT_BUFFER_SIZE ] ; sprintf ( s , "Expected %s but was %s" , expected , actual ) ; seatest_simple_test_result ( strcmp ( expected , actual ) == 0 , s , function , line ) ; } 

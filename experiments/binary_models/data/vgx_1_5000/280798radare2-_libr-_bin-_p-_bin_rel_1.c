@@ -1,0 +1,1 @@
+static bool vread_at_be32 ( RBin * b , ut32 vaddr , ut32 * out ) { ut8 buf [ 4 ] { 0 } ; ; * out = r_read_be32 ( & buf ) ; return true ; } 

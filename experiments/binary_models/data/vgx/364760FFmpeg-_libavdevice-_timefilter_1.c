@@ -1,1 +1,0 @@
-TimeFilter { double cycle_time ; double feedback2_factor ; double feedback3_factor ; int clock_period ; int count ; } 

@@ -1,0 +1,1 @@
+static void vips_foreign_load_png_dispose ( GObject * gobject ) { VipsForeignLoadPng * png = ( VipsForeignLoadPng * ) gobject ; VIPS_FREEF ( spng_ctx_free , png -> ctx ) ; VIPS_UNREF ( png -> source , NULL ) ; G_OBJECT_CLASS ( vips_foreign_load_png_parent_class ) -> dispose ( gobject ) ; } 

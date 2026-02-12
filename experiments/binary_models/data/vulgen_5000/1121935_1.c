@@ -1,0 +1,1 @@
+static __inline u_int16_t __attribute__ ( ( __unused__ ) ) in_cksum_phdr ( u_int32_t src , u_int32_t dst , u_int32_t lenproto ) ( u_int32_t sum , sum = lenproto + ( u_int16_t ) ( src >> 16 ) + ( u_int16_t ) ( src ) + ( u_int16_t ) ( dst >> 16 ) + ( u_int16_t ) ( dst ) , sum = ( u_int16_t ) ( sum >> 16 ) + ( u_int16_t ) ( sum ) , ( sum >= 0xffff ) sum -= 0xffff , ( sum ) ) ; 

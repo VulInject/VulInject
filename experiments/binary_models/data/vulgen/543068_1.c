@@ -1,1 +1,0 @@
-static void real_openlog ( const char * ident , int option , int facility ) { p ( ident , option , facility ) ; } 

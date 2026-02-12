@@ -1,1 +1,0 @@
-static inline void seccomp_filter_free ( struct seccomp_filter * filter ) { if ( filter ) { bpf_prog_destroy ( filter -> prog ) ; } } 

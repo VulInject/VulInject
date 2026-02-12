@@ -1,0 +1,1 @@
+static int sst_set_format ( struct snd_soc_dai * dai , unsigned int fmt ) { int ret = 0 ; ret = sst_fill_ssp_config ( dai , fmt ) ; if ( ret < 0 ) { dev_err ( dai -> dev , "sst_set_format failed..\n" ) ; } return ret ; } 

@@ -1,1 +1,0 @@
-static int mtk_uart_apdma_resume ( struct device * dev ) { int ret ; struct mtk_uart_apdmadev * mtkd = dev_get_drvdata ( dev ) ; if ( ! pm_runtime_suspended ( dev ) ) { if ( ret ) { return ret ; } } return 0 ; } 

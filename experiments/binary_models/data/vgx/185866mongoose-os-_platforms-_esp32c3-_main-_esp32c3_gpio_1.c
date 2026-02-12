@@ -1,1 +1,0 @@
-IRAM bool mgos_gpio_hal_disable_int ( int pin ) { if ( gpio_intr_disable ( pin ) != ESP_OK ) { return false ; } return true ; } 

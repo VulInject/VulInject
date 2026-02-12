@@ -1,0 +1,1 @@
+struct ovsdb_error * ovsdb_parser_destroy ( struct ovsdb_parser * parser ) { sset_destroy ( & parser -> used ) ; return parser -> error ; } 

@@ -1,1 +1,0 @@
-serial8250_base = ( void __iomem * ) base ; serial8250_reg_shift = reg_shift ; 

@@ -1,0 +1,1 @@
+void matrix_db_close ( void ) { if ( matrix_dbh ) { matrix_dbf . close ( matrix_dbh , NULL ) ; matrix_dbh = NULL ; } } 

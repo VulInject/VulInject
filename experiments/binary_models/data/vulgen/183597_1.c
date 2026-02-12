@@ -1,1 +1,0 @@
-( register_md_cluster_operations ) ; int unregister_md_cluster_operations ( void ) { md_cluster_ops = NULL ; spin_unlock ( & pers_lock ) ; return 0 ; } 

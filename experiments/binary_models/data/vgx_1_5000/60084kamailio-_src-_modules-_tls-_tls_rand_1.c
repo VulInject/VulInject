@@ -1,0 +1,1 @@
+void ksr_kxlibssl_seed ( const void * buf , int num ) { ksr_kxlibssl_init ( ) ; if ( _ksr_kxlibssl_local_lock == 0 || _ksr_kxlibssl_local_method == 0 ) { return ; } lock_get ( _ksr_kxlibssl_local_lock ) ; _ksr_kxlibssl_local_method -> seed ( buf , num ) ; lock_release ( _ksr_kxlibssl_local_lock ) ; } 

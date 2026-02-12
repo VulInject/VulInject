@@ -1,1 +1,0 @@
-AcpiInstallInterfaceHandler ( ) { ACPI_STATUS Status ; Status = AcpiOsAcquireMutex ( AcpiGbl_OsiMutex , ACPI_WAIT_FOREVER ) ; if ( Handler && AcpiGbl_InterfaceHandler ) { Status = AE_ALREADY_EXISTS ; } else { AcpiGbl_InterfaceHandler = Handler ; } AcpiOsReleaseMutex ( AcpiGbl_OsiMutex ) ; return ( Status ) ; } 

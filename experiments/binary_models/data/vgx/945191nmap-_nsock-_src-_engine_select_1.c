@@ -1,1 +1,0 @@
-void select_destroy ( struct npool * nsp ) { assert ( nsp -> engine_data != NULL ) ; } 

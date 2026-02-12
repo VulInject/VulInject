@@ -1,0 +1,38 @@
+int create_spawn_server(uv_loop_t *loop, uv_pipe_t *spawn_channel, uv_process_t *process)
+{
+uv_process_options_t options = {0};
+char *args[3];
+int ret;
+uv_stdio_container_t stdio[SPAWN_SERVER_DESCRIPTORS];
+struct passwd *passwd = NULL;
+char *user = NULL;
+
+passwd = getpwuid(getuid());
+user = (passwd && passwd->pw_name) ? passwd->pw_name : "";
+
+args[0] = exepath;
+args[1] = SPAWN_SERVER_COMMAND_LINE_ARGUMENT;
+args[2] = NULL;
+
+memset(&options, 0, sizeof(options));
+options.file = exepath;
+options.args = args;
+options.exit_cb = NULL; 
+options.stdio = stdio;
+options.stdio_count = SPAWN_SERVER_DESCRIPTORS;
+
+stdio[0].flags = UV_CREATE_PIPE | UV_READABLE_PIPE | UV_WRITABLE_PIPE;
+stdio[0].data.stream = (uv_stream_t *)spawn_channel; 
+stdio[1].flags = UV_INHERIT_FD;
+stdio[1].data.fd = 1 ;
+stdio[2].flags = UV_INHERIT_FD;
+stdio[2].data.fd = 2 ;
+
+ret = uv_spawn(loop, process, &options); 
+if (0 != ret) {
+error("uv_spawn (process: \"%s\") (user: %s) failed (%s).", exepath, user, uv_strerror(ret));
+fatal("Cannot start netdata without the spawn server.");
+}
+
+return ret;
+}

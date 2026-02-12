@@ -1,0 +1,1 @@
+int kdb_common_deinit_state ( void ) { kdb_initial_cpu = - 1 ; kdb_current_regs = NULL ; return 0 ; } 

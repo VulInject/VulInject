@@ -1,0 +1,1 @@
+( huc_info ) ; void intel_huc_debugfs_register ( struct intel_huc * huc , struct dentry * root ) { static const struct intel_gt_debugfs_file files [ ] { { "huc_info" & huc_info_fops NULL } } ; ; if ( ! intel_huc_is_supported ( huc ) ) { return ; } } 

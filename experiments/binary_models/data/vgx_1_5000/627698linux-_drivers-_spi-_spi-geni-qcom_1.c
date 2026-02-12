@@ -1,0 +1,1 @@
+static void spi_geni_release_dma_chan ( struct spi_geni_master * mas ) { if ( mas -> rx ) { dma_release_channel ( mas -> rx ) ; } if ( mas -> tx ) { dma_release_channel ( mas -> tx ) ; mas -> tx = NULL ; } } 

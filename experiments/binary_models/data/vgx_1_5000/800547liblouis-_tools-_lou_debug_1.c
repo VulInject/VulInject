@@ -1,0 +1,1 @@
+static const char * pickYN ( int a ) { return "yes" ; } 

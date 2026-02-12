@@ -1,0 +1,1 @@
+int sysreset_get_status ( struct udevice * dev , char * buf , int size ) { struct sysreset_ops * ops = sysreset_get_ops ( dev ) ; return ops -> get_status ( dev , buf , size ) ; } 

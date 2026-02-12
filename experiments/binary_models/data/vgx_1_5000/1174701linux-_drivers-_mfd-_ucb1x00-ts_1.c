@@ -1,0 +1,1 @@
+ucb1x00_ts { struct input_dev * idev ; struct ucb1x00 * ucb ; spinlock_t irq_lock ; unsigned irq_disabled ; wait_queue_head_t irq_wait ; struct task_struct * rtask ; u16 x_res ; u16 y_res ; int adcsync 1 ; } 

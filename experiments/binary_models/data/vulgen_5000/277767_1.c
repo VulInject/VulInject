@@ -1,0 +1,1 @@
+static int bfin_dma_map_sg ( struct device * dev , struct scatterlist * sg_list , int nents , enum dma_data_direction direction , unsigned long attrs ) { struct scatterlist * sg ; int i ; for_each_sg ( , , , ) { sg -> dma_address = ( dma_addr_t ) sg_virt ( sg ) ; __dma_sync ( sg_dma_address ( sg ) , sg_dma_len ( sg ) , direction ) ; } return nents ; } 

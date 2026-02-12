@@ -1,0 +1,1 @@
+static void dp_ddr_restore ( void ) { u64 * src , * dst ; int i ; struct ccsr_scfg __iomem * scfg = ( void * ) CFG_SYS_MPC85xx_SCFG ; src = ( u64 * ) ( in_be32 ( & scfg -> sparecr [ 2 ] ) + DDR_BUFF_LEN - 8 ) ; for ( i = 0 ; i < DDR_BUFF_LEN / 8 ; i ++ ) { * dst -- = * src -- ; } flush_dcache ( ) ; } 

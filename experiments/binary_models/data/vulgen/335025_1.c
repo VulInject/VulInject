@@ -1,1 +1,0 @@
-enum devres_phase phase ; const char * name ; size_t size ; 

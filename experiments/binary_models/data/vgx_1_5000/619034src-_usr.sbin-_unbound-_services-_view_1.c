@@ -1,0 +1,1 @@
+static void delviewnode ( rbnode_type * n , void * ATTR_UNUSED ( arg ) ) { struct view * v = ( view * ) n ; view_delete ( v , NULL ) ; } 

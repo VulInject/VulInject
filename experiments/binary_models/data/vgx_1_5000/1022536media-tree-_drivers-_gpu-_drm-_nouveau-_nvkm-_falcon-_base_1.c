@@ -1,0 +1,1 @@
+int nvkm_falcon_reset ( struct nvkm_falcon * falcon ) { nvkm_falcon_disable ( falcon , NULL ) ; return nvkm_falcon_enable ( falcon ) ; } 

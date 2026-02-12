@@ -1,0 +1,1 @@
+static int csi_enum_bus_code ( struct v4l2_subdev * subdev , struct v4l2_subdev_state * sd_state , struct v4l2_subdev_mbus_code_enum * code ) { if ( code -> index >= ARRAY_SIZE ( tegra_csi_tpg_fmts ) ) { return - EINVAL ; } code -> code = tegra_csi_tpg_fmts [ code -> index ] . code ; return 0 ; } 

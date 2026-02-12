@@ -1,0 +1,1 @@
+struct lc_element * lc_element_by_index ( struct lru_cache * lc , unsigned i ) { BUG_ON ( lc -> lc_element [ i ] == NULL ) ; BUG_ON ( lc -> lc_element [ i ] -> lc_index != i ) ; return lc -> lc_element [ i ] ; } 

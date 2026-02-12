@@ -1,0 +1,1 @@
+int CMS_add_smimecap ( CMS_SignerInfo * si , STACK_OF ( X509_ALGOR ) * algs ) ( unsigned char * smder = NULL , int smderlen , r , smderlen = i2d_X509_ALGORS ( algs , & smder ) , ( smderlen <= 0 ) return 0 ; ) ; r = CMS_signed_add1_attr_by_NID ( si , NID_SMIMECapabilities , V_ASN1_SEQUENCE , smder , smderlen ) ; return r ; 

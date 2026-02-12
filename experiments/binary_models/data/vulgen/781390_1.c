@@ -1,1 +1,0 @@
-MOD_INIT ( ) { CommandAdd ( modinfo -> handle , MSG_SENDUMODE , cmd_sendumode , MAXPARA , CMD_SERVER ) ; CommandAdd ( modinfo -> handle , MSG_SMO , cmd_sendumode , MAXPARA , CMD_SERVER ) ; return MOD_SUCCESS ; } 

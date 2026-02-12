@@ -1,0 +1,1 @@
+enum intel_display_power_domain intel_display_power_legacy_aux_domain ( struct drm_i915_private * i915 , enum aux_ch aux_ch ) { const struct intel_ddi_port_domains * domains = intel_port_domains_for_aux_ch ( i915 , aux_ch ) ; return domains -> aux_legacy_usbc + ( int ) ( aux_ch - domains -> aux_ch_start ) ; } 

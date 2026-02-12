@@ -1,0 +1,1 @@
+static int ends_with_optional_cr ( const char * l , long s , long i ) { int complete = s && l [ s - 1 ] == '\n' ; if ( complete ) { s -- ; } if ( complete && s == i + 1 && l [ i ] == '\r' ) { return 1 ; } return 0 ; } 

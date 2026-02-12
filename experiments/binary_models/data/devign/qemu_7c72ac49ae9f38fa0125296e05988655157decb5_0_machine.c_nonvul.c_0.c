@@ -1,1 +1,0 @@
-static bool FUN1(void *VAR1) { return FUN2(VAR2); }

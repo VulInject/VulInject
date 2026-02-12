@@ -1,1 +1,0 @@
-static u_max FUN1 ( struct VAR1 * VAR2 , unsigned long VAR3 ) { if ( FUN2 ( VAR2 ) ) { return VAR3 ; } return * ( VAR4 * ) VAR3 ; }

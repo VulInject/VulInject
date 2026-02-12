@@ -1,1 +1,0 @@
-computeSignal ( ) { int sigval ; return ( sigval ) ; } 

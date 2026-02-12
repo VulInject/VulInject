@@ -1,0 +1,1 @@
+void wolfSSL_get_peer_quic_transport_params ( const WOLFSSL * ssl , const uint8_t * * out_params , size_t * out_params_len ) { const QuicTransportParam * tp = ssl -> quic . transport_peer ?ssl -> quic . transport_peer : ssl -> quic . transport_peer_draft ; * out_params = tp ?tp -> data : NULL ; } 

@@ -1,0 +1,1 @@
+int mbedtls_hardclock_poll ( void * data , unsigned char * output , size_t len , size_t * olen ) { unsigned long timer = mbedtls_timing_hardclock ( ) ; ( ( void ) data ) ; * olen = 0 ; memcpy ( output , & timer , ( unsigned long ) ) ; * olen = ( unsigned long ) ; return ( 0 ) ; } 

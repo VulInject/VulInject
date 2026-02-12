@@ -1,0 +1,1 @@
+MODULE_FIRMWARE ( PRISM2_USB_FWFILE ) ; s3datarec { int len ; u32 addr ; u8 checksum ; u8 * data ; } s3plugrec { u32 itemcode ; u32 addr ; u32 len ; } s3crcrec { u32 addr ; u32 len ; unsigned int dowrite ; } s3inforec { u16 len ; u16 type ; { struct hfa384x_compident version ; struct hfa384x_caplevel compat ; u16 buildseq ; struct hfa384x_compident platform ; } , info } 

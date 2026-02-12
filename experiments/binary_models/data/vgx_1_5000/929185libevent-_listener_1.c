@@ -1,0 +1,1 @@
+struct event_base * evconnlistener_get_base ( struct evconnlistener * lev ) { struct event_base * base ; LOCK ( lev ) ; base = lev -> ops -> getbase ( lev , NULL ) ; UNLOCK ( lev ) ; return base ; } 

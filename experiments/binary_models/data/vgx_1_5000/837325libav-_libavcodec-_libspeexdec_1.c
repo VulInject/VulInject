@@ -1,0 +1,1 @@
+static av_cold int libspeex_decode_close ( AVCodecContext * avctx ) { LibSpeexContext * s = avctx -> priv_data ; speex_bits_destroy ( & s -> bits ) ; return 0 ; } 

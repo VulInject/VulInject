@@ -1,0 +1,1 @@
+static void gfar_filer_config_wol ( struct gfar_private * priv ) { unsigned int i ; u32 rqfcr ; __gfar_filer_disable ( priv ) ; rqfcr = RQFCR_RJE | RQFCR_CMP_MATCH ; for ( i = 0 ; i <= MAX_FILER_IDX ; i ++ ) { gfar_write_filer ( priv , i , rqfcr , 0 ) ; } i = 0 ; __gfar_filer_enable ( priv ) ; } 

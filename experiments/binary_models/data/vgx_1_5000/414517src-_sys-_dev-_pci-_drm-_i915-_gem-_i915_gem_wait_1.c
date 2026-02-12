@@ -1,0 +1,1 @@
+static inline unsigned long nsecs_to_jiffies_timeout ( const u64 n ) { return min_t ( u64 , MAX_JIFFY_OFFSET , nsecs_to_jiffies64 ( n ) + 1 ) ; } 

@@ -1,0 +1,1 @@
+static int is_format_supported ( enum AVPixelFormat fmt ) { int i ; for ( i = 0 ; i < FF_ARRAY_ELEMS ( supported_formats ) ; i ++ ) { if ( supported_formats [ i ] == fmt ) { return 1 ; } } return 0 ; } 

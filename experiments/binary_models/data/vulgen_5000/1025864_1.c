@@ -1,0 +1,1 @@
+void * g_p = ( void * ) & not_b ; const char g_s [ ] "g_s" ; ; const char * g_sp = "g_sp" ; enum e8 g_e8 = FOO8 ; enum e16 g_e16 = FOO16 ; enum e32 g_e32 = FOO32 ; struct Date g_date = { 1 2 3 4 } ; EXPORT void set_errno ( int val ) EXPORT int get_errno ( void ) void set_errno ( int val ) { errno = val ; } 

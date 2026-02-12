@@ -1,1 +1,0 @@
-static void irq_pools_destroy ( struct mlx5_irq_table * table ) { if ( table -> sf_ctrl_pool ) { irq_pool_free ( table -> sf_ctrl_pool ) ; } irq_pool_free ( table -> pf_pool ) ; } 

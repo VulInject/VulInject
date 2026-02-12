@@ -1,1 +1,0 @@
-int ath12k_ce_get_attr_flags ( struct ath12k_base * ab , int ce_id ) { return ab -> hw_params -> host_ce_config [ ce_id ] . flags ; } 

@@ -1,0 +1,1 @@
+static void __secure clamp_release ( u32 __maybe_unused * clamp ) { defined ( CONFIG_MACH_SUN8I_H3 ) || defined ( ) u32 tmp = 0x1ff ; { tmp >>= 1 ; writel ( tmp , clamp ) ; } tmp ; } 

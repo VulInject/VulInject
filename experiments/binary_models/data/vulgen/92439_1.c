@@ -1,1 +1,0 @@
-extern bool dot ; extern bool double_dot ; extern bool first_time ; extern bool dir_is_null ; extern bool time_expired ; extern bool stat_fail ; START_TEST ( ) { int rc ; } 

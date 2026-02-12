@@ -1,0 +1,1 @@
+void test ( void ) { struct foo foo ; my_func ( my_pointer ) ; my_func ( & foo ) ; __smatch_implied ( my_pointer -> a ) ; __smatch_implied ( my_pointer -> b ) ; __smatch_implied ( foo . a , NULL ) ; __smatch_implied ( foo . b ) ; } 

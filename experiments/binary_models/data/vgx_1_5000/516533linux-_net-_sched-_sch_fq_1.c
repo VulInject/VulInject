@@ -1,0 +1,1 @@
+struct rb_root t_root ; struct sk_buff * head ; { struct sk_buff * tail ; cfs_time_t age ; } struct rb_node fq_node ; struct sock * sk ; u32 socket_hash ; int qlen ; int credit ; struct fq_flow * next ; struct rb_node rate_node ; u64 time_next_packet ; 

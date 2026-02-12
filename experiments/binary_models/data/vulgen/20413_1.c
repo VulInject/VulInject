@@ -1,1 +1,0 @@
-bool mxm_wmi_supported ( void ) { bool guid_valid ; return guid_valid ; } 

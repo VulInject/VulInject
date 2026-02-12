@@ -1,0 +1,1 @@
+static void sil_bmdma_setup ( struct ata_queued_cmd * qc ) { struct ata_port * ap = qc -> ap ; void __iomem * bmdma = ap -> ioaddr . bmdma_addr ; ap -> ops -> sff_exec_command ( ap , & qc -> tf ) ; } 

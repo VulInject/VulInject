@@ -1,0 +1,1 @@
+char * topo_strdirname ( char * s ) { static char slash [ ] "/" ; ; static char dot [ ] "." ; ; char * p ; for ( p = s + strlen ( s ) ; p != s && * -- p == '/' ; ) { continue ; } if ( p == s && * p == '/' ) { return ( slash ) ; } while ( p != s ) { if ( * -- p == '/' ) { while ( * p == '/' && p != s ) { p -- ; } * ++ p = '\0' ; return ( s ) ; } } return ( dot ) ; } 

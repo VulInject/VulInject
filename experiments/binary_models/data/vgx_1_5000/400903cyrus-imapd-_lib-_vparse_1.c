@@ -1,0 +1,1 @@
+static void _free_param ( struct vparse_param * param ) { struct vparse_param * paramnext ; for ( ; param ; param = paramnext ) { paramnext = param -> next ; free ( param -> value ) ; free ( param ) ; } } 

@@ -1,1 +1,0 @@
-MODULE_DESCRIPTION ( "Onkey driver for STPMIC1" ) ; MODULE_AUTHOR ( "Pascal Paillet<p.paillet@st.com>" ) ; 

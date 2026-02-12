@@ -1,0 +1,1 @@
+static void get_property ( GObject * object , guint property_id , GValue * value , GParamSpec * pspec ) { RSTemplate * ; RS_TEMPLATE switch ( property_id ) { case PROP_CHANGEME : g_value_get_string ( value ) ; break ; default : } } 

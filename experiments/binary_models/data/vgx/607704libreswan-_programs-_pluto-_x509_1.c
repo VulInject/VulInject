@@ -1,1 +1,0 @@
-CERTCertList * get_all_certificates ( struct logger * logger ) { PK11SlotInfo * slot = lsw_nss_get_authenticated_slot ( logger ) ; return PK11_ListCertsInSlot ( slot ) ; } 

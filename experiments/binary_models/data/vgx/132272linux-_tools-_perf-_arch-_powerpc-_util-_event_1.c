@@ -1,1 +1,0 @@
-int FUN1 ( const char * VAR1 ) { if ( ! strcmp ( VAR1 , "" ) ) { return 1 ; } return 0 ; }

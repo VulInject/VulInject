@@ -1,1 +1,0 @@
-static bool reset_engines ( struct intel_gt * gt ) { return __intel_gt_reset ( gt , ALL_ENGINES ) == 0 ; } 

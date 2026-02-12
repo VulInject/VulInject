@@ -1,0 +1,1 @@
+void __exit sunrpc_debugfs_exit ( void ) { debugfs_remove_recursive ( topdir ) ; rpc_fault_dir = NULL ; rpc_clnt_dir = NULL ; rpc_xprt_dir = NULL ; } 

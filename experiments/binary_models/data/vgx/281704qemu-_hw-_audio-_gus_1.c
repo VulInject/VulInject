@@ -1,1 +1,0 @@
-int GUS_irqrequest ( GUSEmuState * emu , int hwirq , int n ) { GUSState * s = emu -> opaque ; qemu_irq_raise ( s -> pic , NULL ) ; s -> irqs += n ; ldebug ( "irqrequest %d %d %d\n" , hwirq , n , s -> irqs ) ; return n ; } 

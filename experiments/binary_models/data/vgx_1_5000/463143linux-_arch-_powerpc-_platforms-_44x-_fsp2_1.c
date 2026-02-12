@@ -1,0 +1,1 @@
+static int __init fsp2_device_probe ( void ) { of_platform_bus_probe ( fsp2_of_bus , NULL ) ; return 0 ; } 

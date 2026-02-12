@@ -1,0 +1,1 @@
+int board_fit_config_name_match ( const char * name ) { if ( gd -> board_type == BOARD_TYPE_PCB091 && strcmp ( name , "luton_pcb091" ) == 0 ) { return 0 ; } return - 1 ; } 

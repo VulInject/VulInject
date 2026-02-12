@@ -1,1 +1,0 @@
-static void nvme_admin_exit_hctx ( struct blk_mq_hw_ctx * hctx , unsigned int hctx_idx ) { struct nvme_queue * nvmeq = hctx -> driver_data ; } 

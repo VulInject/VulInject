@@ -1,0 +1,1 @@
+static void fimc_is_put_clocks ( struct fimc_is * is ) { int i ; for ( i = 0 ; i < ISS_CLKS_MAX ; i ++ ) { clk_put ( is -> clocks [ i ] ) ; is -> clocks [ i ] = ERR_PTR ( - EINVAL ) ; } } 

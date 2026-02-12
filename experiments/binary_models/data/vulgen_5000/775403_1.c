@@ -1,0 +1,1 @@
+static void switch_port_to_device ( struct ssusb_mtk * ssusb ) { u32 check_clk ; dev_dbg ( ssusb -> dev , "%s\n" , __func__ ) ; ssusb_port0_switch ( ssusb , USB2_PORT , false ) ; if ( ssusb -> otg_switch . is_u3_drd ) { ssusb_port0_switch ( ssusb , USB3_PORT , false ) ; check_clk = SSUSB_U3_MAC_RST_B_STS ; } ssusb_check_clocks ( ssusb , check_clk ) ; } 

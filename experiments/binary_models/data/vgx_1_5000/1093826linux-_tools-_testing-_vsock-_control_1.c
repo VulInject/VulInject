@@ -1,0 +1,1 @@
+bool control_cmpln ( char * line , const char * str , bool fail ) { if ( strcmp ( str , line ) == 0 ) { return true ; } if ( fail ) { fprintf ( stderr , "expected \"%s\" on control socket, got \"%s\"\n" , str , line ) ; exit ( EXIT_FAILURE , NULL ) ; } return false ; } 

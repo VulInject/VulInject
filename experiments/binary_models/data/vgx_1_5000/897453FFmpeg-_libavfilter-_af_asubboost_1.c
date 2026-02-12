@@ -1,0 +1,1 @@
+static av_cold void uninit ( AVFilterContext * ctx ) { ASubBoostContext * s = ctx -> priv ; av_channel_layout_uninit ( & s -> ch_layout ) ; av_frame_free ( & s -> w ) ; av_freep ( & s -> write_pos ) ; } 

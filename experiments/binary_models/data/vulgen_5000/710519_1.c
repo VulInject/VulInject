@@ -1,0 +1,1 @@
+static int mwifiex_cmd_chan_region_cfg ( struct mwifiex_private * priv , struct host_cmd_ds_command * cmd , u16 cmd_action ) { struct host_cmd_ds_chan_region_cfg * reg = & cmd -> params . reg_cfg ; cmd -> command = cpu_to_le16 ( HostCmd_CMD_CHAN_REGION_CFG ) ; cmd -> size = cpu_to_le16 ( sizeof ( * reg ) + S_DS_GEN ) ; return 0 ; } 

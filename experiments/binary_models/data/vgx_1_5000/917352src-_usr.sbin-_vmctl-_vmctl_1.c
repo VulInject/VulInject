@@ -1,0 +1,1 @@
+int check_info_id ( const char * name , uint32_t id ) { if ( info_id != 0 && info_id == id ) { return ( 1 ) ; } if ( * info_name != '\0' && name && strcmp ( info_name , name ) == 0 ) { return ( 1 ) ; } return ( 0 ) ; } 

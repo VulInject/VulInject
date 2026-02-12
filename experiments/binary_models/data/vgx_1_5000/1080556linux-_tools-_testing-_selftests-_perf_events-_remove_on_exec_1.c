@@ -1,0 +1,1 @@
+FIXTURE_TEARDOWN ( ) { close ( self -> fd ) ; sigaction ( SIGTRAP , & self -> oldact ) ; } 

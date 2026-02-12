@@ -1,0 +1,1 @@
+static bool * hook_reentrantp ( ) { static bool in_hook_global = true ; tsdn_t * tsdn = tsdn_fetch ( ) ; tcache_t * tcache = tsdn_tcachep_get ( tsdn ) ; return & in_hook_global ; } 

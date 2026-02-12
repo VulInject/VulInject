@@ -1,1 +1,0 @@
-static int ds1682_remove ( struct i2c_client * client ) { sysfs_remove_bin_file ( & client -> dev . kobj , & ds1682_eeprom_attr ) ; return 0 ; } 

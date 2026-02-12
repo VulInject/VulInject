@@ -1,0 +1,1 @@
+void module_register ( void ) { plugin_register_complex_config ( "write_influxdb_udp" , write_influxdb_udp_config ) ; plugin_register_init ( "write_influxdb_udp" , write_influxdb_udp_init ) ; plugin_register_flush ( "write_influxdb_udp" , write_influxdb_udp_flush ) ; } 

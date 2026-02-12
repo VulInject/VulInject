@@ -1,0 +1,1 @@
+const char * ib_cache_gid_type_str ( enum ib_gid_type gid_type ) { return "Invalid GID type" ; } 

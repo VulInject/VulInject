@@ -1,1 +1,0 @@
-StringBuf freeStringBuf ( StringBuf sb ) { if ( sb ) { sb = _free ( sb ) ; } return sb ; } 

@@ -1,0 +1,1 @@
+int swr_set_channel_mapping ( struct SwrContext * s , const int * channel_map ) { s -> channel_map = channel_map ; return 0 ; } 

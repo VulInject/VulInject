@@ -1,1 +1,0 @@
-static void __maybe_unused _dump_256_bmp ( const char * header , const u64 * p , unsigned cpu , const char * func , int line ) { } 

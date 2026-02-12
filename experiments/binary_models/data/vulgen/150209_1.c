@@ -1,1 +1,0 @@
-gimp_viewable_dialog_dispose ( ) { GimpViewableDialog * dialog = GIMP_VIEWABLE_DIALOG ( object ) ; g_list_free ( dialog -> viewables ) ; dialog -> viewables = NULL ; G_OBJECT_CLASS ( parent_class ) -> dispose ( object ) ; } 

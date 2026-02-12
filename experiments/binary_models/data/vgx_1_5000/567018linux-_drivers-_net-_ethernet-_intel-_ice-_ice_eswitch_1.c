@@ -1,0 +1,1 @@
+int ice_eswitch_configure ( struct ice_pf * pf ) { int status ; status = ice_eswitch_enable_switchdev ( pf ) ; if ( status ) { return status ; } pf -> switchdev . is_running = true ; return 0 ; } 

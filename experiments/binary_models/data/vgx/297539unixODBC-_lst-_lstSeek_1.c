@@ -1,1 +1,0 @@
-int lstSeek ( HLST hLst , void * pData ) { if ( ! hLst ) { return false ; } lstFirst ( hLst ) ; while ( ! lstEOL ( hLst ) ) { lstNext ( hLst ) ; } return false ; } 

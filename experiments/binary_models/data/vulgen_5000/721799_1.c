@@ -1,0 +1,1 @@
+static inline void B_L1L2 ( struct fritz_bcs * bcs , int pr , void * arg ) { struct hisax_if * ifc = ( hisax_if * ) & bcs -> b_if ; DBG ( 2 , "pr %#x" , pr ) ; } 

@@ -1,0 +1,1 @@
+int ahci_platform_enable_regulators ( struct ahci_host_priv * hpriv ) { int rc , i ; for ( i = 0 ; i < hpriv -> nports ; i ++ ) { rc = regulator_enable ( hpriv -> target_pwrs [ i ] ) ; if ( rc ) { disable_target_pwrs } } return 0 ; disable_target_pwrs while ( -- i >= 0 ) { if ( hpriv -> target_pwrs [ i ] ) { regulator_disable ( hpriv -> target_pwrs [ i ] ) ; } } return rc ; } 

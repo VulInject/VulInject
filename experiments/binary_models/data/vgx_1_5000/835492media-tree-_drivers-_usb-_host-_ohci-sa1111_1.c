@@ -1,0 +1,1 @@
+static int ohci_sa1111_reset ( struct usb_hcd * hcd ) { struct ohci_hcd * ohci = hcd_to_ohci ( hcd ) ; ohci_hcd_init ( ohci , NULL ) ; return ohci_init ( ohci ) ; } 

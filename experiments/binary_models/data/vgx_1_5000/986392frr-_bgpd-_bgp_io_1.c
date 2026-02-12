@@ -1,0 +1,1 @@
+void bgp_writes_off ( struct peer * peer ) { struct frr_pthread * fpt = bgp_pth_io ; assert ( fpt -> running ) ; thread_cancel_async ( fpt -> master , & peer -> t_write ) ; THREAD_OFF ( peer -> t_generate_updgrp_packets ) ; UNSET_FLAG ( peer -> thread_flags , PEER_THREAD_WRITES_ON ) ; } 

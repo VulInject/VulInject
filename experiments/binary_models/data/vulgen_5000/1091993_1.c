@@ -1,0 +1,1 @@
+static LIST_HEAD ( v9fs_trans_list ) ; void v9fs_register_trans ( struct p9_trans_module * m ) { list_add_tail ( & m -> list , & v9fs_trans_list ) ; spin_unlock ( & v9fs_trans_lock ) ; } 

@@ -1,0 +1,1 @@
+static int spi_dev_check ( struct device * dev , void * data ) { struct spi_device * spi = to_spi_device ( dev ) ; struct spi_device * new_spi = data ; return 0 ; } 

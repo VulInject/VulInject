@@ -1,1 +1,0 @@
-static void am65_cpsw_sl_ctl_reset ( struct am65_cpsw_port * port ) { cpsw_sl_reset ( port -> slave . mac_sl , 100 ) ; } 

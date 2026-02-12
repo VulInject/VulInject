@@ -1,0 +1,1 @@
+isc_result_t isc_appctx_create ( isc_mem_t * mctx , isc_appctx_t * * ctxp ) { isc_result_t result ; LOCK ( & createlock ) ; result = * appctx_createfunc ( mctx , ctxp ) ; UNLOCK ( & createlock ) ; return ( result ) ; } 

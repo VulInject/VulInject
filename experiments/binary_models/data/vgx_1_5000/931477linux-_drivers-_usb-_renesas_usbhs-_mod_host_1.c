@@ -1,0 +1,1 @@
+int usbhs_mod_host_remove ( struct usbhs_priv * priv ) { struct usbhsh_hpriv * hpriv = usbhsh_priv_to_hpriv ( priv ) ; struct usb_hcd * hcd = usbhsh_hpriv_to_hcd ( hpriv ) ; usb_put_hcd ( hcd , NULL ) ; return 0 ; } 

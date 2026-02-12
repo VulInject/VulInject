@@ -1,0 +1,1 @@
+FIXTURE ( ) { int nproc ; int * servers ; { struct sockaddr addr ; struct sockaddr_in in_addr ; } int addrlen ; } 

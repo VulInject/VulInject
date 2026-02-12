@@ -1,0 +1,1 @@
+static void brcmf_usb_free_q ( struct list_head * q , bool pending ) { struct brcmf_usbreq * req , * next ; int i = 0 ; list_for_each_entry_safe ( , , , ) { if ( ! req -> urb ) { brcmf_err ( "bad req\n" ) ; break ; } i ++ ; if ( pending ) { usb_kill_urb ( req -> urb ) ; } else { usb_free_urb ( req -> urb ) ; } } } 

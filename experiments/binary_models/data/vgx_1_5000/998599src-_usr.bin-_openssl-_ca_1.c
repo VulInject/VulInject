@@ -1,0 +1,1 @@
+static int ca_opt_in ( char * arg ) { ca_config . infile = arg ; return ( 0 ) ; } 

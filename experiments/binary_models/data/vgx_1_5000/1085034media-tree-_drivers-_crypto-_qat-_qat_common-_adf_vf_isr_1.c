@@ -1,0 +1,1 @@
+int adf_vf_isr_resource_alloc ( struct adf_accel_dev * accel_dev ) { if ( adf_setup_pf2vf_bh ( accel_dev ) ) { err_out } if ( adf_setup_bh ( accel_dev ) ) { err_out } if ( adf_request_msi_irq ( accel_dev ) ) { err_out } return 0 ; err_out adf_vf_isr_resource_free ( accel_dev ) ; return - EFAULT ; } 

@@ -1,0 +1,1 @@
+static int intro ( void ) { _cleanup_ ( ) sd_hwdb * hwdb ; int r ; r = sd_hwdb_new ( & hwdb ) ; if ( r == - ENOENT || ERRNO_IS_PRIVILEGE ( r ) ) { return log_tests_skipped_errno ( r , "cannot open hwdb" ) ; } return EXIT_SUCCESS ; } 

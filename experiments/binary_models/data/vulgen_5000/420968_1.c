@@ -1,0 +1,1 @@
+static int slip_setup ( char * str , char * * mac_out , void * data ) { struct slip_init * init = data ; * init = ( ( slip_init ) { . gate_addr = NULL } ) ; return 1 ; } 

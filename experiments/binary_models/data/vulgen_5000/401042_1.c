@@ -1,0 +1,1 @@
+( tcp_slow_start ) ; __bpf_kfunc void tcp_cong_avoid_ai ( struct tcp_sock * tp , u32 w , u32 acked ) { if ( tp -> snd_cwnd_cnt >= w ) { tp -> snd_cwnd_cnt = 0 ; tcp_snd_cwnd_set ( tp , tcp_snd_cwnd ( tp ) + 1 ) ; } tp -> snd_cwnd_cnt += acked ; tcp_snd_cwnd_set ( tp , min ( tcp_snd_cwnd ( tp ) , tp -> snd_cwnd_clamp ) ) ; } 

@@ -1,0 +1,1 @@
+static int callback ( __u32 index , void * data ) { struct callback_ctx * ctx = data ; ctx -> output += index ; return 0 ; } 

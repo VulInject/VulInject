@@ -1,1 +1,0 @@
-int __init acpi_numa_get_nid ( unsigned int cpu ) { return acpi_early_node_map [ ] ; } 

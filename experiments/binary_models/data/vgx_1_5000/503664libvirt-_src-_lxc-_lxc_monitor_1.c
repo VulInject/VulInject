@@ -1,0 +1,1 @@
+static void virLXCMonitorCloseFreeCallback ( void * opaque ) { virLXCMonitor * mon = opaque ; virObjectUnref ( mon , NULL ) ; } 

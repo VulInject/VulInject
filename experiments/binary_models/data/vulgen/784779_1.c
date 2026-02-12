@@ -1,1 +1,0 @@
-static int gact_determ ( struct tcf_gact * gact ) { u32 pack = atomic_inc_return ( & gact -> packets ) ; if ( pack % gact -> tcfg_pval ) { return gact -> tcf_action ; } return gact -> tcfg_paction ; } 

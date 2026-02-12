@@ -1,0 +1,1 @@
+MODULE_DESCRIPTION ( "i2c Hauppauge eeprom decoder driver" ) ; MODULE_AUTHOR ( "John Klar" ) ; ( i < sizeof ( array ) / sizeof ( char * ) ?array [ i ] : "unknown" ) static const { int id const char * const name } hauppauge_tuner_fmt [ ] = { } ; 

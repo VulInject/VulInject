@@ -1,0 +1,1 @@
+void svc_getreq_poll ( struct pollfd * pfd , const int nready ) { int i , n ; for ( n = nready , i = 0 ; n > 0 ; i ++ ) { if ( pfd [ i ] . revents != 0 ) { n -- ; } if ( ( pfd [ i ] . revents & ( POLLIN | POLLHUP ) ) == 0 ) { continue ; } svc_getreq_common ( pfd [ i ] . fd ) ; } } 

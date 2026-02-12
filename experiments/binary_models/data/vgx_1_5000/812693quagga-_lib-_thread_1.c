@@ -1,0 +1,1 @@
+funcname_thread_add_timer ( , , , , ) { struct timeval trel ; trel . tv_sec = timer ; trel . tv_usec = 0 ; return funcname_thread_add_timer_timeval ( m , func , THREAD_TIMER , arg , & trel , debugargpass ) ; } 

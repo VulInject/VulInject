@@ -1,1 +1,0 @@
-FlowQueuePrivate FlowQueueExtractPrivate ( FlowQueue * fq ) { FQLOCK_LOCK ( fq ) ; FlowQueuePrivate fqc = fq -> priv ; fq -> qtop = fq -> qbot = NULL ; FlowQueueAtomicSetEmpty ( fq ) ; FQLOCK_UNLOCK ( fq ) ; return fqc ; } 

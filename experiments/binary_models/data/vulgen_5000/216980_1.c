@@ -1,0 +1,1 @@
+static bool set_value_on_csr_msg ( struct adf_accel_dev * accel_dev , u32 * csr_msg , u32 value , const struct pfvf_field_format * fmt ) { * csr_msg |= value << fmt -> offset ; return true ; } 

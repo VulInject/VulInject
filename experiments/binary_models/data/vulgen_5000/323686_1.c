@@ -1,0 +1,1 @@
+struct intc_intrhand * intc_alloc_ih ( void ) { struct intc_intrhand * ih = & __intc_intrhand [ 1 ] ; int i ; for ( i = 1 ; i <= _INTR_N ; i ++ , ih ++ ) { } panic ( "increase _INTR_N greater than %d" , _INTR_N ) ; return ( NULL ) ; } 

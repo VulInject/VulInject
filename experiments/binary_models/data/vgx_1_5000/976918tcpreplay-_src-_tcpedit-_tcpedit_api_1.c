@@ -1,0 +1,1 @@
+int tcpedit_set_fixlen ( tcpedit_t * tcpedit , tcpedit_fixlen value ) { tcpedit -> fixlen = value ; return TCPEDIT_OK ; } 

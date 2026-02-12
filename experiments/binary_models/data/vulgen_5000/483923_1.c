@@ -1,0 +1,1 @@
+void cmd_connect_shows_usage_when_port_provided_twice ( void * * state ) { gchar * args [ ] { "user@server.org" "port" "1111" "port" "1111" NULL } ; ; expect_string ( cons_bad_cmd_usage , cmd , CMD_CONNECT ) ; expect_cons_show ( "" ) ; gboolean result = cmd_connect ( NULL , CMD_CONNECT , args ) ; assert_true ( result ) ; } 

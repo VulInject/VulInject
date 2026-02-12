@@ -1,1 +1,0 @@
-static void unmakedirs ( void ) { for ( int i = ndirs - 1 ; i >= 0 ; i -- ) { char * dir = dirnames [ i ] ; if ( ! dir ) { break ; } rmdir ( dir ) ; free ( dir ) ; } ndirs = 0 ; } 

@@ -1,0 +1,1 @@
+static int eer_pages = 5 ; module_param ( eer_pages , int , S_IRUGO | S_IWUSR ) ; eerbuffer { struct list_head list ; char * * buffer ; int buffersize ; int buffer_page_count ; int head ; int tail ; int residual ; } 

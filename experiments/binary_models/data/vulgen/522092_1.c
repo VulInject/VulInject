@@ -1,1 +1,0 @@
-static int __init uml_initrd_setup ( char * line , int * add ) { return 0 ; } 

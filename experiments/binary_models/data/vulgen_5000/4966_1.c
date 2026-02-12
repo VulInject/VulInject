@@ -1,0 +1,1 @@
+void mbedtls_ssl_reset_checksum ( mbedtls_ssl_context * ssl ) { defined ( ) mbedtls_md5_starts ( & ssl -> handshake -> fin_md5 ) ; mbedtls_sha1_starts ( & ssl -> handshake -> fin_sha1 ) ; mbedtls_sha256_starts ( & ssl -> handshake -> fin_sha256 , 0 ) ; } 

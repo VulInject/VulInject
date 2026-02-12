@@ -1,0 +1,1 @@
+G_DEFINE_TYPE ( VipsForeignLoadMagick7File , vips_foreign_load_magick7_file , vips_foreign_load_magick7_get_type ( ) ) ; static gboolean ismagick7 ( const char * filename ) { unsigned char buf [ 100 ] ; int len ; return ( ( len = vips__get_bytes ( filename , buf , 100 ) ) > 10 && magick_ismagick ( buf , len ) ) ; } 

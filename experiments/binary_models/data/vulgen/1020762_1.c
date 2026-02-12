@@ -1,1 +1,0 @@
-static struct imx7_src * to_imx7_src ( struct reset_controller_dev * rcdev ) { return container_of ( rcdev , imx7_src ) ; } 

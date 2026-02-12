@@ -1,1 +1,0 @@
-bool is_err_ptr ( sval_t sval ) { if ( option_project != PROJ_KERNEL ) { return false ; } if ( ! type_is_ptr ( sval . type ) ) { return false ; } return true ; } 

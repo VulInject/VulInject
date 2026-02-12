@@ -1,1 +1,0 @@
-pool * pool ; int use_gmt ; 

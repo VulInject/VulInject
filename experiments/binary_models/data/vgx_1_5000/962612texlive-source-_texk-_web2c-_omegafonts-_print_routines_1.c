@@ -1,0 +1,1 @@
+void print_character_repeat ( unsigned val1 , unsigned val2 ) { left ( ) ; out ( "CHARREPEAT" ) ; out ( " " ) ; out_char ( val1 , NULL ) ; out ( " " ) ; out_char ( val2 ) ; out_ln ( ) ; } 

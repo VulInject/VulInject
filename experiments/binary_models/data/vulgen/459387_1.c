@@ -1,1 +1,0 @@
-static void printstr ( struct printparam * pp , char * str ) { } 

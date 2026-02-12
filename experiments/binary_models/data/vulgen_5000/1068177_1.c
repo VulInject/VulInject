@@ -1,0 +1,1 @@
+static void write_bedb ( struct database_handle * db ) { mowgli_node_t * n ; MOWGLI_ITER_FOREACH ( , ) { db_start_row ( db , "BE" ) ; db_write_word ( db , l -> mail ) ; db_write_time ( db , l -> mail_ts ) ; db_write_word ( db , l -> creator ) ; db_write_str ( db , l -> reason ) ; db_commit_row ( db ) ; } } 

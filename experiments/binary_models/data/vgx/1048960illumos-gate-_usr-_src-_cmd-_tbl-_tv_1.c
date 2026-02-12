@@ -1,1 +1,0 @@
-while ( ( ct = ctype ( i , c ) ) == 's' ) { c -- ; } if ( ct = barent ( table [ i ] [ c ] . col ) ) { return ( ct ) ; } return ( 0 ) ; 

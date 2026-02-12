@@ -1,7 +1,0 @@
-static int FUN1(void *VAR1)
-{
-
-(void) VAR1;
-
-return VAR2;
-}

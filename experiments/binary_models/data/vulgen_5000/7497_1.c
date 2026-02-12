@@ -1,0 +1,1 @@
+extern void sysroff_print_tr_out ( void ) extern int main ( int , char * * ) char * getCHARS ( unsigned char * ptr , int * idx , int size , int max ) { int oc = * idx / 8 ; char * r ; int b = size ; if ( b == 0 ) { b = ptr [ oc ++ ] ; ( * idx ) += 8 ; } * idx += b * 8 ; r = xcalloc ( b + 1 , 1 ) ; memcpy ( r , ptr + oc , b ) ; r [ b ] = 0 ; return r ; } 

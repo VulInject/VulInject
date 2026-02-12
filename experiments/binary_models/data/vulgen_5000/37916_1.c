@@ -1,0 +1,1 @@
+int hexagon_gdb_read_register ( CPUState * cs , GByteArray * mem_buf , int n ) { HexagonCPU * cpu = HEXAGON_CPU ( cs ) ; CPUHexagonState * env = & cpu -> env ; if ( n < TOTAL_PER_THREAD_REGS ) { return gdb_get_regl ( mem_buf , env -> gpr [ n ] ) ; } } 

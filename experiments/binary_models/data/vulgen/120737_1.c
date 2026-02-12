@@ -1,1 +1,0 @@
-static const { const char * name ; unsigned int mask ; const char * decoder ; } , protocols [ ] { } ; 

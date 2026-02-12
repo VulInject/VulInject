@@ -1,0 +1,1 @@
+int wm_adsp2_init ( struct wm_adsp * dsp ) { int ret ; INIT_WORK ( & dsp -> boot_work , wm_adsp_boot_work ) ; dsp -> sys_config_size = sizeof ( wm_adsp_system_config_xm_hdr ) ; dsp -> cs_dsp . client_ops = & wm_adsp2_client_ops ; ret = cs_dsp_adsp2_init ( & dsp -> cs_dsp ) ; return wm_adsp_common_init ( dsp ) ; } 

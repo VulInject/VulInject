@@ -1,1 +1,0 @@
-WSKAPI VioWskFreeAddressInfo ( _In_ PWSK_CLIENT Client , _In_ PADDRINFOEXW AddrInfo ) { UNREFERENCED_PARAMETER ( Client ) ; UNREFERENCED_PARAMETER ( AddrInfo , NULL ) ; } 

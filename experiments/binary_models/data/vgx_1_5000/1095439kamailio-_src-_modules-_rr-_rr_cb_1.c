@@ -1,0 +1,1 @@
+struct rr_callback * rrcb_hl = 0 ; void destroy_rrcb_lists ( void ) { struct rr_callback * cbp , * cbp_tmp ; for ( cbp = rrcb_hl ; cbp ; ) { cbp_tmp = cbp ; cbp = cbp -> next ; } } 

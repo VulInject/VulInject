@@ -1,1 +1,0 @@
-void libpdffinish ( PDF pdf ) { strbuf_free ( pdf -> fb ) ; fm_free ( ) ; t1_free ( ) ; enc_free ( ) ; epdf_free ( ) ; ttf_free ( ) ; glyph_unicode_free ( ) ; zip_free ( pdf ) ; } 

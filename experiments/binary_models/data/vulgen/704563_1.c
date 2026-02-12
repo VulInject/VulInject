@@ -1,1 +1,0 @@
-int xfs_inobt_maxrecs ( struct xfs_mount * mp , int blocklen , int leaf ) { return xfs_inobt_block_maxrecs ( blocklen , leaf ) ; } 

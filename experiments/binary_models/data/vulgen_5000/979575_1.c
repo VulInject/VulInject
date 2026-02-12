@@ -1,0 +1,1 @@
+static int vidioc_querycap ( struct file * file , void * priv , struct v4l2_capability * v ) { struct si4713_usb_device * radio = video_drvdata ( file ) ; strscpy ( v -> driver , "radio-usb-si4713" , sizeof ( v -> driver ) ) ; strscpy ( v -> card , "Si4713 FM Transmitter" , sizeof ( v -> card ) ) ; return 0 ; } 

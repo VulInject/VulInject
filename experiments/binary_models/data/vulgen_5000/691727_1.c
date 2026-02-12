@@ -1,0 +1,1 @@
+void iotlb_lock_get ( struct omap_iommu * obj , struct iotlb_lock * l ) { u32 val ; l -> base = MMU_LOCK_BASE ( val ) ; l -> vict = MMU_LOCK_VICT ( val ) ; } 

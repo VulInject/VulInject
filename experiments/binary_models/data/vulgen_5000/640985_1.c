@@ -1,0 +1,1 @@
+static int whack_reset ( struct fec __iomem * fecp ) { int i ; FW ( fecp , ecntrl , FEC_ECNTRL_PINMUX | FEC_ECNTRL_RESET ) ; for ( i = 0 ; i < FEC_RESET_DELAY ; i ++ ) { udelay ( 1 ) ; } return - 1 ; } 

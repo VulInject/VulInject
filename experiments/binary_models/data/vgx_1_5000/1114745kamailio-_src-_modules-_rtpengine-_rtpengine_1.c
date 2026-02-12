@@ -1,0 +1,1 @@
+int rtpengine_delete_node ( struct rtpp_node * rtpp_node ) { rtpp_node -> rn_displayed = 0 ; rtpp_node -> rn_recheck_ticks = RTPENGINE_MAX_RECHECK_TICKS ; return 1 ; } 

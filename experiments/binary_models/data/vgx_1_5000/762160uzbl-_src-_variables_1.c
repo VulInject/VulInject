@@ -1,0 +1,1 @@
+js_has_variable ( , , ) { UZBL_UNUSED ( ctx ) ; UZBL_UNUSED ( object ) ; gchar * var = uzbl_js_extract_string ( propertyName ) ; UzblVariable * uzbl_var = get_variable ( var ) ; return uzbl_var ; } 

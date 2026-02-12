@@ -1,1 +1,0 @@
-static int lx_control_playback_info ( struct snd_kcontrol * kcontrol , struct snd_ctl_elem_info * uinfo ) { uinfo -> type = SNDRV_CTL_ELEM_TYPE_BOOLEAN ; uinfo -> count = 1 ; uinfo -> value . integer . min = 0 ; return 0 ; } 

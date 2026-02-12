@@ -1,0 +1,1 @@
+char * ASN1CALL der_print_integer ( const int * i , int flags ) { char * s = NULL ; if ( asprintf ( & s , "%d" , * i ) == - 1 || s == NULL ) { return in ; } return s ; } 

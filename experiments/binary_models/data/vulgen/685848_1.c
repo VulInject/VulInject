@@ -1,1 +1,0 @@
-void i32_to_extF80M ( int32_t a , extFloat80_t * zPtr ) { } 

@@ -1,1 +1,0 @@
-int dw_apb_clocksource_read ( struct dw_apb_clocksource * dw_cs ) { return ( u64 ) ~apbt_readl ( & dw_cs -> timer , APBTMR_N_CURRENT_VALUE ) ; } 

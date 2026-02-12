@@ -1,0 +1,1 @@
+static void mock_write_var_cell ( const var_cell_t * vc , or_connection_t * conn ) { ( void ) conn ; var_cell_t * newcell = var_cell_new ( vc -> payload_len ) ; memcpy ( newcell , vc , sizeof ( var_cell_t ) ) ; mock_got_var_cell = newcell ; } 

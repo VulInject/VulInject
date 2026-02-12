@@ -1,1 +1,0 @@
-static int ali_check_atapi_dma ( struct ata_queued_cmd * qc ) { if ( ! ali_atapi_dma ) { return - EOPNOTSUPP ; } return 0 ; } 

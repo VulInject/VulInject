@@ -1,0 +1,1 @@
+cfs_time_t fp_load_new [ VEC_MAX ] ; unsigned long fp_store [ VEC_MAX ] ; unsigned long fp_load_ckpt [ VEC_MAX ] ; unsigned long fp_load_ckpt_new [ VEC_MAX ] ; __attribute__ ( ) void load_vsx ( void ) { loadvsx ( fp_load , 0 ) ; } 

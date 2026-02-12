@@ -1,0 +1,1 @@
+static int managed_oom_mode ( const char * name , JsonVariant * v , JsonDispatchFlags flags , void * userdata ) { ManagedOOMMode * mode = userdata , m ; const char * s ; assert ( mode ) ; assert_se ( s = json_variant_string ( v ) ) ; m = managed_oom_mode_from_string ( s ) ; * mode = m ; return 0 ; } 

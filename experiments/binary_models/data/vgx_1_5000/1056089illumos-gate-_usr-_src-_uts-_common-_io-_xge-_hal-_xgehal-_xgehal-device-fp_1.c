@@ -1,0 +1,1 @@
+__HAL_STATIC_CHANNEL __HAL_INLINE_CHANNEL int __hal_lro_get_free_slot ( xge_hal_lro_desc_t * ring_lro ) { int i ; for ( i = 0 ; i < XGE_HAL_LRO_MAX_BUCKETS ; i ++ ) { lro_t * lro_temp = & ring_lro -> lro_pool [ i ] ; } return - 1 ; } 

@@ -1,0 +1,1 @@
+static void json_interface ( struct ctl_show_interface * iface ) { json_do_array ( "interfaces" ) ; json_do_interface ( iface , NULL ) ; } 

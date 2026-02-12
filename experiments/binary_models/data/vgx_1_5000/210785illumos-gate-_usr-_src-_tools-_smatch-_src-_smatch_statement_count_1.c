@@ -1,0 +1,1 @@
+static void match_statement ( struct statement * stmt ) { int cnt ; cnt = get_stmt_cnt ( ) ; cnt ++ ; set_state ( my_id , "stmts" , alloc_state_num ( cnt ) ) ; } 

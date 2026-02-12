@@ -1,0 +1,1 @@
+static int connect_to_server ( const struct sockaddr * addr , socklen_t len ) { int fd = - 1 ; if ( fd == - 1 ) { log_err ( "Failed to create client socket" ) ; out } if ( connect ( fd , ( const sockaddr * ) addr , len ) == - 1 ) { log_err ( "Fail to connect to server" ) ; close_out } out close_out close ( fd ) ; fd = - 1 ; out return fd ; } 

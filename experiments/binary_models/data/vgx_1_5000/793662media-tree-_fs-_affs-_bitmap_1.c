@@ -1,0 +1,1 @@
+void affs_free_bitmap ( struct super_block * sb ) { struct affs_sb_info * sbi = AFFS_SB ( sb ) ; affs_brelse ( sbi -> s_bmap_bh ) ; sbi -> s_bmap_bh = NULL ; sbi -> s_last_bmap = ~ 0 ; kfree ( sbi -> s_bitmap ) ; sbi -> s_bitmap = NULL ; } 

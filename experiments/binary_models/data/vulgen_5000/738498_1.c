@@ -1,0 +1,1 @@
+static inline isc_result_t totext_hs_a ( ARGS_TOTEXT ) { isc_region_t region ; REQUIRE ( rdata -> type == dns_rdatatype_a ) ; REQUIRE ( rdata -> rdclass == dns_rdataclass_hs ) ; REQUIRE ( rdata -> length == 4 ) ; UNUSED ( tctx ) ; return ( inet_totext ( AF_INET , & region , target ) ) ; } 

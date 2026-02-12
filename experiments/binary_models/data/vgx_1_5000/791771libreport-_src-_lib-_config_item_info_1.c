@@ -1,0 +1,1 @@
+void ci_set_description ( config_item_info_t * ci , const char * description ) { ci -> description = g_strdup ( description ) ; } 

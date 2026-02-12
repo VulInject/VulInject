@@ -1,1 +1,0 @@
-char tfile [ NTFILE ] ; char ofile [ NTFILE ] ; char gfile [ NTFILE ] ; char hidenam [ NTFILE ] ; char * Ifile = "standard input" ; int Iline ; 

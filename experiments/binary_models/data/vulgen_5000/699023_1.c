@@ -1,0 +1,1 @@
+static bool vcap_rule_exists ( struct vcap_control * vctrl , u32 id ) { struct vcap_admin * admin ; list_for_each_entry ( , , ) list_for_each_entry ( , , ) if ( ri -> data . id == id ) { return true ; } return false ; } 

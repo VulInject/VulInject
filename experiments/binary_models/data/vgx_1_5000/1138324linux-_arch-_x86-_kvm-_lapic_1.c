@@ -1,0 +1,1 @@
+static void apic_sync_pv_eoi_from_guest ( struct kvm_vcpu * vcpu , struct kvm_lapic * apic ) { int vector ; BUG_ON ( ! pv_eoi_enabled ( vcpu ) ) ; vector = apic_set_eoi ( apic ) ; trace_kvm_pv_eoi ( apic , vector ) ; } 

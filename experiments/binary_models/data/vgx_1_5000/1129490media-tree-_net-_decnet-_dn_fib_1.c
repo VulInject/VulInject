@@ -1,0 +1,1 @@
+static void dn_fib_add_ifaddr ( struct dn_ifaddr * ifa ) { fib_magic ( RTM_NEWROUTE , RTN_LOCAL , ifa -> ifa_local , 16 , ifa ) ; } 

@@ -1,0 +1,1 @@
+void panfrost_devfreq_resume ( struct panfrost_device * pfdev ) { struct panfrost_devfreq * pfdevfreq = & pfdev -> pfdevfreq ; if ( ! pfdevfreq -> devfreq ) { return ; } panfrost_devfreq_reset ( pfdevfreq ) ; devfreq_resume_device ( pfdevfreq -> devfreq , NULL ) ; } 

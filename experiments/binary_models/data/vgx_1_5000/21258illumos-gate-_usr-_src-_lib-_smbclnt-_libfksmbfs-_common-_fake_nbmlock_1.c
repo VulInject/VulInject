@@ -1,0 +1,1 @@
+int nbl_svmand ( vnode_t * vp , cred_t * cr , int * svp ) { struct vattr va ; int error ; va . va_mask = AT_MODE ; error = VOP_GETATTR ( vp , & va , 0 , cr , NULL ) ; * svp = MANDLOCK ( vp , va . va_mode ) ; return ( 0 ) ; } 

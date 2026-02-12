@@ -1,0 +1,1 @@
+static int task_ptrace ( const struct task_struct * const parent , const struct task_struct * const child ) { if ( task_is_scoped ( parent , child ) ) { return 0 ; } return - EPERM ; } 

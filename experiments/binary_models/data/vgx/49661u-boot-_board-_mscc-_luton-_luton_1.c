@@ -1,1 +1,0 @@
-int FUN1 ( const char * VAR1 ) { if ( VAR2 -> VAR3 == VAR4 && strcmp ( VAR1 , "" ) == 0 ) { return 0 ; } return - 1 ; }

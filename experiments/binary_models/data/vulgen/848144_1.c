@@ -1,1 +1,0 @@
-PyCodeObject * PyFrame_GetCode ( PyFrameObject * frame ) { return frame -> f_code ; } 

@@ -1,0 +1,1 @@
+static int tegra_governor_event_handler ( struct devfreq * devfreq , unsigned int event , void * data ) { struct tegra_devfreq * tegra ; int ret = 0 ; tegra = dev_get_drvdata ( devfreq -> dev . parent ) ; return ret ; } 

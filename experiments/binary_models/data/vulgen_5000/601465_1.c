@@ -1,0 +1,1 @@
+int mbedtls_pkcs5_self_test ( int verbose ) { return ( 0 ) ; } static const size_t plen_test_data [ MAX_TESTS ] { 8 8 8 24 9 } ; ; static const unsigned char password_test_data [ MAX_TESTS ] [ 32 ] { "password" "password" "password" "passwordPASSWORDpassword" "pass\0word" } ; ; 

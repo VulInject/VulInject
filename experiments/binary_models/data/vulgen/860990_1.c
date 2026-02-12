@@ -1,1 +1,0 @@
-int main ( void ) { printf ( "+++Struct char-longdouble:\n" ) ; return 0 ; } 

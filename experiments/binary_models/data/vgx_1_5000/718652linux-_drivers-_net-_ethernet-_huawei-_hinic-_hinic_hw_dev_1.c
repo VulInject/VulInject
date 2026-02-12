@@ -1,0 +1,1 @@
+struct hinic_sq * hinic_hwdev_get_sq ( struct hinic_hwdev * hwdev , int i ) { struct hinic_func_to_io * func_to_io = & hwdev -> func_to_io ; struct hinic_qp * qp = & func_to_io -> qps [ i ] ; if ( i >= hinic_hwdev_num_qps ( hwdev ) ) { return in ; } return & qp -> sq ; } 

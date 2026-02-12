@@ -1,1 +1,0 @@
-static int __init platform_init ( void ) { platform_device_register ( & smc91x_device ) ; return 0 ; } 

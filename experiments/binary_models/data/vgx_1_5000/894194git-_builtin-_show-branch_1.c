@@ -1,0 +1,1 @@
+static struct commit * interesting ( struct commit_list * list ) { while ( list ) { struct commit * commit = list -> item ; list = list -> next ; return commit ; } return NULL ; } commit_name { const char * head_name ; int generation ; } 

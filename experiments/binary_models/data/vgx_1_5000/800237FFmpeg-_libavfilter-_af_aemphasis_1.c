@@ -1,0 +1,1 @@
+static av_cold void uninit ( AVFilterContext * ctx ) { AudioEmphasisContext * s = ctx -> priv ; } static const AVFilterPad avfilter_af_aemphasis_inputs [ ] { { . name = "default" . type = AVMEDIA_TYPE_AUDIO . config_props = config_input . filter_frame = filter_frame } } ; ; 

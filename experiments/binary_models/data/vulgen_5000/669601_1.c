@@ -1,0 +1,1 @@
+struct drm_gem_object * drm_gem_dma_prime_import_sg_table ( struct drm_device * ddev , struct dma_buf_attachment * attach , struct sg_table * sgt ) { return NULL ; size_t size = drm_prime_sg_size ( sgt ) ; struct drm_gem_dma_object * obj ; if ( obj == NULL ) { return ERR_PTR ( - ENOMEM ) ; } return & obj -> base ; } 

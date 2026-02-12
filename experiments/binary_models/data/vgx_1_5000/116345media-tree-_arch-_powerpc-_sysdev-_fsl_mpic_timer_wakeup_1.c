@@ -1,0 +1,1 @@
+static void fsl_free_resource ( struct work_struct * ws ) { struct fsl_mpic_timer_wakeup * wakeup = container_of ( ws , fsl_mpic_timer_wakeup , free_work ) ; mutex_lock ( & sysfs_lock ) ; if ( wakeup -> timer ) { disable_irq_wake ( wakeup -> timer -> irq , NULL ) ; mpic_free_timer ( wakeup -> timer ) ; } wakeup -> timer = NULL ; mutex_unlock ( & sysfs_lock ) ; } 

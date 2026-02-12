@@ -1,1 +1,0 @@
-n = vsnprintf ( buffer , size , fmt , ap ) ; if ( n < size ) { break ; } size *= 2 ; buffer = ( char * ) realloc ( buffer , size ) ; if ( buffer == NULL ) { return ( ERR ) ; } ( ap ) ; rv = waddnstr ( w , buffer , - 1 ) ; return ( rv ) ; 

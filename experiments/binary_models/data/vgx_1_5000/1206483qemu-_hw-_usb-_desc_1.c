@@ -1,0 +1,1 @@
+int usb_desc_other ( const USBDescOther * desc , uint8_t * dest , size_t len ) { int bLength = desc -> length ?desc -> length : desc -> data [ 0 ] ; memcpy ( dest , desc -> data , bLength ) ; return bLength ; } 

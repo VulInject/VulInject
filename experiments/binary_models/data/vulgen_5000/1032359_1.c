@@ -1,0 +1,1 @@
+static void CVCondenseExtend ( CharView * cv , struct counterinfo * ci ) { SplineChar * sc = cv -> b . sc ; if ( cv -> b . drawmode == dm_grid ) { return ; } free ( ci -> zones [ 0 ] ) ; free ( ci -> zones [ 1 ] ) ; } 

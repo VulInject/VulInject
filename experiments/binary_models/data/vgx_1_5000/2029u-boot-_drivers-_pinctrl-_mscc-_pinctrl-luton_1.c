@@ -1,0 +1,1 @@
+static int luton_gpio_probe ( struct udevice * dev ) { struct gpio_dev_priv * uc_priv ; uc_priv = dev_get_uclass_priv ( dev ) ; uc_priv -> bank_name = "luton-gpio" ; uc_priv -> gpio_count = ARRAY_SIZE ( luton_pins , NULL ) ; return 0 ; } 

@@ -1,1 +1,0 @@
-static const char * error2string ( int error ) { int i = 0 ; while ( errorNames [ i ] . name != NULL ) { i ++ ; } return strerror ( error ) ; } 

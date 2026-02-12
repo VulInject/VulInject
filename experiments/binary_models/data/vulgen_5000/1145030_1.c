@@ -1,0 +1,1 @@
+static int visconti_get_function_groups ( struct pinctrl_dev * pctldev , unsigned int selector , const char * const * * groups , unsigned * const num_groups ) { struct visconti_pinctrl * priv = pinctrl_dev_get_drvdata ( pctldev ) ; * groups = priv -> devdata -> functions [ selector ] . groups ; return 0 ; } 

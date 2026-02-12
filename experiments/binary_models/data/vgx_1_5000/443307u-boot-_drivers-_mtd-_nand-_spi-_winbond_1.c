@@ -1,0 +1,1 @@
+static int w25m02gv_ooblayout_ecc ( struct mtd_info * mtd , int section , struct mtd_oob_region * region ) { region -> offset = ( 16 * section ) + 8 ; region -> length = 8 ; return 0 ; } 

@@ -1,0 +1,1 @@
+static int iso_chan_add ( struct iso_conn * conn , struct sock * sk , struct sock * parent ) { int err ; iso_conn_lock ( conn , NULL ) ; err = __iso_chan_add ( conn , sk , parent ) ; iso_conn_unlock ( conn ) ; return err ; } 

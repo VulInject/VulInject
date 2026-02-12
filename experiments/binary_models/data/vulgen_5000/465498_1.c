@@ -1,0 +1,1 @@
+static irqreturn_t charlcd_interrupt ( int irq , void * data ) { struct charlcd * lcd = data ; u8 status ; status = readl ( lcd -> virtbase + CHAR_STAT ) & 0x01 ; if ( status ) { complete ( & lcd -> complete ) ; } else { dev_info ( lcd -> dev , "Spurious IRQ (%02x)\n" , status ) ; } return IRQ_HANDLED ; } 

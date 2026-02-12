@@ -1,0 +1,1 @@
+static void crypto_authenc_esn_exit_tfm ( struct crypto_aead * tfm ) { struct crypto_authenc_esn_ctx * ctx = crypto_aead_ctx ( tfm ) ; crypto_free_skcipher ( ctx -> enc ) ; crypto_put_default_null_skcipher2 ( ) ; } 

@@ -1,0 +1,1 @@
+static void dce60_destroy_resource_pool ( struct resource_pool * * pool ) { struct dce110_resource_pool * dce110_pool = TO_DCE110_RES_POOL ( * pool ) ; dce60_resource_destruct ( dce110_pool ) ; * pool = NULL ; } 

@@ -1,0 +1,1 @@
+static bool update ( RCryptoJob * cj , const ut8 * buf , int len ) { char * obuf ; int olen ; if ( cj -> flag ) { obuf = r_punycode_decode ( ( const char * ) buf , len , & olen ) ; } else { obuf = r_punycode_encode ( buf , len , & olen ) ; } r_crypto_job_append ( cj , ( ut8 * ) obuf , olen ) ; return true ; } 

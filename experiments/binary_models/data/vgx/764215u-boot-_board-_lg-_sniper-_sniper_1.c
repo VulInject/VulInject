@@ -1,1 +1,0 @@
-int FUN1 ( enum fastboot_reboot_reason VAR1 ) { return FUN2 ( "" ) ; }

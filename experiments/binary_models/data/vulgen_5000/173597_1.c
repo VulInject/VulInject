@@ -1,0 +1,1 @@
+const char * digest_get_frontend_info ( void ) { char verbuf [ 64 ] ; ( void ) memset ( verbuf , 0x00 , sizeof verbuf ) ; ( void ) mbedtls_version_get_string ( verbuf ) ; ( void ) snprintf ( result , sizeof result , "ARM mbedTLS (compiled %s, library %s)" , MBEDTLS_VERSION_STRING , verbuf ) ; return result ; } 

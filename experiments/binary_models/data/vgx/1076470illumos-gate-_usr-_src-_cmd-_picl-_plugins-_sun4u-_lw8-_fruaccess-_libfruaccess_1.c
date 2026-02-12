@@ -1,1 +1,0 @@
-int FUN1 ( segment_hdl_t VAR1 , VAR2 * VAR3 ) { packet_info_t VAR4 ; int VAR5 ; if ( ( VAR5 = FUN2 ( ) ) == - 1 ) { return ( - 1 ) ; } VAR4 . VAR6 = VAR1 ; VAR4 . VAR7 = 0 ; return ( VAR4 . VAR7 ) ; }

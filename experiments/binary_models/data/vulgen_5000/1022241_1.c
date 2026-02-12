@@ -1,0 +1,1 @@
+static gint dissect_query_reply_resbytes ( proto_tree * tn3270_tree , tvbuff_t * tvb , gint offset , gint sf_body_length ) { gint start = offset ; static const hf_items fields [ ] { { & hf_tn3270_res_twobytes NULL 2 NULL ENC_BIG_ENDIAN } { NULL NULL 0 NULL 0 } } ; ; offset += tn3270_add_hf_items ( tn3270_tree , tvb , offset , fields ) ; return ( offset - start ) ; } 

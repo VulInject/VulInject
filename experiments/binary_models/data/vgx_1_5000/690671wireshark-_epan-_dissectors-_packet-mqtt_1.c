@@ -1,0 +1,1 @@
+static void mqtt_message_decode_free_cb ( void * record ) { mqtt_message_decode_t * u = ( mqtt_message_decode_t * ) record ; g_free ( u -> topic_pattern ) ; if ( u -> topic_regex ) { g_regex_unref ( u -> topic_regex ) ; } } 

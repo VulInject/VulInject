@@ -1,1 +1,0 @@
-void rtw_ndev_notifier_unregister ( void ) { unregister_netdevice_notifier ( 0 ) ; } 

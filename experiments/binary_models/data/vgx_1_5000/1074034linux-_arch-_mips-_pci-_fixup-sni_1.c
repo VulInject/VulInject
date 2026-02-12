@@ -1,0 +1,1 @@
+static inline int is_rm300_revd ( void ) { int csmsr = * ( volatile unsigned char * ) PCIMT_CSMSR ; return ( csmsr & 0xa0 ) == 0x20 ; } 

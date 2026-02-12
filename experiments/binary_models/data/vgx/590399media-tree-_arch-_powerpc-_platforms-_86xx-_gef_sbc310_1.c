@@ -1,1 +1,0 @@
-static int __init gef_sbc310_probe ( void ) { return 0 ; } 

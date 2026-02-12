@@ -1,0 +1,1 @@
+( blk_stat_disable_accounting ) ; void blk_stat_enable_accounting ( struct request_queue * q ) { cfs_time_t flags ; spin_lock_irqsave ( & q -> stats -> lock , flags ) ; if ( ! q -> stats -> accounting ++ ) { blk_queue_flag_set ( QUEUE_FLAG_STATS , q ) ; } spin_unlock_irqrestore ( & q -> stats -> lock , flags ) ; } 

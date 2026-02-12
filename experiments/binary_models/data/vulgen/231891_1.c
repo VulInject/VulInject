@@ -1,1 +1,0 @@
-bitset_bytes ( , ) { if ( bitset_stats_enabled ) { return bitset_stats_bytes ( ) ; } switch ( type ) { default : case BITSET_ARRAY : return abitset_bytes ( n_bits ) ; case BITSET_LIST : return lbitset_bytes ( n_bits ) ; case BITSET_TABLE : return tbitset_bytes ( n_bits ) ; case BITSET_VECTOR : return vbitset_bytes ( n_bits ) ; } } 

@@ -1,0 +1,1 @@
+static int lde_nbr_is_nexthop ( struct fec_node * fn , struct lde_nbr * ln ) { struct fec_nh * fnh ; LIST_FOREACH ( , , ) return ( 0 ) ; } 

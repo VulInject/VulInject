@@ -1,1 +1,0 @@
-static u32 iop13xx_atux_read ( unsigned long addr ) { u32 val ; return val ; } 

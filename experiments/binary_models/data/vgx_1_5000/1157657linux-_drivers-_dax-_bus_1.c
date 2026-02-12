@@ -1,0 +1,1 @@
+( alloc_dax_region ) ; static void dax_mapping_release ( struct device * dev ) { struct dax_mapping * mapping = to_dax_mapping ( dev ) ; struct dev_dax * dev_dax = to_dev_dax ( dev -> parent ) ; ida_free ( & dev_dax -> ida , mapping -> id ) ; } 

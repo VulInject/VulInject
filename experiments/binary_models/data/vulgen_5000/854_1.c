@@ -1,0 +1,1 @@
+static int nfs_namespace_getattr ( struct mnt_idmap * idmap , const struct path * path , struct kstat * stat , u32 request_mask , unsigned int query_flags ) { if ( NFS_FH ( d_inode ( path -> dentry ) ) -> size != 0 ) { return nfs_getattr ( idmap , path , stat , request_mask , query_flags ) ; } return 0 ; } 

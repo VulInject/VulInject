@@ -1,0 +1,1 @@
+static int initiator_send_AUTH ( struct message * msg ) { msg -> exchange -> flags |= EXCHANGE_FLAG_ENCRYPT ; return 0 ; } 

@@ -1,0 +1,1 @@
+int acpivout_match ( struct device * parent , void * match , void * aux ) { struct acpi_attach_args * aaa = aux ; struct cfdata * cf = match ; return ( 1 ) ; } 

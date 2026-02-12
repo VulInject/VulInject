@@ -1,1 +1,0 @@
-static void ascii_endline ( struct termp * p ) { p -> line ++ ; if ( ( int ) p -> tcol -> offset > p -> ti ) { p -> tcol -> offset -= p -> ti ; } else { p -> tcol -> offset = 0 ; } putchar ( '\n' ) ; } 

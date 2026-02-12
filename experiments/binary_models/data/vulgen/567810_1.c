@@ -1,1 +1,0 @@
-int pas_set_intr ( int mask ) { pas_intr_mask |= mask ; pas_write ( pas_intr_mask , 0x0B8B ) ; return 0 ; } 

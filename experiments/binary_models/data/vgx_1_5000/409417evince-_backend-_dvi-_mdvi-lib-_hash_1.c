@@ -1,0 +1,1 @@
+void mdvi_hash_init ( DviHashTable * hash ) { hash -> buckets = NULL ; hash -> nbucks = 0 ; hash -> nkeys = 0 ; hash -> hash_func = NULL ; hash -> hash_free = NULL ; } 

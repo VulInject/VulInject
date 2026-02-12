@@ -1,0 +1,1 @@
+R_API void r_syscall_free ( RSyscall * s ) { if ( s ) { if ( s -> refs > 0 ) { s -> refs -- ; return ; } sdb_free ( s -> srdb ) ; sdb_free ( s -> db ) ; free ( s -> cpu ) ; free ( s -> arch ) ; free ( s ) ; } } 

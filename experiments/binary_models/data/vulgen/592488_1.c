@@ -1,1 +1,0 @@
-void xmlFreeNotationTable ( xmlNotationTablePtr table ) { xmlHashFree ( table , 0 ) ; } 

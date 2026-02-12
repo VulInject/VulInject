@@ -1,0 +1,1 @@
+static struct platform_driver e3x0_button_driver = { . driver = { . name = "e3x0-button" . of_match_table = of_match_ptr ( e3x0_button_match ) . pm = pm_sleep_ptr ( & e3x0_button_pm_ops ) } . probe = e3x0_button_probe } ; 

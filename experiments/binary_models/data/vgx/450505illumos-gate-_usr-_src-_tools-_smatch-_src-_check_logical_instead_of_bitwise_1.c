@@ -1,1 +1,0 @@
-if ( expr -> type != EXPR_BINOP ) { return 0 ; } return 0 ; 

@@ -1,0 +1,1 @@
+const EVP_MD * EVP_md4 ( void ) HC_DEPRECATED_CRYPTO { hcrypto_validate ( ) ; if ( _heim_openssl_fips_enabled ( ) ) { return in ; } return EVP_DEF_OP ( hcrypto , md4 ) ; return EVP_DEF_OP ( HCRYPTO_DEF_PROVIDER , md4 ) ; } 

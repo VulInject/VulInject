@@ -1,0 +1,1 @@
+static const char * qdisc_get_tca_kind ( const QDisc * qdisc ) { return ( QDISC_VTABLE ( qdisc ) && QDISC_VTABLE ( qdisc ) -> tca_kind ) ?QDISC_VTABLE ( qdisc ) -> tca_kind : qdisc -> tca_kind ; } 

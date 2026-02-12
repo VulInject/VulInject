@@ -1,0 +1,1 @@
+void OutputStreamingShutdown ( void ) { OutputStreamingLogger * logger = list ; while ( logger ) { OutputStreamingLogger * next_logger = logger -> next ; SCFree ( logger ) ; logger = next_logger ; } } 

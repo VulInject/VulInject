@@ -1,0 +1,1 @@
+static void dw_spi_dma_exit ( struct dw_spi * dws ) { if ( dws -> txchan ) { dmaengine_terminate_sync ( dws -> txchan ) ; } if ( dws -> rxchan ) { dmaengine_terminate_sync ( dws -> rxchan ) ; dma_release_channel ( dws -> rxchan ) ; } } 

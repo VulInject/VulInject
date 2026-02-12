@@ -1,1 +1,0 @@
-void xfree ( MINT * c ) { } 

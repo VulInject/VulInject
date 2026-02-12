@@ -1,0 +1,1 @@
+static int inject_init ( void ) { if ( ! alloc_cpumask_var ( & mce_inject_cpumask , GFP_KERNEL ) ) { return - ENOMEM ; } pr_info ( "Machine check injector initialized\n" ) ; register_mce_write_callback ( mce_write , NULL ) ; register_nmi_handler ( NMI_LOCAL , mce_raise_notify , 0 , "mce_notify" ) ; return 0 ; } 

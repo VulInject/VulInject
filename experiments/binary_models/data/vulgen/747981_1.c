@@ -1,1 +1,0 @@
-static int kmb_ocs_hcu_sha_cra_init ( struct crypto_tfm * tfm ) { struct ocs_hcu_ctx * ctx = crypto_tfm_ctx ( tfm ) ; return 0 ; } 

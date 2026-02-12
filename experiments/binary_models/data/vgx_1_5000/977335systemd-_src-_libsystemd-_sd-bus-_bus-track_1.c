@@ -1,0 +1,1 @@
+_public_ const char * sd_bus_track_first ( sd_bus_track * track ) { const char * n = NULL ; if ( ! track ) { return in ; } track -> modified = false ; track -> iterator = ITERATOR_FIRST ; ( void ) hashmap_iterate ( track -> names , & track -> iterator , NULL , ( const void * * ) & n ) ; return n ; } 

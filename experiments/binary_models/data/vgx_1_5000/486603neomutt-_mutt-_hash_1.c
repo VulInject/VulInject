@@ -1,0 +1,1 @@
+static struct HashElem * union_hash_find_elem ( const struct HashTable * table , union HashKey key ) { if ( ! table ) { return in ; } size_t hash = table -> gen_hash ( key , table -> num_elems ) ; struct HashElem * he = table -> table [ hash ] ; for ( ; he ; he = he -> next ) { if ( table -> cmp_key ( key , he -> key ) == 0 ) { return he ; } } return NULL ; } 

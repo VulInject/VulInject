@@ -1,0 +1,1 @@
+int arch_switch_tls ( struct task_struct * to ) { if ( ! host_supports_tls ) { return 0 ; } return 0 ; } 

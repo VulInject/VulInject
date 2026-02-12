@@ -1,0 +1,1 @@
+struct rpc_xprt * xprt_iter_get_helper ( rpc_xprt_iter * xpi , rpc_xprt * * fn ( rpc_xprt_iter * ) ) ( rpc_xprt * ret , { ret = fn ( xpi ) ret = xprt_get ( ret ) } ) ( ret == NULL ) ; return ret ; 

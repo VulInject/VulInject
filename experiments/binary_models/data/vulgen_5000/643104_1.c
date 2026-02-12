@@ -1,0 +1,1 @@
+"	ldw	r8, %1(r8)\n" "	jmp	r8\n" : : "i" ( offsetof ( void ) ) , "i" ( FO ( x ) ) : "gp" ; volatile volatile volatile volatile volatile volatile static void * * jt ; volatile volatile , static void __attribute__ ( ( unused ) ) dummy ( void ) ( ) 

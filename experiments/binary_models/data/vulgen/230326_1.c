@@ -1,1 +1,0 @@
-int BN_num_bits ( const BIGNUM * a ) { int i = a -> top - 1 ; return ( ( i * BN_BITS2 ) + BN_num_bits_word ( a -> d [ i ] ) ) ; } 

@@ -1,0 +1,1 @@
+static snd_pcm_uframes_t snd_sonicvibes_playback_pointer ( struct snd_pcm_substream * substream ) { struct sonicvibes * sonic = snd_pcm_substream_chip ( substream ) ; size_t ptr ; ptr = sonic -> p_dma_size - snd_sonicvibes_getdmaa ( sonic ) ; return bytes_to_frames ( substream -> runtime , ptr ) ; } 

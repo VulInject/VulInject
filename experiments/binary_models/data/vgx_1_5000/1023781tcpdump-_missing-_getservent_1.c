@@ -1,0 +1,1 @@
+void endservent ( void ) { if ( servf ) { fclose ( servf , NULL ) ; servf = NULL ; } _serv_stayopen = 0 ; } 

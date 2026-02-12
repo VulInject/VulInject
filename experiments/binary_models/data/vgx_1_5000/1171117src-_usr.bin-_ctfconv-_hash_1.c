@@ -1,0 +1,1 @@
+static unsigned int hash_qlookup ( struct hash * , const char * ) void hash_delete ( struct hash * h ) { free ( h -> t ) ; } 

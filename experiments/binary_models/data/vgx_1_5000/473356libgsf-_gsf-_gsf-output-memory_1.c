@@ -1,0 +1,1 @@
+gsf_output_memory_get_bytes ( ) { g_return_val_if_fail ( mem != NULL ) ; return mem -> buffer ; } 

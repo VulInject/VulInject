@@ -1,1 +1,0 @@
-static int netdev_vxcan_verify ( NetDev * netdev , const char * filename ) { VxCan * v ; assert ( netdev ) ; v = VXCAN ( netdev ) ; assert ( v ) ; if ( ! v -> ifname_peer ) { return log_netdev_warning_errno ( netdev , SYNTHETIC_ERRNO ( EINVAL ) , "VxCan NetDev without peer name configured in %s. Ignoring" , filename ) ; } return 0 ; } 

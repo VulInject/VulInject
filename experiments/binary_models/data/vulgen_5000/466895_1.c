@@ -1,0 +1,1 @@
+static int update_domain_stash ( struct fsl_dma_domain * dma_domain , u32 val ) { struct device_domain_info * info ; int ret = 0 ; list_for_each_entry ( , , ) { ret = update_liodn_stash ( info -> liodn , dma_domain , val ) ; } return ret ; } 

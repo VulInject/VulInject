@@ -1,0 +1,1 @@
+static ssize_t archive_write_gnutar_data ( struct archive_write * a , const void * buff , size_t s ) { struct gnutar * gnutar ; int ret ; gnutar = ( gnutar * ) a -> format_data ; ret = __archive_write_output ( a , buff , s ) ; gnutar -> entry_bytes_remaining -= s ; if ( ret != ARCHIVE_OK ) { return ( ret ) ; } return ( s ) ; } 

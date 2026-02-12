@@ -1,0 +1,1 @@
+static inline int64_t avr_timer16_ns_to_ticks ( AVRTimer16State * t16 , int64_t t ) { return t / t16 -> period_ns ; } 

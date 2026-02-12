@@ -1,0 +1,1 @@
+static void rt286_index_sync ( struct snd_soc_component * component ) { struct rt286_priv * rt286 = snd_soc_component_get_drvdata ( component ) ; int i ; for ( i = 0 ; i < INDEX_CACHE_SIZE ; i ++ ) { } } static int rt286_support_power_controls [ ] { RT286_DAC_OUT1 RT286_DAC_OUT2 RT286_ADC_IN1 RT286_ADC_IN2 RT286_MIC1 RT286_DMIC1 RT286_DMIC2 RT286_SPK_OUT RT286_HP_OUT } ; ; 

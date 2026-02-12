@@ -1,1 +1,0 @@
-static void version_usage ( void ) { fprintf ( stderr , "usage: version [-abdfopv]\n" ) ; options_usage ( version_options , NULL ) ; } 

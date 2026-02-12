@@ -1,0 +1,1 @@
+void cleanup_callback_cred ( void ) { if ( callback_cred ) { put_rpccred ( callback_cred , NULL ) ; callback_cred = NULL ; } } 

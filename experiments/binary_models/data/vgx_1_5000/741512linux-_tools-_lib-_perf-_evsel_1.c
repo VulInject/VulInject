@@ -1,0 +1,1 @@
+void perf_evsel__close ( struct perf_evsel * evsel ) { if ( evsel -> fd == NULL ) { return ; } perf_evsel__close_fd ( evsel ) ; } 

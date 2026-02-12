@@ -1,1 +1,0 @@
-size_t FUN1 ( size_t VAR1 ) { if ( FUN2 ( VAR1 == 0 ) ) { return 0 ; } return FUN3 ( VAR1 , VAR2 ) ; }

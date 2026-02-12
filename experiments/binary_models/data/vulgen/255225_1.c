@@ -1,1 +1,0 @@
-void destroy_nilfs ( struct the_nilfs * nilfs ) { might_sleep ( ) ; if ( nilfs_init ( nilfs ) ) { nilfs_sysfs_delete_device_group ( nilfs ) ; brelse ( nilfs -> ns_sbh [ 0 ] ) ; brelse ( nilfs -> ns_sbh [ 1 ] ) ; } } 

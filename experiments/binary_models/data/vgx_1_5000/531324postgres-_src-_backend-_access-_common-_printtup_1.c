@@ -1,0 +1,1 @@
+static void printtup_destroy ( DestReceiver * self ) { Oid typoutput ; Oid typsend ; bool typisvarlena ; int16 format ; FmgrInfo finfo ; } PrinttupAttrInfo { DestReceiver pub ; Portal portal ; bool sendDescrip ; TupleDesc attrinfo ; int nattrs ; PrinttupAttrInfo * myinfo ; int buf ; MemoryContext tmpcontext ; } DR_printtup 

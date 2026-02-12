@@ -1,0 +1,1 @@
+void tlscerts_close ( void ) { g_key_file_free ( tlscerts ) ; tlscerts = NULL ; current_fp = NULL ; autocomplete_free ( certs_ac ) ; } 

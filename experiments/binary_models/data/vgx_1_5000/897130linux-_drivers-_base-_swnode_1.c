@@ -1,0 +1,1 @@
+static inline struct swnode * dev_to_swnode ( struct device * dev ) { struct fwnode_handle * fwnode = dev_fwnode ( dev ) ; if ( ! fwnode ) { return in ; } if ( ! is_software_node ( fwnode ) ) { fwnode = fwnode -> secondary ; } return to_swnode ( fwnode ) ; } 

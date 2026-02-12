@@ -1,0 +1,1 @@
+void arm64_mm_context_put ( struct mm_struct * mm ) { unsigned long flags ; u64 asid = atomic64_read ( & mm -> context . id ) ; raw_spin_lock_irqsave ( & cpu_asid_lock , flags ) ; if ( refcount_dec_and_test ( & mm -> context . pinned ) ) { __clear_bit ( ctxid2asid ( asid ) , pinned_asid_map ) ; nr_pinned_asids -- ; } raw_spin_unlock_irqrestore ( & cpu_asid_lock , flags ) ; } 

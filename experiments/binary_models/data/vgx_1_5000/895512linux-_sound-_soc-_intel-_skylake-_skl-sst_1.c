@@ -1,0 +1,1 @@
+static void skl_clear_module_table ( struct sst_dsp * ctx ) { struct skl_module_table * module , * tmp ; if ( list_empty ( & ctx -> module_list ) ) { return ; } list_for_each_entry_safe ( , , , ) { list_del ( & module -> list ) ; } } 

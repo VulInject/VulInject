@@ -1,1 +1,0 @@
-static int sonypi_resume ( struct device * dev ) { sonypi_enable ( old_camera_power , NULL ) ; return 0 ; } 

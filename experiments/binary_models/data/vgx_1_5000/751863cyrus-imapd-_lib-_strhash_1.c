@@ -1,0 +1,1 @@
+EXPORTED unsigned strhash_legacy ( const char * string ) { int ret_val = 0 ; int i ; while ( * string ) { i = ( int ) * string ; ret_val ^= i ; ret_val <<= 1 ; string ++ ; } return ret_val ; } 

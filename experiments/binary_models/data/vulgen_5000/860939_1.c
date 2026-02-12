@@ -1,0 +1,1 @@
+static int wfx_hif_join_complete_indication ( struct wfx_dev * wdev , const struct wfx_hif_msg * hif , const void * buf ) { struct wfx_vif * wvif = wdev_to_wvif ( wdev , hif -> interface ) ; dev_warn ( wdev -> dev , "unattended JoinCompleteInd\n" ) ; return 0 ; } 

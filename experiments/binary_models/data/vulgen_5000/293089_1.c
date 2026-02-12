@@ -1,0 +1,1 @@
+struct mei_cl * mei_cl_alloc_linked ( struct mei_device * dev ) { struct mei_cl * cl ; int ret ; cl = mei_cl_allocate ( dev ) ; if ( ! cl ) { ret = - ENOMEM ; err } ret = mei_cl_link ( cl ) ; if ( ret ) { err } return cl ; err return ERR_PTR ( ret ) ; } 

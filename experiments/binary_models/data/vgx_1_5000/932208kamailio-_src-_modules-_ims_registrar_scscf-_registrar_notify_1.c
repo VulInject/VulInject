@@ -1,0 +1,1 @@
+static int free_tm_dlg ( dlg_t * td ) { if ( td ) { if ( td -> route_set ) { free_rr ( & td -> route_set ) ; } } return 0 ; } 

@@ -1,0 +1,1 @@
+void auth_domain_cleanup ( void ) { int h ; for ( h = 0 ; h < DN_HASHMAX ; h ++ ) { hlist_for_each_entry ( , , ) pr_warn ( "svc: domain %s still present at module unload.\n" , hp -> name ) ; } } 

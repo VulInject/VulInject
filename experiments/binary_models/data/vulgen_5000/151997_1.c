@@ -1,0 +1,1 @@
+static void test_printk ( struct kunit * test ) { EXPECTATION_UNINIT_VALUE_FN ( expect , "test_printk" ) ; EXPECTATION_UNINIT_VALUE_FN ( expect , "number" ) ; volatile int uninit ; kunit_info ( test , "uninit local passed to pr_info() (UMR report)\n" ) ; pr_info ( "%px contains %d\n" , & uninit , uninit ) ; } 

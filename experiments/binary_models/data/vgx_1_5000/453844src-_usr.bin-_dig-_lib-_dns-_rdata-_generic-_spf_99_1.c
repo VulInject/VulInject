@@ -1,0 +1,1 @@
+static inline isc_result_t towire_spf ( ARGS_TOWIRE ) { REQUIRE ( rdata -> type == dns_rdatatype_spf ) ; UNUSED ( cctx , NULL ) ; return ( isc_mem_tobuffer ( target , rdata -> data , rdata -> length ) ) ; } 

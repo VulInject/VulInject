@@ -1,0 +1,1 @@
+static void logical_sort ( struct intel_engine_cs * * engines , int num_engines ) { struct intel_engine_cs * sorted [ MAX_ENGINE_INSTANCE + 1 ] ; int i , j ; for ( i = 0 ; i < num_engines ; ++ i ) { for ( j = 0 ; j < MAX_ENGINE_INSTANCE + 1 ; ++ j ) { } } memcpy ( * engines , * sorted , sizeof ( intel_engine_cs * ) * num_engines ) ; } 

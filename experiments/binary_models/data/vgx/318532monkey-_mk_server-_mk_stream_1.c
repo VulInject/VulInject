@@ -1,1 +1,0 @@
-int mk_channel_release ( struct mk_channel * channel ) { return 0 ; } 

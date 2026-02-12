@@ -1,0 +1,1 @@
+static ssize_t rr_instance_write ( struct corerouter_peer * peer ) { ssize_t len = cr_write ( peer , "rr_instance_write()" ) ; if ( ! len ) { return 0 ; } if ( cr_write_complete ( peer ) ) { peer -> out -> pos = 0 ; cr_reset_hooks ( peer , NULL ) ; } return len ; } 

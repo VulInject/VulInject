@@ -1,1 +1,0 @@
-static u8 digital_payload_bits_to_size ( u8 payload_bits ) { return digital_payload_bits_map [ payload_bits ] ; } 

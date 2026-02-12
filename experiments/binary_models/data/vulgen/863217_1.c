@@ -1,1 +1,0 @@
-ingenic_uart_config { int fifosize ; } 

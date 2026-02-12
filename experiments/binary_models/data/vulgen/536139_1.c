@@ -1,1 +1,0 @@
-int __init seg6_hmac_init ( int ) { return seg6_hmac_init_algo ( ) ; } 

@@ -1,1 +1,0 @@
-dst += stride ; src += 4 ; 

@@ -1,1 +1,0 @@
-int fdisk_get_library_features ( const char * * * features ) { * features = lib_features ; return ARRAY_SIZE ( lib_features ) - 1 ; } 

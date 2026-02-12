@@ -1,0 +1,1 @@
+static void hgafb_imageblit ( struct fb_info * info , const struct fb_image * image ) { u8 __iomem * dest ; u8 * cdat = ( u8 * ) image -> data ; u_int rows , y = image -> dy ; u_int x ; u8 d ; for ( rows = image -> height ; rows -- ; y ++ ) { for ( x = 0 ; x < image -> width ; x += 8 ) { d = * cdat ++ ; fb_writeb ( d , dest ) ; } } } 

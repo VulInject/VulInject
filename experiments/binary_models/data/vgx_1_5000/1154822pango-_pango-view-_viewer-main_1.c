@@ -1,0 +1,1 @@
+g_free ( title ) ; -> destroy_surface ( instance , surface ) ; g_object_unref ( context ) ; view -> destroy ( instance , NULL ) ; finalize ( ) ; return 0 ; 

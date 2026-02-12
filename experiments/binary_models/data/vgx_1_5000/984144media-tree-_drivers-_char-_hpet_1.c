@@ -1,0 +1,1 @@
+static unsigned long hpet_calibrate ( struct hpets * hpetp ) { cfs_time_t ret = ~ 0UL ; unsigned long tmp ; for ( ; ; ) { tmp = __hpet_calibrate ( hpetp ) ; if ( ret <= tmp ) { break ; } ret = tmp ; } return ret ; } 

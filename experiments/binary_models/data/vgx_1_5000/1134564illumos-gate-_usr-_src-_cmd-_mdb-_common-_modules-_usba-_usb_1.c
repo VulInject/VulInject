@@ -1,0 +1,1 @@
+extern uintptr_t mdb_usba_hcdi_get_hcdi ( struct dev_info * ) usba_device2devinfo_data { int u2d_target_usb_dev_p ; uintptr_t * u2d_dip_addr ; boolean_t u2d_found ; } usba_device2devinfo_cbdata_t 

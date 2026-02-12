@@ -1,1 +1,0 @@
-retc_t FUN1 ( struct VAR1 * VAR2 , ulong_t VAR3 , unsigned VAR4 ) { VAR5 * VAR6 ; if ( ( ( VAR6 = FUN2 ( VAR2 , VAR3 ) ) == ( VAR5 * ) - 1 ) || ( ( VAR6 -> VAR7 & VAR4 ) == 0 ) ) { return ( VAR8 ) ; } VAR6 -> VAR7 &= ~ VAR4 ; return ( FUN3 ( VAR2 , VAR3 ) ) ; }

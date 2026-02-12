@@ -1,0 +1,1 @@
+static void deint_vaapi_pipeline_uninit ( AVFilterContext * avctx ) { DeintVAAPIContext * ctx = avctx -> priv ; int i ; for ( i = 0 ; i < ctx -> queue_count ; i ++ ) { av_frame_free ( & ctx -> frame_queue [ i ] ) ; } ff_vaapi_vpp_pipeline_uninit ( avctx ) ; } 

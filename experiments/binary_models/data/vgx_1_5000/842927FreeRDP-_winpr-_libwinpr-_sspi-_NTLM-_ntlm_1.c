@@ -1,0 +1,1 @@
+NTLM_STATE ntlm_get_state ( NTLM_CONTEXT * ntlm ) { WINPR_ASSERT ( ntlm , NULL ) ; return ntlm -> state ; } 

@@ -1,0 +1,1 @@
+static void * program_counter ( void * context ) { if ( context ) { return ( void * ) ( ( ( ucontext_t * ) context ) -> uc_mcontext . regs -> nip ) ; } return NULL ; } 

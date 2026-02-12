@@ -1,0 +1,1 @@
+R_API void r_interval_tree_init ( RIntervalTree * tree , RIntervalNodeFree free ) { tree -> free = free ; } 

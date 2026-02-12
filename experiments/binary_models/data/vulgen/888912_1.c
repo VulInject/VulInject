@@ -1,1 +1,0 @@
-static int cpu_apl_probe ( struct udevice * dev ) { if ( gd -> flags & GD_FLG_RELOC ) { int ret ; if ( ret ) { return log_ret ( ret ) ; } } return 0 ; } 

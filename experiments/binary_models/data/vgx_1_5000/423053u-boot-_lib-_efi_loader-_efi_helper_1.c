@@ -1,0 +1,1 @@
+int algo_to_len ( const char * algo ) { int i ; for ( i = 0 ; i < MAX_GUID_TO_HASH_COUNT ; i ++ ) { if ( ! strcmp ( algo , guid_to_hash [ i ] . algo ) ) { return guid_to_hash [ i ] . bits / 8 ; } } return 0 ; } 

@@ -1,0 +1,1 @@
+void dm_tm_destroy ( struct dm_transaction_manager * tm ) { if ( ! tm -> is_clone ) { wipe_shadow_table ( tm ) ; } } 

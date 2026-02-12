@@ -1,1 +1,0 @@
-static void nstime_get ( nstime_t * time ) { struct timespec ts ; clock_gettime ( CLOCK_MONOTONIC_COARSE , & ts ) ; } 

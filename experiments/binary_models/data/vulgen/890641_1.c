@@ -1,1 +1,0 @@
-MODULE_DESCRIPTION ( "Virtual DVB Demodulator Driver" ) ; MODULE_AUTHOR ( "Daniel W. S. Almeida" ) ; 

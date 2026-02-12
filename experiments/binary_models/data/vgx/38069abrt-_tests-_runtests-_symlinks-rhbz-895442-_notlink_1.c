@@ -1,1 +1,0 @@
-int main ( int argc , char * * argv ) { int VAR1 = 0 ; struct VAR2 * VAR3 = FUN1 ( argv [ 1 ] , 0 ) ; char * VAR4 = FUN2 ( VAR3 , "" , VAR5 ) ; FUN3 ( "" , VAR4 ) ; if ( ! VAR4 || strcmp ( VAR4 , "" ) ) { VAR1 = 1 ; } FUN4 ( VAR3 , NULL ) ; return VAR1 ; }

@@ -1,0 +1,1 @@
+int r8712_os_recv_resource_alloc ( struct _adapter * padapter , union recv_frame * precvframe ) { precvframe -> u . hdr . pkt = NULL ; return _SUCCESS ; } 

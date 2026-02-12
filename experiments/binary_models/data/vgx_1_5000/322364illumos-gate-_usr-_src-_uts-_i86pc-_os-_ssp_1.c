@@ -1,0 +1,1 @@
+extern uint64_t ultra_gettick ( void ) extern hrtime_t tsc_read ( void ) void ssp_init ( void ) { int i ; if ( __stack_chk_guard == 0 ) { { int state [ 16 ] ; hrtime_t ts [ 8 ] ; uintptr_t g ; } , s for ( i = 0 ; i < 8 ; ++ i ) { s . ts [ i ] = SSP_GET_TICK ( ) ; } salsa_hash ( s . state ) ; __stack_chk_guard = s . g ; } } 

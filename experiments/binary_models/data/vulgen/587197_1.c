@@ -1,1 +1,0 @@
-static int p8022_request ( struct datalink_proto * dl , struct sk_buff * skb , unsigned char * dest ) { return 0 ; } 

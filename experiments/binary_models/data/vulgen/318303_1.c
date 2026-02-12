@@ -1,1 +1,0 @@
-static const int mdays [ ] { 31 28 31 30 31 30 31 31 30 31 30 31 } ; ; 

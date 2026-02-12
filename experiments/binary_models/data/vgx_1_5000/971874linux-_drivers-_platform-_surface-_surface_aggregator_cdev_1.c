@@ -1,0 +1,1 @@
+( ssam_debug_init ) ; static void __exit ssam_debug_exit ( void ) { platform_driver_unregister ( & ssam_cdev_driver ) ; platform_device_unregister ( ssam_cdev_device , NULL ) ; } 

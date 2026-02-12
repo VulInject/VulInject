@@ -1,1 +1,0 @@
-sort_dimension { const char * name ; int * cmp ( struct kwork_work * l , struct kwork_work * r ) int list ; } 

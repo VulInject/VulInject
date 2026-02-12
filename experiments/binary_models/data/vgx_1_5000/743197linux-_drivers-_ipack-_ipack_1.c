@@ -1,0 +1,1 @@
+static DEFINE_IDA ( ipack_ida ) ; static void ipack_device_release ( struct device * dev ) { struct ipack_device * device = to_ipack_dev ( dev ) ; kfree ( device -> id ) ; device -> release ( device , NULL ) ; } 

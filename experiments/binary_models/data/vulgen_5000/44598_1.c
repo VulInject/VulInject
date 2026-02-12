@@ -1,0 +1,1 @@
+static int restore_sigcontext ( struct pt_regs * regs , struct sigcontext __user * sc ) { unsigned int err = 0 ; unsigned long old_usp ; current -> restart_block . fn = do_no_restart_syscall ; regs -> dccr |= 1 << 8 ; err |= __get_user ( old_usp , & sc -> usp ) ; wrusp ( old_usp ) ; return err ; badframe return 1 ; } 

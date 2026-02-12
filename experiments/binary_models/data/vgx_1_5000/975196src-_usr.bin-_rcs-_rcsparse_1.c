@@ -1,0 +1,1 @@
+rcs_pdata { char * rp_buf ; int rp_blen ; char * rp_bufend ; size_t rp_tlen ; struct rcs_delta * rp_delta ; int rp_lineno ; int rp_msglineno ; int rp_token ; { RCSNUM * rev ; char * str ; struct tm date ; } , rp_value } 

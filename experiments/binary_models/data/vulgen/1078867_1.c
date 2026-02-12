@@ -1,1 +1,0 @@
-void target_laser_off ( gentity_t * self ) { self -> nextthink = 0 ; } 

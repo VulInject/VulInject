@@ -1,1 +1,0 @@
-rl_copy_text ( , ) int from , to ; { register int length ; char * copy ; if ( from > to ) { SWAP ( from , to ) ; } length = to - from ; strncpy ( copy , rl_line_buffer + from , length ) ; copy [ length ] = '\0' ; return ( copy ) ; } 

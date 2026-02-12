@@ -1,0 +1,1 @@
+unsigned char prom_get_idprom ( char * idbuf , int num_bytes ) { int i ; for ( i = 0 ; i < num_bytes ; i ++ ) { idbuf [ i ] = ( ( char * ) SUN3X_IDPROM ) [ i ] ; } return idbuf [ 0 ] ; } 

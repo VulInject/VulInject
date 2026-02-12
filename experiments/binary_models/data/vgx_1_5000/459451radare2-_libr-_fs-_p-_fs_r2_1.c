@@ -1,0 +1,1 @@
+static int __bsize_cat ( RFSRoot * root , RFSFile * file , const char * path ) { r_return_val_if_fail ( root && file , - 1 ) ; char * res = root -> cob . cmdstrf ( root -> cob . core , "b" ) ; file -> data = ( ut8 * ) res ; file -> p = root -> p ; file -> size = strlen ( res ) ; return file -> size ; } 

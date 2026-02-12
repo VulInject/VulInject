@@ -1,0 +1,1 @@
+int pinconf_validate_map ( const struct pinctrl_map * map , int i ) { if ( ! map -> data . configs . group_or_pin ) { pr_err ( "failed to register map %s (%d): no group/pin given\n" , map -> name , i ) ; return - EINVAL ; } return 0 ; } 

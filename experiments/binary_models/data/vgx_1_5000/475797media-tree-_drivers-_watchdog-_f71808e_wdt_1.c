@@ -1,0 +1,1 @@
+static inline void superio_exit ( int base ) watchdog_data { unsigned short sioaddr ; enum chips type ; cfs_time_t opened ; struct mutex lock ; char expect_close ; struct watchdog_info ident ; unsigned short timeout ; u8 timer_val ; char minutes_mode ; u8 pulse_val ; char pulse_mode ; char caused_reboot ; } 

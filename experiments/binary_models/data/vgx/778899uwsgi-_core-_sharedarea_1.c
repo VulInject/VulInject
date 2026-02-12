@@ -1,1 +1,0 @@
-int uwsgi_sharedarea_unlock ( int id ) { struct uwsgi_sharedarea * sa = uwsgi_sharedarea_get_by_id ( id , 0 ) ; if ( ! sa ) { return - 1 ; } uwsgi_rwunlock ( sa -> lock , NULL ) ; return 0 ; } 

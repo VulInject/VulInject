@@ -1,0 +1,1 @@
+int scmi_mbox_of_to_plat ( struct udevice * dev ) { return setup_channel ( dev , chan ) ; } static const struct udevice_id scmi_mbox_ids [ ] { { . compatible = "arm,scmi" } { } } ; ; 

@@ -1,0 +1,1 @@
+void drm_global_init ( void ) { int i ; for ( i = 0 ; i < DRM_GLOBAL_NUM ; ++ i ) { struct drm_global_item * item = & glob [ i ] ; item -> object = NULL ; item -> refcount = 0 ; } } 

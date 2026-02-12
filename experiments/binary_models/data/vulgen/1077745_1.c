@@ -1,1 +1,0 @@
-void cm_blk ( p_cm , blk_adr , blk_len ) p_ubyte_ blk_adr ; ulong blk_len ; { while ( blk_len -- ) { cm_nxt ( p_cm , * blk_adr ++ ) ; } } 

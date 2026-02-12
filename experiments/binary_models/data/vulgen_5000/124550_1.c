@@ -1,0 +1,1 @@
+void fuzzer_call_php_func_zval ( const char * func_name , int nargs , zval * args ) { zval retval , func ; ZVAL_STRING ( & func , func_name ) ; ZVAL_UNDEF ( & retval ) ; call_user_function ( CG ( function_table ) , NULL , & func , & retval , nargs , args ) ; zval_ptr_dtor ( & retval ) ; zval_ptr_dtor ( & func ) ; } 

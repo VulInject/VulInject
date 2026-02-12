@@ -1,0 +1,1 @@
+static void destroy_all_temps ( struct bbc_i2c_bus * bp ) { struct bbc_cpu_temperature * tp , * tpos ; list_for_each_entry_safe ( , , , ) { list_del ( & tp -> bp_list ) ; list_del ( & tp -> glob_list ) ; } } 

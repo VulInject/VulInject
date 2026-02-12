@@ -1,1 +1,0 @@
-int opalpm_cpuspeed ( int * freq ) { struct opal_softc * sc = opal_sc ; int i ; * freq = sc -> sc_freq [ i ] ; return 0 ; } 

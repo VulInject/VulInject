@@ -1,0 +1,1 @@
+static void snd_hwdep_proc_read ( struct snd_info_entry * entry , struct snd_info_buffer * buffer ) { struct snd_hwdep * hwdep ; mutex_lock ( & register_mutex ) ; list_for_each_entry ( , , ) snd_iprintf ( buffer , "%02i-%02i: %s\n" , hwdep -> card -> number , hwdep -> device , hwdep -> name ) ; } 

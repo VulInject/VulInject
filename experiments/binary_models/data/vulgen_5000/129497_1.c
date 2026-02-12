@@ -1,0 +1,1 @@
+KRB5_LIB_FUNCTION krb5_error_code KRB5_LIB_CALL krb5_log_msg ( krb5_context context , krb5_log_facility * fac , int level , char * * reply , const char * fmt , ... ) __attribute__ ( ( __format__ ( __printf__ , 5 , 6 ) ) ) ( va_list ap , krb5_error_code ret , va_start ( ap ) , ret = heim_vlog_msg ( context -> hcontext , fac , reply , level , fmt , ap ) , va_end ( ap ) , ret ) ; 

@@ -1,1 +1,0 @@
-gsf_output_bzip_finalize ( ) { GsfOutputBzip * bzip = ( GsfOutputBzip * ) obj ; if ( bzip -> sink != NULL ) { g_object_unref ( bzip -> sink ) ; bzip -> sink = NULL ; } parent_class -> finalize ( obj ) ; } 

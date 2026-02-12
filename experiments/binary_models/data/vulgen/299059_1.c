@@ -1,1 +1,0 @@
-int innwstr ( wchar_t * wcs , int n ) { int code ; return ( code ) ; } 

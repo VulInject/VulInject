@@ -1,1 +1,0 @@
-__setup ( "ssl" , ssl_chan_setup ) ; 

@@ -1,0 +1,1 @@
+struct patch_id * patch_id_iter_first ( struct commit * commit , struct patch_ids * ids ) { struct patch_id patch ; if ( ! patch_id_defined ( commit ) ) { return NULL ; } if ( init_patch_id_entry ( & patch , commit , ids ) ) { return NULL ; } return hashmap_get_entry ( & ids -> patches , & patch , ent , NULL ) ; } 

@@ -1,1 +1,0 @@
-gimp_param_enum_init ( ) { GimpParamSpecEnum * espec = GIMP_PARAM_SPEC_ENUM ( pspec ) ; } 

@@ -1,0 +1,1 @@
+void endmountent ( void ) { mnt = NULL ; } 

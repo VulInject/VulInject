@@ -1,0 +1,1 @@
+static cpacf_mask_t km_functions , kmc_functions , kmctr_functions ; s390_paes_ctx { struct pkey_seckey sk ; int pk ; unsigned long fc ; } 

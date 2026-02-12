@@ -1,1 +1,0 @@
-struct net_device_stats * eip_get_stats ( struct net_device * dev ) { return __ei_get_stats ( ) ; } 

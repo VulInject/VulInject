@@ -1,0 +1,1 @@
+void __init socfpga_reset_init ( void ) { struct device_node * np ; for_each_matching_node ( , ) a10_reset_init ( np , NULL ) ; } 

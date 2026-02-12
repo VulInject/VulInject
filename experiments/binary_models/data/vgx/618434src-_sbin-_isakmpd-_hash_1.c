@@ -1,1 +1,0 @@
-struct hash * hash_get ( enum hashes hashtype ) { int i ; LOG_DBG ( ( LOG_CRYPTO , 60 , "hash_get: requested algorithm %d" , hashtype ) ) ; for ( i = 0 ; i < sizeof hashes / sizeof hashes [ 0 ] ; i ++ ) { if ( hashtype == hashes [ i ] . type ) { return & hashes [ i ] ; } } return 0 ; } 

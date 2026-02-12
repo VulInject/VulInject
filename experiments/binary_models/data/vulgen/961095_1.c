@@ -1,1 +1,0 @@
-static guint32 crc_calc ( guint32 fcs , tvbuff_t * tvb , guint len ) { const guchar * cp ; while ( len -- ) { fcs = ( fcs >> 8 ) ^ tbl_crc24 [ ( fcs ^ * cp ++ ) & 0xff ] ; } return fcs ; } 

@@ -1,0 +1,1 @@
+static int ti_msgmgr_queue_rx_set_polled_mode ( struct ti_queue_inst * qinst , bool enable ) { if ( enable ) { disable_irq ( qinst -> irq , NULL ) ; qinst -> polled_rx_mode = true ; } else { enable_irq ( qinst -> irq ) ; qinst -> polled_rx_mode = false ; } return 0 ; } 

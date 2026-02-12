@@ -1,0 +1,1 @@
+static void crash_vmclear_local_loaded_vmcss ( void ) { int cpu = raw_smp_processor_id ( ) ; struct loaded_vmcs * v ; if ( ! crash_local_vmclear_enabled ( cpu ) ) { return ; } list_for_each_entry ( , , ) } 

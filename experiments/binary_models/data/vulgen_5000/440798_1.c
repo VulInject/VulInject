@@ -1,0 +1,1 @@
+static void dump_src_HTTag_Defines ( FILE * output , const SGML_dtd * dtd , int which ) { HTTag * tag = & ( dtd -> tags [ which ] ) ; } 

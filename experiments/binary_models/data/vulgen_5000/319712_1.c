@@ -1,0 +1,1 @@
+static inline struct rb_entry * rb_n2e ( const struct rb_type * t , void * node ) { return ( ( rb_entry * ) ( addr + t -> t_offset ) ) ; } 

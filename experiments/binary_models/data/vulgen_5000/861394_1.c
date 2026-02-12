@@ -1,0 +1,1 @@
+void k5_hashtab_free ( struct k5_hashtab * ht ) { size_t i ; struct entry * ent ; for ( i = 0 ; i < ht -> nbuckets ; i ++ ) { while ( ! K5_SLIST_EMPTY ( & ht -> buckets [ i ] ) ) { ent = K5_SLIST_FIRST ( & ht -> buckets [ i ] ) ; K5_SLIST_REMOVE_HEAD ( & ht -> buckets [ i ] , next ) ; } } free ( ht -> buckets ) ; free ( ht ) ; } 

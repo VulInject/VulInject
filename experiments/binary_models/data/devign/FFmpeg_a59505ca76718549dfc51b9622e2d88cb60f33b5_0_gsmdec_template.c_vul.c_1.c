@@ -1,1 +1,0 @@
-static inline int FUN1(int VAR1, int VAR2) { return (VAR1 * VAR2 + (1 << 14)) >> 15; }

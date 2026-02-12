@@ -1,0 +1,1 @@
+unsigned long long src_lo ; unsigned long long dst_hi ; unsigned long long dst_lo ; ip6_addr_t { unsigned long long hi ; unsigned long long lo ; } , BPF_PACKET_HEADER ip6_srh_t { unsigned char nexthdr ; unsigned char hdrlen ; unsigned char type ; unsigned char segments_left ; unsigned char first_segment ; unsigned char flags ; unsigned short tag ; } , BPF_PACKET_HEADER 

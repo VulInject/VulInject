@@ -1,0 +1,1 @@
+void clean_getout ( struct OperationConfig * config ) { if ( config ) { struct getout * next ; struct getout * node = config -> url_list ; while ( node ) { next = node -> next ; Curl_safefree ( node -> url ) ; Curl_safefree ( node -> infile ) ; Curl_safefree ( node ) ; node = next ; } config -> url_list = NULL ; } single_transfer_cleanup ( config ) ; } 

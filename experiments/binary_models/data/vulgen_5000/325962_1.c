@@ -1,0 +1,1 @@
+static struct iw_statistics * rtw_get_wireless_stats ( struct net_device * dev ) { struct adapter * padapter = ( adapter * ) rtw_netdev_priv ( dev ) ; struct iw_statistics * piwstats = & padapter -> iwstats ; int tmp_noise = 0 ; int tmp ; piwstats -> qual . updated = IW_QUAL_ALL_UPDATED | IW_QUAL_DBM ; return & padapter -> iwstats ; } 

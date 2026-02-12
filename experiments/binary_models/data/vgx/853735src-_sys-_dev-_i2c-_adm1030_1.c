@@ -1,1 +1,0 @@
-int admtmp_match ( struct device * parent , void * match , void * aux ) { struct i2c_attach_args * ia = aux ; return ( 0 ) ; } 

@@ -1,0 +1,1 @@
+static void * spl_ptr_heap_top ( spl_ptr_heap * heap ) { if ( heap -> count == 0 ) { return in ; } return heap -> elements ; } 

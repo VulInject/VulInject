@@ -1,1 +1,0 @@
-R_API void r_magic_free ( RMagic * ms ) { } 

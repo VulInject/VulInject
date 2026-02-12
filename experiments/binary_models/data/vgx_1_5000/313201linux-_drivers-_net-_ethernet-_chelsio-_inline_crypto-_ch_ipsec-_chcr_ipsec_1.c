@@ -1,0 +1,1 @@
+static void ch_ipsec_xfrm_free_state ( struct xfrm_state * x ) { struct ipsec_sa_entry * sa_entry ; if ( ! x -> xso . offload_handle ) { return ; } sa_entry = ( ipsec_sa_entry * ) x -> xso . offload_handle ; module_put ( THIS_MODULE ) ; } 

@@ -1,0 +1,1 @@
+static void seterr ( char * fmt , ... ) { int errstr [ 1024 ] ; va_list v ; va_start ( v , fmt ) ; ( void ) vsnprintf ( errstr , sizeof ( errstr ) , fmt , v ) ; va_end ( v ) ; PyErr_SetObject ( ZFSError , Py_BuildValue ( "is" , errno , errstr ) ) ; } 

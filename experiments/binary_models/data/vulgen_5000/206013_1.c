@@ -1,0 +1,1 @@
+static void assert_blob_creation ( const char * path_to_file , const char * blob_from_path , blob_creator_fn creator ) { git_oid oid ; cl_git_mkfile ( path_to_file , "1..2...3... Can you hear me?\n" ) ; cl_assert ( git_oid_streq ( & oid , "da5e4f20c91c81b44a7e298f3d3fb3fe2f178e32" ) == 0 ) ; } 

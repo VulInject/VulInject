@@ -1,0 +1,1 @@
+static int xhci_ring_open ( struct inode * inode , struct file * file ) { int i ; struct xhci_file_map * f_map ; const char * file_name = file_dentry ( file ) -> d_iname ; for ( i = 0 ; i < ARRAY_SIZE ( ring_files ) ; i ++ ) { f_map = & ring_files [ i ] ; } return single_open ( file , f_map -> show , inode -> i_private ) ; } 

@@ -1,0 +1,1 @@
+( mt76x02_mcu_cleanup ) ; void mt76x02_set_ethtool_fwver ( struct mt76x02_dev * dev , const struct mt76x02_fw_header * h ) { u16 bld = le16_to_cpu ( h -> build_ver ) ; u16 ver = le16_to_cpu ( h -> fw_ver ) ; } 

@@ -1,0 +1,1 @@
+extern int cpu_post_test_string ( void ) extern int cpu_post_test_complex ( void ) ulong cpu_post_makecr ( long v ) { int cr = 0 ; if ( v < 0 ) { cr |= 0x80000000 ; } if ( v > 0 ) { cr |= 0x40000000 ; } if ( v == 0 ) { cr |= 0x20000000 ; } return cr ; } 

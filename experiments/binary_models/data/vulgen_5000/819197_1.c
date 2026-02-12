@@ -1,0 +1,1 @@
+static tableid_t _declare_lookup_writer ( otl_LookupType type , _otl_Builder fn , const otl_Lookup * lookup , caryll_Buffer * * * subtables , size_t * lastOffset , bool * preferExtensionForThisLUT , otl_BuildHeuristics heuristics ) { return 0 ; } 

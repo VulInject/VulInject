@@ -1,0 +1,1 @@
+static void zonefs_free_zgroups ( struct super_block * sb ) { struct zonefs_sb_info * sbi = ZONEFS_SB ( sb ) ; enum zonefs_ztype ztype ; for ( ztype = 0 ; ztype < ZONEFS_ZTYPE_MAX ; ztype ++ ) { kvfree ( sbi -> s_zgroup [ ztype ] . g_zones ) ; sbi -> s_zgroup [ ztype ] . g_zones = NULL ; } } 

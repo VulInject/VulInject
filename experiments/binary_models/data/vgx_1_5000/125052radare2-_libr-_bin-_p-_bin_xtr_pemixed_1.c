@@ -1,0 +1,1 @@
+static void fill_metadata_info_from_hdr ( RBinXtrMetadata * meta , void * foo ) { meta -> arch = NULL ; meta -> bits = 0 ; meta -> machine = NULL ; meta -> type = NULL ; meta -> xtr_type = "net" ; } 

@@ -1,0 +1,1 @@
+nrf_serial_flash_params_t const * nrf_serial_flash_params_get ( const uint8_t * p_read_id ) { int i ; for ( i = 0 ; i < ARRAY_SIZE ( m_sflash_params ) ; ++ i ) { if ( memcmp ( m_sflash_params [ i ] . read_id , p_read_id , sizeof ( m_sflash_params [ i ] . read_id ) ) == 0 ) { return & m_sflash_params [ i ] ; } } return NULL ; } 

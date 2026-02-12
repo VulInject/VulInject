@@ -1,0 +1,21 @@
+static unsigned long
+titan_agp_translate(alpha_agp_info *agp, dma_addr_t addr)
+{
+struct titan_agp_aperture *aper = agp->aperture.sysdata;
+unsigned long baddr = addr - aper->arena->dma_base;
+unsigned long pte;
+
+if (addr < agp->aperture.bus_base ||
+addr >= agp->aperture.bus_base + agp->aperture.size) {
+printk("%s: addr out of range\n", __func__);
+return -EINVAL;
+}
+
+pte = aper->arena->ptes[baddr >> PAGE_SHIFT];
+if (!(pte & 1)) {
+printk("%s: pte not valid\n", __func__);
+return -EINVAL;
+}
+
+return (pte >> 1) << PAGE_SHIFT;
+}

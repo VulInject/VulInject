@@ -1,0 +1,1 @@
+static void ldaptab_mod_unload_ev ( const void * event_data , void * user_data ) { if ( strcmp ( "mod_quotatab_ldap.c" , ( const char * ) event_data ) == 0 ) { pr_event_unregister ( & quotatab_ldap_module , NULL ) ; quotatab_unregister_backend ( "ldap" , QUOTATAB_LIMIT_SRC ) ; } } 

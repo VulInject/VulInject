@@ -1,1 +1,0 @@
-unsigned int bitmask_last ( const struct bitmask * bmp ) { int i ; unsigned int m = bmp -> size ; for ( i = 0 ; i < bmp -> size ; i ++ ) { if ( _getbit ( bmp , i ) ) { m = i ; } } return m ; } 

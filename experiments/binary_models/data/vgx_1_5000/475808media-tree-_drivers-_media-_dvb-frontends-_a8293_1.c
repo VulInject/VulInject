@@ -1,0 +1,1 @@
+static int a8293_remove ( struct i2c_client * client ) { struct a8293_dev * dev = i2c_get_clientdata ( client ) ; dev_dbg ( & client -> dev , "\n" ) ; return 0 ; } static const struct i2c_device_id a8293_id_table [ ] { { "a8293" 0 } { } } ; ; 

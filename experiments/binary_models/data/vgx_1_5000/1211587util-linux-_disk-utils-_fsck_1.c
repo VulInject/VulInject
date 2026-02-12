@@ -1,0 +1,1 @@
+static void unlock_disk ( struct fsck_instance * inst ) { if ( inst -> lock < 0 ) { return ; } if ( verbose ) { printf ( _ ( "Unlocking %s.\n" ) , inst -> lockpath ) ; } close ( inst -> lock ) ; inst -> lock = - 1 ; inst -> lockpath = NULL ; } 

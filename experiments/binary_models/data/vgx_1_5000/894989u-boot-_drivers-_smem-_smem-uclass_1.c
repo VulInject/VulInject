@@ -1,0 +1,1 @@
+int smem_get_free_space ( struct udevice * dev , unsigned int host ) { struct smem_ops * ops = smem_get_ops ( dev ) ; return ops -> get_free_space ( host ) ; } 

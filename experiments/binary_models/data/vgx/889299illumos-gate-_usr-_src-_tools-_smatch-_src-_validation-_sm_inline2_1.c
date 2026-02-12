@@ -1,1 +1,0 @@
-int main ( void ) { FUN1 ( VAR1 ) ; return 0 ; }

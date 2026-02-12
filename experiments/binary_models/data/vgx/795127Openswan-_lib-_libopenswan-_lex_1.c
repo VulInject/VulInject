@@ -1,1 +1,0 @@
-void lexclose ( void ) { if ( flp -> tok_buffer ) { free ( flp -> tok_buffer ) ; } flp -> tok_buflen = 0 ; fclose ( flp -> fp ) ; flp = flp -> previous ; } 

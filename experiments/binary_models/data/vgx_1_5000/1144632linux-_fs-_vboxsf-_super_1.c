@@ -1,0 +1,1 @@
+static void vboxsf_free_fc ( struct fs_context * fc ) { struct vboxsf_fs_context * ctx = fc -> fs_private ; kfree ( ctx ) ; } 

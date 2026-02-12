@@ -1,1 +1,0 @@
-rstofill ( ) ; fprintf ( tabout , ".nf\n" ) ; 

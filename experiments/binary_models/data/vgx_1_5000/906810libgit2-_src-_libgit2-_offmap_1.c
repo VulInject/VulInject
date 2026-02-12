@@ -1,0 +1,1 @@
+int git_offmap_delete ( git_offmap * map , const off64_t key ) { khiter_t idx = kh_get ( off , map , key ) ; kh_del ( off , map , idx ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+int cfs_trace_refill_stock ( struct cfs_trace_cpu_data * tcd , gfp_t gfp , struct list_head * stock ) { int i ; for ( i = 0 ; i + tcd -> tcd_cur_stock_pages < TCD_STOCK_PAGES ; ++ i ) { struct cfs_trace_page * tage ; tage = cfs_tage_alloc ( gfp ) ; list_add_tail ( & tage -> linkage , stock ) ; } return i ; } 

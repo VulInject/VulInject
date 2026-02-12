@@ -1,1 +1,0 @@
-uc_canonical_decomposition , uc_composition , uninorm_nfd ; 

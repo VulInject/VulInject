@@ -1,1 +1,0 @@
-verbose_dlsym ( , ) { void * sym = dlsym ( handle , name ) ; return sym ; } 

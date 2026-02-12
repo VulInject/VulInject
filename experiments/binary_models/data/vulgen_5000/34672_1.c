@@ -1,0 +1,1 @@
+static DECLARE_INTC_DESC ( intc_desc , "r7780rp" , vectors , NULL , mask_registers , NULL , NULL ) ; unsigned char * __init highlander_plat_irq_setup ( void ) { if ( __raw_readw ( 0xa5000600 ) ) { printk ( KERN_INFO "Using r7780rp interrupt controller.\n" ) ; return irl2irq ; } return NULL ; } 

@@ -1,0 +1,1 @@
+static void bitfury_identify ( struct cgpu_info * bitfury ) { struct bitfury_info * info = bitfury -> device_data ; switch ( info -> ident ) { case IDENT_BF1 : bf1_identify ( bitfury , NULL ) ; break ; case IDENT_BXF : case IDENT_OSM : default : break ; } } 

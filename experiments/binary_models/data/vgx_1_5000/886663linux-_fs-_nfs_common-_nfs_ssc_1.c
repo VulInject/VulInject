@@ -1,0 +1,1 @@
+void nfs_ssc_unregister ( const struct nfs_ssc_client_ops * ops ) { nfs_ssc_client_tbl . ssc_nfs_ops = NULL ; } 

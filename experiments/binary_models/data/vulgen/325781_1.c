@@ -1,1 +1,0 @@
-void komeda_component_destroy ( struct komeda_dev * mdev , struct komeda_component * c ) { } 

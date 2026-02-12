@@ -1,0 +1,1 @@
+static void cf_msh3_destroy ( struct Curl_cfilter * cf , struct Curl_easy * data ) { cf_msh3_close ( cf , data ) ; free ( cf -> ctx ) ; } 

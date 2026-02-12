@@ -1,0 +1,1 @@
+static struct device_node * tegra_emc_find_node_by_ram_code ( struct device_node * node , u32 ram_code ) { struct device_node * np ; int err ; for_each_child_of_node ( , ) { u32 value ; err = of_property_read_u32 ( np , "nvidia,ram-code" , & value ) ; return np ; } return NULL ; } 

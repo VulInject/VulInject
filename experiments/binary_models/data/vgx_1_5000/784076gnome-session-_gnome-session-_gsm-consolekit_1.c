@@ -1,0 +1,1 @@
+gsm_consolekit_set_session_idle ( , ) { GsmConsolekit * manager = GSM_CONSOLEKIT ( system ) ; g_debug ( "Updating consolekit idle status: %d" , is_idle ) ; g_dbus_proxy_call_sync ( manager -> priv -> ck_session_proxy , "SetIdleHint" , g_variant_new ( "(b)" , is_idle ) , 0 , G_MAXINT , NULL ) ; } 

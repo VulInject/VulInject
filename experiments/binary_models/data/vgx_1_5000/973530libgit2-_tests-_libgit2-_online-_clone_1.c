@@ -1,0 +1,1 @@
+static int proxy_cred_cb ( git_credential * * out , const char * url , const char * username , unsigned int allowed , void * payload ) { GIT_UNUSED ( url ) ; GIT_UNUSED ( username ) ; GIT_UNUSED ( allowed ) ; GIT_UNUSED ( payload , NULL ) ; called_proxy_creds = 1 ; return git_credential_userpass_plaintext_new ( out , _remote_proxy_user , _remote_proxy_pass ) ; } 

@@ -1,1 +1,0 @@
-static void time_cb ( int fd , short event , void * arg ) { struct timeval tv ; int i , j ; called ++ ; } 

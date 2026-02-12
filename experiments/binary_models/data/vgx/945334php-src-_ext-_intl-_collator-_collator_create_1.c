@@ -1,1 +1,0 @@
-FUN1 ( ) { FUN2 ( VAR1 , VAR2 ) ; if ( FUN3 ( VAR3 , NULL , NULL ) == VAR4 ) { FUN4 ( ) ; } }

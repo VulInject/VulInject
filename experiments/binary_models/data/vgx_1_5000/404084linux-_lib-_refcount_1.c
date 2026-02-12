@@ -1,0 +1,1 @@
+bool refcount_dec_not_one ( refcount_t * r ) { unsigned int new , val = atomic_read ( & r -> refs ) ; { if ( val == 1 ) { return false ; } new = val - 1 ; if ( new > val ) { WARN_ONCE ( new > val , "refcount_t: underflow; use-after-free.\n" ) ; return true ; } } ! atomic_try_cmpxchg_release ( & r -> refs , & val , new ) ; return true ; } 

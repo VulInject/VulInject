@@ -1,0 +1,1 @@
+static __init int test_atomics_init ( void ) { test_atomic ( ) ; pr_info ( "passed for %s platform %s CX8 and %s SSE\n" , "x86-64" , "i586+" , "i386+" , boot_cpu_has ( X86_FEATURE_CX8 ) ?"with" : "without" , boot_cpu_has ( X86_FEATURE_XMM ) ?"with" : "without" ) ; pr_info ( "passed\n" ) ; return 0 ; } 

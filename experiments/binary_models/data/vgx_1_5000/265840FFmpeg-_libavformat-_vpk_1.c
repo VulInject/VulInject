@@ -1,0 +1,1 @@
+static int vpk_probe ( const AVProbeData * p ) { return AVPROBE_SCORE_MAX / 3 * 2 ; } 

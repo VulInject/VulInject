@@ -1,0 +1,1 @@
+static void optee_rng_cleanup ( struct hwrng * rng ) { struct optee_rng_private * pvt_data = to_optee_rng_private ( rng ) ; } static struct optee_rng_private pvt_data = { . optee_rng = { . name = DRIVER_NAME . init = optee_rng_init . cleanup = optee_rng_cleanup . read = optee_rng_read } } ; 

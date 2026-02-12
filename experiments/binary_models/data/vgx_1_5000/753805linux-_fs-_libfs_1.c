@@ -1,0 +1,1 @@
+int simple_unlink ( struct inode * dir , struct dentry * dentry ) { struct inode * inode = d_inode ( dentry ) ; inode -> i_ctime = dir -> i_ctime = dir -> i_mtime = current_time ( inode ) ; drop_nlink ( inode , NULL ) ; dput ( dentry ) ; return 0 ; } 

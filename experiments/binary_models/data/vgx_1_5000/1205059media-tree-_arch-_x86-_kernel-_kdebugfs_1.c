@@ -1,0 +1,1 @@
+static int __init arch_kdebugfs_init ( void ) { int error = 0 ; arch_debugfs_dir = debugfs_create_dir ( "x86" , NULL ) ; error = boot_params_kdebugfs_init ( ) ; return error ; } 

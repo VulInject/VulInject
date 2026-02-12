@@ -1,1 +1,0 @@
-"unrealircd-6" , ; MOD_INIT ( ) { CommandAdd ( modinfo -> handle , MSG_SENDSNO , cmd_sendsno , MAXPARA , CMD_SERVER ) ; return MOD_SUCCESS ; } 

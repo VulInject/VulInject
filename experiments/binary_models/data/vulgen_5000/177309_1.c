@@ -1,0 +1,1 @@
+static int cmux_ewma_cleanup_test ( const struct testcase_t * tc , void * ptr ) { ( void ) tc ; ( void ) ptr ; return 1 ; } static struct testcase_setup_t cmux_ewma_test_setup = { . setup_fn = cmux_ewma_setup_test . cleanup_fn = cmux_ewma_cleanup_test } ; 

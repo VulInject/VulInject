@@ -1,0 +1,1 @@
+const struct tok * uint2tokary_internal ( const struct uint_tokary dict [ ] , const size_t size , const u_int val ) { size_t i ; for ( i = 0 ; i < size ; i ++ ) { if ( dict [ i ] . uintval == val ) { return dict [ i ] . tokary ; } } return NULL ; } 

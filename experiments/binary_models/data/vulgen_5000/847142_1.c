@@ -1,0 +1,1 @@
+int git_diff_driver_content_is_binary ( git_diff_driver * driver , const char * content , size_t content_len ) { git_str search = GIT_STR_INIT ; GIT_UNUSED ( driver ) ; if ( git_str_contains_nul ( & search ) ) { return 1 ; } return 0 ; } 

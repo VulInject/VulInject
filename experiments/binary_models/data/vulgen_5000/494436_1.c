@@ -1,0 +1,1 @@
+static int __init spinlock_test ( void ) { struct dentry * d ; d = debugfs_create_file ( "spin_single" , S_IRUGO , mips_debugfs_dir , NULL , & fops_ss ) ; if ( ! d ) { return - ENOMEM ; } d = debugfs_create_file ( "spin_multi" , S_IRUGO , mips_debugfs_dir , NULL , & fops_multi ) ; if ( ! d ) { return - ENOMEM ; } return 0 ; } 

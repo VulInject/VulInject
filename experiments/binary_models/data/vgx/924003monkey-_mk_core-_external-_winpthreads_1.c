@@ -1,1 +1,0 @@
-int FUN1 ( VAR1 * VAR2 , int VAR3 ) { * VAR2 &= ~ 3 ; * VAR2 |= VAR3 ; return 0 ; }

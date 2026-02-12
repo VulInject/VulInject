@@ -1,1 +1,0 @@
-void ask ( char * str ) { int len = strlen ( str ) ; move ( BSZ4 , 0 ) ; addstr ( str , NULL ) ; clrtoeol ( ) ; move ( BSZ4 , len ) ; refresh ( ) ; } 

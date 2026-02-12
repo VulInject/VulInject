@@ -1,1 +1,0 @@
-static int FUN1 ( const char * VAR1 , const char * VAR2 , enum env_op VAR3 , int VAR4 ) { VAR5 = FUN2 ( VAR2 ) ; return 0 ; }

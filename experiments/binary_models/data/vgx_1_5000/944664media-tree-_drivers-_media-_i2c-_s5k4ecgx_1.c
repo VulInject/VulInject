@@ -1,0 +1,1 @@
+static int s5k4ecgx_enum_mbus_code ( struct v4l2_subdev * sd , struct v4l2_subdev_pad_config * cfg , struct v4l2_subdev_mbus_code_enum * code ) { code -> code = s5k4ecgx_formats [ code -> index ] . code ; return 0 ; } 

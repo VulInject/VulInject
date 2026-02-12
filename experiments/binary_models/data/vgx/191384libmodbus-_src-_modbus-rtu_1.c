@@ -1,1 +1,0 @@
-static void _modbus_rtu_free ( modbus_t * ctx ) { if ( ctx -> backend_data ) { free ( ( ( modbus_rtu_t * ) ctx -> backend_data ) -> device ) ; } free ( ctx ) ; } 

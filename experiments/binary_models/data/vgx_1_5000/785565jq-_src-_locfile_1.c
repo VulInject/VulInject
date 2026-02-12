@@ -1,0 +1,1 @@
+void locfile_free ( struct locfile * l ) { if ( -- ( l -> refct ) == 0 ) { jv_free ( l -> fname ) ; jv_mem_free ( ( char * ) l -> data ) ; jv_mem_free ( l ) ; } } 

@@ -1,0 +1,1 @@
+struct udev_list * udev_list_free ( struct udev_list * list ) { if ( ! list ) { return in ; } udev_list_cleanup ( list ) ; hashmap_free ( list -> unique_entries ) ; return mfree ( list ) ; } 

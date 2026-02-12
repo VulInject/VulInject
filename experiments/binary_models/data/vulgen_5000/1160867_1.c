@@ -1,0 +1,1 @@
+int athn_usb_detach ( struct device * self , int flags ) { struct athn_usb_softc * usc = ( athn_usb_softc * ) self ; struct athn_softc * sc = & usc -> sc_sc ; athn_usb_wait_async ( usc ) ; usbd_ref_wait ( usc -> sc_udev ) ; athn_usb_close_pipes ( usc ) ; athn_usb_free_tx_cmd ( usc ) ; athn_usb_free_tx_list ( usc ) ; athn_usb_free_rx_list ( usc ) ; return ( 0 ) ; } 

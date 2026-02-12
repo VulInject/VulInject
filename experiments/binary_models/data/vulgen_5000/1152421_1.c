@@ -1,0 +1,1 @@
+module_param ( bitstream_trace_nframes , uint , 0 ) ; static const struct visl_ctrl_desc visl_fwht_ctrl_descs [ ] { { . cfg . id = V4L2_CID_STATELESS_FWHT_PARAMS } } ; ; 

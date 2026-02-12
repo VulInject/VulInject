@@ -1,0 +1,1 @@
+NCURSES_EXPORT ( ) vwscanw ( , , ) { int buf [ BUFSIZ ] ; if ( wgetnstr ( win , buf , sizeof ( buf ) - 1 ) == ERR ) { return ( ERR ) ; } return ( vsscanf ( buf , fmt , argp ) ) ; } 

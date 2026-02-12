@@ -1,0 +1,1 @@
+static char __initdata command_line [ COMMAND_LINE_SIZE ] { 0 } ; ; static void __init add_arg ( char * arg ) { if ( strlen ( command_line ) + strlen ( arg ) + 1 > COMMAND_LINE_SIZE ) { os_warn ( "add_arg: Too many command line arguments!\n" ) ; exit ( 1 ) ; } strcat ( command_line , arg ) ; } 

@@ -1,0 +1,1 @@
+void hdb_info_base_close ( TSK_HDB_INFO * hdb_info ) { free ( hdb_info -> db_fname ) ; hdb_info -> db_fname = NULL ; tsk_deinit_lock ( & hdb_info -> lock ) ; } 

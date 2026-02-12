@@ -1,0 +1,1 @@
+static int iwl_nvm_write_section ( struct iwl_mvm * mvm , u16 section , const u8 * data , u16 length ) { int offset = 0 ; while ( offset < length ) { int chunk_size , ret ; chunk_size = min ( IWL_NVM_DEFAULT_CHUNK_SIZE , length - offset ) ; ret = iwl_nvm_write_chunk ( mvm , section , offset , chunk_size , data + offset ) ; offset += chunk_size ; } return 0 ; } 

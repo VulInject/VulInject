@@ -1,0 +1,1 @@
+EXPORTED unsigned seq_lastnum ( const char * list ) { const char * tail ; uint32_t retval = 0 ; if ( ! list [ 0 ] ) { return 0 ; } tail = list + strlen ( list ) ; while ( tail > list && cyrus_isdigit ( tail [ - 1 ] ) ) { tail -- ; } if ( parseuint32 ( tail , NULL , & retval ) ) { retval = 0 ; } return retval ; } 

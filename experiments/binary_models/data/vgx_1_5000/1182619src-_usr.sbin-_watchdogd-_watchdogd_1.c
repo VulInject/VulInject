@@ -1,0 +1,1 @@
+if ( do_restore ) { restore sysctl ( mib , 3 , NULL , 0 , & speriod , sizeof ( speriod ) ) ; mib [ 2 ] = KERN_WATCHDOG_AUTO ; sysctl ( mib , 3 , 0 , & sauto , sizeof ( sauto ) ) ; } return retval ; 

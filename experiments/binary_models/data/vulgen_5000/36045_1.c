@@ -1,0 +1,1 @@
+static void bufferevent_cancel_all_ ( struct bufferevent * bev ) { union bufferevent_ctrl_data d ; BEV_LOCK ( bev ) ; if ( bev -> be_ops -> ctrl ) { bev -> be_ops -> ctrl ( bev , BEV_CTRL_CANCEL_ALL , & d ) ; } BEV_UNLOCK ( bev ) ; } 

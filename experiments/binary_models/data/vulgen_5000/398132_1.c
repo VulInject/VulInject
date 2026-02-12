@@ -1,0 +1,1 @@
+static void v_matchproto_ ( waiter_fini_f ) vws_fini ( waiter * w ) ( vws * vws , void * vp , CAST_OBJ_NOTNULL ( vws , w -> priv , VWS_MAGIC ) , vws -> die = 1 , closefd ( & vws -> dport ) , AZ ( pthread_join ( vws -> thread ) ) ) ; 

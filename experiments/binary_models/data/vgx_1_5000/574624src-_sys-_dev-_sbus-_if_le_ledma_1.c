@@ -1,0 +1,1 @@
+int lemediachange ( struct lance_softc * sc ) { struct ifmedia * ifm = & sc -> sc_ifmedia ; switch ( IFM_SUBTYPE ( ifm -> ifm_media ) ) { case IFM_10_T : le_ledma_setutp ( sc ) ; break ; case IFM_10_5 : le_ledma_setaui ( sc ) ; break ; case IFM_AUTO : break ; default : return ( EINVAL ) ; } return ( 0 ) ; } 

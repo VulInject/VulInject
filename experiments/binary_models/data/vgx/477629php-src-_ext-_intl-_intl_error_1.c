@@ -1,1 +1,0 @@
-void intl_error_set_code ( intl_error * err , UErrorCode err_code ) { err -> code = err_code ; } 

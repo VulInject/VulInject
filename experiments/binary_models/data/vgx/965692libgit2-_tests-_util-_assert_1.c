@@ -1,1 +1,0 @@
-static int dummy_fn ( const char * myarg ) { GIT_ASSERT_ARG ( myarg , NULL ) ; GIT_ASSERT_ARG ( myarg != hello_world ) ; return 0 ; } 

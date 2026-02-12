@@ -1,1 +1,0 @@
-static void native_machine_restart ( char * __unused ) { local_irq_disable ( ) ; trigger_address_error ( ) ; watchdog_trigger_immediate ( ) ; while ( 1 ) { cpu_sleep ( ) ; } } 

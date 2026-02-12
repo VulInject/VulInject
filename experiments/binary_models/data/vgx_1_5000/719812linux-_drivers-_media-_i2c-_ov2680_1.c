@@ -1,0 +1,1 @@
+static void ov2680_power_up ( struct ov2680_dev * sensor ) { gpiod_set_value ( sensor -> reset_gpio , 0 ) ; usleep_range ( 5000 , 10000 ) ; } 

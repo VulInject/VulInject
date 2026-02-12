@@ -1,1 +1,0 @@
-static void setInstParamDefaults ( instanceData * pData ) { pData -> server = NULL ; pData -> port = 6379 ; pData -> serverpassword = NULL ; } 

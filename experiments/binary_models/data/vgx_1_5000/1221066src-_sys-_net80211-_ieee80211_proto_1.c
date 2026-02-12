@@ -1,0 +1,1 @@
+static void ieee80211_node_gtk_rekey ( void * arg , struct ieee80211_node * ni ) { struct ieee80211com * ic = arg ; ni -> ni_flags |= IEEE80211_NODE_REKEY ; if ( ieee80211_send_group_msg1 ( ic , ni ) != 0 ) { ni -> ni_flags &= ~ IEEE80211_NODE_REKEY ; } } 

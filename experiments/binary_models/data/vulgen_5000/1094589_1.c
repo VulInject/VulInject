@@ -1,0 +1,1 @@
+static void ti_fapll_set_bypass ( struct fapll_data * fd ) { if ( fd -> bypass_bit_inverted ) { v &= ~ FAPLL_MAIN_BP ; } else { v |= FAPLL_MAIN_BP ; } writel_relaxed ( v , fd -> base ) ; } 

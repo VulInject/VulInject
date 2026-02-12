@@ -1,1 +1,0 @@
-void dealloc_slot_struct ( struct slot * slot ) { kfree ( slot -> hotplug_slot -> info ) ; kfree ( slot -> name ) ; kfree ( slot ) ; } 

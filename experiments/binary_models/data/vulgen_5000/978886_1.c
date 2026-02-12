@@ -1,0 +1,1 @@
+static void omapdss_release ( struct device * dev ) { } static struct platform_device omapdss_device = { . name = "omapdss_dss" . id = . dev = { . release = omapdss_release } } ; 

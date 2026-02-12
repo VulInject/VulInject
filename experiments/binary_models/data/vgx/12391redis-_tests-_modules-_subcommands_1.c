@@ -1,1 +1,0 @@
-int cmd_set ( RedisModuleCtx * ctx , RedisModuleString * * argv , int argc ) { UNUSED ( argv , NULL ) ; UNUSED ( argc ) ; RedisModule_ReplyWithSimpleString ( ctx , "OK" ) ; return REDISMODULE_OK ; } 

@@ -1,0 +1,1 @@
+struct usbhs_pipe * usbhs_dcp_malloc ( struct usbhs_priv * priv ) { struct usbhs_pipe * pipe ; pipe = usbhsp_get_pipe ( priv , USB_ENDPOINT_XFER_CONTROL ) ; if ( ! pipe ) { return in ; } INIT_LIST_HEAD ( & pipe -> list ) ; return pipe ; } 

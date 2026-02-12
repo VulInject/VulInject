@@ -1,1 +1,0 @@
-static int dt_opt_core ( dtrace_hdl_t * dtp , const char * arg , uintptr_t option ) { static int enabled = 0 ; if ( enabled ++ || atexit ( dt_coredump ) == 0 ) { return ( 0 ) ; } return ( dt_set_errno ( dtp , errno ) ) ; } 

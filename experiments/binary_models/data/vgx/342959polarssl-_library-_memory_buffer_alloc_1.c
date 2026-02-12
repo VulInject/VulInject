@@ -1,1 +1,0 @@
-void mbedtls_memory_buffer_alloc_max_reset ( void ) { heap . maximum_used = 0 ; } 

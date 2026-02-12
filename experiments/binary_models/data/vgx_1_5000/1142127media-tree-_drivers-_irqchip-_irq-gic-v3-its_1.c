@@ -1,0 +1,1 @@
+static struct its_device * its_find_device ( struct its_node * its , u32 dev_id ) { struct its_device * its_dev = NULL , * tmp ; cfs_time_t flags ; raw_spin_lock_irqsave ( & its -> lock , flags ) ; list_for_each_entry ( , , ) { if ( tmp -> device_id == dev_id ) { its_dev = tmp ; break ; } } raw_spin_unlock_irqrestore ( & its -> lock , flags ) ; return its_dev ; } 

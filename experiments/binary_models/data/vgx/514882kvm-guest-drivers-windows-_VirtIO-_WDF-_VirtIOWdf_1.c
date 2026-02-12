@@ -1,1 +1,0 @@
-NTSTATUS VirtIOWdfShutdown ( PVIRTIO_WDF_DRIVER pWdfDriver ) { virtio_device_shutdown ( & pWdfDriver -> VIODevice ) ; return STATUS_SUCCESS ; } 

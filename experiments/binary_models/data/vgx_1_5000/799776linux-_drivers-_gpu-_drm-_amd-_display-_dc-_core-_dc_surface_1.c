@@ -1,0 +1,1 @@
+static void dc_gamma_free ( struct kref * kref ) { struct dc_gamma * gamma = container_of ( kref , dc_gamma , refcount ) ; } 

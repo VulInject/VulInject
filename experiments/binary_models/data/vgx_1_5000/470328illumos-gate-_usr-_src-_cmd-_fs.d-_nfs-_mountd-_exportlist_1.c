@@ -1,0 +1,1 @@
+static void freeexports ( struct exportnode * ex ) { struct groupnode * groups , * tmpgroups ; struct exportnode * tmpex ; while ( ex ) { groups = ex -> ex_groups ; while ( groups ) { tmpgroups = groups -> gr_next ; free ( groups -> gr_name ) ; groups = tmpgroups ; } tmpex = ex -> ex_next ; free ( ex -> ex_dir ) ; free ( ex ) ; ex = tmpex ; } } 

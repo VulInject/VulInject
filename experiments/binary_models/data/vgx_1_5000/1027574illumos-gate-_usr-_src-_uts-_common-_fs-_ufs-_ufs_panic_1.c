@@ -1,0 +1,1 @@
+extern int ufs_checkswapon ( vnode_t * ) extern struct pollhead ufs_pollhd ; struct ufs_q ufs_fix ; ufs_failure_tunable { long uft_too_long ; long uft_fixstart_period ; long uft_fixpoll_period ; int uft_short_err_period ; long uft_long_err_period ; } , ufsfx_tune 

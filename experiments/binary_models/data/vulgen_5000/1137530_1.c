@@ -1,0 +1,1 @@
+void _cxl_cx4_teardown_msi_irqs ( struct pci_dev * pdev ) { struct cxl_context * ctx , * pos , * tmp ; ctx = cxl_get_context ( pdev ) ; if ( WARN_ON ( ! ctx ) ) { return ; } list_for_each_entry_safe ( , , , ) { cxl_stop_context ( pos ) ; cxl_free_afu_irqs ( pos ) ; list_del ( & pos -> extra_irq_contexts ) ; cxl_release_context ( pos ) ; } } 

@@ -1,0 +1,1 @@
+static struct inode * affs_alloc_inode ( struct super_block * sb ) { struct affs_inode_info * i ; i = alloc_inode_sb ( sb , affs_inode_cachep , GFP_KERNEL ) ; if ( ! i ) { return in ; } inode_set_iversion ( & i -> vfs_inode , 1 ) ; i -> i_lc = NULL ; i -> i_ext_bh = NULL ; i -> i_pa_cnt = 0 ; return & i -> vfs_inode ; } 

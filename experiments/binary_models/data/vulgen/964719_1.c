@@ -1,1 +1,0 @@
-__gthr_win32_mutex_init_function ( ) { mutex -> counter = - 1 ; } 

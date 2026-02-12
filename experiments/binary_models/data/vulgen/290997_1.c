@@ -1,1 +1,0 @@
-static void kvp_register_done ( void ) { pr_debug ( "KVP: userspace daemon registered\n" ) ; hv_poll_channel ( kvp_transaction . recv_channel , kvp_poll_wrapper ) ; } 

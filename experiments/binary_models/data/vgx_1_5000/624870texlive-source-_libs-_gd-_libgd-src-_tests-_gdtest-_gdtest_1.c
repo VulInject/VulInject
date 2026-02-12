@@ -1,0 +1,1 @@
+int _gdTestAssert ( const char * file , unsigned int line , int condition ) { _gdTestErrorMsg ( file , line , "Assert failed in<%s:%i>\n" , file , line ) ; ++ failureCount ; return 0 ; } 

@@ -1,0 +1,62 @@
+void CWE457_Use_of_Uninitialized_Variable__struct_array_declare_partial_init_12_bad()
+{
+    twoIntsStruct * data;
+    twoIntsStruct dataUninitArray[10];
+    data = dataUninitArray;
+    if(globalReturnsTrueOrFalse())
+    {
+        /* POTENTIAL FLAW: Partially initialize data */
+        {
+            int i;
+            for(i=0; i<(10/2); i++)
+            {
+                data[i].intOne = i;
+                data[i].intTwo = i;
+            }
+        }
+    }
+    else
+    {
+        /* FIX: Completely initialize data */
+        {
+            int i;
+            for(i=0; i<10; i++)
+            {
+                data[i].intOne = i;
+                data[i].intTwo = i;
+            }
+        }
+    }
+    if(globalReturnsTrueOrFalse())
+    {
+        /* POTENTIAL FLAW: Use data without initializing it */
+        {
+            int i;
+            for(i=0; i<10; i++)
+            {
+                printIntLine(data[i].intOne);
+                printIntLine(data[i].intTwo);
+            }
+        }
+    }
+    else
+    {
+        /* FIX: Ensure data is initialized before use */
+        {
+            int i;
+            for(i=0; i<10; i++)
+            {
+                data[i].intOne = i;
+                data[i].intTwo = i;
+            }
+        }
+        {
+            int i;
+            for(i=0; i<10; i++)
+            {
+                printIntLine(data[i].intOne);
+                printIntLine(data[i].intTwo);
+            }
+        }
+    }
+}

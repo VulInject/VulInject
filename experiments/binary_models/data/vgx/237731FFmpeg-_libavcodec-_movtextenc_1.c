@@ -1,1 +1,0 @@
-static void FUN1 ( VAR1 * VAR2 , uint8_t VAR3 ) { if ( FUN2 ( VAR2 ) ) { VAR2 -> VAR4 . VAR5 |= VAR3 ; } }

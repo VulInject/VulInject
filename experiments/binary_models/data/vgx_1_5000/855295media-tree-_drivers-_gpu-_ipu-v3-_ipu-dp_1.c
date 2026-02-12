@@ -1,0 +1,1 @@
+ipu_dp_priv ipu_dp { u32 flow ; int in_use ; bool foreground ; enum ipu_color_space in_cs ; } 

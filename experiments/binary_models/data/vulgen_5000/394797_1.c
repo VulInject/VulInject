@@ -1,0 +1,1 @@
+( ( __packed__ ) ) ; smem_ram_ptn { u64 start ; u64 size ; u32 attr ; u32 category ; u32 domain ; u32 type ; u32 num_partitions ; u32 reserved [ 3 ] ; } , __attribute__ ( ( __packed__ ) ) 

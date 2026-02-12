@@ -1,0 +1,1 @@
+static bool buf_io_fini ( RBuffer * b ) { R_FREE ( b -> priv , NULL ) ; return true ; } 

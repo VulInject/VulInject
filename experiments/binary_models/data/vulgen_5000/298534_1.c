@@ -1,0 +1,1 @@
+void board_boot_order ( u32 * spl_boot_list ) { u8 i ; u32 boot_devices [ ] { BOOT_DEVICE_MMC1 } ; ; for ( i = 0 ; i < ARRAY_SIZE ( boot_devices ) ; i ++ ) { } } 

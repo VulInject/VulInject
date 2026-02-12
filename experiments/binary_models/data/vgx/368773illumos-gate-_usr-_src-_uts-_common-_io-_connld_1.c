@@ -1,1 +1,0 @@
-int connclose ( queue_t * q , int cflag , cred_t * crp ) { vnode_t * streamvp ; fifonode_t * streamfnp ; qprocsoff ( q ) ; streamvp = strq2vp ( q ) ; ASSERT ( streamvp != NULL ) ; ASSERT ( streamvp -> v_type == VFIFO ) ; streamfnp = VTOF ( streamvp ) ; streamfnp -> fn_flag &= ~ FIFOCONNLD ; VN_RELE ( streamvp , NULL ) ; return ( 0 ) ; } 

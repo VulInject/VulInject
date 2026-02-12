@@ -1,0 +1,1 @@
+ZIP_EXTERN zip_source_t * zip_source_win32a ( zip_t * za , const char * fname , zip_uint64_t start , zip_int64_t len ) { return zip_source_win32a_create ( fname , start , len , & za -> error ) ; } 

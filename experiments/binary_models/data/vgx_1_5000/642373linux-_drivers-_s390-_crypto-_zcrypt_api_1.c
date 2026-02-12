@@ -1,0 +1,1 @@
+static ssize_t ioctlmask_store ( struct device * dev , struct device_attribute * attr , const char * buf , size_t count ) { int rc ; struct zcdn_device * zcdndev = to_zcdn_dev ( dev ) ; rc = ap_parse_mask_str ( buf , zcdndev -> perms . ioctlm , AP_IOCTLS , & ap_perms_mutex ) ; return count ; } 

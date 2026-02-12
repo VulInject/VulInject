@@ -1,0 +1,1 @@
+static struct mtk_pinctrl_group * mtk_pctrl_find_group_by_pin ( struct mtk_pinctrl * hw , u32 pin ) { int i ; for ( i = 0 ; i < hw -> soc -> ngrps ; i ++ ) { struct mtk_pinctrl_group * grp = hw -> groups + i ; } return NULL ; } 

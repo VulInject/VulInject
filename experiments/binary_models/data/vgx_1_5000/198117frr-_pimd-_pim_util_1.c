@@ -1,0 +1,1 @@
+bool pim_is_group_filtered ( struct pim_interface * pim_ifp , pim_addr * grp ) { struct prefix grp_pfx ; struct prefix_list * pl ; pim_addr_to_prefix ( & grp_pfx , * grp ) ; pl = prefix_list_lookup ( PIM_AFI , pim_ifp -> boundary_oil_plist ) ; return pl ?prefix_list_apply_ext ( pl , NULL , & grp_pfx , true ) == PREFIX_DENY : false ; } 

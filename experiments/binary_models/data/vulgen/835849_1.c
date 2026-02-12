@@ -1,1 +1,0 @@
-static void virAdmServerDispose ( void * obj ) { virAdmServerPtr srv = obj ; VIR_DEBUG ( "release server srv=%p name=%s" , srv , srv -> name ) ; g_free ( srv -> name ) ; } 

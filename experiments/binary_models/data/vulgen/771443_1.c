@@ -1,1 +1,0 @@
-unsigned long stack_top ( void ) { unsigned long top = TASK_SIZE & PAGE_MASK ; top -= PAGE_ALIGN ( current -> thread . vdso -> size ) ; top -= PAGE_SIZE ; return top ; } 

@@ -1,0 +1,1 @@
+NCURSES_EXPORT ( ) scanw ( , ) { int code ; va_list ap ; T ( ( "scanw(\"%s\",...) called" , fmt ) ) ; va_start ( ap , fmt ) ; code = vwscanw ( stdscr , fmt , ap ) ; va_end ( ap , NULL ) ; return ( code ) ; } 

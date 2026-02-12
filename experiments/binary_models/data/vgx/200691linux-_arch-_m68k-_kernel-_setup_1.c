@@ -1,1 +1,0 @@
-void * mach_beep ( unsigned int , unsigned int ) EXPORT_SYMBOL ( mach_beep , NULL ) ; 

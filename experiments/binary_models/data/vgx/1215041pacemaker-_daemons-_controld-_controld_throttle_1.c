@@ -1,1 +1,0 @@
-static void throttle_record_free ( gpointer p ) { struct throttle_record_s * r = p ; free ( r -> node ) ; } 

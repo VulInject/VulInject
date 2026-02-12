@@ -1,0 +1,1 @@
+void test_object_tag_list__list_by_pattern ( void ) { int i = 0 ; while ( matches [ i ] . pattern ) { ensure_tag_pattern_match ( g_repo , & matches [ i ++ ] ) ; } } 

@@ -1,0 +1,1 @@
+void led_stop_software_blink ( struct led_classdev * led_cdev ) { del_timer_sync ( & led_cdev -> blink_timer ) ; led_cdev -> blink_delay_off = 0 ; clear_bit ( LED_BLINK_SW , & led_cdev -> work_flags ) ; } 

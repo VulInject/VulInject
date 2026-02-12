@@ -1,1 +1,0 @@
-static void handle_terminate_without_kids ( void ) { pr_log_pri ( PR_LOG_WARNING , "ProFTPD terminating (signal %d)" , term_signo ) ; } 

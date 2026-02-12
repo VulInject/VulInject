@@ -1,1 +1,0 @@
-gimp_id_table_finalize ( ) { GimpIdTable * id_table = GIMP_ID_TABLE ( object ) ; g_clear_pointer ( & id_table -> priv -> id_table , g_hash_table_unref ) ; } 

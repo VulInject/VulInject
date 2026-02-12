@@ -1,1 +1,0 @@
-char * get_conf_class ( const struct ConfItem * aconf ) { Debug ( ( DEBUG_DEBUG , "No Class For %s" , ( aconf ) ?aconf -> name : "*No Conf*" ) ) ; return NULL ; } 

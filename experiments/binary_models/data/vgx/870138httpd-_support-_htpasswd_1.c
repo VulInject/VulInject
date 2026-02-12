@@ -1,1 +1,0 @@
-static int FUN1 ( VAR1 * VAR2 , char * VAR3 , int VAR4 ) { VAR5 * VAR6 = NULL ; FUN2 ( VAR6 ) ; return 1 ; }

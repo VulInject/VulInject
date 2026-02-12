@@ -1,0 +1,1 @@
+foo = ( char * ) malloc ( 10 ) ; bar = ( char * ) malloc ( 10 ) ; foo = ( char * ) malloc ( 10 ) ; bar [ 3 ] = 'w' ; memcpy ( foo , bar , 10 ) ; return 0 ; 

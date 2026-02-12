@@ -1,0 +1,1 @@
+static int go_away ; thread_data { pthread_t pt ; pid_t tid ; void * map ; int ready [ 2 ] ; } 

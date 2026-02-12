@@ -1,0 +1,1 @@
+int nfp_port_get_port_parent_id ( struct net_device * netdev , struct netdev_phys_item_id * ppid ) { struct nfp_port * port ; const u8 * serial ; port = nfp_port_from_netdev ( netdev ) ; ppid -> id_len = nfp_cpp_serial ( port -> app -> cpp , & serial ) ; memcpy ( & ppid -> id , serial , ppid -> id_len ) ; return 0 ; } 

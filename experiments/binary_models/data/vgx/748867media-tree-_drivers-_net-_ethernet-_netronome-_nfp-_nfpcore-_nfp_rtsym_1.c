@@ -1,1 +1,0 @@
-int nfp_rtsym_count ( struct nfp_cpp * cpp ) { struct nfp_rtsym_cache * cache ; cache = nfp_rtsym ( cpp ) ; return cache -> num ; } 

@@ -1,0 +1,1 @@
+static u32 igc_ethtool_get_priv_flags ( struct net_device * netdev ) { struct igc_adapter * adapter = netdev_priv ( netdev ) ; u32 priv_flags = 0 ; return priv_flags ; } 

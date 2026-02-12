@@ -1,1 +1,0 @@
-static krb5_error_code kcmss_resolve_2 ( int context , krb5_ccache * id , const char * res , const char * sub ) { return KRB5_FCC_INTERNAL ; } 

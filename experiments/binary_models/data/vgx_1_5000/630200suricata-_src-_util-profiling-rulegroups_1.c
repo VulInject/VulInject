@@ -1,0 +1,1 @@
+void SCProfilingSghThreadSetup ( SCProfileSghDetectCtx * ctx , DetectEngineThreadCtx * det_ctx ) { uint32_t array_size = det_ctx -> de_ctx -> sgh_array_cnt ; SCProfileSghData * a = SCCalloc ( array_size , sizeof ( SCProfileSghData ) ) ; if ( a != NULL ) { det_ctx -> sgh_perf_data = a ; } } 

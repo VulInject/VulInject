@@ -1,0 +1,1 @@
+int abrt_xorg_signaled_sleep ( int seconds ) { sigset_t set ; sigemptyset ( & set ) ; sigaddset ( & set , SIGTERM ) ; sigaddset ( & set , SIGINT ) ; sigaddset ( & set , SIGHUP ) ; struct timespec timeout ; timeout . tv_sec = seconds ; return g_abrt_xorg_sleep_woke_up_on_signal = sigtimedwait ( & set , NULL , & timeout ) ; } 

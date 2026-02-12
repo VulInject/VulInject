@@ -1,0 +1,1 @@
+static int spi_nor_fsr_ready ( struct spi_nor * nor ) { int fsr = read_fsr ( nor ) ; return fsr & FSR_READY ; } 

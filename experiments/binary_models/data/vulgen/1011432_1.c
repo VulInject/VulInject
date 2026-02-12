@@ -1,1 +1,0 @@
-MODULE_DESCRIPTION ( "Network fs support" ) ; MODULE_AUTHOR ( "Red Hat, Inc." ) ; MODULE_LICENSE ( "GPL" ) ; unsigned netfs_debug ; MODULE_PARM_DESC ( netfs_debug , "Netfs support debugging mask" ) ; 

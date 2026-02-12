@@ -1,0 +1,1 @@
+static void mlxsw_afa_fwd_entry_destroy ( struct mlxsw_afa * mlxsw_afa , struct mlxsw_afa_fwd_entry * fwd_entry ) { mlxsw_afa -> ops -> kvdl_fwd_entry_del ( mlxsw_afa -> ops_priv , fwd_entry -> kvdl_index ) ; rhashtable_remove_fast ( & mlxsw_afa -> fwd_entry_ht , & fwd_entry -> ht_node , mlxsw_afa_fwd_entry_ht_params ) ; } 

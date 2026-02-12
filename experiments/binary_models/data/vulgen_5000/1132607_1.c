@@ -1,0 +1,1 @@
+static int __init video_set_backlight_video_vendor ( const struct dmi_system_id * d ) { pr_info ( "Brightness must be controlled by generic video driver\n" ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+{ LARGE_INTEGER performanceCount ; if ( QueryPerformanceCounter ( & performanceCount ) ) { if ( debug_me ) { log_debug ( "rndw32#gather_random_fast: perf data\n" ) ; } * add ( & performanceCount , sizeof ( performanceCount ) , origin ) ; } else { * add ( & aword , sizeof ( aword ) , origin ) ; } } 

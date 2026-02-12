@@ -1,0 +1,1 @@
+static void call_usermodehelper_freeinfo ( struct subprocess_info * info ) { if ( info -> cleanup ) { * info -> cleanup ( info ) ; } } 

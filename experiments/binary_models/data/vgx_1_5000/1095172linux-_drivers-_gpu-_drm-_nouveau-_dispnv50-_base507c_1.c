@@ -1,0 +1,1 @@
+int base507c_xlut_clr ( struct nv50_wndw * wndw ) { struct nvif_push * push = wndw -> wndw . push ; int ret ; PUSH_MTHD ( push , NV507C , SET_BASE_LUT_LO , NVDEF ( NV507C , SET_BASE_LUT_LO , ENABLE , DISABLE ) ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+static void __init rapl_advertise ( void ) { int i ; pr_info ( "API unit is 2^-32 Joules, %d fixed counters, %llu ms ovfl timer\n" , hweight32 ( rapl_cntr_mask ) , rapl_timer_ms ) ; for ( i = 0 ; i < NR_RAPL_DOMAINS ; i ++ ) { } } 

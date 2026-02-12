@@ -1,1 +1,0 @@
-size_t FUN1 ( int VAR1 ) { if ( VAR1 <= 0 ) { return FUN2 ( ) ; } return VAR1 ; }

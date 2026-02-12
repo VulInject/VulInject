@@ -1,1 +1,0 @@
-struct sshauthopt * sshauthopt_new ( void ) { struct sshauthopt * ret ; ret -> force_tun_device = - 1 ; return ret ; } 

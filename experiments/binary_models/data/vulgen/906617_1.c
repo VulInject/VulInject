@@ -1,1 +1,0 @@
-START_TEST ( ) { pr_table_t * tab ; pr_table_dump ( NULL , NULL ) ; tab = pr_table_alloc ( p , 0 ) ; pr_table_dump ( NULL , tab ) ; } 

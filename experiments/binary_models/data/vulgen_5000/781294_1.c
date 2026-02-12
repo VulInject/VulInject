@@ -1,0 +1,1 @@
+static int nvme_loop_connect_io_queues ( struct nvme_loop_ctrl * ctrl ) { int i , ret ; for ( i = 1 ; i < ctrl -> ctrl . queue_count ; i ++ ) { ret = nvmf_connect_io_queue ( & ctrl -> ctrl , i ) ; set_bit ( NVME_LOOP_Q_LIVE , & ctrl -> queues [ i ] . flags ) ; } return 0 ; } 

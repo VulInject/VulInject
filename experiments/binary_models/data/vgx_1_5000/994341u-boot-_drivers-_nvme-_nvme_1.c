@@ -1,0 +1,1 @@
+int nvme_scan_namespace ( void ) { struct uclass * uc ; struct udevice * dev ; int ret ; ret = uclass_get ( UCLASS_NVME , & uc ) ; uclass_foreach_dev ( , ) { ret = device_probe ( dev ) ; if ( ret ) { return ret ; } } return 0 ; } 

@@ -1,0 +1,1 @@
+void corgi_lcd_limit_intensity ( int limit ) { if ( limit ) { corgibl_flags |= CORGIBL_BATTLOW ; } else { corgibl_flags &= ~ CORGIBL_BATTLOW ; } backlight_update_status ( the_corgi_lcd -> bl_dev , NULL ) ; } 

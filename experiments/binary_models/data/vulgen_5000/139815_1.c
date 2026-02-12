@@ -1,0 +1,1 @@
+static void disable_freq_invariance_workfn ( struct work_struct * work ) { int cpu ; for_each_possible_cpu ( ) per_cpu ( arch_freq_scale , cpu ) = SCHED_CAPACITY_SCALE ; } 

@@ -1,0 +1,1 @@
+static int _cmp_sci_clk ( const void * a , const void * b ) { const struct sci_clk * ca = a ; const struct sci_clk * cb = * ( sci_clk * * ) b ; if ( ca -> dev_id == cb -> dev_id && ca -> clk_id == cb -> clk_id ) { return 0 ; } return - 1 ; } 

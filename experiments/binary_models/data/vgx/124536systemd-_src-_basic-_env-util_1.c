@@ -1,1 +1,0 @@
-int getenv_bool_secure ( const char * p ) { const char * e ; e = secure_getenv ( p ) ; return parse_boolean ( e ) ; } 

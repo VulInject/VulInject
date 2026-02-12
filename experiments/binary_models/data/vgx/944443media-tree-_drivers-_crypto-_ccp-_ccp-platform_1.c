@@ -1,1 +1,0 @@
-static struct ccp_vdata * ccp_get_acpi_version ( struct platform_device * pdev ) { const struct acpi_device_id * match ; match = acpi_match_device ( ccp_acpi_match , & pdev -> dev ) ; return 0 ; } 

@@ -1,0 +1,1 @@
+void relay_dns_result ( struct rsession * , u_int8_t * , size_t ) int relay_dns_cmp ( struct rsession * , struct rsession * ) void relay_udp_privinit ( struct relay * rlay ) { rlay -> rl_conf . flags |= F_UDP ; } 

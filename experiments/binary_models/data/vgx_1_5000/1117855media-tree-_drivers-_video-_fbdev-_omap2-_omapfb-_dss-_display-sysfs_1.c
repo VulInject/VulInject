@@ -1,0 +1,1 @@
+static ssize_t display_rotate_show ( struct omap_dss_device * dssdev , char * buf ) { int rotate ; if ( ! dssdev -> driver -> get_rotate ) { return - ENOENT ; } rotate = dssdev -> driver -> get_rotate ( dssdev , NULL ) ; return snprintf ( buf , PAGE_SIZE , "%u\n" , rotate ) ; } 

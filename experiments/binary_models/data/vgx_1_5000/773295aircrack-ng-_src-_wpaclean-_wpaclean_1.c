@@ -1,0 +1,1 @@
+static inline struct network * find_net ( const unsigned char * b ) { struct network * n = _networks . n_next ; while ( n ) { if ( memcmp ( b , n -> n_bssid , sizeof ( n -> n_bssid ) ) == 0 ) { return ( n ) ; } n = n -> n_next ; } return ( NULL ) ; } 

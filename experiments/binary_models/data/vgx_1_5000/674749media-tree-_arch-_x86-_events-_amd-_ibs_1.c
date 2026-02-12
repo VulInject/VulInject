@@ -1,0 +1,1 @@
+static struct perf_ibs * get_ibs_pmu ( int type ) { if ( perf_ibs_op . pmu . type == type ) { return & perf_ibs_op ; } return NULL ; } 

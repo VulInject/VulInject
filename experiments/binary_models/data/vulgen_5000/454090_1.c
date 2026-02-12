@@ -1,0 +1,1 @@
+static int __init b43legacy_init ( void ) { int err ; b43legacy_debugfs_init ( ) ; err = ssb_driver_register ( & b43legacy_ssb_driver ) ; b43legacy_print_driverinfo ( ) ; return err ; err_dfs_exit b43legacy_debugfs_exit ( ) ; return err ; } 

@@ -1,0 +1,1 @@
+static int knav_acc_init_queue ( struct knav_range_info * range , struct knav_queue_inst * kq ) { unsigned id = kq -> id - range -> queue_base ; kq -> descs = devm_kcalloc ( range -> kdev -> dev , ACC_DESCS_MAX , sizeof ( u32 ) , GFP_KERNEL ) ; kq -> acc = range -> acc ; if ( ( range -> flags & RANGE_MULTI_QUEUE ) == 0 ) { kq -> acc += id ; } return 0 ; } 

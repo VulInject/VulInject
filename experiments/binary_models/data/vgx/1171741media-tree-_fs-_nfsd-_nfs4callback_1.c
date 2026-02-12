@@ -1,1 +1,0 @@
-void FUN1 ( void ) { if ( VAR1 ) { FUN2 ( VAR1 , NULL ) ; VAR1 = NULL ; } }

@@ -1,0 +1,1 @@
+static int ir_lirc_unregister ( struct rc_dev * dev ) { struct lirc_codec * lirc = & dev -> raw -> lirc ; lirc_unregister_driver ( lirc -> drv -> minor ) ; lirc -> drv = NULL ; return 0 ; } 

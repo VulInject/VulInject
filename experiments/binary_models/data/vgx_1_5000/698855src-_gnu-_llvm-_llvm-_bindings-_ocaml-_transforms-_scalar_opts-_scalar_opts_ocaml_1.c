@@ -1,0 +1,1 @@
+value llvm_add_dead_store_elimination ( LLVMPassManagerRef PM ) { LLVMAddDeadStoreEliminationPass ( PM , NULL ) ; return Val_unit ; } 

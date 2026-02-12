@@ -1,1 +1,0 @@
-static int jsf_release ( struct inode * inode , struct file * file ) { return 0 ; } 

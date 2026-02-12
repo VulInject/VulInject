@@ -1,0 +1,1 @@
+void chremdir ( sys ) char * sys ; { int ret ; mkremdir ( sys ) ; DEBUG ( 6 , "chdir(%s)\n" , RemSpool ) ; ASSERT ( ret == 0 , Ct_CHDIR , RemSpool , errno ) ; ( void ) strcpy ( Wrkdir , RemSpool ) ; return ; } 

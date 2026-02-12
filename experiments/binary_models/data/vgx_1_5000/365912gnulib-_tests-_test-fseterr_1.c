@@ -1,0 +1,1 @@
+int main ( ) { if ( ferror ( stdout ) ) { abort ( ) ; } fseterr ( stdout ) ; if ( ! ferror ( stdout ) ) { abort ( ) ; } if ( ferror ( stdout ) ) { abort ( ) ; } return 0 ; } 

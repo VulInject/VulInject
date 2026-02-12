@@ -1,1 +1,0 @@
-static struct mrb_complex * complex_ptr ( mrb_state * mrb , mrb_value v ) { struct RComplex * r = ( RComplex * ) mrb_obj_ptr ( v ) ; return r -> p ; } 
