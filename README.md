@@ -32,7 +32,7 @@ VulInject
 |       ├── vulsample.py                    <- Module for extracting patch statements type and critival variables type
 |       └── ...
 ├── experiments
-|   ├── binary_models
+|   ├── binary_models                       <- Source code for binary model training and test 
 |   |   └── data                            <- data for binary model training and test
 │   └── multiclass_models
 |       ├── PDBERT                          <- Source code for PDBERT
@@ -105,5 +105,10 @@ We will release Docker images later for you to reproduce the experimental result
 - 352 vulnerability patterns we extract are present in ```data/pattern```.
 - For the training and testing of binary and multi-class classification models, we use the PrimeVul dataset as the baseline. The data is located in the respective model directories. Please refer to the README file of each model for details.
 - We will make all generated datasets publicly available upon the acceptance of this paper.
+
+``` text
+Due to the large size of the trained models, we will upload the complete source code, datasets, and the experimental container to an anonymous cloud storage service.
+```
+
 
 
