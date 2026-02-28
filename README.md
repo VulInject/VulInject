@@ -99,16 +99,15 @@ For binary models, we use VulCNN, VulBERTa, LineVul and Devign. For multiclass m
 
 The source code for these models can be found in the ```experiments``` directory.
 
-We will release Docker images later for you to reproduce the experimental results in our paper.
+The complete experimental source code and trained models have been uploaded to Zenodo and are available at: [
+https://zenodo.org/records/18811174?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImZjNWY3YjQ0LTU2ZDUtNDZmZi1hNzUyLWYzMGVmYTcxMDg0YiIsImRhdGEiOnt9LCJyYW5kb20iOiIwODZiN2RmZjlkZDM4ZmFlOWY5NDc5YTA0ZjgzZjI0NiJ9.Y2sryX0aY0HJZLOktl2GGxEylpTgJzOC55HEWVi6kWD5IFHRq2TrcGdDs7XTVW9sgyc_44wb6vCGhSUOc4c3TA ]
 
 ### Dataset
 - 352 vulnerability patterns we extract are present in ```data/pattern```.
 - For the training and testing of binary and multi-class classification models, we use the PrimeVul dataset as the baseline. The data is located in the respective model directories. Please refer to the README file of each model for details.
 - We will make all generated datasets publicly available upon the acceptance of this paper.
 
-``` text
-Due to the large size of the trained models, we will upload the complete source code, datasets, and the experimental container to an anonymous cloud storage service.
-```
+
 
 
 
