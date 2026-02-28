@@ -99,15 +99,10 @@ For binary models, we use VulCNN, VulBERTa, LineVul and Devign. For multiclass m
 
 The source code for these models can be found in the ```experiments``` directory.
 
-The complete experimental source code and trained models have been uploaded to Zenodo and are available at: [
-https://zenodo.org/records/18811174?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImZjNWY3YjQ0LTU2ZDUtNDZmZi1hNzUyLWYzMGVmYTcxMDg0YiIsImRhdGEiOnt9LCJyYW5kb20iOiIwODZiN2RmZjlkZDM4ZmFlOWY5NDc5YTA0ZjgzZjI0NiJ9.Y2sryX0aY0HJZLOktl2GGxEylpTgJzOC55HEWVi6kWD5IFHRq2TrcGdDs7XTVW9sgyc_44wb6vCGhSUOc4c3TA ]
+The complete experimental source code and trained models have been uploaded to Zenodo and are available at: 
+https://zenodo.org/records/18811174?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImJiOWQ1YWExLTI2YTYtNDQ1Yi1hOTYwLTk5Nzk5Y2IzODQ4MCIsImRhdGEiOnt9LCJyYW5kb20iOiJhN2ZjMWI0OWM0ODViZmY2MmQxNGI5NmRjMzk2MTkzNiJ9.84AVkgnjPXAnDkjuW1lrboIo1blG7yy-Eus5t9drSvgXO3Q6OpzvZD2d8iCXgbFdGd8WPvg62x3N-fJ1M91UaA
 
 ### Dataset
 - 352 vulnerability patterns we extract are present in ```data/pattern```.
 - For the training and testing of binary and multi-class classification models, we use the PrimeVul dataset as the baseline. The data is located in the respective model directories. Please refer to the README file of each model for details.
 - We will make all generated datasets publicly available upon the acceptance of this paper.
-
-
-
-
-
